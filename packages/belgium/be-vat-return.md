@@ -1,10 +1,10 @@
 ---
 name: be-vat-return
 description: "Preparing and filing the Belgian periodic VAT return (periodieke btw-aangifte / déclaration périodique TVA) for tax year 2026: who files, the 21%, 12%, 6% and 0% rates (hotels and campsites 12% from 1 March 2026), monthly or quarterly filing (EUR 2,500,000 test, EUR 50,000 intra-EU test), the 20th and 25th deadlines and the 2026 calendar, Intervat, which grid each transaction goes in, domestic reverse charge for construction (KB nr. 1 art. 20) and other customer-pays cases, the annual client listing (over EUR 250 per customer, before 31 March) and the intra-EU listing, structured B2B e-invoicing from 1 January 2026 and its fines, the small-business exemption at EUR 25,000 with its 10% tolerance and the rises to EUR 26,000-30,000 from 2027, the EU small-business scheme (EUR 100,000), refunds and the VAT provision account, capital goods, late interest of 8% for 2026 and the fines in KB nr. 41 and 44. Trigger on: Belgian VAT return, btw-aangifte invullen, rooster 71, Intervat, klantenlisting, intracommunautaire opgave, medecontractant, verlegging van heffing, btw-boete, vrijstellingsregeling kleine ondernemingen, franchise TVA, vervangende aangifte, Belgian VAT. Out of scope: Peppol set-up (belgium-einvoice), bookkeeping (belgium-bookkeeping), income tax (be-income-tax, be-corporate-tax)."
-version: 2.4
+version: 2.5
 jurisdiction: BE
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-14
 depends_on:
   - vat-workflow-base
   - eu-vat-directive
@@ -12,9 +12,10 @@ category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: vat-gst
+type: filing-howto
 ---
 
-# Belgium VAT and the periodic VAT return (btw-aangifte / déclaration TVA): the law, preparing and filing, tax year 2026 v2.4
+# Belgium VAT and the periodic VAT return (btw-aangifte / déclaration TVA): the law, preparing and filing, tax year 2026 v2.5
 
 > **Source-cited draft: not reviewed by an accountant.** This skill is general tax reference material for AI-assisted work. It has not been reviewed for any business's facts. Do not rely on it to file, pay or take a position without review by a qualified professional in Belgium.
 

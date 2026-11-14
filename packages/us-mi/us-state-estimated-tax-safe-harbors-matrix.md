@@ -1,19 +1,23 @@
 ---
 name: us-state-estimated-tax-safe-harbors-matrix
-description: Tier 2 US federal-level reference skill providing the 50-state matrix of estimated tax safe-harbor rules for individuals and corporations. Covers tax year 2025 including California's unique 30/40/0/30 installment schedule under R&TC §19136 (which differs from the federal 25/25/25/25 equal-installment rule), New York's corporate Mandatory First Installment (MFI) of 25% or 40% based on prior-year liability, state-by-state safe-harbor percentages (most mirror federal 100%/110% but some require 90% current-year only), underpayment penalty rates, annualized income method availability under §6654(d)(2)-equivalent state rules, and PTE election estimated payment schedules separate from corporate estimates.
+description: State estimated income tax safe harbors for individuals, tax year 2026 (estimates paid April 2026 to January 2027), a row for every state with a personal income tax and DC, each linked to that state's own estimated tax form or statute. Gives when estimates are required, the current-year percentage (90%, or 70% in Georgia, Colorado and Oklahoma, 80% in New Jersey and Mississippi, 60% in Hawaii), the prior-year percentage and 110% rules, installment shares and dates (California 30/40/0/30), farmer and fisher rules and the penalty method. Trigger on "state estimated tax", "state safe harbor", "540-ES", "IT-2105", "state underpayment penalty", "quarterly state payments". Federal estimates are in us-quarterly-estimated-tax.
+version: "3.0"
 jurisdiction: US
 tax_year: 2026
-last_updated: 2026-10-16
+last_updated: 2026-11-13
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
+type: cross-country-method
 ---
 
 # State estimated tax safe harbors for individuals: 50-state matrix
 
+> **Source-cited draft.** Each row links to that state's own estimated tax form, instructions or statute. Rows for California, New York, Illinois, North Carolina, Georgia, Michigan, Massachusetts and Rhode Island were checked against the state skills rewritten on 13 November 2026 and their 2026 forms. No accountant has reviewed it.
+
 Figures are for tax year 2026 (estimates paid April 2026 to January 2027) unless a line says 2025. Where a state had not published 2026 material when this skill was checked (25 September 2026), the row says which year its source covers. A short section at the end covers 2025 returns, which are still being filed on extension until 15 October 2026.
 
-## Scope
+## Scope and who this is for
 
 - **Covers:** state estimated income tax for **individuals** (residents, and nonresidents with state-source income where the state says so): when estimates are required, the current-year and prior-year safe harbors, installment dates and shares, farmer and fisher rules, and how the underpayment penalty or interest is charged.
 - **Does not cover:** corporate estimates, pass-through entity (PTE) elective tax estimates, city or county income taxes (for example New York City and Yonkers tax is covered inside the New York State rule, but Ohio school district and municipal taxes are not), and withholding deposits. For PTE estimates use `us-pte-state-matrix`; for the New York corporate Mandatory First Installment use `ny-corporate-franchise-article-9a`.
@@ -42,13 +46,7 @@ Figures are for tax year 2026 (estimates paid April 2026 to January 2027) unless
 
 ## Federal baseline for 2026 (for comparison only)
 
-States are free to set their own rules. The federal rules are the pattern most states copy, so start here. [IRS Publication 505](https://www.irs.gov/publications/p505)
-
-- Estimates are generally required if the client expects to owe **at least $1,000** for 2026 after withholding and credits, and withholding and credits will be less than the smaller of **90%** of the 2026 tax or **100%** of the 2025 tax. The 2025 return must have covered 12 months. [Pub. 505](https://www.irs.gov/publications/p505)
-- Use **110%** instead of 100% if 2025 AGI was **more than $150,000** ($75,000 married filing separately). This does not apply if at least two-thirds of gross income for 2025 or 2026 is from farming or fishing. [Pub. 505](https://www.irs.gov/publications/p505)
-- Due dates: 15 April, 15 June, 15 September 2026 and 15 January 2027. Filing the 2026 return by 31 January 2027 and paying in full replaces the January payment. [Pub. 505](https://www.irs.gov/publications/p505)
-- Farmers and fishers: **66 2/3%** instead of 90%, one payment by 15 January 2027, or file and pay by 1 March 2027. [Pub. 505](https://www.irs.gov/publications/p505)
-- The penalty is figured at the federal underpayment interest rate: **7%** for the first, third and fourth quarters of 2026 and **6%** for the second quarter. [IRS quarterly interest rates](https://www.irs.gov/payments/quarterly-interest-rates)
+The federal 2026 rules (the $1,000 trigger, 90% and 100% or 110%, the four due dates, farmers and fishers, the penalty rate) are in `us-quarterly-estimated-tax`. Most states copy that pattern with their own figures; meeting the federal safe harbor never meets a state one.
 
 ## The 2026 state matrix
 
@@ -67,16 +65,16 @@ Read each row with its source. "Prior year" means the 2025 tax for 2026 estimate
 | **GA** | Gross income expected to exceed exemptions plus deductions plus $1,000 of income not subject to withholding | **70%** | 100% if the prior return covered 12 months; no 110% rule | 15 Apr, 15 Jun, 15 Sep 2026, 15 Jan 2027 (fewer if first required later) | 2/3 from farming or fishing: file and pay by 1 Mar 2027; 66 2/3% on Form 500 UET | 9% a year of the underpayment (Form 500 UET) | [500-ES](https://dor.georgia.gov/document/document/2026-500-es-estimated-tax-individuals-and-fiduciaries/download); [500 UET](https://dor.georgia.gov/document/document/beginning-or-after-january-1-2025-500-uet-underpayment-estimated-tax-individuals/download); [rates](https://dor.georgia.gov/penalty-and-interest-rates) |
 | **HI** | Expect to owe at least $500 after withholding and credits | **60%** | 100% (12-month prior-year return); no 110% rule found | 25% each **20 Apr**, **20 Jun**, **20 Sep** 2026, **20 Jan** 2027; file and pay by 31 January: no January penalty (2025 wording; check for 2027) | 2/3 from farming or fishing: no penalty if the return is filed and tax paid by 1 March | 2/3 of 1% a month or part month (Form N-210) | [N-11 instructions](https://files.hawaii.gov/tax/forms/current/n11ins.pdf); [N-210](https://files.hawaii.gov/tax/forms/current/n210ins.pdf) |
 | **IA** | 2026 onward: Iowa tax of $1,000 or more from income not subject to withholding (was $200 for 2025) | 90% | 100% (12-month prior year); 110% if prior-year federal AGI plus Iowa adjustments exceeded $150,000 ($75,000 MFS) | 25% each **30 Apr**, **30 Jun**, **30 Sep** 2026, **31 Jan** 2027 | 2/3 from farming or commercial fishing: one payment by 15 Jan 2027 and file by 30 Apr 2027, or file and pay by 1 Mar 2027; 66.7% on IA 2210F | 10% a year, per day (IA 2210) | [IDR](https://revenue.iowa.gov/taxes/tax-guidance/individual-income-tax/estimated-income-tax-payments); [IA 1040ES](https://revenue.iowa.gov/media/2725/download?inline=); [IA 2210](https://revenue.iowa.gov/media/4399/download?inline=) |
-| **ID** | check | check | check | check | check | check | Form 51 (Idaho State Tax Commission); no page could be fetched |
+| **ID** | check | check | check | check | check | check | [Idaho State Tax Commission, individual income tax](https://tax.idaho.gov/taxes/income-tax/individual-income/) (Form 51; not confirmed) |
 | **IL** | Tax after Illinois withholding, pass-through withholding and credits expected to exceed $1,000 | 90% | 100% of last year's tax; no 110% rule on the forms; no penalty if no 2025 return was required or 2025 tax was zero; people 65 or older permanently living in a nursing home are exempt | Standard | Farmers (2/3 of federal gross income from farming) are exempt; no fisher rule | Late-payment penalty: 2% if 1 to 30 days late, 10% if more than 30 days (IL-2210); interest is separate | [IL-1040-ES](https://tax.illinois.gov/content/dam/soi/en/web/tax/forms/incometax/documents/currentyear/individual/il-1040-es.pdf); [IL-2210](https://tax.illinois.gov/content/dam/soi/en/web/tax/forms/incometax/documents/currentyear/individual/il-2210-instr.pdf); [Pub. 103](https://tax.illinois.gov/content/dam/soi/en/web/tax/research/publications/pubs/documents/pub-103.pdf) |
 | **IN** | Unpaid state plus county tax of $1,000 or more (the bulletin's penalty section says "exceed"; at exactly $1,000, check) | 90% | 100%; 110% if **federal** AGI more than $150,000 ($75,000 MFS); not for farmers or fishers | Standard; file and pay by 31 January: no January penalty | 2/3 from farming or fishing: no penalty if the return is filed and tax paid by 1 March | Flat 10% of the underpayment per installment (Schedule IT-2210) | [Bulletin #3](https://www.in.gov/dor/files/ib03.pdf) |
 | **KS** | Expect to owe at least $500 after withholding and credits | 90% | 100% if a prior-year return showing a liability was filed; no 110% rule in the statute; none required if prior-year tax was under $200 | Standard; file and pay by 31 January replaces January | 2/3 of estimated gross income from farming or fishing: 66 2/3%; pay by 15 January, or file and pay by 1 March | Rate of K.S.A. 79-2968 interest (federal underpayment rate plus 1 point), to 15 April; numeric 2026 rate: check (Form K-210) | [K.S.A. 79-32,101](https://www.kslegislature.gov/li/b2025_26/statute/079_000_0000_chapter/079_032_0000_article/079_032_0101_section/079_032_0101_k/); [79-32,102](https://www.kslegislature.gov/li/b2025_26/statute/079_000_0000_chapter/079_032_0000_article/079_032_0102_section/079_032_0102_k/); [79-32,103](https://www.kslegislature.gov/li/b2025_26/statute/079_000_0000_chapter/079_032_0000_article/079_032_0103_section/079_032_0103_k/); [79-32,107](https://www.kslegislature.gov/li/b2025_26/statute/079_000_0000_chapter/079_032_0000_article/079_032_0107_section/079_032_0107_k/) |
 | **KY** | Income of more than $5,000 from which no Kentucky tax will be withheld, and estimated tax after withholding and credits more than $500 (the 740-ES says "at least $500" in one place and "$500 or less, no payment" in another; at exactly $500, check) | 90% | 100%; 110% if 2025 KY AGI more than $150,000 ($75,000 MFS); not for farmers; none needed if no KY liability for a 12-month 2025 | 15 Apr, 15 Jun, 15 Sep 2026, 15 Jan 2027 | 2/3 of 2025 or 2026 gross income: 66 2/3%; pay by 15 Jan 2027 or file and pay by 1 Mar 2027 | Rate under KRS 131.183 (Form 2210-K): 9% on tax unpaid in 2026 | [740-ES](https://revenue.ky.gov/Forms/740-ES%20Instructions%20%282025%29.pdf); [2026 rate](https://revenue.ky.gov/News/Pages/Tax-Interest-Rate-Update-for-01-01-26.aspx) |
 | **LA** | Tax after credits and withholding expected to exceed $1,000 (single) or $2,000 (joint); page dated before the 2025 reform: check for 2026 | 90% | 100% of the prior 12-month year's tax (the same page also says 90%: check); no 110% rule | Standard; file and pay by 31 January replaces January | 2/3 from farming or fishing: 66.66%; pay by 15 January, or file and pay by 1 March | 12% a year on the underpayment (R-210R) | [LDR](https://revenue.louisiana.gov/individuals/general-resources/declaration-of-estimated-income-taxes/) |
-| **MA** | check | check | check | check | check | check | Form 1-ES (Massachusetts DOR); no page could be fetched |
+| **MA** | More than $400 of tax on income not subject to withholding (include the 4% surtax) | check | check | Standard (15 Apr, 15 Jun, 15 Sep 2026, 15 Jan 2027) | check | Form M-2210 | [2026 Form 1-ES](https://www.mass.gov/doc/2026-form-1-es-estimated-tax-payment-vouchers-instructions-and-worksheets/download) |
 | **MD** | Tax expected to be more than $500 over Maryland withholding (and a return is required) | 90% | **110% of last year's tax for everyone** (no income trigger) | At least 1/4 by 15 Apr, then 15 Jun, 15 Sep 2026, 15 Jan 2027; file and pay by 31 Jan 2027 replaces the 4th | 2/3 from farming or fishing: declaration and full payment by 15 Jan 2027, or file and pay by 1 Mar 2027 | Interest (Form 502UP); none if less than $500 tax on income not subject to withholding | [PV worksheet](https://www.marylandtaxes.gov/content/dam/mdcomp/tax/forms/worksheets/2026-pv-worksheet.pdf); [2025 booklet](https://www.marylandtaxes.gov/content/dam/mdcomp/tax/instructions/2025/resident-booklet.pdf) |
 | **ME** | $1,000 or more after withholding and credits, **and** prior-year tax of $1,000 or more | 90% | 100% (12-month prior year); no 110% rule; not usable for "unusual event" income ($500,000 or more above the same period last year), which is paid at 90% | Standard; file and pay by 31 January: no 4th-installment penalty | 2/3 of AGI from farming or fishing: 66 2/3%; one payment by 15 Jan 2027, or file and pay by 1 Mar 2027 | Penalty at the 36 M.R.S. §186 rate: 9% for 2026 (Form 2210ME) | [1040ES-ME](https://www.maine.gov/revenue/sites/maine.gov.revenue/files/inline-files/26_1040es_fillable.pdf); [36 M.R.S. §5228](https://legislature.maine.gov/statutes/36/title36sec5228.html); [MRS interest rates](https://www.maine.gov/revenue/tax-return-forms/interest-rates) |
-| **MI** | check | check | check | check | check | check | Form MI-1040ES (Michigan Treasury); no page could be fetched |
+| **MI** | Balance expected on the 2026 MI-1040 more than $500 | 90% | 100% of 2025 tax; 110% if 2025 AGI more than $150,000 ($75,000 MFS) | Standard | Qualified farmers, fishermen and seafarers: 66 2/3% | Penalty 10% of the tax due (minimum $10) for paying too little or late; 25% (minimum $25) for not paying; plus interest (MI-2210) | [2026 MI-1040ES](https://www.michigan.gov/taxes/-/media/Project/Websites/taxes/Forms/IIT/TY2025/MI-1040ES-(2026).pdf) |
 | **MN** | No addition to tax if tax after credits is less than $500 | 90% | 100% (12-month prior year with a liability); 110% if prior-year AGI exceeds $150,000 (MFS figure: check) | Standard; file and pay by 31 January: no 4th-installment addition | Federal farmer or fisher test: 66 2/3%; one installment 15 January; the 31 January rule becomes 1 March | Addition at the prime-based rate of Minn. Stat. 270C.40 (Schedule M15); 2026 rate: check | [Minn. Stat. 289A.25](https://www.revisor.mn.gov/statutes/cite/289A.25) |
 | **MO** | Declaration if estimated tax is $100.00 or more; no penalty if the balance due is less than $500 | 90% | 100% (12-month prior year with a liability); no 110% rule | Standard; file and pay by 31 January counts as paid 15 January | Farmers (2/3 of Missouri gross income): 66 2/3%; pay by 15 January, or file and pay by 1 March | Interest-rate addition (MO-2210): 7% for days in 2026 | [MO-1040ES](https://dor.mo.gov/forms/MO-1040ES_2026.pdf); [MO-2210](https://dor.mo.gov/forms/MO-2210_2025.pdf) |
 | **MS** | Tax liability exceeds $200 and less than 80% is covered by withholding | **80%** | 100% of prior-year tax; no 110% rule; if prior-year tax was zero, the full current-year amount applies | Standard | 2/3 from farming or fishing: pay by 15 January, or file and pay by 1 March | Interest of 1/2% a month (Form 80-320) | [DOR FAQ](https://www.dor.ms.gov/individual/individual-income-tax-frequently-asked-questions); [80-320](https://www.dor.ms.gov/sites/default/files/tax-forms/individual/80320258%201.pdf) |
@@ -91,7 +89,7 @@ Read each row with its source. "Prior year" means the 2025 tax for 2026 estimate
 | **OK** | Tax expected to exceed withholding by $500 or more | **70%** | 100% (12-month prior year); no 110% rule | Standard | Farmers (2/3 of gross income, current or prior year) need not make estimates | Interest at 20% a year (Form OW-8-P); none if tax after credits is less than $1,000 | [OW-8-ES](https://oklahoma.gov/content/dam/ok/en/tax/documents/forms/individuals/current/OW-8-ES.pdf); [OW-8-P](https://oklahoma.gov/content/dam/ok/en/tax/documents/forms/other/OW-8-P.pdf) |
 | **OR** | Expect to owe $1,000 or more after all credits and withholding | 90% | 100% of prior-year tax after credits; no 110% rule; the prior return must not be a short-year return | Standard | 2/3 from farming or commercial fishing: no estimates required | Underpayment interest (Form OR-10): 8% for 2026 | [OR-ESTIMATE](https://www.oregon.gov/dor/forms/FormsPubs/publication-or-estimate_101-026_2026.pdf); [OR-10](https://www.oregon.gov/dor/forms/FormsPubs/form-or-10-instructions_101-031-1_2025.pdf) |
 | **PA** | Expect to owe at least $430 ($14,000 of income not subject to withholding) after withholding and credits | 90% | 100% of 2025 PA-40 net taxable income times the 2026 rate (3.07%); only if a full-year 2025 PA-40 was filed | Standard if first required before 1 Apr; fewer, larger if later | 2/3 from farming: pay by 15 Jan 2027, or file and pay by 1 Mar 2027 | Interest-style penalty per day on each underpayment, not beyond the return due date (REV-1630) | [REV-413](https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/formsforindividuals/pit/documents/2026/2026_rev-413i.pdf) |
-| **RI** | Tax expected to be $250 or more over allowable credits | check | check (the regulation says federal exceptions "may be followed") | check | check | check (Form RI-2210) | [280-RICR-20-55-1](https://rules.sos.ri.gov/regulations/part/280-20-55-1) |
+| **RI** | Tax expected to be $250 or more over allowable credits | check (the 2026 form compares payments with 80% of each installment liability) | check (the regulation says federal exceptions "may be followed") | Standard (15 Apr, 15 Jun, 15 Sep 2026, 15 Jan 2027) | check | check (Form RI-2210) | [2026 RI-1040ES](https://tax.ri.gov/sites/g/files/xkgbur541/files/2026-01/2026%20RI-1040ES_w.pdf); [280-RICR-20-55-1](https://rules.sos.ri.gov/regulations/part/280-20-55-1) |
 | **SC** | Expect to owe $100 or more with the SC1040 | 90% | 100% (12-month prior year, return filed); 110% if prior-year AGI more than $150,000 ($75,000 MFS) | Standard; file and pay by 1 February replaces January | 2/3 from farming or commercial fishing: pay by 15 Jan 2027, or file and pay by 1 Mar 2027 | SC2210: 7% a year on the 2025 form; 2026 rate: check. 2026 tax changes (Act 110): recheck estimates | [SC1040ES](https://dor.sc.gov/sites/dor/files/forms/SC1040ES_2026.pdf); [SC2210](https://dor.sc.gov/sites/dor/files/forms/SC2210_2025.pdf) |
 | **UT** | **No estimated tax requirement**; voluntary prepayments allowed | n/a | n/a (90%/100% apply only to the **extension** prepayment) | None | n/a | No estimated tax penalty; extension prepayment penalty 2% of the unpaid tax per month of the extension period if the extension test is not met | [Utah extensions](https://incometax.utah.gov/filing/extensions-and-prepayments); [TC-40 instructions](https://incometax.utah.gov/line-by-line-page2/) |
 | **VA** | Tax after withholding and credits expected to be **more than $1,000** (2026 onward) | 90% (actual or annualized) | 100% of prior-year tax (full-year prior return with a liability), or prior-year income at 2026 rates; no 110% rule; no addition if total underpayments are $1,000 or less | 25% each **1 May**, 15 Jun, 15 Sep 2026, 15 Jan 2027; file and pay by 1 Mar 2027 replaces January | 2/3 from farming, fishing or merchant seaman: 66 2/3%; one payment by 15 Jan 2027, or file and pay by 1 Mar 2027 | Addition to tax, Form 760C (760F for farmers) | [760ES](https://www.tax.virginia.gov/sites/default/files/taxforms/individual-income-tax/2026/760es-2026.pdf) |
@@ -141,6 +139,39 @@ These are illustrations with invented numbers. Each uses only the rules in the m
 
 **Case 5: Maryland 110% for everyone (2026).** 2025 Maryland tax $8,000 on AGI of $90,000; 2026 tax expected to rise. Each quarterly payment must be at least 1/4 × 110% × $8,000 = **$2,200** to be safe on the prior-year route, even though AGI is well under $150,000. The other route is quarterly payments that equal 90% of the 2026 tax. [2025 booklet](https://www.marylandtaxes.gov/content/dam/mdcomp/tax/instructions/2025/resident-booklet.pdf)
 
+Cases 2 and 4 recomputed:
+
+```oa-check
+name: California at 1,200,000 AGI, prior-year route barred (2026)
+inputs:
+  tax_2026: 110000
+steps:
+  - required: tax_2026 * 0.90
+  - april: required * 0.30
+  - june: required * 0.40
+  - september: required * 0
+  - january: required * 0.30
+expected:
+  required: 99000
+  april: 29700
+  june: 39600
+  september: 0
+  january: 29700
+```
+
+```oa-check
+name: Georgia 70 percent current-year route (2026)
+inputs:
+  tax_2026: 10000
+  tax_2025: 9000
+steps:
+  - required: min(tax_2026 * 0.70, tax_2025 * 1.00)
+  - each_installment: required / 4
+expected:
+  required: 7000
+  each_installment: 1750
+```
+
 ## When to refuse or refer
 
 - Any state cell marked **check**: do not give a final number until it is confirmed on the state's current form.
@@ -175,3 +206,19 @@ These are illustrations with invented numbers. Each uses only the rules in the m
 - [ ] Farmer and fisher status tested (two-thirds of gross income).
 - [ ] Any cell marked **check** confirmed on the state's current form.
 - [ ] Penalty exposure on missed installments noted, with the state's penalty form.
+
+## Sources
+
+| Source | URL | Read on |
+| --- | --- | --- |
+| Each state's 2026 (or latest) estimated tax form, instructions or statute, as linked in its row. Rows not named below were read on 25 September 2026 and their links checked on 13 November 2026. | https://www.ftb.ca.gov/forms/2026/2026-540-es-instructions.pdf | 2026-09-25 |
+| 2026 Form 540-ES instructions (via `ca-estimated-tax-540es`). Read for $500, 90%, 100% or 110%, the $1,000,000 bar and 30/40/0/30. | https://www.ftb.ca.gov/forms/2026/2026-540-es-instructions.pdf | 2026-11-13 |
+| IT-2105-I (2026) (via `ny-estimated-tax`). Read for $300, 90%, 100% and 110% above $150,000. | https://www.tax.ny.gov/pdf/current_forms/it/it2105i.pdf | 2026-11-13 |
+| 35 ILCS 5/803 and 804 (via `il-estimated-tax`). Read for more than $1,000, 90%, 100% and 25% installments. | https://www.ilga.gov/legislation/ilcs/fulltext.asp?DocName=003500050K804 | 2026-11-13 |
+| N.C.G.S. 105-163.15 and NCDOR interest rate (via `nc-estimated-tax`). Read for $1,000, 90%, 100% and 7% interest for 2025 and 2026. | https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_105/GS_105-163.15.html | 2026-11-13 |
+| Georgia 2026 Form 500-ES and Form 500 UET (via `ga-estimated-tax-depth`). Read for $1,000, 70%, 100% and 9%. | https://dor.georgia.gov/document/document/2026-500-es-estimated-tax-individuals-and-fiduciaries/download | 2026-11-13 |
+| 2026 MI-1040ES (via `mi-estimated-tax`). Read for more than $500, 90%, 100% or 110%, the dates and the 10% and 25% penalties. | https://www.michigan.gov/taxes/-/media/Project/Websites/taxes/Forms/IIT/TY2025/MI-1040ES-(2026).pdf | 2026-11-13 |
+| 2026 Form 1-ES (via `ma-income-tax`). Read for the more-than-$400 trigger and 2026 dates. | https://www.mass.gov/doc/2026-form-1-es-estimated-tax-payment-vouchers-instructions-and-worksheets/download | 2026-11-13 |
+| 2026 RI-1040ES (via `ri-income-tax`). Read for $250, the dates and the 80% comparison. | https://tax.ri.gov/sites/g/files/xkgbur541/files/2026-01/2026%20RI-1040ES_w.pdf | 2026-11-13 |
+
+Not yet confirmed: Idaho (every cell); Massachusetts current-year and prior-year percentages and farmer rule; Rhode Island prior-year rule and penalty rate; New Hampshire's repeal of the Interest and Dividends Tax estimates; the exact-threshold comparators marked check in Arkansas, DC, Indiana, Kentucky, New Mexico; Arizona's 110% rule and dates; Alabama's regular penalty rate; Louisiana's 2026 thresholds after the 2025 reform; Minnesota's MFS 110% figure; North Carolina, South Carolina and Ohio 2026 penalty rates and farmer dates; West Virginia's January date; Hawaii's 2027 filed-and-paid rule.

@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/li-corporate-income-tax"
   jurisdiction: "LI"
   tax_year: "2026"
-  last_updated: "2026-10-30"
+  last_updated: "2026-11-14"
 ---
 
-# Liechtenstein corporate income tax v0.4
+# Liechtenstein corporate income tax v0.5
 
 ## Who this applies to
 
@@ -20,15 +20,15 @@ Use this skill for 2026 for an ordinary legal entity after establishing its clas
 
 | Item | Current rule | Source |
 |---|---|---|
-| Ordinary profit tax | 12.5% of taxable net income | SteG article 61; [authority summary][authority] |
-| Minimum tax where applicable | CHF 1,800, creditable against profit tax, not added to it | SteG article 62(1)–(2) |
-| Commercial-business minimum-tax exception | Exclusive qualifying commercial-business purpose and average balance-sheet total over the last three years **not exceeding CHF 500,000** | SteG article 62(3) |
-| Ordinary brought-forward loss use | At most 70% of positive taxable net income | SteG article 57(1); exceptions in 57(1a) |
-| Equity deduction reference rate | 4% Sollertrag in SteG article 5 for 2026 | SteG articles 5 and 54; [Act 2024/483, commencement II(2)][amendment] |
-| Late-payment interest | 4% under current SteV article 45, applied to the correct liability/payment period | SteG article 114; SteV article 45 |
-| Source tax on nonresident legal entities' board-function income | 12% | SteG article 63a |
-| Withholding tax on dividends, interest and royalties | None: not a source-tax category | SteG articles 24, 63a |
-| Payment | Within 30 days after the tax falls due | SteG article 114(1) |
+| Ordinary profit tax | 12.5% of taxable net income | SteG article 61; [authority summary](https://www.llv.li/de/landesverwaltung/steuerverwaltung/steuern-juristische-personen/ertragssteuer) |
+| Minimum tax where applicable | CHF 1,800, creditable against profit tax, not added to it | SteG article 62(1)–(2) ([SteG](https://www.gesetze.li/konso/pdf/2010340000)) |
+| Commercial-business minimum-tax exception | Exclusive qualifying commercial-business purpose and average balance-sheet total over the last three years **not exceeding CHF 500,000** | SteG article 62(3) ([SteG](https://www.gesetze.li/konso/pdf/2010340000)) |
+| Ordinary brought-forward loss use | At most 70% of positive taxable net income | SteG article 57(1); exceptions in 57(1a) ([SteG](https://www.gesetze.li/konso/pdf/2010340000)) |
+| Equity deduction reference rate | 4% Sollertrag in SteG article 5 for 2026 | SteG articles 5 and 54; [Act 2024/483, commencement II(2)](https://www.gesetze.li/chrono/pdf/2024483000) |
+| Late-payment interest | 4% under current SteV article 45, applied to the correct liability/payment period | SteG article 114; SteV article 45 ([SteG](https://www.gesetze.li/konso/pdf/2010340000)) |
+| Source tax on nonresident legal entities' board-function income | 12% | SteG article 63a ([SteG](https://www.gesetze.li/konso/pdf/2010340000)) |
+| Withholding tax on dividends, interest and royalties | None: not a source-tax category | SteG articles 24, 63a ([SteG](https://www.gesetze.li/konso/pdf/2010340000)) |
+| Payment | Within 30 days after the tax falls due | SteG article 114(1) ([SteG](https://www.gesetze.li/konso/pdf/2010340000)) |
 
 Do not apply a CHF 1,800 minimum to every entity without classification: article 62 distinguishes specified source-tax-finalised cases, its commercial-business exception and assessed versus unassessed payment routes. A short liability period does not itself prorate the statutory minimum. Startups without three completed years and disputed purpose/balance classifications need separate confirmation. [SteG, article 62][law]
 
@@ -214,4 +214,4 @@ Find the current Guide and professional-review status at [OpenAccountants](https
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-30. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `li-corporate-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/li-corporate-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `li-corporate-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/li-corporate-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

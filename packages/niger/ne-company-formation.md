@@ -3,15 +3,16 @@ name: ne-company-formation
 description: "Niger company formation and entity choice for 2026 intake, covering source-based SARL, ordinary SA and SAS constitution, capital subscriptions, paid cash, kind contributions, registration and corporate follow-up. Use this Guide for Niger SARL capital, private statutes, OHADA share payment, single-shareholder SA, branch versus representative office, and pre-registration commitments. It reads Niger’s original national decree and its gazetted capital amendment alongside the actual OHADA companies Act. Two executable cases compare initial funding and the aggregate contribution-auditor boundary. Current guichet forms, fees, tax registrations and the complete national amendment chain remain unresolved; the draft does not certify a filing or claim accountant attestation."
 jurisdiction: NE
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: formation
-version: 0.1
+version: 0.2
 tier: 2
 domain: formation
+type: filing-howto
 ---
 
-# Niger company formation and entity choice v0.1
+# Niger company formation and entity choice v0.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 

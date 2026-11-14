@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/cn-stamp-tax"
   jurisdiction: "CN"
   tax_year: "2026"
-  last_updated: "2026-10-29"
+  last_updated: "2026-11-14"
 ---
 
 # China Stamp Tax (印花税): taxable documents, rates, securities trading, exemptions, the small-business halving and filing for 2026
@@ -336,32 +336,34 @@ expected:
 
 | Source | Official URL | Read on |
 | --- | --- | --- |
-| Stamp Tax Law | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/yhs/202106/t458595.html | 2026-10-29 |
-| MOF/STA announcement 2022 No. 22 | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/yhs/202206/t463167.html | 2026-10-29 |
-| MOF/STA announcement 2023 No. 39 | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/yhs/202308/t468451.html | 2026-10-29 |
-| MOF/STA announcement 2023 No. 12 | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202308/t468162.html | 2026-10-29 |
-| MOF/STA announcement 2023 No. 13 | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202308/t468161.html | 2026-10-29 |
-| MOF/STA announcement 2024 No. 14 | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/yhs/202409/t473303.html | 2026-10-29 |
-| Caishui 2025 No. 10 | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/yhs/202503/t475883.html | 2026-10-29 |
-| Stamp Tax Law rate table, reproduced by the Zhongshan Tax Bureau | https://guangdong.chinatax.gov.cn/gdsw/zssw_nsrwkt_sphg_zbsp/2022-07/08/b5cbcdef663d476bbcb821cb6ab21a8c/files/5e07417a94ab464895b4c817b3e75c5c.pdf | 2026-10-29 |
-| Tianjin Q&A, 2025 | https://tianjin.chinatax.gov.cn/nsrxt/11200000000/0500/050012/20250207161507617.shtml | 2026-10-29 |
-| Tianjin Q&A, 2022 | https://tianjin.chinatax.gov.cn/nsrxt/11200000000/0500/050012/20220725150043296.shtml | 2026-10-29 |
-| STA (89) Guoshuidizi No. 34 on technology contracts | https://fgk.chinatax.gov.cn/zcfgk/c100012/c5193073/content.html | 2026-10-29 |
-| Shanghai Tax Bureau stamp tax Q&A, 2023 | https://shanghai.chinatax.gov.cn/zcfw/rdwd/202303/t466552.html | 2026-10-29 |
-| Tianjin Tax Bureau VAT Q&A, 2026 | https://tianjin.chinatax.gov.cn/nsrxt/11200000000/0500/050012/20260413100927171.shtml | 2026-10-29 |
-| STA announcement 2022 No. 14 | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/yhs/202206/t463170.html | 2026-10-29 |
-| Shanghai Tax Bureau securities Q&A, 2023 | https://shanghai.chinatax.gov.cn/zcfw/rdwd/202309/t468612.html | 2026-10-29 |
-| MOF/STA announcement 2022 No. 23 | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/yhs/202206/t463168.html | 2026-10-29 |
-| its Annex 1 | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/yhs/202206/P020220630368115809685.pdf | 2026-10-29 |
-| Caishui 2008 No. 24 Art. 2(2) | https://guangdong.chinatax.gov.cn/gdsw/grsdsgg_hmqsc_bzms_grzf/2021-08/31/content_30f96f132c0240c6b486a09f97d40dce.shtml | 2026-10-29 |
-| Caishui 2008 No. 137 Art. 2 | https://fgk.chinatax.gov.cn/zcfgk/c102416/c5203534/content.html | 2026-10-29 |
-| Shanghai Tax Bureau share-transfer Q&A, 2022 | https://shanghai.chinatax.gov.cn/tax/zcfw/rdwd/202212/t465345.html | 2026-10-29 |
-| Shanghai Tax Bureau announcement 2022 No. 3 | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/yhs/202206/t463184.html | 2026-10-29 |
-| Tianjin Tax Bureau e-tax guide, 2024 | https://tianjin.chinatax.gov.cn/nsrxt/11200000000/0500/050011/20240722144157010.shtml | 2026-10-29 |
-| Tax Collection Administration Law | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/swzsgl/200609/t284229.html | 2026-10-29 |
+| Stamp Tax Law. Read for Scope and who this is for, Rates for tax year 2026, Tax base: the rules that decide most disputes | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/yhs/202106/t458595.html | 2026-11-14 |
+| MOF/STA announcement 2022 No. 22. Read for Scope and who this is for, What counts as a taxable document, Tax base: the rules that decide most disputes | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/yhs/202206/t463167.html | 2026-11-14 |
+| MOF/STA announcement 2023 No. 39. Read for What is current for 2026, Rates for tax year 2026, Securities trading stamp tax | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/yhs/202308/t468451.html | 2026-11-14 |
+| MOF/STA announcement 2023 No. 12. Read for What is current for 2026, Exemptions and reliefs, Completion checklist | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202308/t468162.html | 2026-11-14 |
+| MOF/STA announcement 2023 No. 13. Read for What is current for 2026, Exemptions and reliefs | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202308/t468161.html | 2026-11-14 |
+| MOF/STA announcement 2024 No. 14. Read for What is current for 2026, Exemptions and reliefs | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/yhs/202409/t473303.html | 2026-11-14 |
+| Caishui 2025 No. 10. Read for What is current for 2026, Exemptions and reliefs | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/yhs/202503/t475883.html | 2026-11-14 |
+| Stamp Tax Law rate table, reproduced by the Zhongshan Tax Bureau. Read for Rates for tax year 2026, Worked cases | https://guangdong.chinatax.gov.cn/gdsw/zssw_nsrwkt_sphg_zbsp/2022-07/08/b5cbcdef663d476bbcb821cb6ab21a8c/files/5e07417a94ab464895b4c817b3e75c5c.pdf | 2026-11-14 |
+| Tianjin Q&A, 2025. Read for the account-book and securities rate lines, which the Stamp Tax Law rate table also states (could not reopen 14 Nov, HTTP 404) | https://tianjin.chinatax.gov.cn/nsrxt/11200000000/0500/050012/20250207161507617.shtml | 2026-10-29 |
+| Tianjin Q&A, 2022. Read for the account-book and securities rate lines, which the Stamp Tax Law rate table also states (could not reopen 14 Nov, HTTP 404) | https://tianjin.chinatax.gov.cn/nsrxt/11200000000/0500/050012/20220725150043296.shtml | 2026-10-29 |
+| STA (89) Guoshuidizi No. 34 on technology contracts. Read for What counts as a taxable document | https://fgk.chinatax.gov.cn/zcfgk/c100012/c5193073/content.html | 2026-11-14 |
+| Shanghai Tax Bureau stamp tax Q&A, 2023. Read for Tax base: the rules that decide most disputes | https://shanghai.chinatax.gov.cn/zcfw/rdwd/202303/t466552.html | 2026-11-14 |
+| Tianjin Tax Bureau VAT Q&A, 2026. Read for Tax base: the rules that decide most disputes (could not reopen 14 Nov, HTTP 404) | https://tianjin.chinatax.gov.cn/nsrxt/11200000000/0500/050012/20260413100927171.shtml | 2026-10-29 |
+| STA announcement 2022 No. 14. Read for Tax base: the rules that decide most disputes, Filing and payment | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/yhs/202206/t463170.html | 2026-11-14 |
+| Shanghai Tax Bureau securities Q&A, 2023. Read for Securities trading stamp tax | https://shanghai.chinatax.gov.cn/zcfw/rdwd/202309/t468612.html | 2026-11-14 |
+| MOF/STA announcement 2022 No. 23. Read for Exemptions and reliefs | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/yhs/202206/t463168.html | 2026-11-14 |
+| its Annex 1. Read for Exemptions and reliefs | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/yhs/202206/P020220630368115809685.pdf | 2026-11-14 |
+| Caishui 2008 No. 24 Art. 2(2). Read for Exemptions and reliefs | https://guangdong.chinatax.gov.cn/gdsw/grsdsgg_hmqsc_bzms_grzf/2021-08/31/content_30f96f132c0240c6b486a09f97d40dce.shtml | 2026-11-14 |
+| Caishui 2008 No. 137 Art. 2. Read for Exemptions and reliefs | https://fgk.chinatax.gov.cn/zcfgk/c102416/c5203534/content.html | 2026-11-14 |
+| Shanghai Tax Bureau share-transfer Q&A, 2022. Read for Boundary and exception table | https://shanghai.chinatax.gov.cn/tax/zcfw/rdwd/202212/t465345.html | 2026-11-14 |
+| Shanghai Tax Bureau announcement 2022 No. 3. Read for Filing and payment, Worked cases | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/yhs/202206/t463184.html | 2026-11-14 |
+| Tianjin Tax Bureau e-tax guide, 2024. Read for Filing and payment (could not reopen 14 Nov, HTTP 404) | https://tianjin.chinatax.gov.cn/nsrxt/11200000000/0500/050011/20240722144157010.shtml | 2026-10-29 |
+| Tax Collection Administration Law. Read for Filing and payment | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/swzsgl/200609/t284229.html | 2026-11-14 |
 
-| Additional operative source | https://tianjin.chinatax.gov.cn/11200000000/0300/030005/20261022165546067.shtml | 2026-10-29 |
-| Additional operative source | https://guangdong.chinatax.gov.cn/gdsw/gzsw_dmtxc/2023-08/15/content_83244a0e156a43209abc9bfdd7a9c81f.shtml | 2026-10-29 |
+| Tianjin Tax Bureau Q&A, 22 October 2026. Read for whether an individual buying a new car pays stamp tax (个人购买新车需要缴纳印花税吗) | https://tianjin.chinatax.gov.cn/11200000000/0300/030005/20261022165546067.shtml | 2026-11-14 |
+| 财产和行为税热点问答（二）. Read for Boundary and exception table | https://guangdong.chinatax.gov.cn/gdsw/gzsw_dmtxc/2023-08/15/content_83244a0e156a43209abc9bfdd7a9c81f.shtml | 2026-11-14 |
+
+Not yet confirmed: the four Tianjin Tax Bureau pages that returned HTTP 404 on 14 Nov 2026 (their points also rest on the Stamp Tax Law and the Shanghai and Guangdong pages above, which loaded); local filing screens, which this skill does not set out.
 
 > **General reference only.** This Guide is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status or local procedures. A qualified professional in the relevant jurisdiction must review the work before filing, paying or taking a tax position.
 
@@ -369,4 +371,4 @@ expected:
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-29. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `cn-stamp-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/cn-stamp-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `cn-stamp-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/cn-stamp-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

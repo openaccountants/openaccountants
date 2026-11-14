@@ -1,186 +1,26 @@
 ---
 name: gb-tax-relief-under-the-merged-scheme
-description: "A drafting guide to the merged scheme R&D expenditure credit (RDEC) for UK companies with accounting periods beginning on or after 1 April 2024, covering the credit rate, the PAYE cap, the notification and claim process, and the payment steps."
+description: "How to work out and claim the merged scheme R&D expenditure credit (RDEC) for a UK company with an accounting period beginning on or after 1 April 2024, and when a loss-making R&D intensive SME should claim enhanced R&D intensive support (ERIS) instead. Covers the 20% credit, the notional tax step, the PAYE cap and its exemption, the claim notification and additional information forms, the CT600 boxes, the claim deadline and the seven payment steps, with Corporation Tax rates for the financial year from 1 April 2026."
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/gb-tax-relief-under-the-merged-scheme"
   jurisdiction: "GB"
   tax_year: "2026"
-  last_updated: "2026-10-31"
+  last_updated: "2026-11-14"
 ---
 
 # UK R&D tax relief under the merged scheme (RDEC) for accounting periods from 1 April 2024
 
-The merged scheme R&D expenditure credit (RDEC) is a taxable credit that a UK company claims on its Company Tax Return for qualifying research and development expenditure. HMRC states that the merged scheme RDEC and enhanced R&D intensive support (ERIS) replace the old RDEC and small and medium-sized enterprise (SME) schemes for accounting periods beginning on or after 1 April 2024. Figures are for tax year 2026. For a company that means Corporation Tax financial year 2026, which begins 1 April 2026. R&D relief follows the accounting period, not the tax year: the test is the date the accounting period began. HMRC's rate table lists one merged scheme rate for every accounting period beginning on or after 1 April 2024, and it still prints that rate in October 2026.
+The merged scheme R&D expenditure credit (RDEC) is a taxable credit that a UK company claims on its Company Tax Return for qualifying research and development expenditure. HMRC states that the merged scheme RDEC and enhanced R&D intensive support (ERIS) replace the old RDEC and small and medium-sized enterprise (SME) schemes for accounting periods beginning on or after 1 April 2024. Figures are for tax year 2026. For a company that means Corporation Tax financial year 2026, which begins 1 April 2026. R&D relief follows the accounting period, not the tax year: the test is the date the accounting period began. HMRC's rate table lists one merged scheme rate for every accounting period beginning on or after 1 April 2024, and it still prints that rate on 14 November 2026. The Corporation Tax rates used at the notional tax step are those for the financial year beginning 1 April 2026.
 
-## Who this is for
+## Scope
 
 A company can claim the merged scheme RDEC only if it is trading, is chargeable to Corporation Tax, and has a project that meets the definition of R&D. All three conditions must be met. HMRC's manual adds that only companies with a trade chargeable to UK Corporation Tax can claim, that ineligible companies cannot claim, and that expenditure attributable to an exempt foreign permanent establishment cannot qualify.
 
 Claimants of any size use one set of rules. Profit-making SMEs, and SMEs that are not R&D intensive, claim under the merged scheme. A loss-making R&D intensive SME may claim ERIS instead, or may choose the merged scheme. A company cannot claim under both schemes for the same expenditure.
 
 This skill does not cover accounting periods beginning before 1 April 2024, which fall under the old RDEC and SME schemes. It does not work through an ERIS claim, the Northern Ireland ERIS provisions, or a ring fence trade (oil extraction or oil rights). It gives the ERIS headline figures only so that the choice between the two schemes can be seen.
-
-## Rates, thresholds and deadlines
-
-### Merged scheme RDEC and ERIS: rate, cap and treatment
-
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.gov.uk/guidance/research-and-development-rd-tax-relief-the-merged-scheme-and-enhanced-rd-intensive-support |
-| Start of the merged scheme and ERIS | accounting periods beginning on or after 1 April 2024 | "replace the old RDEC and small and medium-sized enterprise ( SME ) schemes for accounting periods beginning on or after 1 April 2024" Source: https://www.gov.uk/guidance/research-and-development-rd-tax-relief-the-merged-scheme-and-enhanced-rd-intensive-support (tax year 2026) (read 2026-10-31) |
-| Merged scheme RDEC rate | 20% | "The rate of R&D expenditure credit under the merged RDEC scheme is 20%. Different rates apply to ring-fenced trades" Source: https://www.gov.uk/guidance/research-and-development-rd-tax-relief-the-merged-scheme-and-enhanced-rd-intensive-support (tax year 2026) (read 2026-10-31) |
-| Tax treatment of the credit | taxable, as trading income | "This expenditure credit is liable to Corporation Tax as it is classed as trading income" Source: https://www.gov.uk/guidance/research-and-development-rd-tax-relief-the-merged-scheme-and-enhanced-rd-intensive-support (tax year 2026) (read 2026-10-31) |
-| PAYE cap, fixed part | GBP 20,000 | "The PAYE cap amount is £20,000 plus 300% of the company’s relevant PAYE and National Insurance contributions liabilities for the period" Source: https://www.gov.uk/guidance/research-and-development-rd-tax-relief-the-merged-scheme-and-enhanced-rd-intensive-support (tax year 2026) (read 2026-10-31) |
-| PAYE cap, variable part | 300% | "£20,000 plus 300% of the company’s relevant PAYE and National Insurance contributions liabilities for the period" Source: https://www.gov.uk/guidance/research-and-development-rd-tax-relief-the-merged-scheme-and-enhanced-rd-intensive-support (tax year 2026) (read 2026-10-31) |
-| Credit received in the period | cannot exceed the PAYE cap for that period, unless the company is exempt from the cap | "In either the merged RDEC scheme or ERIS , the credit amount you receive in the accounting period cannot exceed the PAYE cap for that period, unless you’re exempt from the cap" Source: https://www.gov.uk/guidance/research-and-development-rd-tax-relief-the-merged-scheme-and-enhanced-rd-intensive-support (tax year 2026) (read 2026-10-31) |
-| Excess over the PAYE cap, merged scheme | carried forward as RDEC the company can claim in the next accounting period | "any excess is carried forward as a Research and Development expenditure credit that you can claim in the next accounting period" Source: https://www.gov.uk/guidance/research-and-development-rd-tax-relief-the-merged-scheme-and-enhanced-rd-intensive-support (tax year 2026) (read 2026-10-31) |
-| ERIS: who | loss-making R&D intensive SMEs only | "You can only claim this relief if you are a loss‑making R&D intensive SME" Source: https://www.gov.uk/guidance/research-and-development-rd-tax-relief-the-merged-scheme-and-enhanced-rd-intensive-support (tax year 2026) (read 2026-10-31) |
-| ERIS: loss-making test | a trading loss for tax purposes before the additional deduction | "A SME is loss-making if it makes a trading loss for tax purposes before the additional deduction is made" Source: https://www.gov.uk/guidance/research-and-development-rd-tax-relief-the-merged-scheme-and-enhanced-rd-intensive-support (tax year 2026) (read 2026-10-31) |
-| ERIS: intensity condition | relevant R&D expenditure at least 30% of total expenditure, including connected companies | "relevant R&D expenditure is at least 30% of its total expenditure (including that of any connected companies" Source: https://www.gov.uk/guidance/research-and-development-rd-tax-relief-the-merged-scheme-and-enhanced-rd-intensive-support (tax year 2026) (read 2026-10-31) |
-| ERIS: extra deduction | 86% | "deduct an extra 86% of their qualifying costs in calculating their adjusted trading loss" Source: https://www.gov.uk/guidance/research-and-development-rd-tax-relief-the-merged-scheme-and-enhanced-rd-intensive-support (tax year 2026) (read 2026-10-31) |
-| ERIS: total deduction | 186% | "to make a total of 186% deduction" Source: https://www.gov.uk/guidance/research-and-development-rd-tax-relief-the-merged-scheme-and-enhanced-rd-intensive-support (tax year 2026) (read 2026-10-31) |
-| ERIS: payable tax credit | up to 14.5% of the surrenderable loss, not taxable | "claim a payable tax credit, which is not liable to tax and is worth up to 14.5% of the surrenderable loss" Source: https://www.gov.uk/guidance/research-and-development-rd-tax-relief-the-merged-scheme-and-enhanced-rd-intensive-support (tax year 2026) (read 2026-10-31) |
-
-The ERIS intensity condition has a second route: a company that met the condition in its last 12-month accounting period, and made a valid claim to SME relief or ERIS in that period on expenditure incurred on or after 1 April 2023, can also claim. Both of those must apply.
-
-### Rates by accounting period
-
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird115000 |
-| Which periods | accounting periods beginning on or after 1 April 2024 only | "The new merged scheme RDEC only applies to accounting periods beginning on or after 1 April 2024" Source: https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird115000 (tax year 2026) (read 2026-10-31) |
-| RDEC rate, non ring fence trades | 20% | "1 April 2024 20% 49% These rates apply regardless of when expenditure claimed for in the accounting period was originally incurred" Source: https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird115000 (tax year 2026) (read 2026-10-31) |
-| RDEC rate, ring fence trades | 49% | "1 April 2024 20% 49% These rates apply regardless of when expenditure claimed for in the accounting period was originally incurred" Source: https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird115000 (tax year 2026) (read 2026-10-31) |
-| Date the expenditure was incurred | does not change the rate | "These rates apply regardless of when expenditure claimed for in the accounting period was originally incurred" Source: https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird115000 (tax year 2026) (read 2026-10-31) |
-
-### Working out the credit
-
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.gov.uk/guidance/work-out-your-research-and-development-tax-relief |
-| Which scheme | set by the date the accounting period began | "There are 4 different types of R&D tax relief, which one you use depends on when your accounting period began" Source: https://www.gov.uk/guidance/work-out-your-research-and-development-tax-relief (tax year 2026) (read 2026-10-31) |
-| Merged scheme calculation | work out the R&D costs, add them together, multiply by 20% | "Multiply the figure by 20% to get the expenditure credit amount" Source: https://www.gov.uk/guidance/work-out-your-research-and-development-tax-relief (tax year 2026) (read 2026-10-31) |
-| Limit | the credit received in the accounting period cannot exceed the PAYE cap, unless exempt | "The expenditure credit amount you receive in the accounting period cannot exceed the PAYE cap, unless you’re exempt from the cap" Source: https://www.gov.uk/guidance/work-out-your-research-and-development-tax-relief (tax year 2026) (read 2026-10-31) |
-
-### The PAYE cap in detail
-
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird140000 |
-| Cap, fixed part | GBP 20,000 | "is £20,000 plus 300% of the company’s relevant PAYE and National Insurance Contributions (NIC) liabilities (CTA09/S1112B(2)) for payment periods within the accounting period" Source: https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird140000 (tax year 2026) (read 2026-10-31) |
-| Cap, variable part | 300% | "300% of the company’s relevant PAYE and National Insurance Contributions (NIC) liabilities" Source: https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird140000 (tax year 2026) (read 2026-10-31) |
-| Accounting period shorter than 12 months | the fixed part is reduced in proportion | "If the accounting period is of less than 12 months duration, the amount of £20,000 is proportionately reduced (CTA09/S1112B(3))" Source: https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird140000 (tax year 2026) (read 2026-10-31) |
-| Excess over the cap, merged scheme | carried forward and treated as RDEC for the next accounting period | "Any excess over the cap is carried forward and treated as an amount of RDEC to which the company is entitled for the next accounting period" Source: https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird140000 (tax year 2026) (read 2026-10-31) |
-| Excess over the cap, ERIS | the claim to that excess is invalid | "Under ERIS, any claim for tax credit in excess of the cap (where applying) is invalid" Source: https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird140000 (tax year 2026) (read 2026-10-31) |
-| Exemption, condition A | the company creates, or prepares to create, relevant IP, or performs significant management of relevant IP it holds, wholly or mainly through its own employees | "These activities must be undertaken wholly or mainly by employees of the company. This does not include directors of the company (unless they are employees)" Source: https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird140000 (tax year 2026) (read 2026-10-31) |
-| Exemption, condition B | qualifying expenditure on subcontractors and EPWs provided by connected companies does not exceed 15% of the company's qualifying R&D expenditure for the period | "does not exceed 15% of the company’s qualifying R&D expenditure for the period" Source: https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird140000 (tax year 2026) (read 2026-10-31) |
-
-The exemption needs both conditions: "The PAYE cap does not apply in accounting periods where a company meets both conditions A and B." Relevant PAYE and NIC liabilities start from the company's own PAYE income tax and Class 1 National Insurance for each payment period in the accounting period. Add the liabilities of a connected company attributable to externally provided workers (EPWs) it supplied or R&D contracted out to it by the claimant. Take off the claimant's own liabilities attributable to EPWs it supplied to, or R&D it performed for, a connected company.
-
-### Corporation Tax rates used at step 2 (financial year 2026)
-
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.gov.uk/government/publications/rates-and-allowances-corporation-tax/rates-and-allowances-corporation-tax |
-| Main rate, year starting 1 April 2026 | 25% | "Main rate (companies with profits over £250,000) 25% 25%" Source: https://www.gov.uk/government/publications/rates-and-allowances-corporation-tax/rates-and-allowances-corporation-tax (tax year 2026) (read 2026-10-31) |
-| Small profits rate, year starting 1 April 2026 | 19% | "Small profits rate (companies with profits under £50,000) 19%" Source: https://www.gov.uk/government/publications/rates-and-allowances-corporation-tax/rates-and-allowances-corporation-tax (tax year 2026) (read 2026-10-31) |
-| Marginal Relief lower limit | GBP 50,000 | "Marginal Relief lower limit £50,000 £50,000" Source: https://www.gov.uk/government/publications/rates-and-allowances-corporation-tax/rates-and-allowances-corporation-tax (tax year 2026) (read 2026-10-31) |
-| Marginal Relief upper limit | GBP 250,000 | "Marginal Relief upper limit £250,000 £250,000" Source: https://www.gov.uk/government/publications/rates-and-allowances-corporation-tax/rates-and-allowances-corporation-tax (tax year 2026) (read 2026-10-31) |
-
-### The payment steps
-
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird112100 |
-| Before step 1 | any step 2 amount brought forward from an earlier period discharges this period's Corporation Tax first | "Before the 7 steps are considered, any step 2 amount brought forward from a previous AP must be used to discharge (pay) the company's CT liability for the accounting period" Source: https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird112100 (tax year 2026) (read 2026-10-31) |
-| Step 1 | credit (this period's gross RDEC plus any step 3 amount brought forward) discharges Corporation Tax for this accounting period | "Step 1 - Discharge of CT in the present accounting period" Source: https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird112100 (tax year 2026) (read 2026-10-31) |
-| Step 2, rule | if the amount left after step 1 exceeds the gross RDEC claimed for this period net of notional tax, the excess is deducted as the notional tax deduction; if it does not, there is no deduction | "by which the amount remaining from step 1 exceeds the amount of the gross RDEC actually claimed for this accounting period" Source: https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird112100 (tax year 2026) (read 2026-10-31) |
-| Step 2, rate for a company whose profits before the RDEC are chargeable at the main rate | the main rate of Corporation Tax, including a company that gets marginal relief | "A company able to benefit from marginal relief still has profits chargeable at the main rate" Source: https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird112100 (tax year 2026) (read 2026-10-31) |
-| Step 2, rate for other companies | the small profits rate | "2. For other companies, the small profits rate" Source: https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird112100 (tax year 2026) (read 2026-10-31) |
-| Step 2, what happens to the deduction | may be surrendered to a group company; otherwise carried forward to discharge Corporation Tax of a later period | "To the extent that it is not surrendered, it is carried forward and must be used to discharge CT liability for any subsequent accounting period" Source: https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird112100 (tax year 2026) (read 2026-10-31) |
-| Step 3 | amount over the PAYE cap is carried to the next accounting period, unless exempt; no new claim is needed there | "Note that no new claim to a gross RDEC in the subsequent accounting period need be made for the entitlement to arise" Source: https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird112100 (tax year 2026) (read 2026-10-31) |
-| Step 4 | discharges Corporation Tax for any other accounting period | "Step 4 - Discharge of CT liability for other period(s)" Source: https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird112100 (tax year 2026) (read 2026-10-31) |
-| Step 5 | a group member may surrender all or part to another group member | "it may surrender the whole or part of any amount remaining after step 4 to any other member of the group (CTA09/S1042N)" Source: https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird112100 (tax year 2026) (read 2026-10-31) |
-| Step 6 | discharges any other liability to HMRC, such as VAT or PAYE, or under a contract settlement | "any other liability of the company to pay a sum to HMRC under any other head of duty (e.g. VAT, PAYE, &c.) or under a contract settlement" Source: https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird112100 (tax year 2026) (read 2026-10-31) |
-| Step 7 | the balance is paid only if the company met the going concern condition when it claimed, there is no enquiry, and its PAYE and VAT are up to date | "There is no enquiry, and the company’s PAYE and VAT liabilities are up to date (CTA09/S1112H)" Source: https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird112100 (tax year 2026) (read 2026-10-31) |
-| HMRC example: RDEC claimed for the period | GBP 300,000 | "A company claims £300,000 RDEC for an AP, with £250,000 carried forward from a previous AP under step 3" Source: https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird112100 (tax year 2026) (read 2026-10-31) |
-| HMRC example: brought forward under step 3 | GBP 250,000 | "£250,000 carried forward from a previous AP under step 3. The step 1 amount is £550,000" Source: https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird112100 (tax year 2026) (read 2026-10-31) |
-| HMRC example: step 1 amount | GBP 550,000 | "The step 1 amount is £550,000" Source: https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird112100 (tax year 2026) (read 2026-10-31) |
-| HMRC example: Corporation Tax discharged at step 1 | GBP 200,000 | "£200,000 of CT is discharged at step 1" Source: https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird112100 (tax year 2026) (read 2026-10-31) |
-| HMRC example: carried to step 2 | GBP 350,000 | "The amount carried forward to step 2 is £350,000" Source: https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird112100 (tax year 2026) (read 2026-10-31) |
-| HMRC example: applicable rate | 25% | "The applicable rate is 25%" Source: https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird112100 (tax year 2026) (read 2026-10-31) |
-| HMRC example: RDEC claimed net of notional tax | GBP 225,000 | "(£300,000) less tax at the notional rate (25%) is £225,000" Source: https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird112100 (tax year 2026) (read 2026-10-31) |
-| HMRC example: notional tax deduction | GBP 125,000 | "£350,000 - £225,000 = £125,000 is applied, and carried forward" Source: https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird112100 (tax year 2026) (read 2026-10-31) |
-
-In HMRC's example the brought-forward step 3 amount is not netted for notional tax. Only the gross RDEC claimed for the current period is.
-
-### Telling HMRC first: the claim notification form
-
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.gov.uk/guidance/tell-hmrc-that-youre-planning-to-claim-research-and-development-rd-tax-relief |
-| Who must notify | a company claiming for the first time, or whose last claim was made more than 3 years before the last date of the claim notification period | "you’re claiming for the first time your last claim was made more than 3 years before the last date of the ‘claim notification period’" Source: https://www.gov.uk/guidance/tell-hmrc-that-youre-planning-to-claim-research-and-development-rd-tax-relief (tax year 2026) (read 2026-10-31) |
-| Periods covered | accounting periods beginning on or after 1 April 2023 | "for accounting periods beginning on or after 1 April 2023, you must submit a claim notification form if" Source: https://www.gov.uk/guidance/tell-hmrc-that-youre-planning-to-claim-research-and-development-rd-tax-relief (tax year 2026) (read 2026-10-31) |
-| Notification period starts | first day of the period of account | "starts on the first day of the ‘period of account’" Source: https://www.gov.uk/guidance/tell-hmrc-that-youre-planning-to-claim-research-and-development-rd-tax-relief (tax year 2026) (read 2026-10-31) |
-| Notification period ends | 6 months after the end of the period of account | "ends 6 months after the end of the ‘period of account’" Source: https://www.gov.uk/guidance/tell-hmrc-that-youre-planning-to-claim-research-and-development-rd-tax-relief (tax year 2026) (read 2026-10-31) |
-| Missing the period | the claim is invalid | "If you do not, your R&D tax relief claim will be invalid" Source: https://www.gov.uk/guidance/tell-hmrc-that-youre-planning-to-claim-research-and-development-rd-tax-relief (tax year 2026) (read 2026-10-31) |
-| Period of account over 12 months | one notification period for all its accounting periods; a first-time claimant sends the form for one of them | "The claim notification period is the same for all accounting periods" Source: https://www.gov.uk/guidance/tell-hmrc-that-youre-planning-to-claim-research-and-development-rd-tax-relief (tax year 2026) (read 2026-10-31) |
-| Exceptions for a recent claimant | a claim within the last 3 years does not count if HMRC rejected it by removing it from the return, or if it was for a period beginning before 1 April 2023 and made by an amendment received on or after 1 April 2023 | "unless any of the following exceptions apply: HMRC rejected your R&D tax relief claim by removing it from your Company Tax Return you claimed R&D tax relief for an accounting period beginning before 1 April 2023 by amending your tax return and the amendment was received on or after 1 April 2023" Source: https://www.gov.uk/guidance/tell-hmrc-that-youre-planning-to-claim-research-and-development-rd-tax-relief (tax year 2026) (read 2026-10-31) |
-| Alternative to the form, only where the last claim was more than 3 years before the last date or an exception applies; not for a first claim | the claim itself, on the return or an amendment, received by the last date of the notification period | "If you made a claim more than 3 years before the last date of your claim notification period or if any of the exceptions apply, you'll need to either: submit the claim notification form by the 'last date of the claim notification period' send the R&D tax relief claim on your Company Tax Return or as an amendment to the return, so that it's received by the 'last date of the claim notification period'" |
-
-### The additional information form
-
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.gov.uk/guidance/submit-detailed-information-before-you-claim-research-and-development-rd-tax-relief |
-| One form per accounting period | a period of account over 12 months needs a form for each accounting period claimed | "You need to complete an additional information form for each accounting period you’re claiming" Source: https://www.gov.uk/guidance/submit-detailed-information-before-you-claim-research-and-development-rd-tax-relief (tax year 2026) (read 2026-10-31) |
-| Timing | before or on the same day as the Company Tax Return, and the form first | "The additional information form must be submitted before or on the same day you submit the Company Tax Return (CT600)" Source: https://www.gov.uk/guidance/submit-detailed-information-before-you-claim-research-and-development-rd-tax-relief (tax year 2026) (read 2026-10-31) |
-| No form | the claim is not accepted | "If you do not submit this form, any R&D or expenditure credit claim will not be accepted" Source: https://www.gov.uk/guidance/submit-detailed-information-before-you-claim-research-and-development-rd-tax-relief (tax year 2026) (read 2026-10-31) |
-| Return sent before the form | the claim is rejected and HMRC removes it | "If the tax return is submitted before the additional information form, the claim will be rejected" Source: https://www.gov.uk/guidance/submit-detailed-information-before-you-claim-research-and-development-rd-tax-relief (tax year 2026) (read 2026-10-31) |
-| Dates on the form | must match the Company Tax Return, including mean accounting dates where elected | "If the start and end dates on both submissions do not match, the additional information form will be rejected and the R&D relief claim in the company tax return will be removed" Source: https://www.gov.uk/guidance/submit-detailed-information-before-you-claim-research-and-development-rd-tax-relief (tax year 2026) (read 2026-10-31) |
-| Who can submit | a company representative, or an agent using an agent services account | "an agent acting on behalf of the company, using an agent services account" Source: https://www.gov.uk/guidance/submit-detailed-information-before-you-claim-research-and-development-rd-tax-relief (tax year 2026) (read 2026-10-31) |
-| Groups | each company needs its own Government Gateway account | "Each company in the group needs its own Government Gateway account to submit an additional form" Source: https://www.gov.uk/guidance/submit-detailed-information-before-you-claim-research-and-development-rd-tax-relief (tax year 2026) (read 2026-10-31) |
-
-Project details: a claim for 1 to 3 projects describes every project. A claim for 4 or more projects describes at least 3 projects that together make up at least half of the qualifying expenditure claimed. Where that would take more than 10 projects, the company describes the 10 projects with the highest qualifying expenditure.
-
-### The claim on the Company Tax Return
-
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.gov.uk/guidance/make-a-claim-for-rd-tax-relief-on-your-company-tax-return |
-| Presentation of the credit | taxable income in the profit and loss account, or added to profit in the tax computations | "Show the expenditure credit as taxable income in your profit and loss account, or by adding it to your profit in your tax computations" Source: https://www.gov.uk/guidance/make-a-claim-for-rd-tax-relief-on-your-company-tax-return (tax year 2026) (read 2026-10-31) |
-| Box 656 | an X to confirm the claim notification form was submitted | "Put an ‘X’ in box 656 to tell us that you’ve submitted the claim notification form" Source: https://www.gov.uk/guidance/make-a-claim-for-rd-tax-relief-on-your-company-tax-return (tax year 2026) (read 2026-10-31) |
-| Box 657 | an X to confirm the additional information form was submitted | "Put an ‘X’ in box 657 to tell us that you’ve submitted the additional information form" Source: https://www.gov.uk/guidance/make-a-claim-for-rd-tax-relief-on-your-company-tax-return (tax year 2026) (read 2026-10-31) |
-| Bank details and CT600L | include bank details and complete supplementary form CT600L | "Include bank details so that HMRC can make the payment. Complete the supplementary form CT600L" Source: https://www.gov.uk/guidance/make-a-claim-for-rd-tax-relief-on-your-company-tax-return (tax year 2026) (read 2026-10-31) |
-| Period of account over 12 months | a separate claim for each accounting period | "If your tax relief claim covers a period of account that’s more than 12 months, submit a separate claim for each accounting period" Source: https://www.gov.uk/guidance/make-a-claim-for-rd-tax-relief-on-your-company-tax-return (tax year 2026) (read 2026-10-31) |
-| Claim deadline, period of account of 18 months or less | 24 months from the last day of the period of account | "18 months long or less is 24 months from the last day of the period of account" Source: https://www.gov.uk/guidance/make-a-claim-for-rd-tax-relief-on-your-company-tax-return (tax year 2026) (read 2026-10-31) |
-| Claim deadline, period of account over 18 months | 42 months from the first day of the period of account | "more than 18 months long is 42 months from the first day of the period of account" Source: https://www.gov.uk/guidance/make-a-claim-for-rd-tax-relief-on-your-company-tax-return (tax year 2026) (read 2026-10-31) |
-| Same deadline for every accounting period in it | yes | "This is the deadline for making a claim for all accounting periods that fall within the period of account" Source: https://www.gov.uk/guidance/make-a-claim-for-rd-tax-relief-on-your-company-tax-return (tax year 2026) (read 2026-10-31) |
-
-### Making, amending or withdrawing a claim
-
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird81800 |
-| Where | in the Company Tax Return or an amendment, through the Corporation Tax Online Service | "Both original returns and amendments must be made through the Corporation Tax Online Service" Source: https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird81800 (tax year 2026) (read 2026-10-31) |
-| Quantified | the amount must be quantified when the claim is made | "If an incomplete return is received, or if the amount of the relief or credit is not quantified, there is no valid claim" Source: https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird81800 (tax year 2026) (read 2026-10-31) |
-| Switching scheme in an amendment | a new additional information form is needed | "if the company wishes to claim under the other scheme in an amendment, a new AIF will be required" Source: https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird81800 (tax year 2026) (read 2026-10-31) |
-| Time limit | two years beginning with the last day of the period of account (period not longer than 18 months); otherwise 42 months beginning with its first day | "two years beginning with the last day of the period of account, in a case where the period of account to which the claim relates is not longer than 18 months" Source: https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird81800 (tax year 2026) (read 2026-10-31) |
-| Late claims | HMRC discretion, used only in line with Statement of Practice 5 (2001) | "HMRC has discretion to accept late claims (FA98/SCH18/Para. 83 E( 5))" Source: https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird81800 (tax year 2026) (read 2026-10-31) |
-
-## The method, step by step
-
-1. Fix the scheme from the date the accounting period began, using HMRC's [merged scheme and ERIS guidance](https://www.gov.uk/guidance/research-and-development-rd-tax-relief-the-merged-scheme-and-enhanced-rd-intensive-support). A period beginning on or after 1 April 2024 uses the merged scheme or ERIS. Confirm the company is trading, chargeable to Corporation Tax, and has a project that meets the R&D definition. If it is a loss-making R&D intensive SME, decide between ERIS and the merged scheme; the same expenditure cannot go into both.
-2. Check whether a claim notification form is needed, and its window, on [Tell HMRC that you're planning to claim](https://www.gov.uk/guidance/tell-hmrc-that-youre-planning-to-claim-research-and-development-rd-tax-relief). The window and the exceptions are in the notification table above. A missed window makes the claim invalid.
-3. Work out the gross credit as on [Work out your R&D tax relief](https://www.gov.uk/guidance/work-out-your-research-and-development-tax-relief): identify the qualifying R&D costs, add them, and apply the rate in the tables above. A ring fence trade has its own rate in [CIRD115000](https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird115000); refer it.
-4. Submit the [additional information form](https://www.gov.uk/guidance/submit-detailed-information-before-you-claim-research-and-development-rd-tax-relief) for each accounting period, before or on the same day as the return and always before it. The dates must match the return.
-5. Make the claim on the return as in [Make a claim for R&D tax relief on your Company Tax Return](https://www.gov.uk/guidance/make-a-claim-for-rd-tax-relief-on-your-company-tax-return): include the credit in taxable income, mark boxes 656 and 657, give bank details, and complete CT600L. Quantify the amount; an unquantified claim is not valid ([CIRD81800](https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird81800)).
-6. Run the payment steps in order, as in [CIRD112100](https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird112100). At step 2, use the main rate if the company's profits before the RDEC are chargeable at the main rate, which includes a company getting marginal relief, and the small profits rate for every other company, including a loss-maker. The rates for financial year 2026 are in the Corporation Tax table above.
-7. Apply the PAYE cap at step 3 using [CIRD140000](https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird140000). Reduce the fixed part for an accounting period under 12 months. Test the exemption: it needs both condition A and condition B. Any excess over the cap moves to the next accounting period as RDEC without a new claim.
-8. Expect any step 7 balance to be paid only if the step 7 conditions are met, and generally only to the claimant company: under the nominations and assignments restrictions (CTA09/S1142C and D) HMRC pays step 7 RDEC direct to the claimant, per [CIRD111000](https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird111000).
-9. Make, amend or withdraw the claim within the time limit in the claim tables above. Switching from ERIS to the merged scheme, or back, in an amendment needs a new additional information form.
 
 ## Ask the client first
 
@@ -190,6 +30,175 @@ Project details: a claim for 1 to 3 projects describes every project. A claim fo
 - Before the RDEC, are the company's profits chargeable at the main rate, or is it small or loss-making? (This sets the step 2 notional tax rate.)
 - What are the company's PAYE and Class 1 National Insurance liabilities for the payment periods in the accounting period, and do connected companies supply EPWs or carry out contracted R&D? (This sets the PAYE cap and the exemption test.)
 - Does the company carry on a ring fence trade, have a registered office in Northern Ireland, or pay overseas contractors or overseas EPWs? (Each takes the claim outside this skill.)
+
+## The method, step by step
+
+1. Fix the scheme from the date the accounting period began, using HMRC's [merged scheme and ERIS guidance](https://www.gov.uk/guidance/research-and-development-rd-tax-relief-the-merged-scheme-and-enhanced-rd-intensive-support). A period beginning on or after 1 April 2024 uses the merged scheme or ERIS. Confirm the company is trading, chargeable to Corporation Tax, and has a project that meets the R&D definition. If it is a loss-making R&D intensive SME, decide between ERIS and the merged scheme; the same expenditure cannot go into both.
+2. Check whether a claim notification form is needed, and its window, on [Tell HMRC that you're planning to claim](https://www.gov.uk/guidance/tell-hmrc-that-youre-planning-to-claim-research-and-development-rd-tax-relief). The window and the exceptions are in the notification table under Filing and payment. A missed window makes the claim invalid.
+3. Work out the gross credit as on [Work out your R&D tax relief](https://www.gov.uk/guidance/work-out-your-research-and-development-tax-relief): identify the qualifying R&D costs, add them, and apply the rate in the rates table below. A ring fence trade has its own rate in [CIRD115000](https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird115000); refer it.
+4. Submit the [additional information form](https://www.gov.uk/guidance/submit-detailed-information-before-you-claim-research-and-development-rd-tax-relief) for each accounting period, before or on the same day as the return and always before it. The dates must match the return.
+5. Make the claim on the return as in [Make a claim for R&D tax relief on your Company Tax Return](https://www.gov.uk/guidance/make-a-claim-for-rd-tax-relief-on-your-company-tax-return): include the credit in taxable income, mark boxes 656 and 657, give bank details, and complete CT600L. Quantify the amount; an unquantified claim is not valid ([CIRD81800](https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird81800)).
+6. Run the payment steps in order, as in [CIRD112100](https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird112100). At step 2, use the main rate if the company's profits before the RDEC are chargeable at the main rate, which includes a company getting marginal relief, and the small profits rate for every other company, including a loss-maker. The rates for financial year 2026 are in the Corporation Tax table below.
+7. Apply the PAYE cap at step 3 using [CIRD140000](https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird140000). Reduce the fixed part for an accounting period under 12 months. Test the exemption: it needs both condition A and condition B. Any excess over the cap moves to the next accounting period as RDEC without a new claim.
+8. Expect any step 7 balance to be paid only if the step 7 conditions are met, and generally only to the claimant company: under the nominations and assignments restrictions (CTA09/S1142C and D) HMRC pays step 7 RDEC direct to the claimant, per [CIRD111000](https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird111000).
+9. Make, amend or withdraw the claim within the time limit in the claim tables under Filing and payment. Switching from ERIS to the merged scheme, or back, in an amendment needs a new additional information form.
+
+### Rates, bands and thresholds
+
+All figures were confirmed on the linked HMRC pages on 14 November 2026. The RDEC rate and the ERIS figures apply by the date the accounting period began (on or after 1 April 2024), not by tax year. The Corporation Tax rates are for the financial year beginning 1 April 2026.
+
+#### Merged scheme RDEC and ERIS: rate, cap and treatment
+
+| What | Value | Note |
+| --- | --- | --- |
+| Source | all figures below | https://www.gov.uk/guidance/research-and-development-rd-tax-relief-the-merged-scheme-and-enhanced-rd-intensive-support |
+| Start of the merged scheme and ERIS | accounting periods beginning on or after 1 April 2024 | "replace the old RDEC and small and medium-sized enterprise ( SME ) schemes for accounting periods beginning on or after 1 April 2024" Source: https://www.gov.uk/guidance/research-and-development-rd-tax-relief-the-merged-scheme-and-enhanced-rd-intensive-support (tax year 2026) (read 2026-11-14) |
+| Merged scheme RDEC rate | 20% | "The rate of R&D expenditure credit under the merged RDEC scheme is 20%. Different rates apply to ring-fenced trades" Source: https://www.gov.uk/guidance/research-and-development-rd-tax-relief-the-merged-scheme-and-enhanced-rd-intensive-support (tax year 2026) (read 2026-11-14) |
+| Tax treatment of the credit | taxable, as trading income | "This expenditure credit is liable to Corporation Tax as it is classed as trading income" Source: https://www.gov.uk/guidance/research-and-development-rd-tax-relief-the-merged-scheme-and-enhanced-rd-intensive-support (tax year 2026) (read 2026-11-14) |
+| PAYE cap, fixed part | GBP 20,000 | "The PAYE cap amount is £20,000 plus 300% of the company’s relevant PAYE and National Insurance contributions liabilities for the period" Source: https://www.gov.uk/guidance/research-and-development-rd-tax-relief-the-merged-scheme-and-enhanced-rd-intensive-support (tax year 2026) (read 2026-11-14) |
+| PAYE cap, variable part | 300% | "£20,000 plus 300% of the company’s relevant PAYE and National Insurance contributions liabilities for the period" Source: https://www.gov.uk/guidance/research-and-development-rd-tax-relief-the-merged-scheme-and-enhanced-rd-intensive-support (tax year 2026) (read 2026-11-14) |
+| Credit received in the period | cannot exceed the PAYE cap for that period, unless the company is exempt from the cap | "In either the merged RDEC scheme or ERIS , the credit amount you receive in the accounting period cannot exceed the PAYE cap for that period, unless you’re exempt from the cap" Source: https://www.gov.uk/guidance/research-and-development-rd-tax-relief-the-merged-scheme-and-enhanced-rd-intensive-support (tax year 2026) (read 2026-11-14) |
+| Excess over the PAYE cap, merged scheme | carried forward as RDEC the company can claim in the next accounting period | "any excess is carried forward as a Research and Development expenditure credit that you can claim in the next accounting period" Source: https://www.gov.uk/guidance/research-and-development-rd-tax-relief-the-merged-scheme-and-enhanced-rd-intensive-support (tax year 2026) (read 2026-11-14) |
+| ERIS: who | loss-making R&D intensive SMEs only | "You can only claim this relief if you are a loss‑making R&D intensive SME" Source: https://www.gov.uk/guidance/research-and-development-rd-tax-relief-the-merged-scheme-and-enhanced-rd-intensive-support (tax year 2026) (read 2026-11-14) |
+| ERIS: loss-making test | a trading loss for tax purposes before the additional deduction | "A SME is loss-making if it makes a trading loss for tax purposes before the additional deduction is made" Source: https://www.gov.uk/guidance/research-and-development-rd-tax-relief-the-merged-scheme-and-enhanced-rd-intensive-support (tax year 2026) (read 2026-11-14) |
+| ERIS: intensity condition | relevant R&D expenditure at least 30% of total expenditure, including connected companies | "relevant R&D expenditure is at least 30% of its total expenditure (including that of any connected companies" Source: https://www.gov.uk/guidance/research-and-development-rd-tax-relief-the-merged-scheme-and-enhanced-rd-intensive-support (tax year 2026) (read 2026-11-14) |
+| ERIS: extra deduction | 86% | "deduct an extra 86% of their qualifying costs in calculating their adjusted trading loss" Source: https://www.gov.uk/guidance/research-and-development-rd-tax-relief-the-merged-scheme-and-enhanced-rd-intensive-support (tax year 2026) (read 2026-11-14) |
+| ERIS: total deduction | 186% | "to make a total of 186% deduction" Source: https://www.gov.uk/guidance/research-and-development-rd-tax-relief-the-merged-scheme-and-enhanced-rd-intensive-support (tax year 2026) (read 2026-11-14) |
+| ERIS: payable tax credit | up to 14.5% of the surrenderable loss, not taxable | "claim a payable tax credit, which is not liable to tax and is worth up to 14.5% of the surrenderable loss" Source: https://www.gov.uk/guidance/research-and-development-rd-tax-relief-the-merged-scheme-and-enhanced-rd-intensive-support (tax year 2026) (read 2026-11-14) |
+
+The ERIS intensity condition has a second route: a company that met the condition in its last 12-month accounting period, and made a valid claim to SME relief or ERIS in that period on expenditure incurred on or after 1 April 2023, can also claim. Both of those must apply.
+
+#### Rates by accounting period
+
+| What | Value | Note |
+| --- | --- | --- |
+| Source | all figures below | https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird115000 |
+| Which periods | accounting periods beginning on or after 1 April 2024 only | "The new merged scheme RDEC only applies to accounting periods beginning on or after 1 April 2024" Source: https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird115000 (tax year 2026) (read 2026-11-14) |
+| RDEC rate, non ring fence trades | 20% | "1 April 2024 20% 49% These rates apply regardless of when expenditure claimed for in the accounting period was originally incurred" Source: https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird115000 (tax year 2026) (read 2026-11-14) |
+| RDEC rate, ring fence trades | 49% | "1 April 2024 20% 49% These rates apply regardless of when expenditure claimed for in the accounting period was originally incurred" Source: https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird115000 (tax year 2026) (read 2026-11-14) |
+| Date the expenditure was incurred | does not change the rate | "These rates apply regardless of when expenditure claimed for in the accounting period was originally incurred" Source: https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird115000 (tax year 2026) (read 2026-11-14) |
+
+#### Working out the credit
+
+| What | Value | Note |
+| --- | --- | --- |
+| Source | all figures below | https://www.gov.uk/guidance/work-out-your-research-and-development-tax-relief |
+| Which scheme | set by the date the accounting period began | "There are 4 different types of R&D tax relief, which one you use depends on when your accounting period began" Source: https://www.gov.uk/guidance/work-out-your-research-and-development-tax-relief (tax year 2026) (read 2026-11-14) |
+| Merged scheme calculation | work out the R&D costs, add them together, multiply by 20% | "Multiply the figure by 20% to get the expenditure credit amount" Source: https://www.gov.uk/guidance/work-out-your-research-and-development-tax-relief (tax year 2026) (read 2026-11-14) |
+| Limit | the credit received in the accounting period cannot exceed the PAYE cap, unless exempt | "The expenditure credit amount you receive in the accounting period cannot exceed the PAYE cap, unless you’re exempt from the cap" Source: https://www.gov.uk/guidance/work-out-your-research-and-development-tax-relief (tax year 2026) (read 2026-11-14) |
+
+#### The PAYE cap in detail
+
+| What | Value | Note |
+| --- | --- | --- |
+| Source | all figures below | https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird140000 |
+| Cap, fixed part | GBP 20,000 | "is £20,000 plus 300% of the company’s relevant PAYE and National Insurance Contributions (NIC) liabilities (CTA09/S1112B(2)) for payment periods within the accounting period" Source: https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird140000 (tax year 2026) (read 2026-11-14) |
+| Cap, variable part | 300% | "300% of the company’s relevant PAYE and National Insurance Contributions (NIC) liabilities" Source: https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird140000 (tax year 2026) (read 2026-11-14) |
+| Accounting period shorter than 12 months | the fixed part is reduced in proportion | "If the accounting period is of less than 12 months duration, the amount of £20,000 is proportionately reduced (CTA09/S1112B(3))" Source: https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird140000 (tax year 2026) (read 2026-11-14) |
+| Excess over the cap, merged scheme | carried forward and treated as RDEC for the next accounting period | "Any excess over the cap is carried forward and treated as an amount of RDEC to which the company is entitled for the next accounting period" Source: https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird140000 (tax year 2026) (read 2026-11-14) |
+| Excess over the cap, ERIS | the claim to that excess is invalid | "Under ERIS, any claim for tax credit in excess of the cap (where applying) is invalid" Source: https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird140000 (tax year 2026) (read 2026-11-14) |
+| Exemption, condition A | the company creates, or prepares to create, relevant IP, or performs significant management of relevant IP it holds, wholly or mainly through its own employees | "These activities must be undertaken wholly or mainly by employees of the company. This does not include directors of the company (unless they are employees)" Source: https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird140000 (tax year 2026) (read 2026-11-14) |
+| Exemption, condition B | qualifying expenditure on subcontractors and EPWs provided by connected companies does not exceed 15% of the company's qualifying R&D expenditure for the period | "does not exceed 15% of the company’s qualifying R&D expenditure for the period" Source: https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird140000 (tax year 2026) (read 2026-11-14) |
+
+The exemption needs both conditions: "The PAYE cap does not apply in accounting periods where a company meets both conditions A and B." Relevant PAYE and NIC liabilities start from the company's own PAYE income tax and Class 1 National Insurance for each payment period in the accounting period. Add the liabilities of a connected company attributable to externally provided workers (EPWs) it supplied or R&D contracted out to it by the claimant. Take off the claimant's own liabilities attributable to EPWs it supplied to, or R&D it performed for, a connected company.
+
+#### Corporation Tax rates used at step 2 (financial year 2026)
+
+| What | Value | Note |
+| --- | --- | --- |
+| Source | all figures below | https://www.gov.uk/government/publications/rates-and-allowances-corporation-tax/rates-and-allowances-corporation-tax |
+| Main rate, year starting 1 April 2026 | 25% | "Main rate (companies with profits over £250,000) 25% 25%" Source: https://www.gov.uk/government/publications/rates-and-allowances-corporation-tax/rates-and-allowances-corporation-tax (tax year 2026) (read 2026-11-14) |
+| Small profits rate, year starting 1 April 2026 | 19% | "Small profits rate (companies with profits under £50,000) 19%" Source: https://www.gov.uk/government/publications/rates-and-allowances-corporation-tax/rates-and-allowances-corporation-tax (tax year 2026) (read 2026-11-14) |
+| Marginal Relief lower limit | GBP 50,000 | "Marginal Relief lower limit £50,000 £50,000" Source: https://www.gov.uk/government/publications/rates-and-allowances-corporation-tax/rates-and-allowances-corporation-tax (tax year 2026) (read 2026-11-14) |
+| Marginal Relief upper limit | GBP 250,000 | "Marginal Relief upper limit £250,000 £250,000" Source: https://www.gov.uk/government/publications/rates-and-allowances-corporation-tax/rates-and-allowances-corporation-tax (tax year 2026) (read 2026-11-14) |
+
+#### The payment steps
+
+| What | Value | Note |
+| --- | --- | --- |
+| Source | all figures below | https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird112100 |
+| Before step 1 | any step 2 amount brought forward from an earlier period discharges this period's Corporation Tax first | "Before the 7 steps are considered, any step 2 amount brought forward from a previous AP must be used to discharge (pay) the company's CT liability for the accounting period" Source: https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird112100 (tax year 2026) (read 2026-11-14) |
+| Step 1 | credit (this period's gross RDEC plus any step 3 amount brought forward) discharges Corporation Tax for this accounting period | "Step 1 - Discharge of CT in the present accounting period" Source: https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird112100 (tax year 2026) (read 2026-11-14) |
+| Step 2, rule | if the amount left after step 1 exceeds the gross RDEC claimed for this period net of notional tax, the excess is deducted as the notional tax deduction; if it does not, there is no deduction | "by which the amount remaining from step 1 exceeds the amount of the gross RDEC actually claimed for this accounting period" Source: https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird112100 (tax year 2026) (read 2026-11-14) |
+| Step 2, rate for a company whose profits before the RDEC are chargeable at the main rate | the main rate of Corporation Tax, including a company that gets marginal relief | "A company able to benefit from marginal relief still has profits chargeable at the main rate" Source: https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird112100 (tax year 2026) (read 2026-11-14) |
+| Step 2, rate for other companies | the small profits rate | "2. For other companies, the small profits rate" Source: https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird112100 (tax year 2026) (read 2026-11-14) |
+| Step 2, what happens to the deduction | may be surrendered to a group company; otherwise carried forward to discharge Corporation Tax of a later period | "To the extent that it is not surrendered, it is carried forward and must be used to discharge CT liability for any subsequent accounting period" Source: https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird112100 (tax year 2026) (read 2026-11-14) |
+| Step 3 | amount over the PAYE cap is carried to the next accounting period, unless exempt; no new claim is needed there | "Note that no new claim to a gross RDEC in the subsequent accounting period need be made for the entitlement to arise" Source: https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird112100 (tax year 2026) (read 2026-11-14) |
+| Step 4 | discharges Corporation Tax for any other accounting period | "Step 4 - Discharge of CT liability for other period(s)" Source: https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird112100 (tax year 2026) (read 2026-11-14) |
+| Step 5 | a group member may surrender all or part to another group member | "it may surrender the whole or part of any amount remaining after step 4 to any other member of the group (CTA09/S1042N)" Source: https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird112100 (tax year 2026) (read 2026-11-14) |
+| Step 6 | discharges any other liability to HMRC, such as VAT or PAYE, or under a contract settlement | "any other liability of the company to pay a sum to HMRC under any other head of duty (e.g. VAT, PAYE, &c.) or under a contract settlement" Source: https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird112100 (tax year 2026) (read 2026-11-14) |
+| Step 7 | the balance is paid only if the company met the going concern condition when it claimed, there is no enquiry, and its PAYE and VAT are up to date | "There is no enquiry, and the company’s PAYE and VAT liabilities are up to date (CTA09/S1112H)" Source: https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird112100 (tax year 2026) (read 2026-11-14) |
+| HMRC example: RDEC claimed for the period | GBP 300,000 | "A company claims £300,000 RDEC for an AP, with £250,000 carried forward from a previous AP under step 3" Source: https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird112100 (tax year 2026) (read 2026-11-14) |
+| HMRC example: brought forward under step 3 | GBP 250,000 | "£250,000 carried forward from a previous AP under step 3. The step 1 amount is £550,000" Source: https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird112100 (tax year 2026) (read 2026-11-14) |
+| HMRC example: step 1 amount | GBP 550,000 | "The step 1 amount is £550,000" Source: https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird112100 (tax year 2026) (read 2026-11-14) |
+| HMRC example: Corporation Tax discharged at step 1 | GBP 200,000 | "£200,000 of CT is discharged at step 1" Source: https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird112100 (tax year 2026) (read 2026-11-14) |
+| HMRC example: carried to step 2 | GBP 350,000 | "The amount carried forward to step 2 is £350,000" Source: https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird112100 (tax year 2026) (read 2026-11-14) |
+| HMRC example: applicable rate | 25% | "The applicable rate is 25%" Source: https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird112100 (tax year 2026) (read 2026-11-14) |
+| HMRC example: RDEC claimed net of notional tax | GBP 225,000 | "(£300,000) less tax at the notional rate (25%) is £225,000" Source: https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird112100 (tax year 2026) (read 2026-11-14) |
+| HMRC example: notional tax deduction | GBP 125,000 | "£350,000 - £225,000 = £125,000 is applied, and carried forward" Source: https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird112100 (tax year 2026) (read 2026-11-14) |
+
+In HMRC's example the brought-forward step 3 amount is not netted for notional tax. Only the gross RDEC claimed for the current period is.
+
+## Boundary and exception table
+
+| Situation | Treatment | Source |
+| --- | --- | --- |
+| Accounting period began before 1 April 2024 | Old RDEC or SME scheme; outside this skill | https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird115000 |
+| Loss-making R&D intensive SME | May claim ERIS or the merged scheme, never both on the same expenditure; compare the two (Case 2) | https://www.gov.uk/guidance/research-and-development-rd-tax-relief-the-merged-scheme-and-enhanced-rd-intensive-support |
+| SME failing the intensity condition this period but meeting it in its last 12-month accounting period, with a valid SME or ERIS claim in that period on spend from 1 April 2023 | Can still claim ERIS; both conditions needed | same |
+| Ring fence trade | Its own RDEC rate (49%) and its own step 2 rates; refer | https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird115000 |
+| Accounting period under 12 months | The GBP 20,000 fixed part of the PAYE cap is reduced in proportion | https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird140000 |
+| Credit above the PAYE cap, merged scheme | Excess carried to the next accounting period as RDEC, no new claim needed | same |
+| Credit above the PAYE cap, ERIS | The claim to the excess is invalid | same |
+| Company meets PAYE cap conditions A and B | Cap does not apply; one condition alone is not enough | same |
+| Profits before the RDEC chargeable at the main rate, including a company getting marginal relief | Step 2 notional tax at the main rate (25% for the financial year from 1 April 2026) | https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird112100 |
+| Small profits or loss-making company | Step 2 notional tax at the small profits rate (19% for the financial year from 1 April 2026) | same |
+| First claim, or last claim more than 3 years before the last date of the notification period | Claim notification form within 6 months of the end of the period of account, or the claim is invalid | https://www.gov.uk/guidance/tell-hmrc-that-youre-planning-to-claim-research-and-development-rd-tax-relief |
+| Company Tax Return sent before the additional information form | Claim rejected and removed | https://www.gov.uk/guidance/submit-detailed-information-before-you-claim-research-and-development-rd-tax-relief |
+| Period of account over 12 months | One additional information form and one claim per accounting period; one notification period and one claim deadline for all of them | https://www.gov.uk/guidance/make-a-claim-for-rd-tax-relief-on-your-company-tax-return |
+| Amendment switching between ERIS and the merged scheme | New additional information form needed | https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird81800 |
+| Claim not quantified, or return incomplete | No valid claim | same |
+| Step 7 payable balance | Paid only if going concern at claim, no enquiry, and PAYE and VAT up to date; paid to the claimant company only | https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird112100 |
+
+## Worked cases
+
+**Case 1: merged scheme RDEC for a main rate company.** A company with an accounting period beginning 1 April 2026 has qualifying R&D expenditure of GBP 100,000. Its profits before the RDEC are chargeable at the main rate. Gross RDEC is 20%, GBP 20,000, shown as taxable income. At step 2 the notional tax at 25% is GBP 5,000, so the credit net of notional tax is GBP 15,000. The PAYE cap is assumed not to bite.
+
+```oa-check
+name: Merged scheme RDEC, qualifying expenditure GBP 100,000, main rate company
+inputs:
+  spend: 100000
+  notional: 25
+steps:
+  - gross: pct(spend, 20)
+  - net: gross - pct(gross, notional)
+expected:
+  gross: 20000
+  net: 15000
+```
+
+**Case 2 (decision): ERIS or the merged scheme for a loss-making R&D intensive SME.** A loss-making SME meets the 30% intensity condition and has qualifying expenditure of GBP 100,000. Assume its trading loss is large enough that the whole 186% deduction, GBP 186,000, can be surrendered, and the PAYE cap does not bite. ERIS: a payable credit of 14.5% of GBP 186,000 = GBP 26,970, not taxable. Merged scheme: gross RDEC GBP 20,000, less notional tax at the small profits rate (19%, as a loss-maker) of GBP 3,800, leaves GBP 16,200. ERIS gives GBP 10,770 more, so claim ERIS. Decide the other way when the loss available to surrender is too small to beat GBP 16,200 at 14.5%, or when the company is not loss-making or not R&D intensive (ERIS is then not open at all). A surrendered loss is no longer available to carry forward, so weigh that too.
+
+```oa-check
+name: ERIS against merged scheme, loss-making R&D intensive SME, GBP 100,000 spend
+inputs:
+  spend: 100000
+  small_profits_rate: 19
+steps:
+  - eris_deduction: pct(spend, 186)
+  - eris_credit: pct(eris_deduction, 14.5)
+  - merged_gross: pct(spend, 20)
+  - merged_net: merged_gross - pct(merged_gross, small_profits_rate)
+  - eris_advantage: eris_credit - merged_net
+  - better_value: max(eris_credit, merged_net)
+expected:
+  eris_deduction: 186000
+  eris_credit: 26970
+  merged_gross: 20000
+  merged_net: 16200
+  eris_advantage: 10770
+  better_value: 26970
+```
 
 ## When to refuse or refer
 
@@ -202,49 +211,98 @@ Project details: a claim for 1 to 3 projects describes every project. A claim fo
 - Late claims, where HMRC's discretion follows Statement of Practice 5 (2001).
 - A claim under HMRC enquiry, or a company that may fail the going concern condition at step 7.
 
-## Checked examples
+## Filing and payment
 
-```oa-check
-name: Merged scheme RDEC, qualifying expenditure GBP 100,000
-inputs:
-  spend: 100000
-  notional: 25
-steps:
-  - gross: pct(spend, 20)
-  - net: gross - pct(gross, notional)
-expected:
-  gross: 20000
-  net: 15000
-```
+The claim is made on the Company Tax Return (CT600, with supplementary form CT600L) through the Corporation Tax Online Service, after any claim notification form and after, or on the same day as, the additional information form. The credit is then applied through the seven payment steps under Rates, bands and thresholds: it first discharges Corporation Tax, and any step 7 balance is paid to the company. The forms and deadlines, in the order the company meets them:
 
-```oa-check
-name: ERIS, loss-making R&D intensive SME, qualifying expenditure GBP 100,000, all surrendered
-inputs:
-  spend: 100000
-steps:
-  - deduction: pct(spend, 186)
-  - credit: pct(deduction, 14.5)
-expected:
-  deduction: 186000
-  credit: 26970
-```
+### Telling HMRC first: the claim notification form
+
+| What | Value | Note |
+| --- | --- | --- |
+| Source | all figures below | https://www.gov.uk/guidance/tell-hmrc-that-youre-planning-to-claim-research-and-development-rd-tax-relief |
+| Who must notify | a company claiming for the first time, or whose last claim was made more than 3 years before the last date of the claim notification period | "you’re claiming for the first time your last claim was made more than 3 years before the last date of the ‘claim notification period’" Source: https://www.gov.uk/guidance/tell-hmrc-that-youre-planning-to-claim-research-and-development-rd-tax-relief (tax year 2026) (read 2026-11-14) |
+| Periods covered | accounting periods beginning on or after 1 April 2023 | "for accounting periods beginning on or after 1 April 2023, you must submit a claim notification form if" Source: https://www.gov.uk/guidance/tell-hmrc-that-youre-planning-to-claim-research-and-development-rd-tax-relief (tax year 2026) (read 2026-11-14) |
+| Notification period starts | first day of the period of account | "starts on the first day of the ‘period of account’" Source: https://www.gov.uk/guidance/tell-hmrc-that-youre-planning-to-claim-research-and-development-rd-tax-relief (tax year 2026) (read 2026-11-14) |
+| Notification period ends | 6 months after the end of the period of account | "ends 6 months after the end of the ‘period of account’" Source: https://www.gov.uk/guidance/tell-hmrc-that-youre-planning-to-claim-research-and-development-rd-tax-relief (tax year 2026) (read 2026-11-14) |
+| Missing the period | the claim is invalid | "If you do not, your R&D tax relief claim will be invalid" Source: https://www.gov.uk/guidance/tell-hmrc-that-youre-planning-to-claim-research-and-development-rd-tax-relief (tax year 2026) (read 2026-11-14) |
+| Period of account over 12 months | one notification period for all its accounting periods; a first-time claimant sends the form for one of them | "The claim notification period is the same for all accounting periods" Source: https://www.gov.uk/guidance/tell-hmrc-that-youre-planning-to-claim-research-and-development-rd-tax-relief (tax year 2026) (read 2026-11-14) |
+| Exceptions for a recent claimant | a claim within the last 3 years does not count if HMRC rejected it by removing it from the return, or if it was for a period beginning before 1 April 2023 and made by an amendment received on or after 1 April 2023 | "unless any of the following exceptions apply: HMRC rejected your R&D tax relief claim by removing it from your Company Tax Return you claimed R&D tax relief for an accounting period beginning before 1 April 2023 by amending your tax return and the amendment was received on or after 1 April 2023" Source: https://www.gov.uk/guidance/tell-hmrc-that-youre-planning-to-claim-research-and-development-rd-tax-relief (tax year 2026) (read 2026-11-14) |
+| Alternative to the form, only where the last claim was more than 3 years before the last date or an exception applies; not for a first claim | the claim itself, on the return or an amendment, received by the last date of the notification period | "If you made a claim more than 3 years before the last date of your claim notification period or if any of the exceptions apply, you'll need to either: submit the claim notification form by the 'last date of the claim notification period' send the R&D tax relief claim on your Company Tax Return or as an amendment to the return, so that it's received by the 'last date of the claim notification period'" Source: https://www.gov.uk/guidance/tell-hmrc-that-youre-planning-to-claim-research-and-development-rd-tax-relief (tax year 2026) (read 2026-11-14) |
+
+### The additional information form
+
+| What | Value | Note |
+| --- | --- | --- |
+| Source | all figures below | https://www.gov.uk/guidance/submit-detailed-information-before-you-claim-research-and-development-rd-tax-relief |
+| One form per accounting period | a period of account over 12 months needs a form for each accounting period claimed | "You need to complete an additional information form for each accounting period you’re claiming" Source: https://www.gov.uk/guidance/submit-detailed-information-before-you-claim-research-and-development-rd-tax-relief (tax year 2026) (read 2026-11-14) |
+| Timing | before or on the same day as the Company Tax Return, and the form first | "The additional information form must be submitted before or on the same day you submit the Company Tax Return (CT600)" Source: https://www.gov.uk/guidance/submit-detailed-information-before-you-claim-research-and-development-rd-tax-relief (tax year 2026) (read 2026-11-14) |
+| No form | the claim is not accepted | "If you do not submit this form, any R&D or expenditure credit claim will not be accepted" Source: https://www.gov.uk/guidance/submit-detailed-information-before-you-claim-research-and-development-rd-tax-relief (tax year 2026) (read 2026-11-14) |
+| Return sent before the form | the claim is rejected and HMRC removes it | "If the tax return is submitted before the additional information form, the claim will be rejected" Source: https://www.gov.uk/guidance/submit-detailed-information-before-you-claim-research-and-development-rd-tax-relief (tax year 2026) (read 2026-11-14) |
+| Dates on the form | must match the Company Tax Return, including mean accounting dates where elected | "If the start and end dates on both submissions do not match, the additional information form will be rejected and the R&D relief claim in the company tax return will be removed" Source: https://www.gov.uk/guidance/submit-detailed-information-before-you-claim-research-and-development-rd-tax-relief (tax year 2026) (read 2026-11-14) |
+| Who can submit | a company representative, or an agent using an agent services account | "an agent acting on behalf of the company, using an agent services account" Source: https://www.gov.uk/guidance/submit-detailed-information-before-you-claim-research-and-development-rd-tax-relief (tax year 2026) (read 2026-11-14) |
+| Groups | each company needs its own Government Gateway account | "Each company in the group needs its own Government Gateway account to submit an additional form" Source: https://www.gov.uk/guidance/submit-detailed-information-before-you-claim-research-and-development-rd-tax-relief (tax year 2026) (read 2026-11-14) |
+
+Project details: a claim for 1 to 3 projects describes every project. A claim for 4 or more projects describes at least 3 projects that together make up at least half of the qualifying expenditure claimed. Where that would take more than 10 projects, the company describes the 10 projects with the highest qualifying expenditure.
+
+### The claim on the Company Tax Return
+
+| What | Value | Note |
+| --- | --- | --- |
+| Source | all figures below | https://www.gov.uk/guidance/make-a-claim-for-rd-tax-relief-on-your-company-tax-return |
+| Presentation of the credit | taxable income in the profit and loss account, or added to profit in the tax computations | "Show the expenditure credit as taxable income in your profit and loss account, or by adding it to your profit in your tax computations" Source: https://www.gov.uk/guidance/make-a-claim-for-rd-tax-relief-on-your-company-tax-return (tax year 2026) (read 2026-11-14) |
+| Box 656 | an X to confirm the claim notification form was submitted | "Put an ‘X’ in box 656 to tell us that you’ve submitted the claim notification form" Source: https://www.gov.uk/guidance/make-a-claim-for-rd-tax-relief-on-your-company-tax-return (tax year 2026) (read 2026-11-14) |
+| Box 657 | an X to confirm the additional information form was submitted | "Put an ‘X’ in box 657 to tell us that you’ve submitted the additional information form" Source: https://www.gov.uk/guidance/make-a-claim-for-rd-tax-relief-on-your-company-tax-return (tax year 2026) (read 2026-11-14) |
+| Bank details and CT600L | include bank details and complete supplementary form CT600L | "Include bank details so that HMRC can make the payment. Complete the supplementary form CT600L" Source: https://www.gov.uk/guidance/make-a-claim-for-rd-tax-relief-on-your-company-tax-return (tax year 2026) (read 2026-11-14) |
+| Period of account over 12 months | a separate claim for each accounting period | "If your tax relief claim covers a period of account that’s more than 12 months, submit a separate claim for each accounting period" Source: https://www.gov.uk/guidance/make-a-claim-for-rd-tax-relief-on-your-company-tax-return (tax year 2026) (read 2026-11-14) |
+| Claim deadline, period of account of 18 months or less | 24 months from the last day of the period of account | "18 months long or less is 24 months from the last day of the period of account" Source: https://www.gov.uk/guidance/make-a-claim-for-rd-tax-relief-on-your-company-tax-return (tax year 2026) (read 2026-11-14) |
+| Claim deadline, period of account over 18 months | 42 months from the first day of the period of account | "more than 18 months long is 42 months from the first day of the period of account" Source: https://www.gov.uk/guidance/make-a-claim-for-rd-tax-relief-on-your-company-tax-return (tax year 2026) (read 2026-11-14) |
+| Same deadline for every accounting period in it | yes | "This is the deadline for making a claim for all accounting periods that fall within the period of account" Source: https://www.gov.uk/guidance/make-a-claim-for-rd-tax-relief-on-your-company-tax-return (tax year 2026) (read 2026-11-14) |
+
+### Making, amending or withdrawing a claim
+
+| What | Value | Note |
+| --- | --- | --- |
+| Source | all figures below | https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird81800 |
+| Where | in the Company Tax Return or an amendment, through the Corporation Tax Online Service | "Both original returns and amendments must be made through the Corporation Tax Online Service" Source: https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird81800 (tax year 2026) (read 2026-11-14) |
+| Quantified | the amount must be quantified when the claim is made | "If an incomplete return is received, or if the amount of the relief or credit is not quantified, there is no valid claim" Source: https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird81800 (tax year 2026) (read 2026-11-14) |
+| Switching scheme in an amendment | a new additional information form is needed | "if the company wishes to claim under the other scheme in an amendment, a new AIF will be required" Source: https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird81800 (tax year 2026) (read 2026-11-14) |
+| Time limit | two years beginning with the last day of the period of account (period not longer than 18 months); otherwise 42 months beginning with its first day | "two years beginning with the last day of the period of account, in a case where the period of account to which the claim relates is not longer than 18 months" Source: https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird81800 (tax year 2026) (read 2026-11-14) |
+| Late claims | HMRC discretion, used only in line with Statement of Practice 5 (2001) | "HMRC has discretion to accept late claims (FA98/SCH18/Para. 83 E( 5))" Source: https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird81800 (tax year 2026) (read 2026-11-14) |
+
+## Completion checklist
+
+- [ ] Accounting period start date confirmed on or after 1 April 2024; length of the period of account recorded.
+- [ ] Trading, chargeable to Corporation Tax, and a project meeting the R&D definition: all three confirmed.
+- [ ] For a loss-making SME, ERIS compared with the merged scheme (intensity condition tested, including connected companies); the same expenditure not claimed twice.
+- [ ] Need for a claim notification form tested; if needed, sent within 6 months of the end of the period of account.
+- [ ] Additional information form sent for each accounting period, before or on the same day as the return, with dates matching the return.
+- [ ] Gross RDEC at 20% computed and shown as taxable income.
+- [ ] Step 2 notional tax rate chosen (25% main rate, 19% small profits rate or loss-maker).
+- [ ] PAYE cap computed (GBP 20,000, reduced for a short period, plus 300% of relevant PAYE and NIC); exemption conditions A and B tested.
+- [ ] CT600 boxes 656 and 657 marked, bank details given, CT600L completed, amount quantified.
+- [ ] Claim made within 24 months from the end of the period of account (42 months from its first day where it is over 18 months).
+- [ ] Step 7 conditions checked: going concern, no enquiry, PAYE and VAT up to date.
 
 ## Sources
 
-- https://www.gov.uk/guidance/research-and-development-rd-tax-relief-the-merged-scheme-and-enhanced-rd-intensive-support (read 2026-10-31)
-- https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird115000 (read 2026-10-31)
-- https://www.gov.uk/guidance/work-out-your-research-and-development-tax-relief (read 2026-10-31)
-- https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird140000 (read 2026-10-31)
-- https://www.gov.uk/government/publications/rates-and-allowances-corporation-tax/rates-and-allowances-corporation-tax (read 2026-10-31)
-- https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird112100 (read 2026-10-31)
-- https://www.gov.uk/guidance/tell-hmrc-that-youre-planning-to-claim-research-and-development-rd-tax-relief (read 2026-10-31)
-- https://www.gov.uk/guidance/submit-detailed-information-before-you-claim-research-and-development-rd-tax-relief (read 2026-10-31)
-- https://www.gov.uk/guidance/make-a-claim-for-rd-tax-relief-on-your-company-tax-return (read 2026-10-31)
-- https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird81800 (read 2026-10-31)
-- https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird111000 (read 2026-10-31)
+| Source | What was read | URL | Read on |
+| --- | --- | --- | --- |
+| HMRC guidance, merged scheme and ERIS | Read for the 20% RDEC rate, the PAYE cap (GBP 20,000 plus 300%), the ERIS conditions, the 86% extra deduction and the 14.5% payable credit | https://www.gov.uk/guidance/research-and-development-rd-tax-relief-the-merged-scheme-and-enhanced-rd-intensive-support | 2026-11-14 |
+| HMRC CIRD115000 | Read for the RDEC rates by accounting period (20%, ring fence 49%) from 1 April 2024 | https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird115000 | 2026-11-14 |
+| HMRC guidance, work out your R&D tax relief | Read for the merged scheme calculation (costs multiplied by 20%) and the PAYE cap limit | https://www.gov.uk/guidance/work-out-your-research-and-development-tax-relief | 2026-11-14 |
+| HMRC CIRD140000 | Read for the PAYE cap, short period apportionment, the excess rules and exemption conditions A and B (15% test) | https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird140000 | 2026-11-14 |
+| HMRC Corporation Tax rates and allowances | Read for the 2026 column: main rate 25%, small profits rate 19%, Marginal Relief limits GBP 50,000 and GBP 250,000 | https://www.gov.uk/government/publications/rates-and-allowances-corporation-tax/rates-and-allowances-corporation-tax | 2026-11-14 |
+| HMRC CIRD112100 | Read for the seven payment steps, the step 2 notional tax rates and the GBP 300,000 worked example | https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird112100 | 2026-11-14 |
+| HMRC guidance, tell HMRC you plan to claim | Read for who must send the claim notification form, the 6 month window and the exceptions | https://www.gov.uk/guidance/tell-hmrc-that-youre-planning-to-claim-research-and-development-rd-tax-relief | 2026-11-14 |
+| HMRC guidance, additional information form | Read for one form per accounting period, timing before the return, matching dates and the project detail rule | https://www.gov.uk/guidance/submit-detailed-information-before-you-claim-research-and-development-rd-tax-relief | 2026-11-14 |
+| HMRC guidance, claim on the Company Tax Return | Read for boxes 656 and 657, CT600L and the 24 and 42 month claim deadlines | https://www.gov.uk/guidance/make-a-claim-for-rd-tax-relief-on-your-company-tax-return | 2026-11-14 |
+| HMRC CIRD81800 | Read for making, amending and withdrawing claims, quantification and late claims (SP5/01) | https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird81800 | 2026-11-14 |
+| HMRC CIRD111000 | Read for the nominations and assignments restriction on step 7 payments | https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird111000 | 2026-11-14 |
+
+Not yet confirmed: no rate change for accounting periods beginning on or after 1 April 2026 was found (HMRC still lists the 1 April 2024 rates, read today); the size of the loss a given company can surrender under ERIS depends on its own figures and is assumed in Case 2, not confirmed.
 
 Drafted by OpenAccountants. Not yet reviewed or approved by a named accountant.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-31. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `gb-tax-relief-under-the-merged-scheme` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/gb-tax-relief-under-the-merged-scheme. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `gb-tax-relief-under-the-merged-scheme` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/gb-tax-relief-under-the-merged-scheme. If neither is available, confirm every figure against the official source pages cited above before relying on it.

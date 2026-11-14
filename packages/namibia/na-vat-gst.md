@@ -2,18 +2,19 @@
 name: na-vat-gst
 description: >
   Namibia value-added tax, 2026: 15%, the N$1,000,000 registration threshold, zero rates, two-month periods, filing on ITAS with boxes, and penalties. Figures come from Namibian law and official pages opened on 2026-11-01. Items that could not be opened are named as not yet confirmed. Not reviewed by a licensed accountant.
-version: 0.2
+version: 0.3
 jurisdiction: NA
 category: international
 tax_year: 2026
 tax_year_notes: "Individuals: year of assessment 1 March 2026 to 28 February 2027. Companies: financial year."
-last_updated: 2026-11-01
+last_updated: 2026-11-14
+type: situation-rules
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: vat-gst
 ---
 
-# Namibia VAT v0.2
+# Namibia VAT v0.3
 
 > **General reference only.** This skill is general tax reference material for AI-assisted workflows. Do not rely on it to file, pay or take a position without review by a qualified professional in Namibia.
 
@@ -103,11 +104,11 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| VAT Act 10 of 2000, annotated (read: ss.6, 15, 23, 24, 53, 66-69, Schedule III para 2 to (ii), Schedule IV by para 2 headings) | https://www.lac.org.na/laws/annoSTAT/Value-Added%20Tax%20Act%2010%20of%202000.pdf | 2026-11-01 |
-| Government Gazette 8864 GN 107 (read: notice) | https://www.lac.org.na/laws/2026/8864.pdf | 2026-11-01 |
-| Government Gazette 9030 GN 299, 300 (read: notices) | https://www.lac.org.na/laws/2026/9030.pdf | 2026-11-01 |
-| NamRA VAT page (read: whole page; threshold stale) | https://www.namra.org.na/tax-types/page/value-added-tax-vat-30120/ | 2026-11-01 |
-| NamRA how to file VAT (read: whole) | https://www.namra.org.na/documents/cms/uploaded/how-to-file-vat-returns-on-itas-a9438c4f18.pdf | 2026-11-01 |
-| NamRA form VAT 2 (read: whole) | https://www.namra.org.na/documents/cms/uploaded/return-for-value-added-tax-f8b15298a9.pdf | 2026-11-01 |
+| VAT Act 10 of 2000, annotated: read for ss.6, 15, 23, 24, 53, 66 to 69, Schedule III para 2 to (ii), Schedule IV by para 2 headings on 2026-11-01 | https://www.lac.org.na/laws/annoSTAT/Value-Added%20Tax%20Act%2010%20of%202000.pdf | 2026-11-01; tried again 2026-11-14, lac.org.na refused the script (406) |
+| Government Gazette 8864 GN 107: read for the VAT interest rate adjustment notice | https://www.lac.org.na/laws/2026/8864.pdf | 2026-11-14 |
+| Government Gazette 9030 GN 299, 300: read for the VAT debt and refund interest notices | https://www.lac.org.na/laws/2026/9030.pdf | 2026-11-14 |
+| NamRA VAT page: read in full (its threshold is stale) | https://www.namra.org.na/tax-types/page/value-added-tax-vat-30120/ | 2026-11-14 |
+| NamRA how to file VAT: read in full | https://www.namra.org.na/documents/cms/uploaded/how-to-file-vat-returns-on-itas-a9438c4f18.pdf | 2026-11-14 |
+| NamRA form VAT 2: read in full | https://www.namra.org.na/documents/cms/uploaded/return-for-value-added-tax-f8b15298a9.pdf | 2026-11-14 |
 
 Not yet confirmed: refund interest rate in GN 300; fitness certificate detail; Budget 2026/27 proposals.
