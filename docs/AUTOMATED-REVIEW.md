@@ -26,7 +26,7 @@ A GitHub workflow can review eligible PRs that change `skills/**` or `library/**
 | Label | Meaning |
 |---|---|
 | `review-round-1`, `review-round-2` | An automatic fix round has run on this PR |
-| `needs-michael` | The loop stopped: HOLD, two fix rounds used, or a fix it was not allowed to make |
+| `needs-figure-check` | The loop stopped: HOLD, two fix rounds used, or a fix it was not allowed to make. Claude runs the figure check below, then fixes or merges (renamed from `needs-michael` on 14 Nov 2026) |
 | `found-by-review` | On an issue: faults already on main, found while reviewing a PR (one issue per file) |
 
 ## What it can and cannot change
@@ -89,3 +89,24 @@ and paste the token when asked. Until the secret exists the workflow does nothin
 - **The guard reads frontmatter, not body text.** An "Approved by" sentence written into a skill's body is not caught by the push-fix guard; the reviewer playbook catches it (honest labels). Look-alike letters (for example Cyrillic) in a `jurisdiction:` value only matter on a new file, which the reviewer reads; an existing Malta or Australia file is caught through main's copy.
 - **Follow-up: network egress.** `step-security/harden-runner` with an egress allow-list was considered for the review and fix jobs. Block mode cannot work for the reviewer, which must open official pages on hundreds of government hosts, and audit mode sends runner telemetry to a third party. It is not added; revisit if a fixed list of official hosts becomes practical (for example from `library/` source hosts).
 - **Reviews use the subscription's limits.** If they run out, the review job fails and the PR gets a HOLD comment saying no verdict came back.
+
+## Figure check (from 14 Nov 2026)
+
+Michael, 14 Nov 2026: he is not the person who clears held PRs. The `figures` job in
+`validate.yml` runs `scripts/check-row-sources.py` on every PR: each figure in a linked
+table row (above `## Worked cases`) must be on the page that row links to, or the row must
+say the figure is `derived` / `computed` from that page. A page that cannot be read is
+listed as UNREADABLE, not as a miss.
+
+How a PR is merged:
+
+1. Required checks green (validate, compare, unit-tests).
+2. The file list is the PR's own scope; no file with `reviewed_by` is touched.
+3. The `figures` job: every MISS is fixed, or opened by hand and explained (an example
+   input, a format the page writes differently, a figure in a file the script cannot read).
+   Every UNREADABLE row is opened by hand.
+4. Claude posts a "Person check" comment saying what was checked, then merges with a merge
+   commit. A real finding (wrong figure, missing source) is fixed, never merged over.
+
+Still a person's (Michael's): anything that adds or removes a person's name, and files with
+`reviewed_by`, which only their accountant changes.
