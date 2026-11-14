@@ -32,27 +32,27 @@ See also, in this pack: `sweden-payroll` (registration, withholding tables, the 
 |---|---|---|---|
 | Price base amount (prisbasbelopp, PBB) | SEK 59,200 | 2026 | https://www.skatteverket.se/privat/skatter/beloppochprocent/2026.4.1522bf3f19aea8075ba21.html |
 | Raised price base amount | SEK 60,500 | 2026 | same |
-| Car benefit, fixed part | 0.29 x PBB = SEK 17,168 a year | 2026 | IL 61 kap. 5 §; Skatteverket 2026 page |
-| Car benefit, interest part | new-car price x (70% of statslåneränta + 0.01); floor on the rate 0.5% | 2026 | IL 61 kap. 5 § |
+| Car benefit, fixed part | 0.29 x PBB = SEK 17,168 a year | 2026 | IL 61 kap. 5 §; Skatteverket 2026 page; https://www.skatteverket.se/privat/skatter/beloppochprocent/2026.4.1522bf3f19aea8075ba21.html |
+| Car benefit, interest part | new-car price x (70% of statslåneränta + 0.01); floor on the rate 0.5% | 2026 | IL 61 kap. 5 §; https://www.skatteverket.se/privat/skatter/beloppochprocent/2026.4.1522bf3f19aea8075ba21.html |
 | Statslåneränta at 30 November 2025 | 2.55%, so the interest factor is 2.785% | 2026 | https://www.riksgalden.se/press-och-publicerat/pressmeddelanden-och-nyheter/nyheter/20252/statslanerantan-per-den-30-november-2025/ |
-| Car benefit, price part | 13% of the new-car price | 2026 | IL 61 kap. 5 § |
-| Car benefit, vehicle tax | the car's annual fordonsskatt is added | 2026 | IL 61 kap. 5 § |
-| Environmental-car price reduction | electric or hydrogen SEK 350,000; plug-in hybrid SEK 140,000; gas (not LPG) SEK 100,000; never more than 50% of the new-car price | 2026 | IL 61 kap. 8 a § |
-| Car six years old or more | new-car price is at least 4 x PBB | 2026 | IL 61 kap. 7 § |
-| High business mileage | 75% of the value if at least 3,000 mil driven in service in the year | 2026 | IL 61 kap. 9 § |
-| Fuel benefit | market value x 1.2 for tax; market value for employer contributions | 2026 | IL 61 kap. 10 §; SAL 2 kap. 10 a § |
-| Meal benefit (kostförmån) | breakfast SEK 62; lunch or dinner SEK 124; full day (at least three meals) SEK 310 | 2026 | IL 61 kap. 3 §; Skatteverket 2026 page |
-| Housing benefit | market value for tax; for contributions, Skatteverket's per-m² table (Storstockholm SEK 1,744 a year; outside urban areas SEK 1,189 a year) | 2026 | IL 61 kap. 2 §; SAL 2 kap. 10 a §; Skatteverket 2026 page |
+| Car benefit, price part | 13% of the new-car price | 2026 | IL 61 kap. 5 §; https://www.skatteverket.se/privat/skatter/beloppochprocent/2026.4.1522bf3f19aea8075ba21.html |
+| Car benefit, vehicle tax | the car's annual fordonsskatt is added | 2026 | IL 61 kap. 5 §; https://data.riksdagen.se/dokument/sfs-1999-1229.text |
+| Environmental-car price reduction | electric or hydrogen SEK 350,000; plug-in hybrid SEK 140,000; gas (not LPG) SEK 100,000; never more than 50% of the new-car price | 2026 | IL 61 kap. 8 a §; https://data.riksdagen.se/dokument/sfs-1999-1229.text |
+| Car six years old or more | new-car price is at least 4 x PBB | 2026 | IL 61 kap. 7 §; https://data.riksdagen.se/dokument/sfs-1999-1229.text |
+| High business mileage | 75% of the value if at least 3,000 mil driven in service in the year | 2026 | IL 61 kap. 9 §; https://data.riksdagen.se/dokument/sfs-1999-1229.text |
+| Fuel benefit | market value x 1.2 for tax; market value for employer contributions | 2026 | IL 61 kap. 10 §; SAL 2 kap. 10 a §; https://www.skatteverket.se/privat/skatter/beloppochprocent/2026.4.1522bf3f19aea8075ba21.html |
+| Meal benefit (kostförmån) | breakfast SEK 62; lunch or dinner SEK 124; full day (at least three meals) SEK 310 | 2026 | IL 61 kap. 3 §; Skatteverket 2026 page; https://www.skatteverket.se/privat/skatter/beloppochprocent/2026.4.1522bf3f19aea8075ba21.html |
+| Housing benefit | market value for tax; for contributions, Skatteverket's per-m² table (Storstockholm SEK 1,744 a year; outside urban areas SEK 1,189 a year) | 2026 | IL 61 kap. 2 §; SAL 2 kap. 10 a §; Skatteverket 2026 page; https://www.skatteverket.se/privat/skatter/beloppochprocent/2026.4.1522bf3f19aea8075ba21.html |
 | Wellness allowance (friskvårdsbidrag) | tax-free up to SEK 5,000 a year, same terms for all staff; above that, all of it is taxable | 2026 | IL 11 kap. 11-12 §§; https://www.skatteverket.se/foretag/arbetsgivare/lonochersattning/formaner/personalvardsformanmotionochfriskvard.4.3016b5d91791bf546791431.html |
-| Christmas gift / jubilee gift / memorial gift | SEK 600 / SEK 1,800 / SEK 15,000, including VAT; above the limit, all of it is taxable; never cash | 2026 | IL 11 kap. 14 §; Skatteverket 2026 page |
-| Bicycle for private use | taxable only above SEK 3,000 a year, offer must go to all permanent staff | 2026 | IL 11 kap. 12 a § |
-| Charging at the workplace | tax-free (not if the workplace is the employee's home) | 2026 | IL 11 kap. 12 b § |
-| Per diem, domestic (maximibelopp) | SEK 300 full day; SEK 150 half day; SEK 150 night allowance | 2026 | IL 12 kap. 10-11 §§; Skatteverket 2026 page |
+| Christmas gift / jubilee gift / memorial gift | SEK 600 / SEK 1,800 / SEK 15,000, including VAT; above the limit, all of it is taxable; never cash | 2026 | IL 11 kap. 14 §; Skatteverket 2026 page; https://www.skatteverket.se/privat/skatter/beloppochprocent/2026.4.1522bf3f19aea8075ba21.html |
+| Bicycle for private use | taxable only above SEK 3,000 a year, offer must go to all permanent staff | 2026 | IL 11 kap. 12 a §; https://data.riksdagen.se/dokument/sfs-1999-1229.text |
+| Charging at the workplace | tax-free (not if the workplace is the employee's home) | 2026 | IL 11 kap. 12 b §; https://data.riksdagen.se/dokument/sfs-1999-1229.text |
+| Per diem, domestic (maximibelopp) | SEK 300 full day; SEK 150 half day; SEK 150 night allowance | 2026 | IL 12 kap. 10-11 §§; Skatteverket 2026 page; https://www.skatteverket.se/privat/skatter/beloppochprocent/2026.4.1522bf3f19aea8075ba21.html |
 | Per diem after three months at the same place | SEK 210 a full day (70%); after two years SEK 150 (50%) | 2026 | IL 12 kap. 6 § second paragraph and 21 §; https://www.skatteverket.se/foretag/arbetsgivare/lonochersattning/traktamenteochbilersattning.4.361dc8c15312eff6fd1703e.html |
-| Meal reduction of a SEK 300 full day | all three meals SEK 270; lunch and dinner SEK 210; lunch or dinner SEK 105; breakfast SEK 60 | 2026 | IL 12 kap. 17 §; Skatteverket traktamente page |
-| Mileage, own car | SEK 25 a mil (SEK 2.50 a km) | 2026 | IL 12 kap. 5 § |
-| Mileage, benefit car, employee pays all fuel | SEK 12 a mil; fully electric SEK 9.50 a mil | 2026 | IL 12 kap. 5 § |
-| Employer contributions on benefits | 31.42% ordinary full rate: 18.80% arbetsgivaravgifter plus 12.62% allmän löneavgift (reduced rates in `sweden-payroll`) | 2026 | SAL 2 kap. 10 and 26 §§; Lag (1994:1920) om allmän löneavgift 3 §; Skatteverket 2026 page |
+| Meal reduction of a SEK 300 full day | all three meals SEK 270; lunch and dinner SEK 210; lunch or dinner SEK 105; breakfast SEK 60 | 2026 | IL 12 kap. 17 §; Skatteverket traktamente page; https://www.skatteverket.se/foretag/arbetsgivare/lonochersattning/traktamenteochbilersattning.4.361dc8c15312eff6fd1703e.html |
+| Mileage, own car | SEK 25 a mil (SEK 2.50 a km) | 2026 | IL 12 kap. 5 §; https://data.riksdagen.se/dokument/sfs-2011-1244.text |
+| Mileage, benefit car, employee pays all fuel | SEK 12 a mil; fully electric SEK 9.50 a mil | 2026 | IL 12 kap. 5 §; https://www.skatteverket.se/privat/skatter/beloppochprocent/2026.4.1522bf3f19aea8075ba21.html |
+| Employer contributions on benefits | 31.42% ordinary full rate: 18.80% arbetsgivaravgifter plus 12.62% allmän löneavgift (reduced rates in `sweden-payroll`) | 2026 | SAL 2 kap. 10 and 26 §§; Lag (1994:1920) om allmän löneavgift 3 §; Skatteverket 2026 page; https://www.skatteverket.se/privat/skatter/beloppochprocent/2026.4.1522bf3f19aea8075ba21.html |
 
 ## The taxable base
 

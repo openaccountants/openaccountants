@@ -1,0 +1,45 @@
+{
+"https://www.skatteverket.se/privat/skatter/beloppochprocent/2026.4.1522bf3f19aea8075ba21.html": [
+"State tax on earned income",
+"Brytpunkt (income before the basic deduction where state tax starts)",
+"Basic deduction, under 66 at 1 January 2026",
+"Basic deduction, 66 or over at 1 January 2026 (born 1959 or earlier)",
+"General pension contribution",
+"Egenavgifter (sole trader)",
+"Schablonavdrag for egenavgifter",
+"Tax on capital income",
+"Capital deficit credit",
+"ISK standard income",
+"Capital insurance (kapitalförsäkring) yield tax",
+"Tax-free amount for ISK, capital insurance and PEPP",
+"RUT credit (household services)",
+"Positive räntefördelning",
+"Negative räntefördelning",
+"Expansionsfond",
+"Equipment depreciation",
+"Representation",
+"Burial fee",
+"Public service fee",
+"Late filing fee",
+"Tax surcharge"
+],
+"https://data.riksdagen.se/dokument/sfs-1999-1229.text": [
+"Job tax credit, under 66",
+"Job tax credit, 66 or over",
+"Earned income credit",
+"ROT and RUT cap",
+"Home office without a fitted-out room (at least 800 hours)"
+],
+"https://data.riksdagen.se/dokument/sfs-2023-748.text": [
+"Egenavgift reduction"
+],
+"https://data.riksdagen.se/dokument/sfs-2009-194.text": [
+"ROT credit (repair and extension of own home)"
+],
+"https://data.riksdagen.se/dokument/sfs-2011-1244.text": [
+"Own car used in the business"
+],
+"https://data.riksdagen.se/dokument/sfs-2023-200.text": [
+"VAT exemption for small turnover"
+]
+}
