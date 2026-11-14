@@ -10,10 +10,10 @@ description: >
   "KDOR corporate". Use the APEX-adjusted 3.5% normal rate plus 3% surtax over USD50,000;
   Notice23-10 effective2024 controls the earlier reduction. Notice25-06
   announces no additional revenue-triggered reduction for2026.
-version: "0.3"
+version: "0.4"
 jurisdiction: US-KS
 tax_year: 2026
-last_updated: 2026-11-13
+last_updated: 2026-11-14
 depends_on:
   - ks-income-tax
 category: state-tax
@@ -52,7 +52,7 @@ See also: `ks-income-tax`, `ks-transfer-pricing`, `ks-cross-border`.
 
 | Item | Rate or amount | Tax year | Source |
 |---|---|---|---|
-| Normal tax | **3.5%** of Kansas taxable income, after the APEX reduction effective tax years beginning 2024 | 2026 current continuing rate | [KDOR Notice 23-10](https://www.ksrevenue.gov/taxnotices/notice23-10.pdf); [74-50,321](https://ksrevisor.gov/statutes/chapters/ch74/074_050_0321.html); [2025 booklet](https://www.ksrevenue.gov/corpbook25.html) |
+| Normal tax | **3.5%** of Kansas taxable income (derived: the 4% normal tax in K.S.A. 79-32,110(c)(1) less the one-time 0.5% APEX reduction under 74-50,321(b), announced in Notice 23-10), effective tax years beginning 2024 | 2026 current continuing rate | [KDOR Notice 23-10](https://www.ksrevenue.gov/taxnotices/notice23-10.pdf); [74-50,321](https://ksrevisor.gov/statutes/chapters/ch74/074_050_0321.html); [79-32,110](https://ksrevisor.gov/statutes/chapters/ch79/079_032_0110.html); [2025 booklet](https://www.ksrevenue.gov/corpbook25.html) |
 | Surtax | **3%** of Kansas taxable income **in excess of $50,000** (one surtax exemption per corporate taxpayer) | 2026 | [K.S.A. 79-32,110(c)(2)](https://ksrevisor.gov/statutes/chapters/ch79/079_032_0110.html); [2025 Corporate Tax Booklet](https://www.ksrevenue.gov/corpbook25.html), line 30 instructions |
 | TY2026 rate reduction | **No additional revenue-triggered reduction**: FY2025 collections failed the test. This does not reverse the APEX reduction already effective 2024 | 2026 | [KDOR Notice 25-06](https://www.ksrevenue.gov/taxnotices/notice25-06.pdf) |
 | Future reductions | 79-32,110c (Senate Bill 269 (2025), L. 2025 ch. 116): individual rates are cut first; the corporate surtax is cut only after both individual rates reach 4%, and only until **combined normal + surtax = 4%**. K.S.A. 79-32,110d (L. 2025 ch. 123) adds a separate test at the end of fiscal 2028 that can cut the normal tax for tax years after 2028 | 2027 on | [K.S.A. 79-32,110c](https://ksrevisor.gov/statutes/chapters/ch79/079_032_0110c.html); [K.S.A. 79-32,110d](https://ksrevisor.gov/statutes/chapters/ch79/079_032_0110d.html) |

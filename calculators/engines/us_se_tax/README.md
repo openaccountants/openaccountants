@@ -2,9 +2,9 @@
 
 US self-employment tax (Schedule SE regular method) for tax year 2025 or 2026: 92.35% of net profit, 12.4% social security up to the wage base less W-2 SS wages, 2.9% Medicare uncapped. Excludes the 0.9% Additional Medicare Tax (Form 8959).
 
-Jurisdiction US. Tax years 2025 and 2026. Engine version 1.2.0.
+Jurisdiction US. Tax years 2025 and 2026. Engine version 1.3.0.
 
-This is the same code that answers the compute tool of the OpenAccountants plugin. It is generated from `src/lib/engines/us-se-tax.ts` in the OpenAccountants platform at commit `9931ceb6`; do not edit it here. The compute tool's answer links to this folder (`inspect.code_url`), so anyone can read the code, the figures and the tests behind it and run them again.
+This is the same code that answers the compute tool of the OpenAccountants plugin. It is generated from `src/lib/engines/us-se-tax.ts` in the OpenAccountants platform at commit `c2e3c2b9`; do not edit it here. The compute tool's answer links to this folder (`inspect.code_url`), so anyone can read the code, the figures and the tests behind it and run them again.
 
 ## Files
 
@@ -29,7 +29,7 @@ import { run } from "./calculators/engines/us_se_tax/index.mjs";
 console.log(JSON.stringify(run({"schedule_c_net_profit":120000,"tax_year":"2026"}), null, 2));
 ```
 
-To check an answer from the plugin, pass the same facts: `run(facts)` returns the same result, steps and constants, and `receiptId("us_se_tax", "1.2.0", facts, run(facts))` equals the `receipt.id` it returned.
+To check an answer from the plugin, pass the same facts: `run(facts)` returns the same result, steps and constants, and `receiptId("us_se_tax", "1.3.0", facts, run(facts))` equals the `receipt.id` it returned.
 
 ## Inputs
 
@@ -68,19 +68,19 @@ Every figure is quoted from an OpenAccountants skill. The skill is the authority
 
 | Name | Value | Skill | Section |
 |---|---|---|---|
-| `NET_EARNINGS_FACTOR` | `0.9235` | [us-federal-return-assembly](https://www.openaccountants.com/skills/us-federal-return-assembly) | Self-employment tax |
-| `MIN_NET_EARNINGS` | `400` | [us-federal-return-assembly](https://www.openaccountants.com/skills/us-federal-return-assembly) | Self-employment tax |
-| `SS_RATE` | `0.124` | [us-federal-return-assembly](https://www.openaccountants.com/skills/us-federal-return-assembly) | Self-employment tax |
-| `WAGE_BASE` | `{"2025":176100,"2026":184500}` | [us-federal-return-assembly](https://www.openaccountants.com/skills/us-federal-return-assembly) | Self-employment tax |
-| `MEDICARE_RATE` | `0.029` | [us-federal-return-assembly](https://www.openaccountants.com/skills/us-federal-return-assembly) | Self-employment tax |
-| `DEDUCTIBLE_SHARE` | `0.5` | [us-federal-return-assembly](https://www.openaccountants.com/skills/us-federal-return-assembly) | Self-employment tax |
+| `NET_EARNINGS_FACTOR` | `0.9235` | [us-schedule-c-and-se-computation](https://www.openaccountants.com/skills/us-schedule-c-and-se-computation) | Rates, bands and thresholds |
+| `MIN_NET_EARNINGS` | `400` | [us-schedule-c-and-se-computation](https://www.openaccountants.com/skills/us-schedule-c-and-se-computation) | Rates, bands and thresholds |
+| `SS_RATE` | `0.124` | [us-schedule-c-and-se-computation](https://www.openaccountants.com/skills/us-schedule-c-and-se-computation) | Rates, bands and thresholds |
+| `WAGE_BASE` | `{"2025":176100,"2026":184500}` | [us-tax-workflow-base](https://www.openaccountants.com/skills/us-tax-workflow-base) | Figures for 2026, with years |
+| `MEDICARE_RATE` | `0.029` | [us-schedule-c-and-se-computation](https://www.openaccountants.com/skills/us-schedule-c-and-se-computation) | Rates, bands and thresholds |
+| `DEDUCTIBLE_SHARE` | `0.5` | [us-schedule-c-and-se-computation](https://www.openaccountants.com/skills/us-schedule-c-and-se-computation) | Rates, bands and thresholds |
 
-Skills behind it: [us-federal-return-assembly](https://www.openaccountants.com/skills/us-federal-return-assembly).
+Skills behind it: [us-schedule-c-and-se-computation](https://www.openaccountants.com/skills/us-schedule-c-and-se-computation), [us-tax-workflow-base](https://www.openaccountants.com/skills/us-tax-workflow-base).
 
 ## Worked examples it reproduces
 
-- us-federal-return-assembly Case A: profit $120,000 -> SE tax $16,955.46 (2025), half $8,477.73
-- us-schedule-c-and-se-computation Example 2: $102,500 -> $14,483
+- us-tax-workflow-base Case 1 (2026): profit $60,000 -> SE tax $8,477.73
+- us-schedule-c-and-se-computation Case 2 (2026): profit $120,000, W-2 wages $100,000 -> SE tax $13,691.78, half $6,845.89
 
 The platform's tests recompute these from the skills' own worked examples (`worked-examples.test.ts`, not published here because it calls the engine's internal helpers).
 
@@ -88,4 +88,4 @@ The platform's tests recompute these from the skills' own worked examples (`work
 
 Code (`index.mjs`, `index.test.mjs`, `source/`): AGPL-3.0-only, like every calculator in this repository. Figures and wording in `rules.json`: the OpenAccountants Guide License v1.0, like the skills. See [LICENSING.md](../../../LICENSING.md).
 
-Source commit: `9931ceb6` (OpenAccountants platform, `src/lib/engines`).
+Source commit: `c2e3c2b9` (OpenAccountants platform, `src/lib/engines`).
