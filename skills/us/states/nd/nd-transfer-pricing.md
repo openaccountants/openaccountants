@@ -17,7 +17,7 @@ tax_year: 2026
 tier: 2
 verified_by: pending
 last_updated: 2026-11-14
-version: "1.0"
+version: "1.1"
 ---
 
 # North Dakota transfer pricing (combined reporting, water's edge, apportionment), tax year 2026
@@ -38,17 +38,17 @@ The graduated corporate schedule (1.41%, 3.55%, 4.31%) is owned by `nd-corporate
 
 | Item | Amount, tax year 2026 | Official source |
 | --- | --- | --- |
-| Additional tax on a water's-edge elector, on top of the 57-38-30(1) tax | 3.5% of taxable income | [N.D.C.C. 57-38.4-02(3)](https://ndlegis.gov/cencode/t57c38-4.pdf) |
+| Additional tax on a water's-edge elector, on top of the 57-38-30(1) tax | 3.5% of taxable income | [N.D.C.C. 57-38.4-02(3)](https://ndlegis.gov/cencode/t57c38-4.pdf); [Tax Commissioner corporate page](https://www.tax.nd.gov/corporate-income-tax) |
 | Water's-edge election: binding period | five consecutive taxable years | [N.D.C.C. 57-38.4-02(1)(b)](https://ndlegis.gov/cencode/t57c38-4.pdf) |
-| Water's-edge inclusion, existing corporation: foreign dividends / income from 80/20 corporations | 50% / 60% | [N.D.C.C. 57-38.4-02(2)(a)](https://ndlegis.gov/cencode/t57c38-4.pdf) |
-| Water's-edge inclusion, new corporation, or existing corporation raising threshold activity by 25% or more | 30% / 30% | [N.D.C.C. 57-38.4-02(2)(a) and (b)](https://ndlegis.gov/cencode/t57c38-4.pdf) |
+| Water's-edge inclusion, existing corporation: foreign dividends / income from 80/20 corporations | Fifty percent / sixty percent | [N.D.C.C. 57-38.4-02(2)(a)](https://ndlegis.gov/cencode/t57c38-4.pdf) |
+| Water's-edge inclusion, new corporation, or existing corporation raising threshold activity by twenty-five percent or more | 30% / 30% | [N.D.C.C. 57-38.4-02(2)(a) and (b)](https://ndlegis.gov/cencode/t57c38-4.pdf) |
 | Any electing corporation, taxable years after 1994, may reduce the inclusion to | 30% / 30% | [N.D.C.C. 57-38.4-02(2)(c)](https://ndlegis.gov/cencode/t57c38-4.pdf) |
 | Water's-edge group: US-incorporated affiliate included if property and payroll inside the US exceed | 20% | [N.D.C.C. 57-38.4-01(7)(a)](https://ndlegis.gov/cencode/t57c38-4.pdf) |
-| Affiliated corporation: voting stock owned by the parent or group | more than 50% | [N.D.C.C. 57-38.4-01(1)](https://ndlegis.gov/cencode/t57c38-4.pdf) |
+| Affiliated corporation: voting stock owned by the parent or group | More than fifty percent | [N.D.C.C. 57-38.4-01(1)](https://ndlegis.gov/cencode/t57c38-4.pdf) |
 | Default apportionment fraction | (property + payroll + sales) / 3 | [N.D.C.C. 57-38.1-09(1)](https://ndlegis.gov/cencode/t57c38-1.pdf) |
 | Single-sales-factor election (non-passthrough taxpayer, years after 2018): binding period | five consecutive taxable years, then lapses | [N.D.C.C. 57-38.1-09(4)(c)](https://ndlegis.gov/cencode/t57c38-1.pdf) |
 | Waiting period before a new single-sales-factor election if not renewed in the next year | three taxable years on the default formula | [N.D.C.C. 57-38.1-09(4)(d)](https://ndlegis.gov/cencode/t57c38-1.pdf) |
-| Corporation estimated tax required when both the prior-year liability and the expected current liability exceed | USD 5,000 | [N.D.C.C. 57-38-62(2)](https://ndlegis.gov/cencode/t57c38.pdf) |
+| Corporation estimated tax required when both the prior-year liability and the expected current liability exceed | Five thousand dollars | [N.D.C.C. 57-38-62(2)](https://ndlegis.gov/cencode/t57c38.pdf) |
 | Interest on underpaid corporate estimates | 12% per annum | [2026 Form 40-ES, kept in the agency's 2025-corp folder](https://www.tax.nd.gov/sites/www/files/documents/forms/business/corporate-income/2025-corp/28716-form-40-es-2026.pdf) |
 
 ## The base
@@ -132,7 +132,7 @@ expected:
 
 | Source | URL | Read on |
 | --- | --- | --- |
-| N.D.C.C. chapter 57-38.4. Read for sections 57-38.4-01 (definitions, water's-edge group), 57-38.4-02 (election, inclusion shares, 3.5% additional tax) and 57-38.4-03 (conditions). | https://ndlegis.gov/cencode/t57c38-4.pdf | 2026-11-14 |
+| N.D.C.C. chapter 57-38.4. Read for sections 57-38.4-01 (definitions, water's-edge group), 57-38.4-02 (election, inclusion shares, three and one-half percent additional tax) and 57-38.4-03 (conditions). | https://ndlegis.gov/cencode/t57c38-4.pdf | 2026-11-14 |
 | N.D.C.C. chapter 57-38.1. Read for section 57-38.1-09 (three-factor default, single-sales-factor election and its binding and waiting periods), 57-38.1-18 (alternative methods) and 57-38.1-19 (a uniformity purpose clause, not combined reporting). | https://ndlegis.gov/cencode/t57c38-1.pdf | 2026-11-14 |
 | N.D.C.C. chapter 57-38. Read for sections 57-38-30 (corporate rates), 57-38-45 (penalties and interest) and 57-38-62(2) (corporate estimated tax). | https://ndlegis.gov/cencode/t57c38.pdf | 2026-11-14 |
 | 2025 Form 40 instructions, 2025-2026 filing cycle. Read for the combined report requirement, unitary business definition and presumptions, pro forma starting point, treaty rule and the water's-edge election paragraph. | https://www.tax.nd.gov/sites/default/files/documents/forms/business/corporate-income/2025-corp/28714-corp-income-tax-booklet-2025.pdf | 2026-11-14 |
