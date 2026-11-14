@@ -9,7 +9,7 @@ description: >
   Belonger stamp duty waiver, the new eTax portal, and routes social security, NHI,
   payroll and company questions to their own skills. Trigger phrases include BVI tax,
   British Virgin Islands income tax, BVI VAT, BVI corporate tax, BVI stamp duty.
-version: "3.0"
+version: "3.1"
 jurisdiction: VG
 tax_year: 2026
 last_updated: 2026-11-14
@@ -42,7 +42,10 @@ So, in plain terms: individuals file no income tax return; BVI companies pay no 
 
 | Item | 2026 figure and conditions | Official source |
 |---|---|---|
-| Income tax, corporate income tax, capital gains tax, VAT or GST | None collected; not among the IRD's taxes or the budget's revenue lines | [IRD](https://gov.vg/inland-revenue-department) |
+| Income tax, corporate income tax, capital gains tax, VAT or GST | No current charge: the Income Tax Ordinance stays on the books, but the Payroll Taxes Act 2004 reduced the rate of income tax to zero from 1 January 2005; no VAT or GST | [FSC 2024 annual report, note on taxation](https://www.bvifsc.vg/sites/default/files/annual_report_2024.pdf); [IRD](https://gov.vg/inland-revenue-department) |
+| Income tax receipts in the budget | Residual amounts only: personal income tax USD 61,745 (2024 actual) and USD 37,017 (2025 revised), corporate income tax USD 7,200 (2025 revised); nil budgeted for 2026 to 2028 | [2026 Detailed Budget Estimates, revenue lines 411110 and 411210](https://gov.vg/sites/default/files/2026-04/2026_budget_estimates_final_b.pdf) |
+| BVI business company exemption | The company, its dividends, interest, rents, royalties and other payments, and gains on its shares and debt, are exempt from the Income Tax Ordinance; no estate or gift tax on its securities | [BVI Business Companies Act (Revised Edition 2020), s. 242(1) and (2)](https://www.bvifsc.vg/sites/default/files/bvi_business_companies_act.pdf) |
+| Stamp duty, BVI business company instruments | Exempt, except instruments transferring an interest in BVI land to or by the company, and transactions in securities of a land owning company (one that, or whose subsidiary, has an interest in BVI land) | same, s. 242(3) to (5) |
 | Wharfage on imports, 2026 relief measure | Halved from 2% to 1% | [2027 Budget Address](https://gov.vg/news/2027-budget-address-honourable-dr-natalio-d-wheatley) |
 | Container-handling charge, 2026 relief measure | Halved from USD 300 to USD 150 | same |
 | Customs valuation, 2026 relief measure | Freight and insurance removed from customs valuation; duties reduced on food, hygiene, household and medical essentials | same |
@@ -66,14 +69,15 @@ So, in plain terms: individuals file no income tax return; BVI companies pay no 
 
 ## Penalties and interest
 
-- SSB contributions paid on or after the 15th incur a 10% penalty ([SSB contributions](https://www.vissb.vg/contributions/)).
+- SSB contributions paid on or after the 15th incur a penalty: 10% on the Board's contributions page, 5% in its 2026 bulletin; confirm with the Board ([SSB contributions](https://www.vissb.vg/contributions/); [SSB 2026 bulletin](https://www.vissb.vg/wp-content/uploads/2026/09/2026-SSB-Maximum-Earnings.pdf)).
 - Payroll tax, stamp duty and property tax penalties are not confirmed in this version.
 
 ## Cross-border points
 
-- With no income tax, the territory levies no withholding tax on dividends, interest or royalties paid abroad (no charging tax among those the IRD collects).
+- With income tax at zero, the territory levies no withholding tax on dividends, interest or royalties paid abroad; payments by a BVI business company are also exempt from the Income Tax Ordinance under s. 242(1) of the BVI Business Companies Act. Other entity types: check separately.
+- Budget receipts under the income tax lines (USD 37,017 personal and USD 7,200 corporate in the 2025 revised estimates) show some residual collection; if a client receives an income tax assessment or demand, refer to the IRD or a local adviser.
 - A resident who is a citizen or resident of a country that taxes worldwide income (for example the United States) is taxed there; use that country's skill.
-- Whether the territory applies a domestic minimum top-up tax to large multinational groups is not confirmed here; check before advising a group with EUR 750 million revenue.
+- Whether the territory applies a domestic minimum top-up tax to large multinational groups is not confirmed here (the 2026 budget estimates discuss it only as a conditional proposal); check before advising a group with EUR 750 million revenue.
 - Non-Belongers need a land holding licence to hold land; the 2027 budget plans computerised processing from the first quarter of 2027 ([2027 Budget Address](https://gov.vg/news/2027-budget-address-honourable-dr-natalio-d-wheatley)).
 
 ## Two worked examples that recompute
@@ -131,10 +135,14 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
+| FSC 2024 annual report (audited accounts), taxation note: read for the Payroll Taxes Act 2004 reducing income tax to zero from 1 January 2005 | https://www.bvifsc.vg/sites/default/files/annual_report_2024.pdf | 2026-11-14 |
+| 2026 Detailed Budget Estimates (April 2026): read for revenue lines 411110 and 411210 (residual personal and corporate income tax receipts) and the conditional minimum tax discussion | https://gov.vg/sites/default/files/2026-04/2026_budget_estimates_final_b.pdf | 2026-11-14 |
+| BVI Business Companies Act (Revised Edition 2020, FSC copy): read for s. 242, the income tax, estate and stamp duty exemptions and the land exceptions | https://www.bvifsc.vg/sites/default/files/bvi_business_companies_act.pdf | 2026-11-14 |
 | Inland Revenue Department page: read for the list of taxes the IRD collects and contacts | https://gov.vg/inland-revenue-department | 2026-11-14 |
 | 2027 Budget Address (November 2026): read for revenue sources, the 2026 wharfage, container-handling and customs valuation relief, the Belonger stamp duty waiver and the land holding licence plan | https://gov.vg/news/2027-budget-address-honourable-dr-natalio-d-wheatley | 2026-11-14 |
 | Ministry of Finance notice of 6 November 2026 (PDF): read for the eTax portal and online payments | https://gov.vg/sites/default/files/2026-11/ministry_of_finance_launches_enhanced_etax_portal_and_online_tax_payments.pdf | 2026-11-14 |
 | Social Security Board, contributions page (via Firecrawl): read for the due date and the 10% penalty | https://www.vissb.vg/contributions/ | 2026-11-14 |
+| Social Security Board, 2026 maximum insurable earnings bulletin (PDF): read for the 5% late penalty, which differs from the contributions page | https://www.vissb.vg/wp-content/uploads/2026/09/2026-SSB-Maximum-Earnings.pdf | 2026-11-14 |
 | SI 71 of 2026, BVI Business Companies (Financial Return) (Amendment) Order (PDF): read for the new annual financial return form from 2 November 2026 | https://laws.gov.vg/sites/default/files/2026-11/SI%20No%2071%20of%202026%20--%20BVI%20Business%20Companies%20%28Financial%20Return%29%20%28Amendment%29%20Order%2C%202026%20%28signed%29.pdf | 2026-11-14 |
 
-Not yet confirmed: payroll tax rates (see vg-payroll-social); customs duty rates by tariff line (the old file's "general merchandise 5% to 20%", "motor vehicles 20% plus environmental levy", "building materials 5% to 10%" and "office equipment about 15%" had no official source); stamp duty rates on land (the old files gave 4% buyer plus 4% seller, and 4% Belongers against 12% non-Belongers; not read); the land and house tax due date (old file: 1 September) and rates; whether an Income Tax Act remains on the books at a zero rate; whether a domestic minimum top-up tax applies to in-scope groups; how long the 2026 wharfage, handling and valuation relief lasts.
+Not yet confirmed: payroll tax rates (see vg-payroll-social); customs duty rates by tariff line (the old file's "general merchandise 5% to 20%", "motor vehicles 20% plus environmental levy", "building materials 5% to 10%" and "office equipment about 15%" had no official source); stamp duty rates on land (the old files gave 4% buyer plus 4% seller, and 4% Belongers against 12% non-Belongers; not read); the land and house tax due date (old file: 1 September) and rates; the operative zero-rate text of the Income Tax Ordinance (Cap. 206) and Payroll Taxes Act 2004 (read only through the FSC accounts) and which assessment periods the residual budget receipts relate to; whether a domestic minimum top-up tax applies to in-scope groups; how long the 2026 wharfage, handling and valuation relief lasts.

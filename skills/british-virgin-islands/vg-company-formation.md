@@ -9,7 +9,7 @@ description: >
   amounts are not confirmed in this version. Trigger phrases include incorporate in the
   BVI, BVI business company, BVI annual financial return, BVI beneficial ownership,
   registered agent BVI.
-version: "1.0"
+version: "1.1"
 jurisdiction: VG
 tax_year: 2026
 last_updated: 2026-11-14
@@ -46,15 +46,24 @@ Forming a BVI business company (BC) under the BVI Business Companies Act, Revise
 | Notice of objection; application opposing disclosure; notice of intent to appeal | USD 0 each | same |
 | Application for exemption from disclosure of beneficial ownership information, or its renewal | USD 50 each | same |
 | Certified copy of an entry in the Register of Beneficial Ownership (s.233) | USD 75 | same |
+| Incorporation fee, company authorised to issue no more than 50,000 shares | USD 550 (was USD 450 before 1 January 2023) | [SI 89 of 2022, s. 2(a)(i)](https://www.bvifsc.vg/sites/default/files/bvi_business_companies_amendment_of_schedule_1_no_2_order_2022.pdf) |
+| Incorporation fee, company authorised to issue more than 50,000 shares | USD 1,350 (was USD 1,200) | same |
+| Annual fee, company authorised to issue no more than 50,000 shares | USD 550 | Schedule 1 Part I, s. 236, as amended from 1 January 2023 ([SI 89 of 2022, s. 2(a)(xiii)](https://www.bvifsc.vg/sites/default/files/bvi_business_companies_amendment_of_schedule_1_no_2_order_2022.pdf)) |
+| Annual fee, company authorised to issue more than 50,000 shares | USD 1,350 | same |
+| Annual fee due date | 31 May each year if incorporated or continued between 1 January and 30 June; 30 November if between 1 July and 31 December; starting in the year after incorporation | [BVI Business Companies Act (Revised Edition 2020), Schedule 1 Part III para 5](https://www.bvifsc.vg/sites/default/files/bvi_business_companies_act.pdf) |
+| Late annual fee penalty | 10% of the annual fee if paid within 2 months after the due date; 50% if paid 2 months or more after it | [Act (Revised Edition 2020), Schedule 1 Part II para 1](https://www.bvifsc.vg/sites/default/files/bvi_business_companies_act.pdf) |
+| Annual financial return deadline | Within 9 months after the end of the company's financial year, filed with the registered agent | [BVI Business Companies (Amendment) Act 2022, s. 17 (new s. 98A(2))](https://www.bvifsc.vg/sites/default/files/act_no_6_of_2022-_bvi_business_companies_amendment_act_2022_1.pdf) |
+| Registered agent's duty on a missed return | Notify the Registrar in writing no later than 30 days after the return was due; keep returns at least 5 years | same, s. 98A(3) and (4) |
+| Companies exempt from the annual financial return | Listed companies; companies regulated under financial services legislation that give financial statements to the Commission; companies filing an annual tax return with financial statements to Inland Revenue; companies in liquidation, unless the return became due before liquidation started | [BVI Business Companies (Financial Return) Order 2023, s. 3 and guideline](https://www.bvifsc.vg/sites/default/files/bvi_business_companies_financial_return_order_2023.pdf) |
 | Annual financial return form | Substituted Schedule in force from 2 November 2026 (balance sheet categories in US dollars) | [SI 71 of 2026](https://laws.gov.vg/sites/default/files/2026-11/SI%20No%2071%20of%202026%20--%20BVI%20Business%20Companies%20%28Financial%20Return%29%20%28Amendment%29%20Order%2C%202026%20%28signed%29.pdf) |
 
 ### Steps
 
 1. **Appoint a licensed registered agent** in the territory; the agent files on the company's behalf and holds its records.
 2. **Prepare the memorandum and articles** and the agent's due diligence on owners and directors.
-3. **File for incorporation** with the Registry of Corporate Affairs through the agent and pay the government fee under Schedule 1 of the Act (amount not confirmed here).
+3. **File for incorporation** with the Registry of Corporate Affairs through the agent and pay the government fee under Schedule 1 of the Act (USD 550 for up to 50,000 authorised shares, USD 1,350 above).
 4. **Beneficial ownership:** give the agent the beneficial ownership information for the Register of Beneficial Ownership. An owner who qualifies may apply for exemption from disclosure (USD 50) and renew it (USD 50).
-5. **Each year:** pay the annual government fee; prepare the annual financial return on the form in the 2026 Schedule (from 2 November 2026) and give it to the registered agent; make the economic substance report where required.
+5. **Each year:** pay the annual government fee by 31 May or 30 November (by incorporation half-year); within 9 months of the year end, prepare the annual financial return on the form in the 2026 Schedule (from 2 November 2026) and give it to the registered agent; make the economic substance report where required.
 6. **If it employs staff:** register for payroll tax on eTax (efiling.gov.vg) and with the Social Security Board before the first payroll.
 
 ## Worked cases
@@ -81,7 +90,7 @@ expected:
 
 - Regulated businesses (banking, insurance, funds, virtual assets, trust business): licensing by the Financial Services Commission; refer.
 - Economic substance tests: refer to an adviser and the Act's guidance.
-- Fee amounts for incorporation and annual fees: confirm with the registered agent or Schedule 1 of the Act before quoting.
+- Fee amounts for other company types (restricted purpose, private trust, segregated portfolio, foreign companies): confirm with the registered agent or Schedule 1 of the Act before quoting.
 
 ## Filing and payment
 
@@ -99,6 +108,10 @@ All filings go through the registered agent to the Registry of Corporate Affairs
 | Source | URL | Read on |
 |---|---|---|
 | SI 62 of 2025, BVI Business Companies (Amendment of Schedule 1) Order (PDF): read for the beneficial ownership fees | https://laws.gov.vg/sites/default/files/2025-10/SI%20No%2062%20of%202025-BVI%20Business%20Companies%20%28Amendment%20of%20Schedule%201%29%20Order%202025.pdf | 2026-11-14 |
+| SI 89 of 2022, BVI Business Companies (Amendment of Schedule 1) (No. 2) Order (PDF): read for the USD 550 and USD 1,350 incorporation and annual fees from 1 January 2023 | https://www.bvifsc.vg/sites/default/files/bvi_business_companies_amendment_of_schedule_1_no_2_order_2022.pdf | 2026-11-14 |
+| BVI Business Companies Act (Revised Edition 2020, FSC copy): read for Schedule 1 Part II para 1 (10% and 50% late fee penalties) and Part III para 5 (31 May and 30 November due dates) | https://www.bvifsc.vg/sites/default/files/bvi_business_companies_act.pdf | 2026-11-14 |
+| BVI Business Companies (Amendment) Act 2022, Act 6 of 2022: read for s. 17, new s. 98A (9-month financial return, registered agent's 30-day notice, 5-year retention) | https://www.bvifsc.vg/sites/default/files/act_no_6_of_2022-_bvi_business_companies_amendment_act_2022_1.pdf | 2026-11-14 |
+| BVI Business Companies (Financial Return) Order 2023, SI 18 of 2023: read for s. 3 and its guideline on the s. 98A(5) exemptions and the liquidation rule | https://www.bvifsc.vg/sites/default/files/bvi_business_companies_financial_return_order_2023.pdf | 2026-11-14 |
 | SI 71 of 2026, BVI Business Companies (Financial Return) (Amendment) Order (PDF): read for the commencement on 2 November 2026 and the substituted return form | https://laws.gov.vg/sites/default/files/2026-11/SI%20No%2071%20of%202026%20--%20BVI%20Business%20Companies%20%28Financial%20Return%29%20%28Amendment%29%20Order%2C%202026%20%28signed%29.pdf | 2026-11-14 |
 
-Not yet confirmed: the incorporation and annual government fees (old files: USD 550 up to 50,000 shares and USD 1,350 above, one file also said 450 and 1,200); the annual fee due dates (old: 31 May or 30 November by incorporation half-year); the 9-month deadline for the financial return and the USD 5,000 maximum fine; the 6-month economic substance reporting deadline; the minimums of one director and one shareholder and the absence of a minimum capital; the 1 to 3 business day timeline. Schedule 1 of the Act (Revised Edition 2020) and the Financial Services Commission's company fee page could not be opened (the Commission's site refused direct fetches).
+Not yet confirmed: whether any order after SI 89 of 2022 changed the fees or the late fee penalties (the 2020 Revised Edition plus SI 89 were read); the USD 5,000 maximum fine for a missed financial return; whether the Commission has extended the initial filing period by notice under Act 30 of 2024; the 6-month economic substance reporting deadline; the minimums of one director and one shareholder and the absence of a minimum capital; the 1 to 3 business day timeline. Schedule 1 of the Act (Revised Edition 2020) and the Financial Services Commission's company fee page could not be opened (the Commission's site refused direct fetches).
