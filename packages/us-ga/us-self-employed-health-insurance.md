@@ -1,475 +1,226 @@
 ---
 name: us-self-employed-health-insurance
-description: Tier 2 content skill for computing the self-employed health insurance deduction under IRC §162(l) for US sole proprietors and single-member LLCs disregarded for federal tax purposes. Covers tax year 2025 rules including the 100% deduction for medical, dental, vision, and qualified long-term care premiums, the age-based long-term care premium limits, the net SE earnings limitation, the employer-sponsored plan eligibility bar, the Medicare premium eligibility rules (Parts A voluntary, B, D, Medigap), COBRA continuation premiums, ACA Marketplace interaction with the Premium Tax Credit, the month-by-month coverage calculation, and the Schedule 1 Line 17 reporting position. Consumes Schedule C net profit and SE tax from us-schedule-c-and-se-computation. Feeds QBI computation in us-qbi-deduction. MUST be loaded alongside us-tax-workflow-base v0.1 or later. Federal only. No state tax.
-version: 0.2
+description: Compute the 2026 US self-employed health insurance deduction under 26 U.S.C. 162(l) for a sole proprietor or single-member LLC owner, on Form 7206 or the Schedule 1 worksheet. Covers medical, dental, vision, Medicare and COBRA premiums, qualified long-term care premiums capped by age ($500, $930, $1,860, $4,960, $6,200 for 2026 under Rev. Proc. 2025-32), the earned income limit (net profit less the deductible half of self-employment tax and the retirement plan deduction), the month-by-month bar for any month the person could join a subsidized employer plan, children under 27, and the interaction with the premium tax credit. Trigger on "self-employed health insurance", "Form 7206", "Schedule 1 line 17", "deduct my health premiums", "Medicare premiums self-employed", "long-term care premium limit". Load after us-schedule-c-and-se-computation. Federal only.
+version: "1.0"
 jurisdiction: US
-tax_year: 2025
-last_updated: 2026-07-13
-source_checked: 2026-10-16
+tax_year: 2026
+last_updated: 2026-11-13
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
+type: computation
 ---
 
-# US Self Employed Health Insurance
+# US self-employed health insurance deduction, tax year 2026
 
-## Rates and thresholds
+> **Source-cited draft.** Built from 26 U.S.C. 162(l), 213 and 36B, Rev. Proc. 2025-32, Form 7206 and Schedule 1 (Form 1040) as printed for 2025, read on 2026-11-13. No accountant has reviewed it. All outputs must be reviewed by a qualified tax professional before filing.
 
-> Reviewed against the cited tax authorities by **a licensed accountant** on 2026-06-03.
-> Items flagged for further clarification are tracked separately and excluded here.
-> This block is generated from verified `skill_facts` — edit the facts, not the prose.
+**Answer first.** A self-employed person deducts health insurance premiums for themselves, their spouse, their dependants and any child under 27 at the end of 2026, as an adjustment to income (Schedule 1, line 17 on the 2025 form), not on Schedule C. The deduction cannot exceed the earned income from the business under which the plan is established: net profit, less the deductible half of self-employment tax, less the SEP, SIMPLE or qualified plan deduction for that business. No deduction is allowed for any month the person was **eligible** for a subsidized employer plan (their own, their spouse's, or a dependant's or under-27 child's employer), whether or not they enrolled. Long-term care premiums count only up to the 2026 age limit. The deduction does not reduce self-employment tax.
 
-### SE Health Insurance
+## Scope and who this is for
 
-- **≤40** — $480 (age 40 or less)  _(Rev. Proc. 2024-40.)_
-- **41-50** — $900 (41-50)  _(Rev. Proc. 2024-40.)_
-- **51-60** — $1,800 (51-60; discrepancy noted in prose: '2025 limit is $1,800 (51-60), not $1,790')  _(Rev. Proc. 2024-40.)_
-- **61-70** — $4,810 (61-70; discrepancy noted in prose: '2025 limit is $4,810 (61-70), not $4,770')  _(Rev. Proc. 2024-40.)_
-- **70+** — $6,020 (age > 70; discrepancy noted in prose: '2025 limit is $6,020 (age > 70), not $5,960')  _(Rev. Proc. 2024-40.)_
+In scope: the 162(l) deduction of one individual for tax year 2026 who has net profit from a Schedule C business (sole proprietor or single-member LLC disregarded for federal tax). The result goes to Schedule 1 and reduces adjusted gross income.
 
-## What this file is, and what it is not
+Out of scope, and where it goes:
 
-**This file is a content skill that loads on top of `us-tax-workflow-base` v0.1.** It computes the self-employed health insurance deduction under IRC §162(l) for sole proprietors and single-member LLCs for tax year 2025. It does not classify transactions (that is `us-sole-prop-bookkeeping`), compute Schedule C net profit or SE tax (that is `us-schedule-c-and-se-computation`), or compute the QBI deduction (that is `us-qbi-deduction`, which consumes this skill's output).
-
-**Where this skill fits in the pipeline:**
-
-```
-Bank statement / source data
-        ↓
-us-sole-prop-bookkeeping (classifies every transaction into a Schedule C line)
-        ↓
-us-schedule-c-and-se-computation (aggregates, computes net profit, computes SE tax)
-        ↓
-us-self-employed-health-insurance (THIS SKILL — computes SE health insurance deduction)
-  + us-self-employed-retirement (companion — computes retirement contribution deduction)
-        ↓
-us-qbi-deduction (QBI deduction, adjusted for SE health insurance and retirement)
-        ↓
-us-quarterly-estimated-tax (safe harbor for following year)
-```
-
-**Tax year coverage.** This skill is current for **tax year 2025** as of its currency date (April 2026). The §162(l) rules are largely unchanged from prior years. The age-based long-term care premium limits are from Rev. Proc. 2024-40.
-
-**The reviewer is the customer of this output.** The skill produces a SE health insurance deduction worksheet and a brief that the reviewing EA or CPA can audit and sign off on.
-
-## Section 1 — Scope statement
-
-This skill covers, for tax year 2025:
-
-- **The §162(l) deduction** — 100% of eligible health insurance premiums for self-employed individuals
-- **Eligible premium types** — medical, dental, vision, qualified long-term care (with age-based limits)
-- **Medicare premiums** — Parts A (voluntary only), B, D, Medigap supplemental
-- **COBRA continuation premiums** — eligibility under §162(l)
-- **The net SE earnings limitation** — deduction cannot exceed net SE earnings from the business
-- **The employer-sponsored plan eligibility bar** — month-by-month determination
-- **ACA Marketplace interaction** — §162(l) vs. Premium Tax Credit (PTC), cannot double-dip
-- **Self-only vs. family coverage** — allocating premiums when coverage includes family members
-- **Month-by-month coverage calculation** — when coverage type, eligibility, or premiums change mid-year
-- **The reporting position** — Schedule 1, Line 17 (adjustment to income, NOT on Schedule C)
-- **Long-term care premium limits** — age-based caps under §213(d)(10)
-
-This skill does NOT cover:
-
-- The Premium Tax Credit (PTC) computation on Form 8962 — flagged for reviewer
-- Health Savings Account (HSA) contributions and deductions — separate skill
-- Marketplace enrollment or qualification — out of scope
-- COBRA administration — out of scope
-- Long-term care policy qualification under §7702B — flagged for reviewer
-- Medical expense deduction on Schedule A (§213(a) — the 7.5% AGI floor itemized deduction) — separate from §162(l)
-- State health insurance mandates or credits (e.g., California §3853) — out of scope for this federal skill
-
-## Section 2 — Year coverage and currency
-
-**Tax year covered:** 2025 (returns due April 15, 2026, or October 15, 2026 with extension).
-
-**Currency date:** April 2026.
-
-**Legislation reflected:**
-- Internal Revenue Code §162(l) as in force for tax year 2025
-- IRC §213(d)(10) — long-term care premium limits (inflation-adjusted)
-- Affordable Care Act provisions as in force for 2025 (§36B Premium Tax Credit)
-- Rev. Proc. 2024-40 — 2025 inflation adjustments (long-term care premium limits)
-- Instructions for Form 7206 (2025) — Self-Employed Health Insurance Deduction (replaced the worksheet previously published in Pub. 535)
-- Form 1040 Schedule 1 Instructions (2025) — Line 17
-- IRS Publication 974 (2025) — Premium Tax Credit
-
-**Currency limitations:**
-- OBBBA (P.L. 119-21) did NOT change §162(l) or the self-employed health insurance deduction mechanics. The rules are unchanged from prior years.
-- The Inflation Reduction Act (IRA 2022) extended enhanced ACA Premium Tax Credits through 2025. Verify whether these were further extended beyond 2025 for future-year skills.
-
-## Section 3 — Year-specific figures table for tax year 2025
-
-### Long-term care premium limits (age-based, §213(d)(10))
-
-**Long-term care premium limits (age-based, §213(d)(10))**  _([Rev. Proc. 2024-40](https://www.irs.gov/instructions/i7206))_
-
-| Age at end of tax year | Maximum eligible LTC premium (2025) | Primary source |
-| --- | --- | --- |
-| 40 or under | $480 | Rev. Proc. 2024-40; IRC §213(d)(10) |
-| 41-50 | $900 | Rev. Proc. 2024-40 |
-| 51-60 | $1,800 | Rev. Proc. 2024-40 |
-| 61-70 | $4,810 | Rev. Proc. 2024-40 |
-| Over 70 | $6,020 | Rev. Proc. 2024-40 |
-
-### Other figures
-
-**Other figures**  _(IRC §162(l)(1)(A); IRC §162(l)(2)(A); Form 1040 Schedule 1 Instructions (2025); §36B as amended by IRA 2022)_
-
-| Figure | Value for TY2025 | Primary source |
-| --- | --- | --- |
-| §162(l) deduction percentage | 100% of eligible premiums | IRC §162(l)(1)(A) |
-| Net SE earnings limitation | Deduction ≤ net SE earnings from the trade or business | IRC §162(l)(2)(A) |
-| Schedule 1 reporting line | Line 17 | Form 1040 Schedule 1 Instructions (2025) |
-| ACA enhanced PTC availability | Yes (through 2025, per Inflation Reduction Act) | §36B as amended by IRA 2022 |
-
-## Section 4 — Primary source library
-
-### Statute (Internal Revenue Code, Title 26 USC)
-
-- **Statute list** — - **IRC §162(l)** — Special rules for health insurance costs of self-employed individuals - **IRC §162(l)(1)(A)** — Allowance of deduction: 100% of amounts paid for insurance for the taxpayer, spouse, and dependents - **IRC §162(l)(2)(A)** — Limitation: deduction cannot exceed taxpayer's earned income from the trade or business for which the insurance plan is established - **IRC §162(l)(2)(B)** — Coordination with employer-sponsored plans: no deduction for any month the taxpayer is eligible for employer-subsidized health coverage - **IRC §162(l)(5)** — S corporation shareholders: 2%+ shareholders treated as self-employed for this purpose (out of scope) - **IRC §162(l)(2)(C)** — Long-term care insurance included, subject to §213(d)(10) limits - **IRC §213(d)(1)** — Definition of medical care (for eligible premium types) - **IRC §213(d)(10)** — Limitation on long-term care premiums treated as medical care (age-based table) - **IRC §36B** — Premium Tax Credit (refundable, for Marketplace coverage) - **IRC §7702B** — Treatment of qualified long-term care insurance  _([Internal Revenue Code, Title 26 USC](https://www.law.cornell.edu/uscode/text/26/162))_
-
-### Treasury Regulations
-
-- **Treas. Reg. §1.162(l)-1** — (reserved; limited regulatory guidance — rely on statute and IRS publications)  _(Treas. Reg. §1.162(l)-1)_
-
-### IRS Guidance and Publications
-
-- **IRS Guidance list** — - **Rev. Proc. 2024-40** — 2025 inflation adjustments (LTC premium limits) - **IRS Publication 535 (2025)** — Business Expenses, Chapter 6 (Insurance) - **IRS Publication 974 (2025)** — Premium Tax Credit - **Form 7206** — Self-Employed Health Insurance Deduction (introduced 2023, used for 2025) - **Form 7206 Instructions (2025)** — Computation of SE health insurance deduction - **Form 8962** — Premium Tax Credit (PTC)  _(Rev. Proc. 2024-40; IRS Publication 535 (2025); IRS Publication 974 (2025); Form 7206; Form 7206 Instructions (2025); Form 8962)_
-
-## Section 5 — Eligibility rules
-
-### Who qualifies for the §162(l) deduction
-
-- **Eligible taxpayer categories** — The deduction is available to: 1. **Sole proprietors** who report business income on Schedule C 2. **Single-member LLC owners** (disregarded entity — Schedule C filer) 3. **Partners** in a partnership (out of scope for this skill) 4. **S corporation 2%+ shareholders** (out of scope for this skill) The taxpayer must have **net self-employment earnings** from the business for which the health insurance plan is established. The business must be the source of the insurance — the health insurance must be established under the business (or in the taxpayer's name as a self-employed individual).  _(IRC §162(l))_
-
-### The employer-sponsored plan eligibility bar
-
-- **Eligibility bar** — Under IRC §162(l)(2)(B), the §162(l) deduction is NOT available for any month in which the taxpayer was **eligible to participate** in a subsidized health plan maintained by: - The taxpayer's own employer (if the taxpayer also has W-2 employment) - The taxpayer's spouse's employer - The employer of the taxpayer's dependent, or of the taxpayer's child who was under age 27 at the end of 2025 **"Eligible to participate" means eligible, not actually enrolled.** If the taxpayer's spouse works for an employer that offers family health coverage and the taxpayer is eligible for that coverage, the taxpayer CANNOT take the §162(l) deduction — even if the taxpayer declined the employer coverage and purchased individual insurance instead. **Month-by-month test.** Eligibility is tested each month. If the spouse started a new job in July 2025 that offers health coverage with a 60-day waiting period, the taxpayer is ineligible for §162(l) starting the month the employer coverage becomes available (approximately September 2025), not the month the spouse started.  _([IRC §162(l)(2)(B)](https://www.irs.gov/instructions/i7206))_
-
-### What "subsidized" means
-
-- **Subsidized plan definition** — The employer plan must be subsidized — meaning the employer pays at least some portion of the premium. An employer plan where the employee pays 100% of the cost (no employer contribution) does NOT bar the §162(l) deduction. However, this is rare; most employer plans are at least partially subsidized.  _(IRC §162(l)(2)(B))_
-
-## Section 6 — Eligible premium types
-
-### Medical, dental, and vision insurance
-
-- **Eligible medical/dental/vision premiums** — All premiums for medical, dental, and vision insurance qualify for the §162(l) deduction. This includes: - Individual health insurance purchased through the ACA Marketplace (Healthcare.gov or state exchange) - Individual health insurance purchased off-exchange (directly from an insurer) - Dental insurance premiums - Vision insurance premiums - Short-term health insurance premiums (qualify as medical care under §213(d))  _(IRC §213(d))_
-
-### Qualified long-term care insurance
-
-- **LTC eligibility and example** — Long-term care insurance premiums are eligible but subject to the age-based limits under §213(d)(10). Only the portion of premiums up to the age-based limit is treated as medical care for §162(l) purposes. **Example:** A 55-year-old sole prop pays $3,000/year in long-term care premiums. The 2025 limit for age 51-60 is $1,800. Only $1,800 qualifies for the §162(l) deduction.  _([IRC §213(d)(10)](https://www.irs.gov/instructions/i7206))_
-
-### Medicare premiums
-
-The following Medicare premiums qualify for the §162(l) deduction:
-
-### Medicare premiums
-
-**Medicare premium eligibility table**
-
-| Medicare component | Eligible? | Notes |
-| --- | --- | --- |
-| Part A (hospital) — voluntary premiums | YES | Only if the taxpayer pays voluntary Part A premiums (most people get Part A premium-free) |
-| Part A — premium-free | N/A | No premium paid, nothing to deduct |
-| Part B (medical) | YES | The standard monthly premium ($185.00/month for 2025 at standard, higher with IRMAA) |
-| Part B — IRMAA surcharge | YES | The income-related monthly adjustment amount is a premium and qualifies |
-| Part D (prescription drug) | YES | Monthly premium for the Part D plan chosen |
-| Part D — IRMAA surcharge | YES | Same as Part B IRMAA |
-| Medigap (Medicare Supplement) | YES | Premiums for Plans A through N |
-| Medicare Advantage (Part C) | YES | Premiums for Medicare Advantage plans (many have $0 premium) |
-
-### Medicare premiums
-
-**Key point:** A sole prop who is on Medicare can deduct all Medicare premiums (B, D, Medigap) under §162(l) as long as they are not eligible for employer-sponsored coverage for those months and have net SE earnings.
-
-### COBRA continuation premiums
-
-- **COBRA eligibility** — COBRA premiums paid by the self-employed individual qualify for §162(l). COBRA is typically expensive (102% of the full group rate), making this deduction particularly valuable during transition periods.  _(IRC §162(l))_
-
-### Premiums that do NOT qualify
-
-- **Non-qualifying premium types** — - Workers' compensation insurance (this is a business expense on Schedule C, not §162(l)) - Disability insurance (not medical insurance under §213(d)) - Life insurance premiums - Premiums for policies that pay a fixed daily amount for hospitalization (indemnity plans) — these may not qualify as medical care - Premiums paid with pre-tax dollars from an employer plan (already excluded from income)  _(IRC §213(d))_
-
-## Section 7 — The net SE earnings limitation
-
-### The rule
-
-- **Net SE earnings limitation rule** — Under IRC §162(l)(2)(A), the §162(l) deduction cannot exceed the taxpayer's **earned income** derived from the trade or business with respect to which the health insurance plan is established. For sole props, Form 7206 starts from Schedule C net profit (Line 31), subtracts the deductible part of self-employment tax (Schedule 1, line 15, line 7 of the form) and any Schedule 1, line 16, self-employed SEP, SIMPLE, and qualified plans contribution for the same business (line 9). The deduction is capped at that result.  _([IRC §162(l)(2)(A)](https://www.irs.gov/pub/irs-pdf/f7206.pdf))_
-
-### What counts as "the trade or business"
-
-- **Multiple Schedule C attribution** — The health insurance must be established in connection with the taxpayer's trade or business. For a sole prop with one Schedule C, this is straightforward. For a sole prop with multiple Schedule Cs, the insurance must be associated with a specific business, and the net SE earnings limitation applies to THAT business's profit. **Conservative default:** If a sole prop has multiple Schedule Cs and the insurance is not clearly tied to one business, apply the limitation against the lowest-profit business (conservative). Flag for reviewer.  _(IRC §162(l)(2)(A))_
-
-### Interaction with the SE tax deduction
-
-- **No circular reduction** — The §162(l) deduction does NOT reduce net SE earnings for purposes of this limitation. The limitation is based on Schedule C net profit minus the deductible part of self-employment tax and minus SEP, SIMPLE, and qualified plan contributions for that business (Form 7206, lines 4 to 10).  _([IRC §162(l)(2)(A)](https://www.irs.gov/pub/irs-pdf/f7206.pdf))_
-
-### When net SE earnings are insufficient
-
-- **Excess premiums not carried forward** — If the §162(l) deduction exceeds net SE earnings, the deduction is limited to net SE earnings. The excess premiums are NOT carried forward (unlike home office expenses). They are simply lost as a §162(l) deduction. However, the excess premiums may be deductible as a medical expense on Schedule A (subject to the 7.5% AGI floor) if the taxpayer itemizes. The skill flags this alternative but does not compute the Schedule A medical expense deduction.  _(IRC §162(l)(2)(A))_
-
-## Section 8 — The ACA Premium Tax Credit interaction
-
-### The core conflict
-
-- **No double-dip rule** — For ACA Marketplace coverage, the taxpayer may be eligible for both: 1. The §162(l) self-employed health insurance deduction, AND 2. The §36B Premium Tax Credit (PTC) **You cannot double-dip.** For any given dollar of premium, the taxpayer can claim EITHER the §162(l) deduction OR the PTC, but not both. The IRS enforces this through the iterative computation on Form 7206 and Form 8962.  _(IRC §36B; Form 7206; Form 8962)_
-
-### How the interaction works
-
-The §162(l) deduction reduces AGI. Lower AGI can increase PTC eligibility (since PTC is based on household income as a percentage of the Federal Poverty Level). But if PTC increases, the net premium (premium minus PTC) decreases, which reduces the §162(l) deduction. This creates a circular computation.
-
-**The IRS solution:** An iterative calculation described in IRS Publication 974, Chapter 9 ("Self-Employed Individuals"). The taxpayer must:
-
-1. Estimate the §162(l) deduction and PTC simultaneously
-2. Iterate until the figures converge
-3. Report the final amounts on Form 7206 (SE health insurance deduction) and Form 8962 (PTC)
-
-### Practical approach for the skill
-
-- **Iterative PTC/§162(l) computation** — ``` Step 1: Compute provisional AGI WITHOUT the §162(l) deduction Step 2: Compute the PTC based on provisional AGI Step 3: Compute the §162(l) deduction = total premium − PTC (from Step 2) Step 4: Compute revised AGI = provisional AGI − §162(l) deduction (from Step 3) Step 5: Recompute PTC based on revised AGI (from Step 4) Step 6: Recompute §162(l) deduction = total premium − PTC (from Step 5) Step 7: Repeat Steps 4-6 until AGI, PTC, and §162(l) deduction converge (stabilize within $1) ``` **Conservative default:** If the iterative computation is complex or the inputs are incomplete, the skill defaults to §162(l) deduction ONLY (no PTC) and flags for reviewer to determine if PTC is more favorable.  _(IRS Publication 974 (2025), Chapter 9)_
-
-### When PTC is better than §162(l)
-
-- **PTC vs §162(l) comparison** — PTC is a refundable credit (reduces tax dollar-for-dollar, and can result in a refund). §162(l) is a deduction (reduces taxable income, value depends on marginal tax rate). For lower-income self-employed individuals, PTC may be worth more than §162(l). The skill flags this comparison for reviewer when the taxpayer's marginal rate is below 22%.
-
-### Advance PTC reconciliation
-
-- **APTC reconciliation flag** — If the taxpayer received advance PTC payments (APTC) through the Marketplace, Form 8962 must be filed to reconcile. The §162(l) deduction affects this reconciliation. If the taxpayer took too much APTC (based on lower projected income), they may owe money back. The skill flags APTC reconciliation but does not compute it.  _(Form 8962)_
-
-## Section 9 — Month-by-month computation
-
-### When month-by-month is required
-
-- **Triggers for month-by-month computation** — The deduction must be computed month-by-month when: 1. Coverage type changed mid-year (e.g., switched from individual to family plan) 2. Premium amount changed mid-year 3. Employer-plan eligibility changed mid-year (e.g., spouse got a new job with coverage) 4. The taxpayer started or stopped self-employment mid-year 5. PTC amounts varied by month
-
-### The computation
-
-- **Monthly computation factors** — For each month, determine: - Was the taxpayer self-employed? - Was the taxpayer eligible for an employer-sponsored plan? - What was the premium paid? - What PTC was received (if any)? Sum the eligible months to get the annual deduction. **Form 7206 handles this.** Form 7206 (Self-Employed Health Insurance Deduction), introduced for tax year 2023, structures the month-by-month computation. The skill produces the Form 7206 worksheet.  _(Form 7206)_
-
-### Coverage for the taxpayer, spouse, and dependents
-
-- **Child under 27 rule** — The §162(l) deduction covers premiums for: - The taxpayer - The taxpayer's spouse - The taxpayer's dependents (children under 27 at end of tax year, regardless of dependency status for §162(l) purposes per §162(l)(1)(D)) **The "child under 27" rule:** For §162(l) purposes only, a child of the taxpayer who has not attained age 27 as of the end of the tax year is treated as a dependent, even if the child is not actually a dependent for other tax purposes (e.g., the child has their own income and files their own return). This is broader than the general dependency rules.  _(IRC §162(l)(1)(D))_
-
-## Section 10 — Reporting position
-
-### Where the deduction appears
-
-- **Schedule 1 Line 17 reporting** — The §162(l) deduction is reported on **Schedule 1 (Form 1040), Line 17** — "Self-employed health insurance deduction." This is an **adjustment to gross income** (above-the-line deduction). It reduces AGI.  _(Form 1040 Schedule 1 Instructions (2025))_
-
-### Where the deduction does NOT appear
-
-- **Not on Schedule C or Schedule A** — - **NOT on Schedule C.** Health insurance premiums for the self-employed individual are not a business expense on Schedule C. They are a personal deduction that happens to be available because of self-employment status. (Premiums for employees' health insurance ARE on Schedule C Line 14, but that is a different deduction.) - **NOT on Schedule A.** The §162(l) deduction is separate from the itemized medical expense deduction. Premiums deducted under §162(l) cannot also be deducted on Schedule A.
-
-### Form 7206
-
-- **Form 7206 line structure** — Generally the worksheet in the Form 1040 instructions can be used, but Form 7206 must be used if you had more than one source of income subject to self-employment tax, you file Form 2555, or you are using amounts paid for qualified long-term care insurance. The form walks through: - Line 1: Health insurance premiums (excluding months eligible for a subsidized employer plan, and excluding long-term care) - Line 2: Qualified long-term care premiums (age-based limit) - Line 3: Add lines 1 and 2 - Lines 4-13: Earned-income limitation (net profit less the deductible part of self-employment tax and SEP, SIMPLE, and qualified plan contributions) - Line 14: Self-employed health insurance deduction → flows to Schedule 1, Line 17  _([Form 7206](https://www.irs.gov/pub/irs-pdf/f7206.pdf))_
-
-## Section 11 — Interaction with QBI
-
-- **QBI reduction formula** — The §162(l) deduction reduces QBI. Under IRC §199A(c)(1), QBI is net income from the qualified trade or business, reduced by deductions attributable to that trade or business. The SE health insurance deduction is attributable to the trade or business under §62(a)(1). ``` QBI = Schedule C net profit − Deductible half of SE tax − SE health insurance deduction (THIS SKILL's output) − Retirement contributions ``` This means a larger SE health insurance deduction reduces QBI, which reduces the QBI deduction (20% of QBI). The net effect is still favorable — the §162(l) deduction saves more tax than the reduced QBI deduction costs.  _(IRC §199A(c)(1); IRC §62(a)(1))_
-
-## Section 12 — Conservative defaults table
-
-**Conservative defaults table**
-
-| Ambiguity | Conservative default |
+| Topic | Skill |
 | --- | --- |
-| Whether taxpayer is eligible for employer-sponsored plan | Assume eligible (no §162(l) deduction); ask for clarification |
-| Whether spouse's employer offers coverage | Assume yes (bars §162(l)); ask for clarification |
-| Premium amount not documented | $0 deduction; ask for Form 1095-A/B/C or premium statements |
-| Whether insurance is medical vs. disability or other | Assume non-qualifying unless premium statement confirms medical/dental/vision/LTC |
-| Long-term care premium exceeds age-based limit | Cap at the age-based limit; deduct only the eligible portion |
-| PTC vs. §162(l) choice unclear | Default to §162(l) only (more common for self-employed); flag PTC alternative for reviewer |
-| APTC received but amount unknown | Flag for reviewer — Form 8962 reconciliation required |
-| Coverage months unclear (mid-year change) | Deduct only for months with documented coverage and confirmed eligibility |
-| Multiple Schedule Cs — which business supports the insurance? | Attribute to the business with the highest net profit (maximizes the net SE earnings limitation); flag for reviewer |
-| Medicare premium amounts not stated | Use standard Part B premium ($185.00/month for 2025); flag if IRMAA may apply |
+| Classifying the bank and card transactions | `us-sole-prop-bookkeeping` |
+| Schedule C net profit and Schedule SE (the deductible half) | `us-schedule-c-and-se-computation` |
+| The SEP, SIMPLE or solo 401(k) deduction that reduces the limit | `us-self-employed-retirement` |
+| Form 8962, the premium tax credit and its repayment | `us-premium-tax-credit-8962` |
+| QBI, which this deduction reduces | `us-qbi-deduction` |
+| Putting the return together in the right order | `us-federal-return-assembly` |
+| Partners and S corporation shareholders who own more than 2% | refer (see the refusal table) |
 
-## Section 13 — Topical refusal catalogue
+## Ask the client first
 
-- **R-SEHI-PTC — Premium Tax Credit computation** — Trigger: The taxpayer asks for the full PTC computation on Form 8962. Output: "The Premium Tax Credit computation requires household income as a percentage of the Federal Poverty Level, benchmark silver plan premiums, and APTC reconciliation. This skill handles the §162(l) deduction side of the interaction but does not fully compute Form 8962. Please consult a CPA or Enrolled Agent for PTC optimization."  _(R-SEHI-PTC)_
-- **R-SEHI-HSA — Health Savings Account** — Trigger: The taxpayer asks about HSA contributions or deductions. Output: "HSA contributions for self-employed individuals are deductible on Schedule 1 Line 13 (separate from the §162(l) deduction on Line 17). HSA rules (§223) including HDHP requirements, contribution limits, and the last-month rule are outside the scope of this skill. The 2025 HSA contribution limits are $4,300 (self-only) and $8,550 (family). Please consult a CPA or financial advisor."  _(R-SEHI-HSA)_
-- **R-SEHI-SCHEDULE-A — Medical expense deduction on Schedule A** — Trigger: The taxpayer's §162(l) deduction is limited by net SE earnings, and the excess premiums could be deductible on Schedule A. Output: "Premiums not deductible under §162(l) may be deductible as medical expenses on Schedule A, subject to the 7.5% AGI floor. This skill does not compute Schedule A medical expenses. Please consult a CPA or Enrolled Agent."  _(R-SEHI-SCHEDULE-A)_
-- **R-SEHI-COBRA-ADMIN — COBRA eligibility and administration** — Trigger: Questions about COBRA election periods, qualifying events, or administrative requirements. Output: "COBRA administration (qualifying events, election periods, notification requirements) is an employment law question, not a tax computation. The skill confirms that COBRA premiums paid by the self-employed individual qualify for §162(l) if other eligibility requirements are met. For COBRA administration, consult an employment attorney or benefits administrator."  _(R-SEHI-COBRA-ADMIN)_
-- **R-SEHI-LTC-QUALIFIED — Whether a long-term care policy qualifies under §7702B** — Trigger: The taxpayer has a long-term care policy and wants to confirm it is a qualified policy. Output: "Whether a long-term care policy is a qualified long-term care insurance contract under §7702B depends on the policy terms (it must not pay for expenses reimbursable by Medicare, must be guaranteed renewable, etc.). This skill assumes the policy is qualified if the insurer represents it as such. For policy qualification, consult the insurer or an insurance professional."  _(R-SEHI-LTC-QUALIFIED)_
+1. **Coverage by month for 2026:** who was covered (self, spouse, dependants, children under 27 at 31 December 2026), the premium paid for each month, and the insurer statements or Form 1095-A, 1095-B or 1095-C.
+2. **Employer plan eligibility by month:** for each month, could the person join a subsidized health plan through their own job, their spouse's job, or the job of a dependant or under-27 child? Eligible counts even if declined. Ask separately about plans that include long-term care cover.
+3. **Marketplace coverage:** was the plan bought on HealthCare.gov or a state exchange, and was advance premium tax credit paid?
+4. **Long-term care:** is the policy a qualified long-term care insurance contract, what was paid, and the age of each insured person at 31 December 2026.
+5. **Medicare:** Part B, Part D, Medigap and Medicare Advantage premiums, and any voluntary Part A premium. The Social Security benefit statement (SSA-1099) shows Part B and Part D amounts withheld.
+6. **The business:** which business the plan is established under (if more than one Schedule C), and the SEP, SIMPLE or solo 401(k) deduction for that business.
+7. **Other filings:** any Form 2555 (foreign earned income), and whether the spouse is also self-employed.
 
-## Section 14 — Reviewer attention thresholds
+## The method, step by step
 
-**Reviewer attention thresholds table**
+### Rates, bands and thresholds
 
-| Threshold | Trigger | Rationale |
+| Item | Amount, 2026 | Source |
 | --- | --- | --- |
-| §162(l) deduction > $20,000 | Always flag | Large deduction; verify premium documentation |
-| §162(l) deduction limited by net SE earnings | Always flag | Taxpayer losing part of the deduction; consider Schedule A alternative |
-| PTC interaction present | Always flag | Iterative computation required; verify Form 8962 reconciliation |
-| APTC received | Always flag | Reconciliation on Form 8962 may result in tax owed |
-| Employer eligibility bar invoked for some months | Always flag | Month-by-month computation needed; verify eligibility dates |
-| Long-term care premiums claimed | Always flag | Age-based limit applies; verify policy is qualified under §7702B |
-| Medicare premiums claimed | Always flag | Verify Part B amount, IRMAA status, and voluntary Part A status |
-| Spouse's employer offers coverage | Always flag | This bars §162(l) for months of eligibility |
-| Coverage includes child approaching age 27 | Always flag | Age 27 rule is tested at end of tax year — verify child's age |
+| Share of eligible premiums deductible | 100%, up to the earned income limit | [26 U.S.C. 162(l)(1) and (2)(A)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVI-sec162.htm) |
+| Child covered whatever their dependency status, if not yet this age at year end | 27 | [26 U.S.C. 162(l)(1)(D)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVI-sec162.htm) |
+| Eligible long-term care premium, age 40 or less at year end | USD 500 | [Rev. Proc. 2025-32, section 4.27](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
+| Eligible long-term care premium, age 41 to 50 | USD 930 | [Rev. Proc. 2025-32, section 4.27](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
+| Eligible long-term care premium, age 51 to 60 | USD 1,860 | [Rev. Proc. 2025-32, section 4.27](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
+| Eligible long-term care premium, age 61 to 70 | USD 4,960 | [Rev. Proc. 2025-32, section 4.27](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
+| Eligible long-term care premium, over 70 | USD 6,200 | [Rev. Proc. 2025-32, section 4.27](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
+| Medical expense floor on Schedule A, for premiums the limit cuts off | 7.5% of adjusted gross income | [26 U.S.C. 213(a)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVII-sec213.htm) |
 
-## Section 15 — Worked examples
+The long-term care limits are per insured person, by that person's age at the end of 2026. The 2026 Medicare premium amounts are not restated here: use the amounts on the person's own statements.
 
-### Example 1 — Basic SE health insurance deduction
+### Step 1: list the eligible premiums by month (Form 7206 lines 1 to 3)
 
-**Taxpayer:** Maria Hernandez, single, age 34, freelance UX designer, Schedule C net profit $62,644. Individual health insurance purchased off-exchange: $700/month = $8,400/year. No employer plan eligibility. No PTC.
+1. Take each month of 2026. Drop any month in which the person was eligible to participate in a subsidized plan of any employer of the person, their spouse, a dependant or an under-27 child. The test is eligibility, not enrolment. It is run separately for plans with long-term care cover and plans without it, so eligibility for an employer medical plan does not bar long-term care premiums, and the reverse. Source: [26 U.S.C. 162(l)(2)(B)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVI-sec162.htm).
+2. For the remaining months, add the premiums for medical, dental and vision cover for the person, spouse, dependants and under-27 children (line 1). Marketplace and off-exchange policies, short-term health policies, Medicare Part B, Part D (including any income-related surcharge), Medigap, Medicare Advantage and voluntary Part A premiums count. COBRA premiums the person pays count.
+3. For a qualified long-term care contract, add the smaller of the premium paid and the 2026 age limit, per insured person (line 2). Source: [26 U.S.C. 162(l)(2)(C)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVI-sec162.htm) and [Rev. Proc. 2025-32](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf).
+4. With Marketplace cover and the premium tax credit, only the premium the person bears counts, and the credit and this deduction depend on each other (a lower AGI raises the credit, which lowers the premium borne). Resolve them together by the Pub. 974 simplified or iterative method in `us-premium-tax-credit-8962`. A dollar of premium is never both deducted and credited.
+5. Line 3 = line 1 + line 2.
 
-```
-Annual premium:           $8,400
-Employer plan test:       Not eligible for any employer plan (all 12 months)
-Net SE earnings limit:    $62,644 (Schedule C net profit)
-§162(l) deduction:        $8,400 (within limit)
+### Step 2: the earned income limit (Form 7206 lines 4 to 13)
 
-Reported on: Schedule 1, Line 17 = $8,400
-Form 7206: completed, 12 months eligible
-```
+6. Line 4: net profit (Schedule C line 31) from the business under which the plan is established.
+7. Lines 5 to 7: with more than one business, the deductible half of self-employment tax (Schedule 1, line 15) is shared in proportion to net profits; with one business, line 7 is the whole deductible half.
+8. Line 9: the SEP, SIMPLE or qualified plan deduction (Schedule 1, line 16) for that business. Compute it first in `us-self-employed-retirement`. The health insurance deduction is not subtracted in that computation, so there is no loop.
+9. Line 10 = line 4 − line 7 − line 9. Line 12 takes out any Form 2555 exclusion attributable to that income. Line 13 is the limit. Source: [Form 7206](https://www.irs.gov/pub/irs-pdf/f7206.pdf).
 
-### Example 2 — Deduction limited by net SE earnings
+### Step 3: the deduction
 
-**Taxpayer:** Alex Rivera, single, age 28, freelance graphic designer, Schedule C net profit $12,000. ACA Marketplace plan: $450/month = $5,400/year. No PTC claimed.
+10. Line 14 = the smaller of line 3 and line 13. Enter it on Schedule 1 (line 17 on the 2025 form). Source: [Schedule 1 (Form 1040)](https://www.irs.gov/pub/irs-pdf/f1040s1.pdf).
+11. Premiums over the limit are not carried forward. They can be medical expenses on Schedule A if the person itemizes, subject to the 7.5% floor. Premiums allowed under 162(l) are not counted again on Schedule A. Source: [26 U.S.C. 162(l)(3)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVI-sec162.htm).
+12. The deduction does not reduce net earnings from self-employment: Schedule SE still starts from full net profit. Source: [26 U.S.C. 162(l)(4)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVI-sec162.htm).
+13. Pass the deduction to `us-qbi-deduction`: it is attributable to the business and reduces qualified business income. It also lowers the income used for the estimated tax in `us-quarterly-estimated-tax`.
 
-```
-Annual premium:           $5,400
-Net SE earnings limit:    $12,000
-§162(l) deduction:        $5,400 (within limit)
+### Form 7206 or the worksheet
 
-If Schedule C net profit were only $4,000:
-  §162(l) deduction:      $4,000 (limited by net SE earnings)
-  Excess $1,400:          Not deductible under §162(l)
-                          May be deductible on Schedule A if itemizing (7.5% AGI floor)
-```
+The Schedule 1 worksheet in the Form 1040 instructions can be used for a simple case. Form 7206 is required if the person had more than one source of income subject to self-employment tax, files Form 2555, or uses amounts paid for qualified long-term care insurance. Source: [Form 7206](https://www.irs.gov/pub/irs-pdf/f7206.pdf).
 
-### Example 3 — Mid-year employer plan eligibility
+## Boundary and exception table
 
-**Taxpayer:** Sarah Kim, MFJ, age 45, freelance financial advisor. Spouse started W-2 job on July 1, 2025 with employer-sponsored family health plan (coverage effective August 1, 2025).
-
-```
-January-July (7 months):  Not eligible for employer plan → §162(l) eligible
-August-December (5 months): Eligible for spouse's employer plan → §162(l) BARRED
-
-Individual plan premium: $900/month
-Eligible months: 7
-§162(l) deduction: 7 × $900 = $6,300
-
-August-December premiums ($4,500): NOT deductible under §162(l)
-  (Sarah may want to drop individual plan and enroll in spouse's employer plan)
-```
-
-### Example 4 — Medicare premiums
-
-**Taxpayer:** Robert Garcia, single, age 68, freelance consultant, Schedule C net profit $95,000. Medicare Part B: $185.00/month. Medigap Plan F: $220/month. Part D: $35/month. No employer plan eligibility.
-
-```
-Part B:     12 × $185.00 = $2,220
-Medigap:    12 × $220.00 = $2,640
-Part D:     12 × $35.00  = $420
-                          -------
-Total:                     $5,280
-
-Net SE earnings limit: $95,000
-§162(l) deduction: $5,280
-
-Reported on: Schedule 1, Line 17 = $5,280
-```
-
-### Example 5 — Long-term care with age-based limit
-
-**Taxpayer:** Lisa Park, MFJ, age 61, Schedule C net profit $180,000. Medical insurance: $12,000/year. Long-term care premium: $6,000/year.
-
-```
-Medical insurance:     $12,000 (fully eligible)
-LTC premium paid:      $6,000
-LTC age-based limit:   $4,810 (age 61-70)
-LTC eligible:          $4,810
-
-Total §162(l) deduction: $12,000 + $4,770 = $16,770
-Excess LTC ($1,230):     Not deductible under §162(l); may qualify on Schedule A
-```
-
-## Section 16 — Edge cases
-
-1. **Net SE earnings are zero or negative.** No §162(l) deduction. Premiums may be deductible on Schedule A as medical expenses (7.5% AGI floor). The taxpayer gets no above-the-line benefit.
-
-2. **Taxpayer has both SE income and W-2 income with employer health plan.** The employer plan eligibility bars §162(l) for months the taxpayer is eligible. If the taxpayer is eligible for the employer plan all year, §162(l) = $0, even if the taxpayer did not enroll.
-
-3. **COBRA premiums after leaving W-2 employment.** COBRA premiums qualify for §162(l) IF the taxpayer is now self-employed and not eligible for another employer plan. The months on COBRA count as eligible months for §162(l).
-
-4. **ACA Marketplace with APTC, switching to §162(l) mid-year.** If the taxpayer received APTC for part of the year and wants to claim §162(l) for the rest, the iterative computation applies to the §162(l) months, and Form 8962 reconciliation applies to the APTC months. Flag for reviewer.
-
-5. **Spouse is self-employed too.** Each spouse can take their own §162(l) deduction from their own Schedule C net profit for premiums on their own coverage. If both are covered under a single family policy, the premiums must be allocated between them. Allocation method: proportional to each spouse's coverage cost, or equally if costs cannot be separated.
-
-6. **Child turns 27 during the tax year.** For §162(l), the child is treated as a dependent if they have not attained age 27 as of the END of the tax year (December 31, 2025). If the child turns 27 on or before December 31, 2025, their coverage premiums do not qualify for the full year. If the child turns 27 after December 31 (i.e., in 2026), their 2025 premiums qualify for all 12 months.
-
-7. **Part-year self-employment.** If the taxpayer was self-employed only for part of the year, the net SE earnings limitation applies to actual net SE earnings (not annualized). Only months of self-employment with simultaneous health insurance qualify.
-
-8. **Insurance purchased in spouse's name.** The policy does not have to be in the sole proprietor's name. Insurance purchased in the spouse's name qualifies for §162(l) if it covers the self-employed taxpayer and the business effectively establishes or pays for the coverage.
-
-9. **Health insurance premiums paid through the business bank account vs. personal.** The source of payment does not matter for §162(l) eligibility — the deduction is the same whether paid from a business or personal account. However, the premiums should NOT be deducted on Schedule C (they are Schedule 1 Line 17 items).
-
-10. **Taxpayer eligible for employer plan but the plan is not subsidized.** If the employer plan requires the employee to pay 100% of the premium (employer contributes $0), the employer plan eligibility bar does NOT apply. The taxpayer can claim §162(l). This is uncommon but possible.
-
-## Section 17 — Test suite
-
-### Test 1 — Full year, straightforward
-
-**Input:** Schedule C net profit $80,000; individual health insurance $600/month ($7,200/year); no employer plan eligibility; no PTC.
-**Expected:** §162(l) deduction = $7,200. Schedule 1 Line 17 = $7,200.
-
-### Test 2 — Limited by net SE earnings
-
-**Input:** Schedule C net profit $5,000; individual health insurance $500/month ($6,000/year); no employer plan eligibility.
-**Expected:** §162(l) deduction = $5,000 (limited by net SE earnings). Excess $1,000 not deductible under §162(l); flag Schedule A alternative.
-
-### Test 3 — Mid-year employer plan bar
-
-**Input:** Schedule C net profit $60,000; health insurance $800/month; eligible for spouse's employer plan July-December (6 months).
-**Expected:** Eligible months = January-June (6 months). §162(l) deduction = 6 × $800 = $4,800.
-
-### Test 4 — Medicare premiums
-
-**Input:** Schedule C net profit $50,000; Medicare Part B $185/month; Medigap $150/month; Part D $40/month; no employer plan.
-**Expected:** Total premiums = 12 × ($185 + $150 + $40) = $4,500. §162(l) deduction = $4,500.
-
-### Test 5 — Long-term care with age limit
-
-**Input:** Schedule C net profit $100,000; medical insurance $10,000/year; LTC premium $5,000/year; age 55; no employer plan.
-**Expected:** LTC limit (age 51-60) = $1,800. Eligible LTC = $1,800. Total §162(l) = $10,000 + $1,790 = $11,790.
-
-### Test 6 — Net SE earnings = $0
-
-**Input:** Schedule C net profit $0 (break-even year); health insurance $500/month ($6,000/year).
-**Expected:** §162(l) deduction = $0 (limited by net SE earnings). Entire $6,000 not deductible under §162(l). Flag Schedule A.
-
-### Test 7 — Family coverage with child under 27
-
-**Input:** Schedule C net profit $120,000; family health insurance (self + spouse + 25-year-old child) $1,800/month ($21,600/year); no employer plan.
-**Expected:** Child is under 27 at end of year → qualifies. §162(l) deduction = $21,600 (within net SE earnings limit).
-
-## Section 18 — PROHIBITIONS
-
-- **Prohibitions list** — 1. **NEVER deduct SE health insurance premiums on Schedule C.** The deduction is on Schedule 1, Line 17. Putting it on Schedule C would double-count it (once as a business expense, once as an above-the-line deduction) and would incorrectly reduce net SE earnings for SE tax purposes. 2. **NEVER allow the §162(l) deduction for any month the taxpayer was eligible for an employer-sponsored plan.** Eligible means eligible, not enrolled. This includes the spouse's employer plan. 3. **NEVER allow both §162(l) and PTC on the same dollar of premium.** The deduction and the credit are coordinated — the §162(l) deduction applies only to the net premium after PTC. 4. **NEVER exceed the net SE earnings limitation.** The §162(l) deduction cannot exceed Schedule C net profit from the business with respect to which the plan is established. Excess premiums are lost as §162(l) deductions. 5. **NEVER deduct long-term care premiums in excess of the age-based limit.** Only the portion up to the §213(d)(10) limit qualifies for §162(l). 6. **NEVER carry forward excess §162(l) deductions.** Unlike the home office deduction, there is no carryforward for §162(l). Excess premiums are lost for §162(l) purposes (though they may be deductible on Schedule A). 7. **NEVER treat disability insurance premiums as eligible for §162(l).** Disability insurance is not medical care under §213(d). 8. **NEVER ignore the month-by-month computation when eligibility changed mid-year.** A full-year computation when the taxpayer was only eligible for part of the year will overstate the deduction. 9. **NEVER treat the §162(l) deduction as reducing net SE earnings for SE tax purposes.** The SE health insurance deduction is an income tax adjustment, not a SE tax adjustment. Schedule SE uses Schedule C net profit, not AGI. 10. **NEVER skip Form 7206 when it is required.** Form 7206 must be used if you had more than one source of income subject to self-employment tax, you file Form 2555, or you are using amounts paid for qualified long-term care insurance. The deduction flows from Form 7206 to Schedule 1 Line 17.  _([IRC §162(l); IRC §213(d); Form 7206](https://www.irs.gov/instructions/i7206))_
-
-## Section 19 — Cross-skill references
-
-**Upstream skill table**
-
-| Upstream skill | Data consumed |
+| Situation | Treatment |
 | --- | --- |
-| `us-schedule-c-and-se-computation` | Schedule C net profit (Line 31), for net SE earnings limitation |
+| Eligible for spouse's subsidized employer plan, declined it | No deduction for those months |
+| Employer plan where the employer pays nothing (unsubsidized) | Does not bar the deduction |
+| Employer medical plan available, long-term care bought privately | The bar is applied separately: the long-term care premium can still count |
+| Spouse's new job, coverage available after a waiting period | The bar starts with the first month coverage is available, not the hire date |
+| Child turns 27 on or before 31 December 2026 | Not covered by the under-27 rule for 2026; counts only if a dependant |
+| Child is 26 at 31 December 2026 and files their own return | Covered for all of 2026 |
+| Net profit is zero or a loss | No deduction; premiums may go to Schedule A |
+| Premiums paid from the business bank account | Still Schedule 1, never Schedule C |
+| Premiums for employees (not the owner) | Schedule C line 14, a different deduction |
+| Policy in the spouse's name | Can count if it covers the self-employed person and the plan is established under the business |
+| Both spouses self-employed, one family policy | Each deducts against their own business; split the premium by the cost of each spouse's cover, or equally if it cannot be separated |
+| Part-year self-employment | Only months of self-employment with cover; the limit uses actual earned income, not annualized |
+| Premium tax credit for some months, deduction for others | Pub. 974 method for the credit months; flag for review |
+| Disability, life, or fixed-amount hospital indemnity policies | Not medical insurance: no deduction |
+| Workers' compensation cover | A Schedule C line 15 business expense, not this deduction |
+| Premiums already paid with pre-tax employer money | Already excluded from income: no deduction |
 
-## Section 19 — Cross-skill references
+### Defaults when a fact is missing
 
-**Downstream skill table**
-
-| Downstream skill | Data provided |
+| Missing fact | Default, and flag it |
 | --- | --- |
-| `us-qbi-deduction` | SE health insurance deduction amount (reduces QBI) |
-| `us-quarterly-estimated-tax` | SE health insurance deduction (reduces estimated tax liability) |
-| `us-federal-return-assembly` | SE health insurance deduction for Schedule 1 Line 17 |
-| `us-ca-return-assembly` | SE health insurance deduction for federal return portion |
+| Whether any employer plan was available that month | Treat the month as barred; ask |
+| Whether the spouse's employer offers cover | Treat as offered; ask |
+| Premium amounts | Zero until a statement or Form 1095 is seen |
+| Whether a policy is medical or another type | Not medical until the statement shows it |
+| Long-term care premium above the age limit | Cap at the limit |
+| Premium tax credit position unclear | Deduction only; flag the Form 8962 interaction |
+| Advance premium tax credit received, amount unknown | Stop until Form 1095-A is seen |
+| Months of cover unclear | Count only documented months |
+| More than one Schedule C, plan not clearly under one | Use the business under which the policy was set up; if none is shown, the lower-profit business (smaller limit), and flag it |
+| Medicare premium amounts | Take them from the SSA-1099 or plan statements; do not assume a standard amount |
 
-## Disclaimer
+### Red flags for the reviewer
 
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
+| Flag | Why it matters |
+| --- | --- |
+| Deduction above USD 20,000 | Check every premium statement |
+| Deduction cut by the earned income limit | Schedule A may help; record the cut |
+| Marketplace cover with advance credit | Form 8962 reconciliation; the two amounts depend on each other |
+| Employer plan available for some months | Month-by-month working paper needed |
+| Long-term care premiums claimed | Age limit applied, and the policy is a qualified contract |
+| Medicare premiums claimed | Amounts match SSA-1099 and plan statements, including any surcharge |
+| A covered child aged 26 or 27 | Age at 31 December 2026 checked |
+
+## Worked cases
+
+**Case 1: long-term care cap and the earned income limit.** A single designer aged 55 has 2026 Schedule C net profit of USD 30,000, no wages and no employer plan in any month. She pays USD 9,600 of medical premiums and USD 3,000 for a qualified long-term care policy, and makes a USD 4,000 SEP contribution.
+
+The deductible half of self-employment tax is USD 30,000 x 92.35% x 15.3% / 2 = USD 2,119.43. Line 3: USD 9,600 + the smaller of USD 3,000 and the age 51 to 60 limit of USD 1,860 = USD 11,460. Line 13: USD 30,000 − USD 2,119.43 − USD 4,000 = USD 23,880.57. The deduction is USD 11,460. The other USD 1,140 of long-term care premium is not deductible here; it may be a Schedule A medical expense.
+
+```oa-check
+name: Long-term care cap and earned income limit (2026)
+inputs:
+  net_profit: 30000
+  medical_premiums: 9600
+  ltc_paid: 3000
+  ltc_limit_age_51_60: 1860
+  sep_deduction: 4000
+steps:
+  - half_se: net_profit * 0.9235 * 0.153 / 2
+  - line_3: medical_premiums + min(ltc_paid, ltc_limit_age_51_60)
+  - line_13: net_profit - half_se - sep_deduction
+  - deduction: min(line_3, line_13)
+expected:
+  half_se: 2119.43
+  line_3: 11460
+  line_13: 23880.57
+  deduction: 11460
+```
+
+**Case 2: employer plan from September, and the limit bites.** A married sole proprietor has 2026 net profit of USD 6,000 and no retirement plan. His individual policy costs USD 800 a month all year. His spouse's subsidized employer plan became available to him on 1 September 2026, and he kept his own policy.
+
+January to August are eligible months: 8 x USD 800 = USD 6,400. September to December are barred. The deductible half of self-employment tax is USD 6,000 x 92.35% x 15.3% / 2 = USD 423.89, so the limit is USD 5,576.11. The deduction is USD 5,576.11. USD 823.89 of the eligible premiums, and all USD 3,200 for the barred months, may be Schedule A medical expenses if the couple itemizes.
+
+```oa-check
+name: Month-by-month bar and earned income limit (2026)
+inputs:
+  net_profit: 6000
+  monthly_premium: 800
+  eligible_months: 8
+steps:
+  - line_3: monthly_premium * eligible_months
+  - half_se: net_profit * 0.9235 * 0.153 / 2
+  - line_13: net_profit - half_se
+  - deduction: min(line_3, line_13)
+  - cut_by_limit: line_3 - deduction
+expected:
+  line_3: 6400
+  half_se: 423.89
+  line_13: 5576.11
+  deduction: 5576.11
+  cut_by_limit: 823.89
+```
+
+## When to refuse or refer
+
+| Code | Situation | Action |
+| --- | --- | --- |
+| R-SEHI-PTC | The client wants Form 8962 computed, or the credit and the deduction do not converge | Use `us-premium-tax-credit-8962`; refer if it does not settle |
+| R-SEHI-HSA | Health savings account contributions | A separate deduction (Form 8889, Schedule 1 line 13 on the 2025 form), outside this skill |
+| R-SEHI-SCHA | Premiums cut off by the limit, client itemizes | Schedule A medical expenses are outside this skill |
+| R-SEHI-COBRA | COBRA election periods and qualifying events | Employment law, not tax: refer to the plan administrator |
+| R-SEHI-LTCQ | Whether a long-term care policy is a qualified contract under section 7702B | Rely on the insurer's statement; refer a doubtful policy |
+| R-SEHI-SCORP | S corporation shareholder owning more than 2%, or a partner | Different reporting (wages or guaranteed payments): refer |
+
+Never put the owner's premiums on Schedule C. Never allow a month in which the person was eligible for a subsidized employer plan. Never let the premium tax credit and the deduction cover the same dollar of premium. Never carry an excess forward. Never skip Form 7206 when it is required.
+
+## Filing and payment
+
+The deduction is claimed on the 2026 Form 1040, Schedule 1, with Form 7206 attached when it is required. The return is due **15 April 2027**; Form 4868 extends filing to 15 October 2027, not payment. Form 8962 goes with the return whenever advance premium tax credit was paid. Keep the monthly working paper, insurer statements and Forms 1095 with the file.
+
+## Completion checklist
+
+- Every month of 2026 tested for employer plan eligibility, separately for long-term care cover.
+- Children's ages at 31 December 2026 checked against 27.
+- Long-term care premiums capped per person at the 2026 age limit.
+- Retirement deduction computed first and entered on Form 7206 line 9.
+- Deduction is the smaller of line 3 and line 13; any excess noted for Schedule A.
+- Nothing for the owner's premiums on Schedule C, and Schedule SE uses full net profit.
+- Marketplace cover passed to the Form 8962 skill.
+- Amount passed to the QBI and estimated tax computations.
+
+## Sources
+
+| Source | URL | Read on |
+| --- | --- | --- |
+| 26 U.S.C. 162 (govinfo). Read for subsection (l): (1) who is covered and the under-27 child, (2)(A) earned income limit, (2)(B) the monthly bar applied separately to long-term care plans, (2)(C) long-term care premiums, (3) no double count on Schedule A, (4) no effect on self-employment tax. | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVI-sec162.htm | 2026-11-13 |
+| 26 U.S.C. 213 (govinfo). Read for (a) the 7.5% floor and (d)(10) eligible long-term care premiums. | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVII-sec213.htm | 2026-11-13 |
+| Rev. Proc. 2025-32. Read for section 4.27, the 2026 eligible long-term care premium limits ($500, $930, $1,860, $4,960, $6,200). | https://www.irs.gov/pub/irs-drop/rp-25-32.pdf | 2026-11-13 |
+| Form 7206 (2025). Read for lines 1 to 14 and when the form is required. | https://www.irs.gov/pub/irs-pdf/f7206.pdf | 2026-11-13 |
+| Schedule 1 (Form 1040) 2025. Read for lines 13, 15, 16 and 17. | https://www.irs.gov/pub/irs-pdf/f1040s1.pdf | 2026-11-13 |
+| 26 U.S.C. 36B (govinfo). Read for the premium tax credit that interacts with this deduction. | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapA-partIV-subpartC-sec36B.htm | 2026-11-13 |
+
+Not yet confirmed: the 2026 Form 7206 and 2026 Schedule 1 were not published when read, so line numbers are from the 2025 editions; the 2026 Medicare Part B standard premium was not read, so no amount is stated; the premium tax credit rules for 2026 are left to `us-premium-tax-credit-8962`.
