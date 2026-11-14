@@ -2,14 +2,14 @@
 name: alabama-income-tax
 description: "Alabama Form 40 (full-year resident): how I do it"
 jurisdiction: US-AL
-tax_year: 2025
+tax_year: 2026
 tax_year_notes: "Covers the 2025-2026 filing cycle: tax year 2025 figures (2025 Form 40 booklet) for returns filed in 2026, plus the 2026 estimated-tax dates and the 2026 overtime premium deduction where stated."
 last_updated: 2026-11-13
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
 type: filing-howto
-version: 0.5
+version: 0.6
 ---
 
 # Alabama Income Tax
@@ -17,6 +17,8 @@ version: 0.5
 Alabama Form 40 (full-year resident): how I do it
 
 Includes self-employed individuals and sole proprietors. See also: `alabama-cross-border`, `al-payroll-withholding`.
+
+**Coverage period.** This tax-year-2026 snapshot retains the verified **2025-2026 filing cycle** amounts and 2025 Form 40 line mappings below. Those filing thresholds, deductions and exemptions are not represented as published 2026 return amounts. The 2026 estimated-tax schedule and overtime rule are separately dated. Do not prepare a 2026 final return by silently relabelling the 2025 charts.
 
 Form 40 is the Alabama individual income tax return for someone who was a legal resident of Alabama for the entire tax year. A resident reports income from all sources, wherever earned, unless Alabama specifically exempts it. It covers the calendar year and is due on the same date as the federal return.
 
@@ -60,10 +62,10 @@ The method, step by step:
 5. Watch what is not Alabama withholding. Do not treat federal income tax, FICA, local or occupational tax, or tax paid to another state as Alabama tax withheld. This is a common source of notices.
 6. Take adjustments on line 9, then compute Alabama adjusted gross income on line 10.
 7. Choose itemized or standard on line 11, and compute it both ways. Check box a and attach Schedule A to itemize; check box b for the standard deduction and use the chart, which is keyed to Alabama AGI on line 10, not federal AGI. The federal choice does not control Alabama. If you take the standard deduction and later want to itemize, you can amend. A dependent or student may take the standard deduction even if claimed as a dependent by someone else (booklet).
-8. Compute the federal income tax deduction on line 12 using the worksheet in the booklet, and attach page 1, page 2 and Schedule 1 of the federal return. Use the actual federal liability, not withholding. Where a couple files a joint federal return and separate Alabama returns, the federal liability is apportioned by the ratio of each spouse's Alabama AGI to total joint federal AGI. Part-year residents also prorate: "Federal Tax Liability must be prorated by applying a percentage of Alabama adjusted gross income to Federal adjusted gross income" (booklet, p.5).
+8. Compute the federal income tax deduction on line 12 using the worksheet in the booklet, and attach page 1, page 2 and Schedule 1 of the federal return. Use the actual federal liability, not withholding. For a joint federal return with separate Alabama returns, the prior draft's ratio computation remains unconfirmed and must not be used without the applicable state worksheet; it is identified under Sources. Part-year residents also prorate: "Federal Tax Liability must be prorated by applying a percentage of Alabama adjusted gross income to Federal adjusted gross income" (booklet, p.5).
 9. Apply the personal exemption (line 13) and dependent exemption (line 14). The dependent exemption is per dependent and steps down with Alabama AGI. A dependent must be a defined relative who received over 50% of support from the taxpayer, and where a joint return is filed, support may come from either spouse. Complete Schedule DS and attach it before filling page 2, Part III.
 10. Add lines 11 to 14 for total deductions (line 15) and subtract them from line 10 for taxable income (line 16). Figure the tax on line 17 from the Tax Table, using the filing status you checked. If there's a net operating loss carryover or carryback, you cannot use the table: indicate the method and attach Form NOL-85A (2025 Form 40, lines 15 to 17).
-11. Apply credits on Schedule OC, checking the box to show you've used it. Credit for taxes paid to another state goes on Schedule CR with the other state's return attached; it's available only to legal residents on income taxed by both states for the same period, and it's limited to the lesser of the tax actually paid to the other state or the tax on that income at the Alabama rate. No credit where the out-of-state income is fully offset by a corresponding deduction. Foreign country tax goes to Section B, Part I of Schedule OC instead.
+11. Apply credits on Schedule OC, checking the box to show you've used it. Credit for taxes paid to another state goes on Schedule CR with the other state's return attached; the prior draft's detailed lesser-of and offset limitation mechanics remain unconfirmed, so use the actual Schedule CR instructions before computing this credit. Foreign-country credit treatment under Rule 810-3-21-.03 remains unconfirmed, as recorded under Sources; do not compute it from this skill.
 12. Pick up additional taxes on Schedule ATP, including consumer use tax on out-of-state purchases. If there were none, enter zero and check the box; leaving it blank invites a query.
 13. Reconcile payments before you sign: Alabama withholding per Schedule W-2, estimated payments per the client's records and the state account, any extension payment on Form 40V, and any prior-year overpayment applied forward. These must tie.
 14. File electronically and keep the acknowledgment. Direct deposit is not available on a blank paper Form 40, and refunds cannot be deposited to or through a foreign financial institution; those get a paper check.
@@ -178,15 +180,14 @@ expected:
 
 ## Ask the client first
 
-- Residency dates and the spouse's residency (where the spouses' residencies differ, confirm the joint-return eligibility rules before filing).
-- Income taxed by another state or a foreign country (Schedule CR / Schedule OC)?
-- Interest and dividends at or above $1,500 (Schedule B trigger)?
-- Estimated payments and extension payments on record with the state?
-- Out-of-state purchases without sales tax collected (Schedule ATP consumer use tax)?
-- For 2026: overtime premium shown in W-2 box 12 code TT (deduction up to $1,000)?
-- Income not on a W-2 or 1099: rents, royalties, gains, K-1s, farm or Schedule C business income?
-- Expected tax of at least $500 for the year (the estimated-tax trigger)?
-- Refer out to a professional rather than answer from this skill: multistate business activity needing apportionment; part-year residency with complex sourcing; an Alabama net operating loss carryforward; Business Privilege Tax for entities beyond a sole proprietorship; municipal occupational taxes; Alabama credits (Historic Rehabilitation, Growing Alabama and similar); audit representation or controversy; and any question about tax fraud, evasion or aggressive positions.
+1. What are the taxpayer's and spouse's residency dates, year-end filing status and dependents? Confirm full-year return eligibility before computing.
+2. What income exists beyond W-2/1099 amounts: rents, royalties, gains, K-1s, farms or Schedule C, and is any taxed by another state or foreign country?
+3. What are taxable and nontaxable interest/dividends, including the Schedule B trigger, and what federal liability and Alabama adjustments/deductions are established?
+4. What estimates, withholding and extension payments actually appear in the Alabama account, and does expected tax meet the estimated-tax trigger?
+5. What out-of-state purchases lacked sales tax, for Schedule ATP consumer use tax?
+6. For 2026, what overtime premium is shown in W-2 box 12 code TT, and is the return-year form available for the period being computed?
+
+Refer out to a professional rather than answer from this skill: multistate business activity needing apportionment; part-year residency with complex sourcing; an Alabama net operating loss carryforward; Business Privilege Tax for entities beyond a sole proprietorship; municipal occupational taxes; Alabama credits (Historic Rehabilitation, Growing Alabama and similar); audit representation or controversy; and any question about tax fraud, evasion or aggressive positions. The detailed questions and trigger amounts in the body remain part of intake.
 
 ## Sources
 
@@ -194,7 +195,7 @@ expected:
 |---|---|---|---|
 | 1 | Alabama Department of Revenue, 2025 Alabama Individual Income Tax Return Form 40 Booklet (25f40bk): filing thresholds, exemptions, standard-deduction chart, deadlines, penalties, estimated tax, ABLE, exempt income, criminal liability, read for the page as a whole | https://www.revenue.alabama.gov/wp-content/uploads/2026/01/25f40bk.pdf | 2026-11-13 |
 | 2 | 2025 Alabama Form 40, read for lines 1 to 4 personal exemptions, including head of family $3,000; lines 10 to 17 | https://www.revenue.alabama.gov/wp-content/uploads/2026/01/25f40.pdf | 2026-11-13 |
-| 3 | ALDOR Individual Income Tax page, read for Amendments 25 and 225, minimum exemptions, resident/non-resident base | https://revenue.alabama.gov/taxes-fees/individual-income-tax/ | 2026-11-13 |
+| 3 | ALDOR Individual Income Tax page, read for Amendments 25 and 225, minimum exemptions, resident/non-resident base | https://www.revenue.alabama.gov/tax-types/individual-income-tax/ | 2026-11-13 |
 | 4 | ALDOR FAQ: What is Alabama's individual income tax rate?, read for rate schedules by filing status | https://www.revenue.alabama.gov/faqs/what-is-alabamas-individual-income-tax-rate/ | 2026-11-13 |
 | 5 | 2026 Form 40ES estimated tax instructions, read for installment dates, safe harbor | https://www.revenue.alabama.gov/wp-content/uploads/2026/01/26f40esblk.pdf | 2026-11-13 |
 | 6 | ALDOR Overtime Premium Deduction (Act 2026-604) page, read for the page as a whole | https://www.revenue.alabama.gov/individual-corporate/overtime-premium-deduction-act-2026-604/ | 2026-11-13 |
