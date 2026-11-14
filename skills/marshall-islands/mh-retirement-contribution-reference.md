@@ -11,25 +11,27 @@ description: >-
   Fund, income tax and operational delivery held. Use for source review and
   conditional arithmetic examples, not current payroll or a complete social
   contributions engagement. Tier 2 draft awaiting qualified review.
-version: 0.1
+version: 0.2
 category: international
 jurisdiction: MH
 tier: 2
-tax_year: 2017
-tax_year_notes: 'Selected 2017 amended statutory text; fictional complete quarters wholly after March 2017; no verified operative historical or current-law period'
-last_updated: 2026-10-28
-verified_by: pending
-review_status: pending_review
+tax_year: 2026
+last_updated: 2026-11-14
 depends_on:
   - workflow-base
   - social-contributions-workflow-base
+type: computation
 ---
 
-# Marshall Islands Retirement Fund contribution reference v0.1
+# Marshall Islands Retirement Fund contribution reference v0.2
 
 > **General reference only.** This source-cited Tier 2 draft illustrates selected statutory text under expressly fictional established premises. It does not establish the law applicable to a real quarter, actual contributions, payroll readiness or comprehensive jurisdiction coverage. Qualified review remains required.
 
-## Scope and shared controls
+**Answer first.** For an ordinary worker, the Marshall Islands Social Security Retirement Fund takes **8%** of the worker's covered earnings for each calendar quarter, and the employer pays a separate, equal **8%** from its own funds. Covered earnings are capped at **US$10,000 a quarter** per worker (the maximum since 6 March 2017; the Board may increase it). The employer deducts the worker's share and remits both. Currency is the US dollar.
+
+**Tax year 2026.** The consolidated Social Security Act (official version 6, amendments to P.L. 2021-36) and the Marshall Islands Social Security Administration (MISSA) taxable-earnings page, both read on 14 November 2026, still give 8% each and US$10,000 a quarter, so these figures apply to quarters in 2026. Ryan's cases are written for "a complete quarter wholly after March 2017"; on these sources a 2026 quarter gives the same result. The Health Fund is a separate programme and is not covered.
+
+## Scope and who this is for
 
 This reference concerns the Social Security Retirement Fund only. It illustrates one ordinary worker, one employer and one complete calendar quarter wholly after March 2017, with the selected amended text and absence of a relevant Board adjustment independently stipulated. It is not a consolidated 2017 edition, verified law for any historical quarter or a 2026 contribution guide. Later consolidated definitions and administrative explanations are source locators, not evidence that all their text applied in 2017.
 
@@ -37,24 +39,7 @@ Load both dependencies in full. Retain the universal source gate, document intak
 
 No actual engagement output is produced by the examples. Current law, coverage, the full earnings classification, contribution precision, other programmes, registration, declarations, payments, calendars, penalties, records, refunds and sign-off remain subject to their own evidence. Missing evidence is Needs Input, not an assumed zero or an invented default.
 
-## Primary sources and period limits
-
-The sources were accessed on 28 October 2026. Physical page numbers below count every PDF page, including notices and blank pages.
-
-| Source | Selected propositions and limits |
-|---|---|
-| [L1: P.L. 2017-30, Marshall Islands Social Security (Amendment) Act 2017, with Clerk's corrections notice](https://rmiparliament.org/cms/library/public-laws-by-years/36-public-laws-by-year-2017.html?download=412:p-l-2017-30-marshall-islands-social-security-amendment-act,-2017) | Complete 15-page official PDF retained. Physical pages 5–6 replace section 103(k), with quarterly gross earnings subject to US$5,000 before 6 March 2017 and US$10,000 thereafter for current contributors, subject to Board increases under section 147. Pages 6–7 replace earnings provisions. Page 8 states the separate 8% contributions. The separate corrections notice on physical pages 1–2 confirms sections 129 and 130. |
-| [L2: Social Security Act of 1990, official version 6](https://rmiparliament.org/cms/images/LEGISLATION/PRINCIPAL/1990/1990-0075/1990-0075_6.pdf) | Complete 50-page official PDF retained. Section 103(k), physical page 7, is defective. Selected sections 103, 104, 129–133 and 147 locate definitions, coverage, separate shares, employer duties, reporting, refunds, identification and Board adjustment. Its physical page 5 lists amendments through P.L. 2021-36. This is a later consolidation, not a verified 2017 snapshot or complete current chain. |
-| [L3: Marshall Islands Health Fund Act of 2002, official version 3](https://rmiparliament.org/cms/images/LEGISLATION/PRINCIPAL/2002/2002-0057/2002-0057_3.pdf) | Complete 35-page official PDF retained. This is a separate programme. Sections 202(h), 216–219 and 221(5) have their own base, Board/Cabinet qualifications, shares, timing and refund provisions. They are not supplied by Retirement Fund arithmetic. |
-| [A1: MISSA taxable-earnings explanation](https://www.rmissa.net/taxable-earnings/) | Administrative corroboration of separate Retirement Fund shares and quarterly base; it does not reconcile the complete law, Board decisions, contribution rounding or every coverage exception. Its contractor summary does not capture the later taxi-driver exception. |
-
-L2's section 103(k) repeats a malformed new-retiree construction and omits a coherent maximum. The original image agrees with the extracted text, so this is not extraction loss. L1's original physical pages 5–6 supply the coherent amendment and say current contributors. Do not silently repair L2 or present L1's original wording as unresolved. The complete applicable amendment, commencement, regulation, agreement and Board-decision chain still needs verification for real work.
-
-The corrections notice is dated 17 March 2017 and concerns the contribution sections, not the cap definition. Its historical worker limb literally ends at March 2017, whilst the employer limb specifies 6 March 2017; both new limbs state 8% from 6 March 2017 and thereafter. L1's effective-date clause says certification; its certificate separately records passage on 28 February 2017 and signature on 9 March 2017. These are distinct source dates. No first-quarter 2017 crossover, retrospective adjustment or date-normalisation rule is selected here.
-
-Later selected sources include taxi-driver and benefit amendments. A Social Security amendment listed as introduced in 2026 is a bill signal only, not enacted authority. Neither a complete retained PDF, an index entry, website access date nor passing source extraction establishes current law.
-
-## Required coverage and earnings intake
+### Required coverage and earnings intake
 
 For each fictional illustration, expressly establish all of the following; none is a default for actual work:
 
@@ -67,7 +52,26 @@ For each fictional illustration, expressly establish all of the following; none 
 
 L1's nearest-cent provision concerns earnings. It does not by itself establish a contribution rounding rule or an earnings midpoint rule. G must therefore already be independently established; this guide does not round the earnings input to create eligibility for an example.
 
-## Selected figures and exact-cent illustration
+## Ask the client first
+
+1. **Which calendar quarter**, and that every payment of earnings in it is accounted for.
+2. **Coverage**: employee, director, contractor, taxi driver, self-employed, off-island work, benefit recipient, or a Compact or agreement branch.
+3. **Complete earnings for the quarter** after the statutory exclusions (housing, travel, medical, trust or annuity, scholarship, religious, domestic and casual service, each with its conditions), before the cap.
+4. **Number of employers** for the worker in the quarter.
+5. **Whether the worker's 8% was actually deducted**, and when both shares were remitted.
+
+## The method, step by step
+
+### Rates, bands and thresholds
+
+| Item | Amount or rule | Source |
+|---|---|---|
+| Worker contribution, Retirement Fund | 8% of covered earnings, from 6 March 2017 | [L2, s 129(1)(d)](https://rmiparliament.org/cms/images/LEGISLATION/PRINCIPAL/1990/1990-0075/1990-0075_6.pdf); [MISSA, taxable earnings](https://www.rmissa.net/taxable-earnings/) |
+| Employer contribution | An amount equal to the worker's contribution (8%), from the employer's own funds | [L2, s 130](https://rmiparliament.org/cms/images/LEGISLATION/PRINCIPAL/1990/1990-0075/1990-0075_6.pdf); [MISSA, taxable earnings](https://www.rmissa.net/taxable-earnings/) |
+| Maximum quarterly covered earnings | US$10,000 per worker per quarter (US$5,000 before 6 March 2017); the Board may increase it | [L2, s 103(k) and s 147](https://rmiparliament.org/cms/images/LEGISLATION/PRINCIPAL/1990/1990-0075/1990-0075_6.pdf); [MISSA, taxable earnings](https://www.rmissa.net/taxable-earnings/) |
+| Rounding of each contribution | Not set by the Act's text read here (earnings are to the nearest cent only); results with a fraction of a cent are held | [L2, s 103](https://rmiparliament.org/cms/images/LEGISLATION/PRINCIPAL/1990/1990-0075/1990-0075_6.pdf) |
+
+### Selected figures and exact-cent illustration
 
 All figures in this table refer to the selected 2017 amended text, subject to the premises above.
 
@@ -94,7 +98,51 @@ Divide cents by 100 for dollar display only. The test is on the capped base b, n
 
 Calculate W and E separately even though these selected rates match. T is their conditional sum, not a combined programme rate, a net wage or proof of an amount actually withheld, remitted or deductible for income tax. Under L2 sections 129(2)–(3), the employer collects the worker contribution by deduction, remits it with its own contribution and is liable for payment of the worker contribution; section 130 requires its own share from its own funds. Actual deduction authority, timing, recovery of a missed deduction and employer funding/cost need complete applicable law and evidence. An unmade deduction or missing payment does not create a contribution credit.
 
-## Fictional complete-quarter examples
+## Worked cases
+
+Two of Ryan's cases, as CI recomputes them (USD, one complete quarter).
+
+**Case 1 (N5), quarterly earnings 1,000.25.** Below the cap, so B = 1,000.25. Each share is 8% of B: exactly 80.02, and the two shares total 160.04.
+
+```oa-check
+name: Marshall Islands Retirement Fund, quarter earnings 1000.25 (2026)
+inputs:
+  earnings: 1000.25
+  cap: 10000
+steps:
+  - base: min(earnings, cap)
+  - worker: base * 0.08
+  - employer: base * 0.08
+  - total: worker + employer
+expected:
+  base: 1000.25
+  worker: 80.02
+  employer: 80.02
+  total: 160.04
+```
+
+**Case 2 (A1), a decision: apply the cap per quarter or per payment?** One worker is paid 5,000.00, 4,000.00 and 3,000.00 in the same quarter. The cap is on the quarter: G = 12,000.00, B = 10,000.00, and each share is 800.00. Capping each payment separately would leave all 12,000.00 in the base and wrongly give 960.00 per share.
+
+```oa-check
+name: Marshall Islands Retirement Fund, three payments in one quarter (2026)
+inputs:
+  pay1: 5000
+  pay2: 4000
+  pay3: 3000
+  cap: 10000
+steps:
+  - base: min(pay1 + pay2 + pay3, cap)
+  - worker: base * 0.08
+  - employer: base * 0.08
+  - worker_wrong: (min(pay1, cap) + min(pay2, cap) + min(pay3, cap)) * 0.08
+expected:
+  base: 10000
+  worker: 800.00
+  employer: 800.00
+  worker_wrong: 960.00
+```
+
+### Ryan's fictional complete-quarter examples
 
 Every numeric row independently stipulates all required premises and the selected source text for a fictional complete quarter wholly after March 2017. These are USD arithmetic examples, not verification that a real historical quarter had these rules. Small artificial amounts test the rule; they do not establish lawful wages, a minimum base, an exemption or benefit entitlement. B is the selected capped base; W and E remain separate exact-cent shares and T is their conditional sum. All actual outputs remain held.
 
@@ -121,7 +169,7 @@ These aggregation examples also require independently established scope, coverag
 - **A2, separate complete quarters:** One worker has independently qualified G = 12000.00 in each of 2 separate complete quarters. Each has B = 10000.00, W = 800.00, E = 800.00 and T = 1600.00. Their sums are B = 20000.00, W = 1600.00, E = 1600.00 and T = 3200.00. Do not impose one pooled quarterly ceiling on both quarters or infer an annual ceiling from this illustration.
 - **A3, separate workers:** Two independently qualified ordinary workers each have G = 6000.00 in the same complete quarter with the same employer. Each has B = 6000.00, W = 480.00, E = 480.00 and T = 960.00. The sums are B = 12000.00, W = 960.00, E = 960.00 and T = 1920.00. The worker-based ceiling is not one ceiling for the employer's entire payroll. This does not decide one worker's multiple-employer treatment.
 
-## Held examples and refusal catalogue
+## When to refuse or refer
 
 Each unresolved case returns Needs Input or the stated refusal, with no dependent financial result:
 
@@ -149,7 +197,7 @@ Each unresolved case returns Needs Input or the stated refusal, with no dependen
 
 No country-specific factual or legal default is authorised. Unknown inputs must not be silently converted, dropped or replaced with fixture premises. Every actual amount requires qualified review; no de minimis threshold releases a source, scope, precision or delivery hold.
 
-## Dated procedure and distinct programme holds
+## Filing and payment
 
 The following L2 provisions are selected statutory locators, not a qualified historical or current operating procedure:
 
@@ -159,7 +207,9 @@ The following L2 provisions are selected statutory locators, not a qualified his
 - L3 has separate Health Fund rules. Its section 202(h) permits Board changes to the base; sections 216 and 217 are subject to Cabinet action under section 221(5). Section 216(2) requires payment before quarter end, whilst section 218 requires both payment and reporting by the tenth day after quarter end. That payment-timing conflict remains unresolved. Do not import section 132's 90-day wording into Health Fund refunds.
 - Retirement Fund earnings, Health Fund benefit eligibility, income-tax wages and deductions are separate questions. No tax deduction, benefit entitlement, accounting expense or employer funding result is established by W, E or T.
 
-## Output extensions and verification
+## Completion checklist
+
+### Output extensions and verification
 
 For any future actual work, retain a redacted source/proposition ledger, exact legal versions and period, coverage/exception findings, employer and worker references, complete components and paid-quarter allocation, independently established G, applicable floor/ceiling and adjustment decision, B, separate exact products, precision rule, W and E, conditional sum and actual deduction/remittance evidence. Add all programmes, source conflicts, current registration/form/channel readiness, calendar, payment matching, penalties, refunds, income tax interaction, tool readiness and qualified-review disposition to every required output. A reviewer-held identifier readiness confirmation can establish readiness without exposing the identifier to the model.
 
@@ -171,28 +221,36 @@ The universal 13 country slots remain mandatory. This reference supplies bounded
 
 Run all 18 universal and 12 social contributions checks before any deliverable. Add checks for complete earnings before this ceiling, source-period/Board stipulation, one worker-quarter base, exact separate products, precision gate after capping, no pay-period reset, no pooling across workers/quarters, no gross/net/tax-base substitution, no automatic exemption, no Health Fund transfer, no unauthorised recovery and held actual delivery. Component arithmetic passing does not complete engagement checks or establish acceptance.
 
-## Revision and disclaimer
+### Revision and disclaimer
 
 28 October 2026, v0.1: selected 2017 amended Retirement Fund reference with conditional quarterly cap, separate shares, exact-cent illustrative products and explicit source, precision, coverage, programme, recovery and delivery holds. Tier 2, pending_review and verified_by pending remain.
 
 This document is general reference material and does not constitute tax, legal or financial advice. A qualified professional in the relevant jurisdiction must establish applicable law and facts and complete and sign off all required outputs before filing, paying, deducting or relying on a result.
 
-<!-- openaccountants-cta-block -->
+## Sources
 
----
+| Source | Read for | URL | Read on |
+|---|---|---|---|
+| L1: P.L. 2017-30, Social Security (Amendment) Act 2017, with corrections notice | Read for s 102(1) replacing s 103(k) and the 8% contribution sections; the PDF is a scan with no text layer, re-opened but not text-searched | https://rmiparliament.org/cms/library/public-laws-by-years/36-public-laws-by-year-2017.html?download=412:p-l-2017-30-marshall-islands-social-security-amendment-act,-2017 | 2026-10-28 (read by Ryan); downloaded 2026-11-14, image only |
+| L2: Social Security Act of 1990, official version 6 | Read for s 103(k) (US$10,000), s 129(1)(d) (8% from March 6, 2017), s 130, s 147 | https://rmiparliament.org/cms/images/LEGISLATION/PRINCIPAL/1990/1990-0075/1990-0075_6.pdf | 2026-11-14 |
+| L3: Marshall Islands Health Fund Act of 2002, official version 3 | Read for its scope only (a separate programme, ss 202, 216-219, 221) | https://rmiparliament.org/cms/images/LEGISLATION/PRINCIPAL/2002/2002-0057/2002-0057_3.pdf | 2026-10-28 (read by Ryan); not re-read on 2026-11-14 |
+| A1: MISSA, taxable earnings | Read for the rates (7% before and 8% after 6 March 2017) and the quarterly maximum ($5,000 and $10,000) | https://www.rmissa.net/taxable-earnings/ | 2026-11-14 |
 
-## Talk to a verified accountant
+### Ryan's notes on each source (kept)
 
-This guide is maintained in the
-[ryanduguid/openaccountants fork](https://github.com/ryanduguid/openaccountants).
-Check its quality tier, recorded review status and cited sources before use.
-Choose a practitioner whose credentials and engagement scope you have verified.
-The links below are optional upstream services; they do not publish or verify
-this fork's changes.
+The sources were accessed on 28 October 2026. Physical page numbers below count every PDF page, including notices and blank pages.
 
-- Upstream connection service: https://www.openaccountants.com/connect
-- Upstream accountant network: https://www.openaccountants.com/network
+| Source | Selected propositions and limits | Read on |
+|---|---|---|
+| [L1: P.L. 2017-30, Marshall Islands Social Security (Amendment) Act 2017, with Clerk's corrections notice](https://rmiparliament.org/cms/library/public-laws-by-years/36-public-laws-by-year-2017.html?download=412:p-l-2017-30-marshall-islands-social-security-amendment-act,-2017) | Complete 15-page official PDF retained. Physical pages 5–6 replace section 103(k), with quarterly gross earnings subject to US$5,000 before 6 March 2017 and US$10,000 thereafter for current contributors, subject to Board increases under section 147. Pages 6–7 replace earnings provisions. Page 8 states the separate 8% contributions. The separate corrections notice on physical pages 1–2 confirms sections 129 and 130. | 2026-10-28 (read by Ryan) |
+| [L2: Social Security Act of 1990, official version 6](https://rmiparliament.org/cms/images/LEGISLATION/PRINCIPAL/1990/1990-0075/1990-0075_6.pdf) | Complete 50-page official PDF retained. Section 103(k), physical page 7, is defective. Selected sections 103, 104, 129–133 and 147 locate definitions, coverage, separate shares, employer duties, reporting, refunds, identification and Board adjustment. Its physical page 5 lists amendments through P.L. 2021-36. This is a later consolidation, not a verified 2017 snapshot or complete current chain. | 2026-10-28 (read by Ryan) |
+| [L3: Marshall Islands Health Fund Act of 2002, official version 3](https://rmiparliament.org/cms/images/LEGISLATION/PRINCIPAL/2002/2002-0057/2002-0057_3.pdf) | Complete 35-page official PDF retained. This is a separate programme. Sections 202(h), 216–219 and 221(5) have their own base, Board/Cabinet qualifications, shares, timing and refund provisions. They are not supplied by Retirement Fund arithmetic. | 2026-10-28 (read by Ryan) |
+| [A1: MISSA taxable-earnings explanation](https://www.rmissa.net/taxable-earnings/) | Administrative corroboration of separate Retirement Fund shares and quarterly base; it does not reconcile the complete law, Board decisions, contribution rounding or every coverage exception. Its contractor summary does not capture the later taxi-driver exception. | 2026-10-28 (read by Ryan) |
 
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
+L2's section 103(k) repeats a malformed new-retiree construction and omits a coherent maximum. The original image agrees with the extracted text, so this is not extraction loss. L1's original physical pages 5–6 supply the coherent amendment and say current contributors. Do not silently repair L2 or present L1's original wording as unresolved. The complete applicable amendment, commencement, regulation, agreement and Board-decision chain still needs verification for real work.
+
+The corrections notice is dated 17 March 2017 and concerns the contribution sections, not the cap definition. Its historical worker limb literally ends at March 2017, whilst the employer limb specifies 6 March 2017; both new limbs state 8% from 6 March 2017 and thereafter. L1's effective-date clause says certification; its certificate separately records passage on 28 February 2017 and signature on 9 March 2017. These are distinct source dates. No first-quarter 2017 crossover, retrospective adjustment or date-normalisation rule is selected here.
+
+Later selected sources include taxi-driver and benefit amendments. A Social Security amendment listed as introduced in 2026 is a bill signal only, not enacted authority. Neither a complete retained PDF, an index entry, website access date nor passing source extraction establishes current law.
+
+Not yet confirmed: any Board increase of the US$10,000 quarterly maximum under s 147 after 2017, and any amendment after P.L. 2021-36 (the Social Security amendment listed as introduced in 2026 is a bill only); the statutory rounding of a contribution with a fraction of a cent; the due dates, return forms and penalties for remitting (not covered); Health Fund contributions (separate programme, not covered); the defective consolidated text of s 103(k) in L2, read with L1.
