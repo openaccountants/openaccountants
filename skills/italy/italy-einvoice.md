@@ -72,7 +72,7 @@ Who is in: businesses and professionals resident or established in Italy and reg
 | Stamp duty, small amounts: Q1 paid by 30 September (Q1 and Q2 together by 30 November) if not above | EUR 5,000 | 2026 | same |
 | Forfettari, minimi and L. 398/1991 associations: in the SdI from 1 July 2022 if prior-year revenue was above (all others from 1 January 2024) | EUR 25,000 | 2026 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2022-04-30;36~art18!vig=2026-06-30 |
 | Cross-border purchases not territorially relevant in Italy, not reported if each is not above | EUR 5,000 | 2026 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2015-08-05;127~art1!vig=2026-06-30 |
-| Taxable operation not invoiced or late (art. 6(1)) | 70% of the VAT; EUR 250 to EUR 2,000 if the settlement was not affected | 2026 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;471~art6!vig=2026-06-30 |
+| Taxable operation not invoiced or late (art. 6(1)) | Seventy per cent of the VAT (as art. 6 words it); EUR 250 to EUR 2,000 if the settlement was not affected | 2026 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;471~art6!vig=2026-06-30 |
 | Non-taxable, exempt or reverse-charge operation not invoiced (art. 6(2)) | 5% of the consideration | 2026 | same |
 | Cross-border data omitted or wrong (art. 11(2-quater)) | EUR 2 per invoice, up to EUR 400 a month (EUR 200 if corrected within 15 days) | 2026 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;471~art11!vig=2026-06-30 |
 

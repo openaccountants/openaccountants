@@ -130,10 +130,10 @@ Pensions, end-of-service payments and royalties paid by Italian payers are Itali
 
 | Failure | Penalty | Source |
 |---|---|---|
-| No income tax return filed | 120% of the tax due, minimum EUR 250; EUR 250 to 1,000 if no tax is due | D.Lgs. 471/1997 art. 1 comma 1, https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;471~art1!vig=2026-06-30 |
+| No income tax return filed | One hundred and twenty per cent of the tax due (the article: "centoventi per cento"), minimum EUR 250; EUR 250 to 1,000 if no tax is due | D.Lgs. 471/1997 art. 1 comma 1, https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;471~art1!vig=2026-06-30 |
 | Return filed more than 90 days late (before any audit) | The late-payment penalty below, tripled | art. 1 comma 1-bis, same URL |
 | Return understates income or tax | 70% of the extra tax, minimum EUR 150 | art. 1 comma 2, same URL |
-| Late or missing payment | 25% of the unpaid amount; halved if paid within 90 days; reduced further for delays up to 15 days | D.Lgs. 471/1997 art. 13, https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;471~art13!vig=2026-06-30 |
+| Late or missing payment | Twenty-five per cent of the unpaid amount (as the article words it); halved if paid within 90 days; reduced further for delays up to 15 days | D.Lgs. 471/1997 art. 13, https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;471~art13!vig=2026-06-30 |
 | Withholding agent fails to withhold | 20% of the amount not withheld | D.Lgs. 471/1997 art. 14, https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;471~art14!vig=2026-06-30 |
 | Foreign assets not reported in RW | 3% to 15% of the amounts not declared; 6% to 30% for assets in listed tax havens; EUR 258 if filed within 90 days | D.L. 167/1990 art. 5 comma 2, https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:1990-06-28;167~art5!vig=2026-06-30 |
 
