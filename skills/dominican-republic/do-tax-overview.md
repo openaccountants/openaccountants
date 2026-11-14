@@ -1,17 +1,31 @@
 ---
 name: do-tax-overview
-description: "Source-cited draft: tax overview for Dominican Republic (tax year 2025) — rates, thresholds and rules with primary-source citations. Unverified; pending local-accountant review."
+description: >
+  Map of the main national taxes in the Dominican Republic for fiscal year 2026
+  after Law 30-26 of 18 June 2026. Covers personal income tax (ISR) and the 2026
+  scale, the 27% corporate rate and the temporary 30% rate for income of RD$1,000
+  million or more, withholding (new rates from 1 July 2026), ITBIS at 18% and 16%,
+  the 1% asset tax, the RST simplified regime, advances, the 3% monthly surcharge,
+  interest, payment plans and the amnesty to 31 December 2026, and the main DGII
+  filing dates. Trigger on Dominican Republic tax, DGII, ISR, ITBIS, IR-1, IR-2,
+  IT-1, asset tax, Law 30-26. Built from DGII pages and laws; not reviewed by an
+  accountant.
+version: 1.0
 jurisdiction: DO
 tax_year: 2026
-last_updated: 2026-10-16
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+category: international
 tier: 2
 domain: income-tax
+type: situation-rules
 ---
 
 # Dominican Republic tax system overview for 2026: income tax (ISR), corporate rate, ITBIS, withholding, asset tax, RST, penalties and deadlines
 
-## Scope and who this is for ([DGII: Impuesto sobre la Renta](https://dgii.gov.do/cicloContribuyente/obligacionesTributarias/principalesImpuestos/Paginas/impuestoSobreRenta.aspx); [DGII Aviso 10-26](https://dgii.gov.do/publicacionesOficiales/avisosInformativos/Documents/2026/10-26.pdf))
+## Scope and who this is for
+
+Sources for this section: DGII income tax page and DGII Aviso 10-26 (see Sources).
 
 This skill is a map of the main national taxes in the Dominican Republic as they stand on 25 September 2026. It covers:
 
@@ -56,7 +70,43 @@ Amounts are in Dominican pesos (RD$). The official texts are in Spanish; Spanish
 8. **File and pay on time.** Use the dates below. If a date falls on a weekend or holiday, it moves to the next working day.
 9. **If late, add the surcharge and interest,** and check whether a prompt-payment discount or a payment plan applies.
 
-## Key rules and figures, with years
+### Rates, bands and thresholds
+
+Each row names the official page it was read on (14 November 2026). Detail and conditions follow in the sections below.
+
+| Item | Figure | Conditions | Source |
+|---|---|---|---|
+| Personal scale 2026, exempt band | Up to RD$416,220.01 | Resident individuals, annual net taxable income, fiscal year 2026 | DGII, Impuesto sobre la Renta: https://dgii.gov.do/cicloContribuyente/obligacionesTributarias/principalesImpuestos/Paginas/impuestoSobreRenta.aspx |
+| Personal scale 2026, 15% band | RD$416,220.01 to RD$624,329.01, 15% of the excess over RD$416,220.01 | Same | same |
+| Personal scale 2026, 20% band | RD$624,329.01 to RD$867,123.00, RD$31,216.00 plus 20% of the excess over RD$624,329.01 | Same | same |
+| Personal scale 2026, 25% band | RD$867,123.01 and above, RD$79,776.00 plus 25% of the excess over RD$867,123.01 | Same | same |
+| Corporate rate | 27% | Legal persons | same |
+| Temporary corporate rate | 30% | Fiscal years 2026, 2027, 2028; income equal to or more than RD$1,000,000,000 | same |
+| Start of the 30% rate | Fiscal year 2026, from fiscal closes of 30 June 2026 | DGII's table words the test as "mayores a" | DGII, Aviso 10-26: https://dgii.gov.do/publicacionesOficiales/avisosInformativos/Documents/2026/10-26.pdf |
+| Asset tax | 1% of taxable assets | Legal persons and sole-owner businesses; ISR credited; two equal instalments, the second six months after the first | DGII, Impuesto sobre la Renta: https://dgii.gov.do/cicloContribuyente/obligacionesTributarias/principalesImpuestos/Paginas/impuestoSobreRenta.aspx |
+| Late-payment surcharge | 3% for each month or part month, capped at 100% of the tax | From 1 July 2026 | Law 30-26, art. 7 (Tax Code art. 252): https://dgii.gov.do/legislacion/leyesTributarias/Documents/Codigo%20Tributario%20y%20Leyes%20que%20lo%20modifican%20y%20complementan/30-26.pdf |
+| Compensatory interest | 1.10% a month or part month, cumulative | Until paid; revised rate from January 2027 | DGII, Impuesto sobre la Renta: https://dgii.gov.do/cicloContribuyente/obligacionesTributarias/principalesImpuestos/Paginas/impuestoSobreRenta.aspx |
+| Payment plan down payment | At least 15% | Acuerdos de pago | Law 30-26: https://dgii.gov.do/legislacion/leyesTributarias/Documents/Codigo%20Tributario%20y%20Leyes%20que%20lo%20modifican%20y%20complementan/30-26.pdf |
+| Withholding, rent from individuals | 15%, final | Payments from 1 July 2026 (10% before) | Law 30-26, art. 17 (Tax Code art. 309): https://dgii.gov.do/legislacion/leyesTributarias/Documents/Codigo%20Tributario%20y%20Leyes%20que%20lo%20modifican%20y%20complementan/30-26.pdf |
+| Withholding, fees and services by individuals | 15%, on account | Payments from 1 July 2026 (10% before) | same |
+| Withholding, prizes | 25%, final | Lotteries, promotions and other bets | same |
+| Royalties paid abroad | 15% of gross, final | From 1 July 2026 (Tax Code art. 305-1) | same |
+| Software licences, online advertising, data use or storage paid abroad | 15% of gross, final | From 1 July 2026 (Tax Code art. 305-2) | same |
+| Dividends | 10%, single and final | Residents and non-residents (Tax Code art. 308) | Law 253-12: https://dgii.gov.do/legislacion/leyesTributarias/Documents/Codigo%20Tributario%20y%20Leyes%20que%20lo%20modifican%20y%20complementan/253-12.pdf |
+| Interest paid abroad | 10%, final | Tax Code art. 306 | same |
+| Capital gain, real estate of individuals | 10%, final, due within six months | In force immediately; main home reinvested or owner over 65 exempt | Law 30-26, art. 14: https://dgii.gov.do/legislacion/leyesTributarias/Documents/Codigo%20Tributario%20y%20Leyes%20que%20lo%20modifican%20y%20complementan/30-26.pdf |
+| Education expense deduction | Up to 10% of taxable income, at most 30% of the exempt amount (50% for disability) | Fiscal year 2026 | same |
+| RST limits under Law 30-26 | Income mode RD$30,000,000 (companies), RD$15,000,000 (individuals); purchases mode RD$60,000,000 | Apply only once the new RST regulation is issued | same |
+| Tax on company formation and capital increases | 1% | Repealed from 2027 (Law 30-26 art. 58); still due in 2026 | same |
+| ITBIS standard rate | 18% | From 2016 (Law 253-12 art. 23) | DGII, ITBIS: https://dgii.gov.do/cicloContribuyente/obligacionesTributarias/principalesImpuestos/Paginas/itbis.aspx |
+| ITBIS return and payment (IT-1) | Within the first 20 days of the following month | Monthly | same |
+| ITBIS reduced rate | 16% | Listed goods in Law 253-12 art. 23 para. II | Law 253-12: https://dgii.gov.do/legislacion/leyesTributarias/Documents/Codigo%20Tributario%20y%20Leyes%20que%20lo%20modifican%20y%20complementan/253-12.pdf |
+| IR-1 individuals | 31 March of the following year | Calendar year | DGII, Impuesto sobre la Renta: https://dgii.gov.do/cicloContribuyente/obligacionesTributarias/principalesImpuestos/Paginas/impuestoSobreRenta.aspx |
+| IR-2 companies | 120 days after the fiscal close | 31 December 2025 close: 30 April 2026 | same |
+| IR-17 and IR-3 withholding returns | By the 10th of the following month | Withholding agents | same |
+| Monthly advances (anticipos) | Monthly, on the dates in DGII's 2026 calendar | Companies and sole-owner businesses | DGII, Calendario del contribuyente 2026: https://dgii.gov.do/publicacionesOficiales/Calendario%20del%20contribuyente/Calendario%20del%20contribuyente%202026.pdf |
+| 2027 personal scale | Exempt to RD$480,000.00; 27% above RD$4,800,000.01 | Fiscal year 2027 onwards | DGII, Aviso 10-26: https://dgii.gov.do/publicacionesOficiales/avisosInformativos/Documents/2026/10-26.pdf |
+
 
 ### Who pays income tax, and on what ([DGII: Impuesto sobre la Renta](https://dgii.gov.do/cicloContribuyente/obligacionesTributarias/principalesImpuestos/Paginas/impuestoSobreRenta.aspx); [Tax Code, Law 11-92](https://dgii.gov.do/legislacion/leyesTributarias/Documents/Codigo%20Tributario%20y%20Leyes%20que%20lo%20modifican%20y%20complementan/11-92.pdf); [DGII Aviso 22-25](https://dgii.gov.do/publicacionesOficiales/avisosInformativos/Documents/2025/22-25.pdf))
 
@@ -218,7 +268,7 @@ Payers who are withholding agents deduct the tax from the payment and pay it to 
 | Education expense deduction limits | Fiscal year 2026 |
 | Tax on cheques and electronic transfers at 0.20% | 3 July 2026 |
 
-## Boundaries and exceptions ([DGII: Impuesto sobre la Renta](https://dgii.gov.do/cicloContribuyente/obligacionesTributarias/principalesImpuestos/Paginas/impuestoSobreRenta.aspx); [Law 30-26](https://dgii.gov.do/legislacion/leyesTributarias/Documents/Codigo%20Tributario%20y%20Leyes%20que%20lo%20modifican%20y%20complementan/30-26.pdf); [Tax Code, Law 11-92](https://dgii.gov.do/legislacion/leyesTributarias/Documents/Codigo%20Tributario%20y%20Leyes%20que%20lo%20modifican%20y%20complementan/11-92.pdf))
+## Boundary and exception table
 
 | Situation | Rule |
 |---|---|
@@ -235,7 +285,7 @@ Payers who are withholding agents deduct the tax from the payment and pay it to 
 | Long-overdue tax | Surcharge stops at 100% of the tax; interest keeps running until paid |
 | Supplier company is an authorised e-CF issuer (from 16 September 2026) | No Norma 02-05 ITBIS withholding by the paying company |
 
-## Worked cases ([DGII: Impuesto sobre la Renta](https://dgii.gov.do/cicloContribuyente/obligacionesTributarias/principalesImpuestos/Paginas/impuestoSobreRenta.aspx); [Law 30-26](https://dgii.gov.do/legislacion/leyesTributarias/Documents/Codigo%20Tributario%20y%20Leyes%20que%20lo%20modifican%20y%20complementan/30-26.pdf); [DGII Aviso 10-26](https://dgii.gov.do/publicacionesOficiales/avisosInformativos/Documents/2026/10-26.pdf))
+## Worked cases
 
 These are illustrations with rounded inputs, not advice for a real client.
 
@@ -251,6 +301,34 @@ These are illustrations with rounded inputs, not advice for a real client.
 
 **Case 6: late ITBIS.** ITBIS of RD$100,000 for August 2026 was due by 20 September 2026 and is paid two months late. Surcharge: 3% x 2 months = 6% = **RD$6,000**, plus compensatory interest for two months at DGII's monthly rate (use DGII's surcharge calculator). If the taxpayer files a voluntary correction before any DGII request and pays at once, the surcharge is cut by 90%.
 
+### Recomputing checks
+
+```oa-check
+name: DO 2026 employee, net taxable income RD$1,000,000
+inputs:
+  income: 1000000
+steps:
+  - tax: round(79776 + (income - 867123.01) * 0.25, 2)
+expected:
+  tax: 112995.25
+```
+
+Decision both ways (Case 2): does the 30% temporary rate apply? A company with income of RD$1,200,000,000 and taxable income RD$100,000,000 pays 30%; the same taxable income at income of RD$900,000,000 pays 27%. The RD$1,000 million test is worth RD$3,000,000 here.
+
+```oa-check
+name: DO 2026 company, 30% test met or not, same taxable income
+inputs:
+  taxable: 100000000
+steps:
+  - tax_large: taxable * 0.30
+  - tax_normal: taxable * 0.27
+  - difference: tax_large - tax_normal
+expected:
+  tax_large: 30000000
+  tax_normal: 27000000
+  difference: 3000000
+```
+
 ## When to refuse or refer
 
 - **Free-zone, tourism, border-development and other incentive regimes, or exemption contracts approved by Congress.** Each has its own law; Law 30-26 bars using two incentive regimes for the same activity. Refer to a Dominican tax adviser.
@@ -261,7 +339,7 @@ These are illustrations with rounded inputs, not advice for a real client.
 - **Fraud or criminal exposure** (defraudación): no prompt-payment discounts apply. Refer to a lawyer.
 - **Sector taxes** (ISC, hydrocarbons, casinos and betting, mining, banking): out of scope.
 
-## Filing and payment ([DGII: Impuesto sobre la Renta](https://dgii.gov.do/cicloContribuyente/obligacionesTributarias/principalesImpuestos/Paginas/impuestoSobreRenta.aspx); [DGII: ITBIS](https://dgii.gov.do/cicloContribuyente/obligacionesTributarias/principalesImpuestos/Paginas/itbis.aspx); [DGII Calendario del contribuyente 2026](https://dgii.gov.do/publicacionesOficiales/Calendario%20del%20contribuyente/Calendario%20del%20contribuyente%202026.pdf))
+## Filing and payment
 
 | Obligation | Form | Deadline |
 |---|---|---|
@@ -300,3 +378,18 @@ If a date falls on a weekend or public holiday, it moves to the next working day
 - [ ] RST status and limits confirmed with DGII.
 - [ ] Deadlines diarised (IR-1, IR-2, IT-1, IR-3, IR-17, advances), with weekend roll-forward.
 - [ ] Any late amount priced with the 3% surcharge and interest; discounts, payment plan or amnesty (until 31 December 2026) considered. ([Law 30-26](https://dgii.gov.do/legislacion/leyesTributarias/Documents/Codigo%20Tributario%20y%20Leyes%20que%20lo%20modifican%20y%20complementan/30-26.pdf))
+
+## Sources
+
+| Source | URL | Read on |
+|---|---|---|
+| DGII, Impuesto sobre la Renta page: read for the 2026 personal scale, the 27% and 30% rates, IR-1 and IR-2 dates, the asset tax section, IR-17 date, the 3% surcharge and 1.10% interest | https://dgii.gov.do/cicloContribuyente/obligacionesTributarias/principalesImpuestos/Paginas/impuestoSobreRenta.aspx | 2026-11-14 |
+| DGII, ITBIS page: read for the 18% rate, exempt goods and services and the 20-day IT-1 deadline | https://dgii.gov.do/cicloContribuyente/obligacionesTributarias/principalesImpuestos/Paginas/itbis.aspx | 2026-11-14 |
+| DGII, Aviso 10-26, Law 30-26 implementation calendar: read in full for start dates | https://dgii.gov.do/publicacionesOficiales/avisosInformativos/Documents/2026/10-26.pdf | 2026-11-14 |
+| Law 30-26 of 18 June 2026: read for arts. 3, 7, 10, 14, 15, 16, 17, 21, 22, 23, 25, 26 and 58 | https://dgii.gov.do/legislacion/leyesTributarias/Documents/Codigo%20Tributario%20y%20Leyes%20que%20lo%20modifican%20y%20complementan/30-26.pdf | 2026-11-14 |
+| Law 253-12: read for arts. 6 to 8 (Tax Code arts. 306, 306 Bis, 308) and art. 23 (ITBIS rates) | https://dgii.gov.do/legislacion/leyesTributarias/Documents/Codigo%20Tributario%20y%20Leyes%20que%20lo%20modifican%20y%20complementan/253-12.pdf | 2026-11-14 |
+| DGII, Calendario del contribuyente 2026: read for the monthly IR-3, IR-17 and anticipo entries | https://dgii.gov.do/publicacionesOficiales/Calendario%20del%20contribuyente/Calendario%20del%20contribuyente%202026.pdf | 2026-11-14 |
+| DGII, RST page: read for the regime outline and approval requirement | https://dgii.gov.do/contribuyentesRegistrados/regimenesEspeciales/RST | 2026-11-14 |
+| Tax Code, Law 11-92: cited for arts. 12, 271, 314, 342 and 401 to 407 from the earlier version; not re-read in this pass | https://dgii.gov.do/legislacion/leyesTributarias/Documents/Codigo%20Tributario%20y%20Leyes%20que%20lo%20modifican%20y%20complementan/11-92.pdf | not read on 2026-11-14 |
+
+Not yet confirmed: the Decree 265-19 RST limits for 2026 and whether the new RST regulation has been issued; the scale DGII published for fiscal year 2025 returns; the exact anticipo day each month in 2026 (the calendar shows dates on the 15th or 16th); the ITBIS withholding rate on services by individuals; Tax Code arts. 12, 271, 314, 342 and 401 to 407 as quoted from the earlier version (Law 11-92 not re-read on 14 November 2026); the second asset tax instalment dates that DGII's page prints with year 2026 for 31 March and 30 June 2026 closes; DGII's treatment of Christmas salary above one twelfth.
