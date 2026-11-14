@@ -43,27 +43,27 @@ Tax year: the calendar year. Currency: Czech koruna (CZK). Authority: the Financ
 | Item | Rate or amount | Year | Source |
 |---|---|---|---|
 | Rate on the tax base up to 36 times the average wage | 15% | 2026 | [ITA § 16(1)(a)](https://e-sbirka.gov.cz/sb/1992/586/2026-08-01) |
-| Rate on the tax base above 36 times the average wage | 23% | 2026 | ITA § 16(1)(b) |
+| Rate on the tax base above 36 times the average wage | 23% | 2026 | ITA § 16(1)(b); https://e-sbirka.gov.cz/sb/1992/586/2026-08-01 |
 | Average wage for tax purposes (ITA § 21g(2)) | CZK 48,967: general assessment base for 2024 of CZK 46,278 times coefficient 1.0581, rounded up | 2026 | [Government Regulation 365/2025 § 1](https://e-sbirka.gov.cz/sb/2025/365); Act 589/1992 § 23b(4) |
-| 23% threshold (36 × 48,967) | CZK 1,762,812 | 2026 | computed from the row above |
-| Expense lump sum: farming, forestry, water management and craft trades (řemeslné živnosti) | 80% of income, at most CZK 1,600,000 | 2026 | ITA § 7(7)(a) |
-| Expense lump sum: other trades | 60% of income, at most CZK 1,200,000 | 2026 | ITA § 7(7)(b) |
-| Expense lump sum: letting of property held in the business | 30% of income, at most CZK 600,000 | 2026 | ITA § 7(7)(c) |
-| Expense lump sum: other self-employment income (licensed and independent professions, royalties) | 40% of income, at most CZK 800,000 | 2026 | ITA § 7(7)(d) |
-| Basic taxpayer credit | CZK 30,840 a year | 2026 | ITA § 35ba(1)(a) |
-| Spouse credit | CZK 24,840, only with a child under 3 in the household and the spouse's own income at most CZK 68,000 | 2026 | ITA § 35bb |
-| Child tax benefit, first, second, third and further child | CZK 15,204; CZK 22,320; CZK 27,840 a year | 2026 | ITA § 35c(1) |
+| 23% threshold (36 × 48,967) | CZK 1,762,812 | 2026 | computed from the row above; https://e-sbirka.gov.cz/sb/1992/586/2026-08-01; https://www.cssz.gov.cz/-/prehled-nejdulezitejsich-udaju-pro-socialni-zabezpeceni-v-roce-2026 |
+| Expense lump sum: farming, forestry, water management and craft trades (řemeslné živnosti) | 80% of income, at most CZK 1,600,000 | 2026 | ITA § 7(7)(a); https://e-sbirka.gov.cz/sb/1992/586/2026-08-01 |
+| Expense lump sum: other trades | 60% of income, at most CZK 1,200,000 | 2026 | ITA § 7(7)(b); https://e-sbirka.gov.cz/sb/1992/586/2026-08-01 |
+| Expense lump sum: letting of property held in the business | 30% of income, at most CZK 600,000 | 2026 | ITA § 7(7)(c); https://e-sbirka.gov.cz/sb/1992/586/2026-08-01 |
+| Expense lump sum: other self-employment income (licensed and independent professions, royalties) | 40% of income, at most CZK 800,000 | 2026 | ITA § 7(7)(d); https://e-sbirka.gov.cz/sb/1992/586/2026-08-01 |
+| Basic taxpayer credit | CZK 30,840 a year | 2026 | ITA § 35ba(1)(a); https://e-sbirka.gov.cz/sb/1992/586/2026-08-01 |
+| Spouse credit | CZK 24,840, only with a child under 3 in the household and the spouse's own income at most CZK 68,000 | 2026 | ITA § 35bb; https://e-sbirka.gov.cz/sb/1992/586/2026-08-01 |
+| Child tax benefit, first, second, third and further child | CZK 15,204; CZK 22,320; CZK 27,840 a year | 2026 | ITA § 35c(1); https://e-sbirka.gov.cz/sb/1992/586/2026-08-01 |
 | Income needed for a tax bonus | § 6 or § 7 income of at least 6 times the minimum wage: CZK 134,400 | 2026 | ITA § 35c(4), § 21g(1); [MPSV, minimum wage](https://www.mpsv.cz/minimalni-mzda) (CZK 22,400 a month) |
-| Student credit | None: § 35ba(1) lists no student credit for 2026 | 2026 | ITA § 35ba(1) |
-| Advances: none due | Last known tax liability up to CZK 30,000 | 2026 | ITA § 38a(2)(a) |
-| Advances: two a year | 40% of the last known tax each, if it was over CZK 30,000 and up to CZK 150,000 | 2026 | ITA § 38a(3) |
-| Advances: four a year | 25% of the last known tax each, if it was over CZK 150,000 | 2026 | ITA § 38a(4) |
-| Flat-rate regime, band I: income limit in the previous year | CZK 1,000,000 from any activity; CZK 1,500,000 if at least 75% is 80% or 60% lump-sum income; CZK 2,000,000 if at least 75% is 80% lump-sum income | 2026 | ITA § 2a(5)(a) |
-| Flat-rate regime, band II: income limit | CZK 1,500,000 from any activity; CZK 2,000,000 if at least 75% is 80% or 60% lump-sum income | 2026 | ITA § 2a(5)(b) |
-| Flat-rate regime, band III: income limit | CZK 2,000,000 from any activity | 2026 | ITA § 2a(5)(c) |
+| Student credit | None: § 35ba(1) lists no student credit for 2026 | 2026 | ITA § 35ba(1); https://e-sbirka.gov.cz/sb/1992/586/2026-08-01 |
+| Advances: none due | Last known tax liability up to CZK 30,000 | 2026 | ITA § 38a(2)(a); https://e-sbirka.gov.cz/sb/1992/586/2026-08-01 |
+| Advances: two a year | 40% of the last known tax each, if it was over CZK 30,000 and up to CZK 150,000 | 2026 | ITA § 38a(3); https://e-sbirka.gov.cz/sb/1992/586/2026-08-01 |
+| Advances: four a year | 25% of the last known tax each, if it was over CZK 150,000 | 2026 | ITA § 38a(4); https://e-sbirka.gov.cz/sb/1992/586/2026-08-01 |
+| Flat-rate regime, band I: income limit in the previous year | CZK 1,000,000 from any activity; CZK 1,500,000 if at least 75% is 80% or 60% lump-sum income; CZK 2,000,000 if at least 75% is 80% lump-sum income | 2026 | ITA § 2a(5)(a); https://e-sbirka.gov.cz/sb/1992/586/2026-08-01 |
+| Flat-rate regime, band II: income limit | CZK 1,500,000 from any activity; CZK 2,000,000 if at least 75% is 80% or 60% lump-sum income | 2026 | ITA § 2a(5)(b); https://e-sbirka.gov.cz/sb/1992/586/2026-08-01 |
+| Flat-rate regime, band III: income limit | CZK 2,000,000 from any activity | 2026 | ITA § 2a(5)(c); https://e-sbirka.gov.cz/sb/1992/586/2026-08-01 |
 | Band I monthly payment | CZK 9,162: tax CZK 100; pension insurance CZK 5,756 (29.2% of the minimum base of 35% of the average wage, raised by 15%); health insurance CZK 3,306 (13.5% of 50% of the average wage). Each is rounded up to whole CZK. Act 90/2026 cut the minimum pension base for 2026 from 40% to 35% of the average wage from 1 July 2026, and for people in the flat-rate regime it applies from 1 January 2026, so the payment fell from CZK 9,984 | 2026 | ITA § 38lk(7)(a); [Act 589/1992 § 14(3)(a), (5)](https://e-sbirka.gov.cz/sb/1992/589/2026-07-01); [Act 90/2026 Art. II(4)](https://e-sbirka.gov.cz/sb/2026/90); [Act 592/1992 § 3a(2), (5), § 8a](https://e-sbirka.gov.cz/sb/1992/592); [Finanční správa, paušální daň 2025 and 2026](https://financnisprava.gov.cz/cs/dane/dane/dan-z-prijmu/pausalni-dan/informace-k-institutu-pausalni-dane-pro-rok-2025) |
-| Band II monthly payment | CZK 16,745: tax CZK 4,963, pension insurance CZK 8,191 (29.2% of CZK 28,050), health insurance CZK 3,591 (13.5% of CZK 319,200 / 12) | 2026 | ITA § 38lk(7)(b); Act 589/1992 § 14(3)(b); Act 592/1992 § 3a(5)(b); Finanční správa, same page |
-| Band III monthly payment | CZK 27,139: tax CZK 9,320, pension insurance CZK 12,527 (29.2% of CZK 42,900), health insurance CZK 5,292 (13.5% of CZK 470,400 / 12) | 2026 | ITA § 38lk(7)(c); Act 589/1992 § 14(3)(c); Act 592/1992 § 3a(5)(c); Finanční správa, same page |
+| Band II monthly payment | CZK 16,745: tax CZK 4,963, pension insurance CZK 8,191 (29.2% of CZK 28,050), health insurance CZK 3,591 (13.5% of CZK 319,200 / 12) | 2026 | ITA § 38lk(7)(b); Act 589/1992 § 14(3)(b); Act 592/1992 § 3a(5)(b); Finanční správa, same page; https://financnisprava.gov.cz/cs/dane/dane/dan-z-prijmu/pausalni-dan/informace-k-institutu-pausalni-dane-pro-rok-2025; https://e-sbirka.gov.cz/sb/1992/589 |
+| Band III monthly payment | CZK 27,139: tax CZK 9,320, pension insurance CZK 12,527 (29.2% of CZK 42,900), health insurance CZK 5,292 (13.5% of CZK 470,400 / 12) | 2026 | ITA § 38lk(7)(c); Act 589/1992 § 14(3)(c); Act 592/1992 § 3a(5)(c); Finanční správa, same page; https://financnisprava.gov.cz/cs/dane/dane/dan-z-prijmu/pausalni-dan/informace-k-institutu-pausalni-dane-pro-rok-2025; https://e-sbirka.gov.cz/sb/1992/589 |
 | Late payment interest | CNB repo rate on the first day of the calendar half-year in which each day of interest falls, plus 8 points: 11.50% a year for days from 1 January to 30 June 2026, 11.75% for days from 1 July to 31 December 2026 | 2026 | [Tax Code § 251a(5), § 252(4)](https://e-sbirka.gov.cz/sb/2009/280/2026-01-01); [Government Regulation 351/2013 § 2(1)](https://e-sbirka.gov.cz/sb/2013/351); [CNB repo history](https://www.cnb.cz/cs/faq/vyvoj_repo_historie.txt) |
 
 The tax is worked out on the base after deductions, rounded down to whole hundreds of CZK, as the sum of each slice times its rate (ITA § 16(2)). The tax is then rounded up to whole CZK, and each advance up to whole hundreds of CZK (Tax Code § 146(1), (2)).
@@ -258,6 +258,7 @@ expected:
 | Act No. 180/2026 Coll., sales registration and amendments (ITA changes from 1 January 2027; § 31(1) transitional rule) | https://e-sbirka.gov.cz/sb/2026/180 | 2026-10-23 |
 | Finanční správa, change of the interest cap (Act 386/2020 Art. IV(3): CZK 300,000 for housing acquired before 2021) | https://financnisprava.gov.cz/assets/cs/prilohy/d-seznam-dani/Informace-ke-zmene-vyse-limitu-uhrnne-castky-uroku.pdf | 2026-10-23 |
 | Czech National Bank, two-week repo rate history | https://www.cnb.cz/cs/faq/vyvoj_repo_historie.txt | 2026-10-23 |
+| Read for 23% threshold (36 × 48,967): www.cssz.gov.cz | https://www.cssz.gov.cz/-/prehled-nejdulezitejsich-udaju-pro-socialni-zabezpeceni-v-roce-2026 | 2026-11-14 |
 
 Not yet confirmed:
 - The Financial Administration had not published the filing dates for the 2026 return. The 1 April, 3 May and 1 July 2027 dates come from Tax Code §§ 33 and 136 and the way it counted the 2025 dates.
