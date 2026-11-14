@@ -39,7 +39,7 @@ Ordinary C corporations doing business or earning income in SC, including LLCs f
 | Item | Rate, amount and condition | Official source |
 |---|---|---|
 | Ordinary C corporation income | 5% of SC taxable income | [12-6-530](https://www.scstatehouse.gov/code/t12c006.php) |
-| Annual licence fee | fifteen dollars plus one dollar for each thousand dollars, or fraction of a thousand dollars, of applicable capital stock and paid-in or capital surplus; minimum twenty-five dollars | [12-20-50(A)](https://www.scstatehouse.gov/code/t12c020.php) |
+| Annual licence fee | USD 15 plus USD 1 for each USD 1,000, or fraction of USD 1,000, of applicable capital stock and paid-in or capital surplus; minimum USD 25 (in words on the page) | [12-20-50(A)](https://www.scstatehouse.gov/code/t12c020.php) |
 | Initial CL-1 licence fee | USD 25, within 60 days of doing business/using capital if not already filed/paid with Secretary of State | [account setup](https://dor.sc.gov/business-income-taxes/corporate/c-corporation) |
 | Electronic filing/payment | Liability USD 15,000 or more per filing period | [filing mandate](https://dor.sc.gov/business-income-taxes/corporate/c-corporation) |
 | Corporate estimated tax | Income tax less credits USD 100 or more under verified instructions | [Extensions and Estimated Payments](https://dor.sc.gov/sites/dor/files/forms/SC1120I.pdf) |
