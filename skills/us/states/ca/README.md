@@ -4,11 +4,14 @@ applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
 covered_by:
   IT-IND: ca-540-individual-return
+  IT-CORP: ca-llc-fee-and-tax
   VAT: california-sales-tax
+  SC: ca-payroll
+  PR: ca-payroll
   XB: ca-residency-leaving-california
 partial:
   IT-IND: "2026 standard deduction, exemption credits and credit amounts not yet published by the FTB; 2025 amounts shown"
-  IT-CORP: "no Form 100 or 100S skill; only the LLC annual tax, fee and Form 568"
+  IT-CORP: "LLC annual tax and fee only (with Form 568 and the PTE elective tax); no Form 100 or 100S corporation franchise tax skill"
   TP: "no transfer pricing or combined-report skill"
 ---
 
@@ -20,21 +23,22 @@ Calendar tax year for individuals. Income tax authority: the Franchise Tax Board
 
 | Domain | Skill | Status |
 |---|---|---|
-| IT-IND, individual income tax (method) | ca-540-individual-return | checked against the law (partial) |
-| IT-IND, individual income tax (figures) | ca-income-tax | checked against the law (partial) |
+| IT-IND, individual income tax (method, the `covered_by` owner) | ca-540-individual-return | checked against the law (partial) |
+| IT-IND, individual income tax (figures card, linked from the method) | ca-income-tax | checked against the law (partial) |
 | IT-IND, estimated tax | ca-estimated-tax-540es | checked against the law |
 | IT-IND, health coverage penalty | ca-form-3853-coverage | checked against the law |
-| IT-CORP, LLC annual tax and fee | ca-llc-fee-and-tax, ca-smllc-form-568 | sourced from the law (half B) |
-| IT-CORP, pass-through entity elective tax | ca-pte-elective-tax | sourced from the law (half B) |
-| VAT / sales and use tax | california-sales-tax, ca-sales-use-tax | sourced from the law (half B) |
-| SC and PR, payroll and unemployment insurance | ca-payroll | sourced from the law (half B) |
+| IT-CORP, LLC annual tax and fee (the `covered_by` owner) | ca-llc-fee-and-tax | checked against the law (partial) |
+| IT-CORP, single-member LLC Form 568 filing | ca-smllc-form-568 | checked against the law |
+| IT-CORP, pass-through entity elective tax | ca-pte-elective-tax | checked against the law |
+| VAT / sales and use tax | california-sales-tax | checked against the law |
+| SC and PR, payroll withholding, SDI and unemployment insurance | ca-payroll | checked against the law |
 | XB, cross-border and residency | ca-residency-leaving-california | checked against the law |
 | Workflow, freelancer intake | us-ca-freelance-intake | checked against the law |
 | Workflow, federal and California assembly | us-ca-return-assembly | checked against the law |
 | Bookkeeping | ca-bookkeeping-monthly-close | accountant-reviewed |
-| Formation | ca-formation | sourced from the law (half B) |
+| Formation | ca-formation | checked against the law |
 
-`ca-540-es-estimated-tax` was retired on 2026-11-13; its content is in `ca-estimated-tax-540es`. Rows marked half B are being rewritten separately and their status may change.
+Each job in `covered_by` names one skill. The other files in a row with the same domain do a different step of that job (figures, estimates, a filing, a workflow) and link to the owner. `ca-540-es-estimated-tax` was retired on 2026-11-13; its content is in `ca-estimated-tax-540es`. `ca-sales-use-tax` was retired on 2026-11-13; its content is in `california-sales-tax`.
 
 Out of scope for this pack: property tax (county level); corporate franchise tax on Form 100 and S corporations on Form 100S; cannabis, fuel, insurance and other industry taxes; local business taxes (city and county). California has no estate or inheritance tax.
 
