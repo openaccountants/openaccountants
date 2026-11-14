@@ -17,13 +17,14 @@ category: international
 job: listed-share-disposal-withholding
 tax_year: 2026
 tax_year_notes: "Intended 2026 research draft; incomplete operative amendment/commencement chain and TAA cutover; live use held."
-last_updated: 2026-11-01
-version: 0.1
+last_updated: 2026-11-14
+version: 0.2
 tier: 2
 domain: cross-border
+type: computation
 ---
 
-# Malawi listed-share disposal withholding v0.1
+# Malawi listed-share disposal withholding v0.2
 
 > **General reference only.** This Guide is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in Malawi.
 

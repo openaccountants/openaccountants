@@ -1,10 +1,10 @@
 ---
 name: italy-crypto-tax
 description: Use this skill whenever asked about Italy cryptocurrency or digital asset taxation. Trigger on phrases like "crypto tax Italy", "tasse crypto Italia", "Bitcoin Italy", "cripto-attività", "cryptocurrency gains Italy", "imposta sostitutiva crypto", "staking Italy", "mining income Italy", "NFT tax Italy", "Quadro RT crypto", "Quadro RW crypto", "IVCA crypto", "Modello Redditi PF crypto", "Coinbase Italy tax", "Binance Italy", "Revolut crypto Italy", "DAC8 Italy", "Legge di Bilancio crypto", or any question about the income tax, capital gains, wealth tax, or reporting obligations for cryptocurrency, tokens, or digital assets for Italian tax residents. Covers Legge di Bilancio 2023 (L. 197/2022) classification, Legge di Bilancio 2025 (L. 207/2024) rate changes, IVCA wealth tax, Quadro RW monitoring, and Quadro RT Section V reporting. ALWAYS read this skill before touching any Italy crypto work.
-version: 1.1
+version: 1.2
 jurisdiction: IT
 tax_year: 2026
-last_updated: 2026-10-29
+last_updated: 2026-11-14
 drafted_by: OpenAccountants
 approved_by: pending
 depends_on:
@@ -13,9 +13,10 @@ category: crypto
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: crypto
+type: situation-rules
 ---
 
-# Crypto-asset tax in Italy (cripto-attività) v1.1
+# Crypto-asset tax in Italy (cripto-attività) v1.2
 
 Tax year **2026**, private holdings of Italian resident individuals. This skill computes ordinary crypto gains/income and the annual crypto-value tax, identifies the special euro e-money-token rate, and distinguishes income, monitoring and wealth-tax duties. Outputs are working papers for a commercialista; they do not carry accountant attestation.
 

@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/netherlands-transfer-pricing"
   jurisdiction: "NL"
   tax_year: "2026"
-  last_updated: "2026-10-24"
+  last_updated: "2026-11-14"
 ---
 
-# Netherlands transfer pricing: pricing, documentation and reporting, 2026 v1.2
+# Netherlands transfer pricing: pricing, documentation and reporting, 2026 v1.3
 
 Tax year 2026. The law was read as in force on 23 October 2026; the articles used were unchanged from their 1 January 2026 text. This skill covers Dutch corporate transfer pricing (verrekenprijzen): the arm's length rule, the mismatch rules, documentation, country-by-country (CbC) reporting, advance certainty, and what happens when any of it is missing. It does not produce a market price without transaction evidence. Corporate tax computation itself is in `nl-corporate-tax`.
 
@@ -198,4 +198,4 @@ Not yet confirmed: how the Belastingdienst sets the amount of an article 29h fin
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-24. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `netherlands-transfer-pricing` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/netherlands-transfer-pricing. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `netherlands-transfer-pricing` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/netherlands-transfer-pricing. If neither is available, confirm every figure against the official source pages cited above before relying on it.

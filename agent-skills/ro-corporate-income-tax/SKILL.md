@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/ro-corporate-income-tax"
   jurisdiction: "RO"
   tax_year: "2026"
-  last_updated: "2026-10-31"
+  last_updated: "2026-11-14"
 ---
 
 # Romania company tax: profit tax and micro-enterprise tax (2026)
@@ -64,26 +64,26 @@ All rows come from the [ANAF consolidated Fiscal Code](https://static.anaf.ro/st
 
 | Item | Rate or amount | Year | Source |
 |---|---|---|---|
-| Profit tax rate | 16% of taxable profit | 2026 | art. 17, ANAF consolidated Fiscal Code |
-| Night bars, night clubs, discos, casinos | the higher of 16% of profit and 5% of the revenue from these activities | 2026 | art. 18, same page |
-| Minimum turnover tax (IMCA), companies with prior-year turnover above EUR 50,000,000 | 0.5% x (total revenue minus listed revenue minus new fixed-asset investment minus depreciation on assets from 2024); paid where higher than profit tax | 2026 (the rule ends 31 December 2026) | art. 18^1(1), (3), (16) and (17), same page; [OUG 89/2025, art. I point 1 (ANAF copy)](https://static.anaf.ro/static/10/Anaf/legislatie/OUG_89_2025.pdf) |
-| Bank turnover tax, on top of profit tax | 4% of listed revenue (2% for banks below 0.2% market share) | 2026 | art. 46^1(1)(b) and (c), same page |
+| Profit tax rate | 16% of taxable profit | 2026 | art. 17, ANAF consolidated Fiscal Code, https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm |
+| Night bars, night clubs, discos, casinos | the higher of 16% of profit and 5% of the revenue from these activities | 2026 | art. 18, https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm |
+| Minimum turnover tax (IMCA), companies with prior-year turnover above EUR 50,000,000 | 0.5% x (total revenue minus listed revenue minus new fixed-asset investment minus depreciation on assets from 2024); paid where higher than profit tax | 2026 (the rule ends 31 December 2026) | art. 18^1(1), (3), (16) and (17), https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm ; [OUG 89/2025, art. I point 1 (ANAF copy)](https://static.anaf.ro/static/10/Anaf/legislatie/OUG_89_2025.pdf) |
+| Bank turnover tax, on top of profit tax | 4% of listed revenue (2% for banks below 0.2% market share) | 2026 | art. 46^1(1)(b) and (c), https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm |
 | Micro-enterprise tax rate | 1% of revenue | 2026 | art. 51(1), same page; [OUG 89/2025, art. I points 4 and 5, in force 1 January 2026 (art. II(1))](https://static.anaf.ro/static/10/Anaf/legislatie/OUG_89_2025.pdf) |
 | Micro-enterprise revenue ceiling | EUR 100,000 (RON equivalent), linked enterprises included | 2026 | art. 47(1)(c), art. 52(1) and art. 54(3), same page; [OUG 156/2024 (ANAF copy)](https://static.anaf.ro/static/10/Anaf/legislatie/OUG_156_2024.pdf) set EUR 250,000 for 2025 and EUR 100,000 from 1 January 2026; [OUG 8/2026, art. 6 points 15 and 20 (ANAF copy)](https://static.anaf.ro/static/10/Anaf/legislatie/OUG_8_2026.pdf) restated it |
-| Tax loss carry-forward | 5 years, set against at most 70% of each year's taxable profit | 2026 | art. 31(1) and (8), same page |
-| Interest limit: deductible exceeding borrowing costs | EUR 1,000,000 a year (EUR 500,000 for affiliated-party debt not financing listed assets), plus 30% of tax EBITDA; excess carried forward without time limit | 2026 | art. 40^2(1), (4) and (7), same page |
-| Sponsorship credit | sponsorship deducted from profit tax up to the lower of 0.75% of turnover and 20% of profit tax | 2026 | art. 25(4)(i), same page |
-| Protocol (entertainment) expenses | deductible up to 2% of accounting profit plus profit tax and protocol expenses | 2026 | art. 25(3)(a), same page |
-| Social expenses | deductible up to 5% of salary costs | 2026 | art. 25(3)(b), same page |
-| Cars not used only for business (up to 3,500 kg, up to 9 seats) | 50% of running costs deductible | 2026 | art. 25(3)(l), same page |
-| Legal reserve | deductible up to 5% of accounting profit before profit tax, until it reaches one fifth of share capital | 2026 | art. 26(1)(a), same page |
-| Depreciable fixed asset threshold | tax value of RON 5,000 or more | 2026 | art. 28(2)(b), same page |
+| Tax loss carry-forward | 5 years, set against at most 70% of each year's taxable profit | 2026 | art. 31(1) and (8), https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm |
+| Interest limit: deductible exceeding borrowing costs | EUR 1,000,000 a year (EUR 500,000 for affiliated-party debt not financing listed assets), plus 30% of tax EBITDA; excess carried forward without time limit | 2026 | art. 40^2(1), (4) and (7), https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm |
+| Sponsorship credit | sponsorship deducted from profit tax up to the lower of 0.75% of turnover and 20% of profit tax | 2026 | art. 25(4)(i), https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm |
+| Protocol (entertainment) expenses | deductible up to 2% of accounting profit plus profit tax and protocol expenses | 2026 | art. 25(3)(a), https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm |
+| Social expenses | deductible up to 5% of salary costs | 2026 | art. 25(3)(b), https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm |
+| Cars not used only for business (up to 3,500 kg, up to 9 seats) | 50% of running costs deductible | 2026 | art. 25(3)(l), https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm |
+| Legal reserve | deductible up to 5% of accounting profit before profit tax, until it reaches one fifth of share capital | 2026 | art. 26(1)(a), https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm |
+| Depreciable fixed asset threshold | tax value of RON 5,000 or more | 2026 | art. 28(2)(b), https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm |
 | Dividend tax withheld on dividends paid to a Romanian company | 16% on dividends distributed from 1 January 2026 (10% stays on dividends distributed in 2025, including interim dividends). Nil where the recipient has held at least 10% for one full year and both companies pay profit tax | 2026 | art. 43(2) and (4), same page; [Legea 141/2025, art. II point 1 and art. VII(1)(a) and (2) (ANAF copy)](https://static.anaf.ro/static/10/Anaf/legislatie/L_141_2025.pdf) |
-| Dividend tax on dividends paid to resident individuals | 16%, final, on dividends distributed from 1 January 2026 | 2026 | art. 97(7), same page; Legea 141/2025 art. VII(1)(c) |
-| Withholding on dividends paid to non-residents | 16% | 2026 | art. 224(4)(b), same page |
+| Dividend tax on dividends paid to resident individuals | 16%, final, on dividends distributed from 1 January 2026 | 2026 | art. 97(7), https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm; Legea 141/2025 art. VII(1)(c) |
+| Withholding on dividends paid to non-residents | 16% | 2026 | art. 224(4)(b), https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm |
 | Late-payment interest | 0.02% a day | 2026 | Procedure Code art. 174(5), [ANAF consolidated Procedure Code](https://static.anaf.ro/static/10/Anaf/cod_procedura/Cod_Procedura_Fiscala_2023.htm) |
-| Late-payment penalty | 0.01% a day | 2026 | Procedure Code art. 176(2), same page |
-| Under-declaration penalty | 0.08% a day on tax set by ANAF that was not declared or declared wrongly | 2026 | Procedure Code art. 181(1), same page |
+| Late-payment penalty | 0.01% a day | 2026 | Procedure Code art. 176(2), https://static.anaf.ro/static/10/Anaf/cod_procedura/Cod_Procedura_Fiscala_2023.htm |
+| Under-declaration penalty | 0.08% a day on tax set by ANAF that was not declared or declared wrongly | 2026 | Procedure Code art. 181(1), https://static.anaf.ro/static/10/Anaf/cod_procedura/Cod_Procedura_Fiscala_2023.htm |
 
 ## The taxable base
 
@@ -316,22 +316,22 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Fiscal Code, Legea 227/2015, ANAF consolidated text (last update Legea 170/2026), art. 1, 13, 16 to 31, 36, 37, 39, 40^2 to 40^5, 41 to 43, 45, 46^1, 47 to 57, 97, 224, 229 | https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm | 2026-10-23 |
-| Fiscal Procedure Code, Legea 207/2015, ANAF consolidated text (last update Legea 170/2026), art. 174 to 176, 181, 336 | https://static.anaf.ro/static/10/Anaf/cod_procedura/Cod_Procedura_Fiscala_2023.htm | 2026-10-23 |
-| OUG 156/2024, ANAF copy (micro ceiling EUR 250,000 for 2025, EUR 100,000 from 2026) | https://static.anaf.ro/static/10/Anaf/legislatie/OUG_156_2024.pdf | 2026-10-23 |
-| OUG 89/2025, ANAF copy (single 1% micro rate; IMCA 0.5% for 2026 and its end date) | https://static.anaf.ro/static/10/Anaf/legislatie/OUG_89_2025.pdf | 2026-10-23 |
-| Legea 141/2025 privind unele măsuri fiscal-bugetare, ANAF copy (dividend tax 16%) | https://static.anaf.ro/static/10/Anaf/legislatie/L_141_2025.pdf | 2026-10-23 |
-| OUG 8/2026, ANAF copy (micro rules, D101 deadline, quarter I payment) | https://static.anaf.ro/static/10/Anaf/legislatie/OUG_8_2026.pdf | 2026-10-23 |
-| Ordonanța 6/2026, ANAF copy (repeal of art. 25^1) | https://static.anaf.ro/static/10/Anaf/legislatie/OG_6_2026.pdf | 2026-10-23 |
-| ANAF, form 101 (annual profit tax return) | https://static.anaf.ro/static/10/Anaf/Declaratii_R/101.html | 2026-10-23 |
-| ANAF, form 100 (payment obligations to the state budget) | https://static.anaf.ro/static/10/Anaf/Declaratii_R/100.html | 2026-10-23 |
+| Fiscal Code, Legea 227/2015, ANAF consolidated text (last update Legea 170/2026), art. 1, 13, 16 to 31, 36, 37, 39, 40^2 to 40^5, 41 to 43, 45, 46^1, 47 to 57, 97, 224, 229 | https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm | 2026-11-14, read for art. 17, 18, 18^1, 25, 26, 28, 31, 40^2, 46^1, 97 and 224: rates, limits and dividend tax |
+| Fiscal Procedure Code, Legea 207/2015, ANAF consolidated text (last update Legea 170/2026), art. 174 to 176, 181, 336 | https://static.anaf.ro/static/10/Anaf/cod_procedura/Cod_Procedura_Fiscala_2023.htm | 2026-11-14, read for art. 174, 176 and 181: interest and penalty rates |
+| OUG 156/2024, ANAF copy (micro ceiling EUR 250,000 for 2025, EUR 100,000 from 2026) | https://static.anaf.ro/static/10/Anaf/legislatie/OUG_156_2024.pdf | 2026-11-14, read for the micro-enterprise ceilings for 2025 and 2026 |
+| OUG 89/2025, ANAF copy (single 1% micro rate; IMCA 0.5% for 2026 and its end date) | https://static.anaf.ro/static/10/Anaf/legislatie/OUG_89_2025.pdf | 2026-11-14, read for art. I and II: the 1% micro rate and the IMCA end date |
+| Legea 141/2025 privind unele măsuri fiscal-bugetare, ANAF copy (dividend tax 16%) | https://static.anaf.ro/static/10/Anaf/legislatie/L_141_2025.pdf | 2026-11-14, read for art. VII: the 16% dividend tax |
+| OUG 8/2026, ANAF copy (micro rules, D101 deadline, quarter I payment) | https://static.anaf.ro/static/10/Anaf/legislatie/OUG_8_2026.pdf | 2026-11-14, read for the micro rules and the D101 deadline |
+| Ordonanța 6/2026, ANAF copy (repeal of art. 25^1) | https://static.anaf.ro/static/10/Anaf/legislatie/OG_6_2026.pdf | 2026-11-14, read for the repeal of art. 25^1 |
+| ANAF, form 101 (annual profit tax return) | https://static.anaf.ro/static/10/Anaf/Declaratii_R/101.html | 2026-11-14, read for the D101 form and its instructions |
+| ANAF, form 100 (payment obligations to the state budget) | https://static.anaf.ro/static/10/Anaf/Declaratii_R/100.html | 2026-11-14, read for the D100 form and its instructions |
 
 Not yet confirmed:
-- the D101 deadline for the 2025 return (OUG 8/2026 applies the rewritten art. 42 from the 2026 return);
+- the D101 deadline for the 2025 return (OUG 8/2026 applies the rewritten art. 42 from the 2026 return); (2026-11-14, read for the micro rules and the D101 deadline)
 - how long unused sponsorship carries forward (art. 25(4)(ț) refers to amounts carried forward without giving a period);
 - the official RON/EUR rate at 31 December 2025 for the micro and IMCA tests;
 - the Pillar Two minimum tax for large groups, which this skill does not cover.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-31. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ro-corporate-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ro-corporate-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ro-corporate-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ro-corporate-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

@@ -2,17 +2,18 @@
 name: gh-company-formation
 description: >
   Use this skill to choose an entity and register a business in Ghana in 2026: entity types, Office of the Registrar of Companies steps, forms, fees, 1% capital duty, beneficial ownership, annual returns, the Ghana Investment Promotion Authority Act, 2026 (Act 1173) minimum foreign capital for trading enterprises, tax registration and the first tax dates. Trigger on "register a company in Ghana", "ORC Ghana", "foreign company Ghana", "GIPC minimum capital", "annual returns Ghana", "external company Ghana". Tax computations sit in the other Ghana skills.
-version: 0.2
+version: 0.3
 jurisdiction: GH
 category: formation
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: formation
+type: filing-howto
 ---
 
-# Ghana Company Formation and Entity Choice v0.2
+# Ghana Company Formation and Entity Choice v0.3
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 

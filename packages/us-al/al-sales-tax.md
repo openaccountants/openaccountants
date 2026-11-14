@@ -1,7 +1,7 @@
 ---
 name: al-sales-tax
 description: Use this skill whenever asked about Alabama sales tax, Alabama use tax, Alabama sales tax nexus, ADOR sales tax filing, self-administered city taxes in Alabama, or Alabama grocery food taxation. Trigger on phrases like "Alabama sales tax", "AL sales tax", "ADOR", "Code of Ala. §40-23", "Alabama local tax", "Alabama grocery tax", "self-administered cities Alabama", or any request involving Alabama state and local sales and use tax compliance. ALWAYS load us-sales-tax first for federal context.
-version: 2.3
+version: 2.4
 jurisdiction: US-AL
 tax_year: 2026
 last_updated: 2026-11-13
@@ -56,11 +56,13 @@ See also: `us-sales-tax` (load first), `alabama-cross-border` (remote sellers), 
 
 ## Deadlines and filing
 
-- State returns are filed with ALDOR (My Alabama Taxes portal); self-administered cities are filed separately with each city, and ALDOR-administered locals with the state (ALDOR Sales Tax page on the administration split). Filing frequencies and return form IDs: see Not yet confirmed.
+- State returns are filed with ALDOR through My Alabama Taxes; self-administered cities are filed separately with each city, and ALDOR-administered locals with the state (ALDOR Sales Tax page). Select the sales-tax account and reporting period, reconcile gross retail sales and deductions to the sales ledger, enter taxable sales in the appropriate rate categories, compute the tax and permitted timely discount, then submit and retain return acknowledgment plus a separate payment reference. Exact current screen labels/form IDs remain unconfirmed.
+- The **March 2026 ALDOR Sales Taxes Brochure**, Due Dates section, requires monthly returns including zero-tax periods, with return/payment by the 20th of the next month. After a full calendar year, alternative frequency requires a written election by February 20 of the year concerned. The brochure gives prior-calendar-year state-liability thresholds below $2,400 for quarterly, below $1,200 for semiannual, and below $600 for annual filing, plus the stated limited-activity alternatives. Quarterly is due the 20th after quarter end; semiannual July 20/January 20; annual January 20 after year end. Keep the assigned frequency until the election is effective, and confirm the statutory averaging basis when applying the dollar thresholds to an account.
+- A timely sales-tax payment allows discount at 5% of the first $100 of tax and 2% of excess, capped at $400 monthly. The brochure warns that payment after 4 p.m. Central on the due date incurs penalty/interest; do not treat submission of a return as payment. [March 2026 ALDOR brochure, both pages read](https://www.revenue.alabama.gov/wp-content/uploads/2022/03/Sales_Tax-Sales_Tax_Brochure.pdf).
 
 ## Penalties and interest
 
-- Penalty and interest percentages for sales tax are not stated on the pages read; confirm current provisions (Title 40) with ALDOR before advising. See Not yet confirmed.
+- The March 2026 ALDOR brochure states failure to file at 10% of tax required or $50, whichever is greater; failure to pay at 10% of delinquent tax; interest at the current section 40-1-44 rate. The timely discount is unavailable after the payment deadline. Fraud and the period-specific interest rate remain unconfirmed. [ALDOR brochure, Due Dates section](https://www.revenue.alabama.gov/wp-content/uploads/2022/03/Sales_Tax-Sales_Tax_Brochure.pdf).
 
 ## Cross-border points
 
@@ -122,6 +124,28 @@ expected:
   ssut_due: 1000.00
 ```
 
+**Example 4: timely discount versus late filing/payment**
+
+Assume a monthly state sales-tax liability of $1,000. Timely discount is $5 on the first $100 plus $18 on the balance, so $977 is remitted. If both filing and payment are late, no timely discount applies: a $100 filing penalty plus $100 payment penalty gives $1,200 before interest. These alternative facts show the consequence of meeting the deadline, not an election to defer tax.
+
+```oa-check
+name: AL monthly sales tax timely discount and late-payment comparison
+inputs:
+  tax: 1000
+steps:
+  - discount: min(min(tax, 100) * 0.05 + max(tax - 100, 0) * 0.02, 400)
+  - timely_payment: tax - discount
+  - filing_penalty: max(tax * 0.10, 50)
+  - payment_penalty: tax * 0.10
+  - late_before_interest: tax + filing_penalty + payment_penalty
+expected:
+  discount: 23
+  timely_payment: 977
+  filing_penalty: 100
+  payment_penalty: 100
+  late_before_interest: 1200
+```
+
 ## Ask the client first
 
 - What products or services are sold (food at 2% state versus the general 4%; machinery at 1.5%; vehicles at 2%)?
@@ -137,14 +161,16 @@ expected:
 |---|---|---|---|
 | 1 | ALDOR State Sales and Use Tax Rates, read for 4% general, 2% food from 9/1/2025, 3% food 9/1/2023 to 8/31/2025, 2% automotive, 1.5% manufacturing and farm machinery, vending 3%/4%, amusement 4%, SSUT 8%, rental rates | https://www.revenue.alabama.gov/sales-use/state-sales-use-tax-rates/ | 2026-11-13 |
 | 2 | ALDOR Sales Tax page, read for authority, application, manufactured home set-up 2%, local .10% to 5%, administration split | https://www.revenue.alabama.gov/tax-types/sales-tax/ | 2026-11-13 |
-| 3 | ALDOR Sales and Use Tax Incentives page, read for Chapter 23, Title 40; exemptions with Code sections | https://revenue.alabama.gov/taxes-fees/sales-use-tax/ | 2026-11-13 |
+| 3 | ALDOR Sales and Use Tax Incentives page, read for Chapter 23, Title 40; exemptions with Code sections | https://www.revenue.alabama.gov/tax-incentives/sales-use-tax/ | 2026-11-13 |
 | 4 | ALDOR notice: State Sales and Use Tax Rate Reduced on Food Beginning September 1, 2023, read for Act 2023-554, SNAP definition, local food rates | https://www.revenue.alabama.gov/notice-state-sales-and-use-tax-rate-reduced-on-food-beginning-september-1-2023/ | 2026-11-13 |
 | 5 | ALDOR notice: State Sales and Use Tax Rate on Food Remains at Three Percent, read for September 1, 2024 | https://www.revenue.alabama.gov/notice-state-sales-and-use-tax-rate-on-food-remains-at-three-percent/ | 2026-11-13 |
 | 6 | ALDOR notice: State Sales and Use Tax Rate Reduced on Food Beginning September 1, 2025, read for Act 2025-305 | https://www.revenue.alabama.gov/notice-state-sales-and-use-tax-rate-reduced-on-food-beginning-september-1-2025/ | 2026-11-13 |
 | 7 | ALDOR notice: Temporary Suspension of State Sales and Use Tax on Food, read for Act 2026-604, May 1 to June 30, 2026 | https://www.revenue.alabama.gov/notice-temporary-suspension-of-state-sales-and-use-tax-on-food/ | 2026-11-13 |
 | 8 | ALDOR FAQ: Are all remote sellers required to register in Alabama?, read for $250,000 threshold, October 1, 2018, threshold computation, SSUT 8%, marketplace facilitators | https://www.revenue.alabama.gov/faqs/are-all-remote-sellers-required-to-register-in-alabama/ | 2026-11-13 |
 
-Not yet confirmed: the maximum combined state and local rate and city-by-city combined rates (an earlier draft carried "~11%" and ~9% to 10% for the large cities without a source); the number of self-administered cities (an earlier draft carried ~200+); destination-based sourcing and Alabama's Streamlined Sales Tax status; the late-filing and fraud penalty percentages for sales tax (an earlier draft carried 10% of tax due and 50% of the deficiency); the taxability of clothing, canned or downloaded software, SaaS, digital goods, professional services and prescription drugs (an earlier draft carried these without sources); sales tax filing frequencies and return form IDs; the dates of any 2026 back-to-school sales tax holiday.
+| 9 | ALDOR Sales Taxes Brochure, March 2026, read for both pages, especially monthly/alternative-frequency deadlines, written election, discount, payment cutoff and ordinary filing/payment penalties | https://www.revenue.alabama.gov/wp-content/uploads/2022/03/Sales_Tax-Sales_Tax_Brochure.pdf | 2026-11-13 |
+
+Not yet confirmed: the maximum combined state and local rate and city-by-city combined rates (an earlier draft carried "~11%" and ~9% to 10% for the large cities without a source); the number of self-administered cities (an earlier draft carried ~200+); destination-based sourcing and Alabama's Streamlined Sales Tax status; the fraud penalty percentage and period-specific interest rate for sales tax (the ordinary late filing/payment rules are now supplied from the March 2026 brochure); the taxability of clothing, canned or downloaded software, SaaS, digital goods, professional services and prescription drugs (an earlier draft carried these without sources); the exact statutory averaging interpretation for alternative-frequency thresholds and current return screen/form IDs; the dates of any 2026 back-to-school sales tax holiday.
 
 <!-- openaccountants-cta-block -->
 
