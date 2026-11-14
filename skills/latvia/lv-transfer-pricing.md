@@ -1,14 +1,15 @@
 ---
 name: lv-transfer-pricing
 description: "Latvian transfer pricing for tax year 2026 under the distribution-based Corporate Income Tax Law: who counts as a related person (Law on Taxes and Fees, article 1(18)), the arm's length price difference taxed as a deemed profit distribution (CIT Law, article 4(2)(2)(e), base divided by 0.8 and taxed at 20%), the methods and 5% mark-up for low value-adding services (Cabinet Regulation No. 677), and the documentation rules in article 15.2 as amended from 1 January 2026: a controlled transactions report filed above EUR 250,000, a local file above EUR 250,000, a master file above EUR 20,000,000, production deadlines, the penalty of up to 1% capped at EUR 100,000, the EUR 750m country-by-country report, and advance pricing agreements above EUR 1,430,000. Trigger on: Latvia transfer pricing, transfertcenas, kontrolēto darījumu pārskats, Latvian local file, VID transfer pricing penalty. Out of scope: the general CIT computation (lv-corporate-income-tax), individuals (latvia-income-tax), planning (latvia-tax-optimization)."
-version: 0.1
+version: 0.2
 jurisdiction: LV
 tax_year: 2026
-last_updated: 2026-10-24
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: transfer-pricing
+type: situation-rules
 ---
 
 # Latvian transfer pricing (tax year 2026)
