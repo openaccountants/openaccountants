@@ -48,7 +48,7 @@ Conservative defaults:
 | Item | Rate or amount | Base and condition | Source |
 | --- | --- | --- | --- |
 | IHSS IVM, employer (Decreto 48-2024 art. 1) | 3.5% | Salary up to the IVM ceiling | SAR copy of Decreto 48-2024, La Gaceta 36,545: https://www.sar.gob.hn/download/decreto-no-48-2024-no-36545-de-fecha-28-de-mayo-2025-contentivo-ley-para-la-regulacion-de-las-aportaciones-y-cotizaciones-del-instituto-hondureno-social-ihssde-seguridad-social-ihss/?wpdmdl=23132 |
-| IHSS IVM, employee (Decreto 48-2024 art. 1) | 2.5% | Salary up to the IVM ceiling | same |
+| IHSS IVM, employee (Decreto 48-2024 art. 1) | Two point five per cent ("dos puntos cinco por ciento"; the Gazette PDF has a broken text layer here, read from the page image) | Salary up to the IVM ceiling | same |
 | IVM ceiling (techo), 2025 (art. 2) | L11,903.13 a month | Later years set by the IHSS board on an actuarial study; 2026 not confirmed | same |
 | EM ceiling (techo), 2025 (art. 2) | L11,903.13 a month | Same rule for later years | same |
 | RAP labour reserve fund, employer only (Decreto 47-2024 art. 4) | 4% a month of ordinary salary | Ceiling of three minimum wages at the highest level | SAR copy of Decreto 47-2024, La Gaceta 36,545: https://www.sar.gob.hn/download/decreto-no-47-2024-no-36545-de-fecha-28-de-mayo-2025-contentivo-ley-del-fondo-de-reserva-laboral-de-capitalizacion-individual-administrado-por-el-regimen-de-aportaciones-privadas-rap/?wpdmdl=23131 |
