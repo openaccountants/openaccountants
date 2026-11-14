@@ -26,9 +26,9 @@ Taxpayers assessing ЭСФ electronic invoices, online ККМ and ОФД receipt
 
 | Item and conditions | Rule for 2026 | Official source |
 |---|---|---|
-| Ordinary invoice issuance | Default: not before turnover and no later than 15 calendar days after it; art. 493(7) expressly allows earlier issuance for the full turnover within the calendar year; 15 in words on the page | https://www.gov.kz/org/kgd-akmola/documents/details/1084149?lang=ru |
+| Ordinary invoice issuance | Default: not before turnover and no later than 15 calendar days after it; art. 493 expressly allows earlier issuance for the full turnover within the calendar year; 15 in words on the page | https://www.gov.kz/org/kgd-akmola/documents/details/1084149?lang=ru |
 | Specified monthly utilities/communication/transport and other listed supplies | Invoice after month-end by the 20th of the following month under art. 493(2); check the full listed category | https://www.gov.kz/org/kgd-akmola/documents/details/1084149?lang=ru |
-| Goods-export invoice | Within 20 calendar days after turnover; 20 in words on the page (art. 493) | https://www.gov.kz/org/kgd-akmola/documents/details/1084149?lang=ru |
+| Goods placed under the customs export procedure | Within 20 calendar days after turnover; 20 in words on the page (art. 493) | https://www.gov.kz/org/kgd-akmola/documents/details/1084149?lang=ru |
 | Buyer-request invoice in statutory receipt exceptions | Buyer demand within 15 calendar days, supplier issue within 30 calendar days after turnover; figures in words on the page (arts. 208, 493) | https://www.gov.kz/org/kgd-akmola/documents/details/1084149?lang=ru |
 | Non-VAT temporary paper invoice after confirmed technical failure/suspension | Enter electronically within 15 calendar days after the failure ends/suspension is lifted; 15 in words on the page (art. 209) | https://www.gov.kz/org/kgd-akmola/documents/details/1084149?lang=ru |
 | Non-VAT emergency paper invoice | Enter within 30 calendar days after the emergency ends; 30 in words on the page (art. 209) | https://www.gov.kz/org/kgd-akmola/documents/details/1084149?lang=ru |
