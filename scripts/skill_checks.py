@@ -648,7 +648,7 @@ TERM_SHARED_WITH = {
     "IN": {"PK", "LK", "NP", "MU", "SC", "BD", "MV", "BT"},  # rupee, lakh and crore
     "GB": {"GG", "JE", "IM", "GI", "FK", "SH"},  # pound, HMRC links
     # IRS is also the Portuguese personal income tax.
-    "US": {"PR", "VI", "GU", "AS", "MP", "PT", "ST", "AO", "MZ", "CV", "GW", "TL", "PH"},
+    "US": {"PR", "VI", "GU", "AS", "MP", "UM", "PT", "ST", "AO", "MZ", "CV", "GW", "TL", "PH"},
     "DE": {"AT", "CH", "LI"},
     "NL": {"CW", "SX", "AW", "BQ"},
     "CA": {"NG"},  # CRA is also Nigeria's Consolidated Relief Allowance
