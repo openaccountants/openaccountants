@@ -1,14 +1,15 @@
 ---
 name: ch-lump-sum
 description: "Swiss expenditure-based (lump-sum) taxation, Besteuerung nach dem Aufwand / imposition d'après la dépense / Pauschalbesteuerung, for tax year 2026. Covers who qualifies (non-Swiss, first Swiss residence or back after 10 years, no gainful activity in Switzerland, both spouses), the federal base (worldwide living costs, at least CHF 435,000, 7x rent or rental value, 3x board and lodging), the control calculation on Swiss-source and treaty-relieved income, the modified lump-sum under seven tax treaties, cantonal minimums and wealth tax (Zug, Geneva, Vaud, Ticino, Valais, Graubünden, Bern; abolished in Zurich, Basel-Stadt, Schaffhausen, Appenzell Ausserrhoden), filing, payment, fines and how the regime ends. Trigger on: lump-sum tax Switzerland, forfait fiscal, Pauschalsteuer, Aufwandbesteuerung, expenditure-based taxation, move to Switzerland without working. Out of scope: ch-federal-income-tax (ordinary tariff and deductions), ch-cantonal-tax, ch-ahv-iv, ch-cross-border."
-version: 1.2
+version: 1.3
 jurisdiction: CH
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: cross-border
+type: situation-rules
 ---
 
 # Switzerland: expenditure-based (lump-sum) taxation, 2026

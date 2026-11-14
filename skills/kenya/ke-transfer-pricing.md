@@ -1,13 +1,14 @@
 ---
 name: ke-transfer-pricing
 description: "Kenyan transfer pricing for the 2026 year of income under section 18(3) and (5) of the Income Tax Act (Cap. 470), the Income Tax (Transfer Pricing) Rules 2006, and the multinational reporting rules in sections 18C to 18F. Covers related persons, the arm's length rule for residents and permanent establishments, covered transactions, the five methods, documentation the Commissioner can demand, the 30% corporate rate on adjustments, master file and local file within six months of year end, country-by-country reporting for groups with at least KShs 95 billion turnover within twelve months, the year-end notification, and penalties and interest after an adjustment. Trigger on: Kenya transfer pricing, section 18(3) Kenya, arm's length Kenya, Kenya master file local file, Kenya CbCR, KRA TP adjustment, head office fees Kenya PE. Out of scope: thin capitalisation and interest limits, withholding tax, advance pricing agreements, VAT on imported services."
-version: 0.1
+version: 0.2
 jurisdiction: KE
 tax_year: 2026
-last_updated: 2026-11-02
+last_updated: 2026-11-14
 category: transfer-pricing
 tier: 2
 domain: transfer-pricing
+type: situation-rules
 ---
 
 # Kenyan transfer pricing: arm's length rule, documentation, master file, local file and CbCR (2026)

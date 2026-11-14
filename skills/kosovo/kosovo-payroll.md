@@ -2,19 +2,20 @@
 name: kosovo-payroll
 description: >
   Calculate the Kosovo wage-tax and pension components for 2026 employers and employees. Covers primary and secondary employers, current monthly income-tax bands, deduction of employee pension before withholding, voluntary pension limits, benefits in kind, documented travel and commuting exclusions, the two minimum-wage periods, employee notification, WM and CM filing, withholding certificates, and current procedural penalties. Distinguishes tax residence from pension coverage and routes foreign employment and other income to the relevant review. Use for gross-to-net pay, salary withholding, secondary employment, EDI payroll, pension deductions, and payroll reconciliation. Final health-inclusive payroll remains partial pending the new healthcare law's operative phase and collection instruments.
-version: 0.2
+version: 0.3
 jurisdiction: XK
 tax_year: 2026
-last_updated: 2026-10-30
+last_updated: 2026-11-14
 depends_on:
   - payroll-workflow-base
 category: payroll
 license: AGPL-3.0-or-later (code) / OpenAccountants skill License v1.0 (content)
 tier: 2
 domain: payroll
+type: computation
 ---
 
-# Kosovo payroll v0.2
+# Kosovo payroll v0.3
 
 Tax year **2026**. Checked against the law on **30 October 2026** (tier 2); no
 licensed accountant has signed it off.

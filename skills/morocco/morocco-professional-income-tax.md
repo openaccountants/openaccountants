@@ -9,16 +9,17 @@ description: >
   income tax", "IR professionnel", "resultat net reel", "resultat net simplifie", "RNR", "RNS",
   "bareme IR Maroc", "cotisation minimale", "declaration revenu global", "الضريبة على الدخل المغرب",
   "صافي الربح". Replies in the user's language (English, French, Moroccan Arabic or Darija).
-version: 2.0
+version: 2.1
 jurisdiction: MA
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 depends_on:
   - income-tax-workflow-base
 tier: 2
 domain: income-tax
+type: computation
 ---
 
 # Morocco: personal income tax on professional income (IR), 2026
