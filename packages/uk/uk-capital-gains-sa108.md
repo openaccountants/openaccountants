@@ -1,16 +1,17 @@
 ---
 name: uk-capital-gains-sa108
 description: Use this skill whenever asked about UK capital gains tax for individuals. Trigger on phrases like "SA108", "capital gains tax", "CGT UK", "annual exempt amount", "disposal", "chargeable gain", "crypto CGT UK", "share sale UK", "property disposal CGT", "PPR relief", "principal private residence", "BADR", "BADR 18%", "Business Asset Disposal Relief", "Entrepreneurs' Relief", "Investors Relief 18%", "carried interest April 2026", "CGT 18% 24%", "bed and breakfasting", "30-day rule", "Section 104 pool", "negligible value claim", "CGT losses", "60-day reporting", "residential property CGT", or any question about computing, filing, or reporting capital gains on the UK Self Assessment return. Covers SA108 form, CGT rates, reliefs, crypto as CGT asset, share matching rules, property CGT reporting, and loss treatment. ALWAYS read this skill before touching any UK CGT work.
-version: 2.1
+version: 2.2
 jurisdiction: GB
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-14
 depends_on:
   - uk-income-tax-sa100
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
+type: computation
 ---
 
 # UK Capital Gains Tax for individuals and the SA108 pages

@@ -1,16 +1,17 @@
 ---
 name: uk-payroll
 description: "UK employer payroll for the 2026/27 tax year (6 April 2026 to 5 April 2027), with dated 2025/26 notes. Covers registering a PAYE scheme, tax codes and starter checklists, PAYE bands for England, Northern Ireland, Wales and Scotland, Class 1 NIC as payroll applies it, the Employment Allowance, student and postgraduate loan deductions, National Minimum Wage and National Living Wage from 1 April 2026, Statutory Sick Pay after the April 2026 reform, SMP and SPP and their recovery, automatic enrolment thresholds, the Apprenticeship Levy, benefits in kind and mandatory payrolling from April 2027, RTI (FPS and EPS), paying HMRC by the 22nd, year-end and penalties. Trigger on 'PAYE', 'RTI', 'FPS', 'EPS', 'tax code', 'P45', 'P60', 'P11D', 'SSP', 'SMP', 'minimum wage', 'auto-enrolment', 'payroll UK'. Out of scope: NIC detail (uk-national-insurance), the employee's own return (uk-income-tax-sa100), Scottish status (uk-scottish-income-tax), bookkeeping (uk-bookkeeping)."
-version: 1.3
+version: 1.4
 jurisdiction: GB
 tax_year: 2026
-last_updated: 2026-10-27
+last_updated: 2026-11-14
 depends_on:
   - payroll-workflow-base
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
+type: computation
 ---
 
 # UK employer payroll: PAYE, RTI, statutory pay, minimum wage and year-end (2026/27, with 2025/26 notes)

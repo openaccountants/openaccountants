@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/spain-tax-optimization"
   jurisdiction: "ES"
   tax_year: "2026"
-  last_updated: "2026-11-07"
+  last_updated: "2026-11-14"
 ---
 
-# Spain Tax Optimization v1.3
+# Spain Tax Optimization v1.4
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -152,8 +152,9 @@ The micro rates apply 'unless a different rate from the general one applies'. Th
 | Módulos limit, of which to businesses and professionals, statute | 75,000 | same |
 | Módulos limit, agriculture and forestry, statute | 250,000 | same |
 | Módulos limit, purchases of goods and services excluding fixed assets, subcontracts counted, statute | 150,000 | same |
-| unverified 2026 limits by AEAT criterion: 250,000 all, 125,000 to businesses, 250,000 purchases | conflict | AEAT note of 1 April 2026: https://sede.agenciatributaria.gob.es/Sede/todas-noticias/2026/abril/1/nota-sobre-efectos-ambito-tributario-febrero.html |
 | Módulos reduction for 2026 | 5% | Orden HAC/1425/2025 DA 1ª: https://www.boe.es/diario_boe/xml.php?id=BOE-A-2025-25272 |
+
+The AEAT note of 1 April 2026 (https://sede.agenciatributaria.gob.es/Sede/todas-noticias/2026/abril/1/nota-sobre-efectos-ambito-tributario-febrero.html) applies higher 2026 limits by administrative criterion (250,000 all activities, 125,000 to businesses, 250,000 purchases). That conflicts with the statute above, so those figures are not usable guidance; see Not yet confirmed under Sources.
 
 For the módulos income and purchase thresholds, annualise the prior-year volumes if an activity began during that year (LIRPF art. 31.1.3ª b and c). Apply the family and common-direction aggregation tests described below before comparing with any limit.
 
@@ -221,9 +222,7 @@ The bases and rates are in Orden PJC/297/2026 arts 18 and 37. The cuota column i
 
 **Reduced cuota (tarifa plana)**
 
-| Item | Amount | Source |
-| --- | --- | --- |
-| unverified monthly reduced cuota for an alta in 2026 | held | LETA art. 38 ter.1 leaves the amount to the Budget Act: https://www.boe.es/datosabiertos/api/legislacion-consolidada/id/BOE-A-2007-13409/texto; RDL 13/2022 DT 5ª sets EUR 80 for 2023 to 2025 only: https://www.boe.es/datosabiertos/api/legislacion-consolidada/id/BOE-A-2022-12482/texto |
+The monthly reduced cuota for an alta in 2026 is held, not stated. LETA art. 38 ter.1 leaves the amount to the Budget Act (https://www.boe.es/datosabiertos/api/legislacion-consolidada/id/BOE-A-2007-13409/texto); RDL 13/2022 DT 5ª sets EUR 80 for 2023 to 2025 only (https://www.boe.es/datosabiertos/api/legislacion-consolidada/id/BOE-A-2022-12482/texto). It is listed under Not yet confirmed.
 
 No amount for 2026 appears in RDL 3/2026 or Orden PJC/297/2026. EUR 80 is not stated here as the 2026 figure.
 
@@ -764,4 +763,4 @@ Not yet confirmed: the historical IRPF art. 17 in force on 31 December 2006, inc
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-07. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `spain-tax-optimization` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/spain-tax-optimization. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `spain-tax-optimization` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/spain-tax-optimization. If neither is available, confirm every figure against the official source pages cited above before relying on it.

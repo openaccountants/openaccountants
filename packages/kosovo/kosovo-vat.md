@@ -2,17 +2,18 @@
 name: kosovo-vat
 description: >
   Calculate ordinary Kosovo VAT for the 2026 tax year using current primary law and its amendments. Covers domestic and foreign registration, calendar-year turnover, standard and reduced rates, supply timing and value, eligible and blocked inputs, mixed taxable and exempt recovery, capital adjustments, stock credits, bad debts, refunds, invoices, monthly returns, imports, exports, foreign-service reverse charge and domestic construction. Distinguishes exemptions with and without recovery, services outside Kosovo, and specialist schemes whose separate implementation evidence is required. Use for TVSH, VAT returns, TV forms, purchase and sales books, reverse-charge invoices, input recovery, registration and VAT reconciliation. Preserves the distinction between an operative tax charge and an unconfirmed simplified procedure.
-version: 2.1
+version: 2.2
 jurisdiction: XK
 tax_year: 2026
-last_updated: 2026-10-30
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: international
 tier: 2
 domain: vat-gst
+type: situation-rules
 ---
 
-# Kosovo VAT v2.1
+# Kosovo VAT v2.2
 
 Tax year **2026**, checked against the law on **30 October 2026** (tier 2;
 no licensed accountant has signed off this revision). Kosovo VAT (TVSH, tatimi

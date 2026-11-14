@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/japan-tax-optimization"
   jurisdiction: "JP"
   tax_year: "2026"
-  last_updated: "2026-11-06"
+  last_updated: "2026-11-14"
 ---
 
-# Japan Tax Optimization v1.2
+# Japan Tax Optimization v1.3
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -100,7 +100,7 @@ Label: the 2026 year (令和8年分, filed in 2027), read at 6 November 2026. Al
 | Tax year | Calendar year for individuals. A company's year is its own business year | 所得税法 art. 120(1): https://laws.e-gov.go.jp/law/340AC0000000033 |
 | Final return, 2026 year | 16 February to 15 March 2027 | NTA No. 2020: https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/2020.htm |
 | Top marginal rate, 2026 | 55.945%: 45% × 1.021 + 10% standard inhabitant tax. Own arithmetic. Excludes 個人事業税 and any local rate above standard | 所得税法 art. 89(1): https://laws.e-gov.go.jp/law/340AC0000000033; 地方税法 arts 35, 314-3: https://laws.e-gov.go.jp/law/325AC0000000226 |
-| Consumption tax | 10% standard (7.8% national + 2.2% local); 8% reduced (6.24% national + 1.76% local) for the items the law names | 消費税法 art. 29: https://laws.e-gov.go.jp/law/363AC0000000108; NTA No. 6101: https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6101.htm |
+| Consumption tax | 10% standard (2.2% local; national part computed as 7.8%); 8% reduced (1.76% local; national part computed as 6.24%) for the items the law names | 消費税法 art. 29: https://laws.e-gov.go.jp/law/363AC0000000108; NTA No. 6101: https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6101.htm |
 
 ### National income tax
 
@@ -144,7 +144,7 @@ The 2 surtaxes from 2027 add to the same 2.1%, so the combined figure above does
 
 | Tier | Amount | Tax year | Conditions | Official source |
 | --- | --- | --- | --- | --- |
-| Base | 100,000 | 2026 | Blue approval. The lesser of 100,000 or the income | 措法 art. 25-2(1): https://laws.e-gov.go.jp/law/332AC0000000026; NTA No. 2072: https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/2072.htm |
+| Base | 10万円 | 2026 | Blue approval. The lesser of 10万円 or the income | 措法 art. 25-2(1): https://laws.e-gov.go.jp/law/332AC0000000026; NTA No. 2072: https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/2072.htm |
 | Middle | 550,000 | 2026 | Business, or real-estate income from a business-scale activity; not on the cash basis; 正規の簿記; balance sheet and profit and loss statement attached; return filed by the deadline | 措法 art. 25-2(3): https://laws.e-gov.go.jp/law/332AC0000000026 |
 | Upper | 650,000 | 2026 | All Middle conditions, and either e-Tax transmission by the deadline or qualifying electronic books under 電子帳簿保存法 art. 8(4) | 措法 art. 25-2(4): https://laws.e-gov.go.jp/law/332AC0000000026 |
 | White return | 0 | 2026 | No special deduction | 措法 art. 25-2 applies to blue filers only: https://laws.e-gov.go.jp/law/332AC0000000026 |
@@ -158,7 +158,7 @@ The 2 surtaxes from 2027 add to the same 2.1%, so the combined figure above does
 
 | Scheme and person | Monthly limit | Period | Conditions | Official source |
 | --- | --- | --- | --- | --- |
-| 小規模企業共済 | 1,000 to 70,000, in steps of 500. So at most 840,000 a year | Read at 5 November 2026 | A 小規模企業者 under the next row | 小規模企業共済法 art. 4(2): https://laws.e-gov.go.jp/law/340AC0000000102; 中小機構: https://www.smrj.go.jp/kyosai/skyosai/features/index.html |
+| 小規模企業共済 | 1,000 to 70,000, in steps of 500. So at most 840,000 a year (computed: 70,000 x 12) | Read at 5 November 2026 | A 小規模企業者 under the next row | 小規模企業共済法 art. 4(2): https://laws.e-gov.go.jp/law/340AC0000000102; 中小機構: https://www.smrj.go.jp/kyosai/skyosai/features/index.html |
 | Who is a 小規模企業者 | By the main business: 20 or fewer regular employees in 工業, 鉱業, 運送業 and other businesses outside the next 2 groups; 5 or fewer in 商業 or サービス業; 20 or fewer in 宿泊業 or 娯楽業 | Read at 5 November 2026 | The individual who runs the business (items 1 to 3), an individual taking part in running it (item 4), an officer of a company on the same counts (items 5 to 7), or an officer of a 企業組合, 協業組合 or other body the order names (item 8) | 小規模企業共済法 art. 2(1): https://laws.e-gov.go.jp/law/340AC0000000102; 小規模企業共済法施行令 art. 1: https://laws.e-gov.go.jp/law/340CO0000000185 |
 | iDeCo, category 1 (自営業者等) or 任意加入 | 68,000, less any 付加保険料 or 国民年金基金 contribution paid for that month, not below nil. Nil for a month with no National Pension premium paid | To 30 November 2026 | Excludes a person exempt from National Pension premiums, in full or in part (確定拠出年金法 art. 62(1)(1)). Tested at each month-end | 確定拠出年金法施行令 art. 36 item 1 at 5 November 2026: https://laws.e-gov.go.jp/law/413CO0000000248 |
 | iDeCo, category 1 or 任意加入 | 75,000, on the same reductions | From 1 December 2026 | As above. Enacted by 政令第442号 of 2025 | 確定拠出年金法施行令 art. 36 item 1 at 1 December 2026: https://laws.e-gov.go.jp/law/413CO0000000248 |
@@ -192,14 +192,14 @@ The Ministry of Health, Labour and Welfare's iDeCo page still showed JPY 68,000 
 
 | Deduction | Amount | Conditions | Tax year | Official source |
 | --- | --- | --- | --- | --- |
-| Medical (医療費控除) | Paid in the year, net of reimbursement, above the lesser of 100,000 or 5% of 総所得金額等; maximum 2,000,000 | For the taxpayer or a relative in the same household (生計を一にする). Paid, not merely incurred | 2026 | 所得税法 art. 73: https://laws.e-gov.go.jp/law/340AC0000000033; NTA No. 1120: https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1120.htm |
+| Medical (医療費控除) | Paid in the year, net of reimbursement, above the lesser of 10万円 or 5% of 総所得金額等; maximum 200万円 | For the taxpayer or a relative in the same household (生計を一にする). Paid, not merely incurred | 2026 | 所得税法 art. 73: https://laws.e-gov.go.jp/law/340AC0000000033; NTA No. 1120: https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1120.htm |
 | Self-medication (セルフメディケーション) | An alternative to the medical deduction; the taxpayer takes one or the other and cannot switch later | Payments to 31 December 2026 on the text read, with a health check or similar. Amounts not reproduced | 2026 | 措法 art. 41-17: https://laws.e-gov.go.jp/law/332AC0000000026; NTA No. 1129: https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1129.htm |
 | Social insurance (社会保険料控除) | Full amount paid, no cap | Includes amounts for a spouse or relative in the same household | 2026 | 所得税法 art. 74: https://laws.e-gov.go.jp/law/340AC0000000033 |
 | Life insurance (生命保険料控除) | 40,000 for each of 3 limbs; 120,000 in total. New life limb 60,000 for 2026 and 2027 for a filer with a dependant under 23. Inhabitant tax total 70,000 | Limb detail with `jp-income-tax` | 2026 | 所得税法 art. 76: https://laws.e-gov.go.jp/law/340AC0000000033; 措法 art. 41-15-5(1): https://laws.e-gov.go.jp/law/332AC0000000026; 地方税法 art. 34: https://laws.e-gov.go.jp/law/325AC0000000226 |
 | Earthquake insurance (地震保険料控除) | Up to 50,000. Inhabitant tax up to 25,000 | A home usually lived in, or household goods, of the taxpayer or a relative in the same household | 2026 | 所得税法 art. 77: https://laws.e-gov.go.jp/law/340AC0000000033; 地方税法 art. 34: https://laws.e-gov.go.jp/law/325AC0000000226 |
 | Casualty loss (雑損控除) | The loss net of insurance, less: (1) 10% of 総所得金額, 退職所得金額 and 山林所得金額 where 災害関連支出 is 50,000 or less; (2) where it is above 50,000, the lower of that 10% and the loss less the 災害関連支出 above 50,000; (3) where the whole loss is 災害関連支出, the lower of 50,000 and that 10% | Disaster, theft or embezzlement only, on assets of the taxpayer or a named relative in the same household. Not assets in art. 62(1) or art. 70(3) | 2026 | 所得税法 art. 72: https://laws.e-gov.go.jp/law/340AC0000000033 |
-| Spouse (配偶者控除) | 380,000 (480,000 if 70 or over) with taxpayer's 合計所得金額 up to 9,000,000; less above; nil above 10,000,000 | Spouse's 合計所得金額 up to 620,000 for 2026. The prior version's 480,000 is the limit for years to 2024 | 2026 | 所得税法 art. 83: https://laws.e-gov.go.jp/law/340AC0000000033; NTA No. 1191: https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1191.htm |
-| Dependant (扶養控除) | 380,000; 630,000 for those aged 19 to 22; more for those 70 or over | Age 16 or over. 合計所得金額 up to 620,000 for 2026 | 2026 | 所得税法 art. 84: https://laws.e-gov.go.jp/law/340AC0000000033; NTA No. 1180: https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1180.htm |
+| Spouse (配偶者控除) | 38万円 (48万円 if 70 or over) with taxpayer's 合計所得金額 up to 900万円; less above; nil above 1,000万円 | Spouse's 合計所得金額 up to 62万円 for 2026. The prior version's 48万円 is the limit for years to 2024 | 2026 | 所得税法 art. 83: https://laws.e-gov.go.jp/law/340AC0000000033; NTA No. 1191: https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1191.htm |
+| Dependant (扶養控除) | 38万円; 63万円 for those aged 19 to 22; more for those 70 or over | Age 16 or over. 合計所得金額 up to 62万円 for 2026 | 2026 | 所得税法 art. 84: https://laws.e-gov.go.jp/law/340AC0000000033; NTA No. 1180: https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1180.htm |
 | Home loan credit (住宅借入金等特別控除) | 0.7% of the year-end balance up to the 借入限度額, a credit against tax, rounded down to JPY 100. For move-in from 2026 to 2030, 20,000,000 under art. 41(3)(3), and 20,000,000 to 45,000,000 for a 認定住宅等 by type under art. 41(7). Later paragraphs, including those for small homes with a 10,000,000 income test, were not read in full | Move-in by 31 December 2030; within 6 months; repayment over 10 years or more; 合計所得金額 up to 20,000,000 in the year. 10 years generally. For a 認定住宅等, 13 years with move-in in 2026 to 2030, or in 2022 to 2025 where new or bought resold after renovation (買取再販) | 2026 | 措法 art. 41(1), (2), (3), (4), (6) and (7) at 5 November 2026: https://laws.e-gov.go.jp/law/332AC0000000026 |
 
 The limits in the home loan row depend on facts this file does not test. The NTA page read, No. 1213, covers older 認定住宅 cases, so the row rests on the Act. Do not state a limit for a client without reading art. 41 for that house and year.
@@ -235,7 +235,7 @@ For a company outside refusal R-OPT-4. Figures are standard rates, and a prefect
 
 | Layer | Amount | Period | Status | Official source |
 | --- | --- | --- | --- | --- |
-| 法人税, income up to 8,000,000 a year | 15% (17% where the year's income exceeds 1,000,000,000). Not for a 適用除外事業者 or 通算法人 | Years starting to 31 March 2027 | Enacted | 措法 art. 42-3-2(1): https://laws.e-gov.go.jp/law/332AC0000000026; NTA No. 5759: https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5759.htm |
+| 法人税, income up to 年800万円 | 15% (17% where the year's income exceeds 10億円). Not for a 適用除外事業者 or 通算法人 | Years starting to 31 March 2027 | Enacted | 措法 art. 42-3-2(1): https://laws.e-gov.go.jp/law/332AC0000000026; NTA No. 5759: https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5759.htm |
 | 法人税, income up to 8,000,000 a year, after that period | 19% | Years starting from 1 April 2027 on the text read | Enacted | 法人税法 art. 66(2): https://laws.e-gov.go.jp/law/340AC0000000034 |
 | 法人税, income above 8,000,000 | 23.2% | Current | Enacted | 法人税法 art. 66(1): https://laws.e-gov.go.jp/law/340AC0000000034 |
 | 地方法人税 | 10.3% of 法人税 | Current | Enacted | 地方法人税法 art. 10(1): https://laws.e-gov.go.jp/law/426AC0000000011 |
@@ -255,11 +255,11 @@ On income up to JPY 4,000,000 the layers add to 22.39% before any deduction for 
 | --- | --- | --- | --- | --- |
 | Exemption | Taxable sales of 10,000,000 or less in the base period (prior-prior year for an individual) | Not where specified-period sales exceed 10,000,000 (art. 9-2, payroll alternative), or the business has registered or elected | Enacted | 消費税法 arts 9, 9-2: https://laws.e-gov.go.jp/law/363AC0000000108 |
 | New company | Exempt while it has no base period, if capital at the start of the year is under 10,000,000 | Not at 10,000,000 or more (art. 12-2). Not where a person with over 50% control has base-period-equivalent sales over 500,000,000 (art. 12-3). Art. 9-2 and registration also end it | Enacted | 消費税法 arts 12-2, 12-3: https://laws.e-gov.go.jp/law/363AC0000000108 |
-| Simplified method (簡易課税) | Deemed purchase ratios of 90%, 80%, 70%, 60%, 50% and 40% by business type | Base-period sales of 50,000,000 or less; election by the day before the period; generally kept for 2 years | Enacted | 消費税法 art. 37: https://laws.e-gov.go.jp/law/363AC0000000108; 消費税法施行令 art. 57: https://laws.e-gov.go.jp/law/363CO0000000360; NTA No. 6505: https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6505.htm |
-| 2割特例 | Tax payable = output tax × 20% | Taxable periods including any day from 1 October 2023 to 30 September 2026, for a business that became taxable only by registering. Base-period and specified-period sales tests apply | Administrative, on NTA pages read | NTA No. 6498: https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6498.htm |
-| 3割特例 | Tax payable = output tax × 30% | Sole proprietors only, 2027 and 2028 periods. Base-period sales of 10,000,000 or less (2025 for 2027; 2026 for 2028). Q&A 問115-2 excludes: a non-resident business without a permanent establishment; base-period sales above 10,000,000; a period caught by art. 9-2; a period taxable under arts 10 to 12; art. 9(7) adjusted fixed assets; art. 12-4 high-value assets; and a shortened period | Administrative, on NTA pages read | NTA invoice-system review page: https://www.nta.go.jp/taxes/shiraberu/zeimokubetsu/shohi/keigenzeiritsu/invoice-review/index.htm; 問115-2: https://www.nta.go.jp/taxes/shiraberu/zeimokubetsu/shohi/keigenzeiritsu/pdf/qa/115-2.pdf |
-| Purchases from unregistered suppliers | 80% credit to 30 September 2026; 70% to 30 September 2028; 50% to 30 September 2030; 30% to 30 September 2031 | Per supplier, the 70%, 50% and 30% rules stop above 100,000,000 a year, for taxable periods starting from 1 October 2026 | Enacted, read as the 附則 printed in 消費税法 and on the NTA page | 消費税法 printed 附則 of 平成28年法律第15号: https://laws.e-gov.go.jp/law/363AC0000000108; NTA review page: https://www.nta.go.jp/taxes/shiraberu/zeimokubetsu/shohi/keigenzeiritsu/invoice-review/index.htm |
-| Food rate from 1 April 2027 | 1% on food for 2 years to 31 March 2029 | Never use. The NTA and Ministry of Finance page says its content assumes a bill still to be submitted and passed. 消費税法 art. 29 at 1 April 2027 still prints 6.24% | Proposal | NTA special page: https://www.nta.go.jp/taxes/shiraberu/zeimokubetsu/shohi/keigenzeiritsu/zeiritsuhikisage.htm |
+| Simplified method (簡易課税) | Deemed purchase ratios of 90%, 80%, 70%, 60%, 50% and 40% by business type | Base-period sales of 5,000万円 or less; election by the day before the period; generally kept for 2 years | Enacted | 消費税法 art. 37: https://laws.e-gov.go.jp/law/363AC0000000108; 消費税法施行令 art. 57: https://laws.e-gov.go.jp/law/363CO0000000360; NTA No. 6505: https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6505.htm |
+| 2割特例 | Tax payable = output tax × 2割 (one fifth) | Taxable periods including any day from 1 October 2023 to 30 September 2026, for a business that became taxable only by registering. Base-period and specified-period sales tests apply | Administrative, on NTA pages read | NTA No. 6498: https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6498.htm |
+| 3割特例 | Tax payable = output tax × 30% | Sole proprietors only, 2027 and 2028 periods. Base-period sales of 1,000万円 or less (2025 for 2027; 2026 for 2028). Q&A 問115-2 excludes: a non-resident business without a permanent establishment; base-period sales above 1,000万円; a period caught by art. 9-2; a period taxable under arts 10 to 12; art. 9(7) adjusted fixed assets; art. 12-4 high-value assets; and a shortened period | Administrative, on NTA pages read | NTA invoice-system review page: https://www.nta.go.jp/taxes/shiraberu/zeimokubetsu/shohi/keigenzeiritsu/invoice-review/index.htm; 問115-2: https://www.nta.go.jp/taxes/shiraberu/zeimokubetsu/shohi/keigenzeiritsu/pdf/qa/115-2.pdf |
+| Purchases from unregistered suppliers | 80% credit to 30 September 2026; 70% to 30 September 2028; 50% to 30 September 2030; 30% to 30 September 2031 | Per supplier, the 70%, 50% and 30% rules stop above 1億円 a year, for taxable periods starting from 1 October 2026 | Enacted, read as the 附則 printed in 消費税法 and on the NTA page | 消費税法 printed 附則 of 平成28年法律第15号: https://laws.e-gov.go.jp/law/363AC0000000108; NTA review page: https://www.nta.go.jp/taxes/shiraberu/zeimokubetsu/shohi/keigenzeiritsu/invoice-review/index.htm |
+| Food rate from 1 April 2027 | 1% on food for 2 years to 31 March 2029 | Never use. The NTA and Ministry of Finance page says its content assumes a bill still to be submitted and passed. 消費税法 art. 29 at 1 April 2027 still prints the current reduced national rate | Proposal | NTA special page: https://www.nta.go.jp/taxes/shiraberu/zeimokubetsu/shohi/keigenzeiritsu/zeiritsuhikisage.htm |
 
 ### Social insurance
 
@@ -272,9 +272,10 @@ On income up to JPY 4,000,000 the layers add to 22.39% before any deduction for 
 | National Pension | 17,920 a month | Fiscal 2026 | 日本年金機構: https://www.nenkin.go.jp/service/kokunen/hokenryo/hokenryo.html |
 | 付加保険料 | 400 a month | Current | 国民年金法 art. 87-2(1): https://laws.e-gov.go.jp/law/334AC0000000141 |
 | Employees' pension (厚生年金) rate | 18.3%, split between employer and employee | Current | 厚生年金保険法 art. 81(4): https://laws.e-gov.go.jp/law/329AC0000000115 |
-| Employees' pension, cap on standard monthly remuneration | 650,000 now; 680,000 from September 2027, 710,000 from September 2028, 750,000 from September 2029 | Stated dates | Ministry of Health, Labour and Welfare: https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000147284_00024.html |
+| Employees' pension, cap on standard monthly remuneration | 65万円 now; 68万円 from September 2027, 71万円 from September 2028, 75万円 from September 2029 | Stated dates | Ministry of Health, Labour and Welfare: https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000147284_00024.html |
 | Health insurance, cap on standard monthly remuneration | 1,390,000, grade 50 | Current | 健康保険法 art. 40(1): https://laws.e-gov.go.jp/law/211AC0000000070 |
-| Health insurance rate | Set by each insurer and, for 協会けんぽ, by prefecture. Not read here. Includes 子ども・子育て支援金 and, for ages 40 to 64, long-term care | Needs Input | unverified: no health rate was obtained. 健康保険法 arts 160, 160-2: https://laws.e-gov.go.jp/law/211AC0000000070 |
+
+Health insurance rate: not given in this table. Each insurer sets it, and for 協会けんぽ it varies by prefecture; it includes 子ども・子育て支援金 and, for ages 40 to 64, long-term care (健康保険法 arts 160, 160-2: https://laws.e-gov.go.jp/law/211AC0000000070). No rate was read, so it is listed under Not yet confirmed.
 
 The prior version said health insurance has no cap after JPY 1,390,000. It is the reverse: JPY 1,390,000 is the cap. Its '~30%' is unproved and is not used. The 厚生年金保険法 table in art. 20 at 5 November 2026 stops at JPY 620,000, and the JPY 650,000 grade comes from the ministry page; the order that adds it was not read.
 
@@ -286,7 +287,7 @@ The prior version said health insurance has no cap after JPY 1,390,000. It is th
 | NISA, 積立 (tsumitate) limb | 1,200,000 a year, within the 18,000,000 | Current | same |
 | NISA holder and losses | Aged 18 or over on 1 January of the year; resident or non-resident with a permanent establishment. A loss inside counts as nil (art. 37-14(2)), so no offset or carry-forward (NTA No. 1474 note 3) | Current | same |
 | NISA for minors | An under-18 account from 1 January 2027, with an annual limit of 600,000 in the tsumitate limb. Other limits not read | From 1 January 2027 | 措法 art. 37-14 at 1 January 2027: https://laws.e-gov.go.jp/law/332AC0000000026 |
-| Listed securities | 15% national + 5% inhabitant, separately taxed; with 2.1% surtax on the national part, 20.315% | Current | 措法 arts 8-4, 37-11: https://laws.e-gov.go.jp/law/332AC0000000026; NTA No. 1463: https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1463.htm |
+| Listed securities | 15% national + 5% inhabitant, separately taxed; with 2.1% surtax on the national part, 20.315% in all (computed: 15% x 1.021 + 5%) | Current | 措法 arts 8-4, 37-11: https://laws.e-gov.go.jp/law/332AC0000000026; NTA No. 1463: https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1463.htm |
 | Dividend from a company the owner controls | Withholding 20% (20.42% with surtax in 2026). Aggregated with other income, with 配当控除 of 10% of the dividend where 課税総所得金額 is 10,000,000 or less; above that, 5% on the part of the dividend within the excess (art. 92(1)(3)). A payment up to 100,000 × months ÷ 12 from one payer may be left off the return (措法 art. 8-5(1)(1)), and then it earns no credit. Local 配当控除 not read | Current | 所得税法 arts 92, 182(2): https://laws.e-gov.go.jp/law/340AC0000000033; 措法 art. 8-5: https://laws.e-gov.go.jp/law/332AC0000000026 |
 
 ### Enactment position
@@ -795,7 +796,7 @@ Read on 6 November 2026 unless stated. e-Gov text is the consolidated text from 
 | NTA, 延滞税の割合 | https://www.nta.go.jp/taxes/nozei/entaizei/keisan/entai_wariai.htm | 2026-11-06 | Through `jp-income-tax`: 2026 rows |
 | 総務省, ふるさと納税 税金の控除について | https://www.soumu.go.jp/main_sosiki/jichi_zeisei/czaisei/czaisei_seido/furusato/mechanism/deduction.html | 2026-11-06 | Read in part: credit formula, One-Stop and filing. Administrative text |
 | 厚生労働省, iDeCo | https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/nenkin/kyoshutsu/ideco.html | 2026-11-06 | Read in part: limits table, which shows the rule before 1 December 2026 |
-| 厚生労働省, 標準報酬月額の上限 | https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000147284_00024.html | 2026-11-06 | Read in part: the JPY 650,000 cap and its stages |
+| 厚生労働省, 標準報酬月額の上限 | https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000147284_00024.html | 2026-11-06 | Read in part: the 65万円 cap and its stages |
 | 中小機構, 小規模企業共済の特長 | https://www.smrj.go.jp/kyosai/skyosai/features/index.html | 2026-11-06 | Read in part: contribution range and how benefits are taxed |
 | 日本年金機構, 国民年金の保険料 | https://www.nenkin.go.jp/service/kokunen/hokenryo/hokenryo.html | 2026-11-06 | Retained. Read in part: fiscal 2026 premium and 付加保険料 |
 | 財務省, 法人課税に関する基本的な資料 | https://www.mof.go.jp/tax_policy/summary/corporation/c01.htm | 2026-11-06 | Read in part: national and local rate history and note on the defence tax |
@@ -828,4 +829,4 @@ Not yet confirmed: the Act 令和8年法律第12号 and 令和8年法律第2号 
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-06. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `japan-tax-optimization` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/japan-tax-optimization. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `japan-tax-optimization` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/japan-tax-optimization. If neither is available, confirm every figure against the official source pages cited above before relying on it.

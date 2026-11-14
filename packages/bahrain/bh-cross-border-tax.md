@@ -18,13 +18,14 @@ description: >
 jurisdiction: BH
 category: international
 tax_year: 2026
-last_updated: 2026-10-29
-version: 0.1
+last_updated: 2026-11-14
+version: 0.2
+type: situation-rules
 tier: 2
 domain: cross-border
 ---
 
-# Bahrain cross-border tax v0.1
+# Bahrain cross-border tax v0.2
 
 **Draft law.** This skill states the law in force for 2026. A draft corporate income tax law went to the legislature on 29 December 2025. Secondary sources report fiscal years from 1 January 2027, 10% above BHD 200,000 and an expected 5% withholding tax on interest, royalties and services ([KPMG, March 2026](https://kpmg.com/us/en/taxnewsflash/news/2026/03/tnf-bahrain-overview-of-draft-law-introducing-10-percent-corporate-income-tax.html)). We found no confirmation of enactment. Before advising on a period starting in 2027, check its status with the NBR.
 
@@ -62,7 +63,7 @@ English translation, which it marks "unofficial"; the Arabic text governs.
 | Item | Rate or amount | Year | Source URL |
 |---|---|---|---|
 | Withholding tax on dividends, interest, royalties and service fees paid to non-residents | None under the law in force for 2026: neither income tax law has a withholding provision | 2026 | https://www.lloc.gov.bh/Legislation/id/L2279 ; https://www.nbr.gov.bh/laws_regulations/dmtt |
-| Hydrocarbon income tax, residents and non-residents alike | 46% | 2026 | https://www.lloc.gov.bh/Legislation/id/L2279 |
+| Hydrocarbon income tax, residents and non-residents alike | 46% | 2026 | https://www.lloc.gov.bh/Legislation/HTM/L2279 (art. 2) |
 | DMTT Minimum Rate | 15% | 2026 | https://www.nbr.gov.bh/laws_regulations/dmtt |
 | DMTT Revenue Test | EUR 750 million or more in 2 of the 4 preceding Fiscal Years | 2026 | https://www.nbr.gov.bh/laws_regulations/dmtt |
 | COR for an individual: physical presence | At least 183 days in the year the COR covers | 2026 | https://www.nbr.gov.bh/FTR/certificate_of_tax_residence |
@@ -267,12 +268,13 @@ expected:
 | Source | URL | Read on |
 |---|---|---|
 | Legislative Decree No. 22 of 1979, Income Tax Law, arts. 1-13 (LLOC English) | https://www.lloc.gov.bh/Legislation/id/L2279 | 2026-10-29 |
+| Legislative Decree No. 22 of 1979, Income Tax Law, LLOC text page: read for art. 2, income tax at forty-six per cent (46%) | https://www.lloc.gov.bh/Legislation/HTM/L2279 | 2026-11-14 |
 | Decree-Law No. 11 of 2024 (DMTT Law), arts. 1, 3, 5, 7, 9, 18, 22, 28, 44 (NBR unofficial English) | https://www.nbr.gov.bh/laws_regulations/dmtt | 2026-10-29 |
 | Decision No. 172 of 2024, DMTT Executive Regulations, arts. 4, 29, 62, 63 (NBR unofficial English) | https://www.nbr.gov.bh/laws_regulations/dmtt | 2026-10-29 |
-| NBR DMTT FAQs 2.4 and 2.5 | https://www.nbr.gov.bh/dmtt_faqs/2 | 2026-10-29 |
-| NBR, Certificate of Residence for Tax Purposes | https://www.nbr.gov.bh/FTR/certificate_of_tax_residence | 2026-10-29 |
-| NBR, Tax Treaties Network | https://www.nbr.gov.bh/FTR/bahrain_tax_treaties_network | 2026-10-29 |
-| NBR, Guidance on Mutual Agreement Procedure, version 1.1 | https://www.nbr.gov.bh/publications/view/Bahrains_Mutual_Agreement_Procedure_MAP_Guidance | 2026-10-29 |
+| NBR DMTT FAQs 2.4 and 2.5 | https://www.nbr.gov.bh/dmtt_faqs/2 | 2026-11-14, read for FAQs 2.4 and 2.5: which groups are in scope |
+| NBR, Certificate of Residence for Tax Purposes | https://www.nbr.gov.bh/FTR/certificate_of_tax_residence | 2026-11-14, read for the application route and the letter the NBR asks for |
+| NBR, Tax Treaties Network | https://www.nbr.gov.bh/FTR/bahrain_tax_treaties_network | 2026-11-14, read for the list of treaties in force and signed |
+| NBR, Guidance on Mutual Agreement Procedure, version 1.1 | https://www.nbr.gov.bh/publications/view/Bahrains_Mutual_Agreement_Procedure_MAP_Guidance | 2026-11-14, read for the MAP request route and the 3-year default time limit |
 
 Not yet confirmed: whether the draft corporate income tax law has been enacted, and its final terms; whether controlled foreign company tax is allocated as ER art. 29(C) is described above; an NBR or Ministry statement in terms that Bahrain has no
 withholding tax (the rule above rests on reading both income tax laws in full,

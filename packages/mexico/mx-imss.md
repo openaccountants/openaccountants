@@ -12,19 +12,20 @@ description: >
   separates INFONAVIT and SAR from IMSS, and holds every claim that these
   payments reduce income tax. This Tier 2 draft supports source checking and
   reviewer questions; it does not authorise filing, payment or a tax position.
-version: 2.3
+version: 2.4
 jurisdiction: MX
 tax_year: 2026
 tax_year_notes: "Calendar 2026. Rates are as read in the Ley del Seguro Social consolidated to DOF 15-01-2026. The UMA figures apply from 1 February 2026 and the minimum wages from 1 January 2026. Seguro de Salud para la Familia quotas from 1 March 2026 are IMSS's published figures, and their DOF instrument was not found. An IMSS Consejo Técnico measure in force from 22 October 2026 temporarily limits new continuación voluntaria enrolments, and its force against the LSS and RACERF text is held."
-last_updated: 2026-11-05
+last_updated: 2026-11-14
 depends_on:
   - income-tax-workflow-base
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+type: situation-rules
 ---
 
-# MX Imss v2.3
+# MX Imss v2.4
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
 ## Who this applies to
