@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-14T20:53:50+00:00",
+ "generated_at": "2026-11-14T21:02:06+00:00",
  "counts": {
   "guides": 2454,
   "loadable_skill_names": 2395,
@@ -13689,7 +13689,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-11-03"
+   "last_updated": "2026-11-14"
   },
   {
    "slug": "il-crypto-tax",
@@ -13702,7 +13702,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-11-03"
+   "last_updated": "2026-11-14"
   },
   {
    "slug": "il-customs-duty",
@@ -13715,7 +13715,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-11-03"
+   "last_updated": "2026-11-14"
   },
   {
    "slug": "il-employee-tax-refund",
@@ -13728,7 +13728,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-11-03"
+   "last_updated": "2026-11-14"
   },
   {
    "slug": "il-freelancer-ops",
@@ -13741,7 +13741,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-11-03"
+   "last_updated": "2026-11-14"
   },
   {
    "slug": "il-income-tax-returns",
@@ -13754,7 +13754,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-11-03"
+   "last_updated": "2026-11-14"
   },
   {
    "slug": "il-new-immigrant",
@@ -13767,7 +13767,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-11-03"
+   "last_updated": "2026-11-14"
   },
   {
    "slug": "il-tax-withholding",
@@ -13780,7 +13780,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-11-03"
+   "last_updated": "2026-11-14"
   },
   {
    "slug": "israel-vat",
@@ -13793,7 +13793,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-11-03"
+   "last_updated": "2026-11-14"
   },
   {
    "slug": "references",
@@ -13805,8 +13805,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": null,
-   "last_updated": "2026-06-12"
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
   },
   {
    "slug": "it-cross-border",

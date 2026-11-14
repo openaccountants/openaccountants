@@ -195,7 +195,7 @@ Owner: Michael Cutajar
 |---|---|---:|---:|---:|
 | [Bahrain](bahrain/) | Needs writing | 8 | 7 | 0 |
 | [Egypt](egypt/) | Needs writing | 18 | 18 | 1 |
-| [Israel](israel/) | Needs writing | 10 | 9 | 0 |
+| [Israel](israel/) | Needs writing | 10 | 10 | 0 |
 | [Jordan](jordan/) | Needs writing | 6 | 5 | 0 |
 | [Kuwait](kuwait/) | Needs writing | 6 | 6 | 0 |
 | [Oman](oman/) | Needs writing | 6 | 6 | 0 |

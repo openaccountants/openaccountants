@@ -7,127 +7,141 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/il-new-immigrant"
   jurisdiction: "IL"
   tax_year: "2026"
-  last_updated: "2026-11-03"
+  last_updated: "2026-11-14"
 ---
 
-# IL New Immigrant
+# Israel: new immigrants and returning residents
 
-## Quick reference
+> **General reference only.** Prepare a working paper for a qualified Israeli CPA before filing, claiming an exemption, changing employment or disposing of an asset.
 
-**Quick reference**
+## Scope
 
-| Item | Value | Source |
-| --- | --- | --- |
-| Exemption period (new immigrant, veteran returning resident) | **10 years** from the date the individual became an Israeli resident, on income produced or accrued abroad | https://www.gov.il/BlobFolder/generalpage/income-tax-guide-knowyourright/he/Guides_IncomeTax_da-2025.pdf (PDF p.54, printed p.52) |
-| Exemption period (returning resident who is not "veteran") | **5 years** from return, on a closed list of passive foreign income (see below) | same |
-| Who qualifies for 10 years | A person who became an Israeli resident for the first time from 1/1/2007 ("new immigrant"), and a "veteran returning resident": abroad for more than 10 consecutive years | same |
-| Who qualifies for 5 years | A returning resident who left Israel from 1/1/2009 and stayed abroad for more than 6 consecutive years (left by 31/12/2008: more than 3 years abroad and ceased to be resident), and who returned from 1/1/2007 | same |
-| Israeli-source income | Taxed in the normal way: the 10-year exemption covers only income produced or accrued abroad. Exception: the 2026 temporary provision below | same |
-| 2026 temporary provision (Encouraging Immigration and Return law, Economic Efficiency Law 2026 chapter D, in force 31.3.2026) | A new immigrant or veteran returning resident who arrived between 5/11/2025 and 31/12/2026 is exempt on Israeli income from personal exertion (business and salary) up to an annual ceiling: NIS 600,000 (2026), 1,000,000 (2027), 1,000,000 (2028), 350,000 (2029), 150,000 (2030). This is on top of any other benefit | https://www.gov.il/BlobFolder/generalpage/income-tax-monthly-deductions-booklet/he/generalInformation_income-tax-monthly-deductions-booklet_monthly-deductions-booklet-2026.pdf (p.4) |
-| Reporting, residence began before 1 January 2026 | New immigrants and veteran returning residents are exempt for 10 years from reporting foreign-source income and from a capital declaration for those assets, and do not file Form 150 | https://www.gov.il/BlobFolder/generalpage/income-tax-guide-knowyourright/he/Guides_IncomeTax_da-2025.pdf (PDF pp.7, 54); https://www.gov.il/BlobFolder/policy/professional-directives-180226-1/he/IncomeTax_professional-directives-180226-1.pdf (s.2.1.2) |
-| Reporting, residence begins on or after 1 January 2026 | If the person holds rights in a foreign entity (a body of persons resident abroad), directly or indirectly, and must file (or chooses to file) an annual return, they must complete and file Form 150 (declaration of holdings in a foreign entity, an annex to the annual return); during the s.14(a) benefit period parts C.2 and C.3 are eased. No such holding: no Form 150 duty | https://www.gov.il/BlobFolder/policy/professional-directives-180226-1/he/IncomeTax_professional-directives-180226-1.pdf (s.2.1.2, citing Amendment 272) |
-| Legislation | Income Tax Ordinance s.14(a) (new immigrant, veteran returning resident), s.14(c) (returning resident), s.134B (reporting), as cited in the Authority's guide and Circular 4/2026 | https://www.gov.il/BlobFolder/generalpage/income-tax-guide-knowyourright/he/Guides_IncomeTax_da-2025.pdf; https://www.gov.il/BlobFolder/policy/professional-directives-180226-1/he/IncomeTax_professional-directives-180226-1.pdf |
-| Tax authority | Israel Tax Authority (ITA): taxes.gov.il | |
+For 2026, separate foreign-income exemption, foreign capital-gain exemption and reporting duties. A foreign employer or bank account does not establish foreign source: identify where the work or business activity takes place. Israeli work and Israeli assets require a separate analysis. This is the cross-border entry point for new immigrants and returners, not a general treaty or non-resident skill.
 
-## Who qualifies
+| Quick reference | Threshold and conditions | Official source |
+|---|---|---|
+| First-time resident or veteran returner | 10 years from becoming resident for qualifying foreign income; veteran returner means at least 10 consecutive years as a foreign resident (in words on the page) | ITO s.14(a), https://www.btl.gov.il/Laws1/00_0103_000000.pdf |
+| Other returning resident | At least 6 consecutive years as a foreign resident; 5-year exemption for the closed non-business income list below (in words on the page) | ITO s.14(c), https://www.btl.gov.il/Laws1/00_0103_000000.pdf |
+| Foreign asset gains | Separate 10-year exemption and proportional post-period relief, with acquisition and asset conditions below | ITO s.97(b), https://www.btl.gov.il/Laws1/00_0103_000000.pdf |
+| Reporting boundary | Residence before 1 January 2026 and residence from that date have different reporting treatment; tax exemption can continue when reporting is required | ITA October 2026 leaflet, https://www.gov.il/BlobFolder/generalpage/new-immigrants-france-081026/he/IncomeTax_new-immigrants-english-081026.pdf |
 
-The Authority's guide (rights guide, PDF p.54) defines three groups. Ask the client for the date they became resident and, for a returner, the date they left Israel and the length of the stay abroad.
+## Ask the client first
 
-- **New immigrant (עולה חדש / "first-time resident")**: an individual who became an Israeli resident for the first time from 1/1/2007. A person who became resident for the first time before 1/1/2007 gets no tax benefit from tax year 2012 onward (except capital gains in some cases).
-- **Veteran returning resident (תושב חוזר ותיק)**: a person who stayed abroad for more than 10 consecutive years. For a return in 2007 to 2009 a temporary provision counted 5 consecutive years abroad. Same 10-year exemption as a new immigrant.
-- **Returning resident (תושב חוזר, not "veteran")**: for a resident who left Israel from 1/1/2009, someone who stayed abroad for more than 6 consecutive years; for one who left by 31/12/2008, more than 3 years abroad and ceased to be resident. A returning resident who came back from 1/1/2007 is exempt for 5 years from return on income from pensions, royalties, rent, interest and dividends whose source is assets abroad bought while abroad, and for 5 years on interest, dividends or capital gains from "preferred securities" (securities bought after return in place of securities bought while abroad).
+Obtain the actual date Israeli residence began, prior residence history and departure date; Aliyah/return certificates; work locations and contracts; asset acquisition, gift and sale dates; foreign entity and trust interests; foreign taxes; and any election or adaptation-year notice. Establish whether an annual return is compulsory. Do not assume a foreign entity holding is the only possible reporting trigger.
 
-## What the exemption covers
+## The method, step by step
 
-For a new immigrant or veteran returning resident, for 10 years from becoming resident (rights guide, PDF p.54). The guide's wording is income "produced or accrued abroad"; the rows below apply that test.
+### Establish the group and exact anniversary
 
-**What the exemption covers**
+Under ITO s.14(a), a first-time resident or veteran returner receives the foreign-income exemption unless requesting otherwise for all or part of the income. A veteran returner has been a foreign resident for **at least 10 consecutive years**, not strictly more than 10. Under s.14(c), an ordinary returner has been a foreign resident for **at least 6 consecutive years**, not strictly more than 6. Read both definitions and their exceptions in the [Ordinance](https://www.btl.gov.il/Laws1/00_0103_000000.pdf).
 
-| Income type | Treatment |
-| --- | --- |
-| Income produced or accrued abroad (employment, business, dividends, interest, rent, capital gains on assets abroad) | **Exempt** for 10 years |
-| Israeli-source income (work done in Israel, Israeli business) | **Taxed normally**, except the 2026 temporary provision for arrivals from 5/11/2025 to 31/12/2026 (exempt up to the annual ceiling, see Quick reference) |
-| Israeli capital gains | **Taxed normally** |
+Preserve the historical transition: the rights guide describes first residence from 1 January 2007; for returns during 2007 to 2009 the veteran test temporarily used at least 5 consecutive years as a foreign resident. A first-time resident before 1 January 2007 has no continuing income exemption from tax year 2012, though a capital-gain question needs separate checking. For persons who ceased Israeli residence before 1 January 2009 the older ordinary-returner test used at least 3 consecutive years as a foreign resident after residence ceased (Circular 1/2011 ss.3.2.4 and 3.3.2). These are historical eligibility questions, not alternatives for a new 2026 return ([2025-2026 filing-cycle rights guide, foreign-income section](https://www.gov.il/BlobFolder/generalpage/income-tax-guide-knowyourright/he/Guides_IncomeTax_da-2025.pdf)).
 
-For a returning resident who is not "veteran", only the 5-year list above is exempt; other foreign income is taxed.
+Count from the actual residence date, not just a tax-year label. ITO s.14(b) permits an adaptation year if notice is given within 90 days of arrival; that year counts within the exemption period. Do not add an extra year. The statutory wording expresses these periods in words ([ITO s.14](https://www.btl.gov.il/Laws1/00_0103_000000.pdf)).
 
-## How to claim the exemption, and what must still be reported
+### Classify foreign income and gains separately
 
-Keep the tax exemption and the duty to report apart. They depend on different dates.
+| Item | Treatment and boundary | Official source |
+|---|---|---|
+| First-time/veteran foreign employment, business, pension, royalties, rent, interest and dividends | Qualifying income produced/accrued outside Israel or from foreign assets is exempt during the 10-year period; s.14(a) excludes certain assets received as tax-exempt gifts from 1 January 2007 | ITO s.14(a), https://www.btl.gov.il/Laws1/00_0103_000000.pdf |
+| Ordinary returner: pension, royalties, rent, interest and dividends | 5 years for non-business income from foreign assets acquired while non-resident after ceasing Israeli residence | ITO s.14(c)(1), https://www.btl.gov.il/Laws1/00_0103_000000.pdf |
+| Ordinary returner: preferred securities | The initial foreign exchange-traded securities must have been acquired while non-resident after Israeli residence ceased and must be managed in the specified bank account. Replacement purchases must come from interest, dividends or proceeds of qualifying securities deposited in that same account; no post-return deposits other than those specified receipts are permitted. Do not treat every replacement investment as eligible | ITO s.14(c)(2), https://www.btl.gov.il/Laws1/00_0103_000000.pdf |
+| First-time/veteran foreign asset sale | Exempt if sold within 10 years of residence, excluding the specified tax-exempt gift assets | ITO s.97(b)(1), https://www.btl.gov.il/Laws1/00_0103_000000.pdf |
+| Ordinary returner foreign asset sale | Separate 10-year capital-gain rule, for foreign assets acquired while non-resident, excluding direct/indirect Israeli-asset rights; includes qualifying preferred securities | ITO s.97(b)(2), https://www.btl.gov.il/Laws1/00_0103_000000.pdf |
+| Sale after the capital-gain period | Proportional exemption of the real capital gain under the statutory acquisition-to-period-end / acquisition-to-sale fraction; balance taxed under s.91(b) | ITO s.97(b)(3), https://www.btl.gov.il/Laws1/00_0103_000000.pdf |
+| Work performed in Israel; Israeli business or Israeli asset | No exemption merely because payor, employer or receiving bank is abroad; examine the separate temporary domestic-income regime below | ITO s.14(a), https://www.btl.gov.il/Laws1/00_0103_000000.pdf |
 
-- **Tax exemption**: the 10-year exemption needs no election (rights guide, PDF p.54 states it as a rule). It runs from the date the person became an Israeli resident.
-- **Reporting, residence began before 1 January 2026**: the person is exempt for 10 years from reporting income produced abroad or from assets abroad, and from a capital declaration for those assets (rights guide, PDF pp.7 and 54). Form 150 is not required (Circular 4/2026 s.2.1.2).
-- **Reporting, residence begins on or after 1 January 2026**: Form 150 is owed only by an Israeli resident who holds rights in a foreign entity, directly or indirectly (Circular 4/2026 s.2), and only when they must file, or choose to file, an annual return, because the form is an annex to that return (Circular 4/2026 s.2.1). If both hold, Circular 4/2026 s.2.1.2 applies the Form 150 duty to new immigrants and veteran returning residents who become residents from 1 January 2026, with eased completion of parts C.2 (controlled foreign company) and C.3 (foreign professional company) during the s.14(a) benefit period. A person with no holding in a foreign entity has no Form 150 duty. Ask whether they hold shares or other rights in any foreign company, partnership or other entity. Do not tell such a person they "simply do not report". unverified: whether they must also report their exempt foreign income on the annual return; Amendment 272 itself was not opened.
-- **Returning resident (s.14(c))**: if they hold rights in a foreign entity, directly or indirectly, and must file (or choose to file) an annual return, they must complete and file Form 150; part C.2 is eased during the benefit period; part C.3 is completed like any other resident (Circular 4/2026 ss.2, 2.1, 2.1.3).
-- **Election to be taxed**: unverified: the individual can elect to be taxed on foreign income (for example to use foreign tax credits), and the election is irrevocable once made.
+### Report even where income is exempt
 
-## Practical considerations
+For first-time/veteran residents whose Israeli residence began before 1 January 2026, the October leaflet states the 10-year foreign-income/assets reporting exemption. For persons whose Israeli residence begins on or after 1 January 2026, it states that tax exemption remains but reporting of foreign income applies. This resolves the old file's uncertainty on the general reporting duty. It does **not** say that every person must file every annex. Establish the applicable return obligation ([official leaflet](https://www.gov.il/BlobFolder/generalpage/new-immigrants-france-081026/he/IncomeTax_new-immigrants-english-081026.pdf); s.134B is shown repealed in the [current Ordinance](https://www.btl.gov.il/Laws1/00_0103_000000.pdf)).
 
-1. **Israeli employer payroll**: work done for an Israeli employer is Israeli-source income: taxed at normal rates regardless of the 10-year exemption. If the person arrived between 5/11/2025 and 31/12/2026, the 2026 temporary provision exempts Israeli salary and business income up to NIS 600,000 in 2026 (then 1,000,000, 1,000,000, 350,000 and 150,000 for 2027 to 2030) (2026 deduction booklet p.4). unverified: its further conditions; the booklet says a circular with all conditions will follow.
+The earlier file's Form 150 distinctions remain confirmation boundaries until Circular 4/2026 can be read again: a direct/indirect foreign-entity holding, annual-return duty or voluntary filing, and the different C.2/C.3 completion concessions for first-time/veteran and ordinary returners. Do not convert a reporting exemption into a tax exemption or say that no foreign holding means no foreign-income reporting.
 
-2. **Foreign employer or foreign bank account**: the exemption covers income produced or accrued abroad (rights guide, PDF p.54). A foreign employer or a foreign bank account does not by itself make income foreign-source. Ask where the work is done and where the income is produced before treating it as exempt.
+### Temporary exemption for income earned in Israel
 
-3. **Capital gains**: sell assets abroad during the exemption period → exempt. Sell Israeli shares or Israeli real property → taxed normally.
+The April booklet p.4 gives the domestic salary/business exemption for qualifying arrivals from 5 November 2025 to 31 December 2026, with annual ceilings of NIS 600,000 for 2026; NIS 1,000,000 for 2027 and 2028; NIS 350,000 for 2029; NIS 150,000 for 2030. Form 116ע's 2026 eligibility statement repeats the December cutoff. The October leaflet instead says 10 February 2027. These source statements conflict. The detailed Circular 7/2026 and the enacted temporary law must settle eligibility, proration, related-party limits and continuing-residence conditions before applying this benefit. **Do not calculate this benefit from the headline ceilings alone.** The old ceilings and dates are retained under Sources as unresolved rather than offered as a complete instruction.
 
-4. **Trusts and foundations**: unverified: foreign trusts and foundations held by new immigrants also receive special treatment during the exemption period.
+### Capital gains outside the exemption
 
-5. **The clock**: starts on the date of becoming an Israeli resident. Track this date precisely; it also decides which reporting rule applies (before or from 1 January 2026).
+Use the capital-gain treatment in [il-income-tax-returns](il-income-tax-returns.md). Under ITO s.91(b), the material-shareholder uplift concerns a security in a company, including the preceding holding period; it is not a universal uplift for any asset. Israeli residential property also needs the real-estate legislation. Indexation and historical acquisition dates require their own working paper. Trusts/foundations require specialist analysis; the personal exemption alone does not settle trust taxation.
 
-## Israel capital gains rates (for Israeli-source income)
+## Boundary and exception table
 
-**Israel capital gains rates (for Israeli-source income)**
+| Boundary | Action |
+|---|---|
+| Exactly the required foreign-residence period | Apply the statutory “at least” definition; do not reject solely for not exceeding it |
+| Foreign employer, work in Israel | Identify source from activity, then separately test domestic relief |
+| Ordinary returner: foreign business income | Outside the closed s.14(c) non-business list |
+| Ordinary returner: asset gain after passive-income exemption ends | Test s.97(b) separately; the capital-gain period is not the passive-income period |
+| Gift asset, trust or foundation | Escalate with acquisition history and settlement documents |
+| Election to be taxed | s.14 permits requesting otherwise; the old blanket claim of irrevocability has not been established |
 
-| Asset type | Rate |
-| --- | --- |
-| Listed shares (bought after 1 Jan 2012) | unverified: 25% (or 30% if >10% shareholder) |
-| Unlisted shares | unverified: 25% (or 30% if >10% shareholder) |
-| Real property: residential | unverified: complex (betterment levy, linear calculation) |
-| Inflation adjustment | unverified: available (reduces the real gain) |
+## Worked cases
 
-## Earlier references
+### First-time resident: foreign income within the exact period
 
-- Income Tax Ordinance [New Version], s.14(a) (new immigrants and veteran returning residents) and s.14(c) (returning residents), as described in the Authority's guide
-- unverified: ITO s.97(b) (capital gains exemption for new immigrants)
-- Israel Tax Authority Circular 4/2026 on Form 150
-
-> Working paper only. The interaction of the exemption with Israeli payroll (if employed by an Israeli employer) and with trust structures is complex. Have a qualified Israeli CPA (רואה חשבון) review before making employment or asset decisions.
-
-## Recomputed checks (2026)
+The earlier 1 January 2019 start-date case ends on 31 December 2028: 2019 + 10 - 1 = 2028. Assume qualifying foreign rent of NIS 120,000 in 2026 and no election to tax it. All NIS 120,000 is exempt under s.14(a). This does not by itself establish the reporting position for another person's arrival date.
 
 ```oa-check
-name: 10-year exemption, new immigrant resident from 2019, last exempt tax year
+name: First-time resident foreign rent during exemption
 inputs:
   start_year: 2019
   years: 10
+  foreign_rent: 120000
 steps:
-  - last_year: start_year+years-1
+  - last_full_year: start_year+years-1
+  - exempt: foreign_rent
+  - taxable: foreign_rent-exempt
 expected:
-  last_year: 2028
+  last_full_year: 2028
+  exempt: 120000
+  taxable: 0
 ```
+
+### Ordinary returner: income exemption expired, asset gain still within its period
+
+The earlier 1 January 2024 return case ends its 5-year passive-income exemption on 31 December 2028. In 2030 assume NIS 40,000 foreign rent and NIS 100,000 gain on a qualifying foreign asset bought while non-resident, with no indirect Israeli asset. The rent is outside s.14(c)'s period, so NIS 40,000 enters the ordinary computation; the NIS 100,000 gain remains within s.97(b)(2)'s separate 10-year period. This is a period-comparison example, not a forecast of 2030 rates. A mid-year residence date requires exact anniversaries.
 
 ```oa-check
-name: Returning resident (not veteran), 5 years from a 2024 return, last exempt tax year
+name: Returning resident separate passive and capital periods
 inputs:
   start_year: 2024
-  years: 5
+  rent: 40000
+  gain: 100000
 steps:
-  - last_year: start_year+years-1
+  - last_passive_year: start_year+5-1
+  - last_capital_year: start_year+10-1
+  - taxable_rent: rent
+  - exempt_gain: gain
 expected:
-  last_year: 2028
+  last_passive_year: 2028
+  last_capital_year: 2033
+  taxable_rent: 40000
+  exempt_gain: 100000
 ```
 
-The two checks count whole tax years for a person who became resident on 1 January; for a mid-year date, count 10 (or 5) years from the date itself. One credit point is worth NIS 242 a month in 2026 (https://www.gov.il/BlobFolder/generalpage/income-tax-monthly-deductions-booklet/he/generalInformation_income-tax-monthly-deductions-booklet_monthly-deductions-booklet-2026.pdf, p.12).
+## When to refuse or refer
+
+Refer disputed residence/source, indirect Israeli assets, gifts, trusts, foundations, an election to tax exempt income, foreign-tax-credit interactions, domestic temporary relief and historical transition cases to an Israeli CPA. Keep the exemption and reporting clocks separately documented. Never promise a tax-free Israeli salary solely because the employee is a new immigrant.
+
+## Filing and payment
+
+Record the exemption and any reportable foreign income in the applicable annual-return working paper; use the current return and annex instructions. Obtain a receipt and retain residence, source and asset evidence. Form 150 and Form 116ע have different purposes. No general 2026 annual-return deadline is asserted here.
 
 ## Sources
 
 | Source | URL | Read on |
 |---|---|---|
-| Israel Tax Authority, "Know your rights and duties" guide, tax year 2025 (published July 2026), read PDF p.7 (reporting exemption, veteran returning resident) and PDF p.54, printed p.52 (s.14 exemptions, the three groups, the 5-year list) | https://www.gov.il/BlobFolder/generalpage/income-tax-guide-knowyourright/he/Guides_IncomeTax_da-2025.pdf | 2026-11-03 |
-| Israel Tax Authority, Circular 4/2026 (18 February 2026), Form 150, read pp.1-4 (ss.1, 2 who must file: an Israeli resident holding rights in a foreign entity directly or indirectly, 2.1, 2.1.2, 2.1.3) | https://www.gov.il/BlobFolder/policy/professional-directives-180226-1/he/IncomeTax_professional-directives-180226-1.pdf | 2026-11-03 |
-| Israel Tax Authority, salary-deduction booklet from January 2026 (updated April 2026), read p.4 (2026 temporary provision for immigrants and veteran returning residents arriving 5/11/2025 to 31/12/2026, annual ceilings) and p.12 (credit point NIS 242 a month) | https://www.gov.il/BlobFolder/generalpage/income-tax-monthly-deductions-booklet/he/generalInformation_income-tax-monthly-deductions-booklet_monthly-deductions-booklet-2026.pdf | 2026-11-03 |
+| Consolidated Income Tax Ordinance; Read for ss.14(a)-(c), definitions, adaptation notice and gift exception; ss.97(b)(1)-(3), separate asset-sale relief; s.134B repeal; s.91(b) distinction | https://www.btl.gov.il/Laws1/00_0103_000000.pdf | 2026-11-14 |
+| Amendment 272, independently read in source review for ss.5-6 and 12(a); writer direct fetch blocked; reporting repeal applies by the date Israeli residence began, not arrival alone | https://www.gov.il/BlobFolder/legalinfo/law272/he/LegalInformation_kesher_%D7%A1%D7%A4%D7%A8%20%D7%94%D7%97%D7%95%D7%A7%D7%99%D7%9D-3205.pdf | 2026-11-14 |
+| ITA Circular 1/2011; independent reviewer read for ss.3.2.4 and 3.3.2, historical at-least-3-year condition | https://www.gov.il/BlobFolder/policy/income-tax-professional-inst-01-2011/he/Policy_IncomeTaxInst_hoz1-2011.pdf | 2026-11-14 |
+| ITA October 2026 immigrant leaflet; Read for foreign-income/reporting table and conflicting domestic-benefit arrival cutoff | https://www.gov.il/BlobFolder/generalpage/new-immigrants-france-081026/he/IncomeTax_new-immigrants-english-081026.pdf | 2026-11-14 |
+| ITA rights guide, tax year 2025, 2025-2026 filing cycle; Read for foreign-income historical transition definitions in the foreign-income exemption section | https://www.gov.il/BlobFolder/generalpage/income-tax-guide-knowyourright/he/Guides_IncomeTax_da-2025.pdf | 2026-11-14 |
+| ITA April 2026 deduction booklet; Read for p.4 domestic temporary regime announcement, annual ceilings and reservation of detailed conditions | https://www.gov.il/BlobFolder/generalpage/income-tax-monthly-deductions-booklet/he/generalInformation_income-tax-monthly-deductions-booklet_monthly-deductions-booklet-2026.pdf | 2026-11-14 |
+| ITA Form 116ע; Read for 2026 application purpose, eligibility period and preliminary simulator condition | https://www.gov.il/BlobFolder/service/tax-relief-new-immigrants/ar/Service_Pages_Income_tax_tax_itc-116th.pdf | 2026-11-14 |
 
-Not yet confirmed: the conditions of the 2026 temporary provision beyond its dates and ceilings (the Authority said a circular would follow); Amendment 272 itself, and whether a person who becomes resident from 1 January 2026 must report exempt foreign income on the annual return (Circular 4/2026 confirms only the Form 150 duty); the irrevocable election to be taxed; trusts and foundations; ITO s.97(b); the capital gains rates table. The guide that defines the groups is for tax year 2025; the definitions are not year-specific, but no 2026 edition was available.
+Not yet confirmed: the complete temporary domestic-income exemption under the enacted law and Circular 7/2026, including proration, related-party and continued-residence conditions, and the conflict between 31 December 2026 and 10 February 2027. The old announced ceilings are NIS 600,000 (2026), NIS 1,000,000 (2027 and 2028), NIS 350,000 (2029), NIS 150,000 (2030); retain them as source history, not an entitlement calculation. Circular 4/2026's detailed Form 150 rules and C.2/C.3 concessions could not be reopened in full. Preserve the old unconfirmed distinctions for checking: pre-2026 first-time/veteran residents did not file Form 150; post-2026 first-time/veteran residents with direct/indirect foreign-entity holdings who must or choose to file the annual return complete Form 150 with C.2 and C.3 concessions during s.14(a) relief; an ordinary s.14(c) returner with such a holding and annual return has a C.2 concession and normal C.3 completion. No foreign-entity holding means no Form 150 on that ground, which does not remove a separate foreign-income reporting duty. The old claim that an election to tax foreign income is irrevocable remains unconfirmed. Trust/foundation treatment is not settled here. A 2026 rights-guide edition and the 2026 return filing dates were not available in the material read. The earlier unsupported 25%/30% capital-gain table, property betterment/linear rules and indexation are routed to the annual-return skill rather than treated as a complete tax computation. The unrelated credit-point amount belongs in the annual-return skill. Direct gov.il PDF download returned HTTP 403; an ordinary browser displayed a security-verification page; readable official indexed text was used where available, without bypassing a challenge.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-03. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `il-new-immigrant` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/il-new-immigrant. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `il-new-immigrant` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/il-new-immigrant. If neither is available, confirm every figure against the official source pages cited above before relying on it.
