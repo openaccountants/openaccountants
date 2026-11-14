@@ -1,11 +1,11 @@
 ---
 name: sd-bank-franchise-tax
 description: "Determine South Dakota 2026 financial-institution bank franchise tax, separate from the absence of ordinary corporate income tax. Compute graduated rates and minimum after state base and apportionment; identify state return and extension duties. Trigger on South Dakota bank franchise, financial institution income tax, lender and bank tax minimum."
-version: "0.1"
+version: "0.2"
 jurisdiction: US-SD
 category: state-tax
 tax_year: 2026
-last_updated: 2026-11-13
+last_updated: 2026-11-14
 tier: 2
 domain: income-tax
 type: computation
@@ -37,14 +37,14 @@ Rates are **marginal bands**, not a lower rate applied to the institution's enti
 
 | South Dakota assignable net income, USD | Marginal rate / minimum | Official source |
 | --- | --- | --- |
-| First 400 million |6% | [10-43-4](https://sdlegislature.gov/api/Statutes/10-43-4.html) |
-| Over 400 million through 425 million |5% | [10-43-4](https://sdlegislature.gov/api/Statutes/10-43-4.html) |
-| Over 425 million through 450 million |4% | [10-43-4](https://sdlegislature.gov/api/Statutes/10-43-4.html) |
-| Over 450 million through 475 million |3% | [10-43-4](https://sdlegislature.gov/api/Statutes/10-43-4.html) |
-| Over 475 million through 500 million |2% | [10-43-4](https://sdlegislature.gov/api/Statutes/10-43-4.html) |
-| Over 500 million through 600 million |1% | [10-43-4](https://sdlegislature.gov/api/Statutes/10-43-4.html) |
-| Over 600 million through 1.2 billion |0.5% | [10-43-4](https://sdlegislature.gov/api/Statutes/10-43-4.html) |
-| Over 1.2 billion |0.25% | [10-43-4](https://sdlegislature.gov/api/Statutes/10-43-4.html) |
+| First 400 million |six percent | [10-43-4](https://sdlegislature.gov/api/Statutes/10-43-4.html) |
+| Over 400 million through 425 million |five percent | [10-43-4](https://sdlegislature.gov/api/Statutes/10-43-4.html) |
+| Over 425 million through 450 million |four percent | [10-43-4](https://sdlegislature.gov/api/Statutes/10-43-4.html) |
+| Over 450 million through 475 million |three percent | [10-43-4](https://sdlegislature.gov/api/Statutes/10-43-4.html) |
+| Over 475 million through 500 million |two percent | [10-43-4](https://sdlegislature.gov/api/Statutes/10-43-4.html) |
+| Over 500 million through 600 million |one percent | [10-43-4](https://sdlegislature.gov/api/Statutes/10-43-4.html) |
+| Over 600 million through 1.2 billion |one-half of one percent | [10-43-4](https://sdlegislature.gov/api/Statutes/10-43-4.html) |
+| Over 1.2 billion |one-quarter of one percent | [10-43-4](https://sdlegislature.gov/api/Statutes/10-43-4.html) |
 | Minimum ordinary tax payable | USD 200 | [10-43-4](https://sdlegislature.gov/api/Statutes/10-43-4.html) |
 | State NOL carryforward, losses incurred from 2015 | Seven following tax years; no carryback; statutory floor/adjustment order applies | [10-43-10.4](https://sdlegislature.gov/api/Statutes/10-43-10.4.html); [10.5](https://sdlegislature.gov/api/Statutes/10-43-10.5.html) |
 

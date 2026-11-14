@@ -1,11 +1,11 @@
 ---
 name: sd-sales-tax
 description: "Compute South Dakota 2026 sales and use tax, local sales and municipal gross receipts tax. Trigger on South Dakota sales tax, services, remote sellers, marketplace providers, groceries, digital products, EPath, use tax and contractor or agricultural boundaries. Load us-sales-tax first."
-version: "2.2"
+version: "2.3"
 jurisdiction: US-SD
 category: state-tax
 tax_year: 2026
-last_updated: 2026-11-13
+last_updated: 2026-11-14
 tier: 2
 domain: vat-gst
 type: computation
@@ -41,11 +41,11 @@ Ordinary retail sales/use, professional services, remote sellers and marketplace
 | State ordinary sales/use | 4.2% | [10-45-2](https://sdlegislature.gov/api/Statutes/10-45-2.html); [July 2026 publication](https://dor.sd.gov/media/avyep2sr/2026-7_sales-use-tax-guide.pdf) |
 | Municipal ordinary sales/use | Local ordinance, maximum 2%; locate actual delivery/use address | [10-52-2](https://sdlegislature.gov/api/Statutes/10-52-2.html); [July 2026 rates](https://dor.sd.gov/media/54mb5a2w/2026-07_municipal-tax-guide.pdf) |
 | Municipal gross receipts tax | Additional 1% on adopted lodging, alcohol, eating establishments and specified admissions; not a universal 1-2% | [10-52A-2](https://sdlegislature.gov/api/Statutes/10-52A-2.html) |
-| Sioux Falls/Rapid City ordinary municipal sales tax | 2%; ordinary combined sales/use 6.2%; special industry additions separate | [July 2026 municipality table](https://dor.sd.gov/media/54mb5a2w/2026-07_municipal-tax-guide.pdf) |
+| Sioux Falls/Rapid City ordinary municipal sales tax | 2%; ordinary combined sales/use 6.2% (derived: 4.2% state plus 2% municipal); special industry additions separate | [July 2026 municipality table](https://dor.sd.gov/media/54mb5a2w/2026-07_municipal-tax-guide.pdf) |
 | Remote gross revenue threshold | **Exceeds** USD 100,000 current or prior calendar year; no transaction-count alternative in 2026 | [10-64-2](https://sdlegislature.gov/api/Statutes/10-64-2.html); [remote bulletin](https://dor.sd.gov/media/yh0n3oc2/remote-seller-bulletin.pdf) |
-| Realty improvement prime contractor | Separate 2% contractor excise; receipts include collected excise tax, not 6.2% retail tax on whole construction contract | [10-46A-1](https://sdlegislature.gov/api/Statutes/10-46A-1.html); [2026 p 4-5](https://dor.sd.gov/media/avyep2sr/2026-7_sales-use-tax-guide.pdf) |
+| Realty improvement prime contractor | Separate 2% contractor excise; receipts include collected excise tax, not 6.2% retail tax (derived: 4.2% state plus 2% municipal) on whole construction contract | [10-46A-1](https://sdlegislature.gov/api/Statutes/10-46A-1.html); [2026 p 4-5](https://dor.sd.gov/media/avyep2sr/2026-7_sales-use-tax-guide.pdf) |
 | Exclusive-use qualifying farm machinery/attachment/irrigation equipment | 4.2% agricultural excise, no municipal sales tax; not a blanket zero-tax exemption | [2026 p 4, 8](https://dor.sd.gov/media/avyep2sr/2026-7_sales-use-tax-guide.pdf); [ag machinery facts](https://dor.sd.gov/media/2fpb0iuy/farm-machinery-attachment-units-and-irrigation-equipment.pdf) |
-| Sales collection allowance | Suspended July 1, 2025 through June 30, 2028; no 1.5%/USD 70 credit for 2026 | [10-45-27.2 commission note](https://sdlegislature.gov/api/Statutes/10-45-27.2.html) |
+| Sales collection allowance | Suspended July 1, 2025 through June 30, 2028; no credit of one and one-half percent, capped at seventy dollars per return period, for 2026 | [10-45-27.2 commission note](https://sdlegislature.gov/api/Statutes/10-45-27.2.html) |
 
 1. Establish physical or remote nexus. Physical presence has no small-seller dollar safe harbor. The remote test includes gross product, electronic-product and service sales, not just taxable sales. Register by the first day of the month starting at least 30 days after crossing. Exactly USD 100,000 alone does not cross the statute's **exceeds** test. The 200-transaction limb was removed July 1, 2023; do not revive the original Wayfair-era test.
 2. Establish taxability and the actual receipt location. Customer pickup uses the seller location; delivered goods use delivery; personal-care services use performance/receipt; repaired products use delivery back to the customer. Electronically delivered products follow the address hierarchy in the Department publication. State and local treatment must use the actual transaction facts.
