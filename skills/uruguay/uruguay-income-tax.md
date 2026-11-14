@@ -1,10 +1,10 @@
 ---
 name: uruguay-income-tax
 description: "Uruguay personal income tax (IRPF, Impuesto a la Renta de las Personas Físicas) for tax year 2026 under Título 7 of the Texto Ordenado 2023 as amended by Ley 20.446 of 16 December 2025. Covers residence (183 days, centre of interests), the dual system, Categoría II labour income on the 0% to 36% scale in BPC (BPC 2026 UYU 6,864, Decreto 11/026), the aguinaldo and salario vacacional rate, the family-unit (núcleo familiar) scales, the deduction credit at 14% or 8%, the 20 BPC child deduction, the mortgage and rent credits, the 30% expense deduction for independent work, Categoría I capital income at 12%, 7% and the reduced interest rates, foreign capital income taxed from 1 January 2026, filing on forms 1101, 1102 and 1103, the five balance instalments and DGI penalties. Trigger on: IRPF 2026, franjas IRPF, deducciones IRPF, declaración jurada IRPF, núcleo familiar, rentas del exterior, Uruguay income tax. Out of scope: payroll withholding and BPS contributions, IRAE, IRNR, IASS."
-version: 0.2
+version: 0.3
 jurisdiction: UY
 tax_year: 2026
-last_updated: 2026-11-11
+last_updated: 2026-11-14
 depends_on:
   - income-tax-workflow-base
 category: international
@@ -14,7 +14,7 @@ domain: income-tax
 type: computation
 ---
 
-# Uruguay: personal income tax (IRPF) for 2026 v0.2
+# Uruguay: personal income tax (IRPF) for 2026 v0.3
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -77,8 +77,7 @@ All BPC amounts are at UYU 6,864 for 2026. The annual scale applies to the annua
 | Foreign capital income of people resident from 2020 who opted under art. 24 second paragraph b) | 7% | 2026 | same, art. 37 B) |
 | Interest on local bank deposits and on publicly issued, listed debt of resident issuers, in pesos at a fixed nominal rate: 1 year or less / over 1 to 3 years / over 3 years | 5.5% / 2.5% / 0.5% | 2026 | same, art. 37 A) |
 | Same, pesos with an adjustment clause (for example UI): 1 year or less / over 1 to 3 years / over 3 years | 10% / 7% / 5% | 2026 | same, art. 37 A) |
-| Same, foreign currency: 1 year or less / over 3 years | 12% / 7% | 2026 | same, art. 37 A) |
-| Same, foreign currency, over 1 to 3 years | unverified: the rate cell is blank in the IMPO consolidated text | 2026 | same, art. 37 A) |
+| Same, foreign currency: 1 year or less / over 3 years (the over 1 to 3 years cell is blank in the IMPO consolidated text: see Not yet confirmed) | 12% / 7% | 2026 | same, art. 37 A) |
 | Rental income exemption | Exempt if all rents are 40 BPC a year (UYU 274,560) or less and the owner lifts bank secrecy; lost if other capital yields exceed 3 BPC (UYU 20,592) | 2026 | same, art. 38 J) |
 | Small disposals exemption | Each disposal UI 30,000 or less, and the year's total of such disposals under UI 90,000 | 2026 | same, art. 38 I) |
 | Sale of permanent home exemption | Sale UI 1,200,000 or less, at least 50% reinvested in a new permanent home within 12 months, new home UI 1,800,000 or less | 2026 | same, art. 38 L) |
