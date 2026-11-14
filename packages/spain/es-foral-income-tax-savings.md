@@ -5,8 +5,8 @@ description: >
 jurisdiction: ES
 category: international
 tax_year: 2026
-last_updated: 2026-11-06
-version: 0.9
+last_updated: 2026-11-14
+version: 0.10
 tier: 2
 domain: income-tax
 type: situation-rules
@@ -25,6 +25,15 @@ An ordinary resident whose foral IRPF is Bizkaia, Álava, Gipuzkoa or Navarra un
 ## Rates, bands and thresholds
 
 The general and savings scales of each territory are in [es-foral-income-tax](es-foral-income-tax.md#rates-bands-and-thresholds); the amounts this Guide applies sit in the rules under The base.
+
+The Basque housing-lease reductions on gross rental income, detailed with their gates under The base:
+
+| Basque housing lease, 2026 | Reduction on gross rental income | Source |
+|---|---:|---|
+| Permanent residence lease within LAU art 2 (Bizkaia, Gipuzkoa) | 30% | [B NF13/2013 art 32](https://www.bizkaia.eus/documents/880307/15187815/ca_13_2013.pdf/ce52e403-4fca-9ef7-bf85-2505ba29f921?t=1784098584068), [G NF3/2014 art 32](https://www.gipuzkoa.eus/documents/2456431/8.0759126E7/NF%203-2014%20(2026-0).pdf/8ab5c95c-3f89-8fdf-5cb8-01950e3983cc) |
+| Permanent residence lease within LAU art 2 (Álava); 35% in a zone listed in its DA 34 | 30% / 35% | [A NF33/2013 art 32](https://web.araba.eus/documents/d/araba/indice_norma-foral_irpf_cas-4-pdf) |
+| Public housing programme (Bizigune, ASAP or similar) or stressed-market lease at the reference index | 70% | [B NF13/2013 art 32](https://www.bizkaia.eus/documents/880307/15187815/ca_13_2013.pdf/ce52e403-4fca-9ef7-bf85-2505ba29f921?t=1784098584068), [A NF33/2013 art 32](https://web.araba.eus/documents/d/araba/indice_norma-foral_irpf_cas-4-pdf), [G NF3/2014 art 32](https://www.gipuzkoa.eus/documents/2456431/8.0759126E7/NF%203-2014%20(2026-0).pdf/8ab5c95c-3f89-8fdf-5cb8-01950e3983cc) |
+| Other investment housing | 20% | [B NF13/2013 art 32](https://www.bizkaia.eus/documents/880307/15187815/ca_13_2013.pdf/ce52e403-4fca-9ef7-bf85-2505ba29f921?t=1784098584068), [A NF33/2013 art 32](https://web.araba.eus/documents/d/araba/indice_norma-foral_irpf_cas-4-pdf), [G NF3/2014 art 32](https://www.gipuzkoa.eus/documents/2456431/8.0759126E7/NF%203-2014%20(2026-0).pdf/8ab5c95c-3f89-8fdf-5cb8-01950e3983cc) |
 
 ## The base
 

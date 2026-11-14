@@ -3,15 +3,16 @@ name: gn-tax-overview
 description: "Guinea tax routing and cross-workpaper control for 2026. Use it before combining individual salary tax, corporate IS and IMF, VAT, CNSS, property or formation results. It identifies the correct country job, the governing-source-version prerequisite, the inputs still missing and the distinction between a tax year, a payment date and a credit balance. Rates and statutory thresholds stay in the domain Guides so a summary cannot silently contradict them. Two executable cases reconcile imported, independently validated liabilities without creating a new tax-rate table. The pack remains partial: transfer pricing, complete cross-border relief, specialised personal/company/VAT methods, employer-tax base reconciliation and parts of formation/reporting remain unresolved. AI review does not provide accountant attestation."
 jurisdiction: GN
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: orchestrator
-version: 1.1
+version: 1.2
 tier: 2
 domain: income-tax
+type: situation-rules
 ---
 
-# Guinea tax routing and workpaper controls v1.1
+# Guinea tax routing and workpaper controls v1.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
