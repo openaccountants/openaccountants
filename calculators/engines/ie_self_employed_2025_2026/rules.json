@@ -2,7 +2,7 @@
   "engine": "ie_self_employed_2025_2026",
   "code_url": "https://github.com/openaccountants/openaccountants/tree/main/calculators/engines/ie_self_employed_2025_2026",
   "generated_from": "src/lib/engines/ie-self-employed-2025-2026.ts",
-  "source_commit": "9931ceb6",
+  "source_commit": "c2e3c2b9",
   "licence": "Figures and wording: OpenAccountants Guide License v1.0. Code: AGPL-3.0-only.",
   "spec": {
     "name": "ie_self_employed_2025_2026",
