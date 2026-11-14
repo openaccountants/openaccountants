@@ -630,6 +630,13 @@
   "dir": "skills/italy"
  },
  {
+  "code": "JE",
+  "name": "Jersey",
+  "region": "europe",
+  "owner": "michael",
+  "dir": "skills/jersey"
+ },
+ {
   "code": "JM",
   "name": "Jamaica",
   "region": "americas",
