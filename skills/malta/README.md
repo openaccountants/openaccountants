@@ -46,7 +46,7 @@ Other Malta topics are open to contributions and review by other Maltese account
 
 | Skill | Use it for |
 |---|---|
-| [malta-bookkeeping](malta-bookkeeping.md) | Day-to-day books (accountant-reviewed). |
+| [malta-bookkeeping](malta-bookkeeping.md) | Day-to-day books. Approved by Michael Cutajar; unsupported classifications and tax-deduction conclusions are held. |
 | [malta-financial-statements](malta-financial-statements.md) | Statutory annual accounts: framework, size tests, audit, laying and delivery to the Registrar. |
 | [malta-formation](malta-formation.md) | Forming and registering a company with the MBR. |
 | [selling-a-company-in-malta](selling-a-company-in-malta.md) | A share sale: market value, duty, provisional tax, Form T. |
