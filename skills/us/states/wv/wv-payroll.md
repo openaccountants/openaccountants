@@ -6,8 +6,8 @@ category: payroll
 domain: tax
 tax_year: 2026
 tier: 2
-last_updated: 2026-11-13
-version: "1.0"
+last_updated: 2026-11-14
+version: "1.1"
 type: situation-rules
 ---
 
@@ -44,7 +44,7 @@ West Virginia employers in tax year 2026: state income-tax withholding and unemp
 | One-job monthly over $3,333 through $5,000 | $92.20 + 4.22% of excess over $3,333 | [IT-100.2A p.4](https://tax.wv.gov/Documents/Withholding/it100.2a.pdf) |
 | One-job monthly over $5,000 | $162.55 + 4.58% of excess over $5,000 | [IT-100.2A p.4](https://tax.wv.gov/Documents/Withholding/it100.2a.pdf) |
 | UI wage base | $9,500 per employee/calendar year; predecessor and covered other-state wages can count | [§21A-1A-28(b)(1)](https://code.wvlegislature.gov/21A-1A-28/) |
-| New-employer statutory contribution before July change | 2.7% until eligible for experience rating; foreign construction entities 7.5% statutory base, with other applicable assessments to be reconciled | [§21A-5-5(b)-(c)](https://code.wvlegislature.gov/21A-5-5/) |
+| New-employer statutory contribution before July change | 2.7% until eligible for experience rating; foreign construction entities 7.5% statutory base, with other applicable assessments to be reconciled (in words on the page) | [§21A-5-5(b)-(c)](https://code.wvlegislature.gov/21A-5-5/) |
 | UI change effective July 1, 2026 | Statute reduces otherwise applicable contribution rate by seven percent, floor zero; use agency implementation and actual notice | [§21A-5-5(d)](https://code.wvlegislature.gov/21A-5-5/) |
 | Automation fee from July 1, 2026 | Separate annual fee; zero-rate employers excepted; agency may reduce statutory percentage; do not treat the contribution reduction as total employer savings | [§21A-9-10(c)](https://code.wvlegislature.gov/21A-9-10/) |
 | Withholding monthly remittance | 15th of succeeding month; IT-101Q quarterly by last day after quarter | [TSD 381](https://tax.wv.gov/Documents/TSD/tsd381.pdf) |
