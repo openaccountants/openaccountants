@@ -1,7 +1,7 @@
 ---
 name: rwanda-payroll
 description: "Rwanda payroll for 2026: PAYE on gross, RSSB pension at 6% plus 6%, maternity, medical, CBHI, unified declaration in Ishema by the 15th, quarterly PAYE option, penalties, and the 2027 pension step to 14%."
-version: 0.3
+version: 0.4
 jurisdiction: RW
 tax_year: 2026
 last_updated: 2026-11-14
@@ -11,7 +11,7 @@ tier: 2
 domain: payroll
 ---
 
-# Rwanda Payroll v0.3
+# Rwanda Payroll v0.4
 
 Tax year 2026.
 
@@ -155,7 +155,7 @@ Suggested layout (one row per employee per month):
 | K | Employee deductions | `=E+F+G+H+J` |
 | L | Net pay | `=B-K` |
 | M | Pension employer | `=B*6%` |
-| N | Occupational hazards | `=B*2%` |
+| N | Occupational hazards | `=B*R`, where R is the rate RSSB applies to this employer, entered as an input. No default: the rate is not confirmed (see Not yet confirmed) |
 | O | Maternity employer | `=B*0.3%` |
 | P | Medical employer | `=IF(D="Y", C*7.5%, 0)` |
 | Q | Total employer cost | `=B+M+N+O+P` |
@@ -199,8 +199,8 @@ If the engagement lacks key data:
 | 1 January 2025 | 12% | 6% | 6% | https://www.rra.gov.rw/en/domestic-tax-services/rssb-contributions/pension-scheme-contribution |
 | 1 January 2027 | 14% | split not set by the Order (see Not yet confirmed) | split not set by the Order | Order 086/01 sets the total only: https://www.minijust.gov.rw/fileadmin/user_upload/Minijust/Official_gazettes_2/______2024_Igazeti_ya_Leta/UKUBOZA-December-Decembre/OG_n___Special_of_13.12.2024__Ingano_y_umusanzu_mu_bwiteganyirize_bwa_pansiyo_butegetswe.pdf |
 | 1 January 2028 | 16% | split not set by the Order (see Not yet confirmed) | split not set by the Order | Order 086/01: https://www.minijust.gov.rw/fileadmin/user_upload/Minijust/Official_gazettes_2/______2024_Igazeti_ya_Leta/UKUBOZA-December-Decembre/OG_n___Special_of_13.12.2024__Ingano_y_umusanzu_mu_bwiteganyirize_bwa_pansiyo_butegetswe.pdf |
-| 1 January 2029 | 18% | unverified: 9% | unverified: 9% | same |
-| 1 January 2030 | 20% | unverified: 10% | unverified: 10% | same |
+| 1 January 2029 | 18% | split not set by the Order (see Not yet confirmed) | split not set by the Order | same |
+| 1 January 2030 | 20% | split not set by the Order (see Not yet confirmed) | split not set by the Order | same |
 
 PAYE shortcut: rate x gross less 6,000 in the 10% band, 16,000 in the 20% band, 36,000 in the 30% band. It ties out at 100,000 (4,000) and 200,000 (24,000). The 0% band rose from FRW 30,000 to 60,000 under Law 027/2022 (old file, unverified).
 
@@ -213,7 +213,7 @@ CBHI base is gross less PAYE, pension and maternity. Medical is not subtracted. 
 | Gross and basic 150,000, medical | 14,000 | 35,332.75 | 114,667.25 |
 | Gross and basic 500,000, medical | 114,000 | 184,772.50 | 315,227.50 |
 
-Employer cost on gross and basic 150,000, enrolled: 9,000 pension, 3,000 occupational hazards (unverified 2%), 450 maternity, 11,250 medical; total 173,700, or 15.8% on top of gross. Employee social shorthand where basic = gross: 6% + 0.3% + 7.5% + 0.5% = 14.3% as an upper bound, since CBHI is on net.
+Employer cost on gross and basic 150,000, enrolled, before occupational hazards: 9,000 pension, 450 maternity, 11,250 medical; 20,700 on top of gross (13.8%), total 170,700. Occupational hazards is then added at the rate RSSB applies to the employer. For scale only, an assumed example rate of 2% (not a default and not confirmed) would add 3,000. Employee social shorthand where basic = gross: 6% + 0.3% + 7.5% + 0.5% = 14.3% as an upper bound, since CBHI is on net.
 
 Casual labourer paid FRW 80,000 in a month: 15% of 20,000 = FRW 3,000 (art 56). The old file charged 12,000 and missed the 0% slice.
 
@@ -321,4 +321,4 @@ expected:
 | RRA, declaration and payment of RSSB contributions page: read in full | https://www.rra.gov.rw/en/domestic-tax-services/rssb-contributions/declaration-payment-of-rssb-contributions | 2026-11-14 |
 | RRA Tax Handbook 2025: read for E-Tax steps, real regime, PAYE, VAT declaration chapters | https://www.rra.gov.rw/fileadmin/Folder_for_2025/RRA_Tax_Handbook_2025_Final.pdf | 2026-11-14 |
 
-Not yet confirmed: occupational hazards rate 2%; the split of 14% and later pension rates; whether transport is excluded from the maternity base and included in the pension base, which the old file said on secondary sources, while RRA says gross; the medical enrolment minimum of 7 employees and 10th of the month deadline, from the old file; the exact definition of net for CBHI; minimum wage, carried from a secondary source and not checked against the labour law; RRA Pay PAYE page lists quarters from March while CG Instructions list calendar quarters; the Instructions predate Law 020/2023; the occupational hazards rate (old file: 2% employer), moved out of the rates table; the RRA RSSB pages read 2026-11-14 name the scheme but give no rate.
+Not yet confirmed: the occupational hazards rate: no RSSB, RRA or gazette page read on 2026-11-14 states it (the RSSB scheme page and the RRA RSSB pages name the scheme but give no rate; the 2% in the old file, and on the RDB business procedures page https://businessprocedures.rdb.rw/menu/179, which also prints the pre-2025 6% pension and so is stale, is not used), so no rate is applied and the employer gets it from RSSB; the employer and employee split of the 14%, 16%, 18% and 20% pension totals from 2027 (Order 086/01 sets totals only); whether transport is excluded from the maternity base and included in the pension base, which the old file said on secondary sources, while RRA says gross; the medical enrolment minimum of 7 employees and 10th of the month deadline, from the old file; the exact definition of net for CBHI; minimum wage, carried from a secondary source and not checked against the labour law; RRA Pay PAYE page lists quarters from March while CG Instructions list calendar quarters; the Instructions predate Law 020/2023; the occupational hazards row (old file: 2% employer) was moved out of the rates table on 2026-11-14, and the worked employer cost and column N no longer use it.
