@@ -37,9 +37,9 @@ USD, 2026; same schedule for each taxpayer. On a married combined Missouri retur
 | Over 8,088-9,436 | 202 + 4.5% of excess over 8,088 | [2026 chart](https://dor.mo.gov/forms/MO-1040ES_2026.pdf) |
 | Over 9,436 | 263 + 4.7% of excess over 9,436 | [2026 chart](https://dor.mo.gov/forms/MO-1040ES_2026.pdf) |
 | Individual estimate trigger | Expected Missouri tax after credits/withholding **100 or more** | [2026 MO-1040ES, item 1](https://dor.mo.gov/forms/MO-1040ES_2026.pdf) |
-| Missouri-source business income subtraction | 20 percent of qualifying positive combined business income, no duplicate subtraction | [MO-A line 17](https://dor.mo.gov/forms/MO-1040%20Instructions_2025.pdf); [143.022](https://revisor.mo.gov/main/OneSection.aspx?section=143.022) |
+| Missouri-source business income subtraction | 20% of qualifying positive combined business income, no duplicate subtraction | [MO-A line 17](https://dor.mo.gov/forms/MO-1040%20Instructions_2025.pdf); [143.022](https://revisor.mo.gov/main/OneSection.aspx?section=143.022) |
 | State HOH / qualifying widow(er) additional exemption | 1,400; same filing status as federal return | [2026 estimate line 5](https://dor.mo.gov/forms/MO-1040ES_2026.pdf) |
-| Federal-income-tax deduction cap | five thousand dollars other returns; ten thousand dollars married combined, after income-based percentage | [143.171](https://revisor.mo.gov/main/OneSection.aspx?section=143.171); [annual line 13](https://dor.mo.gov/forms/MO-1040%20Instructions_2025.pdf) |
+| Federal-income-tax deduction cap | 5,000 other returns; 10,000 married combined, after income-based percentage (in words on the page in 143.171) | [143.171](https://revisor.mo.gov/main/OneSection.aspx?section=143.171); [annual line 13](https://dor.mo.gov/forms/MO-1040%20Instructions_2025.pdf) |
 
 Published bracket constants are rounded whole-dollar amounts. Do not substitute an independently accumulated 262.86 for the published 263. Annual tax-table lookup and whole-dollar rounding can differ from a rate-schedule estimate. Federal standard-deduction amounts have their home in the federal skill; obtain the applicable 2026 federal input and apply Missouri's rules, rather than copying old 2025 amounts.
 
@@ -147,7 +147,7 @@ expected:
 | 2026 MO-1040ES. Read for 2026 rate chart, spouse allocation, state HOH exemption, estimate threshold/dates/safe harbours. | https://dor.mo.gov/forms/MO-1040ES_2026.pdf | 2026-11-13 |
 | Final 2025 MO-1040 booklet. Read for 2025-2026 filing cycle: residency, MO-A, deductions, credits, forms, filing, payments and penalties. | https://dor.mo.gov/forms/MO-1040%20Instructions_2025.pdf | 2026-11-13 |
 | 143.121 Missouri AGI. Read for capital-gain commencement, specie and state adjustments; resolves inconsistent FAQ date. | https://revisor.mo.gov/main/OneSection.aspx?section=143.121 | 2026-11-13 |
-| 143.022 business deduction. Read for business-income components, ownership and maximum twenty percent. | https://revisor.mo.gov/main/OneSection.aspx?section=143.022 | 2026-11-13 |
+| 143.022 business deduction. Read for business-income components, ownership and maximum 20% (in words on the page). | https://revisor.mo.gov/main/OneSection.aspx?section=143.022 | 2026-11-13 |
 | 143.171 federal tax deduction. Read for same-year liability, individual percentages/caps and corporate distinction. | https://revisor.mo.gov/main/OneSection.aspx?section=143.171 | 2026-11-13 |
 | Capital gains FAQ. Read for combined-spouse allocation and entity restrictions; inconsistent commencement answer reconciled. | https://dor.mo.gov/faq/taxation/individual/capital-gains-subtraction.html | 2026-11-13 |
 | Specie FAQ. Read for 2026 gold/silver and prohibition on double individual subtraction. | https://dor.mo.gov/faq/taxation/individual/specie_subtraction.html | 2026-11-13 |

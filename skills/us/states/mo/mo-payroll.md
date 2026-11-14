@@ -28,7 +28,7 @@ All amounts USD. State withholding is employee tax held in trust; Missouri UI is
 
 | 2026 item | Rule / amount | Official source |
 | --- | --- | --- |
-| Withholding formula top rate | 4.70% (top bracket of the 2026 formula; do not carry an older top rate) | [2026 formula](https://dor.mo.gov/forms/Withholding%20Formula_2026.pdf) |
+| Withholding formula top rate | 4.7% (top bracket of the 2026 formula; do not carry an older top rate) | [2026 formula](https://dor.mo.gov/forms/Withholding%20Formula_2026.pdf) |
 | Separate supplemental wages | Optional flat 4.7% when the regular-wage withholding conditions are met, or prescribed aggregate method | [2026 booklet, supplemental wages](https://dor.mo.gov/forms/4282_2026.pdf) |
 | Formula annual deduction: single / MFS / married spouse works | 16,100 | [2026 state employer formula](https://dor.mo.gov/forms/Withholding%20Formula_2026.pdf) |
 | Formula annual deduction: married spouse does not work | 32,200 | [2026 state employer formula](https://dor.mo.gov/forms/Withholding%20Formula_2026.pdf) |
