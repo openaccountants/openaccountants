@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/cn-social-insurance"
   jurisdiction: "CN"
   tax_year: "2026"
-  last_updated: "2026-10-29"
+  last_updated: "2026-11-14"
 ---
 
 # China social insurance and housing provident fund: 2026 national method and dated local calculations
@@ -150,20 +150,20 @@ expected:
 
 | Source | Official URL | Read on |
 | --- | --- | --- |
-| Social Insurance Law (2018 amended text) | https://fgk.chinatax.gov.cn/zcfgk/c100009/c5192937/content.html | 2026-10-29 |
-| Housing Provident Fund Regulations, 2026 amended text | https://legalinfo.moj.gov.cn/zhfxfzzx/fzzxyw/202608/t20260819_538654.html | 2026-10-29 |
-| Shanghai employer-rate guidance | https://rsj.sh.gov.cn/tdjjf_17554/20250120/t0035_1430072.html | 2026-10-29 |
-| Shanghai employee-rate guidance | https://rsj.sh.gov.cn/tdjjf_17554/20200828/t0035_1393484.html | 2026-10-29 |
-| Shanghai 2025 policy explanation | https://ybj.sh.gov.cn/zcjd/20250225/6ad4b3deb233457298f65fbc287a125e.html | 2026-10-29 |
-| Shanghai medical notice 2026 No.2 | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/sbf/202603/t479836.html | 2026-10-29 |
-| Shanghai 2025 base notice | https://tyjr.sh.gov.cn/shtyjrswj/tzgg/20250919/557388ff0c4c4492ad11a3ae8863fb67.html | 2026-10-29 |
-| Shanghai 2026 base notice | https://shanghai.chinatax.gov.cn/bsfw/nszx/hdfk/202609/t481435.html | 2026-10-29 |
-| Shanghai base Q&A | https://shanghai.chinatax.gov.cn/tax/zcfw/rdwd/202608/t481376.html | 2026-10-29 |
-| Shanghai housing-fund notice 2026 No.3 | https://www.shanghai.gov.cn/gwk/affairs/content/0064%40f3d788ec72e9404ebcbf3d27fda98435 | 2026-10-29 |
-| Shanghai annual declaration notice 2026 No.1 | https://shanghai.chinatax.gov.cn/tax/zcfw/zcfgk/sbf/202604/t480144.html | 2026-10-29 |
-| Shanghai payment guidance | https://shanghai.chinatax.gov.cn/bsfw/nszx/hdfk/202301/t465801.html | 2026-10-29 |
-| 2024 retirement-age decision and implementing measures | https://www.hmo.gov.cn/2026/08/21/ARTI6kpLUW6qilBUClmQ6bio260821.shtml | 2026-10-29 |
-| Foreign-worker social-insurance measures,2024 revision | https://www.beijing.gov.cn/zhengce/zhengcefagui/qtwj/202509/t20250908_4194428.html | 2026-10-29 |
+| Social Insurance Law (2018 amended text). Read for Who this applies to, Rates, bands and thresholds, The base | https://fgk.chinatax.gov.cn/zcfgk/c100009/c5192937/content.html | 2026-11-14 |
+| Housing Provident Fund Regulations, 2026 amended text. Read for Who this applies to, Rates, bands and thresholds, The base | https://legalinfo.moj.gov.cn/zhfxfzzx/fzzxyw/202608/t20260819_538654.html | 2026-11-14 |
+| Shanghai employer-rate guidance. Read for Rates, bands and thresholds, The base | https://rsj.sh.gov.cn/tdjjf_17554/20250120/t0035_1430072.html | 2026-11-14 |
+| Shanghai employee-rate guidance. Read for Rates, bands and thresholds, The base | https://rsj.sh.gov.cn/tdjjf_17554/20200828/t0035_1393484.html | 2026-11-14 |
+| Shanghai 2025 policy explanation. Read for Rates, bands and thresholds | https://ybj.sh.gov.cn/zcjd/20250225/6ad4b3deb233457298f65fbc287a125e.html | 2026-11-14 |
+| Shanghai medical notice 2026 No.2. Read for Rates, bands and thresholds, The base, Benefits, retirement and non-payroll decisions retained from the earlier Guide | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/sbf/202603/t479836.html | 2026-11-14 |
+| Shanghai 2025 base notice. Read for Rates, bands and thresholds | https://tyjr.sh.gov.cn/shtyjrswj/tzgg/20250919/557388ff0c4c4492ad11a3ae8863fb67.html | 2026-11-14 |
+| Shanghai 2026 base notice. Read for Rates, bands and thresholds | https://shanghai.chinatax.gov.cn/bsfw/nszx/hdfk/202609/t481435.html | 2026-11-14 |
+| Shanghai base Q&A. Read for Rates, bands and thresholds, The base | https://shanghai.chinatax.gov.cn/tax/zcfw/rdwd/202608/t481376.html | 2026-11-14 |
+| Shanghai housing-fund notice 2026 No.3. Read for Rates, bands and thresholds, The base, Deadlines and filing | https://www.shanghai.gov.cn/gwk/affairs/content/0064%40f3d788ec72e9404ebcbf3d27fda98435 | 2026-11-14 |
+| Shanghai annual declaration notice 2026 No.1. Read for The base, Deadlines and filing | https://shanghai.chinatax.gov.cn/tax/zcfw/zcfgk/sbf/202604/t480144.html | 2026-11-14 |
+| Shanghai payment guidance. Read for Deadlines and filing | https://shanghai.chinatax.gov.cn/bsfw/nszx/hdfk/202301/t465801.html | 2026-11-14 |
+| 2024 retirement-age decision and implementing measures. Read for Benefits, retirement and non-payroll decisions retained from the earlier Guide | https://www.hmo.gov.cn/2026/08/21/ARTI6kpLUW6qilBUClmQ6bio260821.shtml | 2026-11-14 |
+| Foreign-worker social-insurance measures,2024 revision. Read for Cross-border points | https://www.beijing.gov.cn/zhengce/zhengcefagui/qtwj/202509/t20250908_4194428.html | 2026-11-14 |
 
 > **General reference only.** This Guide is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status or local procedures. A qualified professional in the relevant jurisdiction must review the work before filing, paying or taking a tax position.
 
@@ -171,4 +171,4 @@ expected:
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-29. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `cn-social-insurance` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/cn-social-insurance. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `cn-social-insurance` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/cn-social-insurance. If neither is available, confirm every figure against the official source pages cited above before relying on it.

@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/cl-payroll"
   jurisdiction: "CL"
   tax_year: "2026"
-  last_updated: "2026-11-11"
+  last_updated: "2026-11-14"
 ---
 
-# Chile: employer payroll and wage withholding (2026) v1.0
+# Chile: employer payroll and wage withholding (2026) v1.1
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -39,21 +39,22 @@ Linked skills, not repeated here:
 | Taxable ceiling (tope imponible) for AFP, health and work-accident contributions | 90.0 UF a month, from February 2026 pay for the rest of 2026 (87.8 UF in 2025) | ceiling | 2026 | https://www.spensiones.cl/portal/institucional/594/w3-article-16921.html (DL 3.500 art. 16) |
 | Taxable ceiling for unemployment insurance | 135.2 UF a month, from February 2026 pay (131.9 UF in 2025) | ceiling | 2026 | same (Ley 19.728 art. 6) |
 | UF at 31 October 2026 (used in the examples) | CLP 41,247.63 | value | Oct 2026 | https://www.sii.cl/valores_y_fechas/uf/uf2026.htm |
-| AFP pension contribution | 10% of taxable pay, up to the ceiling | worker | 2026 | https://www.bcn.cl/leychile/navegar?idNorma=7147 (DL 3.500 art. 17) |
+| AFP pension contribution | 10% of taxable pay, up to the ceiling | worker | 2026 | https://www.bcn.cl/leychile/navegar?idNorma=7147 ; https://nuevo.leychile.cl/servicios/Navegar/get_norma_json?idNorma=7147 (DL 3.500 art. 17) |
 | AFP commission (cotización adicional), by AFP | Capital 1.44%; Cuprum 1.44%; Habitat 1.27%; Modelo 0.58%; PlanVital 1.16%; Provida 1.45%; Uno 0.46% | worker | 2026 | https://www.spensiones.cl/portal/institucional/594/w3-propertyvalue-9897.html (DL 3.500 arts. 17, 29) |
-| Disability and survivors insurance (SIS), from August 2026 | 1.78% of taxable pay, women and men; part of the employer's 3.5% below | employer | Aug-Dec 2026 | https://www.spensiones.cl/portal/institucional/594/w3-propertyvalue-9917.html |
-| SIS, January to July 2026 | unverified: the SP pages read show only the rate from August 2026. Paid by the employer on top of the 1% below (DL 3.500 art. 17; Ley 21.735 art. 8 transitorio) | employer | Jan-Jul 2026 | unverified |
-| Health contribution (Fonasa, or the Isapre plan with this as the minimum) | 7% of taxable pay, up to the ceiling | worker | 2026 | https://www.bcn.cl/leychile/navegar?idNorma=7147 (DL 3.500 art. 84) |
-| Employer pension contribution, Ley 21.735, 1 August 2025 to 31 July 2026 | 1.0% (0.1% to the worker's AFP account, 0.9% to the Fondo Autónomo de Protección Previsional) | employer | Jan-Jul 2026 | https://www.bcn.cl/leychile/navegar?idNorma=1212060 (Ley 21.735 art. 4 transitorio a)) |
+| Disability and survivors insurance (SIS), from August 2026 | 1.78% of taxable pay, women and men; part of the employer's total in the row below | employer | Aug-Dec 2026 | https://www.spensiones.cl/portal/institucional/594/w3-propertyvalue-9917.html |
+| Health contribution (Fonasa, or the Isapre plan with this as the minimum) | 7% of taxable pay, up to the ceiling | worker | 2026 | https://www.bcn.cl/leychile/navegar?idNorma=7147 ; https://nuevo.leychile.cl/servicios/Navegar/get_norma_json?idNorma=7147 (DL 3.500 art. 84) |
+| Employer pension contribution, Ley 21.735, 1 August 2025 to 31 July 2026 | 1.0% (0.1% to the worker's AFP account, 0.9% to the Fondo Autónomo de Protección Previsional) | employer | Jan-Jul 2026 | https://www.bcn.cl/leychile/navegar?idNorma=1212060 ; https://nuevo.leychile.cl/servicios/Navegar/get_norma_json?idNorma=1212060 (Ley 21.735 art. 4 transitorio a)) |
 | Employer pension contribution, Ley 21.735, from 1 August 2026 | 3.5% (0.1% AFP account, 0.9% Cotización con Rentabilidad Protegida, 2.5% Seguro Social Previsional, which includes the SIS and the life-expectancy compensation) | employer | Aug 2026-Jul 2027 | same, art. 4 transitorio b); https://www.spensiones.cl/portal/institucional/594/w3-propertyvalue-10906.html |
-| Employer pension contribution, later steps | 4.25% from August 2027, then 5.0%, 5.7%, 6.4%, 7.1%, 7.8% and 8.5% in yearly steps (a lower path applies if Ministerio de Hacienda decrees that Ley 21.713 raised less than expected) | employer | 2027 on | https://www.bcn.cl/leychile/navegar?idNorma=1212060 (art. 4 transitorio c) to k)) |
-| Unemployment insurance, indefinite contract | 0.6% worker; 2.4% employer | both | 2026 | https://www.bcn.cl/leychile/navegar?idNorma=184979 (Ley 19.728 art. 5) |
+| Employer pension contribution, later steps | 4.25% from August 2027, then 5.0%, 5.7%, 6.4%, 7.1%, 7.8% and 8.5% in yearly steps (a lower path applies if Ministerio de Hacienda decrees that Ley 21.713 raised less than expected) | employer | 2027 on | https://www.bcn.cl/leychile/navegar?idNorma=1212060 ; https://nuevo.leychile.cl/servicios/Navegar/get_norma_json?idNorma=1212060 (art. 4 transitorio c) to k)) |
+| Unemployment insurance, indefinite contract | 0.6% worker; 2.4% employer | both | 2026 | https://www.bcn.cl/leychile/navegar?idNorma=184979 ; https://nuevo.leychile.cl/servicios/Navegar/get_norma_json?idNorma=184979 (Ley 19.728 art. 5) |
 | Unemployment insurance, fixed-term or per-job contract | 3% employer; nothing from the worker | employer | 2026 | same, art. 5 b) |
 | Unemployment insurance after 11 years in one job | The individual-account part (worker 0.6%, employer 1.6%) stops; the employer keeps paying 0.8% to the Fondo de Cesantía Solidario | both | 2026 | same, arts. 9 and 23 |
-| Work-accident insurance, basic rate | 0.90% | employer | 2026 | https://www.bcn.cl/leychile/navegar?idNorma=28650 (Ley 16.744 art. 15 a)) |
+| Work-accident insurance, basic rate | 0.90% | employer | 2026 | https://www.bcn.cl/leychile/navegar?idNorma=28650 ; https://nuevo.leychile.cl/servicios/Navegar/get_norma_json?idNorma=28650 (Ley 16.744 art. 15 a)) |
 | Work-accident insurance, additional rate | By activity and risk, set by decree; up to 3.4% | employer | 2026 | same, art. 15 b) |
-| SANNA (insurance for parents of seriously ill children) | 0.03% | employer | 2026 | https://www.bcn.cl/leychile/navegar?idNorma=1113014 (Ley 21.063 art. 24 a)) |
+| SANNA (insurance for parents of seriously ill children) | 0.03% | employer | 2026 | https://www.bcn.cl/leychile/navegar?idNorma=1113014 ; https://nuevo.leychile.cl/servicios/Navegar/get_norma_json?idNorma=1113014 (Ley 21.063 art. 24 a)) |
 | IUSC, monthly table for October 2026 (used in the examples) | Exempt to CLP 974,038.50; 4% to 2,164,530 (deduct 38,961.54); 8% to 3,607,550 (125,542.74); 13.5% to 5,050,570 (323,957.99); 23% to 6,493,590 (803,762.14); 30.4% to 8,658,120 (1,284,287.80); 35% to 22,366,810 (1,682,561.32); 40% above (2,800,901.82) | worker (withheld) | Oct 2026 | https://www.sii.cl/valores_y_fechas/impuesto_2da_categoria/impuesto2026.htm (LIR art. 43 No. 1) |
+
+For January to July 2026 pay, the SIS is paid by the employer on top of the 1% Ley 21.735 contribution (DL 3.500 art. 17; Ley 21.735 art. 8 transitorio). Its rate for those months is not confirmed: the SP pages read on 14 Nov 2026 give only the 1.78% from August 2026.
 
 The IUSC tables for the other months of 2026, and the UTM behind each, are in [cl-income-tax](cl-income-tax.md); use the table of the month the pay is earned.
 
@@ -204,4 +205,4 @@ Not yet confirmed: the SIS rate for January to July 2026 pay (the SP pages read 
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-11. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `cl-payroll` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/cl-payroll. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `cl-payroll` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/cl-payroll. If neither is available, confirm every figure against the official source pages cited above before relying on it.

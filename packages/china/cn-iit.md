@@ -3,12 +3,13 @@ name: cn-iit
 description: 在处理任何中国个人所得税（IIT）事项之前，必须先阅读本技能。本技能适用于中国税务居民个人和非居民个人的个人所得税申报、计算与审核工作，包括综合所得（工资薪金、劳务报酬、稿酬、特许权使用费）的累计预扣预缴与年度汇算清缴，经营所得的五级累进计税，专项附加扣除（子女教育、继续教育、大病医疗、住房贷款利息、住房租金、赡养老人、3岁以下婴幼儿照护），居民判定（183天规则），境外所得抵免，股权激励与全年一次性奖金单独计税过渡政策，以及通过个税APP、自然人电子税务局、单位代扣代缴等方式完成 3月1日至6月30日 综合所得年度汇算清缴的全过程。
 jurisdiction: CN
 tax_year: 2026
-last_updated: 2026-10-29
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-version: 1.1
+version: 1.2
 category: international
 tier: 2
 domain: income-tax
+type: computation
 ---
 
 
@@ -344,36 +345,38 @@ expected:
 
 | Source | Official URL | Read on |
 | --- | --- | --- |
-| IIT Law | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/201809/t441789.html | 2026-10-29 |
-| rate tables | https://guangdong.chinatax.gov.cn/gdsw/fssw_nsrxt_kjxz/2025-10/09/content_b02be06c906e46bca00673beb9e7783a.shtml | 2026-10-29 |
-| dividends 2026 No. 27 | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202609/t481448.html | 2026-10-29 |
-| offshore trusts 2026 No. 21 | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202607/t481046.html | 2026-10-29 |
-| STA announcement 2026 No. 12 | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202606/t480766.html | 2026-10-29 |
-| platform workers | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/swzsgl/202507/t476884.html | 2026-10-29 |
-| residence days | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/201904/t444837.html | 2026-10-29 |
-| withholding measures Art. 11 | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/201812/t443216.html | 2026-10-29 |
-| reconciliation measures | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202502/t475327.html | 2026-10-29 |
-| non-residents 2019 No. 35 | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/201904/t444839.html | 2026-10-29 |
-| STA announcement 2020 No. 19 | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202012/t456203.html | 2026-10-29 |
-| Implementing Regulations Art. 6 | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/201812/t443213.html | 2026-10-29 |
-| bonus 2023 No. 30 | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202308/t468460.html | 2026-10-29 |
-| households 2023 No. 12 | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202308/t468162.html | 2026-10-29 |
-| State Council 国发〔2023〕13号 | https://fgk.chinatax.gov.cn/zcfgk/c102440/c5213594/content.html | 2026-10-29 |
-| STA announcement 2023 No. 14 | https://fgk.chinatax.gov.cn/zcfgk/c100012/c5213592/content.html | 2026-10-29 |
-| Interim Measures 国发〔2018〕41号 | https://hainan.chinatax.gov.cn/xxgk_6_1/22110230.html | 2026-10-29 |
-| infant care 国发〔2022〕8号 | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202204/t462542.html | 2026-10-29 |
-| operation measures STA announcement 2022 No. 7 | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202204/t462550.html | 2026-10-29 |
-| personal pension 2024 No. 21 | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202412/t474540.html | 2026-10-29 |
-| health insurance | https://guangdong.chinatax.gov.cn/gdsw/zjfg/2017-05/03/content_f7a7387e2ba441a995345e7c0d60e44f.shtml | 2026-10-29 |
-| donations 2019 No. 99 | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202001/t451944.html | 2026-10-29 |
-| childcare subsidy 2025 No. 6 | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202508/t477416.html | 2026-10-29 |
-| equity 2023 No. 25 | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202308/t468395.html | 2026-10-29 |
-| foreign allowances 2023 No. 29 | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202308/t468458.html | 2026-10-29 |
-| reconciliation exemption 2023 No. 32 | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202308/t468462.html | 2026-10-29 |
-| foreign income 2020 No. 3 | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202002/t452398.html | 2026-10-29 |
-| Tax Collection Law | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/swzsgl/200609/t284229.html | 2026-10-29 |
-| filing guide | https://guangdong.chinatax.gov.cn/gdsw/fssw_nsrxt_kjxz/2025-10/09/content_00a4ed7054fc4d82ac30702f52001a14.shtml | 2026-10-29 |
-| STA notice 2026 No. 1 | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202602/t479400.html | 2026-10-29 |
+| IIT Law. Read for Scope and who this is for, Figures for tax year 2026, The method, step by step | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/201809/t441789.html | 2026-11-14 |
+| rate tables. Read for Scope and who this is for, Figures for tax year 2026, Worked cases | https://guangdong.chinatax.gov.cn/gdsw/fssw_nsrxt_kjxz/2025-10/09/content_b02be06c906e46bca00673beb9e7783a.shtml | 2026-11-14 |
+| dividends 2026 No. 27. Read for What is new for 2026 | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202609/t481448.html | 2026-11-14 |
+| offshore trusts 2026 No. 21. Read for What is new for 2026, When to refuse or refer | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202607/t481046.html | 2026-11-14 |
+| STA announcement 2026 No. 12. Read for What is new for 2026 | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202606/t480766.html | 2026-11-14 |
+| platform workers. Read for What is new for 2026 | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/swzsgl/202507/t476884.html | 2026-11-14 |
+| residence days. Read for Boundaries and exceptions, Residence, non-residents and foreign income, Ask the client first | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/201904/t444837.html | 2026-11-14 |
+| withholding measures Art. 11. Read for Figures for tax year 2026, The method, step by step, Worked cases | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/201812/t443216.html | 2026-11-14 |
+| reconciliation measures. Read for The method, step by step, Filing and payment | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202502/t475327.html | 2026-11-14 |
+| non-residents 2019 No. 35. Read for The method, step by step, When to refuse or refer, Residence, non-residents and foreign income | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/201904/t444839.html | 2026-11-14 |
+| STA announcement 2020 No. 19. Read for The method, step by step | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202012/t456203.html | 2026-11-14 |
+| Implementing Regulations Art. 6. Read for Figures for tax year 2026, The method, step by step | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/201812/t443213.html | 2026-11-14 |
+| bonus 2023 No. 30. Read for Figures for tax year 2026 | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202308/t468460.html | 2026-11-14 |
+| households 2023 No. 12. Read for Figures for tax year 2026 | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202308/t468162.html | 2026-11-14 |
+| State Council 国发〔2023〕13号. Read for Figures for tax year 2026 | https://fgk.chinatax.gov.cn/zcfgk/c102440/c5213594/content.html | 2026-11-14 |
+| STA announcement 2023 No. 14. Read for Figures for tax year 2026 | https://fgk.chinatax.gov.cn/zcfgk/c100012/c5213592/content.html | 2026-11-14 |
+| Interim Measures 国发〔2018〕41号. Read for Figures for tax year 2026, Boundaries and exceptions | https://hainan.chinatax.gov.cn/xxgk_6_1/22110230.html | 2026-11-14 |
+| infant care 国发〔2022〕8号. Read for Figures for tax year 2026 | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202204/t462542.html | 2026-11-14 |
+| operation measures STA announcement 2022 No. 7. Read for Figures for tax year 2026, Completion checklist | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202204/t462550.html | 2026-11-14 |
+| personal pension 2024 No. 21. Read for Figures for tax year 2026 | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202412/t474540.html | 2026-11-14 |
+| health insurance. Read for Figures for tax year 2026 | https://guangdong.chinatax.gov.cn/gdsw/zjfg/2017-05/03/content_f7a7387e2ba441a995345e7c0d60e44f.shtml | 2026-11-14 |
+| donations 2019 No. 99. Read for Figures for tax year 2026 | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202001/t451944.html | 2026-11-14 |
+| childcare subsidy 2025 No. 6. Read for Figures for tax year 2026 | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202508/t477416.html | 2026-11-14 |
+| equity 2023 No. 25. Read for Figures for tax year 2026 | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202308/t468395.html | 2026-11-14 |
+| foreign allowances 2023 No. 29. Read for Figures for tax year 2026 | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202308/t468458.html | 2026-11-14 |
+| reconciliation exemption 2023 No. 32. Read for Figures for tax year 2026, Boundaries and exceptions, Filing and payment | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202308/t468462.html | 2026-11-14 |
+| foreign income 2020 No. 3. Read for Residence, non-residents and foreign income | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202002/t452398.html | 2026-11-14 |
+| Tax Collection Law. Read for When to refuse or refer, Penalties and interest | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/swzsgl/200609/t284229.html | 2026-11-14 |
+| filing guide. Read for Filing and payment | https://guangdong.chinatax.gov.cn/gdsw/fssw_nsrxt_kjxz/2025-10/09/content_00a4ed7054fc4d82ac30702f52001a14.shtml | 2026-11-14 |
+| STA notice 2026 No. 1. Read for Filing and payment | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202602/t479400.html | 2026-11-14 |
+
+Not yet confirmed: the cap on employee enterprise or occupational annuity contributions (no official page read in this update); the 2026 annual reconciliation form screens, which this skill does not set out.
 
 > **General reference only.** This Guide is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status or local procedures. A qualified professional in the relevant jurisdiction must review the work before filing, paying or taking a tax position.
 

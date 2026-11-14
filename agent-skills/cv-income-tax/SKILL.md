@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/cv-income-tax"
   jurisdiction: "CV"
   tax_year: "2026"
-  last_updated: "2026-11-01"
+  last_updated: "2026-11-14"
 ---
 
-# Cape Verde Personal Income Tax v0.2
+# Cape Verde Personal Income Tax v0.3
 
 ## Who this applies to
 
@@ -112,15 +112,15 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Lei 69/X/2025, State Budget 2026, BO I 133 sup. 1, 31 Dec 2025: arts 29, 30, 32, 84, 99, 100 and Anexo I read | https://boe.incv.cv/Bulletins/DownloadAct?id=89137 | 2026-11-01 |
-| Lei 1/XI/2026, Amending Budget 2026, BO I 90, 13 Aug 2026: searched for tax-rate changes, none found | https://boe.incv.cv/Bulletins/DownloadAct?id=112975 | 2026-11-01 |
-| Lei 78/VIII/2014, Codigo do IRPS, BO I 81, 31 Dec 2014 (original text): arts 21, 45 to 53, 57, 70 to 74 read | https://boe.incv.cv/Bulletins/Download/1952 | 2026-11-01 |
-| DNRE, Calendario Fiscal 2026, updated 11 Jun 2026: all months read | https://www.mf.gov.cv/documents/54571/0/Calendario_Fiscal_2026_PEC_Vers%C3%A3o_Atualizado_110626.pdf/7f524ec2-1b35-2f33-8936-42e8b752516e?version=1.0&t=1781260657225 | 2026-11-01 |
-| DNRE, DPR FAQ v6: category table and Category A answers read | https://www.mf.gov.cv/documents/54571/273413/DPR%20%E2%80%93%20Perguntas%20Frequentes_FAQ_Vers%C3%A3o%206.pdf | 2026-11-01 |
-| DNRE, forms and leaflets page: list read | https://www.mf.gov.cv/web/dnre/dire%C3%A7%C3%A3o-geral-das-contribui%C3%A7%C3%B5es-e-impostos | 2026-11-01 |
+| Lei 69/X/2025, State Budget 2026, BO I 133 sup. 1, 31 Dec 2025: arts 29, 30, 32, 84, 99, 100 and Anexo I read | https://boe.incv.cv/Bulletins/DownloadAct?id=89137 | 2026-11-14 |
+| Lei 1/XI/2026, Amending Budget 2026, BO I 90, 13 Aug 2026: read for tax-rate changes, none found | https://boe.incv.cv/Bulletins/DownloadAct?id=112975 | 2026-11-14 |
+| Lei 78/VIII/2014, Codigo do IRPS, BO I 81, 31 Dec 2014 (original text): arts 21, 45 to 53, 57, 70 to 74 read | https://boe.incv.cv/Bulletins/Download/1952 | 2026-11-14 |
+| DNRE, Calendario Fiscal 2026, updated 11 Jun 2026: read for all months | https://www.mf.gov.cv/documents/54571/0/Calendario_Fiscal_2026_PEC_Vers%C3%A3o_Atualizado_110626.pdf/7f524ec2-1b35-2f33-8936-42e8b752516e?version=1.0&t=1781260657225 | 2026-11-14 |
+| DNRE, DPR FAQ v6: read for category table and Category A answers | https://www.mf.gov.cv/documents/54571/273413/DPR%20%E2%80%93%20Perguntas%20Frequentes_FAQ_Vers%C3%A3o%206.pdf | 2026-11-14 |
+| DNRE, forms and leaflets page: read for the list of forms and leaflets | https://www.mf.gov.cv/web/dnre/dire%C3%A7%C3%A3o-geral-das-contribui%C3%A7%C3%B5es-e-impostos | 2026-11-14 |
 
 Not yet confirmed: Lei 116/IX/2021 and every other amendment not listed in Sources; penalty amounts; interest rate. Which Category B instalment base applies, calendar or art. 96(3); Whether the employee INPS 8.5% is deductible (the old skill said so; also whether the withholding base is before or after it, the FAQ says "valor base de incidencia"); how the CVE 220,000 exemption interacts with the bands once exceeded; whether the 2014 withholding formula is the one in force; the FAQ also mentions CVE 420,000 and 35,000 a month for 2015; documented health, education and housing expenses scope; category E article references after amendment; non-resident rate equal to resident rate in all cases.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-01. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `cv-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/cv-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `cv-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/cv-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

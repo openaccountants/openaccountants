@@ -3,11 +3,12 @@ name: ie-formation
 description: "Use this skill whenever asked about forming, incorporating, or registering a business in Ireland. Trigger on phrases like \"Ireland company formation\", \"CRO registration\", \"LTD Ireland\", \"DAC Ireland\", \"sole trader Ireland\", \"Form A1 Ireland\", \"PPS number business\", \"incorporate Ireland\", \"CORE portal\", \"register business Ireland\", \"RBO Ireland\", \"TR1 Ireland\", \"TR2 Ireland\", \"Companies Act 2014\", \"CLG Ireland\", \"PLC Ireland\", or any question about choosing or registering an Irish entity. Covers entity comparison (Sole Trader, Partnership, LP, LLP, LTD / CLS, DAC, CLG, PLC), CRO online portal (CORE) registration steps, Revenue TR1 / TR2 tax registration, sector-specific licensing (Central Bank, CCPC, DPC), RBO beneficial ownership filing, PPS number requirements for directors and shareholders, and tax treatment by entity type including the 12.5% trading CT rate and PRSI Class S. Out of scope: immigration / employment permits for non-EEA founders, bank account opening procedures (high-level only), full corporate governance and shareholders' agreement drafting, deep sector-specific regulatory licensing beyond signposting, listing on Euronext Dublin / ISEQ, and Irish Collective Asset-management Vehicles (ICAV). ALWAYS read this skill before advising on Irish entity formation."
 jurisdiction: IE
 tax_year: 2026
-last_updated: 2026-10-31
-version: 1.0
+last_updated: 2026-11-14
+version: 1.1
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: formation
+type: filing-howto
 ---
 
 # Forming a business in Ireland (2026): sole trader, partnership or company, CRO, RBO and Revenue registration
@@ -177,7 +178,7 @@ Registration is obligatory when annual turnover (calendar year, excluding VAT) e
 | Goods at the reduced or standard rate that the business made from zero-rated materials | €42,500 | same |
 | Goods and services, where 90% or more of turnover is from goods (other than the above) | €85,000 | same |
 | Goods | €85,000 | same |
-| Distance sales of goods and cross-border telecoms, broadcasting and electronic services to other EU consumers (EU-wide total; supplier established only in Ireland) | €10,000 | same |
+| Distance sales of goods and cross-border telecoms, broadcasting and electronic services to other EU consumers (EU-wide total; supplier established only in Ireland) | €10,000 | https://www.revenue.ie/en/vat/vat-registration/who-should-register-for-vat/elect-register-vat.aspx |
 | Acquisitions of goods from other EU Member States | €41,000 | same |
 
 A business not established in Ireland that supplies taxable goods or services to taxable customers in Ireland must register whatever its turnover, unless it uses the VAT SME Scheme. Occasional disposals of business assets are left out of annual turnover. Details and returns: ie-vat-return.
@@ -190,7 +191,6 @@ A business not established in Ireland that supplies taxable goods or services to
 | PLC authorised minimum share capital | €25,000 | [s.1000](https://www.irishstatutebook.ie/eli/2014/act/38/section/1000/enacted/en/html) | https://www.irishstatutebook.ie/eli/2014/act/38/section/1000/enacted/en/html |
 | PLC shares paid up at allotment | at least one-quarter of nominal value plus all premium | [s.1026](https://www.irishstatutebook.ie/eli/2014/act/38/section/1026/enacted/en/html) | https://www.irishstatutebook.ie/eli/2014/act/38/section/1026/enacted/en/html |
 | RBO fine on indictment | up to €500,000 | [S.I. No. 110 of 2019, reg. 28](https://www.irishstatutebook.ie/eli/2019/si/110/made/en/print) | https://www.irishstatutebook.ie/eli/2019/si/110/made/en/print |
-| CRO incorporation, business name and late annual return fees | **check** on the CRO site | CRO fee regulations | Not confirmed; see Sources |
 
 ## Boundaries and exceptions
 
@@ -373,6 +373,7 @@ expected:
 | Revenue: USC rates | https://www.revenue.ie/en/jobs-and-pensions/usc/standard-rates-thresholds.aspx | 2026-10-31 |
 | Revenue: other rates of USC | https://www.revenue.ie/en/jobs-and-pensions/usc/other-rates.aspx | 2026-10-31 |
 | Revenue: VAT thresholds | https://www.revenue.ie/en/vat/vat-registration/who-should-register-for-vat/persons-required-register-goods-services-abroad.aspx | 2026-10-31 |
+| Revenue: electing to register for VAT (read for the EUR 10,000 distance sales and EUR 41,000 EU acquisitions thresholds) | https://www.revenue.ie/en/vat/vat-registration/who-should-register-for-vat/elect-register-vat.aspx | 2026-11-14 |
 | Revenue: surcharge on undistributed income | https://www.revenue.ie/en/companies-and-charities/corporation-tax-for-companies/close-companies/surcharge.aspx | 2026-10-31 |
 | s.345 | https://www.irishstatutebook.ie/eli/2014/act/38/section/345/enacted/en/html | 2026-10-31 |
 | s.343 | https://www.irishstatutebook.ie/eli/2014/act/38/section/343/enacted/en/html | 2026-10-31 |

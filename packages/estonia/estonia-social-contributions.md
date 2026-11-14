@@ -1,14 +1,15 @@
 ---
 name: estonia-social-contributions
 description: "Estonian social contributions for tax year 2026: social tax (sotsiaalmaks), unemployment insurance premiums (töötuskindlustusmakse) and the mandatory funded pension (II pillar, kogumispension), for employers, employees, board members and self-employed persons (FIE). Covers the 33% social tax and how it splits between pension, health and the II pillar, the EUR 886 monthly minimum base and its exceptions, unemployment premiums of 1.6% and 0.8% for 2026 to 2029, II pillar rates of 2%, 4% or 6% and the 30 November switch, the FIE social tax (profit divided by 1.33, annual minimum EUR 3,508.56, maximum EUR 36,867.60), quarterly FIE advances of EUR 877.14, the 1 October balance, form TSD by the 10th, interest at 0.06% a day and fines. Trigger on: sotsiaalmaks 2026, FIE sotsiaalmaks, avansiline makse, minimum social tax Estonia, II sammas 6%, employer on-cost Estonia, A1 Estonia. Out of scope: estonia-payroll (gross to net, withholding income tax), estonia-income-tax, ee-cross-border, ee-corporate-income-tax."
-version: 0.2
+version: 0.3
 jurisdiction: EE
 tax_year: 2026
-last_updated: 2026-10-24
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
+type: computation
 ---
 
 # Estonia social contributions, tax year 2026

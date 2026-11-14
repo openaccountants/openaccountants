@@ -1,460 +1,305 @@
 ---
 name: or-cat
-description: "Oregon Corporate Activity Tax is a gross receipts tax (not an income tax) imposed under ORS Chapter 317A on persons with Oregon commercial activity. The tax equals $250 plus 0.57% of taxable commercial activity above $1 million, after a subtraction of 35% of the greater of Oregon-apportioned cost of goods sold or Oregon-apportioned labor costs. Market-based sourcing applies. Registration is required at $750,000 of Oregon commercial activity. Quarterly estimated payments are due; annual return (Form OR-CAT) is due April 15. Grocery sales are excluded. Tax year 2025."
+description: "Oregon 2026 CAT: taxpayer and unitary group, nexus conflict, separate registration/filing/payment gates, sourced receipts, eligible labor/COGS subtraction, estimates and retained worked cases."
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/or-cat"
   jurisdiction: "US-OR"
-  tax_year: "2025"
-  last_updated: "2026-07-13"
+  tax_year: "2026"
+  last_updated: "2026-11-13"
 ---
 
-# OR Cat
+# Oregon Corporate Activity Tax, 2026
 
-## Description
+> **General reference only.** This skill provides working papers and a filing brief, not accountant approval. Apply cited law to verified facts, identify assumptions and unresolved issues, and obtain qualified professional review before filing or acting. Circular 230 section 10.37 requires reasonable factual and legal analysis.
 
-Oregon Corporate Activity Tax is a gross receipts tax (not an income tax) imposed under ORS Chapter 317A on persons with Oregon commercial activity. The tax equals $250 plus 0.57% of taxable commercial activity above $1 million, after a subtraction of 35% of the greater of Oregon-apportioned cost of goods sold or Oregon-apportioned labor costs. Market-based sourcing applies. Registration is required at $750,000 of Oregon commercial activity. Quarterly estimated payments are due; annual return (Form OR-CAT) is due April 15. Grocery sales are excluded. Tax year 2025.
+## Scope
 
-## 1. Scope and statutory authority
+Oregon (US-OR) Corporate Activity Tax for tax year 2026, including sole proprietors, partnerships, LLCs, S corporations, C corporations and mandatory unitary groups. Despite the name, CAT is not limited to corporations. It is separate from individual income tax, corporate excise/income tax, local business taxes, employer transit and general sales tax. This skill produces the commercial-activity and subtraction workpaper, threshold decisions and filing brief.
 
-### 1.1 Statutory citation
+The statute and current DOR CAT page support the ongoing structure. Published Form OR-CAT boxes and detailed procedural examples below are the **2025-2026 filing cycle**, pending final 2026 instructions. The 2025 edition of ORS carries later-operative versions and 2026 amendment notices; do not treat every displayed provision or former exclusion as automatically effective throughout 2026. Specialized pharmacy, construction and utility changes require the operative enactment before claiming an exclusion.
 
-- **Statutory citation and effective date** — The Oregon Corporate Activity Tax is codified at ORS Chapter 317A, enacted by House Bill 3427 in the 2019 regular session of the Oregon Legislative Assembly and amended materially by House Bill 2164 (2019) and Senate Bill 164 (2021). The tax took effect January 1, 2020. Implementing administrative rules are issued by the Oregon Department of Revenue and codified at OAR Chapter 150, Division 317. The tax is sometimes referred to by the Department of Revenue as the "Commercial Activity Tax" or simply "CAT," and the colloquial usage tracks the statutory short title in ORS 317A.100(1).  _(ORS Chapter 317A; HB 3427 (2019); HB 2164 (2019); SB 164 (2021); OAR Chapter 150, Division 317; ORS 317A.100(1))_
+Federal business income, COGS and deductions are inputs from `us-schedule-c-and-se-computation`, `us-form-1065-partnership` or `us-form-1120-c-corp`, as appropriate. Federal CAT deductibility is resolved there, not asserted here as an automatic same-year deduction. Use `or-income-tax` for owners, `or-corporate-tax` for corporate net-income tax and `or-payroll` for employment/transit contributions. No federal numerical threshold is copied here.
 
-### 1.2 What CAT is — and is not
+## Ask the client first
 
-CAT is a privilege tax for the privilege of doing business in Oregon, measured by Oregon commercial activity. Three points must be held in mind throughout this skill:
+- What legal/tax entities, ownership percentages, functional integration, reporting entity and year-end apply?
+- What Oregon property, people, customers, services, authorization and recurring market activity establish nexus?
+- What total and Oregon-source receipts, exclusions, returns/allowances, transferred property and accounting method are supported?
+- What eligible COGS/farming inputs, employee-level compensation, owner payments and excluded-receipt costs are documented?
+- What general/substitute apportionment method, Oregon/total activity ratio, non-U.S. members or special-industry factors apply?
+- What registration date, prior liability, estimated payments, extension, short year and agency notices affect compliance?
 
-1. CAT is a **gross receipts tax**, not an income tax. The taxpayer pays whether or not the business is profitable.
-2. CAT is **in addition to** Oregon corporate excise tax (ORS Chapter 317) and Oregon corporate income tax (ORS Chapter 318) — a C-corporation doing business in Oregon may pay both CAT and the corporate excise tax on the same revenue stream, because they have different bases.
-3. CAT is **not** a sales tax. The tax is imposed on the seller. Sellers may include the tax in their pricing but Oregon law does not require or prohibit pass-through; there is no separately stated "CAT charge" mechanism in statute analogous to a sales tax line item.
+## The method, step by step
 
-### 1.3 Scope of this skill
+### 1. Establish taxpayer, group and nexus before thresholds
 
-This skill covers CAT for all standard taxpayer types (sole proprietors, single-member LLCs, partnerships, S-corporations, C-corporations, LLCs taxed as partnerships, and unitary groups) operating in or selling into Oregon for tax year 2025. The following items are explicitly out of scope and routed to the refusal catalogue at section 13:
+Determine excluded-person status, including qualifying exempt/governmental entities and applicable unrelated business income. An exempt legal label does not excuse taxable unrelated activity automatically. The entity list includes federally disregarded entities; decide CAT's taxpayer/group before using a federal return identity. Sole proprietors and pass-throughs can owe CAT at the business/group level even when income tax flows to owners. [ORS 317A.100(4),(14),(17)](https://www.oregonlegislature.gov/bills_laws/ors/ors317A.html); [DOR CAT who is subject](https://www.oregon.gov/dor/programs/businesses/Pages/corporate-activity-tax.aspx).
 
-- CAT for financial institutions subject to the special apportionment rules under ORS 317A.106
-- CAT for insurance companies under ORS 731.804 (insurance gross-premium tax interaction)
-- CAT for agricultural cooperatives under ORS 317A.100(4)(c)
-- CAT for hospitals, long-term care facilities, and other healthcare entities with statutory exclusions
-- Pre-2020 transition issues
-- Refund claims older than the statute of limitations
-- Audits in progress (deferred to credentialed Oregon CPA or attorney)
+A CAT unitary group requires **more than 50%** direct/indirect common ownership and a unitary business. Exactly 50% is not enough on that ownership test. Unitary evidence includes centralized management, shared administration/economies of scale or functional integration/flows of goods, capital or services. Common brand/purchasing/back office are factual evidence, not an automatic conclusion for every holding company. Federal consolidation or a federal affiliate definition does not by itself establish CAT membership. [ORS 317A.100(19)-(20),106](https://www.oregonlegislature.gov/bills_laws/ors/ors317A.html).
 
-### 1.4 Who must read this skill
+Register, file and pay as a single unitary taxpayer through the designated CAT entity. Exclude qualifying intermember receipts and related intermember expenses together; do not subtract internal costs after eliminating internal revenue. Members are jointly and severally liable. Submit OR-AF-CAT for required affiliates. The annual modified-group election can exclude non-U.S. members only if they have neither Oregon commercial activity nor excluded amounts otherwise sourced to Oregon. Keep the excluded-member list. If entities qualify for multiple unitary groups, apply DOR's group-priority rule rather than filing the same entity twice. [ORS 317A.106,113](https://www.oregonlegislature.gov/bills_laws/ors/ors317A.html); [DOR unitary FAQ](https://www.oregon.gov/dor/programs/businesses/Pages/corporate-activity-tax.aspx).
 
-Read this skill before doing any of the following:
-- Determining whether an Oregon registration is required
-- Computing a CAT estimated payment
-- Preparing Form OR-CAT
-- Advising on whether to elect unitary group filing
-- Evaluating the CAT impact of a multi-state structure where Oregon is one of several sourcing states
+**Nexus conflict, not a safe harbor.** ORS 317A.116(3)-(4) lists property/payroll/activity and percentage bright-line presence as statutory sufficient nexus, together with Oregon residence/domicile and broader constitutional nexus. DOR's current FAQ nevertheless says it will not apply a bright-line nexus test and instead examines substantial/significant economic presence and regular use of Oregon's economy. Therefore amounts below the statutory lines are not a no-nexus conclusion; assess actual economic/physical facts and refer a disputed application. No Oregon office does not mean no CAT nexus. P.L. 86-272 does not protect CAT, because CAT is not a net-income tax. [ORS 317A.116](https://www.oregonlegislature.gov/bills_laws/ors/ors317A.html); [DOR nexus FAQ](https://www.oregon.gov/dor/programs/businesses/Pages/corporate-activity-tax.aspx).
 
-## 2. Tax base — Oregon commercial activity
+| Item / condition | Rate, amount or threshold | Official source |
+|---|---|---|
+| Statutory sufficient property presence, not DOR safe harbor | At least $50,000 Oregon property; owned property original cost, rented property eight times net annual rent; alternative nexus can apply below this | https://www.oregonlegislature.gov/bills_laws/ors/ors317A.html |
+| Statutory sufficient payroll presence, not DOR safe harbor | At least $50,000 Oregon payroll under the statute, including specified controlled/service payments | https://www.oregonlegislature.gov/bills_laws/ors/ors317A.html |
+| Statutory sufficient activity presence, not DOR safe harbor | At least $750,000 Oregon commercial activity, or at least 25% Oregon property/payroll/activity; broader nexus can apply | https://www.oregonlegislature.gov/bills_laws/ors/ors317A.html |
+| Mandatory CAT group ownership | More than 50%, plus unitary business; not exactly 50% and not a federal consolidation shortcut | https://www.oregonlegislature.gov/bills_laws/ors/ors317A.html |
+| Statutory registration trigger | Commercial activity in excess of $750,000 in the tax year; the DOR summary also describes registration at $750,000 | https://www.oregonlegislature.gov/bills_laws/ors/ors317A.html |
+| Annual filing trigger | Oregon commercial activity after exclusions, before subtraction, in excess of $1 million | https://www.oregonlegislature.gov/bills_laws/ors/ors317A.html |
+| Tax-payment threshold | Taxable Oregon commercial activity after subtraction in excess of $1 million; no tax at or below $1 million | https://www.oregonlegislature.gov/bills_laws/ors/ors317A.html |
+| CAT when tax-payment threshold met | $250 plus 0.57% of taxable commercial activity above $1 million | https://www.oregonlegislature.gov/bills_laws/ors/ors317A.html |
+| Ordinary subtraction | 35% of greater eligible cost inputs or eligible labor, apportioned under applicable method; cap 95% of Oregon commercial activity | https://www.oregonlegislature.gov/bills_laws/ors/ors317A.html |
+| Ordinary full-year employee labor ceiling | $500,000 compensation per employee; partners/LLC members receiving guaranteed/distributive income are not employees | https://www.oregonlegislature.gov/bills_laws/ors/ors317A.html |
+| Estimated-payment trigger | Expected annual CAT liability at least $5,000, including base amount when due | https://www.oregon.gov/dor/programs/businesses/Pages/corporate-activity-tax.aspx |
 
-### 2.1 Definition of commercial activity
+### 2. Separate registration, return and tax decisions
 
-- **Commercial activity** — The total amount realized by a person, arising from transactions and activity in the regular course of the person's trade or business, without deduction for expenses incurred by the trade or business. The statute uses "total amount realized" — not "gross income" and not "gross receipts as reported on federal Schedule C line 1." The "total amount realized" concept tracks the §1001 realization concept under federal law but is applied without the federal deductions for cost basis or expenses. As a result, the Oregon commercial activity base can be larger than the corresponding federal Schedule C gross receipts figure for the same business — particularly where the federal return reports net of returns, allowances, or COGS at the top.  _(ORS 317A.100(1)(a))_
+The statute's excluded-person/registration language uses “does not exceed”/“in excess of” $750,000, while DOR's public table says both $750,000-or-less excluded and $750,000 must register. Those statements conflict at equality. The statutory rule is **over $750,000**; at exact equality document the conflict and confirm account handling rather than assert both. Operationally track the threshold and register promptly, with the source's thirty-day requirement and underlying crossing date. Registration is generally once, except mergers/reorganizations or DOR direction. [ORS 317A.100(4)(j),131](https://www.oregonlegislature.gov/bills_laws/ors/ors317A.html); [DOR registration FAQ](https://www.oregon.gov/dor/programs/businesses/Pages/corporate-activity-tax.aspx).
 
-### 2.2 Items included in commercial activity
+Filing uses Oregon commercial activity before the subtraction, while payment uses taxable commercial activity after the subtraction. A registered business with $900,000 Oregon activity ordinarily has no annual return solely from registration. A business with $1.2 million Oregon activity and a $350,000 subtraction must file but has no CAT due. It does not owe a flat $250 merely because gross activity exceeds $1 million. At exactly $1 million taxable activity, tax is zero; above it the base tax enters. [ORS 317A.125,137](https://www.oregonlegislature.gov/bills_laws/ors/ors317A.html); [DOR threshold table](https://www.oregon.gov/dor/programs/businesses/Pages/corporate-activity-tax.aspx).
 
-- **Items included in commercial activity** — Commercial activity generally includes: - Gross receipts from sales of goods (without reduction for returns or allowances at the top line — those are addressed via the §317A.100(1)(b) exclusions, not at the base) - Gross receipts from services rendered (without reduction for refunds) - Royalties from licensing intellectual property used in Oregon - Rents from real property situated in Oregon (subject to specific carve-outs for residential rentals — see 2.3) - Receipts from the sale or licensing of digital products delivered to Oregon - Receipts from subscriptions and recurring SaaS revenue allocable to Oregon under the market-based sourcing rules in section 7 - Receipts from contract manufacturing performed in Oregon  _(ORS 317A.100(1)(b))_
+For ordinary continuing taxpayers the CAT tax year follows the federal annual accounting period, including fiscal and 52-53-week years; it has not been universally calendar-only since 2021. Use the federal accounting method for commercial activity, inputs and labor consistently, and notify DOR of a year change. The cycle-specific instructions generally prorate short-year thresholds and employee labor limits, but newly formed/dissolved entities not engaged in activity for the full year have an exception. Do not prorate every short year or apply the exception to a continuing entity changing accounting period. [ORS 317A.100(18),103](https://www.oregonlegislature.gov/bills_laws/ors/ors317A.html); [OR-CAT p.7](https://www.oregon.gov/dor/forms/FormsPubs/form-or-cat-instr_106-003-1_2025.pdf).
 
-### 2.3 Items excluded from commercial activity
+### 3. Build commercial activity and exclusions
 
-- **Items excluded from commercial activity** — ORS 317A.100(1)(b) lists more than 40 specific exclusions from commercial activity. The most commonly applicable ones for the typical OpenAccountants client base are: 1. **Receipts from sales of groceries** — both wholesale and retail. Added by Senate Bill 164 (2021), effective for tax years beginning on or after January 1, 2021. "Grocery" is defined by cross-reference to the federal SNAP-eligible food definition under 7 U.S.C. §2012(k), excluding prepared hot foods, alcohol, tobacco, and pet food. This is the single most consequential exclusion for Oregon retailers and is the source of significant classification work. 2. **Receipts from the sale of motor vehicle fuel** subject to the motor vehicle fuel tax under ORS Chapter 319. Diesel, gasoline, aviation fuel, and other motor fuels separately taxed at the pump are excluded from the CAT base to avoid pyramiding. 3. **Receipts from the sale of fixed assets** used in the trade or business — this captures equipment dispositions, real estate sales by an operating business (the sale of an office building used by the business), and similar non-recurring receipts. Note that this exclusion is for receipts from the sale of business assets, not inventory. 4. **Dividends, interest, and capital contributions** received by the taxpayer. This treats CAT consistently with its character as a tax on trading activity rather than passive investment. 5. **Receipts from intercompany transactions** within a unitary group that has elected combined filing under section 8. 6. **Receipts from the wholesale or retail sale of liquid fuel for use in a motor vehicle**, as referenced in item 2. 7. **Receipts that the U.S. Constitution or federal statute prohibits Oregon from taxing.** This includes receipts protected by P.L. 86-272 to the extent that statute applies, certain federally-preempted transactions (interstate commerce in articles preempted by federal regulation), and similar items. 8. **Receipts from the sale of agricultural commodities by an agricultural cooperative** under ORS 317A.100(4)(c). 9. **Damages received from a lawsuit** (compensatory, not punitive, where punitive damages are commercial in character). 10. **Insurance proceeds** unless they represent business interruption coverage for lost gross receipts (which is treated as ordinary commercial activity). 11. **Receipts of the federal government, the State of Oregon, any political subdivision, and certain federally tax-exempt organizations** in their non-commercial activity. A 501(c)(3) running an unrelated trade or business is treated like any other taxpayer with respect to the UBI receipts. 12. **Receipts from the sale of a vehicle, vessel, or aircraft** by a person not in the business of selling them — but a dealer's normal-course sales are commercial activity. The full statutory exclusion list runs to 40+ items. Practitioners must check the current statutory text and the Department of Revenue's Form OR-CAT instructions for the complete list when a borderline receipt is at issue.  _(ORS 317A.100(1)(b); ORS Chapter 319; ORS 317A.100(4)(c); 7 U.S.C. §2012(k))_
+Begin with amounts realized from regular-course business transactions, before business expenses, under the taxpayer's accounting method. Money, property, forgiven debt and services can be receipts. Special financial institution and insurer definitions use different bases. CAT is imposed on the business, not a sales tax on each customer. A separately stated CAT recovery charged to a customer generally enters the business's commercial activity, rather than being netted as a tax collected for the state. Vehicle dealers have a specific statutory collection provision. [ORS 317A.100,116](https://www.oregonlegislature.gov/bills_laws/ors/ors317A.html); [DOR pass-through/receipts FAQ](https://www.oregon.gov/dor/programs/businesses/Pages/corporate-activity-tax.aspx).
 
-### 2.4 The grocery exclusion in practice
+Map each exclusion to its operative statutory paragraph and retain source records; excluded receipts are not the same as a deduction for normal expenses. The following screening list does not make every transaction in that industry exempt. [ORS 317A.100(1)(b)](https://www.oregonlegislature.gov/bills_laws/ors/ors317A.html).
 
-The grocery exclusion under SB 164 is operationally complex because most retailers do not sell exclusively groceries. A convenience store, for example, may sell SNAP-eligible food, prepared hot food (not excluded), alcohol (not excluded), tobacco (not excluded), and motor fuel (separately excluded). The taxpayer must separately track each line and exclude only the grocery-qualifying portion.
+| Receipt / fact | Screening treatment and condition | Official source |
+|---|---|---|
+| Interest | Generally excluded, but credit-sale interest and specified financial institution interest/service charges are exceptions | https://www.oregonlegislature.gov/bills_laws/ors/ors317A.html |
+| Loan principal, capital contributions, qualifying equity/debt transactions | Apply the particular statutory exclusion, not a net-proceeds shortcut to ordinary sales | https://www.oregonlegislature.gov/bills_laws/ors/ors317A.html |
+| Qualifying capital/business asset receipts | Check the exact statutory asset exclusion and federal classification; ordinary inventory sales are not automatically excluded | https://www.oregonlegislature.gov/bills_laws/ors/ors317A.html |
+| Tax refunds and specified tax-benefit/CAT reimbursements | Use the paragraph's relationship and payment conditions | https://www.oregonlegislature.gov/bills_laws/ors/ors317A.html |
+| Groceries | Statutory wholesale/retail grocery sales, including qualifying grocery consignee compensation; defined groceries exclude cannabis edibles/seeds | https://www.oregonlegislature.gov/bills_laws/ors/ors317A.html |
+| Motor vehicle fuel | Defined covered fuel receipts; electricity, batteries and vehicle components are not simply motor fuel under this definition | https://www.oregonlegislature.gov/bills_laws/ors/ors317A.html |
+| Agent receipts | Document agency and amounts received for another, rather than excluding the agent's own service fee | https://www.oregon.gov/dor/programs/businesses/Pages/corporate-activity-tax.aspx |
+| Unitary intermember transactions | Eliminate qualifying receipts and corresponding ineligible subtraction expenses | https://www.oregonlegislature.gov/bills_laws/ors/ors317A.html |
+| Agricultural cooperative sales / qualifying fluid milk receipts | Check named exclusions and farm certification/industry-average sourcing procedure | https://www.oregonlegislature.gov/bills_laws/ors/ors317A.html |
+| Residential care/in-home care | Qualifying medical-assistance/Medicare compensation, not all rental or care receipts | https://www.oregon.gov/dor/programs/businesses/Pages/corporate-activity-tax.aspx |
+| Receipts outside Oregon | Determine sourcing first; preserve worldwide amounts needed by subtraction method | https://www.oregonlegislature.gov/bills_laws/ors/ors317A.html |
 
-For a wholesale grocery distributor whose entire business consists of SNAP-eligible food, the exclusion may zero out the CAT base entirely, leaving only the $250 minimum tax — and even that is owed only if the taxpayer remains over the $1 million threshold after applying the exclusion. If the post-exclusion base is below $1 million, no CAT is due (subject to the registration question in section 4).
+Refunds/returns/allowances offset commercial activity in the year made as ORS 317A.116(2) specifies; do not automatically amend the original sale year for every later refund. Bad-debt credit/refund has its separate ORS 317A.140(3) condition tied to qualifying deductible debts. Avoid deducting the same refund or bad debt twice. Loan forgiveness, debt discharge and unusual noncash receipts require the exact exclusion rather than general accounting labels. [ORS 317A.116,140](https://www.oregonlegislature.gov/bills_laws/ors/ors317A.html).
 
-### 2.5 Returns and allowances
+The prior blanket residential-rent exclusion is not established here. Rental real estate receipts can be Oregon commercial activity; entity, regular-course and specific exclusion facts decide it. Similarly, no general construction-industry or professional-service exemption is inferred. Former 15% residential construction subcontractor labor and small-pharmacy prescription-drug provisions have time-limited notes in the compiled statute. This skill does not claim them for 2026 without confirming later operative law. The legislature's 2026 amendment-table PDF could not be opened by the research tool or a normal browser (connection closed); that access gap is explicit. A search surfaced proposed pharmacy/construction amendments, which are not treated as enacted law without the final act and effective date. [ORS 317A.122-123 and applicability notes](https://www.oregonlegislature.gov/bills_laws/ors/ors317A.html).
 
-- **Returns and allowances treatment** — Returns and allowances are not separately listed in the statutory exclusions, but the "total amount realized" formulation effectively reduces the base by genuine returns because the taxpayer never realized the receipt in the first place — the sale was undone. Refunds of services, however, must be examined carefully because the original receipt was realized when paid and a later refund is treated as a reduction in commercial activity in the year of refund, not retroactively. The Department of Revenue's position is that bona fide returns processed within the same reporting period reduce commercial activity. Returns processed in a later period are deducted in that later period.  _(Department of Revenue position (unsure - no statutory cite given))_
+The 2025-2026 filing-cycle grocery instructions require separating qualifying grocery receipts from prepared/hot food, alcohol, tobacco, fuel and other sales rather than exempting an entire convenience store. Wholesale grocery exclusion requires qualifying food for resale without processing for home consumption and written purchaser certification, subject to the stated qualified SNAP-store exceptions with retained eligibility documentation. The source also uses a hot/prepared-food receipts test and other facts for a store's retail grocery status; no universal “all food” exclusion applies. Excluding all ordinary receipts can remove tax, rather than leave a mandatory $250 on excluded activity. [OR-CAT grocery instructions pp.3-4](https://www.oregon.gov/dor/forms/FormsPubs/form-or-cat-instr_106-003-1_2025.pdf).
 
-## 3. Rate structure and the $1 million threshold
+The old broad paragraphs on lawsuit damages, insurance proceeds versus interruption coverage, dividends, nondealer vehicle/vessel/aircraft sales and federal preemption require the precise operative statutory exclusion and receipt classification before use. P.L. 86-272 is expressly unavailable for CAT. Timber, hospitals/long-term care, agricultural cooperatives, digital advertising and marketplace receipts require specialized review. No unsupported historical bill identifier, named litigation holding or claim that no constitutional challenge has succeeded is used as a tax conclusion. Those former topics remain recorded as unresolved boundaries. [ORS 317A definitions/exclusions and 116](https://www.oregonlegislature.gov/bills_laws/ors/ors317A.html).
 
-### 3.1 The two-part rate
+### 4. Source each receipt, independently of subtraction apportionment
 
-- **CAT formula** — CAT = $250 + 0.57% × max(0, (Oregon commercial activity − $1,000,000 − 35%-subtraction))  _(ORS 317A)_
-- **Flat minimum tax** — $250 USD (owed by any taxpayer whose Oregon commercial activity exceeds $1,000,000 in the calendar year)  _(ORS 317A)_
-- **Variable component rate** — 0.57% percent (applied to Oregon commercial activity in excess of $1,000,000, after the section 5 subtraction; the $250 is not a credit against the variable component, it is an additional flat amount owed once the threshold is crossed)  _(ORS 317A)_
+| Transaction | Oregon source rule | Official source |
+|---|---|---|
+| Real property sale/rent/lease/license | To extent property is in Oregon | https://www.oregonlegislature.gov/bills_laws/ors/ors317A.html |
+| Tangible property rent/lease/license | To extent property is located in Oregon | https://www.oregonlegislature.gov/bills_laws/ors/ors317A.html |
+| Tangible goods sale | To extent delivered to Oregon purchaser | https://www.oregonlegislature.gov/bills_laws/ors/ors317A.html |
+| Services | To extent delivered to an Oregon location | https://www.oregonlegislature.gov/bills_laws/ors/ors317A.html |
+| Intangible sale/rent/lease/license | To extent used in Oregon, including right-to-use allocation when receipts reflect that right | https://www.oregonlegislature.gov/bills_laws/ors/ors317A.html |
+| Other financial institution/insurer activity | Oregon business under the statutory special rule | https://www.oregonlegislature.gov/bills_laws/ors/ors317A.html |
 
-### 3.2 The exclusion threshold
+Preserve contract, delivery, user/customer location and allocation evidence. Headquarters, billing address, customer domicile and place the worker performs services need not all identify the location to which the service is delivered. For B2B SaaS or multistate services, billing address alone does not prove Oregon delivery and there is no blanket DOR acceptance stated here. If the statutory result does not fairly represent activity, ORS 317A.128(2) permits a requested/required/permitted alternative; detailed reasonable-approximation hierarchies require their actual rules. Do not silently swap billing for delivery or substitute labor location. [ORS 317A.128](https://www.oregonlegislature.gov/bills_laws/ors/ors317A.html).
 
-- **$1,000,000 exclusion threshold** — $1,000,000 USD (If Oregon commercial activity does not exceed $1,000,000 in the calendar year, no CAT is due. The $1 million figure is a true exclusion (not a deduction): it removes the first $1 million from the base of the variable component, and the $250 flat is owed only when the threshold is exceeded.)  _(ORS 317A.116)_
+Farmers can establish Oregon/outside sales through qualifying broker/processor/wholesaler certificates or the statutory prior-year industry-average method; retain the supporting method and commodity facts. Specialized insurer/financial sourcing and mixed methods require their own schedules. [ORS 317A.102,128](https://www.oregonlegislature.gov/bills_laws/ors/ors317A.html).
 
-### 3.3 The $750,000 registration threshold
+### 5. Compute eligible inputs and labor before subtraction
 
-Oregon imposes a separate registration obligation under ORS 317A.131 for any person whose Oregon commercial activity exceeds $750,000 in the calendar year, even if no tax is ultimately due. Registration must be completed within 30 days of crossing the threshold.
+Cost inputs generally start from federally computed COGS, not all operating expenses or every SaaS hosting/API charge. A qualifying farming operation that does not report federal COGS uses operating expenses excluding labor under the statutory special definition. Validate capitalization, asset/expense classification and the federal workpaper first. [ORS 317A.100(2),102](https://www.oregonlegislature.gov/bills_laws/ors/ors317A.html); [OR-CAT pp.8-9](https://www.oregon.gov/dor/forms/FormsPubs/form-or-cat-instr_106-003-1_2025.pdf).
 
-The interaction of the two thresholds creates three regimes (see table below). A taxpayer in the middle band — between $750k and $1M — must register, must file the annual return, and will owe $0 in tax. Failure to register in this band is the most common error and triggers a separate registration penalty under ORS 317A.161.
+Labor includes eligible employee compensation such as wages, health/retirement/fringe benefits, capped per employee for the relevant period. The published return instructions expressly exclude the **employer's payroll taxes**. The FAQ's wording about employees' payroll taxes is not authority to deduct employer taxes or to subtract payroll withholding twice from gross employee wages. Partners/LLC members receiving guaranteed payments/distributive income, specified statutory employees and independent contractors are not eligible employees for this subtraction. Do not cap a partner's payment at $500,000 and call the remainder employee labor. [OR-CAT p.8](https://www.oregon.gov/dor/forms/FormsPubs/form-or-cat-instr_106-003-1_2025.pdf); [DOR labor FAQ](https://www.oregon.gov/dor/programs/businesses/Pages/corporate-activity-tax.aspx).
 
-**Oregon commercial activity registration/return/tax regimes**  _(ORS 317A.131; ORS 317A.161)_
+Under the general method, remove costs associated with noncommercial/excluded receipts and intermember transactions before comparing eligible cost inputs and labor. Costs paid by a precious-metal dealer for qualifying precious-metal items have a specific exclusion. Do not sum COGS and labor or take both 35% amounts. Preserve employee caps and excluded-receipt allocations in the workpaper even when COGS is ultimately larger. [ORS 317A.119](https://www.oregonlegislature.gov/bills_laws/ors/ors317A.html).
 
-| Oregon commercial activity | Registration | Return | Tax owed |
-| --- | --- | --- | --- |
-| Under $750,000 | Not required | Not required | $0 |
-| $750,000 to $1,000,000 | **Required** | Required if registered | $0 |
-| Over $1,000,000 | Required | Required | $250 + 0.57% of base |
+The **general** subtraction apportionment follows applicable ORS 314 methods/special industries, not necessarily a simple Oregon receipts/worldwide gross revenue fraction. The **substitute method** is an election approximating eligible costs with a defined commercial activity ratio: Oregon activity divided by commercial activity everywhere plus the specified excluded categories in the instructions, excluding unitary intermember transactions from both numerator and denominator. Cost treatment differs between methods. A simple Oregon/total activity ratio is appropriate in the worked cases only because they expressly assume substitute-method eligibility/election, no specified denominator exclusions and no mixed-industry method. [ORS 317A.119(3)-(6)](https://www.oregonlegislature.gov/bills_laws/ors/ors317A.html); [OR-CAT pp.8-9](https://www.oregon.gov/dor/forms/FormsPubs/form-or-cat-instr_106-003-1_2025.pdf).
 
-### 3.4 What "Oregon commercial activity" means for the threshold
+The cycle-specific line 7 percentage is shown to four decimal places **as a percent**, with a calculation attachment; 85.7143% is not 0.8571%. Omission can disallow the subtraction. Mixed-method unitary subgroups require assignment of eligible costs and separate factors, then the permitted combined subtraction. An alternative apportionment request is different from the substitute election and cannot be used before DOR written approval. [OR-CAT p.9](https://www.oregon.gov/dor/forms/FormsPubs/form-or-cat-instr_106-003-1_2025.pdf).
 
-- **Oregon commercial activity for threshold purposes** — For purposes of both thresholds, "Oregon commercial activity" means commercial activity sourced to Oregon under the market-based sourcing rules in section 7. A California-headquartered SaaS company with $5 million of total commercial activity but only $400,000 sourced to Oregon does not need to register and owes no CAT. For unitary groups that have elected combined filing, the threshold is applied at the group level, not the entity level. See section 8.  _(ORS 317A.128 (market-based sourcing rules referenced))_
+Compute the ordinary full-year subtraction as min(35% x eligible greater cost amount x applicable factor, 95% x Oregon commercial activity). Then taxable activity is Oregon commercial activity less subtraction and any separately authorized applicable adjustment. Tax is zero if taxable activity does not exceed $1 million; otherwise $250 + 0.0057 x (taxable activity - $1 million). Use the actual year's short-period/adjustment rules rather than hardcoding that full-year model for every return. [ORS 317A.119,125](https://www.oregonlegislature.gov/bills_laws/ors/ors317A.html).
 
-## 4. Bright-line nexus
+### 6. Map the workpaper onto the correct return
 
-### 4.1 Statutory nexus standard
+This is a **2025-2026 filing-cycle** map, not a claim that final 2026 boxes are published. Complete designated entity, FEIN/SSN as applicable, year dates, first/final/short indicators, federal/Oregon group differences, modified-group election, affiliates and special-industry information. Do not use a federal consolidated group list as the entire CAT group analysis. [OR-CAT pp.7-9](https://www.oregon.gov/dor/forms/FormsPubs/form-or-cat-instr_106-003-1_2025.pdf).
 
-- **Bright-line nexus standard** — ORS 317A.116 establishes a bright-line nexus standard for CAT that mirrors the multistate Tax Commission's factor-presence nexus framework. A person has substantial nexus with Oregon — and is therefore a "taxpayer" subject to CAT — if any of the following is satisfied during the calendar year: 1. The person has more than **$750,000 of Oregon commercial activity** (the same threshold that triggers the registration obligation under section 3.3), 2. The person has more than **$50,000 of Oregon property**, 3. The person has more than **$50,000 of Oregon payroll**, or 4. **More than 25% of total property, payroll, or sales is in Oregon**, or 5. The person is organized or commercially domiciled in Oregon (regardless of any factor threshold). Any single factor being satisfied creates nexus. The bright-line approach means that out-of-state taxpayers cannot avoid CAT by arguing that they have no physical presence in Oregon — the economic-presence standard upheld by South Dakota v. Wayfair, Inc., 138 S.Ct. 2080 (2018) for sales tax applies a fortiori to CAT.  _(ORS 317A.116; South Dakota v. Wayfair, Inc., 138 S.Ct. 2080 (2018))_
+| Published Form OR-CAT field | Workpaper / attachment | Official source |
+|---|---|---|
+| Line 1 | Oregon sourced activity plus exclusions later entered on line 2 | https://www.oregon.gov/dor/forms/FormsPubs/form-or-cat-instr_106-003-1_2025.pdf |
+| Line 2 | Exclusions with OR-EXC-CAT descriptions/codes and substantiation | https://www.oregon.gov/dor/forms/FormsPubs/form-or-cat-instr_106-003-1_2025.pdf |
+| Line 3 | Oregon commercial activity, line 1 less line 2; filing threshold uses this stage | https://www.oregon.gov/dor/forms/FormsPubs/form-or-cat-instr_106-003-1_2025.pdf |
+| Lines 4-5 | Eligible cost inputs and labor using elected general/substitute method | https://www.oregon.gov/dor/forms/FormsPubs/form-or-cat-instr_106-003-1_2025.pdf |
+| Lines 6-8 | Greater-cost 35% calculation, supported factor and apportioned subtraction | https://www.oregon.gov/dor/forms/FormsPubs/form-or-cat-instr_106-003-1_2025.pdf |
+| Later taxable activity/threshold/base-tax fields | Apply 95% cap and any authorized adjustment, then the zero-tax gate before base tax | https://www.oregon.gov/dor/forms/FormsPubs/form-or-cat-instr_106-003-1_2025.pdf |
+| Tax/prepayment/penalty/refund fields | Reconcile full tax, actual estimated/extension payments, notices and requested refund/forward credit | https://www.oregon.gov/dor/forms/FormsPubs/form-or-cat-instr_106-003-1_2025.pdf |
+| OR-AF-CAT | Required affiliate information for combined return | https://www.oregon.gov/dor/forms/FormsPubs/form-or-cat-instr_106-003-1_2025.pdf |
 
-### 4.2 Property factor
+Do not assign an unconfirmed 2026 field number for a temporary construction/pharmacy adjustment or assume the prepayment schedule proves filing. The detailed final 2026 line map remains a stated gap. Keep books-to-receipts, exclusions, source, costs, factor, tax and payment reconciliations as separate schedules.
 
-- **Oregon property factor for nexus** — Oregon property under the nexus test includes owned and rented real and tangible personal property situated in Oregon during the year. Rented property is valued at 8 times the net annual rental rate, consistent with the standard Uniform Division of Income for Tax Purposes Act ("UDITPA") convention.  _(UDITPA convention (unsure - no specific ORS cite given))_
+### 7. Estimates and final payment
 
-### 4.3 Payroll factor
+Expected CAT of at least $5,000 requires quarterly estimates. For years from 2022, the cycle instructions describe a required-installment alternative based on 90% of current annual liability, prior-year liability, or qualifying annualized/seasonal methods, with each ordinary installment generally 25% of the selected annual amount. Apply the actual qualifying prior-year and method rules; the old universal 80% statement is not current. Annualization needs the prescribed period computation and seasonal method its eligibility evidence. A growing first year is not automatically penalty-free. [OR-CAT estimated payments pp.5-6, Form OR-QUP-CAT instructions](https://www.oregon.gov/dor/forms/FormsPubs/form-or-cat-instr_106-003-1_2025.pdf).
 
-- **Oregon payroll factor for nexus** — Oregon payroll includes wages, salaries, commissions, and other compensation paid to employees with Oregon as their place of work. The $50,000 threshold is exceeded quickly even by businesses with only one Oregon-resident remote worker earning more than $50,000 annually.  _(ORS 317A.116)_
+Calendar-year statutory dates are April 30, July 31, October 31 and January 31 following year-end, shifted for weekends/holidays. Actual 2026 dates are April 30, July 31, November 2, 2026 and February 1, 2027. Fiscal years use the last day of months four, seven and ten and the first month following year-end. The annual CAT return is generally due the fifteenth day of the fourth month after year-end; it is not the later corporate excise return due date. [ORS 317A.137](https://www.oregonlegislature.gov/bills_laws/ors/ors317A.html); [DOR payment FAQ](https://www.oregon.gov/dor/programs/businesses/Pages/corporate-activity-tax.aspx).
 
-### 4.4 Sales factor
+## Boundary and exception table
 
-- **25% sales factor for nexus** — The "25% of sales" prong references sales of any kind, sourced under the market-based sourcing rules of section 7. A small business with most of its customers in Oregon — even if total commercial activity is below $750,000 — can establish nexus this way, but in practice the $750,000 commercial-activity prong is the binding constraint for almost all taxpayers.  _(ORS 317A.116; ORS 317A.128)_
+| Facts | Result / next work |
+|---|---|
+| Exactly $750,000 activity | Statute registration trigger is “in excess”; DOR summary conflicts at equality, document and confirm account handling. |
+| Over registration but no more than filing threshold | Registration does not independently mandate an annual return. |
+| More than filing threshold before subtraction, at/below payment threshold after it | File required return; zero CAT rather than automatic base tax. |
+| No Oregon employees/property | Test significant economic presence; no P.L. 86-272 CAT defense. |
+| Partner paid more than employee ceiling | Exclude guaranteed/distributive payment from employee labor; ceiling does not convert it to wages. |
+| Short-year change of accounting period | Test proration; newly formed/dissolved exception cannot be assumed. |
+| Refund after sale year | Apply return/allowance timing and avoid duplicate relief. |
+| Claimed special construction/pharmacy/utility exclusion | Confirm operative 2026 enactment/effective date before taking it. |
+| CAT and corporate income tax | Separate tax bases, ownership, nexus, returns and estimates; one payment does not satisfy the other. |
 
-### 4.5 Constitutional nexus
+## Worked cases
 
-- **Constitutional nexus background** — The Oregon Supreme Court considered a constitutional challenge to CAT in Santa Fe Natural Tobacco Co. v. Department of Revenue, 313 P.3d 1106 (Or. 2013) — an opinion that pre-dates CAT but is foundational for Oregon's tax-nexus doctrine — and the CAT statute itself withstood early constitutional challenges in administrative-rule litigation. The bright-line thresholds were designed to be conservative with respect to the Commerce Clause's substantial-nexus requirement post-Wayfair, and no successful constitutional challenge to CAT has been sustained as of this writing.  _(Santa Fe Natural Tobacco Co. v. Department of Revenue, 313 P.3d 1106 (Or. 2013))_
+All three former named business examples are retained and corrected for 2026. Scenario receipt/expense figures are invented inputs, not source-derived law. Assume full year, ordinary included taxpayer, established nexus, valid substitute-method election, no specified extra denominator exclusions, no intermember costs and no special adjustments. Workpaper precision is shown before actual form whole-dollar/percentage rounding.
 
-## 5. The 35% subtraction
+### Case 1: Cascade Hardware LLC, Bend retailer
 
-### 5.1 Structure of the subtraction
+Retain $1.5 million Oregon activity, $900,000 verified COGS and $200,000 compensation/payroll-related cost total. Employer payroll taxes are ineligible labor and must be separated; even treating the entire $200,000 as an upper bound, COGS remains larger. All activity is Oregon. Subtraction is $315,000, below the $1,425,000 cap; taxable activity is $1,185,000. Tax is $1,304.50, below the estimated-payment trigger. Registration already exists, annual filing is required, and the balance is payable by the applicable return payment date. Federal deductibility and the owner's separate income tax are sent to their owner skills.
 
-- **35% subtraction structure** — ORS 317A.119 provides a subtraction from commercial activity equal to 35% of the greater of: (a) the taxpayer's **cost inputs**, defined as cost of goods sold (COGS) computed in accordance with IRC §471 and the consolidated regulations thereunder, **apportioned to Oregon**, or (b) the taxpayer's **labor costs**, defined as total compensation paid (capped at $500,000 per employee), **apportioned to Oregon**. The taxpayer chooses (a) or (b), and the choice is made annually on the return — the taxpayer takes the higher of the two computed amounts.  _(ORS 317A.119)_
-- **Subtraction formula** — Subtraction = 35% × max(Oregon-apportioned COGS, Oregon-apportioned labor)  _(ORS 317A.119)_
-
-### 5.2 Cost of goods sold prong
-
-- **COGS prong** — COGS for CAT purposes is computed under IRC §471 — the federal inventory rules — and is therefore the same figure the taxpayer reports on the federal return at line 8 of Form 1125-A (or equivalent line on a Schedule C). The COGS figure is then apportioned to Oregon using the same single-sales-factor apportionment formula that applies to the corporate excise tax under ORS 314.665. For a single-state Oregon retailer with 100% of its sales sourced to Oregon, the apportionment factor is 1.0 and the entire COGS figure flows into the subtraction calculation. For a multi-state seller, only the Oregon-sourced portion of COGS — computed as total COGS times the Oregon sales factor — feeds into the subtraction.  _(IRC §471; ORS 314.665)_
-
-### 5.3 Labor cost prong
-
-- **Labor cost prong** — Labor cost is defined as the total compensation paid by the taxpayer to its employees, capped at $500,000 per employee per year. The $500,000 cap is intended to prevent the labor subtraction from giving a disproportionate benefit to firms with a small number of very highly-compensated employees (think investment-banking partnerships or specialized professional firms). Labor cost includes: - W-2 wages - The taxpayer's share of payroll taxes paid (Social Security, Medicare, federal and state unemployment) - Employer contributions to retirement plans - Employer-paid health insurance premiums - Other fringe benefits that are deductible as compensation expense for federal income tax purposes Labor cost does **not** include: - Payments to independent contractors (the contractor reports its own commercial activity) - Officer salaries to the extent treated as distributions for federal purposes - Compensation in excess of $500,000 per employee Labor cost is apportioned to Oregon under the same sales factor used for COGS — not under a payroll-factor allocation. This is a quirk of the statute: even though the labor subtraction is rooted in payroll expense, the apportionment to Oregon is done by the sales factor.  _(ORS 317A.119)_
-- **Labor cost cap per employee** — $500,000 USD (per employee per year cap on compensation includible in the labor cost prong)  _(ORS 317A.119)_
-
-### 5.4 The choice between COGS and labor
-
-Service businesses and SaaS companies typically have very low COGS and very high labor cost — for them, the labor prong is materially larger. Retailers, distributors, and manufacturers typically have very high COGS — for them, the COGS prong dominates.
-
-A reasonable practitioner runs both calculations for each client and elects the larger. The election is made annually on the return; there is no carryover or cross-year binding effect.
-
-### 5.5 Limitation: subtraction cannot exceed 95% of commercial activity
-
-- **95% subtraction cap** — ORS 317A.119(3) limits the subtraction to 95% of Oregon commercial activity. This is a backstop to prevent the subtraction from completely eliminating the tax base for a taxpayer with abnormally high COGS or labor relative to revenue (a startup operating at a loss, for example, where labor exceeds revenue). In practice, this limit binds only for taxpayers with deeply negative operating margins. For most clients, the subtraction is well below the 95% cap.  _(ORS 317A.119(3))_
-
-### 5.6 Subtraction formula putting it together
-
-- **Full CAT calculation steps** — Step 1: Determine Oregon commercial activity (OCA) Step 2: Compute Oregon-apportioned COGS or labor, take the larger Step 3: Multiply by 35% — this is the subtraction (capped at 95% × OCA) Step 4: Tax base = max(0, OCA − $1,000,000 − Subtraction) Step 5: CAT = $250 + 0.57% × Tax base   (only if OCA > $1,000,000)  _(ORS 317A.119; ORS 317A.116)_
-
-## 6. Reporting period and filing mechanics
-
-### 6.1 Calendar year
-
-- **Calendar year reporting requirement** — All CAT taxpayers report on a calendar-year basis under ORS 317A.137, regardless of the taxpayer's federal fiscal year. A C-corporation with a March 31 federal fiscal year-end still files Form OR-CAT for the calendar year ending December 31. This is one of the most common procedural surprises for out-of-state taxpayers.  _(ORS 317A.137)_
-
-### 6.2 Annual return
-
-- **Annual return due date and extension** — The annual return is Form OR-CAT, due April 15 following the close of the calendar year. The return is filed with the Oregon Department of Revenue, either electronically through Revenue Online or by paper for taxpayers who qualify for paper filing. A six-month extension is available by filing Form OR-CAT-EXT by April 15 (the same date as the unextended return). The extension is for filing only — the tax must still be paid by April 15 to avoid penalty.  _(Form OR-CAT; Form OR-CAT-EXT)_
-
-### 6.3 Quarterly estimated payments
-
-Taxpayers with an annual CAT liability of $5,000 or more (other than the flat $250 minimum) must make quarterly estimated payments under ORS 317A.140. The four quarterly due dates are shown in the table below. Each quarterly payment must equal 25% of the projected annual CAT liability. Underpayment is penalized under section 10.
-
-**Quarterly estimated payment schedule**  _(ORS 317A.140)_
-
-| Quarter | Period | Estimated payment due |
-| --- | --- | --- |
-| Q1 | January 1 – March 31 | April 30 |
-| Q2 | April 1 – June 30 | July 31 |
-| Q3 | July 1 – September 30 | October 31 |
-| Q4 | October 1 – December 31 | January 31 of following year |
-
-- **Quarterly estimated payment liability threshold** — $5,000 USD (annual CAT liability threshold (other than the flat $250 minimum) triggering the requirement to make quarterly estimated payments; each payment must equal 25% of projected annual liability)  _(ORS 317A.140)_
-
-### 6.4 Safe harbor for first-year filers
-
-- **First-year filer safe harbor** — A first-year CAT taxpayer (one not subject to CAT in the prior year) is not subject to the underpayment penalty for the first year, provided the full annual liability is paid by April 15 with the return. This is a one-time grace; in year two, the standard quarterly estimated-payment regime applies.  _(unsure - no statutory cite given for safe harbor)_
-
-### 6.5 Recordkeeping
-
-- **Recordkeeping period** — CAT records must be retained for at least six years from the date the return is filed or the date the return is due, whichever is later. This is longer than the typical federal three-year recordkeeping period and reflects the longer audit window for CAT.  _(ORS 317A.158)_
-
-## 7. Sourcing — market-based
-
-### 7.1 General rule
-
-- **Market-based sourcing general rule** — Oregon applies market-based sourcing under ORS 317A.128 for purposes of determining whether commercial activity is "Oregon commercial activity." The general rule is: - **Tangible personal property** is sourced to the location where the property is delivered to the purchaser (ship-to address). - **Services** are sourced to the location where the customer receives the benefit of the service. - **Intangibles** are sourced to the location where the intangible is used. - **Real property** receipts (rents, gains) are sourced to the location of the property.  _(ORS 317A.128)_
-
-### 7.2 Tangible personal property — ship-to rule
-
-- **Ship-to sourcing rule** — For sales of goods, sourcing follows the destination of delivery. A widget shipped from a California warehouse to a customer in Portland, Oregon, is Oregon commercial activity regardless of where the seller is headquartered, where title transferred, or where the order was placed. Drop-ship transactions are sourced to the ultimate Oregon destination — the location of the actual customer, not the intermediate party. This is consistent with the underlying economic-substance principle of CAT.  _(ORS 317A.128)_
-
-### 7.3 Services — benefit-of-the-service rule
-
-- **Benefit-of-the-service sourcing rule** — For services, Oregon applies the "where the benefit is received" rule. This is operationally identical to the rule in many other market-based-sourcing states (California, Massachusetts, Texas franchise tax) and the practitioner literature is consistent: the test asks where the customer ultimately enjoys the result of the service. For professional services to a business customer (B2B), the benefit is generally received at the customer's place of business — typically the office where the engagement is administered, not the customer's place of incorporation. For consumer services (B2C), the benefit is generally received where the consumer is located — usually their state of residence. For SaaS and cloud services, the practitioner consensus and Department of Revenue practice is that the benefit is received where the end users access the software. For business customers, that means Oregon-based users count toward Oregon commercial activity, prorated by user count if necessary.  _(ORS 317A.128)_
-
-### 7.4 Intangibles
-
-- **Intangibles sourcing rule** — Royalties and licensing receipts from intellectual property are sourced to where the licensee uses the IP. A Delaware-based licensor of a trademark used by a Portland retailer has Oregon commercial activity equal to the royalty paid by the Portland retailer.  _(ORS 317A.128)_
-
-### 7.5 The "reasonable approximation" fallback
-
-- **Reasonable approximation fallback** — ORS 317A.128(2) provides that if the sourcing rules cannot be applied with reasonable accuracy — for example, where a SaaS company cannot determine the actual location of end users — the taxpayer must use a "reasonable approximation" based on a method that fairly represents the location of the customer's benefit. Common approximations: - For B2B SaaS: proration by billing address, then by user count if billing address is HQ - For digital advertising: proration by IP-address geolocation of viewers - For cloud storage: proration by the location of the primary administrator account The reasonable-approximation method must be applied consistently year-over-year and documented in the taxpayer's workpapers.  _(ORS 317A.128(2))_
-
-## 8. Combined and consolidated group filing
-
-### 8.1 Statutory framework
-
-- **Combined filing statutory framework** — ORS 317A.106 permits and in some cases requires combined filing for unitary groups. A "unitary group" is defined by reference to the federal consolidated-return rules under IRC §1504 with modifications, but the unitary determination under Oregon law is broader than the federal affiliated-group test: - For a **unitary group** with 50% or more common ownership (under the Oregon unitary test, which examines centralized management, flow of value, and economic interdependence), the group **must** file as a combined group for CAT. - For affiliated entities that are not unitary, the group **may elect** to file as a combined group, with the election made on the return for the year of first eligibility and binding for subsequent years (subject to permission to revoke).  _(ORS 317A.106; IRC §1504)_
-
-### 8.2 Effect of combined filing
-
-- **Effects of combined group filing** — When a combined group files, the following consequences attach: - Intercompany transactions among group members are eliminated from commercial activity (see exclusion item 5 in section 2.3). - The $1 million exclusion is applied **once** at the group level, not per entity. A combined group with three members each generating $700,000 of Oregon commercial activity has $2,100,000 of group commercial activity and pays CAT on $1,100,000 (less subtraction), not zero per entity. - The $750,000 registration threshold is applied once at the group level. - The 35% subtraction is computed on a combined basis — COGS and labor of all group members are aggregated. - Tax liability is joint and several among group members.  _(ORS 317A.106)_
-
-### 8.3 Strategic considerations
-
-Combined filing generally **increases** total CAT liability for a group of separately small entities (because the $1M exclusion is consolidated) but **decreases** it for a group with substantial intercompany sales (because those sales drop out). The decision should be modeled annually.
-
-The unitary determination is fact-intensive. A holding company with truly arm's-length subsidiaries operating in different industries may not be unitary. A retail chain with separately incorporated locations sharing a common brand, common purchasing, and centralized back office is almost always unitary.
-
-### 8.4 Designated reporter
-
-- **Designated reporter requirement** — A combined group must designate one member as the "designated reporter" — typically the corporate parent. The designated reporter files the single Form OR-CAT for the group, signs the return, and is the primary point of contact with the Department of Revenue. Other members are jointly and severally liable but do not file separate returns.  _(unsure - no statutory cite given)_
-
-## 9. Interaction with Oregon corporate excise tax and other Oregon taxes
-
-### 9.1 Corporate excise tax (ORS Chapter 317)
-
-- **Corporate excise tax rates and interaction with CAT** — Oregon imposes a corporate excise tax on C-corporations doing business in Oregon under ORS Chapter 317, with a graduated rate of 6.6% on the first $1 million of Oregon taxable income and 7.6% on income above $1 million. The minimum tax is the larger of $150 or a graduated schedule based on Oregon sales (ranging from $150 for under $500k to $100,000 for $100M+ of Oregon sales). CAT is **in addition to** the corporate excise tax. A C-corporation with Oregon operations may pay both: - The corporate excise tax on net Oregon income at 6.6%/7.6%, AND - CAT on Oregon commercial activity at 0.57% (after subtraction and threshold) There is no credit between the two taxes. They have different bases (net income vs. gross receipts after subtraction) and different rate structures. CAT is deductible as a state tax for federal purposes; the corporate excise tax is also separately deductible.  _(ORS Chapter 317)_
-
-### 9.2 Corporate income tax (ORS Chapter 318)
-
-- **Corporate income tax interaction** — The corporate income tax under Chapter 318 applies to corporations not "doing business" in Oregon but with Oregon-source income (passive Oregon income for an out-of-state corporation that does not establish nexus under Chapter 317). The Chapter 318 rate is the same as the excise tax rate. The interaction with CAT mirrors section 9.1.  _(ORS Chapter 318)_
-
-### 9.3 Personal income tax
-
-- **Personal income tax interaction** — Sole proprietors and pass-through entity owners report Oregon-source business income on their personal Oregon Form OR-40 (resident) or OR-40-N/OR-40-P (nonresident/part-year). CAT paid by the business reduces the federal Schedule C net income (CAT is deductible as a business tax under §164) and therefore indirectly reduces Oregon personal income tax. There is no direct credit.  _(IRC §164; Form OR-40; Form OR-40-N/OR-40-P)_
-
-### 9.4 Oregon Transit Self-Employment Tax
-
-- **Transit self-employment tax interaction** — The Tri-Met and Lane Transit District self-employment taxes are separate from CAT and apply independently to self-employed individuals operating in those transit districts. No interaction with CAT — both are owed if applicable.  _(unsure - no statutory cite given)_
-
-### 9.5 Multnomah County and Portland Metro business taxes
-
-- **Local business tax interaction** — Multnomah County imposes a business income tax and Portland has a license fee, both administered jointly through the Portland Revenue Division. These are separate from CAT and from state corporate excise tax. A Portland-based business may have four separate Oregon-related state and local business tax filings: CAT, state corporate excise, Multnomah business income tax, and Portland license fee.  _(unsure - no statutory cite given)_
-
-## 10. Penalties and interest
-
-### 10.1 Late registration penalty
-
-- **Late registration penalty** — Failure to register within 30 days of crossing the $750,000 threshold is subject to a penalty of $100 per month, up to $1,000. The penalty applies even when no CAT is ultimately due (i.e., even for a taxpayer in the $750k–$1M registration band).  _(ORS 317A.161)_
-
-### 10.2 Late filing penalty
-
-- **Late filing penalty** — A taxpayer who fails to file the annual Form OR-CAT by the due date (or extended due date) is subject to a penalty of 5% of the unpaid tax.  _(ORS 317A.161)_
-
-### 10.3 Late payment penalty
-
-- **Late payment penalty** — The late payment penalty is 5% of the unpaid tax, plus an additional 20% if the return is filed more than 90 days late, for a combined late-payment-plus-late-filing maximum of 25% of the unpaid tax. This is layered on top of any underpayment-of-estimated-tax penalty under section 10.4.  _(unsure - no statutory cite given for combined penalty maximum)_
-
-### 10.4 Underpayment of estimated tax
-
-- **Underpayment of estimated tax penalty** — If a taxpayer's quarterly estimated payments cumulatively cover less than 80% of the actual annual CAT liability, an underpayment penalty applies. The penalty is 5% of the underpaid amount per quarter.  _(unsure - no statutory cite given)_
-
-### 10.5 Interest
-
-- **Interest rate on unpaid CAT for 2025** — 8% percent per annum (Interest on unpaid CAT accrues from the date the tax was originally due at the rate set by the Department of Revenue annually. The rate is recalibrated each year and is typically 4–6 percentage points above the federal short-term rate. For 2025, the Department's rate is 8% per annum.)  _(ORS 305.220)_
-
-### 10.6 Fraud and substantial understatement
-
-- **Fraud and substantial understatement penalties** — For fraudulent filings, the penalty is 100% of the unpaid tax. For substantial understatements (defined as the greater of 10% of correct tax or $10,000), the penalty is 20% of the understatement. These penalties are layered with interest but do not stack with the basic late-filing and late-payment penalties — the larger of the two applies.  _(unsure - no statutory cite given)_
-
-## 11. Worked examples
-
-### 11.1 Example 1 — Small Oregon retailer at $1.5 million with COGS
-
-**Facts.** Cascade Hardware LLC is a single-member LLC owned by an Oregon resident. The LLC operates a brick-and-mortar hardware store in Bend, Oregon. For calendar year 2025, the LLC has:
-
-- Oregon commercial activity (all sales to Oregon customers): $1,500,000
-- Federal Form 1125-A cost of goods sold: $900,000
-- Labor (W-2 wages plus employer payroll taxes plus health insurance): $200,000
-- 100% of sales sourced to Oregon
-
-**Step 1 — Registration.** Oregon commercial activity exceeds $750,000, so the LLC must be registered with the Oregon Department of Revenue. The LLC was already registered from prior years.
-
-**Step 2 — Determine the subtraction.** Oregon-apportioned COGS is $900,000 (apportionment factor = 1.0). Oregon-apportioned labor is $200,000 (apportionment factor = 1.0). The taxpayer takes the larger: COGS at $900,000. The subtraction is 35% × $900,000 = $315,000.
-
-**Step 3 — Check the 95% cap.** 95% × $1,500,000 = $1,425,000. The subtraction of $315,000 is well below the cap, so no limitation.
-
-**Step 4 — Compute tax base.**
-- Oregon commercial activity: $1,500,000
-- Less exclusion: ($1,000,000)
-- Less subtraction: ($315,000)
-- Tax base: $185,000
-
-**Step 5 — Compute CAT.**
-- Flat amount: $250
-- Variable: 0.57% × $185,000 = $1,054.50
-- **Total CAT: $1,304.50**
-
-**Step 6 — Estimated payments.** Because the annual liability is below $5,000, quarterly estimated payments are not required. The full amount is due with Form OR-CAT on April 15, 2026.
-
-**Step 7 — Federal interaction.** The $1,304.50 of CAT is deductible as a state and local business tax on Cascade Hardware's Schedule C, reducing federal taxable income and Oregon personal income tax for the owner.
-
-### 11.2 Example 2 — Services firm at $3 million with labor subtraction
-
-**Facts.** Willamette Strategy Partners LLC is a multi-member LLC taxed as a partnership. It is a management-consulting firm with offices in Portland and Eugene. For calendar year 2025:
-
-- Total commercial activity (worldwide): $3,500,000
-- Oregon commercial activity (services rendered to Oregon-based clients, sourced to where the client receives the benefit): $3,000,000
-- Cost of goods sold: $0 (services firm — no inventory)
-- Total compensation paid: 18 employees, total compensation of $2,400,000, with one rainmaker partner earning $750,000 (capped at $500,000 for CAT purposes)
-- Labor for CAT purposes: $2,400,000 − ($750,000 − $500,000) = $2,150,000
-- Apportionment factor (Oregon sales ÷ total sales): $3,000,000 ÷ $3,500,000 = 0.8571
-- Oregon-apportioned labor: $2,150,000 × 0.8571 = $1,842,857
-
-**Step 1 — Registration.** Required.
-
-**Step 2 — Determine the subtraction.** COGS = $0. Labor (Oregon-apportioned) = $1,842,857. Take the larger: labor at $1,842,857. Subtraction = 35% × $1,842,857 = $645,000 (rounded).
-
-**Step 3 — 95% cap.** 95% × $3,000,000 = $2,850,000. Subtraction of $645,000 is well below the cap.
-
-**Step 4 — Tax base.**
-- Oregon commercial activity: $3,000,000
-- Less exclusion: ($1,000,000)
-- Less subtraction: ($645,000)
-- Tax base: $1,355,000
-
-**Step 5 — Compute CAT.**
-- Flat: $250
-- Variable: 0.57% × $1,355,000 = $7,723.50
-- **Total CAT: $7,973.50**
-
-**Step 6 — Estimated payments.** Annual liability exceeds $5,000, so quarterly estimated payments are required. Each quarterly payment should be approximately $1,994 (25% of $7,973.50). The first payment for 2025 was due April 30, 2025; subsequent payments July 31, October 31, and January 31, 2026.
-
-**Step 7 — Pass-through treatment.** Because the LLC is taxed as a partnership, CAT is a partnership-level liability that reduces partnership net income flowing through on Schedule K-1 to the partners. Each partner separately reports their distributive share of Oregon-source income on their personal Oregon return.
-
-### 11.3 Example 3 — Multi-state SaaS hitting Oregon nexus
-
-**Facts.** PineCloud Inc. is a Delaware C-corporation headquartered in Austin, Texas, with no Oregon office, no Oregon employees, and no Oregon-owned property. PineCloud sells a B2B SaaS product (project management software) on annual subscriptions. For calendar year 2025:
-
-- Total worldwide commercial activity: $25,000,000
-- Approximately 8% of subscribers are Oregon-based, generating $1,950,000 of revenue from Oregon-domiciled customers
-- The Oregon customer base is determined by billing address; the company has approximately 280 Oregon-domiciled paying customer organizations
-- COGS for the SaaS business: $3,000,000 (hosting, third-party APIs, data infrastructure)
-- Labor: $14,000,000 (250 employees, average $56,000 compensation; one CTO at $480,000 — under the cap)
-- Oregon apportionment factor (sales factor): $1,950,000 ÷ $25,000,000 = 0.078
-
-**Step 1 — Nexus.** Oregon commercial activity is $1,950,000, exceeding the $750,000 bright-line threshold under ORS 317A.116(1). PineCloud has substantial nexus and must register and file.
-
-**Step 2 — Registration.** PineCloud must register with the Oregon Department of Revenue within 30 days of crossing the $750,000 threshold. If PineCloud only became aware of the Oregon obligation mid-year, registration should be effected immediately with disclosure of when the threshold was crossed.
-
-**Step 3 — Determine the subtraction.**
-- Oregon-apportioned COGS: $3,000,000 × 0.078 = $234,000
-- Oregon-apportioned labor: $14,000,000 × 0.078 = $1,092,000
-- The labor prong is larger. Subtraction = 35% × $1,092,000 = $382,200
-
-**Step 4 — 95% cap.** 95% × $1,950,000 = $1,852,500. Subtraction of $382,200 is well below the cap.
-
-**Step 5 — Tax base.**
-- Oregon commercial activity: $1,950,000
-- Less exclusion: ($1,000,000)
-- Less subtraction: ($382,200)
-- Tax base: $567,800
-
-**Step 6 — Compute CAT.**
-- Flat: $250
-- Variable: 0.57% × $567,800 = $3,236.46
-- **Total CAT: $3,486.46**
-
-**Step 7 — Estimated payments.** Annual liability below $5,000 — quarterly estimated payments not strictly required, but PineCloud should prudently pay quarterly to stay within the 80% safe harbor in case 2026 commercial activity grows.
-
-**Step 8 — Interaction with Oregon corporate excise tax.** PineCloud is also subject to Oregon corporate excise tax under ORS Chapter 317 if it has nexus for excise-tax purposes. Post-Wayfair, the Department's position is that economic nexus is sufficient for the excise tax as well, and the $1,950,000 of Oregon sales clearly exceeds the bright-line factor-presence sales threshold for excise tax (also $750,000). PineCloud will need to apportion its net income to Oregon under the single-sales-factor formula and pay corporate excise tax in addition to CAT.
-
-**Step 9 — Sourcing audit risk.** The principal audit risk for PineCloud is the sourcing methodology: does "Oregon customer" mean billing address, or actual end-user location? For B2B SaaS where the customer is a multi-state enterprise, the Department of Revenue has accepted billing-address sourcing as a reasonable approximation under ORS 317A.128(2), but practitioners should document the methodology and apply it consistently. If a single large Oregon-billed customer has primarily California-based users, an alternative reasonable approximation (proration by user count) may be more accurate and should be considered.
-
-## 12. Quick-reference summary
-
-```
-RATE:           $250 + 0.57% × tax base
-TAX BASE:       max(0, OR commercial activity − $1M − 35%-subtraction)
-SUBTRACTION:    35% × max(OR-apportioned COGS, OR-apportioned labor)
-                (cap: 95% of OR commercial activity)
-LABOR CAP:      $500,000 per employee
-THRESHOLDS:     Register at $750,000; tax begins at $1,000,000
-NEXUS:          $750k sales OR $50k property OR $50k payroll OR 25% factor
-SOURCING:       Market-based (ship-to for goods; benefit-of-service for services)
-ANNUAL FILING:  Form OR-CAT, due April 15 (calendar year)
-QUARTERLY:      Apr 30, Jul 31, Oct 31, Jan 31 (if annual liability ≥ $5,000)
-PENALTIES:      5%/month, max 25%; underpayment 5% if < 80% prepaid
-COMBINED:       Required if unitary at 50%+ common ownership
-EXCLUSIONS:     Groceries, motor fuel, fixed-asset sales, dividends, interest,
-                capital contributions, intercompany within combined group
-INTERACTION:    Pay BOTH CAT and OR corporate excise tax (different bases)
+```oa-check
+name: Oregon Cascade Hardware CAT 2026
+inputs:
+  oregon_activity: 1500000
+  eligible_cogs: 900000
+  labor_upper_bound: 200000
+  factor: 1
+steps:
+  - subtraction: min(max(eligible_cogs, labor_upper_bound) * factor * 0.35, oregon_activity * 0.95)
+  - taxable_activity: oregon_activity - subtraction
+  - excess: max(taxable_activity - 1000000, 0)
+  - cat: 250 + excess * 0.0057
+expected:
+  subtraction: 315000
+  taxable_activity: 1185000
+  excess: 185000
+  cat: 1304.5
 ```
 
-## 13. Refusal catalogue
+### Case 2: Willamette Strategy Partners LLC, Portland/Eugene services
 
-Refuse to produce a CAT return or definitive CAT advice — and route to a credentialed Oregon CPA or tax attorney — in the following circumstances:
+Retain $3.5 million worldwide/$3 million Oregon activity, zero COGS, $2.4 million total compensation, eighteen employees and the $750,000 rainmaker partner payment. Clarify that the partner amount is guaranteed/distributive income included in the stated total and the other $1.65 million is eligible employee compensation, each employee below the cap with no employer payroll taxes included. The **whole partner payment is excluded**, not just $250,000 over the employee ceiling. Ratio is 3/3.5; apportioned labor is $1,414,285.714286, subtraction $495,000, taxable activity $2,505,000 and CAT $8,828.50. Estimates are required; equal payments of the full projected liability would be $2,207.125 before payment rounding. A qualifying 90%-current method has a different required amount and timing; do not conflate it with paying 100%.
 
-- **R-OR-CAT-1** — Financial institutions subject to the special apportionment rules under ORS 317A.106. The financial-institution apportionment is meaningfully different (uses receipts factors specific to interest, fees, and loan servicing) and outside this skill's scope.  _(ORS 317A.106)_
-- **R-OR-CAT-2** — Insurance companies subject to the gross-premium tax under ORS 731.804. CAT interacts with the insurance gross-premium tax through specific exclusions that depend on the type of insurance line and the regulatory status of the insurer.  _(ORS 731.804)_
-- **R-OR-CAT-3** — Agricultural cooperatives claiming the cooperative exclusion under ORS 317A.100(4)(c). The cooperative exclusion is fact-intensive and turns on the Subchapter T qualification of the cooperative under federal law.  _(ORS 317A.100(4)(c))_
-- **R-OR-CAT-4** — Hospitals, long-term care facilities, and other healthcare entities claiming the healthcare exclusion. The healthcare exclusion has been amended several times and requires direct review of the current statutory text and Department of Revenue guidance.  _(unsure - no specific statutory cite given)_
-- **R-OR-CAT-5** — Timber sales and timber-related receipts. Oregon has separate severance and forest-products taxes that interact with CAT in ways requiring specialized advice.  _(unsure - no specific statutory cite given)_
-- **R-OR-CAT-6** — Combined group composition questions where the unitary determination is contested. Determining whether two entities are unitary under Oregon law is fact-intensive and the Department of Revenue's audit posture is aggressive.  _(unsure - no specific statutory cite given)_
-- **R-OR-CAT-7** — Sourcing questions for digital advertising, marketplace facilitator transactions, or any receipts where the statutory sourcing rule does not clearly map to the taxpayer's facts. Defer to credentialed advisor with documented methodology.  _(unsure - no specific statutory cite given)_
-- **R-OR-CAT-8** — Refund claims older than three years from the original due date. The CAT refund-claim statute of limitations under ORS 305.270 is technical and requires review of any prior-year amendments.  _(ORS 305.270)_
-- **R-OR-CAT-9** — Audit defense and protest letters. This skill prepares returns and provides planning analysis; it does not handle administrative or litigation defense.  _(unsure - no specific statutory cite given)_
-- **R-OR-CAT-10** — Constitutional challenges to CAT (Commerce Clause, Due Process Clause, or state constitutional). The case law is sparse but the litigation strategy must be developed by Oregon counsel.  _(unsure - no specific statutory cite given)_
+```oa-check
+name: Oregon Willamette partner compensation correction
+inputs:
+  world_activity: 3500000
+  oregon_activity: 3000000
+  compensation_total: 2400000
+  partner_payment: 750000
+steps:
+  - eligible_labor: compensation_total - partner_payment
+  - factor: oregon_activity / world_activity
+  - subtraction: min(eligible_labor * factor * 0.35, oregon_activity * 0.95)
+  - taxable_activity: oregon_activity - subtraction
+  - cat: 250 + max(taxable_activity - 1000000, 0) * 0.0057
+  - full_projection_quarter: cat / 4
+expected:
+  eligible_labor: 1650000
+  subtraction: 495000
+  taxable_activity: 2505000
+  cat: 8828.5
+  full_projection_quarter: 2207.125
+```
 
-## 14. Self-checks
+### Case 3: PineCloud Inc., Delaware corporation headquartered in Austin
 
-Before signing off on any CAT return or planning memo produced under this skill, run the following self-checks:
+Retain $25 million worldwide activity, $1.95 million proposed Oregon activity, approximately 280 customer organizations, $3 million purported COGS, $14 million eligible employee compensation, 250 employees (the stated total averages $56,000 each) and the $480,000 CTO. The ratio is **7.8%**, not an exact 8%. Confirm the $1.95 million is delivered/used in Oregon using actual customer facts; Oregon billing addresses alone are not that proof. Assume verified eligible labor with no employer payroll taxes and no other employee over the ceiling; the CTO is below it. Hosting/API “COGS” must be reconciled federally, but even the stated $3 million upper bound is below eligible labor.
 
-1. Did the taxpayer's Oregon commercial activity exceed $750,000? If yes, registration confirmed?
-2. Did the taxpayer's Oregon commercial activity exceed $1,000,000? If yes, tax owed?
-3. Was the 35% subtraction computed on the larger of Oregon-apportioned COGS or Oregon-apportioned labor? Both computed and compared?
-4. Is the labor subtraction respecting the $500,000 per-employee cap?
-5. Is the subtraction below the 95%-of-commercial-activity ceiling?
-6. Are grocery sales excluded if applicable?
-7. Are motor vehicle fuel receipts excluded if applicable?
-8. Are receipts from sales of fixed assets excluded?
-9. Are dividends, interest, and capital contributions excluded?
-10. Is the sourcing methodology consistent with prior years and documented?
-11. If the taxpayer is a unitary group, was the $1M exclusion applied at group level (not per-entity)?
-12. Was the annual liability checked against the $5,000 threshold for quarterly estimated-payment obligation?
-13. If quarterly payments were due, did the cumulative payments meet 80% of the actual annual liability?
-14. For C-corporations, has the separate Oregon corporate excise tax obligation been confirmed?
-15. Has CAT been included as a deductible state tax on the federal return?
+With those explicit assumptions, Oregon-apportioned labor is $1,092,000 and the subtraction $382,200, below the $1,852,500 cap. Taxable activity is $1,567,800 and CAT $3,486.46. Annual filing is required but ordinary quarterly estimates are not, because expected tax is below $5,000. Reevaluate if facts change; do not invent an 80% estimate requirement. Corporate excise/income nexus is a separate analysis in `or-corporate-tax`, not automatically the CAT sales threshold.
 
-## 15. Provenance
+```oa-check
+name: Oregon PineCloud sourced activity assumption
+inputs:
+  world_activity: 25000000
+  oregon_activity: 1950000
+  eligible_labor: 14000000
+  cogs_upper_bound: 3000000
+steps:
+  - factor: oregon_activity / world_activity
+  - oregon_labor: eligible_labor * factor
+  - subtraction: min(max(eligible_labor, cogs_upper_bound) * factor * 0.35, oregon_activity * 0.95)
+  - taxable_activity: oregon_activity - subtraction
+  - cat: 250 + max(taxable_activity - 1000000, 0) * 0.0057
+expected:
+  factor: 0.078
+  oregon_labor: 1092000
+  subtraction: 382200
+  taxable_activity: 1567800
+  cat: 3486.46
+```
 
-This skill is derived from the following primary sources:
+### Case 4: return required, zero tax after subtraction
 
-- **ORS Chapter 317A** (Corporate Activity Tax), as enacted by HB 3427 (2019) and amended by HB 2164 (2019) and SB 164 (2021). Current text as of the Oregon Legislative Assembly 2024 session.
-- **ORS Chapter 317** (Corporate Excise Tax) and **ORS Chapter 318** (Corporate Income Tax) — interaction-only references.
-- **OAR Chapter 150, Division 317** — Oregon Department of Revenue administrative rules implementing CAT.
-- **Form OR-CAT instructions**, Oregon Department of Revenue, tax year 2024 (most recent published as of skill last_updated date); tax year 2025 form has been released in draft and the substantive rules tracked herein are unchanged.
-- **Santa Fe Natural Tobacco Co. v. Department of Revenue**, 313 P.3d 1106 (Or. 2013) — Oregon Supreme Court nexus precedent.
-- **South Dakota v. Wayfair, Inc.**, 138 S.Ct. 2080 (2018) — federal economic-nexus authority.
-- **Oregon Department of Revenue Corporate Activity Tax website** (www.oregon.gov/dor/programs/businesses/Pages/corporate-activity-tax.aspx), accessed November 2025 for current rate, threshold, and form information.
+An invented ordinary full-year business has $1.2 million Oregon activity and $1 million eligible apportioned COGS. Its $350,000 subtraction leaves $850,000 taxable activity. Filing is required from pre-subtraction activity; payment is zero from post-subtraction activity. An alternative with only $100,000 eligible costs leaves $1,165,000 taxable activity and $1,190.50 CAT. Numeric tax-gate flags below document those already established legal scenarios; the flags are not a nexus or filing classifier.
 
-This skill is at tier 2 (content). It must be loaded alongside us-tax-workflow-base v0.2 or later. It does not replace credentialed Oregon CPA or attorney sign-off and is not a substitute for direct consultation of current statutory text.
+```oa-check
+name: Oregon CAT filing versus payment decision
+inputs:
+  activity: 1200000
+  eligible_costs_a: 1000000
+  eligible_costs_b: 100000
+  tax_gate_a: 0
+  tax_gate_b: 1
+steps:
+  - sub_a: min(eligible_costs_a * 0.35, activity * 0.95)
+  - sub_b: min(eligible_costs_b * 0.35, activity * 0.95)
+  - taxable_a: activity - sub_a
+  - taxable_b: activity - sub_b
+  - tax_a: (250 + max(taxable_a - 1000000, 0) * 0.0057) * tax_gate_a
+  - tax_b: (250 + max(taxable_b - 1000000, 0) * 0.0057) * tax_gate_b
+expected:
+  taxable_a: 850000
+  taxable_b: 1165000
+  tax_a: 0
+  tax_b: 1190.5
+```
 
-Verified by: pending. Last updated: 2025-11-15. Version 0.1.
+## When to refuse or refer
+
+Refer disputed nexus, group composition or foreign elections, excluded-receipt classifications, construction/pharmacy/utility 2026 changes, special financial/insurance bases, material SaaS/user sourcing, mixed apportionment, short periods, mergers and successor collection. With incomplete receipts or labor records, do not “solve” tax with the revenue total alone. Claims for local Portland/Multnomah taxes or federal deductibility go to separate work, without unverified local rates or a guessed direct CAT credit.
+
+## Filing and payment
+
+Register/pay through Revenue Online where permitted, but **CAT returns cannot be filed in Revenue Online**. Use an approved e-file vendor or the correct paper return/address. Attach required affiliate/exclusion schedules and factor workpapers. Keep accepted filing separate from payment authorization and bank confirmation. The published instructions require whole-dollar return/schedule entries, with ordinary nearest-dollar rounding; examples here retain calculation precision before that reporting step. Refund claims generally use the later of three years from unextended return due date or two years after payment under the DOR FAQ, with special facts/limitations referred. An estimate overpayment alone is not a filed refund claim. For amended returns use the correct year's form/checkbox and full corrected schedules; do not amend only the net dollar difference. [DOR filing FAQ](https://www.oregon.gov/dor/programs/businesses/Pages/corporate-activity-tax.aspx); [OR-CAT pp.3-5,7-9](https://www.oregon.gov/dor/forms/FormsPubs/form-or-cat-instr_106-003-1_2025.pdf).
+
+For years beginning in 2024 onward a seven-month filing extension is available. A federal extension automatically qualifies without a separate CAT request; retain it. For Oregon-only extension, submit OR-EXT-CAT by the original due date. This is not an extension to pay, and an OR-CAT-V payment voucher is not an extension request. Pay through Revenue Online, approved ACH or the current voucher channel, allocating the payment to the correct CAT account/year. [DOR extension/payment FAQ](https://www.oregon.gov/dor/programs/businesses/Pages/corporate-activity-tax.aspx).
+
+Late registration can cost $100 per month up to $1,000 for the tax year, beginning no earlier than thirty days after the statutory threshold is crossed. Late payment generally adds 5% unpaid tax. In the 2025-2026 filing-cycle instructions, an extension-related exception requires a valid extension, at least 90% tax after credits paid by the original due date, timely filing within extension, full balance paid with filing and timely payment of the interest. A filing extension alone is insufficient. Failure to file more than three months after original/extended return due date can add 20%; an unheeded demand can add 25%; three consecutive nonfiling years can trigger 100%, with the FAQ's overall delinquency penalty limit. These are different triggers, not an automatic combined maximum of 25%. Interest uses the annually established rate and actual dates. The precise 2026 CAT interest-rate application is not inferred from the former erroneous “2025 8%” statement. [ORS 317A.131](https://www.oregonlegislature.gov/bills_laws/ors/ors317A.html); [DOR penalty FAQ](https://www.oregon.gov/dor/programs/businesses/Pages/corporate-activity-tax.aspx).
+
+Estimated underpayment has a separate 5% quarterly penalty under the published instructions, with applicable prior/current-year/annualized/seasonal alternatives and a documented reasonable good-faith effort exception. It is not a universal first-year grace period or the former 80% rule. Fraud/substantial understatement amounts and stacking cannot be copied from the prior unsupported paragraph; determine them under actual governing law/notices. [OR-CAT pp.5-6, Form OR-QUP-CAT instructions](https://www.oregon.gov/dor/forms/FormsPubs/form-or-cat-instr_106-003-1_2025.pdf).
+
+Keep receipts, invoices, source/exclusion support, cost and employee-cap records, accounting method, group lists, factors, returns and payment evidence as ORS 317A.134 requires. The prior specific six-year retention claim is unconfirmed; do not discard carryover, amendment, assessment or audit support merely because that period passed. A business sale/closure has separate successor liability/payment/notice rules under ORS 317A.146 and final-return facts. CAT's local-tax preemption has statutory exceptions; it does not mean all preexisting local income/license taxes disappear. [ORS 317A.134,146,158](https://www.oregonlegislature.gov/bills_laws/ors/ors317A.html).
+
+## Completion checklist
+
+- Decide included taxpayer, mandatory group and nexus with the statutory/DOR conflict recorded.
+- Reconcile pre-subtraction activity, exclusions and source evidence.
+- Test registration, filing and payment thresholds independently.
+- Separate eligible labor/COGS, owner payments, excluded costs, chosen factor method and cap.
+- Preserve all three former business scenarios with corrected arithmetic and assumptions.
+- Reconcile installments, extensions, return acceptance, payment and unresolved matters.
+
+## Sources
+
+| Official source / section read | URL | Read on |
+|---|---|---|
+| ORS chapter 317A, 2025 compilation with later-operative text and 2026 amendment notices, sections 100-158. Read for definitions/exclusions, group, accounting period, nexus, sourcing, subtraction/cap, distinct thresholds, records and successor rules. | https://www.oregonlegislature.gov/bills_laws/ors/ors317A.html | 2026-11-13 |
+| DOR Corporate Activity Tax page, threshold/nexus, receipts, unitary, labor, extension, payment, penalties and filing FAQ. Read for current administration, source conflicts, partner exclusion, seven-month extension, payment gate and return channel. | https://www.oregon.gov/dor/programs/businesses/Pages/corporate-activity-tax.aspx | 2026-11-13 |
+| DOR 2025 Form OR-CAT instructions, pp.2-9 and estimated-payment sections; 2025-2026 filing cycle. Read for general/substitute methods, eligible labor versus employer taxes, percentage rounding, short-year exception, line map and estimates. | https://www.oregon.gov/dor/forms/FormsPubs/form-or-cat-instr_106-003-1_2025.pdf | 2026-11-13 |
+
+Not yet confirmed: final 2026 CAT instructions/line map and complete 2026 amendment/effective-date audit, especially construction/pharmacy sunsets and utility paragraph versions; legislature 2026 amendment-table PDF returned access error, so no claim that these special exclusions continue or expire definitively in 2026; exact equality registration administration despite statutory over-$750,000 language; disputed statutory bright-line versus DOR economic-presence application; detailed SaaS/intangible reasonable-approximation hierarchy, residential-rent exclusions, damages/insurance/dividend/nondealer-asset classifications, timber/digital-advertising/marketplace special cases, historical enactment identifiers and constitutional-case claims; special insurer/financial/healthcare/agent/debt-discharge facts; mixed-group and substitute denominator details outside stated scenarios; complete 2026 CAT interest/fraud/substantial-understatement/stacking rules, numeric retention period, special first-year/prior-year estimate exceptions and notice-based relief. No old unsupported item is a usable default exemption or safe harbor.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-07-13. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `or-cat` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/or-cat. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-13. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `or-cat` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/or-cat. If neither is available, confirm every figure against the official source pages cited above before relying on it.
