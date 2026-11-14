@@ -76,6 +76,12 @@ class Hosts(unittest.TestCase):
             self.assertTrue(sc.check_source_hosts(path, table(["| Rates | https://www.ird.govt.nz/a | 2026-11-14 |"]), fm))
             self.assertEqual(sc.check_jurisdiction_body(path, "# Territory\n" + "ATO " * 9, fm), [])
 
+    def test_cook_islands_may_cite_new_zealand_dates(self):
+        path = str(REPO_ROOT / "skills/cook-islands/ck-company-registry-reporting.md")
+        fm = {"jurisdiction": "CK"}
+        self.assertEqual(sc.check_source_hosts(path, table(["| Holiday dates | https://www.govt.nz/a | 2026-11-14 |"]), fm), [])
+        self.assertTrue(sc.check_source_hosts(path, table(["| Rates | https://www.ato.gov.au/a | 2026-11-14 |"]), fm))
+
 
 class SourceEvidencePriority(unittest.TestCase):
     def rates(self, row):
