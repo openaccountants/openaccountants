@@ -1,10 +1,10 @@
 ---
 name: az-sales-tax
 description: Arizona transaction privilege tax (TPT), the state's sales tax, and use tax for 2026. TPT is a tax on the seller for the privilege of doing business, not a tax on the buyer. Covers the classifications and state rates (5.6% for retail, restaurants, prime contracting and most others, 5.5% transient lodging, 3.125% mining), county and city layers from the ADOR rate tables (for example 9.10% combined for retail in Phoenix), prime contracting on 65% of gross receipts against maintenance, repair, replacement or alteration work, the $100,000 remote seller and marketplace facilitator thresholds, licensing at $12 per location, the TPT-2 return due on the 20th, annual, quarterly and monthly filing bands, the June estimated payment, the 1% or 1.2% accounting credit and use tax. Trigger on "Arizona sales tax", "AZ TPT", "transaction privilege tax", "TPT-2", "Arizona use tax", "Arizona prime contracting", "MRRA", "Arizona economic nexus". Load us-sales-tax for the federal-level framework.
-version: "3.0"
+version: "3.1"
 jurisdiction: US-AZ
 tax_year: 2026
-last_updated: 2026-11-13
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: vat-gst
@@ -47,10 +47,10 @@ Out of scope, and where it goes:
 
 | Item | 2026 figure | Source |
 | --- | --- | --- |
-| State rate, retail, restaurant and bar, amusement, personal property rental, prime contracting, utilities, telecommunications, transporting, pipeline, private car line, publication, job printing | 5% | [A.R.S. 42-5010(A)(1)](https://www.azleg.gov/ars/42/05010.htm) |
-| Additional state increment on the same classifications (1 July 2021 to 30 June 2041) | 0.6% (state total 5.6%) | [A.R.S. 42-5010.01(A)](https://www.azleg.gov/ars/42/05010-01.htm) |
-| State rate, transient lodging and registered online lodging marketplaces | 5.5% | [A.R.S. 42-5010(A)(2)](https://www.azleg.gov/ars/42/05010.htm) |
-| State rate, mining | 3.125% (three and one-eighth percent) | [A.R.S. 42-5010(A)(3)](https://www.azleg.gov/ars/42/05010.htm) |
+| State rate, retail, restaurant and bar, amusement, personal property rental, prime contracting, utilities, telecommunications, transporting, pipeline, private car line, publication, job printing | Five percent | [A.R.S. 42-5010(A)(1)](https://www.azleg.gov/ars/42/05010.htm) |
+| Additional state increment on the same classifications (1 July 2021 to 30 June 2041) | Six-tenths of one percent (state total 5.6%, derived: five percent plus the increment) | [A.R.S. 42-5010.01(A)](https://www.azleg.gov/ars/42/05010-01.htm) |
+| State rate, transient lodging and registered online lodging marketplaces | Five and one-half percent | [A.R.S. 42-5010(A)(2)](https://www.azleg.gov/ars/42/05010.htm) |
+| State rate, mining | Three and one-eighth percent (3.125%, derived from the words) | [A.R.S. 42-5010(A)(3)](https://www.azleg.gov/ars/42/05010.htm) |
 | State rate, commercial lease | 0% (cities may still tax it) | [A.R.S. 42-5010(A)(4)](https://www.azleg.gov/ars/42/05010.htm) |
 | Combined state and county, retail (code 017): Maricopa | 6.30% | [ADOR rate tables, 1 Oct 2026, Table 1](https://azdor.gov/sites/default/files/document/TPT_RATETABLE_10012026.pdf) |
 | Combined state and county, retail: Pima | 6.10% | [ADOR rate tables, Table 1](https://azdor.gov/sites/default/files/document/TPT_RATETABLE_10012026.pdf) |
@@ -64,7 +64,7 @@ Out of scope, and where it goes:
 | Use tax on purchases (code 029), state | 5.60% in every county | [ADOR rate tables, Table 1](https://azdor.gov/sites/default/files/document/TPT_RATETABLE_10012026.pdf) |
 | City rate, Phoenix (region PX): retail, restaurants, prime contracting, rental of tangible personal property, hotels, use tax | 2.80% (retail single-item portion over $14,338: 2.00%; hotel additional tax 3.00%) | [ADOR rate tables, Table 2](https://azdor.gov/sites/default/files/document/TPT_RATETABLE_10012026.pdf) |
 | City rate, Tucson (region TU): retail, restaurants, prime contracting | 2.60% (hotels 9.00%) | [ADOR rate tables, Table 2](https://azdor.gov/sites/default/files/document/TPT_RATETABLE_10012026.pdf) |
-| Prime contracting tax base | 65% of gross proceeds or gross income, after the listed deductions | [A.R.S. 42-5075(B)](https://www.azleg.gov/ars/42/05075.htm) |
+| Prime contracting tax base | Sixty-five percent of gross proceeds or gross income, after the listed deductions | [A.R.S. 42-5075(B)](https://www.azleg.gov/ars/42/05075.htm) |
 | Remote seller threshold | Direct Arizona retail sales (not through a marketplace facilitator) over $100,000 in the previous or current calendar year | [A.R.S. 42-5044(A)(1)(c)](https://www.azleg.gov/ars/42/05044.htm) |
 | Marketplace facilitator threshold | Arizona retail sales, own and facilitated, over $100,000 | [A.R.S. 42-5044(A)(2)](https://www.azleg.gov/ars/42/05044.htm) |
 | Licence fee | $12 per location | [ADOR TPT page](https://azdor.gov/business/transaction-privilege-tax) |
@@ -72,7 +72,7 @@ Out of scope, and where it goes:
 | Due date | The 20th of the month after the period | [A.R.S. 42-5014(A)(1)](https://www.azleg.gov/ars/42/05014.htm) |
 | June estimated payment | Required if prior-year total TPT liability was $4,100,000 or more (2023 on); due 20 June | [A.R.S. 42-5014(D)](https://www.azleg.gov/ars/42/05014.htm) |
 | Electronic filing required | Prior-year total liability of $500 or more | [A.R.S. 42-5014(P)](https://www.azleg.gov/ars/42/05014.htm) |
-| Accounting credit (state tax only, timely paid) | Paper: 1% of tax, up to $10,000 a year; electronic: 1.2%, up to $12,000 a year | [A.R.S. 42-5017(A)](https://www.azleg.gov/ars/42/05017.htm) |
+| Accounting credit (state tax only, timely paid) | Paper: one percent of tax, up to ten thousand dollars a year; electronic: one and two-tenths percent, up to twelve thousand dollars a year | [A.R.S. 42-5017(A)](https://www.azleg.gov/ars/42/05017.htm) |
 
 ### Step 1: is the activity taxable, and in which classification?
 
