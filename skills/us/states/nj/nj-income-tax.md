@@ -1,7 +1,7 @@
 ---
 name: nj-income-tax
 description: New Jersey gross income tax for individuals, tax year 2026, on Form NJ-1040 (residents) and Form NJ-1040NR (nonresidents). Covers residency, the filing thresholds, income by category with no cross-category losses, Schedule NJ-BUS-1 business profit for sole proprietors and single-member LLCs, the retirement exclusions with the 150,000 dollar cliff, exemptions, the property tax deduction or credit, the 2026 rate schedules (1.4% to 10.75%), the credit for tax paid to other states, NJEITC and Child Tax Credit, estimated tax and extensions. Trigger on "New Jersey income tax", "NJ income tax", "NJ-1040", "NJ-1040NR", "NJ-BUS-1", "NJ Division of Taxation", "NJ property tax deduction", "NJ pension exclusion".
-version: "1.0"
+version: "1.1"
 jurisdiction: US-NJ
 tax_year: 2026
 last_updated: 2026-11-14
@@ -72,30 +72,32 @@ The figures below are 2026 figures where the 2026 NJ-1040-ES prints them, and 20
 
 Tax = taxable income (line 42) x rate, minus the subtraction amount for the band. The 2026 Form NJ-1040-ES prints the same two tables as the 2025 instructions.
 
+Rates are written as decimals, the way the NJ-1040-ES prints them (.014 = 1.4%). Tax = taxable income × rate − subtraction amount.
+
 **Table A: single, and married/civil union partner filing separately**
 
 | Taxable income over | But not over | Rate | Subtract | Source |
 | --- | --- | --- | --- | --- |
-| $0 | $20,000 | 1.4% | $0 | [2026 NJ-1040-ES, page 3](https://www.nj.gov/treasury/taxation/pdf/current/1040esi.pdf) |
-| $20,000 | $35,000 | 1.75% | $70.00 | same |
-| $35,000 | $40,000 | 3.5% | $682.50 | same |
-| $40,000 | $75,000 | 5.525% | $1,492.50 | same |
-| $75,000 | $500,000 | 6.37% | $2,126.25 | same |
-| $500,000 | $1,000,000 | 8.97% | $15,126.25 | same |
-| $1,000,000 | and over | 10.75% | $32,926.25 | same |
+| $0 | $20,000 | .014 | $0 | [2026 NJ-1040-ES, page 3](https://www.nj.gov/treasury/taxation/pdf/current/1040esi.pdf) |
+| $20,000 | $35,000 | .0175 | $70.00 | same |
+| $35,000 | $40,000 | .035 | $682.50 | same |
+| $40,000 | $75,000 | .05525 | $1,492.50 | same |
+| $75,000 | $500,000 | .0637 | $2,126.25 | same |
+| $500,000 | $1,000,000 | .0897 | $15,126.25 | same |
+| $1,000,000 | and over | .1075 | $32,926.25 | same |
 
 **Table B: married/civil union couple filing jointly, head of household, qualifying widow(er)/surviving civil union partner**
 
 | Taxable income over | But not over | Rate | Subtract | Source |
 | --- | --- | --- | --- | --- |
-| $0 | $20,000 | 1.4% | $0 | [2026 NJ-1040-ES, page 3](https://www.nj.gov/treasury/taxation/pdf/current/1040esi.pdf) |
-| $20,000 | $50,000 | 1.75% | $70.00 | same |
-| $50,000 | $70,000 | 2.45% | $420.00 | same |
-| $70,000 | $80,000 | 3.5% | $1,154.50 | same |
-| $80,000 | $150,000 | 5.525% | $2,775.00 | same |
-| $150,000 | $500,000 | 6.37% | $4,042.50 | same |
-| $500,000 | $1,000,000 | 8.97% | $17,042.50 | same |
-| $1,000,000 | and over | 10.75% | $34,842.50 | same |
+| $0 | $20,000 | .014 | $0 | [2026 NJ-1040-ES, page 3](https://www.nj.gov/treasury/taxation/pdf/current/1040esi.pdf) |
+| $20,000 | $50,000 | .0175 | $70.00 | same |
+| $50,000 | $70,000 | .0245 | $420.00 | same |
+| $70,000 | $80,000 | .035 | $1,154.50 | same |
+| $80,000 | $150,000 | .05525 | $2,775.00 | same |
+| $150,000 | $500,000 | .0637 | $4,042.50 | same |
+| $500,000 | $1,000,000 | .0897 | $17,042.50 | same |
+| $1,000,000 | and over | .1075 | $34,842.50 | same |
 
 #### Exemptions, 2025 and 2026 ([2026 NJ-1040-ES instructions](https://www.nj.gov/treasury/taxation/pdf/current/1040esi.pdf))
 
