@@ -1,22 +1,27 @@
 ---
 name: nj-income-tax
-description: Use this skill whenever asked about New Jersey individual income tax for self-employed / sole proprietors. Trigger on phrases like "New Jersey income tax", "NJ income tax", "Form NJ-1040", "NJ Division of Taxation", "NJ self-employment tax".
-version: "0.1"
+description: New Jersey gross income tax for individuals, tax year 2026, on Form NJ-1040 (residents) and Form NJ-1040NR (nonresidents). Covers residency, the filing thresholds, income by category with no cross-category losses, Schedule NJ-BUS-1 business profit for sole proprietors and single-member LLCs, the retirement exclusions with the 150,000 dollar cliff, exemptions, the property tax deduction or credit, the 2026 rate schedules (1.4% to 10.75%), the credit for tax paid to other states, NJEITC and Child Tax Credit, estimated tax and extensions. Trigger on "New Jersey income tax", "NJ income tax", "NJ-1040", "NJ-1040NR", "NJ-BUS-1", "NJ Division of Taxation", "NJ property tax deduction", "NJ pension exclusion".
+version: "1.0"
 jurisdiction: US-NJ
 tax_year: 2026
-last_updated: 2026-10-16
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
+type: computation
 ---
 
-# New Jersey gross income tax (Forms NJ-1040 and NJ-1040NR), including sole proprietors
+# New Jersey gross income tax (Forms NJ-1040 and NJ-1040NR), tax year 2026
 
-## Scope and who this is for ([2025 NJ-1040 instructions](https://www.nj.gov/treasury/taxation/pdf/current/1040i.pdf))
+> **Source-cited draft.** Built from the 2026 Form NJ-1040-ES instructions, the 2025 Form NJ-1040 and NJ-1040NR instructions, Worksheet GIT-DEP, GIT-3W, GIT-6, GIT-8, Form NJ-630 and the Division of Taxation's pages, read on 2026-11-14. No accountant has reviewed it. All outputs must be reviewed by a qualified tax professional before filing.
+
+**Answer first.** For 2026 New Jersey taxes income by category, not from federal AGI. Rates run from 1.4% to 10.75% (top band over USD 1,000,000), the same as 2025 ([2026 NJ-1040-ES instructions](https://www.nj.gov/treasury/taxation/pdf/current/1040esi.pdf)). There is no standard deduction: exemptions are USD 1,000 each for the taxpayer and spouse and USD 1,500 per dependent. A return is required when gross income is more than USD 10,000 (single or separate) or USD 20,000 (joint, head of household, qualifying widow(er)). A loss in one category never reduces another. The retirement exclusions stop entirely above USD 150,000 of income. Estimated tax is required when tax after withholding and credits will be more than USD 400. The 2026 return is due 15 April 2027.
+
+## Scope and who this is for
 
 This skill covers the New Jersey gross income tax for individuals: the resident return, **Form NJ-1040**, and the nonresident return, **Form NJ-1040NR**. The primary year is **tax year 2026** (returns filed in 2027). A dated section covers **2025 returns** (due 15 April 2026, or 15 October 2026 on a valid extension). It is written for employees, retirees, sole proprietors and owners of a single-member LLC disregarded for federal tax.
 
-The 2026 Form NJ-1040 instructions were not published when this skill was written (25 September 2026). The Division of Taxation's 2026 Form NJ-1040-ES ([2026 NJ-1040-ES instructions](https://www.nj.gov/treasury/taxation/pdf/current/1040esi.pdf)) prints the same rate schedules and exemption amounts as 2025, and says the retirement exclusions "only apply for taxpayers with income up to $150,000". Where a figure comes only from the 2025 instructions, it is labelled 2025.
+The 2026 Form NJ-1040 instructions were not published when this skill was checked (14 November 2026). The Division of Taxation's 2026 Form NJ-1040-ES ([2026 NJ-1040-ES instructions](https://www.nj.gov/treasury/taxation/pdf/current/1040esi.pdf)) prints the same rate schedules and exemption amounts as 2025, and says the retirement exclusions "only apply for taxpayers with income up to $150,000". Where a figure comes only from the 2025 instructions, it is labelled 2025.
 
 **Who is a resident** ([GIT-6, Part-Year Residents and Nonresidents](https://www.nj.gov/treasury/taxation/pdf/pubs/tgi-ee/git6.pdf)):
 
@@ -31,7 +36,7 @@ The 2026 Form NJ-1040 instructions were not published when this skill was writte
 
 ## Ask the client first
 
-- Which tax year? For 2026, rates and exemptions are unchanged from 2025; the 2026 Child Tax Credit table was not yet published.
+- Which tax year? For 2026, rates and exemptions are unchanged from 2025; the 2026 Child Tax Credit table was not yet published. For 2026, did the client sell qualified small business stock whose gain is excluded federally (a new New Jersey exclusion from 2026)?
 - Domicile, any New Jersey home, any home outside New Jersey, and days spent in New Jersey. Did the person move in or out during the year?
 - Filing status. It generally must match the federal status. A married couple who file jointly federally must file jointly in New Jersey.
 - Every income item, sorted by type: W-2 **box 16 state wages** (not box 1), interest, dividends, Schedule C profit or loss, sales of property, pensions and IRA withdrawals, partnership and S corporation shares (Schedules NJK-1 / NJ-K-1), rents, gambling, alimony received.
@@ -59,51 +64,53 @@ Form NJ-1040 line numbers are from the 2025 return ([2025 NJ-1040 instructions](
 10. **Payments and refundable credits (lines 55 to 65):** withholding, property tax credit, estimated and extension payments, NJEITC, excess UI/DI/FLI, Wounded Warrior Caregivers Credit, BAIT credit (line 63), Child and Dependent Care Credit, Child Tax Credit. Line 67 is tax due; line 68 is an overpayment.
 11. **Nonresidents (Form NJ-1040NR)** ([2025 NJ-1040NR instructions](https://www.nj.gov/treasury/taxation/pdf/current/1040nri.pdf)): report income from everywhere in column A and New Jersey-source income in column B. Compute taxable income and tax on column A, then multiply the tax by the income percentage (line 29 column B divided by line 29 column A, to four decimal places).
 
-## Rates, thresholds and figures by year
+### Rates, bands and thresholds
 
-### Tax rate schedules, 2025 and 2026 ([2026 NJ-1040-ES instructions](https://www.nj.gov/treasury/taxation/pdf/current/1040esi.pdf); [2025 NJ-1040 instructions](https://www.nj.gov/treasury/taxation/pdf/current/1040i.pdf))
+The figures below are 2026 figures where the 2026 NJ-1040-ES prints them, and 2025 figures (labelled; 2025-2026 filing cycle) where only the 2025 instructions print them.
+
+#### Tax rate schedules, 2025 and 2026 ([2026 NJ-1040-ES instructions](https://www.nj.gov/treasury/taxation/pdf/current/1040esi.pdf); [2025 NJ-1040 instructions](https://www.nj.gov/treasury/taxation/pdf/current/1040i.pdf))
 
 Tax = taxable income (line 42) x rate, minus the subtraction amount for the band. The 2026 Form NJ-1040-ES prints the same two tables as the 2025 instructions.
 
 **Table A: single, and married/civil union partner filing separately**
 
-| Taxable income over | But not over | Rate | Subtract |
-| --- | --- | --- | --- |
-| $0 | $20,000 | 1.4% | $0 |
-| $20,000 | $35,000 | 1.75% | $70.00 |
-| $35,000 | $40,000 | 3.5% | $682.50 |
-| $40,000 | $75,000 | 5.525% | $1,492.50 |
-| $75,000 | $500,000 | 6.37% | $2,126.25 |
-| $500,000 | $1,000,000 | 8.97% | $15,126.25 |
-| $1,000,000 | and over | 10.75% | $32,926.25 |
+| Taxable income over | But not over | Rate | Subtract | Source |
+| --- | --- | --- | --- | --- |
+| $0 | $20,000 | 1.4% | $0 | [2026 NJ-1040-ES, page 3](https://www.nj.gov/treasury/taxation/pdf/current/1040esi.pdf) |
+| $20,000 | $35,000 | 1.75% | $70.00 | same |
+| $35,000 | $40,000 | 3.5% | $682.50 | same |
+| $40,000 | $75,000 | 5.525% | $1,492.50 | same |
+| $75,000 | $500,000 | 6.37% | $2,126.25 | same |
+| $500,000 | $1,000,000 | 8.97% | $15,126.25 | same |
+| $1,000,000 | and over | 10.75% | $32,926.25 | same |
 
 **Table B: married/civil union couple filing jointly, head of household, qualifying widow(er)/surviving civil union partner**
 
-| Taxable income over | But not over | Rate | Subtract |
-| --- | --- | --- | --- |
-| $0 | $20,000 | 1.4% | $0 |
-| $20,000 | $50,000 | 1.75% | $70.00 |
-| $50,000 | $70,000 | 2.45% | $420.00 |
-| $70,000 | $80,000 | 3.5% | $1,154.50 |
-| $80,000 | $150,000 | 5.525% | $2,775.00 |
-| $150,000 | $500,000 | 6.37% | $4,042.50 |
-| $500,000 | $1,000,000 | 8.97% | $17,042.50 |
-| $1,000,000 | and over | 10.75% | $34,842.50 |
+| Taxable income over | But not over | Rate | Subtract | Source |
+| --- | --- | --- | --- | --- |
+| $0 | $20,000 | 1.4% | $0 | [2026 NJ-1040-ES, page 3](https://www.nj.gov/treasury/taxation/pdf/current/1040esi.pdf) |
+| $20,000 | $50,000 | 1.75% | $70.00 | same |
+| $50,000 | $70,000 | 2.45% | $420.00 | same |
+| $70,000 | $80,000 | 3.5% | $1,154.50 | same |
+| $80,000 | $150,000 | 5.525% | $2,775.00 | same |
+| $150,000 | $500,000 | 6.37% | $4,042.50 | same |
+| $500,000 | $1,000,000 | 8.97% | $17,042.50 | same |
+| $1,000,000 | and over | 10.75% | $34,842.50 | same |
 
-### Exemptions, 2025 and 2026 ([2026 NJ-1040-ES instructions](https://www.nj.gov/treasury/taxation/pdf/current/1040esi.pdf))
+#### Exemptions, 2025 and 2026 ([2026 NJ-1040-ES instructions](https://www.nj.gov/treasury/taxation/pdf/current/1040esi.pdf))
 
 New Jersey has no standard deduction. Exemptions are subtracted from New Jersey gross income.
 
-| Exemption | Amount | Condition |
-| --- | --- | --- |
-| Taxpayer; spouse or civil union partner if filing jointly; or a registered domestic partner | $1,000 each | Domestic partner only if registered in New Jersey by 31 December and not filing a New Jersey return |
-| Age 65 or older | $1,000 more each | Taxpayer and joint-filing spouse only, 65 or older on the last day of the year |
-| Blind or disabled | $1,000 more each | Taxpayer and joint-filing spouse only, on the last day of the year |
-| Veteran | $6,000 more each | Honorably discharged or released under honorable circumstances from active duty before the last day of the year; documentation needed the first time |
-| Each dependent | $1,500 | Must qualify as a dependent for federal purposes, with a valid SSN, ITIN or ATIN |
-| Dependent attending college | $1,000 more | Dependent under 22 on the last day of the year, full-time at an accredited school for some part of each of five calendar months, and the taxpayer paid at least half of tuition and maintenance |
+| Exemption | Amount | Condition | Source |
+| --- | --- | --- | --- |
+| Taxpayer; spouse or civil union partner if filing jointly; or a registered domestic partner | $1,000 each | Domestic partner only if registered in New Jersey by 31 December and not filing a New Jersey return | [2026 NJ-1040-ES, page 2](https://www.nj.gov/treasury/taxation/pdf/current/1040esi.pdf) |
+| Age 65 or older | $1,000 more each | Taxpayer and joint-filing spouse only, 65 or older on the last day of the year | same |
+| Blind or disabled | $1,000 more each | Taxpayer and joint-filing spouse only, on the last day of the year | same |
+| Veteran | $6,000 more each | Honorably discharged or released under honorable circumstances from active duty before the last day of the year; documentation needed the first time | same |
+| Each dependent | $1,500 | Must qualify as a dependent for federal purposes, with a valid SSN, ITIN or ATIN | same |
+| Dependent attending college | $1,000 more | Dependent under 22 on the last day of the year, full-time at an accredited school for some part of each of five calendar months, and the taxpayer paid at least half of tuition and maintenance | same |
 
-### Retirement income exclusions (2025; the same $150,000 limit for 2026) ([2025 NJ-1040 instructions](https://www.nj.gov/treasury/taxation/pdf/current/1040i.pdf))
+#### Retirement income exclusions (2025; the same $150,000 limit for 2026) ([2025 NJ-1040 instructions](https://www.nj.gov/treasury/taxation/pdf/current/1040i.pdf))
 
 Social Security, Railroad Retirement and U.S. military pensions are not taxable at all and are never entered. The exclusions below apply to taxable pensions, annuities and IRA withdrawals (line 20a) and, if unused, to other income.
 
@@ -121,14 +128,14 @@ Above $150,000 of line 27 there is no exclusion at all: this is a cliff, not a p
 
 **Special exclusion.** $6,000 (joint, head of household, qualifying widow(er)) or $3,000 (single, married filing separately) for someone who will **never** be able to receive Social Security or Railroad Retirement benefits because their employer did not take part in either programme. Do not claim it if either spouse will ever be eligible.
 
-### Deductions (2025) ([2025 NJ-1040 instructions](https://www.nj.gov/treasury/taxation/pdf/current/1040i.pdf))
+#### Deductions (2025) ([2025 NJ-1040 instructions](https://www.nj.gov/treasury/taxation/pdf/current/1040i.pdf))
 
 - **Medical expenses:** unreimbursed expenses above 2% of line 29, plus qualified Archer MSA contributions and the self-employed health insurance deduction ([Division exemptions and deductions page](https://www.nj.gov/treasury/taxation/njit13.shtml): the self-employed deduction cannot exceed earned income from the business under which the plan was set up; a child's cover counts only if the child is a dependent).
 - **Not deductible:** IRA and Keogh contributions, mortgage interest, employee business expenses, moving expenses ([Division exemptions and deductions page](https://www.nj.gov/treasury/taxation/njit13.shtml)).
 - **College affordability (only if gross income was $200,000 or less):** NJBEST contributions up to $10,000 (37a), NJCLASS loan payments up to $2,500 (37b), tuition at a New Jersey institution up to $10,000 (37c).
 - **Organ or bone marrow donation:** up to $10,000 of unreimbursed expenses (line 36).
 
-### Property tax deduction or credit (2025) ([2025 NJ-1040 instructions](https://www.nj.gov/treasury/taxation/pdf/current/1040i.pdf))
+#### Property tax deduction or credit (2025) ([2025 NJ-1040 instructions](https://www.nj.gov/treasury/taxation/pdf/current/1040i.pdf))
 
 - **Eligibility (all needed):** domiciled in New Jersey and kept a main home there, as owner or tenant; the main home was subject to property tax, paid directly or through rent; income on line 29 is **more than** the filing threshold (seniors 65 or older and blind or disabled people at or below it may claim the credit on Form NJ-1040-HW); in a rented multi-unit building, access to kitchen and bath facilities; if the home is a unit in a property the person owned, no more than four units and no more than one commercial unit.
 - **Not eligible:** a vacation or second home; a 100% disabled veteran exempt from property tax on the home; a homeowner paying PILOT (payments in lieu of tax); a tenant in a tax-exempt building.
@@ -137,7 +144,7 @@ Above $150,000 of line 27 there is no exclusion at all: this is a cliff, not a p
 - **Credit:** **$50** ($25 for those spouses), refundable, on line 56. Not allowed if the deduction is claimed or income is under the filing threshold.
 - **Which one:** take the deduction if it lowers tax by **$50 or more** ($25 for those spouses); otherwise take the credit (Worksheet H, or Worksheet I with Schedule NJ-COJ). Senior Freeze applicants may have to use their base-year amount.
 
-### New Jersey Earned Income Tax Credit and Child Tax Credit (2025; 2026 amounts not yet published) ([2025 NJ-1040 instructions](https://www.nj.gov/treasury/taxation/pdf/current/1040i.pdf); [Division Child Tax Credit page](https://www.nj.gov/treasury/taxation/individuals/childtaxcredit.shtml))
+#### New Jersey Earned Income Tax Credit and Child Tax Credit (2025; 2026 amounts not yet published) ([2025 NJ-1040 instructions](https://www.nj.gov/treasury/taxation/pdf/current/1040i.pdf); [Division Child Tax Credit page](https://www.nj.gov/treasury/taxation/individuals/childtaxcredit.shtml))
 
 - **NJEITC (line 58):** 40% of the federal earned income credit claimed **and allowed**. It can give a refund. Part-year residents prorate. A person with no qualifying child who was at least 18, met every federal EIC rule except the age rule and is not listed as someone else's dependent enters $260 (prorated for part-year residents). Married filing separately qualifies only with a qualifying child who lived with the taxpayer for more than half the year **and** living apart from the spouse for the last six months of the year.
 - **Child Tax Credit (line 65):** only if taxable income (line 42) is **$80,000 or less**, for each dependent **age 5 or younger** on the last day of the year. Not available when married filing separately. The taxpayer needs a valid SSN or ITIN and must be allowed to claim the child as a dependent for federal purposes. Part-year residents prorate by months.
@@ -150,9 +157,9 @@ Above $150,000 of line 27 there is no exclusion at all: this is a cliff, not a p
 | Over $50,000, not over $60,000 | $400 |
 | Over $60,000, not over $80,000 | $200 |
 
-The Division's page, updated 15 July 2026, still shows 2025 as the latest year; check it for 2026 amounts before filing a 2026 return.
+The Division's page, last updated 15 July 2026 and read on 14 November 2026, still shows tax year 2025 as the latest; check it for 2026 amounts before filing a 2026 return.
 
-### Where New Jersey differs from federal law ([2025 NJ-1040 instructions](https://www.nj.gov/treasury/taxation/pdf/current/1040i.pdf); [Worksheet GIT-DEP](https://www.nj.gov/treasury/taxation/pdf/current/gitdep.pdf))
+#### Where New Jersey differs from federal law ([2025 NJ-1040 instructions](https://www.nj.gov/treasury/taxation/pdf/current/1040i.pdf); [Worksheet GIT-DEP](https://www.nj.gov/treasury/taxation/pdf/current/gitdep.pdf))
 
 | Item | New Jersey treatment |
 | --- | --- |
@@ -163,6 +170,7 @@ The Division's page, updated 15 July 2026, still shows 2025 as the latest year; 
 | Self-employed health insurance | Deductible, as part of line 31 |
 | Self-employed 401(k) contributions | Deducted in Schedule NJ-BUS-1, up to the federal limits |
 | Social Security, Railroad Retirement | Not taxable |
+| Gain on qualified small business stock | From tax years beginning on or after 1 January 2026, gain from the sale or exchange of qualified small business stock that is also exempt from federal tax is not New Jersey gross income (P.L. 2025, c.67, [Division new laws page](https://www.nj.gov/treasury/taxation/newlegislation.shtml)). How it is reported on the 2026 return is not yet published |
 | Capital gains | Ordinary rates; losses only against gains in the same category, no carryover |
 | Net operating losses | No carryback or carryforward; only the Alternative Business Calculation Adjustment |
 | Section 179 | New Jersey maximum is **$25,000**; the federal reduced dollar limit applies using that $25,000; no business-income limit; unused amounts cannot be carried forward |
@@ -172,7 +180,7 @@ The Division's page, updated 15 July 2026, still shows 2025 as the latest year; 
 
 GIT-DEP names only the 30% and 50% federal allowances. For assets on which the full (100%) bonus depreciation was taken federally (as allowed again by P.L. 119-21), compute New Jersey depreciation without the bonus on Worksheet GIT-DEP and confirm the treatment with the Division before filing.
 
-### Credit for taxes paid to other jurisdictions (Schedule NJ-COJ) ([GIT-3W](https://www.nj.gov/treasury/taxation/pdf/pubs/tgi-ee/git3w.pdf); [2025 NJ-1040 instructions](https://www.nj.gov/treasury/taxation/pdf/current/1040i.pdf))
+#### Credit for taxes paid to other jurisdictions (Schedule NJ-COJ) ([GIT-3W](https://www.nj.gov/treasury/taxation/pdf/pubs/tgi-ee/git3w.pdf); [2025 NJ-1040 instructions](https://www.nj.gov/treasury/taxation/pdf/current/1040i.pdf))
 
 - Only for income taxed by both New Jersey and another U.S. state, its political subdivision or DC, in the same year. No credit for tax paid to the U.S. government, Puerto Rico or any other country or territory.
 - The income must be **properly** taxed there: for a nonresident, generally services performed in that jurisdiction, business carried on there, real or tangible property located there, and gambling there. Interest, dividends and securities gains are generally not properly taxed by another state unless they come from a business there.
@@ -199,17 +207,61 @@ GIT-DEP names only the 30% and 50% federal allowances. For assets on which the f
 | Tax for the year after withholding and credits exactly $400 | No estimated payments required: they are required only if tax is **more than** $400 | [2026 NJ-1040-ES instructions](https://www.nj.gov/treasury/taxation/pdf/current/1040esi.pdf) |
 | Paid less than 80% of the tax by 15 April, filed by 15 October | Extension denied retroactively; penalties and interest from 15 April | [Form NJ-630](https://www.nj.gov/treasury/taxation/pdf/current/630.pdf) |
 
-## Worked cases ([2026 NJ-1040-ES instructions](https://www.nj.gov/treasury/taxation/pdf/current/1040esi.pdf); [2025 NJ-1040 instructions](https://www.nj.gov/treasury/taxation/pdf/current/1040i.pdf))
+## Worked cases
+
+Rates from the [2026 NJ-1040-ES instructions](https://www.nj.gov/treasury/taxation/pdf/current/1040esi.pdf); method from the [2025 NJ-1040 instructions](https://www.nj.gov/treasury/taxation/pdf/current/1040i.pdf).
 
 Assumed facts, computed with the rate schedules. Below $100,000 of line 42 the return uses the Tax Table, which can differ by about $1; Cases 2 and 6 show both.
 
-**Case 1: single sole proprietor who rents, 2026.** Schedule C profit $130,000, no New Jersey adjustments; self-employed health insurance $8,000; one $1,000 exemption; rent paid on the main home $30,000; no withholding. Line 29: $130,000. Taxable income (line 39): $130,000 - $1,000 - $8,000 = $121,000. Property tax: 18% of $30,000 = $5,400. Worksheet H: with the deduction, taxable income is $115,600 and the tax is $115,600 x 6.37% - $2,126.25 = $5,237.47; without it, $121,000 x 6.37% - $2,126.25 = $5,581.45. The deduction saves $343.98, which is $50 or more, so take the deduction. **Tax: $5,237.47.** Estimated tax is required (more than $400); four equal installments of $1,309.37 are due 15 April, 15 June, 15 September 2026 and 15 January 2027.
+**Case 1, a decision: property tax deduction or credit? Single sole proprietor who rents, 2026.** Schedule C profit $130,000, no New Jersey adjustments; self-employed health insurance $8,000; one $1,000 exemption; rent paid on the main home $30,000; no withholding. Line 29: $130,000. Taxable income (line 39): $130,000 - $1,000 - $8,000 = $121,000. Property tax: 18% of $30,000 = $5,400. Worksheet H: with the deduction, taxable income is $115,600 and the tax is $115,600 x 6.37% - $2,126.25 = $5,237.47; without it, $121,000 x 6.37% - $2,126.25 = $5,581.45. The deduction saves $343.98, which is $50 or more, so take the deduction. **Tax: $5,237.47.** Estimated tax is required (more than $400); four equal installments of $1,309.37 are due 15 April, 15 June, 15 September 2026 and 15 January 2027.
+
+```oa-check
+name: NJ 2026 single, property tax deduction against the 50 dollar credit
+inputs:
+  taxable_income_line39: 121000
+  rent_paid: 30000
+steps:
+  - property_tax: rent_paid * 0.18
+  - deduction_used: min(property_tax, 15000)
+  - tax_with_deduction: (taxable_income_line39 - deduction_used) * 0.0637 - 2126.25
+  - tax_without: taxable_income_line39 * 0.0637 - 2126.25
+  - saving: tax_without - tax_with_deduction
+  - tax_if_credit: tax_without - 50
+  - installment: round(tax_with_deduction / 4, 2)
+expected:
+  property_tax: 5400.00
+  tax_with_deduction: 5237.47
+  tax_without: 5581.45
+  saving: 343.98
+  tax_if_credit: 5531.45
+  installment: 1309.37
+```
+
+The deduction leaves USD 5,237.47 of tax against USD 5,531.45 with the credit, so the deduction wins by USD 293.98. Had the saving been under USD 50, the USD 50 credit would have been taken instead.
 
 **Case 2: retired couple, 2025.** Married filing jointly, both 67. Pension $60,000 (line 20a), interest $30,000, dividends $20,000, Social Security (not entered). Line 27 = $110,000, in the $100,001 to $125,000 band. Pension exclusion: lesser of $60,000 and 50% of $60,000 = $30,000. Worksheet D: maximum 50% of $110,000 = $55,000; unused $25,000; no wages or business income, so line 28b is $25,000. Line 29 = $110,000 - $55,000 = $55,000. Exemptions: $1,000 x 2 plus $1,000 x 2 for age = $4,000. Taxable income $51,000 (no property tax benefit in this example). Table B: $51,000 x 2.45% - $420 = $829.50; the Tax Table (required below $100,000) gives **$830**.
 
 **Case 3: losses stay in their category, 2026.** Single. Wages (box 16) $70,000; Schedule C loss $20,000; stock gains $5,000 and stock losses $12,000; rental profit $6,000. Line 15: $70,000. Line 18: no entry (loss). Line 19: net loss of $7,000, so no entry, and it is not carried forward. Line 23: $6,000. **Line 27: $76,000.** The business loss can only help through Schedule NJ-BUS-2 (line 35).
 
 **Case 4: New York commuter, 2025.** Single New Jersey resident who works every day in a New York office. Wages $200,000 (all taxed by New York), bank interest $10,000; lives rent-free with family, so no property tax benefit. Line 29: $210,000. Taxable income: $209,000. Tax: $209,000 x 6.37% - $2,126.25 = $11,187.05. New York tax paid on the $200,000: $12,000 (assumed). Credit limit: $11,187.05 x ($200,000 / $210,000) = $10,654.33, which is less than $12,000, so the **credit is $10,654.33** and New Jersey tax after the credit is **$532.72**.
+
+```oa-check
+name: NJ resident working in New York, Schedule NJ-COJ credit (2025 and 2026 rates)
+inputs:
+  nj_gross_income: 210000
+  income_taxed_by_both: 200000
+  ny_tax_paid: 12000
+steps:
+  - taxable_income: nj_gross_income - 1000
+  - nj_tax: taxable_income * 0.0637 - 2126.25
+  - credit_limit: round(nj_tax * income_taxed_by_both / nj_gross_income, 2)
+  - credit: min(credit_limit, ny_tax_paid)
+  - nj_tax_after_credit: nj_tax - credit
+expected:
+  nj_tax: 11187.05
+  credit: 10654.33
+  nj_tax_after_credit: 532.72
+```
 
 **Case 5: section 179 over the New Jersey cap, 2026.** A sole proprietor buys $80,000 of equipment and deducts all of it under federal section 179. For New Jersey, only $25,000 is allowed as section 179; the other $55,000 becomes New Jersey depreciable basis, recovered through regular depreciation on Worksheet GIT-DEP. First-year New Jersey adjustment (added to Schedule NJ-BUS-1): $80,000 - $25,000 - first-year New Jersey depreciation on $55,000. Later years give subtractions, and a sale uses the New Jersey basis.
 
@@ -229,7 +281,11 @@ Assumed facts, computed with the rate schedules. Below $100,000 of line 42 the r
 - Trusts, estates, grantor trusts, inheritance tax, amended returns, Division notices, audits, penalty waivers and appeals.
 - Any request to hide income, invent expenses or claim a residency that the facts do not support.
 
-## Filing and payment ([2025 NJ-1040 instructions](https://www.nj.gov/treasury/taxation/pdf/current/1040i.pdf); [Form NJ-630](https://www.nj.gov/treasury/taxation/pdf/current/630.pdf); [GIT-8](https://www.nj.gov/treasury/taxation/pdf/pubs/tgi-ee/git8.pdf))
+## Filing and payment
+
+Sources: [2025 NJ-1040 instructions](https://www.nj.gov/treasury/taxation/pdf/current/1040i.pdf), [Form NJ-630](https://www.nj.gov/treasury/taxation/pdf/current/630.pdf), [GIT-8](https://www.nj.gov/treasury/taxation/pdf/pubs/tgi-ee/git8.pdf).
+
+**2026 returns.** Due 15 April 2027 for calendar-year filers (the return is due when the federal return is due). The extension and 80% rules below are expected to carry over; the 2026 instructions are not yet published.
 
 **2025 returns (dated section).**
 
@@ -251,7 +307,7 @@ Assumed facts, computed with the rate schedules. Below $100,000 of line 42 the r
 
 **Paying.** E-check or credit card online, or check with Form NJ-1040-V payable to "State of New Jersey – TGI". Refunds must generally be claimed within three years of the due date, including extensions.
 
-## Completion checklist ([2025 NJ-1040 instructions](https://www.nj.gov/treasury/taxation/pdf/current/1040i.pdf))
+## Completion checklist
 
 - [ ] Residency tested (domicile; 30-day exception; permanent home and more than 183 days) and the right form or forms chosen.
 - [ ] Each income item on its own category line; wages from W-2 box 16; no negative entries; no loss carried from another year or category.
@@ -263,5 +319,26 @@ Assumed facts, computed with the rate schedules. Below $100,000 of line 42 the r
 - [ ] Schedule NJ-COJ with the other state's return; New York amount taken from the IT-203 New York State Amount column.
 - [ ] NJEITC at 40% of the allowed federal EIC; Child Tax Credit only for children 5 or younger and taxable income of $80,000 or less.
 - [ ] BAIT share from Schedule NJ-BUS-1 on line 63, with Schedule PTE-K-1 or NJK-1 enclosed.
+- [ ] 2026 only: any federally excluded qualified small business stock gain left out of New Jersey income.
 - [ ] Use tax line 51 completed (0.00 if none) and health coverage questions answered.
 - [ ] Extension only with at least 80% paid by 15 April; 2026 estimates set up if the tax will be more than $400.
+
+## Sources
+
+| Source | URL | Read on |
+|---|---|---|
+| 2026 Form NJ-1040-ES instructions; read for Tables A and B, exemptions, deductions list, USD 400 test, installment dates, farmers, interest at prime plus 3% (all 5 pages) | https://www.nj.gov/treasury/taxation/pdf/current/1040esi.pdf | 2026-11-14 |
+| 2025 Form NJ-1040 instructions; read for filing thresholds, residency chart, extension and 80% rule, lines 15 to 68, retirement exclusions, property tax deduction and credit, NJEITC, Child Tax Credit, rounding | https://www.nj.gov/treasury/taxation/pdf/current/1040i.pdf | 2026-11-14 |
+| 2025 Form NJ-1040 (return lines); read for the figures cited from it | https://www.nj.gov/treasury/taxation/pdf/current/1040.pdf | 2026-11-14 |
+| 2025 Form NJ-1040NR instructions; read for columns A and B, income percentage | https://www.nj.gov/treasury/taxation/pdf/current/1040nri.pdf | 2026-11-14 |
+| Worksheet GIT-DEP (revised 10/25); read for section 179 USD 25,000, 30% and 50% bonus allowances | https://www.nj.gov/treasury/taxation/pdf/current/gitdep.pdf | 2026-11-14 |
+| GIT-6, Part-Year Residents and Nonresidents; read for domicile, 30-day and 183-day tests | https://www.nj.gov/treasury/taxation/pdf/pubs/tgi-ee/git6.pdf | 2026-11-14 |
+| GIT-3W, Credit for Taxes Paid to Other Jurisdictions; read for properly taxed income, New York and Pennsylvania | https://www.nj.gov/treasury/taxation/pdf/pubs/tgi-ee/git3w.pdf | 2026-11-14 |
+| GIT-8, Estimating Income Taxes; read for Form NJ-2210, 80% and 100% tests | https://www.nj.gov/treasury/taxation/pdf/pubs/tgi-ee/git8.pdf | 2026-11-14 |
+| Form NJ-630, extension application; read for the figures cited from it | https://www.nj.gov/treasury/taxation/pdf/current/630.pdf | 2026-11-14 |
+| Division Child Tax Credit page (last updated 07/15/26; shows tax year 2025); read for the figures cited from it | https://www.nj.gov/treasury/taxation/individuals/childtaxcredit.shtml | 2026-11-14 |
+| Division exemptions and deductions page; read for self-employed health insurance, items not deductible | https://www.nj.gov/treasury/taxation/njit13.shtml | 2026-11-14 |
+| Division penalties, interest and collection fees page (last updated 05/18/26); read for 5% a month up to 25%, USD 100 a month, 5% late payment, prime plus 3% | https://www.nj.gov/treasury/taxation/njit19.shtml | 2026-11-14 |
+| Division new laws page; read for P.L. 2025, c.67 small business stock exclusion from 2026 | https://www.nj.gov/treasury/taxation/newlegislation.shtml | 2026-11-14 |
+
+Not yet confirmed: the 2026 Form NJ-1040 and NJ-1040NR instructions, line numbers and tax table (not published on 2026-11-14; line numbers here are 2025); the 2026 Child Tax Credit amounts and the 2026 NJEITC rules (2025 figures shown, 2025-2026 filing cycle); how the 2026 small business stock exclusion is reported; New Jersey treatment of federal 100% bonus depreciation restored by P.L. 119-21 (GIT-DEP names only the 30% and 50% allowances); whether the P.L. 119-21 federal deductions for tips, overtime, car loan interest and seniors have any New Jersey effect (our reading is none, since New Jersey does not start from federal AGI or taxable income); the 2026 prime rate used for interest.

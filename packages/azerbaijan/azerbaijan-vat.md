@@ -1,17 +1,18 @@
 ---
 name: azerbaijan-vat
 description: 'Use this skill for 2026 Azerbaijan VAT working papers for ordinary domestic VAT taxpayers, importers, exporters and recipients of non-resident services. It covers compulsory and voluntary registration, the rolling and single-contract thresholds, 2026 POS turnover weighting, tax points, input credit and mixed-use allocation, monthly returns, reverse charge, cancellation and retained inventory. Trigger on Azerbaijan VAT, EDV, VAT deposit account, non-resident services, input VAT, mixed taxable and exempt supplies and VAT registration. It covers the separate registration and filing process for foreign B2C electronic sellers. Specialist agricultural margin, leasing and other special schemes need separate source checks. Checked against the law (tier 2); no accountant has signed it off.'
-version: 2.1
+version: 2.2
 jurisdiction: AZ
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: international
 tier: 2
 domain: vat-gst
+type: situation-rules
 ---
 
-# Azerbaijan Value Added Tax v2.1
+# Azerbaijan Value Added Tax v2.2
 
 > **Checked against the law.** Tax year 2026. Figures independently re-checked against the official sources on 31 October 2026. General reference for working papers; a qualified professional must review the facts and filing position. No accountant has signed this skill off.
 

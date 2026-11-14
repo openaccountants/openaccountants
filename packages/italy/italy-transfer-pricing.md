@@ -1,10 +1,10 @@
 ---
 name: italy-transfer-pricing
 description: Use this skill whenever asked about Italy transfer pricing rules, documentation requirements, or prezzi di trasferimento compliance. Trigger on phrases like "transfer pricing Italy", "Italian TP documentation", "prezzi di trasferimento", "master file Italy", "local file Italy", "penalty protection Italy", "CbCR Italy", "APA Italy", "Agenzia delle Entrate TP", or any question about intercompany pricing for Italian entities.
-version: 1.1
+version: 1.2
 jurisdiction: IT
 tax_year: 2026
-last_updated: 2026-10-29
+last_updated: 2026-11-14
 drafted_by: OpenAccountants
 approved_by: pending
 depends_on:
@@ -13,9 +13,10 @@ category: transfer-pricing
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: transfer-pricing
+type: situation-rules
 ---
 
-# Transfer pricing in Italy (prezzi di trasferimento) v1.1
+# Transfer pricing in Italy (prezzi di trasferimento) v1.2
 
 Tax year **2026**. This skill covers cross-border related-company pricing, optional documentation and penalty protection, country-by-country reporting (CbCR), low-value services and advance pricing agreements (APAs). It produces working papers for a qualified Italian tax adviser. It has no accountant attestation.
 
