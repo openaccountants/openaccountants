@@ -1,358 +1,187 @@
 ---
 name: tn-sales-tax
-description: "Use this skill whenever asked about Tennessee sales tax, Tennessee use tax, Tennessee sales tax nexus, Tennessee sales tax returns, Tennessee exemption certificates, taxability of goods or services in Tennessee, or any request involving Tennessee state-level consumption taxes. Trigger on phrases like \"Tennessee sales tax\", \"TN sales tax\", \"Tennessee use tax\", \"Tennessee nexus\", \"T.C.A. 67-6\", \"Tennessee DOR sales tax\", or any request involving Tennessee sales and use tax filing, classification, or compliance. NOTE: Tennessee has NO state income tax, making sales tax revenue critical. Tennessee has among the HIGHEST combined sales tax rates in the US (up to 9.75%). ALWAYS read the parent us-sales-tax skill first for federal context."
+description: "Apply Tennessee 2026 sales/use tax: 7% general, 4% qualifying food, local rates, single-article additional state tax, remote nexus, taxable software/digital products and exemptions. Covers TNTAP registration, filing, use tax and holiday decisions. Trigger on TN retail sales, consumer use or sales tax returns."
 jurisdiction: US-TN
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: 2026-11-13
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: vat-gst
+version: "1.1"
+type: situation-rules
 ---
 
-# TN Sales Tax
+# Tennessee sales and use tax, tax year 2026
 
-## Skill Metadata
+> **Source-cited draft.** Written by Codex. Not reviewed by an accountant. This skill supports a professional working paper; review the taxpayer facts and current forms before filing. Circular 230 section 10.37: this material is not a legal opinion or a substitute for reasonable factual and legal inquiry.
 
-**Skill Metadata**
+**Answer first.** Tennessee generally charges 7% state sales tax plus the applicable local tax. Qualifying food uses 4%; high-value single articles require an additional state tax as well as the local cap, so the ordinary combined rate alone can give the wrong answer.
 
-| Field | Value |
+## Scope and who this is for
+
+Tennessee retail sales and consumer use tax, including physical/remote sellers and marketplace reconciliation. This skill is source-cited and usable within the identified rules; the blocked 2026 sales manual leaves specific legacy topics unconfirmed below. Multi-state allocation belongs with `us-sales-tax`; entity and payroll obligations have separate Tennessee owners.
+
+## Ask the client first
+
+1. What goods, services, software delivery modes, agreements and exemption uses are involved?
+2. Where are the seller, inventory, workers, pickup and delivery locations; what physical presence exists?
+3. What Tennessee retail sales occurred in the previous 12 months, separating resale, exempt retail, direct and facilitated sales?
+4. What are the registered locations, assigned return frequency and actual current local rates?
+5. What certificates, marketplace collection evidence, out-of-state tax credits and prior returns/payments support the calculation?
+6. For a holiday purchase, what date, item price and personal versus business use apply?
+
+## The method, step by step
+
+### Rates, bands and thresholds
+
+| Item and conditions | Amount / treatment | Official source |
+| --- | --- | --- |
+| Ordinary retail sale / ordinary local maximum | 7% state; applicable local up to 2.75%; ordinary combined maximum 9.75% | [official text](https://revenue.support.tn.gov/hc/en-us/articles/360058139672-SUT-13-Sales-and-Use-Tax-Rates-Overview) |
+| Qualifying food and food ingredients | 4% state plus local; maximum 6.75% at 2.75% local | [official text](https://revenue.support.tn.gov/hc/en-us/articles/360058680751--SUT-53-Food-and-Food-Ingredients-Definition-and-Tax-Rate) |
+| Single independent article | 7% all price + local on first $1,600 + additional 2.75% state on next $1,600 (maximum $44 additional state) | [official text](https://revenue.support.tn.gov/hc/en-us/articles/360058138992-SUT-6-Single-Article-Tax-Overview-and-Application) |
+| Specified digital audio/video/books | 7% state plus fixed 2.5% local, without single-article limitation | [official text](https://revenue.support.tn.gov/hc/en-us/articles/360058688471-SUT-65-Specified-Digital-Products) |
+| Remote seller economic threshold | More than $100,000 Tennessee retail sales in previous 12 months; exempt retail included, resale excluded; no transaction-count test | [official text](https://revenue.support.tn.gov/hc/en-us/articles/360057680592-RS-3-How-to-Apply-Sales-Threshold) |
+| Marketplace facilitator threshold | Combine own and facilitated retail sales; more than $100,000 in previous 12 months | [official text](https://revenue.support.tn.gov/hc/en-us/articles/360058083371-MF-8-How-to-Calculate-100-000-Threshold) |
+| Annual personal-use holiday limits | Clothing/school and art supplies $100 or less each; computers $1,500 or less | [official text](https://revenue.support.tn.gov/hc/en-us/articles/360057399112-STH-2-Sales-Tax-Holiday-Qualifying-Items) |
+| Delinquency penalty | 5% per month or part, maximum 25%, minimum $15; interest additional | [official text](https://revenue.support.tn.gov/hc/en-us/articles/360057121372-GEN-16-Penalties-and-Interest) |
+
+### Establish nexus and register
+
+Physical presence (locations, inventory, employees or other activities) requires its own analysis. A remote seller exceeds the economic threshold only when Tennessee retail sales are **more than $100,000** during the previous 12 months, without a transaction-count alternative. Include exempt retail sales, exclude resale sales. The current threshold began October 1, 2020; the earlier October 2019 regime used a different threshold. Marketplace facilitators combine their own and facilitated sales. Reconcile marketplace collection separately; do not collect tax twice or assume facilitated sales discharge direct-sale obligations. Sources: [official text](https://revenue.support.tn.gov/hc/en-us/articles/360057680592-RS-3-How-to-Apply-Sales-Threshold), [official text](https://revenue.support.tn.gov/hc/en-us/articles/360058083371-MF-8-How-to-Calculate-100-000-Threshold).
+
+Register the sales/use account through **TNTAP**, choosing **Register a New Business** where applicable, and obtain the certificate before filing. Registration is free. Do not mistake the agency's registration test based on average monthly **gross sales** for a filing-frequency test based on monthly tax. Source: [official text](https://revenue.support.tn.gov/hc/en-us/articles/360058139252-SUT-10-Sales-and-Use-Tax-Account-Registering-for-an-Account).
+
+### Classify the transaction and source it
+
+Retail tangible goods, including ordinary clothing and footwear, are generally taxable. Food ingredients qualify for the reduced rate only under the food definition; prepared food, candy, supplements, alcohol and tobacco do not. Human prescription drugs can be exempt, **including an OTC product actually prescribed**; an ordinary unprescribed OTC purchase is taxable. Sources: [official text](https://revenue.support.tn.gov/hc/en-us/articles/360058139672-SUT-13-Sales-and-Use-Tax-Rates-Overview), [official text](https://revenue.support.tn.gov/hc/en-us/articles/360058680751--SUT-53-Food-and-Food-Ingredients-Definition-and-Tax-Rate), [official text](https://revenue.support.tn.gov/hc/en-us/articles/360058688011-SUT-125-Sales-of-Prescription-Drugs).
+
+Taxable services include repairs of tangible property/software, installation of property that remains tangible property, software installation, parking, laundry, telecommunications/video services and short lodging stays. Check the service-specific rule rather than applying a blanket tax to every service. Charges for delivery forming part of a taxable sale remain in the taxable price even if separately stated. Repair of property shipped into Tennessee and then shipped out has an interstate exception. General professional/personal services, real-property construction, waste handling and utilities need their specific definitions; do not treat this as a universal exemption list. Sources: [official text](https://revenue.support.tn.gov/hc/en-us/articles/360058683911-SUT-115-Services-Services-Subject-to-Sales-and-Use-Tax), [official text](https://revenue.support.tn.gov/hc/en-us/articles/360058176172-SUT-37-Repair-Services-on-Property-Shipped-into-Tennessee-for-Repair).
+
+Custom and prewritten software are taxable regardless of physical or electronic delivery. Remotely accessed software used in Tennessee is taxable, with specific exclusions for genuine data processing, payroll/payment processing, billing/collection and certain digital/Internet services. A prewritten module/application can be a single article, including remotely accessed software: apply the limitation to the **whole service agreement**, not afresh to every installment. Custom software does not receive that limit. Specified digital audio/video/books, including qualifying streaming products, use the fixed 2.5% local rate on the full taxable price, not the ordinary local single-article rule. Sources: [official text](https://revenue.support.tn.gov/hc/en-us/articles/360058683491-SUT-61-Computer-Software-Custom-Software), [official text](https://revenue.support.tn.gov/hc/en-us/articles/360057266092-RAS-1-Remotely-Accessed-Software-Overview), [official text](https://revenue.support.tn.gov/hc/en-us/articles/360058681571-SUT-57-Computer-Software-Single-Article-Tax-Application), [official text](https://revenue.support.tn.gov/hc/en-us/articles/360058688471-SUT-65-Specified-Digital-Products).
+
+For in-state sellers, the agency describes local sourcing to the business location; remote sellers shipping from outside Tennessee use the destination. Establish the actual location rate and any special sourcing before calculation. Do not label an illustrative city rate as a verified 2026 rate. Sources: [official text](https://revenue.support.tn.gov/hc/en-us/articles/360058174652-SUT-29-Online-Sales-by-In-State-Sellers), [official text](https://revenue.support.tn.gov/hc/en-us/articles/360058623411-SUT-30-Online-Sales-by-Out-of-State-Sellers).
+
+### Compute sales or use tax
+
+For an ordinary single independent article with price P and local rate L: **0.07 P + L x min (P,1,600) + 0.0275 x min (max (P - 1,600,0),1,600)**. The additional state tax is distinct from the general state tax and the local tax. Separate independent items do not become one article merely because they are sold in a set or bundle. The limit does not generally apply to services, admissions, warranty/service contracts, custom software or specified digital products. Source: [official text](https://revenue.support.tn.gov/hc/en-us/articles/360058138992-SUT-6-Single-Article-Tax-Overview-and-Application).
+
+Use tax applies to taxable use, storage or consumption where sufficient sales tax was not collected; the state/local single-article calculation also applies where appropriate. Reconcile seller-collected tax and any allowable other-state credit before paying, rather than assuming the same nominal rate means no use tax. Source: [official text](https://revenue.support.tn.gov/hc/en-us/articles/360057569011-CUT-3-Consumer-Use-Tax-Rate).
+
+### Exemption evidence and holiday
+
+Obtain the applicable resale, manufacturer, agricultural or governmental/nonprofit evidence, match the purchaser and actual use, and retain it with the transaction. Manufacturing requires the specific industrial-machinery qualification and authorization; energy/water treatment is conditional. Agriculture requires an eligible exemption certificate, not merely a buyer saying the goods will be used on a farm. The old unconditional 51%-use, all-manufacturing-utilities and unverified form-code claims are not a filing basis. Sources: [official text](https://revenue.support.tn.gov/hc/en-us/articles/360058700311-SUT-80-Industrial-Machinery-Exemption-for-Manufacturers), [official text](https://revenue.support.tn.gov/hc/en-us/articles/360058677991-SUT-91-Agricultural-Exemption-Overview).
+
+The annual holiday runs from 12:01 a.m. the last Friday in July through 11:59 p.m. Sunday. That calendar rule gives **July 31 to August 2, 2026**. Eligible personal-use clothing, school/art supplies and computers within the limits are exempt from state and local tax; purchases for a business do not qualify. Above-limit items are fully taxable, not just the excess. Sources: [official text](https://revenue.support.tn.gov/hc/en-us/articles/360057875471-STH-1-Date-of-Sales-Tax-Holiday), [official text](https://revenue.support.tn.gov/hc/en-us/articles/360057399112-STH-2-Sales-Tax-Holiday-Qualifying-Items), [official text](https://revenue.support.tn.gov/hc/en-us/articles/360057876891-STH-4-Sales-Tax-Holiday-Which-Merchants-Participate).
+
+## Boundary and exception table
+
+| Situation | Treatment |
 | --- | --- |
-| Jurisdiction | Tennessee, United States |
-| Jurisdiction Code | US-TN |
-| Tax Type | Sales and Use Tax |
-| State Tax Rate | 7% (standard); 4% on grocery food |
-| Maximum Combined Rate | 9.75% (7% state + 2.75% max local) |
-| Primary Legal Framework | Tennessee Code Annotated (T.C.A.) Title 67, Chapter 6 |
-| Governing Body | Tennessee Department of Revenue (TNDOR) |
-| Filing Portal | TNTAP (Tennessee Taxpayer Access Point) -- https://tntap.tn.gov |
-| Economic Nexus Effective Date | October 1, 2019 |
-| SST Member | Yes (associate member) |
-| No State Income Tax | Yes -- Tennessee has NO state income tax (Hall Tax on investment income was repealed effective Jan 1, 2021) |
-| Contributor | Open Accounting Skills Registry |
-| Validation Date | Pending |
-| Skill Version | 1.0 |
-| Confidence Coverage | Tier 1: rate lookups, basic nexus, standard taxability. Tier 2: single article cap, SaaS taxability, food rate distinctions. Tier 3: audit defense, penalty abatement, complex bundled transactions. |
-| Format | Restructured to Q1 execution format, April 2026 |
+| Industrial machinery / farm equipment | Confirm eligibility and current certificate; do not give a blanket exemption. |
+| Residential gas/electricity | The utility FAQ describes gas/propane/electricity taxation for **non-residential** use. The former full-rate residential statement is withdrawn; exact residential exemption and water treatment need the underlying rules. |
+| Human OTC drug prescribed | Can qualify for the prescription-drug exemption; ordinary unprescribed OTC remains taxable. |
+| Software and digital bundle | Identify prewritten versus custom software, genuine excluded services and specified digital products before applying any cap. |
+| Short rental / hotel / admission | Sales tax can apply; special occupancy levies, facilitator treatment and nonprofit-event exclusions require their own rule. Do not apply the equipment cap to the entire service invoice. |
+| Marketplace plus direct sales | Obtain facilitator collection evidence and separately reconcile direct sales and registration. |
+| No individual income tax | Sales/use, entity franchise/excise, gross-receipts business tax and employer UI can still apply; see `tn-corporate-tax` and `tn-payroll`. |
 
-## Confidence Tier Definitions
+Sources: [official text](https://revenue.support.tn.gov/hc/en-us/articles/360058700311-SUT-80-Industrial-Machinery-Exemption-for-Manufacturers), [official text](https://revenue.support.tn.gov/hc/en-us/articles/360058677991-SUT-91-Agricultural-Exemption-Overview), [official text](https://revenue.support.tn.gov/hc/en-us/articles/360058703911-SUT-137-Utilities-Water-Natural-Gas-Propane-and-Electricity), [official text](https://revenue.support.tn.gov/hc/en-us/articles/360058688011-SUT-125-Sales-of-Prescription-Drugs), [official text](https://revenue.support.tn.gov/hc/en-us/articles/360058138992-SUT-6-Single-Article-Tax-Overview-and-Application), [official text](https://revenue.support.tn.gov/hc/en-us/articles/360058683911-SUT-115-Services-Services-Subject-to-Sales-and-Use-Tax), [official text](https://revenue.support.tn.gov/hc/en-us/articles/360058083371-MF-8-How-to-Calculate-100-000-Threshold), [official text](https://revenue.support.tn.gov/hc/en-us/articles/360057595051-GEN-34-Income-Tax-Withholding).
 
-Every rule in this skill is tagged with a confidence tier:
+## Worked cases
 
-- **[T1] Tier 1 -- Deterministic.** Apply exactly as written. No reviewer judgement required.
-- **[T2] Tier 2 -- Reviewer Judgement Required.** Claude flags the issue and presents options. A licensed CPA, EA, or tax attorney must confirm before filing.
-- **[T3] Tier 3 -- Out of Scope / Escalate.** Do not guess. Escalate to a licensed tax professional.
+**Case 1.** At an assumed verified local rate of 2.75%, a $50,000 boat owes $3,500 general state + $44 local + $44 additional state = **$3,588**. The old $3,544 omitted the additional state tax. A $100,000 equipment article similarly owes **$7,088**, not $7,044. Ten separate $500 items owe **$487.50**, since each is below the article limits.
 
-## Step 0: Client Onboarding Questions
+```oa-check
+name: TN single article versus separate items
+inputs:
+  boat: 50000
+  equipment: 100000
+  item_price: 500
+  items: 10
+  local_rate: 0.0275
+steps:
+- boat_tax: boat*0.07 + min(boat,1600)*local_rate + min(max(boat-1600,0),1600)*0.0275
+- equipment_tax: equipment*0.07 + min(equipment,1600)*local_rate + min(max(equipment-1600,0),1600)*0.0275
+- separate_items_tax: items*item_price*(0.07+local_rate)
+expected:
+  boat_tax: 3588
+  equipment_tax: 7088
+  separate_items_tax: 487.5
+```
 
-Before proceeding with any Tennessee sales tax analysis, collect the following from the client: [T1]
+**Case 2, eligibility decision.** During the qualifying 2026 holiday, a personal-use $90 shirt qualifies, while $120 boots exceed the limit and are fully taxable. At an assumed 2.25% local rate, shirt tax is **$0**, boots tax **$11.10**. The same $90 shirt purchased for business owes **$8.325** before transaction rounding; this is not a holiday exemption.
 
-**If the client cannot answer questions 1-4, STOP and gather this information before proceeding.** [T1]
+```oa-check
+name: TN personal-use holiday eligibility branches
+inputs:
+  shirt: 90
+  boots: 120
+  shirt_exempt: 1
+  boots_exempt: 0
+  business_exempt: 0
+  rate: 0.0925
+steps:
+- shirt_tax: shirt*rate*(1-shirt_exempt)
+- boots_tax: boots*rate*(1-boots_exempt)
+- business_shirt_tax: shirt*rate*(1-business_exempt)
+expected:
+  shirt_tax: 0
+  boots_tax: 11.1
+  business_shirt_tax: 8.325
+```
 
-**Client Onboarding Questions**
+**Preserved former examples, with location rates treated as inputs:** $200 shoes at 7% + assumed 2.25% local produce $18.50 tax; $300 qualifying groceries at 4% + assumed 2.25% local produce $18.75. A $500 month-to-month taxable software agreement at the same local rate produces $46.25; an annual agreement paid monthly needs the article calculation on the whole agreement. A remote-only seller with $90,000 of relevant retail sales and 400 transactions does not exceed the economic test, assuming no physical presence; 400 transactions alone do not trigger it. A relocating business must consider sales/use, entity and business taxes and UI even though individual wage withholding is absent.
 
-| # | Question | Why It Matters |
+
+## When to refuse or refer
+
+Refer audit/assessment, voluntary disclosure, penalty abatement, ambiguous bundled software/services, industrial eligibility, multi-state nexus and unconfirmed legacy topics. Keep an unsupported exemption out of the final return until resolved.
+
+## Filing and payment
+
+File and pay electronically through [TNTAP](https://tntap.tn.gov/eservices/), selecting the correct sales/use account and period. Reconcile gross sales, exempt sales, state tax, local jurisdiction detail and business use purchases; save acceptance and payment confirmation. File required zero returns. Follow the **assigned** frequency: monthly returns are due the 20 th of the following month, quarterly returns the 20 th after quarter-end, and annual returns January 20; a weekend/holiday moves the due date to the next business day. Sources: [official text](https://revenue.support.tn.gov/hc/en-us/articles/360058589831-SUT-8-Sales-and-Use-Tax-Online-Filing), [official text](https://revenue.support.tn.gov/hc/en-us/articles/360058589911-SUT-9-Sales-and-Use-Tax-Filing-Filing-Due-Dates).
+
+The old automatic $400 monthly-tax quarterly threshold and denial of annual filing are not supported by these opened pages. The TACIR report says Tennessee no longer provides general vendor compensation apart from very limited exceptions; do **not** deduct the old generic 2%/$50 credit. That report is a verified **2025-2026 filing cycle** baseline; any special 2026 allowance requires confirmation. Source: [official text](https://www.tn.gov/content/dam/tn/tacir/2025publications/2025_VendorComp.pdf).
+
+Delinquency generally incurs 5% per month/part, maximum 25%, minimum $15, plus interest. Do not use the old approximate 7.25% interest rate: GEN 16's 11.50% statement applies only through June 30, 2026, so later-period interest remains unconfirmed. Fraud and collection assessments require separate authority and professional review. Source: [official text](https://revenue.support.tn.gov/hc/en-us/articles/360057121372-GEN-16-Penalties-and-Interest).
+
+## Completion checklist
+
+- Confirm nexus, registration, taxability, actual local rate and independent-article status.
+- Reconcile direct versus facilitator collection and consumer use tax.
+- Retain exemption support and accepted return/payment references.
+- Resolve listed gaps before using any omitted legacy rule.
+
+## Sources
+
+| Source | URL | Read on |
 | --- | --- | --- |
-| 1 | Do you have a Tennessee sales tax registration / tax ID? | Determines whether registration is needed before filing. |
-| 2 | What is your current filing frequency (monthly / quarterly / annually)? | Controls which return periods to prepare. |
-| 3 | What is your nexus type -- physical presence, economic nexus, or both? | Determines registration obligations and applicable rules. |
-| 4 | Are you a marketplace seller (selling through Amazon, Etsy, etc.)? | Marketplace facilitator may already be collecting on your behalf. |
-| 5 | What types of products or services do you sell in Tennessee? | Drives taxability classification under Tennessee law. |
-| 6 | Do you sell to exempt entities (government, nonprofits, resellers)? | Determines whether exemption certificates must be collected and retained. |
-| 7 | Do you have locations, employees, or inventory in Tennessee? | Physical presence creates nexus independent of economic thresholds. |
-| 8 | Do you sell into multiple Tennessee local jurisdictions? | Local tax rates vary; determines compliance complexity. |
-
-## Step 1: Tax Rate Structure
-
-### 1.1 State Rate
-
-- **State sales tax rate** — 7% percent (retail sale of tangible personal property and certain services; one of the highest state-level sales tax rates in the US)  _(T.C.A. Section 67-6-202)_
-
-### 1.2 Reduced Rate on Grocery Food
-
-- **Reduced rate on grocery food effective Jan 1, 2024** — State rate on food and food ingredients reduced to 4% effective January 1, 2024 (down from 5%); local taxes still apply to food  _(T.C.A. Section 67-6-228)_
-
-### 1.3 Local Rates
-
-**Local Rates**
-
-| Tax Component | Rate Range | Authority |
-| --- | --- | --- |
-| State tax (general) | 7.0% | T.C.A. Section 67-6-202 |
-| State tax (grocery food) | 4.0% | T.C.A. Section 67-6-228 |
-| Local option tax (county) | 1.5% -- 2.75% | T.C.A. Section 67-6-702 |
-| **Maximum combined (general)** | **9.75%** |  |
-| **Maximum combined (grocery)** | **6.75%** |  |
-
-**Tennessee has among the highest combined sales tax rates in the United States.** Some jurisdictions reach the 9.75% maximum. [T1]
-
-### 1.4 Single Article Cap on Local Tax [T1]
-
-- **Single article cap on local tax** — Tennessee caps the local sales tax on a single article (single item) at $1,600. Local tax applies only to the first $1,600 of the sales price of a single article. The state 7% tax applies to the full price (no cap). The cap applies per individual item, not per transaction.  _(T.C.A. Section 67-6-702(a))_
-
-**Example:** A $50,000 boat -- state tax: $50,000 x 7% = $3,500 (no cap). Local tax: $1,600 x 2.75% (max) = $44 (capped at local tax on $1,600 only).
-
-### 1.5 Sourcing Rules [T1]
-
-- **Sourcing rules** — Tennessee is generally an origin-based sourcing state for intrastate sales. Intrastate over-the-counter: seller's location. Intrastate shipped: origin-based (seller's location). Interstate (remote sellers): destination-based.
-
-## Step 2: Transaction Classification Rules
-
-### 2.1 General Rule
-
-- **General taxability rule** — Tennessee sales tax applies to the retail sale of tangible personal property and certain enumerated services.  _(T.C.A. Section 67-6-201)_
-
-### 2.2 Taxability Matrix
-
-**Taxability Matrix**
-
-| Item Category | Taxable? | Rate | Authority | Tier |
-| --- | --- | --- | --- | --- |
-| General tangible personal property | Yes | 7% state + local | T.C.A. Section 67-6-202 | [T1] |
-| Grocery food (food for home consumption) | Yes (reduced rate) | **4% state + local** | T.C.A. Section 67-6-228 | [T1] |
-| Prepared food (restaurant meals) | Yes | 7% state + local | T.C.A. Section 67-6-102(31)(F) | [T1] |
-| Clothing and footwear | Yes | Full rate | No exemption | [T1] |
-| Prescription drugs | Exempt | 0% | T.C.A. Section 67-6-314(a)(1) | [T1] |
-| Over-the-counter drugs | Yes | Full rate | Not exempt | [T1] |
-| Durable medical equipment | Exempt (certain items with prescription) | 0% | T.C.A. Section 67-6-314 | [T1] |
-| Motor vehicles | Yes | 7% state + local (single article cap on local) | T.C.A. Section 67-6-202 | [T1] |
-| Gasoline and motor fuel | Exempt from sales tax (motor fuel tax) | N/A | T.C.A. Section 67-6-329 | [T1] |
-| Utilities (residential electricity) | Yes | Full rate | T.C.A. Section 67-6-202 | [T1] |
-| Utilities (natural gas, residential) | Yes | Full rate | T.C.A. Section 67-6-202 | [T1] |
-| Industrial machinery (direct use in manufacturing) | Exempt | 0% | T.C.A. Section 67-6-206 | [T2] |
-| Agricultural equipment and supplies | Exempt | 0% | T.C.A. Section 67-6-207 | [T1] |
-| Software -- canned (tangible medium) | Yes | Full rate | T.C.A. Section 67-6-102(44) | [T1] |
-| Software -- canned (electronic delivery) | Yes | Full rate | T.C.A. Section 67-6-231 | [T1] |
-| Software -- custom | Yes | Full rate | T.C.A. Section 67-6-231 | [T2] |
-| SaaS (Software as a Service) | **Taxable** | Full rate | T.C.A. Section 67-6-231; TNDOR guidance | [T2] |
-| Digital goods (e-books, music, video) | Yes | Full rate | T.C.A. Section 67-6-231 | [T1] |
-| Data processing services | Not taxable | 0% | Not enumerated | [T2] |
-| Extended warranties/service contracts | Yes | Full rate | T.C.A. Section 67-6-102(44) | [T1] |
-
-### 2.3 SaaS Taxability -- Tennessee Position [T2]
-
-- **SaaS taxability position** — Tennessee taxes SaaS and digital products broadly. Tennessee enacted specific legislation (effective July 1, 2015) taxing "specified digital products" and "software access services" (which includes SaaS). Specified digital products include digital audio works, digital audiovisual works, digital books, and any other electronically transferred product. Software access services (SaaS) are defined as the right to access and use software where the end user does not receive a copy. This is explicitly taxable.  _(T.C.A. Section 67-6-231; T.C.A. Section 67-6-102(89))_
-
-### 2.4 Services Taxability [T2]
-
-**Services Taxability**
-
-| Service | Taxable? | Authority |
-| --- | --- | --- |
-| Repair and installation of TPP (labor + parts) | Yes | T.C.A. Section 67-6-102(44) |
-| Telecommunications | Yes | T.C.A. Section 67-6-102(44)(C) |
-| Cable/satellite TV | Yes | T.C.A. Section 67-6-226 |
-| Parking (commercial) | Yes | T.C.A. Section 67-6-212 |
-| Amusement and recreation | Yes (admissions) | T.C.A. Section 67-6-212 |
-| Hotel/lodging | Yes (plus local hotel/motel tax) | T.C.A. Section 67-6-202 |
-| Professional services (legal, accounting) | No | Not enumerated |
-| Personal services (haircuts, spa) | No | Not enumerated |
-| Construction/real property | No (materials taxable at purchase) | DOR guidance |
-| Transportation/freight (separately stated) | Not taxable | T.C.A. Section 67-6-102(44) |
-
-## Step 3: Return Form Structure
-
-### 3.1 Registration
-
-- **Registration requirement** — All sellers with nexus must register through TNTAP for a sales and use tax certificate of registration. No fee for registration.  _(T.C.A. Section 67-6-601)_
-
-### 3.2 Filing Frequency
-
-**Filing Frequency**
-
-| Monthly Tax Liability | Filing Frequency | Due Date |
-| --- | --- | --- |
-| Over $400 per month | Monthly | 20th of the following month |
-| Under $400 per month | Quarterly | 20th of month following quarter-end |
-
-**Note:** TNDOR assigns frequency at registration. Annual filing is not generally available for sales tax. [T1]
-
-### 3.3 Returns and Payment
-
-- **Returns and payment requirements** — Form SLS 450 (Sales and Use Tax Return) is filed through TNTAP. Electronic filing is required for all registrants. Payment is due on the same date as the return. Both state and local taxes are reported on the same return.
-
-### 3.4 Vendor Discount
-
-- **Vendor discount for timely filing** — 2% of the first $2,500 of tax due per return period. Maximum discount: $50 per return period. Available only for timely filing and payment.  _(T.C.A. Section 67-6-508)_
-
-### 3.5 Penalties and Interest
-
-**Penalties and Interest**
-
-| Violation | Penalty | Authority |
-| --- | --- | --- |
-| Late filing | 5% per month, up to 25% | T.C.A. Section 67-1-804 |
-| Late payment | Same as late filing | T.C.A. Section 67-1-804 |
-| Failure to file | Estimated assessment + penalties | T.C.A. Section 67-1-1501 |
-| Fraud | 50% of deficiency | T.C.A. Section 67-1-804 |
-| Interest | Statutory rate (currently ~7.25%) | T.C.A. Section 67-1-801 |
-
-## Step 4: Deductibility / Exemptions
-
-### 5.1 Tennessee Exemption Certificates
-
-**Tennessee Exemption Certificates**
-
-| Certificate | Use Case | Authority |
-| --- | --- | --- |
-| **Form ST-14** (Certificate of Resale) | Purchases for resale | TNDOR |
-| **Form F-13** (Sales Tax Exemption -- Industrial Machinery) | Manufacturing equipment | T.C.A. Section 67-6-206 |
-| **Form ST-18** (Agricultural Exemption Certificate) | Farm equipment and supplies | T.C.A. Section 67-6-207 |
-| **SSTCE** (Streamlined certificate) | Multi-state purchases | SST Agreement |
-| **Government exemption letter** | Government entity purchases | T.C.A. Section 67-6-320 |
-
-### 5.2 Requirements [T1]
-
-- **Valid exemption certificate requirements** — Valid certificates must include purchaser information, Tennessee registration number (for resale), reason for exemption, description of goods, signature, and date.
-
-### 5.3 Good Faith and Retention [T2]
-
-- **Good faith and retention rule** — Good faith acceptance protects sellers. Certificates must be retained for 3 years from the date of the last transaction.
-
-### 6.1 When Use Tax Applies
-
-- **When use tax applies** — Tennessee use tax applies when sales tax was not collected on items used, stored, or consumed in Tennessee.
-
-### 6.2 Use Tax Rate
-
-- **Use tax rate** — The use tax rate equals the sales tax rate: 7% state + applicable local. The single article cap applies to local use tax as well.
-
-### 6.3 Use Tax Reporting
-
-- **Use tax reporting** — Businesses: Report on Form SLS 450. Individuals: Report on Tennessee Consumer Use Tax Return (or via optional reporting on any state filing).
-
-## Step 5: Key Thresholds
-
-### 4.1 Physical Nexus
-
-- **Physical nexus** — Standard physical nexus principles apply.
-
-### 4.2 Economic Nexus [T1]
-
-Tennessee enacted economic nexus effective **October 1, 2019**.
-
-**Economic Nexus Thresholds**  _(T.C.A. Section 67-6-524)_
-
-| Threshold | Value | Measurement Period |
-| --- | --- | --- |
-| Revenue | **$100,000** in sales into Tennessee | Previous 12 months |
-| Transactions | N/A (revenue only) |  |
-| Test | Revenue only |  |
-
-### 4.3 Marketplace Facilitator Rules [T1]
-
-- **Marketplace facilitator rules effective October 1, 2020** — Marketplace facilitators meeting the nexus threshold must collect and remit. Marketplace sellers relieved for facilitated sales.  _(T.C.A. Section 67-6-102(24)(C))_
-
-## Step 6: Filing Deadlines and Penalties
-
-Refer to Step 3 for filing frequencies and due dates. [T1]
-
-## PROHIBITIONS
-
-1. **NEVER** advise that grocery food is exempt in Tennessee (it is taxable at a reduced 4% state rate + local). [T1]
-2. **NEVER** advise that SaaS or digital goods are not taxable in Tennessee (both are explicitly taxable). [T1]
-3. **NEVER** ignore the single article cap on local tax when calculating tax on items over $1,600. [T1]
-4. **NEVER** use a transaction-count threshold for Tennessee economic nexus (revenue only, $100K). [T1]
-5. **NEVER** state that Tennessee has a state income tax (it does not, since Jan 1, 2021). [T1]
-6. **NEVER** apply the reduced food rate to prepared food or restaurant meals (those are taxed at the full 7% rate). [T1]
-7. **NEVER** forget to apply local taxes in Tennessee -- local rates can add up to 2.75% to the state rate. [T1]
-8. **NEVER** assume origin-based sourcing applies to remote/interstate sales (destination-based applies for remote sellers). [T1]
-9. **NEVER** cap the state tax at $1,600 -- only the LOCAL tax has the single article cap. [T1]
-10. **NEVER** advise that Tennessee offers a generous vendor discount -- the maximum is $50 per period. [T1]
-
-## Edge Case Registry
-
-### 7.1 Single Article Cap Application [T1]
-
-- **Single article cap application scenarios** — The single article cap on local tax ($1,600) creates interesting scenarios: High-value items: A $100,000 piece of equipment pays 7% state tax ($7,000) on the full price, but local tax only on $1,600 (e.g., at 2.75% = $44 local). Total: $7,044. Multiple items: Each item in a transaction is evaluated separately. A purchase of 10 items at $500 each: local tax applies to the full $500 per item (since each is under $1,600). Bundled items: If items are sold as a unit, the bundle is treated as one article. [T2]
-
-### 7.2 No State Income Tax Impact [T1]
-
-- **No state income tax impact** — Tennessee has no state income tax (the Hall Tax on interest and dividends was fully repealed effective January 1, 2021). Sales tax is a critical revenue source for the state. Tennessee has less incentive to reduce sales tax rates. The high combined rate (up to 9.75%) partially compensates for no income tax. Businesses relocating to Tennessee for income tax savings must budget for higher sales tax costs. [T2]
-
-### 7.3 Manufacturing Exemptions [T2]
-
-- **Manufacturing exemptions** — Tennessee provides a broad manufacturing exemption: Machinery used directly and primarily in manufacturing is exempt. [T2] Raw materials incorporated into finished products are exempt. [T1] The "directly and primarily" test requires that the machinery's primary purpose be manufacturing (51%+ of use). [T2] Energy fuel and water used in manufacturing are exempt. [T2]  _(T.C.A. Section 67-6-206)_
-
-### 7.4 Sales Tax Holiday [T1]
-
-- **Sales tax holiday** — Tennessee holds an annual sales tax holiday (typically late July/early August): Clothing ($100 or less per item): exempt from state and local tax. School supplies ($100 or less per item): exempt. Computers ($1,500 or less): exempt. Specific dates and items vary annually -- verify with TNDOR each year.
-
-### 7.5 Short-Term Rental Tax [T2]
-
-- **Short-term rental tax rules** — Short-term rentals (less than 90 consecutive days) are subject to: State sales tax (7%). Local sales tax. Additional state and local occupancy taxes. [T2] Marketplace facilitators (Airbnb, VRBO) collect and remit.
-
-### 7.6 Amusement Tax / Admissions [T1]
-
-- **Amusement tax / admissions rules** — Admissions to amusement, sports, and entertainment events are taxable: State rate of 7% applies. Local rates apply. Nonprofit exempt events may be excluded with proper documentation. [T2]
-
-### 7.7 Waste Collection Services [T2]
-
-- **Waste collection services taxability** — Tennessee taxes certain waste collection and disposal services: Commercial waste collection: taxable. [T2] Residential waste collection: may be exempt in some circumstances. [T2]
-
-## Test Suite
-
-### Test 1: Basic Rate Calculation [T1]
-
-**Question:** A retailer in Nashville (2.25% local) sells a $200 pair of shoes. What is the total sales tax?
-
-**Expected Answer:** State: $200 x 7% = $14.00. Local: $200 x 2.25% = $4.50. Total: $18.50.
-
-### Test 2: Grocery Food Rate [T1]
-
-**Question:** A consumer buys $300 in groceries in Memphis (2.25% local). What tax is due?
-
-**Expected Answer:** State: $300 x 4% = $12.00. Local: $300 x 2.25% = $6.75. Total: $18.75.
-
-### Test 3: Single Article Cap [T1]
-
-**Question:** A customer buys a $50,000 boat in a county with 2.75% local tax. What is the total sales tax?
-
-**Expected Answer:** State: $50,000 x 7% = $3,500 (no cap). Local: $1,600 x 2.75% = $44 (capped). Total: $3,544.
-
-### Test 4: SaaS Taxability [T2]
-
-**Question:** A Tennessee business subscribes to a $500/month SaaS CRM tool. Is Tennessee sales tax due?
-
-**Expected Answer:** Yes. Tennessee explicitly taxes SaaS. At Nashville's rate: $500 x 9.25% = $46.25/month.
-
-### Test 5: Economic Nexus [T1]
-
-**Question:** An out-of-state seller made $90,000 in sales and 400 transactions in Tennessee. Does the seller have nexus?
-
-**Expected Answer:** No. Tennessee's economic nexus is revenue-only at $100,000. The seller is below the threshold. Transaction count is not relevant.
-
-### Test 6: No Income Tax Context [T1]
-
-**Question:** A company considering relocating from New York to Tennessee asks about the overall tax burden. What should be highlighted about sales tax?
-
-**Expected Answer:** Tennessee has no state income tax, but it has one of the highest combined sales tax rates (up to 9.75%). The 7% state rate is among the highest in the US. Businesses must factor in higher sales tax costs on purchases to offset income tax savings.
-
-### Test 7: Sales Tax Holiday [T1]
-
-**Question:** During Tennessee's sales tax holiday, a customer buys a $90 shirt and a $120 pair of boots. Which qualify?
-
-**Expected Answer:** The $90 shirt qualifies ($100 or less) and is exempt. The $120 boots do NOT qualify (exceeds $100 threshold) and are fully taxable.
-
-## Reviewer Escalation Protocol
-
-**Reviewer Escalation Protocol**
-
-| Trigger | Action |
-| --- | --- |
-| Any [T3] tagged item encountered | STOP. Do not guess. Escalate to licensed CPA, EA, or tax attorney. |
-| Client has audit notice or assessment | Escalate immediately. Do not advise on audit response. |
-| Multi-state nexus question involving 3+ states | Flag for senior reviewer with multi-state experience. |
-| Penalty abatement or voluntary disclosure | Escalate to licensed professional with state-specific experience. |
-| Ambiguous taxability of a product/service | Present both interpretations to reviewer with supporting authority. |
-
-## Contribution Notes
-
-- This skill follows the Q1 execution format (Step 0 through Step 7).
-- All rules are tagged [T1], [T2], or [T3] per the Confidence Tier Definitions.
-- Rate tables are deterministic lookup tables -- no narrative explanation of rates.
-- To update this skill, submit a pull request with the specific section, supporting statutory authority, and effective date of the change.
-- All changes require validation by a US CPA or EA before merging.
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
+| DOR SUT 13. Read for general and local maximum rates. | https://revenue.support.tn.gov/hc/en-us/articles/360058139672-SUT-13-Sales-and-Use-Tax-Rates-Overview | 2026-11-13 |
+| DOR SUT 6. Read for single-article formula, additional state tax, independent units and exceptions. | https://revenue.support.tn.gov/hc/en-us/articles/360058138992-SUT-6-Single-Article-Tax-Overview-and-Application | 2026-11-13 |
+| DOR SUT 53. Read for food definition and 4% rate. | https://revenue.support.tn.gov/hc/en-us/articles/360058680751--SUT-53-Food-and-Food-Ingredients-Definition-and-Tax-Rate | 2026-11-13 |
+| DOR CUT 3. Read for consumer use and single-article state/local treatment. | https://revenue.support.tn.gov/hc/en-us/articles/360057569011-CUT-3-Consumer-Use-Tax-Rate | 2026-11-13 |
+| DOR RS 3. Read for strictly more than $100,000, rolling 12 months and included/excluded sales. | https://revenue.support.tn.gov/hc/en-us/articles/360057680592-RS-3-How-to-Apply-Sales-Threshold | 2026-11-13 |
+| DOR MF 8. Read for combined facilitator sales measurement. | https://revenue.support.tn.gov/hc/en-us/articles/360058083371-MF-8-How-to-Calculate-100-000-Threshold | 2026-11-13 |
+| DOR SUT 10. Read for TNTAP registration, free certificate and distinction from filing frequency. | https://revenue.support.tn.gov/hc/en-us/articles/360058139252-SUT-10-Sales-and-Use-Tax-Account-Registering-for-an-Account | 2026-11-13 |
+| DOR SUT 29/30. Read for local sourcing for in-state sellers. | https://revenue.support.tn.gov/hc/en-us/articles/360058174652-SUT-29-Online-Sales-by-In-State-Sellers | 2026-11-13 |
+| DOR SUT 30. Read for destination for out-of-state shipment. | https://revenue.support.tn.gov/hc/en-us/articles/360058623411-SUT-30-Online-Sales-by-Out-of-State-Sellers | 2026-11-13 |
+| DOR SUT 115. Read for enumerated taxable services and delivery in sales price. | https://revenue.support.tn.gov/hc/en-us/articles/360058683911-SUT-115-Services-Services-Subject-to-Sales-and-Use-Tax | 2026-11-13 |
+| DOR SUT 37. Read for interstate repair exception. | https://revenue.support.tn.gov/hc/en-us/articles/360058176172-SUT-37-Repair-Services-on-Property-Shipped-into-Tennessee-for-Repair | 2026-11-13 |
+| DOR RAS 1. Read for remote software and excluded service categories. | https://revenue.support.tn.gov/hc/en-us/articles/360057266092-RAS-1-Remotely-Accessed-Software-Overview | 2026-11-13 |
+| DOR SUT 57. Read for prewritten single-article agreement treatment and custom exception. | https://revenue.support.tn.gov/hc/en-us/articles/360058681571-SUT-57-Computer-Software-Single-Article-Tax-Application | 2026-11-13 |
+| DOR SUT 61. Read for custom/prewritten software across delivery modes. | https://revenue.support.tn.gov/hc/en-us/articles/360058683491-SUT-61-Computer-Software-Custom-Software | 2026-11-13 |
+| DOR SUT 65. Read for specified digital products, fixed 2.5% local and no article cap. | https://revenue.support.tn.gov/hc/en-us/articles/360058688471-SUT-65-Specified-Digital-Products | 2026-11-13 |
+| DOR SUT 125. Read for prescribed human OTC versus unprescribed OTC. | https://revenue.support.tn.gov/hc/en-us/articles/360058688011-SUT-125-Sales-of-Prescription-Drugs | 2026-11-13 |
+| DOR SUT 80. Read for industrial machinery qualification and utility distinctions. | https://revenue.support.tn.gov/hc/en-us/articles/360058700311-SUT-80-Industrial-Machinery-Exemption-for-Manufacturers | 2026-11-13 |
+| DOR SUT 91. Read for agricultural certificate requirement. | https://revenue.support.tn.gov/hc/en-us/articles/360058677991-SUT-91-Agricultural-Exemption-Overview | 2026-11-13 |
+| DOR SUT 137. Read for enumerated utility charges and non-residential distinction. | https://revenue.support.tn.gov/hc/en-us/articles/360058703911-SUT-137-Utilities-Water-Natural-Gas-Propane-and-Electricity | 2026-11-13 |
+| DOR STH 1. Read for last Friday July to Sunday holiday calendar. | https://revenue.support.tn.gov/hc/en-us/articles/360057875471-STH-1-Date-of-Sales-Tax-Holiday | 2026-11-13 |
+| DOR STH 2. Read for holiday qualifying item limits. | https://revenue.support.tn.gov/hc/en-us/articles/360057399112-STH-2-Sales-Tax-Holiday-Qualifying-Items | 2026-11-13 |
+| DOR STH 4. Read for business purchases excluded. | https://revenue.support.tn.gov/hc/en-us/articles/360057876891-STH-4-Sales-Tax-Holiday-Which-Merchants-Participate | 2026-11-13 |
+| DOR SUT 8. Read for mandatory electronic returns and zero returns. | https://revenue.support.tn.gov/hc/en-us/articles/360058589831-SUT-8-Sales-and-Use-Tax-Online-Filing | 2026-11-13 |
+| DOR SUT 9. Read for monthly/quarterly/annual due dates and next business day. | https://revenue.support.tn.gov/hc/en-us/articles/360058589911-SUT-9-Sales-and-Use-Tax-Filing-Filing-Due-Dates | 2026-11-13 |
+| DOR GEN 16. Read for 5% delinquency, $15 minimum and interest only through June 2026. | https://revenue.support.tn.gov/hc/en-us/articles/360057121372-GEN-16-Penalties-and-Interest | 2026-11-13 |
+| TACIR vendor-compensation report (2025-2026 filing cycle). Read for absence of a general vendor allowance, subject to narrow exceptions. | https://www.tn.gov/content/dam/tn/tacir/2025publications/2025_VendorComp.pdf | 2026-11-13 |
+| DOR GEN 34. Read for no earned-income tax withholding and Hall repeal. | https://revenue.support.tn.gov/hc/en-us/articles/360057595051-GEN-34-Income-Tax-Withholding | 2026-11-13 |
+
+Not yet confirmed: The August 2026 sales manual could not be read (403). Current city/county rates; assigned-frequency thresholds; exact 2026 SLS 450 screen/line mapping and individual consumer-use filing route; special vendor compensation; post-June interest; fraud penalty; certificate form names ST-14/F-13/ST-18/SSTCE, acceptance protection and three-years-from-last-transaction retention are unconfirmed. So are durable medical equipment, motor-fuel exemption boundaries, raw materials, residential utilities/water rates, legal/accounting/personal services and real-property contractor detail, commercial/residential waste collection, occupancy levies/short-rental facilitator mechanics, nonprofit admission exclusions and Streamlined member/program status. These old topics remain visible here, not approved as current rules.
