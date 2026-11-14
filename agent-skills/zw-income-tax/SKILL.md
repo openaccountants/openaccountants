@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/zw-income-tax"
   jurisdiction: "ZW"
   tax_year: "2026"
-  last_updated: "2026-11-01"
+  last_updated: "2026-11-14"
 ---
 
 # Zimbabwe income tax for individuals
@@ -22,25 +22,23 @@ ZIMRA's tax tables page lists no 2026 table as read on 1 November 2026. The 2025
 
 | Item | Amount | Tax year | Conditions | Official URL |
 |---|---|---|---|---|
-| USD monthly 0 to 100 | 0% | 2026 | Latest ZIMRA table is labelled Jan-Dec 2025; Finance Act 7 of 2025 does not amend these bands | https://www.zimra.co.zw/domestic-taxes/tax-tables |
+| USD monthly 0 to 100 | 0% | 2026 | Latest ZIMRA table is labelled Jan-Dec 2025; Finance Act 7 of 2025 does not amend these bands | https://www.zimra.co.zw/domestic-taxes/tax-tables?download=4211:usd-jan-dec-2025-tax-tables |
 | USD monthly 100.01 to 300 | 20%, deduct 20 | 2026 | Same | same |
 | USD monthly 300.01 to 1,000 | 25%, deduct 35 | 2026 | Same | same |
 | USD monthly 1,000.01 to 2,000 | 30%, deduct 85 | 2026 | Same | same |
 | USD monthly 2,000.01 to 3,000 | 35%, deduct 185 | 2026 | Same | same |
 | USD monthly above 3,000 | 40%, deduct 335 | 2026 | Same | same |
-| ZWG monthly 0 to 2,800 | 0% | 2026 | Same; ZWG pay only | same |
+| ZWG monthly 0 to 2,800 | 0% | 2026 | Same; ZWG pay only | https://www.zimra.co.zw/domestic-taxes/tax-tables?download=4205:zwg-2025-tax-tables |
 | ZWG monthly 2,800.01 to 8,400 | 20%, deduct 560 | 2026 | Same | same |
 | ZWG monthly 8,400.01 to 28,000 | 25%, deduct 980 | 2026 | Same | same |
 | ZWG monthly 28,000.01 to 56,000 | 30%, deduct 2,380 | 2026 | Same | same |
 | ZWG monthly 56,000.01 to 84,000 | 35%, deduct 5,180 | 2026 | Same | same |
 | ZWG monthly above 84,000 | 40%, deduct 9,380 | 2026 | Same | same |
 | AIDS levy | 3% of tax chargeable | 2026 | Added to the tax, not to income | https://www.zimra.co.zw/domestic-taxes/corporate/tax-rates |
-| Trade or investment income of an individual | 25% | 2026 | s.14(2b); plus AIDS levy, 25.75% | https://www.zimra.co.zw/domestic-taxes/corporate/tax-rates |
+| Trade or investment income of an individual | 25% | 2026 | s.14(2b); plus AIDS levy, 25.75% (computed: 25% plus 3% of it) | https://www.zimra.co.zw/domestic-taxes/corporate/tax-rates |
 | Presumptive rental income tax | 15% of rent | 2026 | Proprietors renting to tenants liable for presumptive tax; from 1 Jan 2026 | https://www.veritaszim.net/sites/veritas_d/files/Finance%20Act%2C%20Act%20No.%207%20of%202025.pdf |
 | Punters tax | 25% of gross winnings | 2026 | Withheld by the gaming operator | https://www.veritaszim.net/sites/veritas_d/files/Finance%20Act%2C%20Act%20No.%207%20of%202025.pdf |
-| Intermediated money transfer tax, local currency | 1.5% | 2026 | Replaces the 2% in the earlier version; flat USD 10,150 equivalent at USD 500,000 or more | https://www.veritaszim.net/sites/veritas_d/files/Finance%20Act%2C%20Act%20No.%207%20of%202025.pdf |
-| Bonus exemption | unverified: USD 700 | 2026 | Not reconfirmed on an official page | unverified |
-| Credit for age 55 and over, blind or disabled | unverified: USD 900 a year | 2026 | Not reconfirmed on an official page | unverified |
+| Intermediated money transfer tax, local currency | one comma five per centum | 2026 | Replaces the 2% in the earlier version; flat ten thousand one hundred and fifty United States dollars equivalent at USD 500,000 or more | https://www.veritaszim.net/sites/veritas_d/files/Finance%20Act%2C%20Act%20No.%207%20of%202025.pdf |
 
 ## The base
 
@@ -52,7 +50,7 @@ These sections come from the earlier version. Where a figure conflicts with the 
 
 ## zimbabwe-income-tax
 
-### Zimbabwe Income Tax -- Individual & Self-Employed Skill v1.0
+### Zimbabwe Income Tax -- Individual & Self-Employed Skill v1.1
 
 > **Tier 2.** Figures are drawn from ZIMRA Jan-Dec 2025 PAYE tax tables, ZIMRA corporate/individual rate pages, NSSA contribution schedules, and reputable secondary sources . Every figure carries an inline citation or an explicit `[RESEARCH GAP -- reviewer to confirm]` marker. This skill has NOT yet been signed off by a registered Zimbabwean tax practitioner.
 
@@ -762,8 +760,8 @@ expected:
 | ZIMRA Tax Rates page, whole table | https://www.zimra.co.zw/domestic-taxes/corporate/tax-rates | 2026-11-01 |
 | ZIMRA Self Assessment Return Notes | https://www.zimra.co.zw/domestic-taxes/corporate/self-assessment-return-notes | 2026-11-01 |
 
-Not yet confirmed: payment days of QPDs 1 to 3; any 2026 ZIMRA PAYE table; USD 700 bonus exemption; USD 900 credits; income tax late filing and late payment penalties, including the 100% figure in the earlier version; the text of SI 81 of 2025 (dates come from ZIMRA notices citing it); ZWG conversion rules.
+Not yet confirmed: payment days of QPDs 1 to 3; any 2026 ZIMRA PAYE table; USD 700 bonus exemption; USD 900 credits; income tax late filing and late payment penalties, including the 100% figure in the earlier version; the text of SI 81 of 2025 (dates come from ZIMRA notices citing it); ZWG conversion rules; rows moved out of the rates table on 2026-11-14 (earlier version): USD 700 bonus exemption and USD 900 a year credit for age 55 and over, blind or disabled.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-01. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `zw-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/zw-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `zw-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/zw-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

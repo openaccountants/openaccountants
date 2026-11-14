@@ -2,19 +2,20 @@
 name: ivory-coast-payroll
 description: >
   Use this skill to run payroll in Côte d'Ivoire (Ivory Coast) for 2026: salary tax withholding, employee and employer CNPS, CMU, the employer taxes on pay at 2.8% for local staff and 12% for expatriates, FDFP levies, the SMIG, monthly deadlines by taxpayer type and annual filings. It suits employers, payroll providers and accountants with staff in Abidjan or elsewhere in the country. Trigger on "payroll Ivory Coast", "bulletin de paie", "contribution employeur", "FDFP", "etat 301", "salaire net", "cost of an employee in Côte d'Ivoire". It links to the income tax and social contributions skills for the scale and the CNPS rules.
-version: 0.2
+version: 0.3
 jurisdiction: CI
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 depends_on:
   - payroll-workflow-base
 category: payroll
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
+type: computation
 ---
 
-# Côte d'Ivoire (Ivory Coast) Payroll v0.2
+# Côte d'Ivoire (Ivory Coast) Payroll v0.3
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it without checking the cited official source or a licensed professional.
 

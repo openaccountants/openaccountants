@@ -2,17 +2,18 @@
 name: sh-cross-border
 description: >
   Saint Helena island cross-border tax for tax year 2026. Covers non-resident taxation by source, permanent establishment business income, withholding on deposit interest, the foreign tax credit, associates and arm's length reallocation (the transfer pricing rule), tax avoidance, leaving the island, customs duty and land transfer duty. Use for non-resident, foreign tax, transfer pricing, import duty or property purchase questions on St Helena. Does not apply to Ascension or Tristan da Cunha.
-version: 0.3
+version: 0.4
 jurisdiction: SH
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 category: cross-border
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: cross-border
+type: situation-rules
 ---
 
-# Saint Helena island: cross-border points v0.3
+# Saint Helena island: cross-border points v0.4
 
 > **General reference only.** This skill is general tax reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts. It covers Saint Helena island only, not Ascension or Tristan da Cunha, which have separate laws.
 

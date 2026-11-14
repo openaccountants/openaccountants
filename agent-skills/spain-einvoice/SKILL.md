@@ -7,30 +7,34 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/spain-einvoice"
   jurisdiction: "ES"
   tax_year: "2026"
-  last_updated: "2026-09-23"
+  last_updated: "2026-11-14"
 ---
 
 # Spain: electronic invoicing, Veri*factu, FACe and the SII
 
-Spain runs four separate things that people call "e-invoicing", and they start on different dates. Figures are for tax year 2026. Electronic invoicing to public bodies has been compulsory since 15 January 2015. The immediate supply of invoice records to the Agencia Tributaria (the SII) has run since 2017 for monthly filers. The invoicing software rules of Real Decreto 1007/2023, known as Veri*factu, bite before 1 January 2027 for corporate income tax payers and before 1 July 2027 for everyone else. The business-to-business electronic invoice of Ley 18/2022 now has its regulation, Real Decreto 238/2026 of 25 March 2026, in force since 20 April 2026, but the duty itself has no calendar date yet: it runs twelve or twenty-four months from the entry into force of a ministerial order that has not been made. Any date you have seen for the business-to-business mandate, including 2027 and 2028 dates, is not printed on an official page. Some penalty amounts below come from Ley 58/2003 and are not year specific.
+Spain runs four separate things that people call "e-invoicing", and they start on different dates. Figures are for tax year 2026. Electronic invoicing to public bodies has been compulsory since 15 January 2015. The immediate supply of invoice records to the Agencia Tributaria (the SII) has run since 2017 for monthly filers. The invoicing software rules of Real Decreto 1007/2023, known as Veri*factu, bite before 1 January 2027 for corporate income tax payers and before 1 July 2027 for everyone else. The business-to-business electronic invoice of Ley 18/2022 now has its regulation, Real Decreto 238/2026 of 25 March 2026, in force since 20 April 2026, and the clock started when Orden HAC/1028/2026, the ministerial order in its disposición final tercera, came into force on 6 October 2026: the duty applies from 6 October 2027 for businesses whose volumen de operaciones exceeded EUR 8 million in the previous year, and from 6 October 2028 for everyone else; individuals with turnover up to EUR 8 million report invoice and payment states only from 6 October 2029. Some penalty amounts below come from Ley 58/2003 and are not year specific.
+
+## Scope
+
+Who in Spain must invoice electronically or use certified invoicing software, from when, in which format and through which channel, for 2026 and the dates already fixed for 2027 to 2029: public-sector invoices (FACe), the SII, Veri*factu and the business-to-business mandate. The VAT return is `es-vat-return`; the books are `spain-bookkeeping`.
 
 ## Section 1: Quick Reference
 
-| Field | Value |
+| Field | Detail |
 | --- | --- |
 | Country | Spain (Reino de España) |
 | Currency | EUR |
 | Public sector platform | FACe, the punto general de entrada de facturas electrónicas of the Administración General del Estado |
-| Public sector format | Facturae, current version 3.2.2 (XML) |
+| Public sector format | Facturae, current version 3.2.2 (XML), https://www.facturae.gob.es/formato/Paginas/version-3-2.aspx |
 | Real-time reporting | SII (Suministro Inmediato de Información), compulsory for monthly filers |
 | Invoicing software rules | Reglamento de sistemas informáticos de facturación (Real Decreto 1007/2023), with the Veri*factu option |
 | Business-to-business system | Sistema español de factura electrónica: private exchange platforms plus the solución pública de facturación electrónica run by the Agencia Tributaria |
 | Governing body | Agencia Estatal de Administración Tributaria |
 | Key legislation | Ley 25/2013 (public sector); Ley 18/2022 Crea y Crece (business to business); Real Decreto 238/2026 (business-to-business technical rules); Real Decreto 1007/2023 (invoicing software); Real Decreto 1619/2012 (invoicing obligations) |
-| Public sector compulsory since | 15 January 2015 |
+| Public sector compulsory since | 15 January 2015 (Ley 25/2013, disposición final octava, https://www.boe.es/buscar/act.php?id=BOE-A-2013-13722) |
 | Immediate supply of information compulsory since | Monthly filers, under art. 62.6 of the VAT Regulation |
-| Software adaptation deadline | Before 1 January 2027 for corporate income tax payers; before 1 July 2027 for the rest |
-| Business-to-business mandate | No calendar date. Twelve months (larger turnover) or twenty-four months (everyone else) after a ministerial order that has not yet been made |
+| Software adaptation deadline | Before 1 January 2027 for corporate income tax payers; before 1 July 2027 for the rest (RD 1007/2023 art 3 and its transitional dates, https://www.boe.es/buscar/act.php?id=BOE-A-2023-24840) |
+| Business-to-business mandate | 6 October 2027 for volumen de operaciones above EUR 8 million in the previous year; 6 October 2028 for everyone else (twelve and twenty-four months after Orden HAC/1028/2026 came into force on 6 October 2026, https://www.boe.es/buscar/act.php?id=BOE-A-2026-20587) |
 | Guide version | 2.0 |
 
 Nothing in this Guide covers the Basque provincial systems (TicketBAI in Bizkaia, Araba and Gipuzkoa) or the Navarre system. Those territories legislate their own invoicing software rules.
@@ -52,38 +56,35 @@ These are not stages of one reform. A business can be inside one and outside the
 
 **Public sector invoicing, Ley 25/2013**
 
-| Rule | What the law says |
-| --- | --- |
-| Source | all figures below | https://www.boe.es/buscar/act.php?id=BOE-A-2013-13722 |
-| Who must use an electronic invoice | Art. 4.1: sociedades anónimas, sociedades de responsabilidad limitada, legal persons and entities without legal personality that are not Spanish, permanent establishments and branches of non-resident entities, temporary joint ventures, and the listed funds and economic interest groupings |
-| Who may use one | Every other supplier that has delivered goods or supplied services to a public administration |
-| Possible exclusion | Art. 4.1: administrations may by regulation exclude invoices of up to EUR 5,000, and invoices from suppliers to a public administration's services abroad |
-| Where it goes | Art. 6: the punto general de entrada de facturas electrónicas of the State, the autonomous community or the local entity |
-| Since | Art. 4 took effect on 15 January 2015 (disposición final octava) |
+| Rule | What the law says | Source |
+| --- | --- |---|
+| Who must use an electronic invoice | Art. 4.1: sociedades anónimas, sociedades de responsabilidad limitada, legal persons and entities without legal personality that are not Spanish, permanent establishments and branches of non-resident entities, temporary joint ventures, and the listed funds and economic interest groupings | https://www.boe.es/buscar/act.php?id=BOE-A-2013-13722 |
+| Who may use one | Every other supplier that has delivered goods or supplied services to a public administration | https://www.boe.es/buscar/act.php?id=BOE-A-2013-13722 |
+| Possible exclusion | Art. 4.1: administrations may by regulation exclude invoices of up to EUR 5,000, and invoices from suppliers to a public administration's services abroad | https://www.boe.es/buscar/act.php?id=BOE-A-2013-13722 |
+| Where it goes | Art. 6: the punto general de entrada de facturas electrónicas of the State, the autonomous community or the local entity | https://www.boe.es/buscar/act.php?id=BOE-A-2013-13722 |
+| Since | Art. 4 took effect on 15 January 2015 (disposición final octava) | https://www.boe.es/buscar/act.php?id=BOE-A-2013-13722 |
 
 **The SII**
 
-| Rule | What the regulation says |
-| --- | --- |
-| Source | all figures below | https://www.boe.es/buscar/act.php?id=BOE-A-1992-28925 |
-| Compulsory for | Art. 62.6: anyone whose VAT period is the calendar month under art. 71.3 |
-| Monthly period | Art. 71.3: turnover in the previous calendar year above EUR 6,010,121.04; a buyer of a business whose combined turnover passed it; anyone in the registro de devolución mensual; anyone applying the special scheme for groups of entities; holders of fuel tax warehouses and anyone extracting those products from one |
-| Optional for | Art. 68 bis: anyone else may opt in |
+| Rule | What the regulation says | Source |
+| --- | --- |---|
+| Compulsory for | Art. 62.6: anyone whose VAT period is the calendar month under art. 71.3 | https://www.boe.es/buscar/act.php?id=BOE-A-1992-28925 |
+| Monthly period | Art. 71.3: turnover in the previous calendar year above EUR 6,010,121.04; a buyer of a business whose combined turnover passed it; anyone in the registro de devolución mensual; anyone applying the special scheme for groups of entities; holders of fuel tax warehouses and anyone extracting those products from one | https://www.boe.es/buscar/act.php?id=BOE-A-1992-28925 |
+| Optional for | Art. 68 bis: anyone else may opt in | https://www.boe.es/buscar/act.php?id=BOE-A-1992-28925 |
 
 The turnover test and the deadlines here are the same as in the `es-vat-return` Guide, and they come from the same regulation.
 
 **Veri*factu and the invoicing software rules**
 
-| Who | Duty and date |
-| --- | --- |
-| Source | all figures below | https://www.boe.es/buscar/act.php?id=BOE-A-2023-24840 |
-| Corporate income tax payers (art. 3.1.a) | Systems adapted before 1 January 2027 |
-| Everyone else in art. 3.1: income tax payers with an economic activity, non-resident income tax payers with a permanent establishment, and entities in the régimen de atribución de rentas with an economic activity | Systems operative before 1 July 2027 |
-| Producers and sellers of invoicing software (art. 3.2) | Products fully adapted within nine months of the technical ministerial order taking effect |
-| Not covered at all (art. 3.3) | Anyone who keeps the VAT registers under art. 62.6 of the VAT Regulation, that is, anyone inside the SII, whether compulsorily or by choice |
-| Not covered (art. 3.1.a) | Entities exempt under art. 9.1 of the corporate income tax law. Partly exempt entities under art. 9.2, 9.3 and 9.4 are covered only for operations producing income that is subject and not exempt |
-| Not covered, no software | Anyone who invoices exclusively by hand, without any invoicing system. The Agencia Tributaria states the scope as four conditions, the first being that the business does not invoice only manually ([FAQ](https://sede.agenciatributaria.gob.es/Sede/iva/sistemas-informaticos-facturacion-verifactu/preguntas-frecuentes/cuestiones-generales-ambitos-aplicacion.html)) |
-| Not covered, on a ruling | Art. 5: the head of the Departamento de Inspección Financiera y Tributaria may resolve, on application, that the regulation does not apply to a sector, to named taxpayers, or to operations with exceptional technical difficulties |
+| Who | Duty and date | Source |
+| --- | --- |---|
+| Corporate income tax payers (art. 3.1.a) | Systems adapted before 1 January 2027 | https://www.boe.es/buscar/act.php?id=BOE-A-2023-24840 |
+| Everyone else in art. 3.1: income tax payers with an economic activity, non-resident income tax payers with a permanent establishment, and entities in the régimen de atribución de rentas with an economic activity | Systems operative before 1 July 2027 | https://www.boe.es/buscar/act.php?id=BOE-A-2023-24840 |
+| Producers and sellers of invoicing software (art. 3.2) | Products fully adapted within nine months of the technical ministerial order taking effect | https://www.boe.es/buscar/act.php?id=BOE-A-2023-24840 |
+| Not covered at all (art. 3.3) | Anyone who keeps the VAT registers under art. 62.6 of the VAT Regulation, that is, anyone inside the SII, whether compulsorily or by choice | https://www.boe.es/buscar/act.php?id=BOE-A-2023-24840 |
+| Not covered (art. 3.1.a) | Entities exempt under art. 9.1 of the corporate income tax law. Partly exempt entities under art. 9.2, 9.3 and 9.4 are covered only for operations producing income that is subject and not exempt | https://www.boe.es/buscar/act.php?id=BOE-A-2023-24840 |
+| Not covered, no software | Anyone who invoices exclusively by hand, without any invoicing system. The Agencia Tributaria states the scope as four conditions, the first being that the business does not invoice only manually ([FAQ](https://sede.agenciatributaria.gob.es/Sede/iva/sistemas-informaticos-facturacion-verifactu/preguntas-frecuentes/cuestiones-generales-ambitos-aplicacion.html)) | https://www.boe.es/buscar/act.php?id=BOE-A-2023-24840 |
+| Not covered, on a ruling | Art. 5: the head of the Departamento de Inspección Financiera y Tributaria may resolve, on application, that the regulation does not apply to a sector, to named taxpayers, or to operations with exceptional technical difficulties | https://www.boe.es/buscar/act.php?id=BOE-A-2023-24840 |
 
 The two 2027 dates are confirmed on the Agencia Tributaria's own note, which says entities filing corporate income tax must have adapted before 1 January 2027 and the rest before 1 July 2027, and calls the period before each date a testing period ([nota informativa](https://sede.agenciatributaria.gob.es/Sede/iva/sistemas-informaticos-facturacion-verifactu/nota-informativa-ampliacion-plazo-adaptacion-facturacion.html)). The technical ministerial order took effect on 29 July 2025, so the nine months allowed to software makers by disposición final cuarta ran out during 2026. The Agencia Tributaria gives that date on its frequently asked questions page ([FAQ](https://sede.agenciatributaria.gob.es/Sede/iva/sistemas-informaticos-facturacion-verifactu/preguntas-frecuentes/cuestiones-generales-ambitos-aplicacion.html)). Systems inside a multi year maintenance contract are instead adapted by the two 2027 dates.
 
@@ -94,15 +95,15 @@ Art. 3.3 matters more than anything else on this page. A business inside the SII
 | Rule | What the law and the decree say |
 | --- | --- |
 | Who | Art. 3 Real Decreto 238/2026: any business or professional obliged to issue an invoice, where the customer is a business or professional with its seat, permanent establishment or habitual residence in Spain and the operation is for that place |
-| Start, larger businesses | Twelve months after the ministerial order in disposición final tercera takes effect, for those whose volumen de operaciones under art. 121 of the VAT law exceeded eight million euros in the previous calendar year |
-| Start, everyone else | Twenty-four months after that order takes effect |
-| State reporting, individuals below the turnover line | Disposición transitoria tercera: for individuals and entities in the régimen de atribución de rentas whose volumen de operaciones under art. 121 of the VAT law did not exceed eight million euros in the previous calendar year, arts. 10 and 12 apply only twelve months after the decree takes effect for the second stage. Until then reporting the states of an invoice is voluntary |
+| Start, larger businesses | Twelve months after the ministerial order in disposición final tercera takes effect, for those whose volumen de operaciones under art. 121 of the VAT law exceeded eight million euros in the previous calendar year. That order, Orden HAC/1028/2026, came into force on 6 October 2026 (https://www.boe.es/buscar/act.php?id=BOE-A-2026-20587), so this stage starts on 6 October 2027 |
+| Start, everyone else | Twenty-four months after that order takes effect: 6 October 2028 |
+| State reporting, individuals below the turnover line | Disposición transitoria tercera: for individuals and entities in the régimen de atribución de rentas whose volumen de operaciones under art. 121 of the VAT law did not exceed eight million euros in the previous calendar year, arts. 10 and 12 apply only twelve months after the decree takes effect for the second stage, that is from 6 October 2029 on the Agencia Tributaria's own reading. Until then reporting the states of an invoice is voluntary |
 | Condition on the law itself | Disposición final octava Ley 18/2022: art. 12 comes into force only once Spain obtains the derogation from arts. 218 and 232 of Council Directive 2006/112/EC |
 | Not in scope | Art. 4: operations documented by a simplified invoice, unless it is a qualified simplified invoice under art. 7.2 of the invoicing regulation |
 | Excluded sectors | Disposición adicional segunda: the regulated activities of the electricity market operator, the functions of the organised gas market operator, and invoices settled through the IATA clearing and settlement systems CASS, BSP and SIS-ICH |
 | Public solution availability | Disposición adicional quinta: it must be available at least two months before the decree first applies |
 
-No allowed page prints a calendar date for either stage, because the ministerial order has not come into force. Disposición final octava of Ley 18/2022 words its own clock as running from the approval of the implementing regulation, which happened in March 2026, but Real Decreto 238/2026 is the implementing regulation and its own disposición final cuarta re-bases the clock on the ministerial order. Do not compute a date from the law. Read the two rows above as intervals, not as dates. The earlier belief that the reform would start on a fixed day in 2027 or 2028 has no official source.
+The ministerial order is Orden HAC/1028/2026, de 2 de octubre, published in the BOE on 5 October 2026; its disposición final única puts it in force the next day and says the deferred periods start then (https://www.boe.es/buscar/act.php?id=BOE-A-2026-20587). The Agencia Tributaria states the resulting dates: 6 October 2027 for volumen de operaciones above EUR 8 million, 6 October 2028 for the rest, and 6 October 2029 for the state and payment reporting of individuals and entities in the régimen de atribución de rentas ([AEAT note on the order](https://sede.agenciatributaria.gob.es/Sede/iva/novedades-iva/novedades-normativa-2026/orden-hac-1028-2026-2-electronica.html)). The art. 12 payment-reporting duty still depends on the EU derogation in disposición final octava of Ley 18/2022.
 
 ### Veri*factu vs Non-Veri*factu
 
@@ -139,11 +140,10 @@ Art. 2 bis of Ley 56/2007 adds three duties the decree does not repeat: platform
 
 The state and payment reports are due in the same short window.
 
-| Report | Deadline |
-| --- | --- |
-| Source | all figures below | https://www.boe.es/buscar/act.php?id=BOE-A-2026-7295 |
-| Invoice states (art. 10.3) | Within four calendar days from the date the state arises, excluding Saturdays, Sundays and national holidays |
-| Full payment to the public solution (art. 12.3) | Within four calendar days from the effective payment date, excluding Saturdays, Sundays and national holidays |
+| Report | Deadline | Source |
+| --- | --- |---|
+| Invoice states (art. 10.3) | Within four calendar days from the date the state arises, excluding Saturdays, Sundays and national holidays | https://www.boe.es/buscar/act.php?id=BOE-A-2026-7295 |
+| Full payment to the public solution (art. 12.3) | Within four calendar days from the effective payment date, excluding Saturdays, Sundays and national holidays | https://www.boe.es/buscar/act.php?id=BOE-A-2026-7295 |
 
 The payment period itself is worked out under art. 4 of Ley 3/2004 on late payment in commercial transactions, not under the invoicing rules (art. 15). Where the invoice does not state the date of the operations, the payment period starts on the issue date.
 
@@ -151,7 +151,7 @@ The payment period itself is worked out under art. 4 of Ley 3/2004 on late payme
 
 ### B2G: Facturae Format
 
-| Parameter | Value |
+| Parameter | Rule |
 | --- | --- |
 | Format | Facturae, current version 3.2.2 (XML). The [format page](https://www.facturae.gob.es/formato/Paginas/version-3-2.aspx) publishes the 3.2.2 schema and the earlier 3.2 and 3.2.1 schemas |
 | Who fixes the format | Art. 5.1 Ley 25/2013: the structured format is set by ministerial order |
@@ -216,14 +216,13 @@ Art. 6.2 requires the taxable amount to be split where an invoice mixes exempt a
 
 ### Simplified invoices
 
-| Rule | What it says |
-| --- | --- |
-| Source | all figures below | https://www.boe.es/buscar/act.php?id=BOE-A-2012-14696 |
-| General limit (art. 4.1) | A simplified invoice may be used where the amount, VAT included, does not exceed EUR 400, or where a credit note must be issued |
-| Sector limit (art. 4.2) | Up to EUR 3,000, VAT included, in the listed sectors: retail sales, itinerant or mobile sales and services, sales and services at the consumer's home, passenger transport and baggage, hospitality and restaurants, dance halls and discotheques, public telephone boxes and anonymous cards, hairdressing and beauty, use of sports facilities, photograph developing and photographic studios, vehicle parking, film rental, dry cleaning and laundry, and toll motorways |
-| Never allowed (art. 4.4) | Intra-EU supplies under art. 25 of the VAT law, and the distance sales in art. 68.Tres.a of the VAT law outside the special scheme, among others |
-| Content (art. 7.1) | Number and series, issue date, date of the operations where different, the issuer's tax identification number and name, the kind of goods or services, the rate applied and optionally "IVA incluido", the total consideration, the reference to the corrected invoice on a credit note, and the art. 6.1 letters j to p wording where relevant |
-| Qualified simplified invoice (art. 7.2) | Where the customer is a business or professional and asks, the issuer must also state the customer's tax identification number and address and the tax charged separately. This is the only kind of simplified invoice that falls inside the business-to-business electronic invoice duty |
+| Rule | What it says | Source |
+| --- | --- |---|
+| General limit (art. 4.1) | A simplified invoice may be used where the amount, VAT included, does not exceed EUR 400, or where a credit note must be issued | https://www.boe.es/buscar/act.php?id=BOE-A-2012-14696 |
+| Sector limit (art. 4.2) | Up to EUR 3,000, VAT included, in the listed sectors: retail sales, itinerant or mobile sales and services, sales and services at the consumer's home, passenger transport and baggage, hospitality and restaurants, dance halls and discotheques, public telephone boxes and anonymous cards, hairdressing and beauty, use of sports facilities, photograph developing and photographic studios, vehicle parking, film rental, dry cleaning and laundry, and toll motorways | https://www.boe.es/buscar/act.php?id=BOE-A-2012-14696 |
+| Never allowed (art. 4.4) | Intra-EU supplies under art. 25 of the VAT law, and the distance sales in art. 68.Tres.a of the VAT law outside the special scheme, among others | https://www.boe.es/buscar/act.php?id=BOE-A-2012-14696 |
+| Content (art. 7.1) | Number and series, issue date, date of the operations where different, the issuer's tax identification number and name, the kind of goods or services, the rate applied and optionally "IVA incluido", the total consideration, the reference to the corrected invoice on a credit note, and the art. 6.1 letters j to p wording where relevant | https://www.boe.es/buscar/act.php?id=BOE-A-2012-14696 |
+| Qualified simplified invoice (art. 7.2) | Where the customer is a business or professional and asks, the issuer must also state the customer's tax identification number and address and the tax charged separately. This is the only kind of simplified invoice that falls inside the business-to-business electronic invoice duty | https://www.boe.es/buscar/act.php?id=BOE-A-2012-14696 |
 
 ### FACe (B2G) Mandatory Fields
 
@@ -281,14 +280,13 @@ The previous version of this Guide said Peppol was under development for FACe. N
 
 ### SII (Real-Time Reporting)
 
-| Parameter | Detail |
-| --- | --- |
-| Source | all figures below | https://www.boe.es/buscar/act.php?id=BOE-A-1992-28925 |
-| How | Art. 62.6: the VAT registers are kept through the Sede electrónica of the Agencia Tributaria by supplying the invoicing records electronically |
-| Deadline, invoices issued | Art. 69 bis: four calendar days from issue, eight where the customer or a third party issues it, and in both cases before the 16th of the month after the tax point. Saturdays, Sundays and national holidays do not count in the four or eight days |
-| Deadline, invoices received | Art. 69 bis: four calendar days from the accounting entry, and before the 16th of the month after the filing period the invoice is included in. Saturdays, Sundays and national holidays do not count in the four days |
-| Registers covered | Art. 62.1: invoices issued, invoices received, capital goods, and certain intra-EU operations |
-| Content | Invoicing records, not the invoice document |
+| Parameter | Detail | Source |
+| --- | --- |---|
+| How | Art. 62.6: the VAT registers are kept through the Sede electrónica of the Agencia Tributaria by supplying the invoicing records electronically | https://www.boe.es/buscar/act.php?id=BOE-A-1992-28925 |
+| Deadline, invoices issued | Art. 69 bis: four calendar days from issue, eight where the customer or a third party issues it, and in both cases before the 16th of the month after the tax point. Saturdays, Sundays and national holidays do not count in the four or eight days | https://www.boe.es/buscar/act.php?id=BOE-A-1992-28925 |
+| Deadline, invoices received | Art. 69 bis: four calendar days from the accounting entry, and before the 16th of the month after the filing period the invoice is included in. Saturdays, Sundays and national holidays do not count in the four days | https://www.boe.es/buscar/act.php?id=BOE-A-1992-28925 |
+| Registers covered | Art. 62.1: invoices issued, invoices received, capital goods, and certain intra-EU operations | https://www.boe.es/buscar/act.php?id=BOE-A-1992-28925 |
+| Content | Invoicing records, not the invoice document | https://www.boe.es/buscar/act.php?id=BOE-A-1992-28925 |
 
 These deadlines are the same as those in the `es-vat-return` Guide and come from the same articles.
 
@@ -362,12 +360,11 @@ The previous version listed a duplicate-detection rule keyed on issuer, number a
 
 ### IVA Rates (2026)
 
-| Rate | Application |
-| --- | --- |
-| Source | all figures below | https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740 |
-| 21% | Standard rate, art. 90.Uno |
-| 10% | Reduced rate, art. 91.Uno: food other than the super-reduced list, water, medical equipment, passenger transport, hotels and restaurants, new housing, qualifying home renovation |
-| 4% | Super-reduced rate, art. 91.Dos: plain bread and bread dough, bread flour, milk, cheese, eggs, natural fruit, vegetables, pulses, tubers and cereals, olive oil, books, newspapers and magazines, medicines for human use, certain disability aids and social housing |
+| Rate | Application | Source |
+| --- | --- |---|
+| 21% | Standard rate, art. 90.Uno | https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740 |
+| 10% | Reduced rate, art. 91.Uno: food other than the super-reduced list, water, medical equipment, passenger transport, hotels and restaurants, new housing, qualifying home renovation | https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740 |
+| 4% | Super-reduced rate, art. 91.Dos: plain bread and bread dough, bread flour, milk, cheese, eggs, natural fruit, vegetables, pulses, tubers and cereals, olive oil, books, newspapers and magazines, medicines for human use, certain disability aids and social housing | https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740 |
 
 No temporary rate is in force for 2026. The emergency food and electricity rates have ended, and the previous version's zero rate row is removed. Olive oil sits permanently in the super-reduced list from 1 January 2025. The rate to use is the one in force at the tax point, not at invoicing.
 
@@ -375,11 +372,10 @@ No temporary rate is in force for 2026. The emergency food and electricity rates
 
 Professional fee invoices normally carry an income tax withholding. The payer withholds and pays it over on modelo 111; the professional credits it in the annual return.
 
-| Scenario | Rate |
-| --- | --- |
-| Source | all figures below | https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820 |
-| Professional fees, general (art. 95.1) | 15% |
-| A professional starting an activity (art. 95.1) | 7% |
+| Scenario | Rate | Source |
+| --- | --- |---|
+| Professional fees, general (art. 95.1) | 15% | https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820 |
+| A professional starting an activity (art. 95.1) | 7% | https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820 |
 
 The reduced rate runs for the tax year in which the activity starts and the two following years, and only if no professional activity was carried on in the year before the start date. The professional must tell the payer in writing and the payer must keep the signed notice.
 
@@ -404,12 +400,11 @@ No allowed page read for this refresh prints a rounding rule for an invoice line
 
 A retailer inside this scheme is charged the surcharge by its supplier on top of VAT, files no VAT return on those sales and deducts no input VAT. The surcharge is shown separately on the supplier's invoice.
 
-| VAT Rate | Surcharge |
-| --- | --- |
-| Source | all figures below | https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740 |
-| 21% | 5.2% |
-| 10% | 1.4% |
-| 4% | 0.5% |
+| VAT Rate | Surcharge | Source |
+| --- | --- |---|
+| 21% | 5.2% | https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740 |
+| 10% | 1.4% | https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740 |
+| 4% | 0.5% | https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740 |
 
 Art. 3.1.b of the invoicing regulation excuses a retailer in this scheme from issuing invoices for its own sales, except that an invoice must always be issued for a taxable and non-exempt supply of immovable property.
 
@@ -431,20 +426,19 @@ Art. 3.1.b of the invoicing regulation excuses a retailer in this scheme from is
 
 All the amounts below are in Ley 58/2003 unless the row says otherwise. Two of them are printed in the statute as words, not digits, and are written here as words for that reason.
 
-| Violation | Penalty |
-| --- | --- |
-| Source | all figures below | https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186 |
-| Breach of the invoicing requirements, art. 201.2.a | A proportional fine of one per cent of the total of the operations that gave rise to the breach |
-| Failure to issue or to keep invoices, art. 201.2.b | A proportional fine of two per cent of the total of those operations. Where the amount cannot be known, EUR 300 for each operation with no invoice issued or kept |
-| Invoices with false or falsified data, art. 201.3 | A proportional fine of 75% of the total of those operations |
-| Graduation, art. 201.5 | The resulting amount is increased by 100% where the breach is substantial |
-| Late supply of the invoicing records to the Sede electrónica, art. 200.3 | A proportional fine of 0.5% of the invoice in the record, with a quarterly minimum of EUR 300 and a maximum of EUR 6,000 |
-| Other breaches of the accounting and register duties, art. 200.3 | A fixed fine of EUR 150, unless one of the specific rules in that paragraph applies |
-| Making or selling non-compliant invoicing software, art. 201 bis.1 and 4 | A fixed fine of EUR 150,000 for each financial year in which sales occurred and for each distinct type of system or program involved |
-| Selling a system without the certificate, art. 201 bis.1.f and 4 | A fixed fine of EUR 1,000 for each system or program sold without it |
-| Holding an uncertified or altered system, art. 201 bis.2 and 4 | A fixed fine of EUR 50,000 for each financial year. Someone already fined under art. 201 bis.1 is not fined again under this paragraph |
-| Source | figure below | https://www.boe.es/buscar/act.php?id=BOE-A-2022-15818 |
-| A business that must offer electronic invoices to its customers and does not, or that blocks former customers from reaching their invoices (art. 2 bis.9 Ley 56/2007, as amended by Ley 18/2022) | A warning, or a fine of up to EUR 10,000, imposed by the Secretaría de Estado de Digitalización e Inteligencia Artificial |
+| Violation | Penalty | Source |
+| --- | --- |---|
+| Breach of the invoicing requirements, art. 201.2.a | A proportional fine of one per cent of the total of the operations that gave rise to the breach | https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186 |
+| Failure to issue or to keep invoices, art. 201.2.b | A proportional fine of two per cent of the total of those operations. Where the amount cannot be known, EUR 300 for each operation with no invoice issued or kept | https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186 |
+| Invoices with false or falsified data, art. 201.3 | A proportional fine of 75% of the total of those operations | https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186 |
+| Graduation, art. 201.5 | The resulting amount is increased by 100% where the breach is substantial | https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186 |
+| Late supply of the invoicing records to the Sede electrónica, art. 200.3 | A proportional fine of 0.5% of the invoice in the record, with a quarterly minimum of EUR 300 and a maximum of EUR 6,000 | https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186 |
+| Other breaches of the accounting and register duties, art. 200.3 | A fixed fine of EUR 150, unless one of the specific rules in that paragraph applies | https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186 |
+| Making or selling non-compliant invoicing software, art. 201 bis.1 and 4 | A fixed fine of EUR 150,000 for each financial year in which sales occurred and for each distinct type of system or program involved | https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186 |
+| Selling a system without the certificate, art. 201 bis.1.f and 4 | A fixed fine of EUR 1,000 for each system or program sold without it | https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186 |
+| Holding an uncertified or altered system, art. 201 bis.2 and 4 | A fixed fine of EUR 50,000 for each financial year. Someone already fined under art. 201 bis.1 is not fined again under this paragraph | https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186 |
+| Source | all figures below | https://www.boe.es/buscar/act.php?id=BOE-A-2022-15818 | https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186 |
+| A business that must offer electronic invoices to its customers and does not, or that blocks former customers from reaching their invoices (art. 2 bis.9 Ley 56/2007, as amended by Ley 18/2022) | A warning, or a fine of up to EUR 10,000, imposed by the Secretaría de Estado de Digitalización e Inteligencia Artificial | https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186 |
 
 The last row is narrower than it looks. It sits in the consumer-facing part of Ley 56/2007 and catches businesses supplying the public in sectors of special economic importance. Real Decreto 238/2026 sets no fine of its own, and Ley 18/2022 sets no separate fine for failing to issue a business-to-business electronic invoice. Until the mandate starts, the general art. 201 fines are the ones that apply to an invoicing failure.
 
@@ -474,29 +468,50 @@ The previous version of this Guide carried a row for failing to report a payment
 - The SII captures intra-EU operations in the registers in art. 62.1 of the VAT Regulation.
 - The business-to-business electronic invoice duty reaches only operations whose customer has its seat, permanent establishment or habitual residence in Spain (art. 3.1 Real Decreto 238/2026). A sale to a customer established abroad is outside it.
 
-## The method, step by step
-
-1. **Fix which systems the client is in.** Check the VAT period first: if it is the calendar month, the client is inside the SII under art. 62.6 of the [VAT Regulation](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28925), and therefore outside the invoicing software rules by art. 3.3 of [Real Decreto 1007/2023](https://www.boe.es/buscar/act.php?id=BOE-A-2023-24840). Then check whether the client invoices public bodies, which brings in [Ley 25/2013](https://www.boe.es/buscar/act.php?id=BOE-A-2013-13722).
-2. **Date the software duty.** For a client outside the SII, the deadline is before 1 January 2027 if it files corporate income tax, and before 1 July 2027 otherwise, per the Agencia Tributaria's [note on the extended deadlines](https://sede.agenciatributaria.gob.es/Sede/iva/sistemas-informaticos-facturacion-verifactu/nota-informativa-ampliacion-plazo-adaptacion-facturacion.html). Choose the Veri*factu mode or the other mode, and get the supplier's declaración responsable (art. 13).
-3. **Do not date the business-to-business mandate.** Read disposición final cuarta of [Real Decreto 238/2026](https://www.boe.es/buscar/act.php?id=BOE-A-2026-7295): the clock starts when the ministerial order in disposición final tercera comes into force, and runs twelve months for larger turnover and twenty-four for everyone else. Tell the client the interval and that no start date has been published. Check whether the order has appeared before repeating this.
-4. **Fix the invoice content.** Work through art. 6 of the [invoicing regulation](https://www.boe.es/buscar/act.php?id=BOE-A-2012-14696) for a full invoice, or arts. 4 and 7 for a simplified one, and, only if the client is inside Real Decreto 1007/2023, add the QR code required by art. 6.5. Issue by the deadline in art. 11: at the time of the operation, or, where the customer is a business, before the 16th of the month after the tax point.
-5. **Set the withholding.** Apply the professional rates in art. 95.1 of the [income tax regulation](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820) and show the withholding as its own line, as set out in Section 7.
-6. **For a public body, route it.** Get the Órgano Gestor, Unidad Tramitadora and Oficina Contable codes from the contracting body, build the Facturae file to the current schema on [facturae.gob.es](https://www.facturae.gob.es/formato/Paginas/version-3-2.aspx), sign it as art. 5 Ley 25/2013 requires, and file it through the right punto general de entrada.
-
 ## Ask the client first
 
 - Is your VAT period the calendar month, or are you in the registro de devolución mensual? That decides whether you are in the SII, and being in the SII takes you out of the invoicing software rules.
 - Do you file corporate income tax, or income tax on an economic activity? That decides whether your software deadline is 1 January 2027 or 1 July 2027.
 - Do you invoice public bodies, and if so which ones? Their entry point and their three routing codes are not interchangeable.
-- What was your volumen de operaciones last year, measured under art. 121 of the VAT law? It decides which of the two business-to-business stages you fall into when the clock starts.
+- What was your volumen de operaciones last year, measured under art. 121 of the VAT law? It decides whether the business-to-business duty starts for you on 6 October 2027 or 6 October 2028.
 - Do you issue simplified invoices, and does any customer ask for the extra content that makes one qualified? A plain simplified invoice is outside the business-to-business duty; a qualified one is not.
 - Are you established in the Basque provinces or Navarre? Their invoicing software rules are their own and are not in this Guide.
+
+## The method, step by step
+
+1. **Fix which systems the client is in.** Check the VAT period first: if it is the calendar month, the client is inside the SII under art. 62.6 of the [VAT Regulation](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28925), and therefore outside the invoicing software rules by art. 3.3 of [Real Decreto 1007/2023](https://www.boe.es/buscar/act.php?id=BOE-A-2023-24840). Then check whether the client invoices public bodies, which brings in [Ley 25/2013](https://www.boe.es/buscar/act.php?id=BOE-A-2013-13722).
+2. **Date the software duty.** For a client outside the SII, the deadline is before 1 January 2027 if it files corporate income tax, and before 1 July 2027 otherwise, per the Agencia Tributaria's [note on the extended deadlines](https://sede.agenciatributaria.gob.es/Sede/iva/sistemas-informaticos-facturacion-verifactu/nota-informativa-ampliacion-plazo-adaptacion-facturacion.html). Choose the Veri*factu mode or the other mode, and get the supplier's declaración responsable (art. 13).
+3. **Date the business-to-business mandate from the order.** Disposición final cuarta of [Real Decreto 238/2026](https://www.boe.es/buscar/act.php?id=BOE-A-2026-7295) starts the clock when the ministerial order comes into force; [Orden HAC/1028/2026](https://www.boe.es/buscar/act.php?id=BOE-A-2026-20587) came into force on 6 October 2026. Volumen de operaciones above EUR 8 million last year: from 6 October 2027. Everyone else: from 6 October 2028. Individuals and entities in atribución de rentas at or below EUR 8 million: state and payment reporting from 6 October 2029.
+4. **Fix the invoice content.** Work through art. 6 of the [invoicing regulation](https://www.boe.es/buscar/act.php?id=BOE-A-2012-14696) for a full invoice, or arts. 4 and 7 for a simplified one, and, only if the client is inside Real Decreto 1007/2023, add the QR code required by art. 6.5. Issue by the deadline in art. 11: at the time of the operation, or, where the customer is a business, before the 16th of the month after the tax point.
+5. **Set the withholding.** Apply the professional rates in art. 95.1 of the [income tax regulation](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820) and show the withholding as its own line, as set out in Section 7.
+6. **For a public body, route it.** Get the Órgano Gestor, Unidad Tramitadora and Oficina Contable codes from the contracting body, build the Facturae file to the current schema on [facturae.gob.es](https://www.facturae.gob.es/formato/Paginas/version-3-2.aspx), sign it as art. 5 Ley 25/2013 requires, and file it through the right punto general de entrada.
+
+## Worked cases
+
+### Case 1: late supply of SII records for a quarter
+
+A monthly VAT filer inside the SII sends the records of invoices totalling EUR 200,000 late in one quarter. Art. 200.3 of Ley 58/2003 fines 0.5% of the amount of each late record, with a quarterly minimum of EUR 300 and a maximum of EUR 6,000. 0.5% of 200,000 is EUR 1,000, inside the band, so the fine is EUR 1,000. Had the late invoices totalled EUR 40,000, the 0.5% would be EUR 200 and the minimum of EUR 300 would apply; above EUR 1,200,000 the maximum of EUR 6,000 caps it.
+
+```oa-check
+name: Spain 2026 SII late record fine for a quarter
+inputs:
+  late_invoices_total: 200000
+  rate: 0.005
+  quarterly_min: 300
+  quarterly_max: 6000
+steps:
+  - raw_fine: late_invoices_total * rate
+  - fine: min(max(raw_fine, quarterly_min), quarterly_max)
+expected:
+  raw_fine: 1000
+  fine: 1000
+```
 
 ## When to refuse or refer
 
 - Any Basque provincial or Navarre invoicing system, including TicketBAI. This Guide covers state rules only.
 - The Canary Islands general indirect tax and the Ceuta and Melilla local taxes. The VAT rates here do not apply there.
-- Setting a start date for the business-to-business mandate. Until the ministerial order is published, there is none to give.
+- A business-to-business start date for a client whose turnover is near EUR 8 million, or whose previous-year volumen de operaciones is disputed: the stage turns on art. 121 of the VAT law; refer the measurement to the client's asesor fiscal.
 - Certifying that a particular software product complies. The producer signs the declaración responsable, not the accountant.
 - Building to the record layout or the QR content. Those are in Orden HAC/1177/2024 and the Agencia Tributaria technical pages, which this Guide does not reproduce.
 - Advising whether a late or wrongly routed invoice is still deductible. That is a VAT question and turns on the facts.
@@ -504,23 +519,31 @@ The previous version of this Guide carried a row for failing to report a payment
 
 ## Sources
 
-- [Ley 25/2013, factura electrónica en el sector público](https://www.boe.es/buscar/act.php?id=BOE-A-2013-13722)
-- [Ley 18/2022, de creación y crecimiento de empresas](https://www.boe.es/buscar/act.php?id=BOE-A-2022-15818)
-- [Real Decreto 238/2026, facturación electrónica obligatoria entre empresarios y profesionales](https://www.boe.es/buscar/act.php?id=BOE-A-2026-7295)
-- [Real Decreto 1007/2023, sistemas informáticos de facturación](https://www.boe.es/buscar/act.php?id=BOE-A-2023-24840)
-- [Real Decreto 1619/2012, obligaciones de facturación](https://www.boe.es/buscar/act.php?id=BOE-A-2012-14696)
-- [Real Decreto 1624/1992, Reglamento del IVA](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28925)
-- [Ley 37/1992, del Impuesto sobre el Valor Añadido](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740)
-- [Real Decreto 439/2007, Reglamento del IRPF](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820)
-- [Ley 58/2003, General Tributaria](https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186)
-- [Código de Comercio](https://www.boe.es/buscar/act.php?id=BOE-A-1885-6627)
-- [Agencia Tributaria: sistemas informáticos de facturación y Veri*factu](https://sede.agenciatributaria.gob.es/Sede/iva/sistemas-informaticos-facturacion-verifactu.html)
-- [Agencia Tributaria: cuestiones generales](https://sede.agenciatributaria.gob.es/Sede/iva/sistemas-informaticos-facturacion-verifactu/cuestiones-generales.html)
-- [Agencia Tributaria: nota informativa sobre los nuevos plazos](https://sede.agenciatributaria.gob.es/Sede/iva/sistemas-informaticos-facturacion-verifactu/nota-informativa-ampliacion-plazo-adaptacion-facturacion.html)
-- [Agencia Tributaria: preguntas frecuentes sobre el ámbito de aplicación](https://sede.agenciatributaria.gob.es/Sede/iva/sistemas-informaticos-facturacion-verifactu/preguntas-frecuentes/cuestiones-generales-ambitos-aplicacion.html)
-- [Agencia Tributaria: novedades de normativa, Real Decreto 238/2026](https://sede.agenciatributaria.gob.es/Sede/iva/novedades-iva/novedades-normativa-2026/real-decreto-238-2026-25-marzo.html)
-- [Formato Facturae, últimas versiones](https://www.facturae.gob.es/formato/Paginas/version-3-2.aspx)
-- [FACe, punto general de entrada](https://www.facturae.gob.es/face/Paginas/FACE.aspx)
+Every figure in the tables above was found again on the linked page on 14 November 2026.
+
+| Source | What was read | URL | Read on |
+|---|---|---|---|
+| Ley 25/2013, factura electrónica en el sector público | Read for arts 4, 5, 6 and disposición final octava (who must, EUR 5,000 exclusion, 15 January 2015) | https://www.boe.es/buscar/act.php?id=BOE-A-2013-13722 | 2026-11-14 |
+| Ley 18/2022, Crea y Crece | Read for art 12 and disposición final octava (B2B duty, EU derogation), and art 2 bis.9 Ley 56/2007 (EUR 10,000 fine) | https://www.boe.es/buscar/act.php?id=BOE-A-2022-15818 | 2026-11-14 |
+| Real Decreto 238/2026 | Read for arts 3 to 12, disposiciones transitorias segunda and tercera, final cuarta (12 and 24 months, four calendar days, EUR 8 million) | https://www.boe.es/buscar/act.php?id=BOE-A-2026-7295 | 2026-11-14 |
+| Orden HAC/1028/2026, solución pública de facturación electrónica | Read for the disposición final única: in force the day after publication on 5 October 2026, starting the deferred periods | https://www.boe.es/buscar/act.php?id=BOE-A-2026-20587 | 2026-11-14 |
+| Real Decreto 1007/2023, sistemas informáticos de facturación | Read for arts 3, 5, 6.5, 7, 8, 15, 16 and the transitional dates (1 January and 1 July 2027, nine months) | https://www.boe.es/buscar/act.php?id=BOE-A-2023-24840 | 2026-11-14 |
+| Real Decreto 1619/2012, obligaciones de facturación | Read for arts 4, 6, 7, 11 (EUR 400 and EUR 3,000 simplified invoice limits) | https://www.boe.es/buscar/act.php?id=BOE-A-2012-14696 | 2026-11-14 |
+| Real Decreto 1624/1992, Reglamento del IVA | Read for arts 62, 68 bis, 69 bis, 71.3 (SII, four days, EUR 6,010,121.04) | https://www.boe.es/buscar/act.php?id=BOE-A-1992-28925 | 2026-11-14 |
+| Ley 37/1992 del IVA | Read for arts 90, 91, 161 (rates and recargo de equivalencia) | https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740 | 2026-11-14 |
+| Real Decreto 439/2007, Reglamento del IRPF | Read for art 95.1 (15% and 7% withholding) | https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820 | 2026-11-14 |
+| Ley 58/2003, General Tributaria | Read for arts 200.3, 201, 201 bis (invoicing and software fines) | https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186 | 2026-11-14 |
+| Código de Comercio | Read for art 30 (six-year retention) | https://www.boe.es/buscar/act.php?id=BOE-A-1885-6627 | 2026-11-14 |
+| Agencia Tributaria, Veri*factu landing page | Read for the scope of the invoicing software rules | https://sede.agenciatributaria.gob.es/Sede/iva/sistemas-informaticos-facturacion-verifactu.html | 2026-11-14 |
+| Agencia Tributaria, cuestiones generales | Read for "an invoicing record is not an invoice" and paper invoicing | https://sede.agenciatributaria.gob.es/Sede/iva/sistemas-informaticos-facturacion-verifactu/cuestiones-generales.html | 2026-11-14 |
+| Agencia Tributaria, nota informativa on the extended deadlines | Read for 1 January 2027 and 1 July 2027 | https://sede.agenciatributaria.gob.es/Sede/iva/sistemas-informaticos-facturacion-verifactu/nota-informativa-ampliacion-plazo-adaptacion-facturacion.html | 2026-11-14 |
+| Agencia Tributaria, FAQ on scope | Read for the four scope conditions and the 29 July 2025 technical order date | https://sede.agenciatributaria.gob.es/Sede/iva/sistemas-informaticos-facturacion-verifactu/preguntas-frecuentes/cuestiones-generales-ambitos-aplicacion.html | 2026-11-14 |
+| Agencia Tributaria, Real Decreto 238/2026 note | Read for the summary of the decree and its deferred application | https://sede.agenciatributaria.gob.es/Sede/iva/novedades-iva/novedades-normativa-2026/real-decreto-238-2026-25-marzo.html | 2026-11-14 |
+| Agencia Tributaria, Orden HAC/1028/2026 note | Read for the dates 6 October 2027, 2028 and 2029 | https://sede.agenciatributaria.gob.es/Sede/iva/novedades-iva/novedades-normativa-2026/orden-hac-1028-2026-2-electronica.html | 2026-11-14 |
+| Facturae format page | Read for the current version 3.2.2 | https://www.facturae.gob.es/formato/Paginas/version-3-2.aspx | 2026-11-14 |
+| FACe, punto general de entrada | Read for the State entry point and its routing codes | https://www.facturae.gob.es/face/Paginas/FACE.aspx | 2026-11-14 |
+
+Not yet confirmed: whether Spain has obtained the EU derogation from arts 218 and 232 of the VAT Directive that art. 12 of Ley 18/2022 waits for (not on an official page read today); the exact record layout and QR content (Orden HAC/1177/2024 and AEAT technical pages, not reproduced).
 
 ## Disclaimer
 
@@ -530,4 +553,4 @@ This Guide and its outputs are provided for informational and computational purp
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-09-23. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `spain-einvoice` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/spain-einvoice. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `spain-einvoice` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/spain-einvoice. If neither is available, confirm every figure against the official source pages cited above before relying on it.

@@ -4,14 +4,15 @@ description: "Angola corporate income tax (Imposto Industrial) for tax year 2026
 jurisdiction: AO
 category: international
 tax_year: 2026
-last_updated: 2026-11-01
-version: 0.2
+last_updated: 2026-11-14
+type: computation
+version: 0.3
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
 ---
 
-# Angola Corporate Income Tax (Imposto Industrial) v0.2
+# Angola Corporate Income Tax (Imposto Industrial) v0.3
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -29,7 +30,6 @@ Companies, cooperatives, foundations, associations, autonomous funds and public 
 | Agriculture, aquaculture, beekeeping, poultry, fishing, forestry, livestock, exclusively | 10% | 2026 | https://portaldocontribuinte.minfin.gov.ao/impostos-e-taxas/imposto-industrial |
 | Banking, insurance, telecoms operators and Angolan oil companies | 35% | 2026 | https://portaldocontribuinte.minfin.gov.ao/impostos-e-taxas/imposto-industrial |
 | Provisional payment, general regime | 2% of total sales in the first six months | 2026 | https://portaldocontribuinte.minfin.gov.ao/impostos-e-taxas/imposto-industrial |
-| Withholding on services | 6.5% on payments for services, credited against final tax (old version) | 2026 | unverified: no official text opened for the rate under the II code |
 
 ## The base
 
@@ -114,4 +114,4 @@ expected:
 | AGT quick guide, II provisional assessment (read in part: menu step) | https://portaldocontribuinte.minfin.gov.ao/pdfs/guia-rapido/imposto-industrial/novos-guias/guia-rapido-liquidacao-provisoria-de-ii.pdf | 2026-11-01 |
 | AGT quick guide, II withholding map (read in part: menu step) | https://portaldocontribuinte.minfin.gov.ao/pdfs/guia-rapido/imposto-industrial/novos-guias/guia-rapido-mapa-retencao-na-fonte-de-ii.pdf | 2026-11-01 |
 
-Not yet confirmed: Simplified regime turnover threshold; the old general regime threshold Kz 25,000,000; the 6.5% services withholding article; loss carry-forward; penalties. The AGT page says provisional 2% is on total sales; the old version said sales not subject to withholding: check the code text.
+Not yet confirmed: Simplified regime turnover threshold; the old general regime threshold Kz 25,000,000; the 6.5% services withholding article; loss carry-forward; penalties. The AGT page says provisional 2% is on total sales; the old version said sales not subject to withholding: check the code text; withholding on services at 6.5% (old version; the 6.5% on the AGT IRT page and in Lei 14/25 art. 21 covers self-billing and Group C, not this rate).
