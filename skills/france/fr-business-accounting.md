@@ -301,7 +301,7 @@ CGI219I-b states the EUR42,500 reduced-rate slice per twelve-month period, and s
 | What | Value | Note |
 | --- | --- | --- |
 | Source | all figures below | https://bofip.impots.gouv.fr/bofip/3491-PGP.html |
-| Exemption | Turnover strictly below EUR7,630,000 | Restate turnover to twelve months; for a tax-group parent aggregate member turnover. Company capital must be fully paid and held continuously to at least75% under the stated direct/intermediary and fund conditions. https://bofip.impots.gouv.fr/bofip/3492-PGP.html |
+| Exemption | Turnover strictly below EUR 7,630,000 | Restate turnover to twelve months; for a tax-group parent aggregate member turnover. Company capital must be fully paid and held continuously to at least75% under the stated direct/intermediary and fund conditions. https://bofip.impots.gouv.fr/bofip/3492-PGP.html |
 
 A company whose corporation tax is not above the abatement owes no contribution, because the rate applies only to the tax left after the abatement.
 
