@@ -655,10 +655,9 @@ TERM_SHARED_WITH = {
     "FR": {"GF"},  # French Guiana uses French tax law and DGFiP
 }
 #: Territories that lawfully cite a neighbour's law and sites.
-#: French overseas territories, the Pacific collectivities (NC, PF, WF) included, cite French state
-#: sites (legifrance, impots.gouv, douane, the Wallis and Futuna prefecture at wallis-et-futuna.gouv.fr), and
+#: French overseas territories cite French state sites (legifrance, impots.gouv, douane), and
 #: Sint Maarten, Curacao and Aruba cite Dutch ones (overheid.nl) for Kingdom law.
-NEIGHBOUR_TLDS = {"GF": {"fr"}, "GP": {"fr"}, "MQ": {"fr"}, "RE": {"fr"}, "YT": {"fr"}, "MF": {"fr"}, "BL": {"fr"}, "PM": {"fr"}, "NC": {"fr"}, "PF": {"fr"}, "WF": {"fr"}, "SX": {"nl"}, "CW": {"nl"}, "AW": {"nl"}, "GG": {"uk"}, "IM": {"uk"}, "JE": {"uk"}, "GI": {"uk"}, "MC": {"fr"}, "SM": {"it"}, "VA": {"it"}, "LI": {"ch", "at"}, "SJ": {"no"}}
+NEIGHBOUR_TLDS = {"GF": {"fr"}, "GP": {"fr"}, "MQ": {"fr"}, "RE": {"fr"}, "YT": {"fr"}, "MF": {"fr"}, "BL": {"fr"}, "PM": {"fr"}, "SX": {"nl"}, "CW": {"nl"}, "AW": {"nl"}, "GG": {"uk"}, "IM": {"uk"}, "JE": {"uk"}, "GI": {"uk"}, "MC": {"fr"}, "SM": {"it"}, "VA": {"it"}, "LI": {"ch", "at"}, "SJ": {"no"}}
 #: Jurisdiction values that name no single place.
 NON_PLACE_JURISDICTIONS = {"", "GLOBAL", "INTL", "GENERAL", "EU", "EU-27", "EU/EEA/CH/UK", "?"}
 #: Two-letter endings that say nothing about a country.
