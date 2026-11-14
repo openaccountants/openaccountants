@@ -63,26 +63,6 @@ Not covered: companies, trusts, crypto businesses, crypto paid as salary (bindin
 6. **GST.** Check GST on NFT sales, mining services and crypto taken as payment [Crypto and GST].
 7. **Return.** Enter net crypto income or loss in the IR3 "other income" box, attach the calculation, file by 7 July unless there is a tax agent or extension of time, and check provisional tax [Declare].
 
-### Rates, bands and thresholds
-
-| Item | Value | Conditions | Source |
-| --- | --- | --- | --- |
-| Individual rate, up to NZD 15,600 | 10.5% | IRD table "From 1 April 2025", no later table; no tax-free threshold | https://www.ird.govt.nz/income-tax/income-tax-for-individuals/tax-codes-and-tax-rates-for-individuals/tax-rates-for-individuals |
-| Individual rate, NZD 15,601 to 53,500 | 17.5% | Each band rate applies only to income inside the band | same |
-| Individual rate, NZD 53,501 to 78,100 | 30% | | same |
-| Individual rate, NZD 78,101 to 180,000 | 33% | | same |
-| Individual rate, NZD 180,001 and over | 39% | | same |
-| Company rate, most companies | 28% | | https://www.ird.govt.nz/income-tax/income-tax-for-businesses-and-organisations/tax-rates-for-businesses |
-| Trustee rate, trust income NZD 10,000 or less | 33% | Undistributed income, from 1 April 2024 | https://www.ird.govt.nz/income-tax/income-tax-for-businesses-and-organisations/trusts-and-estates/income/trustee-tax-rates |
-| Trustee rate, trust income more than NZD 10,000 | 39% | Exceptions on the same page | same |
-| GST compulsory registration | NZD 60,000 | "at least" this in the last 12 months or expected in the next 12; the NFT page says "more than" this of NFT sales in a 12-month period | https://www.ird.govt.nz/gst/registering-for-gst |
-| GST standard rate (for example NFT sales to New Zealand buyers) | 15% | "The current rate is 15%." | https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir200---ir299/ir295/ir295.pdf |
-| IR3 filing trigger | more than NZD 200 | Income (before tax) IRD was not told about | https://www.ird.govt.nz/income-tax/income-tax-for-individuals/what-happens-at-the-end-of-the-tax-year/individual-income-tax-return---ir3 |
-| Provisional tax trigger | more than NZD 5,000 | Tax to pay at the end of the year from the last return | https://www.ird.govt.nz/income-tax/provisional-tax |
-| Record retention | at least 7 years | "even if you no longer have any cryptoassets" | https://www.ird.govt.nz/cryptoassets/taxing/record-keeping |
-
-Crypto income is added to other income; tax credits and codes are in [nz-income-tax-ir3](nz-income-tax-ir3.md). For the 2025 income year (1 April 2024 to 31 March 2025) IRD prints a separate table headed "From 1 April 2024 to 31 March 2025", with composite rates in some bands; the legacy Guide printed the current bands for that year, which was wrong. Use that table only for that year's returns.
-
 ### Legal classification
 
 | Term | Definition | Authority |
@@ -153,6 +133,26 @@ The onus is on the taxpayer, on the balance of probabilities. In technical decis
 
 - **Trading stock.** Cryptoassets are excepted financial arrangements (except those economically equivalent to debt), so "if your cryptoassets are trading stock they are valued at cost at the end of the tax year" [Cryptoassets]. Mining rewards that are trading stock: cost (value on receipt) is deducted in the year the rewards are returned as income [Calculating income].
 - **NZD conversion.** Value each transaction in NZD when it happens. IRRUIP18 says market value "can usually be obtained by looking up the value on a centralised exchange". The legacy "mid-market rate" rule is on no page read. Record a crypto-to-crypto exchange "as both a disposal and an acquisition" [Calculating income], at the market value of the cryptoasset received.
+
+## Rates, bands and thresholds
+
+| Item | Value | Conditions | Source |
+| --- | --- | --- | --- |
+| Individual rate, up to NZD 15,600 | 10.5% | IRD table "From 1 April 2025", no later table; no tax-free threshold | https://www.ird.govt.nz/income-tax/income-tax-for-individuals/tax-codes-and-tax-rates-for-individuals/tax-rates-for-individuals |
+| Individual rate, NZD 15,601 to 53,500 | 17.5% | Each band rate applies only to income inside the band | same |
+| Individual rate, NZD 53,501 to 78,100 | 30% | | same |
+| Individual rate, NZD 78,101 to 180,000 | 33% | | same |
+| Individual rate, NZD 180,001 and over | 39% | | same |
+| Company rate, most companies | 28% | | https://www.ird.govt.nz/income-tax/income-tax-for-businesses-and-organisations/tax-rates-for-businesses |
+| Trustee rate, trust income NZD 10,000 or less | 33% | Undistributed income, from 1 April 2024 | https://www.ird.govt.nz/income-tax/income-tax-for-businesses-and-organisations/trusts-and-estates/income/trustee-tax-rates |
+| Trustee rate, trust income more than NZD 10,000 | 39% | Exceptions on the same page | same |
+| GST compulsory registration | NZD 60,000 | "at least" this in the last 12 months or expected in the next 12; the NFT page says "more than" this of NFT sales in a 12-month period | https://www.ird.govt.nz/gst/registering-for-gst |
+| GST standard rate (for example NFT sales to New Zealand buyers) | 15% | "The current rate is 15%." | https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir200---ir299/ir295/ir295.pdf |
+| IR3 filing trigger | more than NZD 200 | Income (before tax) IRD was not told about | https://www.ird.govt.nz/income-tax/income-tax-for-individuals/what-happens-at-the-end-of-the-tax-year/individual-income-tax-return---ir3 |
+| Provisional tax trigger | more than NZD 5,000 | Tax to pay at the end of the year from the last return | https://www.ird.govt.nz/income-tax/provisional-tax |
+| Record retention | at least 7 years | "even if you no longer have any cryptoassets" | https://www.ird.govt.nz/cryptoassets/taxing/record-keeping |
+
+Crypto income is added to other income; tax credits and codes are in [nz-income-tax-ir3](nz-income-tax-ir3.md). For the 2025 income year (1 April 2024 to 31 March 2025) IRD prints a separate table headed "From 1 April 2024 to 31 March 2025", with composite rates in some bands; the legacy Guide printed the current bands for that year, which was wrong. Use that table only for that year's returns.
 
 ## Boundary and exception table
 
