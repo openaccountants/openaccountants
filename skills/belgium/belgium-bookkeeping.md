@@ -1,11 +1,12 @@
 ---
 name: belgium-bookkeeping
-description: "Belgian bookkeeping for financial years running in 2026: who must keep books under the Code of Economic Law (WER / CDE art. III.82 to III.95), double-entry books for every company, the simplified three-journal method for sole traders, general partnerships and limited partnerships with turnover up to EUR 500,000 (EUR 620,000 for fuel retailers), the minimum chart of accounts (MAR / PCMN) in annex 1 to the Royal Decree of 21 October 2018, the 2019 valuation rules, the balance sheet and profit and loss schemes, the 2026 size criteria (micro, small, large), the 2026 NBB filing costs, retention periods and the links to corporate tax and VAT. Trigger on: Belgian bookkeeping, PCMN, MAR, minimumindeling, plan comptable minimum normalisé, boekhoudwet, single-entry books Belgium, jaarrekening, comptes annuels, chart of accounts Belgium. Out of scope: filing the accounts in depth (belgium-financial-statements), e-invoicing (belgium-einvoice), VAT returns (be-vat-return), corporate tax (be-corporate-tax), payroll (belgium-payroll)."
-version: 1.1
+description: "Belgian bookkeeping for financial years running in 2026. Covers who must keep books under the Code of Economic Law (WER / CDE art. III.82 to III.95), double-entry books for every company, the simplified three-journal method for sole traders, general partnerships and limited partnerships with turnover up to EUR 500,000 (EUR 620,000 for fuel retailers), the minimum chart of accounts (MAR / PCMN) in annex 1 to the Royal Decree of 21 October 2018, the 2019 valuation rules, the balance sheet and profit and loss schemes, the 2026 size criteria (micro, small, large), the 2026 NBB filing costs, retention periods and the links to corporate tax and VAT. Trigger phrases include Belgian bookkeeping, PCMN, MAR, minimumindeling, plan comptable minimum normalisé, boekhoudwet, single-entry books Belgium, jaarrekening, comptes annuels, chart of accounts Belgium. Out of scope are filing the accounts in depth (belgium-financial-statements), e-invoicing (belgium-einvoice), VAT returns (be-vat-return), corporate tax (be-corporate-tax), payroll (belgium-payroll)."
+version: 2.0
 jurisdiction: BE
 category: bookkeeping
+type: situation-rules
 tax_year: 2026
-last_updated: 2026-10-30
+last_updated: 2026-11-14
 depends_on:
   - bookkeeping-workflow-base
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -13,13 +14,16 @@ tier: 2
 domain: bookkeeping
 ---
 
-# Belgium Bookkeeping
+# Belgium bookkeeping, financial years running in 2026
 
-Figures and rules below apply to financial years running in 2026. Each line names its source; the full list is in Sources at the end. The law texts were read in the consolidated Justel database (ejustice.just.fgov.be) on 2026-10-30.
+> **General reference only.** This Guide and its outputs are for information and computation only and are not tax, legal or financial advice. A qualified professional in Belgium must review any output before anyone files or acts on it.
 
-## Section 1 -- Quick Reference
+**Answer layer.** Every Belgian company keeps double-entry books on the minimum chart of accounts (MAR / PCMN). Sole traders, organisations without legal personality, VOF / SNC and ordinary CommV / SComm may keep simplified three-journal books while last year's turnover excluding VAT is at most EUR 500,000 (EUR 620,000 for road-fuel retailers). Books are kept 7 years from 1 January after year-end; supporting documents 7 years. Ask first: legal form, last year's turnover, the year-end date and length, VAT status and staff.
 
-**Quick Reference**
+The law texts were read in the consolidated Justel database (ejustice.just.fgov.be) and FisconetPlus on 2026-11-14.
+
+## Scope
+
 
 | Field | Value |
 | --- | --- |
@@ -32,15 +36,68 @@ Figures and rules below apply to financial years running in 2026. Each line name
 | Standard chart of accounts | Minimumindeling van het algemeen rekeningenstelsel (MAR) / Plan comptable minimum normalisé (PCMN), annex 1 to the Royal Decree of 21 October 2018 (art. 10) |
 | Standard-setter | Commissie voor Boekhoudkundige Normen (CBN) / Commission des Normes Comptables (CNC) (WER art. III.93) |
 | Companies law | Wetboek van vennootschappen en verenigingen (WVV) / Code des sociétés et des associations (CSA) |
-| Filing of annual accounts | National Bank of Belgium (NBB / BNB), within 30 days after approval and at the latest 7 months after year-end (WVV art. 3:12 § 1) |
+| Filing of annual accounts | National Bank of Belgium (NBB / BNB), within 30 days after approval and at the latest 7 months after year-end (WVV art. 3:10) |
 | Tax authority | FOD Financiën / SPF Finances |
 | Retention of books | 7 years from 1 January of the year after the year-end (KB 21 October 2018 art. 8) |
 
-## Section 2 -- Standard Chart of Accounts (MAR / PCMN)
+### Who must keep books, and which method
+
+
+
+| Entity | Method | Source |
+| --- | --- | --- |
+| Every company with legal personality (NV / SA, BV / SRL, CV / SC and others) | Double entry, always | WER art. III.84 |
+| Sole trader (natural person), organisation without legal personality, VOF / SNC, ordinary CommV / SComm | Simplified (three journals) if last year's turnover excluding VAT is at most EUR 500,000; otherwise double entry | WER art. III.85 § 1; KB 21 October 2018 art. 1 |
+| Same, if the main activity is retail sale of road fuel | Simplified if turnover is at most EUR 620,000 | KB 21 October 2018 art. 1, second paragraph |
+| Natural person whose only self-employed activity is holding director mandates | No bookkeeping obligation | WER art. III.82 § 1, second paragraph, 1° |
+
+- **Simplified books.** At least three journals: (1) cash and bank movements, with withdrawals not for the business shown separately and daily cash balances; (2) purchases, imports and services received; (3) sales, exports and services supplied, with withdrawals in kind (WER art. III.85 § 1).
+- **Year not 12 months.** The EUR 500,000 and EUR 620,000 limits are scaled by the number of months, each started month counting in full (KB 21 October 2018 art. 2).
+- **Starters.** In the first year the simplified method may be used if a good-faith forecast shows turnover will not exceed the limit (KB 21 October 2018 art. 3).
+
+## Rates, bands and thresholds
+
+| Item | Figure | Conditions | Source |
+| --- | --- | --- | --- |
+| Simplified books turnover limit | EUR 500,000 excluding VAT, last financial year | Sole traders, organisations without legal personality, VOF / SNC, ordinary CommV / SComm | [KB 21 October 2018, art. 1 (Justel)](https://www.ejustice.just.fgov.be/eli/besluit/2018/10/21/2018014350/justel) |
+| Simplified books limit, road-fuel retailers | EUR 620,000 | Main activity retail sale of road fuel | same |
+| Limits for a year not of 12 months | Multiplied by months / 12, each started month in full | Short or long financial year | [KB 21 October 2018, art. 2 (Justel)](https://www.ejustice.just.fgov.be/eli/besluit/2018/10/21/2018014350/justel) |
+| Retention of books | 7 years from 1 January of the year after year-end | All businesses keeping books | [KB 21 October 2018, art. 8 (Justel)](https://www.ejustice.just.fgov.be/eli/besluit/2018/10/21/2018014350/justel) |
+| Retention of supporting documents | 7 years in original or copy; 3 years for documents that are not evidence against third parties | All bookings | [WER art. III.86 (Justel)](https://www.ejustice.just.fgov.be/eli/wet/2013/02/28/2013A11134/justel) |
+| VAT records retention | 7 years ("tien" replaced by "zeven" in VAT Code art. 60 § 3 and § 4) | VAT due from 1 January 2023 | [Law of 18 December 2025, art. 97 and 101](https://www.ejustice.just.fgov.be/eli/wet/2025/12/18/2025009647/staatsblad) |
+| Formation expenses, if capitalised | Written off by at least 20% a year | Company accounts | [KB WVV art. 3:37 (Justel)](https://www.ejustice.just.fgov.be/eli/besluit/2019/04/29/2019011967/justel) |
+| Goodwill and development costs | At most 10 years where the useful life cannot be estimated | Company accounts | [KB WVV art. 3:39 (Justel)](https://www.ejustice.just.fgov.be/eli/besluit/2019/04/29/2019011967/justel) |
+| Restaurant costs disallowed | 31% | Business restaurant costs; income 2026 | [WIB 92 art. 53, 8°bis (income 2026)](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/69b77d81-d360-48f5-a66c-fa9eee78daca) |
+| Reception costs and business gifts disallowed | 50% | Income 2026 | [WIB 92 art. 53, 8° (income 2026)](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/69b77d81-d360-48f5-a66c-fa9eee78daca) |
+| Plug-in hybrid costs other than fuel and electricity | 120% - (0.5% x g CO2/km), at most 75% if bought, leased or rented before 1 January 2028 (unless at most 50 g CO2/km) | From assessment year 2027 | [WIB 92 art. 66 § 1/1 (income 2026)](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/dfec7b36-48d5-41fc-abea-04a7eaac88a3) |
+| Micro company limits | 10 FTE; turnover EUR 900,000; balance sheet EUR 450,000 | No more than one exceeded; not a parent or subsidiary | [WVV art. 1:25 (Justel)](https://www.ejustice.just.fgov.be/eli/wet/2019/03/23/2019A40586/justel) |
+| Small company limits | 50 FTE; turnover EUR 11,250,000; balance sheet EUR 6,000,000 | No more than one exceeded | [WVV art. 1:24 (Justel)](https://www.ejustice.just.fgov.be/eli/wet/2019/03/23/2019A40586/justel) |
+| Exceptional financial year | At most 24 months less one day | Companies | [WVV art. 1:24 § 4 (Justel)](https://www.ejustice.just.fgov.be/eli/wet/2019/03/23/2019A40586/justel) |
+| NBB filing cost 2026, XBRL | Micro EUR 67.00; abbreviated EUR 89.40; full EUR 379.50 | Filings in 2026 | [NBB, filing costs history 2026 (PDF)](https://www.nbb.be/doc/ba/tarif/2026/historiek%20van%20de%20neerleggingskosten%20van%20vennootschappen_2026_nl.pdf) |
+| NBB filing cost 2026, PDF | Micro EUR 137.30; abbreviated EUR 159.50; full EUR 449.70 | Same | same |
+
+## Ask the client first
+
+1. Legal form, and whether it has legal personality.
+2. Last financial year's turnover excluding VAT; for a starter, a good-faith forecast.
+3. Financial year dates and length (short or long first year?).
+4. Main activity (road-fuel retail changes the limit).
+5. VAT status (normal, small-business exemption, exempt) and return frequency.
+6. Staff (Dimona FTE), and any directors paid outside an employment contract.
+7. Which software, and whether it receives and sends Peppol e-invoices.
+8. Company cars (fuel type, CO2, date bought, leased or rented).
+
+## The method, step by step
+
+### Step 1. Pick the bookkeeping method
+
+Use the table in Scope: double entry for every company; simplified books only under the turnover limits above, scaled for a year not of 12 months.
+
+### Step 2. Set up the minimum chart of accounts (MAR / PCMN)
 
 The minimum chart binds every business that must keep books, except Belgian branches of foreign businesses that have no income of their own, and except associations and foundations, which have their own chart (KB 21 October 2018 art. 9, 10, 12). The account names may be adapted to the business, and accounts that are not needed may be left out (art. 11). The chart below follows the official CBN text. The balance sheet uses classes 1 to 5; the profit and loss account uses classes 6 and 7. Where the chart fixes no sub-account (for example 610 to 616), the business sets its own breakdown.
 
-### Class 1 -- Equity, provisions and amounts payable after more than one year
+#### Class 1. Equity, provisions and amounts payable after more than one year
 
 **Class 1 -- Equity, provisions and amounts payable after more than one year**
 
@@ -66,7 +123,7 @@ The minimum chart binds every business that must keep books, except Belgian bran
 | 173 | Kredietinstellingen / Établissements de crédit | Credit institutions (bank loans) |
 | 175 | Handelsschulden / Dettes commerciales | Trade debts |
 
-### Class 2 -- Formation expenses, fixed assets and amounts receivable after more than one year
+#### Class 2. Formation expenses, fixed assets and amounts receivable after more than one year
 
 **Class 2 -- Formation expenses, fixed assets and long-term receivables**
 
@@ -91,7 +148,7 @@ The minimum chart binds every business that must keep books, except Belgian bran
 | 288 | Borgtochten betaald in contanten | Cash guarantees paid |
 | 29 | Vorderingen op meer dan één jaar / Créances à plus d'un an | Amounts receivable after more than one year |
 
-### Class 3 -- Stocks and contracts in progress
+#### Class 3. Stocks and contracts in progress
 
 **Class 3 -- Stocks and contracts in progress**
 
@@ -106,7 +163,7 @@ The minimum chart binds every business that must keep books, except Belgian bran
 | 36 | Vooruitbetalingen op voorraadinkopen / Acomptes versés sur achats pour stocks | Advance payments on stock purchases |
 | 37 | Bestellingen in uitvoering / Commandes en cours d'exécution | Contracts in progress |
 
-### Class 4 -- Amounts receivable and payable within one year
+#### Class 4. Amounts receivable and payable within one year
 
 **Class 4 -- Amounts receivable and payable within one year**
 
@@ -134,7 +191,7 @@ The minimum chart binds every business that must keep books, except Belgian bran
 | 492 | Toe te rekenen kosten / Charges à imputer | Accrued charges |
 | 493 | Over te dragen opbrengsten / Produits à reporter | Deferred income |
 
-### Class 5 -- Current investments and cash
+#### Class 5. Current investments and cash
 
 **Class 5 -- Current investments and cash**
 
@@ -148,7 +205,7 @@ The minimum chart binds every business that must keep books, except Belgian bran
 | 57 | Kassen / Caisses (570 to 577) | Cash in hand |
 | 58 | Interne overboekingen / Virements internes | Internal transfers |
 
-### Class 6 -- Charges
+#### Class 6. Charges
 
 **Class 6 -- Charges**
 
@@ -186,7 +243,7 @@ The minimum chart binds every business that must keep books, except Belgian bran
 | 68 | Overboeking naar uitgestelde belastingen en belastingvrije reserves | Transfer to deferred taxes and untaxed reserves |
 | 69 | Resultaatverwerking | Appropriation of profit |
 
-### Class 7 -- Income
+#### Class 7. Income
 
 **Class 7 -- Income**
 
@@ -209,22 +266,8 @@ The minimum chart binds every business that must keep books, except Belgian bran
 
 Corrections against the 2025 version of this skill: 172 is leasing and 173 is credit institutions (not the reverse); 27 is assets under construction and 28 financial fixed assets (28 is not accumulated depreciation); 617 is temporary staff and 618 directors' pay (not fees and advertising); 631 is the stock write-down and 634 the trade receivables write-down; 622 is group insurance and 623 other staff costs; 653 is discount charges, not bank charges; 753 is capital and interest subsidies, not interest received; classes 66 and 76 are "non-recurring", not "exceptional"; the chart has no postal account 56 and no fixed sub-accounts 610 to 616 or 240 to 242.
 
-## Section 3 -- Revenue Recognition and the Books
+### Step 3. Book transactions and apply the valuation rules
 
-### Which method
-
-**Which method**
-
-| Entity | Method | Source |
-| --- | --- | --- |
-| Every company with legal personality (NV / SA, BV / SRL, CV / SC and others) | Double entry, always | WER art. III.84 |
-| Sole trader (natural person), organisation without legal personality, VOF / SNC, ordinary CommV / SComm | Simplified (three journals) if last year's turnover excluding VAT is at most EUR 500,000; otherwise double entry | WER art. III.85 § 1; KB 21 October 2018 art. 1 |
-| Same, if the main activity is retail sale of road fuel | Simplified if turnover is at most EUR 620,000 | KB 21 October 2018 art. 1, second paragraph |
-| Natural person whose only self-employed activity is holding director mandates | No bookkeeping obligation | WER art. III.82 § 1, second paragraph, 1° |
-
-- **Simplified books.** At least three journals: (1) cash and bank movements, with withdrawals not for the business shown separately and daily cash balances; (2) purchases, imports and services received; (3) sales, exports and services supplied, with withdrawals in kind (WER art. III.85 § 1).
-- **Year not 12 months.** The EUR 500,000 and EUR 620,000 limits are scaled by the number of months, each started month counting in full (KB 21 October 2018 art. 2).
-- **Starters.** In the first year the simplified method may be used if a good-faith forecast shows turnover will not exceed the limit (KB 21 October 2018 art. 3).
 - **Double-entry books.** All transactions are booked without delay, faithfully, completely and in date order in a journal or sub-journals, and summarised in a central ledger at least once a month (WER art. III.84). Every entry refers to a dated supporting document (WER art. III.86).
 - **Inventory and annual accounts.** At least once a year the business takes stock of all assets and liabilities (WER art. III.89 § 1) and summarises the reconciled accounts in annual accounts (WER art. III.90 § 1).
 - **Prudence and accruals.** Valuations must meet the requirements of prudence, sincerity and good faith (KB WVV art. 3:10). All foreseeable risks, possible losses and falls in value of the year or earlier years are taken into account, even if they become known only between the balance sheet date and the date the accounts are drawn up; income and charges of the year are booked whatever the day they are paid or received, unless collection of the income is uncertain (KB WVV art. 3:11).
@@ -233,13 +276,12 @@ Corrections against the 2025 version of this skill: 172 is leasing and 173 is cr
 - **Cost of identical items.** Specific identification, weighted average, FIFO or LIFO (KB WVV art. 3:21).
 - **VAT and invoices.** VAT timing and invoicing are in [be-vat-return](be-vat-return.md). From 1 January 2026 invoices between Belgian VAT-registered businesses are structured e-invoices: see [belgium-einvoice](belgium-einvoice.md).
 
-## Section 4 -- Expense Classification
+### Step 4. Classify expenses
 
-### Deductible expenses (key categories)
+#### Deductible expenses (key categories)
 
 Business costs are booked in class 6 under the chart above. For company tax, the starting point is the accounting profit, adjusted by the disallowed expenses (verworpen uitgaven / dépenses non admises): see [be-corporate-tax](be-corporate-tax.md).
 
-**Typical bookings**
 
 | Category | MAR code | Tax note |
 | --- | --- | --- |
@@ -252,26 +294,25 @@ Business costs are booked in class 6 under the chart above. For company tax, the
 | Operating taxes (for example property tax) | 640 | Deductible |
 | Income tax | 670 | Not deductible |
 
-### Partly or non-deductible expenses
+#### Partly or non-deductible expenses
 
 **Partly or non-deductible expenses (company tax)**
 
 | Category | Rule | Source |
 | --- | --- | --- |
-| Restaurant costs | 31% disallowed (69% deductible) | WIB 92 art. 53, 8°bis; FOD Financiën notes to the corporate tax return, AY 2026 |
-| Reception costs and business gifts | 50% disallowed | WIB 92 art. 53, 8°; same notes |
-| Restaurant, reception and gift costs recharged to a third party and shown separately on the invoice | Stay deductible | WIB 92 art. 53/1; same notes |
-| Fines, including administrative fines, and increases of social contributions | Not deductible | WIB 92 art. 53, 6°; same notes |
-| Non-specific work clothing (and allowances paid to others for it) | Not deductible, unless recharged to a third party and shown separately on the invoice | WIB 92 art. 53, 7° and 53/1; same notes |
+| Restaurant costs | 31% disallowed (69% deductible) | WIB 92 art. 53, 8°bis (income 2026) |
+| Reception costs and business gifts | 50% disallowed | WIB 92 art. 53, 8° (income 2026) |
+| Restaurant, reception and gift costs recharged to a third party and shown separately on the invoice | Stay deductible | WIB 92 art. 53/1 (not reopened today) |
+| Fines, including administrative fines, and increases of social contributions | Not deductible | WIB 92 art. 53, 6° (income 2026) |
+| Non-specific work clothing (and allowances paid to others for it) | Not deductible, unless recharged to a third party and shown separately on the invoice | WIB 92 art. 53, 7° (income 2026) and 53/1 |
 | Car costs | Deductible share set by a CO2 formula and the date the car was bought, leased or rented | WIB 92 art. 66 and 198bis; details in be-corporate-tax and be-income-tax |
 
-- **Car formula, for reference.** The non-deductible share is 60% where emissions are 200 g CO2/km or more or unknown. Otherwise it is 100% - [120% - (0.5% x coefficient x g CO2/km)], with coefficient 1 for diesel-only cars and 0.95 for other cars (0.90 for natural gas cars under 12 fiscal HP). For cars bought, leased or rented before 1 July 2023 the non-deductible share from the formula cannot exceed 50% (FOD Financiën notes, AY 2026). For cars bought, leased or rented from 1 July 2023 to 31 December 2025 the AY 2026 notes (income 2025) set the non-deductible share at no less than 25%, unless the car emits no CO2. That floor is for income 2025 only: the Law of 18 December 2025 rewrote the transitional rule for cars bought, leased or rented before 1 January 2026 (art. 26, WIB 92 art. 550), and the 2026 percentage for these cars is in be-corporate-tax and be-income-tax. The same law (art. 23) added deduction caps for plug-in hybrids in a new art. 66 § 1/1. Use be-corporate-tax for the 2026 percentage of a given car.
+- **Car costs from income 2026 (assessment year 2027).** Art. 66 § 1 WIB 92 as rewritten by the Law of 18 December 2025: car costs are not deductible unless the car emits no CO2; cars bought, leased or rented before 1 January 2026 keep a transitional percentage under art. 550 (see be-corporate-tax). Plug-in hybrids (art. 66 § 1/1): electricity at the zero-emission percentage; other costs except fuel at 120% - (0.5% x g CO2/km), capped at 75% for a car bought, leased or rented before 1 January 2028 unless it emits at most 50 g CO2/km. The income 2025 formula of the earlier version is on the "Not yet confirmed" line. Use be-corporate-tax for the percentage of a given car.
 
-## Section 5 -- Asset vs Expense Thresholds
+### Step 5. Capitalise or expense, and depreciate
 
-### Capitalisation rules
+#### Capitalisation rules
 
-**Capitalisation rules**
 
 | Rule | Detail | Source |
 | --- | --- | --- |
@@ -285,24 +326,31 @@ Business costs are booked in class 6 under the chart above. For company tax, the
 
 The 2025 version said goodwill and intangibles are written off over a minimum of 5 years. The decree sets a maximum of 10 years for goodwill and development costs where the life cannot be estimated, and at least 20% a year only for formation expenses.
 
-### Depreciation methods
+#### Depreciation methods
 
-**Depreciation methods**
 
 | Topic | Rule | Source |
 | --- | --- | --- |
 | Accounting plan | Method set in the valuation rules; accelerated depreciation allowed under tax rules, with the excess over economic depreciation disclosed in the notes | KB WVV art. 3:39, 3:42 |
-| Declining balance for company tax | Only for assets acquired or created before 1 January 2020 | WIB 92 art. 196 § 3, as stated in the FOD Financiën notes, AY 2026 |
+| Declining balance for company tax | Earlier version: only for assets acquired or created before 1 January 2020 (WIB 92 art. 196 § 3, AY 2026 notes); not reopened today, see "Not yet confirmed" | AY 2026 notes, read 2026-10-30 |
 | Extra or non-recurring write-off | Where technical or economic change makes book value exceed value in use | KB WVV art. 3:42 § 1 |
 
-- The 2025 version said SMEs kept the declining-balance option after 2020. The AY 2026 notes say declining balance is only available for assets acquired or created before 1 January 2020, with no SME exception for companies.
+- The 2025 version said SMEs kept the declining-balance option after 2020. The AY 2026 notes (read 2026-10-30, not reopenable today) said declining balance is only available for assets acquired or created before 1 January 2020, with no SME exception for companies.
 - Usual rates per asset class are administrative practice, not law; see the "Not yet confirmed" line.
 
-## Section 6 -- P&L Format (Resultatenrekening / Compte de résultats)
+### Step 6. Reconcile the bank
+
+- Every booking needs a dated supporting document (WER art. III.86). Bank statements are the supporting document for class 55 entries.
+- Supporting documents are kept 7 years, in original or copy; documents that are not evidence against third parties are kept 3 years (WER art. III.86).
+- Bank accounts go in 550 to 559, one sub-account per bank; cash in 570 to 577; transfers between own accounts pass through 58 (MAR).
+- Tax payments clear 450 to 453 and 411 / 451; RSZ / ONSS payments clear 454; net wages clear 455 (MAR).
+- Statement file formats and payment references are bank practice, not law; see the "Not yet confirmed" line.
+
+### Step 7. Close the year: profit and loss account
 
 The full scheme is in annex 3 to the KB WVV (art. 3:81). Small companies use the abbreviated scheme in annex 4 (art. 3:84), which starts with the gross margin; micro companies use the same layout (art. 3:87). See [belgium-financial-statements](belgium-financial-statements.md) for the size test.
 
-### Full scheme (by nature)
+#### Full scheme (by nature)
 
 **P&L full scheme (KB WVV annex 3)**
 
@@ -338,11 +386,11 @@ XI.   Te bestemmen winst / verlies van het boekjaar (Profit to appropriate)
 
 The 2025 version showed "exceptional" income and charges as separate headings. That layout is gone: non-recurring items now sit inside operating and financial results.
 
-## Section 7 -- Balance Sheet Format (Balans / Bilan)
+### Step 8. Close the year: balance sheet
 
 The full balance sheet is in annex 3 to the KB WVV (art. 3:80); small and micro companies use the abbreviated version in annex 4 (art. 3:83, 3:86).
 
-### Full scheme
+#### Full scheme
 
 **Balance sheet (KB WVV annex 3)**
 
@@ -381,19 +429,10 @@ TOTAAL VAN DE PASSIVA
 
 Equity heading I is "Inbreng" (contribution). A BV shows available and unavailable contribution instead of capital. Debts are headings VIII to X; the 2025 version used the old numbers IX to XI.
 
-## Section 8 -- Bank Reconciliation Patterns
+### Step 9. Apply the size simplifications
 
-- Every booking needs a dated supporting document (WER art. III.86). Bank statements are the supporting document for class 55 entries.
-- Supporting documents are kept 7 years, in original or copy; documents that are not evidence against third parties are kept 3 years (WER art. III.86).
-- Bank accounts go in 550 to 559, one sub-account per bank; cash in 570 to 577; transfers between own accounts pass through 58 (MAR).
-- Tax payments clear 450 to 453 and 411 / 451; RSZ / ONSS payments clear 454; net wages clear 455 (MAR).
-- Statement file formats and payment references are bank practice, not law; see the "Not yet confirmed" line.
+#### Size criteria (WVV art. 1:24 and 1:25)
 
-## Section 9 -- Micro-Entity / Small Business Simplifications
-
-### Size criteria (WVV art. 1:24 and 1:25)
-
-**Size criteria**
 
 | Category | Annual average staff (FTE) | Net turnover excl. VAT | Balance sheet total |
 | --- | --- | --- | --- |
@@ -407,9 +446,8 @@ Equity heading I is "Inbreng" (contribution). A BV shows available and unavailab
 - Turnover is scaled for a year that is not 12 months (art. 1:24 § 4). Staff is the FTE average registered in Dimona at each month-end (art. 1:24 § 5).
 - Linked companies: turnover and balance sheet total are measured on a consolidated basis and staff numbers are added up (art. 1:24 § 6). This applies only to parent companies (art. 1:24 § 7).
 
-### Simplifications
+#### Simplifications
 
-**Simplifications**
 
 | Feature | Micro | Small | Large | Source |
 | --- | --- | --- | --- | --- |
@@ -423,45 +461,99 @@ Equity heading I is "Inbreng" (contribution). A BV shows available and unavailab
 
 Late filing surcharges and the full filing procedure are in [belgium-financial-statements](belgium-financial-statements.md).
 
-### Sole traders and the self-employed (zelfstandigen / indépendants)
+#### Sole traders and the self-employed (zelfstandigen / indépendants)
 
 - Simplified three-journal books up to EUR 500,000 turnover excluding VAT; double entry above (WER art. III.85 § 1; KB 21 October 2018 art. 1).
 - The books cover only the self-employed activity; own funds used in it are shown separately (WER art. III.83).
 - Sole traders file no annual accounts with the NBB; their profit goes in the personal income tax return: see [be-income-tax](be-income-tax.md).
 - Social contributions are paid to a social insurance fund: see [be-social-contributions](be-social-contributions.md).
 
-## Section 10 -- Interaction with Tax Skills
+### Step 10. Hand over to the tax skills
 
-### Corporate income tax (vennootschapsbelasting / impôt des sociétés)
+#### Corporate income tax (vennootschapsbelasting / impôt des sociétés)
 
 - The annual accounts are the starting point: taxable profit is the accounting profit, adjusted by the tax corrections. Use [be-corporate-tax](be-corporate-tax.md) for the rates, the small-company rate test, the return and advance payments.
 - Key add-backs from Section 4: 31% of restaurant costs, 50% of reception costs and gifts, the non-deductible share of car costs, non-specific work clothing, fines.
 
-### VAT (btw / TVA)
+#### VAT (btw / TVA)
 
 - Input VAT is booked in 411 and output VAT in 451 (MAR).
 - Return frequency, deadlines, the annual client listing and the intra-EU listing, rates and the small-business exemption are in [be-vat-return](be-vat-return.md).
 - VAT records are kept 7 years: the Law of 18 December 2025 (art. 97) replaced "ten" by "seven" in VAT Code art. 60 § 3 and § 4, for VAT that became due from 1 January 2023 (art. 101).
 
-### Social contributions and payroll
+#### Social contributions and payroll
 
 - Employer and employee RSZ / ONSS rates are in [belgium-payroll](belgium-payroll.md); withholding tax on pay in [be-payroll-withholding](be-payroll-withholding.md); self-employed contributions in [be-social-contributions](be-social-contributions.md).
 
+## Worked cases
+
+### Case 1: simplified books in a short first year
+
+A sole trader starts on 15 April 2026 with a year-end of 31 December 2026. Each started month counts in full, so the first year has 9 months and the limit is EUR 500,000 x 9 / 12 = EUR 375,000. Her good-faith forecast is EUR 400,000 of turnover excluding VAT: above the scaled limit, so she keeps double-entry books from the start. A forecast of EUR 350,000 would allow the three journals.
+
+```oa-check
+name: Belgium simplified books limit, 9-month first year
+inputs:
+  annual_limit: 500000
+  months: 9
+  forecast_turnover: 400000
+  lower_forecast: 350000
+steps:
+  - scaled_limit: annual_limit * months / 12
+  - excess_over_limit: forecast_turnover - scaled_limit
+  - headroom_lower_forecast: scaled_limit - lower_forecast
+expected:
+  scaled_limit: 375000
+  excess_over_limit: 25000
+  headroom_lower_forecast: 25000
+```
+
+### Case 2: restaurant, reception and gift add-backs for company tax
+
+A BV books EUR 4,000 of business restaurant costs and EUR 2,000 of reception costs and gifts in class 61 for 2026, none recharged to third parties. For company tax 31% of the restaurant costs and 50% of the reception costs are disallowed expenses.
+
+```oa-check
+name: Belgium disallowed restaurant and reception costs, income 2026
+inputs:
+  restaurant: 4000
+  reception: 2000
+  restaurant_rate: 0.31
+  reception_rate: 0.50
+steps:
+  - restaurant_disallowed: restaurant * restaurant_rate
+  - reception_disallowed: reception * reception_rate
+  - total_add_back: restaurant_disallowed + reception_disallowed
+  - deductible: restaurant + reception - total_add_back
+expected:
+  restaurant_disallowed: 1240
+  reception_disallowed: 1000
+  total_add_back: 2240
+  deductible: 3760
+```
+
+The books keep the full EUR 6,000 as charges; the EUR 2,240 is added back only in the company tax return (be-corporate-tax).
+
+## When to refuse or refer
+
+- Associations and foundations: they have their own chart and rules; out of scope here.
+- Belgian branches of foreign businesses with no income of their own: not bound by the minimum chart.
+- Consolidation, IFRS or bank and insurer accounts: refer to a Belgian adviser.
+- Filing the accounts with the NBB: belgium-financial-statements. VAT returns: be-vat-return. Corporate tax: be-corporate-tax. Payroll: belgium-payroll.
+- The percentage for a specific company car: be-corporate-tax.
+
 ## Sources
 
-| Source | URL | Read on |
+| Source and what was read | Official URL | Read on |
 | --- | --- | --- |
-| Code of Economic Law (WER), Book III, Title 3, art. III.82 to III.95 (Justel, consolidated) | https://www.ejustice.just.fgov.be/eli/wet/2013/02/28/2013A11134/justel | 2026-10-30 |
-| Royal Decree of 21 October 2018 executing WER art. III.82 to III.95 (Justel, consolidated) | https://www.ejustice.just.fgov.be/eli/besluit/2018/10/21/2018014350/justel | 2026-10-30 |
-| CBN / CNC, minimum chart of accounts (MAR / PCMN), NL-FR-EN | https://www.cnc-cbn.be/fr/node/2250/multilingual-comparison/nl-fr-en | 2026-10-30 |
-| Companies and Associations Code (WVV), art. 1:24, 1:25, 3:1 to 3:14, 3:72 (Justel, consolidated) | https://www.ejustice.just.fgov.be/eli/wet/2019/03/23/2019A40586/justel | 2026-10-30 |
-| Royal Decree of 29 April 2019 executing the WVV (valuation rules, annexes 3 and 4) (Justel, consolidated) | https://www.ejustice.just.fgov.be/eli/besluit/2019/04/29/2019011967/justel | 2026-10-30 |
-| NBB, history of filing costs for companies, 2026 | https://www.nbb.be/doc/ba/tarif/2026/historiek%20van%20de%20neerleggingskosten%20van%20vennootschappen_2026_nl.pdf | 2026-10-30 |
-| FOD Financiën, notes to the corporate tax return, assessment year 2026 (PDF) | https://financien.belgium.be/sites/default/files/downloads/121-aangifte-venb-toelichting-2026.pdf | 2026-10-30 |
-| Law of 18 December 2025 on various provisions, art. 23, 25 and 26 (car costs), art. 97 and 101 (VAT retention) | https://www.ejustice.just.fgov.be/eli/wet/2025/12/18/2025009647/staatsblad | 2026-10-30 |
+| Fisconetplus, art. 53 WIB 92 (income 2026). Read for 6° fines, 7° clothing, 8° reception 50% and 8°bis restaurant 31% | https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/69b77d81-d360-48f5-a66c-fa9eee78daca | 2026-11-14 |
+| Fisconetplus, art. 66 WIB 92 (income 2026). Read for § 1 (no deduction unless zero CO2) and § 1/1 (plug-in hybrid formula and 75% cap), from assessment year 2027 | https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/dfec7b36-48d5-41fc-abea-04a7eaac88a3 | 2026-11-14 |
+| Code of Economic Law (WER), Justel consolidated. Read for art. III.82 to III.95, including III.84 (double entry), III.85 (three journals) and III.86 (7-year and 3-year retention of supporting documents) | https://www.ejustice.just.fgov.be/eli/wet/2013/02/28/2013A11134/justel | 2026-11-14 |
+| Royal Decree of 21 October 2018, Justel consolidated. Read for art. 1 (EUR 500,000 and EUR 620,000), art. 2 (scaling), art. 3 (starters), art. 8 (7-year retention) and art. 9 to 12 (minimum chart) | https://www.ejustice.just.fgov.be/eli/besluit/2018/10/21/2018014350/justel | 2026-11-14 |
+| CBN / CNC, minimum chart of accounts NL-FR-EN. Read for classes 1 to 7 and the corrected account numbers (172, 617, 653 and others) | https://www.cnc-cbn.be/fr/node/2250/multilingual-comparison/nl-fr-en | 2026-11-14 |
+| Companies and Associations Code (WVV), Justel consolidated. Read for art. 1:24, 1:25 (size limits), 3:1 to 3:14 and 3:72 | https://www.ejustice.just.fgov.be/eli/wet/2019/03/23/2019A40586/justel | 2026-11-14 |
+| Royal Decree of 29 April 2019 executing the WVV, Justel consolidated. Read for the valuation rules art. 3:10 to 3:55 and annexes 3 and 4 | https://www.ejustice.just.fgov.be/eli/besluit/2019/04/29/2019011967/justel | 2026-11-14 |
+| NBB, history of filing costs for companies, 2026 (PDF). Read for the 2026 XBRL and PDF costs per model | https://www.nbb.be/doc/ba/tarif/2026/historiek%20van%20de%20neerleggingskosten%20van%20vennootschappen_2026_nl.pdf | 2026-11-14 |
+| FOD Financien, notes to the corporate tax return, assessment year 2026 (PDF). Read on 2026-10-30 for the income 2025 car formula and declining balance; reopened 2026-11-14 but a bot check blocked it | https://financien.belgium.be/sites/default/files/downloads/121-aangifte-venb-toelichting-2026.pdf | 2026-10-30 |
+| Law of 18 December 2025. Read for art. 23, 25 and 26 (car costs) and art. 97 and 101 (VAT retention) | https://www.ejustice.just.fgov.be/eli/wet/2025/12/18/2025009647/staatsblad | 2026-11-14 |
 
-Not yet confirmed: classes 0, 8 and 9 of the chart (the CBN page read covers classes 1 to 7 only); the 2026 deductible percentage for each car category (art. 550 as rewritten by the Law of 18 December 2025 is amended again by art. 11 of the Law of 25 November 2021 with later effective dates; how the new art. 66 § 1/1 hybrid caps apply in company tax (art. 25 of the same law rewrites art. 198bis); the AY 2027 notes are not yet published and Fisconet was down on 2026-10-30, so the consolidated art. 66, 198bis and 550 could not be read); the restaurant and reception percentages were read in the AY 2026 notes, which cover income 2025, and no change for income 2026 was found in the laws read; whether the declining-balance limit in art. 196 § 3 also binds sole traders (read for companies only); the 2025 version's rule that declining balance is at most twice the straight-line rate and capped at 40% of cost (KB/WIB 92 art. 36 to 43, not read); the 2025 version's revenue timing rule (goods on delivery, services on completion or over time), not found in the KB WVV text read; the 2025 version's statement that from 2026 fully electric cars are 100% deductible and fossil cars bought after 1 July 2023 lose deductibility year by year (moved to be-corporate-tax, not re-read here); usual depreciation rates per asset class (3% to 5% buildings, 20% machinery and vehicles, 33% computers and software, 10% to 20% furniture), which are administrative practice and were not found in a law text; the "assets under EUR 1,000 expensed" practice; CBN advice 138/1 on R&D; the CODA bank statement format, the 12-digit structured communication (+++xxx/xxxx/xxxxx+++) and the bank keyword table from the 2025 version, which are banking practice with no official source read; the income tax retention period for books (WIB 92 art. 315) was not read; the 2025 version's points that first-year depreciation is pro rata temporis by day, and that residual value is normally nil were not found in the texts read.
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional before filing or acting upon.
+Not yet confirmed: the income 2025 car formula of the earlier version (non-deductible share 60% at 200 g CO2/km or more or unknown, otherwise 100% - [120% - (0.5% x coefficient x g CO2/km)], coefficient 1 diesel, 0.95 other, 0.90 natural gas under 12 fiscal HP; at most 50% non-deductible for cars from before 1 July 2023; at least 25% for cars from 1 July 2023 to 31 December 2025), read in the AY 2026 notes on 2026-10-30 and not reopenable today; declining balance only for assets acquired or created before 1 January 2020 (art. 196 § 3, same notes); art. 53/1 WIB 92 (recharged costs stay deductible) not reopened today; classes 0, 8 and 9 of the chart (the CBN page read covers classes 1 to 7 only); the 2026 deductible percentage for each car category (art. 550 as rewritten by the Law of 18 December 2025 is amended again by art. 11 of the Law of 25 November 2021 with later effective dates; how the new art. 66 § 1/1 hybrid caps apply in company tax (art. 25 of the same law rewrites art. 198bis); the AY 2027 notes are not yet published and art. 66 (income 2026) was read on 2026-11-14 but art. 198bis and 550 were not); the restaurant and reception percentages were read in the AY 2026 notes, which cover income 2025, and no change for income 2026 was found in the laws read; whether the declining-balance limit in art. 196 § 3 also binds sole traders (read for companies only); the 2025 version's rule that declining balance is at most twice the straight-line rate and capped at 40% of cost (KB/WIB 92 art. 36 to 43, not read); the 2025 version's revenue timing rule (goods on delivery, services on completion or over time), not found in the KB WVV text read; the 2025 version's statement that from 2026 fully electric cars are 100% deductible and fossil cars bought after 1 July 2023 lose deductibility year by year (moved to be-corporate-tax, not re-read here); usual depreciation rates per asset class (3% to 5% buildings, 20% machinery and vehicles, 33% computers and software, 10% to 20% furniture), which are administrative practice and were not found in a law text; the "assets under EUR 1,000 expensed" practice; CBN advice 138/1 on R&D; the CODA bank statement format, the 12-digit structured communication (+++xxx/xxxx/xxxxx+++) and the bank keyword table from the 2025 version, which are banking practice with no official source read; the income tax retention period for books (WIB 92 art. 315) was not read; the 2025 version's points that first-year depreciation is pro rata temporis by day, and that residual value is normally nil were not found in the texts read.
