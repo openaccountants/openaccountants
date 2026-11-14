@@ -1,10 +1,11 @@
 ---
 name: serbia-payroll
 description: "Serbian payroll for employers, tax year 2026. Covers the monthly gross-to-net for employees: salary tax at 10% on gross salary less the 2026 non-taxable amount of RSD 34,221 a month (pro rata for part-time and split between employers); employee contributions of 19.9% and employer contributions of 15.15% on a base between RSD 51,297 and RSD 732,820; non-taxable reimbursements from 1 February 2026; the PPP-PD return filed before each payment and payment on the day of payment; what happens when salary is not paid on time; the new-hire salary tax and contribution refunds; and penalties. Trigger on: obračun zarade, porez na zarade, neoporezivi iznos, bruto u neto, PPP-PD, doprinosi na zaradu, trošak poslodavca, Serbia gross to net. Out of scope: contribution rules for the self-employed and founders (serbia-social-contributions), the annual income tax (serbia-income-tax), non-residents and withholding on payments abroad (rs-cross-border)."
-version: 0.2
+version: 0.3
+type: computation
 jurisdiction: RS
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
@@ -35,11 +36,11 @@ Out of scope here: entrepreneurs paying themselves a personal salary (see serbia
 
 | Item | Rate or amount | Year | Source |
 |---|---|---|---|
-| Salary tax | 10% | 2026 | [ZPDG Art. 16](https://www.mfin.gov.rs/propisi/zakon-o-porezu-na-dohodak-gradjana) |
+| Salary tax | 10% | 2026 | [ZPDG Art. 16](https://www.mfin.gov.rs//upload/media/MOq4eO_6aa14ac8c7a47.docx) |
 | Non-taxable salary amount, full-time | RSD 34,221 a month | 2026 | [Law 109/2025, Art. 7, in the ZPDG consolidated text](https://www.mfin.gov.rs/upload/media/MOq4eO_6aa14ac8c7a47.docx) |
 | Non-taxable salary amount from 2027 | RSD 37,369 a month | 2027 | [ZPDG Art. 15a(2) as amended by 80/2026](https://www.mfin.gov.rs/upload/media/MOq4eO_6aa14ac8c7a47.docx) |
-| Employee contributions | PIO 14% + health 5.15% + unemployment 0.75% = 19.9% | 2026 | [ZDOSO Art. 44(2) and (3)](https://www.mfin.gov.rs/propisi/zakon-o-doprinosima-za-obavezno-socijalno-osiguranje) |
-| Employer contributions | PIO 10% + health 5.15% = 15.15% | 2026 | [ZDOSO Art. 44(2)](https://www.mfin.gov.rs/propisi/zakon-o-doprinosima-za-obavezno-socijalno-osiguranje) |
+| Employee contributions | PIO 14% + health 5.15% + unemployment 0.75% = 19.9% | 2026 | [ZDOSO Art. 44(2) and (3)](https://www.mfin.gov.rs/upload/media/c59gCf_6aa14bd2e2c04.docx) |
+| Employer contributions | PIO 10% + health 5.15% = 15.15% | 2026 | [ZDOSO Art. 44(2)](https://www.mfin.gov.rs/upload/media/c59gCf_6aa14bd2e2c04.docx) |
 | Minimum monthly contribution base | RSD 51,297 | from 1 Jan 2026 | [Minister of Finance, Sl. glasnik 112/2025](https://www.mfin.gov.rs/upload/media/nATlw2_69429ec84247a.docx) |
 | Maximum monthly contribution base | RSD 732,820 | from 1 Jan 2026 | [Minister of Finance, Sl. glasnik 112/2025](https://www.mfin.gov.rs/upload/media/mYTnAm_6942704946245.docx) |
 | Maximum annual contribution base | RSD 8,793,840 | 2026 | [Minister of Finance, Sl. glasnik 112/2025](https://www.mfin.gov.rs/upload/media/ZKR4zZ_6942708d56248.docx) |
@@ -54,7 +55,7 @@ Out of scope here: entrepreneurs paying themselves a personal salary (see serbia
 | New-hire refund of salary tax | 65%, 70% or 75% by number of new hires, on salary paid up to 31 Dec 2026 | 2026 | [ZPDG Art. 21v as amended by 109/2025; Law 80/2026 Art. 2](https://www.parlament.gov.rs/upload/archive/files/cir/doc/zakoni/14_saziv/2551-26.doc) |
 | New-hire refund of contributions | 65%, 70% or 75%, on salary paid up to 31 Dec 2026 | 2026 | [ZDOSO Art. 45, text up to 109/2025](https://www.mfin.gov.rs/upload/media/JTHpSm_693c0cc4015d4.docx) |
 | Minimum wage | RSD 371 an hour, net of tax and contributions | from 1 Jan 2026 | [Government decision of 11 September 2025](https://www.srbija.gov.rs/vest/en/257386/government-adopts-decision-on-regular-increase-in-minimum-wage.php) |
-| Late payment interest | NBS reference rate plus 10 percentage points, simple | 2026 | [ZPPPA Art. 75](https://www.mfin.gov.rs/propisi/zakon-o-poreskom-postupku-i-poreskoj-administraciji-0809) |
+| Late payment interest | NBS reference rate plus 10 percentage points, simple | 2026 | [ZPPPA Art. 75](https://www.mfin.gov.rs/upload/media/2UkJa3_6a9fe325297c3.docx) |
 
 ## The taxable base
 
@@ -200,14 +201,14 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Ministry of Finance: Zakon o porezu na dohodak građana, page and consolidated text up to 80/2026, with the 109/2025 and 80/2026 timing clauses (Arts. 13 to 18, 21a, 21v, 21d, 99 to 101) | https://www.mfin.gov.rs/propisi/zakon-o-porezu-na-dohodak-gradjana ; https://www.mfin.gov.rs/upload/media/MOq4eO_6aa14ac8c7a47.docx | 2026-10-23 |
-| National Assembly: law amending the ZPDG (published as 80/2026), showing Arts. 21v and 21d ran to 2026 before it, and its 2027 and 2028 timing | https://www.parlament.gov.rs/upload/archive/files/cir/doc/zakoni/14_saziv/2551-26.doc | 2026-10-23 |
-| Government of Serbia: minimum wage for 2026, decision of 11 September 2025 | https://www.srbija.gov.rs/vest/en/257386/government-adopts-decision-on-regular-increase-in-minimum-wage.php | 2026-10-23 |
-| Central Register of Mandatory Social Insurance: Zakon o Centralnom registru obaveznog socijalnog osiguranja (Sl. glasnik 95/2018), Arts. 12 and 40 | https://www.croso.gov.rs/storage/files/propisi/Zakon_o_centralnom_registru.pdf | 2026-10-23 |
-| Government: adjusted non-taxable amounts under the ZPDG from 1 February 2026 (Sl. glasnik 6/2026) | https://www.mfin.gov.rs/upload/media/O1eqFP_6981bc02426f9.docx | 2026-10-23 |
-| Ministry of Finance: Zakon o doprinosima za obavezno socijalno osiguranje, page and consolidated text up to 80/2026 | https://www.mfin.gov.rs/propisi/zakon-o-doprinosima-za-obavezno-socijalno-osiguranje ; https://www.mfin.gov.rs/upload/media/c59gCf_6aa14bd2e2c04.docx | 2026-10-23 |
-| Ministry of Finance: Zakon o doprinosima za obavezno socijalno osiguranje, consolidated text up to 109/2025 (the version for 2026) | https://www.mfin.gov.rs/upload/media/JTHpSm_693c0cc4015d4.docx | 2026-10-23 |
-| Minister of Finance: minimum and maximum monthly and maximum annual contribution bases for 2026 (Sl. glasnik 112/2025) | https://www.mfin.gov.rs/upload/media/nATlw2_69429ec84247a.docx ; https://www.mfin.gov.rs/upload/media/mYTnAm_6942704946245.docx ; https://www.mfin.gov.rs/upload/media/ZKR4zZ_6942708d56248.docx | 2026-10-23 |
-| Ministry of Finance: Zakon o poreskom postupku i poreskoj administraciji, consolidated text (Arts. 41, 75, 177, 178, 179) | https://www.mfin.gov.rs/propisi/zakon-o-poreskom-postupku-i-poreskoj-administraciji-0809 ; https://www.mfin.gov.rs/upload/media/2UkJa3_6a9fe325297c3.docx | 2026-10-23 |
+| Ministry of Finance: Zakon o porezu na dohodak građana, page and consolidated text up to 80/2026, with the 109/2025 and 80/2026 timing clauses (Arts. 13 to 18, 21a, 21v, 21d, 99 to 101) | https://www.mfin.gov.rs/propisi/zakon-o-porezu-na-dohodak-gradjana ; https://www.mfin.gov.rs/upload/media/MOq4eO_6aa14ac8c7a47.docx | 2026-11-14 |
+| National Assembly: law amending the ZPDG (published as 80/2026), showing Arts. 21v and 21d ran to 2026 before it, and its 2027 and 2028 timing | https://www.parlament.gov.rs/upload/archive/files/cir/doc/zakoni/14_saziv/2551-26.doc | 2026-11-14 |
+| Government of Serbia: minimum wage for 2026, decision of 11 September 2025: read for the 2026 hourly minimum | https://www.srbija.gov.rs/vest/en/257386/government-adopts-decision-on-regular-increase-in-minimum-wage.php | 2026-11-14 |
+| Central Register of Mandatory Social Insurance: Zakon o Centralnom registru obaveznog socijalnog osiguranja (Sl. glasnik 95/2018), Arts. 12 and 40 | https://www.croso.gov.rs/storage/files/propisi/Zakon_o_centralnom_registru.pdf | 2026-11-14 |
+| Government: adjusted non-taxable amounts under the ZPDG from 1 February 2026 (Sl. glasnik 6/2026): read for the RSD 8,677 premium cap and the other amounts | https://www.mfin.gov.rs/upload/media/O1eqFP_6981bc02426f9.docx | 2026-11-14 |
+| Ministry of Finance: Zakon o doprinosima za obavezno socijalno osiguranje, page and consolidated text up to 80/2026: read for Art. 44 rates | https://www.mfin.gov.rs/propisi/zakon-o-doprinosima-za-obavezno-socijalno-osiguranje ; https://www.mfin.gov.rs/upload/media/c59gCf_6aa14bd2e2c04.docx | 2026-11-14 |
+| Ministry of Finance: Zakon o doprinosima za obavezno socijalno osiguranje: read for consolidated text up to 109/2025 (the version for 2026) | https://www.mfin.gov.rs/upload/media/JTHpSm_693c0cc4015d4.docx | 2026-11-14 |
+| Minister of Finance: minimum and maximum monthly and maximum annual contribution bases for 2026 (Sl. glasnik 112/2025): read for the 2026 bases | https://www.mfin.gov.rs/upload/media/nATlw2_69429ec84247a.docx ; https://www.mfin.gov.rs/upload/media/mYTnAm_6942704946245.docx ; https://www.mfin.gov.rs/upload/media/ZKR4zZ_6942708d56248.docx | 2026-11-14 |
+| Ministry of Finance: Zakon o poreskom postupku i poreskoj administraciji, consolidated text (Arts. 41, 75, 177, 178, 179) | https://www.mfin.gov.rs/propisi/zakon-o-poreskom-postupku-i-poreskoj-administraciji-0809 ; https://www.mfin.gov.rs/upload/media/2UkJa3_6a9fe325297c3.docx | 2026-11-14 |
 
 Not yet confirmed: the non-taxable reimbursement amounts that applied in January 2026; the Sl. glasnik number of the 2026 minimum wage decision; whether the CROSO Law has been amended since 2019; the current NBS reference rate for late payment interest.
