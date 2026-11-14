@@ -1,38 +1,151 @@
 ---
 name: sri-lanka-betting-gaming-excise
-description: Sri Lanka betting & gaming levy, excise duty and customs import duties — rates and obligations for Y/A 2025/26 (with 2026 amendments).
+description: Sri Lanka Betting and Gaming Levy for 2026 and the year of assessment 2026/27, under the Betting and Gaming Levy Act No. 40 of 1988 as amended by Act No. 11 of 2023 and Act No. 25 of 2025. Covers who is liable (bookmakers and gaming businesses, each place separately), the annual levy amounts, the gross collection levy (18% from 1 January 2026, 15% before), the casino entrance levy on Sri Lankan citizens (USD 100), payment and quarterly return dates, the 45% income tax rate on betting, gaming, liquor and tobacco profits, and how VAT and SSCL interact. Excise duty and customs duty are flagged, not computed.
+version: "1.0"
 jurisdiction: LK
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+tax_year_notes: "Calendar 2026 for the gross collection levy rate; year of assessment 2026/27 (2026-27) for the annual levy and income tax"
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: sector-guidance
+type: situation-rules
 ---
 
-# Sri Lanka Betting, Gaming Levy & Excise
+# Sri Lanka Betting and Gaming Levy, with excise and customs flags (2026)
 
-## 
+Built from the law: not yet approved by an accountant. Not tax advice.
 
-- **Customs import duties** — Standard bands revised to 0%, 10%, 20%, and 30% under National Tariff Policy effective April 2026 (Budget 2026). Anti-dumping and countervailing duties may apply additionally. Para-tariffs (PAL, CESS on most goods) being phased out. Import duty exemptions available for BOI-approved projects and qualifying machinery.  _(Customs Ordinance (Cap. 235); Budget 2026; IRD/Customs Circular)_
-- **Excise duty** — Levied on liquor, tobacco, fuel (petroleum products), motor vehicles, and certain luxury goods. Rates set by the Excise (Special Provisions) Act and annual gazette notifications. Excise duty on alcohol and tobacco increased periodically.  _(Excise Ordinance (Cap. 52); Excise (Special Provisions) Act No. 13 of 1989; Annual Gazette)_
-- **Betting and gaming levy** — Levy on gross collections of betting and gaming operations. Corporate income tax rate of 40% applies (see CIT section). Betting and Gaming Levy Act applies additional levy to licensed operators.  _(Betting and Gaming Levy Act; IRA First Schedule)_
-- **Stamp duty (transactions)** — Immovable property transfers: approximately 3% paid by buyer and 1.5% by seller at provincial level (may vary by province). Share transfers: stamp duty on instrument of transfer. Loan agreements and other instruments: specific rates.  _(Stamp Duty (Special Provisions) Act No. 12 of 2006; Provincial Council laws)_
-- **Customs import duty** — Bands revised to 0%, 10%, 20%, 30% (National Tariff Policy effective April 2026). Para-tariffs (PAL, CESS on most goods) being phased out. BOI exemptions for qualifying capital goods. Anti-dumping duties may apply additionally.  _(Customs Ordinance (Cap. 235); Budget 2026; IRD/Customs Department)_
-- **Stamp duty on property and instruments** — Levied on transfer of immovable property (provincial rates: approx. 3% buyer + 1.5% seller), share transfers, and other instruments.  _(Stamp Duty (Special Provisions) Act No. 12 of 2006; Provincial Council laws)_
-- **Legislative basis** — Betting and Gaming Levy Act No. 40 of 1988, as amended most recently by the Betting and Gaming Levy (Amendment) Act No. 25 of 2025 (passed by Parliament 5 December 2025; certified by the Speaker 17 December 2025).  _(Betting and Gaming Levy Act No. 40 of 1988; Amendment Act No. 25 of 2025)_
-- **Who is liable?** — Every person who carries on the business of a bookmaker OR business of gaming within Sri Lanka (whether lawfully or unlawfully) is chargeable to the levy. If the business is carried on in different places by the same person, a separate levy is payable for each separate place (each place treated as a separate business).  _(Betting and Gaming Levy Act No. 40 of 1988 s 2; IRD Betting and Gaming Levy page)_
-- **Gross Collection Levy (GCL) – current rate (from 1 January 2026)** — 18% percent of gross collections (INCREASED from 15% by the Betting and Gaming Levy (Amendment) Act No. 25 of 2025, effective 1 January 2026.)  _(Betting and Gaming Levy (Amendment) Act No. 25 of 2025; IRD Notice 31 Dec 2025)_
-- **Casino Entrance Levy (CEL) – current rate (from 1 January 2026)** — USD 100 per person entering casino/gaming establishment (or equivalent in any other convertible foreign currency, or in Sri Lankan Rupees for Sri Lankan citizens. DOUBLED from USD 50 per entrant. Collected directly by casino/gaming operators.)  _(Betting and Gaming Levy (Amendment) Act No. 25 of 2025; IRD Notice 31 Dec 2025)_
-- **Online betting (new – Gambling Regulatory Authority Act No. 16 of 2025)** — Online betting is now legally recognised under the Gambling Regulatory Authority Act No. 16 of 2025. The Gambling Regulatory Authority (GRA) was established to act as a one-stop shop for all gambling licences except state lotteries. Target: full operational status by 30 June 2026. Digital Gambling Licence required; operating without a valid licence: penalty up to LKR 10 million or 2 years' imprisonment.  _(Gambling Regulatory Authority Act No. 16 of 2025)_
-- **Corporate income tax rate on betting/gaming/liquor companies** — 40% percent (Applies to all companies engaged in betting, gaming, or liquor manufacturing/distribution. This is the highest corporate tax rate in Sri Lanka.)  _(IRA No. 24 of 2017 s 59; First Schedule; IRD CIT Guide)_
-- **Self-exclusion and responsible gambling requirements (2025 Act)** — All licensed software must include self-exclusion tools and spending limits to combat gambling addiction. Promoting unlicensed gambling or targeting persons under 18 years is strictly prohibited.  _(Gambling Regulatory Authority Act No. 16 of 2025)_
-- **Dutiable goods – liquor** — Excise duty is levied on the manufacture and import of all alcoholic beverages (beer, wine, arrack, spirits, toddy). Rates set by gazette (per litre of absolute alcohol or per unit as prescribed). Increases announced periodically in the Budget.  _(Excise Ordinance; Excise (Special Provisions) Act; IRD/Excise Dept Annual Gazette)_
-- **Dutiable goods – tobacco** — Excise duty on cigarettes, cigars, and other tobacco products. Sri Lanka has significantly increased tobacco duties in recent budgets as a public health measure.  _(Excise Ordinance; Budget Circulars; Excise Dept Gazette)_
-- **Dutiable goods – petroleum products (fuel levy)** — Excise duty on petroleum products (petrol, diesel, kerosene, furnace oil). Fuel excise is a key government revenue source. Note: retail sales of petrol/diesel/kerosene are EXEMPT from SSCL (from 1 July 2025).  _(Excise Ordinance; Excise (Special Provisions) Act; Budget Annual Gazette)_
-- **Dutiable goods – motor vehicles** — Excise duty applies to motor vehicles imported into Sri Lanka. Additional Social Security Contribution Levy (SSCL) now also applies on vehicle sales from April 2026.  _(Excise Ordinance; Excise (Special Provisions) Act; Budget 2026)_
-- **Administration** — Excise duty is administered by the Department of Excise (under the Ministry of Finance). Collection at point of manufacture or importation. Manufacturers of excisable goods require an Excise Licence.  _(Excise Ordinance; Department of Excise – www.excise.gov.lk)_
-- **Revised import duty bands (National Tariff Policy – Budget 2026, effective April 2026)** — Import duty bands revised to: 0%, 10%, 20%, and 30% under the new National Tariff Policy effective April 2026. The maximum rate was raised from 20% to 30%. Para-tariffs (PAL – Port and Airport Levy; CESS on most goods) are being phased out to simplify the tariff structure.  _(Budget 2026 (7 Nov 2025); Sri Lanka Customs Tariff 2026 – www.customs.gov.lk/customs-tariff/)_
-- **Anti-dumping and countervailing duties** — Anti-dumping and countervailing duties may be imposed in addition to standard import duties on products found to be dumped or subsidised, following investigation under the Anti-Dumping and Countervailing Duties Act.  _(Anti-Dumping and Countervailing Duties Act; Sri Lanka Customs)_
-- **BOI / SDP exemptions** — Companies with Board of Investment (BOI) agreements and companies identified as Strategic Development Projects (SDPs) may receive customs duty exemptions and deferrals on capital goods and raw materials.  _(BOI Act No. 4 of 1978; Strategic Development Projects Act; Customs Ordinance)_
-- **VAT at import** — 18% percent of CIF value plus customs duty (Collected by Sri Lanka Customs at the point of importation.)  _(VAT Act No. 14 of 2002; Customs Ordinance; IRD VAT Import Guidance)_
-- **SSCL at import** — 2.5% percent (Payable by importers at the point of importation regardless of turnover threshold. Collected by Sri Lanka Customs.)  _(SSCL Act No. 25 of 2022; Customs Ordinance)_
+## Scope and who this is for
+
+- **Law:** Betting and Gaming Levy Act No. 40 of 1988, as amended, most recently by the Betting and Gaming Levy (Amendment) Act No. 11 of 2023 (certified 21 August 2023) and No. 25 of 2025 (certified 17 December 2025). Administered by the Inland Revenue Department (IRD).
+- **Who is liable:** every person carrying on the business of a bookmaker or the business of gaming within Sri Lanka, lawfully or unlawfully. If the business is carried on in different places by the same person, the levy is payable for each place: each place is a separate business.
+- **Bookmaker:** a person who receives or negotiates bets, directly or indirectly, in cash or on credit, or via internet, on horse races or any sport event in or outside Sri Lanka.
+- **Gaming:** playing any game for a stake, including baccarat, punto banco, big six, black jack, chemin de fer, faro, poker dice, pontoon, roulette, rudjino or wheel of fortune, in premises to which individuals have access.
+- **Also covered here:** the income tax rate on these businesses, and the VAT and SSCL interaction.
+- **Flagged only:** excise duty on liquor, tobacco, fuel and motor vehicles (Department of Excise), customs import duty (Sri Lanka Customs), and the Gambling Regulatory Authority licensing regime. None of their figures was confirmed on an official page for this rewrite; see Not yet confirmed.
+
+## Ask the client first
+
+1. Bookmaker or gaming (casino or rudjino)? Through an agent or internet, with or without live telecast?
+2. How many places of business?
+3. Monthly gross collection for each place.
+4. Number of Sri Lankan citizens entering the casino each instalment period.
+5. Company or individual (income tax at 45% on these profits either way)?
+
+## The method, step by step
+
+### Rates, bands and thresholds
+
+| Item | Amount | Conditions | Source |
+| --- | --- | --- | --- |
+| Gross collection levy, from 1 January 2026 | 18% of gross collection | Section 2(1A)(d) inserted by Act No. 25 of 2025 | https://www.ird.gov.lk/en/publications/Acts_Betting%20and%20Gaming%20Levy/BNG_Act_No._25_2025_E.pdf |
+| Gross collection levy, 1 April 2023 to 31 December 2025 | 15% of gross collection | Section 2(1A)(c) as amended by Act No. 25 of 2025 | same |
+| Casino entrance levy | USD 100, or the equivalent in another convertible currency or in Sri Lanka currency | From each Sri Lankan citizen entering the place of gaming; section 2(1AA)(b), amount substituted by Act No. 25 of 2025 (was USD 50) | same |
+| Casino entrance levy applies to | Citizens of Sri Lanka only, from 1 April 2023 | Section 2(1AA)(b) as substituted by Act No. 11 of 2023 | https://www.ird.gov.lk/en/publications/Acts_Betting%20and%20Gaming%20Levy/BNG_Act_No._11_2023_E.pdf |
+| Annual levy, bookmaker through an agent or via internet, with or without live telecast | Rs. 5,000,000 a year | Every year from 1 April 2023; Schedule Part I item 8 | same |
+| Annual levy, bookmaker with live telecast | Rs. 1,000,000 a year | Same | https://www.ird.gov.lk/en/Type%20of%20Taxes/SitePages/Betting%20and%20Gaming%20Levy.aspx?menuid=1210 |
+| Annual levy, bookmaker without live telecast | Rs. 75,000 a year | Same | same |
+| Annual levy, business of gaming including rudjino | Rs. 500,000,000 a year | Every year from 1 April 2023 | same |
+| Gross collection levy floor | No levy where gross collection does not exceed Rs. 1,000,000 a month | IRD guidance | same |
+| Income tax on betting and gaming, and on domestic liquor or tobacco profits | 45% | From 1 April 2025, companies and individuals; exports of liquor or tobacco excluded | https://www.ird.gov.lk/en/publications/Acts_Income%20Tax_2017/IRA_Cons_Act_-_2025_Changes.pdf |
+
+### Steps
+
+1. Register each place of business separately.
+2. Pay the annual levy in four equal instalments before the start of each quarter.
+3. Each month, compute the gross collection levy at 18% (months from January 2026) on the gross collection of each place, unless gross collection does not exceed Rs. 1,000,000 for the month. Pay by the first week of the following month.
+4. For a casino, collect the casino entrance levy from every Sri Lankan citizen entering and pay it with the instalments under section 2(1B)(b).
+5. File the quarterly return: quarter to 31 March before 20 April; to 30 June before 20 July; to 30 September before 20 October; to 31 December before 20 January.
+6. Income tax: the business profits are taxed at 45% (`sri-lanka-corporate-tax`, `sri-lanka-income-tax`).
+
+## Boundary and exception table
+
+| Situation | Treatment |
+| --- | --- |
+| Business subject to the gross collection levy | Not liable to VAT, SSCL or the Nation Building Tax on that business (first proviso to section 2(1A), as amended by Act No. 11 of 2023) |
+| Same operator, two casinos | Two businesses: two annual levies and two gross collection computations |
+| Foreign visitor entering a casino | No casino entrance levy (citizens only since 1 April 2023) |
+| Gross collection Rs. 1,000,000 or less in a month | No gross collection levy that month (IRD guidance) |
+| Month in 2025 | 15% gross collection levy; 18% applies from January 2026 |
+| Income tax rate quoted as 40% | Wrong from 1 April 2025; 45% now |
+| Export of liquor or tobacco | Not at 45% income tax; normal rate |
+| Online betting licences (Gambling Regulatory Authority Act No. 16 of 2025) | Not confirmed; refer |
+
+## Worked cases
+
+### Case 1: casino, one month in 2026
+
+A casino has gross collection of Rs. 200,000,000 in March 2026 and 3,000 Sri Lankan citizen entrants. Gross collection levy at 18%; quarterly instalment of the annual levy is one quarter of Rs. 500,000,000; entrance levy USD 100 each.
+
+```oa-check
+name: Casino levies, one month and one quarter instalment, 2026
+inputs:
+  gross_collection: 200000000
+  annual_levy: 500000000
+  citizen_entrants: 3000
+steps:
+  - gcl: gross_collection * 0.18
+  - quarter_instalment: annual_levy / 4
+  - entrance_usd: citizen_entrants * 100
+expected:
+  gcl: 36000000
+  quarter_instalment: 125000000
+  entrance_usd: 300000
+```
+
+### Case 2: small bookmaker around the Rs. 1,000,000 monthly floor
+
+A bookmaker without live telecast collects Rs. 900,000 in one month and Rs. 1,200,000 the next. The first month is below the floor; the second is not, and the levy runs on the whole collection. The 2026 rate costs Rs. 36,000 more than the 2025 rate on that month.
+
+```oa-check
+name: Gross collection levy below and above the floor
+inputs:
+  month_low: 900000
+  month_high: 1200000
+steps:
+  - levy_low: min(month_low, 0)
+  - levy_high: month_high * 0.18
+  - levy_high_2025_rate: month_high * 0.15
+  - rate_change_cost: levy_high - levy_high_2025_rate
+expected:
+  levy_low: 0
+  levy_high: 216000
+  levy_high_2025_rate: 180000
+  rate_change_cost: 36000
+```
+
+## When to refuse or refer
+
+- Excise duty, customs duty, para-tariffs, anti-dumping duties, BOI or strategic development project exemptions: refer to the Department of Excise or Sri Lanka Customs and a Sri Lankan professional; no figure here is confirmed.
+- Gambling Regulatory Authority licensing and penalties: refer.
+- Disputes, assessments or arrears under the levy Act: refer.
+
+## Filing and payment
+
+| Obligation | Due |
+| --- | --- |
+| Annual levy | In 4 equal instalments, before the start of each quarter |
+| Gross collection levy | Monthly, by the first week of the following month |
+| Casino entrance levy | With each instalment (section 2(1B)(b)) |
+| Quarterly return | Before 20 April, 20 July, 20 October, 20 January |
+
+## Completion checklist
+
+- [ ] Each place registered and levied separately
+- [ ] 18% applied to months from January 2026
+- [ ] Monthly floor of Rs. 1,000,000 checked
+- [ ] Entrance levy collected from citizens only, at USD 100
+- [ ] VAT and SSCL not charged on the levied business
+- [ ] Income tax at 45% passed to the income tax skills
+
+## Sources
+
+| Source | URL | Read on |
+| --- | --- | --- |
+| Read for section 2 (gross collection levy rate of 18% and casino entrance levy of USD 100) of the Betting and Gaming Levy (Amendment) Act No. 25 of 2025 | https://www.ird.gov.lk/en/publications/Acts_Betting%20and%20Gaming%20Levy/BNG_Act_No._25_2025_E.pdf | 2026-11-14 |
+| Read for section 2 (15% rate, citizens-only entrance levy, the VAT, NBT and SSCL proviso) and Schedule Part I (annual bookmaker levies) of Act No. 11 of 2023 | https://www.ird.gov.lk/en/publications/Acts_Betting%20and%20Gaming%20Levy/BNG_Act_No._11_2023_E.pdf | 2026-11-14 |
+| Read for persons liable, definitions, annual levy amounts, the Rs. 1,000,000 monthly floor, payment and return dates on the IRD Betting and Gaming Levy page (the page still shows the older 15% and USD 50) | https://www.ird.gov.lk/en/Type%20of%20Taxes/SitePages/Betting%20and%20Gaming%20Levy.aspx?menuid=1210 | 2026-11-14 |
+| Read for First Schedule paragraphs 1(2)(c) and 4(2C) (45% income tax rate) in the IRD consolidated Act | https://www.ird.gov.lk/en/publications/Acts_Income%20Tax_2017/IRA_Cons_Act_-_2025_Changes.pdf | 2026-11-14 |
+
+Not yet confirmed: whether the Rs. 1,000,000 monthly floor is still in the Act after the 2023 and 2025 amendments (the IRD page states it); excise duty rates and rules on liquor, tobacco, petroleum products and motor vehicles; customs import duty bands (the earlier version cited 0%, 10%, 20% and 30% from April 2026 under a National Tariff Policy) and the phasing out of PAL and CESS; anti-dumping and countervailing duties; BOI and SDP exemptions; the Gambling Regulatory Authority Act No. 16 of 2025 (licensing, penalty of up to LKR 10 million or 2 years, self-exclusion duties, 30 June 2026 operational target); SSCL on vehicle sales from April 2026; how VAT and SSCL are collected at import by Sri Lanka Customs.
