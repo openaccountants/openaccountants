@@ -157,6 +157,7 @@ Generated from `python3 scripts/coverage-report.py --markdown` on 2026-10-31 (ta
 | michael | americas | BL | Saint Barthelemy | 2 | 0 | 0 | IT-IND, IT-CORP, VAT, PR, TP, XB |
 | michael | americas | BM | Bermuda | 7 | 0 | 0 | TP, XB |
 | michael | americas | BO | Bolivia | 5 | 0 | 0 | IT-CORP, VAT, TP, XB |
+| michael | americas | BQ | Caribbean Netherlands | 21 | 0 | 0 | IT-CORP, TP, XB |
 | michael | americas | BR | Brazil | 14 | 0 | 0 | IT-CORP, SC, XB |
 | michael | americas | BS | Bahamas | 6 | 0 | 0 | TP, XB |
 | michael | americas | BZ | Belize | 6 | 0 | 0 | TP, XB |

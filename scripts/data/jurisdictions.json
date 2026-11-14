@@ -182,6 +182,13 @@
     "dir": "skills/bolivia"
   },
   {
+    "code": "BQ",
+    "name": "Caribbean Netherlands",
+    "region": "americas",
+    "owner": "michael",
+    "dir": "skills/caribbean-netherlands"
+  },
+  {
     "code": "BR",
     "name": "Brazil",
     "region": "americas",
