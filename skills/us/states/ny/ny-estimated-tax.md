@@ -1,10 +1,10 @@
 ---
 name: ny-estimated-tax
 description: Work out and pay New York estimated tax for 2026 on Form IT-2105 for an individual, usually a self-employed New York resident. Covers who must pay (at least $300 of New York State, New York City or Yonkers tax after withholding and credits, or any MCTMT), the four 2026 installment dates (April 15, June 15, September 15, 2026 and January 15, 2027), the required annual payment (90% of 2026 tax, or 100% of 2025 tax, 110% when 2025 New York AGI or MCTD self-employment earnings were over $150,000), the estimated MCTMT at 0.60% and 0.34% once a zone's earnings exceed $150,000, the Yonkers 16.75% surcharge, the annualized method and the Form IT-2105.9 penalty. Trigger on "IT-2105", "NY estimated tax", "New York quarterly tax", "NYC estimated tax", "IT-2105.9", "NY underpayment penalty". Corporate, partnership, fiduciary and PTET estimates are out of scope.
-version: "3.0"
+version: "3.1"
 jurisdiction: US-NY
 tax_year: 2026
-last_updated: 2026-11-13
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
@@ -49,8 +49,8 @@ Out of scope, and where it goes:
 | --- | --- | --- |
 | Estimated income tax required when New York State, New York City or Yonkers tax owed after withholding and credits is at least | $300 | [IT-2105-I (2026), page 1](https://www.tax.ny.gov/pdf/current_forms/it/it2105i.pdf) |
 | Estimated MCTMT required when expected MCTMT is | any amount | [IT-2105-I (2026), page 1](https://www.tax.ny.gov/pdf/current_forms/it/it2105i.pdf) |
-| MCTMT Zone 1 rate (the five New York City counties), on all Zone 1 earnings once they exceed $150,000 | 0.60% | [IT-2105-I (2026), page 1](https://www.tax.ny.gov/pdf/current_forms/it/it2105i.pdf) |
-| MCTMT Zone 2 rate (Dutchess, Nassau, Orange, Putnam, Rockland, Suffolk, Westchester), on all Zone 2 earnings once they exceed $150,000 | 0.34% | [IT-2105-I (2026), page 1](https://www.tax.ny.gov/pdf/current_forms/it/it2105i.pdf) |
+| MCTMT Zone 1 rate (the five New York City counties), on all Zone 1 earnings once they exceed $150,000 | .60% (.0060) | [IT-2105-I (2026), page 1](https://www.tax.ny.gov/pdf/current_forms/it/it2105i.pdf) |
+| MCTMT Zone 2 rate (Dutchess, Nassau, Orange, Putnam, Rockland, Suffolk, Westchester), on all Zone 2 earnings once they exceed $150,000 | .34% (.0034) | [IT-2105-I (2026), page 1](https://www.tax.ny.gov/pdf/current_forms/it/it2105i.pdf) |
 | MCTMT threshold per person, per zone (must be exceeded) | $150,000 | [IT-2105-I (2026), page 1](https://www.tax.ny.gov/pdf/current_forms/it/it2105i.pdf) |
 | Required annual payment, current-year route | 90% of the 2026 tax | [IT-2105-I (2026), page 2](https://www.tax.ny.gov/pdf/current_forms/it/it2105i.pdf) |
 | Required annual payment, prior-year route | 100% of the tax on the 2025 return | [IT-2105-I (2026), page 2](https://www.tax.ny.gov/pdf/current_forms/it/it2105i.pdf) |

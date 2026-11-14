@@ -4,9 +4,10 @@ description: "Use this skill when a person or company crosses the Irish border f
 jurisdiction: IE
 category: cross-border
 tax_year: 2026
-last_updated: 2026-10-23
-version: 0.2
+last_updated: 2026-11-14
+version: 0.3
 tier: 2
+type: situation-rules
 domain: cross-border
 ---
 
@@ -216,39 +217,42 @@ expected:
 
 ## Sources
 
-Read on 2026-10-22:
+Every page below was opened again on 14 November 2026 and the figures in the rates table were found on it that day.
 
-- Taxes Consolidation Act 1997 (sections 23A, 29, 29A, 71, 238, 242A, 246, 627 to 629, 819, 820, 822, 825C, 984, 1041): https://www.irishstatutebook.ie/eli/1997/act/39/enacted/en/html
-- Revenue, resident for tax purposes: https://www.revenue.ie/en/jobs-and-pensions/tax-residence/resident-for-tax-purposes.aspx
-- Revenue, ordinarily resident: https://www.revenue.ie/en/jobs-and-pensions/tax-residence/ordinarily-resident-tax-purposes.aspx
-- Revenue, non-residents and tax credits: https://www.revenue.ie/en/jobs-and-pensions/tax-residence/non-residents.aspx
-- Revenue, split-year treatment, arrival: https://www.revenue.ie/en/life-events-and-personal-circumstances/moving-to-or-from-ireland/moving-or-returning-to-ireland/split-year-treatment-in-your-year-of-arrival.aspx
-- Revenue, split-year treatment, departure: https://www.revenue.ie/en/life-events-and-personal-circumstances/moving-to-or-from-ireland/leaving-ireland/split-year-treatment-in-your-year-of-departure.aspx
-- TDM Part 34-00-01, residence (last updated February 2025): https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-34/34-00-01.pdf
-- TDM Part 34-00-11, split year residence (reviewed September 2025): https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-34/34-00-11.pdf
-- Finance Act 2025, section 23 (amends section 825C for 2026 to 2030 arrivals): https://www.irishstatutebook.ie/2025/en/act/pub/0018/sec0023.html
-- TDM Part 34-00-10, SARP (last updated March 2026): https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-34/34-00-10.pdf
-- Revenue, SARP conditions: https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/income-and-employment/special-assignee-relief-programme/what-are-the-conditions-to-qualify.aspx
-- Revenue, tax rates, bands and reliefs: https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/tax-relief-charts/index.aspx
-- Revenue, how to calculate CGT: https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/how-to-calculate-cgt.aspx
-- Dáil Éireann debate, 6 October 2026, Financial Resolution No. 3 (Capital Gains Tax), carried 95 to 64 (read 2026-10-23): https://data.oireachtas.ie/akn/ie/debateRecord/dail/2026-10-06/debate/mul@/main.xml
-- Finance (No. 2) Bill 2026, Bill 98 of 2026, section 36, Dáil First Stage 19 October 2026 (read 2026-10-23): https://www.oireachtas.ie/en/bills/bill/2026/98/
-- Provisional Collection of Taxes Act 1927, section 4 (read 2026-10-23): https://www.irishstatutebook.ie/eli/1927/act/7/enacted/en/print.html
-- Revenue, Notes for Guidance TCA 1997, Finance Act 2025 edition, Part 6, section 172A (read 2026-10-23): https://www.revenue.ie/en/tax-professionals/documents/notes-for-guidance/tca/part06.pdf
-- TDM Part 02-02-03, company residence (last reviewed May 2026): https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-02/02-02-03.pdf
-- Revenue, company residency rules: https://www.revenue.ie/en/companies-and-charities/corporation-tax-for-companies/corporation-tax/company-residency-rules.aspx
-- TDM Part 02-03-02, temporary non-residents (last reviewed December 2024): https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-02/02-03-02.pdf
-- TDM Part 20-02-01, exit tax (last reviewed October 2025): https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-20/20-02-01.pdf
-- Revenue, exit tax provisions: https://www.revenue.ie/en/companies-and-charities/anti-beps-measures/exit-tax-provisions.aspx
-- Revenue, DWT: https://www.revenue.ie/en/companies-and-charities/dividend-withholding-tax/index.aspx
-- Revenue, DWT exemptions for non-residents: https://www.revenue.ie/en/companies-and-charities/dividend-withholding-tax/exemptions-for-non-residents.aspx
-- Revenue, DWT payment and filing: https://www.revenue.ie/en/companies-and-charities/dividend-withholding-tax/payment-and-filing-a-return.aspx
-- TDM Part 08-03-06, interest and royalties withholding (last reviewed May 2026): https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-08/08-03-06.pdf
-- TDM Part 45-01-04a, non-resident landlord withholding tax (updated October 2025): https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-45/45-01-04a.pdf
-- TDM Part 42-04-01, PAYE Exclusion Order (last updated July 2026): https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-42/42-04-01.pdf
-- Revenue, pay and file: https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/pay-file-system.aspx
-- Revenue, guidelines for charging interest on late payment (updated July 2024): https://www.revenue.ie/en/tax-professionals/tdm/collection/debt-management/Guidelines-for-charging-interest-on-late-payment-20240715074235.pdf
-- Revenue, CT payment and filing: https://www.revenue.ie/en/companies-and-charities/corporation-tax-for-companies/corporation-tax-payment-and-filing/payment-and-filing.aspx
-- Department of Social Protection, PRSI for those working abroad (updated 7 January 2026): https://www.gov.ie/en/department-of-social-protection/publications/operational-guidelines-prsi-for-those-working-abroad-and-the-special-prsi-collection-system/
+| Source | What was read | URL | Read on |
+|---|---|---|---|
+| Taxes Consolidation Act 1997 | Read for sections 23A, 29, 29A, 71, 238, 242A, 246, 627 to 629, 819, 820, 822, 825C, 984, 1041 | https://www.irishstatutebook.ie/eli/1997/act/39/enacted/en/html | 2026-11-14 |
+| Revenue, resident for tax purposes | Read for the 183 and 280 day tests | https://www.revenue.ie/en/jobs-and-pensions/tax-residence/resident-for-tax-purposes.aspx | 2026-11-14 |
+| Revenue, ordinarily resident | Read for ordinary residence and EUR 3,810 | https://www.revenue.ie/en/jobs-and-pensions/tax-residence/ordinarily-resident-tax-purposes.aspx | 2026-11-14 |
+| Revenue, non-residents and tax credits | Read for the tax credits of non-residents (75% rule) | https://www.revenue.ie/en/jobs-and-pensions/tax-residence/non-residents.aspx | 2026-11-14 |
+| Revenue, split-year treatment, arrival | Read for split-year relief on arrival | https://www.revenue.ie/en/life-events-and-personal-circumstances/moving-to-or-from-ireland/moving-or-returning-to-ireland/split-year-treatment-in-your-year-of-arrival.aspx | 2026-11-14 |
+| Revenue, split-year treatment, departure | Read for split-year relief on departure | https://www.revenue.ie/en/life-events-and-personal-circumstances/moving-to-or-from-ireland/leaving-ireland/split-year-treatment-in-your-year-of-departure.aspx | 2026-11-14 |
+| TDM Part 34-00-01, residence | Read for last updated February 2025 | https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-34/34-00-01.pdf | 2026-11-14 |
+| TDM Part 34-00-11, split year residence | Read for reviewed September 2025 | https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-34/34-00-11.pdf | 2026-11-14 |
+| Finance Act 2025, section 23 | Read for amends section 825C for 2026 to 2030 arrivals | https://www.irishstatutebook.ie/2025/en/act/pub/0018/sec0023.html | 2026-11-14 |
+| TDM Part 34-00-10, SARP | Read for last updated March 2026 | https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-34/34-00-10.pdf | 2026-11-14 |
+| Revenue, SARP conditions | Read for the SARP conditions | https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/income-and-employment/special-assignee-relief-programme/what-are-the-conditions-to-qualify.aspx | 2026-11-14 |
+| Revenue, tax rates, bands and reliefs | Read for the 2026 band of EUR 44,000 and the EUR 2,000 credits | https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/tax-relief-charts/index.aspx | 2026-11-14 |
+| Revenue, how to calculate CGT | Read for the 31% and 33% CGT rates and the EUR 1,270 exemption | https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/how-to-calculate-cgt.aspx | 2026-11-14 |
+| Dáil Éireann debate, 6 October 2026, Financial Resolution No. 3 (Capital Gains Tax), carried 95 to 64 | Read for the resolution setting CGT at 31% from 7 October 2026, carried 95 to 64 | https://data.oireachtas.ie/akn/ie/debateRecord/dail/2026-10-06/debate/mul@/main.xml | 2026-11-14 |
+| Finance (No. 2) Bill 2026, Bill 98 of 2026, section 36, Dáil First Stage 19 October 2026 | Read for section 36 and the Bill stage (Committee Stage, not enacted on 14 Nov 2026) | https://www.oireachtas.ie/en/bills/bill/2026/98/ | 2026-11-14 |
+| Provisional Collection of Taxes Act 1927, section 4 | Read for section 4 (provisional statutory effect of a financial resolution) | https://www.irishstatutebook.ie/eli/1927/act/7/enacted/en/print.html | 2026-11-14 |
+| Revenue, Notes for Guidance TCA 1997, Finance Act 2025 edition, Part 6, section 172A | Read for section 172A (DWT) in Part 6 | https://www.revenue.ie/en/tax-professionals/documents/notes-for-guidance/tca/part06.pdf | 2026-11-14 |
+| TDM Part 02-02-03, company residence | Read for last reviewed May 2026 | https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-02/02-02-03.pdf | 2026-11-14 |
+| Revenue, company residency rules | Read for company residence | https://www.revenue.ie/en/companies-and-charities/corporation-tax-for-companies/corporation-tax/company-residency-rules.aspx | 2026-11-14 |
+| TDM Part 02-03-02, temporary non-residents | Read for last reviewed December 2024 | https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-02/02-03-02.pdf | 2026-11-14 |
+| TDM Part 20-02-01, exit tax | Read for last reviewed October 2025 | https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-20/20-02-01.pdf | 2026-11-14 |
+| Revenue, exit tax provisions | Read for company exit tax | https://www.revenue.ie/en/companies-and-charities/anti-beps-measures/exit-tax-provisions.aspx | 2026-11-14 |
+| Revenue, DWT | Read for DWT at 25% | https://www.revenue.ie/en/companies-and-charities/dividend-withholding-tax/index.aspx | 2026-11-14 |
+| Revenue, DWT exemptions for non-residents | Read for the tax credits of non-residents (75% rule) | https://www.revenue.ie/en/companies-and-charities/dividend-withholding-tax/exemptions-for-non-residents.aspx | 2026-11-14 |
+| Revenue, DWT payment and filing | Read for DWT payment and returns | https://www.revenue.ie/en/companies-and-charities/dividend-withholding-tax/payment-and-filing-a-return.aspx | 2026-11-14 |
+| TDM Part 08-03-06, interest and royalties withholding | Read for last reviewed May 2026 | https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-08/08-03-06.pdf | 2026-11-14 |
+| TDM Part 45-01-04a, non-resident landlord withholding tax | Read for updated October 2025 | https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-45/45-01-04a.pdf | 2026-11-14 |
+| TDM Part 42-04-01, PAYE Exclusion Order | Read for last updated July 2026 | https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-42/42-04-01.pdf | 2026-11-14 |
+| Revenue, pay and file | Read for pay and file dates | https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/pay-file-system.aspx | 2026-11-14 |
+| Revenue, guidelines for charging interest on late payment | Read for updated July 2024 | https://www.revenue.ie/en/tax-professionals/tdm/collection/debt-management/Guidelines-for-charging-interest-on-late-payment-20240715074235.pdf | 2026-11-14 |
+| Revenue, CT payment and filing | Read for CT payment and filing | https://www.revenue.ie/en/companies-and-charities/corporation-tax-for-companies/corporation-tax-payment-and-filing/payment-and-filing.aspx | 2026-11-14 |
+| Department of Social Protection, PRSI for those working abroad | Read for updated 7 January 2026 | https://www.gov.ie/en/department-of-social-protection/publications/operational-guidelines-prsi-for-those-working-abroad-and-the-special-prsi-collection-system/ | 2026-11-14 |
 
 Not yet confirmed: the interest rate on deferred exit tax (TDM Part 20-02-01 says only that simple interest is charged); the 31% CGT rate from 7 October 2026 runs under Financial Resolution No. 3 until Finance (No. 2) Bill 2026 is enacted, so the exit tax anti-avoidance rate for events from that date follows whatever is enacted; the treaty tie-breaker order, which is the OECD model wording and must be read in the specific treaty; Revenue's tax rates page notes Budget 2027 changes announced on 6 October 2026, which do not affect 2026 bands and credits.
+

@@ -95,7 +95,7 @@ and paste the token when asked. Until the secret exists the workflow does nothin
 Michael, 14 Nov 2026: he is not the person who clears held PRs. The `figures` job in
 `validate.yml` runs `scripts/check-row-sources.py` on every PR: each figure in a linked
 table row (above `## Worked cases`) must be on the page that row links to, or the row must
-say the figure is `derived` / `computed` from that page. A page that cannot be read is
+say the figure is `derived` / `computed` from that page. A figure the page writes only in words stays in numerals, and the row says "(in words on the page)": never rewrite figures in words to satisfy the check. A page that cannot be read is
 listed as UNREADABLE, not as a miss.
 
 How a PR is merged:
