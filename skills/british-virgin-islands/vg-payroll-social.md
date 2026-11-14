@@ -141,7 +141,7 @@ expected:
 
 ## Filing and payment
 
-1. SSB and NHI: complete Employer Remittance Form I (or Form II) or the Self-Employed Remittance Form and pay the Board by the 14th of the following month; queries to the contributions department, 852-7840 ([SSB contributions](https://www.vissb.vg/contributions/)).
+1. SSB and NHI: complete Employer Remittance Form I (or Form II) or the Self-Employed Remittance Form and pay the Board by the 14th of the following month; queries to the contributions department, (284) 852-7844 per the SSB 2026 bulletin ([SSB contributions](https://www.vissb.vg/contributions/)).
 2. Payroll tax: sign in or register at efiling.gov.vg, file the payroll tax declaration and pay by card through the payment gateway; inquiries bvitaxes@gov.vg or (284) 468-2155 ([Ministry of Finance notice](https://gov.vg/sites/default/files/2026-11/ministry_of_finance_launches_enhanced_etax_portal_and_online_tax_payments.pdf)).
 
 ## Completion checklist
