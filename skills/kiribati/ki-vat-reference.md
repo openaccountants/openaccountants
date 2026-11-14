@@ -7,17 +7,16 @@ category: international
 tax_year: 2026
 tax_year_notes: "2026 VAT periods. Act 14/2013 read with VAT Regulations 2014, Exempt Supplies Regulations 2016, VAT (Amendment) Act 2025 and Third Schedule Regulations 2025, the last 2 from 1 January 2026. Amending instruments from 2014 to 2024 other than those regulations are neither found nor excluded. Regulations called for by the 2025 Act not found. Revenue Administration Act 2013 read as enacted; commencement date and later amendments not established. Undated MTCIC/KPF administrative registration and employer guidance read 11 November 2026; statutory periods remain unverified. Original investment Act 2018 bears assent 24 December 2018; its commencement notice and later chain are unverified. Regulations 2019 notice appoints 4 November 2019; later amendments and 2026 application are unverified. Original Provident Fund amendments 2012 and 2019 read as printed; exact commencement and complete operative chain remain unverified. Data Protection Act 2025 selected amending text read with its 20 August 2026 commencement notice; principal Business Names/Companies Act context and the complete later chain remain unverified."
 tier: 2
-last_updated: 2026-11-12
-version: 0.6
-review_status: pending_review
-verified_by: pending
+last_updated: 2026-11-14
+version: 0.7
 depends_on:
   - vat-workflow-base
   - workflow-base
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+type: situation-rules
 ---
 
-# Kiribati VAT Reference, 2026 (v0.6)
+# Kiribati VAT Reference, 2026 (v0.7)
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -651,52 +650,32 @@ The table records the original reading evidence. A retrieval or capture is not a
 
 | Source | URL | Read on |
 | --- | --- | --- |
-| Value Added Tax Act 2013 | https://tax.gov.ki/wp-content/uploads/2024/09/Value-Added-Tax-Act-No.14-of-2013.pdf | 2026-10-31; local copies read that day; captured 2026-10-28 and 2026-10-30 |
-| Value Added Tax (Amendment) Act 2025 | https://www.president.gov.ki/images/Gazettes/2025/Value_Added_Tax_Amendment_Act_2025.pdf | 2026-10-31; local copies read that day; captured 2026-10-28 and 2026-10-30 |
-| Value Added Tax Regulations 2014 | https://tax.gov.ki/wp-content/uploads/2024/09/VAT-Regulation.pdf | 2026-10-31; local copies read that day; captured 2026-10-28 and 2026-10-30 |
-| Exempt Supplies Regulations 2016 | https://tax.gov.ki/wp-content/uploads/2024/09/2016-Exempt-Supplies-Regulation-for-Sect-51-of-VAT-Act-2013.pdf | 2026-10-31; local copies read that day; captured 2026-10-28 and 2026-10-30 |
-| Value Added Tax (Amendment of Third Schedule) Regulations 2025 | https://www.president.gov.ki/images/Gazettes/2026/VAT_Regulation.pdf | 2026-10-31; local copies read that day; captured 2026-10-28 and 2026-10-30 |
-| Revenue Administration Act 2013 | https://www.paclii.org/ki/legis/num_act/raa2013256/ | 2026-10-31; local copies read that day; captured 2026-10-28 and 2026-10-30 |
-| IMF Country Report 26/099 | https://www.elibrary.imf.org/view/journals/002/2026/099/article-A001-en.xml | 2026-10-31; local copies read that day; captured 2026-10-28 and 2026-10-30 |
-| Exempt and zero-rated supplies, August 2024 | https://tax.gov.ki/wp-content/uploads/2025/05/Exempt-0-rated-supplies_AUG-2024-1.pdf | 2026-10-31; local copies read that day; captured 2026-10-28 and 2026-10-30 |
-| VAT return form | https://tax.gov.ki/wp-content/uploads/2025/05/VAT-Return-Form.pdf | 2026-10-31; local copies read that day; captured 2026-10-28 and 2026-10-30 |
-| VAT return instruction | https://tax.gov.ki/wp-content/uploads/2025/05/Kiribati-VAT-return-instruction.pdf | 2026-10-31; local copies read that day; captured 2026-10-28 and 2026-10-30 |
-| Guidelines and obligations | https://tax.gov.ki/wp-content/uploads/2025/05/Guidelines-Obligations-for-VAT-Registered-Businesses.pdf | 2026-10-31; local copies read that day; captured 2026-10-28 and 2026-10-30 |
-| Due dates, offences and penalties | https://tax.gov.ki/wp-content/uploads/2024/09/Due-Dates-Offences-Panalties.pdf | 2026-10-31; local copies read that day; captured 2026-10-28 and 2026-10-30 |
-| Due dates poster | https://tax.gov.ki/wp-content/uploads/2024/09/Due-Dates-Public-Notice-Poster.pdf | 2026-10-31; local copies read that day; captured 2026-10-28 and 2026-10-30 |
-| Filing obligations | https://tax.gov.ki/wp-content/uploads/2024/09/Filing-Obligations-new.pdf | 2026-10-31; local copies read that day; captured 2026-10-28 and 2026-10-30 |
+| Value Added Tax Act 2013 | https://tax.gov.ki/wp-content/uploads/2024/09/Value-Added-Tax-Act-No.14-of-2013.pdf | Read for the provisions cited in the body by Ryan on 2026-10-31 (local copies captured 2026-10-28 and 2026-10-30); tax.gov.ki did not respond on 2026-11-14, not reopened |
+| Value Added Tax (Amendment) Act 2025 | https://www.president.gov.ki/images/Gazettes/2025/Value_Added_Tax_Amendment_Act_2025.pdf | Read for the provisions cited in the body by Ryan on 2026-10-31 (local copies captured 2026-10-28 and 2026-10-30); reopened 2026-11-14 (scanned gazette, opens; no text layer) |
+| Value Added Tax Regulations 2014 | https://tax.gov.ki/wp-content/uploads/2024/09/VAT-Regulation.pdf | Read for the provisions cited in the body by Ryan on 2026-10-31 (local copies captured 2026-10-28 and 2026-10-30); tax.gov.ki did not respond on 2026-11-14, not reopened |
+| Exempt Supplies Regulations 2016 | https://tax.gov.ki/wp-content/uploads/2024/09/2016-Exempt-Supplies-Regulation-for-Sect-51-of-VAT-Act-2013.pdf | Read for the provisions cited in the body by Ryan on 2026-10-31 (local copies captured 2026-10-28 and 2026-10-30); tax.gov.ki did not respond on 2026-11-14, not reopened |
+| Value Added Tax (Amendment of Third Schedule) Regulations 2025 | https://www.president.gov.ki/images/Gazettes/2026/VAT_Regulation.pdf | Read for the provisions cited in the body by Ryan on 2026-10-31 (local copies captured 2026-10-28 and 2026-10-30); reopened 2026-11-14 (scanned gazette, opens; no text layer) |
+| Revenue Administration Act 2013 | https://www.paclii.org/ki/legis/num_act/raa2013256/ | Read for the provisions cited in the body by Ryan on 2026-10-31 (local copies captured 2026-10-28 and 2026-10-30); not reopened on 2026-11-14 |
+| IMF Country Report 26/099 | https://www.elibrary.imf.org/view/journals/002/2026/099/article-A001-en.xml | Read for the provisions cited in the body by Ryan on 2026-10-31 (local copies captured 2026-10-28 and 2026-10-30); not reopened on 2026-11-14 |
+| Exempt and zero-rated supplies, August 2024 | https://tax.gov.ki/wp-content/uploads/2025/05/Exempt-0-rated-supplies_AUG-2024-1.pdf | Read for the provisions cited in the body by Ryan on 2026-10-31 (local copies captured 2026-10-28 and 2026-10-30); tax.gov.ki did not respond on 2026-11-14, not reopened |
+| VAT return form | https://tax.gov.ki/wp-content/uploads/2025/05/VAT-Return-Form.pdf | Read for the provisions cited in the body by Ryan on 2026-10-31 (local copies captured 2026-10-28 and 2026-10-30); tax.gov.ki did not respond on 2026-11-14, not reopened |
+| VAT return instruction | https://tax.gov.ki/wp-content/uploads/2025/05/Kiribati-VAT-return-instruction.pdf | Read for the provisions cited in the body by Ryan on 2026-10-31 (local copies captured 2026-10-28 and 2026-10-30); tax.gov.ki did not respond on 2026-11-14, not reopened |
+| Guidelines and obligations | https://tax.gov.ki/wp-content/uploads/2025/05/Guidelines-Obligations-for-VAT-Registered-Businesses.pdf | Read for the provisions cited in the body by Ryan on 2026-10-31 (local copies captured 2026-10-28 and 2026-10-30); tax.gov.ki did not respond on 2026-11-14, not reopened |
+| Due dates, offences and penalties | https://tax.gov.ki/wp-content/uploads/2024/09/Due-Dates-Offences-Panalties.pdf | Read for the provisions cited in the body by Ryan on 2026-10-31 (local copies captured 2026-10-28 and 2026-10-30); tax.gov.ki did not respond on 2026-11-14, not reopened |
+| Due dates poster | https://tax.gov.ki/wp-content/uploads/2024/09/Due-Dates-Public-Notice-Poster.pdf | Read for the provisions cited in the body by Ryan on 2026-10-31 (local copies captured 2026-10-28 and 2026-10-30); tax.gov.ki did not respond on 2026-11-14, not reopened |
+| Filing obligations | https://tax.gov.ki/wp-content/uploads/2024/09/Filing-Obligations-new.pdf | Read for the provisions cited in the body by Ryan on 2026-10-31 (local copies captured 2026-10-28 and 2026-10-30); tax.gov.ki did not respond on 2026-11-14, not reopened |
 
 ### Sources
 
 Retrieval date: 31 October 2026. Local copies were read that day, captured from these URLs on 28 and 30 October 2026.
 
-- [Value Added Tax Act 2013](https://tax.gov.ki/wp-content/uploads/2024/09/Value-Added-Tax-Act-No.14-of-2013.pdf)
-- [Value Added Tax (Amendment) Act 2025](https://www.president.gov.ki/images/Gazettes/2025/Value_Added_Tax_Amendment_Act_2025.pdf)
-- [Value Added Tax Regulations 2014](https://tax.gov.ki/wp-content/uploads/2024/09/VAT-Regulation.pdf)
-- [Exempt Supplies Regulations 2016](https://tax.gov.ki/wp-content/uploads/2024/09/2016-Exempt-Supplies-Regulation-for-Sect-51-of-VAT-Act-2013.pdf)
-- [Value Added Tax (Amendment of Third Schedule) Regulations 2025](https://www.president.gov.ki/images/Gazettes/2026/VAT_Regulation.pdf)
-- [Revenue Administration Act 2013](https://www.paclii.org/ki/legis/num_act/raa2013256/), PacLII, a non-official host, as enacted
-- [IMF Country Report 26/099](https://www.elibrary.imf.org/view/journals/002/2026/099/article-A001-en.xml), secondary and not law, for the SOE conflict only
-- Tax Division: [Exempt and zero-rated supplies, August 2024](https://tax.gov.ki/wp-content/uploads/2025/05/Exempt-0-rated-supplies_AUG-2024-1.pdf); [VAT return form](https://tax.gov.ki/wp-content/uploads/2025/05/VAT-Return-Form.pdf); [VAT return instruction](https://tax.gov.ki/wp-content/uploads/2025/05/Kiribati-VAT-return-instruction.pdf); [Guidelines and obligations](https://tax.gov.ki/wp-content/uploads/2025/05/Guidelines-Obligations-for-VAT-Registered-Businesses.pdf); [Due dates, offences and penalties](https://tax.gov.ki/wp-content/uploads/2024/09/Due-Dates-Offences-Panalties.pdf); [Due dates poster](https://tax.gov.ki/wp-content/uploads/2024/09/Due-Dates-Public-Notice-Poster.pdf); [Filing obligations](https://tax.gov.ki/wp-content/uploads/2024/09/Filing-Obligations-new.pdf)
+- [Value Added Tax Act 2013](https://tax.gov.ki/wp-content/uploads/2024/09/Value-Added-Tax-Act-No.14-of-2013.pdf) (read by Ryan 2026-10-31)
+- [Value Added Tax (Amendment) Act 2025](https://www.president.gov.ki/images/Gazettes/2025/Value_Added_Tax_Amendment_Act_2025.pdf) (read by Ryan 2026-10-31)
+- [Value Added Tax Regulations 2014](https://tax.gov.ki/wp-content/uploads/2024/09/VAT-Regulation.pdf) (read by Ryan 2026-10-31)
+- [Exempt Supplies Regulations 2016](https://tax.gov.ki/wp-content/uploads/2024/09/2016-Exempt-Supplies-Regulation-for-Sect-51-of-VAT-Act-2013.pdf) (read by Ryan 2026-10-31)
+- [Value Added Tax (Amendment of Third Schedule) Regulations 2025](https://www.president.gov.ki/images/Gazettes/2026/VAT_Regulation.pdf) (read by Ryan 2026-10-31)
+- [Revenue Administration Act 2013](https://www.paclii.org/ki/legis/num_act/raa2013256/), PacLII, a non-official host, as enacted (read by Ryan 2026-10-31)
+- [IMF Country Report 26/099](https://www.elibrary.imf.org/view/journals/002/2026/099/article-A001-en.xml), secondary and not law, for the SOE conflict only (read by Ryan 2026-10-31)
+- Tax Division: [Exempt and zero-rated supplies, August 2024](https://tax.gov.ki/wp-content/uploads/2025/05/Exempt-0-rated-supplies_AUG-2024-1.pdf); [VAT return form](https://tax.gov.ki/wp-content/uploads/2025/05/VAT-Return-Form.pdf); [VAT return instruction](https://tax.gov.ki/wp-content/uploads/2025/05/Kiribati-VAT-return-instruction.pdf); [Guidelines and obligations](https://tax.gov.ki/wp-content/uploads/2025/05/Guidelines-Obligations-for-VAT-Registered-Businesses.pdf); [Due dates, offences and penalties](https://tax.gov.ki/wp-content/uploads/2024/09/Due-Dates-Offences-Panalties.pdf); [Due dates poster](https://tax.gov.ki/wp-content/uploads/2024/09/Due-Dates-Public-Notice-Poster.pdf); [Filing obligations](https://tax.gov.ki/wp-content/uploads/2024/09/Filing-Obligations-new.pdf) (read by Ryan 2026-10-31)
 
 Not yet confirmed: the complete operative chain and requested-period application, unresolved source conditions and administrative directions, exact reading days where unrecorded and professional verification. Retain every specific evidence gap, refusal and filing hold identified above.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained in the
-[ryanduguid/openaccountants fork](https://github.com/ryanduguid/openaccountants).
-Check its quality tier, recorded review status and cited sources before use.
-Choose a practitioner whose credentials and engagement scope you have verified.
-The links below are optional upstream services; they do not publish or verify
-this fork's changes.
-
-- Upstream connection service: https://www.openaccountants.com/connect
-- Upstream accountant network: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
