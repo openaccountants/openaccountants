@@ -1,13 +1,9 @@
 {
  "generated_by": "scripts/build-agent-skills.py",
- "count": 2163,
+ "count": 2247,
  "publication_holds": [
   {
    "name": "ab-corporate-tax",
-   "reason": "status: needs_sources"
-  },
-  {
-   "name": "az-payroll",
    "reason": "status: needs_sources"
   },
   {
@@ -43,20 +39,12 @@
    "reason": "status: needs_sources"
   },
   {
-   "name": "ca-income-tax",
-   "reason": "status: needs_sources"
-  },
-  {
    "name": "cameroon-social-contributions",
    "reason": "status: needs_sources"
   },
   {
    "name": "cbam-carbon-border-adjustment",
    "reason": "required companion unavailable: cross-border-workflow-base"
-  },
-  {
-   "name": "co-payroll",
-   "reason": "status: needs_sources"
   },
   {
    "name": "costa-rica-income-tax",
@@ -73,10 +61,6 @@
   {
    "name": "cross-border-workflow-base",
    "reason": "required companion unavailable: eu-social-security-coordination, withholding-tax-matrix"
-  },
-  {
-   "name": "ct-payroll",
-   "reason": "status: needs_sources"
   },
   {
    "name": "cw-vat-gst",
@@ -111,10 +95,6 @@
    "reason": "required companion unavailable: cross-border-workflow-base"
   },
   {
-   "name": "fl-sales-tax",
-   "reason": "status: needs_sources"
-  },
-  {
    "name": "free-zones-sez-matrix",
    "reason": "required companion unavailable: cross-border-workflow-base"
   },
@@ -136,22 +116,6 @@
   },
   {
    "name": "honduras-payroll",
-   "reason": "status: needs_sources"
-  },
-  {
-   "name": "il-income-tax",
-   "reason": "status: needs_sources"
-  },
-  {
-   "name": "il-payroll",
-   "reason": "status: needs_sources"
-  },
-  {
-   "name": "il-sales-tax",
-   "reason": "status: needs_sources"
-  },
-  {
-   "name": "in-payroll",
    "reason": "status: needs_sources"
   },
   {
@@ -191,10 +155,6 @@
    "reason": "status: needs_sources"
   },
   {
-   "name": "ky-payroll",
-   "reason": "status: needs_sources"
-  },
-  {
    "name": "ky-vat-gst",
    "reason": "status: needs_sources"
   },
@@ -223,23 +183,7 @@
    "reason": "status: needs_sources"
   },
   {
-   "name": "ma-corporate-excise",
-   "reason": "status: needs_sources"
-  },
-  {
    "name": "ma-payroll",
-   "reason": "status: needs_sources"
-  },
-  {
-   "name": "md-payroll",
-   "reason": "status: needs_sources"
-  },
-  {
-   "name": "mi-corporate-income-tax",
-   "reason": "status: needs_sources"
-  },
-  {
-   "name": "mi-payroll",
    "reason": "status: needs_sources"
   },
   {
@@ -247,23 +191,11 @@
    "reason": "status: needs_sources"
   },
   {
-   "name": "mn-corporate-and-pte",
-   "reason": "status: needs_sources"
-  },
-  {
    "name": "mn-corporate-income-tax",
    "reason": "status: needs_sources"
   },
   {
-   "name": "mn-payroll",
-   "reason": "status: needs_sources"
-  },
-  {
    "name": "mn-payroll-social",
-   "reason": "status: needs_sources"
-  },
-  {
-   "name": "mo-payroll",
    "reason": "status: needs_sources"
   },
   {
@@ -272,14 +204,6 @@
   },
   {
    "name": "mv-income-tax",
-   "reason": "status: needs_sources"
-  },
-  {
-   "name": "nc-corporate-tax",
-   "reason": "status: needs_sources"
-  },
-  {
-   "name": "nd-corporate-tax",
    "reason": "status: needs_sources"
   },
   {
@@ -300,18 +224,6 @@
   },
   {
    "name": "nt-payroll-tax",
-   "reason": "status: needs_sources"
-  },
-  {
-   "name": "nyc-unincorporated-business-tax",
-   "reason": "status: needs_sources"
-  },
-  {
-   "name": "oh-payroll",
-   "reason": "status: needs_sources"
-  },
-  {
-   "name": "or-payroll",
    "reason": "status: needs_sources"
   },
   {
@@ -411,27 +323,11 @@
    "reason": "required companion unavailable: tw-income-tax"
   },
   {
-   "name": "tx-sales-tax",
-   "reason": "status: needs_sources"
-  },
-  {
-   "name": "us-citizen-moving-abroad-tax",
-   "reason": "status: needs_sources"
-  },
-  {
    "name": "uz-corporate-income-tax",
    "reason": "status: needs_sources"
   },
   {
    "name": "uzbekistan-social-contributions",
-   "reason": "status: needs_sources"
-  },
-  {
-   "name": "va-corporate-tax-and-bpol",
-   "reason": "status: needs_sources"
-  },
-  {
-   "name": "va-payroll",
    "reason": "status: needs_sources"
   },
   {
@@ -449,10 +345,6 @@
   {
    "name": "wealth-tax-matrix",
    "reason": "required companion unavailable: cross-border-workflow-base"
-  },
-  {
-   "name": "wi-payroll",
-   "reason": "status: needs_sources"
   },
   {
    "name": "withholding-tax-matrix",
@@ -894,6 +786,24 @@
    "tax_year": 2026
   },
   {
+   "name": "ak-corporate-tax",
+   "jurisdiction": "US-AK",
+   "path": "skills/us/states/ak/ak-corporate-tax.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "ak-payroll",
+   "jurisdiction": "US-AK",
+   "path": "skills/us/states/ak/ak-payroll.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
    "name": "ak-sales-tax",
    "jurisdiction": "US-AK",
    "path": "skills/us/states/ak/ak-sales-tax.md",
@@ -928,15 +838,6 @@
    "authored_by": null,
    "reviewed_by": null,
    "tax_year": 2026
-  },
-  {
-   "name": "al-income-tax",
-   "jurisdiction": "US-AL",
-   "path": "skills/us/states/al/al-income-tax.md",
-   "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
-   "authored_by": null,
-   "reviewed_by": null,
-   "tax_year": 2025
   },
   {
    "name": "al-payroll-withholding",
@@ -988,15 +889,6 @@
    "jurisdiction": "US-AL",
    "path": "skills/us/states/al/alabama-income-tax.md",
    "trust_label": null,
-   "authored_by": null,
-   "reviewed_by": null,
-   "tax_year": 2025
-  },
-  {
-   "name": "alabama-sales-tax",
-   "jurisdiction": "US-AL",
-   "path": "skills/us/states/al/alabama-sales-tax.md",
-   "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
    "authored_by": null,
    "reviewed_by": null,
    "tax_year": 2026
@@ -1263,6 +1155,15 @@
    "tax_year": 2026
   },
   {
+   "name": "ar-corporate-tax",
+   "jurisdiction": "US-AR",
+   "path": "skills/us/states/ar/ar-corporate-tax.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
    "name": "ar-income-tax",
    "jurisdiction": "US-AR",
    "path": "skills/us/states/ar/ar-income-tax.md",
@@ -1281,13 +1182,22 @@
    "tax_year": 2026
   },
   {
+   "name": "ar-payroll",
+   "jurisdiction": "US-AR",
+   "path": "skills/us/states/ar/ar-payroll.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
    "name": "ar-sales-tax",
    "jurisdiction": "US-AR",
    "path": "skills/us/states/ar/ar-sales-tax.md",
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "ar-social-contributions",
@@ -1360,24 +1270,6 @@
    "authored_by": null,
    "reviewed_by": null,
    "tax_year": 2026
-  },
-  {
-   "name": "arizona-sales-tax",
-   "jurisdiction": "US-AR",
-   "path": "skills/us/states/ar/arizona-sales-tax.md",
-   "trust_label": null,
-   "authored_by": null,
-   "reviewed_by": null,
-   "tax_year": 2025
-  },
-  {
-   "name": "arkansas-sales-tax",
-   "jurisdiction": "US-AR",
-   "path": "skills/us/states/ar/arkansas-sales-tax.md",
-   "trust_label": null,
-   "authored_by": null,
-   "reviewed_by": null,
-   "tax_year": 2025
   },
   {
    "name": "armenia-income-tax",
@@ -2073,13 +1965,31 @@
    "tax_year": 2026
   },
   {
+   "name": "az-corporate-tax",
+   "jurisdiction": "US-AZ",
+   "path": "skills/us/states/az/az-corporate-tax.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
    "name": "az-income-tax",
    "jurisdiction": "US-AZ",
    "path": "skills/us/states/az/az-income-tax.md",
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": null
+   "tax_year": 2026
+  },
+  {
+   "name": "az-payroll",
+   "jurisdiction": "US-AZ",
+   "path": "skills/us/states/az/az-payroll.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
   },
   {
    "name": "az-sales-tax",
@@ -2088,7 +1998,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "az-tax-overview",
@@ -2098,15 +2008,6 @@
    "authored_by": null,
    "reviewed_by": null,
    "tax_year": 2026
-  },
-  {
-   "name": "az-transaction-privilege-tax",
-   "jurisdiction": "US-AZ",
-   "path": "skills/us/states/az/az-transaction-privilege-tax.md",
-   "trust_label": null,
-   "authored_by": null,
-   "reviewed_by": null,
-   "tax_year": 2025
   },
   {
    "name": "azerbaijan-cross-border",
@@ -3675,15 +3576,6 @@
    "tax_year": 2025
   },
   {
-   "name": "ca-540-es-estimated-tax",
-   "jurisdiction": "US-CA",
-   "path": "skills/us/states/ca/ca-540-es-estimated-tax.md",
-   "trust_label": null,
-   "authored_by": null,
-   "reviewed_by": null,
-   "tax_year": null
-  },
-  {
    "name": "ca-540-individual-return",
    "jurisdiction": "US-CA",
    "path": "skills/us/states/ca/ca-540-individual-return.md",
@@ -3744,7 +3636,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "ca-fed-cpp-ei",
@@ -3798,7 +3690,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "ca-formation",
@@ -3817,6 +3709,15 @@
    "authored_by": null,
    "reviewed_by": null,
    "tax_year": 2025
+  },
+  {
+   "name": "ca-income-tax",
+   "jurisdiction": "US-CA",
+   "path": "skills/us/states/ca/ca-income-tax.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
   },
   {
    "name": "ca-llc-fee-and-tax",
@@ -3880,15 +3781,6 @@
    "authored_by": null,
    "reviewed_by": null,
    "tax_year": 2025
-  },
-  {
-   "name": "ca-sales-use-tax",
-   "jurisdiction": "US-CA",
-   "path": "skills/us/states/ca/ca-sales-use-tax.md",
-   "trust_label": null,
-   "authored_by": null,
-   "reviewed_by": null,
-   "tax_year": null
   },
   {
    "name": "ca-smllc-form-568",
@@ -4521,9 +4413,27 @@
    "tax_year": 2026
   },
   {
+   "name": "co-corporate-tax",
+   "jurisdiction": "US-CO",
+   "path": "skills/us/states/co/co-corporate-tax.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
    "name": "co-income-tax",
    "jurisdiction": "US-CO",
    "path": "skills/us/states/co/co-income-tax.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "co-payroll",
+   "jurisdiction": "US-CO",
+   "path": "skills/us/states/co/co-payroll.md",
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
@@ -4536,7 +4446,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "co-sales-tax",
@@ -4545,7 +4455,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "co-social-contributions",
@@ -4618,24 +4528,6 @@
    "authored_by": null,
    "reviewed_by": null,
    "tax_year": 2026
-  },
-  {
-   "name": "colorado-sales-tax",
-   "jurisdiction": "US-CO",
-   "path": "skills/us/states/co/colorado-sales-tax.md",
-   "trust_label": null,
-   "authored_by": null,
-   "reviewed_by": null,
-   "tax_year": 2025
-  },
-  {
-   "name": "connecticut-sales-tax",
-   "jurisdiction": "US-CO",
-   "path": "skills/us/states/co/connecticut-sales-tax.md",
-   "trust_label": null,
-   "authored_by": null,
-   "reviewed_by": null,
-   "tax_year": 2025
   },
   {
    "name": "construction-sector",
@@ -4782,9 +4674,27 @@
    "tax_year": null
   },
   {
+   "name": "ct-corporate-tax",
+   "jurisdiction": "US-CT",
+   "path": "skills/us/states/ct/ct-corporate-tax.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
    "name": "ct-income-tax",
    "jurisdiction": "US-CT",
    "path": "skills/us/states/ct/ct-income-tax.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "ct-payroll",
+   "jurisdiction": "US-CT",
+   "path": "skills/us/states/ct/ct-payroll.md",
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
@@ -4797,7 +4707,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "cv-company-formation",
@@ -5088,9 +4998,27 @@
    "tax_year": 2026
   },
   {
+   "name": "dc-corporate-tax",
+   "jurisdiction": "US-DC",
+   "path": "skills/us/states/dc/dc-corporate-tax.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
    "name": "dc-income-tax",
    "jurisdiction": "US-DC",
    "path": "skills/us/states/dc/dc-income-tax.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "dc-payroll",
+   "jurisdiction": "US-DC",
+   "path": "skills/us/states/dc/dc-payroll.md",
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
@@ -5103,7 +5031,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "de-capital-gains",
@@ -5193,7 +5121,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "de-income-tax",
@@ -6942,6 +6870,15 @@
    "tax_year": 2026
   },
   {
+   "name": "fl-payroll",
+   "jurisdiction": "US-FL",
+   "path": "skills/us/states/fl/fl-payroll.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
    "name": "fl-sales-use-tax",
    "jurisdiction": "US-FL",
    "path": "skills/us/states/fl/fl-sales-use-tax.md",
@@ -7362,7 +7299,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "ga-formation",
@@ -7371,7 +7308,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "ga-income-tax",
@@ -7389,7 +7326,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "ga-payroll",
@@ -7398,7 +7335,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "ga-payroll-social",
@@ -8580,13 +8517,31 @@
    "tax_year": 2026
   },
   {
+   "name": "hi-corporate-tax",
+   "jurisdiction": "US-HI",
+   "path": "skills/us/states/hi/hi-corporate-tax.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
    "name": "hi-income-tax",
    "jurisdiction": "US-HI",
    "path": "skills/us/states/hi/hi-income-tax.md",
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
+  },
+  {
+   "name": "hi-payroll",
+   "jurisdiction": "US-HI",
+   "path": "skills/us/states/hi/hi-payroll.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
   },
   {
    "name": "hi-sales-tax",
@@ -8595,7 +8550,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "hk-company-formation",
@@ -8850,13 +8805,31 @@
    "tax_year": 2026
   },
   {
+   "name": "ia-corporate-tax",
+   "jurisdiction": "US-IA",
+   "path": "skills/us/states/ia/ia-corporate-tax.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
    "name": "ia-income-tax",
    "jurisdiction": "US-IA",
    "path": "skills/us/states/ia/ia-income-tax.md",
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
+  },
+  {
+   "name": "ia-payroll",
+   "jurisdiction": "US-IA",
+   "path": "skills/us/states/ia/ia-payroll.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
   },
   {
    "name": "ia-sales-tax",
@@ -8865,7 +8838,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "ias32-debt-vs-equity",
@@ -8967,6 +8940,24 @@
    "tax_year": 2026
   },
   {
+   "name": "id-income-tax",
+   "jurisdiction": "US-ID",
+   "path": "skills/us/states/id/id-income-tax.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "id-payroll",
+   "jurisdiction": "US-ID",
+   "path": "skills/us/states/id/id-payroll.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
    "name": "id-payroll-pph21",
    "jurisdiction": "ID",
    "path": "skills/indonesia/id-payroll-pph21.md",
@@ -9000,7 +8991,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "id-tax-optimization",
@@ -9018,15 +9009,6 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": "RILIA PUTRI",
-   "tax_year": 2025
-  },
-  {
-   "name": "idaho-sales-tax",
-   "jurisdiction": "US-ID",
-   "path": "skills/us/states/id/idaho-sales-tax.md",
-   "trust_label": null,
-   "authored_by": null,
-   "reviewed_by": null,
    "tax_year": 2025
   },
   {
@@ -9288,12 +9270,21 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "il-freelancer-ops",
    "jurisdiction": "IL",
    "path": "skills/israel/il-freelancer-ops.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "il-income-tax",
+   "jurisdiction": "US-IL",
+   "path": "skills/us/states/il/il-income-tax.md",
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
@@ -9318,13 +9309,22 @@
    "tax_year": 2026
   },
   {
+   "name": "il-payroll",
+   "jurisdiction": "US-IL",
+   "path": "skills/us/states/il/il-payroll.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
    "name": "il-pprt",
    "jurisdiction": "US-IL",
    "path": "skills/us/states/il/il-pprt.md",
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "il-tax-withholding",
@@ -9417,6 +9417,15 @@
    "tax_year": 2026
   },
   {
+   "name": "in-corporate-tax",
+   "jurisdiction": "US-IN",
+   "path": "skills/us/states/in/in-corporate-tax.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
    "name": "in-cross-border-india-dual-resident-treaty",
    "jurisdiction": "IN",
    "path": "skills/india/in-cross-border-india-dual-resident-treaty.md",
@@ -9429,6 +9438,24 @@
    "name": "in-freelance-intake",
    "jurisdiction": "IN",
    "path": "skills/india/in-freelance-intake.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "in-income-tax",
+   "jurisdiction": "US-IN",
+   "path": "skills/us/states/in/in-income-tax.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "in-payroll",
+   "jurisdiction": "US-IN",
+   "path": "skills/us/states/in/in-payroll.md",
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
@@ -9468,7 +9495,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "in-tax-residency",
@@ -9586,15 +9613,6 @@
    "authored_by": null,
    "reviewed_by": null,
    "tax_year": 2026
-  },
-  {
-   "name": "indiana-sales-tax",
-   "jurisdiction": "US-IN",
-   "path": "skills/us/states/in/indiana-sales-tax.md",
-   "trust_label": null,
-   "authored_by": null,
-   "reviewed_by": null,
-   "tax_year": 2025
   },
   {
    "name": "indonesia-vat",
@@ -10560,9 +10578,27 @@
    "tax_year": 2025
   },
   {
+   "name": "ky-corporate-tax",
+   "jurisdiction": "US-KY",
+   "path": "skills/us/states/ky/ky-corporate-tax.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
    "name": "ky-income-tax",
    "jurisdiction": "US-KY",
    "path": "skills/us/states/ky/ky-income-tax.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "ky-payroll",
+   "jurisdiction": "US-KY",
+   "path": "skills/us/states/ky/ky-payroll.md",
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
@@ -10584,7 +10620,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "ky-tax-overview",
@@ -10731,13 +10767,31 @@
    "tax_year": 2025
   },
   {
+   "name": "la-corporate-tax",
+   "jurisdiction": "US-LA",
+   "path": "skills/us/states/la/la-corporate-tax.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
    "name": "la-income-tax",
    "jurisdiction": "US-LA",
    "path": "skills/us/states/la/la-income-tax.md",
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
+  },
+  {
+   "name": "la-payroll",
+   "jurisdiction": "US-LA",
+   "path": "skills/us/states/la/la-payroll.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
   },
   {
    "name": "la-payroll-social",
@@ -10755,7 +10809,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "la-tax-overview",
@@ -11316,6 +11370,15 @@
    "tax_year": 2026
   },
   {
+   "name": "ma-corporate-excise",
+   "jurisdiction": "US-MA",
+   "path": "skills/us/states/ma/ma-corporate-excise.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
    "name": "ma-cpu",
    "jurisdiction": "MA",
    "path": "skills/morocco/ma-cpu.md",
@@ -11385,7 +11448,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "ma-return-assembly",
@@ -11403,7 +11466,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "ma-social-contributions",
@@ -11541,15 +11604,6 @@
    "tax_year": 2026
   },
   {
-   "name": "massachusetts-sales-tax",
-   "jurisdiction": "US-MA",
-   "path": "skills/us/states/ma/massachusetts-sales-tax.md",
-   "trust_label": null,
-   "authored_by": null,
-   "reviewed_by": null,
-   "tax_year": 2025
-  },
-  {
    "name": "mauritius-vat",
    "jurisdiction": "MU",
    "path": "skills/mauritius/mauritius-vat.md",
@@ -11658,6 +11712,15 @@
    "tax_year": 2026
   },
   {
+   "name": "md-corporate-tax",
+   "jurisdiction": "US-MD",
+   "path": "skills/us/states/md/md-corporate-tax.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
    "name": "md-cross-border",
    "jurisdiction": "MD",
    "path": "skills/moldova/md-cross-border.md",
@@ -11670,6 +11733,15 @@
    "name": "md-income-tax",
    "jurisdiction": "US-MD",
    "path": "skills/us/states/md/md-income-tax.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "md-payroll",
+   "jurisdiction": "US-MD",
+   "path": "skills/us/states/md/md-payroll.md",
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
@@ -11691,7 +11763,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "md-tax-overview",
@@ -11748,6 +11820,15 @@
    "tax_year": 2026
   },
   {
+   "name": "me-corporate-tax",
+   "jurisdiction": "US-ME",
+   "path": "skills/us/states/me/me-corporate-tax.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
    "name": "me-cross-border",
    "jurisdiction": "ME",
    "path": "skills/montenegro/me-cross-border.md",
@@ -11763,7 +11844,16 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
+  },
+  {
+   "name": "me-payroll",
+   "jurisdiction": "US-ME",
+   "path": "skills/us/states/me/me-payroll.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
   },
   {
    "name": "me-sales-tax",
@@ -11772,7 +11862,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "me-tax-overview",
@@ -11955,13 +12045,22 @@
    "tax_year": 2026
   },
   {
+   "name": "mi-corporate-income-tax",
+   "jurisdiction": "US-MI",
+   "path": "skills/us/states/mi/mi-corporate-income-tax.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
    "name": "mi-detroit-individual-return",
    "jurisdiction": "US-MI",
    "path": "skills/us/states/mi/mi-detroit-individual-return.md",
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "mi-estimated-tax",
@@ -11970,7 +12069,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "mi-homestead-credit",
@@ -11979,7 +12078,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "mi-income-tax",
@@ -11988,7 +12087,16 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
+  },
+  {
+   "name": "mi-payroll",
+   "jurisdiction": "US-MI",
+   "path": "skills/us/states/mi/mi-payroll.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
   },
   {
    "name": "mi-pension-retirement-subtraction",
@@ -11997,7 +12105,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "mi-return-assembly",
@@ -12006,7 +12114,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "mi-sales-tax",
@@ -12015,34 +12123,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
-  },
-  {
-   "name": "minnesota-sales-tax",
-   "jurisdiction": "US-MN",
-   "path": "skills/us/states/mn/minnesota-sales-tax.md",
-   "trust_label": null,
-   "authored_by": null,
-   "reviewed_by": null,
-   "tax_year": 2025
-  },
-  {
-   "name": "mississippi-sales-tax",
-   "jurisdiction": "US-MS",
-   "path": "skills/us/states/ms/mississippi-sales-tax.md",
-   "trust_label": null,
-   "authored_by": null,
-   "reviewed_by": null,
-   "tax_year": 2025
-  },
-  {
-   "name": "missouri-sales-tax",
-   "jurisdiction": "US-MO",
-   "path": "skills/us/states/mo/missouri-sales-tax.md",
-   "trust_label": null,
-   "authored_by": null,
-   "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "mk-company-formation",
@@ -12198,13 +12279,31 @@
    "tax_year": 2025
   },
   {
+   "name": "mn-corporate-and-pte",
+   "jurisdiction": "US-MN",
+   "path": "skills/us/states/mn/mn-corporate-and-pte.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
    "name": "mn-income-tax",
    "jurisdiction": "US-MN",
    "path": "skills/us/states/mn/mn-income-tax.md",
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
+  },
+  {
+   "name": "mn-payroll",
+   "jurisdiction": "US-MN",
+   "path": "skills/us/states/mn/mn-payroll.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
   },
   {
    "name": "mn-sales-tax",
@@ -12213,7 +12312,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "mn-tax-overview",
@@ -12243,13 +12342,31 @@
    "tax_year": 2025
   },
   {
+   "name": "mo-corporate-tax",
+   "jurisdiction": "US-MO",
+   "path": "skills/us/states/mo/mo-corporate-tax.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
    "name": "mo-income-tax",
    "jurisdiction": "US-MO",
    "path": "skills/us/states/mo/mo-income-tax.md",
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
+  },
+  {
+   "name": "mo-payroll",
+   "jurisdiction": "US-MO",
+   "path": "skills/us/states/mo/mo-payroll.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
   },
   {
    "name": "mo-payroll-social",
@@ -12267,7 +12384,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "mo-tax-overview",
@@ -12558,18 +12675,36 @@
    "tax_year": 2026
   },
   {
+   "name": "ms-corporate-tax",
+   "jurisdiction": "US-MS",
+   "path": "skills/us/states/ms/ms-corporate-tax.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
    "name": "ms-income-tax",
    "jurisdiction": "US-MS",
    "path": "skills/us/states/ms/ms-income-tax.md",
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "ms-nonresident-withholding",
    "jurisdiction": "MS",
    "path": "skills/montserrat/ms-nonresident-withholding.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "ms-payroll",
+   "jurisdiction": "US-MS",
+   "path": "skills/us/states/ms/ms-payroll.md",
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
@@ -12582,7 +12717,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "ms-social-security-contributions",
@@ -12606,6 +12741,15 @@
    "name": "mt-company-residence-and-substance",
    "jurisdiction": "MT",
    "path": "skills/malta/mt-company-residence-and-substance.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "mt-corporate-income-tax",
+   "jurisdiction": "US-MT",
+   "path": "skills/us/states/mt/mt-corporate-income-tax.md",
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
@@ -12714,6 +12858,15 @@
    "name": "mt-non-dom",
    "jurisdiction": "MT",
    "path": "skills/malta/mt-non-dom.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "mt-payroll",
+   "jurisdiction": "US-MT",
+   "path": "skills/us/states/mt/mt-payroll.md",
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
@@ -13239,7 +13392,16 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
+  },
+  {
+   "name": "nc-corporate-tax",
+   "jurisdiction": "US-NC",
+   "path": "skills/us/states/nc/nc-corporate-tax.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
   },
   {
    "name": "nc-estimated-tax",
@@ -13248,7 +13410,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "nc-income-tax",
@@ -13257,7 +13419,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "nc-payroll",
@@ -13266,7 +13428,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "nc-return-assembly",
@@ -13275,7 +13437,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "nc-sales-tax",
@@ -13284,7 +13446,16 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
+  },
+  {
+   "name": "nd-corporate-tax",
+   "jurisdiction": "US-ND",
+   "path": "skills/us/states/nd/nd-corporate-tax.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
   },
   {
    "name": "nd-cross-border-tax",
@@ -13311,7 +13482,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "nd-payroll",
@@ -13320,7 +13491,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "nd-return-assembly",
@@ -13347,7 +13518,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "nd-transfer-pricing",
@@ -13386,18 +13557,36 @@
    "tax_year": 2025
   },
   {
+   "name": "ne-corporate-tax",
+   "jurisdiction": "US-NE",
+   "path": "skills/us/states/ne/ne-corporate-tax.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
    "name": "ne-income-tax",
    "jurisdiction": "US-NE",
    "path": "skills/us/states/ne/ne-income-tax.md",
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "ne-money-transfer-tax-repeal",
    "jurisdiction": "NE",
    "path": "skills/niger/ne-money-transfer-tax-repeal.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "ne-payroll",
+   "jurisdiction": "US-NE",
+   "path": "skills/us/states/ne/ne-payroll.md",
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
@@ -13410,7 +13599,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "ne-tax-overview",
@@ -13530,36 +13719,9 @@
    "tax_year": 2026
   },
   {
-   "name": "nevada-sales-tax",
-   "jurisdiction": "US-NV",
-   "path": "skills/us/states/nv/nevada-sales-tax.md",
-   "trust_label": null,
-   "authored_by": null,
-   "reviewed_by": null,
-   "tax_year": 2025
-  },
-  {
    "name": "new-jersey-sales-tax",
    "jurisdiction": "US-NJ",
    "path": "skills/us/states/nj/new-jersey-sales-tax.md",
-   "trust_label": null,
-   "authored_by": null,
-   "reviewed_by": null,
-   "tax_year": 2026
-  },
-  {
-   "name": "new-mexico-sales-tax",
-   "jurisdiction": "US-NM",
-   "path": "skills/us/states/nm/new-mexico-sales-tax.md",
-   "trust_label": null,
-   "authored_by": null,
-   "reviewed_by": null,
-   "tax_year": 2025
-  },
-  {
-   "name": "new-york-sales-tax",
-   "jurisdiction": "US-NY",
-   "path": "skills/us/states/ny/new-york-sales-tax.md",
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
@@ -13698,7 +13860,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "nh-interest-dividends-note",
@@ -13707,7 +13869,16 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
+  },
+  {
+   "name": "nh-payroll",
+   "jurisdiction": "US-NH",
+   "path": "skills/us/states/nh/nh-payroll.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
   },
   {
    "name": "ni-company-formation",
@@ -13980,13 +14151,31 @@
    "tax_year": 2026
   },
   {
+   "name": "nm-corporate-tax",
+   "jurisdiction": "US-NM",
+   "path": "skills/us/states/nm/nm-corporate-tax.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
    "name": "nm-income-tax",
    "jurisdiction": "US-NM",
    "path": "skills/us/states/nm/nm-income-tax.md",
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
+  },
+  {
+   "name": "nm-payroll",
+   "jurisdiction": "US-NM",
+   "path": "skills/us/states/nm/nm-payroll.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
   },
   {
    "name": "nm-sales-tax",
@@ -13995,7 +14184,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "no-capital-gains",
@@ -14058,7 +14247,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "no-social-contributions",
@@ -14247,16 +14436,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
-  },
-  {
-   "name": "nv-commerce-tax",
-   "jurisdiction": "US-NV",
-   "path": "skills/us/states/nv/nv-commerce-tax.md",
-   "trust_label": null,
-   "authored_by": null,
-   "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "nv-formation",
@@ -14268,13 +14448,22 @@
    "tax_year": 2025
   },
   {
+   "name": "nv-payroll",
+   "jurisdiction": "US-NV",
+   "path": "skills/us/states/nv/nv-payroll.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
    "name": "nv-sales-tax",
    "jurisdiction": "US-NV",
    "path": "skills/us/states/nv/nv-sales-tax.md",
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "ny-corporate-franchise-article-9a",
@@ -14292,7 +14481,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "ny-formation",
@@ -14301,7 +14490,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "ny-it-201-resident-return",
@@ -14313,22 +14502,13 @@
    "tax_year": 2026
   },
   {
-   "name": "ny-llc-filing-fee",
-   "jurisdiction": "US-NY",
-   "path": "skills/us/states/ny/ny-llc-filing-fee.md",
-   "trust_label": null,
-   "authored_by": null,
-   "reviewed_by": null,
-   "tax_year": null
-  },
-  {
    "name": "ny-llc-filing-fee-it-204-ll",
    "jurisdiction": "US-NY",
    "path": "skills/us/states/ny/ny-llc-filing-fee-it-204-ll.md",
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "ny-mctmt",
@@ -14337,7 +14517,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "ny-payroll",
@@ -14373,7 +14553,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": null
+   "tax_year": 2026
   },
   {
    "name": "nyc-ubt",
@@ -14382,7 +14562,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "nz-acc-levies",
@@ -14466,15 +14646,6 @@
    "tax_year": 2025
   },
   {
-   "name": "oh-cat",
-   "jurisdiction": "US-OH",
-   "path": "skills/us/states/oh/oh-cat.md",
-   "trust_label": null,
-   "authored_by": null,
-   "reviewed_by": null,
-   "tax_year": 2026
-  },
-  {
    "name": "oh-cat-tax",
    "jurisdiction": "US-OH",
    "path": "skills/us/states/oh/oh-cat-tax.md",
@@ -14493,18 +14664,18 @@
    "tax_year": 2026
   },
   {
-   "name": "oh-sales-tax",
+   "name": "oh-payroll",
    "jurisdiction": "US-OH",
-   "path": "skills/us/states/oh/oh-sales-tax.md",
+   "path": "skills/us/states/oh/oh-payroll.md",
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
-   "name": "ohio-sales-tax",
+   "name": "oh-sales-tax",
    "jurisdiction": "US-OH",
-   "path": "skills/us/states/oh/ohio-sales-tax.md",
+   "path": "skills/us/states/oh/oh-sales-tax.md",
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
@@ -14520,13 +14691,31 @@
    "tax_year": 2025
   },
   {
+   "name": "ok-corporate-tax",
+   "jurisdiction": "US-OK",
+   "path": "skills/us/states/ok/ok-corporate-tax.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
    "name": "ok-income-tax",
    "jurisdiction": "US-OK",
    "path": "skills/us/states/ok/ok-income-tax.md",
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
+  },
+  {
+   "name": "ok-payroll",
+   "jurisdiction": "US-OK",
+   "path": "skills/us/states/ok/ok-payroll.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
   },
   {
    "name": "ok-sales-tax",
@@ -14535,16 +14724,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
-  },
-  {
-   "name": "oklahoma-sales-tax",
-   "jurisdiction": "US-OK",
-   "path": "skills/us/states/ok/oklahoma-sales-tax.md",
-   "trust_label": null,
-   "authored_by": null,
-   "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "om-company-formation",
@@ -14634,7 +14814,16 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
+  },
+  {
+   "name": "or-corporate-tax",
+   "jurisdiction": "US-OR",
+   "path": "skills/us/states/or/or-corporate-tax.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
   },
   {
    "name": "or-income-tax",
@@ -14643,7 +14832,25 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
+  },
+  {
+   "name": "or-payroll",
+   "jurisdiction": "US-OR",
+   "path": "skills/us/states/or/or-payroll.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "pa-corporate-tax",
+   "jurisdiction": "US-PA",
+   "path": "skills/us/states/pa/pa-corporate-tax.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
   },
   {
    "name": "pa-income-tax",
@@ -14661,7 +14868,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "pa-payroll",
@@ -14833,15 +15040,6 @@
    "authored_by": null,
    "reviewed_by": null,
    "tax_year": 2026
-  },
-  {
-   "name": "pennsylvania-sales-tax",
-   "jurisdiction": "US-PA",
-   "path": "skills/us/states/pa/pennsylvania-sales-tax.md",
-   "trust_label": null,
-   "authored_by": null,
-   "reviewed_by": null,
-   "tax_year": 2025
   },
   {
    "name": "permanent-establishment-risk",
@@ -15330,6 +15528,15 @@
    "tax_year": 2026
   },
   {
+   "name": "pr-act-60-incentives",
+   "jurisdiction": "PR",
+   "path": "skills/puerto-rico/pr-act-60-incentives.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
    "name": "pr-company-income-tax",
    "jurisdiction": "PR",
    "path": "skills/puerto-rico/pr-company-income-tax.md",
@@ -15346,6 +15553,24 @@
    "authored_by": null,
    "reviewed_by": null,
    "tax_year": 2025
+  },
+  {
+   "name": "pr-individual-income-tax",
+   "jurisdiction": "PR",
+   "path": "skills/puerto-rico/pr-individual-income-tax.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "pr-ivu-sales-and-use-tax",
+   "jurisdiction": "PR",
+   "path": "skills/puerto-rico/pr-ivu-sales-and-use-tax.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
   },
   {
    "name": "pr-self-employment-tax-2025",
@@ -15591,13 +15816,31 @@
    "tax_year": null
   },
   {
+   "name": "ri-corporate-tax",
+   "jurisdiction": "US-RI",
+   "path": "skills/us/states/ri/ri-corporate-tax.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
    "name": "ri-income-tax",
    "jurisdiction": "US-RI",
    "path": "skills/us/states/ri/ri-income-tax.md",
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
+  },
+  {
+   "name": "ri-payroll",
+   "jurisdiction": "US-RI",
+   "path": "skills/us/states/ri/ri-payroll.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
   },
   {
    "name": "ri-sales-tax",
@@ -15606,7 +15849,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "ring-fencing-of-assessed-losses-under-section-20a",
@@ -15960,6 +16203,15 @@
    "tax_year": 2026
   },
   {
+   "name": "sc-corporate-tax",
+   "jurisdiction": "US-SC",
+   "path": "skills/us/states/sc/sc-corporate-tax.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
    "name": "sc-cross-border",
    "jurisdiction": "SC",
    "path": "skills/seychelles/sc-cross-border.md",
@@ -15975,7 +16227,16 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
+  },
+  {
+   "name": "sc-payroll",
+   "jurisdiction": "US-SC",
+   "path": "skills/us/states/sc/sc-payroll.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
   },
   {
    "name": "sc-payroll-social",
@@ -16002,7 +16263,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "sc-tax-overview",
@@ -16026,6 +16287,24 @@
    "name": "sc-vat-gst",
    "jurisdiction": "SC",
    "path": "skills/seychelles/sc-vat-gst.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "sd-bank-franchise-tax",
+   "jurisdiction": "US-SD",
+   "path": "skills/us/states/sd/sd-bank-franchise-tax.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "sd-payroll",
+   "jurisdiction": "US-SD",
+   "path": "skills/us/states/sd/sd-payroll.md",
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
@@ -17805,6 +18084,15 @@
    "tax_year": 2026
   },
   {
+   "name": "tn-corporate-tax",
+   "jurisdiction": "US-TN",
+   "path": "skills/us/states/tn/tn-corporate-tax.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
    "name": "tn-cross-border",
    "jurisdiction": "TN",
    "path": "skills/tunisia/tn-cross-border.md",
@@ -17817,6 +18105,15 @@
    "name": "tn-income-tax",
    "jurisdiction": "TN",
    "path": "skills/tunisia/tn-income-tax.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "tn-payroll",
+   "jurisdiction": "US-TN",
+   "path": "skills/us/states/tn/tn-payroll.md",
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
@@ -17838,7 +18135,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "tn-tax-overview",
@@ -18090,7 +18387,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "tx-franchise-tax",
@@ -18099,25 +18396,16 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
-   "name": "tx-margin-tax",
+   "name": "tx-payroll",
    "jurisdiction": "US-TX",
-   "path": "skills/us/states/tx/tx-margin-tax.md",
+   "path": "skills/us/states/tx/tx-payroll.md",
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
-  },
-  {
-   "name": "tx-sales-use-tax",
-   "jurisdiction": "US-TX",
-   "path": "skills/us/states/tx/tx-sales-use-tax.md",
-   "trust_label": null,
-   "authored_by": null,
-   "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "tz-corporate-income-tax",
@@ -18675,7 +18963,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "us-1120-corporation-return-schedule-ordinary-business",
@@ -18690,6 +18978,33 @@
    "name": "us-2026-federal-tax-changes",
    "jurisdiction": "US",
    "path": "skills/us/federal/us-2026-federal-tax-changes.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "us-529-and-trump-accounts",
+   "jurisdiction": "US",
+   "path": "skills/us/federal/us-529-and-trump-accounts.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "us-adoption-credit-8839",
+   "jurisdiction": "US",
+   "path": "skills/us/federal/us-adoption-credit-8839.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "us-alternative-minimum-tax-6251",
+   "jurisdiction": "US",
+   "path": "skills/us/federal/us-alternative-minimum-tax-6251.md",
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
@@ -18729,21 +19044,12 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "us-capital-gains",
    "jurisdiction": "US",
    "path": "skills/us/us-capital-gains.md",
-   "trust_label": null,
-   "authored_by": null,
-   "reviewed_by": null,
-   "tax_year": 2026
-  },
-  {
-   "name": "us-cfc-gilti",
-   "jurisdiction": "US",
-   "path": "skills/us/federal/us-cfc-gilti.md",
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
@@ -18759,6 +19065,24 @@
    "tax_year": 2026
   },
   {
+   "name": "us-child-tax-credit-and-eitc",
+   "jurisdiction": "US",
+   "path": "skills/us/federal/us-child-tax-credit-and-eitc.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "us-citizen-moving-abroad-tax",
+   "jurisdiction": "US",
+   "path": "skills/us/federal/us-citizen-moving-abroad-tax.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
    "name": "us-corporate-extension-form-7004-and-the",
    "jurisdiction": "US",
    "path": "skills/us/federal/us-corporate-extension-form-7004-and-the.md",
@@ -18768,36 +19092,63 @@
    "tax_year": 2026
   },
   {
-   "name": "us-crypto-income-events",
-   "jurisdiction": "US",
-   "path": "skills/us/federal/us-crypto-income-events.md",
-   "trust_label": null,
-   "authored_by": null,
-   "reviewed_by": null,
-   "tax_year": 2025
-  },
-  {
-   "name": "us-crypto-reporting",
-   "jurisdiction": "US",
-   "path": "skills/us/federal/us-crypto-reporting.md",
-   "trust_label": null,
-   "authored_by": null,
-   "reviewed_by": null,
-   "tax_year": 2025
-  },
-  {
    "name": "us-crypto-tax",
    "jurisdiction": "US",
    "path": "skills/us/federal/us-crypto-tax.md",
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
+  },
+  {
+   "name": "us-de-corporate-tax",
+   "jurisdiction": "US-DE",
+   "path": "skills/us/states/de/de-corporate-tax.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "us-de-payroll",
+   "jurisdiction": "US-DE",
+   "path": "skills/us/states/de/de-payroll.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "us-dependent-care-credit-2441",
+   "jurisdiction": "US",
+   "path": "skills/us/federal/us-dependent-care-credit-2441.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "us-divorce-alimony-and-property",
+   "jurisdiction": "US",
+   "path": "skills/us/federal/us-divorce-alimony-and-property.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
   },
   {
    "name": "us-education-credits-8863",
    "jurisdiction": "US",
    "path": "skills/us/federal/us-education-credits-8863.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "us-energy-and-clean-vehicle-credits-2026",
+   "jurisdiction": "US",
+   "path": "skills/us/federal/us-energy-and-clean-vehicle-credits-2026.md",
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
@@ -18819,7 +19170,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "us-expatriation-exit-tax",
@@ -18885,9 +19236,18 @@
    "tax_year": 2025
   },
   {
-   "name": "us-feie-ftc",
+   "name": "us-filing-status-and-dependents",
    "jurisdiction": "US",
-   "path": "skills/us/federal/us-feie-ftc.md",
+   "path": "skills/us/federal/us-filing-status-and-dependents.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "us-firpta-withholding-8288",
+   "jurisdiction": "US",
+   "path": "skills/us/federal/us-firpta-withholding-8288.md",
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
@@ -18900,7 +19260,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "us-foreign-tax-credit-1116",
@@ -18930,13 +19290,22 @@
    "tax_year": 2025
   },
   {
+   "name": "us-form-1040-nr-nonresident-return",
+   "jurisdiction": "US",
+   "path": "skills/us/federal/us-form-1040-nr-nonresident-return.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
    "name": "us-form-1041-trust-and-estate-income",
    "jurisdiction": "US",
    "path": "skills/us/federal/us-form-1041-trust-and-estate-income.md",
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "us-form-1065-partnership",
@@ -18945,7 +19314,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "us-form-1120-c-corp",
@@ -18954,7 +19323,16 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
+  },
+  {
+   "name": "us-form-1120-s-s-corporation-return",
+   "jurisdiction": "US",
+   "path": "skills/us/federal/us-form-1120-s-s-corporation-return.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
   },
   {
    "name": "us-form-5471-cfc-information",
@@ -18963,7 +19341,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "us-form-5472-foreign-owned-us",
@@ -18972,7 +19350,25 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
+  },
+  {
+   "name": "us-form-8832-entity-classification",
+   "jurisdiction": "US",
+   "path": "skills/us/federal/us-form-8832-entity-classification.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "us-form-8865-foreign-partnership",
+   "jurisdiction": "US",
+   "path": "skills/us/federal/us-form-8865-foreign-partnership.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
   },
   {
    "name": "us-form-941-940-payroll",
@@ -18981,7 +19377,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "us-gaap-asc606-revenue",
@@ -19020,13 +19416,22 @@
    "tax_year": 2025
   },
   {
+   "name": "us-gambling-winnings-and-losses",
+   "jurisdiction": "US",
+   "path": "skills/us/federal/us-gambling-winnings-and-losses.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
    "name": "us-gilti-fdii-beat",
    "jurisdiction": "US",
    "path": "skills/us/federal/us-gilti-fdii-beat.md",
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "us-hiring-your-children-and-accountable-plans",
@@ -19038,9 +19443,108 @@
    "tax_year": 2026
   },
   {
+   "name": "us-home-sale-exclusion-121",
+   "jurisdiction": "US",
+   "path": "skills/us/federal/us-home-sale-exclusion-121.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "us-household-employment-schedule-h",
+   "jurisdiction": "US",
+   "path": "skills/us/federal/us-household-employment-schedule-h.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "us-hsa-form-8889",
+   "jurisdiction": "US",
+   "path": "skills/us/federal/us-hsa-form-8889.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "us-id-corporate-tax",
+   "jurisdiction": "US-ID",
+   "path": "skills/us/states/id/us-id-corporate-tax.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "us-installment-sale-6252",
+   "jurisdiction": "US",
+   "path": "skills/us/federal/us-installment-sale-6252.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "us-ira-and-roth-conversions-8606",
+   "jurisdiction": "US",
+   "path": "skills/us/federal/us-ira-and-roth-conversions-8606.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
    "name": "us-irs-collections-and-controversy",
    "jurisdiction": "US",
    "path": "skills/us/federal/us-irs-collections-and-controversy.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "us-irs-notices-cp2000-and-letters",
+   "jurisdiction": "US",
+   "path": "skills/us/federal/us-irs-notices-cp2000-and-letters.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "us-itin-form-w-7",
+   "jurisdiction": "US",
+   "path": "skills/us/federal/us-itin-form-w-7.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "us-kiddie-tax-8615",
+   "jurisdiction": "US",
+   "path": "skills/us/federal/us-kiddie-tax-8615.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "us-local-income-tax-matrix",
+   "jurisdiction": "US",
+   "path": "skills/us/federal/us-local-income-tax-matrix.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "us-ma-payroll",
+   "jurisdiction": "US-MA",
+   "path": "skills/us/states/ma/us-ma-payroll.md",
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
@@ -19065,18 +19569,45 @@
    "tax_year": 2026
   },
   {
+   "name": "us-net-operating-loss-172",
+   "jurisdiction": "US",
+   "path": "skills/us/federal/us-net-operating-loss-172.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "us-new-deductions-tips-overtime-senior-car-loan",
+   "jurisdiction": "US",
+   "path": "skills/us/federal/us-new-deductions-tips-overtime-senior-car-loan.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
    "name": "us-nft-tax",
    "jurisdiction": "US",
    "path": "skills/us/federal/us-nft-tax.md",
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "us-nonresident-cgt",
    "jurisdiction": "US",
    "path": "skills/us/us-nonresident-cgt.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "us-nonresident-withholding-1042-w-8",
+   "jurisdiction": "US",
+   "path": "skills/us/federal/us-nonresident-withholding-1042-w-8.md",
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
@@ -19089,7 +19620,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "us-ny-return-assembly",
@@ -19098,7 +19629,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "us-opportunity-zones",
@@ -19113,6 +19644,15 @@
    "name": "us-pl-86-272-income-tax-nexus",
    "jurisdiction": "US",
    "path": "skills/us/federal/us-pl-86-272-income-tax-nexus.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "us-premium-tax-credit-8962",
+   "jurisdiction": "US",
+   "path": "skills/us/federal/us-premium-tax-credit-8962.md",
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
@@ -19134,7 +19674,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "us-quarterly-estimated-tax",
@@ -19143,7 +19683,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "us-r-and-d-section-174-and-41",
@@ -19170,7 +19710,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "us-sales-tax",
@@ -19179,12 +19719,21 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "us-sales-tax-nexus-50-state-matrix",
    "jurisdiction": "US",
    "path": "skills/us/federal/us-sales-tax-nexus-50-state-matrix.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "us-schedule-a-itemized-deductions",
+   "jurisdiction": "US",
+   "path": "skills/us/federal/us-schedule-a-itemized-deductions.md",
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
@@ -19197,7 +19746,16 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
+  },
+  {
+   "name": "us-schedule-e-rental-income",
+   "jurisdiction": "US",
+   "path": "skills/us/federal/us-schedule-e-rental-income.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
   },
   {
    "name": "us-section-1031-like-kind-exchange",
@@ -19242,7 +19800,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "us-self-employed-retirement",
@@ -19251,7 +19809,16 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
+  },
+  {
+   "name": "us-social-security-benefits-taxation",
+   "jurisdiction": "US",
+   "path": "skills/us/federal/us-social-security-benefits-taxation.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
   },
   {
    "name": "us-sole-prop-bookkeeping",
@@ -19260,12 +19827,21 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "us-state-bonus-depreciation-conformity-matrix",
    "jurisdiction": "US",
    "path": "skills/us/federal/us-state-bonus-depreciation-conformity-matrix.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "us-state-estate-and-inheritance-tax-matrix",
+   "jurisdiction": "US",
+   "path": "skills/us/federal/us-state-estate-and-inheritance-tax-matrix.md",
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
@@ -19287,7 +19863,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "us-state-new-hire-reporting-matrix",
@@ -19296,7 +19872,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "us-state-payroll-matrix",
@@ -19305,7 +19881,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "us-tax-residency",
@@ -19326,13 +19902,22 @@
    "tax_year": 2026
   },
   {
+   "name": "us-tax-treaty-claims-8833",
+   "jurisdiction": "US",
+   "path": "skills/us/federal/us-tax-treaty-claims-8833.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
    "name": "us-tx-freelance-intake",
    "jurisdiction": "US-TX",
    "path": "skills/us/states/tx/us-tx-freelance-intake.md",
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "us-tx-return-assembly",
@@ -19341,7 +19926,25 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
+  },
+  {
+   "name": "us-worker-classification-w2-vs-1099",
+   "jurisdiction": "US",
+   "path": "skills/us/federal/us-worker-classification-w2-vs-1099.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "ut-corporate-tax",
+   "jurisdiction": "US-UT",
+   "path": "skills/us/states/ut/ut-corporate-tax.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
   },
   {
    "name": "ut-income-tax",
@@ -19350,7 +19953,16 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
+  },
+  {
+   "name": "ut-payroll",
+   "jurisdiction": "US-UT",
+   "path": "skills/us/states/ut/ut-payroll.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
   },
   {
    "name": "ut-sales-tax",
@@ -19359,16 +19971,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
-  },
-  {
-   "name": "utah-sales-tax",
-   "jurisdiction": "US-UT",
-   "path": "skills/us/states/ut/utah-sales-tax.md",
-   "trust_label": null,
-   "authored_by": null,
-   "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "uy-company-formation",
@@ -19470,6 +20073,15 @@
    "tax_year": 2025
   },
   {
+   "name": "va-corporate-tax-and-bpol",
+   "jurisdiction": "US-VA",
+   "path": "skills/us/states/va/va-corporate-tax-and-bpol.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
    "name": "va-income-tax",
    "jurisdiction": "US-VA",
    "path": "skills/us/states/va/va-income-tax.md",
@@ -19488,13 +20100,22 @@
    "tax_year": 2026
   },
   {
+   "name": "va-payroll",
+   "jurisdiction": "US-VA",
+   "path": "skills/us/states/va/va-payroll.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
    "name": "va-sales-tax",
    "jurisdiction": "US-VA",
    "path": "skills/us/states/va/va-sales-tax.md",
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "vat-place-of-supply-master",
@@ -19641,13 +20262,31 @@
    "tax_year": 2025
   },
   {
+   "name": "vt-corporate-tax",
+   "jurisdiction": "US-VT",
+   "path": "skills/us/states/vt/vt-corporate-tax.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
    "name": "vt-income-tax",
    "jurisdiction": "US-VT",
    "path": "skills/us/states/vt/vt-income-tax.md",
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
+  },
+  {
+   "name": "vt-payroll",
+   "jurisdiction": "US-VT",
+   "path": "skills/us/states/vt/vt-payroll.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
   },
   {
    "name": "vt-sales-tax",
@@ -19713,15 +20352,6 @@
    "tax_year": 2025
   },
   {
-   "name": "wa-b-and-o-tax",
-   "jurisdiction": "US-WA",
-   "path": "skills/us/states/wa/wa-b-and-o-tax.md",
-   "trust_label": null,
-   "authored_by": null,
-   "reviewed_by": null,
-   "tax_year": 2025
-  },
-  {
    "name": "wa-bo-tax",
    "jurisdiction": "US-WA",
    "path": "skills/us/states/wa/wa-bo-tax.md",
@@ -19731,9 +20361,9 @@
    "tax_year": 2026
   },
   {
-   "name": "wa-business-occupation-tax",
+   "name": "wa-payroll",
    "jurisdiction": "US-WA",
-   "path": "skills/us/states/wa/wa-business-occupation-tax.md",
+   "path": "skills/us/states/wa/wa-payroll.md",
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
@@ -19749,9 +20379,9 @@
    "tax_year": 2026
   },
   {
-   "name": "washington-sales-tax",
-   "jurisdiction": "US-WA",
-   "path": "skills/us/states/wa/washington-sales-tax.md",
+   "name": "wi-corporate-tax",
+   "jurisdiction": "US-WI",
+   "path": "skills/us/states/wi/wi-corporate-tax.md",
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
@@ -19764,16 +20394,16 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
-   "name": "wi-sales-tax",
+   "name": "wi-payroll",
    "jurisdiction": "US-WI",
-   "path": "skills/us/states/wi/wi-sales-tax.md",
+   "path": "skills/us/states/wi/wi-payroll.md",
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "wisconsin-sales-tax",
@@ -19848,13 +20478,31 @@
    "tax_year": 2025
   },
   {
+   "name": "wv-corporate-tax",
+   "jurisdiction": "US-WV",
+   "path": "skills/us/states/wv/wv-corporate-tax.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
    "name": "wv-income-tax",
    "jurisdiction": "US-WV",
    "path": "skills/us/states/wv/wv-income-tax.md",
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
+  },
+  {
+   "name": "wv-payroll",
+   "jurisdiction": "US-WV",
+   "path": "skills/us/states/wv/wv-payroll.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
   },
   {
    "name": "wv-sales-tax",
@@ -19863,7 +20511,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "wy-formation",
@@ -19875,22 +20523,22 @@
    "tax_year": 2025
   },
   {
+   "name": "wy-payroll",
+   "jurisdiction": "US-WY",
+   "path": "skills/us/states/wy/wy-payroll.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
    "name": "wy-sales-tax",
    "jurisdiction": "US-WY",
    "path": "skills/us/states/wy/wy-sales-tax.md",
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
-  },
-  {
-   "name": "wyoming-sales-tax",
-   "jurisdiction": "US-WY",
-   "path": "skills/us/states/wy/wyoming-sales-tax.md",
-   "trust_label": null,
-   "authored_by": null,
-   "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "xero-integration",
