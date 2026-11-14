@@ -246,8 +246,8 @@ DOR's penalty table lists failure to file and failure to pay as separate rows un
 | SUT-2020-01 marketplace facilitators. Read for the $100,000 test, carve-outs, liability and the delivery order example. | https://dor.georgia.gov/media/35306/download | 2026-11-13 |
 | DOR "How do I know if I need to collect". Read for the "over 200" and "at least $100,000" wording. | https://dor.georgia.gov/taxes/sales-use-tax/how-do-i-know-if-i-need-collect-sales-use-tax | 2026-11-13 |
 | DOR marketplace facilitators page. Read for the page as a whole. | https://dor.georgia.gov/marketplace-facilitators | 2026-11-13 |
-| DOR registration FAQ. Read for who registers, state agency contracts, trade shows and trust fund liability. | https://dor.georgia.gov/taxes/business-taxes/sales-use-tax/sales-and-use-tax-registration-faq | 2026-11-13 |
-| DOR out-of-state sellers. Read for drop shipments and trade shows. | https://dor.georgia.gov/taxes/sales-use-tax/out-state-sellers | 2026-11-13 |
+| DOR registration FAQ. Read for who registers, trade shows and trust fund liability. | https://dor.georgia.gov/taxes/business-taxes/sales-use-tax/sales-and-use-tax-registration-faq | 2026-11-13 |
+| DOR out-of-state sellers. Read for drop shipments, trade shows and the over-$100,000 state agency contract registration rule. | https://dor.georgia.gov/taxes/sales-use-tax/out-state-sellers | 2026-11-13 |
 | DOR what is subject to sales and use tax. Read for taxed goods and services, delivery, installation, repair labour, gratuities and use tax. | https://dor.georgia.gov/taxes/sales-use-tax/what-subject-sales-and-use-tax | 2026-11-13 |
 | DOR 2020 list of sales and use tax exemptions. Read for food, drugs, software, manufacturing and energy. | https://dor.georgia.gov/document/document/2020-list-sales-and-use-tax-exemptions/download | 2026-11-13 |
 | DOR nontaxable sales FAQ. Read for the burden of proof and good faith. | https://dor.georgia.gov/taxes/business-taxes/sales-use-tax/nontaxable-sales | 2026-11-13 |
