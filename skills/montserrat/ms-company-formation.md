@@ -52,7 +52,7 @@ People setting up a domestic company limited by shares in Montserrat, or registe
 | Beneficial ownership notice, s.95 | Within 14 days of incorporation | Registrable persons, or a statement that there are none | same |
 | Members and directors particulars, s.373 | Within 14 days of incorporation or continuation; 14 days for changes | | same |
 | Records, s.105 | Kept at least 7 years after the end of the financial year | | [Cap. 11.12, ss.105 and 106](https://www.gov.ms/wp-content/uploads/2026/02/11.12-Companies-Act.pdf#page=79) |
-| Reporting company test, reg.21 | Gross revenue of $4 million or gross assets of $2 million, including affiliates (Act s.2(9): "exceeding" a prescribed threshold) | | [SRO 16, Part 3](https://www.gov.ms/wp-content/uploads/2024/03/SRO-No.-16-of-2024-Companies-Regulations-2024.pdf#page=17) |
+| Reporting company test, reg.21 | Gross revenue of $4,000,000 or gross assets of $2,000,000, including affiliates (Act s.2(9): "exceeding" a prescribed threshold) | | [SRO 16, Part 3](https://www.gov.ms/wp-content/uploads/2024/03/SRO-No.-16-of-2024-Companies-Regulations-2024.pdf#page=17) |
 | Foreign company change notice, s.220 | Within one month of specified changes (directors, registered agent) | | [Cap. 11.12, ss.218 to 221](https://www.gov.ms/wp-content/uploads/2026/02/11.12-Companies-Act.pdf#page=140) |
 
 ### Steps in order
