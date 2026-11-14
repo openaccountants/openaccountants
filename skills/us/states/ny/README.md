@@ -6,7 +6,7 @@ not_applicable:
 covered_by:
   IT-IND: ny-it-201-resident-return
   IT-CORP: ny-corporate-franchise-article-9a
-  VAT: new-york-sales-tax
+  VAT: ny-sales-tax
   SC: ny-payroll
   PR: ny-payroll
   XB: ny-residency-leaving-new-york
@@ -23,9 +23,10 @@ Calendar tax year for individuals. Authorities: the New York State Department of
 | IT-IND, individual income tax (full-year residents, Form IT-201) | ny-it-201-resident-return | checked against the law |
 | IT-IND, estimated tax (Form IT-2105) | ny-estimated-tax | checked against the law |
 | IT-IND, New York City unincorporated business tax | nyc-ubt | checked against the law |
-| IT-IND, freelancer intake and return assembly (routers) | us-ny-freelance-intake, us-ny-return-assembly | checked against the law |
+| IT-IND, freelancer intake (router) | us-ny-freelance-intake | checked against the law |
+| IT-IND, freelancer return assembly (router) | us-ny-return-assembly | checked against the law |
 | IT-CORP, corporate franchise tax (Article 9-A) | ny-corporate-franchise-article-9a | sourced from the law |
-| VAT / sales and use tax | new-york-sales-tax | sourced from the law |
+| VAT / sales and use tax | ny-sales-tax | sourced from the law |
 | SC and PR, unemployment insurance and withholding | ny-payroll | sourced from the law |
 | MCTMT (employers and the self-employed) | ny-mctmt | sourced from the law |
 | Pass-through entity tax | ny-pte-tax-ptet | sourced from the law |
@@ -33,7 +34,7 @@ Calendar tax year for individuals. Authorities: the New York State Department of
 | Formation | ny-formation | sourced from the law |
 | XB, residency, leaving New York, part-year returns (IT-203) | ny-residency-leaving-new-york | checked against the law |
 
-The folder also holds `ny-sales-tax.md` and `ny-llc-filing-fee.md`, which cover the same jobs as `new-york-sales-tax` and `ny-llc-filing-fee-it-204-ll`; they are being reviewed in a separate change. The New York City unincorporated business tax used to have a second copy in `skills/us/states/ny-nyc/`; it was folded into `nyc-ubt` on 13 November 2026.
+Each job has one skill. `new-york-sales-tax` was folded into `ny-sales-tax`, and `ny-llc-filing-fee` into `ny-llc-filing-fee-it-204-ll`, on 13 November 2026. The New York City unincorporated business tax used to have a second copy in `skills/us/states/ny-nyc/`; it was folded into `nyc-ubt` on 13 November 2026.
 
 Out of scope for this pack: property tax; estate tax; the New York City commercial rent tax; the New York City general corporation and business corporation taxes; partnership UBT (Form NYC-204); fiduciary returns; industry taxes (petroleum, highway use and the like).
 

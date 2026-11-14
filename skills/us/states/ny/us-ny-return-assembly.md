@@ -1,10 +1,10 @@
 ---
 name: us-ny-return-assembly
 description: Final step of the New York freelancer workflow for tax year 2026. Runs the federal and New York skills in order for a full-year New York resident sole proprietor or single-member LLC, checks that the figures agree across Form 1040, Form IT-201 and IT-225, Form NYC-202 and Form IT-219, the MCTMT lines and the estimated tax schedules, and produces the reviewer brief, the working paper and the client's action list with 2027 dates. Carries no rates of its own; every figure is in the skill that owns it. Trigger after us-ny-freelance-intake hands off, or on "assemble my New York return", "NY return package", "reviewer brief New York".
-version: "2.0"
+version: "3.0"
 jurisdiction: US-NY
 tax_year: 2026
-last_updated: 2026-11-13
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
@@ -13,7 +13,7 @@ type: router
 
 # New York freelancer return assembly, tax year 2026
 
-> **Source-cited draft.** Routing and cross-checks built from the 2025 Form IT-201, IT-225 and IT-219 instructions, the 2026 Form IT-2105 instructions and the 2025 Form NYC-202 instructions, read on 2026-11-13. No accountant has reviewed it. All outputs must be reviewed by a qualified tax professional before filing.
+> **Source-cited draft.** Routing and cross-checks built from the 2025 Form IT-201, IT-225 and IT-219 instructions, the 2026 Form IT-2105 instructions and the 2025 Form NYC-202 instructions, read on 2026-11-13 and rechecked on 2026-11-14. No accountant has reviewed it. All outputs must be reviewed by a qualified tax professional before filing.
 
 **Answer first.** Run the skills in the order below, then check the links between returns: federal AGI is the starting point of Form IT-201; any UBT or MCTMT deducted on Schedule C is added back on Form IT-225 (codes A-201 and A-214); the UBT on Form NYC-202 feeds the IT-219 credit on Form IT-201 line 53, capped at the city tax; estimated payments for each tax are matched to the right return. Then write the reviewer brief and the client's action list. This skill states no tax figures.
 
@@ -151,8 +151,11 @@ Output files: a master workbook (sheets for each form above), `reviewer_brief.md
 5. Pay the first 2027 installment of federal, New York (IT-2105) and UBT (NYC-5UBTI) estimates
 6. File Form IT-370, Form NYC-EXT and federal Form 4868 if more time is needed (each extends filing only; NYC needs its own form)
 
-### By 15 June 2027, 15 September 2027 and 15 January 2028
+### By 15 June 2027 and 15 September 2027
 1. Pay the 2027 federal, New York and UBT installments
+
+### By 18 January 2028
+1. Pay the fourth 2027 federal, New York and UBT installment (15 January 2028 is a Saturday and 17 January is Martin Luther King Jr. Day, so the date moves to the next regular workday)
 
 ### All year
 1. Get a W-9 from each new contractor before paying them
@@ -161,7 +164,66 @@ Output files: a master workbook (sheets for each form above), `reviewer_brief.md
 4. Revisit the S corporation question with `us-s-corp-election-decision`
 ```
 
-Due dates for 2027 are those that apply when each date falls on a weekday; confirm them against the 2027 Form 1040-ES, IT-2105 and NYC-5UBTI when published.
+The dates follow the calendar-year pattern in IT-2105-I (2026): April 15, June 15, September 15 and January 15, moved to the next regular workday when one falls on a Saturday, Sunday or legal holiday. 15 April 2027 is a Thursday, 15 June 2027 a Tuesday and 15 September 2027 a Wednesday. Confirm them against the 2027 Form 1040-ES, IT-2105 and NYC-5UBTI when published.
+
+## Boundary and exception table
+
+| Situation | Treatment |
+| --- | --- |
+| UBT or MCTMT paid in 2026 for 2025 (a balance or late estimate) and deducted on the 2026 Schedule C | Still added back on the 2026 Form IT-225 (A-201 or A-214): the add-back follows the federal deduction, not the year the tax was for |
+| UBT deducted on Schedule C but no Form NYC-202 for 2026 | Flag: either the deduction is for an earlier year's UBT, or a 2026 return is missing; check with `nyc-ubt` |
+| Computed IT-219 credit above the city tax less the household credit | Cap the credit at that figure; the rest is lost, not refunded or carried over (Case 2) |
+| Spouses each run a business subject to UBT | Add both Form NYC-202 line 21 (or NYC-202S line 8) amounts on Form IT-219 line 1 ([IT-219-I (2025)](https://www.tax.ny.gov/pdf/current_forms/it/it219i.pdf)) |
+| Federal itemized but New York standard (or the reverse) | Allowed; record the choice under "Positions taken" |
+| MCTMT owed in both zones | Both zone lines on Form IT-201 (54a to 54e); figures in `ny-mctmt` |
+| Upstream skill output disagrees with the documents | Flag for the reviewer and continue; do not change the upstream figure silently |
+
+## Worked cases
+
+The clients are invented. Each case uses figures produced by the upstream skills; this skill only checks that they carry.
+
+**Case 1, the IT-225 add-backs catch a gap in the New York AGI.** A Brooklyn web developer's finished federal return shows federal AGI of USD 181,250. During 2026 she paid USD 3,400 of New York City UBT (the 2025 balance and 2026 estimates) and USD 450 of MCTMT for 2025, and deducted both on Schedule C. Federal AGI includes USD 600 of US Treasury interest. The draft IT-201 shows New York AGI of USD 181,250 less the USD 600 subtraction, that is USD 180,650. Check: Form IT-201 line 19 = USD 181,250 (ties). Additions on IT-225: A-201 USD 3,400 and A-214 USD 450, total USD 3,850 ([IT-225-I (2025)](https://www.tax.ny.gov/pdf/current_forms/it/it225i.pdf)). New York AGI = 181,250 + 3,850 minus 600 = USD 184,500. The draft is USD 3,850 short: both add-backs were missed. Send the IT-201 back to `ny-it-201-resident-return` with the add-backs and record the fix in the reviewer brief.
+
+```oa-check
+name: NY return assembly, federal AGI to New York AGI with IT-225 add-backs (2026)
+inputs:
+  federal_agi: 181250
+  ubt_deducted: 3400
+  mctmt_deducted: 450
+  us_treasury_interest: 600
+  draft_ny_agi: 180650
+steps:
+  - it225_additions: ubt_deducted + mctmt_deducted
+  - ny_agi: federal_agi + it225_additions - us_treasury_interest
+  - shortfall_in_draft: ny_agi - draft_ny_agi
+expected:
+  it225_additions: 3850.00
+  ny_agi: 184500.00
+  shortfall_in_draft: 3850.00
+```
+
+**Case 2, a decision: does the city tax limit the IT-219 credit?** The rule: the credit allowed cannot exceed the New York City personal income tax; it can only reduce the city tax to zero, and any unused credit is neither refunded nor carried over ([IT-219-I (2025)](https://www.tax.ny.gov/pdf/current_forms/it/it219i.pdf)). Take the Brooklyn designer worked in `nyc-ubt` (Case 1 there): `nyc-ubt` computes a credit of USD 303.54 and her city tax is USD 4,526.20, with no household credit. City tax less household credit is USD 4,526.20, so the limit does not bind: the credit on Form IT-201-ATT line 8 is the full USD 303.54 and USD 4,222.66 of city tax remains. Now the other way: a client whose `nyc-ubt` credit is USD 1,150 but whose city tax is only USD 900 (a year with a large loss elsewhere), again with no household credit. The limit binds: the credit allowed is USD 900, city tax falls to zero, and USD 250 of credit is lost. The deciding figure is the city tax less the household credit; the credit carried is the smaller of the two.
+
+```oa-check
+name: IT-219 credit against the city tax limit, both ways (decision)
+inputs:
+  credit_a: 303.54
+  city_tax_a: 4526.20
+  household_credit_a: 0
+  credit_b: 1150
+  city_tax_b: 900
+  household_credit_b: 0
+steps:
+  - allowed_a: min(credit_a, city_tax_a - household_credit_a)
+  - city_tax_left_a: city_tax_a - household_credit_a - allowed_a
+  - allowed_b: min(credit_b, city_tax_b - household_credit_b)
+  - credit_lost_b: credit_b - allowed_b
+expected:
+  allowed_a: 303.54
+  city_tax_left_a: 4222.66
+  allowed_b: 900.00
+  credit_lost_b: 250.00
+```
 
 ## When to refuse or refer
 
@@ -182,14 +244,35 @@ Due dates for 2027 are those that apply when each date falls on a weekday; confi
 4. The New York City school tax credit is claimed on Form IT-201 line 69 itself, at the amounts in `ny-it-201-resident-return`; the older version gave amounts twice the published ones and a separate form, which was wrong.
 5. The New York State and New York City earned income credits are checked in `ny-it-201-resident-return`.
 
+## Filing and payment
+
+| Return or payment | Form | Due for the 2026 year | Where |
+| --- | --- | --- | --- |
+| Federal return | Form 1040 | 15 April 2027 | IRS e-file; extension Form 4868 |
+| New York State return (with city and Yonkers tax, MCTMT) | Form IT-201 | 15 April 2027 | Tax Department e-file; extension Form IT-370 |
+| New York City UBT return | Form NYC-202 or NYC-202S | 15 April 2027 | NYC Department of Finance e-Services; extension Form NYC-EXT |
+| 2027 estimates, federal, New York, UBT | 1040-ES, IT-2105, NYC-5UBTI | 15 April, 15 June, 15 September 2027 and 18 January 2028 | as above |
+
+An extension extends the time to file, not to pay. Filing methods and payment details are in `us-federal-return-assembly`, `ny-it-201-resident-return`, `ny-estimated-tax` and `nyc-ubt`.
+
+## Completion checklist
+
+- [ ] Every skill in the order above ran, or R-NYA-1 was raised
+- [ ] Form IT-201 line 19 equals federal AGI
+- [ ] Every UBT and MCTMT amount deducted on Schedule C is added back on IT-225 (A-201, A-214)
+- [ ] IT-219 line 1 equals NYC-202 line 21 (or NYC-202S line 8); the credit is within the city tax less the household credit
+- [ ] Each estimated payment is applied to the return it was paid for (IT-2105 apart from NYC-5UBTI)
+- [ ] 2027 estimate schedules set for federal, New York State and New York City UBT
+- [ ] Reviewer brief, working paper and action list produced, with "Positions taken"
+
 ## Sources
 
 | Source | URL | Read on |
 | --- | --- | --- |
 | IT-201-I (2025). Read for lines 1 to 19, 20 to 31, 38, 39, 47 to 55 and the payment lines. | https://www.tax.ny.gov/pdf/current_forms/it/it201i.pdf | 2026-11-13 |
-| IT-225-I (2025). Read for codes A-201, A-214, A-209 and S-213. | https://www.tax.ny.gov/pdf/current_forms/it/it225i.pdf | 2026-11-06 |
-| IT-219-I (2025). Read for the source of the UBT figure and the credit limit. | https://www.tax.ny.gov/pdf/current_forms/it/it219i.pdf | 2026-11-13 |
-| IT-2105-I (2026). Read for the MCTMT on Form IT-201 and estimated MCTMT. | https://www.tax.ny.gov/pdf/current_forms/it/it2105i.pdf | 2026-11-13 |
+| IT-225-I (2025). Read for codes A-201, A-214, A-209 and S-213. | https://www.tax.ny.gov/pdf/current_forms/it/it225i.pdf | 2026-11-14 |
+| IT-219-I (2025). Read for the source of the UBT figure (NYC-202 line 21, NYC-202S line 8), spouses' amounts on line 1 and the credit limit. | https://www.tax.ny.gov/pdf/current_forms/it/it219i.pdf | 2026-11-14 |
+| IT-2105-I (2026). Read for the MCTMT on Form IT-201, estimated MCTMT, the installment pattern and the next-regular-workday rule. | https://www.tax.ny.gov/pdf/current_forms/it/it2105i.pdf | 2026-11-14 |
 | Instructions for Form NYC-202 (2025). Read for Schedule A and Schedule B. | https://www.nyc.gov/assets/finance/downloads/pdf/25pdf/business_tax_forms/nyc-202-instr_2025.pdf | 2026-11-13 |
 
 Not yet confirmed: the 2026 Form IT-201, IT-225, IT-219 and NYC-202 and their instructions are not published, so the line numbers are those of the 2025 forms (2025-2026 filing cycle); the 2027 installment dates in the action list are not yet published.

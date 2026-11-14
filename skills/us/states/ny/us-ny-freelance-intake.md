@@ -1,10 +1,10 @@
 ---
 name: us-ny-freelance-intake
 description: Entry point for a New York resident freelancer, sole proprietor or single-member LLC owner who wants help with a 2026 federal and New York return. Runs a scope check (entity, residence, multi-state income, open years), asks for the documents, reads them, fills the gaps, and hands a confirmed fact sheet to us-ny-return-assembly, naming which federal and New York skills apply (IT-201, NYC UBT, MCTMT, estimated tax, LLC fee). Carries no rates of its own; every figure is in the linked skill. Trigger on "I'm a freelancer in New York", "NYC self-employed taxes", "I have an LLC in NY", "New York freelance tax return", "I live in Manhattan and do contracting". Full-year New York residents only.
-version: "2.0"
+version: "3.0"
 jurisdiction: US-NY
 tax_year: 2026
-last_updated: 2026-11-13
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
@@ -13,7 +13,7 @@ type: router
 
 # New York freelancer intake, tax year 2026
 
-> **Source-cited draft.** Routing built from the New York Tax Department's IT-201 and IT-2105 instructions and the NYC Department of Finance UBT page, read on 2026-11-13. No accountant has reviewed it. All outputs must be reviewed by a qualified tax professional before filing.
+> **Source-cited draft.** Routing built from the New York Tax Department's IT-201 and IT-2105 instructions, the residency FAQ and the NYC Department of Finance UBT page, read on 2026-11-13 and 2026-11-14. No accountant has reviewed it. All outputs must be reviewed by a qualified tax professional before filing.
 
 **Answer first.** This skill decides whether the client is in scope, gathers the documents and facts, and routes them. A full-year New York resident who is a sole proprietor or a single-member LLC disregarded for federal tax goes through the federal skills, then `ny-it-201-resident-return`, plus `nyc-ubt` if the business is carried on in New York City, the MCTMT if self-employment earnings are allocated to the MCTD, and `ny-estimated-tax` for 2027 payments, and finally `us-ny-return-assembly`. It states no tax figures: each threshold lives in the skill that owns it.
 
@@ -76,6 +76,62 @@ Out of scope, and where it goes:
 
 9. **Handoff message:** "Intake complete. Handing off to the return assembly workflow. You will receive: a working paper (federal, New York State and New York City lines), a reviewer brief with positions, citations and flags, the form packages (1040, IT-201, NYC-202 if it applies), 2027 estimated tax schedules (federal, New York State, New York City), and an action list with deadlines."
 
+## Boundary and exception table
+
+| Situation | Treatment |
+| --- | --- |
+| Single-member LLC taxed as an S corporation (Form 2553 filed) | Not a disregarded entity: refuse under R-NYI-2 |
+| Single-member LLC owned by a married couple in New York (not a community property state) | Two owners make it a partnership for federal tax: refuse under R-NYI-1 |
+| Lives in New York State all year but moved between New York City and the rest of the state | Part-year New York City resident: refuse under R-NYI-3 |
+| Domiciled elsewhere but kept a permanent place of abode in New York for substantially all of 2026 and spent 184 days or more there | A statutory resident, taxed as a full-year resident; in scope, but record the day count and send the residency question to `ny-residency-leaving-new-york` for the reviewer ([residency FAQ](https://www.tax.ny.gov/pit/file/nonresident-faqs.htm)) |
+| Lives outside New York City but the business is carried on in New York City | UBT can still apply (it follows where the business is carried on): set the UBT flag |
+| Lives in Yonkers | In scope; the Yonkers lines are in `ny-it-201-resident-return` |
+| Business carried on outside the MCTD (for example Albany or Erie County) | No MCTMT flag |
+| W-2 job as well as the business | In scope; the W-2 feeds the federal and IT-201 lines; no refusal |
+
+### Defaults when a fact is missing
+
+| Missing fact | Default | Flag for the reviewer |
+| --- | --- | --- |
+| Where the work is done | The home or office address the client gave | Yes, if any client is outside New York City |
+| MCTD county | The county of the business address | No |
+| Whether 2026 New York estimates were paid | None paid, until a confirmation or a bank debit shows otherwise | Yes |
+| The 2025 IT-201 | Ask for it; without it the prior-year safe harbour in `ny-estimated-tax` cannot be used | Yes |
+| Health insurance source | Ask; do not assume the self-employed health insurance deduction | Yes |
+
+### Red flags to raise before the handoff
+
+| Red flag | Why it matters |
+| --- | --- |
+| Bank deposits well above the 1099 total | Clients who send no 1099 still paid income; the gap is income unless shown to be a transfer, a loan or a refund (Case 1) |
+| A Tax Department or NYC Department of Finance notice | May mean an open year (R-NYI-4) |
+| Payments to the NYC Department of Finance but no NYC-202 on file | UBT estimates paid without a return; check `nyc-ubt` |
+| No LLC filing fee paid for a single-member LLC with New York source income | Check `ny-llc-filing-fee-it-204-ll` |
+
+## Worked cases
+
+The client is invented.
+
+**Case 1, the gross receipts check before the handoff.** A Manhattan designer with a single-member LLC shows total 2026 business account deposits of USD 148,900. Of these, USD 6,000 is a transfer from her personal savings and USD 400 is a refund from a supplier; neither is income. Her 1099-NEC forms total USD 121,500 and one 1099-K from a payment platform shows USD 18,000. Gross receipts from the bank are 148,900 minus 6,000 minus 400 = USD 142,500. The forms cover 121,500 + 18,000 = USD 139,500. The gap of USD 3,000 is income from clients who sent no 1099; it goes into gross receipts, and the fact sheet records USD 142,500 with the gap explained. Intake records the figure and the flag; it does not test it against any threshold (that is for `nyc-ubt` and `us-schedule-c-and-se-computation`).
+
+```oa-check
+name: NY freelancer intake, bank deposits to 1099 reconciliation (2026)
+inputs:
+  deposits: 148900
+  owner_transfers: 6000
+  supplier_refunds: 400
+  form_1099_nec: 121500
+  form_1099_k: 18000
+steps:
+  - gross_receipts: deposits - owner_transfers - supplier_refunds
+  - reported_on_forms: form_1099_nec + form_1099_k
+  - unreported_gap: gross_receipts - reported_on_forms
+expected:
+  gross_receipts: 142500.00
+  reported_on_forms: 139500.00
+  unreported_gap: 3000.00
+```
+
 ## When to refuse or refer
 
 | Code | Trigger | What to say |
@@ -89,6 +145,16 @@ Out of scope, and where it goes:
 
 When a refusal fires: stop, state the specific reason, say what to do next, and do not work around it.
 
+## Completion checklist
+
+- [ ] Structure, residence and filing status confirmed, and no refusal fired
+- [ ] Every document on the list received, or its absence recorded
+- [ ] Gross receipts reconciled from the bank to the 1099s, the gap explained (Case 1)
+- [ ] 2025 federal and IT-201 figures recorded for the safe harbours
+- [ ] New York State, New York City and federal 2026 estimates listed by date and amount
+- [ ] Flags set: UBT, MCTMT zone, LLC fee, contractors, PTET question
+- [ ] Fact sheet confirmed by the client and handed to `us-ny-return-assembly`
+
 ## Sources
 
 | Source | URL | Read on |
@@ -96,6 +162,6 @@ When a refusal fires: stop, state the specific reason, say what to do next, and 
 | IT-201-I (2025). Read for who files Form IT-201 (full-year residents) and the New York City, Yonkers and MCTMT lines. | https://www.tax.ny.gov/pdf/current_forms/it/it201i.pdf | 2026-11-13 |
 | IT-2105-I (2026). Read for the MCTD counties and zones and who must pay estimated tax. | https://www.tax.ny.gov/pdf/current_forms/it/it2105i.pdf | 2026-11-13 |
 | NYC Department of Finance, Unincorporated business tax. Read for who is subject to the UBT. | https://www.nyc.gov/site/finance/business/business-unincorporated-business-tax-ubt.page | 2026-11-13 |
-| Residency FAQ. Read for full-year, part-year and New York City residence. | https://www.tax.ny.gov/pit/file/nonresident-faqs.htm | 2026-10-03 |
+| Residency FAQ. Read for domicile, the statutory resident test (permanent place of abode and 184 days) and New York City residence. | https://www.tax.ny.gov/pit/file/nonresident-faqs.htm | 2026-11-14 |
 
-Not yet confirmed: the 2026 Form IT-201 instructions are not published; this skill carries no figures, so nothing here depends on them.
+Not yet confirmed: the 2026 Form IT-201 instructions are not published; this skill carries no tax figures (the 184-day count is from the residency FAQ), so nothing here depends on them.
