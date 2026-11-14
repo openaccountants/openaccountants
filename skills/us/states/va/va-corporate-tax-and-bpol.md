@@ -1,10 +1,10 @@
 ---
 name: va-corporate-tax-and-bpol
 description: Compute Virginia corporate income tax (Form 500) for tax year 2026 and the local BPOL gross receipts license tax. Covers the 6% rate on Virginia taxable income, the December 31, 2025 conformity date, the standard double-weighted sales apportionment formula and the single sales factor industries, separate, consolidated or combined filing, Form 500 due dates (15th day of the 4th month) with the automatic 7-month extension, Form 500ES estimated tax when tax is expected to exceed $1,000, penalties, the pass-through entity return (Form 502), 5% nonresident owner withholding, the 5.75% elective PTET (Form 502PTET), and BPOL rate caps per $100 of gross receipts ($0.16 contractors, $0.20 retail, $0.58 financial, real estate and professional, $0.36 repair, personal and business services, $0.05 per $100 of purchases for wholesalers) with the $100,000 / $50,000 thresholds and the March 1 license date. Trigger on "Virginia corporate tax", "Form 500", "Virginia apportionment", "Virginia PTET", "Form 502", "BPOL", "Virginia business license tax". Not for the US Virgin Islands (see skills/us-virgin-islands).
-version: "2.0"
+version: "2.1"
 jurisdiction: US-VA
 tax_year: 2026
-last_updated: 2026-11-13
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: corporate-tax
@@ -47,7 +47,7 @@ It does not cover: the owner's Form 760 (see `va-income-tax`, which also covers 
 
 | Item | 2026 figure | Conditions | Source |
 | --- | --- | --- | --- |
-| Corporate income tax rate | 6% of Virginia taxable income | Every Virginia corporation and every foreign corporation with Virginia-source income | [Va. Code § 58.1-400](https://law.lis.virginia.gov/vacode/title58.1/chapter3/section58.1-400/) |
+| Corporate income tax rate | six percent of Virginia taxable income | Every Virginia corporation and every foreign corporation with Virginia-source income | [Va. Code § 58.1-400](https://law.lis.virginia.gov/vacode/title58.1/chapter3/section58.1-400/) |
 | Standard apportionment | (Property + payroll + 2 x sales) / 4 | Unless a single sales factor industry; denominator adjusts when a factor is missing | [Va. Code § 58.1-408](https://law.lis.virginia.gov/vacode/title58.1/chapter3/section58.1-408/); [2025 Form 500 instructions](https://www.tax.virginia.gov/sites/default/files/vatax-pdf/2025-500-instructions.pdf) |
 | Single sales factor | Required for motor carriers, financial corporations, construction corporations, railways, retail companies, debt buyers, manufacturers electing the modified method, certain enterprise data center operations | §§ 58.1-417 to 58.1-420 and 58.1-422 to 58.1-422.3 | [2025 Form 500 instructions](https://www.tax.virginia.gov/sites/default/files/vatax-pdf/2025-500-instructions.pdf) |
 | Conformity date | Internal Revenue Code as of December 31, 2025 | Decoupled: R&E expensing, qualified production property expensing, increased section 179 limits | [2025 Form 500 instructions](https://www.tax.virginia.gov/sites/default/files/vatax-pdf/2025-500-instructions.pdf) |
@@ -62,11 +62,11 @@ It does not cover: the owner's Form 760 (see `va-income-tax`, which also covers 
 | Nonresident owner withholding (Form 502) | 5% of each nonresident owner's Virginia-source share | Due by the original Form 502 due date; exceptions include owners on a composite return (Form 765), PTE owners, exempt entities and non-captive REITs | [2025 Form 502 instructions](https://www.tax.virginia.gov/sites/default/files/vatax-pdf/2025-502-instructions.pdf) |
 | Form 502 very late | Greater of 30% of the tax due or $1,200 | Filed more than 6 months after the due date or more than 30 days after the federal extended due date, whichever is later | [2025 Form 502 instructions](https://www.tax.virginia.gov/sites/default/files/vatax-pdf/2025-502-instructions.pdf) |
 | PTET rate | 5.75% of Virginia taxable income attributable to eligible owners | Annual election on a timely filed Form 502PTET, including extensions; Taxable Years 2021-2026 per the instructions; nonresident owners' shares limited to Virginia-source income | [Va. Code § 58.1-390.3](https://law.lis.virginia.gov/vacode/title58.1/chapter3/section58.1-390.3/); [2025 Form 502 instructions](https://www.tax.virginia.gov/sites/default/files/vatax-pdf/2025-502-instructions.pdf) |
-| BPOL cap, contracting and building for own account for sale | $0.16 per $100 of gross receipts | Above the threshold; a higher rate in force on January 1, 1978 may be kept | [Va. Code § 58.1-3706](https://law.lis.virginia.gov/vacode/title58.1/chapter37/section58.1-3706/) |
-| BPOL cap, retail sales | $0.20 per $100 | Short-term rental businesses are classed as retail | [Va. Code § 58.1-3706](https://law.lis.virginia.gov/vacode/title58.1/chapter37/section58.1-3706/) |
-| BPOL cap, financial, real estate and professional services | $0.58 per $100 | Same grandfather rule | [Va. Code § 58.1-3706](https://law.lis.virginia.gov/vacode/title58.1/chapter37/section58.1-3706/) |
-| BPOL cap, repair, personal and business services and all others | $0.36 per $100 | Same grandfather rule | [Va. Code § 58.1-3706](https://law.lis.virginia.gov/vacode/title58.1/chapter37/section58.1-3706/) |
-| BPOL cap, wholesale merchants | $0.05 per $100 of purchases | Unless the locality's January 1, 1964 rate was higher | [Va. Code § 58.1-3716](https://law.lis.virginia.gov/vacode/title58.1/chapter37/section58.1-3716/) |
+| BPOL cap, contracting and building for own account for sale | sixteen cents per $100 of gross receipts | Above the threshold; a higher rate in force on January 1, 1978 may be kept | [Va. Code § 58.1-3706](https://law.lis.virginia.gov/vacode/title58.1/chapter37/section58.1-3706/) |
+| BPOL cap, retail sales | twenty cents per $100 of gross receipts | Short-term rental businesses are classed as retail | [Va. Code § 58.1-3706](https://law.lis.virginia.gov/vacode/title58.1/chapter37/section58.1-3706/) |
+| BPOL cap, financial, real estate and professional services | fifty-eight cents per $100 of gross receipts | Same grandfather rule | [Va. Code § 58.1-3706](https://law.lis.virginia.gov/vacode/title58.1/chapter37/section58.1-3706/) |
+| BPOL cap, repair, personal and business services and all others | thirty-six cents per $100 of gross receipts | Same grandfather rule | [Va. Code § 58.1-3706](https://law.lis.virginia.gov/vacode/title58.1/chapter37/section58.1-3706/) |
+| BPOL cap, wholesale merchants | 5 cents per $100 of purchases | Unless the locality's January 1, 1964 rate was higher | [Va. Code § 58.1-3716](https://law.lis.virginia.gov/vacode/title58.1/chapter37/section58.1-3716/) |
 | BPOL threshold | No tax below $100,000 of gross receipts (locality over 50,000 people) or $50,000 (25,000 to 50,000 people) | The locality may charge only the license fee below it | [Va. Code § 58.1-3706](https://law.lis.virginia.gov/vacode/title58.1/chapter37/section58.1-3706/) |
 | BPOL license fee | Up to $50 (over 50,000 people, after the required reduction), $50 (25,000 to 50,000), $30 (under 25,000) | No tax on the gross receipts the fee covers | [Va. Code § 58.1-3703](https://law.lis.virginia.gov/vacode/title58.1/chapter37/section58.1-3703/) |
 | BPOL license date | March 1 for a renewing business (a locality may adopt a later date up to May 1); a new business applies before it begins | Penalty up to 10% of the tax for late application or payment, plus interest | [Va. Code § 58.1-3703.1](https://law.lis.virginia.gov/vacode/title58.1/chapter37/section58.1-3703.1/) |
