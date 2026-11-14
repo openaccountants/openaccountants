@@ -27,6 +27,17 @@ class RowSources(unittest.TestCase):
         n, misses, unreadable = rs.check_text(t, pages(**{A: "rate 5.2% of income not over $23000 " * 20}))
         self.assertEqual((n, misses, unreadable), (1, [], []))
 
+    def test_decimal_comma_pages_pass(self):
+        t = skill(f"| Rate | 2.25% on EUR 4,050 | [law]({A}) |", f"| Cap | EUR 1,234.56 | [b]({B}) |")
+        n, misses, _ = rs.check_text(t, pages(**{A: "taxa 2,25 % peste 4.050 lei " * 30,
+                                                  B: "plafond 1\u202f234,56 euros " * 30}))
+        self.assertEqual((n, misses), (2, []))
+
+    def test_wrong_figure_still_misses_on_decimal_comma_page(self):
+        t = skill(f"| Rate | 2.5% | [law]({A}) |")
+        _, misses, _ = rs.check_text(t, pages(**{A: "taxa 2,25 % in 2026 100 lei " * 30}))
+        self.assertEqual([m[0] for m in misses], ["2.5%"])
+
     def test_figure_missing_from_its_own_page_is_a_miss(self):
         t = skill(f"| Rate | 6.5% | [law]({A}) |", f"| Base | $184,500 | [ssa]({B}) |")
         n, misses, _ = rs.check_text(t, pages(**{A: "the rate is 6.5 percent " * 30, B: "base 176,100 " * 40}))
