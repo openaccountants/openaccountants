@@ -279,7 +279,7 @@ Read **24 October 2026**: targeted current Armenian Code Articles 103–125, 130
 | HO-234-N 2026 base changes | https://www.arlis.am/hy/acts/226008 | 2026-10-24 |
 | HO-385-N future dividend changes | https://www.arlis.am/hy/acts/228632 | 2026-10-24 |
 | 749-N return, current July 2026 consolidation | https://www.arlis.am/hy/acts/226558 | 2026-10-24 |
-| Targeted current native 117,119–121(3), 123(1)(2), 135; supporting English read against native | https://www.arlis.am/hy/acts/215611/latest | 2026-10-25 |
+| Targeted current native 117, 119–121(3), 123(1)(2), 135; supporting English read against native | https://www.arlis.am/hy/acts/215611/latest | 2026-10-25 |
 | 1373-N current ordinary Annex 1, reserve and debt methods | https://www.arlis.am/hy/acts/183923/latest | 2026-10-25 |
 | 994-N threshold/enforcement amendment and origin-date transition | https://www.arlis.am/hy/acts/209809/latest | 2026-10-25 |
 | HO-19-N 1–2, statutory threshold/enforcement and origin-date transition | https://www.arlis.am/hy/acts/203083 | 2026-10-25 |

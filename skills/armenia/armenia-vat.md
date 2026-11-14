@@ -238,7 +238,7 @@ expected:
 | [HO-234-N][july], actual Articles 11–16/33; read 24 October 2026. Article 13 amends the exempt-input restriction in Article 72, not Article 73; specified other changes wait until January 2027. | https://www.arlis.am/hy/acts/226008 | 2026-10-24 |
 | [Order 298-N, current 2026-applicable consolidation 175524][form], actual VAT form and targeted instructions; read 24 October 2026. The earlier [2019 consolidation](https://www.arlis.am/hy/acts/132487) is historical and is not used as current authority. | https://www.arlis.am/hy/acts/175524 | 2026-10-24 |
 | [Order 1000-N][future], actual amended fields and paragraph 2; read 24 October 2026. Effective 1 January 2027, not its September adoption/publication date. | https://www.arlis.am/hy/acts/231429 | 2026-10-24 |
-| Current native Code, targeted 59(1), 74, 76–77,327,457(9), 42(4)–(6), 53(10)/(10.1)/(11), 54; supporting English checked against native | https://www.arlis.am/hy/acts/215611/latest | 2026-10-25 |
+| Current native Code, targeted 59(1), 74, 76–77, 327, 457(9), 42(4)–(6), 53(10)/(10.1)/(11), 54; supporting English checked against native | https://www.arlis.am/hy/acts/215611/latest | 2026-10-25 |
 | 190-N current VAT-status form; actual 941-N amendment and 1 October 2026 gate | https://www.arlis.am/hy/acts/136993/latest | 2026-10-25 |
 | 941-N actual amendment/commencement | https://www.arlis.am/hy/acts/230825 | 2026-10-25 |
 | 155-N current complete ordinary VAT criteria and risk override; excise catalogue not implemented here | https://www.arlis.am/hy/acts/200966/latest | 2026-10-25 |

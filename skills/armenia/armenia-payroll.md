@@ -27,7 +27,7 @@ Ordinary salary withholding does not replace the worker's annual declaration obl
 | Component | Ordinary 2026 branch | Source |
 |---|---|---|
 | Salary PIT | 20% of established taxable salary base | [Tax Code 143, 147, 150, 152][code], https://www.arlis.am/hy/acts/215611/latest |
-| Mandatory pre-retirement pension | 5% through 500,000 monthly base; above, 10% less 25,000; ordinary cap 87,500 | [Pension 5–6][pension], https://www.arlis.am/hy/acts/224823 |
+| Mandatory pre-retirement pension | 5% through 500,000 monthly base; above, 10% less 25,000; ordinary cap 87,500 (computed: 10% of the base ceiling less 25,000) | [Pension 5–6][pension], https://www.arlis.am/hy/acts/224823 |
 | Pre-1974 elected / continuing pension-age branch | Status-specific 5%, with statutory start/cessation rules | [Pension 5–6][pension], https://www.arlis.am/hy/acts/224823 |
 | Military stamp | Eligible monthly base through 1 million: 1,000; from 1,000,001: 15,000 | [Stamp 9–14][stamp], https://www.arlis.am/hy/acts/230046 |
 | Health, established eligible 2026 employee payer | 4,800 through 500,000 salary; 10,800 from 500,001; entry/continuation/funding conditions are separate | [Health 45–46][health], https://www.arlis.am/hy/acts/230432 |
@@ -229,7 +229,7 @@ expected:
 | [Actual 300-N form/instructions][form], Annex 1 identity, pension status, bases/deduction, benefits and tax/social/stamp fields; current metadata. This does not establish a live portal session. | https://www.arlis.am/hy/acts/223829 | 2026-10-24 |
 | [Actual 1003-N][form-amend], paragraphs 1–3 and 29 September 2026 publication; December 2026 / February and June 2027 branches kept separate. | https://www.arlis.am/hy/acts/231489 | 2026-10-24 |
 
-| Fresh current native Tax Code 142,147(1)(1)/(3)/(4)/(12)/(29)/(33), 152(1)–(3): benefit bases/accrual, health/voluntary-pension distinctions, three-month recovery versus three-year refund and one-month remedy | https://www.arlis.am/hy/acts/215611/latest | 2026-10-26 |
+| Fresh current native Tax Code 142, 147(1)(1)/(3)/(4)/(12)/(29)/(33), 152(1)–(3): benefit bases/accrual, health/voluntary-pension distinctions, three-month recovery versus three-year refund and one-month remedy | https://www.arlis.am/hy/acts/215611/latest | 2026-10-26 |
 | Complete joint 416-N/107-N/561-N salary-equivalent list 1 and current metadata | https://www.arlis.am/hy/acts/126230/latest | 2026-10-26 |
 | Fresh nativePension 8(2)/(4) and Health 46(11)–(16): amended liabilities/former workers and separate health calculation/reporting | https://www.arlis.am/hy/acts/224823/latest ; https://www.arlis.am/hy/acts/230432/latest | 2026-10-26 |
 | Current native Labour Code, targeted 113/115/129/130, 139/140/144, 158–165/169/170/172, 184/185/187/192/195 | https://www.arlis.am/hy/acts/51/latest | 2026-10-26 |

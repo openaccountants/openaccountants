@@ -27,10 +27,10 @@ Do not treat bank references or an unknown employment status as proof of a statu
 | Obligation | Ordinary 2026 method | Primary source |
 |---|---|---|
 | Pension, mandatory pre-retirement salary branch | 5% through AMD 500,000 monthly; above that, 10% less AMD 25,000, subject to cap/elections | [Pension 5–6][pension], https://www.arlis.am/hy/acts/224823 |
-| Pension ordinary monthly base ceiling | 15 × statutory monthly minimum wage; AMD 1,125,000 using AMD 75,000 | [Pension 6(6)][pension], [wage 1][wage], https://www.arlis.am/hy/acts/224823 |
-| Ordinary mandatory monthly pension ceiling | AMD 87,500 under the preceding branch, absent cap waiver/special case | [Pension 6(7)][pension], https://www.arlis.am/hy/acts/224823 |
-| Ordinary annual pension base ceiling | 180 × minimum wage on 1 January; AMD 13,500,000 for 2026 | [Pension 6(6)][pension], [wage 1][wage], https://www.arlis.am/hy/acts/224823 |
-| Ordinary mandatory annual pension ceiling | AMD 1,050,000 under the annual 10%-less-300,000 branch, subject to status and aggregate reconciliation | [Pension 6(7)–(9)][pension], https://www.arlis.am/hy/acts/224823 |
+| Pension ordinary monthly base ceiling | 15 × statutory monthly minimum wage; AMD 1,125,000 using AMD 75,000 (computed) | [Pension 6(6)][pension], [wage 1][wage], https://www.arlis.am/hy/acts/224823 |
+| Ordinary mandatory monthly pension ceiling | AMD 87,500 (computed) under the preceding branch, absent cap waiver/special case | [Pension 6(7)][pension], https://www.arlis.am/hy/acts/224823 |
+| Ordinary annual pension base ceiling | 180 × minimum wage on 1 January; AMD 13,500,000 for 2026 (computed) | [Pension 6(6)][pension], [wage 1][wage], https://www.arlis.am/hy/acts/224823 |
+| Ordinary mandatory annual pension ceiling | AMD 1,050,000 (computed) under the annual 10%-less-300,000 branch, subject to status and aggregate reconciliation | [Pension 6(7)–(9)][pension], https://www.arlis.am/hy/acts/224823 |
 | Pension actual-business annual income | 5% through AMD 6 million; above, 10% less AMD 300,000, with applicable caps | [Pension 2(27), 6(2)(2)][pension], https://www.arlis.am/hy/acts/224823 |
 | Pension specified turnover-tax activities | AMD 5,000 monthly, separate from the ordinary actual-income method | [Pension 6(2)(3), (5)][pension], https://www.arlis.am/hy/acts/224823 |
 | Military stamp, eligible monthly agent population | AMD 1,000 through AMD 1 million base; AMD 15,000 from AMD 1,000,001 | [Stamp 9–12][stamp], https://www.arlis.am/hy/acts/230046 |
