@@ -90,7 +90,7 @@ A. Assessable income: salary, bonus, rental value of quarters, share gains, othe
 
 ### Special situations
 
-- **Employment partly outside Hong Kong:** income is time-apportioned by Hong Kong days where the employment is non-Hong Kong. The old file's "60-day rule" (visits of 60 days or less in a year exempt) is not confirmed on an official page in this pass.
+- **Employment partly outside Hong Kong:** income is time-apportioned by Hong Kong days where the employment is non-Hong Kong. The old file's visit exemption for short stays is on the Not yet confirmed line: do not apply it.
 - **Lump sums (s. 11D):** gratuity or severance connected with Hong Kong employment is assessable; a recognised retirement scheme lump sum is exempt if conditions are met; a golden handshake is assessable.
 - **Personal assessment (IRO s. 41):** lets an individual set off business losses against salaries income, claim home loan interest against other income and pool a married couple's income for the progressive rates.
 - **Married couples:** joint assessment helps when one spouse has low or no income (allowances pooled); separate taxation helps when both are high earners on the standard rate; personal assessment (joint) for business losses or mortgage interest.
@@ -127,7 +127,7 @@ A. Assessable income: salary, bonus, rental value of quarters, share gains, othe
 | Signature | Taxpayer (paper), or eTAX login |
 | Provisional salaries tax | Charged with the final assessment, based on the year just assessed; applied against the next year's final tax |
 | Holdover of provisional tax | If income is expected to fall by more than 10% (or on other grounds); apply not later than 28 days before the due date or 14 days after the notice is issued, whichever is later |
-| Objection | Written notice to the Assessor stating the grounds, normally within one month of the notice of assessment |
+| Objection | Written notice to the Assessor stating the grounds; the time limit (IRO s. 64) is on the Not yet confirmed line, so object as soon as the notice of assessment arrives |
 
 **Key dates (typical year).** 1 April: YA starts. Early May: BIR60 issued. June to July: filing. Later in the year to early the next year: notices of assessment and the first provisional tax instalment. 31 March: YA ends.
 
@@ -137,7 +137,7 @@ A. Assessable income: salary, bonus, rental value of quarters, share gains, othe
 | --- | --- |
 | Late or no return, incorrect return, failure to notify chargeability, without reasonable excuse (s. 80(2)) | Fine of HKD 10,000 plus treble the tax undercharged; or additional tax up to treble under s. 82A |
 | Wilful evasion (s. 82) | Fine of HKD 50,000, treble the tax undercharged and up to 3 years' imprisonment |
-| Late payment | 5% surcharge on the whole balance of the demand notice; a further 10% after six months (not confirmed in this pass) |
+| Late payment | 5% surcharge on the whole balance of the demand notice; any further surcharge is on the Not yet confirmed line, do not apply it |
 
 ## Cross-border points
 

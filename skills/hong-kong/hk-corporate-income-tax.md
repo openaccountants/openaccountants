@@ -66,7 +66,7 @@ Royalties paid to a non-resident for IP used in Hong Kong are taxed through the 
 
 ## Penalties and interest
 
-Unpaid tax: the Commissioner may add a 5% surcharge on the whole outstanding balance of the demand notice and take recovery action under IRO Part XII; a further 10% surcharge can follow on amounts still unpaid six months after the due date (not confirmed on an official page in this pass). Late or incorrect returns: additional tax up to treble the tax undercharged (s. 82A) or prosecution (s. 80(2), fine HKD 10,000 plus treble the tax undercharged). Wilful evasion (s. 82): HKD 50,000, treble the tax undercharged and up to 3 years' imprisonment.
+Unpaid tax: the Commissioner may add a 5% surcharge on the whole outstanding balance of the demand notice and take recovery action under IRO Part XII; any further surcharge on amounts still unpaid later is on the Not yet confirmed line, so do not apply one. Late or incorrect returns: additional tax up to treble the tax undercharged (s. 82A) or prosecution (s. 80(2), fine HKD 10,000 plus treble the tax undercharged). Wilful evasion (s. 82): HKD 50,000, treble the tax undercharged and up to 3 years' imprisonment.
 
 ## Cross-border points
 
