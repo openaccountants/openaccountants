@@ -1,10 +1,10 @@
 ---
 name: ct-payroll
 description: Use for Connecticut 2026 employer withholding, CT-W4/CT-941/CT-W3, SUI, CT Paid Leave, paid sick leave, cross-border workers, classification and final pay.
-version: "0.2"
+version: "0.3"
 jurisdiction: US-CT
 tax_year: 2026
-last_updated: 2026-11-13
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 category: state-tax
@@ -115,6 +115,10 @@ Accrue one hour per thirty hours actually worked up to forty hours/year; use beg
 CTFMLA generally covers employers with one or more employees, including the state, but excludes municipalities, school boards and nonpublic elementary/secondary schools except specified school paraprofessionals. An employee generally needs three consecutive months' employment (thirteen weeks); the old federal 1,250-hour/50-worker tests do not set Connecticut eligibility. It provides twelve workweeks in a twelve-month period plus two for pregnancy-related incapacitation and up to twenty-six in a single twelve-month military-caregiver period. Reasons include qualifying own/family serious health conditions, birth/adoption/foster placement, organ/bone-marrow donation and military exigency/caregiving. Apply certification, notice and restoration requirements. [CTDOL CTFMLA FAQs](https://portal.ct.gov/dolui/fmla-faqs).
 
 CTFMLA is generally unpaid; accrued paid leave can be substituted at employee request or employer requirement, while the employee may preserve **up to two weeks** of accrued paid leave. The old categorical claim that employers cannot require PTO before CTPL is not a safe statement of this coordination rule. Determine CTFMLA job protection separately from CTPL benefit eligibility and federal FMLA. Do not infer that approval for wage replacement itself guarantees restoration. [Questions 8-10 and leave-coordination provisions](https://portal.ct.gov/dolui/fmla-faqs).
+
+**Family-violence or sexual-assault leave is a separate entitlement under section 31-51ss.** It covers an employer engaged in business with three or more employees, including the state and political subdivisions. An employee who is a victim must be allowed reasonably necessary leave for medical care/counseling, victim services, relocation, or related civil/criminal proceedings. The employer may limit **unpaid** leave to twelve days per calendar year. The section does not itself require paid leave beyond the employee's existing entitlement, and unpaid leave remains available if paid leave is exhausted or unavailable. Other statutory leave and employment/collective-agreement rights are preserved. [Section 31-51ss(a), (b), (e) and (f)](https://www.cga.ct.gov/current/pub/chap_557.htm#sec_31-51ss).
+
+For foreseeable leave, an employer may require advance notice of no more than seven days; otherwise notice is as soon as practicable. Follow subsection (d)'s signed certification and permitted supporting-record rules; keep the records confidential subject to subsection (g)'s limited disclosure exceptions and employee notice. Discharge, penalties, threats or coercion violating this section can support a civil action within 180 days, with reinstatement/damages and a prevailing employee's reasonable attorney fee. Refer disputed entitlement, documentation, confidentiality or retaliation promptly. These documentation provisions differ from the separate paid-sick-leave rule above. [Section 31-51ss(c), (d), (g) and (h), full section read 2026-11-14](https://www.cga.ct.gov/current/pub/chap_557.htm#sec_31-51ss).
 
 ### 8. Cross-border commuters and convenience rule
 
@@ -231,6 +235,7 @@ Refer contested residence/convenience sourcing, disputed classifications, acquis
 | [CTDOL Employer Handbook, April 23 2026](https://portal.ct.gov/dol/-/media/dol/2022-new-design-system/about/divisions/unemployment-insurance-tax/updated-employer-guide-april-23-2026.pdf) | Read for coverage/localization, employment ABC, registration, successors, quarterly wages/contributions, new hires and records; stale 2024 base distinguished. | 2026-11-13 |
 | [CGA Chapter 567](https://www.cga.ct.gov/current/pub/chap_567.htm) | Read for sections 31-222 ABC and 31-254 new hire reporting with adjacent clauses. | 2026-11-13 |
 | [CGA Chapter 557](https://www.cga.ct.gov/current/pub/chap_557.htm) | Read for 31-49e/g/m paid leave definitions/contributions/benefits and paid-sick-leave sections 31-57r-w with adjacent clauses. | 2026-11-13 |
+| [CGA section 31-51ss](https://www.cga.ct.gov/current/pub/chap_557.htm#sec_31-51ss) | Read the complete current subsections (a)-(h), amendment history and neighboring section 31-51tt definitions for separate family-violence/sexual-assault leave, coverage, unpaid cap, notice, certification, confidentiality and remedies. | 2026-11-14 |
 | [Connecticut Paid Leave Authority, Remit Contributions](https://www.ctpaidleave.org/remit-contributions) | Read for full 2026 rate/cap instructions, due dates versus grace period, payment methods and late charges. | 2026-11-13 |
 | [Connecticut Paid Leave Authority, Employers](https://www.ctpaidleave.org/for-businesses-and-employers/i-am-an-employer) | Read for registration, covered employee/employer and private-plan guidance. | 2026-11-13 |
 | [CTDOL Paid Sick Leave FAQs](https://portal.ct.gov/dol/divisions/legal/connecticut-leave-programs/paid-sick-leave-faqs) | Read for 2026 coverage, exceptions, accrual/use/carryover/frontloading, records and notices. | 2026-11-13 |
