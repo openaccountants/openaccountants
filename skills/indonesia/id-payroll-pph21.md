@@ -379,8 +379,23 @@ The retained payroll output is a monthly employee register, payslip, employer-co
 
 Not yet confirmed: official current 2026 JP ceiling and effective periods; affected JKP/JKM allocation against the later law and actual assessment; current extra-family health collection rule; particular gross-up/employer-borne-tax contracts, benefit/incentive exceptions, labour-intensive relief period, prescribed payment rounding and exact current Coretax field/certificate issuance details. Do not use the older copied/vendor figures as substitutes.
 
-## Disclaimer
+## Bank narrative clues retained from the original method
 
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. All outputs require the qualified professional review already required by this workflow before filing.
+| Narrative | Working classification and evidence |
+|---|---|
+| Gaji / Salary / Payroll | Possible cash employment income; reconcile to payslip, taxable benefits and withholding |
+| Tunjangan / Allowance | Identify fixed/variable and cash/taxable-benefit treatment; do not equate tax and contribution bases |
+| Bonus / Gratifikasi | Investigate irregular employment income, payment period and lawful receipt; do not assume every transfer is employment income |
+| THR / Tunjangan Hari Raya | Holiday remuneration, included in the actual month's employment gross where taxable |
+| Lembur / Overtime | Overtime remuneration, reconcile hours/pay and period |
+| BPJS / Iuran | Identify programme, employer/employee share, participant, assessed period and actual contribution base |
+| Potongan Pajak / PPh 21 | Reconcile withholding to the payslip/slip and actual monthly return; a bank label alone does not prove a credit |
+| Honorarium / Fee | Determine worker relationship and recipient category before employee, non-employee or other withholding treatment |
+| Dividen / Dividend | Separate investment income; establish actual exemption, final or ordinary treatment outside payroll |
+| Bunga / Interest | Separate investment/finance income and actual final/ordinary regime outside payroll |
+| Sewa / Rent | Identify property and contract; separate rental withholding from employment remuneration |
 
-The most up-to-date version is maintained at openaccountants.com.
+## OpenAccountants footer
+
+OpenAccountants: open-source accounting skills for AI
+This is not tax advice. All outputs must be reviewed by a qualified professional before filing.
