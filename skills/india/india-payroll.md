@@ -92,6 +92,8 @@ Detailed provident fund and ESI procedure is in `in-pf-esi-employer` (one figure
 
 ### Social security and labour amounts
 
+The two government (Press Information Bureau) backgrounders print in digits what the Codes print in words and summarise changes. They are explanations, not law: where a backgrounder and the Code differ, follow the Code.
+
 | Item | Rate or amount | Condition | Source |
 | --- | --- | --- | --- |
 | Provident fund, employer and employee each | Twelve per cent of wages (ten per cent for a notified class) | EPF Scheme 2026 para 18; full detail in `in-pf-esi-employer` | https://egazette.gov.in/WriteReadData/2026/273957.pdf |
