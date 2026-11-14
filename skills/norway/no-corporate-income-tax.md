@@ -1,14 +1,15 @@
 ---
 name: no-corporate-income-tax
 description: "Corporate income tax (skatt på alminnelig inntekt for selskaper) in Norway for income year 2026. Covers who is taxable (AS, ASA and other companies, resident by incorporation or effective management from 2026), the 22% rate and the 25% rate for companies that pay financial-sector tax on wages, the petroleum special tax and resource rent tax rates, the participation exemption (fritaksmetoden) with its 3% rule, the interest limitation rule, depreciation groups, loss carry-forward, group contributions, the 31 May return, advance tax on 15 February and 15 April, withholding tax on dividends, interest and royalties, company exit taxation, and penalties. Trigger phrases: Norway corporate tax, selskapsskatt, skattemelding for AS, fritaksmetoden, rentebegrensning, kildeskatt på utbytte, forskuddsskatt AS, Norwegian company tax return. Out of scope: transfer pricing (no-transfer-pricing), payroll and contributions (no-employer-payroll, no-social-contributions), shareholder tax (no-capital-gains, no-income-tax), VAT (norway-mva, no-vat-return)."
-version: 0.2
+version: 0.3
 jurisdiction: "NO"
 category: international
 tax_year: 2026
-last_updated: 2026-10-30
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: corporate-tax
+type: computation
 ---
 
 # Norway corporate income tax (2026)

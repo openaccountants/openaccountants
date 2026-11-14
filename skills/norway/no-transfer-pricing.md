@@ -18,14 +18,15 @@ description: >
 jurisdiction: "NO"
 category: transfer-pricing
 tax_year: 2026
-last_updated: 2026-10-30
-version: 0.4
+last_updated: 2026-11-14
+version: 0.5
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: transfer-pricing
+type: situation-rules
 ---
 
-# Norway transfer pricing (2026) v0.4
+# Norway transfer pricing (2026) v0.5
 
 Income year 2026. Currency: Norwegian kroner (NOK). Authority: Skatteetaten. Statutes: Skatteloven (Taxation Act, lov 26 March 1999 nr. 14, "sktl.") § 13-1; Skatteforvaltningsloven (Tax Administration Act, lov 27 May 2016 nr. 14, "sktfvl.") §§ 8-11, 8-12, 12-6, 14-1 to 14-6; Skatteforvaltningsforskriften (forskrift 23 November 2016 nr. 1360, "sktfvf.") §§ 8-11-1 to 8-11-16 and 8-12-1 to 8-12-7. See Sources.
 

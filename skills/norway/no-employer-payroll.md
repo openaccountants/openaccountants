@@ -17,14 +17,15 @@ description: >
 jurisdiction: "NO"
 category: payroll
 tax_year: 2026
-last_updated: 2026-10-30
-version: 0.4
+last_updated: 2026-11-14
+version: 0.5
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
+type: computation
 ---
 
-# Norway employer payroll (2026) v0.4
+# Norway employer payroll (2026) v0.5
 
 Income year 2026. Currency: Norwegian kroner (NOK). Authority: Skatteetaten (the Norwegian Tax Administration). Statutes: Skattebetalingsloven (Tax Payment Act, lov 17 June 2005 nr. 67, "sktbl."), its regulation (forskrift 21 December 2007 nr. 1766, "sktbf."), A-opplysningsloven (lov 22 June 2012 nr. 43) and its regulation (forskrift 24 June 2014 nr. 857), Folketrygdloven (National Insurance Act) § 23-2, and the Storting's 2026 contribution decision (Stortingsvedtak 18 December 2025 nr. 2748, "avgiftsvedtaket"). See Sources.
 

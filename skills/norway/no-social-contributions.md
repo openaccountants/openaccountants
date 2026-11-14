@@ -1,14 +1,15 @@
 ---
 name: no-social-contributions
 description: "Use this skill for Norwegian social contributions for income year 2026: the national insurance contribution (trygdeavgift) paid by employees, pensioners and the self-employed, and the employer's national insurance contribution (arbeidsgiveravgift) and financial tax on pay. It covers membership of the National Insurance Scheme, the three contribution rates (5.1%, 7.6% and 10.8%), the NOK 99,650 lower limit and the 25% phase-in limit applied once to total personal income, sole proprietors (enkeltpersonforetak) and their calculated personal income, the seven employer zones from 14.1% to 0%, the NOK 850,000 allowance, sector rules, private households, payment dates, fines and cross-border coverage. Trigger on: trygdeavgift, arbeidsgiveravgift, national insurance Norway, NAV contributions, self-employed contributions Norway, AGA, finansskatt på lønn. Out of scope: no-employer-payroll (withholding, a-melding detail), no-income-tax (income tax and bracket tax), no-individual-residence, no-corporate-income-tax, no-vat-return."
-version: 2.2
+version: 2.3
 jurisdiction: "NO"
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
+type: computation
 ---
 
 # Norway: social contributions (income year 2026)

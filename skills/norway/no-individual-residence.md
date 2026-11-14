@@ -18,14 +18,15 @@ description: >
 jurisdiction: "NO"
 category: cross-border
 tax_year: 2026
-last_updated: 2026-10-30
-version: 0.3
+last_updated: 2026-11-14
+version: 0.4
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: cross-border
+type: situation-rules
 ---
 
-# Norway individual tax residence (2026) v0.3
+# Norway individual tax residence (2026) v0.4
 
 Income year 2026. Currency: Norwegian kroner (NOK). Authority: Skatteetaten. Statutes: Skatteloven (Taxation Act, lov 26 March 1999 nr. 14, "sktl.") §§ 2-1, 2-3, 10-70, 16-20 and chapter 20; Skatteforvaltningsloven (lov 27 May 2016 nr. 14, "sktfvl.") and its regulation (forskrift 23 November 2016 nr. 1360). See Sources.
 

@@ -2,20 +2,21 @@
 name: no-income-tax
 description: >
   Use this skill whenever asked about Norwegian income tax for self-employed individuals (enkeltpersonforetak), alone or alongside wages, for income years 2025 and 2026. Trigger on phrases like "Norwegian tax", "trinnskatt", "alminnelig inntekt", "personfradrag", "skattemelding", "RF-1175", "naeringsoppgave", "enkeltpersonforetak", "self-employed tax Norway", or any question about filing or computing income tax for a Norwegian self-employed client. Covers alminnelig inntekt (22%), trinnskatt (5 brackets), personinntekt, trygdeavgift, skjermingsfradrag, personfradrag, minstefradrag, naeringsinntekt computation, deductible expenses, depreciation, the naeringsspesifikasjon that replaced RF-1175, filing deadlines, and penalties. ALWAYS read this skill before touching any Norwegian income tax work.
-version: 2.2
+version: 2.3
 jurisdiction: "NO"
 tax_year: 2026
 tax_year_notes: "Label 2026 means the income year 1 January to 31 December 2026. Income year 2025 is also covered, and every figure names its year."
-last_updated: 2026-11-05
+last_updated: 2026-11-14
 depends_on:
   - income-tax-workflow-base
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 domain: income-tax
+type: computation
 ---
 
-# Norway income tax for self-employed individuals (enkeltpersonforetak) v2.2
+# Norway income tax for self-employed individuals (enkeltpersonforetak) v2.3
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
