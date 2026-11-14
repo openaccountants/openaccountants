@@ -15,11 +15,12 @@ description: >
 jurisdiction: MD
 category: cross-border
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-version: "0.10"
+version: "0.11"
 tier: 2
 domain: cross-border
+type: situation-rules
 ---
 
 # Moldova cross-border income tax, 2026

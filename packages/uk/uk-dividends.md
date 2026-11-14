@@ -1,10 +1,10 @@
 ---
 name: uk-dividends
 description: "UK income tax on dividends for individuals, tax year 2026-27 (6 April 2026 to 5 April 2027), with the 2025-26 rates for returns filed now. Covers the GBP 500 dividend allowance (dividend nil rate), the 10.75%, 35.75% and 39.35% dividend rates from 6 April 2026 (8.75% and 33.75% before), how dividends sit on top of other income, salary versus dividends for owner-directors with Class 1 National Insurance and corporation tax, lawful dividends out of distributable profits (Companies Act 2006 s.830), the s.455 charge on loans to participators, foreign dividends and credit relief, dividend waivers, reporting on the SA100 and payments on account. Trigger on: dividend tax UK, dividend allowance, director dividends, salary vs dividends, 10.75%, 35.75%, SA100 dividends, dividend voucher, illegal dividend. Out of scope: uk-income-tax-sa100, uk-national-insurance, uk-corporation-tax, uk-foreign-tax-and-withholding, uk-scottish-income-tax, uk-payments-on-account."
-version: 1.3
+version: 1.4
 jurisdiction: GB
 tax_year: 2026
-last_updated: 2026-10-26
+last_updated: 2026-11-14
 source_checked: 2026-10-26
 depends_on:
   - uk-income-tax-sa100
@@ -12,6 +12,7 @@ category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
+type: situation-rules
 ---
 
 # UK Dividends: income tax on dividends and director pay (2026-27)

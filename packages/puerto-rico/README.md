@@ -8,10 +8,13 @@
 1. `foundation.md`
 2. `intake.md`
 3. `README.md`
-4. `pr-company-income-tax.md`
-5. `pr-federal-residence-and-filing.md`
-6. `pr-self-employment-tax-2025.md`
-7. `workflow-base.md`
+4. `pr-act-60-incentives.md`
+5. `pr-company-income-tax.md`
+6. `pr-federal-residence-and-filing.md`
+7. `pr-individual-income-tax.md`
+8. `pr-ivu-sales-and-use-tax.md`
+9. `pr-self-employment-tax.md`
+10. `workflow-base.md`
 
 ## How to use
 

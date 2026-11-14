@@ -4,14 +4,15 @@ description: >
   Burkina Faso tax intake and routing workpaper for 2026. It directs business income, corporate tax, VAT, payroll withholding, social contributions, transfer pricing and non-resident services withholding to their separate source homes. Use it to distinguish turnover from profit, employee deductions from employer charges, tax declarations from company accounts approval, and ordinary domestic jobs from specialist cross-border questions. It preserves the previous overview topics as routed items or explicit gaps without copying headline figures away from their conditions. Two reconciliations illustrate common intake errors. Current authenticated filing steps, individual residence and foreign income, treaty relief, specialist sectors and professional attestation are outside the verified scope.
 jurisdiction: BF
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-version: 1.1
+version: 1.2
 tier: 2
 domain: income-tax
+type: situation-rules
 ---
 
-# Burkina Faso tax overview and routing v1.1
+# Burkina Faso tax overview and routing v1.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 

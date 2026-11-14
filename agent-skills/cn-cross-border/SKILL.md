@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/cn-cross-border"
   jurisdiction: "CN"
   tax_year: "2026"
-  last_updated: "2026-10-29"
+  last_updated: "2026-11-14"
 ---
 
 # China cross-border tax: residence, source, foreign credits and departure
@@ -143,18 +143,18 @@ expected:
 
 | Source | Official URL | Read on |
 | --- | --- | --- |
-| IIT Law | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/201809/t441789.html | 2026-10-29 |
-| IIT Regulations | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/201812/t443213.html | 2026-10-29 |
-| 2019 No.34 | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/201904/t444837.html | 2026-10-29 |
-| MOF/STA 2020 No.3 | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202002/t452398.html | 2026-10-29 |
-| EIT Law | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286573.html | 2026-10-29 |
-| EIT Regulations | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286574.html | 2026-10-29 |
-| Caishui 2009 No.125 | https://fgk.chinatax.gov.cn/zcfgk/c102416/c5203574/content.html | 2026-10-29 |
-| Caishui 2017 No.84 | https://fgk.chinatax.gov.cn/zcfgk/c102416/c5202488/content.html | 2026-10-29 |
-| STA 2019 No.35 | https://tianjin.chinatax.gov.cn/11200000000/0300/030004/03000418/20191024101530609.shtml | 2026-10-29 |
-| Tax Collection Administration Law | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/swzsgl/200609/t284229.html | 2026-10-29 |
+| IIT Law. Read for Who this applies to, Rates, bands and thresholds, Individual source, residence and credits | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/201809/t441789.html | 2026-11-14 |
+| IIT Regulations. Read for Who this applies to, Rates, bands and thresholds | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/201812/t443213.html | 2026-11-14 |
+| 2019 No.34. Read for Rates, bands and thresholds | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/201904/t444837.html | 2026-11-14 |
+| MOF/STA 2020 No.3. Read for Rates, bands and thresholds, Individual source, residence and credits, Deadlines and filing | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202002/t452398.html | 2026-11-14 |
+| EIT Law. Read for Who this applies to, Rates, bands and thresholds, Enterprise residence, establishments and foreign credits | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286573.html | 2026-11-14 |
+| EIT Regulations. Read for Who this applies to, Rates, bands and thresholds, Enterprise residence, establishments and foreign credits | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286574.html | 2026-11-14 |
+| Caishui 2009 No.125. Read for Rates, bands and thresholds, Enterprise residence, establishments and foreign credits, Two worked examples that recompute | https://fgk.chinatax.gov.cn/zcfgk/c102416/c5203574/content.html | 2026-11-14 |
+| Caishui 2017 No.84. Read for Rates, bands and thresholds, Enterprise residence, establishments and foreign credits | https://fgk.chinatax.gov.cn/zcfgk/c102416/c5202488/content.html | 2026-11-14 |
+| STA 2019 No.35. Read for Cross-border points | https://tianjin.chinatax.gov.cn/11200000000/0300/030004/03000418/20191024101530609.shtml | 2026-11-14 |
+| Tax Collection Administration Law. Read for Penalties and interest | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/swzsgl/200609/t284229.html | 2026-11-14 |
 
-| Additional operative source | https://guangdong.chinatax.gov.cn/gdsw/fssw_nsrxt_kjxz/2025-10/09/content_b02be06c906e46bca00673beb9e7783a.shtml | 2026-10-29 |
+| Foshan Tax Bureau IIT rate and withholding tables (个人所得税税率表). Read for the IIT rate tables | https://guangdong.chinatax.gov.cn/gdsw/fssw_nsrxt_kjxz/2025-10/09/content_b02be06c906e46bca00673beb9e7783a.shtml | 2026-11-14 |
 
 > **General reference only.** This Guide is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status or local procedures. A qualified professional in the relevant jurisdiction must review the work before filing, paying or taking a tax position.
 
@@ -162,4 +162,4 @@ expected:
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-29. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `cn-cross-border` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/cn-cross-border. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `cn-cross-border` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/cn-cross-border. If neither is available, confirm every figure against the official source pages cited above before relying on it.

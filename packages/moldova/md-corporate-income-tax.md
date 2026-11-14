@@ -1,17 +1,18 @@
 ---
 name: md-corporate-income-tax
 description: "Compute Moldova resident-company corporate income tax for 2026, including the ordinary taxable-profit reconciliation and the separate eligible non-VAT SME accounting-income regime. Use for regime and legal-category selection, business expenses, employee benefits, financing, depreciation, losses, foreign-tax credits, instalments, distributions and withholding. Distinguish company tax from shareholder withholding and the dividend-linked payment-deferral option. Establish actual tax-period, VAT, ownership, activity, profit-origin and payment facts before calculating. This source-cited draft preserves the earlier Guide subjects, states exact remaining ordinary and specialist gaps, and has a bounded source-review record linked under Sources. It does not claim accountant attestation or comprehensive coverage."
-version: "0.16"
+version: "0.17"
 jurisdiction: MD
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: international
 tier: 2
 domain: corporate-tax
+type: computation
 ---
 
-# Moldova corporate income tax, 2026 v0.16
+# Moldova corporate income tax, 2026 v0.17
 
 ## Who this applies to
 
