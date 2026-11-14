@@ -1,10 +1,10 @@
 ---
 name: france-bookkeeping
 description: Use this skill whenever asked about bookkeeping, chart of accounts, Plan Comptable Général (PCG), financial statements, P&L format, balance sheet layout, bank reconciliation, expense classification, asset capitalisation, or day-to-day accounting for a French entity. Trigger on phrases like "PCG", "Plan Comptable", "chart of accounts France", "bilan", "compte de résultat", "micro-entreprise accounting", "régime réel simplifié", "capitalise or expense France", "amortissement", "depreciation France", "bank reconciliation France", "bookkeeping France", or any question about recording transactions, classifying expenses, or preparing accounts under French law. ALWAYS read this skill before touching any bookkeeping work for France.
-version: 1.3
+version: 2.0
 jurisdiction: FR
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-14
 drafted_by: OpenAccountants
 approved_by: pending
 depends_on:
@@ -13,15 +13,40 @@ category: bookkeeping
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: bookkeeping
+type: situation-rules
 ---
 
 # Bookkeeping in France (Plan Comptable Général, books, records and retention)
 
-Which books a French business must keep under each regime, the account structure of the Plan Comptable Général, how expenses and assets are classified, what an invoice must carry, what the accounting file handed to a tax inspector must contain, and how long everything is kept. Figures are for tax year 2026. Two sources are older on their face, the retention page checked on 1 July 2024 and the invoice page on 11 August 2026, and the tax doctrine used here carries version dates from 2012 to 2021 (depreciation rates 23 September 2013, low-value assets 1 March 2017, declining balance 12 September 2012, accounting file format 7 June 2017, accounting file production 15 December 2021). Selected conditions and account labels were checked against the January2026 ANC compendium, the FEC specification and the retained official pages on29October2026. Publisher dates above remain historical source dates, not a claim that an old doctrine was enacted in2026.
+Which books a French business must keep under each regime, the account structure of the Plan Comptable Général, how expenses and assets are classified, what an invoice must carry, what the accounting file handed to a tax inspector must contain, and how long everything is kept. Figures are for tax year 2026. Two sources are older on their face, the retention page checked on 1 July 2024 and the invoice page on 11 August 2026, and the tax doctrine used here carries version dates from 2012 to 2021 (depreciation rates 23 September 2013, low-value assets 1 March 2017, declining balance 12 September 2012, accounting file format 7 June 2017, accounting file production 15 December 2021). Selected conditions and account labels were checked against the January 2026 ANC compendium, the FEC specification and the retained official pages on 29 October 2026. Publisher dates above remain historical source dates, not a claim that an old doctrine was enacted in 2026.
+
+## Scope
+
+In scope: keeping the books of a business established in France for financial years in 2026: which books each regime must keep, the Plan Comptable Général chart of accounts, revenue and expense classification, the asset or expense line, depreciation, VAT entries by regime, invoice particulars, the FEC and record retention.
+
+- Out of scope here: drawing up and filing the annual accounts (`france-financial-statements`), the VAT return itself (`france-vat-return`), corporation tax (`fr-corporate-tax`), consolidated accounts, banks, insurers and associations.
+
+## Ask the client first
+
+- What are the legal form, accounting duty and income-tax regime for this income year? Obtain both prior-year turnover figures; do not decide books from VAT liability alone.
+- How much VAT did it owe last year on the actual statutory measure? Test the separate VAT thresholds, options and foreign purchases; a monthly VAT return does not itself change the income-tax accounting regime.
+- Is this a qualifying sole trader, and has the annual super-simplified election been made on the applicable results return? Establish any separate company-law simplification rather than assuming that election applies to every entity.
+- Is it under the VAT franchise, and does every invoice carry the exemption wording?
+- Can its software export the applicable FEC with every required field? Check the export before an audit, reconcile it to the books and retain the format/numbering description.
+- Does it sell goods or accommodation, or services? Almost every limit here splits on that line, and a mixed business needs both tested.
+
+## The method, step by step
+
+1. Establish legal form and the commercial-accounting duty, then the income-tax regime for the income year. Test VAT separately: https://entreprendre.service-public.fr/vosdroits/F23267 and https://entreprendre.service-public.fr/vosdroits/F21852
+2. Open the prescribed registers or commercial journal/ledger under the actual legal-form conditions. Document procedures when needed; greffier cotation/paraphe is optional on request. Apply the specific sole-trader election and qualified centralisation route above: https://entreprendre.service-public.fr/vosdroits/F23266 and https://entreprendre.service-public.fr/vosdroits/F21852
+3. Post from documents, not the bank alone. Every entry carries its origin, content, account and document reference, and every invoice the particulars above: https://entreprendre.service-public.fr/vosdroits/F31808
+4. Test an asset against the low-value tolerance before capitalising, then set the method and rate: https://bofip.impots.gouv.fr/bofip/2109-PGP.html and https://bofip.impots.gouv.fr/bofip/4520-PGP.html
+5. Reconcile the VAT accounts to the return filed for the period: https://entreprendre.service-public.fr/vosdroits/F23566
+6. Inventory at least every twelve months, post the closing adjustments, then hand the trial balance to `france-financial-statements`, check the accounting file exports in the required format, and archive for the retention periods above: https://bofip.impots.gouv.fr/bofip/9028-PGP.html and https://entreprendre.service-public.fr/vosdroits/F10029
 
 ## Section 1: Quick Reference
 
-| Field | Value |
+| Field | Detail |
 | --- | --- |
 | Country | France (République française) |
 | Currency | EUR |
@@ -41,23 +66,23 @@ Bookkeeping depends on the commercial-accounting duty, legal form and the applic
 | Item | Value | Note |
 | --- | --- | --- |
 | Source | all figures below | https://entreprendre.service-public.fr/vosdroits/F21852 |
-| Simplified VAT regime, ordinary turnover ceiling for selling, catering and accommodation | EUR 945,000 | Test activity, options, prior-year VAT and taxable foreign purchases separately. |
-| Simplified VAT regime, ordinary turnover ceiling for other activities | EUR 286,000 | This is not the universal income-tax/accounting-regime ceiling. |
-| Prior-year VAT: statutory monthly-return trigger is strictly above | EUR 15,000 | CGI287-3bis; equality alone does not trigger that provision. The overview’s “inférieur” wording does not decide equality. |
-| Communication-right sanction for refusal, obstruction or failure to preserve the documents covered by the statutory request | EUR 10,000 | CGI1734: per request under its own conditions, not an automatic fine for every missing bookkeeping document. |
-| Ordinary criminal sanction for knowingly omitting or making inaccurate/fictitious entries in the journal or equivalent covered by CGI1743 | Five years’ imprisonment and EUR 500,000 | CGI1743 refers to1741; this is the ordinary penalty, subject to the proceeds-based increase and aggravation conditions, not a universal ceiling for an invoice error. |
+| Simplified VAT regime, ordinary turnover ceiling for selling, catering and accommodation | EUR 945,000 | Test activity, options, prior-year VAT and taxable foreign purchases separately. https://entreprendre.service-public.fr/vosdroits/F23566 |
+| Simplified VAT regime, ordinary turnover ceiling for other activities | EUR 286,000 | This is not the universal income-tax/accounting-regime ceiling. https://entreprendre.service-public.fr/vosdroits/F23566 |
+| Prior-year VAT: statutory monthly-return trigger is strictly above | EUR 15,000 | CGI287-3bis; equality alone does not trigger that provision. The overview’s “inférieur” wording does not decide equality. https://entreprendre.service-public.fr/vosdroits/F23566 |
+| Communication-right sanction for refusal, obstruction or failure to preserve the documents covered by the statutory request | EUR 10,000 | CGI1734: per request under its own conditions, not an automatic fine for every missing bookkeeping document. https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000048651374 |
+| Ordinary criminal sanction for knowingly omitting or making inaccurate/fictitious entries in the journal or equivalent covered by CGI1743 | Five years’ imprisonment and EUR 500,000 | CGI1743 refers to1741; this is the ordinary penalty, subject to the proceeds-based increase and aggravation conditions, not a universal ceiling for an invoice error. https://entreprendre.service-public.fr/vosdroits/F21852 |
 
-The general commercial books are the livre-journal and grand-livre, with procedural documentation when needed. Entries identify their origin, content, account and supporting document. Cotation and paraphe by the greffier are available at the merchant’s request under Code de commerce R123-173; the retained administrative page states them as compulsory, and that broader wording is not adopted. Electronic records must support identification, date and integrity; validated computer entries are immutable. The ordinary auxiliary-journal centralisation rule is at least monthly. L123-25 permits qualifying natural persons under the simplified real income-tax regime to record receipts/payments during the year and receivables/payables at close, without an annexe. It separately permits qualifying commercial legal persons to use an abridged annexe. The additional permission to record receivables/payables only at close excludes entities controlled by a parent preparing consolidated accounts under L233-16; that exclusion belongs to the closing-recording permission, not automatically to the abridged annexe. L123-26 allows natural persons under the simplified real income-tax regime, by option or by right, to recognise expenses in profit or loss according to their payment date where the expense recurs at intervals no longer than one year, excluding purchases. This is a qualifying expense/payment-date rule, not permission to defer every general-expense posting to an annual entry; L123-27 permits simplified stock/work-in-progress valuation. The Service Public sole-trader branch describes quarterly centralisation and an annual super-simplified election on2031. Its exact bridge to the ordinary monthly rule is not established here: do not apply quarterly centralisation to every company or infer the income-tax regime from VAT liability.
+The general commercial books are the livre-journal and grand-livre, with procedural documentation when needed. Entries identify their origin, content, account and supporting document. Cotation and paraphe by the greffier are available at the merchant’s request under Code de commerce R123-173; the retained administrative page states them as compulsory, and that broader wording is not adopted. Electronic records must support identification, date and integrity; validated computer entries are immutable. The ordinary auxiliary-journal centralisation rule is at least monthly. L123-25 permits qualifying natural persons under the simplified real income-tax regime to record receipts/payments during the year and receivables/payables at close, without an annexe. It separately permits qualifying commercial legal persons to use an abridged annexe. The additional permission to record receivables/payables only at close excludes entities controlled by a parent preparing consolidated accounts under L233-16; that exclusion belongs to the closing-recording permission, not automatically to the abridged annexe. L123-26 allows natural persons under the simplified real income-tax regime, by option or by right, to recognise expenses in profit or loss according to their payment date where the expense recurs at intervals no longer than one year, excluding purchases. This is a qualifying expense/payment-date rule, not permission to defer every general-expense posting to an annual entry; L123-27 permits simplified stock/work-in-progress valuation. The Service Public sole-trader branch describes quarterly centralisation and an annual super-simplified election on 2031. Its exact bridge to the ordinary monthly rule is not established here: do not apply quarterly centralisation to every company or infer the income-tax regime from VAT liability.
 
 For the natural persons within Code de commerce L123-28 and CGI50-0, the commercial-law relief replaces annual accounts with the prescribed receipts and, where relevant, purchase records. Do not apply that legal-form-specific relief to every entity described as “micro”.
 
 | Item | Value | Note |
 | --- | --- | --- |
 | Source | all figures below | https://entreprendre.service-public.fr/vosdroits/F23266 |
-| Unit amount below which retail sales and services to individuals may be entered as one daily total | EUR 76 | "inférieur à 76 €" |
-| Maximum ordinary sanction stated for forging or using a forged register | Three years’ imprisonment and EUR 45,000 | The page states a maximum, not a fixed automatic sentence. |
-| Penalty for each missing turnover declaration | EUR 60.1 | "une pénalité de 60,1 €" |
-| Yearly turnover which, once passed in two consecutive years, forces an account dedicated to the activity | EUR 10,000 | "dépasse 10 000 €" |
+| Unit amount below which retail sales and services to individuals may be entered as one daily total | EUR 76 | "inférieur à 76 €" https://entreprendre.service-public.fr/vosdroits/F23266 |
+| Maximum ordinary sanction stated for forging or using a forged register | Three years’ imprisonment and EUR 45,000 | The page states a maximum, not a fixed automatic sentence. https://entreprendre.service-public.fr/vosdroits/F23266 |
+| Penalty for each missing turnover declaration | EUR 60.1 | "une pénalité de 60,1 €" https://entreprendre.service-public.fr/vosdroits/F23266 |
+| Yearly turnover which, once passed in two consecutive years, forces an account dedicated to the activity | EUR 10,000 | "dépasse 10 000 €" https://entreprendre.service-public.fr/vosdroits/F23266 |
 
 - **Trader or accommodation provider.** A livre des recettes encaissées in date order, with the amount and origin of each receipt and the client's identity, the means of payment and the document reference, totalled every three months. Plus a registre des achats listing the year's purchases in date order with the means of payment and the document references.
 - **Liberal profession.** The livre des recettes only, on the same terms. That page requires no registre des achats.
@@ -83,7 +108,7 @@ The account numbers below are OpenAccountants' own selection of the accounts a s
 | 129 | Résultat de l'exercice, perte |
 | 131 | Subventions d'investissement |
 | 151 | Provisions pour risques |
-| 164 | Emprunts auprès des établissements de crédit, if not included in167 |
+| 164 | Emprunts auprès des établissements de crédit, if not included in 167 |
 
 ### Classe 2: Comptes d'Immobilisations (Non-Current Assets)
 
@@ -190,7 +215,7 @@ The account numbers below are OpenAccountants' own selection of the accounts a s
 | Qualifying simplified income-tax accounting | Apply L123-25’s separate natural-person/legal-person conditions above; receipts/payments during the year and receivables/payables at close do not remove every company’s annexe. |
 | Régime réel normal | Full accruals, every movement day by day, operation by operation |
 | Qualifying long-term contracts | A specifically negotiated project spanning at least two accounting periods under PCG622-1; achèvement or avancement under622-2, with the method’s actual conditions. This is not every construction invoice. |
-| Advance payments | Credit received advances to4191; clear that account against411 after invoicing. Separately test revenue recognition and VAT: the bank receipt alone does not establish either. |
+| Advance payments | Credit received advances to 4191; clear that account against411 after invoicing. Separately test revenue recognition and VAT: the bank receipt alone does not establish either. |
 
 ### Turnover Thresholds
 
@@ -199,13 +224,13 @@ France taxes the previous year's income, so the micro regime has two live sets o
 | Item | Value | Note |
 | --- | --- | --- |
 | Source | all figures below | https://entreprendre.service-public.fr/vosdroits/F23267 |
-| Micro limit, goods and accommodation other than furnished tourist lettings, income of 2025 declared in 2026 | EUR 188,700 | "188 700 €" |
-| Micro limit, services, income of 2025 declared in 2026 | EUR 77,700 | "77 700 €" |
-| Micro limit, goods and accommodation other than furnished tourist lettings, income received in 2026 | EUR 203,100 | "203 100 €" |
-| Micro limit, services, income received in 2026 | EUR 83,600 | "83 600 €" |
-| Flat-rate allowance, goods and accommodation other than furnished tourist lettings | 71% | "abattement est de 71 %" |
-| Flat-rate allowance, services taxed as industrial and commercial profits | 50% | "50 %" |
-| Flat-rate allowance, non-commercial profits | 34% | "34 %" |
+| Micro limit, goods and accommodation other than furnished tourist lettings, income of 2025 declared in 2026 | EUR 188,700 | "188 700 €" https://entreprendre.service-public.fr/vosdroits/F23267 |
+| Micro limit, services, income of 2025 declared in 2026 | EUR 77,700 | "77 700 €" https://entreprendre.service-public.fr/vosdroits/F23267 |
+| Micro limit, goods and accommodation other than furnished tourist lettings, income received in 2026 | EUR 203,100 | "203 100 €" https://entreprendre.service-public.fr/vosdroits/F23267 |
+| Micro limit, services, income received in 2026 | EUR 83,600 | "83 600 €" https://entreprendre.service-public.fr/vosdroits/F23267 |
+| Flat-rate allowance, goods and accommodation other than furnished tourist lettings | 71% | "abattement est de 71 %" https://entreprendre.service-public.fr/vosdroits/F23267 |
+| Flat-rate allowance, services taxed as industrial and commercial profits | 50% | "50 %" https://entreprendre.service-public.fr/vosdroits/F23267 |
+| Flat-rate allowance, non-commercial profits | 34% | "34 %" https://entreprendre.service-public.fr/vosdroits/F23267 |
 
 Furnished tourist lettings are on their own limits and their own allowance. Use `fr-rental-income`.
 
@@ -238,9 +263,9 @@ The allowance replaces actual expenses for the applicable micro income-tax compu
 | Item | Value | Note |
 | --- | --- | --- |
 | Source | all figures below | https://bofip.impots.gouv.fr/bofip/2109-PGP.html |
-| Unit price excluding tax up to which materials and tooling may be deducted at once | EUR 500 | "n'excédant pas 500 €" |
+| Unit price excluding tax up to which materials and tooling may be deducted at once | EUR 500 | "n'excédant pas 500 €" https://bofip.impots.gouv.fr/bofip/2109-PGP.html |
 
-The tax tolerance covers qualifying materials/tooling in2154/2155, small office equipment, office/shop furniture and software whose unit value excluding tax does not exceed EUR500. Transport equipment is excluded from the tooling limb; connected components are assessed together. Furniture normally qualifies for limited renewal purchases of the same item; initial furnishings or a complete renewal qualify only if their total price does not exceed EUR500 excluding tax. These are category-specific tax conditions, not a universal accounting threshold. PCG212-1 separately requires probable future economic benefits and reliable cost measurement, and212-6 permits nonsignificant assets to be expensed. An otherwise qualifying small item can still be capitalised.
+The tax tolerance covers qualifying materials/tooling in 2154/2155, small office equipment, office/shop furniture and software whose unit value excluding tax does not exceed EUR500. Transport equipment is excluded from the tooling limb; connected components are assessed together. Furniture normally qualifies for limited renewal purchases of the same item; initial furnishings or a complete renewal qualify only if their total price does not exceed EUR500 excluding tax. These are category-specific tax conditions, not a universal accounting threshold. PCG212-1 separately requires probable future economic benefits and reliable cost measurement, and 212-6 permits nonsignificant assets to be expensed. An otherwise qualifying small item can still be capitalised.
 
 ### Standard Depreciation Rates (Amortissement Linéaire)
 
@@ -249,17 +274,17 @@ The following are indicative tax-doctrine yearly straight-line rates, not mandat
 | Asset | Rate |
 | --- | --- |
 | Source | https://bofip.impots.gouv.fr/bofip/4520-PGP.html |
-| Ordinary dwelling houses | 1% to 2% |
-| Workers' houses | 3% to 4% |
-| Commercial buildings | 2% to 5% |
-| Industrial buildings, land excluded | 5% |
-| Plant (matériel) | 10% to 15% |
-| Tooling (outillage) | 10% to 20% |
-| Office equipment | 10% to 20% |
-| Motor vehicles | 20% to 25% |
-| Furniture | 10% |
-| Fittings and installations | 5% to 10% |
-| Patents and plant variety certificates | 20% |
+| Ordinary dwelling houses | 1% to 2% https://bofip.impots.gouv.fr/bofip/4520-PGP.html |
+| Workers' houses | 3% to 4% https://bofip.impots.gouv.fr/bofip/4520-PGP.html |
+| Commercial buildings | 2% to 5% https://bofip.impots.gouv.fr/bofip/4520-PGP.html |
+| Industrial buildings, land excluded | 5% https://bofip.impots.gouv.fr/bofip/4520-PGP.html |
+| Plant (matériel) | 10% to 15% https://bofip.impots.gouv.fr/bofip/4520-PGP.html |
+| Tooling (outillage) | 10% to 20% https://bofip.impots.gouv.fr/bofip/4520-PGP.html |
+| Office equipment | 10% to 20% https://bofip.impots.gouv.fr/bofip/4520-PGP.html |
+| Motor vehicles | 20% to 25% https://bofip.impots.gouv.fr/bofip/4520-PGP.html |
+| Furniture | 10% https://bofip.impots.gouv.fr/bofip/4520-PGP.html |
+| Fittings and installations | 5% to 10% https://bofip.impots.gouv.fr/bofip/4520-PGP.html |
+| Patents and plant variety certificates | 20% https://bofip.impots.gouv.fr/bofip/4520-PGP.html |
 
 The list is indicative and is beaten by the trade's usages and the particular conditions of use. A shorter life may be used where the effective life will very probably be shorter than the normal life, and the business must then prove the abnormal depreciation. Patents bought in financial years beginning on or after 1 January 1988 may be written off over a minimum of five years. The legacy Guide printed rates for computer hardware and software: they are not in the doctrine's list, so none is stated here, and the asset's own useful life governs.
 
@@ -274,7 +299,7 @@ An asset qualifies only if it falls in the categories set by article 22 of annex
 | Five or six years | 1.75 |
 | More than six years | 2.25 |
 
-For ordinary qualifying acquisitions from1January2010, use the coefficients above; the source separately preserves older acquisition-date bands. Multiply the linear rate for the normal useful life by the coefficient. Start at the first day of the acquisition/construction month with financial-period proration; switch to residual value divided by remaining years where that produces the greater permitted charge. Special equipment coefficients require their own provision. The general exclusions for dwellings/worksites/professional premises must be tested with the actual statutory categories: qualifying industrial buildings with normal useful life no more than fifteen years are a named exception. The hotel limb covers businesses providing accommodation or accommodation with meals, not restaurants/cafés alone, clinics, private retirement-home buildings or camping investment merely because they provide lodging. Newness, ownership and incorporation/separability conditions still apply, especially work on old or rented hotel buildings. Used assets are excluded unless an actual stated exception applies; the manufacturer-rebuilt tolerance requires latest technical improvements and a price approaching new equipment. Do not extend that tolerance to any refurbished purchase. If accounting depreciation is linear, record the tax excess as amortissements dérogatoires.
+For ordinary qualifying acquisitions from 1 January 2010, use the coefficients above; the source separately preserves older acquisition-date bands. Multiply the linear rate for the normal useful life by the coefficient. Start at the first day of the acquisition/construction month with financial-period proration; switch to residual value divided by remaining years where that produces the greater permitted charge. Special equipment coefficients require their own provision. The general exclusions for dwellings/worksites/professional premises must be tested with the actual statutory categories: qualifying industrial buildings with normal useful life no more than fifteen years are a named exception. The hotel limb covers businesses providing accommodation or accommodation with meals, not restaurants/cafés alone, clinics, private retirement-home buildings or camping investment merely because they provide lodging. Newness, ownership and incorporation/separability conditions still apply, especially work on old or rented hotel buildings. Used assets are excluded unless an actual stated exception applies; the manufacturer-rebuilt tolerance requires latest technical improvements and a price approaching new equipment. Do not extend that tolerance to any refurbished purchase. If accounting depreciation is linear, record the tax excess as amortissements dérogatoires.
 
 ## Section 6: P&L Format (Compte de Résultat)
 
@@ -405,7 +430,7 @@ Historical illustrative bank-file fixtures, retained from the predecessor. These
 | URSSAF | Establish whose liability is paid: employer social contributions can use645; personal contributions of the exploitant use646. A manager’s status requires its own analysis. |
 | TRESOR PUBLIC or DGFIP | Tax payment: corporation tax, VAT, CFE |
 | LOYER | Rent (613) |
-| ECHEANCE PRET | Match the loan schedule; split principal to the appropriate borrowing account (164 only where applicable), and interest to6611. |
+| ECHEANCE PRET | Match the loan schedule; split principal to the appropriate borrowing account (164 only where applicable), and interest to 6611. |
 
 ## Section 9: Micro-Entity / Small Business Simplifications
 
@@ -416,10 +441,10 @@ An entity’s accounting size class uses two of three criteria: balance-sheet to
 | Item | Value | Note |
 | --- | --- | --- |
 | Source | all figures below | https://entreprendre.service-public.fr/vosdroits/F21852 |
-| Petite entreprise, balance sheet total not more than | EUR 7,500,000 | "Bilan total inférieur ou égal à 7 500 000 €" |
-| Petite entreprise, net turnover excluding VAT not more than | EUR 15,000,000 | "Montant net HT du chiffre d'affaires inférieur ou égal à 15 000 000 €" |
-| Moyenne entreprise, balance sheet total not more than | EUR 25,000,000 | "Bilan total inférieur ou égal à 25 000 000 €" |
-| Moyenne entreprise, net turnover excluding VAT not more than | EUR 50,000,000 | "Montant net HT du chiffre d'affaires inférieur ou égal à 50 000 000 €" |
+| Petite entreprise, balance sheet total not more than | EUR 7,500,000 | "Bilan total inférieur ou égal à 7 500 000 €" https://entreprendre.service-public.fr/vosdroits/F21852 |
+| Petite entreprise, net turnover excluding VAT not more than | EUR 15,000,000 | "Montant net HT du chiffre d'affaires inférieur ou égal à 15 000 000 €" https://entreprendre.service-public.fr/vosdroits/F21852 |
+| Moyenne entreprise, balance sheet total not more than | EUR 25,000,000 | "Bilan total inférieur ou égal à 25 000 000 €" https://entreprendre.service-public.fr/vosdroits/F21852 |
+| Moyenne entreprise, net turnover excluding VAT not more than | EUR 50,000,000 | "Montant net HT du chiffre d'affaires inférieur ou égal à 50 000 000 €" https://entreprendre.service-public.fr/vosdroits/F21852 |
 
 The headcount tests are fifty employees on average for a petite entreprise and two hundred and fifty for a moyenne entreprise, and two of the three criteria decide the class. See https://entreprendre.service-public.fr/vosdroits/F21852 The full set of limits, including the accounting micro class, and what each class must produce and file, is in `france-financial-statements`.
 
@@ -432,7 +457,7 @@ The headcount tests are fifty employees on average for a petite entreprise and t
 | Annual accounts | No annual accounts only for the specified L123-28 natural persons | Natural-person L123-25 no-annexe rule; legal-person abridged-annexe conditions; actual presentation options | Bilan, compte de résultat and annexe, subject to any separate applicable exemption |
 | VAT | Independent franchise, option and foreign-purchase tests | Independent simplified-VAT conditions and qualified CA12/instalment route | Normal VAT reporting where its conditions apply; a VAT label does not determine the books |
 | Income tax | Flat-rate allowance on turnover, Section 3 | Actual expenses | Actual expenses |
-| Tax return package | Apply the actual micro reporting duties; no real-regime results package under the specified relief | BIC2031 or IS2065, with the applicable2033 series; do not infer the return from legal form alone | Applicable BIC2031 or IS2065 with2050 series; BNC/other income-tax routes belong in `fr-income-tax` |
+| Tax return package | Apply the actual micro reporting duties; no real-regime results package under the specified relief | BIC2031 or IS2065, with the applicable 2033 series; do not infer the return from legal form alone | Applicable BIC2031 or IS2065 with 2050 series; BNC/other income-tax routes belong in `fr-income-tax` |
 
 ### TVA Franchise en Base Thresholds
 
@@ -441,31 +466,31 @@ The single franchise threshold announced in the 2025 finance law was abandoned. 
 | Activity | Basic threshold | Tolerance threshold |
 | --- | --- | --- |
 | Source | all figures below | https://entreprendre.service-public.fr/vosdroits/F21746 |
-| Goods and accommodation | EUR 85,000 | EUR 93,500 |
-| Services | EUR 37,500 | EUR 41,250 |
-| Lawyers' regulated work, authors' and performers' works and copyright | EUR 50,000 | EUR 55,000 |
-| Their other activities | EUR 35,000 | EUR 38,500 |
+| Goods and accommodation | EUR 85,000 | EUR 93,500 https://entreprendre.service-public.fr/vosdroits/F21746 |
+| Services | EUR 37,500 | EUR 41,250 https://entreprendre.service-public.fr/vosdroits/F21746 |
+| Lawyers' regulated work, authors' and performers' works and copyright | EUR 50,000 | EUR 55,000 https://entreprendre.service-public.fr/vosdroits/F21746 |
+| Their other activities | EUR 35,000 | EUR 38,500 https://entreprendre.service-public.fr/vosdroits/F21746 |
 
-The ordinary domestic franchise tests both periods separately: the previous calendar year must satisfy its basic ceiling, and a current-year overrun of the higher ceiling ends the franchise from that overrun date. Exceeding the previous-year basic ceiling removes the franchise from1January of the following year; satisfying only the current higher ceiling does not restore it. Startup annualisation/source conflicts remain explicitly in `france-vat-return`. Invoices under the franchise state “TVA non applicable, art.293 B du code général des impôts”.
+The ordinary domestic franchise tests both periods separately: the previous calendar year must satisfy its basic ceiling, and a current-year overrun of the higher ceiling ends the franchise from that overrun date. Exceeding the previous-year basic ceiling removes the franchise from 1 January of the following year; satisfying only the current higher ceiling does not restore it. Startup annualisation/source conflicts remain explicitly in `france-vat-return`. Invoices under the franchise state “TVA non applicable, art.293 B du code général des impôts”.
 
 ## VAT bookkeeping by regime
 
-Determine VAT independently of income-tax accounting: test the franchise/option, applicable turnover, prior-VAT and foreign-purchase conditions. CGI287-3bis uses a prior-year VAT trigger strictly above EUR15,000;287-3ter has separate monthly reporting for specified intra-EU acquisitions, imports and suspensive-regime exits. The administrative higher-turnover procedure below states a current-year move retroactive to1January, while the current implementing text and recapitulatory procedure are preserved in `france-vat-return`. Apply that companion’s qualified procedure; noncalendar reconciliation remains unresolved. Do not apply one effective date to every trigger or change the income-tax books solely because VAT reporting changes.
+Determine VAT independently of income-tax accounting: test the franchise/option, applicable turnover, prior-VAT and foreign-purchase conditions. CGI287-3bis uses a prior-year VAT trigger strictly above EUR15,000;287-3ter has separate monthly reporting for specified intra-EU acquisitions, imports and suspensive-regime exits. The administrative higher-turnover procedure below states a current-year move retroactive to 1 January, while the current implementing text and recapitulatory procedure are preserved in `france-vat-return`. Apply that companion’s qualified procedure; noncalendar reconciliation remains unresolved. Do not apply one effective date to every trigger or change the income-tax books solely because VAT reporting changes.
 
 | Item | Value | Note |
 | --- | --- | --- |
 | Source | all figures below | https://entreprendre.service-public.fr/vosdroits/F23575 |
-| Turnover above which the simplified regime is undone back to 1 January of that year, goods and accommodation | EUR 1,040,000 | "1 040 000 €" |
-| Turnover above which the simplified regime is undone back to 1 January of that year, services | EUR 323,000 | "323 000 €" |
+| Turnover above which the simplified regime is undone back to 1 January of that year, goods and accommodation | EUR 1,040,000 | "1 040 000 €" https://entreprendre.service-public.fr/vosdroits/F23566 |
+| Turnover above which the simplified regime is undone back to 1 January of that year, services | EUR 323,000 | "323 000 €" https://entreprendre.service-public.fr/vosdroits/F23566 |
 
 | Item | Value | Note |
 | --- | --- | --- |
 | Source | all figures below | https://entreprendre.service-public.fr/vosdroits/F23566 |
-| Calendar-year July instalment on previous-year VAT before deduction of VAT on fixed assets | 55% | Apply the statutory base and adjustment conditions, not every prior-year balance due. |
-| Calendar-year December instalment on the same statutory base | 40% | Fixed-asset VAT is excluded from that base. |
-| Previous-year VAT on that statutory base below which no instalment is due | EUR 1,000 | Strictly below; assess before fixed-asset VAT deduction. |
+| Calendar-year July instalment on previous-year VAT before deduction of VAT on fixed assets | 55% | Apply the statutory base and adjustment conditions, not every prior-year balance due. https://entreprendre.service-public.fr/vosdroits/F23566 |
+| Calendar-year December instalment on the same statutory base | 40% | Fixed-asset VAT is excluded from that base. https://entreprendre.service-public.fr/vosdroits/F23566 |
+| Previous-year VAT on that statutory base below which no instalment is due | EUR 1,000 | Strictly below; assess before fixed-asset VAT deduction. https://entreprendre.service-public.fr/vosdroits/F23566 |
 
-Output VAT sits in44571, expense input VAT in44566, capital-asset input VAT in44562 and the payable balance in44551. Reconcile each reporting period and clear44551 against payment. The qualified CA3/CA12 and instalment mechanics are in `france-vat-return`. A domestic-sales franchise removes collection and associated input deduction for those operations; it does not remove commercial books, nor every VAT duty on foreign purchases. Keep the actual taxable-purchase and option analysis.
+Output VAT sits in 44571, expense input VAT in 44566, capital-asset input VAT in 44562 and the payable balance in 44551. Reconcile each reporting period and clear44551 against payment. The qualified CA3/CA12 and instalment mechanics are in `france-vat-return`. A domestic-sales franchise removes collection and associated input deduction for those operations; it does not remove commercial books, nor every VAT duty on foreign purchases. Keep the actual taxable-purchase and option analysis.
 
 ## Invoices: the particulars every invoice must carry
 
@@ -481,10 +506,10 @@ Apply the invoice particulars to the actual customer, transaction and VAT liabil
 | Item | Value | Note |
 | --- | --- | --- |
 | Source | all figures below | https://entreprendre.service-public.fr/vosdroits/F31808 |
-| Total excluding VAT at or below which the limited CGI annexeII242 noniesA-II simplification is available | EUR 150 | Only the supplier VAT number inI-2 and exemption reference inI-12 are waived under that provision. Customer VAT numbers and reverse-charge wording have their separate conditions. |
-| Fixed recovery indemnity to be mentioned on an invoice between businesses | EUR 40 | "indemnité forfaitaire de 40 €" |
+| Total excluding VAT at or below which the limited CGI annexeII242 noniesA-II simplification is available | EUR 150 | Only the supplier VAT number inI-2 and exemption reference inI-12 are waived under that provision. Customer VAT numbers and reverse-charge wording have their separate conditions. https://entreprendre.service-public.fr/vosdroits/F31808 |
+| Fixed recovery indemnity to be mentioned on an invoice between businesses | EUR 40 | "indemnité forfaitaire de 40 €" https://entreprendre.service-public.fr/vosdroits/F31808 |
 
-Four additional particulars follow the applicable electronic-invoicing issue deadline: business customer Siren, different goods-delivery address, goods/services/both classification and the specified debit-option wording. French VAT taxable persons, including franchise businesses and persons making only exempt sales, must be able to receive in-scope electronic invoices from1September2026. Issuing/data transmission starts then for large/intermediate entities, with the statutory1September2027 extension for PME/micro entities except VAT-group members. Size is tested at legal-unit level using1January2025 and the stated accounts reference, not the transaction-year label alone. See `france-einvoice`. Other conditional mentions include approved-body membership, franchise, “Auto-liquidation”, electrical-waste contribution, private-copying levy, “Auto-facturation” and applicable craft professional-insurance references; each needs its actual scope.
+Four additional particulars follow the applicable electronic-invoicing issue deadline: business customer Siren, different goods-delivery address, goods/services/both classification and the specified debit-option wording. French VAT taxable persons, including franchise businesses and persons making only exempt sales, must be able to receive in-scope electronic invoices from 1 September 2026. Issuing/data transmission starts then for large/intermediate entities, with the statutory1September 2027 extension for PME/micro entities except VAT-group members. Size is tested at legal-unit level using1January 2025 and the stated accounts reference, not the transaction-year label alone. See `france-einvoice`. Other conditional mentions include approved-body membership, franchise, “Auto-liquidation”, electrical-waste contribution, private-copying levy, “Auto-facturation” and applicable craft professional-insurance references; each needs its actual scope.
 
 ## The fichier des écritures comptables
 
@@ -513,15 +538,15 @@ The following are the eighteen leading fields for the ordinary commercial format
 | 17 | Montantdevise | Foreign-currency amount; blank if unused |
 | 18 | Idevise | Currency identifier; blank if unused |
 
-In the permitted alternative,12 is Montant and13 is Sens. Sens accepts D/C or+1/-1, without an internal space. Keep each required column even when its value can be blank. The primary specification is listed in Sources.
+In the permitted alternative,12 is Montant and 13 is Sens. Sens accepts D/C or+1/-1, without an internal space. Keep each required column even when its value can be blank. The primary specification is listed in Sources.
 
 Where the doctrine says "à blanc si non utilisé" the column must be present; the cell may be empty if the software does not hold the data, and must never be filled with a zero or with spaces. The débit and crédit columns are not among them: both must always carry a figure, and the side not used carries a zero. Two file shapes are accepted: a flat sequential file meeting the criteria of the article, or a structured file in the markup language whose schema is published at https://www.impots.gouv.fr/fichiers-standards-des-ecritures-comptables
 
 | Item | Value | Note |
 | --- | --- | --- |
 | Source | all figures below | https://bofip.impots.gouv.fr/bofip/9026-PGP.html |
-| Fine for not producing the accounting file in the required form | EUR 5,000 | "une amende égale à 5 000 €" |
-| Increase of the duties charged, applied instead where an adjustment is made and it is higher | 10% | "majoration de 10 % des droits" |
+| Fine for not producing the accounting file in the required form | EUR 5,000 | "une amende égale à 5 000 €" https://bofip.impots.gouv.fr/bofip/9026-PGP.html |
+| Increase of the duties charged, applied instead where an adjustment is made and it is higher | 10% | "majoration de 10 % des droits" https://bofip.impots.gouv.fr/bofip/9026-PGP.html |
 
 ## Record retention
 
@@ -555,25 +580,56 @@ The close, the size classes, approval of the accounts, filing at the greffe, con
 | Item | Value | Note |
 | --- | --- | --- |
 | Source | all figures below | https://bofip.impots.gouv.fr/bofip/839-PGP.html |
-| Turnover above which the business enters the stated CVAE assessment/declaration scope | EUR 152,500 | Do not confuse this with effective payment: the checked ordinary rate is zero below EUR500,000 turnover. Apply the actual filing exemptions and conditions in `fr-cfe`. |
+| Turnover above which the business enters the stated CVAE assessment/declaration scope | EUR 152,500 | Do not confuse this with effective payment: the checked ordinary rate is zero below EUR500,000 turnover. Apply the actual filing exemptions and conditions in `fr-cfe`. https://bofip.impots.gouv.fr/bofip/839-PGP.html |
 
-## The method, step by step
+## Worked cases
 
-1. Establish legal form and the commercial-accounting duty, then the income-tax regime for the income year. Test VAT separately: https://entreprendre.service-public.fr/vosdroits/F23267 and https://entreprendre.service-public.fr/vosdroits/F21852
-2. Open the prescribed registers or commercial journal/ledger under the actual legal-form conditions. Document procedures when needed; greffier cotation/paraphe is optional on request. Apply the specific sole-trader election and qualified centralisation route above: https://entreprendre.service-public.fr/vosdroits/F23266 and https://entreprendre.service-public.fr/vosdroits/F21852
-3. Post from documents, not the bank alone. Every entry carries its origin, content, account and document reference, and every invoice the particulars above: https://entreprendre.service-public.fr/vosdroits/F31808
-4. Test an asset against the low-value tolerance before capitalising, then set the method and rate: https://bofip.impots.gouv.fr/bofip/2109-PGP.html and https://bofip.impots.gouv.fr/bofip/4520-PGP.html
-5. Reconcile the VAT accounts to the return filed for the period: https://entreprendre.service-public.fr/vosdroits/F23566
-6. Inventory at least every twelve months, post the closing adjustments, then hand the trial balance to `france-financial-statements`, check the accounting file exports in the required format, and archive for the retention periods above: https://bofip.impots.gouv.fr/bofip/9028-PGP.html and https://entreprendre.service-public.fr/vosdroits/F10029
+Both cases recompute in CI. Figures come from the rows above: the declining-balance coefficient from BOFiP BOI-BIC-AMT-20-20-20 (https://bofip.impots.gouv.fr/bofip/4699-PGP.html) and the simplified-regime instalment shares from Service Public F23566.
 
-## Ask the client first
+### Case 1: declining-balance depreciation in the year of purchase
 
-- What are the legal form, accounting duty and income-tax regime for this income year? Obtain both prior-year turnover figures; do not decide books from VAT liability alone.
-- How much VAT did it owe last year on the actual statutory measure? Test the separate VAT thresholds, options and foreign purchases; a monthly VAT return does not itself change the income-tax accounting regime.
-- Is this a qualifying sole trader, and has the annual super-simplified election been made on the applicable results return? Establish any separate company-law simplification rather than assuming that election applies to every entity.
-- Is it under the VAT franchise, and does every invoice carry the exemption wording?
-- Can its software export the applicable FEC with every required field? Check the export before an audit, reconcile it to the books and retain the format/numbering description.
-- Does it sell goods or accommodation, or services? Almost every limit here splits on that line, and a mixed business needs both tested.
+A machine with a normal useful life of five years is bought on 10 April 2026 for EUR 12,000 excluding VAT; the financial year ends on 31 December 2026. The straight-line rate is 20%; five years carries the 1.75 coefficient, so the declining rate is 35%. The first-year charge runs from the first day of the month of acquisition (1 April), so nine months.
+
+```oa-check
+name: Declining-balance depreciation, five-year asset bought on 10 April 2026
+inputs:
+  cost: 12000
+  useful_life_years: 5
+  coefficient: 1.75
+  months_first_year: 9
+steps:
+  - straight_line_rate: 1 / useful_life_years
+  - declining_rate: straight_line_rate * coefficient
+  - first_year_charge: cost * declining_rate * months_first_year / 12
+  - net_book_value: cost - first_year_charge
+expected:
+  straight_line_rate: 0.2
+  declining_rate: 0.35
+  first_year_charge: 3150
+  net_book_value: 8850
+```
+
+Book 3,150 to 6811 (dotations aux amortissements) against 2815 (amortissement du matériel). Straight line from 10 April would give a different figure: declining balance always counts whole months from the first of the month.
+
+### Case 2: simplified-regime VAT instalments for 2026
+
+A business on the régime réel simplifié owed EUR 10,000 of VAT for 2025, before deducting VAT on fixed assets. The 2026 instalments are 55% in July and 40% in December of that base. The balance is settled with the annual CA12 return in May 2027. Had the base been below EUR 1,000, no instalment would be due at all.
+
+```oa-check
+name: Simplified VAT regime instalments for 2026 on 2025 VAT of EUR 10,000
+inputs:
+  prior_year_vat_base: 10000
+  july_share: 0.55
+  december_share: 0.40
+steps:
+  - july_instalment: prior_year_vat_base * july_share
+  - december_instalment: prior_year_vat_base * december_share
+  - paid_before_return: july_instalment + december_instalment
+expected:
+  july_instalment: 5500
+  december_instalment: 4000
+  paid_before_return: 9500
+```
 
 ## When to refuse or refer
 
@@ -587,35 +643,37 @@ The close, the size classes, approval of the accounts, filing at the greffe, con
 
 ## Sources
 
-- https://entreprendre.service-public.fr/vosdroits/F21852
-- https://entreprendre.service-public.fr/vosdroits/F23266
-- https://entreprendre.service-public.fr/vosdroits/F23267
-- https://entreprendre.service-public.fr/vosdroits/F21746
-- https://entreprendre.service-public.fr/vosdroits/F23575
-- https://entreprendre.service-public.fr/vosdroits/F23566
-- https://entreprendre.service-public.fr/vosdroits/F31808
-- https://entreprendre.service-public.fr/vosdroits/F10029
-- https://bofip.impots.gouv.fr/bofip/3412-PGP.html
-- https://bofip.impots.gouv.fr/bofip/2109-PGP.html
-- https://bofip.impots.gouv.fr/bofip/4520-PGP.html
-- https://bofip.impots.gouv.fr/bofip/4682-PGP.html
-- https://bofip.impots.gouv.fr/bofip/4684-PGP.html
-- https://bofip.impots.gouv.fr/bofip/4699-PGP.html
-- https://bofip.impots.gouv.fr/bofip/9026-PGP.html
-- https://bofip.impots.gouv.fr/bofip/9028-PGP.html
-- https://www.impots.gouv.fr/fichiers-standards-des-ecritures-comptables
-- https://bofip.impots.gouv.fr/bofip/13223-PGP.html
-- https://bofip.impots.gouv.fr/bofip/839-PGP.html
-- https://www.anc.gouv.fr/files/anc/files/1_Normes_fran%C3%A7aises/Plans%20comptables/2026/PCG--1er-janvier-2026.pdf
 
-- https://www.anc.gouv.fr/files/anc/files/1_Normes_fran%C3%A7aises/recueil/2026/Recueil-PCG-Janvier-2026.pdf
-- https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000027804775
-- https://bofip.impots.gouv.fr/bofip/4698-PGP.html
-- https://bofip.impots.gouv.fr/bofip/4750-PGP.html
-- https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006162005
-- Selected repair reads, 31 October 2026: the actual L123-26 reproduction in the January2026 ANC compendium supplies the payment-date/annual-recurrence/purchases-exclusion rule, separately from the agency's regular-entry/quarterly-centralisation wording. PCG212-9 supplies the restored formation-cost accounting choice. The actual earlier11eb01a4 body is included in the complete old-topic map, with its unsupported historical assertions distinguished from current methods.
+| Source and what was read | Official URL | Read on |
+|---|---|---|
+| Obligations comptables du commerçant (entrepreneur individuel): read for Petite entreprise, balance sheet total not more than; Petite entreprise, net turnover excluding VAT not more than; Moyenne entreprise, balance sheet total not more than; Moyenne entreprise, net turnover excluding VAT not more than; Ordinary criminal sanction for knowingly omitting or making inaccurate/fictitiou | https://entreprendre.service-public.fr/vosdroits/F21852 | 2026-11-14 |
+| Obligations comptables du micro-entrepreneur: read for Penalty for each missing turnover declaration; Yearly turnover which, once passed in two consecutive years, forces an account d; Unit amount below which retail sales and services to individuals may be entered; Maximum ordinary sanction stated for forging or using a forged register | https://entreprendre.service-public.fr/vosdroits/F23266 | 2026-11-14 |
+| Régime fiscal de la micro-entreprise: read for Flat-rate allowance, goods and accommodation other than furnished tourist lettin; Micro limit, goods and accommodation other than furnished tourist lettings, inco; Micro limit, services, income of 2025 declared in 2026; Micro limit, services, income received in 2026; Flat-rate allowance, services taxed as industrial and commercial profits; Flat-rate allowance, non-commercial profits | https://entreprendre.service-public.fr/vosdroits/F23267 | 2026-11-14 |
+| Franchise en base de TVA: read for Goods and accommodation; Services; Lawyers' regulated work, authors' and performers' works and copyright; Their other activities | https://entreprendre.service-public.fr/vosdroits/F21746 | 2026-11-14 |
+| Impôt sur les sociétés (IS) : taux, déclaration, paiement: read for Plant (matériel) | https://entreprendre.service-public.fr/vosdroits/F23575 | 2026-11-14 |
+| Déclarer et payer la TVA: read for Simplified VAT regime, ordinary turnover ceiling for selling, catering and accom; Simplified VAT regime, ordinary turnover ceiling for other activities; Prior-year VAT: statutory monthly-return trigger is strictly above; Turnover above which the simplified regime is undone back to 1 January of that y; Calendar-year July instalment on previous-year VAT before deduction of VAT on fi; Calendar-year December instalment on the same statutory base; and 1 more rows | https://entreprendre.service-public.fr/vosdroits/F23566 | 2026-11-14 |
+| Mentions obligatoires sur une facture: read for Total excluding VAT at or below which the limited CGI annexeII242 noniesA-II sim; Fixed recovery indemnity to be mentioned on an invoice between businesses | https://entreprendre.service-public.fr/vosdroits/F31808 | 2026-11-14 |
+| Quels sont les délais de conservation des documents pour les entreprises ?: read for EUR 2,013, EUR 1,000, EUR 110, EUR 120, EUR 213 and the conditions next to them | https://entreprendre.service-public.fr/vosdroits/F10029 | 2026-11-14 |
+| BIC - Régimes d'imposition et obligations déclaratives - Obligations fiscales et comptable: read for EUR 2,012, EUR 2,014, EUR 110, EUR 120, EUR 150 and the conditions next to them | https://bofip.impots.gouv.fr/bofip/3412-PGP.html | 2026-11-14 |
+| BIC - Frais et charges - Distinction entre éléments d'actif et charges - Dérogation aux pr: read for Unit price excluding tax up to which materials and tooling may be deducted at on | https://bofip.impots.gouv.fr/bofip/2109-PGP.html | 2026-11-14 |
+| BIC - Amortissements - Règles de déduction - Taux d'amortissement: read for Workers' houses; Fittings and installations | https://bofip.impots.gouv.fr/bofip/4520-PGP.html | 2026-11-14 |
+| BIC - Amortissements – Régime de l'amortissement dégressif: read for EUR 2,012 and the conditions next to them | https://bofip.impots.gouv.fr/bofip/4682-PGP.html | 2026-11-14 |
+| BIC- Amortissements - Régime de l'amortissement dégressif - Biens concernés: read for EUR 2,012 and the conditions next to them | https://bofip.impots.gouv.fr/bofip/4684-PGP.html | 2026-11-14 |
+| BIC – Amortissements – Régime de l'amortissement dégressif – Modalités de calcul des amort: read for Tooling (outillage); Office equipment | https://bofip.impots.gouv.fr/bofip/4699-PGP.html | 2026-11-14 |
+| CF - Procédures de rectification et d'imposition d'office - Contrôle des comptabilités inf: read for Fine for not producing the accounting file in the required form; Increase of the duties charged, applied instead where an adjustment is made and | https://bofip.impots.gouv.fr/bofip/9026-PGP.html | 2026-11-14 |
+| CF - Procédures de rectification et d'imposition d'office - Contrôle des comptabilités inf: read for EUR 10,000, EUR 3,150, EUR 2,012, EUR 2,013, EUR 2,014 and the conditions next to them | https://bofip.impots.gouv.fr/bofip/9028-PGP.html | 2026-11-14 |
+| Fichiers standards des écritures comptables: read for the procedure and conditions this skill cites from it | https://www.impots.gouv.fr/fichiers-standards-des-ecritures-comptables | 2026-11-14 |
+| CVAE - Base d’imposition - Régime de droit commun - Calcul de la valeur ajoutée et plafonn: read for EUR 152,500, EUR 500,000, EUR 1,000, EUR 7,582, EUR 2,014 and the conditions next to them | https://bofip.impots.gouv.fr/bofip/13223-PGP.html | 2026-11-14 |
+| CVAE - Liquidation - Règles générales de détermination du taux d’imposition et du dégrèvem: read for Turnover above which the business enters the stated CVAE assessment/declaration | https://bofip.impots.gouv.fr/bofip/839-PGP.html | 2026-11-14 |
+| AUTORITÉ: read for 10%, 50%, 1%, EUR 44,571, EUR 44,566 and the conditions next to them | https://www.anc.gouv.fr/files/anc/files/1_Normes_fran%C3%A7aises/Plans%20comptables/2026/PCG--1er-janvier-2026.pdf | 2026-11-14 |
+| RECUEIL DES NORMES COMPTABLES FRANÇAISES: read for Ordinary dwelling houses; Commercial buildings; Motor vehicles | https://www.anc.gouv.fr/files/anc/files/1_Normes_fran%C3%A7aises/recueil/2026/Recueil-PCG-Janvier-2026.pdf | 2026-11-14 |
+| LPF art. A. 47 A-1 (the FEC format): read for the file format, the fields of each entry and the delivery media | https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000027804775 | 2026-11-14 |
+| BIC – Régime de l'amortissement dégressif - Biens concernés – Biens éligibles en raison de: read for 50%, EUR 2,012, EUR 1,988, EUR 110, EUR 120 and the conditions next to them | https://bofip.impots.gouv.fr/bofip/4698-PGP.html | 2026-11-14 |
+| BIC – Amortissements - Régime de l'amortissement dégressif - Biens exclus: read for EUR 2,012 and the conditions next to them | https://bofip.impots.gouv.fr/bofip/4750-PGP.html | 2026-11-14 |
 
-Not yet confirmed here: the sole-trader quarterly-centralisation bridge to the ordinary monthly rule; startup-franchise and noncalendar simplified-VAT reconciliation; current bank-specific export layouts; and the historical class0/80/88/89 scheme as a current mandatory plan. The named companions retain their own precise specialist limits. These boundaries are not professional attestation.
+- Selected repair reads, 31 October 2026: the actual L123-26 reproduction in the January 2026 ANC compendium supplies the payment-date/annual-recurrence/purchases-exclusion rule, separately from the agency's regular-entry/quarterly-centralisation wording. PCG212-9 supplies the restored formation-cost accounting choice. The actual earlier11eb01a4 body is included in the complete old-topic map, with its unsupported historical assertions distinguished from current methods.
+
+Not yet confirmed: the Legifrance code section LEGISCTA000006162005, listed in the earlier version without a read date, could not be opened today and is no longer cited; and, from the earlier version, the sole-trader quarterly-centralisation bridge to the ordinary monthly rule; startup-franchise and noncalendar simplified-VAT reconciliation; current bank-specific export layouts; and the historical class0/80/88/89 scheme as a current mandatory plan. The named companions retain their own precise specialist limits. These boundaries are not professional attestation.
 
 ## Disclaimer
 
