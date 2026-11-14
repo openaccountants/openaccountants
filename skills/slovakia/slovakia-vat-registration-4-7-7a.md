@@ -227,7 +227,7 @@ expected:
 | Source | URL | Read on |
 |---|---|---|
 | VAT Act 222/2004, full 2026 version: §§3,4,5a,7,7a,11,15,19,22,27,49,51,55,70,72–74,76–78a,80–82,85kn | https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html | 2026-10-27 |
-| Tax Procedure Code 563/2009, full version September to December 2026: §§27,154–156 | https://static.slov-lex.sk/static/SK/ZZ/2009/563/20260901.html | 2026-10-27 |
+| Tax Procedure Code 563/2009, full version September to December 2026: §§ 27, 154–156 | https://static.slov-lex.sk/static/SK/ZZ/2009/563/20260901.html | 2026-10-27 |
 | Tax Procedure Code, full version January to August 2026: same relevant fine/first-breach and timing rules checked | https://static.slov-lex.sk/static/SK/ZZ/2009/563/20260101.html | 2026-10-27 |
 | FS SR registration method 2/DPH/2025/MP, 22 September 2025: economic activity/preparatory acts, turnover, status, voluntary timing, credit-note and appeal treatment | https://www.financnasprava.sk/_img/pfsedit/Dokumenty_PFS/Zverejnovanie_dok/Dane/Metodicke_pokyny/Nepriame_dane/2025/2025.09.22_002_DPH_2025_MP.pdf | 2026-10-27 |
 | Historical VAT Act, 2024 version: §4(1), §7(3), §7a(3), §27(1); not used as current law | https://static.slov-lex.sk/static/SK/ZZ/2004/222/20240101.html | 2026-10-27 |
