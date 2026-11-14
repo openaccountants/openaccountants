@@ -96,9 +96,9 @@ Not covered: non-residential and mixed-use property beyond the rate tables, the 
 
 | What | Value | Source |
 | --- | --- | --- |
-| Main residential rates (since 10 October 2022) | 0% up to £225,000; 6% £225,000 up to £400,000; 7.5% £400,000 up to £750,000; 10% £750,000 up to £1,500,000; 12% over £1,500,000 | https://www.gov.wales/land-transaction-tax-rates-and-bands |
-| Higher residential rates (since 11 December 2024) | 5% up to £180,000; 8.5% £180,000 up to £250,000; 10% £250,000 up to £400,000; 12.5% £400,000 up to £750,000; 15% £750,000 up to £1,500,000; 17% over £1,500,000 | https://www.gov.wales/land-transaction-tax-rates-and-bands ; WSI 2024/1311: https://www.legislation.gov.uk/wsi/2024/1311/contents/made |
-| Non-residential rates (since 22 December 2020) | 0% up to £225,000; 1% £225,000 up to £250,000; 5% £250,000 up to £1,000,000; 6% over £1,000,000 | https://www.gov.wales/land-transaction-tax-rates-and-bands |
+| Main residential rates (since 10 October 2022) | 0% up to £225,000; 6% over £225,000 up to £400,000; 7.5% over £400,000 up to £750,000; 10% over £750,000 up to £1,500,000; 12% over £1,500,000 | https://www.gov.wales/land-transaction-tax-rates-and-bands |
+| Higher residential rates (since 11 December 2024) | 5% up to £180,000; 8.5% over £180,000 up to £250,000; 10% over £250,000 up to £400,000; 12.5% over £400,000 up to £750,000; 15% over £750,000 up to £1,500,000; 17% over £1,500,000 | https://www.gov.wales/land-transaction-tax-rates-and-bands ; WSI 2024/1311: https://www.legislation.gov.uk/wsi/2024/1311/contents/made |
+| Non-residential rates (since 22 December 2020) | 0% up to £225,000; 1% over £225,000 up to £250,000; 5% over £250,000 up to £1,000,000; 6% over £1,000,000 | https://www.gov.wales/land-transaction-tax-rates-and-bands |
 | Return | Within 30 days beginning with the day after the effective date | Land Transaction Tax and Anti-avoidance of Devolved Taxes (Wales) Act 2017 s.44: https://www.legislation.gov.uk/anaw/2017/1/section/44 |
 
 #### Letting income: 2026/27, with the 2027/28 change (England and Northern Ireland rates)
