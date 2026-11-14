@@ -1,10 +1,11 @@
 ---
 name: ma-formation
 description: Use this skill whenever asked about registering or forming a business in Morocco for tax year 2026, as a self-employed person or a company. Choosing a legal status, the identifiers every business needs (ICE, IF, RC, taxe professionnelle), the tax regime picked at registration, the declaration of existence, registration duties on capital, and VAT status at the start. Trigger on phrases like "register auto-entrepreneur Morocco", "créer auto-entrepreneur", "comment s'inscrire auto-entrepreneur Maroc", "ICE Maroc", "obtenir un IF", "Registre de Commerce Maroc", "start business Morocco", "créer une SARL Maroc", "patente / taxe professionnelle", "كيفاش نسجل مقاول ذاتي", "تسجيل شركة المغرب". Reply in the user's language (English, French, or Moroccan Arabic / Darija) and keep the native terms. Cross-reference ma-auto-entrepreneur, ma-cpu, morocco-professional-income-tax, ma-social-contributions and morocco-vat for the tax detail.
-version: 1.1
+version: 1.2
 jurisdiction: MA
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
+type: filing-howto
 depends_on:
   - income-tax-workflow-base
 category: international
@@ -63,14 +64,6 @@ Every row: tax year 2026, read 2026-11-01. Rows marked unverified carry a figure
 | Minimum tax relief, company | 36 months from start of operations, ending at most 60 months after constitution | Not concession companies | [CGI Art. 144-I-C-1°](https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1) |
 | Minimum tax relief, IR taxpayer | First 3 financial years from start | Not on resuming the same activity after cession | [CGI Art. 144-I-C-2°](https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1) |
 | Cash payment, deduction limit | Charges paid other than by the listed traceable means are deductible only up to MAD 5,000 a day and MAD 50,000 a month per supplier | | [CGI Art. 11-II](https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1) |
-| ICE | 15 digits (9 entity, 4 establishment, 2 control) | unverified: ice.gov.ma refused the read | unverified |
-| Taxe professionnelle exemption | 5 years from start | unverified: Law 47-06 not opened | unverified |
-| Taxe professionnelle rates | 10% to 30% of rental value | unverified: Law 47-06 not opened | unverified |
-| SARL minimum capital | None since Law 24-10 | unverified: law not opened | unverified |
-| SARL capital blocking | Above MAD 100,000, at least a quarter blocked | unverified: law not opened | unverified |
-| Name certificate fee | About MAD 230 | unverified: ompic.ma did not open | unverified |
-| SARL cost and time | About MAD 5,000 to 15,000; 10 to 15 working days | unverified: varies by region and adviser | unverified |
-| RNAE fee and time | Free; 24 to 72 hours | unverified: ae.gov.ma did not open | unverified |
 
 ## The base
 
@@ -187,4 +180,4 @@ A trader expecting MAD 1,200,000 is over the auto-entrepreneur ceiling but withi
 
 Pages tried and not opened on 2026-11-01: ae.gov.ma, rn.ae.gov.ma, ompic.ma, directentreprise.ma, cnss.ma (no connection, also in a browser tab); ice.gov.ma (refused).
 
-Not yet confirmed: Law 114-13 text and RNAE documents, fee and timing; automatic CNSS affiliation; Law 47-06 and 07-20 on TP and TSC, including the AE position; Laws 5-96 and 24-10 on SARL capital and blocking; ICE structure and who attributes it (OMPIC for companies, DGI for individuals, recovery at ice.gov.ma); two RC forms (analytique, central) under Law 15-95; name certificate fee; SARL cost, time and step order; which service trades need no RC.
+Not yet confirmed: Law 114-13 text and RNAE documents, fee and timing; automatic CNSS affiliation; Law 47-06 and 07-20 on TP and TSC, including the AE position; Laws 5-96 and 24-10 on SARL capital and blocking; ICE structure and who attributes it (OMPIC for companies, DGI for individuals, recovery at ice.gov.ma); two RC forms (analytique, central) under Law 15-95; name certificate fee; SARL cost, time and step order; which service trades need no RC; rows moved out of the rates table on 2026-11-14, figures from the earlier version: ICE of 15 digits (9 entity, 4 establishment, 2 control); taxe professionnelle exemption 5 years from start and rates 10% to 30% of rental value; no SARL minimum capital since Law 24-10, with at least a quarter blocked above MAD 100,000; name certificate fee about MAD 230; SARL cost about MAD 5,000 to 15,000 and 10 to 15 working days; RNAE free, 24 to 72 hours.

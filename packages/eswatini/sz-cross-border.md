@@ -1,17 +1,18 @@
 ---
 name: sz-cross-border
 description: "Eswatini cross-border income tax for the year of assessment 1 July 2025 to 30 June 2026 (tax year 2026) under the Income Tax Order 1975 as amended by the Income Tax (Amendment) Act 2023 (in force from 1 July 2024). Covers the source basis and the deemed-source rules, ordinary residence, the permanent establishment definition (fixed place, 30-day services test, dependent agents), non-resident shareholders tax at 15% (the 12.5% rate for Botswana, Lesotho, Namibia and South Africa companies is repealed), non-residents tax on interest at 15%, 15% final withholding on royalties and management charges, 15% on non-resident entertainers, contractors and service providers, branch profits tax at 15% (10% cap under the South Africa treaty protocol), the 10% minimum for non-resident individuals, exit taxation, the foreign tax credit on foreign interest, treaties, deadlines and penalties. Trigger on: Eswatini non-resident tax, Swaziland withholding tax non-resident, branch profits tax Eswatini, permanent establishment Eswatini, non-resident shareholders tax, Eswatini double tax treaty. Out of scope: treaty rate tables, VAT on imported services."
-version: 0.1
+version: 0.2
 jurisdiction: SZ
 category: cross-border
 tax_year: 2026
 tax_year_notes: "Year of assessment 1 July 2025 to 30 June 2026"
-last_updated: 2026-11-02
+last_updated: 2026-11-14
 tier: 2
 domain: cross-border
+type: situation-rules
 ---
 
-# Eswatini cross-border: source, permanent establishment, non-resident taxes, branch profits tax and treaties (year to 30 June 2026) v0.1
+# Eswatini cross-border: source, permanent establishment, non-resident taxes, branch profits tax and treaties (year to 30 June 2026) v0.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
