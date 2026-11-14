@@ -56,7 +56,7 @@ This file gives headline figures only. For a computation, load the owning skill.
 | Very small company CIT exemption | Revenue of VND 1 billion or less | Decree 141/2026 Art. 2 | same |
 | Business licence fee | None from 1 January 2026 | Resolution 198/2025/QH15 Art. 10(7) | https://xaydungchinhsach.chinhphu.vn/tu-thang-1-2026-nguoi-nop-thue-khong-phai-nop-le-phi-mon-bai-119260126110926562.htm |
 | Social insurance salary cap | VND 46.8 million a month to 30 June 2026; 50.6 million from 1 July 2026 | 20 times the reference level | https://xaydungchinhsach.chinhphu.vn/tu-1-7-nhieu-khoan-tro-cap-bhxh-thay-doi-the-nao-khi-luong-co-so-tang-119260523163024829.htm |
-| Late payment interest | 0.03% per day | Law 108/2025/QH15 Art. 16(2)(a) | https://congbao.chinhphu.vn/van-ban/luat-so-108-2025-qh15-468670.htm |
+| Late payment interest | 0.03% per day | Law 108/2025/QH15 Art. 16(2)(a) | https://congbaocdn.chinhphu.vn/180507251028987904/2026/1/24/108signed-17692413914281416017170.pdf |
 
 VAT rates and the temporary 2% reduction are owned by [vietnam-vat](vietnam-vat.md) and are not restated here.
 
@@ -142,7 +142,7 @@ expected:
 | Read for Decree 141/2026/ND-CP Art. 1 and 2 (VND 1 billion thresholds) | https://congbaocdn.chinhphu.vn/180507251028987904/2026/5/14/469455-1778231931_v1_1778720623_signed.pdf | 2026-11-14 |
 | Read for the end of the business licence fee from 1 January 2026 | https://xaydungchinhsach.chinhphu.vn/tu-thang-1-2026-nguoi-nop-thue-khong-phai-nop-le-phi-mon-bai-119260126110926562.htm | 2026-11-14 |
 | Read for the social insurance cap of VND 50.6 million from 1 July 2026 | https://xaydungchinhsach.chinhphu.vn/tu-1-7-nhieu-khoan-tro-cap-bhxh-thay-doi-the-nao-khi-luong-co-so-tang-119260523163024829.htm | 2026-11-14 |
-| Read for Law 108/2025/QH15 Art. 16(2)(a) late payment interest and its 1 July 2026 effective date | https://congbao.chinhphu.vn/van-ban/luat-so-108-2025-qh15-468670.htm | 2026-11-14 |
+| Read for Law 108/2025/QH15 Art. 16(2)(a) late payment interest and its 1 July 2026 effective date | https://congbaocdn.chinhphu.vn/180507251028987904/2026/1/24/108signed-17692413914281416017170.pdf | 2026-11-14 |
 | Read for the Decree 252/2026 filing deadlines | https://xaydungchinhsach.chinhphu.vn/quy-dinh-thoi-han-nop-ho-so-khai-thue-119260703120801722.htm | 2026-11-14 |
 
 Not yet confirmed: administrative fines for late filing and under-declaration in 2026; foreign contractor tax percentages; the VAT figures (owned by vietnam-vat, not re-read here).

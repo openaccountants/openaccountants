@@ -142,6 +142,6 @@ expected:
 | Read for the Employment Law unemployment insurance rates (up to 1% each) | https://xaydungchinhsach.chinhphu.vn/quy-dinh-muc-dong-bao-hiem-that-nghiep-119250711175950882.htm | 2026-11-14 |
 | Read for Decree 293/2025 regional minimum wages from 1 January 2026 | https://xaydungchinhsach.chinhphu.vn/nghi-dinh-so-293-2025-nd-cp-quy-dinh-muc-luong-toi-thieu-doi-voi-nguoi-lao-dong-lam-viec-theo-hop-dong-lao-dong-119251110172808433.htm | 2026-11-14 |
 | Read for the Decree 252/2026 withholding return deadlines | https://xaydungchinhsach.chinhphu.vn/quy-dinh-thoi-han-nop-ho-so-khai-thue-119260703120801722.htm | 2026-11-14 |
-| Read for Law 108/2025/QH15 Art. 16(2)(a) late payment interest | https://congbao.chinhphu.vn/van-ban/luat-so-108-2025-qh15-468670.htm | 2026-11-14 |
+| Read for Law 108/2025/QH15 Art. 16(2)(a) late payment interest | https://congbaocdn.chinhphu.vn/180507251028987904/2026/1/24/108signed-17692413914281416017170.pdf | 2026-11-14 |
 
 Not yet confirmed: occupational accident and disease insurance rate (old file 0.5%; Law on Occupational Safety and Health and its decree not read); unemployment insurance salary cap (old file 20 times the Region I minimum wage, 106.2 million) and the Decree 374/2025 rate as applied; whether foreign employees are within unemployment insurance in 2026; social insurance late payment interest and fines; the exceptions for foreign employees in Law 41/2024 Art. 2(2) and its decree (baohiemxahoi.gov.vn did not open from a script on 14 November 2026).

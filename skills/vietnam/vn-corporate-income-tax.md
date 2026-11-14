@@ -54,7 +54,7 @@ The tax period is the calendar year or a financial year the company chooses and 
 | Tax holiday with the 10% rate | Up to 4 years exempt, then 50% reduction for up to 9 years | Art. 14(1)(a) | same |
 | Tax holiday with the 17% rate | Up to 2 years exempt, then 50% reduction for up to 4 years | Art. 14(2) | same |
 | Loss carry-forward | Up to 5 consecutive years from the year after the loss | Art. 16(1) | same |
-| Late payment interest | 0.03% per day | Law 108/2025/QH15 Art. 16(2)(a) | https://congbao.chinhphu.vn/van-ban/luat-so-108-2025-qh15-468670.htm |
+| Late payment interest | 0.03% per day | Law 108/2025/QH15 Art. 16(2)(a) | https://congbaocdn.chinhphu.vn/180507251028987904/2026/1/24/108signed-17692413914281416017170.pdf |
 
 The old file showed the 15% and 17% bands without saying they test the **preceding** period's total revenue; that test is in Art. 10(3) and decides the rate.
 
@@ -149,7 +149,7 @@ expected:
 | Read for Law 09/2026/QH16 Art. 3 (new CIT exemption delegated to the Government) and Art. 5 (from 1 January 2026) | https://congbaocdn.chinhphu.vn/180507251028987904/2026/5/27/469536-1779329464_v1_1779843299_signed.pdf | 2026-11-14 |
 | Read for Decree 141/2026/ND-CP Art. 2 (1 billion exemption and its conditions) and Art. 4 (transition for Q1 2026 and 2025 periods) | https://congbaocdn.chinhphu.vn/180507251028987904/2026/5/14/469455-1778231931_v1_1778720623_signed.pdf | 2026-11-14 |
 | Read for Resolution 198/2025/QH15 Art. 10(4) three-year SME exemption and Art. 10(7) end of the licence fee, as published on the Government portal | https://xaydungchinhsach.chinhphu.vn/chinh-sach-dac-biet-phat-trien-kinh-te-tu-nhan-ho-tro-tai-chinh-tin-dung-thue-phi-le-phi-uu-dai-lua-chon-nha-thau-119250518063622747.htm | 2026-11-14 |
-| Read for Law 108/2025/QH15 Art. 16(2)(a) late payment interest | https://congbao.chinhphu.vn/van-ban/luat-so-108-2025-qh15-468670.htm | 2026-11-14 |
+| Read for Law 108/2025/QH15 Art. 16(2)(a) late payment interest | https://congbaocdn.chinhphu.vn/180507251028987904/2026/1/24/108signed-17692413914281416017170.pdf | 2026-11-14 |
 | Read for the Decree 252/2026 deadlines for quarterly returns and annual finalisation, as published on the Government portal | https://xaydungchinhsach.chinhphu.vn/quy-dinh-thoi-han-nop-ho-so-khai-thue-119260703120801722.htm | 2026-11-14 |
 
 Not yet confirmed: foreign contractor tax CIT percentages (the old file showed 5% on interest, 10% on royalties and 5% on services; the implementing decree and circular were not read); the 10-day foreign contractor remittance deadline; the 80% provisional payment rule; the revenue-method percentages for small companies under Art. 11(2)(b); late filing and under-declaration fines; global minimum tax rules.

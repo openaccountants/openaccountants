@@ -118,6 +118,6 @@ expected:
 | Read for the end of the business licence fee from 1 January 2026 and Tax Department letter 645/CT-CS | https://xaydungchinhsach.chinhphu.vn/tu-thang-1-2026-nguoi-nop-thue-khong-phai-nop-le-phi-mon-bai-119260126110926562.htm | 2026-11-14 |
 | Read for Resolution 198/2025/QH15 Art. 10(4) three-year SME exemption and Art. 10(7) end of the licence fee | https://xaydungchinhsach.chinhphu.vn/chinh-sach-dac-biet-phat-trien-kinh-te-tu-nhan-ho-tro-tai-chinh-tin-dung-thue-phi-le-phi-uu-dai-lua-chon-nha-thau-119250518063622747.htm | 2026-11-14 |
 | Read for Decree 141/2026/ND-CP Art. 2 (no provisional CIT for new companies expecting VND 1 billion or less) | https://congbaocdn.chinhphu.vn/180507251028987904/2026/5/14/469455-1778231931_v1_1778720623_signed.pdf | 2026-11-14 |
-| Read for Law 108/2025/QH15 Art. 16(2)(a) late payment interest | https://congbao.chinhphu.vn/van-ban/luat-so-108-2025-qh15-468670.htm | 2026-11-14 |
+| Read for Law 108/2025/QH15 Art. 16(2)(a) late payment interest | https://congbaocdn.chinhphu.vn/180507251028987904/2026/1/24/108signed-17692413914281416017170.pdf | 2026-11-14 |
 
 Not yet confirmed: the Investment Law steps and timing for foreign investors (the old file said about 1 to 3 months for a standard foreign-invested LLC); statutory audit of foreign-invested enterprises and the 90-day financial statement deadline (Law on Independent Audit and Accounting Law not read); minimum capital in conditional sectors; fines for late registration of changes; the direct investment capital account rule.
