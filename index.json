@@ -1,17 +1,13 @@
 {
- "generated_at": "2026-11-14T18:37:44+00:00",
+ "generated_at": "2026-11-14T19:11:11+00:00",
  "counts": {
-  "guides": 2357,
-  "loadable_skill_names": 2298,
-  "jurisdictions": 257,
+  "guides": 2360,
+  "loadable_skill_names": 2301,
+  "jurisdictions": 264,
   "accountant_reviewed": 126,
-  "held_skill_names": 55
+  "held_skill_names": 52
  },
  "publication_holds": [
-  {
-   "name": "ab-corporate-tax",
-   "reason": "status: needs_sources"
-  },
   {
    "name": "bd-corporate-income-tax",
    "reason": "status: needs_sources"
@@ -137,10 +133,6 @@
    "reason": "status: needs_sources"
   },
   {
-   "name": "nt-payroll-tax",
-   "reason": "status: needs_sources"
-  },
-  {
    "name": "pg-corporate-income-tax",
    "reason": "status: needs_sources"
   },
@@ -166,10 +158,6 @@
   },
   {
    "name": "property-transfer-tax-matrix",
-   "reason": "status: needs_sources"
-  },
-  {
-   "name": "qc-corporate-tax-co17",
    "reason": "status: needs_sources"
   },
   {
@@ -2009,7 +1997,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2025",
-   "last_updated": "2026-11-12"
+   "last_updated": "2026-11-15"
   },
   {
    "slug": "australia-payroll",
@@ -4651,6 +4639,19 @@
    "last_updated": "2026-07-13"
   },
   {
+   "slug": "ab-corporate-tax",
+   "mcp_slug": "ab-corporate-tax",
+   "path": "skills/canada/alberta/ab-corporate-tax.md",
+   "name": "ab-corporate-tax",
+   "jurisdiction": "CA",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
+  },
+  {
    "slug": "ab-individual-return",
    "mcp_slug": "ab-individual-return",
    "path": "skills/canada/alberta/ab-individual-return.md",
@@ -4669,12 +4670,12 @@
    "path": "skills/canada/alberta/ca-ab-deductions-for-self-employed-independent-contractor.md",
    "name": "ca-ab-deductions-for-self-employed-independent-contractor",
    "jurisdiction": "CA-AB",
-   "category": null,
+   "category": "international",
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-09-03"
+   "last_updated": "2026-11-14"
   },
   {
    "slug": "ca-ab-departure-tax-t1244-security-election-defer",
@@ -4682,12 +4683,12 @@
    "path": "skills/canada/alberta/ca-ab-departure-tax-t1244-security-election-defer.md",
    "name": "ca-ab-departure-tax-t1244-security-election-defer",
    "jurisdiction": "CA-AB",
-   "category": null,
+   "category": "international",
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-09-03"
+   "last_updated": "2026-11-14"
   },
   {
    "slug": "bc-eht",
@@ -4695,12 +4696,12 @@
    "path": "skills/canada/british-columbia/bc-eht.md",
    "name": "bc-eht",
    "jurisdiction": "CA",
-   "category": null,
+   "category": "payroll",
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
   },
   {
    "slug": "bc-individual-return",
@@ -4720,26 +4721,26 @@
    "mcp_slug": "bc-pst",
    "path": "skills/canada/british-columbia/bc-pst.md",
    "name": "bc-pst",
-   "jurisdiction": "CA",
+   "jurisdiction": "CA-BC",
    "category": null,
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
   },
   {
    "slug": "bc-speculation-vacancy-tax",
    "mcp_slug": "bc-speculation-vacancy-tax",
    "path": "skills/canada/british-columbia/bc-speculation-vacancy-tax.md",
    "name": "bc-speculation-vacancy-tax",
-   "jurisdiction": "CA",
+   "jurisdiction": "CA-BC",
    "category": null,
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
   },
   {
    "slug": "ca-capital-gains",
@@ -4752,7 +4753,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-16"
+   "last_updated": "2026-11-14"
   },
   {
    "slug": "ca-crypto-tax",
@@ -4838,12 +4839,12 @@
    "path": "skills/canada/ca-freelance-intake.md",
    "name": "ca-freelance-intake",
    "jurisdiction": "CA",
-   "category": null,
+   "category": "orchestrator",
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
   },
   {
    "slug": "ca-nonresident-cgt",
@@ -4856,7 +4857,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-16"
+   "last_updated": "2026-11-14"
   },
   {
    "slug": "ca-return-assembly",
@@ -4864,12 +4865,12 @@
    "path": "skills/canada/ca-return-assembly.md",
    "name": "ca-return-assembly",
    "jurisdiction": "CA",
-   "category": null,
+   "category": "orchestrator",
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
   },
   {
    "slug": "ca-tax-residency",
@@ -4882,7 +4883,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-16"
+   "last_updated": "2026-11-14"
   },
   {
    "slug": "canada-bookkeeping",
@@ -4981,38 +4982,38 @@
    "path": "skills/canada/leaving-canada-departure-tax.md",
    "name": "leaving-canada-departure-tax",
    "jurisdiction": "CA",
-   "category": null,
+   "category": "international",
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-15"
+   "last_updated": "2026-11-14"
   },
   {
    "slug": "mb-individual-return",
    "mcp_slug": "mb-individual-return",
    "path": "skills/canada/manitoba/mb-individual-return.md",
    "name": "mb-individual-return",
-   "jurisdiction": "CA",
+   "jurisdiction": "CA-MB",
    "category": "international",
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
   },
   {
    "slug": "mb-rst",
    "mcp_slug": "mb-rst",
    "path": "skills/canada/manitoba/mb-rst.md",
    "name": "mb-rst",
-   "jurisdiction": "CA",
+   "jurisdiction": "CA-MB",
    "category": null,
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
   },
   {
    "slug": "nb-individual-return",
@@ -5024,8 +5025,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
   },
   {
    "slug": "nb-tax-credits",
@@ -5033,12 +5034,12 @@
    "path": "skills/canada/new-brunswick/nb-tax-credits.md",
    "name": "nb-tax-credits",
    "jurisdiction": "CA",
-   "category": null,
+   "category": "international",
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
   },
   {
    "slug": "nl-individual-return",
@@ -5050,8 +5051,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
   },
   {
    "slug": "nl-tax-credits",
@@ -5059,25 +5060,38 @@
    "path": "skills/canada/newfoundland/nl-tax-credits.md",
    "name": "nl-tax-credits",
    "jurisdiction": "CA",
-   "category": null,
+   "category": "international",
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
   },
   {
    "slug": "nt-individual-return",
    "mcp_slug": "nt-individual-return",
    "path": "skills/canada/northwest-territories/nt-individual-return.md",
    "name": "nt-individual-return",
-   "jurisdiction": "CA",
+   "jurisdiction": "CA-NT",
    "category": "international",
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
+  },
+  {
+   "slug": "nt-payroll-tax",
+   "mcp_slug": "nt-payroll-tax",
+   "path": "skills/canada/northwest-territories/nt-payroll-tax.md",
+   "name": "nt-payroll-tax",
+   "jurisdiction": "CA-NT",
+   "category": null,
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
   },
   {
    "slug": "ns-individual-return",
@@ -5089,8 +5103,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
   },
   {
    "slug": "ns-tax-credits",
@@ -5098,38 +5112,38 @@
    "path": "skills/canada/nova-scotia/ns-tax-credits.md",
    "name": "ns-tax-credits",
    "jurisdiction": "CA",
-   "category": null,
+   "category": "international",
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
   },
   {
    "slug": "nu-individual-return",
    "mcp_slug": "nu-individual-return",
    "path": "skills/canada/nunavut/nu-individual-return.md",
    "name": "nu-individual-return",
-   "jurisdiction": "CA",
+   "jurisdiction": "CA-NU",
    "category": "international",
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
   },
   {
    "slug": "nu-tax-credits",
    "mcp_slug": "nu-tax-credits",
    "path": "skills/canada/nunavut/nu-tax-credits.md",
    "name": "nu-tax-credits",
-   "jurisdiction": "CA",
-   "category": null,
+   "jurisdiction": "CA-NU",
+   "category": "international",
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
   },
   {
    "slug": "on-eht",
@@ -5137,12 +5151,12 @@
    "path": "skills/canada/ontario/on-eht.md",
    "name": "on-eht",
    "jurisdiction": "CA",
-   "category": null,
+   "category": "payroll",
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
   },
   {
    "slug": "on-individual-return",
@@ -5163,12 +5177,12 @@
    "path": "skills/canada/ontario/on-tax-credits.md",
    "name": "on-tax-credits",
    "jurisdiction": "CA",
-   "category": null,
+   "category": "international",
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
   },
   {
    "slug": "pe-individual-return",
@@ -5180,8 +5194,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
   },
   {
    "slug": "pe-tax-credits",
@@ -5189,12 +5203,25 @@
    "path": "skills/canada/pei/pe-tax-credits.md",
    "name": "pe-tax-credits",
    "jurisdiction": "CA",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
+  },
+  {
+   "slug": "qc-corporate-tax-co17",
+   "mcp_slug": "qc-corporate-tax-co17",
+   "path": "skills/canada/qc-corporate-tax-co17.md",
+   "name": "qc-corporate-tax-co17",
+   "jurisdiction": "CA-QC",
    "category": null,
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
   },
   {
    "slug": "qc-employer-contributions",
@@ -5202,12 +5229,12 @@
    "path": "skills/canada/quebec/qc-employer-contributions.md",
    "name": "qc-employer-contributions",
    "jurisdiction": "CA",
-   "category": null,
+   "category": "payroll",
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
   },
   {
    "slug": "qc-individual-return",
@@ -5227,13 +5254,13 @@
    "mcp_slug": "qc-qst-return",
    "path": "skills/canada/quebec/qc-qst-return.md",
    "name": "qc-qst-return",
-   "jurisdiction": "CA",
+   "jurisdiction": "CA-QC",
    "category": "international",
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
   },
   {
    "slug": "references",
@@ -5245,8 +5272,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": null,
-   "last_updated": "2026-06-12"
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
   },
   {
    "slug": "sk-individual-return",
@@ -5258,47 +5285,47 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
   },
   {
    "slug": "sk-pst",
    "mcp_slug": "sk-pst",
    "path": "skills/canada/saskatchewan/sk-pst.md",
    "name": "sk-pst",
-   "jurisdiction": "CA",
+   "jurisdiction": "CA-SK",
    "category": null,
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
   },
   {
    "slug": "yt-individual-return",
    "mcp_slug": "yt-individual-return",
    "path": "skills/canada/yukon/yt-individual-return.md",
    "name": "yt-individual-return",
-   "jurisdiction": "CA",
-   "category": "international",
+   "jurisdiction": "CA-YT",
+   "category": null,
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
   },
   {
    "slug": "yt-tax-credits",
    "mcp_slug": "yt-tax-credits",
    "path": "skills/canada/yukon/yt-tax-credits.md",
    "name": "yt-tax-credits",
-   "jurisdiction": "CA",
+   "jurisdiction": "CA-YT",
    "category": null,
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
   },
   {
    "slug": "cv-company-formation",
@@ -19806,7 +19833,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-31"
+   "last_updated": "2026-11-14"
   },
   {
    "slug": "portugal-einvoice",
@@ -19858,7 +19885,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-31"
+   "last_updated": "2026-11-14"
   },
   {
    "slug": "portugal-tax-optimization",
@@ -19910,7 +19937,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-11-01"
+   "last_updated": "2026-11-14"
   },
   {
    "slug": "pt-foreign-source-treaties",
@@ -19923,7 +19950,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-31"
+   "last_updated": "2026-11-14"
   },
   {
    "slug": "pt-income-tax",
@@ -19936,7 +19963,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-31"
+   "last_updated": "2026-11-14"
   },
   {
    "slug": "pt-irs-employees-investment",
@@ -19949,7 +19976,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-11-01"
+   "last_updated": "2026-11-14"
   },
   {
    "slug": "pt-nhr-ifici",
@@ -19962,7 +19989,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-24"
+   "last_updated": "2026-11-14"
   },
   {
    "slug": "pt-return-assembly-filing",
@@ -20001,7 +20028,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-31"
+   "last_updated": "2026-11-14"
   },
   {
    "slug": "pt-transfer-pricing",
@@ -20014,7 +20041,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-11-01"
+   "last_updated": "2026-11-14"
   },
   {
    "slug": "pr-act-60-incentives",
