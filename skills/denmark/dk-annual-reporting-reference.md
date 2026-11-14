@@ -1,6 +1,6 @@
 ---
 name: dk-annual-reporting-reference
-version: 0.1
+version: 0.2
 description: >
   Selected Danish annual-reporting source reference for an ordinary ongoing
   non-listed ApS or A/S under the class-B screen. Covers reporting-class and
@@ -15,20 +15,18 @@ jurisdiction: DK
 tax_year: 2026
 tax_year_notes: Selected reporting law read on 2 November 2026. Classification examples concern the stipulated adjacent financial years; the late-filing example concerns events in calendar year 2026. A 2026 financial year ordinarily has a 2027 receipt deadline, requiring source requalification before actual use. This is not a tax-return method.
 tier: 2
-last_updated: 2026-11-10
-review_status: pending_review
-verified_by: pending
+last_updated: 2026-11-14
 depends_on:
   - workflow-base
   - financial-statements-workflow-base
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+domain: financial-statements
+type: situation-rules
 ---
 
-# Denmark Class-B Annual Reporting Reference, 2026 v0.1
+# Denmark Class-B Annual Reporting Reference, 2026 v0.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
-
-## What this file is
 
 This is a selected source reference for a qualified Danish reviewer. Load both mandatory bases in full and retain their complete intake, source gates, refusals, confirmation sequence, outputs and checks. This reference does **not** fill all 12 mandatory country slots of the financial-statements base. It cannot serve alone as a complete Danish country companion or clear actual classification, preparation, measurement, exemption, submission or payment. The source holds below apply before actual outputs are prepared. Fictional arithmetic is not an engagement result.
 
@@ -36,7 +34,7 @@ The selected job is annual reporting and assurance screening for an already regi
 
 The statutory foundation is Årsregnskabsloven, LBK 402 of 23 March 2026, read with the selected later-amendment chain. Its preamble incorporates LOV 52/2025 § 68 nos 1, 2 and 4–12; no. 3 starts on 6 January 2030 and is not consolidated. The selected current ordinary rules below are not a sustainability-reporting timetable. LOV 729/2026 § 2 and § 20 must also be considered: it was published in Lovtidende A on 2 September 2026, so general commencement under § 20(1) is 3 September 2026, no. 11 starts 5 December 2026 and nos 6, 7 and 19 apply to financial years beginning 1 January 2027 or later. Its special listed, foundation, group, public income-tax and ESAP branches need their own full qualification. [S1](https://www.retsinformation.dk/eli/lta/2026/402) [S2](https://www.retsinformation.dk/eli/lta/2025/52) [S3](https://www.retsinformation.dk/eli/lta/2026/729)
 
-## Scope statement
+## Scope
 
 The starting branch is an ordinary ongoing domestic ApS or A/S with an established reporting history, no group or influential participations, no financial-sector reporting regime, no listing or state-company status, no insolvency or reconstruction, and no special exemption. These are facts to establish, not defaults. First periods, changed years, other forms, funds, foundations, groups, holding companies, listed or regulated entities and uncertain status require the applicable specialist rules before a conclusion. Section 3 identifies the ordinary company forms, subject to its §§ 4–6 exceptions; registration alone does not prove an exemption or every reporting premise. [S1, §§ 1–3 and 7](https://www.retsinformation.dk/eli/lta/2026/402)
 
@@ -55,7 +53,17 @@ Retain all 26 universal intake fields. Obtain the following through reviewer-hel
 
 Missing facts remain **Needs Input**. Do not assume zero financial income, no group, no risk classification, no assurance duty, a valid opt-out or a timely filing. For an actual position, load the complete applicable source chain and professional decision first.
 
-## Filing requirements
+## Ask the client first
+
+- Legal form, reporting class last year, and any group, listing or financial-sector status.
+- Total assets, net turnover (with period length) and average full-time employees for the two latest financial years.
+- Principal CVR industry code at the balance date, for the risk-industry accountant-report screen.
+- Whether the company has an auditor, and any shareholder decision to opt out of audit.
+- Financial year end, approval date, planned submission route (Regnskab Basis or Special) and any demand letter received.
+
+## The method, step by step
+
+### Filing requirements
 
 Ordinary class B and C reports must be submitted without undue delay after approval and received by Erhvervsstyrelsen within 6 months after financial-year end. Class D has 4 months. Section 138 contains exceptions through §§ 140–141; reconstruction, bankruptcy, liquidation and other special situations require their full rules. No general discretionary extension is established. [S1, §§ 8 and 138](https://www.retsinformation.dk/eli/lta/2026/402)
 
@@ -65,7 +73,7 @@ Under current BEK 859/2025, management remains responsible even when an adviser 
 
 Section 138 A separately requires the stated bookkeeping-system/provider and backup disclosures alongside annual filing. Its identifiers are for the reviewer to verify through the actual reporting process. It does not establish that the system satisfies the complete bookkeeping law. Resolve that companion before preparing an affected filing. [S1, § 138 A](https://www.retsinformation.dk/eli/lta/2026/402)
 
-## Rates and thresholds
+### Rates and thresholds
 
 These are selected **2026 reporting-law** figures, not income-tax rates or proof of an exemption. Apply the complete measurement, two-year, status and exception conditions. Recheck later law before an actual 2027 filing.
 
@@ -78,7 +86,7 @@ These are selected **2026 reporting-law** figures, not income-tax rates or proof
 | Classified risk-industry accountant report | Net turnover above DKK 5 million in 2 consecutive financial years | Class B, actual current balance-date principal industry and current order; an independent assistance report or assurance report is required under § 135(5). | 2026 | https://www.retsinformation.dk/eli/lta/2025/1488 |
 | Late annual-report fee per relevant management member | DKK 500 for first commenced month; DKK 2,000 total for second; DKK 3,000 total for third, maximum DKK 3,000 | § 150 demand-letter condition, § 151 timing and adjustments, § 152 relief and actual procedural stage apply. These are cumulative totals. | 2026 | https://www.retsinformation.dk/eli/lta/2026/402 |
 
-## Computation rules
+### Computation rules
 
 1. **Establish the regime and source chain.** Verify legal form, existing class/history, actual financial year, sector, listing, group and special status. Resolve applicable amendments, orders and the complete required companion before an actual position. The ordinary method cannot substitute for class C/D, group, financial-sector or sustainability rules. [S1, §§ 1–3 and 7](https://www.retsinformation.dk/eli/lta/2026/402)
 2. **Measure each year separately.** Assets are the sum of asset items. Annualise net turnover proportionately where a financial year differs from 12 months; do not annualise the closing balance sheet by the same multiplier. Apply the actual full-time-employee method. Section 7(4) requires the specified financial and investment income to be added when its condition is met; it is not automatically part of the revenue caption in the financial statements. Do not omit it from the threshold screen or invent eligibility. The authority explains this distinction in its audit-size guidance. [S1, § 7(3)–(4) and § 135(6)](https://www.retsinformation.dk/eli/lta/2026/402) [S6, § 7.1.1](https://erhvervsstyrelsen.dk/vejledning-aarsrapporter)
@@ -89,22 +97,7 @@ These are selected **2026 reporting-law** figures, not income-tax rates or proof
 7. **Select the actual permitted submission route and format.** Current BEK 859 §§ 13–14 permit Basis or Special for the stated class-B cases, with exceptions for class-C elements, IFRS, multiple languages and split accounting policies. Its system-to-system option also has explicit exclusions. Section 17 distinguishes Basis-generated readable/machine data from Special's specified XBRL/Inline XBRL versions and taxonomy, and requires readable and structured information to correspond. Obtain the actual current taxonomy, validation and portal instructions before output preparation. The old detailed guidance's BEK 771/2020 numbering does not establish current procedure. [S4](https://www.retsinformation.dk/eli/lta/2025/859) [S8](https://erhvervsstyrelsen.dk/vejledning-til-bekendtgorelse-om-indberetning-til-og-offentliggorelse-af-arsrapporter-mv-i)
 8. **Reconcile deadline, evidence and any late measures.** Calculate the correct § 138/153 receipt deadline and obtain the actual receipt. Section 150 distinguishes the demand letter's 8-working-day period from its 4-week possible dissolution/referral route. If its fee conditions apply, § 151 counts from the original statutory filing deadline, uses cumulative totals per relevant management member and includes its adjustment for stated coercive fines. Section 152 relief is exceptional and needs evidence and a decision; staff/adviser error alone is insufficient. Do not treat the demand period as an ordinary extension or add 500 to the second-month total of 2,000. Actual notices, calendar, referral stage, relief and payable result remain held. [S1, §§ 150–153](https://www.retsinformation.dk/eli/lta/2026/402)
 
-## Edge cases and special rules
-
-| Trigger | Required response |
-| --- | --- |
-| First year, changed period, class transition or uncertain registered year | Qualify § 15, actual registration, measurement, transition and first-year rules. No automatic exemption or current-year-only test. |
-| Class C/D, listing, financial sector, foundations, group or influential participations | Stop the affected ordinary method and load the complete applicable specialist sources. No unqualified group aggregation or consolidation waiver. |
-| Claimed micro treatment | Establish every § 22 A condition. Section 22 B changes specified disclosures and measurement provisions and disapplies § 11(2)–(3) for the stated elections, but not the § 11(1) true-and-fair requirement. It does not waive all notes or filing. Qualify the full consequences before use. [S1, §§ 11 and 22 A–22 B](https://www.retsinformation.dk/eli/lta/2026/402) |
-| Audit financial size pass | Keep prospective decision, disqualification, holding, asset-override and risk-assistance screens open until positively resolved. |
-| Actual report, election, assurance, deadline, fee or submission requested | Apply R-DK-FR-SOURCE below before preparing an affected output. No live filing or payment is authorised. |
-| Missing fact | Needs Input; never zero, no activity, no related company or no assurance by default. |
-
-**R-DK-FR-SOURCE:** The complete applicable Danish reporting rule, fact or required companion has not been established. Stop the affected classification, computation and output preparation and refer it to a qualified Danish professional. Do not deliver an incomplete financial-statement or filing package.
-
-All 12 financial-statements country slots remain mandatory. This reference qualifies only selected regime, filing and assurance principles. Complete income-statement/balance-sheet formats, trial-balance mapping, notes by actual regime, GAAP depreciation, current/deferred tax recognition and measurement, going concern disclosures/look-forward period, presentation currency/rounding and all applicable reporting/approval exceptions remain to be supplied before a real package. Load the relevant bookkeeping, tax, audit and specialist companions as needed; the corporate-tax reference does not establish a complete accounting tax provision.
-
-## Self-checks
+## Worked cases
 
 Retain all universal and financial-statements checks and outputs. After all applicable source and fact holds clear, the universal workbook, reviewer brief, action list and review checklist remain required, together with the base's income statement, balance sheet, notes, year-end adjustment schedule, filing checklist and reviewer brief. Overlapping briefs may be combined without dropping content. If a required branch is unresolved, record the refusal before preparing the affected package. Materiality cannot waive law, completeness, source evidence, refusal checks or professional sign-off.
 
@@ -175,6 +168,21 @@ Assume the stated measures in each of 2 adjacent relevant years, established mea
 
 Version 0.1, 2 November 2026: selected annual reporting, filing and assurance-screen foundation. No predecessor guide or reviewed status is replaced. Complete country-contract and actual-use holds remain.
 
+## When to refuse or refer
+
+| Trigger | Required response |
+| --- | --- |
+| First year, changed period, class transition or uncertain registered year | Qualify § 15, actual registration, measurement, transition and first-year rules. No automatic exemption or current-year-only test. |
+| Class C/D, listing, financial sector, foundations, group or influential participations | Stop the affected ordinary method and load the complete applicable specialist sources. No unqualified group aggregation or consolidation waiver. |
+| Claimed micro treatment | Establish every § 22 A condition. Section 22 B changes specified disclosures and measurement provisions and disapplies § 11(2)–(3) for the stated elections, but not the § 11(1) true-and-fair requirement. It does not waive all notes or filing. Qualify the full consequences before use. [S1, §§ 11 and 22 A–22 B](https://www.retsinformation.dk/eli/lta/2026/402) |
+| Audit financial size pass | Keep prospective decision, disqualification, holding, asset-override and risk-assistance screens open until positively resolved. |
+| Actual report, election, assurance, deadline, fee or submission requested | Apply R-DK-FR-SOURCE below before preparing an affected output. No live filing or payment is authorised. |
+| Missing fact | Needs Input; never zero, no activity, no related company or no assurance by default. |
+
+**R-DK-FR-SOURCE:** The complete applicable Danish reporting rule, fact or required companion has not been established. Stop the affected classification, computation and output preparation and refer it to a qualified Danish professional. Do not deliver an incomplete financial-statement or filing package.
+
+All 12 financial-statements country slots remain mandatory. This reference qualifies only selected regime, filing and assurance principles. Complete income-statement/balance-sheet formats, trial-balance mapping, notes by actual regime, GAAP depreciation, current/deferred tax recognition and measurement, going concern disclosures/look-forward period, presentation currency/rounding and all applicable reporting/approval exceptions remain to be supplied before a real package. Load the relevant bookkeeping, tax, audit and specialist companions as needed; the corporate-tax reference does not establish a complete accounting tax provision.
+
 ## Sources
 
 Read on 2 November 2026. Only the listed units were qualified; retaining a whole page does not mean every part was read.
@@ -195,23 +203,3 @@ Not yet confirmed: the complete 12-slot financial-statements country method; sta
 ## Disclaimer
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon. The most up-to-date version of this skill is maintained at [openaccountants.com](https://www.openaccountants.com).
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained in the
-[ryanduguid/openaccountants fork](https://github.com/ryanduguid/openaccountants).
-Check its quality tier, recorded review status and cited sources before use.
-Choose a practitioner whose credentials and engagement scope you have verified.
-The links below are optional upstream services; they do not publish or verify
-this fork's changes.
-
-- Upstream connection service: https://www.openaccountants.com/connect
-- Upstream accountant network: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
