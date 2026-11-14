@@ -262,4 +262,4 @@ expected:
 
 Not yet confirmed: the current quarter's late payment interest rate published under Law 9920/2008 art. 76(3); which art. 113 band (ALL 5,000 or ALL 3,000) applies to a late VAT return filed by a VAT-registered natural person who pays personal income tax on business income, since the law does not define "individual taxpayer" for art. 113(c) and Instruction 24/2008 predates that band; the minimum purchase value for the traveller export rule in art. 58 (set by ministerial instruction, not read); the item-by-item contents of VKM 953/2014 Annex 4 (agricultural inputs) and Annex 1/A (agricultural machinery), not read; whether "professions such as notary, bailiff" in VKM 953/2014 art. 11(2) reaches any other profession in practice.
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.
