@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/cyprus-income-tax"
   jurisdiction: "CY"
   tax_year: "2026"
-  last_updated: "2026-10-27"
+  last_updated: "2026-11-14"
 ---
 
 # Cyprus personal income tax (tax year 2026)
@@ -30,49 +30,49 @@ Sibling skills: residence detail, non-residents and withholding are in `cy-cross
 | Item | Rate or amount | Year | Source |
 |---|---|---|---|
 | 0% band, chargeable income up to | EUR 22,000 | 2026 | ITL art. 25 and Second Schedule para. 1(γ), https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html |
-| 20% band | EUR 22,001 to 32,000 | 2026 | ITL Second Schedule para. 1(γ), same URL |
-| 25% band | EUR 32,001 to 42,000 | 2026 | ITL Second Schedule para. 1(γ), same URL |
-| 30% band | EUR 42,001 to 72,000 | 2026 | ITL Second Schedule para. 1(γ), same URL |
-| 35% band | over EUR 72,000 | 2026 | ITL Second Schedule para. 1(γ), same URL |
+| 20% band | EUR 22,001 to 32,000 | 2026 | [ITL Second Schedule para. 1(γ)](https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html)|
+| 25% band | EUR 32,001 to 42,000 | 2026 | [ITL Second Schedule para. 1(γ)](https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html)|
+| 30% band | EUR 42,001 to 72,000 | 2026 | [ITL Second Schedule para. 1(γ)](https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html)|
+| 35% band | over EUR 72,000 | 2026 | [ITL Second Schedule para. 1(γ)](https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html)|
 | Tax at the top of the 20%, 25% and 30% bands (cumulative) | EUR 2,000 / 4,500 / 13,500 | 2026 | Computed from the bands; the Tax Department return page prints the same figures, https://www.gov.cy/mof-tax/en/documents/forologiki-dilosi-eisodimatos-atomoy/ |
-| 0% band before the reform (2008 to 2025, not for 2026) | EUR 19,500 | 2025 | ITL Second Schedule para. 1(β), same CyLaw URL |
-| Interest income of individuals | Exempt from income tax | 2026 | ITL art. 8(19), same CyLaw URL |
-| Dividend income | Exempt from income tax | 2026 | ITL art. 8(20), same CyLaw URL |
-| Gains on disposal of titles (shares, bonds and similar) | Exempt from income tax | 2026 | ITL art. 8(22), same CyLaw URL |
-| First-employment exemption, art. 8(21A) | 20% of pay, max EUR 8,550 a year | 2026 | ITL art. 8(21A), same CyLaw URL |
-| Returning-resident exemption, art. 8(21B) | 25% of Cyprus pay or business profit, max EUR 25,000 a year; pay or profit must exceed EUR 30,000 | 2026 | ITL art. 8(21B), same CyLaw URL |
-| High-earner exemption, art. 8(23A) | 50% of Cyprus pay, where pay exceeds EUR 55,000 | 2026 | ITL art. 8(23A), same CyLaw URL |
-| Cap on art. 14 contributions and premiums | 1/5 of taxable income before art. 14 and 14B deductions | 2026 | ITL art. 14(2), same CyLaw URL |
-| Life or disability premium | Up to 7% of the sum insured | 2026 | ITL art. 14(1)(α) proviso (i), same CyLaw URL |
-| Approved pension fund or pension plan contributions | Up to 10% of non-exempt art. 5 income | 2026 | ITL art. 14(1)(γ) proviso, same CyLaw URL |
-| Approved medical scheme premiums | Up to 2% of non-exempt art. 5 income | 2026 | ITL art. 14(1)(δ) proviso, same CyLaw URL |
-| Home insurance against natural disasters | Up to EUR 500 | 2026 | ITL art. 9(1)(ζ)(ββ), same CyLaw URL |
-| Donations to approved cultural bodies | Up to EUR 50,000; cannot create a loss carried forward | 2026 | ITL art. 9(1)(ν), same CyLaw URL |
-| Child deduction, per parent | EUR 1,000 first child, EUR 1,250 second, EUR 1,500 third and each further; doubled for single-parent families | 2026 | ITL art. 14B(1)(α), same CyLaw URL |
-| Housing-loan interest or rent on the main home | Up to EUR 2,000 per spouse, partner or single person | 2026 | ITL art. 14B(1)(β), same CyLaw URL |
-| Green deduction (home energy upgrade, renewables, batteries, electric vehicle) | Up to EUR 1,000 per spouse, partner or single person; excess carried 4 years | 2026 | ITL art. 14B(1)(γ), same CyLaw URL |
-| Family income cap for art. 14B: no children, or up to 2 children | EUR 100,000 | 2026 | ITL art. 14B(1)(α) and (β)(i), same CyLaw URL |
-| Family income cap: 3 or 4 children | EUR 150,000 | 2026 | ITL art. 14B(1)(β)(ii), same CyLaw URL |
-| Family income cap: 5 or more children | EUR 200,000 | 2026 | ITL art. 14B(1)(β)(iii), same CyLaw URL |
-| Income cap for a single person | EUR 40,000 | 2026 | ITL art. 14B(1)(γ), same CyLaw URL |
-| Let buildings: flat deduction from gross rent | 20% | 2026 | ITL art. 9(2), same CyLaw URL |
-| Business entertainment allowed | Up to 1% of gross receipts, max EUR 30,000 | 2026 | ITL art. 11(12), same CyLaw URL |
-| Foreign pension (services abroad), optional rate | 5% on the amount over EUR 5,000 | 2026 | ITL art. 20, same CyLaw URL |
-| Crypto-asset disposal gains | 8% | 2026 | ITL art. 20E(1), same CyLaw URL |
-| Approved employee share option or share award plans | 8%, up to twice the year's pay from that employer and EUR 1,000,000 per rolling 10 years | 2026 | ITL art. 20D(1) and (2), same CyLaw URL |
-| AIF carried interest and UCITS performance fees (optional) | 8%, minimum tax EUR 10,000 a year | 2026 | ITL arts. 20B(4), (7) and 20C(4), (7), same CyLaw URL |
-| Energy-efficiency capital spending 2023 to 2030: building fabric / efficiency systems, renewables and batteries / electric vehicles | 7% / 20% / 33 1/3% a year | 2026 | ITL art. 10(2), third proviso (α) to (γ), same CyLaw URL |
+| 0% band before the reform (2008 to 2025, not for 2026) | EUR 19,500 | 2025 | [ITL Second Schedule para. 1(β)](https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html)|
+| Interest income of individuals | Exempt from income tax | 2026 | [ITL art. 8(19)](https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html)|
+| Dividend income | Exempt from income tax | 2026 | [ITL art. 8(20)](https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html)|
+| Gains on disposal of titles (shares, bonds and similar) | Exempt from income tax | 2026 | [ITL art. 8(22)](https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html)|
+| First-employment exemption, art. 8(21A) | 20% of pay, max EUR 8,550 a year | 2026 | [ITL art. 8(21A)](https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html)|
+| Returning-resident exemption, art. 8(21B) | 25% of Cyprus pay or business profit, max EUR 25,000 a year; pay or profit must exceed EUR 30,000 | 2026 | [ITL art. 8(21B)](https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html)|
+| High-earner exemption, art. 8(23A) | 50% of Cyprus pay, where pay exceeds EUR 55,000 | 2026 | [ITL art. 8(23A)](https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html)|
+| Cap on art. 14 contributions and premiums | 1/5 of taxable income before art. 14 and 14B deductions | 2026 | [ITL art. 14(2)](https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html)|
+| Life or disability premium | Up to 7% of the sum insured | 2026 | [ITL art. 14(1)(α) proviso (i)](https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html)|
+| Approved pension fund or pension plan contributions | Up to 10% of non-exempt art. 5 income | 2026 | [ITL art. 14(1)(γ) proviso](https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html)|
+| Approved medical scheme premiums | Up to 2% of non-exempt art. 5 income | 2026 | [ITL art. 14(1)(δ) proviso](https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html)|
+| Home insurance against natural disasters | Up to EUR 500 | 2026 | [ITL art. 9(1)(ζ)(ββ)](https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html)|
+| Donations to approved cultural bodies | Up to EUR 50,000; cannot create a loss carried forward | 2026 | [ITL art. 9(1)(ν)](https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html)|
+| Child deduction, per parent | EUR 1,000 first child, EUR 1,250 second, EUR 1,500 third and each further; doubled for single-parent families | 2026 | [ITL art. 14B(1)(α)](https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html)|
+| Housing-loan interest or rent on the main home | Up to EUR 2,000 per spouse, partner or single person | 2026 | [ITL art. 14B(1)(β)](https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html)|
+| Green deduction (home energy upgrade, renewables, batteries, electric vehicle) | Up to EUR 1,000 per spouse, partner or single person; excess carried 4 years | 2026 | [ITL art. 14B(1)(γ)](https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html)|
+| Family income cap for art. 14B: no children, or up to 2 children | EUR 100,000 | 2026 | [ITL art. 14B(1)(α) and (β)(i)](https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html)|
+| Family income cap: 3 or 4 children | EUR 150,000 | 2026 | [ITL art. 14B(1)(β)(ii)](https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html)|
+| Family income cap: 5 or more children | EUR 200,000 | 2026 | [ITL art. 14B(1)(β)(iii)](https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html)|
+| Income cap for a single person | EUR 40,000 | 2026 | [ITL art. 14B(1)(γ)](https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html)|
+| Let buildings: flat deduction from gross rent | 20% | 2026 | [ITL art. 9(2)](https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html)|
+| Business entertainment allowed | Up to 1% of gross receipts, max EUR 30,000 | 2026 | [ITL art. 11(12)](https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html)|
+| Foreign pension (services abroad), optional rate | 5% on the amount over EUR 5,000 | 2026 | [ITL art. 20](https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html)|
+| Crypto-asset disposal gains | 8% | 2026 | [ITL art. 20E(1)](https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html)|
+| Approved employee share option or share award plans | 8%, up to twice the year's pay from that employer and EUR 1,000,000 per rolling 10 years | 2026 | [ITL art. 20D(1) and (2)](https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html)|
+| AIF carried interest and UCITS performance fees (optional) | 8%, minimum tax EUR 10,000 a year | 2026 | [ITL arts. 20B(4), (7) and 20C(4), (7)](https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html)|
+| Energy-efficiency capital spending 2023 to 2030: building fabric / efficiency systems, renewables and batteries / electric vehicles | 7% / 20% / 33 1/3% a year | 2026 | [ITL art. 10(2), third proviso (α) to (γ)](https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html)|
 | SDC on dividends, resident and domiciled individual, profits of 2026 onward | 5% | 2026 | SDC Law art. 3(1)(α), https://www.cylaw.org/nomoi/enop/non-ind/2002_1_117/full.html |
-| SDC on dividends from a Cyprus-resident company paid out of profits of 2025 or earlier, received within six years from 1 January 2026 | 17% | 2026 | SDC Law art. 3(1)(α) proviso (ii), same URL |
-| SDC on interest, resident and domiciled individual | 17% (3% on government savings certificates and development bonds and listed bonds) | 2026 | SDC Law art. 3B(α)(i) and (β)(i), same URL |
-| SDC interest refund: total income not over | EUR 12,000 (refund of SDC above 3%) | 2026 | SDC Law art. 3B(α)(i), second proviso, same URL |
-| Deemed domicile for SDC | Resident 17 of the last 20 years | 2026 | SDC Law art. 2(3) proviso (i), same URL |
+| SDC on dividends from a Cyprus-resident company paid out of profits of 2025 or earlier, received within six years from 1 January 2026 | 17% | 2026 | [SDC Law art. 3(1)(α) proviso (ii)](https://www.cylaw.org/nomoi/enop/non-ind/2002_1_117/full.html)|
+| SDC on interest, resident and domiciled individual | 17% (3% on government savings certificates and development bonds and listed bonds) | 2026 | [SDC Law art. 3B(α)(i) and (β)(i)](https://www.cylaw.org/nomoi/enop/non-ind/2002_1_117/full.html)|
+| SDC interest refund: total income not over | EUR 12,000 (refund of SDC above 3%) | 2026 | [SDC Law art. 3B(α)(i), second proviso](https://www.cylaw.org/nomoi/enop/non-ind/2002_1_117/full.html)|
+| Deemed domicile for SDC | Resident 17 of the last 20 years | 2026 | [SDC Law art. 2(3) proviso (i)](https://www.cylaw.org/nomoi/enop/non-ind/2002_1_117/full.html)|
 | Accounts: business turnover up to which none are required | EUR 120,000 | 2026 | ACL art. 30(1) proviso (ii)(αα), https://www.cylaw.org/nomoi/enop/non-ind/1978_1_4/full.html |
-| Reviewed (not audited) accounts allowed | Turnover over EUR 120,000 and up to EUR 200,000, and total assets up to EUR 500,000, for at least two consecutive years | 2026 | ACL art. 30(1) proviso (ii)(ββ), same URL |
-| Late filing charge, individual | EUR 150 | 2026 | ACL art. 50A(α), same URL |
-| Charge for not complying with a written notice, individual | EUR 300 | 2026 | ACL art. 50A(β) to (δ), same URL |
-| Late payment charge | 5%, plus another 5% if still unpaid 2 months after the due date | 2026 | ACL art. 50A(ε), same URL |
-| Provisional tax underestimate charge | 1/10 of the gap between final tax and provisional tax, when provisional chargeable income is below 3/4 of the final figure | 2026 | ACL art. 26(1), same URL |
+| Reviewed (not audited) accounts allowed | Turnover over EUR 120,000 and up to EUR 200,000, and total assets up to EUR 500,000, for at least two consecutive years | 2026 | [ACL art. 30(1) proviso (ii)(ββ)](https://www.cylaw.org/nomoi/enop/non-ind/1978_1_4/full.html)|
+| Late filing charge, individual | EUR 150 | 2026 | [ACL art. 50A(α)](https://www.cylaw.org/nomoi/enop/non-ind/1978_1_4/full.html)|
+| Charge for not complying with a written notice, individual | EUR 300 | 2026 | [ACL art. 50A(β) to (δ)](https://www.cylaw.org/nomoi/enop/non-ind/1978_1_4/full.html)|
+| Late payment charge | 5%, plus another 5% if still unpaid 2 months after the due date | 2026 | [ACL art. 50A(ε)](https://www.cylaw.org/nomoi/enop/non-ind/1978_1_4/full.html)|
+| Provisional tax underestimate charge | 1/10 of the gap between final tax and provisional tax, when provisional chargeable income is below 3/4 of the final figure | 2026 | [ACL art. 26(1)](https://www.cylaw.org/nomoi/enop/non-ind/1978_1_4/full.html)|
 | Default interest rate | 3.50% a year from 1 January 2026 | 2026 | ACL art. 39(1); Public Default Interest Rate for 2026 Order, K.D.P. 376/2025, para. 2, https://www.cylaw.org/KDP/data/2025_1_376.pdf |
 | Ex gratia retirement or termination payments, early-retirement scheme benefits and non-contractual termination pay over EUR 200,000 | 20%, taxed alone | 2026 | ITL art. 20ΣΤ with art. 5(1)(β)(iv) to (vi), https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html |
 
@@ -263,4 +263,4 @@ Not yet confirmed: the general wear-and-tear rates by asset class (set by the no
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-27. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `cyprus-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/cyprus-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `cyprus-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/cyprus-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

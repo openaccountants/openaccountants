@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/cn-corporate-tax"
   jurisdiction: "CN"
   tax_year: "2026"
-  last_updated: "2026-10-29"
+  last_updated: "2026-11-14"
 ---
 
 # China Enterprise Income Tax (企业所得税): rates, small low-profit enterprises, HNTE and regional 15%, R&D super-deduction, withholding, losses and filing for 2026
@@ -52,7 +52,7 @@ Out of scope: Hong Kong, Macao and Taiwan; individual income tax; VAT and surcha
 | Resident enterprise (standard) | 25% | Default rate | [Law Art. 4 ("企业所得税的税率为25％")](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286573.html) |
 | Non-resident establishment, connected income | 25% | Income effectively connected with the establishment | [Law Art. 3-4](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286573.html) |
 | Non-resident without an establishment, China-source passive income | Statutory 20%, **reduced to 10%** | Dividends, interest, rent, royalties, property gains and similar income. A treaty may lower it further | [Law Art. 4, 27(5); Regulations Art. 91 ("减按10%的税率征收企业所得税")](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286573.html); [Law Art. 4, 27(5); Regulations Art. 91 ("减按10%的税率征收企业所得税")](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286574.html) |
-| Small low-profit enterprise | Effectively 5% on all its taxable income | All three size tests met, and not in a restricted or prohibited industry | [MOF/STA announcement 2023 No. 12](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202308/t468162.html) |
+| Small low-profit enterprise | Effectively 5% on all its taxable income (computed: 25% of income taxed at 20%) | All three size tests met, and not in a restricted or prohibited industry | [MOF/STA announcement 2023 No. 12](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202308/t468162.html) |
 | High and new technology enterprise (HNTE) | 15% | Valid certificate for the year | [Law Art. 28 ("减按15％的税率征收企业所得税")](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286573.html) |
 | Western region encouraged industry | 15% | 2021-2030; main business on the catalogue provides 60% or more of revenue | [MOF/STA/NDRC 2020 No. 23](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202005/t453507.html) |
 | Hainan Free Trade Port encouraged industry | 15% | 2025-2027 extension; substantive operation in Hainan | [Hainan Tax Bureau 2025 No. 2](https://hainan.chinatax.gov.cn/xxgk_6_1/14160619.html) |
@@ -199,7 +199,7 @@ If the head office is in Hainan, only the income of the Hainan head office and H
 | Claimed small low-profit at prepayment, fails at year end | Pay the difference at the annual settlement | [STA announcement 2023 No. 6 Art. 6](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202303/t466615.html) |
 | HNTE certificate issued part way through 2026 | 15% from tax year 2026, the year of issue | [HNTE Measures Art. 10](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/201603/t422248.html) |
 | HNTE certificate expired and not renewed | 25% from the year it lapses, unless another preference applies | HNTE Measures Art. 9 |
-| Western-region company, encouraged business below 60% of revenue | No 15%. Use 25% | [MOF/STA/NDRC 2020 No. 23](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202005/t453507.html) |
+| Western-region company, encouraged business below 60% of revenue | No 15%. Use 25% | [MOF/STA/NDRC 2020 No. 23](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202005/t453507.html); [EIT Law](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286573.html) art. 4 |
 | Retailer runs an R&D project | No super-deduction (negative-list industry). The actual cost is still deductible | [Caishui 2015 No. 119](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/201511/t419949.html) |
 | Overseas R&D above two-thirds of domestic R&D | The excess gets no super-deduction | [Caishui 2018 No. 64](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/201807/t440577.html) |
 | Loss from 2020 still unused in 2026, ordinary company | Expired after 2025 (5 years) | [CIT Law Art. 18](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286573.html) |
@@ -357,38 +357,40 @@ expected:
 
 | Source | Official URL | Read on |
 | --- | --- | --- |
-| CIT Law | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286573.html | 2026-10-29 |
-| Implementation Regulations | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286574.html | 2026-10-29 |
-| MOF/STA announcement 2023 No. 12 | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202308/t468162.html | 2026-10-29 |
-| MOF/STA announcement 2025 No. 16 | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202601/t478898.html | 2026-10-29 |
-| STA announcement 2025 No. 17 | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202507/t477034.html | 2026-10-29 |
-| Hainan Tax Bureau 2025 No. 2 | https://hainan.chinatax.gov.cn/xxgk_6_1/14160619.html | 2026-10-29 |
-| STA announcement 2023 No. 6 | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202303/t466615.html | 2026-10-29 |
-| Caishui 2015 No. 119 | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/201511/t419949.html | 2026-10-29 |
-| Shanghai Tax Bureau Q&A, 2026 | https://shanghai.chinatax.gov.cn/tax/zcfw/rdwd/202604/t479958.html | 2026-10-29 |
-| Shanghai Tax Bureau Q&A | https://shanghai.chinatax.gov.cn/tax/zcfw/rdwd/202601/t478977.html | 2026-10-29 |
-| HNTE Administrative Measures, Guokefahuo 2016 No. 32 | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/201603/t422248.html | 2026-10-29 |
-| Shanghai Tax Bureau HNTE Q&A | https://shanghai.chinatax.gov.cn/tax/zcfw/rdwd/202505/t476449.html | 2026-10-29 |
-| MOF/STA/NDRC 2020 No. 23 | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202005/t453507.html | 2026-10-29 |
-| Caishui 2020 No. 31 | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202009/t455145.html | 2026-10-29 |
-| MOF/STA announcement 2023 No. 7 | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202304/t466643.html | 2026-10-29 |
-| MOF/STA announcement 2023 No. 44 | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202309/t468737.html | 2026-10-29 |
-| Caishui 2018 No. 64 | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/201807/t440577.html | 2026-10-29 |
-| Shanghai Tax Bureau R&D Q&A | https://shanghai.chinatax.gov.cn/tax/zcfw/rdwd/202111/t461170.html | 2026-10-29 |
-| Caishui 2018 No. 76 | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/201807/t440878.html | 2026-10-29 |
-| Caishui 2018 No. 15 | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/201803/t436949.html | 2026-10-29 |
-| Caishui 2018 No. 51 | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/201805/t439366.html | 2026-10-29 |
-| MOF/STA announcement 2023 No. 37 | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202309/t468599.html | 2026-10-29 |
-| Shanghai Tax Bureau Q&A, April 2026 | https://shanghai.chinatax.gov.cn/tax/zcfw/rdwd/202604/t480124.html | 2026-10-29 |
-| STA announcement 2026 No. 13 | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202607/t480970.html | 2026-10-29 |
-| Shanghai Tax Bureau settlement Q&A | https://shanghai.chinatax.gov.cn/tax/zcfw/rdwd/202405/t471967.html | 2026-10-29 |
-| Tax Collection Administration Law | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/swzsgl/200609/t284229.html | 2026-10-29 |
-| Shanghai Tax Bureau Q&A | https://shanghai.chinatax.gov.cn/tax/zcfw/rdwd/202511/t478219.html | 2026-10-29 |
-| Detailed Rules for the Tax Collection Administration Law, Art. 29 | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/swzsgl/200402/t284445.html | 2026-10-29 |
+| CIT Law. Read for Scope and who this is for, What is new or confirmed for 2026, Rates for tax year 2026 | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286573.html | 2026-11-14 |
+| Implementation Regulations. Read for Scope and who this is for, Rates for tax year 2026, The method, step by step | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286574.html | 2026-11-14 |
+| MOF/STA announcement 2023 No. 12. Read for What is new or confirmed for 2026, Rates for tax year 2026, Small low-profit enterprises (小型微利企业) | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202308/t468162.html | 2026-11-14 |
+| MOF/STA announcement 2025 No. 16. Read for What is new or confirmed for 2026, Capped deductions and other income rules | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202601/t478898.html | 2026-11-14 |
+| STA announcement 2025 No. 17. Read for What is new or confirmed for 2026, Filing and payment | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202507/t477034.html | 2026-11-14 |
+| Hainan Tax Bureau 2025 No. 2. Read for What is new or confirmed for 2026, Rates for tax year 2026, Regional 15% rates | https://hainan.chinatax.gov.cn/xxgk_6_1/14160619.html | 2026-11-14 |
+| STA announcement 2023 No. 6. Read for Small low-profit enterprises (小型微利企业), Boundary and exception table, Filing and payment | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202303/t466615.html | 2026-11-14 |
+| Caishui 2015 No. 119. Read for R&D super-deduction (研发费用加计扣除), Boundary and exception table, Ask the client first | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/201511/t419949.html | 2026-11-14 |
+| Shanghai Tax Bureau Q&A, 2026. Read for The method, step by step, Boundary and exception table, Returns for tax year 2025 being filed or corrected now | https://shanghai.chinatax.gov.cn/tax/zcfw/rdwd/202604/t479958.html | 2026-11-14 |
+| Shanghai Tax Bureau Q&A. Read for Small low-profit enterprises (小型微利企业) | https://shanghai.chinatax.gov.cn/tax/zcfw/rdwd/202601/t478977.html | 2026-11-14 |
+| HNTE Administrative Measures, Guokefahuo 2016 No. 32. Read for High and new technology enterprises (HNTE, 高新技术企业) at 15%, Boundary and exception table | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/201603/t422248.html | 2026-11-14 |
+| Shanghai Tax Bureau HNTE Q&A. Read for the tests for high and new technology enterprises (HNTE, 高新技术企业); the 15% rate itself is in EIT Law art. 28 | https://shanghai.chinatax.gov.cn/tax/zcfw/rdwd/202505/t476449.html ; https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286573.html | 2026-11-14 |
+| MOF/STA/NDRC 2020 No. 23. Read for What is new or confirmed for 2026, Rates for tax year 2026, Regional 15% rates | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202005/t453507.html | 2026-11-14 |
+| Caishui 2020 No. 31. Read for Regional 15% rates | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202009/t455145.html | 2026-11-14 |
+| MOF/STA announcement 2023 No. 7. Read for What is new or confirmed for 2026, R&D super-deduction (研发费用加计扣除), Completion checklist | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202304/t466643.html | 2026-11-14 |
+| MOF/STA announcement 2023 No. 44. Read for What is new or confirmed for 2026, R&D super-deduction (研发费用加计扣除) | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202309/t468737.html | 2026-11-14 |
+| Caishui 2018 No. 64. Read for R&D super-deduction (研发费用加计扣除), Boundary and exception table | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/201807/t440577.html | 2026-11-14 |
+| Shanghai Tax Bureau R&D Q&A. Read for R&D super-deduction (研发费用加计扣除) | https://shanghai.chinatax.gov.cn/tax/zcfw/rdwd/202111/t461170.html | 2026-11-14 |
+| Caishui 2018 No. 76. Read for Losses carried forward, Boundary and exception table | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/201807/t440878.html | 2026-11-14 |
+| Caishui 2018 No. 15. Read for Capped deductions and other income rules | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/201803/t436949.html | 2026-11-14 |
+| Caishui 2018 No. 51. Read for Capped deductions and other income rules | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/201805/t439366.html | 2026-11-14 |
+| MOF/STA announcement 2023 No. 37. Read for Capped deductions and other income rules | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202309/t468599.html | 2026-11-14 |
+| Shanghai Tax Bureau Q&A, April 2026. Read for Capped deductions and other income rules, Filing and payment | https://shanghai.chinatax.gov.cn/tax/zcfw/rdwd/202604/t480124.html | 2026-11-14 |
+| STA announcement 2026 No. 13. Read for When to refuse or refer | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202607/t480970.html | 2026-11-14 |
+| Shanghai Tax Bureau settlement Q&A. Read for Filing and payment | https://shanghai.chinatax.gov.cn/tax/zcfw/rdwd/202405/t471967.html | 2026-11-14 |
+| Tax Collection Administration Law. Read for Filing and payment, Penalties and interest | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/swzsgl/200609/t284229.html | 2026-11-14 |
+| Shanghai Tax Bureau Q&A. Read for Filing and payment | https://shanghai.chinatax.gov.cn/tax/zcfw/rdwd/202511/t478219.html | 2026-11-14 |
+| Detailed Rules for the Tax Collection Administration Law, Art. 29. Read for Penalties and interest | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/swzsgl/200402/t284445.html | 2026-11-14 |
 
-| Additional operative source | https://fgk.chinatax.gov.cn/zcfgk/c102416/c5203416/content.html | 2026-10-29 |
-| Additional operative source | https://www.chinatax.gov.cn/chinatax/n810341/n810765/n2511651/201710/c3289550/content.html | 2026-10-29 |
-| Additional operative source | https://fgk.chinatax.gov.cn/zcfgk/c100012/c5194742/content.html | 2026-10-29 |
+| 国家税务总局政策法规库. Read for Scope and who this is for | https://fgk.chinatax.gov.cn/zcfgk/c102416/c5203416/content.html | 2026-11-14 |
+| 关于非居民企业所得税源泉扣缴有关问题的公告. Read for Withholding on non-residents (源泉扣缴) | https://www.chinatax.gov.cn/chinatax/n810341/n810765/n2511651/201710/c3289550/content.html | 2026-11-14 |
+| STA announcement 2017 No. 24 on HNTE relief (国家税务总局公告2017年第24号). Read for the HNTE preferential-rate administration rules | https://fgk.chinatax.gov.cn/zcfgk/c100012/c5194742/content.html | 2026-11-14 |
+
+Not yet confirmed: whether any relief that ends on 31 December 2027 will be extended (no extension notice was among the pages read on 14 Nov 2026); the 2026 annual settlement form screens, which this skill does not set out.
 
 > **General reference only.** This Guide is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status or local procedures. A qualified professional in the relevant jurisdiction must review the work before filing, paying or taking a tax position.
 
@@ -396,4 +398,4 @@ expected:
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-29. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `cn-corporate-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/cn-corporate-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `cn-corporate-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/cn-corporate-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

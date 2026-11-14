@@ -1,10 +1,11 @@
 ---
 name: threshold-alerts
-description: "Intelligence skill that detects when the user is near important tax thresholds. Covers 14 threshold checks across 10 jurisdictions (EU, US, UK, DE, AU, IN, ES, NL, SG, MT, CA). For each threshold: calculates proximity, determines direction of travel, and recommends specific action. Flags the crossing point where obligations change materially."
-version: 0.1
+description: "Intelligence skill that detects when the user is near important tax thresholds. Covers 14 threshold checks across EU and ten national jurisdictions (EU, US, UK, DE, AU, IN, ES, NL, SG, MT, CA). For each threshold: calculates proximity, determines direction of travel, and recommends specific action. Flags the crossing point where obligations change materially."
+version: 0.2
 jurisdiction: GLOBAL
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+type: cross-country-method
+last_updated: 2026-11-14
 depends_on:
   - workflow-base
 category: intelligence
@@ -13,7 +14,7 @@ tier: 2
 domain: tooling
 ---
 
-# Threshold Alerts
+# Threshold Alerts v0.2
 
 ## What this file is
 
@@ -21,13 +22,15 @@ domain: tooling
 **Functional role:** Threshold proximity detection, cliff warnings, proactive alerts
 **Status:** Active
 
-This is an intelligence skill that loads on top of `workflow-base`. It monitors the user's financial data against statutory thresholds where obligations change materially -- registration requirements activate, deductions phase out, tax rates jump, or filing complexity increases.
+This is an intelligence skill that loads on top of `workflow-base`. It monitors the user's financial data against statutory thresholds where obligations change materially - registration requirements activate, deductions phase out, tax rates jump, or filing complexity increases.
 
 **The reviewer is the customer of this output.** Threshold alerts are addressed to the credentialed reviewer, who decides whether action is needed.
 
 > **Disclaimer.** Threshold amounts are based on publicly available statutory rules and may change with legislation. Currency conversions, timing of income recognition, and specific definitions of "turnover" or "income" vary by jurisdiction and may affect whether a threshold applies. All threshold assessments must be verified by a credentialed professional in the relevant jurisdiction. This is not legal or tax advice.
 
-## Section 1 -- Scope statement
+## Scope
+
+### Section 1 - Scope statement
 
 This skill covers:
 
@@ -38,253 +41,227 @@ This skill covers:
 This skill does NOT cover:
 
 - Corporate tax thresholds or employer-side thresholds
-- Thresholds that require entity-level (partnership, corporation) analysis
+- Full entity-level computations: still identify the actual taxpayer, associated businesses and aggregation needed for a supported threshold; do not omit an applicable legal test merely because it involves another entity
 - Real-time monitoring (this runs on demand or when triggered by a computation skill)
-- Thresholds below a materiality floor (see Section 4)
+- Full tax-return computations or automatic registrations. Section 4 ranks optional planning suggestions; it never suppresses a statutory obligation or missing-evidence alert
 
-## Section 2 -- Workflow
+## The method, step by step
 
-### Step 0 -- Gather inputs
+### Section 2 - Workflow
 
-- **Gather inputs** — From the user's data (intake, computation output, or explicit statement), extract: 1. **Jurisdiction(s)** -- where the user files 2. **Gross revenue / turnover** -- rolling 12-month and year-to-date 3. **Net income / adjusted gross income** -- current period 4. **Specific data points** -- as required by individual thresholds (e.g., cross-border B2C sales, private health insurance status) If a required data point is missing, flag the threshold check as "incomplete -- data needed" and state what is required.
+### Step 0 - Gather inputs
 
-### Step 1 -- Run threshold checks
+- **Gather inputs:** confirm taxpayer/entity, residence/establishment, filing status, actual tax/financial/calendar year, effective rule date and existing registrations/elections. Extract the required sales, receipts, income and associated-business records with transaction dates, currency, VAT treatment and recognition basis. Reconcile rolling turnover, calendar-year turnover, net receipts, taxable income before a deduction, adjusted net income and income for surcharge purposes separately. Obtain the threshold-specific facts, such as eligible cross-border B2C supplies, profession, cash-receipt proportion or hospital-cover days/dependants. If a required fact or source is missing, report **incomplete - data needed**; do not supply a favourable default.
 
-- **Run threshold checks** — For each applicable threshold (matched to user's jurisdiction), compute: 1. **Current value** -- the user's figure that is compared against the threshold 2. **Threshold amount** -- the statutory limit 3. **Distance** -- absolute difference (threshold minus current value) 4. **Distance as percentage** -- (distance / threshold) x 100 5. **Direction of travel** -- is the user approaching or moving away from the threshold? Based on: - Year-over-year trend (if prior-year data available) - YTD annualised projection (current YTD / months elapsed x 12) - If no trend data, state "direction unknown"
+### Step 1 - Run threshold checks
 
-### Step 2 -- Classify proximity
+- **Run threshold checks:** for each applicable test, record its source/date, actual measurement period, eligibility, included/excluded receipts and comparison operator. Compute the actual measured value, statutory amount, signed headroom (limit minus value), and percentage headroom (headroom divided by a non-zero limit, multiplied by one hundred). Preserve both prior-year and current-year tests where required. Distinguish a strict **exceeds** test from **at least**, a taper, cap or election condition; equality is not a universal breach. Classify the legal result first. Then assess direction from comparable prior-year figures and dated commitments. YTD / elapsed months times twelve is a labelled planning projection only, not a substitute for a statutory forward test; guard zero/partial periods, seasonality and inconsistent recognition. No trend evidence means **direction unknown**. Record the applicable official currency-conversion rule or mark the currency comparison unresolved.
+
+### Step 2 - Classify proximity
 
 **Proximity classification bands**
 
 | Proximity band | Condition | Flag |
 | --- | --- | --- |
-| Safe | > 20% below threshold | GREEN |
-| Watch | 10--20% below threshold | AMBER |
-| Danger zone | < 10% below threshold | RED |
-| Exceeded | At or above threshold | RED -- EXCEEDED |
-| Not applicable | Threshold does not apply to this user | GREY |
+| Distant, not a legal safety conclusion | More than 20% below a supported positive limit | GREEN |
+| Watch | From 10% through 20% below the limit | AMBER |
+| Near boundary | Non-negative headroom below 10%; equality separately tested under the law | RED |
+| Statutory boundary met/crossed | The actual operator and all eligibility conditions are met | RED - ACTION, or a clearly labelled favourable cap/taper notice |
+| Not applicable / unresolved | Evidence proves exclusion, or facts/source are insufficient; distinguish these results | GREY / INCOMPLETE |
 
-### Step 3 -- Generate action recommendations
+### Step 3 - Generate action recommendations
 
-- **Generate action recommendations** — For each threshold in AMBER or RED, produce: 1. **What is happening** -- one-sentence plain-language explanation 2. **What changes if exceeded** -- concrete obligation that activates or benefit that is lost 3. **Recommended action** -- what the reviewer should consider 4. **Timing** -- when action must be taken (e.g., "register within 30 days of exceeding")
+- **Generate action recommendations:** for AMBER/RED, every activated obligation and every unresolved required test, explain what is happening, the actual legal change, the proposed action, its evidence and owner, application deadline, effective date and first affected transaction. Do not use a generic number of days after crossing. A social-security cap may reduce one charge without eliminating another. Compare lawful options using actual quoted fees and eligible relief conditions; do not fabricate insurance prices, marginal tax savings or authority approval. Deferring an invoice alone does not establish lawful deferral of revenue recognition. Produce proposals for the reviewer; do not file, register, buy cover or alter records.
 
-### Step 4 -- Produce output
+### Step 4 - Produce output
 
-- **Produce output** — Format per Section 5.
+- **Produce output** , Format per Section 5.
 
-## Section 3 -- Master Threshold Table
+## Section 3 - Master Threshold Table
 
-### 3.1 EU -- VAT One Stop Shop (OSS)
+### 3.1 EU - VAT One Stop Shop (OSS)
 
-**EU -- VAT One Stop Shop (OSS)**  _(Council Directive 2006/112/EC, Art. 59c (as amended by Directive 2017/2455))_
+| Field | Value | Source |
+| --- | --- | --- |
+| **Threshold name** | Eligible intra-Community distance sales and B2C TBE place-of-supply threshold | [Official source](https://vat-one-stop-shop.ec.europa.eu/one-stop-shop_en) |
+| **Jurisdiction** | EU; check establishment and origin of transport, not every B2C sale | [Official source](https://vat-one-stop-shop.ec.europa.eu/one-stop-shop_en) |
+| **Amount** | EUR 10,000 exclusive of VAT, combined eligible TBE services and intra-Community distance sales; not separate allowances | [Official source](https://vat-one-stop-shop.ec.europa.eu/one-stop-shop_en) |
+| **What happens if exceeded** | Once exceeded, apply destination place-of-supply rules for the relevant supplies. OSS is an optional reporting route, not itself a universal mandatory registration; establish actual VAT liability/exemption and national registrations | [Official source](https://vat-one-stop-shop.ec.europa.eu/one-stop-shop_en) |
+| **What happens if below** | Origin place-of-supply treatment only if the single-Member-State establishment/transport and both-year conditions hold; a destination election binds for two calendar years | [Official source](https://vat-one-stop-shop.ec.europa.eu/one-stop-shop_en) |
+| **Measurement period** | Current and preceding calendar years; no threshold for other B2C services or imported distance sales | [Official source](https://vat-one-stop-shop.ec.europa.eu/one-stop-shop_en) |
+| **Action if approaching** | Prepare actual destination tax treatment, pricing and eligible OSS or national route before the crossing supply; check any separately applicable SME exemption | [Official source](https://vat-one-stop-shop.ec.europa.eu/one-stop-shop_en) |
+| **Primary source** | European Commission OSS guide, place-of-supply threshold and optional schemes | [Official source](https://vat-one-stop-shop.ec.europa.eu/one-stop-shop_en) |
 
-| Field | Value |
-| --- | --- |
-| **Jurisdiction** | EU (all member states) |
-| **Threshold name** | VAT OSS / distance-selling threshold |
-| **Amount** | EUR 10,000 in B2C cross-border sales to other EU member states (aggregate, all states combined) |
-| **What happens if exceeded** | Must register for OSS in home country OR register for VAT in each destination country. Must charge destination-country VAT rates instead of home-country rate. |
-| **What happens if below** | May charge home-country VAT rate on all B2C cross-border sales. No OSS obligation. |
-| **Measurement period** | Current calendar year OR prior calendar year (if exceeded in prior year, obligation continues) |
-| **Action if approaching** | Prepare OSS registration in home country. Review pricing to absorb rate differences. Implement VAT rate lookup by customer country. |
-| **Primary source** | Council Directive 2006/112/EC, Art. 59c (as amended by Directive 2017/2455) |
+### 3.2 US - QBI Deduction Phase-out
 
-### 3.2 US -- QBI Deduction Phase-out
+| Field | Value | Source |
+| --- | --- | --- |
+| **Threshold name** | QBI limitation phase-in, not one automatic deduction cliff | [Official source](https://www.irs.gov/irb/2025-45_IRB) / [related source](https://www.irs.gov/newsroom/qualified-business-income-deduction) |
+| **Jurisdiction** | US federal, actual filing status and eligible non-C-corporate business | [Official source](https://www.irs.gov/irb/2025-45_IRB) / [related source](https://www.irs.gov/newsroom/qualified-business-income-deduction) |
+| **Amount** | 2026 taxable income before QBI deduction: MFJ USD 403,500 to USD 553,500; MFS USD 201,775 to USD 276,775; other returns USD 201,750 to USD 276,750 | [Official source](https://www.irs.gov/irb/2025-45_IRB) / [related source](https://www.irs.gov/newsroom/qualified-business-income-deduction) |
+| **What happens if exceeded** | Apply actual SSTB exclusion and wage/property limitations through the relevant range; not every business loses its whole deduction at the start | [Official source](https://www.irs.gov/irb/2025-45_IRB) / [related source](https://www.irs.gov/newsroom/qualified-business-income-deduction) |
+| **What happens if below** | Potential deduction remains subject to qualified income, taxable-income/net-capital-gain and other eligibility limits; not a guaranteed full twenty percent of every profit | [Official source](https://www.irs.gov/irb/2025-45_IRB) / [related source](https://www.irs.gov/newsroom/qualified-business-income-deduction) |
+| **Measurement period** | Tax years beginning in 2026; do not substitute the old 2025 table | [Official source](https://www.irs.gov/irb/2025-45_IRB) / [related source](https://www.irs.gov/newsroom/qualified-business-income-deduction) |
+| **Action if approaching** | Confirm SSTB classification and actual allowable retirement/HSA/health-insurance deductions, contribution limits and lawful timing with the country computation; do not invent deductible contributions to hit the limit | [Official source](https://www.irs.gov/irb/2025-45_IRB) / [related source](https://www.irs.gov/newsroom/qualified-business-income-deduction) |
+| **Primary source** | IRS Rev. Proc. 2025-32 section .26, all three filing-status rows; IRS QBI overview for eligibility/limitations | [Official source](https://www.irs.gov/irb/2025-45_IRB) / [related source](https://www.irs.gov/newsroom/qualified-business-income-deduction) |
 
-**US -- QBI Deduction Phase-out**  _(IRC section 199A(d)(3); Rev. Proc. 2024-40 (inflation adjustment))_
+### 3.3 US - Social Security Tax Cap (OASDI)
 
-| Field | Value |
-| --- | --- |
-| **Jurisdiction** | US (federal) |
-| **Threshold name** | Qualified Business Income deduction income cliff |
-| **Amount** | $197,300 (single) / $394,600 (MFJ) taxable income before QBI deduction (2025, indexed) |
-| **What happens if exceeded** | For specified service trades or businesses (SSTBs): QBI deduction phases out over next $50,000 (single) / $100,000 (MFJ) and reaches zero. Can cost thousands in additional tax. |
-| **What happens if below** | Full 20% QBI deduction on qualified business income, regardless of business type. |
-| **Measurement period** | Tax year |
-| **Action if approaching** | Maximise above-the-line deductions (retirement contributions, HSA, SE health insurance) to stay below. Consider timing of income/deductions. Review whether business is an SSTB. |
-| **Primary source** | IRC section 199A(d)(3); Rev. Proc. 2024-40 (inflation adjustment) |
+| Field | Value | Source |
+| --- | --- | --- |
+| **Threshold name** | Combined OASDI base and continuing Medicare obligations | [Official source](https://www.irs.gov/businesses/small-businesses-self-employed/self-employment-tax-social-security-and-medicare-taxes) / [related source](https://www.ssa.gov/oact/cola/cbb.html) |
+| **Jurisdiction** | US federal; reconcile wages/tips and actual Schedule SE net earnings | [Official source](https://www.irs.gov/businesses/small-businesses-self-employed/self-employment-tax-social-security-and-medicare-taxes) / [related source](https://www.ssa.gov/oact/cola/cbb.html) |
+| **Amount** | 2026 combined Social Security base USD 184,500; SE components 12.4% OASDI and 2.9% Medicare | [Official source](https://www.irs.gov/businesses/small-businesses-self-employed/self-employment-tax-social-security-and-medicare-taxes) / [related source](https://www.ssa.gov/oact/cola/cbb.html) |
+| **What happens if exceeded** | OASDI applies only up to the remaining combined base; Medicare continues. Separate 0.9% Additional Medicare test: MFJ USD 250,000, MFS USD 125,000, other listed statuses USD 200,000 | [Official source](https://www.irs.gov/businesses/small-businesses-self-employed/self-employment-tax-social-security-and-medicare-taxes) / [related source](https://www.ssa.gov/oact/cola/cbb.html) |
+| **What happens if below** | Do not multiply raw business profit by the combined rate without the actual Schedule SE earnings computation and wage coordination | [Official source](https://www.irs.gov/businesses/small-businesses-self-employed/self-employment-tax-social-security-and-medicare-taxes) / [related source](https://www.ssa.gov/oact/cola/cbb.html) |
+| **Measurement period** | Applicable tax year; confirm non-calendar-year instructions where relevant | [Official source](https://www.irs.gov/businesses/small-businesses-self-employed/self-employment-tax-social-security-and-medicare-taxes) / [related source](https://www.ssa.gov/oact/cola/cbb.html) |
+| **Action if approaching** | Reforecast cash payments without treating reaching the cap as exemption from Medicare or a filing/payment obligation | [Official source](https://www.irs.gov/businesses/small-businesses-self-employed/self-employment-tax-social-security-and-medicare-taxes) / [related source](https://www.ssa.gov/oact/cola/cbb.html) |
+| **Primary source** | SSA contribution/base history for 2026; IRS self-employment tax rate and filing-status table | [Official source](https://www.irs.gov/businesses/small-businesses-self-employed/self-employment-tax-social-security-and-medicare-taxes) / [related source](https://www.ssa.gov/oact/cola/cbb.html) |
 
-### 3.3 US -- Social Security Tax Cap (OASDI)
+### 3.4 UK - VAT Registration Threshold
 
-**US -- Social Security Tax Cap (OASDI)**  _(IRC section 1401; SSA wage base announcement)_
+| Field | Value | Source |
+| --- | --- | --- |
+| **Threshold name** | UK compulsory VAT registration, two distinct timing tests | [Official source](https://www.gov.uk/register-for-vat) |
+| **Jurisdiction** | UK ordinary taxable-turnover test; non-established suppliers and special acquisition/takeover rules need separate assessment | [Official source](https://www.gov.uk/register-for-vat) |
+| **Amount** | Over GBP 90,000 taxable turnover, not at equality | [Official source](https://www.gov.uk/register-for-vat) |
+| **What happens if exceeded** | Past test: apply within thirty days of the end of the crossing month; effective first day of the second month after crossing. Forward test: apply by the end of the thirty-day period; effective when the expectation was realised | [Official source](https://www.gov.uk/register-for-vat) |
+| **What happens if below** | Below this ordinary threshold does not exclude non-established/special liabilities; voluntary registration may be available, and only exempt/out-of-scope supplies do not create ordinary taxable turnover | [Official source](https://www.gov.uk/register-for-vat) |
+| **Measurement period** | Past twelve months, or expected taxable turnover over the limit in the next thirty days alone, with required inclusions such as zero-rated sales | [Official source](https://www.gov.uk/register-for-vat) |
+| **Action if approaching** | Prepare pricing and actual VAT reporting/software obligations, verify input VAT eligibility, and assess any approved temporary-exceedance exception; do not make VAT effective automatically on the crossing day | [Official source](https://www.gov.uk/register-for-vat) |
+| **Primary source** | HMRC registration, calculation, retrospective/prospective timing, late registration and special situations | [Official source](https://www.gov.uk/register-for-vat) |
 
-| Field | Value |
-| --- | --- |
-| **Jurisdiction** | US (federal) |
-| **Threshold name** | OASDI wage base / SE tax cap |
-| **Amount** | $176,100 (2025) |
-| **What happens if exceeded** | Stop paying the 12.4% OASDI portion of SE tax on earnings above the cap. Only 2.9% Medicare tax (+ 0.9% Additional Medicare Tax above $200K/$250K) applies. Effective SE tax rate drops significantly. |
-| **What happens if below** | Full 15.3% SE tax rate applies (12.4% OASDI + 2.9% Medicare). |
-| **Measurement period** | Tax year (calendar year for SE tax) |
-| **Action if approaching** | This is informational -- no action required. Useful for cash flow planning: SE tax burden decreases once cap is reached. |
-| **Primary source** | IRC section 1401; SSA wage base announcement |
+### 3.5 UK - Personal Allowance Taper
 
-### 3.4 UK -- VAT Registration Threshold
+| Field | Value | Source |
+| --- | --- | --- |
+| **Threshold name** | UK adjusted-net-income Personal Allowance taper | [Official source](https://www.gov.uk/income-tax-rates/income-over-100000) |
+| **Jurisdiction** | UK; entitlement, income category and Scottish status matter | [Official source](https://www.gov.uk/income-tax-rates/income-over-100000) |
+| **Amount** | 2026-27 standard allowance GBP 12,570; adjusted net income over GBP 100,000 reduces it by GBP 1 per GBP 2, to zero at GBP 125,140 | [Official source](https://www.gov.uk/income-tax-rates/income-over-100000) |
+| **What happens if exceeded** | Apply the allowance reduction to the actual computation; a universal sixty-percent marginal rate is not a rule for every income/region | [Official source](https://www.gov.uk/income-tax-rates/income-over-100000) |
+| **What happens if below** | Full standard allowance only if otherwise entitled; other allowances and reliefs remain separate | [Official source](https://www.gov.uk/income-tax-rates/income-over-100000) |
+| **Measurement period** | UK tax year, sixth April through fifth April; compare adjusted net income, not gross receipts | [Official source](https://www.gov.uk/income-tax-rates/income-over-100000) |
+| **Action if approaching** | Assess actual qualifying pension or Gift Aid treatment and limits before changing adjusted net income; use lawful recognition, not arbitrary invoice shifting | [Official source](https://www.gov.uk/income-tax-rates/income-over-100000) |
+| **Primary source** | HMRC current 2026-27 rates and adjusted-net-income taper | [Official source](https://www.gov.uk/income-tax-rates/income-over-100000) |
 
-**UK -- VAT Registration Threshold**  _(VAT Act 1994, Schedule 1, para. 1; SI 2024/309)_
+### 3.6 DE - Kleinunternehmer (Small Business VAT Exemption)
 
-| Field | Value |
-| --- | --- |
-| **Jurisdiction** | GB |
-| **Threshold name** | Compulsory VAT registration |
-| **Amount** | GBP 90,000 taxable turnover (from 1 April 2024) |
-| **What happens if exceeded** | Must register for VAT within 30 days. Must charge VAT on taxable supplies. Must file VAT returns (quarterly under MTD). Can recover input VAT. |
-| **What happens if below** | No obligation to register. May register voluntarily. Cannot charge VAT (unless voluntarily registered). |
-| **Measurement period** | Rolling 12 months (backward-looking) OR expected turnover in next 30 days alone |
-| **Action if approaching** | Consider voluntary registration if significant input VAT to recover. Review pricing strategy. Prepare MTD-compatible software. Registration effective from date threshold exceeded, not date of application. |
-| **Primary source** | VAT Act 1994, Schedule 1, para. 1; SI 2024/309 |
+| Field | Value | Source |
+| --- | --- | --- |
+| **Threshold name** | German small-business VAT exemption, prior/current tests | [Official source](https://www.gesetze-im-internet.de/ustg_1980/__19.html) |
+| **Jurisdiction** | DE domestic business; other-EU establishment has additional conditions under subsection four | [Official source](https://www.gesetze-im-internet.de/ustg_1980/__19.html) |
+| **Amount** | Prior calendar-year Gesamtumsatz not above EUR 25,000 and current-year not above EUR 100,000; actual receipts-based statutory turnover excludes specified exempt/ancillary and capital-asset disposals | [Official source](https://www.gesetze-im-internet.de/ustg_1980/__19.html) |
+| **What happens if exceeded** | Do not wait automatically until next year: the current-year exemption condition fails once the current limit is exceeded. Determine the affected supply, filing and input-tax consequences from the German implementation | [Official source](https://www.gesetze-im-internet.de/ustg_1980/__19.html) |
+| **What happens if below** | Eligible domestic supplies are exempt under the actual scheme, not an unrestricted exemption for every cross-border transaction | [Official source](https://www.gesetze-im-internet.de/ustg_1980/__19.html) |
+| **Measurement period** | Prior and current calendar years, not a forecast replacing actual current-year receipts | [Official source](https://www.gesetze-im-internet.de/ustg_1980/__19.html) |
+| **Action if approaching** | Compare lawful election/input-tax effects; a waiver binds at least five calendar years. Startup and exact crossing-supply implementation require the country rule, not an invented universal forecast test | [Official source](https://www.gesetze-im-internet.de/ustg_1980/__19.html) |
+| **Primary source** | UStG section 19 paragraphs one to six | [Official source](https://www.gesetze-im-internet.de/ustg_1980/__19.html) |
 
-### 3.5 UK -- Personal Allowance Taper
+### 3.7 AU - GST Registration Threshold
 
-**UK -- Personal Allowance Taper**  _(ITA 2007, s. 35; Income Tax (Earnings and Pensions) Act 2003)_
+| Field | Value | Source |
+| --- | --- | --- |
+| **Threshold name** | Australian GST registration with statutory turnover measure | [Official source](https://smallbusiness.taxsuperandyou.gov.au/goods-and-services-tax/do-i-need-to-register) / [related source](https://www.legislation.gov.au/C2004A00446/2026-01-01/2026-01-01/text/original/epub/OEBPS/document_2/document_2.html) |
+| **Jurisdiction** | AU ordinary enterprise; not-for-profit and taxi/ride-sourcing rules differ | [Official source](https://smallbusiness.taxsuperandyou.gov.au/goods-and-services-tax/do-i-need-to-register) / [related source](https://www.legislation.gov.au/C2004A00446/2026-01-01/2026-01-01/text/original/epub/OEBPS/document_2/document_2.html) |
+| **Amount** | GST turnover AUD 75,000 or more; not-for-profit AUD 150,000 or more. Taxi/ride-sourcing regardless of turnover; fuel-credit claims also require registration | [Official source](https://smallbusiness.taxsuperandyou.gov.au/goods-and-services-tax/do-i-need-to-register) / [related source](https://www.legislation.gov.au/C2004A00446/2026-01-01/2026-01-01/text/original/epub/OEBPS/document_2/document_2.html) |
+| **What happens if exceeded** | ATO instructs registration within twenty-one days when the registration criterion is reached/expected; establish effective date and actual taxable-supply/BAS/input-credit rules rather than tax every receipt | [Official source](https://smallbusiness.taxsuperandyou.gov.au/goods-and-services-tax/do-i-need-to-register) / [related source](https://www.legislation.gov.au/C2004A00446/2026-01-01/2026-01-01/text/original/epub/OEBPS/document_2/document_2.html) |
+| **What happens if below** | Voluntary registration can be available, bringing actual GST/BAS duties; a below-limit ordinary business may still meet another registration trigger | [Official source](https://smallbusiness.taxsuperandyou.gov.au/goods-and-services-tax/do-i-need-to-register) / [related source](https://www.legislation.gov.au/C2004A00446/2026-01-01/2026-01-01/text/original/epub/OEBPS/document_2/document_2.html) |
+| **Measurement period** | Act section 188-10: projected turnover at least the limit, or current turnover at least the limit unless Commissioner satisfied projected turnover is below. Current month plus prior eleven, and current plus next eleven, apply the actual exclusions/grouping | [Official source](https://smallbusiness.taxsuperandyou.gov.au/goods-and-services-tax/do-i-need-to-register) / [related source](https://www.legislation.gov.au/C2004A00446/2026-01-01/2026-01-01/text/original/epub/OEBPS/document_2/document_2.html) |
+| **Action if approaching** | Monitor monthly; review GST-inclusive/exclusive contracts and eligible credits. Do not substitute total accounting sales or ignore projected-turnover exclusions for capital assets/cessation | [Official source](https://smallbusiness.taxsuperandyou.gov.au/goods-and-services-tax/do-i-need-to-register) / [related source](https://www.legislation.gov.au/C2004A00446/2026-01-01/2026-01-01/text/original/epub/OEBPS/document_2/document_2.html) |
+| **Primary source** | ATO education registration guidance; current GST Act sections 188-10 to 188-25 | [Official source](https://smallbusiness.taxsuperandyou.gov.au/goods-and-services-tax/do-i-need-to-register) / [related source](https://www.legislation.gov.au/C2004A00446/2026-01-01/2026-01-01/text/original/epub/OEBPS/document_2/document_2.html) |
 
-| Field | Value |
-| --- | --- |
-| **Jurisdiction** | GB |
-| **Threshold name** | Personal allowance income taper |
-| **Amount** | GBP 100,000 adjusted net income |
-| **What happens if exceeded** | Lose GBP 1 of personal allowance for every GBP 2 of income above GBP 100,000. PA fully lost at GBP 125,140. Creates an effective 60% marginal tax rate in the GBP 100,000--125,140 band. |
-| **What happens if below** | Full GBP 12,570 personal allowance. |
-| **Measurement period** | Tax year (6 Apr -- 5 Apr) |
-| **Action if approaching** | Maximise pension contributions (relief at source reduces adjusted net income). Consider charitable donations under Gift Aid. Timing of income recognition. |
-| **Primary source** | ITA 2007, s. 35; Income Tax (Earnings and Pensions) Act 2003 |
+### 3.8 AU - Medicare Levy Surcharge (MLS)
 
-### 3.6 DE -- Kleinunternehmer (Small Business VAT Exemption)
+| Field | Value | Source |
+| --- | --- | --- |
+| **Threshold name** | Australian Medicare Levy Surcharge tiers and cover | [Official source](https://privatehealth.gov.au/health_insurance/surcharges_incentives/medicare_levy.htm) |
+| **Jurisdiction** | AU actual single/family status, dependants, MLS income and uninsured days | [Official source](https://privatehealth.gov.au/health_insurance/surcharges_incentives/medicare_levy.htm) |
+| **Amount** | 2026-27 single tiers: no surcharge through AUD 105,000; 1% from AUD 105,001 to AUD 123,000; 1.25% from AUD 123,001 to AUD 164,000; 1.5% from AUD 164,001 | [Official source](https://privatehealth.gov.au/health_insurance/surcharges_incentives/medicare_levy.htm) |
+| **What happens if exceeded** | The relevant surcharge can apply for uncovered days, subject to exemptions and the actual surcharge base; it is distinct from the ordinary Medicare levy | [Official source](https://privatehealth.gov.au/health_insurance/surcharges_incentives/medicare_levy.htm) |
+| **What happens if below** | At/below the applicable base tier no MLS; families use the corresponding family thresholds, with the specified dependent-child adjustment | [Official source](https://privatehealth.gov.au/health_insurance/surcharges_incentives/medicare_levy.htm) |
+| **Measurement period** | First July to thirtieth June. The preceding 2025-26 single boundaries are AUD 101,000, AUD 118,000 and AUD 158,000; never apply the later year retrospectively | [Official source](https://privatehealth.gov.au/health_insurance/surcharges_incentives/medicare_levy.htm) |
+| **Action if approaching** | Compare actual eligible hospital-cover quote, covered family members and days against the supported MLS computation. Extras-only, overseas/student or non-registered cover is not a substitute. No assumed policy market price | [Official source](https://privatehealth.gov.au/health_insurance/surcharges_incentives/medicare_levy.htm) |
+| **Primary source** | Commonwealth privatehealth.gov.au MLS page, both financial-year tables, rates, dependants, cover and partial-year rules | [Official source](https://privatehealth.gov.au/health_insurance/surcharges_incentives/medicare_levy.htm) |
 
-**DE -- Kleinunternehmer (Small Business VAT Exemption)**  _(UStG section 19(1); Jahressteuergesetz 2024)_
+### 3.9 IN - Presumptive Taxation Threshold (44ADA)
 
-| Field | Value |
-| --- | --- |
-| **Jurisdiction** | DE |
-| **Threshold name** | Kleinunternehmerregelung (small entrepreneur scheme) |
-| **Amount** | EUR 25,000 gross revenue in current calendar year (revised from EUR 22,000 effective 2025 under JStG 2024) |
-| **What happens if exceeded** | Must charge VAT (Umsatzsteuer) on all supplies from the following year. Must file UStVA monthly or quarterly. Can recover input VAT. |
-| **What happens if below** | No obligation to charge VAT. Cannot recover input VAT. Invoices must state Kleinunternehmer exemption. |
-| **Measurement period** | Current calendar year gross revenue. Also: prior-year threshold of EUR 25,000 gross and current-year expected revenue of EUR 100,000. |
-| **Action if approaching** | Evaluate whether input VAT recovery would exceed the administrative burden. Consider voluntary opt-in (Regelbesteuerung) if significant B2B sales. 5-year binding period if opting in. |
-| **Primary source** | UStG section 19(1); Jahressteuergesetz 2024 |
+| Field | Value | Source |
+| --- | --- | --- |
+| **Threshold name** | Indian professional presumptive method, latest verified filing cycle | [Official source](https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/file-itr-4-sugam-online) |
+| **Jurisdiction** | IN resident individual or partnership other than LLP, specified profession; ITR-4 eligibility is a separate additional test | [Official source](https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/file-itr-4-sugam-online) |
+| **Amount** | FY 2025-26 / AY 2026-27: gross receipts up to INR 75 lakh where cash receipts do not exceed 5% of total; otherwise up to INR 50 lakh | [Official source](https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/file-itr-4-sugam-online) |
+| **What happens if exceeded** | Outside the applicable receipts/eligibility limit, assess actual books, audit and return requirements under the governing provisions; no universal automatic audit or July-to-October filing-date switch | [Official source](https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/file-itr-4-sugam-online) |
+| **What happens if below** | Qualifying election generally uses fifty percent professional receipts and its books rules; separate ITR-4 income/exclusion conditions still apply | [Official source](https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/file-itr-4-sugam-online) |
+| **Measurement period** | Latest verified 2025-2026 filing cycle only; do not relabel section 44ADA as the confirmed successor for FY 2026-27 | [Official source](https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/file-itr-4-sugam-online) |
+| **Action if approaching** | Track actual receipts and cash proportion including equality at five percent; keep records proving eligibility. A deferred invoice does not establish deferred recognition. Confirm current law/year before advising the next cycle | [Official source](https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/file-itr-4-sugam-online) |
+| **Primary source** | Income Tax Department AY 2026-27 ITR-4 FAQs, especially questions one/two, ten, thirteen through sixteen | [Official source](https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/file-itr-4-sugam-online) |
 
-### 3.7 AU -- GST Registration Threshold
+### 3.10 ES - Estimacion Directa Simplificada Limit
 
-**AU -- GST Registration Threshold**  _(A New Tax System (Goods and Services Tax) Act 1999, s. 23-15)_
+| Field | Value | Source |
+| --- | --- | --- |
+| **Threshold name** | Spanish simplified direct-estimation eligibility and benefit | [Official source](https://sede.agenciatributaria.gob.es/Sede/irpf/empresarios-individuales-profesionales/regimenes-determinar-rendimiento-actividad/estimacion-directa-simplificada.html) |
+| **Jurisdiction** | ES individual economic activities; aggregate all activities and incompatible methods/elections | [Official source](https://sede.agenciatributaria.gob.es/Sede/irpf/empresarios-individuales-profesionales/regimenes-determinar-rendimiento-actividad/estimacion-directa-simplificada.html) |
+| **Amount** | Prior-year aggregate net turnover not above EUR 600,000; annualise the preceding startup year where required | [Official source](https://sede.agenciatributaria.gob.es/Sede/irpf/empresarios-individuales-profesionales/regimenes-determinar-rendimiento-actividad/estimacion-directa-simplificada.html) |
+| **What happens if exceeded** | Assess normal direct estimation and actual transition records; the allowance is not a tax credit or a fixed tax saving | [Official source](https://sede.agenciatributaria.gob.es/Sede/irpf/empresarios-individuales-profesionales/regimenes-determinar-rendimiento-actividad/estimacion-directa-simplificada.html) |
+| **What happens if below** | If otherwise eligible/no renunciation, general allowance 5% of positive net result before these provisions/expenses, capped EUR 2,000; Ceuta rate 10% in 2026, and incompatible reduction conditions apply | [Official source](https://sede.agenciatributaria.gob.es/Sede/irpf/empresarios-individuales-profesionales/regimenes-determinar-rendimiento-actividad/estimacion-directa-simplificada.html) |
+| **Measurement period** | Prior calendar year for turnover eligibility; current actual eligible positive result for the expense allowance | [Official source](https://sede.agenciatributaria.gob.es/Sede/irpf/empresarios-individuales-profesionales/regimenes-determinar-rendimiento-actividad/estimacion-directa-simplificada.html) |
+| **Action if approaching** | Prepare complete records and actual method transition. Compare actual marginal liability, not an assumed forty-five-percent rate or automatic EUR nine-hundred saving | [Official source](https://sede.agenciatributaria.gob.es/Sede/irpf/empresarios-individuales-profesionales/regimenes-determinar-rendimiento-actividad/estimacion-directa-simplificada.html) |
+| **Primary source** | AEAT simplified direct-estimation page, updated September 2026, eligibility and calculation including Ceuta exception | [Official source](https://sede.agenciatributaria.gob.es/Sede/irpf/empresarios-individuales-profesionales/regimenes-determinar-rendimiento-actividad/estimacion-directa-simplificada.html) |
 
-| Field | Value |
-| --- | --- |
-| **Jurisdiction** | AU |
-| **Threshold name** | Compulsory GST registration |
-| **Amount** | AUD 75,000 annual turnover (GST turnover) |
-| **What happens if exceeded** | Must register for GST within 21 days. Must charge 10% GST on taxable supplies. Must lodge BAS. Can claim input tax credits. |
-| **What happens if below** | No obligation to register. May register voluntarily. |
-| **Measurement period** | Current month's turnover + prior 11 months, OR projected turnover for current month + next 11 months |
-| **Action if approaching** | Consider voluntary registration for input tax credits. Review contracts -- GST-inclusive or exclusive pricing. Register before exceeding to avoid retrospective obligations. |
-| **Primary source** | A New Tax System (Goods and Services Tax) Act 1999, s. 23-15 |
+### 3.11 NL - Kleineondernemersregeling (KOR)
 
-### 3.8 AU -- Medicare Levy Surcharge (MLS)
+| Field | Value | Source |
+| --- | --- | --- |
+| **Threshold name** | Dutch KOR participation and crossing | [Official source](https://www.belastingdienst.nl/wps/wcm/connect/nl/btw/content/afmelden-kor) / [related source](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/btw/hoe_werkt_de_btw/kleineondernemersregeling/kleineondernemersregeling) |
+| **Jurisdiction** | NL established eligible participant; EU-KOR is a separate cross-border scheme | [Official source](https://www.belastingdienst.nl/wps/wcm/connect/nl/btw/content/afmelden-kor) / [related source](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/btw/hoe_werkt_de_btw/kleineondernemersregeling/kleineondernemersregeling) |
+| **Amount** | Calendar-year turnover not more than EUR 20,000 for ordinary KOR participation | [Official source](https://www.belastingdienst.nl/wps/wcm/connect/nl/btw/content/afmelden-kor) / [related source](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/btw/hoe_werkt_de_btw/kleineondernemersregeling/kleineondernemersregeling) |
+| **What happens if exceeded** | On exceeding the limit, notify immediately; the entire crossing supply is outside the KOR exemption, not just the excess | [Official source](https://www.belastingdienst.nl/wps/wcm/connect/nl/btw/content/afmelden-kor) / [related source](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/btw/hoe_werkt_de_btw/kleineondernemersregeling/kleineondernemersregeling) |
+| **What happens if below** | KOR requires participation, not automatic exemption for every small business. No ordinary charged VAT/input recovery under the scheme; cross-border facts can still require incidental returns | [Official source](https://www.belastingdienst.nl/wps/wcm/connect/nl/btw/content/afmelden-kor) / [related source](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/btw/hoe_werkt_de_btw/kleineondernemersregeling/kleineondernemersregeling) |
+| **Measurement period** | Calendar year. Voluntary exit can start at the first day of a return period with at least four weeks notice; no old three-year lock-in | [Official source](https://www.belastingdienst.nl/wps/wcm/connect/nl/btw/content/afmelden-kor) / [related source](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/btw/hoe_werkt_de_btw/kleineondernemersregeling/kleineondernemersregeling) |
+| **Action if approaching** | Compare actual input-VAT/pricing consequences, notify through the authority route, and check final termination date. Re-entry excluded for the remaining exit calendar year and the following year | [Official source](https://www.belastingdienst.nl/wps/wcm/connect/nl/btw/content/afmelden-kor) / [related source](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/btw/hoe_werkt_de_btw/kleineondernemersregeling/kleineondernemersregeling) |
+| **Primary source** | Belastingdienst KOR overview and current exit/re-entry page | [Official source](https://www.belastingdienst.nl/wps/wcm/connect/nl/btw/content/afmelden-kor) / [related source](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/btw/hoe_werkt_de_btw/kleineondernemersregeling/kleineondernemersregeling) |
 
-**AU -- Medicare Levy Surcharge (MLS)**  _(A New Tax System (Medicare Levy Surcharge--Fringe Benefits) Act 1999)_
+### 3.12 SG - GST Registration Threshold
 
-| Field | Value |
-| --- | --- |
-| **Jurisdiction** | AU |
-| **Threshold name** | Medicare Levy Surcharge (no private health insurance) |
-| **Amount** | AUD 97,000 income for MLS purposes (single, 2024-25) |
-| **What happens if exceeded** | 1.0% surcharge on taxable income (Tier 1: $97,001--$113,000); 1.25% (Tier 2: $113,001--$151,000); 1.5% (Tier 3: $151,001+). Applies if no complying private hospital insurance. |
-| **What happens if below** | No MLS regardless of private health insurance status. |
-| **Measurement period** | Financial year (1 Jul -- 30 Jun) |
-| **Action if approaching** | Compare cost of basic private hospital cover vs MLS. Hospital-only policies from ~AUD 1,200/year may be cheaper than the surcharge (1% of $97,000 = $970). Break-even analysis required. |
-| **Primary source** | A New Tax System (Medicare Levy Surcharge--Fringe Benefits) Act 1999 |
+| Field | Value | Source |
+| --- | --- | --- |
+| **Threshold name** | Singapore GST registration with separate effective dates | [Official source](https://www.iras.gov.sg/taxes/goods-services-tax-%28gst%29/gst-registration-deregistration/do-i-need-to-register-for-gst) |
+| **Jurisdiction** | SG actual taxable supplies; reverse-charge/overseas-vendor regimes and exceptions separately assessed | [Official source](https://www.iras.gov.sg/taxes/goods-services-tax-%28gst%29/gst-registration-deregistration/do-i-need-to-register-for-gst) |
+| **Amount** | More than SGD 1 million taxable turnover; include standard/zero-rated supplies, exclude relevant exempt/out-of-scope and capital-asset sales | [Official source](https://www.iras.gov.sg/taxes/goods-services-tax-%28gst%29/gst-registration-deregistration/do-i-need-to-register-for-gst) |
+| **What happens if exceeded** | Retrospective: apply first to thirtieth January next year, effective first March. Prospective liability arising from first July 2025: apply within thirty days of supported forecast, effective two months from forecast | [Official source](https://www.iras.gov.sg/taxes/goods-services-tax-%28gst%29/gst-registration-deregistration/do-i-need-to-register-for-gst) |
+| **What happens if below** | Ordinary test may not require compulsory registration, but other regimes can; voluntary registration and any commitment require their own conditions | [Official source](https://www.iras.gov.sg/taxes/goods-services-tax-%28gst%29/gst-registration-deregistration/do-i-need-to-register-for-gst) |
+| **Measurement period** | Retrospective calendar year, not past four rolling quarters. Prospective next twelve months with objective evidence, not merely a business sales target | [Official source](https://www.iras.gov.sg/taxes/goods-services-tax-%28gst%29/gst-registration-deregistration/do-i-need-to-register-for-gst) |
+| **Action if approaching** | Prepare pricing and accounting without assuming most sole traders are below the threshold. Verify supported registration exception, effective date, actual rates/returns/credits and any voluntary commitment | [Official source](https://www.iras.gov.sg/taxes/goods-services-tax-%28gst%29/gst-registration-deregistration/do-i-need-to-register-for-gst) |
+| **Primary source** | IRAS compulsory registration, taxable-turnover definition, dated prospective change, examples and exceptions | [Official source](https://www.iras.gov.sg/taxes/goods-services-tax-%28gst%29/gst-registration-deregistration/do-i-need-to-register-for-gst) |
 
-### 3.9 IN -- Presumptive Taxation Threshold (44ADA)
+### 3.13 MT - Article 11 VAT Exemption Threshold
 
-**IN -- Presumptive Taxation Threshold (44ADA)**  _(Income Tax Act 1961, s. 44ADA; Finance Act 2023 (raised threshold))_
+| Field | Value | Source |
+| --- | --- | --- |
+| **Threshold name** | Malta Article 11 domestic small-enterprise scheme | [Official source](https://legislation.mt/getpdf/6ac352947b5e681a8405fbf4) |
+| **Jurisdiction** | MT established taxable person; related-person aggregation for non-physical persons and Article 12 obligations remain relevant | [Official source](https://legislation.mt/getpdf/6ac352947b5e681a8405fbf4) |
+| **Amount** | Domestic calendar-year turnover EUR 35,000 exclusive of VAT under Sixth Schedule definitions; no separate rental-income add-on | [Official source](https://legislation.mt/getpdf/6ac352947b5e681a8405fbf4) |
+| **What happens if exceeded** | Qualification ceases on exceeding the domestic threshold. Article 11(5)(b) requires cancellation application within fifteen days; (7) provides following-month cancellation on that application, while (8) permits Commissioner cancellation from the actual loss date. Determine Article 10 liability/date from the law, not a generic crossing-day promise | [Official source](https://legislation.mt/getpdf/6ac352947b5e681a8405fbf4) |
+| **What happens if below** | Actual Article 11 exemption/annual declaration requirements apply, not automatic ordinary registration relief for every small activity. Some transactions still require Article 12 registration | [Official source](https://legislation.mt/getpdf/6ac352947b5e681a8405fbf4) |
+| **Measurement period** | Preceding calendar year for application; current calendar year for continued qualification, with statutory turnover inclusions/exclusions. Not rolling twelve months | [Official source](https://legislation.mt/getpdf/6ac352947b5e681a8405fbf4) |
+| **Action if approaching** | Reconcile turnover and eligibility, related parties, input-credit/pricing effect and actual registration dates before crossing. Apply actual Article 10/12 rules rather than inferring all supplies bear one standard rate | [Official source](https://legislation.mt/getpdf/6ac352947b5e681a8405fbf4) |
+| **Primary source** | VAT Act Cap. 406 Article 11 and Sixth Schedule definitions/Part One, current downloaded consolidated law | [Official source](https://legislation.mt/getpdf/6ac352947b5e681a8405fbf4) |
 
-| Field | Value |
-| --- | --- |
-| **Jurisdiction** | IN |
-| **Threshold name** | Presumptive taxation for professionals (section 44ADA) |
-| **Amount** | INR 75 lakh gross receipts (if >95% digital receipts); INR 50 lakh (otherwise) |
-| **What happens if exceeded** | Must maintain full books of accounts. Must get tax audit under section 44AB. Filing deadline moves from Jul 31 to Oct 31. Actual profit taxed (no presumptive benefit). Significant compliance burden increase. |
-| **What happens if below** | Can declare 50% of gross receipts as deemed profit. No books of accounts required. Simplified ITR-4 filing. No audit. |
-| **Measurement period** | Financial year (1 Apr -- 31 Mar) |
-| **Action if approaching** | Track gross receipts monthly. If close, consider deferring invoicing to next FY (if commercially acceptable). Ensure >95% digital receipts to use the higher INR 75L threshold. |
-| **Primary source** | Income Tax Act 1961, s. 44ADA; Finance Act 2023 (raised threshold) |
+### 3.14 CA - Small Supplier Threshold (GST/HST)
 
-### 3.10 ES -- Estimacion Directa Simplificada Limit
+| Field | Value | Source |
+| --- | --- | --- |
+| **Threshold name** | Canadian GST/HST ordinary small-supplier timing | [Official source](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/when-register-charge.html) |
+| **Jurisdiction** | CA ordinary business; worldwide taxable supplies of all businesses and relevant associates, not only Canadian receipts | [Official source](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/when-register-charge.html) |
+| **Amount** | CAD 30,000 over four consecutive calendar quarters or within one quarter; include zero-rated taxable supplies, exclude financial services, capital-property sales and business-sale goodwill | [Official source](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/when-register-charge.html) |
+| **What happens if exceeded** | Single-quarter excess: charge the entire crossing supply; effective registration no later than that day. Multi-quarter-only excess: small-supplier status ends at the end of the following month; effective no later than first supply after that. Apply within twenty-nine days of effective date | [Official source](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/when-register-charge.html) |
+| **What happens if below** | Ordinary small supplier may register voluntarily, subject to actual taxable-supply eligibility. Charity/public-body and taxi/ride-sharing/special regimes need their own tests | [Official source](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/when-register-charge.html) |
+| **Measurement period** | Calendar quarters; distinguish within-quarter crossing from aggregate crossing and the following-month grace period | [Official source](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/when-register-charge.html) |
+| **Action if approaching** | Prepare pricing, actual tax/place/rate and credit eligibility; do not make multi-quarter registration effective automatically on the next quarter's first day | [Official source](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/when-register-charge.html) |
+| **Primary source** | CRA registration page, most-business table/examples and worldwide-associated-supply footnotes | [Official source](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/when-register-charge.html) |
 
-**ES -- Estimacion Directa Simplificada Limit**  _(LIRPF art. 28, 30; RIRPF art. 28--30)_
-
-| Field | Value |
-| --- | --- |
-| **Jurisdiction** | ES |
-| **Threshold name** | Simplified direct estimation method (estimacion directa simplificada) |
-| **Amount** | EUR 600,000 net revenue in prior year |
-| **What happens if exceeded** | Must use estimacion directa normal (full accounting method). Lose the 5% general deduction (dificulmente justificables) capped at EUR 2,000. Full bookkeeping requirements. |
-| **What happens if below** | Can use simplified method: 5% flat deduction for hard-to-justify expenses (max EUR 2,000/year). Simplified record-keeping. |
-| **Measurement period** | Prior calendar year net revenue |
-| **Action if approaching** | Prepare for full bookkeeping. The actual difference may be modest (max EUR 2,000 deduction lost = max ~EUR 900 tax at 45% marginal rate). Focus on ensuring full records are maintained. |
-| **Primary source** | LIRPF art. 28, 30; RIRPF art. 28--30 |
-
-### 3.11 NL -- Kleineondernemersregeling (KOR)
-
-**NL -- Kleineondernemersregeling (KOR)**  _(Wet op de omzetbelasting 1968, art. 25 (as amended 1 Jan 2020))_
-
-| Field | Value |
-| --- | --- |
-| **Jurisdiction** | NL |
-| **Threshold name** | Small entrepreneurs scheme (KOR) |
-| **Amount** | EUR 20,000 annual turnover |
-| **What happens if exceeded** | Must deregister from KOR. Must charge BTW on all taxable supplies. Must file quarterly BTW returns. Can recover input BTW (voorbelasting). |
-| **What happens if below** | VAT exempt under KOR. No BTW on invoices. No BTW returns. Cannot recover input BTW. 3-year minimum registration period. |
-| **Measurement period** | Calendar year |
-| **Action if approaching** | Evaluate input BTW recovery vs. pricing advantage of no BTW. KOR exit is automatic -- must notify Belastingdienst. New KOR registration has 3-year lock-in. |
-| **Primary source** | Wet op de omzetbelasting 1968, art. 25 (as amended 1 Jan 2020) |
-
-### 3.12 SG -- GST Registration Threshold
-
-**SG -- GST Registration Threshold**  _(Goods and Services Tax Act 1993, s. 8, Third Schedule)_
-
-| Field | Value |
-| --- | --- |
-| **Jurisdiction** | SG |
-| **Threshold name** | Compulsory GST registration |
-| **Amount** | SGD 1,000,000 annual taxable turnover |
-| **What happens if exceeded** | Must register for GST within 30 days. Must charge 9% GST (from 1 Jan 2024). Must file quarterly GST returns (GST F5). Can claim input tax. |
-| **What happens if below** | No obligation to register. May register voluntarily (2-year commitment). |
-| **Measurement period** | Retrospective: past 4 quarters exceed SGD 1M. Prospective: reasonable expectation next 12 months will exceed SGD 1M. |
-| **Action if approaching** | High threshold -- most sole proprietors will not reach it. If approaching, prepare pricing strategy and accounting systems for GST. Voluntary registration possible if significant zero-rated exports. |
-| **Primary source** | Goods and Services Tax Act 1993, s. 8, Third Schedule |
-
-### 3.13 MT -- Article 11 VAT Exemption Threshold
-
-**MT -- Article 11 VAT Exemption Threshold**  _(VAT Act (Cap. 406), Article 11; Legal Notice 272/2024)_
-
-| Field | Value |
-| --- | --- |
-| **Jurisdiction** | MT |
-| **Threshold name** | Article 11 VAT exemption (small undertaking) |
-| **Amount** | EUR 35,000 annual turnover from economic activity (+ EUR 14,000 rental income if applicable) |
-| **What happens if exceeded** | Must register under Article 10 (standard VAT). Must charge 18% VAT on taxable supplies. Must file periodic VAT returns (via CFR). Can recover input VAT. |
-| **What happens if below** | Exempt from charging VAT under Article 11. No VAT returns required. Cannot recover input VAT. Annual declaration only. |
-| **Measurement period** | Rolling 12 months, or expected turnover in next 12 months |
-| **Action if approaching** | Compare input VAT recovery benefit vs. pricing simplicity. Article 10 registration is advantageous if selling primarily B2B (customers recover VAT). Consider timing of invoicing. |
-| **Primary source** | VAT Act (Cap. 406), Article 11; Legal Notice 272/2024 |
-
-### 3.14 CA -- Small Supplier Threshold (GST/HST)
-
-**CA -- Small Supplier Threshold (GST/HST)**  _(Excise Tax Act, s. 148(1); CRA IT-400)_
-
-| Field | Value |
-| --- | --- |
-| **Jurisdiction** | CA |
-| **Threshold name** | Small supplier exemption from GST/HST |
-| **Amount** | CAD 30,000 in total taxable supplies over the last 4 consecutive calendar quarters or in a single calendar quarter |
-| **What happens if exceeded** | Must register for GST/HST. Must charge 5% GST (or applicable HST rate). Must file GST/HST returns. Can claim input tax credits (ITCs). |
-| **What happens if below** | No obligation to register. May register voluntarily. |
-| **Measurement period** | 4 consecutive calendar quarters (backward) or single calendar quarter |
-| **Action if approaching** | Consider voluntary registration for ITC recovery. Review pricing. Registration effective date is the day the CAD 30,000 is exceeded in a single quarter, or the first day of the next quarter if exceeded over 4 quarters. |
-| **Primary source** | Excise Tax Act, s. 148(1); CRA IT-400 |
-
-## Section 4 -- Materiality and filtering
+## Section 4 - Materiality and filtering
 
 ### Materiality threshold
 
@@ -302,46 +279,46 @@ This skill does NOT cover:
 
 ### Materiality threshold
 
-- **Suppress sub-materiality alerts** — Do not surface a threshold alert if the potential tax impact of crossing the threshold is below the materiality floors. If the annualised impact of crossing a threshold is below the materiality floor, suppress the alert unless the user explicitly asks about it.
+- **Rank optional planning suggestions only:** these currency floors are an internal presentation policy, not law or statutory thresholds. They may group minor optional planning items in reviewer notes when an evidenced impact estimate is available. Never suppress a registration, filing, payment, lost-exemption, deadline or missing-evidence warning because its immediate tax estimate is low, unknown or zero. Do not aggregate across currencies without a supported conversion. Keep grouped items discoverable, and surface them on request.
 
 ### Filtering logic
 
-- **Filtering logic** — 1. Only run checks for jurisdictions the user operates in. 2. If the user has no revenue data, skip revenue-based thresholds and note "insufficient data." 3. If the user is already registered (e.g., already VAT registered), skip the registration threshold and note "already registered -- threshold not applicable."
+- **Filtering logic:** run jurisdictions established by actual residence, supply, employment or business facts. Missing revenue produces an incomplete check, not evidence of no liability. Existing registration can make a new-registration task redundant, but still assess effective date, continuing exemption, exit/re-entry, associated turnover and any distinct regime; record the precise reason for not repeating a task. Corporate/employer full computations remain outside this method, with a referral where their facts affect a supported threshold.
 
-## Section 5 -- Output format
+## Section 5 - Output format
 
-### Part A -- Threshold proximity dashboard
+### Part A - Threshold proximity dashboard
 
-**Threshold proximity dashboard example**
+**Threshold proximity dashboard example:** amounts and direction are assumed case facts, not a live client report; GREEN only describes headroom under the chosen test. The statutory thresholds are sourced in Section 3.
 
-| # | Jurisdiction | Threshold | Your figure | Limit | Distance | % to limit | Direction | Flag |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | UK | VAT registration | GBP 82,000 | GBP 90,000 | GBP 8,000 | 8.9% | Approaching (+15% YoY) | RED |
-| 2 | UK | PA taper | GBP 94,000 | GBP 100,000 | GBP 6,000 | 6.0% | Approaching | RED |
-| 3 | US | QBI cliff | $145,000 | $197,300 | $52,300 | 26.5% | Stable | GREEN |
+| # | Jurisdiction | Threshold | Your figure | Limit | Distance | % to limit | Direction | Flag | Source for limit, all other figures are assumed/computed |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | UK | VAT registration | GBP 82,000 | GBP 90,000 | GBP 8,000 | 8.9% | Approaching (+15% YoY) | RED | Computed example, [limit](https://www.gov.uk/register-for-vat) |
+| 2 | UK | PA taper | GBP 94,000 | GBP 100,000 | GBP 6,000 | 6.0% | Approaching | RED | Computed example, [limit](https://www.gov.uk/income-tax-rates/income-over-100000) |
+| 3 | US | 2026 QBI other-return threshold | USD 145,000 | USD 201,750 | USD 56,750 | 28.1% | Stable, if evidenced | GREEN | Computed example, [limit](https://www.irs.gov/irb/2025-45_IRB) |
 
-### Part B -- Action items (AMBER and RED only)
+### Part B - Action items (AMBER/RED, activated obligations and unresolved required tests)
 
 For each flagged threshold:
 
 ```
-### [Threshold name] -- [Jurisdiction] -- [FLAG]
+### [Threshold name] - [Jurisdiction] - [FLAG]
 
 **Current position:** [Your figure] of [Limit] ([percentage]%)
-**Direction:** [Approaching / Stable / Moving away] -- [basis for assessment]
+**Direction:** [Approaching / Stable / Moving away] - [basis for assessment]
 **What changes:** [Plain-language explanation of what happens if exceeded]
 **Recommended action:** [Specific steps for the reviewer to consider]
-**Timing:** [When action must be taken]
-**Tax impact:** [Estimated annual cost/saving of crossing the threshold]
+**Timing:** [Crossing/forecast date, application deadline, effective date and first affected transaction, with source]
+**Tax impact:** [Supported conditional estimate with assumptions, or not yet computable; do not hide a legal action]
 ```
 
-### Part C -- Reviewer notes
+### Part C - Reviewer notes
 
 - Data gaps that prevented checks
-- Thresholds suppressed due to materiality
+- Optional planning suggestions grouped under the internal presentation floors, with reason and amount; no suppressed legal obligations
 - Assumptions made (e.g., exchange rates, annualisation method)
 
-## Section 6 -- Self-checks
+## Section 6 - Self-checks
 
 Before delivering output, verify:
 
@@ -350,12 +327,89 @@ Before delivering output, verify:
 - [ ] "Your figure" traces to user-provided data, not fabricated
 - [ ] Distance and percentage calculations are arithmetically correct
 - [ ] Direction of travel is based on actual data or clearly marked "unknown"
-- [ ] Materiality filter applied -- sub-threshold alerts suppressed
-- [ ] Already-registered thresholds excluded
+- [ ] Internal presentation floors have not suppressed any legal obligation, deadline or unresolved required check
+- [ ] Existing registrations/elections assessed for actual scope, effective date, continuing obligations and exit/re-entry rather than blanket exclusion
 - [ ] Action recommendations are addressed to the reviewer, not the taxpayer
 - [ ] All threshold amounts cite a primary source
 - [ ] Output uses the format from Section 5
 
+## Worked cases
+
+### UK VAT past-turnover test versus allowance taper
+
+Assume an ordinary established UK trader with no special registration trigger or approved exception has supported rolling taxable turnover GBP 82,000. Headroom is GBP 8,000, or 8.8889%, so this internal dashboard marks RED proximity; it is not evidence of registration already due. Equality at GBP 90,000 does not exceed this ordinary test. A separately established crossing in July requires application by thirty August and ordinary effective registration first September, not the crossing day. For a different taxpayer otherwise entitled to the standard allowance, adjusted net income GBP 110,000 reduces GBP 12,570 by GBP 5,000, leaving GBP 7,570; this does not itself compute marginal tax. [VAT registration](https://www.gov.uk/register-for-vat), [Personal Allowance](https://www.gov.uk/income-tax-rates/income-over-100000).
+
+```oa-check
+name: Threshold headroom and adjusted net income taper are different tests
+inputs:
+  taxable_turnover: 82000
+  vat_limit: 90000
+  adjusted_net_income: 110000
+  taper_start: 100000
+  standard_allowance: 12570
+steps:
+  - headroom: vat_limit - taxable_turnover
+  - headroom_percentage: headroom / vat_limit * 100
+  - allowance_reduction: min(standard_allowance, max(adjusted_net_income - taper_start, 0) / 2)
+  - remaining_allowance: standard_allowance - allowance_reduction
+expected:
+  headroom: 8000
+  headroom_percentage: 8.88888888888889
+  allowance_reduction: 5000
+  remaining_allowance: 7570
+```
+
+### Dutch KOR crossing transaction is not taxed only on its excess
+
+Assume an eligible KOR participant with calendar-year qualifying turnover EUR 19,750 receives a fully qualifying EUR 500 advance. Turnover becomes EUR 20,250 and exceeds the EUR 20,000 boundary by EUR 250. The whole EUR 500 crossing transaction loses KOR exemption, not merely EUR 250. The applicable VAT rate, tax-inclusive/exclusive contract and actual VAT amount require the country computation. Immediate notification is not suppressed because a possible tax estimate is below an internal currency floor. This follows the authority's described example; it is not a registration actually submitted. [Belastingdienst exit example](https://www.belastingdienst.nl/wps/wcm/connect/nl/btw/content/afmelden-kor).
+
+```oa-check
+name: KOR crossing tests turnover but affects the whole crossing supply
+inputs:
+  preceding_turnover: 19750
+  crossing_advance: 500
+  kor_limit: 20000
+steps:
+  - turnover_after: preceding_turnover + crossing_advance
+  - excess: max(turnover_after - kor_limit, 0)
+  - crossing_supply_outside_kor: crossing_advance
+  - understatement_if_only_excess_used: crossing_supply_outside_kor - excess
+expected:
+  turnover_after: 20250
+  excess: 250
+  crossing_supply_outside_kor: 500
+  understatement_if_only_excess_used: 250
+```
+
+## When to refuse or refer
+
+Do not certify a completed legal test when the measurement period, entity/associated turnover, registration status, required data, operative law or source conflicts remain unresolved. Continue the evidenced proximity calculation and list the exact missing facts; refer the affected country determination rather than invent a threshold, effective date, insurance price or tax rate. Do not execute registrations or change invoicing/recognition merely on a planning recommendation.
+
 ## Disclaimer
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
+
+## Sources
+
+| Source and what was actually read | Official URL | Read on |
+|---|---|---|
+| Read for OSS optional schemes and complete place-of-supply threshold conditions | https://vat-one-stop-shop.ec.europa.eu/one-stop-shop_en | 2026-11-14 |
+| Read for Rev. Proc. 2025-32 section .26, all three 2026 filing-status amounts | https://www.irs.gov/irb/2025-45_IRB | 2026-11-14 |
+| Read for QBI eligibility, components, income limit and post-2025 minimum-deduction context; not all linked instructions | https://www.irs.gov/newsroom/qualified-business-income-deduction | 2026-11-14 |
+| Read for OASDI/Medicare distinction and base-history rows 2025 to 2027; only 2026 adopted | https://www.ssa.gov/oact/cola/cbb.html | 2026-11-14 |
+| Read for SE rate, 2026 combined base and Additional Medicare filing-status table; raw profit is not established net earnings | https://www.irs.gov/businesses/small-businesses-self-employed/self-employment-tax-social-security-and-medicare-taxes | 2026-11-14 |
+| Read for Registration triggers, taxable-turnover inclusions, both timing tests and special situations | https://www.gov.uk/register-for-vat | 2026-11-14 |
+| Read for Current 2026-27 allowance, adjusted-net-income taper and Scottish-rate distinction | https://www.gov.uk/income-tax-rates/income-over-100000 | 2026-11-14 |
+| Read for UStG section 19 complete paragraphs one to six; not the whole administrative implementation | https://www.gesetze-im-internet.de/ustg_1980/__19.html | 2026-11-14 |
+| Read for Australian government Taxsuperandyou education page compulsory/voluntary registration and application timing | https://smallbusiness.taxsuperandyou.gov.au/goods-and-services-tax/do-i-need-to-register | 2026-11-14 |
+| Read for Compilation 96 dated January 2026, volume two: sections 188-10, 188-15, 188-20 and 188-25 turnover definitions/exclusions; not the whole Act | https://www.legislation.gov.au/C2004A00446/2026-01-01/2026-01-01/text/original/epub/OEBPS/document_2/document_2.html | 2026-11-14 |
+| Read for Both 2025-26 and 2026-27 tables plus rates, dependent adjustment, acceptable cover and partial-year coverage sections | https://privatehealth.gov.au/health_insurance/surcharges_incentives/medicare_levy.htm | 2026-11-14 |
+| Read for AY 2026-27 ITR-4 FAQs one/two, nine/ten and thirteen through sixteen; latest 2025-2026 filing cycle only | https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/file-itr-4-sugam-online | 2026-11-14 |
+| Read for Current September 2026 eligibility and calculation sections, including Ceuta 2026 exception and incompatible reduction | https://sede.agenciatributaria.gob.es/Sede/irpf/empresarios-individuales-profesionales/regimenes-determinar-rendimiento-actividad/estimacion-directa-simplificada.html | 2026-11-14 |
+| Read for KOR eligibility/effects and incidental cross-border filing/EU-KOR distinction | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/btw/hoe_werkt_de_btw/kleineondernemersregeling/kleineondernemersregeling | 2026-11-14 |
+| Read for Full operative exit, crossing-supply example, voluntary notice and re-entry sections | https://www.belastingdienst.nl/wps/wcm/connect/nl/btw/content/afmelden-kor | 2026-11-14 |
+| Read for Compulsory tests, turnover definition, retrospective timing, dated prospective change/examples and exceptions; July 2025 change supersedes the legacy thirty-first-day opening sentence | https://www.iras.gov.sg/taxes/goods-services-tax-%28gst%29/gst-registration-deregistration/do-i-need-to-register-for-gst | 2026-11-14 |
+| Read for Downloaded consolidated Cap. 406 Article 11 and Sixth Schedule definitions and Part One, pages eleven to thirteen and ninety-eight to one-hundred-one; not all VAT law | https://legislation.mt/getpdf/6ac352947b5e681a8405fbf4 | 2026-11-14 |
+| Read for Most-business registration table/examples and associated worldwide-taxable-supply footnotes; charity/public-body headings identify separate tests | https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/when-register-charge.html | 2026-11-14 |
+
+Not yet confirmed: full successor Indian FY 2026-27 law and section numbering, current audit conditions/deadlines and every ITR-4 exclusion; German startup/current-crossing-supply administrative implementation and actual filing periods; full EU SME exemption interaction and country place/rate/registration details; every country's voluntary-registration commitment, input-credit adjustment and exceptional registration treatment; current applicable GST/VAT rates and actual filing periods where not established above; complete Schedule SE earnings computation and QBI minimum-deduction/other limitation calculation; actual pension/Gift Aid eligibility/limits and adjusted-net-income calculation; Australian family/part-year MLS tax-base computation and actual cover quote; Maltese Article 10 liability dates in every Article 11 cancellation scenario and Article 12 transaction-specific thresholds; full Canadian special-regime/charity/public-body rules. These topics remain required checks, not confirmed numbers or permission to use the former generic shortcuts.

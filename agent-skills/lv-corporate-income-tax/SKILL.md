@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/lv-corporate-income-tax"
   jurisdiction: "LV"
   tax_year: "2026"
-  last_updated: "2026-10-30"
+  last_updated: "2026-11-14"
 ---
 
 # Latvia: corporate income tax (2026)
@@ -211,8 +211,8 @@ expected:
 
 Not yet confirmed: the CIT return form and its annexes (the return regulation was not read); the art. 8(5) fuel limits and the art. 12 donation relief; any CIT Law amendment after the 4 October 2026 archive copy; the Micro-enterprise Tax Law version in force from 15 October 2026 and the one announced for 1 April 2027 (only the 1 January 2026 version was read; it bars SIAs).
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-30. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `lv-corporate-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/lv-corporate-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `lv-corporate-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/lv-corporate-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

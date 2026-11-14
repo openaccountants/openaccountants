@@ -1,14 +1,15 @@
 ---
 name: poland-vat-return
 description: "Polish VAT (podatek od towarów i usług) for tax year 2026: who must register, the 23%, 8%, 5% and 0% rates, the small-business exemption of PLN 240,000 (raised from PLN 200,000 on 1 January 2026) and the EU SME scheme, the JPK_V7M and JPK_V7K files due on the 25th, refunds in 40 days, KSeF structured e-invoicing (mandatory from 1 February 2026 for businesses with 2024 sales over PLN 200 million, from 1 April 2026 for the rest, with a PLN 10,000 a month carve-out to the end of 2026), split payment above PLN 15,000 for Annex 15 goods, the white list, reverse charge, the 30% additional liability and 10.50% late interest. Trigger on: Polish VAT, JPK_V7, KSeF, zwolnienie podmiotowe, MPP, biała lista, VAT-R. Out of scope: KSeF schema detail (poland-einvoice), income tax (pl-income-tax, pl-cit-corporate-tax), cross-border income (pl-cross-border)."
-version: 2.2
+version: 2.3
 jurisdiction: PL
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: vat-gst
+type: filing-howto
 ---
 
 # Poland VAT return (2026)
@@ -42,15 +43,15 @@ This skill covers Polish VAT for a business registered in Poland: when to regist
 | Reduced rate, Annex 10 goods (basic foods, books, some hygiene goods) | 5% | 2026 | same, art. 41 ust. 2a |
 | Intra-EU supply of goods; export of goods | 0% (export needs proof of exit before the return deadline) | 2026 | same, art. 41 ust. 3, 4, 6 |
 | Small-business exemption: sales without VAT, previous and current year | PLN 240,000 | 2026 | same, art. 113 ust. 1; https://www.podatki.gov.pl/podatki-firmowe/vat/stawki-i-limity |
-| Businesses with 2025 sales over PLN 200,000 and up to PLN 240,000 | may use the exemption in 2026 | 2026 | Dz.U. 2025 poz. 896 art. 2, quoted in the notice to Dz.U. 2026 poz. 1263 |
-| EU SME scheme: EU-wide turnover cap | EUR 100,000 | 2026 | VAT Act art. 113a ust. 1, art. 113b ust. 1 |
+| Businesses with 2025 sales over PLN 200,000 and up to PLN 240,000 | may use the exemption in 2026 | 2026 | Dz.U. 2025 poz. 896 art. 2, quoted in the notice to Dz.U. 2026 poz. 1263; https://api.sejm.gov.pl/eli/acts/DU/2025/896/text.pdf |
+| EU SME scheme: EU-wide turnover cap | EUR 100,000 | 2026 | VAT Act art. 113a ust. 1, art. 113b ust. 1; https://api.sejm.gov.pl/eli/acts/DU/2026/1263/text.pdf |
 | Small taxpayer: previous-year sales including VAT | EUR 2,000,000 = PLN 8,517,000 | 2026 | VAT Act art. 2 pkt 25; https://api.nbp.pl/api/exchangerates/rates/a/eur/2025-10-01/?format=json |
-| Split payment (MPP) compulsory: Annex 15 goods or services on an invoice with a gross total over | PLN 15,000 | 2026 | VAT Act art. 108a ust. 1a |
+| Split payment (MPP) compulsory: Annex 15 goods or services on an invoice with a gross total over | PLN 15,000 | 2026 | VAT Act art. 108a ust. 1a; https://api.sejm.gov.pl/eli/acts/DU/2026/1263/text.pdf |
 | Payment between businesses must go through a bank account if one transaction is over | PLN 15,000 | 2026 | https://api.sejm.gov.pl/eli/acts/DU/2025/1480/text.pdf (Business Law art. 19) |
-| Input VAT on cars used also privately | 50% | 2026 | VAT Act art. 86a ust. 1 |
-| KSeF: last month a business may issue paper or PDF invoices if 2024 sales with VAT were up to PLN 200,000,000 | March 2026 | 2026 | VAT Act art. 145l |
-| KSeF: invoices outside KSeF still allowed if invoices issued in the month total PLN 10,000 or less with VAT | to 31 December 2026 | 2026 | VAT Act art. 145m |
-| Refund of excess input VAT | 40 days from filing (25 days if the conditions of art. 87 ust. 6 are met) | 2026 | VAT Act art. 87 ust. 2, 6 |
+| Input VAT on cars used also privately | 50% | 2026 | VAT Act art. 86a ust. 1; https://api.sejm.gov.pl/eli/acts/DU/2026/1263/text.pdf |
+| KSeF: last month a business may issue paper or PDF invoices if 2024 sales with VAT were up to PLN 200,000,000 | March 2026 | 2026 | VAT Act art. 145l; https://api.sejm.gov.pl/eli/acts/DU/2026/1263/text.pdf |
+| KSeF: invoices outside KSeF still allowed if invoices issued in the month total PLN 10,000 or less with VAT | to 31 December 2026 | 2026 | VAT Act art. 145m; https://api.sejm.gov.pl/eli/acts/DU/2026/1263/text.pdf |
+| Refund of excess input VAT | 40 days from filing (25 days if the conditions of art. 87 ust. 6 are met) | 2026 | VAT Act art. 87 ust. 2, 6; https://api.sejm.gov.pl/eli/acts/DU/2026/1263/text.pdf |
 | Late payment interest | 10.50% a year from 5 March 2026; reduced 5.25%; higher 15.75% | 2026 | https://api.sejm.gov.pl/eli/acts/MP/2026/269/text.pdf; Tax Ordinance art. 56 § 1; https://static.nbp.pl/dane/stopy/stopy_procentowe_archiwum.xml |
 
 ## The taxable base
@@ -173,16 +174,17 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| VAT Act, consolidated text Dz.U. 2026 poz. 1263, with the transitional provisions of Dz.U. 2025 poz. 896 and 1203 quoted in the notice (art. 2 pkt 25, 5, 9, 15, 17, 19a, 21, 28b, 29a, 41, 43, 86, 86a, 87, 88, 96, 99, 103, 106ga, 106i, 106ni, 108a, 109, 112b, 112c, 113, 113a, 113b, 145l-145n, 146ef) | https://api.sejm.gov.pl/eli/acts/DU/2026/1263/text.pdf | 2026-10-23 |
-| Amending act Dz.U. 2026 poz. 1270, in force 1 January 2027 (not applied) | https://api.sejm.gov.pl/eli/acts/DU/2026/1270/text.pdf | 2026-10-23 |
-| Tax Ordinance, Dz.U. 2026 poz. 622 (art. 56, 56a, 56b, 63, 117ba) | https://api.sejm.gov.pl/eli/acts/DU/2026/622/text.pdf | 2026-10-23 |
-| Minister of Finance notice on late payment interest, M.P. 2026 poz. 269 | https://api.sejm.gov.pl/eli/acts/MP/2026/269/text.pdf | 2026-10-23 |
-| Business Law (Prawo przedsiębiorców), Dz.U. 2025 poz. 1480 (art. 19) | https://api.sejm.gov.pl/eli/acts/DU/2025/1480/text.pdf | 2026-10-23 |
-| PIT Act, Dz.U. 2026 poz. 592 (art. 22p) | https://api.sejm.gov.pl/eli/acts/DU/2026/592/text.pdf | 2026-10-23 |
-| Fiscal Penal Code, Dz.U. 2025 poz. 633 (art. 16a, 54, 56, 57, 62) | https://api.sejm.gov.pl/eli/acts/DU/2025/633/text.pdf | 2026-10-23 |
-| Ministry of Finance, VAT rates and limits (PLN 240,000 exemption) | https://www.podatki.gov.pl/podatki-firmowe/vat/stawki-i-limity | 2026-10-23 |
-| Ministry of Finance, KSeF portal | https://ksef.podatki.gov.pl/ | 2026-10-23 |
-| NBP base rates archive (lombard rate 4.25% from 5 March 2026) | https://static.nbp.pl/dane/stopy/stopy_procentowe_archiwum.xml | 2026-10-23 |
+| VAT Act, consolidated text Dz.U. 2026 poz. 1263, with the transitional provisions of Dz.U. 2025 poz. 896 and 1203 quoted in the notice (art. 2 pkt 25, 5, 9, 15, 17, 19a, 21, 28b, 29a, 41, 43, 86, 86a, 87, 88, 96, 99, 103, 106ga, 106i, 106ni, 108a, 109, 112b, 112c, 113, 113a, 113b, 145l-145n, 146ef) | https://api.sejm.gov.pl/eli/acts/DU/2026/1263/text.pdf | 2026-11-14 |
+| Read for the points the body cites to it: Amending act Dz.U. 2026 poz. 1270, in force 1 January 2027 (not applied) | https://api.sejm.gov.pl/eli/acts/DU/2026/1270/text.pdf | 2026-11-14 |
+| Tax Ordinance, Dz.U. 2026 poz. 622 (art. 56, 56a, 56b, 63, 117ba) | https://api.sejm.gov.pl/eli/acts/DU/2026/622/text.pdf | 2026-11-14 |
+| Read for Late payment interest: Minister of Finance notice on late payment interest, M.P. 2026 poz. 269 | https://api.sejm.gov.pl/eli/acts/MP/2026/269/text.pdf | 2026-11-14 |
+| Business Law (Prawo przedsiębiorców), Dz.U. 2025 poz. 1480 (art. 19) | https://api.sejm.gov.pl/eli/acts/DU/2025/1480/text.pdf | 2026-11-14 |
+| PIT Act, Dz.U. 2026 poz. 592 (art. 22p) | https://api.sejm.gov.pl/eli/acts/DU/2026/592/text.pdf | 2026-11-14 |
+| Fiscal Penal Code, Dz.U. 2025 poz. 633 (art. 16a, 54, 56, 57, 62) | https://api.sejm.gov.pl/eli/acts/DU/2025/633/text.pdf | 2026-11-14 |
+| Read for Reduced rate, restaurant and catering services (PKWiU 56), with exceptions such as alcohol, Small-business exemption: sales without VAT, previous and current year: Ministry of Finance, VAT rates and limits (PLN 240,000 exemption) | https://www.podatki.gov.pl/podatki-firmowe/vat/stawki-i-limity | 2026-11-14 |
+| Read for the points the body cites to it: Ministry of Finance, KSeF portal | https://ksef.podatki.gov.pl/ | 2026-11-14 |
+| Read for Late payment interest: NBP base rates archive (lombard rate 4.25% from 5 March 2026) | https://static.nbp.pl/dane/stopy/stopy_procentowe_archiwum.xml | 2026-11-14 |
 | NBP EUR mid rate of 1 October 2025 (4.2586) | https://api.nbp.pl/api/exchangerates/rates/a/eur/2025-10-01/?format=json | 2026-10-23 |
+| Read for Businesses with 2025 sales over PLN 200,000 and up to PLN 240,000: official text of Dz.U. 2025 poz. 896 (Sejm ELI) | https://api.sejm.gov.pl/eli/acts/DU/2025/896/text.pdf | 2026-11-14 |
 
 Not yet confirmed: the PLN 8,517,000 small-taxpayer limit is computed here from the NBP rate; the Ministry page states the EUR 2,000,000 rule but no PLN figure. The CIT Act article on split payment and the white list (art. 15d) was not re-read for this version. When a business that has lost the small-business exemption must have filed VAT-R (before the crossing sale or before the next one) was not settled from the text of art. 96. The date the EU SME scheme (art. 113a-113b) first applied is not given in the consolidated text.

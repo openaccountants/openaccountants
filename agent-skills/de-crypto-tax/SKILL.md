@@ -7,10 +7,12 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/de-crypto-tax"
   jurisdiction: "DE"
   tax_year: "2026"
-  last_updated: "2026-10-31"
+  last_updated: "2026-11-14"
 ---
 
 # Crypto tax in Germany
+
+## Scope
 
 How Germany taxes an individual who is fully liable to German income tax and holds crypto assets (Kryptowerte) privately, not in a business. It covers selling and swapping (private sales under § 23 EStG), which units count as sold, staking and lending income (§ 22 Nr. 3 EStG), mining and forging, airdrops, hard forks, NFTs, the records the tax office expects, and the new platform reporting (DAC8 / CARF) that starts with 2026.
 
@@ -44,7 +46,7 @@ How Germany taxes an individual who is fully liable to German income tax and hol
 9. **Keep losses in their box:** § 23 losses only against § 23 gains, § 22 Nr. 3 losses only against § 22 Nr. 3 income, one year back and later years forward.
 10. **Report** in Anlage SO of the income tax return through ELSTER (business mining: Anlage G and the profit statement). File on time (Filing and payment below), and keep the records listed in "Records and duties to cooperate".
 
-## Figures for 2026 and 2025
+## Rates, bands and thresholds
 
 | Figure | 2026 | 2025 | Source |
 | --- | --- | --- | --- |
@@ -182,7 +184,9 @@ The enacted Kryptowerte-Steuertransparenz-Gesetz (KStTG) implements DAC8 and the
 | Redeeming a utility token for its product | Not a sale | Rn 79 |
 | Spouses assessed jointly | Actual 2025 ELSTER help expressly gives the EUR 1,000 private-sales and EUR 256 service thresholds to each person. For the 2026 unchanged-statute/admin-method continuation, apply each person's own income and limit separately; do not pool a joint EUR 2,000 or EUR 512 allowance. Two spouses each with EUR 900 private-sales gains or EUR 200 service income are separately below their respective limits; one person's EUR 1,800 gains or EUR 400 service income is not sheltered by pooling. | Current § 23(3) sentence 5 and § 22 no. 3; actual 2025 help, not a 2026 form read |
 
-## Worked cases (rules: [BMF letter](https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2), [§ 23 EStG](https://www.gesetze-im-internet.de/estg/__23.html))
+## Worked cases
+
+Rules: [BMF letter](https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2), [§ 23 EStG](https://www.gesetze-im-internet.de/estg/__23.html).
 
 Amounts below are example inputs, not official figures. Fees are ignored unless stated.
 
@@ -201,6 +205,38 @@ Amounts below are example inputs, not official figures. Fees are ignored unless 
 **Case 5: hard fork (2026).** Coins bought 1 February 2026 for EUR 10,000. A hard fork on 1 May 2026 creates new coins. At the fork, the old coins are worth EUR 18,000 and the new coins EUR 2,000, together EUR 20,000. Cost split: old coins EUR 9,000, new coins EUR 1,000 (Rn 67). No income at the fork (Rn 68). The new coins are sold on 1 July 2026 for EUR 2,500: not more than one year after the purchase of the ORIGINAL coins, so a private sale with a gain of EUR 1,500. At or above the limit: taxed. Had the original coins been bought in 2024, the sale would be outside § 23.
 
 **Case 6: late 2025 return with crypto gains.** A client filing without an adviser has taxable 2025 crypto gains and has not filed. The deadline was 31 July 2026: file now. A surcharge of 0.25% of the tax less prepayments and withheld tax per started month, at least EUR 25 per month, may be charged; it is compulsory after 14 months from the year end unless the deadline was extended, the tax is zero or negative, or the tax does not exceed the prepayments and withheld tax ([§ 152 AO](https://www.gesetze-im-internet.de/ao_1977/__152.html)).
+
+Check of Cases 1 and 2 (CI recomputes these):
+
+```oa-check
+name: DE crypto 2026, Case 1 second Bitcoin sold within a year, average and FIFO value
+inputs:
+  cost_jan: 40000
+  cost_sep: 60000
+  proceeds: 65000
+steps:
+  - avg_cost: (cost_jan + cost_sep) / 2
+  - gain_average: proceeds - avg_cost
+  - gain_fifo_value: proceeds - cost_sep
+expected:
+  gain_average: 15000.00
+  gain_fifo_value: 5000.00
+```
+
+```oa-check
+name: DE crypto 2026, Case 2 the EUR 1,000 cliff taxes the whole total
+inputs:
+  crypto_gain: 999
+  gold_gain: 200
+  limit: 1000
+steps:
+  - taxed_crypto_only: crypto_gain * min(floor(crypto_gain / limit), 1)
+  - total: crypto_gain + gold_gain
+  - taxed_with_gold: total * min(floor(total / limit), 1)
+expected:
+  taxed_crypto_only: 0.00
+  taxed_with_gold: 1199.00
+```
 
 ## Tax year 2025 (returns being filed now)
 
@@ -251,40 +287,30 @@ The office can ask for an adviser-prepared return earlier (§ 149(4) AO). Late f
 - [ ] Employee § 46(3) exclusions/reductions established; each spouse's income/ownership recorded separately; simple inheritance uses actual predecessor dates/costs and any distinct paid estate transaction is classified separately. Actual form year is recorded, rather than relabelling 2025 help as 2026.
 - [ ] § 147a AO retention checked; records kept for as long as any unit bought is still held.
 
-```oa-check
-name: DE crypto 2026, private sale gain within one year
-inputs:
-  proceeds: 5000
-  cost: 3200
-  fee: 50
-steps:
-  - gain: proceeds - cost - fee
-expected:
-  gain: 1750.00
-```
-
-```oa-check
-name: DE employee 2026, non-withheld income under the EUR 410 ceiling
-inputs:
-  other_income: 300
-  ceiling: 410
-steps:
-  - deducted: min(other_income, ceiling)
-  - assessed: other_income - deducted
-expected:
-  assessed: 0.00
-```
-
 ## Sources
 
-- BMF letter of 6 March 2025 on crypto assets ([PDF](https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2)).- EStG, EStDV, AO and KStTG sections on gesetze-im-internet.de, each linked where it is used above.
+Read on 2026-11-14 for this rewrite unless the row says otherwise.
 
-- Additional selected source scopes actually read on 29 October 2026: current EStG §§ 46(3)/(5),23(1)/(3),22 no. 3 and BMF paragraph 75; [ELSTER 2025 income-tax help, Anlage SO](https://www.elster.de/elsterweb/helpGlobal?themaGlobal=help_est_ufa_10_2025), exact service/private-sales inheritance/per-person/non-entry/loss clauses. The labelled 2026 continuation above uses unchanged current law, not a claimed read of a future 2026 form. (read 2026-10-31)
-- [AO § 147a](https://www.gesetze-im-internet.de/ao_1977/__147a.html), read 2026-10-31
-- [EStG § 46](https://www.gesetze-im-internet.de/estg/__46.html), read 2026-10-31
+| Source | URL | Read on |
+| --- | --- | --- |
+| Read for the one-year holding period (§ 23(1) no. 2), the gain formula (§ 23(3) sentence 1) and the EUR 1,000 Freigrenze (§ 23(3) sentence 5) | https://www.gesetze-im-internet.de/estg/__23.html | 2026-11-14 |
+| Read for the EUR 256 Freigrenze on income from services (§ 22 Nr. 3 sentence 2) | https://www.gesetze-im-internet.de/estg/__22.html | 2026-11-14 |
+| Read for the EUR 410 assessment trigger (§ 46(2) no. 1) and the § 46(3) deduction | https://www.gesetze-im-internet.de/estg/__46.html | 2026-11-14 |
+| Read for the 25% flat tax (§ 32d(1)), cited only for contrast | https://www.gesetze-im-internet.de/estg/__32d.html | 2026-11-14 |
+| Read for the business test for mining and forging (§ 15(2)) | https://www.gesetze-im-internet.de/estg/__15.html | 2026-11-14 |
+| Read for the filing duty with no wages (§ 56 EStDV) | https://www.gesetze-im-internet.de/estdv_1955/__56.html | 2026-11-14 |
+| Read for the six-year retention above EUR 500,000 and the footnote raising it to EUR 750,000 (§ 147a(1)) | https://www.gesetze-im-internet.de/ao_1977/__147a.html | 2026-11-14 |
+| Read for the filing deadlines (§ 149(2) 31 July, § 149(3) last day of February) | https://www.gesetze-im-internet.de/ao_1977/__149.html | 2026-11-14 |
+| Read for the weekend rule (§ 108(3)) | https://www.gesetze-im-internet.de/ao_1977/__108.html | 2026-11-14 |
+| Read for the late-filing surcharge, 0.25% and at least EUR 25 per started month (§ 152(5)), and the 14-month rule (§ 152(2), (3)) | https://www.gesetze-im-internet.de/ao_1977/__152.html | 2026-11-14 |
+| Read for the duty to correct a wrong return (§ 153(1)) | https://www.gesetze-im-internet.de/ao_1977/__153.html | 2026-11-14 |
+| Read for Rn 2 to 4, 48, 53 (600 EUR up to 2023), 54 to 62, 65 to 75, 87 to 106 of the BMF letter of 6 March 2025 | https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2 | 2026-11-14 |
+| Read for the 2025 Anlage SO help (per-person limits, non-entry below the limits, losses); page answered with the 2025 help, read 2026-10-31 by an earlier pass and reloaded today | https://www.elster.de/elsterweb/helpGlobal?themaGlobal=help_est_ufa_10_2025 | 2026-11-14 |
+
+Not yet confirmed: the 2026 Anlage SO form and its help (not opened in this pass); the 2026 entry rules above follow unchanged law and the 2025 help.
 
 This skill is general information, not tax advice. Have a Steuerberater check a return before it is filed.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-31. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `de-crypto-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/de-crypto-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `de-crypto-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/de-crypto-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

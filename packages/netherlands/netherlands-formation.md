@@ -1,16 +1,17 @@
 ---
 name: netherlands-formation
 description: Use this skill whenever asked about forming, incorporating, or registering a company in the Netherlands. Trigger on phrases like "set up a company in the Netherlands", "Dutch BV", "BV formation", "KvK registration", "Kamer van Koophandel", "Dutch company formation", "register a business Netherlands", "besloten vennootschap", "eenmanszaak", "VOF", "NV formation", "DGA salary", or any question about starting a business entity in the Netherlands. Covers entity types (BV, NV, eenmanszaak, VOF, CV), registration process, capital requirements, costs, post-formation compliance, and bank account opening. ALWAYS read this skill before advising on Dutch company formation.
-version: 1.1
+version: 1.2
 jurisdiction: NL
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-14
 depends_on:
   - company-formation-workflow-base
 category: formation
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: formation
+type: filing-howto
 ---
 
 # Netherlands: starting a business (eenmanszaak, VOF or BV)
@@ -345,27 +346,27 @@ Do not finalize the legal-form recommendation or relief calculation while owners
 
 For banking, working capital and professional costs, obtain current written requirements and quotes from the selected bank and notary. Budget operating cash, payroll, accounting and any required audit separately; do not promise approval or a completion date from generic bank examples.
 
-## Figures, with years
+### Rates, bands and thresholds
 
 | Figure | Value | Year | Source |
 | --- | --- | --- | --- |
 | Zelfstandigenaftrek (below AOW age) | €1,200 | 2026 | Wet IB art. 3.76 lid 2 ([Wet IB 2001](https://wetten.overheid.nl/BWBR0011353/2026-02-21)); [Belastingdienst 2026 page](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/veranderingen-inkomstenbelasting-2026/ondernemersaftrek-2026/zelfstandigenaftrek-2026) |
-| Zelfstandigenaftrek | €2,470 | 2025 | Belastingdienst 2025 page Source: https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/verandering_inkomstenbelasting_vorige_jaren/veranderingen-inkomstenbelasting-2025/ondernemersaftrek-2025/zelfstandigenaftrek-2025 (tax year 2026) (read 2026-10-31) |
-| Startersaftrek (added to the above) | €2,123 | 2026 and 2025 | Wet IB art. 3.76 lid 3 Source: https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/veranderingen-inkomstenbelasting-2026/ondernemersaftrek-2026/zelfstandigenaftrek-2026 (tax year 2026) (read 2026-10-31) |
-| Deductions at or above AOW age | 50% of normal | 2026 | Wet IB art. 3.76 lid 4 |
-| Rate that caps the benefit of the deductions | 37.56% | 2026 (37.48% in 2025) | Belastingdienst Source: https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/inkomstenbelasting_voor_ondernemers/mkb_winstvrijstelling (tax year 2026) (read 2026-10-31) |
-| MKB-winstvrijstelling | 12.7% of profit after ondernemersaftrek | 2025 and 2026 (13.31% in 2024) | Wet IB art. 3.79a Source: https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/inkomstenbelasting_voor_ondernemers/mkb_winstvrijstelling (tax year 2026) (read 2026-10-31) |
-| Urencriterium | at least 1,225 hours | every year | Wet IB art. 3.6 Source: https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/inkomstenbelasting_voor_ondernemers/voorwaarden_urencriterium (tax year 2026) (read 2026-10-31) |
-| Substantial interest | at least 5% | every year | Wet IB art. 4.6 |
-| Customary salary floor | €58,000 | 2026 (€56,000 in 2025 and 2024) | Belastingdienst Source: https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/vermogen_en_aanmerkelijk_belang/aanmerkelijk_belang/loon_en_aanmerkelijk_belang/loon_en_aanmerkelijk_belang (tax year 2026) (read 2026-10-31) |
-| Customary salary de minimis | €5,000 or lower | 2026 | Belastingdienst Source: https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/vermogen_en_aanmerkelijk_belang/aanmerkelijk_belang/loon_en_aanmerkelijk_belang/loon_en_aanmerkelijk_belang (tax year 2026) (read 2026-10-31) |
-| KOR turnover limit | not more than €20,000 in this year and in last year | 2026 | Wet OB art. 25a lid 1 Source: https://www.belastingdienst.nl/wps/wcm/connect/nl/btw/content/kor-voorwaarden (tax year 2026) (read 2026-10-31) |
-| KOR, EU turnover limit (EU-established, not NL) | not more than €100,000 | 2026 | Wet OB art. 25a lid 2 Source: https://www.belastingdienst.nl/wps/wcm/connect/nl/btw/content/kleineondernemersregeling-in-de-europese-unie-eu-kor (tax year 2026) (read 2026-10-31) |
-| Registration threshold | at most €2,200 turnover | 2026 | Belastingdienst Source: https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/btw/hoe_werkt_de_btw/voor_wie_geldt_de_btw/ondernemer (tax year 2026) (read 2026-10-31) |
-| VAT rates that count toward turnover | 21%, 9% and 0% | 2026 | Belastingdienst KOR page |
-| VPB rates | 19% up to €200,000; 25.8% above | 2026 (same in 2025) | Belastingdienst Source: https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/tarieven_vennootschapsbelasting (tax year 2026) (read 2026-10-31) |
-| NV minimum capital (authorised, issued and paid-up) | forty-five thousand euro | current | BW 2:67 |
-| BV minimum capital | none | current | BW 2:175, 2:178 |
+| Zelfstandigenaftrek | €2,470 | 2025 | Belastingdienst 2025 page https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/verandering_inkomstenbelasting_vorige_jaren/veranderingen-inkomstenbelasting-2025/ondernemersaftrek-2025/zelfstandigenaftrek-2025 |
+| Startersaftrek (added to the above) | €2,123 | 2026 and 2025 | Wet IB art. 3.76 lid 3 https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/veranderingen-inkomstenbelasting-2026/ondernemersaftrek-2026/zelfstandigenaftrek-2026 |
+| Zelfstandigenaftrek at or above AOW age at the start of the year | 50% of the normal amount | 2026 | Wet IB art. 3.76 lid 4 https://wetten.overheid.nl/BWBR0011353/2026-01-01 |
+| Rate that caps the benefit of the deductions | 37.56% | 2026 (37.48% in 2025) | Belastingdienst https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/inkomstenbelasting_voor_ondernemers/mkb_winstvrijstelling |
+| MKB-winstvrijstelling | 12.7% of profit after ondernemersaftrek | 2025 and 2026 (13.31% in 2024) | Wet IB art. 3.79a https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/inkomstenbelasting_voor_ondernemers/mkb_winstvrijstelling |
+| Urencriterium | at least 1,225 hours | every year | Wet IB art. 3.6 https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/inkomstenbelasting_voor_ondernemers/voorwaarden_urencriterium |
+| Substantial interest | at least 5% of issued capital, alone or with a partner, direct or indirect | every year | Wet IB art. 4.6 https://wetten.overheid.nl/BWBR0011353/2026-01-01 |
+| Customary salary floor | €58,000 | 2026 (€56,000 in 2025 and 2024) | Belastingdienst https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/vermogen_en_aanmerkelijk_belang/aanmerkelijk_belang/loon_en_aanmerkelijk_belang/loon_en_aanmerkelijk_belang |
+| Customary salary de minimis | €5,000 or lower | 2026 | Belastingdienst https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/vermogen_en_aanmerkelijk_belang/aanmerkelijk_belang/loon_en_aanmerkelijk_belang/loon_en_aanmerkelijk_belang |
+| KOR turnover limit | not more than €20,000 in this year and in last year | 2026 | Wet OB art. 25a lid 1 https://www.belastingdienst.nl/wps/wcm/connect/nl/btw/content/kor-voorwaarden |
+| KOR, EU turnover limit (EU-established, not NL) | not more than €100,000 | 2026 | Wet OB art. 25a lid 2 https://www.belastingdienst.nl/wps/wcm/connect/nl/btw/content/kleineondernemersregeling-in-de-europese-unie-eu-kor |
+| Registration threshold | at most €2,200 turnover | 2026 | Belastingdienst https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/btw/hoe_werkt_de_btw/voor_wie_geldt_de_btw/ondernemer |
+| VAT rates that count toward KOR turnover | 21%, 9% and 0% (exports and intra-EU supplies) | 2026 | Belastingdienst KOR page https://www.belastingdienst.nl/wps/wcm/connect/nl/btw/content/kor-voorwaarden |
+| VPB rates | 19% up to €200,000; 25.8% above | 2026 (same in 2025) | Belastingdienst https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/tarieven_vennootschapsbelasting |
+| NV minimum capital (authorised and issued) | forty-five thousand euro | current | BW 2:67 lid 2 https://wetten.overheid.nl/BWBR0003045/2026-07-01 |
+| BV minimum capital | none: Title 5 sets no minimum, capital is divided into one or more registered shares | current | BW 2:175 https://wetten.overheid.nl/BWBR0003045/2026-07-01 |
 
 Figures from 2027 are not covered. Wet IB art. 3.76 shows a future amendment from 1 January 2027: check
 the 2027 amounts when they are published.
@@ -392,7 +393,9 @@ the 2027 amounts when they are published.
 | Annual accounts published late | Presumption of mismanagement if the BV goes bankrupt (2:248 lid 2); minor lapses ignored |
 | Non-EU founders wanting online formation | BW 2:175a provides it for EU nationals; otherwise plan on the usual deed before a notary (check with the notary) |
 
-## Worked cases ([source](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/veranderingen-inkomstenbelasting-2026/ondernemersaftrek-2026/zelfstandigenaftrek-2026))
+## Worked cases
+
+Source for the deductions used: https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/veranderingen-inkomstenbelasting-2026/ondernemersaftrek-2026/zelfstandigenaftrek-2026
 
 **Case 1: first-year sole trader (2026).** Sanne starts an eenmanszaak on 1 February 2026. She is below AOW age at the start of the year, was never an
 ondernemer before, works 1,400 hours, and has no other job. Profit before deductions: €40,000.
@@ -544,14 +547,18 @@ expected:
 
 ## Sources
 
-- https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/verandering_inkomstenbelasting_vorige_jaren/veranderingen-inkomstenbelasting-2025/ondernemersaftrek-2025/zelfstandigenaftrek-2025 (read 2026-10-31)
-- https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/veranderingen-inkomstenbelasting-2026/ondernemersaftrek-2026/zelfstandigenaftrek-2026 (read 2026-10-31)
-- https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/inkomstenbelasting_voor_ondernemers/mkb_winstvrijstelling (read 2026-10-31)
-- https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/inkomstenbelasting_voor_ondernemers/voorwaarden_urencriterium (read 2026-10-31)
-- https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/vermogen_en_aanmerkelijk_belang/aanmerkelijk_belang/loon_en_aanmerkelijk_belang/loon_en_aanmerkelijk_belang (read 2026-10-31)
-- https://www.belastingdienst.nl/wps/wcm/connect/nl/btw/content/kor-voorwaarden (read 2026-10-31)
-- https://www.belastingdienst.nl/wps/wcm/connect/nl/btw/content/kleineondernemersregeling-in-de-europese-unie-eu-kor (read 2026-10-31)
-- https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/btw/hoe_werkt_de_btw/voor_wie_geldt_de_btw/ondernemer (read 2026-10-31)
-- https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/tarieven_vennootschapsbelasting (read 2026-10-31)
+| Source | URL | Read on |
+|---|---|---|
+| Belastingdienst, zelfstandigenaftrek 2025 | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/verandering_inkomstenbelasting_vorige_jaren/veranderingen-inkomstenbelasting-2025/ondernemersaftrek-2025/zelfstandigenaftrek-2025 | 2026-11-14, read for the 2025 zelfstandigenaftrek of EUR 2,470 |
+| Belastingdienst, zelfstandigenaftrek 2026 | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/veranderingen-inkomstenbelasting-2026/ondernemersaftrek-2026/zelfstandigenaftrek-2026 | 2026-11-14, read for the 2026 zelfstandigenaftrek of EUR 1,200 and the EUR 2,123 startersaftrek |
+| Belastingdienst, MKB-winstvrijstelling | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/inkomstenbelasting_voor_ondernemers/mkb_winstvrijstelling | 2026-11-14, read for the 12.7% exemption and the 37.56% (2026) and 37.48% (2025) rate cap |
+| Belastingdienst, urencriterium | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/inkomstenbelasting_voor_ondernemers/voorwaarden_urencriterium | 2026-11-14, read for the 1,225-hour test and the part-year rule |
+| Belastingdienst, loon en aanmerkelijk belang | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/vermogen_en_aanmerkelijk_belang/aanmerkelijk_belang/loon_en_aanmerkelijk_belang/loon_en_aanmerkelijk_belang | 2026-11-14, read for the EUR 58,000 (2026) and EUR 56,000 (2025, 2024) customary salary and the EUR 5,000 de minimis |
+| Belastingdienst, KOR voorwaarden | https://www.belastingdienst.nl/wps/wcm/connect/nl/btw/content/kor-voorwaarden | 2026-11-14, read for the EUR 20,000 limit in this and last year and the 21%, 9% and 0% supplies that count |
+| Belastingdienst, EU-KOR | https://www.belastingdienst.nl/wps/wcm/connect/nl/btw/content/kleineondernemersregeling-in-de-europese-unie-eu-kor | 2026-11-14, read for the EUR 100,000 EU turnover limit |
+| Belastingdienst, ondernemer voor de btw | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/btw/hoe_werkt_de_btw/voor_wie_geldt_de_btw/ondernemer | 2026-11-14, read for the EUR 2,200 registration threshold and its KVK condition |
+| Belastingdienst, tarieven vennootschapsbelasting | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/tarieven_vennootschapsbelasting | 2026-11-14, read for the 19% rate to EUR 200,000 and 25.8% above |
+| Wet inkomstenbelasting 2001, version 1 January 2026 | https://wetten.overheid.nl/BWBR0011353/2026-01-01 | 2026-11-14, read for art. 3.76 lid 4 (50% at AOW age) and art. 4.6 (5% substantial interest) |
+| Burgerlijk Wetboek Boek 2, version 1 July 2026 | https://wetten.overheid.nl/BWBR0003045/2026-07-01 | 2026-11-14, read for art. 2:67 lid 2 (NV minimum capital), art. 2:175 and 2:175a (BV capital, online formation for EU nationals) |
 
-Not yet confirmed: customary salary, AOW-age, substantial interest, VAT-rate and BV capital rows.
+Not yet confirmed: figures from 2027 (Wet IB art. 3.76 carries an amendment from 1 January 2027); the KVK registration fee and notary costs, which this skill does not state as figures.

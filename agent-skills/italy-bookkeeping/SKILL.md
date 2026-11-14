@@ -7,35 +7,76 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/italy-bookkeeping"
   jurisdiction: "IT"
   tax_year: "2026"
-  last_updated: "2026-10-31"
+  last_updated: "2026-11-14"
 ---
 
 # Bookkeeping in Italy: books, registers, accounting basis, chart of accounts and Civil Code formats
 
 Which books an Italian business or professional keeps, registers, retention, cash versus accrual, chart of accounts and Civil Code layouts. Figures are for tax year 2026; Italy's tax year is the calendar year. Statutes were read on Normattiva as in force on 30 June 2026 (the new TUIR, D.Lgs. 117/2026, applies only from 1 January 2027). One source is dated another year: the IRAP rate is from the Agenzia's 2026 IRAP instructions, for 2025. The depreciation decree (D.M. 31 December 1988) was not read, so no rates are printed.
 
-## Italy Bookkeeping Guide v1.1
 
 Companion to `it-income-tax`, `italy-vat-return` and `italy-einvoice`.
 
-## Section 1: Quick Reference
+## Scope
+
+This skill covers the books and registers an Italian business or professional keeps in tax year 2026: which accounting regime applies (forfettario, simplified, ordinary, professional), the registers each needs, cash versus accrual, a working chart of accounts (Piano dei Conti), the Civil Code layouts for the profit and loss account and balance sheet, the tax caps that turn bookkeeping into tax adjustments at year end, and how long records are kept. Italy's tax year is the calendar year; companies may use another 12-month period (TUIR art. 76 and art. 7).
+
+Who is in: sole traders (ditta individuale), partnerships, S.r.l. and S.p.A. that are not listed, and self-employed professionals. Who is out: listed companies, banks, insurers and groups reporting under IFRS (D.Lgs. 38/2005 art. 2), agriculture, non-profit bodies and special IVA schemes. The income tax computation is in `it-income-tax` and `it-ires-corporate-tax`; VAT settlement is in `italy-vat-return`; e-invoices are in `italy-einvoice`; annual accounts are in `italy-financial-statements`.
+
+### Quick reference
 
 **Quick Reference table**
 
 | Field | Value | Source |
 | --- | --- |---|
-| Country | Italy (Repubblica Italiana) | same |
-| Currency | EUR | same |
 | Financial year | Calendar year for individuals; companies may choose another 12-month period | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art76!vig=2026-06-30 and https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art7!vig=2026-06-30 |
-| Accounting standards | OIC principles for non-listed entities; IFRS for listed entities |  |
-| Standard chart of accounts | None mandated |  |
-| Record retention | Ten years from the last entry (Civil Code art. 2220), and until the year's tax assessments are final (D.P.R. 600/1973 art. 22). Section 11 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2220!vig=2026-06-30 |
+| Accounting standards | OIC principles for non-listed entities (D.Lgs. 38/2005 art. 9-bis); IFRS for listed and other entities named in D.Lgs. 38/2005 art. 2 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2005-02-28;38~art2!vig=2026-06-30 |
+| Record retention | Ten years from the last entry (Civil Code art. 2220), and until the year's tax assessments are final (D.P.R. 600/1973 art. 22). the section "Books, registers and retention" | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2220!vig=2026-06-30 |
 
-## Section 2: Recommended Chart of Accounts (Piano dei Conti)
+## Ask the client first
+
+- Company, partnership, sole trader or professional?
+- Revenue actually received last year, and is the main activity services or other?
+- Forfettario, or an option for ordinary accounts (and when)?
+- IVA registers with cash notes, or the registration-date option?
+- Stock and depreciable assets held, with dates and costs?
+- Companies: total assets, revenue and average staff for the last two years.
+
+## The method, step by step
+
+1. **Pick the regime**: company, ordinary; sole trader or partnership, simplified if last year's revenue is within the limits, unless it opts out (D.P.R. 600/1973 art. 18, https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1973-09-29;600~art18!vig=); forfettario if its conditions are met (https://www.agenziaentrate.gov.it/portale/regime-forfetario-le-regole-2020-/semplificazioni-e-adempimenti).
+2. **Open the books** for that regime (see the section "Books, registers and retention"; D.P.R. 600/1973 art. 14, https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1973-09-29;600~art14!vig=2026-06-30).
+3. **Record IVA documents on time** (D.P.R. 633/1972 art. 23, https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1972-10-26;633~art23!vig=2026-06-30).
+4. **Year end**: apply the the section "Expense Classification" caps, update the asset register (D.P.R. 600/1973 art. 16, https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1973-09-29;600~art16!vig=2026-06-30), sign the inventory (Civil Code art. 2217, https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2217!vig=2026-06-30).
+5. **Prepare the financial statements** in the art. 2424 and 2425 schemes, then keep everything for the art. 2220 period (https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2220!vig=2026-06-30).
+
+### Rates, bands and thresholds
+
+| Item | Figure | Tax year | Source |
+| --- | --- | --- | --- |
+| Forfettario: prior-year revenue or fees, annualised, not above | EUR 85,000 | 2026 | https://www.agenziaentrate.gov.it/portale/regime-forfetario-le-regole-2020-/infogen-regime-forfetario-le-regole-2020- |
+| Forfettario substitute tax (start-up rate 5% for the first five years if the conditions are met) | 15% | 2026 | same |
+| Simplified accounts: prior-year revenue, service businesses, not above | EUR 500,000 | 2026 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1973-09-29;600~art18!vig= |
+| Simplified accounts: prior-year revenue, other businesses, not above | EUR 800,000 | 2026 | same |
+| Business asset deductible in full in year one, unit cost not above | EUR 516.46 | 2026 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art102!vig=2026-06-30 |
+| Telephone equipment and services, deductible share | 80% | 2026 | same |
+| Professional's asset deductible in full, unit cost not above | EUR 516.40 | 2026 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art54quinquies!vig=2026-06-30 |
+| Hotels, food and drink, deductible share | 75% | 2026 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art109!vig=2026-06-30 |
+| Entertainment cap, revenue up to EUR 10 million / part to EUR 50 million / part above | 1.5% / 0.6% / 0.4% of revenue | 2026 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art108!vig=2026-06-30 |
+| Cars not used only for the business / agents / cars given to staff for mixed use | 20% / 80% / 70% deductible | 2026 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art164!vig=2026-06-30 |
+| Net interest deductible up to this share of the risultato operativo lordo | 30% | 2026 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art96!vig=2026-06-30 |
+| IRES rate | 24% | 2026 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art77!vig=2026-06-30 |
+| Micro company (art. 2435-ter): total assets / revenue / average staff, not above two of | EUR 220,000 / EUR 440,000 / 5 | 2026 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2435ter!vig= |
+| Abbreviated accounts (art. 2435-bis): total assets / revenue / average staff, not above two of | EUR 5,500,000 / EUR 11,000,000 / 50 | 2026 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2435bis!vig= |
+| Retention of books, invoices and letters | 10 years from the last entry | 2026 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2220!vig=2026-06-30 |
+
+IRAP is not restated here: its rate and base are in `it-irap`.
+
+### Recommended Chart of Accounts (Piano dei Conti)
 
 OpenAccountants' own suggestion, not an official chart; checked against Civil Code art. 2424 and 2425.
 
-### Assets (1xxx): Stato Patrimoniale, Attivo
+#### Assets (1xxx): Stato Patrimoniale, Attivo
 
 | Code | Account | CC Art. 2424 Reference |
 | --- | --- | --- |
@@ -62,7 +103,7 @@ OpenAccountants' own suggestion, not an official chart; checked against Civil Co
 | 1500 | Banca c/c and c/deposito | C.IV.1 |
 | 1510 | Cassa | C.IV.3 |
 
-### Liabilities (2xxx): Stato Patrimoniale, Passivo
+#### Liabilities (2xxx): Stato Patrimoniale, Passivo
 
 | Code | Account | CC Art. 2424 Reference |
 | --- | --- | --- |
@@ -76,7 +117,7 @@ OpenAccountants' own suggestion, not an official chart; checked against Civil Co
 | 2240 | Altri debiti | D.14 |
 | 2300 | Ratei e risconti passivi | E |
 
-### Equity (3xxx): Patrimonio Netto
+#### Equity (3xxx): Patrimonio Netto
 
 | Code | Account | CC Art. 2424 Reference |
 | --- | --- | --- |
@@ -86,7 +127,7 @@ OpenAccountants' own suggestion, not an official chart; checked against Civil Co
 | 3100 | Utili (perdite) portati a nuovo | A.VIII |
 | 3200 | Utile (perdita) dell'esercizio | A.IX |
 
-### Revenue (4xxx): Conto Economico, Valore della Produzione (A)
+#### Revenue (4xxx): Conto Economico, Valore della Produzione (A)
 
 | Code | Account | CC Art. 2425 Reference |
 | --- | --- | --- |
@@ -96,7 +137,7 @@ OpenAccountants' own suggestion, not an official chart; checked against Civil Co
 | 4100 | Altri ricavi e proventi | A.5 |
 | 4110 | Contributi in conto esercizio | A.5 (shown separately) |
 
-### Cost of Production (5xxx): Conto Economico, Costi della Produzione (B)
+#### Cost of Production (5xxx): Conto Economico, Costi della Produzione (B)
 
 | Code | Account | CC Art. 2425 Reference |
 | --- | --- | --- |
@@ -114,7 +155,7 @@ OpenAccountants' own suggestion, not an official chart; checked against Civil Co
 | 5700 | Altri accantonamenti | B.13 |
 | 5800 | Oneri diversi di gestione | B.14 |
 
-### Financial Income/Expenses (6xxx): Conto Economico: C & D
+#### Financial Income/Expenses (6xxx): Conto Economico: C & D
 
 | Code | Account | CC Art. 2425 Reference |
 | --- | --- | --- |
@@ -125,7 +166,7 @@ OpenAccountants' own suggestion, not an official chart; checked against Civil Co
 | 6400 | Rivalutazioni | D.18 |
 | 6500 | Svalutazioni | D.19 |
 
-### Tax (7xxx)
+#### Tax (7xxx)
 
 **IRES rate**
 
@@ -150,21 +191,21 @@ OpenAccountants' own suggestion, not an official chart; checked against Civil Co
 | 7020 | Imposte differite e anticipate | Art. 2425 item 20 |
 | 7030 | Acconti d'imposta | Credit against the tax liability |
 
-## Section 3: Revenue Recognition
+### Revenue Recognition
 
 **Revenue recognition scenarios**
 
 | Scenario | Treatment |
 | --- | --- |
 | **Default (ordinary accounts)** | Accruals basis (competenza) |
-| **Regime forfettario** | No accounting records for income tax (Section 11); income = revenue received times the sector coefficient (`it-income-tax`) |
+| **Regime forfettario** | No accounting records for income tax (see the section "Books, registers and retention"); income = revenue received times the sector coefficient (`it-income-tax`) |
 | **Regime ordinario** | Accruals, double entry |
 | **Regime semplificato** | Revenue received less expenses paid in the year, plus some accrual items (TUIR art. 66(1)) |
 | **Professionals** | Cash basis: fees received less costs paid (TUIR art. 54(1)); see `it-income-tax` |
 | **IVA on sales** | Revenue net of IVA; IVA to 2220 |
 | **Advance payments** | Risconti passivi (2300) until delivery |
 
-### Tax Regimes for Individuals/Small Businesses
+#### Tax Regimes for Individuals/Small Businesses
 
 **Forfettario**
 
@@ -186,7 +227,7 @@ OpenAccountants' own suggestion, not an official chart; checked against Civil Co
 - **Semplificata is decided on last year's revenue received** (for a business leaving ordinary accounts, on that year's accrued revenue). Sole traders and partnerships (D.P.R. 600/1973 art. 13 letters c and d) within the limit keep simplified books the next year. Mixed businesses use the limit of the main activity; without separate records they count as "other activities" (art. 18(1)). It rolls over while the limits are not exceeded (art. 18(7)); a new business may use it in year one if expected annualised revenue is within the limit (art. 18(9)).
 - **Companies always keep ordinary accounts**: art. 18 covers only letters c and d.
 
-## Section 4: Expense Classification
+### Expense Classification
 
 Business income (reddito d'impresa). Professionals follow TUIR art. 54 to 54-octies (`it-income-tax`).
 
@@ -245,15 +286,15 @@ The share applies only to the part of the purchase cost, lease or hire charge wi
 | Fines and penalties | 5800 | NOT deductible |
 | Depreciation | 5400/5410 | Up to the ministerial coefficients, halved in year one (art. 102(2)) |
 
-## Section 5: Asset vs Expense Thresholds
+### Asset vs Expense Thresholds
 
-### Capitalisation Rules
+#### Capitalisation Rules
 
 **Capitalisation rules table**
 
 | Rule | Treatment |
 | --- | --- |
-| **Small assets, businesses** | Unit cost up to the art. 102(5) amount in Section 4: deductible in full in the year bought |
+| **Small assets, businesses** | Unit cost up to the art. 102(5) amount in the section "Expense Classification": deductible in full in the year bought |
 | **Small assets, professionals** | Separate limit, table below |
 | **Forfettario** | No depreciation; the coefficient covers costs |
 | **Tax** | First-year depreciation at half the coefficient (art. 102(2)) |
@@ -265,13 +306,13 @@ The share applies only to the part of the purchase cost, lease or hire charge wi
 | Source | all figures below | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art54quinquies!vig=2026-06-30 |  |
 | Professional: asset unit cost deductible in full | EUR 516.40 | "il cui costo unitario non sia superiore a euro 516,40" | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art54quinquies!vig=2026-06-30 |
 
-### Depreciation Rates (DM 31 December 1988: Coefficienti di Ammortamento)
+#### Depreciation Rates (DM 31 December 1988: Coefficienti di Ammortamento)
 
 Rates come from the decree by sector and asset group, halved in year one (TUIR art. 102(2)). The decree was not read, so no rates are given; refer.
 
 - **Depreciation method** : straight-line within the coefficient. Accelerated depreciation (former art. 102(3)) was repealed by L. 244/2007. Any super-ammortamento is a separate law; check it first.
 
-## Section 6: P&L Format (Conto Economico)
+### P&L Format (Conto Economico)
 
 Art. 2425 Codice Civile, for years starting from 1 January 2016 (D.Lgs. 139/2015), costs by nature. Current wording, including the derivatives lines:
 
@@ -288,7 +329,7 @@ Risultato prima delle imposte (A - B +/- C +/- D)
 21 utile (perdite) dell'esercizio
 ~~~
 
-## Section 7: Balance Sheet Format (Stato Patrimoniale)
+### Balance Sheet Format (Stato Patrimoniale)
 
 Art. 2424 Codice Civile, main headings:
 
@@ -303,9 +344,9 @@ PASSIVO: A patrimonio netto (I capitale, II sovrapprezzo, III rivalutazione,
   B fondi rischi e oneri; C TFR; D debiti; E ratei e risconti
 ~~~
 
-## Section 8: Bank Reconciliation Patterns
+### Bank Reconciliation Patterns
 
-### Italian Bank Statement Formats
+#### Italian Bank Statement Formats
 
 **Bank statement formats table** (OpenAccountants' observation, not an official source)
 
@@ -315,7 +356,7 @@ PASSIVO: A patrimonio netto (I capitale, II sovrapprezzo, III rivalutazione,
 | UniCredit | CBI, CSV, MT940 | Data contabile, Causale, Dare, Avere |
 | Poste Italiane, Revolut, N26 | PDF, CSV | Date, description, amount |
 
-### Common Italian Transaction Descriptions
+#### Common Italian Transaction Descriptions
 
 **Transaction descriptions table**
 
@@ -330,13 +371,13 @@ PASSIVO: A patrimonio netto (I capitale, II sovrapprezzo, III rivalutazione,
 | RATA MUTUO | Split capital (2100) and interest (6200) |
 | GIROCONTO | Internal transfer: exclude |
 
-### Fatturazione Elettronica (E-Invoicing)
+#### Fatturazione Elettronica (E-Invoicing)
 
 Who must e-invoice through the SdI, and from when, forfettari included, is in `italy-einvoice`. Match bank lines to the SdI XML invoices.
 
-## Section 9: Micro-Entity / Small Business Simplifications
+### Micro-Entity / Small Business Simplifications
 
-### Codice Civile Size Thresholds (updated by D.Lgs. 125/2024)
+#### Codice Civile Size Thresholds (updated by D.Lgs. 125/2024)
 
 The first year the raised limits apply is not settled: D.Lgs. 125/2024 art. 17 names no start year for small companies that are not listed. Test the company against both the raised and the earlier limits, as `italy-financial-statements` explains, and get advice if the results differ.
 
@@ -368,7 +409,7 @@ The first year the raised limits apply is not settled: D.Lgs. 125/2024 art. 17 n
 
 - **Two-of-three criteria rule** : in the first year, or afterwards for two consecutive years, not exceeding two of the three limits ("per due esercizi consecutivi, non abbiano superato due dei seguenti limiti", art. 2435-bis).
 
-### Simplifications by Size
+#### Simplifications by Size
 
 **Simplifications by size table**
 
@@ -379,30 +420,30 @@ The first year the raised limits apply is not settled: D.Lgs. 125/2024 art. 17 n
 | Relazione sulla gestione | Exempt on the same condition | Exempt if the information is in the nota integrativa | Required |
 | Rendiconto finanziario | Exempt | Exempt | Required |
 
-### Individual Tax Regimes
+#### Individual Tax Regimes
 
 **Individual tax regimes table**
 
 | Regime | Who Qualifies | Bookkeeping Obligation |
 | --- | --- | --- |
-| Forfettario | Section 3 table | None for income tax; keep purchase invoices (Section 11) |
-| Semplificato | Section 3 table | Receipts and payments registers (Section 11) |
-| Ordinario | Companies, above the limits, or by option | Full books (Section 11) |
-| Professional | Arts and professions | Register of fees and expenses (Section 11) |
+| Forfettario | the section "Revenue Recognition" table | None for income tax; keep purchase invoices (see the section "Books, registers and retention") |
+| Semplificato | the section "Revenue Recognition" table | Receipts and payments registers (see the section "Books, registers and retention") |
+| Ordinario | Companies, above the limits, or by option | Full books (see the section "Books, registers and retention") |
+| Professional | Arts and professions | Register of fees and expenses (see the section "Books, registers and retention") |
 
-## Section 10: Interaction with Tax Guides
+### Interaction with Tax Guides
 
 **Interaction with tax Guides table**
 
 | Tax Guide | How Bookkeeping Connects |
 | --- | --- |
 | **`it-income-tax`** | Professionals and forfettari |
-| **IRES (companies)** | Risultato dell'esercizio is the start; Section 4 caps create permanent differences |
+| **IRES (companies)** | Risultato dell'esercizio is the start; the section "Expense Classification" caps create permanent differences |
 | **`italy-vat-return`** | 1420 and 2220 feed the liquidazione and the LIPE |
 | **`it-irap`** | Base starts from the Differenza A-B |
 | **`it-inps-contributions`** | Account 5310; self-employed contributions |
 
-## Section 11: Books, registers and retention
+### Books, registers and retention
 
 - **Ordinary accounts.** Libro giornale, day by day (Civil Code art. 2216); libro degli inventari (art. 2214); IVA registers; auxiliary records by category; stock records where required; registro dei beni ammortizzabili; company books of art. 2421 (D.P.R. 600/1973 art. 14).
 - **Inventory.** At the start and every year, closed by the balance sheet and profit and loss account, signed within three months of the income tax return deadline (Civil Code art. 2217; D.P.R. 600/1973 art. 15).
@@ -413,22 +454,64 @@ The first year the raised limits apply is not settled: D.Lgs. 125/2024 art. 17 n
 - **IVA registers.** Sales invoices in number order by the 15th of the month after the operation (D.P.R. 633/1972 art. 23); purchases before the settlement that deducts them and by the annual return deadline (art. 25); numbered pages under Civil Code art. 2219 (art. 39).
 - **Form, timing, retention.** Tax books numbered page by page; chronological and stock entries within sixty days (D.P.R. 600/1973 art. 22). Keep ten years from the last entry, with invoices and letters, image copies allowed if always legible (Civil Code art. 2220); for tax, until the year's assessments are final, even beyond (D.P.R. 600/1973 art. 22); e-invoices stored electronically (D.P.R. 633/1972 art. 39). Same rule as `italy-einvoice`.
 
-## The method, step by step
+## Worked cases
 
-1. **Pick the regime**: company, ordinary; sole trader or partnership, simplified if last year's revenue is within the limits, unless it opts out (D.P.R. 600/1973 art. 18, https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1973-09-29;600~art18!vig=); forfettario if its conditions are met (https://www.agenziaentrate.gov.it/portale/regime-forfetario-le-regole-2020-/semplificazioni-e-adempimenti).
-2. **Open the books** for that regime (Section 11; D.P.R. 600/1973 art. 14, https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1973-09-29;600~art14!vig=2026-06-30).
-3. **Record IVA documents on time** (D.P.R. 633/1972 art. 23, https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1972-10-26;633~art23!vig=2026-06-30).
-4. **Year end**: apply the Section 4 caps, update the asset register (D.P.R. 600/1973 art. 16, https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1973-09-29;600~art16!vig=2026-06-30), sign the inventory (Civil Code art. 2217, https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2217!vig=2026-06-30).
-5. **Prepare the financial statements** in the art. 2424 and 2425 schemes, then keep everything for the art. 2220 period (https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2220!vig=2026-06-30).
+### Case 1 (decision): simplified or ordinary accounts for 2026?
 
-## Ask the client first
+Facts. Two clients start 2026. Bianchi, a sole trader running an IT services business, received EUR 480,000 of revenue in 2025. Rossi & C. s.n.c., a partnership selling furniture, received EUR 820,000 in 2025. Neither has opted for ordinary accounts.
 
-- Company, partnership, sole trader or professional?
-- Revenue actually received last year, and is the main activity services or other?
-- Forfettario, or an option for ordinary accounts (and when)?
-- IVA registers with cash notes, or the registration-date option?
-- Stock and depreciable assets held, with dates and costs?
-- Companies: total assets, revenue and average staff for the last two years.
+Rule. Sole traders and partnerships keep simplified accounts in the next year if last year's revenue did not exceed EUR 500,000 for services or EUR 800,000 for other activities (D.P.R. 600/1973 art. 18). The headroom below the limit decides it: positive means simplified, negative means ordinary.
+
+Answer. Bianchi has EUR 20,000 of headroom, so simplified accounts (receipts and payments registers) for 2026. Rossi is EUR 20,000 over, so ordinary accounts (libro giornale, libro degli inventari) from 1 January 2026. Neither can use the forfettario: both are far above EUR 85,000.
+
+```oa-check
+name: Italy 2026, simplified accounts test for a services and a trading business
+inputs:
+  revenue_services: 480000
+  revenue_trading: 820000
+  limit_services: 500000
+  limit_other: 800000
+  limit_forfettario: 85000
+steps:
+  - headroom_services: limit_services - revenue_services
+  - headroom_trading: limit_other - revenue_trading
+  - forfettario_gap_services: revenue_services - limit_forfettario
+expected:
+  headroom_services: 20000.00
+  headroom_trading: -20000.00
+  forfettario_gap_services: 395000.00
+```
+
+### Case 2: year-end tax adjustments from the books
+
+Facts. Alfa S.r.l. has 2026 revenue of EUR 2,000,000. Its books show entertainment EUR 40,000 (paid by bank transfer), fuel and running costs for a car not used only for the business EUR 10,000, hotels and meals EUR 4,000 and telephone EUR 1,500.
+
+Working. Entertainment is deductible up to 1.5% of revenue up to EUR 10 million: EUR 30,000, so EUR 10,000 is added back (art. 108). Car running costs are deductible at 20%: EUR 2,000, EUR 8,000 added back (art. 164; the cost limits of art. 164 apply only to purchase, lease and hire). Hotels and meals at 75%: EUR 3,000, EUR 1,000 added back (art. 109). Telephone at 80%: EUR 1,200, EUR 300 added back (art. 102). Total add-back to the accounting profit: EUR 19,300, which costs EUR 4,632 of IRES at 24%.
+
+```oa-check
+name: Italy 2026, year-end add-backs for entertainment, car, hotels and phone
+inputs:
+  revenue: 2000000
+  entertainment: 40000
+  car_costs: 10000
+  hotels_meals: 4000
+  phone: 1500
+  ires_rate: 0.24
+steps:
+  - ent_cap: min(revenue, 10000000) * 0.015
+  - ent_addback: max(entertainment - ent_cap, 0)
+  - car_addback: car_costs - car_costs * 0.20
+  - hotel_addback: hotels_meals - hotels_meals * 0.75
+  - phone_addback: phone - phone * 0.80
+  - total_addback: ent_addback + car_addback + hotel_addback + phone_addback
+  - extra_ires: total_addback * ires_rate
+expected:
+  ent_cap: 30000.00
+  ent_addback: 10000.00
+  car_addback: 8000.00
+  total_addback: 19300.00
+  extra_ires: 4632.00
+```
 
 ## When to refuse or refer
 
@@ -440,26 +523,32 @@ The first year the raised limits apply is not settled: D.Lgs. 125/2024 art. 17 n
 
 ## Sources
 
-- Civil Code (art. 2214 to 2220, 2424, 2425, 2435-bis, 2435-ter): https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2220!vig=2026-06-30 (read 2026-10-31)
-- D.P.R. 600/1973 (art. 14 to 22): https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1973-09-29;600~art22!vig=2026-06-30 (read 2026-10-31)
-- D.P.R. 633/1972 (art. 23, 25, 39): https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1972-10-26;633~art39!vig=2026-06-30 (read 2026-10-31)
-- TUIR (art. 54-quinquies, 66, 77, 96, 102, 108, 109, 164): https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art66!vig=2026-06-30 (read 2026-10-31)
-- Agenzia, forfettario: https://www.agenziaentrate.gov.it/portale/regime-forfetario-le-regole-2020-/infogen-regime-forfetario-le-regole-2020- (read 2026-10-31)
-- TUIR art. 76: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art76!vig=2026-06-30 (read 2026-10-31)
-- TUIR art. 7: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art7!vig=2026-06-30 (read 2026-10-31)
-- TUIR art. 77: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art77!vig= (read 2026-10-31)
-- IRAP 2026 instructions: https://www.agenziaentrate.gov.it/portale/documents/20143/9765340/IRAP_2026_istruzioni.pdf/6cd3bc0e-e7bd-f449-c86b-03cc142c1b74?t=1772192055414 (read 2026-10-31)
-- D.P.R. 600/1973 art. 18: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1973-09-29;600~art18!vig= (read 2026-10-31)
-- TUIR art. 102: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art102!vig=2026-06-30 (read 2026-10-31)
-- TUIR art. 109: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art109!vig=2026-06-30 (read 2026-10-31)
-- TUIR art. 108: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art108!vig=2026-06-30 (read 2026-10-31)
-- TUIR art. 164: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art164!vig=2026-06-30 (read 2026-10-31)
-- TUIR art. 96: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art96!vig=2026-06-30 (read 2026-10-31)
-- TUIR art. 54-quinquies: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art54quinquies!vig=2026-06-30 (read 2026-10-31)
-- Civil Code art. 2435-ter: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2435ter!vig= (read 2026-10-31)
-- Civil Code art. 2435-bis: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2435bis!vig= (read 2026-10-31)
+Every page below was opened on 2026-11-14 and the figures this skill takes from it were found in the text.
 
-Not yet confirmed: that OIC principles apply to non-listed entities; that no chart of accounts is mandated.
+| Source | URL | Read on |
+| --- | --- | --- |
+| Civil Code (art. 2214 to 2220, 2424, 2425, 2435-bis, 2435-ter). Read for books, inventory, retention (arts 2214 to 2220) and the layouts (arts 2424, 2425) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2220!vig=2026-06-30 | 2026-11-14 |
+| D.P.R. 600/1973 (art. 14 to 22). Read for the books of arts 14 to 22, the 60-day entry rule and retention for tax | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1973-09-29;600~art22!vig=2026-06-30 | 2026-11-14 |
+| D.P.R. 633/1972 (art. 23, 25, 39). Read for IVA registers (arts 23, 25) and electronic storage (art. 39) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1972-10-26;633~art39!vig=2026-06-30 | 2026-11-14 |
+| TUIR (art. 54-quinquies, 66, 77, 96, 102, 108, 109, 164). Read for art. 66, simplified business income | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art66!vig=2026-06-30 | 2026-11-14 |
+| Agenzia, forfettario. Read for the EUR 85,000 limit, the 15% and 5% rates and the bookkeeping exemption | https://www.agenziaentrate.gov.it/portale/regime-forfetario-le-regole-2020-/infogen-regime-forfetario-le-regole-2020- | 2026-11-14 |
+| TUIR art. 76. Read for the company tax period | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art76!vig=2026-06-30 | 2026-11-14 |
+| TUIR art. 7. Read for the individual tax year | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art7!vig=2026-06-30 | 2026-11-14 |
+| TUIR art. 77. Read for the individual tax year | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art77!vig= | 2026-11-14 |
+| IRAP 2026 instructions. Read for the 3.9% ordinary IRAP rate | https://www.agenziaentrate.gov.it/portale/documents/20143/9765340/IRAP_2026_istruzioni.pdf/6cd3bc0e-e7bd-f449-c86b-03cc142c1b74?t=1772192055414 | 2026-11-14 |
+| D.P.R. 600/1973 art. 18. Read for the EUR 500,000 and EUR 800,000 simplified accounts limits | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1973-09-29;600~art18!vig= | 2026-11-14 |
+| TUIR art. 102. Read for the EUR 516.46 small-asset rule, the 80% telephone share and half depreciation in year one | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art102!vig=2026-06-30 | 2026-11-14 |
+| TUIR art. 109. Read for the 75% hotels and meals share and the traceable payment rule | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art109!vig=2026-06-30 | 2026-11-14 |
+| TUIR art. 108. Read for the entertainment caps 1.5%, 0.6% and 0.4% | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art108!vig=2026-06-30 | 2026-11-14 |
+| TUIR art. 164. Read for the 20%, 80% and 70% car shares | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art164!vig=2026-06-30 | 2026-11-14 |
+| TUIR art. 96. Read for the 30% interest limit | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art96!vig=2026-06-30 | 2026-11-14 |
+| TUIR art. 54-quinquies. Read for the EUR 516.40 professional small-asset rule | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art54quinquies!vig=2026-06-30 | 2026-11-14 |
+| Civil Code art. 2435-ter. Read for the micro company limits | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2435ter!vig= | 2026-11-14 |
+| Civil Code art. 2435-bis. Read for the abbreviated accounts limits | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2435bis!vig= | 2026-11-14 |
+| D.Lgs. 38/2005 art. 2. Read for which companies must use IFRS | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2005-02-28;38~art2!vig=2026-06-30 | 2026-11-14 |
+| D.Lgs. 38/2005 art. 9-bis. Read for the OIC as the body that issues the national accounting principles | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2005-02-28;38~art9bis!vig=2026-06-30 | 2026-11-14 |
+
+Not yet confirmed: that no chart of accounts is mandated (no source states it; the chart below is a working layout only); the sector depreciation coefficients (D.M. 31 December 1988, not read).
 
 ## Disclaimer
 
@@ -469,4 +558,4 @@ This Guide and its outputs are provided for informational and computational purp
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-31. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `italy-bookkeeping` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/italy-bookkeeping. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `italy-bookkeeping` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/italy-bookkeeping. If neither is available, confirm every figure against the official source pages cited above before relying on it.

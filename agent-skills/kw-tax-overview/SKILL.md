@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/kw-tax-overview"
   jurisdiction: "KW"
   tax_year: "2026"
-  last_updated: "2026-11-01"
+  last_updated: "2026-11-14"
 ---
 
-# Kuwait Tax Overview v0.3
+# Kuwait Tax Overview v0.4
 
 Tax year 2026.
 
@@ -30,8 +30,6 @@ Anyone asking which Kuwait tax applies. Each figure's home is the linked skill.
 | Individuals | Exempt on own income from trade or work, unless it represents a corporate body's share (reg. art. 8(2)) | 2026 | https://www.mof.gov.kw/Desicions/Decree/PDF/la2-2008.pdf |
 | Corporate bodies | See [corporate income tax](kw-corporate-income-tax.md) | 2026 | same |
 | Zakat, NLST, DMTT | See corporate Guide for separate statutory scope and conditions | 2026 | https://www.mof.gov.kw/Desicions/Decree/PDF/Law46_2006e.pdf ; https://www.mof.gov.kw/Desicions/Decree/PDF/LawNo19Of2000NationalLabor.pdf ; https://www.mof.gov.kw/Desicions/Decree/PDF/DecreeLawDMTTNo157of2024.pdf |
-| VAT or GST | unverified: current implementation status is a NON-OPERATIVE HOLD, see [VAT](kw-vat-gst.md) | 2026 | https://www.mof.gov.kw/MOFDesicions/mofDesicions1.aspx |
-| Social insurance | unverified: rates, coverage and due dates are held in [payroll](kw-payroll-social.md) | 2026 | unverified |
 
 ## The base
 
@@ -102,4 +100,4 @@ Not yet confirmed: NON-OPERATIVE HOLDS. VAT/GST and excise implementation and al
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-01. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `kw-tax-overview` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/kw-tax-overview. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `kw-tax-overview` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/kw-tax-overview. If neither is available, confirm every figure against the official source pages cited above before relying on it.

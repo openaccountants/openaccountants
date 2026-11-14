@@ -1,136 +1,153 @@
 ---
 name: insurance-sector
-description: "Use this skill whenever an insurer, reinsurer, captive, MGA, or insurance broker asks about accounting, regulatory, or tax issues specific to insurance entities. Trigger on phrases like \"IFRS 17\", \"ASC 944\", \"LDTI\", \"Solvency II\", \"Bermuda EBT\", \"captive insurance\", \"PFIC insurance exclusion\", \"PRA Pillar 1/2/3\", \"SCR\", \"MCR\", \"Lloyd's syndicate\", \"reinsurance recoverable\", \"deferred acquisition costs\", \"DAC\", \"premium deficiency reserve\", \"loss reserve discount\", \"insurance premium tax\", \"IPT\", \"consumption levy on insurance\", or any insurance-specific accounting/tax question. Covers IFRS 17 transition, US ASC 944 Long-Duration Targeted Improvements (LDTI), Solvency II prudential interaction with tax, captive insurance regimes (Bermuda, Cayman, Guernsey, Vermont), insurance premium tax matrix, and the PFIC active insurance exception. Does NOT cover: insurance product design / pricing, actuarial valuation methodology beyond reference, or insurance regulatory authorisation."
+description: "A 2026 cross-country insurance method: reconcile IFRS insurance and reinsurance balances, national tax reserves, premium taxes, captive licensing, prudential and multinational tax work. Includes sourced UK IPT arithmetic and correct Singapore licensing reference; holds unconfirmed country rates and specialist US GAAP/tax details."
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/insurance-sector"
   jurisdiction: "GLOBAL"
-  tax_year: "2025"
-  last_updated: "2026-07-13"
+  tax_year: "2026"
+  last_updated: "2026-11-14"
 ---
 
-# Insurance Sector
+# Insurance sector v1.0
 
-## Insurance Sector Tax & Accounting v0.1
+## Scope and quick reference
 
-## What this file is
+For 2026 insurers, reinsurers, insurance groups and captives: reconcile insurance-contract accounts to national tax, premium taxes, solvency and top-up-tax work. Load `corporate-income-tax-workflow-base` and the country's actual insurance/corporate-tax and VAT jobs. IFRS accounting, US GAAP, prudential returns and tax reserves are separate bases.
 
-A sector overlay for life insurers, non-life insurers, reinsurers, captives, MGAs, and brokers.
+This file does not price products, estimate actuarial reserves independently, perform a solvency return, obtain an insurance authorisation or resolve Lloyd's specialist tax. A qualified actuary's output is an input to review, not proof that every tax reserve is deductible.
 
-## Section 1 — Scope
-
-This skill covers:
-
-- **IFRS 17 transition** — fully effective for annual periods beginning on or after 1 January 2023; comparative IFRS 17 to IFRS 4 differences
-- **US ASC 944 LDTI** — fully effective for public business entities annual periods beginning after 15 December 2022 (calendar year 2023)
-- **Solvency II interaction with tax** — risk margin, technical provisions, deferred tax on transitional measures
-- **Captive insurance** regimes (Bermuda, Cayman, Guernsey, Isle of Man, Vermont, Hawaii, South Carolina, Singapore)
-- **Insurance Premium Tax (IPT)** matrix
-- **PFIC active insurance exception** for US-owned non-US insurers (IRC §1297(b)(2)(B), §1297(f))
-- **BEAT and §250 GILTI/FDII** for US-based insurance groups
-- **Pillar Two interaction** — IFRS 17 contractual service margin (CSM), risk adjustment volatility
-
-This skill does NOT cover:
-
-- **Insurance product design and pricing**
-- **Actuarial valuation methodology** beyond reference
-- **Insurance regulatory authorisation** procedures
-- **Lloyd's of London-specific syndicate tax** (separate specialist skill)
-
-## Section 2 — IFRS 17 ↔ ASC 944 LDTI differences
-
-**[T1] See `ifrs-local-gaap-reconciliation.md` for foundation. Insurance-specific:**
-
-**IFRS 17 vs ASC 944 LDTI differences**  _(Section 2 — IFRS 17 ↔ ASC 944 LDTI differences)_
-
-| Topic | IFRS 17 | ASC 944 LDTI |
+| First question | Instruction | Source |
 | --- | --- | --- |
-| Liability measurement | Building Block Approach (BBA), Premium Allocation Approach (PAA) for short-duration, Variable Fee Approach (VFA) for direct participating | Net premium reserve; updated assumptions through P&L (LDTI improvements) |
-| Discount rate | Top-down or bottom-up; reflects characteristics of cash flows | Single A-quality corporate yield curve (LDTI prescribed) |
-| Contractual Service Margin (CSM) | Recognised in P&L over coverage period | No equivalent — gain at issue spread differently |
-| Risk Adjustment | Reflects compensation for non-financial risk; entity-specific | Different — discretion in net premium reserve methodology |
-| Onerous contract | Loss recognised immediately + Loss Component tracking | Premium Deficiency Reserve (PDR) at portfolio level |
-| Reinsurance held | Asset/liability separately; expected to mirror underlying when treaty matches | Recognised as reduction of net premium |
+| What contract and framework? | Identify insurance risk, contract scope/group and the applicable adopted framework before choosing a measurement model | [AASB 17, scope and grouping](https://standards.aasb.gov.au/aasb-17-dec-2022) |
+| Are reinsurance and issued contracts separate? | Apply the separate reinsurance-held requirements, including non-performance and loss recovery | [AASB 17, paragraphs 60-70A](https://standards.aasb.gov.au/aasb-17-dec-2022) |
+| Is premium tax due? | Establish risk location, contract class, liable person and exemption before selecting a rate | [HMRC insurer guide](https://www.gov.uk/guidance/insurance-premium-tax) |
+| Is a captive exempt from tax? | A captive licence is not an income-tax exemption or proof that related premiums are deductible | [MAS official application, explanatory notes](https://www.mas.gov.sg/-/media/mas-media-library/regulation/insurance/captive-insurers-licence/applicationform--captiveinsurers-march-2022.pdf) |
 
-- **Material tax interaction** — IFRS 17 CSM creates a deferred tax balance — the CSM is recognised in equity at transition but released to P&L over time. Deferred tax tracks this release.  _([T1] Material tax interaction)_
+## Ask the client first
 
-## Section 3 — Specific insurance tax items
+- Which insurer/reinsurer/captive entities, licences, tax residences, branches and group relationships exist?
+- What are the actual contract classes, policy/risk locations, coverage periods, currencies and reporting/tax dates?
+- Which framework, reporting edition, measurement approach, grouping and transition method apply?
+- What are the actuarial cash flows, discount assumptions, risk adjustments, contractual service margins, acquisition costs and reinsurance terms?
+- What evidence supports tax reserves, premium-tax exemptions/allocations, intermediary fees and payments to related parties?
+- Which national solvency, foreign ownership/CFC/PFIC and top-up-tax rules/elections must be established separately?
 
-### 3.1 US insurance taxation
+## The method, step by step
 
-- **Subchapter L** — Separate corporate income tax regime for insurance companies  _(IRC §§801-848)_
-- **Life insurer** — §816(a) test: >50% reserves life or non-cancellable A&H: special reserves deduction, DAC capitalisation under §848  _(IRC §816(a), §848)_
-- **Non-life insurer** — §832 "underwriting income" + investment income; loss reserves discounted per §846  _(IRC §832, §846)_
-- **Captive PFIC exception** — "Qualifying insurance corporation" status if applicable insurance liabilities ≥ 25% of total assets (10% with safe harbour facts)  _(IRC §1297(f))_
-- **§953(d) election** — Election for foreign insurance corporations to be treated as US for tax (election common for Bermuda captives owned by US)  _(IRC §953(d))_
-- **§953(c)** — Related-party captive income — Subpart F  _(IRC §953(c))_
+1. Establish legal, licensed and tax status separately. Classify issued contracts, reinsurance held, investment components and any separate customer-service promises under the actual framework.
+2. Establish the applicable contract grouping, coverage and recognition dates. Obtain actuarial model outputs and reconcile assumptions to the approved valuation and ledger, rather than estimating missing liabilities as zero.
+3. Record fulfilment cash flows, the risk adjustment and any contractual service margin under the selected approach. Explain onerous groups, finance movements, acquisition costs, foreign exchange and service release separately.
+4. Compute reinsurance-held balances using their own recognition, risk-transfer and non-performance requirements. Reconcile recoveries and loss-recovery components without netting away the underlying loss.
+5. Bridge the accounts to the country's insurance tax base and tax reserve/DAC rules. Identify current/deferred tax and transition items; do not infer a tax asset from the mere existence of a CSM.
+6. Classify each premium by risk location, cover, dates, liable person and national exemption. Split mixed taxable/exempt cover on supported facts. Reconcile returns, intermediary fees, remittances and policy records.
+7. Separately reconcile solvency capital, prudential technical provisions and top-up-tax outcomes. Licensing, accounting profit and a nominal country rate do not decide these results.
 
-### 3.2 UK insurance taxation
+Steps 1-4 use the IFRS-aligned for-profit principles in [AASB 17, paragraphs 3-28F, 32-59 and 60-70A](https://standards.aasb.gov.au/aasb-17-dec-2022). The [AASB index](https://standards.aasb.gov.au/accounting-standards) identifies the public-sector insurance amendment applicable from July 2026; the older compilation must not be used as proof that public-sector scope is unchanged. Another accounting framework needs its own actual standard.
 
-- **General Insurer Tax Regulation (GITR)** — FA 2012 Part 2 / s.65  _(FA 2012 Part 2 / s.65)_
-- **Life Insurer "I-E" basis** — Income less Expenses; complex calculations  _([T1] 3.2 UK insurance taxation)_
-- **Lloyd's of London** — Special rules for syndicate members  _([T1] 3.2 UK insurance taxation)_
-- **IPT (Insurance Premium Tax) — UK** — 12% standard; 20% higher rate (travel, mechanical/electrical insurance); 0% reinsurance  _([T1] 3.2 UK insurance taxation)_
+## Insurance accounting decisions
 
-### 3.3 EU IPT matrix
-
-**EU IPT matrix**  _(3.3 EU IPT matrix)_
-
-| Country | Standard rate | Notable |
+| Issue | Work required | Source |
 | --- | --- | --- |
-| **Germany** | 19% | Plus 22% on fire insurance |
-| **France** | 9-30% by class | Auto 18%; health 7%; fire 30% |
-| **Italy** | 21.25% standard; 12.5% life; 2.5% professional liability | Plus regional |
-| **Spain** | 8% IPT | Plus Consorcio surcharge |
-| **Netherlands** | 21% | Aligned with VAT standard |
-| **Belgium** | 9.25% | Plus accident insurance surcharge |
-| **Sweden** | 32% on auto, fire | Variable by class |
-| **Ireland** | 3% | Low rate |
+| General measurement | Current, probability-weighted future cash flows within the boundary, discounting/financial risk, non-financial risk adjustment and CSM | [AASB 17, paragraphs 32-39](https://standards.aasb.gov.au/aasb-17-dec-2022) |
+| Premium allocation approach | Optional only if its actual eligibility test is met. Short coverage is one route; qualifying similarity to general measurement is another | [AASB 17, paragraphs 53-59](https://standards.aasb.gov.au/aasb-17-dec-2022) |
+| Direct participation features | Assess the applicable modified requirements rather than applying a label to all participating products | [AASB 17, paragraphs 29 and 45](https://standards.aasb.gov.au/aasb-17-dec-2022) |
+| Contractual service margin | Unearned profit for relevant issued-contract groups; release follows insurance-contract service, not premium receipt alone | [AASB 17, paragraphs 38-46](https://standards.aasb.gov.au/aasb-17-dec-2022) |
+| Onerous issued contracts | Recognise the required loss/loss component when the conditions are met; do not hide it by assuming a positive CSM | [AASB 17, paragraphs 47-52 and 57-58](https://standards.aasb.gov.au/aasb-17-dec-2022) |
+| Acquisition cash flows | Allocate rationally, recognise/assess recoverability as required, and distinguish any permitted expense election | [AASB 17, paragraphs 28A-28F and 59](https://standards.aasb.gov.au/aasb-17-dec-2022) |
+| Reinsurance held | Apply its own net-cost/net-gain CSM, counterparty non-performance, risk transfer and loss-recovery mechanics | [AASB 17, paragraphs 60-70A](https://standards.aasb.gov.au/aasb-17-dec-2022) |
 
-### 3.4 Bermuda corporate income tax (2025)
+Do not treat IFRS risk adjustment as a US GAAP margin, import a US discount rate into IFRS measurement or assume an ASC 944 LDTI loss test equals an IFRS onerous-group test. Preserve the original comparison topics for general/PAA/variable-fee measurement, discount curves, CSM, risk adjustment, premium deficiency/onerous losses, acquisition costs and reinsurance presentation, but do not use the old comparison table as a confirmed US GAAP rule set. Detailed ASC 944/LDTI commencement, scope and amendments are held in Sources.
 
-- **Bermuda 15% CIT** — Bermuda introduced 15% Corporate Income Tax effective 1 January 2025 for Bermuda Constituent Entity Groups (BCEG) within an MNE group with consolidated revenue ≥ EUR 750m. Insurance and reinsurance companies are within scope. Substantial transition relief and intra-group reorganisation rules.  _([T1] 3.4 Bermuda corporate income tax (2025))_
+An IFRS transition balance, tax basis, enacted tax treatment and recoverability assessment are all needed for deferred tax. A CSM does not automatically create a deferred tax asset, and a transition amount is not necessarily recognised or released through the same component in every case. Keep the gross/tax basis and recognition evidence rather than a universal equity-to-profit rule.
 
-## Section 4 — Captive insurance
+## United Kingdom: premium tax, not corporation tax
 
-**[T1] Common captive jurisdictions:**
+The following rates apply to the correctly classified UK taxable premium, not to insurance-company profit. Reinsurance and most long-term insurance are **exempt**, rather than a universal zero-rated supply. Overseas risks may face tax in their actual location.
 
-**Common captive jurisdictions**  _(Section 4 — Captive insurance)_
-
-| Jurisdiction | Captive count | Notable |
+| Premium class | Rate and condition | Source |
 | --- | --- | --- |
-| Bermuda | ~700+ | 15% CIT from 2025; long-standing EBT regime; ART (alternative risk transfer) hub |
-| Cayman | ~700+ | No CIT; Pillar Two QDMTT 2025 |
-| Vermont (US) | ~600+ | US state captive; favorable regulatory; subject to US federal CIT |
-| Hawaii (US) | ~250+ | Pacific Rim focus |
-| South Carolina (US) | ~190+ | n/a |
-| Tennessee (US) | n/a | Growing captive presence |
-| Guernsey | ~200+ | n/a |
-| Isle of Man | n/a | n/a |
-| Singapore | n/a | Captive Insurance Act 2015 |
-| Luxembourg | n/a | Reinsurance captive favoured by EU groups |
+| Standard-rated taxable general-insurance premiums | 12%; establish UK risk and no relevant exemption | [HMRC rate table](https://www.gov.uk/government/publications/rates-and-allowances-insurance-premium-tax/insurance-premium-tax-rates), [insurer guide](https://www.gov.uk/guidance/insurance-premium-tax) |
+| Higher-rated contracts | 20% for travel and the specified appliance/vehicle insurance arrangements; the selling arrangement matters | [HMRC insurer guide](https://www.gov.uk/guidance/insurance-premium-tax), [rate table](https://www.gov.uk/government/publications/rates-and-allowances-insurance-premium-tax/insurance-premium-tax-rates) |
 
-- **Captive tax planning watch-points** — - Sham insurance / lack of risk transfer challenges (US §831(b) "micro-captives" face IRS scrutiny under Notice 2016-66 and Listed Transaction status confirmed 2023) - BEAT on premium / reinsurance premium payments - Pillar Two now neutralises low-tax captive jurisdictions for in-scope MNE groups  _([T1] Captive tax planning watch-points)_
+An insurer intending to receive taxable premiums, or a taxable intermediary charging a higher-rate related fee, must establish its registration obligation. Mixed taxable/exempt premiums can require registration even if some cover is exempt. Use the actual policy allocation and [HMRC registration/return instructions](https://www.gov.uk/guidance/insurance-premium-tax), retain policy documents, endorsements, premium adjustments and notices to file, and confirm the actual return/payment period. This guide does not replace full Notice IPT1 risk-location, apportionment and contract-class tests.
 
-## Section 5 — Self-checks
+For income tax keep UK general insurance, life business and Lloyd's distinct. Do not cite the life-business Finance Act provisions as the universal general-insurer rule. I minus E, trading/non-trading business, reserves, transition and Lloyd's requirements are separate held country questions; a premium-tax rate does not answer them.
 
-- [ ] IFRS 17 transition adjustments to retained earnings documented
-- [ ] CSM tracking schedule per group of insurance contracts
-- [ ] Reinsurance held position separate from underlying
-- [ ] Onerous contract Loss Component identified
-- [ ] Discount rate methodology consistent year-over-year
-- [ ] DAC capitalisation per IFRS 17 / §848 (US)
-- [ ] §831(b) micro-captive Listed Transaction reporting if applicable
-- [ ] §953(d) election validity confirmed for foreign captives
-- [ ] Pillar Two ETR analysis including CSM-related deferred tax
-- [ ] IPT collected and remitted per country
-- [ ] Output flags every [T2]/[T3] item for reviewer judgement
+### Worked case: tax-exclusive premiums in different classes
 
-## Section 6 — Disclaimer
+Fabricated UK illustration after the full location/classification work has established a standard-rated premium of GBP 1,000 and a higher-rated travel premium of GBP 500. Both are tax-exclusive and have no mixed cover, adjustment or exemption. IPT is GBP 120 plus GBP 100, total GBP 220; combined premium plus tax is GBP 1,720. An inclusive premium would require the appropriate tax fraction instead of adding the rate again. An exempt reinsurance premium must not be included in either taxable base.
 
-Insurance accounting and tax are highly specialised. Outputs must be reviewed by credentialed insurance-sector practitioners. The most up-to-date version is at [openaccountants.com](https://openaccountants.com).
+```oa-check
+name: UK separate premium tax classes
+inputs:
+  standard_premium: 1000
+  higher_premium: 500
+  standard_rate: 0.12
+  higher_rate: 0.20
+steps:
+  standard_tax: standard_premium * standard_rate
+  higher_tax: higher_premium * higher_rate
+  total_tax: standard_tax + higher_tax
+  total_due: standard_premium + higher_premium + total_tax
+expected:
+  standard_tax: 120
+  higher_tax: 100
+  total_tax: 220
+  total_due: 1720
+```
+
+## European insurance and solvency
+
+Maintain separate premium-tax workpapers for Germany, France, Italy, Spain, the Netherlands, Belgium, Sweden and Ireland. Each must establish the insured risk, location, insurance class, taxable person, applicable premium date, national levies and exemptions. The former national percentage table, including fire/health/motor/life categories and additional parafiscal charges, was not supported by current official sources and is held below. A single standard percentage cannot describe every country's contract mix.
+
+For Solvency II/technical provisions, prudential risk margins, transitional measures, deferred taxes and loss-absorbing capacity, obtain the current adopted regulatory text and valuation. Accounting liabilities, prudential technical provisions and tax-deductible reserves need not match. No current solvency capital percentage, transition allowance or DTA recognition conclusion is supplied by this global method.
+
+## Singapore and captive-location workpapers
+
+The [MAS application form, explanatory notes](https://www.mas.gov.sg/-/media/mas-media-library/regulation/insurance/captive-insurers-licence/applicationform--captiveinsurers-march-2022.pdf) identifies a captive insurer's licensing application under section 11 of the **Insurance Act 1966**. It does not support the former reference to a separate "Captive Insurance Act 2015". The form is dated March 2022 and is used here only to identify that legal basis; it does not confirm current admission requirements, fees, capital or tax incentives.
+
+Preserve separate captive workpapers for Bermuda, Cayman Islands, Guernsey, Isle of Man, Singapore and the originally named US states Vermont, Hawaii and South Carolina. For each establish current licence class, insured related risks, risk transfer/distribution, substance, capital, premium deductibility, related-party pricing, domicile and foreign-owner taxation. The old captive population counts are not statutory eligibility tests or current market facts and are held rather than repeated as researched statistics.
+
+For Bermuda, assess current corporate income tax scope, transition and in-scope group status from the actual law; do not retain a blanket assumption of no tax. For Cayman do not assume the original claimed domestic top-up-tax commencement. Captive incorporation alone neither makes premiums deductible to the parent nor guarantees relief from controlled-foreign-company or other anti-avoidance rules.
+
+## United States and multinational groups
+
+Keep the original US questions for life/non-life classification under the relevant Internal Revenue Code, life reserves, non-life reserve discounting, tax deferred acquisition costs, related-person insurance income, elections under section 953(d), PFIC active-insurance eligibility and foreign shareholder consequences. PFIC, CFC and an insurer's own tax computation are different tests. The former numerical liability/asset tests and blanket deductions remain held until the current US country source is read; do not perform them from this guide.
+
+Likewise preserve BEAT, interest/cross-border deductions, GILTI/foreign-income regime changes, FDII and related reinsurance as current-year country questions. Neither a reinsurance payment nor a captive label proves an anti-abuse charge applies or is avoided. A tax election is a specific client decision with conditions and filing dates, not a default instruction.
+
+For top-up tax reconcile group scope, financial-accounting insurance balances, actual covered taxes, timing, deferred tax, elections and country implementation. An insurance CSM is not automatically the same tax timing difference everywhere. Do not assert that a low-tax captive is "neutralised" without the computation and applicable exemptions. The [UK deferred-tax recapture source](https://www.gov.uk/hmrc-internal-manuals/multinational-top-up-tax-and-domestic-top-up-tax/mtt27400) expressly distinguishes excluded liabilities, including specified insurance reserve/acquisition-cost categories, from liabilities subject to recapture. Other countries' implementations must be established separately.
+
+## When to refuse or refer
+
+- Missing policy classification, actuarial evidence, model scope or framework: do not manufacture a reserve/CSM or an automatic tax adjustment.
+- Unconfirmed premium location/class, licence, national tax reserve rule or election: retain a named open item before filing or claiming relief.
+- Captive structuring, disputed risk transfer, solvency, Lloyd's, complex reinsurance, foreign-owner insurance rules or top-up-tax elections: obtain the responsible specialist's conclusion.
+
+## Completion checklist
+
+- Contract groups, recognition, measurement, acquisition cash flows, CSM and onerous losses reconcile to the ledger.
+- Reinsurance held, counterparty risk and loss recovery are separate from issued-contract balances.
+- Tax reserves/DAC, current/deferred tax and transition have country-law support.
+- Premium location, taxable/exempt classes, intermediary fees and return records are reconciled.
+- Solvency, captive licensing/substance, foreign-owner anti-avoidance and top-up-tax work is separately documented.
+- Every unresolved figure or legal condition below remains out of usable guidance.
+
+## Sources
+
+| Source | URL | Read on | Read for |
+| --- | --- | --- | --- |
+| AASB 17, December 2022 compilation | https://standards.aasb.gov.au/aasb-17-dec-2022 | 2026-11-14 | Read for recognition/measurement sections, general approach, PAA, onerous groups, acquisition cash flows and separate reinsurance-held requirements; not a full actuarial model or US GAAP comparison |
+| AASB current standards index | https://standards.aasb.gov.au/accounting-standards | 2026-11-14 | Read for calendar-year 2026 and public-sector insurance amendment boundary |
+| HMRC IPT rates | https://www.gov.uk/government/publications/rates-and-allowances-insurance-premium-tax/insurance-premium-tax-rates | 2026-11-14 | Read for current standard/higher rate rows versus historic rates |
+| HMRC insurer guide | https://www.gov.uk/guidance/insurance-premium-tax | 2026-11-14 | Read for taxable classes, exemptions, insurer/intermediary registration and policy/return records |
+| MAS captive application, March 2022 | https://www.mas.gov.sg/-/media/mas-media-library/regulation/insurance/captive-insurers-licence/applicationform--captiveinsurers-march-2022.pdf | 2026-11-14 | Read for explanatory notes identifying Insurance Act 1966 section 11 only; current full Act fetch returned 403 |
+| HMRC MTT27400 | https://www.gov.uk/hmrc-internal-manuals/multinational-top-up-tax-and-domestic-top-up-tax/mtt27400 | 2026-11-14 | Read for deferred-tax liability recapture and excluded insurance-reserve/acquisition-cost categories |
+
+Not yet confirmed: detailed ASC 944/LDTI rules and effective dates; IFRS transition/deferred-tax conclusions for an actual contract/tax basis; full UK IPT Notice IPT1 risk-location/apportionment/exemption details and national income-tax/life/I minus E/Lloyd's rules; German/French/Italian/Spanish/Dutch/Belgian/Swedish/Irish premium taxes and parafiscal charges; Solvency II prudential rules and transitions; current Singapore licensing/tax details beyond the dated MAS form; all former captive counts; Bermuda corporate-tax group/transition conditions (official Act download timed out); Cayman's claimed domestic top-up-tax commencement; Guernsey/Isle of Man/US-state captive conditions; current US life/non-life/reserve/DAC/PFIC/CFC/election/BEAT/foreign-income provisions; non-UK top-up-tax implementation. No former global rate or captive-count table is carried into a usable calculation.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-07-13. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `insurance-sector` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/insurance-sector. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `insurance-sector` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/insurance-sector. If neither is available, confirm every figure against the official source pages cited above before relying on it.

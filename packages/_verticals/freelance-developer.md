@@ -1,87 +1,111 @@
 ---
 name: freelance-developer
-description: Industry vertical for freelance software developers, web developers, app developers, and SaaS builders. Loaded alongside any country skill to provide industry-specific classification guidance, deduction patterns, and revenue recognition rules. Trigger phrases — software developer, web developer, app developer, SaaS, freelance coder, indie hacker, freelance programmer, mobile app developer, full-stack developer.
-version: 1.0
+description: "2026 developer accounting method for earned and unbilled services, SaaS/app stores, open-source sponsorships, own development, cloud costs and country tax handoffs."
+version: 2.0
 category: vertical
 jurisdiction: GLOBAL
-last_updated: 2026-06-12
+last_updated: 2026-11-14
 tier: 2
+tax_year: 2026
+type: cross-country-method
+domain: tax
 ---
 
-# Freelance Developer Vertical Skill v1.0
+# Freelance developer accounting v2.0
 
-> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
+## Scope
 
-## Section 1 — Industry Profile
+For accountants working with contract developers, technical consultants, independent app publishers, SaaS builders and open-source maintainers. Reconciles service fees, hosted products, app stores, sponsorships and development costs alongside current country tax jobs.
 
-Freelance developers operate as knowledge workers selling technical services and/or digital products. The financial profile is characterized by high gross margins (typically 70–95%), low physical inventory, significant digital tool costs, and irregular income patterns that vary between retainer-based stability and project-based lumpiness.
+This is a cross-country method for 2026. Establish the entity, country, tax year, reporting framework and permitted accounting basis before using it. Financial-reporting recognition is separate from income-tax deductions, capital allowances and VAT/GST. The IFRS principles below use the Australian adopted paragraph text as an official public reference; Australian-specific paragraphs and local simplified rules are not automatically rules in another country. Match the compilation and local adoption to the reporting period. Do not silently apply this method as US GAAP or a country's cash-basis tax computation.
 
-**Typical entity structures:** Sole trader, single-member LLC, personal service company (IR35/PSC considerations in some jurisdictions), or micro-company.
+## Quick reference
 
-**Revenue model variations:**
-- **Agency/client services** — project fees, hourly/daily rates, monthly retainers
-- **Product (SaaS)** — recurring subscription revenue via Stripe/Paddle/payment processors
-- **Marketplace (apps)** — app store payouts from Apple/Google with 15–30% commission withheld
-- **Hybrid** — services income funding a product side-project, transitioning over time
-- **Sponsorship/open-source** — GitHub Sponsors, Open Collective, donation-based income
+| Decision | First check | Source |
+| --- | --- | --- |
+| Revenue or customer money? | Identify the enforceable contract, promised supply, performance and the party entitled to consideration | [AASB 15, paragraphs 9-38 and 105-109](https://standards.aasb.gov.au/aasb-15-dec-2022) |
+| Gross sales or a net commission? | Determine control and principal/agent status for the specified supply, not from the bank payout | [AASB 15, paragraphs B34-B38](https://standards.aasb.gov.au/aasb-15-dec-2022) |
+| Expense or intangible asset? | Identify controlled rights and applicable recognition criteria; business size alone does not decide | [AASB 138, paragraphs 18-23 and 48-71](https://standards.aasb.gov.au/aasb-138-dec-2022) |
+| Rental or right-of-use asset? | Establish the reporting framework, lease and any applicable short-term/low-value election | [AASB 16, paragraphs 5-8 and 22](https://standards.aasb.gov.au/aasb-16-nov-2022) |
 
-**Scale indicators:** Monthly recurring revenue (MRR) for SaaS, active client count for services, download/install counts for apps. Typical sole-trader developer revenue ranges from $30K–$300K depending on market and specialization.
+## Ask the client first
 
-**Cash flow pattern:** Lumpy for project work (large deposits then final payments), smooth for retainers and SaaS. Payment terms typically 14–30 days for B2B services. App store payouts arrive 30–45 days after the sale.
+- Which person/entity earns the income, owns the assets and signs the contracts? Obtain the legal structure, residence, business locations and reporting dates.
+- Which reporting framework and tax accounting basis apply? What registrations, elections, prior balances and tax losses exist?
+- Obtain contracts, invoices, credit notes, bank and platform statements, withholding certificates, refunds, chargebacks and opening/closing balances.
+- What is sold, when and to whom? Identify customer location and status, performance obligations, intermediaries, private use and any money held for another person.
+- Obtain cost invoices, asset ownership/use records, funding agreements, payroll/contractor documents, related-party dealings and the actual terms of insurance and licences.
 
----
+## The method, step by step
 
-## Section 2 — Revenue Recognition
+1. Establish legal ownership and accounting/tax scope before coding transactions. Keep each business entity, owner and client-money account separate.
+2. Map each contract to the actual promised goods/services and the consideration the business is entitled to. Determine recognition from performance and control. Billing, payout and cash dates are evidence, not universal recognition rules.
+3. Reconcile each income source from transactions to returns/refunds, fees, withheld tax, reserves and bank settlement. Review principal/agent status before choosing gross or net reporting. Do not double-count a payout and the underlying sales.
+4. Reconcile receivables, conditional contract assets, customer deposits, contract liabilities, deferred fees and client funds. Separate price concessions from credit losses. Obtain the applicable impairment standard before quantifying a loss allowance.
+5. Establish business purpose, private proportion, capital versus revenue treatment and timing for every cost. Obtain the current country law before claiming a tax deduction; an accounting expense is not proof of tax deductibility.
+6. Prepare an asset register with invoices, costs, ownership, available-for-use date, residual value, useful life, method and disposal proceeds. Maintain a separate tax-capital-allowance schedule. The prior purchase-price and useful-life ranges were unsupported planning estimates, not statutory values, and are held below.
+7. Apply the country's VAT/GST/sales-tax rules by supply, customer, location and registration. Include reverse charges/imported services where relevant. Do not reclaim tax on exempt/private activity just because a supplier charged it.
+8. Test payroll/contractor status, withholding, permanent establishment, cross-border reporting and elections using current country jobs. A platform tax form, incorporation or a merchant-of-record arrangement does not remove every obligation.
+9. Deliver reconciled journals and schedules, source-linked tax adjustments, missing facts and a review checklist. Require the relevant professional review before a return, tax payment or material accounting judgment is relied on.
 
-### Service income (projects and retainers)
+## Business model and records
 
-**Fixed-price projects:** Recognize revenue based on the accounting basis:
-- Cash basis: when payment received
-- Accrual basis: percentage-of-completion or on delivery (milestone billing)
+Separate client work, owned SaaS/apps, commercial licences, maintenance, sponsorship, donations, platform receipts and crypto/token arrangements. Establish legal owner of the work, IP rights and who contracts with the end customer. Sole trader, company, personal-service entity and partnership are not interchangeable tax classifications.
 
-**Retainers:** Monthly recurring income recognized in the month it relates to. If paid in advance, the unearned portion is deferred revenue (accrual basis). Most freelancers on cash basis recognize when received.
+Track actual delivery, support promises, usage fees, customer churn, receivables and production costs. The former revenue, margin, time and hiring ranges were management examples without current official evidence; they do not determine taxable status, employment, incorporation or a useful life.
 
-**Hourly/daily rate work:** Revenue recognized when invoiced (accrual) or when paid (cash). Unbilled time is work-in-progress on accrual basis — track but do not recognize as revenue until invoiced.
+## Service and product revenue
 
-### Product income (SaaS subscriptions)
+| Revenue stream | Instruction under the stated IFRS model | Source |
+| --- | --- | --- |
+| Fixed-price project | Identify distinct promises and the over-time criteria or point-in-time control transfer; invoice milestones alone do not decide recognition | [AASB 15, paragraphs 22-45](https://standards.aasb.gov.au/aasb-15-dec-2022) |
+| Hourly/day-rate service | Recognise entitled consideration as the qualifying service transfers, not only when an invoice is raised. Establish recoverability, variable discounts and conditional rights | [AASB 15, paragraphs 31-59 and 105-109](https://standards.aasb.gov.au/aasb-15-dec-2022) |
+| Retainer | Identify stand-ready availability or prepaid deliverables and their actual transfer pattern, including refund/rollover terms | [AASB 15, paragraphs 26(e), 35-45 and B44-B51](https://standards.aasb.gov.au/aasb-15-dec-2022) |
+| Hosted subscription | Separate hosted access, implementation, support, updates and any distinct licence. An annual prepayment is not automatically revenue on receipt | [AASB 15, paragraphs 22-45 and 105-109](https://standards.aasb.gov.au/aasb-15-dec-2022) |
+| App store or merchant of record | Determine contractual entitlement and principal/agent status for the specified supply before grossing up or deducting commissions | [AASB 15, paragraphs B34-B38](https://standards.aasb.gov.au/aasb-15-dec-2022) |
+| Commercial licence/royalty | Distinguish right to use/access, bundled obligations and the specific sales/usage royalty rule | [AASB 15, paragraphs B52-B63B](https://standards.aasb.gov.au/aasb-15-dec-2022) |
+| Sponsorship with promised features or services | Account for the actual enforceable service and its performance; a “donation” label does not eliminate contractual obligations | [AASB 15, paragraphs 9-38 and 47-59](https://standards.aasb.gov.au/aasb-15-dec-2022) |
 
-**Stripe/Paddle/payment processor payouts:**
-- Gross revenue = total customer charges (before processor fees)
-- Net payout = gross minus processing fees, refunds, chargebacks
-- Classify processing fees as a cost of sale, not a reduction to revenue
-- Annual subscriptions paid upfront: defer and recognize monthly (accrual) or recognize on receipt (cash)
+GitHub Sponsors, Open Collective, Patreon and other receipts require the underlying terms. A genuinely non-exchange gift may fall outside the revenue-from-contracts standard; determine the applicable framework and tax character instead of applying a universal cash-receipt rule. An earmarked feature grant, advance or refundable contribution can be different from an unconditional gift.
 
-**App store revenue (Apple App Store, Google Play):**
-- Apple/Google withhold 15–30% commission — revenue is the GROSS amount, commission is cost of sale
-- Payout timing: typically 30–45 days after the customer purchase
-- Multi-country sales may involve withholding tax on app store payments (check country skill)
+For Stripe, Paddle, Apple App Store, Google Play and other providers, obtain the actual sales/reseller/processor contract, settlement statement and refund/withholding detail. Neither a standard commission range nor an assumed payout lag is current law. A merchant of record can take specified sales-tax responsibilities without removing the developer's corporate, income, payroll, establishment or reporting obligations.
 
-### Sponsorship and donation income
+## Worked case: unbilled work is not necessarily unearned
 
-**GitHub Sponsors, Open Collective, Patreon:**
-- Recurring sponsorships = revenue when received
-- One-off donations = revenue when received
-- If sponsorship has deliverables attached (sponsored feature development), treat as service income
+Fabricated currency units. Assume one enforceable hourly service qualifies for over-time recognition. The developer has delivered 80 authorised hours at an agreed recoverable rate of 150, without variable consideration or credit losses. Only 60 hours were invoiced at the date, and the extra billing right remains conditional on further performance. Revenue is 12,000, billed receivables 9,000 and the conditional contract asset 3,000. Do not defer all 20 unbilled hours solely because an invoice has not been raised. [AASB 15, paragraphs 35-45 and 105-109](https://standards.aasb.gov.au/aasb-15-dec-2022).
 
-### Platform income aggregation
+```oa-check
+name: Delivered developer hours with conditional unbilled right
+inputs:
+  delivered_hours: 80
+  billed_hours: 60
+  recoverable_hourly_rate: 150
+steps:
+  revenue: delivered_hours * recoverable_hourly_rate
+  receivable: billed_hours * recoverable_hourly_rate
+  contract_asset: revenue - receivable
+expected:
+  revenue: 12000
+  receivable: 9000
+  contract_asset: 3000
+```
 
-When a developer earns from multiple platforms simultaneously, each platform payout is a separate revenue stream. Do not net them. Classify each by source for accurate reporting and platform tax form reconciliation (1099-K in the US, etc.).
+Boundary: recorded time that does not satisfy the contract's performance/entitlement requirements cannot be recognised merely by multiplying hours. An unconditional unbilled right is a receivable, not a contract asset. A permitted cash-basis tax result must be computed separately under country law.
 
----
+## Developer cost checklist
 
-## Section 3 — Industry-Specific Deductions
-
+The following are records to investigate, not automatically deductible categories:
 ### Hardware and equipment
 
 - Laptops, desktops, monitors, keyboards, mice, docking stations
 - Mobile devices used for testing (phones, tablets)
 - Networking equipment (routers, switches for home office)
 - Server hardware (if self-hosting)
-- Ergonomic equipment (standing desks, chairs) — business use portion
+- Ergonomic equipment (standing desks, chairs) :  business use portion
 
-**Treatment:** Capitalize if above the country skill's fixed asset threshold; expense if below. For mixed personal/business use devices, apply the business-use percentage.
+**Treatment:** identify the accounting recognition policy and separate tax-capital-allowance or low-value rule. No single tax threshold decides financial-reporting capitalisation in every country. Document mixed business/private use.
 
-### Software and subscriptions (typically 100% deductible)
+### Software and subscriptions
 
 - IDE licenses (JetBrains, Sublime Text)
 - Design tools (Figma, Sketch, Adobe Creative Cloud)
@@ -105,7 +129,7 @@ When a developer earns from multiple platforms simultaneously, each platform pay
 - Monitoring (Datadog, New Relic, Sentry)
 - Email delivery (SendGrid, Postmark, Mailgun)
 
-**Classification:** Cost of sale for production infrastructure serving paying customers. Operating expense for development/staging environments and internal tools.
+**Classification:** investigate production, development/staging, internal and private use separately. Determine whether costs are a current service expense, qualifying development/fulfilment asset, prepayment or another item under the framework; a vendor or environment label alone does not decide.
 
 ### Education and professional development
 
@@ -129,13 +153,40 @@ When a developer earns from multiple platforms simultaneously, each platform pay
 - Business insurance (PI, cyber liability)
 - Tax preparation fees
 
----
+Do not assume that annual software, a multi-year upfront SDK licence or a stock-image/font licence has one universal expense/capital treatment. Establish controlled rights, hosting/service access, service period, availability for use and relevant recognition criteria. Domain renewals and a separately purchased premium domain require the same evidence-led assessment; the old dollar examples and default lives are not recognition thresholds.
 
-## Section 4 — Common Bank Statement Patterns
+## Own development, client IP and open source
+
+For client work, establish who controls the work and retains IP, any right to reuse tools and the contractual revenue promise. “Work for hire” is a legal conclusion that depends on the contract and law, not a universal rule for every contractor. Revenue and the developer's retained asset are separate analyses.
+
+For an owned product, identify research versus development and apply the actual framework. The former blanket instruction to expense all sole-trader/micro-entity development is not an IFRS rule. Do not capitalise merely because a product could sell, and do not refuse qualifying recognition merely because the developer is small. Document the point at which all criteria were first met, reliable direct costs thereafter, and any impairment. The owner's unpaid personal time does not create a purchased labour expense.
+
+For a dual-license/open-source project, identify controlled rights, actual licence costs, developer costs and commercial promises. An open-source licence does not automatically make all project assets valueless, and a free licence does not eliminate legal compliance obligations. MIT, Apache, GPL and commercial rights differ; no licence-compliance opinion is provided by this accounting method. Purchased SDK/API, stock media, fonts and domains need their actual contracts rather than an automatic “multi-year equals capital” rule.
+## Asset, lease and intellectual-property checks
+
+Do not copy the former asset-price and useful-life ranges into an accounting or tax register. Use actual acquisition cost and the applicable framework; review private use, ownership, finance, impairment and disposal separately. For a lessee applying IFRS 16 there is no general exemption merely because the business is a sole practitioner or the lease is called operating. Specific short-term and low-value exemptions have conditions. [AASB 16, paragraphs 5-8 and 22](https://standards.aasb.gov.au/aasb-16-nov-2022).
+
+Research costs and internally generated goodwill/brands are not automatically capitalisable. Development requires all recognition criteria, including technical feasibility, intent, ability to use/sell, probable benefits, resources and reliable cost measurement. Once the criteria are met, qualifying subsequent development costs are not excluded merely because the developer is self-employed. Previously expensed expenditure is not reinstated as an asset later. Finite-life intangibles are amortised from availability for use using a supported life and pattern; indefinite-life intangibles are not amortised and require impairment review. Purchased rights, service subscriptions and business-combination goodwill require separate classification. [AASB 138, paragraphs 48-71 and 97-110](https://standards.aasb.gov.au/aasb-138-dec-2022).
+
+For an IFRS business combination, goodwill is not routinely amortised; it is carried subject to impairment, with annual testing. Separately identified finite-life customer lists or other intangibles can have amortisation. Other local GAAP and tax amortisation may differ. Do not post tax relief or a generic goodwill amortisation period without identifying the regime. [AASB 3, paragraph B63](https://standards.aasb.gov.au/aasb-3-dec-2022-0); [AASB 136, paragraphs 9-10 and 90](https://standards.aasb.gov.au/aasb-136-jan-2026-0).
+
+| Asset retained from the prior checklist | Cost evidence | Useful life/tax treatment | Practical use |
+| --- | --- | --- | --- |
+| Laptop (primary) | Actual invoice and ownership evidence | Supported accounting estimate and current tax schedule | Most common single asset |
+| External monitor(s) | Actual invoice and ownership evidence | Supported accounting estimate and current tax schedule | Often 2 monitors |
+| Desktop workstation | Actual invoice and ownership evidence | Supported accounting estimate and current tax schedule | Less common for freelancers |
+| Phone (testing) | Actual invoice and ownership evidence | Supported accounting estimate and current tax schedule | Multiple devices for cross-platform testing |
+| Tablet (testing) | Actual invoice and ownership evidence | Supported accounting estimate and current tax schedule | iPad/Android for testing |
+| Desk and chair | Actual invoice and ownership evidence | Supported accounting estimate and current tax schedule | Ergonomic setup |
+| Networking equipment | Actual invoice and ownership evidence | Supported accounting estimate and current tax schedule | Router, switch, access point |
+
+## Bank-statement investigation prompts
+
+These legacy descriptions are search hints, not evidence that a transaction is business income, deductible expenditure or a particular tax supply. Obtain the invoice, contract, settlement and counterparty. Transfers can be loans, refunds, owner funds or money held for someone else. A vendor name alone proves none of those decisions. The lists do not claim current vendor prices or platform contracts.
 
 ### Payment processors (revenue inflows)
 
-| Statement description pattern | Likely classification |
+| Statement description pattern | Category to investigate |
 |---|---|
 | STRIPE TRANSFER, STRIPE PAYOUT | SaaS/service revenue payout |
 | PADDLE NET, PADDLE.COM | SaaS revenue (net of fees and tax) |
@@ -147,9 +198,9 @@ When a developer earns from multiple platforms simultaneously, each platform pay
 | GUMROAD | Digital product sales |
 | LEMON SQUEEZY | Digital product sales |
 
-### Cloud and hosting (expense outflows)
+### Cloud and hosting (outflows to investigate)
 
-| Statement description pattern | Likely classification |
+| Statement description pattern | Category to investigate |
 |---|---|
 | AWS, AMAZON WEB SERVICES | Cloud hosting / infrastructure |
 | GOOGLE CLOUD, GCP | Cloud hosting / infrastructure |
@@ -162,9 +213,9 @@ When a developer earns from multiple platforms simultaneously, each platform pay
 | CLOUDFLARE | CDN / security |
 | HETZNER | Cloud hosting |
 
-### Software subscriptions (expense outflows)
+### Software subscriptions (outflows to investigate)
 
-| Statement description pattern | Likely classification |
+| Statement description pattern | Category to investigate |
 |---|---|
 | GITHUB INC | Software subscription / source control |
 | JETBRAINS | IDE license |
@@ -179,204 +230,62 @@ When a developer earns from multiple platforms simultaneously, each platform pay
 
 ### Hardware (less frequent, higher value)
 
-| Statement description pattern | Likely classification |
+| Statement description pattern | Category to investigate |
 |---|---|
 | APPLE STORE, APPLE.COM | Hardware purchase (laptop/phone/tablet) |
 | DELL, LENOVO | Hardware purchase (laptop/desktop) |
 | AMAZON MKTP, AMAZON.CO | Hardware or supplies (verify item) |
 
----
+## Platform, withholding and foreign-currency reporting
 
-## Section 5 — Equipment & Assets
+Identify the legal payer and contract separately for every platform or processor. Reconcile gross entitled consideration, platform fees, refunds, taxes withheld, rolling reserves, exchange conversion and settlements. A platform statement can include non-revenue transfers; a tax report can report gross payments that differ from accounting income. Check refunds, duplicated forms and the actual issuing entity. Do not assume every named platform issues the same tax form.
 
-### Typical capital expenditure
+The former US Form 1099-K shorthand is not a taxability threshold. Current IRS guidance distinguishes payment-card transactions from third-party settlement organisations, notes that a form may be issued below the statutory reporting threshold, and explains that a form alone does not decide taxable income. Retain the reporting question in the current US job; this global method does not introduce a new US return computation. [IRS, Understanding Form 1099-K](https://www.irs.gov/businesses/understanding-your-form-1099-k).
 
-| Asset | Typical cost range | Useful life | Notes |
-|---|---|---|---|
-| Laptop (primary) | $1,500–$4,000 | 3–4 years | Most common single asset |
-| External monitor(s) | $300–$1,500 | 5 years | Often 2 monitors |
-| Desktop workstation | $2,000–$5,000 | 4–5 years | Less common for freelancers |
-| Phone (testing) | $500–$1,500 | 2–3 years | Multiple devices for cross-platform testing |
-| Tablet (testing) | $400–$1,200 | 3 years | iPad/Android for testing |
-| Desk and chair | $500–$2,500 | 7–10 years | Ergonomic setup |
-| Networking equipment | $100–$500 | 5 years | Router, switch, access point |
+For an international payment, establish the income's character, source, work location, beneficial recipient, withholding documentation and any treaty claim. A US payer does not make every payment a US-source royalty. A platform's withholding is not automatically the final liability, and a credit requires its own evidence. Record foreign-currency recognition at the applicable transaction date and review the framework's translation and settlement requirements; invoice date is not universal where performance occurred earlier. Exact exchange-rate methods, treaty rates and withholding forms remain country-specific items below.
 
-### Lease vs. buy considerations
+## United Kingdom: expense boundary
 
-- **Apple hardware:** Often leased via financing or device-as-a-service programs. Lease payments are operating expenses; purchased devices are capital assets.
-- **Server/infrastructure:** Almost universally cloud-hosted (OpEx) rather than owned (CapEx) for freelancers. Monthly cloud costs are operating expenses, not assets.
-- **Mixed personal/business:** Apply business-use percentage to both depreciation (owned) and lease payments (leased).
+For a UK sole trader or individual in a business partnership, use the business-expense rules and private-use allocation, with the correct cash or traditional basis. Do not apply the sole-trader overview as company tax law. The owner's drawings, loan principal and an invented charge for the proprietor's own unpaid time are not ordinary paid business costs. [HMRC self-employed expenses](https://www.gov.uk/expenses-if-youre-self-employed).
 
-### Low-value asset rules
+Do not use the former global half-deduction default for client meals: UK client entertaining is not generally allowable under the cited self-employed guidance. Business advertising, qualifying subscriptions, professional/legal costs and training have their own conditions. The UK training guidance can cover new skills supporting the existing business, not only maintaining old skills; training to start a new unrelated business is different. Accountancy fees for the business and the individual's own Self Assessment preparation/submission are also distinguished. Review the actual cost and its purpose. [HMRC marketing/entertainment](https://www.gov.uk/expenses-if-youre-self-employed/marketing-entertainment-subscriptions); [HMRC legal/financial costs](https://www.gov.uk/expenses-if-youre-self-employed/legal-financial); [HMRC training](https://www.gov.uk/expenses-if-youre-self-employed/training-courses).
 
-Most jurisdictions have a threshold below which assets can be expensed immediately rather than capitalized (e.g., £1,000 UK, $2,500 US de minimis, €800 Germany). The country skill provides the threshold. Most developer peripherals (keyboards, mice, webcams, microphones) fall below this threshold and should be expensed immediately.
 
----
+## Country and cross-border handoffs
 
-## Section 6 — IP & Licensing
+- **UK:** distinguish self-employment, an employment engagement and an intermediary/personal-service company before using expense or off-payroll rules. The former client-concentration percentage and engagement-length benchmark are not legal IR35 safe harbours or automatic triggers. Obtain the actual status rules and contracts.
+- **EU/digital-service destinations:** establish customer status/location, supplier establishment, licence versus electronic service, platform responsibility, reverse charge and OSS route before applying VAT. A B2B label alone is not proof of registration or customer status.
+- **Australia, Canada and other countries:** use current local income, GST/HST/provincial tax, capital-allowance, cash-basis and contractor rules. No low-value-asset allowance or registration threshold is supplied as a global default.
+- **US:** retain current app-store/platform reporting, state digital-service and federal development-cost/GAAP questions in the existing US jobs. IAS 38 is not a substitute for ASC 350-40, other software standards or US tax law.
 
-### Software created by the developer
+For crypto, tokens and airdrops, preserve receipt/disposal dates, wallet evidence, fair-value evidence, the nature of the entitlement and any service or investment link. A token received for services, an unsolicited airdrop and a disposal can have different tax treatment. Do not classify every airdrop as current income worldwide or omit a non-cash receipt because it never reached a bank.
 
-**Client work (work-for-hire):** IP typically transfers to the client. No asset to capitalize. Revenue recognized as service income.
+Keep home-office evidence and local apportionment, mixed cloud and hardware use, private projects and refunds separate. A production cloud account can support both business and private work; document allocation. Reconcile recognition and settlement currency differences rather than assuming invoice date is always the transaction date.
 
-**Own products (SaaS, apps):** Development time is generally NOT capitalized for sole traders and micro-entities. Under most GAAP frameworks, internal development costs are expensed as incurred unless specific capitalization criteria are met (IAS 38 / ASC 350-40). For freelancers, the conservative default is to expense all development time and costs.
+## Insurance, professional development and scaling
 
-**Open-source with commercial licensing:** Dual-license models (MIT + commercial) — the open-source version has no balance sheet value. Revenue from commercial licenses recognized as license income.
+Assess PI/errors-and-omissions and cyber policies using actual customer requirements, territorial/retroactive cover, exclusions and insured entity. Do not invent mandatory cover amounts or common premiums. Review certifications, memberships, technical books, conferences and CPD under the country's actual business-purpose and new-business rules; a course purchase does not automatically make all travel and private activity deductible.
 
-### Third-party licenses consumed
+Evaluate sole trader versus company using real profit, retained earnings, risk, equity/investment plans, client terms, compliance and employment rules. No revenue or cash-reserve benchmark automatically makes a company preferable. Track actual taxable turnover and foreign supply rules for VAT/GST, including a merchant-of-record's specified obligations.
 
-- Open-source (MIT, Apache, GPL): No cost, no asset. Some GPL licenses have compliance obligations but no accounting impact.
-- Commercial SDK/API licenses: Expense as incurred (annual) or capitalize and amortize if multi-year upfront.
-- Stock photography/icons for products: Expense if per-project; capitalize if perpetual license for a product with multi-year life.
-- Font licenses: Typically expensed as incurred.
+Before hiring or subcontracting, establish capacity, recurring commitments, payroll/worker classification, IP assignment, confidentiality and security requirements. Monitor recurring revenue versus project dependence, churn, debtor/WIP ageing, gross contribution, infrastructure costs, margins and runway with the developer's data. Prior revenue, concentration and hour cutoffs are held as unsupported planning estimates, not law.
 
-### Domain names
+## When to refuse or refer
 
-- Domain registrations ($10–$50/year): Expense as incurred.
-- Premium domain purchases ($1,000+): May warrant capitalization as intangible asset, amortized over useful life (typically 5–10 years). Conservative default: expense if below the country skill's fixed asset threshold.
+Do not invent income from the customer's gross payment without contractual entitlement, treat all unbilled services as unearned, capitalise an undocumented estimate of the owner's time, or assume a reseller removes all tax registration. Refer disputed employment status, international establishment, IP/open-source obligations, crypto character or development recognition with the underlying contracts and cost records. Keep reconciliations and unresolved facts visible before filing.
+## Sources
 
----
+| Official source | Read date | Read scope |
+| --- | --- | --- |
+| [AASB 15, adopted IFRS revenue text](https://standards.aasb.gov.au/aasb-15-dec-2022) | 2026-11-14 | Read for contract/performance, over-time criteria, variable consideration, principal/agent and contract balances; not US GAAP or cash-basis tax rules |
+| [AASB 138, adopted IAS 38 text](https://standards.aasb.gov.au/aasb-138-dec-2022) | 2026-11-14 | Read for recognition, research/development, internally generated goodwill/brands, later costs and finite/indefinite lives |
+| [AASB 16, adopted IFRS 16 text](https://standards.aasb.gov.au/aasb-16-nov-2022) | 2026-11-14 | Read for lessee recognition and short-term/low-value exemptions, not a sole-practitioner size exemption |
+| [AASB 3, current July 2026 compilation](https://standards.aasb.gov.au/aasb-3-dec-2022-0) | 2026-11-14 | Read for paragraph B63 goodwill measurement versus separately identified intangibles |
+| [AASB 136, current July 2026 compilation](https://standards.aasb.gov.au/aasb-136-jan-2026-0) | 2026-11-14 | Read for paragraphs 9-10 and 90 on impairment and annual goodwill testing |
+| [HMRC self-employed expenses](https://www.gov.uk/expenses-if-youre-self-employed) | 2026-11-14 | Read for sole-trader/individual-partnership scope, business expenses and private allocation |
+| [HMRC marketing and entertainment](https://www.gov.uk/expenses-if-youre-self-employed/marketing-entertainment-subscriptions) | 2026-11-14 | Read for advertising, gifts, subscriptions and client-entertaining restrictions; not a global deduction percentage |
+| [HMRC legal and financial costs](https://www.gov.uk/expenses-if-youre-self-employed/legal-financial) | 2026-11-14 | Read for insurance/professional costs, own Self Assessment distinction, capital expenditure, fines, finance and cash-basis bad debts |
+| [HMRC training courses](https://www.gov.uk/expenses-if-youre-self-employed/training-courses) | 2026-11-14 | Read for existing-business skills, technology and administrative development versus a new unrelated business |
+| [IRS Form 1099-K guidance](https://www.irs.gov/businesses/understanding-your-form-1099-k) | 2026-11-14 | Read for payment-card/TPSO reporting distinction and why receipt of a form does not determine taxable income; no US-country rewrite here |
 
-## Section 7 — Platform Income Reporting
-
-### Multi-platform income tracking
-
-Developers commonly earn from 3–8 platforms simultaneously. Each platform has its own reporting cycle and tax form issuance threshold.
-
-**US-specific (1099-K / 1099-NEC):**
-- Stripe: Issues 1099-K if gross payments exceed $600
-- Apple: Issues 1099-MISC for App Store earnings
-- Google: Issues 1099-MISC for Play Store earnings
-- GitHub: Issues 1099-NEC for Sponsors payouts
-- PayPal: Issues 1099-K if gross payments exceed $600
-
-**Platform payout reconciliation:**
-- Gross platform revenue ≠ bank deposit (commissions, fees, refunds, chargebacks deducted)
-- Always reconcile: platform dashboard gross → deductions → net payout → bank deposit
-- Maintain a per-platform revenue schedule showing gross, deductions, and net
-
-**Multi-country platform income:**
-- App Store / Play Store sales in multiple countries may trigger local tax obligations
-- Paddle and similar merchant-of-record platforms handle local tax, simplifying the developer's obligations
-- Stripe does NOT act as merchant of record — the developer is responsible for local tax compliance on each sale
-
-### Withholding tax on platform payments
-
-- Some platforms withhold tax on payments to non-resident developers (e.g., US withholding on payments to non-US developers)
-- Withholding tax is NOT an expense — it is a prepayment of tax that may be creditable
-- Classify as "tax withheld at source" and apply against the relevant tax liability per the country skill
-
----
-
-## Section 8 — Industry Tax Traps
-
-### Trap 1: Treating gross platform revenue as net
-
-Apple/Google take 15–30%. Developers sometimes report only the net bank deposit as revenue. The correct treatment: gross revenue = full customer payment, commission = cost of sale expense.
-
-### Trap 2: Missing the SaaS nexus/VAT obligation
-
-Selling subscriptions to customers in multiple countries/states creates tax obligations in those jurisdictions. Developers often ignore this until they receive a tax authority notice. Flag if: SaaS revenue exceeds local thresholds and no tax skill is handling multi-jurisdiction compliance.
-
-### Trap 3: Capitalizing development time without meeting criteria
-
-IAS 38 and equivalent standards require specific criteria before development costs can be capitalized (technical feasibility, intention to complete, ability to use/sell, probable future economic benefits, ability to measure cost). Most sole-trader developers do not meet these criteria rigorously. Conservative default: expense all internal development time.
-
-### Trap 4: Home office deduction without proper calculation
-
-Many developers work from home and claim a proportion of housing costs. The deduction must be calculated using the country skill's approved method (simplified flat rate vs. actual proportional cost). Overclaiming can trigger principal private residence relief issues for property capital gains.
-
-### Trap 5: Crypto/token income not reported
-
-Developers receiving payment in cryptocurrency, earning bug bounties in tokens, or receiving airdrops for protocol contributions must report the fair market value at receipt as income. This is commonly overlooked.
-
-### Trap 6: IR35 / worker classification issues
-
-In jurisdictions with contractor-vs-employee rules (UK IR35, US worker classification, Australian PSI rules), developers working primarily for one client on the client's systems on ongoing contracts may be deemed employees. Flag if: >80% of revenue from a single client for >6 months.
-
-### Trap 7: Mixing personal and business cloud accounts
-
-A single AWS account used for both personal projects and client work needs careful cost allocation. If the business claims 100% but personal workloads run on it, this is aggressive. Recommend separate accounts or documented allocation methodology.
-
-### Trap 8: Overlooking foreign exchange gains/losses
-
-Developers paid in USD/EUR but reporting in another currency have taxable FX gains (and deductible losses) on the conversion. Ignoring this understates or overstates income.
-
----
-
-## Section 9 — Insurance & Professional Costs
-
-### Professional indemnity (PI) / errors & omissions (E&O) insurance
-
-- Typically required by enterprise clients and recommended for all client-facing work
-- Covers claims arising from code defects, security breaches, project delays, IP infringement
-- Cost range: $500–$3,000/year depending on coverage and revenue level
-- Fully deductible as a business expense
-
-### Cyber liability insurance
-
-- Covers data breaches, ransomware, notification costs
-- Increasingly relevant for developers handling customer data
-- Cost range: $300–$1,500/year
-- Fully deductible
-
-### Professional memberships and certifications
-
-- IEEE, ACM, BCS membership fees — deductible
-- Cloud certification exam fees (AWS, GCP, Azure) — deductible
-- Professional body registration (where applicable) — deductible
-
-### Continuing professional development (CPD)
-
-- Conference attendance (tickets, travel, accommodation) — deductible
-- Online course subscriptions — deductible
-- Technical books — deductible
-- Bootcamps and intensive training — deductible if maintaining/updating existing skills; may need capitalization if acquiring fundamentally new skills (country skill determines the distinction)
-
----
-
-## Section 10 — Scaling Triggers
-
-### When to incorporate (move from sole trader to company)
-
-Consider incorporation when:
-- Annual profit exceeds the country's tax-advantaged threshold for companies vs. individuals (the country skill provides this threshold)
-- Client contracts require a limited liability entity
-- Taking on subcontractors or employees
-- Seeking investment (investors require a company structure)
-- PI insurance costs are lower for a company
-- Multiple co-founders (partnership → company)
-
-### When to register for VAT/GST
-
-- Monitor revenue against the country skill's VAT/GST registration threshold
-- For SaaS with international customers, thresholds in customer countries may apply
-- Voluntary registration may be beneficial if most costs are VAT-bearing (cloud hosting, software)
-
-### When to hire vs. subcontract
-
-**Subcontract when:**
-- Overflow project work beyond personal capacity
-- Specialized skill needed for one project
-- Client allows subcontracting (check contract terms)
-
-**Hire when:**
-- Consistent 6+ months of overflow work
-- Need direct control over quality and process
-- Building a product team for own SaaS
-- Country skill's employment law requires it based on working patterns
-
-### Financial triggers to watch
-
-- Revenue exceeds audit threshold → need formal accounts
-- Revenue exceeds VAT threshold → register and charge VAT
-- Profit exceeds personal tax band → incorporation may save tax
-- Multiple clients → less IR35/classification risk
-- First employee hire → payroll obligations begin
-- International customers → multi-jurisdiction tax obligations
-
----
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
+Not yet confirmed: Current local worker/off-payroll classification rules; crypto/airdrop valuation and timing; detailed US software accounting/tax costs; actual open-source and IP contracts; non-exchange gift/grant accounting; country-specific domain-name, low-value asset and development tax relief; treaty/withholding forms and actual app-store/processor terms. The old UK low-value number was not established as a financial-reporting asset threshold. Exact current country deduction restrictions, VAT/GST/sales-tax thresholds, cash-basis eligibility and recognition adjustments, capital allowances, withholding/treaty/source rules, foreign-currency methodology, worker status, pension relief and incorporation consequences must be obtained from the relevant country job before a computation. The former equipment prices/useful-life ranges, platform fee/payout schedules, mandatory insurance/CPD amounts, market margin estimates and management revenue/headcount/hour thresholds had no current official support and are not retained as rules. Platform names and bank descriptions remain investigation hints only.

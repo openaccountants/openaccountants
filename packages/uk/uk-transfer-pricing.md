@@ -1,16 +1,17 @@
 ---
 name: uk-transfer-pricing
 description: "UK transfer pricing under TIOPA 2010 Part 4 for chargeable periods beginning in 2026, after the Finance Act 2026 reform. Covers the arm's length rule (s.147), the participation condition and its new extensions (ss.148A, 162A, 162B), the SME exemption defined through the EU Recommendation 2003/361 euro limits (ss.166 to 173), the new UK-to-UK exemption (s.164A), the unassessed transfer pricing profits charge that replaced diverted profits tax (Part 4A, ss.217A to 217T, CT rate plus 6 points), master file and local file records (SI 2023/818), country-by-country reporting (EUR 750m), the planned international controlled transactions schedule, method choice and benchmarking, compensating adjustments, APAs and penalties. Tax year 2026. Trigger on: TIOPA Part 4, arm's length UK, UTPP, unassessed transfer pricing profits, DPT repeal, UK-to-UK exemption, SME exemption transfer pricing, local file UK, CbCR UK, ICTS. Out of scope: CT rates and base (uk-corporation-tax), non-resident individuals (uk-non-resident-sa109), VAT (uk-vat-return)."
-version: 2.0
+version: 2.1
 jurisdiction: GB
 tax_year: 2026
-last_updated: 2026-10-23
+last_updated: 2026-11-14
 depends_on:
   - transfer-pricing-workflow-base
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: transfer-pricing
+type: situation-rules
 ---
 
 # UK transfer pricing (TIOPA 2010 Part 4 and Part 4A), 2026
@@ -64,7 +65,7 @@ See also: `uk-corporation-tax` (rates, marginal relief, CT600, payment dates, in
 | Corporation tax main rate (applies to most TP adjustments of large companies) | 25% | FY2026 | https://www.legislation.gov.uk/ukpga/2025/8/section/13 |
 | Corporation tax main rate | 25% | FY2025 (1 Apr 2025 to 31 Mar 2026) | https://www.legislation.gov.uk/ukpga/2024/12/section/12 |
 | Bank surcharge (banking companies, above the surcharge allowance) | 3% of surcharge profits | APs beginning on or after 1 Apr 2023 | https://www.legislation.gov.uk/ukpga/2010/4/section/269DA |
-| UTPP rate | underlying corporation tax rate plus 6%: 31% where the 25% main rate applies; 34% for a banking company whose surcharge profits exceed its surcharge allowance (3% bank surcharge counts as an amount charged as if it were corporation tax) | APs beginning on or after 1 Jan 2026 | https://www.legislation.gov.uk/ukpga/2026/11/schedule/5 |
+| UTPP rate | underlying corporation tax rate plus 6% (31% and 34% computed: 25% main rate + 6%; 25% + 3% bank surcharge + 6%): 31% where the 25% main rate applies; 34% for a banking company whose surcharge profits exceed its surcharge allowance (3% bank surcharge counts as an amount charged as if it were corporation tax) | APs beginning on or after 1 Jan 2026 | https://www.legislation.gov.uk/ukpga/2026/11/schedule/5 |
 | UTPP effective tax mismatch threshold | other party's tax on the corresponding profits less than 80% of the UK underlying corporation tax amount | APs beginning on or after 1 Jan 2026 | https://www.legislation.gov.uk/ukpga/2026/11/schedule/5 |
 | Diverted profits tax | repealed (FA 2015 Part 3); still applies to APs beginning before 1 Jan 2026 | APs beginning on or after 1 Jan 2026 | https://www.legislation.gov.uk/ukpga/2026/11/section/46 |
 | Small enterprise: staff | fewer than 50 | 2026 | https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32003H0361 |
@@ -249,32 +250,32 @@ expected:
 | TIOPA 2010 s.174 (compensating adjustments) | https://www.legislation.gov.uk/ukpga/2010/8/section/174 | 2026-10-23 |
 | TIOPA 2010 s.218 (advance pricing agreements) | https://www.legislation.gov.uk/ukpga/2010/8/section/218 | 2026-10-23 |
 | Commission Recommendation 2003/361/EC, Annex Arts 2 to 6 | https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32003H0361 | 2026-10-23 |
-| Transfer Pricing Records Regulations 2023 (SI 2023/818) regs 1 to 6 | https://www.legislation.gov.uk/uksi/2023/818/regulation/4 | 2026-10-23 |
-| CbCR Regulations 2016 (SI 2016/237) regs 2, 3, 12, 13, 14 | https://www.legislation.gov.uk/uksi/2016/237/regulation/3 | 2026-10-23 |
-| Finance Act 2007 Sch 24 (inaccuracy penalties, para 3C TP records presumption) | https://www.legislation.gov.uk/ukpga/2007/11/schedule/24 | 2026-10-23 |
-| Finance Act 1998 Sch 18 para 23 (record-keeping penalty) | https://www.legislation.gov.uk/ukpga/1998/36/schedule/18/paragraph/23 | 2026-10-23 |
-| HMRC INTM412070 and INTM412080 (SME exemption and definition) | https://www.gov.uk/hmrc-internal-manuals/international-manual/intm412080 | 2026-10-23 |
-| HMRC INTM412090 (qualifying treaties list) | https://www.gov.uk/hmrc-internal-manuals/international-manual/intm412090 | 2026-10-23 |
-| HMRC INTM414020 (summary of transfer pricing reform) | https://www.gov.uk/hmrc-internal-manuals/international-manual/intm414020 | 2026-10-23 |
-| HMRC INTM414310 (existing exemptions unchanged) | https://www.gov.uk/hmrc-internal-manuals/international-manual/intm414310 | 2026-10-23 |
-| HMRC INTM414320 (UK-to-UK exemption) | https://www.gov.uk/hmrc-internal-manuals/international-manual/intm414320 | 2026-10-23 |
-| HMRC INTM421010 (OECD methods, most appropriate method) | https://www.gov.uk/hmrc-internal-manuals/international-manual/intm421010 | 2026-10-23 |
-| HMRC INTM421080 (TNMM) | https://www.gov.uk/hmrc-internal-manuals/international-manual/intm421080 | 2026-10-23 |
-| HMRC INTM483030 (transfer pricing documentation) | https://www.gov.uk/hmrc-internal-manuals/international-manual/intm483030 | 2026-10-23 |
-| HMRC INTM483110 (penalties in transfer pricing cases) | https://www.gov.uk/hmrc-internal-manuals/international-manual/intm483110 | 2026-10-23 |
-| HMRC INTM484090 (arm's length range) | https://www.gov.uk/hmrc-internal-manuals/international-manual/intm484090 | 2026-10-23 |
-| HMRC INTM485120 (interquartile range, adjust to median) | https://www.gov.uk/hmrc-internal-manuals/international-manual/intm485120 | 2026-10-23 |
-| HMRC INTM489105 (UTPP introduction) | https://www.gov.uk/hmrc-internal-manuals/international-manual/intm489105 | 2026-10-23 |
-| HMRC INTM489135 (UTPP mismatch examples) | https://www.gov.uk/hmrc-internal-manuals/international-manual/intm489135 | 2026-10-23 |
-| HMRC INTM489150 (UTPP exceptions, SMEs) | https://www.gov.uk/hmrc-internal-manuals/international-manual/intm489150 | 2026-10-23 |
-| HMRC INTM489205 (UTPP process, due date) | https://www.gov.uk/hmrc-internal-manuals/international-manual/intm489205 | 2026-10-23 |
+| Transfer Pricing Records Regulations 2023 (SI 2023/818) regs 1 to 6. Read for the master file and local file duty. | https://www.legislation.gov.uk/uksi/2023/818/regulation/4 | 2026-10-23 |
+| CbCR Regulations 2016 (SI 2016/237) regs 2, 3, 12, 13, 14. Read for the CbC threshold and filing rules. | https://www.legislation.gov.uk/uksi/2016/237/regulation/3 | 2026-10-23 |
+| Finance Act 2007 Sch 24 (inaccuracy penalties, para 3C TP records presumption). Read for the presumption on TP records. | https://www.legislation.gov.uk/ukpga/2007/11/schedule/24 | 2026-10-23 |
+| Finance Act 1998 Sch 18 para 23 (record-keeping penalty). Read for the record-keeping penalty. | https://www.legislation.gov.uk/ukpga/1998/36/schedule/18/paragraph/23 | 2026-10-23 |
+| HMRC INTM412070 and INTM412080 (SME exemption and definition). Read for the SME exemption and definition. | https://www.gov.uk/hmrc-internal-manuals/international-manual/intm412080 | 2026-10-23 |
+| HMRC INTM412090 (qualifying treaties list). Read for the qualifying treaties list. | https://www.gov.uk/hmrc-internal-manuals/international-manual/intm412090 | 2026-10-23 |
+| HMRC INTM414020 (summary of transfer pricing reform). Read for the transfer pricing reform. | https://www.gov.uk/hmrc-internal-manuals/international-manual/intm414020 | 2026-10-23 |
+| HMRC INTM414310 (existing exemptions unchanged). Read for the exemptions kept. | https://www.gov.uk/hmrc-internal-manuals/international-manual/intm414310 | 2026-10-23 |
+| HMRC INTM414320 (UK-to-UK exemption). Read for the UK-to-UK exemption. | https://www.gov.uk/hmrc-internal-manuals/international-manual/intm414320 | 2026-10-23 |
+| HMRC INTM421010 (OECD methods, most appropriate method). Read for the most appropriate method. | https://www.gov.uk/hmrc-internal-manuals/international-manual/intm421010 | 2026-10-23 |
+| HMRC INTM421080 (TNMM). Read for the TNMM. | https://www.gov.uk/hmrc-internal-manuals/international-manual/intm421080 | 2026-10-23 |
+| HMRC INTM483030 (transfer pricing documentation). Read for what documentation HMRC expects. | https://www.gov.uk/hmrc-internal-manuals/international-manual/intm483030 | 2026-10-23 |
+| HMRC INTM483110 (penalties in transfer pricing cases). Read for penalties in TP cases. | https://www.gov.uk/hmrc-internal-manuals/international-manual/intm483110 | 2026-10-23 |
+| HMRC INTM484090 (arm's length range). Read for the arm's length range. | https://www.gov.uk/hmrc-internal-manuals/international-manual/intm484090 | 2026-10-23 |
+| HMRC INTM485120 (interquartile range, adjust to median). Read for adjusting to the median. | https://www.gov.uk/hmrc-internal-manuals/international-manual/intm485120 | 2026-10-23 |
+| HMRC INTM489105 (UTPP introduction). Read for the UTPP charge. | https://www.gov.uk/hmrc-internal-manuals/international-manual/intm489105 | 2026-10-23 |
+| HMRC INTM489135 (UTPP mismatch examples). Read for the UTPP mismatch examples. | https://www.gov.uk/hmrc-internal-manuals/international-manual/intm489135 | 2026-10-23 |
+| HMRC INTM489150 (UTPP exceptions, SMEs). Read for the UTPP exceptions. | https://www.gov.uk/hmrc-internal-manuals/international-manual/intm489150 | 2026-10-23 |
+| HMRC INTM489205 (UTPP process, due date). Read for the UTPP due date. | https://www.gov.uk/hmrc-internal-manuals/international-manual/intm489205 | 2026-10-23 |
 | TMA 1970 s.59D (corporation tax due date) | https://www.legislation.gov.uk/ukpga/1970/9/section/59D | 2026-10-23 |
 | Finance Act 2025 s.13 (main rate FY2026) | https://www.legislation.gov.uk/ukpga/2025/8/section/13 | 2026-10-23 |
 | Finance (No. 2) Act 2024 s.12 (main rate FY2025) | https://www.legislation.gov.uk/ukpga/2024/12/section/12 | 2026-10-23 |
 | CTA 2010 ss.18A, 18B, 18D and 18E (small profits rate, marginal relief, limits, associated companies) | https://www.legislation.gov.uk/ukpga/2010/4/section/18D | 2026-10-23 |
 | CTA 2010 s.269DA (bank surcharge, charged as if corporation tax) | https://www.legislation.gov.uk/ukpga/2010/4/section/269DA | 2026-10-23 |
-| CbCR Regulations 2016 reg 3A (report for the period after the threshold period) | https://www.legislation.gov.uk/uksi/2016/237/regulation/3A | 2026-10-23 |
-| HM Treasury and HMRC, Transfer pricing scope and documentation: summary of responses (SME exemption kept) | https://www.gov.uk/government/consultations/transfer-pricing-scope-and-documentation/outcome/transfer-pricing-scope-and-documentation-summary-of-responses | 2026-10-23 |
-| HMRC, International Controlled Transactions Schedule technical consultation (draft regulations) | https://www.gov.uk/government/consultations/transfer-pricing-international-controlled-transactions-schedule | 2026-10-23 |
+| CbCR Regulations 2016 reg 3A (report for the period after the threshold period). Read for the report for the period after the threshold period. | https://www.legislation.gov.uk/uksi/2016/237/regulation/3A | 2026-10-23 |
+| HM Treasury and HMRC, Transfer pricing scope and documentation: summary of responses (SME exemption kept). Read for the decision to keep the SME exemption. | https://www.gov.uk/government/consultations/transfer-pricing-scope-and-documentation/outcome/transfer-pricing-scope-and-documentation-summary-of-responses | 2026-10-23 |
+| HMRC, International Controlled Transactions Schedule technical consultation (draft regulations). Read for the draft International Controlled Transactions Schedule. | https://www.gov.uk/government/consultations/transfer-pricing-international-controlled-transactions-schedule | 2026-10-23 |
 
 Not yet confirmed: the ICTS regulations, thresholds and penalties (still in draft; no made instrument found on legislation.gov.uk on 2026-10-23); whether marginal relief lowers the underlying corporation tax rate in s.217A(4)(a) where the company's profits including the UTPP fall between the lower and upper limits (marginal relief is a reduction of tax under CTA 2010 s.18B, not a rate, and HMRC guidance does not say); whether HMRC applies a fixed number of days for producing a master file or local file (the statutory route is an information notice under FA 2008 Sch 36, which sets its own deadline); and the summary audit trail, which HMRC said in 2023 it would consult on further.

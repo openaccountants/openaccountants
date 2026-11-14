@@ -1,14 +1,15 @@
 ---
 name: nl-social-contributions
 description: "Dutch social contributions for tax year 2026, for employees, employers and the self-employed. Covers who is insured for the national insurances (AOW, Anw, Wlz) and the employee insurances (WW, WIA, ZW); the 2026 national insurance premiums of 27.65% in the first box 1 band (EUR 38,883) and the AOW-age variant; employer premiums AWf (2.74% / 7.74%), Aof (6.27% / 7.63%), Wko, Whk and the Zvw employer levy (6.10%) up to the maximum premium wage of EUR 79,409; the 4.85% Zvw contribution for the self-employed; the premium base, deadlines, fines and interest; and cross-border rules (Regulation 883/2004, A1, the 25% test, telework). Trigger on: premies volksverzekeringen, premies werknemersverzekeringen, bijdrage Zvw, werkgeversheffing Zvw, maximumpremieloon, AWf, Aof, Whk, social security Netherlands, zzp Zvw, A1 Netherlands. Out of scope: the payroll run itself (nl-payroll-tax) and the income tax computation (nl-income-tax)."
-version: 0.2
+version: 0.3
 jurisdiction: NL
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
+type: computation
 ---
 
 # Netherlands social contributions (2026)

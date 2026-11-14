@@ -2,10 +2,10 @@
 name: gg-company-formation
 description: >
   Guernsey local company incorporation reference covering the licensed applicant, founder, director, registered office and resident agent, application documents, ownership information, person registration and Registry fees. Includes a recomputable fee example and post-incorporation handover controls. Based on primary Registry guidance checked in October 2026; current statutory reconciliation, complex ownership and specialised entities remain outside this research draft. Independent whole-pack source review is recorded in the Sources section; professional attestation remains pending.
-version: 0.2
+version: 0.3
 jurisdiction: GG
 tax_year: 2026
-last_updated: 2026-10-29
+last_updated: 2026-11-14
 category: formation
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
@@ -111,4 +111,4 @@ expected:
 
 Not yet confirmed: full name restrictions, resident-agent exemptions, complex beneficial-owner tests, regulated permissions and specialised company forms. These are explicit exclusions from the ordinary application/fee method. The [fresh independent whole-pack review](../../evidence/research/guernsey-2026/review/report.md) and [bounded contribution-assessment closure](../../evidence/research/guernsey-2026/review/bounded-addition-closure.md) accept this explicitly partial draft; no professional attestation is claimed.
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.

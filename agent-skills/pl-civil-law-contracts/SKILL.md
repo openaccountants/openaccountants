@@ -1,16 +1,16 @@
 ---
 name: pl-civil-law-contracts
-description: "Polish PIT and ZUS on civil-law contracts and board fees for tax year 2026: mandate contracts (umowa zlecenie), specific-task contracts (umowa o dzieło) and fees of management and supervisory board members. Covers PIT Act art. 13 pkt 7 and 8, the 20% and 50% standard costs and the PLN 120,000 cap on 50% costs, the 12% advance under art. 41, the 12% flat tax on contracts up to PLN 200, the under-26 relief for zlecenie, PIT-11 and the annual payer declarations; ZUS for zlecenie (compulsory pension, disability and accident, voluntary sickness, the student exemption, the multiple-contract and minimum wage rules), dzieło with one's own employer, board members, FP, FS, FGŚP and the 9% health contribution. Trigger on: umowa zlecenie, umowa o dzieło, składki od zlecenia, 50% koszty autorskie, wynagrodzenie członka zarządu, rada nadzorcza ZUS. Out of scope: employees in pl-payroll; the self-employed in pl-zus-contributions; the annual return in pl-income-tax."
+description: "Polish PIT and ZUS on civil-law contracts and board fees for tax year 2026, covering mandate contracts (umowa zlecenie), specific-task contracts (umowa o dzieło) and fees of management and supervisory board members. Covers PIT Act art. 13 pkt 7 and 8, the 20% and 50% standard costs and the PLN 120,000 cap on 50% costs, the 12% advance under art. 41, the 12% flat tax on contracts up to PLN 200, the under-26 relief for zlecenie, PIT-11 and the annual payer declarations; ZUS for zlecenie (compulsory pension, disability and accident, voluntary sickness, the student exemption, the multiple-contract and minimum wage rules), dzieło with one's own employer, board members, FP, FS, FGŚP and the 9% health contribution. Trigger phrases include umowa zlecenie, umowa o dzieło, składki od zlecenia, 50% koszty autorskie, wynagrodzenie członka zarządu, rada nadzorcza ZUS. Not covered here are employees in pl-payroll; the self-employed in pl-zus-contributions; the annual return in pl-income-tax."
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/pl-civil-law-contracts"
   jurisdiction: "PL"
   tax_year: "2026"
-  last_updated: "2026-11-01"
+  last_updated: "2026-11-14"
 ---
 
-# Poland: mandate and specific-task contracts and board fees, PIT and ZUS (2026)
+# Poland: mandate and specific-task contracts and board fees, PIT and ZUS (2026) v1.0
 
 > **General reference only.** This skill is general tax reference material for AI-assisted work. It has not been reviewed for any specific payer's or contractor's facts. Do not rely on it to pay, withhold or file without review by a qualified professional in Poland.
 
@@ -40,27 +40,27 @@ metadata:
 
 | Item | Rate or amount | Year | Source |
 |---|---|---|---|
-| Standard costs, zlecenie and dzieło (art. 13 pkt 8) | 20% of revenue after the contractor's social contributions withheld that month | 2026 | PIT Act art. 22 ust. 9 pkt 4, https://api.sejm.gov.pl/eli/acts/DU/2026/592/text.pdf |
-| Author's costs (copyright and related rights, creative fields listed in art. 22 ust. 9b) | 50% of revenue after the contractor's social contributions | 2026 | PIT Act art. 22 ust. 9 pkt 3 and ust. 9b |
-| Annual cap on 50% costs (all art. 22 ust. 9 pkt 1-3 costs together) | PLN 120,000, the top of the first scale band | 2026 | PIT Act art. 22 ust. 9a and art. 27 ust. 1 |
-| Costs, board members (art. 13 pkt 7) | PLN 250 a month (PLN 3,000 a year); with several such sources up to PLN 4,500 a year | 2026 | PIT Act art. 22 ust. 9 pkt 5 and ust. 2 pkt 1-2 |
-| Advance on zlecenie, dzieło and board fees | 12% (the lowest scale rate) of revenue less costs less social contributions; always 12%, the annual return applies 32% | 2026 | PIT Act art. 41 ust. 1, art. 27 ust. 1 |
-| PIT-2 reduction | up to PLN 300 a month (1/12 of PLN 3,600) if the contractor files the statement with this payer | 2026 | PIT Act art. 31b ust. 1 |
-| Flat tax, contract amount up to PLN 200 with a person who is not the payer's employee | 12% of revenue, no costs, final | 2026 | PIT Act art. 30 ust. 1 pkt 5a |
-| Under-26 relief | zlecenie revenue (not dzieło, not board fees) exempt up to PLN 85,528 a year, shared with the relocation, 4+ children and working senior reliefs | 2026 | PIT Act art. 21 ust. 1 pkt 148 lit. b, ust. 44 |
-| Non-residents | 20% flat on revenue from art. 13 pkt 2 and 6-9, subject to the treaty and a residence certificate | 2026 | PIT Act art. 29 ust. 1 pkt 1 and ust. 2 |
-| Pension insurance | 19.52%: 9.76% contractor, 9.76% payer | 2026 | ZUS Act art. 22 ust. 1 pkt 1, art. 16 ust. 1 pkt 4 and 12, https://api.sejm.gov.pl/eli/acts/DU/2026/199/text.pdf |
-| Disability insurance | 8%: 1.5% contractor, 6.5% payer | 2026 | ZUS Act art. 22 ust. 1 pkt 2, art. 16 ust. 1b |
-| Sickness insurance (zlecenie, voluntary) | 2.45%, contractor | 2026 | ZUS Act art. 22 ust. 1 pkt 3, art. 11 ust. 2, art. 16 ust. 2 |
-| Accident insurance (zlecenie) | payer's rate; 1.67% (50% of the highest group rate) for payers with 9 or fewer insured | 2026 | ZUS Act art. 22 ust. 1 pkt 4, art. 16 ust. 3; Accident Insurance Act art. 28 ust. 1, https://api.sejm.gov.pl/eli/acts/DU/2025/1644/text.pdf; ZUS, https://www.zus.pl/baza-wiedzy/skladki-wskazniki-odsetki/skladki/wysokosc-skladek-na-ubezpieczenia-spoleczne |
-| Labour Fund (FP) + Solidarity Fund (FS) | 1.0% + 1.45% = 2.45%, payer; for zlecenie and paid supervisory board members with compulsory pension cover whose monthly base is at least the minimum wage (bases from several sources are added up on the person's statement); not for women aged 55 or more or men aged 60 or more | 2026 | Budget Act 2026 art. 25-26, https://api.sejm.gov.pl/eli/acts/DU/2026/62/text.pdf; Labour Market Act art. 259 ust. 1 pkt 1 lit. c and i, ust. 2-3, art. 261, 265 ust. 1, https://api.sejm.gov.pl/eli/acts/DU/2025/620/text.pdf |
-| Guaranteed Employee Benefits Fund (FGŚP) | 0.10%, payer that is a business; covers zlecenie with compulsory pension cover, not board members; not for women aged 55 or more or men aged 60 or more | 2026 | Budget Act 2026 art. 27; Employee Claims Act art. 9, 9b ust. 2, 10, 29, https://api.sejm.gov.pl/eli/acts/DU/2026/186/text.pdf |
-| Health contribution | 9%, contractor pays, payer withholds; not deductible from PIT | 2026 | Health Act art. 79 ust. 1, 81, 85 ust. 4 and 17a, https://api.sejm.gov.pl/eli/acts/DU/2025/1461/text.pdf; PIT Act art. 27b (repealed) |
-| Minimum wage (multiple-contract test, FP test) | PLN 4,806 a month | 2026 | Regulation, Dz.U. 2025 poz. 1242 § 1, https://api.sejm.gov.pl/eli/acts/DU/2025/1242/text.pdf |
-| Minimum hourly rate | PLN 31.40 | 2026 | Regulation, Dz.U. 2025 poz. 1242 § 2 |
-| Late payment interest (tax and ZUS) | 200% of the NBP lombard rate + 2 points, at least 8%; 10.50% a year from 5 March 2026 (lombard 4.25%) | 2026 | Tax Ordinance art. 56 § 1, https://api.sejm.gov.pl/eli/acts/DU/2026/622/text.pdf; M.P. 2026 poz. 269, https://api.sejm.gov.pl/eli/acts/MP/2026/269/text.pdf |
+| Standard costs, zlecenie and dzieło (art. 13 pkt 8) | 20% of revenue after the contractor's social contributions withheld that month | 2026 | [PIT Act art. 22 ust. 9 pkt 4](https://api.sejm.gov.pl/eli/acts/DU/2026/592/text.pdf) |
+| Author's costs (copyright and related rights, creative fields listed in art. 22 ust. 9b) | 50% of revenue after the contractor's social contributions | 2026 | [PIT Act art. 22 ust. 9 pkt 3 and ust. 9b](https://api.sejm.gov.pl/eli/acts/DU/2026/592/text.pdf) |
+| Annual cap on 50% costs (all art. 22 ust. 9 pkt 1 to 3 costs together) | PLN 120,000, the top of the first scale band | 2026 | [PIT Act art. 22 ust. 9a and art. 27 ust. 1](https://api.sejm.gov.pl/eli/acts/DU/2026/592/text.pdf) |
+| Costs, board members (art. 13 pkt 7) | PLN 250 a month (PLN 3,000 a year); with several such sources up to PLN 4,500 a year | 2026 | [PIT Act art. 22 ust. 9 pkt 5 and ust. 2 pkt 1 to 2](https://api.sejm.gov.pl/eli/acts/DU/2026/592/text.pdf) |
+| Advance on zlecenie, dzieło and board fees | 12% (the lowest scale rate) of revenue less costs less social contributions; always 12%, the annual return applies 32% | 2026 | [PIT Act art. 41 ust. 1, art. 27 ust. 1](https://api.sejm.gov.pl/eli/acts/DU/2026/592/text.pdf) |
+| PIT-2 reduction | up to PLN 300 a month (1/12 of PLN 3,600) if the contractor files the statement with this payer | 2026 | [PIT Act art. 31b ust. 1](https://api.sejm.gov.pl/eli/acts/DU/2026/592/text.pdf) |
+| Flat tax, contract amount up to PLN 200 with a person who is not the payer's employee | 12% of revenue, no costs, final | 2026 | [PIT Act art. 30 ust. 1 pkt 5a](https://api.sejm.gov.pl/eli/acts/DU/2026/592/text.pdf) |
+| Under-26 relief | zlecenie revenue (not dzieło, not board fees) exempt up to PLN 85,528 a year, shared with the relocation, 4+ children and working senior reliefs | 2026 | [PIT Act art. 21 ust. 1 pkt 148 lit. b, ust. 44](https://api.sejm.gov.pl/eli/acts/DU/2026/592/text.pdf) |
+| Non-residents | 20% flat on revenue from art. 13 pkt 2 and 6 to 9, subject to the treaty and a residence certificate | 2026 | [PIT Act art. 29 ust. 1 pkt 1 and ust. 2](https://api.sejm.gov.pl/eli/acts/DU/2026/592/text.pdf) |
+| Pension insurance | 19.52%: 9.76% contractor, 9.76% payer | 2026 | [ZUS Act art. 22 ust. 1 pkt 1, art. 16 ust. 1 pkt 4 and 12](https://api.sejm.gov.pl/eli/acts/DU/2026/199/text.pdf) |
+| Disability insurance | 8%: 1.5% contractor, 6.5% payer | 2026 | [ZUS Act art. 22 ust. 1 pkt 2, art. 16 ust. 1b](https://api.sejm.gov.pl/eli/acts/DU/2026/199/text.pdf) |
+| Sickness insurance (zlecenie, voluntary) | 2.45%, contractor | 2026 | [ZUS Act art. 22 ust. 1 pkt 3, art. 11 ust. 2, art. 16 ust. 2](https://api.sejm.gov.pl/eli/acts/DU/2026/199/text.pdf) |
+| Accident insurance (zlecenie) | payer's rate; 1.67% (50% of the highest group rate) for payers with 9 or fewer insured | 2026 | [ZUS, contribution rates 2026](https://www.zus.pl/baza-wiedzy/skladki-wskazniki-odsetki/skladki/wysokosc-skladek-na-ubezpieczenia-spoleczne); [Accident Insurance Act art. 28 ust. 1](https://api.sejm.gov.pl/eli/acts/DU/2025/1644/text.pdf); ZUS Act art. 22 ust. 1 pkt 4, art. 16 ust. 3 |
+| Labour Fund (FP) + Solidarity Fund (FS) | 1.0% + 1.45% = 2.45%, payer; for zlecenie and paid supervisory board members with compulsory pension cover whose monthly base is at least the minimum wage (bases from several sources are added up on the person's statement); not for women aged 55 or more or men aged 60 or more | 2026 | [Budget Act 2026 art. 25 to 26](https://api.sejm.gov.pl/eli/acts/DU/2026/62/text.pdf); [Labour Market Act art. 259 ust. 1 pkt 1 lit. c and i, ust. 2 to 3, art. 261, 265 ust. 1](https://api.sejm.gov.pl/eli/acts/DU/2025/620/text.pdf) |
+| Guaranteed Employee Benefits Fund (FGŚP) | 0.10%, payer that is a business; covers zlecenie with compulsory pension cover, not board members; not for women aged 55 or more or men aged 60 or more | 2026 | [Budget Act 2026 art. 27](https://api.sejm.gov.pl/eli/acts/DU/2026/62/text.pdf); [Employee Claims Act art. 9, 9b ust. 2, 10, 29](https://api.sejm.gov.pl/eli/acts/DU/2026/186/text.pdf) |
+| Health contribution | 9%, contractor pays, payer withholds; not deductible from PIT | 2026 | [Health Act art. 79 ust. 1, 81, 85 ust. 4 and 17a](https://api.sejm.gov.pl/eli/acts/DU/2025/1461/text.pdf); PIT Act art. 27b (repealed) |
+| Minimum wage (multiple-contract test, FP test) | PLN 4,806 a month | 2026 | [Regulation, Dz.U. 2025 poz. 1242 § 1](https://api.sejm.gov.pl/eli/acts/DU/2025/1242/text.pdf) |
+| Minimum hourly rate | PLN 31.40 | 2026 | [Regulation, Dz.U. 2025 poz. 1242 § 2](https://api.sejm.gov.pl/eli/acts/DU/2025/1242/text.pdf) |
+| Late payment interest (tax and ZUS) | 200% of the NBP lombard rate + 2 points, at least 8%; 10.50% a year from 5 March 2026 (lombard 4.25%, unchanged on the read date) | 2026 | [M.P. 2026 poz. 269](https://api.sejm.gov.pl/eli/acts/MP/2026/269/text.pdf); [Tax Ordinance art. 56 § 1](https://api.sejm.gov.pl/eli/acts/DU/2026/622/text.pdf); [NBP rates](https://static.nbp.pl/dane/stopy/stopy_procentowe.xml) |
 
-## The taxable base
+## The base
 
 **ZUS base for zlecenie.** The revenue under the contract, where the contract sets the pay as a sum, an hourly rate, a piece rate or a commission (ZUS Act art. 18 ust. 3 with ust. 1). The annual cap on the pension and disability base applies as for employees (art. 19 ust. 1; PLN 282,600 in 2026, see [pl-payroll](pl-payroll.md)).
 
@@ -115,7 +115,7 @@ metadata:
 - **Social security.** Within the EU, EEA and Switzerland, one country's legislation applies at a time under Regulation (EC) No 883/2004 (art. 11-13). A contractor who works in two or more states can stay in one system with an A1 certificate. Without an A1, Polish ZUS applies to a zlecenie performed in Poland.
 - **Residents working abroad.** The annual return and double tax relief: [pl-income-tax](pl-income-tax.md).
 
-## Worked examples
+## Two worked examples that recompute
 
 ### Example 1: Zlecenie of PLN 5,000 a month, contractor aged 30, no other title
 
@@ -220,28 +220,28 @@ The advances are prepayments. The contractor's annual return applies the full sc
 
 | Source | URL | Read on |
 |---|---|---|
-| PIT Act, consolidated text Dz.U. 2026 poz. 592 (art. 10, 13, 21, 22, 26, 27, 29, 30, 31b, 32, 41, 42, 42g, 44, 45, 45ba) | https://api.sejm.gov.pl/eli/acts/DU/2026/592/text.pdf | 2026-10-23 |
-| PIT Act amendments after consolidation (poz. 779, 846, 1079, 1098, 1123, 1287, 1347, 1354, 1371; none touch the articles used) | https://api.sejm.gov.pl/eli/acts/DU/1991/350/references | 2026-10-23 |
-| ZUS Act, consolidated text Dz.U. 2026 poz. 199 (art. 6, 8, 9, 11-13, 16, 18, 18a, 18c, 19, 22-24, 36, 47, 98) | https://api.sejm.gov.pl/eli/acts/DU/2026/199/text.pdf | 2026-10-23 |
-| Act amending the State Labour Inspection Act and other acts, Dz.U. 2026 poz. 473 (reclassification decision; ZUS Act art. 18 ust. 1b, 24 ust. 5h, 36 ust. 4e, 38b; art. 20 entry into force) | https://api.sejm.gov.pl/eli/acts/DU/2026/473/text.pdf | 2026-10-23 |
-| Sejm ELI record for Dz.U. 2026 poz. 473 (entry into force 2026-07-08) | https://api.sejm.gov.pl/eli/acts/DU/2026/473 | 2026-10-23 |
-| ZUS Act amendments poz. 252, 426, 507, 734 (checked, nothing on these contracts) | https://api.sejm.gov.pl/eli/acts/DU/1998/887/references | 2026-10-23 |
-| Health Care Benefits Act, Dz.U. 2025 poz. 1461 (art. 66, 79, 81, 82, 85; later amendments 2025 poz. 1537, 1739 and 2026 poz. 26, 203, 791, 972, 986, 1007 do not touch them) | https://api.sejm.gov.pl/eli/acts/DU/2025/1461/text.pdf | 2026-10-23 |
-| Budget Act 2026, Dz.U. 2026 poz. 62 (art. 24-27) | https://api.sejm.gov.pl/eli/acts/DU/2026/62/text.pdf | 2026-10-23 |
-| Labour Market Act, Dz.U. 2025 poz. 620 (art. 259, 261, 265) | https://api.sejm.gov.pl/eli/acts/DU/2025/620/text.pdf | 2026-10-23 |
-| Employee Claims Act (FGŚP), Dz.U. 2026 poz. 186 (art. 9, 9b, 10, 29) |
-| Accident Insurance Act, consolidated text Dz.U. 2025 poz. 1644 (art. 28) | https://api.sejm.gov.pl/eli/acts/DU/2025/1644/text.pdf | 2026-10-23 | https://api.sejm.gov.pl/eli/acts/DU/2026/186/text.pdf | 2026-10-23 |
-| Minimum wage and minimum hourly rate 2026, Dz.U. 2025 poz. 1242 | https://api.sejm.gov.pl/eli/acts/DU/2025/1242/text.pdf | 2026-10-23 |
-| Tax Ordinance, Dz.U. 2026 poz. 622 (art. 30, 56, 63) | https://api.sejm.gov.pl/eli/acts/DU/2026/622/text.pdf | 2026-10-23 |
-| Minister of Finance notice on late payment interest, M.P. 2026 poz. 269 | https://api.sejm.gov.pl/eli/acts/MP/2026/269/text.pdf | 2026-10-23 |
-| NBP base rates (lombard 4.25% from 5 March 2026) | https://static.nbp.pl/dane/stopy/stopy_procentowe.xml | 2026-10-23 |
-| Fiscal Penal Code, Dz.U. 2025 poz. 633 (art. 77, 78, 80 § 1 and 2; 2026 amendments poz. 347, 421, 846, 901 do not touch them) | https://api.sejm.gov.pl/eli/acts/DU/2025/633/text.pdf | 2026-10-23 |
-| ZUS, contribution rates for 2026 (accident 1.67%, lowest business base PLN 5,652) | https://www.zus.pl/baza-wiedzy/skladki-wskazniki-odsetki/skladki/wysokosc-skladek-na-ubezpieczenia-spoleczne | 2026-10-23 |
-| Ministry of Finance, PIT forms list (PIT-4R, PIT-8AR, PIT-11) | https://www.podatki.gov.pl/pit/formularze-do-druku-pit/ | 2026-10-23 |
-| Regulation (EC) No 883/2004 on social security coordination | https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32004R0883 | 2026-10-23 |
+| PIT Act, consolidated text Dz.U. 2026 poz. 592. Read for art. 10, 13 pkt 7 and 8, 21 ust. 1 pkt 148 (PLN 85,528), 22 ust. 9 and 9a (20%, 50%, PLN 120,000, PLN 250), 26, 27, 29 (20%), 30 ust. 1 pkt 5a (PLN 200, 12%), 31b, 32, 41 ust. 1 and 2 (12% advance), 42, 42g, 44, 45, 45ba | https://api.sejm.gov.pl/eli/acts/DU/2026/592/text.pdf | 2026-11-14 |
+| Sejm ELI references for the PIT Act. Read for the list of amendments after the consolidated text (poz. 779, 846, 1079, 1098, 1123, 1287, 1347, 1354, 1371; none touch the articles used; no newer amendment listed) | https://api.sejm.gov.pl/eli/acts/DU/1991/350/references | 2026-11-14 |
+| ZUS Act, consolidated text Dz.U. 2026 poz. 199. Read for art. 6, 8, 9, 11 to 13, 16 (1.5% and 6.5% disability split), 18, 18a, 18c, 19, 22 (19.52%, 2.45%) to 24, 36, 47, 98 | https://api.sejm.gov.pl/eli/acts/DU/2026/199/text.pdf | 2026-11-14 |
+| Act amending the State Labour Inspection Act and other acts, Dz.U. 2026 poz. 473. Read for the reclassification decision, ZUS Act art. 18 ust. 1b, 24 ust. 5h, 36 ust. 4e, 38b and art. 20 entry into force | https://api.sejm.gov.pl/eli/acts/DU/2026/473/text.pdf | 2026-11-14 |
+| Sejm ELI record for Dz.U. 2026 poz. 473. Read for the entry into force date (2026-07-08) and status in force | https://api.sejm.gov.pl/eli/acts/DU/2026/473 | 2026-11-14 |
+| Sejm ELI references for the ZUS Act. Read for amendments poz. 252, 426, 507, 734 (nothing on these contracts) | https://api.sejm.gov.pl/eli/acts/DU/1998/887/references | 2026-10-23 |
+| Health Care Benefits Act, Dz.U. 2025 poz. 1461. Read for art. 66, 79 (9%), 81, 82, 85 | https://api.sejm.gov.pl/eli/acts/DU/2025/1461/text.pdf | 2026-11-14 |
+| Budget Act 2026, Dz.U. 2026 poz. 62. Read for art. 25 (FP 1.0%), 26 (FS 1.45%) and 27 (FGŚP 0.10%) | https://api.sejm.gov.pl/eli/acts/DU/2026/62/text.pdf | 2026-11-14 |
+| Labour Market Act, Dz.U. 2025 poz. 620. Read for art. 259, 261, 265 (who pays FP and the minimum wage test) | https://api.sejm.gov.pl/eli/acts/DU/2025/620/text.pdf | 2026-11-14 |
+| Employee Claims Act (FGŚP), Dz.U. 2026 poz. 186. Read for art. 9, 9b, 10, 29 | https://api.sejm.gov.pl/eli/acts/DU/2026/186/text.pdf | 2026-11-14 |
+| Accident Insurance Act, consolidated text Dz.U. 2025 poz. 1644. Read for art. 28 (50% of the highest rate for 9 or fewer insured) | https://api.sejm.gov.pl/eli/acts/DU/2025/1644/text.pdf | 2026-11-14 |
+| Minimum wage and minimum hourly rate 2026, Dz.U. 2025 poz. 1242. Read for § 1 (PLN 4,806) and § 2 (PLN 31.40) | https://api.sejm.gov.pl/eli/acts/DU/2025/1242/text.pdf | 2026-11-14 |
+| Tax Ordinance, Dz.U. 2026 poz. 622. Read for art. 30, 56, 63 | https://api.sejm.gov.pl/eli/acts/DU/2026/622/text.pdf | 2026-11-14 |
+| Minister of Finance notice on late payment interest, M.P. 2026 poz. 269. Read for the 10.50% a year rate | https://api.sejm.gov.pl/eli/acts/MP/2026/269/text.pdf | 2026-11-14 |
+| NBP base rates. Read for the lombard rate 4.25% in force from 5 March 2026, still the current rate | https://static.nbp.pl/dane/stopy/stopy_procentowe.xml | 2026-11-14 |
+| Fiscal Penal Code, Dz.U. 2025 poz. 633. Read for art. 77, 78, 80 § 1 and 2 (2026 amendments poz. 347, 421, 846, 901 do not touch them) | https://api.sejm.gov.pl/eli/acts/DU/2025/633/text.pdf | 2026-11-14 |
+| ZUS, contribution rates for 2026. Read for accident 1.67% and the lowest business base PLN 5,652 | https://www.zus.pl/baza-wiedzy/skladki-wskazniki-odsetki/skladki/wysokosc-skladek-na-ubezpieczenia-spoleczne | 2026-11-14 |
+| Ministry of Finance, PIT forms list. Read for PIT-4R, PIT-8AR and PIT-11 and electronic filing of PIT-11 | https://www.podatki.gov.pl/pit/formularze-do-druku-pit/ | 2026-11-14 |
+| Regulation (EC) No 883/2004 on social security coordination. Read for art. 11 to 13 (one legislation, A1); not reopened, EUR-Lex refused the script on 14 November | https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32004R0883 | 2026-10-23 |
 
-Not yet confirmed: nothing open. The independent review on 2026-10-23 settled the PIT-4R / PIT-8AR split (MF forms list and PIT Act art. 41 ust. 4), the reclassification start date (8 July 2026, Sejm ELI record) and health on two titles for a board member (Health Act art. 82 ust. 1).
+Not yet confirmed: none for the figures. Two rows were not reopened on 14 November 2026 and keep their 23 October read: the ZUS Act amendments list and Regulation 883/2004 (EUR-Lex refused the script). The independent review on 2026-10-23 settled the PIT-4R / PIT-8AR split (MF forms list and PIT Act art. 41 ust. 4), the reclassification start date (8 July 2026, Sejm ELI record) and health on two titles for a board member (Health Act art. 82 ust. 1).
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-01. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `pl-civil-law-contracts` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/pl-civil-law-contracts. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `pl-civil-law-contracts` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/pl-civil-law-contracts. If neither is available, confirm every figure against the official source pages cited above before relying on it.

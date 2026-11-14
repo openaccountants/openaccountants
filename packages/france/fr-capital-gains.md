@@ -1,14 +1,15 @@
 ---
 name: fr-capital-gains
 description: "France capital gains and investment income of resident individuals, tax year 2026 (income of 2025 declared in 2026, and income of 2026). Covers gains on securities under the flat tax (PFU 12.8% plus social levies of 18.6% for disposals from 1 January 2025) or the global option for the progressive scale, holding allowances on pre-2018 shares, losses carried forward ten years, dividends and interest, PEA, life insurance withdrawals, free shares, RSUs, BSPCE, stock options, employee savings and PER exits, and property gains (19% plus 17.2% social levies, duration allowances, surtax above EUR 50,000, main-home exemption), forms 2074 and 2048-IMM, and penalties. Trigger on plus-value, PFU, flat tax, option barème, 2074, 2048-IMM, abattement pour durée de détention, résidence principale, PEA, assurance-vie, AGA, BSPCE, stock-options. Out of scope: crypto (fr-crypto-tax), non-residents (fr-cross-border), exit tax (leaving-france-exit-tax), rental income (fr-rental-income), household computation (fr-personal-income-tax)."
-version: 1.4
+version: 1.5
 jurisdiction: FR
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
+type: computation
 ---
 
 # France: capital gains, investment income and employee shares
