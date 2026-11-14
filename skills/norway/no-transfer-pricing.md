@@ -69,11 +69,11 @@ See also: [no-corporate-income-tax](no-corporate-income-tax.md) (corporate rate 
 | Documentation languages | Norwegian, Swedish, Danish or English | 2026 | sktfvf. § 8-11-16 first paragraph; https://lovdata.no/forskrift/2016-11-23-1360/§8-11-16 |
 | Corporate tax rate on an upward adjustment | 22%; 25% for companies that pay financial activity tax on wages (finansskatt på lønn) | 2026 | Forskuddsutskrivingen 2026 (skatt til staten for selskaper, ssv. § 3-3); https://www.skatteetaten.no/rettskilder/type/uttalelser/uttalelser/forskuddsutskrivingen-2026/ |
 | Country-by-country report threshold | Group revenue of NOK 6,500,000,000 or more in the year before the reporting year | 2026 | sktfvl. § 8-12 fourth paragraph; https://lovdata.no/lov/2016-05-27-14/§8-12 |
-| Country-by-country report deadline and language | 12 months after the end of the financial year; in English | 2026 | sktfvf. § 8-12-7; sktfvl. § 8-12 fifth paragraph; https://lovdata.no/lov/2016-05-27-14/§8-11 |
-| Additional tax | 20% of the tax advantage | 2026 | sktfvl. § 14-5 first paragraph; https://lovdata.no/lov/2016-05-27-14/§8-11 |
-| Aggravated additional tax | A further 20% or 40% (wilful or grossly negligent) | 2026 | sktfvl. § 14-6 third paragraph; https://lovdata.no/lov/2016-05-27-14/§8-11 |
+| Country-by-country report deadline and language | 12 months after the end of the financial year; in English | 2026 | sktfvf. § 8-12-7; sktfvl. § 8-12 fifth paragraph; https://lovdata.no/lov/2016-05-27-14/§8-12 |
+| Additional tax | 20% of the tax advantage | 2026 | sktfvl. § 14-5 first paragraph; https://lovdata.no/lov/2016-05-27-14/§14-5 |
+| Aggravated additional tax | A further 20% or 40% (wilful or grossly negligent) | 2026 | sktfvl. § 14-6 third paragraph; https://lovdata.no/lov/2016-05-27-14/§14-6 |
 | Coercive fine for a missing statement | Half a court fee per day (NOK 672.50), total at most 50 court fees (NOK 67,250) | 2026 | sktfvl. § 14-1; sktfvf. § 14-1-1 first paragraph; court fee NOK 1,345 from 1 January 2026 (rettsgebyrloven § 1, note 1); https://lovdata.no/forskrift/2016-11-23-1360/§14-1-1; https://lovdata.no/lov/1982-12-17-86/§1 |
-| Change window | 5 years after the end of the tax period; 10 years with aggravated additional tax | 2026 | sktfvl. § 12-6 first and second paragraphs; https://lovdata.no/lov/2016-05-27-14/§8-11 |
+| Change window | 5 years after the end of the tax period; 10 years with aggravated additional tax | 2026 | sktfvl. § 12-6 first and second paragraphs; https://lovdata.no/lov/2016-05-27-14/§12-6 |
 
 The two § 8-11-1 tests are cumulative: a company is exempt only if both are under the limits. Reaching NOK 10,000,000 of transactions or NOK 25,000,000 of balances (not "under") brings the company into both duties, unless the small-group exemption then removes the documentation duty. Where a municipality or county is a related owner under § 8-11 sixth paragraph, those transactions and balances count towards the limits (sktfvf. § 8-11-1 second paragraph).
 

@@ -40,16 +40,16 @@ Norway taxes companies on ordinary income (alminnelig inntekt) at a flat state r
 | Resource rent tax, aquaculture | 32.1%; base deduction of NOK 70 million can be claimed | 2026 | ssv. § 3-4 A; https://lovdata.no/dokument/STV/forskrift/2025-12-18-2747 |
 | State wealth tax, companies and bodies not exempt (not AS or ASA) | 0.3%; wealth under NOK 10,000 tax-free | 2026 | ssv. § 2-2; https://lovdata.no/dokument/STV/forskrift/2025-12-18-2747 |
 | Participation exemption: taxable share of exempt dividends | 3% of the dividend (22% x 3% = 0.66% effective) | 2026 | sktl. § 2-38 sixth paragraph letter a; https://lovdata.no/lov/1999-03-26-14/§2-38 |
-| Participation exemption: holding test for shares outside the EEA | At least 10% of capital and votes, held continuously for 2 years | 2026 | sktl. § 2-38 third paragraph letters b and d; https://lovdata.no/dokument/STV/forskrift/2025-12-18-2747 |
+| Participation exemption: holding test for shares outside the EEA | At least 10% of capital and votes, held continuously for 2 years | 2026 | sktl. § 2-38 third paragraph letters b and d; https://lovdata.no/lov/1999-03-26-14/§2-38 |
 | Interest limitation: cap | Net interest above 25% of ordinary income plus interest costs and tax depreciation, less interest income | 2026 | sktl. § 6-41 third paragraph; https://lovdata.no/lov/1999-03-26-14/§6-41 |
 | Interest limitation: threshold, group companies | NOK 25 million net interest, for the Norwegian part of the group together | 2026 | sktl. § 6-41 fourth paragraph; https://lovdata.no/lov/1999-03-26-14/§6-41 |
 | Interest limitation: threshold, companies not in a group | NOK 5 million net interest | 2026 | sktl. § 6-41 fourth paragraph; https://lovdata.no/lov/1999-03-26-14/§6-41 |
-| Interest limitation: related-party test | At least 50% ownership or control, direct or indirect | 2026 | sktl. § 6-41 fifth paragraph; https://lovdata.no/lov/1999-03-26-14/§2-38 |
+| Interest limitation: related-party test | At least 50% ownership or control, direct or indirect | 2026 | sktl. § 6-41 fifth paragraph; https://lovdata.no/lov/1999-03-26-14/§6-41 |
 | Interest limitation: carry-forward of disallowed interest | Next 10 years | 2026 | sktl. § 6-41 tenth paragraph; https://lovdata.no/lov/1999-03-26-14/§6-41 |
 | Group contribution: ownership test | Parent owns more than nine tenths of the shares and votes at year end | 2026 | sktl. § 10-4 first paragraph; https://lovdata.no/lov/1999-03-26-14/§10-4 |
 | Capitalisation threshold for depreciable assets | Cost of NOK 30,000 or more and useful life of at least 3 years | 2026 | sktl. § 14-40 first paragraph letter a; https://lovdata.no/lov/1999-03-26-14/§14-40 |
 | Declining-balance depreciation, groups a / b / c / d | 30% / 20% / 24% / 20% | 2026 | sktl. § 14-43 first paragraph; https://lovdata.no/lov/1999-03-26-14/§14-43 |
-| Declining-balance depreciation, groups e / f / g / h / i / j | 14% / 12% / 5% / 4% / 2% / 10% | 2026 | sktl. § 14-43 first paragraph; https://lovdata.no/lov/1999-03-26-14/§2-38 |
+| Declining-balance depreciation, groups e / f / g / h / i / j | 14% / 12% / 5% / 4% / 2% / 10% | 2026 | sktl. § 14-43 first paragraph; https://lovdata.no/lov/1999-03-26-14/§14-43 |
 | Withholding tax on dividends to foreign shareholders | 25%, or the lower treaty rate | 2026 | ssv. § 3-5 third paragraph; sktl. § 10-13; https://lovdata.no/dokument/STV/forskrift/2025-12-18-2747 |
 | Withholding tax on interest, royalties and certain lease payments to related companies in low-tax countries | 15%, or the lower treaty rate | 2026 | ssv. § 3-5 fifth paragraph; sktl. §§ 10-80, 10-81; https://lovdata.no/dokument/STV/forskrift/2025-12-18-2747 |
 | Low-tax country | Tax on the company's total profit is less than two thirds of the Norwegian tax | 2026 | sktl. § 10-63; https://lovdata.no/lov/1999-03-26-14/§10-63 |
