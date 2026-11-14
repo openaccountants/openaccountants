@@ -1,212 +1,160 @@
 ---
 name: el-salvador-payroll
-description: Use this skill whenever asked about El Salvador payroll processing for employed persons. Trigger on phrases like "El Salvador payroll", "planilla El Salvador", "ISSS", "AFP Crecer", "AFP Confía", "retención de renta", "ISR planilla", "descuentos de ley", "sueldo neto El Salvador", "net salary El Salvador", "aguinaldo", "INSAFORP", "salario mínimo El Salvador", "gross to net El Salvador", "employer cost El Salvador", "cotización ISSS AFP", or any question about computing employee pay, income-tax withholding (retención), or social-security/pension contributions for El Salvador-based employees. This skill covers ISR monthly withholding (Decreto Ejecutivo 10, in force 8 May 2025), ISSS health contributions (employee + employer, $1,000 base cap), AFP pension contributions, the INSAFORP training levy, minimum wage, the mandatory aguinaldo (Christmas bonus), vacation, payslip and monthly filing obligations. ALWAYS read this skill before processing any El Salvador payroll.
-version: 0.1
+description: >
+  Use this skill to run El Salvador payroll in 2026. It covers the employer's monthly ISR
+  retention on the Decreto Ejecutivo 10 tables in force from May 2025 (no retention to
+  USD 550 a month, then 10%, 20% and 30% with fixed amounts of USD 17.67, 60.00 and
+  288.57), the retention base after the employee's ISSS and AFP, the 10% retention on
+  second jobs, the aguinaldo exemption of two monthly minimum wages of commerce and
+  services (USD 817.60), the minimum wages of Decreto Ejecutivo 11 in force from 1 June
+  2025 (USD 408.80 commerce, services and industry) and the employer's obligations. ISSS
+  and AFP rates live in el-salvador-social-contributions. Trigger phrases include planilla
+  El Salvador, retencion de renta asalariados, aguinaldo exento, salario minimo 2025 and
+  tabla de retencion mensual.
+version: "1.0"
 jurisdiction: SV
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+tax_year_notes: "Tax year 2026. The minimum wage is the 2025-2026 figure of Decreto Ejecutivo 11 (in force 1 June 2025); no later decree was found."
+last_updated: 2026-11-14
 depends_on:
   - payroll-workflow-base
 category: payroll
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
-status: needs_sources
 domain: payroll
+type: computation
 ---
 
-# El Salvador Payroll
+# El Salvador payroll, 2026
 
-## El Salvador Payroll Skill v0.1
+> **General reference only.** This skill is general tax reference material for AI-assisted workflows. It has not been reviewed by a Salvadoran accountant. Do not rely on it to file, pay or take a tax position without review by a qualified professional in El Salvador.
 
-**Tier 2 — research-verified. Figures sourced from the Ministerio de Hacienda (Decreto Ejecutivo 10, 2025), ISSS, the Superintendencia del Sistema Financiero (AFP), PwC Worldwide Tax Summaries, and Salvadoran payroll references. NOT yet signed off by a licensed Salvadoran contador. Treat every computation as an estimate pending professional review.**
+## Who this applies to
 
-## Section 1 -- Quick Reference
+Employers in El Salvador paying salaries in 2026: monthly ISR retention, aguinaldo, minimum wages and remittance. ISSS and AFP contributions are in [el-salvador-social-contributions](el-salvador-social-contributions.md); the employee's annual tax in [el-salvador-income-tax](el-salvador-income-tax.md).
 
-**Quick Reference table**
+Refer: non-domiciled employees (30% or 20% final retention), public sector payrolls, termination settlements, agricultural piece-rate pay, employers under DGII audit.
 
-| Field | Value |
+Conservative defaults:
+
+| Ambiguity | Default |
 | --- | --- |
-| Country | Republic of El Salvador |
-| Currency | USD only (US dollar is legal tender; the colón is retired) |
-| Standard pay frequency | Monthly (quincenal — twice-monthly — is also common) |
-| Tax year | Calendar year (1 January -- 31 December) |
-| Income-tax withholding | Retención de ISR — monthly table, applied to salary **net of AFP and ISSS** |
-| Income-tax authority | Ministerio de Hacienda — Dirección General de Impuestos Internos (DGII) |
-| Health / maternity social security | Instituto Salvadoreño del Seguro Social (ISSS) |
-| Pension | AFP (private — AFP Crecer, AFP Confía), overseen by the Superintendencia del Sistema Financiero (SSF) |
-| Training levy | INSAFORP (Instituto Salvadoreño de Formación Profesional) — employer 1% |
-| Key legislation | Ley de Impuesto sobre la Renta; Decreto Ejecutivo 10 (2025) retención tables; Ley del Seguro Social; Ley del Sistema de Ahorro para Pensiones (SAP); Código de Trabajo |
-| Skill version | 0.1 |
+| Gross salary unknown | Stop |
+| Employee has a second job | Table on the larger salary, 10% on the rest (Decreto Ejecutivo 10) |
+| Sector for the minimum wage unknown | Commerce and services, USD 408.80 |
+| Aguinaldo above USD 817.60 | Retain on the excess |
 
-### The single most important El Salvador payroll fact
+## Rates, bands and thresholds
 
-- **ISR base calculation rule** — The ISR retención table is applied to the salary AFTER deducting the employee's ISSS and AFP contributions (those are renta no gravada). Base = gross − ISSS(employee) − AFP(employee). Applying the table to gross over-withholds.  _(Ministerio de Hacienda; SalarioSV; HazConta)_
+**Monthly retention table, Decreto Ejecutivo 10 (in force from May 2025), applied to salary after the employee's ISSS and AFP.**
 
-## Section 2 -- Income Tax Withholding (Retención de ISR)
+| Band | From (USD) | To (USD) | Rate on excess | Over | Plus fixed | Source |
+| --- | --- | --- | --- | --- | --- | --- |
+| I | 0.01 | 550.00 | No retention | | | Ministerio de Hacienda, Decreto Ejecutivo 10: https://transparencia.mh.gob.sv/downloads/pdf/700-DGII-DC-2025-01.pdf |
+| II | 550.01 | 895.24 | 10% | 550.00 | 17.67 | same |
+| III | 895.25 | 2,038.10 | 20% | 895.24 | 60.00 | same |
+| IV | 2,038.11 | and above | 30% | 2,038.10 | 288.57 | same |
 
-- **ISR withholding base rule** — The employer withholds ISR monthly. Base = gross salary − employee ISSS − employee AFP. Apply the monthly table below to that base.
+The same decree gives fortnightly (II from USD 275.01, fixed 8.83; III from 447.63, fixed 30.00; IV from 1,019.06, fixed 144.28) and weekly tables (II from USD 137.51, fixed 4.42; III from 223.82, fixed 15.00; IV from 509.53, fixed 72.14), plus June and December recalculation tables.
 
-### Monthly retención table (Decreto Ejecutivo 10, in force 8 May 2025)
+**Other payroll figures.**
 
-**Monthly retención table**  _(Ministerio de Hacienda, Decreto Ejecutivo No. 10 (30 Apr 2025), in force 8 May 2025)_
-
-| Tramo | Monthly base (gross − AFP − ISSS), USD | Withholding |
-| --- | --- | --- |
-| I | 0.01 -- 550.00 | Nil (exempt) |
-| II | 550.01 -- 895.24 | USD 17.67 + 10% on excess over 550.00 |
-| III | 895.25 -- 2,038.10 | USD 60.00 + 20% on excess over 895.24 |
-| IV | 2,038.11 and over | USD 288.57 + 30% on excess over 2,038.10 |
-
-Source: Ministerio de Hacienda, Decreto Ejecutivo No. 10 (30 Apr 2025), in force 8 May 2025; the reform raised the monthly exempt amount from USD 472 (unchanged since 2011) to USD 550. (Diario El Mundo; Contaportable)
-
-> Note. The cuotas fijas (17.67 / 60.00 / 288.57) mirror the annual Art. 37 table ÷ 12 (annual 212.12 / 720.00 / 3,462.86). There is a small step at the $895.24 boundary (the 10% progression reaches 52.19 vs the $60.00 band-3 base). This is the official table, not an error.
-
-## Section 3 -- Social Security — ISSS (Health & Maternity)
-
-ISSS covers health, maternity, and work-risk benefits. Contributions are computed on a salary base capped at USD 1,000/month.
-
-**ISSS contributions table**  _(ISSS; PwC)_
-
-| Contribution | Rate | Capped base | Maximum / month |
+| Item | Amount | Condition | Source |
 | --- | --- | --- | --- |
-| ISSS — employee | 3% | USD 1,000 | USD 30.00 |
-| ISSS — employer | 7.5% | USD 1,000 | USD 75.00 |
+| Retention on a second job | 10% of the sums paid | The worker tells each employer in January | Ministerio de Hacienda, Decreto Ejecutivo 10: https://transparencia.mh.gob.sv/downloads/pdf/700-DGII-DC-2025-01.pdf |
+| Salary above which the employee must file | USD 60,000 a year | Decreto Ejecutivo 10 and LISR art. 38 | same |
+| Aguinaldo exempt from ISR | Two monthly minimum wages of commerce and services | LISR art. 4.16; excess retained | Asamblea Legislativa, LISR consolidated: https://www.asamblea.gob.sv/sites/default/files/documents/decretos/F326A5D9-F56E-4FCA-81D6-60088ABB52BF.pdf |
+| So, exempt aguinaldo 2026 | USD 817.60 | 2 x USD 408.80, the commerce and services wage below | Organo Ejecutivo, Decreto Ejecutivo 11 (2025), Jurisprudencia: https://www.jurisprudencia.gob.sv/DocumentosBoveda/D/2/2020-2029/2025/05/10A4DA.PDF |
+| Minimum wage, commerce and services | USD 408.80 a month (USD 13.440 a day, USD 1.680 an hour) | Decreto Ejecutivo 11, in force 1 June 2025 | Organo Ejecutivo, Decreto Ejecutivo 11 (2025), Jurisprudencia: https://www.jurisprudencia.gob.sv/DocumentosBoveda/D/2/2020-2029/2025/05/10A4DA.PDF |
+| Minimum wage, industry, sugar mills, agroindustry | USD 408.80 a month | same | same |
+| Minimum wage, textile maquila | USD 402.32 a month | same | same |
+| Minimum wage, coffee processing and sugar cane harvest | USD 305.23 a month | same | same |
+| Minimum wage, agriculture and fishing | USD 272.53 a month | same | same |
 
-- **ISSS cap rule** — Salary above USD 1,000 does NOT increase the ISSS contribution — both sides are frozen at USD 30 / USD 75.  _(ISSS; PwC)_
+## The base
 
-## Section 4 -- Pension — AFP (Sistema de Ahorro para Pensiones)
+1. **Retention base:** monthly salary less the employee's ISSS (3%, capped) and AFP (7.25%); LISR art. 29.7 puts contributions and, up to USD 9,100 a year, the USD 1,600 fixed deduction inside the retention. The Band II amounts do not include the USD 1,600; the decree says it must be considered in the calculation.
+2. **Apply the table** for the pay period. In June and December the employer recalculates with the recalculation tables so the year's retention approaches the annual tax.
+3. **Aguinaldo** paid in December is not retained up to two minimum wages of commerce and services (CT art. 155); the excess is retained.
+4. **Second employer:** 10% on the smaller salary.
+5. **Remit** monthly to DGII with the retention return.
 
-Pension contributions go to the employee's chosen AFP (Crecer or Confía). The contributory-base salary cap was eliminated from January 2023 — AFP applies to the full salary with no maximum.
+## Deadlines and filing
 
-**AFP contributions table**  _(SSF; Ley SAP; PwC)_
-
-| Contribution | Rate | Cap |
+| Obligation | Deadline | Channel |
 | --- | --- | --- |
-| AFP — employee | 7.25% | None (cap removed Jan 2023) |
-| AFP — employer | 8.75% | None |
-| **Total AFP** | **16.00%** | None |
+| Retained ISR | Within the first 10 working days of the following month (with the monthly returns) | DGII retention return (F-14) |
+| June and December recalculation | June and December payrolls | Employer |
+| Annual report of retentions | Not confirmed in this pass | DGII |
+| ISSS and AFP | See el-salvador-social-contributions | |
 
-- **AFP employee rate composition** — The 7.25% employee rate already includes the AFP commission and disability/survivor insurance premium.  _(SSF; Ley SAP; PwC)_
+## Penalties and interest
 
-## Section 5 -- Employer On-Costs (full picture)
+Codigo Tributario art. 246: retained and not remitted, a fine equal to the amount; not retained, 75% of the amount; remitted late, 50%; short remitted, 30%. A breach of the minimum wage decree is fined per right breached (Decreto Ejecutivo 11 art. 12) and checked by the labour inspectorate (art. 13).
 
-**Employer on-costs table**
+## Cross-border points
 
-| Employer contribution | Rate | Base / cap | On gross USD 1,000 |
-| --- | --- | --- | --- |
-| ISSS (employer) | 7.5% | capped at USD 1,000 | USD 75.00 |
-| AFP (employer) | 8.75% | uncapped | USD 87.50 |
-| INSAFORP (training levy) | 1% | total payroll (employers with ≥ 1 worker subject; small-employer thresholds apply) | USD 10.00 |
-| **Total employer on-cost** | **~17.25%** (at/below the ISSS cap) |  | **USD 172.50** |
+Payments to non-domiciled individuals for work in El Salvador bear the 20% final retention of CT art. 158 or 30% by assessment, not the table. Totalisation of pension periods abroad was not checked.
 
-**Total employer cost** of a USD 1,000 employee ≈ USD 1,172.50/month (before aguinaldo and vacation accruals). [INSAFORP threshold — **RESEARCH GAP — reviewer to confirm the current small-employer exemption.**]
+## Two worked examples that recompute
 
-### Minimum Wage (2025)
+### Example 1: salary of USD 1,200 a month
 
-**Minimum wage table**  _(Ministerio de Trabajo)_
+ISSS 3% of USD 1,000 (cap) = USD 30.00; AFP 7.25% = USD 87.00. Retention base USD 1,083.00, band III: USD 60.00 + 20% of USD 187.76 = USD 97.55.
 
-| Sector | Monthly (USD) |
-| --- | --- |
-| Commerce & services | 408.80 |
-| Industry / manufacturing | 408.80 |
-| Textile / apparel (maquila) | 359.16 |
-| Agriculture | 272.66 |
+```oa-check
+name: SV 2026 monthly retention, USD 1,200 salary
+inputs:
+  salary: 1200
+  isss_cap: 1000
+steps:
+  - isss: min(salary, isss_cap) * 0.03
+  - afp: salary * 0.0725
+  - base: salary - isss - afp
+  - retention: round(60 + (base - 895.24) * 0.20, 2)
+expected:
+  isss: 30
+  afp: 87
+  base: 1083
+  retention: 97.55
+```
 
-Minimum wages are set by sector by the Consejo Nacional del Salario Mínimo. **[RESEARCH GAP — reviewer to confirm the current sector schedule and any 2026 revision.]** (Ministerio de Trabajo)
+### Example 2: aguinaldo of USD 1,000, retain or not (decision)
 
-### Aguinaldo (Christmas Bonus) — mandatory
+The exempt amount is two minimum wages of commerce and services, USD 817.60. An aguinaldo of USD 1,000 has USD 182.40 subject to retention; an aguinaldo of USD 800 has none. The minimum wage of the employee's own sector does not matter: the law fixes the commerce and services wage.
 
-- **Aguinaldo payment window** — Paid between 12 and 20 December, scaled by completed years of service.  _(Código de Trabajo arts. 196–202)_
+```oa-check
+name: SV 2026 aguinaldo exemption
+inputs:
+  min_wage_commerce: 408.80
+  aguinaldo_a: 1000
+  aguinaldo_b: 800
+steps:
+  - exempt: min_wage_commerce * 2
+  - taxable_a: max(aguinaldo_a - exempt, 0)
+  - taxable_b: max(aguinaldo_b - exempt, 0)
+expected:
+  exempt: 817.60
+  taxable_a: 182.40
+  taxable_b: 0
+```
 
-**Aguinaldo scale table**  _(Código de Trabajo arts. 196–202)_
+## Ask the client first
 
-| Service | Aguinaldo |
-| --- | --- |
-| 1 -- < 3 years | 15 days' salary |
-| 3 -- < 10 years | 19 days' salary |
-| 10+ years | 21 days' salary |
+1. Each employee's salary, pay period (monthly, fortnightly, weekly) and sector.
+2. Any second job, and which employer applies the table.
+3. Aguinaldo amounts and dates.
+4. Domicile of each employee.
+5. Whether the employer is current with DGII, ISSS and AFP.
 
-- **Aguinaldo ISR exemption** — Aguinaldo is exempt from ISR up to a statutory limit (two minimum monthly wages of the commerce sector); the excess is taxable. **[RESEARCH GAP — reviewer to confirm the current exempt limit.]**  _(Código de Trabajo arts. 196–202)_
+## Sources
 
-### Vacation
-
-- **Vacation entitlement** — 15 days after each completed year of service, plus a 30% vacation premium (prima vacacional) on the corresponding salary.  _(Código de Trabajo art. 177)_
-
-### Example 1 — Minimum-wage employee (gross USD 408.80)
-
-- ISSS employee: 3% × 408.80 = **USD 12.26**
-- AFP employee: 7.25% × 408.80 = **USD 29.64**
-- ISR base = 408.80 − 12.26 − 29.64 = **366.90** ≤ 550 → **USD 0.00 retención**
-- **Net pay = 408.80 − 12.26 − 29.64 = USD 366.90**
-
-### Example 2 — Mid salary (gross USD 1,000)
-
-- ISSS employee: 3% × min(1,000, 1,000 cap) = **USD 30.00**
-- AFP employee: 7.25% × 1,000 = **USD 72.50**
-- ISR base = 1,000 − 30.00 − 72.50 = **897.50** → Tramo III: 60.00 + 20% × (897.50 − 895.24) = 60.00 + 0.45 = **USD 60.45**
-- **Net pay = 1,000 − 30.00 − 72.50 − 60.45 = USD 837.05**
-- Employer on-cost: ISSS 75.00 + AFP 87.50 + INSAFORP 10.00 = **USD 172.50** → total cost **USD 1,172.50**
-
-### Example 3 — High earner (gross USD 2,500)
-
-- ISSS employee: capped → **USD 30.00** (base frozen at USD 1,000)
-- AFP employee: 7.25% × 2,500 = **USD 181.25** (no cap)
-- ISR base = 2,500 − 30.00 − 181.25 = **2,288.75** → Tramo IV: 288.57 + 30% × (2,288.75 − 2,038.10) = 288.57 + 75.20 = **USD 363.77**
-- **Net pay = 2,500 − 30.00 − 181.25 − 363.77 = USD 1,924.98**
-
-## Section 8 -- Payslip Requirements
-
-- **Payslip requirements** — The employer must issue a payslip (boleta de pago / comprobante) showing: gross salary, ISSS employee deduction, AFP employee deduction, ISR retención, any other authorised deductions, and net pay. Records are retained for inspection by the Ministerio de Trabajo and DGII.
-
-## Section 9 -- Filing & Payment Obligations
-
-**Filing & payment obligations table**
-
-| Obligation | Form / channel | Deadline |
+| Source | URL | Read on |
 | --- | --- | --- |
-| ISR retención (monthly) | DGII — declaración mensual de pago a cuenta e impuesto retenido (**F-14**) | Within 10 working days of month-end |
-| Annual statement of withholdings | DGII — informe anual de retenciones (**F-910**) | 31 January (following year) |
-| ISSS planilla (monthly) | ISSS portal (SEPS) | Per ISSS calendar (monthly) |
-| AFP planilla (monthly) | AFP / SSF electronic planilla | Monthly |
+| Read for Decreto Ejecutivo 10 (2025), retention tables (monthly, fortnightly, weekly, recalculation), second job rule, USD 60,000 filing rule, art. 4 in force | https://transparencia.mh.gob.sv/downloads/pdf/700-DGII-DC-2025-01.pdf | 2026-11-14 |
+| Read for the Ministerio de Hacienda notice that the Decreto Ejecutivo 10 tables apply from May 2025 | https://www.mh.gob.sv/wp-content/uploads/2025/05/Modificacion-a-las-tablas-de-retenci%C3%B3n-del-Impuesto-Sobre-la-Renta-Decreto-Ejecutivo-NO.10.pdf | 2026-11-14 |
+| Read for Decreto Ejecutivo 11 (2025), minimum wage table art. 2 and arts. 12, 13, 15 | https://www.jurisprudencia.gob.sv/DocumentosBoveda/D/2/2020-2029/2025/05/10A4DA.PDF | 2026-11-14 |
+| Read for LISR consolidated, arts. 4.16, 29.7 and 38 | https://www.asamblea.gob.sv/sites/default/files/documents/decretos/F326A5D9-F56E-4FCA-81D6-60088ABB52BF.pdf | 2026-11-14 |
+| Read for Codigo Tributario consolidated, arts. 155, 156, 158 and 246 | https://www.asamblea.gob.sv/sites/default/files/documents/decretos/297557B6-E5FD-4A41-B734-089751C41FDA.pdf | 2026-11-14 |
 
-**[RESEARCH GAP — reviewer to confirm the exact current form numbers and deadlines against the DGII and ISSS portals.]**
-
-## Section 10 -- Common Payroll Patterns (bank statement / accounting)
-
-**Common payroll patterns table**
-
-| Pattern | Classification |
-| --- | --- |
-| PLANILLA, NÓMINA, PAGO SALARIO, ABONO NÓMINA | Net salary disbursement |
-| ISSS, SEGURO SOCIAL | ISSS remittance (employer + employee health) |
-| AFP CRECER, AFP CONFÍA, PENSIÓN | AFP pension remittance |
-| DGII, HACIENDA, PAGO A CUENTA, RETENCIÓN | ISR retención / pago a cuenta to Hacienda |
-| INSAFORP | Training levy (employer 1%) |
-| AGUINALDO | Mandatory Christmas bonus (Dec) |
-
-## Section 11 -- Interaction with Other Skills
-
-**Interaction with other skills table**
-
-| Scenario | Skill |
-| --- | --- |
-| Employee payroll (this skill) | **el-salvador-payroll.md** |
-| Self-employed / individual income tax (F-11, Art. 37 annual table) | el-salvador-income-tax.md |
-| Employer & self-insured social/pension rates, annual PIT table | el-salvador-social-contributions.md |
-| El Salvador IVA (13%) | el-salvador-vat (consumption tax) |
-
-**Handoff:** the employee FS-equivalent annual figures (gross, ISR withheld, ISSS, AFP) feed the individual's annual ISR settlement on Form F-11 if the employee has other income or claims a refund.
-
-## PROHIBITIONS
-
-- **Prohibition 1** — NEVER apply the ISR retención table to gross salary — the base is gross − ISSS − AFP (employee).
-- **Prohibition 2** — NEVER compute ISSS on salary above USD 1,000 — both employee (USD 30) and employer (USD 75) are capped at the USD 1,000 base.
-- **Prohibition 3** — NEVER cap AFP — the contributory-base ceiling was removed in January 2023; AFP applies to the full salary.
-- **Prohibition 4** — NEVER omit the employer INSAFORP 1% training levy from the true employer cost.
-- **Prohibition 5** — NEVER omit the mandatory aguinaldo (Dec) or the 30% vacation premium from annual labour cost.
-- **Prohibition 6** — NEVER treat the USD 550 monthly exemption as USD 472 — that pre-2025 figure was superseded by Decreto Ejecutivo 10.
-- **Prohibition 7** — NEVER present payroll computations as definitive — always label as estimated and direct to a licensed Salvadoran contador.
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a licensed contador or abogado in El Salvador) before filing or acting upon.
+Not yet confirmed: any minimum wage decree for 2026 (the 2025 decree is to be reviewed under Codigo de Trabajo art. 159); aguinaldo days by seniority (Codigo de Trabajo arts. 196 to 202 not read); vacation pay; the annual retention report and its date; INSAFORP.
