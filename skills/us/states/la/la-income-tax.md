@@ -1,10 +1,10 @@
 ---
 name: la-income-tax
 description: "Louisiana 2026 resident wage and sole-proprietor income tax: federal AGI modifications, flat 3%, final indexed deductions, retirement exemption, IT-540 and estimates. Load us-tax-workflow-base first."
-version: "0.2"
+version: "0.3"
 jurisdiction: US-LA
 tax_year: 2026
-last_updated: 2026-11-13
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
@@ -52,7 +52,7 @@ Full-year Louisiana residents with wages, sole-proprietor or disregarded single-
 
 | Fact | Treatment or stopping point |
 | --- | --- |
-| Military wages | The resident active-duty exclusion concerns at least 120 consecutive full-time days and compensation earned outside Louisiana, capped at $50,000; do not exempt all military wages. [R.S.47:293(9)(e)](https://www.legis.la.gov/legis/Law.aspx?d=101760). |
+| Military wages | The resident active-duty exclusion concerns at least 120 consecutive full-time days and compensation earned outside Louisiana, capped at $50,000 (in words on the page); do not exempt all military wages. [R.S.47:293(9)(e)](https://www.legis.la.gov/legis/Law.aspx?d=101760). |
 | State bonus depreciation | RIB25-012 describes Louisiana full-expensing elections and later federal-depreciation addbacks. Reconcile state asset basis and no duplicate deduction; fixed-date definitions and final 2026 federal conformity require specialist review. [RIB25-012 pp.2-3](https://dam.ldr.la.gov/lawspolicies/RIB-25-012-Louisiana-Individual-Income-Tax-Reform-1.pdf). |
 | Federal home office, insurance and retirement contributions | Bring the completed federal result through AGI and test Louisiana modifications; federal computation remains with the named owner skills. |
 | K-1, PTE election, purchased or industry credits | Reconcile entity-level exclusions/owner schedules; do not simply deduct the state tax as federal income tax. Refer the election, historic rehabilitation, motion-picture and enterprise-zone credit computations. |

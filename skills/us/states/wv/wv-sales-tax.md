@@ -3,13 +3,13 @@ name: wv-sales-tax
 description: Use this skill whenever asked about West Virginia sales tax, WV use tax, West Virginia Tax Division filing, West Virginia SaaS tax, West Virginia service taxation, or West Virginia sales tax compliance. Trigger on phrases like "West Virginia sales tax", "WV sales tax", "W.Va. Code §11-15", "WV Tax Division", "West Virginia SaaS", "West Virginia SST", or any request involving West Virginia state and local sales and use tax compliance. ALWAYS load us-sales-tax first for federal context.
 jurisdiction: US-WV
 tax_year: 2026
-last_updated: 2026-11-13
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: tax
 type: situation-rules
 category: state-tax
-version: "1.1"
+version: "1.2"
 ---
 
 # West Virginia sales and use tax (2026)
@@ -55,7 +55,7 @@ The remote-seller FAQ contains conflicting introductory AND/OR wording and a bou
 | Tangible goods and clothing | Generally taxable unless a specific exemption applies; retail clothing is not categorically exempt | [TSD 345 p.1](https://tax.wv.gov/Documents/TSD/tsd345.pdf) |
 | Grocery food, prepared food, candy, soft drinks | Qualifying food/ingredients are exempt, including candy and dietary supplements meeting the food definition; prepared food, vending-machine food and soft drinks remain taxable. Apply the statutory definitions, including seller heating/mixing/utensil tests and exceptions | [§11-15-3a](https://code.wvlegislature.gov/11-15-3a/), [§11-15-3b](https://code.wvlegislature.gov/11-15-3b/), [§11-15B-2(b)](https://code.wvlegislature.gov/11-15B-2/) |
 | Prescription medicines, DME, mobility aids and prosthetics | Exempt when dispensed on a qualifying prescription for diagnosis/cure/mitigation/treatment/prevention; insulin also exempt. No blanket exemption for all equipment | [TSD 300 pp.1-2](https://tax.wv.gov/Documents/TSD/tsd300.pdf) |
-| OTC drugs and supplements | Nonprescription medications are taxable; distinguish a drug from a qualifying dietary supplement/food. In the old $25 OTC plus $20 qualifying supplement case, $25 is taxable, state-only tax is $1.50 and total $46.50 | [TSD 300 p.2; TSD 345 pharmacy example](https://tax.wv.gov/Documents/TSD/tsd300.pdf) |
+| OTC drugs and supplements | Nonprescription medications are taxable; distinguish a drug from a qualifying dietary supplement/food. Illustration (derived, invented inputs, not from the pages): a $25 OTC medicine plus a $20 qualifying supplement; $25 is taxable, state-only tax at 6% is $1.50, total $46.50 | [TSD 300 p.2](https://tax.wv.gov/Documents/TSD/tsd300.pdf); [TSD 345 p.2, pharmacy sales](https://tax.wv.gov/Documents/TSD/tsd345.pdf) |
 | Lawyers, CPA accounting, engineers, architects and doctors | Recognized professional services are per-se exempt; the professional's own business purchases generally remain taxable. The old legal and tax-preparation examples incorrectly charged tax | [TSD 300 p.2](https://tax.wv.gov/Documents/TSD/tsd300.pdf) |
 | Haircuts, manicures, massage | Personal services to the person exempt; ordinary physical-fitness programs generally are not, while personalized fitness services are exempt | [TSD 300 p.2](https://tax.wv.gov/Documents/TSD/tsd300.pdf) |
 | Repairs, maintenance, cleaning, security, web/IT services and consulting | Taxable-services presumption applies, but determine professional, personal, data-processing and other exemptions before taxing a contract. Never characterize every consultant as a recognized professional | [TSD 300; TSD 345](https://tax.wv.gov/Documents/TSD/tsd300.pdf) |
