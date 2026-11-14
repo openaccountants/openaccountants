@@ -224,6 +224,13 @@
   "dir": "skills/canada/alberta"
  },
  {
+  "code": "CC",
+  "name": "Cocos (Keeling) Islands",
+  "region": "apac",
+  "owner": "ryan",
+  "dir": "skills/cocos-keeling-islands"
+ },
+ {
   "code": "CG",
   "name": "Republic Of Congo",
   "region": "africa",
