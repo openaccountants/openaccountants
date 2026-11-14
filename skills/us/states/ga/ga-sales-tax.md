@@ -1,10 +1,10 @@
 ---
 name: ga-sales-tax
 description: Apply Georgia sales and use tax for 2026, for sellers in Georgia, remote sellers, marketplace facilitators and buyers owing use tax. Covers the 4% state rate plus local taxes by delivery jurisdiction code from the quarterly rate chart (6% to 9% from 1 October 2026), remote seller registration (over $100,000 or 200 or more sales), the $100,000 marketplace facilitator test, what is taxed and exempt (groceries at local rate only, electronic software against digital products), Form ST-5 certificates, use tax reason codes, Form ST-3 due on the 20th, the $500 electronic filing trigger, prepaid estimated tax over $60,000, vendor's compensation (3% of the first $3,000, 0.5% above) and penalties. Trigger on "Georgia sales tax", "GA sales tax", "Georgia use tax", "Form ST-3", "Georgia economic nexus", "Georgia ST-5". Load us-sales-tax first for the general method.
-version: "3.0"
+version: "3.1"
 jurisdiction: US-GA
 tax_year: 2026
-last_updated: 2026-11-13
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: vat-gst
@@ -57,7 +57,7 @@ Out of scope: Georgia income tax (`ga-income-tax`, `ga-corporate-and-ptet`); mot
 | Remote seller test, gross revenue from retail sales of goods into Georgia, previous or current year | exceeding $100,000 | [SUT-2019-02](https://dor.georgia.gov/media/35301/download) |
 | Remote seller test, number of separate retail sales | 200 or more | same |
 | Marketplace facilitator test, facilitated plus own Georgia sales, previous or current year | $100,000 or more | [SUT-2020-01](https://dor.georgia.gov/media/35306/download) |
-| State agency contract that requires registration | exceeding $100,000 | [DOR registration FAQ](https://dor.georgia.gov/taxes/business-taxes/sales-use-tax/sales-and-use-tax-registration-faq) |
+| State agency contract that requires registration | exceeding $100,000 | [DOR out-of-state sellers FAQ](https://dor.georgia.gov/taxes/sales-use-tax/out-state-sellers) |
 | Electronic filing and payment required once any return owes more than | $500 | [DOR file and pay FAQ](https://dor.georgia.gov/taxes/business-taxes/sales-use-tax/file-pay) |
 | Prepaid estimated tax: prior-year state tax liability more than | $60,000 | same |
 | Prepaid estimated tax, share of estimated tax | 50% | same |
