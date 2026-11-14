@@ -171,10 +171,10 @@ The **2026–27** tier boundaries published by the ATO are:
 
 | Tier | Single income for surcharge purposes | Family income for surcharge purposes, before child increases | Surcharge rate when liable | Source |
 |---|---|---|--- |---|
-| Base | At or below $105,000 | At or below $210,000 | Nil | [FRINGE](https://www.legislation.gov.au/C2004A00412/2026-07-01/text) |
-| 1 | Over $105,000 to $123,000 | Over $210,000 to $246,000 | 1% | [FRINGE](https://www.legislation.gov.au/C2004A00412/2026-07-01/text) |
-| 2 | Over $123,000 to $164,000 | Over $246,000 to $328,000 | 1.25% | [FRINGE](https://www.legislation.gov.au/C2004A00412/2026-07-01/text) |
-| 3 | Over $164,000 | Over $328,000 | 1.5% | [FRINGE](https://www.legislation.gov.au/C2004A00412/2026-07-01/text) |
+| Base | At or below $105,000 | At or below $210,000 | Nil | [GOV-MLS](https://privatehealth.gov.au/health_insurance/surcharges_incentives/medicare_levy.htm) |
+| 1 | Over $105,000 to $123,000 | Over $210,000 to $246,000 | 1% | [GOV-MLS](https://privatehealth.gov.au/health_insurance/surcharges_incentives/medicare_levy.htm) |
+| 2 | Over $123,000 to $164,000 | Over $246,000 to $328,000 | 1.25% | [GOV-MLS](https://privatehealth.gov.au/health_insurance/surcharges_incentives/medicare_levy.htm) |
+| 3 | Over $164,000 | Over $328,000 | 1.5% | [GOV-MLS](https://privatehealth.gov.au/health_insurance/surcharges_incentives/medicare_levy.htm) |
 
 The private health insurance Act provides indexed thresholds and doubled
 family thresholds. For MLS, apply the modified family-tier tests in levy
