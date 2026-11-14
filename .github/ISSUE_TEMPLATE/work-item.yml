@@ -1,0 +1,22 @@
+name: Work item (for an AI worker or a person)
+description: One job for one owner. Owners pick up their own label; results come back as a PR that says "Closes #<this issue>".
+title: "<Area>: <the job in a few words>"
+labels: ["owner:open"]
+body:
+  - type: textarea
+    id: job
+    attributes:
+      label: The job
+      description: What done looks like, in one or two sentences.
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: Folders or files, and what must not be touched.
+  - type: textarea
+    id: brief
+    attributes:
+      label: Brief and checks
+      description: Link the brief to follow and the checks that must pass.
