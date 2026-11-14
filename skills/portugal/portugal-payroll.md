@@ -1,19 +1,20 @@
 ---
 name: portugal-payroll
 description: "Portuguese payroll for employees, tax year 2026: monthly IRS withholding under CIRS arts. 98 to 101 and the 2026 tables for the mainland (Despacho 233-A/2026), the Azores (Despacho 1179/2026) and Madeira (Despacho 19/2026), including the 50% cut for November 2026 pay; holiday and Christmas subsidies and twelfths; employee 11% and employer 23.75% Social Security; the 2026 meal allowance limits (EUR 6.15 cash, 70% more on a card); IRS Jovem in withholding; the DMR by the 10th, IRS paid by the 20th, Social Security from the 1st to the 25th; minimum wage; overtime; fines and interest. Trigger on: Portugal payroll, processamento de salários, retenção na fonte, tabelas de retenção 2026, TSU, subsídio de férias, subsídio de Natal, duodécimos, subsídio de refeição, DMR, salário líquido. Out of scope: the self-employed and contributions in depth (pt-social-contributions), the annual IRS return (pt-irs-employees-investment), non-residents (pt-cross-border), NHR and IFICI (pt-nhr-ifici)."
-version: 1.2
+version: 1.3
 jurisdiction: PT
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-14
 depends_on:
   - payroll-workflow-base
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
+type: computation
 ---
 
-# Portugal payroll (tax year 2026) v1.1
+# Portugal payroll (tax year 2026) v1.3
 
 > **Source-cited draft.** No accountant has reviewed this skill yet. Figures come from the Código do IRS (CIRS) on the Portal das Finanças, the 2026 withholding despachos, the Código dos Regimes Contributivos and the Código do Trabalho in the Diário da República, read on 24 October 2026. It prepares working papers; it is not authority to file or pay.
 
@@ -55,25 +56,25 @@ Inside each set, the table depends on the employee's situation: Table I (single 
 | Item | Rate or amount | Year | Source |
 |---|---|---|---|
 | Withholding formula, no dependants | Monthly pay x marginal rate - amount to deduct (parcela a abater); never below zero | 2026 | Despacho 233-A/2026, point 3(b): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Despacho-233-A-2026.pdf |
-| Withholding formula, with dependants | Monthly pay x marginal rate - amount to deduct - (extra amount per dependant x number of dependants) | 2026 | Despacho 233-A/2026, point 3(a) |
-| Mainland Table I: no withholding | Monthly pay up to EUR 920.00 | 2026 | Despacho 233-A/2026, Table I |
-| Mainland Table III (married, one earner): no withholding | Monthly pay up to EUR 991.00 | 2026 | Despacho 233-A/2026, Table III |
-| Extra deduction per dependant, employment | EUR 21.43 (Table I, married two earners), EUR 34.29 (Table II), EUR 42.86 (Table III) | 2026 | Despacho 233-A/2026, Tables I to III |
-| Dependant with 60% or more disability | Add EUR 84.82 per dependant (single or married one earner), EUR 42.41 (married two earners) | 2026 | Despacho 233-A/2026, point 5(a) |
-| Three or more dependants | Marginal rate cut by 1 percentage point (Tables I to VII) | 2026 | Despacho 233-A/2026, point 5(h) |
+| Withholding formula, with dependants | Monthly pay x marginal rate - amount to deduct - (extra amount per dependant x number of dependants) | 2026 | Despacho 233-A/2026, point 3(a) https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Despacho-233-A-2026.pdf |
+| Mainland Table I: no withholding | Monthly pay up to EUR 920.00 | 2026 | Despacho 233-A/2026, Table I https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Despacho-233-A-2026.pdf |
+| Mainland Table III (married, one earner): no withholding | Monthly pay up to EUR 991.00 | 2026 | Despacho 233-A/2026, Table III https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Despacho-233-A-2026.pdf |
+| Extra deduction per dependant, employment | EUR 21.43 (Table I, married two earners), EUR 34.29 (Table II), EUR 42.86 (Table III) | 2026 | Despacho 233-A/2026, Tables I to III https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Despacho-233-A-2026.pdf |
+| Dependant with 60% or more disability | Add EUR 84.82 per dependant (single or married one earner), EUR 42.41 (married two earners) | 2026 | Despacho 233-A/2026, point 5(a) https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Despacho-233-A-2026.pdf |
+| Three or more dependants | Marginal rate cut by 1 percentage point (Tables I to VII) | 2026 | Despacho 233-A/2026, point 5(h) https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Despacho-233-A-2026.pdf |
 | Azores Table I: no withholding | Monthly pay up to EUR 966.00; first band 8.75% | 2026 | Despacho 1179/2026, as published in AT Circular 3/2026: https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/instrucoes_administrativas/Documents/Circular-3-2026.pdf |
 | Madeira Table I: no withholding | Monthly pay up to EUR 980.00; first band 8.72%; top row over EUR 21,411: 32.78%, less EUR 1,275.30 | 2026 | Despacho 19/2026 (JORAM), republished by Declaração de Retificação 10/2026: https://at.madeira.gov.pt/ficheiros/IISerie-016-2026-01-23Supl3.pdf |
 | November 2026 pay (mainland and Azores) | Only 50% of the table amount is withheld, except where monthly pay exceeds the upper limit of the second-to-last row | Paid 1 to 30 Nov 2026 | Despacho 12523-A/2026, points 2 and 3: https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/despacho-12523-a-2026.pdf ; Azores: Despacho 12610-A/2026: https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/despacho-12610-a-2026.pdf |
-| Overtime pay | Withheld at 50% of the effective rate on that month's regular pay | 2026 | CIRS art. 99-C(8); Despacho 233-A/2026, point 5(f) |
+| Overtime pay | Withheld at 50% of the effective rate on that month's regular pay | 2026 | CIRS art. 99-C(8); Despacho 233-A/2026, point 5(f) https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs99c.aspx; https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Despacho-233-A-2026.pdf |
 | Rounding | Amount withheld rounded down to the whole euro | 2026 | CIRS art. 99-E(1): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs99e.aspx |
 | Variable-only pay | 0% up to EUR 5,269 a year, rising to 40% over EUR 506,343 | 2026 | CIRS art. 100(1): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs100.aspx |
 | IFICI employees | 20% | 2026 | CIRS art. 99(8): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs99.aspx |
 | Social Security, general regime | 34.75%: employer 23.75%, employee 11% | 2026 | Contributions Code art. 53: https://diariodarepublica.pt/dr/legislacao-consolidada/lei/2009-34514575 |
-| Members of corporate bodies (MOE) with management duties | 34.75%: entity 23.75%, member 11% | 2026 | Contributions Code art. 69(2) |
-| Other MOE | 29.6%: entity 20.3%, member 9.3% | 2026 | Contributions Code art. 69(1) |
-| Domestic workers | 28.3% (employer 18.9%, worker 9.4%) without unemployment cover; 33.3% (22.3% and 11%) with it | 2026 | Contributions Code art. 121(1) and (2) |
+| Members of corporate bodies (MOE) with management duties | 34.75%: entity 23.75%, member 11% | 2026 | Contributions Code art. 69(2) https://diariodarepublica.pt/dr/legislacao-consolidada/lei/2009-34514575 |
+| Other MOE | 29.6%: entity 20.3%, member 9.3% | 2026 | Contributions Code art. 69(1) https://diariodarepublica.pt/dr/legislacao-consolidada/lei/2009-34514575 |
+| Domestic workers | 28.3% (employer 18.9%, worker 9.4%) without unemployment cover; 33.3% (22.3% and 11%) with it | 2026 | Contributions Code art. 121(1) and (2) https://diariodarepublica.pt/dr/legislacao-consolidada/lei/2009-34514575 |
 | Meal allowance exempt from IRS and Social Security, cash | Up to EUR 6.15 a day (the public-sector allowance) | From 1 Jan 2026 | CIRS art. 2(3)(b)(2): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs2.aspx ; Portaria 51-B/2026/1, art. 1 and 3: https://files.diariodarepublica.pt/1s/2026/01/02103/0001100011.pdf ; Contributions Code art. 46(2)(l) and (3) |
-| Meal allowance exempt, meal card or vouchers | Up to 70% more than the cash limit: EUR 6.15 x 1.7 = EUR 10.455 a day | From 1 Jan 2026 | CIRS art. 2(3)(b)(2), wording of Lei 45-A/2024 |
+| Meal allowance exempt, meal card or vouchers | Up to 70% more than the cash limit: EUR 6.15 x 1.7 = EUR 10.455 a day | From 1 Jan 2026 | CIRS art. 2(3)(b)(2), wording of Lei 45-A/2024 https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs2.aspx |
 | IRS Jovem exemption | 100% (year 1), 75% (years 2 to 4), 50% (years 5 to 7), 25% (years 8 to 10), capped at 55 x IAS = EUR 29,542.15 a year | 2026 | CIRS art. 12-B(1) and (5): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs12b.aspx |
 | IRS Jovem cap in withholding | 55 x IAS / 14 = EUR 2,110.15 exempt per payment (each of the 14 payments) | 2026 | Despacho 233-A/2026, point 5(g); AT Ofício-Circulado 20274/2025 (monthly limit applied payment by payment): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/instrucoes_administrativas/Documents/Oficio_circulado_20274_2025.pdf |
 | Annual IRS rates, bands 1 to 6 | Lowering to 12.2%, 15.2%, 20.7%, 23.6%, 30.6%, 34.6% is authorised, not yet in force | Authorisation from 23 Oct 2026, 180 days | Lei 64-B/2026, arts. 2 to 4: https://diariodarepublica.pt/dr/detalhe/lei/64-b-2026-1184484177 |
@@ -82,27 +83,27 @@ Inside each set, the table depends on the employee's situation: Table I (single 
 | Minimum wage, Azores | EUR 966 a month (national EUR 920 plus 5%) | From 1 Jan 2026 | Decreto Legislativo Regional 8/2002/A, art. 3: https://diariodarepublica.pt/dr/detalhe/decreto-legislativo-regional/8-2002-303252 |
 | Minimum wage, Madeira | EUR 980 a month | From 1 Jan 2026 | Decreto Legislativo Regional 1/2026/M, art. 2 and 4: https://www.madeira.gov.pt//Portals/25/Documentos/Legislacao/DLR_1_2026_M.pdf |
 | Overtime premium, first 100 hours a year | Working day: 25% first hour, 37.5% after; rest day or holiday: 50% | 2026 | Código do Trabalho art. 268(1): https://diariodarepublica.pt/dr/legislacao-consolidada/lei/2009-34546475 |
-| Overtime premium, over 100 hours a year | Working day: 50% first hour, 75% after; rest day or holiday: 100% | 2026 | Código do Trabalho art. 268(2) |
-| Overtime limit | 175 hours a year (micro and small firms); 150 hours (medium and large) | 2026 | Código do Trabalho art. 228(1) |
-| Night work premium | 25% | 2026 | Código do Trabalho art. 266(1) |
+| Overtime premium, over 100 hours a year | Working day: 50% first hour, 75% after; rest day or holiday: 100% | 2026 | Código do Trabalho art. 268(2) https://diariodarepublica.pt/dr/legislacao-consolidada/lei/2009-34546475 |
+| Overtime limit | 175 hours a year (micro and small firms); 150 hours (medium and large) | 2026 | Código do Trabalho art. 228(1) https://diariodarepublica.pt/dr/legislacao-consolidada/lei/2009-34546475 |
+| Night work premium | 25% | 2026 | Código do Trabalho art. 266(1) https://diariodarepublica.pt/dr/legislacao-consolidada/lei/2009-34546475 |
 | Late-payment interest (tax and Social Security debts) | 7.221% a year | From 1 Jan 2026 | IGCP Aviso 18/2026/2: https://diariodarepublica.pt/dr/detalhe/aviso/18-2026-993315668 ; LGT art. 44(3); Contributions Code arts. 211 and 212 |
 
 **Mainland Table I in full** (employment income, single without dependants or married with two earners; Despacho 233-A/2026, Table I). R is the monthly pay. The extra amount per dependant is EUR 21.43 on every row.
 
-| Monthly pay up to (EUR) | Marginal rate | Amount to deduct (EUR) |
-|---|---|---|
-| 920.00 | 0% | 0 |
-| 1,042.00 | 12.50% | 12.50% x 2.60 x (1,273.85 - R) |
-| 1,108.00 | 15.70% | 15.70% x 1.35 x (1,554.83 - R) |
-| 1,154.00 | 15.70% | 94.71 |
-| 1,212.00 | 21.20% | 158.18 |
-| 1,819.00 | 24.10% | 193.33 |
-| 2,119.00 | 31.10% | 320.66 |
-| 2,499.00 | 34.90% | 401.19 |
-| 3,305.00 | 38.36% | 487.66 |
-| 5,547.00 | 39.69% | 531.62 |
-| 20,221.00 | 44.95% | 823.40 |
-| Over 20,221.00 | 47.17% | 1,272.31 |
+| Monthly pay up to (EUR) | Marginal rate | Amount to deduct (EUR) | Source |
+|---|---|---|---|
+| 920.00 | 0% | 0 | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Despacho-233-A-2026.pdf |
+| 1,042.00 | 12.50% | 12.50% x 2.60 x (1,273.85 - R) | same |
+| 1,108.00 | 15.70% | 15.70% x 1.35 x (1,554.83 - R) | same |
+| 1,154.00 | 15.70% | 94.71 | same |
+| 1,212.00 | 21.20% | 158.18 | same |
+| 1,819.00 | 24.10% | 193.33 | same |
+| 2,119.00 | 31.10% | 320.66 | same |
+| 2,499.00 | 34.90% | 401.19 | same |
+| 3,305.00 | 38.36% | 487.66 | same |
+| 5,547.00 | 39.69% | 531.62 | same |
+| 20,221.00 | 44.95% | 823.40 | same |
+| Over 20,221.00 | 47.17% | 1,272.31 | same |
 
 Table II (single with dependants) uses the same rows, with EUR 34.29 per dependant (Despacho 233-A/2026, Table II). Each region has 11 tables. For Tables III to XI, and for the Azores and Madeira, use the despacho for the region where the employee lives; the rows in the rates table above are the zero-withholding limits.
 
