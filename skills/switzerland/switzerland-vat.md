@@ -176,4 +176,4 @@ expected:
 
 Not yet confirmed: the box (Ziffer) numbers of the ESTV return form were not re-read today, so this skill does not map amounts to boxes; the full list of industries per net tax rate (ESTV ordinance SR 641.202.62) was not read; the amount of the fine for procedural breaches under Art. 98; the day-count basis the ESTV uses for default interest; how Liechtenstein is treated (treaty not read); ESTV practice on private use of company cars and gifts; ESTV practice on input tax on business entertainment (the old version said it is deductible with documented business purpose; Art. 28-29 MWSTG were not checked for a specific rule); which document proves import tax for input tax deduction (the old version named the customs assessment, Veranlagungsverfügung; not checked in MWSTV).
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.
