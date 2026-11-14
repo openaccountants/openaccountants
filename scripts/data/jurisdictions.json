@@ -588,6 +588,13 @@
     "dir": "skills/hong-kong"
   },
   {
+    "code": "HM",
+    "name": "Heard Island and McDonald Islands",
+    "region": "apac",
+    "owner": "ryan",
+    "dir": "skills/heard-island-and-mcdonald-islands"
+  },
+  {
     "code": "HN",
     "name": "Honduras",
     "region": "americas",
