@@ -1,10 +1,10 @@
 ---
 name: australia-gst
 description: Prepare or review Australian GST returns (BAS), including Simpler and full BAS, and classify bank statements, invoices and other evidence. Use for requests to prepare BAS, do GST, fill in BAS, create the return, GST return or Activity Statement. Covers Australia only. Apply the refusal catalogue for complex partial exemption, GST groups, margin schemes and going concerns. Read before GST work.
-version: 2.5
+version: 2.6
 jurisdiction: AU
 tax_year: 2025
-last_updated: 2026-11-12
+last_updated: 2026-11-15
 tax_year_notes: "Worked periods vary. The GST credit attribution check applies the current 2026 compilation."
 type: situation-rules
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -33,11 +33,11 @@ Read the full guide, including Cross-border points, before classifying transacti
 | Reporting currency | AUD; convert foreign-currency consideration using the applicable GST rules ([GST Act s 9-85](https://www.legislation.gov.au/C2004A00446/2026-01-01/2026-01-01/text/original/epub/OEBPS/document_1/document_1.html); [GSTR 2001/2, paragraph 14](https://www.ato.gov.au/law/view/document?DocID=GST/GSTR20012/NAT/ATO/00001)) |
 | Filing frequencies | Monthly (GST turnover >= $20M or another mandatory/elected monthly case); Quarterly (standard); Annual (eligible voluntary registration with an annual election in effect; generally GST turnover < $75,000, or < $150,000 for a non-profit body) ([GST Act Division 151](https://www.legislation.gov.au/C2004A00446/2026-01-01/2026-01-01/text/original/epub/OEBPS/document_2/document_2.html); [registration amounts, GST Regulations rr 23-15.01 and 23-15.02](https://www.legislation.gov.au/F2019L00417/2025-11-01/2025-11-01/text/original/epub/OEBPS/document_1/document_1.html)) |
 | Deadline | Ordinary due dates: monthly, 21st of the following month; quarterly, 28th after quarter except December quarter, 28 February; annual, income-tax-return due date or 28 February if no income-tax return is required. Check the actual due date and any permitted extension ([GST Act ss 31-8 and 31-10](https://www.legislation.gov.au/C2004A00446/2026-01-01/2026-01-01/text/original/epub/OEBPS/document_1/document_1.html); [ATO annual GST reporting](https://www.ato.gov.au/businesses-and-organisations/gst-excise-and-indirect-taxes/gst/when-and-how-to-report-and-pay-gst/annual-gst-reporting)) |
-| Primary legislation | [A New Tax System (Goods and Services Tax) Act 1999 (GST Act)](https://www.legislation.gov.au/C2004A00446/2026-01-01/2026-01-01/text/original/epub/OEBPS/document_1/document_1.html) |
+| Primary legislation | [A New Tax System (Goods and Services Tax) Act 1999 (GST Act)](https://www.legislation.gov.au/C2026C00081) |
 | Supporting legislation | [Taxation Administration Act 1953 (Schedule 1)](https://www.legislation.gov.au/C1953A00001/latest/details); [GST Regulations 2019](https://www.legislation.gov.au/F2019L00417/2025-11-01/2025-11-01/text/original/epub/OEBPS/document_1/document_1.html); [LCT Act 1999](https://www.legislation.gov.au/C2004A00463/latest/details); [WET Act 1999](https://www.legislation.gov.au/C2004A00452/latest/details) |
 | Contributor | Open Accounting Skills Registry |
 | Validation status | Pending accountant review |
-| Skill version | 2.5 |
+| Skill version | 2.6 |
 
 Annual reporting requires an eligible annual tax period election in effect. The entity must not be required to register and must have no GST instalment election in effect. The offshore rights/options exception in section 151-5(2) also applies. Each member of a GST group must be eligible. Notify the Commissioner in the approved form and establish the effective period before using annual reporting. An entity using the deferred GST scheme must withdraw from that scheme. The ATO's [annual GST reporting guidance](https://www.ato.gov.au/businesses-and-organisations/gst-excise-and-indirect-taxes/gst/when-and-how-to-report-and-pay-gst/annual-gst-reporting) explains how to make the annual election by phone or signed written application and the applicable deadlines. [GST Act ss 151-5, 151-10, 151-15 and 151-40](https://www.legislation.gov.au/C2004A00446/2026-01-01/2026-01-01/text/original/epub/OEBPS/document_2/document_2.html).
 
@@ -165,8 +165,6 @@ _(s 23-5; TAA 1953; s 29-40; s 69-10; LCT Act; TAA Schedule 1; s 31-5; s 29-70)_
 - **ATO payments:** PAYG withholding (W2), PAYG instalments (T7) and FBT instalments (F1) are tax payments, not supplies. Exclude them from GST classification but retain them for BAS labels W1-W5, T1-T9 and F1-F3.
 
 ### Cash vs accrual basis
-
-_(Cash vs accrual basis table)_
 
 | Feature | Cash | Accrual |
 | --- | --- | --- |
@@ -434,14 +432,12 @@ These are separate from adjustments:
 
 - Original reporting errors.
 - Missing-invoice deferral: s 29-10(3) attributes the credit to the first period, if any, for which a GST return is given whilst holding the invoice. Check low-value/other statutory exceptions.
-- Electing to move an entitled credit: ss 29-10(4)-(6) cover only the part omitted from the otherwise attributable period's net amount assessment. Notify the Commissioner in the approved form, specifying the later period; confirm the channel's approved process. The election is irrevocable and cannot be amended. The 1 January 2026 amendments have transitional rules for earlier claims. [GST Act ss 29-10 and 29-80](https://www.legislation.gov.au/C2004A00446/2026-01-01/2026-01-01/text/original/epub/OEBPS/document_1/document_1.html); [2025 amending Act, Schedule 4 items 36-37 and 43](https://www.legislation.gov.au/C2025A00072/asmade/2024-07-01/text/original/epub/OEBPS/document_1/document_1.html).
+- Election under ss 29-10(4)-(6): move only the entitled credit omitted from the otherwise attributable period's net amount assessment to a specified later period. On a current ordinary BAS, include it at 1B; no separate notification is needed. Record the choice; it cannot be revoked or amended. Keep acquisition and choice records for at least 5 years after lodging that BAS, longer if required. Earlier claims have transitional rules from 1 January 2026. [GST Act s 29-10](https://www.legislation.gov.au/C2026C00081); [ATO procedure](https://www.ato.gov.au/businesses-and-organisations/gst-excise-and-indirect-taxes/gst/claiming-gst-credits/when-you-can-claim-a-gst-credit); [TAA Sch 1 s 382-5](https://www.legislation.gov.au/C2026C00468); [2025 amending Act, Sch 4 items 36-37 and 43](https://www.legislation.gov.au/C2025A00072).
 - Law/rate changes: apply the rule for the transaction and period.
 
-For either credit path, the ordinary 4-year limit runs from the return due date for the period under s 29-10(1) or (2); check s 93-10 exceptions. [GST Act Division 93](https://www.legislation.gov.au/C2004A00446/2026-01-01/2026-01-01/text/original/epub/OEBPS/document_1/document_1.html).
+For either credit path, the ordinary 4-year limit runs from the return due date for the period under s 29-10(1) or (2); check s 93-10 exceptions. [GST Act Division 93](https://www.legislation.gov.au/C2026C00081).
 
 ### Comparison with EU VAT (for practitioners familiar with EU systems)
-
-_(Comparison table)_
 
 | Feature | Australian GST | EU VAT |
 | --- | --- | --- |
@@ -555,8 +551,6 @@ For eligible businesses with GST turnover below $10 million, report G1, 1A and 1
 Blue font for hardcoded values from the bank statement (column E of Transactions). Black for formulas. Green for cross-sheet references. Yellow background for any row where Default? = "Y".
 
 ### Filing deadlines (quarterly)
-
-_(Filing deadlines table)_
 
 | Quarter | Period | Due date |
 | --- | --- | --- |
@@ -1059,7 +1053,7 @@ Use available evidence first; ask only unanswered questions. Name and transactio
 
 ### Validation status
 
-Version 2.5 retains the April 2026 structure. Verification covers only the dated source reads and executable examples described here. Whole-guide currency, accountant approval and deployment are not established.
+Version 2.6 retains the April 2026 structure. Verification covers only the dated source reads and executable examples described here. Whole-guide currency, accountant approval and deployment are not established.
 
 ## Sources
 
@@ -1071,7 +1065,7 @@ UTC read dates cover only the specified checks, not whole-guide currency, accoun
 | GST Act s 40-5 and Division 81; read for financial supplies and the distinction between taxes/fees that are not consideration and prescribed exceptions | https://www.legislation.gov.au/C2004A00446/2026-01-01/text | 2026-11-11 |
 | GST Regulations rr 40-5.09, 40-5.12, 81-10.01, 81-15.01 and 81-15.02; read for financial/non-financial services, prescribed government fees and overlap priorities | https://www.legislation.gov.au/F2019L00417/2025-11-01/text | 2026-11-11 |
 | Current ATO sales reporting instructions; read for G2 exceptions/FOB, ordinary services and related freight/insurance at G3 and inclusion once in G1; eligibility and special valuations not cleared | https://www.ato.gov.au/businesses-and-organisations/gst-excise-and-indirect-taxes/gst/completing-your-bas-for-gst/complete-your-bas/step-1-sales | 2026-11-11 |
-| GST Act ss 9-30, 9-75, 9-85, 27-15, 29-70, 69-10 and 84-12/13; read for reporting currency, periods, invoice information, car-credit conditions and ordinary reverse-charge liability; GST Act, ss 29-5, 29-10, 29-80 and Division 93: non-cash attribution, tax invoice evidence, elections and time limits; GST Act, ss 83-5, 84-5, 84-10 and 84-100: the distinct reverse charge routes, the item-specific purpose test and supplier-belief conditions | https://www.legislation.gov.au/C2004A00446/2026-01-01/2026-01-01/text/original/epub/OEBPS/document_1/document_1.html | 2026-11-11 |
+| GST Act ss 9-30, 9-75, 9-85, 27-15, 29-70, 69-10, 84-12/13: reporting currency, periods, invoice information, car-credit conditions and ordinary reverse charge; ss 29-5, 29-10, 29-80, Div 93: non-cash attribution, invoices, elections and time limits; ss 83-5, 84-5, 84-10, 84-100: distinct reverse-charge routes, item-specific purpose and supplier-belief conditions | https://www.legislation.gov.au/C2026C00081 | 2026-11-11; s 29-10 rechecked 2026-11-14 |
 | GST Act Division 151 and s 157-5; read for annual-period elections and special cash-basis eligibility | https://www.legislation.gov.au/C2004A00446/2026-01-01/2026-01-01/text/original/epub/OEBPS/document_2/document_2.html | 2026-11-11 |
 | GST Regulations rr 23-15.01, 23-15.02 and 29-80.01; read for registration and low-value invoice amounts | https://www.legislation.gov.au/F2019L00417/2025-11-01/2025-11-01/text/original/epub/OEBPS/document_1/document_1.html | 2026-11-11 |
 | ITAA 1997 ss 328-110 and 328-115; read for the applicable small-business and aggregated-turnover tests | https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_7/document_7.html | 2026-11-11 |
@@ -1089,9 +1083,12 @@ UTC read dates cover only the specified checks, not whole-guide currency, accoun
 | ATO no-ABN withholding; read for the $75 excluding-GST payment boundary and exceptions | https://www.ato.gov.au/businesses-and-organisations/hiring-and-paying-your-workers/payg-withholding/payments-you-need-to-withhold-from/withholding-from-suppliers/withholding-if-abn-not-provided | 2026-11-11 |
 | ATO How Australian GST works; read for non-resident current/projected turnover, non-profit threshold and platform responsibility | https://www.ato.gov.au/businesses-and-organisations/international-tax-for-business/gst-for-non-resident-businesses/how-australian-gst-works | 2026-11-11 |
 | ATO QC17450; read for ordinary reverse-charge BAS reporting and credit-evidence instructions; the page is dated 26 July 2022; Special valuation remains unresolved | https://www.ato.gov.au/businesses-and-organisations/gst-excise-and-indirect-taxes/gst/in-detail/rules-for-specific-transactions/international-transactions/reverse-charge-gst-on-offshore-goods-and-services-purchases | 2026-11-11 |
-| 2025 amending Act, s 2 and Schedule 4 items 36–37 and 43; read for commencement and transition | https://www.legislation.gov.au/C2025A00072/asmade/2024-07-01/text/original/epub/OEBPS/document_1/document_1.html | 2026-11-11 |
+| 2025 amending Act, s 2 and Schedule 4 items 36–37 and 43; read for commencement and transition | https://www.legislation.gov.au/C2025A00072 | 2026-11-11 |
+| ATO unclaimed credits; read for ordinary later-BAS choices and records | https://www.ato.gov.au/businesses-and-organisations/gst-excise-and-indirect-taxes/gst/claiming-gst-credits/when-you-can-claim-a-gst-credit | 2026-11-14 |
+| ATO approved BAS forms; read for s 29-10(5) references, updated 25 March 2026 | https://www.ato.gov.au/forms-and-instructions/approved-forms-consolidated-list-by-tax-topic/business-activity-statements-bas | 2026-11-14 |
+| TAA Sch 1 ss 382-5, 388-50; read for records, retention and combined forms | https://www.legislation.gov.au/C2026C00468 | 2026-11-14 |
 
-Not yet confirmed: the approved credit attribution election process for each ATO lodgment channel, special reverse-charge valuation and the remaining vendor, classification, BAS and actual consumer paths. Dated rows cover only their stated checks.
+Not yet confirmed: the s 29-10(5) approval date and revised-BAS elections, special reverse-charge valuation and the remaining vendor, classification, BAS and actual consumer paths. Dated rows cover only their stated checks.
 
 Undated background references (no read date asserted): Taxation Administration Act 1953 Schedule 1, GST Regulations 2019, LCT Act 1999, WET Act 1999; A New Tax System (Goods and Services Tax) Act 1999 -- [law register](https://www.legislation.gov.au); ATO [BAS instructions](https://www.ato.gov.au/businesses-and-organisations/gst-excise-and-indirect-taxes/gst/lodging-your-bas), [GST registration](https://www.ato.gov.au/businesses-and-organisations/gst-excise-and-indirect-taxes/gst/registering-for-gst), [Simpler BAS](https://www.ato.gov.au/businesses-and-organisations/gst-excise-and-indirect-taxes/gst/lodging-your-bas/simpler-bas) and [food](https://www.ato.gov.au/businesses-and-organisations/gst-excise-and-indirect-taxes/gst/in-detail/rules-for-specific-transactions/gst-and-food).
 
