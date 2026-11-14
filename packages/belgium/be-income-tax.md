@@ -1,16 +1,17 @@
 ---
 name: be-income-tax
 description: "Belgian personal income tax (personenbelasting / impot des personnes physiques) for self-employed residents: traders and business owners (winst) and liberal professions (baten), for income 2026 (assessment year 2027). Covers the art. 130 scale (25%, 40%, 45%, 50%), the EUR 11,550 tax-free amount, actual costs versus the art. 51 lump sum (30% capped at EUR 6,070 for profits; 28.7% to 3% capped at EUR 5,340 for benefits), deduction of social contributions and VAPZ, restaurant and gift limits, car costs, the municipal surcharge, prepayments (voorafbetalingen) and the 2026 bonification rates, and the end of the prepayment increase for self-employed profits. Trigger on: personenbelasting zelfstandige, IPP indépendant, beroepskosten, forfaitaire beroepskosten, voorafbetalingen, bonificatie, Tax-on-web zelfstandige. Out of scope: be-employee-income-tax (employees and pensioners), be-social-contributions, belgium-payroll, be-corporate-tax, be-capital-gains, be-cross-border."
-version: 2.2
+version: 2.3
 jurisdiction: BE
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-14
 depends_on:
   - income-tax-workflow-base
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
+type: computation
 ---
 
 # Belgium: income tax for the self-employed (income 2026, assessment year 2027) v2.1

@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/ie-prsi-cross-border"
   jurisdiction: "IE"
   tax_year: "2026"
-  last_updated: "2026-10-23"
+  last_updated: "2026-11-14"
 ---
 
 # Ireland: PRSI for posted and cross-border workers, and Class K (2026)
@@ -35,7 +35,7 @@ Not covered: the benefit entitlements earned abroad and aggregation of contribut
 | Class A employer, weekly pay above EUR 552 (all of the week's pay) | 11.25% to 30 September 2026; 11.40% from 1 October 2026 | 2026 | Same (SW14) |
 | PRSI credit, Class A and H, weekly pay EUR 352.01 to EUR 424 | Maximum EUR 12 a week, less one sixth of pay above EUR 352.01 | 2026 | Same (SW14) |
 | Class S (self-employed), period rates | 4.2% to 30 September 2026; 4.35% from 1 October 2026; minimum EUR 650 | 2026 | https://www.gov.ie/en/department-of-social-protection/publications/operational-guidelines-prsi-pay-related-social-insurance-contributions-and-classes/ |
-| Class K1 (public office holders, over EUR 100 a week) | 4.2% to 30 September 2026; 4.35% from 1 October 2026; nil at EUR 5,200 a year or less (Class M) | 2026 | https://www.gov.ie/en/department-of-social-protection/publications/prsi-class-k-rates/ |
+| Class K1 (public office holders, over EUR 100 a week) | 4.2% to 30 September 2026; 4.35% from 1 October 2026; nil at EUR 5,200 a year or less (Class M) | 2026 | https://www.gov.ie/en/department-of-social-protection/publications/prsi-class-k-rates/ ; https://assets.gov.ie/static/documents/cb168977/PRSI_C20260116_Contribution_Rates_and_User_Guide_-_SW_14_-_English_Version_-_January_2026_.pdf-web.pdf |
 | Class K9 (unearned income; modified rate contributors' other income), period rates | 4.2% to 30 September 2026; 4.35% from 1 October 2026; no employer share; no upper limit | 2026 | https://assets.gov.ie/static/documents/9c18b85f/20260520_Rates_of_Payment_Booklet_-_SW19_-_2026_May.pdf |
 | Class S and K9 rate for 2026 income returned through self-assessment (blended) | 4.2375% | 2026 | Same (SW19 and SW14 footnote) |
 | Class S and K9 rate for 2025 income returned through self-assessment (blended) | 4.125% | 2025 | Same |
@@ -174,20 +174,20 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| DSP, Operational Guidelines: PRSI for those working abroad and the Special PRSI Collection System (updated 7 January 2026) | https://www.gov.ie/en/department-of-social-protection/publications/operational-guidelines-prsi-for-those-working-abroad-and-the-special-prsi-collection-system/ | 2026-10-23 |
+| DSP, Operational Guidelines: PRSI for those working abroad and the Special PRSI Collection System (updated 7 January 2026). Read for PRSI for people working abroad and the special collection system. | https://www.gov.ie/en/department-of-social-protection/publications/operational-guidelines-prsi-for-those-working-abroad-and-the-special-prsi-collection-system/ | 2026-10-23 |
 | Regulation (EC) No 883/2004, consolidated text, Articles 11 to 13 and 16 | https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02004R0883-20190731 | 2026-10-23 |
-| DSP, Operational Guidelines: PRSI contributions and classes (updated 6 January 2026) | https://www.gov.ie/en/department-of-social-protection/publications/operational-guidelines-prsi-pay-related-social-insurance-contributions-and-classes/ | 2026-10-23 |
-| DSP, PRSI Class K rates (updated 20 January 2026) | https://www.gov.ie/en/department-of-social-protection/publications/prsi-class-k-rates/ | 2026-10-23 |
-| DSP, SW14 PRSI Contribution Rates and User Guide, January 2026 | https://assets.gov.ie/static/documents/cb168977/PRSI_C20260116_Contribution_Rates_and_User_Guide_-_SW_14_-_English_Version_-_January_2026_.pdf-web.pdf | 2026-10-23 |
-| DSP, SW19 Rates of Payment 2026 (May 2026) | https://assets.gov.ie/static/documents/9c18b85f/20260520_Rates_of_Payment_Booklet_-_SW19_-_2026_May.pdf | 2026-10-23 |
-| DSP, SW74 guide to PRSI for the self-employed (January 2025 edition; used only for the EUR 5,000 test and the non-resident rule) | https://assets.gov.ie/38671/0aa2cf3d831a4076b1b6208e1287d9f9.pdf | 2026-10-23 |
-| DSP, PRSI Employer Guide, January 2026 | https://assets.gov.ie/static/documents/338359b5/20260122_PRSI_Employer_Guide_-_January_2026_-_English_Version_copy.pdf.final.pdf | 2026-10-23 |
+| DSP, Operational Guidelines: PRSI contributions and classes (updated 6 January 2026). Read for the PRSI classes. | https://www.gov.ie/en/department-of-social-protection/publications/operational-guidelines-prsi-pay-related-social-insurance-contributions-and-classes/ | 2026-10-23 |
+| DSP, PRSI Class K rates (updated 20 January 2026). Read for the 2026 Class K rates. | https://www.gov.ie/en/department-of-social-protection/publications/prsi-class-k-rates/ | 2026-10-23 |
+| DSP, SW14 PRSI Contribution Rates and User Guide, January 2026. Read for the 2026 PRSI rates. | https://assets.gov.ie/static/documents/cb168977/PRSI_C20260116_Contribution_Rates_and_User_Guide_-_SW_14_-_English_Version_-_January_2026_.pdf-web.pdf | 2026-10-23 |
+| DSP, SW19 Rates of Payment 2026 (May 2026). Read for the 2026 benefit rates. | https://assets.gov.ie/static/documents/9c18b85f/20260520_Rates_of_Payment_Booklet_-_SW19_-_2026_May.pdf | 2026-10-23 |
+| DSP, SW74 guide to PRSI for the self-employed (January 2025 edition; used only for the EUR 5,000 test and the non-resident rule). Read for the EUR 5,000 test. | https://assets.gov.ie/38671/0aa2cf3d831a4076b1b6208e1287d9f9.pdf | 2026-10-23 |
+| DSP, PRSI Employer Guide, January 2026. Read for employer PRSI duties. | https://assets.gov.ie/static/documents/338359b5/20260122_PRSI_Employer_Guide_-_January_2026_-_English_Version_copy.pdf.final.pdf | 2026-10-23 |
 | Social Welfare Consolidation Act 2005, section 21 (revised) | https://revisedacts.lawreform.ie/eli/2005/act/26/section/21/revised/en/html | 2026-10-23 |
-| Social Welfare Consolidation Act 2005, Schedule 1 (revised) | https://revisedacts.lawreform.ie/eli/2005/act/26/schedule/1/revised/en/html | 2026-10-23 |
+| Social Welfare Consolidation Act 2005, Schedule 1 (revised). Read for the PRSI rates in Schedule 1. | https://revisedacts.lawreform.ie/eli/2005/act/26/schedule/1/revised/en/html | 2026-10-23 |
 | Revenue, TDM Part 02-04-01, tax equalisation and assignee PRSI (reviewed September 2026) | https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-02/02-04-01.pdf | 2026-10-23 |
-| Revenue, pay and file system | https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/pay-file-system.aspx | 2026-10-23 |
-| Revenue, preliminary tax | https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/preliminary-tax.aspx | 2026-10-23 |
-| Revenue, guidelines for charging interest on late payment | https://www.revenue.ie/en/tax-professionals/tdm/collection/debt-management/Guidelines-for-charging-interest-on-late-payment-20240715074235.pdf | 2026-10-23 |
+| Revenue, pay and file system. Read for the pay and file dates. | https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/pay-file-system.aspx | 2026-10-23 |
+| Revenue, preliminary tax. Read for the preliminary tax rule. | https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/preliminary-tax.aspx | 2026-10-23 |
+| Revenue, guidelines for charging interest on late payment. Read for the daily interest rate on late tax. | https://www.revenue.ie/en/tax-professionals/tdm/collection/debt-management/Guidelines-for-charging-interest-on-late-payment-20240715074235.pdf | 2026-10-23 |
 
 Not yet confirmed: whether Class K extends past 66 for employees born on or after 1 January 1958 who have not been awarded the State Pension (Contributory) (the PRSI Employer Guide and SW74 keep employee and Class S PRSI running to 70 for them, but DSP's Class K guidance still says under 66); whether the EUR 650 minimum applies to Class K9 (SW14 and SW19 attach the self-employed footnote with the minimum to K9, but the 2005 Act sets the minimum for self-employment contributions and DSP's guidelines do not repeat it for Class K); DSP's Class K page prints blended rates of 4.0125% (2025) and 4.235% (2026), which conflict with SW14 and SW19 (4.125% and 4.2375%) and with the arithmetic of the period rates, so this skill uses SW14 and SW19; the posting period under the Ireland-UK Convention for Great Britain and Northern Ireland, since DSP's page applies the EU Regulation's 24 months to UK postings without citing the Trade and Cooperation Agreement Protocol.
 
@@ -195,4 +195,4 @@ Not yet confirmed: whether Class K extends past 66 for employees born on or afte
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-23. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ie-prsi-cross-border` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ie-prsi-cross-border. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ie-prsi-cross-border` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ie-prsi-cross-border. If neither is available, confirm every figure against the official source pages cited above before relying on it.

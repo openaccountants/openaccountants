@@ -1,16 +1,17 @@
 ---
 name: om-income-tax
 description: "Personal income tax for Oman: none in tax year 2026, and the rules of the 5% tax that starts on 1 January 2028 under Royal Decree 56/2025, read from the law text and the Tax Authority FAQs."
-version: 1.3
+version: 1.4
 jurisdiction: OM
 tax_year: 2026
-last_updated: 2026-11-03
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
+type: computation
 ---
 
-# Oman Personal Income Tax v1.3
+# Oman Personal Income Tax v1.4
 
 > **General reference only.** This Guide is a draft for AI-assisted reference. Independent review accepts only the documented partial source closeout and its recorded conditions. It has not received accountant attestation. Do not use it to file, pay or take a position without professional review.
 

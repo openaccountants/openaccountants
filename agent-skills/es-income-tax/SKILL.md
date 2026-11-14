@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/es-income-tax"
   jurisdiction: "ES"
   tax_year: "2026"
-  last_updated: "2026-11-06"
+  last_updated: "2026-11-14"
 ---
 
-# Spain resident personal income tax (IRPF) v2.3
+# Spain resident personal income tax (IRPF) v2.4
 
 Calculate resident IRPF from classified income, then apply the state and community scales with their separate personal and family minima. This Guide covers income earned in **calendar year 2026**, returned in 2027 under the campaign rules published for that return. It is sourced from the law; independent whole-pack review is pending and no accountant has signed off this revision.
 
@@ -636,4 +636,4 @@ Not yet confirmed in this revision: specific interactions within the fifteen 202
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-06. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `es-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/es-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `es-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/es-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

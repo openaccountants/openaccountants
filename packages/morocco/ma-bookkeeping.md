@@ -11,19 +11,20 @@ description: >
   auto-entrepreneur, CPU, RNS, RNR and companies. Reply in the user's language (English, French,
   or Moroccan Arabic / Darija). Cross-reference ma-auto-entrepreneur, ma-cpu,
   morocco-professional-income-tax and morocco-vat for the tax computation.
-version: 2.0
+version: 2.1
 jurisdiction: MA
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 depends_on:
   - income-tax-workflow-base
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: bookkeeping
+type: situation-rules
 ---
 
-# MA Bookkeeping v2.0
+# MA Bookkeeping v2.1
 
 ## Scope
 
