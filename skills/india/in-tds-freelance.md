@@ -36,7 +36,7 @@ This Guide covers tax deducted at source (TDS) when a business pays a resident f
 
 - Are you paying, or being paid? If paying, are you a company, firm or other entity, or an individual or HUF, and what were your business turnover or professional receipts in the previous tax year? (Specified person, designated person, or serial 6(ii).)
 - What exactly is the service: professional work in the section 402(28) list, technical or consultancy work, or a contract for work such as catering, transport, manpower supply or manufacturing to your specification? (Serial and rate.)
-- Is the payee resident in India, and has the payee given a valid PAN? (Section 393(2) and section 397(2).)
+- Is the payee ordinarily resident or RNOR in India, and has the payee given a valid PAN? (Section 393(2) and section 397(2).)
 - What is each payment, and what will the total to this payee be for the tax year? (Thresholds.)
 - Was the sale or service booked through an online platform that takes the payment? (Serial 8(v).)
 - Does the payee hold a section 395 certificate for this payer? (Rate.)
@@ -52,7 +52,7 @@ Before computing any TDS figure, you MUST know:
 5. **Legal status of the payee** [T1]: individual or HUF versus any other person (decides the contract-work rate).
 6. **Amounts**: each single sum and the total for the tax year, per payee, and per serial 6(iii) category where there is more than one [T2] (threshold tests).
 7. **Does the payee hold a section 395 certificate for a lower rate or no deduction?** [T2]
-8. **Is the payee resident in India?** [T1] Payments to non-residents fall under section 393(2), not under this Guide. Escalate to [T3].
+8. **Is the payee ordinarily resident, RNOR or non-resident in India?** [T1] Payments to non-residents fall under section 393(2), not under this Guide. Escalate to [T3].
 9. **Tax deduction and collection account number (TAN) of the payer** [T1]: section 397(1) requires one, except for the cases listed there (Step 6).
 
 **If the payee is a non-resident, STOP. Section 393(2) applies, not serial 6. Escalate to [T3].**
@@ -67,16 +67,16 @@ Before computing any TDS figure, you MUST know:
 | Contract work, designated payer | 1% individual/HUF contractor,2% other; single sum aboveINR 30,000 OR annual aggregate aboveINR 100,000 | s.393(1)serial 6(i); https://egazette.gov.in/WriteReadData/2025/265620.pdf |
 | Individual/HUF not otherwise required under 6(i)/(iii)/1(ii) | 2% whole sum if annual aggregate aboveINR 5,000,000 (in words on the page) | s.393(1)serial 6(ii); https://egazette.gov.in/WriteReadData/2025/265620.pdf |
 | E-commerce | 0.1% gross; individual/HUF participant up toINR 500,000 with PAN/Aadhaar exemption; Note 4VDA priority | s.393(1)serial 8(v),393(4)serial 11; https://egazette.gov.in/WriteReadData/2025/265620.pdf |
-| Business/profession benefit, specified provider | 10% whole value if aggregate aboveINR 20,000; deduction assured before provision; kind-payment controls | s.393(1)serial 8(iv),Notes 2/6; https://egazette.gov.in/WriteReadData/2025/265620.pdf |
+| Business/profession benefit, specified provider | 10% whole value if aggregate aboveINR 20,000; deduction before provision; Note6 tax PAID before kind/insufficient-cash release | s.393(1)serial 8(iv),Notes 2/6; https://egazette.gov.in/WriteReadData/2025/265620.pdf |
 | Missing validPAN | Higher of relevant rate/rates in force/20%floor;8(ii)/8(v)floor 5% | s.397(2)(b); https://egazette.gov.in/WriteReadData/2025/265620.pdf |
 
-1. **Confirm the year and the law.** For an amount credited or paid from 1 April 2026, apply Chapter XIX-B of the Income-tax Act 2025 (section 1(3): in force from 1 April 2026; section 536 repeals the 1961 Act): https://egazette.gov.in/WriteReadData/2025/265620.pdf
+1. **Confirm the year and the law.** If the earlier credit/payment event is on or after 1 April 2026, apply Chapter XIX-B of the Income-tax Act 2025 (section 1(3): in force from 1 April 2026; section 536 repeals the 1961 Act): https://egazette.gov.in/WriteReadData/2025/265620.pdf
 2. **Classify the payment** under the section 393(1) Table: serial 6(i) contract work, 6(ii) individual payer, 6(iii) professional or technical fees, 8(iv) benefit, 8(v) e-commerce, using the definitions in section 402 (same link).
 3. **Check the payer** is a specified or designated person (section 402(37) and 402(11)), and the exclusions in section 393(4) and 393(5) (same link).
 4. **Test the threshold** for the tax year (section 393(1)(a)) and, if exceeded, take the entire amount (same link).
 5. **Fix the rate**: the Table rate, a section 395 certificate rate, or the section 397(2)(b) no-PAN rate (same link).
 6. **Deduct at credit or payment, whichever is earlier** (section 393(1)(c)), and deposit by the rule 218 date, Income-tax Rules 2026: https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-03/En-Notified-IT-Rules-2026-20-03-2026.pdf
-7. **File the quarterly statement** in Form No. 140 (rule 219) and issue Form No. 131 (rule 215) from the same Rules link; serial 6(ii) payers use Form No. 141 and Form No. 132.
+7. **File the applicable statement**: ordinary-resident section393(1) deductions use Form No.140 (rule219) and Form No.131 (rule215); serial6(ii) uses Form No.141 and Form No.132. The RNOR section393(1) form is held pending resolution of the rule219 enumeration gap described in Step7, not automatically140 or144.
 8. **Check fees and interest** for any delay: section 427 fee as substituted by the Finance Act 2026 (https://egazette.gov.in/WriteReadData/2026/271439.pdf) and section 398(3) interest (https://egazette.gov.in/WriteReadData/2025/265620.pdf).
 9. **For the payee**, reconcile the Annual Information Statement (Form No. 168, rule 245) and claim the credit (rule 203) in the return, using the Rules link in step 6.
 
@@ -156,7 +156,7 @@ Section 402(47) says "work" includes advertising; broadcasting and telecasting i
 | Catering | Any sum under serial 6(iii), such as professional or technical fees (section 402(47)); https://egazette.gov.in/WriteReadData/2025/265620.pdf |
 | Carriage of goods or passengers, other than by railways | Payments to employees (salary); https://egazette.gov.in/WriteReadData/2025/265620.pdf |
 | Advertising, broadcasting and telecasting (fees for advertising as a profession fall under serial 6(iii), which section 402(47)(B) excludes from work) | Purchase of goods from the seller's stock, which is not a contract for work [T 2: ordinary meaning, confirm]; https://egazette.gov.in/WriteReadData/2025/265620.pdf |
-| Supply of manpower working under the customer's supervision, control or direction (from 1 April 2026) | ; https://egazette.gov.in/WriteReadData/2025/265620.pdf |
+| Supply of manpower working under the customer's supervision, control or direction (from 1 April 2026) | ; https://egazette.gov.in/WriteReadData/2025/265620.pdf; https://egazette.gov.in/WriteReadData/2026/271439.pdf |
 | Construction, printing, housekeeping and security contracts, software written under a contract for work [T 2: the Act's list is "includes", so these sit on the ordinary meaning of "work"; confirm] | ; https://egazette.gov.in/WriteReadData/2025/265620.pdf |
 
 #### Serial 6(i) or serial 6(iii): decision matrix [T2]
@@ -165,7 +165,7 @@ Section 402(47) says "work" includes advertising; broadcasting and telecasting i
 | --- | --- | --- |
 | Freelance software developer writing custom code | 6(iii) if fees for technical services or professional services; 6(i) if a contract for work | [T2] confirm which; rates in the tables above; https://egazette.gov.in/WriteReadData/2025/265620.pdf |
 | Licence or subscription for the right to use computer software (including SaaS) | 6(iii)(d) royalty: section 402(30) takes the meaning in section 9(6)(b), which by section 9(6)(c)(i) includes "right to use a computer software (including granting of a licence)" | Rate (b) [T 2: whether a given SaaS fee is for a right to use software or for a service]; https://egazette.gov.in/WriteReadData/2025/265620.pdf |
-| IT company supplying manpower that works under the client's supervision | 6(i) (section 402(47)(f), from 1 April 2026) | Contract-work rate for the contractor's status; https://egazette.gov.in/WriteReadData/2025/265620.pdf |
+| IT company supplying manpower that works under the client's supervision | 6(i) (section 402(47)(f), from 1 April 2026) | Contract-work rate for the contractor's status; https://egazette.gov.in/WriteReadData/2025/265620.pdf; https://egazette.gov.in/WriteReadData/2026/271439.pdf |
 | Architect designing a building | 6(iii), professional services | Rate (b); https://egazette.gov.in/WriteReadData/2025/265620.pdf |
 | Construction contractor building the design | 6(i) | Contract-work rate for the contractor's status; https://egazette.gov.in/WriteReadData/2025/265620.pdf |
 | Chartered Accountant preparing accounts | 6(iii), professional services (accountancy) | Rate (b); https://egazette.gov.in/WriteReadData/2025/265620.pdf |
@@ -223,11 +223,11 @@ Every person entitled to receive an amount on which tax is deductible must give 
 
 ### Step 5: Benefits or Perquisites to Freelancers (section 393(1), Table serial 8(iv)) [T2]
 
-A "specified person" (Step 1) that provides a resident with a benefit or perquisite, convertible into money or not, arising from that resident's business or profession, deducts tax on the value. Note 2 to the Table: this applies to benefits in cash, in kind or partly in each, and the provider must ensure tax has been deducted BEFORE providing the benefit.
+A "specified person" (Step 1) that provides a resident with a benefit or perquisite, convertible into money or not, arising from that resident's business or profession, deducts tax on the value. Note2 covers cash, kind or mixed benefits and requires deduction before provision. Note6 additionally requires the provider to ensure the required tax has been PAID before releasing a wholly-in-kind benefit, or a mixed benefit whose cash part cannot meet the whole tax liability.
 
 | Item | Value | Note |
 | --- | --- | --- |
-| Rate on the value or aggregate value of the benefit | 10% | "10% of value or aggregate of values"; specified provider, business/profession benefit; ensure deduction before providing; https://egazette.gov.in/WriteReadData/2025/265620.pdf |
+| Rate on the value or aggregate value of the benefit | 10% | "10% of value or aggregate of values"; specified provider, business/profession benefit; ensure deduction before providing and Note6 tax paid before wholly-kind/insufficient-cash release; https://egazette.gov.in/WriteReadData/2025/265620.pdf |
 | Threshold (tax year aggregate) | INR 20,000 | "20,000"; strict exceeds, whole value after threshold; https://egazette.gov.in/WriteReadData/2025/265620.pdf |
 
 [T2] Valuation of a benefit in kind and how the payer funds the tax are for a Chartered Accountant.
@@ -247,7 +247,7 @@ A "specified person" (Step 1) that provides a resident with a benefit or perquis
 
 ### Step 7: Quarterly TDS Statement (section 397(3)(b); rule 219) [T1]
 
-The quarterly statement for the ordinary-resident deductees covered here under section 393(1) (other than serial 8(iii)) is **Form No. 140**; for an RNOR deductee, rule 219(1) Table serial 2 specifies Form No.144, so do not automatically use 140 merely because the payee is resident. The relevant general form is 140 (rule 219(1), Table serial 3). Rule 219(4) sets the due dates:
+The ordinary-resident section393(1) quarterly route (other than serial8(iii), and subject to the serial6(ii) Form141 exception) is **Form No.140**, rule219(1) Table serial3. **RNOR section393(1) form held:** serial2 names RNOR deductees but enumerates only392(7),393(2),393(3), not393(1); serial3 enumerates393(1) but excludes deductees referred to in serial2. Do not silently add393(1) to serial2 or choose140/144 without authoritative clarification. Rule219(4) sets ordinary quarterly dates:
 
 | Quarter ending | Statement due |
 | --- | --- |
@@ -326,7 +326,7 @@ A person who does not deduct, or deducts but does not pay, is an assessee in def
 
 | Item | Detail |
 | --- | --- |
-| Application | Form No. 128 (rule 213(1)), filed by the payee. From 1 April 2026 it may also be filed before the prescribed income-tax authority, which can issue or reject it on electronic verification (section 395(6), inserted by the Finance Act 2026); https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-03/En-Notified-IT-Rules-2026-20-03-2026.pdf |
+| Application | Form No. 128 (rule 213(1)), filed by the payee. From 1 April 2026 it may also be filed before the prescribed income-tax authority, which can issue or reject it on electronic verification (section 395(6), inserted by the Finance Act 2026); https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-03/En-Notified-IT-Rules-2026-20-03-2026.pdf; https://egazette.gov.in/WriteReadData/2026/271439.pdf |
 | What the officer considers | Tax on the estimated income for the year, tax on income of the last 4 tax years (in words on the page), existing liabilities, and advance tax and TDS already at the payee's credit (rule 213(3)); https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-03/En-Notified-IT-Rules-2026-20-03-2026.pdf |
 | Certificate specifies | A lower rate or no deduction; https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-03/En-Notified-IT-Rules-2026-20-03-2026.pdf |
 | Issued in the name of | The person responsible for deducting tax, under advice to the applicant; valid only for a specified payment from the specified deductor, up to the amount specified (rule 213(8)); https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-03/En-Notified-IT-Rules-2026-20-03-2026.pdf |
@@ -351,7 +351,7 @@ A person who does not deduct, or deducts but does not pay, is an assessee in def
 - Earlier credit or payment controls, including suspense accounts. For March 2026credit/Aprilpayment use the older Act; for an event on/after 1April 2026 use current law. No duplicate deduction for the same sum solely on the later event. [s.393(1),(11),536](https://egazette.gov.in/WriteReadData/2025/265620.pdf); [Tax Payments FAQ 3-6](https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/tax-payments-faq).
 - Section 393(5) also exempts amounts payable to a qualifying Central-Act corporation exempt on its income and a specified mutual fund, not merely Government/RBI; section 393(9) covers payment for/on behalf of New Pension System Trust. Check the actual statutory identity before claiming the exemption. The serial 6(i)/(iii) personal-purpose exceptions do not automatically excuse a large personal payment covered independently by serial 6(ii). [s.393(4)-(6),(9)](https://egazette.gov.in/WriteReadData/2025/265620.pdf).
 - E-commerce precedence is subject to Note 4: if serial 8(v) and VDA serial 8(vi) both apply, only 8(vi) deduction applies; send VDA to `india-crypto-tax`. Direct buyer payments for facilitated sales still count; advertising/unconnected operator services are excluded from the no-duplicate rule. A website alone does not settle operator/participant classification. [s.393(1),Notes 3-6](https://egazette.gov.in/WriteReadData/2025/265620.pdf).
-- Rule 219(1) explicitly puts an RNOR deductee in Form 144, not the ordinary Form 140 route. Serial 6(ii) transactions use Form 141 instead of a quarterly form; rule 218(3)/219(5)30 day monthly-end limit and rule 21515 day certificate limit apply. Duplicate-certificate permission in rule 215(3) lists 130/131/133, not 132. [rules 215,218,219](https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-03/En-Notified-IT-Rules-2026-20-03-2026.pdf).
+- Rule219(1) has an unresolved enumeration gap for RNOR section393(1) deductions: serial2 names RNOR but not393(1), while serial3 excludes the serial2 deductees. Hold the RNOR form pending clarification, preserving the ordinary140 route and specific exceptions. Serial 6(ii) transactions use Form 141 instead of a quarterly form; rule 218(3)/219(5)30 day monthly-end limit and rule 21515 day certificate limit apply. Duplicate-certificate permission in rule 215(3) lists 130/131/133, not 132. [rules 215,218,219](https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-03/En-Notified-IT-Rules-2026-20-03-2026.pdf).
 - The no-PAN practical rates assume the stated provision/rates-in-force do not exceed the displayed floor; use the higher of all 3, not a universal fixed 20%/5%. PAN validity/inoperative status needs period-specific confirmation. Rule 203 credit follows assessability year and proportionate multi-year allocation, not simply deduction year; other-person declarations alter credit/certificate recipient. Section 401 preserves protection for amounts actually deducted. [ss.397,401](https://egazette.gov.in/WriteReadData/2025/265620.pdf); [rule 203](https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-03/En-Notified-IT-Rules-2026-20-03-2026.pdf).
 - Interest/default time limits in s.398(5) are subject to s.398(6) importing ss.286(1),(3); do not treat the displayed 6/2 year endpoints as unconditional in extended/excluded-period cases. Section 398(4) charges unpaid deducted tax plus interest on payer assets. Payer-default relief requires all payee-return/inclusion/payment facts and accountant certificate; interest still runs to payee return date. No criminal penalty computation is provided here. [s.398](https://egazette.gov.in/WriteReadData/2025/265620.pdf).
 - Rule 245 uploads information held by the authority within 90 days from the end of the month it is received; the statement is not proof that all underlying income or deductions have been captured. [rule 245](https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-03/En-Notified-IT-Rules-2026-20-03-2026.pdf).
@@ -406,7 +406,7 @@ A person who does not deduct, or deducts but does not pay, is an assessee in def
 #### EC 10: Benefit or perquisite given to a freelancer [T2]
 
 **Situation:** A company gives a freelancer a laptop as part of the engagement.
-**Resolution:** If the company is a specified person and the year's benefits to that freelancer exceed the threshold in the Step 5 table, tax at the Step 5 rate is due on the value, and the company must ensure it was deducted before giving the benefit (Note 2 to Table serial 8). [T2] valuation for a Chartered Accountant.
+**Resolution:** If the company is a specified person and the year's benefits to that freelancer exceed the threshold in the Step 5 table, tax at the Step 5 rate is due on the value, and the company must ensure deduction before provision (Note2) and, because it is in kind, that the required tax has been PAID before release (Note6). [T2] valuation for a Chartered Accountant.
 
 ## Worked cases
 
@@ -482,7 +482,7 @@ All cases are described against the thresholds and rates in the tables above; th
 #### Test 4: Missing PAN
 
 **Input:** Professional fees above the threshold; the payee has NOT given a PAN.
-**Expected output:** Section 397(2)(b)(i): the higher of rate (b) and the no-PAN rate for "any other case", which is the no-PAN rate.
+**Expected output:** Section 397(2)(b)(i): the highest of the relevant provision rate, rates in force, and20% for this ordinary professional-fee case. With an explicit assumption that no higher rates-in-force rate applies, the result is20%.
 
 #### Test 5: Contract aggregate crossed in the fourth quarter
 
@@ -491,7 +491,7 @@ All cases are described against the thresholds and rates in the tables above; th
 
 #### Test 6: Statement and certificate timeline
 
-**Input:** TDS deducted in July, August and September.
+**Input:** Ordinary-resident deductee; only section393(1) serial6(i)/6(iii)/8(iv)/8(v) deductions, made in July, August and September.
 **Expected output:** Form No. 140 for the quarter ending 30th September is due by 31st October. Form No. 131 is due within 15 days (in words on the page) from that due date.
 
 ## When to refuse or refer
@@ -532,7 +532,7 @@ Action Required: Do not advise. Refer to Chartered Accountant. Document gap.
 
 ## Filing and payment
 
-Use the applicable current-Act form/tab and supported official statement utility for the deduction event. Deduct at the earlier credit/payment event; deposit under rule 218, furnish Form 140/144 or the Form 141 exception under rule 219, then issue the rule 215 certificate by its deadline. Retain receipt, statement acknowledgement and portal-generated certificate; reconcile PAN, period, amount, serial and credit year. Final portal field names, current extensions, filing modes and authorized account access must be confirmed before submission; these instructions do not authorize filing/payment. [rules 215,218,219](https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-03/En-Notified-IT-Rules-2026-20-03-2026.pdf).
+Use the applicable current-Act form/tab and supported official statement utility for the deduction event. Deduct at the earlier credit/payment event; deposit under rule 218, furnish ordinary Form140 or the applicable Form141 exception under rule219; hold RNOR393(1) form selection until the enumeration gap is resolved, then issue the rule 215 certificate by its deadline. Retain receipt, statement acknowledgement and portal-generated certificate; reconcile PAN, period, amount, serial and credit year. Final portal field names, current extensions, filing modes and authorized account access must be confirmed before submission; these instructions do not authorize filing/payment. [rules 215,218,219](https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-03/En-Notified-IT-Rules-2026-20-03-2026.pdf).
 
 ## Completion checklist
 
@@ -567,7 +567,7 @@ Use the applicable current-Act form/tab and supported official statement utility
 | https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-03/En-Notified-IT-Rules-2026-20-03-2026.pdf | Read for entire rules 203,213,215,218,219,245 including neighboring exclusions/other-person allocation/RNORforms/duplicatecertificates; partial neighboring 214/216 read but not new obligations inferred | 2026-11-14 |
 | https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/tax-payments-faq | Read for Q 3-6 and 14-23: earlier credit/payment event, TDStransition, current 393references/Form 168; not old-year rate guidance | 2026-11-14 |
 
-**Not yet confirmed:** aggregation across different 6(iii)fee categories; notified professions beyond the cited s.402(28)list; specific software/SaaS/mixed contracts and ordinary-meaning work classification; GST exclusion/reimbursements and current binding guidance; EC 4earlier-payment deduction/interest timing; benefit valuation and funding; inoperative-PAN consequences; disputed/missing-credit return treatment; actual current portal fields/modes/extensions; application-specific lower/nil-certificate outcomes and prescribed electronic-authority conditions; excluded-period s.398(6) time-limit cases. Preserve these as referrals, not usable unsupported tax rules. Older-Act transactions remain out of scope.
+**Not yet confirmed:** RNOR section393(1) statement form because rule219 serial2/3 enumerations conflict; aggregation across different 6(iii)fee categories; notified professions beyond the cited s.402(28)list; specific software/SaaS/mixed contracts and ordinary-meaning work classification; GST exclusion/reimbursements and current binding guidance; EC 4earlier-payment deduction/interest timing; benefit valuation and funding; inoperative-PAN consequences; disputed/missing-credit return treatment; actual current portal fields/modes/extensions; application-specific lower/nil-certificate outcomes and prescribed electronic-authority conditions; excluded-period s.398(6) time-limit cases. Preserve these as referrals, not usable unsupported tax rules. Older-Act transactions remain out of scope.
 
 This Guide and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this Guide. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
 
