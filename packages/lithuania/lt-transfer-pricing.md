@@ -1,17 +1,18 @@
 ---
 name: lt-transfer-pricing
 description: "Use this skill for Lithuanian transfer pricing (sandorių kainodara) in tax year 2026. It covers associated persons (asocijuoti asmenys) and related persons under Corporate Income Tax Law art. 2(8) and 2(33), the arm's length rule in art. 40(1) and (2), the Minister of Finance rules approved by Order No. 1K-123 (methods, the arm's length range and the median, low value-adding services at cost plus 5%, hard-to-value intangibles), documentation (master file above EUR 15 million revenue in a group, local file above EUR 3 million, the EUR 90,000 transaction exemption, 30 days to hand it over), the FR0528 related-party report, advance pricing agreements under Tax Administration Law art. 37-2, country-by-country reporting (EUR 750 million), the 5-year reassessment window, fines of 20% to 100% and late payment interest. Trigger on: transfer pricing Lithuania, kainodaros dokumentai, ištiestosios rankos principas, asocijuoti asmenys, FR0528, local file Lithuania. Out of scope: corporate tax in general (lt-corporate-income-tax), payroll (lt-payroll-social), VAT (lithuania-vat-return)."
-version: 0.1
+version: 0.3
 jurisdiction: LT
 tax_year: 2026
-last_updated: 2026-10-24
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: transfer-pricing
+type: situation-rules
 ---
 
-# Lithuania: transfer pricing (2026) v0.1
+# Lithuania: transfer pricing (2026) v0.3
 
 > **Source-cited draft.** No accountant has reviewed this skill yet. The law comes from the consolidated texts on e-tar.lt (the Register of Legal Acts) and the guidance from vmi.lt (the State Tax Inspectorate, VMI), all read on 23 October 2026. It prepares working papers; it is not authority to file or pay.
 
@@ -251,4 +252,4 @@ expected:
 
 Not yet confirmed: the text of the FR0528 form and rules that apply to 2026 returns (VMI's answer KM1402, dated 16 July 2024, cites VMI order VA-27 of 2005; a search shows VA-27 still in force in a consolidated version from 1 January 2026 as amended by order VA-78 of 4 September 2025, but that text sits behind a CAPTCHA on e-seimas.lrs.lt and was not read); whether the FR0528 EUR 90,000 total is counted per associated person or across all of them; the late payment interest rate after 31 October 2026 (it is reset each quarter); the VMI procedure, form and any fee for an APA request, and whether VMI charges for bilateral APAs; the country-by-country notification duty, the VMI filing rules and the penalty for not filing; any separate administrative fine for not preparing or not handing over TP documentation; the Minister of Finance's list of target territories in force for 2026; whether Lithuania makes a secondary adjustment (for example a deemed dividend) after a primary TP adjustment; and the procedure for a downward corresponding adjustment after a foreign adjustment.
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.

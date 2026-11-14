@@ -1,221 +1,136 @@
 ---
 name: la-income-tax
-description: Use this skill whenever asked about Louisiana individual income tax. Trigger on phrases like "Louisiana income tax", "LA income tax", "IT-540", "LDR", "R.S. 47:21", "Louisiana flat tax". Louisiana reformed to a flat 3% rate effective 2025 (Act 11 of 2024 3rd Extraordinary Session). ALWAYS load us-tax-workflow-base first.
-version: "0.1"
+description: "Louisiana 2026 resident wage and sole-proprietor income tax: federal AGI modifications, flat 3%, final indexed deductions, retirement exemption, IT-540 and estimates. Load us-tax-workflow-base first."
+version: "0.3"
 jurisdiction: US-LA
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
+category: state-tax
+type: computation
 ---
 
-# LA Income Tax
+# Louisiana individual income tax, 2026
 
-## Louisiana Individual Income Tax Skill — Self-Employed / Sole Proprietor
+> **Built from the law. Not yet approved.** Written by Codex; this version has not been reviewed by an accountant. General reference only. Under Circular 230 section 10.37, apply the cited authorities to the actual facts and obtain qualified professional review before filing or acting.
 
-> **Scope.** This skill covers Louisiana Form IT-540 (Resident Individual Income Tax Return) for sole proprietors and single-member LLCs. It addresses the flat 3% income tax rate (effective 2025), the significantly increased standard deduction, and Louisiana-specific modifications to federal AGI. It does NOT cover nonresident returns (Form IT-540B), corporate returns (CIFT-620), or partnership/S-corp pass-throughs.
+**Answer first:** Louisiana taxes resident wages and business income at 3% of state taxable income. The final 2026 standard deduction is $12,838 for single/MFS and $25,676 for MFJ/HOH/qualifying surviving spouse. These final return deductions differ from the payroll withholding amounts. [R.S.47:32](https://www.legis.la.gov/legis/Law.aspx?d=101946); [RIB26-019](https://dam.ldr.la.gov/lawspolicies/RIB%2026-019.pdf).
 
-> **Quality tier.** Q3 — AI-drafted, not independently verified. All outputs must be reviewed by a qualified tax professional before filing.
+## Scope
 
-## Section 1: Metadata
+Full-year Louisiana residents with wages, sole-proprietor or disregarded single-member LLC income, rents, gains, interest or retirement income. Use IT-540; nonresident and part-year choice/IT-540B, complex K-1 adjustments and incentive-credit work require separate review. Corporate and payroll owners are `la-corporate-tax` and `la-payroll`. Federal inputs belong to `us-schedule-c-and-se-computation`, `us-self-employed-health-insurance`, `us-self-employed-retirement`, `us-schedule-c-and-se-computation` and `us-qbi-deduction`; load those rather than restating federal amounts.
 
-**Metadata table**
+## Ask the client first
 
-| Field | Value |
-| --- | --- |
-| Jurisdiction | Louisiana (US-LA) |
-| Tax authority | [Louisiana Department of Revenue (LDR)](https://revenue.louisiana.gov/) |
-| Filing portal | [Louisiana File Online](https://revenue.louisiana.gov/EServices) |
-| Legislation | La. R.S. 47:21 et seq.; Act 11 of the 2024 Third Extraordinary Session |
-| Primary form | Form IT-540 (Louisiana Resident Individual Income Tax Return) |
-| Filing deadline | May 15, 2027 (for tax year 2026) — Louisiana uses May 15, not April 15 |
-| Version | 0.1 |
-| Date | May 22, 2026 |
-| Validation status | AI-drafted — Q3 |
+1. Full-year domicile, move dates, other-state workdays and returns; is a resident return appropriate?
+2. Federal filing status, completed federal AGI and income by wages, Schedule C, rents, K-1, gains, interest and retirement; ages and plan names?
+3. Other-state municipal bonds and acquisition dates, U.S. obligations, Social Security and state-exempt retirement amounts already included in AGI?
+4. Federal itemization and medical deduction, state depreciation elections/schedules, active-duty orders and days outside Louisiana, other state adjustments and credit evidence?
+5. Withholding, estimated payments, prior-year tax, other-state income taxes and any extension or IRS adjustment?
 
-### Sources consulted
+## The method, step by step
 
-1. Louisiana Department of Revenue — Revenue Information Bulletin 25-012 (Income Tax Reform): <https://dam.ldr.la.gov/lawspolicies/RIB-25-012-Louisiana-Individual-Income-Tax-Reform-1.pdf>
-2. LDR — 2025 IT-540 Instructions: <https://revenue.louisiana.gov/tax-forms/individuals/>
-3. EY Tax News — Louisiana flat income tax rate: <https://taxnews.ey.com/news/2024-2322-louisiana-law-implements-a-flat-personal-income-tax-rate-starting-in-2025>
-4. La. R.S. 47:32 — Tax rate
-5. Act 11 (H.B. 10) of the 2024 Third Extraordinary Session
+1. **Select the period and taxpayer.** Use the same filing status as federal. Start from federal AGI rather than federal taxable income. The completed federal Schedule C and above-the-line insurance/retirement deductions are already reflected there; do not deduct them twice. QBI is below AGI and does not itself reduce this starting point. [R.S.47:293(1),(9)](https://www.legis.la.gov/legis/Law.aspx?d=101760); [R.S.47:294](https://legis.la.gov/Legis/Law.aspx?d=101761).
+2. **Reconcile additions and subtractions.** Add other-state bond interest when required: the statutory rule distinguishes obligations acquired on/after January 1, 1980. Subtract only exempt income included in federal AGI. Federal income tax paid is **not deductible**: the former provisions were repealed in 2022. Check specific Louisiana conformity and separate depreciation adjustments before accepting federal amounts unchanged. [R.S.47:293(9)](https://www.legis.la.gov/legis/Law.aspx?d=101760). Ordinary wages, Schedule C profit, rents, gains, interest and dividends remain in the base unless an identified exclusion applies; there is no separate lower capital-gain rate.
+3. **Apply the exemptions with evidence.** Social Security and qualifying federal/railroad retirement are exempt under [R.S.47:44.2](https://legis.la.gov/legis/Law.aspx?d=102134). The opened 2025-2026 filing cycle booklet identifies U.S. obligation interest and separately exempt state-system pensions; retain the issuer/plan evidence and confirm the final 2026 adjustment code rather than subtracting all pensions. For otherwise taxable annual pension/annuity income of each recipient age 65+, the 2026 exemption is capped at $12,324. Do not exempt the same income twice. [R.S.47:44.1](https://www.legis.la.gov/legis/Law.aspx?d=102133); [RIB26-019](https://dam.ldr.la.gov/lawspolicies/RIB%2026-019.pdf); [2025 instructions, Schedule E](https://dam.ldr.la.gov/taxforms/IT540i%20WEB%282025%29D11.pdf).
+4. **Subtract the final deduction and allowable excess medical expenses.** Use the current amounts below. Prior additional age/blind/dependent exemptions were repealed. General federal itemized deductions do not replace the state deduction; R.S.47:293 allows the qualifying excess of federally deductible itemized medical expenses over the applicable federal standard deduction, subject to federal limits. The old skill's general itemize-versus-standard comparison was too broad. [R.S.47:293(3),(9)(a)(xi)](https://www.legis.la.gov/legis/Law.aspx?d=101760); [RIB25-012](https://dam.ldr.la.gov/lawspolicies/RIB-25-012-Louisiana-Individual-Income-Tax-Reform-1.pdf).
+5. **Compute and reconcile.** Taxable income = max(0, AGI + additions - exempt income - state standard deduction - qualifying excess medical deduction). Gross tax = taxable income x 0.03. Apply separately substantiated credits in their statutory order, then withholding and estimates. Other-state credit eligibility/limits are in [R.S.47:33](https://legis.la.gov/legis/Law.aspx?d=102000); collect the other return and tax proof before computing. Never treat payroll withholding as the final liability.
 
-## Section 2: Quick reference — rates and thresholds
+### Rates, bands and thresholds
 
-### State income tax rate
-
-**State income tax rate table**
-
-| Tax year | Rate | Source |
+| 2026 item | Amount or rule | Authority |
 | --- | --- | --- |
-| 2024 and prior | Graduated: 1.85% / 3.50% / 4.25% | La. R.S. 47:32 (prior law) |
-| 2025 and after | **Flat 3.00%** | Act 11 (H.B. 10, 2024 3rd Extraordinary Session) |
+| Individual rate | 3% | [R.S.47:32](https://www.legis.la.gov/legis/Law.aspx?d=101946) |
+| Standard deduction single/MFS | $12,838 | [RIB26-019](https://dam.ldr.la.gov/lawspolicies/RIB%2026-019.pdf) |
+| Standard deduction MFJ/HOH/qualifying surviving spouse | $25,676 | [RIB26-019](https://dam.ldr.la.gov/lawspolicies/RIB%2026-019.pdf) |
+| Age-65 annual retirement exemption | Up to $12,324 per eligible recipient, limited to qualifying income | [RIB26-019](https://dam.ldr.la.gov/lawspolicies/RIB%2026-019.pdf); [R.S.47:44.1](https://www.legis.la.gov/legis/Law.aspx?d=102133) |
+| Individual estimates trigger | Expected tax after credits/withholding exceeds $1,000; joint declaration exceeds $2,000 | [IT-540ESi2026 p.1](https://dam.ldr.la.gov/taxforms/IT540ESi-2026.pdf) |
 
-- **Flat rate effective date** — Effective January 1, 2025, Louisiana replaced its three-bracket graduated system with a flat 3% rate on all taxable income, for all filing statuses.  _(Act 11 (H.B. 10, 2024 3rd Extraordinary Session))_
+### Boundary table
 
-### Standard deduction (2025 tax year)
-
-**Standard deduction table**
-
-| Filing status | Amount |
+| Fact | Treatment or stopping point |
 | --- | --- |
-| Single | $12,500 |
-| Married Filing Separately | $12,500 |
-| Married Filing Jointly | $25,000 |
-| Head of Household | $25,000 |
-| Qualifying Surviving Spouse | $25,000 |
+| Military wages | The resident active-duty exclusion concerns at least 120 consecutive full-time days and compensation earned outside Louisiana, capped at $50,000 (in words on the page); do not exempt all military wages. [R.S.47:293(9)(e)](https://www.legis.la.gov/legis/Law.aspx?d=101760). |
+| State bonus depreciation | RIB25-012 describes Louisiana full-expensing elections and later federal-depreciation addbacks. Reconcile state asset basis and no duplicate deduction; fixed-date definitions and final 2026 federal conformity require specialist review. [RIB25-012 pp.2-3](https://dam.ldr.la.gov/lawspolicies/RIB-25-012-Louisiana-Individual-Income-Tax-Reform-1.pdf). |
+| Federal home office, insurance and retirement contributions | Bring the completed federal result through AGI and test Louisiana modifications; federal computation remains with the named owner skills. |
+| K-1, PTE election, purchased or industry credits | Reconcile entity-level exclusions/owner schedules; do not simply deduct the state tax as federal income tax. Refer the election, historic rehabilitation, motion-picture and enterprise-zone credit computations. |
+| Nonresident or part-year | Stop this resident computation; the opened 2025-2026 booklet uses IT-540B for nonresidents and allows part-year resident/nonresident-return comparison. Final 2026 form choice/lines must be confirmed. [2025 instructions p.2](https://dam.ldr.la.gov/taxforms/IT540i%20WEB%282025%29D11.pdf). |
+| Prior tax year | The 2025-2026 filing cycle has $12,500/$25,000 standard deductions and $12,000 retirement exemption; do not use those amounts on a 2026 estimate or final return. [RIB26-019 comparison table](https://dam.ldr.la.gov/lawspolicies/RIB%2026-019.pdf). |
 
-- **Standard deduction note** — These amounts were significantly increased by Act 11 (previously $4,500 / $9,000). Beginning January 1, 2026, the standard deduction is adjusted annually for CPI inflation.  _(Act 11)_
+## Worked cases
 
-### Personal exemptions
+### Wage earner: final deduction and withholding are different inputs
 
-- **Personal exemptions repealed** — Act 11 repealed the prior personal exemptions ($1,000 for age 65+, blind, and dependents). These are no longer available for TY2025+.  _(Act 11)_
+A single full-year resident has $60,000 federal AGI consisting only of wages, no adjustments or credits, and $1,500 Louisiana withholding. 2026 taxable income is $47,162; gross tax is $1,414.86 before whole-dollar return rounding, leaving $85.14 overpayment in this illustration. The deduction is the final indexed $12,838, not the payroll-table deduction.
 
-### Retirement income exemption
+```oa-check
+name: LA resident wage tax 2026
+inputs:
+  agi: 60000
+  withholding: 1500
+steps:
+  - taxable: max(0, agi - 12838)
+  - gross_tax: taxable * 0.03
+  - overpayment: withholding - gross_tax
+expected:
+  taxable: 47162
+  gross_tax: 1414.86
+  overpayment: 85.14
+```
 
-- **Retirement income exemption** — $12,000 USD (annual retirement income exempt for taxpayers age 65+; adjusted annually for CPI beginning in 2026)
+### Retirement exemption belongs to the eligible recipient
 
-## Section 3: How this skill works with the federal return
+A single resident age 67 has $50,000 federal AGI, including $10,000 federally taxable Social Security and $20,000 otherwise taxable qualifying pension income. No separately exempt pension, other adjustment or credit applies. Exclude $10,000 and $12,324, then subtract $12,838; taxable income is $14,838 and tax $445.14 before return rounding. A younger recipient cannot use the age-65 exemption merely because a spouse qualifies.
 
-### Starting point
+```oa-check
+name: LA age 65 retirement limit 2026
+inputs:
+  agi: 50000
+  social_security: 10000
+  pension: 20000
+steps:
+  - exempt_pension: min(pension, 12324)
+  - taxable: max(0, agi - social_security - exempt_pension - 12838)
+  - tax: taxable * 0.03
+expected:
+  exempt_pension: 12324
+  taxable: 14838
+  tax: 445.14
+```
 
-- **Starting point** — Louisiana starts from federal adjusted gross income (AGI) — Form 1040, Line 11.
+## When to refuse or refer
 
-### Additions to income
+Refer disputed domicile, IT-540B sourcing, K-1/PTE adjustments, entity credits, state/federal asset-basis differences or recent federal-law conformity that has not been researched. Do not invent a federal-tax-paid deduction, final return line number or inflation amount. The published 2026 indexed values above resolve the former inflation gap; other Sources gaps remain filing gates.
 
-**Additions to income table**
+## Filing and payment
 
-| Item | Description | Source |
+The recurring due-date rule is the fifteenth day of the fifth month, moved to the next business day when necessary. May 15, 2027 is Saturday; the ordinary weekend adjustment gives May 17, 2027 for a calendar 2026 return, subject to any subsequently announced relief. The opened **2025-2026 filing cycle** instructions allow an automatic six-month filing extension without extending payment. Use LaTAP, retain acknowledgment and apply final 2026 instructions before filing. [IT-540 instructions pp.1-4](https://dam.ldr.la.gov/taxforms/IT540i%20WEB%282025%29D11.pdf).
+
+For 2026 estimates use IT-540ES or LaTAP; regular installments are April 15, June 15, September 15, 2026 and January 15, 2027. Recompute on changed facts. Special farm/fishing and final-return payment alternatives have separate conditions in IT-540ESi; do not use them to erase earlier underpayments. Its preliminary deduction worksheet does not supersede September's final RIB26-019 amounts. [2026 estimate instructions](https://dam.ldr.la.gov/taxforms/IT540ESi-2026.pdf).
+
+### 2025-2026 filing cycle form map retained for migration
+
+The opened 2025 IT-540 booklet maps line 7 to AGI or Schedule E adjusted AGI, line 8 to the state deduction, 9A-9D to the excess medical calculation, 10 to taxable income and 11 to 3% tax. Line 12 is nonrefundable priority-1 credit; withholding/estimates and refundable priorities reconcile through later lines. The old blanket descriptions of lines 9, 12-19, 20-25 and line 30 were unreliable. **Final 2026 line numbers are not confirmed.** [IT-540 instructions pp.2-4](https://dam.ldr.la.gov/taxforms/IT540i%20WEB%282025%29D11.pdf).
+
+## Completion checklist
+
+Confirm resident status and federal owners, reconcile AGI and each adjustment, apply final 2026 amounts by recipient/status, attach credit and state-basis support, reconcile payments, and obtain review of every unresolved filing issue. Save the official source and computation with the return.
+
+## Sources
+
+| Source and reading scope | URL | Read on |
 | --- | --- | --- |
-| Out-of-state bond interest | Interest on bonds of other states must be added | La. R.S. 47:293(4) |
-| Federal income tax deducted | Louisiana historically allowed a deduction for federal taxes; under the reformed law, verify if this continues to apply | La. R.S. 47:293 |
-| IRC decoupling items | Any areas where Louisiana decouples from federal tax code changes | La. R.S. 47 |
+| R.S.47:32; read for complete individual rate, repeal and corporate cross-reference. | https://www.legis.la.gov/legis/Law.aspx?d=101946 | 2026-11-13 |
+| R.S.47:293; read for definitions and complete resident net-income modifications, repeal neighbours, military and nonresident boundaries. | https://www.legis.la.gov/legis/Law.aspx?d=101760 | 2026-11-13 |
+| R.S.47:294; read for all status groups and annual indexing. | https://legis.la.gov/Legis/Law.aspx?d=101761 | 2026-11-13 |
+| RIB26-019; read for entire final 2026 index table, comparison year and footnote. | https://dam.ldr.la.gov/lawspolicies/RIB%2026-019.pdf | 2026-11-13 |
+| R.S.47:44.1; read for retirement age/base/indexing and separate disability neighbour. | https://www.legis.la.gov/legis/Law.aspx?d=102133 | 2026-11-13 |
+| R.S.47:44.2; read for entire exemption provision. | https://legis.la.gov/legis/Law.aspx?d=102134 | 2026-11-13 |
+| R.S.47:33; read for other-state-credit conditions and limits. | https://legis.la.gov/legis/Law.aspx?d=102000 | 2026-11-13 |
+| RIB25-012; read for all nine pages, reform, repeal, state bonus election and withholding distinction. | https://dam.ldr.la.gov/lawspolicies/RIB-25-012-Louisiana-Individual-Income-Tax-Reform-1.pdf | 2026-11-13 |
+| 2025 IT-540 instructions; read for resident filing, p.2-4 return map, Schedule E exemptions and other-state-credit instructions; 2025-2026 filing cycle. | https://dam.ldr.la.gov/taxforms/IT540i%20WEB%282025%29D11.pdf | 2026-11-13 |
+| IT-540ESi2026; read for complete instructions, thresholds, special cases and worksheet. | https://dam.ldr.la.gov/taxforms/IT540ESi-2026.pdf | 2026-11-13 |
 
-### Subtractions from income
-
-**Subtractions from income table**
-
-| Item | Description | Source |
-| --- | --- | --- |
-| U.S. government interest | Interest on U.S. obligations | La. R.S. 47:293(6) |
-| Social Security benefits | Louisiana exempts Social Security | La. R.S. 47:44.2 |
-| Federal income taxes paid | Louisiana allows a deduction for federal income taxes paid (may be limited under new law — verify) | La. R.S. 47:293(3) |
-| Retirement income | Up to $12,000 for taxpayers age 65+ | La. R.S. 47:44.1 |
-| Military pay | Active-duty military compensation exclusion | La. R.S. 47:293 |
-
-### Resulting computation
-
-- **Louisiana taxable income and tax formula** — Federal AGI + additions − subtractions − standard deduction = Louisiana taxable income → times 3% = Louisiana income tax.
-
-**Important:** Louisiana has historically allowed a deduction for federal income taxes paid, which is unusual among states. Under the 2025 reform, confirm the current treatment of this deduction.
-
-## Section 4: Self-employed specific rules
-
-### Estimated tax payments
-
-- **Estimated payment requirement** — Self-employed individuals must make quarterly estimated tax payments if they expect to owe $1,000 or more.
-
-**Estimated tax payment due dates**
-
-| Voucher | Due date |
-| --- | --- |
-| 1st quarter | April 15 |
-| 2nd quarter | June 15 |
-| 3rd quarter | September 15 |
-| 4th quarter | January 15 (following year) |
-
-- **Estimated payment form** — Use Form IT-540ES for estimated payments.
-
-### Self-employment health insurance
-
-- **Self-employment health insurance treatment** — Louisiana follows federal treatment — the deduction reduces federal AGI and flows through.
-
-### Retirement contributions (SEP, SIMPLE, Solo 401(k))
-
-- **Retirement contributions treatment** — Louisiana follows federal treatment — these deductions reduce federal AGI and flow through.
-
-### Home office deduction
-
-- **Home office deduction treatment** — Louisiana follows the federal home office deduction as part of Schedule C, included in federal AGI.
-
-### QBI deduction (Section 199A)
-
-- **QBI deduction treatment** — Louisiana does not allow the federal QBI deduction because Louisiana starts from federal AGI (before the QBI deduction). The QBI deduction does not affect Louisiana taxable income.
-
-### Filing deadline
-
-- **Filing deadline** — Louisiana's individual income tax return deadline is May 15 (not April 15). This is one month later than most states.
-
-## Section 5: Tier 1 rules — deterministic
-
-**Tier 1 rules table**
-
-| Rule | Description |
-| --- | --- |
-| R-1 | Apply the flat 3% rate to Louisiana taxable income. No brackets for TY2025+. |
-| R-2 | Start from federal AGI and apply Louisiana modifications. |
-| R-3 | Subtract the standard deduction ($12,500 single/MFS; $25,000 MFJ/HoH/QSS for TY2025). |
-| R-4 | Social Security benefits are fully exempt. |
-| R-5 | U.S. government bond interest is exempt. |
-| R-6 | Retirement income exemption: up to $12,000 for age 65+. |
-| R-7 | The filing deadline is May 15, NOT April 15. |
-| R-8 | Prior personal exemptions ($1,000 for age 65+, blind, dependents) were repealed by Act 11 for TY2025+. |
-| R-9 | Standard deduction is adjusted annually for CPI beginning in TY2026. |
-
-## Section 6: Tier 2 rules — requires judgment
-
-**Tier 2 rules table**
-
-| Rule | Description |
-| --- | --- |
-| J-1 | Determine the current-year treatment of the federal income tax deduction under the reformed law. |
-| J-2 | Evaluate whether itemized deductions exceed the increased standard deduction (less likely under the new $12,500/$25,000 amounts). |
-| J-3 | Assess IRC conformity for any areas where Louisiana decouples from recent federal changes. |
-| J-4 | Determine the CPI-adjusted standard deduction and retirement exemption amounts for TY2026+. |
-| J-5 | Evaluate credit for taxes paid to other states for multi-state taxpayers. |
-
-## Section 7: Supplier pattern library
-
-**Supplier pattern library table**
-
-| Pattern | Louisiana treatment |
-| --- | --- |
-| Freelance income (Schedule C) | Flows through federal AGI → LA taxable income. Subject to flat 3% state tax. |
-| Rental income (Schedule E) | Flows through federal AGI → LA taxable income. Subject to flat 3%. |
-| Capital gains | Fully taxable at the flat 3% rate. |
-| Interest / dividends | Taxable except U.S. government obligations (exempt). |
-| Social Security | Fully exempt. |
-| Retirement distributions | Up to $12,000 exempt for age 65+; remainder taxable at 3%. |
-
-## Section 8: Form mapping
-
-**Form mapping table**
-
-| Form IT-540 line | Description | Source |
-| --- | --- | --- |
-| Line 7 | Federal AGI (Form 1040, Line 11) | Federal return |
-| Line 8 | Louisiana standard deduction ($12,500 or $25,000) | La. R.S. 47:293; Act 11 |
-| Line 9 | Adjustments and modifications | La. R.S. 47:293 |
-| Line 10 | Louisiana taxable income | Computed |
-| Line 11 | Louisiana income tax (Line 10 × 3%) | La. R.S. 47:32 (as amended) |
-| Lines 12–19 | Credits (nonrefundable and refundable) | Various |
-| Lines 20–25 | Payments, withholding, estimated payments | Various |
-| Line 30 | Balance due or refund | Computed |
-
-## Section 9: Refusal catalogue
-
-**Refusal catalogue table**
-
-| Code | Situation | Action |
-| --- | --- | --- |
-| REF-LA-01 | Taxpayer is a nonresident or part-year resident | Refuse; requires Form IT-540B. |
-| REF-LA-02 | Taxpayer has complex federal income tax deduction computations | Flag for reviewer — interaction between federal and state deductions requires specialist analysis. |
-| REF-LA-03 | Taxpayer has partnership or S-corp K-1 with Louisiana-specific adjustments | Flag for reviewer. |
-| REF-LA-04 | Taxpayer claims complex credits (e.g., LA Historic Rehabilitation, Motion Picture, Enterprise Zone) | Flag for reviewer — separate forms required. |
-| REF-LA-05 | Taxpayer needs CPI-adjusted amounts for TY2026+ | Flag for reviewer — confirm published inflation-adjusted figures. |
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional before filing or acting upon.
+Not yet confirmed: final 2026 IT-540/IT-540B line numbers and adjustment codes, final 2026 conformity to later federal changes, credit-specific eligibility and depreciation election computations. The 2025-2026 filing cycle procedures are retained as dated evidence, not extrapolated forms. Legacy 2024 graduated rates, prior $4,500/$9,000 deductions and the former additional $1,000 exemptions are historical topics only and not supplied as current rules. Exact 2026 extended filing date and disaster relief were not confirmed.

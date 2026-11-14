@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/no-transfer-pricing"
   jurisdiction: "NO"
   tax_year: "2026"
-  last_updated: "2026-10-30"
+  last_updated: "2026-11-14"
 ---
 
-# Norway transfer pricing (2026) v0.4
+# Norway transfer pricing (2026) v0.5
 
 Income year 2026. Currency: Norwegian kroner (NOK). Authority: Skatteetaten. Statutes: Skatteloven (Taxation Act, lov 26 March 1999 nr. 14, "sktl.") § 13-1; Skatteforvaltningsloven (Tax Administration Act, lov 27 May 2016 nr. 14, "sktfvl.") §§ 8-11, 8-12, 12-6, 14-1 to 14-6; Skatteforvaltningsforskriften (forskrift 23 November 2016 nr. 1360, "sktfvf.") §§ 8-11-1 to 8-11-16 and 8-12-1 to 8-12-7. See Sources.
 
@@ -43,21 +43,21 @@ See also: [no-corporate-income-tax](no-corporate-income-tax.md) (corporate rate 
 | Item | Amount | Year | Source |
 |---|---|---|---|
 | Related-party test | At least 50% ownership or control, direct or indirect | 2026 | sktfvl. § 8-11 fourth paragraph; https://lovdata.no/lov/2016-05-27-14/§8-11 |
-| Exemption from the statement and documentation: controlled transactions | Total fair value under NOK 10,000,000 in the period, AND | 2026 | sktfvf. § 8-11-1 first paragraph letter a; https://lovdata.no/forskrift/2016-11-23-1360/§8-11-1 |
-| Exemption: balances with related parties | Under NOK 25,000,000 at the end of the period (all receivables, debts and guarantees) | 2026 | sktfvf. § 8-11-1 first paragraph letter b |
-| Small-group exemption from documentation only | Fewer than 250 employees with related parties, AND sales income not over NOK 400,000,000 OR balance sheet total not over NOK 350,000,000 | 2026 | sktfvl. § 8-11 third paragraph |
-| Carve-outs from the small-group exemption | Dealings with related parties in a state from which Norway cannot demand information under a treaty; taxpayers under petroleumsskatteloven § 5 | 2026 | sktfvl. § 8-11 third paragraph, second and third sentences |
-| Time to produce documentation | 45 days after the request, counted at the earliest from the tax return deadline | 2026 | sktfvl. § 8-11 second paragraph; sktfvf. § 8-11-15 first paragraph |
-| Comparability analysis or database study on request | 60 to 90 days | 2026 | sktfvf. § 8-11-15 second paragraph |
-| Retention | At least ten years after the end of the tax period | 2026 | sktfvl. § 8-11 second paragraph |
-| Documentation languages | Norwegian, Swedish, Danish or English | 2026 | sktfvf. § 8-11-16 first paragraph |
+| Exemption from the statement and documentation: controlled transactions | Total fair value under NOK 10,000,000 in the period (in words on the page), AND | 2026 | sktfvf. § 8-11-1 first paragraph letter a; https://lovdata.no/forskrift/2016-11-23-1360/§8-11-1 |
+| Exemption: balances with related parties | Under NOK 25,000,000 (in words on the page) at the end of the period (all receivables, debts and guarantees) | 2026 | sktfvf. § 8-11-1 first paragraph letter b; https://lovdata.no/forskrift/2016-11-23-1360/§8-11-1 |
+| Small-group exemption from documentation only | Fewer than 250 employees with related parties, AND sales income not over NOK 400,000,000 OR balance sheet total not over NOK 350,000,000 (in words on the page) | 2026 | sktfvl. § 8-11 third paragraph; https://lovdata.no/lov/2016-05-27-14/§8-11 |
+| Carve-outs from the small-group exemption | Dealings with related parties in a state from which Norway cannot demand information under a treaty; taxpayers under petroleumsskatteloven § 5 | 2026 | sktfvl. § 8-11 third paragraph, second and third sentences; https://lovdata.no/lov/2016-05-27-14/§8-11 |
+| Time to produce documentation | 45 days after the request, counted at the earliest from the tax return deadline | 2026 | sktfvl. § 8-11 second paragraph; sktfvf. § 8-11-15 first paragraph; https://lovdata.no/lov/2016-05-27-14/§8-11 |
+| Comparability analysis or database study on request | 60 to 90 days | 2026 | sktfvf. § 8-11-15 second paragraph; https://lovdata.no/forskrift/2016-11-23-1360/§8-11-15 |
+| Retention | At least ten years after the end of the tax period | 2026 | sktfvl. § 8-11 second paragraph; https://lovdata.no/lov/2016-05-27-14/§8-11 |
+| Documentation languages | Norwegian, Swedish, Danish or English | 2026 | sktfvf. § 8-11-16 first paragraph; https://lovdata.no/forskrift/2016-11-23-1360/§8-11-16 |
 | Corporate tax rate on an upward adjustment | 22%; 25% for companies that pay financial activity tax on wages (finansskatt på lønn) | 2026 | Forskuddsutskrivingen 2026 (skatt til staten for selskaper, ssv. § 3-3); https://www.skatteetaten.no/rettskilder/type/uttalelser/uttalelser/forskuddsutskrivingen-2026/ |
 | Country-by-country report threshold | Group revenue of NOK 6,500,000,000 or more in the year before the reporting year | 2026 | sktfvl. § 8-12 fourth paragraph; https://lovdata.no/lov/2016-05-27-14/§8-12 |
-| Country-by-country report deadline and language | 12 months after the end of the financial year; in English | 2026 | sktfvf. § 8-12-7; sktfvl. § 8-12 fifth paragraph |
-| Additional tax | 20% of the tax advantage | 2026 | sktfvl. § 14-5 first paragraph |
-| Aggravated additional tax | A further 20% or 40% (wilful or grossly negligent) | 2026 | sktfvl. § 14-6 third paragraph |
-| Coercive fine for a missing statement | Half a court fee per day (NOK 672.50), total at most 50 court fees (NOK 67,250) | 2026 | sktfvl. § 14-1; sktfvf. § 14-1-1 first paragraph; court fee NOK 1,345 from 1 January 2026 (rettsgebyrloven § 1, note 1) |
-| Change window | 5 years after the end of the tax period; 10 years with aggravated additional tax | 2026 | sktfvl. § 12-6 first and second paragraphs |
+| Country-by-country report deadline and language | 12 months after the end of the financial year; in English | 2026 | sktfvf. § 8-12-7; sktfvl. § 8-12 fifth paragraph; https://lovdata.no/lov/2016-05-27-14/§8-12 |
+| Additional tax | 20% of the tax advantage | 2026 | sktfvl. § 14-5 first paragraph; https://lovdata.no/lov/2016-05-27-14/§14-5 |
+| Aggravated additional tax | A further 20% or 40% (wilful or grossly negligent) | 2026 | sktfvl. § 14-6 third paragraph; https://lovdata.no/lov/2016-05-27-14/§14-6 |
+| Coercive fine for a missing statement | Half a court fee per day (NOK 672.50), total at most 50 court fees (NOK 67,250, computed) | 2026 | sktfvl. § 14-1; sktfvf. § 14-1-1 first paragraph; court fee NOK 1,345 from 1 January 2026 (rettsgebyrloven § 1, note 1); https://lovdata.no/forskrift/2016-11-23-1360/§14-1-1; https://lovdata.no/lov/1982-12-17-86/§1 |
+| Change window | 5 years after the end of the tax period; 10 years with aggravated additional tax | 2026 | sktfvl. § 12-6 first and second paragraphs; https://lovdata.no/lov/2016-05-27-14/§12-6 |
 
 The two § 8-11-1 tests are cumulative: a company is exempt only if both are under the limits. Reaching NOK 10,000,000 of transactions or NOK 25,000,000 of balances (not "under") brings the company into both duties, unless the small-group exemption then removes the documentation duty. Where a municipality or county is a related owner under § 8-11 sixth paragraph, those transactions and balances count towards the limits (sktfvf. § 8-11-1 second paragraph).
 
@@ -88,7 +88,7 @@ The two § 8-11-1 tests are cumulative: a company is exempt only if both are und
 |---|---|---|---|
 | Controlled-transaction statement | Companies not exempt under § 8-11-1 | With the tax return: end of May after the tax period for companies under sktl. § 2-2 first paragraph (31 May 2027 for income year 2026) | sktfvl. § 8-11 first paragraph; sktfvf. § 8-2-3 first paragraph letter a |
 | Documentation | Companies not exempt | Kept ready; produced within 45 days of a request, counted at the earliest from the return deadline | sktfvl. § 8-11 second paragraph; sktfvf. §§ 8-11-14, 8-11-15 |
-| Comparability analysis or database study | On request after review | 60 to 90 days, as set in the request | sktfvf. § 8-11-15 second paragraph |
+| Comparability analysis or database study | On request after review | 60 to 90 days, as set in the request | sktfvf. § 8-11-15 second paragraph; https://lovdata.no/forskrift/2016-11-23-1360/§8-11-15 |
 | Country-by-country report | Norwegian ultimate parent with group revenue of NOK 6.5bn or more; another Norwegian group company in the § 8-12 second paragraph cases | 12 months after the end of the financial year | sktfvl. § 8-12; sktfvf. § 8-12-7 |
 | CbC notification | Every Norwegian group company of a reporting group | Which company files, and where | sktfvl. § 8-12 third paragraph |
 
@@ -199,4 +199,4 @@ Not yet confirmed: the form number and filing channel for the controlled-transac
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-30. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `no-transfer-pricing` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/no-transfer-pricing. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `no-transfer-pricing` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/no-transfer-pricing. If neither is available, confirm every figure against the official source pages cited above before relying on it.

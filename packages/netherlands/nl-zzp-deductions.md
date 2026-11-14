@@ -1,16 +1,17 @@
 ---
 name: nl-zzp-deductions
 description: "Dutch business-profit reliefs for a self-employed individual (zzp'er, eenmanszaak, partner in a vof or maatschap) for tax year 2026, under Wet IB 2001 chapter 3. Covers the hours test (urencriterium, 1,225 hours), the 2026 zelfstandigenaftrek (EUR 1,200) and startersaftrek (EUR 2,123), the profit cap and nine-year carry-forward, meewerkaftrek, S&O-aftrek, startersaftrek bij arbeidsongeschiktheid, stakingsaftrek, the 12.7% MKB-winstvrijstelling, the KIA table and disinvestment, the closed FOR, starter free depreciation, the capped benefit rate (tariefsaanpassing, 37.56%), mixed costs and the car addition, and filing by 1 May. Trigger on: zelfstandigenaftrek, startersaftrek, urencriterium, MKB-winstvrijstelling, KIA, oudedagsreserve, zzp deductions, Dutch freelancer tax relief. Out of scope: the full box 1 bill and credits (nl-income-tax), personal deductions (nl-deductions), company cars in payroll (nl-company-car), a bv (nl-corporate-tax)."
-version: 2.2
+version: 2.3
 jurisdiction: NL
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-14
 depends_on:
   - income-tax-workflow-base
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
+type: computation
 ---
 
 # Netherlands: self-employed deductions and business reliefs (2026)
@@ -32,15 +33,15 @@ This skill takes a self-employed person's fiscal profit and works out the relief
 | Item | Rate or amount | Year | Source |
 |---|---|---|---|
 | Urencriterium: minimum business hours in the calendar year (no pro-rating for a part year) | 1,225 hours | 2026 | Wet IB 2001 art. 3.6(1), https://wetten.overheid.nl/BWBR0011353/2026-02-21 ; https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/inkomstenbelasting_voor_ondernemers/voorwaarden_urencriterium |
-| Pregnancy: unworked hours that still count | the period of employee pregnancy and maternity leave (16 weeks on the Belastingdienst page) | 2026 | art. 3.6(5); same Belastingdienst page |
+| Pregnancy: unworked hours that still count | the period of employee pregnancy and maternity leave (16 weeks on the Belastingdienst page) | 2026 | art. 3.6(5); same Belastingdienst page; https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/inkomstenbelasting_voor_ondernemers/voorwaarden_urencriterium |
 | Zelfstandigenaftrek, below state pension (AOW) age at 1 January | EUR 1,200 | 2026 | art. 3.76(2), https://wetten.overheid.nl/BWBR0011353/2026-02-21 ; https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/veranderingen-inkomstenbelasting-2026/ondernemersaftrek-2026/zelfstandigenaftrek-2026 |
 | Zelfstandigenaftrek (for a 2025 return) | EUR 2,470 | 2025 | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/verandering_inkomstenbelasting_vorige_jaren/veranderingen-inkomstenbelasting-2025/ondernemersaftrek-2025/zelfstandigenaftrek-2025 |
 | Startersaftrek (added to the zelfstandigenaftrek) | EUR 2,123 | 2026 (also 2025) | art. 3.76(3); zelfstandigenaftrek-2026 page above Source: https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/veranderingen-inkomstenbelasting-2026/ondernemersaftrek-2026/zelfstandigenaftrek-2026 (tax year 2026) (read 2026-10-31) |
-| Zelfstandigenaftrek and startersaftrek at or above AOW age on 1 January | 50% (EUR 600 and EUR 1,062) | 2026 | art. 3.76(4); https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/ondernemersaftrek_en_investeringsaftrek |
+| Zelfstandigenaftrek and startersaftrek at or above AOW age on 1 January | 50% (EUR 600 and EUR 1,062) | 2026 | art. 3.76(4); https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/ondernemersaftrek_en_investeringsaftrek ; https://wetten.overheid.nl/BWBR0011353/2026-01-01 |
 | Carry-forward of unused zelfstandigenaftrek | 9 years, oldest first | 2026 | art. 3.76(5) to (8) Source: https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/veranderingen-inkomstenbelasting-2026/ondernemersaftrek-2026/zelfstandigenaftrek-2026 (tax year 2026) (read 2026-10-31) |
 | Aftrek speur- en ontwikkelingswerk (S&O), with at least 500 S&O hours | EUR 15,979 | 2026 | art. 3.77(1); Fiscale informatie 2026 ch. 8.3 Source: https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/ondernemersaftrek_en_investeringsaftrek (tax year 2026) (read 2026-10-31) |
 | S&O starter increase | EUR 7,996 | 2026 | art. 3.77(2) Source: https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/ondernemersaftrek_en_investeringsaftrek (tax year 2026) (read 2026-10-31) |
-| Meewerkaftrek, partner works 525 to under 875 / 875 to under 1,225 / 1,225 to under 1,750 / 1,750 or more hours | 1.25% / 2% / 3% / 4% of profit | 2026 | art. 3.78(2) |
+| Meewerkaftrek, partner works 525 to under 875 / 875 to under 1,225 / 1,225 to under 1,750 / 1,750 or more hours | 1.25% / 2% / 3% / 4% of profit | 2026 | art. 3.78(2); https://wetten.overheid.nl/BWBR0011353/2026-01-01 |
 | Partner pay: deductible only if the pay is at least | EUR 5,000 | 2026 | art. 3.16(4); https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/inkomstenbelasting_voor_ondernemers/arbeidsbeloning_aan_fiscale_partner |
 | Startersaftrek bij arbeidsongeschiktheid (reduced hours test 800 hours), by prior uses 0 / 1 / 2 | EUR 12,000 / 8,000 / 4,000, capped at profit | 2026 | art. 3.78a(3), (4) Source: https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/ondernemersaftrek_en_investeringsaftrek (tax year 2026) (read 2026-10-31) |
 | Stakingsaftrek (lifetime maximum, less earlier use) | EUR 3,630 | 2026 | art. 3.79(2), (4) Source: https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/ondernemersaftrek_en_investeringsaftrek (tax year 2026) (read 2026-10-31) |
@@ -54,12 +55,12 @@ This skill takes a self-employed person's fiscal profit and works out the relief
 | KIA: above EUR 398,236 | nil | 2026 | art. 3.41(2) Source: https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/veranderingen-inkomstenbelasting-2026/investeringsaftrek-2026/kleinschaligheidsinvesteringsaftrek-2026 (tax year 2026) (read 2026-10-31) |
 | KIA for a 2025 return | 28% from EUR 2,901 to EUR 70,602; EUR 19,769 to EUR 130,744; then less 7.56% of the excess; nil above EUR 392,230 | 2025 | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/verandering_inkomstenbelasting_vorige_jaren/veranderingen-inkomstenbelasting-2025/investeringsaftrek-2025/kleinschaligheidsinvesteringsaftrek-2025 |
 | KIA: minimum per asset | EUR 450 | 2026 | art. 3.45(2)(b) Source: https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/ondernemersaftrek_en_investeringsaftrek (tax year 2026) (read 2026-10-31) |
-| Starter free depreciation (willekeurige afschrijving): ceiling on the year's qualifying investment | EUR 398,236 (the top of the KIA table) | 2026 | Uitvoeringsregeling willekeurige afschrijving 2001 art. 7, 8, https://wetten.overheid.nl/BWBR0012035/2025-01-01 ; art. 3.41(2) |
-| Disinvestment addition: disposals in the year above, within 5 years | EUR 2,900 | 2026 | art. 3.47(1), (2) |
-| Fiscale oudedagsreserve (FOR): new additions | none since 1 January 2023 | 2026 | art. 3.67 (repealed 1 January 2023); art. 10a.29 |
+| Starter free depreciation (willekeurige afschrijving): ceiling on the year's qualifying investment | EUR 398,236 (the top of the KIA table) | 2026 | Uitvoeringsregeling willekeurige afschrijving 2001 art. 7, 8, https://wetten.overheid.nl/BWBR0012035/2025-01-01 ; art. 3.41(2) ; https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/veranderingen-inkomstenbelasting-2026/investeringsaftrek-2026/kleinschaligheidsinvesteringsaftrek-2026 |
+| Disinvestment addition: disposals in the year above, within 5 years | EUR 2,900 | 2026 | art. 3.47(1), (2); https://wetten.overheid.nl/BWBR0011353/2026-01-01 |
+| Fiscale oudedagsreserve (FOR): new additions | none since 1 January 2023 | 2026 | art. 3.67 (repealed 1 January 2023); art. 10a.29; https://wetten.overheid.nl/BWBR0011353/2026-01-01 |
 | Mixed costs (food, drink, entertainment, congresses): non-deductible threshold, or elect 80% deductible | EUR 5,700, or 80% | 2026 | art. 3.15(1), (5); https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/veranderingen-inkomstenbelasting-2026/drempel-beperkt-aftrekbare-kosten-2026 |
 | Business use of a privately owned or privately rented vehicle (car, motorbike, bike) | EUR 0.23 per km in the law in force; the Belastingplan 2027 bill raises it to EUR 0.25 back to 1 January 2026, and the Belastingdienst page already says EUR 0.25 | 2026 | art. 3.15(6), 3.17(1)(b); Kamerstuk 37022 nr. 2, art. I parts C and D, art. LXIII(1)(a), https://zoek.officielebekendmakingen.nl/kst-37022-2.html ; https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/veranderingen-inkomstenbelasting-2026/zakelijk-gebruik-privevervoermiddel-2026 |
-| Business car used privately: minimum addition to profit | 22% of the car's value (35% if first used more than 16 years ago); none if private use is 500 km or less a year | 2026 | art. 3.20(1) |
+| Business car used privately: minimum addition to profit | 22% of the car's value (35% if first used more than 16 years ago); none if private use is 500 km or less a year | 2026 | art. 3.20(1); https://wetten.overheid.nl/BWBR0011353/2026-01-01 |
 | Assessment threshold (aanslaggrens): no assessment unless tax due exceeds prepaid tax by more than | EUR 58 | 2026 | art. 9.4(1)(a), https://wetten.overheid.nl/BWBR0011353/2026-02-21 |
 | Tax interest (belastingrente), income tax | 5% | from 1 January 2026 | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/standaard_functies/prive/contact/rechten_en_plichten_bij_de_belastingdienst/belastingrente/overzicht_percentages_belastingrente |
 | Default penalty for a late income tax return | EUR 469, up to EUR 6,709 | 2026 | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/standaard_functies/prive/contact/rechten_en_plichten_bij_de_belastingdienst/boete |

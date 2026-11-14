@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/sj-svalbard-payroll-tax"
   jurisdiction: "SJ"
   tax_year: "2026"
-  last_updated: "2026-11-01"
+  last_updated: "2026-11-14"
 ---
 
-# Svalbard: payroll withholding in 2026 v0.3
+# Svalbard: payroll withholding in 2026 v0.4
 
 > **Source-cited draft.** Tax year 2026, checked 24 October 2026. General reference for working papers; a qualified professional must review the facts and filing position. Independent AI review does not confer accountant review.
 
@@ -23,7 +23,7 @@ Employers paying remuneration within [Svalbard Act §§2-1, 2-2, 3-1 and 5-2](ht
 | Item | 2026 amount | Official source |
 |---|---:|---|
 | Income tax on gross band income | 8% through 12 G; 22% above | [Act §3-1](https://lovdata.no/dokument/NL/lov/1996-11-29-68); [decision §3(a)](https://lovdata.no/dokument/STV/forskrift/2025-12-19-2780) |
-| Annual band | 12 × NOK 136,549 = NOK 1,638,588 | [Act §3-1, last G fixed for year](https://lovdata.no/dokument/NL/lov/1996-11-29-68); [NAV](https://www.nav.no/grunnbelopet) |
+| Annual band | 12 × NOK 136,549 = NOK 1,638,588 (computed) | [Act §3-1, last G fixed for year](https://lovdata.no/dokument/NL/lov/1996-11-29-68); [NAV](https://www.nav.no/grunnbelopet) |
 | Youth qualifying earnings allowance | NOK 100,000; age 13–19 at year end | [Act §3-3](https://lovdata.no/dokument/NL/lov/1996-11-29-68); [2026 wage guidance](https://www.skatteetaten.no/person/skatt/hjelp-til-riktig-skatt/svalbard/skatt-lonn/) |
 | Ordinary salary insurance / pension insurance | 7.6% / 5.1%, subject to membership and statutory class | [2026 contribution decision §§6–7](https://lovdata.no/dokument/STV/forskrift/2025-12-18-2748); [National Insurance Act §23-3](https://lovdata.no/dokument/NL/lov/1997-02-28-19/KAPITTEL_8) |
 | Employer contribution in statutory Svalbard cases | 0% | [2026 contribution decision §3](https://lovdata.no/dokument/STV/forskrift/2025-12-18-2748) |
@@ -152,4 +152,4 @@ Not yet confirmed: None for the ordinary imported allowances and statutory claim
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-01. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `sj-svalbard-payroll-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/sj-svalbard-payroll-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `sj-svalbard-payroll-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/sj-svalbard-payroll-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

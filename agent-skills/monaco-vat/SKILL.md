@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/monaco-vat"
   jurisdiction: "MC"
   tax_year: "2026"
-  last_updated: "2026-10-27"
+  last_updated: "2026-11-14"
 ---
 
-# Monaco VAT v2.3
+# Monaco VAT v2.5
 
 > **Source-cited draft.** Checked 25 October 2026. No named Monaco professional has reviewed this Guide. It produces a working paper, not a filing or a final tax position. Read the [country gap register](README.md) before use.
 
@@ -146,8 +146,8 @@ expected:
 
 **Not yet confirmed:** special margin/travel/online schemes, development property and the detailed classification of specialised reduced-rate products; these require their own primary-law analysis. Ordinary rates, input coefficients, trade and filing methods above do not establish eligibility for those schemes. Version 2.3 builds on the retained correction of the earlier unsourced Nice route and bank-name defaults.
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-27. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `monaco-vat` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/monaco-vat. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `monaco-vat` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/monaco-vat. If neither is available, confirm every figure against the official source pages cited above before relying on it.

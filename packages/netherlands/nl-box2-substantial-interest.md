@@ -1,16 +1,17 @@
 ---
 name: nl-box2-substantial-interest
 description: "Dutch box 2 (aanmerkelijk belang) for tax year 2026: income tax on a resident individual's substantial interest of 5% or more in a company. Covers who has a substantial interest (the 5% test with a fiscal partner, the family pull-in rule or meetrekregeling), regular benefits such as dividends, disposal benefits from a sale and deemed disposals (emigration, death, liquidation, falling below 5%), the acquisition price, the 2026 rates of 24.5% up to EUR 68,843 and 31% above, splitting box 2 income between fiscal partners, loss relief and the loss tax credit, the EUR 500,000 excessive borrowing rule, roll-overs and payment deferral, and the combined burden with corporate tax. Trigger on: box 2, aanmerkelijk belang, DGA dividend, verkoop aandelen bv, excessief lenen, ab-verlies. Out of scope: box 1 and box 3 (nl-income-tax), DGA salary (nl-payroll-tax), the BV's own tax (nl-corporate-tax), emigration detail (nl-cross-border)."
-version: 0.2
+version: 0.3
 jurisdiction: NL
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+type: computation
 ---
 
-# Netherlands: box 2, income from a substantial interest (2026) v0.2
+# Netherlands: box 2, income from a substantial interest (2026) v0.3
 
 > **Source-cited draft.** No accountant has reviewed this skill yet. Every figure below comes from wetten.overheid.nl or belastingdienst.nl, read on 22 October 2026. It prepares working papers; it is not authority to file or pay.
 
@@ -50,9 +51,9 @@ Box 2 taxes what an individual gets out of a company in which they hold a substa
 | Box 2 rate, second band | €16,866 plus 31% of the excess over €68,843 | 2026 | same; [Belastingdienst, Box 2](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/inkomstenbelasting/heffingskortingen_boxen_tarieven/boxen_en_tarieven/box_2/) |
 | Box 2 band, earlier years | €67,804 (2025), €67,000 (2024, when the top rate was 33%) | 2025, 2024 | [Belastingdienst, Box 2](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/inkomstenbelasting/heffingskortingen_boxen_tarieven/boxen_en_tarieven/box_2/) |
 | Fiscal partners | The band is per person. Partners who are partners for the whole year, or who choose to be treated as partners for the whole year, split their joint box 2 income in any ratio that totals 100%, so each can use their own €68,843 band | 2026 | Wet IB 2001 art. 2.17(2), (5)(b), (7); [Fiscale informatie 2026, ch. 14.3.1](https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/aanmerkelijk_belang) |
-| Substantial interest threshold | 5% of issued capital, a class of shares, profit rights or votes | 2026 | Wet IB 2001 arts. 4.6, 4.7 |
+| Substantial interest threshold | 5% of issued capital, a class of shares, profit rights or votes | 2026 | Wet IB 2001 arts. 4.6, 4.7; https://wetten.overheid.nl/BWBR0011353/2026-01-01 |
 | Excessive borrowing threshold | Debts to own companies above €500,000 at 31 December are a deemed regular benefit; the threshold rises by amounts already taxed | 2026 | Wet IB 2001 arts. 4.13(1)(f), 4.14a; [Belastingdienst, Excessief lenen](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/werk_en_inkomen/bijzondere_situaties/geld_lenen_van_uw_bv/excessief-lenen-van-bv-beperkt) |
-| Deemed return on low-taxed investment companies | 6% a year of the value at 1 January, less actual regular benefits, at least nil | 2026 | Wet IB 2001 arts. 4.13(1)(a), 4.14(1) |
+| Deemed return on low-taxed investment companies | 6% a year of the value at 1 January, less actual regular benefits, at least nil | 2026 | Wet IB 2001 arts. 4.13(1)(a), 4.14(1); https://wetten.overheid.nl/BWBR0011353/2026-01-01 |
 | Loss carry-back and carry-forward | Back 1 year, forward 6 years (losses from 2018 or earlier: 9 years forward) | 2026 | Wet IB 2001 art. 4.49(1); [Belastingdienst, Verlies uit aanmerkelijk belang](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/vermogen_en_aanmerkelijk_belang/aanmerkelijk_belang/verlies_uit_aanmerkelijk_belang/) |
 | Loss tax credit after the interest ends | 24.5% of the unrelieved box 2 loss (the first-band rate in art. 2.12), set against box 1 tax and national insurance contributions | 2026 | Wet IB 2001 arts. 4.53(2), 2.11a(2); [Belastingdienst, Verlies omzetten in belastingkorting](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/vermogen_en_aanmerkelijk_belang/aanmerkelijk_belang/verlies_uit_aanmerkelijk_belang/verlies_omzetten_in_belastingkorting) |
 | Usual salary (gebruikelijk loon) reference | At least the highest of the most comparable job, the best-paid employee, and €58,000 (€56,000 in 2025 and 2024) | 2026 | [Belastingdienst, Loon en aanmerkelijk belang](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/vermogen_en_aanmerkelijk_belang/aanmerkelijk_belang/loon_en_aanmerkelijk_belang/) |
@@ -241,17 +242,17 @@ expected:
 | Invorderingswet 1990, art. 25(9) to (11) (version valid 1 January 2026) | https://wetten.overheid.nl/BWBR0004770/2026-01-01 | 2026-10-22 |
 | Uitvoeringsregeling Invorderingswet 1990, arts. 3 and 3a (version valid 1 January 2026) | https://wetten.overheid.nl/BWBR0004766/2026-01-01 | 2026-10-22 |
 | Algemene wet inzake rijksbelastingen, arts. 67a, 67d, 67e (version valid 1 January 2026) | https://wetten.overheid.nl/BWBR0002320/2026-01-01 | 2026-10-22 |
-| Belastingdienst, Fiscale informatie 2026, ch. 14 Aanmerkelijk belang | https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/aanmerkelijk_belang | 2026-10-22 |
+| Belastingdienst, Fiscale informatie 2026, ch. 14 Aanmerkelijk belang. Read for the 2026 box 2 rates and bands. | https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/aanmerkelijk_belang | 2026-10-22 |
 | Belastingdienst, Box 2: uitleg en tarieven | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/inkomstenbelasting/heffingskortingen_boxen_tarieven/boxen_en_tarieven/box_2/ | 2026-10-22 |
-| Belastingdienst, Wanneer hebt u een aanmerkelijk belang? | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/vermogen_en_aanmerkelijk_belang/aanmerkelijk_belang/wanneer_hebt_u_een_aanmerkelijk_belang/ | 2026-10-22 |
-| Belastingdienst, Inkomsten uit aanmerkelijk belang | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/vermogen_en_aanmerkelijk_belang/aanmerkelijk_belang/inkomsten_uit_aanmerkelijk_belang/ | 2026-10-22 |
-| Belastingdienst, Verlies uit aanmerkelijk belang | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/vermogen_en_aanmerkelijk_belang/aanmerkelijk_belang/verlies_uit_aanmerkelijk_belang/ | 2026-10-22 |
-| Belastingdienst, Verlies omzetten in belastingkorting | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/vermogen_en_aanmerkelijk_belang/aanmerkelijk_belang/verlies_uit_aanmerkelijk_belang/verlies_omzetten_in_belastingkorting | 2026-10-22 |
-| Belastingdienst, Loon en aanmerkelijk belang | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/vermogen_en_aanmerkelijk_belang/aanmerkelijk_belang/loon_en_aanmerkelijk_belang/ | 2026-10-22 |
-| Belastingdienst, Excessief lenen van bv beperkt vanaf 2023 | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/werk_en_inkomen/bijzondere_situaties/geld_lenen_van_uw_bv/excessief-lenen-van-bv-beperkt | 2026-10-22 |
-| Belastingdienst, Vanaf wanneer kan ik een voorlopige aanslag aanvragen of wijzigen? | https://www.belastingdienst.nl/wps/wcm/connect/nl/voorlopige-aanslag/content/vanaf-wanneer-een-voorlopige-aanslag-aanvragen-of-wijzigen | 2026-10-22 |
-| Belastingdienst, Tot wanneer kan ik een voorlopige aanslag aanvragen of wijzigen? | https://www.belastingdienst.nl/wps/wcm/connect/nl/voorlopige-aanslag/content/tot-wanneer-voorlopige-aanslag-aanvragen-wijzigen | 2026-10-22 |
-| Belastingdienst, Overzicht percentages belastingrente | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/standaard_functies/prive/contact/rechten_en_plichten_bij_de_belastingdienst/belastingrente/overzicht_percentages_belastingrente | 2026-10-22 |
-| Belastingdienst, Invorderingsrente | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/standaard_functies/prive/contact/rechten_en_plichten_bij_de_belastingdienst/invorderingsrente | 2026-10-22 |
+| Belastingdienst, Wanneer hebt u een aanmerkelijk belang?. Read for when a holding is a substantial interest. | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/vermogen_en_aanmerkelijk_belang/aanmerkelijk_belang/wanneer_hebt_u_een_aanmerkelijk_belang/ | 2026-10-22 |
+| Belastingdienst, Inkomsten uit aanmerkelijk belang. Read for which income falls in box 2. | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/vermogen_en_aanmerkelijk_belang/aanmerkelijk_belang/inkomsten_uit_aanmerkelijk_belang/ | 2026-10-22 |
+| Belastingdienst, Verlies uit aanmerkelijk belang. Read for box 2 losses. | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/vermogen_en_aanmerkelijk_belang/aanmerkelijk_belang/verlies_uit_aanmerkelijk_belang/ | 2026-10-22 |
+| Belastingdienst, Verlies omzetten in belastingkorting. Read for turning a box 2 loss into a tax credit. | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/vermogen_en_aanmerkelijk_belang/aanmerkelijk_belang/verlies_uit_aanmerkelijk_belang/verlies_omzetten_in_belastingkorting | 2026-10-22 |
+| Belastingdienst, Loon en aanmerkelijk belang. Read for the customary salary rule. | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/vermogen_en_aanmerkelijk_belang/aanmerkelijk_belang/loon_en_aanmerkelijk_belang/ | 2026-10-22 |
+| Belastingdienst, Excessief lenen van bv beperkt vanaf 2023. Read for the limit on excessive borrowing from a BV. | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/werk_en_inkomen/bijzondere_situaties/geld_lenen_van_uw_bv/excessief-lenen-van-bv-beperkt | 2026-10-22 |
+| Belastingdienst, Vanaf wanneer kan ik een voorlopige aanslag aanvragen of wijzigen?. Read for when a provisional assessment can be requested. | https://www.belastingdienst.nl/wps/wcm/connect/nl/voorlopige-aanslag/content/vanaf-wanneer-een-voorlopige-aanslag-aanvragen-of-wijzigen | 2026-10-22 |
+| Belastingdienst, Tot wanneer kan ik een voorlopige aanslag aanvragen of wijzigen?. Read for the last date to request a provisional assessment. | https://www.belastingdienst.nl/wps/wcm/connect/nl/voorlopige-aanslag/content/tot-wanneer-voorlopige-aanslag-aanvragen-wijzigen | 2026-10-22 |
+| Belastingdienst, Overzicht percentages belastingrente. Read for the tax interest rates. | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/standaard_functies/prive/contact/rechten_en_plichten_bij_de_belastingdienst/belastingrente/overzicht_percentages_belastingrente | 2026-10-22 |
+| Belastingdienst, Invorderingsrente. Read for collection interest. | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/standaard_functies/prive/contact/rechten_en_plichten_bij_de_belastingdienst/invorderingsrente | 2026-10-22 |
 
 Not yet confirmed: the exact filing deadline for the 2026 income tax return (the pages read say "usually 1 May" and point to the invitation letter); how far art. 25(9) Invorderingswet deferral reaches when only part of the price is left owing. The Wet IB 2001 version read is valid from 1 January to 20 February 2026; the version in force from 21 February 2026 was compared for arts. 2.12, 4.6, 4.14a, 4.49 and 4.53 and has the same text, apart from a notice of amendments to arts. 2.12 and 4.53 that have no commencement date yet.

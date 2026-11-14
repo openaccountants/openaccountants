@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/andorra-igi"
   jurisdiction: "AD"
   tax_year: "2026"
-  last_updated: "2026-10-28"
+  last_updated: "2026-11-14"
 ---
 
 # Andorra IGI, 2026
@@ -179,8 +179,8 @@ expected:
 
 Not yet confirmed: the old A1–C5 return-box mapping and 31 March annual summary lack current approved-form support; use the actual filing interface. No primary basis supports bank/vendor names as tax classifiers, automatic EU-style annual pro rata, zero recovery for every investment car, unconditional restaurant exclusion, 2.5% optical/parapharmaceutical treatment, or generic exempt-without-credit medical/education/residential rental. Precise traveller-refund documents, international-transport/gold special conditions, particular customs tariff/origin preferences and ITP exemptions require the relevant separate instrument; their specialist procedures are outside this ordinary method. Old EUR 10,000/EUR 500/40%/four-default/EUR 5,000 “red flags” were internal workflow heuristics, not statutory thresholds. Portal consolidations lack official legal status; the law controls over the regulation's inconsistent EUR 3.6 million endpoint.
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-28. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `andorra-igi` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/andorra-igi. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `andorra-igi` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/andorra-igi. If neither is available, confirm every figure against the official source pages cited above before relying on it.

@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/armenia-income-tax"
   jurisdiction: "AM"
   tax_year: "2026"
-  last_updated: "2026-10-28"
+  last_updated: "2026-11-14"
 ---
 
-# Armenia individual income tax preparation v0.4
+# Armenia individual income tax preparation v0.5
 
 ## Who this applies to
 
@@ -24,18 +24,18 @@ Classify source under Article 144, including Armenian payer/PE employment and ci
 
 | Personal-income category | Domestic rule | 2026 primary source |
 |---|---|---|
-| Ordinary taxable salary/other general income | 20% | [150(1)][code] |
-| Qualifying listed R&D/high-technology occupations in approved work | Conditional 10% salary rate; status/list/commission requirements, not every IT job | [150(1.1)][code] |
-| Ordinary interest | General rate, currently 20%, after securities exemptions | [150(5), 149][code] |
-| Bank-deposit / specified public-offer or regulated-market debt interest | 10%, after applicable securities exemptions | [150(5.1), 149][code] |
-| Royalties | 10% | [150(6)][code] |
-| Rent | 10%, plus another 10% on annual aggregate rent over AMD 60 million | [150(7)][code] |
-| Ordinary taxable dividends | 5%, with Article 149 exemptions | [150(8), 149][code] |
-| Ordinary taxable property alienation | 10% on the stated total income; exemptions/special categories tested first | [150(9), 147][code] |
-| Qualifying unique/nonfungible or ledger-maintenance/validation reward crypto-asset alienation | 1% on the stated income; classification required | [150(9.1), 147(16.1)][code] |
-| Developer's specified building/apartment/premises sale | 20%, with special base rules | [145, 150(11)][code] |
-| Registered individual entrepreneur, general system, business base | 23% profit tax, separately from personal PIT | [125(3.1)][code] |
-| Entrepreneur's qualifying turnover-tax activities | AMD 5,000 profit tax per liable month, separately from turnover tax and social payments | [125(3), 136(4)][code] |
+| Ordinary taxable salary/other general income | 20% | [150(1)][code], https://www.arlis.am/hy/acts/215611/latest |
+| Qualifying listed R&D/high-technology occupations in approved work | Conditional 10% salary rate; status/list/commission requirements, not every IT job | [150(1.1)][code], https://www.arlis.am/hy/acts/215611/latest |
+| Ordinary interest | General rate, currently 20%, after securities exemptions | [150(5), 149][code], https://www.arlis.am/hy/acts/215611/latest |
+| Bank-deposit / specified public-offer or regulated-market debt interest | 10%, after applicable securities exemptions | [150(5.1), 149][code], https://www.arlis.am/hy/acts/215611/latest |
+| Royalties | 10% | [150(6)][code], https://www.arlis.am/hy/acts/215611/latest |
+| Rent | 10%, plus another 10% on annual aggregate rent over AMD 60 million | [150(7)][code], https://www.arlis.am/hy/acts/215611/latest |
+| Ordinary taxable dividends | 5%, with Article 149 exemptions | [150(8), 149][code], https://www.arlis.am/hy/acts/215611/latest |
+| Ordinary taxable property alienation | 10% on the stated total income; exemptions/special categories tested first | [150(9), 147][code], https://www.arlis.am/hy/acts/215611/latest |
+| Qualifying unique/nonfungible or ledger-maintenance/validation reward crypto-asset alienation | 1% on the stated income; classification required | [150(9.1), 147(16.1)][code], https://www.arlis.am/hy/acts/215611/latest |
+| Developer's specified building/apartment/premises sale | 20%, with special base rules | [145, 150(11)][code], https://www.arlis.am/hy/acts/215611/latest |
+| Registered individual entrepreneur, general system, business base | 23% profit tax, separately from personal PIT | [125(3.1)][code], https://www.arlis.am/hy/acts/215611/latest |
+| Entrepreneur's qualifying turnover-tax activities | AMD 5,000 profit tax per liable month, separately from turnover tax and social payments | [125(3), 136(4)][code], https://www.arlis.am/hy/acts/215611/latest |
 
 Do not import corporate nonresident interest rates or tax every personal receipt at 20%. Special pensions, document-deficient payments, delayed passive income and other Article 150 categories need separate analysis. The examples below use established ordinary scope and no unmentioned exemption. Future bank-dividend changes in HO-385-N start under its February 2027 transition; other future dates printed beside Article 150 are not current October 2026 rates. [147–150][code]; [HO-385-N 14][future]
 
@@ -299,4 +299,4 @@ Read on **24 October 2026**: targeted current Armenian Articles 20, 25, 140–15
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-28. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `armenia-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/armenia-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `armenia-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/armenia-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

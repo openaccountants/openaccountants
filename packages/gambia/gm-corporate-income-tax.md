@@ -3,8 +3,9 @@ name: gm-corporate-income-tax
 description: "corporation tax for The Gambia (tax year 2026): 27% rate, turnover minimum, fringe benefits, capital gains, withholding, filing steps. Built from official GRA, SSHFC and Ministry of Justice pages."
 jurisdiction: GM
 tax_year: 2026
-version: 0.2
-last_updated: 2026-11-01
+version: 0.3
+last_updated: 2026-11-14
+type: computation
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
@@ -26,8 +27,6 @@ Basis for 2026: the rows below come from the GRA and SSHFC pages live on 1 Novem
 | Fringe benefits tax | 27%, on the employer | 2026 | https://www.gra.gm/domestic-faqs |
 | Capital gains, companies, partnerships, trustees | Higher of 25% of the gain or 10% of the consideration | 2026 | https://www.gra.gm/domestic-faqs |
 | Dividends | 15% of gross, final | 2026 | https://www.gra.gm/download-file/8d0c84c3-d217-11ed-9b31-029254d29bb1 |
-| Contracts: resident | unverified: GRA FAQ says 10%, brochure says 8% | 2026 | https://www.gra.gm/domestic-faqs |
-| Contracts: non-resident | unverified: GRA FAQ says 15%, brochure says 10% | 2026 | https://www.gra.gm/domestic-faqs |
 | Public works for government, resident contractor | 5% | 2026 | https://www.gra.gm/download-file/8d0d0925-d217-11ed-9b31-029254d29bb1 |
 | Air tickets | 1% | 2026 | https://www.gra.gm/download-file/8d0d0925-d217-11ed-9b31-029254d29bb1 |
 | Rent: commercial | 15% of gross | 2026 | https://www.gra.gm/domestic-faqs |

@@ -1,578 +1,137 @@
 ---
 name: panama-itbms
-description: "Use this skill whenever asked to prepare, review, or create a Panama ITBMS (Impuesto de Transferencia de Bienes Muebles y Servicios) return for any client. Trigger on phrases like \"prepare ITBMS return\", \"do the ITBMS\", \"Panama VAT\", \"Panama tax\", or any request involving Panama consumption tax filing. Also trigger when classifying transactions for ITBMS purposes. This skill contains the complete Panama ITBMS classification rules, return form mappings, deductibility rules, and filing deadlines. ALWAYS read this skill before touching any ITBMS-related work."
+description: "Use this skill for Panama's goods and services tax (Impuesto de Transferencia de Bienes Muebles y Servicios, ITBMS) in 2026. It gives the 7% general rate, 10% on alcoholic drinks and on lodging, 15% on tobacco, the exemptions DGI lists (medicines, basic school supplies, uniforms, textbooks, food, farm products, electricity and water, medical and laboratory services), the B/.36,000 annual turnover at which a business must charge ITBMS, input credit, the 50% ITBMS credit against income tax for non-contributors, retention agents, the monthly return in the first 15 days and DGI fines. Trigger phrases include ITBMS Panama, impuesto de transferencia, 7% ITBMS, certificado de no contribuyente, formulario 430 and agente de retencion ITBMS."
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/panama-itbms"
   jurisdiction: "PA"
-  tax_year: "2025"
-  last_updated: "2026-07-13"
+  tax_year: "2026"
+  last_updated: "2026-11-14"
 ---
 
-# Panama Itbms
+# Panama ITBMS (goods and services tax), 2026
 
-## Skill Metadata
+> **General reference only.** This skill is general tax reference material for AI-assisted workflows. It has not been reviewed by a Panamanian accountant. Do not rely on it to file, pay or take a tax position without review by a qualified professional in Panama.
 
-- **Jurisdiction** — Panama
-- **Jurisdiction Code** — PA
-- **Primary Legislation** — Codigo Fiscal de Panama (Fiscal Code), Title IX -- ITBMS (as amended by Ley 8 de 2010, Ley 49 de 2009)
-- **Supporting Legislation** — Decreto Ejecutivo 84 de 2005 (Reglamento ITBMS); Resoluciones DGI
-- **Tax Authority** — Direccion General de Ingresos (DGI)
-- **Filing Portal** — https://dgi.mef.gob.pa (E-Tax 2.0)
-- **Contributor** — Open Accounting Skills Registry
-- **Validated By** — Deep research verification, April 2026
-- **Validation Date** — April 2026
-- **Skill Version** — 1.0
-- **Confidence Coverage** — Tier 1: rate classification, return form assignment, input tax recovery, derived calculations. Tier 2: partial exemption, SEM/free zone, Colon Free Zone treatments, territorial tax interaction. Tier 3: complex group structures, advance rulings, multinational structuring.
+## Who this applies to
 
-**Skill Metadata**
+Businesses and professionals selling goods or services in Panama whose annual turnover exceeds B/.36,000 (or whose activity requires it), plus retention agents. Amounts are in balboas (B/.), at par with the US dollar. The authority is the Direccion General de Ingresos (DGI) of the Ministerio de Economia y Finanzas; returns are filed in e-Tax 2.0.
 
-| Field | Value |
+Below B/.36,000 a business does not charge ITBMS and can obtain a Certificado de No Contribuyente so that retention agents do not retain on its sales. Taxpayers in arrears or who have not filed cannot get any certificate.
+
+Refer: free zones (Colon Free Zone and others; trade between zone companies is exempt), SEM and Panama Pacifico, the selective consumption tax (ISC) on drinks and tobacco, real estate (ITBI), imports beyond the basic rule, and any audit.
+
+Conservative defaults:
+
+| Ambiguity | Default |
 | --- | --- |
-| Jurisdiction | Panama |
-| Jurisdiction Code | PA |
-| Primary Legislation | Codigo Fiscal de Panama (Fiscal Code), Title IX -- ITBMS (as amended by Ley 8 de 2010, Ley 49 de 2009) |
-| Supporting Legislation | Decreto Ejecutivo 84 de 2005 (Reglamento ITBMS); Resoluciones DGI |
-| Tax Authority | Direccion General de Ingresos (DGI) |
-| Filing Portal | https://dgi.mef.gob.pa (E-Tax 2.0) |
-| Contributor | Open Accounting Skills Registry |
-| Validated By | Deep research verification, April 2026 |
-| Validation Date | April 2026 |
-| Skill Version | 1.0 |
-| Confidence Coverage | Tier 1: rate classification, return form assignment, input tax recovery, derived calculations. Tier 2: partial exemption, SEM/free zone, Colon Free Zone treatments, territorial tax interaction. Tier 3: complex group structures, advance rulings, multinational structuring. |
+| Rate unknown | 7% |
+| Turnover near B/.36,000 | Register and charge once the year's turnover exceeds it |
+| Purchase without a valid fiscal invoice naming the buyer and RUC | No credit |
+| Payment to a foreign provider with no Panama branch | Retain the ITBMS as agent |
 
-## Confidence Tier Definitions
+## Rates, bands and thresholds
 
-- **[T1] Tier 1 -- Deterministic.** Apply exactly as written.
-- **[T2] Tier 2 -- Reviewer Judgement Required.** Flag and present options.
-- **[T3] Tier 3 -- Out of Scope / Escalate.** Do not guess.
-
-## Step 0: Client Onboarding Questions
-
-1. **Entity name and RUC (Registro Unico de Contribuyente)** [T1]
-2. **ITBMS registration status** [T1] -- registered or not
-3. **Filing period** [T1] -- monthly (standard)
-4. **Industry/sector** [T2] -- impacts classification (Colon Free Zone, SEM, banking, tourism)
-5. **Does the business make exempt supplies?** [T2] -- partial attribution
-6. **Does the business import goods?** [T1]
-7. **Is the business in a special economic zone (SEM, Colon Free Zone, Ciudad del Saber)?** [T2]
-8. **Credit balance brought forward** [T1]
-9. **Does the business earn foreign-source income?** [T2] -- Panama has territorial taxation
-
-**If items 1-3 are unknown, STOP.**
-
-## Step 1: ITBMS Rate Structure [T1]
-
-- **Legislation** — Fiscal Code, Article 1057-V.  _(Fiscal Code, Article 1057-V)_
-
-### Standard Rate
-
-**Standard Rate**
-
-| Rate | Application |
-| --- | --- |
-| 7% | Standard rate on taxable transfers of movable goods and services [T1] |
-
-- **7%** — Standard rate on taxable transfers of movable goods and services [T1]
-
-### Special Rates
-
-**Special Rates**
-
-| Rate | Application |
-| --- | --- |
-| 10% | Alcoholic beverages and hotel/short-term accommodation services [T1] |
-| 15% | Tobacco and tobacco-derived products [T1] |
-
-- **10%** — Alcoholic beverages and hotel/short-term accommodation services [T1]
-- **15%** — Tobacco and tobacco-derived products [T1]
-
-### Exempt Goods and Services (No ITBMS) [T1]
-
-- **Legislation** — Fiscal Code, Articles 1057-V(5), 1057-V(6).  _(Fiscal Code, Articles 1057-V(5), 1057-V(6))_
-
-**Exempt goods:**
-- Unprocessed food (rice, beans, corn, fresh fruits, vegetables, fresh meats, fresh fish, eggs, milk)
-- Basic food basket (canasta basica familiar)
-- Medicines and pharmaceutical products (prescribed)
-- Agricultural inputs (fertilizers, seeds, pesticides)
-- Books, newspapers, educational materials
-- Fuel and petroleum derivatives (subject to specific fuel tax)
-- Machinery and equipment for agricultural use
-
-**Exempt services:**
-- Financial services (interest, insurance premiums on life policies)
-- Medical and health services
-- Educational services (approved institutions)
-- Residential rental
-- Public transportation
-- Electricity (domestic, up to threshold)
-- Water (domestic supply)
-- Professional services of regulated professions (lawyers, doctors, engineers, architects, CPAs) -- NOTE: this is a significant difference from most countries [T1]
-
-### Exports (0% -- Full Input Credit) [T1]
-
-- **Exports treatment** — Export of goods: zero-rated with full input credit recovery; Export of services: services consumed outside Panama may qualify [T2]
-
-## Step 2: Territorial Tax System -- Key Interaction [T2]
-
-- **Territorial tax and ITBMS interactions** — **Panama does NOT tax foreign-source income.** This has ITBMS implications: - Services rendered entirely outside Panama to non-resident clients: NOT subject to ITBMS [T1] - Goods exported: zero-rated (input credit allowed) [T1] - Services rendered in Panama but paid from abroad: subject to ITBMS if consumed in Panama [T2] - Re-invoicing / intermediation services: complex -- flag for reviewer [T3] - Input ITBMS on costs related to non-taxable foreign operations: NOT recoverable unless attributable to taxable domestic operations [T2] **Flag for reviewer: the interaction between territorial taxation and ITBMS recovery requires careful analysis of the source and place of consumption of each service.**
-
-### 3a. Determine Transaction Type [T1]
-
-- **Transaction type determination** — Sale/transfer (ITBMS causado -- output) or Purchase (ITBMS soportado -- input); Salaries, CSS (social security), income tax, loan repayments, dividends = OUT OF SCOPE
-
-### 3b. Determine Counterparty Location [T1]
-
-- **Counterparty location categories** — Domestic (Panama); Colon Free Zone / SEM / Special zones; International
-
-### 3c. Determine ITBMS Rate [T1]
-
-- **Rate determination options** — 0% (export), 7% (standard), 10% (alcohol/accommodation), 15% (tobacco), or exempt
-
-### 3d. Determine Expense Category [T1]
-
-- **Expense category options** — Capital goods: equipment, machinery, vehicles; Inventory: goods for resale; Operating expenses: everything else
-
-## Step 4: ITBMS Return Form Structure (Formulario 430) [T1]
-
-**Filed monthly via E-Tax 2.0.**
-
-### Section I -- ITBMS Causado (Output)
-
-**Section I -- ITBMS Causado (Output)**
-
-| Line | Description |
-| --- | --- |
-| 1 | Ventas gravadas al 7% (Taxable sales at 7%) |
-| 2 | ITBMS causado al 7% |
-| 3 | Ventas gravadas al 10% (Alcohol/accommodation) |
-| 4 | ITBMS causado al 10% |
-| 5 | Ventas gravadas al 15% (Tobacco) |
-| 6 | ITBMS causado al 15% |
-| 7 | Exportaciones (Exports -- 0%) |
-| 8 | Operaciones exentas (Exempt operations) |
-| 9 | ITBMS en importaciones (ITBMS on imports, self-assessed) |
-| 10 | Total ITBMS causado |
-
-- **Ventas gravadas al 7% (Taxable sales at 7%)** — 1
-- **ITBMS causado al 7%** — 2
-- **Ventas gravadas al 10% (Alcohol/accommodation)** — 3
-- **ITBMS causado al 10%** — 4
-- **Ventas gravadas al 15% (Tobacco)** — 5
-- **ITBMS causado al 15%** — 6
-- **Exportaciones (Exports -- 0%)** — 7
-- **Operaciones exentas (Exempt operations)** — 8
-- **ITBMS en importaciones (ITBMS on imports, self-assessed)** — 9
-- **Total ITBMS causado** — 10
-
-### Section II -- ITBMS Soportado (Input/Credit)
-
-**Section II -- ITBMS Soportado (Input/Credit)**
-
-| Line | Description |
-| --- | --- |
-| 11 | ITBMS pagado en compras locales |
-| 12 | ITBMS pagado en importaciones |
-| 13 | Total ITBMS soportado |
-| 14 | Ajustes (blocked/apportioned) |
-| 15 | ITBMS soportado deducible |
-
-- **ITBMS pagado en compras locales** — 11
-- **ITBMS pagado en importaciones** — 12
-- **Total ITBMS soportado** — 13
-- **Ajustes (blocked/apportioned)** — 14
-- **ITBMS soportado deducible** — 15
-
-### Section III -- Liquidacion
-
-**Section III -- Liquidacion**
-
-| Line | Description |
-| --- | --- |
-| 16 | ITBMS neto (Line 10 - Line 15) |
-| 17 | Saldo a favor anterior |
-| 18 | Retenciones |
-| 19 | Total a pagar / saldo a favor |
-
-- **ITBMS neto (Line 10 - Line 15)** — 16
-- **Saldo a favor anterior** — 17
-- **Retenciones** — 18
-- **Total a pagar / saldo a favor** — 19
-
-## Step 5: Reverse Charge on Imported Services [T1]
-
-- **Legislation** — Fiscal Code, Article 1057-V(2).  _(Fiscal Code, Article 1057-V(2))_
-- **Reverse charge process** — When a Panama registered person receives taxable services from a non-resident: 1. Self-assess ITBMS at 7% [T1] 2. Report as output ITBMS (Line 9) [T1] 3. Claim as input ITBMS (Line 13) if used for taxable operations [T1] 4. Net effect: zero for fully taxable businesses [T1]
-
-### Important Exception -- Professional Services [T1]
-
-- **Professional services exception** — If the imported service falls within the regulated professions exemption (legal, medical, engineering, architecture, accounting), it is EXEMPT from ITBMS even when imported. Flag for reviewer: confirm whether the service type would be exempt domestically [T2]
-
-### Blocked Input ITBMS (No Recovery) [T1]
-
-- **Legislation** — Fiscal Code, Article 1057-V(10).  _(Fiscal Code, Article 1057-V(10))_
-- **Blocked categories** — - **Entertainment** -- meals, drinks, recreation (unless hospitality trade) [T1] - **Motor vehicles** -- passenger vehicles (exception: rental, taxi businesses) [T1] - **Personal use** -- not for business purposes [T1] - **Exempt operations** -- no input credit on costs for exempt supplies [T1] - **Non-taxable foreign operations** -- input ITBMS on costs attributable to foreign-source (non-ITBMS) operations is NOT recoverable [T2]
-
-### Partial Exemption [T2]
-
-- **Recovery %** — Recovery % = (Taxable Revenue / Total Revenue) * 100
-
-- Direct attribution first
-- Common costs: `Recovery % = (Taxable Revenue / Total Revenue) * 100`
-- Flag for reviewer: the territorial system adds complexity -- foreign-source revenue is neither taxable nor exempt for ITBMS purposes
-
-## Step 7: Key Thresholds [T1]
-
-**Key Thresholds**
-
-| Threshold | Value |
-| --- | --- |
-| Mandatory ITBMS registration | Annual taxable operations exceeding USD 36,000 [T1] |
-| Voluntary registration | Below USD 36,000 (may register voluntarily) |
-| Note: Panama uses USD as currency | No exchange rate issues for US-denominated transactions |
-
-- **Mandatory ITBMS registration** — Annual taxable operations exceeding USD 36,000 [T1]
-- **Voluntary registration** — Below USD 36,000 (may register voluntarily)
-- **Note: Panama uses USD as currency** — No exchange rate issues for US-denominated transactions
-- **Legislation** — Fiscal Code, Article 1057-V(3).  _(Fiscal Code, Article 1057-V(3))_
-
-## Step 8: Filing Deadlines and Penalties [T1]
-
-- **Legislation** — Fiscal Code, Articles 1057-V(15), 710, 752.  _(Fiscal Code, Articles 1057-V(15), 710, 752)_
-
-### Filing Deadlines
-
-**Filing Deadlines**
-
-| Period | Deadline |
-| --- | --- |
-| Monthly ITBMS return | 15th of the month following the period [T1] |
-
-- **Monthly ITBMS return** — 15th of the month following the period [T1]
-
-### Penalties
-
-**Penalties**
-
-| Violation | Penalty |
-| --- | --- |
-| Late filing | USD 100 to USD 5,000 depending on classification [T1] |
-| Late payment | Surcharge of 10% on unpaid tax + interest at market rate [T1] |
-| Failure to register | Back-assessment + penalties [T1] |
-| Fraudulent return | Criminal penalties; fines + imprisonment [T1] |
-| Failure to issue fiscal receipt | USD 1,000 to USD 5,000 per occurrence [T1] |
-
-- **Late filing** — USD 100 to USD 5,000 depending on classification [T1]
-- **Late payment** — Surcharge of 10% on unpaid tax + interest at market rate [T1]
-- **Failure to register** — Back-assessment + penalties [T1]
-- **Fraudulent return** — Criminal penalties; fines + imprisonment [T1]
-- **Failure to issue fiscal receipt** — USD 1,000 to USD 5,000 per occurrence [T1]
-
-## Step 9: Fiscal Receipt / Electronic Invoicing [T1]
-
-- **Legislation** — Fiscal Code; DGI electronic invoicing regulations.  _(Fiscal Code; DGI electronic invoicing regulations)_
-
-Panama has implemented electronic invoicing (Factura Electronica):
-
-1. Equipment Fiscal (EF) machines were previously required -- now transitioning to electronic system
-2. All invoices must include: RUC, date, description, net amount, ITBMS, total
-3. Invoices must be authorized by DGI (pre-numbered or electronic)
-4. Input ITBMS is only deductible with valid fiscal receipts
-
-### Domestic Purchases
-
-**Domestic Purchases**
-
-| Category | ITBMS Rate | Input Credit | Notes |
+| Item | Rate or amount | Condition | Source |
 | --- | --- | --- | --- |
-| Office supplies | 7% | Yes |  |
-| Commercial rent | 7% | Yes |  |
-| Residential rent | Exempt | No |  |
-| Electricity (commercial) | 7% | Yes |  |
-| Telephone/internet | 7% | Yes |  |
-| Motor car | 7% | BLOCKED |  |
-| Entertainment | 7% | BLOCKED |  |
-| Legal services | Exempt | No | Regulated profession |
-| Accounting/CPA services | Exempt | No | Regulated profession |
-| Architecture/engineering | Exempt | No | Regulated profession |
-| Insurance (general) | 7% | Yes |  |
-| Insurance (life) | Exempt | No |  |
-| Alcoholic beverages | 10% | BLOCKED (entertainment) |  |
-| Hotel accommodation | 10% | Yes (if business travel) |  |
-| Basic food items | Exempt | No |  |
-| Medicines | Exempt | No |  |
+| General rate | 7% | From 1 July 2010 (Ley 8 de 2010 art. 76); includes restaurants with prepared food | DGI, Generalidades del ITBMS: https://dgi.mef.gob.pa/itbms/Generalidades.php |
+| Alcoholic drinks (import, wholesale, retail) | 10% | | same |
+| Lodging in all forms | 10% | | same |
+| Tobacco products | 15% | | same |
+| Turnover above which ITBMS must be charged | B/.36,000 a year | Goods and services | DGI, ITBMS: https://dgi.mef.gob.pa/itbms/Itbms.php |
+| Return and payment | First 15 days of the following month | Monthly | DGI, Generalidades del ITBMS: https://dgi.mef.gob.pa/itbms/Generalidades.php |
+| Late return fine | B/.10.00 | | DGI FAQ, ITBMS: https://dgi.mef.gob.pa/Preguntas/Itbms.php |
+| Amended return after 90 days | B/.100 (individuals), B/.500 (companies) | One amendment a period, within 12 months | same |
+| Fines for companies | B/.500 to B/.5,000 for repeat breaches | Plus possible closure | DGI, Generalidades del ITBMS: https://dgi.mef.gob.pa/itbms/Generalidades.php |
+| Defrauding ITBMS | 5 to 10 times the tax defrauded, or 1 month to 1 year arrest | | same |
+| ITBMS of non-contributors credited against income tax | 50% of ITBMS on purchases, up to 10% of the income tax | Codigo Fiscal art. 701 l) | same |
+| Retention agents: large buyers | Annual purchases of B/.5,000,000 or more | DE 84 of 2005 art. 19 | DGI FAQ, ITBMS: https://dgi.mef.gob.pa/Preguntas/Itbms.php |
 
-- **Office supplies** — 7%
-- **Commercial rent** — 7%
-- **Residential rent** — Exempt
-- **Electricity (commercial)** — 7%
-- **Telephone/internet** — 7%
-- **Motor car** — 7%
-- **Entertainment** — 7%
-- **Legal services** — Exempt  _(Regulated profession)_
-- **Accounting/CPA services** — Exempt  _(Regulated profession)_
-- **Architecture/engineering** — Exempt  _(Regulated profession)_
-- **Insurance (general)** — 7%
-- **Insurance (life)** — Exempt
-- **Alcoholic beverage sales** — 10%  _(Line 3, Line 4)_
-- **Hotel accommodation** — 10%
-- **Basic food items** — Exempt
-- **Medicines** — Exempt
+## The base
 
-### Sales
+- **Taxed:** transfer of movable goods and provision of services in Panama, and imports. Exports are not charged ITBMS (DGI FAQ).
+- **Not charged (DGI list):** medicines, basic school supplies, uniforms, textbooks, food, farm products, public services (electricity, water), medical services and laboratories. Fondas and fast-food restaurants do not charge ITBMS on that food.
+- **Credit:** a registered contributor credits the ITBMS on purchases and services inherent to its activity against ITBMS charged; it may not use it against income tax. ITBMS shown on the purchases report cannot exceed 15% of the purchase.
+- **Non-contributors:** ITBMS paid is a cost; 50% of ITBMS on documented purchases (with the buyer's name and RUC) may be credited against income tax, capped at 10% of the tax; self-employed filers deduct ITBMS inherent to the activity as an expense and credit only the rest.
+- **Retention:** agents (state entities, payers of foreign suppliers without a Panama establishment, large buyers with purchases of B/.5,000,000 or more, card processors) retain ITBMS; the supplier enters retentions on line 52 of form 430. No retention if the supplier shows a Certificado de No Contribuyente.
+- **Free zones:** trade between companies inside a free zone is exempt.
 
-**Sales**
+The ITBMS account is a current liability (Tesoro Nacional ITBMS) for contributors and a cost for non-contributors.
 
-| Category | ITBMS | Return Line |
+## Deadlines and filing
+
+| Obligation | Deadline | Form |
 | --- | --- | --- |
-| Domestic sale (standard) | 7% | Line 1, Line 2 |
-| Alcoholic beverage sales | 10% | Line 3, Line 4 |
-| Hotel accommodation sales | 10% | Line 3, Line 4 |
-| Tobacco sales | 15% | Line 5, Line 6 |
-| Export of goods | 0% | Line 7 |
-| Exempt supply | Exempt | Line 8 |
+| ITBMS return and payment | First 15 days of the following month | Form 430, e-Tax 2.0 |
+| ITBMS retention return | First 15 days of the month | e-Tax 2.0 |
+| Purchases report | With the monthly figures; must match the return | Informe de Compras |
 
-- **Domestic sale (standard)** — 7%  _(Line 1, Line 2)_
-- **Alcoholic beverage sales** — 10%  _(Line 3, Line 4)_
-- **Hotel accommodation** — 10%
-- **Tobacco sales** — 15%  _(Line 5, Line 6)_
-- **Export of goods** — 0%  _(Line 7)_
-- **Exempt supply** — Exempt  _(Line 8)_
+## Penalties and interest
 
-### Colon Free Zone (Zona Libre de Colon) [T2]
+Late return: B/.10. Amended return more than 90 days (three months) after the original: B/.100 individuals, B/.500 companies. Company breaches B/.500 to B/.5,000 if repeated, plus possible administrative closure. Fraud: 5 to 10 times the tax or 1 month to 1 year of arrest, split equally with accomplices.
 
-- **Legislation** — Decreto Ley 18 de 1948 (as amended).  _(Decreto Ley 18 de 1948 (as amended))_
+## Cross-border points
 
-- Largest free trade zone in the Western Hemisphere
-- Goods entering CFZ for re-export: exempt from ITBMS and customs duties
-- Goods sold from CFZ to Panama domestic market: subject to ITBMS at 7% as imports
-- Services within CFZ: generally subject to ITBMS unless specifically exempted
-- Flag for reviewer: CFZ transactions require careful documentation
+Exports are not charged. Imports pay ITBMS at customs (form 433 for import ITBMS). A Panamanian payer of a foreign supplier without a Panama establishment retains the ITBMS; a company paying professional fees abroad becomes a retention agent for 100% of the tax.
 
-### Special Economic Areas (SEM) [T2]
+## Two worked examples that recompute
 
-- **Legislation** — Ley 32 de 2011 (SEM Law).  _(Ley 32 de 2011 (SEM Law))_
+### Example 1: small hotel with a bar, March 2026
 
-- Manufacturing, logistics, and service companies in SEMs may qualify for ITBMS exemptions
-- Exports from SEM: zero-rated
-- Purchases for SEM operations: may be exempt
-- Flag for reviewer: confirm SEM license and applicable benefits
+Room revenue B/.20,000 (10%: B/.2,000), bar drinks B/.5,000 (10%: B/.500), restaurant food B/.10,000 (7%: B/.700). ITBMS on purchases with valid invoices B/.1,200. Payable B/.2,000 by 15 April 2026.
 
-### Ciudad del Saber (City of Knowledge) [T2]
-
-- Technology and innovation hub with special tax benefits
-- ITBMS treatment depends on specific agreement with government
-- Flag for reviewer
-
-## PROHIBITIONS [T1]
-
-- **Prohibitions list** — - NEVER let AI guess ITBMS classification -- it is deterministic from facts - NEVER allow input credit on blocked categories (entertainment, motor vehicles, personal use) - NEVER apply ITBMS to exempt regulated professional services (legal, medical, engineering, architecture, CPA) - NEVER allow input credit on costs attributable to non-taxable foreign operations without reviewer confirmation - NEVER apply reverse charge to out-of-scope categories - NEVER confuse zero-rated exports (input credit allowed) with exempt (NO input credit) - NEVER ignore the USD 36,000 registration threshold - NEVER treat Colon Free Zone re-export transactions as domestic sales - NEVER compute any number -- all arithmetic is handled by the deterministic engine, not Claude
-
-### EC1 -- Professional services from non-resident [T2]
-
-**Situation:** Panama company hires a US law firm for legal advice.
-**Resolution:** Legal services are exempt from ITBMS (regulated profession). Even when imported, the exemption applies. No self-assessment required. However, flag for reviewer: confirm the service genuinely falls within the regulated profession exemption.
-
-### EC2 -- Hotel accommodation for business travel [T1]
-
-**Situation:** Employee stays at a Panama hotel. Invoice shows 10% ITBMS.
-**Resolution:** ITBMS at 10% on accommodation is recoverable input tax if used for business purposes. Report on Line 13.
-
-### EC3 -- Colon Free Zone sale to local market [T2]
-
-**Situation:** CFZ company sells electronics to a Panama City retailer.
-**Resolution:** Treated as an import. ITBMS at 7% applies on CIF value + duties. Buyer pays at customs. Flag for reviewer: confirm customs entry documentation.
-
-### EC4 -- Credit notes [T1]
-
-**Situation:** Client issues credit note for returned goods.
-**Resolution:** Reduce output ITBMS. Report net figures. Issue proper fiscal credit note.
-
-### EC5 -- Software subscription from US (non-professional service) [T1]
-
-**Situation:** Panama business subscribes to US cloud software (not a regulated profession service).
-**Resolution:** Reverse charge at 7%. Self-assess output ITBMS. Claim input if for taxable operations. Net = zero.
-
-### EC6 -- Mixed domestic and foreign operations [T2]
-
-**Situation:** Company provides consulting to both Panama clients (taxable) and Colombia clients (not subject to ITBMS, territorial principle).
-**Resolution:** Apportion input ITBMS. Only input ITBMS attributable to taxable domestic operations is recoverable. Flag for reviewer: determine apportionment basis.
-
-### EC7 -- Alcohol sold by restaurant [T1]
-
-**Situation:** Restaurant sells alcoholic beverages.
-**Resolution:** Alcoholic beverages are subject to 10% ITBMS (not 7%). Report separately on Line 3/Line 4. Food served by the restaurant is at 7%. Tobacco products are at 15% (Line 5/Line 6).
-
-### EC8 -- Real estate sale (commercial) [T2]
-
-**Situation:** Company sells a commercial property.
-**Resolution:** Sale of new commercial real estate may be subject to ITBMS at 7%. Sale of used property may be exempt. Land component is generally exempt. Flag for reviewer: ITBMS on real estate is complex.
-**Legislation:** Fiscal Code, Article 1057-V.
-
-### EC9 -- International business headquarters (SEM/MHQ) [T2]
-
-**Situation:** Multinational headquarters in Panama provides management services to affiliates.
-**Resolution:** Services to foreign affiliates may fall outside ITBMS scope (territorial principle -- services consumed abroad). Services to domestic affiliates: ITBMS at 7%. Flag for reviewer: confirm place of consumption and SEM/MHQ license.
-
-### EC10 -- Construction on government contract [T2]
-
-**Situation:** Construction company works on government infrastructure project.
-**Resolution:** Construction services are taxable at 7%. Government entities may have specific ITBMS withholding obligations. Flag for reviewer: confirm government procurement ITBMS treatment.
-
-### Banking and Financial Services (Detailed)
-
-- **Legislation** — Fiscal Code; Banking Law.  _(Fiscal Code; Banking Law)_
-
-Panama is a major international financial center:
-- **Interest on loans**: exempt [T1]
-- **Banking commissions and fees**: taxable at 7% [T1]
-- **Trust administration fees**: taxable at 7% [T1]
-- **Insurance premiums (life)**: exempt [T1]
-- **Insurance premiums (general)**: taxable at 7% [T1]
-- **Securities brokerage**: taxable at 7% [T1]
-- **International banking operations**: services consumed outside Panama are NOT subject to ITBMS (territorial principle) [T2]
-- Flag for reviewer: distinguish domestic vs. international financial services
-
-### Maritime Sector
-
-- **Ship registration fees**: exempt from ITBMS (government fee) [T1]
-- **Maritime services (domestic)**: taxable at 7% [T1]
-- **Canal-related services**: specific regime [T3]
-- **International shipping services**: NOT subject to ITBMS (consumed outside Panama) [T1]
-- **Ship repair and maintenance**: taxable at 7% if performed in Panama [T1]
-
-### Tourism and Hospitality
-
-- **Hotel accommodation**: taxable at 10% (special rate) [T1]
-- **Restaurant services**: taxable at 7% [T1]
-- **Tour operator services**: taxable at 7% [T1]
-- **Tourism incentive law**: approved tourism projects may have ITBMS exemptions on construction [T2]
-- Flag for reviewer: confirm tourism incentive applicability
-
-### Construction and Real Estate
-
-- **Construction services**: taxable at 7% [T1]
-- **Sale of new commercial real estate**: taxable at 7% on improvements [T2]
-- **Sale of residential real estate**: may be exempt (certain conditions) [T2]
-- **Land (bare)**: exempt [T1]
-- **Commercial rental**: taxable at 7% [T1]
-- **Residential rental**: exempt [T1]
-
-### Professional Services (Regulated Professions) -- CRITICAL [T1]
-
-**This is unique to Panama.** The following regulated professional services are EXEMPT from ITBMS:
-
-**Professional Services Exemption Table**
-
-| Profession | Exempt? |
-| --- | --- |
-| Lawyers (Abogados) | YES -- exempt [T1] |
-| Doctors (Medicos) | YES -- exempt [T1] |
-| Engineers (Ingenieros) | YES -- exempt [T1] |
-| Architects (Arquitectos) | YES -- exempt [T1] |
-| Certified Public Accountants (CPA) | YES -- exempt [T1] |
-| Dentists (Odontologos) | YES -- exempt [T1] |
-| Psychologists | YES -- exempt [T1] |
-| Veterinarians | YES -- exempt [T1] |
-
-- **Lawyers (Abogados)** — YES -- exempt [T1]
-- **Doctors (Medicos)** — YES -- exempt [T1]
-- **Engineers (Ingenieros)** — YES -- exempt [T1]
-- **Architects (Arquitectos)** — YES -- exempt [T1]
-- **Certified Public Accountants (CPA)** — YES -- exempt [T1]
-- **Dentists (Odontologos)** — YES -- exempt [T1]
-- **Psychologists** — YES -- exempt [T1]
-- **Veterinarians** — YES -- exempt [T1]
-- **Non-regulated consulting services treatment** — Non-regulated consulting services (e.g., management consulting, IT consulting, marketing): taxable at 7% [T1]. This distinction is critical for input ITBMS recovery: costs attributable to providing exempt professional services do NOT generate recoverable input ITBMS.
-
-## Step 12b: Books and Records [T1]
-
-- **Legislation** — Fiscal Code; Codigo de Comercio.  _(Fiscal Code; Codigo de Comercio)_
-
-All ITBMS-registered persons must maintain:
-
-- **Sales records**: invoices/receipts, fiscal machine records, export documentation
-- **Purchase records**: purchase invoices with ITBMS breakdowns
-- **Import records**: customs entries showing ITBMS paid
-- **ITBMS account**: summary ledger of output/input ITBMS
-- **Bank statements**: reconciled to business records
-- Records must be retained for a minimum of **5 years**
-- Records available for DGI inspection at the fiscal domicile
-
-## Step 13: Reviewer Escalation Protocol
-
-When a [T2] situation is identified, output:
-
-```
-REVIEWER FLAG
-Tier: T2
-Transaction: [description]
-Issue: [what is ambiguous]
-Options: [list the possible treatments]
-Recommended: [which treatment is most likely correct and why]
-Action Required: Licensed CPA must confirm before filing.
+```oa-check
+name: PA 2026 ITBMS hotel, three rates
+inputs:
+  rooms: 20000
+  drinks: 5000
+  food: 10000
+  input_itbms: 1200
+steps:
+  - output: rooms * 0.10 + drinks * 0.10 + food * 0.07
+  - payable: output - input_itbms
+expected:
+  output: 3200
+  payable: 2000
 ```
 
-When a [T3] situation is identified, output:
+### Example 2: freelance designer, charge ITBMS or not (decision)
 
+A designer billing B/.30,000 a year is below B/.36,000: no ITBMS charged, and a Certificado de No Contribuyente stops retentions; ITBMS on purchases is a cost. At B/.40,000 the designer must charge 7%, B/.2,800 a year, file monthly, and credit input ITBMS. The figure that decides it is B/.36,000 of annual turnover.
+
+```oa-check
+name: PA 2026 ITBMS registration threshold
+inputs:
+  turnover_a: 30000
+  turnover_b: 40000
+  threshold: 36000
+steps:
+  - itbms_a: turnover_a * 0.07 * min(max(turnover_a - threshold, 0), 1)
+  - itbms_b: turnover_b * 0.07 * min(max(turnover_b - threshold, 0), 1)
+expected:
+  itbms_a: 0
+  itbms_b: 2800
 ```
-ESCALATION REQUIRED
-Tier: T3
-Transaction: [description]
-Issue: [what is outside skill scope]
-Action Required: Do not classify. Refer to licensed CPA. Document gap.
-```
 
-### Test 1 -- Standard local purchase, 7%
+## Ask the client first
 
-**Input:** Panama supplier, office equipment, gross USD 1,070, ITBMS USD 70, net USD 1,000. Valid fiscal receipt.
-**Expected output:** Line 11 = USD 70 input ITBMS. Full recovery.
+1. Annual turnover, and whether it passed B/.36,000.
+2. What is sold: general goods, food (restaurant or fast food), alcohol, tobacco, lodging, exempt items?
+3. Customers: state entities, large buyers or card payments that retain ITBMS?
+4. Purchases with valid fiscal invoices naming the buyer and RUC.
+5. Payments to foreign suppliers, imports, exports, free zone status.
 
-### Test 2 -- Export, zero-rated
+## Sources
 
-**Input:** Registered exporter ships goods to Colombia, net USD 50,000.
-**Expected output:** Line 7 = USD 50,000. No output ITBMS. Input ITBMS fully recoverable.
+| Source | URL | Read on |
+| --- | --- | --- |
+| Read for DGI, ITBMS page: 7%, B/.36,000 threshold, 10% and 15% rates, items not charged | https://dgi.mef.gob.pa/itbms/Itbms.php | 2026-11-14 |
+| Read for DGI, Generalidades del ITBMS: Ley 8 de 2010 art. 76 rate, rate table, 50% credit against income tax, filing in the first 15 days, fines, retention rules, free zones | https://dgi.mef.gob.pa/itbms/Generalidades.php | 2026-11-14 |
+| Read for DGI FAQ, ITBMS: retention return, certificates, amendments, late fine B/.10, obligation above B/.36,000, line 52 of form 430, exports, retention agents | https://dgi.mef.gob.pa/Preguntas/Itbms.php | 2026-11-14 |
 
-### Test 3 -- Motor vehicle, blocked
-
-**Input:** Purchase of sedan USD 30,000, ITBMS USD 2,100.
-**Expected output:** ITBMS USD 2,100 BLOCKED. No input credit.
-
-### Test 4 -- Legal services (exempt regulated profession)
-
-**Input:** Panama law firm provides legal advice USD 5,000. No ITBMS charged.
-**Expected output:** No ITBMS. Exempt regulated profession. No input/output entries.
-
-### Test 5 -- Hotel accommodation sale at 10%
-
-**Input:** Hotel charges guest USD 2,200 (USD 2,000 + USD 200 ITBMS at 10%).
-**Expected output:** Line 3 = USD 2,000. Line 4 = USD 200.
-
-### Test 6 -- Imported services (non-professional), reverse charge
-
-**Input:** US marketing firm provides services USD 10,000. No ITBMS.
-**Expected output:** Self-assess output ITBMS = USD 700 (7%). Input ITBMS = USD 700. Net = zero.
-
-### Test 7 -- Alcohol sales at 10%
-
-**Input:** Liquor store sells beverages USD 5,500 (USD 5,000 + USD 500 ITBMS at 10%).
-**Expected output:** Line 3 = USD 5,000. Line 4 = USD 500.
-
-### Test 8 -- Entertainment, blocked
-
-**Input:** Client dinner USD 535 inclusive of ITBMS USD 35.
-**Expected output:** ITBMS USD 35 BLOCKED. No input credit.
-
-## Contribution Notes
-
-**A skill may not be published without sign-off from a licensed practitioner in the relevant jurisdiction.**
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
+Not yet confirmed: the full legal list of exempt goods and services (Codigo Fiscal art. 1057-V not read; the DGI summary list is used); the retention percentages applied by agents (50% or 100% by case); ITBMS on digital services from abroad; the box layout of form 430 beyond line 52; late payment surcharge and interest.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-07-13. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `panama-itbms` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/panama-itbms. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `panama-itbms` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/panama-itbms. If neither is available, confirm every figure against the official source pages cited above before relying on it.

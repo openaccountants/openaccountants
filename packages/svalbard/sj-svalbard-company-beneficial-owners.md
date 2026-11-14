@@ -17,12 +17,13 @@ jurisdiction: SJ
 category: international
 job: company-beneficial-owner-registration
 tax_year: 2026
-last_updated: 2026-10-31
-version: 0.1
+last_updated: 2026-11-14
+version: 0.2
 tier: 2
+type: filing-howto
 ---
 
-# Svalbard: company beneficial-owner registration in 2026 v0.1
+# Svalbard: company beneficial-owner registration in 2026 v0.2
 
 > **General reference only.** This Guide is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -82,7 +83,7 @@ The Act/regulation's filing duty is separate from the company's ordinary tax pay
 |---|---:|---:|---|
 | First eight weeks | 0.5 court-fee units (R) | 672.50 | [Regulation §5-1(1)(a)](https://lovdata.no/dokument/SF/forskrift/2021-06-21-2056); [court-fee regulation §2-1](https://lovdata.no/dokument/SF/forskrift/1983-02-15-86) |
 | Next ten weeks | 1 R | 1,345 | [Regulation §5-1(1)(b)](https://lovdata.no/dokument/SF/forskrift/2021-06-21-2056); [court-fee regulation §2-1](https://lovdata.no/dokument/SF/forskrift/1983-02-15-86) |
-| Following weeks | 1.5 R | 2,017.50 | [Regulation §5-1(1)(c)](https://lovdata.no/dokument/SF/forskrift/2021-06-21-2056); [court-fee regulation §2-1](https://lovdata.no/dokument/SF/forskrift/1983-02-15-86) |
+| Following weeks | 1.5 R | 2,017.50 (computed: 1.5 x NOK 1,345) | [Regulation §5-1(1)(c)](https://lovdata.no/dokument/SF/forskrift/2021-06-21-2056); [court-fee regulation §2-1](https://lovdata.no/dokument/SF/forskrift/1983-02-15-86) |
 
 The 2026 conversions use **R = NOK 1,345** under [court-fee regulation §2-1](https://lovdata.no/dokument/SF/forskrift/1983-02-15-86), effective from 1 January 2026. They are daily accrual arithmetic, not an instruction to round or replace the actual demand. A period in another year needs that year's R.
 

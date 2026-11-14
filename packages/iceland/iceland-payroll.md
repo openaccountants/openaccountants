@@ -1,19 +1,20 @@
 ---
 name: iceland-payroll
 description: Use this skill whenever asked about Iceland payroll processing for employed persons. Trigger on phrases like "Iceland payroll", "Icelandic payroll", "staðgreiðsla", "PAYE Iceland", "withholding Iceland", "tryggingagjald", "social security contribution Iceland", "persónuafsláttur", "personal tax credit Iceland", "lífeyrissjóður", "mandatory pension Iceland", "séreignarsparnaður", "supplementary pension", "launagreiðendaskrá", "employer registry Iceland", "RSK 5.02", "launamiði", "skilagreining", "net salary Iceland", "tax withholding Iceland", "employer social cost Iceland", "kjarasamningur", "minimum wage Iceland", "municipal income tax Iceland", "gross to net Iceland", "salary calculation Iceland", or any question about computing employee pay, withholding income tax (state + municipal), or social contributions for Iceland-based employees. This skill covers PAYE (staðgreiðsla) income tax withholding, the personal tax credit, employer social security contribution (tryggingagjald), mandatory occupational pension (employee 4% + employer 11.5%), supplementary private pension, no statutory minimum wage (collective-agreement minimums), 2026 benefit valuation for vehicles, meals, housing, commuting, fitness and employee loans, and filing obligations to Skatturinn. ALWAYS read this skill before processing any Iceland payroll.
-version: 0.8
+version: 1.0
 jurisdiction: IS
 tax_year: 2026
-last_updated: 2026-10-30
+last_updated: 2026-11-14
 depends_on:
   - payroll-workflow-base
 category: payroll
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
+type: computation
 ---
 
-# Iceland payroll: employer method for 2026
+# Iceland payroll: employer method for 2026 v1.0
 
 Figures are for tax year 2026. [Dated official rates](https://www.skatturinn.is/english/individuals/key-rates-and-amounts/2026/)
 
@@ -27,12 +28,11 @@ The employer must be on the withholding register (launagreiðendaskrá) and have
 
 For monthly taxable income in 2026, apply each rate only to its band:
 
-| Monthly taxable income, ISK | Rate |
-| --- | ---: |
-| Up to 498,122 | 31.49% |
-| Above 498,122 through 1,398,450 | 37.99% |
-| Above 1,398,450 | 46.29% |
-| Evidence | [Official rates](https://www.skatturinn.is/english/individuals/key-rates-and-amounts/2026/) |
+| Monthly taxable income, ISK | Rate | Source |
+| --- | ---: | --- |
+| Up to 498,122 | 31.49% | [Skatturinn, key rates 2026](https://www.skatturinn.is/english/individuals/key-rates-and-amounts/2026/) |
+| Above 498,122 through 1,398,450 | 37.99% | [Skatturinn, key rates 2026](https://www.skatturinn.is/english/individuals/key-rates-and-amounts/2026/) |
+| Above 1,398,450 | 46.29% | [Skatturinn, key rates 2026](https://www.skatturinn.is/english/individuals/key-rates-and-amounts/2026/) |
 
 Other 2026 payroll figures:
 
@@ -48,10 +48,10 @@ Other 2026 payroll figures:
 | Employer pension taxable to the employee | Only above 12% of the contribution base plus ISK 2,000,000 a year, and never where set by collective agreement or law | [Income Tax Act 90/2003, art. 28(5)](https://www.althingi.is/lagas/nuna/2003090.html) |
 | Payroll tax (tryggingagjald) and fees in withholding | 6.35% (4.90% general levy, 1.35% employment-insurance levy, 0.05% wage-guarantee fee, 0.05% market fee) | [Act 113/1990, art. 2](https://www.althingi.is/lagas/nuna/1990113.html); [Employer notice 1/2026](https://www.skatturinn.is/media/2026/rsk_0601_1_2026.is.pdf) |
 | Seamen on fishing vessels | Additional 0.65%, total 7.00% | [Employer notice 1/2026](https://www.skatturinn.is/media/2026/rsk_0601_1_2026.is.pdf) |
-| Financial activities tax on remuneration | 5.5% | [Act 165/2011, art. 6](https://www.althingi.is/lagas/nuna/2011165.html) |
+| Financial activities tax on remuneration | 5.5% | [Act 165/2011, art. 6](https://www.althingi.is/lagas/nuna/2011165.html); [Employer notice 1/2026](https://www.skatturinn.is/media/2026/rsk_0601_1_2026.is.pdf) |
 | Small-payroll annual threshold | Average below ISK 42,000 a month; ISK 504,000 a year | [Skatturinn, payroll tax](https://www.skatturinn.is/atvinnurekstur/skattar-og-gjold/tryggingagjald) |
 | Middle-band withholding for minor payments from a second payer | Up to ISK 650,000 a month | [Skatturinn, withholding 2026](https://www.skatturinn.is/atvinnurekstur/stadgreidsla-og-reiknad-endurgjald/stadgreidsla/2026) |
-| Late-payment surcharge on withholding | 1% a day after the final due date, capped at 10% | [Act 45/1987, art. 28](https://www.althingi.is/lagas/nuna/1987045.html) |
+| Late-payment surcharge on withholding | 1% a day after the final due date, capped at 10% | [Act 45/1987, art. 28](https://www.althingi.is/lagas/nuna/1987045.html); [Skatturinn, all taxes and charges](https://www.skatturinn.is/innheimta/skattar-og-gjold/allir-skattar-og-gjold/) |
 
 Each withholding rate is state income tax plus the national average municipal tax of 14.94% (state share 16.55%, 23.05% and 31.35% in the three bands). Withholding uses the same municipal rate everywhere, but each municipality sets its own final rate, so the annual assessment collects or refunds the difference. Do not adjust withholding for the employee's municipality. [Rate make-up](https://www.skatturinn.is/atvinnurekstur/stadgreidsla-og-reiknad-endurgjald/stadgreidsla/2026)
 
@@ -235,7 +235,7 @@ For every run, reconcile wages and benefits, employee deductions, employer pensi
 
 Obtain separate residence and social-security determinations for cross-border workers; the A1 decision does not establish income-tax residence. The A1 rule is in the payroll-tax section above. A person who stays in Iceland longer than 183 days in total in any 12-month period, counting normal holiday absence, is fully taxable (Income Tax Act art. 1(1)(3)). A person who is not domiciled here and stays or works here 183 days or less in every 12-month period has limited tax liability on wages for work in Iceland, including through a staffing agency (art. 3(1)); Skatturinn's 2026 withholding page puts this as under 6 months in a 12-month period and taxes these wages under the general rules and brackets. Such a person gets the personal credit only for the days spent in Iceland, from the day of arrival. Where a foreign staffing agency is not tax-resident in Iceland, the user undertaking is the employer for withholding; an EEA, EFTA or Faroese agency is the employer unless agreed otherwise, and the user undertaking is liable if the agency does not pay. Use the [cross-border skill](is-cross-border.md) for source-payment and residence screening and the [social contributions skill](iceland-social-contributions.md) for contribution coverage. [Income Tax Act 90/2003, arts. 1 and 3](https://www.althingi.is/lagas/nuna/2003090.html); [limited tax liability](https://www.skatturinn.is/english/individuals/limited-tax-liability/) Foreign staffing arrangements, nonresidents and treaty relief require the applicable facts and rules before final withholding. [2026 employer guidance](https://www.skatturinn.is/atvinnurekstur/stadgreidsla-og-reiknad-endurgjald/stadgreidsla/2026)
 
-## Worked examples that recompute
+## Two worked examples that recompute
 
 These hypothetical monthly cases assume an ordinary adult employee, full authorised monthly credit, eligible employee pension at 4%, employer pension at 11.5%, no additional savings, no benefits and no other charges unless expressly stated. Figures use exact arithmetic and show two decimal places with final rounding; actual reporting must follow the service's currency/rounding requirements. They are not authority-approved payroll outputs. [Rates and pension inputs](https://www.skatturinn.is/media/2026/rsk_0601_1_2026.is.pdf) The official case below is the filing reference for identical inputs; the decimal table is secondary arithmetic validation. Do not infer a universal rounding rule from one official example.
 
@@ -606,7 +606,7 @@ expected:
 - What current bracket, own-credit and spouse-credit instructions and prior usage apply?
 - Which prior returns, payment claims, bank payments and pension statements require reconciliation or correction?
 
-## When to refuse or refer
+### When to refuse or refer
 
 - Return the period, employee scope, evidence gaps, each cash/noncash component, pension fund and bases, employee and employer contributions, band calculation and credit usage, withholding, bank net, employer costs, filing deadline and references, and reconciliation result. Do not label an unresolved input as confirmed. Recheck before the next wage year, when an official rate/rule changes, or when worker status, pension terms, residence or benefit arrangements change.
 - Refer for a specific supported method; do not substitute this ordinary calculation: cross-border workers (people working temporarily in Iceland for 183 days or less in a 12-month period have limited tax liability; determine domicile, presence and any treaty entitlement under the [cross-border skill](is-cross-border.md)), posted workers and A1 cases, workers hired through a foreign staffing agency (the user undertaking can become liable for withholding), seamen, financial undertakings, board fees, disputed worker classification, and self-employed calculated remuneration. [Limited tax liability and staffing agencies](https://www.skatturinn.is/atvinnurekstur/stadgreidsla-og-reiknad-endurgjald/stadgreidsla/2026)
@@ -619,36 +619,38 @@ For advice on your facts, [contact OpenAccountants](https://www.openaccountants.
 
 ## Sources
 
+Pages dated 2026-11-14 were opened again today. Alþingi law pages returned HTTP 403 on 14 Nov 2026 and keep their earlier read date; where Skatturinn repeats a statutory figure the row in the rates table also links that Skatturinn page.
+
 | Source | URL | Read on |
 | --- | --- | --- |
-| Withholding Act 45/1987, arts. 5, 19, 20 and 28 (withholding base, employer register, due dates, surcharge and interest) | https://www.althingi.is/lagas/nuna/1987045.html | 2026-10-30 |
-| Payroll Tax Act 113/1990, arts. 2, 7, 10 and 12 (rates, base, due dates, interest, annual assessment) | https://www.althingi.is/lagas/nuna/1990113.html | 2026-10-30 |
-| Pension Act 129/1997, arts. 1 to 3 and 7, transitional provision V (coverage, 15.5% minimum, base, payment dates) | https://www.althingi.is/lagas/nuna/1997129.html | 2026-10-30 |
-| Income Tax Act 90/2003 (consolidated 1 Oct 2026), arts. 1, 3, 9, 10, 10a, 18, 28(5), 30, 66 and 67 | https://www.althingi.is/lagas/nuna/2003090.html | 2026-10-30 |
-| Financial Activities Tax Act 165/2011, arts. 2 to 6 | https://www.althingi.is/lagas/nuna/2011165.html | 2026-10-30 |
-| Innovation Act 152/2009, arts. 3(3) and 5 (innovation company, Rannís project confirmation) | https://www.althingi.is/lagas/nuna/2009152.html | 2026-10-30 |
-| Regulation 591/1987 on pay and benefits outside withholding, arts. 1 to 7 (version in force from 1 Jan 2026) | https://files.reglugerd.is/pdf/0591-1987/current | 2026-10-30 |
-| Rules 1559/2025 on the valuation of income (skattmat) for income year 2026, Stjórnartíðindi | https://island.is/stjornartidindi/nr/2771f46a-7402-4e33-87de-16a856e3f81f | 2026-10-30 |
-| Skatturinn, employer notice 2/2026: 2026 valuation rules, sections 1 to 3.2 (RSK 6.01, 12 Jan 2026) | https://www.skatturinn.is/media/2026/rsk_0601_2_2026.is.pdf | 2026-10-30 |
-| Skatturinn, employer notice 1/2026: withholding 2026, rates, credits, payroll tax, return instructions and worked example (RSK 6.01, 5 Jan 2026) | https://www.skatturinn.is/media/2026/rsk_0601_1_2026.is.pdf | 2026-10-30 |
-| Skatturinn, withholding 2026 (rates, credit, exemptions, varying pay, limited tax liability, staffing agencies) | https://www.skatturinn.is/atvinnurekstur/stadgreidsla-og-reiknad-endurgjald/stadgreidsla/2026 | 2026-10-30 |
-| Skatturinn, key rates and amounts 2026 (English) | https://www.skatturinn.is/english/individuals/key-rates-and-amounts/2026/ | 2026-10-30 |
-| Skatturinn, payroll tax (tryggingagjald): rate, base, A1 rule, payment periods | https://www.skatturinn.is/atvinnurekstur/skattar-og-gjold/tryggingagjald | 2026-10-30 |
-| Skatturinn, employer register (launagreiðendaskrá) | https://www.skatturinn.is/atvinnurekstur/ad-hefja-rekstur/launagreidendaskra/ | 2026-10-30 |
-| Skatturinn, electronic withholding returns | https://www.skatturinn.is/atvinnurekstur/rafraen-skil/stadgreidsla/ | 2026-10-30 |
-| Skatturinn, filing withholding on wages, nil returns and corrections | https://www.skatturinn.is/einstaklingar/sjalfsafgreidsla/stadgreidsla-af-launum/ | 2026-10-30 |
-| Skatturinn, wage statements and wage return (payroll-tax base) | https://www.skatturinn.is/atvinnurekstur/framtal-og-alagning/launamidar-og-launaframtal/ | 2026-10-30 |
-| Skatturinn, collections: withholding and payroll tax due dates, surcharge and interest | https://www.skatturinn.is/innheimta/skattar-og-gjold/allir-skattar-og-gjold/ | 2026-10-30 |
-| Skatturinn, personal tax credit and spouse's credit (Icelandic) | https://www.skatturinn.is/einstaklingar/stadgreidsla/personuafslattur/ | 2026-10-30 |
-| Skatturinn, personal tax credit (English) | https://www.skatturinn.is/english/individuals/personal-tax-credit/ | 2026-10-30 |
-| Skatturinn, over-used personal tax credit (2.5% surcharge) | https://www.skatturinn.is/einstaklingar/stadgreidsla/ofnyttur-personuafslattur/ | 2026-10-30 |
-| Skatturinn, pension contribution deductions | https://www.skatturinn.is/einstaklingar/tekjur-og-fradraettir/idgjald-i-lifeyrissjodi/ | 2026-10-30 |
-| Skatturinn, posted workers (English) | https://www.skatturinn.is/english/individuals/posted-workers/ | 2026-10-30 |
-| Skatturinn, limited tax liability (English) | https://www.skatturinn.is/english/individuals/limited-tax-liability/ | 2026-10-30 |
-| Skatturinn, wages and benefits: car benefit and share options | https://www.skatturinn.is/einstaklingar/tekjur-og-fradraettir/launatekjur-og-hlunnindi/ | 2026-10-30 |
-| Skatturinn, valuation (skattmat) index page | https://www.skatturinn.is/einstaklingar/tekjur-og-fradraettir/skattmat/ | 2026-10-23 |
-| Skatturinn, wage statement RSK 2.01 (2026 form, for 2025 wages) | https://www.skatturinn.is/media/rsk02/rsk_0201_2026.is.pdf | 2026-10-30 |
-| Skatturinn, RSK 2.085 share purchases under option contracts (5 Nov 2024) | https://www.skatturinn.is/media/rsk02/rsk_02085.is.pdf | 2026-10-30 |
-| Central Bank of Iceland, bank rates and penalty interest (monthly general rates for employee loans) | https://sedlabanki.is/gagnatorg/vextir | 2026-10-23 |
+| Read for Withholding Act 45/1987, arts. 5, 19, 20 and 28 (withholding base, employer register, due dates, surcharge and interest); not reopened 14 Nov 2026 (403) | https://www.althingi.is/lagas/nuna/1987045.html | 2026-10-30 |
+| Read for Payroll Tax Act 113/1990, arts. 2, 7, 10 and 12 (rates, base, due dates, interest, annual assessment); not reopened 14 Nov 2026 (403) | https://www.althingi.is/lagas/nuna/1990113.html | 2026-10-30 |
+| Read for Pension Act 129/1997, arts. 1 to 3 and 7, transitional provision V (coverage, 15.5% minimum, base, payment dates); not reopened 14 Nov 2026 (403) | https://www.althingi.is/lagas/nuna/1997129.html | 2026-10-30 |
+| Read for Income Tax Act 90/2003 (consolidated 1 Oct 2026), arts. 1, 3, 9, 10, 10a, 18, 28(5), 30, 66 and 67; not reopened 14 Nov 2026 (403) | https://www.althingi.is/lagas/nuna/2003090.html | 2026-10-30 |
+| Read for Financial Activities Tax Act 165/2011, arts. 2 to 6; not reopened 14 Nov 2026 (403) | https://www.althingi.is/lagas/nuna/2011165.html | 2026-10-30 |
+| Read for Innovation Act 152/2009, arts. 3(3) and 5 (innovation company, Rannís project confirmation); not reopened 14 Nov 2026 (403) | https://www.althingi.is/lagas/nuna/2009152.html | 2026-10-30 |
+| Read for Regulation 591/1987 on pay and benefits outside withholding, arts. 1 to 7 (version in force from 1 Jan 2026) | https://files.reglugerd.is/pdf/0591-1987/current | 2026-11-14 |
+| Read for Rules 1559/2025 on the valuation of income (skattmat) for income year 2026, Stjórnartíðindi | https://island.is/stjornartidindi/nr/2771f46a-7402-4e33-87de-16a856e3f81f | 2026-11-14 |
+| Read for Skatturinn, employer notice 2/2026: 2026 valuation rules, sections 1 to 3.2 (RSK 6.01, 12 Jan 2026) | https://www.skatturinn.is/media/2026/rsk_0601_2_2026.is.pdf | 2026-11-14 |
+| Read for Skatturinn, employer notice 1/2026: withholding 2026, rates, credits, payroll tax, return instructions and worked example (RSK 6.01, 5 Jan 2026) | https://www.skatturinn.is/media/2026/rsk_0601_1_2026.is.pdf | 2026-11-14 |
+| Read for Skatturinn, withholding 2026 (rates, credit, exemptions, varying pay, limited tax liability, staffing agencies) | https://www.skatturinn.is/atvinnurekstur/stadgreidsla-og-reiknad-endurgjald/stadgreidsla/2026 | 2026-11-14 |
+| Read for Skatturinn, key rates and amounts 2026 (English) | https://www.skatturinn.is/english/individuals/key-rates-and-amounts/2026/ | 2026-11-14 |
+| Read for Skatturinn, payroll tax (tryggingagjald): rate, base, A1 rule, payment periods | https://www.skatturinn.is/atvinnurekstur/skattar-og-gjold/tryggingagjald | 2026-11-14 |
+| Read for Skatturinn, employer register (launagreiðendaskrá) | https://www.skatturinn.is/atvinnurekstur/ad-hefja-rekstur/launagreidendaskra/ | 2026-11-14 |
+| Read for Skatturinn, electronic withholding returns | https://www.skatturinn.is/atvinnurekstur/rafraen-skil/stadgreidsla/ | 2026-11-14 |
+| Read for Skatturinn, filing withholding on wages, nil returns and corrections | https://www.skatturinn.is/einstaklingar/sjalfsafgreidsla/stadgreidsla-af-launum/ | 2026-11-14 |
+| Read for Skatturinn, wage statements and wage return (payroll-tax base) | https://www.skatturinn.is/atvinnurekstur/framtal-og-alagning/launamidar-og-launaframtal/ | 2026-11-14 |
+| Read for Skatturinn, collections: withholding and payroll tax due dates, surcharge and interest | https://www.skatturinn.is/innheimta/skattar-og-gjold/allir-skattar-og-gjold/ | 2026-11-14 |
+| Read for Skatturinn, personal tax credit and spouse's credit (Icelandic) | https://www.skatturinn.is/einstaklingar/stadgreidsla/personuafslattur/ | 2026-11-14 |
+| Read for Skatturinn, personal tax credit (English) | https://www.skatturinn.is/english/individuals/personal-tax-credit/ | 2026-11-14 |
+| Read for Skatturinn, over-used personal tax credit (2.5% surcharge) | https://www.skatturinn.is/einstaklingar/stadgreidsla/ofnyttur-personuafslattur/ | 2026-11-14 |
+| Read for Skatturinn, pension contribution deductions | https://www.skatturinn.is/einstaklingar/tekjur-og-fradraettir/idgjald-i-lifeyrissjodi/ | 2026-11-14 |
+| Read for Skatturinn, posted workers (English) | https://www.skatturinn.is/english/individuals/posted-workers/ | 2026-11-14 |
+| Read for Skatturinn, limited tax liability (English) | https://www.skatturinn.is/english/individuals/limited-tax-liability/ | 2026-11-14 |
+| Read for Skatturinn, wages and benefits: car benefit and share options | https://www.skatturinn.is/einstaklingar/tekjur-og-fradraettir/launatekjur-og-hlunnindi/ | 2026-11-14 |
+| Read for Skatturinn, valuation (skattmat) index page | https://www.skatturinn.is/einstaklingar/tekjur-og-fradraettir/skattmat/ | 2026-11-14 |
+| Read for Skatturinn, wage statement RSK 2.01 (2026 form, for 2025 wages) | https://www.skatturinn.is/media/rsk02/rsk_0201_2026.is.pdf | 2026-11-14 |
+| Read for Skatturinn, RSK 2.085 share purchases under option contracts (5 Nov 2024) | https://www.skatturinn.is/media/rsk02/rsk_02085.is.pdf | 2026-11-14 |
+| Read for Central Bank of Iceland, bank rates and penalty interest (monthly general rates for employee loans); not reopened 14 Nov 2026, the page builds its tables by script | https://sedlabanki.is/gagnatorg/vextir | 2026-10-23 |
 
-Not yet confirmed: the 2026 reduced payroll-tax rate for EEA workers with an A1 certificate (Skatturinn's levy page gives rates only up to wage year 2025).
+Not yet confirmed: the Alþingi consolidated text as at 14 Nov 2026 (403 today), so the 15.5% minimum pension contribution (Pension Act 129/1997, art. 2) and the 12% plus ISK 2,000,000 employer-pension line (Income Tax Act art. 28(5)) rest on the 30 Oct 2026 reading and no Skatturinn page opened today repeats them; the 2026 reduced payroll-tax rate for EEA workers with an A1 certificate (Skatturinn's levy page gives rates only up to wage year 2025).

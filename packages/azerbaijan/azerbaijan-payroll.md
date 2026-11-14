@@ -1,19 +1,20 @@
 ---
 name: azerbaijan-payroll
 description: 'Use this skill for 2026 Azerbaijan payroll withholding, gross-to-net salary and employer-cost working papers. It covers employer sector classification, standard and private non-oil income-tax schedules, the primary-workplace exemption, personal deductions, social, medical and unemployment deductions, multiple workplaces, monthly payments and quarterly unified reporting. Trigger on Azerbaijan payroll, salary tax, net pay, employer cost, PIT withholding, AZN salary and unified payroll declaration. Use the social-contributions skill for detailed insurance bases, non-employment categories and special elections. Foreign-worker and special-regime cases need their supporting documents. Checked against the law (tier 2); no accountant has signed it off.'
-version: 0.2
+version: 0.3
 jurisdiction: AZ
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-14
 depends_on:
   - payroll-workflow-base
 category: payroll
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
+type: computation
 ---
 
-# Azerbaijan Payroll Withholding and Net Pay v0.2
+# Azerbaijan Payroll Withholding and Net Pay v0.3
 
 > **Checked against the law.** Tax year 2026. Figures independently re-checked against the official sources on 31 October 2026. General reference for working papers; a qualified professional must review the facts and filing position. No accountant has signed this skill off.
 

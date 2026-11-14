@@ -1,14 +1,15 @@
 ---
 name: ua-cross-border
 description: "Ukrainian cross-border tax for tax year 2026 under the Tax Code of Ukraine. Covers residence of individuals (home, centre of vital interests, 183 days, citizenship) and companies, how non-residents are taxed, the permanent establishment test (12-month sites, 183-day services, dependent agents, preparatory exclusions), withholding on Ukrainian-source income under art. 141.4 (15%, freight 6%, insurance 0/4/12%, Eurobond interest 5%, the gross-up), treaty relief with residence certificates and beneficial ownership (art. 103), foreign tax credits, controlled foreign companies under art. 39-2 (control tests, exemptions, the EUR 2 million threshold, the CFC report and 60-day notices), CFC profit of individuals (art. 170.13), leaving Ukraine (art. 179.3) and the fines. Trigger on: Ukraine withholding tax non-resident, податок на репатріацію, КІК, controlled foreign company Ukraine, residence certificate Ukraine, permanent establishment Ukraine. Out of scope: transfer pricing (ua-transfer-pricing), corporate tax generally (ua-corporate-income-tax), personal income tax generally (ua-income-tax)."
-version: 0.1
+version: 0.2
 jurisdiction: UA
 tax_year: 2026
-last_updated: 2026-10-30
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: cross-border
+type: situation-rules
 ---
 
 # Ukraine: cross-border tax (2026)

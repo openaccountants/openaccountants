@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/fr-corporate-tax"
   jurisdiction: "FR"
   tax_year: "2026"
-  last_updated: "2026-11-01"
+  last_updated: "2026-11-14"
 ---
 
-# France: corporate income tax (impôt sur les sociétés, IS) v0.5
+# France: corporate income tax (impôt sur les sociétés, IS) v1.0
 
 > **General reference only.** This skill is general tax reference material for AI-assisted work. It has not been reviewed for any company's facts. Do not file, pay or take a tax position on it without review by a qualified professional in France.
 
@@ -29,10 +29,10 @@ metadata:
 
 | Item | Rate or amount | Tax year | Source |
 |---|---|---|---|
-| Standard IS rate | 25% ("Le taux normal de l'impôt est fixé à 25 %") | Years closed from 31 Dec 2025 | https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000046868562 |
-| SME reduced rate | 15% | Same | Same (art. 219-I-b) |
-| Profit taxed at the reduced rate | First EUR 42,500 "de bénéfice imposable par période de douze mois" | Same | Same |
-| SME condition 1: turnover of the year, restated to 12 months (summed across the group for a consolidation parent) | Not more than EUR 10 million | Same | Same |
+| Standard IS rate | 25% ("Le taux normal de l'impôt est fixé à 25 %") | Years closed from 31 Dec 2025 | https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000046868562 ; https://entreprendre.service-public.gouv.fr/vosdroits/F23575 |
+| SME reduced rate | 15% | Same | Same (art. 219-I-b); https://entreprendre.service-public.gouv.fr/vosdroits/F23575 |
+| Profit taxed at the reduced rate | First EUR 42,500 "de bénéfice imposable par période de douze mois" | Same | Same (art. 219-I-b); https://entreprendre.service-public.gouv.fr/vosdroits/F23575 |
+| SME condition 1: turnover of the year, restated to 12 months (summed across the group for a consolidation parent) | Not more than EUR 10 million | Same | Same (art. 219-I-b); https://entreprendre.service-public.gouv.fr/vosdroits/F23575 |
 | SME condition 2: capital fully paid up and held continuously at least this share by individuals, or by a company meeting the same CGI art. 219-I-b conditions whose capital is at least75% held by individuals; apply the actual specified investment-fund exclusions only where their no-dependence condition is met | 75% | Same | Same |
 | Long-term net gains on participation shares (titres de participation) | 0%, with 12% of the gross gain added back as a share of costs (art. 219-I-a quinquies) | Same | Same |
 | Social contribution on IS (contribution sociale sur l'IS) | 3.3% of IS after an abatement | 2026 | https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000031011715 |
@@ -43,7 +43,6 @@ metadata:
 | Exceptional contribution, entry threshold, second year (the year closing in 2026 for a calendar-year company) | French turnover of EUR 1.5 billion or more | Same | Same |
 | No quarterly instalments where IS is below | EUR 3,000 | 2026 | https://entreprendre.service-public.gouv.fr/vosdroits/F23575 |
 | Late payment interest | 0.20% per month | 2026 | https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000051213330 |
-| Local business taxes on companies (CFE, CVAE) | Not set out here | 2026 | See `fr-cfe` |
 | Pillar Two minimum tax | In force (CGI art. 223 VJ, introduced by the 2024 finance law); groups at EUR 750m or more | 2026 | https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000048846056 |
 
 **The exceptional contribution (contribution exceptionnelle sur les bénéfices des grandes entreprises).** It was created by article 48 of the 2025 finance law (loi n° 2025-127 du 14 février 2025) for the first year closed from 31 December 2025 only. Article 12 of the 2026 finance law extended it. The consolidated text read today says: "Il est institué, au titre des deux premiers exercices clos à compter du 31 décembre 2025, une contribution exceptionnelle". So it **does apply** to the second year, which for a calendar-year company is the year closing 31 December 2026. What the enacted text says for that second year:
@@ -55,6 +54,8 @@ metadata:
 - Payment: an advance payment of 98% of the estimated contribution at the date of the last IS instalment, and the balance by the IS balance date (part VIII).
 
 The BOFiP comment on the extension (ACTU-2026-00097) could not be opened today (see Sources). Rely on the statute above.
+
+Local business taxes on companies (CFE, CVAE) are not set out here: see `fr-cfe`.
 
 ## The taxable base
 
@@ -172,6 +173,7 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
+| Service Public Entreprendre F23575 (checked 17 Feb 2026): read for the 25% normal rate, the 15% rate on the first EUR 42,500, the EUR 10 million turnover and 75% individual-holding conditions, and the quarterly instalments and 15 May balance | https://entreprendre.service-public.gouv.fr/vosdroits/F23575 | 2026-11-14 |
 | CGI art. 219 (rates, SME rate, participation gains) | https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000046868562 | 2026-10-22 |
 | CGI art. 235 ter ZC (social contribution) | https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000031011715 | 2026-10-22 |
 | Loi n° 2025-127, art. 48, consolidated as amended by loi n° 2026-103 art. 12 (exceptional contribution) | https://www.legifrance.gouv.fr/loda/id/JORFARTI000051168626 | 2026-10-22 |
@@ -212,10 +214,10 @@ expected:
 | CGI art. 220 quinquies I/II: eligible prior profit, credits/reductions exclusion and election conditions reread | https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000053560738/2026-10-29 | 2026-10-29 |
 | Loi n° 2025-127, art. 48, consolidated: selected article only, including both turnover years and own taper conditions | https://www.legifrance.gouv.fr/loda/id/JORFARTI000051168626/2026-10-29 | 2026-10-29 |
 | CGI art. 182 B I bis/II: gross base, full eligible recipient population and 10% expense allowance reread | https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000045765660/2026-10-29 | 2026-10-29 |
-| Selected corporate repair clauses: CGI arts. 1668, 119 ter, 182 B bis/119 quater, 1731, 223 A, 145/216, 187/182 B and 221; F23575 EI option; current 219 and art. 15-II effect clause. Rendered official captures, selected native clauses only; not a full amendment comparison. | Existing official URLs above, with exact quotation/range/hash/read attribution in the corporate ledger | 2026-10-29 |
+| Selected corporate repair clauses: CGI arts. 1668, 119 ter, 182 B bis/119 quater, 1731, 223 A, 145/216, 187/182 B and 221; F23575 EI option; current 219 and art. 15-II effect clause, read on the official pages listed above | https://entreprendre.service-public.gouv.fr/vosdroits/F23575 | 2026-10-29 |
 
 Not yet confirmed: the conditions of the option for IS under CGI art. 239 (not read today); the interest limitation rules for tax-consolidated groups; and the official 2027 filing calendar for years closed on 31 December 2026 (the dates given above are computed from the statute and the 15-day extension, not taken from a published calendar).
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-01. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `fr-corporate-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/fr-corporate-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `fr-corporate-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/fr-corporate-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

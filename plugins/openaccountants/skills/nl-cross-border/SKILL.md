@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/nl-cross-border"
   jurisdiction: "NL"
   tax_year: "2026"
-  last_updated: "2026-11-01"
+  last_updated: "2026-11-14"
 ---
 
-# Netherlands: cross-border tax for people and companies (2026) v0.3
+# Netherlands: cross-border tax for people and companies (2026) v0.4
 
 > **Source-cited draft.** No accountant has reviewed this skill yet. Every figure below comes from wetten.overheid.nl or belastingdienst.nl, read on 22 October 2026. It prepares working papers; it is not authority to file or pay.
 
@@ -50,7 +50,7 @@ Tax year: the calendar year. 2026 figures apply to 1 January to 31 December 2026
 | Box 3 tax-free allowance (heffingvrij vermogen) | €59,357 | [Wet IB 2001 art. 5.5](https://wetten.overheid.nl/BWBR0011353/) |
 | Expat scheme, maximum tax-free allowance | 30% of wage including the allowance in 2025 and 2026; 27% from 1 January 2027 (30% kept for rulings applied by the last 2023 pay period) | [Handboek Loonheffingen 2026 §19.4](https://download.belastingdienst.nl/belastingdienst/docs/handboek-loonheffingen-lh0221t61fd.pdf) |
 | Expat scheme, salary norm (wage excluding allowance must be more than) | €48,013; €36,497 if under 30 with a qualifying master's | [Belastingdienst expat scheme](https://www.belastingdienst.nl/wps/wcm/connect/en/individuals/content/coming-to-work-in-the-netherlands-30-percent-facility); Handboek 2026 |
-| Expat scheme, salary norm announced for 2027 | €51,899 (before indexation, not final) | Handboek 2026 |
+| Expat scheme, salary norm announced for 2027 | €51,899 (before indexation, not final) | Handboek 2026; https://download.belastingdienst.nl/belastingdienst/docs/handboek-loonheffingen-lh0221t61fd.pdf |
 | Expat scheme, cap | €78,600 a year (30% of a €262,000 base) | [Belastingdienst expat scheme](https://www.belastingdienst.nl/wps/wcm/connect/en/individuals/content/coming-to-work-in-the-netherlands-30-percent-facility) |
 | Corporate tax (Vpb) | 19% to €200,000; 25.8% above | [Wet Vpb 1969 art. 22](https://wetten.overheid.nl/BWBR0002672/) |
 | Dividend tax (dividendbelasting) | 15% of the distribution | [Wet DB 1965 art. 5](https://wetten.overheid.nl/BWBR0002515/) |
@@ -214,4 +214,4 @@ Not yet confirmed: the filing deadlines for 2026 M and non-resident returns (set
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-01. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `nl-cross-border` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/nl-cross-border. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `nl-cross-border` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/nl-cross-border. If neither is available, confirm every figure against the official source pages cited above before relying on it.

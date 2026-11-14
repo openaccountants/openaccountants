@@ -4,11 +4,12 @@ description: "Use this skill for Isle of Man VAT in 2026 under the Value Added T
 jurisdiction: IM
 category: international
 tax_year: 2026
-last_updated: 2026-10-31
-version: 1.2
+last_updated: 2026-11-14
+version: 1.3
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: vat-gst
+type: situation-rules
 ---
 
 # Isle of Man VAT (2026)
@@ -30,24 +31,23 @@ There is one VAT skill for the Island. It sits in this folder with the rest of t
 | Item | Rate or amount | Year | Source |
 |---|---|---|---|
 | Standard rate | 20% | 2026 | VATA 1996 s.2(1), https://legislation.gov.im/cms/images/LEGISLATION/PRINCIPAL/1996/1996-0001/1996-0001_61.pdf ; https://www.gov.im/categories/tax-vat-and-your-money/customs-and-excise/vat/ |
-| Reduced rate (supplies in Schedule 1) | 5% | 2026 | VATA 1996 s.29A(1), Sch 1 |
-| Zero rate (supplies in Schedule 8) | 0% | 2026 | VATA 1996 s.30, Sch 8; VAT page |
+| Reduced rate (supplies in Schedule 1) | 5% | 2026 | VATA 1996 s.29A(1), Sch 1: https://legislation.gov.im/cms/images/LEGISLATION/PRINCIPAL/1996/1996-0001/1996-0001_61.pdf |
+| Zero rate (supplies in Schedule 8) | 0% | 2026 | VATA 1996 s.30, Sch 8; VAT page: https://legislation.gov.im/cms/images/LEGISLATION/PRINCIPAL/1996/1996-0001/1996-0001_61.pdf https://www.gov.im/categories/tax-vat-and-your-money/customs-and-excise/vat/ |
 | Reduced rate: sleeping accommodation in hotels, guest-houses, hostels, holiday dwellings, holiday camps, caravan and camp sites in the Island | 5% | 2026 | VATA 1996 Sch 1 Group 8; VAT Notice 709/3A MAN, https://www.gov.im/media/1385421/vat-notice-709-3a-man_compressed.pdf |
 | Reduced rate: construction services on eligible buildings in the Island | 5% | notice in effect from 6 August 2026 (Group 14 inserted by SD 2022/0249) | VATA 1996 Sch 1 Group 14; VAT Notice 708 MAN, https://www.gov.im/media/1393990/reduced-rate-notice-construction-services-6-august-2026.pdf |
-| Catering share of a half or full board tariff (hotels) | normally not less than 35% of the inclusive tariff, at 20% | 2026 | VAT Notice 709/3A MAN para 5 |
+| Catering share of a half or full board tariff (hotels) | normally not less than 35% of the inclusive tariff, at 20% | 2026 | VAT Notice 709/3A MAN para 5: https://www.gov.im/media/1385421/vat-notice-709-3a-man_compressed.pdf |
 | Registration threshold, taxable supplies in the past 12 months (tested at each month end) | more than GBP 90,000 | 2026 | VATA 1996 Sch 2 para 1(1)(a); https://www.gov.im/categories/tax-vat-and-your-money/customs-and-excise/vat/registering-for-vat/ |
-| Registration, taxable supplies expected in the next 30 days alone | more than GBP 90,000 | 2026 | VATA 1996 Sch 2 para 1(1)(b); Registering for VAT page |
-| No registration if the next 12 months will not exceed | GBP 88,000 | 2026 | VATA 1996 Sch 2 para 1(3) |
+| Registration, taxable supplies expected in the next 30 days alone | more than GBP 90,000 | 2026 | VATA 1996 Sch 2 para 1(1)(b); Registering for VAT page: https://legislation.gov.im/cms/images/LEGISLATION/PRINCIPAL/1996/1996-0001/1996-0001_61.pdf https://www.gov.im/categories/tax-vat-and-your-money/customs-and-excise/vat/ https://www.gov.im/categories/tax-vat-and-your-money/customs-and-excise/vat/registering-for-vat/ |
+| No registration if the next 12 months will not exceed | GBP 88,000 | 2026 | VATA 1996 Sch 2 para 1(3): https://legislation.gov.im/cms/images/LEGISLATION/PRINCIPAL/1996/1996-0001/1996-0001_61.pdf |
 | Voluntary deregistration if the next 12 months will not exceed | GBP 88,000 | 2026 | https://www.gov.im/categories/tax-vat-and-your-money/customs-and-excise/vat/de-registering-for-vat/ |
-| VAT on stock and assets at deregistration, accounted for only if over | GBP 1,000 | 2026 | De-registering for VAT page |
+| VAT on stock and assets at deregistration, accounted for only if over | GBP 1,000 | 2026 | De-registering for VAT page: https://www.gov.im/categories/tax-vat-and-your-money/customs-and-excise/vat/ https://www.gov.im/categories/tax-vat-and-your-money/customs-and-excise/vat/de-registering-for-vat/ |
 | Error correction threshold | net errors up to the greater of GBP 10,000 or 1% of box 6, capped at GBP 50,000, can be corrected on a later return | 2026 | https://www.gov.im/categories/tax-vat-and-your-money/customs-and-excise/vat/correcting-a-vat-return-error/ |
 | Late return penalty | GBP 200 for a late return when 3 other returns were late in the previous 24 months | periods starting on or after 1 January 2023 | VATA 1996 s.59ZA, Sch 15B para 5; VAT Penalties and Interest notice (March 2026), https://www.gov.im/media/1392259/vat-penalties-and-interest-notice-27-march-2026_compressed.pdf |
-| Late payment penalty, first | 3% of VAT unpaid at day 15, plus 3% of VAT unpaid at day 30 | same | VATA 1996 Sch 15C para 5 |
-| Late payment penalty, second | 10% a year on VAT unpaid after day 30 | same | VATA 1996 Sch 15C para 7(3) |
+| Late payment penalty, first | 3% of VAT unpaid at day 15, plus 3% of VAT unpaid at day 30 | same | VATA 1996 Sch 15C para 5: https://legislation.gov.im/cms/images/LEGISLATION/PRINCIPAL/1996/1996-0001/1996-0001_61.pdf |
+| Late payment penalty, second | 10% a year on VAT unpaid after day 30 | same | VATA 1996 Sch 15C para 7(3): https://legislation.gov.im/cms/images/LEGISLATION/PRINCIPAL/1996/1996-0001/1996-0001_61.pdf |
 | Late payment interest | 7.75% a year | from 1 May 2026 | https://www.gov.im/categories/tax-vat-and-your-money/customs-and-excise/payments/ |
-| Repayment interest | 2.75% a year | from 8 January 2026 | Payments page |
-| Partial exemption de minimis | exempt input tax not more than GBP 625 a month on average and not more than half of total input tax | 2026 | HMRC VAT Notice 706 para 11.2 (HMRC notices apply to Island traders: VAT page) |
-
+| Repayment interest | 2.75% a year | from 8 January 2026 | Payments page: https://www.gov.im/categories/tax-vat-and-your-money/customs-and-excise/payments/ |
+| Partial exemption de minimis | exempt input tax not more than GBP 625 a month on average and not more than half of total input tax | 2026 | HMRC VAT Notice 706 para 11.2 (HMRC notices apply to Island traders: VAT page): https://www.gov.im/categories/tax-vat-and-your-money/customs-and-excise/vat/ https://www.gov.uk/guidance/partial-exemption-vat-notice-706 |
 ## The taxable base
 
 ### Step 1: is there a taxable supply, and where is it made?
@@ -170,23 +170,23 @@ expected:
 | Source | URL | Read on |
 |---|---|---|
 | Value Added Tax Act 1996 (AT 1 of 1996), consolidated text [61]: ss.2, 29A, 30, 31, 55A, 59ZA; Sch 1 (Groups 8 and 14), Sch 2 para 1, Sch 8 and Sch 9 indexes, Sch 9 Part III, Sch 15B para 5, Sch 15C paras 4 to 7 | https://legislation.gov.im/cms/images/LEGISLATION/PRINCIPAL/1996/1996-0001/1996-0001_61.pdf | 2026-10-30 |
-| Customs and Immigration, VAT | https://www.gov.im/categories/tax-vat-and-your-money/customs-and-excise/vat/ | 2026-10-30 |
-| Customs and Immigration, Registering for VAT | https://www.gov.im/categories/tax-vat-and-your-money/customs-and-excise/vat/registering-for-vat/ | 2026-10-30 |
-| Customs and Immigration, De-registering for VAT | https://www.gov.im/categories/tax-vat-and-your-money/customs-and-excise/vat/de-registering-for-vat/ | 2026-10-30 |
-| Customs and Immigration, Correcting a VAT Return Error | https://www.gov.im/categories/tax-vat-and-your-money/customs-and-excise/vat/correcting-a-vat-return-error/ | 2026-10-30 |
-| Customs and Immigration, Land and Property | https://www.gov.im/categories/tax-vat-and-your-money/customs-and-excise/vat/land-and-property/ | 2026-10-30 |
-| Customs and Immigration, Payments (penalties and interest rates) | https://www.gov.im/categories/tax-vat-and-your-money/customs-and-excise/payments/ | 2026-10-30 |
-| Customs and Immigration, Imports and Exports | https://www.gov.im/categories/tax-vat-and-your-money/customs-and-excise/imports-and-exports/ | 2026-10-30 |
-| Customs and Immigration, Customs and Excise Online Service | https://www.gov.im/categories/tax-vat-and-your-money/customs-and-excise/customs-and-excise-online-service/ | 2026-10-30 |
-| Notice: VAT Penalties and Interest (March 2026) | https://www.gov.im/media/1392259/vat-penalties-and-interest-notice-27-march-2026_compressed.pdf | 2026-10-30 |
-| VAT Notice 708 MAN, Reduced Rate: Construction Services in the Isle of Man (effect from 6 August 2026) | https://www.gov.im/media/1393990/reduced-rate-notice-construction-services-6-august-2026.pdf | 2026-10-30 |
-| VAT Notice: Domestic Reverse Charge, Construction Services in the Isle of Man (July 2024) | https://www.gov.im/media/1394772/domestic-reverse-charge_compressed.pdf | 2026-10-30 |
-| VAT Notice 709/3A MAN, Reduced Rate: Hotel Accommodation and Similar Establishments (July 2024) | https://www.gov.im/media/1385421/vat-notice-709-3a-man_compressed.pdf | 2026-10-30 |
-| VAT Notice 709/5 MAN, Isle of Man Tour Operator's Margin Scheme | https://www.gov.im/media/1385422/vat-notice-709-5-man_compressed.pdf | 2026-10-30 |
-| Guidance notes on completing VAT 1 MAN (April 2026) | https://www.gov.im/media/1392505/vat-1-man-guidance-notes-uploaded-170426.pdf | 2026-10-30 |
-| Exemption from using VAT Online Services (July 2026) | https://www.gov.im/media/1393738/vat-online-exemption-guidance-july-2026.pdf | 2026-10-30 |
+| Customs and Immigration, VAT: read for the rules and figures this Guide cites from it | https://www.gov.im/categories/tax-vat-and-your-money/customs-and-excise/vat/ | 2026-10-30 |
+| Customs and Immigration, Registering for VAT: read for the rules and figures this Guide cites from it | https://www.gov.im/categories/tax-vat-and-your-money/customs-and-excise/vat/registering-for-vat/ | 2026-10-30 |
+| Customs and Immigration, De-registering for VAT: read for the rules and figures this Guide cites from it | https://www.gov.im/categories/tax-vat-and-your-money/customs-and-excise/vat/de-registering-for-vat/ | 2026-10-30 |
+| Customs and Immigration, Correcting a VAT Return Error: read for the rules and figures this Guide cites from it | https://www.gov.im/categories/tax-vat-and-your-money/customs-and-excise/vat/correcting-a-vat-return-error/ | 2026-10-30 |
+| Customs and Immigration, Land and Property: read for the rules and figures this Guide cites from it | https://www.gov.im/categories/tax-vat-and-your-money/customs-and-excise/vat/land-and-property/ | 2026-10-30 |
+| Customs and Immigration, Payments: read for penalties and interest rates | https://www.gov.im/categories/tax-vat-and-your-money/customs-and-excise/payments/ | 2026-11-14 |
+| Customs and Immigration, Imports and Exports: read for the rules and figures this Guide cites from it | https://www.gov.im/categories/tax-vat-and-your-money/customs-and-excise/imports-and-exports/ | 2026-10-30 |
+| Customs and Immigration, Customs and Excise Online Service: read for the rules and figures this Guide cites from it | https://www.gov.im/categories/tax-vat-and-your-money/customs-and-excise/customs-and-excise-online-service/ | 2026-10-30 |
+| Notice: VAT Penalties and Interest (March 2026): read for the rules and figures this Guide cites from it | https://www.gov.im/media/1392259/vat-penalties-and-interest-notice-27-march-2026_compressed.pdf | 2026-10-30 |
+| VAT Notice 708 MAN, Reduced Rate: Construction Services in the Isle of Man: read for effect from 6 August 2026 | https://www.gov.im/media/1393990/reduced-rate-notice-construction-services-6-august-2026.pdf | 2026-10-30 |
+| VAT Notice: Domestic Reverse Charge, Construction Services in the Isle of Man (July 2024): read for the rules and figures this Guide cites from it | https://www.gov.im/media/1394772/domestic-reverse-charge_compressed.pdf | 2026-10-30 |
+| VAT Notice 709/3A MAN, Reduced Rate: Hotel Accommodation and Similar Establishments (July 2024): read for the rules and figures this Guide cites from it | https://www.gov.im/media/1385421/vat-notice-709-3a-man_compressed.pdf | 2026-10-30 |
+| VAT Notice 709/5 MAN, Isle of Man Tour Operator's Margin Scheme: read for the rules and figures this Guide cites from it | https://www.gov.im/media/1385422/vat-notice-709-5-man_compressed.pdf | 2026-10-30 |
+| Guidance notes on completing VAT 1 MAN (April 2026): read for the rules and figures this Guide cites from it | https://www.gov.im/media/1392505/vat-1-man-guidance-notes-uploaded-170426.pdf | 2026-10-30 |
+| Exemption from using VAT Online Services (July 2026): read for the rules and figures this Guide cites from it | https://www.gov.im/media/1393738/vat-online-exemption-guidance-july-2026.pdf | 2026-10-30 |
 | HMRC VAT Notice 706, Partial exemption, section 11 | https://www.gov.uk/guidance/partial-exemption-vat-notice-706 | 2026-10-30 |
-| HMRC VAT Notice 700, The VAT guide | https://www.gov.uk/guidance/vat-guide-notice-700 | 2026-10-30 |
-| HMRC VAT Notice 700/12, Filling in your VAT return (boxes 1 to 9) | https://www.gov.uk/guidance/how-to-fill-in-and-submit-your-vat-return-vat-notice-70012 | 2026-10-30 |
+| HMRC VAT Notice 700, The VAT guide: read for the rules and figures this Guide cites from it | https://www.gov.uk/guidance/vat-guide-notice-700 | 2026-10-30 |
+| HMRC VAT Notice 700/12, Filling in your VAT return: read for boxes 1 to 9 | https://www.gov.uk/guidance/how-to-fill-in-and-submit-your-vat-return-vat-notice-70012 | 2026-10-30 |
 
 Not yet confirmed: the due date for Island VAT returns and payments (the old version of this skill said 1 month and 7 days after the period end; HMRC Notice 700/12 gives that for UK traders, but no Island source read today states it, and the Island VAT Regulations were not read); whether UK Making Tax Digital record-keeping rules apply in the Island (the old version said they do; the Island pages read today describe filing through the Island's own online portal and do not mention Making Tax Digital); the format of Island VAT numbers (the old version said GB plus 9 digits); the full layout of the Island return beyond box 10 (HMRC Notice 700/12 describes boxes 1 to 9 for the UK return); the late registration penalty amount; any other Island-only zero-rating or exemption differences from the UK (the old version flagged aircraft parts and repairs); whether postponed VAT accounting lets an Island importer declare import VAT on the return instead of paying it at the border (the old version said so; the Imports and Exports page mentions only that postponed-accounting users already have a Customs Declaration Service login).

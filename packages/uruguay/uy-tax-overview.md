@@ -1,10 +1,10 @@
 ---
 name: uy-tax-overview
 description: "Uruguay tax overview and router for 2026: which Uruguay skill to load for a question and in what order, with the few facts that apply across all of them. Covers the calendar tax year, the peso, the two collectors (DGI for taxes, BPS for social security and wage IRPF), the source principle and the 2026 change for residents' foreign capital income, the BPC of UYU 6,864, and the wealth tax (Impuesto al Patrimonio: 1.5% for companies, 2.8% for banks, 3% for low-tax entities without a permanent establishment), which has no separate skill. Routes to IRPF, IRAE, IVA, IRNR and treaties, transfer pricing, payroll, BPS contributions and company formation. Trigger on: Uruguay taxes, sistema tributario uruguayo, which taxes in Uruguay, DGI BPS, Impuesto al Patrimonio, Uruguay tax overview 2026."
-version: 0.1
+version: 0.2
 jurisdiction: UY
 tax_year: 2026
-last_updated: 2026-11-11
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
@@ -12,7 +12,7 @@ domain: income-tax
 type: router
 ---
 
-# Uruguay tax overview and router, 2026 v0.1
+# Uruguay tax overview and router, 2026 v0.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -95,4 +95,4 @@ expected:
 
 Not yet confirmed: the 2026 individuals' wealth tax rates after the yearly reductions, and the mínimo no imponible; whether the Executive has used art. 54 to cut any wealth tax rate for 2026; the wealth tax return form and due dates; company fiscal years other than the calendar year (in uy-corporate-income-tax).
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.
