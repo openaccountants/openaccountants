@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/fr-freelance-intake"
   jurisdiction: "FR"
   tax_year: "2026"
-  last_updated: "2026-10-31"
+  last_updated: "2026-11-14"
 ---
 
 # France: intake for a self-employed person's tax returns (micro-entrepreneur, entreprise individuelle, profession libérale)
@@ -747,21 +747,24 @@ The levies differ again for rental income, property gains and some savings produ
 
 ## Sources
 
-- Régime fiscal de la micro-entreprise: https://entreprendre.service-public.gouv.fr/vosdroits/F23267 (read 2026-10-31)
-- Comment déclarer les revenus provenant de mon activité de micro-entrepreneur ?: https://www.impots.gouv.fr/particulier/questions/comment-declarer-les-revenus-provenant-de-mon-activite-dauto-entrepreneur (read 2026-10-31)
-- Résultat imposable à l'impôt sur le revenu (IR) ou à l'impôt sur les sociétés (IS): https://www.impots.gouv.fr/professionnel/resultat-imposable-limpot-sur-le-revenu-ir-ou-limpot-sur-les-societes (read 2026-10-31)
-- Les modalités de la déclaration de revenus en 2026: https://www.impots.gouv.fr/les-modalites-de-la-declaration-de-revenus-en-2026 (read 2026-10-31)
-- Franchise en base de TVA: https://entreprendre.service-public.gouv.fr/vosdroits/F21746 (read 2026-10-31)
-- Déclarer et payer la TVA: https://entreprendre.service-public.gouv.fr/vosdroits/F23566 (read 2026-10-31)
-- VAT rates on services: https://bofip.impots.gouv.fr/bofip/1013-PGP.html (read 2026-10-31)
-- Notice to the CA3, 2026: https://www.impots.gouv.fr/sites/default/files/formulaires/3310-ca3-sd/2026/3310-ca3-sd_5426.pdf (read 2026-10-31)
-- L'essentiel du statut (auto-entrepreneur): https://www.autoentrepreneur.urssaf.fr/portail/accueil/sinformer-sur-le-statut/lessentiel-du-statut.html (read 2026-10-31)
-- Quotient familial d'un couple marié ou pacsé: https://www.service-public.gouv.fr/particuliers/vosdroits/F2705 (read 2026-10-31)
-- Cotisation foncière des entreprises: https://entreprendre.service-public.gouv.fr/vosdroits/F23547 (read 2026-10-31)
-- Small-value equipment: https://bofip.impots.gouv.fr/bofip/2109-PGP.html (read 2026-10-31)
-- Barème, flat deduction on salaries: https://bofip.impots.gouv.fr/bofip/10855-PGP.html/identifiant=BOI-BAREME-000035-20260217 (read 2026-10-31)
-- Revenus d'épargne et de placement: https://www.service-public.gouv.fr/particuliers/vosdroits/F2613 (read 2026-10-31)
-- Prélèvements sociaux sur les revenus du patrimoine et de placement: https://www.service-public.gouv.fr/particuliers/vosdroits/F2329 (read 2026-10-31)
+
+| Source and what was read | Official URL | Read on |
+|---|---|---|
+| Régime fiscal de la micro-entreprise: read for 1.7%, 2.2%, 71%, 50%, 34% and the conditions next to them | https://entreprendre.service-public.gouv.fr/vosdroits/F23267 | 2026-11-14 |
+| Comment déclarer les revenus provenant de mon activité de micro-entrepreneur ?: read for 12.3%, 21.2%, 1.7%, 2.2%, 71% and the conditions next to them | https://www.impots.gouv.fr/particulier/questions/comment-declarer-les-revenus-provenant-de-mon-activite-dauto-entrepreneur | 2026-11-14 |
+| Résultat imposable à l'impôt sur le revenu (IR) ou à l'impôt sur les sociétés (IS): read for 71%, 34%, 50%, EUR 188,700, EUR 77,700 and the conditions next to them | https://www.impots.gouv.fr/professionnel/resultat-imposable-limpot-sur-le-revenu-ir-ou-limpot-sur-les-societes | 2026-11-14 |
+| Les modalités de la déclaration de revenus en 2026: read for 10%, EUR 10,000, EUR 976, EUR 974 and the conditions next to them | https://www.impots.gouv.fr/les-modalites-de-la-declaration-de-revenus-en-2026 | 2026-11-14 |
+| Franchise en base de TVA: read for EUR 41,250, EUR 50,000, EUR 55,000, EUR 85,000, EUR 37,500 and the conditions next to them | https://entreprendre.service-public.gouv.fr/vosdroits/F21746 | 2026-11-14 |
+| Déclarer et payer la TVA: read for 10%, 55%, 40%, EUR 85,000, EUR 37,500 and the conditions next to them | https://entreprendre.service-public.gouv.fr/vosdroits/F23566 | 2026-11-14 |
+| VAT rates on services: read for 5.5%, 10%, 20%, EUR 500 and the conditions next to them | https://bofip.impots.gouv.fr/bofip/1013-PGP.html | 2026-11-14 |
+| Notice to the CA3, 2026: read for 10.6%, 10%, 20%, 1%, EUR 10,000 and the conditions next to them | https://www.impots.gouv.fr/sites/default/files/formulaires/3310-ca3-sd/2026/3310-ca3-sd_5426.pdf | 2026-11-14 |
+| L'essentiel du statut (auto-entrepreneur): read for 23.2%, 12.3%, 21.2%, 15.9%, 19.2% and the conditions next to them | https://www.autoentrepreneur.urssaf.fr/portail/accueil/sinformer-sur-le-statut/lessentiel-du-statut.html | 2026-11-14 |
+| Quotient familial d'un couple marié ou pacsé: read for 40%, EUR 29,579, EUR 1,000 and the conditions next to them | https://www.service-public.gouv.fr/particuliers/vosdroits/F2705 | 2026-11-14 |
+| Cotisation foncière des entreprises: read for 50%, 1%, EUR 10,000, EUR 5,000, EUR 1,000 and the conditions next to them | https://entreprendre.service-public.gouv.fr/vosdroits/F23547 | 2026-11-14 |
+| Small-value equipment: read for EUR 500 and the conditions next to them | https://bofip.impots.gouv.fr/bofip/2109-PGP.html | 2026-11-14 |
+| Barème, flat deduction on salaries: read for 10% and the conditions next to them | https://bofip.impots.gouv.fr/bofip/10855-PGP.html/identifiant=BOI-BAREME-000035-20260217 | 2026-11-14 |
+| Revenus d'épargne et de placement: read for 18.6%, 12.8%, 10%, 40%, EUR 50,000 and the conditions next to them | https://www.service-public.gouv.fr/particuliers/vosdroits/F2613 | 2026-11-14 |
+| Prélèvements sociaux sur les revenus du patrimoine et de placement: read for 17.2%, 18.6%, 10.6%, EUR 1,000 and the conditions next to them | https://www.service-public.gouv.fr/particuliers/vosdroits/F2329 | 2026-11-14 |
 
 Not yet confirmed: the flat-payment ceiling for the option taken in 2026. F23267 prints EUR 29,579 for a single person against year N-2, and impots.gouv.fr prints EUR 29,315 against the 2024 reference income.
 
@@ -771,4 +774,4 @@ This skill and its outputs are provided for informational and computational purp
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-31. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `fr-freelance-intake` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/fr-freelance-intake. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `fr-freelance-intake` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/fr-freelance-intake. If neither is available, confirm every figure against the official source pages cited above before relying on it.

@@ -1,14 +1,15 @@
 ---
 name: ch-ahv-iv
 description: "Swiss AHV/IV/EO social contributions of the self-employed and of non-employed persons for 2026. Covers who counts as self-employed, the full rate of 10.0% (AHV 8.1%, IV 1.4%, EO 0.5%) from CHF 60,500, the full sliding scale from CHF 10,100 (5.371%) and the minimum contribution of CHF 530, how the contribution income is found (tax assessment, add-back of own contributions, interest on own capital, rounding), provisional (Akonto) and final contributions, the allowance past reference age, 5% late interest, non-employed contributions by wealth (CHF 530 to 26,500), voluntary BVG and the pillar 3a limits for 2026 (CHF 7,258 / 20% up to CHF 36,288). Trigger on: AHV Selbständige, AHV/IV/EO self-employed, sinkende Beitragsskala, Akontobeiträge, Beitragsverfügung, Nichterwerbstätige AHV, Säule 3a Selbständige. Out of scope: ch-payroll (employees), ch-federal-income-tax and ch-cantonal-tax (the tax return), ch-cross-border (which country insures)."
-version: 2.2
+version: 2.3
 jurisdiction: CH
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
+type: computation
 ---
 
 # Switzerland: AHV/IV/EO contributions of the self-employed (2026)
@@ -57,27 +58,27 @@ A self-employed person is not insured against unemployment, is not compulsorily 
 
 **The 2026 sliding scale.** Total AHV/IV/EO rate on the year's income ([sheet 2.02, no. 6](https://www.ahv-iv.ch/p/2.02.d)). The AHV part alone is in AHVV art. 21 para. 1 (4.35% to 7.55%); IV and EO are scaled in the same proportion (IVG art. 3 para. 1, EOG art. 27 para. 2).
 
-| Income from (CHF) | Under (CHF) | Total rate | AHV part (AHVV art. 21) |
-|---|---|---|---|
-| 0 | 10,100 | Minimum CHF 530 | |
-| 10,100 | 17,600 | 5.371% | 4.35% |
-| 17,600 | 23,000 | 5.494% | 4.45% |
-| 23,000 | 25,500 | 5.617% | 4.55% |
-| 25,500 | 28,000 | 5.741% | 4.65% |
-| 28,000 | 30,500 | 5.864% | 4.75% |
-| 30,500 | 33,000 | 5.987% | 4.85% |
-| 33,000 | 35,500 | 6.235% | 5.05% |
-| 35,500 | 38,000 | 6.481% | 5.25% |
-| 38,000 | 40,500 | 6.728% | 5.45% |
-| 40,500 | 43,000 | 6.976% | 5.65% |
-| 43,000 | 45,500 | 7.222% | 5.85% |
-| 45,500 | 48,000 | 7.469% | 6.05% |
-| 48,000 | 50,500 | 7.840% | 6.35% |
-| 50,500 | 53,000 | 8.209% | 6.65% |
-| 53,000 | 55,500 | 8.580% | 6.95% |
-| 55,500 | 58,000 | 8.951% | 7.25% |
-| 58,000 | 60,500 | 9.321% | 7.55% |
-| 60,500 | no limit | 10.000% | 8.1% |
+| Income from (CHF) | Under (CHF) | Total rate | AHV part (AHVV art. 21) | Source |
+|---|---|---|---|---|
+| 0 | 10,100 | Minimum CHF 530 | | [Merkblatt 2.02, no. 5 and 6](https://www.ahv-iv.ch/p/2.02.d); AHV part: [AHVV art. 21](https://www.fedlex.admin.ch/eli/cc/63/1185_1183_1185/de) |
+| 10,100 | 17,600 | 5.371% | 4.35% | same |
+| 17,600 | 23,000 | 5.494% | 4.45% | same |
+| 23,000 | 25,500 | 5.617% | 4.55% | same |
+| 25,500 | 28,000 | 5.741% | 4.65% | same |
+| 28,000 | 30,500 | 5.864% | 4.75% | same |
+| 30,500 | 33,000 | 5.987% | 4.85% | same |
+| 33,000 | 35,500 | 6.235% | 5.05% | same |
+| 35,500 | 38,000 | 6.481% | 5.25% | same |
+| 38,000 | 40,500 | 6.728% | 5.45% | same |
+| 40,500 | 43,000 | 6.976% | 5.65% | same |
+| 43,000 | 45,500 | 7.222% | 5.85% | same |
+| 45,500 | 48,000 | 7.469% | 6.05% | same |
+| 48,000 | 50,500 | 7.840% | 6.35% | same |
+| 50,500 | 53,000 | 8.209% | 6.65% | same |
+| 53,000 | 55,500 | 8.580% | 6.95% | same |
+| 55,500 | 58,000 | 8.951% | 7.25% | same |
+| 58,000 | 60,500 | 9.321% | 7.55% | same |
+| 60,500 | no limit | 10.000% | 8.1% | same |
 
 The rate in a band applies to the whole income, not just the slice inside the band.
 
@@ -244,10 +245,10 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Informationsstelle AHV/IV, Merkblatt 2.02 Beiträge der Selbstständigerwerbenden an die AHV, die IV und die EO, Stand 1. Januar 2026 | https://www.ahv-iv.ch/p/2.02.d | 2026-10-23 |
-| Informationsstelle AHV/IV, Merkblatt 2.03 Beiträge der Nichterwerbstätigen an die AHV, die IV und die EO, Stand 1. Januar 2026 | https://www.ahv-iv.ch/p/2.03.d | 2026-10-23 |
-| Informationsstelle AHV/IV, Merkblatt 2.01 Lohnbeiträge an die AHV, IV und EO, Stand 1. Januar 2026 | https://www.ahv-iv.ch/p/2.01.d | 2026-10-23 |
-| Informationsstelle AHV/IV, Update Sozialversicherungen in der Schweiz, Änderungen 2026 | https://www.shop.ahv-iv.ch/data/docs/de/82816/Update-%C2%ABSozialversicherungen-in-der-Schweiz%C2%BB-Stand-1.-Januar-2026.pdf | 2026-10-23 |
+| Informationsstelle AHV/IV, Merkblatt 2.02 Beiträge der Selbstständigerwerbenden an die AHV, die IV und die EO, Stand 1. Januar 2026: read for the 10.0% total rate, the 2026 sliding scale (no. 6) and the CHF 530 minimum | https://www.ahv-iv.ch/p/2.02.d | 2026-11-14 |
+| Informationsstelle AHV/IV, Merkblatt 2.03 Beiträge der Nichterwerbstätigen an die AHV, die IV und die EO, Stand 1. Januar 2026: read for the rules and figures this Guide cites from it | https://www.ahv-iv.ch/p/2.03.d | 2026-10-23 |
+| Informationsstelle AHV/IV, Merkblatt 2.01 Lohnbeiträge an die AHV, IV und EO, Stand 1. Januar 2026: read for the rules and figures this Guide cites from it | https://www.ahv-iv.ch/p/2.01.d | 2026-10-23 |
+| Informationsstelle AHV/IV, Update Sozialversicherungen in der Schweiz, Änderungen 2026: read for the rules and figures this Guide cites from it | https://www.shop.ahv-iv.ch/data/docs/de/82816/Update-%C2%ABSozialversicherungen-in-der-Schweiz%C2%BB-Stand-1.-Januar-2026.pdf | 2026-10-23 |
 | AHVG, SR 831.10, version of 1 January 2026, art. 3, 8, 9, 9bis, 10, 14, 15, 16, 34ter (and the version of 1 January 2027, art. 8) | https://www.fedlex.admin.ch/eli/cc/63/837_843_843/de | 2026-10-23 |
 | AHVV, SR 831.101, version of 1 January 2026, art. 3, 6ter, 6quater, 17 to 25, 27, 28, 28bis, 34 to 34b, 41bis, 42 (and the version of 1 January 2027, art. 21) | https://www.fedlex.admin.ch/eli/cc/63/1185_1183_1185/de | 2026-10-23 |
 | IVG, SR 831.20, version of 1 January 2026, art. 3 | https://www.fedlex.admin.ch/eli/cc/1959/827_857_845/de | 2026-10-23 |
@@ -255,9 +256,9 @@ expected:
 | EOG, SR 834.1, version of 1 June 2026, art. 27 | https://www.fedlex.admin.ch/eli/cc/1952/1021_1046_1050/de | 2026-10-23 |
 | BVG, SR 831.40, version of 1 January 2025 (current), art. 4, 8, 44 | https://www.fedlex.admin.ch/eli/cc/1983/797_797_797/de | 2026-10-23 |
 | BVV 3, SR 831.461.3, version of 1 January 2025 (current), art. 7, 7a | https://www.fedlex.admin.ch/eli/cc/1985/1778_1778_1778/de | 2026-10-23 |
-| BSV, Mitteilungen an die AHV-Ausgleichskassen Nr. 504 (interest on own capital, 2025), 19 January 2026 | https://sozialversicherungen.admin.ch/de/d/21883/download | 2026-10-23 |
-| BSV, Wichtige Masszahlen im Bereich der beruflichen Vorsorge 2025 und 2026 | https://www.bsv.admin.ch/dam/de/sd-web/GZplHByBJoFc/Internet_Masszahlenarticles_25_26_d.pdf | 2026-10-23 |
-| BSV, Merkblatt Entsendung Schweiz-EU | https://www.bsv.admin.ch/dam/de/sd-web/nj5pRW599A3W/entsendungsmerkblatt-ch-eu.pdf | 2026-10-23 |
-| ESTV, Kreisschreiben Nr. 18a, Steuerliche Behandlung von Vorsorgebeiträgen und -leistungen der Säule 3a, 22 December 2025 | https://www.estv.admin.ch/dam/de/sd-web/yQgKmvu80LEr/dbst-ks-2025-1-018a-dv-de.pdf | 2026-10-23 |
+| BSV, Mitteilungen an die AHV-Ausgleichskassen Nr. 504 (interest on own capital, 2025), 19 January 2026: read for the rules and figures this Guide cites from it | https://sozialversicherungen.admin.ch/de/d/21883/download | 2026-10-23 |
+| BSV, Wichtige Masszahlen im Bereich der beruflichen Vorsorge 2025 und 2026: read for the rules and figures this Guide cites from it | https://www.bsv.admin.ch/dam/de/sd-web/GZplHByBJoFc/Internet_Masszahlenarticles_25_26_d.pdf | 2026-10-23 |
+| BSV, Merkblatt Entsendung Schweiz-EU: read for the rules and figures this Guide cites from it | https://www.bsv.admin.ch/dam/de/sd-web/nj5pRW599A3W/entsendungsmerkblatt-ch-eu.pdf | 2026-10-23 |
+| ESTV, Kreisschreiben Nr. 18a, Steuerliche Behandlung von Vorsorgebeiträgen und -leistungen der Säule 3a, 22 December 2025: read for the rules and figures this Guide cites from it | https://www.estv.admin.ch/dam/de/sd-web/yQgKmvu80LEr/dbst-ks-2025-1-018a-dv-de.pdf | 2026-10-23 |
 
 Not yet confirmed: the interest rate on own capital for contribution year 2026 (published by the BSV in January 2027; example 2 assumes the 2025 rate of 1%); the minimum contribution and non-employed table for 2027 (only the 2027 sliding-scale limits were read); how the 13th AHV pension will be financed after 2026; each fund's administration cost rate (up to 5%); the EO part of each sliding-scale band (the sheet gives only the total; the IV part is in IVV art. 1bis); the split of the CHF 530 minimum between IV and EO for the self-employed (AHVG art. 8 para. 2 sets only the AHV part, CHF 435).

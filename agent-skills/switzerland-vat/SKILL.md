@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/switzerland-vat"
   jurisdiction: "CH"
   tax_year: "2026"
-  last_updated: "2026-10-31"
+  last_updated: "2026-11-14"
 ---
 
-# Switzerland VAT (MWST): registration, rates, returns and penalties, tax year 2026 v2.2
+# Switzerland VAT (MWST): registration, rates, returns and penalties, tax year 2026 v2.4
 
 > **Source-cited draft: not reviewed by an accountant.** This skill is general tax reference material for AI-assisted work. It has not been reviewed for any business's facts. Do not rely on it to file, pay or take a position without review by a qualified professional in Switzerland.
 
@@ -163,17 +163,17 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| MWSTG, Federal VAT Act, SR 641.20 (consolidated version of 31 March 2025) | https://www.fedlex.admin.ch/eli/cc/2009/615/de | 2026-10-23 |
-| MWSTV, VAT Ordinance, SR 641.201 (consolidated version of 1 January 2025) | https://www.fedlex.admin.ch/eli/cc/2009/828/de | 2026-10-23 |
-| Zinssatzverordnung EFD, SR 631.014 (in force 1 January 2026) | https://www.fedlex.admin.ch/eli/cc/2025/564/de | 2026-10-23 |
-| ESTV, VAT rates in Switzerland | https://www.estv.admin.ch/de/mwst-steuersaetze-schweiz | 2026-10-23 |
-| ESTV, net tax rates and flat tax rates | https://www.estv.admin.ch/de/mwst-saldosteuersaetze-pauschalsteuersaetze | 2026-10-23 |
-| ESTV, paying VAT (deadlines, refunds, default interest) | https://www.estv.admin.ch/de/mwst-bezahlen | 2026-10-23 |
+| MWSTG, Federal VAT Act, SR 641.20 (consolidated version of 31 March 2025): read for the articles this Guide cites (registration, periods, settlement methods, interest) | https://www.fedlex.admin.ch/eli/cc/2009/615/de | 2026-10-23 |
+| MWSTV, VAT Ordinance, SR 641.201 (version of 1 January 2025): read for the articles this Guide cites | https://www.fedlex.admin.ch/eli/cc/2009/828/de | 2026-10-23 |
+| Zinssatzverordnung EFD, SR 631.014 (in force 1 January 2026): read for the 2026 late-payment and refund interest rates | https://www.fedlex.admin.ch/eli/cc/2025/564/de | 2026-10-23 |
+| ESTV, VAT rates in Switzerland: read for the 8.1% standard, 2.6% reduced and 3.8% accommodation rates | https://www.estv.admin.ch/de/mwst-steuersaetze-schweiz | 2026-11-14 |
+| ESTV, net tax rates and flat tax rates: read for the CHF 5.024 million turnover and CHF 108,000 tax limits of the net tax rate method | https://www.estv.admin.ch/de/mwst-saldosteuersaetze-pauschalsteuersaetze | 2026-11-14 |
+| ESTV, paying VAT: read for the 60-day filing and payment deadline and the default and refund interest rules | https://www.estv.admin.ch/de/mwst-bezahlen | 2026-11-14 |
 
 Not yet confirmed: the box (Ziffer) numbers of the ESTV return form were not re-read today, so this skill does not map amounts to boxes; the full list of industries per net tax rate (ESTV ordinance SR 641.202.62) was not read; the amount of the fine for procedural breaches under Art. 98; the day-count basis the ESTV uses for default interest; how Liechtenstein is treated (treaty not read); ESTV practice on private use of company cars and gifts; ESTV practice on input tax on business entertainment (the old version said it is deductible with documented business purpose; Art. 28-29 MWSTG were not checked for a specific rule); which document proves import tax for input tax deduction (the old version named the customs assessment, Veranlagungsverfügung; not checked in MWSTV).
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-31. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `switzerland-vat` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/switzerland-vat. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `switzerland-vat` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/switzerland-vat. If neither is available, confirm every figure against the official source pages cited above before relying on it.

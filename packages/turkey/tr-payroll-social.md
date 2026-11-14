@@ -1,17 +1,18 @@
 ---
 name: tr-payroll-social
 description: "Turkish payroll and social security for tax year 2026: SGK premiums under the Social Insurance Law no. 5510, unemployment insurance under Law 4447, income tax withholding on wages under the Income Tax Law no. 193 and stamp tax on wages under Law 488. Covers employees (4/1-a) and the self-employed (Bağ-Kur, 4/1-b), the 2026 minimum wage (TRY 1,101 a day, TRY 33,030 a month gross, TRY 28,075.50 net), the premium floor and the new ceiling of nine times the floor (TRY 297,270 a month), the 2026 rates (pension 21%, employee 15% in total, employer 23.75% before the 2-point incentive), the minimum-wage income tax and stamp tax exemptions, tax-free meal, transport and childcare benefits, the monthly combined return (MUHSGK) by the 26th, and penalties. Trigger on: SGK primi, bordro, asgari ücret 2026, Bağ-Kur, muhtasar ve prim hizmet beyannamesi, Turkish payroll, SGK tavan. Out of scope: annual income tax (turkey-pit), company tax (tr-corporate-income-tax), VAT (turkey-vat)."
-version: 0.1
+version: 0.2
+type: computation
 jurisdiction: TR
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
 ---
 
-# Türkiye: payroll and social security (2026) v0.1
+# Türkiye: payroll and social security (2026) v0.2
 
 An employer in Türkiye withholds the employee's social security and unemployment premiums, income tax and stamp tax from each wage payment, adds its own premiums, and reports all of it on one monthly return, the muhtasar ve prim hizmet beyannamesi (MUHSGK), filed with the Revenue Administration (GİB). Premiums go to the Social Security Institution (Sosyal Güvenlik Kurumu, SGK). Figures below come from the consolidated Law 5510 (as amended by Law 7566 from 1 January 2026), Law 4447, the Income Tax Law 193, the Stamp Tax Law 488, the 2026 minimum wage decision and GİB's table of filing dates.
 
@@ -26,31 +27,31 @@ An employer in Türkiye withholds the employee's social security and unemploymen
 
 | Item | Rate or amount | Year | Source |
 |---|---|---|---|
-| Minimum wage, gross, per day | TRY 1,101 (1 January to 31 December 2026) | 2026 | Minimum Wage Determination Commission decision 2025/1, Official Gazette 26 December 2025 no. 33119, https://www.resmigazete.gov.tr/eskiler/2025/12/20251226-6.pdf |
-| Minimum wage, gross, per month (30 days) | TRY 33,030 | 2026 | Decision 2025/1 (TRY 1,101 x 30) |
+| Minimum wage, gross, per day | TRY 1,101 (1 January to 31 December 2026) | 2026 | Minimum Wage Determination Commission decision 2025/1, Official Gazette 26 December 2025 no. 33119, https://www.sgk.gov.tr/Content/Post/2e0c9e1a-2cfe-4456-af10-49d3de0c58ba/Prime-Esas-Kazanc-Miktarlari-2026-01-14-10-35-39 |
+| Minimum wage, gross, per month (30 days) | TRY 33,030 | 2026 | Decision 2025/1 (TRY 1,101 x 30), https://www.sgk.gov.tr/Content/Post/2e0c9e1a-2cfe-4456-af10-49d3de0c58ba/Prime-Esas-Kazanc-Miktarlari-2026-01-14-10-35-39 |
 | Premium base floor | Minimum wage: TRY 1,101 a day, TRY 33,030 a month | 2026 | Law 5510 art. 82(1), https://www.mevzuat.gov.tr/MevzuatMetin/1.5.5510.pdf; SGK, Prime esas kazanç miktarları (2026), https://www.sgk.gov.tr/Content/Post/2e0c9e1a-2cfe-4456-af10-49d3de0c58ba/Prime-Esas-Kazanc-Miktarlari-2026-01-14-10-35-39 |
-| Premium base ceiling | 9 times the floor: TRY 9,909 a day, TRY 297,270 a month (7.5 times until 2025) | 2026 | Law 5510 art. 82(1) as amended by Law 7566 art. 24, in force 1 January 2026; SGK, Prime esas kazanç miktarları (2026) |
-| Ceiling for Turkish workers sent to countries with no social security agreement | 3 times the floor: TRY 3,303 a day, TRY 99,090 a month | 2026 | Law 5510 art. 82(1); SGK, Prime esas kazanç miktarları (2026) |
-| Left out of the premium base | Meal payment up to TRY 158 a day; child allowance up to TRY 660.60 a month (2% of the minimum wage) per child; family allowance up to TRY 3,303 a month (10%) | 2026 | SGK, Prime esas kazanç miktarları (2026), item 1.4 |
-| Pension (disability, old-age and death) premium | 21%: employee 9%, employer 12% (was 20%: 9% and 11%) | 2026 | Law 5510 art. 81(1)(a), amended by Law 7566 art. 23 from January 2026 |
-| Short-term insurance premium | 2.25%, employer only | 2026 | Law 5510 art. 81(1)(c) |
-| General health insurance premium | 12.5%: employee 5%, employer 7.5% | 2026 | Law 5510 art. 81(1)(f) |
+| Premium base ceiling | 9 times the floor: TRY 9,909 a day, TRY 297,270 a month (7.5 times until 2025) | 2026 | Law 5510 art. 82(1) as amended by Law 7566 art. 24, in force 1 January 2026; SGK, Prime esas kazanç miktarları (2026), https://www.sgk.gov.tr/Content/Post/2e0c9e1a-2cfe-4456-af10-49d3de0c58ba/Prime-Esas-Kazanc-Miktarlari-2026-01-14-10-35-39 |
+| Ceiling for Turkish workers sent to countries with no social security agreement | 3 times the floor: TRY 3,303 a day, TRY 99,090 a month | 2026 | Law 5510 art. 82(1); SGK, Prime esas kazanç miktarları (2026), https://www.sgk.gov.tr/Content/Post/2e0c9e1a-2cfe-4456-af10-49d3de0c58ba/Prime-Esas-Kazanc-Miktarlari-2026-01-14-10-35-39 |
+| Left out of the premium base | Meal payment up to TRY 158 a day; child allowance up to TRY 660.60 a month (2% of the minimum wage) per child; family allowance up to TRY 3,303 a month (10%) | 2026 | SGK, Prime esas kazanç miktarları (2026), item 1.4, https://www.sgk.gov.tr/Content/Post/2e0c9e1a-2cfe-4456-af10-49d3de0c58ba/Prime-Esas-Kazanc-Miktarlari-2026-01-14-10-35-39 |
+| Pension (disability, old-age and death) premium | 21%: employee 9%, employer 12% (was 20%: 9% and 11%) | 2026 | Law 5510 art. 81(1)(a), amended by Law 7566 art. 23 from January 2026, https://www.mevzuat.gov.tr/MevzuatMetin/1.5.5510.pdf |
+| Short-term insurance premium | 2.25%, employer only | 2026 | Law 5510 art. 81(1)(c), https://www.mevzuat.gov.tr/MevzuatMetin/1.5.5510.pdf |
+| General health insurance premium | 12.5%: employee 5%, employer 7.5% | 2026 | Law 5510 art. 81(1)(f), https://www.mevzuat.gov.tr/MevzuatMetin/1.5.5510.pdf |
 | Unemployment insurance | 1% employee, 2% employer, 1% state | 2026 | Law 4447 art. 49, https://www.mevzuat.gov.tr/MevzuatMetin/1.5.4447.pdf |
-| Employee total | 15% (9 + 5 + 1) | 2026 | sum of the above |
-| Employer total before incentive | 23.75% (12 + 2.25 + 7.5 + 2) | 2026 | sum of the above |
+| Employee total | 15% (9 + 5 + 1) | 2026 | sum of the above, https://www.mevzuat.gov.tr/MevzuatMetin/1.5.5510.pdf |
+| Employer total before incentive | 23.75% (12 + 2.25 + 7.5 + 2) | 2026 | sum of the above, https://www.mevzuat.gov.tr/MevzuatMetin/1.5.5510.pdf |
 | Treasury incentive for private-sector employers | 2 points of the employer pension share (was 4 points), so 21.75% | 2026 | Law 5510 art. 81(1)(ı), amended by Law 7566 art. 23; SGK, Sigorta primi teşvikleri 2026, https://sgk.gov.tr/Download/DownloadFile?f=c94c643d-2190-4d85-9b14-a8c7c5d241e8.pdf&d=de85036d-ef64-49f1-834c-916a79f1a923 |
-| Treasury incentive for employers in manufacturing | 5 points, so 18.75%, until 31 December 2026 (the President may extend to 31 December 2027) | 2026 | Law 5510 provisional art. 108 (Law 7538); SGK, Sigorta primi teşvikleri 2026 |
-| Minimum wage support for private-sector employers | TRY 42.33 per day of premium (TRY 1,270 for a 30-day month), set off against premiums | 2026 | Law 5510 provisional art. 112 (Law 7573, 23 January 2026); SGK, Sigorta primi teşvikleri 2026 |
-| Self-employed (4/1-b) total | 35.75% (21 + 2.25 + 12.5), less a 5-point Treasury incentive if premiums are paid on time: 30.75% | 2026 | Law 5510 art. 81(1)(g), (j) |
-| Income tax on wages | Wage scale 15% to TRY 190,000; 20% to 400,000; 27% to 1,500,000; 35% to 5,300,000; 40% above | 2026 | GVK art. 94(1), 103, https://www.mevzuat.gov.tr/MevzuatMetin/1.5.193.pdf |
-| Minimum-wage income tax exemption | Wage up to gross minimum wage less employee pension, health and unemployment premiums (TRY 28,075.50 a month) | 2026 | GVK art. 23(18) |
+| Treasury incentive for employers in manufacturing | 5 points, so 18.75%, until 31 December 2026 (the President may extend to 31 December 2027) | 2026 | Law 5510 provisional art. 108 (Law 7538); SGK, Sigorta primi teşvikleri 2026, https://sgk.gov.tr/Download/DownloadFile?f=c94c643d-2190-4d85-9b14-a8c7c5d241e8.pdf&d=de85036d-ef64-49f1-834c-916a79f1a923 |
+| Minimum wage support for private-sector employers | TRY 42.33 per day of premium (TRY 1,270 for a 30-day month), set off against premiums | 2026 | Law 5510 provisional art. 112 (Law 7573, 23 January 2026); SGK, Sigorta primi teşvikleri 2026, https://sgk.gov.tr/Download/DownloadFile?f=c94c643d-2190-4d85-9b14-a8c7c5d241e8.pdf&d=de85036d-ef64-49f1-834c-916a79f1a923 |
+| Self-employed (4/1-b) total | 35.75% (21 + 2.25 + 12.5), less a 5-point Treasury incentive if premiums are paid on time: 30.75% | 2026 | Law 5510 art. 81(1)(g), (j), https://www.mevzuat.gov.tr/MevzuatMetin/1.5.5510.pdf |
+| Income tax on wages | Wage scale 15% to TRY 190,000; 20% to 400,000; 27% to 1,500,000; 35% to 5,300,000; 40% above | 2026 | GVK art. 94(1), 103, https://www.mevzuat.gov.tr/MevzuatMetin/1.4.193.pdf |
+| Minimum-wage income tax exemption | Wage up to gross minimum wage less employee pension, health and unemployment premiums (TRY 28,075.50 a month) | 2026 | GVK art. 23(18), https://www.mevzuat.gov.tr/MevzuatMetin/1.4.193.pdf |
 | Stamp tax on wage payments | 0.759% (7.59 per thousand) | 2026 | Stamp Tax Law 488, table 1, IV-1(b), https://www.mevzuat.gov.tr/MevzuatMetin/1.5.488.pdf |
-| Stamp tax exemption | The part of the wage equal to the gross minimum wage | 2026 | Law 488, table 2, IV-34 |
-| Meal paid in cash or card where no meal is served | Exempt up to TRY 300 a working day | 2026 | GVK art. 23(8) |
-| Transport paid by card or ticket where no transport is provided | Exempt up to TRY 158 a working day | 2026 | GVK art. 23(10) |
-| Childcare paid to a nursery for female employees | Exempt up to 50% of the monthly gross minimum wage per child (TRY 16,515) | 2026 | GVK art. 23(16); Decision 2018/11674 |
-| Disability allowance deducted from wages, monthly | TRY 12,000 / 7,000 / 3,000 (1st / 2nd / 3rd degree) | 2026 | GVK art. 31 |
-| SGK late payment | 3% a month for the first three months, plus late interest | 2026 | Law 5510 art. 89 |
+| Stamp tax exemption | The part of the wage equal to the gross minimum wage | 2026 | Law 488, table 2, IV-34, https://www.mevzuat.gov.tr/MevzuatMetin/1.5.488.pdf |
+| Meal paid in cash or card where no meal is served | Exempt up to TRY 300 a working day | 2026 | GVK art. 23(8), https://www.mevzuat.gov.tr/MevzuatMetin/1.4.193.pdf |
+| Transport paid by card or ticket where no transport is provided | Exempt up to TRY 158 a working day | 2026 | GVK art. 23(10), https://www.mevzuat.gov.tr/MevzuatMetin/1.4.193.pdf |
+| Childcare paid to a nursery for female employees | Exempt up to 50% of the monthly gross minimum wage per child (TRY 16,515) | 2026 | GVK art. 23(16); Decision 2018/11674, https://www.mevzuat.gov.tr/MevzuatMetin/1.4.193.pdf |
+| Disability allowance deducted from wages, monthly | TRY 12,000 / 7,000 / 3,000 (1st / 2nd / 3rd degree) | 2026 | GVK art. 31, https://www.mevzuat.gov.tr/MevzuatMetin/1.4.193.pdf |
+| SGK late payment | 3% a month for the first three months, plus late interest | 2026 | Law 5510 art. 89, https://www.mevzuat.gov.tr/MevzuatMetin/1.5.5510.pdf |
 
 ## The taxable base
 
@@ -170,14 +171,14 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Sosyal Sigortalar ve Genel Sağlık Sigortası Kanunu no. 5510, consolidated (to Law 7590): arts. 4, 81, 82, 86, 88, 89, 102, provisional arts. 108 and 112, and amendment table (Law 7566 in force 1 January 2026) | https://www.mevzuat.gov.tr/MevzuatMetin/1.5.5510.pdf | 2026-10-31 |
-| SGK, Prime esas kazanç miktarları (2026 floor, ceiling and excluded amounts) | https://www.sgk.gov.tr/Content/Post/2e0c9e1a-2cfe-4456-af10-49d3de0c58ba/Prime-Esas-Kazanc-Miktarlari-2026-01-14-10-35-39 | 2026-10-31 |
-| SGK, Sigorta primi teşvikleri 2026 (incentives summary) | https://sgk.gov.tr/Download/DownloadFile?f=c94c643d-2190-4d85-9b14-a8c7c5d241e8.pdf&d=de85036d-ef64-49f1-834c-916a79f1a923 | 2026-10-31 |
-| İşsizlik Sigortası Kanunu no. 4447, art. 49 | https://www.mevzuat.gov.tr/MevzuatMetin/1.5.4447.pdf | 2026-10-31 |
-| Asgari Ücret Tespit Komisyonu Kararı 2025/1, Official Gazette 26 December 2025 no. 33119 | https://www.resmigazete.gov.tr/eskiler/2025/12/20251226-6.pdf | 2026-10-31 |
-| Gelir Vergisi Kanunu no. 193, consolidated (2026 amounts from Communiqué 332): arts. 23, 31, 63, 94, 98, 98/A, 103, 104, 119 | https://www.mevzuat.gov.tr/MevzuatMetin/1.5.193.pdf | 2026-10-31 |
-| Damga Vergisi Kanunu no. 488, tables 1 (IV-1(b)) and 2 (IV-34) | https://www.mevzuat.gov.tr/MevzuatMetin/1.5.488.pdf | 2026-10-31 |
-| GİB, Beyanname verme ve ödeme süreleri | https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Fyardim-kaynaklar%2Fyararli-bilgiler%2FBeyannameVermeveOdemeSureleri.pdf | 2026-10-31 |
-| Vergi Usul Kanunu no. 213 (arts. mükerrer 28, 344, 352, table 1) and Law 6183 (art. 51) | https://www.mevzuat.gov.tr/MevzuatMetin/1.5.213.pdf | 2026-10-31 |
+| Sosyal Sigortalar ve Genel Sağlık Sigortası Kanunu no. 5510, consolidated (to Law 7590): arts. 4, 81, 82, 86, 88, 89, 102, provisional arts. 108 and 112, and amendment table (Law 7566 in force 1 January 2026) | https://www.mevzuat.gov.tr/MevzuatMetin/1.5.5510.pdf | 2026-11-14, read for arts. 81, 82 and 89: premium rates, the 9-times ceiling and the 3% late charge |
+| SGK, Prime esas kazanç miktarları (2026 floor, ceiling and excluded amounts) | https://www.sgk.gov.tr/Content/Post/2e0c9e1a-2cfe-4456-af10-49d3de0c58ba/Prime-Esas-Kazanc-Miktarlari-2026-01-14-10-35-39 | 2026-11-14, read for the 2026 floor TRY 33,030, ceilings TRY 297,270 and 99,090, and the excluded meal, child and family amounts |
+| SGK, Sigorta primi teşvikleri 2026 (incentives summary) | https://sgk.gov.tr/Download/DownloadFile?f=c94c643d-2190-4d85-9b14-a8c7c5d241e8.pdf&d=de85036d-ef64-49f1-834c-916a79f1a923 | 2026-11-14, read for the 5-point incentive and the TRY 42.33 a day minimum wage support |
+| İşsizlik Sigortası Kanunu no. 4447, art. 49 | https://www.mevzuat.gov.tr/MevzuatMetin/1.5.4447.pdf | 2026-11-14, read for art. 49: unemployment premium 1% employee, 2% employer |
+| Asgari Ücret Tespit Komisyonu Kararı 2025/1, Official Gazette 26 December 2025 no. 33119 | https://www.resmigazete.gov.tr/eskiler/2025/12/20251226-6.pdf | 2026-10-31 (the PDF gives no text to a script on 14 November 2026; the TRY 33,030 floor was read on the SGK page instead) |
+| Gelir Vergisi Kanunu no. 193, consolidated (2026 amounts from Communiqué 332): arts. 23, 31, 63, 94, 98, 98/A, 103, 104, 119 | https://www.mevzuat.gov.tr/MevzuatMetin/1.4.193.pdf | 2026-11-14, read for arts. 23(8), 23(10), 23(16), 23(18) and 31, with the 2026 amounts of Communiqué 332 in the footnotes |
+| Damga Vergisi Kanunu no. 488, tables 1 (IV-1(b)) and 2 (IV-34) | https://www.mevzuat.gov.tr/MevzuatMetin/1.5.488.pdf | 2026-11-14, read for table 2, IV-34: the minimum wage exemption |
+| GİB, Beyanname verme ve ödeme süreleri | https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Fyardim-kaynaklar%2Fyararli-bilgiler%2FBeyannameVermeveOdemeSureleri.pdf | 2026-11-14, read for the muhtasar and premium filing and payment days |
+| Vergi Usul Kanunu no. 213 (arts. mükerrer 28, 344, 352, table 1) and Law 6183 (art. 51) | https://www.mevzuat.gov.tr/MevzuatMetin/1.4.213.pdf ; https://www.mevzuat.gov.tr/MevzuatMetin/1.3.6183.pdf | 2026-11-14, read for art. 352 and Law 6183 art. 51: penalties and the 3.7% surcharge |
 
 Not yet confirmed: the official net minimum wage (TRY 28,075.50 here is computed from the gross and the 15% employee premiums, with no income or stamp tax); the text of the SGK circular for 2026 (the floor, ceiling and excluded amounts are confirmed from SGK's 2026 page instead); the day SGK sets for premium payment (art. 88); the GİB communiqué on the cumulative withholding method; the severance pay (kıdem tazminatı) ceiling for 2026 (the old version gave TRY 46,655.43 for 2025 from a non-official site); the 4/1-b premium base rules and minimum base; sector incentives (manufacturing, youth, women, regional and others) and whether any reduce the employer rate further in 2026; the list of social security agreements; employer premiums on directors and partners.

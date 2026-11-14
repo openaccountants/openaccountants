@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/se-corporate-tax"
   jurisdiction: "SE"
   tax_year: "2026"
-  last_updated: "2026-11-01"
+  last_updated: "2026-11-14"
 ---
 
 # Sweden: corporate income tax (bolagsskatt), tax year 2026
@@ -171,17 +171,17 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Inkomstskattelag (1999:1229), consolidated to SFS 2026:1393 (6, 6 a, 9, 16, 18, 22, 24, 25 a, 30, 35, 39 a, 40, 65 kap.) | https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/inkomstskattelag-19991229_sfs-1999-1229/ (text read from https://data.riksdagen.se/dokument/sfs-1999-1229.text) | 2026-10-22 |
-| Skatteförfarandelag (2011:1244), consolidated to SFS 2026:1305 (32, 32 a, 48, 49, 55, 62, 63, 65 kap.) | https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/skatteforfarandelag-20111244_sfs-2011-1244/ | 2026-10-22 |
-| Kupongskattelag (1970:624), consolidated to SFS 2026:840 | https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/kupongskattelag-1970624_sfs-1970-624/ | 2026-10-22 |
-| Lag (2023:875) om tilläggsskatt, consolidated to SFS 2026:305 | https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/lag-2023875-om-tillaggsskatt_sfs-2023-875/ | 2026-10-22 |
-| Skatteverket: Belopp och procent inkomstår 2026 (20.6%, periodiseringsfond 25%, prisbasbelopp SEK 59,200, statslåneränta 2.55%) | https://www.skatteverket.se/privat/skatter/beloppochprocent/2026.4.1522bf3f19aea8075ba21.html | 2026-10-22 |
-| Skatteverket: Periodiseringsfond (aktiebolag), including the 106% and 104% reversal uplift | https://www.skatteverket.se/foretag/drivaforetag/foretagsformer/aktiebolag/periodiseringsfond.4.4887341d16e1e2b8ddf30e.html | 2026-10-22 |
-| Skatteverket: Deklarera åt ett aktiebolag eller en ekonomisk förening (filing and interest dates) | https://www.skatteverket.se/foretag/inkomstdeklaration/deklareraatettaktiebolagellerenekonomiskforening.4.46ae6b26141980f1e2d1261.html | 2026-10-22 |
-| Skatteverket: Ränta på skattekontot (basränta and kostnadsränta) | https://www.skatteverket.se/privat/skatter/skattekontobetalaochfatillbaka/rantapaskattekontot.4.18e1b10334ebe8bc80002582.html | 2026-10-22 |
+| Read for Corporate income tax (statlig inkomstskatt for juridiska personer), Rounding of taxable income, Municipal or local tax on company profit, Small-company rate or minimum tax: Inkomstskattelag (1999:1229), consolidated to SFS 2026:1393 (6, 6 a, 9, 16, 18, 22, 24, 25 a, 30, 35, 39 a, 40, 65 kap.) | https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/inkomstskattelag-19991229_sfs-1999-1229/ (text read from https://data.riksdagen.se/dokument/sfs-1999-1229.text) | 2026-11-14 |
+| Read for Preliminary tax (F-skatt) by default: Skatteförfarandelag (2011:1244), consolidated to SFS 2026:1305 (32, 32 a, 48, 49, 55, 62, 63, 65 kap.) | https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/skatteforfarandelag-20111244_sfs-2011-1244/ | 2026-11-14 |
+| Read for Kupongskatt (dividend withholding tax): Kupongskattelag (1970:624), consolidated to SFS 2026:840 | https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/kupongskattelag-1970624_sfs-1970-624/ | 2026-11-14 |
+| Read for Pillar Two: Lag (2023:875) om tilläggsskatt, consolidated to SFS 2026:305 | https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/lag-2023875-om-tillaggsskatt_sfs-2023-875/ | 2026-11-14 |
+| Read for Periodiseringsfond reversal, Immediate write-off of low-value equipment: Skatteverket: Belopp och procent inkomstår 2026 (20.6%, periodiseringsfond 25%, prisbasbelopp SEK 59,200, statslåneränta 2.55%) | https://www.skatteverket.se/privat/skatter/beloppochprocent/2026.4.1522bf3f19aea8075ba21.html | 2026-11-14 |
+| Read for Periodiseringsfond (tax allocation reserve), Uplift on reversal of old periodiseringsfonder, Schablonintäkt on periodiseringsfonder: Skatteverket: Periodiseringsfond (aktiebolag), including the 106% and 104% reversal uplift | https://www.skatteverket.se/foretag/drivaforetag/foretagsformer/aktiebolag/periodiseringsfond.4.4887341d16e1e2b8ddf30e.html | 2026-11-14 |
+| Read for the points the body cites to it: Skatteverket: Deklarera åt ett aktiebolag eller en ekonomisk förening (filing and interest dates) | https://www.skatteverket.se/foretag/inkomstdeklaration/deklareraatettaktiebolagellerenekonomiskforening.4.46ae6b26141980f1e2d1261.html | 2026-11-14 |
+| Read for the points the body cites to it: Skatteverket: Ränta på skattekontot (basränta and kostnadsränta) | https://www.skatteverket.se/privat/skatter/skattekontobetalaochfatillbaka/rantapaskattekontot.4.18e1b10334ebe8bc80002582.html | 2026-11-14 |
 
 Not yet confirmed: which named Skatteverket service, other than accounting software and Filöverföring, will take Inkomstdeklaration 2 for financial years ending September to December 2026 once the e-service is withdrawn on 29 December 2026; whether the basränta changes after 22 October 2026 (Skatteverket showed 2.5% from 1 December 2024 as current); reduced kupongskatt rates under individual tax treaties (not covered here).
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-01. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `se-corporate-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/se-corporate-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `se-corporate-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/se-corporate-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

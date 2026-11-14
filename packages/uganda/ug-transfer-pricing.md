@@ -1,13 +1,14 @@
 ---
 name: ug-transfer-pricing
 description: "Uganda transfer pricing for the 2026-27 year of income under section 116 of the Income Tax Act (Chapter 338, Revised Edition 2024), the Income Tax (Transfer Pricing) Regulations 2011 and the arm's length duty added by the Income Tax (Amendment) Act 2026 (from 1 July 2026). Covers who is an associate (50% control, relatives, partners, acting on another's directions), controlled transactions at home and across the border, branches treated as separate persons, the five methods and the most-appropriate-method test, the OECD Guidelines, documentation in place before the return is due, advance pricing agreements, corresponding adjustments, the 30% rate on an adjustment and 15% withholding on management charges and royalties to non-residents. Trigger on: Uganda transfer pricing, related party Uganda, associates section 116, URA TP adjustment, TP documentation Uganda, APA Uganda, management fees to parent Uganda. Out of scope: interest-cap rules (ug-corporate-income-tax), treaty rates, mining and petroleum."
-version: 0.1
+version: 0.2
 jurisdiction: UG
 category: transfer-pricing
 tax_year: 2026
-last_updated: 2026-11-02
+last_updated: 2026-11-14
 tier: 2
 domain: transfer-pricing
+type: situation-rules
 ---
 
 # Uganda transfer pricing: associates, the arm's length principle, documentation and APAs (2026-27)

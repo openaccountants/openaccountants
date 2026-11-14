@@ -1,10 +1,11 @@
 ---
 name: bg-corporate-income-tax
 description: "Bulgarian corporate income tax (корпоративен данък) for tax year 2026 under the Corporate Income Tax Act (ZKPO). Covers who pays; the 10% rate; the tax result built from the accounting result with permanent and temporary differences; non-deductible expenses and hidden profit distribution; tax depreciation categories I to VII and their maximum rates; tax losses carried forward for five years; the 3:1 thin capitalisation rule (art. 43) and the 30% EBITDA interest limitation above EUR 3,000,000 (art. 43a); monthly and quarterly advance payments and their euro thresholds; the annual return (1 March to 30 June) and payment; penalties; and pointers to the expenses tax, alternative taxes, CFC rules and Pillar Two. All lev amounts are shown in euro at BGN 1.95583. Trigger phrases: Bulgaria corporate tax, ZKPO, ЗКПО, Bulgarian CIT return, авансови вноски, данъчна загуба Bulgaria. Out of scope: withholding tax, treaties and exit tax (bg-cross-border), transfer pricing (bg-transfer-pricing), individuals (bulgaria-income-tax), VAT (bulgaria-vat-return)."
-version: 0.1
+version: 0.2
+type: computation
 jurisdiction: BG
 tax_year: 2026
-last_updated: 2026-10-24
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
@@ -29,28 +30,28 @@ Tax year: the calendar year (ZKPO art. 21). Authority: the National Revenue Agen
 | Item | Rate or amount | Year | Source |
 |---|---|---|---|
 | Corporate income tax rate | 10% of taxable profit | 2026 | ZKPO arts. 19, 20, [lex.bg](https://lex.bg/laws/ldoc/2135540562) |
-| Minimum value of a tax depreciable asset | Lower of the accounting policy threshold and BGN 700 (EUR 357.90) | 2026 | ZKPO arts. 50(1), 51(1); Euro Introduction Act arts. 12, 13 |
-| Depreciation, category I: massive buildings, investment property, facilities, power and communication lines | Up to 4% a year | 2026 | ZKPO art. 55(1), (2) |
-| Category II: machines, production equipment, apparatus | Up to 30% (50% if new and part of an initial investment) | 2026 | ZKPO art. 55(2), (3) |
-| Category III: transport vehicles other than cars; road and runway surfaces | Up to 10% | 2026 | ZKPO art. 55(2) |
-| Category IV: computers, peripherals, software and rights to use software, mobile phones | Up to 50% (100% for software on the list in VAT Act art. 118(16) and devices running it) | 2026 | ZKPO art. 55(2), (7) |
-| Category V: cars | Up to 25%; up to 50% for electric cars (new from 1 January 2026) | 2026 | ZKPO art. 55(2), (8) as amended by ДВ 30/2026 |
-| Category VI: assets with a contractual or legal limit on use | 100 / years of the limit, capped at 33 1/3% | 2026 | ZKPO art. 55(2) |
-| Category VII: all other depreciable assets | Up to 15% | 2026 | ZKPO art. 55(2) |
-| Tax loss carry-forward | Next 5 years, oldest first, up to the positive tax result | 2026 | ZKPO arts. 70, 71, 72 |
-| R&D extra deduction | Further 25% of qualifying R&D costs | 2026 | ZKPO art. 69 as amended by ДВ 30/2026 |
-| Thin capitalisation (art. 43) applies when | Average debt is more than 3 times average equity | 2026 | ZKPO art. 43(6) |
-| Thin capitalisation allowance | Net interest above 75% of the accounting result before interest is disallowed, carried forward | 2026 | ZKPO art. 43(1), (2) |
-| Interest limitation (art. 43a) applies when | Exceeding borrowing costs are more than EUR 3,000,000 | 2026 | ZKPO art. 43a(7), wording set by Euro Introduction Act § 36 |
-| Interest limitation allowance | 30% of tax EBITDA; excess carried forward with no time limit | 2026 | ZKPO art. 43a(1), (5) |
-| Donations | Deductible up to 10% of accounting profit (50% to the health fund for listed purposes, 15% patronage); overall cap 65% | 2026 | ZKPO art. 31 |
-| No advance payments | Net sales in the year before the preceding year up to BGN 300,000 (EUR 153,387.56); and new companies in their first year and the next, except companies formed by a transformation | 2026 | ZKPO art. 83(2) |
-| Monthly advance payments | Net sales in the year before the preceding year above BGN 3,000,000 (EUR 1,533,875.64) | 2026 | ZKPO art. 84 |
-| Quarterly advance payments | Everyone else who must pay advances | 2026 | ZKPO art. 85 |
-| Expenses tax on representation costs and social costs in kind | 10% | 2026 | ZKPO arts. 204(1)(1), (2), 216(1) |
-| Expenses tax on assets given for personal use | 3% | 2026 | ZKPO arts. 204(1)(4), 216(2) |
-| Tonnage tax (shipping, elective) | 10% of the tonnage-based base | 2026 | ZKPO arts. 254, 258 |
-| Pillar Two minimum tax applies to groups with | Consolidated revenue of at least EUR 750,000,000 in two of the four preceding years | 2026 | ZKPO art. 260a(2) |
+| Minimum value of a tax depreciable asset | Lower of the accounting policy threshold and BGN 700 (EUR 357.90) | 2026 | ZKPO arts. 50(1), 51(1); Euro Introduction Act arts. 12, 13, https://lex.bg/laws/ldoc/2135540562 |
+| Depreciation, category I: massive buildings, investment property, facilities, power and communication lines | Up to 4% a year | 2026 | ZKPO art. 55(1), (2), https://lex.bg/laws/ldoc/2135540562 |
+| Category II: machines, production equipment, apparatus | Up to 30% (50% if new and part of an initial investment) | 2026 | ZKPO art. 55(2), (3), https://lex.bg/laws/ldoc/2135540562 |
+| Category III: transport vehicles other than cars; road and runway surfaces | Up to 10% | 2026 | ZKPO art. 55(2), https://lex.bg/laws/ldoc/2135540562 |
+| Category IV: computers, peripherals, software and rights to use software, mobile phones | Up to 50% (100% for software on the list in VAT Act art. 118(16) and devices running it) | 2026 | ZKPO art. 55(2), (7), https://lex.bg/laws/ldoc/2135540562 |
+| Category V: cars | Up to 25%; up to 50% for electric cars (new from 1 January 2026) | 2026 | ZKPO art. 55(2), (8) as amended by ДВ 30/2026, https://lex.bg/laws/ldoc/2135540562 |
+| Category VI: assets with a contractual or legal limit on use | 100 / years of the limit, capped at 33 1/3% | 2026 | ZKPO art. 55(2), https://lex.bg/laws/ldoc/2135540562 |
+| Category VII: all other depreciable assets | Up to 15% | 2026 | ZKPO art. 55(2), https://lex.bg/laws/ldoc/2135540562 |
+| Tax loss carry-forward | Next 5 years, oldest first, up to the positive tax result | 2026 | ZKPO arts. 70, 71, 72, https://lex.bg/laws/ldoc/2135540562 |
+| R&D extra deduction | Further 25% of qualifying R&D costs | 2026 | ZKPO art. 69 as amended by ДВ 30/2026, https://lex.bg/laws/ldoc/2135540562 |
+| Thin capitalisation (art. 43) applies when | Average debt is more than 3 times average equity | 2026 | ZKPO art. 43(6), https://lex.bg/laws/ldoc/2135540562 |
+| Thin capitalisation allowance | Net interest above 75% of the accounting result before interest is disallowed, carried forward | 2026 | ZKPO art. 43(1), (2), https://lex.bg/laws/ldoc/2135540562 |
+| Interest limitation (art. 43a) applies when | Exceeding borrowing costs are more than EUR 3,000,000 | 2026 | ZKPO art. 43a(7), wording set by Euro Introduction Act § 36, https://lex.bg/laws/ldoc/2135540562 |
+| Interest limitation allowance | 30% of tax EBITDA; excess carried forward with no time limit | 2026 | ZKPO art. 43a(1), (5), https://lex.bg/laws/ldoc/2135540562 |
+| Donations | Deductible up to 10% of accounting profit (50% to the health fund for listed purposes, 15% patronage); overall cap 65% | 2026 | ZKPO art. 31, https://lex.bg/laws/ldoc/2135540562 |
+| No advance payments | Net sales in the year before the preceding year up to BGN 300,000 (EUR 153,387.56); and new companies in their first year and the next, except companies formed by a transformation | 2026 | ZKPO art. 83(2), https://lex.bg/laws/ldoc/2135540562 |
+| Monthly advance payments | Net sales in the year before the preceding year above BGN 3,000,000 (EUR 1,533,875.64) | 2026 | ZKPO art. 84, https://lex.bg/laws/ldoc/2135540562 |
+| Quarterly advance payments | Everyone else who must pay advances | 2026 | ZKPO art. 85, https://lex.bg/laws/ldoc/2135540562 |
+| Expenses tax on representation costs and social costs in kind | 10% | 2026 | ZKPO arts. 204(1)(1), (2), 216(1), https://lex.bg/laws/ldoc/2135540562 |
+| Expenses tax on assets given for personal use | 3% | 2026 | ZKPO arts. 204(1)(4), 216(2), https://lex.bg/laws/ldoc/2135540562 |
+| Tonnage tax (shipping, elective) | 10% of the tonnage-based base | 2026 | ZKPO arts. 254, 258, https://lex.bg/laws/ldoc/2135540562 |
+| Pillar Two minimum tax applies to groups with | Consolidated revenue of at least EUR 750,000,000 in two of the four preceding years | 2026 | ZKPO art. 260a(2), https://lex.bg/laws/ldoc/2135540562 |
 
 ## The taxable base
 

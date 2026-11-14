@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/im-related-party-uk-treaty"
   jurisdiction: "IM"
   tax_year: "2026"
-  last_updated: "2026-10-30"
+  last_updated: "2026-11-14"
 ---
 
-# Isle of Man-UK related-party treaty adjustments (2026/27) v0.2
+# Isle of Man-UK related-party treaty adjustments (2026/27) v0.3
 
 This skill covers pricing between associated enterprises in the Isle of Man-UK corridor under the 2018 double taxation agreement (UK SI 2018/1347), which entered into force on 19 December 2018 and has effect for Manx income tax from 6 April 2019. The Manx law is the Income Tax Act 1970 (AT 3 of 1970); the authority is the Income Tax Division of the Treasury. For company tax computation see [im-corporate-income-tax](im-corporate-income-tax.md); for individuals and the treaty's residence, employment and pension articles see [im-non-resident-income-tax](im-non-resident-income-tax.md).
 
@@ -28,15 +28,14 @@ Article 9 adjusts profits; it sets no rate. The value of an adjustment depends o
 | Item | Amount | Tax year | Source |
 |---|---|---|---|
 | Company rate, all other income | 0% | 2026/27 | PN 227/26 https://www.gov.im/media/1391759/pn-227-26-budget.pdf |
-| Company rate, banking business | 10% | 2026/27 | PN 227/26 |
-| Company rate, retail business profits above GBP 500,000 | 10% | 2026/27 | PN 227/26 |
-| Company rate, land and property in the Isle of Man | 20% | 2026/27 | PN 227/26 |
-| Company rate, petroleum extraction | 20% | 2026/27 | PN 227/26 |
-| Other non-corporates | 21% | 2026/27 | PN 227/26 |
-| Domestic top-up tax (Pillar 2), groups with revenue of EUR 750 million or more | minimum effective rate 15% on Isle of Man profits | fiscal years from 1 January 2025 | PN 227/26 |
-| Mutual agreement: time to present a case | 3 years from first notification of the action | from 6 April 2019 | SI 2018/1347 Art. 25(1) |
-| Arbitration: unresolved case may go to arbitration | after 2 years from presentation to the other competent authority | from 6 April 2019 | SI 2018/1347 Art. 25(5) |
-
+| Company rate, banking business | 10% | 2026/27 | PN 227/26: https://www.gov.im/media/1391759/pn-227-26-budget.pdf |
+| Company rate, retail business profits above GBP 500,000 | 10% | 2026/27 | PN 227/26: https://www.gov.im/media/1391759/pn-227-26-budget.pdf |
+| Company rate, land and property in the Isle of Man | 20% | 2026/27 | PN 227/26: https://www.gov.im/media/1391759/pn-227-26-budget.pdf |
+| Company rate, petroleum extraction | 20% | 2026/27 | PN 227/26: https://www.gov.im/media/1391759/pn-227-26-budget.pdf |
+| Other non-corporates | 21% | 2026/27 | PN 227/26: https://www.gov.im/media/1391759/pn-227-26-budget.pdf |
+| Domestic top-up tax (Pillar 2), groups with revenue of EUR 750 million or more | minimum effective rate 15% on Isle of Man profits | fiscal years from 1 January 2025 | PN 227/26: https://www.gov.im/media/1391759/pn-227-26-budget.pdf |
+| Mutual agreement: time to present a case | 3 years from first notification of the action | from 6 April 2019 | SI 2018/1347 Art. 25(1): https://www.legislation.gov.uk/uksi/2018/1347/pdfs/uksi_20181347_en.pdf |
+| Arbitration: unresolved case may go to arbitration | after 2 years from presentation to the other competent authority | from 6 April 2019 | SI 2018/1347 Art. 25(5): https://www.legislation.gov.uk/uksi/2018/1347/pdfs/uksi_20181347_en.pdf |
 ## The base
 
 ### Primary adjustment (Article 9(1))
@@ -136,15 +135,15 @@ expected:
 | Source | URL | Read on |
 |---|---|---|
 | UK-Isle of Man Double Taxation Agreement 2018, SI 2018/1347, Articles 4, 9, 22, 23, 24, 25 | https://www.legislation.gov.uk/uksi/2018/1347/pdfs/uksi_20181347_en.pdf | 2026-10-30 |
-| HMRC, Isle of Man tax treaties (2018 agreement in force from 19 December 2018) | https://www.gov.uk/government/publications/isle-of-man-tax-treaties | 2026-10-30 |
-| HMRC, 2024 UK-Isle of Man memorandum of understanding (arbitration), Parts 1 and 2 | https://www.gov.uk/government/publications/isle-of-man-tax-treaties/2024-uk-isle-of-man-memorandum-of-understanding-in-force | 2026-10-30 |
-| Income Tax Division, International agreements and double taxation relief (UK agreement effective 6 April 2019) | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/individuals/residents/international-agreements-and-double-taxation-relief/ | 2026-10-30 |
-| Practice Note PN 227/26, Budget 2026 proposals (company rates, Pillar 2) | https://www.gov.im/media/1391759/pn-227-26-budget.pdf | 2026-10-30 |
-| Practice Note PN 144/07, Tax residence in the Isle of Man, paras 16 and 17 | https://www.gov.im/media/97083/pn14407taxresidenceintheisl.pdf | 2026-10-30 |
+| HMRC, Isle of Man tax treaties: read for the 2018 agreement, in force from 19 December 2018 | https://www.gov.uk/government/publications/isle-of-man-tax-treaties | 2026-10-30 |
+| HMRC, 2024 UK-Isle of Man memorandum of understanding (arbitration), Parts 1 and 2: read for the rules and figures this Guide cites from it | https://www.gov.uk/government/publications/isle-of-man-tax-treaties/2024-uk-isle-of-man-memorandum-of-understanding-in-force | 2026-10-30 |
+| Income Tax Division, International agreements and double taxation relief: read for the UK agreement effective 6 April 2019 | https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/individuals/residents/international-agreements-and-double-taxation-relief/ | 2026-10-30 |
+| Practice Note PN 227/26, Budget 2026 proposals: read for company rates, Pillar 2 | https://www.gov.im/media/1391759/pn-227-26-budget.pdf | 2026-11-14 |
+| Practice Note PN 144/07, Tax residence in the Isle of Man, paras 16 and 17: read for the rules and figures this Guide cites from it | https://www.gov.im/media/97083/pn14407taxresidenceintheisl.pdf | 2026-10-30 |
 | Income Tax Act 1970 (AT 3 of 1970), consolidated text [62], ss.2N, 57, 119BA, 119C | https://legislation.gov.im/cms/images/LEGISLATION/PRINCIPAL/1970/1970-0003/1970-0003_62.pdf | 2026-10-30 |
 
 Not yet confirmed: whether other Manx legislation (outside the Income Tax Act 1970) contains a general related-party pricing rule; country-by-country reporting scope and deadlines (the 2017 regulations, SD 2017/0091, could not be opened); Manx penalties and interest on an adjusted company return; the domestic procedure and time limit for claiming a corresponding adjustment in the Island; pricing methods, documentation and safe harbours accepted by the Income Tax Division.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-30. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `im-related-party-uk-treaty` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/im-related-party-uk-treaty. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `im-related-party-uk-treaty` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/im-related-party-uk-treaty. If neither is available, confirm every figure against the official source pages cited above before relying on it.

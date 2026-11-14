@@ -1,16 +1,17 @@
 ---
 name: nz-provisional-tax
 description: Use this skill whenever asked about New Zealand provisional tax for individuals, companies, contractors, sole traders, and small businesses. Trigger on phrases like "provisional tax", "RIT", "residual income tax", "standard option", "standard uplift", "estimation method", "AIM", "ratio option", "use of money interest", "UOMI", "provisional tax instalment", or any question about provisional tax obligations in New Zealand. Covers the $5,000 RIT threshold, standard option 105%/110% uplift rules, estimation, AIM, ratio-option routing, March balance-date instalments, 6-monthly GST two-instalment cases, and current UOMI rate handling. ALWAYS read this skill before touching any NZ provisional tax work.
-version: 2.1
+version: 2.2
 jurisdiction: NZ
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-14
 depends_on:
   - income-tax-workflow-base
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
+type: computation
 ---
 
 # New Zealand provisional tax
@@ -345,24 +346,24 @@ Sources: [IRD payment dates](https://www.ird.govt.nz/income-tax/provisional-tax/
 
 | Source | URL | Read |
 | --- | --- | --- |
-| IRD provisional tax | https://www.ird.govt.nz/income-tax/provisional-tax | 2026-10-31 |
-| IR289 | https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir200---ir299/ir289/ir289.pdf | 2026-10-31 |
-| IRD extension of time | https://www.ird.govt.nz/topics/intermediaries/extension-of-time-arrangements | 2026-10-31 |
-| IRD interest on provisional tax | https://www.ird.govt.nz/income-tax/provisional-tax/interest-on-provisional-tax | 2026-10-31 |
-| IRD standard option | https://www.ird.govt.nz/income-tax/provisional-tax/provisional-tax-options/standard-option | 2026-10-31 |
-| IRD work out standard option | https://www.ird.govt.nz/income-tax/provisional-tax/provisional-tax-options/standard-option/work-out-provisional-tax-using-the-standard-option | 2026-10-31 |
-| IRD late payment penalties | https://www.ird.govt.nz/managing-my-tax/penalties-and-interest/penalties-and-debt/late-payment-penalties | 2026-10-31 |
-| QB 19/04 | https://www.taxtechnical.ird.govt.nz/-/media/project/ir/tt/pdfs/questions-we-ve-been-asked/2019/qb19-04.pdf | 2026-10-31 |
-| IRD first year in business | https://www.ird.govt.nz/income-tax/provisional-tax/paying-tax-in-your-first-year-in-business | 2026-10-31 |
-| IRD choosing to be a provisional taxpayer | https://www.ird.govt.nz/income-tax/provisional-tax/choosing-to-be-a-provisional-tax-payer | 2026-10-31 |
-| IRD UOMI rates | https://www.ird.govt.nz/managing-my-tax/penalties-and-interest/interest-on-overpayments-and-underpayments | 2026-10-31 |
-| IRD estimation option | https://www.ird.govt.nz/income-tax/provisional-tax/provisional-tax-options/estimation-option | 2026-10-31 |
-| IRD work out estimation option | https://www.ird.govt.nz/income-tax/provisional-tax/provisional-tax-options/estimation-option/work-out-provisional-tax-using-the-estimation-option | 2026-10-31 |
-| IRD AIM | https://www.ird.govt.nz/aim | 2026-10-31 |
-| IRD ratio option | https://www.ird.govt.nz/income-tax/provisional-tax/provisional-tax-options/ratio-option | 2026-10-31 |
-| IRD work out ratio option | https://www.ird.govt.nz/income-tax/provisional-tax/provisional-tax-options/ratio-option/work-out-provisional-tax-using-the-ratio-option | 2026-10-31 |
-| IRD payment dates | https://www.ird.govt.nz/income-tax/provisional-tax/paying-your-provisional-tax/payment-dates-for-provisional-tax | 2026-10-31 |
-| IRD IR328 2026-27 calendar | https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir300---ir399/ir328/ir328-2026-27.pdf | 2026-10-31 |
-| IRD paying your provisional tax | https://www.ird.govt.nz/income-tax/provisional-tax/paying-your-provisional-tax | 2026-10-31 |
+| IRD provisional tax. Read for Scope, The method, step by step, Who must pay | https://www.ird.govt.nz/income-tax/provisional-tax | 2026-11-14 |
+| IR289. Read for Scope, Who must pay, Choosing to pay | https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir200---ir299/ir289/ir289.pdf | 2026-11-14 |
+| IRD extension of time. Read for Scope, The 2025-26 year being finished now, 2026-27 dates (31 March balance date) | https://www.ird.govt.nz/topics/intermediaries/extension-of-time-arrangements | 2026-11-14 |
+| IRD interest on provisional tax. Read for The method, step by step, Who must pay, Estimation option | https://www.ird.govt.nz/income-tax/provisional-tax/interest-on-provisional-tax | 2026-11-14 |
+| IRD standard option. Read for The method, step by step, Standard option (the default), Penalties | https://www.ird.govt.nz/income-tax/provisional-tax/provisional-tax-options/standard-option | 2026-11-14 |
+| IRD work out standard option. Read for The method, step by step, Standard option (the default), Source: [IR289](https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir200---ir299/ir289/ir289.pdf) for IRD's examples, unless another link is shown | https://www.ird.govt.nz/income-tax/provisional-tax/provisional-tax-options/standard-option/work-out-provisional-tax-using-the-standard-option | 2026-11-14 |
+| IRD late payment penalties. Read for The method, step by step, Penalties, Source: [IR289](https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir200---ir299/ir289/ir289.pdf) for IRD's examples, unless another link is shown | https://www.ird.govt.nz/managing-my-tax/penalties-and-interest/penalties-and-debt/late-payment-penalties | 2026-11-14 |
+| QB 19/04. Read for Who must pay | https://www.taxtechnical.ird.govt.nz/-/media/project/ir/tt/pdfs/questions-we-ve-been-asked/2019/qb19-04.pdf | 2026-11-14 |
+| IRD first year in business. Read for Who must pay, Early payment discount (first-year businesses), Boundary and exception table | https://www.ird.govt.nz/income-tax/provisional-tax/paying-tax-in-your-first-year-in-business | 2026-11-14 |
+| IRD choosing to be a provisional taxpayer. Read for Choosing to pay, Boundary and exception table | https://www.ird.govt.nz/income-tax/provisional-tax/choosing-to-be-a-provisional-tax-payer | 2026-11-14 |
+| IRD UOMI rates. Read for Early payment discount (first-year businesses), Use-of-money interest, Exposure by option | https://www.ird.govt.nz/managing-my-tax/penalties-and-interest/interest-on-overpayments-and-underpayments | 2026-11-14 |
+| IRD estimation option. Read for Estimation option | https://www.ird.govt.nz/income-tax/provisional-tax/provisional-tax-options/estimation-option | 2026-11-14 |
+| IRD work out estimation option. Read for Estimation option | https://www.ird.govt.nz/income-tax/provisional-tax/provisional-tax-options/estimation-option/work-out-provisional-tax-using-the-estimation-option | 2026-11-14 |
+| IRD AIM. Read for Accounting income method (AIM) | https://www.ird.govt.nz/aim | 2026-11-14 |
+| IRD ratio option. Read for Ratio option, Boundary and exception table | https://www.ird.govt.nz/income-tax/provisional-tax/provisional-tax-options/ratio-option | 2026-11-14 |
+| IRD work out ratio option. Read for Ratio option | https://www.ird.govt.nz/income-tax/provisional-tax/provisional-tax-options/ratio-option/work-out-provisional-tax-using-the-ratio-option | 2026-11-14 |
+| IRD payment dates. Read for Instalment dates (31 March balance date), 2026-27 dates (31 March balance date) | https://www.ird.govt.nz/income-tax/provisional-tax/paying-your-provisional-tax/payment-dates-for-provisional-tax | 2026-11-14 |
+| IRD IR328 2026-27 calendar. Read for Instalment dates (31 March balance date), The 2025-26 year being finished now | https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir300---ir399/ir328/ir328-2026-27.pdf | 2026-11-14 |
+| IRD paying your provisional tax. Read for Instalment dates (31 March balance date) | https://www.ird.govt.nz/income-tax/provisional-tax/paying-your-provisional-tax | 2026-11-14 |
 
 Not yet confirmed: none beyond the points this skill refers out.

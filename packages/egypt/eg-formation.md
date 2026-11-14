@@ -1,16 +1,17 @@
 ---
 name: eg-formation
 description: Use this skill whenever asked about how to register, form, or set up a business in Egypt as a self-employed person, freelancer, professional, sole proprietor, or small company. Trigger on phrases like "register a business Egypt", "tax card Egypt", "how to start a business Egypt", "sole proprietor Egypt", "freelance registration Egypt", "GAFI LLC Egypt", "commercial register Egypt", "open a tax file Egypt", "register with the ETA", "البطاقة الضريبية", "السجل التجاري", "تسجيل منشأة فردية", "فتح ملف ضريبي", "تأسيس شركة ذات مسؤولية محدودة", "نقابة مهنية", "التأمينات الاجتماعية للعمل الحر". Covers obtaining a tax card and tax file with the Egyptian Tax Authority (ETA), the commercial register, professional syndicate (نقابة) membership, choosing the simplified vs general regime at registration, VAT and e-invoicing registration, social insurance registration, and forming an LLC via GAFI. AI replies in the user's language (English or Arabic).
-version: 1.1
+version: 1.2
 jurisdiction: EG
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 depends_on:
   - income-tax-workflow-base
 category: formation
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: formation
+type: filing-howto
 ---
 
 # EG Formation

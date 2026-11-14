@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/nl-tax-objection"
   jurisdiction: "NL"
   tax_year: "2026"
-  last_updated: "2026-10-27"
+  last_updated: "2026-11-14"
 ---
 
 # Netherlands tax objections and appeals (bezwaar and beroep), 2026
@@ -214,4 +214,4 @@ Not yet confirmed: (1) the exact current routes for VAT objections that must be 
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-27. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `nl-tax-objection` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/nl-tax-objection. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `nl-tax-objection` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/nl-tax-objection. If neither is available, confirm every figure against the official source pages cited above before relying on it.
