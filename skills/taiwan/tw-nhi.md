@@ -64,14 +64,14 @@ NHI general premiums are deductible without limit as an itemised deduction on th
 | Item | Detail |
 | --- | --- |
 | Registration | Through the employer (投保單位), the local NHIA office or professional association for the self-employed, an occupational union (Category 2) or the township office |
-| New business | Register with the NHIA promptly on starting (old file: within 30 days; not confirmed) |
-| Payment of general premium | Monthly, for the previous month (old file: by the last day of the following month; not confirmed) |
+| New business | Register with the NHIA promptly on starting (deadline on the Not yet confirmed line) |
+| Payment of general premium | Monthly, for the previous month (due date on the Not yet confirmed line) |
 | Supplementary premium | Withheld by the payer and remitted to the NHIA (timing not confirmed) |
 | Payment methods | Bank auto-debit, convenience stores, post office, online banking, the NHI Express app, credit card |
 
 ## Penalties and interest
 
-Late premiums attract a late fee under the NHI Act (old file: 0.1% a day, up to 15%; not confirmed). Unpaid premiums can lead to suspension of benefits until arrears are paid (emergency care remains). Overseas: an insured person leaving Taiwan for more than six months may apply to suspend NHI (停保); rules on return are not restated here.
+Late premiums attract a late fee under the NHI Act (the rate is on the Not yet confirmed line: do not compute it from this skill). Unpaid premiums can lead to suspension of benefits until arrears are paid (emergency care remains). Overseas: an insured person leaving Taiwan for more than six months may apply to suspend NHI (停保); rules on return are not restated here.
 
 ## Cross-border points
 
@@ -130,4 +130,4 @@ expected:
 | MOHW, January 2026 list of new measures (PDF). Read for the 29,500 floor, the Category 3 premium 443 to 458, and the small employer and self-employed minimum 40,100 to 42,000 with premium 2,073 to 2,171 | https://www.mohw.gov.tw/dl-98420-ec7a34cc-eb53-400d-9610-ac2001b76ea7.html | 2026-11-14 |
 | NHIA premium table for employers, self-employed and professionals effective 1 January 2026. Not read: the page returned a Cloudflare challenge (HTTP 403) to curl, WebFetch and web.archive.org | https://www.nhi.gov.tw/ch/cp-19439-f2f35-2580-1.html | 2026-11-14 |
 
-Not yet confirmed: the 2026 top insured amount (a search result said NT$313,000 from 1 January 2025; old file NT$219,500) and the full grade table; the supplementary premium rate (old file 2.11%), thresholds (old file NT$28,590 for every item; likely different for professional fees, dividends, interest and rent) and per-payment cap; the employer share formula and average dependants factor (old file 0.56); late fee rates; payment due dates; registration time limits; the minimum for CPAs, lawyers, architects and doctors in own practice; the old maximum premium example (NT$45,393 a month), which used the 2025 top grade.
+Not yet confirmed: NHI registration deadline for a new business (old file: 30 days), general premium due date (old file: last day of the following month), and the late fee (old file: 0.1% a day, up to 15%); the 2026 top insured amount (a search result said NT$313,000 from 1 January 2025; old file NT$219,500) and the full grade table; the supplementary premium rate (old file 2.11%), thresholds (old file NT$28,590 for every item; likely different for professional fees, dividends, interest and rent) and per-payment cap; the employer share formula and average dependants factor (old file 0.56); late fee rates; payment due dates; registration time limits; the minimum for CPAs, lawyers, architects and doctors in own practice; the old maximum premium example (NT$45,393 a month), which used the 2025 top grade.

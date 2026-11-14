@@ -63,8 +63,8 @@ Late payment: 1% for each 3 days late up to 10%, then interest. Failure to file 
 
 - Non-resident enterprises without a fixed place of business in Taiwan: final withholding on dividends 21%, royalties 20%, interest 20% (15% on bonds and similar); tax treaties reduce dividends, interest and royalties to 3% to 15%.
 - Resident enterprises: foreign tax credit; Mainland China-source income is taxed with a credit for Mainland tax.
-- Payments to residents (interest, royalties, professional fees) carry 10% withholding under the old file (not confirmed here).
-- Global minimum tax: the old file's 15% rate for in-scope MNE groups is not confirmed (no MOF page read).
+- Payments to residents (interest, royalties, professional fees) carry withholding; the rate is on the Not yet confirmed line, so take it from the MOF withholding rules before applying it.
+- Global minimum tax: whether and how it applies to in-scope MNE groups is on the Not yet confirmed line (no MOF page read).
 
 ## Two worked examples that recompute
 
@@ -116,4 +116,4 @@ expected:
 | Taipei National Taxation Bureau, surcharge calculation. Read for the 10% cap and 3-day steps | https://www.ntbt.gov.tw/singlehtml/2dbb2b6ec3714b469267299f687be37c?cntId=6047d2df3fb144a6abb413dd828da9b7 | 2026-11-14 |
 | MOF, 2026 amounts table (PDF). Read for the enterprise basic income exemption of 60萬 | https://www.mof.gov.tw/download/bb34472701e4443c910788e792dae85c | 2026-11-14 |
 
-Not yet confirmed: the enterprise basic tax rate (old file: 12%) and any 15% global minimum tax rate for MNE groups; resident withholding rates (old file: 10%); the exclusion of foreign branches from the undistributed earnings surtax; the number of tax treaties (old file: about 35); the lower late filing surcharge rate.
+Not yet confirmed: resident withholding rate on interest, royalties and professional fees (old file: 10%); the global minimum tax rate (old file: 15%); the enterprise basic tax rate (old file: 12%) and any 15% global minimum tax rate for MNE groups; resident withholding rates (old file: 10%); the exclusion of foreign branches from the undistributed earnings surtax; the number of tax treaties (old file: about 35); the lower late filing surcharge rate.
