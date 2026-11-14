@@ -37,25 +37,25 @@ Read [no-income-tax](no-income-tax.md) for income tax and bracket tax on the sam
 | Trygdeavgift, middle rate: pay and other income in § 23-3 second paragraph no. 2 | 7.6% | 2026 | same decision § 7 |
 | Trygdeavgift, high rate: business income | 10.8% | 2026 | same decision § 8 |
 | Lower limit | No trygdeavgift when personal income is up to NOK 99,650 | 2026 | folketrygdloven § 23-3 fourth paragraph; https://lovdata.no/lov/1997-02-28-19/§23-3 |
-| Phase-in limit | Trygdeavgift never more than 25% of personal income above NOK 99,650 | 2026 | folketrygdloven § 23-3 fourth paragraph |
-| Upper limit on the base | None | 2026 | folketrygdloven § 23-3 (no ceiling in the section) |
-| Arbeidsgiveravgift zone I | 14.1% | 2026 | Decision on contributions 2026 § 3 |
-| Zone Ia | 10.6% while the saving against 14.1% stays within the de minimis limit (NOK 850,000), then 14.1% | 2026 | same § 3 and § 4 fourth and fifth paragraphs |
-| Zone II | 10.6% | 2026 | same § 3 |
-| Zone III | 6.4% | 2026 | same § 3 |
-| Zone IV | 5.1% | 2026 | same § 3 |
-| Zone IVa (Tromsø, Bodø) | 7.9% | 2026 | same §§ 2 and 3 |
-| Zone V (Finnmark and seven Nord-Troms municipalities) | 0% | 2026 | same §§ 2 and 3 |
-| Sector-excluded employers | Zone I rate in all zones, except within NOK 850,000 a year (group-wide) | 2026 | same § 4 |
-| De minimis ceiling under the EEA rules | Reduced contribution plus other de minimis aid at most EUR 300,000 per legal entity or group over three years; the NOK 850,000 is the yearly share of that ceiling | 2026 | Skattedirektoratet, Arbeidsgiveravgift 2026, point 6.5 (Regulation (EU) 2023/2831) |
-| Products outside the EEA Agreement (listed farming, fishing and food codes) | 5.1% in zone IVa; 10.6% in zone Ia | 2026 | same § 5 |
+| Phase-in limit | Trygdeavgift never more than 25% of personal income above NOK 99,650 | 2026 | folketrygdloven § 23-3 fourth paragraph; https://lovdata.no/lov/1997-02-28-19/§23-3 |
+| Upper limit on the base | None | 2026 | folketrygdloven § 23-3 (no ceiling in the section); https://lovdata.no/lov/1997-02-28-19/§23-3 |
+| Arbeidsgiveravgift zone I | 14.1% | 2026 | Decision on contributions 2026 § 3; https://lovdata.no/dokument/STV/forskrift/2025-12-18-2748 |
+| Zone Ia | 10.6% while the saving against 14.1% stays within the de minimis limit (NOK 850,000), then 14.1% | 2026 | same § 3 and § 4 fourth and fifth paragraphs; https://lovdata.no/dokument/STV/forskrift/2025-12-18-2748 |
+| Zone II | 10.6% | 2026 | same § 3; https://lovdata.no/dokument/STV/forskrift/2025-12-18-2748 |
+| Zone III | 6.4% | 2026 | same § 3; https://lovdata.no/dokument/STV/forskrift/2025-12-18-2748 |
+| Zone IV | 5.1% | 2026 | same § 3; https://lovdata.no/dokument/STV/forskrift/2025-12-18-2748 |
+| Zone IVa (Tromsø, Bodø) | 7.9% | 2026 | same §§ 2 and 3; https://lovdata.no/dokument/STV/forskrift/2025-12-18-2748 |
+| Zone V (Finnmark and seven Nord-Troms municipalities) | 0% | 2026 | same §§ 2 and 3; https://lovdata.no/dokument/STV/forskrift/2025-12-18-2748 |
+| Sector-excluded employers | Zone I rate in all zones, except within NOK 850,000 a year (group-wide) | 2026 | same § 4; https://lovdata.no/dokument/STV/forskrift/2025-12-18-2748 |
+| De minimis ceiling under the EEA rules | Reduced contribution plus other de minimis aid at most EUR 300,000 per legal entity or group over three years; the NOK 850,000 is the yearly share of that ceiling | 2026 | Skattedirektoratet, Arbeidsgiveravgift 2026, point 6.5 (Regulation (EU) 2023/2831); https://www.skatteetaten.no/rettskilder/type/skattedirektoratets-meldinger/arbeidsgiveravgift-til-folketrygden-for-2026/ |
+| Products outside the EEA Agreement (listed farming, fishing and food codes) | 5.1% in zone IVa; 10.6% in zone Ia | 2026 | same § 5; https://lovdata.no/dokument/STV/forskrift/2025-12-18-2748 |
 | Workers posted from the USA, Canada or South Korea, members only of the sickness benefit part | 7% | 2026 | Skattedirektoratet, Arbeidsgiveravgift 2026, citing forskrift 19 December 2025 nr. 2786; https://www.skatteetaten.no/rettskilder/type/skattedirektoratets-meldinger/arbeidsgiveravgift-til-folketrygden-for-2026/ |
-| Private household exemption | No arbeidsgiveravgift while household pay is not over NOK 60,000 in the year | 2026 | folketrygdloven § 23-2 |
-| Minimum payment of arbeidsgiveravgift per period | NOK 100 (the a-melding is still due) | 2026 | Skattedirektoratet, Arbeidsgiveravgift 2026 (skattebetalingsforskriften § 10-4-1) |
+| Private household exemption | No arbeidsgiveravgift while household pay is not over NOK 60,000 in the year | 2026 | folketrygdloven § 23-2; https://lovdata.no/lov/1997-02-28-19/§23-3 |
+| Minimum payment of arbeidsgiveravgift per period | NOK 100 (the a-melding is still due) | 2026 | Skattedirektoratet, Arbeidsgiveravgift 2026 (skattebetalingsforskriften § 10-4-1); https://www.skatteetaten.no/rettskilder/type/skattedirektoratets-meldinger/arbeidsgiveravgift-til-folketrygden-for-2026/ |
 | Financial tax on pay (finansskatt på lønn) | 5% | 2026 | Decision on financial tax on pay 2026; https://lovdata.no/dokument/STV/forskrift/2025-12-18-2749 |
-| Additional 5% employer contribution on high pay | Discontinued from 1 January 2025 | 2026 | Skatteetaten, Employer's additional national insurance contributions (discontinued) |
+| Additional 5% employer contribution on high pay | Discontinued from 1 January 2025 | 2026 | Skatteetaten, Employer's additional national insurance contributions (discontinued); https://www.skatteetaten.no/en/business-and-organisation/employer/the-a-melding/the-a-melding-guide/employers-national-insurance-contributions-and-financial-activity-tax/employers-additional-national-insurance-contributions/ |
 | Late-payment interest | 12% from 1 January 2026; 12.25% from 1 July 2026 | 2026 | skattebetalingsloven § 11-1; https://www.skatteetaten.no/satser/forsinkelsesrenter/ |
-| Court fee (basis of enforcement fines) | NOK 1,345 | 2026 | Skatteetaten, Enforcement fines |
+| Court fee (basis of enforcement fines) | NOK 1,345 | 2026 | Skatteetaten, Enforcement fines; https://www.skatteetaten.no/en/business-and-organisation/start-and-run/deadlines-certificates-and-accounting/enforcement-fines/ |
 
 ## The taxable base
 
