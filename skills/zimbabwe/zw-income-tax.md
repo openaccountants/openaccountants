@@ -42,6 +42,9 @@ ZIMRA's tax tables page lists no 2026 table as read on 1 November 2026. The 2025
 | Presumptive rental income tax | 15% of rent | 2026 | Proprietors renting to tenants liable for presumptive tax; from 1 Jan 2026 | https://www.veritaszim.net/sites/veritas_d/files/Finance%20Act%2C%20Act%20No.%207%20of%202025.pdf |
 | Punters tax | 25% of gross winnings | 2026 | Withheld by the gaming operator | https://www.veritaszim.net/sites/veritas_d/files/Finance%20Act%2C%20Act%20No.%207%20of%202025.pdf |
 | Intermediated money transfer tax, local currency | one comma five per centum | 2026 | Replaces the 2% in the earlier version; flat ten thousand one hundred and fifty United States dollars equivalent at USD 500,000 or more | https://www.veritaszim.net/sites/veritas_d/files/Finance%20Act%2C%20Act%20No.%207%20of%202025.pdf |
+| Credit for taxpayers over 55 | US$900 a year, deducted from the tax | 2026 | Finance Act [Chapter 23:04] s.10 and Schedule to Chapter I Part I; age 55 reached before the year of assessment starts; reduced pro rata for a period under 12 months; credits cannot exceed the tax chargeable (s.5(2)(d)); Finance Act 7 of 2025 s.6 amends only Part II of that Schedule | https://www.zimra.co.zw/legislation/17-acts?download=4235:finance-act-updated-to-1st-dec-2024 |
+| Blind persons credit | US$900 a year, deducted from the tax | 2026 | Finance Act s.11; unused part can go against the spouse's tax | same |
+| Mentally or physically disabled persons credit | US$900 a year, deducted from the tax | 2026 | Finance Act s.13 | same |
 | Bonus or performance-related award exemption | First US$700 a year, all bonuses together, or the local currency equivalent at the time of payment | 2026 | Third Schedule para 4(o), substituted by the Finance Act 2024 gazetted 28 Oct 2024; Finance Act 7 of 2025 s.24 amends the Third Schedule but not para 4(o) | https://www.zimra.co.zw/legislation/17-acts?download=4233:income-tax-act-updated-to-1st-dec-2024 |
 
 ## The base
@@ -153,8 +156,8 @@ Zimbabwe taxes income in the currency it is earned. An employee paid in USD is t
 | Individuals -- trade & investment income | Flat 25% + 3% AIDS = **25.75% effective** | ZIMRA corporate/business tax rates (Finance Act s.14(2b)) |
 | Companies / trusts | 25% + 3% AIDS = **25.75% effective** | ZIMRA corporate tax rates |
 | Tax-free bonus / performance award exemption | USD 700 a year, all bonuses together (local currency equivalent at the time of payment) | Income Tax Act Third Schedule para 4(o) |
-| Elderly persons' credit (age 55+) | USD 900 / year (or ZWG equivalent) | ZIMRA elderly concession page |
-| Blind / disabled persons' credit | USD 900 / year (or ZWG equivalent) | ZIMRA concessions |
+| Elderly persons' credit (age 55+) | USD 900 / year, against the tax | Finance Act [Chapter 23:04] s.10, Schedule to Chapter I Part I |
+| Blind / disabled persons' credit | USD 900 / year each (blind s.11, disabled s.13), against the tax | Finance Act [Chapter 23:04] Schedule to Chapter I Part I |
 | VAT compulsory registration threshold | USD 25,000 (or ZWG equivalent) per rolling 12 months | ZIMRA VAT registration page |
 
 #### Conservative Defaults
@@ -457,7 +460,7 @@ Taxable portion = USD 0.00. Any bonus ABOVE USD 700 is added to taxable earnings
 
 #### 6.7 Elderly / disability credits
 
-- **Elderly / disability credits**  -  Age-55+ credit and blind/disabled credit are USD 900/year each (or ZWG equivalent) (ZIMRA concessions). Flag for reviewer to confirm eligibility (age, certified disability) before applying. Default: no credit.  _(ZIMRA concessions)_
+- **Elderly / disability credits**  -  The credit for taxpayers over 55 (age reached before the year of assessment starts), the blind persons credit and the mentally or physically disabled persons credit are USD 900 a year each, deducted from the income tax (Finance Act [Chapter 23:04] ss.10, 11, 13 and Schedule to Chapter I Part I). Total credits cannot exceed the tax chargeable (s.5(2)(d)), so they are not refundable; an unused blind persons credit can go against the spouse's tax (s.11). Flag for reviewer to confirm eligibility (age, certified disability) before applying. Default: no credit.  _(Finance Act [Chapter 23:04], ZIMRA consolidation to 1 Dec 2024)_
 
 #### 6.8 ZWG band revisions
 
@@ -593,7 +596,7 @@ ONBOARDING QUESTIONS -- ZIMBABWE INCOME TAX
 | Provisional tax (QPDs) | ZIMRA Public Notice 17 of 2025 |
 | Annual filing deadline (30 Apr) | ZIMRA Public Notice 20 of 2026 (as cited earlier, notice not opened) |
 | Forms ITF1 / ITF12C / ITF12B | ZIMRA filing guidance; PN 23 of 2025 (ITF12C) |
-| Elderly / disability credits | ZIMRA elderly-concession page |
+| Elderly / disability credits (USD 900 each) | Finance Act [Chapter 23:04] ss.10, 11, 13 and Schedule to Chapter I Part I |
 | VAT registration threshold | ZIMRA VAT registration page |
 | Bonus exemption (USD 700 a year) | Income Tax Act Third Schedule para 4(o) |
 | NSSA POBS / APWCS | NSSA contributions & schemes pages (POBS ceiling not yet confirmed) |
@@ -765,6 +768,7 @@ expected:
 | ZIMRA Tax Rates page, whole table | https://www.zimra.co.zw/domestic-taxes/corporate/tax-rates | 2026-11-01 |
 | ZIMRA Self Assessment Return Notes | https://www.zimra.co.zw/domestic-taxes/corporate/self-assessment-return-notes | 2026-11-01 |
 | Income Tax Act [Chapter 23:06], ZIMRA consolidation updated to 1 Dec 2024. Read for the Third Schedule para 4(o): a bonus or performance-related award is exempt to the extent that the bonuses in the year of assessment do not exceed "US$700 or the local currency equivalent thereof at the time of payment"; substituted by the Finance Act 2024 gazetted 28 Oct 2024 | https://www.zimra.co.zw/legislation/17-acts?download=4233:income-tax-act-updated-to-1st-dec-2024 | 2026-11-14 |
+| Finance Act [Chapter 23:04], ZIMRA consolidation updated to 1 Dec 2024. Read for ss.10, 11 and 13 and the Schedule to Chapter I Part I: "Credit for taxpayers over 55 years of age $ 900", "Blind persons credit $ 900", "Mentally or physically disabled persons credit $ 900" (amounts in US$), and s.5(2)(d) (credits not above the tax chargeable) | https://www.zimra.co.zw/legislation/17-acts?download=4235:finance-act-updated-to-1st-dec-2024 | 2026-11-14 |
 | ZIMRA PAYE Explained page. Read for its Performance Award paragraph, which still says USD 400 from 1 January 2024 (older than the Finance Act 2024 text above, so not followed) | https://www.zimra.co.zw/domestic-taxes/individual/paye-explained | 2026-11-14 |
 
-Not yet confirmed: payment days of QPDs 1 to 3; any 2026 ZIMRA PAYE table; USD 900 credits; income tax late filing and late payment penalties, including the 100% figure in the earlier version; the text of SI 81 of 2025 (dates come from ZIMRA notices citing it); ZWG conversion rules; rows moved out of the rates table on 2026-11-14 (earlier version): USD 900 a year credit for age 55 and over, blind or disabled; NSSA POBS insurable earnings ceiling (USD 700 a month in the earlier version): nssa.org.zw blocks scripted access and no official copy of the statutory instrument was opened (S.I. 99 of 2024, amending s.11(2) of S.I. 393 of 1993, is the place to check); Example 6 and its test case use it only as an assumed figure.
+Not yet confirmed: payment days of QPDs 1 to 3; any 2026 ZIMRA PAYE table; income tax late filing and late payment penalties, including the 100% figure in the earlier version; the text of SI 81 of 2025 (dates come from ZIMRA notices citing it); ZWG conversion rules; NSSA POBS insurable earnings ceiling (USD 700 a month in the earlier version): nssa.org.zw blocks scripted access and no official copy of the statutory instrument was opened (S.I. 99 of 2024, amending s.11(2) of S.I. 393 of 1993, is the place to check); Example 6 and its test case use it only as an assumed figure.
