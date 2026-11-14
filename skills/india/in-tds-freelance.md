@@ -414,13 +414,13 @@ Hypothetical inputs and derived outputs below assume resident ordinary deductee,
 
 ### Case 1: professional threshold equality and missing PAN
 
-Professional fees total 50,000 exactly: no TDS. At 50,001 the whole amount is taxed at 10%=5,000.10, leaving 45,000.90 cash. If validPAN is missing and no higher rates-in-force apply, the 20%floor makes TDS 10,000.20, cash 40,000.80. Do not tax only the 1 excess. This assumes a single professional-fee category, so it does not settle the mixed-category threshold referral. [s.393(1)serial 6(iii),397(2)](https://egazette.gov.in/WriteReadData/2025/265620.pdf).
+Professional fees total 50,000 exactly: no TDS. At 50,100 the whole amount is taxed at 10%=5,010, leaving 45,090 cash. If validPAN is missing and no higher rates-in-force apply, the 20%floor makes TDS 10,020, cash 40,080. Do not tax only the100excess. This assumes a single professional-fee category, so it does not settle the mixed-category threshold referral. [s.393(1)serial 6(iii),397(2)](https://egazette.gov.in/WriteReadData/2025/265620.pdf).
 
 ```oa-check
 name: India professional threshold and PAN deduction decision
 inputs:
   exact_threshold: 50000
-  above_threshold: 50001
+  above_threshold: 50100
 steps:
   exact_tds: 0 * exact_threshold
   normal_tds: above_threshold * 0.10
@@ -429,10 +429,10 @@ steps:
   missing_pan_net: above_threshold - missing_pan_tds
 expected:
   exact_tds: 0
-  normal_tds: 5000.10
-  normal_net: 45000.90
-  missing_pan_tds: 10000.20
-  missing_pan_net: 40000.80
+  normal_tds: 5010
+  normal_net: 45090
+  missing_pan_tds: 10020
+  missing_pan_net: 40080
 ```
 
 ### Case 2: aggregate contract threshold changes the result
