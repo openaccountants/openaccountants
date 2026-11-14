@@ -1,11 +1,11 @@
 ---
 name: ia-corporate-tax
 description: "Compute ordinary Iowa C corporation income tax for tax years beginning in 2026, using the certified 5.5% and 7.1% bands. Identifies the separate financial-institution franchise tax, federal taxable-income base, state adjustments, apportionment, estimates and filing workflow. Trigger on Iowa corporation tax, IA 1120 and Iowa franchise tax."
-version: "0.1"
+version: "0.2"
 jurisdiction: US-IA
 category: state-tax
 tax_year: 2026
-last_updated: 2026-11-13
+last_updated: 2026-11-14
 tier: 2
 domain: income-tax
 type: computation
@@ -36,9 +36,9 @@ Ordinary C corporations doing business in Iowa or deriving Iowa-source income, i
 | Item and condition | Amount, tax year beginning in 2026 | Official source |
 | --- | --- | --- |
 | Ordinary corporate band through USD 100,000 | 5.5% | [Order 2025-02, certified 2026 bands](https://revenue.iowa.gov/media/4303/download) |
-| Ordinary corporate income above USD 100,000 | 7.1% on excess, plus USD 5,500 on lower band | [Order 2025-02](https://revenue.iowa.gov/media/4303/download) |
-| Financial institution subject to franchise tax | 3.8% of the separate franchise-tax base; not the ordinary C-corp rate | [422.60 and 422.63(2)(e)](https://www.legis.iowa.gov/docs/code/2026/422.63.pdf) |
-| Corporate estimate screen | Expected tax at least USD 1,000; check exceptions and required installments | [422.38 incorporating 422.16(12)](https://www.legis.iowa.gov/docs/code/2026/422.38.pdf) |
+| Ordinary corporate income above USD 100,000 | 7.1% on excess, plus USD 5,500 on lower band (derived: 5.5% of the first USD 100,000) | [Order 2025-02](https://revenue.iowa.gov/media/4303/download) |
+| Financial institution subject to franchise tax | 3.8% of the separate franchise-tax base for tax years beginning in 2026; not the ordinary C-corp rate (in words on the page) | [422.60 and 422.63(2)(e)](https://www.legis.iowa.gov/docs/code/2026/422.63.pdf) |
+| Corporate estimate screen | Expected tax of USD 1,000 or more; check exceptions and required installments (in words on the page) | [422.38](https://www.legis.iowa.gov/docs/code/2026/422.38.pdf) incorporating [422.16(12)](https://www.legis.iowa.gov/docs/code/2026/422.16.pdf) |
 
 The statute contains unreduced legacy corporate rates but expressly gives the annual certification priority under 422.33(1)(b). The order states the threshold was not met for another reduction, so 2026 stays at the effective bands above. Do not substitute a hoped-for flat 5.5% rate.
 
