@@ -1,14 +1,15 @@
 ---
 name: be-payroll-withholding
 description: "Belgian payroll withholding (bedrijfsvoorheffing / précompte professionnel) on employees' and directors' pay for 2026, computed with the key formula (sleutelformule) of Annex III to the KB/WIB 92. Covers the five steps: pay after employee social security, annualisation, flat-rate professional expenses (30%, capped at EUR 6,070), the withholding scale (which builds in a 7% local surcharge), the tax-free amount, the marital quotient, reductions for children, dependants and single parents, and the work bonus and overtime reductions. Two rule sets apply in 2026: the KB of 11 December 2025 (January to October) and the KB of 27 September 2026 (from 1 November). Also covers holiday pay and bonus rates, the withholding return and payment dates, interest and fines. Trigger on: bedrijfsvoorheffing, précompte professionnel, sleutelformule, formule-clé, Bijlage III, net pay Belgium. Out of scope: belgium-payroll (social security, work bonus amounts), be-employee-income-tax, be-cross-border."
-version: 0.2
+version: 0.3
 jurisdiction: BE
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
+type: computation
 ---
 
 # Belgium: payroll withholding (bedrijfsvoorheffing / précompte professionnel), 2026 key formula
@@ -39,27 +40,27 @@ This skill computes the monthly withholding an employer takes from pay in 2026. 
 |---|---|---|---|
 | Employee social security deducted first | 13.07% of gross pay (blue-collar: of gross at 108%), less any social work bonus | 2026 | [RSZ instructions 2026/3](https://www.socialsecurity.be/employer/instructions/dmfa/nl/latest/instructions/socialsecuritycontributions/contributions.html); see `belgium-payroll` |
 | Flat-rate professional expenses, employees | 30% of annual gross after social security, capped at EUR 6,070 (cap reached at EUR 20,233.33) | 2026 | [Key formula 2026, nr. 8](https://www.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/821b117c-eebc-497a-8297-ed2bb1e99d75) |
-| Flat-rate professional expenses, directors | 3%, capped at EUR 3,200 (cap reached at EUR 106,666.67) | 2026 | Key formula 2026, nr. 8 |
+| Flat-rate professional expenses, directors | 3%, capped at EUR 3,200 (cap reached at EUR 106,666.67) | 2026 | Key formula 2026, nr. 8; https://www.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/821b117c-eebc-497a-8297-ed2bb1e99d75 |
 | Withholding scale (annex 1) | 26.75% to EUR 16,710; EUR 4,469.93 + 42.80% to EUR 29,500; EUR 9,944.05 + 48.15% to EUR 51,050; EUR 20,320.38 + 53.50% above | 2026, whole year | [Key formula 2026, annex 1](https://www.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/821b117c-eebc-497a-8297-ed2bb1e99d75) |
-| Tax on the tax-free amount, January to October | EUR 2,987.98 (26.75% of EUR 11,170); EUR 5,975.96 for a one-income couple | 2026 | Key formula 2026, nr. 11 |
+| Tax on the tax-free amount, January to October | EUR 2,987.98 (26.75% of EUR 11,170); EUR 5,975.96 for a one-income couple | 2026 | Key formula 2026, nr. 11; https://www.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/821b117c-eebc-497a-8297-ed2bb1e99d75 |
 | Tax on the tax-free amount, from 1 November | EUR 3,089.63 (26.75% of EUR 11,550); EUR 6,179.26 for a one-income couple | 2026 | [KB 27 September 2026, art. 2 and 4](https://www.ejustice.just.fgov.be/eli/besluit/2026/09/27/2026007167/staatsblad) |
-| Marital quotient cap, January to October | 30% of annual net, at most EUR 13,790 | 2026 | Key formula 2026, nr. 11 b |
-| Marital quotient cap, from 1 November | 30%, at most EUR 11,780; EUR 12,790 if both spouses are 66 by 1 January 2027 | 2026 | KB 27 September 2026, art. 3 |
-| Children reduction (annual), January to October | 1: EUR 624; 2: 1,656; 3: 4,404; 4: 7,620; 5: 11,100; 6: 14,592; 7: 18,120; 8: 21,996; each extra: + 3,864 | 2026 | Key formula 2026, annex 3 |
-| Children reduction (annual), from 1 November | 1: EUR 684; 2: 1,644; 3: 4,344; 4: 7,488; 5: 10,884; 6: 14,292; 7: 17,712; 8: 21,492; each extra: + 3,780 | 2026 | KB 27 September 2026, art. 5 |
-| Single parent with dependent children | EUR 624 to October; EUR 636 from November | 2026 | Key formula annex 4; KB 27 September 2026, art. 7 |
-| Employee is disabled | EUR 624 to October; EUR 648 from November | 2026 | Key formula annex 4 and 5; KB 27 September 2026, art. 6 |
+| Marital quotient cap, January to October | 30% of annual net, at most EUR 13,790 | 2026 | Key formula 2026, nr. 11 b; https://www.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/821b117c-eebc-497a-8297-ed2bb1e99d75 |
+| Marital quotient cap, from 1 November | 30%, at most EUR 11,780; EUR 12,790 if both spouses are 66 by 1 January 2027 | 2026 | KB 27 September 2026, art. 3; https://www.ejustice.just.fgov.be/eli/besluit/2026/09/27/2026007167/staatsblad |
+| Children reduction (annual), January to October | 1: EUR 624; 2: 1,656; 3: 4,404; 4: 7,620; 5: 11,100; 6: 14,592; 7: 18,120; 8: 21,996; each extra: + 3,864 | 2026 | Key formula 2026, annex 3; https://www.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/821b117c-eebc-497a-8297-ed2bb1e99d75 |
+| Children reduction (annual), from 1 November | 1: EUR 684; 2: 1,644; 3: 4,344; 4: 7,488; 5: 10,884; 6: 14,292; 7: 17,712; 8: 21,492; each extra: + 3,780 | 2026 | KB 27 September 2026, art. 5; https://www.ejustice.just.fgov.be/eli/besluit/2026/09/27/2026007167/staatsblad |
+| Single parent with dependent children | EUR 624 to October; EUR 636 from November | 2026 | Key formula annex 4; KB 27 September 2026, art. 7; https://www.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/821b117c-eebc-497a-8297-ed2bb1e99d75 ; https://www.ejustice.just.fgov.be/eli/besluit/2026/09/27/2026007167/staatsblad |
+| Employee is disabled | EUR 624 to October; EUR 648 from November | 2026 | Key formula annex 4 and 5; KB 27 September 2026, art. 6; https://www.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/821b117c-eebc-497a-8297-ed2bb1e99d75 ; https://www.ejustice.just.fgov.be/eli/besluit/2026/09/27/2026007167/staatsblad |
 | Other dependants (per person) | EUR 624 to October; EUR 636 from November | 2026 | Same |
 | Dependants aged 66 or more needing care (per person) | EUR 1,992 all year | 2026 | Same |
-| Spouse disabled (one-income couple) | EUR 624 to October; EUR 636 from November | 2026 | Key formula annex 5; KB 27 September 2026, art. 8 |
-| Spouse with own earned income up to EUR 290 net a month | EUR 1,740 | 2026 | Key formula annex 4; KB 27 September 2026, art. 7 |
+| Spouse disabled (one-income couple) | EUR 624 to October; EUR 636 from November | 2026 | Key formula annex 5; KB 27 September 2026, art. 8; https://www.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/821b117c-eebc-497a-8297-ed2bb1e99d75 ; https://www.ejustice.just.fgov.be/eli/besluit/2026/09/27/2026007167/staatsblad |
+| Spouse with own earned income up to EUR 290 net a month | EUR 1,740 | 2026 | Key formula annex 4; KB 27 September 2026, art. 7; https://www.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/821b117c-eebc-497a-8297-ed2bb1e99d75 ; https://www.ejustice.just.fgov.be/eli/besluit/2026/09/27/2026007167/staatsblad |
 | Spouse with only pensions up to EUR 579 net a month | EUR 3,474 | 2026 | Same |
 | Work bonus reduction (fiscal work bonus in withholding) | 33.14% of part A; part B 52.54% to 31 July, 63% from 1 August | 2026 | Key formula nr. 20; [KB 24 July 2026, art. 4 and 7](https://www.ejustice.just.fgov.be/eli/besluit/2026/07/24/2026005690/staatsblad) |
-| Overtime reduction | 57.75% (50% or 100% premium hours) or 66.81% (20% premium hours) of the gross pay base, first 180 hours a year (360 in hotels, 280 in qualifying road and rail works) | 2026 | Key formula nr. 18; KB 24 July 2026, art. 2 and 7 |
-| Group insurance and pension contributions withheld | 30% of the employee's contribution | 2026 | Key formula nr. 17 |
-| Low-paid statutory public servants | EUR 7.50 a month if taxable pay is EUR 742.26 to 2,722.91 | 2026 | Key formula nr. 19 |
+| Overtime reduction | 57.75% (50% or 100% premium hours) or 66.81% (20% premium hours) of the gross pay base, first 180 hours a year (360 in hotels, 280 in qualifying road and rail works) | 2026 | Key formula nr. 18; KB 24 July 2026, art. 2 and 7; https://www.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/821b117c-eebc-497a-8297-ed2bb1e99d75 ; https://www.ejustice.just.fgov.be/eli/besluit/2026/07/24/2026005690/staatsblad |
+| Group insurance and pension contributions withheld | 30% of the employee's contribution | 2026 | Key formula nr. 17; https://www.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/821b117c-eebc-497a-8297-ed2bb1e99d75 |
+| Low-paid statutory public servants | EUR 7.50 a month if taxable pay is EUR 742.26 to 2,722.91 | 2026 | Key formula nr. 19; https://www.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/821b117c-eebc-497a-8297-ed2bb1e99d75 |
 | Holiday pay and other exceptional pay | 0% to 53.50% by annual normal gross pay (table below) | 2026 | [Annex III 2026, nr. 53](https://www.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/a38f6c59-3ab9-49d3-8844-d39f91387663) |
-| Holiday pay paid by a holiday fund (blue-collar) | 17.16% of the whole amount if it is up to EUR 1,740; 23.22% of the whole amount if it is above | 2026 | Annex III 2026, nr. 69 |
+| Holiday pay paid by a holiday fund (blue-collar) | 17.16% of the whole amount if it is up to EUR 1,740; 23.22% of the whole amount if it is above | 2026 | Annex III 2026, nr. 69; https://www.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/a38f6c59-3ab9-49d3-8844-d39f91387663 |
 | Quarterly payment threshold | Withholding on the previous year's income under EUR 51,480 | Income 2026 | [Art. 412 WIB 92](https://www.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/473ac660-d80e-4181-ab8e-e3544b57ffa8) |
 | Late payment interest | 4% a year | Current | [FOD Financiën, betaling](https://financien.belgium.be/nl/ondernemingen/vennootschapsbelasting/betaling); [art. 414](https://www.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/db296af5-75b3-49bc-95e2-a35bb742fed5) |
 
@@ -67,19 +68,19 @@ The scale builds in a 7% increase for local surcharges (key formula nr. 5): 26.7
 
 Exceptional pay rates (Annex III 2026, nr. 53), by annual normal gross pay:
 
-| Annual normal gross pay | Holiday pay | Other exceptional pay (13th month, bonuses) |
-|---|---|---|
-| Up to EUR 10,675 | 0% | 0% |
-| 10,675.01 to 13,660 | 19.17% | 23.22% |
-| 13,660.01 to 17,375 | 21.20% | 25.23% |
-| 17,375.01 to 20,840 | 26.25% | 30.28% |
-| 20,840.01 to 23,580 | 31.30% | 35.33% |
-| 23,580.01 to 26,340 | 34.33% | 38.36% |
-| 26,340.01 to 31,830 | 36.34% | 40.38% |
-| 31,830.01 to 34,640 | 39.37% | 43.41% |
-| 34,640.01 to 45,860 | 42.39% | 46.44% |
-| 45,860.01 to 59,900 | 47.44% | 51.48% |
-| Above 59,900 | 53.50% | 53.50% |
+| Annual normal gross pay | Holiday pay | Other exceptional pay (13th month, bonuses) | Source |
+|---|---|---|---|
+| Up to EUR 10,675 | 0% | 0% | https://www.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/a38f6c59-3ab9-49d3-8844-d39f91387663 |
+| 10,675.01 to 13,660 | 19.17% | 23.22% | https://www.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/a38f6c59-3ab9-49d3-8844-d39f91387663 |
+| 13,660.01 to 17,375 | 21.20% | 25.23% | https://www.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/a38f6c59-3ab9-49d3-8844-d39f91387663 |
+| 17,375.01 to 20,840 | 26.25% | 30.28% | https://www.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/a38f6c59-3ab9-49d3-8844-d39f91387663 |
+| 20,840.01 to 23,580 | 31.30% | 35.33% | https://www.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/a38f6c59-3ab9-49d3-8844-d39f91387663 |
+| 23,580.01 to 26,340 | 34.33% | 38.36% | https://www.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/a38f6c59-3ab9-49d3-8844-d39f91387663 |
+| 26,340.01 to 31,830 | 36.34% | 40.38% | https://www.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/a38f6c59-3ab9-49d3-8844-d39f91387663 |
+| 31,830.01 to 34,640 | 39.37% | 43.41% | https://www.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/a38f6c59-3ab9-49d3-8844-d39f91387663 |
+| 34,640.01 to 45,860 | 42.39% | 46.44% | https://www.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/a38f6c59-3ab9-49d3-8844-d39f91387663 |
+| 45,860.01 to 59,900 | 47.44% | 51.48% | https://www.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/a38f6c59-3ab9-49d3-8844-d39f91387663 |
+| Above 59,900 | 53.50% | 53.50% | https://www.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/a38f6c59-3ab9-49d3-8844-d39f91387663 |
 
 ## The taxable base
 
@@ -201,21 +202,21 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| FOD Financiën, sleutelformule vanaf 1 januari 2026 (BEO-DR/2025-0928), FisconetPlus | https://www.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/821b117c-eebc-497a-8297-ed2bb1e99d75 | 2026-10-23 |
-| Annex III KB/WIB 92, rules from 1 January 2026 (annex to KB 11 December 2025), FisconetPlus | https://www.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/a38f6c59-3ab9-49d3-8844-d39f91387663 | 2026-10-23 |
-| KB 11 December 2025 amending the KB/WIB 92 on withholding, Belgisch Staatsblad 29 December 2025 (numac 2025009487) | https://www.ejustice.just.fgov.be/eli/besluit/2025/12/11/2025009487/staatsblad | 2026-10-23 |
-| KB 24 July 2026 amending the withholding rules, Belgisch Staatsblad 30 July 2026 | https://www.ejustice.just.fgov.be/eli/besluit/2026/07/24/2026005690/staatsblad | 2026-10-23 |
-| KB 27 September 2026 amending withholding, Belgisch Staatsblad 2 October 2026 | https://www.ejustice.just.fgov.be/eli/besluit/2026/09/27/2026007167/staatsblad | 2026-10-23 |
-| FOD Financiën, bedrijfsvoorheffing berekenen (index of 2026 rules, key formula and simulators) | https://financien.belgium.be/nl/ondernemingen/personeel_en_loon/bedrijfsvoorheffing/berekening | 2026-10-23 |
-| FOD Financiën, simulator bedrijfsvoorheffing 2026, version from 1 November 2026 | https://eservices.minfin.fgov.be/myminfin-rest/fisconetPlus/public/document/addenda/SimulatorBV2026novemberverrouille.xlsx | 2026-10-23 |
-| FOD Financiën, aangifte bedrijfsvoorheffing | https://financien.belgium.be/nl/ondernemingen/personeel_en_loon/bedrijfsvoorheffing/aangifte | 2026-10-23 |
-| FOD Financiën, kalender bedrijfsvoorheffing 2026 | https://financien.belgium.be/nl/ondernemingen/personeel_en_loon/bedrijfsvoorheffing/kalender | 2026-10-23 |
+| FOD Financiën, sleutelformule vanaf 1 januari 2026 (BEO-DR/2025-0928), FisconetPlus. Read for the 2026 key formula, scale, reductions and caps. | https://www.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/821b117c-eebc-497a-8297-ed2bb1e99d75 | 2026-10-23 |
+| Annex III KB/WIB 92, rules from 1 January 2026 (annex to KB 11 December 2025), FisconetPlus. Read for the exceptional pay rates and holiday fund rates. | https://www.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/a38f6c59-3ab9-49d3-8844-d39f91387663 | 2026-10-23 |
+| KB 11 December 2025 amending the KB/WIB 92 on withholding, Belgisch Staatsblad 29 December 2025 (numac 2025009487). Read for the replacement of Annex III from 1 January 2026. | https://www.ejustice.just.fgov.be/eli/besluit/2025/12/11/2025009487/staatsblad | 2026-10-23 |
+| KB 24 July 2026 amending the withholding rules, Belgisch Staatsblad 30 July 2026. Read for the overtime reduction and hour limits. | https://www.ejustice.just.fgov.be/eli/besluit/2026/07/24/2026005690/staatsblad | 2026-10-23 |
+| KB 27 September 2026 amending withholding, Belgisch Staatsblad 2 October 2026. Read for the reductions and caps from 1 November 2026. | https://www.ejustice.just.fgov.be/eli/besluit/2026/09/27/2026007167/staatsblad | 2026-10-23 |
+| FOD Financiën, bedrijfsvoorheffing berekenen (index of 2026 rules, key formula and simulators). Read for where the 2026 rules and simulators are published. | https://financien.belgium.be/nl/ondernemingen/personeel_en_loon/bedrijfsvoorheffing/berekening | 2026-10-23 |
+| FOD Financiën, simulator bedrijfsvoorheffing 2026, version from 1 November 2026. Read for the November 2026 amounts. | https://eservices.minfin.fgov.be/myminfin-rest/fisconetPlus/public/document/addenda/SimulatorBV2026novemberverrouille.xlsx | 2026-10-23 |
+| FOD Financiën, aangifte bedrijfsvoorheffing. Read for how to file the withholding return. | https://financien.belgium.be/nl/ondernemingen/personeel_en_loon/bedrijfsvoorheffing/aangifte | 2026-10-23 |
+| FOD Financiën, kalender bedrijfsvoorheffing 2026. Read for the 2026 filing and payment calendar. | https://financien.belgium.be/nl/ondernemingen/personeel_en_loon/bedrijfsvoorheffing/kalender | 2026-10-23 |
 | WIB 92 art. 412 (income 2026), payment dates and quarterly threshold | https://www.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/473ac660-d80e-4181-ab8e-e3544b57ffa8 | 2026-10-23 |
 | WIB 92 art. 414 (income 2026), late payment interest | https://www.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/db296af5-75b3-49bc-95e2-a35bb742fed5 | 2026-10-23 |
 | WIB 92 art. 444 (income 2026), tax increases | https://www.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/5095859f-8ffb-42f9-b535-3197a7c3dbe0 | 2026-10-23 |
 | WIB 92 art. 445 (income 2026), administrative fines | https://www.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/f9f2e45e-5e3b-4642-a5e3-31ad4ca7f25f | 2026-10-23 |
 | WIB 92 art. 130 (income 2026), tax scale | https://www.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/796a4fc5-340e-4c89-a72a-88caa804ca96 | 2026-10-23 |
 | WIB 92 art. 131 (income 2026), tax-free amount | https://www.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/f3c5d665-cac4-4cbd-b714-bd287f791751 | 2026-10-23 |
-| FOD Financiën, vennootschapsbelasting betalen (late payment interest 4%) | https://financien.belgium.be/nl/ondernemingen/vennootschapsbelasting/betaling | 2026-10-23 |
+| FOD Financiën, vennootschapsbelasting betalen (late payment interest 4%). Read for the late payment interest rate. | https://financien.belgium.be/nl/ondernemingen/vennootschapsbelasting/betaling | 2026-10-23 |
 
 Not yet confirmed: no consolidated key formula for the rules from 1 November 2026 was published at the date read; the November figures come from the KB of 27 September 2026 and the FOD simulator. The FOD aangifte page still gives the quarterly threshold as EUR 50,240 "in 2025"; the EUR 51,480 figure is the income 2026 text of art. 412. The form number of the withholding return (274) and the royal decree scale of fines under art. 445 were not read. The exceptional pay rates of nr. 53, 55 to 57 and 69 are from the January 2026 Annex III; the KB of 27 September 2026 changes only the nr. 54 limits. Annex III does not say in nr. 53 whether the rate is applied to the payment before or after employee social security; nr. 25.1 deducts social security only for monthly pay. The rule that an employer who fails to withhold stays liable was removed because no source was read. The work bonus amounts that feed step 5 are in `belgium-payroll`.
