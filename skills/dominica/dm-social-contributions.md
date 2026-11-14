@@ -51,7 +51,6 @@ Dominica Social Security (DSS) contributions in 2026 under the Social Security A
 | Self-employed rate, 2026 | 13.75% of the preceding year's income, up to EC$84,000 | [DSS self-employed payment](https://dss.dm/contributors/definition-se/pmt-contrib-se/) |
 | Self-employed payment | Quarterly (monthly allowed); late after the 14th day following the quarter end: 10% plus interest | same |
 | Self-employed reassessment | At the DSS office by 31 January each year | same |
-| Voluntary contributors, 2026 | 12.40% | [DSS notice of changes for 2026](https://dss.dm/wp-content/uploads/2026/01/Changes-to-Contributions-provisions-2026.png) |
 
 ### Steps
 
@@ -60,17 +59,18 @@ Dominica Social Security (DSS) contributions in 2026 under the Social Security A
 3. **Base:** all insurable earnings, capped at EC$7,000 a month.
 4. **Contributions:** employee 6.75%; employer 8% (with redundancy) or 7.75% (without).
 5. **Pay** by the 14th of the next month to avoid the 10% late fee.
-6. **Multiple employers:** each deducts up to the ceiling on its own pay; the employee claims a refund of employee contributions on combined earnings over EC$7,000.
+6. **Voluntary contributors** pay 12.40% in 2026 (DSS notice of changes for 2026, an image: [notice](https://dss.dm/wp-content/uploads/2026/01/Changes-to-Contributions-provisions-2026.png)).
+7. **Multiple employers:** each deducts up to the ceiling on its own pay; the employee claims a refund of employee contributions on combined earnings over EC$7,000.
 
 ## Boundary and exception table
 
 | Situation | Treatment | Source |
 |---|---|---|
 | DSS FAQ shows older combined rates | Use the January 2026 row of the rate table | [DSS rate table](https://dss.dm/wp-content/uploads/2024/12/Table-of-EE-ER-Contribution-Rates-2012-2031.pdf) |
-| Manager titled "manager" with no hiring or firing authority | With redundancy (8% employer) | [DSS FAQ](https://dss.dm/faq/) |
+| Manager titled "manager" with no hiring or firing authority | An employee with redundancy cover; only managers who have and exercise authority to hire and fire are without it | [DSS FAQ](https://dss.dm/faq/) |
 | 14th falls on a Saturday | Pay by the next working day | same |
 | Self-employed person who starts mid-year | Ask DSS for the assessed schedule; do not assume even quarters | [DSS self-employed payment](https://dss.dm/contributors/definition-se/pmt-contrib-se/) |
-| Self-employed income of EC$100,000 | Capped at 84,000 | same |
+| Self-employed income above the cap | Contributions on EC$84,000 only | same |
 
 ## Worked cases
 

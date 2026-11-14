@@ -70,8 +70,8 @@ Income tax on individuals in the Commonwealth of Dominica (DM) for the 2026 inco
 
 | Situation | Treatment | Source |
 |---|---|---|
-| Employee with only employment income of EC$29,000 | Not obliged to file | [IRD personal income tax](https://ird.gov.dm/tax-laws/personal-income-tax) |
-| Employee with EC$29,000 wages plus any business income | Must file; the exemption is for employment income only | same |
+| Employee whose income is entirely employment income below EC$30,000 | Not obliged to file | [IRD personal income tax](https://ird.gov.dm/tax-laws/personal-income-tax) |
+| Employee below EC$30,000 who also has any business income | Must file; the exemption is for employment income only | same |
 | Nonresident | No resident allowance | same |
 | Business ceased or employment ended in the year | File a return (section 67(b) per the IRD FAQ), which also lets an employee recover excess tax | [IRD FAQ](https://ird.gov.dm/f-a-q) |
 | Income exactly EC$30,000 from employment | The exemption says "less than"; at exactly 30,000 file | [IRD personal income tax](https://ird.gov.dm/tax-laws/personal-income-tax) |
