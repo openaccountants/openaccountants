@@ -1,10 +1,10 @@
 ---
 name: us-sales-tax
 description: The US sales and use tax framework for tax year 2026, read before any state sales tax work. Covers how sales tax and use tax fit together, physical and economic nexus after Wayfair, marketplace facilitators, the five states with no general sales tax, the statewide base rate of each of the 45 sales tax states and DC (each linked to that state's own source), sourcing, exemption and resale certificates, taxability patterns for SaaS, food, clothing and digital goods, Streamlined Sales Tax registration and voluntary disclosure. Trigger on "sales tax", "use tax", "nexus", "Wayfair", "resale certificate", "exemption certificate", "sales tax rate", "marketplace facilitator", "Streamlined Sales Tax". Load the state's own sales tax skill for that state's base and filing, and us-sales-tax-nexus-50-state-matrix for thresholds.
-version: "3.0"
+version: "3.1"
 jurisdiction: US
 tax_year: 2026
-last_updated: 2026-11-13
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: vat-gst
@@ -48,7 +48,7 @@ Statewide base rate only. Local rates are added in most states; the state's own 
 
 | State | Statewide base rate, 2026 | Source |
 | --- | --- | --- |
-| Arizona (transaction privilege tax, retail) | 5.6% (5% plus the 0.6% increment) | [A.R.S. 42-5010](https://www.azleg.gov/ars/42/05010.htm), [A.R.S. 42-5010.01](https://www.azleg.gov/ars/42/05010-01.htm) |
+| Arizona (transaction privilege tax, retail) | 5.6% (derived: 5% plus the 0.6% increment, both in words on the page) | [A.R.S. 42-5010](https://www.azleg.gov/ars/42/05010.htm), [A.R.S. 42-5010.01](https://www.azleg.gov/ars/42/05010-01.htm) |
 | Arkansas | 6.5% | [Arkansas 2026 Tax Handbook, section 1.7](https://webftp.blr.arkansas.gov/Home/FTPDocument?path=Assembly%2F2027%2FSummary+Budget+Manuals%2F2026+Tax+Handbook.pdf) |
 | California | 7.25% | [CDTFA, rate description](https://www.cdtfa.ca.gov/taxes-and-fees/sut-rates-description.htm) |
 | Connecticut | 6.35% | [CT DRS, sales tax information](https://portal.ct.gov/drs/sales-tax/tax-information) |

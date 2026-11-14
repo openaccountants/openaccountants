@@ -1,10 +1,10 @@
 ---
 name: us-corporate-extension-form-7004-and-the
 description: How a business entity gets the automatic extension of time to file on Form 7004 for tax year 2026, and how the section 7502 timely mailing rule fixes the filing date of a mailed Form 7004. Covers the 6-month extension (the old 7-month rule for June 30 C corporations ends for tax years beginning in 2026), the 15th day of the 6th month cut-off for foreign and offshore-books entities, the 3-month and 4-month additional extensions, consolidated groups, payment (Form 7004 never extends time to pay), the failure to file and failure to pay additions, registered and certified mail, and IRS-designated private delivery services. For US tax preparers and corporate filers. Federal only.
-version: "2.0"
+version: "2.1"
 jurisdiction: US
 tax_year: 2026
-last_updated: 2026-11-13
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: corporate-tax
@@ -53,7 +53,7 @@ Out of scope, and where it goes:
 | Additional extension on line 4, partnerships and S corporations | 3 months | [Instructions for Form 7004 (Rev. December 2025), Line 4](https://www.irs.gov/pub/irs-pdf/i7004.pdf) |
 | Additional extension on line 4, C corporations and Form 1120-POL filers | 4 months | [Instructions for Form 7004 (Rev. December 2025), Line 4](https://www.irs.gov/pub/irs-pdf/i7004.pdf) |
 | Advance notice before the IRS terminates an extension | at least 10 days | [Instructions for Form 7004 (Rev. December 2025), Termination of extension period](https://www.irs.gov/pub/irs-pdf/i7004.pdf) |
-| Late payment penalty, per month or part month | 0.5% of the unpaid tax | [Instructions for Form 7004 (Rev. December 2025), Penalty for late payment of tax](https://www.irs.gov/pub/irs-pdf/i7004.pdf) |
+| Late payment penalty, per month or part month | 0.5% of the unpaid tax (page prints 1/2 of 1%) | [Instructions for Form 7004 (Rev. December 2025), Penalty for late payment of tax](https://www.irs.gov/pub/irs-pdf/i7004.pdf) |
 | Late payment penalty, maximum | 25% | [Instructions for Form 7004 (Rev. December 2025), Penalty for late payment of tax](https://www.irs.gov/pub/irs-pdf/i7004.pdf) |
 | Failure to file addition, per month or part month | 5% of the unpaid tax, reduced by the failure to pay addition for the same month | [26 U.S.C. 6651(a)(1) and (c)(1)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap68-subchapA-partI-sec6651.htm) |
 | Failure to file addition, maximum | 25% | [26 U.S.C. 6651(a)(1)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap68-subchapA-partI-sec6651.htm) |

@@ -1,10 +1,10 @@
 ---
 name: us-multi-state-residency-and-allocation
 description: How to work out which US states tax an individual who lives, moves or works in more than one state, for tax year 2026. Gives the method (domicile, statutory residency with each state's own day and abode test, part-year returns, sourcing wages by workdays, the convenience-of-the-employer rule, wage reciprocity, the resident credit for tax paid to another state, 4 U.S.C. 114 on retirement income, equity pay allocation), with key-state tables for New York, New Jersey, Pennsylvania, Connecticut, Delaware, Maryland, Virginia, California, Georgia, Nebraska, Arkansas, Kentucky, Ohio and Illinois, each row linked to that state's own source. Trigger on "moved states", "part-year resident", "183 days", "statutory resident", "convenience of the employer", "remote worker state tax", "reciprocity", "credit for taxes paid to another state". Federal US or non-US residency is in us-tax-residency.
-version: "3.0"
+version: "3.1"
 jurisdiction: US
 tax_year: 2026
-last_updated: 2026-11-13
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: cross-border
@@ -64,7 +64,7 @@ The day and percentage tests below are unchanged for tax year 2026 unless noted;
 
 | Rule | Figure | Year | Source |
 |---|---|---|---|
-| Georgia: nonresident employee need not file if Georgia pay does not exceed the lesser of this share of pay from all places, or the dollar cap | 5% | 2025 and 2026 (no end date stated) | [Georgia DOR residency filing requirements](https://dor.georgia.gov/residency-filing-requirements) |
+| Georgia: nonresident employee need not file if Georgia pay does not exceed the lesser of this share of pay from all places, or the dollar cap | 5% (in words on the page) | 2025 and 2026 (no end date stated) | [Georgia DOR residency filing requirements](https://dor.georgia.gov/residency-filing-requirements) |
 | Georgia: dollar cap for the same test | $5,000 | 2025 and 2026 | [Georgia DOR residency filing requirements](https://dor.georgia.gov/residency-filing-requirements) |
 | California 546-day employment absence: disqualified if intangible income in any year of the contract exceeds | $200,000 (tested for each spouse separately) | Tax years from 1994 onward | [R&TC § 17014](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=17014) |
 
