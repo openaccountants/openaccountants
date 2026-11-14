@@ -4,14 +4,15 @@ description: "Payroll and social contributions for Zambia, 2026: PAYE monthly ba
 jurisdiction: ZM
 category: payroll
 tax_year: 2026
-last_updated: 2026-11-01
-version: 0.2
+last_updated: 2026-11-14
+type: computation
+version: 0.3
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
 ---
 
-# Zambia Payroll and Social Contributions v0.2
+# Zambia Payroll and Social Contributions v0.3
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -30,9 +31,6 @@ Every employer, including those whose staff earn below the threshold: they still
 | PAYE band 3 | K7,100.01 to K9,200, 30% | 2026 | same |
 | PAYE band 4 | Above K9,200, 37% | 2026 | same |
 | Skills Development Levy | 0.5% of gross emoluments, borne by the employer | 2026 | https://www.zra.org.zm/wp-content/uploads/2023/06/Skills-Development-Levy.pdf |
-| NAPSA rate | unverified: old file 5% employee plus 5% employer; prescribed by regulation under Act of 2026, s. 24 | 2026 | unverified |
-| NAPSA ceiling | unverified: old files gave K34,164 and K37,236 earnings equivalents | 2026 | unverified |
-| NHIMA rate | unverified: old files disagreed, 1% total against 2% total | 2026 | unverified |
 
 Bands in full are held here; [Income tax](zm-income-tax.md) applies them. The old pack figure of 37.5% was out of date against ZRA's 2026 page.
 
@@ -110,4 +108,4 @@ expected:
 | ZRA leaflet Post-Registration Requirements (2026), OCR read; read for the figures cited | https://www.zra.org.zm/wp-content/uploads/2026/06/Post-Registration-Requirements.pdf | 2026-11-01 |
 | ZRA leaflet Skills Development Levy (2023); read for the figures cited | https://www.zra.org.zm/wp-content/uploads/2023/06/Skills-Development-Levy.pdf | 2026-11-01 |
 
-Not yet confirmed: NAPSA rate, ceiling and remittance date (napsa.co.zm opens only its home page; no contribution page found); commencement of the 2026 Act; NHIMA rate and base (no official rate page found; Act 25 of 2026 only changes the Board); minimum wage orders; levy exemption wording (a K800,000 employer test appears in the leaflet but the OCR is partial); levy wilful default rate (ZRA page prints 5%, likely a typo).
+Not yet confirmed: NAPSA rate, ceiling and remittance date (napsa.co.zm opens only its home page; no contribution page found); commencement of the 2026 Act; NHIMA rate and base (no official rate page found; Act 25 of 2026 only changes the Board); minimum wage orders; levy exemption wording (a K800,000 employer test appears in the leaflet but the OCR is partial); levy wilful default rate (ZRA page prints 5%, likely a typo); rows moved out of the rates table on 2026-11-14 (old file figures): NAPSA 5% employee plus 5% employer, prescribed by regulation under the Act of 2026 s. 24; NAPSA ceiling K34,164 or K37,236 earnings equivalents in different old files; NHIMA 1% or 2% in total, old files disagree.

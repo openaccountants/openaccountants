@@ -1,604 +1,235 @@
 ---
 name: ga-payroll
-description: "Tier 2 Georgia content skill for employer payroll compliance covering tax year 2025. Includes the GA PIT 5.19% flat (reduced from 5.39% by HB 111 signed April 15, 2025, retroactive to January 1, 2025; phasing down toward 4.99% by 2030 contingent on revenue triggers), G-4 state W-4 equivalent, G-7 quarterly withholding return, GA-V payment voucher for monthly/quarterly remittance, G-1003 annual reconciliation, GA UI wage base $9,500 with rates 0.04-8.10%, Administrative Assessment 0.06%, new-hire reporting via GA DOL within 10 days (shorter than federal 20-day deadline), and the absence of state-mandated paid sick leave or paid family leave."
+description: "Run Georgia employer payroll taxes for tax year 2026, state income tax withholding administered by the Department of Revenue and state unemployment insurance administered by the Department of Labor. Covers the 4.99% withholding rate from 11 May 2026 (5.19% before), the Table E percentage method with its standard deduction and $5,000 dependent allowance, Form G-4 and the single-zero default, the payer classes and deposit dates (semi-weekly, monthly, quarterly, annual, the one-day rule over $100,000), Form G-7 and GA-V, Form G-1003 due 1 February 2027, the EFT rule above $500, overtime and tips reporting, the withholding penalties, and unemployment insurance (the $9,500 taxable wage base, the 2.70% new employer rate, liability tests, quarterly tax and wage reports, late report and interest charges) and new hire reporting within 10 days. Trigger on \"Georgia payroll\", \"Georgia withholding\", \"Form G-7\", \"G-4\", \"G-1003\", \"Georgia SUTA\", \"Georgia unemployment tax\"."
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/ga-payroll"
   jurisdiction: "US-GA"
-  tax_year: "2025"
-  last_updated: "2026-07-13"
+  tax_year: "2026"
+  last_updated: "2026-11-14"
 ---
 
-# GA Payroll
+# Georgia payroll: withholding and unemployment insurance, tax year 2026
 
-## Georgia Payroll Compliance Skill (Tax Year 2025)
+> **Source-cited draft.** Built from the Georgia Department of Revenue 2026 Employer's Tax Guide (updated September 2026) and its penalty page, and the Georgia Department of Labor employer unemployment insurance FAQs, tax reporting and liability sheet, 2024 and 2026 tax rate notices and employer newsletter, read on 2026-11-13. No accountant has reviewed it. All outputs must be reviewed by a qualified tax professional before filing.
 
-> **Loader contract.** This is a Tier 2 content skill. It MUST be loaded alongside `us-tax-workflow-base` (v0.2 or later) and, where relevant, the federal payroll skills (Form 941, 940, W-2/W-3, 1099-NEC issuance). It addresses Georgia-specific state payroll obligations only. Federal income tax withholding, FICA, FUTA, and federal new-hire reporting are out of scope and must be sourced from the federal skills.
+**Answer first.** Georgia withholding for 2026 is **4.99%** of wages after the Table E standard deduction and dependent allowances; employers withhold at **5.19% until 11 May 2026** and may use 4.99% from that date. Deposits follow the employer's class (semi-weekly over $50,000 in the lookback year, monthly over $200 a month, quarterly, or annual at $800 or less a year), and any payday over $100,000 is due the next banking day. Form G-7 is due the last day of the month after each quarter, and Form G-1003 with W-2s and 1099-NECs by **1 February 2027**. Unemployment insurance is paid on the first **$9,500** of each employee's wages; a new employer's rate is **2.70%**.
 
-> **Reviewer requirement.** Georgia payroll outputs must be reviewed by a Georgia-licensed CPA, an Enrolled Agent, or a payroll professional credentialed for Georgia (FPC or CPP under the American Payroll Association). Reviewer signoff is required before any return, voucher, or wage report is filed with the Georgia Department of Revenue (GA DOR) or the Georgia Department of Labor (GDOL).
+## Scope and who this is for
 
-## 1. Scope and Out-of-Scope
+In scope: an employer with employees working in Georgia, or Georgia residents working elsewhere, for 2026: registration, withholding computation, deposits and returns with DOR, and unemployment insurance (UI) liability, rates, reports and new hire reporting with the Department of Labor (GDOL).
 
-### 1.1 In scope
+Who must withhold ([2026 Employer's Tax Guide](https://dor.georgia.gov/document/document/2026-employers-tax-guide-updated-september-2026/download)): employers "are required to withhold Georgia income tax from the taxable wages of residents for services performed inside or outside of Georgia and from the taxable wages of taxable nonresidents for services performed in Georgia". Withholding is not required for residents working outside Georgia where the other state requires withholding.
 
-- **GA PIT withholding 2025 flat rate** — 5.19%  _(HB 111 (signed April 15, 2025, retroactive to January 1, 2025), reduced from 5.39%, phase-down toward 4.99% by 2030 under HB 1437 (2022) as amended by HB 1015 (2024) and HB 111 (2025))_
-- **Form G-4** — Georgia Employee's Withholding Allowance Certificate (the state W-4 equivalent)  _(1.1 In scope)_
-- **Form G-7** — Quarterly withholding return for employer remittance reconciliation  _(1.1 In scope)_
-- **Form GA-V** — Withholding payment voucher used for monthly (or semi-weekly) and quarterly remittance depending on the employer's filing tier  _(1.1 In scope)_
-- **Form G-1003** — Annual income statement reconciliation transmitting W-2 and 1099 data to GA DOR  _(1.1 In scope)_
-- **GA UI 2025 taxable wage base** — $9,500 per employee per year  _(7.3 2025 taxable wage base)_
-- **GA UI experience-rated rates** — 0.04% to 8.10%  _(1.1 In scope)_
-- **GA UI new-employer rate** — 2.70%  _(1.1 In scope)_
-- **Administrative Assessment** — 0.06% on UI taxable wages  _(1.1 In scope)_
-- **New-hire reporting deadline** — Within 10 days of hire, to GDOL — shorter than federal PRWORA default of 20 days  _(1.1 In scope)_
-- **Paid leave mandates** — Absence of state-mandated paid sick leave and absence of state-mandated paid family leave in Georgia  _(1.1 In scope)_
-- **Workers' compensation insurance mandatory threshold** — 3 or more employees  _(O.C.G.A. §34-9-1 et seq.)_
-- **Worker classification tests** — IRS 20-factor common-law test, plus the Georgia construction industry 4 P's test  _(O.C.G.A. §34-8-35(n))_
-- **Final pay standard** — Georgia has no statute requiring accelerated final wage payment; the next regular payday standard applies  _(O.C.G.A. §34-7-2)_
-- **W-2 and 1099-NEC filing deadline** — January 31 following the close of the calendar year  _(1.1 In scope)_
-- **1099-NEC reporting threshold** — Exceeding $600 in a calendar year (Georgia conforms to federal §6041A threshold for 2025; the OBBBA increase to $2,000 takes effect 2026)  _(1.1 In scope)_
+Out of scope, and where it goes:
 
-### 1.2 Out of scope
-
-The following are explicitly out of scope for this skill:
-
-- Federal income tax withholding (Form 941, 944, W-4, federal Publication 15 tables).
-- FICA (Social Security and Medicare) computation.
-- FUTA (Form 940).
-- Federal W-2/W-3 filing with SSA (use `us-federal` payroll skill).
-- State income tax for any state other than Georgia.
-- Local Georgia occupational taxes (Atlanta business license fees, etc.) — these are licensing matters, not payroll.
-- Garnishment processing under O.C.G.A. §18-4-1 et seq. — referenced only as a flag, not computed.
-- Multi-state allocation beyond the worked example of a GA-resident commuting to Alabama.
-- S-corporation reasonable compensation analysis (see `us-s-corp-election-decision`).
-- Pass-through entity tax (PTET) elections (Georgia PTET under HB 149 / O.C.G.A. §48-7-23 is income-tax allocation, not payroll).
-
-## 2. Georgia Personal Income Tax (PIT) Withholding — 2025 Rate and Phase-Down
-
-### 2.1 The 2025 flat rate
-
-- **Tax year 2025 Georgia PIT withholding rate** — 5.19% flat  _(O.C.G.A. §48-7-20(b)(3) as amended by HB 1437 (2022), HB 1015 (2024), and HB 111 (signed April 15, 2025))_
-- **2024 base rate and retroactive reduction** — The 2024 base rate was 5.39%; HB 111 reduced the rate to 5.19% retroactive to January 1, 2025, and accelerated the phase-down schedule toward the long-term 4.99% target. GA DOR updated the TSD-WH Employer's Tax Guide in June 2025 to reflect the 5.19% rate; employers who used 5.39% for January–May 2025 payrolls were instructed to adjust subsequent withholdings or true up at year end, with employees reconciling any overwithholding on Form 500.  _(O.C.G.A. §48-7-20(b)(3); HB 111 (signed April 15, 2025))_
-- **Supplemental wages withholding rate** — Withhold at the same 5.19% flat rate for supplemental wage payments; Georgia does not maintain a separate supplemental rate distinct from the regular rate the way the federal §3402(g) 22% supplemental rate operates.  _(GA DOR Employer's Tax Guide (2025 edition, June 2025 revision))_
-
-### 2.2 Phase-down schedule (statutory, contingent on revenue triggers)
-
-The HB 1437 / HB 1015 / HB 111 phase-down is not automatic — it operates as a statutory ceiling with annual triggers tied to revenue collections, debt service coverage, and reserve fund levels under O.C.G.A. §48-7-20(b)(4)(B):
-
-**Phase-down schedule**  _(O.C.G.A. §48-7-20(b)(4)(B))_
-
-| Report year | Statutory rate | Trigger / authority |
-| --- | --- | --- |
-| 2024 | 5.39% | Effective from HB 1437 base |
-| 2025 | **5.19%** | **HB 111 (April 2025) reduced from 5.39%, retroactive to 1/1/2025** |
-| 2026 | 5.09% (expected) | Subject to FY 2025 revenue trigger |
-| 2027 | 4.99% | Subject to FY 2026 revenue trigger |
-| 2028 | 4.99% | Statutory floor (no further reductions absent new legislation) |
-| 2029 | 4.99% | Statutory floor |
-| 2030 | 4.99% | Statutory floor (long-term policy target) |
-
-> **AUDIT FLASH POINT — GA PIT mid-year rate change for 2025.** Many payroll software vendors, third-party processors, and even some CPAs did not promptly update Georgia withholding tables when HB 111 dropped the 2025 rate to 5.19% in April 2025 (retroactive to January 1). Employers who continued withholding at 5.39% for Q2 and beyond overwithheld Georgia income tax; employees reconcile on Form 500 and receive refunds. Employers who switched promptly but did not adjust YTD on the next paycheck created a small mismatch on the G-1003 annual reconciliation. The reverse risk applies to future rate drops (5.09% expected 2026, 4.99% expected 2027): payroll systems that fail to load the new TSD-WH guide into Q1 will underwithhold, and the employer is legally on the hook under O.C.G.A. §48-7-126. Before the first payroll of any new calendar year, confirm the employer's payroll system has loaded the current-year GA DOR Employer's Tax Guide rate. This is a recurring exam item GA DOR is actively scrutinizing on routine compliance audits.
-
-### 2.3 Withholding computation methods
-
-GA DOR publishes two methods in the annual Employer's Tax Guide (Publication TSD-WH):
-
-1. **Percentage method** — apply the 5.19% rate to wages after subtracting the per-pay-period equivalent of the employee's Form G-4 allowances and standard deduction. Used by most payroll software.
-2. **Tax tables** — pre-computed lookup tables published by GA DOR for weekly, biweekly, semi-monthly, monthly, and daily/miscellaneous payroll frequencies. Used primarily by small employers running payroll manually.
-
-- **2025 GA standard deduction — Single / Head of Household** — $12,000  _(2.3 Withholding computation methods)_
-- **2025 GA standard deduction — Married Filing Jointly** — $24,000 (each spouse $12,000 if both employed; the G-4 instructs how to allocate)  _(2.3 Withholding computation methods)_
-- **2025 GA standard deduction — Married Filing Separately** — $12,000  _(2.3 Withholding computation methods)_
-- **Personal exemption 2025** — $0 for 2025. The personal exemption was eliminated under HB 1437 when Georgia moved to the flat-rate structure, replaced by a higher standard deduction.  _(HB 1437)_
-- **Dependent exemption** — $4,000 per qualifying dependent (this remains in place under HB 1437 — only the personal exemption was eliminated)  _(HB 1437)_
-
-### 2.4 Withholding worked computation
-
-**Example:** Single employee, biweekly pay, gross wages $2,500, claims 0 dependents on Form G-4.
-
-1. Annualized gross: $2,500 × 26 = $65,000.
-2. Less GA standard deduction (Single): $65,000 − $12,000 = $53,000.
-3. Less dependents (0): $53,000.
-4. Annual GA tax at 5.19%: $53,000 × 0.0519 = **$2,750.70**.
-5. Per-pay-period withholding: $2,750.70 ÷ 26 = **$105.80**.
-
-If the same employee claimed 2 dependents on G-4:
-
-1. Annualized gross: $65,000.
-2. Less standard deduction: $65,000 − $12,000 = $53,000.
-3. Less dependents (2 × $4,000): $53,000 − $8,000 = $45,000.
-4. Annual tax: $45,000 × 0.0519 = **$2,335.50**.
-5. Per-pay-period: $2,335.50 ÷ 26 = **$89.83**.
-
-## 3. Form G-4 — Georgia Employee's Withholding Allowance Certificate
-
-### 3.1 Purpose and required collection
-
-- **G-4 completion requirement** — Form G-4 is the Georgia equivalent of federal Form W-4. Every Georgia employee — including a Georgia resident working in Georgia, a Georgia resident working out-of-state with Georgia withholding elections, and a nonresident working in Georgia — must complete Form G-4 on or before their first day of work.  _(O.C.G.A. §48-7-102)_
-- **G-4 retention requirement** — The employer is not required to file the G-4 with GA DOR routinely. The G-4 is retained in the employee personnel file for at least four years after the last return on which the form's elections were used. GA DOR may request copies during a compliance audit, and certain high-allowance claims trigger mandatory employer reporting (see §3.4).  _(O.C.G.A. §48-7-119)_
-
-### 3.2 Key fields on the 2025 G-4
-
-1. **Marital status** — Single, Married Filing Joint (both spouses working), Married Filing Joint (one spouse working), Married Filing Separate, Head of Household.
-2. **Total allowances** — sum of self, spouse (if MFJ and not working), and dependents.
-3. **Additional withholding amount** — discretionary flat dollar amount per pay period the employee wants withheld above the formula amount.
-4. **Letter of exemption** (Line 8) — claim of exemption from Georgia withholding entirely. Allowed only if (a) the employee had no GA tax liability in the prior year AND (b) reasonably expects no GA liability in the current year. The exemption expires February 15 of the following year and a new G-4 must be filed.
-5. **Nonresident military spouse exemption** — under the Military Spouses Residency Relief Act (50 U.S.C. §4001) and Georgia conformity, a military spouse whose state of domicile is not Georgia may claim exemption from Georgia withholding even when working in Georgia.
-
-### 3.3 When the employer must default to "Single, zero allowances"
-
-- **Default withholding requirement** — Under GA DOR Regulation 560-7-8-.34, the employer must default to Single with zero allowances (the maximum withholding default) when: the employee fails to submit a Form G-4; the G-4 is submitted but unsigned or is illegible; the G-4 claims an obviously invalid status (e.g., a clearly unmarried employee claims MFJ with non-working spouse and the employer has actual knowledge). The 'Single, zero' default applies until a valid G-4 is received. The employer should not invent allowances based on the federal W-4 — Georgia treats the W-4 as a federal document and does not import allowance counts from it.  _(GA DOR Regulation 560-7-8-.34)_
-
-### 3.4 G-4 exemption / high-allowance employer reporting
-
-- **High-allowance/exemption reporting requirement** — If an employee claims more than 14 allowances OR claims complete exemption from Georgia withholding and earns wages above the federal withholding minimum, the employer must submit a copy of the Form G-4 to GA DOR Withholding Tax Unit within 30 days of receipt. GA DOR may reject the claim and instruct the employer in writing on the correct withholding amount.  _(3.4 G-4 exemption / high-allowance employer reporting)_
-
-This is a small-volume but high-audit-risk filing — many employers either miss the reporting requirement or never identify which G-4s cross the 14-allowance threshold.
-
-## 4. Form G-7 — Quarterly Withholding Return
-
-### 4.1 Filing tiers
-
-- **Look-back period definition** — Georgia employers are classified into one of four filing tiers based on look-back-period withholding liability. The look-back period is July 1 through June 30 of the year immediately preceding the calendar year (e.g., the 2025 calendar year tier is determined by withholding liability for the 12 months July 1, 2023 through June 30, 2024).  _(4.1 Filing tiers)_
-
-**Filing tiers**  _(4.1 Filing tiers)_
-
-| Tier | Liability threshold | Payment frequency | Return |
-| --- | --- | --- | --- |
-| Quarterly | < $200 per month average | With G-7 quarterly | Form G-7 (one for each quarter) |
-| Monthly | $200 – $416.66 per month (i.e., < $5,000 lookback annual) | GA-V voucher monthly | Form G-7 |
-| Semi-weekly | > $50,000 lookback annual liability | Federal semi-weekly mirror | Form G-7 |
-| Quarterly aggregate (G-7 NRW) | Nonresident withholding only | Quarterly with G-7 NRW | Form G-7 NRW |
-
-- **GA monthly threshold vs federal comparison** — Note the GA monthly threshold ($500 per quarter aggregate, roughly $200/month) is materially lower than the comparable federal §3402 monthly tier (federal lookback for monthly depositor status is $50,000 over the lookback year). A small Atlanta employer can be a federal monthly depositor while being a Georgia semi-weekly depositor if their GA withholding exceeds $50,000 in the lookback period.  _(4.1 Filing tiers)_
-
-### 4.2 G-7 due dates (calendar year 2025)
-
-**G-7 due dates 2025**  _(4.2 G-7 due dates (calendar year 2025))_
-
-| Quarter | Period covered | G-7 due date |
-| --- | --- | --- |
-| Q1 | Jan 1 – Mar 31 | **April 30, 2025** |
-| Q2 | Apr 1 – Jun 30 | **July 31, 2025** |
-| Q3 | Jul 1 – Sep 30 | **October 31, 2025** |
-| Q4 | Oct 1 – Dec 31 | **January 31, 2026** |
-
-- **Weekend/holiday and Q4 2025 due date** — If the due date falls on a Saturday, Sunday, or Georgia legal holiday, the return is timely if filed on the next business day. None of the 2025 quarterly G-7 due dates above fall on a weekend except Q4 January 31, 2026 (a Saturday) — so the effective Q4 2025 G-7 due date is Monday, February 2, 2026.  _(4.2 G-7 due dates (calendar year 2025))_
-
-### 4.3 What G-7 reports
-
-Form G-7 captures:
-
-1. Georgia employer withholding account number (8-digit GA WH account).
-2. FEIN.
-3. Quarter and year.
-4. Total Georgia income tax withheld from wages during the quarter.
-5. Total Georgia tax remitted via GA-V vouchers during the quarter.
-6. Difference (overpayment refund/credit OR balance due).
-7. Adjustments for prior period errors corrected in the current quarter.
-8. Employer signature and date.
-
-GA-V remittances and the G-7 are reconciliation pair — the G-7 is not the payment vehicle. Payment travels with GA-V. If the G-7 shows a balance due, that balance must accompany the G-7 (functionally treated as a late GA-V).
-
-### 4.4 G-7 filing channels
-
-- **Mandatory e-filing threshold** — Georgia Tax Center (GTC) at https://gtc.dor.ga.gov — mandatory for employers with $500+ annual withholding liability.  _(GA DOR Regulation 560-3-2-.26 e-filing rule)_
-
-2. **Paper Form G-7** — permitted only for employers below the e-file threshold or with an approved hardship waiver.
-3. **Bulk filing via approved payroll software** — most major providers (ADP, Paychex, Gusto, QuickBooks) file G-7 on behalf of clients via the GA DOR bulk file specification.
-
-### 4.5 G-7 penalties
-
-- **Late filing penalty** — $25 per return, plus 5% per month of unpaid balance up to 25% maximum  _(O.C.G.A. §48-7-126)_
-- **Late payment penalty** — 0.5% per month of unpaid balance up to 25% maximum, separate from the late filing penalty  _(4.5 G-7 penalties)_
-- **Failure to withhold penalty** — 100% of the amount that should have been withheld, plus 9% interest per annum  _(O.C.G.A. §48-2-40 sets the 2025 interest rate at 9% — the prime rate plus 3% with quarterly resets)_
-- **Negligence and fraud penalties** — Additional 5% if the underpayment is due to negligence; additional 50% if due to fraud  _(4.5 G-7 penalties)_
-
-## 5. Form GA-V — Withholding Payment Voucher
-
-### 5.1 When GA-V is used
-
-- **GA-V frequency by tier** — Quarterly tier (< $200/month or < $500/quarter aggregate withholding liability): GA-V is submitted with the G-7 quarterly return. No separate monthly vouchers. Monthly tier ($200 – $416.66/month, i.e., $5,000 annual lookback): GA-V is submitted by the 15th day of the month following the month of withholding. For example, January 2025 withholding GA-V is due February 15, 2025. Semi-weekly tier (> $50,000 annual lookback): GA-V is submitted on the federal semi-weekly schedule — Wednesday GA-V for wages paid Wednesday/Thursday/Friday, Friday GA-V for wages paid Saturday/Sunday/Monday/Tuesday. Georgia mirrors the federal Reg §31.6302-1 schedule.  _(5.1 When GA-V is used; federal Reg §31.6302-1)_
-
-### 5.2 The $500/quarter monthly threshold
-
-- **$500/quarter monthly remittance trigger** — A common simplification used by GA DOR field staff and many payroll guides: an employer with $500 or more of withholding liability per quarter must remit on the monthly schedule. Below $500/quarter, the employer remits with the quarterly G-7. Above $500/quarter, monthly GA-V vouchers are required.  _(5.2 The $500/quarter monthly threshold)_
-- **$500/quarter trigger duration** — The $500/quarter rule operates as a one-quarter trigger — once an employer crosses $500 in any quarter, the employer must remit on the monthly schedule for the balance of the calendar year and the following calendar year, after which the lookback-period rule resets the tier.  _(5.2 The $500/quarter monthly threshold)_
-
-### 5.3 GA-V fields
-
-1. Period (month and year) covered.
-2. GA withholding account number.
-3. FEIN.
-4. Total Georgia income tax withheld for the period.
-5. Total Georgia income tax remitted (the dollar amount of the voucher).
-6. Signature.
-
-### 5.4 EFT requirement
-
-- **EFT requirement threshold** — Employers with $500 or more in any single GA-V payment must remit electronically via GTC ACH debit or ACH credit. Paper check is permitted only for payments under $500 and for employers without GTC access.  _(O.C.G.A. §48-2-32)_
-
-### 5.5 GA-V late payment treatment
-
-- **Late/short GA-V treatment** — If a GA-V is missed or short, the deficiency is carried into the next GA-V and the eventual G-7. The G-7 reconciliation will show a balance due that travels with the G-7 itself, treated as a late voucher subject to the 0.5%/month late payment penalty plus 9% interest.  _(5.5 GA-V late payment treatment)_
-
-## 6. Form G-1003 — Annual Income Statement Reconciliation
-
-### 6.1 Purpose
-
-Form G-1003 is the annual transmittal by which the employer:
-
-1. Reconciles total Georgia withholding reported on quarterly G-7s with total Georgia withholding reported on the employees' Forms W-2.
-2. Transmits copies of all Forms W-2 issued for the calendar year.
-3. Transmits copies of all Forms 1099 with Georgia withholding (1099-NEC, 1099-MISC, 1099-R with GA tax withheld).
-
-### 6.2 Due date
-
-- **G-1003 due date** — January 31 of the year following the close of the calendar year. For 2025 wages: Monday, February 2, 2026 (because January 31, 2026 falls on a Saturday).  _(6.2 Due date)_
-- **No automatic extension** — GA DOR strictly enforces this date — Georgia, like the federal SSA, moved to the accelerated January 31 W-2 filing schedule effective for the 2017 tax year onward. There is no automatic extension for G-1003. A discretionary 30-day extension may be requested in writing before January 31, but is granted only for documented hardship.  _(6.2 Due date)_
-
-### 6.3 G-1003 fields
-
-1. Total number of W-2s transmitted.
-2. Total Georgia wages from W-2 Box 16.
-3. Total Georgia tax withheld from W-2 Box 17.
-4. Total number of 1099s transmitted (only those with GA withholding or those exceeding $600 in nonemployee compensation).
-5. Total Georgia withholding from 1099s.
-6. Total combined GA withholding (must match sum of all 2025 G-7s).
-7. Reconciliation difference (should be zero).
-
-### 6.4 1099-NEC reporting requirement under G-1003
-
-- **1099-NEC GA reporting threshold** — Georgia requires the filing of Form 1099-NEC with the state when the payment exceeds $600 in nonemployee compensation and the payee is a Georgia resident or the services were performed in Georgia. This conforms to the federal §6041A threshold for tax year 2025.  _(6.4 1099-NEC reporting requirement under G-1003)_
-
-> **Threshold change watch.** OBBBA (P.L. 119-21) raises the federal §6041A 1099 reporting threshold from $600 to $2,000 effective January 1, 2026. Georgia has not yet enacted conforming legislation as of the November 15, 2025 last_updated of this skill. Until Georgia conforms, the $600 threshold applies for Georgia 1099 reporting under G-1003 even though the federal threshold has risen to $2,000. Reviewer must check current GA DOR guidance at year-end 2025 / early 2026 for any conformity update.
-
-### 6.5 G-1003 filing channels
-
-1. **Georgia Tax Center (GTC)** — primary channel, supports both individual entry and bulk W-2/1099 file upload using the SSA EFW2 format for W-2s and IRS Publication 1220 format for 1099s.
-2. **Paper G-1003** with paper W-2/1099 copies — permitted only for employers with fewer than 25 information returns.
-
-### 6.6 G-1003 penalties
-
-- **Late filing of G-1003** — $10 per information return, capped at $50,000 per calendar year  _(O.C.G.A. §48-7-126(d))_
-- **Failure to file electronically when required** — $10 per return  _(6.6 G-1003 penalties)_
-- **Late information returns within 30 days** — reduced $5 per return  _(6.6 G-1003 penalties)_
-
-## 7. Georgia Unemployment Insurance (GA UI) and Administrative Assessment
-
-### 7.1 Authority and administration
-
-- **GA UI administration** — Georgia UI is administered by the Georgia Department of Labor (GDOL) under the Georgia Employment Security Law. UI is not a GA DOR matter — the two agencies are entirely separate, and an employer's GA WH account number with GA DOR is distinct from the employer's GDOL account number.  _(O.C.G.A. §34-8-1 et seq.)_
-
-### 7.2 Coverage threshold
-
-- **UI liability conditions** — Under O.C.G.A. §34-8-33, an employer is liable for Georgia UI when any of the following apply: 1. Pays $1,500 or more in wages in any calendar quarter, OR 2. Employs at least one worker for some portion of a day in each of 20 different calendar weeks (not necessarily consecutive) in a calendar year, OR 3. Is liable for FUTA under federal §3306, OR 4. Is an agricultural employer paying $20,000+ in wages in any quarter or employing 10+ agricultural workers in 20 different weeks, OR 5. Is a domestic service employer paying $1,000+ in any quarter.  _(O.C.G.A. §34-8-33)_
-- **New employer registration deadline** — A new employer crossing the $1,500-quarter threshold must register with GDOL on or before the last day of the month following the quarter in which liability begins. Registration is via the GDOL Employer Portal at https://gdol.ga.gov.  _(7.2 Coverage threshold)_
-
-### 7.3 2025 taxable wage base
-
-- **GA UI 2025 taxable wage base** — $9,500 per employee per year  _(7.3 2025 taxable wage base)_
-
-Georgia is among the states with the lowest UI wage base — for context, federal FUTA wage base is $7,000, and many neighboring states are materially higher (Tennessee $7,000, Alabama $8,000, Florida $7,000, South Carolina $14,000, North Carolina $32,600). Georgia has held the $9,500 wage base unchanged since 2013.
-
-### 7.4 2025 contribution rates
-
-**2025 contribution rates**  _(7.4 2025 contribution rates)_
-
-| Component | 2025 rate range | Notes |
-| --- | --- | --- |
-| Experience rate | **0.04% – 8.10%** | Assigned annually per employer based on reserve ratio under O.C.G.A. §34-8-155 |
-| New employer rate | **2.70%** | Default for the first ~36 months of liability, until experience rating kicks in |
-| Administrative Assessment | **0.06%** | Separate component on UI taxable wages under O.C.G.A. §34-8-180 |
-
-- **Administrative Assessment application** — The Administrative Assessment is a separate line item that funds GDOL operations. It applies to the same UI taxable wage base as the experience-rate contribution ($9,500 per employee in 2025). It is not absorbed into the experience rate — the employer pays both components.  _(7.4 2025 contribution rates)_
-- **Maximum 2025 GA UI cost per employee** — Experience rate: $9,500 × 8.10% = $769.50; Administrative Assessment: $9,500 × 0.06% = $5.70; Total maximum per employee per year: $775.20  _(7.4 2025 contribution rates)_
-- **Minimum 2025 GA UI cost per employee** — Experience rate: $9,500 × 0.04% = $3.80; Administrative Assessment: $9,500 × 0.06% = $5.70; Total minimum per employee per year: $9.50  _(7.4 2025 contribution rates)_
-- **New employer 2025 cost per employee** — Experience rate: $9,500 × 2.70% = $256.50; Administrative Assessment: $9,500 × 0.06% = $5.70; Total new-employer per employee per year: $262.20  _(7.4 2025 contribution rates)_
-
-### 7.5 GA UI quarterly filing — Form DOL-4N
-
-**DOL-4N due dates**  _(7.5 GA UI quarterly filing — Form DOL-4N)_
-
-| Quarter | Period | DOL-4N due |
-| --- | --- | --- |
-| Q1 | Jan – Mar | April 30 |
-| Q2 | Apr – Jun | July 31 |
-| Q3 | Jul – Sep | October 31 |
-| Q4 | Oct – Dec | January 31 |
-
-- **DOL-4N content and e-filing mandate** — The DOL-4N reports each employee's gross wages, taxable wages (capped at $9,500), and the employer's experience-rate contribution plus Administrative Assessment. Online filing via the GDOL Employer Portal is mandatory for employers with 100 or more employees; encouraged for all others.  _(7.5 GA UI quarterly filing — Form DOL-4N)_
-
-### 7.6 SUTA dumping
-
-- **SUTA dumping rule and penalty** — Georgia adopted the federal SUTA Dumping Prevention Act of 2004 via O.C.G.A. §34-8-172. Mandatory transfer of experience rating applies when there is substantially common ownership, management, or control between transferring and acquiring employers, and the transfer was made primarily for a lower UI rate. Penalty: highest rate (8.10% in 2025) plus an additional 2% for the year of transfer and the following three years, plus criminal exposure.  _(O.C.G.A. §34-8-172)_
-
-## 8. New-Hire Reporting (GDOL) — 10-Day Deadline
-
-### 8.1 The deadline
-
-- **New-hire reporting deadline** — Every Georgia employer must report each newly hired or rehired employee to GDOL within 10 days of hire date.  _(O.C.G.A. §19-11-9.2)_
-
-> **AUDIT FLASH POINT — 10-day GA new-hire deadline (shorter than federal default).** The federal Personal Responsibility and Work Opportunity Reconciliation Act of 1996 (PRWORA), at 42 U.S.C. §653a, sets a baseline new-hire reporting deadline of 20 days, with states permitted to require shorter deadlines. Georgia has elected the shorter 10-day deadline. Multi-state payroll departments routinely default to the 20-day federal baseline and miss the GA 10-day window — particularly for remote hires onboarded by an out-of-state HR team. GDOL does not commonly assess the per-failure penalty under O.C.G.A. §19-11-9.2(g), but the late reports flag the employer in child-support enforcement databases and create audit exposure. Every Georgia employer client should confirm with their payroll provider whether new-hire reports are filed on the 10-day or 20-day cadence.
-
-### 8.2 What constitutes a "newly hired" employee
-
-- **Newly hired employee definition** — Under O.C.G.A. §19-11-9.2(a)(3), a newly hired employee is one: 1. Who has not previously been employed by the employer, OR 2. Who was previously employed but has been separated from such employer for at least 60 consecutive days (rehire reporting requirement).  _(O.C.G.A. §19-11-9.2(a)(3))_
-- **Independent contractors not reportable** — Independent contractors are not required to be reported under Georgia's new-hire law, even when paid via Form 1099-NEC. (This differs from some states — California, Massachusetts, Iowa, New Jersey, and New York require certain 1099 contractor reporting; Georgia does not.)  _(8.2 What constitutes a "newly hired" employee)_
-
-### 8.3 Required data
-
-1. Employee name.
-2. Employee address.
-3. Employee Social Security Number.
-4. Employee date of hire.
-5. Employer name.
-6. Employer address.
-7. FEIN.
-
-### 8.4 Filing channels
-
-1. **GDOL New Hire Reporting Portal** at https://gnhr.dol.state.ga.us — preferred, free.
-2. **Electronic file upload** via the same portal in the federal OCSE-approved format.
-3. **Paper Form DOL-1199A** — permitted but discouraged.
-4. **Submission via the W-4 itself** — Georgia permits submission of the federal W-4 (with employer info added) in lieu of the dedicated new-hire report, mailed or faxed to GDOL. This is the original PRWORA fallback method.
-
-### 8.5 Penalties
-
-- **New-hire reporting penalties** — Up to $25 per failure, or up to $500 per failure if the failure is the result of conspiracy between the employer and employee to avoid the report. In practice, GDOL very rarely assesses these penalties — the practical risk is downstream: missing new-hire reports breaks the child-support enforcement match and exposes the employer to wage garnishment processing failures.  _(O.C.G.A. §19-11-9.2(g))_
-
-### 8.6 Multistate employer election
-
-- **Multistate new-hire reporting election** — Under PRWORA at 42 U.S.C. §653a(b)(1)(B), a multistate employer may elect to report all new hires to a single state. Georgia accepts inbound multistate elections. The election is made on a federal form filed with the federal Office of Child Support Enforcement (OCSE), not with GDOL directly. Once elected, the employer is bound by the chosen state's deadline — but a Georgia employer that elects to report all hires to Georgia is still bound by the 10-day GA deadline for those reports.  _(42 U.S.C. §653a(b)(1)(B))_
-
-## 9. Worker Classification — IRS 20-Factor Test and the GA Construction 4 P's
-
-### 9.1 General classification
-
-- **Baseline classification test** — For Georgia state employment tax purposes, GDOL applies the IRS common-law 20-factor test (Revenue Ruling 87-41) as the baseline test for employee versus independent contractor. The 20 factors fall into three broad categories — behavioral control, financial control, and the nature of the relationship — and no single factor is dispositive.  _(Revenue Ruling 87-41)_
-
-**Behavioral control (factors 1–10):**
-1. Instructions about when/where/how to work.
-2. Training.
-3. Integration into the principal's business.
-4. Services rendered personally.
-5. Hiring, supervising, paying assistants.
-6. Continuing relationship.
-7. Set hours of work.
-8. Full-time required.
-9. Doing work on principal's premises.
-10. Order or sequence set.
-
-**Financial control (factors 11–15):**
-11. Reports required (oral or written).
-12. Payment by hour, week, or month (vs. by job).
-13. Payment of business and traveling expenses.
-14. Furnishing of tools and materials.
-15. Significant investment by worker.
-
-**Nature of relationship (factors 16–20):**
-16. Realization of profit or loss.
-17. Working for more than one firm at a time.
-18. Making services available to the general public.
-19. Right to discharge.
-20. Right to terminate.
-
-GA DOR has indicated informal acceptance of the IRS 3-category collapse (behavioral / financial / relationship) used in IRS Publication 1779. For Georgia withholding audits, demonstrating compliance under either framing is acceptable.
-
-### 9.2 GA construction industry "4 P's" test — special rule
-
-> **AUDIT FLASH POINT — Construction industry 4 P's test.** Under O.C.G.A. §34-8-35(n), Georgia applies a separate, four-factor presumptive test for worker classification in the construction industry. This test, known as the "4 P's," operates in addition to the 20-factor common-law test, and a failure on the 4 P's creates a presumption of employee status that is very difficult to rebut on a GDOL UI audit. Most construction subcontractors and 1099 framers, roofers, drywallers, and finishers in Georgia are misclassified under this rule — it is one of the highest-yield GDOL audit areas.
-
-- **The 4 P's of construction worker classification** — 1. **Place of business** — Does the worker maintain a separate, identifiable place of business distinct from the principal's job site? A worker who only operates from the principal's job sites generally fails this prong. 2. **Profession** — Is the worker engaged in an independently established trade, occupation, profession, or business? A worker who works only for one general contractor and lacks an independent customer base generally fails this prong. 3. **Permission** — Is the worker free from control or direction over the performance of services, both under the contract and in fact? A worker who is supervised, scheduled, or directed in day-to-day execution generally fails this prong. 4. **Possession** — Does the worker possess the tools, equipment, vehicles, and other materials of the trade? A worker who shows up with only personal hand tools while the principal supplies powered equipment, scaffolding, and materials generally fails this prong. To classify a worker as an independent contractor in Georgia construction, the principal must affirmatively satisfy all four prongs. Failure on any one prong creates the presumption of employment.  _(O.C.G.A. §34-8-35(n))_
-
-In practice, GDOL audits the 4 P's by examining:
-
-- Copies of the worker's business license (City of Atlanta general contractor license, Georgia Secretary of State LLC registration, etc.).
-- Copies of certificates of insurance showing the worker's own general liability and workers' compensation coverage.
-- Copies of the worker's invoices to other unrelated principals during the same time period.
-- Copies of the written subcontract showing scope and deliverables (not hours/days worked).
-- Evidence the worker supplied trade-specific equipment.
-
-### 9.3 GA UI versus IRS classification — split risk
-
-- **Split classification risk** — A worker can be properly classified as an independent contractor for federal income tax / FICA purposes (passes the IRS 20-factor test on balance) but misclassified as an employee for Georgia UI purposes (fails the GA 4 P's test for construction work). GDOL is not bound by the IRS determination, and a Section 530 safe harbor (federal Revenue Act of 1978 §530) does not apply to Georgia UI proceedings. The reverse can also occur, though far more rarely.  _(9.3 GA UI versus IRS classification — split risk)_
-
-### 9.4 GDOL audit penalties for misclassification
-
-- **Misclassification consequences** — When GDOL determines a worker was misclassified: 1. Employer is assessed back UI contributions on the misclassified worker's wages for the entire audit period (typically the open three-year statute of limitations, or longer if fraud). 2. Administrative Assessment is assessed on the same wages. 3. Interest accrues at 1.5% per month under O.C.G.A. §34-8-166. 4. Penalty: 10% per quarter of unpaid contributions plus a minimum $35 per quarter (O.C.G.A. §34-8-165). 5. Cross-referral to GA DOR for income tax withholding assessment and to the Workers' Compensation Board.  _(O.C.G.A. §34-8-166; O.C.G.A. §34-8-165)_
-
-## 10. Workers' Compensation, Final Pay, and Paid Leave Mandates
-
-### 10.1 Workers' compensation — 3-employee threshold
-
-- **Workers' comp insurance mandatory threshold** — Every Georgia employer with 3 or more employees (full-time, part-time, regular, seasonal, or otherwise) is required to maintain workers' compensation insurance, either via: 1. An admitted Georgia workers' comp insurer, OR 2. Self-insurance with State Board of Workers' Compensation approval (rare — requires substantial reserves).  _(O.C.G.A. §34-9-2)_
-- **3-employee count composition** — The 3-employee count includes the employer's officers and shareholders (unless excluded via O.C.G.A. §34-9-2.2 corporate officer election). Independent contractors properly classified are not counted toward the 3-employee threshold — but if GDOL reclassifies a 1099 worker as an employee, that worker counts retroactively, exposing the employer to uninsured-employer liability under O.C.G.A. §34-9-126.  _(O.C.G.A. §34-9-2.2; O.C.G.A. §34-9-126)_
-- **Penalties for failure to maintain coverage** — Civil penalties up to $10,000 per violation. Treble damages payable to an injured worker who was uninsured. Criminal exposure: misdemeanor under O.C.G.A. §34-9-126.  _(O.C.G.A. §34-9-126)_
-
-### 10.2 Final pay — next regular payday
-
-- **Final wage payment standard** — Georgia does not require accelerated payment of final wages. Under O.C.G.A. §34-7-2 and Georgia common law, an employer's obligation is to pay all wages earned through the date of separation on the next regular payday following the termination, voluntary or involuntary. This is markedly less aggressive than California (immediate for involuntary termination, 72 hours for voluntary resignation), Colorado (immediate for involuntary), or Massachusetts (same day for involuntary).  _(O.C.G.A. §34-7-2)_
-- **Accrued PTO payout treatment** — Accrued but unused vacation/PTO is paid out at separation only if the employer's written policy or employment contract provides for such payment. Georgia common law treats unused PTO as a contractual benefit, not a wage, absent affirmative policy language. (Cf. California Labor Code §227.3, which treats accrued vacation as a wage that must be paid out.)  _(10.2 Final pay — next regular payday)_
-
-### 10.3 Paid sick leave — no state mandate
-
-- **No state-mandated paid sick leave** — Georgia has no state-mandated paid sick leave. There is no statewide accrual requirement, no minimum allotment, and no statewide pre-emption either way. Atlanta, Savannah, and other Georgia municipalities have not enacted local paid-sick-leave ordinances applicable to private employers (the City of Atlanta paid-sick-leave ordinance applies only to City of Atlanta employees).  _(10.3 Paid sick leave — no state mandate)_
-- **Federal FMLA applicability** — Federal Family and Medical Leave Act (FMLA) unpaid leave still applies in Georgia for employers with 50+ employees. The federal Healthy Families Act has not been enacted.  _(10.3 Paid sick leave — no state mandate)_
-
-### 10.4 Paid family leave — no state mandate
-
-- **No state-mandated paid family leave** — Georgia has no state-mandated paid family leave insurance program comparable to California PFL, New York PFL, Washington PFML, Massachusetts PFML, Colorado FAMLI, Oregon Paid Leave, or the Connecticut, Delaware, Maine, Minnesota, Maryland, New Jersey, Rhode Island, or D.C. programs. Georgia employers therefore have no payroll deduction for PFML and no employer contribution for PFML.  _(10.4 Paid family leave — no state mandate)_
-- **State employee paid parental leave exception** — A modest exception applies to state employees: under O.C.G.A. §45-20-100 (the "Georgia State Government Paid Parental Leave Act"), state government employees receive up to 120 hours of paid parental leave. This applies only to the state's own workforce and creates no obligation for private employers.  _(O.C.G.A. §45-20-100)_
-
-## 11. Worked Examples
-
-### 11.1 Example A — Atlanta-based 10-employee employer, full Q1 2025 payroll cycle
-
-Atlanta Software Studio LLC, a single-member LLC disregarded for federal tax (owned by Maria Chen, GA resident), elects to be treated as an S-corporation effective January 1, 2025. The company has 10 W-2 employees including Maria as a shareholder-employee, all working from a midtown Atlanta office. Total Q1 2025 GA wages: $480,000. Total Q1 2025 GA withholding remitted: $19,200 (4% effective rate after G-4 allowances). No 1099 contractors paid in Q1.
-
-- **Step 1 — Filing tier** — $19,200 ÷ 3 months = $6,400/month average withholding. This exceeds the $200/month quarterly-tier ceiling and the $5,000-annual semi-weekly-tier floor. Atlanta Software Studio is in the monthly tier for 2025.  _(n/a)_
-
-**Step 2 — GA-V monthly vouchers**  _(n/a)_
-
-| Month | GA WH liability | GA-V due | GA-V amount |
-| --- | --- | --- | --- |
-| January 2025 | $6,400 | February 15, 2025 | $6,400 |
-| February 2025 | $6,300 | March 15, 2025 | $6,300 |
-| March 2025 | $6,500 | April 15, 2025 | $6,500 |
-
-- **EFT requirement** — EFT required (each voucher exceeds $500). Submit via GTC ACH debit.  _(n/a)_
-
-Due April 30, 2025.
-- Box: Q1 2025.
-- Total GA tax withheld: $19,200.
-- Total GA-V remittances: $6,400 + $6,300 + $6,500 = $19,200.
-- Balance due: $0.
-
-File via GTC.
-
-- **Step 4 — GA UI / Administrative Assessment (DOL-4N for Q1)** — Due April 30, 2025. Assume 9 of 10 employees earn above the $9,500 wage base by end of Q1 (engineer salaries), Maria's S-corp reasonable compensation $80,000 annualized also exceeds. Taxable wages capped at 10 × $9,500 = $95,000 for the year, all of which falls in Q1 because of high salaries. Assume experience rate 1.5% (representative for a non-new employer): - Experience contribution: $95,000 × 1.5% = $1,425.00 - Administrative Assessment: $95,000 × 0.06% = $57.00 - Q1 total GDOL liability: $1,482.00 Note: Q2, Q3, Q4 DOL-4Ns will show zero taxable wages because the per-employee $9,500 cap is already exhausted in Q1.  _(n/a)_
-- **Step 5 — New-hire reporting** — Two employees hired in February 2025 (Feb 3 and Feb 18). Each must be reported to GDOL within 10 days: - Feb 3 hire → reported by Feb 13, 2025. - Feb 18 hire → reported by Feb 28, 2025. If Atlanta Software Studio's payroll provider defaults to the federal 20-day cadence, the Feb 3 hire reported Feb 23 would be 10 days late, exposure under O.C.G.A. §19-11-9.2(g).  _(O.C.G.A. §19-11-9.2(g))_
-- **Step 6 — Workers' compensation** — With 10 employees, mandatory under O.C.G.A. §34-9-2. Confirm policy in force, certificate of insurance on file. Maria as a corporate officer of the S-corp may elect exclusion under O.C.G.A. §34-9-2.2.  _(O.C.G.A. §34-9-2, O.C.G.A. §34-9-2.2)_
-
-By February 2, 2026 (January 31, 2026 is Saturday), file G-1003 transmitting all 10 W-2s. Reconciliation: G-7 totals across Q1–Q4 must equal sum of Box 17 on the 10 W-2s.
-
-**Monthly withholding figures**  _($6,400; $6,300; $6,500)_
-
-| Month | Amount |
+| Topic | Skill |
 | --- | --- |
-| January 2025 | $6,400 |
-| February 2025 | $6,300 |
-| March 2025 | $6,500 |
+| Federal payroll taxes (Forms 941 and 940) | `us-form-941-940-payroll` |
+| The employee's own Georgia return and the overtime and tips exclusions | `ga-income-tax` |
+| Registering the business itself | `ga-formation` |
+| Nonresident distribution withholding (G2-A), real property sale withholding (G2-RP), lottery and pension withholding detail | refer |
+| Workers' compensation, wage and hour, final pay and leave rules | refer to the Georgia employment rules; not tax |
 
-### 11.2 Example B — Georgia resident commuting to Alabama
+## Ask the client first
 
-Devon Brooks lives in Columbus, GA and commutes daily to Phenix City, AL where he works for an Alabama-based manufacturer (Phenix Industrial Inc.). Phenix Industrial has no Georgia employees, no Georgia office, and no Georgia nexus. Devon's annual W-2 wages: $72,000. Phenix Industrial withholds Alabama state income tax under Alabama law.
+1. **Where do employees live and work?** Residents are withheld on all wages; nonresidents on Georgia work.
+2. **Has each employee given a Form G-4,** and does any claim exempt or more than 14 allowances?
+3. **Pay frequency and filing status on each G-4** (married filing joint, single or head of household, married filing separate) and dependent allowances.
+4. **Total Georgia tax withheld in the lookback period** (12 months ending 30 June 2025) and per month, to set the payer class.
+5. **Is the employer already registered** with DOR (withholding number on the Georgia Tax Center) and with GDOL (DOL-1A), and what UI rate is on its 2026 DOL-626 notice?
+6. **Quarterly payroll and weeks with workers in 2025 and 2026**, for the UI liability test, and any hourly overtime or tipped employees (2026 reporting).
 
-- **Step 1 — Phenix Industrial's Georgia obligations** — As an out-of-state employer with no Georgia nexus, Phenix Industrial is not required to withhold Georgia income tax for Devon (under O.C.G.A. §48-7-100 the duty to withhold runs to "employers" doing business in or deriving income from Georgia, which Phenix is not). Phenix has no Georgia W-2 reporting obligation and no Georgia UI obligation for Devon (his services are performed in Alabama, so under O.C.G.A. §34-8-35 he is an Alabama UI worker).  _(O.C.G.A. §48-7-100, O.C.G.A. §34-8-35)_
-- **Step 2 — Devon's Georgia individual return** — Devon files Georgia Form 500 as a Georgia resident. He reports all $72,000 of wages on the Georgia return. He claims a credit for taxes paid to Alabama under O.C.G.A. §48-7-28 to avoid double taxation, limited to the lesser of (a) Alabama tax actually paid, or (b) the Georgia tax on the same income. - Alabama tax (at AL flat 5% / actually graduated up to 5% for high incomes — Alabama is graduated, not flat): assume $3,200. - Georgia tax on $72,000 at 5.19% after $12,000 standard deduction: ($72,000 − $12,000) × 5.19% = $60,000 × 5.19% = $3,114. - Credit allowed: lesser of $3,200 (AL paid) and $3,234 (GA on same income) = $3,200. - Net Georgia tax owed: $3,234 − $3,200 = $34. Devon will owe approximately $34 to Georgia at filing time (plus any quarterly estimated tax obligation if he wishes to avoid §48-7-120 underpayment penalty).  _(O.C.G.A. §48-7-28, §48-7-120)_
+## The method, step by step
 
-Devon may submit a Form G-4 to Phenix Industrial requesting voluntary Georgia withholding, but Phenix is not obligated to honor it absent a separate Georgia registration. Practical solution: Devon makes Georgia estimated tax payments via Form 500-ES if the shortfall would otherwise trigger §48-7-120 penalty.
+### Rates, bands and thresholds
 
-Phenix Industrial reports Devon to Alabama new-hire reporting (Devon works in Alabama). Georgia GDOL does not need a new-hire report from Phenix because services are not performed in Georgia.
-
-- **Step 5 — Watch-out — work-from-home days** — If Devon works some days remotely from his Columbus, GA home, the analysis changes. Days worked in Georgia create: - A potential Georgia withholding obligation for Phenix Industrial on the portion of wages allocable to Georgia work days (Phenix would need to register as a Georgia withholding agent). - A potential Georgia UI liability for Phenix on Georgia-source wages under O.C.G.A. §34-8-35(g)(2) "localization of work" tests. - A potential nexus issue for corporate income tax — beyond the scope of this skill, refer to GA corporate income tax skill. Many cross-border commuter arrangements break exactly here when COVID-era remote work patterns persist. Confirm with the employee and employer the actual physical location of work performance for each pay period.  _(O.C.G.A. §34-8-35(g)(2))_
-
-### 11.3 Example C — Contractor classification, Atlanta general contractor with framing subcontractor
-
-Peachtree Builders LLC is an Atlanta-based residential general contractor with 5 W-2 employees. Peachtree engages Carlos Reyes to perform framing on a series of single-family homes during 2025. Peachtree pays Carlos $48,000 over the year via 1099-NEC. The question on a GDOL UI audit: is Carlos an independent contractor or an employee?
-
-- Carlos sets his own hours within the project schedule — neutral.
-- Carlos works exclusively for Peachtree during 2025 (no other GC clients) — points toward employee.
-- Carlos is paid weekly based on hours worked, not by completed job — points toward employee.
-- Carlos owns his nail guns, framing hammers, and tape measures but Peachtree supplies the lumber and the framing tables and ladders — mixed but points toward employee on equipment.
-- Carlos has no business license, no LLC registration, no general liability insurance — points strongly toward employee.
-
-A balanced IRS 20-factor read: more likely employee than independent contractor.
-
-- **Georgia 4 P's analysis (state special rule for construction)** — 1. Place of business — Carlos has no separate office, shop, or yard. Operates from Peachtree's job sites. FAIL. 2. Profession — Carlos works only for Peachtree, has no other unrelated principals during 2025, has no advertising or business identity. FAIL. 3. Permission — Carlos is supervised by Peachtree's site superintendent who directs the daily framing sequence. FAIL. 4. Possession — Carlos supplies hand tools but not the major framing equipment (table saws, scaffolding, the lumber itself). FAIL. All four prongs fail. Under O.C.G.A. §34-8-35(n) Carlos is presumptively an employee for Georgia UI. The presumption is very difficult to rebut.  _(O.C.G.A. §34-8-35(n))_
-- **Audit assessment if GDOL reclassifies** — - Back UI contributions on $48,000 of wages (capped at $9,500 GA UI taxable wages). At new-employer 2.70%: $9,500 × 2.70% = $256.50. - Administrative Assessment: $9,500 × 0.06% = $5.70. - Penalty under O.C.G.A. §34-8-165: 10% × $256.50 × 4 quarters = $102.60 (minimum $35/quarter floor binds in any quarter where 10% is lower). - Interest at 1.5%/month from each original quarterly due date. - Cross-referral to GA DOR: assessment of unwithheld Georgia income tax on Carlos's wages. At 5.19% with no G-4 (single/zero default): roughly $48,000 × 5.19% = $2,491, plus 9% interest under O.C.G.A. §48-2-40 and possibly 100% failure-to-withhold penalty under O.C.G.A. §48-7-126. - Cross-referral to Workers' Compensation Board: with Carlos counted, Peachtree had 6 employees (5 W-2 + Carlos), so workers' comp was already required. If Carlos was injured during the period and Peachtree's workers' comp policy excluded him as a "1099," uninsured-employer liability under O.C.G.A. §34-9-126 — civil penalty up to $10,000 plus treble damages payable to Carlos for any work injury.  _(O.C.G.A. §34-8-165, §48-2-40, §48-7-126, §34-9-126)_
-
-Reclassify Carlos as a W-2 employee prospectively. Discuss with Peachtree's counsel whether to file amended returns voluntarily (potentially mitigating penalties) or wait for audit assessment. Document the 4 P's analysis in the file.
-
-## 12. Cross-Reference to Federal Payroll Skills
-
-When this skill is loaded alongside the federal payroll content skills, the following responsibilities are split:
-
-**Federal vs GA payroll responsibilities**  _(O.C.G.A. §48-7-100, §34-8-30 et seq., O.C.G.A. §34-9-2, O.C.G.A. §34-7-2)_
-
-| Item | Federal skill | GA skill (this one) |
+| Item | Amount, 2026 | Source |
 | --- | --- | --- |
-| Income tax withholding | Federal §3402, Pub 15 tables, W-4 | GA §48-7-100, TSD-WH tables, G-4 |
-| FICA | Federal §3101, §3111 | n/a (no GA equivalent) |
-| FUTA | Federal §3301, Form 940 | n/a |
-| State UI | n/a | O.C.G.A. §34-8-30 et seq., GA UI / Administrative Assessment |
-| W-2 issuance | Federal §6051 | n/a |
-| W-3 transmittal to SSA | Federal | n/a |
-| W-2 transmittal to state | n/a | G-1003 to GA DOR |
-| 1099-NEC issuance | §6041A (federal copy to IRS + recipient) | n/a |
-| 1099-NEC transmittal to state | n/a | G-1003 + 1099 copy to GA DOR if GA payee or GA-source services |
-| New-hire report | PRWORA 20-day default | **10-day** GA deadline via GDOL |
-| Workers' comp | n/a (state matter) | O.C.G.A. §34-9-2, 3-employee threshold |
-| Worker classification | IRS 20-factor / 3-category | IRS 20-factor + **GA construction 4 P's** |
-| Final pay | n/a (state matter) | Next regular payday under O.C.G.A. §34-7-2 |
-| Paid sick leave | None federal | **None** in Georgia |
-| Paid family leave | None federal (FMLA is unpaid) | **None** in Georgia |
-| Supplemental wage withholding | Federal 22% / 37% under §3402(g) | GA flat **5.19%** for 2025 |
+| Withholding rate, percentage method, from 11 May 2026 | 4.99% | [2026 Employer's Tax Guide](https://dor.georgia.gov/document/document/2026-employers-tax-guide-updated-september-2026/download) |
+| Withholding rate before the change takes effect (employers may move to 4.99% from 11 May 2026) | 5.19% | same |
+| Table E standard deduction, annual, married filing joint | $30,000 | same |
+| Table E standard deduction, annual, single or head of household, and married filing separate (also for married couples both working) | $15,000 | same |
+| Table E dependent allowance, annual, each | $5,000 | same |
+| Semi-weekly payer: tax withheld in the lookback period more than | $50,000 | same |
+| Monthly payer: tax withheld per month more than | $200 | same |
+| Annual payer: tax withheld per year at most | $800 | same |
+| One-day rule: tax withheld for a payday more than | $100,000 | same |
+| EFT and electronic filing required once a G-7 shows tax withheld of more than | $500 | same |
+| G-4 claiming exempt or more than this many allowances is sent to DOR | 14 | same |
+| UI taxable wage base per employee per year (since 1 January 2013) | $9,500 | [GDOL employer UI FAQs](https://dol.georgia.gov/faqs-employers/employers-faqs-unemployment-insurance) |
+| UI rate for new or newly covered employers | 2.70% | same |
+| UI liability: quarterly payroll of at least, or one worker in 20 calendar weeks | $1,500 | same |
+| UI liability, domestic employers: cash wages in a calendar quarter of | $1,000 or more | same |
+| UI liability, agricultural employers: gross quarterly payroll of at least | $20,000 | same |
+| UI late report penalty, per month or part month | greater of $20 or 0.05% of gross payroll (in words on the page: ".05 percent") | same |
+| UI interest on late contributions, per month or part month | 1.5% | same |
+| UI cost of collection fee on a deficiency | 20% | same |
+| New hire report deadline after hire, rehire or return to work | 10 days | [GDOL employer newsletter DOL-5137](https://dol.georgia.gov/document/unemployment-benefits/employer-newsletter-dol-5137/download) |
 
-## 13. Reviewer Checklist (Self-Test)
+### Table E, by pay period
 
-A reviewer signing off on a 2025 Georgia payroll engagement should confirm:
+From the [2026 Employer's Tax Guide, Table E](https://dor.georgia.gov/document/document/2026-employers-tax-guide-updated-september-2026/download):
 
-- [ ] GA WH account number is on file and matches the FEIN.
-- [ ] GDOL employer account number is on file and is distinct from the GA WH account.
-- [ ] G-4 on file for every active employee; "Single, zero" default applied for any missing G-4.
-- [ ] Any G-4 with 14+ allowances or full exemption reported to GA DOR within 30 days of receipt.
-- [ ] Filing tier determined correctly from prior year July–June lookback.
-- [ ] All GA-V vouchers remitted on time (monthly 15th, or semi-weekly per federal schedule, or quarterly with G-7).
-- [ ] All four quarterly G-7s filed by their respective due dates.
-- [ ] G-1003 filed by January 31 (or next business day) following the calendar year, with all W-2s and qualifying 1099-NECs transmitted.
-- [ ] DOL-4N filed for each quarter with correct taxable wage cap ($9,500) and both experience-rate and Administrative Assessment components computed.
-- [ ] Every new hire reported to GDOL within **10 days**, not 20.
-- [ ] Workers' comp policy in force if 3+ employees (including misclassified workers reclassified retroactively).
-- [ ] Any 1099 contractor in the construction industry reviewed under the **4 P's** test, not just the IRS 20-factor test.
-- [ ] If multistate workers, work-state allocation reviewed and Georgia withholding/UI registration triggers confirmed.
-- [ ] Phase-down rate confusion check: current calendar year's Georgia withholding rate matches the year's TSD-WH publication, not the prior year's.
-- [ ] All findings memorialized in the reviewer file with citations to O.C.G.A. provisions or GA DOR Regulations 560.
+| Pay period | Married filing joint | Single or head of household | Married filing separate | Each dependent allowance | Source |
+| --- | --- | --- | --- | --- | --- |
+| Weekly | 576.92 | 288.46 | 288.46 | 96.15 | [2026 Employer's Tax Guide, Table E](https://dor.georgia.gov/document/document/2026-employers-tax-guide-updated-september-2026/download) |
+| Bi-weekly | 1,153.85 | 576.92 | 576.92 | 192.31 | same |
+| Semi-monthly | 1,250.00 | 625.00 | 625.00 | 208.33 | same |
+| Monthly | 2,500.00 | 1,250.00 | 1,250.00 | 416.67 | same |
+| Quarterly | 7,500.00 | 3,750.00 | 3,750.00 | 1,250.00 | same |
+| Semi-annual | 15,000.00 | 7,500.00 | 7,500.00 | 2,500.00 | same |
+| Annual | 30,000.00 | 15,000.00 | 15,000.00 | 5,000.00 | same |
+| Daily (misc.) | 82.19 | 41.10 | 41.10 | 13.70 | same |
 
-## 14. Authority Citations
+### Withholding
 
-- §34-7-2 — Time of payment of wages.
-- §34-8-1 et seq. — Employment Security Law (UI).
-- §34-8-33 — Coverage.
-- §34-8-35 — Employment definition (including (n) construction 4 P's).
-- §34-8-155 — Experience rating.
-- §34-8-165 — Interest and penalties on UI.
-- §34-8-166 — Interest rate.
-- §34-8-172 — SUTA dumping.
-- §34-8-180 — Administrative Assessment.
-- §34-9-1 et seq. — Workers' Compensation.
-- §34-9-2 — Coverage threshold (3 employees).
-- §34-9-126 — Penalty for failure to insure.
-- §19-11-9.2 — New-hire reporting.
-- §45-20-100 — State employee paid parental leave.
-- §48-2-32 — Electronic funds transfer.
-- §48-2-40 — Interest on deficiencies.
-- §48-7-20 — Income tax rates (HB 1437 / HB 1015 / HB 111 amendments).
-- §48-7-23 — Pass-through entity tax election.
-- §48-7-28 — Credit for taxes paid to other states.
-- §48-7-100 — Withholding by employers.
-- §48-7-102 — Form G-4 collection.
-- §48-7-119 — Records retention.
-- §48-7-120 — Estimated tax penalty.
-- §48-7-126 — Withholding penalties.
+1. **Register** for a withholding number on the Georgia Tax Center (gtc.dor.ga.gov).
+2. **Collect Form G-4** from each employee. With no G-4, the employer may use the federal W-4 election where the information allows; otherwise withhold as if single with zero allowances (O.C.G.A. § 48-7-102). A G-4 claiming exempt or more than 14 allowances is mailed to DOR; DOR writes if it should not be honoured. An employer who knows a G-4 is wrong withholds as single, zero allowances until a corrected form arrives. Employees may add extra withholding on the G-4.
+3. **Compute each payday (percentage method):** taxable wages, less the Table E standard deduction for the G-4 status, less the dependent allowance times dependents claimed, times 4.99% (5.19% for wages paid before the employer moves to the new rate, and in any case before 11 May 2026). With zero allowances, subtract the standard deduction only. Bonuses and other compensation are withheld at the rate in effect when paid.
+4. **Deposit** by payer class ([2026 Employer's Tax Guide](https://dor.georgia.gov/document/document/2026-employers-tax-guide-updated-september-2026/download)); the lookback period is the 12 months ending 30 June of the prior year:
+   - Semi-weekly (more than $50,000 in the lookback period): by EFT; paydays Wednesday to Friday are due the following Wednesday, paydays Saturday to Tuesday the following Friday. Report on Form G-7 with Schedule B.
+   - Monthly (more than $200 a month): by the 15th of the next month with Form GA-V, unless paying electronically.
+   - Quarterly ($200 a month or less but more than $800 a year): with Form G-7 by the last day of the month after the quarter.
+   - Annual ($800 or less a year, on request through the Georgia Tax Center before the first quarter's due date): with Form G-7 by 31 January.
+   - Any payday over $100,000: by EFT the next banking day after payday. The filing frequency does not change automatically.
+5. **File Form G-7** for every quarter, even with no tax withheld, by the last day of the month after the quarter. Once a G-7 shows more than $500, every later payment must be by EFT and every return filed electronically. Returns with series 100 credits must be filed electronically.
+6. **Year end: Form G-1003** with the W-2s and 1099-NECs by 1 February 2027; other 1099s by 1 March 2027. For 2026, report qualified overtime and qualified cash tips on the year-end W-2 and 1099; do not report them on the 2026 G-7 (the G-7 changes from 2027). Reporting them does not reduce withholding or W-2 Box 16 wages.
 
-- 560-3-2-.26 — Electronic filing requirements.
-- 560-7-8-.34 — Withholding form defaults.
+**2026 due dates** ([2026 Employer's Tax Guide](https://dor.georgia.gov/document/document/2026-employers-tax-guide-updated-september-2026/download)):
 
-- Employer's Tax Guide (TSD-WH), 2025 edition.
-- G-4 Instructions (2025).
-- G-7 / GA-V Instructions (2025).
-- G-1003 Instructions (2025).
+| Period | Monthly payer GA-V | G-7 return (all payers) |
+| --- | --- | --- |
+| January, February, March 2026 | 17 Feb, 16 Mar, 15 Apr 2026 | Q1: 30 Apr 2026 |
+| April, May, June 2026 | 15 May, 15 Jun, 15 Jul 2026 | Q2: 31 Jul 2026 |
+| July, August, September 2026 | 17 Aug, 15 Sep, 15 Oct 2026 | Q3: 2 Nov 2026 |
+| October, November, December 2026 | 16 Nov, 15 Dec 2026, 15 Jan 2027 | Q4: 1 Feb 2027 |
+| W-2 and 1099-NEC with G-1003 | | 1 Feb 2027 |
+| Other 1099s with G-1003 | | 1 Mar 2027 |
 
-- Employer Handbook (2025).
-- DOL-4N Instructions.
-- New Hire Reporting program documentation.
+Quarterly and annual payers pay with the G-7 on the G-7 dates. A due date on a Federal Reserve or Georgia holiday or a weekend moves to the next banking day.
 
-- 42 U.S.C. §653a — PRWORA new-hire reporting baseline.
-- 50 U.S.C. §4001 — Military Spouses Residency Relief Act.
-- IRC §3402, §3406, §6041A.
-- Treas. Reg. §31.6302-1 — Semi-weekly deposit schedule.
-- IRS Revenue Ruling 87-41 — 20-factor common-law test.
-- IRS Publication 1779 — three-category common-law summary.
-- Revenue Act of 1978 §530 — federal safe harbor (does NOT apply to GA UI).
-- P.L. 119-21 (OBBBA) — §6041A threshold change effective 2026.
+### Unemployment insurance
 
-- HB 1437 (Ga. 2022 Regular Session) — flat tax conversion and phase-down.
-- HB 1015 (Ga. 2024 Regular Session) — rate acceleration.
-- HB 111 (Ga. 2025) — signed April 15, 2025; reduced PIT rate to 5.19% retroactive to January 1, 2025; accelerated phase-down schedule toward 4.99% target.
-- GA DOR Employer's Tax Guide (TSD-WH), June 2025 revision — implementation guidance for HB 111 mid-year rate change.
+Source: [GDOL employer UI FAQs](https://dol.georgia.gov/faqs-employers/employers-faqs-unemployment-insurance); [GDOL tax reporting and liability information](https://dol.georgia.gov/document/unemployment-tax/unemployment-insurance-tax-reporting-and-liability-information-employers/download).
+1. **Liability.** An employer is generally liable if it has a quarterly payroll of $1,500 or at least one worker in 20 different calendar weeks in a calendar year; agricultural employers at $20,000 of gross quarterly payroll; domestic employers paying cash wages of $1,000 or more in a quarter. File Form DOL-1A after the first Georgia payroll.
+2. **Rate.** New or newly covered employers pay a total rate of 2.70% until they qualify for an experience rate. Experienced employers use the rate on their annual DOL-626 notice, posted on the GDOL Employer Portal (the 2026 notices were posted 23 December 2025 and are not mailed).
+3. **Base.** Tax is due on the first $9,500 of each employee's wages in the calendar year; all wages are still reported, because they set benefit eligibility.
+4. **Report and pay quarterly** on the Employer's Quarterly Tax and Wage Report by the end of the month after the quarter (30 April, 31 July, 31 October, 31 January), through the Employer Portal. Qualified employers may defer quarterly tax of $5.00 or less to 31 January of the next year. Domestic employers may file annually on Form DOL-4A by 31 January.
+5. **Late:** the greater of $20 or 0.05% of gross payroll for each month or part month a report is late; interest of 1.5% a month on unpaid contributions; a 20% cost of collection fee may be added to a deficiency.
+
+### New hire reporting
+
+Report every new hire and rehire, and employees returning to work, to the Georgia New Hire Reporting program at ga-newhire.com within 10 days, using the same FEIN as the quarterly wage reports ([GDOL employer newsletter DOL-5137](https://dol.georgia.gov/document/unemployment-benefits/employer-newsletter-dol-5137/download); [GDOL laws and regulations FAQs](https://dol.georgia.gov/faqs-employers/employers-faqs-laws-and-regulations), O.C.G.A. § 19-11-9.2). No employer is exempt.
+
+## Boundary and exception table
+
+| Situation | Rule |
+| --- | --- |
+| Wages paid in April 2026 | 5.19%: 4.99% may be used only from 11 May 2026 |
+| Married couple, both working | Each uses the married filing separate column of Table E |
+| Employee claims zero allowances | Subtract the standard deduction only |
+| No G-4 and no usable W-4 | Single, zero allowances |
+| G-7 for a quarter with no withholding | Still due |
+| One G-7 showed more than $500 | EFT and electronic filing for every later period |
+| Payday withholding of $100,001 | Next banking day by EFT, whatever the payer class |
+| Employee passes $9,500 of wages | No more UI tax for that employee this year, but keep reporting the wages |
+| Resident working in a state that requires withholding | No Georgia withholding required on those wages; the employee claims the other-state credit on Form 500 |
+
+## Worked cases
+
+**Case 1: semi-monthly withholding, DOR's own example.** A married employee filing joint, paid $2,000 semi-monthly, claims one child; the spouse does not work. Standard deduction $1,250.00 (Table E, column 1), dependent allowance $208.33, wages subject to withholding $541.67, times 4.99% = $27.03. The same pay before 11 May 2026 at 5.19% is $28.11.
+
+```oa-check
+name: GA 2026 semi-monthly withholding, married filing joint, one dependent
+inputs:
+  wages: 2000
+  standard_deduction: 1250
+  dependent_allowance: 208.33
+  dependents: 1
+steps:
+  - subject: wages - standard_deduction - dependent_allowance * dependents
+  - withholding_new_rate: round(subject * 0.0499, 2)
+  - withholding_old_rate: round(subject * 0.0519, 2)
+expected:
+  subject: 541.67
+  withholding_new_rate: 27.03
+  withholding_old_rate: 28.11
+```
+
+**Case 2: unemployment insurance for a new employer.** A new Atlanta employer has three employees paid $30,000, $12,000 and $6,000 in 2026. UI tax applies to the first $9,500 of each: $9,500 + $9,500 + $6,000 = $25,000 of taxable wages, times 2.70% = $675.00 for the year. Without the wage base, it would have been $1,296.00: the base caps the cost per employee at $256.50.
+
+```oa-check
+name: GA 2026 UI tax, new employer, three employees
+inputs:
+  wage_1: 30000
+  wage_2: 12000
+  wage_3: 6000
+  wage_base: 9500
+  rate: 0.027
+steps:
+  - taxable: min(wage_1, wage_base) + min(wage_2, wage_base) + min(wage_3, wage_base)
+  - ui_tax: taxable * rate
+  - uncapped: (wage_1 + wage_2 + wage_3) * rate
+  - max_per_employee: wage_base * rate
+expected:
+  taxable: 25000
+  ui_tax: 675.00
+  uncapped: 1296.00
+  max_per_employee: 256.50
+```
+
+## When to refuse or refer
+
+| Code | Situation | Action |
+| --- | --- | --- |
+| R-GAPR-CLASS | Worker classification disputes (employee or contractor), including GDOL audits | Refer |
+| R-GAPR-SUTA | Successor employer, acquisition or transfer of experience | Refer: rate transfer rules apply |
+| R-GAPR-MULTI | Employees in several states, reciprocity questions or relocation mid-year | Refer |
+| R-GAPR-CREDIT | Withholding returns using job tax credits or other series 100 credits | Refer; e-filing required |
+| R-GAPR-OTHER | G2-A, G2-RP, G2-LP, lottery or pension withholding | Refer |
+
+## Filing and payment
+
+1. **DOR:** register and file on the Georgia Tax Center (gtc.dor.ga.gov). Pay by EFT, ACH debit on the Georgia Tax Center, or ACH credit (register on Form EFT-002); Fedwire is not accepted. Paper filers send Form GA-V with monthly payments and Form G-7 each quarter.
+2. **GDOL:** register on Form DOL-1A; file quarterly tax and wage reports and pay on the GDOL Employer Portal, where the DOL-626 rate notice is posted.
+3. **After filing:** keep each G-4 on file; correct W-2s and 1099s after filing with an amended G-1003.
+
+| Penalty | Rule | Maximum | Source |
+| --- | --- | --- | --- |
+| Withholding, failure to file (O.C.G.A. § 48-7-126) | $25 plus 5% of the tax withheld, plus 5% each later month | $25 plus 25% | [DOR penalty and interest rates](https://dor.georgia.gov/penalty-and-interest-rates) |
+| Withholding, failure to pay (§ 48-7-126) | $25 plus 5% of the tax, plus 5% each later month (minimum $25) | $25 plus 25% | same |
+| Failure to withhold | $10 per employee, quarterly | $10 per employee, quarterly | same |
+| Late W-2 or 1099 to payees, or to DOR (§§ 48-7-105, 48-7-106) | $10 to $50 per form, by how late | depends on lateness | same |
+| Not filing electronically when required (§ 48-2-44.1) | Greater of $25 or 5% of the tax due | none stated | same |
+| Not paying electronically when required (§ 48-2-32(f)) | 10% of the tax due | none stated | same |
+
+## Completion checklist
+
+- G-4 on file for each employee; exempt or over 14 allowances sent to DOR.
+- Rate switched to 4.99% no earlier than 11 May 2026; Table E amounts used for the pay period.
+- Payer class set from the lookback period; one-day rule watched.
+- G-7 filed every quarter; EFT and e-filing once over $500.
+- G-1003 with W-2s and 1099-NECs by 1 February 2027, with 2026 overtime and tips figures on the forms.
+- UI: liability tested, 2.70% or DOL-626 rate, $9,500 base, quarterly reports by month-end after each quarter.
+- New hires reported within 10 days.
+
+## Sources
+
+| Source | URL | Read on |
+| --- | --- | --- |
+| DOR 2026 Employer's Tax Guide (updated September 2026). Read for the 2026 changes, the 11 May 2026 rate switch, who must withhold, G-4 rules, the payer classes and thresholds, the one-day rule, the EFT rule, Table E and its example, the 2026 due date tables and the overtime and tips reporting rules. | https://dor.georgia.gov/document/document/2026-employers-tax-guide-updated-september-2026/download | 2026-11-13 |
+| DOR penalty and interest rates. Read for the withholding tax penalty table and the mandatory electronic filing and payment penalties. | https://dor.georgia.gov/penalty-and-interest-rates | 2026-11-13 |
+| GDOL employer FAQs, unemployment insurance. Read for the $9,500 wage base, the 2.70% new employer rate, liability tests, the $5.00 deferral, late report penalty, interest and collection fee. | https://dol.georgia.gov/faqs-employers/employers-faqs-unemployment-insurance | 2026-11-13 |
+| GDOL unemployment insurance tax reporting and liability information for employers. Read for the quarterly report due dates, penalty and interest. | https://dol.georgia.gov/document/unemployment-tax/unemployment-insurance-tax-reporting-and-liability-information-employers/download | 2026-11-13 |
+| GDOL "2026 Employer Tax Rates Available Now" (23 December 2025). Read for the DOL-626 notices on the Employer Portal. | https://dol.georgia.gov/blog-post/2025-12-23/2026-employer-tax-rates-available-now | 2026-11-13 |
+| GDOL "Employer Tax Rates Released" (27 December 2023). Read for the reinstatement of the Administrative Assessment from 1 January 2024 under HB 518. | https://dol.georgia.gov/blog-post/2023-12-27/employer-tax-rates-released | 2026-11-13 |
+| GDOL employer newsletter DOL-5137. Read for new hire reporting within 10 days at ga-newhire.com. | https://dol.georgia.gov/document/unemployment-benefits/employer-newsletter-dol-5137/download | 2026-11-13 |
+| GDOL employer FAQs, laws and regulations. Read for the new hire reporting duty (O.C.G.A. § 19-11-9.2). | https://dol.georgia.gov/faqs-employers/employers-faqs-laws-and-regulations | 2026-11-13 |
+
+Not yet confirmed: the experience-rated UI rate range for 2026 (the older file's 0.04% to 8.10% had no source and was dropped); whether the 0.06% Administrative Assessment reinstated from 1 January 2024 still applies in 2026 and whether it sits inside the 2.70% new employer total (GDOL's 2025 and 2026 rate posts do not say); GDOL's statute or rule for the quarterly report itself was not opened.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-07-13. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ga-payroll` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ga-payroll. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ga-payroll` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ga-payroll. If neither is available, confirm every figure against the official source pages cited above before relying on it.

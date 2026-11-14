@@ -1,323 +1,203 @@
 ---
 name: hk-mpf
-description: "Use this skill whenever asked about Hong Kong Mandatory Provident Fund (MPF) contributions. Trigger on phrases like \"MPF\", \"Mandatory Provident Fund\", \"強積金\", \"employer contribution Hong Kong\", \"employee contribution HK\", \"MPF self-employed\", \"TVC\", \"voluntary contributions\", \"MPF cap\", \"relevant income MPF\", \"MPFA\", or any question about MPF contribution rates, caps, voluntary contributions, tax deductions, and self-employed obligations. ALWAYS read this skill before advising on MPF matters."
+description: "Use this skill whenever asked about Hong Kong Mandatory Provident Fund (MPF) contributions in 2026 (year of assessment 2026/27). Trigger on phrases like \"MPF\", \"Mandatory Provident Fund\", \"強積金\", \"employer contribution Hong Kong\", \"employee contribution HK\", \"MPF self-employed\", \"TVC\", \"voluntary contributions\", \"MPF cap\", \"relevant income MPF\", \"MPFA\", \"eMPF\", or any question about MPF contribution rates, caps, voluntary contributions, tax deductions, the end of the offsetting arrangement and self-employed obligations. It gives the 5% rates, the HKD 7,100 and HKD 30,000 relevant income levels, the 10th-day contribution day and the 60-day enrolment rule. Built from the law, not reviewed by an accountant."
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/hk-mpf"
   jurisdiction: "HK"
-  tax_year: "2024"
-  last_updated: "2026-07-13"
+  tax_year: "2026"
+  last_updated: "2026-11-14"
 ---
 
-# HK Mpf
+# Hong Kong Mandatory Provident Fund (強制性公積金), 2026
 
-## Section 1 -- Quick Reference
+> **General reference only.** Built from the law, not reviewed by an accountant. Do not file, pay or take a position on it without review by a qualified professional or MPF intermediary in Hong Kong.
 
-**Section 1 -- Quick Reference**
+## Who this applies to
 
-| Field | Value |
-| --- | --- |
-| Country / Territory | Hong Kong SAR, China |
-| System | Mandatory Provident Fund (MPF / 強制性公積金) |
-| Currency | HKD (Hong Kong Dollar) only |
-| Governing legislation | Mandatory Provident Fund Schemes Ordinance (MPFSO), Cap. 485 |
-| Regulator | Mandatory Provident Fund Schemes Authority (MPFA / 積金局) |
-| Portal | mpfa.org.hk |
-| Skill version | 1.0 |
+Except for exempt persons, employees and self-employed persons aged 18 to 64 must join an MPF scheme under the Mandatory Provident Fund Schemes Ordinance (MPFSO), Cap. 485. Regulator: Mandatory Provident Fund Schemes Authority (MPFA, 積金局). Contributions, enrolment and records now run through the eMPF Platform. Currency: HKD.
 
-### Core Contribution Parameters (2024/25)
-
-**Core Contribution Parameters (2024/25)**
-
-| Parameter | Amount |
-| --- | --- |
-| Employer mandatory contribution rate | 5% of relevant income |
-| Employee mandatory contribution rate | 5% of relevant income |
-| Maximum relevant income | HK$30,000/month |
-| Minimum relevant income | HK$7,100/month |
-| Maximum mandatory contribution (each party) | HK$1,500/month |
-| Minimum mandatory contribution (each party) | HK$355/month (if income ≥$7,100) |
-| Self-employed mandatory rate | 5% of relevant income |
-| Self-employed max contribution | HK$1,500/month or HK$18,000/year |
-| Voluntary contribution (TVC) -- tax deduction cap | HK$60,000/year |
-
-### Who Must Join MPF
-
-**Who Must Join MPF**
-
-| Category | MPF Required | Exceptions |
+| Category | MPF required | Notes |
 | --- | --- | --- |
-| Employees aged 18--64 | YES | Domestic helpers, self-employed hawkers, statutorily exempt |
-| Self-employed aged 18--64 | YES |  |
-| Casual employees (<60 days in construction/catering) | YES (Industry Scheme) |  |
-| Part-time employees | YES (if employed ≥60 days) |  |
-| Employees aged 65+ | NO (can join voluntarily) |  |
-| Domestic helpers | NO (exempt) |  |
-| Civil servants (pre-2000 terms) | NO (covered by pension) |  |
-| ORSO scheme members | Exempt if scheme is MPFSO-exempted |  |
+| Regular employees aged 18 to 64, employed 60 days or more | Yes | Full-time and part-time alike |
+| Casual employees in construction or catering (day-to-day or under 60 days) | Yes, Industry Scheme | Enrol within the first 10 days if no account in the same Industry Scheme |
+| Self-employed persons aged 18 to 64 | Yes | Open an SEP account within 60 days |
+| Under 18 or over 65 | No | May contribute voluntarily |
+| Exempt persons (for example domestic employees, members of exempted ORSO schemes, certain expatriates for the first 13 months, civil servants on pension terms) | No | Exemption categories per MPFA coverage page |
 
-### Conservative Defaults
+Salaries tax deduction for contributions: `hk-salaries-tax`.
 
-**Conservative Defaults**
+## Rates, bands and thresholds
 
-| Ambiguity | Default |
-| --- | --- |
-| Unknown relevant income | Apply minimum ($7,100 threshold) until confirmed |
-| Unknown employment start date | Assume 60-day rule applies (must enrol within 60 days) |
-| Self-employed vs employee | Check control test; if ambiguous, treat as employee |
-| Unknown fund choice | Employee must be given choice; default = employer's scheme |
-| TVC vs employer voluntary | TVC = tax deductible; employer voluntary (SVC) = not deductible to employee |
+| Item | Figure | Conditions | Source |
+| --- | --- | --- | --- |
+| Employer mandatory contribution | 5% of relevant income | Capped at the maximum relevant income | https://www.mpfa.org.hk/en/mpf-system/mandatory-contributions/employees |
+| Employee mandatory contribution | 5% of relevant income | None if monthly relevant income is below the minimum | same |
+| Minimum relevant income, monthly paid | HKD 7,100 a month | Below it: employer pays 5%, employee pays nothing | same |
+| Maximum relevant income, monthly paid | HKD 30,000 a month | Contributions above it: HKD 1,500 each | same |
+| Maximum mandatory contribution, each party | HKD 1,500 a month | Relevant income above HKD 30,000 | same |
+| Daily levels (non-monthly wage periods) | Minimum HKD 280 a day; maximum HKD 1,000 a day | Times the days in the wage period (weekly: 1,960 and 7,000) | same |
+| Enrolment deadline | Within the first 60 days of employment | Calendar days; next working day if the 60th falls on a Saturday or holiday | https://www.mpfa.org.hk/en/mpf-system/enrolment-and-termination |
+| Contribution day, monthly paid employees | 10th day of the following month | First contribution: the 10th after the month in which the 60th day falls | https://www.mpfa.org.hk/en/mpf-system/voluntary-contributions-or-tax-deductible-voluntary-contributions |
+| Failure to enrol | Fine up to HKD 350,000 and 3 years' imprisonment | Employer offence | https://www.mpfa.org.hk/en/mpf-system/enrolment-and-termination |
+| Pay records to employees | Within 7 working days after contributing | Employer duty | https://www.mpfa.org.hk/en/enforcement/enforcement-against-employers |
+| TVC and QDAP salaries tax deduction | Up to HKD 60,000 a year combined | Tax-deductible voluntary contributions | https://www.mpfa.org.hk/en/mpf-system/voluntary-contributions-or-tax-deductible-voluntary-contributions |
+| Mandatory contributions salaries tax deduction | Up to HKD 18,000 a year | Employee or SEP | https://www.ird.gov.hk/eng/pdf/2026/BriefGuide20252026.pdf |
+| Offsetting arrangement abolished | From 1 May 2025 (transition date) | Employees ceasing employment on or after that date; no retrospective effect | https://www.mpfa.org.hk/en/mpf-system/long-service-and-severance-payments |
+| Withdrawal age | 65 | Earlier only on statutory grounds | https://www.mpfa.org.hk/en/mpf-system/withdrawal-of-mpf |
 
-## Section 2 -- Rules
+## The base
 
-### 2.1 Mandatory Contributions
+### Relevant income (MPFSO s. 2)
 
-**2.1 Mandatory Contributions**
+- **Included:** wages, salary, overtime pay; commission, bonus; leave pay (annual, sick, maternity, paternity); fees, tips; end-of-year payments, gratuities.
+- **Excluded:** severance and long service payments under the Employment Ordinance; non-cash housing benefit; reimbursement of expenses. Non-cash benefits (housing, company car) are not relevant income unless commutable to cash at the employee's option.
 
-| Party | Rate | On | Monthly Cap | Monthly Floor |
-| --- | --- | --- | --- | --- |
-| Employer | 5% | Relevant income | HK$1,500 (on $30,000) | No minimum (pays even if income <$7,100) |
-| Employee | 5% | Relevant income | HK$1,500 (on $30,000) | HK$0 if income <$7,100 |
-| Self-employed | 5% | Relevant income | HK$1,500/month | HK$0 if income <$7,100 |
+### Computation, employee
 
-Important distinctions:
-- If employee earns <HK$7,100/month: employer still contributes 5%, but employee contributes 0%
-- If employee earns >HK$30,000/month: both capped at HK$1,500/month each
-- Relevant income includes: wages, salary, leave pay, fees, commission, bonus, gratuity, perquisites (monetary)
+1. Relevant income for the wage period.
+2. Below HKD 7,100 a month: employer 5%, employee 0.
+3. HKD 7,100 to 30,000: each pays 5%.
+4. Above HKD 30,000: each pays HKD 1,500.
+5. Pay by the contribution day through the eMPF Platform.
 
-### 2.2 Relevant Income Definition (MPFSO Sec. 2)
-
-- **Relevant Income -- Included** — Wages, salary, overtime pay; Commission, bonus; Leave pay (annual, sick, maternity, paternity); Fees, tips; End-of-year payments, gratuities  _(MPFSO Sec. 2)_
-- **Relevant Income -- Excluded** — Severance payment (Employment Ordinance); Long service payment (Employment Ordinance); Housing benefit / housing allowance (non-cash only); Reimbursement of expenses  _(MPFSO Sec. 2)_
-
-### 2.3 Self-Employed Persons
-
-**2.3 Self-Employed Persons**
+### Self-employed persons (SEP)
 
 | Rule | Detail |
 | --- | --- |
-| Mandatory contribution | 5% of relevant income |
-| Relevant income | Net self-employment income (assessable profits for tax) |
-| Contribution frequency | Monthly or annually (taxpayer's choice) |
-| Monthly basis | 5% of monthly relevant income, max $1,500/month |
-| Annual basis | 5% of annual relevant income, max $18,000/year |
-| Income below $7,100/month | No mandatory contribution required |
-| Deadline (monthly) | Within 30 days after end of contribution period |
-| Deadline (annual) | Within 30 days after end of financial year |
+| Mandatory contribution | 5% of relevant income (net self-employment income) |
+| Frequency | Monthly or yearly, chosen on enrolment |
+| Monthly | Contribution day as specified by the SEP (for example the last day of each month) |
+| Yearly | Contribution day is the last day of the scheme's financial year |
+| Cap | 5% of the maximum relevant income: HKD 1,500 a month, HKD 18,000 a year |
+| Below the minimum | No mandatory contribution |
 
-### 2.4 Enrolment Requirements
+Correction: the old file said SEP contributions were due "within 30 days after the end of the contribution period or financial year"; the MPFA page sets the contribution day as above.
 
-**2.4 Enrolment Requirements**
+### Voluntary contributions
 
-| Scenario | Deadline |
-| --- | --- |
-| New employee | Employer must enrol within 60 days of start |
-| New self-employed | Must join MPF scheme within 60 days of becoming self-employed |
-| Change of employer | New employer re-enrols; employee can consolidate old accounts |
-| Casual employees (construction/catering) | Day 1 enrolment via Industry Scheme |
-
-### 2.5 Vesting
-
-**2.5 Vesting**
-
-| Type | Vesting Rule |
-| --- | --- |
-| Employee mandatory contributions | 100% vested immediately (employee's money) |
-| Employer mandatory contributions | 100% vested immediately |
-| Employer voluntary contributions | May have vesting schedule (per scheme rules) |
-| Employee voluntary contributions | 100% vested immediately |
-
-## Section 3 -- Voluntary Contributions and Tax Deductions
-
-### 3.1 Tax Deductible Voluntary Contributions (TVC)
-
-**3.1 Tax Deductible Voluntary Contributions (TVC)**
-
-| Feature | Detail |
-| --- | --- |
-| Legislation | IRO Sec. 26J (effective 2019/20 onwards) |
-| Who can claim | Any MPF scheme member (employee, self-employed, non-employed) |
-| Contribution to | Special TVC account in MPFA-approved scheme |
-| Tax deduction limit | HK$60,000 per year |
-| Combined cap | TVC + QDAP (qualifying deferred annuity) together capped at HK$60,000 |
-| Scheme | Must be designated TVC account (NOT regular voluntary/SVC) |
-| Withdrawal | Only at age 65, retirement, permanent departure, or other qualifying events |
-| Tax deduction claimed on | BIR60 (Part 8.5) |
-
-### 3.2 Special Voluntary Contributions (SVC) -- Non-Deductible
-
-**3.2 Special Voluntary Contributions (SVC) -- Non-Deductible**
-
-| Feature | Detail |
-| --- | --- |
-| Employer SVC | Employer contributes extra; may have vesting schedule |
-| Employee SVC | Employee contributes extra to existing scheme; NOT tax-deductible |
-| Difference from TVC | SVC goes into regular account; TVC goes into special TVC account |
-| Withdrawal rules | Per scheme governing rules (may allow earlier withdrawal than TVC) |
-
-### 3.3 Computation of Tax Benefit (TVC)
-
-- **TVC Tax Benefit Computation** — Annual TVC contribution (max $60,000) × Marginal tax rate (2% to 17% progressive, or 15% standard) = Tax saving Example: - TVC contribution: $60,000 - Marginal rate: 17% - Tax saving: $60,000 × 17% = $10,200
-
-## Section 4 -- Computation Examples
-
-### Example 1 -- Standard Employee (Income $25,000/month)
-
-**Example 1 -- Standard Employee (Income $25,000/month)**
-
-| Party | Calculation | Monthly Amount |
+| Feature | TVC (tax-deductible voluntary contribution) | Other voluntary contributions |
 | --- | --- | --- |
-| Employer | 5% × $25,000 | $1,250 |
-| Employee | 5% × $25,000 | $1,250 |
-| Total to MPF account |  | $2,500 |
+| Account | Special TVC account | Regular account (employer or employee voluntary) |
+| Tax deduction | Up to HKD 60,000 a year with QDAP premiums | None |
+| Withdrawal | At 65, or early on statutory grounds | Per scheme rules |
+| Vesting | Immediate | Employer voluntary contributions may vest by scale |
 
-Annual: Employee contributes $15,000 (deductible up to $18,000 cap for salaries tax).
+Tax benefit of TVC = contribution times the marginal salaries tax rate (2% to 17%, or 15% under the standard rate).
 
-### Example 2 -- High-Income Employee ($80,000/month)
+### Vesting
 
-**Example 2 -- High-Income Employee ($80,000/month)**
+Employee and employer mandatory contributions vest immediately; employer voluntary contributions may follow a vesting scale under scheme rules.
 
-| Party | Calculation | Monthly Amount |
-| --- | --- | --- |
-| Employer | 5% × $30,000 (capped) | $1,500 |
-| Employee | 5% × $30,000 (capped) | $1,500 |
-| Total to MPF account |  | $3,000 |
+### Edge cases
 
-Annual employee mandatory: $18,000 (fully deductible -- equals cap).
+- **Multiple Employments**: Each employer must contribute separately; Employee contributes 5% to each scheme; Combined employee contributions may exceed $18,000/year tax deduction cap; Tax deduction still capped at $18,000 for mandatory across all employments
+- **Employee Becomes Self-Employed**: Employee account becomes "preserved" on leaving employment; Self-employed opens new self-employed account; May consolidate accounts into one personal account; Previous employer contributions preserved until qualifying event
+- **Part-Time / Multiple Part-Time Jobs**: Each employer with ≥60 days employment must enrol; Income threshold ($7,100) applies per employment separately; Part-time worker earning $5,000 from employer A and $4,000 from employer B: Employer A: contributes 5% × $5,000 = $250; employee contributes $0 (below threshold); Employer B: contributes 5% × $4,000 = $200; employee contributes $0 (below threshold)
+- **Non-Monetary Benefits**: Non-cash benefits (housing, company car) are NOT relevant income for MPF; Only monetary payments count towards MPF calculation; Exception: if benefit is commutable to cash at employee's option, it may be relevant income
 
-### Example 3 -- Low-Income Employee ($6,000/month)
 
-**Example 3 -- Low-Income Employee ($6,000/month)**
+**End of offsetting (from 1 May 2025).** Employers can no longer use the MPF from employer mandatory contributions to offset severance or long service payments for service from 1 May 2025. For employees who started before and leave on or after that date, the employer may still use employer mandatory contributions (including accrued returns) to offset the part of the payment for service before 1 May 2025, and employer voluntary contributions for any part. The Labour Department's Subsidy Scheme for Abolition of MPF Offsetting Arrangement shares some of the employer cost. Correction: the old file said offsetting was still permitted in the "current position (2024/25)".
 
-| Party | Calculation | Monthly Amount |
-| --- | --- | --- |
-| Employer | 5% × $6,000 | $300 |
-| Employee | 0% (below $7,100 threshold) | $0 |
-| Total to MPF account |  | $300 |
+### Conservative defaults
 
-### Example 4 -- Self-Employed (Annual Profit $500,000)
+| Ambiguity | Default |
+| --- | --- |
+| Unknown relevant income | Treat as above the HKD 7,100 minimum until confirmed |
+| Unknown start date | Count 60 calendar days from the first day of employment |
+| Self-employed or employee | Check the control test; if ambiguous, treat as employee |
+| TVC or employer voluntary | Only TVC is tax-deductible |
 
-**Example 4 -- Self-Employed (Annual Profit $500,000)**
-
-| Basis | Calculation | Annual Amount |
-| --- | --- | --- |
-| Monthly equivalent | $500,000 / 12 = $41,667 |  |
-| Mandatory (capped) | 5% × $30,000 × 12 | $18,000/year |
-| Additional TVC (optional) | Up to $60,000 | Tax-deductible |
-| Maximum total |  | $78,000/year |
-
-## Section 5 -- Filing and Administrative
-
-### 5.1 Employer Obligations
-
-**5.1 Employer Obligations**
+## Deadlines and filing
 
 | Obligation | Deadline |
 | --- | --- |
-| Enrol new employee | Within 60 days of employment start |
-| Pay contributions | Within 10 days after end of contribution period (wage period) |
-| Provide pay-record | Monthly to employee showing MPF details |
-| Report cessation | Notify trustee of employee termination within 30 days |
-| Maintain records | 7 years |
+| Enrol new employee | Within the first 60 days of employment |
+| Pay contributions (monthly paid) | On or before the 10th day of the following month |
+| Pay records | Within 7 working days after contributing |
+| Notify changes of particulars to the eMPF Platform | Within 30 days |
+| SEP account | Within 60 days of becoming self-employed |
+| SEP annual benefit statement (issued by eMPF) | Within three months after the scheme's financial period |
 
-### 5.2 Penalties for Non-Compliance
+## Penalties and interest
 
-**5.2 Penalties for Non-Compliance**
+Failure to enrol an employee: fine up to HKD 350,000 and imprisonment for three years. Failure to pay contributions on or before the contribution day is an offence and the MPFA adds a contribution surcharge (the 5% rate and the other fines in the old file, HKD 350,000 for non-payment and deductions from wages, HKD 50,000 and 6 months for an SEP who fails to join, are not confirmed on an official page in this pass).
 
-| Offence | Penalty |
-| --- | --- |
-| Failure to enrol employee | Fine up to HK$350,000 + imprisonment up to 3 years |
-| Late contribution (employer) | 5% surcharge on outstanding amount |
-| Failure to pay contribution | Fine up to HK$350,000 + imprisonment up to 3 years |
-| Deducting from employee wages for employer share | Fine up to HK$350,000 + imprisonment up to 3 years |
-| Self-employed failure to join | Fine up to HK$50,000 + imprisonment up to 6 months |
+## Cross-border points
 
-### 5.3 Withdrawal Events (Mandatory + TVC)
+- Expatriates entering Hong Kong for employment may be exempt for the first 13 months; after that the employer must enrol them within 60 days.
+- Permanent departure from Hong Kong is a statutory ground for early withdrawal (statutory declaration and evidence).
+- Members of overseas retirement schemes may be exempt persons; check the MPFA list.
 
-**5.3 Withdrawal Events (Mandatory + TVC)**
+## Two worked examples that recompute
 
-| Event | Requirement |
-| --- | --- |
-| Retirement (age 65) | Full withdrawal permitted |
-| Early retirement (age 60) | Must provide statutory declaration of permanent cessation of employment |
-| Permanent departure from HK | Statutory declaration + evidence |
-| Total incapacity | Medical evidence |
-| Terminal illness | Medical evidence |
-| Small balance (account <$5,000) | No contributions for 12 months + statutory declaration |
-| Death | Paid to estate/beneficiary |
+**Example 1: three employees, monthly contributions for 2026.** A earns HKD 25,000: employer 1,250, employee 1,250. B earns 80,000: each capped at 1,500. C earns 6,000: employer 300, employee nothing. Total employer cost: 3,050 a month; employee deductions: 2,750.
 
-## Section 6 -- Edge Cases
+```oa-check
+name: HK 2026 MPF mandatory contributions, three pay levels
+inputs:
+  a: 25000
+  b: 80000
+  c: 6000
+steps:
+  - er_a: min(a, 30000) * 0.05
+  - er_b: min(b, 30000) * 0.05
+  - er_c: min(c, 30000) * 0.05
+  - ee_a: min(a, 30000) * 0.05
+  - ee_b: min(b, 30000) * 0.05
+  - ee_c: 0
+  - employer_total: er_a + er_b + er_c
+  - employee_total: ee_a + ee_b + ee_c
+expected:
+  employer_total: 3050
+  employee_total: 2750
+```
 
-### 6.1 Multiple Employments
+**Example 2: decision, put HKD 60,000 into TVC.** A taxpayer on the progressive rates with net chargeable income well above HKD 200,000 (marginal 17%) saves HKD 10,200 of salaries tax by contributing the full HKD 60,000 as TVC. A taxpayer on the 15% standard rate saves HKD 9,000. The money is locked until 65 (or a statutory ground); the deciding figures are the marginal rate and whether the money is needed before 65. A self-employed person with HKD 500,000 profit pays mandatory 18,000 (5% of 30,000 times 12) and can add up to 60,000 TVC: 78,000 deductible in total.
 
-- **Multiple Employments** — Each employer must contribute separately; Employee contributes 5% to each scheme; Combined employee contributions may exceed $18,000/year tax deduction cap; Tax deduction still capped at $18,000 for mandatory across all employments
+```oa-check
+name: HK 2026/27 TVC tax saving at 17% and 15%
+inputs:
+  tvc: 60000
+steps:
+  - saving_progressive: tvc * 0.17
+  - saving_standard: tvc * 0.15
+  - sep_mandatory: 30000 * 0.05 * 12
+  - sep_total_deductible: sep_mandatory + tvc
+expected:
+  saving_progressive: 10200
+  saving_standard: 9000
+  sep_mandatory: 18000
+  sep_total_deductible: 78000
+```
 
-### 6.2 Employee Becomes Self-Employed
+## Ask the client first
 
-- **Employee Becomes Self-Employed** — Employee account becomes "preserved" on leaving employment; Self-employed opens new self-employed account; May consolidate accounts into one personal account; Previous employer contributions preserved until qualifying event
+1. Employee or self-employed; age; start date.
+2. Monthly relevant income, and wage period if not monthly.
+3. Any exemption (domestic employee, ORSO scheme, expatriate within 13 months).
+4. For a leaver: start date and whether severance or long service payment is due (offsetting rules).
+5. Voluntary contributions wanted, and the marginal salaries tax rate.
 
-### 6.3 Part-Time / Multiple Part-Time Jobs
+## Sources
 
-- **Part-Time / Multiple Part-Time Jobs** — Each employer with ≥60 days employment must enrol; Income threshold ($7,100) applies per employment separately; Part-time worker earning $5,000 from employer A and $4,000 from employer B: Employer A: contributes 5% × $5,000 = $250; employee contributes $0 (below threshold); Employer B: contributes 5% × $4,000 = $200; employee contributes $0 (below threshold)
+| Source | URL | Read on |
+| --- | --- | --- |
+| MPFA, mandatory contributions for employees. Read for the 5% rates, the 7,100 and 30,000 levels, HKD 1,500 cap and daily levels | https://www.mpfa.org.hk/en/mpf-system/mandatory-contributions/employees | 2026-11-14 |
+| MPFA, enrolment and termination. Read for the 60-day rule, Industry Scheme 10 days and the HKD 350,000 fine | https://www.mpfa.org.hk/en/mpf-system/enrolment-and-termination | 2026-11-14 |
+| MPFA, MPF coverage. Read for ages 18 to 64, casual employees and exemptions | https://www.mpfa.org.hk/en/mpf-system/mpf-coverage | 2026-11-14 |
+| MPFA, voluntary contributions and TVC. Read for the HKD 60,000 cap and the 10th-day contribution day | https://www.mpfa.org.hk/en/mpf-system/voluntary-contributions-or-tax-deductible-voluntary-contributions | 2026-11-14 |
+| MPFA, self-employed persons. Read for monthly and yearly contribution days | https://www.mpfa.org.hk/en/mpf-system/mandatory-contributions/self-employed-persons | 2026-11-14 |
+| MPFA, long service and severance payments. Read for the 1 May 2025 abolition of offsetting | https://www.mpfa.org.hk/en/mpf-system/long-service-and-severance-payments | 2026-11-14 |
+| MPFA, withdrawal of MPF. Read for age 65 and statutory grounds | https://www.mpfa.org.hk/en/mpf-system/withdrawal-of-mpf | 2026-11-14 |
+| MPFA, enforcement against employers. Read for contribution day, pay records and 30-day notices | https://www.mpfa.org.hk/en/enforcement/enforcement-against-employers | 2026-11-14 |
+| IRD, A brief guide to taxes 2025/26 (PDF). Read for the HKD 18,000 deduction cap | https://www.ird.gov.hk/eng/pdf/2026/BriefGuide20252026.pdf | 2026-11-14 |
 
-### 6.4 Non-Monetary Benefits
+Not yet confirmed: the contribution surcharge rate (old file: 5%) and the fines for non-payment (HKD 350,000) and SEP failure to join (HKD 50,000 and 6 months); record-keeping period (old file: 7 years); the early withdrawal grounds in detail (early retirement at 60, permanent departure, incapacity, terminal illness, small balance under HKD 5,000, death) as listed in the old file; MPFSO and IRO section references in the old reference table.
 
-- **Non-Monetary Benefits** — Non-cash benefits (housing, company car) are NOT relevant income for MPF; Only monetary payments count towards MPF calculation; Exception: if benefit is commutable to cash at employee's option, it may be relevant income
-
-### 6.5 MPF Offset Mechanism
-
-**6.5 MPF Offset Mechanism**
-
-| Item | Rule |
-| --- | --- |
-| Severance payment offset | Employer may offset SP against employer MPF contributions (from accrued benefits derived from employer contributions) |
-| Long service payment offset | Same as above |
-| Abolition (planned) | Government announced phased abolition from 2025 -- transition period applies |
-| Current position (2024/25) | Offset still permitted during transition |
-
-## Section 7 -- MPFA Approved Schemes
-
-**Section 7 -- MPFA Approved Schemes**
-
-| Scheme Type | Description |
-| --- | --- |
-| Master Trust Scheme | Most common; pooled scheme managed by trustees (e.g., Manulife, AIA, HSBC, Sun Life) |
-| Employer-Sponsored Scheme | Set up by single employer for its employees |
-| Industry Scheme | For casual employees in construction and catering |
-
-Current approved trustees (major):
-- HSBC Provident Fund Trustee
-- Manulife (International) Limited
-- AIA Company (Trustee)
-- Sun Life Trustee Company
-- Bank Consortium Trust Company
-- BOCI-Prudential Trustee Limited
-
-## Section 8 -- Reference Material
-
-**Section 8 -- Reference Material**
-
-| Topic | Reference |
-| --- | --- |
-| MPFSO (full ordinance) | Cap. 485, Laws of Hong Kong |
-| Contribution rules | MPFSO Sec. 7A, 7C, Schedule 2 |
-| Relevant income | MPFSO Sec. 2, Schedule 1 |
-| Self-employed | MPFSO Sec. 6C, 7D |
-| Tax deduction (TVC) | IRO Sec. 26J |
-| Tax deduction (mandatory) | IRO Sec. 12(1)(e) |
-| Enrolment | MPFSO Sec. 7, 7A |
-| Penalties | MPFSO Sec. 43A, 43B, 43E |
-| Withdrawal | MPFSO Schedule 1, Part 1--8 |
-| Offset | MPFSO Sec. 12A, Schedule 12 |
-| MPFA official site | mpfa.org.hk |
-| Fund performance | MPFA Fund Performance Platform |
-| Minimum/maximum income | Government Gazette (updated periodically) |
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a Hong Kong CPA, MPF intermediary, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
+**Reference (from the old file, section numbers not re-checked):** MPFSO Cap. 485 ss. 2, 6C, 7, 7A, 7C, 7D, 12A, 43A, 43B, 43E, Schedules 1, 2 and 12; IRO s. 12(1)(e) and the TVC provisions. Major approved trustees named in the old file (HSBC Provident Fund Trustee, Manulife, AIA, Sun Life, Bank Consortium Trust, BOCI-Prudential) and scheme types (master trust, employer-sponsored, industry) remain as listed on the MPFA site.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-07-13. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `hk-mpf` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/hk-mpf. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `hk-mpf` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/hk-mpf. If neither is available, confirm every figure against the official source pages cited above before relying on it.

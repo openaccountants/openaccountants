@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/ug-corporate-income-tax"
   jurisdiction: "UG"
   tax_year: "2026"
-  last_updated: "2026-11-01"
+  last_updated: "2026-11-14"
 ---
 
-# Uganda Corporate Income Tax v0.2
+# Uganda Corporate Income Tax v0.3
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -103,15 +103,15 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| URA, Tax Amendments FY 2026-27 handbook (36-page PDF, all read); printed before the Income Tax and Excise Acts were assented | https://ura.go.ug/en/download/tax-amendments-fy-2026-2027/ | 2026-11-01 |
-| URA notice, effective date of Income Tax (Amendment) Act 2026, 23 Sep 2026 | https://ura.go.ug/en/effective-date-of-the-income-tax-amendment-act-2026-and-the-excise-duty-amendment-act-2026/ | 2026-11-01 |
-| URA, File a Tax Return page (still shows the old UGX 2,820,000 threshold) | https://ura.go.ug/en/domestic-taxes/returns/ | 2026-11-01 |
-| URA compendium of domestic tax laws, as of July 2021: ITA Cap 340, VAT Act Cap 349 (only the sections cited; old numbering) | https://ura.go.ug/en/download/compendium-for-various-domestic-tax-laws/ | 2026-11-01 |
-| Income Tax Act, ULII consolidated text at 2024-12-23 (read in a browser: Schedule tables and rate lines only) | https://ulii.org/akn/ug/act/1997/11/eng@2024-12-23 | 2026-11-01 |
-| URA, Object to Tax Assessment | https://ura.go.ug/en/domestic-taxes/objection-appeals/object-to-tax-assessment/ | 2026-11-01 |
+| URA, Tax Amendments FY 2026-27 handbook (36-page PDF, printed before the Income Tax and Excise Acts were assented): read in full on 2026-11-01. Reopened 2026-11-14: the download now returns a damaged PDF, so not re-read | https://ura.go.ug/en/download/tax-amendments-fy-2026-2027/ | 2026-11-14 (opened, not re-read) |
+| URA notice, effective date of Income Tax (Amendment) Act 2026, 23 Sep 2026: read in full | https://ura.go.ug/en/effective-date-of-the-income-tax-amendment-act-2026-and-the-excise-duty-amendment-act-2026/ | 2026-11-14 |
+| URA, File a Tax Return page: read in full (it still shows the old UGX 2,820,000 threshold) | https://ura.go.ug/en/domestic-taxes/returns/ | 2026-11-14 |
+| URA compendium of domestic tax laws, as of July 2021 (ITA Cap 340, VAT Act Cap 349, old numbering): read for the sections cited on 2026-11-01; the download page reopened 2026-11-14 | https://ura.go.ug/en/download/compendium-for-various-domestic-tax-laws/ | 2026-11-14 (page opened, sections not re-read) |
+| Income Tax Act, ULII consolidated text at 2024-12-23: read in a browser for the Schedule tables and rate lines on 2026-11-01 | https://ulii.org/akn/ug/act/1997/11/eng@2024-12-23 | 2026-11-01; tried again 2026-11-14, ulii.org refused the script (403) |
+| URA, Object to Tax Assessment: read in full | https://ura.go.ug/en/domestic-taxes/objection-appeals/object-to-tax-assessment/ | 2026-11-14 |
 
 Not yet confirmed: loss restriction (old file: 50% restriction beyond 7 years; not found in the text searched); 0% on dividends where a resident company holds 25% or more of the voting power; 15% management fee row wording and the UGX 1,000,000 threshold on the 6% designated agent rate; branch remittance section number in the 2024 revised text; the enacted Income Tax (Amendment) Act 2026 text; TP documentation rules.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-01. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ug-corporate-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ug-corporate-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ug-corporate-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ug-corporate-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/gm-corporate-income-tax"
   jurisdiction: "GM"
   tax_year: "2026"
-  last_updated: "2026-11-01"
+  last_updated: "2026-11-14"
 ---
 
 # Gambia Corporate Income Tax
@@ -26,8 +26,6 @@ Basis for 2026: the rows below come from the GRA and SSHFC pages live on 1 Novem
 | Fringe benefits tax | 27%, on the employer | 2026 | https://www.gra.gm/domestic-faqs |
 | Capital gains, companies, partnerships, trustees | Higher of 25% of the gain or 10% of the consideration | 2026 | https://www.gra.gm/domestic-faqs |
 | Dividends | 15% of gross, final | 2026 | https://www.gra.gm/download-file/8d0c84c3-d217-11ed-9b31-029254d29bb1 |
-| Contracts: resident | unverified: GRA FAQ says 10%, brochure says 8% | 2026 | https://www.gra.gm/domestic-faqs |
-| Contracts: non-resident | unverified: GRA FAQ says 15%, brochure says 10% | 2026 | https://www.gra.gm/domestic-faqs |
 | Public works for government, resident contractor | 5% | 2026 | https://www.gra.gm/download-file/8d0d0925-d217-11ed-9b31-029254d29bb1 |
 | Air tickets | 1% | 2026 | https://www.gra.gm/download-file/8d0d0925-d217-11ed-9b31-029254d29bb1 |
 | Rent: commercial | 15% of gross | 2026 | https://www.gra.gm/domestic-faqs |
@@ -125,4 +123,4 @@ Not yet confirmed: The Income and Value Added Tax Act 2012 and any 2026 amendmen
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-01. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `gm-corporate-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/gm-corporate-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `gm-corporate-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/gm-corporate-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

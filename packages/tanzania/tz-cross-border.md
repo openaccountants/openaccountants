@@ -5,14 +5,15 @@ description: >
 jurisdiction: TZ
 category: cross-border
 tax_year: 2026
-last_updated: 2026-11-01
-version: 0.1
+last_updated: 2026-11-14
+type: situation-rules
+version: 0.2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: cross-border
 ---
 
-# Tanzania cross-border tax v0.1
+# Tanzania cross-border tax v0.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -47,14 +48,14 @@ Treaty ceilings, from the treaties TRA publishes ([list](https://www.tra.go.tz/r
 | Partner | Dividends | Interest | Royalties | Management or technical fees | Source |
 |---|---|---|---|---|---|
 | Canada | 20% (15% voting) / 25% | 15% | 20% | 20% | [Treaty](https://www.tra.go.tz/images/uploads/agreements/canada.pdf) |
-| Denmark | 15% | 12.5% | 20% | 20% | [Treaty](https://www.tra.go.tz/images/uploads/agreements/Denmark.pdf) |
+| Denmark | 15% | twelve and a half percent (printed 12 1/2) | 20% | 20% | [Treaty](https://www.tra.go.tz/images/uploads/agreements/Denmark.pdf) |
 | Finland | 20% | 15% | 20% | 20% | [Treaty](https://www.tra.go.tz/images/uploads/agreements/Finland.pdf) |
 | India | 10% (10% holding) / 15% | 12.5% | 20% | 20% | [Treaty](https://www.tra.go.tz/images/uploads/agreements/India.pdf) |
 | Italy | 10% | 15% | 15% | Taxable in both, no cap | [Treaty](https://www.tra.go.tz/images/uploads/agreements/Italy.pdf) |
 | Norway | 20% | 15% | 20% | 20% | [Treaty](https://www.tra.go.tz/images/uploads/agreements/Norway_1.pdf) |
 | South Africa | 10% (15% capital) / 20% | 10% | 10% | No article found | [Treaty](https://www.tra.go.tz/images/uploads/agreements/Southafrica.pdf) |
 | Sweden | 15% (25% voting) / 25% | 15% | 20% | 20% | [Treaty](https://www.tra.go.tz/images/uploads/agreements/Sweden.pdf) |
-| Zambia | No rate ceiling | No rate ceiling | No rate ceiling | Unverified | [Treaty](https://www.tra.go.tz/images/uploads/agreements/Zambia.pdf) |
+| Zambia | No rate ceiling | No rate ceiling | No rate ceiling | No article found (1968 treaty, read 2026-11-14) | [Treaty](https://www.tra.go.tz/images/uploads/agreements/Zambia.pdf) |
 
 Treaty terms prevail to the extent the Act provides in s.154. We read TRA's list, not an entry-into-force record, so confirm a treaty is in force for the year before relying on it. No treaty raises a domestic rate, so a 20% ceiling on a 15% service fee leaves 15%.
 
@@ -128,7 +129,7 @@ expected:
 
 ## Sources
 
-All read on 2026-11-01. Unverified: Zambia fees, the entry-into-force status of each treaty, and the 2026 consolidated numbering of First Schedule para 4(b).
+All read on 2026-11-01; the Zambia treaty reread on 2026-11-14 (no fees article). Unverified: the entry-into-force status of each treaty, and the 2026 consolidated numbering of First Schedule para 4(b).
 
 | Source | Link | Read |
 |---|---|---|
@@ -141,4 +142,4 @@ All read on 2026-11-01. Unverified: Zambia fees, the entry-into-force status of 
 | TRA Digital Service Tax | https://www.tra.go.tz/page/digital-service-tax | 2026-11-01, sections on rates and filing |
 | TRA Double taxation agreements | https://www.tra.go.tz/resource-center/9 | 2026-11-01, sections on rates and filing |
 
-Not yet confirmed: entry-into-force status of each treaty; Zambia fees; consolidated numbering of First Schedule para 4(b) after the Finance Act 2026.
+Not yet confirmed: entry-into-force status of each treaty; consolidated numbering of First Schedule para 4(b) after the Finance Act 2026.

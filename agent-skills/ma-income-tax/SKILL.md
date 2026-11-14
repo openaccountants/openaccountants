@@ -1,229 +1,232 @@
 ---
 name: ma-income-tax
-description: "Use this skill whenever asked about Massachusetts individual income tax. Trigger on phrases like \"Massachusetts income tax\", \"MA income tax\", \"Form 1\", \"Mass DOR\", \"M.G.L. c. 62\", \"millionaire's tax\", \"MA surtax\". Massachusetts has a flat 5% rate plus a 4% surtax on income over ~$1M (inflation-adjusted). ALWAYS load us-tax-workflow-base first."
+description: "Compute Massachusetts resident personal income tax for 2026 on Form 1, for employees, sole proprietors and single-member LLC owners. Covers the Part A, Part B and Part C income classes, the 5% rate, 8.5% on short-term capital gains, 12% on long-term collectible gains, the personal exemptions, the rent and FICA deductions, and the 4% surtax on taxable income over the 2026 threshold of $1,107,750. Trigger on \"Massachusetts income tax\", \"MA income tax\", \"Form 1\", \"Mass DOR\", \"M.G.L. c. 62\", \"millionaires tax\", \"Fair Share surtax\", \"MA surtax\". Load us-tax-workflow-base first. Massachusetts only, federal figures are in the federal skills."
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/ma-income-tax"
   jurisdiction: "US-MA"
-  tax_year: "2025"
-  last_updated: "2026-07-13"
+  tax_year: "2026"
+  last_updated: "2026-11-13"
 ---
 
-# MA Income Tax
+# Massachusetts personal income tax, tax year 2026
 
-## Massachusetts Individual Income Tax Skill — Self-Employed / Sole Proprietor
+> **Source-cited draft.** Built from the Massachusetts Department of Revenue (DOR) pages on tax rates, the 4% surtax, personal exemptions, the rent deduction and who must file, the 2026 Form 1-ES, the January 2026 Circular M, the DOR pass-through entity excise page and M.G.L. c. 62, sections 3 and 4, read on 2026-11-13. No accountant has reviewed it. All outputs must be reviewed by a qualified tax professional before filing.
 
-> **Scope.** This skill covers Massachusetts Form 1 (Resident Income Tax Return) for sole proprietors and single-member LLCs. It addresses the flat 5% income tax, the 4% millionaire's surtax, and Massachusetts-specific income classifications. It does NOT cover nonresident/part-year returns (Form 1-NR/PY), corporate excise (Form 355), or trust/estate returns (Form 2).
+**Answer first.** For 2026, Massachusetts taxes Part B income (wages, business income, rents, pensions) and Part A interest and dividends at **5%**, Part A short-term capital gains at **8.5%**, Part C long-term capital gains at **5%**, and long-term gains on collectibles at **12%** (with a 50% deduction). On top, a **4% surtax** applies to the part of total taxable income (Part A plus Part B plus Part C, any negative part counted as zero) above **$1,107,750**. The threshold is the same for a single filer and a married couple filing jointly. There is no standard deduction: a single filer gets a **$4,400** personal exemption, a married couple filing jointly **$8,800**, a head of household **$6,800**, plus **$1,000** per dependent. Massachusetts has no local income tax.
 
-> **Quality tier.** Q3 — AI-drafted, not independently verified. All outputs must be reviewed by a qualified tax professional before filing.
-
-## Section 1: Metadata
-
-**Metadata**
+## Scope
 
 | Field | Value |
 | --- | --- |
-| Jurisdiction | Massachusetts (US-MA) |
-| Tax authority | [Massachusetts Department of Revenue (DOR)](https://www.mass.gov/orgs/massachusetts-department-of-revenue) |
-| Filing portal | [MassTaxConnect](https://mtc.dor.state.ma.us/) |
-| Legislation | M.G.L. Chapter 62 — Taxation of Incomes |
-| Primary form | Form 1 (Massachusetts Resident Income Tax Return) |
-| Filing deadline | April 15, 2027 (for tax year 2026) |
-| Version | 0.1 |
-| Date | May 22, 2026 |
-| Validation status | AI-drafted — Q3 |
+| Jurisdiction | Massachusetts (US-MA), [DOR](https://www.mass.gov/orgs/massachusetts-department-of-revenue) |
+| Tax authority | [Massachusetts Department of Revenue](https://www.mass.gov/orgs/massachusetts-department-of-revenue) |
+| Portal | [MassTaxConnect](https://mtc.dor.state.ma.us/mtc/_/) |
+| Law | [M.G.L. c. 62](https://malegislature.gov/Laws/GeneralLaws/PartI/TitleIX/Chapter62/Section4) (taxation of incomes), c. 62B (withholding and estimates), c. 62C (administration) |
+| Main form | Form 1 (resident return); [Form 1-ES](https://www.mass.gov/doc/2026-form-1-es-estimated-tax-payment-vouchers-instructions-and-worksheets/download) (estimates) |
 
-### Sources consulted
+Covers full-year residents filing Form 1: wage earners, sole proprietors and owners of single-member LLCs disregarded for federal tax whose Schedule C profit lands in Part B. Covers the 4% surtax for every chapter 62 taxpayer, and the credit a member claims for a pass-through entity excise paid on their behalf.
 
-1. Massachusetts DOR — Tax Rates: <https://www.mass.gov/service-details/tax-rates>
-2. Massachusetts DOR — Personal Income Tax for Residents: <https://www.mass.gov/guides/personal-income-tax-for-residents>
-3. Massachusetts DOR — 4% Surtax on Taxable Income: <https://www.mass.gov/info-details/4-surtax-on-taxable-income-over-1000000>
-4. M.G.L. c. 62, §§ 4, 5, 5A
-5. Article 44 of the Massachusetts Constitution (as amended by 2022 ballot question — "Fair Share Amendment")
+Not covered: nonresident and part-year returns on Form 1-NR/PY beyond the surtax point below; trusts and estates (Form 2); the entity side of the pass-through entity excise (see `ma-corporate-excise`); employer withholding (see `us-ma-payroll`); estate tax. Federal income tax, self-employment tax and FICA are in the federal skills (`us-schedule-c-and-se-computation`, `us-form-1040-individual-return`); Massachusetts figures only are stated here.
 
-## Section 2: Quick reference — rates and thresholds
+## Ask the client first
 
-### Income tax rates
+1. Residency for the whole of 2026: home in Massachusetts all year, or a Massachusetts home kept and more than 183 days spent in the state? If neither, this is a Form 1-NR/PY case.
+2. Federal filing status. A couple filing jointly federally must file jointly in Massachusetts.
+3. The income split: wages and business profit (Part B), interest and dividends (Part A), short-term gains (Part A), long-term gains (Part C), long-term gains on collectibles.
+4. Rent paid on a Massachusetts principal residence, dependents, age 65 or blindness at 31 December 2026.
+5. Whether total taxable income may pass $1,107,750 (surtax, electronic filing, estimate planning), and whether a pass-through entity the client owns elected the chapter 63D or 63E excise.
+6. Health coverage for each month of 2026 (Schedule HC).
 
-**Income tax rates**
+## The method, step by step
 
-| Income type | Rate | Source |
-| --- | --- | --- |
-| Part A income (interest, dividends, capital gains from non-MA obligations) | 5.00% | M.G.L. c. 62, § 4(a) |
-| Part B income (wages, salaries, self-employment, most other income) | 5.00% | M.G.L. c. 62, § 4(b) |
-| Part C income (short-term capital gains) | 8.50% (subject to 50% deduction, effective rate ~12%) | M.G.L. c. 62, § 4(c) |
-| Long-term capital gains | 5.00% | M.G.L. c. 62, § 4(b) |
+### Rates, bands and thresholds
 
-### Millionaire's surtax (4% additional tax)
+| Item | 2026 figure | Condition | Source |
+| --- | --- | --- | --- |
+| Part B income: wages, business, rents, pensions and other income | 5.00% | All Part B taxable income | [DOR tax rates](https://www.mass.gov/info-details/massachusetts-tax-rates) |
+| Part A interest and dividends | 5.00% | Interest and dividends other than Massachusetts bank interest | [DOR tax rates](https://www.mass.gov/info-details/massachusetts-tax-rates) |
+| Part A short-term capital gains | 8.5% | Capital assets held 1 year or less | [DOR tax rates](https://www.mass.gov/info-details/massachusetts-tax-rates); [M.G.L. c. 62, s. 4](https://malegislature.gov/Laws/GeneralLaws/PartI/TitleIX/Chapter62/Section4) |
+| Long-term gains on collectibles | 12.00%, subject to a 50% deduction | Collectibles held more than 1 year | [DOR tax rates](https://www.mass.gov/info-details/massachusetts-tax-rates) |
+| Part C long-term capital gains | 5.00% | Capital assets held more than 1 year, other than collectibles | [DOR tax rates](https://www.mass.gov/info-details/massachusetts-tax-rates) |
+| 4% surtax threshold | $1,107,750 | Tax year 2026; one threshold per return, joint returns included | [DOR 4% surtax](https://www.mass.gov/info-details/4-surtax-on-taxable-income-over-1000000) |
+| 4% surtax threshold, earlier years | $1,083,150 (2025); $1,053,750 (2024); $1,000,000 (2023) | For amended or late returns only | [DOR 4% surtax](https://www.mass.gov/info-details/4-surtax-on-taxable-income-over-1000000) |
+| Personal exemption, single or married filing separately | $4,400 | Allowed whether or not a federal exemption is allowed | [DOR personal exemptions](https://www.mass.gov/info-details/massachusetts-personal-income-tax-exemptions) |
+| Personal exemption, head of household | $6,800 | Head of household status | [DOR personal exemptions](https://www.mass.gov/info-details/massachusetts-personal-income-tax-exemptions) |
+| Personal exemption, married filing jointly | $8,800 | Joint return | [DOR personal exemptions](https://www.mass.gov/info-details/massachusetts-personal-income-tax-exemptions) |
+| Dependent exemption | $1,000 each | Qualifying child or qualifying relative, not you or your spouse | [DOR personal exemptions](https://www.mass.gov/info-details/massachusetts-personal-income-tax-exemptions) |
+| Age 65 or over exemption | $700 each | Age 65 on or before 31 December 2026; each spouse on a joint return | [DOR personal exemptions](https://www.mass.gov/info-details/massachusetts-personal-income-tax-exemptions) |
+| Blindness exemption | $2,200 each | Legally blind at the end of the year | [DOR personal exemptions](https://www.mass.gov/info-details/massachusetts-personal-income-tax-exemptions) |
+| Rent deduction | 50% of rent paid, at most $4,000 ($2,000 per return if married filing separately) | Rent to a landlord for a Massachusetts principal residence | [DOR rent deduction](https://www.mass.gov/info-details/deductions-on-rent-paid-in-massachusetts) |
+| Deduction for Social Security (FICA), Medicare and public retirement contributions | At most $2,000 a year | Amounts withheld for FICA, Medicare, Massachusetts, US or Railroad Retirement systems | [M.G.L. c. 62, s. 3](https://malegislature.gov/Laws/GeneralLaws/PartI/TitleIX/Chapter62/Section3); [Circular M 2026](https://www.mass.gov/doc/massachusetts-circular-m-income-tax-withholding-tables-at-50-effective-january-1-2026/download) |
+| Filing threshold | Massachusetts gross income of more than $8,000 | Full-year and part-year residents | [DOR who must file](https://www.mass.gov/info-details/who-must-file-a-massachusetts-personal-income-tax-return) |
+| Estimated tax trigger | More than $400 of tax on income not subject to withholding | Form 1-ES, 2026 | [2026 Form 1-ES](https://www.mass.gov/doc/2026-form-1-es-estimated-tax-payment-vouchers-instructions-and-worksheets/download) |
+| Extension payment | 80% of the tax due, surtax included, by the original due date | For a valid automatic extension | [DOR 4% surtax](https://www.mass.gov/info-details/4-surtax-on-taxable-income-over-1000000) |
+| Pass-through entity excise credit | 90% of the member's share of chapter 63D or 63E excise actually paid | Qualified member of an electing entity | [DOR elective PTE excise](https://www.mass.gov/info-details/elective-pass-through-entity-excise) |
 
-**Millionaire's surtax thresholds**
+### Step 1. Classify each item of income
 
-| Tax year | Surtax threshold | Source |
-| --- | --- | --- |
-| 2023 | $1,000,000 | Article 44 |
-| 2024 | $1,053,750 | Inflation-adjusted |
-| 2025 | $1,083,150 | Inflation-adjusted |
-| 2026 | TBD (inflation-adjusted, typically announced late in preceding year) | M.G.L. c. 62, § 5A |
-
-- **Surtax application** — The 4% surtax applies only to the portion of taxable income exceeding the threshold. For a taxpayer with $1,100,000 in TY2025 taxable income, the surtax applies to $16,850 ($1,100,000 − $1,083,150).  _(M.G.L. c. 62, § 5A)_
-
-### Deductions and exemptions
-
-Massachusetts does **not** use a standard deduction in the federal sense. Instead, it provides:
-
-**Deductions and exemptions table**
-
-| Item | Amount (TY2025) | Source |
-| --- | --- | --- |
-| Personal exemption — Single | $4,400 | M.G.L. c. 62, § 3(B)(a) |
-| Personal exemption — Head of Household | $6,800 | M.G.L. c. 62, § 3(B)(b)(2) |
-| Personal exemption — MFJ | $8,800 | M.G.L. c. 62, § 3(B)(b)(1) |
-| Dependent deduction | $1,000 per dependent | M.G.L. c. 62, § 3(B)(a)(3) |
-| Rental deduction | 50% of rent paid, max $3,000 | M.G.L. c. 62, § 3(B)(a)(9) |
-
-### Filing threshold
-
-- **Filing threshold** — $8,000 of Massachusetts gross income USD (Everyone whose Massachusetts gross income is $8,000 or more must file.)
-
-## Section 3: How this skill works with the federal return
-
-### Starting point
-
-- **Income classification system** — Massachusetts uses its own income classification system rather than starting directly from federal AGI. However, the computation references federal Form 1040 amounts extensively. Massachusetts income is divided into three parts: - **Part A:** Interest, dividends, and net capital gains on non-Massachusetts obligations - **Part B:** Wages, salaries, self-employment income, pensions, annuities, and most other income - **Part C:** Short-term capital gains and gains on collectibles
-
-### Key differences from federal
-
-**Key differences from federal table**
-
-| Item | Massachusetts treatment | Source |
-| --- | --- | --- |
-| No standard deduction | MA uses personal exemptions and specific deductions instead | M.G.L. c. 62, § 3 |
-| Social Security | Fully exempt | M.G.L. c. 62, § 2(a)(2)(E) |
-| Interest from MA obligations | Exempt | M.G.L. c. 62, § 2 |
-| Interest from other states | Taxable (add back any federal exclusions) | M.G.L. c. 62, § 2 |
-| Short-term capital gains | Taxed at 8.50% (not the standard 5%) | M.G.L. c. 62, § 4(c) |
-
-### Resulting computation
-
-- **Computation order** — Compute Part A, Part B, and Part C income separately → subtract applicable deductions and exemptions → apply the appropriate rate to each part → sum = Massachusetts gross tax → minus credits → plus 4% surtax if applicable.
-
-## Section 4: Self-employed specific rules
-
-### Estimated tax payments
-
-- **Estimated tax payment obligation** — Self-employed individuals must make quarterly estimated tax payments if they expect to owe $400 or more.
-
-**Estimated tax payment due dates**
-
-| Voucher | Due date |
+| Class | What goes in it |
 | --- | --- |
-| 1st quarter | April 15 |
-| 2nd quarter | June 15 |
-| 3rd quarter | September 15 |
-| 4th quarter | January 15 (following year) |
+| Part A | Short-term capital gains, long-term gains on collectibles, interest and dividends other than Massachusetts bank interest |
+| Part B | Everything not in Part A or Part C: wages, Schedule C profit, rents, pensions, Massachusetts bank interest |
+| Part C | Long-term capital gains other than collectibles |
 
-Use Form 1-ES for estimated payments.
+Typical bank-feed and document patterns: freelance or 1099-NEC income and Schedule E rents go to Part B; brokerage short-term gains to Part A at 8.5%; brokerage long-term gains to Part C at 5%; interest and dividends to Part A at 5%; pensions to Part B; Social Security is not taxed.
 
-### Self-employment health insurance
+Schedule C profit of a sole proprietor or disregarded single-member LLC is Part B income; Massachusetts follows the federal home office and self-employed health insurance and retirement treatment as Part B items. Interest on US obligations is not taxed. Interest on another state's bonds is taxed; interest on Massachusetts bonds is not. Massachusetts does not use the federal qualified business income deduction.
 
-- **Self-employment health insurance** — Massachusetts generally follows federal treatment — the deduction is taken as a Part B deduction.
+### Step 2. Compute Part B taxable income
 
-### Retirement contributions (SEP, SIMPLE, Solo 401(k))
+Part B income, less Part B deductions (the FICA and retirement deduction up to $2,000, the rent deduction, the self-employed health insurance and retirement deductions as allowed), less exemptions (personal, dependent, age, blindness, adoption fees). Part B losses may offset business-related capital gains only as chapter 62 allows; otherwise one part does not reduce another.
 
-- **Retirement contributions** — Massachusetts generally follows federal treatment — these deductions reduce Part B income.
+### Step 3. Compute Part A and Part C taxable income
 
-### Home office deduction
+Part A: interest and dividends at 5%, short-term gains at 8.5%, long-term collectible gains at 12% after the 50% deduction. Part C: long-term gains at 5%.
 
-- **Home office deduction** — Massachusetts follows the federal home office deduction as part of Schedule C.
+### Step 4. Add the 4% surtax
 
-### QBI deduction (Section 199A)
+Add Part A, Part B and Part C taxable income, treating any negative part as zero. Subtract $1,107,750. Multiply the excess by 4%. Nonresidents and part-year residents measure the same way on their Massachusetts-source taxable income on Form 1-NR/PY.
 
-- **QBI deduction disallowed** — Massachusetts does not allow the federal QBI deduction. Massachusetts has its own income computation that does not incorporate the QBI deduction.
+### Step 5. Credits and payments
 
-### Health insurance mandate
+Subtract credits: credit for taxes paid to other jurisdictions (the surtax raises the Massachusetts tax on doubly taxed income, but the surtax may not simply be added to that income), the 90% credit for chapter 63D or 63E excise paid by an electing entity, and the refundable credits. Then subtract withholding and Form 1-ES payments.
 
-- **Health insurance mandate** — Massachusetts has an individual health insurance mandate (separate from the ACA). Failure to maintain minimum creditable coverage may result in a penalty assessed on Form 1 (Schedule HC). This is relevant for self-employed individuals who must obtain their own coverage.
+### How the result flows on
 
-## Section 5: Tier 1 rules — deterministic
+Total tax is entered on Form 1 with the surtax shown separately. Taxpayers subject to the surtax must file and pay electronically. Health coverage is reported on Schedule HC: Massachusetts has its own individual coverage mandate, separate from the federal rules, and self-employed people buying their own cover should check it.
 
-**Tier 1 rules table**
+## Boundary and exception table
 
-| Rule | Description |
-| --- | --- |
-| R-1 | Apply 5% to Part A and Part B income. Apply 8.50% to Part C (short-term capital gains). |
-| R-2 | Apply the 4% surtax on total taxable income exceeding the inflation-adjusted threshold ($1,083,150 for TY2025). |
-| R-3 | Social Security is fully exempt. |
-| R-4 | Interest from U.S. obligations is exempt. |
-| R-5 | Interest from Massachusetts municipal bonds is exempt; interest from other states' bonds is taxable. |
-| R-6 | Massachusetts does NOT have a standard deduction — use the personal exemption system. |
-| R-7 | Long-term capital gains are taxed at 5%, NOT the short-term rate. |
-| R-8 | Massachusetts has NO local/county income taxes. Only the state tax applies. |
-| R-9 | Filing threshold: $8,000 of MA gross income. |
-
-## Section 6: Tier 2 rules — requires judgment
-
-**Tier 2 rules table**
-
-| Rule | Description |
-| --- | --- |
-| J-1 | Classify income correctly among Part A, Part B, and Part C — misclassification changes the rate. |
-| J-2 | Determine whether the taxpayer's total income approaches the surtax threshold and whether income timing strategies are appropriate. |
-| J-3 | Evaluate Massachusetts deductions vs. federal deductions (they differ significantly). |
-| J-4 | Assess the health insurance mandate penalty when the taxpayer had gaps in coverage (Schedule HC). |
-| J-5 | Determine credit for taxes paid to other states for multi-state income. |
-
-## Section 7: Supplier pattern library
-
-**Supplier pattern library table**
-
-| Pattern | Massachusetts treatment |
-| --- | --- |
-| Freelance income (Schedule C) | Part B income. Taxed at 5%. |
-| Rental income (Schedule E) | Part B income. Taxed at 5%. |
-| Short-term capital gains | Part C income. Taxed at 8.50%. |
-| Long-term capital gains | Part B income. Taxed at 5%. |
-| Interest / dividends | Part A income. Taxed at 5%. MA and U.S. obligations exempt. |
-| Social Security | Fully exempt. |
-| Pension / retirement | Part B income. Taxed at 5%. |
-
-## Section 8: Form mapping
-
-**Form 1 line mapping table**
-
-| Form 1 line | Description | Source |
+| Situation | Treatment | Source |
 | --- | --- | --- |
-| Lines 1–4 | Part A income (interest, dividends) | M.G.L. c. 62, § 2 |
-| Lines 5–10 | Part A deductions and exemptions | M.G.L. c. 62, § 3 |
-| Line 10 | Part A taxable income | Computed |
-| Lines 11–14 | Part B income (wages, self-employment, pensions) | M.G.L. c. 62, § 2 |
-| Lines 15–20 | Part B deductions and exemptions | M.G.L. c. 62, § 3 |
-| Line 20 | Part B taxable income | Computed |
-| Line 21 | Part C income (short-term capital gains) | M.G.L. c. 62, § 2 |
-| Line 23 | Total 5% income tax (Part A + Part B at 5%) | Computed |
-| Line 24 | 8.50% tax on Part C | Computed |
-| Line 25 | Total income tax before credits | Sum |
-| Line 28 | Credits | Various |
-| Line 29 | 4% surtax (if applicable) | M.G.L. c. 62, § 5A |
-| Lines 34–39 | Payments, withholding, estimated payments | Various |
-| Line 43 | Balance due or refund | Computed |
+| Married couple filing jointly federally | Must file jointly in Massachusetts from 2024, with no exception for surtax payers, even with different residency | [DOR 4% surtax](https://www.mass.gov/info-details/4-surtax-on-taxable-income-over-1000000) |
+| Joint return over the threshold | One $1,107,750 threshold for the couple, not two | [DOR 4% surtax](https://www.mass.gov/info-details/4-surtax-on-taxable-income-over-1000000) |
+| A part with a loss | Counted as zero when adding the parts for the surtax | [DOR 4% surtax](https://www.mass.gov/info-details/4-surtax-on-taxable-income-over-1000000) |
+| Bonus or other supplemental wages above the threshold | Employer withholds 9% on the part above the threshold (see `us-ma-payroll`) | [DOR 4% surtax](https://www.mass.gov/info-details/4-surtax-on-taxable-income-over-1000000) |
+| Owner of an entity that elected the chapter 63E excise (2026 on) | Member claims 90% of their share of the 4% excise as a credit; must file a return to claim it | [DOR elective PTE excise](https://www.mass.gov/info-details/elective-pass-through-entity-excise) |
+| Sole proprietor or single-member LLC wanting the PTE excise | Not eligible: not a pass-through entity | [DOR elective PTE excise](https://www.mass.gov/info-details/elective-pass-through-entity-excise) |
+| Dependent who files their own return | Still a Massachusetts dependent if the dependency tests are met | [DOR personal exemptions](https://www.mass.gov/info-details/massachusetts-personal-income-tax-exemptions) |
+| Gross income $8,000 or less | No return required, but file to claim refundable credits such as the earned income credit | [DOR who must file](https://www.mass.gov/info-details/who-must-file-a-massachusetts-personal-income-tax-return) |
 
-## Section 9: Refusal catalogue
+### Defaults when a fact is missing
 
-**Refusal catalogue table**
+| Missing fact | Default | Why |
+| --- | --- | --- |
+| Holding period of a gain | Treat as short-term (8.5%, [DOR tax rates](https://www.mass.gov/info-details/massachusetts-tax-rates)) until shown otherwise | The higher rate, so no understatement |
+| Rent receipts | No rent deduction | The deduction needs rent actually paid on a principal residence |
+| FICA withheld | Use the Form W-2 boxes 4 and 6 total, capped at $2,000 ([M.G.L. c. 62, s. 3](https://malegislature.gov/Laws/GeneralLaws/PartI/TitleIX/Chapter62/Section3)) | The cap applies per taxpayer |
+| Whether income tops the threshold | Run the surtax step anyway | The surtax also changes the extension and estimate rules |
+
+### Red flags to raise with the client
+
+| Flag | Why it matters |
+| --- | --- |
+| One large gain in 2026 | Can push taxable income over $1,107,750 ([DOR 4% surtax](https://www.mass.gov/info-details/4-surtax-on-taxable-income-over-1000000)); consider timing (worked case 2) |
+| Gaps in health coverage | Schedule HC penalty, which needs a reviewer |
+| Income from another state | Other jurisdiction credit worksheets apply; surtax interaction |
+| Bonus near year end for a high earner | Withholding at 9% ([DOR 4% surtax](https://www.mass.gov/info-details/4-surtax-on-taxable-income-over-1000000)) may still leave the surtax underpaid |
+
+## Worked cases
+
+**Case 1, single filer over the surtax threshold.** A single Massachusetts resident has 2026 wages of USD 400,000 (FICA withheld well above USD 2,000), interest and dividends of USD 30,000, a short-term gain of USD 80,000 and a long-term stock gain of USD 900,000. No rent, no dependents. Part B taxable income is 400,000 less the USD 2,000 FICA deduction less the USD 4,400 exemption = USD 393,600. Total taxable income is USD 1,403,600, so USD 295,850 is above the threshold and the surtax is USD 11,834. The 5% tax on Part B, Part A interest and Part C is USD 66,180; the 8.5% tax on the short-term gain is USD 6,800. Total Massachusetts tax before credits is USD 84,814.
+
+```oa-check
+name: Single filer with gains over the 2026 surtax threshold
+inputs:
+  wages: 400000
+  fica_deduction: 2000
+  personal_exemption: 4400
+  interest_dividends: 30000
+  short_term_gain: 80000
+  long_term_gain: 900000
+  threshold: 1107750
+steps:
+  - part_b: wages - fica_deduction - personal_exemption
+  - taxable_total: part_b + interest_dividends + short_term_gain + long_term_gain
+  - surtax: max(taxable_total - threshold, 0) * 0.04
+  - tax_at_5: (part_b + interest_dividends + long_term_gain) * 0.05
+  - tax_at_8_5: short_term_gain * 0.085
+  - total_tax: tax_at_5 + tax_at_8_5 + surtax
+expected:
+  part_b: 393600.00
+  taxable_total: 1403600.00
+  surtax: 11834.00
+  tax_at_5: 66180.00
+  tax_at_8_5: 6800.00
+  total_tax: 84814.00
+```
+
+**Case 2, decision: realize the whole gain in 2026, or only up to the threshold?** Same person. Without the long-term gain, taxable income is USD 503,600. The room under the threshold is 1,107,750 less 503,600 = USD 604,150. Realizing the full USD 900,000 in 2026 costs USD 11,834 of surtax; realizing only USD 604,150 in 2026 costs none, and the remaining USD 295,850 is taxed in a later year at 5%, plus surtax only if that year's total also tops that year's threshold. The figure that decides it is the 4% on the excess, set against the market risk and federal cost of waiting.
+
+```oa-check
+name: Gain timing against the 2026 surtax threshold
+inputs:
+  other_taxable: 503600
+  long_term_gain: 900000
+  threshold: 1107750
+steps:
+  - room_under_threshold: threshold - other_taxable
+  - surtax_all_in_2026: max(other_taxable + long_term_gain - threshold, 0) * 0.04
+  - gain_realized_capped: min(long_term_gain, room_under_threshold)
+  - surtax_capped: max(other_taxable + gain_realized_capped - threshold, 0) * 0.04
+  - gain_deferred: long_term_gain - gain_realized_capped
+expected:
+  room_under_threshold: 604150.00
+  surtax_all_in_2026: 11834.00
+  gain_realized_capped: 604150.00
+  surtax_capped: 0.00
+  gain_deferred: 295850.00
+```
+
+## When to refuse or refer
 
 | Code | Situation | Action |
 | --- | --- | --- |
-| REF-MA-01 | Taxpayer is a nonresident or part-year resident | Refuse; requires Form 1-NR/PY. |
-| REF-MA-02 | Taxpayer has complex Part A / Part B / Part C classification issues | Flag for reviewer. |
-| REF-MA-03 | Taxpayer's income exceeds the surtax threshold and involves timing strategies | Flag for reviewer — surtax cliff analysis needed. |
-| REF-MA-04 | Taxpayer claims complex credits (e.g., Brownfields, Life Sciences, Film) | Flag for reviewer. |
-| REF-MA-05 | Taxpayer has Schedule HC penalty issues (gaps in health insurance coverage) | Flag for reviewer — penalty computation is complex. |
+| REF-MA-01 | Nonresident or part-year resident | Refer: Form 1-NR/PY with source rules and exemption ratios |
+| REF-MA-02 | Hard Part A, Part B, Part C classification (installment gains, trade or business capital losses) | Flag for reviewer |
+| REF-MA-03 | Income near the surtax threshold with timing or entity planning | Flag for reviewer: surtax planning and chapter 63E election |
+| REF-MA-04 | Complex credits (brownfields, life sciences, film) | Flag for reviewer |
+| REF-MA-05 | Schedule HC penalty (gaps in health coverage) | Flag for reviewer |
+| REF-MA-06 | Married couple with different residency status, filing jointly under the joint-filing rule | Refer: DOR joint-filing guidance for that case |
 
-## Disclaimer
+## Filing and payment
 
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional before filing or acting upon.
+- **Return:** Form 1, filed through MassTaxConnect or approved software. Anyone subject to the surtax must file and pay electronically.
+- **Estimates (Form 1-ES):** required where more than $400 of tax is expected on income not subject to withholding. 2026 installments are due April 15, 2026; June 15, 2026; September 15, 2026; and January 15, 2027. Include the surtax in the estimate; underpayment is computed on Form M-2210, which also counts the surtax.
+- **Extension:** automatic, provided 80% of the tax due, including the surtax, is paid by the original due date.
+- **Withholding:** employers withhold under Circular M; see `us-ma-payroll`.
+
+## Completion checklist
+
+- [ ] Residency and federal filing status confirmed; joint federal means joint Massachusetts.
+- [ ] Every income item placed in Part A, Part B or Part C, with holding periods.
+- [ ] FICA deduction capped at $2,000; rent deduction at 50% and $4,000.
+- [ ] Exemptions match filing status, dependents, age and blindness.
+- [ ] Surtax computed on the sum of positive parts less $1,107,750.
+- [ ] PTE excise credit at 90% of the member's share, where an entity elected.
+- [ ] Estimates and extension payment include the surtax; electronic filing if surtax applies.
+- [ ] Schedule HC completed.
+
+## Sources
+
+| Source | URL | Read on |
+| --- | --- | --- |
+| DOR, Tax Rates (updated 30 Dec 2025). Read for 5.00%, 8.5%, 12.00% with 50% deduction, and the 2026 surtax threshold $1,107,750. | https://www.mass.gov/info-details/massachusetts-tax-rates | 2026-11-13 |
+| DOR, Massachusetts 4% Surtax on Taxable Income (updated 1 Jun 2026). Read for thresholds 2023 to 2026, the Part A, B, C sum with negatives as zero, joint filing from 2024, 80% extension payment and the other jurisdiction credit. | https://www.mass.gov/info-details/4-surtax-on-taxable-income-over-1000000 | 2026-11-13 |
+| DOR, Personal Income Tax Exemptions (updated 30 Oct 2026). Read for $4,400, $6,800, $8,800, $1,000, $700 and $2,200. | https://www.mass.gov/info-details/massachusetts-personal-income-tax-exemptions | 2026-11-13 |
+| DOR, Deductions on Rent Paid in Massachusetts. Read for 50% of rent, $4,000 cap and $2,000 for married filing separately. | https://www.mass.gov/info-details/deductions-on-rent-paid-in-massachusetts | 2026-11-13 |
+| DOR, Who Must File a Personal Income Tax Return. Read for the $8,000 gross income test and the 183-day residency test. | https://www.mass.gov/info-details/who-must-file-a-massachusetts-personal-income-tax-return | 2026-11-13 |
+| DOR, Gross, adjusted gross and taxable income. Read for the Part A, Part B and Part C definitions. | https://www.mass.gov/info-details/gross-adjusted-gross-and-taxable-income | 2026-11-13 |
+| DOR, 2026 Form 1-ES. Read for the $400 trigger, the 2026 installment dates and electronic filing for surtax payers. | https://www.mass.gov/doc/2026-form-1-es-estimated-tax-payment-vouchers-instructions-and-worksheets/download | 2026-11-13 |
+| DOR, Circular M effective 1 January 2026. Read for the $2,000 FICA and retirement deduction and the $1,107,750 withholding threshold. | https://www.mass.gov/doc/massachusetts-circular-m-income-tax-withholding-tables-at-50-effective-january-1-2026/download | 2026-11-13 |
+| DOR, Elective Pass-through Entity Excise (updated 31 Jul 2026). Read for the 90% member credit and the new chapter 63E excise from 2026. | https://www.mass.gov/info-details/elective-pass-through-entity-excise | 2026-11-13 |
+| M.G.L. c. 62, s. 4. Read for the 8.5% short-term gain rate and the 4(d) surtax base. | https://malegislature.gov/Laws/GeneralLaws/PartI/TitleIX/Chapter62/Section4 | 2026-11-13 |
+| M.G.L. c. 62, s. 3. Read for the $2,000 cap on the retirement and FICA deduction. | https://malegislature.gov/Laws/GeneralLaws/PartI/TitleIX/Chapter62/Section3 | 2026-11-13 |
+
+Not yet confirmed: the 2026 Form 1 and its instructions were not published when read, so no 2026 Form 1 line numbers are quoted and the 2026 Form 1 due date is taken as April 15, 2027 on the 2025-2026 filing cycle pattern; the Schedule HC 2026 penalty table was not read.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-07-13. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ma-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ma-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-13. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ma-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ma-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
