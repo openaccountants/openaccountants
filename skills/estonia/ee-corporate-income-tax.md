@@ -1,14 +1,15 @@
 ---
 name: ee-corporate-income-tax
 description: "Estonian corporate income tax for tax year 2026 under the Income Tax Act (tulumaksuseadus) consolidated text in force from 1 October 2026. Estonia taxes a company only when it distributes profit: 22% of the gross amount, charged as 22/78 of the net payment. Covers dividends, capital reductions, share buybacks and liquidation, deemed distributions (fringe benefits, gifts and donations, entertainment, non-business expenses, loans to shareholders), the participation exemption, the 2025 abolition of the 14/86 rate and the 7% withholding when 14/86-taxed dividends are passed on to individuals, the 18% quarterly advance tax for banks, exceeding borrowing costs, the cancelled 2026 rise to 24% and security tax, the monthly TSD return, interest and fines. Trigger on 'Estonia corporate tax', 'OÜ dividend tax', '22/78', 'distributed profit tax Estonia', 'TSD dividend', 'Estonian fringe benefit tax'. Out of scope: withholding on payments to non-residents and permanent establishments (ee-cross-border), transfer pricing (ee-transfer-pricing), individuals (estonia-income-tax), social tax (estonia-social-contributions), payroll (estonia-payroll), VAT (estonia-vat-return)."
-version: 0.1
+version: 0.2
 jurisdiction: EE
 tax_year: 2026
-last_updated: 2026-10-24
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: corporate-tax
+type: computation
 ---
 
 # Estonia corporate income tax, tax year 2026

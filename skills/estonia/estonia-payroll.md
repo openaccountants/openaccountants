@@ -1,14 +1,15 @@
 ---
 name: estonia-payroll
 description: "Estonian payroll for tax year 2026: running a monthly payroll for employees and board members of an Estonian employer. Covers the 22% withholding income tax, the flat 2026 basic exemption (EUR 700 a month, EUR 776 at pensionable age, no income taper), the 1.6% employee and 0.8% employer unemployment insurance premiums, the 2%, 4% or 6% funded pension (II pillar) contribution, the 33% employer social tax on the EUR 886 monthly minimum base, the order of deductions, fringe benefits at 22/78, the employment register, form TSD and payment by the 10th, interest at 0.06% a day and coercive fines. Trigger on: Estonia payroll, gross to net Estonia, palgaarvestus, netopalk, maksuvaba tulu 2026, TSD lisa 1, kinnipeetav tulumaks, II sammas, töötuskindlustusmakse. Out of scope: estonia-social-contributions (social tax in depth, self-employed FIE), estonia-income-tax (annual return), ee-corporate-income-tax, ee-cross-border (non-resident employees in depth)."
-version: 0.2
+version: 0.3
 jurisdiction: EE
 tax_year: 2026
-last_updated: 2026-10-24
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
+type: computation
 ---
 
 # Estonia payroll, tax year 2026

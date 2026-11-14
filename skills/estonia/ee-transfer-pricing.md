@@ -1,14 +1,15 @@
 ---
 name: ee-transfer-pricing
 description: "Estonian transfer pricing (siirdehinnad) for tax year 2026: Estonian companies, permanent establishments of foreign companies and sole proprietors (FIE) dealing with associated persons. Covers who is associated under Income Tax Act § 8, the arm's length rule in § 50(4) (companies), § 14(7) (FIE) and § 53(4⁶) (permanent establishments), how an adjustment is taxed at 22/78 in the monthly TSD like a profit distribution, Minister of Finance Regulation No. 53 (methods, 5% low value-adding services mark-up, master file and local file), who must keep full files (250 staff, EUR 50m turnover or EUR 43m balance sheet with associated persons; banks, insurers, listed companies), the 60-day production deadline, fines, interest at 0.06% a day, country-by-country reporting at EUR 750m, MAP and why there is no domestic APA or binding ruling. Trigger on: siirdehind, turuväärtus, seotud isikud, master file Estonia, management fee Estonia. Out of scope: ee-corporate-income-tax (rates, distributions), estonia-income-tax, estonia-payroll (fringe benefits), estonia-vat-return."
-version: 0.1
+version: 0.2
 jurisdiction: EE
 tax_year: 2026
-last_updated: 2026-10-24
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: transfer-pricing
+type: situation-rules
 ---
 
 # Estonian transfer pricing (siirdehinnad): tax year 2026
