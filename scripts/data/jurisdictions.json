@@ -602,6 +602,13 @@
   "dir": "skills/india"
  },
  {
+  "code": "IO",
+  "name": "British Indian Ocean Territory",
+  "region": "apac",
+  "owner": "ryan",
+  "dir": "skills/british-indian-ocean-territory"
+ },
+ {
   "code": "IS",
   "name": "Iceland",
   "region": "europe",
