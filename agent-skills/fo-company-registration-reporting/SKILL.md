@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/fo-company-registration-reporting"
   jurisdiction: "FO"
   tax_year: "2026"
-  last_updated: "2026-11-01"
+  last_updated: "2026-11-14"
 ---
 
-# Faroe Islands company registration and annual reporting v0.4
+# Faroe Islands company registration and annual reporting v0.5
 
 > **Checked against the law.** This Guide prepares working papers for review. It has no professional attestation and does not authorise a filing, incorporation or payment.
 
@@ -219,4 +219,4 @@ Not yet confirmed: complete current form/fee execution, detailed UBO implementin
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-01. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `fo-company-registration-reporting` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/fo-company-registration-reporting. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `fo-company-registration-reporting` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/fo-company-registration-reporting. If neither is available, confirm every figure against the official source pages cited above before relying on it.

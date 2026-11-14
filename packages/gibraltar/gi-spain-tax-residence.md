@@ -5,8 +5,8 @@ description: >
 jurisdiction: GI
 category: cross-border
 tax_year: 2026
-last_updated: 2026-10-31
-version: "0.3"
+last_updated: 2026-11-14
+version: "0.4"
 sources:
   - url: "https://assets.publishing.service.gov.uk/media/6705890ee84ae1fd8592f017/TS_78.2024_UK_Spain_Agreement_Taxation_Financial_Interests_Gibraltar.pdf"
     title: "Treaty Series 78/2024: UK–Spain agreement regarding Gibraltar, Articles 2–9"
@@ -19,9 +19,10 @@ sources:
     as_of: "2026-10-22"
 tier: 2
 domain: cross-border
+type: situation-rules
 ---
 
-# Gibraltar–Spain tax residence v0.3
+# Gibraltar–Spain tax residence v0.4
 
 > **Source-cited draft.** Independent source review and professional attestation are pending. Residence, source and relief conclusions require the actual facts and applicable domestic laws.
 
