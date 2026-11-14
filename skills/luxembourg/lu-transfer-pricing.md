@@ -1,14 +1,15 @@
 ---
 name: lu-transfer-pricing
 description: "Luxembourg transfer pricing (prix de transfert) for tax year 2026: Luxembourg companies and Luxembourg permanent establishments that deal with associated enterprises. Covers the arm's length rule in art. 56 LIR, the OECD-based comparability rules in art. 56bis, hidden profit distributions (art. 164(3)) and the 15% withholding tax that can follow, documentation on request under § 171(3) of the Abgabenordnung, intra-group financing companies (real presence, 2% after-tax safe harbour), Amount B (circular n° 56/2 – 56bis/2 of 13 April 2026), advance decisions under § 29a AO (fee EUR 3,000 to 10,000), the EUR 750m country-by-country report and its EUR 250,000 fine, MAP, and the EU dispute law of 20 December 2019. Trigger on: prix de transfert Luxembourg, art. 56 LIR, 56bis, distribution cachée, société de financement de groupe, CbC Luxembourg, APA Luxembourg, décision anticipée. Out of scope: lu-corporate-tax (rates, base, filing), luxembourg-income-tax, luxembourg-vat-return."
-version: 0.2
+version: 0.3
 jurisdiction: LU
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: transfer-pricing
+type: situation-rules
 ---
 
 # Luxembourg transfer pricing (prix de transfert): tax year 2026
@@ -18,7 +19,7 @@ What is new for 2026: no change to arts. 56 and 56bis LIR, which have stood sinc
 - **Amount B.** Circular L.I.R. n° 56/2 – 56bis/2 of 13 April 2026 says how Luxembourg treats the OECD simplified approach for baseline distributors when a "covered jurisdiction" applies it. It applies to financial years opened from 1 January 2025.
 - **Shareholder current accounts.** Circular L.I.R. n° 164/1 of 29 January 2025 replaced the 1998 circular on interest on debit current accounts of shareholders. For an associated enterprise the rate is set case by case under arts. 56 and 56bis.
 
-- **CbC report procedure.** The law of 27 March 2026 (DAC8), applicable from 1 January 2026, amended the CbC law: the fine is now set by the *bureau de la retenue d'impôt sur les intérêts*, a resident constituent entity can also appeal, the report must carry each constituent entity's tax identification number for tax periods from 1 January 2028, and the ACD's powers of investigation lapse ten years after the end of the reporting fiscal year ([law of 27 March 2026, art. 13](https://legilux.public.lu/eli/etat/leg/loi/2026/03/27/a144/jo)).
+- **CbC report procedure.** The law of 27 March 2026 (DAC8), applicable from 1 January 2026, amended the CbC law: the fine is now set by the *bureau de la retenue d'impôt sur les intérêts*, a resident constituent entity can also appeal, the report must carry each constituent entity's tax identification number for tax periods from 1 January 2028, and the ACD's powers of investigation lapse ten years after the end of the reporting fiscal year ([law of 27 March 2026, art. 13](https://data.legilux.public.lu/filestore/eli/etat/leg/loi/2026/03/27/a144/jo/fr/pdfa/eli-etat-leg-loi-2026-03-27-a144-jo-fr-pdfa.pdf)).
 
 No law passed in 2025 or 2026 adds a master file or local file duty. The ACD lists of laws for those years show none ([ACD, laws 2025](https://impotsdirects.public.lu/fr/legislation/legi25.html); [ACD, laws 2026](https://impotsdirects.public.lu/fr/legislation/legi26.html)).
 
@@ -50,14 +51,14 @@ The rule reaches domestic dealings as well as cross-border ones. Art. 56 does no
 | Tax on a primary adjustment, Luxembourg City, income above EUR 200,000 | 23.87% combined: IRC 16% + employment fund contribution 1.12% + ICC 6.75% | 2025 onwards | [ACD, overall tax burden](https://impotsdirects.public.lu/fr/az/c/charg_fisc.html); [LIR art. 174](https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf) |
 | IRC bands (14% up to EUR 175,000; middle band; 16% above EUR 200,000) and ICC multipliers outside Luxembourg City | see [lu-corporate-tax](lu-corporate-tax.md) | 2026 | [ACD, IRC tariff](https://impotsdirects.public.lu/fr/az/t/tarif-applicable-collectivites/tarif-collect.html) |
 | Withholding tax on dividends, including other income allotted "in any form" on shares | 15% of the gross amount; 17.65% of the net amount when the payer bears the tax | current | [LIR arts. 97(1) no. 1, 146 and 148](https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf) |
-| Withholding exemption for a qualifying corporate shareholder | at least 10% or acquisition price at least EUR 1,200,000, held or committed for 12 months | current | LIR art. 147 no. 2; see [lu-corporate-tax](lu-corporate-tax.md) |
+| Withholding exemption for a qualifying corporate shareholder | at least 10% or acquisition price at least EUR 1,200,000, held or committed for 12 months | current | LIR art. 147 no. 2; see [lu-corporate-tax](lu-corporate-tax.md); https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
 | Intra-group financing company, purely intermediary, safe harbour | minimum return of 2% after tax on the financed assets | from 1 January 2017; unchanged at 2026 | [Circular 56/1 – 56bis/1, no. 27](https://impotsdirects.public.lu/dam-assets/fr/legislation/legi16/circulairelir561-56bis1-27122016.pdf) |
-| Return on equity observed for financing and treasury functions like regulated entities | 10% after tax | as at 27 December 2016 | Circular 56/1 – 56bis/1, no. 24 |
+| Return on equity observed for financing and treasury functions like regulated entities | 10% after tax | as at 27 December 2016 | Circular 56/1 – 56bis/1, no. 24; https://impotsdirects.public.lu/dam-assets/fr/legislation/legi16/circulairelir561-56bis1-27122016.pdf |
 | Advance decision (décision anticipée) fee, business taxation | EUR 3,000 to EUR 10,000, set by the ACD by complexity and workload; payable within one month; not refunded | requests from 1 January 2015 | [§ 29a(4) AO, inserted by the law of 19 December 2014](https://impotsdirects.public.lu/dam-assets/fr/legislation/legi14/Memorial-A---N_-257-du-24-decembre-2014.pdf); [grand-ducal regulation of 23 December 2014, arts. 8 to 10](https://impotsdirects.public.lu/dam-assets/fr/legislation/legi14/Memorial-A---N_-264-du-29-decembre-2014.pdf) |
-| Advance decision, maximum validity | 5 tax years | same | § 29a(3) AO |
+| Advance decision, maximum validity | 5 tax years | same | § 29a(3) AO; https://impotsdirects.public.lu/dam-assets/fr/legislation/legi14/Memorial-A---N_-257-du-24-decembre-2014.pdf |
 | Country-by-country report, group threshold | consolidated group revenue of EUR 750,000,000 or more in the fiscal year before the reporting year | reporting years from 2016 | [Law of 23 December 2016 on CbC reporting, annex, section I, no. 5](https://impotsdirects.public.lu/dam-assets/fr/legislation/legi16/a280.pdf) |
 | CbC report deadline | 12 months after the last day of the reporting fiscal year | same | same, art. 2 |
-| CbC fine | up to EUR 250,000 | same | same, art. 3(1); amount unchanged by the [law of 27 March 2026, art. 13](https://legilux.public.lu/eli/etat/leg/loi/2026/03/27/a144/jo) |
+| CbC fine | up to EUR 250,000 | same | same, art. 3(1); amount unchanged by the [law of 27 March 2026, art. 13](https://data.legilux.public.lu/filestore/eli/etat/leg/loi/2026/03/27/a144/jo/fr/pdfa/eli-etat-leg-loi-2026-03-27-a144-jo-fr-pdfa.pdf) |
 | Amount B, scope test | operating expenses of the tested distributor between 3% and a cap of 20% to 30% of its annual net revenue | financial years from 1 January 2025 | [Circular 56/2 – 56bis/2 of 13 April 2026, section 4](https://impotsdirects.public.lu/dam-assets/fr/legislation/circulaires/lir-56-2-56bis-2-du-13042026.pdf) |
 | EU dispute complaint, time limit | 3 years from the first notification of the measure | current | [Law of 20 December 2019, art. 3(3)](https://legilux.public.lu/eli/etat/leg/loi/2019/12/20/a890/jo) |
 
@@ -100,7 +101,7 @@ A bilateral or multilateral APA is negotiated between competent authorities unde
 ## Penalties and interest
 
 - **No transfer-pricing-specific penalty.** Luxembourg law sets no separate fine for missing transfer pricing documentation. A taxpayer that cannot justify its prices under § 171 AO faces an adjustment of the return. The ordinary surcharges then apply: up to 10% of the tax for a late or missing return, and 0.6% per month late payment interest on the tax ([ACD, additional charges](https://impotsdirects.public.lu/fr/az/p/prelev.html); figures and detail in `lu-corporate-tax`).
-- **CbC fine (CbC law, art. 3).** Up to **EUR 250,000** for: no report or notification; a late report or late notification; incomplete or wrong data; or failing to tell the ACD that the ultimate parent refused to provide the information. From 1 January 2026 the fine is set by the *bureau de la retenue d'impôt sur les intérêts* (before that, by the tax office of the reporting entity). The reporting entity or the resident constituent entity can appeal to the administrative tribunal (recours en réformation) (CbC law, art. 3(2) and (3), as replaced by the [law of 27 March 2026, art. 13](https://legilux.public.lu/eli/etat/leg/loi/2026/03/27/a144/jo)).
+- **CbC fine (CbC law, art. 3).** Up to **EUR 250,000** for: no report or notification; a late report or late notification; incomplete or wrong data; or failing to tell the ACD that the ultimate parent refused to provide the information. From 1 January 2026 the fine is set by the *bureau de la retenue d'impôt sur les intérêts* (before that, by the tax office of the reporting entity). The reporting entity or the resident constituent entity can appeal to the administrative tribunal (recours en réformation) (CbC law, art. 3(2) and (3), as replaced by the [law of 27 March 2026, art. 13](https://data.legilux.public.lu/filestore/eli/etat/leg/loi/2026/03/27/a144/jo/fr/pdfa/eli-etat-leg-loi-2026-03-27-a144-jo-fr-pdfa.pdf)).
 - **Withholding on a hidden distribution.** Where the company did not withhold, the withholding tax becomes due on assessment. If the company bears it, art. 148 sets 17.65% of the net amount.
 
 ## Cross-border points
@@ -225,7 +226,7 @@ expected:
 | Law of 19 December 2014 (Mémorial A n° 257), art. 4: § 29a and § 171(3) of the Abgabenordnung | https://impotsdirects.public.lu/dam-assets/fr/legislation/legi14/Memorial-A---N_-257-du-24-decembre-2014.pdf | 2026-10-23 |
 | Grand-ducal regulation of 23 December 2014 on advance decisions (Mémorial A n° 264) | https://impotsdirects.public.lu/dam-assets/fr/legislation/legi14/Memorial-A---N_-264-du-29-decembre-2014.pdf | 2026-10-23 |
 | Law of 23 December 2016 on country-by-country reporting (Mémorial A n° 280) | https://impotsdirects.public.lu/dam-assets/fr/legislation/legi16/a280.pdf | 2026-10-23 |
-| Law of 27 March 2026 (DAC8, Mémorial A n° 144), art. 13 amending the CbC law, art. 17 applicable from 1 January 2026, Legilux | https://legilux.public.lu/eli/etat/leg/loi/2026/03/27/a144/jo | 2026-10-23 |
+| Law of 27 March 2026 (DAC8, Mémorial A n° 144), art. 13 amending the CbC law, art. 17 applicable from 1 January 2026, Legilux | https://data.legilux.public.lu/filestore/eli/etat/leg/loi/2026/03/27/a144/jo/fr/pdfa/eli-etat-leg-loi-2026-03-27-a144-jo-fr-pdfa.pdf | 2026-10-23 |
 | Law of 20 December 2019 on tax dispute resolution (Mémorial A n° 890), Legilux | https://legilux.public.lu/eli/etat/leg/loi/2019/12/20/a890/jo | 2026-10-23 |
 | Circular L.G. – Conv. D.I. n° 60 of 11 March 2021, mutual agreement procedure | https://impotsdirects.public.lu/dam-assets/fr/legislation/legi21/2021-03-11-LG-Conv-DI-60-du-1132021.pdf | 2026-10-23 |
 | ACD, mutual agreement procedure (MAP) | https://impotsdirects.public.lu/fr/conventions/map.html | 2026-10-23 |
