@@ -30,9 +30,9 @@ Ordinary employment covered by all four insurances under the Social Security Law
 | Maternity, employer | 0.75% | Art. 42(a)(1) | same |
 | Unemployment, employer | 0.5% | Art. 48(a) | same |
 | Unemployment, employee | 1% | Art. 48(b) | same |
-| Employer total | 14.25% | Sum of the above | same |
-| Employee total | 7.5% | Sum of the above | same |
-| Total | 21.75% | Sum of the above | same |
+| Employer total | 14.25% | Sum of the above (computed) | same |
+| Employee total | 7.5% | Sum of the above (computed) | same |
+| Total | 21.75% | Sum of the above (computed) | same |
 | Hazardous occupation addition | 1% of wage, employer | On top of other contributions for a profession prescribed as hazardous, art. 64(c)(3)-(4) | same |
 | Voluntary insured | 17.5% | Art. 59(a)(3), reached by the yearly steps | same |
 | Wage ceiling 2026 | JOD 3,733 | Set from 1.77% inflation; JOD 3,668 in 2025 | https://petra.gov.jo/en/news/ssc-says-jd3733-maximum-wage-for-social-security-deductions |
