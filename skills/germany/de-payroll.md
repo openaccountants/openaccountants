@@ -1,16 +1,17 @@
 ---
 name: de-payroll
 description: "German payroll for employees for pay periods in 2026: wage tax (Lohnsteuer) by tax class I to VI through the finance ministry's 2026 program flow (PAP) with the EUR 12,348 basic allowance, the Vorsorgepauschale, solidarity surcharge and church tax; the four social insurance branches (pension 18.6%, unemployment 2.6%, health 14.6% plus the fund's additional rate, average 2.9%, care 3.6% with the childless surcharge) and the 2026 ceilings; Minijobs (EUR 603), the Midijob band to EUR 2,000, the Aktivrente; the wage tax return by the 10th, contributions by the third-last bank working day, DEÜV reports, payslips, minimum wage, tax-free surcharges, sick and maternity pay, and penalties. Trigger on: Lohnsteuer, Gehaltsabrechnung, Lohnabrechnung, Entgeltabrechnung, Brutto Netto, Nettolohn, Steuerklasse, Sozialversicherung, Arbeitnehmeranteil, Arbeitgeberanteil, Beitragsbemessungsgrenze, Solidaritätszuschlag, Kirchensteuer, Rentenversicherung, Krankenversicherung, Pflegeversicherung, Arbeitslosenversicherung, Minijob, Midijob, Mindestlohn, payslip Germany, Lohnsteuer-Anmeldung, DEÜV. Out of scope: the employee's annual return (de-employee-income-tax), the self-employed (de-social-contributions, de-einkommensteuer-freelancer), non-residents' wider German tax (de-non-resident-tax)."
-version: 1.8
+version: 1.9
 jurisdiction: DE
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-14
 depends_on:
   - income-tax-workflow-base
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
+type: computation
 ---
 
 # German payroll 2026: wage tax, social insurance, Minijobs and reporting
@@ -81,14 +82,14 @@ All wage tax amounts are yearly. The PAP annualises the period's pay, computes t
 
 **Employee care share by children**, derived from the rows above:
 
-| Children | Outside Saxony: employee | Outside Saxony: employer | Saxony: employee | Saxony: employer |
-| --- | --- | --- | --- | --- |
-| None, employee 23 or older | 2.4% | 1.8% | 2.9% | 1.3% |
-| One child (any age); or childless and under 23 | 1.8% | 1.8% | 2.3% | 1.3% |
-| Two under 25 | 1.55% | 1.8% | 2.05% | 1.3% |
-| Three under 25 | 1.3% | 1.8% | 1.8% | 1.3% |
-| Four under 25 | 1.05% | 1.8% | 1.55% | 1.3% |
-| Five or more under 25 | 0.8% | 1.8% | 1.3% | 1.3% |
+| Children | Outside Saxony: employee | Outside Saxony: employer | Saxony: employee | Saxony: employer | Source |
+| --- | --- | --- | --- | --- | --- |
+| None, employee 23 or older | 2.4% | 1.8% | 2.9% | 1.3% | https://www.gesetze-im-internet.de/pbav_2025/__1.html ; https://www.gesetze-im-internet.de/sgb_11/__55.html ; https://www.gesetze-im-internet.de/sgb_11/__58.html |
+| One child (any age); or childless and under 23 | 1.8% | 1.8% | 2.3% | 1.3% | https://www.gesetze-im-internet.de/pbav_2025/__1.html ; https://www.gesetze-im-internet.de/sgb_11/__55.html ; https://www.gesetze-im-internet.de/sgb_11/__58.html |
+| Two under 25 | 1.55% | 1.8% | 2.05% | 1.3% | https://www.gesetze-im-internet.de/pbav_2025/__1.html ; https://www.gesetze-im-internet.de/sgb_11/__55.html ; https://www.gesetze-im-internet.de/sgb_11/__58.html |
+| Three under 25 | 1.3% | 1.8% | 1.8% | 1.3% | https://www.gesetze-im-internet.de/pbav_2025/__1.html ; https://www.gesetze-im-internet.de/sgb_11/__55.html ; https://www.gesetze-im-internet.de/sgb_11/__58.html |
+| Four under 25 | 1.05% | 1.8% | 1.55% | 1.3% | https://www.gesetze-im-internet.de/pbav_2025/__1.html ; https://www.gesetze-im-internet.de/sgb_11/__55.html ; https://www.gesetze-im-internet.de/sgb_11/__58.html |
+| Five or more under 25 | 0.8% | 1.8% | 1.3% | 1.3% | https://www.gesetze-im-internet.de/pbav_2025/__1.html ; https://www.gesetze-im-internet.de/sgb_11/__55.html ; https://www.gesetze-im-internet.de/sgb_11/__58.html |
 
 Do not read the care rate from § 55(1) SGB XI: the statute still prints "3,4 Prozent"; the current 3.6% was set by regulation (PBAV 2025).
 

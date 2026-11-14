@@ -2,7 +2,12 @@
 jurisdiction: DM
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
-covered_by: {}
+covered_by:
+  IT-IND: dm-income-tax-paye
+  IT-CORP: dm-corporate-income-tax
+  VAT: dm-vat
+  SC: dm-social-contributions
+  PR: dm-income-tax-paye
 partial: {}
 ---
 
