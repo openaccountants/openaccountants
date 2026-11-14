@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/cy-cross-border"
   jurisdiction: "CY"
   tax_year: "2026"
-  last_updated: "2026-11-01"
+  last_updated: "2026-11-14"
 ---
 
 # Cyprus cross-border tax: residence, non-residents, leaving, withholding (tax year 2026)
@@ -45,27 +45,27 @@ Day counting (article 2): the day of departure is a day outside Cyprus; the day 
 | Item | Rate or amount | Year | Source |
 |---|---|---|---|
 | Individual resident: more than 183 days in Cyprus | more than 183 days | 2026 | Income Tax Law, art. 2: https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html |
-| 60-day rule: minimum days in Cyprus | at least 60 days | 2026 | Income Tax Law, art. 2 |
-| 60-day rule: maximum days in any other single state | not more than 183 days | 2026 | Income Tax Law, art. 2 |
-| Personal tax scale (residents and non-residents alike) | 0% to EUR 22,000; 20% to EUR 32,000; 25% to EUR 42,000; 30% to EUR 72,000; 35% above | 2026 onward | Income Tax Law, Second Schedule, para 1(c) |
-| Corporate tax rate | 15% | 2026 onward | Income Tax Law, Second Schedule, para 2 |
-| Exemption art. 8(21A): first employment in Cyprus, after 3 years employed abroad by a non-resident employer | 20% of pay or EUR 8,550, the lower; 7 tax years starting the year AFTER the employment year; starts up to 2027 | 2026 | Income Tax Law, art. 8(21A) |
-| Exemption art. 8(21B): returning former residents | 25% of pay or business profit, max EUR 25,000 a year; pay above EUR 30,000; start year plus 6 years; starts 1 Jan 2025 to 2030 | 2026 | Income Tax Law, art. 8(21B) |
-| Exemption art. 8(23A): first employment after at least 15 consecutive non-resident years | 50% of pay, for any year pay exceeds EUR 55,000; 17 tax years from the start year | 2026 | Income Tax Law, art. 8(23A) |
-| Deductions for social insurance, GHS, pension and insurance: overall cap | 1/5 of taxable income before those deductions | 2026 | Income Tax Law, art. 14(2) |
-| Termination payments above EUR 200,000 (residents and non-residents) | 20% on the excess, taxed separately | 2026 | Income Tax Law, art. 20ΣΤ |
-| Royalties and technical assistance paid to a non-resident, right used in Cyprus | 10% of gross | 2026 | Income Tax Law, art. 21 ("δέκα σεντ κατά λίρα") |
-| Royalties to an associated company in an EU-listed non-cooperative jurisdiction (if art. 21 did not already apply) | 10% of gross | 2026 | Income Tax Law, art. 21A(1) and (7) |
-| Film rentals for showing films in Cyprus, paid to a non-resident | 5% of gross | 2026 | Income Tax Law, art. 22 |
-| Non-resident individual: profession or vocation exercised in Cyprus; non-resident entertainers and sports teams performing in Cyprus | 10% of gross | 2026 | Income Tax Law, art. 23 |
-| Non-resident: services in Cyprus on the continental shelf, natural resources and pipelines, not through a permanent establishment | 5% of gross | 2026 | Income Tax Law, art. 23A |
+| 60-day rule: minimum days in Cyprus | at least 60 days | 2026 | [Income Tax Law, art. 2](https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html)|
+| 60-day rule: maximum days in any other single state | not more than 183 days | 2026 | [Income Tax Law, art. 2](https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html)|
+| Personal tax scale (residents and non-residents alike) | 0% to EUR 22,000; 20% to EUR 32,000; 25% to EUR 42,000; 30% to EUR 72,000; 35% above | 2026 onward | [Income Tax Law, Second Schedule, para 1(c)](https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html)|
+| Corporate tax rate | 15% | 2026 onward | [Income Tax Law, Second Schedule, para 2](https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html)|
+| Exemption art. 8(21A): first employment in Cyprus, after 3 years employed abroad by a non-resident employer | 20% of pay or EUR 8,550, the lower; 7 tax years starting the year AFTER the employment year; starts up to 2027 | 2026 | [Income Tax Law, art. 8(21A)](https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html)|
+| Exemption art. 8(21B): returning former residents | 25% of pay or business profit, max EUR 25,000 a year; pay above EUR 30,000; start year plus 6 years; starts 1 Jan 2025 to 2030 | 2026 | [Income Tax Law, art. 8(21B)](https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html)|
+| Exemption art. 8(23A): first employment after at least 15 consecutive non-resident years | 50% of pay, for any year pay exceeds EUR 55,000; 17 tax years from the start year | 2026 | [Income Tax Law, art. 8(23A)](https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html)|
+| Deductions for social insurance, GHS, pension and insurance: overall cap | 1/5 of taxable income before those deductions | 2026 | [Income Tax Law, art. 14(2)](https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html)|
+| Termination payments above EUR 200,000 (residents and non-residents) | 20% on the excess, taxed separately | 2026 | [Income Tax Law, art. 20ΣΤ](https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html)|
+| Royalties and technical assistance paid to a non-resident, right used in Cyprus | 10% of gross | 2026 | [Income Tax Law, art. 21 ("δέκα σεντ κατά λίρα")](https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html)|
+| Royalties to an associated company in an EU-listed non-cooperative jurisdiction (if art. 21 did not already apply) | 10% of gross | 2026 | [Income Tax Law, art. 21A(1) and (7)](https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html)|
+| Film rentals for showing films in Cyprus, paid to a non-resident | 5% of gross | 2026 | [Income Tax Law, art. 22](https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html)|
+| Non-resident individual: profession or vocation exercised in Cyprus; non-resident entertainers and sports teams performing in Cyprus | 10% of gross | 2026 | [Income Tax Law, art. 23](https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html)|
+| Non-resident: services in Cyprus on the continental shelf, natural resources and pipelines, not through a permanent establishment | 5% of gross | 2026 | [Income Tax Law, art. 23A](https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html)|
 | Dividend to an associated company in a low-tax jurisdiction | 5% SDC | from 1 January 2026 | SDC Law, art. 3(1)(d)(i)(aa); commencement note to Law 48(I)/2025: https://www.cylaw.org/nomoi/enop/non-ind/2002_1_117/full.html |
-| Dividend to an associated company in an EU-listed non-cooperative jurisdiction | 17% SDC (prevails if both) | 2026 | SDC Law, art. 3(1)(d)(i)(bb) |
-| Interest to an associated company in an EU-listed non-cooperative jurisdiction | 17% SDC | 2026 | SDC Law, art. 3B(c) |
-| Low-tax jurisdiction test | third country with a corporate rate below 50% of the Cyprus rate (below 7.5% at 15%) | 2026 | SDC Law, art. 2; Income Tax Law, art. 2 |
+| Dividend to an associated company in an EU-listed non-cooperative jurisdiction | 17% SDC (prevails if both) | 2026 | [SDC Law, art. 3(1)(d)(i)(bb)](https://www.cylaw.org/nomoi/enop/non-ind/2002_1_117/full.html)|
+| Interest to an associated company in an EU-listed non-cooperative jurisdiction | 17% SDC | 2026 | [SDC Law, art. 3B(c)](https://www.cylaw.org/nomoi/enop/non-ind/2002_1_117/full.html)|
+| Low-tax jurisdiction test | third country with a corporate rate below 50% of the Cyprus rate (below 7.5% at 15%) | 2026 | SDC Law, art. 2; [Income Tax Law, art. 2](https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html)|
 | Capital gains tax on Cyprus immovable property and on shares deriving value from it (residents and non-residents) | 20% | 2026 | Capital Gains Tax Law, art. 4: https://www.cylaw.org/nomoi/enop/non-ind/1980_1_52/full.html |
-| Shares count as Cyprus property for CGT if held through other companies | at least 20% of their market value from Cyprus immovable property | 2026 | Capital Gains Tax Law, art. 2 ("ιδιοκτησία") |
-| CGT lifetime exemption, individuals | EUR 30,000 | 2026 | Capital Gains Tax Law, art. 5(1) |
+| Shares count as Cyprus property for CGT if held through other companies | at least 20% of their market value from Cyprus immovable property | 2026 | [Capital Gains Tax Law, art. 2 ("ιδιοκτησία")](https://www.cylaw.org/nomoi/enop/non-ind/1980_1_52/full.html)|
+| CGT lifetime exemption, individuals | EUR 30,000 | 2026 | [Capital Gains Tax Law, art. 5(1)](https://www.cylaw.org/nomoi/enop/non-ind/1980_1_52/full.html)|
 | Employee social insurance | 8.8% of insurable earnings | 2026 | Business in Cyprus (Government portal): https://www.businessincyprus.gov.cy/social-insurance-registration-and-contributions/ |
 | Maximum insurable earnings, monthly-paid employees | EUR 5,742 a month from 1 January 2026 | 2026 | Social Insurance Services: https://sisweb.mlsi.gov.cy/anotato2025/ |
 | GHS (GESY) contribution, employee | 2.65% of emoluments; income above EUR 180,000 is not charged | 2026 | General Healthcare System Law 89(I)/2001, art. 19(1)(a) and (4): https://www.cylaw.org/nomoi/enop/non-ind/2001_1_89/full.html |
@@ -230,4 +230,4 @@ Not yet confirmed: the jurisdictions on the EU Annex I list at each payment date
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-01. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `cy-cross-border` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/cy-cross-border. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `cy-cross-border` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/cy-cross-border. If neither is available, confirm every figure against the official source pages cited above before relying on it.

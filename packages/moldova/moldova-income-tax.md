@@ -1,19 +1,20 @@
 ---
 name: moldova-income-tax
 description: "Compute Moldova individual income tax for 2026 after classifying residence, citizenship, source, legal activity and the actual tax regime. Covers annual ordinary income, sole-trader and professional profit, personal/spouse/dependent exemptions, actual contribution and personal deductions, capital gains, final withholding, property rentals, foreign-tax credit and separate retail, plant-purchasing and independent-service regimes. Use for CET18, annual personal tax, self-employed tax, freelancer income, taxable investment receipts, exemption eligibility, foreign interest, capital disposals, fixed contributions and income-tax filing. This source-cited draft identifies ordinary and specialist gaps, and has a bounded source-review record linked under Sources. It does not certify every treaty or special-regime implementation or claim accountant attestation."
-version: "0.14"
+version: "0.15"
 jurisdiction: MD
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-14
 depends_on:
   - income-tax-workflow-base
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
+type: computation
 ---
 
-# Moldova individual income tax and self-employment, 2026 v0.14
+# Moldova individual income tax and self-employment, 2026 v0.15
 
 ## Who this applies to
 

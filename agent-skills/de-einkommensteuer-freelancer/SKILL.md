@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/de-einkommensteuer-freelancer"
   jurisdiction: "DE"
   tax_year: "2026"
-  last_updated: "2026-10-31"
+  last_updated: "2026-11-14"
 ---
 
 # Income tax for the self-employed in Germany (Einkommensteuer for Freiberufler and Gewerbetreibende)
@@ -461,4 +461,4 @@ Not yet confirmed: the 2026 ELSTER form names (taken from the 2025 instructions)
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-31. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `de-einkommensteuer-freelancer` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/de-einkommensteuer-freelancer. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `de-einkommensteuer-freelancer` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/de-einkommensteuer-freelancer. If neither is available, confirm every figure against the official source pages cited above before relying on it.

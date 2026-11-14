@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/turkey-pit"
   jurisdiction: "TR"
   tax_year: "2026"
-  last_updated: "2026-10-31"
+  last_updated: "2026-11-14"
 ---
 
-# Türkiye: personal income tax (gelir vergisi) (2026) v1.1
+# Türkiye: personal income tax (gelir vergisi) (2026) v1.2
 
 Turkish income tax is charged on individuals under the Gelir Vergisi Kanunu no. 193 (GVK) and collected by the Revenue Administration (Gelir İdaresi Başkanlığı, GİB). The tax year is the calendar year and the currency is the Turkish lira (TRY). The fixed amounts in the GVK are raised each year by a General Communiqué; the 2026 amounts below come from Communiqué no. 332 (Official Gazette 31 December 2025, no. 33124, 5th repeat), as written into the consolidated GVK text on mevzuat.gov.tr. That text includes the 2026 amending laws 7577, 7578, 7582 and 7587.
 
@@ -26,30 +26,30 @@ Turkish income tax is charged on individuals under the Gelir Vergisi Kanunu no. 
 
 | Item | Rate or amount | Year | Source |
 |---|---|---|---|
-| Tariff, all income other than wages | 15% to TRY 190,000; TRY 28,500 + 20% to TRY 400,000; TRY 70,500 + 27% to TRY 1,000,000; TRY 232,500 + 35% to TRY 5,300,000; TRY 1,737,500 + 40% above | 2026 | GVK art. 103 with Communiqué 332 amounts, https://www.mevzuat.gov.tr/MevzuatMetin/1.5.193.pdf |
-| Tariff, wage income | 15% to TRY 190,000; TRY 28,500 + 20% to TRY 400,000; TRY 70,500 + 27% to TRY 1,500,000; TRY 367,500 + 35% to TRY 5,300,000; TRY 1,697,500 + 40% above | 2026 | GVK art. 103 |
-| Rental exemption, residential lettings | TRY 58,000 of the year's gross rent | 2026 | GVK art. 21(1) |
-| Rental exemption lost if gross wages, investment, rental and other income together exceed | TRY 1,500,000 (the wage scale's third band) | 2026 | GVK art. 21(2), art. 103 |
-| Lump-sum expense for rental income (instead of actual costs) | 15% of gross rent; locked in for two years | 2026 | GVK art. 74 |
-| Young entrepreneur exemption (under 29, first business, first three tax years) | Profit up to TRY 400,000 (the tariff's second band) | 2026 | GVK mükerrer art. 20, art. 103 |
-| Dividends from Turkish companies | Half exempt | 2026 | GVK art. 22(3) |
+| Tariff, all income other than wages | 15% to TRY 190,000; TRY 28,500 + 20% to TRY 400,000; TRY 70,500 + 27% to TRY 1,000,000; TRY 232,500 + 35% to TRY 5,300,000; TRY 1,737,500 + 40% above | 2026 | GVK art. 103 with Communiqué 332 amounts, https://www.mevzuat.gov.tr/MevzuatMetin/1.4.193.pdf |
+| Tariff, wage income | 15% to TRY 190,000; TRY 28,500 + 20% to TRY 400,000; TRY 70,500 + 27% to TRY 1,500,000; TRY 367,500 + 35% to TRY 5,300,000; TRY 1,697,500 + 40% above | 2026 | GVK art. 103, https://www.mevzuat.gov.tr/MevzuatMetin/1.4.193.pdf |
+| Rental exemption, residential lettings | TRY 58,000 of the year's gross rent | 2026 | GVK art. 21(1), https://www.mevzuat.gov.tr/MevzuatMetin/1.4.193.pdf |
+| Rental exemption lost if gross wages, investment, rental and other income together exceed | TRY 1,500,000 (the wage scale's third band) | 2026 | GVK art. 21(2), art. 103, https://www.mevzuat.gov.tr/MevzuatMetin/1.4.193.pdf |
+| Lump-sum expense for rental income (instead of actual costs) | 15% of gross rent; locked in for two years | 2026 | GVK art. 74, https://www.mevzuat.gov.tr/MevzuatMetin/1.4.193.pdf |
+| Young entrepreneur exemption (under 29, first business, first three tax years) | Profit up to TRY 400,000 (the tariff's second band) | 2026 | GVK mükerrer art. 20, art. 103, https://www.mevzuat.gov.tr/MevzuatMetin/1.4.193.pdf |
+| Dividends from Turkish companies | Half exempt | 2026 | GVK art. 22(3), https://www.mevzuat.gov.tr/MevzuatMetin/1.4.193.pdf |
 | Dividend withholding | 15% | 2026 | Presidential Decision 9286, art. 1 (GVK art. 94(6)), https://www.resmigazete.gov.tr/eskiler/2024/12/20241222-15.pdf |
 | Withholding on professional fees paid by businesses | 20%; 17% for copyright and similar works under art. 18 | 2026 | Decision 2009/14592 art. 1(2) (GVK art. 94(2)); GİB table of art. 94 rates, https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Fyardim-kaynaklar%2Fyararli-bilgiler%2Fgelir-vergisi-kanununun-94uncu-maddesinde-yer-alan-kesinti-oranlari.pdf |
-| Withholding on rent paid by businesses for property and rights in art. 70 | 20% | 2026 | Decision 2009/14592 art. 1(5)(a) (GVK art. 94(5)); GİB table of art. 94 rates |
-| Capital gains (değer artışı kazancı) exempt each year, other than on securities and capital-market instruments | TRY 150,000 | 2026 | GVK mükerrer art. 80 |
-| Severance pay due under Labour Law 1475 or Maritime Labour Law 854 | Exempt in full | 2026 | GVK art. 25(7) |
+| Withholding on rent paid by businesses for property and rights in art. 70 | 20% | 2026 | Decision 2009/14592 art. 1(5)(a) (GVK art. 94(5)); GİB table of art. 94 rates, https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Fyardim-kaynaklar%2Fyararli-bilgiler%2Fgelir-vergisi-kanununun-94uncu-maddesinde-yer-alan-kesinti-oranlari.pdf |
+| Capital gains (değer artışı kazancı) exempt each year, other than on securities and capital-market instruments | TRY 150,000 | 2026 | GVK mükerrer art. 80, https://www.mevzuat.gov.tr/MevzuatMetin/1.4.193.pdf |
+| Severance pay due under Labour Law 1475 or Maritime Labour Law 854 | Exempt in full | 2026 | GVK art. 25(7), https://www.mevzuat.gov.tr/MevzuatMetin/1.4.193.pdf |
 | State contribution to private pension (BES) contributions paid by the participant in TRY | 20% | 2026 | Law 4632 ek art. 1, rate set by Presidential Decision 10811 (Official Gazette 7 January 2026), https://www.mevzuat.gov.tr/MevzuatMetin/1.5.4632.pdf |
-| Investment and rental income not withheld, no return needed if the year's total is at most | TRY 22,000 | 2026 | GVK art. 86(1)(d) |
-| Wages from one employer, fully withheld: no return up to | TRY 5,300,000 (fourth band) | 2026 | GVK art. 86(1)(b) |
-| Wages from a second employer: no return if second-employer wages do not exceed | TRY 400,000, and total wages do not exceed TRY 5,300,000 | 2026 | GVK art. 86(1)(b) |
-| Withheld multiple-employer wages, investment and rental income: no return if total does not exceed | TRY 400,000 | 2026 | GVK art. 86(1)(c) |
-| Personal insurance premiums (life at 50%) deductible | Up to 15% of declared income and the annual gross minimum wage | 2026 | GVK art. 89(1) |
-| Education and health spending (self, spouse, minor children, in Türkiye, documented) | Up to 10% of declared income | 2026 | GVK art. 89(2) |
-| Donations to public bodies, public-benefit associations and tax-exempt foundations | Up to 5% of declared income (10% in priority development regions) | 2026 | GVK art. 89(4) |
-| Disability allowance (monthly, from wages) | TRY 12,000 (1st degree), TRY 7,000 (2nd), TRY 3,000 (3rd) | 2026 | GVK art. 31 |
-| Provisional tax rate | 15% (the first band rate) | 2026 | GVK mükerrer art. 120 |
-| Loss carry-forward | 5 years | 2026 | GVK art. 88 |
-| Foreign income exemption for new residents | 20 years | 2026 | GVK mükerrer art. 20/D (Law 7582) |
+| Investment and rental income not withheld, no return needed if the year's total is at most | TRY 22,000 | 2026 | GVK art. 86(1)(d), https://www.mevzuat.gov.tr/MevzuatMetin/1.4.193.pdf |
+| Wages from one employer, fully withheld: no return up to | TRY 5,300,000 (fourth band) | 2026 | GVK art. 86(1)(b), https://www.mevzuat.gov.tr/MevzuatMetin/1.4.193.pdf |
+| Wages from a second employer: no return if second-employer wages do not exceed | TRY 400,000, and total wages do not exceed TRY 5,300,000 | 2026 | GVK art. 86(1)(b), https://www.mevzuat.gov.tr/MevzuatMetin/1.4.193.pdf |
+| Withheld multiple-employer wages, investment and rental income: no return if total does not exceed | TRY 400,000 | 2026 | GVK art. 86(1)(c), https://www.mevzuat.gov.tr/MevzuatMetin/1.4.193.pdf |
+| Personal insurance premiums (life at 50%) deductible | Up to 15% of declared income and the annual gross minimum wage | 2026 | GVK art. 89(1), https://www.mevzuat.gov.tr/MevzuatMetin/1.4.193.pdf |
+| Education and health spending (self, spouse, minor children, in Türkiye, documented) | Up to 10% of declared income | 2026 | GVK art. 89(2), https://www.mevzuat.gov.tr/MevzuatMetin/1.4.193.pdf |
+| Donations to public bodies, public-benefit associations and tax-exempt foundations | Up to 5% of declared income (10% in priority development regions) | 2026 | GVK art. 89(4), https://www.mevzuat.gov.tr/MevzuatMetin/1.4.193.pdf |
+| Disability allowance (monthly, from wages) | TRY 12,000 (1st degree), TRY 7,000 (2nd), TRY 3,000 (3rd) | 2026 | GVK art. 31, https://www.mevzuat.gov.tr/MevzuatMetin/1.4.193.pdf |
+| Provisional tax rate | 15% (the first band rate) | 2026 | GVK mükerrer art. 120, https://www.mevzuat.gov.tr/MevzuatMetin/1.4.193.pdf |
+| Loss carry-forward | 5 years | 2026 | GVK art. 88, https://www.mevzuat.gov.tr/MevzuatMetin/1.4.193.pdf |
+| Foreign income exemption for new residents | 20 years | 2026 | GVK mükerrer art. 20/D (Law 7582), https://www.mevzuat.gov.tr/MevzuatMetin/1.4.193.pdf |
 
 ## The taxable base
 
@@ -162,9 +162,9 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Gelir Vergisi Kanunu no. 193, consolidated (2026 amounts from Communiqué 332; amendments to Law 7587): arts. 2-7, 20, 20/D, 21, 22, 23, 25, 31, 74, 80, mükerrer 80, 85, 86, 88, 89, 92, 94, 103, 104, 117, 120, 121, 123 | https://www.mevzuat.gov.tr/MevzuatMetin/1.5.193.pdf | 2026-10-31 |
-| Vergi Usul Kanunu no. 213, consolidated (2026 amounts from VUK Communiqué 588): arts. mükerrer 28, 344, 352, 353 and penalty table 1 | https://www.mevzuat.gov.tr/MevzuatMetin/1.5.213.pdf | 2026-10-31 |
-| Law 6183 on collection of public receivables, art. 51 (3.7% a month, Presidential Decision 10556) | https://www.mevzuat.gov.tr/MevzuatMetin/1.5.6183.pdf | 2026-10-31 |
+| Gelir Vergisi Kanunu no. 193, consolidated (2026 amounts from Communiqué 332; amendments to Law 7587): arts. 2-7, 20, 20/D, 21, 22, 23, 25, 31, 74, 80, mükerrer 80, 85, 86, 88, 89, 92, 94, 103, 104, 117, 120, 121, 123 | https://www.mevzuat.gov.tr/MevzuatMetin/1.4.193.pdf | 2026-10-31 |
+| Vergi Usul Kanunu no. 213, consolidated (2026 amounts from VUK Communiqué 588): arts. mükerrer 28, 344, 352, 353 and penalty table 1 | https://www.mevzuat.gov.tr/MevzuatMetin/1.4.213.pdf | 2026-10-31 |
+| Law 6183 on collection of public receivables, art. 51 (3.7% a month, Presidential Decision 10556) | https://www.mevzuat.gov.tr/MevzuatMetin/1.3.6183.pdf | 2026-10-31 |
 | GİB, Beyanname verme ve ödeme süreleri (filing and payment dates table) | https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Fyardim-kaynaklar%2Fyararli-bilgiler%2FBeyannameVermeveOdemeSureleri.pdf | 2026-10-31 |
 | Presidential Decision 9286 (dividend withholding 10% to 15%), Official Gazette 22 December 2024 no. 32760 | https://www.resmigazete.gov.tr/eskiler/2024/12/20241222-15.pdf | 2026-10-31 |
 | Council of Ministers Decision 2009/14592 on GVK art. 94 withholding rates, Official Gazette 3 February 2009 no. 27130 | https://www.resmigazete.gov.tr/eskiler/2009/02/20090203-3.htm | 2026-10-31 |
@@ -175,4 +175,4 @@ Not yet confirmed: withholding rates on interest (deposit interest is now set un
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-31. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `turkey-pit` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/turkey-pit. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `turkey-pit` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/turkey-pit. If neither is available, confirm every figure against the official source pages cited above before relying on it.

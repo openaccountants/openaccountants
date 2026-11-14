@@ -2,16 +2,17 @@
 name: sj-svalbard-tax-residence
 description: >
   Determine Svalbard individual and company tax residence and ordinary cross-border scope for 2026. Covers permanent residence from the beginning of a twelve-month stay, temporary work and business, the conditional five-year newcomer limitation, rolling departure days, medical absence, local property and mainland or foreign income allocation. Explains mainland exemption for Svalbard-taxed items, treaty exclusion, foreign dividend withholding and associated filing/payment duties. Flags mainland exit tax when moving to Svalbard and separates it from departure from Svalbard. Two calculations test nonresident withholding and the foreign-capital credit ceiling. Use for Svalbard residence, moving, nonresidents, cross-border tax and distributions. Jan Mayen is excluded; specialist relief and exit computations remain limited. This source-cited draft awaits professional review.
-version: 0.3
+version: 0.4
 jurisdiction: SJ
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+type: situation-rules
 ---
 
-# Svalbard: residence and cross-border tax in 2026 v0.3
+# Svalbard: residence and cross-border tax in 2026 v0.4
 
 > **Source-cited draft.** Tax year 2026, checked 24 October 2026. General reference for working papers; a qualified professional must review the facts and filing position. Independent AI review does not confer accountant review.
 

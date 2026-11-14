@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/fo-vat"
   jurisdiction: "FO"
   tax_year: "2026"
-  last_updated: "2026-11-01"
+  last_updated: "2026-11-14"
 ---
 
-# Faroe Islands VAT registration and returns v0.4
+# Faroe Islands VAT registration and returns v0.5
 
 > **Checked against the law for 2026.** This Guide has no professional attestation
 > for the revised content. It prepares classification and calculation working
@@ -361,4 +361,4 @@ Not yet confirmed: separate authority reconciling Q2 payment under §22 with TAK
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-01. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `fo-vat` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/fo-vat. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `fo-vat` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/fo-vat. If neither is available, confirm every figure against the official source pages cited above before relying on it.

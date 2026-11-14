@@ -1,23 +1,38 @@
 ---
 name: india-einvoice
-description: Use this skill whenever asked about India GST e-invoicing, Invoice Registration Portal (IRP), IRN generation, e-invoice JSON schema, NIC portal, GST INV-01 format, e-invoice threshold, B2B invoice reporting under GST, QR code on invoices, GSTR-1 auto-population, e-way bill integration with e-invoice, or any question about generating, validating, or troubleshooting Indian e-invoices. Also trigger when advising on e-invoice compliance for businesses crossing Rs 5 crore turnover, configuring ERP/billing software for IRP integration, or handling IRP rejections. ALWAYS read this skill before touching any India e-invoice work.
-version: 1.0
+description: >
+  Use this skill whenever asked about Indian GST e-invoicing in FY 2026-27, the Invoice
+  Reference Number (IRN), the Invoice Registration Portal (IRP), or rule 48(4) of the
+  CGST Rules. Trigger on phrases like e-invoice India, IRN, IRP, einvoice1.gst.gov.in,
+  e-invoicing threshold, five crore e-invoicing, QR code on GST invoice, dynamic QR B2C,
+  INV-01 JSON, e-invoice exemption SEZ bank insurer, invoice without IRN, e-invoice
+  penalty, or any question about generating, validating or archiving GST e-invoices. It
+  covers who must comply (aggregate turnover over five crore rupees in any year from
+  2017-18, from 1 August 2023), excluded classes, the JSON schema fields, GstRt values
+  from 22 September 2025, validation, archiving for seventy-two months, penalties under
+  sections 122 and 125, and links to GSTR-1 and e-way bills. Tier 2, not reviewed by an
+  accountant.
+version: "2.0"
 jurisdiction: IN
 tax_year: 2026
-last_updated: 2026-10-17
+tax_year_notes: "FY 2026-27 (1 April 2026 to 31 March 2027); law as read on 14 November 2026"
+last_updated: 2026-11-14
 depends_on:
   - einvoice-workflow-base
 category: invoicing
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: e-invoicing
+type: filing-howto
 ---
 
-# India GST E-Invoicing (IRN under Rule 48(4))
+# India GST E-Invoicing (IRN under Rule 48(4)), FY 2026-27
 
-This Guide covers GST e-invoicing in India: who must obtain an Invoice Reference Number (IRN) before issuing an invoice, who is excluded, what the invoice must then show, and what happens when an invoice is issued without one. Figures are for tax year 2026. GST is not year-based, so this Guide states the rules in force on 17 October 2026 and the date each one started. The law is rule 48(4) to (6) of the Central Goods and Services Tax Rules, 2017 (CGST Rules) and Notification No. 13/2020-Central Tax as amended. The 57th GST Council meeting of 8 October 2026 recommended extending e-invoicing to more transactions; that is a proposal, not law (see Section 2).
+> **General reference only.** This skill is general tax reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts. Do not rely on it to file, pay or take a tax position without review by a qualified professional in India.
 
-## Section 1: Quick Reference
+This skill covers GST e-invoicing in India: who must obtain an Invoice Reference Number (IRN) before issuing an invoice, who is excluded, what the invoice must then show, and what happens when an invoice is issued without one. Figures are for tax year 2026. GST is not year-based, so this skill states the rules in force on 17 October 2026 and the date each one started. The law is rule 48(4) to (6) of the Central Goods and Services Tax Rules, 2017 (CGST Rules) and Notification No. 13/2020-Central Tax as amended. The 57th GST Council meeting of 8 October 2026 recommended extending e-invoicing to more transactions; that is a proposal, not law (see Section 2).
+
+## Who this applies to
 
 | Field | Value |
 | --- | --- |
@@ -26,29 +41,12 @@ This Guide covers GST e-invoicing in India: who must obtain an Invoice Reference
 | E-invoicing system | Invoice Reference Number (IRN) obtained by uploading invoice data to the Common Goods and Services Tax Electronic Portal (the Invoice Registration Portal, IRP) |
 | Who runs the portals | Goods and Services Tax Network (GSTN); the e-invoice websites listed in Notification No. 69/2019-Central Tax are "managed by the Goods and Services Tax Network" |
 | Key law | Rule 48(4), (5) and (6) of the CGST Rules; Notification No. 13/2020-Central Tax of 21 March 2020 as amended (who must comply) |
-| Invoice format | FORM GST INV-01 particulars (rule 48(4)); the IRP uses a JSON schema published by GSTN (see Section 3) |
-| Current threshold | Aggregate turnover in any preceding financial year from 2017-18 onwards exceeding five crore rupees, from 1 August 2023 (Section 2) |
+| Invoice format | FORM GST INV-01 particulars (rule 48(4)); the IRP uses a JSON schema published by GSTN (see The base) |
+| Current threshold | Aggregate turnover in any preceding financial year from 2017-18 onwards exceeding five crore rupees, from 1 August 2023 (rates table) |
 | E-invoicing start | 1 October 2020 (paragraph 2 of Notification No. 13/2020-Central Tax) |
 | Portal websites | The e-invoice websites listed in [Notification No. 69/2019-Central Tax](https://gstcouncil.gov.in/sites/default/files/2024-05/notfctn-69-central-tax-english-2019.pdf) |
 
-### Turnover Phase-In Timeline
-
-Each row is the amendment to Notification No. 13/2020-Central Tax that set the threshold. The test is aggregate turnover "exceeding" the amount, so a business at exactly the amount is not caught by that row.
-
-| Aggregate turnover exceeding | Mandatory from | Notification |
-| --- | --- | --- |
-| five hundred crore rupees | 1 October 2020 | [61/2020-Central Tax](https://gstcouncil.gov.in/sites/default/files/2024-05/notfctn-61-central-tax-english-2020.pdf) (start date in [13/2020-Central Tax](https://gstcouncil.gov.in/sites/default/files/2024-05/notfctn-13-central-tax-english-2020.pdf)) |
-| one hundred crore rupees | 1 January 2021 | [88/2020-Central Tax](https://gstcouncil.gov.in/sites/default/files/2024-05/notfctn-88-central-tax-english-2020.pdf) |
-| fifty crore rupees | 1 April 2021 | [05/2021-Central Tax](https://gstcouncil.gov.in/sites/default/files/2024-05/notfctn-05-central-tax-english-2021.pdf) |
-| twenty crore rupees | 1 April 2022 | [01/2022-Central Tax](https://gstcouncil.gov.in/sites/default/files/2024-05/nn_01_2022_english.pdf) |
-| ten crore rupees | 1 October 2022 | [17/2022-Central Tax](https://gstcouncil.gov.in/sites/default/files/2024-05/17-2022-ct-eng_1_1.pdf) |
-| five crore rupees | 1 August 2023 | [10/2023-Central Tax](https://gstcouncil.gov.in/sites/default/files/2024-05/10ct_eng.pdf) |
-
-The note printed under Notification No. 10/2023-Central Tax says the principal notification "was last amended vide notification No. 17/2022-Central Tax". Check the CBIC notification pages for any later amendment of Notification No. 13/2020-Central Tax.
-
-## Section 2: Mandate Scope
-
-### Who Must Comply
+### Who must comply
 
 - **Compliance obligation.** A registered person whose aggregate turnover in any preceding financial year from 2017-18 onwards exceeds five crore rupees must prepare invoices "and other prescribed documents" under rule 48(4) for supplies of goods or services or both to a registered person, and for exports. Source: [Notification No. 13/2020-Central Tax](https://gstcouncil.gov.in/sites/default/files/2024-05/notfctn-13-central-tax-english-2020.pdf), with "any preceding financial year from 2017-18 onwards" and "or for exports" inserted by [Notification No. 70/2020-Central Tax](https://gstcouncil.gov.in/sites/default/files/2024-05/notfctn-70-central-tax-english-2020.pdf), and the five crore rupees figure from [Notification No. 10/2023-Central Tax](https://gstcouncil.gov.in/sites/default/files/2024-05/10ct_eng.pdf) from 1 August 2023.
 - **Any preceding year counts.** The test looks at every financial year from 2017-18 up to the year before the current one. One year above the threshold is enough. A later fall in turnover does not take the business out, because the test still finds that earlier year.
@@ -56,17 +54,7 @@ The note printed under Notification No. 10/2023-Central Tax says the principal n
 - **Coverage.** Supplies to registered persons (B2B) and exports. Supplies to unregistered persons (B2C) are outside rule 48(4); see the B2C QR code rule below.
 - Rule 48(4) also lets "the Commissioner ... by notification, exempt a person or a class of registered persons from issuance of invoice under this sub-rule for a specified period" ([rule 48](https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/rules/cgst_rules/active/chapter6/rule48_v1.00.html)).
 
-### Document Types Covered
-
-Notification No. 13/2020-Central Tax covers the "invoice and other prescribed documents". The IRP schema uses these document type codes (from the earlier version of this Guide; the schema itself could not be read for this Guide):
-
-| Document | IRP Document Type Code |
-| --- | --- |
-| Tax Invoice | INV |
-| Credit Note | CRN |
-| Debit Note | DBN |
-
-### Exempted Categories
+### Exempted categories
 
 These registered persons are outside Notification No. 13/2020-Central Tax whatever their turnover:
 
@@ -85,19 +73,65 @@ The rule 54 classes are listed in [rule 54 of the CGST Rules](https://taxinforma
 
 A B2C invoice issued by a registered person whose aggregate turnover in any preceding financial year from 2017-18 onwards exceeds five hundred crore rupees must carry a Dynamic Quick Response (QR) code. Excluded: the persons in rule 54(2), (3), (4) and (4A), and a registered person referred to in section 14 of the Integrated Goods and Services Tax Act, 2017. Where the supplier makes a Dynamic QR code available to the recipient through a digital display, a B2C invoice "containing cross-reference of the payment using a Dynamic Quick Response (QR) code, shall be deemed to be having Quick Response (QR) code". Source: [Notification No. 14/2020-Central Tax](https://gstcouncil.gov.in/sites/default/files/2024-05/notfctn-14-central-tax-english-2020.pdf), with the turnover test and the start date of 1 December 2020 set by [Notification No. 71/2020-Central Tax](https://gstcouncil.gov.in/sites/default/files/2024-05/notfctn-71-central-tax-english-2020.pdf). This QR code is not an IRN; B2C invoices are not reported to the IRP under rule 48(4).
 
-### Time Limit for Reporting
+## Rates, bands and thresholds
 
-No allowed official page states a time limit for obtaining an IRN after the invoice date. GSTN has announced reporting limits by advisory on the GST portals, which could not be read for this Guide. Rule 48(4) itself requires the invoice to be prepared "after obtaining an Invoice Reference Number", so the IRN comes first and the invoice is issued with it, inside the time for issuing an invoice under section 31 of the CGST Act (for goods, "before or at the time of" removal or delivery). Before advising on a late IRN, check the current GSTN advisory on the e-invoice portal.
+### Turnover phase-in timeline
 
-### Pending: 57th GST Council recommendation (not law)
+Each row is the amendment to Notification No. 13/2020-Central Tax that set the threshold. The test is aggregate turnover "exceeding" the amount, so a business at exactly the amount is not caught by that row.
 
-On 8 October 2026 the 57th GST Council recommended "extending e-invoicing to domestic supplies received from an unregistered person where the tax is payable under reverse charge mechanism, as well as to the import of services" for taxpayers above a stated turnover. Source: [57th GST Council press release](https://gstcouncil.gov.in/sites/default/files/2026-10/press_release_0.pdf). It applies only once the CGST Rules or the notifications are amended and notified. On 17 October 2026 it is not in force.
+The note printed under Notification No. 10/2023-Central Tax says the principal notification "was last amended vide notification No. 17/2022-Central Tax". Check the CBIC notification pages for any later amendment of Notification No. 13/2020-Central Tax.
 
-## Section 3: Technical Format
+| Aggregate turnover exceeding | Mandatory from | Notification |
+| --- | --- | --- |
+| five hundred crore rupees | 1 October 2020 | [61/2020-Central Tax](https://gstcouncil.gov.in/sites/default/files/2024-05/notfctn-61-central-tax-english-2020.pdf) (start date in [13/2020-Central Tax](https://gstcouncil.gov.in/sites/default/files/2024-05/notfctn-13-central-tax-english-2020.pdf)) |
+| one hundred crore rupees | 1 January 2021 | [88/2020-Central Tax](https://gstcouncil.gov.in/sites/default/files/2024-05/notfctn-88-central-tax-english-2020.pdf) |
+| fifty crore rupees | 1 April 2021 | [05/2021-Central Tax](https://gstcouncil.gov.in/sites/default/files/2024-05/notfctn-05-central-tax-english-2021.pdf) |
+| twenty crore rupees | 1 April 2022 | [01/2022-Central Tax](https://gstcouncil.gov.in/sites/default/files/2024-05/nn_01_2022_english.pdf) |
+| ten crore rupees | 1 October 2022 | [17/2022-Central Tax](https://gstcouncil.gov.in/sites/default/files/2024-05/17-2022-ct-eng_1_1.pdf) |
+| five crore rupees | 1 August 2023 | [10/2023-Central Tax](https://gstcouncil.gov.in/sites/default/files/2024-05/10ct_eng.pdf) |
 
-The schema, field names, codes, limits, API and portal behaviour in Sections 3 to 7 come from the earlier version of this Guide and from GSTN's published schema and API documents. The GSTN e-invoice and GST portals refuse the fetcher this Guide was checked with, so none of this technical detail was checked against an official page; statements there that link a rule, notification or the Council release were checked. Before building or fixing an integration, confirm every field, code and limit against the schema and API documents on the e-invoice portal.
+### Other figures
 
-### Schema Specification
+| Item | Figure | Condition | Source |
+| --- | --- | --- | --- |
+| E-invoicing start (Notification No. 13/2020-Central Tax paragraph 2) | 1 October 2020 | Supplies to registered persons | https://gstcouncil.gov.in/sites/default/files/2024-05/notfctn-13-central-tax-english-2020.pdf |
+| B2C Dynamic QR code | Aggregate turnover in a financial year exceeding five hundred crore rupees | Rule 54 classes and others excluded | https://gstcouncil.gov.in/sites/default/files/2024-05/notfctn-14-central-tax-english-2020.pdf |
+| Retention of books and records (CGST Act s 36) | Until seventy-two months from the due date of the annual return for the year | Includes e-invoice data | https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/acts/2017_CGST_act/active/chapter8/section36_v1.00.html |
+
+### GST rates for GstRt from 22 September 2025
+
+| Item | Value | Note | Source |
+| --- | --- | --- | --- |
+| Standard rate | 18% | "a 2 rate structure with a Standard Rate of 18% and a Merit Rate of 5%" | https://gstcouncil.gov.in/sites/default/files/2025-09/press_release_press_information_bureau_0.pdf |
+| Merit rate | 5% | "a 2 rate structure with a Standard Rate of 18% and a Merit Rate of 5%" | https://gstcouncil.gov.in/sites/default/files/2025-09/press_release_press_information_bureau_0.pdf |
+| Special de-merit rate (a select few goods and services) | 40% | "a special de-merit rate of 40% for a select few goods and services" | https://gstcouncil.gov.in/sites/default/files/2025-09/press_release_press_information_bureau_0.pdf |
+
+### Penalties
+
+| Offence (CGST Act wording) | Penalty | Legal basis |
+| --- | --- | --- |
+| "supplies any goods or services or both without issue of any invoice or issues an incorrect or false invoice" | "ten thousand rupees or an amount equivalent to the tax evaded", whichever is higher | [Section 122(1)(i)](https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/acts/2017_CGST_act/active/chapter19/section122_v1.00.html) |
+| "issues any invoice or bill without supply of goods or services or both" | The same section 122(1) penalty: ten thousand rupees or the amount it names (tax evaded, or input tax credit "availed of or passed on or distributed irregularly"), whichever is higher | [Section 122(1)(ii)](https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/acts/2017_CGST_act/active/chapter19/section122_v1.00.html) |
+| "fails to issue invoice in accordance with the provisions of this Act or the rules made thereunder" | "may extend to twenty-five thousand rupees" | [Section 122(3)(e)](https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/acts/2017_CGST_act/active/chapter19/section122_v1.00.html) |
+| Any contravention with no separate penalty | "may extend to twenty-five thousand rupees" | [Section 125](https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/acts/2017_CGST_act/active/chapter19/section125_v1.00.html) |
+
+## The base
+
+### Document types covered
+
+Notification No. 13/2020-Central Tax covers the "invoice and other prescribed documents". The IRP schema uses these document type codes (from the earlier version of this skill; the schema itself could not be read for this skill):
+
+| Document | IRP Document Type Code |
+| --- | --- |
+| Tax Invoice | INV |
+| Credit Note | CRN |
+| Debit Note | DBN |
+
+### Technical Format
+
+The schema, field names, codes, limits, API and portal behaviour in Sections 3 to 7 come from the earlier version of this skill and from GSTN's published schema and API documents. The GSTN e-invoice and GST portals refuse the fetcher this skill was checked with, so none of this technical detail was checked against an official page; statements there that link a rule, notification or the Council release were checked. Before building or fixing an integration, confirm every field, code and limit against the schema and API documents on the e-invoice portal.
+
+#### Schema Specification
 
 | Aspect | Detail |
 | --- | --- |
@@ -108,7 +142,7 @@ The schema, field names, codes, limits, API and portal behaviour in Sections 3 t
 | Decimal precision | 2 decimal places for amounts |
 | Schema and API version | Check the version currently published by GSTN |
 
-### JSON Structure (Top-Level Objects)
+#### JSON Structure (Top-Level Objects)
 
 ~~~json
 {
@@ -129,15 +163,15 @@ The schema, field names, codes, limits, API and portal behaviour in Sections 3 t
 }
 ~~~
 
-### IRN Generation Algorithm
+#### IRN Generation Algorithm
 
 - **IRN generation.** The IRP, not the taxpayer, returns the IRN after it validates the upload. Per GSTN's documents it is a 64-character hash built from the supplier GSTIN, the financial year, the document type and the document number. Because the IRN is derived from those fields, the same document type and number cannot be registered twice in one financial year by the same GSTIN.
 
-## Section 4: Mandatory Fields
+### Mandatory Fields
 
-Field names below are the GSTN JSON schema names (not checked; see Section 3).
+Field names below are the GSTN JSON schema names (not checked; see Technical format under The base).
 
-### Transaction Details (TranDtls)
+#### Transaction Details (TranDtls)
 
 | Field Path | Description | Values |
 | --- | --- | --- |
@@ -146,7 +180,7 @@ Field names below are the GSTN JSON schema names (not checked; see Section 3).
 | TranDtls.RegRev | Reverse charge | Y / N |
 | TranDtls.IgstOnIntra | IGST on intra-State supply | Y / N |
 
-### Document Details (DocDtls)
+#### Document Details (DocDtls)
 
 | Field Path | Description | Constraints |
 | --- | --- | --- |
@@ -156,7 +190,7 @@ Field names below are the GSTN JSON schema names (not checked; see Section 3).
 
 The sixteen-character limit is in [rule 46(b) of the CGST Rules](https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/rules/cgst_rules/active/chapter6/rule46_v1.00.html).
 
-### Seller Details (SellerDtls)
+#### Seller Details (SellerDtls)
 
 | Field Path | Description |
 | --- | --- |
@@ -167,7 +201,7 @@ The sixteen-character limit is in [rule 46(b) of the CGST Rules](https://taxinfo
 | SellerDtls.Pin | 6-digit PIN code |
 | SellerDtls.Stcd | State code |
 
-### Buyer Details (BuyerDtls)
+#### Buyer Details (BuyerDtls)
 
 | Field Path | Description |
 | --- | --- |
@@ -179,7 +213,7 @@ The sixteen-character limit is in [rule 46(b) of the CGST Rules](https://taxinfo
 | BuyerDtls.Pin | PIN code |
 | BuyerDtls.Stcd | State code |
 
-### Item Details (ItemList[])
+#### Item Details (ItemList[])
 
 | Field Path | Description |
 | --- | --- |
@@ -198,7 +232,7 @@ The sixteen-character limit is in [rule 46(b) of the CGST Rules](https://taxinfo
 
 **HSN digits.** From 1 April 2021, a registered person whose aggregate turnover in the preceding financial year was up to five crores rupees shows 4 digits of the HSN code, and one with more than five crores rupees shows 6 digits. A person with turnover up to five crores rupees may leave the HSN code off invoices to unregistered persons. Source: [Notification No. 78/2020-Central Tax](https://gstcouncil.gov.in/sites/default/files/2024-05/notfctn-78-central-tax-english-2020.pdf). This test uses the preceding financial year only, not any year since 2017-18.
 
-### Value Details (ValDtls)
+#### Value Details (ValDtls)
 
 | Field Path | Description |
 | --- | --- |
@@ -208,45 +242,23 @@ The sixteen-character limit is in [rule 46(b) of the CGST Rules](https://taxinfo
 | ValDtls.SgstVal | Total SGST or UTGST |
 | ValDtls.TotInvVal | Total invoice value (INR) |
 
-## Section 5: Transmission Method
+### Validation Rules
 
-### API Integration (Recommended)
+#### IRP Pre-Checks (Real-Time)
 
-The IRP exposes an API for direct ERP integration, with a separate sandbox for testing. The base URLs, the API version in the path and the endpoint names are published by GSTN on the e-invoice portal; this Guide does not list them because those hosts could not be read. The earlier version of this Guide named these operations: authenticate, generate IRN (post invoice JSON), cancel IRN, and get invoice by IRN.
-
-### Authentication
-
-| Header | Description |
-| --- | --- |
-| client-id | Issued on API registration |
-| client-secret | Issued on API registration |
-| user_name | Taxpayer's API user name |
-| Gstin | Taxpayer's GSTIN |
-| AuthToken | Session token returned by the authentication call; its validity period and refresh method are set by GSTN |
-
-### Alternative Submission Methods
-
-1. **GSP or ASP route.** A GST Suvidha Provider or application service provider sits between the ERP and the IRP.
-2. **Bulk upload.** JSON file upload through the IRP web portal.
-3. **Offline tool.** A spreadsheet-to-JSON tool from the IRP portal, for low volumes.
-
-## Section 6: Validation Rules
-
-### IRP Pre-Checks (Real-Time)
-
-From the earlier version of this Guide (not checked; see Section 3):
+From the earlier version of this skill (not checked; see Technical format under The base):
 
 1. GSTIN validity: the supplier and buyer GSTINs must be active.
 2. Duplicate check: supplier GSTIN, document type, document number and financial year must be unique.
 3. Date validation: the document date cannot be in the future.
-4. HSN validation: the code must exist in the HSN master, with enough digits (Section 4).
+4. HSN validation: the code must exist in the HSN master, with enough digits (Mandatory fields under The base).
 5. Arithmetic: line totals must agree with document totals, within a small rounding tolerance.
 6. State code and PIN code must be consistent.
 7. GST rate: GstRt must be a rate the IRP accepts. The IRP's accepted-rate list could not be read; the general rates from 22 September 2025 are in Section 7.
 
-### Common Rejection Reasons
+#### Common Rejection Reasons
 
-The error codes below are from the earlier version of this Guide and were not checked against GSTN's current error list.
+The error codes below are from the earlier version of this skill and were not checked against GSTN's current error list.
 
 | Error Code | Description | Fix |
 | --- | --- | --- |
@@ -257,95 +269,139 @@ The error codes below are from the earlier version of this Guide and were not ch
 | 2269 | Item value mismatch | Recalculate TotAmt as Qty x UnitPrice |
 | 2287 | Total invoice value mismatch | Check ValDtls.TotInvVal against the sum of the components |
 
-## Section 7: Tax Computation Rules
+### Tax computation rules
 
-### Tax Amount Calculation
+#### Tax amount calculation
 
 - **Intra-State supply.** CGST and SGST (or UTGST), each half of the GST rate.
 - **Inter-State supply.** IGST at the full GST rate.
 - **Place of supply.** BuyerDtls.Pos decides intra-State or inter-State.
 
-### GST rates for GstRt from 22 September 2025
+#### GST rates for GstRt
 
-The 56th GST Council moved GST from four general slabs to two rates plus a special de-merit rate, for services and most goods from 22 September 2025. The old general slabs that are not in the table below no longer exist as general slabs.
-
-| Item | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://gstcouncil.gov.in/sites/default/files/2025-09/press_release_press_information_bureau_0.pdf |
-| Standard rate | 18% | "a 2 rate structure with a Standard Rate of 18% and a Merit Rate of 5%" |
-| Merit rate | 5% | "a 2 rate structure with a Standard Rate of 18% and a Merit Rate of 5%" |
-| Special de-merit rate (a select few goods and services) | 40% | "a special de-merit rate of 40% for a select few goods and services" |
+The 56th GST Council moved GST from four general slabs to two rates plus a special de-merit rate, for services and most goods from 22 September 2025. The old general slabs that are not in the rates table below no longer exist as general slabs.
 
 The 22 September 2025 date does not apply to pan masala, gutkha, cigarettes, chewing tobacco, unmanufactured tobacco and bidi. A revised rate structure for those goods took effect on 1 February 2026 ([GST Council newsletter, December 2025](https://gstcouncil.gov.in/sites/default/files/2026-01/monthly_newsletter_december_2025_1_0.pdf)). Take the rate for each HSN code from the rate notification, not from this table.
 
-### Rounding Rules
+#### Rounding rules
 
 - **Rounding.** Amounts to 2 decimal places. Round each line, then sum. The IRP allows a small difference between the sum of lines and the document total; check GSTN's current tolerance.
 
-### Multi-Rate Invoice
+#### Multi-rate invoice
 
 - **Multi-rate invoices.** Each line carries its own GstRt. ValDtls adds up IGST, CGST and SGST across lines. One invoice may mix rates.
 
-### Discount Handling
+#### Discount handling
 
 - **Discounts.** Applied at line level: AssAmt = TotAmt minus discount. Tax is calculated on AssAmt.
 
-## Section 8: Archiving Requirements
+## Deadlines and filing
+
+### Time limit for reporting
+
+No allowed official page states a time limit for obtaining an IRN after the invoice date. GSTN has announced reporting limits by advisory on the GST portals, which could not be read for this skill. Rule 48(4) itself requires the invoice to be prepared "after obtaining an Invoice Reference Number", so the IRN comes first and the invoice is issued with it, inside the time for issuing an invoice under section 31 of the CGST Act (for goods, "before or at the time of" removal or delivery). Before advising on a late IRN, check the current GSTN advisory on the e-invoice portal.
+
+### Transmission method
+
+#### API integration
+
+The IRP exposes an API for direct ERP integration, with a separate sandbox for testing. The base URLs, the API version in the path and the endpoint names are published by GSTN on the e-invoice portal; this skill does not list them because those hosts could not be read. The earlier version of this skill named these operations: authenticate, generate IRN (post invoice JSON), cancel IRN, and get invoice by IRN.
+
+#### Authentication
+
+| Header | Description |
+| --- | --- |
+| client-id | Issued on API registration |
+| client-secret | Issued on API registration |
+| user_name | Taxpayer's API user name |
+| Gstin | Taxpayer's GSTIN |
+| AuthToken | Session token returned by the authentication call; its validity period and refresh method are set by GSTN |
+
+#### Alternative submission methods
+
+1. **GSP or ASP route.** A GST Suvidha Provider or application service provider sits between the ERP and the IRP.
+2. **Bulk upload.** JSON file upload through the IRP web portal.
+3. **Offline tool.** A spreadsheet-to-JSON tool from the IRP portal, for low volumes.
+
+### Archiving requirements
 
 | Requirement | Detail |
 | --- | --- |
 | Retention period | Until the expiry of seventy-two months from the due date of the annual return for the year the records relate to (section 36 of the [CGST Act](https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/acts/2017_CGST_act/active/chapter8/section36_v1.00.html)). If the person is party to an appeal or other proceedings, or is under investigation, the records for that subject matter are kept until one year after final disposal, if that is later. |
 | What to keep | Recommended (not a rule): The invoice data uploaded, and the signed response from the IRP with the IRN and QR code |
-| QR code | The invoice must carry a "Quick Response code, having embedded Invoice Reference Number (IRN) in it" where it is issued under rule 48(4) (rule 46(r) of the [CGST Rules](https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/rules/cgst_rules/active/chapter6/rule46_v1.00.html)). The other contents of the QR code are set by GSTN; the earlier version of this Guide listed them as IRN, invoice date, supplier GSTIN, buyer GSTIN, invoice value, number of line items, HSN codes and a unique hash (unchecked GSTN material; see Section 3). |
-| Storage medium | The earlier version of this Guide said no specific medium is mandated and records must be producible on demand during audit (unchecked legacy statement; no allowed page was read for it). |
+| QR code | The invoice must carry a "Quick Response code, having embedded Invoice Reference Number (IRN) in it" where it is issued under rule 48(4) (rule 46(r) of the [CGST Rules](https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/rules/cgst_rules/active/chapter6/rule46_v1.00.html)). The other contents of the QR code are set by GSTN; the earlier version of this skill listed them as IRN, invoice date, supplier GSTIN, buyer GSTIN, invoice value, number of line items, HSN codes and a unique hash (unchecked GSTN material; see Technical format under The base). |
+| Storage medium | The earlier version of this skill said no specific medium is mandated and records must be producible on demand during audit (unchecked legacy statement; no allowed page was read for it). |
 | Paper copies | Rule 48(6): the triplicate and duplicate copy rules in rule 48(1) and (2) do not apply to an invoice prepared under rule 48(4). |
 
-## Section 9: Penalties for Non-Compliance
+### Pending: 57th GST Council recommendation (not law)
 
-Rule 48(5): an invoice issued by a person to whom rule 48(4) applies "in any manner other than the manner specified in the said sub-rule shall not be treated as an invoice". Source: [rule 48 of the CGST Rules](https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/rules/cgst_rules/active/chapter6/rule48_v1.00.html). The penalties in the CGST Act are below; which one an officer uses depends on the facts.
+On 8 October 2026 the 57th GST Council recommended "extending e-invoicing to domestic supplies received from an unregistered person where the tax is payable under reverse charge mechanism, as well as to the import of services" for taxpayers above a stated turnover. Source: [57th GST Council press release](https://gstcouncil.gov.in/sites/default/files/2026-10/press_release_0.pdf). It applies only once the CGST Rules or the notifications are amended and notified. On 17 October 2026 it is not in force.
 
-| Offence (CGST Act wording) | Penalty | Legal basis |
-| --- | --- | --- |
-| "supplies any goods or services or both without issue of any invoice or issues an incorrect or false invoice" | "ten thousand rupees or an amount equivalent to the tax evaded", whichever is higher | [Section 122(1)(i)](https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/acts/2017_CGST_act/active/chapter19/section122_v1.00.html) |
-| "issues any invoice or bill without supply of goods or services or both" | The same section 122(1) penalty: ten thousand rupees or the amount it names (tax evaded, or input tax credit "availed of or passed on or distributed irregularly"), whichever is higher | [Section 122(1)(ii)](https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/acts/2017_CGST_act/active/chapter19/section122_v1.00.html) |
-| "fails to issue invoice in accordance with the provisions of this Act or the rules made thereunder" | "may extend to twenty-five thousand rupees" | [Section 122(3)(e)](https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/acts/2017_CGST_act/active/chapter19/section122_v1.00.html) |
-| Any contravention with no separate penalty | "may extend to twenty-five thousand rupees" | [Section 125](https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/acts/2017_CGST_act/active/chapter19/section125_v1.00.html) |
+### Interaction with GST returns
 
-Section 122(1) does not use the words "per invoice". Whether each invoice issued without an IRN is a separate offence is not settled by the section text. The 57th GST Council recommended reducing the maximum general penalty under section 125. Separately, in amendments to sections 73, 74 and 74A (tax demands), it recommended removing the condition of a minimum penalty in non-fraud cases; that recommendation is not about section 122 ([57th GST Council press release](https://gstcouncil.gov.in/sites/default/files/2026-10/press_release_0.pdf)). These are recommendations, not law on 17 October 2026.
+The portal behaviour in this section is GSTN's and was not checked against an official page (see Technical format under The base).
 
-### Cascading Impact
+#### GSTR-1 auto-population
 
-Section 16(2)(a) of the [CGST Act](https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/acts/2017_CGST_act/active/chapter5/section16_v1.00.html) allows input tax credit only where the buyer "is in possession of a tax invoice or debit note issued by a supplier registered under this Act, or such other tax paying documents as may be prescribed". A document that rule 48(5) says "shall not be treated as an invoice" therefore puts the buyer's credit at risk. That gives buyers a reason to insist on an IRN, and suppliers a commercial reason to comply.
+- **GSTR-1.** The IRP passes e-invoice data to the GST portal, which fills the supplier's FORM GSTR-1. The supplier still files GSTR-1 and should reconcile what was filled against its books before filing. The earlier version of this skill said the IRP pushes the data the next day, and that where e-invoice data and manually entered GSTR-1 data differ, the e-invoice data prevails (unchecked GSTN material; see Technical format under The base).
 
-## Section 10: Interaction with Tax Guides
-
-The portal behaviour in this section is GSTN's and was not checked against an official page (see Section 3).
-
-### GSTR-1 Auto-Population
-
-- **GSTR-1.** The IRP passes e-invoice data to the GST portal, which fills the supplier's FORM GSTR-1. The supplier still files GSTR-1 and should reconcile what was filled against its books before filing. The earlier version of this Guide said the IRP pushes the data the next day, and that where e-invoice data and manually entered GSTR-1 data differ, the e-invoice data prevails (unchecked GSTN material; see Section 3).
-
-### E-Way Bill Integration
+#### E-way bill integration
 
 - **E-way bill.** Rule 138 of the [CGST Rules](https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/rules/cgst_rules/active/chapter16/rule138_v1.00.html) requires the e-way bill information before movement of goods of consignment value exceeding fifty thousand rupees, whether in relation to a supply, for reasons other than supply, or for an inward supply from an unregistered person. The IRP can take e-way bill details (EwbDtls) with the invoice upload; this saves a step but does not change the rule 138 test.
 
-### GSTR-2B / ITC Matching
+#### GSTR-2B and ITC matching
 
 - **GSTR-2B.** The buyer's GSTR-2B is built from what suppliers report, including e-invoices. Use it to match credit claims.
 
-### Annual Return (GSTR-9)
+#### Annual return (GSTR-9)
 
 - **GSTR-9.** E-invoice data feeds the annual return reconciliation. Expect officers to compare GSTR-9 figures with IRP data.
 
-## The method, step by step
+## Penalties and interest
 
-1. **Find the aggregate turnover for every financial year from 2017-18.** Add all GSTINs under the same PAN, on an all-India basis, excluding taxes and inward reverse-charge supplies (section 2(6) of the [CGST Act](https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/acts/2017_CGST_act/active/chapter1/section2_v1.00.html)).
-2. **Apply the threshold.** If any financial year from 2017-18 up to the year before the current one exceeds five crore rupees, the business is in from 1 August 2023 ([Notification No. 10/2023-Central Tax](https://gstcouncil.gov.in/sites/default/files/2024-05/10ct_eng.pdf)) or, if the first such year is FY 2023-24 or later, from 1 April of the next financial year, when that year becomes a "preceding financial year" ([Notification No. 70/2020-Central Tax](https://gstcouncil.gov.in/sites/default/files/2024-05/notfctn-70-central-tax-english-2020.pdf)). For an earlier date of a breach, use the phase-in table in Section 1.
-3. **Check the exclusions.** Insurer, bank, financial institution or NBFC, goods transport agency, passenger transport, multiplex cinema admission ([rule 54](https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/rules/cgst_rules/active/chapter6/rule54_v1.00.html)), SEZ unit ([Notification No. 61/2020-Central Tax](https://gstcouncil.gov.in/sites/default/files/2024-05/notfctn-61-central-tax-english-2020.pdf)), government department or local authority ([Notification No. 23/2021-Central Tax](https://gstcouncil.gov.in/sites/default/files/2024-05/notfctn-23-central-tax-english-2021.pdf)). An excluded person above the threshold prints the rule 46(s) declaration on its invoices ([rule 46](https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/rules/cgst_rules/active/chapter6/rule46_v1.00.html)).
-4. **Sort the documents.** Invoices and other prescribed documents for supplies to registered persons, and for exports, go through the IRP ([Notification No. 13/2020-Central Tax](https://gstcouncil.gov.in/sites/default/files/2024-05/notfctn-13-central-tax-english-2020.pdf) as amended by [70/2020-Central Tax](https://gstcouncil.gov.in/sites/default/files/2024-05/notfctn-70-central-tax-english-2020.pdf)). B2C invoices do not. If the turnover test of [Notification No. 14/2020-Central Tax](https://gstcouncil.gov.in/sites/default/files/2024-05/notfctn-14-central-tax-english-2020.pdf) is met, B2C invoices need a Dynamic QR code instead.
-5. **Get the IRN before issuing.** Rule 48(4) requires the invoice to be prepared after obtaining the IRN ([rule 48](https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/rules/cgst_rules/active/chapter6/rule48_v1.00.html)), within the invoice timing of [section 31](https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/acts/2017_CGST_act/active/chapter7/section31_v1.00.html). Check the current GSTN advisory for any reporting window.
-6. **Show the QR code and HSN.** The invoice carries the QR code with the embedded IRN (rule 46(r)) and the HSN digits set by [Notification No. 78/2020-Central Tax](https://gstcouncil.gov.in/sites/default/files/2024-05/notfctn-78-central-tax-english-2020.pdf).
-7. **Keep the records** for the period in [section 36](https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/acts/2017_CGST_act/active/chapter8/section36_v1.00.html).
+Rule 48(5): an invoice issued by a person to whom rule 48(4) applies "in any manner other than the manner specified in the said sub-rule shall not be treated as an invoice". Source: [rule 48 of the CGST Rules](https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/rules/cgst_rules/active/chapter6/rule48_v1.00.html). The penalties in the CGST Act are below; which one an officer uses depends on the facts.
+
+Section 122(1) does not use the words "per invoice". Whether each invoice issued without an IRN is a separate offence is not settled by the section text. The 57th GST Council recommended reducing the maximum general penalty under section 125. Separately, in amendments to sections 73, 74 and 74A (tax demands), it recommended removing the condition of a minimum penalty in non-fraud cases; that recommendation is not about section 122 ([57th GST Council press release](https://gstcouncil.gov.in/sites/default/files/2026-10/press_release_0.pdf)). These are recommendations, not law on 17 October 2026.
+
+### Cascading impact
+
+Section 16(2)(a) of the [CGST Act](https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/acts/2017_CGST_act/active/chapter5/section16_v1.00.html) allows input tax credit only where the buyer "is in possession of a tax invoice or debit note issued by a supplier registered under this Act, or such other tax paying documents as may be prescribed". A document that rule 48(5) says "shall not be treated as an invoice" therefore puts the buyer's credit at risk. That gives buyers a reason to insist on an IRN, and suppliers a commercial reason to comply.
+
+## Cross-border points
+
+- Exports are inside rule 48(4): an export invoice goes through the IRP like a B2B invoice (Notification No. 13/2020-Central Tax as amended by Notification No. 70/2020-Central Tax).
+- An SEZ unit is excluded as a supplier; a supplier to an SEZ unit is not excluded by that entry.
+- Imports of services are not e-invoiced today; the 57th Council recommendation to extend e-invoicing to imports of services is not law.
+- GST on the supply itself (IGST on exports with payment, LUT): `india-gst`.
+
+## Two worked examples that recompute
+
+### Example 1: Trading company, turnover history and a two-rate invoice
+
+A Bengaluru distributor's aggregate turnover across all GSTINs under its PAN was 3.8 crore rupees in 2022-23, 5.4 crore in 2023-24 and 4.9 crore in 2025-26. One year from 2017-18 above five crore rupees is enough, so it has been inside e-invoicing since that year's threshold applied, and the 2025-26 fall does not take it out. It issues a B2B invoice to a registered buyer in Karnataka: line 1 of 1,00,000 rupees at 18% and line 2 of 50,000 rupees at 5%. Each line splits into CGST and SGST at half the rate: 9,000 + 9,000 and 1,250 + 1,250. The invoice total is 1,70,500 rupees, and it must be reported to the IRP for an IRN before it is issued.
+
+```oa-check
+name: E-invoicing test on turnover history and a two-rate intra-State invoice
+inputs:
+  t2223: 38000000
+  t2324: 54000000
+  t2526: 49000000
+  line1: 100000
+  line2: 50000
+steps:
+  - highest_year: max(t2223, max(t2324, t2526))
+  - over_threshold: highest_year - 50000000
+  - cgst: line1 * 0.09 + line2 * 0.025
+  - sgst: line1 * 0.09 + line2 * 0.025
+  - invoice_total: line1 + line2 + cgst + sgst
+expected:
+  over_threshold: 4000000
+  cgst: 10250
+  sgst: 10250
+  invoice_total: 170500
+```
+
+A positive amount over the threshold in any year means e-invoicing applies.
 
 ## Ask the client first
 
@@ -355,37 +411,54 @@ The portal behaviour in this section is GSTN's and was not checked against an of
 - Has any invoice already gone out without an IRN, and if so, has the buyer claimed input tax credit on it?
 - Do you move goods with a consignment value above the rule 138 limit, and do you want e-way bills raised with the IRN?
 
-## When to refuse or refer
+### The method, step by step
+
+1. **Find the aggregate turnover for every financial year from 2017-18.** Add all GSTINs under the same PAN, on an all-India basis, excluding taxes and inward reverse-charge supplies (section 2(6) of the [CGST Act](https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/acts/2017_CGST_act/active/chapter1/section2_v1.00.html)).
+2. **Apply the threshold.** If any financial year from 2017-18 up to the year before the current one exceeds five crore rupees, the business is in from 1 August 2023 ([Notification No. 10/2023-Central Tax](https://gstcouncil.gov.in/sites/default/files/2024-05/10ct_eng.pdf)) or, if the first such year is FY 2023-24 or later, from 1 April of the next financial year, when that year becomes a "preceding financial year" ([Notification No. 70/2020-Central Tax](https://gstcouncil.gov.in/sites/default/files/2024-05/notfctn-70-central-tax-english-2020.pdf)). For an earlier date of a breach, use the phase-in table in Section 1.
+3. **Check the exclusions.** Insurer, bank, financial institution or NBFC, goods transport agency, passenger transport, multiplex cinema admission ([rule 54](https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/rules/cgst_rules/active/chapter6/rule54_v1.00.html)), SEZ unit ([Notification No. 61/2020-Central Tax](https://gstcouncil.gov.in/sites/default/files/2024-05/notfctn-61-central-tax-english-2020.pdf)), government department or local authority ([Notification No. 23/2021-Central Tax](https://gstcouncil.gov.in/sites/default/files/2024-05/notfctn-23-central-tax-english-2021.pdf)). An excluded person above the threshold prints the rule 46(s) declaration on its invoices ([rule 46](https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/rules/cgst_rules/active/chapter6/rule46_v1.00.html)).
+4. **Sort the documents.** Invoices and other prescribed documents for supplies to registered persons, and for exports, go through the IRP ([Notification No. 13/2020-Central Tax](https://gstcouncil.gov.in/sites/default/files/2024-05/notfctn-13-central-tax-english-2020.pdf) as amended by [70/2020-Central Tax](https://gstcouncil.gov.in/sites/default/files/2024-05/notfctn-70-central-tax-english-2020.pdf)). B2C invoices do not. If the turnover test of [Notification No. 14/2020-Central Tax](https://gstcouncil.gov.in/sites/default/files/2024-05/notfctn-14-central-tax-english-2020.pdf) is met, B2C invoices need a Dynamic QR code instead.
+5. **Get the IRN before issuing.** Rule 48(4) requires the invoice to be prepared after obtaining the IRN ([rule 48](https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/rules/cgst_rules/active/chapter6/rule48_v1.00.html)), within the invoice timing of [section 31](https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/acts/2017_CGST_act/active/chapter7/section31_v1.00.html). Check the current GSTN advisory for any reporting window.
+6. **Show the QR code and HSN.** The invoice carries the QR code with the embedded IRN (rule 46(r)) and the HSN digits set by [Notification No. 78/2020-Central Tax](https://gstcouncil.gov.in/sites/default/files/2024-05/notfctn-78-central-tax-english-2020.pdf).
+7. **Keep the records** for the period in [section 36](https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/acts/2017_CGST_act/active/chapter8/section36_v1.00.html).
+
+### When to refuse or refer
 
 - **Invoices already issued without an IRN.** Rule 48(5) says they are not invoices. Fixing them (cancelling and re-issuing, and the buyer's credit) and any penalty exposure under section 122 needs a GST practitioner who can see the documents and the portal.
-- **Notice, audit or penalty proceedings.** Refer. The choice between section 122(1), 122(3) and 125 depends on facts this Guide cannot see.
+- **Notice, audit or penalty proceedings.** Refer. The choice between section 122(1), 122(3) and 125 depends on facts this skill cannot see.
 - **Unclear exclusion.** A business with mixed activities (for example a bank arm and a trading arm under one PAN), or a single-screen cinema, needs a practitioner's reading of rule 54 and the notifications.
 - **Rule 46(s) declaration on B2C invoices.** Whether rule 46(s) requires the declaration on the B2C invoices of a taxpayer that already e-invoices its B2B supplies is not settled by the rule text; ask a practitioner.
-- **IRP time limits and rejection codes.** These are set by GSTN advisory. Refuse to give a deadline from this Guide; check the e-invoice portal.
+- **IRP time limits and rejection codes.** These are set by GSTN advisory. Refuse to give a deadline from this skill; check the e-invoice portal.
 - **The 57th Council proposals.** Do not advise that the extension to reverse-charge inward supplies or imports of services, or any penalty change, is in force until it is notified.
 
 ## Sources
 
-- [Rule 48, CGST Rules (CBIC consolidated text)](https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/rules/cgst_rules/active/chapter6/rule48_v1.00.html)
-- [Rule 46, CGST Rules](https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/rules/cgst_rules/active/chapter6/rule46_v1.00.html)
-- [Rule 54, CGST Rules](https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/rules/cgst_rules/active/chapter6/rule54_v1.00.html)
-- [Rule 138, CGST Rules](https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/rules/cgst_rules/active/chapter16/rule138_v1.00.html)
-- [Section 2, CGST Act](https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/acts/2017_CGST_act/active/chapter1/section2_v1.00.html)
-- [Section 16, CGST Act](https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/acts/2017_CGST_act/active/chapter5/section16_v1.00.html)
-- [Section 31, CGST Act](https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/acts/2017_CGST_act/active/chapter7/section31_v1.00.html)
-- [Section 36, CGST Act](https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/acts/2017_CGST_act/active/chapter8/section36_v1.00.html)
-- [Section 122, CGST Act](https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/acts/2017_CGST_act/active/chapter19/section122_v1.00.html)
-- [Section 125, CGST Act](https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/acts/2017_CGST_act/active/chapter19/section125_v1.00.html)
-- [Notification No. 69/2019-Central Tax (e-invoice portals)](https://gstcouncil.gov.in/sites/default/files/2024-05/notfctn-69-central-tax-english-2019.pdf)
-- [Notification No. 13/2020-Central Tax](https://gstcouncil.gov.in/sites/default/files/2024-05/notfctn-13-central-tax-english-2020.pdf) and amendments [61/2020](https://gstcouncil.gov.in/sites/default/files/2024-05/notfctn-61-central-tax-english-2020.pdf), [70/2020](https://gstcouncil.gov.in/sites/default/files/2024-05/notfctn-70-central-tax-english-2020.pdf), [88/2020](https://gstcouncil.gov.in/sites/default/files/2024-05/notfctn-88-central-tax-english-2020.pdf), [05/2021](https://gstcouncil.gov.in/sites/default/files/2024-05/notfctn-05-central-tax-english-2021.pdf), [23/2021](https://gstcouncil.gov.in/sites/default/files/2024-05/notfctn-23-central-tax-english-2021.pdf), [01/2022](https://gstcouncil.gov.in/sites/default/files/2024-05/nn_01_2022_english.pdf), [17/2022](https://gstcouncil.gov.in/sites/default/files/2024-05/17-2022-ct-eng_1_1.pdf), [10/2023](https://gstcouncil.gov.in/sites/default/files/2024-05/10ct_eng.pdf)
-- [Notification No. 14/2020-Central Tax (B2C Dynamic QR code)](https://gstcouncil.gov.in/sites/default/files/2024-05/notfctn-14-central-tax-english-2020.pdf) and [71/2020-Central Tax](https://gstcouncil.gov.in/sites/default/files/2024-05/notfctn-71-central-tax-english-2020.pdf)
-- [Notification No. 78/2020-Central Tax (HSN digits)](https://gstcouncil.gov.in/sites/default/files/2024-05/notfctn-78-central-tax-english-2020.pdf)
-- [56th GST Council press release (rates from 22 September 2025)](https://gstcouncil.gov.in/sites/default/files/2025-09/press_release_press_information_bureau_0.pdf)
-- [GST Council newsletter, December 2025](https://gstcouncil.gov.in/sites/default/files/2026-01/monthly_newsletter_december_2025_1_0.pdf)
-- [57th GST Council press release (recommendations, not law)](https://gstcouncil.gov.in/sites/default/files/2026-10/press_release_0.pdf)
+| Source | URL | Read on |
+| --- | --- | --- |
+| Read for Rule 48, CGST Rules (CBIC consolidated text) | https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/rules/cgst_rules/active/chapter6/rule48_v1.00.html | 2026-11-14 |
+| Read for Rule 46, CGST Rules | https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/rules/cgst_rules/active/chapter6/rule46_v1.00.html | 2026-11-14 |
+| Read for Rule 54, CGST Rules | https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/rules/cgst_rules/active/chapter6/rule54_v1.00.html | 2026-11-14 |
+| Read for Rule 138, CGST Rules | https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/rules/cgst_rules/active/chapter16/rule138_v1.00.html | 2026-11-14 |
+| Read for Section 2, CGST Act | https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/acts/2017_CGST_act/active/chapter1/section2_v1.00.html | 2026-11-14 |
+| Read for Section 16, CGST Act | https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/acts/2017_CGST_act/active/chapter5/section16_v1.00.html | 2026-11-14 |
+| Read for Section 31, CGST Act | https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/acts/2017_CGST_act/active/chapter7/section31_v1.00.html | 2026-11-14 |
+| Read for Section 36, CGST Act | https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/acts/2017_CGST_act/active/chapter8/section36_v1.00.html | 2026-11-14 |
+| Read for Section 122, CGST Act | https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/acts/2017_CGST_act/active/chapter19/section122_v1.00.html | 2026-11-14 |
+| Read for Section 125, CGST Act | https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/acts/2017_CGST_act/active/chapter19/section125_v1.00.html | 2026-11-14 |
+| Read for Notification No. 69/2019-Central Tax (e-invoice portals) | https://gstcouncil.gov.in/sites/default/files/2024-05/notfctn-69-central-tax-english-2019.pdf | 2026-11-14 |
+| Read for Notification No. 13/2020-Central Tax | https://gstcouncil.gov.in/sites/default/files/2024-05/notfctn-13-central-tax-english-2020.pdf | 2026-11-14 |
+| Read for Notification No. 61/2020 (amendment) | https://gstcouncil.gov.in/sites/default/files/2024-05/notfctn-61-central-tax-english-2020.pdf | 2026-11-14 |
+| Read for Notification No. 70/2020 (amendment) | https://gstcouncil.gov.in/sites/default/files/2024-05/notfctn-70-central-tax-english-2020.pdf | 2026-11-14 |
+| Read for Notification No. 88/2020 (amendment) | https://gstcouncil.gov.in/sites/default/files/2024-05/notfctn-88-central-tax-english-2020.pdf | 2026-11-14 |
+| Read for Notification No. 05/2021 (amendment) | https://gstcouncil.gov.in/sites/default/files/2024-05/notfctn-05-central-tax-english-2021.pdf | 2026-11-14 |
+| Read for Notification No. 23/2021 (amendment) | https://gstcouncil.gov.in/sites/default/files/2024-05/notfctn-23-central-tax-english-2021.pdf | 2026-11-14 |
+| Read for Notification No. 01/2022 (amendment) | https://gstcouncil.gov.in/sites/default/files/2024-05/nn_01_2022_english.pdf | 2026-11-14 |
+| Read for Notification No. 17/2022 (amendment) | https://gstcouncil.gov.in/sites/default/files/2024-05/17-2022-ct-eng_1_1.pdf | 2026-11-14 |
+| Read for Notification No. 10/2023 (amendment) | https://gstcouncil.gov.in/sites/default/files/2024-05/10ct_eng.pdf | 2026-11-14 |
+| Read for Notification No. 14/2020-Central Tax (B2C Dynamic QR code) | https://gstcouncil.gov.in/sites/default/files/2024-05/notfctn-14-central-tax-english-2020.pdf | 2026-11-14 |
+| Read for Notification No. 71/2020-Central Tax (amendment) | https://gstcouncil.gov.in/sites/default/files/2024-05/notfctn-71-central-tax-english-2020.pdf | 2026-11-14 |
+| Read for Notification No. 78/2020-Central Tax (HSN digits) | https://gstcouncil.gov.in/sites/default/files/2024-05/notfctn-78-central-tax-english-2020.pdf | 2026-11-14 |
+| Read for 56th GST Council press release (rates from 22 September 2025) | https://gstcouncil.gov.in/sites/default/files/2025-09/press_release_press_information_bureau_0.pdf | 2026-11-14 |
+| Read for GST Council newsletter, December 2025 | https://gstcouncil.gov.in/sites/default/files/2026-01/monthly_newsletter_december_2025_1_0.pdf | 2026-11-14 |
+| Read for 57th GST Council press release (recommendations, not law) | https://gstcouncil.gov.in/sites/default/files/2026-10/press_release_0.pdf | 2026-11-14 |
 
-## Disclaimer
-
-This Guide and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this Guide. All outputs must be reviewed and signed off by a qualified professional (such as a CA, CPA, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
-
-The most up-to-date version of this Guide is maintained by OpenAccountants.
+Not yet confirmed: the IRP JSON schema version and field list (the schema could not be read; fields come from the earlier version); GSTN time limits for reporting an invoice to the IRP and the rejection codes (set by advisory, portal not reachable on 14 November 2026); the IRP rounding tolerance; whether each invoice issued without an IRN is a separate section 122 offence; any notification after Notification No. 10/2023-Central Tax that amends Notification No. 13/2020-Central Tax.

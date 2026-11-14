@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/armenia-vat"
   jurisdiction: "AM"
   tax_year: "2026"
-  last_updated: "2026-10-28"
+  last_updated: "2026-11-14"
 ---
 
 # Armenia VAT: ordinary 2026 computation and evidence
@@ -38,13 +38,13 @@ Use current **190-N**, incorporating 941-N **from 1 October 2026**, for the VAT-
 
 | Item | 2026 treatment | Official authority |
 |---|---|---|
-| Ordinary rate | 20% of the VAT-exclusive tax base | [63(1)][code] |
-| Statutory inclusive calculation | 16.67% of VAT-inclusive compensation in Article 63(2)'s specified cases, including an ordinary taxable transaction with only a cash-register receipt | [63(2)][code] |
-| Zero rate | 0% only for Article 65 transactions with their conditions/evidence | [65][code] |
-| Exemption | Apply the particular Article 64 provision; distinguish it from zero rating and input recovery | [64, 72–73][code] |
-| Turnover-triggered VAT | AMD 115 million annual turnover across activities; excess branch and declaration rules above | [59(1)(5)][code] |
-| Ordinary period | Calendar month | [69(1)][code] |
-| Ordinary filing/payment | Through the 20th of the following month, subject to applicable deadline rules | [75(1), 78(1)][code] |
+| Ordinary rate | 20% of the VAT-exclusive tax base | [63(1)][code], https://www.arlis.am/hy/acts/215611/latest |
+| Statutory inclusive calculation | 16.67% of VAT-inclusive compensation in Article 63(2)'s specified cases, including an ordinary taxable transaction with only a cash-register receipt | [63(2)][code], https://www.arlis.am/hy/acts/215611/latest |
+| Zero rate | 0% only for Article 65 transactions with their conditions/evidence | [65][code], https://www.arlis.am/hy/acts/215611/latest |
+| Exemption | Apply the particular Article 64 provision; distinguish it from zero rating and input recovery | [64, 72–73][code], https://www.arlis.am/hy/acts/215611/latest |
+| Turnover-triggered VAT | AMD 115 million annual turnover across activities; excess branch and declaration rules above | [59(1)(5)][code], https://www.arlis.am/hy/acts/215611/latest |
+| Ordinary period | Calendar month | [69(1)][code], https://www.arlis.am/hy/acts/215611/latest |
+| Ordinary filing/payment | Through the 20th of the following month, subject to applicable deadline rules | [75(1), 78(1)][code], https://www.arlis.am/hy/acts/215611/latest |
 
 Do not replace statutory 16.67% with a universal 20/120 fraction. The statutory result on AMD 120,000 in its specified branch is AMD 20,004. Ordinary VAT separately charged on a net AMD 100,000 is AMD 20,000. These calculations have different legal inputs. [61(1), 63][code]
 
@@ -236,7 +236,7 @@ expected:
 | [HO-234-N][july], actual Articles 11–16/33; read 24 October 2026. Article 13 amends the exempt-input restriction in Article 72, not Article 73; specified other changes wait until January 2027. | https://www.arlis.am/hy/acts/226008 | 2026-10-24 |
 | [Order 298-N, current 2026-applicable consolidation 175524][form], actual VAT form and targeted instructions; read 24 October 2026. The earlier [2019 consolidation](https://www.arlis.am/hy/acts/132487) is historical and is not used as current authority. | https://www.arlis.am/hy/acts/175524 | 2026-10-24 |
 | [Order 1000-N][future], actual amended fields and paragraph 2; read 24 October 2026. Effective 1 January 2027, not its September adoption/publication date. | https://www.arlis.am/hy/acts/231429 | 2026-10-24 |
-| Current native Code, targeted 59(1), 74, 76–77,327,457(9), 42(4)–(6), 53(10)/(10.1)/(11), 54; supporting English checked against native | https://www.arlis.am/hy/acts/215611/latest | 2026-10-25 |
+| Current native Code, targeted 59(1), 74, 76–77, 327, 457(9), 42(4)–(6), 53(10)/(10.1)/(11), 54; supporting English checked against native | https://www.arlis.am/hy/acts/215611/latest | 2026-10-25 |
 | 190-N current VAT-status form; actual 941-N amendment and 1 October 2026 gate | https://www.arlis.am/hy/acts/136993/latest | 2026-10-25 |
 | 941-N actual amendment/commencement | https://www.arlis.am/hy/acts/230825 | 2026-10-25 |
 | 155-N current complete ordinary VAT criteria and risk override; excise catalogue not implemented here | https://www.arlis.am/hy/acts/200966/latest | 2026-10-25 |
@@ -283,4 +283,4 @@ Targeted commencement recheck, **25 October 2026**: [HO-234-N art. 33(1)](https:
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-28. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `armenia-vat` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/armenia-vat. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `armenia-vat` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/armenia-vat. If neither is available, confirm every figure against the official source pages cited above before relying on it.

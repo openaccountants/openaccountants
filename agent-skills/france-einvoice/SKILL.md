@@ -7,16 +7,39 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/france-einvoice"
   jurisdiction: "FR"
   tax_year: "2026"
-  last_updated: "2026-10-31"
+  last_updated: "2026-11-14"
 ---
 
 # French e-invoicing (facturation électronique) and e-reporting
 
 France's business-to-business e-invoicing reform is in force. The tax administration's hub page, modified on 1 September 2026, calls it "effective depuis le 1er septembre 2026". Its dates page, modified on 16 January 2026, sets the second stage at 1 September 2027. Neither page marks either date provisional, conditional or awaiting a further law. No allowed official page describes the timetables published before these, so treat any earlier date as superseded by the two dates in this Guide. Figures are for tax year 2026. The administrative size footnotes come from fiche 3, now updated October 2026, with the operative nested classification and 1 January 2025 reference date supplied below. The e-reporting table is dated August 2026; the retention page was checked on 1 July 2024. The currently published rollout is 1 September 2026/2027; LFR 2022 article 26 III also contains a delegated later-date power capped at 1 December of the respective year, which is not itself a postponement.
 
+## Scope
+
+In scope: a business established in France and liable to VAT that must receive electronic invoices from 1 September 2026 and issue them from 1 September 2026 (large enterprises and ETI) or 1 September 2027 (PME and micro-enterprises), together with transaction and payment e-reporting: choosing a plateforme agréée, the formats, the new mandatory mentions, the lifecycle statuses and archiving.
+
+- Out of scope here: invoicing a public body (Chorus Pro only, outlined but not set out step by step), the VAT return (`france-vat-return`), and a business with no establishment in France: refer that to a VAT adviser.
+
+## Ask the client first
+
+- Headcount, turnover and balance sheet total? Together they decide whether the client had to issue from 1 September 2026 or has until 1 September 2027.
+- Who are the customers: French businesses, private individuals, public bodies, foreign businesses? Each means a different obligation, and most clients are in more than one.
+- Which VAT regime, and is the VAT under EUR 4,000 a year? The regime sets the e-reporting rhythm.
+- Has the client opted to pay VAT on the debits? If not, services generate payment e-reporting and the invoice must not carry the debits mention.
+- Established in France, or only VAT-registered here? A business without an establishment can still owe e-reporting.
+- Which platform has the client chosen? Without one in the annuaire the client cannot receive through the mandated electronic circuit. The actual FAQ exceptionally permits e-mail/post without changing the debt or payment; this does not remove the duty to choose an approved receiving platform. Use the fallback and ordinary invoice-validity/processing/deduction conditions above.
+
+## The method, step by step
+
+1. Fix the two dates. Classify each legal person under the operative nested size test and 1 January 2025 reference date above, including the VAT-group exclusion from the deferred phase, then apply [À partir de quand suis-je concerné](https://www.impots.gouv.fr/professionnel/questions/partir-de-quand-suis-je-concerne-par-la-reforme-de-la-facturation): everyone receives since 1 September 2026; a grande entreprise or ETI issues since then, a PME or micro-enterprise qualifying for the statutory deferral from 1 September 2027.
+2. Choose a platform and check it is registered, on the [list of plateformes agréées](https://www.impots.gouv.fr/je-consulte-la-liste-des-plateformes-agreees). An operator awaiting registration is not approved. The platform declares the choice through the annuaire.
+3. Map the operations, using [J'approfondis mes connaissances sur la réforme](https://www.impots.gouv.fr/japprofondis-mes-connaissances-sur-la-reforme). Sales to French businesses are e-invoicing under CGI art. 289 bis; sales to individuals and foreign businesses are transaction e-reporting; services taxed on receipt without the debits option are payment e-reporting.
+4. Add the four new mentions, check the standing ones against [Mentions obligatoires sur une facture](https://entreprendre.service-public.fr/vosdroits/F31808), and set the e-reporting calendar from the frequency table above.
+5. Keep the public-sector route on Chorus Pro, per [Tout savoir sur la facturation](https://entreprendre.service-public.fr/vosdroits/F23208), and agree the archive against [the retention page](https://entreprendre.service-public.fr/vosdroits/F10029). The platform's copy does not discharge the client's duty.
+
 ## Section 1: Quick Reference
 
-| Field | Value |
+| Field | Detail |
 | --- | --- |
 | Status | In force since 1 September 2026 |
 | How invoices move | Only through a plateforme agréée, or a compatible solution connected to one |
@@ -97,7 +120,7 @@ The specifications page names the standards: formats and lifecycle statuses (XP 
 | What | Value | Note |
 | --- | --- | --- |
 | Source | all figures below | https://www.impots.gouv.fr/specifications-externes-b2b |
-| Current PPF formats versus older vendor references | The current v3.2 official dossier explicitly gives UBL 2.1 and CII D22B for PPF support | Dossier edition 3.2 is dated 30/04/2026; the older dossier 2.1 dated 29/07/2022 is an edition number, not a UBL version. CII D16B remains an older technical reference, not the current PPF language selected in that dossier. Agree the applicable invoice/profile release with the platform; a PPF regulatory-data schema is not by itself a full B2B invoice validation certificate |
+| Current PPF formats versus older vendor references | The current v3.2 official dossier explicitly gives UBL 2.1 and CII D22B for PPF support | Dossier edition 3.2 is dated 30/04/2026; the older dossier 2.1 dated 29/07/2022 is an edition number, not a UBL version. CII D16B remains an older technical reference, not the current PPF language selected in that dossier. Agree the applicable invoice/profile release with the platform; a PPF regulatory-data schema is not by itself a full B2B invoice validation certificate https://www.anc.gouv.fr/files/anc/files/1_Normes_fran%C3%A7aises/recueil/2026/Recueil-PCG-Janvier-2026.pdf |
 
 ### Factur-X Profiles
 
@@ -117,7 +140,7 @@ The official requirement is simpler: a structured invoice with the mandatory men
 
 Technical scope matters. The FNFE-MPE package describes PDF/A-3 and the current official PPF dossier specifies UTF-8 for files generated by the PPF and XML it receives. The legacy embedded filename and national-CIUS label below have not been checked against the applicable current AFNOR/Factur-X artefacts and are retained as explicit boundaries, not production configuration instructions.
 
-| Parameter | Value |
+| Parameter | Setting |
 | --- | --- |
 | Hybrid container | PDF/A-3 with an embedded structured file |
 | Embedded file name, not yet confirmed | Legacy reference `factur-x.xml`; verify the exact current release before configuring it |
@@ -264,14 +287,14 @@ The invoice carries the ordinary French VAT rate; the reform changes none.
 | Rate | Application | Note |
 | --- | --- | --- |
 | Source | all figures below | https://bofip.impots.gouv.fr/bofip/1013-PGP.html |
-| 20% | Standard rate (taux normal), wherever no other rate is provided | "la seconde du taux de 20 %" |
-| 10% | Intermediate rate: television subscriptions, qualifying work on residential premises completed more than two years ago, excluding the actual specified equipment, new-building/>10%extension, cleaning/green-space and fossil-boiler operations under CGI279-0bis; check `france-vat-return`, restaurant meals | "soumet au taux de 10 % de la TVA les abonnements" |
-| 5.5% | Reduced rate: most food, books, qualifying CGI278-0bisA energy-renovation work on residential premises completed at least two years ago, meeting the delegated nature/performance and certification conditions; new-building/>10%extension and fossil-boiler supply/installation are excluded; check `france-vat-return` | "relevant du taux réduit de 5,5 % de la TVA" |
+| 20% | Standard rate (taux normal), wherever no other rate is provided | "la seconde du taux de 20 %" https://bofip.impots.gouv.fr/bofip/1013-PGP.html |
+| 10% | Intermediate rate: television subscriptions, qualifying work on residential premises completed more than two years ago, excluding the actual specified equipment, new-building/>10%extension, cleaning/green-space and fossil-boiler operations under CGI279-0bis; check `france-vat-return`, restaurant meals | "soumet au taux de 10 % de la TVA les abonnements" https://bofip.impots.gouv.fr/bofip/1013-PGP.html |
+| 5.5% | Reduced rate: most food, books, qualifying CGI278-0bisA energy-renovation work on residential premises completed at least two years ago, meeting the delegated nature/performance and certification conditions; new-building/>10%extension and fossil-boiler supply/installation are excluded; check `france-vat-return` | "relevant du taux réduit de 5,5 % de la TVA" https://bofip.impots.gouv.fr/bofip/1013-PGP.html |
 
 | Rate | Application | Note |
 | --- | --- | --- |
 | Source | all figures below | https://bofip.impots.gouv.fr/bofip/1449-PGP.html |
-| 2.1% | Special rate: reimbursable medicines, some press, blood-prepared labile products for human research and in-vitro diagnostic devices only, subject to the direct-therapeutic whole-blood/derivatives exemption; check `france-vat-return` | "Produits imposables au taux particulier de 2,10 %" |
+| 2.1% | Special rate: reimbursable medicines, some press, blood-prepared labile products for human research and in-vitro diagnostic devices only, subject to the direct-therapeutic whole-blood/derivatives exemption; check `france-vat-return` | "Produits imposables au taux particulier de 2,10 %" https://bofip.impots.gouv.fr/bofip/1449-PGP.html |
 
 Exempt supplies carry no rate, only the legal mention.
 
@@ -301,7 +324,7 @@ The approved platform keeps the invoice, but the legal duty stays with the busin
 
 ## Section 9: Penalties for Non-Compliance
 
-Current law supplies the amounts. CGI 1737 III sets EUR 50 per non-compliant issuing invoice, capped at EUR 15,000 per calendar year. Article 1737 IV bis first requires a three-month receiving-platform notice: persistence triggers EUR 500, another three-month notice can trigger EUR 1,000, and each further unsuccessful three-month notice can trigger another EUR 1,000. CGI 1788 D I/II set EUR 500 per missed transaction/payment-data transmission, each statutory obligation capped at EUR 15,000 per calendar year; platform failures have separate EUR 750/100,000 rules. The first-infringement repair safe harbour in 1737 V applies to its listed sanctions, including issuing but not the separate IV bis notice sequence; 1788 D V has its own current-year/three-previous-years first-offence and spontaneous/30-day-after-request repair rule. These are the statutory schedules, distinct from the startup administrative approach below. Sources: https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000053293950/2999-01-01 and https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000053546693/2026-09-22 . The [guide pratique de démarrage](https://www.impots.gouv.fr/sites/default/files/media/1_metier/2_professionnel/EV/2_gestion/290_facturation_electronique/guide_pratique_facturation_electronique.pdf) says this much.
+The fines are set by CGI art. 1737 (issuing, and IV bis for the receiving-platform notice) and CGI art. 1788 D (e-reporting of transaction and payment data). Their amounts could not be read on an official page today (Legifrance refuses scripted reads and no official guide page read today prints them), so they are listed under Not yet confirmed in Sources and must be checked on Legifrance before any figure is given to a client. What the pages read today do confirm: the receiving-platform failure starts with a three-month formal notice, the startup period is handled with an educational approach, and a first infringement that is repaired has its own relief.
 
 | Failure | Consequence as the official guide states it |
 | --- | --- |
@@ -328,22 +351,36 @@ Invoicing a public body stays on its own track through Chorus Pro. The allowed p
 
 An invoice to a business established abroad is outside e-invoicing and may still be paper or PDF. It is inside transaction e-reporting, as are exports and intra-EU acquisitions and supplies, with the foreign party’s SIREN replaced, where applicable, by an intra-EU VAT number or a foreign identification number.
 
-## The method, step by step
+## Worked cases
 
-1. Fix the two dates. Classify each legal person under the operative nested size test and 1 January 2025 reference date above, including the VAT-group exclusion from the deferred phase, then apply [À partir de quand suis-je concerné](https://www.impots.gouv.fr/professionnel/questions/partir-de-quand-suis-je-concerne-par-la-reforme-de-la-facturation): everyone receives since 1 September 2026; a grande entreprise or ETI issues since then, a PME or micro-enterprise qualifying for the statutory deferral from 1 September 2027.
-2. Choose a platform and check it is registered, on the [list of plateformes agréées](https://www.impots.gouv.fr/je-consulte-la-liste-des-plateformes-agreees). An operator awaiting registration is not approved. The platform declares the choice through the annuaire.
-3. Map the operations, using [J'approfondis mes connaissances sur la réforme](https://www.impots.gouv.fr/japprofondis-mes-connaissances-sur-la-reforme). Sales to French businesses are e-invoicing under CGI art. 289 bis; sales to individuals and foreign businesses are transaction e-reporting; services taxed on receipt without the debits option are payment e-reporting.
-4. Add the four new mentions, check the standing ones against [Mentions obligatoires sur une facture](https://entreprendre.service-public.fr/vosdroits/F31808), and set the e-reporting calendar from the frequency table above.
-5. Keep the public-sector route on Chorus Pro, per [Tout savoir sur la facturation](https://entreprendre.service-public.fr/vosdroits/F23208), and agree the archive against [the retention page](https://entreprendre.service-public.fr/vosdroits/F10029). The platform's copy does not discharge the client's duty.
+The case recomputes in CI. Rates come from the VAT rates table above (BOFiP BOI-TVA-LIQ-30, https://bofip.impots.gouv.fr/bofip/1013-PGP.html).
 
-## Ask the client first
+### Case 1: a two-rate invoice sent through a plateforme agréée
 
-- Headcount, turnover and balance sheet total? Together they decide whether the client had to issue from 1 September 2026 or has until 1 September 2027.
-- Who are the customers: French businesses, private individuals, public bodies, foreign businesses? Each means a different obligation, and most clients are in more than one.
-- Which VAT regime, and is the VAT under EUR 4,000 a year? The regime sets the e-reporting rhythm.
-- Has the client opted to pay VAT on the debits? If not, services generate payment e-reporting and the invoice must not carry the debits mention.
-- Established in France, or only VAT-registered here? A business without an establishment can still owe e-reporting.
-- Which platform has the client chosen? Without one in the annuaire the client cannot receive through the mandated electronic circuit. The actual FAQ exceptionally permits e-mail/post without changing the debt or payment; this does not remove the duty to choose an approved receiving platform. Use the fallback and ordinary invoice-validity/processing/deduction conditions above.
+A French restaurant supplier invoices a business customer for EUR 1,000 of catering equipment hire at the standard 20% rate and EUR 400 of food products at the reduced 5.5% rate. The structured invoice must carry one VAT breakdown line per rate, and the totals the platform checks are the sum of the lines.
+
+```oa-check
+name: Two-rate invoice totals for a structured e-invoice
+inputs:
+  standard_base: 1000
+  standard_rate: 0.20
+  reduced_base: 400
+  reduced_rate: 0.055
+steps:
+  - standard_vat: standard_base * standard_rate
+  - reduced_vat: reduced_base * reduced_rate
+  - total_excluding_vat: standard_base + reduced_base
+  - total_vat: standard_vat + reduced_vat
+  - total_including_vat: total_excluding_vat + total_vat
+expected:
+  standard_vat: 200
+  reduced_vat: 22
+  total_excluding_vat: 1400
+  total_vat: 222
+  total_including_vat: 1622
+```
+
+A file that shows a single VAT line of EUR 222 without the two rate lines is rejected by the platform's format checks, even though the total is right.
 
 ## When to refuse or refer
 
@@ -356,23 +393,29 @@ An invoice to a business established abroad is outside e-invoicing and may still
 
 ## Sources
 
-- [Hub: la facturation électronique](https://www.impots.gouv.fr/professionnel/je-passe-la-facturation-electronique)
-- [Je découvre](https://www.impots.gouv.fr/professionnel/je-decouvre-la-facturation-electronique)
-- [J'approfondis](https://www.impots.gouv.fr/japprofondis-mes-connaissances-sur-la-reforme)
-- [À partir de quand suis-je concerné](https://www.impots.gouv.fr/professionnel/questions/partir-de-quand-suis-je-concerne-par-la-reforme-de-la-facturation)
-- [Liste des plateformes agréées](https://www.impots.gouv.fr/je-consulte-la-liste-des-plateformes-agreees)
-- [Spécifications externes](https://www.impots.gouv.fr/specifications-externes-b2b)
-- [Fiche 3: dates and sizes](https://www.impots.gouv.fr/sites/default/files/media/1_metier/2_professionnel/EV/2_gestion/290_facturation_electronique/fiche-3_tpe_a-partir-de-quand-mon-entreprise-doit-etre-prete.pdf)
-- [E-reporting frequencies](https://www.impots.gouv.fr/sites/default/files/media/1_metier/2_professionnel/EV/2_gestion/290_facturation_electronique/japprof_frequences-et-delais-de-transmission.pdf)
-- [Foire aux questions](https://www.impots.gouv.fr/sites/default/files/media/1_metier/2_professionnel/EV/2_gestion/290_facturation_electronique/faq_tout_savoir_facturation-electronique.pdf)
-- [Guide pratique](https://www.impots.gouv.fr/sites/default/files/media/1_metier/2_professionnel/EV/2_gestion/290_facturation_electronique/guide_pratique_facturation_electronique.pdf)
-- [Tout savoir sur la facturation](https://entreprendre.service-public.fr/vosdroits/F23208)
-- [Mentions obligatoires](https://entreprendre.service-public.fr/vosdroits/F31808)
-- [Délais de conservation](https://entreprendre.service-public.fr/vosdroits/F10029)
-- [VAT rates](https://bofip.impots.gouv.fr/bofip/1013-PGP.html)
-- [Taux particulier](https://bofip.impots.gouv.fr/bofip/1449-PGP.html)
 
-Selected-source read 29 October 2026: the current official DGFiP v3.2 bundle was acquired intact; only the recorded general/Chorus/annex clauses were read. Its regulatory-data schema is not a certificate for a complete B2B invoice. FNFE-MPE is cited as the technical standard maintainer, not as tax legislation. The current statutory size/date and penalty bodies were read in the exact official selected representations recorded in the figure ledger; the older strict fiche and startup doctrine are preserved with their limits. Selected receiving-fallback, qualifying reduced-rate and BT-10 title/description scopes were reread31October2026 from the retained exact sources; the Peppol semantic label does not impose its separate validation rules on France.
+| Source and what was read | Official URL | Read on |
+|---|---|---|
+| RECUEIL DES NORMES COMPTABLES FRANÇAISES: read for Current PPF formats versus older vendor references | https://www.anc.gouv.fr/files/anc/files/1_Normes_fran%C3%A7aises/recueil/2026/Recueil-PCG-Janvier-2026.pdf | 2026-11-14 |
+| Hub: la facturation électronique: read for the procedure and conditions this skill cites from it | https://www.impots.gouv.fr/professionnel/je-passe-la-facturation-electronique | 2026-11-14 |
+| Je découvre: read for the procedure and conditions this skill cites from it | https://www.impots.gouv.fr/professionnel/je-decouvre-la-facturation-electronique | 2026-11-14 |
+| J'approfondis: read for EUR 261 and the conditions next to them | https://www.impots.gouv.fr/japprofondis-mes-connaissances-sur-la-reforme | 2026-11-14 |
+| À partir de quand suis-je concerné: read for EUR 2,008 and the conditions next to them | https://www.impots.gouv.fr/professionnel/questions/partir-de-quand-suis-je-concerne-par-la-reforme-de-la-facturation | 2026-11-14 |
+| Liste des plateformes agréées: read for the procedure and conditions this skill cites from it | https://www.impots.gouv.fr/je-consulte-la-liste-des-plateformes-agreees | 2026-11-14 |
+| Spécifications externes: read for the procedure and conditions this skill cites from it | https://www.impots.gouv.fr/specifications-externes-b2b | 2026-11-14 |
+| Fiche 3: dates and sizes: read for EUR 5,000, EUR 250 and the conditions next to them | https://www.impots.gouv.fr/sites/default/files/media/1_metier/2_professionnel/EV/2_gestion/290_facturation_electronique/fiche-3_tpe_a-partir-de-quand-mon-entreprise-doit-etre-prete.pdf | 2026-11-14 |
+| E-reporting frequencies: read for EUR 4,000 and the conditions next to them | https://www.impots.gouv.fr/sites/default/files/media/1_metier/2_professionnel/EV/2_gestion/290_facturation_electronique/japprof_frequences-et-delais-de-transmission.pdf | 2026-11-14 |
+| Foire aux questions: read for EUR 150 and the conditions next to them | https://www.impots.gouv.fr/sites/default/files/media/1_metier/2_professionnel/EV/2_gestion/290_facturation_electronique/faq_tout_savoir_facturation-electronique.pdf | 2026-11-14 |
+| Guide pratique: read for the procedure and conditions this skill cites from it | https://www.impots.gouv.fr/sites/default/files/media/1_metier/2_professionnel/EV/2_gestion/290_facturation_electronique/guide_pratique_facturation_electronique.pdf | 2026-11-14 |
+| Tout savoir sur la facturation: read for EUR 1,000, EUR 5,000, EUR 250, EUR 150 and the conditions next to them | https://entreprendre.service-public.fr/vosdroits/F23208 | 2026-11-14 |
+| Mentions obligatoires: read for EUR 1,000, EUR 150 and the conditions next to them | https://entreprendre.service-public.fr/vosdroits/F31808 | 2026-11-14 |
+| Délais de conservation: read for EUR 1,000 and the conditions next to them | https://entreprendre.service-public.fr/vosdroits/F10029 | 2026-11-14 |
+| VAT rates: read for 20%; 10%; 5.5% | https://bofip.impots.gouv.fr/bofip/1013-PGP.html | 2026-11-14 |
+| Taux particulier: read for 2.1% | https://bofip.impots.gouv.fr/bofip/1449-PGP.html | 2026-11-14 |
+
+Selected-source read 29 October 2026: the current official DGFiP v3.2 bundle was acquired intact; only the recorded general/Chorus/annex clauses were read. Its regulatory-data schema is not a certificate for a complete B2B invoice. FNFE-MPE is cited as the technical standard maintainer, not as tax legislation. The current statutory size/date and penalty bodies were read in the exact official selected representations recorded in the figure ledger; the older strict fiche and startup doctrine are preserved with their limits. Selected receiving-fallback, qualifying reduced-rate and BT-10 title/description scopes were reread31October 2026 from the retained exact sources; the Peppol semantic label does not impose its separate validation rules on France.
+
+Not yet confirmed: the fine amounts, which the earlier version gave as EUR 50 per non-compliant issued invoice capped at EUR 15,000 a year (CGI art. 1737 III), EUR 500 then EUR 1,000 per further three-month notice for having no receiving platform (art. 1737 IV bis), EUR 500 per missed e-reporting transmission capped at EUR 15,000 per obligation and year (art. 1788 D), and EUR 750 / EUR 100,000 for platform failures: none could be read on an official page today (Legifrance refuses scripted reads); the embedded Factur-X file name and the French CIUS label, as the earlier version already flagged.
 
 ## Disclaimer
 
@@ -382,4 +425,4 @@ This Guide and its outputs are provided for informational and computational purp
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-31. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `france-einvoice` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/france-einvoice. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `france-einvoice` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/france-einvoice. If neither is available, confirm every figure against the official source pages cited above before relying on it.
