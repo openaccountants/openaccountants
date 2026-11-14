@@ -3,15 +3,16 @@ name: north-macedonia-vat
 description: "Use this skill for North Macedonia value added tax, DDV, for calendar year 2026. Trigger on Macedonian VAT registration, DDV-04, input VAT, reverse charge, exports, imported services, foreign supplier representative or VAT deregistration. It covers ordinary taxable persons, the registration turnover test, standard and reduced statutory rates, place of supply, output and input tax, blocked input tax, mixed use, capital-asset corrections, filing periods, payments and refunds. It explains the current post-2024 service-location rules and foreign-person registration distinction. Product classification and special schemes require the specific current decisions. This is a tier 2 skill, checked against the law, for working-paper preparation, with two recomputing controls and no licensed accountant’s sign-off."
 jurisdiction: MK
 tax_year: 2026
-last_updated: 2026-10-30
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-version: 2.1
+version: 2.2
+type: situation-rules
 category: international
 tier: 2
 domain: vat-gst
 ---
 
-# North Macedonia VAT v2.1
+# North Macedonia VAT v2.2
 
 **Tax year: 2026. Checked against the law, tier 2.** Amounts are MKD unless stated otherwise. Professional review remains outstanding.
 
@@ -25,17 +26,17 @@ Foreign persons without a local seat/branch making taxable local supplies use ar
 
 | Item | Amount | Tax year | Official provision |
 |---|---|---|---|
-| Standard rate | 18% | 2026 | [VAT arts. 28-29][vat] |
-| Reduced rate | 5% for specified art. 30 supplies | 2026 | [VAT art. 30][vat], with current classification decisions |
-| Intermediate rate | 10% for art. 30-a food/beverage service and specified other food products | 2026 | [VAT art. 30-a][vat] |
-| Resident mandatory registration | Total annual turnover exceeding 2,000,000 | 2026 | [VAT art. 51(1)-(2)][vat] |
-| Quarterly period | Prior-year turnover not exceeding 25,000,000; otherwise monthly | 2026 | [VAT art. 39(1)][vat] |
-| Normal minimum registration | 3 calendar years, subject to statutory exceptions | 2026 | [VAT art. 51(8)-(14)][vat] |
-| Capital-input correction period | 5 years; real estate 10 years | 2026 | [VAT art. 37][vat] |
-| Return/payment | Within 25 days after period-end | 2026 | [VAT arts. 41, 43][vat] |
-| Requested excess-input refund | 30 days after return, subject to taxpayer-caused control delay and debt setoff | 2026 | [VAT art. 45][vat] |
-| Late-filing surcharge | Up to 10% of the tax assessed by law | 2026 | [Tax Procedure Law art. 55][procedure] |
-| Late interest | 0.03% per day | 2026 | [Tax Procedure Law arts. 3, 123, 180][procedure]; VAT art. 44 is expressly inoperative |
+| Standard rate | 18% | 2026 | [VAT arts. 28-29](https://www.ujp.gov.mk/files/attachment/0000/0986/______________________________________.____________267____30.12.2025.pdf) |
+| Reduced rate | 5% for specified art. 30 supplies | 2026 | [VAT art. 30](https://www.ujp.gov.mk/files/attachment/0000/0986/______________________________________.____________267____30.12.2025.pdf), with current classification decisions |
+| Intermediate rate | 10% for art. 30-a food/beverage service and specified other food products | 2026 | [VAT art. 30-a](https://www.ujp.gov.mk/files/attachment/0000/0986/______________________________________.____________267____30.12.2025.pdf) |
+| Resident mandatory registration | Total annual turnover exceeding 2,000,000 | 2026 | [VAT art. 51(1)-(2)](https://www.ujp.gov.mk/files/attachment/0000/0986/______________________________________.____________267____30.12.2025.pdf) |
+| Quarterly period | Prior-year turnover not exceeding 25,000,000 (written "25 милиони денари", in words on the page); otherwise monthly | 2026 | [VAT art. 39(1)](https://www.ujp.gov.mk/files/attachment/0000/0986/______________________________________.____________267____30.12.2025.pdf) |
+| Normal minimum registration | 3 calendar years, subject to statutory exceptions | 2026 | [VAT art. 51(8)-(14)](https://www.ujp.gov.mk/files/attachment/0000/0986/______________________________________.____________267____30.12.2025.pdf) |
+| Capital-input correction period | 5 years; real estate 10 years | 2026 | [VAT art. 37](https://www.ujp.gov.mk/files/attachment/0000/0986/______________________________________.____________267____30.12.2025.pdf) |
+| Return/payment | Within 25 days after period-end | 2026 | [VAT arts. 41, 43](https://www.ujp.gov.mk/files/attachment/0000/0986/______________________________________.____________267____30.12.2025.pdf) |
+| Requested excess-input refund | 30 days after return, subject to taxpayer-caused control delay and debt setoff | 2026 | [VAT art. 45](https://www.ujp.gov.mk/files/attachment/0000/0986/______________________________________.____________267____30.12.2025.pdf) |
+| Late-filing surcharge | Up to 10% of the tax assessed by law | 2026 | [Tax Procedure Law art. 55](https://www.ujp.gov.mk/files/attachment/0000/0900/_________________________.pdf) |
+| Late interest | 0.03% per day | 2026 | [Tax Procedure Law arts. 3, 123, 180](https://www.ujp.gov.mk/files/attachment/0000/0900/_________________________.pdf); VAT art. 44 is expressly inoperative |
 
 **Art. 30(1)-(2) 5% list (summary):** basic foodstuffs; drinking water from public systems and irrigation water; books, e-textbooks, newspapers and periodicals (not mainly advertising); seeds, fertilisers, plant protection, agricultural film and machinery; medicines, including veterinary; menstrual products; computers and their software; solar thermal systems; disability aids for personal use; crude oil for food production; first supply of housing within five years of construction; animal feed and live animals; listed baby products; listed school supplies; pellets, pellet stoves and boilers; heat energy for heating; passenger transport; public cleaning and waste removal; accommodation; and listed repairs and hairdressing by registered craftspeople. **Art. 30-a 10%:** serving food and drink for consumption on the premises and catering (alcoholic drinks excluded), and food products that are not basic foodstuffs.
 

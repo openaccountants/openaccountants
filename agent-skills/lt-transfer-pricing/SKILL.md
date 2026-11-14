@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/lt-transfer-pricing"
   jurisdiction: "LT"
   tax_year: "2026"
-  last_updated: "2026-10-24"
+  last_updated: "2026-11-14"
 ---
 
-# Lithuania: transfer pricing (2026) v0.1
+# Lithuania: transfer pricing (2026) v0.3
 
 > **Source-cited draft.** No accountant has reviewed this skill yet. The law comes from the consolidated texts on e-tar.lt (the Register of Legal Acts) and the guidance from vmi.lt (the State Tax Inspectorate, VMI), all read on 23 October 2026. It prepares working papers; it is not authority to file or pay.
 
@@ -250,8 +250,8 @@ expected:
 
 Not yet confirmed: the text of the FR0528 form and rules that apply to 2026 returns (VMI's answer KM1402, dated 16 July 2024, cites VMI order VA-27 of 2005; a search shows VA-27 still in force in a consolidated version from 1 January 2026 as amended by order VA-78 of 4 September 2025, but that text sits behind a CAPTCHA on e-seimas.lrs.lt and was not read); whether the FR0528 EUR 90,000 total is counted per associated person or across all of them; the late payment interest rate after 31 October 2026 (it is reset each quarter); the VMI procedure, form and any fee for an APA request, and whether VMI charges for bilateral APAs; the country-by-country notification duty, the VMI filing rules and the penalty for not filing; any separate administrative fine for not preparing or not handing over TP documentation; the Minister of Finance's list of target territories in force for 2026; whether Lithuania makes a secondary adjustment (for example a deemed dividend) after a primary TP adjustment; and the procedure for a downward corresponding adjustment after a foreign adjustment.
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-24. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `lt-transfer-pricing` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/lt-transfer-pricing. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `lt-transfer-pricing` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/lt-transfer-pricing. If neither is available, confirm every figure against the official source pages cited above before relying on it.

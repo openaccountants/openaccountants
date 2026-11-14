@@ -1,399 +1,393 @@
 ---
 name: us-form-5471-cfc-information
-description: "US federal content skill for Form 5471 — US Information Return for Controlled Foreign Corporations and other foreign corps requiring US-shareholder reporting under §§6038 and 6046. Covers tax year 2025 including the five filing categories (Cat 1 SFC, Cat 2 officer/director, Cat 3 acquisition/disposition, Cat 4 controller >50%, Cat 5 CFC shareholder), the §958(b)(4) repeal expanding the CFC universe through downward attribution, the eleven schedules (A through Q), §951 Subpart F + §951A GILTI inclusion mechanics, §959 PTEP tracking, §954(b)(4) high-tax exception, the $10,000 per-failure-per-year §6038 penalty, and reasonable-cause defense paths including Streamlined Foreign Offshore Procedures."
+description: "Decide whether a US person must file Form 5471 for a foreign corporation in tax year 2026, which filer category or categories apply (1a to 1c, 2, 3, 4, 5a to 5c), and which schedules follow, using the December 2025 Form 5471 and its instructions. Covers the 10% US shareholder and more-than-50% CFC tests with family and entity attribution, the filing exceptions (constructive owners, joint filers, foreign-controlled CFCs under Rev. Proc. 2019-40, dormant corporations under Rev. Proc. 92-70), the $10,000 penalties under sections 6038 and 6679 with the $50,000 continuing-failure cap, the foreign tax credit reduction, the open statute under section 6501(c)(8), and the routes to fix missed years. Explains the One Big Beautiful Bill Act changes that reach Form 5471 from 2026 (GILTI renamed net CFC tested income, the one-month deferral election repealed, section 958(b)(4) restored with new section 951B, the new pro rata share rule). Trigger on \"Form 5471\", \"CFC\", \"controlled foreign corporatio"
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/us-form-5471-cfc-information"
   jurisdiction: "US"
-  tax_year: "2025"
-  last_updated: "2026-07-13"
+  tax_year: "2026"
+  last_updated: "2026-11-14"
 ---
 
-# US Form 5471 CFC Information
+# US Form 5471: who files, which category, which schedules, tax year 2026
 
-## US Form 5471 — Information Return of US Persons With Respect to Certain Foreign Corporations
+> **Source-cited draft.** Built from Form 5471 (Rev. December 2025) and its instructions (Rev. December 2025), Public Law 119-21 (the One Big Beautiful Bill Act), 26 U.S.C. 11, 318, 951, 954, 957, 958, 6038, 6046, 6072, 6501 and 6679 on govinfo.gov, and the IRS pages on the streamlined filing compliance procedures and delinquent international information returns, read on 2026-11-13. No accountant has reviewed it. All outputs must be reviewed by a qualified tax professional before filing.
 
-## 1. Scope and orientation
+**Answer first.** A US person files Form 5471 for a foreign corporation when they fall into at least one of five filer categories. The two that catch most people: **Category 5**, a US shareholder (10% or more of vote or value, counting family and entity attribution) of a controlled foreign corporation (more than 50% owned by US shareholders), and **Category 4**, a US person who controlled the corporation (more than 50% of vote or value) at any time in their tax year. Form 5471 is attached to the filer's own income tax return and is due with it, extensions included. Missing it costs **$10,000** per foreign corporation per year under section 6038(b), plus up to **$50,000** more after an IRS notice, a cut in foreign tax credits, and an assessment period that stays open. For 2026 the form still reports the same categories, but the law under it changed: GILTI becomes "net CFC tested income" (computed in `us-gilti-fdii-beat`), the one-month deferral year for foreign subsidiaries is gone, and downward attribution from foreign persons is switched off again for foreign corporations' tax years beginning after 31 December 2025.
 
-Form 5471 is an information return — not a tax return that itself produces a liability. It is the primary vehicle by which the United States enforces the global anti-deferral regime built into Subchapter N of the Internal Revenue Code. The form discloses ownership, financial position, earnings, and intercompany dealings of foreign corporations in which US persons have meaningful equity. It is also the substrate on which Subpart F inclusions under §951, GILTI inclusions under §951A, foreign tax credits under §§901 and 960, and previously taxed earnings and profits (PTEP) under §959 are computed, supported, and audited.
+## Scope and who this is for
 
-This skill covers tax year 2025. The post-TCJA architecture (effective for foreign-corp tax years beginning after December 31, 2017) remains in force: the repeal of §958(b)(4), the introduction of §951A GILTI, the §965 transition tax (now historical for ongoing filings but still relevant for PTEP tracking), the expansion of the §954(b)(4) high-tax exception, and the addition of Schedules I-1, J, P, and Q. The current Form 5471 is the December 2025 revision; tax year 2025 filings use the most recent revision.
+In scope: deciding, for one US person and one foreign corporation, whether Form 5471 is required for a 2026 tax year, which category boxes to check on item B, which schedules to attach, the exceptions that remove or reduce the filing, the deadline, the penalties, and how to fix missed years. US persons include citizens, residents, domestic partnerships, domestic corporations and domestic estates and trusts.
 
-The form is mandatory for five distinct categories of US filers, each with a different triggering event and a different subset of schedules. A single filer can fall into more than one category for a single foreign corporation; in that case, the filer files one Form 5471 and checks every applicable category box on page 1 (except that a filer who is both Category 4 and Category 5a checks only the Category 4 box). The five-category framework derives from two statutes — §6038 (annual information reporting by US persons controlling or owning interests in foreign corporations) and §6046 (reporting of acquisitions, dispositions, and organizational changes).
+Out of scope, and where it goes:
 
-This skill is the entry point for any Schedule C, Form 1040, or Form 1120 file that reaches into a foreign corporate structure. Out of scope and referred elsewhere:
-
-- Form 5472 — reverse direction: foreign-owned 25%+ US corporations and foreign-owned disregarded entities. Covered in the separate `us-form-5472-foreign-owned-us` skill.
-- Form 8865 — interests in foreign partnerships. Separate skill.
-- Form 8938 — specified foreign financial assets at the individual level under §6038D. Separate skill.
-- Form 3520 / 3520-A — foreign trusts and foreign gifts above $100,000. Separate skill.
-- FBAR / FinCEN 114 — Bank Secrecy Act reporting, not an IRS form. Separate skill.
-- §962 election mechanics — the individual-level election to be taxed at corporate rates on §951(a) inclusions. Cross-referenced here, fully covered in the `us-section-962-election` skill.
-- PFICs (Form 8621) — passive foreign investment companies. Often overlapping with CFCs; covered in separate skill.
-
-## 2. Who must file — the five categories
-
-### 2.1 Category 1 — US shareholder of a Specified Foreign Corporation (SFC)
-
-- **Category 1 (SFC) definition and history** — Category 1 was originally added by the Tax Cuts and Jobs Act of 2017 to capture US shareholders of 'specified foreign corporations' under §965 — that is, CFCs plus any foreign corporation in which at least one US corporation was a US shareholder. It was the principal reporting category for the one-time §965 transition tax on accumulated deferred foreign income. With the §965 inclusion now historical, Category 1 has narrowed substantially in practical relevance, but the IRS has kept it on the form and has subdivided it into Cat 1a (any Category 1 filer that is not 1b or 1c), Cat 1b (unrelated section 958(a) U.S. shareholder of a foreign-controlled section 965 SFC), and Cat 1c (related constructive U.S. shareholder of a foreign-controlled section 965 SFC). The category continues to apply to certain Section 245A reporting under the dividends-received deduction regime and to ongoing PTEP attributable to the §965 inclusion. A taxpayer should not assume Category 1 is dead. If the corporate structure includes a foreign corporation that was an SFC for tax year 2017 and that still has §965 PTEP balances flowing through Schedule P, the §245A reporting obligation continues. For most freelance and small-business filers this skill targets, Category 1 will be inapplicable, but the categorization analysis must consciously rule it out.  _([§965; TCJA 2017](https://www.irs.gov/instructions/i5471))_
-
-### 2.2 Category 2 — US officer or director on an acquisition
-
-- **Category 2 trigger and scope** — Category 2 is triggered when a US citizen or resident is an officer or director of a foreign corporation and any US person acquires (1) stock that, when added to stock already owned, meets the 10% threshold by vote or value, or (2) an additional 10% or more by vote or value. The triggering acquisition need not be by the officer or director themselves — it is enough that the officer or director sits on the foreign corporation's board or executive when some other US person crosses the threshold. This category catches an under-appreciated population. A US person who agrees to serve on the board of a friend's foreign startup as a favor — owning no equity at all — becomes a Cat 2 filer the moment any US investor acquires 10% of the company. Penalties under §6038 apply notwithstanding the zero economic interest. The schedules required for Cat 2 are limited (the page 1 identifying information and Schedule O, Part I), but the filing obligation is real.  _([§6038](https://www.irs.gov/instructions/i5471))_
-
-### 2.3 Category 3 — Acquisition, disposition, or change of status
-
-- **Category 3 four triggering events** — Category 3 is the §6046 transactional category. Four distinct events trigger it: 1. A US person acquires stock that, in the aggregate, meets the 10% threshold (by vote or value) of a foreign corporation. 2. A US person acquires additional stock that, when added to prior holdings, increases the holding by 10% or more. 3. A US person disposes of stock that drops them below 10%. 4. A person becomes a US person while owning at least 10% of a foreign corporation (the 'expatriation in reverse' trigger — e.g., a green card holder finally becoming a US tax resident). Category 3 requires a substantive filing including Schedule O (Part II) documenting the transaction, the seller, the consideration, and the resulting ownership. Many practitioners forget the 'becomes a US person' trigger; it bites immigrants who held foreign-corp equity before relocation.  _(§6046)_
-
-### 2.4 Category 4 — Control for 30 days
-
-- **Category 4 control test** — Category 4 is the §6038 'control' category. A US person who at any time during the foreign corporation's annual accounting period had more than 50% ownership by vote OR value at any time during that person's tax year is a Category 4 filer. 'Control' is determined by §6038(e)(2) and uses constructive ownership rules under §318(a) with certain modifications. Category 4 requires the full schedule set: Schedules A, B, C, F, G, H, I, M, and — depending on whether the corporation is also a CFC — Schedules E, E-1, I-1, J, P, Q, and R. Category 4 is the heaviest filing burden on the form. Note carefully: Category 4 control is 'vote OR value.' A US person holding 51% by value but only 30% by vote (a common preferred-stock arrangement) is still a Cat 4 filer. The CFC definition in §957(a) has used a vote-or-value test since its 1986 amendment; before 1986, control for CFC purposes was vote-only.  _([§6038(e)(2); §318(a)](https://www.irs.gov/instructions/i5471))_
-
-### 2.5 Category 5 — US shareholder of a CFC
-
-- **Category 5 definition and subdivisions** — Category 5 is by far the most common filing trigger and the workhorse of the Form 5471 universe. A US shareholder (defined at §951(b) as a US person owning 10% or more of a foreign corporation by vote or value) of a CFC (defined at §957 — see §3 below) who owns stock in the CFC on the last day of the CFC's tax year on which it qualifies as a CFC is a Category 5 filer. Category 5 is subdivided: - Cat 5a — any Category 5 filer that is not a Category 5b or 5c filer. - Cat 5b — an unrelated section 958(a) US shareholder of a foreign-controlled CFC (a CFC only because of downward attribution from a foreign person). - Cat 5c — a related constructive US shareholder of a foreign-controlled CFC: owns no stock within the meaning of §958(a) and is related to the CFC. Any Category 5 filer may rely on the multiple-filer (joint filer) exception if a person with the same or greater filing requirements files a joint Form 5471 — but the exception must be claimed and documented, not assumed. The schedule load for Cat 5 mirrors Cat 4 plus the post-TCJA additions (I-1, J, P, Q) tied to GILTI and PTEP.  _([§951(b); §957](https://www.irs.gov/instructions/i5471))_
-- **AUDIT FLASH POINT — §958(b)(4) and Cat 5 expansion** — The TCJA's repeal of §958(b)(4) opened the floodgates: foreign-to-US 'downward attribution' now applies for purposes of determining CFC status (though not for purposes of determining who is a 'US shareholder' with an inclusion). The result is that a foreign parent with a US subsidiary and a non-US subsidiary will cause the non-US sub to be a CFC even though no US person has any direct or indirect economic interest in it. The 10% US shareholder of that 'sister CFC' then has a Cat 5 filing obligation even though they are an arm's-length party with no inside information. Notice 2018-13 and Rev. Proc. 2019-40 provide partial safe-harbor relief — narrow, and conditional on the absence of a US-shareholder relationship of more than minimal economic interest — but the filing obligation is broad and routinely missed. The IRS has been issuing automated Letter 6291 / 6292 penalty notices to filers caught by this expansion who had no reason to suspect they were CFC shareholders.  _(§958(b)(4); Notice 2018-13; Rev. Proc. 2019-40)_
-
-## 3. CFC definition — §957 and §958(b)(4) repeal
-
-- **Controlled foreign corporation (CFC)** — A controlled foreign corporation is defined at §957(a) as any foreign corporation in which more than 50% of the total combined voting power of all classes of voting stock, or more than 50% of the total value of all stock, is owned (within the meaning of §958(a)) or considered owned (by applying the constructive ownership rules of §958(b)) by US shareholders on any day during the foreign corporation's tax year.  _(§957(a))_
-- **US shareholder** — A US shareholder is defined at §951(b) as a US person who owns (within §958(a)) or is considered to own (within §958(b)) 10% or more of the total combined voting power of all classes of stock entitled to vote or 10% or more of the total value of all classes of stock of the foreign corporation.  _(§951(b))_
-- **Vote-or-value disjunction post-TCJA** — TCJA added the value prong to the §951(b) US shareholder test, effective for taxable years of foreign corporations beginning after December 31, 2017 (the §957 CFC test already counted value). Pre-TCJA, only vote counted for US shareholder status; this enabled no-vote-stock structures to avoid US shareholder status. Post-TCJA, those structures are squarely caught.  _([TCJA, effective for tax years beginning after December 31, 2017](https://www.law.cornell.edu/uscode/text/26/951))_
-- **Constructive ownership and §958(b)(4) repeal** — Constructive ownership under §958(b) imports the §318 rules with several modifications. §318 attributes ownership among family members (spouse, children, grandchildren, parents — note: no attribution between siblings), among entities and their owners, and among partnerships, estates, and trusts. The TCJA repealed §958(b)(4), which had previously turned off 'downward attribution' — attribution from a foreign person to a US person. With §958(b)(4) gone, a foreign parent's stock in a foreign subsidiary is attributed downward to the foreign parent's US subsidiary, with the result that the foreign subsidiary may be a CFC vis-à-vis the US sub even when no US person has any direct or indirect economic interest. P.L. 119-21 re-adds §958(b)(4) for taxable years of foreign corporations beginning after December 31, 2025.  _([§958(b); §318](https://www.law.cornell.edu/uscode/text/26/958))_
-- **Rev. Proc. 2019-40 safe harbor for unrelated §958(a) US shareholders** — The Treasury issued Notice 2018-13 (October 2018), Proposed Regulations under §958 (October 2019), and Rev. Proc. 2019-40 (October 2019) to provide partial relief through a safe harbor for 'unrelated Section 958(a) US shareholders.' Under Rev. Proc. 2019-40, an unrelated section 958(a) US shareholder of a foreign-controlled CFC files as a Category 5b filer with reduced schedules, and a US shareholder of a foreign-controlled CFC that owns no stock within the meaning of §958(a) and is not related to it does not have to file Form 5471. The safe harbor's scope is narrow: it applies only to foreign-controlled CFCs, and it requires the US person to have no current or former officer or director relationship with the foreign corp, no actual knowledge of the relevant CFC status, and to have made reasonable inquiry. Documentation of the inquiry is essential — without it the safe harbor cannot be invoked at audit.  _([Notice 2018-13; Rev. Proc. 2019-40](https://www.irs.gov/instructions/i5471))_
-
-## 4. The eleven schedules — what each one does
-
-Form 5471 is a multi-page mothership with schedules that are themselves multi-page returns. Filing requirements vary by category; not every filer files every schedule. The skill organises the schedules in the order they appear on the form, then maps them to categories at the end of this section.
-
-### 4.1 Schedule A — Stock of the foreign corporation
-
-- **Schedule A** — Schedule A is the disclosure of the foreign corporation's capital structure. It lists each class of stock issued, the number of shares outstanding at the beginning and end of the year, and the par or stated value. For multiple classes (voting, non-voting, common, preferred), each class is listed separately. Required for Categories 1, 2, 3, 4, and 5.
-
-### 4.2 Schedule B — US shareholders of foreign corporation
-
-- **Schedule B** — Schedule B is split into two parts. Part I lists all 'US shareholders' within the §951(b) meaning — that is, every US person owning 10% or more directly, indirectly (through §958(a) ownership through foreign entities), or constructively (through §958(b)). For each shareholder, the schedule discloses name, address, taxpayer identification number, class of stock held, number of shares at year-start and year-end, and pro rata share of Subpart F income and GILTI inclusion. Part II lists the direct shareholders of the foreign corporation. Part I is required for Categories 3 and 4; Part II for Categories 1a, 1c, 3, 4, 5a, and 5c.  _([§951(b); §958](https://www.irs.gov/instructions/i5471))_
-
-### 4.3 Schedule C — Income statement
-
-- **Schedule C** — Schedule C presents the foreign corporation's income statement, organised by line items that broadly parallel a US GAAP/tax format. The statement must be prepared in functional currency (the currency of the corp's primary economic environment, generally local currency) and then translated to US dollars at the weighted-average exchange rate for income statement items. Schedule C is the input for the §954 Subpart F categorisation and the §951A tested income computation. It must reconcile to Schedule H (current E&P) through the book-to-tax adjustments specified in §964 and Treas. Reg. §1.964-1. Required for Categories 4 and 5.  _(§954; §951A; §964; Treas. Reg. §1.964-1)_
-
-### 4.4 Schedule E and E-1 — Foreign income taxes paid and deemed paid
-
-- **Schedule E** — Schedule E reports the foreign corporation's income, war profits, and excess profits taxes paid or accrued during the tax year, by separate-category basket (§904(d)) and by §959(c) PTEP group. Schedule E is the input for the foreign tax credit under §§901 (direct credit on Subpart F inclusion) and 960 (deemed-paid credit on GILTI and Subpart F inclusions by domestic corporations).  _(§904(d); §959(c); §901; §960)_
-- **Schedule E-1** — Schedule E-1 tracks taxes 'deemed paid' — the §960 mechanism by which a domestic corporate US shareholder is treated as having paid the foreign taxes attributable to its §951(a) or §951A inclusion. The schedule is organised by §904(d) basket and tracks current-year taxes deemed paid, distributions of PTEP, and reductions. The Treasury final regulations under §960 (T.D. 9882, December 2019) prescribe a 'properly attributable' tracing methodology that requires precise basket-by-basket tracking. Required for Categories 4 and 5 (and historically Category 1 for §965 PTEP). Individual US shareholders not making the §962 election do not get the deemed-paid credit and may treat Schedule E-1 as informational for them, but it must still be completed where the schedule is otherwise required.  _(§960; T.D. 9882)_
-
-### 4.5 Schedule F — Balance sheet
-
-- **Schedule F** — Schedule F is the foreign corporation's balance sheet at the beginning and end of the tax year, in functional currency and translated to US dollars at the spot rate as of each balance sheet date. The schedule must conform to US tax principles, not local-GAAP principles; differences (deferred tax assets, revaluation reserves, equity-method investments) must be adjusted to US tax positions. Required for Categories 4 and 5.
-
-### 4.6 Schedule G — Other information
-
-- **Schedule G** — Schedule G is the disclosures section. It is a multi-page yes/no questionnaire covering related-party transactions, hybrid instruments, base-erosion arrangements (BEPS-related), §267A disallowed deductions, §59A BEAT relevance, the §954(b)(4) high-tax election, the §954(c)(6) look-through election, §1411 net investment income, ownership of foreign disregarded entities (linking to Form 8858), and dozens of other items. Schedule G has expanded significantly post-TCJA and is the principal source of audit triggers — answer it carefully. Required for Categories 1c, 3, 4, 5a, and 5c.  _([§267A; §59A; §954(b)(4); §954(c)(6); §1411](https://www.irs.gov/instructions/i5471))_
-
-### 4.7 Schedule H — Current earnings and profits
-
-- **Schedule H** — Schedule H computes the current-year E&P of the foreign corporation under §964 and Treas. Reg. §1.964-1. E&P is the principal measure of the corporation's distributable income for US tax purposes and is the cap on §951(a) Subpart F inclusions (under §952(c)) and the foundation for §959 PTEP tracking. The schedule begins with current-year net income per Schedule C, then makes book-to-tax adjustments (depreciation conformity to US methods, capitalised costs, accruals, foreign currency gain/loss recognition, etc.). Required for Categories 4 and 5a.  _([§964; Treas. Reg. §1.964-1; §951(a); §952(c); §959](https://www.irs.gov/instructions/i5471))_
-
-### 4.8 Schedule I — Shareholder's pro rata share of Subpart F income
-
-- **Schedule I** — Schedule I is the shareholder-level summary: for each US shareholder, it reports their pro rata share of the foreign corp's Subpart F income by §954 category (foreign personal holding company income, foreign base company sales income, foreign base company services income, insurance income, §952(a)(3) international boycott income, §952(a)(4) illegal payments, etc.), plus the GILTI inclusion amount (from Schedule I-1), plus §965 inclusions for historical years. The pro rata share is determined under §951(a)(2) with reference to the shareholder's ownership at the close of the foreign corp's tax year, reduced by §245A dividends and earlier-year PTEP. The amount on Schedule I flows to Form 1040 Schedule 1 (for individual filers without a §962 election) or Form 1120 Schedule C (for corporate filers). Required for Categories 4 and 5.  _(§954; §952(a)(3); §952(a)(4); §951(a)(2); §245A)_
-
-### 4.9 Schedule I-1 — Information for GILTI computation
-
-- **Schedule I-1** — Schedule I-1 is the per-CFC computation of the inputs to GILTI under §951A. It reports: tested income or tested loss, qualified business asset investment (QBAI — average adjusted basis in tangible business assets generating tested income), tested interest expense, and tested interest income. These per-CFC amounts aggregate at the US-shareholder level on the shareholder's Form 8992 (GILTI calculation) and then to the shareholder's return. Required for Categories 4 and 5 (CFC only).  _(§951A)_
-- **AUDIT FLASH POINT — §954(b)(4) high-tax exclusion election timing** — The §954(b)(4) high-tax exception, originally available only for Subpart F income, was extended to GILTI tested income by the Treasury's final regulations under §951A (T.D. 9902, July 2020). The election is made by the controlling domestic shareholders by filing the statement required under Treas. Reg. §1.964-1(c)(3)(ii) with a timely filed original or amended return; for a CFC group, it is made for all CFC members of the group. The election excludes from tested income any item that was subject to an effective foreign tax rate exceeding 90% of the maximum US corporate rate — for 2025 with a 21% US rate, the threshold is 18.9%. The election is annual and may be revoked by the controlling domestic shareholders on an amended return; it must be made by the controlling domestic shareholders (as defined in Treas. Reg. §1.964-1(c)(5)), and all consenting US shareholders' Forms 5471 must reflect the consistent election. Missing the consistency requirement is a common error and a frequent audit point.  _([§954(b)(4); T.D. 9902; Treas. Reg. §1.951A-2(c)(7)](https://www.ecfr.gov/current/title-26/section-1.951A-2))_
-
-### 4.10 Schedule J — Accumulated earnings and profits
-
-- **Schedule J** — Schedule J is the cumulative E&P tracking schedule. It opens with the prior-year ending balance, adds current-year E&P from Schedule H, and tracks distributions and §959(c) PTEP movements. Schedule J post-TCJA is organised by PTEP 'group' — a fine-grained classification that distinguishes §965(a) PTEP, §965(b) PTEP, §951(a)(1)(A) Subpart F PTEP, §951A GILTI PTEP (including the §250 deduction adjustments), §245A(d) hybrid dividend PTEP, and various others. The Schedule J columns cover 10 PTEP groups, each tracked separately because each carries different foreign tax credit and §959 distribution-ordering consequences. The current Schedule J (Form 5471) is Rev. December 2020; its PTEP group columns run (i) through (x). Required for Categories 1a, 4, and 5a.  _([§959(c); §965; §951(a)(1)(A); §951A; §250; §245A(d)](https://www.irs.gov/instructions/i5471))_
-
-### 4.11 Schedule M — Transactions between CFC and shareholders or related persons
-
-- **Schedule M** — Schedule M discloses every related-party transaction during the tax year between the foreign corporation and: its US shareholders, persons related to those shareholders under §267(b), and various other related-party categories. The transactions are reported by counterparty and by type — sales of goods, sales of property, rents and royalties, services, commissions, interest, dividends, loans, capital contributions, distributions, and 'other.' Amounts are reported in US dollars. The schedule is the principal data source for transfer-pricing audits under §482 and for §367 outbound transfer review. Required for Categories 4 and 5.  _(§267(b); §482; §367)_
-
-### 4.12 Schedule O — Organization or reorganization of foreign corporation, and acquisitions and dispositions of its stock
-
-- **Schedule O** — Schedule O is the §6046 transactional schedule. Part I is completed by Category 2 filers (US officers and directors) and reports the dates on which a US shareholder first acquired 10% or more, or an additional 10% or more, of the stock. Part II is completed by Category 3 filers and reports acquisitions and dispositions of stock and the organisation or reorganisation of the foreign corporation. Required for Categories 2 and 3.  _([§6046](https://www.irs.gov/instructions/i5471))_
-
-### 4.13 Schedule P — Previously taxed earnings and profits
-
-- **Schedule P** — Schedule P is the US-shareholder-level PTEP tracking schedule, complementary to the entity-level Schedule J. PTEP under §959 is income that has already been included in a US shareholder's income under §951(a) (Subpart F) or §951A (GILTI), and which, when subsequently distributed, is excluded from gross income to prevent double taxation. PTEP must be tracked by year, by §959(c) group, and by §904(d) foreign tax credit basket. Distributions are sourced from PTEP under §959(c) before they touch §959(c)(3) non-previously-taxed E&P, in a strict ordering rule. Required for Categories 1a, 1b, 4, 5a, and 5b.  _([§959; §951(a); §951A; §959(c); §904(d)](https://www.irs.gov/instructions/i5471))_
-- **AUDIT FLASH POINT — PTEP cliff at distribution** — When PTEP is distributed, the foreign tax associated with that PTEP (tracked on Schedule E-1) may be claimed as a deemed-paid credit by a domestic corporate shareholder — but only if Schedule P shows the PTEP balance and the basket assignment correctly. PTEP balances inherited from §965 (the 2017 transition tax) often went unreconciled in the years immediately after TCJA, leaving shareholders unable to claim the deemed-paid credit when distribution finally happened. Penalty assertions in this area focus less on the §6038 information-return penalty and more on the substantive disallowance of FTCs — which can be far more costly than the $10,000 form-filing penalty. Reconcile Schedule P every year, with year-by-year layers preserved and basket assignments documented.  _(§965; §6038)_
-
-### 4.14 Schedule Q — CFC income by CFC income groups
-
-- **Schedule Q** — Schedule Q reports the foreign corporation's income broken into 'CFC income groups' under Treas. Reg. §1.960-1: tested income or loss, residual income, Subpart F categories, §951A(c)(2)(A)(i)(II) high-tax exclusion income, etc. The schedule serves as the bridge between Schedule H (entity E&P) and Schedule I-1 (GILTI inputs), and is the input to the §960 deemed-paid foreign tax credit computation on Schedule E-1. Schedule Q is dense and unforgiving — it requires a detailed mapping of every E&P item to a basket and a group. The December 2024 revision refined the column headings to align with the §951A high-tax exception election and the §250 deduction interactions. Required for Categories 4 and 5 (CFC only).  _(Treas. Reg. §1.960-1; §951A(c)(2)(A)(i)(II); §960; §250)_
-
-### 4.15 Schedule R — Distributions from foreign corporation
-
-- **Schedule R** — Schedule R reports each distribution from the foreign corporation to its shareholders during the year — date, amount in functional currency, US-dollar-translated amount, character of the distribution (PTEP versus non-PTEP), PTEP group from which sourced, and recipient. The schedule supports the §959 distribution-ordering analysis on Schedule J and Schedule P. Required for Categories 4 and 5.  _(§959)_
-
-### 4.16 Schedule-to-category map
-
-**Schedule-to-category map**  _(https://www.irs.gov/instructions/i5471)_
-
-| Category | Schedules required |
+| Topic | Skill |
 | --- | --- |
-| Cat 1 (SFC) | A, B, C, F, G, H, I, E, E-1, J, P (historical §965 focus) |
-| Cat 2 (officer/director on acquisition) | A, B (Part I), O |
-| Cat 3 (acquisition/disposition) | A, B, C, F, G, H, I, O |
-| Cat 4 (controller >50%) | A, B, C, E, E-1, F, G, H, I, M; if CFC: I-1, J, P, Q, R |
-| Cat 5a (Category 5 filer not in 5b or 5c) | B (Part II), E, E-1, G, G-1, H, I, I-1, J, P, Q, R |
-| Cat 5b (unrelated section 958(a) US shareholder of a foreign-controlled CFC) | I, I-1, P, Q |
-| Cat 5c (related constructive US shareholder of a foreign-controlled CFC) | B (Part II), G, G-1, I-1 |
-
-- **Cat 5c multiple-filer exception cross-statement requirement** — Under the multiple-filers (joint filer) exception, the person filing the joint Form 5471 completes item H for the other persons, and every person identified in item H attaches a statement to their own income tax return (plus a separate Schedule P if a Category 1a, 1b, 4, 5a, or 5b filer); a Category 5b filer and a Category 5c filer cannot file jointly. Failure to attach the statements voids the exception, with §6038 penalty exposure.  _([§6038](https://www.irs.gov/instructions/i5471))_
-
-## 5. §951 Subpart F inclusion — mechanics
-
-- **§951(a) inclusion requirement** — §951(a) requires each US shareholder of a CFC to include in gross income their pro rata share of the CFC's Subpart F income for the CFC's tax year ending within or with the shareholder's tax year. The inclusion is current — not deferred until distribution — and is the original anti-deferral mechanism of the IRC (predating GILTI by 55 years; Subpart F was enacted in 1962).  _(§951(a))_
-- **Pro rata share determination** — Pro rata share is determined under §951(a)(2): the shareholder's share of Subpart F income equals the amount that would be distributed to the shareholder if the CFC had distributed all of its current-year E&P, reduced by amounts distributed during the year to other persons. The denominator is total stock outstanding; the numerator is the shareholder's stock held on the last day of the CFC's tax year on which it qualifies as a CFC.  _(§951(a)(2))_
-- **Subpart F income definition and E&P cap** — Subpart F income is defined at §952 and built up from the §954 categories described in §7 below. It is capped at current-year E&P under §952(c)(1) — a CFC cannot generate Subpart F income in excess of its current E&P, even if §954 categories independently would imply more. Excess Subpart F is 'recaptured' in later years to the extent of later E&P (§952(c)(2)).  _(§952; §952(c)(1); §952(c)(2))_
-- **Reporting of Subpart F inclusion** — The inclusion is reported on the US shareholder's return. For individuals, on Form 1040 Schedule 1 line 8n (Section 951(a) inclusion). For C corporations, generally on Form 1120 Schedule C line 16c (section 951A inclusions go on line 17). The amount is sourced from Schedule I of the Form 5471.  _([§951(a)](https://www.irs.gov/pub/irs-pdf/f1040s1.pdf))_
-- **Character of Subpart F inclusion and §962 mitigation** — Character: ordinary income, not qualifying for §1(h)(11) qualified dividend rates. This is a major disadvantage for individual shareholders — they are taxed at ordinary rates (up to 37%) on income that, if received as a true dividend from a treaty-country corporation, might have qualified for the 20% qualified-dividend rate. The §962 election is the principal mitigation: it allows the individual to elect corporate-rate taxation (21%) plus the §250 deduction on GILTI, with the trade-off that subsequent distribution is taxed again at individual rates to the extent of the post-§962 PTEP excess.  _(§1(h)(11); §962; §250)_
-
-## 6. §951A GILTI inclusion — mechanics
-
-§951A was added by TCJA and is effective for tax years beginning after December 31, 2017. GILTI ('Global Intangible Low-Taxed Income') is a parallel anti-deferral regime that catches the residual income of CFCs not already caught by Subpart F. The intended target was the high-return intellectual-property-driven income of multinationals' offshore operations; the actual mechanical reach is much broader.
-
-- **GILTI computation steps** — Computation at the US shareholder level (not at the CFC level, in contrast to Subpart F): 1. Tested income or loss per CFC = gross income, less the gross income items that fall outside the tested-income net (Subpart F income, §954(b)(4) high-tax excluded income, ECI, related-party dividends from same-country CFCs), less deductions properly allocable. 2. Net tested income = sum of tested income amounts minus sum of tested loss amounts across all CFCs the US shareholder owns. 3. Qualified business asset investment (QBAI) per CFC = average aggregate adjusted basis (using the alternative depreciation system) of specified tangible property held by the CFC and used in producing tested income. QBAI excludes intangibles, inventory, and property producing non-tested income. 4. Deemed tangible income return (DTIR) = 10% × aggregate QBAI of CFCs producing tested income. 5. Specified interest expense = net interest expense of CFCs to the extent allocable to tested income. 6. GILTI inclusion = net tested income minus (DTIR minus specified interest expense). If DTIR exceeds specified interest expense, the excess reduces GILTI; otherwise GILTI equals net tested income. The computation is at the shareholder level, but the per-CFC inputs come from Schedule I-1 of each CFC's Form 5471. The shareholder's Form 8992 aggregates the I-1 inputs and computes the GILTI inclusion.  _(§951A)_
-- **§250 deduction rate for domestic C corporations** — §250 deduction: a domestic C corporation gets a 50% deduction against GILTI (37.5% effective rate on the GILTI portion of FDII, but on the GILTI side the deduction is 50% for tax years beginning before 2026, dropping to 37.5% for tax years beginning after 2025 under TCJA's original sunset). The OBBBA (P.L. 119-21, July 2025) struck the scheduled cut to 37.5% and set the deduction at 40% for taxable years beginning after December 31, 2025; the 50% rate applies for 2025. Combined with the 21% corporate rate, the effective rate on GILTI for a domestic C corp is 10.5% before foreign tax credits.  _([§250; OBBBA P.L. 119-21 (July 2025)](https://www.law.cornell.edu/uscode/text/26/250))_
-- **Individual shareholders GILTI treatment without §962** — Individual shareholders without a §962 election get no §250 deduction and pay ordinary rates (up to 37%) plus net investment income tax considerations on GILTI inclusions. The §962 election is therefore particularly powerful for individuals with material GILTI exposure: it provides corporate-rate taxation and access to the §250 deduction at the cost of a second layer of tax on distribution.  _(§962; §250)_
-- **§954(b)(4) high-tax exclusion election for GILTI** — §954(b)(4) high-tax exclusion election: as noted in §4.9, the election extends to GILTI tested income for tax years of CFCs beginning on or after July 23, 2020. When made, items of tested income subject to an effective foreign tax rate exceeding 90% of the US corporate rate (>18.9% for 2025) are excluded from GILTI. The election is made by the controlling Section 958(a) shareholder, applies on a tested-unit-by-tested-unit basis, and binds all consenting US shareholders. It may be revoked by the controlling domestic shareholders on an amended return.  _([§954(b)(4)](https://www.ecfr.gov/current/title-26/section-1.951A-2))_
-
-## 7. §954 categories of Subpart F income
-
-§954 defines the principal categories of Subpart F income. Each category is computed separately and aggregated into the §952 Subpart F total.
-
-### 7.1 Foreign personal holding company income (FPHCI) — §954(c)
-
-- **FPHCI definition** — FPHCI is the passive-income basket. It includes dividends, interest, royalties, rents, annuities, net gains from sales of property producing the foregoing or that does not give rise to active income, commodity transactions (with active-trade exceptions), foreign currency gains (other than from §988 transactions in the ordinary course of the active business), and gains from notional principal contracts.  _(§954(c))_
-- **§954(c)(2)(A) — active rent and royalty exception** — Rents and royalties from the active conduct of a trade or business and received from an unrelated person are excluded.  _(§954(c)(2)(A))_
-- **§954(c)(3) — same-country exception** — Dividends and interest from a related corporation organised under the laws of the CFC's country, where that corporation has a substantial part of its assets used in a trade or business in that country, are excluded.  _(§954(c)(3))_
-- **§954(c)(6) — CFC look-through made permanent** — Dividends, interest, rents, and royalties received from a related CFC are excluded if attributable to income of the payor that is neither Subpart F nor ECI. Originally a temporary provision, repeatedly extended; the OBBBA (2025) made §954(c)(6) permanent for taxable years of foreign corporations beginning after December 31, 2025 (the prior extension already covered years beginning before January 1, 2026). This is a major structural simplification for multinationals operating through CFC subgroups.  _([§954(c)(6); OBBBA (2025)](https://www.law.cornell.edu/uscode/text/26/954))_
-
-### 7.2 Foreign base company sales income (FBCSI) — §954(d)
-
-- **FBCSI definition** — FBCSI is income from a CFC's purchase of personal property from a related person and sale to any person (or purchase from any person and sale to a related person), where the property is both manufactured and sold for use outside the CFC's country of incorporation. The intent is to catch 'drop-shipping' structures where a CFC is interposed between a related supplier and a customer in a third country without performing substantive activity.  _(§954(d))_
-- **Manufacturing exception** — If the CFC manufactures the property (under either the substantial-transformation test of Treas. Reg. §1.954-3(a)(4)(ii) or the substantial-contribution test of §1.954-3(a)(4)(iv)), the income is not FBCSI even if the purchase and sale parties are related.  _(Treas. Reg. §1.954-3(a)(4)(ii); §1.954-3(a)(4)(iv))_
-- **Branch rule** — A branch of the CFC in a country other than the CFC's country of incorporation may be treated as a separate corporation for FBCSI purposes if the branch's effective tax rate is materially lower than the CFC's home-country rate, triggering FBCSI on income that flows through the branch.  _(§954(d))_
-
-### 7.3 Foreign base company services income (FBCSI-svc) — §954(e)
-
-- **FBCSI-svc definition** — FBCSI-svc is income from services performed by a CFC for or on behalf of a related person, where the services are performed outside the CFC's country of incorporation. Same intent as FBCSI: catching cross-border services arrangements that interpose a low-tax CFC for transfer-pricing optimisation without substantive functions.  _(§954(e))_
-
-### 7.4 Insurance income — §953
-
-- **Insurance income** — Insurance income of a CFC (insuring risks outside the CFC's home country) is Subpart F income. The category was substantially expanded by TCJA and the PATH Act amendments and now reaches captive insurance arrangements that previously escaped through the Bermuda and Cayman structures.  _(§953)_
-
-### 7.5 §952(a)(3), (4), (5) — boycott income, illegal payments, foreign country sanctions
-
-- **Boycott/illegal payments/sanctions income** — Less commonly relevant but on the books: income attributable to international boycotts (§999), illegal bribes and kickbacks (§162(c)), and income derived from countries subject to §901(j) sanctions. Schedule G asks about each.  _(§952(a)(3); §952(a)(4); §952(a)(5); §999; §162(c); §901(j))_
-
-### 7.6 §954(b)(4) high-tax exception
-
-- **§954(b)(4) high-tax exception threshold for 2025** — Already discussed at §4.9 and §6. For 2025 with the 21% US corporate rate, the threshold is 18.9% (90% × 21%). The election is made by the controlling domestic shareholders by filing the statement required under Treas. Reg. §1.964-1(c)(3)(ii), applies tested-unit-by-tested-unit, and excludes the high-taxed items from both Subpart F and GILTI. Documentation of the foreign effective tax rate on a tested-unit basis is essential and is the single most common audit issue under the high-tax election.  _([§954(b)(4)](https://www.ecfr.gov/current/title-26/section-1.951A-2))_
-
-## 8. §959 PTEP — previously taxed earnings and profits
-
-- **§959 double-taxation prevention mechanism** — §959 prevents double taxation of income that has already been included under §951(a) Subpart F or §951A GILTI. When such pre-taxed E&P is later distributed, §959(a) excludes it from the recipient's gross income. The mechanic is straightforward in principle and excruciating in operation.  _(§959(a); §951(a); §951A)_
-- **PTEP groups** — Post-TCJA, PTEP is tracked in 10 PTEP groups, distinguished by their source (Subpart F vs GILTI vs §965 transition tax vs §245A hybrid dividend), by their year of origin, and by their §904(d) foreign tax credit basket assignment. Schedule J (Form 5471) remains Rev. December 2020; its PTEP group columns are (i) through (x).  _([§904(d); §960; §245A(d); §951A](https://www.irs.gov/instructions/i5471))_
-- **Distribution ordering under §959(c)** — §959(c) prescribes that distributions are sourced first from §959(c)(1) PTEP (the §956 investment-in-US-property PTEP — rare post-TCJA but still occurs), then from §959(c)(2) PTEP (the §951(a)(1)(A) and §951A inclusions), then from §959(c)(3) non-previously-taxed E&P. Within §959(c)(2), the IRS's guidance (Notice 2019-01 and the proposed §959 regulations) prescribes a 'last-in, first-out' ordering by year and a within-year ordering by group.  _(§959(c); §959(c)(1); §959(c)(2); §959(c)(3); §956; §951(a)(1)(A); §951A; Notice 2019-01)_
-- **Foreign currency translation of PTEP** — PTEP balances are tracked in US dollars at the spot rate on the date the underlying inclusion was made. Subsequent distribution at a different spot rate produces §986(c) foreign currency gain or loss — ordinary, not capital, and a routine source of small but persistent adjustments.  _(§986(c))_
-- **Basis adjustment on inclusion and distribution** — A §951(a) or §951A inclusion increases the US shareholder's basis in the CFC stock under §961(a). A subsequent distribution of PTEP reduces basis under §961(b). If PTEP is distributed in excess of basis (rare, but possible after multiple years of basis erosion), the excess is treated as gain from sale or exchange.  _(§961(a); §961(b))_
-
-## 9. Due dates and extensions
-
-- **Form 5471 filing mechanics** — Form 5471 is filed as an attachment to the US person's income tax return for the tax year in which the foreign corp's tax year ends. The due date and extension date are the filer's, not the CFC's.
-- **Individuals (Form 1040) due date** — April 15 of the year following the tax year; with extension, October 15.
-- **Calendar-year C corporations (Form 1120) due date** — April 15 (15th day of 4th month after year-end); with extension, October 15.
-- **Calendar-year partnerships (Form 1065) and S corporations (Form 1120-S) due date** — March 15; with extension, September 15. Form 5471 attaches to the entity return when the entity is the US shareholder.
-- **June fiscal-year filers due date** — C corporations with a June 30 fiscal year: 15th day of the 3rd month after fiscal year-end.  _(https://www.irs.gov/instructions/i1120)_
-- **Extension mechanics via Form 4868/7004** — Form 4868 (individual extension) or Form 7004 (entity extension) extends Form 5471. There is no separate extension for the 5471 standing alone; if the underlying return is on extension, the 5471 is too.  _(Form 4868; Form 7004)_
-
-A CFC with a non-calendar tax year reports on the US shareholder's tax year that contains the close of the CFC's tax year. For a US-calendar-year shareholder of a CFC with a June 30, 2025 fiscal year end, the Form 5471 attaches to the shareholder's 2025 Form 1040 (filed April 15, 2026) and reports the CFC's July 2024 – June 2025 fiscal year.
-
-## 10. §6038 penalties
-
-- **§6038(b) base penalty per Form 5471 per year** — $10,000 penalty per Form 5471 not filed, per year. The penalty is automatic — the IRS asserts it on the assumption of non-compliance and shifts the burden to the taxpayer to demonstrate reasonable cause. For a US person with multiple CFCs, the penalty is $10,000 per CFC per year — a six-CFC structure that has missed three years of filings carries a starting penalty exposure of $180,000 before any continuing-failure additions. USD  _(§6038(b))_
-- **Continuing failure penalty** — If the failure continues 90 days after IRS notice of the failure, an additional $10,000 per 30-day period accrues, capped at $50,000 per Form 5471 per year. Combined with the initial $10,000, the per-CFC-per-year maximum is $60,000.  _(§6038(b))_
-- **§6038(c) foreign tax credit reduction** — §6038(c) reduces the foreign tax credit otherwise allowable to the filer by 10% for each Form 5471 not timely filed. After 90 days of continuing failure, an additional 5% reduction applies per 3-month period, capped at the lesser of (a) the FTC otherwise allowable or (b) the greater of $10,000 or the income of the foreign corp for the year. For a US shareholder relying on the §960 deemed-paid credit to substantially zero out US tax on a GILTI inclusion, the §6038(c) reduction can be devastating — it can convert a tax-neutral GILTI position into a substantial cash tax liability independent of the $10,000 information-return penalty.  _(§6038(c))_
-- **Criminal penalty for wilful failure** — §7203 imposes a misdemeanor (up to 1 year in prison, $25,000 fine) for wilful failure to file. Rarely asserted for Form 5471 alone but available where the IRS demonstrates wilfulness.  _(§7203)_
-- **§6501(c)(8) statute of limitations extension** — §6501(c)(8) keeps the assessment statute of limitations open on the entire return until 3 years after the missing Form 5471 is filed; if the failure is due to reasonable cause and not willful neglect, only the items related to the failure stay open. This is severe — a missing 5471 effectively eliminates the SoL on the entire 1040 or 1120, exposing all items on the return to indefinite audit. The Tax Court and several Courts of Appeals have repeatedly confirmed the §6501(c)(8) opening, most recently in the District Court litigation surrounding the Farhy decision and its aftermath.  _([§6501(c)(8)](https://www.law.cornell.edu/uscode/text/26/6501))_
-- **AUDIT FLASH POINT — §6038 automated penalties and Farhy** — The IRS implements §6038 penalties through automated Letter 6291 (initial penalty notice) and Letter 6292 (continuing failure). The notices are computer-generated based on AIR — the international information reporting database — and frequently misfire: filings made but not properly imaged, late-filed returns where the 5471 was on time but the 1040 was late, returns where the 5471 was attached but the cover sheet did not show it. The taxpayer must respond within 30 days with documentation. In Farhy v. Commissioner (160 T.C. No. 6, April 2023) the Tax Court held that the IRS lacks statutory authority to assess §6038(b) penalties — a major taxpayer win. The Court of Appeals for the DC Circuit reversed in May 2024 (Farhy v. Commissioner, No. 23-1179, D.C. Cir. May 3, 2024) and the Supreme Court declined certiorari, restoring the IRS's automated-assessment regime. As of 2025, the IRS resumed automated §6038 penalty assessment and is aggressively pursuing collection. Reasonable cause remains the primary defense.  _(Farhy v. Commissioner, 160 T.C. No. 6 (April 2023); Farhy v. Commissioner, No. 23-1179, D.C. Cir. (May 3, 2024))_
-
-## 11. Reasonable cause and amnesty paths
-
-A taxpayer with a missing Form 5471 has several avenues, each with different procedural rules and outcomes.
-
-### 11.1 §6038(c)(4) reasonable cause
-
-- **Reasonable cause defense elements** — The general reasonable-cause defense applies to §6038(b) penalties. The taxpayer must demonstrate (a) ordinary business care and prudence, (b) good faith, and (c) facts and circumstances supporting the failure. Common reasonable-cause grounds include reliance on competent tax advisor (with documentation of the engagement, the advisor's qualifications, and the specific advice given), serious illness or family emergency, casualty or natural disaster, and inability to obtain records (subject to limitations under Treas. Reg. §301.6038-2(k)). Reasonable cause is asserted by responding to the §6038 notice with a written statement and supporting documentation, and by filing the delinquent Form 5471 simultaneously. There is no specific form; a cover letter with the delinquent return and the reasonable-cause statement is sufficient.  _(§6038(c)(4); §6038(b); Treas. Reg. §301.6038-2(k))_
-
-### 11.2 Streamlined Foreign Offshore Procedures (SFOP)
-
-- **SFOP requirements and effect** — SFOP is for US persons resident outside the United States who failed to file Form 5471 (and/or FBAR, and/or report foreign income) for non-wilful reasons. The procedure requires: - A non-residency certification — physical presence outside the US for at least 330 full days in any one of the most recent three tax years. - Filing of the three most recent delinquent or amended income tax returns including all required international information returns. - A non-wilfulness certification under penalty of perjury — a detailed written statement explaining the failures. - Filing of the six most recent years of delinquent FBARs. - Payment of all unpaid tax and interest for the three years. In exchange, SFOP waives all penalties including §6038 penalties. The non-wilfulness certification is the gating item; the IRS scrutinises certifications closely and rejected certifications result in full penalty exposure plus potential criminal referral. SFOP is unavailable to taxpayers under IRS examination or criminal investigation.  _(§6038)_
-
-### 11.3 Streamlined Domestic Offshore Procedures (SDOP)
-
-- **SDOP requirements and penalty** — SDOP is for US persons resident in the United States with the same non-wilfulness profile. Same procedure as SFOP except the residency facts differ and the penalty waiver is partial: SDOP imposes a 5% miscellaneous offshore penalty computed on the highest year-end aggregate balance of unreported foreign financial assets over the six-year FBAR look-back. The 5% penalty replaces all §6038 and other information-return penalties. SDOP is unavailable under examination or criminal investigation. percent of highest year-end aggregate balance  _(§6038)_
-
-### 11.4 Delinquent International Information Return Submission Procedures (DIIRSP) — historical
-
-- **DIIRSP history and current status** — DIIRSP was the IRS's standalone amnesty for delinquent Forms 5471, 5472, 8865, 8938, 3520, and similar, where the taxpayer's tax position was correct (no unreported income or tax). The procedure was modified in November 2020 to eliminate the explicit penalty waiver and to require a reasonable-cause statement, effectively folding DIIRSP into the general §6038(c)(4) reasonable-cause framework. The IRS still publishes DIIRSP, but penalties may be assessed in accordance with existing procedures; taxpayers may attach a reasonable cause statement to each delinquent information return.  _([§6038(c)(4)](https://www.irs.gov/individuals/international-taxpayers/delinquent-international-information-return-submission-procedures))_
-
-### 11.5 Voluntary Disclosure Practice (IRM 9.5.11.9)
-
-- **Voluntary Disclosure Practice outcomes** — For wilful failures with material unreported income or tax, the IRS Voluntary Disclosure Practice is the path. It is administered by Criminal Investigation, requires a pre-clearance, and produces a closing agreement that typically imposes a 75% civil fraud penalty on the highest tax year and full §6038 penalties — but eliminates criminal exposure. The Voluntary Disclosure Practice is unavailable once an audit or criminal investigation is underway. Most Form 5471 failures do not require this path; reasonable cause and SFOP/SDOP cover the vast majority of cases. percent  _(IRM 9.5.11.9; §6038)_
-
-## 12. Common errors
-
-The following errors are the most frequent at audit and on review:
-
-1. Missing constructive ownership under §318 family attribution. A taxpayer holds 8% of a foreign corp directly but their spouse holds another 4%. Spousal attribution under §318(a)(1) makes the taxpayer a 12% owner — a US shareholder — and triggers Cat 5 filing. Frequently missed at intake.
-
-2. Failure to file Cat 2 when a relative inherits stock and crosses 10%. A US person serves on the foreign corp's board with zero equity. The founder's child (a US person) inherits stock and crosses 10%. The board member becomes a Cat 2 filer. The board member typically has no idea.
-
-3. Not filing for a dormant CFC. A CFC with no income, no employees, and no activity is still a CFC if the ownership tests are met. Cat 5 filing remains required, with limited schedules. Rev. Proc. 92-70 provides a 'summary filing' for dormant CFCs — only page 1 of Form 5471, labeled as filed pursuant to Rev. Proc. 92-70 — but the filing must be made.
-
-4. Cat 5 filer assuming a pass-through partnership absorbs the obligation. A US partnership owns a CFC; the partnership files Form 5471 at the partnership level. Each US partner that is itself a 10% indirect US shareholder under §958(a) attribution through the partnership must also file their own Form 5471 (unless they qualify for the multiple-filer exception with cross-statements). The partnership filing does not automatically discharge the partners.
-
-5. Failure to attach Subpart F and GILTI worksheets. Schedule I reports the inclusion amount but the IRS expects a detailed worksheet showing the §954 categorisation, the §952(c) E&P cap, and the §951(a)(2) pro rata share allocation. Omission of the worksheet is a frequent inadequate-disclosure finding.
-
-6. Inconsistent §954(b)(4) high-tax elections across consenting shareholders. The election must be uniformly made or not made across all controlling-shareholder-group filings. A discrepancy between two Forms 5471 covering the same CFC voids the election.
-
-7. Missing PTEP basket assignments on Schedule P. Schedule P columns must show §904(d) basket. Taxpayers who lump all PTEP into a single column lose the foreign-tax-credit traceability and may face FTC disallowance at distribution.
-
-8. Incorrect functional-currency conventions on Schedule C and Schedule F. Income statement uses weighted-average rate; balance sheet uses spot rate. Mixing the two is a common reconciliation failure that flags an audit-priority discrepancy.
-
-9. Forgetting Schedule O when ownership crosses 10% for the first time. The initial acquisition is a Cat 3 event with Schedule O Part II required. Year-1 filers who only complete the Cat 5 schedules and skip Schedule O have an incomplete return and may be subject to §6038 penalty notwithstanding the substantive Cat 5 completion.
-
-10. §958(b)(4)-driven 'sister CFC' Cat 5 filings ignored. Discussed at §2.5 and §3 above. The most under-recognised filing trigger post-TCJA.
-
-11. Treating §245A dividends as PTEP. §245A dividends-received deduction operates differently from PTEP; the §245A treatment does not transit Schedule P (except for §245A(d) hybrid dividends which have their own PTEP group post-2024 revision).
-
-12. Late filing of the 1040 voids on-time 5471. If the 1040 is late and on extension that was missed, the 5471 attached to it is also late notwithstanding that the 5471 itself was prepared on time. The 5471 due date is the 1040 due date.
-
-### Example A — Small US individual owning 100% of Singapore Pte Ltd
-
-**Facts.** Sarah is a US citizen resident in Texas. In March 2024 she incorporated a Singapore private limited company, Acora Pte Ltd, to provide software consulting services to Asian clients. She owns 100% of the share capital. For Singapore tax year 2025 (calendar year matching her US tax year), Acora Pte Ltd had:
-- Revenue: SGD 480,000 (services to unrelated Asian clients)
-- Operating expenses: SGD 180,000 (salaries to two Singapore employees, rent, software)
-- Net income: SGD 300,000 (≈ USD 222,000 at average rate)
-- Singapore corporate tax: SGD 24,300 (8.1% effective rate after partial exemption)
-- Net after-tax: SGD 275,700 (≈ USD 203,500)
-- Distributions to Sarah: SGD 100,000 (≈ USD 73,500) paid in November 2025
-- Tangible business assets: laptops and office equipment, average adjusted basis USD 12,000
-
-**Filing analysis.**
-
-1. **CFC status**: Sarah owns 100% by both vote and value. She is a US shareholder under §951(b) (10%+). US shareholders own 100% of vote and value, exceeding the 50% threshold. Acora Pte Ltd is a CFC under §957(a).
-
-2. **Filing category**: Sarah is a Cat 5a filer (controlling US shareholder, owns stock on last day of CFC's tax year). She also met Cat 4 control (>50% for 30+ days) and Cat 3 acquisition (initial 2024 acquisition crossed 10% — but Cat 3 was 2024's filing event; for 2025 she is Cat 5a unless other Cat 3 events occurred). The November 2025 distribution is not a Cat 3 event (she did not drop below 10%).
-
-3. **Subpart F analysis**: services revenue from unrelated Asian clients is not FBCSI-svc (services for related parties only); not FPHCI (active services income); not FBCSI (no purchase/sale of property). Subpart F income = $0.
-
-4. **GILTI analysis**:
- - Tested income = $222,000 (net income before US tax; less the $0 Subpart F; less Singapore tax of $18,000 if deductible — but tested income is computed before US tax and includes foreign tax as a deduction in computing net tested income).
- - Net tested income = ~$222,000 less Singapore tax = ~$204,000.
- - QBAI = $12,000; DTIR = 10% × $12,000 = $1,200.
- - Specified interest expense = $0.
- - GILTI inclusion = $204,000 - $1,200 = $202,800.
-
-5. **§954(b)(4) high-tax election**: Singapore effective rate is 8.1%. Threshold is 18.9%. Sarah does NOT qualify for the high-tax exclusion. GILTI inclusion stands.
-
-6. **§962 election analysis**: As an individual at the 37% rate, Sarah's GILTI would tax at $202,800 × 37% = $75,036, less her share of Singapore tax (zero individual-level FTC available without §962). With §962 election: GILTI of $202,800, §250 deduction of $101,400 (50%), taxable GILTI of $101,400, US corporate tax at 21% = $21,294, deemed-paid FTC of $18,000 (with §960 mechanics and §78 gross-up) — net US tax in the range of $4,000-$6,000. The §962 election saves ~$70,000 in current US tax for Sarah, at the cost of a second layer of tax when she distributes the post-§962 PTEP. For her facts, the §962 election is strongly indicated; she should sign the election statement and attach it to her 1040.
-
-7. **Distribution treatment**: The $73,500 distribution in November 2025 is sourced first from §959(c)(2) PTEP (the GILTI inclusion). The GILTI inclusion of $202,800 (without §962) or post-§962 PTEP creates ample PTEP cover, so the distribution is excluded from gross income under §959(a). §986(c) foreign currency gain/loss may apply if the distribution rate differs from the inclusion rate.
-
-8. **Form 5471 schedules required**: A, B, C, E, E-1, F, G, H, I, I-1, J, M, P, Q, R. Schedule M reports the distribution. Schedule O is not required (no organisation event in 2025).
-
-9. **Other forms**: Form 8992 for the GILTI computation; Form 1116 for the foreign tax credit (if §962); §962 election statement; Form 1040 Schedule 1 for the GILTI inclusion. FBAR (FinCEN 114) for the Singapore corporate bank account if balance exceeded $10,000 (almost certainly yes). Form 8938 if specified foreign financial asset thresholds met.
-
-### Example B — US C corporation with German GmbH subsidiary
-
-**Facts.** Cutajar Software Inc., a Delaware C corporation, owns 100% of Cutajar Deutschland GmbH, a German limited liability company that develops software for European customers. For 2025:
-- GmbH revenue: EUR 4,200,000 (services and license fees from unrelated EU customers)
-- GmbH expenses: EUR 3,100,000 (salaries, rent, R&D, German depreciation under §168 ADS-conformed)
-- GmbH net income: EUR 1,100,000 (≈ USD 1,210,000 at average rate)
-- GmbH German tax (Körperschaftsteuer + Gewerbesteuer + Solidaritätszuschlag): EUR 330,000 (30% effective rate)
-- GmbH after-tax: EUR 770,000 (≈ USD 847,000)
-- QBAI: GmbH owns office equipment and servers, average adjusted basis EUR 240,000 (USD 264,000)
-- Intercompany license payment from GmbH to Cutajar Software Inc. for use of US-developed IP: EUR 80,000 (royalty)
-- Intercompany dividend from GmbH to parent: EUR 500,000 (November 2025)
-
-**Filing analysis.**
-
-1. **CFC status**: Cutajar Software Inc. owns 100%. GmbH is a CFC.
-
-2. **Filing category**: Cat 4 (control >50%) and Cat 5a. Single Form 5471; check only the Category 4 box and leave the Category 5a box blank.
-
-3. **Subpart F**:
- - Services revenue: not FBCSI-svc (services to unrelated customers); not FPHCI.
- - License fees to unrelated EU customers: not FPHCI (active business, §954(c)(2)(A) active royalty exception likely applies given the substantial R&D operation in Germany).
- - The intercompany royalty paid BY GmbH to the US parent reduces GmbH's net income but is not GmbH's Subpart F (it is the parent's US-source income).
- - The intercompany dividend received by Cutajar Software Inc. is a §245A "Section 245A dividend" eligible for the 100% dividends-received deduction (German corp, more than one-year holding, etc.) — separate analysis, reported on Form 1120 Schedule C and flagged on Schedule G of the 5471.
- - Subpart F = $0.
-
-4. **GILTI**:
- - Tested income = $1,210,000 - German tax of $363,000 ≈ $847,000.
- - QBAI = $264,000; DTIR = $26,400.
- - GILTI inclusion = $847,000 - $26,400 = $820,600.
-
-5. **§954(b)(4) high-tax election**: German effective rate is 30%, well above the 18.9% threshold. The election is available and would exclude the GmbH's tested income from GILTI. The election is made on Schedule I-1 by Cutajar Software Inc. as the controlling shareholder. With the election: GILTI inclusion = $0. This is the obvious choice for high-tax CFCs and is the principal post-2020-regulations planning point.
-
-6. **§245A dividend**: the EUR 500,000 distribution, to the extent not sourced from PTEP, is a Section 245A dividend with 100% DRD. Schedule R reports it; Form 1120 Schedule C line 13 reports the gross dividend; the section 245A deduction is taken on Schedule C and carried to page 1, line 29b (special deductions).
-
-7. **Schedule J PTEP**: with the high-tax election made, the GmbH has no GILTI PTEP. The dividend is sourced from §959(c)(3) E&P (not PTEP) and qualifies for §245A.
-
-8. **§960 deemed-paid FTC**: with no GILTI inclusion (high-tax election), no §960 credit. The German tax of $363,000 reduces GmbH's E&P but does not flow to the US parent through the FTC mechanism — a cost of the high-tax election. Run the math both ways: GILTI inclusion + §250 + §960 vs. high-tax exclusion + §245A. For a high-tax CFC, the §245A path typically wins because the §250 deduction is only 50% (not 100%) and the §960 credit is haircut at 80% under §960(d)(1).
-
-9. **Schedules required**: A, B, C, E, E-1, F, G, H, I, I-1 (with high-tax election line), J, M, P, Q, R. Schedule M reports the intercompany royalty payment from GmbH to parent.
-
-10. **Other forms**: Form 8992 reflecting the elected-out income; Form 1118 (corporate FTC) if §960 credit is used elsewhere; Form 8975 country-by-country report if Cutajar Software Inc. is part of a multinational group exceeding $850M revenue (likely not for this size).
-
-### Example C — Family attribution catching an unaware Cat 5 filer
-
-**Facts.** Mark is a US citizen living in California. Mark's father, Joseph, is a US citizen living in Florida and has, for 20 years, owned 60% of an active manufacturing corporation in Mexico, Industrias Joseph S.A. de C.V. Joseph has filed Form 5471 every year. Mark has never been involved in the business, has never received a distribution, and owns no shares directly. In April 2025 Joseph dies and his estate (a US estate) inherits the 60%. The estate is in administration through end of 2025. Joseph's will divides his estate 50/50 between Mark and Mark's sister Anna (also a US citizen).
-
-**Filing analysis.**
-
-1. **Mark's direct ownership of Industrias Joseph S.A.**: 0%.
-
-2. **Mark's §958(a) indirect ownership through the estate**: An estate is treated as owned by its beneficiaries under §958(a)(2) only if and to the extent of the beneficiaries' interests. Mark is a 50% beneficiary; the estate's 60% × Mark's 50% = 30% indirect §958(a) ownership.
-
-3. **§958(b) constructive ownership**: Under §318(a)(2)(A) (estate-to-beneficiary attribution), the estate's stock is attributed to its beneficiaries to the extent of their interest. This duplicates the §958(a) result for Mark (30%).
-
-4. **US shareholder status**: Mark owns 30% indirectly. He is a US shareholder under §951(b).
-
-5. **CFC status**: US shareholders (Mark 30%, Anna 30% — same analysis — and the estate which holds 60% but is itself a US person owning through Joseph's residual estate interests; or alternatively the estate is the §958(a) owner with Mark and Anna as beneficiaries) collectively own well over 50%. Industrias Joseph S.A. is a CFC.
-
-6. **Filing requirement**: Mark is a Cat 5 filer for 2025 (and Cat 3 for the inheritance event in April 2025 which crossed Mark's ownership above 10%). Mark must file his own Form 5471 attached to his 2025 Form 1040, due April 15, 2026 (October 15 with extension), with Schedules A, B, C, E, E-1, F, G, H, I, I-1, J, P, Q, R, and Schedule O for the inheritance event.
-
-7. **Mark's likely state of awareness**: zero. Mark has never thought about his father's Mexican business and has no relationship with the company management. Mark and his preparer must coordinate with the estate executor, who has the books and records of Industrias Joseph S.A. The estate executor is a Cat 4 filer in their own right (control of the foreign corp through the estate).
-
-8. **Possible relief**: Category 5c does not apply (it covers only related constructive U.S. shareholders of foreign-controlled CFCs), but Mark may rely on the multiple-filer (joint filer) exception if a person with the same or greater filing requirements, such as the estate, files a joint Form 5471 covering him. The joint filer completes item H for Mark, and Mark must attach the item H statement (and his own Schedule P) to his return.
-
-9. **Penalty exposure if missed**: $10,000 §6038 penalty for 2025; if Mark continues to miss in 2026 and 2027 before discovery, $30,000+ exposure. §6501(c)(8) keeps Mark's 2025, 2026, 2027 1040s open indefinitely for assessment until the 5471s are filed.
-
-10. **Practitioner action**: at any 1040 intake where a parent owned a foreign business, ask about death events and inheritances. Family attribution catches this scenario.
-
-## 14. Closing notes
-
-Form 5471 is the most administratively burdensome and most penalty-exposed information return in the US international tax system. The five-category framework, the eleven schedules, the §951/§951A inclusion mechanics, the §959 PTEP tracking, the §954 categorisation, and the §954(b)(4) high-tax election form a tightly interlocking system that demands year-round attention, not just April-15 attention.
-
-Three practitioner disciplines reduce penalty exposure to near-zero:
-
-1. **Year-end ownership review** — every 1040 and 1120 intake includes a deliberate question about direct, indirect, and constructive ownership of any foreign corporation. The §958(b)(4) "sister CFC" trap and the §318 family attribution trap require explicit inquiry.
-
-2. **PTEP discipline** — maintain Schedule J and Schedule P with year-by-year layers, basket assignments, and currency translation rates from year of inclusion. PTEP balances are decade-spanning records and lose value rapidly when not maintained.
-
-3. **High-tax election analysis** — every CFC with effective foreign tax above 18.9% should have a documented analysis of the §954(b)(4) election, with the run-the-math comparison of (a) GILTI + §250 + §960 vs. (b) high-tax exclusion + §245A. The wrong choice — silently defaulting to "no election" because no one ran the analysis — costs real money on high-tax-jurisdiction CFCs.
-
-A reviewer Circular 230 sign-off on a Form 5471 should confirm: filing category correctly identified, all required schedules present, Schedule I reconciles to Schedule J PTEP movements, Schedule E-1 deemed-paid FTC ties to Schedule Q income groups, Schedule M intercompany transactions reconcile to the underlying intercompany agreements, the §954(b)(4) election (or its absence) is documented with the effective rate computation, and any §962 election by an individual shareholder is signed and attached. The skill defers all amount computations to the underlying corporate accounting records and the reviewer's substantive review; this skill provides the structural map.
+| Computing net CFC tested income (formerly GILTI), the section 250 deduction, the section 962 election and the section 960 deemed-paid credit | `us-gilti-fdii-beat` |
+| Subpart F income categories (foreign personal holding company income, base company sales and services income, insurance income) and the CFC working paper | `us-gilti-fdii-beat` |
+| Foreign tax credit on Form 1116 for an individual | `us-foreign-tax-credit-1116` |
+| Form 5472, foreign-owned US corporations and disregarded entities | `us-form-5472-foreign-owned-us` |
+| FBAR (FinCEN 114) and Form 8938 | `us-fbar-and-fatca-8938` |
+| Forms 3520 and 3520-A, foreign trusts and gifts | `us-foreign-trust-reporting` |
+| The corporate return the form attaches to, including fiscal-year due dates | `us-form-1120-c-corp` |
+| The partnership return the form attaches to | `us-form-1065-partnership` |
+| Penalty abatement requests, appeals and collection after an assessment | `us-irs-collections-and-controversy` |
+| Form 8865 (foreign partnerships) and Form 8621 (PFICs) | no skill yet: refer |
+
+## Ask the client first
+
+1. **The ownership chart on every day of the foreign corporation's 2026 tax year.** For each shareholder: name, US or foreign person, class of stock, number of shares, votes and value, and dates of every purchase, sale, issue or redemption. Category 4 is tested at any time in the filer's tax year; Category 5 looks at who owned stock on the last day the corporation was a CFC; Category 3 is triggered by the transaction itself.
+2. **Family.** Shares owned by the client's spouse, children, grandchildren and parents (section 318(a)(1)), and whether each of them is a US citizen or resident. Stock of a nonresident alien relative is not attributed to a US citizen or resident for the CFC tests (section 958(b)(1)). Siblings are never attributed.
+3. **Entities and estates in between.** Any partnership, corporation, trust or estate that owns shares, whether it is US or foreign, and the client's share of it. Foreign entities pass ownership up proportionately (section 958(a)(2)); US entities count only through constructive ownership (section 958(b)).
+4. **Roles.** Is the client (or a US person related to them) an officer or director of the foreign corporation? That alone can create Category 2.
+5. **The foreign corporation's tax year**, and whether it used the one-month deferral election under former section 898(c)(2). For a year beginning after 30 November 2025 that election is gone and the first year under the new rule may be short.
+6. **Is anyone else filing?** Another US shareholder, the parent company or an estate executor may file a Form 5471 that covers the client (joint filers and constructive-owner exceptions).
+7. **History.** Earlier Forms 5471 filed, any IRS notices (and their dates), section 965 balances still on Schedule J or P, and whether the client's returns for 2022 to 2025 omitted any foreign income.
+8. **Accounts.** Functional currency, local financial statements, local tax paid, and any distributions, loans or payments between the corporation and its US shareholders.
+9. **Deaths and inheritances.** At any intake where a parent or grandparent owned a foreign business, ask whether anyone died or an estate now holds the shares (Worked case 3).
+
+## The method, step by step
+
+### Rates, bands and thresholds
+
+| Item | Amount or date | Source |
+| --- | --- | --- |
+| US shareholder: share of total combined voting power or of total value, directly, indirectly or constructively | 10% or more | [26 U.S.C. 951(b)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapN-partIII-subpartF-sec951.htm) |
+| Controlled foreign corporation: share of vote or value owned by US shareholders on any day of the foreign corporation's tax year | more than 50% | [26 U.S.C. 957(a)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapN-partIII-subpartF-sec957.htm) |
+| Category 4 control: share of vote or value owned at any time during the filer's tax year | more than 50% | [26 U.S.C. 6038(e)(2)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap61-subchapA-partIII-subpartA-sec6038.htm) |
+| Category 2 and 3 stock ownership requirement (vote or value) | 10% or more | [Instructions for Form 5471 (Rev. December 2025)](https://www.irs.gov/pub/irs-pdf/i5471.pdf) |
+| Category 2 exception: three or fewer US persons own this much of value after the acquisition | 95% or more | [Instructions for Form 5471 (Rev. December 2025)](https://www.irs.gov/pub/irs-pdf/i5471.pdf) |
+| Foreign controlled US shareholder under new section 951B (section 958(b) applied without paragraph (4)) | more than 50 percent | [Public Law 119-21, section 70353](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
+| Section 958(b)(4) restored (no downward attribution from foreign persons) and section 951B in force: taxable years of foreign corporations beginning after | 31 December 2025 | [Public Law 119-21, section 70353(d)](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
+| One-month deferral election (former section 898(c)(2)) repealed: taxable years of specified foreign corporations beginning after | 30 November 2025 | [Public Law 119-21, section 70352(b)](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
+| GILTI renamed net CFC tested income, deemed tangible return (QBAI) repealed: taxable years beginning after | 31 December 2025 | [Public Law 119-21, section 70323](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
+| New section 951(a) pro rata share rule (any day of ownership): taxable years of foreign corporations beginning after | 31 December 2025 | [Public Law 119-21, section 70354(c)(1)](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
+| Section 954(c)(6) look-through made permanent: taxable years of foreign corporations beginning after | 31 December 2025 | [Public Law 119-21, section 70351](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
+| Penalty for failing to furnish section 6038 information, per annual accounting period of each foreign corporation | USD 10,000 | [26 U.S.C. 6038(b)(1)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap61-subchapA-partIII-subpartA-sec6038.htm) |
+| Continuing failure: added for each 30-day period (or fraction) after 90 days from the IRS notice | USD 10,000 | [26 U.S.C. 6038(b)(2)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap61-subchapA-partIII-subpartA-sec6038.htm) |
+| Cap on the continuing-failure addition, per failure | USD 50,000 | [26 U.S.C. 6038(b)(2)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap61-subchapA-partIII-subpartA-sec6038.htm) |
+| Foreign tax credit reduction for a section 6038 failure | 10 percent | [26 U.S.C. 6038(c)(1)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap61-subchapA-partIII-subpartA-sec6038.htm) |
+| Further reduction for each 3-month period (or fraction) after 90 days from notice | 5 percent | [26 U.S.C. 6038(c)(1)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap61-subchapA-partIII-subpartA-sec6038.htm) |
+| Floor of the cap on the credit reduction (the cap is the greater of this or the corporation's income for the period) | USD 10,000 | [26 U.S.C. 6038(c)(2)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap61-subchapA-partIII-subpartA-sec6038.htm) |
+| Penalty for failing to file section 6046 information (Category 2 and 3, Schedule O) | USD 10,000 | [26 U.S.C. 6679(a)(1)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap68-subchapB-partI-sec6679.htm) |
+| Section 6046 continuing failure: per 30-day period after 90 days from notice, capped at USD 50,000 | USD 10,000 | [26 U.S.C. 6679(a)(2)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap68-subchapB-partI-sec6679.htm) |
+| Assessment period stays open until this long after the missing information is furnished | 3 years | [26 U.S.C. 6501(c)(8)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap66-subchapA-sec6501.htm) |
+| High-tax exception: foreign effective rate must be greater than this share of the top section 11 rate | 90 percent | [26 U.S.C. 954(b)(4)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapN-partIII-subpartF-sec954.htm) |
+| Corporate income tax rate (section 11), so the high-tax line is 90% x 21% = 18.9% (derived) | 21 percent | [26 U.S.C. 11(b)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapA-partII-sec11.htm) |
+| Form 8833 treaty-position disclosure penalty (C corporation: USD 10,000) | USD 1,000 | [Instructions for Form 5471 (Rev. December 2025)](https://www.irs.gov/pub/irs-pdf/i5471.pdf) |
+| Streamlined foreign offshore procedures: days physically outside the US, with no US abode, in one of the last 3 years | 330 full days | [IRS, U.S. taxpayers residing outside the United States](https://www.irs.gov/individuals/international-taxpayers/u-s-taxpayers-residing-outside-the-united-states) |
+| Streamlined domestic offshore procedures: miscellaneous offshore penalty on the highest aggregate year-end balance | 5 percent | [IRS, U.S. taxpayers residing in the United States](https://www.irs.gov/individuals/international-taxpayers/us-taxpayers-residing-in-the-united-states) |
+
+None of these amounts is indexed for inflation. The section 250 deduction rates and the section 960 deemed-paid percentage that apply to 2026 inclusions are owned by `us-gilti-fdii-beat` and are not restated here.
+
+### Step 1: is the foreign corporation a CFC for its 2026 tax year?
+
+1. List every US person who owns stock directly, indirectly through foreign entities (section 958(a)(2), proportionately) or constructively (section 958(b), which applies section 318(a) with changes).
+2. For each, add up vote and value separately. Family attribution: spouse, children, grandchildren and parents (section 318(a)(1)); not siblings; not from a nonresident alien relative (section 958(b)(1)). Entity attribution: up from partnerships, estates, trusts and corporations to their owners (section 318(a)(2); for corporations the 50% threshold is read as 10% (section 958(b)(3)), and an entity owning more than 50% of the vote is treated as owning all of it (section 958(b)(2))). Down from owners to entities (section 318(a)(3)).
+3. **Downward attribution from foreign persons, 2026 change.** For taxable years of foreign corporations beginning after 31 December 2025, section 958(b)(4) is back: stock owned by a foreign person is not attributed down to a US person under section 318(a)(3)(A) to (C). A foreign corporation that was a CFC only because a foreign parent's shares were attributed to its US subsidiary (the "sister CFC" of 2018 to 2025) stops being a CFC for those years. Source: [Public Law 119-21, section 70353](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm).
+4. A US person with 10% or more of vote or value is a **US shareholder**. The value prong was added for foreign corporation years beginning after 31 December 2017; before that only votes counted, so no-vote stock no longer avoids the test. Add the stock (counted once, not once per person) owned by all US shareholders. More than 50% of vote or of value on any day of the foreign corporation's tax year makes it a **CFC**.
+5. **Section 951B check (new).** If the corporation is not a CFC under step 4 but a single US person would own more than 50% if downward attribution still applied, that person is a "foreign controlled United States shareholder" and the corporation a "foreign controlled foreign corporation". Subpart F and net CFC tested income then apply to that person as if they were a US shareholder of a CFC. Treasury may extend the US shareholder and CFC treatment to "any reporting requirement" (section 951B(d)(1)). The December 2025 instructions do not yet say how such a person reports on Form 5471: see "Not yet confirmed" under Sources, and refer.
+
+### Step 2: which category boxes on item B
+
+Work through all five; one person can be in several. Source for every row: [Instructions for Form 5471 (Rev. December 2025)](https://www.irs.gov/pub/irs-pdf/i5471.pdf).
+
+| Category | Who | Notes |
+| --- | --- | --- |
+| 1a, 1b, 1c | A US shareholder of a section 965 specified foreign corporation, who owned the stock on the last day it was one | Continues only while the corporation has section 965 E&P on Schedule J or the filer has section 965 PTEP on Schedule P. 1b: unrelated section 958(a) US shareholder of a foreign-controlled section 965 SFC; 1c: related constructive US shareholder of one; 1a: everyone else. Rule it out consciously; most small filers are not Category 1 |
+| 2 | A US citizen or resident who is an officer or director of a foreign corporation in which a US person acquired stock meeting the 10% requirement, or an additional 10% | The officer or director needs no shares. The acquirer can be anyone US, including a relative who inherits |
+| 3 | A US person who acquires stock reaching 10% (with or without stock already owned), becomes a US person while holding 10%, disposes of enough to fall below 10%, or is treated as a US shareholder under section 953(c) | Section 6046. Includes the immigrant who held 10% before becoming resident. Attach the statement of indebtedness to related persons and of subscribers |
+| 4 | A US person who controlled the foreign corporation (more than 50% of vote or value) at any time during the filer's tax year | Control passes down a chain of more-than-50% holdings. There is no 30-day minimum |
+| 5a, 5b, 5c | A US shareholder of a CFC who owned the stock on the last day in the year it was a CFC | 5b: unrelated section 958(a) US shareholder of a foreign-controlled CFC; 5c: related constructive US shareholder of a foreign-controlled CFC; 5a: everyone else |
+
+A filer who is both Category 4 and Category 5a checks **only the Category 4 box** and leaves 5a blank, but completes everything both categories require. A joint filer checks only the boxes that apply to itself.
+
+**Categories 1b, 1c, 5b and 5c in 2026.** These categories exist because downward attribution made foreign-controlled corporations CFCs. With section 958(b)(4) restored for foreign corporation years beginning after 31 December 2025, most of those corporations are no longer CFCs and the 5b and 5c filings fall away for those years. They still apply to the foreign corporation's last tax year that began on or before 31 December 2025 (for a calendar-year corporation, 2025, reported on the 2025 return filed in 2026).
+
+### Step 3: which schedules
+
+Separate Form 5471 for each foreign corporation. When a required schedule has nothing to report, file it with zero amounts. If more than one category applies, do not duplicate information but complete every item that any category requires. Source: the chart "Filing Requirements for Categories of Filers", [Instructions for Form 5471 (Rev. December 2025)](https://www.irs.gov/pub/irs-pdf/i5471.pdf), page 8.
+
+| Category | Page 1 identifying information plus |
+| --- | --- |
+| 1a | Schedule B Part II, E, E-1, J, P |
+| 1b | E and E-1 (only if claiming deemed-paid taxes under section 960), P |
+| 1c | Schedule B Part II, E (E-1 may be left blank), G, G-1 |
+| 2 | Schedule O Part I |
+| 3 | Schedule A, B Part I, B Part II, C, F, G, G-1, O Part II |
+| 4 | Schedule A, B Part I, B Part II, C, F, E, E-1, G, G-1, H, H-1 (applicable CAMT corporations only), I, I-1, J, M, P, Q, R |
+| 5a | Schedule B Part II, E, E-1, G, G-1, H, H-1 (CAMT only), I, I-1, J, P, Q, R |
+| 5b | E and E-1 (only if claiming section 960 deemed-paid taxes), H-1 (CAMT only), I, I-1, P, Q |
+| 5c | Schedule B Part II, E (E-1 may be left blank), G, G-1, I-1 |
+
+A sole owner of a CFC (Categories 4 and 5a) completes all six pages of Form 5471 and separate Schedules E, G-1, H, H-1 (if a CAMT applicable corporation), I-1, J, M, P, Q and R. Schedule O is added in any year with a Category 2 or 3 event.
+
+What each schedule holds, in short:
+
+| Schedule | Content | Revision in use |
+| --- | --- | --- |
+| A | Classes of stock and shares outstanding at the start and end of the year; each class listed separately | Form 5471, Dec 2025 |
+| B | Part I: US shareholders of the corporation (section 951(b), direct, indirect or constructive); Part II: direct shareholders of the corporation | Form 5471, Dec 2025 |
+| C | Income statement in functional currency and US dollars; the starting point for subpart F and tested income and for E&P on Schedule H | Form 5471, Dec 2025 |
+| E, E-1 | Foreign income taxes paid, accrued or deemed paid, by separate category; E-1 is included with E. Feeds the section 901 and 960 credits | Dec 2021 |
+| F | Balance sheet, start and end of year, on US tax principles, not local GAAP | Form 5471, Dec 2025 |
+| G | Other information: yes/no questions on hybrids, elections, disregarded entities, section 304 transactions (new line 21) and the pro rata share transition rule (line 22a and new 22b); new question 3b on qualified business units with a different functional currency (Form 8964-TRA). The main source of audit questions: answer each one | Form 5471, Dec 2025 |
+| G-1 | Cost sharing arrangements | Dec 2023 |
+| H | Current earnings and profits under section 964, from book income with tax adjustments | Dec 2021 |
+| H-1 | Pro rata share of CFC adjusted net income for the corporate alternative minimum tax | Dec 2024 |
+| I | The shareholder's subpart F inclusion and related amounts, with Worksheet A | Form 5471, Dec 2025 |
+| I-1 | CFC-level inputs for the tested income inclusion (still titled "Global Intangible Low-Taxed Income") | Dec 2021 |
+| J | Accumulated E&P, by PTEP group | Dec 2020 |
+| M | Transactions between the CFC and its shareholders or related persons (sales, rents, royalties, services, interest, loans, dividends); the main transfer-pricing data source | Dec 2021 |
+| O | Part I: Category 2 acquisitions; Part II: Category 3 acquisitions, dispositions and reorganizations | Dec 2012 |
+| P | The shareholder's previously taxed E&P (PTEP), by group, year and foreign tax credit basket | Dec 2020 |
+| Q | CFC income by CFC income group; the bridge to the section 960 credit | Dec 2024 |
+| R | Distributions from the foreign corporation, with the PTEP group they come from | Dec 2020 |
+
+Translate amounts as each schedule's instructions say (income and taxes generally at the average rate under section 986(a); balance sheet at spot), and report every exchange rate as units of foreign currency per one US dollar, to at least four decimal places.
+
+### Step 4: apply the exceptions
+
+| Exception | Conditions | Applies to |
+| --- | --- | --- |
+| Constructive owner, another US person files | No direct interest; filer only because of constructive ownership from another US person; that person's Form 5471 reports everything required of the filer. No statement needed | Categories 1, 3, 4, 5 |
+| Constructive owner, from a nonresident alien | No direct or indirect interest; required only because of constructive ownership from a nonresident alien | Categories 1, 4, 5 |
+| No section 958(a) US shareholder | The corporation is foreign-controlled and no US shareholder owns stock within section 958(a) on the last day it was a CFC (Notice 2018-13, section 5.02) | Categories 1, 5 |
+| Unrelated constructive US shareholder | Foreign-controlled corporation; filer owns no section 958(a) stock and is not related under section 954(d)(3) (Rev. Proc. 2019-40, section 8.04) | Categories 1, 5 |
+| Category 2 | Immediately after the acquisition three or fewer US persons own 95% or more of value and the acquirer files as Category 3; or the person is a constructive owner and the person whose stock is attributed files | Category 2 |
+| Multiple filers (joint return) | One person with the same or greater filing requirements files for the others and completes item H; each person named in item H attaches a statement to their own return, plus their own Schedule P if Category 1a, 1b, 4, 5a or 5b. 5b and 5c cannot file jointly. For Category 3, only a person with an equal or greater interest can file for another. Missing statements lose the exception | All categories |
+| Section 953(d) insurance company | The foreign insurer elected to be treated as domestic and filed a US return | All categories |
+| Dormant foreign corporation (Rev. Proc. 92-70) | Summary filing: page 1 only, labeled "Filed Pursuant to Rev. Proc. 92-70 for Dormant Foreign Corporation", with filer information, items A to C, tax year, the accounting period and items 1a to 1d. Satisfies sections 6038 and 6046 | All categories |
+| Alternative information (Rev. Proc. 2019-40) | Items F and G on page 1: a code shows which safe-harbour alternative information was used for a foreign-controlled CFC | Mainly 5b |
+
+### Step 5: what 2026 changes on the form and the inclusions
+
+1. **Net CFC tested income replaces GILTI.** For taxable years beginning after 31 December 2025 the section 951A inclusion is "net CFC tested income", and the deemed tangible income return built on QBAI is repealed. Schedule I-1 still supplies the CFC-level inputs; the computation, the section 250 deduction rate and the section 960 credit share are in `us-gilti-fdii-beat`. Source: [Public Law 119-21, sections 70321 to 70323](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm).
+2. **One-month deferral year repealed.** A specified foreign corporation (a CFC more than 50% owned by one US shareholder) must use its majority US shareholder's year. The election to use a year beginning one month earlier ends for years beginning after 30 November 2025. A corporation that was a specified foreign corporation on 30 November 2025 has a first year after that date that ends with the first required year, which can be short; the change is treated as made with consent. File a Form 5471 for that first required year; foreign taxes split between the short year and the next follow Notice 2025-72, with a statement under Schedule E column (j). Sources: [Public Law 119-21, section 70352](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm); [Instructions for Form 5471 (Rev. December 2025)](https://www.irs.gov/pub/irs-pdf/i5471.pdf).
+3. **Pro rata share.** For CFC years beginning after 31 December 2025, each US shareholder that owns section 958(a) stock on any day of the CFC year includes the subpart F income attributable to the period it owned the stock while it was a US shareholder and the corporation a CFC. The inclusion goes in the shareholder's year that contains the last day it owned the stock in that CFC year. A seller during the year therefore has an inclusion it did not have before. For dividends paid before the first such year, the transition rule (Notice 2025-75) is reported on Schedule G line 22b and Schedule I Worksheet A line 46. Source: [Public Law 119-21, section 70354](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm).
+4. **Downward attribution restored and section 951B added** (step 1, items 3 and 5).
+5. **Section 954(c)(6) look-through made permanent** for foreign corporation years beginning after 31 December 2025: payments between related CFCs out of non-subpart F income stay out of foreign personal holding company income.
+
+### Step 6: penalties and exposure
+
+- **Section 6038(b):** USD 10,000 for each annual accounting period of each foreign corporation for which the information is not furnished on time (Form 5471 and Schedule M). If still missing 90 days after the IRS mails a notice, USD 10,000 more for each 30-day period or part, up to USD 50,000 per failure. Most a single corporation-year can cost under this section: USD 60,000.
+- **Section 6038(c):** foreign taxes available for credit under sections 901 and 960 are cut by 10%, plus 5% for each 3-month period or part after the 90 days, capped at the greater of USD 10,000 or the corporation's income for the period, and reduced by any section 6038(b) penalty for the same period. For a shareholder relying on deemed-paid credits, this can cost more than the USD 10,000.
+- **Section 6679 (Categories 2 and 3, Schedule O):** USD 10,000 per failure for each reportable transaction, plus USD 10,000 per 30-day period after 90 days from notice, capped at USD 50,000; not imposed where the failure is due to reasonable cause.
+- **Section 6501(c)(8):** the time to assess any tax on the return to which the information relates does not run out until 3 years after the information is furnished. With reasonable cause, only the items related to the failure stay open.
+- **Criminal:** sections 7203, 7206 and 7207 can apply to the information required by sections 6038 and 6046.
+- **Accuracy:** section 6662(j) can add a penalty on undisclosed foreign financial asset understatements.
+- **A late return makes the form late.** Form 5471 is on time only if the return it is attached to is filed by its due date, extensions included.
+- **Who is liable when someone else files.** A person who agrees to let another person file the form and Schedules J, M or O for them can still be penalized if that filing is wrong or missing.
+- **Rev. Proc. 2019-40, section 7** waives certain section 6038 and 6662 penalties for certain persons in foreign-controlled structures.
+
+Reasonable cause works by moving the start of the time limits: the deadline and the 90-day period are treated as not earlier than the last day reasonable cause existed (section 6038(c)(4)(B)). It needs ordinary business care and prudence, shown in writing with evidence (for example, documented reliance on a competent adviser who was given all the facts, serious illness, disaster, or records that could not be obtained).
+
+### Step 7: fixing missed years
+
+| Situation | Route | What it costs |
+| --- | --- | --- |
+| All income was reported and tax paid; only Form 5471 is missing; no IRS contact, exam or investigation | Delinquent international information return submission procedures: attach the late Form 5471 to an amended return, with a reasonable cause statement | Penalties may still be assessed in the normal way and the statement may only be considered later; be ready to answer IRS letters |
+| Unreported foreign income as well, non-willful, client lives abroad (no US abode and 330 full days outside the US in one of the last 3 years) | Streamlined foreign offshore procedures: 3 years of returns with all information returns, 6 years of FBARs, Form 14653, tax and interest | No information return, accuracy, failure-to-file or FBAR penalties if all instructions are followed |
+| Same, but client lives in the US and filed returns for the last 3 years | Streamlined domestic offshore procedures: 3 years of amended returns with information returns, 6 years of FBARs, Form 14654 | 5% miscellaneous offshore penalty on the highest aggregate year-end balance of the assets it covers, instead of information return penalties |
+| Willful failure, or under exam or investigation | Refer: IRS Criminal Investigation Voluntary Disclosure Practice or counsel | Outside this skill |
+
+Streamlined procedures are for failures to report income from foreign financial assets. A client whose only failure is the information return, with all income reported, goes through the delinquent information return route, not streamlined. Neither streamlined route is open to a taxpayer under civil exam or criminal investigation, and a non-willfulness certification is signed under penalty of perjury. Sources: [IRS streamlined filing compliance procedures](https://www.irs.gov/individuals/international-taxpayers/streamlined-filing-compliance-procedures); [IRS delinquent international information return submission procedures](https://www.irs.gov/individuals/international-taxpayers/delinquent-international-information-return-submission-procedures).
+
+### Step 8: related items reported elsewhere (pointers only)
+
+- The shareholder's inclusions flow to Form 1040 Schedule 1, line 8n (section 951(a) inclusion) and line 8o (section 951A(a) inclusion) on the 2025 Schedule 1; check the 2026 line numbers when the 2026 schedule is out. Inclusions are ordinary income, not qualified dividends. Corporate filers: Form 1120 Schedule C (see `us-form-1120-c-corp`).
+- Previously taxed E&P (section 959): inclusions create PTEP; distributions come out of PTEP first in section 959(c) order and are excluded from income; inclusions raise and PTEP distributions lower stock basis (section 961). Keep Schedules J and P by year, group and foreign tax credit basket every year. Currency gain or loss on PTEP distributions is ordinary (section 986(c)).
+- Assets already reported on Form 5471 are not reported again on Form 8938.
+- A treaty-based return position needs Form 8833 (USD 1,000 penalty, USD 10,000 for a C corporation).
+- A section 338 election on a foreign target, a reportable transaction (Form 8886) or a foreign disregarded entity or branch (Form 8858) adds attachments; follow the instructions' "Additional Filing Requirements".
+
+## Boundary and exception table
+
+| Situation | Treatment |
+| --- | --- |
+| Client owns 8% directly, spouse 4% | 12% by family attribution: a US shareholder. Siblings' stock would not count |
+| Parent is a nonresident alien holding 40% | Not attributed to the US child for the CFC and US shareholder tests (section 958(b)(1)) |
+| 51% of value, 30% of vote (preferred stock) | Category 4 and CFC tests are vote or value: still control |
+| Officer or director with no shares, a US investor buys 10% | Category 2 for the officer or director, with Schedule O Part I |
+| Client became a US resident in 2026 holding 15% of a foreign company | Category 3 (becomes a US person while meeting 10%); Category 5 too if it is a CFC |
+| First purchase reaching 10% in the year | Category 3 with Schedule O Part II, on top of the Category 5 schedules |
+| Corporation had no income, no staff, no activity | Still a filing; the Rev. Proc. 92-70 summary filing may be used if it meets that procedure's definition of dormant |
+| US partnership owns the CFC | The partnership files; each US partner that is itself a US shareholder through it files too, unless an exception (joint filer or constructive owner) applies |
+| Foreign parent, US subsidiary, foreign sister company: tax year of the sister beginning in 2025 | Downward attribution applies: sister may be a CFC; US subsidiary is 5c, a 10% indirect US owner of the parent is 5b; check the Notice 2018-13 and Rev. Proc. 2019-40 exceptions |
+| Same structure, sister's tax year beginning on or after 1 January 2026 | Section 958(b)(4) applies: no downward attribution; sister is not a CFC on that basis. Check section 951B for any US person over 50% without the restriction, and refer |
+| Category 4 and 5a filer | Check only the 4 box; complete all six pages and the separate schedules for both |
+| Same corporation reported by two consenting shareholders with different high-tax elections | Not allowed: the high-tax exception election is made by the controlling domestic shareholders and binds the group; the forms must agree |
+| Return filed late without extension | Form 5471 is late too, even if ready on time |
+| Inherited shares through a US estate | The estate is the section 958(a) owner; beneficiaries own constructively under section 318(a)(2)(A) (Worked case 3) |
+| Section 245A dividend from the CFC to a US corporation | Not PTEP; report on Schedule R and flag on Schedule G; the deduction is on Form 1120 |
+| CFC tax year ends 30 June 2026, shareholder on the calendar year | Reported on the shareholder's 2026 return (the year in which the CFC year ends) |
+
+### Red flags at review
+
+| Red flag | Why it matters |
+| --- | --- |
+| Spouse, parent or child holds shares and the intake did not ask | Family attribution is the most missed route to US shareholder status |
+| A US board member with no shares, and a relative or investor crossed 10% | Category 2 filing the board member rarely knows about |
+| "Dormant" company with no Form 5471 at all | Still required; at least the Rev. Proc. 92-70 summary filing |
+| Partnership files and the partners assume they are covered | Partners who are US shareholders through it file unless an exception is met and documented |
+| Schedule I inclusion with no supporting working paper (subpart F categories, E&P limit, pro rata share) | Weak support at exam; keep the working paper from `us-gilti-fdii-beat` |
+| Schedule P with PTEP lumped in one column, no basket or year | Credit and exclusion on later distributions can be lost; reconcile every year |
+| Average and spot rates mixed between Schedules C and F | Reconciliation failure that draws attention |
+| First year over 10% filed with Category 5 schedules only | Schedule O Part II missing: incomplete form |
+| Section 965 PTEP balances never reconciled | Category 1 continues and later deemed-paid credits may be lost |
+| Penalty notice for a form that was in fact filed | Automated notices misfire (form not imaged, return late but form on time); answer by the notice's deadline with proof of filing |
+| High-tax CFC (above 18.9%) with no documented high-tax election analysis | The election choice changes the inclusion; run it in `us-gilti-fdii-beat` |
+
+### Defaults when a fact is missing
+
+| Missing fact | Default |
+| --- | --- |
+| Whether a relative owns shares | Do not assume zero: ask, and hold the category decision |
+| The foreign corporation's tax year | Ask; do not assume calendar year, especially for a former one-month deferral company |
+| Whether another US person files for the client | Assume the client files their own Form 5471 until a copy of the other filing is in hand |
+| Dates of share changes during the year | Ask; the CFC test is met on any one day and Category 4 at any time |
+| Whether earlier years were filed | Assume not, and check the transcripts before choosing a Step 7 route |
+
+## Worked cases
+
+**Case 1, a decision: which category, which schedules?** Dana, a US citizen, has owned 8% of the only class of stock of a Portuguese company since 2023. Her husband, also a US citizen, owns 4%. Dana's US-citizen brother owns 40%. Foreign individuals own the remaining 48%. Nothing was bought or sold in 2026; Dana is not an officer or director.
+
+Dana counts her own 8% plus her husband's 4% (section 318(a)(1)(A)(i)): 12%, so she is a US shareholder. The brother's 40% is not attributed to her (no sibling attribution), but he is a US shareholder on his own. Stock owned by US shareholders: 8% + 4% + 40% = 52%, more than 50%, so the company is a CFC. Dana's 12% is far from control, so not Category 4. No acquisition in 2026, so not Category 3. Dana is **Category 5a**: page 1 plus Schedule B Part II, E, E-1, G, G-1, H, I, I-1, J, P, Q and R. Her husband (also 12%, with a direct interest) is Category 5a as well; the constructive-owner exception does not apply to either of them because each owns shares directly, but they may file one joint Form 5471 with item H completed and a statement plus Schedule P attached to the other return.
+
+The other way: if the brother owned 35% (foreigners 53%), US shareholders would own 47%. The company is not a CFC, so no Category 5, and with no acquisition and no control, **no Form 5471** for 2026. The 3-point difference decides the whole filing; confirm the share register on every day of the year, since the CFC test is met on any one day.
+
+```oa-check
+name: Category decision, Dana, 2026 (CFC at 52%, not at 47%)
+inputs:
+  dana_direct: 0.08
+  spouse_direct: 0.04
+  brother_direct: 0.40
+  brother_alternative: 0.35
+steps:
+  - dana_counted: dana_direct + spouse_direct
+  - us_shareholder_flag: 1 - ceil(clamp(0.10 - dana_counted, 0, 1))
+  - us_shareholder_stock: dana_direct + spouse_direct + brother_direct
+  - cfc_flag: ceil(clamp(us_shareholder_stock - 0.50, 0, 1))
+  - category_4_flag: ceil(clamp(dana_counted - 0.50, 0, 1))
+  - us_shareholder_stock_alternative: dana_direct + spouse_direct + brother_alternative
+  - cfc_flag_alternative: ceil(clamp(us_shareholder_stock_alternative - 0.50, 0, 1))
+expected:
+  dana_counted: 0.12
+  us_shareholder_flag: 1
+  us_shareholder_stock: 0.52
+  cfc_flag: 1
+  category_4_flag: 0
+  us_shareholder_stock_alternative: 0.47
+  cfc_flag_alternative: 0
+```
+
+The flags read 1 for yes and 0 for no. The CFC test is "more than 50%", so exactly 50% gives 0; the US shareholder test is "10% or more", so exactly 10% gives 1.
+
+**Case 2, penalty exposure for missed years.** Leo, a US citizen in Texas, wholly owns two foreign companies and filed no Form 5471 for 2023, 2024 or 2025 (six failures, each a section 6038(b) failure as Category 4). One IRS notice covers all six. He files everything 150 days after the notice was mailed, with no reasonable cause accepted.
+
+Base penalty: 2 companies x 3 years x USD 10,000 = USD 60,000. After the notice, 150 - 90 = 60 days remain, which is 2 periods of 30 days, so USD 20,000 more per failure (below the USD 50,000 cap), USD 120,000 in all. Total USD 180,000, before any foreign tax credit reduction under section 6038(c) (which is itself reduced by these penalties). The returns for 2023 to 2025 also stay open for assessment until 3 years after the forms are furnished (section 6501(c)(8)). If his income was all reported, the next step is the delinquent information return route with a reasonable cause statement for each form.
+
+```oa-check
+name: Section 6038(b) penalties, 2 corporations x 3 years, filed 150 days after notice
+inputs:
+  corporations: 2
+  years: 3
+  base_penalty: 10000
+  days_after_notice: 150
+  grace_days: 90
+  period_days: 30
+  continuing_cap: 50000
+steps:
+  - failures: corporations * years
+  - base_total: failures * base_penalty
+  - periods: ceil(max(days_after_notice - grace_days, 0) / period_days)
+  - continuing_per_failure: min(periods * base_penalty, continuing_cap)
+  - continuing_total: failures * continuing_per_failure
+  - total: base_total + continuing_total
+expected:
+  failures: 6
+  base_total: 60000
+  periods: 2
+  continuing_per_failure: 20000
+  continuing_total: 120000
+  total: 180000
+```
+
+**Case 3, inheritance through a US estate.** Joseph, a US citizen, owned 60% of a Mexican manufacturing company and filed Form 5471 every year. He died in April 2026; his US estate holds the 60% through the end of 2026, and his will splits the estate equally between his US-citizen children Mark and Anna. Mark owns no shares himself.
+
+The estate is a US person and the section 958(a) owner of 60%: Category 4 (control) and 5a, so the executor files, checking box 4. Mark and Anna each constructively own 30% (section 318(a)(2)(A), estate to beneficiaries); as US shareholders they are Category 5 filers, but because they have no direct interest and are filers only through constructive ownership from another US person (the estate), the **constructive-owner exception** applies if the estate's Form 5471 reports everything required of them. Their preparer should get a copy of the estate's filing. Because they own nothing within section 958(a), Mark and Anna have no subpart F or tested income inclusion from the company for 2026; that falls on the estate. When the shares are distributed to them, each acquisition of 30% is a Category 3 event for that year.
+
+**Case 4, a sole owner after the 2026 changes.** Sarah, a US citizen, owns 100% of a Singapore company with a calendar tax year. For 2026 she is Category 4 and 5a: she checks box 4 only and files all six pages plus Schedules E, G-1, H, I-1, J, M, P, Q and R (not H-1, which is only for corporate alternative minimum tax corporations). The company's services income is not subpart F income on these facts, so her inclusion is net CFC tested income, computed in `us-gilti-fdii-beat` (no deduction for QBAI from 2026). Singapore's rate on her company is below 18.9%, so the high-tax exception cannot help. Whether a section 962 election is worth making is decided in `us-gilti-fdii-beat`. Her Singapore bank account also needs an FBAR (`us-fbar-and-fatca-8938`).
+
+## When to refuse or refer
+
+| Code | Situation | Action |
+| --- | --- | --- |
+| R-5471-951B | A US person would be over 50% only with downward attribution from a foreign person, for a foreign corporation year beginning after 31 December 2025 | Refer: section 951B inclusions apply, and the Form 5471 reporting for it is not yet set out in IRS guidance |
+| R-5471-WILLFUL | Signs of willful non-filing, or the client is under exam or criminal investigation | Refer to counsel; do not prepare a streamlined certification |
+| R-5471-NOTICE | IRS penalty notice already received | Prepare the late form if asked, but refer the penalty response to `us-irs-collections-and-controversy` |
+| R-5471-965 | Section 965 balances, Category 1 PTEP or transition tax installments | Refer: specialist PTEP reconstruction |
+| R-5471-INSURANCE | Section 953(c) related person insurance income, captives, section 953(d) elections | Refer |
+| R-5471-FSC | A foreign sales corporation | Refer: special Category 2 to 5 rules |
+| R-5471-CAMT | The filer is an applicable corporation for the corporate alternative minimum tax (Schedule H-1) | Refer |
+| R-5471-REORG | Section 338 election, section 304 transaction, reorganization or liquidation of the foreign corporation | Refer: added attachments and Schedule G line 21 |
+| R-5471-PFIC | The foreign corporation may also be a PFIC for a shareholder that is not a US shareholder | Refer: Form 8621 rules, no skill yet |
+| R-5471-SHORT | First required year after the one-month deferral repeal, with foreign taxes to split under Notice 2025-72 | Prepare the categories and schedules; refer the tax allocation |
+
+## Filing and payment
+
+Form 5471 is not filed on its own: it is attached to the filer's income tax return (or partnership or exempt organization return) and filed by that return's due date, including extensions. For a 2026 calendar year:
+
+| Filer | Return | Due | Extension |
+| --- | --- | --- | --- |
+| Individual | Form 1040 | 15 April 2027 (26 U.S.C. 6072(a)) | Form 4868: 6 more months, to 15 October 2027. A citizen or resident "out of the country" on the due date gets 2 extra months without asking (to 15 June 2027) and can then request 4 more |
+| C corporation, calendar year | Form 1120 | 15 April 2027 (26 U.S.C. 6072(a)) | Form 7004; see `us-form-1120-c-corp` for fiscal years |
+| Partnership or S corporation, calendar year | Form 1065 or 1120-S | 15 March 2027 (26 U.S.C. 6072(b)) | Form 7004 |
+
+The foreign corporation's tax year that ends with or within the filer's tax year is the one reported (Schedule O instead reports events during the filer's tax year). There is no separate extension for Form 5471: the return's extension covers it. A corrected Form 5471 goes with an amended return, marked "Corrected", with a statement of the changes. No tax is paid with Form 5471 itself; tax on inclusions is paid with the shareholder's return and through estimated tax (`us-quarterly-estimated-tax`). Sources: [Instructions for Form 5471 (Rev. December 2025)](https://www.irs.gov/pub/irs-pdf/i5471.pdf); [26 U.S.C. 6072](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap61-subchapA-partV-sec6072.htm); [Form 4868 (2025)](https://www.irs.gov/pub/irs-pdf/f4868.pdf).
+
+## Completion checklist
+
+- Ownership chart covers every day of the foreign corporation's year, vote and value separately, with family and entity attribution and the 2026 section 958(b)(4) rule applied.
+- Every category tested; item B checked (4 only when 4 and 5a both apply); item C voting percentage at year end.
+- Schedules match the chart for every category; zero-amount schedules still included.
+- Exceptions claimed only where every condition is met; item H and the attached statements for joint filers; Schedule P attached by each joint filer in 1a, 1b, 4, 5a or 5b.
+- Schedule O added for any acquisition, disposition or new US person status in the year.
+- First required year after the one-month deferral repeal identified, with the Notice 2025-72 statement if foreign taxes were split.
+- Schedule G line 22b answered for dividends under the pro rata share transition rule.
+- Exchange rates as units of foreign currency per dollar, four decimals or more.
+- Inclusions computed in `us-gilti-fdii-beat` and carried to the return; Schedules J and P roll forward from last year.
+- High-tax election (or its absence) documented with the effective rate, consistent across all shareholders' forms.
+- Return filed on time with extension; late years routed through Step 7.
+
+## Sources
+
+| Source | URL | Read on |
+| --- | --- | --- |
+| Instructions for Form 5471 (Rev. December 2025). Read for What's New (section 70352 repeal, pro rata share transition rule, Schedule G 3b, 21, 22b), Categories of Filers and their exceptions, Additional Filing Exceptions, the filing requirements chart (page 8), item B, penalties, dormant corporations, exchange rates, corrections. | https://www.irs.gov/pub/irs-pdf/i5471.pdf | 2026-11-13 |
+| Form 5471 (Rev. December 2025). Read for item B category boxes, items F to H, and the section 898 tax year line. | https://www.irs.gov/pub/irs-pdf/f5471.pdf | 2026-11-13 |
+| IRS, About Form 5471. Read for the current revision and the schedule list (Schedule I-1 still titled for GILTI). | https://www.irs.gov/forms-pubs/about-form-5471 | 2026-11-13 |
+| Public Law 119-21 (One Big Beautiful Bill Act). Read for sections 70321 to 70323 (net CFC tested income, QBAI repeal, effective dates), 70351 (section 954(c)(6)), 70352 (section 898(c)(2) repeal and transition), 70353 (section 958(b)(4) and new section 951B, effective date), 70354 (section 951(a) pro rata share, transition rule for dividends). | https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm | 2026-11-13 |
+| 26 U.S.C. 6038 (govinfo, 2024 edition, not amended by Public Law 119-21). Read for (b) USD 10,000 and USD 50,000, (c) 10 and 5 percent reductions and the USD 10,000 limit, (c)(4)(B) reasonable cause timing, (e)(2) control. | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap61-subchapA-partIII-subpartA-sec6038.htm | 2026-11-13 |
+| 26 U.S.C. 6679 (govinfo). Read for the section 6046 penalty, USD 10,000 and USD 50,000. | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap68-subchapB-partI-sec6679.htm | 2026-11-13 |
+| 26 U.S.C. 6046 (govinfo). Read for the acquisition and disposition returns behind Categories 2 and 3. | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap61-subchapA-partIII-subpartA-sec6046.htm | 2026-11-13 |
+| 26 U.S.C. 6501 (govinfo). Read for (c)(8), 3 years after the information is furnished, and the reasonable cause limit. | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap66-subchapA-sec6501.htm | 2026-11-13 |
+| 26 U.S.C. 951 (govinfo, 2024 edition). Read for (b) US shareholder, 10 percent of vote or value, and the 2017 value-prong note; (a) as replaced by Public Law 119-21 is read from the Public Law. | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapN-partIII-subpartF-sec951.htm | 2026-11-13 |
+| 26 U.S.C. 957 (govinfo). Read for (a) more than 50 percent on any day. | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapN-partIII-subpartF-sec957.htm | 2026-11-13 |
+| 26 U.S.C. 958 (govinfo, 2024 edition). Read for (a)(2) proportionate ownership through foreign entities, (b)(1) to (3), and the note on the 2017 repeal of (b)(4) that Public Law 119-21 reverses. | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapN-partIII-subpartF-sec958.htm | 2026-11-13 |
+| 26 U.S.C. 318 (govinfo). Read for (a)(1) family attribution (spouse, children, grandchildren, parents). | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapC-partI-subpartC-sec318.htm | 2026-11-13 |
+| 26 U.S.C. 954 (govinfo). Read for (b)(4), greater than 90 percent of the maximum section 11 rate. | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapN-partIII-subpartF-sec954.htm | 2026-11-13 |
+| 26 U.S.C. 11 (govinfo). Read for (b), 21 percent. | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapA-partII-sec11.htm | 2026-11-13 |
+| 26 U.S.C. 6072 (govinfo). Read for (a) 15 April and (b) 15 March due dates. | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap61-subchapA-partV-sec6072.htm | 2026-11-13 |
+| Form 4868 (2025). Read for the 6-month extension and the 2 extra months for taxpayers out of the country. | https://www.irs.gov/pub/irs-pdf/f4868.pdf | 2026-11-13 |
+| Schedule 1 (Form 1040) 2025. Read for lines 8n and 8o. | https://www.irs.gov/pub/irs-pdf/f1040s1.pdf | 2026-11-13 |
+| IRS, U.S. taxpayers residing outside the United States (streamlined foreign offshore procedures). Read for 330 full days, the non-willful definition and the penalty relief. | https://www.irs.gov/individuals/international-taxpayers/u-s-taxpayers-residing-outside-the-united-states | 2026-11-13 |
+| IRS, U.S. taxpayers residing in the United States (streamlined domestic offshore procedures). Read for the 3-year and 6-year periods and the 5 percent miscellaneous offshore penalty. | https://www.irs.gov/individuals/international-taxpayers/us-taxpayers-residing-in-the-united-states | 2026-11-13 |
+| IRS, Delinquent international information return submission procedures. Read for amended-return filing and reasonable cause statements. | https://www.irs.gov/individuals/international-taxpayers/delinquent-international-information-return-submission-procedures | 2026-11-13 |
+
+Not yet confirmed: the 2026 revisions of Form 5471, its schedules and instructions were not published when read; the December 2025 revisions are used, and the Category 5 definition (stock owned on the last day the corporation was a CFC) may change to follow the new any-day pro rata share rule. How a foreign controlled United States shareholder under section 951B reports on Form 5471 is not in the December 2025 instructions. The 2026 Schedule 1 (Form 1040) and Form 4868 were not yet published; line numbers and extension rules are from the 2025 editions. Notices 2018-13, 2025-72 and 2025-75, Rev. Procs. 92-70 and 2019-40, and the high-tax exception regulations (Treas. Reg. 1.951A-2(c)(7) and 1.954-1(d)) are described as the instructions summarize them and were not opened separately. The litigation over whether section 6038(b) penalties can be assessed without a deficiency procedure (Farhy, Tax Court 2023, reversed by the D.C. Circuit in 2024) was not re-read; treat the penalty as assessable.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-07-13. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `us-form-5471-cfc-information` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/us-form-5471-cfc-information. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `us-form-5471-cfc-information` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/us-form-5471-cfc-information. If neither is available, confirm every figure against the official source pages cited above before relying on it.

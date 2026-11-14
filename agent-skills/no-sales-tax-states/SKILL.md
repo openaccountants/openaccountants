@@ -1,266 +1,177 @@
 ---
 name: no-sales-tax-states
-description: "Use this skill whenever asked about states with no sales tax, Alaska local sales tax, Delaware gross receipts tax, Montana resort tax, New Hampshire meals and rooms tax, Oregon Corporate Activity Tax, or tax obligations in AK, DE, MT, NH, or OR. Trigger on phrases like \"no sales tax states\", \"Alaska sales tax\", \"Delaware gross receipts\", \"Montana resort tax\", \"New Hampshire meals tax\", \"Oregon CAT\", \"Oregon no sales tax\", or any request involving tax compliance in states that do not impose a general statewide sales tax. ALWAYS load us-sales-tax first for federal context."
+description: "The five US states with no general statewide sales tax (Alaska, Delaware, Montana, New Hampshire, Oregon) and the taxes they charge instead, for tax year 2026. Covers Alaska local sales taxes collected through the Alaska Remote Seller Sales Tax Commission, the Delaware gross receipts tax on sellers, the Montana 8% lodging facility sales and use tax and local resort taxes, the New Hampshire 8.5% Meals and Rooms (Rentals) Tax, and the Oregon Corporate Activity Tax of $250 plus 0.57% above $1 million. Trigger on \"no sales tax states\", \"Alaska sales tax\", \"Delaware gross receipts tax\", \"Montana resort tax\", \"New Hampshire meals tax\", \"Oregon CAT\", \"tax-free shopping\". Load us-sales-tax for the general framework and us-sales-tax-nexus-50-state-matrix for nexus in the other states."
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/no-sales-tax-states"
   jurisdiction: "US"
-  tax_year: "2025"
-  last_updated: "2026-07-13"
+  tax_year: "2026"
+  last_updated: "2026-11-13"
 ---
 
-# NO Sales Tax States
+# States with no general sales tax: Alaska, Delaware, Montana, New Hampshire and Oregon, tax year 2026
 
-## No-Sales-Tax States Skill v2.0 -- AK, DE, MT, NH, OR
+> **Source-cited draft.** Built from the five states' own revenue pages, the Alaska Remote Seller Sales Tax Commission and the Montana Code, read on 2026-11-13. No accountant has reviewed it. All outputs must be reviewed by a qualified tax professional before filing.
 
-## Rates and thresholds
+**Answer first.** Five states have no general statewide sales tax. "No sales tax" does not mean no tax: Alaska towns and boroughs charge their own sales tax, Delaware taxes the seller's gross receipts, Montana charges 8% on lodging and lets resort communities levy a local tax, New Hampshire charges 8.5% on meals, rooms and car rentals, and Oregon charges a Corporate Activity Tax of $250 plus 0.57% on commercial activity over $1 million. A seller based in one of these states still collects in every other state where it has nexus.
 
-Reviewed against the cited tax authorities by a licensed accountant on 2026-06-03.
-Items flagged for further clarification are tracked separately and excluded here.
-This block is generated from verified skill_facts — edit the facts, not the prose.
+## Scope and who this is for
 
-### No-Sales-Tax States
+In scope: what a seller or buyer owes in Alaska, Delaware, Montana, New Hampshire and Oregon in place of a sales tax, for 2026 periods. Out of scope, and where it goes:
 
-- **Alaska** — No state sales tax; 100+ localities levy up to ~7.5% (e.g., Kodiak 7.5%)  _(Alaska Remote Seller Sales Tax Commission; local codes.)_
-- **Delaware** — No sales tax; gross receipts tax ranges ~0.0945%-1.9914% by activity  _(Del. Code tit. 30; DE Division of Revenue.)_
-- **Montana** — Resort tax up to 3% is correct, but Montana's lodging tax is 8% total (4% Lodging Facility Use Tax + 4% sales tax on accommodations); 'lodging 4%' reflects only one component.  _(Mont. Code Ann. 15-65 & 15-68; MT DOR.)_
-- **NH** — NH Meals & Rentals tax = 8.5% (since 10/1/2021)  _(NH DRA; RSA 78-A.)_
-- **Oregon** — Oregon Corporate Activity Tax = $250 + 0.57% of commercial activity over $1,000,000  _(ORS 317A; OR DOR.)_
-
-## Section 1 -- Quick reference
-
-**Quick reference table**
-
-| State | No general sales tax | But has... |
-| --- | --- | --- |
-| Alaska (AK) | Correct | Local sales taxes (boroughs/cities up to 7.5%) |
-| Delaware (DE) | Correct | Gross Receipts Tax on sellers (0.0945% to 1.9914%) |
-| Montana (MT) | Correct | Resort Tax in tourist communities (up to 3%) |
-| New Hampshire (NH) | Correct | Meals & Rooms Tax (8.5%) |
-| Oregon (OR) | Correct | Corporate Activity Tax (CAT) -- 0.57% on commercial activity over $1M |
-
-"No sales tax" does NOT mean "no consumption-related taxes." Each state has alternative mechanisms.
-
-**Skill metadata table**
-
-| Field | Value |
+| Topic | Skill |
 | --- | --- |
-| Skill version | 2.0 |
-| Federal framework skill | us-sales-tax |
+| The US sales and use tax framework (use tax, sourcing, marketplaces, exemption certificates) | `us-sales-tax` |
+| Economic nexus in the 45 sales tax states and DC | `us-sales-tax-nexus-50-state-matrix` |
+| Alaska local rates, caps and ARSSTC filing in detail | `ak-sales-tax` |
+| Income tax nexus for out-of-state sellers | `us-pl-86-272-income-tax-nexus` |
 
-### Section 2 -- Required inputs and refusal catalogue
+## Ask the client first
 
-- **R-NOST-1 -- Alaska individual local jurisdiction compliance** — Each of ~100+ local jurisdictions administers its own tax. Detailed compliance for specific jurisdictions requires research beyond this skill.
-- **R-NOST-2 -- Oregon CAT detailed compliance** — CAT involves subtraction calculations and quarterly estimates. Escalate to CPA.
-- **R-NOST-3 -- Delaware GRT classification disputes** — GRT rate depends on business type classification. Escalate if disputed.
+1. Which of the five states is the client in: selling into, operating in, or buying from?
+2. For Alaska: the delivery address (borough and city) of each sale and total Alaska sales in 2025 and 2026.
+3. For Delaware: the business activity (retailer, wholesaler, manufacturer, professional services, and so on) and monthly gross receipts.
+4. For Montana: whether it rents lodging, and whether it sells inside a resort community (Big Sky, Whitefish, West Yellowstone and others).
+5. For New Hampshire: whether it sells meals, rooms or motor vehicle rentals.
+6. For Oregon: total Oregon commercial activity for the year.
+7. Where the buyer lives, for use tax back home.
 
-### 3.1 Alaska (AK)
+## The method, step by step
 
-**Alaska transaction pattern library**
+### Rates, bands and thresholds
 
-| Pattern | Treatment | Notes |
+| Item | 2026 figure | Source |
 | --- | --- | --- |
-| Sale in Anchorage | NO TAX | Anchorage has no local sales tax |
-| Sale in Juneau | LOCAL TAX 5% | Juneau City & Borough |
-| Sale in Kodiak | LOCAL TAX 7% | One of the highest |
-| Sale in Sitka | LOCAL TAX 6% |  |
-| Sale in Fairbanks | NO TAX | No borough or city tax |
-| Sale in Skagway | LOCAL TAX 5% | Tourism-driven |
-| Grocery food (varies by locality) | Varies | Some jurisdictions exempt; others tax |
-| Prescription drugs | Generally EXEMPT | Most jurisdictions |
-| Clothing | TAXABLE where local tax applies |  |
+| Alaska: state sales tax | None; local jurisdictions may levy their own | [ARSSTC, business sellers](https://arsstc.org/business-sellers/) |
+| Alaska: remote seller threshold for ARSSTC members | $100,000 statewide gross sales, current or prior calendar year | [ARSSTC threshold notice](https://arsstc.org/wp-content/uploads/2024/09/Threshold-Change-for-Sellers.pdf) |
+| Alaska: 200-transaction test | Removed from 1 January 2025 | [ARSSTC threshold notice](https://arsstc.org/wp-content/uploads/2024/09/Threshold-Change-for-Sellers.pdf) |
+| Delaware: gross receipts tax rate range, on the seller | .0945% to 1.9914% by business activity | [Delaware Division of Revenue, gross receipts tax](https://revenue.delaware.gov/business-tax-forms/gross-receipts-tax/) |
+| Montana: lodging facility sales and use tax | 8% combined (4% use tax plus 4% sales tax) | [Montana DOR, lodging facility tax](https://revenue.mt.gov/taxes/miscellaneous/lodging-facility) |
+| New Hampshire: Meals and Rooms (Rentals) Tax | 8.5% on meals, rooms and motor vehicle rentals | [NH DRA, Meals and Rooms FAQ](https://www.revenue.nh.gov/resource-center/frequently-asked-questions/meals-rooms-rentals-tax) |
+| Oregon: Corporate Activity Tax | $250 plus 0.57% of taxable Oregon commercial activity over $1 million | [Oregon DOR, Corporate Activity Tax](https://www.oregon.gov/dor/programs/businesses/pages/corporate-activity-tax.aspx) |
 
-### 3.2 Delaware (DE)
+### Per state
 
-**Delaware transaction pattern library**
+1. **Alaska.** No state tax. Boroughs and cities levy their own sales tax; Anchorage and the city of Fairbanks levy none. Remote sellers register with ARSSTC once Alaska sales pass $100,000, counting marketplace sales; ARSSTC collects for its member jurisdictions. Non-member jurisdictions are handled one by one. Many members cap the taxable amount per item. Local rates and caps live in `ak-sales-tax`.
+2. **Delaware.** No sales tax on the buyer. The seller pays gross receipts tax on its receipts at the rate for its activity, within the .0945% to 1.9914% range. It is a cost of the business: it is not added to an invoice as "sales tax".
+3. **Montana.** No general sales tax. Lodging is taxed at 8% statewide. Resort communities may levy a local resort tax under Mont. Code 7-6-1501 to 7-6-1507; the rate and base are set locally, so check the community.
+4. **New Hampshire.** No tax on retail goods or general services. The 8.5% Meals and Rooms (Rentals) Tax is assessed on patrons of restaurants and hotels and on motor vehicle rentals; the operator collects it.
+5. **Oregon.** No sales tax anywhere. A business with taxable Oregon commercial activity over $1 million pays the CAT on the excess. Oregon says the CAT "is not a transactional tax, such as a retail sales tax".
+6. **Use tax back home.** A buyer who brings goods home from a no-sales-tax state may owe use tax in their own state (see `us-sales-tax`).
+7. **The seller's own nexus elsewhere.** A seller based in these states collects in each other state where it has nexus (see `us-sales-tax-nexus-50-state-matrix`).
 
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| Any retail purchase by buyer | NO TAX to buyer | DE has no sales tax |
-| Retailer's gross receipts | GRT 0.7468%/month | Tax on SELLER, not buyer |
-| Grocer's gross receipts | GRT 0.0945%/month | Lower rate for grocers |
-| Restaurant gross receipts | GRT 0.6758%/month |  |
-| Wholesaler gross receipts | GRT 0.3985%/month |  |
-| Manufacturer gross receipts | GRT 0.0945%/month |  |
-| Professional gross receipts | GRT 0.3944%/month |  |
+## Boundary and exception table
 
-### 3.3 Montana (MT)
-
-**Montana transaction pattern library**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| Purchase in resort community (Big Sky, Whitefish, etc.) | RESORT TAX up to 3% | On retail goods and services |
-| Purchase outside resort communities | NO TAX |  |
-| Hotel/lodging (statewide) | 4% LODGING TAX | MCA Section 15-65-111 |
-| Rental car | 4% RENTAL TAX | MCA Section 15-68-101 |
-
-### 3.4 New Hampshire (NH)
-
-**New Hampshire transaction pattern library**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| Retail goods (clothing, electronics, etc.) | NO TAX |  |
-| Restaurant meals (prepared food) | 8.5% MEALS TAX | RSA 78-A |
-| Hotel/lodging/Airbnb | 8.5% ROOMS TAX | RSA 78-A |
-| Motor vehicle rental | 8.5% RENTAL TAX | RSA 78-A |
-| SaaS and digital goods | NO TAX |  |
-| Services | NO TAX |  |
-
-### 3.5 Oregon (OR)
-
-**Oregon transaction pattern library**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| Any retail purchase | NO TAX | Oregon has zero sales tax everywhere |
-| Any service | NO TAX |  |
-| Business with $1M+ OR commercial activity | CAT: $250 + 0.57% | ORS 317A; cannot be separately stated on invoices |
-| Hotel/lodging | 1.5% STATE + local | ORS 320.305 |
-
-### 4.1 Alaska local rates (selected)
-
-**Alaska local rates**
-
-| Jurisdiction | Rate |
+| Situation | Treatment |
 | --- | --- |
-| Juneau | 5.00% |
-| Kodiak | 7.00% |
-| Sitka | 6.00% |
-| Skagway | 5.00% |
-| Ketchikan | 3.50% |
-| Kenai Peninsula Borough | 3.00% |
-| Anchorage | 0% |
-| Fairbanks | 0% |
+| Remote seller ships to Juneau, Kodiak or Sitka | Local tax applies through ARSSTC once over $100,000 statewide; check the item cap in `ak-sales-tax` |
+| Remote seller ships to Anchorage or the city of Fairbanks | No local general sales tax |
+| Grocery food, prescription drugs, clothing in Alaska | Varies by jurisdiction; check the ARSSTC rate sheet |
+| Delaware retailer advertises "tax-free" | True for the buyer; the retailer still pays gross receipts tax |
+| Delaware rate dispute over activity class | Refer (R-NOST-3) |
+| Montana hotel or short-term rental | 8% lodging facility sales and use tax |
+| Montana rental car | A separate rental vehicle tax; rate not re-read (see "Not yet confirmed:") |
+| Sale in a Montana resort community | Local resort tax; rate set by the community |
+| Online seller ships into a Montana resort community | Whether the local resort tax reaches a remote seller is not settled in the sources read: check with the community |
+| NH store sells a laptop, SaaS, digital goods or a service | No tax |
+| NH restaurant, hotel, Airbnb or car rental | 8.5% |
+| Oregon business under $1 million commercial activity | No CAT |
+| Oregon hotel | State and local lodging taxes apply (rate not re-read) |
+| Oregon seller with customers in other states | Collects where it has nexus; Oregon's position does not help elsewhere |
+| Oregon CAT shown as a line item on an invoice | Do not present it as a sales tax: it is a tax on the business (check ORS 317A before itemizing) |
+| Massachusetts resident buys in New Hampshire | Massachusetts use tax may apply (see `ma-sales-tax`) |
 
-### 4.2 Alaska Remote Seller Sales Tax Commission (ARSSTC)
+### Red flags to raise with the client
 
-Remote sellers can register through ARSSTC (https://arsstc.org) for centralized filing in participating jurisdictions. Not all jurisdictions participate.
-
-### 5.1 Key distinctions
-
-**Key distinctions table**
-
-| Concept | Rule |
+| Flag | Why it matters |
 | --- | --- |
-| Alaska: no state agency for local tax | Each jurisdiction administers its own tax separately |
-| Delaware: GRT is on SELLER | Cannot be passed to buyer as "sales tax" line item |
-| Montana: resort tax is local | Only in designated resort communities |
-| New Hampshire: meals & rooms only | Retail goods completely untaxed |
-| Oregon: CAT cannot be itemized | Oregon law prohibits businesses from adding CAT as line item |
+| "Alaska has no sales tax" said to a remote seller | Local tax applies once over the ARSSTC threshold |
+| "Delaware is tax-free" in a business plan | Gross receipts tax applies to the seller |
+| Oregon commercial activity near $1 million | CAT registration and payment |
+| NH seller of prepared food treats it as untaxed | 8.5% Meals and Rooms Tax |
+| Buyer told a no-tax purchase is free of all tax | Use tax may apply at home |
 
-### 5.2 Use tax obligations
+## Worked cases
 
-- **Use tax on out-of-state purchases** — Buyers who purchase in no-sales-tax states may owe USE TAX in their home state on items brought back.
+**Case 1, Oregon CAT.** An Oregon business has taxable Oregon commercial activity of $3,000,000 in 2026. CAT = $250 + 0.57% x ($3,000,000 - $1,000,000) = $250 + $11,400 = $11,650. With commercial activity of $900,000, it owes no CAT.
 
-## Section 6 -- Return form and filing
+```oa-check
+name: Oregon CAT on 3,000,000 of commercial activity (2026)
+inputs:
+  commercial_activity: 3000000
+  threshold: 1000000
+steps:
+  - excess: max(commercial_activity - threshold, 0)
+  - cat: 250 + excess * 0.0057
+expected:
+  excess: 2000000
+  cat: 11650.00
+```
 
-**Return form and filing table**
+**Case 2, a decision: where to book a three-night stay.** A guest compares a $200-a-night hotel in New Hampshire with the same price in Montana. New Hampshire: $600 x 8.5% = $51. Montana: $600 x 8% = $48, before any local resort tax if the hotel is in a resort community. Outside a resort community, Montana is $3 cheaper.
 
-| State | Return | Frequency | Due date | Portal |
-| --- | --- | --- | --- | --- |
-| AK (local) | Varies by jurisdiction | Varies | Varies | ARSSTC or individual jurisdiction |
-| DE | Monthly GRT Return | Monthly | 20th of following month | https://revenue.delaware.gov |
-| MT (resort) | Local resort tax return | Varies | Varies by community | https://mtrevenue.gov |
-| MT (lodging) | Lodging tax return | Varies | Varies | https://mtrevenue.gov |
-| NH | Form MR (Meals & Rooms) | Monthly | 15th of following month | https://www.revenue.nh.gov |
-| OR | CAT Annual Return | Annual | April 15 | https://revenueonline.dor.oregon.gov |
+```oa-check
+name: Three nights at 200, New Hampshire against Montana (2026)
+inputs:
+  nightly: 200
+  nights: 3
+steps:
+  - room_total: nightly * nights
+  - nh_tax: room_total * 0.085
+  - mt_tax: room_total * 0.08
+  - difference: nh_tax - mt_tax
+expected:
+  room_total: 600
+  nh_tax: 51.00
+  mt_tax: 48.00
+  difference: 3.00
+```
 
-### 7.1 Economic nexus
+## When to refuse or refer
 
-**Economic nexus table**
-
-| State | Threshold | Notes |
+| Code | Situation | Action |
 | --- | --- | --- |
-| AK | Local jurisdiction determines | ARSSTC may set uniform remote seller thresholds |
-| DE | N/A | GRT applies to businesses operating IN Delaware |
-| MT | N/A | Resort tax based on physical presence in resort community |
-| NH | N/A | Meals & rooms tax on businesses operating in NH |
-| OR | $1M commercial activity | CAT threshold |
+| R-NOST-1 | Compliance for a specific Alaska jurisdiction outside ARSSTC | Refer to that jurisdiction; use `ak-sales-tax` for members |
+| R-NOST-2 | Oregon CAT subtractions, exclusions and quarterly estimates | Refer to a CPA |
+| R-NOST-3 | Delaware gross receipts tax classification dispute | Refer |
+| R-NOST-4 | Montana resort tax for a remote seller | Refer to the resort community |
 
-### EC1 -- Alaska remote seller compliance
+## Filing and payment
 
-Situation: Texas e-commerce seller ships to customers throughout Alaska.
-Resolution: Must determine which delivery addresses fall in taxing jurisdictions. ARSSTC for participating jurisdictions. Non-participating handled individually. Anchorage = no tax. Juneau = 5%.
+| State | Return | Where |
+| --- | --- | --- |
+| Alaska (local) | ARSSTC return for member jurisdictions; others as each requires | [ARSSTC](https://arsstc.org/business-sellers/) |
+| Delaware | Gross receipts tax return | [Delaware Division of Revenue](https://revenue.delaware.gov/business-tax-forms/gross-receipts-tax/) |
+| Montana | Lodging facility sales and use tax return (Form LFT) | [Montana DOR](https://revenue.mt.gov/taxes/miscellaneous/lodging-facility) |
+| New Hampshire | Meals and Rooms return, online through Granite Tax Connect | [NH DRA](https://www.revenue.nh.gov/resource-center/frequently-asked-questions/meals-rooms-rentals-tax) |
+| Oregon | CAT annual return and quarterly estimates | [Oregon DOR](https://www.oregon.gov/dor/programs/businesses/pages/corporate-activity-tax.aspx) |
 
-### EC2 -- Delaware "tax-free shopping" marketing
+Return due dates and frequencies were not re-read for 2026: see the "Not yet confirmed:" line.
 
-Situation: Delaware retailer advertises "tax-free."
-Resolution: Accurate from buyer's perspective. Retailer pays GRT built into prices. Out-of-state shoppers may owe use tax in home state.
+## Completion checklist
 
-### EC3 -- Oregon seller with multi-state customers
+- Each sale placed in the right state and, for Alaska and Montana, the right local jurisdiction.
+- Alaska statewide sales tested against $100,000, counting marketplace sales.
+- Delaware activity class identified.
+- Oregon commercial activity tested against $1 million.
+- Buyer told about use tax at home where relevant.
+- Nexus in the other states checked.
 
-Situation: Oregon e-commerce company sells nationwide. Exceeds nexus in 15 states.
-Resolution: No Oregon sales tax. Must collect in each state where nexus met. Oregon's lack of sales tax does not exempt from other states' laws.
+## Sources
 
-### EC4 -- NH border shopping
+| Source | URL | Read on |
+| --- | --- | --- |
+| ARSSTC threshold notice. Read for the $100,000 statewide threshold and the removal of the 200-transaction test from 1 January 2025. | https://arsstc.org/wp-content/uploads/2024/09/Threshold-Change-for-Sellers.pdf | 2026-11-13 (via `ak-sales-tax`) |
+| ARSSTC business sellers. Read for registration and filing for member jurisdictions. | https://arsstc.org/business-sellers/ | 2026-11-13 (via `ak-sales-tax`) |
+| Delaware Division of Revenue, gross receipts tax. Read for "rates currently range from .0945% to 1.9914%" and that the tax is on the seller. | https://revenue.delaware.gov/business-tax-forms/gross-receipts-tax/ | 2026-11-13 |
+| Montana DOR, lodging facility sales and use tax. Read for "a combined 8% lodging facility sales and use tax: Use Tax 4% Sales Tax 4%". | https://revenue.mt.gov/taxes/miscellaneous/lodging-facility | 2026-11-13 |
+| Mont. Code 7-6-1502. Read for the resort community taxing authority. | https://archive.legmt.gov/bills/mca/title_0070/chapter_0060/part_0150/section_0020/0070-0060-0150-0020.html | 2026-11-13 |
+| NH DRA, Meals and Rooms (Rentals) Tax FAQ. Read for the 8.5% on meals, rooms and motor vehicle rentals. | https://www.revenue.nh.gov/resource-center/frequently-asked-questions/meals-rooms-rentals-tax | 2026-11-13 |
+| Oregon DOR, Corporate Activity Tax. Read for "$250 plus 0.57 percent of taxable Oregon commercial activity of more than $1 million" and "not a transactional tax". | https://www.oregon.gov/dor/programs/businesses/pages/corporate-activity-tax.aspx | 2026-11-13 |
 
-Situation: MA residents purchase goods in NH.
-Resolution: Items brought to MA subject to MA use tax (6.25%). Self-assessed on MA income tax return. Business purchases auditable.
-
-### EC5 -- Montana resort tax for online seller
-
-Situation: Online seller ships to Big Sky.
-Resolution: Resort tax applicability to remote sellers unclear. Verify with specific resort community.
-
-### Test 1 -- Alaska: Juneau
-
-Input: $500 item shipped to Juneau. Rate: 5%.
-Expected: Tax = $25.
-
-### Test 2 -- Alaska: Anchorage
-
-Input: $500 item shipped to Anchorage.
-Expected: Tax = $0.
-
-### Test 3 -- Delaware: no buyer tax
-
-Input: $1,000 electronics at Delaware store.
-Expected: No tax to buyer. Retailer pays GRT.
-
-### Test 4 -- NH: restaurant meal
-
-Input: $80 dinner at NH restaurant. Rate: 8.5%.
-Expected: Tax = $6.80.
-
-### Test 5 -- NH: retail purchase
-
-Input: $500 laptop at NH store.
-Expected: Tax = $0.
-
-### Test 6 -- Oregon: no tax
-
-Input: $2,000 merchandise in Oregon.
-Expected: Tax = $0.
-
-### Test 7 -- Montana: resort community
-
-Input: $200 item in Big Sky. Resort tax: 3%.
-Expected: Tax = $6.
-
-## Section 10 -- Prohibitions
-
-- NEVER state Alaska has no sales tax without qualifying that local jurisdictions may impose up to 7.5%.
-- NEVER state Delaware is "completely tax-free" -- GRT applies to sellers.
-- NEVER assume Oregon seller has no multi-state obligations.
-- NEVER apply any sales tax rate in Oregon.
-- NEVER forget NH's 8.5% Meals & Rooms Tax.
-- NEVER assume Montana is completely tax-free -- resort tax and lodging tax apply.
-- NEVER advise buyers that no-sales-tax state purchases are free of all tax -- use tax may apply in home state.
-- NEVER add Oregon's CAT as a separate line item on invoices.
-- NEVER confuse Delaware's GRT (tax on seller) with a sales tax (tax on buyer).
-- NEVER compute any number -- all arithmetic is handled by the deterministic engine, not Claude.
-
-## Disclaimer
-
-This skill is provided for informational and computational purposes only and does not constitute tax, legal, or financial advice. All outputs must be reviewed by a qualified professional (CPA, EA, or tax attorney) before filing.
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
+Not yet confirmed: the Delaware rate for each business activity (the old file's retailer 0.7468%, grocer 0.0945%, restaurant 0.6758%, wholesaler 0.3985%, manufacturer 0.0945%, professional 0.3944% were not re-read; the Division's rate sheet did not open); the Montana resort tax maximum rate (old file: up to 3%) and rental vehicle tax (old file: 4%); the Oregon state lodging tax rate (old file: 1.5%); individual Alaska local rates (see `ak-sales-tax`); return due dates and frequencies for all five states (old file: Delaware 20th of the following month, New Hampshire 15th, Oregon CAT 15 April).
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-07-13. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `no-sales-tax-states` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/no-sales-tax-states. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-13. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `no-sales-tax-states` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/no-sales-tax-states. If neither is available, confirm every figure against the official source pages cited above before relying on it.

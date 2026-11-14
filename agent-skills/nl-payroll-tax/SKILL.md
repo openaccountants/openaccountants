@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/nl-payroll-tax"
   jurisdiction: "NL"
   tax_year: "2026"
-  last_updated: "2026-11-09"
+  last_updated: "2026-11-14"
 ---
 
 # Netherlands: payroll (loonheffingen), work-cost scheme (WKR) and final levies 2026
@@ -46,11 +46,11 @@ Out of this skill: private use of a company car, see nl-company-car; the expat s
 | Band 1, under AOW age: wage tax 8.10% + AOW 17.90% + Anw 0.10% + Wlz 9.65% | 35.75% up to EUR 38,883 | 2026 | https://download.belastingdienst.nl/belastingdienst/docs/bijlage-nieuwsbrief-loonheffingen-2026-lh2091b64fd.pdf |
 | Band 2 | 37.56% from EUR 38,883 to EUR 78,426 | 2026 | same |
 | Band 3 | 49.50% above EUR 78,426 | 2026 | same |
-| Annual box 1 amount, exact method | Wage tax per the Wet IB art. 2.10(1) table: 8.10% to EUR 38,883; EUR 3,149 plus 37.56% above it; EUR 18,001 plus 49.50% above EUR 78,426. Plus the national insurance premium of 27.65% on wage up to EUR 38,883 (at most EUR 10,751.15). The combined 35.75% across band 1 is EUR 0.52 too high above band 1 | 2026 | Wet IB art. 2.10(1), https://wetten.overheid.nl/jci1.3:c:BWBR0011353&hoofdstuk=2&afdeling=2.3&artikel=2.10&z=2026-01-01&g=2026-01-01 ; Wfsv art. 8(3), 10 |
-| Band 1, AOW age, born 1946 or later (no AOW premium) | 17.85% up to EUR 38,883 | 2026 | same |
-| Band 1, born 1945 or earlier | 17.85% up to EUR 41,123 | 2026 | same |
-| General credit (algemene heffingskorting), under AOW age | EUR 3,115; reduces 6.398% above EUR 29,736; nil at EUR 78,426 | 2026 | same |
-| General credit, AOW age | EUR 1,556; reduces 3.195% | 2026 | same |
+| Annual box 1 amount, exact method | Wage tax per the Wet IB art. 2.10(1) table: 8.10% to EUR 38,883; EUR 3,149 plus 37.56% above it; EUR 18,001 plus 49.50% above EUR 78,426. Plus the national insurance premium of 27.65% on wage up to EUR 38,883 (at most EUR 10,751.15, computed). The combined 35.75% across band 1 is EUR 0.52 too high above band 1 | 2026 | Wet IB art. 2.10(1), https://wetten.overheid.nl/jci1.3:c:BWBR0011353&hoofdstuk=2&afdeling=2.3&artikel=2.10&z=2026-01-01&g=2026-01-01 ; Wfsv art. 8(3), 10 ; https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/heffingskortingen |
+| Band 1, AOW age, born 1946 or later (no AOW premium) | 17.85% up to EUR 38,883 | 2026 | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/inkomstenbelasting/heffingskortingen_boxen_tarieven/boxen_en_tarieven/box_1/box_1 |
+| Band 1, born 1945 or earlier | 17.85% up to EUR 41,123 | 2026 | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/inkomstenbelasting/heffingskortingen_boxen_tarieven/boxen_en_tarieven/box_1/box_1 |
+| General credit (algemene heffingskorting), under AOW age | EUR 3,115; reduces 6.398% above EUR 29,736; nil at EUR 78,426 | 2026 | https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/heffingskortingen |
+| General credit, AOW age | EUR 1,556; reduces 3.195% | 2026 | https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/heffingskortingen |
 | Employment credit (arbeidskorting), under AOW age | max EUR 5,685 (reached at EUR 45,592); reduces 6.510% above EUR 45,592; nil at EUR 132,920 | 2026 | same |
 | Employment credit, AOW age | max EUR 2,840; reduces 3.250% | 2026 | same |
 | Elderly credit (ouderenkorting) | EUR 2,067; reduces above EUR 46,002; nil at EUR 59,782 | 2026 | same |
@@ -242,18 +242,18 @@ expected:
 | Source | URL | Read on |
 |---|---|---|
 | Belastingdienst, Handboek Loonheffingen 2026 (March 2026), para. 4.2, 4.12.5, ch. 6, 7 (incl. §7.5), 9, 10, 13, 14, 22, 25.4 | https://download.belastingdienst.nl/belastingdienst/docs/handboek-loonheffingen-lh0221t61fd.pdf | 2026-10-27 |
-| Belastingdienst, rates appendix loonheffingen 2026, edition 4 (25 June 2026), tables 5.1, 9, 10, 11, 12, 13 | https://download.belastingdienst.nl/belastingdienst/docs/bijlage-nieuwsbrief-loonheffingen-2026-lh2091b64fd.pdf | 2026-10-27 |
-| Belastingdienst, period codes and filing and payment dates 2026 | https://download.belastingdienst.nl/belastingdienst/docs/tijdvakcodes-aangiftedatums-betaaldatums-lh2101t62fd.pdf | 2026-10-27 |
+| Belastingdienst, rates appendix loonheffingen 2026, edition 4 (25 June 2026), tables 5.1, 9, 10, 11, 12, 13. Read for the 2026 payroll rates and tables. | https://download.belastingdienst.nl/belastingdienst/docs/bijlage-nieuwsbrief-loonheffingen-2026-lh2091b64fd.pdf | 2026-10-27 |
+| Belastingdienst, period codes and filing and payment dates 2026. Read for the filing and payment dates. | https://download.belastingdienst.nl/belastingdienst/docs/tijdvakcodes-aangiftedatums-betaaldatums-lh2101t62fd.pdf | 2026-10-27 |
 | Wet op de loonbelasting 1964, art. 12a, 20a, 22, 26b, 31 and 31a | https://wetten.overheid.nl/BWBR0002471/2026-01-01 | 2026-10-27 |
-| Belastingdienst, mileage allowance EUR 0.25 (news of 25 June 2026) | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/berichten/nieuws/verhoging-onbelaste-kilometervergoeding-hoe-verwerkt-u-dit-in-de-loonaangifte | 2026-10-27 |
-| Rijksoverheid, minimum wage 2026 | https://www.rijksoverheid.nl/themas/werk/minimumloon/bedragen-minimumloon/bedragen-minimumloon-2026 | 2026-10-27 |
-| Rijksoverheid, holiday allowance | https://www.rijksoverheid.nl/vraag-en-antwoord/vakantiedagen-en-vakantiegeld/hoe-hoog-is-mijn-vakantiegeld | 2026-10-27 |
+| Belastingdienst, mileage allowance EUR 0.25 (news of 25 June 2026). Read for the tax-free mileage allowance. | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/berichten/nieuws/verhoging-onbelaste-kilometervergoeding-hoe-verwerkt-u-dit-in-de-loonaangifte | 2026-10-27 |
+| Rijksoverheid, minimum wage 2026. Read for the 2026 minimum wage. | https://www.rijksoverheid.nl/themas/werk/minimumloon/bedragen-minimumloon/bedragen-minimumloon-2026 | 2026-10-27 |
+| Rijksoverheid, holiday allowance. Read for the holiday allowance. | https://www.rijksoverheid.nl/vraag-en-antwoord/vakantiedagen-en-vakantiegeld/hoe-hoog-is-mijn-vakantiegeld | 2026-10-27 |
 | Burgerlijk Wetboek Book 7, art. 629, 634, 640a | https://wetten.overheid.nl/BWBR0005290/2026-01-01 | 2026-10-27 |
-| Rijksoverheid, transition payment | https://www.rijksoverheid.nl/vraag-en-antwoord/ontslag/hoe-hoog-is-de-transitievergoeding-als-ik-word-ontslagen | 2026-10-27 |
-| Tweede Kamer, Belastingplan 2027, explanatory memorandum (kst. 37022 nr. 3) | https://zoek.officielebekendmakingen.nl/kst-37022-3.html | 2026-10-27 |
+| Rijksoverheid, transition payment. Read for the transition payment. | https://www.rijksoverheid.nl/vraag-en-antwoord/ontslag/hoe-hoog-is-de-transitievergoeding-als-ik-word-ontslagen | 2026-10-27 |
+| Tweede Kamer, Belastingplan 2027, explanatory memorandum (kst. 37022 nr. 3). Read for the proposed 2027 changes. | https://zoek.officielebekendmakingen.nl/kst-37022-3.html | 2026-10-27 |
 
 Not yet confirmed: the Belastingplan 2027 proposes abolishing the own-products exemption from 2027 (a bill, not law; do not apply to 2026). These older points were not re-read and stay out until checked: maternity and partner leave and their UWV benefits, working-time limits, the full payslip content list, third-party payments reporting, the employee-count limit for filing in Mijn Belastingdienst Zakelijk, the exact customary-wage exceptions for start-ups and loss-making companies, the overtime revision method for multiple contracts and business transfers, director-liability reporting deadlines in the Invorderingswet 1990, and the detailed conditions of the tools, training, workplace and bicycle exemptions (handbook ch. 22 to 23).
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-09. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `nl-payroll-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/nl-payroll-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `nl-payroll-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/nl-payroll-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

@@ -1,344 +1,263 @@
 ---
 name: id-pph-final-umkm
-description: "Use this skill whenever asked to compute, review, or advise on Indonesia PPh Final UMKM — the 0.5% final income tax on gross turnover available to micro, small, and medium enterprises (UMKM) under PP 23/2018 and PP 55/2022 (as revised). Trigger on phrases like \"PPh Final UMKM\", \"0.5 percent tax Indonesia\", \"PP 23/2018\", \"PP 55/2022\", \"MSME tax Indonesia\", \"pajak final UMKM\", \"tarif 0,5%\", \"peredaran bruto\", \"Pengusaha Kecil PPh\", or any question about whether a sole trader, PT Perorangan, CV, Firma, or Koperasi can use the 0.5% regime. Covers eligibility, the IDR 4.8 billion turnover threshold, time limits, the pekerjaan bebas (professional services) exclusion, opt-out mechanics, monthly self-deposit through Coretax DJP, annual SPT reporting, and the interaction with PPN/VAT and NIK-as-NPWP. Out of scope: corporate income tax under PPh Badan progressive rates (see PPh 25/29 workflows), partial-year regime changes, PPh 21 employment withholding (see id-payroll-pph21), PPN/VAT (see indon"
+description: "Compute Indonesian final income tax on qualifying small-business turnover for calendar 2026 under PP 55/2022 as amended by PP 20/2026. Covers the individual turnover relief, owner and spouse aggregation, excluded professional activities, cooperative and legacy-entity transitions, permanent opt-out, monthly settlement and annual reporting. Trigger on PPh Final UMKM, PP 20/2026, PP 55/2022, 0.5 percent tax, omzet and perseroan perorangan. Route VAT and general-rate income tax to their separate methods."
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/id-pph-final-umkm"
   jurisdiction: "ID"
-  tax_year: "2025"
-  last_updated: "2026-07-13"
+  tax_year: "2026"
+  last_updated: "2026-11-14"
 ---
 
-# ID Pph Final Umkm
-
-## Indonesia PPh Final UMKM — 0.5% MSME Final Tax Skill v1.0
-
-> Load alongside `foundation.md` and `intake.md`. For employment withholding see `id-payroll-pph21.md`; for VAT/PPN see `indonesia-vat.md`. Covers ONLY the PPh Final UMKM facility under PP 23/2018 as superseded and revised by PP 55/2022.
-
-## Rates and thresholds
-
-> Items flagged for further clarification are tracked separately and excluded here.
-> This block is generated from verified `skill_facts` — edit the facts, not the prose.
-
-### PPh Final UMKM 0.5%
-
-- **Tax rate** — Rate of 0.5% remains applicable for qualifying taxpayers with certain gross turnover. PP 20/2026 does not change the tax rate but revises taxpayer eligibility criteria and exclusions.  _(UU PPh Art. 4(2); PP 55/2022 Art. 56 as amended by PP 20/2026.)_
-- **Character** — Final — not creditable; no expenses deductible  _(UU PPh Art. 4(2); PP 55/2022 Art. 56 as amended by PP 20/2026.)_
-- **Tax rate** — Rate of 0.5% remains applicable for qualifying taxpayers with certain gross turnover. PP 20/2026 does not change the tax rate but revises taxpayer eligibility criteria and exclusions.  _(UU PPh Art. 4(2); PP 55/2022 Art. 56 as amended by PP 20/2026.)_
-- **Monthly deposit deadline** — Final income tax under the UMKM regime is generally payable no later than the 15th day of the following month after the tax period. Administrative procedures follow prevailing tax administration regulations.  _(UU KUP as amended by UU HPP; PP 55/2022 Art. 62; PMK 81/2024.)_
-- **OP SPT deadline** — 31 March 2026 for FY2025  _(UU KUP Art. 3(3)(b) as amended by UU HPP)_
-- **Entity SPT deadline** — 30 April 2026 for FY2025  _(UU KUP Art. 3(3)(c) as amended by UU HPP)_
-- **OP tax-free band** — Individual taxpayers remain entitled to the IDR 500 million annual gross-turnover exemption before the 0.5% final tax applies.  _(UU PPh Art. 7; PP 55/2022 Art. 60; PP 20/2026.)_
-- **Orang Pribadi (sole trader)** — No time limit (revised — originally 7 years)  _(PP 20/2026 Article I items 4 and 6.)_
-- **PT Perorangan** — No time limit (revised)  _(PP 20/2026 Article I items 4 and 6.)_
-- **Koperasi, CV, Firma, BUMDes** — 4 tahun (Koperasi only); CV, Firma, BUMDes no longer eligible under PP 20/2026 (transitional period only for remaining PP 55/2022 term)  _([PP 20/2026 Article I item 4.](https://www.pajak.go.id/en/node/119954))_
-- **PT (ordinary)** — 3 years  _(PP 20/2026 Article I item 4.)_
-- **Pekerjaan bebas** — Excluded — doctors, lawyers, notaries, accountants, architects, consultants, actuaries must use progressive  _(PP 20/2026 Article I item 3.)_
-- **BUT / non-residents** — Permanent establishments (BUT) remain excluded from the UMKM final tax regime.  _(PP 55/2022 Art. 57(2)(d) as amended by PP 20/2026.)_
-- **Late monthly payment** — Late tax payment generally subject to monthly interest sanctions calculated using the prevailing Minister of Finance interest rate determined under Indonesian tax administration regulations  _(UU KUP Art. 9(2a) as amended by UU HPP; PMK 81/2024 as amended by PMK 1/2026)_
-- **Late SPT Tahunan OP** — IDR 100,000 fine  _(UU KUP Art. 7)_
-- **Late SPT Tahunan Badan** — IDR 1,000,000 fine  _(UU KUP Art. 7)_
-- **Bribery/gratuity — deductibility** — NEW provision per PP 20/2026 Article 20A: Expenditures in the form of bribes, gratuities, and other payments related to corruption or bribery offences — including payments to foreign public officials — are NOT deductible as business expenses for corporate taxpayers. Effective 22 April 2026. Introduced pursuant to OECD anti-bribery recommendations as part of Indonesia's OECD accession process.  _(PP 20/2026 Article I items 1 and 2.)_
+# Indonesia PPh Final UMKM v2.0
 
-## Section 1 — Quick reference
+> Load alongside `foundation` and `intake`. Employment withholding belongs to `id-payroll-pph21`; VAT belongs to `indonesia-vat`. This method prepares a calculation and evidence for a Konsultan Pajak, not an accepted return.
 
-**Quick reference table**
+**Answer first.** The final rate remains **0.5%**, but small turnover alone does not qualify someone. PP 20/2026 changed the eligible taxpayers and aggregation rules from **22 April 2026**. Individuals have an annual **IDR 500,000,000** untaxed business-turnover portion; companies do not. First establish the entity, actual activity, combined turnover, earlier elections and transition entitlement. [PP 20/2026 art. I, amended arts. 56 to 58 and art. II](https://www.pajak.go.id/id/peraturan/perubahan-atas-peraturan-pemerintah-nomor-55-tahun-2022-tentang-penyesuaian-pengaturan-0); [PP 55/2022 art. 60](https://www.pajak.go.id/peraturan/penyesuaian-pengaturan-di-bidang-pajak-penghasilan).
 
-| Field | Value |
-| --- | --- |
-| Country | Indonesia (Republik Indonesia) |
-| Tax | PPh Final UMKM — 0.5% Final Income Tax on Gross Turnover (Peredaran Bruto) |
-| Currency | IDR (Indonesian Rupiah / Rp) |
-| Tax year | Calendar year (1 Jan – 31 Dec); current = 2025 |
-| Statutory basis | UU 7/2021 (HPP); UU 36/2008 (PPh) as amended; PP 23/2018; PP 55/2022 Bagian Kedua, as revised |
-| Tax rate | 0.5% of monthly gross turnover (peredaran bruto) |
-| Eligibility threshold | Annual peredaran bruto ≤ IDR 4,800,000,000 (IDR 4.8B) |
-| Character | **Final** — not creditable; no expenses deductible against it |
-| Tax authority | Direktorat Jenderal Pajak (DJP) |
-| Filing portal | Coretax DJP (phased 2024–2025 replacement of DJP Online / e-Billing) |
-| Monthly deposit deadline | By the 15th of the following month |
-| Annual SPT (individual) | SPT Tahunan 1770, "Lampiran PPh Final" — due **31 March 2026** for FY2025 |
-| Annual SPT (entity) | SPT Tahunan PPh Badan 1771, "Lampiran PPh Final" — due **30 April 2026** for FY2025 |
-| MAP/KJS payment code | **411128 / 420** — TBC, verify with Indonesian accountant |
-| Individual NPWP | NIK-as-NPWP since 1 July 2024 (PMK 136/2023) |
-| Skill version | 1.0 |
+## Scope
 
-### Who qualifies — at a glance
+Calendar-2026 Indonesian resident individuals carrying on business, qualifying single-founder perseroan perorangan, cooperatives and expressly grandfathered entities. Preserve the distinction between current rules, the earlier PP 55/2022 rules and transitional access. An ordinary PT, CV, firma or BUMDes is not a new eligible entity merely because its turnover is small. [PP 20/2026 amended art. 57 and art. II](https://www.pajak.go.id/id/peraturan/perubahan-atas-peraturan-pemerintah-nomor-55-tahun-2022-tentang-penyesuaian-pengaturan-0).
 
-**Who qualifies — at a glance table**
+The computation is final tax on qualifying business gross turnover. It is not Article 17 tax on profit, NPPN, payroll tax, VAT, foreign-tax-credit computation or a withholding schedule for passive income. Ordinary company tax goes to `id-corporate-tax`, individual NPPN/bookkeeping evidence to `id-bookkeeping`, with any ordinary individual-income computation separately prepared under Indonesian law, annual assembly to `id-return-assembly`, accounting evidence to `id-bookkeeping`, Coretax operations to `id-einvoice-coretax`, and entity formation to `id-formation`. `references` is the bibliography. The old `id-income-tax` route resolves to Idaho in this library, not Indonesia. Never load it for an Indonesian return. Resolve missing computation or conflicting figures under the official Indonesian source and record the gap.
 
-| Taxpayer type | Eligible? | Time limit (PP 55/2022 as revised) |
-| --- | --- | --- |
-| Orang Pribadi (sole trader) | Yes, if turnover ≤ IDR 4.8B and not pekerjaan bebas | **No time limit** (revised); OP facility extended through end of 2025 (commentary: through 2029). See Section 4. |
-| PT Perorangan (single-member micro PT) | Yes | **No time limit** (revised). See Section 4. |
-| Koperasi, CV, Firma, BUMDes | Yes | **4 years** from registration or 2018 (later) |
-| PT (ordinary) | Yes (originally) | **3 years** from registration or 2018 (later) |
-| Pekerjaan bebas (doctors, lawyers, notaries, accountants, architects, consultants, actuaries, etc.) | **No** | Must use Article 17 progressive rates |
-| BUT (permanent establishment) and non-residents | **No** | Out of scope |
+## Ask the client first
 
-Conservative defaults are consolidated in Section 7.
+1. **Person and period:** Indonesian residence, exact taxpayer form and NPWP/NIK, start/registration dates, calendar or approved different book year, and the actual return year.
+2. **Activity and income:** describe each business/professional activity and supply; obtain contracts, invoices, foreign-source receipts and income already finally taxed or exempt. A platform or company name is not a legal classification.
+3. **Turnover:** reconcile the preceding year's full turnover and every current month, all branches and businesses, gross sales before discounts, platform fees and expenses, and separately identified VAT. Obtain bank, platform and cash records rather than net settlements only.
+4. **Connected taxpayers:** marriage and PH/MT separate-filing status, spouse and minor-child receipts and every single-founder company created by either spouse. Record owner/company totals separately from the amount actually subject to this final tax.
+5. **History:** prior returns, final-tax certificates, registration year and original utilisation period, notices choosing general rates, incentive decrees, any certificate cancellation and the exact PP 20/2026 transition relied upon.
+6. **Settlement:** monthly BPN/NTPN state receipts, withholding slips, the certificate or turnover statement supplied to customers, annual-return receipts, Coretax access/authorised signer, PKP status, payroll and distributions from a company to its owner.
 
-## Section 2 — Required inputs and refusal catalogue
+Do not compute a final liability when turnover cannot be quantified or eligibility is unresolved. An annual aggregate permits a labelled annual cross-check, but does not reconstruct monthly deposits or payment dates. Record the missing months explicitly.
 
-### Required inputs
+## The method, step by step
 
-- **Minimum viable** — (1) Full-year resident confirmation (per `intake.md`); (2) annual gross turnover for FY2025; (3) taxpayer type; (4) confirmation activity is not pekerjaan bebas; (5) year first registered for 0.5% (time-limit test).
-- **Recommended** — Monthly turnover schedule, NPWP/NIK, prior-year SPT, kode billing / BPN receipts, PKP status (see `indonesia-vat.md`).
-- **Ideal** — Full sales ledger / bank statements / invoices, prior SPT Tahunan, PP 23/2018 election notification, written activity description.
-- **Refusal if minimum missing** — Hard stop if turnover cannot be quantified. Soft warn if only an annual aggregate exists — produce annualised computation but flag that monthly deposits cannot be reconciled.
+## Rates, bands and thresholds
 
-### Refusal catalogue (PPh Final UMKM specific)
+| Item | Rule for 2026 and conditions | Official source |
+|---|---|---|
+| Final income-tax rate | 0.5% of qualifying monthly business gross turnover, not profit | [PP 20/2026 amended art. 56(1)-(3)](https://www.pajak.go.id/id/peraturan/perubahan-atas-peraturan-pemerintah-nomor-55-tahun-2022-tentang-penyesuaian-pengaturan-0) |
+| Eligibility ceiling | Not more than IDR 4,800,000,000 under the preceding-year test and connected-taxpayer rules; eligibility turnover is wider than the monthly taxable base | [PP 20/2026 amended arts. 57-58](https://www.pajak.go.id/id/peraturan/perubahan-atas-peraturan-pemerintah-nomor-55-tahun-2022-tentang-penyesuaian-pengaturan-0) |
+| Individual untaxed turnover | First IDR 500,000,000 cumulatively in the tax year across all places of business; no relief for a company, including a PT Perorangan | [PP 55/2022 art. 60(2)-(5)](https://www.pajak.go.id/peraturan/penyesuaian-pengaturan-di-bidang-pajak-penghasilan) |
+| Individuals and single-founder companies | No fixed utilisation-year cap in the new general rule because art. 59 is deleted; all other eligibility and permanent-exit conditions remain | [PP 20/2026 art. I items 4-6](https://www.pajak.go.id/id/peraturan/perubahan-atas-peraturan-pemerintah-nomor-55-tahun-2022-tentang-penyesuaian-pengaturan-0) |
+| New cooperative's utilisation period | Four tax years from registration, including its registration year; pre-existing cooperatives have the separate transition below | [PP 20/2026 amended art. 57(2)(f), explanation and art. II(1)(b)](https://www.pajak.go.id/id/peraturan/perubahan-atas-peraturan-pemerintah-nomor-55-tahun-2022-tentang-penyesuaian-pengaturan-0) |
+| Legacy ordinary PT period | Earlier three-tax-year period survives only to its existing end if art. II(1)(e) applies; it is not a new election for a 2026 PT | [PP 55/2022 former art. 59](https://www.pajak.go.id/peraturan/penyesuaian-pengaturan-di-bidang-pajak-penghasilan); [PP 20/2026 art. II(1)(e)](https://www.pajak.go.id/id/peraturan/perubahan-atas-peraturan-pemerintah-nomor-55-tahun-2022-tentang-penyesuaian-pengaturan-0) |
+| Legacy CV/firma/BUMDes period | Earlier four-tax-year period survives only while the grandfathering and old eligibility conditions hold | [PP 55/2022 former arts. 59,69](https://www.pajak.go.id/peraturan/penyesuaian-pengaturan-di-bidang-pajak-penghasilan); [PP 20/2026 art. II(1)(e)](https://www.pajak.go.id/id/peraturan/perubahan-atas-peraturan-pemerintah-nomor-55-tahun-2022-tentang-penyesuaian-pengaturan-0) |
+| Self-paid monthly final tax | Ordinary due date is the 15th of the following month; determine actual non-business-day relief from the applicable administration rule before assigning a shifted date | [PMK 164/2023 art. 7(2)](https://www.pajak.go.id/id/peraturan/tata-cara-pengenaan-pajak-penghasilan-atas-penghasilan-dari-usaha-yang-diterima-atau) |
+| Monthly reporting | Ordinary 20 days after period end, with no-payment exceptions and deemed filing through validated NTPN payment in art. 7(4)-(5); keep the collector's separate reporting duty distinct | [PMK 164/2023 arts. 7-8](https://www.pajak.go.id/id/peraturan/tata-cara-pengenaan-pajak-penghasilan-atas-penghasilan-dari-usaha-yang-diterima-atau) |
+| Individual annual return | Three months after year-end, ordinarily 31 March 2027 for calendar 2026 | [KUP art. 3(3)(b), DJP consolidated text](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf) |
+| Entity annual return | Four months after year-end, ordinarily 30 April 2027 for calendar 2026 | [KUP art. 3(3)(c), DJP consolidated text](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf) |
+| Late annual return, individual | IDR 100,000, subject to KUP art. 7(2) exclusions and actual relief | [KUP art. 7, DJP consolidated text](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf) |
+| Late annual return, entity | IDR 1,000,000, subject to KUP art. 7(2) exclusions and actual relief | [KUP art. 7, DJP consolidated text](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf) |
+| Late-payment interest | Minister's applicable monthly rate; maximum 24 months, any part-month counts as a full month. No fixed approximate percentage is certified | [KUP art. 9(2a)-(2c), DJP consolidated text](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf) |
+| Record retention | Ten years in Indonesia for books, records and supporting electronic documents | [KUP art. 28(11), DJP consolidated text](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf) |
 
-- **R-ID-UMKM-1** — Turnover exceeds IDR 4.8B. Facility unavailable. Taxpayer must compute under Article 17 progressive (OP) or PPh Badan (currently 22% headline). Escalate to Konsultan Pajak.  _(R-ID-UMKM-1)_
-- **R-ID-UMKM-2** — Pekerjaan bebas. Activity listed in the PP 55/2022 penjelasan as tenaga ahli (pengacara, akuntan, arsitek, dokter, konsultan, notaris, penilai, aktuaris) or other independent profession. 0.5% regime never available regardless of turnover. Must use Article 17 with deductible expenses or NPPN if eligible. Escalate.  _(R-ID-UMKM-2)_
-- **R-ID-UMKM-3** — Time limit elapsed. Cap exceeded (3 yrs PT non-perorangan; 4 yrs CV/Firma/Koperasi/BUMDes). For OP and PT Perorangan the revised PP 55/2022 removed the cap — re-verify taxpayer type. Escalate.  _(R-ID-UMKM-3)_
-- **R-ID-UMKM-4** — Permanent establishment / non-resident. BUT and non-residents cannot use PPh Final UMKM. Escalate.  _(R-ID-UMKM-4)_
-- **R-ID-UMKM-5** — Mid-year regime change. Mid-year crossing of IDR 4.8B, mid-year opt-out, or mid-year first registration. Requires Konsultan Pajak judgement on apportionment. Escalate.  _(R-ID-UMKM-5)_
-- **R-ID-UMKM-6** — Multiple entities / branches. Threshold and time limit must be tested per legal entity. Group structures require manual review. Escalate.  _(R-ID-UMKM-6)_
-- **R-ID-UMKM-7** — Foreign-source business income. Facility applies only to Indonesian-source business income. Foreign-source income follows ordinary tax with FTC (Article 24). Escalate.  _(R-ID-UMKM-7)_
-- **R-ID-UMKM-8** — Passive income disputes. Rental, interest, dividends, royalties, capital gains are governed by other final-tax articles (PPh 4(2), 23, 26) and are not peredaran bruto for PP 23/2018. If allocation unclear, escalate.  _(R-ID-UMKM-8)_
+### 1. Classify the taxpayer before applying a rate
 
-## Section 3 — Tier 1 rules: qualification and calculation
+Under amended art. 57(1), the ordinary eligible classes are resident individuals, a perseroan perorangan founded by one person and cooperatives. BUT/permanent establishments are excluded; non-residents are outside this resident-taxpayer method. A foundation/yayasan is not added to the list. A company benefiting from art. 31A, PP 94/2010 facilities or PP 40/2021 arts. 75/78 is excluded as specified by art. 57(2)(c). [PP 20/2026 art. I item 4](https://www.pajak.go.id/id/peraturan/perubahan-atas-peraturan-pemerintah-nomor-55-tahun-2022-tentang-penyesuaian-pengaturan-0).
 
-### 3.1 The four eligibility tests (all must pass)
+An individual's professional services (pekerjaan bebas) do not enter the final-tax base. The full amended list covers lawyers, accountants, architects, doctors, consultants, notaries, land-deed officials/PPAT, appraisers, actuaries and similar experts; musicians, presenters, singers, comedians, film/TV/advertising performers, directors, film crew, models, actors, dancers, sculptors, painters, online content creators/influencers/selebgram/bloggers/vloggers and other artists; athletes; advisers, teachers, trainers, speakers, extension workers, moderators and similar professions; writers, researchers, translators and similar professions; advertising agents; project supervisors/managers; brokers or people finding customers; travelling sales agents; insurance agents; MLM/direct-selling distributors and similar activities. [Amended art. 56(3)(a),(4)](https://www.pajak.go.id/id/peraturan/perubahan-atas-peraturan-pemerintah-nomor-55-tahun-2022-tentang-penyesuaian-pengaturan-0).
 
-- **Threshold** — Prior-year (FY2024) peredaran bruto ≤ IDR 4,800,000,000. New taxpayers tested on annualised projection.
-- **Taxpayer type** — OP, PT Perorangan, PT (ordinary), CV, Firma, Koperasi, or BUMDes. Yayasan and BUT excluded.
-- **Activity** — Not pekerjaan bebas (Section 4.2).
-- **Time limit** — Cumulative years using the facility within the cap for the taxpayer's category (Section 4.1).
-- **Failure outcome** — If any test fails, compute under ordinary rules (Article 17 for OP; PPh Badan for entities). This skill stops there.
+The explanation distinguishes teaching piano personally from operating a piano-course business that employs other people. It also excludes a tax consultant's single-founder company providing the same professional services as its founder under art. 57(2)(b). Do not turn a professional fee into qualifying business income merely by invoicing through a PT Perorangan, selling online or serving several customers. A software/SaaS, template, photography or training business needs its actual activity and organisation analysed; the brand or the number of customers alone does not settle it. If materially uncertain, retain the classification question for the reviewer and withhold the affected final-tax conclusion. [PP 20/2026 explanations to arts. 56(4),57(2)(b)](https://www.pajak.go.id/id/peraturan/perubahan-atas-peraturan-pemerintah-nomor-55-tahun-2022-tentang-penyesuaian-pengaturan-0).
 
-### 3.2 The 0.5% calculation
+### 2. Separate the eligibility ceiling from the tax base
 
-- **Tax base** — Peredaran bruto = gross business receipts in the calendar month, before any deduction for COGS, operating expenses, or input PPN. Excludes: Passive income under other final-tax articles (PPh 4(2), 23, 26); Salary/employment income (handled by PPh 21 — see id-payroll-pph21.md); Capital gains and one-off non-recurring income; PPN collected by PKPs on behalf of the state (see indonesia-vat.md).
-- **Formula** — PPh Final per month = 0.5% × peredaran bruto. No deduction, no PTKP, no biaya jabatan, no capital allowance, no loss carry-forward. Months with zero turnover have zero tax.
+For the ceiling, amended art. 58(1) counts preceding-year business AND professional-service gross turnover, final and non-final, including foreign turnover, before sales/cash/similar discounts. Aggregate all branches and businesses; professional or separately-final receipts can count toward eligibility even though they never enter this monthly final-tax base. Do not test only the turnover on which 0.5% was paid. [Amended arts. 57-58](https://www.pajak.go.id/id/peraturan/perubahan-atas-peraturan-pemerintah-nomor-55-tahun-2022-tentang-penyesuaian-pengaturan-0).
 
-### 3.3 PTKP-equivalent relief for Orang Pribadi (≤ IDR 500M)
+Amended art. 57(2)(e) aggregates the individual with every PT Perorangan they founded. Under art. 58(2)-(3), PH/MT spouses' turnover and companies are combined for the ceiling; the statutory explanation expressly includes the minor child's income under the income-tax rules. The explanation gives a notary, boutique owner and child singer total that denies the boutique owner's next-year access. Keep the separate spouses' actual tax calculations and the eligibility aggregation distinct. PMK 164 art. 6(5) gives each PH/MT spouse their own untaxed individual-turnover portion; combining the ceiling is not permission to invent a shared company allowance. [PP 20/2026 amended arts. 57-58 and explanations](https://www.pajak.go.id/id/peraturan/perubahan-atas-peraturan-pemerintah-nomor-55-tahun-2022-tentang-penyesuaian-pengaturan-0); [PMK 164/2023 art. 6(5)](https://www.pajak.go.id/id/peraturan/tata-cara-pengenaan-pajak-penghasilan-atas-penghasilan-dari-usaha-yang-diterima-atau).
 
-- **PP 55/2022 relief** — PP 55/2022 introduced a relief: an OP pays 0.5% only on peredaran bruto above IDR 500,000,000 per year. The first IDR 500M of annual turnover is exempt.
-- **Individuals only** — Individuals only — not available to PT, PT Perorangan, CV, Firma, Koperasi, or BUMDes.
-- **Operation** — The exemption operates cumulatively. 0.5% kicks in from the month cumulative turnover crosses IDR 500M, and applies only to the excess in that month; from the following month, 0.5% applies to the full monthly turnover. See Example 1.
+For the monthly tax, PP 55 art. 60 counts money or money's-worth received OR accrued from qualifying business before discounts. Do not impose a universal cash-only convention. No COGS, operating expenses, biaya jabatan, PTKP income allowance, capital allowance or loss carryforward reduces this gross-turnover tax. Zero qualifying turnover gives zero tax. Recoverable VAT is analysed separately through `indonesia-vat`, not treated as business profit. Foreign-currency conversion and any unclear VAT-inclusive base remain specific unresolved facts until the applicable official rule and invoices are obtained. [PP 55/2022 art. 60](https://www.pajak.go.id/peraturan/penyesuaian-pengaturan-di-bidang-pajak-penghasilan).
 
-### 3.4 Interaction with PPN/VAT
+Income excluded by amended art. 56(3) includes individual professional services, foreign income whose tax is due or paid abroad, income separately subject to final tax and non-taxable income. Do not label all dividends, royalties, capital gains or one-off receipts automatically excluded: establish their actual income category and applicable provision. Keep employment salary under payroll, rent/construction and other specific final taxes under their own rules, and foreign-tax-credit questions under ordinary income tax. [PP 20/2026 amended art. 56(3)](https://www.pajak.go.id/id/peraturan/perubahan-atas-peraturan-pemerintah-nomor-55-tahun-2022-tentang-penyesuaian-pengaturan-0).
 
-- **Independence of regimes** — PPh Final UMKM and PPN are independent regimes. The IDR 4.8B threshold coincides with the PPN PKP registration threshold but is not linked.
-- **Below 4.8B** — A UMKM taxpayer below IDR 4.8B is generally below the PKP threshold and does not charge PPN.
-- **Voluntary PKP registration** — A UMKM taxpayer may voluntarily register as PKP (e.g., to issue Faktur Pajak to B2B customers). In that case they collect 11% PPN on sales and still pay 0.5% PPh Final on turnover. Regimes run in parallel.
-- **PPN treatment** — Peredaran bruto is net of PPN collected — PPN is a state collection, not income.
+### 3. Test earlier elections, utilisation periods and the transition
 
-### 3.5 Interaction with PPh 21 (employment income)
-
-- **Parallel employment income** — If the same individual is both an employee and a UMKM sole trader, the employer withholds PPh 21 on salary (see id-payroll-pph21.md) and the individual separately pays 0.5% PPh Final on UMKM turnover. SPT 1770 reports both streams. The PPh Final is not creditable against PPh 21.
-
-### 3.6 NIK-as-NPWP
-
-- **NIK-as-NPWP** — Since 1 July 2024 (PMK 136/2023), the 16-digit NIK functions as the NPWP for individuals. OP UMKM taxpayers use NIK on kode billing, SPT Tahunan, and Faktur Pajak (if PKP). Entities use the 15-digit NPWP Badan (a 16-digit entity NPWP is also being issued under Coretax). If uncertain, write "TBC — verify with Indonesian accountant".  _(PMK 136/2023)_
-
-## Section 4 — Tier 2 catalogue: revisions, exclusions, and edge cases
-
-### 4.1 PP 55/2022 — revised time limits
-
-- **Original caps intro** — PP 55/2022 (which superseded and consolidated PP 23/2018) originally set the following caps from the year of registration or from FY2018, whichever is later:
-
-**Original cap table**
-
-| Taxpayer type | Original cap (PP 55/2022 as enacted Dec 2022) |
-| --- | --- |
-| Orang Pribadi | 7 years |
-| Koperasi, CV, Firma, BUMDes | 4 years |
-| PT (Perseroan Terbatas) | 3 years |
-
-- **REVISION 1 — No time limit for OP and PT Perorangan** — Per analysis by DDTC and MUC, the original 7-year cap for OP (and the 3-year cap insofar as it would apply to PT Perorangan — a single-member micro-PT under UU Cipta Kerja) has effectively been removed. OP and PT Perorangan may continue using the 0.5% facility indefinitely so long as they remain below IDR 4.8B and satisfy the other tests. TBC — verify the exact PP/PMK reference with an Indonesian accountant before quoting to a client.
-- **REVISION 2 — Extension of OP facility through end of 2025** — The OP 7-year window for taxpayers who first elected in 2018 would have expired at end of 2024. The Government issued an extension keeping OPs in the regime through at least end of 2025, and some practitioner commentary references a further extension running through 2029. Both should be noted in the reviewer brief; the safe operating position for FY2025 is that OPs who would otherwise have aged out remain in. TBC — verify the exact extension instrument with an Indonesian accountant.
-- **Operational note for entities** — The 3-year and 4-year caps remain. A PT first registered in 2022 used 0.5% in 2022–2024 and from FY2025 must compute under ordinary PPh Badan. A CV first registered in 2021 used the facility 2021–2024 and exits in FY2025. Always confirm "first year used" from the client's PP 23/2018 election notification (Surat Pemberitahuan).
-
-### 4.2 Pekerjaan bebas (independent professions) — excluded
-
-- **Excluded activities list** — PP 55/2022 (penjelasan) excludes OPs providing services as pekerjaan bebas. Drawing from Article 1 UU PPh and the penjelasan, the list includes: Tenaga ahli: pengacara, akuntan, arsitek, dokter, konsultan, notaris, penilai, aktuaris. Performers (pemain musik, penyanyi, bintang film/iklan, sutradara, kru film, foto model, pemain drama, penari); olahragawan. Penasihat, pengajar, pelatih, penceramah, moderator; pengarang, peneliti, penerjemah; agen iklan; pengawas/pengelola proyek. Perantara (brokers); petugas penjaja barang dagangan; agen asuransi; distributor MLM / direct selling. These taxpayers compute on net income at Article 17 rates (or NPPN if eligible). They never qualify for 0.5% regardless of turnover.
-- **Edge case — borderline activities** — A software developer selling SaaS to multiple unrelated customers is a business (eligible). A freelance developer billing one client for personal effort with no separate establishment may be challenged as pekerjaan bebas. A YouTuber/content creator generally qualifies. A trainer running an institutionalised training company qualifies; the same person consulting solo is pekerjaan bebas. When in doubt, treat as pekerjaan bebas and flag for reviewer.
-
-### 4.3 Opt-out election (one-way per year)
-
-- **Opt-out mechanics** — A taxpayer who qualifies may elect to compute under ordinary rules by submitting a Surat Pemberitahuan to the local KPP. Election must be made before the start of the tax year in which it takes effect, or at first registration. One-way for that tax year — no reversion mid-year. A taxpayer who opted out may return to 0.5% in a subsequent year by simply not renewing the opt-out, provided eligibility and time-limit tests still pass.
-- **When opt-out makes sense** — Low net-margin businesses (high COGS) can find 0.5% of gross exceeds Article 17 progressive tax on net. Break-even is roughly where (PKP × Art. 17 effective rate) < (gross × 0.5%); for an OP with PTKP TK/0 of IDR 54M, opt-out tends to be cheaper once gross margin drops below ~5% (TBC — compute case-by-case).
-
-### 4.4 Transition edge cases
-
-- **First-year taxpayer** — Tested on annualised projection. Apply 0.5% from month of registration.
-- **Mid-year crossing of IDR 4.8B** — Continue 0.5% for FY2025; threshold breach takes effect from FY2026 (PP 55/2022 Art. 8 — prospective). Reviewer flags the FY2026 regime change.  _(PP 55/2022 Art. 8)_
-- **Returning from opt-out** — Resume 0.5% from January of the new year, subject to time-limit and threshold tests.
-- **Cessation of business mid-year** — Pay 0.5% on actual months of operation; final SPT Tahunan reconciles.
-- **Acquisition / merger** — Out of scope — escalate.
-
-### 4.5 Historical note — OP 7-year window
-
-For OPs who first used the regime in FY2018, the original 7-year window expired at end of FY2024. Per the extension and the indefinite-period clarification (Section 4.1), these OPs remain in the regime for FY2025. Reviewer brief should record both (a) the original cap that would have expired and (b) the citation supporting continued eligibility, so the position is defensible.
-
-## Section 5 — Worked examples
-
-### Example 1 — Freelancer Orang Pribadi
-
-Pak Andi, sole-trader e-commerce reseller (jualan online via Tokopedia/Shopee). Full-year resident, single, no salary. Registered for PP 23/2018 in 2021. Activity = trading goods (not pekerjaan bebas). FY2025 monthly turnover (IDR): Jan 40M, Feb 45M, Mar 50M, Apr 55M, May 60M, Jun 55M, Jul 65M, Aug 70M, Sep 70M, Oct 75M, Nov 80M, Dec 85M — annual total IDR 750,000,000.
-
-Threshold: IDR 750M ≤ IDR 4.8B — pass. Type: OP — pass. Activity: trading — pass. Time limit: no cap for OP under revised PP 55/2022 — pass. PTKP-equivalent: first IDR 500M exempt (Section 3.3).
-
-Cumulative crosses IDR 500M in September. Tax only on the excess in Sep, then on full monthly turnover from Oct.
-
-**Monthly PPh Final table**
-
-| Month | Taxable portion (IDR) | 0.5% (IDR) | Due |
-| --- | --- | --- | --- |
-| Jan–Aug | 0 | 0 | n/a |
-| Sep | 10,000,000 | **50,000** | 15 Oct 2025 |
-| Oct | 75,000,000 | **375,000** | 15 Nov 2025 |
-| Nov | 80,000,000 | **400,000** | 15 Dec 2025 |
-| Dec | 85,000,000 | **425,000** | 15 Jan 2026 |
-| **Total** | **250,000,000** | **1,250,000** |  |
-
-SPT Tahunan 1770 by 31 March 2026 reports IDR 750M turnover in Lampiran PPh Final with IDR 1,250,000 already paid. Not creditable against any other tax.
-
-Confirm NIK-as-NPWP registration (PMK 136/2023); confirm monthly kode billing generated via Coretax DJP with MAP/KJS 411128/420 (TBC).
-
-### Example 2 — PT Perorangan
-
-PT Mawar Digital Perorangan, single-member micro-PT (UU Cipta Kerja), incorporated March 2024. Sells digital templates and stock photos to international customers via Etsy. FY2025 annual gross turnover: IDR 2,200,000,000.
-
-Threshold IDR 2.2B — pass. Type PT Perorangan — pass. Activity (digital goods to many unrelated customers) — business, not pekerjaan bebas. (A solo designer billing one client for personal creative service would be pekerjaan bebas; the PT Perorangan structure with multiple customers establishes a business.) Time limit: no cap under revised PP 55/2022 — pass. PTKP-equivalent: not available to entities — full IDR 2.2B is the base.
-
-0.5% × monthly turnover, paid by 15th of following month via Coretax DJP under entity NPWP.
-
-**Quarterly turnover table**
-
-| Quarter | Quarterly turnover | 0.5% |
-| --- | --- | --- |
-| Q1 | 480,000,000 | 2,400,000 |
-| Q2 | 520,000,000 | 2,600,000 |
-| Q3 | 560,000,000 | 2,800,000 |
-| Q4 | 640,000,000 | 3,200,000 |
-| **FY2025** | **2,200,000,000** | **11,000,000** |
-
-(Quarterly aggregation shown for compactness — actual deposits are monthly.)
-
-SPT Tahunan PPh Badan 1771 by 30 April 2026 reports IDR 2.2B in Lampiran PPh Final with IDR 11M paid. No PPh Badan 22% is computed on this turnover — PPh Final discharges the business income-tax liability in full.
-
-(a) Confirm PP 23/2018 election notification on file at KPP. (b) Confirm no voluntary PKP registration; advise on PPN implications well before any approach to IDR 4.8B (see indonesia-vat.md). (c) Salary/dividends from PT to the shareholder-director handled separately — salary under PPh 21 (see id-payroll-pph21.md); dividends potentially exempt under PMK 18/2021 if reinvested.
-
-## Section 6 — Filing and payment mechanics
-
-### 6.1 Monthly self-deposit (setor sendiri)
-
-- **Overview** — PPh Final UMKM is a self-assessed, self-deposited tax. No DJP-issued invoice triggers it.
-
-0. **Step 1** — End of month — sum gross business turnover (peredaran bruto).
-0. **Step 2** — For OP only — track cumulative annual turnover. If still ≤ IDR 500M, no tax due. If cumulative crosses IDR 500M during the month, apply 0.5% only to the excess. From the next month, apply 0.5% to the full monthly turnover.
-0. **Step 3** — Compute: PPh Final = 0.5% × taxable portion.
-0. **Step 4** — Generate kode billing through Coretax DJP (coretaxdjp.pajak.go.id). Use MAP/KJS 411128 / 420 (PPh Final atas Penghasilan dari Usaha Wajib Pajak yang Memiliki Peredaran Bruto Tertentu). TBC — verify the exact KJS with an Indonesian accountant; KJS codes have been updated during the Coretax rollout.
-0. **Step 5** — Pay by the 15th of the following month. Late payment triggers sanksi administrasi bunga (interest) per Article 9 KUP — monthly rate set by MoF.
-0. **Step 6** — Retain Bukti Penerimaan Negara (BPN) — the state receipt issued automatically.
-
-### 6.2 Coretax DJP transition
-
-Coretax DJP is the integrated DJP administration platform rolled out in late 2024 / early 2025, replacing legacy DJP Online, e-Billing, parts of e-Faktur, and e-Bupot. As of mid-2025 most PPh Final UMKM billing flows through Coretax. The MAP/KJS structure is preserved across the legacy and Coretax channels. Verify the live URL with the client before each filing — the DJP entry point has shifted several times during the rollout.
-
-### 6.3 Annual SPT
-
-- **Reporting requirement** — PPh Final paid monthly must still be reported annually in the SPT Tahunan, even though no additional tax is due on the same income.
-
-**Annual SPT table**
-
-| Taxpayer | Form | Lampiran | Filing deadline FY2025 |
-| --- | --- | --- | --- |
-| Orang Pribadi | SPT Tahunan PPh OP 1770 | Lampiran III (Penghasilan yang Dikenakan PPh Final dan/atau Bersifat Final) | **31 March 2026** |
-| PT, PT Perorangan, CV, Firma, Koperasi, BUMDes | SPT Tahunan PPh Badan 1771 | Lampiran IV / PPh Final attachment | **30 April 2026** |
-
-The Lampiran captures: gross turnover (peredaran bruto), tax base, PPh Final paid, and the supporting BPN references. The reviewer should reconcile the monthly BPN total to the annual SPT figure.
-
-### 6.4 Sanctions and records
-
-**Sanctions table**
-
-| Event | Sanction |
-| --- | --- |
-| Late monthly payment | Sanksi bunga per Article 9(2a) KUP — monthly rate published by MoF (typically ~1–2.5%/month, max 24 months) |
-| Late/non-filing SPT Tahunan OP | Denda IDR 100,000 per SPT |
-| Late/non-filing SPT Tahunan Badan | Denda IDR 1,000,000 per SPT |
-| Audit understatement | Sanksi bunga + sanksi kenaikan up to 50% (UU KUP) |
-
-- **Record retention** — Article 28 UU KUP requires retention of books and supporting documents for 10 years from end of tax year — monthly turnover calc, BPN receipts, kode billing prints, BPE acknowledgements.  _(Article 28 UU KUP)_
-
-## Section 7 — Conservative defaults (consolidated)
-
-**Conservative defaults table**
-
-| Question | Default |
-| --- | --- |
-| Activity is pekerjaan bebas? | **Yes (excluded)** until taxpayer proves otherwise; require written activity description |
-| Below IDR 4.8B? | Test on prior-year actual; otherwise on current-year annualised projection |
-| Time limit elapsed? | Elapsed for non-OP/non-PT-Perorangan if unclear; not elapsed for OP/PT Perorangan per revised PP 55/2022 — always flag citation uncertainty |
-| MAP/KJS code? | "TBC — verify with Indonesian accountant"; do not auto-generate kode billing |
-| Mixed business + pekerjaan bebas? | Split income streams; 0.5% only on business; flag |
-| Cash or accrual? | **Cash receipts** (peredaran bruto received) for PPh Final, even if accrual books exist |
-| PKP voluntary registration? | Out of scope — refer to `indonesia-vat.md` |
-| Multiple businesses under one NPWP? | Sum gross turnover for the IDR 4.8B test |
-| Foreign-currency receipts? | Convert at BI middle rate on receipt date; flag if FX is material |
-
-## Section 8 — Sources
-
-All citations are to primary Indonesian statutes, government regulations (PP), Minister of Finance regulations (PMK), and DJP guidance. Practitioner commentary (DDTC, MUC, Ortax) is cited where it supports interpretation of revised provisions — practitioner commentary is not law, and the reviewer must verify against the underlying instrument.
-
-### Primary legislation
-
-- **placeholder** — 
-- **UU 7/2021 (HPP)** — amends UU PPh, UU PPN, UU KUP; introduced NIK-as-NPWP.  _([UU 7/2021](https://peraturan.bpk.go.id/Details/187081/uu-no-7-tahun-2021))_
-- **UU 36/2008 (PPh), as amended** — Art. 4(2) authorises final taxes; Art. 17 is the ordinary progressive schedule.  _([UU 36/2008](https://peraturan.bpk.go.id/Details/39305/uu-no-36-tahun-2008))_
-- **UU 6/1983 (KUP), as amended** — Arts. 9, 28, 36, 38.  _([UU 6/1983](https://peraturan.bpk.go.id/Details/47169/uu-no-6-tahun-1983))_
-
-### Government regulations (PP)
-
-- **PP 23/2018** — original 0.5% UMKM regulation.  _([PP 23/2018](https://peraturan.bpk.go.id/Details/82146/pp-no-23-tahun-2018))_
-- **PP 55/2022** — Bagian Kedua (Arts. 56–63) consolidates and replaces PP 23/2018 from 2022; introduces IDR 500M OP relief; originally set 3/4/7-year caps. Subsequent revision removed the OP/PT-Perorangan cap and extended the OP facility through FY2025 (commentary: through 2029).  _([PP 55/2022](https://peraturan.bpk.go.id/Details/238760/pp-no-55-tahun-2022))_
-
-### Minister of Finance regulations (PMK)
-
-- **PMK 136/2023** — NIK-as-NPWP implementation (effective 1 July 2024).  _([PMK 136/2023](https://peraturan.bpk.go.id/Details/271732/pmk-no-136-pmk032023))_
-- **PMK 168/2023** — PPh 21 TER (context for parallel employment income).  _(PMK 168/2023)_
-
-### DJP guidance and practitioner commentary
-
-DJP PPh Final UMKM: <https://www.pajak.go.id/index-tarif-pph-umkm>, <https://www.pajak.go.id/id/pp-23-tahun-2018>
-Coretax DJP portal: <https://coretaxdjp.pajak.go.id> (verify URL at filing time)
-DDTC News — analysis of OP time-limit revision and 0.5% extension: <https://news.ddtc.co.id>
-MUC Consulting — PP 55/2022 revision and indefinite period for OP / PT Perorangan: <https://mucglobal.com/news>
-Ortax — KJS codes and kode billing structure: <https://ortax.org>
-
-### Cross-references in this package
-
-`foundation.md` — workflow architecture.
-`intake.md` — Step 1 scope check.
-`id-payroll-pph21.md` — PPh 21 and BPJS for parallel employment income.
-`indonesia-vat.md` — PPN / PKP registration alongside UMKM.
-`references.md` — bibliography.
-
-## PROHIBITIONS
-
-NEVER treat pekerjaan bebas income as eligible for 0.5%, regardless of turnover.
-NEVER offset COGS, expenses, or losses against the 0.5% base — the base is gross turnover.
-NEVER treat PPh Final as creditable against PPh 21/22/23/25/29 — it is final.
-NEVER apply the IDR 500M PTKP-equivalent relief to entities — OP only.
-NEVER quote an MAP/KJS code without verification — write "TBC".
-NEVER ignore the time-limit test for entities (PT non-perorangan: 3 yrs; CV/Firma/Koperasi/BUMDes: 4 yrs).
-NEVER combine passive income (rent, royalties, interest, dividends, capital gains) into the 0.5% base.
-NEVER present the calculation as definitive — always label as estimated, pending Konsultan Pajak review.
-NEVER advise on a mid-year regime change without reviewer sign-off (R-ID-UMKM-5).
-NEVER assume the Coretax DJP entry URL is unchanged — verify before filing.
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for errors, omissions, or outcomes arising from use of this skill. All outputs must be reviewed and signed off by a licensed Indonesian tax consultant (Konsultan Pajak) before filing or acting. Indonesian tax law — and in particular the PP 55/2022 framework, the Coretax DJP rollout, and the kode billing MAP/KJS structure — has been changing rapidly in 2023–2025; always verify with primary sources.
-
-The up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review, and track updates as Indonesian tax law changes.
+A notification choosing general rates is not an annual opt-out that silently lapses. Amended art. 57(4) prevents subsequent-year access after that notification; it also prevents later return after the aggregated-ceiling exclusion or cooperative period expiry described there. PMK 164 art. 5 ordinarily requires the notice by year-end for general rates from the following year; a new registrant can notify on registration for immediate general-rate treatment. Obtain the actual notice before comparing choices. [PP 20/2026 amended art. 57(2)-(5)](https://www.pajak.go.id/id/peraturan/perubahan-atas-peraturan-pemerintah-nomor-55-tahun-2022-tentang-penyesuaian-pengaturan-0); [PMK 164/2023 art. 5](https://www.pajak.go.id/id/peraturan/tata-cara-pengenaan-pajak-penghasilan-atas-penghasilan-dari-usaha-yang-diterima-atau).
+
+Record each specific art. II transition rather than using a general "everyone extended to 2029" claim:
+
+| Earlier position | Transition and boundary | Official source |
+|---|---|---|
+| Individual's old period ended in tax year 2024 | Access for 2025 and 2026 while the stated earlier eligibility criteria hold; corresponding certificate continued for those years | [PP 20/2026 art. II(1)(a)(1),(c)(1)](https://www.pajak.go.id/id/peraturan/perubahan-atas-peraturan-pemerintah-nomor-55-tahun-2022-tentang-penyesuaian-pengaturan-0) |
+| Individual or single-founder company's old period ended in 2025 | Access for 2026 under the stated criteria, with the corresponding certificate rule | [PP 20/2026 art. II(1)(a)(2),(c)(2)](https://www.pajak.go.id/id/peraturan/perubahan-atas-peraturan-pemerintah-nomor-55-tahun-2022-tentang-penyesuaian-pengaturan-0) |
+| Cooperative registered before commencement, earlier period ends in 2024 to 2029 | The express 2025 to 2029 transition applies while old eligibility continues; explanation's cooperative registered in 2023 can continue through 2029 | [PP 20/2026 art. II(1)(b),(d) and explanation](https://www.pajak.go.id/id/peraturan/perubahan-atas-peraturan-pemerintah-nomor-55-tahun-2022-tentang-penyesuaian-pengaturan-0) |
+| Existing CV, firma, ordinary PT or BUMDes/BUMDesma with an unexpired earlier period | Continue only until that period ends and while earlier eligibility holds. No fresh three/four-year period | [PP 20/2026 art. II(1)(e)](https://www.pajak.go.id/id/peraturan/perubahan-atas-peraturan-pemerintah-nomor-55-tahun-2022-tentang-penyesuaian-pengaturan-0) |
+| Previously qualifying individual/company newly affected by professional-company exclusion or owner/company aggregation | Art. II(1)(f) continues the stated existing final-tax treatment to the end of 2026; this is not a concession for a new taxpayer or every failed criterion | [PP 20/2026 art. II(1)(f), explanations](https://www.pajak.go.id/id/peraturan/perubahan-atas-peraturan-pemerintah-nomor-55-tahun-2022-tentang-penyesuaian-pengaturan-0) |
+
+Historically PP 55 art. 59 gave individuals seven years, cooperatives/CV/firma/BUMDes/single-founder companies four years, and ordinary PTs three years. The original old file's suggestion that a PT Perorangan always had a three-year period was wrong. Earlier registrations use art. 69, and pre-commencement BUMDes and single-founder companies have art. 59(2)(b)'s start-year rule. Preserve the actual registration and used-period evidence rather than counting from the first tax payment automatically. Article 59 is now deleted; the table above describes transitional history, not fresh 2026 caps for individuals or single-founder companies. [PP 55/2022 former arts. 59,69](https://www.pajak.go.id/peraturan/penyesuaian-pengaturan-di-bidang-pajak-penghasilan); [PP 20/2026 art. I item 6](https://www.pajak.go.id/id/peraturan/perubahan-atas-peraturan-pemerintah-nomor-55-tahun-2022-tentang-penyesuaian-pengaturan-0).
+
+### 4. Compute each month and reconcile once at year-end
+
+For an individual, set C to cumulative qualifying turnover before the month and M to that month's qualifying turnover. Taxable monthly portion = max(C+M-500,000,000,0) minus max(C-500,000,000,0); multiply by 0.005. This gives only the crossing-month excess, then the full qualifying turnover in later months. Do not renew the allowance per branch, marketplace, month or quarter. For a company, tax is 0.005 times its full qualifying monthly turnover; there is no individual allowance. [PP 55/2022 art. 60](https://www.pajak.go.id/peraturan/penyesuaian-pengaturan-di-bidang-pajak-penghasilan); [PMK 164/2023 art. 6](https://www.pajak.go.id/id/peraturan/tata-cara-pengenaan-pajak-penghasilan-atas-penghasilan-dari-usaha-yang-diterima-atau).
+
+Reconcile the computed liability to actual final-tax slips and self-deposits, preventing double payment of an amount already lawfully withheld. PP 55 art. 62 permits both monthly self-payment and withholding/collection; it is not always self-deposited. The final tax does not credit against ordinary PPh 21/22/23/25/29. Keep non-final credits separate. If the individual paid tax on turnover later covered by the annual untaxed portion, PMK 164 art. 9 provides the refund-request route for tax not actually due; do not invent an automatic ordinary-income-tax credit. [PP 55 arts. 62-63](https://www.pajak.go.id/peraturan/penyesuaian-pengaturan-di-bidang-pajak-penghasilan); [PMK 164/2023 arts. 7-9](https://www.pajak.go.id/id/peraturan/tata-cara-pengenaan-pajak-penghasilan-atas-penghasilan-dari-usaha-yang-diterima-atau).
+
+A taxpayer qualifying at the start whose current-year turnover crosses the ceiling continues the stated final-tax treatment through that year under PP 55 art. 61, then goes to ordinary tax in following years. Owner/company permanent exclusion and the PP 20 transition still need their separate analysis. Do not stop the final tax automatically on the sale crossing the ceiling or declare a fresh next-year election without checking art. 57(4). New registration, acquisitions, mergers, cessation and disputed partial-year facts require their own evidence and reviewer handoff. [PP 55/2022 art. 61](https://www.pajak.go.id/peraturan/penyesuaian-pengaturan-di-bidang-pajak-penghasilan); [PP 20/2026 amended art. 57 and art. II](https://www.pajak.go.id/id/peraturan/perubahan-atas-peraturan-pemerintah-nomor-55-tahun-2022-tentang-penyesuaian-pengaturan-0).
+
+## Boundary and exception table
+
+| Situation, retained from the old method | Treatment and handoff |
+|---|---|
+| R-ID-UMKM-1, turnover above the ceiling | Test the preceding/current year and aggregation separately; apply the statutory year-end transition where it actually applies, then ordinary individual or company tax |
+| R-ID-UMKM-2, pekerjaan bebas or disputed activity | No final-tax treatment for the individual's professional receipts; analyse the professional-company exclusion and exact grandfathering rather than treating every new company as eligible |
+| R-ID-UMKM-3, utilisation period expired | Check entity and original start date. Current cooperative cap and legacy-entity transition differ from the now-deleted individual/company cap |
+| R-ID-UMKM-4, BUT or non-resident | Outside this resident final-tax method; refer for the proper source/residence/treaty computation |
+| R-ID-UMKM-5, mid-year change, new registration, crossing or cessation | Preserve actual monthly receipts, start/stop dates and election. Continue only the route supported by art. 61/art. II; unusual partial years need review |
+| R-ID-UMKM-6, multiple branches, taxpayers or entities | Aggregate branches and apply the owner/spouse/company rules. A legal-entity-only test is insufficient |
+| R-ID-UMKM-7, foreign-source income | Apply amended art. 56(3)(b)'s tax-due/paid-abroad exclusion, while foreign business/professional turnover still enters art. 58 eligibility; ordinary foreign-tax-credit work is separate |
+| R-ID-UMKM-8, rent, interest, dividends, royalties or gains | Establish the actual separate-final, exempt or ordinary treatment. Do not blanket-exclude every passive or one-off receipt without its rule |
+| Employment plus qualifying business | Payroll withholding and final business tax run separately, both reported appropriately in the annual return; final tax is not a credit against salary tax |
+| Voluntary PKP or later compulsory PKP | VAT is independent. Obtain registration/effective date and apply `indonesia-vat`; do not assume an unregistered small taxpayer may issue tax invoices or quote a universal invoice rate |
+| PT paying its owner salary or dividends | Company final tax does not settle the shareholder's salary, dividend/reinvestment or payroll obligations; route those separately |
+| Costs include bribes or gratuities | No expense is deducted from this final-tax base anyway; amended art. 20A separately bars the specified corruption/bribery payments, including foreign-public-official payments, under general income tax |
+| Low-margin business considering general rates | Compare an actual ordinary-tax calculation, record keeping and the permanent opt-out consequence. No universal 5% margin breakpoint is asserted |
+
+The operative source for the eligibility and transition entries is [PP 20/2026](https://www.pajak.go.id/id/peraturan/perubahan-atas-peraturan-pemerintah-nomor-55-tahun-2022-tentang-penyesuaian-pengaturan-0); for independent VAT/PKP and payment/certificate mechanics it is [PMK 164/2023](https://www.pajak.go.id/id/peraturan/tata-cara-pengenaan-pajak-penghasilan-atas-penghasilan-dari-usaha-yang-diterima-atau).
+
+### Missing facts and safe defaults
+
+Unknown activity stays unclassified, with the professional-service possibility flagged. Unknown turnover, household/company total or historical election means no affirmative eligibility conclusion, rather than a fabricated low-risk default. Preserve unresolved monthly amounts, exact foreign-exchange conversion, payment code, certificate and PKP facts in the workpaper. Request documents instead of assuming cash receipts, a fresh opt-out or automatic access. A calculation based on expressly supplied hypothetical inputs is permitted if its boundaries are stated; it is not a filed assessment.
+
+## Worked cases
+
+### Case 1. Pak Andi, individual trader crossing the untaxed portion
+
+Retain the original online reseller's numbers, advanced to calendar 2026: January to December turnover is IDR 40m,45m,50m,55m,60m,55m,65m,70m,70m,75m,80m,85m, total 750m. Assume all is qualifying domestic business turnover, no election out, no excluded professional activity, residence and earlier eligibility established, and no connected-taxpayer disqualification. January to August total 440m. September brings cumulative turnover to 510m, so 10m is taxable; October, November and December add 75m,80m,85m. Final tax is respectively 50,000,375,000,400,000,425,000, total **1,250,000**. Each amount is reconciled to actual collection/self-payment records and the ordinary following-month due rule, not automatically deposited twice. [PP 55 art. 60](https://www.pajak.go.id/peraturan/penyesuaian-pengaturan-di-bidang-pajak-penghasilan); [PMK 164 arts. 6-9](https://www.pajak.go.id/id/peraturan/tata-cara-pengenaan-pajak-penghasilan-atas-penghasilan-dari-usaha-yang-diterima-atau).
+
+```oa-check
+name: Pak Andi monthly crossing and annual reconciliation in 2026
+inputs:
+  january_august: 440000000
+  september: 70000000
+  october: 75000000
+  november: 80000000
+  december: 85000000
+  untaxed: 500000000
+  final_rate: 0.005
+steps:
+  - annual_turnover: january_august + september + october + november + december
+  - september_base: max(january_august + september - untaxed, 0) - max(january_august - untaxed, 0)
+  - september_tax: september_base * final_rate
+  - october_tax: october * final_rate
+  - november_tax: november * final_rate
+  - december_tax: december * final_rate
+  - monthly_total: september_tax + october_tax + november_tax + december_tax
+  - annual_check: max(annual_turnover - untaxed, 0) * final_rate
+expected:
+  annual_turnover: 750000000
+  september_base: 10000000
+  september_tax: 50000
+  october_tax: 375000
+  november_tax: 400000
+  december_tax: 425000
+  monthly_total: 1250000
+  annual_check: 1250000
+```
+
+### Case 2. PT Mawar Digital Perorangan, conditional business example
+
+Retain the original company, incorporated March 2024, selling templates/stock photos through Etsy with total qualifying turnover 2,200m. These are hypothetical business-classification facts, not proof that every creative seller qualifies. Establish whether its founder's own professional services trigger art. 57(2)(b), the owner/company aggregation, foreign-income exclusion, prior election and any art. II(1)(f) grandfathering before using the result. If all supplies are established as qualifying business receipts, quarterly aggregates 480m,520m,560m,640m give 2.4m,2.6m,2.8m,3.2m, total **11m**. The aggregates are only a display; actual settlement is monthly. Applying an individual's allowance would incorrectly understate company tax by **2.5m**. If those eligibility facts fail, hand off to the ordinary company computation; do not present 11m as the legal answer to an unclassified Etsy statement. [PP 20 amended arts. 56-58/art. II](https://www.pajak.go.id/id/peraturan/perubahan-atas-peraturan-pemerintah-nomor-55-tahun-2022-tentang-penyesuaian-pengaturan-0); [PP 55 art. 60](https://www.pajak.go.id/peraturan/penyesuaian-pengaturan-di-bidang-pajak-penghasilan).
+
+```oa-check
+name: PT Mawar company allowance boundary in 2026
+inputs:
+  q1: 480000000
+  q2: 520000000
+  q3: 560000000
+  q4: 640000000
+  final_rate: 0.005
+steps:
+  - total: q1 + q2 + q3 + q4
+  - q1_tax: q1 * final_rate
+  - q2_tax: q2 * final_rate
+  - q3_tax: q3 * final_rate
+  - q4_tax: q4 * final_rate
+  - company_tax: total * final_rate
+  - incorrect_individual_formula: max(total - 500000000, 0) * final_rate
+  - understatement: company_tax - incorrect_individual_formula
+expected:
+  total: 2200000000
+  q1_tax: 2400000
+  q2_tax: 2600000
+  q3_tax: 2800000
+  q4_tax: 3200000
+  company_tax: 11000000
+  understatement: 2500000
+```
+
+### Decision case. Same shop, low versus high supported ordinary profit
+
+For an eligible individual with qualifying annual turnover 750m and the individual untaxed portion, final tax is 1.25m. Suppose the separate ordinary-income-tax method, with all other income/allowances/credits supported, supplies ordinary tax of 0 in one option and 3m in another. The first option is 1.25m cheaper under general rates; the second is 1.75m cheaper under final tax. These supplied ordinary-tax outputs are not calculated by assuming a universal margin or PTKP here. Before choosing, record the notice timing, bookkeeping obligations and permanent future exclusion under amended art. 57(4). [PP 20/2026 amended art. 57](https://www.pajak.go.id/id/peraturan/perubahan-atas-peraturan-pemerintah-nomor-55-tahun-2022-tentang-penyesuaian-pengaturan-0); [PMK 164/2023 art. 5](https://www.pajak.go.id/id/peraturan/tata-cara-pengenaan-pajak-penghasilan-atas-penghasilan-dari-usaha-yang-diterima-atau).
+
+```oa-check
+name: Conditional general-rate decision from separately established ordinary tax
+inputs:
+  turnover: 750000000
+  untaxed: 500000000
+  final_rate: 0.005
+  ordinary_low: 0
+  ordinary_high: 3000000
+steps:
+  - final_tax: max(turnover - untaxed, 0) * final_rate
+  - general_saving_low: final_tax - ordinary_low
+  - final_saving_high: ordinary_high - final_tax
+expected:
+  final_tax: 1250000
+  general_saving_low: 1250000
+  final_saving_high: 1750000
+```
+
+## When to refuse or refer
+
+Retain refusal codes R-ID-UMKM-1 to R-ID-UMKM-8 above. Refer material residence/BUT, classification, acquisition/merger, incentive, foreign-tax, overlapping taxpayer or disputed grandfathering questions to a Konsultan Pajak. Do not auto-deny the supported current-year computation merely because art. 61 provides a next-year exit; explain the actual unresolved part. Never assist turnover splitting or use a company wrapper to conceal professional receipts.
+
+Never deduct costs or losses from this gross tax, treat final payments as ordinary income-tax credits, give a company the individual allowance, ignore utilisation or aggregation, or quote an unchecked billing code. Do not mix other final-tax bases into the monthly base merely because they count toward the eligibility ceiling. An unresolved activity is not resolved by the most conservative label. A late payment or filing needs its actual date, applicable relief and official interest decision, not an estimated rate.
+
+## Filing and payment
+
+### Monthly evidence and settlement
+
+1. Reconcile the qualifying business-turnover schedule for the tax period and every place of business. Keep the eligibility-ceiling schedule separate. Compute the individual's cumulative relief or the company's full base, then tie to invoices/platform sales, cash and bank receipts. [PMK 164 arts. 6-7](https://www.pajak.go.id/id/peraturan/tata-cara-pengenaan-pajak-penghasilan-atas-penghasilan-dari-usaha-yang-diterima-atau).
+2. For transactions subject to collection/withholding, obtain the final-tax certificate and supply its copy as required. An individual still within the untaxed portion uses the prescribed turnover statement instead. The payer issues the proper withholding evidence, including nil slips in the stated cases. Imports/purchases and threshold statements have specific exceptions in art. 8, so do not tell every payer to withhold automatically. [PMK 164 art. 8](https://www.pajak.go.id/id/peraturan/tata-cara-pengenaan-pajak-penghasilan-atas-penghasilan-dari-usaha-yang-diterima-atau).
+3. Reconcile tax already lawfully collected against that monthly liability. For self-payment, use authorised Coretax access at `coretaxdjp.pajak.go.id` and the official payment/billing route for the correct taxpayer, article, period and amount. Confirm the live KAP/KJS selection from the current official schedule; the old file's unconfirmed code is not an instruction here. A platform manual never grants permission to use another person's credentials. [DJP Coretax announcement](https://www.pajak.go.id/en/node/112032); [PMK 164 art. 7](https://www.pajak.go.id/id/peraturan/tata-cara-pengenaan-pajak-penghasilan-atas-penghasilan-dari-usaha-yang-diterima-atau).
+4. Pay the supported self-paid balance by the applicable due date. Save kode billing, BPN and validated NTPN, and match actual bank payment and taxpayer ledger. A generated billing code is not a payment. Article 7(5) provides deemed monthly filing with validated payment; record the actual validation date. The nil/no-self-payment exceptions and the withholding payer's own Unifikasi return are separate. [PMK 164 arts. 7-8](https://www.pajak.go.id/id/peraturan/tata-cara-pengenaan-pajak-penghasilan-atas-penghasilan-dari-usaha-yang-diterima-atau).
+5. A later finding that a threshold statement was incorrect requires the taxpayer's own settlement under art. 8(8), allocated to the transaction month; do not retain an unsupported nil position. Incorrect/overpaid final tax has art. 9's request procedure, not automatic conversion to a general-rate credit. [PMK 164 arts. 8-9](https://www.pajak.go.id/id/peraturan/tata-cara-pengenaan-pajak-penghasilan-atas-penghasilan-dari-usaha-yang-diterima-atau).
+
+### Annual return and other taxes
+
+Report gross turnover and final tax as the annual SPT attachment required by art. 9. Reconcile the annual gross, individual relief, qualifying tax, monthly self-payments, collector slips and outstanding difference. Keep final and ordinary income, assets/liabilities, salary and company-owner distributions separate. The earlier 1770 Lampiran III/1771 Lampiran IV references are historical form navigation, not certified 2026 Coretax field numbers; obtain the current official form manual before populating a field. Retain the accepted annual return and BPE, not just a draft PDF or billing receipt. [PMK 164 art. 9](https://www.pajak.go.id/id/peraturan/tata-cara-pengenaan-pajak-penghasilan-atas-penghasilan-dari-usaha-yang-diterima-atau); [KUP arts. 3,9](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf); [DJP Coretax announcement](https://www.pajak.go.id/en/node/112032).
+
+A general-rate transition has PPh 25 instalment consequences under PMK 164 art. 16, including the first ordinary-tax year's special computation; route to the individual/company method rather than assume last year's final tax divided by twelve. PKP registration is a separate VAT test: PMK 164 arts. 17-18 set the year-end business-reporting route and the stated following-book-year VAT start for its cases. A voluntary earlier PKP registration requires its own effective-date analysis. Do not copy the old flat 11% sentence into every invoice. [PMK 164 arts. 16-19](https://www.pajak.go.id/id/peraturan/tata-cara-pengenaan-pajak-penghasilan-atas-penghasilan-dari-usaha-yang-diterima-atau).
+
+Late annual filing uses the applicable KUP art. 7 fine and exclusions; late payment uses the applicable ministerial rate and art. 9 calculation. Audit understatement is not a universal "up to 50%" add-on: obtain the exact assessment provision and notice. Keep all turnover, invoices, contracts, account statements, certificates, BPN/NTPN, billing and BPE evidence for the statutory retention period. Ordinary-tax bribery deductibility is separately barred by amended art. 20A; it never creates an expense deduction from this final turnover base. [KUP arts. 7,9,28](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf); [PP 20/2026 art. I item 2](https://www.pajak.go.id/id/peraturan/perubahan-atas-peraturan-pemerintah-nomor-55-tahun-2022-tentang-penyesuaian-pengaturan-0).
+
+## Completion checklist
+
+- Taxpayer, period, residence and actual business/professional classifications documented.
+- Prior/current turnover, branches, owner/company and applicable spouse/minor-child aggregation reconciled.
+- Earlier opt-out, certificate, incentive and original utilisation period checked; exact art. II transition identified.
+- Eligibility turnover and monthly final-tax base separated; individual cumulative relief applied only where permitted.
+- Both original worked scenarios retained with explicit eligibility limits, and the actual client's numbers recomputed.
+- Final slips and self-payments reconciled without double payment or ordinary-income-tax credit.
+- Actual billing choice, official portal, due date, payment validation and annual reporting/receipt confirmed.
+- PKP, payroll, company-owner salary/dividends and general-rate instalments routed separately.
+- Missing source-dependent details listed below and assigned to a qualified reviewer before filing.
+
+## Sources
+
+| Source and what was actually read | Official URL | Read on |
+|---|---|---|
+| PP 20/2026 operative art. I items 1-6, amended arts. 20A/56-58, deletion of art. 59, art. II and relevant statutory explanations. Read for professions, owner/spouse/minor-child aggregation, permanent opt-out, old-cap transitions, certificate continuity and 22 April commencement. The page's catalogue header misclassifies the instrument/date; the reproduced law's signed text and commencement are used | https://www.pajak.go.id/id/peraturan/perubahan-atas-peraturan-pemerintah-nomor-55-tahun-2022-tentang-penyesuaian-pengaturan-0 | 2026-11-14 |
+| PP 55/2022 arts. 56-63 and 69, including former art. 59. Read for the original regime, gross received/accrued before discounts, individual relief, current-year crossing, settlement/certificates and historical period counting; superseded parts are read with PP 20/2026 | https://www.pajak.go.id/peraturan/penyesuaian-pengaturan-di-bidang-pajak-penghasilan | 2026-11-14 |
+| PMK 164/2023 arts. 5-9,14,16-19. Read for notice timing and permanent exit, gross-base/PH-MT relief, payment/withholding/nil and deemed monthly filing, certificate cancellation, annual report/refund and PKP/instalment handoffs. Apply only where consistent with the later PP 20/2026 | https://www.pajak.go.id/id/peraturan/tata-cara-pengenaan-pajak-penghasilan-atas-penghasilan-dari-usaha-yang-diterima-atau | 2026-11-14 |
+| DJP consolidated tax laws through UU 6/2023, KUP arts. 3,7,9,28 and art. 28 explanatory cash/accrual passage. Read for annual deadlines, fine exclusions, variable interest/part-month limit, payment before filing, good-faith books and retention. This is not represented as a later-law consolidated edition | https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf | 2026-11-14 |
+| DJP official Coretax implementation announcement. Read for 1 January 2025 commencement, taxpayer account/payment facilities and prefilled final-withholding information; no live private portal or filing was tested | https://www.pajak.go.id/en/node/112032 | 2026-11-14 |
+
+Not yet confirmed: current Coretax UMKM KAP/KJS and exact 2026 annual form/attachment field identifiers; current billing and any detailed marketplace-collection implementation; operative holiday-adjustment provision and period-specific relief for an actual due date; exact ministerial interest rate for a late-payment start date and assessment-specific penalties; statutory foreign-currency conversion and VAT-inclusive turnover treatment for the actual invoice; detailed foreign-source, professional-company, merger/acquisition and unusual partial-year facts; any later amendment to the cited administration provisions affecting the client's period. The old approximate interest range, reusable opt-out, automatic creator/SaaS classification and claimed three-year historical PT Perorangan cap are not usable rules. Ordinary eligibility, cumulative relief and the bounded computations above are supported by the cited law.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-07-13. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `id-pph-final-umkm` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/id-pph-final-umkm. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `id-pph-final-umkm` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/id-pph-final-umkm. If neither is available, confirm every figure against the official source pages cited above before relying on it.

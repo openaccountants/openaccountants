@@ -1,14 +1,15 @@
 ---
 name: mc-income-tax
 description: "Monaco individual income tax and residence reference for 2026. Covers the official absence of resident personal income tax within its stated scope, French national treaty screening, fiscal residence certificate evidence and the alternative principal stay test. Use for Monaco resident tax, French citizens in Monaco, residence certificates and relocation questions. Separates personal receipts from business profits, VAT, social contributions and foreign taxation. Includes two arithmetic controls with stated factual assumptions and routes foreign computations to the relevant country Guide. Source cited draft awaiting review by a named Monaco professional."
-version: 1.3
+version: 1.5
 jurisdiction: MC
 tax_year: 2026
-last_updated: 2026-10-27
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
+type: computation
 ---
 
 # Monaco individual income tax and residence
@@ -121,4 +122,4 @@ expected:
 
 **Not yet confirmed:** estate, gift and transaction-duty computations (the earlier version's 0% direct-line/spouse and 16% unrelated-person succession rates on Monaco-situs assets were found only in secondary sources) and other-country tax applications beyond the cited French screening/routing. France and other states compute their own taxes on the relevant income; those duties require separate Guides. Those taxes are not erased by the Monaco personal-income-tax result or a residence certificate. The government page was freshly read in the normal browser on 25 October after the scripted request returned 403.
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.

@@ -17,12 +17,13 @@ jurisdiction: SJ
 category: international
 job: visitor-environmental-levy
 tax_year: 2026
-last_updated: 2026-10-31
-version: 0.1
+last_updated: 2026-11-14
+version: 0.2
 tier: 2
+type: computation
 ---
 
-# Svalbard: visitor environmental levy in 2026 v0.1
+# Svalbard: visitor environmental levy in 2026 v0.2
 
 > **General reference only.** This Guide is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -128,11 +129,11 @@ expected:
 
 | Official source and provisions read | URL | Read on |
 |---|---|---|
-| Visitor environmental-levy regulation §§1–8, complete operative text | https://lovdata.no/dokument/SF/forskrift/2006-12-22-1532 | 2026-10-31 |
-| Environmental Protection Act §78, levy power and resident prohibition | https://lovdata.no/dokument/NL/lov/2001-06-15-79/KAPITTEL_7 | 2026-10-31 |
-| Fund, resident personal/employer refund procedure and deadline | https://www.miljovernfondet.no/refusjon-av-avgift/ | 2026-10-31 |
-| Governor, ticket/private-boat collection and travel notification | https://www.sysselmesteren.no/ferdsel-pa-svalbard/ | 2026-10-31 |
-| Governor, Fund and current private-boat payment details | https://www.sysselmesteren.no/svalbards-miljovernfond/ | 2026-10-31 |
-| Published personal refund form, initial access screen only | https://skjema.no/sysselmesteren/ref_miljoavgift | 2026-10-31 |
+| Visitor environmental-levy regulation §§1-8: read for NOK 150 (§3), ticket and private-boat collection, resident refund (§4) and dispensation (§5) | https://lovdata.no/dokument/SF/forskrift/2006-12-22-1532 | 2026-11-14 |
+| Svalbard Environmental Protection Act ch.7: read for §78, the levy power and the permanent-resident exclusion | https://lovdata.no/dokument/NL/lov/2001-06-15-79/KAPITTEL_7 | 2026-11-14 |
+| Svalbard Environmental Protection Fund, refund page: read for the refund procedure and the three-year time limit (Tidsfrist) | https://www.miljovernfondet.no/refusjon-av-avgift/ | 2026-11-14 |
+| Governor of Svalbard, travel in Svalbard: read for NOK 150 per person and the travel notification duty | https://www.sysselmesteren.no/ferdsel-pa-svalbard/ | 2026-11-14 |
+| Governor of Svalbard, environmental fund page: read for NOK 150 on tickets and on private-boat notification | https://www.sysselmesteren.no/svalbards-miljovernfond/ | 2026-11-14 |
+| Published personal refund form: initial access screen only read on 2026-10-31; not reopened on 14 Nov (the page builds by script) | https://skjema.no/sysselmesteren/ref_miljoavgift | 2026-10-31 |
 
 Not yet confirmed: The current application of each aviation-tariff exception incorporated by regulation §3; carrier/operator settlement forms and remittance calendar; refund fields and submission receipt beyond the privacy/access screen. No specific exception, unpublished form box, processing time or automatic sanction amount is invented. The ordinary charge and published resident refund procedure are supplied; these limits remain explicit.

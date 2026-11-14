@@ -3,12 +3,13 @@ name: mg-company-formation
 description: "Madagascar 2026 formation preparation for SARL/SARLU using official EDBM instructions, capital allocation and tax-registration handoff; limited scope."
 jurisdiction: MG
 tax_year: 2026
-last_updated: 2026-11-01
-version: 1.0
+last_updated: 2026-11-14
+version: 1.1
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: formation
 tier: 2
 domain: formation
+type: filing-howto
 ---
 
 # Madagascar company formation: SARL dossier and tax handoff

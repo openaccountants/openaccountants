@@ -2,17 +2,18 @@
 name: sj-svalbard-payroll-tax
 description: >
   Calculate and administer Svalbard salary withholding for 2026 for resident employees and qualifying temporary workers. Covers gross salary, holiday pay, directors fees, pensions and specified benefits; the shared annual twelve-basic-amount threshold; multiple employers; standard housing, car and subsistence valuations; and the new youth allowance administered through refunds. Separates employee insurance contributions from the zero employer contribution rate and links to membership rules. Includes reporting, next-working-day remittance, corrections, departure accruals, penalties and two reproducible payroll calculations. Use for Svalbard payroll, a-melding, noncash benefits, wage tax and youth refunds. Jan Mayen and specialist project regimes are excluded. This source-cited draft awaits licensed professional review.
-version: 0.3
+version: 0.4
 jurisdiction: SJ
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
+type: computation
 ---
 
-# Svalbard: payroll withholding in 2026 v0.3
+# Svalbard: payroll withholding in 2026 v0.4
 
 > **Source-cited draft.** Tax year 2026, checked 24 October 2026. General reference for working papers; a qualified professional must review the facts and filing position. Independent AI review does not confer accountant review.
 
@@ -25,7 +26,7 @@ Employers paying remuneration within [Svalbard Act §§2-1, 2-2, 3-1 and 5-2](ht
 | Item | 2026 amount | Official source |
 |---|---:|---|
 | Income tax on gross band income | 8% through 12 G; 22% above | [Act §3-1](https://lovdata.no/dokument/NL/lov/1996-11-29-68); [decision §3(a)](https://lovdata.no/dokument/STV/forskrift/2025-12-19-2780) |
-| Annual band | 12 × NOK 136,549 = NOK 1,638,588 | [Act §3-1, last G fixed for year](https://lovdata.no/dokument/NL/lov/1996-11-29-68); [NAV](https://www.nav.no/grunnbelopet) |
+| Annual band | 12 × NOK 136,549 = NOK 1,638,588 (computed) | [Act §3-1, last G fixed for year](https://lovdata.no/dokument/NL/lov/1996-11-29-68); [NAV](https://www.nav.no/grunnbelopet) |
 | Youth qualifying earnings allowance | NOK 100,000; age 13–19 at year end | [Act §3-3](https://lovdata.no/dokument/NL/lov/1996-11-29-68); [2026 wage guidance](https://www.skatteetaten.no/person/skatt/hjelp-til-riktig-skatt/svalbard/skatt-lonn/) |
 | Ordinary salary insurance / pension insurance | 7.6% / 5.1%, subject to membership and statutory class | [2026 contribution decision §§6–7](https://lovdata.no/dokument/STV/forskrift/2025-12-18-2748); [National Insurance Act §23-3](https://lovdata.no/dokument/NL/lov/1997-02-28-19/KAPITTEL_8) |
 | Employer contribution in statutory Svalbard cases | 0% | [2026 contribution decision §3](https://lovdata.no/dokument/STV/forskrift/2025-12-18-2748) |

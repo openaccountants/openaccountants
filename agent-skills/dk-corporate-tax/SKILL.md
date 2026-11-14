@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/dk-corporate-tax"
   jurisdiction: "DK"
   tax_year: "2026"
-  last_updated: "2026-11-01"
+  last_updated: "2026-11-14"
 ---
 
-# Denmark: corporate income tax (selskabsskat) v0.2
+# Denmark: corporate income tax (selskabsskat) v0.3
 
 > **General reference only.** This skill is general tax reference material for AI-assisted workflows. It has not been reviewed for any specific company's facts, elections, deadlines or filings. Do not rely on it to file, pay or take a tax position without review by a qualified professional in Denmark.
 
@@ -36,23 +36,23 @@ See also: dk-income-tax (individuals and the self-employed), dk-capital-gains (i
 | Item | Rate or amount | Tax year | Source |
 |---|---|---|---|
 | Corporate income tax (selskabsskat) | 22% of taxable income | 2026 | SEL § 17, stk. 1; https://svmn.dk/tal-og-metode/satser/satser-og-beloebsgraenser-i-lovgivningen/selskabsskatteloven |
-| Financial companies (banks, mortgage credit, insurers, investment firms and others listed in § 17 A, stk. 3) | Taxable income multiplied by 26/22, so an effective 26% | 2026 | SEL § 17 A; svmn.dk table (above) |
+| Financial companies (banks, mortgage credit, insurers, investment firms and others listed in § 17 A, stk. 3) | Taxable income multiplied by 26/22, so an effective 26% | 2026 | SEL § 17 A; svmn.dk table (above); https://svmn.dk/tal-og-metode/satser/satser-og-beloebsgraenser-i-lovgivningen/selskabsskatteloven |
 | Taxable income rounded down | To the nearest DKK 100 before tax is computed | 2026 | SEL § 22; https://www.retsinformation.dk/eli/lta/2025/279 |
-| Local or trade tax on profit | None. 14.24% of the corporate tax collected is passed to the municipalities, but the company pays only the 22% | 2026 | SEL § 23, stk. 1; svmn.dk table |
-| Loss carry-forward: full offset up to | DKK 21,830,700 (2010 base DKK 15.9m, indexed) | 2026 | SEL § 12, stk. 2; svmn.dk table |
-| Loss carry-forward: offset above that amount | 60% of income above DKK 21,830,700 | 2026 | SEL § 12, stk. 2; svmn.dk table |
+| Local or trade tax on profit | None. 14.24% of the corporate tax collected is passed to the municipalities, but the company pays only the 22% | 2026 | SEL § 23, stk. 1; svmn.dk table; https://svmn.dk/tal-og-metode/satser/satser-og-beloebsgraenser-i-lovgivningen/selskabsskatteloven |
+| Loss carry-forward: full offset up to | DKK 21,830,700 (2010 base DKK 15.9m, indexed) | 2026 | SEL § 12, stk. 2; svmn.dk table; https://svmn.dk/tal-og-metode/satser/satser-og-beloebsgraenser-i-lovgivningen/selskabsskatteloven |
+| Loss carry-forward: offset above that amount | 60% of income above DKK 21,830,700 | 2026 | SEL § 12, stk. 2; svmn.dk table; https://svmn.dk/tal-og-metode/satser/satser-og-beloebsgraenser-i-lovgivningen/selskabsskatteloven |
 | Thin capitalisation (§ 11) | Applies only if controlled debt exceeds DKK 10m; debt to equity 4:1 | 2026 | SEL § 11; https://www.retsinformation.dk/eli/lta/2025/279 |
-| Asset test (§ 11 B): net financing expenses not restricted below | DKK 21.3m | 2026 | SEL § 11 B, stk. 1; svmn.dk table |
-| Standard rate for the § 11 B asset test | 4.2% | 2026 | SEL § 11 B, stk. 2; svmn.dk table |
-| EBITDA rule (§ 11 C): cap on net borrowing costs | 30% of taxable EBITDA; costs up to DKK 22,313,400 always deductible | 2026 | SEL § 11 C, stk. 1-2; svmn.dk table |
-| Acontoskat (on-account tax), ordinary | 50% of the average of the last three years' tax, in two equal instalments; amounts in whole DKK 1,000; not charged below DKK 2,000 | 2026 | SEL § 29 A, stk. 2; svmn.dk table |
+| Asset test (§ 11 B): net financing expenses not restricted below | DKK 21.3m | 2026 | SEL § 11 B, stk. 1; svmn.dk table; https://svmn.dk/tal-og-metode/satser/satser-og-beloebsgraenser-i-lovgivningen/selskabsskatteloven |
+| Standard rate for the § 11 B asset test | 4.2% | 2026 | SEL § 11 B, stk. 2; svmn.dk table; https://svmn.dk/tal-og-metode/satser/satser-og-beloebsgraenser-i-lovgivningen/selskabsskatteloven |
+| EBITDA rule (§ 11 C): cap on net borrowing costs | 30% of taxable EBITDA; costs up to DKK 22,313,400 always deductible | 2026 | SEL § 11 C, stk. 1-2; svmn.dk table; https://svmn.dk/tal-og-metode/satser/satser-og-beloebsgraenser-i-lovgivningen/selskabsskatteloven |
+| Acontoskat (on-account tax), ordinary | 50% of the average of the last three years' tax, in two equal instalments; amounts in whole DKK 1,000; not charged below DKK 2,000 | 2026 | SEL § 29 A, stk. 2; svmn.dk table; https://svmn.dk/tal-og-metode/satser/satser-og-beloebsgraenser-i-lovgivningen/selskabsskatteloven |
 | Restskattetillæg (surcharge on residual tax) | 6.6% for income year 2025. The 2026 rate is published by 15 December 2026 and is capped at 10% | 2025 (2026 not yet set) | SEL § 29 B, stk. 10 and 12; https://info.skat.dk/data.aspx?oid=2459998 |
 | Credit (godtgørelse) on overpaid tax | 2.8% for income year 2025 (cap 5%) | 2025 (2026 not yet set) | SEL § 29 B, stk. 8; https://info.skat.dk/data.aspx?oid=2459998 |
 | Surcharge on voluntary acontoskat paid after 20 March and by 20 November | 0.7% for 2025 | 2025 (2026 not yet set) | SEL § 29 B, stk. 9; https://info.skat.dk/data.aspx?oid=2459998 |
 | Surcharge on voluntary acontoskat paid after 20 November and by 1 February | 1.3% for 2025 | 2025 (2026 not yet set) | SEL § 29 B, stk. 11; https://info.skat.dk/data.aspx?oid=2459998 |
 | Tax depreciation, plant and machinery (driftsmidler) | Up to 25% a year on the declining pool balance | 2026 | Afskrivningsloven § 5; https://svmn.dk/tal-og-metode/satser/satser-og-beloebsgraenser-i-lovgivningen/afskrivningsloven |
-| Small assets written off at once (småaktiver) | Cost up to DKK 36,000 | 2026 | Afskrivningsloven § 6; svmn.dk afskrivningsloven table |
-| Buildings and installations | Up to 3% a year straight line (4% if acquired before 1 January 2023) | 2026 | Afskrivningsloven § 17, stk. 1; svmn.dk afskrivningsloven table |
+| Small assets written off at once (småaktiver) | Cost up to DKK 36,000 | 2026 | Afskrivningsloven § 6; svmn.dk afskrivningsloven table; https://svmn.dk/tal-og-metode/satser/satser-og-beloebsgraenser-i-lovgivningen/afskrivningsloven |
+| Buildings and installations | Up to 3% a year straight line (4% if acquired before 1 January 2023) | 2026 | Afskrivningsloven § 17, stk. 1; svmn.dk afskrivningsloven table; https://svmn.dk/tal-og-metode/satser/satser-og-beloebsgraenser-i-lovgivningen/afskrivningsloven |
 | Late filing skattetillæg (oplysningsskema) | DKK 400 per day, at most DKK 10,000 | 2026 | Skattekontrolloven § 73, stk. 1, as amended by lov nr. 16 of 14 January 2025; https://www.retsinformation.dk/eli/lta/2025/16 |
 | Late payment interest (Opkrævningsloven § 7) | Basis rate 0.1% plus 0.85 percentage points, so 0.95% a month, calculated daily | 2026 | Opkrævningsloven § 7, stk. 1, as amended by lov nr. 1694 of 30 December 2024; https://info.skat.dk/data.aspx?oid=2459995 |
 | Pillar Two | In force: 15% global minimum tax for groups with revenue of at least EUR 750m in two of the four prior years (minimumsbeskatningsloven) | 2026 | https://skat.dk/erhverv/selskaber-fonde-og-foreninger/selskaber-og-fonde/global-minimumsskat-for-store-koncerner-globe |
@@ -228,4 +228,4 @@ Not yet confirmed: the 2026 restskattetillæg, godtgørelse and voluntary aconto
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-01. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `dk-corporate-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/dk-corporate-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `dk-corporate-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/dk-corporate-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

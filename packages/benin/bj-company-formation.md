@@ -3,15 +3,16 @@ name: bj-company-formation
 description: "Prepare a Benin company registration file and capital comparison for an ordinary SARL, SUARL or SA in 2026. Use this Guide to identify the legal form, national SARL capital rules, OHADA capital-payment and audit conditions, published APIEx fees and required registration documents. It distinguishes share capital from administrative fees and provides two executable comparisons. Other forms, regulated activities, foreign-document requirements and annual compliance need their own confirmed instructions. The output is a prepared packet and evidence checklist. Authenticated submission, payment, registration acceptance and professional attestation are not established. Trigger phrases include Benin company formation, SARL capital, SA registration, APIEx and incorporation documents."
 jurisdiction: BJ
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: formation
-version: 0.2
+version: 0.3
 tier: 2
 domain: formation
+type: filing-howto
 ---
 
-# Benin SARL and SA formation working paper v0.2
+# Benin SARL and SA formation working paper v0.3
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 

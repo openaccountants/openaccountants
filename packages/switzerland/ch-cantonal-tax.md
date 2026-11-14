@@ -1,14 +1,15 @@
 ---
 name: ch-cantonal-tax
 description: "Swiss cantonal and communal income and wealth tax on individuals for tax year 2026, from the StHG, the ESTV tables and cantonal sources. Covers how the tax is built (simple tax from the cantonal tariff, times the cantonal, communal and church multipliers), the 2026 multipliers in all 26 cantonal capitals, the Zurich and Zug 2026 tariffs, wealth tax thresholds, deductions that differ by canton (commuting caps, childcare), filing deadlines for Zurich, Zug, Bern, Basel-Stadt, Geneva and Vaud, the 31 December rule when moving between cantons, interest and penalties. Two worked examples: CHF 100,000 taxable income in Zurich city and in Zug city. Trigger on: Kantonssteuer, Gemeindesteuer, Steuerfuss, einfache Steuer, Kirchensteuer, impôt cantonal et communal, centimes additionnels, Vermögenssteuer, moving canton, Swiss income tax by canton. Out of scope: ch-federal-income-tax, ch-payroll (tax at source), ch-cross-border, ch-lump-sum, ch-corporate-income-tax."
-version: 2.3
+version: 2.4
 jurisdiction: CH
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
+type: computation
 ---
 
 # Switzerland: cantonal and communal income and wealth tax (2026)
@@ -41,34 +42,34 @@ Most cantons state the multipliers as a percentage of the simple tax. Some (for 
 
 **2026 multipliers in the cantonal capitals (individuals, income and wealth).** Source: [ESTV, Steuersatz und Steuerfuss, January 2026, table 3.4.1](https://www.estv2.admin.ch/stp/ds/e-steuersatz-steuerfuss-de.pdf). Other communes in the same canton have other multipliers.
 
-| Canton | Capital | Canton | Commune | Church, reformed | Church, Roman Catholic | Note |
-|---|---|---|---|---|---|---|
-| ZH | Zurich | 95% | 119% | 10% | 10% | Christian Catholic 14% ([Stadt Zürich](https://www.stadt-zuerich.ch/de/lebenslagen/steuern/natuerliche-personen/steuerberechnung.html)) |
-| BE | Bern | 2.975 | 1.54 | 0.184 | 0.190 | in units of the simple tax |
-| LU | Lucerne | 1.45 | 1.45 | 0.25 | 0.25 | units |
-| UR | Altdorf | 100% | 95% | 115% | 82% | |
-| SZ | Schwyz | 110% | 175% | 25% | 26% | commune includes the district |
-| OW | Sarnen | 3.25 | 3.86 | 0.54 | 0.54 | units |
-| NW | Stans | 2.66 | 2.35 | 0.26 | 0.40 | units |
-| GL | Glarus | 58% | 61% | 7.5% | 8% | plus a 1.7% building surcharge on the simple tax |
-| ZG | Zug | 78% | 52% | 6% | 5.95% | ESTV prints the 2025 commune and church figures (52.11%, 7.5%, 7%); 2026 from the [Zug tax office](https://zg.ch/dam/jcr:24fb8832-3383-4718-9a48-9461bc7501fc/Steuerf%C3%BCsse%202026_effektiv%2021.1.26.pdf) |
-| FR | Fribourg | 96% (wealth 100%) | 80% | 9% (wealth 10%) | 7% (wealth 20%) | |
-| SO | Solothurn | 104% | 107% | 16% | 21% | ESTV shows the 2025 figures |
-| BS | Basel | 100% | none | 8% of the cantonal income tax | 8% of the cantonal income tax | the city levies no communal tax; the canton's tax includes it |
-| BL | Liestal | 100% | 65% | 0.55% of taxable income; on wealth ESTV prints 0.05 (footnote: per cent or per mille) | 6.75% of the cantonal tax | |
-| SH | Schaffhausen | 76% | 83% | 13% | 13% | |
-| AR | Herisau | 3.3 | 4.1 | 0.60 | 0.47 | units |
-| AI | Appenzell | 96% | 56% | 10% | 10% | ESTV shows the 2025 figures |
-| SG | St. Gallen | 105% | 138% | 25% | 26% | |
-| GR | Chur | 92% | 88% of the simple cantonal tax | 14.5% | 9% | |
-| AG | Aarau | 103% | 96% | 15% | 18% | |
-| TG | Frauenfeld | 109% | 142% | 16% | 16% | |
-| TI | Bellinzona | 100% | 93% | none | none | |
-| VD | Lausanne | 155% | 78.5% | none | none | |
-| VS | Sion | no multiplier: tariff applies directly | 1.10 | 3% of the communal tax | 3% of the communal tax | |
-| NE | Neuchâtel | 124% | 65% | none | none | |
-| GE | Geneva | 48.5% | 45.49% | none | none | ESTV footnote: a deduction of 12% of the cantonal tax at 147.5% |
-| JU | Delémont | 2.85 | 1.90 | 8.1% | 6.4% | units |
+| Canton | Capital | Canton | Commune | Church, reformed | Church, Roman Catholic | Note | Source |
+|---|---|---|---|---|---|---|---|
+| ZH | Zurich | 95% | 119% | 10% | 10% | Christian Catholic 14% ([Stadt Zürich](https://www.stadt-zuerich.ch/de/lebenslagen/steuern/natuerliche-personen/steuerberechnung.html)) | [ESTV, Steuersatz und Steuerfuss, table 3.4.1](https://www.estv2.admin.ch/stp/ds/e-steuersatz-steuerfuss-de.pdf) |
+| BE | Bern | 2.975 | 1.54 | 0.184 | 0.190 | in units of the simple tax | same |
+| LU | Lucerne | 1.45 | 1.45 | 0.25 | 0.25 | units | same |
+| UR | Altdorf | 100% | 95% | 115% | 82% | | same |
+| SZ | Schwyz | 110% | 175% | 25% | 26% | commune includes the district | same |
+| OW | Sarnen | 3.25 | 3.86 | 0.54 | 0.54 | units | same |
+| NW | Stans | 2.66 | 2.35 | 0.26 | 0.40 | units | same |
+| GL | Glarus | 58% | 61% | 7.5% | 8% | plus a 1.7% building surcharge on the simple tax | same |
+| ZG | Zug | 78% | 52% | 6% | 5.95% | ESTV prints the 2025 commune and church figures (52.11%, 7.5%, 7%); 2026 from the [Zug tax office](https://zg.ch/dam/jcr:24fb8832-3383-4718-9a48-9461bc7501fc/Steuerf%C3%BCsse%202026_effektiv%2021.1.26.pdf) | same |
+| FR | Fribourg | 96% (wealth 100%) | 80% | 9% (wealth 10%) | 7% (wealth 20%) | | [ESTV, Steuersatz und Steuerfuss, table 3.4.1](https://www.estv2.admin.ch/stp/ds/e-steuersatz-steuerfuss-de.pdf) |
+| SO | Solothurn | 104% | 107% | 16% | 21% | ESTV shows the 2025 figures | [ESTV, Steuersatz und Steuerfuss, table 3.4.1](https://www.estv2.admin.ch/stp/ds/e-steuersatz-steuerfuss-de.pdf) |
+| BS | Basel | 100% | none | 8% of the cantonal income tax | 8% of the cantonal income tax | the city levies no communal tax; the canton's tax includes it | [ESTV, Steuersatz und Steuerfuss, table 3.4.1](https://www.estv2.admin.ch/stp/ds/e-steuersatz-steuerfuss-de.pdf) |
+| BL | Liestal | 100% | 65% | 0.55% of taxable income; on wealth ESTV prints 0.05 (footnote: per cent or per mille) | 6.75% of the cantonal tax | | [ESTV, Steuersatz und Steuerfuss, table 3.4.1](https://www.estv2.admin.ch/stp/ds/e-steuersatz-steuerfuss-de.pdf) |
+| SH | Schaffhausen | 76% | 83% | 13% | 13% | | [ESTV, Steuersatz und Steuerfuss, table 3.4.1](https://www.estv2.admin.ch/stp/ds/e-steuersatz-steuerfuss-de.pdf) |
+| AR | Herisau | 3.3 | 4.1 | 0.60 | 0.47 | units | [ESTV, Steuersatz und Steuerfuss, table 3.4.1](https://www.estv2.admin.ch/stp/ds/e-steuersatz-steuerfuss-de.pdf) |
+| AI | Appenzell | 96% | 56% | 10% | 10% | ESTV shows the 2025 figures | [ESTV, Steuersatz und Steuerfuss, table 3.4.1](https://www.estv2.admin.ch/stp/ds/e-steuersatz-steuerfuss-de.pdf) |
+| SG | St. Gallen | 105% | 138% | 25% | 26% | | [ESTV, Steuersatz und Steuerfuss, table 3.4.1](https://www.estv2.admin.ch/stp/ds/e-steuersatz-steuerfuss-de.pdf) |
+| GR | Chur | 92% | 88% of the simple cantonal tax | 14.5% | 9% | | [ESTV, Steuersatz und Steuerfuss, table 3.4.1](https://www.estv2.admin.ch/stp/ds/e-steuersatz-steuerfuss-de.pdf) |
+| AG | Aarau | 103% | 96% | 15% | 18% | | [ESTV, Steuersatz und Steuerfuss, table 3.4.1](https://www.estv2.admin.ch/stp/ds/e-steuersatz-steuerfuss-de.pdf) |
+| TG | Frauenfeld | 109% | 142% | 16% | 16% | | [ESTV, Steuersatz und Steuerfuss, table 3.4.1](https://www.estv2.admin.ch/stp/ds/e-steuersatz-steuerfuss-de.pdf) |
+| TI | Bellinzona | 100% | 93% | none | none | | [ESTV, Steuersatz und Steuerfuss, table 3.4.1](https://www.estv2.admin.ch/stp/ds/e-steuersatz-steuerfuss-de.pdf) |
+| VD | Lausanne | 155% | 78.5% | none | none | | [ESTV, Steuersatz und Steuerfuss, table 3.4.1](https://www.estv2.admin.ch/stp/ds/e-steuersatz-steuerfuss-de.pdf) |
+| VS | Sion | no multiplier: tariff applies directly | 1.10 | 3% of the communal tax | 3% of the communal tax | | [ESTV, Steuersatz und Steuerfuss, table 3.4.1](https://www.estv2.admin.ch/stp/ds/e-steuersatz-steuerfuss-de.pdf) |
+| NE | Neuchâtel | 124% | 65% | none | none | | [ESTV, Steuersatz und Steuerfuss, table 3.4.1](https://www.estv2.admin.ch/stp/ds/e-steuersatz-steuerfuss-de.pdf) |
+| GE | Geneva | 48.5% | 45.49% | none | none | ESTV footnote: a deduction of 12% of the cantonal tax at 147.5% | [ESTV, Steuersatz und Steuerfuss, table 3.4.1](https://www.estv2.admin.ch/stp/ds/e-steuersatz-steuerfuss-de.pdf) |
+| JU | Delémont | 2.85 | 1.90 | 8.1% | 6.4% | units | [ESTV, Steuersatz und Steuerfuss, table 3.4.1](https://www.estv2.admin.ch/stp/ds/e-steuersatz-steuerfuss-de.pdf) |
 
 **Other figures.**
 
@@ -274,25 +275,25 @@ The edge case: Zug's city multiplier was 52.11% in 2025 (54% less a 3.5% rebate)
 | Source | URL | Read on |
 |---|---|---|
 | StHG, SR 642.14, version of 1 January 2025 (latest consolidated version on Fedlex), art. 1 to 4b, 7, 9, 11, 13 to 17, 42, 55 to 57 | https://www.fedlex.admin.ch/eli/cc/1991/1256_1256_1256/de | 2026-10-23 |
-| ESTV, Steuersatz und Steuerfuss (law as at 1 January 2026), sections 3.1, 3.3.1 and table 3.4.1 (multipliers in the cantonal capitals 2026) | https://www.estv2.admin.ch/stp/ds/e-steuersatz-steuerfuss-de.pdf | 2026-10-23 |
+| ESTV, Steuersatz und Steuerfuss (law as at 1 January 2026), sections 3.1, 3.3.1 and table 3.4.1 (multipliers in the cantonal capitals 2026) | https://www.estv2.admin.ch/stp/ds/e-steuersatz-steuerfuss-de.pdf | 2026-11-14 |
 | ESTV, Kantonsblatt Zürich (February 2026), § 2, 16, 20, 26, 31, 34, 35, 37, 47 StG | https://www.estv2.admin.ch/stp/kb/zh-de.pdf | 2026-10-23 |
 | ESTV, Kantonsblatt Zug (February 2026), § 2, 25, 30, 33, 35, 37, 44 StG | https://www.estv2.admin.ch/stp/kb/zg-de.pdf | 2026-10-23 |
 | ESTV, Kantonsblatt Bern (February 2026), art. 31, 38, 65 StG | https://www.estv2.admin.ch/stp/kb/be-de.pdf | 2026-10-23 |
 | ESTV, Kantonsblatt Basel-Stadt (February 2026), § 27, 32, 36a, 49 StG | https://www.estv2.admin.ch/stp/kb/bs-de.pdf | 2026-10-23 |
 | ESTV, Feuille cantonale Genève (February 2026), art. 29, 35, 58 LIPP; RCEPF 2026 | https://www.estv2.admin.ch/stp/kb/ge-fr.pdf | 2026-10-23 |
 | ESTV, Feuille cantonale Vaud (February 2026), art. 30, 37 LI; wealth threshold | https://www.estv2.admin.ch/stp/kb/vd-fr.pdf | 2026-10-23 |
-| Stadt Zürich, Steuerberechnung und Steuerfuss (2026 multipliers) | https://www.stadt-zuerich.ch/de/lebenslagen/steuern/natuerliche-personen/steuerberechnung.html | 2026-10-23 |
-| Kantonales Steueramt Zürich, ZStB 133.1, Aufforderung 2027 (2026 returns) | https://www.zh.ch/content/dam/zhweb/bilder-dokumente/themen/steuern-finanzen/steuern/vertreter/steuerbuch/zstb-nr-133-1/ZStB-Nr-133-1_Aufforderung-2027.pdf | 2026-10-23 |
+| Stadt Zürich, Steuerberechnung und Steuerfuss: read for 2026 multipliers | https://www.stadt-zuerich.ch/de/lebenslagen/steuern/natuerliche-personen/steuerberechnung.html | 2026-10-23 |
+| Kantonales Steueramt Zürich, ZStB 133.1, Aufforderung 2027: read for 2026 returns | https://www.zh.ch/content/dam/zhweb/bilder-dokumente/themen/steuern-finanzen/steuern/vertreter/steuerbuch/zstb-nr-133-1/ZStB-Nr-133-1_Aufforderung-2027.pdf | 2026-10-23 |
 | Kantonales Steueramt Zürich, Wegleitung zur Steuererklärung 2026 (part-year), payment, interest and penalties | https://www.zh.ch/content/dam/zhweb/bilder-dokumente/themen/steuern-finanzen/steuern/natuerlichepersonen/2026/est-wegleitungen-uj/305%20Wegleitung%20ZH%202026%20UJ%20bf.pdf | 2026-10-23 |
-| Steuerverwaltung Zug, Steuerfüsse der Gemeinden 2023 to 2026 (21 January 2026) | https://zg.ch/dam/jcr:24fb8832-3383-4718-9a48-9461bc7501fc/Steuerf%C3%BCsse%202026_effektiv%2021.1.26.pdf | 2026-10-23 |
-| Steuerverwaltung Zug, Kantonssteuer Grundtarif gültig Steuerperiode 2026 | https://zg.ch/dam/jcr:96c7eef4-eb2f-4f8a-a4c4-dad209249598/Grundtarif%202001%20bis%202026.pdf | 2026-10-23 |
-| Kanton Zug, vote explanation, Steuergesetz change of 30 November 2025 (multiplier 78% for 2026 to 2029) | https://cdn.zg.ch/dam/jcr:09c43d5c-61d7-4ca1-b825-62f5cba55fba/20251130_Erl%C3%A4uterung%20KA2_%C3%84nderung_Steuergesetz-9_UA.pdf | 2026-10-23 |
-| Kanton Zug, eTax.zug 2025 (filing deadline 30 April 2026) | https://zg.ch/news/news~_2026_2_etax-zug-2025-neue-deklarationsloesung-fuer-natuerliche-personen-ist-online~.html | 2026-10-23 |
-| Steuerverwaltung Bern, TaxInfo, Abgabefrist | https://www.taxinfo.sv.fin.be.ch/taxinfo/1cce120a-05da-45e8-8968-b66ae236fee5 | 2026-10-23 |
-| Kanton Bern, media release on the 2025 returns | https://www.be.ch/de/start/dienstleistungen/medien/medienmitteilungen.html?newsID=68239ab2-4062-4a28-a910-4a9b7bd0dbf4 | 2026-10-23 |
-| Kanton Basel-Stadt, Steuererklärung als natürliche Person einreichen | https://www.bs.ch/themen/arbeit-und-steuern/steuererklaerung/steuererklaerung-als-natuerliche-person-einreichen | 2026-10-23 |
-| République et canton de Genève, Remplir ma déclaration d'impôt | https://www.ge.ch/remplir-ma-declaration-impot-tant-que-particulier | 2026-10-23 |
-| Canton de Vaud, Demander un délai pour déposer ma déclaration d'impôt | https://www.vd.ch/etat-droit-finances/impots/impots-pour-les-individus/demander-un-delai-pour-deposer-ma-declaration-dimpot | 2026-10-23 |
-| BSV, Wichtige Masszahlen berufliche Vorsorge 2025/2026, no. 9 (pillar 3a) | https://www.bsv.admin.ch/dam/de/sd-web/GZplHByBJoFc/Internet_Masszahlenarticles_25_26_d.pdf | 2026-10-23 |
+| Steuerverwaltung Zug, Steuerfüsse der Gemeinden 2023 to 2026 (21 January 2026): read for the rules and figures this Guide cites from it | https://zg.ch/dam/jcr:24fb8832-3383-4718-9a48-9461bc7501fc/Steuerf%C3%BCsse%202026_effektiv%2021.1.26.pdf | 2026-10-23 |
+| Steuerverwaltung Zug, Kantonssteuer Grundtarif gültig Steuerperiode 2026: read for the rules and figures this Guide cites from it | https://zg.ch/dam/jcr:96c7eef4-eb2f-4f8a-a4c4-dad209249598/Grundtarif%202001%20bis%202026.pdf | 2026-10-23 |
+| Kanton Zug, vote explanation, Steuergesetz change of 30 November 2025: read for multiplier 78% for 2026 to 2029 | https://cdn.zg.ch/dam/jcr:09c43d5c-61d7-4ca1-b825-62f5cba55fba/20251130_Erl%C3%A4uterung%20KA2_%C3%84nderung_Steuergesetz-9_UA.pdf | 2026-10-23 |
+| Kanton Zug, eTax.zug 2025: read for filing deadline 30 April 2026 | https://zg.ch/news/news~_2026_2_etax-zug-2025-neue-deklarationsloesung-fuer-natuerliche-personen-ist-online~.html | 2026-10-23 |
+| Steuerverwaltung Bern, TaxInfo, Abgabefrist: read for the rules and figures this Guide cites from it | https://www.taxinfo.sv.fin.be.ch/taxinfo/1cce120a-05da-45e8-8968-b66ae236fee5 | 2026-10-23 |
+| Kanton Bern, media release on the 2025 returns: read for the rules and figures this Guide cites from it | https://www.be.ch/de/start/dienstleistungen/medien/medienmitteilungen.html?newsID=68239ab2-4062-4a28-a910-4a9b7bd0dbf4 | 2026-10-23 |
+| Kanton Basel-Stadt, Steuererklärung als natürliche Person einreichen: read for the rules and figures this Guide cites from it | https://www.bs.ch/themen/arbeit-und-steuern/steuererklaerung/steuererklaerung-als-natuerliche-person-einreichen | 2026-10-23 |
+| République et canton de Genève, Remplir ma déclaration d'impôt: read for the rules and figures this Guide cites from it | https://www.ge.ch/remplir-ma-declaration-impot-tant-que-particulier | 2026-10-23 |
+| Canton de Vaud, Demander un délai pour déposer ma déclaration d'impôt: read for the rules and figures this Guide cites from it | https://www.vd.ch/etat-droit-finances/impots/impots-pour-les-individus/demander-un-delai-pour-deposer-ma-declaration-dimpot | 2026-10-23 |
+| BSV, Wichtige Masszahlen berufliche Vorsorge 2025/2026, no. 9: read for pillar 3a | https://www.bsv.admin.ch/dam/de/sd-web/GZplHByBJoFc/Internet_Masszahlenarticles_25_26_d.pdf | 2026-10-23 |
 
 Not yet confirmed: the 2026 filing dates for Zug, Basel-Stadt and Bern (only the 2025-return dates were published; the rules suggest 30 April, 31 March and 15 March / 15 May 2027); filing dates for the other 20 cantons; the 2026 multipliers of Solothurn, Appenzell Innerrhoden and other communes not in the tables; whether Basel-Stadt and Bern indexed any deduction for 2026 beyond the amounts shown in the February 2026 Kantonsblätter; the Geneva, Vaud, Bern and Basel-Stadt 2026 income tariffs (not worked here); the Vaud commuting rules beyond the flat rates; due dates, instalments and interest rates outside Zurich; the Zurich rule for church tax when someone leaves the church during the year; ESTV footnote detail for Basel-Landschaft church tax and the Geneva 12% deduction.

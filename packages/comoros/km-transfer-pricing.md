@@ -2,14 +2,15 @@
 name: km-transfer-pricing
 description: >
   Comoros transfer pricing for tax year 2026, from the Amending Finance Law 2024 (Law 24-013/AU). Covers the arm's length rule in CGI article 31, the 50% control test, the privileged tax regime test in article 31 bis, the annual transfer pricing declaration in article 43 bis, the audit information request in LPF L.21, the documentation duty in L.21 bis, and the fines in L.101 bis and L.114 bis. Use for questions such as: does my Comoros company file a transfer pricing return, what is the KMF 80,000,000 threshold, what is the fine for missing documentation. Out of scope: company tax rates and registration (see km-registration-and-tax-clearance), audit procedure generally (see km-electronic-filing-and-tax-procedure). Not reviewed by an accountant. The ministerial order on documentation content was not found.
-version: 0.1
+version: 0.2
 jurisdiction: KM
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: transfer-pricing
+type: situation-rules
 ---
 
 # Comoros: transfer pricing

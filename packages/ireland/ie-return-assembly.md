@@ -1,17 +1,18 @@
 ---
 name: ie-return-assembly
 description: "Use this skill last, to put together an Irish individual's income tax return for tax year 2026 from the work done in the other Ireland skills. It decides Form 11 or Form 12, lists the 2026 figures each part uses (rate bands EUR 44,000 single and EUR 53,000 married at 20%, then 40%; main credits EUR 2,000; USC bands to 8%; PRSI Class S at 4.2375%; CGT 33% or 31% by disposal date), adds income tax, USC and PRSI, takes off PAYE and preliminary tax, and sets out the pay and file dates (31 October 2027 for the 2026 Form 11), the late filing surcharge and interest. Trigger on: assemble Irish return, Form 11 2026, Form 12 2026, ROS pay and file, Statement of Liability, balance due Ireland. Out of scope: companies and CT1 (ie-corporation-tax), VAT (ie-vat-return), CAT (ie-cat)."
-version: 1.2
+version: 1.4
 jurisdiction: IE
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
+type: situation-rules
 ---
 
-# Ireland: assembling the 2026 individual tax return (Form 11 and Form 12), v1.2
+# Ireland: assembling the 2026 individual tax return (Form 11 and Form 12), v1.4
 
 This skill is the last step for an individual's Irish return for tax year 2026. The tax year is the calendar year. The authority is the Revenue Commissioners. It does not redo the work of the other skills. It takes their results, checks that they fit together, adds them up, and produces a working paper, the amount to pay and the dates. It does not file anything: the taxpayer or their agent files on ROS or myAccount.
 
@@ -212,4 +213,4 @@ expected:
 
 Not yet confirmed: the ROS pay and file extension date for 2026 returns (due in 2027), which Revenue has not announced; whether the Finance (No. 2) Act 2026 is enacted with the 31% CGT rate unchanged; the earlier version's rule that credits above the year's liability are refunded only where they are PAYE or professional services withholding tax backed by the employment detail summary or Form F45 or F50 certificates, which no saved Revenue source or section of the Taxes Consolidation Act 1997 checked here states in those terms.
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.

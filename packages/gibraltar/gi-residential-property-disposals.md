@@ -5,8 +5,8 @@ description: >
 jurisdiction: GI
 category: international
 tax_year: 2026
-last_updated: 2026-10-31
-version: "0.2"
+last_updated: 2026-11-14
+version: "0.3"
 sources:
   - url: "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf"
     title: "Income Tax Act 2010, section 11 and Schedule 1 Part 2; 23 March 2026 consolidation"
@@ -15,6 +15,7 @@ sources:
     title: "Rates of Tax Rules 1989, rule 6; 1 July 2024 consolidation"
     as_of: "2026-10-22"
 tier: 2
+type: computation
 ---
 
 # Gibraltar: income tax on residential-property disposals

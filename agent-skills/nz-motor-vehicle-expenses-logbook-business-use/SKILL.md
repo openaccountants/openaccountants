@@ -1,13 +1,13 @@
 ---
 name: nz-motor-vehicle-expenses-logbook-business-use
-description: "A drafting guide for New Zealand sole traders, partnerships and close companies on working out business use of a motor vehicle by logbook, choosing between the cost and kilometre rate methods, and handling vehicles made available to shareholder-employees."
+description: "A drafting guide for New Zealand sole traders, partnerships and close companies on working out business use of a motor vehicle by logbook, choosing between the actual cost and kilometre rate methods, depreciation and GST on the vehicle, and handling vehicles made available to shareholder-employees under FBT or the close company opt-out. Written for the 2027 income year (1 April 2026 to 31 March 2027), with the 2025-26 kilometre rates for returns being filed now."
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/nz-motor-vehicle-expenses-logbook-business-use"
   jurisdiction: "NZ"
   tax_year: "2026"
-  last_updated: "2026-10-16"
+  last_updated: "2026-11-14"
 ---
 
 # Motor vehicle expenses, logbooks and shareholder-employee vehicles in New Zealand
@@ -155,6 +155,28 @@ The people and amounts are made up. Rates come from the sources linked in each t
 | Tier 2 claim | 2,400 x $0.37 = $888 | same instrument |
 | Deduction | $10,968, with no separate depreciation | [IRD: vehicle expenses](https://www.ird.govt.nz/income-tax/income-tax-for-businesses-and-organisations/types-of-business-expenses/claiming-vehicle-expenses) |
 
+```oa-check
+name: NZ kilometre rates, petrol car, 2025-26
+inputs:
+  total_km: 18000
+  business_share: 0.60
+  tier1_cap: 14000
+  tier1_rate: 1.20
+  tier2_rate: 0.37
+steps:
+  - tier1_km: business_share * min(total_km, tier1_cap)
+  - tier2_km: business_share * max(total_km - tier1_cap, 0)
+  - tier1_claim: tier1_km * tier1_rate
+  - tier2_claim: tier2_km * tier2_rate
+  - deduction: tier1_claim + tier2_claim
+expected:
+  tier1_km: 8400
+  tier2_km: 2400
+  tier1_claim: 10080
+  tier2_claim: 888
+  deduction: 10968
+```
+
 For 2026-27 she must wait for IRD's 2026-27 rates before she can finish the calculation.
 
 **Case 2: no logbook, 2026-27.** Ben, a sole trader, has no logbook. His 2026-27 running costs are $6,400 ([IRD: vehicle expenses](https://www.ird.govt.nz/income-tax/income-tax-for-businesses-and-organisations/types-of-business-expenses/claiming-vehicle-expenses)).
@@ -181,6 +203,34 @@ If Ben believes his business use is higher, he needs a logbook of at least 90 co
 | Depreciation for the year | 30% diminishing value x $23,000 = $6,900 | [IRD: IR265 March 2026](https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir200---ir299/ir265/ir265-march-2026.pdf) |
 | Business share | 65% x $6,900 = $4,485 | [IRD: vehicle expenses](https://www.ird.govt.nz/income-tax/income-tax-for-businesses-and-organisations/types-of-business-expenses/claiming-vehicle-expenses) |
 | Running costs | 65% of fuel, insurance, Warrant of Fitness, repairs and parking | [IRD: use a logbook](https://www.ird.govt.nz/income-tax/income-tax-for-businesses-and-organisations/types-of-business-expenses/claiming-vehicle-expenses/use-a-logbook) |
+
+**Decision for Sam: logbook or no logbook.** With running costs of $4,000 for the year, the logbook gives 65% of running costs plus 65% of depreciation. Without a logbook he would be limited to 25% of running costs. The logbook is worth keeping by the difference below.
+
+```oa-check
+name: NZ actual costs with logbook vs 25 percent no-logbook limit
+inputs:
+  price: 23000
+  dv_rate: 0.30
+  business_share: 0.65
+  running_costs: 4000
+  no_logbook_share: 0.25
+steps:
+  - depreciation: price * dv_rate
+  - dep_business: depreciation * business_share
+  - running_business: running_costs * business_share
+  - with_logbook: dep_business + running_business
+  - without_logbook: running_costs * no_logbook_share
+  - logbook_gain: with_logbook - without_logbook
+expected:
+  depreciation: 6900
+  dep_business: 4485
+  running_business: 2600
+  with_logbook: 7085
+  without_logbook: 1000
+  logbook_gain: 6085
+```
+
+IRD's no-logbook page speaks only of running costs; whether depreciation can also be claimed at 25% without a logbook is not stated there, so the comparison leaves it out.
 
 **Case 5: GST on buying and selling, GST-registered.** Lena buys a car for $34,500 including $4,500 GST ($30,000 excluding GST). Her logbook supports 60% business use ([IRD: GST adjustments](https://www.ird.govt.nz/gst/gst-adjustments)).
 
@@ -239,6 +289,29 @@ Had Kōwhai Ltd opted out in time, it would instead claim only the business shar
 - [ ] For an opt-out: 1 or 2 vehicles only, no other fringe benefits, election made in time, FBT registration cancelled if needed.
 - [ ] Records kept for at least 7 years.
 
+## Sources
+
+| Source | URL | Read on |
+| --- | --- | --- |
+| IRD, Claiming vehicle expenses: read for the two methods, one method while owned, fuel types, the 25% no-logbook limit, home-to-work as private, kilometre rates including depreciation, GST under kilometre rates, and the publication timing of rates | https://www.ird.govt.nz/income-tax/income-tax-for-businesses-and-organisations/types-of-business-expenses/claiming-vehicle-expenses | 2026-11-14 |
+| IRD, Use a logbook: read for the 90 consecutive days, the records to keep, the 3-year life and the 20% change rule | https://www.ird.govt.nz/income-tax/income-tax-for-businesses-and-organisations/types-of-business-expenses/claiming-vehicle-expenses/use-a-logbook | 2026-11-14 |
+| IRD, Kilometre rates 2025-2026: read for the Tier 1 and Tier 2 definitions (14,000 km) and the rates | https://www.ird.govt.nz/income-tax/income-tax-for-businesses-and-organisations/types-of-business-expenses/claiming-vehicle-expenses/kilometre-rates-2025-2026 | 2026-11-14 |
+| IRD Tax Technical, OS 19/04 (KM 2026): read for the 2025-26 rates per km by vehicle type and the instrument dates | https://www.taxtechnical.ird.govt.nz/operational-statements/2026/os-19-04-km-2026 | 2026-11-14 |
+| IRD, Kilometre rates 2026-2027: tried to see whether 2026-27 rates exist (HTTP 404, not yet published) | https://www.ird.govt.nz/income-tax/income-tax-for-businesses-and-organisations/types-of-business-expenses/claiming-vehicle-expenses/kilometre-rates-2026-2027 | 2026-11-14 |
+| IRD guide IR265 (March 2026), General depreciation rates: read for motor vehicles up to 12 seats (30% DV, 21% SL) and Class NA (20% DV, 13.5% SL) | https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir200---ir299/ir265/ir265-march-2026.pdf | 2026-11-14 |
+| IRD, Claiming depreciation: read for the GST-inclusive or exclusive base and Investment Boost from 22 May 2025 (20%) | https://www.ird.govt.nz/income-tax/income-tax-for-businesses-and-organisations/types-of-business-expenses/depreciation/claiming-depreciation | 2026-11-14 |
+| IRD, What you can claim with Investment Boost: read for new and new-to-New Zealand assets | https://www.ird.govt.nz/income-tax/income-tax-for-businesses-and-organisations/types-of-business-expenses/new-assets---investment-boost/what--you-can-claim-with-investment-boost | 2026-11-14 |
+| IRD, Managing depreciation: read for gains and losses on sale split by use, no depreciation in the year of disposal, 7-year records | https://www.ird.govt.nz/income-tax/income-tax-for-businesses-and-organisations/types-of-business-expenses/depreciation/managing-depreciation | 2026-11-14 |
+| IRD, GST adjustments: read for the NZD 10,000 split between principal purpose and apportionment, logbook private use adjustments and the non-taxable supply election | https://www.ird.govt.nz/gst/gst-adjustments | 2026-11-14 |
+| IRD, Change-in-use adjustments for GST: read for adjustment periods by cost, the NZD 1,000 and 10% thresholds and the final adjustment formula | https://www.ird.govt.nz/gst/gst-adjustments/change-in-use-adjustments-for-gst | 2026-11-14 |
+| IRD, Motor vehicles and FBT: read for sole traders not paying FBT, FBT per day available, day length, the 3-month test period and employee-owned vehicles | https://www.ird.govt.nz/employing-staff/deductions-from-other-payments/fringe-benefit-tax/types/motor-vehicles/about | 2026-11-14 |
+| IRD, FBT exemptions for motor vehicles: read for the work-related vehicle test (3,500 kg), emergency call-outs, business travel and unavailable days | https://www.ird.govt.nz/employing-staff/deductions-from-other-payments/fringe-benefit-tax/types/motor-vehicles/exemptions | 2026-11-14 |
+| IRD, Calculating taxable value: read for the formula and the percentages by valuation basis, GST basis and return frequency, including Investment Boost | https://www.ird.govt.nz/employing-staff/deductions-from-other-payments/fringe-benefit-tax/types/motor-vehicles/calculating-taxable-value | 2026-11-14 |
+| IRD, Ways to value: read for the minimum tax book values (NZD 8,333 and 7,317), the 5-year rule and the Investment Boost rates from 1 April 2026 | https://www.ird.govt.nz/employing-staff/deductions-from-other-payments/fringe-benefit-tax/types/motor-vehicles/ways-to-value | 2026-11-14 |
+| IRD, Close companies and FBT: read for income-year FBT returns (NZD 1,000,000 test), election deadlines, due dates and the opt-out conditions | https://www.ird.govt.nz/employing-staff/deductions-from-other-payments/fringe-benefit-tax/close-companies | 2026-11-14 |
+
+Not yet confirmed: kilometre rates for the 2026-27 income year (IRD publishes them after 31 March 2027; its 2026-2027 page returned 404 on 14 November 2026); how Investment Boost interacts with a private-use apportionment; how GST on the purchase price works alongside the kilometre method; whether depreciation may be claimed at the 25% no-logbook limit; the Income Tax Act 2007 text of section DE 12 (legislation.govt.nz refused script access).
+
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-16. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `nz-motor-vehicle-expenses-logbook-business-use` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/nz-motor-vehicle-expenses-logbook-business-use. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `nz-motor-vehicle-expenses-logbook-business-use` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/nz-motor-vehicle-expenses-logbook-business-use. If neither is available, confirm every figure against the official source pages cited above before relying on it.

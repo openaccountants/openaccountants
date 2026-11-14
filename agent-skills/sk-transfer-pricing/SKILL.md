@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/sk-transfer-pricing"
   jurisdiction: "SK"
   tax_year: "2026"
-  last_updated: "2026-10-27"
+  last_updated: "2026-11-14"
 ---
 
-# Slovakia: transfer pricing (2026) v0.3
+# Slovakia: transfer pricing (2026) v0.5
 
 > **Source-cited draft.** No accountant has reviewed this skill yet. The law comes from the consolidated texts on Slov-Lex, the guideline from the Ministry of Finance (mfsr.sk) and the return guidance from the Financial Directorate (financnasprava.sk), read on 23 October 2026 and supplemented by the 27 October 2026 primary checks below. It prepares working papers; it is not authority to file or pay.
 
@@ -308,8 +308,8 @@ expected:
 
 Not yet confirmed: whether a TP adjustment paid abroad is treated as a deemed distribution for withholding; the name of the tax office that handles APAs and corresponding adjustments (the law points to the Financial Directorate's website, which was not read); the Financial Directorate's support pages on TP documentation (podpora.financnasprava.sk returned an error); and the public country-by-country reporting rules in the Accounting Act, not covered here.
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-27. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `sk-transfer-pricing` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/sk-transfer-pricing. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `sk-transfer-pricing` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/sk-transfer-pricing. If neither is available, confirm every figure against the official source pages cited above before relying on it.

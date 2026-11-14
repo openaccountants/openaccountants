@@ -1,14 +1,15 @@
 ---
 name: luxembourg-vat-return
 description: "Luxembourg VAT (TVA) for tax year 2026 in the deep-tax shape: who must charge VAT, the four rates in art. 39 of the VAT law of 12 February 1979 (17%, 14%, 8%, 3%) and the goods and services in annexes A, B and C, the small business franchise under arts. 57 to 57quater (EUR 50,000, tolerance to EUR 55,000, EU SME scheme at EUR 100,000), the filing frequency set by turnover (annual up to EUR 112,000, quarterly to EUR 620,000, monthly above), due dates (before the 15th after the period; annual-only filers before 1 March; annual recap before 1 May), reverse charge, recapitulative statements, fines under art. 77 and interest under art. 85. Trigger on: Luxembourg VAT return, TVA Luxembourg, AED, eCDF, déclaration TVA, régime de franchise, état récapitulatif. Out of scope: income tax of the owner in luxembourg-income-tax; companies in lu-corporate-tax; non-residents in lu-cross-border; funds, SOPARFI and VAT groups (refer)."
-version: 2.2
+version: 2.3
 jurisdiction: LU
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: vat-gst
+type: filing-howto
 ---
 
 # Luxembourg: VAT (TVA), periodic and annual returns (2026)
@@ -162,14 +163,14 @@ expected:
 | Source | URL | Read on |
 |---|---|---|
 | AED, coordinated LTVA at 1 January 2026 (arts. 39, 40, 54, 55, 57 to 57quater, 61, 64, 64bis, 73 to 80, 85; annexes A to C) | https://pfi.public.lu/dam-assets/pdf/legislation/tva/loi/loi-tva-2026-01-01.pdf | 2026-10-23 |
-| AED, publication page for the 2026 coordinated text | https://pfi.public.lu/fr/publications/textes-de-loi/tva010126.html | 2026-10-23 |
-| Legilux, law of 20 December 2024 amending the LTVA (Mémorial A 574) | https://legilux.public.lu/eli/etat/leg/loi/2024/12/20/a574/jo | 2026-10-23 |
-| AED, SME franchise from 1 January 2025 | https://pfi.public.lu/fr/professionnel/tva/sme.html | 2026-10-23 |
-| AED, national rates | https://pfi.public.lu/fr/professionnel/tva/taxe-valeur-ajoutee/taux-nationaux-applicables.html | 2026-10-23 |
-| AED, who owes the tax | https://pfi.public.lu/fr/professionnel/tva/taxe-valeur-ajoutee/debiteur-taxe.html | 2026-10-23 |
-| AED, VAT returns (frequency and deadlines) | https://pfi.public.lu/fr/professionnel/tva/en-cours-activite-economique/declarations-tva.html | 2026-10-23 |
-| AED, payment of the tax | https://pfi.public.lu/fr/professionnel/tva/en-cours-activite-economique/au-sujet-paiement-taxe.html | 2026-10-23 |
-| AED, recapitulative statement | https://pfi.public.lu/fr/professionnel/tva/en-cours-activite-economique/etat-recapitulatif.html | 2026-10-23 |
-| Guichet.lu, VAT return frequency and deadlines | https://guichet.public.lu/fr/entreprises/fiscalite/impots-benefices/tva/declarations/declaration-tva.html | 2026-10-23 |
+| AED, publication page for the 2026 coordinated text. Read for the 2026 consolidated VAT law. | https://pfi.public.lu/fr/publications/textes-de-loi/tva010126.html | 2026-10-23 |
+| Legilux, law of 20 December 2024 amending the LTVA (Mémorial A 574). Read for the 2024 VAT law changes. | https://legilux.public.lu/eli/etat/leg/loi/2024/12/20/a574/jo | 2026-10-23 |
+| AED, SME franchise from 1 January 2025. Read for the SME franchise. | https://pfi.public.lu/fr/professionnel/tva/sme.html | 2026-10-23 |
+| AED, national rates. Read for the national VAT rates. | https://pfi.public.lu/fr/professionnel/tva/taxe-valeur-ajoutee/taux-nationaux-applicables.html | 2026-10-23 |
+| AED, who owes the tax. Read for who owes the VAT. | https://pfi.public.lu/fr/professionnel/tva/taxe-valeur-ajoutee/debiteur-taxe.html | 2026-10-23 |
+| AED, VAT returns (frequency and deadlines). Read for the return frequency and deadlines. | https://pfi.public.lu/fr/professionnel/tva/en-cours-activite-economique/declarations-tva.html | 2026-10-23 |
+| AED, payment of the tax. Read for how VAT is paid. | https://pfi.public.lu/fr/professionnel/tva/en-cours-activite-economique/au-sujet-paiement-taxe.html | 2026-10-23 |
+| AED, recapitulative statement. Read for the recapitulative statement. | https://pfi.public.lu/fr/professionnel/tva/en-cours-activite-economique/etat-recapitulatif.html | 2026-10-23 |
+| Guichet.lu, VAT return frequency and deadlines. Read for the return frequency and deadlines. | https://guichet.public.lu/fr/entreprises/fiscalite/impots-benefices/tva/declarations/declaration-tva.html | 2026-10-23 |
 
 Not yet confirmed: the AED coordinated text is not binding and the consolidated text on Legilux was not available, so article wording should be checked against the Mémorial before a dispute; the grand-ducal regulation that sets the EUR 112,000 and EUR 620,000 filing bands was not read (the figures come from the AED and Guichet.lu pages).
