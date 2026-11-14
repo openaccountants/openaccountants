@@ -178,7 +178,7 @@ Registration is obligatory when annual turnover (calendar year, excluding VAT) e
 | Goods at the reduced or standard rate that the business made from zero-rated materials | €42,500 | same |
 | Goods and services, where 90% or more of turnover is from goods (other than the above) | €85,000 | same |
 | Goods | €85,000 | same |
-| Distance sales of goods and cross-border telecoms, broadcasting and electronic services to other EU consumers (EU-wide total; supplier established only in Ireland) | €10,000 | same |
+| Distance sales of goods and cross-border telecoms, broadcasting and electronic services to other EU consumers (EU-wide total; supplier established only in Ireland) | €10,000 | https://www.revenue.ie/en/vat/vat-registration/who-should-register-for-vat/elect-register-vat.aspx |
 | Acquisitions of goods from other EU Member States | €41,000 | same |
 
 A business not established in Ireland that supplies taxable goods or services to taxable customers in Ireland must register whatever its turnover, unless it uses the VAT SME Scheme. Occasional disposals of business assets are left out of annual turnover. Details and returns: ie-vat-return.
@@ -373,6 +373,7 @@ expected:
 | Revenue: USC rates | https://www.revenue.ie/en/jobs-and-pensions/usc/standard-rates-thresholds.aspx | 2026-10-31 |
 | Revenue: other rates of USC | https://www.revenue.ie/en/jobs-and-pensions/usc/other-rates.aspx | 2026-10-31 |
 | Revenue: VAT thresholds | https://www.revenue.ie/en/vat/vat-registration/who-should-register-for-vat/persons-required-register-goods-services-abroad.aspx | 2026-10-31 |
+| Revenue: electing to register for VAT (read for the EUR 10,000 distance sales and EUR 41,000 EU acquisitions thresholds) | https://www.revenue.ie/en/vat/vat-registration/who-should-register-for-vat/elect-register-vat.aspx | 2026-11-14 |
 | Revenue: surcharge on undistributed income | https://www.revenue.ie/en/companies-and-charities/corporation-tax-for-companies/close-companies/surcharge.aspx | 2026-10-31 |
 | s.345 | https://www.irishstatutebook.ie/eli/2014/act/38/section/345/enacted/en/html | 2026-10-31 |
 | s.343 | https://www.irishstatutebook.ie/eli/2014/act/38/section/343/enacted/en/html | 2026-10-31 |
