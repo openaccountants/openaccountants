@@ -232,4 +232,4 @@ expected:
 
 Not yet confirmed: that the TSD annex 6 layout and code 6000 as worded by regulation nr 24 of 22 June 2020 are unchanged for 2026 periods; whether EMTA accepts or runs bilateral APAs through the treaty mutual agreement procedure (no emta.ee page on APAs was found, and no statute sets one up); which point inside the interquartile range EMTA adjusts to (Regulation No. 53 § 11(8) says only that the result must fall inside the range); whether a 2026 English EMTA page on transfer pricing replaces the 2011 guide.
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.

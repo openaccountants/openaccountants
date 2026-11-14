@@ -233,4 +233,4 @@ expected:
 
 Not yet confirmed: the 2026 State Budget Act text that sets the EUR 886 social tax monthly rate (taken from EMTA and the Ministry of Finance, not read in the Act itself); the Social Tax Act version in force from 25.10.2026 (not read); the pensionable age in 2026 (not stated here); the weekend roll-forward rule in the Taxation Act (taken from EMTA's example, not the Act).
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.

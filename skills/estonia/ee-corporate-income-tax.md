@@ -219,4 +219,4 @@ expected:
 
 Not yet confirmed: which TSD annex carries dividends and capital reductions (only annex 6 was read, in the wording of Regulation No. 24 of 22.06.2020); how a company that received both 14/86-taxed and other dividends traces which of them a 2026 payment comes from; the social tax base on fringe benefits (in `estonia-social-contributions`).
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.
