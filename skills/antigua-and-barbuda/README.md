@@ -2,7 +2,10 @@
 jurisdiction: AG
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
-covered_by: {}
+covered_by:
+  VAT: ag-abst
+  SC: ag-social-security
+  PR: ag-medical-benefits
 partial: {}
 ---
 
@@ -16,9 +19,9 @@ Tax years: 2026 (3 skills).
 |---|---|---|---|
 | Income tax | | | Missing |
 | Company tax | | | Missing |
-| VAT or sales tax | | | Missing |
+| VAT or sales tax | [ABST](ag-abst.md) | 2026 | Ready |
 | Social contributions | [Social security](ag-social-security.md) | 2026 | Ready |
-| Payroll | | | Missing |
+| Payroll | [Medical benefits](ag-medical-benefits.md) with [Social security](ag-social-security.md) | 2026 | Ready |
 | Transfer pricing | | | Missing |
 | Cross-border | | | Missing |
 
@@ -28,14 +31,7 @@ Ready means the skill is on the current tax year. It does not mean an accountant
 
 - Write the income tax skill.
 - Write the company tax skill.
-- Write the VAT or sales tax skill.
-- Write the payroll skill.
 - Write the transfer pricing skill.
 - Write the cross-border skill.
 
 Tracked in [\[AG\] Complete the pack](https://github.com/openaccountants/openaccountants/issues/270).
-
-## Other skills
-
-- [Abst](ag-abst.md) (2026)
-- [Medical benefits](ag-medical-benefits.md) (2026)
