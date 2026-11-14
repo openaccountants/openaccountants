@@ -1,18 +1,19 @@
 ---
 name: es-return-assembly
 description: Final orchestrator skill that assembles the complete Spain filing package for Spain-resident self-employed individuals (autónomos). Consumes outputs from all Spain content skills (es-vat-return for Modelo 303, es-income-tax for IRPF Modelo 100, es-social-contributions for RETA, es-estimated-tax for Modelo 130 pagos fraccionados) to produce a single unified reviewer package containing every worksheet, every form, every brief section, all cross-skill reconciliations, and the final action list with payment instructions, filing instructions, and next-year planning. This is the capstone skill that runs last and produces the final deliverable. MUST be loaded alongside all Spain content skills listed above. Spain full-year residents only. Autónomos (self-employed individuals) only.
-version: 0.2
+version: 1.0
 jurisdiction: ES
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
+type: router
 ---
 
 # ES Return Assembly
 
-## Spain Return Assembly Skill v0.2
+## Spain Return Assembly Skill v1.0
 
 ## How this workflow runs
 
@@ -42,7 +43,30 @@ This skill coordinates execution of the content skills, verifies cross-skill con
 
 - **Scope of package**: Produces the complete Spain filing package for: Full-year Spanish residents (territorio común -- excludes País Vasco and Navarra foral regimes); Autónomos (self-employed individuals, personas físicas); Tax year 2026; Filing Modelo 303 (IVA trimestral), IRPF Modelo 100, RETA reconciliation, Modelo 130 (pagos fraccionados)  _(Section 1 -- Scope)_
 
-## Section 2 -- Execution order and dependency chain
+## The method, step by step
+
+Run the four content skills in this order, without pausing between them: 1. `es-vat-return`, 2. `es-income-tax`, 3. `es-social-contributions`, 4. `es-estimated-tax`. Then run the four cross-checks in Section 3, assemble the package in Section 4 and write the three files in Section 7. The detail of each step follows.
+
+### Figures this assembly checks
+
+These are the only figures the assembly itself applies; every other figure belongs to the content skill named in Section 2. Each was found on the page linked on its row on 14 November 2026.
+
+| Figure | Value | Condition | Source |
+|---|---|---|---|
+| Modelo 130 payment on account, direct estimation | 20% of net income from 1 January to the end of the quarter, less withholdings and earlier payments | Art. 110.1.a and 110.3 RIRPF | https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820 |
+| Release from Modelo 130 for a professional | At least 70% of prior year activity income bore withholding | Art. 109.2 RIRPF | https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820 |
+| Modelo 130 deadlines | 1 to 20 April, July and October; 1 to 30 January for the fourth quarter | Art. 111.1 RIRPF | https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820 |
+| Hard-to-justify expenses, simplificada | 5% of net income before this item, at most EUR 2,000 a year | Art. 30, rule 2.ª RIRPF; outside Ceuta | https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820 |
+| Withholding on professional invoices | 15% general; 7% in the start year and the two following | Art. 95.1 RIRPF; no professional activity in the year before the start | https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820 |
+| IRPF payment split | 60% on filing, 40% later | Art. 62.2 RIRPF; not on a complementary return | https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820 |
+| Home used for the activity, utilities | 30% of the share of square metres used | Art. 30.2.5.ª.b LIRPF, direct estimation; a higher or lower share may be proved | https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764 |
+| Car, moped or motorcycle, input VAT presumed business share | 50% | Art. 95.Tres.2.ª LIVA | https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740 |
+| Modelo 303 deadlines | 1 to 20 of the month after the quarter; 1 to 30 January for the last quarter | Art. 71.4 RIVA | https://www.boe.es/buscar/act.php?id=BOE-A-1992-28925 |
+| Modelo 349 quarterly instead of monthly | Neither the quarter nor any of the four prior quarters above EUR 50,000 of reportable supplies, VAT excluded | Art. 81.2 RIVA; July monthly return may be filed in August or the first 20 days of September | https://www.boe.es/buscar/act.php?id=BOE-A-1992-28925 |
+| Modelo 347 counterpart test | Above EUR 3,005.06 with one person in the year | Art. 32.c RD 1065/2007 | https://www.boe.es/buscar/act.php?id=BOE-A-2007-15984 |
+| Simplified depreciation, equipment for information processing (Group 5) | 26% maximum, 10 years maximum | AEAT simplified depreciation table | https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/folleto-actividades-economicas/3-impuesto-sobre-renta-personas-fisicas/3_5-estimacion-directa-simplificada/3_5_4-tabla-amortizacion-simplificada.html |
+
+### Section 2: execution order and dependency chain
 
 - **es-vat-return step (Modelo 303)**: Runs first because IVA base imponible feeds into the IRPF. For Q4 2026: prepare Modelo 303 if not yet filed; verify Q1-Q3 figures. Reconcile facturas emitidas (output IVA) with facturas recibidas (input IVA). Handle intracomunitarias (reverse charge, Modelo 349). Output: Modelo 303 box values, IVA devengado, IVA soportado deducible, result (a ingresar / a compensar / a devolver)  _(Section 2 -- Execution order and dependency chain)_
 - **es-income-tax step (IRPF Modelo 100)**: Depends on IVA output: rendimiento íntegro de actividades económicas must use base imponible (ex-IVA) from Modelo 303. Compute rendimiento neto: ingresos - gastos deducibles - amortización - RETA cuotas. Apply gastos de difícil justificación (5%, max EUR 2,000, art. 30.2.ª RIRPF) for simplificada. Apply reducciones (if applicable). Compute base imponible general + base del ahorro. Apply escala estatal + autonómica. Deduct retenciones, pagos fraccionados (Modelo 130). Output: Modelo 100 key boxes, cuota líquida, resultado de la declaración  _(Section 2 -- Execution order and dependency chain)_
@@ -80,7 +104,7 @@ This skill coordinates execution of the content skills, verifies cross-skill con
 
 **Cross-check 3 table**  _(Cross-check 3: Retenciones credit against final IRPF cuota)_
 
-| Source | Amount | Treatment |
+| Source | Taken from | Treatment |
 | --- | --- | --- |
 | Retenciones soportadas on facturas emitidas | Sum from facturas / Modelo 190 data | Credit against cuota íntegra in Modelo 100 |
 | Retenciones from employment (if any) | From nómina / Modelo 190 | Credit against cuota íntegra |
@@ -93,7 +117,7 @@ This skill coordinates execution of the content skills, verifies cross-skill con
 
 **Cross-check 4 table**  _(Cross-check 4: Modelo 130 pagos fraccionados credit against final IRPF)_
 
-| Source | Amount | Treatment |
+| Source | Taken from | Treatment |
 | --- | --- | --- |
 | Modelo 130 Q1-Q4 payments | Sum of four quarterly payments | Credit against cuota líquida in Modelo 100 |
 | Formula: 20% x rendimiento neto acumulado - retenciones acumuladas - pagos anteriores | Per quarter | Standard computation |
@@ -242,7 +266,7 @@ This skill coordinates execution of the content skills, verifies cross-skill con
 - Q4 2027: file 1-30 January 2028
 
 ### Modelo 349 (if EU intracomunitarias):
-- Monthly in the first 20 days of the next month; quarterly if neither the quarter nor any of the four prior quarters exceeds EUR 50,000 of reportable supplies; last period of the year in the first 30 days of January (art. 81 RIVA)
+- Monthly in the first 20 days of the next month; quarterly if neither the quarter nor any of the four prior quarters exceeds EUR 50,000 of reportable supplies; last period of the year in the first 30 days of January; the July monthly return may be filed in August or the first 20 days of September (art. 81 RIVA)
 
 ### RETA:
 - Monthly auto-debit continues
@@ -259,7 +283,10 @@ This skill coordinates execution of the content skills, verifies cross-skill con
 7. File Modelo 347 (operaciones con terceros > EUR 3,005.06) by 28 February
 ```
 
-## Section 5 -- Refusals
+## When to refuse or refer
+
+Section 5 refusals: each is a warning to flag, except R-ES-4, which asks the user for the missing data point.
+
 
 - **R-ES-1**: Upstream skill did not run. Name the specific skill. Note: this is a warning, not a hard stop. Continue with available data and flag the gap.  _(R-ES-1)_
 - **R-ES-2**: Upstream self-check failed. Name the specific check and note it in the reviewer brief. Continue.  _(R-ES-2)_
@@ -306,6 +333,7 @@ This skill coordinates execution of the content skills, verifies cross-skill con
 
 ### Change log
 
+- **v1.0 (14 November 2026):** declared as a router with the method, refusal and Sources headings; the figures the assembly applies gathered in one linked table and re-read on BOE and AEAT on 14 November 2026; the July Modelo 349 extension added; a duplicate truncated Section 2 at the end of the file removed (its two steps are in the method order).
 - **v0.2 (31 October 2026):** Moved to tax year 2026, filed in 2027. Corrected Modelo 130 citations (RIRPF arts. 109.2, 110, 111), the 70% test (prior year), the 7% withholding period, the 30% suministros scope, the Modelo 349 periods and the Group 5 maximum (26%). Removed stated 2027 IRPF campaign dates. Added worked checks and Sources.
 - **v0.1 (April 2026):** Initial draft. Modelled on mt-return-assembly v0.1 adapted for Spain jurisdiction with four content skills (IVA Modelo 303, IRPF Modelo 100, RETA, Modelo 130).
 
@@ -356,19 +384,15 @@ expected:
 
 | Official source | Scope read | Read on |
 |---|---|---|
-| [RD 439/2007, Reglamento del IRPF](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820) | Arts. 30, 62.2, 95.1, 109, 110, 111 | 2026-10-31 |
-| [Ley 35/2006, Ley del IRPF](https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764) | Art. 30.2.4.ª and 5.ª | 2026-10-31 |
-| [RD 1624/1992, Reglamento del IVA](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28925) | Art. 81, Modelo 349 periods | 2026-10-31 |
-| [RD 1065/2007](https://www.boe.es/buscar/act.php?id=BOE-A-2007-15984) | EUR 3,005.06 test | 2026-10-31 |
-| [AEAT simplified depreciation table](https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/folleto-actividades-economicas/3-impuesto-sobre-renta-personas-fisicas/3_5-estimacion-directa-simplificada/3_5_4-tabla-amortizacion-simplificada.html) | Group 5, 26%, 10 years | 2026-10-31 |
+| [RD 439/2007, Reglamento del IRPF](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820) | Read for arts. 30, 62.2, 95.1, 109.2, 110, 111 (Modelo 130 rate, release test, deadlines, payment split) | 2026-11-14 |
+| [Ley 35/2006, Ley del IRPF](https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764) | Read for art. 30.2.4.ª and 5.ª (health insurance, home utilities 30%) | 2026-11-14 |
+| [Ley 37/1992, Ley del IVA](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740) | Read for art. 95.Tres.2.ª (50% vehicle presumption) | 2026-11-14 |
+| [RD 1624/1992, Reglamento del IVA](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28925) | Read for art. 71.4 (Modelo 303 deadlines) and art. 81 (Modelo 349 periods, EUR 50,000) | 2026-11-14 |
+| [RD 1065/2007](https://www.boe.es/buscar/act.php?id=BOE-A-2007-15984) | Read for art. 32.c (EUR 3,005.06 Modelo 347 test) | 2026-11-14 |
+| [AEAT simplified depreciation table](https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/folleto-actividades-economicas/3-impuesto-sobre-renta-personas-fisicas/3_5-estimacion-directa-simplificada/3_5_4-tabla-amortizacion-simplificada.html) | Read for Group 5 (26%, 10 years), page updated 30 April 2026 | 2026-11-14 |
 
-Not yet confirmed: the 2027 IRPF campaign dates and second-instalment date (order not read); whether AEAT moves the 30 January 2027 deadline, a Saturday; the Modelo 347 February date, the Modelo 390 date and the RETA regularisation timing were not re-read for this version; LGT art. 66 was not re-read. Other figures in the skill are inherited from the content skills and were not re-read here.
+Not yet confirmed: the 2027 IRPF campaign dates and second-instalment date (that year's order is not yet published); whether AEAT moves the 30 January 2027 deadline, a Saturday; the Modelo 347 February date, the Modelo 390 date and the RETA regularisation timing; LGT art. 66 was not re-read. Other figures are inherited from the content skills and were not re-read here.
 
 ## Disclaimer
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as an asesor fiscal, gestor administrativo, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
-
-## Section 2 -- Execution order and dependency chain
-
-0. **Step 1**: Execute es-vat-return
-0. **Step 2**: Execute es-income-tax
