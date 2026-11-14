@@ -1,27 +1,136 @@
 ---
 name: ky-corporate-income-tax
-description: "Source-cited draft: corporate income tax for Cayman Islands (tax year 2025) — rates, thresholds and rules with primary-source citations. Unverified; pending local-accountant review."
+description: >
+  Cayman Islands companies for 2026. No corporate income tax, capital gains
+  tax, withholding tax or minimum top-up tax; an exempted company can get a
+  tax undertaking for up to 30 years under the Tax Concessions Act. The tax
+  work is economic substance under the International Tax Co-operation
+  (Economic Substance) Act (2026 Revision) - annual notification, a report
+  within 12 months of year end for relevant entities doing a relevant
+  activity, and penalties of CI$5,000 plus CI$500 a day, CI$10,000 and
+  CI$100,000. Trigger on Cayman corporate tax, Cayman exempted company tax,
+  Cayman economic substance, tax undertaking certificate Cayman. Built from
+  Cayman legislation; not reviewed by an accountant.
+version: 1.0
 jurisdiction: KY
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+category: international
 tier: 2
 domain: income-tax
+type: computation
 ---
 
-# Cayman Islands Corporate Income Tax
+# Cayman Islands companies: no corporate tax, tax undertaking and economic substance
 
-## Corporate taxation in the Cayman Islands
+> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
-The Cayman Islands imposes no corporate income tax, no capital gains tax, no withholding tax, and no branch profits tax. Companies instead pay annual government registration fees and, where in scope, must meet economic-substance and CRS/FATCA reporting obligations.
+## Who this applies to
 
-- **Corporate income tax rate** — 0% (no corporate income, capital gains, or other direct tax is imposed on corporations percent)  _([PwC Worldwide Tax Summaries — Cayman Islands (Corporate — Taxes on corporate income)](https://taxsummaries.pwc.com/cayman-islands/corporate/taxes-on-corporate-income))_
-- **Special / reduced corporate rates** — Not applicable (there is no corporate tax and therefore no industry or size-based rate variations)  _([PwC Worldwide Tax Summaries — Cayman Islands (Corporate)](https://taxsummaries.pwc.com/cayman-islands/corporate/taxes-on-corporate-income))_
-- **Corporate tax base** — Not applicable (no taxable income concept exists for corporations under Cayman law)  _([PwC Worldwide Tax Summaries — Cayman Islands (Corporate)](https://taxsummaries.pwc.com/cayman-islands/corporate/taxes-on-corporate-income))_
-- **Withholding tax on dividends** — 0% (no withholding tax on dividends paid to residents or non-residents percent)  _([PwC Worldwide Tax Summaries — Cayman Islands (Corporate — Withholding taxes)](https://taxsummaries.pwc.com/cayman-islands/corporate/taxes-on-corporate-income))_
-- **Withholding tax on interest** — 0% (no withholding tax on interest payments percent)  _([PwC Worldwide Tax Summaries — Cayman Islands (Corporate — Withholding taxes)](https://taxsummaries.pwc.com/cayman-islands/corporate/taxes-on-corporate-income))_
-- **Withholding tax on royalties** — 0% (no withholding tax on royalty payments percent)  _([PwC Worldwide Tax Summaries — Cayman Islands (Corporate — Withholding taxes)](https://taxsummaries.pwc.com/cayman-islands/corporate/taxes-on-corporate-income))_
-- **Corporate income tax return / payment** — None (no corporate income tax return is filed and no corporate income tax is paid)  _([PwC Worldwide Tax Summaries — Cayman Islands (Corporate — Tax administration)](https://taxsummaries.pwc.com/cayman-islands/corporate/taxes-on-corporate-income))_
-- **Tax exemption certificate (exempted company)** — An exempted company may apply for an undertaking from the Government that no future tax on profits, income, gains, or appreciation will apply to it — typically guaranteed for up to 20 years (extendable to 30) ((approx years — confirm))  _([Companies Act (2025 Revision) (Cayman Islands)](https://taxsummaries.pwc.com/cayman-islands/corporate/taxes-on-corporate-income))_
-- **Economic substance obligation** — In-scope entities carrying on 'relevant activities' must satisfy the economic substance test and file an annual ES notification and return with the DITC  _([International Tax Co-operation (Economic Substance) Act (Cayman Islands)](https://taxsummaries.pwc.com/cayman-islands/corporate/other-issues))_
-- **Annual government fee (in lieu of corporate tax)** — Exempted company with registered capital up to CI$42,000 (US$50,000): CI$925 annual fee (effective 1 January 2025); higher capital bands pay more CI$  _([Companies Act (2025 Revision) — Fees Regulations (Cayman Islands)](https://www.ciregistry.ky/fees/))_
+Companies, limited liability companies, limited liability partnerships and foreign companies registered in the Cayman Islands in 2026. Amounts are CI$.
+
+**There is no corporate income tax.** No Act in the current legislation list taxes company profits, capital gains or distributions, or imposes withholding tax or a domestic minimum top-up tax. No corporate tax return is filed. A company's obligations are registry fees (`ky-company-formation`), economic substance, CRS and FATCA where it is a financial institution, and import duty and stamp duty on its transactions (`ky-vat-gst`, `ky-tax-overview`).
+
+## Rates, bands and thresholds
+
+| Item | 2026 figure | Conditions | Source |
+|---|---|---|---|
+| Corporate income tax, capital gains, withholding, minimum top-up tax | None | No such Act in the current legislation list | Cayman legislation, current by title: https://legislation.gov.ky/cms/legislation/current/by-title.html |
+| Tax undertaking | Up to 30 years from approval of the application | Exempted company, or other company in the national interest; may also cover tax on shares and debentures, estate duty, and withholding on dividends, distributions, principal and interest | Tax Concessions Act (2018 Revision), s. 6(1) to (5): https://legislation.gov.ky/cms/images/LEGISLATION/PRINCIPAL/1964/1964-0164/1964-0164_2018%20Revision.pdf |
+| Economic substance notification | Every entity, annually | Whether it carries on a relevant activity, whether it is a relevant entity, and for foreign tax residents parent and owner details and year end (s. 7(1)) | International Tax Co-operation (Economic Substance) Act (2026 Revision), s. 7: https://legislation.gov.ky/cms/images/LEGISLATION/PRINCIPAL/2018/2018-0045/2018-0045_2026%20Revision.pdf |
+| Economic substance report | No later than 12 months after the end of each financial year | Relevant entity carrying on a relevant activity and required to meet the test (s. 7(3)) | same |
+| Late report penalty | CI$5,000 plus CI$500 for each day the failure continues | s. 7(8A); not imposed after the earlier of one year after the Authority knows or six years after the failure | same |
+| Failing the substance test, first year | CI$10,000 | s. 8(2); due at least 28 days after the notice | same |
+| Failing the test, following year | CI$100,000 | s. 8(4); the Authority also reports to the Registrar | same |
+| Relevant activities | Banking, distribution and service centre, financing and leasing, fund management, headquarters, holding company, insurance, intellectual property, shipping | Not investment fund business | ES Act, s. 2 definition: https://legislation.gov.ky/cms/images/LEGISLATION/PRINCIPAL/2018/2018-0045/2018-0045_2026%20Revision.pdf |
+
+## The base
+
+### Economic substance, step by step
+
+1. Every entity notifies the Authority each year, at the time and in the form the Authority sets (s. 7(1), (2)).
+2. Decide whether it carries on a relevant activity (list above). Investment fund business is outside.
+3. A relevant entity carrying on a relevant activity and required to meet the economic substance test files a report within 12 months after its year end: type of activity, relevant income, expenses and assets, place of business and premises, staff (s. 7(4)).
+4. The Authority decides whether the test is met (s. 6); failure brings the s. 8 penalties and a direction.
+
+### Tax undertaking
+
+Apply to the Financial Secretary. The undertaking says that no future law taxing profits, income, gains or appreciation applies to the company, for the period stated, not more than 30 years.
+
+## Deadlines and filing
+
+| Obligation | When |
+|---|---|
+| Economic substance notification | Annually, on the date the Authority sets |
+| Economic substance report | 12 months after year end |
+| Registry annual return and fee | See `ky-company-formation` |
+| Corporate tax return | None exists |
+
+## Penalties and interest
+
+As in the table: CI$5,000 plus CI$500 a day for a late report; CI$10,000 then CI$100,000 for failing the test. Some offences under the Act are punishable on summary conviction by a fine of CI$10,000 or imprisonment.
+
+## Cross-border points
+
+- No withholding tax on dividends, interest or royalties paid abroad.
+- A Cayman entity that is tax resident elsewhere still notifies, giving its parent, ultimate parent, beneficial owner and year end.
+- The parent's country may apply its own controlled foreign company or global minimum tax rules to profits in a Cayman entity; that is outside Cayman law.
+- CRS/FATCA reporting by financial institutions: refer to a specialist.
+
+## Two worked examples that recompute
+
+### Late economic substance report, 40 days
+
+A holding company's report for the year to 31 December 2025 was due by 31 December 2026 and is filed 40 days late.
+
+```oa-check
+name: KY ES late report 40 days
+inputs:
+  days_late: 40
+steps:
+  - corporate_tax: 0
+  - penalty: 5000 + 500 * days_late
+expected:
+  corporate_tax: 0
+  penalty: 25000
+```
+
+### Decision: fix substance now, or fail two years running?
+
+A company doing fund management business fails the substance test for 2025. If it fixes substance for 2026 it pays CI$10,000 in total; if it fails again it pays a further CI$100,000.
+
+```oa-check
+name: KY ES penalties one vs two years
+inputs:
+  first_year: 10000
+  second_year: 100000
+steps:
+  - fix_now: first_year
+  - fail_again: first_year + second_year
+  - cost_of_not_fixing: fail_again - fix_now
+expected:
+  fix_now: 10000
+  fail_again: 110000
+  cost_of_not_fixing: 100000
+```
+
+Failing again costs CI$100,000 more and leads to a report to the Registrar.
+
+## Ask the client first
+
+1. Entity type and where it is tax resident.
+2. What does it do: any of the nine relevant activities, or investment fund business?
+3. Financial year end, and are notifications and reports up to date?
+4. Does it hold a tax undertaking, and until when?
+5. Is it a financial institution for CRS/FATCA?
+
+## Sources
+
+| Source | URL | Read on |
+|---|---|---|
+| Cayman legislation, current by title (letters C, D, I, M, T): read to confirm no income, corporate or minimum top-up tax Act | https://legislation.gov.ky/cms/legislation/current/by-title.html | 2026-11-14 |
+| Tax Concessions Act (2018 Revision): read for s. 6 undertakings and the 30-year limit | https://legislation.gov.ky/cms/images/LEGISLATION/PRINCIPAL/1964/1964-0164/1964-0164_2018%20Revision.pdf | 2026-11-14 |
+| International Tax Co-operation (Economic Substance) Act (2026 Revision, revised as at 31 December 2025): read for ss. 2, 7 and 8 (relevant activities, notification, report, penalties) | https://legislation.gov.ky/cms/images/LEGISLATION/PRINCIPAL/2018/2018-0045/2018-0045_2026%20Revision.pdf | 2026-11-14 |
+
+Not yet confirmed: the annual notification date the Authority sets; the "prescribed date" from which report years start (in the Economic Substance (Prescribed Dates) Regulations, not read); the old "20 years extendable to 30" for exempted companies (the Act read says up to 30 years); the old annual government fee of CI$925 for an exempted company (registry fee table read shows registration fees only, see `ky-company-formation`).
