@@ -1,254 +1,173 @@
 ---
 name: ns-individual-return
-description: Use this skill whenever asked about Nova Scotia provincial individual income tax. Trigger on phrases like "Nova Scotia tax", "NS provincial tax", "Nova Scotia T1", "Nova Scotia brackets", "HST Nova Scotia", "Nova Scotia credits", "Nova Scotia surtax", or any question about computing Nova Scotia provincial tax for an individual return. This skill covers Nova Scotia's five-bracket tax system, HST at 15%, provincial credits, and filing requirements. ALWAYS read this skill before touching any Nova Scotia individual tax return work.
-version: "1.0"
+description: "Nova Scotia calendar 2026 individual provincial tax: indexed bands and principal credits, corrected HST, separate age and volunteer credits, annual filing map and dated CRA family-benefit computations."
+version: "2.0"
 jurisdiction: CA
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
+type: computation
+depends_on:
+  - ca-fed-t1-return
+  - ca-fed-cpp-ei
+  - ns-tax-credits
 ---
 
-# NS Individual Return
-
-## Section 1 -- Quick Reference
-
-**Quick Reference**
-
-| Field | Value |
-| --- | --- |
-| Province | Nova Scotia (Canada) |
-| Tax | Provincial Personal Income Tax |
-| Currency | CAD only |
-| Tax year | 1 January -- 31 December 2025 |
-| Primary legislation | Income Tax Act (Nova Scotia) |
-| Tax authority | Canada Revenue Agency (administers on behalf of Nova Scotia) |
-| Filing portal | CRA My Account / NETFILE / paper T1 |
-| Filing deadline | 30 April 2026 (15 June 2026 if self-employed; balance due 30 April) |
-| Skill version | 1.0 |
-
-### Nova Scotia Provincial Tax Rates (2025)
+# Nova Scotia individual return v2.0
 
-**Nova Scotia Provincial Tax Rates (2025)**
+## Scope
 
-| Taxable Income (CAD) | Rate |
-| --- | --- |
-| 0 -- 29,590 | 8.79% |
-| 29,591 -- 59,180 | 14.95% |
-| 59,181 -- 93,000 | 16.67% |
-| 93,001 -- 150,000 | 17.5% |
-| 150,001+ | 21% |
+Calculate Nova Scotia provincial individual income tax for **calendar 2026**, in CAD, coordinated with the federal T1. Nova Scotia began indexing the relevant brackets and credit bases in 2025; the old frozen-band description is not current. Use `ns-tax-credits` for detailed personal/corporate credit decisions. No accountant has approved this version.
 
-### Key Nova Scotia Features
+### Quick reference
 
-**Key Nova Scotia Features**
+| Portion of 2026 taxable income, CAD | Provincial rate | Official source |
+|---|---|---|
+| Over 0 through 30,995 | 8.7900% | https://www.novascotia.ca/personal-income-tax-rates-and-indexation |
+| Over 30,995 through 61,991 | 14.9500% | https://www.novascotia.ca/personal-income-tax-rates-and-indexation |
+| Over 61,991 through 97,417 | 16.6700% | https://www.novascotia.ca/personal-income-tax-rates-and-indexation |
+| Over 97,417 through 157,124 | 17.500% | https://www.novascotia.ca/personal-income-tax-rates-and-indexation |
+| Over 157,124 | 21.00% | https://www.novascotia.ca/personal-income-tax-rates-and-indexation |
 
-| Feature | Detail |
-| --- | --- |
-| Harmonized sales tax (HST) | 15% (5% federal + 10% provincial) |
-| Basic personal amount (2025) | $8,481 |
-| Spousal/equivalent amount | $8,481 |
-| Age amount | $4,141 |
-| Nova Scotia Affordable Living Tax Credit | Refundable; up to $255/individual |
-| Nova Scotia Child Benefit (NSCB) | $150/child (income-tested) |
-| Nova Scotia Poverty Reduction Credit | $250/adult + $200/child |
-| Surtax | None (eliminated) |
+| Item | Figure and conditions | Official source |
+|---|---|---|
+| 2026 basic personal / spouse / eligible-dependant maxima | CAD 11,932 each where the relevant status/support tests are met; convert eligible bases at 8.79%; no old income-based supplemental reduction | https://notices.novascotia.ca/files/ftb-taxation/ftb-tn-personal-income-tax-indexation-update-2025-12-31.pdf |
+| 2026 age amount | CAD 5,826 maximum base; verify actual age/eligibility; not a separate income-based supplement | https://notices.novascotia.ca/files/ftb-taxation/ftb-tn-personal-income-tax-indexation-update-2025-12-31.pdf |
+| Separate age tax credit | CAD 1,000 non-refundable tax reduction, age at least 65 by year end, NS resident on 31 December and taxable income below CAD 24,000; distinct from the ordinary age amount | https://www.novascotia.ca/sites/default/files/documents/1-3953/tax-101-personal-income-tax-age-tax-credit-en.pdf |
+| 2026 infirm dependant maximum | CAD 2,931 base for a qualifying infirm dependant aged at least 18, with the relevant support/income tests | https://notices.novascotia.ca/files/ftb-taxation/ftb-tn-personal-income-tax-indexation-update-2025-12-31.pdf |
+| Current volunteer firefighter/ground SAR credit | CAD 500 refundable dollar credit; at least six months qualifying service and programme evidence; not a credit base | https://www.novascotia.ca/volunteer-firefighter-and-ground-search-and-rescue-worker-tax-credit |
+| ALTC, July 2026-June 2027 | Annual CAD 255 individual OR couple, plus CAD 60 per child; reduce by 5% of AFNI above CAD 30,000; quarterly separate CRA payment | https://www.canada.ca/en/revenue-agency/services/child-family-benefits/provincial-territorial-programs/province-nova-scotia.html |
+| NS child benefit, July 2026-June 2027 | Up to CAD 127.08 per month per qualifying child under 18; partial between AFNI CAD 26,000 and CAD 34,000; not CAD 150 per quarter | https://www.canada.ca/en/revenue-agency/services/child-family-benefits/provincial-territorial-programs/province-nova-scotia.html |
+| Nova Scotia HST | 14% from 1 April 2025 for supplies governed by the NS place-of-supply and transition rules | https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/charge-collect-which-rate.html |
 
-### Combined Federal + Nova Scotia Marginal Rates (2025)
+## Ask the client first
 
-**Combined Federal + Nova Scotia Marginal Rates (2025)**
+1. Which tax year and benefit-payment period, and which province on the last day of the year? Obtain arrival, departure, death and interprovincial moving dates, Canadian residence status and every business permanent establishment.
+2. What are taxable income, net income and adjusted family net income, separately? Obtain all slips, foreign income, deductions, CPP/EI details and the spouse's return. Do not default an unknown marital status to single.
+3. Which age, dependant, disability, pension, tuition, medical, donation, volunteer and investment facts apply? Obtain certificates, receipts, shared claims and carryover assessments before using a credit.
+4. Is this an individual, an unincorporated business or a corporation? Identify self-employment, farming/fishing, instalments and prior assessments. A corporate credit cannot be placed on a personal return.
+5. What is the requested output: a planning estimate, the actual annual filing or a separate CRA-administered benefit calculation? Do not call a partial provincial computation a final refund.
 
-| Taxable Income (CAD) | Combined Rate |
-| --- | --- |
-| 0 -- 29,590 | 23.79% |
-| 29,591 -- 57,375 | 29.95% |
-| 57,376 -- 59,180 | 35.45% |
-| 59,181 -- 93,000 | 37.17% |
-| 93,001 -- 114,750 | 38% |
-| 114,751 -- 150,000 | 43.5% |
-| 150,001 -- 158,468 | 47% |
-| 158,469 -- 220,000 | 50% |
-| 220,001+ | 54% |
+## The method, step by step
 
-### Conservative Defaults
+### Assemble the return and the review file
 
-**Conservative Defaults**
+1. Reconcile T4, T4A, T5, T3, pension and EI slips with records, including multiple seasonal employers. Include taxable investment and foreign income; do not infer taxable income from gross salary. Complete the federal T1 steps before the provincial calculation. Business income and substantiated expenses go through T2125; farming and fishing need their own statements and inventory/CCA records.
+2. Determine the correct province and special-return route. December residence normally controls an individual's province, not the employer's office. Newcomers/emigrants, deaths, bankruptcy, non-residents and business income allocated across provinces need the applicable annual instructions, proration and, where required, T2203. They are not all automatically ineligible.
+3. Apply each provincial band only to its portion of taxable income. Apply the provincial credit rate to eligible credit bases, not the taxpayer's top marginal rate. Keep base CPP/EI credit amounts distinct from deductions for additional CPP; never duplicate the same amount as both a deduction and a credit.
+4. Use the year's provincial 428 form for tax, non-refundable credits, additions and reductions. Non-refundable credits normally stop at provincial tax owing. Use only authorised transfer/carryover rules; a family credit does not become two credits because two returns are filed.
+5. Reconcile provincial tax to T1 line 42800. Enter refundable provincial credits only through the actual year's specified schedule and T1 line 47900 where directed. Separately display benefit payments administered by the CRA; they are not an automatic offset of the T1 balance.
+6. Complete federal tax, provincial adjustments, CPP, EI where applicable, instalments, tax withheld and other refundable items before calculating the T1 balance. The gross provincial figure or a combined marginal rate cannot establish a refund.
+7. In CRA-certified NETFILE software select the correct province and year, review all generated schedules and validation messages, and submit only after the taxpayer or authorised representative approves. Save the submission confirmation and filed schedules. If using paper, use the year's package and attach the specified forms and certificates. CRA My Account is for account access and the resulting assessment, not a substitute for the NETFILE return.
+8. Compare the notice of assessment with the approved computation and carryover schedules, check the balance and benefit notices, and retain source documents. For an error, wait for the assessment, then use CRA account > Tax returns > Change my return, or the permitted ReFILE/paper route. Save the adjustment confirmation; elections, benefit applications and personal-detail updates can have separate procedures. [CRA change-a-return instructions](https://www.canada.ca/en/services/taxes/income-tax/personal-income-tax/after-you-file/change-return.html).
 
-| Ambiguity | Default |
-| --- | --- |
-| Unknown residency province on Dec 31 | Do not compute -- confirm province |
-| Unknown marital/family status | Single, no dependants |
+### Federal tax, capital income and planning
 
-## Section 2 -- Classification and Filing
+Calculate federal tax separately using the current federal table. For ordinary income the marginal rate before credits is the sum of the two rates that apply at that exact income. Do not reuse a combined table with obsolete thresholds, or apply the ordinary-income rate directly to cash dividends or a gross capital gain. [CRA 2026 rates](https://www.canada.ca/en/revenue-agency/services/tax/individuals/tax-rates-brackets/current-year.html).
 
-### 2.1 T1 Structure
+Canadian eligible and other-than-eligible dividends require the appropriate federal gross-up followed by the province's dividend tax credit on the taxable amount. Source the actual slip classification; do not assume every small-company dividend has the same treatment. Capital transactions require capital-versus-business classification, adjusted cost base, proceeds, losses, the applicable inclusion rule and any supported exemption. Principal-residence relief requires the designation and factual tests, not an automatic exemption for any home sale. For a qualifying-business or farm/fishing exemption, establish the ownership, asset and use tests and current indexed limit rather than using the old guide's generic ceiling.
 
-**T1 Structure**
+Load `ca-fed-t1-return`, `ca-fed-cpp-ei` and `ca-capital-gains` for those federal jobs, and verify their current periods before use. RRSP deductions, pension splitting, incorporation, donations, employment expenses, CCA and loss timing need a comparison using actual taxable income, deduction room, eligibility, cash requirements and benefit effects. Do not recommend incorporation using a single combined corporate rate, or claim a deduction saves the same rate for every dollar. Do not silently alter another skill to resolve an inconsistency.
 
-| Schedule | Purpose |
-| --- | --- |
-| T1 General | Federal return |
-| Form NS428 | Nova Scotia Tax and Credits |
-| Form NS479 | Nova Scotia Credits (refundable) |
+### HST and provincial programmes are separate
 
-### 2.2 Provincial Non-Refundable Credits (Form NS428)
+HST is a supply tax, not an individual income-tax bracket. Determine taxable, zero-rated or exempt status and place of supply first. Reconcile tax collected and eligible input tax credits through `canada-gst-hst`. Small-supplier registration, new-housing rebates and point-of-sale relief each have their own tests. This return skill does not authorise the old generic housing-rebate ceilings or an assumed provincial children's-clothing/book rebate. [CRA place-of-supply and HST-rate instructions](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/charge-collect-which-rate.html).
 
-**Provincial Non-Refundable Credits (Form NS428)**
+### Indexed credits, separate age credit and family programmes
 
-| Credit | Amount (2025) | Rate |
-| --- | --- | --- |
-| Basic personal amount | $8,481 | 8.79% |
-| Spousal / common-law partner | $8,481 | 8.79% |
-| CPP/EI contributions | Actual | 8.79% |
-| Age amount | $4,141 | 8.79% |
-| Pension income | Up to $1,000 | 8.79% |
-| Disability | $8,015 | 8.79% |
-| Tuition | Actual | 8.79% |
-| Medical expenses | Excess over 3% of net income | 8.79% |
-| Donations | First $200 at 8.79%; excess at 21% | Non-refundable |
-| Volunteer firefighter / SAR | $3,000 | 8.79% |
+The 2026 provincial indexation notice and current table replace the old frozen thresholds and the income-reduced basic-personal supplement. Do not reapply an obsolete maximum-income restriction to the 2026 basic personal/spouse/eligible-dependant maxima. The ordinary age **base** is different from the separate CAD 1,000 age **tax credit** with its taxable-income condition. Eligibility, spouse income, support, the chosen claimant and available tax still matter. [Current indexation table](https://www.novascotia.ca/personal-income-tax-rates-and-indexation); [indexation notice](https://notices.novascotia.ca/files/ftb-taxation/ftb-tn-personal-income-tax-indexation-update-2025-12-31.pdf); [age-tax-credit factsheet](https://www.novascotia.ca/sites/default/files/documents/1-3953/tax-101-personal-income-tax-age-tax-credit-en.pdf).
 
-### 2.3 Nova Scotia Refundable Credits (Form NS479)
+For the **2025 historical annual filing map**, NS428 Part A computes tax, Part B non-refundable bases and Part C provincial tax/adjustments/reductions. Pension base is capped at CAD 1,173 in that actual-year guide, not the old CAD 1,000. Tuition and education use NS(S11), eligible written current-year transfers and assessed carryforwards; old carryforwards do not transfer freely. Medical claims need the applicable twelve-month period, reimbursements and the actual annual threshold worksheet, not a blanket deduction of only 3% without checking the cap. Use actual disability certification/transfer rules rather than the old unsupported CAD 8,015. Donations need eligible receipts and the current-year provincial schedule. [2025 NS instructions](https://www.canada.ca/en/revenue-agency/services/forms-publications/tax-packages-years/general-income-tax-benefit-package/nova-scotia/5003-pc.html).
 
-**Nova Scotia Refundable Credits (Form NS479)**
+The 2025 NS guide also sets the other-than-eligible dividend credit at 1.5%, replacing the old 2.99% assertion for that year. The current 2026 ordinary credit percentages/limits not explicitly confirmed in the current source table are held under Sources; do not assume federal and provincial changes occur together. Pension splitting, disability transfer and tuition allocation need the actual taxpayer/dependant facts before deciding the claimant. [2025 annual changes](https://www.canada.ca/en/revenue-agency/services/forms-publications/tax-packages-years/general-income-tax-benefit-package/nova-scotia/5003-pc.html).
 
-| Credit | Detail |
-| --- | --- |
-| Affordable Living Tax Credit | $255/individual; $60/child; income-tested |
-| Poverty Reduction Credit | $250/adult + $200/child; income < $16,000 (single) |
-| Nova Scotia Child Benefit | $150/child quarterly; income-tested |
-| Graduate Scholarship Tax Credit | Rebate on first 3 years of income tax for NS university/college graduates |
-| Digital Media Tax Credit | For qualifying digital media companies (corporate) |
+The low-income reduction is a family-based, non-refundable calculation with a sole claimant, not a refundable benefit. The 2025 instructions distinguish the spouse/eligible-dependant addition and other qualifying children and prohibit counting the same child twice. Do not reuse the old invented higher family-income starting threshold without the actual year's law/form. The exact current formula remains held until its readable source is obtained. ALTC and the NS child benefit are separate CRA cash payments with explicitly dated benefit periods, in the table. There is no supported “NS-BEN” application in the package read. The Poverty Reduction Credit, temporary cost-of-living assistance and graduate-retention/scholarship-rebate claims need their own current programme evidence; no old benefit maximum or first-three-years rebate is authorised by this skill. [2025 NS tax map](https://www.canada.ca/en/revenue-agency/services/forms-publications/tax-packages-years/general-income-tax-benefit-package/nova-scotia/5003-pc.html); [CRA current benefits](https://www.canada.ca/en/revenue-agency/services/child-family-benefits/provincial-territorial-programs/province-nova-scotia.html).
 
-## Section 3 -- Computation Method
+The volunteer credit is **CAD 500 refundable**, subject to service and reporting conditions, not a CAD 3,000 federal base copied into the provincial return or CAD 500 multiplied by 8.79%. Its six-month/participation/reporting conditions differ from the federal eligible-hours rule. The historical 2025 claim is NS479 line 1. [Current provincial volunteer programme](https://www.novascotia.ca/volunteer-firefighter-and-ground-search-and-rescue-worker-tax-credit); [2025 NS479 instructions](https://www.canada.ca/en/revenue-agency/services/forms-publications/tax-packages-years/general-income-tax-benefit-package/nova-scotia/5003-pc.html).
 
-### Step 1: Calculate Taxable Income
+### Corporate incentives and retained specialist topics
 
-- **Calculate Taxable Income** — Same as federal taxable income (Line 26000).  _(Line 26000)_
+A business-owner's T1 is not a corporation's incentive claim. Digital media requires an eligible corporation/product and certificate; the formula, regional test, cost base, assistance and expiry are in `ns-tax-credits`. Capital investment and research credits likewise require corporate/property/work eligibility and separate application evidence. No corporate refundable amount belongs on an employee's personal return merely because the employee works on the project.
 
-### Step 2: Apply Nova Scotia Bracket Rates
+NS HST is 14% from 1 April 2025 under the actual supply/transition rules. Separate the HST return, input tax credits, new-housing relief and point-of-sale exceptions from this T1 computation. Do not repeat the old general 15%, housing “36% below CAD 481,500” or blanket rebate assertions. A principal-residence sale still needs its designation and tests. A business commute across the provincial border does not select province from where the day's work occurred. Multiple employers, seasonal income, EI and CPP require full slip reconciliation. Self-employment CPP includes current contribution ceilings and additional CPP, so the old one-band contribution formula is not reused. [CRA HST](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/charge-collect-which-rate.html).
 
-- **Apply Nova Scotia Bracket Rates** — First $29,590 × 8.79%; $29,591 to $59,180 × 14.95%; $59,181 to $93,000 × 16.67%; $93,001 to $150,000 × 17.5%; Above $150,000 × 21%
+### Filing dates and the actual form year
 
-### Step 3: Subtract Non-Refundable Tax Credits
+For ordinary 2026 individual returns, ITA section 150(1)(d) gives the following-year filing rule: 30 April 2027 ordinarily; 15 June 2027 where the individual or their spouse/common-law partner carried on a qualifying business, subject to the statutory exceptions. Deaths and other special returns have different clocks. The later business filing date does not itself extend the balance-payment deadline. [ITA section 150](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-150.html).
 
-- **Subtract Non-Refundable Tax Credits** — Total credit amounts × 8.79% (lowest bracket rate).
+The annual provincial instructions read for this rewrite are the **2025 tax year, 2025-2026 filing cycle**, not final 2026 annual forms. Those instructions are used below only for the explicitly dated filing map and historical credit details. Do not put a 2026 figure on a 2025 return or assume a 2025 line number is final for 2026. Verify the released 2026 package before filing. For payments, current interest, instalment requirements and penalties, load the current federal filing/payment rules and the taxpayer's CRA account notices; the old guide's unsupported penalty/interest estimate is not a payment instruction.
 
-### Step 4: Net Provincial Tax
+## Worked cases
 
-- **Net Provincial Tax** — Gross provincial tax less credits.
+### Retained CAD 75,000 employment workpaper, corrected provincial slice
 
-### Step 5: Apply Refundable Credits
+Assume an ordinary full-year NS resident, taxable income after deductions CAD 75,000, the 2026 basic personal base and no age/dependant/other provincial credits. For this illustration the separately verified provincial CPP and EI **credit dollars** supplied by the return workpaper are CAD 400 and CAD 100. These are example inputs, not maximum statutory contributions. Apply all three applicable indexed bands, then the basic-personal and supplied credits. The result below is only the provincial slice, not net pay or a federal/provincial final balance. The old frozen-band CAD 9,662 gross/CAD 8,485 net and combined CAD 19,737 are not carried forward. [2026 bands and bases](https://www.novascotia.ca/personal-income-tax-rates-and-indexation).
 
-- **Apply Refundable Credits** — Subtract applicable refundable credits.
-
-## Section 4 -- HST Considerations
-
-**HST Considerations**
-
-| Item | Detail |
-| --- | --- |
-| HST rate | 15% (5% federal + 10% provincial) |
-| HST registrant (business) | Full input tax credit (ITC) available for HST paid on business purchases |
-| Small supplier threshold | $30,000 in 4 consecutive quarters |
-| Point-of-sale rebate | Provincial portion rebated on certain items (children's clothing, books, etc.) |
-| New Housing Rebate | Provincial rebate on new homes up to $481,500 (36% of provincial HST) |
-
-## Section 5 -- Income Types and Dividend Tax Credits
-
-### 5.1 Nova Scotia Dividend Tax Credit
-
-**Nova Scotia Dividend Tax Credit**
-
-| Dividend Type | Federal Gross-Up | NS Credit Rate |
-| --- | --- | --- |
-| Eligible dividends (public corps) | 38% gross-up | 8.85% of taxable amount |
-| Non-eligible dividends (CCPCs) | 15% gross-up | 2.99% of taxable amount |
-
-### 5.2 Capital Gains
-
-- 50% inclusion rate for all capital gains; the proposed 66.67% increase and $250,000 threshold were cancelled March 21, 2025
-- Lifetime Capital Gains Exemption: $1,250,000 on qualifying small business shares (2025)
-- Principal residence exemption: fully exempt from CGT
-
-### 5.3 Self-Employment Income
-
-Self-employed Nova Scotians report on T2125. Combined federal + NS rate on business income ranges from 23.79% to 54%. CPP contributions required (both employer and employee portions: 2 × 5.95% = 11.9% on pensionable earnings $3,500 -- $71,300).
-
-## Section 6 -- Edge Cases
-
-### 6.1 Nova Scotia Graduate Scholarship
-
-Graduates of Nova Scotia post-secondary institutions may claim a tax credit equal to their provincial tax for the first 3 years of post-graduation employment in NS (up to total tuition paid). Must apply through NS Department of Finance.
-
-### 6.1 Nova Scotia Graduate Scholarship
-
-**Nova Scotia Graduate Scholarship Detail**
-
-| Element | Detail |
-| --- | --- |
-| Eligible programs | Degrees/diplomas from NS universities and NSCC |
-| Maximum benefit | Up to total tuition paid at NS institution |
-| Duration | First 3 taxation years after graduation |
-| Residency | Must live and work in NS |
-| Application | Separate application to NS Dept of Finance (not automatic) |
-
-### 6.2 Cost of Living Credit (Temporary)
-
-NS has periodically introduced temporary cost-of-living credits. Check current year budget for any one-time payments.
-
-### 6.3 Highest Combined Rate
-
-At 54% combined marginal rate (over $220K), Nova Scotia has one of the highest combined rates in Canada. Tax planning considerations:
-- Income splitting with spouse (pension income splitting via T1032)
-- Incorporation of professional practice (small business rate ~26% combined)
-- RRSP contributions (full deduction at marginal rate, withdrawal at lower rate)
-- Charitable donations (NS credit at 21% on amounts over $200)
-
-### 6.4 NS Affordable Living Tax Credit Detail
-
-**NS Affordable Living Tax Credit Detail**
-
-| Element | Detail |
-| --- | --- |
-| Individual amount | $255 |
-| Spouse/partner | $255 |
-| Per child under 19 | $60 |
-| Income threshold (reduction starts) | $30,000 (individual); $34,000 (family) |
-| Reduction rate | 5% of income over threshold |
-| Paid via | Quarterly payments through CRA |
-
-### 6.5 Disability Amount Transfer
-
-- **Disability Amount Transfer** — A Nova Scotia resident supporting a dependant with a disability may claim the unused portion of the dependant's NS disability credit ($8,015 × 8.79%). The dependant must first use the credit against their own provincial tax.  _($8,015 × 8.79%)_
-
-### Single taxpayer, employment income $75,000 (2025)
-
-**Single taxpayer, employment income $75,000 (2025)**
-
-| Step | Calculation | Amount |
-| --- | --- | --- |
-| Taxable income |  | $75,000 |
-| NS tax on first $29,590 | $29,590 × 8.79% | $2,601 |
-| NS tax on $29,591 -- $59,180 | $29,590 × 14.95% | $4,424 |
-| NS tax on $59,181 -- $75,000 | $15,820 × 16.67% | $2,637 |
-| Gross NS provincial tax |  | $9,662 |
-| Less: Basic personal credit | $8,481 × 8.79% | ($745) |
-| Less: CPP credit | ~$3,867 × 8.79% | ($340) |
-| Less: EI credit | ~$1,049 × 8.79% | ($92) |
-| Net NS provincial tax |  | $8,485 |
-| Federal tax (for reference) |  | $11,252 |
-| Total combined tax (approx.) |  | $19,737 |
-| Effective combined rate |  | ~26.3% |
-
-## Section 7 -- Worked Example
-
-## Section 6 -- Prohibitions
-
-- **Prohibitions** — - NEVER apply other provincial rates to a Nova Scotia resident - NEVER separate HST into GST + PST for filing purposes -- Nova Scotia uses harmonized HST - NEVER claim Nova Scotia credits without confirming NS residency on December 31 - NEVER ignore the five-bracket structure - NEVER present tax calculations as definitive -- always label as estimated
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, CGA, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
+```oa-check
+name: NS employment provincial slice indexed 2026
+inputs:
+  income: 75000
+  bpa: 11932
+  cpp_credit: 400
+  ei_credit: 100
+steps:
+  - band_1: max(0, min(income, 30995) - 0) * .0879
+  - band_2: max(0, min(income, 61991) - 30995) * .1495
+  - band_3: max(0, min(income, 97417) - 61991) * .1667
+  - band_4: max(0, min(income, 157124) - 97417) * .175
+  - band_5: max(0, income - 157124) * .21
+  - gross_tax: band_1 + band_2 + band_3 + band_4 + band_5
+  - bpa_credit: bpa * 0.0879
+  - provincial_tax: round(max(0, gross_tax - bpa_credit - cpp_credit - ei_credit), 2)
+expected:
+  gross_tax: 9526.9628
+  provincial_tax: 7978.14
+```
+
+### Family benefit comparison across the income threshold
+
+For the **July 2026-June 2027 ALTC period**, assume the claimant meets all benefit conditions and has two qualifying children. At AFNI CAD 25,000 the annual entitlement is CAD 375, or an illustrative full-quarter CAD 93.75. A couple with one qualifying child and AFNI CAD 40,000 has a maximum CAD 315 before a CAD 500 reduction, so entitlement is zero. These use the assessed income for the benefit period, not automatically current employment income or a deduction from T1 tax. [CRA current NS benefit page](https://www.canada.ca/en/revenue-agency/services/child-family-benefits/provincial-territorial-programs/province-nova-scotia.html).
+
+```oa-check
+name: NS ALTC family-period comparison July 2026 June 2027
+inputs:
+  income_a: 25000
+  children_a: 2
+  income_b: 40000
+  children_b: 1
+steps:
+  - annual_a: max(0, 255 + children_a * 60 - max(0, income_a - 30000) * 0.05)
+  - quarter_a: annual_a / 4
+  - annual_b: max(0, 255 + children_b * 60 - max(0, income_b - 30000) * 0.05)
+expected:
+  annual_a: 375
+  quarter_a: 93.75
+  annual_b: 0
+```
+
+## When to refuse or refer
+
+- Stop the final calculation when residence, year, taxable income, family status, credit evidence or a current source needed for the answer is missing. State the exact missing fact; do not invent a conservative numeric default or relabel a prior-year amount as current.
+- Refer special returns, disputed residence, multiple-province business allocation, treaty income, minimum tax, tax on split income, Indigenous tax exemptions, trusts and corporate claims to the relevant specialist workflow. Do not turn “outside this ordinary computation” into an unsupported statement that no relief exists.
+- Do not substitute payroll withholding for annual tax, cash benefits for non-refundable credits, a provincial label for a federal credit, or a corporation's incentive for its shareholder's personal credit.
+- Do not promise a refund, investment eligibility, programme funding, investment value or professional approval. Obtain the relevant certificate and calculate tax and cash payments separately. Keep records supporting shared claims, carryovers, amendments and recapture.
+
+## Sources
+
+| Official source and scope actually read | URL | Read on |
+|---|---|---|
+| Read for: NS current indexation page: complete 2026 brackets, annual indexation and current principal credit bases | https://www.novascotia.ca/personal-income-tax-rates-and-indexation | 2026-11-14 |
+| Read for: NS indexation notice, both pages: 2024/2025/2026 bases and elimination of old income-based supplement reduction | https://notices.novascotia.ca/files/ftb-taxation/ftb-tn-personal-income-tax-indexation-update-2025-12-31.pdf | 2026-11-14 |
+| Read for: NS age-tax-credit factsheet: separate current CAD 1,000 credit, age/residence and taxable-income conditions | https://www.novascotia.ca/sites/default/files/documents/1-3953/tax-101-personal-income-tax-age-tax-credit-en.pdf | 2026-11-14 |
+| Read for: CRA 2025 NS annual guide: actual-year changes, pension/tuition, Parts A-C, low-income family rules, NS479 and historical filing boxes | https://www.canada.ca/en/revenue-agency/services/forms-publications/tax-packages-years/general-income-tax-benefit-package/nova-scotia/5003-pc.html | 2026-11-14 |
+| Read for: NS volunteer programme: current refundable-dollar amount, qualifying service and annual reports | https://www.novascotia.ca/volunteer-firefighter-and-ground-search-and-rescue-worker-tax-credit | 2026-11-14 |
+| Read for: CRA NS benefit page: July 2026-June 2027 ALTC formula, monthly child benefit and AFNI tests | https://www.canada.ca/en/revenue-agency/services/child-family-benefits/provincial-territorial-programs/province-nova-scotia.html | 2026-11-14 |
+| Read for: CRA 2026 rate page: federal ordinary-income bands | https://www.canada.ca/en/revenue-agency/services/tax/individuals/tax-rates-brackets/current-year.html | 2026-11-14 |
+| Read for: CRA HST page: NS 14% effective date and supply/transition rules | https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/charge-collect-which-rate.html | 2026-11-14 |
+| Read for: ITA section 150(1)(b),(d): filing dates and exceptions | https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-150.html | 2026-11-14 |
+| Read for: CRA change-return instructions: assessment prerequisite and actual correction route | https://www.canada.ca/en/services/taxes/income-tax/personal-income-tax/after-you-file/change-return.html | 2026-11-14 |
+
+Not yet confirmed: Final 2026 NS428/NS479/tuition annual forms and box numbers; exact 2026 LITR formula/threshold and current pension, disability, medical, donation and dividend-credit figures beyond the sourced indexed maxima (the legislature PDF and annual NS428 PDF could not be read); current Poverty Reduction Credit, graduate retention/scholarship rebate and temporary cost-of-living programmes; 2026 housing/POS rebate ceilings, federal CPP/LCGE/capital-inclusion figures and blanket incorporation-rate comparison. The scoped 2025 figures are historical, not default 2026 values.

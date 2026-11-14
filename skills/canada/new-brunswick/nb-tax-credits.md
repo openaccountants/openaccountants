@@ -1,240 +1,182 @@
 ---
 name: nb-tax-credits
-description: Use this skill for New Brunswick provincial tax credits — NB Low-Income Tax Reduction, NB Harmonized Sales Tax Credit, Seniors' Home Renovation Tax Credit, Tuition Amount, NB Small Business Investor Tax Credit (refundable 50% for individuals), NB Film Tax Credit. Triggers "New Brunswick tax credits", "Form NB428", "NB Small Business Investor Tax Credit", "NB seniors home renovation".
+description: "New Brunswick 2026 tax-credit decisions: non-refundable SBITC with dated strategic-sector changes, CRA benefit formulas, historical 2025 LITR and seniors-renovation filing instructions, R&D and current film-grant routing."
 jurisdiction: CA
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
+version: "2.0"
+category: international
+type: situation-rules
 ---
 
-# NB Tax Credits
+# New Brunswick tax credits v2.0
 
-## New Brunswick — Provincial Tax Credits — Skill v1.0
+## Scope
 
-This skill catalogues the principal New Brunswick (NB) provincial tax credits available to individuals and corporations for the 2025 tax year. It complements `nb-individual-return.md` (the Form NB428 computation skill) by isolating the credit mechanics, eligibility tests, application procedures, and refundability rules. NB administers most personal credits through the CRA via the federal–provincial Tax Collection Agreement; the NB Small Business Investor Tax Credit (NB SBITC) and the NB Film Tax Credit are administered directly by the Province (Department of Finance and Treasury Board and Opportunities NB).
+Apply New Brunswick's individual and corporate credit conditions for **2026**, in CAD, while keeping historical **2025-2026 filing-cycle** references clearly dated. This companion to `nb-individual-return` distinguishes non-refundable provincial tax reductions, refundable return credits, separate CRA benefit payments and provincial grants. It is not an approved accountant's publication.
 
-## 1. Quick reference — personal + corporate credit summary
+### Quick reference: decide the claim route first
 
-### Personal credits (claimed on Form NB428 or via CRA)
+| Item | Figure and conditions | Official source |
+|---|---|---|
+| 2026 basic personal amount | CAD 13,664 base; credit at 9.4%, limited by NB tax | https://www.canada.ca/en/revenue-agency/services/forms-publications/payroll/t4032-payroll-deductions-tables/t4032nb-jan/t4032nb-january-general-information.html |
+| 2025 LITR, historical filing cycle | CAD 802 basic plus CAD 802 spouse OR eligible dependant; maximum CAD 1,604; subtract 3% of adjusted family income above CAD 21,920; non-refundable; unused spouse transfer permitted | https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5004-c/5004-c-25e.pdf |
+| 2025 pension amount, historical filing cycle | Lesser of eligible federal pension amount and CAD 1,000; credit at 9.4% | https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5004-c/5004-c-25e.pdf |
+| 2025 seniors renovation, historical filing cycle | 10% of eligible expenses up to a shared CAD 10,000 base; refundable through Schedule NB(S12), subject to principal-residence and senior tests | https://www.canada.ca/en/revenue-agency/services/forms-publications/tax-packages-years/general-income-tax-benefit-package/new-brunswick/5004-pc.html |
+| NBHST credit, current programme | Annual maximum CAD 300 individual + CAD 300 spouse + CAD 100 per child under 19; first child of single parent CAD 300 instead; reduce by 2% of AFNI above CAD 35,000; quarterly CRA payment | https://www.canada.ca/en/revenue-agency/services/child-family-benefits/provincial-territorial-programs/province-new-brunswick.html |
+| 2025 tuition credit, historical filing cycle | Eligible provincial tuition base at 9.4%; use NB(S11), assessed carryovers and permitted transfer only | https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5004-c/5004-c-25e.pdf |
+| NB research and development credit | 15% of eligible SR&ED expenditure; fully refundable after provincial tax, not limited to profitable corporations | https://www2.gnb.ca/content/gnb/en/departments/finance/taxes/taxcredit.html |
+| Current LIFT micro-production grant | Up to 30% of total NB spend, maximum CAD 100,000; budget below CAD 400,000; discretionary grant, not an automatic T2 tax credit | https://www.gnb.ca/en/topic/culture-heritage/grants-finance/investment-production.html |
+| Current LIFT major-production grant | Up to 25% base plus bonuses to 35% of total NB spend; budget above CAD 400,000; actual approval and funding required | https://www.gnb.ca/en/topic/culture-heritage/grants-finance/investment-production.html |
 
-**Personal credits table**  _(Schedule on NB428 / Schedule NB(S12) / Schedule NB(S11) / NB-SBITC-1 certificate from NB Finance)_
+| Item | Figure and conditions | Official source |
+|---|---|---|
+| Individual SBITC, non-strategic | 50% of eligible investment up to CAD 250,000; maximum CAD 125,000 credit; non-refundable | https://www.gnb.ca/en/topic/business-economy/taxes/business-investor-credit.html |
+| Individual SBITC, strategic after 17 March 2026 | 50% of eligible investment up to CAD 1,000,000; maximum CAD 500,000 credit; requires the prescribed strategic-sector classification | https://www.gnb.ca/en/topic/business-economy/taxes/business-investor-credit.html |
+| Corporation/trust SBITC after 17 March 2026 | 25%; non-strategic investment cap CAD 500,000 / credit CAD 125,000; strategic investment cap CAD 1,000,000 / credit CAD 250,000; non-refundable | https://www.gnb.ca/en/topic/business-economy/taxes/business-investor-credit.html |
+| Combined SBITC investment ceiling | CAD 1,000,000 across strategic and non-strategic investments; apply investor-category and year limits before claiming | https://www.gnb.ca/en/topic/business-economy/taxes/business-investor-credit.html |
+| Unused SBITC | Carry back three years or forward seven years, subject to tax, the applicable-year limits and amounts already used; not a cash refund | https://www.gnb.ca/en/topic/business-economy/taxes/business-investor-credit.html |
+| Holding restriction | Four years after issue/purchase as applicable; early redemption or disposal can trigger repayment; statutory exceptions need separate review | https://laws.gnb.ca/en/document/cs/2016,%20c.112 |
 
-| Credit | Type | 2025 amount / rate | Mechanism |
-| --- | --- | --- | --- |
-| NB Low-Income Tax Reduction (LITR) | Non-refundable | Reduces NB tax to zero up to threshold; phase-out 3% | Schedule on NB428 |
-| NB Harmonized Sales Tax Credit (NBHSTC) | Refundable | $300 / adult + $100 / child; quarterly | Auto via T1 (CRA) |
-| NB Seniors' Home Renovation Tax Credit | Refundable | 10% × eligible expenses, max $10,000 base → $1,000 credit | Schedule NB(S12) |
-| NB Tuition Amount | Non-refundable | 9.40% × eligible tuition fees (post-secondary) | Schedule NB(S11) |
-| NB Small Business Investor Tax Credit (individuals) | **Refundable** | **50%** of eligible investment; max $250,000 invested → $125,000 credit / year | NB-SBITC-1 certificate from NB Finance |
+## Ask the client first
 
-### Corporate / business credits
+1. Which tax year and benefit-payment period, and which province on the last day of the year? Obtain arrival, departure, death and interprovincial moving dates, Canadian residence status and every business permanent establishment.
+2. What are taxable income, net income and adjusted family net income, separately? Obtain all slips, foreign income, deductions, CPP/EI details and the spouse's return. Do not default an unknown marital status to single.
+3. Which age, dependant, disability, pension, tuition, medical, donation, volunteer and investment facts apply? Obtain certificates, receipts, shared claims and carryover assessments before using a credit.
+4. Is this an individual, an unincorporated business or a corporation? Identify self-employment, farming/fishing, instalments and prior assessments. A corporate credit cannot be placed on a personal return.
+5. What is the requested output: a planning estimate, the actual annual filing or a separate CRA-administered benefit calculation? Do not call a partial provincial computation a final refund.
 
-**Corporate credits table**  _(NB-SBITC-1 certificate / Application via NB Film / Schedule 360 (federal T2))_
+For investment claims additionally obtain the complete specified-issue registration, Minister's certificate, share/debenture terms, bank evidence of payment, investment and disposal dates, connected persons and earlier usage. For renovations obtain the senior's age, family relationship, principal residence, expected occupancy, invoices, who paid and assistance. For corporate film/R&D work obtain establishment, activity, project dates, labour/cost records, assistance, approvals and tax years.
 
-| Credit | Type | 2025 amount / rate | Mechanism |
-| --- | --- | --- | --- |
-| NB SBITC (corporations & trusts) | Non-refundable, 7-year carry-forward | 15% × eligible investment; max $500,000 invested → $75,000 credit / year | NB-SBITC-1 certificate |
-| NB Film Tax Credit | Refundable | 25% (resident labour) – 30% (with bonus) of eligible NB labour | Application via NB Film |
-| NB Research and Development Tax Credit | Refundable | 15% of eligible SR&ED expenditures | Schedule 360 (federal T2) |
+## The method, step by step
 
-## 2. Required inputs + refusal catalogue
+### Family income and the low-income reduction
 
-### Required inputs (always collect before quoting numbers)
+Reconcile both family members' net income and the form's adjusted-family-income additions and subtractions. A marital change is a fact to investigate and report, not permission to assume the lower single threshold. For **2025 only**, the actual NB428 formula is `max(0, 802 + qualifying_spouse_or_eligible_dependant_802 - 3% * max(0, adjusted_family_income - 21920))`, capped by the available NB tax. The spouse and eligible-dependant additions are alternatives; the family maximum is CAD 1,604. The other spouse may use the authorised unused amount, so choosing the first claimant and recording the transfer matters. [2025 NB428, pages 3-4](https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5004-c/5004-c-25e.pdf).
 
-- **Tax year** — Confirm 2025 (calendar) or fiscal year for corporates.  _(Section 2)_
-- **Province of residence on 31 Dec 2025** — Must be NB for personal credits (R1 refusal if not).  _(Section 2)_
-- **Family net income** — Line 23600 + spouse, for LITR and NBHSTC.  _(Section 2)_
-- **Age and disability status** — Of taxpayer/spouse for the Seniors' Home Renovation Tax Credit.  _(Section 2)_
-- **NB SBITC certificate (NB-SBITC-1)** — Required before claim; obtained from NB Finance after the eligible business issues qualifying shares.  _(Section 2)_
-- **Eligible expense documentation** — Invoices, paid receipts, contractor licence info for the Seniors' Home Renovation credit.  _(Section 2)_
-- **Eligible NB-resident labour breakdown** — For the NB Film Tax Credit.  _(Section 2)_
+The 2025 form's preliminary eligibility screens are net income below CAD 48,653 for a single claimant or adjusted family income below CAD 75,387 where there is a spouse/eligible dependant. Those screens are not the phase-out's starting threshold. The old guide's CAD 818/1,326/674 and approximate CAD 20,851/35,851 set did not match that actual-year form and is not a 2026 substitute. Death and special returns need their specific annual provisions; the 2025 instructions expressly allow the deceased spouse amount and authorised unused transfer. [2025 CRA instructions](https://www.canada.ca/en/revenue-agency/services/forms-publications/tax-packages-years/general-income-tax-benefit-package/new-brunswick/5004-pc.html).
 
-### Refusal catalogue
+### CRA-paid benefits, not a refund line invented on NB428
 
-- **R-NB-C-1** — Non-resident of NB on 31 Dec 2025 — defer to province of residence; do not file NB428.  _(R-NB-C-1)_
-- **R-NB-C-2** — Part-year NB resident — out of scope; refer to credentialed reviewer (proration of LITR and refundable credits is non-trivial).  _(R-NB-C-2)_
-- **R-NB-C-3** — NB SBITC claim where the investor is connected to the issuing corporation (>10% control, or director/officer with prescribed exceptions) — refer to NB Finance; eligibility requires written confirmation.  _(R-NB-C-3)_
-- **R-NB-C-4** — NB Film Tax Credit for a production that has NOT received a Part A certificate from NB Film before principal photography — out of scope.  _(R-NB-C-4)_
-- **R-NB-C-5** — Retroactive claims older than statutory amendment window (T1: 10 calendar years; SBITC: per certificate terms) — refer to credentialed reviewer.  _(R-NB-C-5)_
-- **R-NB-C-6** — Any claim involving non-arm's length transactions or share redemptions inside the SBITC 4-year hold period — out of scope; clawback rules apply.  _(R-NB-C-6)_
+The current NBHSTC formula is in the table: the special single-parent first-child amount must be included before reducing for AFNI. CRA combines it with quarterly federal consumption-tax benefit payments. Obtain the benefit year, prior-year assessed family income, marital changes, custody and the actual CRA determination; do not multiply a monthly child benefit by an assumed full eligibility year and deduct it from income tax. The child tax benefit's current basic monthly amount is up to CAD 20.83 per child under 18, reduced above AFNI CAD 20,000. Working-income and school supplements are separate components with their own tests. [CRA NB benefit page](https://www.canada.ca/en/revenue-agency/services/child-family-benefits/provincial-territorial-programs/province-new-brunswick.html).
 
-## 3. NB Low-Income Tax Reduction (LITR)
+The 2025 annual instructions say to file both required returns for timely automatic calculation. Do not ask for a separate NB479 benefits application where that form is not in the actual package. Newcomers, status/custody changes and non-filers need the applicable CRA benefit application/update process; the old RC151/RC65 references do not establish the current eligibility year, current amount or income-tax claim. [CRA 2025 benefit instructions](https://www.canada.ca/en/revenue-agency/services/forms-publications/tax-packages-years/general-income-tax-benefit-package/new-brunswick/5004-pc.html).
 
-### Mechanics
+### Seniors' home renovation, 2025 historical filing instructions
 
-- **Type** — Non-refundable. Reduces NB tax (line 42800) to zero but cannot create a refund.  _(Section 3)_
-- **Base reduction (single)** — $818  _(Section 3, Computation (2025))_
-- **Base reduction (family)** — $1,326  _(Section 3, Computation (2025))_
-- **Reduction for dependant spouse / common-law partner** — $674  _(Section 3, Computation (2025))_
-- **Reduction per eligible dependant child under 19** — $674  _(Section 3, Computation (2025))_
-- **Phase-out rate** — 3% percent (of family net income exceeding $20,851 (single) / $35,851 (family))  _(Section 3, Computation (2025))_
-- **Claim point** — Schedule built into Form NB428, Part C.  _(Section 3)_
+A qualifying claimant is an NB resident at year end, aged at least 65 or living/expecting to live with a qualifying senior family member. For 2025 expenses, the guide permits the qualifying residence expected to be occupied by the end of 2027; it is not limited to a home already occupied on the invoice date. The improvement must be enduring, integral and improve access, mobility, function or safety. Ramps, lifts, widened doors, accessible counters, grab bars, non-slip flooring and appropriate lighting can qualify; routine plumbing/roof repairs, aesthetic work, ordinary windows/heating/insulation, portable medical devices, appliances, vehicles, monitoring, homecare and housekeeping do not qualify merely because they help a senior. [CRA 2025 eligibility and exclusions](https://www.canada.ca/en/revenue-agency/services/forms-publications/tax-packages-years/general-income-tax-benefit-package/new-brunswick/5004-pc.html).
 
-### Eligibility
+Reduce expenses by related government assistance other than tax credits. The household/shared-residence cap cannot be multiplied by claimants or successive residences. The 2025 guide provides separate-residence exceptions for qualifying medical separation or a marriage breakdown lasting the specified period; document the actual facts and addresses. A person outside the residence may pay on the eligible resident's behalf if supporting documents are obtained. A qualifying medical-expense claim can coexist for the same qualifying expense under the guide's rules. Death and bankruptcy are not blanket refusals: the guide specifies final-return and pre/post-bankruptcy allocation while preserving the annual shared cap. [CRA 2025 special cases](https://www.canada.ca/en/revenue-agency/services/forms-publications/tax-packages-years/general-income-tax-benefit-package/new-brunswick/5004-pc.html).
 
-- **Eligibility conditions** — Resident of NB on 31 Dec 2025. Filed a T1 General. Only one spouse claims the family reduction.  _(Section 3)_
+Complete NB(S12), calculate 10% of the eligible base up to CAD 10,000 and transfer Schedule 12 line 7 to **T1 line 47900**. On paper attach Schedule 12, retaining invoices and other records rather than sending them all. Do not call this NB428 line 47900, promise a refund without the full T1 or invent a late-January payment extension. Those are 2025 instructions; final 2026 form details remain held.
 
-### Interaction
+### Tuition and other personal credit records
 
-- **Interaction rule** — Applied after non-refundable tax credits but before the LITR cannot reduce NB tax below zero — any excess is forfeit. If both spouses qualify individually, the higher-income spouse generally claims to maximise the reduction; model both ways.  _(Section 3)_
+For 2025, NB(S11) calculates current eligible tuition, use by the student, the permitted transfer and the amount carried forward. Preserve the assessed old-year balance and the student's written designation, and do not transfer a carryforward as current fees. Spouse transfers use the appropriate NB(S2); medical periods, disability certification and donation receipts have separate tests. The old tuition cash-back graduate rebate is closed to new applications, subject to the 2015 Act's narrow savings, and must not be confused with the ordinary tuition credit. [CRA 2025 tuition rules](https://www.canada.ca/en/revenue-agency/services/forms-publications/tax-packages-years/general-income-tax-benefit-package/new-brunswick/5004-pc.html); [2015 chapter 43](https://www2.gnb.ca/content/dam/gnb/Departments/ag-pg/PDF/ActsLois/2015/Chap-43.pdf).
 
-## 4. NB Harmonized Sales Tax Credit (NBHSTC)
+### Small Business Investor Tax Credit
 
-### Mechanics
+The SBITC is non-refundable for individuals as well as corporations and trusts. The word “refundable” in the old personal-credit table and its cash-refund example was wrong. The present programme and Small Business Investor Tax Credit Act sections 20-22 support the rates and caps above. New strategic-sector and corporate rates have their own effective date; do not apply them to an earlier investment merely because the return is prepared now.
 
-- **Type** — Refundable. Paid quarterly alongside the federal GST/HST Credit. Fully integrated administration via CRA — no separate application.  _(Section 4)_
-- **2025 benefit year amount per adult** — $300 CAD (per adult (taxpayer + spouse/common-law partner); benefit year July 2025 – June 2026, based on 2024 return)  _(Section 4)_
-- **2025 benefit year amount per child** — $100 CAD (per child under 19)  _(Section 4)_
-- **Phase-out rate** — 2% percent (of adjusted family net income above $35,000)  _(Section 4)_
+Obtain investor identity, date of payment and issue, security type, specified-issue registration, the Minister's tax credit certificate, issuer business activities and NAICS classification, past share disposals, assistance, connected/control relationships and all earlier claims. Individual investors must meet the province's age/residence requirements; corporate/trust investors have their own establishment and control tests. The registered eligible business must meet the private-business, active-operation, asset, payroll and registration requirements. The current programme uses a group net tangible-asset ceiling, not the old guide's invented employee-count shortcut. Do not infer eligibility from a business's trading address or a “tech” description.
 
-### Eligibility
+The current programme describes a minimum individual investment of CAD 1,000 and age 19; the corporate/trust minimum is CAD 50,000. Issuer registration includes at least three investors and total capital of at least CAD 10,000, group net tangible assets below CAD 50 million and the NB payroll conditions: normally 75%, or 50% where more than half the business's goods/services are exported. Those conditions are cumulative, with the programme's exceptions; record the actual approval rather than making an eligibility certificate from a checklist. [Official programme](https://www.gnb.ca/en/topic/business-economy/taxes/business-investor-credit.html).
 
-- **Eligibility conditions** — Resident of NB at the beginning of the payment month. Age 19+ OR has a spouse OR is a parent. Has filed a 2024 return (even with zero income) — credit is auto-calculated.  _(Section 4)_
+Eligible securities must be newly issued in a registered specified issue and fully paid; replacement securities, issuer-financed purchases and tax-credit avoidance arrangements need the exclusions in sections 1, 3 and the registration provisions. Convertible debentures are now expressly addressed in the amended Act. Do not treat all shares, a purchase from an existing shareholder, an ordinary loan or a discretionary investment as eligible. [Act definitions and registration](https://laws.gnb.ca/en/document/cs/2016,%20c.112).
 
-### Practical notes
+The old guide's blanket refusal for an individual holding 10% is not the Act's general investor test. Section 21's associate definition refers to 10% holdings, but its prohibition is directed to corporate/trust investors obtaining 50% or more of the registered corporation's votes, or otherwise controlling it, alone or with the specified associates/affiliates/shareholders/directors/officers. Check the whole connected arrangement and the registration conditions; do not approve an individual solely because they are below 10% or reject them solely because they are above it. [Act section 21](https://laws.gnb.ca/en/document/cs/2016,%20c.112).
 
-Newcomers to NB file Form RC151 once. Marital status changes must be reported via RC65 to avoid clawback. Direct deposit via CRA "My Account".
+The issuer applies for the certificate within the programme's period after issue; the present programme says within 30 days after the sale, not the old guide's assertion that the issuer creates its own certificate within 90 days. For an individual, use the applicable-year Form T1258, reconcile all NB-SBITC-1 certificates, determine current use and available carryovers and attach the specified evidence on paper. For the 2025 filing cycle the claim is NB428 line 96; the first 60 days' investment election and no-double-claim restriction must be checked. Corporate/trust filing uses its own current form and certificate, not an invented personal NB479 or a generic Schedule 305. [CRA 2025 filing map](https://www.canada.ca/en/revenue-agency/services/forms-publications/tax-packages-years/general-income-tax-benefit-package/new-brunswick/5004-pc.html).
 
-## 5. NB Seniors' Home Renovation Tax Credit
+Retain issue and purchase dates and a four-year monitoring schedule. Do not redeem, dispose, transfer, reorganise or claim hardship as an automatic exception; apply Act sections 26-33 to bankruptcy, loss of eligible status, early redemption, disposal, death and other relevant facts. Record statutory repayment and any permitted exception with its source. A later certificate does not itself waive an investment's holding condition. Federal cost-base, RRSP, capital-gains exemption and other-assistance interactions must be verified separately; there is no blanket permission to stack any federal incentive with this credit.
 
-### Mechanics
+### Corporate research and film work
 
-- **Type** — Refundable.  _(Section 5)_
-- **Rate** — 10% percent (of eligible expenses)  _(Section 5)_
-- **Cap** — Eligible expenses up to $10,000 per year, so maximum credit = $1,000 / year  _(Section 5)_
-- **Claim** — Schedule NB(S12) attached to T1; reported on Form NB428 line 47900.  _(Section 5)_
+For R&D, confirm an NB permanent establishment and actual qualifying work in NB, reconcile eligible SR&ED expenditure with federal definitions and assistance adjustments, and prepare the actual current T2 Schedule 360 and supporting workpapers. The current provincial page confirms the fully refundable 15% enhancement and that unused current enhanced credit does not need a carryover merely because tax is insufficient. Historical non-refundable balances require their own year. Do not treat every software payroll cost as scientific research or stack government assistance without adjusting the base. [GNB R&D explanation](https://www2.gnb.ca/content/gnb/en/departments/finance/taxes/taxcredit.html).
 
-### Eligibility
+The current film-production route read is **LIFT**, a discretionary provincial grant. Its NB-spend rates, budget streams, eligible production-company requirements and application process differ from the old guide's asserted refundable labour tax credit. Incorporated NB-based producers must meet the current ownership/activity requirements and apply through the provincial arts portal; the published round has a 1 December 2026 deadline, and funding is not guaranteed. A pre-project plan, actual financing and full guidelines matter. Do not prepare a purported 25%/30% labour-based T2 claim, enforce invented Part A/Part B tax-credit tests or use an unsupported “50% total cost” cap. Any actual legacy certificate or transition is held for its own legal evidence. [Current LIFT programme](https://www.gnb.ca/en/topic/culture-heritage/grants-finance/investment-production.html).
 
-- **Eligibility conditions** — Taxpayer is 65+ at end of year OR lives with a senior family member who is 65+, OR the senior is the spouse/common-law partner. Renovation is to the principal residence in NB. Purpose: improve accessibility, mobility, or reduce risk of harm for the senior (e.g., grab bars, walk-in tubs, ramps, stair lifts, non-slip flooring, lever handles, widened doorways). Expenses must be paid in the calendar year (or by 31 Jan of the following year for arrangements entered before year-end, per CRA practice).  _(Section 5)_
+### Filing and follow-up
 
-### Ineligible expenses
+For the 2025 filing map, NB428 Part A is tax, Part B non-refundable credits and Part C the remaining provincial-tax computation. T1258/NB-SBITC-1 support SBITC; NB(S11) supports tuition; NB(S12) supports the refundable seniors' credit on T1. Use CRA-certified software/NETFILE for T1 submission, preserve approval and the confirmation, then compare the assessment and carryover balances. Provincial programme applications and corporate returns use their own systems, not the personal return. Once assessed, use the actual CRA change-return process for a correction; the old blanket ten-year amendment promise does not override a programme certificate/application deadline. [CRA change-return process](https://www.canada.ca/en/services/taxes/income-tax/personal-income-tax/after-you-file/change-return.html).
 
-- **Ineligible expenses** — Routine repairs and maintenance (roof, painting, landscaping not accessibility-related). Appliances and electronics not attached to the dwelling. Services performed by a non-arm's length person who is not GST/HST registered.  _(Section 5)_
+### Filing dates and the actual form year
 
-### Documentation
+For ordinary 2026 individual returns, ITA section 150(1)(d) gives the following-year filing rule: 30 April 2027 ordinarily; 15 June 2027 where the individual or their spouse/common-law partner carried on a qualifying business, subject to the statutory exceptions. Deaths and other special returns have different clocks. The later business filing date does not itself extend the balance-payment deadline. [ITA section 150](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-150.html).
 
-Itemised invoices showing GST/HST and contractor's BN. Proof of payment. Photos optional but useful on audit.
+The annual provincial instructions read for this rewrite are the **2025 tax year, 2025-2026 filing cycle**, not final 2026 annual forms. Those instructions are used below only for the explicitly dated filing map and historical credit details. Do not put a 2026 figure on a 2025 return or assume a 2025 line number is final for 2026. Verify the released 2026 package before filing. For payments, current interest, instalment requirements and penalties, load the current federal filing/payment rules and the taxpayer's CRA account notices; the old guide's unsupported penalty/interest estimate is not a payment instruction.
 
-## 6. NB Small Business Investor Tax Credit (NB SBITC)
+## Worked cases
 
-The NB SBITC is one of the most generous angel-investor credits in Canada because the individual rate is refundable at 50%. Most other provinces cap their analogues at 30% non-refundable.
+### Ava: non-refundable investment credit, not CAD 85,200 cash
 
-### Statutory basis
-
-- **Statutory basis** — Small Business Investor Tax Credit Act (SNB 2003, c S-9.05) and regulations. Administered by NB Department of Finance and Treasury Board, Revenue Administration Division.  _(Small Business Investor Tax Credit Act (SNB 2003, c S-9.05))_
-
-### Rates and caps (2025)
-
-**Rates and caps table**  _(Section 6, Rates and caps (2025))_
-
-| Investor type | Rate | Max eligible investment / year | Max credit / year | Refundability |
-| --- | --- | --- | --- | --- |
-| Individual | **50%** | $250,000 | **$125,000** | **Refundable** |
-| Corporation or trust | 15% | $500,000 | $75,000 | Non-refundable; 7-year carry-forward, 3-year carry-back |
-
-### Eligible investment — what qualifies
-
-- **What qualifies** — Newly issued equity (common voting shares; certain preferred shares) of a registered Eligible Business Corporation (EBC), Community Economic Development Corporation (CEDC), or Co-operative.  _(Section 6)_
-- **Issuing corporation requirements** — Be registered with NB Finance and hold a current SBITC registration certificate. Have a permanent establishment in NB. Have no more than 75 employees at registration. Have at least 75% of wages/salaries paid to NB residents (or 50% if engaged in export). Use the funds for active business operations (not money lending, real estate development for resale, financial services, retail not adding value, professional practices reserved to regulated members, or activities offending public policy).  _(Section 6)_
-- **Minimum hold period** — Investor must hold the shares for 4 years. Early redemption, sale to a non-arm's length party, or wind-up triggers clawback of the credit.  _(Section 6)_
-
-### Application workflow
-
-0. **Step 1** — Eligible business applies for and receives the SBITC registration certificate from NB Finance.
-0. **Step 2** — Investor subscribes for qualifying shares; funds are paid to the corporation.
-0. **Step 3** — Corporation issues Form NB-SBITC-1 (Tax Credit Certificate) to the investor after share issuance, normally within 90 days.
-0. **Step 4** — Investor claims the credit on the personal T1 (line 47900 / Form NB428 Part C) or corporate T2 (Schedule 305 NB), attaching NB-SBITC-1.
-0. **Step 5** — Unused individual credit is refunded; unused corporate credit carries forward 7 years / back 3 years.
-
-### Connected-investor exclusion
-
-- **Connected-investor exclusion** — A claim is denied if the investor (alone or with non-arm's length persons) controls more than 10% of any class of issued shares of the EBC, or is a "specified shareholder" within meaning of the Income Tax Act (Canada). Founders investing in their own company are not eligible — the credit is designed for arm's length angel investors.  _(Section 6)_
-
-### Stacking with federal credits
-
-Stacks freely with federal Lifetime Capital Gains Exemption on later disposition (subject to QSBC rules and the OBBBA-era adjustments — out of scope here; refer to a federal skill). Stacks with flow-through share treatment only if the issuer is also a Principal Business Corporation in mining/oil & gas (rare for SBITC issuers).
-
-## 7. NB Film Tax Credit
-
-### Mechanics
-
-- **Type** — Refundable corporate credit.  _(Section 7)_
-- **Base rate (2025)** — 25% percent (of eligible NB-resident labour (base rate))  _(Section 7)_
-- **Rural bonus rate (2025)** — +5% percent (for productions outside the Greater Moncton, Fredericton, and Saint John regions (rural NB filming), bringing the rate to 30%)  _(Section 7)_
-- **Cap** — 50% of total production costs  _(Section 7)_
-
-### Eligibility
-
-- **Eligibility conditions** — Corporation with a permanent establishment in NB. Production has received a Part A certificate from NB Film (Department of Tourism, Heritage and Culture) before principal photography. Production is a film, television, or interactive digital media project (excluding news, sports, advertising, pornography, and certain reality programming). Eligible labour = salaries and wages paid to NB residents who worked on the production in NB.  _(Section 7)_
-
-### Workflow
-
-0. **Step 1** — Pre-production: Part A application to NB Film.
-0. **Step 2** — Post-production: Part B certificate of completion from NB Film with audited labour schedule.
-0. **Step 3** — Claim on T2 Schedule 305 (NB), attaching Part B certificate.
-
-### Interaction
-
-- **Interaction with federal credits** — Stacks with the federal Canadian Film or Video Production Tax Credit (CPTC) or Film or Video Production Services Tax Credit (PSTC) — but only one of the two federal credits, never both, and the NB credit is computed on a labour base reduced by federal assistance per the grind-down rule.  _(Section 7)_
-
-## 8. Form NB428 and credit-specific schedules
-
-**Form / line reference table**  _(Section 8)_
-
-| Credit | Form / line |
-| --- | --- |
-| Non-refundable personal credits (basic, age, spouse, CCB-equivalent, etc.) | Form NB428 Part A |
-| NB Tuition Amount | Schedule NB(S11) → NB428 line 58560 |
-| NB Tax on split income | Form T1206 + NB428 line 42800 |
-| NB Low-Income Tax Reduction | NB428 Part C, lines 47600–47700 |
-| NB Seniors' Home Renovation Credit | Schedule NB(S12) → NB428 line 47900 |
-| NB SBITC (individual) | NB-SBITC-1 attached; NB428 line 47900 schedule |
-| NBHSTC | No form — auto-calculated by CRA from T1 |
-| NB Film Tax Credit | T2 Schedule 305 (NB) with Part B certificate |
-| NB R&D Tax Credit | T2 Schedule 360 |
-
-## 9. Worked example — Moncton angel investor
-
-Ava is a Moncton resident, NB resident on 31 Dec 2025, with employment income of $185,000 (federal + NB tax already provided for via payroll). On 15 March 2025 she subscribes for $200,000 of newly issued common shares in TideTech Inc., an NB-registered EBC with 18 employees building agritech sensors in Dieppe. TideTech holds a current SBITC registration certificate. Ava is unrelated to all TideTech founders and owns 4.2% of post-money common shares (below the 10% connected-investor threshold). TideTech issues Ava Form NB-SBITC-1 in June 2025 certifying $200,000 of eligible investment.
-
-### Credit computation.
-
-Eligible investment: $200,000 (under the $250,000 individual cap). Rate: 50%. NB SBITC: $200,000 × 50% = $100,000. Refundability: Refundable for individuals. Even though Ava's NB tax liability is roughly $14,800 for 2025, the full $100,000 is paid: $14,800 reduces NB tax to zero, and the remaining $85,200 is refunded when she files her 2025 T1.
-
-### Reporting.
-
-Attach NB-SBITC-1 to her 2025 T1. Enter on NB428 Part C, line 47900 schedule for refundable provincial credits. Hold period: Ava must hold the TideTech shares until at least 15 March 2029. If she disposes before then to a non-arm's length party or TideTech redeems, the full $100,000 is clawed back via reassessment.
-
-### Other NB credits this year.
-
-LITR: phased out at her income level — zero. NBHSTC: phased out at her income level — zero. Seniors' Home Renovation: not eligible (Ava is 41).
-
-### Net NB filing impact.
-
-Refundable credit of $85,200 after offsetting NB tax.
-
-## 10. Conservative defaults
-
-- **Default 1** — Always require the NB-SBITC-1 certificate before quoting an SBITC credit. Do not estimate from share-subscription documents alone — the certificate is the operative document, and NB Finance routinely denies issuance where end-use covenants are missing.  _(Section 10)_
-- **Default 2** — Treat the 4-year hold period as binding for engagement-letter purposes. Flag in the cover letter that disposition before March 2029 (in the example) triggers full clawback.  _(Section 10)_
-- **Default 3** — For the Seniors' Home Renovation Credit, default to the most restrictive interpretation of "principal-purpose accessibility" when an expense could be characterised as routine renovation. CRA and NB Finance both deny mixed-purpose claims absent contemporaneous documentation linking the expense to the senior's mobility or safety needs.  _(Section 10)_
-- **Default 4** — For LITR, model both spousal claim positions and use the one producing the lower combined NB tax.  _(Section 10)_
-- **Default 5** — For NBHSTC, never assume eligibility without confirming province of residence on the first day of the payment month — moves out of NB during the benefit year unwind the credit.  _(Section 10)_
-- **Default 6** — For NB Film Tax Credit, require both Part A and Part B certificates on file before posting the receivable. Verbal commitments from NB Film are insufficient.  _(Section 10)_
-- **Default 7** — Do not stack the NB SBITC against any other equity-based provincial investor credit on the same shares (no double-dipping across provinces for inter-provincial investors).  _(Section 10)_
-- **Default 8** — Refer out any cross-border investor scenario (US individual investing in NB EBC) — Canada–US treaty interaction with refundable credits is fact-specific.  _(Section 10)_
-
-## 11. Sources
-
-- New Brunswick Income Tax Act, SNB 2000, c N-6.001 — provincial tax computation and credits framework.
-- Small Business Investor Tax Credit Act, SNB 2003, c S-9.05, and New Brunswick Regulation 2003-39 — SBITC statutory and regulatory basis.
-- New Brunswick Department of Finance and Treasury Board — Small Business Investor Tax Credit Program Guide (2025 edition).
-- New Brunswick Department of Finance and Treasury Board — Seniors' Home Renovation Tax Credit Guide.
-- Canada Revenue Agency — Form NB428 — New Brunswick Tax and Credits (2025) and Schedule NB(S11), Schedule NB(S12).
-- Canada Revenue Agency — New Brunswick Harmonized Sales Tax Credit program page.
-- Opportunities NB — NB Film Tax Credit program guide (2025).
-- Income Tax Act (Canada), RSC 1985, c 1 (5th Supp), s. 120.4 (tax on split income) and Part XVII — coordination with federal computation.
-- Federal–Provincial Tax Collection Agreement (NB schedule) — administration of personal NB credits via CRA.
+Retain Ava in Moncton, age 41, employment income CAD 185,000, investing CAD 200,000 in TideTech Inc., an agritech-sensor business in Dieppe with 18 employees and a 4.2% holding. Payroll withholding is not itself her final tax. Her original case says a certificate was supplied in June 2025 by TideTech; establish that it is the actual Minister-issued NB-SBITC-1 and not merely an issuer-created document. Her March 15, 2025 investment belongs to the **2025 historical case**; those facts alone do not establish an eligible specified issue. Assume the Minister's valid NB-SBITC-1 confirms the entire qualifying investment and Ava has CAD 14,800 of NB tax available before this credit. The non-refundable 50% credit is CAD 100,000, current use CAD 14,800, remaining NB tax zero and unused credit CAD 85,200. The unused amount can be considered under the three-year carryback/seven-year carryforward rules, with the actual prior/future tax and limits. It is **not a refundable credit balance**. Do not apply the new strategic-sector cap retroactively. The holding schedule starts from the actual issue/purchase terms; if the purchase and issue were March 15, 2025 the ordinary four-year restriction reaches March 2029, subject to the statute's details. [CRA 2025 SBITC instructions](https://www.canada.ca/en/revenue-agency/services/forms-publications/tax-packages-years/general-income-tax-benefit-package/new-brunswick/5004-pc.html); [current programme](https://www.gnb.ca/en/topic/business-economy/taxes/business-investor-credit.html).
+
+```oa-check
+name: Ava historical 2025 NB SBITC corrected refundability
+inputs:
+  eligible_investment: 200000
+  nb_tax_before: 14800
+steps:
+  - credit: eligible_investment * 0.50
+  - used: min(credit, nb_tax_before)
+  - tax_after: nb_tax_before - used
+  - unused: credit - used
+expected:
+  credit: 100000
+  used: 14800
+  tax_after: 0
+  unused: 85200
+```
+
+### Choose the authorised family claimant, 2025 LITR transfer
+
+A qualifying couple's adjusted family income is CAD 21,920. The family reduction is CAD 1,604; one spouse has CAD 500 eligible NB tax and the other CAD 1,200. If the first spouse applies, use CAD 500 and transfer the authorised CAD 1,104 unused amount, leaving CAD 96 on the other spouse. Claiming two full family reductions would be wrong. Compare the available family use before selecting the claimant and record the transfer on both forms. These are the **2025 form amounts**, not an unsourced 2026 estimate. [NB428 pages 3-4](https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5004-c/5004-c-25e.pdf).
+
+```oa-check
+name: NB historical 2025 LITR family transfer
+inputs:
+  family_income: 21920
+  tax_a: 500
+  tax_b: 1200
+steps:
+  - reduction: max(0, 802 + 802 - max(0, family_income - 21920) * 0.03)
+  - used_a: min(tax_a, reduction)
+  - transfer: max(0, reduction - used_a)
+  - tax_b_after: max(0, tax_b - transfer)
+expected:
+  reduction: 1604
+  used_a: 500
+  transfer: 1104
+  tax_b_after: 96
+```
+
+## When to refuse or refer
+
+- Stop the final calculation when residence, year, taxable income, family status, credit evidence or a current source needed for the answer is missing. State the exact missing fact; do not invent a conservative numeric default or relabel a prior-year amount as current.
+- Refer special returns, disputed residence, multiple-province business allocation, treaty income, minimum tax, tax on split income, Indigenous tax exemptions, trusts and corporate claims to the relevant specialist workflow. Do not turn “outside this ordinary computation” into an unsupported statement that no relief exists.
+- Do not substitute payroll withholding for annual tax, cash benefits for non-refundable credits, a provincial label for a federal credit, or a corporation's incentive for its shareholder's personal credit.
+- Do not promise a refund, investment eligibility, programme funding, investment value or professional approval. Obtain the relevant certificate and calculate tax and cash payments separately. Keep records supporting shared claims, carryovers, amendments and recapture.
+
+Additional stops: no certificate means no final SBITC claim; missing qualifying residence or cost evidence means no renovation claim; a desired early share disposal needs the actual recapture analysis. Non-resident, part-year, Indigenous, death, bankruptcy, corporate-control and partnership cases require their actual rules rather than a blanket denial. Do not invent full refundability, programme acceptance, hardship relief or a transferable carryover.
+
+## Sources
+
+| Official source and scope actually read | URL | Read on |
+|---|---|---|
+| Read for: GNB current SBITC programme: all investor categories, post-17-March-2026 changes, investment/credit caps and registration/certificate procedure | https://www.gnb.ca/en/topic/business-economy/taxes/business-investor-credit.html | 2026-11-14 |
+| Read for: Small Business Investor Tax Credit Act, sections 1-3, 20-22 and 26-33: security definitions, connected/control test, certificate and holding/repayment | https://laws.gnb.ca/en/document/cs/2016,%20c.112 | 2026-11-14 |
+| Read for: CRA 2025 NB annual instructions: LITR spouse transfer, tuition, SBITC T1258 and complete renovation special cases and filing path | https://www.canada.ca/en/revenue-agency/services/forms-publications/tax-packages-years/general-income-tax-benefit-package/new-brunswick/5004-pc.html | 2026-11-14 |
+| Read for: CRA 2025 NB428 all four pages: actual historical LITR values/formula, credit order and output | https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5004-c/5004-c-25e.pdf | 2026-11-14 |
+| Read for: CRA January 2026 NB payroll instructions: current basic personal amount only | https://www.canada.ca/en/revenue-agency/services/forms-publications/payroll/t4032-payroll-deductions-tables/t4032nb-jan/t4032nb-january-general-information.html | 2026-11-14 |
+| Read for: CRA NB benefits: HST credit formula including single-parent first child and monthly child benefit | https://www.canada.ca/en/revenue-agency/services/child-family-benefits/provincial-territorial-programs/province-new-brunswick.html | 2026-11-14 |
+| Read for: 2015 chapter 43, operative closure, savings and commencement: no new tuition cash-back application | https://www2.gnb.ca/content/dam/gnb/Departments/ag-pg/PDF/ActsLois/2015/Chap-43.pdf | 2026-11-14 |
+| Read for: GNB R&D page: enhanced refundable credit versus old non-refundable balances | https://www2.gnb.ca/content/gnb/en/departments/finance/taxes/taxcredit.html | 2026-11-14 |
+| Read for: GNB LIFT production page: current grants, stream rates/caps, applicant criteria, current round and non-guaranteed funding | https://www.gnb.ca/en/topic/culture-heritage/grants-finance/investment-production.html | 2026-11-14 |
+| Read for: ITA section 150(1)(b),(d): ordinary, business and death filing rules | https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-150.html | 2026-11-14 |
+| Read for: CRA change-return instructions: assessed-return prerequisite, routes and excluded changes | https://www.canada.ca/en/services/taxes/income-tax/personal-income-tax/after-you-file/change-return.html | 2026-11-14 |
+
+Not yet confirmed: Final 2026 annual forms and line numbers; current 2026 LITR values and ordinary tuition/senior-renovation continuation details beyond the explicitly historical 2025 instructions; exact newcomer RC151/status-update route and exceptional amendment periods; the old January renovation payment concession; any genuine legacy film-tax-credit certificate, labour percentage, Part A/Part B deadline or transition (current LIFT is a different grant); federal SBITC cost-base/RRSP/LCGE/other-assistance interactions; the old vague OBBBA/flow-through stacking assertion. No unconfirmed legacy amount is a current claim instruction.
