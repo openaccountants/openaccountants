@@ -67,6 +67,21 @@ class Hosts(unittest.TestCase):
         self.assertTrue(sc.check_source_hosts(path, table(["| Rates | https://www.boe.es/a | 2026-11-11 |"]), fm))
         self.assertEqual(sc.check_jurisdiction_body(path, "# Guyane\n" + "DGFiP " * 9, fm), [])
 
+    def test_australian_external_territories_use_australian_sources(self):
+        for code, folder in (("CX", "christmas-island"), ("CC", "cocos-keeling-islands")):
+            path = str(REPO_ROOT / f"skills/{folder}/{code.lower()}-income-tax.md")
+            fm = {"jurisdiction": code}
+            source = table(["| ITAA 1997 | https://www.legislation.gov.au/a | 2026-11-14 |"])
+            self.assertEqual(sc.check_source_hosts(path, source, fm), [])
+            self.assertTrue(sc.check_source_hosts(path, table(["| Rates | https://www.ird.govt.nz/a | 2026-11-14 |"]), fm))
+            self.assertEqual(sc.check_jurisdiction_body(path, "# Territory\n" + "ATO " * 9, fm), [])
+
+    def test_cook_islands_may_cite_new_zealand_dates(self):
+        path = str(REPO_ROOT / "skills/cook-islands/ck-company-registry-reporting.md")
+        fm = {"jurisdiction": "CK"}
+        self.assertEqual(sc.check_source_hosts(path, table(["| Holiday dates | https://www.govt.nz/a | 2026-11-14 |"]), fm), [])
+        self.assertTrue(sc.check_source_hosts(path, table(["| Rates | https://www.ato.gov.au/a | 2026-11-14 |"]), fm))
+
 
 class SourceEvidencePriority(unittest.TestCase):
     def rates(self, row):

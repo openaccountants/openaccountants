@@ -1,25 +1,26 @@
 ---
 name: ck-paye
-version: 0.1
+version: 0.2
 description: Bounded reference for reviewers assessing ordinary employee PAYE in the Cook Islands for hypothetical 2026 cases. Covers selected Rarotonga primary wage table amounts, prescribed longer period arithmetic, established no declaration status, payment and credit timing, separate sums, certificates and remittance reconciliation. Use when asked about ordinary wage withholding, PAYE tables, RM205, RM101 or RM106. Requires the universal and payroll workflow bases. Holds conflicting source rows, unsupported fractional selection, secondary income, Pa Enua calculations, incomplete operative law, currency, rounding, special payments and all complete payroll or filing outputs until the required evidence and country contracts are satisfied.
 category: payroll
 jurisdiction: CK
 tax_year: 2026
-tax_year_notes: Conditional reference examples only. Selected published law and MFEM material checked on 2026-10-24; this does not certify the complete operative law or any actual 2026 payroll.
+type: computation
+tax_year_notes: "Conditional reference examples only. Selected published law and MFEM material checked on 2026-10-24; this does not certify the complete operative law or any actual 2026 payroll."
 tier: 2
-last_updated: 2026-10-24
-review_status: pending_review
-verified_by: pending
+last_updated: 2026-11-14
 depends_on:
   - workflow-base
   - payroll-workflow-base
 ---
 
-# Cook Islands ordinary PAYE reference v0.1
+# Cook Islands ordinary PAYE reference v0.2
+
+> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
+
+## Scope
 
 > **General reference only.** This is a bounded Tier 2 draft for professional review. It does not authorise a payslip, tax payment, return, payroll journal or final employee liability. Guide presence, primary-source preparation and passing component checks do not establish comprehensive country acceptance.
-
-## Scope and source gate
 
 Load both mandatory bases in full. Preserve all 4 universal outputs and 18 checks, all 5 payroll outputs and 12 checks, every mandatory country slot and all loaded refusal catalogues. This guide is not the complete country payroll companion. Its conditional examples explain selected statutory mechanics; they do not waive source, profile-confirmation, factual, reviewer or runtime gates.
 
@@ -29,7 +30,32 @@ Before any engagement calculation, establish the requested pay period, payment/d
 
 The source conflict register below is binding. A conflicting or unsupported row, fractional selection, secondary-income method, Pa Enua calculation, changed-rate period, benefit, retirement payment, extra emolument, withholding payment, correction or special certificate is outside the numeric component. Return Needs Input or the applicable refusal. Do not repair a published number from neighbouring rows or an annual-tax formula. Do not deduct the annual supplemental deduction again from a table amount or use annual income tax divided by 52, 26 or 12 as PAYE.
 
-## Primary library and original-document bridge
+## Ask the client first
+
+Record stable redacted employer/employee references, employment type, contracts, lawful gross components, dates and pay frequency, regular full-time/part-period facts, separate sums for the same period, actual cash/credit/application evidence, all employment and other income needed for classification, home/presence facts, actual declaration/certificate delivery and effective dates, Collector decisions, prior certificates, prior gross/withholding/remittances and their allocation, forms, relevant country slots and reviewer identity. Keep names, tax identifiers, bank details and signatures with the reviewer. No default establishes unknown law, code, residence, benefit value, entitlement, currency or rounding.
+
+## The method, step by step
+
+### Selected 2026 figures
+
+Selected Schedule 2A (Rarotonga primary income, weekly) rows, re-read on 2026-11-14 on the official consolidation.
+They are subject to the source conflict register below (the rows for 320, 520, 621, 867 and 1,034 are held) and
+to the current-law gate in the scope.
+
+| Item | Rate or figure | Condition | Official URL |
+|---|---|---|---|
+| Weekly primary wages below 281 | PAYE 0 | Schedule 2A note; established Rarotonga primary income | https://cookislandslaws.gov.ck/api/display_pages/schedule_LOCI_ITA_ITA97_SCH2A_htm |
+| Weekly primary wages 281 | PAYE 0.04 | Same | same |
+| Weekly primary wages 282 | PAYE 0.21 | Same | same |
+| Weekly primary wages 500 | PAYE 37.27 | Same | same |
+| Weekly primary wages 1,000 | PAYE 164.58 | Same | same |
+| Weekly primary wages 1,538 | PAYE 309.84 | Table endpoint | same |
+| Above 1,538 a week | 30 cents for every dollar over 1,538 | Above-table instruction | same |
+| No declaration (section 149) | 30 cents for every dollar or part of a dollar | Schedule 2 clause 5; established no-declaration status only | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_ITA_ITA97_S149_htm |
+| Monthly remittance | By the 20th day after the month of payment | Section 155(1)(a), certificate RM205 | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_ITA_ITA97_S155_htm |
+| PAYE records | At least 5 years after the payments | Section 154 | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_ITA_ITA97_S154_htm |
+
+### Primary library and original-document bridge
 
 | Authority | Selected use and limit |
 |---|---|
@@ -44,7 +70,7 @@ The source conflict register below is binding. A conflicting or unsupported row,
 
 All statutory section and schedule links must be reconciled to the actual operative source for the requested period. No unsuccessful extraction, failed OCR or unavailable page is evidence that a rule does not exist.
 
-## Source conflict register
+### Source conflict register
 
 | Item | Observed sources | Required treatment |
 |---|---|---|
@@ -57,9 +83,7 @@ All statutory section and schedule links must be reconciled to the actual operat
 
 The current web tables have continuous integer keys, 281–1,538 in Schedule 2A and 1,152–1,534 in Schedule 2B. This is extraction integrity, not table acceptance. Pa Enua punctuation/value anomalies and its separate method remain outside this component. The Rarotonga above-table instruction is present: 30 cents for every dollar paid over 1,538. No unprinted or fractional above-table example is cleared here.
 
-## Intake and position rules
-
-Record stable redacted employer/employee references, employment type, contracts, lawful gross components, dates and pay frequency, regular full-time/part-period facts, separate sums for the same period, actual cash/credit/application evidence, all employment and other income needed for classification, home/presence facts, actual declaration/certificate delivery and effective dates, Collector decisions, prior certificates, prior gross/withholding/remittances and their allocation, forms, relevant country slots and reviewer identity. Keep names, tax identifiers, bank details and signatures with the reviewer. No default establishes unknown law, code, residence, benefit value, entitlement, currency or rounding.
+### Position rules
 
 1. **Classify the payment.** Section 2 distinguishes salary/wages, extra emoluments and withholding payments. A label such as bonus or backpay is not sufficient. Sections 46, 147 and 148 govern benefit/retirement and insufficient-cash issues; keep those cases held here. Do not issue a negative bank payment.
 2. **Establish residence.** Section 44(3) expressly applies to Schedule 2 cl 2: the person made their home in Rarotonga and was present at least 183 cumulative days in the relevant year, including the specific deemed-presence cases in s 44(4). Citizenship, the current work location or an unsupported prediction of days is insufficient. Section 44A and Schedule 1AA provide the distinct Pa Enua route. Permanent arrival/departure and partial-year annual deductions do not establish a prorated weekly PAYE allowance.
@@ -70,7 +94,7 @@ Record stable redacted employer/employee references, employment type, contracts,
 7. **Distinguish no declaration.** Once s 149 no-declaration status is expressly established, Schedule 2 cl 5 requires 30 cents for every dollar or part of a dollar of the payment, irrespective of primary or secondary income. For a positive amount in hundredths of a source-table unit, the reference arithmetic is 0.30 times the number of whole units rounded upward. This express quantum does not settle the primary-table fractional method, general currency or rounding. Clause 6's separate extra-emolument rule is outside this component.
 8. **Keep payroll and reporting separate.** PAYE is one employee deduction. Establish other deductions, employer charges and lawful gross before actual cash net wages. Use the CINSF companion only within its own bounds. Employer contributions are additional costs, never employee deductions. No actual payroll output is complete whilst the country slots below remain unresolved.
 
-### Remittance, records and year-end controls
+#### Remittance, records and year-end controls
 
 Section 154 requires a record of source payments and deductions when paid and retention for at least 5 years after those payments, subject to the specified Collector notification. Section 217(3) supplies the records definition, including electronic records. Do not substitute CINSF's 7-year transaction basis or apply this PAYE rule to every employment record indiscriminately.
 
@@ -82,7 +106,41 @@ Section 155(1)(b) states annual employee certificates by 31 January; paragraph (
 
 Sections 156 and 165 distinguish employee missing-deduction duties and employer debt/concurrent recovery. Track the same shortfall and actual recovery once. Section 151 concerns a specified advance-payment deficiency; it is not general permission to recover every old error in current wages. Sections 157–163 do not make PAYE final for every employee or authorise an automatic employer refund. Penalties under ss 168–169 are outside this reference; do not use a mandatory flat treble charge or invent compounding mechanics.
 
-## Conditional worked positions for 2026 review
+## Worked cases
+
+Two cases that recompute (derived, fictional currency units CU, cases W07 and W12 below).
+
+**Case 1, a fortnightly pay under Schedule 2 clause 3.** Ordinary 14-day wages 1,000 accrue uniformly, so the
+notional week is 500 and its table amount is 37.27.
+
+```oa-check
+name: Cook Islands PAYE, 14-day pay 1,000, notional week 500
+inputs:
+  period_pay: 1000
+  notional_week: 500
+  table_amount: 37.27
+steps:
+  - paye: table_amount * period_pay / notional_week
+expected:
+  paye: 74.54
+```
+
+**Case 2, the edge case: no declaration and a payment with cents.** Clause 5 takes 30 cents for every dollar
+or part of a dollar, so 500.01 counts as 501 dollars.
+
+```oa-check
+name: Cook Islands PAYE, no declaration, payment 500.01
+inputs:
+  payment: 500.01
+steps:
+  - dollars_or_part: ceil(payment)
+  - paye: dollars_or_part * 0.30
+expected:
+  dollars_or_part: 501
+  paye: 150.30
+```
+
+### Conditional worked positions for 2026 review
 
 Every row is fictional. CU means a fictional unit equivalent to the source table's unit for this illustration, not a verified remittance currency. Stipulate complete applicable law and no relevant variation, ordinary cash wages, correct confirmed period and classification, established home/presence and primary status, a valid effective declaration unless ND is specified and no other income/benefit/overlapping-employment issue. These stipulations do not clear an actual engagement. No net payslip, actual due date or complete payroll follows.
 
@@ -109,7 +167,7 @@ Every row is fictional. CU means a fictional unit equivalent to the source table
 | W19 | A further P declaration is delivered during an existing employment's pay period which began before delivery; no applicable variation. | Do not apply it retrospectively to that period under s 149(4). The new-employment first-period exception is a separate factual case. |
 | W20 | Code or declaration history is unknown, rather than proven absent. | Hold classification. Neither P nor ND is an authorised missing-fact default. |
 
-## Held-case register and defaults
+## When to refuse or refer
 
 No unsupported defaults. There is no cash floor that resolves a source gap. Flag every conflict, override, missing premise, conditional amount, correction and refusal for the reviewer, regardless of amount; this is a workflow attention rule, not a statutory materiality threshold. Ask grouped factual questions only after checking the records and preserve the shared maximum of 10. A 'don't know' answer keeps Needs Input when no evidenced rule permits a default.
 
@@ -137,7 +195,7 @@ Retain R-REVIEWER-MISSING and R-CONTENT-MISMATCH from the loaded universal base,
 - **R-CK-PAYE-RUNTIME.** Trigger: required workbook calculation, zero-error verification, complete output generation or file delivery is unavailable. Message: 'The required payroll output and verified workbook calculation tools are unavailable. I cannot substitute chat arithmetic, static values or an incomplete file for the required financial outputs.'
 - **R-CK-PAYE-AMBIGUITY.** Trigger: more than 10 grouped factual questions remain after evidence reuse. Message: 'More than 10 grouped factual questions remain unresolved. The payroll record is not sufficiently complete to continue. Obtain the missing records with the reviewer before calculation.'
 
-## Outputs, checks and country contract
+## Completion checklist
 
 For a lawful in-scope engagement, preserve the universal recalculated working paper, reviewer brief, action list and practitioner checklist, together with all 5 payroll outputs: individual payslips, payroll journal, employer cost summary, filing calendar and reviewer brief. Each logical component remains identifiable. No static values, substituted calculator or mock file satisfies the required recalculation or zero-error verification. This draft does not demonstrate a deployed execution engine or complete outputs.
 
@@ -162,29 +220,36 @@ Run all 18 universal checks and all 12 payroll checks. Add: independently verify
 
 The optional industry, sacrifice and integration slots are also incomplete. Universal country content, transaction/payer patterns, overlays, forms, runtime execution and professional sign-off remain necessary before comprehensive acceptance.
 
-## Revision and disclaimer
+## Sources
+
+| Source | URL | Read on |
+|---|---|---|
+| Income Tax Act 1997, section 2 (Cook Islands Legislation, official consolidation). Read for the provision cited as 'Income Tax Act 1997, s 2' | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_ITA_ITA97_S2_htm | 2026-10-24 (read by Ryan Duguid) |
+| Income Tax Act 1997, section 38 (Cook Islands Legislation, official consolidation). Read for the provision cited as 's 38' | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_ITA_ITA97_S38_htm | 2026-10-24 (read by Ryan Duguid) |
+| Income Tax Act 1997, section 44 (Cook Islands Legislation, official consolidation). Read for the provision cited as 's 44' | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_ITA_ITA97_S44_htm | 2026-10-24 (read by Ryan Duguid) |
+| Income Tax Act 1997, section 44A (Cook Islands Legislation, official consolidation). Read for the provision cited as 's 44A' | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_ITA_ITA97_S44A_htm | 2026-10-24 (read by Ryan Duguid) |
+| Income Tax Act 1997, section 46 (Cook Islands Legislation, official consolidation). Read for the provision cited as 's 46' | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_ITA_ITA97_S46_htm | 2026-10-24 (read by Ryan Duguid) |
+| Income Tax Act 1997, section 144 (Cook Islands Legislation, official consolidation). Read for the provision cited as 'Part 9, ss 144–172, beginning at s 144' | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_ITA_ITA97_S144_htm | 2026-10-24 (read by Ryan Duguid) |
+| Income Tax Act 1997, section 145 (Cook Islands Legislation, official consolidation). Read for the provision cited as 's 145' | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_ITA_ITA97_S145_htm | 2026-10-24 (read by Ryan Duguid) |
+| Income Tax Act 1997, section 149 (Cook Islands Legislation, official consolidation). Read for the provision cited as 's 149' | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_ITA_ITA97_S149_htm | 2026-10-24 (read by Ryan Duguid) |
+| Income Tax Act 1997, section 153 (Cook Islands Legislation, official consolidation). Read for the provision cited as 's 153' | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_ITA_ITA97_S153_htm | 2026-10-24 (read by Ryan Duguid) |
+| Income Tax Act 1997, section 155 (Cook Islands Legislation, official consolidation). Read for the provision cited as 's 155' | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_ITA_ITA97_S155_htm | 2026-10-24 (read by Ryan Duguid) |
+| Income Tax Act 1997, clause 1 (Cook Islands Legislation, official consolidation). Read for the provision cited as 'Schedule 2 cl 1' | https://cookislandslaws.gov.ck/api/display_pages/clause_LOCI_ITA_ITA97_SCH2_CL1_htm | 2026-10-24 (read by Ryan Duguid) |
+| Income Tax Act 1997, clause 3 (Cook Islands Legislation, official consolidation). Read for the provision cited as 'cl 3' | https://cookislandslaws.gov.ck/api/display_pages/clause_LOCI_ITA_ITA97_SCH2_CL3_htm | 2026-10-24 (read by Ryan Duguid) |
+| Income Tax Act 1997, Schedule 2A (Cook Islands Legislation, official consolidation). Read for the provision cited as 'Schedule 2A' | https://cookislandslaws.gov.ck/api/display_pages/schedule_LOCI_ITA_ITA97_SCH2A_htm | 2026-11-14 (re-read for the rows 281, 282, 500, 1000 and 1538 and the 30 cents above-table note); 2026-10-24 (read by Ryan Duguid) |
+| MFEM: Income Tax Amendment Act 2020, No 17. Read for the provision cited as 'Income Tax Amendment Act 2020, No 17' | https://www.mfem.gov.ck/_files/ugd/dbdf40_f5a8c274935140f7bdd3bc79ac65527b.pdf | 2026-10-24 (read by Ryan Duguid) |
+| MFEM: Income Tax Amendment Act 2023, No 3. Read for the provision cited as 'Income Tax Amendment Act 2023, No 3' | https://www.mfem.gov.ck/_files/ugd/dbdf40_1b3be9e38920451bb29196d266deb163.pdf | 2026-10-24 (read by Ryan Duguid) |
+| Cook Islands Parliament (signed Act or paper): Commencement Order 2023/11. Read for the provision cited as 'Commencement Order 2023/11' | https://parliamentci.wpenginepowered.com/wp-content/uploads/2023/07/Parliament-Paper-No.-79-Income-Tax-Amendment-Act-2023-Commencement-Order-2023-No.-11.pdf | 2026-10-24 (read by Ryan Duguid) |
+| MFEM: 2016 No 4. Read for the provision cited as '2016 No 4' | https://www.mfem.gov.ck/_files/ugd/dbdf40_af13255d8fa240bbb7049127f8d20d02.pdf | 2026-10-24 (read by Ryan Duguid) |
+| MFEM: 2017 No 1. Read for the provision cited as '2017 No 1' | https://www.mfem.gov.ck/_files/ugd/dbdf40_8d4edfe848d44144ba112fdabb494ea2.pdf | 2026-10-24 (read by Ryan Duguid) |
+| MFEM: MFEM Filing & Forms. Read for the provision cited as 'MFEM Filing & Forms' | https://www.mfem.gov.ck/filing-forms | 2026-10-24 (read by Ryan Duguid) |
+| MFEM: 2021 Rarotonga schedule. Read for the provision cited as '2021 Rarotonga schedule' | https://www.mfem.gov.ck/_files/ugd/dbdf40_6bbd0b3416034140bf4810fd31fea29a.pdf | 2026-10-24 (read by Ryan Duguid) |
+| MFEM: employer quick guide. Read for the provision cited as 'employer quick guide' | https://www.mfem.gov.ck/_files/ugd/de1ea2_e10b0bab691a4a7da9527c8ca3ccba7a.pdf | 2026-10-24 (read by Ryan Duguid) |
+| MFEM: current tax calendar. Read for the provision cited as 'current tax calendar' | https://www.mfem.gov.ck/inland-revenue | 2026-10-24 (read by Ryan Duguid) |
+| Income Tax Act 1997, section 154 (Cook Islands Legislation, official consolidation). Read for the provision cited as 's 154' | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_ITA_ITA97_S154_htm | 2026-10-24 (read by Ryan Duguid) |
+| Income Tax Act 1997, section 217 (Cook Islands Legislation, official consolidation). Read for the provision cited as 's 217' | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_ITA_ITA97_S217_htm | 2026-10-24 (read by Ryan Duguid) |
+| Income Tax Act 1997, section 228A (Cook Islands Legislation, official consolidation). Read for the provision cited as 's 228A' | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_ITA_ITA97_S228A_htm | 2026-10-24 (read by Ryan Duguid) |
 
 2026-10-24, v0.1: selected ordinary PAYE reference, source conflicts, 20 worked/held positions and 12 held-case rows. Tier 2, pending_review and verified_by pending remain. No accountant sign-off, operational acceptance or complete country coverage is claimed.
 
-This document is general reference material and does not constitute tax, legal or financial advice. A qualified professional in the relevant jurisdiction must establish applicable law, verify the facts and complete and sign off all required outputs before filing, paying or relying on a result.
-
-<!-- openaccountants-cta-block -->
-
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained in the
-[ryanduguid/openaccountants fork](https://github.com/ryanduguid/openaccountants).
-Check its quality tier, recorded review status and cited sources before use.
-Choose a practitioner whose credentials and engagement scope you have verified.
-The links below are optional upstream services; they do not publish or verify
-this fork's changes.
-
-- Upstream connection service: https://www.openaccountants.com/connect
-- Upstream accountant network: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
+Not yet confirmed: the conflicting rows (weekly 320, 520, 621, 867 and 1,034) between the official consolidation and the MFEM PDF; the secondary-income method; the operative annual reconciliation shortfall deadline (31 January or 15 February); the remittance currency and rounding rule; Pa Enua rates; the current prescribed forms (RM205, RM101, RM106); every payroll country slot the checklist marks open.

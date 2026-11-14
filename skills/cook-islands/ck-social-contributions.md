@@ -15,22 +15,23 @@ description: >
 jurisdiction: CK
 category: international
 tax_year: 2026
+type: computation
 tax_year_notes: "Selected CINSF reference checked 24 October 2026; actual positions require the source, status, currency, rounding and output gates below"
 tier: 2
-last_updated: 2026-10-24
-version: 0.1
-review_status: pending_review
-verified_by: pending
+last_updated: 2026-11-14
+version: 0.2
 depends_on:
   - workflow-base
   - social-contributions-workflow-base
 ---
 
-# Cook Islands CINSF ordinary employee reference v0.1
+# Cook Islands CINSF ordinary employee reference v0.2
+
+> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
+
+## Scope
 
 > **General reference only.** This is a selected source-cited draft. Obtain qualified Cook Islands review of the actual facts, operative law, contribution period, forms and payment instructions before acting.
-
-## Scope and stop conditions
 
 Load workflow-base and social-contributions-workflow-base. This component supports selected ordinary employment wholly in the Cook Islands, employee/employer share classification and fictional same-month paid-and-payable cash examples. It is not the complete country companion required by the social base. Publication, guide presence and passing checks do not complete any mandatory country slot or establish comprehensive acceptance.
 
@@ -42,7 +43,38 @@ This guide does not compute PAYE, net wages, leave entitlement, benefits, invest
 
 **No unsupported defaults.** Unknown status, age, class date, election, Board determination, rate variation, minimum/ceiling, currency, rounding, allocation or payment timing stays Needs Input or a legal-source hold. Do not choose a larger amount, a full-period liability or a purported zero exemption to replace the missing premise. Ask factual questions under the bases; obtain primary authority for legal gaps.
 
-## Primary sources and currency limits
+## Ask the client first
+
+Record stable fictional or reviewer-held references, not personal identity documents, tax identifiers or bank details. For each person and period establish:
+
+1. Applicable local employment and legal employer, worker/shareholder/director status, any overseas, foreign or reciprocal-coverage facts and the governing class commencement evidence.
+2. Date-of-birth readiness and age at the legally relevant dates; any s 37 exclusion, historic age-55 election and actual written-notice/Board receipt evidence.
+3. Existing-superannuation restriction and Board determination; distinguish compulsory status, s 37(2) elective membership and s 36(2) additional voluntary accounts.
+4. Each earnings component, its legal character, gross amount before income tax, paid date, payable date, payer and cash/non-cash character. Establish the termination and accrued-leave facts rather than relying on a payslip label.
+5. Current effective rates for each share, all applicable limits and aggregation rules, remittance currency, conversion if relevant and the exact share/period rounding rule. Missing authority prevents a final amount.
+6. Employer/employee registration readiness, required identifiers held by the reviewer, actual prescribed statement and current Board notices. Registration pending does not suspend liability.
+7. Each remittance amount/date, authority, reference, programme/share/period allocation, any bundled PAYE split and prior-credit position. Retain unmatched items separately.
+8. Annual certificate, actual due-date adjustments, correction and penalty facts, complete required outputs and runtime readiness. These are not supplied merely by a selected example.
+
+The bases require contributor-profile confirmation before actual computations and questions only for facts not already evidenced. Fictional cases below have their stated facts preconfirmed; they do not waive confirmation for a real engagement.
+
+## The method, step by step
+
+### Selected statutory figures
+
+Re-read on 2026-11-14 on the official consolidation. They hold only with the conditions in the next column and the
+current-law gate in the scope (a later Order under section 39(3) can vary the rate).
+
+| Item | Rate or figure | Condition | Official URL |
+|---|---|---|---|
+| Employee contribution | 5% of earnings | Section 39(2)(c), after the first two years of the Part; subject to any section 39(3) Order | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_NSA_NSA00_S39_htm |
+| Employer contribution | 5% of the same earnings | Section 39(1)(b): the same rate as the employee | same |
+| Exclusion by age | Under 18, or 60 or more | Section 37(1)(a)-(b); an excluded employee may elect to contribute (section 37(2)) | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_NSA_NSA00_S37_htm |
+| Payment and monthly statement | By the 20th day of the month after the month the earnings became payable | Section 48(1) | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_NSA_NSA00_S48_htm |
+| Employer records | At least 7 years after the transactions | Section 42(1), unless the Board notifies otherwise | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_NSA_NSA00_S42_htm |
+| Registration of a new employer or employee | Within 14 days | Sections 28 and 31 | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_NSA_NSA00_S28_htm |
+
+### Primary sources and currency limits
 
 | Source | Selected use and limit |
 |---|---|
@@ -61,22 +93,7 @@ The signed 2016 Order and 2017 amendment originals and the 2012 maternity amendm
 
 The complete signed [Employment Relations Amendment Act 2026 No 10](https://parliamentci.wpenginepowered.com/wp-content/uploads/2026/06/Employment-Relations-Amendment.pdf) was visually read after OCR showed scrambled order. It changes Employment Relations Act maternity, adoption, foreign-worker and paternity provisions, including specified changes from 1 July 2026. It does not textually amend CINSF Act s 40. Do not calculate leave entitlement, a Crown-funded payer obligation or a contribution on that payment from this reference alone.
 
-## Intake before a component calculation
-
-Record stable fictional or reviewer-held references, not personal identity documents, tax identifiers or bank details. For each person and period establish:
-
-1. Applicable local employment and legal employer, worker/shareholder/director status, any overseas, foreign or reciprocal-coverage facts and the governing class commencement evidence.
-2. Date-of-birth readiness and age at the legally relevant dates; any s 37 exclusion, historic age-55 election and actual written-notice/Board receipt evidence.
-3. Existing-superannuation restriction and Board determination; distinguish compulsory status, s 37(2) elective membership and s 36(2) additional voluntary accounts.
-4. Each earnings component, its legal character, gross amount before income tax, paid date, payable date, payer and cash/non-cash character. Establish the termination and accrued-leave facts rather than relying on a payslip label.
-5. Current effective rates for each share, all applicable limits and aggregation rules, remittance currency, conversion if relevant and the exact share/period rounding rule. Missing authority prevents a final amount.
-6. Employer/employee registration readiness, required identifiers held by the reviewer, actual prescribed statement and current Board notices. Registration pending does not suspend liability.
-7. Each remittance amount/date, authority, reference, programme/share/period allocation, any bundled PAYE split and prior-credit position. Retain unmatched items separately.
-8. Annual certificate, actual due-date adjustments, correction and penalty facts, complete required outputs and runtime readiness. These are not supplied merely by a selected example.
-
-The bases require contributor-profile confirmation before actual computations and questions only for facts not already evidenced. Fictional cases below have their stated facts preconfirmed; they do not waive confirmation for a real engagement.
-
-## Eligibility, exclusions and registration
+### Eligibility, exclusions and registration
 
 Section 36(1) covers local employment and employers in respect of that employment, subject to the Act and class application. Do not add a citizenship, 183-day or company-tax residence requirement. Overseas employment has distinct language and exclusions and is held here. The 2016 Order extends application to all classes of persons in local employment while preserving s 37. [S 36](https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_NSA_NSA00_S36_htm), [Order cl 4](https://cookislandslaws.gov.ck/api/display_pages/clause_LOCI_NSA_CINSFO16_CL4_htm)
 
@@ -86,7 +103,7 @@ An excluded employee may elect to contribute. Section 37(2) makes the employer l
 
 New employers apply within 14 days of becoming an employer; new employees apply within 14 days of becoming an employee, using the Board-prescribed manner/form. The Board allots an employer number and certificate. The historical commencement wording in ss 28(1) and 31(1) is literally 'not less than 4 weeks'; do not silently replace it with 'within 4 weeks' or use it for an ordinary new-person deadline. Do not invent the prescribed fields or treat a website processing estimate as a liability deferral. [S 28](https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_NSA_NSA00_S28_htm), [s 31](https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_NSA_NSA00_S31_htm)
 
-## Earnings before rates
+### Earnings before rates
 
 For the selected ordinary employee base, s 40(2) includes wages, salary, allowances, holiday pay, overtime, long-service leave, maternity leave whether employer or Crown funded, bonuses, gratuities, extra salary, commissions, directors' fees, honoraria, emoluments and remuneration of any kind paid or payable in relation to employment, cash or otherwise, before income tax. This is a legal classification, not permission to value a non-cash item or allocate a Crown-funded payer without authority. [S 40](https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_NSA_NSA00_S40_htm)
 
@@ -94,7 +111,7 @@ The termination lump-sum exclusion in s 40(2)(a) is conditional on its statutory
 
 Do not reduce this base by PAYE or by the employee contribution itself. The employee and employer shares are separate obligations calculated from the established base; the employer share is not another deduction from the employee's wages. A complete payroll still requires its own country rules and output controls. [Ss 39–41](https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_NSA_NSA00_S39_htm)
 
-## Conditional shares and timing
+### Conditional shares and timing
 
 Section 39(2) states 3% for the first year after commencement, 4% for the next year and 5% thereafter, with the same employer rate under s 39(1)(b), subject to the s 39(3) Order variation power. These historic phases must not be restarted merely because an employer registers a new employee. The current fund pages corroborate 5% employee plus 5% employer, but are not a complete current Order chain. [S 39](https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_NSA_NSA00_S39_htm), [fund FAQ](https://cinsf.com/members/faqs/)
 
@@ -106,7 +123,7 @@ Retain the unadjusted statutory month/day separately from any actual calendar re
 
 Section 44(5) concerns employer contributions **paid** in accordance with its specified subsections and refers to Income Tax Act s 68. Do not turn an unpaid accrual into a tax deduction or infer employee deductibility here. Complete the income-tax companion and primary-law chain separately. [S 44(5)](https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_NSA_NSA00_S44_htm)
 
-## Current guidance conflicts
+### Current guidance conflicts
 
 | Issue | Evidence and treatment |
 |---|---|
@@ -119,7 +136,71 @@ Section 44(5) concerns employer contributions **paid** in accordance with its sp
 
 Sources: [current employer guidance](https://cinsf.com/employer/), [employer resources](https://cinsf.com/employer-resources/), [official handbook](https://cinsf.com/wp-content/uploads/2026/04/EMPLOYER-Information-Handbook.pdf) and the linked statutory provisions above. No missing authority is supplied by the mere fact that a statement appears on the fund website.
 
-## Fictional worked and held positions
+### Payment pattern library
+
+This is an evidence-classification library, not a claimed catalogue of Cook Islands bank narratives. Authority name, amount and date are leads; they do not establish a programme or period by themselves.
+
+| Pattern | Required evidence | Treatment |
+|---|---|---|
+| CINSF-only remittance with actual period/programme allocation | Authority record/payment slip and matching reviewer-held reference | Match only the evidenced amount; retain raw transaction trace and prior-credit check. |
+| Part payment of one established period | Actual allocation to that period | Show shortfall; do not invent oldest-period allocation. |
+| Amount equal to a liability but no period reference | Missing allocation | Unmatched; no credit from amount equality alone. |
+| Combined PAYE/CINSF remittance | Evidenced component split and period/programme allocation | Credit only established CINSF component; unsplit bundle remains unmatched. |
+| Apparent advance/overpayment | Actual allocated period and legal application/refund rule | Show separately; do not offset another period without evidence. |
+| Salary, PAYE-only transfer, member benefit or reimbursement | Evidence of excluded character | Exclusion in the register, not an omitted transaction or a contribution credit. |
+
+The public resource page identifies an employer reference and electronic payment, and the handbook describes Te Roro declarations, payment slips and balances. This does not establish actual identifiers, a current bulk-upload schema, share rounding, payment allocation or authority to enter a private portal. No identity documents or banking details should be collected into this working paper. [Employer resources](https://cinsf.com/employer-resources/), [handbook physical p 10](https://cinsf.com/wp-content/uploads/2026/04/EMPLOYER-Information-Handbook.pdf)
+
+## Worked cases
+
+Two cases that recompute (derived, fictional currency units CU, cases S01 and S02 below; 5% each share assumed verified).
+
+**Case 1, the ordinary case.** Salary 2,000, overtime 200 and an in-service bonus 300.
+
+```oa-check
+name: CINSF ordinary employee, base 2,500
+inputs:
+  salary: 2000
+  overtime: 200
+  bonus: 300
+  rate: 0.05
+steps:
+  - base: salary + overtime + bonus
+  - employee_share: base * rate
+  - employer_share: base * rate
+  - total: employee_share + employer_share
+expected:
+  base: 2500
+  employee_share: 125
+  employer_share: 125
+  total: 250
+```
+
+**Case 2, the edge case: termination.** Salary 1,500, accrued holiday 400, accrued long service 200, maternity
+pay 300 and a qualifying termination gratuity 600. Only the gratuity is excluded (section 40(2)(a)).
+
+```oa-check
+name: CINSF termination pay, qualifying gratuity excluded
+inputs:
+  salary: 1500
+  holiday: 400
+  long_service: 200
+  maternity: 300
+  gratuity: 600
+  rate: 0.05
+steps:
+  - gross: salary + holiday + long_service + maternity + gratuity
+  - base: gross - gratuity
+  - employee_share: base * rate
+  - total: base * rate * 2
+expected:
+  gross: 3000
+  base: 2400
+  employee_share: 120
+  total: 240
+```
+
+### Fictional worked and held positions
 
 All amounts below are **abstract currency units (CU)** in preconfirmed fictional facts, not an established remittance currency. Numeric shares assume an independently verified 5% per share, applicable limits and an ordinary covered employee, with all earnings wholly paid and payable in the same month. They test arithmetic and classification only. Actual amounts remain held until the current-law, currency, rounding, status and output gates pass. Exact integer illustrations do not supply a rounding rule. Governing selected rules: [ss 37](https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_NSA_NSA00_S37_htm), [39](https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_NSA_NSA00_S39_htm), [40](https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_NSA_NSA00_S40_htm), [41](https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_NSA_NSA00_S41_htm), [44](https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_NSA_NSA00_S44_htm) and [48](https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_NSA_NSA00_S48_htm).
 
@@ -146,7 +227,7 @@ All amounts below are **abstract currency units (CU)** in preconfirmed fictional
 | S19 | Crown-funded maternity or paternity amount is known, but legal payer/allocation not established. | Hold contribution/payment result. Earnings inclusion or leave entitlement alone does not establish the payer's remittance obligation. |
 | S20 | Complete amounts but current prescribed statement fields, identifier readiness or runtime outputs missing. | Hold complete schedule, filing calendar and return delivery. A component pass cannot clear mandatory country slots. |
 
-## Holds and refusal catalogue
+## When to refuse or refer
 
 | Hold | Missing premise and required evidence |
 |---|---|
@@ -172,22 +253,7 @@ Use these exact topical messages in addition to applicable universal/base refusa
 
 A question to the user can establish a fact, not the missing legal rule. No 'don't know' answer authorises a tax/contribution default. Use the bases' exact tool-unavailable stop messages when their runtime gate applies.
 
-## Payment pattern library
-
-This is an evidence-classification library, not a claimed catalogue of Cook Islands bank narratives. Authority name, amount and date are leads; they do not establish a programme or period by themselves.
-
-| Pattern | Required evidence | Treatment |
-|---|---|---|
-| CINSF-only remittance with actual period/programme allocation | Authority record/payment slip and matching reviewer-held reference | Match only the evidenced amount; retain raw transaction trace and prior-credit check. |
-| Part payment of one established period | Actual allocation to that period | Show shortfall; do not invent oldest-period allocation. |
-| Amount equal to a liability but no period reference | Missing allocation | Unmatched; no credit from amount equality alone. |
-| Combined PAYE/CINSF remittance | Evidenced component split and period/programme allocation | Credit only established CINSF component; unsplit bundle remains unmatched. |
-| Apparent advance/overpayment | Actual allocated period and legal application/refund rule | Show separately; do not offset another period without evidence. |
-| Salary, PAYE-only transfer, member benefit or reimbursement | Evidence of excluded character | Exclusion in the register, not an omitted transaction or a contribution credit. |
-
-The public resource page identifies an employer reference and electronic payment, and the handbook describes Te Roro declarations, payment slips and balances. This does not establish actual identifiers, a current bulk-upload schema, share rounding, payment allocation or authority to enter a private portal. No identity documents or banking details should be collected into this working paper. [Employer resources](https://cinsf.com/employer-resources/), [handbook physical p 10](https://cinsf.com/wp-content/uploads/2026/04/EMPLOYER-Information-Handbook.pdf)
-
-## Reviewer working paper and checks
+## Completion checklist
 
 For each selected position record: stable reference; governing law/period; class/status and age evidence; exclusion/election/notification; earnings line and character; gross, exclusion and base; paid/payable dates and payer; each rate and its authority; limits/currency/rounding; raw share and prescribed rounded share; evidenced remittance allocation; unmatched items; missing fields, hold, financial exposure and reviewer action. Link every output component to those rows.
 
@@ -195,7 +261,7 @@ Retain records sufficient for the Board to ascertain earnings and liability for 
 
 The complete social contribution engagement must still deliver the contribution computation schedule, remittance reconciliation, filing/payment calendar, reviewer brief and complete contribution register. Preserve all columns, brief sections and the base's 12 checks. In particular, no unevidenced credit, no invented limit/rounding and no hidden unmatched line may pass. Preserve the universal 4 outputs, 18 checks, current-source gate, profile confirmation, evidence log, assumptions/questions and reviewer delivery. A passed fictional component is not an end-to-end runtime test.
 
-## Mandatory country-slot disposition
+### Mandatory country-slot disposition
 
 | Social base slot | This component and remaining gate |
 |---|---|
@@ -214,30 +280,37 @@ The complete social contribution engagement must still deliver the contribution 
 
 Benefit notes, voluntary buy-back, overseas coordination, other schemes and full payroll/income-tax/bookkeeping integration are not completed. Do not classify an incomplete mandatory slot as not applicable merely to pass the contract. Missing domain slots prevent a complete financial delivery, even if selected local examples pass.
 
-## Validation status
+## Sources
+
+| Source | URL | Read on |
+|---|---|---|
+| Cook Islands Legislation: Official law publisher. Read for the provision cited as 'Official law publisher' | https://cookislandslaws.gov.ck/ | 2026-10-24 (read by Ryan Duguid) |
+| Cook Islands National Superannuation Act 2000, section 2 (Cook Islands Legislation, official consolidation). Read for the provision cited as 'CINSF Act 2000, s 2' | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_NSA_NSA00_S2_htm | 2026-10-24 (read by Ryan Duguid) |
+| Cook Islands National Superannuation Act 2000, section 28 (Cook Islands Legislation, official consolidation). Read for the provision cited as 'Sections 28', 'S 28' | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_NSA_NSA00_S28_htm | 2026-10-24 (read by Ryan Duguid) |
+| Cook Islands National Superannuation Act 2000, section 31 (Cook Islands Legislation, official consolidation). Read for the provision cited as '31', 's 31' | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_NSA_NSA00_S31_htm | 2026-10-24 (read by Ryan Duguid) |
+| Cook Islands National Superannuation Act 2000, section 36 (Cook Islands Legislation, official consolidation). Read for the provision cited as 'Sections 36', 'S 36' | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_NSA_NSA00_S36_htm | 2026-10-24 (read by Ryan Duguid) |
+| Cook Islands National Superannuation Act 2000, section 37 (Cook Islands Legislation, official consolidation). Read for the provision cited as '37', 'S 37', 'Ss 36–37' | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_NSA_NSA00_S37_htm | 2026-11-14 (re-read for section 37(1): under 18 and 60 or more); 2026-10-24 (read by Ryan Duguid) |
+| Cook Islands National Superannuation Fund Order 2016, CL4 (Cook Islands Legislation, official consolidation). Read for the provision cited as '2016 Order cl 4', 'Order cl 4' | https://cookislandslaws.gov.ck/api/display_pages/clause_LOCI_NSA_CINSFO16_CL4_htm | 2026-10-24 (read by Ryan Duguid) |
+| Cook Islands National Superannuation Act 2000, section 39 (Cook Islands Legislation, official consolidation). Read for the provision cited as 'Section 39', 'Ss 39–41', 'S 39' | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_NSA_NSA00_S39_htm | 2026-11-14 (re-read for section 39(1)-(2): equal shares, 3%, 4%, then 5%); 2026-10-24 (read by Ryan Duguid) |
+| Cook Islands National Superannuation Act 2000, section 40 (Cook Islands Legislation, official consolidation). Read for the provision cited as 'Section 40', 'S 40', 'S 40(2)–(4)' | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_NSA_NSA00_S40_htm | 2026-10-24 (read by Ryan Duguid) |
+| Employment Relations Act 2012, Schedule 2 (Cook Islands Legislation, official consolidation). Read for the provision cited as 'Employment Relations Act 2012, Schedule 2' | https://cookislandslaws.gov.ck/api/display_pages/schedule_LOCI_ERA_ERA12_SCH2_htm | 2026-10-24 (read by Ryan Duguid) |
+| Cook Islands National Superannuation Act 2000, section 41 (Cook Islands Legislation, official consolidation). Read for the provision cited as 'Sections 41', 'S 41', '41' | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_NSA_NSA00_S41_htm | 2026-10-24 (read by Ryan Duguid) |
+| Cook Islands National Superannuation Act 2000, section 42 (Cook Islands Legislation, official consolidation). Read for the provision cited as '42', 'S 42' | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_NSA_NSA00_S42_htm | 2026-11-14 (re-read for section 42: 7 years); 2026-10-24 (read by Ryan Duguid) |
+| Cook Islands National Superannuation Act 2000, section 44 (Cook Islands Legislation, official consolidation). Read for the provision cited as '44', 's 44', 'S 44(5)' | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_NSA_NSA00_S44_htm | 2026-10-24 (read by Ryan Duguid) |
+| Cook Islands National Superannuation Act 2000, section 48 (Cook Islands Legislation, official consolidation). Read for the provision cited as 'Sections 48', 's 48', '48' | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_NSA_NSA00_S48_htm | 2026-11-14 (re-read for section 48(1): 20th day of the next month); 2026-10-24 (read by Ryan Duguid) |
+| Cook Islands National Superannuation Act 2000, section 49 (Cook Islands Legislation, official consolidation). Read for the provision cited as '49', 'Ss 48–49' | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_NSA_NSA00_S49_htm | 2026-10-24 (read by Ryan Duguid) |
+| Cook Islands National Superannuation Act 2000, section 52 (Cook Islands Legislation, official consolidation). Read for the provision cited as 'Sections 52', 's 52' | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_NSA_NSA00_S52_htm | 2026-10-24 (read by Ryan Duguid) |
+| Cook Islands National Superannuation Act 2000, section 55 (Cook Islands Legislation, official consolidation). Read for the provision cited as '55', 's 55' | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_NSA_NSA00_S55_htm | 2026-10-24 (read by Ryan Duguid) |
+| Cook Islands National Superannuation Act 2000, section 67 (Cook Islands Legislation, official consolidation). Read for the provision cited as '67', 's 67' | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_NSA_NSA00_S67_htm | 2026-10-24 (read by Ryan Duguid) |
+| Cook Islands National Superannuation Act 2000, section 68 (Cook Islands Legislation, official consolidation). Read for the provision cited as '68', 's 68' | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_NSA_NSA00_S68_htm | 2026-10-24 (read by Ryan Duguid) |
+| Cook Islands National Superannuation Fund: Current fund FAQ. Read for the provision cited as 'Current fund FAQ', 'fund FAQ' | https://cinsf.com/members/faqs/ | 2026-10-24 (read by Ryan Duguid) |
+| Cook Islands National Superannuation Fund: employer page. Read for the provision cited as 'employer page', 'current employer guidance' | https://cinsf.com/employer/ | 2026-10-24 (read by Ryan Duguid) |
+| Cook Islands National Superannuation Fund: employer resources. Read for the provision cited as 'employer resources', 'Employer resources' | https://cinsf.com/employer-resources/ | 2026-10-24 (read by Ryan Duguid) |
+| Cook Islands National Superannuation Fund: Official Employer Information Handbook. Read for the provision cited as 'Official Employer Information Handbook', 'official handbook', 'handbook physical p 10' | https://cinsf.com/wp-content/uploads/2026/04/EMPLOYER-Information-Handbook.pdf | 2026-10-24 (read by Ryan Duguid) |
+| CINSF contribution rate reduction Order 2021, CL4 (Cook Islands Legislation, official consolidation). Read for the provision cited as 'Current 2021 reduction cl 4' | https://cookislandslaws.gov.ck/api/display_pages/clause_LOCI_NSA_CINSFCRO21_CL4_htm | 2026-10-24 (read by Ryan Duguid) |
+| CINSF contribution rate reduction Order 2021, CL5 (Cook Islands Legislation, official consolidation). Read for the provision cited as 'cl 5' | https://cookislandslaws.gov.ck/api/display_pages/clause_LOCI_NSA_CINSFCRO21_CL5_htm | 2026-10-24 (read by Ryan Duguid) |
+| Cook Islands Parliament (signed Act or paper): Employment Relations Amendment Act 2026 No 10. Read for the provision cited as 'Employment Relations Amendment Act 2026 No 10' | https://parliamentci.wpenginepowered.com/wp-content/uploads/2026/06/Employment-Relations-Amendment.pdf | 2026-10-24 (read by Ryan Duguid) |
 
 This is a Tier 2, pending_review, verified_by pending draft. Source retention, selected original comparisons, arithmetic/premise mutations, independent review and repository checks support only their recorded scope. They do not establish professional sign-off, full legal currency, operational compliance, a completed country companion or comprehensive worldwide coverage.
 
-## Disclaimer
-
-This guide and its outputs are informational reference material, not tax, legal, payroll or financial advice. A qualified professional in the relevant jurisdiction must verify the current law, actual facts, calculations, prescribed documents and deadlines before filing, paying or relying on any result.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained in the
-[ryanduguid/openaccountants fork](https://github.com/ryanduguid/openaccountants).
-Check its quality tier, recorded review status and cited sources before use.
-Choose a practitioner whose credentials and engagement scope you have verified.
-The links below are optional upstream services; they do not publish or verify
-this fork's changes.
-
-- Upstream connection service: https://www.openaccountants.com/connect
-- Upstream accountant network: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
+Not yet confirmed: the complete current Order chain under section 39(3) (the fund pages corroborate 5% plus 5% but are not an Order); any minimum or maximum earnings and the share rounding rule; the remittance currency; foreign-worker status; the current prescribed monthly statement; every social country slot the checklist marks held.

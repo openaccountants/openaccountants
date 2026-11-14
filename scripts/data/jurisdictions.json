@@ -238,6 +238,13 @@
   "dir": "skills/ivory-coast"
  },
  {
+  "code": "CK",
+  "name": "Cook Islands",
+  "region": "apac",
+  "owner": "ryan",
+  "dir": "skills/cook-islands"
+ },
+ {
   "code": "CL",
   "name": "Chile",
   "region": "americas",

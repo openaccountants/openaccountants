@@ -15,21 +15,22 @@ description: >
 jurisdiction: CK
 category: international
 tax_year: 2026
+type: computation
 tax_year_notes: "Selected ordinary company and domestic VAT components checked 24 October 2026; actual engagement calculations require the current-law and input gates below"
 tier: 2
-last_updated: 2026-10-24
-version: 0.1
-review_status: pending_review
+last_updated: 2026-11-14
+version: 0.2
 depends_on:
   - workflow-base
   - corporate-income-tax-workflow-base
   - vat-workflow-base
-verified_by: pending
 ---
 
-# Cook Islands: ordinary company tax and VAT components
+# Cook Islands: ordinary company tax and VAT components (v0.2)
 
-## Scope and source gates
+> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
+
+## Scope
 
 This reference provides bounded working-paper components for an ordinary
 domestic company and ordinary domestic VAT transactions. It establishes
@@ -83,7 +84,7 @@ not settle residence, foreign income, VAT registration or exemption. Use
 ck-company-registry-reporting for its selected company-law component; its
 formation, reporting and ownership holds remain.
 
-## Intake and primary sources
+## Ask the client first
 
 Retain redacted evidence and stable references, with identifiers, credentials,
 bank details and identity documents kept outside this workflow. Confirm:
@@ -110,6 +111,10 @@ bank details and identity documents kept outside this workflow. Confirm:
   use changes and other streams. Establish a nil amount independently rather
   than treating an absent record as nil. Obtain reviewer attention thresholds.
 
+## The method, step by step
+
+### Primary source library
+
 Read the identified complete provisions and their applicable definitions.
 The source library is selected, not a claim that every country law was audited.
 
@@ -126,22 +131,22 @@ The source library is selected, not a claim that every country law was audited.
 | Original VAT Amendment Act 2023, sections 2/4/5 and Schedule | 1 July 2023 quarterly election and consequential return-period changes, including sections 16/17. [2023 original][VAT-2023]. |
 | Original VAT Amendment Act 2026, sections 2/4/5 | Selected import exemptions, commencing the day after 26 May 2026 assent; no ordinary-rate or registration conclusion follows from those import changes. [2026 original][VAT-2026]. |
 
-## Period-specific figures
+### Period-specific figures
 
-| Item | Selected rule | Source |
-|---|---|---|
-| Ordinary company basic rate | Resident under section 82: 20 cents per taxable-income dollar; not so resident: 28 cents. Overseas insurance companies excluded. | [Schedule 1 clause 2][IT-RATES] |
-| Natural-person director residence input | Home in Cook Islands **and** personal presence **more than 183 days** in a 12-month period, under section 82(1). This is not the company's residence test. | [82][IT-82] |
-| Domestic-company director branch | At least 3 resident directors concurrently at any moment during the income year; control and effective-management branches are independent alternatives. | [82(2)][IT-82] |
-| Ordinary VAT standard rate | 15% of established VAT-exclusive supply value. For an ordinary wholly standard-rated price inclusive of that VAT, the tax fraction is 15/115 = 3/23. | [6][VAT-6]; [11][VAT-11] |
-| Printed compulsory registration amount | NZD 40,000, subject to the unresolved applicable-Order gate; strictly exceeded, not merely equalled. | [12(1)][VAT-12] |
-| Voluntary-registration supply amount | Likely to exceed NZD 20,000 over the specified year; application and Collector eligibility/effective-date conditions apply. | [12(4)-(5)][VAT-12] |
-| Compulsory application interval | Within 21 days of becoming liable; actual endpoint requires the applicable time-computation/calendar chain. | [12(3)][VAT-12] |
-| Quarterly election amount | NZD 300,000 or less under section 15(1A), with notice and no overdue returns; section 15(1D) separately requires exit on a past-year or expected forward-year increase over NZD 300,000. | [15][VAT-15] |
-| Ordinary monthly return/payment rule | Return by the following month's 20th day, or the immediately succeeding working day; tax payment follows the return's filing day. Final dates need the complete calendar. | [15(1)][VAT-15]; [17(1)][VAT-17] |
-| VAT records | At least 5 years after the relevant return period ends, subject to the specific statutory exceptions and a written investigation extension of up to 3 further years. | [42][VAT-42] |
+| Item | Selected rule or rate | Source | Official URL |
+|---|---|---|---|
+| Ordinary company basic rate | Resident under section 82: 20 cents per taxable-income dollar; not so resident: 28 cents. Overseas insurance companies excluded. | [Schedule 1 clause 2][IT-RATES] | https://cookislandslaws.gov.ck/api/display_pages/clause_LOCI_ITA_ITA97_SCH1_CL2_htm |
+| Natural-person director residence input | Home in Cook Islands **and** personal presence **more than 183 days** in a 12-month period, under section 82(1). This is not the company's residence test. | [82][IT-82] | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_ITA_ITA97_S82_htm |
+| Domestic-company director branch | At least 3 resident directors concurrently at any moment during the income year; control and effective-management branches are independent alternatives. | [82(2)][IT-82] | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_ITA_ITA97_S82_htm |
+| Ordinary VAT standard rate | 15% of established VAT-exclusive supply value. For an ordinary wholly standard-rated price inclusive of that VAT, the tax fraction is 15/115 = 3/23. | [6][VAT-6]; [11][VAT-11] | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_VATA_VATA97_S6_htm |
+| Printed compulsory registration amount | NZD 40,000, subject to the unresolved applicable-Order gate; strictly exceeded, not merely equalled. | [12(1)][VAT-12] | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_VATA_VATA97_S12_htm |
+| Voluntary-registration supply amount | Likely to exceed NZD 20,000 over the specified year; application and Collector eligibility/effective-date conditions apply. | [12(4)-(5)][VAT-12] | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_VATA_VATA97_S12_htm |
+| Compulsory application interval | Within 21 days of becoming liable; actual endpoint requires the applicable time-computation/calendar chain. | [12(3)][VAT-12] | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_VATA_VATA97_S12_htm |
+| Quarterly election amount | NZD 300,000 or less under section 15(1A), with notice and no overdue returns; section 15(1D) separately requires exit on a past-year or expected forward-year increase over NZD 300,000. | [15][VAT-15] | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_VATA_VATA97_S15_htm |
+| Ordinary monthly return/payment rule | Return by the following month's 20th day, or the immediately succeeding working day; tax payment follows the return's filing day. Final dates need the complete calendar. | [15(1)][VAT-15]; [17(1)][VAT-17] | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_VATA_VATA97_S15_htm |
+| VAT records | At least 5 years after the relevant return period ends, subject to the specific statutory exceptions and a written investigation extension of up to 3 further years. | [42][VAT-42] | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_VATA_VATA97_S42_htm |
 
-## Corporate workflow contract
+### Corporate workflow contract
 
 For company income-tax work, complete all 26 intake fields in
 corporate-income-tax-workflow-base Section 4 through the universal read,
@@ -173,7 +178,7 @@ unmet checks and missing slots as held; an illustrative rate result cannot
 turn them into passed checks or a completed return. Use the country slot
 status below to identify missing law, facts and operational evidence.
 
-## Company classification and rate component
+### Company classification and rate component
 
 1. Confirm the entity falls within section 2's company definition and this
    ordinary scope. A Cook Islands company is a defined term, not a synonym
@@ -215,9 +220,9 @@ determine the applicable return branch, subject to actual extensions and
 calendar law. This guide does not select a payment sequence or treat the
 basic-rate component as the balance payable. [8][IT-8]; [9][IT-9]; [15][IT-15]
 
-## Ordinary VAT mechanics
+### Ordinary VAT mechanics
 
-### Registration and activity
+#### Registration and activity
 
 Establish a continuous or regular activity involving supplies for
 consideration under section 4. Profit intention is unnecessary, but the
@@ -253,7 +258,7 @@ does not itself cancel an existing registration: apply section 13 and the
 Collector's cancellation date, with existing liabilities preserved.
 [12(4)-(6)][VAT-12]; [13][VAT-13]
 
-### Basis, period and supply treatment
+#### Basis, period and supply treatment
 
 Under section 15A, a person may elect invoice or payments basis and must
 notify the Collector in the prescribed form. Established failure to elect
@@ -281,7 +286,7 @@ zero rating, imported goods and mixed or special supplies remain held here.
 [2][VAT-2]; [7][VAT-7]; [8][VAT-8]; [10][VAT-10]; [11][VAT-11];
 [Schedule 1 clause 1][VAT-EXEMPT]
 
-### Ordinary domestic ledger calculation
+#### Ordinary domestic ledger calculation
 
 Use this calculation only for established ordinary standard-rated domestic
 supplies with their correct value and period. Related-party discounts,
@@ -325,7 +330,7 @@ information is not nil. A positive net is tax payable under section 17; a
 negative net is a refund due under section 29, not proof of cash paid or its
 timing. Refund administration and a complete return remain held. [16][VAT-16]
 
-### Filing frequency, payment and records
+#### Filing frequency, payment and records
 
 Monthly returns are the ordinary section 15(1) branch. Quarterly filing requires
 the section 15(1A) election in the Collector-specified form/manner and no
@@ -347,7 +352,57 @@ retention waiver and liquidated-company provisions are specific exceptions,
 not blanket defaults. Keep company-law and income-tax retention duties separate.
 [42][VAT-42]
 
-## Fictional worked positions
+## Worked cases
+
+Two cases that recompute (derived, NZD, fictional).
+
+**Case 1, a decision both ways: does the third resident director need to overlap?** Cook Islands company,
+reviewed taxable income 60,000; director control and effective management are not in the Cook Islands.
+If 3 resident directors serve at the same moment in the year, section 82(2)(c) deems the company resident
+and the basic rate is 20 cents; if they only serve one after another, it is not resident and the rate is
+28 cents (cases C03 and C04 below).
+
+```oa-check
+name: Cook Islands company, taxable income NZD 60,000, resident versus non-resident basic rate
+inputs:
+  taxable_income: 60000
+steps:
+  - resident_tax: taxable_income * 0.20
+  - nonresident_tax: taxable_income * 0.28
+  - cost_of_failing_overlap: nonresident_tax - resident_tax
+expected:
+  resident_tax: 12000
+  nonresident_tax: 16800
+  cost_of_failing_overlap: 4800
+```
+
+**Case 2, payments basis against invoice basis (cases V03 and V04).** VAT-inclusive sales invoice 1,150 with
+575 received in the period; purchase invoice 460 with 230 paid. The tax fraction is 15/115 = 3/23.
+
+```oa-check
+name: Cook Islands VAT, payments basis versus invoice basis for one period
+inputs:
+  sale_invoice: 1150
+  sale_received: 575
+  purchase_invoice: 460
+  purchase_paid: 230
+steps:
+  - payments_output: sale_received * 3 / 23
+  - payments_input: purchase_paid * 3 / 23
+  - payments_net: payments_output - payments_input
+  - invoice_output: sale_invoice * 3 / 23
+  - invoice_input: purchase_invoice * 3 / 23
+  - invoice_net: invoice_output - invoice_input
+expected:
+  payments_output: 75
+  payments_input: 30
+  payments_net: 45
+  invoice_output: 150
+  invoice_input: 60
+  invoice_net: 90
+```
+
+### Fictional worked positions
 
 All amounts below are NZD and all entities/records are fictional. Each row
 assumes the stated law, ordinary scope, current source conditions and all
@@ -381,7 +436,7 @@ source holds above remain. No row establishes a complete return.
 | V15 | Both measures are 250,000, but an overdue return exists when the proposed quarterly election is made. | Section 15(1B) prevents that election then. A low turnover figure does not establish quarterly filing. [VAT-15] |
 | V16 | Established ordinary invoice-basis period has output tax 150 and eligible input tax 300, with all additions/adjustments independently nil. | 150 − 300 = −150: refund due component of 150 under section 16(9), subject to section 29. No cash refund date or complete return is established. [VAT-16] |
 
-## Holds, refusals and defaults
+## When to refuse or refer
 
 | Hold | Trigger | Required evidence or work |
 |---|---|---|
@@ -426,7 +481,7 @@ and question-filter thresholds before a complete VAT workflow. This component
 sets none, and no EUR threshold is imported. No missing fact has an authorised
 cash-floor default; an unknown impact remains flagged.
 
-## Working paper and acceptance checks
+## Completion checklist
 
 Extend the universal working paper with separate company-residence/source,
 basic-rate and VAT component schedules. Record source/version/effective date,
@@ -445,7 +500,7 @@ not substitute for a recalculated workbook, reviewer brief, action list or
 review checklist. The corporate workflow contract above also remains
 mandatory for company income-tax work.
 
-| Corporate country contract slots | Component status and remaining work |
+| Company tax country contract slots | Component status and remaining work |
 |---|---|
 | Regime identification | CK, selected Income Tax Act provisions and MFEM authority identified. Current filing form, portal/format and complete filing mechanics held; the conflicting payment/instalment calendar remains held. |
 | Rates | Ordinary resident 20% and nonresident 28% basic-rate component on reviewed taxable income only. Small-company, reduced/activity, surcharge and branch-profits regimes require separate current-law verification; none is assumed nil or inapplicable. |
@@ -496,6 +551,63 @@ Before accepting a component, check all of the following:
   working paper, brief, action list and review checklist. Complete domain
   slots and outputs remain mandatory; component checks do not establish
   professional sign-off or comprehensive jurisdiction acceptance.
+
+## Sources
+
+| Source | URL | Read on |
+|---|---|---|
+| [LAW-DATE] Cook Islands Legislation: Official consolidation date. Read for the provision cited as 'Official consolidation date' | https://cookislandslaws.gov.ck/api/retrieve_web_text_master/HomePanel-HeadingSecond | 2026-10-24 (read by Ryan Duguid) |
+| [LAW-HELP] Cook Islands Legislation: official legislation information. Read for the provision cited as 'official legislation information', 'official publication limits' | https://cookislandslaws.gov.ck/api/retrieve_help_page | 2026-10-24 (read by Ryan Duguid) |
+| [IT-PREFACE] Cook Islands Legislation: income-tax amendment table. Read for the provision cited as 'income-tax amendment table' | https://cookislandslaws.gov.ck/api/display_pages/INCOME%20TAX%20ACT%201997 | 2026-10-24 (read by Ryan Duguid) |
+| [VAT-PREFACE] Cook Islands Legislation: VAT amendment table. Read for the provision cited as 'VAT amendment table' | https://cookislandslaws.gov.ck/api/display_pages/VALUE%20ADDED%20TAX%20ACT%201997 | 2026-10-24 (read by Ryan Duguid) |
+| [IT-2] Income Tax Act 1997, section 2 (Cook Islands Legislation, official consolidation). Read for the provision cited as '2' | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_ITA_ITA97_S2_htm | 2026-10-24 (read by Ryan Duguid) |
+| [IT-8] Income Tax Act 1997, section 8 (Cook Islands Legislation, official consolidation). Read for the provision cited as '8' | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_ITA_ITA97_S8_htm | 2026-10-24 (read by Ryan Duguid) |
+| [IT-9] Income Tax Act 1997, section 9 (Cook Islands Legislation, official consolidation). Read for the provision cited as '9' | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_ITA_ITA97_S9_htm | 2026-10-24 (read by Ryan Duguid) |
+| [IT-15] Income Tax Act 1997, section 15 (Cook Islands Legislation, official consolidation). Read for the provision cited as '15' | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_ITA_ITA97_S15_htm | 2026-10-24 (read by Ryan Duguid) |
+| [IT-39] Income Tax Act 1997, section 39 (Cook Islands Legislation, official consolidation). Read for the provision cited as '39' | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_ITA_ITA97_S39_htm | 2026-10-24 (read by Ryan Duguid) |
+| [IT-40] Income Tax Act 1997, section 40 (Cook Islands Legislation, official consolidation). Read for the provision cited as '40' | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_ITA_ITA97_S40_htm | 2026-10-24 (read by Ryan Duguid) |
+| [IT-42] Income Tax Act 1997, section 42 (Cook Islands Legislation, official consolidation). Read for the provision cited as '42' | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_ITA_ITA97_S42_htm | 2026-10-24 (read by Ryan Duguid) |
+| [IT-80] Income Tax Act 1997, section 80 (Cook Islands Legislation, official consolidation). Read for the provision cited as '80' | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_ITA_ITA97_S80_htm | 2026-10-24 (read by Ryan Duguid) |
+| [IT-82] Income Tax Act 1997, section 82 (Cook Islands Legislation, official consolidation). Read for the provision cited as '82', '82(2)' | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_ITA_ITA97_S82_htm | 2026-10-24 (read by Ryan Duguid) |
+| [IT-83] Income Tax Act 1997, section 83 (Cook Islands Legislation, official consolidation). Read for the provision cited as '83' | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_ITA_ITA97_S83_htm | 2026-10-24 (read by Ryan Duguid) |
+| [IT-84] Income Tax Act 1997, section 84 (Cook Islands Legislation, official consolidation). Read for the provision cited as '84' | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_ITA_ITA97_S84_htm | 2026-10-24 (read by Ryan Duguid) |
+| [IT-RATES] Income Tax Act 1997, clause 2 (Cook Islands Legislation, official consolidation). Read for the provision cited as 'company rates', 'Schedule 1 clause 2', 'rates' | https://cookislandslaws.gov.ck/api/display_pages/clause_LOCI_ITA_ITA97_SCH1_CL2_htm | 2026-11-14 (re-read for Schedule 1 clause 2: 20 cents resident, 28 cents non-resident company); 2026-10-24 (read by Ryan Duguid) |
+| [IT-179] Income Tax Act 1997, section 179 (Cook Islands Legislation, official consolidation). Read for the provision cited as '179' | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_ITA_ITA97_S179_htm | 2026-10-24 (read by Ryan Duguid) |
+| [IT-180] Income Tax Act 1997, section 180 (Cook Islands Legislation, official consolidation). Read for the provision cited as '180' | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_ITA_ITA97_S180_htm | 2026-10-24 (read by Ryan Duguid) |
+| [IT-188] Income Tax Act 1997, section 188 (Cook Islands Legislation, official consolidation). Read for the provision cited as '188' | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_ITA_ITA97_S188_htm | 2026-10-24 (read by Ryan Duguid) |
+| [IT-190] Income Tax Act 1997, section 190 (Cook Islands Legislation, official consolidation). Read for the provision cited as '190' | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_ITA_ITA97_S190_htm | 2026-10-24 (read by Ryan Duguid) |
+| [IT-CALENDAR] Income Tax Act 1997, clause 1 (Cook Islands Legislation, official consolidation). Read for the provision cited as 'Schedule 3' | https://cookislandslaws.gov.ck/api/display_pages/clause_LOCI_ITA_ITA97_SCH3_CL1_htm | 2026-10-24 (read by Ryan Duguid) |
+| [IT-2013] MFEM: 2013 original. Read for the provision cited as '2013 original' | https://www.mfem.gov.ck/_files/ugd/dbdf40_6ba91c45683e4f9699b77b7bffbd96e2.pdf | 2026-10-24 (read by Ryan Duguid) |
+| [IT-2021] MFEM: 2021 original. Read for the provision cited as '2021 original' | https://www.mfem.gov.ck/_files/ugd/dbdf40_893ff82f06544d5d93729009dcf86ad6.pdf | 2026-10-24 (read by Ryan Duguid) |
+| [MFEM-CALENDAR] MFEM: MFEM calendar. Read for the provision cited as 'MFEM calendar' | https://www.mfem.gov.ck/_files/ugd/dbdf40_87b3c94f47854a4e956a21865546b948.pdf | 2026-10-24 (read by Ryan Duguid) |
+| [VAT-2] Value Added Tax Act 1997, section 2 (Cook Islands Legislation, official consolidation). Read for the provision cited as '2', 'Definitions' | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_VATA_VATA97_S2_htm | 2026-10-24 (read by Ryan Duguid) |
+| [VAT-3] Value Added Tax Act 1997, section 3 (Cook Islands Legislation, official consolidation). Read for the provision cited as '3' | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_VATA_VATA97_S3_htm | 2026-10-24 (read by Ryan Duguid) |
+| [VAT-4] Value Added Tax Act 1997, section 4 (Cook Islands Legislation, official consolidation). Read for the provision cited as '4', 'activity' | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_VATA_VATA97_S4_htm | 2026-10-24 (read by Ryan Duguid) |
+| [VAT-4A] Value Added Tax Act 1997, section 4A (Cook Islands Legislation, official consolidation). Read for the provision cited as '4A' | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_VATA_VATA97_S4A_htm | 2026-10-24 (read by Ryan Duguid) |
+| [VAT-5] Value Added Tax Act 1997, section 5 (Cook Islands Legislation, official consolidation). Read for the provision cited as '5' | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_VATA_VATA97_S5_htm | 2026-10-24 (read by Ryan Duguid) |
+| [VAT-6] Value Added Tax Act 1997, section 6 (Cook Islands Legislation, official consolidation). Read for the provision cited as '6' | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_VATA_VATA97_S6_htm | 2026-10-24 (read by Ryan Duguid) |
+| [VAT-7] Value Added Tax Act 1997, section 7 (Cook Islands Legislation, official consolidation). Read for the provision cited as '7' | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_VATA_VATA97_S7_htm | 2026-10-24 (read by Ryan Duguid) |
+| [VAT-8] Value Added Tax Act 1997, section 8 (Cook Islands Legislation, official consolidation). Read for the provision cited as '8' | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_VATA_VATA97_S8_htm | 2026-10-24 (read by Ryan Duguid) |
+| [VAT-10] Value Added Tax Act 1997, section 10 (Cook Islands Legislation, official consolidation). Read for the provision cited as '10', 'charge' | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_VATA_VATA97_S10_htm | 2026-10-24 (read by Ryan Duguid) |
+| [VAT-11] Value Added Tax Act 1997, section 11 (Cook Islands Legislation, official consolidation). Read for the provision cited as '11' | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_VATA_VATA97_S11_htm | 2026-11-14 (re-read for section 11(1): 15%); 2026-10-24 (read by Ryan Duguid) |
+| [VAT-12] Value Added Tax Act 1997, section 12 (Cook Islands Legislation, official consolidation). Read for the provision cited as 'Registration', '12', '12(1)' | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_VATA_VATA97_S12_htm | 2026-11-14 (re-read for section 12(1)(a) $40,000 'or such other amount' by Order, section 12(4) $20,000); 2026-10-24 (read by Ryan Duguid) |
+| [VAT-13] Value Added Tax Act 1997, section 13 (Cook Islands Legislation, official consolidation). Read for the provision cited as '13' | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_VATA_VATA97_S13_htm | 2026-10-24 (read by Ryan Duguid) |
+| [VAT-15] Value Added Tax Act 1997, section 15 (Cook Islands Legislation, official consolidation). Read for the provision cited as '15', '15(1)' | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_VATA_VATA97_S15_htm | 2026-10-24 (read by Ryan Duguid) |
+| [VAT-15A] Value Added Tax Act 1997, section 15A (Cook Islands Legislation, official consolidation). Read for the provision cited as '15A' | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_VATA_VATA97_S15A_htm | 2026-10-24 (read by Ryan Duguid) |
+| [VAT-15B] Value Added Tax Act 1997, section 15B (Cook Islands Legislation, official consolidation). Read for the provision cited as '15B' | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_VATA_VATA97_S15B_htm | 2026-10-24 (read by Ryan Duguid) |
+| [VAT-16] Value Added Tax Act 1997, section 16 (Cook Islands Legislation, official consolidation). Read for the provision cited as '16', '16(3)-(4)', '16(3)-(6)' | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_VATA_VATA97_S16_htm | 2026-10-24 (read by Ryan Duguid) |
+| [VAT-17] Value Added Tax Act 1997, section 17 (Cook Islands Legislation, official consolidation). Read for the provision cited as '17', '17(1)' | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_VATA_VATA97_S17_htm | 2026-10-24 (read by Ryan Duguid) |
+| [VAT-18] Value Added Tax Act 1997, section 18 (Cook Islands Legislation, official consolidation). Read for the provision cited as '18' | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_VATA_VATA97_S18_htm | 2026-10-24 (read by Ryan Duguid) |
+| [VAT-19] Value Added Tax Act 1997, section 19 (Cook Islands Legislation, official consolidation). Read for the provision cited as '19' | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_VATA_VATA97_S19_htm | 2026-10-24 (read by Ryan Duguid) |
+| [VAT-42] Value Added Tax Act 1997, section 42 (Cook Islands Legislation, official consolidation). Read for the provision cited as '42' | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_VATA_VATA97_S42_htm | 2026-10-24 (read by Ryan Duguid) |
+| [VAT-EXEMPT] Value Added Tax Act 1997, clause 1 (Cook Islands Legislation, official consolidation). Read for the provision cited as 'exempt supplies 1', 'Schedule 1 clause 1' | https://cookislandslaws.gov.ck/api/display_pages/clause_LOCI_VATA_VATA97_SCH1_CL1_htm | 2026-10-24 (read by Ryan Duguid) |
+| [VAT-EXEMPT2] Value Added Tax Act 1997, clause 2 (Cook Islands Legislation, official consolidation). Read for the provision cited as '2' | https://cookislandslaws.gov.ck/api/display_pages/clause_LOCI_VATA_VATA97_SCH1_CL2_htm | 2026-10-24 (read by Ryan Duguid) |
+| [VAT-EXEMPT3] Value Added Tax Act 1997, clause 3 (Cook Islands Legislation, official consolidation). Read for the provision cited as '3' | https://cookislandslaws.gov.ck/api/display_pages/clause_LOCI_VATA_VATA97_SCH1_CL3_htm | 2026-10-24 (read by Ryan Duguid) |
+| [VAT-EXEMPT4] Value Added Tax Act 1997, clause 4 (Cook Islands Legislation, official consolidation). Read for the provision cited as '4' | https://cookislandslaws.gov.ck/api/display_pages/clause_LOCI_VATA_VATA97_SCH1_CL4_htm | 2026-10-24 (read by Ryan Duguid) |
+| [VAT-EXEMPT5] Value Added Tax Act 1997, clause 5 (Cook Islands Legislation, official consolidation). Read for the provision cited as '5' | https://cookislandslaws.gov.ck/api/display_pages/clause_LOCI_VATA_VATA97_SCH1_CL5_htm | 2026-10-24 (read by Ryan Duguid) |
+| [VAT-2014] MFEM: 2014 original. Read for the provision cited as '2014 original' | https://www.mfem.gov.ck/_files/ugd/dbdf40_80a266044fa7415c913c673207fb75e0.pdf | 2026-10-24 (read by Ryan Duguid) |
+| [VAT-2023] Cook Islands Parliament (signed Act or paper): 2023 original. Read for the provision cited as '2023 original', '2023 amendment and Schedule' | https://parliamentci.wpenginepowered.com/wp-content/uploads/2023/04/Value-Added-Tax-Amendment-Act-2023-No.-02.-signed-copy.pdf | 2026-10-24 (read by Ryan Duguid) |
+| [VAT-2026] Cook Islands Parliament (signed Act or paper): 2026 original. Read for the provision cited as '2026 original' | https://parliamentci.wpenginepowered.com/wp-content/uploads/2026/05/Value-Added-Tax-Amendment-Act-2026-No.-4.pdf | 2026-10-24 (read by Ryan Duguid) |
 
 Version 0.1, checked 24 October 2026. This adds selected ordinary company and
 VAT components and records explicit unresolved source/operational gates.
@@ -556,22 +668,4 @@ remain open. Recheck primary law for a later period or changed fact pattern.
 [VAT-2023]: https://parliamentci.wpenginepowered.com/wp-content/uploads/2023/04/Value-Added-Tax-Amendment-Act-2023-No.-02.-signed-copy.pdf
 [VAT-2026]: https://parliamentci.wpenginepowered.com/wp-content/uploads/2026/05/Value-Added-Tax-Amendment-Act-2026-No.-4.pdf
 
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained in the
-[ryanduguid/openaccountants fork](https://github.com/ryanduguid/openaccountants).
-Check its quality tier, recorded review status and cited sources before use.
-Choose a practitioner whose credentials and engagement scope you have verified.
-The links below are optional upstream services; they do not publish or verify
-this fork's changes.
-
-- Upstream connection service: https://www.openaccountants.com/connect
-- Upstream accountant network: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
+Not yet confirmed: whether an Order in Executive Council has replaced the NZD 40,000 compulsory VAT registration amount in section 12(1)(a); the company provisional tax payment dates (the Act's 1 May and 1 November sequence against MFEM's published 1 June and 1 December); the prescribed return forms, portal and box mapping; every corporate and VAT country slot the checklist marks held.

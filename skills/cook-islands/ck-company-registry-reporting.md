@@ -14,20 +14,21 @@ description: >
 jurisdiction: CK
 category: formation
 tax_year: 2026
+type: filing-howto
 tax_year_notes: "Selected current rules checked 24 October 2026 for genuinely new ordinary domestic companies incorporated after 1 January 2026; future filing periods require a fresh currency check"
 tier: 2
-last_updated: 2026-10-24
-version: 0.1
-review_status: pending_review
+last_updated: 2026-11-14
+version: 0.2
 depends_on:
   - workflow-base
   - company-formation-workflow-base
-verified_by: pending
 ---
 
-# Cook Islands: domestic company registry and reporting
+# Cook Islands: domestic company registry and reporting (v0.2)
 
-## Scope and period gate
+> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
+
+## Scope
 
 This reference establishes selected registry prerequisites, company records,
 annual return month and statutory financial statement/audit classifications
@@ -60,7 +61,7 @@ changes legacy restoration provisions in sections 408/411B. It does not
 establish new-company eligibility. [2021 amendment, sections 2, 29 and 31][AMEND21];
 [Schedule 1 clause 1][DEFS]; [section 412A][TRANSITION]; [2025 amendment][AMEND25]
 
-## Intake and source library
+## Ask the client first
 
 Confirm the purpose, activities, founder situation and reviewer under the
 bases before selecting an entity. For this component record:
@@ -87,6 +88,10 @@ bases before selecting an entity. For this component record:
   a final deadline. Record location events and notice registration are
   different events. Do not collect credentials or submit identity documents.
 
+## The method, step by step
+
+### Source library
+
 The primary sources below are the selected official consolidated provisions
 and original amendments, checked on 24 October 2026. Read the identified
 section and its applicable definitions before applying a row. Selected
@@ -104,29 +109,29 @@ other applicable regime has been audited.
 | Cook Islands Act 1915, section 622; Acts Interpretation Act 1924, sections 2-4 and 25 | Territorial application, calendar month and general time computation. [622][INTERPRET-BRIDGE]; [4][INTERPRET-DEFS]; [25][TIME]. |
 | Public Holidays Act 1999, sections 2-3 and Schedule 1 | Ordinary statutory holidays and substitution, subject to additional declarations. [2][HOLIDAY-DEFS]; [3][HOLIDAYS]; [Schedule 1][HOLIDAY-LIST]. |
 
-## Selected figures and registry rules
+### Selected figures and registry rules
 
 Figures below are statutory conditions for this component, not a complete
 formation cost or compliance calendar. NZD is the fee table's currency.
 
-| Item | Rule | Authority |
-|---|---|---|
-| Essential structure | A name, constitution, at least 1 share, 1 shareholder and 1 director. Apply the complete statutory conditions. | Section 6 [ESSENTIAL] |
-| Director age | A natural person aged at least 18, with all other qualification and disqualification conditions resolved. | Section 75 [DIRECTOR] |
-| Residence branch | At least 1 director lives in Cook Islands, or lives in NZ and is also a director of a company registered in NZ, except as the equivalent of an overseas company. | Section 6(e) [ESSENTIAL] |
-| Default constitution | Schedule 2 for 1 shareholder; Schedule 3 for 2-9; Schedule 4 for 10 or more, subject to permitted modification/substitution. | Section 15 [CONSTITUTION] |
-| Incorporation fee | NZD 75; VAT included. | Regulations 6/10 and Schedule 2 [FEES] [VAT-FEES] [FEE-TABLE] |
-| Annual return fee | NZD 50; VAT included. Selected late fee NZD 200 if filed more than 1 month after due date; that is not a filing extension. Actual accrual/date and other penalties remain held. | Regulations 7/10 and Schedule 2 [LATE] [VAT-FEES] [FEE-TABLE] |
-| Annual return month | Registrar-allocated month; no return in the calendar year of incorporation. | Sections 153-154 [RETURN] [MONTH] |
-| Statements | Required under section 161 at 10 or more shareholders; prepare within 4 months after balance date. | Section 161 [STATEMENTS] |
-| Smaller company notice | Fewer than 10 shareholders: holders together holding at least 10% of voting shares may require statements by qualifying written notice. | Section 163 [NOTICE] |
-| Notice window | Start of relevant accounting period through close of the date 3 months after its end. | Section 163(5) [NOTICE] |
-| Maximum period | Incorporation to first balance date, or between balance dates, must not exceed 15 months where section 161(2)-(4) applies. | Sections 161/163 [STATEMENTS] [NOTICE] |
-| Accounting records | Current accounting period plus last 7 completed periods, subject to actual history and any written Registrar approval of a shorter period. | Section 144 [RECORDS] |
-| Address change | Effective date cannot be earlier than 5 working days after notice registration. | Section 143 [OFFICE-CHANGE] |
-| Other local records location | Notify within 10 working days after first keeping records away from registered office or changing that place. | Section 145 [LOCATION] |
+| Item | Rule or figure | Authority | Official URL |
+|---|---|---|---|
+| Essential structure | A name, constitution, at least 1 share, 1 shareholder and 1 director. Apply the complete statutory conditions. | Section 6 [ESSENTIAL] | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_COMPA_CA17_S6_htm |
+| Director age | A natural person aged at least 18, with all other qualification and disqualification conditions resolved. | Section 75 [DIRECTOR] | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_COMPA_CA17_S75_htm |
+| Residence branch | At least 1 director lives in Cook Islands, or lives in NZ and is also a director of a company registered in NZ, except as the equivalent of an overseas company. | Section 6(e) [ESSENTIAL] | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_COMPA_CA17_S6_htm |
+| Default constitution | Schedule 2 for 1 shareholder; Schedule 3 for 2-9; Schedule 4 for 10 or more, subject to permitted modification/substitution. | Section 15 [CONSTITUTION] | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_COMPA_CA17_S15_htm |
+| Incorporation fee | NZD 75; VAT included. | Regulations 6/10 and Schedule 2 [FEES] [VAT-FEES] [FEE-TABLE] | https://cookislandslaws.gov.ck/api/display_pages/reg_LOCI_COMPA_CR19_REG6_htm |
+| Annual return fee | NZD 50; VAT included. Selected late fee NZD 200 if filed more than 1 month after due date; that is not a filing extension. Actual accrual/date and other penalties remain held. | Regulations 7/10 and Schedule 2 [LATE] [VAT-FEES] [FEE-TABLE] | https://cookislandslaws.gov.ck/api/display_pages/reg_LOCI_COMPA_CR19_REG7_htm |
+| Annual return month | Registrar-allocated month; no return in the calendar year of incorporation. | Sections 153-154 [RETURN] [MONTH] | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_COMPA_CA17_S153_htm |
+| Statements | Required under section 161 at 10 or more shareholders; prepare within 4 months after balance date. | Section 161 [STATEMENTS] | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_COMPA_CA17_S161_htm |
+| Smaller company notice | Fewer than 10 shareholders: holders together holding at least 10% of voting shares may require statements by qualifying written notice. | Section 163 [NOTICE] | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_COMPA_CA17_S163_htm |
+| Notice window | Start of relevant accounting period through close of the date 3 months after its end. | Section 163(5) [NOTICE] | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_COMPA_CA17_S163_htm |
+| Maximum period | Incorporation to first balance date, or between balance dates, must not exceed 15 months where section 161(2)-(4) applies. | Sections 161/163 [STATEMENTS] [NOTICE] | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_COMPA_CA17_S161_htm |
+| Accounting records | Current accounting period plus last 7 completed periods, subject to actual history and any written Registrar approval of a shorter period. | Section 144 [RECORDS] | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_COMPA_CA17_S144_htm |
+| Address change | Effective date cannot be earlier than 5 working days after notice registration. | Section 143 [OFFICE-CHANGE] | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_COMPA_CA17_S143_htm |
+| Other local records location | Notify within 10 working days after first keeping records away from registered office or changing that place. | Section 145 [LOCATION] | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_COMPA_CA17_S145_htm |
 
-### Registration prerequisites
+#### Registration prerequisites
 
 Apply section 6 to the complete structure, not just its director count.
 A corporate director, person under 18, undischarged bankrupt in any
@@ -166,7 +171,7 @@ its stated date. Separate legal personality and capacity under section 10
 do not replace tax, employer, foreign-investment, land or activity-specific
 permissions. [Registration][REGISTER]; [certificate][CERT]; [personality][PERSON]
 
-### Annual return and records
+#### Annual return and records
 
 Use the Registrar's allocated month, not incorporation anniversary or
 balance date. A changed month or subsidiary alignment requires the
@@ -196,7 +201,7 @@ receipts/payments, assets/liabilities and the relevant goods, stock and
 services records. Its narrow retail cash daily-aggregate exception does
 not waive other record or VAT duties. [Sections 158-159][DIRECTOR-RECORDS] [ACCOUNTING]
 
-### Statements and audit classification
+#### Statements and audit classification
 
 Count registered shareholders using Schedule 1. For the ordinary examples,
 the register, rights and count remain fixed throughout the period. A change
@@ -238,7 +243,7 @@ the defined Director of the Office of the Public Expenditure Review Committee
 and Audit a separate statutory qualification; do not apply the ordinary
 recognition-letter test to that exception without examining it. [Section 169][AUDITOR]
 
-### Ownership information and calendar holds
+#### Ownership information and calendar holds
 
 Section 52 requires sufficient beneficial-ownership information, including
 nominee/nominator information, through its FTR section 8 and associated
@@ -274,7 +279,33 @@ Matariki or every other NZ holiday. Any additional applicable holiday
 declaration must be checked before turning the illustration into an actual
 deadline. [Holiday definitions][HOLIDAY-DEFS]; [NZ Government dates][NZ-DATES]
 
-## Mechanical worksheet and worked positions
+## Worked cases
+
+One case that recomputes (derived, fictional; cases C05 and C09 below).
+
+**Shareholder notice and the first-year registry fees.** A company with 9 registered holders; two holders with
+60 and 40 of 1,000 voting shares give a timely written notice. Their share is exactly 10%, so section 163(3)
+engages the statements and audit duties. The checked 2026 fees are NZD 75 to incorporate and NZD 50 for an
+annual return, VAT included.
+
+```oa-check
+name: Cook Islands company, section 163 notice share and registry fees 2026
+inputs:
+  notice_shares: 100
+  voting_shares: 1000
+  incorporation_fee: 75
+  annual_return_fee: 50
+steps:
+  - notice_share: notice_shares / voting_shares
+  - meets_10_percent: notice_share - 0.10
+  - fees: incorporation_fee + annual_return_fee
+expected:
+  notice_share: 0.10
+  meets_10_percent: 0
+  fees: 125
+```
+
+### Mechanical worksheet and worked positions
 
 First pass the scope and intake gates. Then select the applicable row above,
 retain its source/period and show the calculation or legal predicate. Record
@@ -306,7 +337,7 @@ currency. These assumptions are example inputs, not defaults for real work.
 | C15 | Address-change notice is registered on Thursday 2 April 2026. For this illustration only, assume no additional holiday declaration. | Exclude the trigger day; skip Good Friday 3 April, weekend 4-5 April and Easter Monday 6 April. Count 7, 8, 9, 10 and 13 April as working days 1-5. Earliest effective date is 13 April under those assumptions; actual use remains H07 until declarations are checked. [OFFICE-CHANGE] [DEFS] [TIME] [HOLIDAY-DEFS] [NZ-DATES] |
 | C16 | Records first move to another compliant Cook Islands location on 2 April 2026, under the same illustrative holiday assumptions. | Working days 1-5 are as in C15; 14, 15, 16, 17 and 20 April are days 6-10. The illustrative notification endpoint is 20 April; use the actual relocation event rather than notice registration and retain H07 for missing calendar evidence. [LOCATION] [DEFS] [TIME] [HOLIDAY-DEFS] [NZ-DATES] |
 
-## Holds, refusals and conservative defaults
+## When to refuse or refer
 
 The following H labels identify working-paper holds, not new universal
 refusal codes. Use the defined topical catalogue below and retain every
@@ -342,7 +373,11 @@ the reviewer regardless of the cash amount. For cash-based additional
 attention thresholds, obtain and record the reviewer's chosen threshold;
 none is invented by this guide.
 
-## Working paper, outputs and self-checks
+## Filing and payment
+
+The registry filing steps are in "Selected figures and registry rules" above, in the order the filer meets them: application under section 7 through the approved online registry (regulations 4-5), fee due when the transaction occurs, certificate under section 8, then the annual return in the Registrar's allocated month (sections 153-154) from the year after incorporation. Tax and VAT registration are separate: see `ck-company-tax-vat`.
+
+## Completion checklist
 
 Add a registry worksheet recording source identifier/version, applicable
 period, confirmed facts, component rule, numerator/denominator or fee units,
@@ -387,6 +422,61 @@ Before accepting this component, check:
   authority. Selected fees are not represented as a complete cost.
 - All bases' mandatory slots, outputs, refusals and checks remain in force.
   Passing this worksheet does not establish professional or country acceptance.
+
+## Sources
+
+| Source | URL | Read on |
+|---|---|---|
+| [ESSENTIAL] Companies Act 2017, section 6 (Cook Islands Legislation, official consolidation). Read for the provision cited as 'Sections 6', 'Sections 6 and 75' | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_COMPA_CA17_S6_htm | 2026-10-24 (read by Ryan Duguid) |
+| [APPLICATION] Companies Act 2017, section 7 (Cook Islands Legislation, official consolidation). Read for the provision cited as '7', 'Application' | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_COMPA_CA17_S7_htm | 2026-10-24 (read by Ryan Duguid) |
+| [REGISTER] Companies Act 2017, section 8 (Cook Islands Legislation, official consolidation). Read for the provision cited as '8', 'Registration' | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_COMPA_CA17_S8_htm | 2026-10-24 (read by Ryan Duguid) |
+| [CERT] Companies Act 2017, section 9 (Cook Islands Legislation, official consolidation). Read for the provision cited as 'Incorporation certificate, section 9', '9', 'certificate' | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_COMPA_CA17_S9_htm | 2026-10-24 (read by Ryan Duguid) |
+| [PERSON] Companies Act 2017, section 10 (Cook Islands Legislation, official consolidation). Read for the provision cited as '10', 'personality' | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_COMPA_CA17_S10_htm | 2026-10-24 (read by Ryan Duguid) |
+| [NAME] Companies Act 2017, section 11 (Cook Islands Legislation, official consolidation). Read for the provision cited as '11', 'Section 11' | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_COMPA_CA17_S11_htm | 2026-10-24 (read by Ryan Duguid) |
+| [CONSTITUTION] Companies Act 2017, section 15 (Cook Islands Legislation, official consolidation). Read for the provision cited as '15' | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_COMPA_CA17_S15_htm | 2026-10-24 (read by Ryan Duguid) |
+| [DIRECTOR] Companies Act 2017, section 75 (Cook Islands Legislation, official consolidation). Read for the provision cited as '75' | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_COMPA_CA17_S75_htm | 2026-10-24 (read by Ryan Duguid) |
+| [CONSENT] Companies Act 2017, section 76 (Cook Islands Legislation, official consolidation). Read for the provision cited as '76', 'consent' | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_COMPA_CA17_S76_htm | 2026-10-24 (read by Ryan Duguid) |
+| [BO] Companies Act 2017, section 52 (Cook Islands Legislation, official consolidation). Read for the provision cited as '52', 'Section 52' | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_COMPA_CA17_S52_htm | 2026-10-24 (read by Ryan Duguid) |
+| [OFFICE] Companies Act 2017, section 142 (Cook Islands Legislation, official consolidation). Read for the provision cited as '142' | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_COMPA_CA17_S142_htm | 2026-10-24 (read by Ryan Duguid) |
+| [OFFICE-CHANGE] Companies Act 2017, section 143 (Cook Islands Legislation, official consolidation). Read for the provision cited as '143' | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_COMPA_CA17_S143_htm | 2026-10-24 (read by Ryan Duguid) |
+| [RECORDS] Companies Act 2017, section 144 (Cook Islands Legislation, official consolidation). Read for the provision cited as '144', 'Section 144' | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_COMPA_CA17_S144_htm | 2026-10-24 (read by Ryan Duguid) |
+| [LOCATION] Companies Act 2017, section 145 (Cook Islands Legislation, official consolidation). Read for the provision cited as '145', 'Sections 145-146' | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_COMPA_CA17_S145_htm | 2026-10-24 (read by Ryan Duguid) |
+| [FORMAT] Companies Act 2017, section 146 (Cook Islands Legislation, official consolidation). Read for the provision cited as '146' | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_COMPA_CA17_S146_htm | 2026-10-24 (read by Ryan Duguid) |
+| [RETURN] Companies Act 2017, section 153 (Cook Islands Legislation, official consolidation). Read for the provision cited as '153', 'Sections 153-154' | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_COMPA_CA17_S153_htm | 2026-10-24 (read by Ryan Duguid) |
+| [MONTH] Companies Act 2017, section 154 (Cook Islands Legislation, official consolidation). Read for the provision cited as '154' | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_COMPA_CA17_S154_htm | 2026-10-24 (read by Ryan Duguid) |
+| [DIRECTOR-RECORDS] Companies Act 2017, section 158 (Cook Islands Legislation, official consolidation). Read for the provision cited as '158', 'Sections 158-159' | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_COMPA_CA17_S158_htm | 2026-10-24 (read by Ryan Duguid) |
+| [ACCOUNTING] Companies Act 2017, section 159 (Cook Islands Legislation, official consolidation). Read for the provision cited as '159' | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_COMPA_CA17_S159_htm | 2026-10-24 (read by Ryan Duguid) |
+| [STATEMENTS] Companies Act 2017, section 161 (Cook Islands Legislation, official consolidation). Read for the provision cited as '161', 'Sections 161/163', 'Section 161' | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_COMPA_CA17_S161_htm | 2026-10-24 (read by Ryan Duguid) |
+| [AUDIT] Companies Act 2017, section 162 (Cook Islands Legislation, official consolidation). Read for the provision cited as '162', 'Audit' | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_COMPA_CA17_S162_htm | 2026-10-24 (read by Ryan Duguid) |
+| [NOTICE] Companies Act 2017, section 163 (Cook Islands Legislation, official consolidation). Read for the provision cited as '163' | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_COMPA_CA17_S163_htm | 2026-10-24 (read by Ryan Duguid) |
+| [APPOINT] Companies Act 2017, section 164 (Cook Islands Legislation, official consolidation). Read for the provision cited as '164', 'appointment' | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_COMPA_CA17_S164_htm | 2026-10-24 (read by Ryan Duguid) |
+| [REGISTRAR-AUDITOR] Companies Act 2017, section 165 (Cook Islands Legislation, official consolidation). Read for the provision cited as '165', 'Registrar appointment' | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_COMPA_CA17_S165_htm | 2026-10-24 (read by Ryan Duguid) |
+| [AUDITOR-NOTICE] Companies Act 2017, section 165A (Cook Islands Legislation, official consolidation). Read for the provision cited as '165A', 'resignation/removal notice' | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_COMPA_CA17_S165A_htm | 2026-10-24 (read by Ryan Duguid) |
+| [AUDITOR] Companies Act 2017, section 169 (Cook Islands Legislation, official consolidation). Read for the provision cited as '169', 'Section 169' | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_COMPA_CA17_S169_htm | 2026-10-24 (read by Ryan Duguid) |
+| [TRANSITION] Companies Act 2017, section 412A (Cook Islands Legislation, official consolidation). Read for the provision cited as 'section 412A', '412A' | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_COMPA_CA17_S412A_htm | 2026-10-24 (read by Ryan Duguid) |
+| [DEFS] Companies Act 2017, clause 1 (Cook Islands Legislation, official consolidation). Read for the provision cited as 'Schedule 1 clause 1', 'definitions', 'Definitions' | https://cookislandslaws.gov.ck/api/display_pages/clause_LOCI_COMPA_CA17_SCH1_CL1_htm | 2026-10-24 (read by Ryan Duguid) |
+| [ONLINE] Cook Islands Legislation: 4. Read for the provision cited as '4', 'Online filing' | https://cookislandslaws.gov.ck/api/display_pages/reg_LOCI_COMPA_CR19_REG4_htm | 2026-10-24 (read by Ryan Duguid) |
+| [FORMS] Cook Islands Legislation: 5. Read for the provision cited as '5', 'forms' | https://cookislandslaws.gov.ck/api/display_pages/reg_LOCI_COMPA_CR19_REG5_htm | 2026-10-24 (read by Ryan Duguid) |
+| [FEES] Cook Islands Legislation: 6. Read for the provision cited as '6' | https://cookislandslaws.gov.ck/api/display_pages/reg_LOCI_COMPA_CR19_REG6_htm | 2026-10-24 (read by Ryan Duguid) |
+| [LATE] Cook Islands Legislation: 7. Read for the provision cited as '7' | https://cookislandslaws.gov.ck/api/display_pages/reg_LOCI_COMPA_CR19_REG7_htm | 2026-10-24 (read by Ryan Duguid) |
+| [PAYMENT] Cook Islands Legislation: 8. Read for the provision cited as '8', 'payment' | https://cookislandslaws.gov.ck/api/display_pages/reg_LOCI_COMPA_CR19_REG8_htm | 2026-10-24 (read by Ryan Duguid) |
+| [VAT-FEES] Cook Islands Legislation: 10. Read for the provision cited as '10' | https://cookislandslaws.gov.ck/api/display_pages/reg_LOCI_COMPA_CR19_REG10_htm | 2026-10-24 (read by Ryan Duguid) |
+| [WAIVER] Cook Islands Legislation: 11. Read for the provision cited as '11', 'waiver' | https://cookislandslaws.gov.ck/api/display_pages/reg_LOCI_COMPA_CR19_REG11_htm | 2026-10-24 (read by Ryan Duguid) |
+| [FORM1] Cook Islands Legislation: Form 1. Read for the provision cited as 'Form 1' | https://cookislandslaws.gov.ck/api/display_pages/form_LOCI_COMPA_CR19_SCH1_FORM1_htm | 2026-10-24 (read by Ryan Duguid) |
+| [FEE-TABLE] Companies Regulations 2019, Schedule 2 (Cook Islands Legislation, official consolidation). Read for the provision cited as 'Schedule 2' | https://cookislandslaws.gov.ck/api/display_pages/schedule_LOCI_COMPA_CR19_SCH2_htm | 2026-10-24 (read by Ryan Duguid) |
+| [AMEND21] Cook Islands Parliament (signed Act): 2021 amendment, sections 29 and 31. Read for the provision cited as '2021 amendment, sections 29 and 31', '2021 amendment, sections 2, 29 and 31', '2021 No 12' | https://parliament.gov.ck/wp-content/uploads/2022/06/Companies-Amendment-Act-2021-No.-12.pdf | 2026-10-24 (read by Ryan Duguid) |
+| [AMEND25] Cook Islands Parliament (signed Act or paper): 2025 amendment. Read for the provision cited as '2025 amendment', '2025 No 7' | https://parliamentci.wpenginepowered.com/wp-content/uploads/2025/12/Companies-Amendment-Act-2025.pdf | 2026-10-24 (read by Ryan Duguid) |
+| [AMEND24] Cook Islands Parliament (signed Act or paper): 2024 No 10 original amendment. Read for the provision cited as '2024 No 10 original amendment', '2024 amendment' | https://parliamentci.wpenginepowered.com/wp-content/uploads/2024/12/Financial-Transactions-Reporting-Amendment-Act-2024.pdf | 2026-10-24 (read by Ryan Duguid) |
+| [ULTIMATE] Financial Transactions Reporting Act 2017, section 8 (Cook Islands Legislation, official consolidation). Read for the provision cited as 'Section 8', 'FTR section 8' | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_FTRA_FTRA17_S8_htm | 2026-10-24 (read by Ryan Duguid) |
+| [BO-REG] Cook Islands Legislation: regulation 6. Read for the provision cited as 'regulation 6', 'regulations 6/6A' | https://cookislandslaws.gov.ck/api/display_pages/reg_LOCI_FTRA_FTRR17_REG6_htm | 2026-10-24 (read by Ryan Duguid) |
+| [CDD] Cook Islands Legislation: regulation 6A. Read for the provision cited as 'regulation 6A' | https://cookislandslaws.gov.ck/api/display_pages/reg_LOCI_FTRA_FTRR17_REG6A_htm | 2026-10-24 (read by Ryan Duguid) |
+| [INTERPRET-BRIDGE] Cook Islands Act 1915, section 622 (Cook Islands Legislation, official consolidation). Read for the provision cited as '622', 'Section 622' | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_CIA1915_CIA1915_S622_htm | 2026-10-24 (read by Ryan Duguid) |
+| [INTERPRET-DEFS] Acts Interpretation Act 1924, section 4 (Cook Islands Legislation, official consolidation). Read for the provision cited as '4', 'definitions' | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_ACTS_AIA24_S4_htm | 2026-10-24 (read by Ryan Duguid) |
+| [TIME] Acts Interpretation Act 1924, section 25 (Cook Islands Legislation, official consolidation). Read for the provision cited as '25', 'time' | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_ACTS_AIA24_S25_htm | 2026-10-24 (read by Ryan Duguid) |
+| [HOLIDAY-DEFS] Public Holidays Act 1999, section 2 (Cook Islands Legislation, official consolidation). Read for the provision cited as '2', 'Public Holidays Act', 'Holiday definitions' | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_PHA99_PHA99_S2_htm | 2026-10-24 (read by Ryan Duguid) |
+| [HOLIDAYS] Public Holidays Act 1999, section 3 (Cook Islands Legislation, official consolidation). Read for the provision cited as '3' | https://cookislandslaws.gov.ck/api/display_pages/sect_LOCI_PHA99_PHA99_S3_htm | 2026-10-24 (read by Ryan Duguid) |
+| [HOLIDAY-LIST] Public Holidays Act 1999, Schedule 1 (Cook Islands Legislation, official consolidation). Read for the provision cited as 'Schedule 1' | https://cookislandslaws.gov.ck/api/display_pages/schedule_LOCI_PHA99_PHA99_SCH1_htm | 2026-10-24 (read by Ryan Duguid) |
+| [NZ-DATES] New Zealand Government: NZ Government dates. Read for the 2026 dates of Good Friday (3 April) and Easter Monday (6 April) that Cook Islands Public Holidays Act section 2 adopts | https://www.govt.nz/browse/work-and-tax/public-holidays-and-work/dates-for-public-holidays-and-anniversary-days/ | 2026-10-24 (read by Ryan Duguid) |
 
 Version 0.1, checked 24 October 2026. The selected consolidated amendment
 tables identify the 2021, 2024 and 2025 changes; original selected amendments
@@ -447,22 +537,4 @@ period or changed fact pattern. This is a Tier 2 draft pending review.
 [HOLIDAY-LIST]: https://cookislandslaws.gov.ck/api/display_pages/schedule_LOCI_PHA99_PHA99_SCH1_htm
 [NZ-DATES]: https://www.govt.nz/browse/work-and-tax/public-holidays-and-work/dates-for-public-holidays-and-anniversary-days/
 
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained in the
-[ryanduguid/openaccountants fork](https://github.com/ryanduguid/openaccountants).
-Check its quality tier, recorded review status and cited sources before use.
-Choose a practitioner whose credentials and engagement scope you have verified.
-The links below are optional upstream services; they do not publish or verify
-this fork's changes.
-
-- Upstream connection service: https://www.openaccountants.com/connect
-- Upstream accountant network: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
+Not yet confirmed: the current approved online registry fields and procedure; any additional holiday declaration for 2026 beyond the Public Holidays Act; the beneficial ownership class and filing procedure; an audit completion deadline; every formation country slot the checklist marks held.
