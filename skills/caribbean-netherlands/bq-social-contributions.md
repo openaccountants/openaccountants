@@ -112,7 +112,7 @@ and the correct base; a percentage alone cannot determine a liability.
 |---|---|---:|---|---|
 | AOV | Insured person | 25% | Ordinary taxable sum under Income Tax BES article 24(1); annual maximum base USD 38,390. AOV articles 26–28; RATES article VI(D); IB article 24a(7). | https://zoek.officielebekendmakingen.nl/stcrt-2025-39413.html |
 | AWW | Insured person | 1.3% | Same statutory taxable-sum definition and annual maximum base USD 38,390. AWW articles 29–31; RATES article VII(C); IB article 24a(7). | https://zoek.officielebekendmakingen.nl/stcrt-2025-39413.html |
-| Healthcare, income contribution | Insured person | 0.5% | Taxable sum as defined by HEALTH article 1(h), with article 11's USD 38,390 maximum through IB article 24a(7). CARE-RATES article 1. | https://wetten.overheid.nl/BWBR0029426/2026-01-01 |
+| Healthcare, income contribution | Insured person | 0.5% | Taxable sum as defined by HEALTH article 1(h), with article 11's USD 38,390 maximum through IB article 24a(7). CARE-RATES article 1. | https://wetten.overheid.nl/BWBR0029426/2026-01-01 ; https://zoek.officielebekendmakingen.nl/stcrt-2025-40487.html |
 | ZV sickness insurance | Employer | 0.7% | Established worker's wage under the Act; no tax-free sum, elderly allowance or annual insured-person ceiling. ZV article 8; RATES article XI(B); CALC page 2. | https://zoek.officielebekendmakingen.nl/stcrt-2025-39413.html |
 | OV accident insurance | Employer | 0.2% | Established worker's wage under the Act; same distinction from personal allowances and ceilings. OV article 8; RATES article X(B); CALC page 2. | https://zoek.officielebekendmakingen.nl/stcrt-2025-39413.html |
 | CES cessantia | Employer | 0.1% | Established worker's wage, under CES article 7; RATES article III; CALC page 2. | https://zoek.officielebekendmakingen.nl/stcrt-2025-39413.html |
@@ -307,6 +307,7 @@ calculated. A statutory maximum is not an automatic charge. [B1]; [AOV]; [AWW];
 | OV. Read for the provisions this skill cites as [OV]. | https://wetten.overheid.nl/BWBR0028497/2026-01-01 | 2026-10-17 |
 | CES. Read for the provisions this skill cites as [CES]. | https://wetten.overheid.nl/BWBR0028304/2025-01-01 | 2026-10-17 |
 | RATES. Read for Stcrt. 2025, 39413, articles III, VI(D), VII(C), X(B) and XI(B): 2026 rates AOV 25%, AWW 1.3%, OV 0.2%, ZV 0.7%, cessantia 0.1%, in force 1 January 2026. Re-read on import. | https://zoek.officielebekendmakingen.nl/stcrt-2025-39413.html | 2026-11-14 |
+| INDEX. Read for: Bijstellingsregeling directe belastingen 2026 (Stcrt. 2025, 40487), article XII: the article 24a(7) maximum raised from USD 36,984 to USD 38,390 from 1 January 2026. Re-read on import. | https://zoek.officielebekendmakingen.nl/stcrt-2025-40487.html | 2026-11-14 |
 | CARE-RATES. Read for the provisions this skill cites as [CARE-RATES]. | https://wetten.overheid.nl/BWBR0029426/2026-01-01 | 2026-10-17 |
 | IB. Read for the provisions this skill cites as [IB]. | https://wetten.overheid.nl/BWBR0029281/2026-01-01 | 2026-10-17 |
 | WAGE. Read for the provisions this skill cites as [WAGE]. | https://wetten.overheid.nl/BWBR0029283/2025-04-01 | 2026-10-17 |
