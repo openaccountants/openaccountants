@@ -1,7 +1,7 @@
 ---
 name: nj-sales-tax
 description: New Jersey Sales and Use Tax for sellers and buyers, tax year 2026. Covers the 6.625% State rate with no local sales taxes, the Urban Enterprise Zone and Salem County half rates (3.3125%), what is taxable (tangible goods, specified digital products, listed services) and the main exemptions (most clothing, groceries, drugs, professional services, production machinery, investment bullion), remotely accessed software (SaaS) and information services, registration on NJ-REG, remote sellers (more than 100,000 dollars or 200 transactions) and marketplace facilitators, Form ST-50 quarterly returns and Monthly Vouchers, UZ-50, exemption certificates ST-3, ST-4, ST-5 and ST-SST, Use Tax and ST-18B, rounding and penalties. Trigger on "New Jersey sales tax", "NJ sales tax", "NJ use tax", "ST-50", "UEZ", "Urban Enterprise Zone", "NJ clothing exemption", "NJ remote seller", "NJ SaaS tax", "NJ Division of Taxation".
-version: "3.0"
+version: "3.1"
 jurisdiction: US-NJ
 tax_year: 2026
 last_updated: 2026-11-14
@@ -49,7 +49,7 @@ Out of scope, and where it goes:
 | State Sales Tax rate | 6.625% | Most tangible personal property, specified digital products and listed services, unless exempt | [Division Sales and Use Tax page](https://www.nj.gov/treasury/taxation/businesses/salestax/index.shtml) |
 | Use Tax rate | 6.625% | Same as Sales Tax; for purchases made in 2018 and after | [Use Tax FAQ](https://www.nj.gov/treasury/taxation/su_10.shtml) |
 | Urban Enterprise Zone reduced rate | 3.3125% | Certified sellers only, qualifying in-person sales of tangible personal property in the zone | [UEZ page](https://www.nj.gov/treasury/taxation/businesses/salestax/uez-over.shtml) |
-| Salem County reduced rate | Half the regular rate (3.3125%) | Qualifying in-person retail sales of goods from a Salem County place of business; confirm the programme is current | [S&U-4](https://www.nj.gov/treasury/taxation/pdf/pubs/sales/su4.pdf) |
+| Salem County reduced rate | Half the regular rate (3.3125%, derived: half of 6.625%) | Qualifying in-person retail sales of goods from a Salem County place of business; confirm the programme is current | [S&U-4](https://www.nj.gov/treasury/taxation/pdf/pubs/sales/su4.pdf) |
 | Remote seller revenue threshold | More than USD 100,000 | Sales delivered into New Jersey, current or prior calendar year | [Remote Sellers](https://www.nj.gov/treasury/taxation/remotesellers.shtml) |
 | Remote seller transaction threshold | 200 or more transactions | Same period; either test is enough | same |
 | Marketplace facilitator delay | Up to 180 days | On written request | same |
@@ -119,7 +119,7 @@ A New Jersey resident or business owes Use Tax on a taxable item or service boug
 | Situation | Treatment | Source |
 | --- | --- | --- |
 | Remote seller with exactly USD 100,000 of New Jersey sales and 150 transactions | No obligation: revenue must exceed USD 100,000, transactions must reach 200 | [Remote Sellers](https://www.nj.gov/treasury/taxation/remotesellers.shtml) |
-| Remote seller with 200 small orders totalling USD 8,000 | Must register: either test is enough | same |
+| Remote seller with 200 small orders totalling USD 8,000 (derived: example input) | Must register: either test is enough | same |
 | Sells only through a marketplace, over the threshold | Register, then ask for non-reporting status on C-6205-ST | same |
 | Fur coat, ski boots, bicycle helmet (not for work) | Taxable: outside the clothing exemption | [S&U-4](https://www.nj.gov/treasury/taxation/pdf/pubs/sales/su4.pdf) |
 | Steel-toe boots needed for daily work | Exempt clothing | same |
@@ -131,7 +131,7 @@ A New Jersey resident or business owes Use Tax on a taxable item or service boug
 | Prior-year collections exactly USD 30,000 | No Monthly Vouchers in any month: the test is "more than" | [Filing and remitting](https://www.nj.gov/treasury/taxation/su_12.shtml) |
 | Monthly payer collects exactly USD 500 in a month | No voucher for that month | same |
 | Error on a Monthly Voucher found after the quarter's ST-50 is filed | File an amended ST-50 | [S&U-4](https://www.nj.gov/treasury/taxation/pdf/pubs/sales/su4.pdf) |
-| Desk bought in Maine with 5.5% tax, brought to New Jersey | Use Tax on the 1.125% difference | [Use Tax FAQ](https://www.nj.gov/treasury/taxation/su_10.shtml) |
+| Desk bought in Maine with 5.5% tax, brought to New Jersey | Use Tax on the 1.125% difference (derived: 6.625% less 5.5%) | [Use Tax FAQ](https://www.nj.gov/treasury/taxation/su_10.shtml) |
 | Goods bought abroad with foreign VAT | Full Use Tax: no credit for foreign sales tax | [S&U-4](https://www.nj.gov/treasury/taxation/pdf/pubs/sales/su4.pdf) |
 
 ### Defaults when a fact is missing
