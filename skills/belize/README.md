@@ -1,9 +1,17 @@
 ---
 jurisdiction: BZ
-applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
-not_applicable: {}
-covered_by: {}
-partial: {}
+applicable: [IT-IND, IT-CORP, VAT, SC, PR, XB]
+not_applicable:
+  TP: "No general transfer pricing regime: the only arm's length rule found in the Income and Business Tax Act is for petroleum operations; business tax is charged on gross receipts, not profit."
+covered_by:
+  IT-IND: bz-income-tax
+  IT-CORP: bz-corporate-income-tax
+  VAT: bz-vat-gst
+  SC: bz-payroll-social
+  PR: bz-payroll-social
+  XB: bz-corporate-income-tax
+partial:
+  XB: "Non-resident withholding and treaty relief are covered inside bz-corporate-income-tax; there is no separate cross-border skill."
 ---
 
 # Belize: tax pack
