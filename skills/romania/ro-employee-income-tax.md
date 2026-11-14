@@ -29,24 +29,24 @@ This skill covers a person whose income is a salary, a pension, rent from their 
 | Item | Rate or amount | Year | Source |
 |---|---|---|---|
 | Income tax rate (salary, rent, interest, pensions, other) | 10% | 2026 | https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm (art. 64 alin. (1)) |
-| Employee CAS (pension) | 25% of gross salary | 2026 | https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm |
-| Employee CASS (health) | 10% of gross salary | 2026 | https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm |
+| Employee CAS (pension) | 25% of gross salary | 2026 | same, art. 138 lit. a) |
+| Employee CASS (health) | 10% of gross salary | 2026 | same, art. 156 |
 | National gross minimum wage, 1 January to 30 June 2026 | RON 4,050 a month | 2026 | https://static.anaf.ro/static/10/Anaf/legislatie/HG_1506_2024.pdf (HG 1506/2024 art. 1) |
 | National gross minimum wage, from 1 July 2026 | RON 4,325 a month | 2026 | https://static.anaf.ro/static/10/Anaf/legislatie/HG_146_2026.pdf (HG 146/2026 art. 1) |
 | Basic personal deduction, salary up to the minimum wage | 20% of the minimum wage (no dependants), 25% (1), 30% (2), 35% (3), 45% (4 or more) | 2026 | Fiscal Code art. 77 alin. (4), https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm |
-| Basic personal deduction, salary above the minimum wage | Falls by 0.5 points for each RON 50 band above the minimum wage; nil above minimum wage + RON 2,000 | 2026 | https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm |
-| Extra deduction, employee aged up to 26 | 15% of the minimum wage, if salary is at most minimum wage + RON 2,000 | 2026 | https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm |
-| Extra deduction per child under 18 enrolled in school | RON 100 a month, to one parent, any salary level | 2026 | https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm |
-| Dependant's own income limit | 20% of the minimum wage a month | 2026 | https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm |
+| Basic personal deduction, salary above the minimum wage | Falls by 0.5 points for each RON 50 band above the minimum wage; nil above minimum wage + RON 2,000 | 2026 | same, art. 77 alin. (3)-(4) |
+| Extra deduction, employee aged up to 26 | 15% of the minimum wage, if salary is at most minimum wage + RON 2,000 | 2026 | same, art. 77 alin. (10) lit. a) |
+| Extra deduction per child under 18 enrolled in school | RON 100 a month, to one parent, any salary level | 2026 | same, art. 77 alin. (10) lit. b) |
+| Dependant's own income limit | 20% of the minimum wage a month | 2026 | same, art. 77 alin. (5) |
 | Tax-free and contribution-free amount, minimum-wage staff, January to June 2026 | RON 300 a month, if base salary equals the minimum wage and gross salary is at most RON 4,300 | 2026 | https://static.anaf.ro/static/10/Anaf/legislatie/OUG_89_2025.pdf (OUG 89/2025 art. III) |
-| Same, July to December 2026 | RON 200 a month, gross salary at most RON 4,600 | 2026 | https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm |
+| Same, July to December 2026 | RON 200 a month, gross salary at most RON 4,600 | 2026 | same |
 | Employee pension pillar III, health insurance, ETF purchases | Each deductible up to EUR 400 a year | 2026 | Fiscal Code art. 78 alin. (2) lit. a) (iii), (iv), (vi), https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm |
-| Sports subscription | Deductible up to EUR 100 a year | 2026 | https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm |
+| Sports subscription | Deductible up to EUR 100 a year | 2026 | same, (v) |
 | Dividends (distributed from 1 January 2026) | 16%, final, withheld by the company; 10% on dividends distributed on 2025 interim financial statements | 2026 | https://static.anaf.ro/static/10/Anaf/legislatie/L_141_2025.pdf (art. II pct. 5, art. VII alin. (1) lit. c) and alin. (2)); Fiscal Code art. 97 alin. (7) |
 | Interest on deposits, savings and civil loans | 10%, final, withheld by the payer | 2026 | Fiscal Code art. 97 alin. (1)-(2), https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm |
 | Gains on shares and derivatives through a Romanian broker, held 365 days or more | 3% of each gain, final | 2026 | https://static.anaf.ro/static/10/Anaf/legislatie/L_239_2025.pdf (art. XII pct. 12, art. XIII alin. (2) lit. c)) |
-| Same, held under 365 days | 6% of each gain, final | 2026 | https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm |
-| Net annual gain on shares not through a Romanian broker, and investment gold | 16%, declared in the Declarația unică | 2026 | https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm |
+| Same, held under 365 days | 6% of each gain, final | 2026 | same |
+| Net annual gain on shares not through a Romanian broker, and investment gold | 16%, declared in the Declarația unică | 2026 | same, art. XII pct. 16; Fiscal Code art. 123 alin. (1^2) |
 | Loss carry-forward on those gains | 70% of later net gains, 5 years | 2026 | Fiscal Code art. 119 alin. (2)-(3), https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm |
 | Gains on virtual currency | 16%; gains under RON 200 per transaction are untaxed if the year's total is at most RON 600 | 2026 | L 239/2025 art. XII pct. 14 (Fiscal Code art. 116 alin. (2^1)), https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm |
 | Rent from personal property | Flat 20% expense deduction, tax 10% on the net | 2026 | L 239/2025 art. XII pct. 8; Fiscal Code art. 84 alin. (3), https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm |
