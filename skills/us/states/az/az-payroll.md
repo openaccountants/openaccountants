@@ -1,10 +1,10 @@
 ---
 name: az-payroll
 description: Arizona employer payroll for 2026, state income tax withholding and state unemployment insurance. Withholding is a percentage of each employee's gross taxable wages (federal W-2 box 1 wages) chosen on Form A-4 (0.5%, 1.0%, 1.5%, 2.0%, 2.5%, 3.0% or 3.5%, or zero), with 2.0% withheld when no A-4 is given within five days of hire; nonresidents are withheld after 60 days in Arizona. Payments follow the federal deposit schedule once quarterly withholding averaged over $1,500, otherwise quarterly with Form A1-QRT (due 30 April, 31 July, 31 October, 31 January); the annual Form A1-R and W-2s are due 31 January. Unemployment insurance (Arizona DES) for 2026 is on the first $8,000 of each employee's wages, at 2.00% for new employers and 0.03% to 8.36% for rated employers. Also covers earned paid sick time accrual and final pay timing. Trigger on "Arizona payroll", "Arizona withholding", "Form A-4", "A1-QRT", "A1-R", "Arizona unemployment tax", "Arizona SUTA", "AZ DES UI rate". Federal payroll lives in us-form-941-940-payroll.
-version: "1.0"
+version: "1.2"
 jurisdiction: US-AZ
 tax_year: 2026
-last_updated: 2026-11-13
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
@@ -51,8 +51,8 @@ Out of scope, and where it goes:
 | A-4 deadline for new employees | Within the first five days of employment | [Form A-4 (2026)](https://azdor.gov/sites/default/files/document/FORMS_WITHHOLDING_2026_A-4_f.pdf) |
 | Gross taxable wages | The federal definition of wages in 26 U.S.C. 3401; generally W-2 box 1 | [ADOR Arizona Withholding Tax](https://azdor.gov/business/withholding-tax) |
 | Nonresident working in Arizona | Withholding required once the employee has worked in Arizona for 60 days (earlier if both agree) | [ADOR Arizona Withholding Tax](https://azdor.gov/business/withholding-tax) |
-| Quarterly payment | Average withholding not over $1,500 in each of the preceding four quarters: pay with the quarterly return by 30 April, 31 July, 31 October, 31 January | [A.R.S. 43-401(C)](https://www.azleg.gov/ars/43/00401.htm) |
-| Federal-schedule payment | Over $1,500 in each of the preceding four quarters: pay Arizona withholding when federal deposits are due under IRC 6302 | [A.R.S. 43-401(C)](https://www.azleg.gov/ars/43/00401.htm) |
+| Quarterly payment | Average withholding not over $1,500 in each of the preceding four quarters: pay with the quarterly return by 30 April, 31 July, 31 October, 31 January (in words on the page) | [A.R.S. 43-401(C)](https://www.azleg.gov/ars/43/00401.htm) |
+| Federal-schedule payment | Over $1,500 in each of the preceding four quarters: pay Arizona withholding when federal deposits are due under IRC 6302 (in words on the page) | [A.R.S. 43-401(C)](https://www.azleg.gov/ars/43/00401.htm) |
 | Quarterly reconciliation | 30 April, 31 July, 31 October, 31 January; 10 May, 10 August, 10 November, 10 February if all tax was paid on time | [A.R.S. 43-401(C)](https://www.azleg.gov/ars/43/00401.htm) |
 | Annual return (A1-R) | 31 January of the following year | [A.R.S. 43-412(B)](https://www.azleg.gov/ars/43/00412.htm) |
 | UI taxable wage base | $8,000 per employee per calendar year (2023 on) | [A.R.S. 23-622](https://www.azleg.gov/ars/23/00622.htm); [DES 2026 rate chart](https://des.az.gov/sites/default/files/dl/UIT-0603A_FY26.pdf) |
