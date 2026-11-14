@@ -1,28 +1,33 @@
 ---
 name: wa-sales-tax
-description: "Washington State Sales Tax for self-employed individuals selling taxable goods or services. Covers the 6.5% state rate, local tax add-ons, destination-based sourcing, use tax, and the Combined Excise Tax Return. Primary source: RCW 82.08 (sales tax), RCW 82.12 (use tax)."
-version: 1.0
+description: Washington State retail sales and use tax for tax year 2026, for sellers of goods, digital products and retail services and for buyers owing use tax. Covers the 6.5% state rate plus local rates, the more-than-$100,000 economic nexus test for remote sellers, marketplace sellers and facilitators, destination sourcing, the services made retail sales on 1 October 2025 by ESSB 5814 and the 1 July 2026 exclusions and school and library exemption, food and digital product rules, use tax, reseller permits, the combined excise tax return, due dates and penalties. Trigger on "Washington sales tax", "WA sales tax", "Washington DOR", "Washington use tax", "Washington digital goods", "Washington resale certificate", "reseller permit", "ESSB 5814", "Washington remote seller". For Washington B&O tax load wa-bo-tax.
+version: "2.0"
 jurisdiction: US-WA
 tax_year: 2026
-last_updated: 2026-10-16
+last_updated: 2026-11-13
 depends_on:
   - us-tax-workflow-base
 category: state
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: vat-gst
+type: situation-rules
 ---
 
-# Washington retail sales and use tax: 2026 collection, sourcing and filing
+# Washington retail sales and use tax, tax year 2026
 
-Figures are for tax year 2026, as they stand on 25 September 2026. Local rates are quoted for the quarter 1 October to 31 December 2026 and change every quarter. A short section covers periods before 1 October 2025, when the service rules were different.
+> **Source-cited draft.** Built from RCW 82.08, 82.12 and 82.32 and the Washington Department of Revenue (DOR) pages listed under Sources, read on 2026-11-13 (the rates, threshold, frequency and penalty rows) and earlier in autumn 2026 (the service, food and digital product pages). No accountant has reviewed it. All outputs must be reviewed by a qualified tax professional before filing.
+
+**Answer first.** The state retail sales tax rate is **6.5%** ([RCW 82.08.020](https://app.leg.wa.gov/RCW/default.aspx?cite=82.08.020)); local tax is added by location, giving combined rates of 7.6% to 10.7% for 1 October to 31 December 2026 ([DOR Q4 2026 rate flyer](https://dor.wa.gov/sites/default/files/2026-08/Q426_LSU-flyer-by-county.pdf)). A seller with no physical presence must register and collect once it has **more than $100,000** of gross receipts sourced to Washington in the current or prior calendar year ([DOR remote sellers](https://dor.wa.gov/taxes-rates/retail-sales-tax/marketplace-fairness-leveling-playing-field/remote-sellers)). Sales are sourced to where the customer receives the goods or service. Since 1 October 2025 many services (IT, custom software, website development, advertising, live presentations, security, temporary staffing) are retail sales. Figures are for 2026; local rates change every quarter.
+
+Figures are for tax year 2026, as checked on 13 November 2026. Local rates are quoted for the quarter 1 October to 31 December 2026 and change every quarter. A short section covers periods before 1 October 2025, when the service rules were different.
 
 ## Scope and who this is for
 
 - Businesses that sell goods, digital products or retail services to customers in Washington, and must decide what to charge, where the sale is sourced, and how to file.
 - Out-of-state sellers deciding whether they must register (remote sellers, marketplace sellers, marketplace facilitators).
 - Businesses and individuals that owe use tax because no sales tax was charged.
-- Out of scope: business and occupation (B&O) tax detail (a separate Washington B&O Guide covers it), cannabis, lodging-specific taxes, motor vehicle excise taxes, and tribal sales.
+- Out of scope: Washington employer payroll taxes (see `wa-payroll`), business and occupation (B&O) tax detail (see `wa-bo-tax`), cannabis, lodging-specific taxes, motor vehicle excise taxes, and tribal sales.
 
 Washington has no general personal or corporate income tax on business profits. A seller that collects sales tax usually also owes B&O tax on the same gross receipts, reported on the same excise tax return. The two are separate taxes: sales tax is collected from the customer, B&O tax is the seller's own cost.
 
@@ -53,9 +58,12 @@ Washington has no general personal or corporate income tax on business profits. 
 
 If you skip step 1 and collect anyway, you hold state money without an account to report it. If you skip step 3, you remit tax to the wrong local jurisdiction and the customer may be over- or under-charged.
 
-## Rate and registration thresholds for 2026
+### Rates, bands and thresholds
 
-### State rate and the tax base ([DOR retail sales tax](https://dor.wa.gov/taxes-rates/retail-sales-tax))
+The tables below hold every 2026 figure this skill uses.
+
+
+#### State rate and the tax base ([DOR retail sales tax](https://dor.wa.gov/taxes-rates/retail-sales-tax))
 
 | Item | 2026 value | Source |
 | --- | --- | --- |
@@ -65,20 +73,20 @@ If you skip step 1 and collect anyway, you hold state money without an account t
 
 The statute taxes retail sales of tangible personal property, digital goods, digital codes, digital automated services, retail services, extended warranties to consumers, and anything else defined as a retail sale.
 
-### Sample combined rates, 1 October to 31 December 2026 ([DOR Q4 2026 rate flyer](https://dor.wa.gov/sites/default/files/2026-08/Q426_LSU-flyer-by-county.pdf))
+#### Sample combined rates, 1 October to 31 December 2026 ([DOR Q4 2026 rate flyer](https://dor.wa.gov/sites/default/files/2026-08/Q426_LSU-flyer-by-county.pdf))
 
-| Location | Location code | Local rate | State rate | Combined rate |
-| --- | --- | --- | --- | --- |
-| Seattle | 1726 | 4.05% | 6.5% | 10.55% |
-| Tacoma | 2717 | 4.0% | 6.5% | 10.5% |
-| Olympia | 3403 | 3.5% | 6.5% | 10% |
-| Spokane (city) | 3210 | 2.6% | 6.5% | 9.1% |
-| Vancouver | 0605 | 2.4% | 6.5% | 8.9% |
-| Edmonds and Lynnwood (highest on this list) | 3104, 3110 | 4.2% | 6.5% | 10.7% |
+| Location | Location code | Local rate | State rate | Combined rate | Source |
+| --- | --- | --- | --- | --- | --- |
+| Seattle | 1726 | 4.05% | 6.5% | 10.55% | [DOR Q4 2026 rate flyer](https://dor.wa.gov/sites/default/files/2026-08/Q426_LSU-flyer-by-county.pdf) |
+| Tacoma | 2717 | 4.0% | 6.5% | 10.5% | same |
+| Olympia | 3403 | 3.5% | 6.5% | 10% | same |
+| Spokane (city) | 3210 | 2.6% | 6.5% | 9.1% | same |
+| Vancouver | 0605 | 2.4% | 6.5% | 8.9% | same |
+| Edmonds and Lynnwood (highest on this list) | 3104, 3110 | 4.2% | 6.5% | 10.7% | same |
 
 Combined rates across the state run from 7.6% to 10.7% this quarter. The same rates applied from 1 July 2026. Never hard-code these: DOR publishes new rates each quarter, and a single address can sit in a transit or benefit area with its own code. Use the lookup tool for every address.
 
-### Who must register ([DOR remote sellers](https://dor.wa.gov/taxes-rates/retail-sales-tax/marketplace-fairness-leveling-playing-field/remote-sellers))
+#### Who must register ([DOR remote sellers](https://dor.wa.gov/taxes-rates/retail-sales-tax/marketplace-fairness-leveling-playing-field/remote-sellers))
 
 | Seller | Must register and collect when | Source |
 | --- | --- | --- |
@@ -95,17 +103,18 @@ How the $100,000 test works (same source):
 
 Marketplace facilitators must also send each seller a report of its Washington sales for the previous month by the 15th of each month ([DOR marketplace facilitators](https://dor.wa.gov/taxes-rates/retail-sales-tax/marketplace-fairness-leveling-playing-field/marketplace-facilitators)).
 
-### Filing frequency ([DOR filing frequencies and due dates](https://dor.wa.gov/file-pay-taxes/filing-frequencies-due-dates))
+#### Filing frequency ([DOR filing frequencies and due dates](https://dor.wa.gov/file-pay-taxes/filing-frequencies-due-dates))
 
-| Frequency | Annual tax liability |
-| --- | --- |
-| Annual | $1,050 or less |
-| Quarterly | $1,051 to $4,800 |
-| Monthly | $4,801 or more |
+| Frequency | Annual tax liability | Source |
+| --- | --- | --- |
+| Annual | $1,050 or less | [DOR filing frequencies](https://dor.wa.gov/file-pay-taxes/filing-frequencies-due-dates) |
+| Quarterly | $1,051 to $4,800 | same |
+| Monthly | $4,801 or more | same |
 
 DOR assigns the frequency when you register, based on estimated yearly business income; you can ask for a change. A business that does not collect retail sales tax and has B&O gross income under $125,000 a year (calendar years from 1 January 2023) may qualify for active non-reporting status. A seller that must collect sales tax does not qualify.
 
-## What is taxable: boundary and exception table
+## Boundary and exception table
+
 
 ### Goods, food and health ([RCW 82.08.0293](https://app.leg.wa.gov/RCW/default.aspx?cite=82.08.0293))
 
@@ -166,7 +175,7 @@ Points that decide real cases:
 
 Construction and improving real property; installing, cleaning, repairing or altering goods; landscaping and landscape maintenance; certain recreation (for example fishing charters); personal training at fitness facilities; tanning; tattooing; car washes; catering; towing; parking; alarm monitoring; and credit bureau and tenant screening. Extended warranties sold to consumers are also taxed ([RCW 82.08.020](https://app.leg.wa.gov/RCW/default.aspx?cite=82.08.020)). Landscaping and landscape maintenance **are** subject to sales tax.
 
-## Sourcing ([DOR determine the location of my sale](https://dor.wa.gov/taxes-rates/sales-use-tax-rates/determine-location-my-sale))
+### Sourcing ([DOR determine the location of my sale](https://dor.wa.gov/taxes-rates/sales-use-tax-rates/determine-location-my-sale))
 
 Apply the rules in order and stop at the first that fits:
 
@@ -180,7 +189,7 @@ Apply the rules in order and stop at the first that fits:
 
 Exceptions, sourced to the seller's location even when delivered: sales of motor vehicles, trailers, semi-trailers, aircraft and watercraft; towing; and qualifying florists. Labor and services are coded to where they are performed. Leases with periodic payments: the first payment is coded to where the lessee receives the equipment, later payments to where it is stored or used.
 
-## Use tax ([DOR use tax](https://dor.wa.gov/taxes-rates/use-tax))
+### Use tax ([DOR use tax](https://dor.wa.gov/taxes-rates/use-tax))
 
 - Use tax applies to goods and certain services used in Washington when sales tax was not paid. The buyer owes it, whether a business or an individual.
 - Typical cases: items bought without tax for resale and then used in the business; purchases in Oregon or another lower-tax state; online or mail-order sellers that did not collect; purchases from private sellers.
@@ -189,7 +198,7 @@ Exceptions, sourced to the seller's location even when delivered: sales of motor
 - Businesses report it on the excise tax return for the period of first use in Washington. Individuals file online in My DOR or on the Consumer Use Tax Return.
 - DOR's FAQ says ESSB 5814 does not explicitly impose use tax on the newly taxable services, but deferred sales tax may be due if sales tax was not paid, and use tax does apply where the service also qualifies as a digital automated service. Source: [DOR ESSB 5814 FAQ](https://dor.wa.gov/frequently-asked-questions-about-essb-5814).
 
-## Reseller permits ([DOR reseller permits](https://dor.wa.gov/taxes-rates/retail-sales-tax/reseller-permits))
+### Reseller permits ([DOR reseller permits](https://dor.wa.gov/taxes-rates/retail-sales-tax/reseller-permits))
 
 - Use a permit only to buy what you resell in the regular course of business, or ingredients and components of new products for sale. Never for supplies, equipment, tools, items given away, or personal use.
 - Anyone who misuses a permit owes the tax **and a 50% penalty, even with no intent to defraud**. The permit may be revoked.
@@ -197,18 +206,70 @@ Exceptions, sourced to the seller's location even when delivered: sales of motor
 - Sellers accepting permits must obtain valid documentation for each wholesale customer (they have up to 120 days from the sale to collect it) and keep it for five years. Without it, an audit reclassifies the sale as retail and the seller owes the sales tax.
 - A buyer without a permit can pay the tax and later take a "taxable amount for tax paid at source" deduction when reselling, or request a refund.
 
-## Worked cases ([DOR Q4 2026 rate flyer](https://dor.wa.gov/sites/default/files/2026-08/Q426_LSU-flyer-by-county.pdf))
+### Periods before 1 October 2025 (for amended or audited 2025 returns)
 
-Rates are the Q4 2026 combined rates from the table above. Amounts are illustrative.
+- Local rates differed by quarter: use DOR's rate history for the period of the sale, not today's table ([DOR sales and use tax rates](https://dor.wa.gov/taxes-rates/sales-use-tax-rates)).
+- Custom software, customization of prewritten software, IT services, website development, advertising, live presentations, security and temporary staffing were **not** retail sales before 1 October 2025. They were taxed under B&O only ([DOR existing contracts guidance](https://dor.wa.gov/laws-rules/interim-guidance-statement-regarding-contracts-existing-prior-october-1-2025-and-changes-made-essb)).
+- Contracts signed before 1 October 2025: see worked case 4 for the transition.
+- Software as a service and other digital automated services, digital goods and prewritten software were already taxable before 1 October 2025.
 
-1. **Shipped sale.** A Seattle retailer sells a $1,000 laptop delivered to a customer in Spokane (city) on 5 November 2026. Destination sourcing applies: $1,000 × 9.1% = $91.00. If the customer instead collects it at the Seattle shop: $1,000 × 10.55% = $105.50.
-2. **Remote seller threshold.** An Oregon seller has no Washington presence. In 2026 its Washington sales are $80,000 direct plus $30,000 through a marketplace, $110,000 in all, and it passes $100,000 on 20 August 2026. $110,000 is more than $100,000, so it must register. It did not meet the test in 2025, so it starts collecting on 1 October 2026, the first month starting at least 30 days after 20 August. It deducts the marketplace sales on the return because the facilitator collects on them. Had its total been exactly $100,000, with no other link to Washington, the receipts test would not be met, because the test is more than $100,000.
-3. **IT services after ESSB 5814.** A Tacoma IT firm bills a Tacoma business $5,000 for help-desk support in November 2026: $5,000 × 10.5% = $525.00 sales tax, plus retailing B&O on the gross amount. If the same client were a Tacoma school district, the sale is exempt from 1 July 2026 with the school's exemption certificate.
-4. **Existing contract.** A support contract was signed on 15 September 2025, the services continue after 1 October 2025, and it is billed monthly. It counts as an "existing" contract only because it was signed before 1 October 2025, the services continue on or after that date, and they became retail sales on that date. While its terms stay unaltered, DOR allowed the old treatment (service B&O, no sales tax) through 31 March 2026. For reporting periods beginning on or after 1 April 2026 the firm must collect sales tax on those bills. If the contract is materially altered after 1 October 2025 (for example parties added, removed or exchanged, a change to the services, the parties' rights or obligations, the term, the contract amount or the period), it is taxable under retailing B&O and retail sales tax from the date of the change; a minor change such as a new notice email address is not an alteration. A seller that chose to report under retailing B&O from 1 October 2025 must also collect sales tax. A contract signed and fully paid before 1 October 2025 is treated as a sale before that date and is not taxed. Source: [DOR existing contracts guidance](https://dor.wa.gov/laws-rules/interim-guidance-statement-regarding-contracts-existing-prior-october-1-2025-and-changes-made-essb).
-5. **Use tax.** An Olympia business buys a $3,000 printer from an Oregon store that charges no sales tax and first uses it in Olympia: $3,000 × 10% = $300.00 use tax, reported on its excise tax return.
-6. **Food boundary.** A grocery sells a packaged chocolate bar and a bottle of plain spring water. The chocolate bar is exempt food; the water is taxable bottled water.
-7. **Reseller permit misuse.** A Seattle shop buys $1,000 of office supplies on its reseller permit. It owes $1,000 × 10.55% = $105.50 tax, plus a 50% penalty: $105.50 × 50% = $52.75.
-8. **Late payment.** A $2,000 sales tax payment due 25 November 2026 arrives on 10 December 2026: $2,000 × 9% = $180.00 penalty, plus interest. Paid after 31 December 2026 but by 31 January 2027, the total penalty is $2,000 × 19% = $380.00; paid later still, $2,000 × 29% = $580.00.
+## Worked cases
+
+Rates are the Q4 2026 combined rates from the rates table ([DOR Q4 2026 rate flyer](https://dor.wa.gov/sites/default/files/2026-08/Q426_LSU-flyer-by-county.pdf)). Taxpayers are invented; rates and thresholds are real.
+
+**Case A, a decision: ship it or let the customer collect?** A Seattle retailer sells a $1,000 laptop to a customer who lives in Spokane (city), in November 2026. Shipped to Spokane, destination sourcing applies: $1,000 x 9.1% = $91.00. Collected at the Seattle shop (rule 1, possession at the seller's location): $1,000 x 10.55% = $105.50. The customer pays $14.50 less if the laptop is shipped, and the retailer reports the sale under Spokane's location code 3210, not Seattle's 1726. Either way the retailer owes Retailing B&O on the $1,000 (see `wa-bo-tax`).
+
+```oa-check
+name: Seattle sale shipped to Spokane against collected in Seattle (Q4 2026)
+inputs:
+  price: 1000
+  spokane_rate: 0.091
+  seattle_rate: 0.1055
+steps:
+  - tax_shipped: price * spokane_rate
+  - tax_collected: price * seattle_rate
+  - difference: tax_collected - tax_shipped
+expected:
+  tax_shipped: 91.00
+  tax_collected: 105.50
+  difference: 14.50
+```
+
+**Case B, a decision: must a remote seller register?** An Oregon seller has no Washington presence. In 2026 its Washington sales are $80,000 direct plus $30,000 through a marketplace facilitator, $110,000 in all, and it passes $100,000 on 20 August 2026. The test counts all Washington receipts, marketplace sales included, so $110,000 is more than $100,000 and it must register. It did not meet the test in 2025, so it starts collecting on 1 October 2026, the first month starting at least 30 days after 20 August. On the return it deducts the $30,000 of facilitated sales, because the facilitator collects on them, leaving $80,000 of its own retail sales to report by location code. Had its total been exactly $100,000, with no other link to Washington, the test would not be met.
+
+```oa-check
+name: Oregon remote seller, $100,000 receipts test (2026)
+inputs:
+  direct_sales: 80000
+  marketplace_sales: 30000
+  threshold: 100000
+steps:
+  - wa_receipts: direct_sales + marketplace_sales
+  - must_register: clamp(wa_receipts - threshold, 0, 1)
+  - own_sales_reported: wa_receipts - marketplace_sales
+expected:
+  wa_receipts: 110000
+  must_register: 1
+  own_sales_reported: 80000
+```
+
+Further cases, worked in prose:
+
+1. **IT services after ESSB 5814.** A Tacoma IT firm bills a Tacoma business $5,000 for help-desk support in November 2026: $5,000 × 10.5% = $525.00 sales tax, plus retailing B&O on the gross amount. If the same client were a Tacoma school district, the sale is exempt from 1 July 2026 with the school's exemption certificate.
+2. **Existing contract.** A support contract was signed on 15 September 2025, the services continue after 1 October 2025, and it is billed monthly. It counts as an "existing" contract only because it was signed before 1 October 2025, the services continue on or after that date, and they became retail sales on that date. While its terms stay unaltered, DOR allowed the old treatment (service B&O, no sales tax) through 31 March 2026. For reporting periods beginning on or after 1 April 2026 the firm must collect sales tax on those bills. If the contract is materially altered after 1 October 2025 (for example parties added, removed or exchanged, a change to the services, the parties' rights or obligations, the term, the contract amount or the period), it is taxable under retailing B&O and retail sales tax from the date of the change; a minor change such as a new notice email address is not an alteration. A seller that chose to report under retailing B&O from 1 October 2025 must also collect sales tax. A contract signed and fully paid before 1 October 2025 is treated as a sale before that date and is not taxed. Source: [DOR existing contracts guidance](https://dor.wa.gov/laws-rules/interim-guidance-statement-regarding-contracts-existing-prior-october-1-2025-and-changes-made-essb).
+3. **Use tax.** An Olympia business buys a $3,000 printer from an Oregon store that charges no sales tax and first uses it in Olympia: $3,000 × 10% = $300.00 use tax, reported on its excise tax return.
+4. **Food boundary.** A grocery sells a packaged chocolate bar and a bottle of plain spring water. The chocolate bar is exempt food; the water is taxable bottled water.
+5. **Reseller permit misuse.** A Seattle shop buys $1,000 of office supplies on its reseller permit. It owes $1,000 × 10.55% = $105.50 tax, plus a 50% penalty: $105.50 × 50% = $52.75.
+6. **Late payment.** A $2,000 sales tax payment due 25 November 2026 arrives on 10 December 2026: $2,000 × 9% = $180.00 penalty, plus interest. Paid after 31 December 2026 but by 31 January 2027, the total penalty is $2,000 × 19% = $380.00; paid later still, $2,000 × 29% = $580.00.
+
+## When to refuse or refer
+
+- Refer B&O tax classification, rates, credits and apportionment beyond the basic point that B&O applies too.
+- Refer cannabis, liquor, lodging, motor vehicle, car rental and tobacco taxes.
+- Refer sales in Indian country or to tribes and tribal members: DOR is still consulting tribes on ESSB 5814 and tells vendors with tribal customers to request a ruling.
+- Refer any ESSB 5814 case that is not clearly inside or outside DOR's lists (for example bundled professional and digital services, or mixed advertising packages). DOR's guidance is interim; questions go to DOR's rulings team. Do not advise a client to stop collecting because of the pending litigation.
+- Refer voluntary disclosure for unregistered sellers with past exposure, and any audit, assessment or appeal.
+- Refer Washington capital gains excise tax (see the pack README) and other taxes outside this skill.
 
 ## Filing and payment
 
@@ -257,22 +318,6 @@ Interest also runs on unpaid tax, at a rate that changes every year ([DOR late f
 - Keep records for five years, including copies of federal and state returns ([RCW 82.32.070](https://app.leg.wa.gov/RCW/default.aspx?cite=82.32.070)). A taxpayer who does not keep them cannot later challenge an assessment for that period in court.
 - DOR cannot assess more than four years after the close of the tax year, except against a taxpayer that did not register, on fraud or misrepresentation of a material fact, or where the taxpayer signed a waiver ([RCW 82.32.050](https://app.leg.wa.gov/RCW/default.aspx?cite=82.32.050)).
 
-## Periods before 1 October 2025 (for amended or audited 2025 returns)
-
-- Local rates differed by quarter: use DOR's rate history for the period of the sale, not today's table ([DOR sales and use tax rates](https://dor.wa.gov/taxes-rates/sales-use-tax-rates)).
-- Custom software, customization of prewritten software, IT services, website development, advertising, live presentations, security and temporary staffing were **not** retail sales before 1 October 2025. They were taxed under B&O only ([DOR existing contracts guidance](https://dor.wa.gov/laws-rules/interim-guidance-statement-regarding-contracts-existing-prior-october-1-2025-and-changes-made-essb)).
-- Contracts signed before 1 October 2025: see worked case 4 for the transition.
-- Software as a service and other digital automated services, digital goods and prewritten software were already taxable before 1 October 2025.
-
-## When to refuse or refer
-
-- Refer B&O tax classification, rates, credits and apportionment beyond the basic point that B&O applies too.
-- Refer cannabis, liquor, lodging, motor vehicle, car rental and tobacco taxes.
-- Refer sales in Indian country or to tribes and tribal members: DOR is still consulting tribes on ESSB 5814 and tells vendors with tribal customers to request a ruling.
-- Refer any ESSB 5814 case that is not clearly inside or outside DOR's lists (for example bundled professional and digital services, or mixed advertising packages). DOR's guidance is interim; questions go to DOR's rulings team. Do not advise a client to stop collecting because of the pending litigation.
-- Refer voluntary disclosure for unregistered sellers with past exposure, and any audit, assessment or appeal.
-- Refer Washington capital gains tax and other taxes outside this skill.
-
 ## Completion checklist
 
 - [ ] Registration decided: physical presence, the more-than-$100,000 receipts test (all receipts, exempt and marketplace sales included), or domicile
@@ -284,3 +329,46 @@ Interest also runs on unpaid tax, at a rate that changes every year ([DOR late f
 - [ ] Pre-October 2025 contracts reviewed for the transition dates
 - [ ] Return filed in My DOR by the frequency's due date, with sales by location code and the right deductions
 - [ ] Late items assessed for penalty and interest; ESSB 5814 penalty relief considered where it fits
+## Sources
+
+| Source | URL | Read on |
+| --- | --- | --- |
+| RCW 82.08.020. Read for the state rate ("six and five-tenths percent") and the list of retail sales taxed. | https://app.leg.wa.gov/RCW/default.aspx?cite=82.08.020 | 2026-11-13 |
+| DOR retail sales tax page. Read for "The state tax rate is 6.5%" and the local portion. | https://dor.wa.gov/taxes-rates/retail-sales-tax | 2026-11-13 |
+| DOR Q4 2026 local sales and use tax rate flyer. Read for location codes and combined rates (Seattle 1726 .1055, Tacoma 2717 .1050, Olympia 3403 .1000, Spokane city 3210 .0910, Vancouver 0605 .0890, Edmonds 3104 and Lynnwood 3110 .1070; lowest .0760). | https://dor.wa.gov/sites/default/files/2026-08/Q426_LSU-flyer-by-county.pdf | 2026-11-13 |
+| DOR sales and use tax rates (lookup tool and rate history). Read for the quarterly rate change and the lookup tool. | https://dor.wa.gov/taxes-rates/sales-use-tax-rates | 2026-11-13 |
+| DOR remote sellers. Read for "more than $100,000 in combined gross receipts sourced or attributed to Washington in the current or prior year" and the start-date examples. | https://dor.wa.gov/taxes-rates/retail-sales-tax/marketplace-fairness-leveling-playing-field/remote-sellers | 2026-11-13 |
+| DOR marketplace sellers. Read for the facilitator deduction and physical presence. | https://dor.wa.gov/taxes-rates/retail-sales-tax/marketplace-fairness-leveling-playing-field/marketplace-sellers | 2026-11-13 |
+| DOR marketplace facilitators. Read for the facilitator thresholds and the monthly report to sellers. | https://dor.wa.gov/taxes-rates/retail-sales-tax/marketplace-fairness-leveling-playing-field/marketplace-facilitators | 2026-11-13 |
+| DOR filing frequencies and due dates. Read for the $1,050, $1,051 to $4,800 and $4,801 bands and the due dates. | https://dor.wa.gov/file-pay-taxes/filing-frequencies-due-dates | 2026-11-13 |
+| RCW 82.32.045. Read for active non-reporting (under $125,000 B&O, under $24,000 public utility, no other DOR tax). | https://app.leg.wa.gov/RCW/default.aspx?cite=82.32.045 | 2026-11-13 |
+| RCW 82.32.090. Read for the 9%, 19% and 29% late-payment penalties and the other penalties in the table. | https://app.leg.wa.gov/RCW/default.aspx?cite=82.32.090 | 2026-11-13 |
+| DOR late filing. Read for extensions, interest and waivers. | https://dor.wa.gov/file-pay-taxes/late-filing | 2026-11-13 |
+| RCW 82.32.070. Read for the five-year record rule. | https://app.leg.wa.gov/RCW/default.aspx?cite=82.32.070 | 2026-11-13 |
+| RCW 82.32.050. Read for the four-year assessment limit and its exceptions. | https://app.leg.wa.gov/RCW/default.aspx?cite=82.32.050 | 2026-11-13 |
+| RCW 82.08.0293. Read for food, prepared food, candy, soft drinks, bottled water, vending machines and dietary supplements. | https://app.leg.wa.gov/RCW/default.aspx?cite=82.08.0293 | 2026-11-13 |
+| RCW 82.08.0281, 82.08.925 and 82.08.940. Read for prescription drugs, prescribed supplements and over-the-counter drugs. | https://app.leg.wa.gov/RCW/default.aspx?cite=82.08.0281 | 2026-11-13 |
+| same, RCW 82.08.925 | https://app.leg.wa.gov/RCW/default.aspx?cite=82.08.925 | 2026-11-13 |
+| same, RCW 82.08.940 | https://app.leg.wa.gov/RCW/default.aspx?cite=82.08.940 | 2026-11-13 |
+| DOR retail sales and use tax exemptions. Read for the list of other exemptions. | https://dor.wa.gov/taxes-rates/retail-sales-tax/retail-sales-and-use-tax-exemptions | 2026-11-13 |
+| DOR digital products. Read for digital goods, remote access software and the business-buyer exemptions. | https://dor.wa.gov/forms-publications/publications-subject/tax-topics/digital-products-including-digital-goods | 2026-11-13 |
+| DOR information technology services. Read for what is and is not IT services or DAS. | https://dor.wa.gov/taxes-rates/information-technology-services | 2026-11-13 |
+| DOR custom software and customization of prewritten software. Read for taxability from 1 October 2025. | https://dor.wa.gov/taxes-rates/sales-custom-software-and-customization-prewritten-software | 2026-11-13 |
+| DOR services newly subject to retail sales tax (ESSB 5814). Read for the service list and the litigation note. | https://dor.wa.gov/taxes-rates/retail-sales-tax/services-newly-subject-retail-sales-tax | 2026-11-13 |
+| DOR advertising services. Read for what is included and excluded. | https://dor.wa.gov/taxes-rates/retail-sales-tax/services-newly-subject-retail-sales-tax/advertising-services | 2026-11-13 |
+| DOR custom website development. Read for inclusions and exclusions. | https://dor.wa.gov/taxes-rates/custom-website-development | 2026-11-13 |
+| DOR live presentations. Read for inclusions and exclusions. | https://dor.wa.gov/taxes-rates/live-presentations | 2026-11-13 |
+| DOR special notice, live presentations exclusions from 1 July 2026. Read for the four new exclusions. | https://dor.wa.gov/forms-publications/publications-subject/special-notices/live-presentations-new-exclusions-retail-sales | 2026-11-13 |
+| DOR investigation, security and armored car services. Read for inclusions and exclusions. | https://dor.wa.gov/taxes-rates/investigation-security-and-armored-car-services | 2026-11-13 |
+| DOR temporary staffing services. Read for inclusions and exclusions. | https://dor.wa.gov/taxes-rates/temporary-staffing-services | 2026-11-13 |
+| DOR special notice, temporary staffing for hospitals from 1 July 2026. Read for the two hospital conditions and the buyer's declaration. | https://dor.wa.gov/forms-publications/publications-subject/special-notices/temporary-staffing-services-modification-exclusion-retail-sales-staff-provided-hospitals | 2026-11-13 |
+| DOR special notice, schools and libraries exemption from 1 July 2026. Read for the exempt services, the certificate and the five-year record. | https://dor.wa.gov/forms-publications/publications-subject/special-notices/new-salesuse-tax-exemption-purchases-certain-retail-services-schools-and-libraries | 2026-11-13 |
+| DOR ESSB 5814 FAQ. Read for professional services, graphic design and use tax on the new services. | https://dor.wa.gov/frequently-asked-questions-about-essb-5814 | 2026-11-13 |
+| DOR interim guidance on contracts existing before 1 October 2025. Read for the treatment "through March 31, 2026" and material alterations. | https://dor.wa.gov/laws-rules/interim-guidance-statement-regarding-contracts-existing-prior-october-1-2025-and-changes-made-essb | 2026-11-13 |
+| DOR ESSB 5814 penalty relief program. Read for the periods covered and the application deadline of 30 September 2027. | https://dor.wa.gov/taxes-rates/retail-sales-tax/services-newly-subject-retail-sales-tax/essb-5814-penalty-relief-program | 2026-11-13 |
+| DOR services subject to sales tax. Read for the services already taxable before ESSB 5814. | https://dor.wa.gov/services-subject-sales-tax | 2026-11-13 |
+| DOR determine the location of my sale. Read for the five sourcing rules and the exceptions. | https://dor.wa.gov/taxes-rates/sales-use-tax-rates/determine-location-my-sale | 2026-11-13 |
+| DOR use tax. Read for who owes use tax, the measure and how to report it. | https://dor.wa.gov/taxes-rates/use-tax | 2026-11-13 |
+| DOR reseller permits. Read for the 50% misuse penalty, permit validity and seller documentation. | https://dor.wa.gov/taxes-rates/retail-sales-tax/reseller-permits | 2026-11-13 |
+
+Not yet confirmed: local rates for 1 January 2027 onward (DOR publishes them each quarter); the outcome of the ESSB 5814 litigation; the interest rate on unpaid tax for 2026 (DOR late filing page, not quoted here). The service, food and digital-product pages were opened on 2026-11-13 and found live; their detailed wording was checked by the earlier writer in September 2026 and spot-checked here (existing-contract date, reseller penalty, school exemption date, penalty relief deadline).

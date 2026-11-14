@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/ro-payroll-social"
   jurisdiction: "RO"
   tax_year: "2026"
-  last_updated: "2026-10-31"
+  last_updated: "2026-11-14"
 ---
 
 # Romania payroll: gross-to-net, employer CAM and D112 (2026)
@@ -31,25 +31,25 @@ The law is Legea 227/2015 (Codul fiscal, "the Fiscal Code"), Title IV chapter II
 | Item | Rate or amount | Year | Source |
 |---|---|---|---|
 | CAS, employee pension contribution, withheld | 25% | 2026 | Fiscal Code art. 138(a), [ANAF consolidated Fiscal Code](https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm) |
-| Extra employer CAS, special working conditions / particularly hard conditions (Legea 263/2010) | 4% / 8% | 2026 | art. 138(b) and (c), same page |
-| CASS, employee health contribution, withheld | 10% | 2026 | art. 156, same page |
-| Income tax on salary, final, withheld monthly | 10% | 2026 | art. 78(1) and (2), same page |
-| CAM, employer work insurance contribution | 2.25% | 2026 | art. 220^3(1), same page |
-| Upper limit on the employee CAS or CASS base | none for employees | 2026 | art. 139 and 157 set no cap, same page |
+| Extra employer CAS, special working conditions / particularly hard conditions (Legea 263/2010) | 4% / 8% | 2026 | art. 138(b) and (c), https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm |
+| CASS, employee health contribution, withheld | 10% | 2026 | art. 156, https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm |
+| Income tax on salary, final, withheld monthly | 10% | 2026 | art. 78(1) and (2), https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm |
+| CAM, employer work insurance contribution | 2.25% | 2026 | art. 220^3(1), https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm |
+| Upper limit on the employee CAS or CASS base | none for employees | 2026 | art. 139 and 157 set no cap, https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm |
 | National minimum gross wage, 1 January to 30 June 2026 | RON 4,050 a month for 165.334 hours (RON 24.496 an hour); HG 1506/2024 stays in force until HG 146/2026 repeals it on 1 July 2026 | 2026 | [HG 1506/2024, ANAF copy](https://static.anaf.ro/static/10/Anaf/legislatie/HG_1506_2024.pdf); [OUG 89/2025 preamble, ANAF copy](https://static.anaf.ro/static/10/Anaf/legislatie/OUG_89_2025.pdf) |
 | National minimum gross wage from 1 July 2026 | RON 4,325 a month for 166.667 hours (RON 25.949 an hour) | 2026 | HG 146/2026 art. 1, [ANAF copy](https://static.anaf.ro/static/10/Anaf/legislatie/HG_146_2026.pdf) |
-| Tax-free and contribution-free amount, full-time staff whose base salary equals the minimum wage | RON 300 a month for January to June 2026; RON 200 a month for July to December 2026 | 2026 | OUG 89/2025 art. III(1) and (6), ANAF copy above |
-| Gross pay ceiling for that amount (excluding meal vouchers, holiday vouchers and food allowance) | RON 4,300 (January to June); RON 4,600 (July to December) | 2026 | OUG 89/2025 art. III(1)(b) |
-| Basic personal deduction, gross pay up to the minimum wage | 20% of the minimum wage with no dependants; 25%, 30%, 35%, 45% with 1, 2, 3, 4 or more | 2026 | art. 77(4) table |
-| Basic personal deduction, gross pay above the minimum wage | falls 0.5 points of the minimum wage for each RON 50 band above it; none above minimum wage + RON 2,000 | 2026 | art. 77(3) and (4) |
-| Extra deduction, employee under 26 with gross pay up to minimum wage + RON 2,000 | 15% of the minimum wage | 2026 | art. 77(10)(a) |
-| Extra deduction, per child under 18 enrolled in school (one parent, any salary) | RON 100 a month | 2026 | art. 77(10)(b) and (12) |
-| Gifts at Easter, Christmas, 1 June, 8 March | not taxed and not in the CAS or CASS base up to RON 300 per person per occasion | 2026 | art. 76(4)(a), art. 142(b) |
+| Tax-free and contribution-free amount, full-time staff whose base salary equals the minimum wage | RON 300 a month for January to June 2026; RON 200 a month for July to December 2026 | 2026 | OUG 89/2025 art. III(1) and (6), ANAF copy above, https://static.anaf.ro/static/10/Anaf/legislatie/OUG_89_2025.pdf |
+| Gross pay ceiling for that amount (excluding meal vouchers, holiday vouchers and food allowance) | RON 4,300 (January to June); RON 4,600 (July to December) | 2026 | OUG 89/2025 art. III(1)(b), https://static.anaf.ro/static/10/Anaf/legislatie/OUG_89_2025.pdf |
+| Basic personal deduction, gross pay up to the minimum wage | 20% of the minimum wage with no dependants; 25%, 30%, 35%, 45% with 1, 2, 3, 4 or more | 2026 | art. 77(4) table, https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm |
+| Basic personal deduction, gross pay above the minimum wage | falls 0.5 points of the minimum wage for each RON 50 band above it; none above minimum wage + RON 2,000 | 2026 | art. 77(3) and (4), https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm |
+| Extra deduction, employee under 26 with gross pay up to minimum wage + RON 2,000 | 15% of the minimum wage | 2026 | art. 77(10)(a), https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm |
+| Extra deduction, per child under 18 enrolled in school (one parent, any salary) | RON 100 a month | 2026 | art. 77(10)(b) and (12), https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm |
+| Gifts at Easter, Christmas, 1 June, 8 March | not taxed and not in the CAS or CASS base up to RON 300 per person per occasion | 2026 | art. 76(4)(a), art. 142(b), https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm |
 | Maximum face value of one meal voucher | RON 45, for entitlements from November 2025 to September 2026 | 2026 | Legea 165/2018 art. 14 as amended by Legea 201/2025 art. I point 1, applied to January to September 2026 by art. II(2), [text sent for promulgation, Chamber of Deputies](https://www.cdep.ro/ords/pls/proiecte/docs?2023/pl342_pr342_23.pdf) |
-| Benefits within the 33% of base salary monthly ceiling (meals up to one meal voucher a day, housing up to 20% of minimum wage, holiday services, pension and health premiums up to EUR 400 a year each, sport up to EUR 100 a year, nursery up to RON 1,500 a month per child) | not taxable within the limits | 2026 | art. 76(4^1) and (4^2), art. 142(aa^1) |
-| Minimum CAS and CASS on any employment contract, including part-time | as if paid the minimum wage, pro rata to working days the contract was active; for 2026 the minimum wage used here is reduced by RON 300 (January to June) and RON 200 (July to December) | 2026 | art. 146(5^6) and 168(6^1); OUG 89/2025 art. III(5) |
+| Benefits within the 33% of base salary monthly ceiling (meals up to one meal voucher a day, housing up to 20% of minimum wage, holiday services, pension and health premiums up to EUR 400 a year each, sport up to EUR 100 a year, nursery up to RON 1,500 a month per child) | not taxable within the limits | 2026 | art. 76(4^1) and (4^2), art. 142(aa^1), https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm |
+| Minimum CAS and CASS on any employment contract, including part-time | as if paid the minimum wage, pro rata to working days the contract was active; for 2026 the minimum wage used here is reduced by RON 300 (January to June) and RON 200 (July to December) | 2026 | art. 146(5^6) and 168(6^1); OUG 89/2025 art. III(5), https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm |
 | Rounding on D112 | every amount is a whole leu; contributions round half up (a fraction of 50 bani or more goes up), and a contribution under RON 1 becomes RON 1 | 2026 | ANAF, D112 technical structure for July 2026 onwards, [structura_D112_0726_070926.pdf](https://static.anaf.ro/static/10/Anaf/Declaratii_R/AplicatiiDec/structura_D112_0726_070926.pdf), section "Rotunjirile" |
-| Payment and filing deadline | 25th of the following month (quarterly payers: 25th of the month after the quarter) | 2026 | art. 80, 146(3), 147(1) and (4), 168(3), 220^6(1) |
+| Payment and filing deadline | 25th of the following month (quarterly payers: 25th of the month after the quarter) | 2026 | art. 80, 146(3), 147(1) and (4), 168(3), 220^6(1), https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm |
 
 The CAM receipts are split by law (15% wage guarantee fund, 20% unemployment, 5% work accidents, 40% sick pay, 20% state budget), but the employer pays one amount (art. 220^6(4)).
 
@@ -236,16 +236,16 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Legea 227/2015 privind Codul fiscal, ANAF consolidated text with norms, last updated by Legea 170/2026 (art. 60, 64, 66, 76-82, 122, 123^1, 128, 135^2, 138-147, 156-157, 168, 220^1-220^7, 223; norms 4, 13 and 14 to Title IV) | https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm | 2026-10-23 |
-| OUG 89/2025 (Monitorul Oficial 1203 of 24 December 2025), preamble and art. III, ANAF copy | https://static.anaf.ro/static/10/Anaf/legislatie/OUG_89_2025.pdf | 2026-10-23 |
-| HG 146/2026 (Monitorul Oficial 196 of 13 March 2026), minimum wage from 1 July 2026, ANAF copy | https://static.anaf.ro/static/10/Anaf/legislatie/HG_146_2026.pdf | 2026-10-23 |
-| HG 1506/2024, minimum wage RON 4,050 from 1 January 2025, ANAF copy | https://static.anaf.ro/static/10/Anaf/legislatie/HG_1506_2024.pdf | 2026-10-23 |
-| Legea 207/2015 privind Codul de procedură fiscală, ANAF consolidated text (art. 174, 176, 181, 336) | https://static.anaf.ro/static/10/Anaf/cod_procedura/Cod_Procedura_Fiscala_2023.htm | 2026-10-23 |
-| Legea 201/2025 amending Legea 165/2018 (meal voucher cap RON 45), text sent for promulgation, Chamber of Deputies file PL-x 342/2023 | https://www.cdep.ro/ords/pls/proiecte/docs?2023/pl342_pr342_23.pdf | 2026-10-23 |
-| ANAF, D112 technical structure for income from July 2026 (rounding rules, OUG 89/2025 fields) | https://static.anaf.ro/static/10/Anaf/Declaratii_R/AplicatiiDec/structura_D112_0726_070926.pdf | 2026-10-23 |
-| Inspecția Muncii, ITM Botoșani notice 69 of 8 January 2026 on Labour Code art. 260 as amended by Legea 239/2025 | https://www.inspectiamuncii.ro/documents/521316/523496/20260112_COMUNICAT+MUNCA+NEDECLARATA+01.2026.pdf/35df8a29-b7a3-4a33-854b-b6042fb55ba3 | 2026-10-23 |
-| Inspecția Muncii, REGES page (portal from 1 April 2025) | https://www.inspectiamuncii.ro/reges | 2026-10-23 |
-| Inspecția Muncii, "Întrebări și răspunsuri REGES ONLINE" (questions 40, 42, 44) | https://www.inspectiamuncii.ro/documents/66402/85254633/%C3%8Entreb%C4%83ri+%C8%99i+r%C4%83spunsuri+REGES+ONLINE.pdf/690a056b-bcec-49ff-85e5-8d264e7301bc | 2026-10-23 |
+| Legea 227/2015 privind Codul fiscal, ANAF consolidated text with norms, last updated by Legea 170/2026 (art. 60, 64, 66, 76-82, 122, 123^1, 128, 135^2, 138-147, 156-157, 168, 220^1-220^7, 223; norms 4, 13 and 14 to Title IV) | https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm | 2026-11-14, read for art. 76, 77, 78, 80, 138, 146, 156, 168 and 220^3: rates, deductions, benefit limits and deadlines |
+| OUG 89/2025 (Monitorul Oficial 1203 of 24 December 2025), preamble and art. III, ANAF copy | https://static.anaf.ro/static/10/Anaf/legislatie/OUG_89_2025.pdf | 2026-11-14, read for art. III: RON 300 and RON 200 relief, RON 4,300 and RON 4,600 ceilings |
+| HG 146/2026 (Monitorul Oficial 196 of 13 March 2026), minimum wage from 1 July 2026, ANAF copy | https://static.anaf.ro/static/10/Anaf/legislatie/HG_146_2026.pdf | 2026-11-14, read for art. 1: RON 4,325 from 1 July 2026 |
+| HG 1506/2024, minimum wage RON 4,050 from 1 January 2025, ANAF copy | https://static.anaf.ro/static/10/Anaf/legislatie/HG_1506_2024.pdf | 2026-11-14, read for art. 1: RON 4,050 a month |
+| Legea 207/2015 privind Codul de procedură fiscală, ANAF consolidated text (art. 174, 176, 181, 336) | https://static.anaf.ro/static/10/Anaf/cod_procedura/Cod_Procedura_Fiscala_2023.htm | 2026-11-14, read for art. 174, 176 and 181: interest and penalty rates |
+| Legea 201/2025 amending Legea 165/2018 (meal voucher cap RON 45), text sent for promulgation, Chamber of Deputies file PL-x 342/2023 | https://www.cdep.ro/ords/pls/proiecte/docs?2023/pl342_pr342_23.pdf | 2026-11-14, read for art. I point 1 and art. II: meal voucher cap RON 45 |
+| ANAF, D112 technical structure for income from July 2026 (rounding rules, OUG 89/2025 fields) | https://static.anaf.ro/static/10/Anaf/Declaratii_R/AplicatiiDec/structura_D112_0726_070926.pdf | 2026-11-14, read for the rounding rules |
+| Inspecția Muncii, ITM Botoșani notice 69 of 8 January 2026 on Labour Code art. 260 as amended by Legea 239/2025 | https://www.inspectiamuncii.ro/documents/521316/523496/20260112_COMUNICAT+MUNCA+NEDECLARATA+01.2026.pdf/35df8a29-b7a3-4a33-854b-b6042fb55ba3 | 2026-11-14, read for the Labour Code art. 260 fine for undeclared work |
+| Inspecția Muncii, REGES page (portal from 1 April 2025) | https://www.inspectiamuncii.ro/reges | 2026-11-14, read for the REGES ONLINE portal start date |
+| Inspecția Muncii, "Întrebări și răspunsuri REGES ONLINE" (questions 40, 42, 44) | https://www.inspectiamuncii.ro/documents/66402/85254633/%C3%8Entreb%C4%83ri+%C8%99i+r%C4%83spunsuri+REGES+ONLINE.pdf/690a056b-bcec-49ff-85e5-8d264e7301bc | 2026-11-14, read for questions 40, 42 and 44: REGES deadlines |
 
 Not yet confirmed:
 - legislatie.just.ro refused connections on 23 October 2026 (command line and browser), so the Fiscal Code and Procedure Code come from ANAF's consolidations, which ANAF says are not an official republication. HG 295/2025 (REGES ONLINE) and the Labour Code were not read directly: the REGES deadlines come from the Inspecția Muncii Q&A quoting HG 295/2025, and the unregistered-work fine from a Labour Inspectorate notice.
@@ -256,4 +256,4 @@ Not yet confirmed:
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-31. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ro-payroll-social` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ro-payroll-social. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ro-payroll-social` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ro-payroll-social. If neither is available, confirm every figure against the official source pages cited above before relying on it.

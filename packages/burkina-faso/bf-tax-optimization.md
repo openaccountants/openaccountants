@@ -4,14 +4,15 @@ description: >
   Burkina Faso lawful tax comparison workpaper for 2026, covering turnover regime classification, documented CME to RSI and RSI to RNI elections, approved management centre relief, minimum tax comparisons and ordinary deduction evidence. Use it for questions about whether a tax reduction actually changes the amount payable, what conditions attach to an option, and how a verified employer TPA base calculation differs from an unresolved interaction between relief provisions. It reads the official 2026 CGI and routes full business, company, VAT and payroll calculations to their existing Guides. It supplies two recomputing comparisons, not promised savings. Investment approvals, mining incentives, treaty relief, current portal boxes and accountant sign-off remain unresolved.
 jurisdiction: BF
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-version: 1.1
+version: 1.2
 tier: 2
 domain: tax-optimization
+type: situation-rules
 ---
 
-# Burkina Faso lawful tax comparisons v1.1
+# Burkina Faso lawful tax comparisons v1.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 

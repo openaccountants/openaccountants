@@ -10,19 +10,20 @@ description: >
   Authority. (3) Income tax on rents. Trigger on "Egypt real estate tax", "ضريبة العقارات", "الضريبة
   العقارية", "annual rental value tax", "property tax Egypt", "2.5% property sale tax Egypt", "ضريبة
   التصرفات العقارية", or any property tax question for Egyptian owners or landlords.
-version: 0.2
+version: 0.3
 jurisdiction: EG
 tax_year: 2026
-last_updated: 2026-11-02
+last_updated: 2026-11-14
 depends_on:
   - workflow-base
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: estate-wealth-tax
+type: situation-rules
 ---
 
-# Egypt Real Estate Tax (ضريبة العقارات) Skill v0.2
+# Egypt Real Estate Tax (ضريبة العقارات) Skill v0.3
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
