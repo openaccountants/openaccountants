@@ -10,7 +10,7 @@ description: >
   country pack's partial coverage. This overview supplies no standalone tax
   calculation of its own or current formation fee, and the country remains a source-cited
   draft with source-review evidence in the pack README; professional attestation is separate.
-version: 0.6
+version: 0.7
 jurisdiction: FI
 tax_year: 2026
 last_updated: 2026-11-14
@@ -20,7 +20,7 @@ tier: 2
 type: situation-rules
 ---
 
-# Finland tax overview v0.6
+# Finland tax overview v0.7
 
 ## Scope
 
@@ -117,7 +117,7 @@ The independent source review, corrections and remaining gaps are recorded in th
 [ita]: https://www.finlex.fi/fi/lainsaadanto/1992/1535
 [vat]: https://www.finlex.fi/fi/lainsaadanto/1993/1501
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.
 
 ## Sources
 

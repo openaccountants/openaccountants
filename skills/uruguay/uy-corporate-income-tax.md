@@ -1,10 +1,10 @@
 ---
 name: uy-corporate-income-tax
 description: "Uruguay corporate income tax (IRAE, Impuesto a las Rentas de las Actividades Económicas) for tax year 2026 under Título 4 of the Texto Ordenado 2023 as amended by Ley 20.446, and its regulation Decreto 150/007. Covers who pays (companies, SAS, permanent establishments, trusts, sole traders with business income), the 25% rate, Uruguayan source and the 2026 rules on indirect share transfers, the base and its deduction rules (the proportional deduction for payments taxed at lower rates, the 150% deductions, non-deductible items), five-year indexed losses, the fictitious-profit regime and the UI 4,000,000 accounting threshold, the UI 305,000 small-business exemption, the option for independent professionals, monthly advances and the 2026 minimum monthly payments (Decreto 310/025), the annual return in the fourth month, IRNR rates on dividends and other payments to non-residents, and the 15% domestic minimum top-up for EUR 750 million groups. Trigger on: IRAE 2026, impuesto a la renta empresas Uruguay, anticipos IRAE, IRAE ficto, Uruguay corporate tax."
-version: 0.1
+version: 0.2
 jurisdiction: UY
 tax_year: 2026
-last_updated: 2026-11-11
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
@@ -12,7 +12,7 @@ domain: income-tax
 type: computation
 ---
 
-# Uruguay: corporate income tax (IRAE) for 2026 v0.1
+# Uruguay: corporate income tax (IRAE) for 2026 v0.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -204,4 +204,4 @@ expected:
 
 Not yet confirmed: the notional "trading" regime (3% of gross) carried by the old file, which was not found in Decreto 150/007 as read; the IMCD start date and its computation rules (Título 21 arts. 7 onward and Decreto 206/026 not read); the monthly recargo rate for 2026; the 2026 UI quotation used to convert the UI thresholds; the minimum years an IRAE option binds; the notional owner's salary amounts under art. 32 G; whether the fictitious-profit 48% / 60% / 72% professional scale applies by tranche; the exact April 2027 day in the deadline table; IRNR rates on interest by instrument for non-residents beyond the table; the reduced rates and exemptions for promoted investment, free zones and software; Monotributo (BPS) as the alternative for very small businesses, which the old file mentioned without figures.
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.

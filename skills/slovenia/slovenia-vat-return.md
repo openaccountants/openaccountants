@@ -1,7 +1,7 @@
 ---
 name: slovenia-vat-return
 description: "Slovenian VAT (davek na dodano vrednost, DDV) for tax year 2026 under ZDDV-1. Covers the 22%, 9.5% and 5% rates and what falls in each, the EUR 60,000 small business exemption with its EUR 66,000 in-year ceiling, the EU SME cross-border exemption (EUR 100,000), monthly and quarterly periods (EUR 210,000 test), the DDV-O return by the last working day of the next month (the 20th for recapitulative statement filers, who still pay by the last working day), the VAT ledgers and prefilled return, domestic reverse charge, the RP-O recapitulative statement, VAT groups from 2026, fiscal cash registers, B2G e-invoices and B2B e-invoicing from 2028, fines and interest. Trigger phrases: DDV-O, Slovenian VAT, obračun DDV, evidenca obračunanega DDV, RP-O, PD-O, davčna blagajna. Out of scope: slovenia-income-tax, si-corporate-income-tax, slovenia-payroll, si-cross-border."
-version: 1.2
+version: 1.3
 jurisdiction: SI
 tax_year: 2026
 last_updated: 2026-11-14
@@ -226,4 +226,4 @@ expected:
 
 Not yet confirmed: the DDV-O box layout was not read from the form rules; how VAT applies to the supply that takes a small business over EUR 66,000 in the year was not checked against FURS guidance.
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.

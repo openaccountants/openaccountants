@@ -13,10 +13,10 @@ description: >
   ivory-coast-payroll. Read it before any CNPS-related work. This Tier 2 draft
   supports source checking and reviewer questions; it does not authorise
   filing, payment or a tax position.
-version: 0.4
+version: 0.5
 jurisdiction: CI
 tax_year: 2026
-tax_year_notes: "Calendar 2026. Statutory rates are as read in the Code de Prévoyance Sociale, Ordonnance 2012-03 (unofficial copy), the RSTI texts and Décret 2017-123. The ceilings are CNPS administrative statements read on 5 November 2026; the decrees behind them were not read. The retirement ceiling of XOF 3,375,000 is unverified, and the ordonnance adopted on 23 September 2026 amending the Code was not read."
+tax_year_notes: "Calendar 2026. Statutory rates are as read in the Code de Prévoyance Sociale, Ordonnance 2012-03 (unofficial copy), the RSTI texts and Décret 2017-123. The ceilings and the floor from 1 January 2023 (retirement 3,375,000, other branches 75,000, floor 75,000 a month) are as stated in the CNPS Direction Générale communiqué of January 2023, read on 14 November 2026; the decrees behind them were not read. The ordonnance adopted on 23 September 2026 amending the Code was not read."
 last_updated: 2026-11-14
 type: computation
 depends_on:
@@ -27,7 +27,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 domain: payroll
 ---
 
-# Côte d'Ivoire (Ivory Coast) Social Contributions (CNPS) v0.4
+# Côte d'Ivoire (Ivory Coast) Social Contributions (CNPS) v0.5
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -55,7 +55,7 @@ Impôt sur les Traitements et Salaires (ITS), the employer contribution under th
 
 This is a Tier 2 source-cited draft. It has no accountant sign-off, and no accountant has reviewed this version. Treat every working it produces as a working paper only: label it estimated and direct the client to their CNPS appel de cotisations. The appel and the CNPS statement settle what a client pays.
 
-The law is read in 5 layers, and a figure is only as strong as its layer. Enacted text: the Code, Ordonnance 2019-636, Décret 2020-308, Arrêté 2020-065, Décret 2017-123 and Loi 2014-131. Unofficial copy of enacted text: Ordonnance 2012-03. CNPS board decision: Délibération 004. Official announcement, not the text announced: the Conseil des ministres communiqués, which carry the SMIG and the 2026 reform. Administrative statement: the CNPS page and leaflets, which give the ceilings, the periodicity, the 31 March date and the daily majoration, because the decrees that Code Arts 21, 23 and 24 call for were not found. The CNPS page is partly stale: it still prints a SMIG of 60,000 and a ceiling of 1,647,315.
+The law is read in 5 layers, and a figure is only as strong as its layer. Enacted text: the Code, Ordonnance 2019-636, Décret 2020-308, Arrêté 2020-065, Décret 2017-123 and Loi 2014-131. Unofficial copy of enacted text: Ordonnance 2012-03. CNPS board decision: Délibération 004. Official announcement, not the text announced: the Conseil des ministres communiqués, which carry the SMIG and the 2026 reform. Administrative statement: the CNPS communiqué of January 2023, which gives the ceilings and floor from 1 January 2023, and the CNPS page and leaflets, which give the periodicity, the 31 March date and the daily majoration, because the decrees that Code Arts 21, 23 and 24 call for were not found. The CNPS page is partly stale: it still prints a SMIG of 60,000, a retirement ceiling of 1,647,315 and an other-branch ceiling of 70,000, all superseded by the communiqué.
 
 The Code and several decrees are scans read through local OCR, which is not qualified for French. Checked by eye on the page image: Code Arts 4 to 37, 71, 164, 166 and 167; Arrêté 2020-065 Arts 4 to 9; Délibération 004 Arts 2 to 7; all of Décret 2017-123; and Loi 2014-131 Arts 58 to 72. So no CMU figure rests on OCR alone. Every other article rests on OCR or a text layer, including Code Arts 66, 67, 70 and 174 and all of Ordonnance 2019-636. CivLII item pages returned 404. cotedivoire.eregulations.org, fratmat.info, issa.int, dg-cmu.ci, africa-laws.org and comptrasec.fr refused the request with a 403, and juriafrica.com reset the connection. No archive copy was used. What depended on those sources is held below.
 
@@ -66,7 +66,7 @@ The Code and several decrees are scans read through local OCR, which is not qual
 A refusal is a full stop: give the message and classify nothing further on that point.
 
 - **R-CI-CNPS-1, wrong scheme.** Trigger: a request to apply régime général rates to a self-employed person's own income, or RSTI rates to a salaried worker. Message: 'These are separate regimes. RSTI uses a declared income, a category floor from XOF 30,000 to 150,000, a XOF 180,000 ceiling, 12% (9% retirement and 3% other risks) and 9% complementary above the ceiling. I will not mix them. Give me the worker's status, then I can use the right one.'
-- **R-CI-CNPS-2, outdated ceiling.** Trigger: a request to use a retirement ceiling of XOF 1,647,315 or 2,700,000 for a period from 1 January 2023, without a CNPS document for that period. Message: 'Those figures are 45 times an older SMIG: 36,607 and 60,000. CNPS states the ceiling as 45 times the SMIG, and the SMIG has been 75,000 since 1 January 2023, which gives 3,375,000. I could not read the decree, so send the CNPS appel for the period. I will not apply either older figure without it.'
+- **R-CI-CNPS-2, outdated ceiling.** Trigger: a request to use a retirement ceiling of XOF 1,647,315 or 2,700,000 for a period from 1 January 2023, without a CNPS document for that period. Message: 'Those figures are 45 times an older SMIG: 36,607 and 60,000. CNPS states the ceiling as 45 times the SMIG, and its communiqué of January 2023 sets the retirement ceiling at 3,375,000 a month from 1 January 2023. I will use 3,375,000 for a period from that date, and I will not apply either older figure without a CNPS document for the period.'
 - **R-CI-CNPS-3, arrears.** Trigger: the client has unpaid contributions and wants an amount for arrears or penalties. Message: 'Do not estimate arrears without the official CNPS statement. The Code separates the 10% penalty for a missing declaration from late-payment majorations, and CMU has its own rate. Get the CNPS statement and escalate to a warranted accountant. I can show the arithmetic of a stated amount and period only.'
 - **R-CI-CNPS-4, AT/MP rate.** Trigger: a request to assign the work-injury rate or category. Message: 'The AT/MP rate runs from 2% to 5% by the risk of the employer's activity, and CNPS notifies it with the matricule. It cannot be self-assigned, and the risk arrêté was not read here. Send the CNPS notification.'
 - **R-CI-CNPS-5, public sector.** Trigger: the worker is a civil servant or State agent. Message: 'This file does not cover IPS-CGRAE. Escalate to a warranted accountant.' A contract employee of a State body is Needs Input, not this refusal.
@@ -81,13 +81,13 @@ Questions come before output: ask them at Step 4 of `social-contributions-workfl
 | Missing fact | Action |
 | --- | --- |
 | Salaried worker's gross pay by component, or the period | R-CI-CNPS-6 |
-| AT/MP rate | Needs Input: ask for the CNPS notification. No default. 2% is the lowest rate, so it is not conservative, and no text read fixes 5%. The range is XOF 1,400 to 3,500 a month per worker at the 70,000 ceiling, for scale only |
+| AT/MP rate | Needs Input: ask for the CNPS notification. No default. 2% is the lowest rate, so it is not conservative, and no text read fixes 5%. The range is XOF 1,500 to 3,750 a month per worker at the 75,000 ceiling, for scale only |
 | Employer contribution under Code Art 10 2° | Needs Input: look for any separate line on the CNPS appel. The decree was not read, so employer figures here are subtotals of the known components |
 | Headcount | Needs Input: it sets the date, not the amount. CNPS says 'occupe 20 salariés ou plus'; no text read says whether occasional workers count or on what date headcount is measured. Do not assume either periodicity |
 | CMU covered persons | Needs Input: count the worker, the spouse, children under 21 and any disabled adult child, and ask whether the spouse has income. Show the worker's own 500 and 500, label it as that alone and do not report it as the total |
 | Character of an allowance | Needs Input: ask what it pays for and for its evidence. Missing evidence does not prove it is pay. Show both cases (Example 1) |
 | Salary below the SMIG | Default stands: Code Art 23 fixes the floor for a salaried worker. The apprentice and Art 16 cases are separate rows |
-| Pay above 1,647,315 a month | Needs Input: ask for the appel showing the ceiling. Examples use the unverified 3,375,000, labelled |
+| Pay above 3,375,000 a month | Default stands: the retirement base stops at 3,375,000 a month (CNPS communiqué, from 1 January 2023), subject to the annual regularisation. Check the ceiling on the appel; a different figure there is Needs Input |
 | Period before 1 January 2023 | Needs Input: the CNPS page prints a SMIG of 60,000 with no date, and the 2021 leaflet a ceiling of 2,700,000. No period table was read |
 | Hourly SMIG; amount exempted by the tax authority for transport | Needs Input. Neither was read, so the exclusion limits cannot be computed |
 | Value of a benefit in kind | Needs Input: real value, or for housing the fiscal rule with the scale as a minimum |
@@ -106,7 +106,7 @@ Questions come before output: ask them at Step 4 of `social-contributions-workfl
 - The worker's deductions are 6.3% retirement and CMU: 500 for each person whose cost the employer shares, and 1,000 for each child beyond the sixth.
 - Never compute CMU as a percentage. It is a flat amount per person.
 - Never invent the AT/MP rate or category.
-- Never apply the 3,375,000 ceiling to family benefits, maternity or AT/MP. Those use 70,000.
+- Never apply the 3,375,000 ceiling to family benefits, maternity or AT/MP. Those use 75,000.
 - Never contribute on a salary below the SMIG for a salaried worker, save the apprentice and Art 16 cases.
 - Never tie a penalty to the wrong text: 'Penalties and interest' names each one.
 - Never present figures as definitive: label them estimated and direct the client to their CNPS appel de cotisations.
@@ -118,13 +118,14 @@ Ordinary rates are in the first table. By date: retirement was 8% in the 1999 te
 | Item | Figure | Applies to | Source and limit |
 | --- | --- | --- | --- |
 | Retirement (Assurance Vieillesse) | 14.00%: employer 7.70%, worker 6.30% | Base up to the retirement ceiling | [CNPS Employeur page](https://www.cnps.ci/employeur) states the rate and split; worker share 6.3% 'depuis le 1er Janvier 2013'. Ordonnance 2012-03 Art 22 sets 14% and 55% employer, 45% worker, as read only in an unofficial copy on loidici.biz with no gazette check. Official [Conseil des ministres, 11 January 2012](https://www.gouv.ci/uploads/publications/1372331568CCM_11_01_2012.pdf) agrees on 14% from January 2013 |
-| Family benefits (Prestations Familiales) | 5.00%, employer only | Base up to 70,000 | [Code Arts 10, 12](https://www.cnps.ci/wp-content/uploads/2020/08/Loi-n%C2%B0-99-477-du-02-ao%C3%BBt-1999-portant-modification-du-Code-de-Pr%C3%A9voyance-Sociale-Amendment-to-the-Social-Security-Code.pdf): 5.75% in all, of which 0.75% maternity. The 5% is that total less maternity, as CNPS states. Art 10 2° also has an employer contribution for the daily allowance and medical care in Arts 53 and 54, at a rate set separately by decree. That decree was not read, so whether it adds to or sits within the 0.75% is held |
-| Maternity (Assurance Maternité) | 0.75%, employer only | Base up to 70,000 | same |
-| Work injury (AT/MP) | 2.00% to 5.00%, employer only, by risk of the activity | Base up to 70,000 | [Code Arts 13, 15, 17](https://www.cnps.ci/wp-content/uploads/2020/08/Loi-n%C2%B0-99-477-du-02-ao%C3%BBt-1999-portant-modification-du-Code-de-Pr%C3%A9voyance-Sociale-Amendment-to-the-Social-Security-Code.pdf). CNPS notifies the rate with the matricule. The risk arrêté and the tariff decree, which can add ristournes or supplements, were not read. The legacy '4 categories' is unverified |
-| Ceiling, family benefits, maternity and AT/MP | 70,000 a month, 210,000 a quarter, 840,000 a year | Those 3 branches | [CNPS Employeur page](https://www.cnps.ci/employeur); [leaflet, edition 2021](https://www.cnps.ci/wp-content/uploads/2021/04/RECOUVREMENT-R.pdf). Administrative: the decree under Code Art 23 was not read. Since 1 January 2023 this sits below the SMIG, whilst Art 23 says the base cannot be below the SMIG 'en aucun cas'. Held: at 3% the gap is XOF 437.50 a month per worker (Example 3) |
-| Retirement ceiling rule | 45 times the SMIG, annual and split by pay period | Retirement | [CNPS Employeur page](https://www.cnps.ci/employeur). Administrative. Code Arts 21 and 23 leave the ceiling to a decree, which was not read. Legacy tied it to Décret 2022-986; no text read supports that |
-| Earlier printed ceilings | 2,700,000 a month (45 times 60,000); 1,647,315 a month (45 times 36,607, computed: 1,647,315 divided by 45) | Earlier periods only | [Leaflet, edition 2021](https://www.cnps.ci/wp-content/uploads/2021/04/RECOUVREMENT-R.pdf) for 2,700,000. The [CNPS Employeur page](https://www.cnps.ci/employeur) still prints 1,647,315, with 19,767,780 a year. The date each applied from was not read |
-| SMIG | 75,000 a month from 1 January 2023, up from 60,000 | Floor | Official [Conseil des ministres, 21 December 2022](https://www.gouv.ci/uploads/publications/1671692497Communique-du-Conseil-des-Ministres-du-mercredi-21-decembre-2022.pdf): decree adopted, amount and date stated. The decree text was not read and its number, 2022-986, comes from a search digest. CLEISS adds 40 hours a week. No later SMIG decree was found, but the search was not complete: held |
+| Family benefits (Prestations Familiales) | 5.00%, employer only | Base up to 75,000 | [Code Arts 10, 12](https://www.cnps.ci/wp-content/uploads/2020/08/Loi-n%C2%B0-99-477-du-02-ao%C3%BBt-1999-portant-modification-du-Code-de-Pr%C3%A9voyance-Sociale-Amendment-to-the-Social-Security-Code.pdf): 5.75% in all, of which 0.75% maternity. The 5% is that total less maternity, as CNPS states. Art 10 2° also has an employer contribution for the daily allowance and medical care in Arts 53 and 54, at a rate set separately by decree. That decree was not read, so whether it adds to or sits within the 0.75% is held |
+| Maternity (Assurance Maternité) | 0.75%, employer only | Base up to 75,000 | same |
+| Work injury (AT/MP) | 2.00% to 5.00%, employer only, by risk of the activity | Base up to 75,000 | [Code Arts 13, 15, 17](https://www.cnps.ci/wp-content/uploads/2020/08/Loi-n%C2%B0-99-477-du-02-ao%C3%BBt-1999-portant-modification-du-Code-de-Pr%C3%A9voyance-Sociale-Amendment-to-the-Social-Security-Code.pdf). CNPS notifies the rate with the matricule. The risk arrêté and the tariff decree, which can add ristournes or supplements, were not read. The legacy '4 categories' is unverified |
+| Ceiling, family benefits, maternity and AT/MP | 75,000 a month from 1 January 2023; 225,000 a quarter and 900,000 a year (computed: 3 and 12 times the month, as CNPS splits the annual ceiling by pay period) | Those 3 branches | [CNPS communiqué, January 2023](https://www.cnps.ci/wp-content/uploads/2023/01/NOUVEAU-PLAFOND-DES-COTISATIONS-SOCIALES-DE-LA-CNPS.pdf): 'Le nouveau salaire mensuel plafond des autres branches ... est fixé à 75 000 FCFA'. Administrative: the decree under Code Art 23 was not read. The ceiling now equals the SMIG floor, so Art 23's 'en aucun cas' and the ceiling no longer conflict |
+| Retirement ceiling | 3,375,000 a month from 1 January 2023; 10,125,000 a quarter and 40,500,000 a year (computed: 3 and 12 times the month) | Retirement | [CNPS communiqué, January 2023](https://www.cnps.ci/wp-content/uploads/2023/01/NOUVEAU-PLAFOND-DES-COTISATIONS-SOCIALES-DE-LA-CNPS.pdf): 'Le nouveau salaire mensuel plafond de la branche retraite s'établit à 3 375 000 FCFA'. Administrative. 45 times 75,000 is 3,375,000 |
+| Retirement ceiling rule | 45 times the SMIG, annual and split by pay period | Retirement | [CNPS Employeur page](https://www.cnps.ci/employeur). Administrative. Code Arts 21 and 23 leave the ceiling to a decree, which was not read. The CNPS communiqué of January 2023 ties the new ceilings to Décret 2022-986 on the SMIG; that decree's text was not read, so whether it fixes the ceiling itself is not shown |
+| Earlier printed ceilings | Retirement: 2,700,000 a month (45 times 60,000); 1,647,315 a month (45 times 36,607, computed: 1,647,315 divided by 45). Other branches: 70,000 a month, 210,000 a quarter, 840,000 a year | Periods before 1 January 2023 only | [Leaflet, edition 2021](https://www.cnps.ci/wp-content/uploads/2021/04/RECOUVREMENT-R.pdf) for 2,700,000 and 70,000. The [CNPS Employeur page](https://www.cnps.ci/employeur) still prints 1,647,315, with 19,767,780 a year, and 70,000. The date each applied from was not read |
+| SMIG | 75,000 a month from 1 January 2023, up from 60,000 | Floor | Official [Conseil des ministres, 21 December 2022](https://www.gouv.ci/uploads/publications/1671692497Communique-du-Conseil-des-Ministres-du-mercredi-21-decembre-2022.pdf): decree adopted, amount and date stated. The CNPS communiqué of January 2023 names it Décret 2022-986 of 21 December 2022 and sets the floor for all branches at 75,000 from 1 January 2023. The decree text was not read. CLEISS adds 40 hours a week. No later SMIG decree was found, but the search was not complete: held |
 | Apprentice base | 37,500 with an apprenticeship contract; 75,000 without (computed: half the SMIG, or the SMIG, on the 75,000 SMIG) | Notional salary | [CNPS Employeur page](https://www.cnps.ci/employeur): half the SMIG or the SMIG, arithmetic on 75,000. Administrative |
 | CMU | XOF 1,000 a month per person, whatever the age. For a salaried worker: employer 500, worker 500 | Every person under Art 3. A self-employed person pays the 1,000 by the routes in Arts 21 to 29. The employer's share covers the worker, spouse and up to 6 children under 21 (Art 9) | [Décret 2017-123 Arts 3, 9, 10](https://extranet.who.int/cpcd/sites/default/files/public_file_repository/CIV_Cote-d-Ivoire_Decret-No-2017-123-fixant-le-montant-et-les-modalites-de-recouvrement-des-cotisations_2017.pdf), JO 30 May 2017, due from 1 October 2017 (Art 30), read in the WHO copy and checked on the page images. Art 3 puts the assistance regime for the economically weak or destitute on the State budget. Enacted, under Loi 2014-131 Art 40. Amendments not checked |
 | CMU beyond 6 children | XOF 1,000 per further child, all from the worker | Seventh child onwards | same |
@@ -176,7 +177,7 @@ For a salaried worker on a full month:
 assiette = cash pay + benefits in kind + indemnities
            - expense reimbursements - excluded items within their limits
 retirement_base = min(max(assiette, SMIG), retirement_ceiling)
-other_base      = min(max(assiette, SMIG), 70,000)
+other_base      = min(max(assiette, SMIG), 75,000)
 retirement_worker   = retirement_base * 6.3%
 retirement_employer = retirement_base * 7.7%
 family     = other_base * 5%      employer
@@ -187,7 +188,7 @@ cmu_worker   = 500 * min(1 + spouse + children, 1 + spouse + 6)
                + 1,000 * max(children - 6, 0)
 ```
 
-SMIG 75,000 and ceiling 70,000 mean `other_base` is 70,000 for any salaried worker in that formula, whatever the pay. An apprentice or Art 16 person uses their own base. 'spouse' is 1 for a spouse without income, whose cost Décret 2017-123 Art 5 charges to the earning spouse. Art 9's employer share says 'son époux' with no income condition, so a spouse with income is Needs Input. 'children' are children under 21 charged to this worker (Arts 4, 9). A disabled adult child is outside this formula: Art 4 charges that person's XOF 1,000 to the parents, and the employer share is Needs Input (Example 7).
+SMIG 75,000 and ceiling 75,000 mean `other_base` is 75,000 for any salaried worker in that formula, whatever the pay. An apprentice or Art 16 person uses their own base. 'spouse' is 1 for a spouse without income, whose cost Décret 2017-123 Art 5 charges to the earning spouse. Art 9's employer share says 'son époux' with no income condition, so a spouse with income is Needs Input. 'children' are children under 21 charged to this worker (Arts 4, 9). A disabled adult child is outside this formula: Art 4 charges that person's XOF 1,000 to the parents, and the employer share is Needs Input (Example 7).
 
 **Annual ceilings.** CNPS states that the ceiling is annual, split by pay period so that each pay can be calculated, and that the employer must regularise over all pay between the first and last days of the year. The reason it gives is so that bonuses paid at long intervals, and pay that varies, are not cut by one month's ceiling. Regularisation runs through the DISA. Example 5 shows the effect. No text read says how a part-year worker's annual ceiling is set, or when any extra must be paid.
 
@@ -270,9 +271,9 @@ INPUT DATA
 
 BASES
   SMIG floor:                         XOF 75,000
-  Retirement ceiling, from appel:     XOF [____]  (3,375,000 is unverified)
+  Retirement ceiling, from appel:     XOF [____]  (3,375,000 from 1 January 2023, CNPS communiqué)
   Retirement base:                    XOF [____]
-  Other-branch base:                  XOF [____]  (70,000 ceiling)
+  Other-branch base:                  XOF [____]  (75,000 ceiling)
 
 COMPUTATION                         Worker        Employer
   Retirement 6.3% / 7.7%            XOF [____]    XOF [____]
@@ -343,7 +344,7 @@ inputs:
   salary: 500000
   allowance: 30000
   smig: 75000
-  other_ceiling: 70000
+  other_ceiling: 75000
   retirement_ceiling: 3375000
   worker_rate: 0.063
   employer_rate: 0.077
@@ -362,27 +363,27 @@ steps:
 expected:
   base_a: 500000
   worker_a: 32000
-  employer_a: 45125
+  employer_a: 45562.5
   base_b: 530000
   worker_b: 33890
-  employer_b: 47435
-  total_a: 77125
-  total_b: 81325
+  employer_b: 47872.5
+  total_a: 77562.5
+  total_b: 81762.5
   gap: 4200
 ```
 
-If receipts show a reimbursement of expenses, Art 23 leaves it out: the worker bears XOF 32,000 and the employer subtotal is XOF 45,125. If it is pay, the worker bears XOF 33,890 and the employer subtotal is XOF 47,435. The file does not choose: the XOF 4,200 gap stays Needs Input until the evidence is seen. A ceiling plays no part here, as the base is below 1,647,315.
+If receipts show a reimbursement of expenses, Art 23 leaves it out: the worker bears XOF 32,000 and the employer subtotal is XOF 45,562.50. If it is pay, the worker bears XOF 33,890 and the employer subtotal is XOF 47,872.50. The file does not choose: the XOF 4,200 gap stays Needs Input until the evidence is seen. The retirement ceiling plays no part here, as the base is below 3,375,000.
 
 ### Example 2: above the ceiling
 
-A worker earns XOF 5,000,000, and the employer's appel shows the retirement ceiling. The block uses the unverified 3,375,000. If the appel shows another figure, substitute it.
+A worker earns XOF 5,000,000 in a month of 2026. The block uses the retirement ceiling of 3,375,000 and the other-branch ceiling of 75,000 from the CNPS communiqué of January 2023. If the appel shows another figure, the difference is Needs Input.
 
 ```oa-check
-name: Salary 5,000,000 above the unverified ceiling
+name: Salary 5,000,000 above the retirement ceiling
 inputs:
   salary: 5000000
   retirement_ceiling: 3375000
-  other_ceiling: 70000
+  other_ceiling: 75000
   worker_rate: 0.063
   employer_rate: 0.077
   family: 0.05
@@ -402,25 +403,26 @@ expected:
   base: 3375000
   retirement_worker: 212625
   retirement_employer: 259875
-  family_due: 3500
-  maternity_due: 525
-  at_mp_due: 2100
+  family_due: 3750
+  maternity_due: 562.5
+  at_mp_due: 2250
   worker_total: 213125
-  employer_subtotal: 266500
+  employer_subtotal: 266937.5
 ```
 
-Pay above the ceiling carries no retirement contribution for that month, subject to the annual regularisation in Example 5. The worker bears XOF 213,125 and the employer subtotal is XOF 266,500, both conditional on the ceiling.
+Pay above the ceiling carries no retirement contribution for that month, subject to the annual regularisation in Example 5. The worker bears XOF 213,125 and the employer subtotal is XOF 266,937.50.
 
 ### Example 3: below the floor
 
-A full-time worker is paid XOF 50,000 for the month. Art 23 fixes the base at the SMIG, so this is a default that stands. The pay itself is a wage issue for `ivory-coast-payroll`. The last 2 steps size the held conflict: if Art 23's 'en aucun cas' beat the 70,000 ceiling, the 3 employer branches would run on 75,000.
+A full-time worker is paid XOF 50,000 for the month. Art 23 fixes the base at the SMIG, so this is a default that stands. The pay itself is a wage issue for `ivory-coast-payroll`. Since 1 January 2023 the other-branch ceiling is 75,000, equal to the floor, so the 3 employer branches also run on 75,000. The last 2 steps show what the stale 70,000 on the CNPS Employeur page would understate.
 
 ```oa-check
 name: Pay 50,000 below the SMIG floor
 inputs:
   pay: 50000
   smig: 75000
-  other_ceiling: 70000
+  other_ceiling: 75000
+  stale_ceiling: 70000
   worker_rate: 0.063
   employer_rate: 0.077
   other_rate: 0.0875
@@ -430,18 +432,18 @@ steps:
   - worker_total: base * worker_rate + cmu_each
   - other_branches: min(base, other_ceiling) * other_rate
   - employer_subtotal: base * employer_rate + other_branches + cmu_each
-  - other_if_floor_beats_ceiling: base * other_rate
-  - held_gap: other_if_floor_beats_ceiling - other_branches
+  - other_on_stale_ceiling: min(base, stale_ceiling) * other_rate
+  - understated_by_stale: other_branches - other_on_stale_ceiling
 expected:
   base: 75000
   worker_total: 5225
-  other_branches: 6125
-  employer_subtotal: 12400
-  other_if_floor_beats_ceiling: 6562.5
-  held_gap: 437.5
+  other_branches: 6562.5
+  employer_subtotal: 12837.5
+  other_on_stale_ceiling: 6125
+  understated_by_stale: 437.5
 ```
 
-On the 70,000 ceiling that CNPS and CLEISS state, the contributions are XOF 5,225 on the worker's side and an employer subtotal of XOF 12,400. The XOF 437.50 is shown for a reviewer and is not added. Art 21 makes the worker's share a deduction from pay and Art 23 sets the base at the SMIG, so the block shows 6.3% of 75,000 as the worker's share. No text read deals with a floor above actual pay: flag it.
+On the 75,000 ceiling in the CNPS communiqué, the contributions are XOF 5,225 on the worker's side and an employer subtotal of XOF 12,837.50. The stale 70,000 still printed on the CNPS Employeur page would understate the employer by XOF 437.50 a month: do not use it for a period from 1 January 2023. Art 21 makes the worker's share a deduction from pay and Art 23 sets the base at the SMIG, so the block shows 6.3% of 75,000 as the worker's share. No text read deals with a floor above actual pay: flag it.
 
 ### Example 4: decision, self-employed consultant
 
@@ -483,7 +485,7 @@ The first consultant owes XOF 97,200 for the first quarter of 2026 by 15 April 2
 
 ### Example 5: decision, annual regularisation
 
-A worker earns XOF 3,000,000 a month throughout the year and a XOF 6,000,000 bonus in December. A month-by-month clamp at the unverified ceiling loses part of the base. CNPS requires the year to be tested against the annual ceiling through the DISA.
+A worker earns XOF 3,000,000 a month throughout the year and a XOF 6,000,000 bonus in December. A month-by-month clamp at the 3,375,000 ceiling loses part of the base. CNPS requires the year to be tested against the annual ceiling through the DISA.
 
 ```oa-check
 name: Annual retirement ceiling against a monthly clamp
@@ -576,27 +578,28 @@ The employer bears XOF 4,000 and the worker XOF 5,000, and the employer owes all
 
 ### Test cases
 
-Calculation table, full month, one CMU person, with the ceiling unverified on the last 2 rows.
+Calculation table, full month, one CMU person, on the ceilings from 1 January 2023.
 
-| Gross | Retirement base | Worker retirement | Employer retirement | Other branches on 70,000 | CMU each side |
+| Gross | Retirement base | Worker retirement | Employer retirement | Other branches on 75,000 | CMU each side |
 | --- | --- | --- | --- | --- | --- |
-| 75,000 | 75,000 | 4,725.00 | 5,775.00 | 6,125.00 at 3% | 500 |
-| 200,000 | 200,000 | 12,600.00 | 15,400.00 | 5,425.00 at 2% | 500 |
-| 500,000 | 500,000 | 31,500.00 | 38,500.00 | 6,125.00 at 3% | 500 |
-| 3,375,000 | 3,375,000 | 212,625.00 | 259,875.00 | 6,125.00 at 3% | 500 |
-| 5,000,000 | 3,375,000 | 212,625.00 | 259,875.00 | 6,125.00 at 3% | 500 |
+| 75,000 | 75,000 | 4,725.00 | 5,775.00 | 6,562.50 at 3% | 500 |
+| 200,000 | 200,000 | 12,600.00 | 15,400.00 | 5,812.50 at 2% | 500 |
+| 500,000 | 500,000 | 31,500.00 | 38,500.00 | 6,562.50 at 3% | 500 |
+| 3,375,000 | 3,375,000 | 212,625.00 | 259,875.00 | 6,562.50 at 3% | 500 |
+| 5,000,000 | 3,375,000 | 212,625.00 | 259,875.00 | 6,562.50 at 3% | 500 |
 
-Other branches: 70,000 times 8.75% is 6,125.00 at 3%, and 70,000 times 7.75% is 5,425.00 at 2%. At 200,000 and 2%, the worker bears 13,100.00 and the employer subtotal is 21,325.00.
+Other branches: 75,000 times 8.75% is 6,562.50 at 3%, and 75,000 times 7.75% is 5,812.50 at 2%. At 200,000 and 2%, the worker bears 13,100.00 and the employer subtotal is 21,712.50.
 
 | Input | Result |
 | --- | --- |
-| Source quotes a ceiling of 1,647,315 for a 2026 period | R-CI-CNPS-2: ask for the appel |
+| Source quotes a ceiling of 1,647,315 for a 2026 period | R-CI-CNPS-2: use 3,375,000 unless a CNPS document for the period says otherwise |
+| Source quotes an other-branch ceiling of 70,000 for a 2026 period | Use 75,000 (CNPS communiqué, from 1 January 2023) |
 | RSTI consultant with declared income, the period and a January 2026 first declaration, but no payslip | Not R-CI-CNPS-6. Compute from declared income, as in Example 4 |
 | The same consultant, first declaration in February 2026 | The second quarter is the first one due, by 15 July 2026 (Délibération 004 Art 3) |
 | Salaried worker with a disabled adult child | XOF 1,000 is owed for that person (Décret 2017-123 Arts 3, 4). Whether the employer bears 500 of it is Needs Input, and whether that person counts towards the 6 children is held |
 | Employer with 30 workers | Monthly, within 15 days of month end, subject to the headcount row |
 | Employer with 8 workers | Quarterly, within 15 days of quarter end; DISA and DASC by 31 March |
-| Gross pay exactly 3,375,000 | No excess; the same conditional result as the ceiling row |
+| Gross pay exactly 3,375,000 | No excess; the same result as the ceiling row |
 | `15.04.2025 ; DIRECTION GENERALE DES IMPOTS ; DEBIT ; ITS MARS 2025 ; -185,000 ; XOF` | Not CNPS: payroll tax to the DGI. Send to `ivory-coast-payroll` |
 | `20.07.2025 ; CNPS PREVOYANCE SOCIALE ; DEBIT ; REGULARISATION ; -1,450,000 ; XOF` | CNPS payee, amount unsplit. Credit nothing; ask for the CNPS breakdown of principal, penalty and majorations |
 | Incoming credit `PENSION CNPS` | Not CNPS: benefit received. The direction test comes first |
@@ -626,6 +629,7 @@ Also useful, not required: prior DISA and DASC, and the CNPS statement. Without 
 | Conseil des ministres, 21 December 2022. Read in part: the SMIG item | https://www.gouv.ci/uploads/publications/1671692497Communique-du-Conseil-des-Ministres-du-mercredi-21-decembre-2022.pdf | 2026-11-05 |
 | Conseil des ministres, 23 September 2026, Présidence. Read in part: the Code de Prévoyance Sociale item. Same text on gouv.ci | https://www.presidence.ci/communiques-ministres/communique-du-conseil-des-ministres-du-mercredi-23-septembre-2026/ | 2026-11-05 |
 | CNPS, Employeur page, read in full. Administrative, and partly stale on SMIG and ceiling figures | https://www.cnps.ci/employeur | 2026-11-05 |
+| CNPS Direction Générale, communiqué 'Nouveau plafond des cotisations sociales de la CNPS', January 2023, 1 page, read in full for the floor (75,000, all branches), the retirement ceiling (3,375,000) and the other-branch ceiling (75,000) from 1 January 2023 under Décret 2022-986. No later ceiling notice was found in the CNPS media library searched the same day | https://www.cnps.ci/wp-content/uploads/2023/01/NOUVEAU-PLAFOND-DES-COTISATIONS-SOCIALES-DE-LA-CNPS.pdf | 2026-11-14 |
 | CNPS leaflet Recouvrement, edition 2021, read in full. Administrative | https://www.cnps.ci/wp-content/uploads/2021/04/RECOUVREMENT-R.pdf | 2026-11-05 |
 | CNPS leaflet Recouvrement, edition 2018, read in full. Administrative. Layout read in columns | https://www.cnps.ci/wp-content/uploads/2020/08/Recouvrement.pdf | 2026-11-05 |
 | CNPS, Indépendant page. Read in part: rates and cover. Administrative | https://www.cnps.ci/independant/ | 2026-11-05 |
@@ -639,12 +643,13 @@ Also useful, not required: prior DISA and DASC, and the CNPS statement. Without 
 | CLEISS, French liaison body for social security conventions, table at 1 January 2025. Read in part: the contributions page. Secondary, not Ivorian | https://www.cleiss.fr/docs/cotisations/cotedivoire.html | 2026-11-05 |
 | Abidjan.net (CICG), 14 March 2025, report of a CMU decree on the taxe communale de l'entreprenant. Read in full. Press report, not the decree | https://sports.abidjan.net/actualites/740147/cmu-taxe-communale-de-l-entreprenant-le-gouvernement-fixe-les-modalites-de-recouvrement-des-cotisations-dues-au-titre-du-regime-general-de-base | 2026-11-05 |
 
-Not yet confirmed: the decree or decrees under Code Arts 21, 23 and 24 fixing the ceilings, split, assiette, due date, majorations and moratory interest, so 70,000, 45 times the SMIG, the 20-worker test, the 15-day date and 0.050% stay administrative; whether 3,375,000 is the current ceiling; the conflict between Art 23's floor and a ceiling below it; the Ordonnance of 23 September 2026 (number, text, gazette, ratification), whether it touches Arts 12 to 23, and what CNPS has applied since the decision of 1 October 2025; an official copy of Ordonnance 2012-03; the text and number of the SMIG decree, any SMIG decree after it, the hourly SMIG and the SMAG; the Art 95 annual minimum; the Art 17 risk arrêté, the 4 categories in legacy and the Art 15 tariff decree; the decree under Code Art 10 2° and whether its rate is separate from the 0.75%; the source of the 5% and 1% late rate that `ivory-coast-payroll` attributes to CLEISS; the Art 29 and Art 174 fines; the CNPS board decision under Art 26 on the 31 March date and the form; the RSTI penalty decree under Ordonnance 2019-636 Art 29; the fiscal transport exemption and housing scale; decrees under Code Arts 6 and 70 on voluntary cover; any amendment to Décret 2017-123, Décret 2020-308 or Arrêté 2020-065; a CMU spouse with income under Décret 2017-123 Art 9; the date a mid-year change of RSTI declared income takes effect; the reach of Code Art 33; the CMU decree on the taxe communale de l'entreprenant reported on 14 March 2025 and the joint arrêtés on CMU recovery; the CNPS and IPS-CNAM convention under Décret 2017-123 Art 13 and the CMU date for a quarterly payer; multiple-employer, part-month, part-time and part-year rules; any rounding rule; every social security convention; the income tax and TVA treatment, which the owning guides hold; and the date CMU collection began in practice, as Art 30 says 1 October 2017 whilst later sources give later dates; the retirement ceiling row (3,375,000 a month, 10,125,000 a quarter, 40,500,000 a year, derived as 45 times 75,000; CLEISS prints 3,375,000 at 1 January 2025) and the Art 16 base row (annual minimum salary under Code Art 95, amount not read) were moved out of the rates table on 2026-11-14.
+Not yet confirmed: the decree or decrees under Code Arts 21, 23 and 24 fixing the ceilings, split, assiette, due date, majorations and moratory interest, so the 75,000 and 3,375,000 ceilings of the CNPS communiqué, 45 times the SMIG, the 20-worker test, the 15-day date and 0.050% stay administrative; whether any CNPS notice after January 2023 changed the ceilings; the Ordonnance of 23 September 2026 (number, text, gazette, ratification), whether it touches Arts 12 to 23, and what CNPS has applied since the decision of 1 October 2025; an official copy of Ordonnance 2012-03; the text of the SMIG decree (Décret 2022-986, number from the CNPS communiqué), any SMIG decree after it, the hourly SMIG and the SMAG; the Art 95 annual minimum; the Art 17 risk arrêté, the 4 categories in legacy and the Art 15 tariff decree; the decree under Code Art 10 2° and whether its rate is separate from the 0.75%; the source of the 5% and 1% late rate that `ivory-coast-payroll` attributes to CLEISS; the Art 29 and Art 174 fines; the CNPS board decision under Art 26 on the 31 March date and the form; the RSTI penalty decree under Ordonnance 2019-636 Art 29; the fiscal transport exemption and housing scale; decrees under Code Arts 6 and 70 on voluntary cover; any amendment to Décret 2017-123, Décret 2020-308 or Arrêté 2020-065; a CMU spouse with income under Décret 2017-123 Art 9; the date a mid-year change of RSTI declared income takes effect; the reach of Code Art 33; the CMU decree on the taxe communale de l'entreprenant reported on 14 March 2025 and the joint arrêtés on CMU recovery; the CNPS and IPS-CNAM convention under Décret 2017-123 Art 13 and the CMU date for a quarterly payer; multiple-employer, part-month, part-time and part-year rules; any rounding rule; every social security convention; the income tax and TVA treatment, which the owning guides hold; and the date CMU collection began in practice, as Art 30 says 1 October 2017 whilst later sources give later dates; the Art 16 base row (annual minimum salary under Code Art 95, amount not read) was moved out of the rates table on 2026-11-14. The retirement ceiling row moved out the same day is back in the table, confirmed by the CNPS communiqué of January 2023.
 
 ## Changelog
 
 | Version | Date | Change |
 | --- | --- | --- |
+| 0.5 | 2026-11-14 | Confirmed the retirement ceiling of 3,375,000 and the floor of 75,000 from the CNPS communiqué of January 2023 and restored the ceiling row. Corrected the other-branch ceiling from 70,000 to 75,000 (same communiqué), which ends the floor-and-ceiling conflict; reworked Examples 1, 2, 3 and the test table on 75,000. |
 | 0.4 | 2026-11-14 | Declared type computation. Moved the two unverified rows (retirement ceiling 3,375,000; Art 16 base) out of the rates table to the Not yet confirmed line; worked examples still label 3,375,000 unverified. |
 | 0.3 | 2026-11-05 | Converted to the upstream template. Corrected the late-payment penalty, which had wrongly used 10% under Art 30; moved the 31 March date from Art 26 to CNPS leaflets; removed the claim that Décret 2022-986 sets the ceiling; marked 3,375,000 unverified; made ceilings annual with regularisation; corrected the CMU rule beyond 6 children; corrected the RSTI ceiling and added RSTI, apprentice, assimilated and pay-item rules; added CMU's own penalties; removed the 2%, quarterly and single-person defaults; replaced the bank fallback with intake only. |
 | 0.2 | 2026-11-01 | Legacy version. |

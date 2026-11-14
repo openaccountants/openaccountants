@@ -165,6 +165,13 @@ def collect_batches(repo: Path, since: str, head: str = "HEAD", batch_size: int 
         # A retry may predate the lookback. Recover today's last human writer
         # from full history; never replay the old body or guess its attribution.
         found = None
+        ever = git(repo, "log", "-1", "--format=%H", head_sha, "--", path).strip()
+        if not ever:
+            # The path never existed on this branch (added and removed inside one
+            # pull request before merge): nothing was ever delivered, so there is
+            # nothing to retry or withdraw. Skip it rather than block every delivery.
+            print(f"Skipping retry of a path that never existed on this branch: {path}")
+            continue
         for kind in ("--no-merges", "--merges"):
             records = git(repo, "log", "-z", "--format=%an%x00%ae%x00%ce", kind,
                           "--no-renames", "--diff-filter=ACDMRT", head_sha, "--", path).split("\0")

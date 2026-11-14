@@ -1,7 +1,7 @@
 ---
 name: ukraine-vat
 description: "Ukrainian value added tax (podatok na dodanu vartist, PDV) for tax year 2026 under section V of the Tax Code of Ukraine as amended to September 2026. Covers who must register (UAH 1,000,000 in 12 months; single-tax groups 1 to 3 excluded), the 20%, 14%, 7% and 0% rates and what sits at each, exempt and out-of-scope supplies, place of supply, the tax point, input VAT and the 365-day claim window, the pro-rata rule, the electronic administration system (SEA) registration limit, tax invoice registration deadlines and the martial-law penalty scale, invoice blocking, refunds, the reverse charge on services from non-residents, non-resident e-services, the monthly return by the 20th and payment 10 days later, and the martial-law rules. Trigger on: Ukraine VAT, PDV return, register for VAT in Ukraine, tax invoice registration, SEA VAT limit. Out of scope: invoice mechanics in detail (ua-einvoice), single tax (ua-single-tax), corporate income tax (ua-corporate-income-tax), country summary (ua-tax-overview)."
-version: 0.2
+version: 0.3
 type: situation-rules
 jurisdiction: UA
 category: international
@@ -302,4 +302,4 @@ expected:
 
 Not yet confirmed: the VAT return form, its line numbers and its annexes (the Ministry of Finance order was not read; the old skill's line numbers and annex names D1 to D7 are left out); the Cabinet of Ministers procedure for suspending invoice registration (Resolution No. 1165), including the risk criteria and the time the regional commission takes to decide; the content of the goods lists in Customs Code transitional points 9-24 and 9-36 (the old skill called them energy equipment and wind turbines); whether residential letting is exempt (the old skill cited art. 197.1.14, which covers sale of housing, not rent); whether a universal postal service exemption exists (not found in art. 197.1); whether input VAT on goods destroyed by hostilities can be refunded in cash or only offset (point 32-1 says nothing on this); the benefits that come with the high-compliance list in point 69.41; the current martial-law extension decree and its end date; a wartime simplified VAT registration (no provision found); the old automatic-refund criteria such as 24 months of registration (not in the current art. 200); the term for appealing a refused refund; DPS guidance on any of the above.
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.

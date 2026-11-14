@@ -1,7 +1,7 @@
 ---
 name: at-svs-contributions
 description: "Austrian social insurance for the self-employed, tax year 2026, collected by the SVS: pension (18.5% GSVG, 20% FSVG), health (6.8%), accident insurance (EUR 12.95 a month) and the Selbständigenvorsorge (1.53%), for trade licence holders (Gewerbetreibende), Neue Selbständige and FSVG freelancers. Covers the 2026 minimum base (EUR 551.10 a month) and maximum base (EUR 8,085 a month, EUR 97,020 a year), the provisional base for new businesses and from year four (factor 1.181), the Nachbemessung, quarterly due dates, the Versicherungsgrenze and the small business exemption (EUR 6,613.20 income, EUR 55,000 turnover), the health contribution credit, ASVG overlap and deductibility. Trigger on: SVS, GSVG, FSVG, Beitragsvorschreibung, Nachbemessung, Neue Selbständige, Kleinunternehmer SVS, Selbständigenvorsorge. Out of scope: employees and employers (at-payroll-and-social-insurance), income tax (at-income-tax), farmers under the BSVG, A1 cases (at-cross-border)."
-version: 2.3
+version: 2.4
 jurisdiction: AT
 tax_year: 2026
 last_updated: 2026-11-14
@@ -200,4 +200,4 @@ expected:
 
 Not yet confirmed: the Selbständigenvorsorge scope for opted-in and pension-only freelancers (BMSVG § 52a not read); the SVS worked example on contentid 10007.816634 prints 32,000 x 1.181 = 34,784, which is arithmetically wrong (it is 37,792), so this skill does not use it; whether the § 27f credit was booked in Q3 2026; the retirement rule (GSVG pension contributions continue alongside a pension); the registration deadline and the right to pay by monthly direct debit (in the old version, not re-read); with an ASVG job, that the GSVG base can fall below the GSVG minimum (so a client with a loss or no assessment pays no GSVG pension or health contributions when the ASVG base already reaches the minimum), that the client picks which insurer to claim health benefits from, and that the Selbständigenvorsorge is then computed on the reduced base (old version; GSVG §§ 35a and 35b read today set only the cap, not these points); disability pension alongside self-employment, which the old version referred to a specialist (no rule found to confirm the interaction).
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.

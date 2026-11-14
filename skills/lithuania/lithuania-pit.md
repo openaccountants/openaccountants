@@ -1,7 +1,7 @@
 ---
 name: lithuania-pit
 description: "Lithuanian personal income tax (gyventojų pajamų mokestis, GPM) for residents, tax year 2026. Covers the 2026 progressive bands of 20%, 25% and 32% at 36 and 60 average wages (EUR 83,237.40 and EUR 138,729); the 15% rate on non-employment income up to 12 average wages (EUR 27,745.80); 15% on dividends and on shares held over 5 years; the 2026 tax-exempt amount (NPD) formula built on the EUR 1,153 minimum wage; individual activity income at 20% with the sliding credit (5% effective up to EUR 20,000, 20% at EUR 42,500, ordinary bands above); the 30% flat cost option; exemptions for interest, gains, homes and gifts; deductible expenses; the annual return and payment by 1 May; fines and 0.027% a day late interest. Trigger phrases: GPM, pajamų mokestis, NPD, individuali veikla, metinė deklaracija, Lithuanian income tax, freelancer Lithuania. Out of scope: lt-cross-border (non-residents, residence, foreign tax credits), lt-payroll-social (Sodra and payroll), lt-corporate-income-tax, lithuania-vat-return."
-version: 1.2
+version: 1.3
 jurisdiction: LT
 tax_year: 2026
 last_updated: 2026-11-14
@@ -190,4 +190,4 @@ expected:
 
 Not yet confirmed: the fine for filing the annual return late (Code of Administrative Offences, not read); whether individual activity needs advance tax payments during the year; crypto-asset rules beyond the general gain rules above; Sodra figures for the self-employed (lt-payroll-social still carries 2025 figures).
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.

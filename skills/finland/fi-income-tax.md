@@ -12,7 +12,7 @@ description: >
   between final liability and withholding. Cross-border residence and relief use
   the linked individual cross-border skill; Åland municipal differences require
   the separate regional schedule.
-version: "1.10"
+version: "1.11"
 jurisdiction: FI
 tax_year: 2026
 last_updated: 2026-11-14
@@ -25,7 +25,7 @@ domain: income-tax
 type: computation
 ---
 
-# Finland individual income tax v1.10
+# Finland individual income tax v1.11
 **Tax year:** 2026. Source-cited ordinary individual computation; independent source-review evidence is in the [pack README](README.md). The October 2026 amendments below apply to the whole 2026 assessment, including eligible payments before commencement.
 
 ## Who this applies to
@@ -264,4 +264,4 @@ Not yet confirmed: separately scoped agriculture/forestry, seafarer, equity-remu
 [travel-2026]: https://www.vero.fi/syventavat-vero-ohjeet/paatokset/47405/verohallinnon-paatos-verovapaista-matkakustannusten-korvauksista-vuonna-2026/
 [travel-trader]: https://www.vero.fi/syventavat-vero-ohjeet/ohje-hakusivu/48192/liikkeen-ja-ammatinharjoittajien-seka-maataloudenharjoittajien-matkakustannusten-vahentaminen/
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.

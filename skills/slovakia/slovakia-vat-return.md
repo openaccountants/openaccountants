@@ -1,7 +1,7 @@
 ---
 name: slovakia-vat-return
 description: "Slovak VAT (DPH) for tax year 2026 under Act No. 222/2004 Coll. as in force from 1 January 2026: the 23% standard rate, the 19% rate (most food, electricity, non-alcoholic drinks served in restaurants), the 5% rate (basic food, medicines, books, restaurant meals, accommodation, sports and fitness entry), the foods moved from 19% to 23% in 2026, the monthly or quarterly return and control statement due 25 days after the period, refunds, domestic reverse charge, the 50% cap on passenger car input VAT, the EU SME scheme, fines and late-payment interest. Trigger on: Slovak VAT return, DPH priznanie, kontrolny vykaz, suhrnny vykaz, nadmerny odpocet, prenesenie danovej povinnosti, Slovakia 23% VAT. Out of scope: which registration a client needs (slovakia-vat-registration-4-7-7a), income tax (slovakia-pit, sk-corporate-income-tax), payroll (sk-payroll-social)."
-version: 2.7
+version: 2.8
 jurisdiction: SK
 tax_year: 2026
 last_updated: 2026-11-14
@@ -246,4 +246,4 @@ expected:
 
 Not yet confirmed: the ECB base rate on any given date, which sets the fine and interest percentages above the floors; whether the first-breach rule in Tax Procedure Code § 155(4) also covers the control statement fine in VAT Act § 78a(15); the annual § 50 method where the actual annual included-supplies denominator is zero.
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.

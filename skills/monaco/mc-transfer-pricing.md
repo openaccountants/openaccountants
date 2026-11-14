@@ -1,7 +1,7 @@
 ---
 name: mc-transfer-pricing
 description: "Monaco transfer pricing reference for 2026 based on the normal foreign commercial and financial conditions rule in Ordinance 3.152. Covers foreign counterparties, controlled and common control profit transfers, comparison evidence, related deduction restrictions and ordinary business profits tax adjustments. Use for Monaco related party pricing, foreign management fees, finance charges and arm length working papers. Includes two reproducible adjustment illustrations with explicit assumptions. Covers the country by country reporting population, annual notification, reporting deadline and distinct statutory sanctions. Separates source evidence from a benchmark or agreement. Source cited draft awaiting a named Monaco professional review."
-version: 1.4
+version: 1.5
 jurisdiction: MC
 tax_year: 2026
 last_updated: 2026-11-14
@@ -122,4 +122,4 @@ expected:
 
 **Not yet confirmed:** a separate prescribed master/local-file instrument, safe harbours and advance/corresponding-agreement procedures. No exemption from article 14 or ordinary books/evidence duties is inferred. These specialist instruments and multinational minimum-tax calculations require a separate determination; the ordinary pricing working paper and CbCR filing screen above still apply.
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.

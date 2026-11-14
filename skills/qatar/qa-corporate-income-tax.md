@@ -11,7 +11,7 @@ description: >
   regimes and Pillar Two. Includes filing and penalty rules, two independently
   checkable computation examples, and links to the individual, transfer-pricing
   and cross-border Guides for specialist computations.
-version: 0.2
+version: 0.3
 jurisdiction: QA
 tax_year: 2026
 last_updated: 2026-11-14
@@ -22,7 +22,7 @@ domain: corporate-tax
 type: computation
 ---
 
-# Qatar corporate income tax v0.2
+# Qatar corporate income tax v0.3
 
 ## Who this applies to
 
@@ -299,4 +299,4 @@ General reference only. A qualified Qatar tax professional must review the
 facts, records, elections and applicable law before filing or acting. This is a
 source-cited draft, not professional attestation.
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.

@@ -1,7 +1,7 @@
 ---
 name: latvia-payroll
 description: "Latvian payroll for tax year 2026: how an employer computes and withholds wage tax (algas nodoklis) and state social insurance contributions (VSAOI) each month. Covers the flat 25.5% monthly withholding, the EUR 550 monthly non-taxable minimum and EUR 250 dependant relief through the wage tax book, employee 10.5% and employer 23.59% contributions, the EUR 105,300 maximum base and solidarity tax, the EUR 780 minimum wage and the EUR 2,340 quarterly minimum contribution base, the employer's monthly report by the 17th and payment by the 23rd, the 33% band settled in the annual return, and late-payment interest of 0.05% a day. Trigger on: Latvia payroll, gross to net Latvia, darba devēja ziņojums, algas nodokļa grāmatiņa, Latvian wage tax. Out of scope: contribution rules in depth and self-employed contributions (latvia-social-contributions), the annual return (latvia-income-tax), non-residents (lv-cross-border)."
-version: 0.3
+version: 0.4
 jurisdiction: LV
 tax_year: 2026
 last_updated: 2026-11-14
@@ -14,7 +14,7 @@ domain: payroll
 type: computation
 ---
 
-# Latvia: payroll (2026) v0.3
+# Latvia: payroll (2026) v0.4
 
 > **Source-cited draft.** No accountant has reviewed this skill yet. Every figure comes from the consolidated Law On Personal Income Tax (PIT Law), the law On State Social Insurance (SI Law), the Solidarity Tax Law, the Law On Taxes and Fees (LTF) and the Administrative Liability Law, and from State Revenue Service (VID) pages. See Sources for how they were read.
 
@@ -183,4 +183,4 @@ likumi.lv and vid.gov.lv refused connections from our network on 23 and 24 Octob
 
 Not yet confirmed: the 2026 amount of the business risk state fee (the Cabinet regulation for 2026 was not read); Cabinet Regulation No. 656 on the minimum wage itself (EUR 780 is taken from VID pages); the Cabinet regulation that splits the reduced rates for pensioners and other groups between employer and employee (taken from the VID table, not the regulation); Cabinet Regulation No. 827 on the employer's report and the exact deadline for registering a new employee; whether the s. 17(5) wage tax deadline moves to the following month when pay is paid out after the 23rd; whether VID treats the employer's report as a tax return under LTF s. 141 or an informative declaration under s. 142; SI Law and PIT Law amendments adopted after the capture dates.
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.

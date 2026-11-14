@@ -11,7 +11,7 @@ description: >
   decision, building value, annual tax, municipal real-estate rate or property
   information corrections. Transfer tax on buying property and income tax on
   rent or gains are separate computations in the companion skills.
-version: 0.2
+version: 0.3
 jurisdiction: FI
 tax_year: 2026
 last_updated: 2026-11-14
@@ -22,7 +22,7 @@ domain: estate-wealth-tax
 type: computation
 ---
 
-# Finland annual real-estate tax v0.2
+# Finland annual real-estate tax v0.3
 
 ## Who this applies to
 
@@ -182,4 +182,4 @@ Not yet confirmed: case-specific municipal zone inputs and actual building featu
 [payment]: https://www.vero.fi/en/individuals/property/real-estate-tax/paying-real-estate-tax/
 [penalty]: https://www.vero.fi/en/individuals/property/real-estate-tax/real-estate-tax-decision/late-filing-penalty-fees-and-punitive-tax-increases-in-real-estate-taxation/
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.
