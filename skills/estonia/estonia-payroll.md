@@ -216,13 +216,13 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Income Tax Act (Tulumaksuseadus), consolidated text in force from 01.10.2026, §§ 4, 13, 23, 23⁵, 40, 41, 42, 43, 48, 54 | https://www.riigiteataja.ee/akt/109072026066 | 2026-10-24 |
-| Social Tax Act (Sotsiaalmaksuseadus), consolidated text in force 22.05.2026 to 24.10.2026, §§ 2, 2¹, 3, 4, 7, 9 | https://www.riigiteataja.ee/akt/121052026019 | 2026-10-24 |
-| Unemployment Insurance Act (Töötuskindlustuse seadus), consolidated text in force from 01.10.2026, §§ 3, 4, 40, 41, 42 | https://www.riigiteataja.ee/akt/130062026040 | 2026-10-24 |
-| Read for the unemployment insurance premium rates 2026 to 2029: Government Regulation No. 78 of 25.09.2025 | https://www.riigiteataja.ee/akt/130092025003 | 2026-10-24 |
-| Funded Pensions Act (Kogumispensionide seadus), consolidated, §§ 6, 7, 9, 11, 17² | https://www.riigiteataja.ee/akt/103122024016 | 2026-10-24 |
-| Taxation Act (Maksukorralduse seadus), consolidated text in force from 17.10.2026, §§ 25², 25⁸, 91, 115, 117, 153¹ | https://www.riigiteataja.ee/akt/116102026009 | 2026-10-24 |
-| Penal Code (Karistusseadustik), § 47 (fine unit EUR 8) | https://www.riigiteataja.ee/akt/109072026028 | 2026-10-24 |
+| Income Tax Act (Tulumaksuseadus), consolidated text in force from 01.10.2026, §§ 4, 13, 23, 23⁵, 40, 41, 42, 43, 48, 54; not reopened on 14 Nov (riigiteataja.ee refuses scripted reads), earlier read date kept | https://www.riigiteataja.ee/akt/109072026066 | 2026-10-24 |
+| Social Tax Act (Sotsiaalmaksuseadus), consolidated text in force 22.05.2026 to 24.10.2026, §§ 2, 2¹, 3, 4, 7, 9; not reopened on 14 Nov (riigiteataja.ee refuses scripted reads), earlier read date kept | https://www.riigiteataja.ee/akt/121052026019 | 2026-10-24 |
+| Unemployment Insurance Act (Töötuskindlustuse seadus), consolidated text in force from 01.10.2026, §§ 3, 4, 40, 41, 42; not reopened on 14 Nov (riigiteataja.ee refuses scripted reads), earlier read date kept | https://www.riigiteataja.ee/akt/130062026040 | 2026-10-24 |
+| Read for the unemployment insurance premium rates 2026 to 2029: Government Regulation No. 78 of 25.09.2025; not reopened on 14 Nov (riigiteataja.ee refuses scripted reads), earlier read date kept | https://www.riigiteataja.ee/akt/130092025003 | 2026-10-24 |
+| Funded Pensions Act (Kogumispensionide seadus), consolidated, §§ 6, 7, 9, 11, 17²; not reopened on 14 Nov (riigiteataja.ee refuses scripted reads), earlier read date kept | https://www.riigiteataja.ee/akt/103122024016 | 2026-10-24 |
+| Taxation Act (Maksukorralduse seadus), consolidated text in force from 17.10.2026, §§ 25², 25⁸, 91, 115, 117, 153¹; not reopened on 14 Nov (riigiteataja.ee refuses scripted reads), earlier read date kept | https://www.riigiteataja.ee/akt/116102026009 | 2026-10-24 |
+| Penal Code (Karistusseadustik), § 47 (fine unit EUR 8); not reopened on 14 Nov (riigiteataja.ee refuses scripted reads), earlier read date kept | https://www.riigiteataja.ee/akt/109072026028 | 2026-10-24 |
 | Read for 2024 to 2026, minimum wage table: EMTA, Tax rates | https://emta.ee/en/business-client/taxes-and-payment/income-and-social-taxes/tax-rates | 2026-10-24 |
 | Read for 2026 minimum base: EMTA, Social tax | https://www.emta.ee/en/business-client/taxes-and-payment/income-and-social-taxes/social-tax | 2026-10-24 |
 | Read for birth allowance 2026: EMTA, Income tax and basic exemption | https://www.emta.ee/en/business-client/taxes-and-payment/income-and-social-taxes/income-tax-and-basic-exemption | 2026-10-24 |
