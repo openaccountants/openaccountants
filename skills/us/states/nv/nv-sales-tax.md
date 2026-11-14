@@ -1,10 +1,10 @@
 ---
 name: nv-sales-tax
 description: Use this skill whenever asked about Nevada sales and use tax. Trigger on phrases like "Nevada sales tax", "NV sales tax", "NRS 372". ALWAYS load us-sales-tax first.
-version: "2.1"
+version: "2.2"
 jurisdiction: US-NV
 tax_year: 2026
-last_updated: 2026-11-13
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: tax
@@ -45,7 +45,7 @@ category: state-tax
 | Statewide minimum combined | 6.85%; not a further addition to the county combined rate | [Official source](https://tax.nv.gov/news-publications/sales-use-tax-publications/) |
 | Clark County | 8.375% combined | [Official source](https://tax.nv.gov/news-publications/sales-use-tax-publications/) |
 | Washoe County | 8.265% combined | [Official source](https://tax.nv.gov/news-publications/sales-use-tax-publications/) |
-| Posted minimum-to-maximum county range | 6.85%-8.375%; local additions 0%-1.525% | [Official source](https://tax.nv.gov/wp-content/uploads/2024/05/ADM-T047-State-Sales-Tax-Map.pdf) |
+| Posted minimum-to-maximum county range | 6.85%-8.375%; local additions 0%-1.525% (derived: 8.375% less the 6.85% state rate) | [Official source](https://tax.nv.gov/wp-content/uploads/2024/05/ADM-T047-State-Sales-Tax-Map.pdf) |
 | Remote economic threshold | >$100,000 retail sales OR>=200 retail transactions, current/prior calendar year | [Official source](https://tax.nv.gov/faqs/marketplace-facilitator-seller-faqs/remote-sellers-wayfair-decision/) |
 | Quarterly filing eligibility | Taxable sales not exceeding $10,000 monthly, subject to assigned frequency | [Official source](https://tax.nv.gov/faqs/marketplace-facilitator-seller-faqs/remote-sellers-wayfair-decision/) |
 | Sales/use due | 20th of month after assigned reporting period | [Official source](https://tax.nv.gov/wp-content/uploads/2024/05/Sales-and-Use-Tax-GeneraI-Info-1.pdf) |

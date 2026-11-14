@@ -1,6 +1,6 @@
 {
   "engine": "us_federal_income_tax_2026",
-  "source_commit": "9931ceb6",
+  "source_commit": "c2e3c2b9",
   "about": "Inputs from the platform's parity fixture (src/lib/engines/__tests__/fixtures/python-parity.json) plus one year-guard case; expected is the exact output of run(inputs). The platform's parity test checks these outputs against the Python reference engines of the 6 Nov 2026 A/B test (Malta: against an independent Python reference, mt-income-tax.test.ts).",
   "cases": [
     {
@@ -165,9 +165,9 @@
                 "head_of_household": 200000
               }
             },
-            "slug": "us-federal-return-assembly",
-            "section": "Additional taxes on higher income",
-            "quote": "Additional Medicare Tax (Form 8959) on wages plus SE income | 0.9% | $200,000 single, head of household or qualifying surviving spouse; $250,000 MFJ; $125,000 MFS"
+            "slug": "us-schedule-c-and-se-computation",
+            "section": "Rates, bands and thresholds; Form 8959: Additional Medicare Tax on self-employment income",
+            "quote": "Additional Medicare Tax on self-employment income | 0.9%\nAdditional Medicare Tax threshold, single, head of household, qualifying surviving spouse | USD 200,000\nAdditional Medicare Tax threshold, married filing jointly | USD 250,000\nAdditional Medicare Tax threshold, married filing separately | USD 125,000\nTake the threshold for the filing status (USD 200,000, 250,000 or 125,000). Reduce it, not below zero, by the person's Medicare wages. Self-employment income (Schedule SE line 6) above the reduced threshold is taxed at 0.9%."
           }
         ],
         "assumptions": [
@@ -207,7 +207,7 @@
         },
         "tax_year": "2026"
       },
-      "receipt_id": "5937bf611744e3087139e2eca43955e6ad21a8a880880aba2dabf0c5379c394f"
+      "receipt_id": "f97fa003aafb465c617f7c2388c4fcd7d47b79c51f638129d0941b89b642d534"
     },
     {
       "id": "USF-02",
@@ -341,23 +341,23 @@
           {
             "name": "NET_EARNINGS_FACTOR",
             "value": 0.9235,
-            "slug": "us-federal-return-assembly",
-            "section": "Self-employment tax",
-            "quote": "Net earnings | Schedule C net profit × 92.35%"
+            "slug": "us-schedule-c-and-se-computation",
+            "section": "Rates, bands and thresholds",
+            "quote": "Net earnings factor (Schedule SE line 4a) | 92.35%"
           },
           {
             "name": "MIN_NET_EARNINGS",
             "value": 400,
-            "slug": "us-federal-return-assembly",
-            "section": "Self-employment tax",
-            "quote": "No SE tax | If net earnings (Schedule SE line 4c) are less than $400"
+            "slug": "us-schedule-c-and-se-computation",
+            "section": "Rates, bands and thresholds",
+            "quote": "No self-employment tax below this net earnings amount | USD 400"
           },
           {
             "name": "SS_RATE",
             "value": 0.124,
-            "slug": "us-federal-return-assembly",
-            "section": "Self-employment tax",
-            "quote": "Social security part | 12.4% of net earnings, up to the wage base minus social security wages already taxed"
+            "slug": "us-schedule-c-and-se-computation",
+            "section": "Rates, bands and thresholds",
+            "quote": "Social Security part of self-employment tax | 12.4%"
           },
           {
             "name": "WAGE_BASE",
@@ -365,23 +365,23 @@
               "2025": 176100,
               "2026": 184500
             },
-            "slug": "us-federal-return-assembly",
-            "section": "Self-employment tax",
-            "quote": "Wage base | $176,100 for 2025; $184,500 for 2026"
+            "slug": "us-tax-workflow-base",
+            "section": "Figures for 2026, with years",
+            "quote": "Item | 2026 | 2025 | Condition that decides it\nSocial security wage base | $184,500 | $176,100 | Wages already taxed for social security use up part of the base"
           },
           {
             "name": "MEDICARE_RATE",
             "value": 0.029,
-            "slug": "us-federal-return-assembly",
-            "section": "Self-employment tax",
-            "quote": "Medicare part | 2.9% of all net earnings, with no cap"
+            "slug": "us-schedule-c-and-se-computation",
+            "section": "Rates, bands and thresholds",
+            "quote": "Medicare part of self-employment tax | 2.9%"
           },
           {
             "name": "DEDUCTIBLE_SHARE",
             "value": 0.5,
-            "slug": "us-federal-return-assembly",
-            "section": "Self-employment tax",
-            "quote": "Deduction | Half of SE tax (Schedule SE line 13) goes to Schedule 1 line 15"
+            "slug": "us-schedule-c-and-se-computation",
+            "section": "Rates, bands and thresholds",
+            "quote": "Deductible share of self-employment tax (Schedule SE line 13) | 50%"
           },
           {
             "name": "STANDARD_DEDUCTION_2026",
@@ -399,22 +399,22 @@
             "name": "QBI_RATE",
             "value": 0.2,
             "slug": "us-qbi-deduction",
-            "section": "Section 3 — Year-specific figures table for tax year 2025",
-            "quote": "§199A QBI deduction rate | 20%\n§199A QBI deduction rate (2026 onward) | 20% — unchanged"
+            "section": "Rates, bands and thresholds",
+            "quote": "The final One Big Beautiful Bill Act (Public Law 119-21, section 70105) kept the 20% rate, removed the end-2025 expiry\nDeduction rate on QBI | 20% (the 23% in the House-passed bill was not enacted)"
           },
           {
             "name": "QBI_DEFINITION",
             "value": true,
-            "slug": "us-federal-return-assembly",
-            "section": "The method, step by step",
-            "quote": "\"Taxable income before the QBI deduction\" = line 11a − line 12e − line 13b. ... QBI itself is net profit reduced by the deductible half of SE tax, the health insurance deduction and the retirement contribution attributable to the business."
+            "slug": "us-qbi-deduction",
+            "section": "Step 1: qualified business income for each business; Step 2: taxable income before the QBI deduction",
+            "quote": "QBI = Schedule C line 31 minus the deductible half of self-employment tax (Schedule 1) minus the self-employed health insurance deduction minus the deduction for contributions to SEP, SIMPLE or solo 401(k) plans for the owner.\nUse Form 1040 line 11a (adjusted gross income) minus the standard or itemized deduction and the other deductions the 2026 draft Form 8995 instructions list for line 11"
           },
           {
             "name": "QBI_SIMPLIFIED_METHOD",
             "value": true,
-            "slug": "us-federal-return-assembly",
-            "section": "QBI deduction: which form, and the thresholds for 2025",
-            "quote": "At or below the threshold, a specified service business (for example consulting) is treated as a qualified business, and there is no limit based on W-2 wages or property.\nForm 8995 computes 20% of QBI, then caps it at 20% of (taxable income before QBI − net capital gain, including qualified dividends)."
+            "slug": "us-qbi-deduction",
+            "section": "Rates, bands and thresholds; Step 3: where taxable income sits",
+            "quote": "Overall cap | 20% of (taxable income before the QBI deduction minus net capital gain, with qualified dividends added to net capital gain)\nAt or below the threshold ... | 20% of QBI for every business, SSTB or not; no wage or UBIA limit | Form 8995"
           },
           {
             "name": "QBI_THRESHOLD_2026",
@@ -424,9 +424,9 @@
               "married_filing_separately": 201775,
               "head_of_household": 201750
             },
-            "slug": "us-federal-return-assembly",
-            "section": "Figures for tax year 2026",
-            "quote": "QBI threshold (MFJ / MFS / all others) | $403,500 / $201,775 / $201,750"
+            "slug": "us-qbi-deduction",
+            "section": "Rates, bands and thresholds",
+            "quote": "Threshold amount, all other returns (single, head of household, qualifying surviving spouse) | USD 201,750\nThreshold amount, married filing separately | USD 201,775\nThreshold amount, married filing jointly | USD 403,500"
           },
           {
             "name": "AMT_EXEMPTION_2026",
@@ -486,8 +486,8 @@
             "name": "CHILD_TAX_CREDIT_PERMANENT",
             "value": true,
             "slug": "us-2026-federal-tax-changes",
-            "section": "Child tax credit (permanent from 2025)",
-            "quote": "The higher child tax credit no longer expires after 2025 (section 70104, taxable years beginning after 31 December 2024)."
+            "section": "Boundary and exception table / Families",
+            "quote": "Child tax credit (permanent). USD 2,200 per child, USD 1,700 refundable (section 70104, taxable years beginning after 31 December 2024)."
           },
           {
             "name": "ADDITIONAL_MEDICARE_2026",
@@ -500,9 +500,9 @@
                 "head_of_household": 200000
               }
             },
-            "slug": "us-federal-return-assembly",
-            "section": "Additional taxes on higher income",
-            "quote": "Additional Medicare Tax (Form 8959) on wages plus SE income | 0.9% | $200,000 single, head of household or qualifying surviving spouse; $250,000 MFJ; $125,000 MFS"
+            "slug": "us-schedule-c-and-se-computation",
+            "section": "Rates, bands and thresholds; Form 8959: Additional Medicare Tax on self-employment income",
+            "quote": "Additional Medicare Tax on self-employment income | 0.9%\nAdditional Medicare Tax threshold, single, head of household, qualifying surviving spouse | USD 200,000\nAdditional Medicare Tax threshold, married filing jointly | USD 250,000\nAdditional Medicare Tax threshold, married filing separately | USD 125,000\nTake the threshold for the filing status (USD 200,000, 250,000 or 125,000). Reduce it, not below zero, by the person's Medicare wages. Self-employment income (Schedule SE line 6) above the reduced threshold is taxed at 0.9%."
           },
           {
             "name": "SAFE_HARBOUR_2026",
@@ -513,9 +513,9 @@
               "agi_limit": 150000,
               "agi_limit_mfs": 75000
             },
-            "slug": "us-federal-return-assembly",
-            "section": "Estimated tax and the Form 2210 penalty",
-            "quote": "Estimated tax is required for 2026 when ... the smaller of 90% of the 2026 tax and 100% of the 2025 tax. The 2025 return must cover 12 months.\nUse 110% instead of 100% if 2025 AGI (line 11b) was more than $150,000 ($75,000 if filing separately for 2026)."
+            "slug": "us-quarterly-estimated-tax",
+            "section": "Rates, bands and thresholds; Boundary and exception table",
+            "quote": "Current-year safe harbour: share of the 2026 tax | 90%\nPrior-year safe harbour: share of the 2025 tax | 100%\nPrior-year safe harbour where 2025 AGI exceeds the limit below | 110%\n2025 AGI limit for 100% (110% above it) | USD 150,000\n2025 AGI limit, married filing separately for 2026 | USD 75,000\n2025 return not filed, or 2025 a short year | Prior-year safe harbour not available: only 90% of 2026 tax"
           },
           {
             "name": "ESTIMATED_TAX_DUE_DATES_2026",
@@ -525,16 +525,16 @@
               "2026-09-15",
               "2027-01-15"
             ],
-            "slug": "us-federal-return-assembly",
-            "section": "Estimated tax and the Form 2210 penalty",
-            "quote": "2026 due dates: April 15, 2026; June 15, 2026; September 15, 2026; January 15, 2027."
+            "slug": "us-quarterly-estimated-tax",
+            "section": "Rates, bands and thresholds",
+            "quote": "1st installment due | 15 April 2026\n2nd installment due | 15 June 2026\n3rd installment due | 15 September 2026\n4th installment due | 15 January 2027"
           },
           {
             "name": "QUARTERLY_INSTALMENT_SHARE",
             "value": 0.25,
             "slug": "us-quarterly-estimated-tax",
-            "section": "5.4 Quarterly instalments",
-            "quote": "Quarterly instalments — Each instalment = required annual payment / 4 (25% each)."
+            "section": "Rates, bands and thresholds",
+            "quote": "Each regular installment | 25% of the required annual payment"
           }
         ],
         "assumptions": [
@@ -577,7 +577,7 @@
         },
         "tax_year": "2026"
       },
-      "receipt_id": "b649ed70aa47f3899492553b5ef02b64ffddb2258082e3716894b92e081ff824"
+      "receipt_id": "499ea743dca750d36806e280bdec68416e25d3f97ecf21e7d38c94ee04bede55"
     },
     {
       "id": "USF-03",
@@ -727,7 +727,7 @@
         },
         "tax_year": "2026"
       },
-      "receipt_id": "3b09d562f4f47ae7e77df673ce0c5ed3035f5c0809573426c873bd26877c4813"
+      "receipt_id": "a12a0f07f6f6ff48c1c8a8ebc27dfc9efdb804023f044ff6134fdbe0526e6889"
     },
     {
       "id": "USF-04",
@@ -879,7 +879,7 @@
         "constants_used": [],
         "instruction": "No OpenAccountants skill serves this figure. Do not invent it: say it is missing, or cite an official source you fetched yourself and label it as not from OpenAccountants."
       },
-      "receipt_id": "ff669c326c1c2519a521eff66a3b50d5f895c4edb87dc68c007168f7ce990b6b"
+      "receipt_id": "c74cdf9ccb53a91cf12421f481a91c5c5512acece81b1ca10cbb0ad712ae9b63"
     }
   ]
 }
