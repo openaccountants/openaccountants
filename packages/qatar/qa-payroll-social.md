@@ -11,17 +11,18 @@ description: >
   Distinguishes GCC home-country insurance from the Qatari employee calculation
   and routes non-GCC workers and optional self-employed enrolment separately.
   Includes two checked computations and primary legislation for professional review.
-version: 0.1
+version: 0.2
+type: computation
 jurisdiction: QA
 tax_year: 2026
-last_updated: 2026-10-28
+last_updated: 2026-11-14
 category: payroll
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
 ---
 
-# Qatar payroll and social insurance v0.1
+# Qatar payroll and social insurance v0.2
 
 ## Who this applies to
 
@@ -241,8 +242,8 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Social Insurance Law 1/2022, cited articles | https://almeezan.qa/legislations/ff5e6696-5502-42af-b342-c2f9882cec6a | 2026-10-24 |
-| Cabinet Decision 3/2025, social insurance ER, cited articles | https://almeezan.qa/legislations/2248f9c5-1f1b-4183-af84-ab8fbaf71bae | 2026-10-24 |
+| Social Insurance Law 1/2022, arts. 1 to 13, 21, 22 and 74 to 81 (almeezan.qa runs only in a browser, so it was not reopened by script on 14 November 2026) | https://almeezan.qa/legislations/ff5e6696-5502-42af-b342-c2f9882cec6a | 2026-10-24 |
+| Cabinet Decision 3/2025, social insurance ER, arts. 2 to 8, 16, 17, 23, 25 and 28 (not reopened by script on 14 November 2026) | https://almeezan.qa/legislations/2248f9c5-1f1b-4183-af84-ab8fbaf71bae | 2026-10-24 |
 | GCC extension Law 4/2007, promulgation and attached system | https://almeezan.qa/legislations/3a0c705a-eb50-4db8-a7d1-0a1edd28743f | 2026-10-24 |
 | Law 5/2021, insertion of promulgation art. 2 Bis on end-of-service benefits | https://almeezan.qa/legislations/38bdc1f3-21db-4df2-8169-f657597d41b3 | 2026-10-24 |
 | Daman, current GCC extension guidance including wage/housing differences | https://www.daman.gov.qa/Arabic/Pensions/InsuranceProtection/Pages/default.aspx | 2026-10-24 |
@@ -255,4 +256,4 @@ require separate current authority decisions and are outside this Guide's scope.
 Source-cited draft. A qualified Qatar professional must review the employee
 coverage, records and applicable scheme before remittance or acting.
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.

@@ -7,12 +7,15 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/de-income-tax"
   jurisdiction: "US-DE"
   tax_year: "2026"
-  last_updated: "2026-10-16"
+  last_updated: "2026-11-14"
 ---
 
-# Delaware individual income tax (Form PIT-RES / PIT-NON), tax year 2026
+# Delaware individual income tax, 2026
 
-## Scope and who this is for
+## Scope
+
+**2026 law, with 2025-2026 filing cycle form mechanics:** Current Code and the published 2026 estimate instructions support the rates and estimates. Final 2026 PIT-RES/PIT-NON instructions and the pension-domicile implementation remain unconfirmed.
+
 
 This skill covers the Delaware personal income tax on individuals under Title 30, Chapter 11 of the Delaware Code:
 
@@ -20,7 +23,7 @@ This skill covers the Delaware personal income tax on individuals under Title 30
 - **Nonresidents** with Delaware-source income file Form PIT-NON.
 - **Part-year residents** choose either form (see the method, step 2).
 
-It is written for **tax year 2026** (returns due 30 April 2027). The section "Tax year 2025 returns" covers **2025 returns** that are still open on extension until 15 October 2026.
+It is written for **tax year 2026** (returns due 30 April 2027). The section "Tax year 2025 returns" covers **2025 returns**, whose ordinary extension ended on 15 October 2026.
 
 It does not cover:
 
@@ -41,49 +44,19 @@ Official sources used throughout:
 
 The Division of Revenue had not published 2026 return instructions when this skill was written (25 September 2026). Where a 2026 figure comes from the statute rather than a 2026 form, this skill says so.
 
+
+**Circular 230 §10.37 disclosure:** This skill supplies general state-tax working papers from the sources below. It is not a professional approval. A qualified tax professional must review the facts, assumptions and outputs before filing.
+
+Federal calculations and indexed amounts stay with `us-schedule-c-and-se-computation`, `us-form-1120-c-corp`, `us-self-employed-health-insurance` and `us-child-tax-credit-and-eitc`.
+
 ## Ask the client first
 
-1. **Residency.**
-   - Where was the client domiciled during 2026, and did that change during the year?
-   - Did they keep a place of abode in Delaware? How many days were they in Delaware?
-   - Were they abroad for a long period (the foreign-presence exception)?
-2. **Federal return.**
-   - What is federal adjusted gross income (AGI), and which items make it up?
-   - Did they itemize federally?
-   - Did they claim the federal earned income credit?
-   - Did they place business property in service in 2026 and take bonus depreciation?
-3. **Filing status.** For a married couple: joint, separate, or combined separate? Is either spouse a nonresident?
-4. **Age and status on 31 December 2026.**
-   - Is either spouse 60 or over (pension exclusion, extra credit)?
-   - Is either spouse 65 or over, or blind (extra standard deduction)?
-   - Is the client someone else's dependent?
-5. **Retirement income.**
-   - What pensions, IRA/401(k) distributions, US military pension or Social Security did they receive?
-   - How many years has each person aged 60 or over been domiciled in Delaware?
-6. **Other-state income.** Did a Delaware resident pay income tax to another state (or DC) on the same income?
-7. **Payments already made.** Delaware withholding (not city wage tax), 2026 estimated payments, and credit carried forward from 2025.
-8. **Nonresident source income.** Which wages, business or rental income came from Delaware?
-
-## Residency tests (30 Del. C. § 1103)
-
-A **resident** is an individual who either:
-
-- **(1)** is domiciled in Delaware, "to the extent of the period of such domicile"; or
-- **(2)** "maintains a place of abode in this State and spends in the aggregate **more than 183 days** of the taxable year in this State."
-
-On test (2):
-
-- Exactly 183 days is not enough.
-- The abode and the days must both be present.
-
-**Foreign-presence exception to test (1).** A domiciliary is not treated as a resident for the period if all of these hold:
-
-- they are present in a foreign country or countries for at least 495 full days in any consecutive 18-month period;
-- during those 18 months they are in Delaware for not more than 45 days;
-- they keep no permanent place of abode in Delaware where their spouse, children or parents are present for more than 45 days; and
-- they are not a US government employee (including the Armed Forces).
-
-Everyone who is not a resident is a **nonresident** (§ 1104).
+1. Domicile and move dates, Delaware abode/day count, foreign presence, military status and spouse residency?
+2. Federal filing status/AGI, each spouse's income, ages, blindness, dependants and standard/itemized election?
+3. Pensions and military pensions by person, years resident, Social Security, bonds, DE529/ABLE and other modifications?
+4. Business income, assets acquired/placed in service, depreciation history, losses and credits?
+5. For nonresidents, workdays by location, employer-required work away, Delaware property/business and other-state income/tax?
+6. Withholding excluding city tax, dated estimates, prior-year AGI/tax, extensions and federal adjustments?
 
 ## The method, step by step
 
@@ -91,12 +64,12 @@ Everyone who is not a resident is a **nonresident** (§ 1104).
 
 **A resident must file if** they are required to file a federal return, or their Delaware-modified AGI is above the thresholds in the table below. The Division prints the thresholds in each year's instructions. The 2026 table is not yet published; the 2025 table is:
 
-| 2025 threshold, by age/status (individual AGI) | Single / HoH / MFS | Joint | Claimed as a dependent |
-|---|---|---|---|
-| Under 60 | $9,400 | $15,450 | $5,250 |
-| 60 to 64 | $12,200 | $17,950 | $5,250 |
-| 65 and over, or blind | $14,700 | $20,450 | $7,750 |
-| 65 and over and blind | $17,200 | $22,950 | $10,250 |
+| 2025 threshold, by age/status (individual AGI) | Single / HoH / MFS | Joint | Claimed as a dependent | Official source |
+|---|---|---|--- | --- |
+| Under 60 | $9,400 | $15,450 | $5,250 | [State source](https://revenuefiles.delaware.gov/2025/PITForms_Instructions/Instructions/PIT-RES_Instructions_2025-01.pdf) |
+| 60 to 64 | $12,200 | $17,950 | $5,250 | [State source](https://revenuefiles.delaware.gov/2025/PITForms_Instructions/Instructions/PIT-RES_Instructions_2025-01.pdf) |
+| 65 and over, or blind | $14,700 | $20,450 | $7,750 | [State source](https://revenuefiles.delaware.gov/2025/PITForms_Instructions/Instructions/PIT-RES_Instructions_2025-01.pdf) |
+| 65 and over and blind | $17,200 | $22,950 | $10,250 | [State source](https://revenuefiles.delaware.gov/2025/PITForms_Instructions/Instructions/PIT-RES_Instructions_2025-01.pdf) |
 
 **A nonresident must file** if they had any gross income from Delaware sources.
 
@@ -195,11 +168,11 @@ The result is **Delaware AGI**.
 
 **Standard deduction.** It is fixed in the statute and not indexed, so the 2026 amounts are the § 1108 amounts:
 
-| Filing status | Standard deduction |
-|---|---|
-| Single, head of household | $3,250 |
-| Married filing jointly | $6,500 |
-| Married filing separately (each) | $3,250 |
+| Filing status | Standard deduction | Official source |
+|---|--- | --- |
+| Single, head of household | $3,250 | [State source](https://delcode.delaware.gov/title30/c011/sc02/index.html) |
+| Married filing jointly | $6,500 | [State source](https://delcode.delaware.gov/title30/c011/sc02/index.html) |
+| Married filing separately (each) | $3,250 | [State source](https://delcode.delaware.gov/title30/c011/sc02/index.html) |
 
 **Additional standard deduction.** Add $2,500 for each of:
 
@@ -222,15 +195,15 @@ Spouses who both must file may itemize only if both elect to.
 
 ### Step 7: Tax ([§ 1102(a)(14)](https://delcode.delaware.gov/title30/c011/sc01/index.html): rates for taxable years beginning after 31 December 2013)
 
-| Taxable income | Rate on the slice |
-|---|---|
-| $0 – $2,000 | 0% |
-| over $2,000 – $5,000 | 2.2% |
-| over $5,000 – $10,000 | 3.9% |
-| over $10,000 – $20,000 | 4.8% |
-| over $20,000 – $25,000 | 5.2% |
-| over $25,000 – $60,000 | 5.55% |
-| over $60,000 | 6.6% |
+| Taxable income | Rate on the slice | Official source |
+|---|--- | --- |
+| $0 – $2,000 | 0% | [State source](https://delcode.delaware.gov/title30/c011/sc01/index.html) |
+| over $2,000 – $5,000 | 2.2% | [State source](https://delcode.delaware.gov/title30/c011/sc01/index.html) |
+| over $5,000 – $10,000 | 3.9% | [State source](https://delcode.delaware.gov/title30/c011/sc01/index.html) |
+| over $10,000 – $20,000 | 4.8% | [State source](https://delcode.delaware.gov/title30/c011/sc01/index.html) |
+| over $20,000 – $25,000 | 5.2% | [State source](https://delcode.delaware.gov/title30/c011/sc01/index.html) |
+| over $25,000 – $60,000 | 5.55% | [State source](https://delcode.delaware.gov/title30/c011/sc01/index.html) |
+| over $60,000 | 6.6% | [State source](https://delcode.delaware.gov/title30/c011/sc01/index.html) |
 
 **Which method to use:**
 
@@ -239,13 +212,13 @@ Spouses who both must file may itemize only if both elect to.
 
 **Cumulative tax at each bracket top:**
 
-| At | Tax |
-|---|---|
-| $5,000 | $66 |
-| $10,000 | $261 |
-| $20,000 | $741 |
-| $25,000 | $1,001 |
-| $60,000 | $2,943.50 |
+| At | Tax | Official source |
+|---|--- | --- |
+| $5,000 | $66 (derived: sum of the § 1102(a)(14) slices) | [State source](https://delcode.delaware.gov/title30/c011/sc01/index.html) |
+| $10,000 | $261 (derived: sum of the § 1102(a)(14) slices) | [State source](https://delcode.delaware.gov/title30/c011/sc01/index.html) |
+| $20,000 | $741 (derived: sum of the § 1102(a)(14) slices) | [State source](https://delcode.delaware.gov/title30/c011/sc01/index.html) |
+| $25,000 | $1,001 (derived: sum of the § 1102(a)(14) slices) | [State source](https://delcode.delaware.gov/title30/c011/sc01/index.html) |
+| $60,000 | $2,943.50 (derived: sum of the § 1102(a)(14) slices) | [State source](https://delcode.delaware.gov/title30/c011/sc01/index.html) |
 
 **No 2026 rate change is in the Code.** Bills to add higher brackets were introduced in the 2025–2026 session, but § 1102 as published on delcode.delaware.gov still shows paragraph (a)(14) as the current schedule. Re-check § 1102 before filing if the client has income well above $60,000.
 
@@ -287,40 +260,78 @@ Spouses who both must file may itemize only if both elect to.
 3. Compute the tax on the full taxable income with the full rate schedule. Subtract the personal credits.
 4. Multiply by the **proration decimal**: Delaware-source income ÷ Delaware AGI. The instructions say to round it to four decimal places; it cannot exceed 1.0000 or be below zero.
 
-## Figures and years at a glance ([Title 30, Chapter 11](https://delcode.delaware.gov/title30/c011/sc02/index.html))
 
-| Item | 2026 | 2025 | Source |
-|---|---|---|---|
-| Top rate | 6.6% over $60,000 | same | § 1102(a)(14) |
-| Standard deduction (single / joint) | $3,250 / $6,500 | same | § 1108 |
-| Additional standard deduction (65+ or blind) | $2,500 each | same | § 1108(b) |
-| Personal credit | $110 per exemption, plus $110 for 60+ | same | § 1110 |
-| Pension exclusion, under 60 | $2,000 (US military pension: $12,500) | same | § 1106(b)(3)b |
-| Pension exclusion, 60+ | $12,500 (domicile condition, see step 5) | $12,500 | § 1106(b)(3)b, f.4 |
-| Bonus depreciation, individuals | 20% (TCJA schedule), not OBBBA 100% | follows federal | HB 255; Technical Information Memorandum 2025-2 |
-| Estimated tax required if tax less credits exceeds | $800 | same | § 1169 |
-| Interest on late payment | 0.5% per month | same | § 533 |
+### Residency tests (30 Del. C. § 1103)
 
-## Boundary and exception table ([§ 1103](https://delcode.delaware.gov/title30/c011/sc01/index.html))
 
-| Situation | Rule | Result |
-|---|---|---|
-| Abode in Delaware, domiciled elsewhere, exactly 183 days in Delaware | Statutory residency needs **more than 183 days** | Nonresident |
-| Same, 184 days | More than 183 days, with an abode | Resident for the whole year |
-| Domiciliary abroad 495+ days in 18 months, 45 or fewer days in Delaware, no family abode in use over 45 days, not a US employee | § 1103(1) exception | Not a resident for that period |
-| Taxable income exactly $60,000 | Instructions: "$60,000 or greater, use the tax schedule" | $2,943.50 |
-| Expected tax after withholding and credits exactly $800 | A declaration is required only if it "can reasonably be expected to exceed $800" | No estimated tax declaration required |
-| Turns 60 on 31 December 2026 | Age is tested at year end ("60 years of age or over on December 31") | 60+ exclusion and extra $110 credit apply, if the domicile condition is met |
-| Turns 65 on 31 December 2026 | § 1108(b): "attained the age of 65 before the close of the taxable year" | Extra $2,500, standard deduction only |
-| Under 60 with an early IRA distribution (1099-R code 1) | Not a qualifying pension | No exclusion for that distribution |
-| DE529 contribution, single filer with federal AGI just over $100,000 | Denied if AGI is "greater than $100,000" | No subtraction |
-| Nonresident spouse of a resident | § 1162(a)(4) | Separate returns unless both elect to file jointly as residents |
-| 2026 equipment, 100% bonus depreciation federally | HB 255, § 1106(d) | Delaware allows 20% bonus plus regular depreciation; add back the difference |
-| Nonresident with a Delaware job, working some days at home by choice | § 1124(b)(1)b; the PIT-NON instructions say "Working from home does not qualify for an exclusion on Form PIT-SCW" ([instructions](https://revenuefiles.delaware.gov/2025/PITForms_Instructions/Instructions/PIT-NON_Instructions_2025-01.pdf)) | Home days remain Delaware-source wages |
-| Same, but the employer requires out-of-state client work on some days | [Form PIT-SCW](https://revenuefiles.delaware.gov/2025/PITForms_Instructions/PIT-SCW_2025-01_PaperInteractiveIPM.pdf): allowance for days worked outside Delaware out of necessity | Exclude wages × (required days outside ÷ total days worked) |
-| City wage tax withheld | Not Delaware tax | Leave it out of Delaware tax withheld |
+A **resident** is an individual who either:
 
-## Worked cases (tax year 2026; rates from [§ 1102](https://delcode.delaware.gov/title30/c011/sc01/index.html))
+- **(1)** is domiciled in Delaware, "to the extent of the period of such domicile"; or
+- **(2)** "maintains a place of abode in this State and spends in the aggregate **more than 183 days** of the taxable year in this State."
+
+On test (2):
+
+- Exactly 183 days is not enough.
+- The abode and the days must both be present.
+
+**Foreign-presence exception to test (1).** A domiciliary is not treated as a resident for the period if all of these hold:
+
+- they are present in a foreign country or countries for at least 495 full days in any consecutive 18-month period;
+- during those 18 months they are in Delaware for not more than 45 days;
+- they keep no permanent place of abode in Delaware where their spouse, children or parents are present for more than 45 days; and
+- they are not a US government employee (including the Armed Forces).
+
+Everyone who is not a resident is a **nonresident** (§ 1104).
+
+
+### Figures and years at a glance ([Title 30, Chapter 11](https://delcode.delaware.gov/title30/c011/sc02/index.html))
+
+
+| Item | 2026 | 2025 | Source | Official source |
+|---|---|---|--- | --- |
+| Top rate | 6.6% over $60,000 | same | § 1102(a)(14) | [State source](https://delcode.delaware.gov/title30/c011/sc01/index.html) |
+| Standard deduction (single / joint) | $3,250 / $6,500 | same | § 1108 | [State source](https://delcode.delaware.gov/title30/c011/sc02/index.html) |
+| Additional standard deduction (65+ or blind) | $2,500 each | same | § 1108(b) | [State source](https://delcode.delaware.gov/title30/c011/sc02/index.html) |
+| Personal credit | $110 per exemption, plus $110 for 60+ | same | § 1110 | [State source](https://delcode.delaware.gov/title30/c011/sc02/index.html) |
+| Pension exclusion, under 60 | $2,000 (US military pension: $12,500) | same | § 1106(b)(3)b | [State source](https://delcode.delaware.gov/title30/c011/sc02/index.html) |
+| Pension exclusion, 60+ | $12,500 (domicile condition, see step 5) | $12,500 | § 1106(b)(3)b, f.4 | [State source](https://delcode.delaware.gov/title30/c011/sc02/index.html) |
+| Bonus depreciation, individuals | 20% (TCJA schedule), not OBBBA 100% | follows federal | HB 255; Technical Information Memorandum 2025-2 | [State source](https://revenuefiles.delaware.gov/2025/TIMs/HB_255_TIM.pdf) |
+| Estimated tax required if tax less credits exceeds | $800 | same | § 1169 | [State source](https://delcode.delaware.gov/title30/c011/sc08/index.html) |
+| Interest on late payment | 0.5% per month | same | § 533 | [State source](https://delcode.delaware.gov/title30/c005/sc03/index.html) |
+
+
+### Tax year 2025 returns (2025-2026 filing cycle, historical extension ended 15 October 2026; [2025 PIT-RES instructions](https://revenuefiles.delaware.gov/2025/PITForms_Instructions/Instructions/PIT-RES_Instructions_2025-01.pdf))
+
+
+- **Rates, standard deduction, credits and pension exclusion amounts are the same as 2026.**
+  - The 60-or-over domicile condition in step 5 was enacted after the 2025 instructions were issued.
+  - The Act does not say whether it reaches a 2025 return. For a recent arrival aged 60 or over, confirm with the Division before claiming the exclusion.
+- **Bonus depreciation.** For individuals, Delaware's decoupling applies only to property placed in service after 31 December 2025. So 2025 PIT-RES follows the federal depreciation taken.
+- **SALT cap.** Apply the federal itemized-deduction computation and limits in `us-schedule-a-itemized-deductions`, then remove Delaware income tax and other-state tax credited in Delaware. Federal indexed figures are not restated here.
+- **Tips, overtime and car loan interest** deductions do not reduce Delaware income.
+- **Extension.** It runs to 15 October 2026 only if Form PIT-EXT was filed by 30 April 2026. "THERE IS NO EXTENSION OF TIME FOR PAYMENT OF TAX." Interest has run at 0.5% per month from 30 April 2026 on any unpaid balance.
+- **Penalty exceptions for 2025 estimated tax.** The prior-year safe harbour uses the 2024 tax, at 110% if 2024 Delaware AGI was over $150,000 ($75,000 married filing separately).
+
+## Boundary and exception table
+
+| Situation | Rule | Result | Official source |
+|---|---|--- | --- |
+| Abode in Delaware, domiciled elsewhere, exactly 183 days in Delaware | Statutory residency needs **more than 183 days** | Nonresident | [State source](https://delcode.delaware.gov/title30/c011/sc01/index.html) |
+| Same, 184 days | More than 183 days, with an abode | Resident for the whole year | [State source](https://delcode.delaware.gov/title30/c011/sc01/index.html) |
+| Domiciliary abroad 495+ days in 18 months, 45 or fewer days in Delaware, no family abode in use over 45 days, not a US employee | § 1103(1) exception | Not a resident for that period | [State source](https://delcode.delaware.gov/title30/c011/sc01/index.html) |
+| Taxable income exactly $60,000 | Instructions: "$60,000 or greater, use the tax schedule" | $2,943.50 (derived: sum of the § 1102(a)(14) slices to $60,000) | [State source](https://delcode.delaware.gov/title30/c011/sc01/index.html); [2025 PIT-RES instructions](https://revenuefiles.delaware.gov/2025/PITForms_Instructions/Instructions/PIT-RES_Instructions_2025-01.pdf) |
+| Expected tax after withholding and credits exactly $800 | A declaration is required only if it "can reasonably be expected to exceed $800" | No estimated tax declaration required | [§ 1169(a)](https://delcode.delaware.gov/title30/c011/sc08/index.html) |
+| Turns 60 on 31 December 2026 | Age is tested at year end ("60 years of age or over on December 31") | 60+ exclusion and extra $110 credit apply, if the domicile condition is met | [2025 PIT-RES instructions](https://revenuefiles.delaware.gov/2025/PITForms_Instructions/Instructions/PIT-RES_Instructions_2025-01.pdf); [§ 1110(b)](https://delcode.delaware.gov/title30/c011/sc02/index.html) |
+| Turns 65 on 31 December 2026 | § 1108(b): "attained the age of 65 before the close of the taxable year" | Extra $2,500, standard deduction only | [§ 1108(b)](https://delcode.delaware.gov/title30/c011/sc02/index.html) |
+| Under 60 with an early IRA distribution (1099-R code 1) | Not a qualifying pension | No exclusion for that distribution | [State source](https://delcode.delaware.gov/title30/c011/sc01/index.html) |
+| DE529 contribution, single filer with federal AGI just over $100,000 | Denied if AGI is "greater than $100,000" | No subtraction | [§ 1106](https://delcode.delaware.gov/title30/c011/sc02/index.html) |
+| Nonresident spouse of a resident | § 1162(a)(4) | Separate returns unless both elect to file jointly as residents | [State source](https://delcode.delaware.gov/title30/c011/sc01/index.html) |
+| 2026 equipment, 100% bonus depreciation federally | HB 255, § 1106(d) | Delaware allows 20% bonus plus regular depreciation; add back the difference | [Technical Information Memorandum on HB 255](https://revenuefiles.delaware.gov/2025/TIMs/HB_255_TIM.pdf); [§ 1106](https://delcode.delaware.gov/title30/c011/sc02/index.html) |
+| Nonresident with a Delaware job, working some days at home by choice | § 1124(b)(1)b; the PIT-NON instructions say "Working from home does not qualify for an exclusion on Form PIT-SCW" ([instructions](https://revenuefiles.delaware.gov/2025/PITForms_Instructions/Instructions/PIT-NON_Instructions_2025-01.pdf)) | Home days remain Delaware-source wages | [State source](https://delcode.delaware.gov/title30/c011/sc01/index.html) |
+| Same, but the employer requires out-of-state client work on some days | [Form PIT-SCW](https://revenuefiles.delaware.gov/2025/PITForms_Instructions/PIT-SCW_2025-01_PaperInteractiveIPM.pdf): allowance for days worked outside Delaware out of necessity | Exclude wages × (required days outside ÷ total days worked) | [State source](https://delcode.delaware.gov/title30/c011/sc01/index.html) |
+| City wage tax withheld | Not Delaware tax | Leave it out of Delaware tax withheld | [State source](https://delcode.delaware.gov/title30/c011/sc01/index.html) |
+
+## Worked cases
 
 **Case A: single resident, wages only.**
 - Federal AGI = wages $85,000; no modifications. Delaware AGI = $85,000.
@@ -367,6 +378,97 @@ Spouses who both must file may itemize only if both elect to.
 - **Delaware-source wages** = $90,000 × 200 ÷ 240 = $75,000. Exclusion = $15,000.
 - If the home days were wrongly excluded too, Delaware wages would be understated by $7,500.
 
+
+**Machine recomputation of Case A.**
+
+```oa-check
+name: DE resident single
+inputs:
+  agi: 85000
+steps:
+- taxable: agi - 3250
+- tax: 2943.5 + (taxable - 60000) * 0.066 - 110
+expected:
+  taxable: 81750
+  tax: 4269
+```
+
+
+**Machine recomputation of Case B.**
+
+```oa-check
+name: DE retired spouses joint
+inputs:
+  agi: 130000
+  social_security: 20000
+  pension_exclusions: 25000
+steps:
+- de_agi: agi - social_security - pension_exclusions
+- taxable: de_agi - 6500 - 2 * 2500
+- tax: 2943.5 + (taxable - 60000) * 0.066 - 4 * 110
+expected:
+  de_agi: 85000
+  taxable: 73500
+  tax: 3394.5
+```
+
+
+**Machine recomputation of Case C.**
+
+```oa-check
+name: DE nonresident ratio
+inputs:
+  agi: 80000
+  de_source: 70000
+steps:
+- taxable: agi - 3250
+- full_tax: 2943.5 + (taxable - 60000) * 0.066 - 110
+- ratio: round(de_source / agi, 4)
+- tax: round(full_tax * ratio, 2)
+expected:
+  ratio: 0.875
+  tax: 3446.63
+```
+
+
+**Machine recomputation of Case E.**
+
+```oa-check
+name: DE necessary workdays
+inputs:
+  wages: 90000
+  total: 240
+  necessary_outside: 40
+  optional_home: 20
+steps:
+- de_days: total - necessary_outside
+- de_wages: wages * de_days / total
+- wrong_exclusion: wages * optional_home / total
+expected:
+  de_days: 200
+  de_wages: 75000
+  wrong_exclusion: 7500
+```
+
+
+**Decision both ways:** With a separately established $2,000 federal EITC, the 20% nonrefundable route gives $400 if $500 state tax remains; the 4.5% refundable route gives $90. With only $50 state tax, the nonrefundable benefit stops at $50, so the $90 refundable route is better. Choose after computing the tax available for this credit.
+
+```oa-check
+name: DE resident EITC choice
+inputs:
+  federal_credit: 2000
+  high_tax: 500
+  low_tax: 50
+steps:
+- nonrefund_high: min(high_tax, federal_credit * 0.2)
+- nonrefund_low: min(low_tax, federal_credit * 0.2)
+- refundable: federal_credit * 0.045
+expected:
+  nonrefund_high: 400
+  nonrefund_low: 50
+  refundable: 90
+```
+
 ## When to refuse or refer
 
 Refer to a Delaware-experienced professional, or the Division of Revenue (302-577-8200), for:
@@ -381,18 +483,7 @@ Refer to a Delaware-experienced professional, or the Division of Revenue (302-57
 - **City taxes**, including a city wage tax.
 - **Fiduciary returns, estates and trusts.**
 
-## Tax year 2025 returns (still open on extension to 15 October 2026; [2025 PIT-RES instructions](https://revenuefiles.delaware.gov/2025/PITForms_Instructions/Instructions/PIT-RES_Instructions_2025-01.pdf))
-
-- **Rates, standard deduction, credits and pension exclusion amounts are the same as 2026.**
-  - The 60-or-over domicile condition in step 5 was enacted after the 2025 instructions were issued.
-  - The Act does not say whether it reaches a 2025 return. For a recent arrival aged 60 or over, confirm with the Division before claiming the exclusion.
-- **Bonus depreciation.** For individuals, Delaware's decoupling applies only to property placed in service after 31 December 2025. So 2025 PIT-RES follows the federal depreciation taken.
-- **SALT cap.** The 2025 itemized deductions follow the federal cap of $40,000 ($20,000 married filing separately). It is reduced for federal modified AGI over $500,000 ($250,000 married filing separately). Delaware income tax must still be removed from itemized deductions.
-- **Tips, overtime and car loan interest** deductions do not reduce Delaware income.
-- **Extension.** It runs to 15 October 2026 only if Form PIT-EXT was filed by 30 April 2026. "THERE IS NO EXTENSION OF TIME FOR PAYMENT OF TAX." Interest has run at 0.5% per month from 30 April 2026 on any unpaid balance.
-- **Penalty exceptions for 2025 estimated tax.** The prior-year safe harbour uses the 2024 tax, at 110% if 2024 Delaware AGI was over $150,000 ($75,000 married filing separately).
-
-## Filing and payment steps with deadlines (2026 tax year; [PIT-EST instructions](https://revenuefiles.delaware.gov/2025/PITForms_Instructions/Instructions/PIT-EST_Instructions_2026-01.pdf))
+## Filing and payment
 
 1. **Estimated tax (§§ 1169–1170; PIT-EST).**
    - Required if 2026 tax, less withholding and credits, can reasonably be expected to exceed $800.
@@ -426,7 +517,7 @@ Refer to a Delaware-experienced professional, or the Division of Revenue (302-57
 - **Accuracy-related penalty** (§ 536): 20% of the underpayment for negligence or a substantial understatement, 40% for a gross valuation misstatement.
 - Fraud penalties are separate (§ 535).
 
-## Completion checklist ([2025 PIT-RES instructions](https://revenuefiles.delaware.gov/2025/PITForms_Instructions/Instructions/PIT-RES_Instructions_2025-01.pdf))
+## Completion checklist
 
 - [ ] Residency tested under both § 1103 tests, (1) and (2), with the day count recorded.
 - [ ] Correct form (PIT-RES / PIT-NON). For a part-year resident, both options compared.
@@ -441,6 +532,25 @@ Refer to a Delaware-experienced professional, or the Division of Revenue (302-57
 - [ ] PIT-UND checked if the balance due is more than 10% of the tax: the client "may owe" the penalty. Attach PIT-UND if the computed penalty is greater than zero, or if Part 3 (annualised method) is used.
 - [ ] Filed and paid by 30 April 2027, or PIT-EXT filed with payment.
 
+## Sources
+
+| Source and reading scope | URL | Read on |
+| --- | --- | | --- |
+| Code §1102-1104. Read for rates, residence and exclusions. | https://delcode.delaware.gov/title30/c011/sc01/index.html | 2026-11-13 |
+| Code §1105-1117. Read for base, deductions, pensions, domicile text and credits. | https://delcode.delaware.gov/title30/c011/sc02/index.html | 2026-11-13 |
+| Code §1121-1125. Read for source income, nonresident ratio and part-year options. | https://delcode.delaware.gov/title30/c011/sc03/index.html | 2026-11-13 |
+| Code §1161-1170. Read for filing, spouses, estimates and due dates. | https://delcode.delaware.gov/title30/c011/sc08/index.html | 2026-11-13 |
+| Code §533-536. Read for interest and additions. | https://delcode.delaware.gov/title30/c005/sc03/index.html | 2026-11-13 |
+| 2025 PIT-RES instructions. Read for 2025-2026 filing cycle thresholds, deductions, credits and attachments. | https://revenuefiles.delaware.gov/2025/PITForms_Instructions/Instructions/PIT-RES_Instructions_2025-01.pdf | 2026-11-13 |
+| 2025 PIT-NON instructions. Read for 2025-2026 filing cycle allocation and credit restrictions. | https://revenuefiles.delaware.gov/2025/PITForms_Instructions/Instructions/PIT-NON_Instructions_2025-01.pdf | 2026-11-13 |
+| 2026 PIT-EST instructions. Read for 2026 declaration, schedule, safe harbours and worksheet rounding conflict. | https://revenuefiles.delaware.gov/2025/PITForms_Instructions/Instructions/PIT-EST_Instructions_2026-01.pdf | 2026-11-13 |
+| 2025 PIT-SCW. Read for required work outside Delaware versus convenience. | https://revenuefiles.delaware.gov/2025/PITForms_Instructions/PIT-SCW_2025-01_PaperInteractiveIPM.pdf | 2026-11-13 |
+| HB255 enacted chapter231. Read for individual/corporate depreciation dates. | https://delcode.delaware.gov/sessionlaws/ga153/chp231.shtml | 2026-11-13 |
+| TIM2025-2. Read for state bonus depreciation and production-property adjustments. | https://revenuefiles.delaware.gov/2025/TIMs/HB_255_TIM.pdf | 2026-11-13 |
+| Tax season updates. Read for Schedule1-A deductions do not flow through federal AGI. | https://revenue.delaware.gov/tax-season-updates/ | 2026-11-13 |
+
+Not yet confirmed: final 2026 annual forms, filing thresholds and extension end date; implementation/start-year and measurement date for the amended pension domicile test; enhanced senior deduction treatment not expressly addressed in the read DOR update; specialist credits, lump-sum tax, composite returns, and full depreciation/MACRS computation. The session-law chapter426 URL redirected to a generic legislature page; the current Code pension text was read directly.
+
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-16. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `de-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/de-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `de-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/de-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

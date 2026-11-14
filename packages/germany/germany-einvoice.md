@@ -1,10 +1,10 @@
 ---
 name: germany-einvoice
 description: Use this skill whenever asked about German e-invoicing, XRechnung, ZUGFeRD, ERechV, E-Rechnungsverordnung, Peppol BIS Billing Germany, Leitweg-ID, OZG-RE invoice portal, B2B e-invoicing mandate Germany, Wachstumschancengesetz, EN 16931 Germany, GoBD e-invoice archiving, or any question about issuing, receiving, validating, or archiving electronic invoices in Germany. Also trigger when preparing XRechnung XML invoices, configuring Peppol endpoints for German public-sector invoicing, handling B2B e-invoice reception requirements, or advising on ZUGFeRD profile selection. This skill covers XRechnung CIUS, ZUGFeRD hybrid format, Peppol transmission, mandatory fields, validation rules, GoBD archiving, penalties, and interaction with German VAT returns. ALWAYS read this skill before touching any German e-invoicing work.
-version: 1.4
+version: 2.0
 jurisdiction: DE
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-14
 drafted_by: OpenAccountants
 approved_by: pending
 depends_on:
@@ -13,18 +13,43 @@ category: invoicing
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: e-invoicing
+type: filing-howto
 ---
 
 # E-invoicing in Germany (E-Rechnung, XRechnung and ZUGFeRD)
 
+## Scope
+
 When a German business must issue an e-invoice, when a paper or PDF invoice is still allowed, what every business must be able to receive, which formats count, how to correct, check and store e-invoices, and how invoicing federal authorities differs. It is for businesses, freelancers, landlords and associations in Germany, for foreign businesses that invoice German customers, and for the people who keep their books. Figures are for tax year 2026. The rules are read from the consolidated federal law pages (UStG, UStDV, AO, ERechV), from the finance ministry's letter of 15 October 2025, which writes the e-invoice rules into the VAT application decree (Umsatzsteuer-Anwendungserlass), from the ministry's questions and answers page (as of March 2026), and from the GoBD change letters of 11 March 2024 and 14 July 2025. The reduced VAT rate is printed as a digit only in the ministry's tax booklet, 2025 edition; the statute states it in words. The ministry's first e-invoice letter, of 15 October 2024, is no longer at its address on the ministry's site, so nothing in this Guide rests on it alone.
+
+## Ask the client first
+
+- Are you and your customer both established in Germany (seat, management, or a fixed establishment that takes part in the supply), and does the customer buy for its business?
+- When was the supply made, and when will the invoice be sent? The relief depends on both dates.
+- What was your total turnover (§ 19(2) UStG) in the previous calendar year, and are you a Kleinunternehmer?
+- What is the gross total of the invoice, and is any part of the supply exempt under § 4 nos. 8 to 29 UStG?
+- What does your software produce and read today: XRechnung, ZUGFeRD (which version and profile), EDI, or plain PDF? Can you receive, display and store an XML file?
+- Is the customer a public authority? If so, federal or state, and do you have its Leitweg-ID?
+
+## The method, step by step
+
+1. Check whether an invoice is due at all. § 14(2) sentence 2 UStG demands one, within six months, for supplies to another business for its business, to a legal person that is not a business, and for taxable property-related work for anyone else. No duty for supplies exempt under § 4 nos. 8 to 29 UStG. https://www.gesetze-im-internet.de/ustg_1980/__14.html
+2. Check whether it must be an e-invoice. Yes, if supplier and customer are both established in Germany and the customer buys for its business (§ 14(2) sentence 2 no. 1 UStG). No, if one of them is established abroad, or the customer is a consumer or a legal person that is not a business. Same page as step 1.
+3. Check the lasting exceptions: small invoices (§ 33 UStDV), passenger tickets (§ 34 UStDV), invoices of a Kleinunternehmer (§ 34a UStDV). These may always be other invoices. https://www.gesetze-im-internet.de/ustdv_1980/__33.html and https://www.gesetze-im-internet.de/ustdv_1980/__34.html and https://www.gesetze-im-internet.de/ustdv_1980/__34a.html
+4. Check the transition relief in § 27(38) UStG: the year of the supply, the day the invoice is sent and, for 2027 sales, the issuer's total turnover of the previous calendar year. If the relief applies and the issuer wants to use it: paper, or with the recipient's consent another electronic format. https://www.gesetze-im-internet.de/ustg_1980/__27.html
+5. If an e-invoice is due or wanted, pick an allowed format: XRechnung, ZUGFeRD from version 2.0.1 without MINIMUM and BASIC-WL, another format that meets the European standard, or an agreed format that allows full extraction. Put every detail of § 14(4) and § 14a UStG into the structured part. Ministry letter of 15 October 2025: https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/Umsatzsteuer-Anwendungserlass/2025-10-15-einfuehrung-obligatorische-e-rechnung.pdf?__blob=publicationFile&v=5
+6. Validate the file, keep the validation report, and send it by a channel agreed with the customer. Apply the consent table before transmission: no consent for the domestic duty or its stated domestic § 33/34/34a cases; obtain consent for the remaining voluntary cases. Keep proof of sending. Same letter as step 5.
+7. On the receiving side: make sure e-invoices can be received, display the XML with a viewer (the tax administration offers one at https://www.elster.de/eportal/e-rechnung ), and check the invoice details before deducting input tax under § 15 UStG. https://www.gesetze-im-internet.de/ustg_1980/__15.html
+8. Correct a faulty invoice under § 31(5) UStDV with a document that refers specifically and clearly to it. Where an e-invoice was due, the correction is an e-invoice too. https://www.gesetze-im-internet.de/ustdv_1980/__31.html
+9. Store the structured part unchanged, in the format received, for the period in § 14b(1) UStG, and keep it machine-readable for the tax office. https://www.gesetze-im-internet.de/ustg_1980/__14b.html
+10. For a federal authority, follow the ERechV as well: XRechnung or an equal standard, Leitweg-ID, sign-up at the federal portal. https://www.gesetze-im-internet.de/erechv/__4.html
 
 ## Section 1: Quick Reference
 
+Germany; currency EUR.
+
 | Field | Value | Source |
 | --- | --- | --- |
-| Country | Germany (Bundesrepublik Deutschland) | same |
-| Currency | EUR | same |
 | What an e-invoice is | An invoice that is issued, sent and received in a structured electronic format and that allows electronic processing (§ 14(1) UStG). Paper, a plain PDF, an image file or the text of an e-mail is an "other invoice" (sonstige Rechnung) | https://www.gesetze-im-internet.de/ustg_1980/__14.html |
 | National CIUS | XRechnung. The ministry says it meets the European standard EN 16931 and § 14(1) sentence 6 no. 1 UStG | https://www.bundesfinanzministerium.de/Content/DE/FAQ/e-rechnung.html |
 | Hybrid format | ZUGFeRD from version 2.0.1, without the profiles MINIMUM and BASIC-WL: a PDF that carries the structured XML data in the same file | same |
@@ -207,13 +232,12 @@ The identifiers below are checked against KoSIT’s XRechnung 3.0.2 specificatio
 | Parameter | Value | Source |
 | --- | --- | --- |
 | Version | The ELSTER viewer states: "Es wird die aktuell gültige XRechnung Version 3.0.1 verwendet." See https://www.elster.de/eportal/e-rechnung . KoSIT's own version page, read on 19 September 2026 but not linked, also lists a release 3.0.2 as in force and announces a version 4.0 for 2027. The ERechV asks for the standard "in der jeweils aktuellen Fassung" (§ 4(1)); changes are announced in the Bundesanzeiger (§ 4(2)). Confirm the version in your software |  |
-| UBL namespace | `urn:oasis:names:specification:ubl:schema:xsd:Invoice-2` |  |
-| CII namespace | `urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100` |  |
 | CustomizationID (UBL) | `urn:cen.eu:en16931:2017#compliant#urn:xeinkauf.de:kosit:xrechnung_3.0` | https://xeinkauf.de/app/uploads/2024/07/302-XRechnung-2024-06-20.pdf |
-| ProfileID (BT-23) | `urn:fdc:peppol.eu:2017:poacc:billing:01:1.0` |  |
+| ProfileID (BT-23) | `urn:fdc:peppol.eu:2017:poacc:billing:01:1.0` | https://xeinkauf.de/app/uploads/2024/07/302-XRechnung-2024-06-20.pdf |
 | Encoding | UTF-8 | https://xeinkauf.de/app/uploads/2024/07/302-XRechnung-2024-06-20.pdf |
-| Validation | KoSIT Validator (open source, Java based) |  |
 | Schema download | KoSIT's site xeinkauf.de (named in the ministry's questions and answers, no. 16; not linked here) | https://www.bundesfinanzministerium.de/Content/DE/FAQ/e-rechnung.html |
+
+Schema identifiers and the validator, from the schemas in the XRechnung bundle rather than the specification text (bundles listed at https://xeinkauf.de/xrechnung/versionen-und-bundles/): UBL namespace `urn:oasis:names:specification:ubl:schema:xsd:Invoice-2`; CII namespace `urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100`; validation with the KoSIT Validator (open source, Java based). These were not re-read in the schema files in this pass.
 
 - **Extension.** Besides the core data model, XRechnung offers an extension for sector needs. The ministry says the VAT details are all in the core model, so using an extension does not touch the VAT rules (decree sections 14.1(13) and 14.5(1)).
 
@@ -517,27 +541,29 @@ All from the letter of 15 October 2025 (decree sections in brackets) at https://
 - **Final invoices.** Part payments already received may be deducted in an unstructured attachment, if the structured part points to it expressly. The ministry says this can also be used after 31 December 2027 (questions and answers, no. 7b).
 - **Fee notices of public bodies** that count as invoices follow the general rules, e-invoice duty included; one issued as an other invoice can be corrected by an e-invoice later (14.1(1)).
 
-## The method, step by step
+## Worked cases
 
-1. Check whether an invoice is due at all. § 14(2) sentence 2 UStG demands one, within six months, for supplies to another business for its business, to a legal person that is not a business, and for taxable property-related work for anyone else. No duty for supplies exempt under § 4 nos. 8 to 29 UStG. https://www.gesetze-im-internet.de/ustg_1980/__14.html
-2. Check whether it must be an e-invoice. Yes, if supplier and customer are both established in Germany and the customer buys for its business (§ 14(2) sentence 2 no. 1 UStG). No, if one of them is established abroad, or the customer is a consumer or a legal person that is not a business. Same page as step 1.
-3. Check the lasting exceptions: small invoices (§ 33 UStDV), passenger tickets (§ 34 UStDV), invoices of a Kleinunternehmer (§ 34a UStDV). These may always be other invoices. https://www.gesetze-im-internet.de/ustdv_1980/__33.html and https://www.gesetze-im-internet.de/ustdv_1980/__34.html and https://www.gesetze-im-internet.de/ustdv_1980/__34a.html
-4. Check the transition relief in § 27(38) UStG: the year of the supply, the day the invoice is sent and, for 2027 sales, the issuer's total turnover of the previous calendar year. If the relief applies and the issuer wants to use it: paper, or with the recipient's consent another electronic format. https://www.gesetze-im-internet.de/ustg_1980/__27.html
-5. If an e-invoice is due or wanted, pick an allowed format: XRechnung, ZUGFeRD from version 2.0.1 without MINIMUM and BASIC-WL, another format that meets the European standard, or an agreed format that allows full extraction. Put every detail of § 14(4) and § 14a UStG into the structured part. Ministry letter of 15 October 2025: https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/Umsatzsteuer-Anwendungserlass/2025-10-15-einfuehrung-obligatorische-e-rechnung.pdf?__blob=publicationFile&v=5
-6. Validate the file, keep the validation report, and send it by a channel agreed with the customer. Apply the consent table before transmission: no consent for the domestic duty or its stated domestic § 33/34/34a cases; obtain consent for the remaining voluntary cases. Keep proof of sending. Same letter as step 5.
-7. On the receiving side: make sure e-invoices can be received, display the XML with a viewer (the tax administration offers one at https://www.elster.de/eportal/e-rechnung ), and check the invoice details before deducting input tax under § 15 UStG. https://www.gesetze-im-internet.de/ustg_1980/__15.html
-8. Correct a faulty invoice under § 31(5) UStDV with a document that refers specifically and clearly to it. Where an e-invoice was due, the correction is an e-invoice too. https://www.gesetze-im-internet.de/ustdv_1980/__31.html
-9. Store the structured part unchanged, in the format received, for the period in § 14b(1) UStG, and keep it machine-readable for the tax office. https://www.gesetze-im-internet.de/ustg_1980/__14b.html
-10. For a federal authority, follow the ERechV as well: XRechnung or an equal standard, Leitweg-ID, sign-up at the federal portal. https://www.gesetze-im-internet.de/erechv/__4.html
+Amounts are example inputs. Rules: [§ 27(38) UStG](https://www.gesetze-im-internet.de/ustg_1980/__27.html), [§ 33 UStDV](https://www.gesetze-im-internet.de/ustdv_1980/__33.html).
 
-## Ask the client first
+**Case 1: a supplier's 2027 sales to German businesses.** The supplier's total turnover (§ 19(2) UStG) in 2026 was EUR 640,000. That is not more than EUR 800,000, so for supplies made in 2027 it may still send paper invoices, or another electronic format with the customer's consent. A second supplier with 2026 turnover of EUR 950,000 must issue e-invoices for its 2027 domestic business sales (unless it uses EDI under the relief's own terms). Both must already be able to receive e-invoices.
 
-- Are you and your customer both established in Germany (seat, management, or a fixed establishment that takes part in the supply), and does the customer buy for its business?
-- When was the supply made, and when will the invoice be sent? The relief depends on both dates.
-- What was your total turnover (§ 19(2) UStG) in the previous calendar year, and are you a Kleinunternehmer?
-- What is the gross total of the invoice, and is any part of the supply exempt under § 4 nos. 8 to 29 UStG?
-- What does your software produce and read today: XRechnung, ZUGFeRD (which version and profile), EDI, or plain PDF? Can you receive, display and store an XML file?
-- Is the customer a public authority? If so, federal or state, and do you have its Leitweg-ID?
+**Case 2: a taxi receipt of EUR 38.50 gross.** At or below EUR 250 gross, a small invoice may always be an other invoice; no e-invoice is due.
+
+```oa-check
+name: DE e-invoice relief for 2027 supplies, previous-year turnover test
+inputs:
+  turnover_a: 640000
+  turnover_b: 950000
+  limit: 800000
+steps:
+  - a_over_limit: min(floor(turnover_a / (limit + 0.01)), 1)
+  - b_over_limit: min(floor(turnover_b / (limit + 0.01)), 1)
+expected:
+  a_over_limit: 0
+  b_over_limit: 1
+```
+
+Reading the check: 0 means the issuer is within the limit and may use the 2027 relief; 1 means it must issue e-invoices.
 
 ## When to refuse or refer
 
@@ -556,22 +582,61 @@ All from the letter of 15 October 2025 (decree sections in brackets) at https://
 
 ## Sources
 
-- UStG § 12, § 14, § 14a, § 14b, § 15, § 19, § 26a, § 27: https://www.gesetze-im-internet.de/ustg_1980/__12.html and https://www.gesetze-im-internet.de/ustg_1980/__14.html and https://www.gesetze-im-internet.de/ustg_1980/__14a.html and https://www.gesetze-im-internet.de/ustg_1980/__14b.html and https://www.gesetze-im-internet.de/ustg_1980/__15.html and https://www.gesetze-im-internet.de/ustg_1980/__19.html and https://www.gesetze-im-internet.de/ustg_1980/__26a.html and https://www.gesetze-im-internet.de/ustg_1980/__27.html (read 2026-10-31)
-- UStDV § 31, § 33, § 34, § 34a: https://www.gesetze-im-internet.de/ustdv_1980/__31.html and https://www.gesetze-im-internet.de/ustdv_1980/__33.html and https://www.gesetze-im-internet.de/ustdv_1980/__34.html and https://www.gesetze-im-internet.de/ustdv_1980/__34a.html (read 2026-10-31)
-- AO § 146, § 147, § 158, § 162, § 370: https://www.gesetze-im-internet.de/ao_1977/__146.html and https://www.gesetze-im-internet.de/ao_1977/__147.html and https://www.gesetze-im-internet.de/ao_1977/__158.html and https://www.gesetze-im-internet.de/ao_1977/__162.html and https://www.gesetze-im-internet.de/ao_1977/__370.html (read 2026-10-31)
-- HGB § 252, EStG § 4 and § 11: https://www.gesetze-im-internet.de/hgb/__252.html and https://www.gesetze-im-internet.de/estg/__4.html and https://www.gesetze-im-internet.de/estg/__11.html (read 2026-10-31)
-- ERechV § 3, § 4, § 5, § 11: https://www.gesetze-im-internet.de/erechv/__3.html and https://www.gesetze-im-internet.de/erechv/__4.html and https://www.gesetze-im-internet.de/erechv/__5.html and https://www.gesetze-im-internet.de/erechv/__11.html (read 2026-10-31)
-- Finance ministry, e-invoice letter of 15 October 2025 (changes the VAT application decree, sections 14.1 and following): https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/Umsatzsteuer-Anwendungserlass/2025-10-15-einfuehrung-obligatorische-e-rechnung.pdf?__blob=publicationFile&v=5
-- Finance ministry, questions and answers on the mandatory e-invoice, as of March 2026: https://www.bundesfinanzministerium.de/Content/DE/FAQ/e-rechnung.html (read 2026-10-31)
-- Finance ministry, GoBD change letters of 11 March 2024 and 14 July 2025: https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Weitere_Steuerthemen/Abgabenordnung/AO-Anwendungserlass/2024-03-11-aenderung-gobd.pdf?__blob=publicationFile&v=4 and https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Weitere_Steuerthemen/Abgabenordnung/2025-07-14-GoBD-2-aenderung.pdf?__blob=publicationFile&v=4
-- Finance ministry, tax booklet (Steuern von A-Z), 2025 edition: https://www.bundesfinanzministerium.de/Content/DE/Downloads/Broschueren_Bestellservice/steuern-von-a-z.pdf?__blob=publicationFile&v=9 (read 2026-10-31)
-- ELSTER, e-invoice viewer of the tax administration, and the document upload function: https://www.elster.de/eportal/e-rechnung and https://www.elster.de/eportal/formulare-leistungen/alleformulare/belegnachreichung (viewer page read 2026-10-31; upload page holds only a form shell when tried on 2026-10-31, not read)
+Every address below was opened again on the read date shown; the figures quoted in the body come from the page linked on their row or in their table.
+
+| Source | URL | Read on |
+| --- | --- | --- |
+| Read for § 14 UStG, Ausstellung von Rechnungen, and the figures quoted from it | https://www.gesetze-im-internet.de/ustg_1980/__14.html | 2026-11-14 |
+| Read for Bundesfinanzministerium - Fragen und Antworten zur Einführung der obligatorischen (verpflichtenden), the passages cited in this skill | https://www.bundesfinanzministerium.de/Content/DE/FAQ/e-rechnung.html | 2026-11-14 |
+| Read for Versionen und Bundles der XRechnung / XStandards Einkauf, the passages cited in this skill | https://xeinkauf.de/xrechnung/versionen-und-bundles/ | 2026-11-14 |
+| Read for § 11 ERECHV, Inkrafttreten, and the figures quoted from it | https://www.gesetze-im-internet.de/erechv/__11.html | 2026-11-14 |
+| Read for § 27 UStG, Allgemeine Übergangsvorschriften, and the figures quoted from it | https://www.gesetze-im-internet.de/ustg_1980/__27.html | 2026-11-14 |
+| Read for § 14a UStG, Zusätzliche Pflichten bei der Ausstellung von Rechnungen in besonderen Fällen, and the figures quoted from it | https://www.gesetze-im-internet.de/ustg_1980/__14a.html | 2026-11-14 |
+| Read for § 19 UStG, Besteuerung der Kleinunternehmer, and the figures quoted from it | https://www.gesetze-im-internet.de/ustg_1980/__19.html | 2026-11-14 |
+| Read for § 33 UStDV, Rechnungen über Kleinbeträge, and the figures quoted from it | https://www.gesetze-im-internet.de/ustdv_1980/__33.html | 2026-11-14 |
+| Read for § 3 ERECHV, Verbindlichkeit der elektronischen Form, and the figures quoted from it | https://www.gesetze-im-internet.de/erechv/__3.html | 2026-11-14 |
+| Read for Startseite / E-Rechnung in der Bundesverwaltung, the passages cited in this skill | https://www.e-rechnung-bund.de/ | 2026-11-14 |
+| Read for bundesfinanzministerium.de document 2025 10 15 einfuehrung obligatorische e rechnung, the passages cited in this skill | https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/Umsatzsteuer-Anwendungserlass/2025-10-15-einfuehrung-obligatorische-e-rechnung.pdf?__blob=publicationFile&v=5 | 2026-11-14 |
+| Read for ELSTER, the passages cited in this skill | https://www.elster.de/eportal/e-rechnung | 2026-11-14 |
+| Read for xeinkauf.de document 302 XRechnung 2024 06 20, the passages cited in this skill | https://xeinkauf.de/app/uploads/2024/07/302-XRechnung-2024-06-20.pdf | 2026-11-14 |
+| Read for § 5 ERECHV, Inhalt der elektronischen Rechnung, and the figures quoted from it | https://www.gesetze-im-internet.de/erechv/__5.html | 2026-11-14 |
+| Read for § 4 ERECHV, Anforderungen an das Rechnungsdatenmodell und an die Übermittlung, and the figures quoted from it | https://www.gesetze-im-internet.de/erechv/__4.html | 2026-11-14 |
+| Read for § 12 UStG, Steuersätze, and the figures quoted from it | https://www.gesetze-im-internet.de/ustg_1980/__12.html | 2026-11-14 |
+| Read for bundesfinanzministerium.de document steuern von a z, the passages cited in this skill | https://www.bundesfinanzministerium.de/Content/DE/Downloads/Broschueren_Bestellservice/steuern-von-a-z.pdf?__blob=publicationFile&v=9 | 2026-11-14 |
+| Read for § 14b UStG, Aufbewahrung von Rechnungen, and the figures quoted from it | https://www.gesetze-im-internet.de/ustg_1980/__14b.html | 2026-11-14 |
+| Read for § 147 AO, Ordnungsvorschriften für die Aufbewahrung von Unterlagen, and the figures quoted from it | https://www.gesetze-im-internet.de/ao_1977/__147.html | 2026-11-14 |
+| Read for bundesfinanzministerium.de document 2025 07 14 GoBD 2 aenderung, the passages cited in this skill | https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Weitere_Steuerthemen/Abgabenordnung/2025-07-14-GoBD-2-aenderung.pdf?__blob=publicationFile&v=4 | 2026-11-14 |
+| Read for § 26a UStG, Bußgeldvorschriften, and the figures quoted from it | https://www.gesetze-im-internet.de/ustg_1980/__26a.html | 2026-11-14 |
+| Read for § 146 AO, Ordnungsvorschriften für die Buchführung und für Aufzeichnungen, and the figures quoted from it | https://www.gesetze-im-internet.de/ao_1977/__146.html | 2026-11-14 |
+| Read for § 15 UStG, Vorsteuerabzug, and the figures quoted from it | https://www.gesetze-im-internet.de/ustg_1980/__15.html | 2026-11-14 |
+| Read for ELSTER - Belegnachreichung, the passages cited in this skill | https://www.elster.de/eportal/formulare-leistungen/alleformulare/belegnachreichung | 2026-11-14 |
+| Read for § 11 EStG, (1), and the figures quoted from it | https://www.gesetze-im-internet.de/estg/__11.html | 2026-11-14 |
+| Read for § 252 HGB, Allgemeine Bewertungsgrundsätze, and the figures quoted from it | https://www.gesetze-im-internet.de/hgb/__252.html | 2026-11-14 |
+| Read for § 162 AO, Schätzung von Besteuerungsgrundlagen, and the figures quoted from it | https://www.gesetze-im-internet.de/ao_1977/__162.html | 2026-11-14 |
+| Read for § 34 UStDV, Fahrausweise als Rechnungen, and the figures quoted from it | https://www.gesetze-im-internet.de/ustdv_1980/__34.html | 2026-11-14 |
+| Read for § 34a UStDV, Rechnungen von Kleinunternehmern, and the figures quoted from it | https://www.gesetze-im-internet.de/ustdv_1980/__34a.html | 2026-11-14 |
+| Read for § 31 UStDV, Angaben in der Rechnung, and the figures quoted from it | https://www.gesetze-im-internet.de/ustdv_1980/__31.html | 2026-11-14 |
+| Read for § 158 AO, Beweiskraft der Buchführung, and the figures quoted from it | https://www.gesetze-im-internet.de/ao_1977/__158.html | 2026-11-14 |
+| Read for § 370 AO, Steuerhinterziehung, and the figures quoted from it | https://www.gesetze-im-internet.de/ao_1977/__370.html | 2026-11-14 |
+| Read for § 4 EStG, Gewinnbegriff im Allgemeinen, and the figures quoted from it | https://www.gesetze-im-internet.de/estg/__4.html | 2026-11-14 |
+| Read for bundesfinanzministerium.de document 2024 03 11 aenderung gobd, the passages cited in this skill | https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Weitere_Steuerthemen/Abgabenordnung/AO-Anwendungserlass/2024-03-11-aenderung-gobd.pdf?__blob=publicationFile&v=4 | 2026-11-14 |
+| Read for xeinkauf.de document 2025 01 02 Germany Identifier v.1.1 eng, the passages cited in this skill | https://xeinkauf.de/app/uploads/2025/01/2025-01-02_Germany_Identifier_v.1.1_eng.pdf | 2026-11-14 |
+| Read for Zu ZUGFeRD, the passages cited in this skill | https://www.ferd-net.de/standards/zugferd-faq | 2026-11-14 |
+| Read for Startseite / E-Rechnung in der Bundesverwaltung, the passages cited in this skill | https://e-rechnung-bund.de/ | 2026-11-14 |
+| Read for Der Übertragungs­kanal: Upload / E-Rechnung in der Bundesverwaltung, the passages cited in this skill | https://e-rechnung-bund.de/ubertragungskanale/upload/ | 2026-11-14 |
+| Read for Der Über­tragungs­­kanal: E‑Mail / E-Rechnung in der Bundesverwaltung, the passages cited in this skill | https://e-rechnung-bund.de/ubertragungskanale/e-mail/ | 2026-11-14 |
+| Read for AO 2026 - Anhang 33 - Grundsätze zur ordnungsmäßigen…, the passages cited in this skill | https://usth.bundesfinanzministerium.de/ao/2026/Anhaenge/BMF-Schreiben-und-gleichlautende-Laendererlasse/Anhang-33/inhalt.html | 2026-11-14 |
+| Read for bundesfinanzministerium.de document Umsatzsteuer Anwendungserlass 31 12 2025, the passages cited in this skill | https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/Umsatzsteuer-Anwendungserlass/Umsatzsteuer-Anwendungserlass-31-12-2025.pdf?__blob=publicationFile&v=2 | 2026-11-14 |
+
+Earlier reading notes kept from the previous version:
+
 - Technical sources read on 29 October 2026: [KoSIT XRechnung 3.0.2 specification](https://xeinkauf.de/app/uploads/2024/07/302-XRechnung-2024-06-20.pdf), selected fields, amount datatype and PEPPOL-EN16931-R120; [current version list and bundle](https://xeinkauf.de/xrechnung/versionen-und-bundles/), whose selected schema and configuration members establish namespaces and validation layers. No full bundle execution is claimed.
 - [KoSIT identifier guidance, 2 January 2025](https://xeinkauf.de/app/uploads/2025/01/2025-01-02_Germany_Identifier_v.1.1_eng.pdf), selected 0204/9930 addressing clauses; [FeRD profile FAQ](https://www.ferd-net.de/standards/zugferd-faq), selected profile definitions. These are technical publisher statements, separate from the VAT law. (read 2026-10-31)
 - Federal procurement office: [current platform and consolidation explanation](https://e-rechnung-bund.de/), [upload instructions](https://e-rechnung-bund.de/ubertragungskanale/upload/) and [e-mail instructions](https://e-rechnung-bund.de/ubertragungskanale/e-mail/), selected operational clauses read on 29 October 2026. No registration, login or submission was used. (read 2026-10-31)
 - [Official BMF 2026 AO annex, GoBD 76/135/150–155/185](https://usth.bundesfinanzministerium.de/ao/2026/Anhaenge/BMF-Schreiben-und-gleichlautende-Laendererlasse/Anhang-33/inhalt.html): selected operative conditions/effect actually read on 29 October 2026. This completes the stated outgoing-copy, conversion and documentation scopes; no full archive-system audit is claimed. (read 2026-10-31)
 - Selected legal clauses actually read on 29 October 2026: UStG §§ 14(1)/(2),27(38),26a(2)/(3); ERechV 4(3); BMF 15 October 2025 consent/input/effect clauses. The complete strict input-evidence conditions were actually read in the [retained full UStAE, section 15.2a(1a)](https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/Umsatzsteuer-Anwendungserlass/Umsatzsteuer-Anwendungserlass-31-12-2025.pdf?__blob=publicationFile&v=2), not inferred from the amending letter alone. (read 2026-10-31)
-- Not yet confirmed: the exact Leitweg-ID validation pattern and the three additional portal checks identified in Section 6; and whether wrong-format invoicing attracts the non-issue fine. These limits are not resolved by technical schema conformity.
+
+Not yet confirmed: the exact Leitweg-ID validation pattern and the three additional portal checks in Section 6; whether wrong-format invoicing attracts the non-issue fine; the UBL and CII schema namespaces were not re-read in the bundle schema files in this pass.
 
 ## Disclaimer
 

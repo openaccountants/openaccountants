@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/uk-crypto-tax"
   jurisdiction: "GB"
   tax_year: "2026"
-  last_updated: "2026-10-31"
+  last_updated: "2026-11-14"
 ---
 
 # UK tax on cryptoassets for individuals
@@ -51,9 +51,9 @@ Out of scope, refer: companies and other businesses holding tokens (Corporation 
 
 | Disposal date | Individuals: within basic rate band / above | Trustees; personal representatives | Annual exempt amount: individuals / most trustees |
 | --- | --- | --- | --- |
-| 6 April 2026 to 5 April 2027 (2026/27) | 18% / 24% | 24% | £3,000 / £1,500 |
-| 6 April 2025 to 5 April 2026 (2025/26) | 18% / 24% | 24% | £3,000 / £1,500 |
-| 30 October 2024 to 5 April 2025 | 18% / 24% | 24% | £3,000 / £1,500 (one allowance for the whole of 2024/25) |
+| 6 April 2026 to 5 April 2027 (2026/27) | 18% / 24% | 24% | £3,000 / £1,500; https://www.gov.uk/guidance/capital-gains-tax-rates-and-allowances |
+| 6 April 2025 to 5 April 2026 (2025/26) | 18% / 24% | 24% | £3,000 / £1,500; https://www.gov.uk/guidance/capital-gains-tax-rates-and-allowances |
+| 30 October 2024 to 5 April 2025 | 18% / 24% | 24% | £3,000 / £1,500 (one allowance for the whole of 2024/25); https://www.gov.uk/guidance/capital-gains-tax-rates-and-allowances |
 | 6 April 2024 to 29 October 2024 | 10% / 20% | 20% | (as above) Source: https://www.gov.uk/guidance/capital-gains-tax-rates-and-allowances (tax year 2026) (read 2026-10-31) |
 
 - Crypto is taxed at the same main rates as other assets. The 2026/27 basic rate band is £37,700 of taxable income (income after the Personal Allowance).
@@ -349,4 +349,4 @@ Not yet confirmed: three capital gains rows, GBP 1,500 trustee allowance not on 
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-31. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `uk-crypto-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/uk-crypto-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `uk-crypto-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/uk-crypto-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

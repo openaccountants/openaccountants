@@ -1,10 +1,11 @@
 ---
 name: al-cross-border
 description: "Albanian cross-border tax for tax year 2026 under Law No. 29/2023 'Për tatimin mbi të ardhurat' (as amended to Law No. 81/2025) and Law No. 9920/2008 on tax procedures. Covers tax residence of individuals (home, 183 days, centre of vital interests, the 24-month rule for foreign artists) and of companies (incorporation or management and control); what Albania taxes non-residents on (Albanian-source income, art. 4); permanent establishment; final withholding at 8% on dividends and 15% on interest, royalties, services and other payments to non-residents; how treaty rates are applied and documented (45 treaties in force); the foreign tax credit for residents; the tax representative; and leaving Albania (part-year return, exit tax on business assets). Trigger phrases: non-resident Albania, Albanian withholding tax, treaty Albania, double tax Albania, PE Albania, moving to or leaving Albania, foreign tax credit Albania. Out of scope: income tax rates and returns (albania-income-tax), corporate tax computation (al-corporate-tax), payroll (albania-payroll), social contributions (albania-social-contributions), VAT (albania-vat)."
-version: 0.2
+version: 0.3
+type: situation-rules
 jurisdiction: AL
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
@@ -41,22 +42,22 @@ From Law 81/2025, art. 8(dh) adds an exception: artists who are not Albanian cit
 | Item | Rate or amount | Year | Source |
 |---|---|---|---|
 | Residence by presence (individuals) | 183 days or more in the tax year | 2026 | Law 29/2023 art. 8(b), [consolidated text](https://tatime.gov.al/wp-content/uploads/2026/09/Ligj-Nr.-29-2023-Per-Tatimin-mbi-te-Ardhurat-i-ndryshuar.pdf) |
-| Non-citizen artists | Not resident for 24 months from first entry | 2026 | Law 29/2023 art. 8(dh), added by Law 81/2025 |
-| Withholding on dividends paid to non-residents | 8%, final | 2026 | Law 29/2023 arts. 58(2)(a), 59 |
-| Withholding on interest and royalties paid to non-residents | 15%, final | 2026 | Law 29/2023 arts. 58(2)(a), 59 |
-| Withholding on services, insurance, directors' fees, construction and installation, performers and sportspeople, paid to non-residents without an Albanian PE | 15%, final; services received physically outside Albania are excluded | 2026 | Law 29/2023 arts. 58(2)(c) to (e), 59 |
-| Gambling winnings, inheritances and gifts of Albanian assets received by non-residents | 15%, no costs deducted | 2026 | Law 29/2023 art. 60(1)(b), (9) |
-| Non-resident individual, Albanian employment income | 13% to ALL 2,040,000 a year, 23% above | 2026 | Law 29/2023 art. 24(1) |
-| Non-resident individual, Albanian investment income not withheld | 8% dividends, 15% other | 2026 | Law 29/2023 art. 24(3) |
-| Non-resident entity with an Albanian PE | 15% corporate income tax on PE profit | 2026 | Law 29/2023 arts. 2(2)(a), 41 |
-| PE: building, construction or installation site; services through employees | More than 6 months in any 12-month period | 2026 | Law 29/2023 art. 5(2)(e), (f) |
-| PE: exploration or exploitation of natural resources | More than 3 months in any 12-month period | 2026 | Law 29/2023 art. 5(2)(ë) |
-| Real estate rich company: share disposal is Albanian-source | More than 50% of value from Albanian immovable property at any time in the 365 days before the disposal | 2026 | Law 29/2023 art. 4(e)(ii) |
+| Non-citizen artists | Not resident for 24 months from first entry | 2026 | [Law 29/2023 art. 8(dh), added by Law 81/2025](https://tatime.gov.al/wp-content/uploads/2026/09/Ligj-Nr.-29-2023-Per-Tatimin-mbi-te-Ardhurat-i-ndryshuar.pdf) |
+| Withholding on dividends paid to non-residents | 8%, final | 2026 | [Law 29/2023 arts. 58(2)(a), 59](https://tatime.gov.al/wp-content/uploads/2026/09/Ligj-Nr.-29-2023-Per-Tatimin-mbi-te-Ardhurat-i-ndryshuar.pdf) |
+| Withholding on interest and royalties paid to non-residents | 15%, final | 2026 | [Law 29/2023 arts. 58(2)(a), 59](https://tatime.gov.al/wp-content/uploads/2026/09/Ligj-Nr.-29-2023-Per-Tatimin-mbi-te-Ardhurat-i-ndryshuar.pdf) |
+| Withholding on services, insurance, directors' fees, construction and installation, performers and sportspeople, paid to non-residents without an Albanian PE | 15%, final; services received physically outside Albania are excluded | 2026 | [Law 29/2023 arts. 58(2)(c) to (e), 59](https://tatime.gov.al/wp-content/uploads/2026/09/Ligj-Nr.-29-2023-Per-Tatimin-mbi-te-Ardhurat-i-ndryshuar.pdf) |
+| Gambling winnings, inheritances and gifts of Albanian assets received by non-residents | 15%, no costs deducted | 2026 | [Law 29/2023 art. 60(1)(b), (9)](https://tatime.gov.al/wp-content/uploads/2026/09/Ligj-Nr.-29-2023-Per-Tatimin-mbi-te-Ardhurat-i-ndryshuar.pdf) |
+| Non-resident individual, Albanian employment income | 13% to ALL 2,040,000 a year, 23% above | 2026 | [Law 29/2023 art. 24(1)](https://tatime.gov.al/wp-content/uploads/2026/09/Ligj-Nr.-29-2023-Per-Tatimin-mbi-te-Ardhurat-i-ndryshuar.pdf) |
+| Non-resident individual, Albanian investment income not withheld | 8% dividends, 15% other | 2026 | [Law 29/2023 art. 24(3)](https://tatime.gov.al/wp-content/uploads/2026/09/Ligj-Nr.-29-2023-Per-Tatimin-mbi-te-Ardhurat-i-ndryshuar.pdf) |
+| Non-resident entity with an Albanian PE | 15% corporate income tax on PE profit | 2026 | [Law 29/2023 arts. 2(2)(a), 41](https://tatime.gov.al/wp-content/uploads/2026/09/Ligj-Nr.-29-2023-Per-Tatimin-mbi-te-Ardhurat-i-ndryshuar.pdf) |
+| PE: building, construction or installation site; services through employees | More than 6 months in any 12-month period | 2026 | [Law 29/2023 art. 5(2)(e), (f)](https://tatime.gov.al/wp-content/uploads/2026/09/Ligj-Nr.-29-2023-Per-Tatimin-mbi-te-Ardhurat-i-ndryshuar.pdf) |
+| PE: exploration or exploitation of natural resources | More than 3 months in any 12-month period | 2026 | [Law 29/2023 art. 5(2)(ë)](https://tatime.gov.al/wp-content/uploads/2026/09/Ligj-Nr.-29-2023-Per-Tatimin-mbi-te-Ardhurat-i-ndryshuar.pdf) |
+| Real estate rich company: share disposal is Albanian-source | More than 50% of value from Albanian immovable property at any time in the 365 days before the disposal | 2026 | [Law 29/2023 art. 4(e)(ii)](https://tatime.gov.al/wp-content/uploads/2026/09/Ligj-Nr.-29-2023-Per-Tatimin-mbi-te-Ardhurat-i-ndryshuar.pdf) |
 | Treaties in force | 45 bilateral treaties, plus the multilateral BEPS convention | 2026 | [tatime.gov.al treaty list](https://tatime.gov.al/legjislacioni/marreveshje-nderkombetare/) |
 | Example treaty caps: Italy | Dividends 10%, interest 5%, royalties 5% (in effect from 1 Jan 2000) | 2026 | [Albania-Italy convention](https://tatime.gov.al/wp-content/uploads/2026/01/Itali.pdf) arts. 10(2), 11(2), 12(2) |
 | Treaty documentation filing deadline | By the end of the calendar year after the year the treaty was applied | 2026 | Law 9920/2008 art. 115/3(1), [consolidated text](https://tatime.gov.al/wp-content/uploads/2026/10/Ligj-Nr-9920-Dt-2008.05.19-perditesuar-1.pdf) |
-| Foreign tax credit limit | Albanian tax on the same income, country by country; individuals also by category | 2026 | Law 29/2023 arts. 25, 42 |
-| Exit tax base (business assets) | Market value less tax value at exit, at the normal rate | 2026 | Law 29/2023 arts. 13(2), 47(2); Instruction 26/2023 para. 47.1 |
+| Foreign tax credit limit | Albanian tax on the same income, country by country; individuals also by category | 2026 | [Law 29/2023 arts. 25, 42](https://tatime.gov.al/wp-content/uploads/2026/09/Ligj-Nr.-29-2023-Per-Tatimin-mbi-te-Ardhurat-i-ndryshuar.pdf) |
+| Exit tax base (business assets) | Market value less tax value at exit, at the normal rate | 2026 | [Law 29/2023 arts. 13(2), 47(2)](https://tatime.gov.al/wp-content/uploads/2026/09/Ligj-Nr.-29-2023-Per-Tatimin-mbi-te-Ardhurat-i-ndryshuar.pdf); [Instruction 26/2023 para. 47.1](https://tatime.gov.al/wp-content/uploads/2026/09/Udhezimi-nr-26-date-8.9.2023-Per-tatimin-mbi-te-ardhuart.pdf) |
 
 **Treaties in force** (tatime.gov.al list, read 2026-10-23): Austria, Belgium, Bosnia and Herzegovina, Bulgaria, China, Croatia, Czech Republic, Egypt, Estonia, Finland, France, Germany, Greece, Hungary, Iceland, India, Ireland, Israel, Italy, Kosovo, Kuwait, Latvia, Luxembourg, Malaysia, Malta, Moldova, Netherlands, North Macedonia, Norway, Poland, Qatar, Romania, Russia, Saudi Arabia, Serbia and Montenegro, Singapore, Slovakia, Slovenia, South Korea, Spain, Sweden, Switzerland, Turkey, United Arab Emirates, United Kingdom. The list gives an effective date for each except India. Read the treaty text itself for the rate; this skill does not tabulate treaty rates beyond the Italy example.
 
@@ -202,13 +203,13 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Law No. 29/2023 "Për tatimin mbi të ardhurat", consolidated to Law No. 81/2025 (General Directorate of Taxes copy), arts. 2, 4, 5, 8, 12, 13, 15, 17, 19, 24, 25, 28, 29, 41, 42, 47, 55, 56, 58, 59, 60, 61, 67, 68 | https://tatime.gov.al/wp-content/uploads/2026/09/Ligj-Nr.-29-2023-Per-Tatimin-mbi-te-Ardhurat-i-ndryshuar.pdf | 2026-10-23 |
-| Law No. 9920/2008 "Për procedurat tatimore", consolidated to Law No. 79/2025, arts. 9, 76, 113, 114, 115/3, 117 | https://tatime.gov.al/wp-content/uploads/2026/10/Ligj-Nr-9920-Dt-2008.05.19-perditesuar-1.pdf | 2026-10-23 |
-| General Instruction No. 26 of 8.9.2023 on income tax, paras. 2.3, 3.5, 4.8, 4.9, 47.1, 56.1, 58.7, 61.5 | https://tatime.gov.al/wp-content/uploads/2026/09/Udhezimi-nr-26-date-8.9.2023-Per-tatimin-mbi-te-ardhuart.pdf | 2026-10-23 |
-| General Directorate of Taxes, double tax treaties in force | https://tatime.gov.al/legjislacioni/marreveshje-nderkombetare/ | 2026-10-23 |
-| Albania-Italy convention for the avoidance of double taxation, arts. 10, 11, 12, 29 | https://tatime.gov.al/wp-content/uploads/2026/01/Itali.pdf | 2026-10-23 |
-| General Directorate of Taxes, non-resident individual | https://tatime.gov.al/individ/?artikull=jo-rezident | 2026-10-23 |
-| General Directorate of Taxes, foreign tax credit | https://tatime.gov.al/individ/?artikull=kreditimi-i-tatimit | 2026-10-23 |
-| General Directorate of Taxes, tax representative | https://tatime.gov.al/entitete/?artikull=perfaqesuesi-tatimor | 2026-10-23 |
+| Law No. 29/2023 "Për tatimin mbi të ardhurat", consolidated to Law No. 81/2025 (General Directorate of Taxes copy), arts. 2, 4, 5, 8, 12, 13, 15, 17, 19, 24, 25, 28, 29, 41, 42, 47, 55, 56, 58, 59, 60, 61, 67, 68 | https://tatime.gov.al/wp-content/uploads/2026/09/Ligj-Nr.-29-2023-Per-Tatimin-mbi-te-Ardhurat-i-ndryshuar.pdf | 2026-11-14 |
+| Law No. 9920/2008 "Për procedurat tatimore", consolidated to Law No. 79/2025, arts. 9, 76, 113, 114, 115/3, 117 | https://tatime.gov.al/wp-content/uploads/2026/10/Ligj-Nr-9920-Dt-2008.05.19-perditesuar-1.pdf | 2026-11-14 |
+| General Instruction No. 26 of 8.9.2023 on income tax: read for paras. 2.3, 3.5, 4.8, 4.9, 47.1, 56.1, 58.7, 61.5 | https://tatime.gov.al/wp-content/uploads/2026/09/Udhezimi-nr-26-date-8.9.2023-Per-tatimin-mbi-te-ardhuart.pdf | 2026-11-14 |
+| General Directorate of Taxes: read for double tax treaties in force | https://tatime.gov.al/legjislacioni/marreveshje-nderkombetare/ | 2026-11-14 |
+| Albania-Italy convention for the avoidance of double taxation, arts. 10, 11, 12, 29 | https://tatime.gov.al/wp-content/uploads/2026/01/Itali.pdf | 2026-11-14 |
+| General Directorate of Taxes: read for non-resident individual | https://tatime.gov.al/individ/?artikull=jo-rezident | 2026-11-14 |
+| General Directorate of Taxes: read for foreign tax credit | https://tatime.gov.al/individ/?artikull=kreditimi-i-tatimit | 2026-11-14 |
+| General Directorate of Taxes: read for tax representative | https://tatime.gov.al/entitete/?artikull=perfaqesuesi-tatimor | 2026-11-14 |
 
 Not yet confirmed: the content and form of the treaty application documentation under the Minister's instruction (the "Annex 2" treaty form linked from tatime.gov.al returned an error page on 2026-10-23); whether a treaty rate may be applied at source without prior approval in every case, or only through the refund route for some treaties; whether art. 29(2) lets a non-resident parent receive dividends from an Albanian subsidiary free of withholding when it holds 10% for 24 months; how tax on a non-resident's gain from shares in an Albanian company, and on Albanian rent received by a non-resident individual, is collected (neither is in the art. 58(2) withholding list); the filing deadline for the part-year return on change of residence (art. 61(4) states no date); the rate on an individual trader's art. 47 gain (the Instruction's 15% example is a company); the treaty in force status and effective date for India (blank on the treaty list); the current quarter's late payment interest rate under Law 9920/2008 art. 76(3); treaty rates for treaties other than Italy.

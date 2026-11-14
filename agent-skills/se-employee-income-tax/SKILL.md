@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/se-employee-income-tax"
   jurisdiction: "SE"
   tax_year: "2026"
-  last_updated: "2026-11-01"
+  last_updated: "2026-11-14"
 ---
 
 # Sweden: income tax for employees and pensioners (income year 2026)
@@ -33,22 +33,22 @@ This skill computes the final tax of a person whose income is pay, pension and s
 | Basic deduction, under 66 | SEK 25,100 at low income, at most SEK 45,600, at least SEK 17,400 at high income | 2026 | same page; IL 63 kap. 3 § |
 | Basic deduction, 66 or over at 1 January 2026 | SEK 65,800 at low income, at most SEK 179,100, at least SEK 117,500 at high income | 2026 | same page; IL 63 kap. 3 a § |
 | General pension contribution (allmän pensionsavgift) | 7% of employment and business income, income capped at 8.07 income base amounts; at most SEK 47,100 | 2026 | same page; Lag (1994:1744) 2-3 §§ |
-| Credit for the pension contribution | 100% of the contribution | 2026 | IL 67 kap. 4 § |
-| Job tax credit (jobbskatteavdrag), under 66 | Formula in IL 67 kap. 7 §; flat above 8.08 price base amounts (SEK 478,336); no phase-out | 2026 | IL 67 kap. 7 § (Lag 2025:1376) |
-| Earned income credit (skattereduktion för förvärvsinkomst) | SEK 1,500 when taxable earned income is SEK 240,000 or more; 0.75% of the excess over SEK 40,000 between SEK 40,000 and 240,000 | 2026 | IL 67 kap. 46-47 §§ |
-| Commuting to work | SEK 25 per mil (SEK 2.50 per km) by own car; only the part of the year's costs above SEK 15,000 | 2026 | same page; IL 12 kap. 2 and 27 §§ |
-| Other work expenses | Only the part above SEK 5,000 | 2026 | IL 12 kap. 2 § |
-| Tax on capital income | 30% | 2026 | IL 65 kap. 7 § |
-| Capital deficit credit | 30% of a deficit up to SEK 100,000; 21% of the rest | 2026 | same page; IL 67 kap. 10 § |
-| ISK standard income | Government borrowing rate at 30 November 2025 (2.55%) plus 1 point = 3.55%, floor 1.25% | 2026 | same page; IL 42 kap. 36 § |
-| ISK, capital insurance and PEPP tax-free amount | First SEK 300,000 of the combined capital base | 2026 | same page; IL 42 kap. 48 § (Lag 2024:1132) |
-| RUT credit (household services) | 50% of the labour cost | 2026 | IL 67 kap. 19 § (Lag 2025:322) |
-| ROT credit (repair, maintenance, extension of own home) | 30% of the labour cost | 2026 | IL 67 kap. 19 § (Lag 2025:322) |
-| ROT and RUT cap | SEK 75,000 per person a year in total, of which ROT at most SEK 50,000 | 2026 | IL 67 kap. 19 § |
-| Unemployment fund fee credit | 25% of fees paid to an a-kassa | 2026 | IL 67 kap. 51 § |
-| Burial fee (begravningsavgift) | 0.292% of taxable earned income; Stockholm 0.07%, Tranås 0.285% | 2026 | same page |
-| Public service fee | At most SEK 1,184 per person a year | 2026 | same page |
-| Late filing fee (individual) | SEK 1,250 at the deadline, a second SEK 1,250 after three months, a third after two more months | 2026 | SFL 48 kap. 6-7 §§ |
+| Credit for the pension contribution | 100% of the contribution | 2026 | IL 67 kap. 4 §; https://www.skatteverket.se/privat/skatter/beloppochprocent/2026.4.1522bf3f19aea8075ba21.html |
+| Job tax credit (jobbskatteavdrag), under 66 | Formula in IL 67 kap. 7 §; flat above 8.08 price base amounts (SEK 478,336); no phase-out | 2026 | IL 67 kap. 7 § (Lag 2025:1376); https://data.riksdagen.se/dokument/sfs-1999-1229.text |
+| Earned income credit (skattereduktion för förvärvsinkomst) | SEK 1,500 when taxable earned income is SEK 240,000 or more; 0.75% of the excess over SEK 40,000 between SEK 40,000 and 240,000 | 2026 | IL 67 kap. 46-47 §§; https://data.riksdagen.se/dokument/sfs-1999-1229.text |
+| Commuting to work | SEK 25 per mil (SEK 2.50 per km) by own car; only the part of the year's costs above SEK 15,000 | 2026 | same page; IL 12 kap. 2 and 27 §§; https://data.riksdagen.se/dokument/sfs-1999-1229.text |
+| Other work expenses | Only the part above SEK 5,000 | 2026 | IL 12 kap. 2 §; https://data.riksdagen.se/dokument/sfs-1999-1229.text |
+| Tax on capital income | 30% | 2026 | IL 65 kap. 7 §; https://www.skatteverket.se/privat/skatter/beloppochprocent/2026.4.1522bf3f19aea8075ba21.html |
+| Capital deficit credit | 30% of a deficit up to SEK 100,000; 21% of the rest | 2026 | same page; IL 67 kap. 10 §; https://www.skatteverket.se/privat/skatter/beloppochprocent/2026.4.1522bf3f19aea8075ba21.html |
+| ISK standard income | Government borrowing rate at 30 November 2025 (2.55%) plus 1 point = 3.55%, floor 1.25% | 2026 | same page; IL 42 kap. 36 §; https://www.skatteverket.se/privat/skatter/beloppochprocent/2026.4.1522bf3f19aea8075ba21.html |
+| ISK, capital insurance and PEPP tax-free amount | First SEK 300,000 of the combined capital base | 2026 | same page; IL 42 kap. 48 § (Lag 2024:1132); https://www.skatteverket.se/privat/skatter/beloppochprocent/2026.4.1522bf3f19aea8075ba21.html |
+| RUT credit (household services) | 50% of the labour cost | 2026 | IL 67 kap. 19 § (Lag 2025:322); https://www.skatteverket.se/privat/skatter/beloppochprocent/2026.4.1522bf3f19aea8075ba21.html |
+| ROT credit (repair, maintenance, extension of own home) | 30% of the labour cost | 2026 | IL 67 kap. 19 § (Lag 2025:322); https://www.skatteverket.se/privat/skatter/beloppochprocent/2026.4.1522bf3f19aea8075ba21.html |
+| ROT and RUT cap | SEK 75,000 per person a year in total, of which ROT at most SEK 50,000 | 2026 | IL 67 kap. 19 §; https://data.riksdagen.se/dokument/sfs-1999-1229.text |
+| Unemployment fund fee credit | 25% of fees paid to an a-kassa | 2026 | IL 67 kap. 51 §; https://www.skatteverket.se/privat/skatter/beloppochprocent/2026.4.1522bf3f19aea8075ba21.html |
+| Burial fee (begravningsavgift) | 0.292% of taxable earned income; Stockholm 0.07%, Tranås 0.285% | 2026 | same page; https://www.skatteverket.se/privat/skatter/beloppochprocent/2026.4.1522bf3f19aea8075ba21.html |
+| Public service fee | At most SEK 1,184 per person a year | 2026 | same page; https://www.skatteverket.se/privat/skatter/beloppochprocent/2026.4.1522bf3f19aea8075ba21.html |
+| Late filing fee (individual) | SEK 1,250 at the deadline, a second SEK 1,250 after three months, a third after two more months | 2026 | SFL 48 kap. 6-7 §§; https://www.skatteverket.se/privat/skatter/beloppochprocent/2026.4.1522bf3f19aea8075ba21.html |
 | Base interest rate on the tax account | 2.5% since 1 December 2024 (cost interest); 17.5% high rate | 2026 | https://www.skatteverket.se/rantapaskattekontot |
 
 ## The taxable base
@@ -206,4 +206,4 @@ Not yet confirmed: the average church fee rate (not on the page read); the base 
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-01. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `se-employee-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/se-employee-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `se-employee-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/se-employee-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

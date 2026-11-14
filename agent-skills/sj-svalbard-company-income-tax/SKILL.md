@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/sj-svalbard-company-income-tax"
   jurisdiction: "SJ"
   tax_year: "2026"
-  last_updated: "2026-11-01"
+  last_updated: "2026-11-14"
 ---
 
-# Svalbard: company income tax in 2026 v0.3
+# Svalbard: company income tax in 2026 v0.4
 
 > **Source-cited draft.** Tax year 2026, checked 24 October 2026. General reference for working papers; a qualified professional must review the facts and filing position. Independent AI review does not confer accountant review.
 
@@ -26,7 +26,7 @@ A nonresident company is liable on Svalbard business income if its activity last
 |---|---:|---|
 | Ordinary company profit | 16% | [2026 Svalbard decision §3(c)](https://lovdata.no/dokument/STV/forskrift/2025-12-19-2780) |
 | Higher profit slice | 22% | [Decision §3(b)](https://lovdata.no/dokument/STV/forskrift/2025-12-19-2780) |
-| Higher slice floor | NOK 15,000,000 | [Decision §3(b)](https://lovdata.no/dokument/STV/forskrift/2025-12-19-2780) |
+| Higher slice floor | NOK 15,000,000 ("15 mill. kroner", in words on the page) | [Decision §3(b)](https://lovdata.no/dokument/STV/forskrift/2025-12-19-2780) |
 | Substance threshold | 10 × qualifying payroll + 20% × qualifying physical-asset tax value | [Decision §3(b)](https://lovdata.no/dokument/STV/forskrift/2025-12-19-2780) |
 | Capitalisation test | Cost at least NOK 30,000 and expected life at least 3 years | [Income Tax Act §14-40](https://lovdata.no/dokument/NL/lov/1999-03-26-14/KAPITTEL_14) |
 | Ordinary machine/furniture balance depreciation | Up to 20% | [Income Tax Act §14-43(1)(d)](https://lovdata.no/dokument/NL/lov/1999-03-26-14/KAPITTEL_14) |
@@ -145,4 +145,4 @@ Not yet confirmed: Specialist shipping, extractive, financial and large multinat
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-01. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `sj-svalbard-company-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/sj-svalbard-company-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `sj-svalbard-company-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/sj-svalbard-company-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

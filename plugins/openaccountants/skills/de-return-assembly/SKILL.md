@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/de-return-assembly"
   jurisdiction: "DE"
   tax_year: "2026"
-  last_updated: "2026-10-31"
+  last_updated: "2026-11-14"
 ---
 
 # Assembling a German freelancer's yearly tax return package
@@ -39,6 +39,24 @@ The capstone Guide for German self-employed returns: every German content Guide 
 - **Scope of package.** Full-year German residents (unbeschränkt steuerpflichtig) self-employed as Freiberufler (§ 18 EStG) or Gewerbetreibende (§ 15 EStG), tax year 2026, profit by cash-basis accounts (§ 4(3) EStG). Covered: advance VAT returns and the yearly Umsatzsteuererklärung; the income tax return with Anlage EÜR, Anlage S or Anlage G, and Anlage Vorsorgeaufwand; the Gewerbesteuererklärung where the client trades; next year's prepayments. https://www.gesetze-im-internet.de/estg/__18.html and https://www.gesetze-im-internet.de/estg/__15.html
 - **Out of scope.** `profit_method: bilanz` means double-entry books and an E-Bilanz, not an Anlage EÜR. Route to `germany-bookkeeping` and refuse (R-DE-6).
 
+## Ask the client first
+
+- **Is a Steuerberater filing this, or are you?** It moves the deadline from the end of July 2027 to the last day of February 2028 and changes the action list.
+- **Freiberufler or Gewerbetreibender, and is a trade registration in place?** It decides Anlage S against Anlage G and whether trade tax and the credit apply, and it is the commonest open question in the intake package.
+- **Which municipality, and what is its multiplier?** Without it neither the trade tax nor the credit cap can be finished.
+- **Are you in a church that levies church tax, and in which federal state?** The state sets the rate.
+- **Did any income arrive that is not from the business?** Rent, investments, crypto disposals and foreign income each need their own form and Guide (R-DE-5).
+- **Has a Vorauszahlungsbescheid arrived for 2027?** Without one there is no prepayment amount to state.
+
+## The method, step by step
+
+1. **Read the intake package and stop if it is out of scope.** Check `taxpayer.profit_method`, the entity and the residence. Cash-basis accounts under § 4(3) EStG are the scope; books and an E-Bilanz are not. https://www.gesetze-im-internet.de/estg/__4.html
+2. **Run the VAT step and fix the turnover.** Settle the open advance returns and the yearly return, and set the rhythm from the previous year's VAT against the limits in the Section 3 table. For a small business, test both limits of § 19 UStG. https://www.gesetze-im-internet.de/ustg_1980/__18.html
+3. **Run the income tax step and build the Anlage EÜR.** Receipts in Zeilen 12 to 22 with the total in Zeile 23, expenses in Zeilen 24 to 76, profit in Zeilen 77 to 98. Send the Anlage AVEÜR with it: the instructions call it a necessary part of the accounts. The same holds for the Anlage SZ of a sole trader once loan interest, other than interest on loans for fixed assets, passes the amount those instructions print: flag it. https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2026-09-01-anlage-EUER-2026.pdf?__blob=publicationFile&v=2
+4. **Run social insurance, then trade tax for a Gewerbetreibender, then prepayments.** Take the allowance and base rate from the Section 3 table (§ 11 GewStG) and the credit from § 35 EStG. https://www.gesetze-im-internet.de/gewstg/__11.html
+5. **Run the five cross-checks in Section 3, then the self-checks in Section 6.** A failed check is written into the brief; it does not stop the build.
+6. **Assemble the three files and set the calendar.** For the 2026 return the deadline is seven months after the end of the calendar year, so the end of July 2027; 31 July 2027 is a Saturday, and a period ending on a Saturday, Sunday or public holiday ends on the next working day. Filed by a tax adviser: the last day of February 2028. The longer pandemic periods ended with tax year 2024. https://www.gesetze-im-internet.de/ao_1977/__149.html and https://www.gesetze-im-internet.de/ao_1977/__108.html and https://www.gesetze-im-internet.de/aoeg_1977/art_97__36.html
+
 ## Section 2: Execution order and dependency chain
 
 1. **UStVA step.** First, because turnover feeds the Anlage EÜR. Regelbesteuerung: the outstanding advance returns plus the yearly return. Kleinunternehmer: no advance return and no yearly VAT return as a rule, and BOTH limits in the Section 3 table are tested, with the start-up row for a business that started in the year. Exception: a Kleinunternehmer who owes VAT as the recipient of a supply (§ 13b(5) UStG) or on goods bought from other EU states still files for those periods (§ 18(4a) UStG, kept in force by § 19(1) sentence 2 UStG); `de-freelance-intake` has the detail. Output: advance return lines, input VAT recovered and blocked, net turnover, Sondervorauszahlung reconciliation. Guide: `germany-vat-return`.
@@ -56,24 +74,20 @@ Each cross-check compares one Guide's output with another's input. Line numbers 
 
 | What | Value | Note | Source |
 | --- | --- | --- | --- |
-| Source | all figures below | https://www.gesetze-im-internet.de/ustg_1980/__19.html |  |
 | Small business: total turnover of the PREVIOUS year not more than (condition 1 of 2, AND) | EUR 25,000 | "im vorangegangenen Kalenderjahr 25 000 Euro nicht überschritten hat" | https://www.gesetze-im-internet.de/ustg_1980/__19.html |
 | Small business: total turnover of the CURRENT year not more than. A hard limit in-year: the supply that crosses it is already taxed | EUR 100,000 | "im laufenden Kalenderjahr 100 000 Euro nicht überschreitet" | same |
 
 | What | Value | Note | Source |
 | --- | --- | --- | --- |
-| Source | all figures below | https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2026-09-01-anlage-EUER-2026.pdf?__blob=publicationFile&v=2 |  |
 | Business that STARTS during the year: total turnover of the current year must not exceed | EUR 25,000 | Instructions to Zeile 12: "darf der Gesamtumsatz im laufenden Kj. 25.000 € nicht überschreiten" | https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2026-09-01-anlage-EUER-2026.pdf?__blob=publicationFile&v=2 |
 
 | What | Value | Note | Source |
 | --- | --- | --- | --- |
-| Source | all figures below | https://www.gesetze-im-internet.de/ustg_1980/__18.html |  |
 | Advance returns are monthly if the VAT payable for the previous year was more than this, quarterly otherwise. The test is the VAT, not turnover | EUR 9,000 | § 18(2): "für das vorangegangene Kalenderjahr mehr als 9 000 Euro" | https://www.gesetze-im-internet.de/ustg_1980/__18.html |
 | The tax office may release the business from advance returns if that VAT was not more than | EUR 2,000 | § 18(2): "nicht mehr als 2 000 Euro" | same |
 
 | What | Value | Note | Source |
 | --- | --- | --- | --- |
-| Source | all figures below | https://www.gesetze-im-internet.de/gewstg/__11.html |  |
 | Trade tax allowance for a natural person or partnership, per business per year | EUR 24,500 | § 11(1): "um einen Freibetrag in Höhe von 24 500 Euro" | https://www.gesetze-im-internet.de/gewstg/__11.html |
 | Base rate on trade income after the allowance. Not the tax rate: the multiplier is applied to the base amount | 3.5% | § 11(2): "Die Steuermesszahl für den Gewerbeertrag beträgt 3,5 Prozent" | same |
 
@@ -81,7 +95,6 @@ The solidarity surcharge has a rate, an exemption limit that differs between sin
 
 | What | Value | Note | Source |
 | --- | --- | --- | --- |
-| Source | all figures below | https://www.gesetze-im-internet.de/estg/__37.html |  |
 | Income tax prepayments are set only if they reach this in the year (first of two conditions, AND) | EUR 400 | § 37(5): "mindestens 400 Euro im Kalenderjahr" | https://www.gesetze-im-internet.de/estg/__37.html |
 | and this for a single due date | EUR 100 | § 37(5): "mindestens 100 Euro für einen Vorauszahlungszeitpunkt betragen" | same |
 
@@ -176,7 +189,6 @@ Trade tax prepayments have their own dates and their own minimum: see `de-trade-
 
 | What | Value | Note | Source |
 | --- | --- | --- | --- |
-| Source | all figures below | https://www.gesetze-im-internet.de/estg/__6.html |  |
 | Low-value asset written off in full in the year of purchase: cost per asset, less any input VAT contained in it | EUR 800 | § 6(2): "für das einzelne Wirtschaftsgut 800 Euro nicht übersteigen" | https://www.gesetze-im-internet.de/estg/__6.html |
 | An asset written off at once goes in a running register if its value is above this; the same amount is the pool floor | EUR 250 | § 6(2) sentence 4: "deren Wert 250 Euro übersteigt"; § 6(2a) | same |
 | Pool method (Sammelposten): upper cost bound per asset. The pool binds every qualifying asset of the year | EUR 1,000 | § 6(2a): "250 Euro, aber nicht 1 000 Euro übersteigen" | same |
@@ -415,31 +427,13 @@ The final output is **three files**:
 - **v0.2 (September 2026):** refreshed for tax year 2026. Routing corrected to `de-einkommensteuer-freelancer`. Anlage EÜR line numbers corrected to the 2026 form. VAT treatment in cash-basis accounts corrected. Figures brought to 2026. Sample amounts replaced with placeholders.
 - **v0.1 (April 2026):** initial draft, modelled on the Malta return assembly Guide and adapted for Germany.
 
-## The method, step by step
+## Worked cases
 
-1. **Read the intake package and stop if it is out of scope.** Check `taxpayer.profit_method`, the entity and the residence. Cash-basis accounts under § 4(3) EStG are the scope; books and an E-Bilanz are not. https://www.gesetze-im-internet.de/estg/__4.html
-2. **Run the VAT step and fix the turnover.** Settle the open advance returns and the yearly return, and set the rhythm from the previous year's VAT against the limits in the Section 3 table. For a small business, test both limits of § 19 UStG. https://www.gesetze-im-internet.de/ustg_1980/__18.html
-3. **Run the income tax step and build the Anlage EÜR.** Receipts in Zeilen 12 to 22 with the total in Zeile 23, expenses in Zeilen 24 to 76, profit in Zeilen 77 to 98. Send the Anlage AVEÜR with it: the instructions call it a necessary part of the accounts. The same holds for the Anlage SZ of a sole trader once loan interest, other than interest on loans for fixed assets, passes the amount those instructions print: flag it. https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2026-09-01-anlage-EUER-2026.pdf?__blob=publicationFile&v=2
-4. **Run social insurance, then trade tax for a Gewerbetreibender, then prepayments.** Take the allowance and base rate from the Section 3 table (§ 11 GewStG) and the credit from § 35 EStG. https://www.gesetze-im-internet.de/gewstg/__11.html
-5. **Run the five cross-checks in Section 3, then the self-checks in Section 6.** A failed check is written into the brief; it does not stop the build.
-6. **Assemble the three files and set the calendar.** For the 2026 return the deadline is seven months after the end of the calendar year, so the end of July 2027; 31 July 2027 is a Saturday, and a period ending on a Saturday, Sunday or public holiday ends on the next working day. Filed by a tax adviser: the last day of February 2028. The longer pandemic periods ended with tax year 2024. https://www.gesetze-im-internet.de/ao_1977/__149.html and https://www.gesetze-im-internet.de/ao_1977/__108.html and https://www.gesetze-im-internet.de/aoeg_1977/art_97__36.html
+Amounts are example inputs. The allowance and base rate come from the Section 3 table ([§ 11 GewStG](https://www.gesetze-im-internet.de/gewstg/__11.html)); the credit is four times the base amount ([§ 35(1) EStG](https://www.gesetze-im-internet.de/estg/__35.html)), capped at the trade tax payable.
 
-## Ask the client first
+**Case 1: trade income EUR 30,000.** Trade income after the EUR 24,500 allowance is EUR 5,500; at 3.5% the base amount is EUR 192.50.
 
-- **Is a Steuerberater filing this, or are you?** It moves the deadline from the end of July 2027 to the last day of February 2028 and changes the action list.
-- **Freiberufler or Gewerbetreibender, and is a trade registration in place?** It decides Anlage S against Anlage G and whether trade tax and the credit apply, and it is the commonest open question in the intake package.
-- **Which municipality, and what is its multiplier?** Without it neither the trade tax nor the credit cap can be finished.
-- **Are you in a church that levies church tax, and in which federal state?** The state sets the rate.
-- **Did any income arrive that is not from the business?** Rent, investments, crypto disposals and foreign income each need their own form and Guide (R-DE-5).
-- **Has a Vorauszahlungsbescheid arrived for 2027?** Without one there is no prepayment amount to state.
-
-## When to refuse or refer
-
-- A company or a partnership of any kind, including a one-person company, and any client who keeps double-entry books, or must keep them, and files an E-Bilanz.
-- Part-year residence, a move in or out of Germany during the year, or income taxed in another country.
-- A permanent establishment abroad, or a second business not in the package.
-- An open dispute: an objection, an appeal, an audit, or a voluntary disclosure.
-- Any request to file, sign or transmit. This Guide prepares a package for a Steuerberater to check and sign. It does not file.
+**Case 2: trade income EUR 40,000, multiplier 410%.** Base amount (40,000 less 24,500) times 3.5% is EUR 542.50; trade tax at 410% is EUR 2,224.25. The § 35 credit is four times EUR 542.50, EUR 2,170.00, below the trade tax payable, so the full EUR 2,170.00 reduces income tax (subject to the income-tax cap in Cross-check 3).
 
 ```oa-check
 name: DE sole trader 2026, base amount after the allowance
@@ -463,15 +457,47 @@ expected:
   trade_tax: 2224.25
 ```
 
+```oa-check
+name: DE sole trader 2026, Case 2 § 35 credit four times the base amount, capped at trade tax
+inputs:
+  trade_income: 40000
+  hebesatz: 4.1
+steps:
+  - base: (trade_income - 24500) * 0.035
+  - trade_tax: base * hebesatz
+  - credit: min(base * 4, trade_tax)
+expected:
+  credit: 2170.00
+```
+
+## When to refuse or refer
+
+- A company or a partnership of any kind, including a one-person company, and any client who keeps double-entry books, or must keep them, and files an E-Bilanz.
+- Part-year residence, a move in or out of Germany during the year, or income taxed in another country.
+- A permanent establishment abroad, or a second business not in the package.
+- An open dispute: an objection, an appeal, an audit, or a voluntary disclosure.
+- Any request to file, sign or transmit. This Guide prepares a package for a Steuerberater to check and sign. It does not file.
+
 ## Sources
 
-- https://www.gesetze-im-internet.de/estg/__4.html , https://www.gesetze-im-internet.de/estg/__6.html , https://www.gesetze-im-internet.de/estg/__15.html , https://www.gesetze-im-internet.de/estg/__18.html , https://www.gesetze-im-internet.de/estg/__25.html , https://www.gesetze-im-internet.de/estg/__35.html , https://www.gesetze-im-internet.de/estg/__37.html (read 2026-10-31)
-- https://www.gesetze-im-internet.de/ustg_1980/__18.html , https://www.gesetze-im-internet.de/ustg_1980/__19.html (read 2026-10-31)
-- https://www.gesetze-im-internet.de/gewstg/__11.html , https://www.gesetze-im-internet.de/gewstg/__14a.html (read 2026-10-31)
-- https://www.gesetze-im-internet.de/solzg_1995/__3.html , https://www.gesetze-im-internet.de/solzg_1995/__4.html (read 2026-10-31)
-- https://www.gesetze-im-internet.de/ao_1977/__108.html , https://www.gesetze-im-internet.de/ao_1977/__149.html , https://www.gesetze-im-internet.de/aoeg_1977/art_97__36.html (read 2026-10-31)
-- https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2026-09-01-anlage-EUER-2026.pdf?__blob=publicationFile&v=2
-- https://www.elster.de/eportal/helpGlobal?themaGlobal=help_est_ufa_10_2025 (read 2026-10-31)
+| Source | URL | Read on |
+| --- | --- | --- |
+| Read for § 4(3) cash-basis profit | https://www.gesetze-im-internet.de/estg/__4.html | 2026-11-14 |
+| Read for § 6 valuation; plus §§ 15, 18, 25 EStG for the business types and the yearly return | https://www.gesetze-im-internet.de/estg/__6.html | 2026-10-31 |
+| Read for § 35(1), credit four times the trade tax base amount | https://www.gesetze-im-internet.de/estg/__35.html | 2026-11-14 |
+| Read for § 37(1) prepayment dates 10 March, 10 June, 10 September, 10 December | https://www.gesetze-im-internet.de/estg/__37.html | 2026-11-14 |
+| Read for § 18(2) UStG, EUR 9,000 monthly and EUR 2,000 release thresholds | https://www.gesetze-im-internet.de/ustg_1980/__18.html | 2026-11-14 |
+| Read for § 19(1) UStG, EUR 25,000 and EUR 100,000 small-business limits | https://www.gesetze-im-internet.de/ustg_1980/__19.html | 2026-11-14 |
+| Read for § 11 GewStG, EUR 24,500 allowance and 3.5% base rate | https://www.gesetze-im-internet.de/gewstg/__11.html | 2026-11-14 |
+| Read for § 14a GewStG, the trade tax return | https://www.gesetze-im-internet.de/gewstg/__14a.html | 2026-10-31 |
+| Read for SolzG §§ 3 and 4, base and 5.5% rate | https://www.gesetze-im-internet.de/solzg_1995/__4.html | 2026-11-14 |
+| Read for § 149(2) and (3) AO deadlines | https://www.gesetze-im-internet.de/ao_1977/__149.html | 2026-11-14 |
+| Read for § 108(3) AO weekend rule | https://www.gesetze-im-internet.de/ao_1977/__108.html | 2026-11-14 |
+| Read for art. 97 § 36 EGAO, the pandemic deadlines ending with tax year 2024 | https://www.gesetze-im-internet.de/aoeg_1977/art_97__36.html | 2026-11-14 |
+| Read for the 2026 Anlage EÜR instructions (Zeilen 12 to 98, EUR 25,000 start-up rule at Zeile 12) | https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2026-09-01-anlage-EUER-2026.pdf?__blob=publicationFile&v=2 | 2026-11-14 |
+| Read for the 2025 ELSTER income tax help used for form references | https://www.elster.de/eportal/helpGlobal?themaGlobal=help_est_ufa_10_2025 | 2026-10-31 |
+
+Not yet confirmed: the 2026 forms other than the Anlage EÜR (Anlage S, G, Vorsorgeaufwand) and their ELSTER help were not opened in this pass; form line references for them follow the 2025 forms until the 2026 forms are read.
 
 ## End of Guide
 
@@ -483,4 +509,4 @@ This Guide and its outputs are provided for informational and computational purp
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-31. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `de-return-assembly` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/de-return-assembly. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `de-return-assembly` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/de-return-assembly. If neither is available, confirm every figure against the official source pages cited above before relying on it.

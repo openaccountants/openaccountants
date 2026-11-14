@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/fi-individual-cross-border-residence"
   jurisdiction: "FI"
   tax_year: "2026"
-  last_updated: "2026-10-27"
+  last_updated: "2026-11-14"
 ---
 
-# Finland individual cross-border residence v0.5
+# Finland individual cross-border residence v0.7
 
 ## Who this applies to
 
@@ -22,15 +22,15 @@ The [individual income-tax skill](fi-income-tax.md) computes ordinary earned/cap
 
 | Item | 2026 rule | Official source |
 |---|---|---|
-| Domestic presence route | Continuous stay **over 6 months**, temporary absences do not interrupt; main home is an independent route | ITA §11 [text][law] |
-| Finnish citizen departure | Departure year plus next 3 tax years presumed resident unless substantial ties shown absent | ITA §11 [text][law] |
-| Ordinary nonresident wage/trade income | 35% source tax, unless treaty or progressive route applies | Nonresident Act §7(1)(1) [text][source-law] |
-| Source-tax wage deduction | EUR 510/month or EUR 17/day for shorter period, capped at income; requires source-tax card and statutory income eligibility | Nonresident Act §6 [text][source-law] |
-| Nonresident natural-person dividend, taxable interest and royalty | 30% domestic source rate; unknown nominee dividend 35%; treaty/card can change outcome | Nonresident Act §§3,7 [text][source-law] |
-| Net capital income under assessment | 30% through EUR 30,000, 34% above; distinguish gross source-tax route | Nonresident Act §15 [text][source-law] |
-| Nonresident municipal rate under ordinary assessment | 7.60%; regional/church/health conditions separately | Nonresident Act §13a; [Vero 2026 municipal decision][municipal] |
-| Foreign employment exemption | At least 6 months continuous work-caused stay; average at most 6 Finland days per full work month, maximum 60 days taken in advance | ITA §77 [text][law] |
-| Unused credit | Next 5 tax years, same source/category, oldest before current-year tax | Relief Act 1552/1995 §5 [text][relief-law] |
+| Domestic presence route | Continuous stay **over 6 months**, temporary absences do not interrupt; main home is an independent route | ITA §11 [text](https://www.finlex.fi/fi/lainsaadanto/1992/1535) |
+| Finnish citizen departure | Departure year plus next 3 tax years presumed resident unless substantial ties shown absent | ITA §11 [text](https://www.finlex.fi/fi/lainsaadanto/1992/1535) |
+| Ordinary nonresident wage/trade income | 35% source tax, unless treaty or progressive route applies | Nonresident Act §7(1)(1) [text](https://www.finlex.fi/fi/lainsaadanto/1978/627) |
+| Source-tax wage deduction | EUR 510/month or EUR 17/day for shorter period, capped at income; requires source-tax card and statutory income eligibility | Nonresident Act §6 [text](https://www.finlex.fi/fi/lainsaadanto/1978/627) |
+| Nonresident natural-person dividend, taxable interest and royalty | 30% domestic source rate; unknown nominee dividend 35%; treaty/card can change outcome | Nonresident Act §§3,7 [text](https://www.finlex.fi/fi/lainsaadanto/1978/627) |
+| Net capital income under assessment | 30% through EUR 30,000, 34% above; distinguish gross source-tax route | Nonresident Act §15 [text](https://www.finlex.fi/fi/lainsaadanto/1978/627) |
+| Nonresident municipal rate under ordinary assessment | 7.60%; regional/church/health conditions separately | Nonresident Act §13a; [Vero 2026 municipal decision](https://www.vero.fi/syventavat-vero-ohjeet/paatokset/47465/kuntien-ja-seurakuntien-tuloveroprosentit-vuonna-2026/) |
+| Foreign employment exemption | At least 6 months continuous work-caused stay; average at most 6 Finland days per full work month, maximum 60 days taken in advance | ITA §77 [text](https://www.finlex.fi/fi/lainsaadanto/1992/1535) |
+| Unused credit | Next 5 tax years, same source/category, oldest before current-year tax | Relief Act 1552/1995 §5 [text](https://www.finlex.fi/fi/lainsaadanto/1995/1552) |
 
 ## The base
 
@@ -167,8 +167,8 @@ Not yet confirmed: country-specific treaty rates and unusual special-service/ele
 [nonresident]: https://www.vero.fi/en/detailed-guidance/guidance/334489/taxation-of-income-received-by-nonresidents-natural-persons/
 [municipal]: https://www.vero.fi/syventavat-vero-ohjeet/paatokset/47465/kuntien-ja-seurakuntien-tuloveroprosentit-vuonna-2026/
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-27. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `fi-individual-cross-border-residence` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/fi-individual-cross-border-residence. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `fi-individual-cross-border-residence` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/fi-individual-cross-border-residence. If neither is available, confirm every figure against the official source pages cited above before relying on it.

@@ -2,16 +2,17 @@
 name: fi-country-by-country-reporting
 description: >
   Prepare Finland country-by-country tax reporting and reporting-entity notifications for 2026 periods. Determine the group or standalone-with-PE threshold, ultimate-parent, secondary or surrogate role and the separate notification duty. Covers statutory foreign-parent failure conditions, information refusal, currency thresholds, jurisdictional revenue and tax aggregation, equity, employees, tangible assets and constituent-entity identifiers. Distinguish consolidated sales used for the threshold from country rows in the report. Includes MyTax and CSV preparation, report and notification deadlines, exchange evidence and sanctions. Trigger on CbCR, DAC4, maakohtainen raportti, reporting entity, EUR 750 million group or Finnish secondary reporting. Public company-law reporting and Pillar Two returns are separate obligations.
-version: 0.6
+version: 0.8
 jurisdiction: FI
 tax_year: 2026
-last_updated: 2026-10-27
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+type: situation-rules
 ---
 
-# Finland country-by-country reporting v0.6
+# Finland country-by-country reporting v0.8
 
 ## Who this applies to
 
@@ -21,10 +22,10 @@ Apply Assessment Procedure Act 1558/1995 §14d to Finnish ultimate-parent groups
 
 | Item | Rule | Official source |
 |---|---|---|
-| Revenue threshold | At least EUR 750 million preceding accounting period | Act §14d(1),(4),(5) [text][law] |
-| Notification | By final day of reported accounting period | Act §14d(11) [text][law] |
-| Full report / parent-refusal notification | Within 12 months after period end | Act §14d(11) [text][law] |
-| CbCR-specific tax increase | Up to EUR 25,000 for specified failures | Act §§32(1)(3),32a [text][law] |
+| Revenue threshold | At least EUR 750 million preceding accounting period | Act §14d(1),(4),(5) [text](https://www.finlex.fi/fi/lainsaadanto/1995/1558) |
+| Notification | By final day of reported accounting period | Act §14d(11) [text](https://www.finlex.fi/fi/lainsaadanto/1995/1558) |
+| Full report / parent-refusal notification | Within 12 months after period end | Act §14d(11) [text](https://www.finlex.fi/fi/lainsaadanto/1995/1558) |
+| CbCR-specific tax increase | Up to EUR 25,000 for specified failures | Act §§32(1)(3),32a [text](https://www.finlex.fi/fi/lainsaadanto/1995/1558) |
 
 ## The base
 
@@ -147,4 +148,4 @@ Not yet confirmed: no taxpayer-specific foreign exchange relationship or filing 
 [detail]: https://www.vero.fi/syventavat-vero-ohjeet/ohje-hakusivu/49771/verotuksen-maakohtainen-raportti3/
 [csv]: https://www.vero.fi/en/businesses-and-corporations/business-operations/transfer-pricing/countrybycountry-report-and-notification/country-by-country-reporting-guidance-for-generating-csv-files/
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.

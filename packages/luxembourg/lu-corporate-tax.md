@@ -1,14 +1,15 @@
 ---
 name: lu-corporate-tax
 description: "Use this skill for Luxembourg corporate income tax on resident companies (SA, SARL, SARL-S, SAS, SCA, SE, cooperatives) and on Luxembourg permanent establishments of foreign companies, for tax year 2026. Covers impôt sur le revenu des collectivités (IRC) at 14% / 16% with the EUR 175,000 to 200,000 band, the 7% contribution au fonds pour l'emploi, municipal business tax (impôt commercial communal, ICC) with the EUR 17,500 allowance and the Luxembourg City 225% multiplier, the combined 23.87% rate, net wealth tax and minimum net wealth tax, participation exemption (art. 166 LIR), 17-year loss carry-forward, fiscal unity (art. 164bis), interest limitation (art. 168bis), CFC rules, filing and quarterly advances, penalties, and dividend withholding tax. Trigger on: 'Luxembourg corporate tax', 'IRC Luxembourg', 'SARL tax', 'Soparfi', 'intégration fiscale'. Out of scope: individuals (luxembourg-income-tax), VAT (luxembourg-vat-return), payroll (luxembourg-payroll), social security (luxembourg-social-contributions), planning (luxembourg-tax-optimization), funds and securitisation vehicles."
-version: 0.2
+version: 0.3
 jurisdiction: LU
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: corporate-tax
+type: computation
 ---
 
 # Luxembourg corporate income tax (tax year 2026)
@@ -55,19 +56,19 @@ Related skills in this pack: [luxembourg-income-tax](luxembourg-income-tax.md) (
 | ICC allowance for companies subject to IRC | EUR 17,500 deducted from the business profit | current | [ACD, ICC calculation](https://impotsdirects.public.lu/fr/az/c/calc_comm.html) |
 | ICC base rate | 3% of the business profit after the allowance | current | same |
 | ICC municipal multiplier, Luxembourg City | 225%, so 6.75% of profit | current | [ACD, overall tax burden](https://impotsdirects.public.lu/fr/az/c/charg_fisc.html); [Guichet.lu, ICC](https://guichet.public.lu/fr/entreprises/fiscalite/impots-benefices/benefices-patrimoine/impots-divers/impot-commercial-communal.html) |
-| ICC multipliers elsewhere | set by each commune; 225% to 350% across the 100 communes for 2026 (6.75% to 10.5% of profit) | 2026 | [ACD, table of communal ICC rates 2016 to 2026](https://impotsdirects.public.lu/content/dam/acd/fr/archive/documentsdivers/taux-ic-2016-2026-12122025.xlsx) |
-| Combined headline rate, Luxembourg City, income above EUR 200,000 | 23.87% (16% + 1.12% + 6.75%) | 2025 onwards | [ACD, overall tax burden](https://impotsdirects.public.lu/fr/az/c/charg_fisc.html) |
+| ICC multipliers elsewhere | set by each commune; 225% to 350% across the 100 communes for 2026 (6.75% to 10.5% of profit, computed as the 3% base rate times the multiplier) | 2026 | [ACD, table of communal ICC rates 2016 to 2026](https://impotsdirects.public.lu/content/dam/acd/fr/archive/documentsdivers/taux-ic-2016-2026-12122025.xlsx) |
+| Combined headline rate, Luxembourg City, income above EUR 200,000 | 23.87% (computed: 16% + 1.12% + 6.75%) | 2025 onwards | [ACD, overall tax burden](https://impotsdirects.public.lu/fr/az/c/charg_fisc.html) |
 | Range of combined rates across communes and income levels | 21.73% to 27.62% | 2025 onwards | [Chamber of Deputies, answer to parliamentary question 3660, 12 March 2026](https://wdocs-pub.chd.lu/docs/exped/2026/03/QP_62533_1773327785492.pdf) |
 | Net wealth tax, net wealth up to EUR 500m | 0.5% | 2016 onwards | [ACD, net wealth tax tariff](https://impotsdirects.public.lu/fr/az/t/tarif-applicable-collectivites/tarif-collect-if.html) |
-| Net wealth tax, net wealth above EUR 500m | EUR 2,500,000 plus 0.05% of the excess | 2016 onwards | same |
+| Net wealth tax, net wealth above EUR 500m | EUR 2,500,000 plus 0.5 per mille of the excess | 2016 onwards | same |
 | Minimum net wealth tax, balance sheet total up to EUR 350,000 | EUR 535 | 2025 onwards | same |
 | Minimum net wealth tax, balance sheet total above EUR 350,000 up to EUR 2,000,000 | EUR 1,605 | 2025 onwards | same |
 | Minimum net wealth tax, balance sheet total above EUR 2,000,000 | EUR 4,815 | 2025 onwards | same |
 | Withholding tax on dividends | 15% (17.65% on the net amount if the payer bears the tax) | current | [LIR art. 148](https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf) |
-| Interest limitation | exceeding borrowing costs deductible up to the higher of 30% of EBITDA or EUR 3m | current | LIR art. 168bis(2) |
+| Interest limitation | exceeding borrowing costs deductible up to the higher of 30% of EBITDA or EUR 3m | current | LIR art. 168bis(2); https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
 | Loss carry-forward | 17 years; no carry-back | losses from financial years closing after 31 Dec 2016 | LIR art. 114(2); [ACD, loss carry-forward](https://impotsdirects.public.lu/fr/az/r/report_perte.html) |
-| Participation exemption on dividends | at least 10% or acquisition price at least EUR 1,200,000, held 12 months | current | LIR art. 166(1) |
-| Participation exemption on capital gains | at least 10% or acquisition price at least EUR 6,000,000, held 12 months | financial years from 2002; text as amended to 1 January 2025 | [Grand-ducal regulation of 21 December 2001 under art. 166(9), consolidated at 1 January 2025 (Legilux)](https://legilux.public.lu/eli/etat/leg/rgd/2001/12/21/n5/consolide/20250101) |
+| Participation exemption on dividends | at least 10% or acquisition price at least EUR 1,200,000, held 12 months | current | LIR art. 166(1); https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
+| Participation exemption on capital gains | at least 10% or acquisition price at least EUR 6,000,000, held 12 months | financial years from 2002; text as amended to 1 January 2025 | [Grand-ducal regulation of 21 December 2001 under art. 166(9), consolidated at 1 January 2025 (Legilux)](https://data.legilux.public.lu/filestore/eli/etat/leg/rgd/2001/12/21/n5/consolide/20250101/fr/pdf/eli-etat-leg-rgd-2001-12-21-n5-consolide-20250101-fr-pdf.pdf) |
 | Pillar Two | In force for large multinational and domestic groups in scope of Directive (EU) 2022/2523, under the law of 22 December 2023 on minimum effective taxation | 2024 onwards | [ACD, laws passed in 2023](https://impotsdirects.public.lu/fr/legislation/legi23.html) |
 
 **Change ahead.** The government told Parliament on 12 March 2026 that it plans a further one-point cut in the IRC rate from tax year **2027**. No law making that cut was listed by the ACD when this skill was written ([ACD, laws passed in 2026](https://impotsdirects.public.lu/fr/legislation/legi26.html)). For 2026, use 14% / 16%.
@@ -103,7 +104,7 @@ Disallowed costs carry forward with no time limit. Unused interest capacity carr
 
 If the 12-month hold is not completed, the exemption is withdrawn by a corrective assessment (art. 166(8)). The exemption is refused for EU directive income that was deductible in the payer's state, and for income paid under a non-genuine arrangement (art. 166(2bis)). A company may waive the exemption where it rests only on the EUR 1.2m acquisition price (art. 166(1), last paragraph).
 
-**Capital gains on participations.** Art. 166(9) lets a grand-ducal regulation extend the exemption to gains on disposal. The regulation of 21 December 2001, as amended up to the regulation of 20 December 2024 ([Legilux, consolidated at 1 January 2025](https://legilux.public.lu/eli/etat/leg/rgd/2001/12/21/n5/consolide/20250101)), exempts the gain when:
+**Capital gains on participations.** Art. 166(9) lets a grand-ducal regulation extend the exemption to gains on disposal. The regulation of 21 December 2001, as amended up to the regulation of 20 December 2024 ([Legilux, consolidated at 1 January 2025](https://data.legilux.public.lu/filestore/eli/etat/leg/rgd/2001/12/21/n5/consolide/20250101/fr/pdf/eli-etat-leg-rgd-2001-12-21-n5-consolide-20250101-fr-pdf.pdf)), exempts the gain when:
 
 - the seller is one of the bodies in art. 166(1), numbers 1 to 5, and sells a direct participation in a company listed in art. 166(2), numbers 1 to 3; and
 - on the date of sale the seller has held, or commits to hold, for an unbroken 12 months, at least **10%** or a stake with an acquisition price of at least **EUR 6,000,000**.
@@ -280,25 +281,25 @@ The `max` step is a simplification. It holds here because the ordinary tax excee
 | Source | URL | Read on |
 |---|---|---|
 | LIR, consolidated text in force at 1 January 2026 (ACD, updated 8 May 2026): arts. 38, 114, 146, 147, 148, 159, 160, 164bis, 164ter, 166, 168bis, 172, 174 | https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf | 2026-10-22 |
-| ACD, IRC tariff by tax year | https://impotsdirects.public.lu/fr/az/t/tarif-applicable-collectivites/tarif-collect.html | 2026-10-22 |
-| ACD, net wealth tax and minimum net wealth tax tariff | https://impotsdirects.public.lu/fr/az/t/tarif-applicable-collectivites/tarif-collect-if.html | 2026-10-22 |
-| ACD, overall tax burden of companies (charge fiscale globale) | https://impotsdirects.public.lu/fr/az/c/charg_fisc.html | 2026-10-22 |
-| ACD, calculation of municipal business tax | https://impotsdirects.public.lu/fr/az/c/calc_comm.html | 2026-10-22 |
-| ACD, loss carry-forward | https://impotsdirects.public.lu/fr/az/r/report_perte.html | 2026-10-22 |
-| ACD, companies subject to net wealth tax | https://impotsdirects.public.lu/fr/az/c/coll_fortune.html | 2026-10-22 |
-| ACD, taxable wealth | https://impotsdirects.public.lu/fr/az/f/fort_impo.html | 2026-10-22 |
-| ACD, net wealth tax reduction | https://impotsdirects.public.lu/fr/az/r/reduc_fortun.html | 2026-10-22 |
-| ACD, filing deadlines | https://impotsdirects.public.lu/fr/az/d/delais/depot.html | 2026-10-22 |
-| ACD, payment deadlines | https://impotsdirects.public.lu/fr/az/d/delais/paiement.html | 2026-10-22 |
-| ACD, late filing surcharge, penalty payment and late interest | https://impotsdirects.public.lu/fr/az/p/prelev.html | 2026-10-22 |
-| ACD, laws passed in 2023 (minimum effective taxation law of 22 December 2023) | https://impotsdirects.public.lu/fr/legislation/legi23.html | 2026-10-22 |
-| ACD, laws passed in 2025 | https://impotsdirects.public.lu/fr/legislation/legi25.html | 2026-10-22 |
-| ACD, laws passed in 2026 | https://impotsdirects.public.lu/fr/legislation/legi26.html | 2026-10-22 |
-| Guichet.lu, corporate income tax (rates shown are the pre-2025 rates; used for filing channel, advances and the 7% contribution only) | https://guichet.public.lu/fr/entreprises/fiscalite/impots-benefices/benefices-patrimoine/benefices-societes-capitaux/impot-revenu-collectivites.html | 2026-10-22 |
-| Guichet.lu, municipal business tax (last modified 5 December 2013; its 200% to 400% multiplier range and example rates are out of date, used for the ICC advance dates and the Luxembourg City 225% only) | https://guichet.public.lu/fr/entreprises/fiscalite/impots-benefices/benefices-patrimoine/impots-divers/impot-commercial-communal.html | 2026-10-22 |
-| Chamber of Deputies, answer to parliamentary question 3660 (12 March 2026) on the IRC rate and the planned 2027 cut | https://wdocs-pub.chd.lu/docs/exped/2026/03/QP_62533_1773327785492.pdf | 2026-10-22 |
-| Legilux, law of 20 December 2024 (Mémorial A 2024 n° 589): art. 12 sets the 14% / 30% band / 16% IRC rates, art. 21(5) applies them from tax year 2025; art. 11 adds the single-entity group escape to art. 168bis | https://legilux.public.lu/eli/etat/leg/loi/2024/12/20/a589/jo | 2026-10-22 |
-| Legilux, grand-ducal regulation of 21 December 2001 under art. 166(9) LIR (capital gains exemption), consolidated at 1 January 2025 | https://legilux.public.lu/eli/etat/leg/rgd/2001/12/21/n5/consolide/20250101 | 2026-10-22 |
-| ACD, table of communal ICC rates 2016 to 2026 (Excel, 12 December 2025) | https://impotsdirects.public.lu/content/dam/acd/fr/archive/documentsdivers/taux-ic-2016-2026-12122025.xlsx | 2026-10-22 |
+| ACD, IRC tariff by tax year. Read for the IRC rate and bracket for each tax year. | https://impotsdirects.public.lu/fr/az/t/tarif-applicable-collectivites/tarif-collect.html | 2026-10-22 |
+| ACD, net wealth tax and minimum net wealth tax tariff. Read for the net wealth tax rates and minimum. | https://impotsdirects.public.lu/fr/az/t/tarif-applicable-collectivites/tarif-collect-if.html | 2026-10-22 |
+| ACD, overall tax burden of companies (charge fiscale globale). Read for the combined company tax rate. | https://impotsdirects.public.lu/fr/az/c/charg_fisc.html | 2026-10-22 |
+| ACD, calculation of municipal business tax. Read for how municipal business tax is worked out. | https://impotsdirects.public.lu/fr/az/c/calc_comm.html | 2026-10-22 |
+| ACD, loss carry-forward. Read for the loss carry-forward limit. | https://impotsdirects.public.lu/fr/az/r/report_perte.html | 2026-10-22 |
+| ACD, companies subject to net wealth tax. Read for which companies pay net wealth tax. | https://impotsdirects.public.lu/fr/az/c/coll_fortune.html | 2026-10-22 |
+| ACD, taxable wealth. Read for what wealth is taxable. | https://impotsdirects.public.lu/fr/az/f/fort_impo.html | 2026-10-22 |
+| ACD, net wealth tax reduction. Read for the net wealth tax reduction. | https://impotsdirects.public.lu/fr/az/r/reduc_fortun.html | 2026-10-22 |
+| ACD, filing deadlines. Read for the filing deadlines. | https://impotsdirects.public.lu/fr/az/d/delais/depot.html | 2026-10-22 |
+| ACD, payment deadlines. Read for the payment deadlines. | https://impotsdirects.public.lu/fr/az/d/delais/paiement.html | 2026-10-22 |
+| ACD, late filing surcharge, penalty payment and late interest. Read for the late filing surcharge and late interest. | https://impotsdirects.public.lu/fr/az/p/prelev.html | 2026-10-22 |
+| ACD, laws passed in 2023 (minimum effective taxation law of 22 December 2023). Read for the minimum effective taxation law. | https://impotsdirects.public.lu/fr/legislation/legi23.html | 2026-10-22 |
+| ACD, laws passed in 2025. Read for the 2025 tax laws. | https://impotsdirects.public.lu/fr/legislation/legi25.html | 2026-10-22 |
+| ACD, laws passed in 2026. Read for the 2026 tax laws. | https://impotsdirects.public.lu/fr/legislation/legi26.html | 2026-10-22 |
+| Guichet.lu, corporate income tax (rates shown are the pre-2025 rates; used for filing channel, advances and the 7% contribution only). Read for the filing channel and advance payments. | https://guichet.public.lu/fr/entreprises/fiscalite/impots-benefices/benefices-patrimoine/benefices-societes-capitaux/impot-revenu-collectivites.html | 2026-10-22 |
+| Guichet.lu, municipal business tax (last modified 5 December 2013; its 200% to 400% multiplier range and example rates are out of date, used for the ICC advance dates and the Luxembourg City 225% only). Read for who is in scope of municipal business tax. | https://guichet.public.lu/fr/entreprises/fiscalite/impots-benefices/benefices-patrimoine/impots-divers/impot-commercial-communal.html | 2026-10-22 |
+| Chamber of Deputies, answer to parliamentary question 3660 (12 March 2026) on the IRC rate and the planned 2027 cut. Read for the planned IRC rate change. | https://wdocs-pub.chd.lu/docs/exped/2026/03/QP_62533_1773327785492.pdf | 2026-10-22 |
+| Legilux, law of 20 December 2024 (Mémorial A 2024 n° 589): art. 12 sets the 14% / 30% band / 16% IRC rates, art. 21(5) applies them from tax year 2025; art. 11 adds the single-entity group escape to art. 168bis | https://data.legilux.public.lu/filestore/eli/etat/leg/loi/2024/12/20/a589/jo/fr/pdfa/eli-etat-leg-loi-2024-12-20-a589-jo-fr-pdfa.pdf | 2026-10-22 |
+| Legilux, grand-ducal regulation of 21 December 2001 under art. 166(9) LIR (capital gains exemption), consolidated at 1 January 2025 | https://data.legilux.public.lu/filestore/eli/etat/leg/rgd/2001/12/21/n5/consolide/20250101/fr/pdf/eli-etat-leg-rgd-2001-12-21-n5-consolide-20250101-fr-pdf.pdf | 2026-10-22 |
+| ACD, table of communal ICC rates 2016 to 2026 (Excel, 12 December 2025). Read for the communal multipliers. | https://impotsdirects.public.lu/content/dam/acd/fr/archive/documentsdivers/taux-ic-2016-2026-12122025.xlsx | 2026-10-22 |
 
 Not yet confirmed: the maximum amount of the astreinte; the due dates of net wealth tax advances; any rounding of the ICC base; payment deferral of exit tax in instalments; the 2027 IRC cut, which is a stated government plan, not yet law.

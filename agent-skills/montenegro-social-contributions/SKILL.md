@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/montenegro-social-contributions"
   jurisdiction: "ME"
   tax_year: "2026"
-  last_updated: "2026-10-30"
+  last_updated: "2026-11-14"
 ---
 
 # Montenegro social contributions (doprinosi), 2026
@@ -46,11 +46,11 @@ Terms you will see: doprinosi (contributions); PIO, penzijsko i invalidsko osigu
 | Unemployment, employees and employee-like groups | 0.5% employee, 0.5% employer | 2026 | [Law art. 18(1)](https://wapi.gov.me/download/97253561-f373-4456-a024-b15f6596a0f2?version=1.0) |
 | Unemployment, entrepreneurs and main-occupation professionals | 1%, borne by the insured person | 2026 | [Law art. 18(2)](https://wapi.gov.me/download/97253561-f373-4456-a024-b15f6596a0f2?version=1.0) |
 | Labour Fund (Fond rada), employer | 0.2% of gross pay | 2026 | [Instruction art. 5](https://wapi.gov.me/download/f73befc2-975e-42d9-af00-4d5de0a3172d?version=1.0); [IOPPD instructions, column 15](https://wapi.gov.me/download/28aa7760-8d39-440d-8874-1ffcc5773095?version=1.0) |
-| Ordinary employee total / employer total | 10.5% / 0.7% of gross pay | 2026 | Sum of the rows above |
+| Ordinary employee total / employer total | 10.5% / 0.7% of gross pay | 2026 | Sum of the rows above: [Law arts. 15 and 18](https://wapi.gov.me/download/97253561-f373-4456-a024-b15f6596a0f2?version=1.0); [Instruction art. 5](https://wapi.gov.me/download/f73befc2-975e-42d9-af00-4d5de0a3172d?version=1.0) |
 | Additional PIO for increased-rate service (12 months counted as 14 / 15 / 16 / 18 / 24) | 6% / 9% / 12% / 18% / 28%, paid by employer or entrepreneur | 2026 | [Law art. 16](https://wapi.gov.me/download/97253561-f373-4456-a024-b15f6596a0f2?version=1.0) |
 | Entrepreneur and supplementary-entrepreneur monthly base, annual turnover up to EUR 9,000 / up to EUR 15,000 / over EUR 15,000 | 60% / 100% / 150% of prior-year average monthly gross pay (higher base may be elected for PIO) | 2026 | [Law art. 9 items 7 and 11, art. 11 item 5](https://wapi.gov.me/download/97253561-f373-4456-a024-b15f6596a0f2?version=1.0); [160/25 art. 3](https://wapi.gov.me/download/9c7ab8f6-6971-48cb-9ac0-4d6f87ac48bb?version=1.0) |
 | Average monthly gross pay in 2025 (the "prior-year average" for 2026) | EUR 1,206 | 2026 | [Law art. 4(1)(23)](https://wapi.gov.me/download/97253561-f373-4456-a024-b15f6596a0f2?version=1.0); [MONSTAT release, 30 Jan 2026](https://www.monstat.org/cg/novosti.php?id=4638) |
-| Entrepreneur monthly base at 60% / 100% / 150% | EUR 723.60 / 1,206.00 / 1,809.00 | 2026 | Computed from the two rows above |
+| Entrepreneur monthly base at 60% / 100% / 150% | EUR 723.60 / 1,206.00 / 1,809.00 | 2026 | Computed from the two rows above: [Law art. 9 items 7 and 11](https://wapi.gov.me/download/97253561-f373-4456-a024-b15f6596a0f2?version=1.0); [MONSTAT release, 30 Jan 2026](https://www.monstat.org/cg/novosti.php?id=4638) |
 | Farmer base: general / own mandatory | 20% / 12% of prior-year average gross pay (EUR 241.20 / 144.72); the difference is paid from the state budget | 2026 | [Law art. 9 item 10, art. 9a](https://wapi.gov.me/download/97253561-f373-4456-a024-b15f6596a0f2?version=1.0) |
 | Zimnica excluded from contributions | Up to 70% of prior-year average monthly gross pay (EUR 844.20) | 2026 | [Law art. 18a(2)](https://wapi.gov.me/download/97253561-f373-4456-a024-b15f6596a0f2?version=1.0); [160/25 art. 5](https://wapi.gov.me/download/9c7ab8f6-6971-48cb-9ac0-4d6f87ac48bb?version=1.0) |
 | Lowest monthly base, employees | Gross basic salary for the qualification category under the General Collective Agreement | 2026 | [Law arts. 4(1)(21), 9 item 1, 11 item 1](https://wapi.gov.me/download/97253561-f373-4456-a024-b15f6596a0f2?version=1.0) |
@@ -318,4 +318,4 @@ Not yet confirmed: the 2026 highest annual PIO base (the Ministry rulebook under
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-30. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `montenegro-social-contributions` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/montenegro-social-contributions. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `montenegro-social-contributions` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/montenegro-social-contributions. If neither is available, confirm every figure against the official source pages cited above before relying on it.

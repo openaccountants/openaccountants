@@ -1,21 +1,21 @@
 ---
 name: portugal-tax-optimization
-description: "Utilize esta skill ao aconselhar sobre estratégias LEGAIS de minimização fiscal para contribuintes portugueses no ano fiscal de 2026: particulares, trabalhadores independentes (recibos verdes) e pequenos empresários. Acione com expressões como \"reduzir o meu imposto Portugal\", \"planeamento fiscal\", \"regime simplificado\", \"contabilidade organizada\", \"optimização do IRS\", \"segurança social trabalhador independente\", \"IVA\", \"recibos verdes\", \"Categoria B\", \"deduções Portugal\", ou qualquer questão sobre minimização legal do IRS ou IRC português. Cobre selecção de entidade, regime simplificado vs contabilidade organizada, tributação conjunta, IRS Jovem, deduções à coleta, amortizações, utilização de prejuízos, timing, optimização do IVA, segurança social, PPR, englobamento e linhas vermelhas (cláusula geral anti-abuso). Fora do âmbito, ver: pt-income-tax (cálculo da Categoria B), pt-irs-employees-investment (Categorias A, E, F, G, H), pt-nhr-ifici, pt-social-contributions, portugal-vat-return, pt-corporate-tax, portugal-crypto-tax. LEIA SEMPRE esta skill antes de prestar aconselhamento de optimização fiscal portuguesa. Trigger also on: \"reduce my tax Portugal\", \"tax planning\", \"regime simplificado\", \"organized accounts\", \"IRS optimization\", \"social security self-employed\", \"IVA\", \"recibos verdes\", \"Category B\", \"deductions Portugal\"."
-version: 1.4
+description: "Utilize esta skill ao aconselhar sobre estratégias LEGAIS de minimização fiscal para contribuintes portugueses no ano fiscal de 2026, particulares, trabalhadores independentes (recibos verdes) e pequenos empresários. Acione com expressões como \"reduzir o meu imposto Portugal\", \"planeamento fiscal\", \"regime simplificado\", \"contabilidade organizada\", \"optimização do IRS\", \"segurança social trabalhador independente\", \"IVA\", \"recibos verdes\", \"Categoria B\", \"deduções Portugal\", ou qualquer questão sobre minimização legal do IRS ou IRC português. Cobre selecção de entidade, regime simplificado vs contabilidade organizada, tributação conjunta, IRS Jovem, deduções à coleta, amortizações, utilização de prejuízos, timing, optimização do IVA, segurança social, PPR, englobamento e linhas vermelhas (cláusula geral anti-abuso). Fora do âmbito, ver, pt-income-tax (cálculo da Categoria B), pt-irs-employees-investment (Categorias A, E, F, G, H), pt-nhr-ifici, pt-social-contributions, portugal-vat-return, pt-corporate-tax, portugal-crypto-tax. LEIA SEMPRE esta skill antes de prestar aconselhamento de optimização fiscal portuguesa. Trigger also on, \"reduce my tax Portugal\", \"tax planning\", \"regime simplificado\", \"organized accounts\", \"IRS optimization\", \"social security self-employed\", \"IVA\", \"recibos verdes\", \"Category B\", \"deductions Portugal\"."
+version: 2.0
 jurisdiction: PT
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-14
 depends_on:
   - bookkeeping-workflow-base
 category: tax-optimization
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: tax-optimization
+type: decision
 ---
 
 # Portugal Tax Optimization
 
-## Portugal: Optimização Fiscal, Skill v1.3 (ano fiscal 2026)
 
 Esta skill reúne as alavancas legais de planeamento fiscal em Portugal para 2026. Não repete os cálculos completos: liga às skills de domínio do mesmo pacote, que mandam quando os números divergem.
 
@@ -29,34 +29,18 @@ Esta skill reúne as alavancas legais de planeamento fiscal em Portugal para 202
 
 Todos os valores abaixo foram lidos no texto consolidado publicado pela AT no Portal das Finanças, ou no Guia Prático da Segurança Social, em 30 de outubro de 2026. As fontes estão na secção final.
 
-## Rates and thresholds
+## Scope
 
-### Otimização Fiscal (resumo 2026)
+This skill is the "which should I" guide for lawful IRS and IRC planning in Portugal in tax year 2026: simplified regime or organised accounts, joint or separate taxation, deductions people forget, depreciation, losses, timing, VAT and social security choices, retirement savings, capital income options, and where planning becomes abuse (LGT art. 38). The 2026 IRS bands are the ones cut by Decreto-Lei 212/2026 (4 November 2026, effect from 1 January 2026).
 
-- **Despesas gerais familiares**: 35% das faturas com NIF, máx. €250 por sujeito passivo; famílias monoparentais 45%, máx. €335 _(CIRS art. 78.º-B, n.os 1 e 9)_
-- **Saúde**: 15% das despesas, máx. €1.000 por agregado _(CIRS art. 78.º-C, n.º 1)_
-- **Educação e formação**: 30% das despesas, máx. €800 por agregado _(CIRS art. 78.º-D, n.º 1)_
-- **Habitação (renda da habitação própria e permanente)**: 15% das rendas, máx. €900 em 2026; limite mais alto para rendimento coletável até €30.000 _(CIRS art. 78.º-E, n.os 1 a), 4 e 10; Decreto-Lei 97/2026, art. 15.º, n.º 1)_
-- **Habitação (juros)**: 15%, máx. €296, apenas contratos celebrados até 31 de dezembro de 2011 (até €450 para rendimentos coletáveis baixos) _(CIRS art. 78.º-E, n.os 1 b) e 5)_
-- **Lares**: 25% dos encargos, máx. €403,75 _(CIRS art. 84.º, n.º 1)_
-- **Pensões de alimentos**: 20% dos montantes fixados por sentença ou acordo homologado _(CIRS art. 83.º-A, n.º 1)_
-- **IVA em faturas**: 15% do IVA (restauração, cabeleireiros, oficinas, veterinários e outros setores da lei), máx. €250 por agregado _(CIRS art. 78.º-F, n.º 1)_
-- **Depreciações**: taxas genéricas da Tabela II do Decreto Regulamentar 25/2009: edifícios comerciais e administrativos 2%, industriais 5%, mobiliário 12,5%, computadores 33,33%, programas de computador 33,33%, viaturas ligeiras e mistas 25% (ver Secção 4) _(DR 25/2009, Tabela II, códigos 2015, 2020, 2430, 2240, 2440 e 2375)_
-- **PPR, dedução IRS**: 20% das entregas, máx. €400 (menos de 35 anos), €350 (35 a 50 anos), €300 (mais de 50 anos) _(EBF art. 21.º, n.º 2)_
-- **Juros de depósitos**: taxa liberatória de 28%, ou englobamento por opção _(CIRS art. 71.º, n.os 1 e 9)_
-- **Dividendos (englobamento)**: só 50% incluídos no rendimento _(CIRS art. 40.º-A, n.º 1)_
-- **Mais-valias mobiliárias**: taxa autónoma de 28% sobre o saldo; exclusão de 10%, 20% ou 30% para ativos detidos mais de 2, 5 ou 8 anos; perdas reportáveis 5 anos se houver englobamento _(CIRS art. 72.º, n.º 1 c); art. 43.º, n.º 5; art. 55.º, n.º 1 d))_
-- **Mais-valias imobiliárias**: 50% do saldo incluído no rendimento; reinvestimento na habitação própria e permanente entre 24 meses antes e 36 meses depois da venda _(CIRS art. 43.º, n.º 2 b); art. 10.º, n.º 5)_
-- **Rendas (Cat. F)**: taxa autónoma de 25% no arrendamento habitacional e 28% nos restantes casos, ou englobamento _(CIRS art. 72.º, n.os 1 e) e 2)_
+Who is in: Portuguese-resident individuals (employees, self-employed, landlords, investors) and small companies. Who is out: non-residents and the IFICI regime beyond pointers (`pt-nhr-ifici`), groups and transfer pricing, and anything to be filed: computations are estimates for a contabilista certificado to confirm.
 
-## Secção 1: Referência Rápida
+### Quick reference
 
 **Referência Rápida**
 
 | Campo | Valor |
 | --- | --- |
-| País | Portugal (República Portuguesa) |
-| Moeda | EUR |
 | Ano fiscal | Ano civil (1 de janeiro a 31 de dezembro) |
 | Legislação primária | Código do IRS (CIRS); Código do IRC (CIRC); Código do IVA (CIVA); Código dos Regimes Contributivos (Lei 110/2009); Estatuto dos Benefícios Fiscais (EBF) |
 | Anti-abuso | Cláusula geral anti-abuso: art. 38.º, n.º 2, da Lei Geral Tributária (LGT); procedimento no art. 63.º do CPPT |
@@ -68,30 +52,70 @@ Todos os valores abaixo foram lidos no texto consolidado publicado pela AT no Po
 | Segurança social (trabalhador independente) | 21,4% (25,2% para empresários em nome individual e titulares de EIRL) sobre o rendimento relevante |
 | IAS 2026 | €537,13 |
 
-### Escalões de IRS (2026)
+#### Escalões de IRS (2026)
 
-**Escalões de IRS (2026)**: CIRS art. 68.º, n.º 1, na redação da Lei 73-A/2025.
+**Escalões de IRS (2026)**: CIRS art. 68.º, n.º 1, na redação do Decreto-Lei 212/2026, de 4 de novembro (taxas dos escalões 1 a 6 reduzidas para os rendimentos obtidos em 2026, com efeitos desde 1 de janeiro de 2026).
 
 | Escalão | Rendimento coletável (€) | Taxa normal (A) | Taxa média (B) |
 | --- | --- | --- | --- |
-| 1 | Até 8.342 | 12,50% | 12,500% |
-| 2 | Mais de 8.342 até 12.587 | 15,70% | 13,579% |
-| 3 | Mais de 12.587 até 17.838 | 21,20% | 15,823% |
-| 4 | Mais de 17.838 até 23.089 | 24,10% | 17,705% |
-| 5 | Mais de 23.089 até 29.397 | 31,10% | 20,579% |
-| 6 | Mais de 29.397 até 43.090 | 34,90% | 25,130% |
-| 7 | Mais de 43.090 até 46.566 | 43,10% | 26,472% |
-| 8 | Mais de 46.566 até 86.634 | 44,60% | 34,856% |
+| 1 | Até 8.342 | 12,20% | 12,200% |
+| 2 | Mais de 8.342 até 12.587 | 15,20% | 13,212% |
+| 3 | Mais de 12.587 até 17.838 | 20,70% | 15,416% |
+| 4 | Mais de 17.838 até 23.089 | 23,60% | 17,277% |
+| 5 | Mais de 23.089 até 29.397 | 30,60% | 20,136% |
+| 6 | Mais de 29.397 até 43.090 | 34,60% | 24,732% |
+| 7 | Mais de 43.090 até 46.566 | 43,10% | 26,103% |
+| 8 | Mais de 46.566 até 86.634 | 44,60% | 34,658% |
 | 9 | Superior a 86.634 | 48,00% | (não aplicável) |
 
-Como a AT calcula (art. 68.º, n.º 2): o limite do maior escalão que cabe no rendimento é tributado à taxa média (B) desse escalão; o excedente é tributado à taxa normal (A) do escalão seguinte. Exemplo: €35.000 = 29.397 × 20,579% + (35.000 - 29.397) × 34,90% = €8.005,06.
+Como a AT calcula (art. 68.º, n.º 2): o limite do maior escalão que cabe no rendimento é tributado à taxa média (B) desse escalão; o excedente é tributado à taxa normal (A) do escalão seguinte. Exemplo: €35.000 = 29.397 × 20,136% + (35.000 - 29.397) × 34,60% = €7.858,02.
 
 - **Taxa adicional de solidariedade**: 2,5% sobre a parte do rendimento coletável entre €80.000 e €250.000; 5% acima de €250.000 _(CIRS art. 68.º-A, n.os 1 e 2)_
 - **Mínimo de existência (2026)**: valor de referência igual ao maior entre €12.880 e 1,5 × 14 × IAS (€11.279,73), ou seja €12.880 _(CIRS art. 70.º, n.º 1)_. Aplica-se a quem tem rendimentos sobretudo de trabalho, pensões ou atividades da tabela do art. 151.º. A fórmula completa está em `pt-irs-employees-investment`.
 
-## Secção 2: Repartição de Rendimentos e Estruturação
+## Ask the client first
 
-### Empresário em Nome Individual (ENI) vs Sociedade (Lda)
+- Resident in Portugal for 2026? Married or in a de facto union (joint or separate taxation)?
+- Which categories of income: A (employment), B (self-employed, simplified or organised accounts), E (capital), F (rents), G (gains)?
+- Category B: gross income, activity code (coefficient) and real expenses?
+- Age, and whether IRS Jovem or a PPR is in play?
+- Any property sale with reinvestment in a main home, or crypto held more than 365 days?
+
+## Rates, bands and thresholds
+
+Figures below were found on 2026-11-14 on the Portal das Finanças (AT consolidated codes and the AT copy of Decreto-Lei 212/2026). The full band table, solidarity surcharge and IRS Jovem are owned by `pt-income-tax`.
+
+| Item | Figure | Tax year | Source |
+| --- | --- | --- | --- |
+| IRS bands 1 to 6, normal rates (Decreto-Lei 212/2026, effect from 1 January 2026) | 12.20% / 15.20% / 20.70% / 23.60% / 30.60% / 34.60% | 2026 | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Decreto-Lei-212-2026.pdf |
+| IRS band limits for bands 1 to 6 (upper limits) | EUR 8,342 / 12,587 / 17,838 / 23,089 / 29,397 / 43,090 | 2026 | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs68.aspx |
+| IRS bands 7 to 9 (to EUR 46,566 / to EUR 86,634 / above) | 43.10% / 44.60% / 48.00% | 2026 | same |
+| General family expenses: share / cap per taxpayer (single-parent families 45%, cap EUR 335) | 35% / EUR 250 | 2026 | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs78b.aspx |
+| Health expenses: share / cap per household | 15% / EUR 1,000 | 2026 | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs78c.aspx |
+| Education and training: share / cap per household | 30% / EUR 800 | 2026 | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs78d.aspx |
+| Home loan interest (contracts to 31 December 2011): cap | EUR 296 | 2026 | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs78e.aspx |
+| Care homes: share / cap | 25% / EUR 403.75 | 2026 | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs84.aspx |
+| Alimony fixed by court or approved agreement | 20% | 2026 | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs83a.aspx |
+| VAT on invoices in listed sectors: share of VAT / cap per household | 15% / EUR 250 | 2026 | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs78f.aspx |
+| PPR retirement savings: 20% of payments, cap under 35 / 35 to 50 / over 50 | EUR 400 / EUR 350 / EUR 300 | 2026 | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/bf_rep/Pages/ebf-artigo-21-ordm-.aspx |
+| Interest and other capital income: final withholding (aggregation optional) | 28% | 2026 | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs71.aspx |
+| Dividends when aggregated: share included | 50% | 2026 | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs40a.aspx |
+| Residential letting income: autonomous rate (28% other lettings) | 25% | 2026 | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs72.aspx |
+| Property gains of residents: share of the balance included | 50% | 2026 | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs43.aspx |
+
+## The method, step by step
+
+
+1. **Place each income** in its category and note which rules give a choice (aggregation of capital income, rents and gains; joint taxation; simplified regime or organised accounts).
+2. **Compute both sides of each choice** with the 2026 bands (art. 68(2) method: average rate of the last full band plus the normal rate on the excess) using `pt-income-tax`.
+3. **Collect every deduction**: check e-fatura for general family, health, education, housing, care homes and VAT-on-invoices deductions; add PPR and alimony.
+4. **Time income and expenses** where the law allows (see "Estratégias de Timing").
+5. **Test each idea against the anti-abuse clause** (LGT art. 38; CPPT art. 63). If in doubt, request a binding ruling.
+6. **Hand the chosen position** to the return skills (`pt-return-assembly`).
+
+### Repartição de Rendimentos e Estruturação
+
+#### Empresário em Nome Individual (ENI) vs Sociedade (Lda)
 
 - **Regime simplificado**: aplica-se a quem não ultrapassou €200.000 de rendimentos da Categoria B no ano anterior _(CIRS art. 28.º, n.º 2)_. Rendimento tributável = bruto × coeficiente: 0,75 para as atividades profissionais da tabela do art. 151.º; 0,35 para outras prestações de serviços; 0,15 para vendas de mercadorias e produtos, restauração, bebidas e hotelaria _(CIRS art. 31.º, n.º 1 a), b) e c))_. Outros coeficientes (0,95, 0,30, 0,10, 1 e 0,50) estão em `pt-income-tax`. Não se deduzem despesas reais além do coeficiente. Para os coeficientes 0,75 e 0,35 aplica-se a regra dos 15% (Secção 3).
 - **Primeiros anos de atividade**: os coeficientes das alíneas b), c) e f) são reduzidos em 50% no ano de início e em 25% no ano seguinte, se não houver rendimentos das Categorias A ou H nesse ano; não se aplica se a atividade cessou há menos de 5 anos _(CIRS art. 31.º, n.os 10 e 11; ver `pt-income-tax`)_.
@@ -99,21 +123,21 @@ Como a AT calcula (art. 68.º, n.º 2): o limite do maior escalão que cabe no r
 - **Sociedade (Sociedade Unipessoal por Quotas, Lda, ou SA)**: IRC a 19% em 2026, com 15% sobre os primeiros €50.000 para PME _(CIRC art. 87.º, n.º 2; Lei 64/2025, art. 3.º)_. Acrescem derramas e tributações autónomas (ver `pt-corporate-tax`). Os lucros distribuídos a sócios residentes pagam 28% de taxa liberatória _(CIRS art. 71.º, n.º 1)_ ou, por opção de englobamento, entram em apenas 50% nos escalões progressivos _(CIRS art. 40.º-A, n.º 1)_.
 - **Regra de decisão (quadro de comparação de regimes)**: Cat. B simplificado: melhor para quem tem poucas despesas reais (o coeficiente 0,75 já assume 25% de custos). Cat. B organizada: mudar quando as despesas documentadas (incluindo a Segurança Social acima de 10% do bruto) excedem essa margem e os honorários do contabilista. Lda: comparar, para o mesmo lucro, IRS + Segurança Social do ENI com IRC + derramas + 28% sobre o dividendo + custos de contabilidade, tributações autónomas e formalismos societários. Simular sempre os dois cenários com os números do cliente.
 
-### Tributação Conjunta
+#### Tributação Conjunta
 
 Casados e unidos de facto são tributados separadamente por defeito. Podem optar pela tributação conjunta todos os anos; ambos fazem a opção na declaração _(CIRS art. 59.º; ver `pt-irs-employees-investment`)_. Na tributação conjunta as taxas aplicam-se ao rendimento coletável dividido por dois e o resultado é multiplicado por dois _(CIRS art. 69.º, n.os 1 e 3)_. A divisão por dois favorece casais com rendimentos muito desiguais (Exemplo 2). Atenção: na tributação separada os limites das deduções por agregado são divididos entre os cônjuges, e o limite global das deduções do art. 78.º, n.º 7, depende do rendimento coletável. Simular os dois cenários no Portal das Finanças.
 
-### IRS Jovem
+#### IRS Jovem
 
 Quem tem até 35 anos e não é dependente pode isentar parte dos rendimentos das Categorias A e B nos primeiros 10 anos de obtenção de rendimentos, por opção na declaração _(CIRS art. 12.º-B, n.º 1)_. A isenção é de 100% no 1.º ano, 75% do 2.º ao 4.º, 50% do 5.º ao 7.º e 25% do 8.º ao 10.º, com o limite de 55 × IAS = €29.542,15 por ano em 2026 _(CIRS art. 12.º-B, n.º 5)_. Não está disponível para quem teve RNH ou IFICI. Cálculo em `pt-income-tax`.
 
-### RNH / IFICI
+#### RNH / IFICI
 
 Para optimização sob RNH/IFICI ver skill `pt-nhr-ifici`.
 
-## Secção 3: Deduções que a Maioria Esquece (Optimização equivalente a PTKP)
+### Deduções que a Maioria Esquece (Optimização equivalente a PTKP)
 
-### Deduções à Coleta: CIRS art. 78.º a 78.º-F, 83.º-A e 84.º
+#### Deduções à Coleta: CIRS art. 78.º a 78.º-F, 83.º-A e 84.º
 
 **Deduções à Coleta (2026)**
 
@@ -134,11 +158,11 @@ O limite global das deduções de saúde, educação, habitação, pensões de a
 
 As faturas comunicadas à AT até ao fim de fevereiro do ano seguinte contam para as deduções _(art. 78.º-B, n.º 5)_. A AT mostra os valores até 15 de março e o contribuinte pode reclamar até 31 de março _(art. 78.º-B, n.os 6 e 7)_. Um trabalhador independente só deduz como despesas pessoais as faturas fora da sua atividade _(art. 78.º-B, n.º 4)_.
 
-### Deduções Específicas da Categoria B (Contabilidade Organizada)
+#### Deduções Específicas da Categoria B (Contabilidade Organizada)
 
 - **Deduções Específicas da Categoria B**: em contabilidade organizada, o lucro tributável segue as regras do IRC. Deduzem-se gastos reais: renda de escritório, equipamento, serviços profissionais, deslocações, formação, telecomunicações, seguros, depreciações e a Segurança Social obrigatória. Os gastos têm de ser indispensáveis à atividade e documentados.
 
-### Regime Simplificado: Regra de Justificação dos 15%
+#### Regime Simplificado: Regra de Justificação dos 15%
 
 - **Regra de Justificação dos 15%**: para os coeficientes 0,75 e 0,35, acresce ao rendimento tributável a diferença positiva entre 15% do bruto dessas prestações de serviços e a soma de _(CIRS art. 31.º, n.º 13)_:
   - a) €4.587,09 (dedução específica da Categoria A, 8,54 × IAS) ou, se maior, as contribuições obrigatórias para a Segurança Social não deduzidas ao abrigo do art. 31.º, n.º 2;
@@ -153,9 +177,9 @@ As faturas comunicadas à AT até ao fim de fevereiro do ano seguinte contam par
 
 Peça sempre NIF em todas as compras profissionais. A diferença entre €4.587,09 e 15% do bruto é o valor que deve evidenciar com faturas. Exemplo: bruto de €40.000 dá 15% = €6.000; faltam €1.412,91 em despesas comunicadas para não haver acréscimo.
 
-## Secção 4: Optimização de Amortizações
+### Optimização de Amortizações
 
-### Amortizações: Contabilidade Organizada
+#### Amortizações: Contabilidade Organizada
 
 **Amortizações: Contabilidade Organizada** _(Decreto Regulamentar 25/2009)_
 
@@ -178,35 +202,35 @@ As depreciações aceites fiscalmente usam as taxas específicas da Tabela I (po
 
 - **Limite amortização viaturas**: não são aceites as depreciações de viaturas ligeiras de passageiros ou mistas, incluindo elétricas, na parte do custo de aquisição que excede o montante fixado por portaria _(CIRC art. 34.º, n.º 1 e); DR 25/2009, art. 11.º)_. Para viaturas adquiridas em períodos iniciados a partir de 1 de janeiro de 2015, o montante é: €62.500 para veículos exclusivamente elétricos; €50.000 para híbridos plug-in; €37.500 para veículos a GPL ou gás natural veicular; €25.000 para as restantes _(Portaria 467/2010, art. 1.º, n.º 4, na redação da Lei 82-D/2014, art. 24.º)_. A versão anterior desta skill dava €37.500 para "outras" viaturas: é o limite das viaturas a GPL ou GNV; as viaturas a gasolina ou gasóleo têm €25.000. As viaturas também pagam tributação autónoma (ver `pt-corporate-tax`).
 
-### Regime Simplificado
+#### Regime Simplificado
 
 - **Regime Simplificado**: não há depreciações autónomas. O coeficiente substitui todas as despesas. Comprar um ativo não gera dedução adicional, salvo na regra dos 15% se a fatura for de despesa da atividade.
 
-### Reinvestimento de Mais-Valias (IRC, Sociedades)
+#### Reinvestimento de Mais-Valias (IRC, Sociedades)
 
 - **Reinvestimento de Mais-Valias (IRC)**: o saldo positivo entre mais-valias e menos-valias na venda de ativos fixos tangíveis, intangíveis e biológicos não consumíveis, detidos há pelo menos um ano, conta apenas em metade, quando o valor de realização é reinvestido em ativos elegíveis no período anterior, no próprio período ou até ao fim do 2.º período seguinte _(CIRC art. 48.º, n.º 1)_. Também se aplica à Categoria B por remissão: se o reinvestimento não acontecer até ao fim do 2.º período seguinte, a diferença acresce ao rendimento desse período _(CIRS art. 31.º, n.º 6)_.
 
-## Secção 5: Utilização de Prejuízos
+### Utilização de Prejuízos
 
-### Prejuízos da Categoria B (Trabalhadores Independentes)
+#### Prejuízos da Categoria B (Trabalhadores Independentes)
 
 - **Prejuízos da Categoria B**: o resultado líquido negativo da Categoria B reporta-se aos 12 anos seguintes, apenas contra resultados positivos da Categoria B _(CIRS art. 55.º, n.º 1 a))_. No regime simplificado não se geram prejuízos, porque o coeficiente produz sempre rendimento positivo; mas prejuízos anteriores à entrada no simplificado podem ser deduzidos nesse regime _(art. 55.º, n.º 4)_.
 - **Restrição-chave**: o resultado negativo de qualquer categoria só se deduz a resultados positivos da mesma categoria _(art. 55.º, n.º 1)_. Um prejuízo da Categoria B não reduz o salário (Categoria A), os rendimentos de capitais (Categoria E) nem outras categorias.
 
-### Prejuízos da Categoria F (Rendas)
+#### Prejuízos da Categoria F (Rendas)
 
 - O resultado negativo da Categoria F reporta-se aos 6 anos seguintes _(art. 55.º, n.º 1 b))_. O reporte perde-se se o imóvel não gerar rendas durante pelo menos 36 meses, seguidos ou interpolados, nos 5 anos seguintes _(art. 55.º, n.º 8)_.
 
-### IRC (Sociedades)
+#### IRC (Sociedades)
 
 - **IRC (Sociedades): Prejuízos**: os prejuízos fiscais deduzem-se aos lucros tributáveis de um ou mais períodos posteriores, sem limite de tempo, nas deduções feitas em períodos iniciados a partir de 1 de janeiro de 2023, incluindo prejuízos anteriores cujo prazo ainda corria nessa data _(CIRC art. 52.º, n.º 1; Lei 24-D/2022, art. 228.º, n.º 1)_. A dedução de cada ano não pode exceder 65% do lucro tributável desse ano; a parte não deduzida passa para os anos seguintes _(art. 52.º, n.º 2)_. O limite sobe 10 pontos (75%) quando a diferença resulta de prejuízos de 2020 e 2021 _(Lei 27-A/2020, art. 11.º, n.º 2)_. Prejuízos anteriores a 2023 de períodos abrangidos pelo REAID (art. 6.º, n.º 1, da Lei 61/2014) mantêm o prazo em vigor em 31 de dezembro de 2022 _(Lei 24-D/2022, art. 228.º, n.º 2)_. Os prejuízos perdem-se se mudar a titularidade de mais de 50% do capital ou a maioria dos direitos de voto, salvo as exceções do n.º 9 ou razões económicas válidas _(art. 52.º, n.os 8 e 9)_. Ver a skill `pt-corporate-tax`.
 
-### Menos-Valias (Categoria G)
+#### Menos-Valias (Categoria G)
 
 - **Menos-Valias mobiliárias (Categoria G)**: o saldo negativo de ações, outros valores mobiliários, derivados e criptoativos reporta-se aos 5 anos seguintes só quando o contribuinte opta pelo englobamento ou é obrigado a ele _(CIRS art. 55.º, n.º 1 d))_. Quem fica na taxa autónoma de 28% não reporta perdas.
 - **Menos-valias imobiliárias**: a parte do saldo negativo incluída nos termos do art. 43.º, n.º 2, reporta-se aos 5 anos seguintes _(art. 55.º, n.º 1 c))_.
 
-## Secção 6: Estratégias de Timing
+### Estratégias de Timing
 
 **Estratégias de Timing**
 
@@ -221,7 +245,7 @@ As depreciações aceites fiscalmente usam as taxas específicas da Tabela I (po
 | Diferimento de mais-valias | Reinvestir o valor da venda em nova habitação própria e permanente entre 24 meses antes e 36 meses depois da venda (CIRS art. 10.º, n.º 5) para excluir a mais-valia |
 | Prazo de detenção | Ações e fundos detidos mais de 2, 5 ou 8 anos excluem 10%, 20% ou 30% do ganho (art. 43.º, n.º 5). Criptoativos detidos 365 dias ou mais ficam fora de tributação (art. 10.º, n.º 22). Vender um pouco mais tarde muda o imposto |
 
-## Secção 7: Optimização do IVA
+### Optimização do IVA
 
 **Optimização do IVA**
 
@@ -236,9 +260,9 @@ As depreciações aceites fiscalmente usam as taxas específicas da Tabela I (po
 | IVA em serviços transfronteiriços | Serviços B2B a sujeitos passivos com sede noutro Estado membro: o lugar da prestação é o do adquirente (regra geral do CIVA art. 6.º, n.º 6 a)). Não liquida IVA português; o cliente autoliquida no seu país. Confirmar o número no VIES |
 | Declaração recapitulativa | As prestações de serviços a sujeitos passivos de outros Estados membros são indicadas na declaração recapitulativa do art. 23.º do RITI, nos prazos do art. 30.º do RITI (CIVA art. 29.º, n.º 1 i)) |
 
-## Secção 8: Optimização da Segurança Social
+### Optimização da Segurança Social
 
-### Contribuições dos Trabalhadores Independentes
+#### Contribuições dos Trabalhadores Independentes
 
 - **Taxa**: 21,4% para trabalhadores independentes e respetivos cônjuges ou unidos de facto; 25,2% para empresários em nome individual e titulares de EIRL e respetivos cônjuges _(Guia Prático da Segurança Social, 2026)_
 - **Cálculo do rendimento relevante**: trimestral, com base nos rendimentos do trimestre anterior: 70% das prestações de serviços; 20% das vendas de bens e dos serviços de hotelaria, restauração e bebidas declarados como tal. A base mensal é um terço do rendimento relevante do trimestre.
@@ -247,7 +271,7 @@ As depreciações aceites fiscalmente usam as taxas específicas da Tabela I (po
 - **Declaração e pagamento**: declaração trimestral até ao fim de janeiro, abril, julho e outubro; pagamento todos os meses entre o dia 10 e o dia 20 do mês seguinte.
 - **Contabilidade organizada**: a base mensal é 1/12 do lucro tributável do ano anterior, com o mínimo de 1,5 × IAS = €805,70, fixada em outubro para o ano civil seguinte; o independente pode pedir o regime trimestral _(Guia Prático da Segurança Social, 2026; ver `pt-social-contributions`)_.
 
-### Isenções e Reduções
+#### Isenções e Reduções
 
 **Isenções e Reduções**
 
@@ -259,7 +283,7 @@ As depreciações aceites fiscalmente usam as taxas específicas da Tabela I (po
 | Pensionista | Isento se recebe pensão de invalidez ou velhice (nacional ou estrangeira), nas condições do Guia Prático |
 | Cônjuge do empresário | O cônjuge ou unido de facto que trabalha com o independente fica abrangido pelo mesmo regime, à taxa de 21,4% (25,2% no caso de ENI ou EIRL). A alternativa de contratar o cônjuge como trabalhador por conta de outrem não foi revista hoje |
 
-### Estratégias de Optimização
+#### Estratégias de Optimização
 
 - **Início de atividade**: na primeira inscrição, os primeiros 12 meses não pagam contribuições. No IRS, os coeficientes também são reduzidos nos dois primeiros anos (Secção 2). Planear o arranque com estes dois efeitos.
 - **Acumulação trabalho dependente + freelance**: manter um contrato de trabalho com outra entidade pode isentar o rendimento freelance até 4 × IAS de rendimento relevante médio por mês.
@@ -267,7 +291,7 @@ As depreciações aceites fiscalmente usam as taxas específicas da Tabela I (po
 - **Entidades contratantes**: a empresa que recebe mais de 50% da atividade do independente paga uma contribuição própria sobre os serviços (taxas em `pt-social-contributions`). Diversificar clientes evita esse custo para o cliente, mas não pode disfarçar trabalho dependente.
 - **PPR (Plano Poupança Reforma)**: dedução à coleta de 20% das entregas, com limite de €400 (menos de 35 anos), €350 (35 a 50 anos) e €300 (mais de 50 anos), por sujeito passivo; a idade conta a 1 de janeiro do ano da entrega; entregas depois da reforma não dão dedução _(EBF art. 21.º, n.os 2, 9 e 10)_.
 
-## Secção 9: Investimento e Reforma
+### Investimento e Reforma
 
 **Investimento e Reforma**
 
@@ -281,21 +305,21 @@ As depreciações aceites fiscalmente usam as taxas específicas da Tabela I (po
 | Rendimentos prediais (Categoria F) | Taxa autónoma de 25% no arrendamento habitacional, 28% nos outros (art. 72.º, n.os 1 e) e 2); taxas reduzidas para contratos longos em `pt-irs-employees-investment`. Deduzem-se os gastos suportados para obter as rendas, como IMI, condomínio, seguros e conservação, mas não gastos financeiros, depreciações, mobiliário e eletrodomésticos, nem o AIMI (art. 41.º, n.º 1). Não há amortização do edifício na Categoria F |
 | Criptoativos | Ganhos de criptoativos detidos menos de 365 dias: 28% (art. 72.º, n.º 1 c)). Detidos 365 dias ou mais: ganhos e perdas excluídos (art. 10.º, n.º 22). Ver `portugal-crypto-tax` |
 
-### Estratégia de Englobamento
+#### Estratégia de Englobamento
 
 - **Estratégia de Englobamento**: optar pelo englobamento (inclusão nos escalões progressivos) reduz o imposto sobre rendimentos de capitais, rendas ou mais-valias quando a taxa marginal é inferior à taxa autónoma (28%, ou 25% nas rendas habitacionais). Mas o englobamento é tudo ou nada por categoria: quem engloba um rendimento engloba todos os da mesma categoria _(CIRS art. 22.º, n.º 5)_. O englobamento também aumenta o rendimento coletável, o que reduz o limite global das deduções e pode afastar o mínimo de existência. Modelar antes de optar.
 
-### Reinvestimento em Habitação Própria Permanente
+#### Reinvestimento em Habitação Própria Permanente
 
 - **Reinvestimento em Habitação Própria Permanente**: o ganho na venda da habitação própria e permanente é excluído se o valor de realização, deduzido do empréstimo amortizado, for reinvestido noutra habitação própria e permanente (ou terreno e construção, ampliação ou melhoramento) entre os 24 meses anteriores e os 36 meses posteriores à venda, e se a intenção de reinvestir for declarada na declaração do ano da venda _(CIRS art. 10.º, n.º 5, alíneas a) a c))_. O imóvel vendido tem de ter sido a habitação própria e permanente, comprovada pelo domicílio fiscal, nos 12 meses anteriores à venda (ou ao reinvestimento, se anterior) _(art. 10.º, n.º 5 e))_, e o imóvel comprado tem de ser afeto à habitação própria e permanente até 12 meses após o reinvestimento _(art. 10.º, n.º 6 a))_. Reinvestimento parcial: exclusão proporcional _(art. 10.º, n.º 12)_. Condições sobre a localização (Portugal ou UE/EEE), o uso como domicílio fiscal e a regra de 2026 a 2029 para reinvestimento em habitação arrendada: ver `pt-irs-employees-investment`.
 
-## Secção 10: Linhas Vermelhas (Cláusula Anti-Abuso e Riscos de Inspeção)
+### Linhas Vermelhas (Cláusula Anti-Abuso e Riscos de Inspeção)
 
-### Cláusula Geral Anti-Abuso
+#### Cláusula Geral Anti-Abuso
 
 - **Cláusula geral anti-abuso**: são desconsideradas para efeitos tributários as construções que, tendo como finalidade principal ou uma das finalidades principais obter uma vantagem fiscal que frustre o objeto do direito fiscal, sejam realizadas com abuso das formas jurídicas ou não sejam genuínas. A tributação faz-se pelas normas aplicáveis à realidade económica _(LGT art. 38.º, n.º 2)_. A aplicação exige audição prévia do contribuinte, que tem 30 dias para responder, e autorização prévia do dirigente máximo do serviço _(CPPT art. 63.º, n.os 5 e 7)_.
 
-### Gatilhos de Inspeção da AT
+#### Gatilhos de Inspeção da AT
 
 **Gatilhos de Inspeção da AT** (riscos práticos; a base legal está indicada quando existe)
 
@@ -311,11 +335,11 @@ As depreciações aceites fiscalmente usam as taxas específicas da Tabela I (po
 | Fuga a contribuições à Segurança Social | A Segurança Social recebe da AT os dados de início de atividade; contribuições em atraso pagam juros e coimas (ver `pt-social-contributions`) |
 | Pedidos de reembolso de IVA de montante elevado | Revisão e inspeção antes do reembolso |
 
-### Proibições Absolutas
+#### Proibições Absolutas
 
 - **Proibições Absolutas**: NUNCA aconselhar emissão de recibos verdes para trabalho que constitua relação laboral dependente; NUNCA aconselhar omissão de rendimento quando as faturas são comunicadas via e-fatura; NUNCA aconselhar declarar transmissões imobiliárias abaixo do valor real; NUNCA aconselhar fragmentação artificial de rendimento para se manter abaixo do limite de €200.000 do regime simplificado; NUNCA aconselhar a não inscrição em IVA quando acima do limiar de isenção; NUNCA aconselhar evitar a inscrição na Segurança Social quando legalmente exigida.
 
-## Secção 11: Calendário Anual de Planeamento Fiscal
+### Calendário Anual de Planeamento Fiscal
 
 **Calendário Anual de Planeamento Fiscal (2026, com a declaração de 2027)**
 
@@ -333,18 +357,21 @@ As depreciações aceites fiscalmente usam as taxas específicas da Tabela I (po
 | Novembro | Planear entregas para PPR do fim do ano. Rever prazos de reinvestimento de vendas de imóveis (24 meses antes, 36 meses depois) |
 | Dezembro | 3.º pagamento por conta até 20 de dezembro. **Mês crítico:** entregas para PPR e donativos. Garantir que as faturas da atividade têm NIF. Antecipar despesas em contabilidade organizada |
 
-## Secção 12: Exemplos de Impacto Financeiro
+## Worked cases
+
+The four cases below (kept from the earlier version and recomputed with the Decreto-Lei 212/2026 bands) are each a decision worked both ways: simplified regime or organised accounts, joint or separate taxation, selling crypto before or after 365 days, and reinvesting a property gain or not.
+
 
 Os exemplos usam os escalões de 2026 e o método do art. 68.º, n.º 2 (taxa média do escalão completo mais taxa normal sobre o excedente). Não incluem deduções à coleta nem o mínimo de existência, salvo indicação.
 
-### Exemplo 1: Regime Simplificado vs Contabilidade Organizada (Freelancer)
+#### Exemplo 1: Regime Simplificado vs Contabilidade Organizada (Freelancer)
 
 **Freelancer de uma atividade da tabela do art. 151.º, residente, sem outros rendimentos, rendimentos brutos de €50.000 em 2026. Outras despesas reais da atividade (sem a Segurança Social): €8.000, todas em faturas comunicadas. Não está nos dois primeiros anos de atividade.**
 
 1. **Segurança Social** (igual nos dois cenários, para comparar): 70% × 50.000 × 21,4% = €7.490 no ano. A base mensal (35.000 / 12 = €2.916,67) está abaixo do limite de €6.445,56. Em contabilidade organizada a base seria o lucro do ano anterior; o exemplo assume o mesmo valor.
-2. **Regime simplificado:** 50.000 × 0,75 = €37.500. A Segurança Social acima de 10% do bruto deduz-se: 7.490 - 5.000 = €2.490 (art. 31.º, n.º 2). Rendimento tributável €35.010. Regra dos 15%: 15% × 50.000 = €7.500; justificado = 5.000 (maior entre €4.587,09 e a Segurança Social não deduzida de €5.000) + 8.000 = €13.000. Não há acréscimo. IRS: 29.397 × 20,579% + (35.010 - 29.397) × 34,90% = €8.008,55.
-3. **Contabilidade organizada:** 50.000 - 8.000 - 7.490 = €34.510. IRS: 29.397 × 20,579% + (34.510 - 29.397) × 34,90% = €7.834,05.
-4. **Resultado:** a contabilidade organizada poupa €174,50 de IRS antes dos honorários do contabilista certificado. Se os honorários forem superiores, o simplificado ganha. Com Segurança Social acima de 10% do bruto, a contabilidade organizada só baixa o IRS quando as outras despesas reais excedem 15% do bruto (aqui €7.500).
+2. **Regime simplificado:** 50.000 × 0,75 = €37.500. A Segurança Social acima de 10% do bruto deduz-se: 7.490 - 5.000 = €2.490 (art. 31.º, n.º 2). Rendimento tributável €35.010. Regra dos 15%: 15% × 50.000 = €7.500; justificado = 5.000 (maior entre €4.587,09 e a Segurança Social não deduzida de €5.000) + 8.000 = €13.000. Não há acréscimo. IRS: 29.397 × 20,136% + (35.010 - 29.397) × 34,60% = €7.861,48.
+3. **Contabilidade organizada:** 50.000 - 8.000 - 7.490 = €34.510. IRS: 29.397 × 20,136% + (34.510 - 29.397) × 34,60% = €7.688,48.
+4. **Resultado:** a contabilidade organizada poupa €173,00 de IRS antes dos honorários do contabilista certificado. Se os honorários forem superiores, o simplificado ganha. Com Segurança Social acima de 10% do bruto, a contabilidade organizada só baixa o IRS quando as outras despesas reais excedem 15% do bruto (aqui €7.500).
 
 ```oa-check
 name: PT freelancer art. 151, gross 50,000, simplified vs organised accounts, 2026 bands
@@ -356,8 +383,8 @@ inputs:
   coef: 0.75
   specific_deduction: 4587.09
   band5_top: 29397
-  band5_avg: 0.20579
-  band6_rate: 0.349
+  band5_avg: 0.20136
+  band6_rate: 0.346
 steps:
   - ss: gross * ss_share * ss_rate
   - ss_deductible: max(0, ss - 0.10 * gross)
@@ -372,19 +399,19 @@ expected:
   ss: 7490.00
   simplified_taxable: 35010.00
   addback: 0
-  simplified_tax: 8008.55
+  simplified_tax: 7861.48
   organised_taxable: 34510.00
-  organised_tax: 7834.05
-  saving_organised: 174.50
+  organised_tax: 7688.48
+  saving_organised: 173.00
 ```
 
-### Exemplo 2: Tributação Conjunta vs Separada
+#### Exemplo 2: Tributação Conjunta vs Separada
 
 **Casal casado. Rendimento coletável do Cônjuge A: €60.000. Cônjuge B: €10.000 (segundo cenário: €0).**
 
-1. **Separada:** A: 46.566 × 26,472% + (60.000 - 46.566) × 44,60% = €18.318,52. B: 8.342 × 12,50% + (10.000 - 8.342) × 15,70% = €1.303,06. Total €19.621,58.
-2. **Conjunta:** 70.000 / 2 = €35.000. Imposto sobre metade: 29.397 × 20,579% + (35.000 - 29.397) × 34,90% = €8.005,06. Vezes dois: €16.010,12. **A tributação conjunta poupa €3.611,46** neste caso.
-3. **Se o Cônjuge B aufere €0:** conjunta: 60.000 / 2 = €30.000; 29.397 × 20,579% + 603 × 34,90% = €6.260,06; vezes dois €12.520,12. Separada: €18.318,52. **A tributação conjunta poupa €5.798,40.**
+1. **Separada:** A: 46.566 × 26,103% + (60.000 - 46.566) × 44,60% = €18.146,69. B: 8.342 × 12,20% + (10.000 - 8.342) × 15,20% = €1.269,74. Total €19.416,43.
+2. **Conjunta:** 70.000 / 2 = €35.000. Imposto sobre metade: 29.397 × 20,136% + (35.000 - 29.397) × 34,60% = €7.858,02. Vezes dois: €15.716,04. **A tributação conjunta poupa €3.700,39** neste caso.
+3. **Se o Cônjuge B aufere €0:** conjunta: 60.000 / 2 = €30.000; 29.397 × 20,136% + 603 × 34,60% = €6.128,02; vezes dois €12.256,04. Separada: €18.146,69. **A tributação conjunta poupa €5.890,65.**
 4. Antes de optar, refazer a comparação com as deduções à coleta e o mínimo de existência (art. 70.º), que o exemplo não inclui: na tributação separada cada cônjuge tem os seus limites, e o limite global do art. 78.º, n.º 7, muda com o rendimento coletável.
 
 ```oa-check
@@ -393,13 +420,13 @@ inputs:
   a_income: 60000
   b_income: 10000
   band1_top: 8342
-  band1_rate: 0.125
-  band2_rate: 0.157
+  band1_rate: 0.122
+  band2_rate: 0.152
   band5_top: 29397
-  band5_avg: 0.20579
-  band6_rate: 0.349
+  band5_avg: 0.20136
+  band6_rate: 0.346
   band7_top: 46566
-  band7_avg: 0.26472
+  band7_avg: 0.26103
   band8_rate: 0.446
 steps:
   - tax_a: round(band7_top * band7_avg + (a_income - band7_top) * band8_rate, 2)
@@ -411,16 +438,16 @@ steps:
   - joint_b_zero: 2 * round(band5_top * band5_avg + (a_income / 2 - band5_top) * band6_rate, 2)
   - saving_b_zero: tax_a - joint_b_zero
 expected:
-  tax_a: 18318.52
-  tax_b: 1303.06
-  separate: 19621.58
-  joint: 16010.12
-  saving_joint: 3611.46
-  joint_b_zero: 12520.12
-  saving_b_zero: 5798.40
+  tax_a: 18146.69
+  tax_b: 1269.74
+  separate: 19416.43
+  joint: 15716.04
+  saving_joint: 3700.39
+  joint_b_zero: 12256.04
+  saving_b_zero: 5890.65
 ```
 
-### Exemplo 3: Criptoativos Detidos Mais de 365 Dias
+#### Exemplo 3: Criptoativos Detidos Mais de 365 Dias
 
 **Comprou BTC por €10.000 em janeiro de 2025. Vendeu por €25.000 em março de 2026 (mais de 365 dias). Não é atividade empresarial.**
 
@@ -445,14 +472,14 @@ expected:
   tax_long: 0
 ```
 
-### Exemplo 4: Reinvestimento em Habitação Própria Permanente
+#### Exemplo 4: Reinvestimento em Habitação Própria Permanente
 
 **Venda em junho de 2026 da habitação própria e permanente por €300.000, comprada em março de 2025 por €200.000 e usada como domicílio fiscal desde a compra (mais de 12 meses antes da venda, art. 10.º, n.º 5 e)). Sem empréstimo. Outro rendimento coletável do vendedor: €30.000. Sem correção monetária: detida menos de 24 meses (art. 50.º, n.º 1).**
 
 1. Mais-valia €100.000; 50% incluído = €50.000 (art. 43.º, n.º 2 b)). Rendimento coletável passa de €30.000 para €80.000.
-2. IRS sobre €30.000: €6.260,06. IRS sobre €80.000: 46.566 × 26,472% + (80.000 - 46.566) × 44,60% = €27.238,52. Imposto adicional da venda: **€20.978,46**. (Sem taxa de solidariedade: aplica-se só acima de €80.000.)
+2. IRS sobre €30.000: €6.128,02. IRS sobre €80.000: 46.566 × 26,103% + (80.000 - 46.566) × 44,60% = €27.066,69. Imposto adicional da venda: **€20.938,67**. (Sem taxa de solidariedade: aplica-se só acima de €80.000.)
 3. Reinvestir os €300.000 em nova habitação própria e permanente dentro do prazo, declarar a intenção e morar nela no prazo de 12 meses: **€0 de imposto** sobre a venda (art. 10.º, n.os 5 e 6).
-4. Reinvestimento parcial de €200.000 (2/3 do valor de realização): exclui-se a parte proporcional (art. 10.º, n.º 12). Fica tributado 1/3 do ganho: 100.000 / 3 × 50% = €16.666,67 incluídos. IRS sobre €46.666,67: 46.566 × 26,472% + 100,67 × 44,60% = €12.371,85; imposto adicional **€6.111,79**.
+4. Reinvestimento parcial de €200.000 (2/3 do valor de realização): exclui-se a parte proporcional (art. 10.º, n.º 12). Fica tributado 1/3 do ganho: 100.000 / 3 × 50% = €16.666,67 incluídos. IRS sobre €46.666,67: 46.566 × 26,103% + 100,67 × 44,60% = €12.200,02; imposto adicional **€6.072,00**.
 
 ```oa-check
 name: PT main home sale gain 100,000, other income 30,000, full and two-thirds reinvestment, 2026 bands
@@ -463,10 +490,10 @@ inputs:
   reinvested: 200000
   inclusion: 0.50
   band5_top: 29397
-  band5_avg: 0.20579
-  band6_rate: 0.349
+  band5_avg: 0.20136
+  band6_rate: 0.346
   band7_top: 46566
-  band7_avg: 0.26472
+  band7_avg: 0.26103
   band8_rate: 0.446
 steps:
   - gain: sale - cost
@@ -480,71 +507,81 @@ steps:
   - extra_partial: tax_partial - tax_base
 expected:
   included: 50000
-  tax_base: 6260.06
-  tax_with_sale: 27238.52
-  extra_no_reinvest: 20978.46
+  tax_base: 6128.02
+  tax_with_sale: 27066.69
+  extra_no_reinvest: 20938.67
   included_partial: 16666.67
-  tax_partial: 12371.85
-  extra_partial: 6111.79
+  tax_partial: 12200.02
+  extra_partial: 6072.00
 ```
+
+## When to refuse or refer
+
+- Arrangements whose main purpose is the tax saving (artificial splitting, interposed companies, moving income abroad): refuse and explain LGT art. 38.
+- Non-residents, IFICI and treaty questions: `pt-nhr-ifici`, `pt-cross-border`, or refer.
+- Company reorganisations, transfer pricing, CFC rules: refer.
+- Housing rent deduction cap for 2026 under Decreto-Lei 97/2026: not re-read today; confirm before relying on it.
 
 ## Sources
 
+Every page below was opened on 2026-11-14 and the figures this skill takes from it were found in the text.
+
 | Source | URL | Read on |
 |---|---|---|
-| CIRS art. 68, IRS bands 2026 (wording of Lei 73-A/2025) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs68.aspx | 2026-10-30 |
-| CIRS art. 68-A, solidarity surcharge | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs68a.aspx | 2026-10-30 |
-| CIRS art. 69, joint taxation divisor | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs69.aspx | 2026-10-30 |
-| CIRS art. 59, joint taxation option | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs59.aspx | 2026-10-30 |
-| CIRS art. 70, minimum existence | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs70.aspx | 2026-10-30 |
-| CIRS art. 12-B, IRS Jovem | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs12b.aspx | 2026-10-30 |
-| CIRS art. 22, aggregation of a whole category | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs22.aspx | 2026-10-30 |
-| CIRS art. 25, specific deduction 8.54 x IAS | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs25.aspx | 2026-10-30 |
-| CIRS art. 28, simplified regime limit | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs28.aspx | 2026-10-30 |
-| CIRS art. 31, coefficients, 10% and 15% rules | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs31.aspx | 2026-10-30 |
-| CIRS art. 10, capital gains, main home reinvestment, crypto 365 days | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs10.aspx | 2026-10-30 |
-| CIRS art. 40-A, 50% of dividends | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs40a.aspx | 2026-10-30 |
-| CIRS art. 41, Category F deductions | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs41.aspx | 2026-10-30 |
-| CIRS art. 43, 50% inclusion and holding-period exclusions | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs43.aspx | 2026-10-30 |
-| CIRS art. 44, value for IMT prevails | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs44.aspx | 2026-10-30 |
-| CIRS art. 55, losses | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs55.aspx | 2026-10-30 |
-| CIRS art. 60, filing period | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs60.aspx | 2026-10-30 |
-| CIRS art. 71, 28% final withholding and option | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs71.aspx | 2026-10-30 |
-| CIRS art. 72, autonomous rates | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs72.aspx | 2026-10-30 |
-| CIRS art. 78, overall cap on deductions | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs78.aspx | 2026-10-30 |
-| CIRS art. 78-B, general family expenses and e-fatura dates | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs78b.aspx | 2026-10-30 |
-| CIRS art. 78-C, health | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs78c.aspx | 2026-10-30 |
-| CIRS art. 78-D, education | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs78d.aspx | 2026-10-30 |
-| CIRS art. 78-E, housing (with Decreto-Lei 97/2026 art. 15 transitional rule) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs78e.aspx | 2026-10-30 |
-| CIRS art. 78-F, VAT on invoices | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs78f.aspx | 2026-10-30 |
-| CIRS art. 83-A, alimony | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs83a.aspx | 2026-10-30 |
-| CIRS art. 84, care homes | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs84.aspx | 2026-10-30 |
-| CIRS art. 102, payments on account | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs102.aspx | 2026-10-30 |
-| CIRC art. 87, IRC rates, with Lei 64/2025 art. 3 transitional rule (19% in 2026) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc87.aspx | 2026-10-30 |
-| CIRC art. 52, tax losses, with Lei 24-D/2022 art. 228 | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc52.aspx | 2026-10-30 |
-| Lei 27-A/2020, art. 11(2), +10 points for 2020 and 2021 losses | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Lei_27_A_2020.pdf | 2026-10-30 |
-| CIRC art. 48, reinvestment of gains | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc48.aspx | 2026-10-30 |
-| CIRC art. 34, car depreciation cap | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc34.aspx | 2026-10-30 |
-| CIRC art. 66, controlled foreign companies | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc66.aspx | 2026-10-30 |
-| Decreto Regulamentar 25/2009 (AT copy with amendment history; tables not reproduced) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/outros_diplomas/Documents/Dec_Regulamentar25_2009.pdf | 2026-10-30 |
-| Decreto Regulamentar 25/2009, original text in the Diário da República (Tabela II rates) | https://files.diariodarepublica.pt/1s/2009/09/17800/0627006285.pdf | 2026-10-30 |
-| Lei 82-D/2014, art. 23 (code 2250, 8%) and art. 24 (Portaria 467/2010 car caps) | https://files.diariodarepublica.pt/1s/2014/12/25202/0032000338.pdf | 2026-10-30 |
-| Portaria 467/2010, art. 1(4), car cost caps (AT consolidated copy) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Portaria_467-2010.pdf | 2026-10-30 |
-| CIRS art. 50, inflation correction after 24 months | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs50.aspx | 2026-10-30 |
-| CIVA art. 53, small-business exemption EUR 15,000 | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/artigo-53-o-do-civa.aspx | 2026-10-30 |
-| CIVA art. 58, end of exemption, 25% margin | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/iva58.aspx | 2026-10-30 |
-| CIVA art. 18, mainland VAT rates | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/iva18.aspx | 2026-10-30 |
-| CIVA art. 6, place of supply of services | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/iva6.aspx | 2026-10-30 |
-| CIVA art. 29, recapitulative statement | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/iva29.aspx | 2026-10-30 |
-| CIVA art. 41, periodic return deadlines, EUR 650,000 | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/iva41.aspx | 2026-10-30 |
-| EBF art. 21, PPR | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/bf_rep/Pages/ebf-artigo-21-ordm-.aspx | 2026-10-30 |
-| LGT art. 38, general anti-abuse clause | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/lgt/Pages/lgt38.aspx | 2026-10-30 |
-| CPPT art. 63, anti-abuse procedure | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cppt/Pages/cppt63.aspx | 2026-10-30 |
-| Segurança Social, Guia Prático, Trabalhadores Independentes (2026: IAS EUR 537.13, 21.4%, 25.2%, 70%/20%, EUR 20 minimum, ceiling EUR 6,445.56, 4 x IAS exemption, organised-accounts base 1/12 of profit with EUR 805.70 minimum, 12-month start, payment 10th to 20th, 25% option) | https://www.seg-social.pt/ptss/pssd/documento/cmc1xyfxz00dekl2ynxz676sw | 2026-10-30 |
+| CIRS art. 68. Read for the 2026 bands in the wording of Decreto-Lei 212/2026 | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs68.aspx | 2026-11-14 |
+| Decreto-Lei 212/2026 of 4 November 2026 (AT copy). Read for the new rates of bands 1 to 6 and their effect from 1 January 2026 on income obtained in 2026 | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Decreto-Lei-212-2026.pdf | 2026-11-14 |
+| CIRS art. 68-A, solidarity surcharge | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs68a.aspx | 2026-11-14 |
+| CIRS art. 69, joint taxation divisor | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs69.aspx | 2026-11-14 |
+| CIRS art. 59, joint taxation option | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs59.aspx | 2026-11-14 |
+| CIRS art. 70, minimum existence | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs70.aspx | 2026-11-14 |
+| CIRS art. 12-B, IRS Jovem | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs12b.aspx | 2026-11-14 |
+| CIRS art. 22, aggregation of a whole category | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs22.aspx | 2026-11-14 |
+| CIRS art. 25, specific deduction 8.54 x IAS | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs25.aspx | 2026-11-14 |
+| CIRS art. 28, simplified regime limit | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs28.aspx | 2026-11-14 |
+| CIRS art. 31, coefficients, 10% and 15% rules | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs31.aspx | 2026-11-14 |
+| CIRS art. 10, capital gains, main home reinvestment, crypto 365 days | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs10.aspx | 2026-11-14 |
+| CIRS art. 40-A, 50% of dividends | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs40a.aspx | 2026-11-14 |
+| CIRS art. 41, Category F deductions | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs41.aspx | 2026-11-14 |
+| CIRS art. 43, 50% inclusion and holding-period exclusions | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs43.aspx | 2026-11-14 |
+| CIRS art. 44, value for IMT prevails | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs44.aspx | 2026-11-14 |
+| CIRS art. 55, losses | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs55.aspx | 2026-11-14 |
+| CIRS art. 60, filing period | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs60.aspx | 2026-11-14 |
+| CIRS art. 71, 28% final withholding and option | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs71.aspx | 2026-11-14 |
+| CIRS art. 72, autonomous rates | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs72.aspx | 2026-11-14 |
+| CIRS art. 78, overall cap on deductions | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs78.aspx | 2026-11-14 |
+| CIRS art. 78-B, general family expenses and e-fatura dates | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs78b.aspx | 2026-11-14 |
+| CIRS art. 78-C, health | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs78c.aspx | 2026-11-14 |
+| CIRS art. 78-D, education | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs78d.aspx | 2026-11-14 |
+| CIRS art. 78-E, housing (with Decreto-Lei 97/2026 art. 15 transitional rule) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs78e.aspx | 2026-11-14 |
+| CIRS art. 78-F, VAT on invoices | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs78f.aspx | 2026-11-14 |
+| CIRS art. 83-A, alimony | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs83a.aspx | 2026-11-14 |
+| CIRS art. 84, care homes | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs84.aspx | 2026-11-14 |
+| CIRS art. 102, payments on account | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs102.aspx | 2026-11-14 |
+| CIRC art. 87, IRC rates, with Lei 64/2025 art. 3 transitional rule (19% in 2026) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc87.aspx | 2026-11-14 |
+| CIRC art. 52, tax losses, with Lei 24-D/2022 art. 228 | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc52.aspx | 2026-11-14 |
+| Lei 27-A/2020, art. 11(2), +10 points for 2020 and 2021 losses | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Lei_27_A_2020.pdf | 2026-11-14 |
+| CIRC art. 48, reinvestment of gains | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc48.aspx | 2026-11-14 |
+| CIRC art. 34, car depreciation cap | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc34.aspx | 2026-11-14 |
+| CIRC art. 66, controlled foreign companies | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc66.aspx | 2026-11-14 |
+| Decreto Regulamentar 25/2009 (AT copy with amendment history; tables not reproduced) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/outros_diplomas/Documents/Dec_Regulamentar25_2009.pdf | 2026-11-14 |
+| Decreto Regulamentar 25/2009, original text in the Diário da República (Tabela II rates) | https://files.diariodarepublica.pt/1s/2009/09/17800/0627006285.pdf | 2026-11-14 |
+| Lei 82-D/2014, art. 23 (code 2250, 8%) and art. 24 (Portaria 467/2010 car caps) | https://files.diariodarepublica.pt/1s/2014/12/25202/0032000338.pdf | 2026-11-14 |
+| Portaria 467/2010, art. 1(4), car cost caps (AT consolidated copy) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Portaria_467-2010.pdf | 2026-11-14 |
+| CIRS art. 50, inflation correction after 24 months | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs50.aspx | 2026-11-14 |
+| CIVA art. 53, small-business exemption EUR 15,000 | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/artigo-53-o-do-civa.aspx | 2026-11-14 |
+| CIVA art. 58, end of exemption, 25% margin | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/iva58.aspx | 2026-11-14 |
+| CIVA art. 18, mainland VAT rates | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/iva18.aspx | 2026-11-14 |
+| CIVA art. 6, place of supply of services | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/iva6.aspx | 2026-11-14 |
+| CIVA art. 29, recapitulative statement | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/iva29.aspx | 2026-11-14 |
+| CIVA art. 41, periodic return deadlines, EUR 650,000 | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/iva41.aspx | 2026-11-14 |
+| EBF art. 21, PPR | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/bf_rep/Pages/ebf-artigo-21-ordm-.aspx | 2026-11-14 |
+| LGT art. 38, general anti-abuse clause | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/lgt/Pages/lgt38.aspx | 2026-11-14 |
+| CPPT art. 63, anti-abuse procedure | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cppt/Pages/cppt63.aspx | 2026-11-14 |
+| Segurança Social, Guia Prático, Trabalhadores Independentes (2026: IAS EUR 537.13, 21.4%, 25.2%, 70%/20%, EUR 20 minimum, ceiling EUR 6,445.56, 4 x IAS exemption, organised-accounts base 1/12 of profit with EUR 805.70 minimum, 12-month start, payment 10th to 20th, 25% option) | https://www.seg-social.pt/ptss/pssd/documento/cmc1xyfxz00dekl2ynxz676sw | 2026-11-14 |
 
-Not yet confirmed: the "50% reduction in months 13 to 24" of self-employed contributions (not found in the Guia Prático read today); hiring a spouse as an employee as an alternative to the spouse cover (not reviewed); the donations deduction in the EBF (the old version said "up to 15% of the tax"; not read); the deadline for reporting household composition to AT (the old version said March; not read); the Código do Trabalho rules on false self-employment; the rule-of-thumb that incorporation pays above about EUR 60,000 to 80,000 of profit (no official source; replaced by a method); Azores and Madeira VAT rates are taken from `portugal-vat-return` and were not re-read today; the IRC derrama and autonomous taxation figures are in `pt-corporate-tax` and were not re-read today.
+Not yet confirmed: the "50% reduction in months 13 to 24" of self-employed contributions (not found in the Guia Prático read today); hiring a spouse as an employee as an alternative to the spouse cover (not reviewed); the donations deduction in the EBF (the old version said "up to 15% of the tax"; not read); the deadline for reporting household composition to AT (the old version said March; not read); the Código do Trabalho rules on false self-employment; the rule-of-thumb that incorporation pays above about EUR 60,000 to 80,000 of profit (no official source; replaced by a method); Azores and Madeira VAT rates are taken from `portugal-vat-return` and were not re-read today; the IRC derrama and autonomous taxation figures are in `pt-corporate-tax` and were not re-read today; the 2026 housing rent deduction cap of EUR 900 (Decreto-Lei 97/2026 art. 15(1)) was not re-read today; the Code text read today shows EUR 800 with a formula up to EUR 1,100 for taxable income up to EUR 30,000.
 
-## Aviso Legal
+## Disclaimer
 
 Esta skill e os seus resultados são fornecidos apenas para fins informativos e computacionais e não constituem aconselhamento fiscal, jurídico ou financeiro. A Open Accountants e os seus contribuintes não assumem qualquer responsabilidade por erros, omissões ou consequências decorrentes da utilização desta skill. Todos os resultados devem ser revistos e validados por um profissional qualificado (como um Contabilista Certificado, consultor fiscal ou profissional licenciado equivalente na sua jurisdição) antes da entrega ou atuação.
 

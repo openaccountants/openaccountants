@@ -1,14 +1,15 @@
 ---
 name: ee-corporate-income-tax
 description: "Estonian corporate income tax for tax year 2026 under the Income Tax Act (tulumaksuseadus) consolidated text in force from 1 October 2026. Estonia taxes a company only when it distributes profit: 22% of the gross amount, charged as 22/78 of the net payment. Covers dividends, capital reductions, share buybacks and liquidation, deemed distributions (fringe benefits, gifts and donations, entertainment, non-business expenses, loans to shareholders), the participation exemption, the 2025 abolition of the 14/86 rate and the 7% withholding when 14/86-taxed dividends are passed on to individuals, the 18% quarterly advance tax for banks, exceeding borrowing costs, the cancelled 2026 rise to 24% and security tax, the monthly TSD return, interest and fines. Trigger on 'Estonia corporate tax', 'OÜ dividend tax', '22/78', 'distributed profit tax Estonia', 'TSD dividend', 'Estonian fringe benefit tax'. Out of scope: withholding on payments to non-residents and permanent establishments (ee-cross-border), transfer pricing (ee-transfer-pricing), individuals (estonia-income-tax), social tax (estonia-social-contributions), payroll (estonia-payroll), VAT (estonia-vat-return)."
-version: 0.1
+version: 0.2
 jurisdiction: EE
 tax_year: 2026
-last_updated: 2026-10-24
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: corporate-tax
+type: computation
 ---
 
 # Estonia corporate income tax, tax year 2026
@@ -37,19 +38,19 @@ See also: `ee-cross-border` (withholding on payments to non-residents, permanent
 |---|---|---|---|
 | Income tax rate | 22% | 2026 | TuMS § 4(1), [riigiteataja.ee/akt/TuMS](https://www.riigiteataja.ee/akt/TuMS) |
 | Gross-up for distributions and deemed distributions | Taxable amount ÷ 0.78 × 22%, so 22/78 of the net amount | 2026 | TuMS § 4(1^1); [EMTA tax rates](https://www.emta.ee/en/private-client/taxes-and-payment/declaration-income/tax-rates) |
-| Reduced 14/86 rate on regular dividends | Abolished from 1 January 2025 (former § 50^1 repealed) | 2025 onward | TuMS § 4(4) and § 50^1, repealed by RT I, 30.06.2023, 107; EMTA tax rates |
-| Withholding when a company passes on to an individual a dividend it received (exempt under § 50(1^1)) whose underlying profit was taxed at 14/86 under former § 50^1 | 7% | 2026 | TuMS § 61(68) |
+| Reduced 14/86 rate on regular dividends | Abolished from 1 January 2025 (former § 50^1 repealed) | 2025 onward | TuMS § 4(4) and § 50^1, repealed by RT I, 30.06.2023, 107; EMTA tax rates; https://www.riigiteataja.ee/en/akt/520102026008 |
+| Withholding when a company passes on to an individual a dividend it received (exempt under § 50(1^1)) whose underlying profit was taxed at 14/86 under former § 50^1 | 7% | 2026 | TuMS § 61(68); https://www.riigiteataja.ee/en/akt/520102026008 |
 | Planned rise to 24% (and 0.78 to 0.76) from 1 January 2026 | Cancelled before it took effect; the rate stays 22% for companies and individuals | 2026 | Enacted by § 3 of the act of 18.06.2025 (RT I, 08.07.2025, 1); deleted by § 1 of the act of 03.12.2025 (RT I, 18.12.2025, 3); [Ministry of Finance, 23.12.2025](https://www.fin.ee/uudised/2026-aastal-joustuvad-seadusemuudatused) |
 | Security tax (julgeolekumaks) on company profit | Does not apply: the Security Tax Act (RT I, 02.01.2025, 2) was repealed before it took effect | 2026 | § 2 of the act of 18.06.2025 (RT I, 08.07.2025, 1); [Ministry of Finance, 18.06.2025](https://www.fin.ee/uudised/riigikogu-kiitis-heaks-julgeolekumaksu-muudatused) |
-| Participation exemption, minimum holding | 10% of shares or votes at the time the dividend is received | 2026 | TuMS § 50(1^1) points 1 and 3 |
-| Credit institution advance tax | 18% of the previous quarter's profit, no gross-up | 2026 | TuMS § 4(5), § 47^1 |
-| Advertising gifts | Exempt up to EUR 21 per item, excluding VAT | 2026 | TuMS § 49(1) |
-| Donations to listed associations | Exempt up to 3% of the year's payments subject to social tax, or 10% of last financial year's accounting profit (one limit, chosen by the company) | 2026 | TuMS § 49(2), (3) |
-| Entertaining guests and partners | Exempt up to EUR 50 a month plus 2% of that month's payments subject to social tax | 2026 | TuMS § 49(4) |
-| Employee health expenses | Exempt up to EUR 400 per employee a year, if offered to all employees | 2026 | TuMS § 48(5^5) |
-| Employee accommodation | Exempt up to EUR 500 a month in Tallinn or Tartu, EUR 250 elsewhere, if the home is at least 50 km away and the employee owns no housing closer to work | 2026 | TuMS § 48(5^6) |
-| Company car available for private use | EUR 1.96 per kW a month; EUR 1.47 per kW if the car is older than five years | 2026 | TuMS § 48(8) |
-| Exceeding borrowing costs | Taxed above EUR 3,000,000 and 30% of EBITDA | 2026 | TuMS § 54^2(1) |
+| Participation exemption, minimum holding | 10% of shares or votes at the time the dividend is received | 2026 | TuMS § 50(1^1) points 1 and 3; https://www.riigiteataja.ee/en/akt/520102026008 |
+| Credit institution advance tax | 18% of the previous quarter's profit, no gross-up | 2026 | TuMS § 4(5), § 47^1; https://www.riigiteataja.ee/en/akt/520102026008 |
+| Advertising gifts | Exempt up to EUR 21 per item, excluding VAT | 2026 | TuMS § 49(1); https://www.riigiteataja.ee/en/akt/520102026008 |
+| Donations to listed associations | Exempt up to 3% of the year's payments subject to social tax, or 10% of last financial year's accounting profit (one limit, chosen by the company) | 2026 | TuMS § 49(2), (3); https://www.riigiteataja.ee/en/akt/520102026008 |
+| Entertaining guests and partners | Exempt up to EUR 50 a month plus 2% of that month's payments subject to social tax | 2026 | TuMS § 49(4); https://www.riigiteataja.ee/en/akt/520102026008 |
+| Employee health expenses | Exempt up to EUR 400 per employee a year, if offered to all employees | 2026 | TuMS § 48(5^5); https://www.riigiteataja.ee/en/akt/520102026008 |
+| Employee accommodation | Exempt up to EUR 500 a month in Tallinn or Tartu, EUR 250 elsewhere, if the home is at least 50 km away and the employee owns no housing closer to work | 2026 | TuMS § 48(5^6); https://www.riigiteataja.ee/en/akt/520102026008 |
+| Company car available for private use | EUR 1.96 per kW a month; EUR 1.47 per kW if the car is older than five years | 2026 | TuMS § 48(8); https://www.riigiteataja.ee/en/akt/520102026008 |
+| Exceeding borrowing costs | Taxed above EUR 3,000,000 and 30% of EBITDA | 2026 | TuMS § 54^2(1); https://www.riigiteataja.ee/en/akt/520102026008 |
 | Late payment interest | 0.06% a day | 2026 | MKS § 117(1), [riigiteataja.ee/akt/MKS](https://www.riigiteataja.ee/akt/MKS) |
 
 ## The taxable base
@@ -203,19 +204,19 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Tulumaksuseadus (Income Tax Act), consolidated text in force 01.10.2026 to 31.12.2026 (RT 109072026066), §§ 1 to 7, 34, 47^1 to 54^10, 61(68) to (70) | https://www.riigiteataja.ee/akt/TuMS | 2026-10-24 |
-| Income Tax Act, official English translation of the same version | https://www.riigiteataja.ee/en/akt/520102026008 | 2026-10-23 |
-| Maksukorralduse seadus (Taxation Act), consolidated text in force from 17.10.2026 (RT 116102026009), §§ 115, 117, 153^1, 154 | https://www.riigiteataja.ee/akt/MKS | 2026-10-24 |
-| Karistusseadustik (Penal Code), consolidated text in force 01.10.2026 to 31.12.2026, § 47(1) (fine unit EUR 8 from 1 January 2025) | https://www.riigiteataja.ee/et/akt/109072026028 | 2026-10-24 |
-| Act of 18.06.2025 repealing the Security Tax Act and amending the Income Tax Act (RT I, 08.07.2025, 1), §§ 2 to 4 | https://www.riigiteataja.ee/et/akt/108072025001 | 2026-10-24 |
-| Act of 03.12.2025 amending the act of 18.06.2025 and the Income Tax Act (RT I, 18.12.2025, 3), § 1 deletes the 24% rise | https://www.riigiteataja.ee/et/akt/118122025003 | 2026-10-24 |
+| Tulumaksuseadus (Income Tax Act), consolidated text in force 01.10.2026 to 31.12.2026 (RT 109072026066), §§ 1 to 7, 34, 47^1 to 54^10, 61(68) to (70); not reopened on 14 Nov (riigiteataja.ee refuses scripted reads), earlier read date kept | https://www.riigiteataja.ee/akt/TuMS | 2026-10-24 |
+| Read for Reduced 14/86 rate on regular dividends, Withholding when a company passes on to an individual a dividend it received (exempt under § 50(1^1)) whose underlying profit was taxed at 14/86 under former § 50^1, Participation exemption, minimum holding, Credit institution advance tax: Income Tax Act, official English translation of the same version; not reopened on 14 Nov (riigiteataja.ee refuses scripted reads), earlier read date kept | https://www.riigiteataja.ee/en/akt/520102026008 | 2026-10-23 |
+| Maksukorralduse seadus (Taxation Act), consolidated text in force from 17.10.2026 (RT 116102026009), §§ 115, 117, 153^1, 154; not reopened on 14 Nov (riigiteataja.ee refuses scripted reads), earlier read date kept | https://www.riigiteataja.ee/akt/MKS | 2026-10-24 |
+| Karistusseadustik (Penal Code), consolidated text in force 01.10.2026 to 31.12.2026, § 47(1) (fine unit EUR 8 from 1 January 2025); not reopened on 14 Nov (riigiteataja.ee refuses scripted reads), earlier read date kept | https://www.riigiteataja.ee/et/akt/109072026028 | 2026-10-24 |
+| Act of 18.06.2025 repealing the Security Tax Act and amending the Income Tax Act (RT I, 08.07.2025, 1), §§ 2 to 4; not reopened on 14 Nov (riigiteataja.ee refuses scripted reads), earlier read date kept | https://www.riigiteataja.ee/et/akt/108072025001 | 2026-10-24 |
+| Act of 03.12.2025 amending the act of 18.06.2025 and the Income Tax Act (RT I, 18.12.2025, 3), § 1 deletes the 24% rise; not reopened on 14 Nov (riigiteataja.ee refuses scripted reads), earlier read date kept | https://www.riigiteataja.ee/et/akt/118122025003 | 2026-10-24 |
 | EMTA, Tax rates (22/78, end of 14/86, 7% withholding, cash basis of the TSD) | https://www.emta.ee/en/private-client/taxes-and-payment/declaration-income/tax-rates | 2026-10-23 |
 | EMTA, Payment of interests | https://www.emta.ee/en/business-client/taxes-and-payment/payment-arrears/payment-interests | 2026-10-23 |
-| Minister of Finance regulation, TSD annex 6 (non-business expenses, codes 6000 to 6060) | https://www.riigiteataja.ee/aktilisa/1260/6202/0024/RM_m24_lisa7.pdf | 2026-10-23 |
+| Minister of Finance regulation, TSD annex 6 (non-business expenses, codes 6000 to 6060); not reopened on 14 Nov (riigiteataja.ee refuses scripted reads), earlier read date kept | https://www.riigiteataja.ee/aktilisa/1260/6202/0024/RM_m24_lisa7.pdf | 2026-10-23 |
 | Ministry of Finance, 2026 law changes (rise to 24% cancelled, rate stays 22%) | https://www.fin.ee/uudised/2026-aastal-joustuvad-seadusemuudatused | 2026-10-23 |
 | Ministry of Finance, Riigikogu approves security tax changes (18.06.2025) | https://www.fin.ee/uudised/riigikogu-kiitis-heaks-julgeolekumaksu-muudatused | 2026-10-23 |
 | Government of Estonia, 2026 state budget approved | https://valitsus.ee/en/news/government-approved-2026-state-budget | 2026-10-23 |
 
 Not yet confirmed: which TSD annex carries dividends and capital reductions (only annex 6 was read, in the wording of Regulation No. 24 of 22.06.2020); how a company that received both 14/86-taxed and other dividends traces which of them a 2026 payment comes from; the social tax base on fringe benefits (in `estonia-social-contributions`).
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.

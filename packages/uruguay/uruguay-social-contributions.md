@@ -1,10 +1,10 @@
 ---
 name: uruguay-social-contributions
 description: "Uruguay social security contributions to BPS (Banco de Previsión Social) for tax year 2026. Covers dependent workers under Industria y Comercio (jubilatorio 15% personal and 7.5% employer, FONASA 3% to 8% personal by income and family and 5% employer plus the cuota mutual complement, FRL 0.10% each side, FGCL 0.025%), the 2026 ceilings and pension pillars under Ley 16.713 and the Ley 20.130 reform (tope C and nivel B UYU 288,836 from February 2026), the FONASA year-end refund, and owners without employees: the 2026 minimum contributions of unipersonales, SRL partners and sociedades de hecho on the BFC ficto scale (BFC UYU 1,847.96). Also BPS due dates and fines. Trigger on: aportes BPS, montepío, aporte patronal, FONASA, FRL, FGCL, tope de cotización, AFAP, unipersonal BPS, ficto BFC, Uruguay social security 2026. Out of scope: IRPF withholding (uruguay-payroll), monotributo, rural, construction, domestic work, professional funds (CJPPU)."
-version: 0.2
+version: 0.3
 jurisdiction: UY
 tax_year: 2026
-last_updated: 2026-11-11
+last_updated: 2026-11-14
 depends_on:
   - social-contributions-workflow-base
 category: international
@@ -14,7 +14,7 @@ domain: payroll
 type: computation
 ---
 
-# Uruguay social security contributions (BPS) for 2026 v0.2
+# Uruguay social security contributions (BPS) for 2026 v0.3
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -214,4 +214,4 @@ expected:
 
 Not yet confirmed: the CCM per worker in practice; the BSE work-accident premium (not a BPS contribution; varies by risk); socio vitalicio FONASA rates (one row of the BPS table is inconsistent); employer rates of public bodies; the rules for moving between ficto categories over time; monotributo, the régimen de aportación gradual and rural minimums; the AFAP-side split for workers who used the art. 8 option in the reform regime; whether workers outside the AFAP regime have any ceiling; how FONASA applies to an owner who also has employees.
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.

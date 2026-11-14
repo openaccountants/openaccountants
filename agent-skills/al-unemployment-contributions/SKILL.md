@@ -18,7 +18,7 @@ metadata:
 
 ## Who this applies to
 
-- Employers covered under Alabama's unemployment compensation law (Ala. Code Title 25), administered by the Alabama Department of Labor (ADOL) Unemployment Compensation Division (ADOL UC Division page). The statutory coverage tests are on the Not yet confirmed line.
+- Employers covered under Alabama's unemployment compensation law (Ala. Code Title 25), administered by the Alabama Department of Labor (ADOL) Unemployment Compensation Division (ADOL UC Division page). The agency coverage attachment and its scope limits are set out below; the full statute has not been re-read here.
 - New employers pay the assigned new-account rate until they qualify for experience rating; established employers pay a rate based on their own benefit charges and taxable payroll, modified by the statewide schedule and shared cost (ADOL FAQs).
 
 ## Rates, bands and thresholds
@@ -29,6 +29,7 @@ metadata:
 | New-employer rate | 2.70% on the first $8,000 of wages for each employee | [ADOL FAQ: What is the new account rate?](https://adol.alabama.gov/faq/what-is-the-new-account-rate/) |
 | Experience-rated range | 0.20% to 6.80%, inclusive of the 0.06% Employment Security Enhancement Assessment (ESA), depending on which of four rate schedules is in effect, plus any shared cost | [ADOL FAQ: experience rating](https://adol.alabama.gov/faq/may-an-employer-earn-a-tax-rate-based-upon-its-record-of-unemployment-experience/) |
 | Employment Security Enhancement Assessment | 0.06%, carved out of the schedule rate (all rates except 5.40% are reduced by 0.06% ESA) | [ADOL FAQ: how the annual rate is calculated](https://adol.alabama.gov/faq/how-is-my-annual-tax-rate-calculated-if-the-rate-is-based-on-experience/) |
+| 2026 schedule / shared cost | Schedule A; shared cost 0.00%. Use the actual employer notice, not the overall four-schedule range as an individual rate | [Workforce Alabama 2025 Annual Report, Experience Rating, printed p.13](https://adol.alabama.gov/wp-content/uploads/2026/04/Annual-Report-2025-Final.pdf) |
 | Late report penalty | $25 or 10% of taxes owed, whichever is greater (quarters from 1996) | [ADOL FAQ: penalty for late reports](https://adol.alabama.gov/faq/what-is-the-penalty-rate-for-late-reports/) |
 
 ## The taxable base
@@ -36,6 +37,14 @@ metadata:
 - The wage base is per employee per calendar year: tax stops once an employee's wages from the employer pass $8,000 (ADOL FAQ).
 - Experience rating uses the three most recent complete fiscal years (July 1 to June 30) of benefit charges and taxable payroll; the benefit ratio (charges divided by taxable payroll) is read against the Tax Rate Table in §25-4-54(f) under the schedule (A to D) set each year from the trust fund balance, and shared cost is added (ADOL FAQ).
 - A successor that acquires a liable employer's business takes over the predecessor's experience (ADOL FAQ).
+
+### Coverage, registration and wage-base continuity
+
+The official coverage attachment says an ordinary non-farm employer is liable upon $1,500 wages in a calendar quarter or one or more workers in 20 different weeks, in the current or preceding year. FUTA liability and successorship are independent triggers. Household coverage uses $1,000 cash wages in a quarter; agricultural coverage uses $20,000 cash wages in a quarter or 10 workers in 20 weeks; qualifying nonprofit coverage has a separate four-employee/20-week test. Proprietors and partners are not their own employees; corporate officer remuneration is taxable. These are coverage rules, not federal tax figures to copy into the federal payroll skill. [Official UC pertinent coverage provisions, pages 1-2](https://adol.alabama.gov/wp-content/uploads/2024/07/uc_sr2_pertinent_coverage_provisions.pdf).
+
+Register through **Employer Registration / Account Status** in [eGov](https://adol.alabama.gov/services/egov-login/), submitting Form **SR-2, Application to Determine Liability** with entity, first-employment, wage and predecessor information. Retain the liability determination and account number. In **Wage and Tax Reporting**, complete **UC-CR-4 and UC-10-R** for the quarter, entering total wages and wages above each employee's annual taxable base; reconcile net taxable wages to the payroll register and actual rate notice. Submit the report and retain acknowledgment. Use **Electronic Funds Transfer** for amounts due and retain the payment reference; the eGov page says both tax-rated and reimbursable employers must pay through EFT under Rule 480-4-2-.17. A third-party filer needs POA on file.
+
+The same official coverage attachment allows wages paid by a predecessor, or wages paid in another state to a worker transferred by the **same employer or predecessor within the same calendar year**, in determining the annual taxable limitation. Do not reset the full wage base automatically on that transfer. Excess wages must still be reported. Detailed multistate localization is not established by that wage-base credit rule.
 
 ## Deadlines and filing
 
@@ -49,7 +58,7 @@ metadata:
 
 ## Cross-border points
 
-- Multi-state employers register in Alabama for employees whose work is localised in Alabama; the wage base applies per employee per state (localisation rules on the Not yet confirmed line).
+- Determine the proper UI state before filing. The same-employer/predecessor annual wage-base continuity rule above can credit qualifying out-of-state wages; it does not establish localization. The detailed localization rules remain on the Not yet confirmed line.
 
 ## Worked examples
 
@@ -107,7 +116,11 @@ expected:
 | 7 | ADOL FAQ: What is the penalty rate for late reports?, read for the page as a whole | https://adol.alabama.gov/faq/what-is-the-penalty-rate-for-late-reports/ | 2026-11-13 |
 | 8 | ADOL FAQ: How do I get my new tax rate notice?, read for the page as a whole | https://adol.alabama.gov/faq/how-do-i-get-my-new-tax-rate-notice/ | 2026-11-13 |
 
-Not yet confirmed: the rate schedule (A to D) and shared cost in force for 2026; whether employees contribute anything (an earlier draft said the tax is employer-only, without a source); the coverage tests in Title 25; the interest rate on late UC tax; the FUTA credit-reduction status for Alabama; the localisation rules for multi-state employees; the quarterly report form number (an earlier draft carried "Form A-4", which is in fact ALDOR's employee withholding certificate); the workers' compensation employee threshold; whether Alabama has any state disability or paid-leave payroll contribution (an earlier draft asserted none).
+| 9 | Workforce Alabama 2025 Annual Report, read for Experience Rating on printed p.13: 2026 schedule A, shared cost 0.00%, rate notices posted December 16, 2025 | https://adol.alabama.gov/wp-content/uploads/2026/04/Annual-Report-2025-Final.pdf | 2026-11-13 |
+| 10 | Official UC pertinent coverage provisions, read for both pages: liability classes, successor rules, wage-base continuity, report deadlines and excess wages. Older attachment; current rate notice and 2026 report control rates | https://adol.alabama.gov/wp-content/uploads/2024/07/uc_sr2_pertinent_coverage_provisions.pdf | 2026-11-13 |
+| 11 | eGov Login and employer service descriptions, read for SR-2, UC-CR-4/UC-10-R, POA and mandatory EFT payment | https://adol.alabama.gov/services/egov-login/ | 2026-11-13 |
+
+Not yet confirmed: whether employees contribute anything (an earlier draft said the tax is employer-only, without a source); a fresh reading of the full Title 25 coverage statute beyond the agency coverage attachment; the interest rate on late UC tax; the FUTA credit-reduction status for Alabama; the localisation rules for multi-state employees; the workers' compensation employee threshold; whether Alabama has any state disability or paid-leave payroll contribution (an earlier draft asserted none).
 
 <!-- openaccountants-cta-block -->
 

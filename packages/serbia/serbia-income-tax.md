@@ -1,14 +1,15 @@
 ---
 name: serbia-income-tax
 description: "Serbian personal income tax for individuals, tax year 2026. Covers the 10% salary tax and the 2026 non-taxable salary amount of RSD 34,221 a month; entrepreneurs taxed on actual profit at 10% and flat-rate (paušal) entrepreneurs, with who may use the flat-rate regime and the nine-criteria independence test; capital income at 15%; capital gains at 15% with the ten-year, family and housing exemptions; rent at 20% after 25% standard costs; other income; and the annual personal income tax with its threshold of three average annual salaries, personal deductions and 10% and 15% rates, filed on PP GPDG by 15 May 2027. Trigger on: porez na dohodak građana, porez na zarade, paušalac, test samostalnosti, PP GPDG, godišnji porez, kapitalni dobitak, porez na zakup. Out of scope: residence and non-residents (rs-cross-border), payroll (serbia-payroll), contributions (serbia-social-contributions), companies (rs-corporate-tax), VAT (serbia-vat)."
-version: 0.2
+version: 0.3
 jurisdiction: RS
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
+type: computation
 ---
 
 # Serbia: personal income tax (2026)

@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/ls-corporate-income-tax"
   jurisdiction: "LS"
   tax_year: "2026"
-  last_updated: "2026-11-01"
+  last_updated: "2026-11-14"
 ---
 
-# Lesotho Corporate Income Tax v0.2
+# Lesotho Corporate Income Tax v0.3
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -26,7 +26,6 @@ Lesotho's tax year runs 1 April to 31 March. This skill covers 2026-27, from 1 A
 |---|---|---|---|
 | Standard rate | 25% | All income not listed below; also branch profits | https://www.rsl.org.ls/sites/default/files/2024-07/Corporate%20Income%20Tax%20Guide.pdf |
 | Manufacturing and farming | 10% | Manufacturing income, income from farming operations | https://www.rsl.org.ls/sites/default/files/2024-07/Corporate%20Income%20Tax%20Guide.pdf |
-| Exports outside SACU | unverified: 10% or 0% | RSL guide shows 10%; the Third Schedule in the 2012 Act copy shows 0%. Ask before relying on either | https://www.rsl.org.ls/sites/default/files/2024-07/Corporate%20Income%20Tax%20Guide.pdf |
 | Advance corporation tax | 25/75 of the dividend (33.33%) | On dividends distributed; creditable, see the base | https://www.rsl.org.ls/sites/default/files/2026-09/Advanced%20Corporation%20Tax%20Guide.pdf |
 | Dividend WHT, non-resident | 25%, or 0% from concessional manufacturing income | s.107(1),(2) | https://www.rsl.org.ls/sites/default/files/2026-09/Income%20Tax%20Act%201993%20%20Updated%20up%20to%201%20April%202012.pdf |
 | Interest, royalty, natural resource payment, management charge, non-resident | 25% | s.107(1) | https://www.rsl.org.ls/sites/default/files/2026-09/Income%20Tax%20Act%201993%20%20Updated%20up%20to%201%20April%202012.pdf |
@@ -108,4 +107,4 @@ Not yet confirmed: export manufacturing rate (10% against 0%); treaty texts not 
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-01. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ls-corporate-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ls-corporate-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ls-corporate-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ls-corporate-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

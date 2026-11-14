@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/uruguay-social-contributions"
   jurisdiction: "UY"
   tax_year: "2026"
-  last_updated: "2026-11-11"
+  last_updated: "2026-11-14"
 ---
 
-# Uruguay social security contributions (BPS) for 2026 v0.2
+# Uruguay social security contributions (BPS) for 2026 v0.3
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -210,8 +210,8 @@ expected:
 
 Not yet confirmed: the CCM per worker in practice; the BSE work-accident premium (not a BPS contribution; varies by risk); socio vitalicio FONASA rates (one row of the BPS table is inconsistent); employer rates of public bodies; the rules for moving between ficto categories over time; monotributo, the régimen de aportación gradual and rural minimums; the AFAP-side split for workers who used the art. 8 option in the reform regime; whether workers outside the AFAP regime have any ceiling; how FONASA applies to an owner who also has employees.
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-11. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `uruguay-social-contributions` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/uruguay-social-contributions. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `uruguay-social-contributions` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/uruguay-social-contributions. If neither is available, confirm every figure against the official source pages cited above before relying on it.

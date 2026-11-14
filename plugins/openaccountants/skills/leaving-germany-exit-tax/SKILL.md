@@ -7,14 +7,25 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/leaving-germany-exit-tax"
   jurisdiction: "DE"
   tax_year: "2026"
-  last_updated: "2026-10-31"
+  last_updated: "2026-11-14"
 ---
 
 # Leaving Germany: exit tax on company shares (Wegzugsteuer)
 
+## Scope
+
 Figures are for tax year 2026. This Guide covers the German side only: the exit tax on company shares under § 6 of the Foreign Tax Act (Außensteuergesetz, AStG) and the extended limited tax liability under § 2 AStG that can follow a move to a low-tax country. It reads the current consolidated text on gesetze-im-internet.de, which applies to income tax from the 2022 assessment year onwards (§ 21(1) AStG). Departures before 1 January 2022 follow the old wording of § 6 (§ 21(3) AStG) and are out of scope. This is a working paper for review, not a filed return.
 
 The rules of the arrival country must be checked separately. For a move to the United Arab Emirates, see `ae-tax-residency`. For a move to Switzerland, use `germany-to-switzerland-cross-border-tax`, which covers the Swiss side and the German rules for commuters and weekly stayers; this Guide stops at its edge. For a German sale of shares while still resident, see `de-capital-gains`. For a comparison of exit taxes in several countries, see `exit-taxes-when-a-family-moves`. For general German tax planning, see `germany-tax-optimization`.
+
+## Ask the client first
+
+- In how many of the last twelve years were you fully taxable in Germany, and did you receive any of the shares as a gift or inheritance?
+- Which company shares do you hold, what percentage of each company's capital, and what are your estimates of their value today and of what you paid for them? What were the highest direct or indirect holdings in the last five years? For a recent gift or inheritance, obtain exact acquisition/transfer dates and the relevant predecessor holdings and dates, including any chain of free transfers.
+- Which country are you moving to, and on what date will you give up your German home and habitual abode?
+- Will you keep German income, a German home, a German business or the shares in a German company after you leave?
+- Might you come back to Germany within seven years, and will the company pay dividends or return capital in the meantime?
+- Are you a German citizen?
 
 ## The method, step by step
 
@@ -31,7 +42,6 @@ The rules of the arrival country must be checked separately. For a move to the U
 
 | Item | Value | Note | Source |
 |---|---|---| --- |
-| Source | all figures below | https://www.gesetze-im-internet.de/astg/__6.html |  |
 | Prior period of full tax liability | at least seven years in total within the last twelve years before the trigger | "innerhalb der letzten zwölf Jahre vor den in Absatz 1 Satz 1 Nummer 1 bis 3 genannten Tatbeständen insgesamt mindestens sieben Jahre unbeschränkt steuerpflichtig" | https://www.gesetze-im-internet.de/astg/__6.html |
 | Instalments | seven equal yearly instalments, on application | "kann auf Antrag des Steuerpflichtigen in sieben gleichen Jahresraten entrichtet werden" | same |
 | Return window | seven years from the end of full tax liability | "innerhalb von sieben Jahren seit Beendigung der unbeschränkten Steuerpflicht wieder unbeschränkt steuerpflichtig" | same |
@@ -46,7 +56,6 @@ The rules of the arrival country must be checked separately. For a move to the U
 
 | Item | Value | Note | Source |
 |---|---|---| --- |
-| Source | all figures below | https://www.gesetze-im-internet.de/estg/__17.html |  |
 | Ordinary personal minimum shareholding, directly or indirectly, at any time within the last five years; recent free acquisitions also use the predecessor rule above | 1% | "innerhalb der letzten fünf Jahre am Kapital der Gesellschaft unmittelbar oder mittelbar zu mindestens 1 Prozent beteiligt war" | https://www.gesetze-im-internet.de/estg/__17.html |
 | Allowance against the gain, the part matching the share sold | EUR 9,060 | "soweit er den Teil von 9 060 Euro übersteigt, der dem veräußerten Anteil" | same |
 | The allowance is reduced by the amount by which the gain exceeds the part matching the share sold of | EUR 36,100 | "um den der Veräußerungsgewinn den Teil von 36 100 Euro übersteigt" | same |
@@ -65,12 +74,10 @@ The deemed sale is a sale under § 17(1) EStG, and § 17(1) sentence 1 makes tha
 
 | Item | Value | Note | Source |
 |---|---|---| --- |
-| Source | all figures below | https://www.gesetze-im-internet.de/estg/__3.html |  |
 | Tax-free share of the sale price or fair market value within § 17(2) EStG (partial-income method, § 3 no. 40 letter c) | 40% | "40 Prozent a) der Betriebsvermögensmehrungen oder Einnahmen aus der Veräußerung"; letter c: "des Veräußerungspreises oder des gemeinen Werts im Sinne des § 17 Absatz 2" | https://www.gesetze-im-internet.de/estg/__3.html |
 
 | Item | Value | Note | Source |
 |---|---|---| --- |
-| Source | all figures below | https://www.gesetze-im-internet.de/estg/__3c.html |  |
 | Share at which sale costs, other linked costs, and the acquisition cost used to compute the gain may be deducted (§ 3c(2) sentence 1) | 60% | "bei der Ermittlung der Einkünfte nur zu 60 Prozent abgezogen werden; Entsprechendes gilt, wenn bei der Ermittlung der Einkünfte der Wert des Betriebsvermögens oder des Anteils am Betriebsvermögen oder die Anschaffungs- oder Herstellungskosten oder der an deren Stelle tretende Wert mindernd zu berücksichtigen sind." | https://www.gesetze-im-internet.de/estg/__3c.html |
 
 The allowance in the § 17 table above is not a flat amount. It is the part of that amount that matches the share of the company being taxed, and it falls by the excess of the gain over the matching part of the taper amount, so for a large holding it is usually gone. Tax rates and the solidarity surcharge are not repeated here; see `de-einkommensteuer-freelancer` for the tariff.
@@ -115,7 +122,6 @@ A transfer on death to a natural person does not break condition 1, if that pers
 
 | Item | Value | Note | Source |
 |---|---|---| --- |
-| Source | all figures below | https://www.gesetze-im-internet.de/astg/__2.html |  |
 | Applies only in years when the income caught by § 2 is in total more than | EUR 16,500 | "insgesamt beschränkt steuerpflichtigen Einkünfte mehr als 16 500 Euro betragen" | https://www.gesetze-im-internet.de/astg/__2.html |
 | Low-tax test: model taxable income of an unmarried resident of the other territory | EUR 77,000 | "die ein steuerpflichtiges Einkommen von 77 000 Euro bezieht, um mehr als ein Drittel geringer" | same |
 | Substantial interest: limited partner's share of the partnership's income, more than | 25% | "mehr als 25 Prozent der Einkünfte im Sinne des § 15 Abs. 1 Satz 1 Nr. 2" | same |
@@ -152,7 +158,10 @@ Interests held through a foreign company within § 5 AStG count in proportion to
 
 **Rate and cap.** The tax rate is the rate on all the person's income worldwide, leaving out investment income taxed at the separate flat rate of § 32d(1) EStG (§ 2(5) AStG). If the person proves that § 2 leads to more German tax than they would owe if fully taxable and living only in Germany, the excess is not collected (§ 2(6) AStG).
 
-## Worked framing: a GmbH owner moving to the UAE (hypothetical)
+## Worked cases
+
+### Case 1: a GmbH owner moving to the UAE (hypothetical)
+
 
 All facts here are hypothetical. Anna is a German citizen. She has lived in Germany all her life and owns all the shares in a German GmbH, which she founded with a hypothetical capital contribution of 25,000 euros. In 2026 she gives up her German home and moves to Dubai. A valuation puts the shares at a hypothetical fair market value of 2,000,000 euros on the day she leaves.
 
@@ -165,25 +174,26 @@ All facts here are hypothetical. Anna is a German citizen. She has lived in Germ
 7. Return: if her absence is only temporary and she becomes fully taxable again within seven years (extendable on application by up to five more), and the three conditions in "Coming back" hold, the tax lapses.
 8. Extended limited tax liability: as a German citizen with at least five years of full tax liability in the last ten, who still owns a § 17 shareholding in a German GmbH, she meets § 2(3) no. 1 at the start of each year she keeps the shares. Whether the UAE is a low-tax territory is tested under § 2(2); see `ae-tax-residency` for the UAE side. If both hold, her income that would not be foreign income under § 34d EStG is taxed under § 2 for the ten years after 2026, in each year it is in total above the § 2 threshold in the table above.
 
-## Ask the client first
+### Checks CI recomputes
 
-- In how many of the last twelve years were you fully taxable in Germany, and did you receive any of the shares as a gift or inheritance?
-- Which company shares do you hold, what percentage of each company's capital, and what are your estimates of their value today and of what you paid for them? What were the highest direct or indirect holdings in the last five years? For a recent gift or inheritance, obtain exact acquisition/transfer dates and the relevant predecessor holdings and dates, including any chain of free transfers.
-- Which country are you moving to, and on what date will you give up your German home and habitual abode?
-- Will you keep German income, a German home, a German business or the shares in a German company after you leave?
-- Might you come back to Germany within seven years, and will the company pay dividends or return capital in the meantime?
-- Are you a German citizen?
-
-## When to refuse or refer
-
-- Departures or transfers before 1 January 2022: the old wording of § 6 applies (§ 21(3) AStG). Refer.
-- Shares held as business assets, shares received in a reorganisation (§ 17(6) EStG), or a company moving its seat or management abroad (§ 17(5) EStG): other rules apply first. Refer.
-- The third trigger (Germany's taxing right restricted without a move, for example through a tax treaty): the page states the rule but not when a treaty restricts it. Refer to an adviser who can read the treaty.
-- Valuation of the shares at fair market value: this Guide gives no valuation method. Refer.
-- The arrival country's tax: not covered here. For the UAE see `ae-tax-residency`; for Switzerland see `germany-to-switzerland-cross-border-tax`.
-- Inheritance and gift tax after leaving, and trade tax: not covered.
-- Do not state a combined or effective rate. No allowed page prints one.
-- Whether the § 3 no. 40 exemption and the § 17(3) allowance apply to a § 6 AStG deemed gain rests on § 6(1)'s own wording treating the trigger as a sale "im Sinne des § 17 Absatz 1 Satz 1" EStG; no AStG or EStG page states the chain in one sentence. Confirm before relying on it for a large gain.
+```oa-check
+name: DE exit tax 2026, Case 1 Anna, taxable deemed gain under the partial-income method
+inputs:
+  value: 2000000
+  cost: 25000
+  allowance_full: 9060
+  allowance_taper: 36100
+steps:
+  - gain: value - cost
+  - taxable_before_allowance: pct(value, 60) - pct(cost, 60)
+  - allowance: max(0, allowance_full - max(0, taxable_before_allowance - allowance_taper))
+  - taxable: taxable_before_allowance - allowance
+expected:
+  gain: 1975000.00
+  taxable_before_allowance: 1185000.00
+  allowance: 0.00
+  taxable: 1185000.00
+```
 
 ```oa-check
 name: DE § 17(3) allowance, 100% holding, gain EUR 40,000
@@ -211,17 +221,32 @@ expected:
   gain: 24000.00
 ```
 
+## When to refuse or refer
+
+- Departures or transfers before 1 January 2022: the old wording of § 6 applies (§ 21(3) AStG). Refer.
+- Shares held as business assets, shares received in a reorganisation (§ 17(6) EStG), or a company moving its seat or management abroad (§ 17(5) EStG): other rules apply first. Refer.
+- The third trigger (Germany's taxing right restricted without a move, for example through a tax treaty): the page states the rule but not when a treaty restricts it. Refer to an adviser who can read the treaty.
+- Valuation of the shares at fair market value: this Guide gives no valuation method. Refer.
+- The arrival country's tax: not covered here. For the UAE see `ae-tax-residency`; for Switzerland see `germany-to-switzerland-cross-border-tax`.
+- Inheritance and gift tax after leaving, and trade tax: not covered.
+- Do not state a combined or effective rate. No allowed page prints one.
+- Whether the § 3 no. 40 exemption and the § 17(3) allowance apply to a § 6 AStG deemed gain rests on § 6(1)'s own wording treating the trigger as a sale "im Sinne des § 17 Absatz 1 Satz 1" EStG; no AStG or EStG page states the chain in one sentence. Confirm before relying on it for a large gain.
+
 ## Sources
 
-- [§ 6 AStG, Besteuerung des Vermögenszuwachses](https://www.gesetze-im-internet.de/astg/__6.html) (read 2026-10-31)
-- [§ 2 AStG, Einkommensteuer](https://www.gesetze-im-internet.de/astg/__2.html) (read 2026-10-31)
-- [§ 21 AStG, Anwendungsvorschriften](https://www.gesetze-im-internet.de/astg/__21.html) (read 2026-10-31)
-- [§ 17 EStG, Veräußerung von Anteilen an Kapitalgesellschaften](https://www.gesetze-im-internet.de/estg/__17.html) (read 2026-10-31)
-- [§ 3 EStG, steuerfreie Einnahmen (no. 40)](https://www.gesetze-im-internet.de/estg/__3.html) (read 2026-10-31)
-- [§ 3c EStG, Anteilige Abzüge](https://www.gesetze-im-internet.de/estg/__3c.html) (read 2026-10-31)
+| Source | URL | Read on |
+| --- | --- | --- |
+| Read for § 6(1) triggers, § 6(2) seven of twelve years, § 6(3) seven-year return window and five-year extension, § 6(4) seven instalments and the one-quarter distribution limit, § 6(5) reporting by 31 July | https://www.gesetze-im-internet.de/astg/__6.html | 2026-11-14 |
+| Read for § 2(1) to (6) AStG: EUR 16,500 threshold, EUR 77,000 low-tax model, 25%, 30%, EUR 62,000 and EUR 154,000 substantial-interest tests | https://www.gesetze-im-internet.de/astg/__2.html | 2026-11-14 |
+| Read for § 21(1) and (3) AStG, application from the 2022 assessment year | https://www.gesetze-im-internet.de/astg/__21.html | 2026-11-14 |
+| Read for § 17(1) 1% test and predecessor rule, § 17(2) gain, § 17(3) EUR 9,060 allowance and EUR 36,100 taper | https://www.gesetze-im-internet.de/estg/__17.html | 2026-11-14 |
+| Read for § 3 no. 40 letter c, 40% exempt | https://www.gesetze-im-internet.de/estg/__3.html | 2026-11-14 |
+| Read for § 3c(2), 60% deduction of costs and acquisition cost | https://www.gesetze-im-internet.de/estg/__3c.html | 2026-11-14 |
 
-Selected § 6(1)–(2) AStG and § 17(1) EStG clauses re-read on 29 October 2026 for the predecessor share test and its distinct residence-period conditions; the combined-source interpretation is labelled above.
+Selected § 6(1) to (2) AStG and § 17(1) EStG clauses were also read on 2026-10-29 for the predecessor share test; the combined-source interpretation is labelled above.
+
+Not yet confirmed: whether the § 3 no. 40 exemption and the § 17(3) allowance reach a § 6 AStG deemed gain is read from the wording chain, not from a BMF letter stating it in one sentence; no valuation method for fair market value is given.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-31. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `leaving-germany-exit-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/leaving-germany-exit-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `leaving-germany-exit-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/leaving-germany-exit-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

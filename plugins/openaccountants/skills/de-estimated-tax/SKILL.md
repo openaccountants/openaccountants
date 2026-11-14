@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/de-estimated-tax"
   jurisdiction: "DE"
   tax_year: "2026"
-  last_updated: "2026-10-29"
+  last_updated: "2026-11-14"
 ---
 
 # German income tax prepayments 2026 (Einkommensteuer-Vorauszahlungen)
@@ -191,8 +191,8 @@ The 30-day month in the steps is a simplification for this example; count calend
 
 Not yet confirmed: how the solidarity surcharge limit is applied to a notice issued part way through a year; church tax rates per state for 2026 (the booklet is the 2025 edition); the old version's bank-statement pattern tables (Finanzamt debit references, timing windows, telling ESt from VAT, wage tax and trade tax debits) are working conventions with no official source and were not carried over as rules; the federal founders' portal advice on first-year prepayments was not re-read.
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-29. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `de-estimated-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/de-estimated-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `de-estimated-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/de-estimated-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
