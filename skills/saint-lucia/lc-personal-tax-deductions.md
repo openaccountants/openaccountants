@@ -67,7 +67,7 @@ Deductions and allowances for resident individuals under the Income Tax Act, Cap
 
 | Situation | Treatment | Source |
 |---|---|---|
-| Revised Laws page shows a \$30,000 cap from 1 January 2023 | Replaced by forty thousand dollars from 1 January 2025 | [Income Tax Act s.44](https://attorneygeneralchambers.com/laws-of-saint-lucia/income-tax-act/section-44); [Act 2 of 2026](https://npc.govt.lc/laws/download/UjVlcXRvZTd3RG93ODVaQ0tsbWNwV3hnRmd5R0lYY1crUTlXU0pTZ1Rrd0dWZTlvdmdwK3lVYk1zYUlwcVNnT3NqYk9Pc09icmd0Vks5RDVLeVFXdG9JMFc1alI4NTNLRjRiWDJuV29sQVk9) |
+| Revised Laws page shows a $30,000 cap from 1 January 2023 | Replaced by forty thousand dollars from 1 January 2025 | [Income Tax Act s.44](https://attorneygeneralchambers.com/laws-of-saint-lucia/income-tax-act/section-44); [Act 2 of 2026](https://npc.govt.lc/laws/download/UjVlcXRvZTd3RG93ODVaQ0tsbWNwV3hnRmd5R0lYY1crUTlXU0pTZ1Rrd0dWZTlvdmdwK3lVYk1zYUlwcVNnT3NqYk9Pc09icmd0Vks5RDVLeVFXdG9JMFc1alI4NTNLRjRiWDJuV29sQVk9) |
 | Child's own income exactly at the limit | Not "exceeds"; the income test is met (other conditions still apply) | [Act 2 of 2026, s.5](https://npc.govt.lc/laws/download/UjVlcXRvZTd3RG93ODVaQ0tsbWNwV3hnRmd5R0lYY1crUTlXU0pTZ1Rrd0dWZTlvdmdwK3lVYk1zYUlwcVNnT3NqYk9Pc09icmd0Vks5RDVLeVFXdG9JMFc1alI4NTNLRjRiWDJuV29sQVk9) |
 | Mortgage interest and the cap | The mortgage interest limit is not an extra pool; it counts inside the aggregate cap | same |
 | Section 59 investment | Only qualifying security purchases, not a savings deposit | same |
