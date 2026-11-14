@@ -5,10 +5,11 @@
 // tax credit, AMT exemption, the 2026 itemized deduction limit), us-form-1040-individual-return
 // (2025 brackets, standard deduction, child tax credit and its phase-out start, AMT, Additional
 // Medicare), us-capital-gains (0%/15%/20% ceilings, net investment income tax),
-// us-federal-return-assembly (order of the return, QBI, 2026 Additional Medicare and estimated
-// tax), us-qbi-deduction (20% rate, 2025 thresholds), us-quarterly-estimated-tax (2025 safe
-// harbour), us-2026-federal-tax-changes (child tax credit made permanent). Self-employment tax
-// is the us_se_tax engine's, imported.
+// us-qbi-deduction (20% rate, QBI, Form 8995, 2026 thresholds and minimum; 2025 thresholds),
+// us-schedule-c-and-se-computation (2026 Additional Medicare), us-quarterly-estimated-tax (2026
+// safe harbour and due dates, instalments, the zero-tax exception; 2025 due dates),
+// us-form-1040-individual-return (2025 safe harbour), us-2026-federal-tax-changes (child tax
+// credit made permanent). Self-employment tax is the us_se_tax engine's, imported.
 //
 // The engine refuses (missing_rule) whatever no skill states: a 2025 married-filing-separately
 // return (no skill prints that schedule), the QBI deduction above the threshold (Form 8995-A),
@@ -20,7 +21,7 @@ import { BASE, HALF, MED, MINNE, NEF, SS, se } from "./us-se-tax";
 const F26 = "us-federal-income-tax-return-1040";
 const F25 = "us-form-1040-individual-return";
 const CG = "us-capital-gains";
-const RA = "us-federal-return-assembly";
+const SE = "us-schedule-c-and-se-computation";
 const QB = "us-qbi-deduction";
 const ET = "us-quarterly-estimated-tax";
 const CH = "us-2026-federal-tax-changes";
@@ -105,33 +106,44 @@ export const LIMIT_68_2026 = rule("ITEMIZED_LIMIT_37_PERCENT_BAND_2026", 2 / 37,
   "Limit on itemized deductions in the 37% bracket, taxable years beginning after 31 December 2025 | itemized deductions reduced by 2/37 of the lesser of (1) the itemized deductions, or (2) taxable income, computed before this reduction and increased by those itemized deductions, above the dollar amount at which the 37% bracket begins for the taxpayer");
 
 // ---- QBI (section 199A), simplified computation only ----
-export const QBI_RATE = rule("QBI_RATE", 0.2, QB, "Section 3 — Year-specific figures table for tax year 2025",
-  "§199A QBI deduction rate | 20%\n§199A QBI deduction rate (2026 onward) | 20% — unchanged");
-export const QBI_METHOD = rule("QBI_SIMPLIFIED_METHOD", true, RA, "QBI deduction: which form, and the thresholds for 2025",
-  "At or below the threshold, a specified service business (for example consulting) is treated as a qualified business, and there is no limit based on W-2 wages or property.\n" +
-  "Form 8995 computes 20% of QBI, then caps it at 20% of (taxable income before QBI − net capital gain, including qualified dividends).");
-export const QBI_DEFINITION = rule("QBI_DEFINITION", true, RA, "The method, step by step",
-  "\"Taxable income before the QBI deduction\" = line 11a − line 12e − line 13b. ... QBI itself is net profit reduced by the deductible half of SE tax, the health insurance deduction and the retirement contribution attributable to the business.");
-export const QBI_THRESHOLD_2026 = rule("QBI_THRESHOLD_2026", byStatus(201_750, 403_500, 201_775, 201_750), RA, "Figures for tax year 2026",
-  "QBI threshold (MFJ / MFS / all others) | $403,500 / $201,775 / $201,750");
+export const QBI_RATE = rule("QBI_RATE", 0.2, QB, "Rates, bands and thresholds",
+  "The final One Big Beautiful Bill Act (Public Law 119-21, section 70105) kept the 20% rate, removed the end-2025 expiry\n" +
+  "Deduction rate on QBI | 20% (the 23% in the House-passed bill was not enacted)");
+export const QBI_METHOD = rule("QBI_SIMPLIFIED_METHOD", true, QB, "Rates, bands and thresholds; Step 3: where taxable income sits",
+  "Overall cap | 20% of (taxable income before the QBI deduction minus net capital gain, with qualified dividends added to net capital gain)\n" +
+  "At or below the threshold ... | 20% of QBI for every business, SSTB or not; no wage or UBIA limit | Form 8995");
+export const QBI_DEFINITION = rule("QBI_DEFINITION", true, QB, "Step 1: qualified business income for each business; Step 2: taxable income before the QBI deduction",
+  "QBI = Schedule C line 31 minus the deductible half of self-employment tax (Schedule 1) minus the self-employed health insurance deduction minus the deduction for contributions to SEP, SIMPLE or solo 401(k) plans for the owner.\n" +
+  "Use Form 1040 line 11a (adjusted gross income) minus the standard or itemized deduction and the other deductions the 2026 draft Form 8995 instructions list for line 11");
+export const QBI_THRESHOLD_2026 = rule("QBI_THRESHOLD_2026", byStatus(201_750, 403_500, 201_775, 201_750), QB, "Rates, bands and thresholds",
+  "Threshold amount, all other returns (single, head of household, qualifying surviving spouse) | USD 201,750\n" +
+  "Threshold amount, married filing separately | USD 201,775\nThreshold amount, married filing jointly | USD 403,500");
 export const QBI_THRESHOLD_2025 = rule("QBI_THRESHOLD_2025", byStatus(197_300, 394_600, 197_300, 197_300), QB, "Section 3 — Year-specific figures table for tax year 2025",
   "Taxable income threshold (single / HoH / QSS) | $197,300\nTaxable income threshold (MFJ) | $394,600\nTaxable income threshold (MFS) | $197,300");
-export const QBI_MINIMUM_2026 = rule("QBI_MINIMUM_2026", { minimum: 400, qbi_needed: 1_000 }, RA, "What changed for 2026",
-  "Starting in 2026, an \"applicable taxpayer\" gets a minimum QBI deduction of $400. An applicable taxpayer has at least $1,000 of qualified business income, in total, from active trades or businesses in which the taxpayer materially participates. The deduction is the larger of the normal computation and $400.");
+export const QBI_MINIMUM_2026 = rule("QBI_MINIMUM_2026", { minimum: 400, qbi_needed: 1_000 }, QB, "Rates, bands and thresholds; Step 7: combine, cap, then the minimum",
+  "Minimum deduction, taxable years beginning after 31 December 2025 | USD 400\n" +
+  "QBI needed for the minimum, from active businesses (material participation, section 469(h)) | USD 1,000\n" +
+  "Minimum (new for 2026): if aggregate QBI from all businesses the taxpayer materially participated in is at least USD 1,000, the deduction is the greater of the step 3 result and USD 400");
 
 // ---- Capital gains and qualified dividends ----
 export interface CgBands { rates: [number, number, number]; ceilings: ByStatus<[number, number]> }
 const CG_HEAD = "0% up to taxable income of | 15% up to taxable income of | 20% above";
 export const CG_2026 = rule<CgBands>("CAPITAL_GAIN_RATES_2026", { rates: [0, 0.15, 0.2], ceilings: byStatus([49_450, 545_500], [98_900, 613_700], [49_450, 306_850], [66_200, 579_600]) },
-  CG, "Rates and thresholds for 2026",
-  `Filing status (2026) | ${CG_HEAD}\nSingle | $49,450 | $545,500 | $545,500\nMarried filing jointly / surviving spouse | $98,900 | $613,700 | $613,700\n` +
-  "Married filing separately | $49,450 | $306,850 | $306,850\nHead of household | $66,200 | $579,600 | $579,600");
+  CG, "Rates, bands and thresholds",
+  "Long-term gain and qualified dividends: maximum zero rate amount, married filing jointly and surviving spouse | USD 98,900\n" +
+  "Maximum 15 percent rate amount, married filing jointly and surviving spouse (20% above) | USD 613,700\n" +
+  "Maximum zero rate amount, married filing separately | USD 49,450\nMaximum 15 percent rate amount, married filing separately | USD 306,850\n" +
+  "Maximum zero rate amount, head of household | USD 66,200\nMaximum 15 percent rate amount, head of household | USD 579,600\n" +
+  "Maximum zero rate amount, all other individuals (single) | USD 49,450\nMaximum 15 percent rate amount, all other individuals (single) | USD 545,500\n" +
+  "Rates on adjusted net capital gain | 0%, 15%, 20%");
 export const CG_2025 = rule<CgBands>("CAPITAL_GAIN_RATES_2025", { rates: [0, 0.15, 0.2], ceilings: byStatus([48_350, 533_400], [96_700, 600_050], [48_350, 300_000], [64_750, 566_700]) },
-  CG, "2025 returns: tax year 2025, extended deadline October 15, 2026",
-  `Filing status (2025) | ${CG_HEAD}\nSingle | $48,350 | $533,400 | $533,400\nMarried filing jointly / surviving spouse | $96,700 | $600,050 | $600,050\n` +
-  "Married filing separately | $48,350 | $300,000 | $300,000\nHead of household | $64,750 | $566,700 | $566,700");
-export const CG_STACKING = rule("CAPITAL_GAIN_STACKING", true, CG, "The method, step by step",
-  "Qualified dividends go in the 0%/15%/20% group.\nStack. Ordinary taxable income fills the brackets first, and the preferential gain sits on top of it. The 0% and 15% ceilings are measured against total taxable income, not against the gain alone. Use the Qualified Dividends and Capital Gain Tax Worksheet.");
+  CG, "2025 returns (tax year 2025, extended deadline 15 October 2026)",
+  `Filing status (2025) | ${CG_HEAD}\nSingle | USD 48,350 | USD 533,400 | USD 533,400\nMarried filing jointly, surviving spouse | USD 96,700 | USD 600,050 | USD 600,050\n` +
+  "Married filing separately | USD 48,350 | USD 300,000 | USD 300,000\nHead of household | USD 64,750 | USD 566,700 | USD 566,700");
+export const CG_STACKING = rule("CAPITAL_GAIN_STACKING", true, CG, "Step 5: split the long-term gain into rate groups; Step 6: stack the gain on top of ordinary income",
+  "0/15/20 group: all other net capital gain, plus qualified dividends.\n" +
+  "Ordinary taxable income fills the brackets first; the preferential gain sits on top.\n" +
+  "Use the Qualified Dividends and Capital Gain Tax Worksheet in the Form 1040 instructions.");
 
 // ---- Child tax credit ----
 export const CTC_2026 = rule("CHILD_TAX_CREDIT_2026", { per_child: 2_200, refundable_per_child: 1_700 }, F26, SEC_D26,
@@ -140,8 +152,8 @@ export const CTC_2025 = rule("CHILD_TAX_CREDIT_2025", { per_child: 2_200, refund
   "Child Tax Credit — $2,200 per qualifying child under 17 (§24(h)), refundable portion $1,700 in 2025");
 export const CTC_PHASEOUT_START = rule("CHILD_TAX_CREDIT_PHASEOUT_START", { joint: 400_000, other: 200_000 }, F25, "2.9 Other OBBBA changes",
   "Child Tax Credit — $2,200 per qualifying child under 17 (§24(h)), ... made permanent by OBBBA §70104. Phaseout begins $400k MFJ / $200k other.");
-export const CTC_PERMANENT = rule("CHILD_TAX_CREDIT_PERMANENT", true, CH, "Child tax credit (permanent from 2025)",
-  "The higher child tax credit no longer expires after 2025 (section 70104, taxable years beginning after 31 December 2024).");
+export const CTC_PERMANENT = rule("CHILD_TAX_CREDIT_PERMANENT", true, CH, "Boundary and exception table / Families",
+  "Child tax credit (permanent). USD 2,200 per child, USD 1,700 refundable (section 70104, taxable years beginning after 31 December 2024).");
 
 // ---- Alternative minimum tax: only used to show that it is zero ----
 export const AMT_2026 = rule("AMT_EXEMPTION_2026", { exemption: byStatus(90_100, 140_200, 70_100, 90_100), phaseout_start: byStatus(500_000, 1_000_000, 500_000, 500_000) }, F26, SEC_D26,
@@ -159,36 +171,40 @@ export const AMT_STEPS = rule("AMT_COMPUTATION_STEPS", true, F25, "9.2 AMT compu
   "AMT computation steps — 1. Start with regular taxable income (Line 15). 2. Add back the standard deduction (if claimed). 3. Add AMT adjustments and preferences (Form 6251 Lines 2a-2t). 4. Subtract the AMT exemption (with phaseout if AMTI > threshold). 5. Apply 26%/28% AMT rates. 6. Subtract AMT foreign tax credit. 7. Compare to regular tax.");
 
 // ---- Taxes on higher income ----
-export const ADDL_MEDICARE_2026 = rule("ADDITIONAL_MEDICARE_2026", { rate: 0.009, threshold: byStatus(200_000, 250_000, 125_000, 200_000) }, RA, "Additional taxes on higher income",
-  "Additional Medicare Tax (Form 8959) on wages plus SE income | 0.9% | $200,000 single, head of household or qualifying surviving spouse; $250,000 MFJ; $125,000 MFS");
+export const ADDL_MEDICARE_2026 = rule("ADDITIONAL_MEDICARE_2026", { rate: 0.009, threshold: byStatus(200_000, 250_000, 125_000, 200_000) }, SE, "Rates, bands and thresholds; Form 8959: Additional Medicare Tax on self-employment income",
+  "Additional Medicare Tax on self-employment income | 0.9%\n" +
+  "Additional Medicare Tax threshold, single, head of household, qualifying surviving spouse | USD 200,000\n" +
+  "Additional Medicare Tax threshold, married filing jointly | USD 250,000\nAdditional Medicare Tax threshold, married filing separately | USD 125,000\n" +
+  "Take the threshold for the filing status (USD 200,000, 250,000 or 125,000). Reduce it, not below zero, by the person's Medicare wages. Self-employment income (Schedule SE line 6) above the reduced threshold is taxed at 0.9%.");
 export const ADDL_MEDICARE_2025 = rule("ADDITIONAL_MEDICARE_2025", { rate: 0.009, threshold: byStatus(200_000, 250_000, 125_000, 200_000) }, F25, "2.6 Additional Medicare Tax — §3101(b)(2) and §1401(b)(2)",
   "Additional Medicare Tax thresholds\nFiling status | Threshold\nSingle / HoH | $200,000\nMFJ | $250,000\nMFS | $125,000\nAdditional Medicare Tax rate — 0.9% on wages/SE income over threshold");
-export const NIIT = rule("NET_INVESTMENT_INCOME_TAX", { rate: 0.038, threshold: byStatus(200_000, 250_000, 125_000, 200_000) }, CG, "Net investment income tax",
-  "Filing status | MAGI threshold (same for 2025 and 2026)\nMarried filing jointly / qualifying surviving spouse | $250,000\nMarried filing separately | $125,000\nSingle / head of household | $200,000\n" +
-  "Rate: 3.8% of the smaller of net investment income or MAGI above the threshold");
-export const NII_ITEMS = rule("NET_INVESTMENT_INCOME_ITEMS", true, CG, "Net investment income tax",
-  "Net investment income includes capital gains, interest, dividends, rents, royalties, ... It excludes wages and most self-employment income.");
-export const NIIT_2025 = rule("NIIT_SAME_FOR_2025", true, CG, "2025 returns: tax year 2025, extended deadline October 15, 2026",
-  "The NIIT thresholds, the 3.8% rate and the $3,000 / $1,500 loss limit are the same as for 2026.");
+export const NIIT = rule("NET_INVESTMENT_INCOME_TAX", { rate: 0.038, threshold: byStatus(200_000, 250_000, 125_000, 200_000) }, CG, "Rates, bands and thresholds; Step 8: the net investment income tax",
+  "Net investment income tax rate | 3.8%\nNIIT threshold, joint return or surviving spouse | USD 250,000\n" +
+  "NIIT threshold, married filing separately (half the joint amount) | USD 125,000\nNIIT threshold, any other case (single, head of household) | USD 200,000\n" +
+  "On Form 8960: 3.8% of the lesser of (A) net investment income or (B) modified adjusted gross income over the threshold");
+export const NII_ITEMS = rule("NET_INVESTMENT_INCOME_ITEMS", true, CG, "Step 8: the net investment income tax",
+  "Net investment income includes capital gains, interest, dividends, ... It excludes wages, most self-employment income");
+export const NIIT_2025 = rule("NIIT_SAME_FOR_2025", true, CG, "2025 returns (tax year 2025, extended deadline 15 October 2026)",
+  "The NIIT thresholds, the 3.8% rate and the USD 3,000 / USD 1,500 loss limit are the same as for 2026.");
 
 // ---- Estimated tax safe harbour ----
 export interface SafeHarbour { current: number; prior: number; prior_high: number; agi_limit: number; agi_limit_mfs: number }
 const SH = { current: 0.9, prior: 1, prior_high: 1.1, agi_limit: 150_000, agi_limit_mfs: 75_000 };
-export const SH_2026 = rule<SafeHarbour>("SAFE_HARBOUR_2026", SH, RA, "Estimated tax and the Form 2210 penalty",
-  "Estimated tax is required for 2026 when ... the smaller of 90% of the 2026 tax and 100% of the 2025 tax. The 2025 return must cover 12 months.\n" +
-  "Use 110% instead of 100% if 2025 AGI (line 11b) was more than $150,000 ($75,000 if filing separately for 2026).");
-export const DATES_2026 = rule("ESTIMATED_TAX_DUE_DATES_2026", ["2026-04-15", "2026-06-15", "2026-09-15", "2027-01-15"], RA, "Estimated tax and the Form 2210 penalty",
-  "2026 due dates: April 15, 2026; June 15, 2026; September 15, 2026; January 15, 2027.");
-export const SH_2025 = rule<SafeHarbour>("SAFE_HARBOUR_2025", SH, ET, "Rates and thresholds",
-  "Prior-year AGI <= $150,000 -> 100% prior-year safe harbor\nPrior-year AGI > $150,000 -> 110% prior-year safe harbor\nCurrent — 90% of current-year tax\n" +
-  "AGI > $150,000 ($75,000 MFS) | 110% of prior year tax\n" +
-  "Required = lesser of: Method A (current year): 90% of TY2025 tax; Method B (prior year): 100% of TY2024 tax (110% if AGI > $150K / $75K MFS)");
+export const SH_2026 = rule<SafeHarbour>("SAFE_HARBOUR_2026", SH, ET, "Rates, bands and thresholds; Boundary and exception table",
+  "Current-year safe harbour: share of the 2026 tax | 90%\nPrior-year safe harbour: share of the 2025 tax | 100%\n" +
+  "Prior-year safe harbour where 2025 AGI exceeds the limit below | 110%\n2025 AGI limit for 100% (110% above it) | USD 150,000\n" +
+  "2025 AGI limit, married filing separately for 2026 | USD 75,000\n" +
+  "2025 return not filed, or 2025 a short year | Prior-year safe harbour not available: only 90% of 2026 tax");
+export const DATES_2026 = rule("ESTIMATED_TAX_DUE_DATES_2026", ["2026-04-15", "2026-06-15", "2026-09-15", "2027-01-15"], ET, "Rates, bands and thresholds",
+  "1st installment due | 15 April 2026\n2nd installment due | 15 June 2026\n3rd installment due | 15 September 2026\n4th installment due | 15 January 2027");
+export const SH_2025 = rule<SafeHarbour>("SAFE_HARBOUR_2025", SH, F25, "15. Estimated tax — §6654",
+  "Safe harbors — 90% of current year tax, OR 100% of prior year tax (110% if prior-year AGI > $150,000 / $75,000 MFS)");
 export const DATES_2025 = rule("ESTIMATED_TAX_DUE_DATES_2025", ["2025-04-15", "2025-06-16", "2025-09-15", "2026-01-15"], ET, "Section 1 -- Quick reference",
   "1st | April 15, 2025\n2nd | June 16, 2025\n3rd | September 15, 2025\n4th | January 15, 2026");
-export const INSTALMENT = rule("QUARTERLY_INSTALMENT_SHARE", 0.25, ET, "5.4 Quarterly instalments",
-  "Quarterly instalments — Each instalment = required annual payment / 4 (25% each).");
-export const ZERO_PRIOR_TAX = rule("ZERO_PRIOR_YEAR_TAX", true, ET, "5.3 Prior year safe harbour requirements",
-  "Prior year must be 12-month tax year. Prior year return must be filed. If prior year tax was zero: required annual payment under Method B = $0");
+export const INSTALMENT = rule("QUARTERLY_INSTALMENT_SHARE", 0.25, ET, "Rates, bands and thresholds",
+  "Each regular installment | 25% of the required annual payment");
+export const ZERO_PRIOR_TAX = rule("ZERO_PRIOR_YEAR_TAX", true, ET, "Step 1: is anything required?",
+  "The zero-tax exception: no payments are required if the person was a US citizen or resident alien for all of 2025, the 2025 tax year was 12 months, and they had no tax liability for 2025");
 
 const SE_RULES = [NEF, MINNE, SS, BASE, MED, HALF];
 const CONSTS: Rule[] = [
@@ -208,7 +224,7 @@ const STATES =
 
 export const spec: EngineSpec = {
   name: "us_federal_income_tax_2026",
-  version: "1.0.0",
+  version: "1.1.0",
   jurisdiction: "US",
   tax_years: ["2025", "2026"],
   summary:
