@@ -52,7 +52,7 @@ All BPC amounts are at UYU 6,864 for 2026. The annual scale applies to the annua
 | Item | Rate or amount | Year | Source URL |
 |---|---|---|---|
 | BPC value from 1 January 2026 | UYU 6,864 a month (UYU 6,576 in 2025 under Decreto 5/025; increase 4.38%) | 2026 | https://www.impo.com.uy/bases/decretos/11-2026 |
-| Categoría II individual: up to 84 BPC (UYU 576,576), the mínimo no imponible general | Exempt | 2026 | https://www.impo.com.uy/bases/todgi-2023/7-2024 (T7 art. 48 A) |
+| Categoría II individual: up to 84 BPC (UYU 576,576, computed: 84 x the 2026 BPC of UYU 6,864), the mínimo no imponible general | Exempt | 2026 | https://www.impo.com.uy/bases/todgi-2023/7-2024 (T7 art. 48 A) |
 | Over 84 BPC up to 120 BPC (UYU 823,680) | 10% | 2026 | same, art. 48 A |
 | Over 120 BPC up to 180 BPC (UYU 1,235,520) | 15% | 2026 | same, art. 48 A |
 | Over 180 BPC up to 360 BPC (UYU 2,471,040) | 24% | 2026 | same, art. 48 A |
