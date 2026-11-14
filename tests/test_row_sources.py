@@ -27,6 +27,29 @@ class RowSources(unittest.TestCase):
         n, misses, unreadable = rs.check_text(t, pages(**{A: "rate 5.2% of income not over $23000 " * 20}))
         self.assertEqual((n, misses, unreadable), (1, [], []))
 
+    def test_table_in_attribute_is_read(self):
+        page = '<div data-table="{&quot;column_1&quot;:{&quot;text&quot;:&quot;Kauniainen 4,70&quot;}}"></div>' + "x" * 500
+        self.assertIn("Kauniainen 4,70", rs.read_bytes(page.encode()))
+
+    def test_next_js_page_text_is_read(self):
+        page = ('<html><body><nav>menu</nav><script>self.__next_f.push([1,"Veroprosentti on '
+                'v\\u00e4hint\\u00e4\\u00e4n 1,30 ja enint\\u00e4\\u00e4n 2,00 \\u003cb\\u003eprosenttia\\u003c/b\\u003e"])'
+                '</script></body></html>')
+        text = rs.read_bytes(page.encode())
+        self.assertIn("vähintään 1,30 ja enintään 2,00", text)
+        self.assertNotIn("<b>", text)
+
+    def test_decimal_comma_pages_pass(self):
+        t = skill(f"| Rate | 2.25% on EUR 4,050 | [law]({A}) |", f"| Cap | EUR 1,234.56 | [b]({B}) |")
+        n, misses, _ = rs.check_text(t, pages(**{A: "taxa 2,25 % peste 4.050 lei " * 30,
+                                                  B: "plafond 1\u202f234,56 euros " * 30}))
+        self.assertEqual((n, misses), (2, []))
+
+    def test_wrong_figure_still_misses_on_decimal_comma_page(self):
+        t = skill(f"| Rate | 2.5% | [law]({A}) |")
+        _, misses, _ = rs.check_text(t, pages(**{A: "taxa 2,25 % in 2026 100 lei " * 30}))
+        self.assertEqual([m[0] for m in misses], ["2.5%"])
+
     def test_figure_missing_from_its_own_page_is_a_miss(self):
         t = skill(f"| Rate | 6.5% | [law]({A}) |", f"| Base | $184,500 | [ssa]({B}) |")
         n, misses, _ = rs.check_text(t, pages(**{A: "the rate is 6.5 percent " * 30, B: "base 176,100 " * 40}))
