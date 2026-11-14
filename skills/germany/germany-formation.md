@@ -1,35 +1,58 @@
 ---
 name: germany-formation
 description: Use this skill whenever asked about forming, incorporating, or registering a company in Germany. Trigger on phrases like "set up a company in Germany", "GmbH formation", "UG gründen", "Handelsregister", "German company formation", "register a business Germany", "Gesellschaft mit beschränkter Haftung", "Unternehmergesellschaft", "German notary", "Gewerbeanmeldung", or any question about starting a business entity in Germany. Covers entity types (GmbH, UG, AG, GbR, KG), registration process, capital requirements, costs, post-formation compliance, and bank account opening. ALWAYS read this skill before advising on German company formation.
-version: 1.2
+version: 2.0
 jurisdiction: DE
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-14
 depends_on:
   - company-formation-workflow-base
 category: formation
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: formation
+type: filing-howto
 ---
 
 # Forming a company in Germany (GmbH, UG, AG and partnerships)
 
-How to set up a business entity in Germany: which legal form to pick, the steps from the articles to the commercial register, the capital that must be paid in, the official fees, the registrations that follow, and the duties that start once the company exists. It is for founders, inside and outside Germany, and for the advisers who help them. Most of the detail is on the GmbH and its small variant, the UG (haftungsbeschränkt). Figures are for tax year 2026. The statute figures were read from the consolidated federal law pages on 19 September 2026 and read again on 19 October 2026, with no change to any figure or rule used here. The statutes print the minimum capital amounts in words, so this skill gives them in words too. The small-business start-up limit comes from the finance ministry's instructions for the 2026 EÜR form (ministry letter of 1 September 2026).
+## Scope
 
-## Germany Company Formation Skill
+How to set up a business entity in Germany: which legal form to pick, the steps from the articles to the commercial register, the capital that must be paid in, the official fees, the registrations that follow, and the duties that start once the company exists. It is for founders, inside and outside Germany, and for the advisers who help them. Most of the detail is on the GmbH and its small variant, the UG (haftungsbeschränkt). Figures are for tax year 2026. The statute figures were read from the consolidated federal law pages on 19 September 2026 and read again on 19 October 2026, with no change to any figure or rule used here. The statutes print the minimum capital amounts in words, so this skill gives them in words too. The small-business start-up limit comes from the finance ministry's instructions for the 2026 EÜR form (ministry letter of 1 September 2026).
 
 Read Section 2 to pick the legal form, Section 3 for the steps in order, Section 4 for capital, Section 5 for fees, and Section 6 for what is due after the company exists. Every amount and percentage sits in a table that names the official page it was read on. Where no official page prints a number, this skill says so and gives none.
 
+## Ask the client first
+
+- Who are the founders: how many, natural persons or companies, is one of them a GbR, and does every one of them hold an electronic identity that works for a video notarisation?
+- How much capital can be paid in, in cash, before the application? Is any contribution to be made in kind, or will the company buy assets from a founder soon after the formation?
+- Is the activity a trade, a craft or a liberal profession, and does it need a permit or licence?
+- One managing director or more? Is any of them banned from a trade or profession now, in Germany or another EU or EEA state? Was any of them convicted of an offence, in Germany or abroad, in the last five years?
+- Will anyone sign contracts in the company's name before the register entry?
+- What turnover is expected in the first calendar year, and will the company buy or sell across EU borders? This decides the small-business VAT rule, the filing rhythm and the VAT identification number.
+
+## The method, step by step
+
+1. Pick the legal form with Section 2: who is liable, how much capital can be paid in now, and who the founders are. GmbH and UG rules are in the GmbHG, starting with the capital rule in § 5: https://www.gesetze-im-internet.de/gmbhg/__5.html
+2. Draft the articles with the minimum content of § 3 GmbHG, or use the model protocol of § 2(1a) GmbHG if there are at most three shareholders, one managing director and cash only: https://www.gesetze-im-internet.de/gmbhg/__2.html
+3. Have the articles notarised, in person or by video (§ 2 GmbHG, § 16a BeurkG): https://www.gesetze-im-internet.de/beurkg/__16a.html
+4. Pay in the capital so that it is at the free disposal of the managing directors: the GmbH amounts of § 7(2) GmbHG, or the whole capital for a UG under § 5a(2) GmbHG: https://www.gesetze-im-internet.de/gmbhg/__7.html
+5. File the certified application with the register court through the notary, with the attachments of § 8 GmbHG, and pay the court fee from the Handelsregistergebührenverordnung: https://www.gesetze-im-internet.de/hreggebv/anlage.html
+6. Wait for the entry. Until then the company does not exist as such and whoever acts in its name is personally liable (§ 11 GmbHG): https://www.gesetze-im-internet.de/gmbhg/__11.html
+7. Notify the trade office at the moment the business starts (§ 14 GewO): https://www.gesetze-im-internet.de/gewo/__14.html
+8. Within one month of the formation, without waiting for the register entry, notify the tax office (§ 137 AO) and send the ELSTER form "Fragebogen zur steuerlichen Erfassung: Gründung einer Kapitalgesellschaft beziehungsweise Genossenschaft" (§ 138(1b) AO). Tick the VAT identification number box if the company will trade across EU borders: https://www.elster.de/eportal/formulare-leistungen/alleformulare/fsekapg
+9. Report the beneficial owners to the Transparenzregister without undue delay (§ 20(1) GwG): https://www.gesetze-im-internet.de/gwg_2017/__20.html
+10. Make sure the accident insurer hears of the business within one week of its start (§ 192(1) SGB VII): https://www.gesetze-im-internet.de/sgb_7/__192.html
+11. Put the standing duties of Section 6 in the calendar: accounts, adoption, disclosure within one year (§ 325 HGB), tax returns, shareholder list: https://www.gesetze-im-internet.de/hgb/__325.html
+
 ## Section 1: Quick Reference
+
+Germany; currency EUR.
 
 | Field | Value | Source |
 | --- | --- | --- |
-| Country | Germany (Federal Republic of Germany) | same |
-| Currency | Euro | same |
 | Company registrar | Handelsregister, kept by the local court (Amtsgericht) where the company has its seat. It has two divisions: A for sole merchants, OHG and KG, B for the AG, GmbH and other corporations (§ 3 HRV): https://www.gesetze-im-internet.de/hdlregvfg/__3.html The joint register portal of the federal states carries the commercial, cooperative, partnership, civil-law partnership (Gesellschaftsregister) and association registers of all the states, and the register notices. Its structured data is a non-binding service: https://www.handelsregister.de/rp_web/welcome.xhtml |  |
 | Key legislation | GmbH-Gesetz (GmbHG); Handelsgesetzbuch (HGB); Aktiengesetz (AktG). For partnerships also §§ 705 and following of the Civil Code (BGB) and the PartGG | https://www.gesetze-im-internet.de/gmbhg/__5.html |
-| Typical formation time | Legacy estimate: 3 to 6 weeks from the notary to the register entry. No official page states a duration |  |
 | Taxes on a GmbH, UG or AG | Corporate income tax, solidarity surcharge and trade tax. The three tables below give the parts. No official page prints one combined rate, so this skill does not state one | https://www.existenzgruendungsportal.de/_noch_neu_einordnen/DE/Gruendung-vorbereiten/Rechtsformen/Gesellschaft-mit-beschraenkter-Haftung-GmbH/inhalt.html |
 | Tax authority | Local Finanzamt. Bundeszentralamt für Steuern (BZSt) for the VAT identification number and the business identification number | https://www.bzst.de/DE/Unternehmen/Identifikationsnummern/Wirtschafts-Identifikationsnummer/wirtschaftsidentifikationsnummer_node.html |
 
@@ -488,41 +511,30 @@ The durations below are legacy estimates. The only durations found on official p
 
 The main bottleneck is the processing time at the register court, which varies by court district. The legal deadlines run regardless: one month for the tax notice and questionnaire (Step 6), one week for the accident insurer (Step 8), and "without undue delay" for the Transparenzregister (Step 7).
 
-## The method, step by step
+## Worked cases
 
-1. Pick the legal form with Section 2: who is liable, how much capital can be paid in now, and who the founders are. GmbH and UG rules are in the GmbHG, starting with the capital rule in § 5: https://www.gesetze-im-internet.de/gmbhg/__5.html
-2. Draft the articles with the minimum content of § 3 GmbHG, or use the model protocol of § 2(1a) GmbHG if there are at most three shareholders, one managing director and cash only: https://www.gesetze-im-internet.de/gmbhg/__2.html
-3. Have the articles notarised, in person or by video (§ 2 GmbHG, § 16a BeurkG): https://www.gesetze-im-internet.de/beurkg/__16a.html
-4. Pay in the capital so that it is at the free disposal of the managing directors: the GmbH amounts of § 7(2) GmbHG, or the whole capital for a UG under § 5a(2) GmbHG: https://www.gesetze-im-internet.de/gmbhg/__7.html
-5. File the certified application with the register court through the notary, with the attachments of § 8 GmbHG, and pay the court fee from the Handelsregistergebührenverordnung: https://www.gesetze-im-internet.de/hreggebv/anlage.html
-6. Wait for the entry. Until then the company does not exist as such and whoever acts in its name is personally liable (§ 11 GmbHG): https://www.gesetze-im-internet.de/gmbhg/__11.html
-7. Notify the trade office at the moment the business starts (§ 14 GewO): https://www.gesetze-im-internet.de/gewo/__14.html
-8. Within one month of the formation, without waiting for the register entry, notify the tax office (§ 137 AO) and send the ELSTER form "Fragebogen zur steuerlichen Erfassung: Gründung einer Kapitalgesellschaft beziehungsweise Genossenschaft" (§ 138(1b) AO). Tick the VAT identification number box if the company will trade across EU borders: https://www.elster.de/eportal/formulare-leistungen/alleformulare/fsekapg
-9. Report the beneficial owners to the Transparenzregister without undue delay (§ 20(1) GwG): https://www.gesetze-im-internet.de/gwg_2017/__20.html
-10. Make sure the accident insurer hears of the business within one week of its start (§ 192(1) SGB VII): https://www.gesetze-im-internet.de/sgb_7/__192.html
-11. Put the standing duties of Section 6 in the calendar: accounts, adoption, disclosure within one year (§ 325 HGB), tax returns, shareholder list: https://www.gesetze-im-internet.de/hgb/__325.html
+Amounts are example inputs. Rules: [§ 5(1) GmbHG](https://www.gesetze-im-internet.de/gmbhg/__5.html), [§ 7(2) GmbHG](https://www.gesetze-im-internet.de/gmbhg/__7.html), [§ 5a GmbHG](https://www.gesetze-im-internet.de/gmbhg/__5a.html).
 
-## Ask the client first
+**Case 1: two founders, cash GmbH, share capital EUR 25,000.** Founder A takes a share of EUR 15,000 and founder B a share of EUR 10,000. Before the application to the register, each share must be paid up by at least one quarter (EUR 3,750 and EUR 2,500, together EUR 6,250), and the total paid in must reach half the minimum capital, EUR 12,500. So the founders must pay in EUR 6,250 more than the quarter rule alone requires, split as they agree (for example pro rata: A EUR 7,500, B EUR 5,000).
 
-- Who are the founders: how many, natural persons or companies, is one of them a GbR, and does every one of them hold an electronic identity that works for a video notarisation?
-- How much capital can be paid in, in cash, before the application? Is any contribution to be made in kind, or will the company buy assets from a founder soon after the formation?
-- Is the activity a trade, a craft or a liberal profession, and does it need a permit or licence?
-- One managing director or more? Is any of them banned from a trade or profession now, in Germany or another EU or EEA state? Was any of them convicted of an offence, in Germany or abroad, in the last five years?
-- Will anyone sign contracts in the company's name before the register entry?
-- What turnover is expected in the first calendar year, and will the company buy or sell across EU borders? This decides the small-business VAT rule, the filing rhythm and the VAT identification number.
+**Case 2: a UG instead.** A UG (haftungsbeschränkt) with capital below EUR 25,000 may be applied for only once the capital is paid in full and in cash, and must put one quarter of each year's profit (after any loss carried forward) into a legal reserve until it raises its capital to EUR 25,000.
 
-## When to refuse or refer
-
-- Drafting custom articles, shareholder agreements, vesting or investor rights. That is work for a notary or lawyer.
-- Formations with contributions in kind, suspected hidden contributions in kind, and the capital increase that takes a UG up to a GmbH.
-- An AG beyond the outline here, and every form not covered: KGaA, SE, GmbH & Co. KG, cooperative, association, foundation, and the branch of a foreign company.
-- Conversions and mergers under the Umwandlungsgesetz.
-- Activities that need a licence, for example banking, insurance and financial services, or a regulated craft.
-- Visa and residence questions for founders from outside the EU, and the apostille or legalisation of foreign documents.
-- A buyer from outside the EU acquiring an existing German business (investment screening under the Außenwirtschaftsverordnung).
-- A quote for the notary's fee. Ask the notary.
-- Tax structuring: company or partnership, the option for a partnership to be taxed like a corporation (§ 1a KStG), holding structures and tax groups. Refer to a Steuerberater.
-- A company that is already in financial trouble. Insolvency duties are outside this skill.
+```oa-check
+name: DE GmbH formation, Case 1 cash to pay in before the register application
+inputs:
+  share_a: 15000
+  share_b: 10000
+  min_capital: 25000
+steps:
+  - quarter_rule: pct(share_a, 25) + pct(share_b, 25)
+  - half_rule: min_capital / 2
+  - required: max(quarter_rule, half_rule)
+  - a_pro_rata: required * share_a / (share_a + share_b)
+expected:
+  quarter_rule: 6250.00
+  required: 12500.00
+  a_pro_rata: 7500.00
+```
 
 ```oa-check
 name: DE GmbH 2026, least paid in before the register application
@@ -546,36 +558,117 @@ expected:
   trade_tax: 7000.00
 ```
 
+## When to refuse or refer
+
+- Drafting custom articles, shareholder agreements, vesting or investor rights. That is work for a notary or lawyer.
+- Formations with contributions in kind, suspected hidden contributions in kind, and the capital increase that takes a UG up to a GmbH.
+- An AG beyond the outline here, and every form not covered: KGaA, SE, GmbH & Co. KG, cooperative, association, foundation, and the branch of a foreign company.
+- Conversions and mergers under the Umwandlungsgesetz.
+- Activities that need a licence, for example banking, insurance and financial services, or a regulated craft.
+- Visa and residence questions for founders from outside the EU, and the apostille or legalisation of foreign documents.
+- A buyer from outside the EU acquiring an existing German business (investment screening under the Außenwirtschaftsverordnung).
+- A quote for the notary's fee. Ask the notary.
+- Tax structuring: company or partnership, the option for a partnership to be taxed like a corporation (§ 1a KStG), holding structures and tax groups. Refer to a Steuerberater.
+- A company that is already in financial trouble. Insolvency duties are outside this skill.
+
 ## Sources
 
-- GmbHG §§ 1 to 8, 10, 11, 13, 19, 35a, 40, 42a, 57c, 57e: https://www.gesetze-im-internet.de/gmbhg/__2.html and https://www.gesetze-im-internet.de/gmbhg/__35a.html and https://www.gesetze-im-internet.de/gmbhg/__5.html and https://www.gesetze-im-internet.de/gmbhg/__5a.html and https://www.gesetze-im-internet.de/gmbhg/__7.html and https://www.gesetze-im-internet.de/gmbhg/__8.html and https://www.gesetze-im-internet.de/gmbhg/__11.html (read 2026-10-31)
-- GmbHG model protocols, Annex 1 and Annex 2: https://www.gesetze-im-internet.de/normengrafiken/bgbl1_2021/j3364_0010.pdf and https://www.gesetze-im-internet.de/gmbhg/anlage_2.html (read 2026-10-31)
-- AktG §§ 1, 2, 3, 7, 23, 30, 33, 33a, 36, 36a, 41, 95: https://www.gesetze-im-internet.de/aktg/__7.html and https://www.gesetze-im-internet.de/aktg/__36a.html and https://www.gesetze-im-internet.de/aktg/__33a.html (read 2026-10-31)
-- Handelsregisterverordnung § 3: https://www.gesetze-im-internet.de/hdlregvfg/__3.html (read 2026-10-31)
-- HGB §§ 1, 2, 6, 12, 19, 29, 105, 106, 107, 123, 126, 161, 162, 171, 176, 238, 241a, 264, 267, 267a, 325, 326, 335: https://www.gesetze-im-internet.de/hgb/__12.html and https://www.gesetze-im-internet.de/hgb/__267.html and https://www.gesetze-im-internet.de/hgb/__335.html (read 2026-10-31)
-- Civil Code §§ 705, 707, 707b, 719, 721 and PartGG §§ 1, 4, 8: https://www.gesetze-im-internet.de/bgb/__705.html and https://www.gesetze-im-internet.de/bgb/__719.html and https://www.gesetze-im-internet.de/bgb/__707b.html and https://www.gesetze-im-internet.de/partgg/__1.html (read 2026-10-31)
-- Beurkundungsgesetz §§ 16a, 16c: https://www.gesetze-im-internet.de/beurkg/__16a.html (read 2026-10-31)
-- Handelsregistergebührenverordnung, fee schedule: https://www.gesetze-im-internet.de/hreggebv/anlage.html (read 2026-10-31)
-- GNotKG §§ 34, 105, 107, 125, 126 and its two annexes: https://www.gesetze-im-internet.de/gnotkg/__105.html and https://www.gesetze-im-internet.de/gnotkg/__126.html and https://www.gesetze-im-internet.de/gnotkg/__107.html and https://www.gesetze-im-internet.de/gnotkg/anlage_1.html and https://www.gesetze-im-internet.de/gnotkg/anlage_2.html (read 2026-10-31)
-- GewO §§ 6, 14, 146: https://www.gesetze-im-internet.de/gewo/__6.html and https://www.gesetze-im-internet.de/gewo/__14.html (read 2026-10-31)
-- AO §§ 137, 138, 139c, 141, 149: https://www.gesetze-im-internet.de/ao_1977/__139c.html and https://www.gesetze-im-internet.de/ao_1977/__137.html and https://www.gesetze-im-internet.de/ao_1977/__138.html (read 2026-10-31)
-- UStG §§ 14, 18, 19, 27, 27a and UStDV § 33: https://www.gesetze-im-internet.de/ustg_1980/__14.html and https://www.gesetze-im-internet.de/ustdv_1980/__33.html and https://www.gesetze-im-internet.de/ustg_1980/__18.html and https://www.gesetze-im-internet.de/ustg_1980/__27.html and https://www.gesetze-im-internet.de/ustg_1980/__19.html and https://www.gesetze-im-internet.de/ustg_1980/__27a.html (read 2026-10-31)
-- KStG §§ 1, 1a, 23, SolzG § 4, GewStG §§ 2, 5, 11, 16: https://www.gesetze-im-internet.de/kstg_1977/__23.html and https://www.gesetze-im-internet.de/solzg_1995/__4.html and https://www.gesetze-im-internet.de/gewstg/__11.html (read 2026-10-31)
-- GwG §§ 3, 19, 20, 56, 59: https://www.gesetze-im-internet.de/gwg_2017/__20.html (read 2026-10-31)
-- IHKG §§ 2, 3, SGB VII §§ 192, 209, DrittelbG § 1, Außenwirtschaftsverordnung § 55: https://www.gesetze-im-internet.de/ihkg/__3.html and https://www.gesetze-im-internet.de/sgb_7/__192.html (read 2026-10-31)
-- Federal Employment Agency, Betriebsnummern-Service: https://www.arbeitsagentur.de/unternehmen/betriebsnummern-service/alles-wichtige (read 2026-10-31)
-- Start-up portal of the Federal Government, pages on the GmbH, the UG, the commercial register, the authorities, and registering a business: https://www.existenzgruendungsportal.de/_noch_neu_einordnen/DE/Gruendung-vorbereiten/Rechtsformen/Gesellschaft-mit-beschraenkter-Haftung-GmbH/inhalt.html and https://www.existenzgruendungsportal.de/_noch_neu_einordnen/DE/Gruendung-vorbereiten/Rechtsformen/UG-haftungsbeschraenkt/inhalt and https://www.existenzgruendungsportal.de/_noch_neu_einordnen/DE/Gruendung-vorbereiten/Gruendungswissen/Behoerden/Handelsregister/inhalt and https://www.existenzgruendungsportal.de/Navigation/DE/Gruendungswissen/Behoerden/behoerden and https://www.existenzgruendungsportal.de/Navigation/DE/So-gehts/Unternehmensanmeldung/unternehmensanmeldung (read 2026-10-31)
-- ELSTER, questionnaire for tax registration of a corporation: https://www.elster.de/eportal/formulare-leistungen/alleformulare/fsekapg (read 2026-10-31)
-- BZSt, VAT identification number and business identification number: https://www.bzst.de/DE/Unternehmen/Identifikationsnummern/Umsatzsteuer-Identifikationsnummer/Vergabe_USt_IdNr/vergabe_ust_idnr_node.html and https://www.bzst.de/DE/Unternehmen/Identifikationsnummern/Wirtschafts-Identifikationsnummer/wirtschaftsidentifikationsnummer_node.html (read 2026-10-31)
-- Federal Office of Justice, fine procedure for undisclosed accounts: https://www.bundesjustizamt.de/DE/Themen/OrdnungsgeldVollstreckung/Jahresabschluesse/Offenlegung/Verfahren/Verfahren_node.html (read 2026-10-31)
-- Register portal of the federal states and the company register: https://www.handelsregister.de/rp_web/welcome.xhtml and https://www.unternehmensregister.de/de (read 2026-10-31)
-- German Social Accident Insurance (DGUV), page for businesses: https://www.dguv.de/de/ihr_partner/unternehmen/index.jsp (read 2026-10-31)
-- Finance ministry, questions and answers on the compulsory e-invoice (Stand März 2026): https://www.bundesfinanzministerium.de/Content/DE/FAQ/e-rechnung.html (read 2026-10-31)
-- Finance ministry, instructions for the 2026 EÜR form, letter of 1 September 2026: https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2026-09-01-anlage-EUER-2026.pdf?__blob=publicationFile&v=2
-- [AO § 141](https://www.gesetze-im-internet.de/ao_1977/__141.html), read 2026-10-31
-- [GwG § 3](https://www.gesetze-im-internet.de/gwg_2017/__3.html), read 2026-10-31
-- [HGB § 241a](https://www.gesetze-im-internet.de/hgb/__241a.html), read 2026-10-31
-- [HGB § 267a](https://www.gesetze-im-internet.de/hgb/__267a.html), read 2026-10-31
+Every address below was opened again on the read date shown; the figures quoted in the body come from the page linked on their row or in their table.
+
+| Source | URL | Read on |
+| --- | --- | --- |
+| Read for § 3 HDLREGVFG, (1), and the figures quoted from it | https://www.gesetze-im-internet.de/hdlregvfg/__3.html | 2026-11-14 |
+| Read for Registerportal / Startseite, the passages cited in this skill | https://www.handelsregister.de/rp_web/welcome.xhtml | 2026-11-14 |
+| Read for § 5 GmbHG, Stammkapital; Geschäftsanteil, and the figures quoted from it | https://www.gesetze-im-internet.de/gmbhg/__5.html | 2026-11-14 |
+| Read for BZSt - Wirtschafts-Identifikationsnummer, the passages cited in this skill | https://www.bzst.de/DE/Unternehmen/Identifikationsnummern/Wirtschafts-Identifikationsnummer/wirtschaftsidentifikationsnummer_node.html | 2026-11-14 |
+| Read for § 23 KStG, Steuersatz, and the figures quoted from it | https://www.gesetze-im-internet.de/kstg_1977/__23.html | 2026-11-14 |
+| Read for § 4 SolzG, Zuschlagsatz, and the figures quoted from it | https://www.gesetze-im-internet.de/solzg_1995/__4.html | 2026-11-14 |
+| Read for § 11 GewStG, Steuermesszahl und Steuermessbetrag, and the figures quoted from it | https://www.gesetze-im-internet.de/gewstg/__11.html | 2026-11-14 |
+| Read for § 2 GewStG, Steuergegenstand, and the figures quoted from it | https://www.gesetze-im-internet.de/gewstg/__2.html | 2026-11-14 |
+| Read for § 16 GewStG, Hebesatz, and the figures quoted from it | https://www.gesetze-im-internet.de/gewstg/__16.html | 2026-11-14 |
+| Read for § 13 GmbHG, Juristische Person; Handelsgesellschaft, and the figures quoted from it | https://www.gesetze-im-internet.de/gmbhg/__13.html | 2026-11-14 |
+| Read for § 105 HGB, Begriff der offenen Handelsgesellschaft; Anwendbarkeit des Bürgerlichen Gesetzbuchs, and the figures quoted from it | https://www.gesetze-im-internet.de/hgb/__105.html | 2026-11-14 |
+| Read for § 705 BGB, Rechtsnatur der Gesellschaft, and the figures quoted from it | https://www.gesetze-im-internet.de/bgb/__705.html | 2026-11-14 |
+| Read for § 1 AktG, Wesen der Aktiengesellschaft, and the figures quoted from it | https://www.gesetze-im-internet.de/aktg/__1.html | 2026-11-14 |
+| Read for § 1 DRITTELBG, Erfasste Unternehmen, and the figures quoted from it | https://www.gesetze-im-internet.de/drittelbg/__1.html | 2026-11-14 |
+| Read for § 107 HGB, Kleingewerbliche, vermögensverwaltende oder freiberufliche Gesellschaft; Statuswechsel, and the figures quoted from it | https://www.gesetze-im-internet.de/hgb/__107.html | 2026-11-14 |
+| Read for § 1 PartGG, and the figures quoted from it | https://www.gesetze-im-internet.de/partgg/__1.html | 2026-11-14 |
+| Read for § 8 PartGG, Haftung für Verbindlichkeiten der Partnerschaft, and the figures quoted from it | https://www.gesetze-im-internet.de/partgg/__8.html | 2026-11-14 |
+| Read for § 3 GmbHG, Inhalt des Gesellschaftsvertrags, and the figures quoted from it | https://www.gesetze-im-internet.de/gmbhg/__3.html | 2026-11-14 |
+| Read for § 4 GmbHG, Firma, and the figures quoted from it | https://www.gesetze-im-internet.de/gmbhg/__4.html | 2026-11-14 |
+| Read for § 2 GmbHG, Form des Gesellschaftsvertrags, and the figures quoted from it | https://www.gesetze-im-internet.de/gmbhg/__2.html | 2026-11-14 |
+| Read for gesetze-im-internet.de document j3364 0010, the passages cited in this skill | https://www.gesetze-im-internet.de/normengrafiken/bgbl1_2021/j3364_0010.pdf | 2026-11-14 |
+| Read for anlage_2 GmbHG, and the figures quoted from it | https://www.gesetze-im-internet.de/gmbhg/anlage_2.html | 2026-11-14 |
+| Read for § 16a BEURKG, Zulässigkeit, and the figures quoted from it | https://www.gesetze-im-internet.de/beurkg/__16a.html | 2026-11-14 |
+| Read for § 16c BEURKG, and the figures quoted from it | https://www.gesetze-im-internet.de/beurkg/__16c.html | 2026-11-14 |
+| Read for § 6 GmbHG, Geschäftsführer, and the figures quoted from it | https://www.gesetze-im-internet.de/gmbhg/__6.html | 2026-11-14 |
+| Read for § 12 HGB, Anmeldungen zur Eintragung und Einreichungen, and the figures quoted from it | https://www.gesetze-im-internet.de/hgb/__12.html | 2026-11-14 |
+| Read for § 7 GmbHG, Anmeldung der Gesellschaft, and the figures quoted from it | https://www.gesetze-im-internet.de/gmbhg/__7.html | 2026-11-14 |
+| Read for § 5a GmbHG, Unternehmergesellschaft, and the figures quoted from it | https://www.gesetze-im-internet.de/gmbhg/__5a.html | 2026-11-14 |
+| Read for § 8 GmbHG, Inhalt der Anmeldung, and the figures quoted from it | https://www.gesetze-im-internet.de/gmbhg/__8.html | 2026-11-14 |
+| Read for § 19 GmbHG, Leistung der Einlagen, and the figures quoted from it | https://www.gesetze-im-internet.de/gmbhg/__19.html | 2026-11-14 |
+| Read for § 11 GmbHG, Rechtszustand vor der Eintragung, and the figures quoted from it | https://www.gesetze-im-internet.de/gmbhg/__11.html | 2026-11-14 |
+| Read for anlage HREGGEBV, and the figures quoted from it | https://www.gesetze-im-internet.de/hreggebv/anlage.html | 2026-11-14 |
+| Read for § 14 GewO, Anzeigepflicht; Verordnungsermächtigung, and the figures quoted from it | https://www.gesetze-im-internet.de/gewo/__14.html | 2026-11-14 |
+| Read for § 6 GewO, Anwendungsbereich, and the figures quoted from it | https://www.gesetze-im-internet.de/gewo/__6.html | 2026-11-14 |
+| Read for § 138 AO, Anzeigen über die Erwerbstätigkeit, and the figures quoted from it | https://www.gesetze-im-internet.de/ao_1977/__138.html | 2026-11-14 |
+| Read for § 146 GewO, Verletzung sonstiger Vorschriften über die Ausübung eines Gewerbes, and the figures quoted from it | https://www.gesetze-im-internet.de/gewo/__146.html | 2026-11-14 |
+| Read for § 137 AO, Steuerliche Erfassung von Körperschaften, Vereinigungen und Vermögensmassen, and the figures quoted from it | https://www.gesetze-im-internet.de/ao_1977/__137.html | 2026-11-14 |
+| Read for ELSTER - Fragebogen zur steuerlichen Erfassung: Gründung einer Kapitalgesellschaft beziehungsweise G, the passages cited in this skill | https://www.elster.de/eportal/formulare-leistungen/alleformulare/fsekapg | 2026-11-14 |
+| Read for § 14 UStG, Ausstellung von Rechnungen, and the figures quoted from it | https://www.gesetze-im-internet.de/ustg_1980/__14.html | 2026-11-14 |
+| Read for § 33 UStDV, Rechnungen über Kleinbeträge, and the figures quoted from it | https://www.gesetze-im-internet.de/ustdv_1980/__33.html | 2026-11-14 |
+| Read for § 139c AO, Wirtschafts-Identifikationsnummer, and the figures quoted from it | https://www.gesetze-im-internet.de/ao_1977/__139c.html | 2026-11-14 |
+| Read for § 27a UStG, Umsatzsteuer-Identifikationsnummer, and the figures quoted from it | https://www.gesetze-im-internet.de/ustg_1980/__27a.html | 2026-11-14 |
+| Read for BZSt - Vergabe und Erteilung der USt_IdNr., the passages cited in this skill | https://www.bzst.de/DE/Unternehmen/Identifikationsnummern/Umsatzsteuer-Identifikationsnummer/Vergabe_USt_IdNr/vergabe_ust_idnr_node.html | 2026-11-14 |
+| Read for § 19 UStG, Besteuerung der Kleinunternehmer, and the figures quoted from it | https://www.gesetze-im-internet.de/ustg_1980/__19.html | 2026-11-14 |
+| Read for bundesfinanzministerium.de document 2026 09 01 anlage EUER 2026, the passages cited in this skill | https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2026-09-01-anlage-EUER-2026.pdf?__blob=publicationFile&v=2 | 2026-11-14 |
+| Read for § 18 UStG, Besteuerungsverfahren, and the figures quoted from it | https://www.gesetze-im-internet.de/ustg_1980/__18.html | 2026-11-14 |
+| Read for § 20 GwG, Transparenzpflichten im Hinblick auf bestimmte Vereinigungen, and the figures quoted from it | https://www.gesetze-im-internet.de/gwg_2017/__20.html | 2026-11-14 |
+| Read for § 59 GwG, Übergangsregelung, and the figures quoted from it | https://www.gesetze-im-internet.de/gwg_2017/__59.html | 2026-11-14 |
+| Read for § 3 GwG, Wirtschaftlich Berechtigter, and the figures quoted from it | https://www.gesetze-im-internet.de/gwg_2017/__3.html | 2026-11-14 |
+| Read for § 2 IHKG, (1), and the figures quoted from it | https://www.gesetze-im-internet.de/ihkg/__2.html | 2026-11-14 |
+| Read for § 192 SGB_7, Mitteilungs- und Auskunftspflichten von, and the figures quoted from it | https://www.gesetze-im-internet.de/sgb_7/__192.html | 2026-11-14 |
+| Read for Unternehmen: Betriebsnummern Service / Bundesagentur für Arbeit, the passages cited in this skill | https://www.arbeitsagentur.de/unternehmen/betriebsnummern-service/alles-wichtige | 2026-11-14 |
+| Read for § 3 IHKG, (1), and the figures quoted from it | https://www.gesetze-im-internet.de/ihkg/__3.html | 2026-11-14 |
+| Read for § 33a AktG, Sachgründung ohne externe Gründungsprüfung, and the figures quoted from it | https://www.gesetze-im-internet.de/aktg/__33a.html | 2026-11-14 |
+| Read for § 36 AktG, Anmeldung der Gesellschaft, and the figures quoted from it | https://www.gesetze-im-internet.de/aktg/__36.html | 2026-11-14 |
+| Read for § 123 HGB, Entstehung der Gesellschaft im Verhältnis zu Dritten, and the figures quoted from it | https://www.gesetze-im-internet.de/hgb/__123.html | 2026-11-14 |
+| Read for § 719 BGB, Entstehung der Gesellschaft im Verhältnis zu Dritten, and the figures quoted from it | https://www.gesetze-im-internet.de/bgb/__719.html | 2026-11-14 |
+| Read for § 176 HGB, and the figures quoted from it | https://www.gesetze-im-internet.de/hgb/__176.html | 2026-11-14 |
+| Read for § 707 BGB, Anmeldung zum Gesellschaftsregister, and the figures quoted from it | https://www.gesetze-im-internet.de/bgb/__707.html | 2026-11-14 |
+| Read for § 707b BGB, and the figures quoted from it | https://www.gesetze-im-internet.de/bgb/__707b.html | 2026-11-14 |
+| Read for § 4 PartGG, Anmeldung der Partnerschaft; Statuswechsel, and the figures quoted from it | https://www.gesetze-im-internet.de/partgg/__4.html | 2026-11-14 |
+| Read for § 57e GmbHG, Zugrundelegung der letzten Jahresbilanz; Prüfung, and the figures quoted from it | https://www.gesetze-im-internet.de/gmbhg/__57e.html | 2026-11-14 |
+| Read for § 7 AktG, Mindestnennbetrag des Grundkapitals, and the figures quoted from it | https://www.gesetze-im-internet.de/aktg/__7.html | 2026-11-14 |
+| Read for § 36a AktG, Leistung der Einlagen, and the figures quoted from it | https://www.gesetze-im-internet.de/aktg/__36a.html | 2026-11-14 |
+| Read for § 107 GNotKG, Gesellschaftsrechtliche Verträge, Satzungen und Pläne, and the figures quoted from it | https://www.gesetze-im-internet.de/gnotkg/__107.html | 2026-11-14 |
+| Read for § 105 GNotKG, Anmeldung zu bestimmten Registern, and the figures quoted from it | https://www.gesetze-im-internet.de/gnotkg/__105.html | 2026-11-14 |
+| Read for anlage_1 GNotKG, and the figures quoted from it | https://www.gesetze-im-internet.de/gnotkg/anlage_1.html | 2026-11-14 |
+| Read for anlage_2 GNotKG, and the figures quoted from it | https://www.gesetze-im-internet.de/gnotkg/anlage_2.html | 2026-11-14 |
+| Read for § 125 GNotKG, and the figures quoted from it | https://www.gesetze-im-internet.de/gnotkg/__125.html | 2026-11-14 |
+| Read for § 126 GNotKG, Öffentlich-rechtlicher Vertrag, and the figures quoted from it | https://www.gesetze-im-internet.de/gnotkg/__126.html | 2026-11-14 |
+| Read for Unternehmensregister - Die zentrale Plattform zu Unternehmensdaten, the passages cited in this skill | https://www.unternehmensregister.de/de | 2026-11-14 |
+| Read for Bundesfinanzministerium - Fragen und Antworten zur Einführung der obligatorischen (verpflichtenden), the passages cited in this skill | https://www.bundesfinanzministerium.de/Content/DE/FAQ/e-rechnung.html | 2026-11-14 |
+| Read for § 27 UStG, Allgemeine Übergangsvorschriften, and the figures quoted from it | https://www.gesetze-im-internet.de/ustg_1980/__27.html | 2026-11-14 |
+| Read for § 264 HGB, Pflicht zur Aufstellung; Befreiung, and the figures quoted from it | https://www.gesetze-im-internet.de/hgb/__264.html | 2026-11-14 |
+| Read for § 42a GmbHG, Vorlage des Jahresabschlusses und des Lageberichts, and the figures quoted from it | https://www.gesetze-im-internet.de/gmbhg/__42a.html | 2026-11-14 |
+| Read for § 325 HGB, Offenlegung, and the figures quoted from it | https://www.gesetze-im-internet.de/hgb/__325.html | 2026-11-14 |
+| Read for § 149 AO, Abgabe der Steuererklärungen, and the figures quoted from it | https://www.gesetze-im-internet.de/ao_1977/__149.html | 2026-11-14 |
+| Read for § 40 GmbHG, Liste der Gesellschafter, Verordnungsermächtigung, and the figures quoted from it | https://www.gesetze-im-internet.de/gmbhg/__40.html | 2026-11-14 |
+| Read for § 35a GmbHG, Angaben auf Geschäftsbriefen, and the figures quoted from it | https://www.gesetze-im-internet.de/gmbhg/__35a.html | 2026-11-14 |
+| Read for § 267 HGB, Umschreibung der Größenklassen, and the figures quoted from it | https://www.gesetze-im-internet.de/hgb/__267.html | 2026-11-14 |
+| Read for § 267a HGB, Kleinstkapitalgesellschaften, and the figures quoted from it | https://www.gesetze-im-internet.de/hgb/__267a.html | 2026-11-14 |
+| Read for § 326 HGB, and the figures quoted from it | https://www.gesetze-im-internet.de/hgb/__326.html | 2026-11-14 |
+| Read for § 335 HGB, Festsetzung von Ordnungsgeld; Verordnungsermächtigungen, and the figures quoted from it | https://www.gesetze-im-internet.de/hgb/__335.html | 2026-11-14 |
+| Read for BfJ - Ordnungsgeldverfahren, the passages cited in this skill | https://www.bundesjustizamt.de/DE/Themen/OrdnungsgeldVollstreckung/Jahresabschluesse/Offenlegung/Verfahren/Verfahren_node.html | 2026-11-14 |
+| Read for § 238 HGB, Buchführungspflicht, and the figures quoted from it | https://www.gesetze-im-internet.de/hgb/__238.html | 2026-11-14 |
+| Read for § 241a HGB, and the figures quoted from it | https://www.gesetze-im-internet.de/hgb/__241a.html | 2026-11-14 |
+| Read for § 141 AO, Buchführungspflicht bestimmter Steuerpflichtiger, and the figures quoted from it | https://www.gesetze-im-internet.de/ao_1977/__141.html | 2026-11-14 |
+| Read for § 55 AWV_2013, Anwendungsbereich der sektorübergreifenden Prüfung, and the figures quoted from it | https://www.gesetze-im-internet.de/awv_2013/__55.html | 2026-11-14 |
+| Read for § 56 GwG, Bußgeldvorschriften, and the figures quoted from it | https://www.gesetze-im-internet.de/gwg_2017/__56.html | 2026-11-14 |
+| Read for § 209 SGB_7, Bußgeldvorschriften, and the figures quoted from it | https://www.gesetze-im-internet.de/sgb_7/__209.html | 2026-11-14 |
+
+Not yet confirmed: how long formation takes from the notary to the register entry (no official page states a duration; the old 3 to 6 week estimate was removed); notary fees are worked from the GNotKG tables and are not a quote.
 
 ## Disclaimer
 
