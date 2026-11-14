@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/tn-corporate-income-tax"
   jurisdiction: "TN"
   tax_year: "2026"
-  last_updated: "2026-11-01"
+  last_updated: "2026-11-14"
 ---
 
-# Tunisia Corporate Income Tax v1.1
+# Tunisia Corporate Income Tax v1.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -29,7 +29,6 @@ Companies and other legal persons in art. 45 of the Code IRPP-IS operating in Tu
 | Minimum tax | 0.2% of gross turnover, floor TND 500 | 2026 | Companies not at 10%; due with no turnover. Art. 49 II | same |
 | Reduced minimum tax | 0.1%, floor TND 300 | 2026 | 10% companies, or price-controlled goods with gross margin up to 6%. Art. 49 II | same |
 | New sector contribution | 4% of IS profit, minimum TND 10,000 | 2026 | Banks, financial institutions, insurers, telecom operators, car dealers; for returns due from 2026; not deductible; paid like IS. LF 2026 art. 20(7) | https://web.archive.org/web/20261005010006/https://jibaya.tn/wp-content/uploads/2025/12/Loi2025_17-1.pdf |
-| Social Solidarity Contribution | unverified: 0.5% in the old file | 2026 | LF 2026 art. 87 extends the exceptional rule to profits whose return falls due in 2023 to 2026. Rate text not opened | unverified |
 | Dividends withholding | 10% | 2026 | Art. 52 I(c bis); 25% to privileged-tax jurisdictions is for lines c, c bis, e | https://web.archive.org/web/20250906073044/https://jibaya.tn/wp-content/uploads/2025/07/code-IS-et-IRPP-francais-1.pdf |
 | Capital income withholding | 20% | 2026 | Art. 52 I(c) | same |
 | Interest to foreign banks | 10% | 2026 | Art. 52 I(e) | same |
@@ -107,8 +106,8 @@ expected:
 | Loi n° 2025-17 du 12 decembre 2025, loi de finances 2026, JORT n° 148, archived copy of the DGI file; tax articles read | https://web.archive.org/web/20261005010006/https://jibaya.tn/wp-content/uploads/2025/12/Loi2025_17-1.pdf | 2026-11-01 |
 | DGI page on online filing, archived April 2025; steps read | https://web.archive.org/web/20250419084126/https://jibaya.tn/blog/la-tele-declaration-fiscale/ | 2026-11-01 |
 
-Not yet confirmed: Social Solidarity Contribution rate and minimum. Exact 2026 scope of the 3% rate. The old 15% royalty line is covered only through art. 52 I(b). Tax-haven list. Return boxes. 2026 consolidated code not opened.
+Not yet confirmed: Social Solidarity Contribution rate and minimum. Exact 2026 scope of the 3% rate. The old 15% royalty line is covered only through art. 52 I(b). Tax-haven list. Return boxes. 2026 consolidated code not opened; the Social Solidarity Contribution row (0.5% in the old file) moved out of the rates table on 2026-11-14.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-01. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `tn-corporate-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/tn-corporate-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `tn-corporate-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/tn-corporate-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

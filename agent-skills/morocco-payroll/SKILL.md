@@ -1,13 +1,13 @@
 ---
 name: morocco-payroll
-description: "Morocco payroll for tax year 2026: employer withholding of IR on salaries, CNSS, AMO and vocational training tax, and the payslip. Covers the 2026 scale, frais professionnels, family reductions, exempt items, intern and new-company reliefs, special categories, the monthly and annual filings, and penalties. Use for bulletin de paie, IR salarial, salaire net, SIMPL-IR, Damancom, 9421, charges patronales, or the cost of hiring in Morocco. CNSS rates in this skill are the latest we could read and are marked unverified for 2026. Out of scope: the owner's own cover (ma-social-contributions), self-employed income tax (morocco-professional-income-tax), employment-law disputes. Not the Massachusetts skill ma-payroll."
+description: "Morocco payroll for tax year 2026, employer withholding of IR on salaries under the 2026 CGI scale, frais professionnels, family reductions, exempt items, intern, first-job and new-company reliefs, special categories, the payslip, the monthly SIMPL-IR payment, the annual salary declaration and penalties. CNSS, AMO and vocational training tax amounts come from the employer CNSS statement because no 2026 rate could be read on a Moroccan official page. Use for bulletin de paie, IR salarial, salaire net, SIMPL-IR, Damancom, charges patronales, or the cost of hiring in Morocco. Not the owner own cover (ma-social-contributions) or self-employed income tax (morocco-professional-income-tax)."
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/morocco-payroll"
   jurisdiction: "MA"
   tax_year: "2026"
-  last_updated: "2026-11-01"
+  last_updated: "2026-11-14"
 ---
 
 # Morocco payroll, tax year 2026
@@ -65,19 +65,12 @@ Payments to people outside the permanent staff are not on this payroll route: se
 | Professional athletes, coaches, technical team | 60% allowance in 2026 | Art. 247-XXXII. Clubs that are sports companies under Law 30-09: 90% in 2026 (art. 247-XXXXIII). Not with any other deduction | 2026 | same |
 | Non-permanent staff, performers' fees, sales reps on commission | 30% on gross, no deduction | Art. 73-II-G-1, 4, 5 and 58-II-C. Doctors and non-permanent teachers at 73-II-G-2: final tax | 2026 | same |
 | Casablanca Finance City salaries | Specific rate by option at art. 73-II-F-9, up to 10 years | Option ended by request before 1 February. Read the article for the rate | 2026 | same |
-| Short-term benefits, sickness, maternity, death, job loss, employer | unverified for 2026: 1.05% (of which job-loss indemnity 0.38%) | Capped at MAD 6,000 a month | 2024 | https://www.cleiss.fr/docs/cotisations/maroc.html |
-| Same branch, employee | unverified for 2026: 0.52% (of which job-loss indemnity 0.19%) | Capped at MAD 6,000 | 2024 | same |
-| Pension, employer | unverified for 2026: 7.93% | Capped at MAD 6,000 | 2024 | same |
-| Pension, employee | unverified for 2026: 3.96% | Capped at MAD 6,000 | 2024 | same |
-| Family benefits, employer only | unverified for 2026: 6.40% | No cap | 2024 | same |
-| AMO base, employer | unverified for 2026: 2.26% | No cap. Employers with group medical cover from before 1 March 2006 pay only the solidarity rate, on a yearly application | 2024 | same |
-| AMO solidarity, employer | unverified for 2026: 1.85% | No cap | 2024 | same |
-| AMO, employee | unverified for 2026: 2.26% | No cap | 2024 | same |
-| Vocational training tax (TFP), employer only | unverified for 2026: 1.60% | No cap | 2024 | same |
-| Total | unverified for 2026: employer 21.09%, employee 6.74%, together 27.83% | | 2024 | same |
-| CNSS ceiling | unverified for 2026: MAD 6,000 a month | Capped branches only | 2024 | same |
 
 The monthly bands are the annual bands divided by 12. The subtraction figures are arithmetic from art. 73-I.
+
+### CNSS, AMO and vocational training tax (TFP)
+
+No 2026 CNSS, AMO or TFP rate, and no 2026 CNSS salary ceiling, could be read on a Moroccan official page on 14 Nov 2026 (cnss.ma does not answer scripts or the browser, and no archived copy was available). This skill therefore states none of them. Take the employee and employer amounts from the employer's latest Damancom statement or the CNSS rate notice the client holds, and say that you did so. The structure is stable and stays usable: some branches (short-term benefits, pension) run on pay up to a monthly ceiling, others (family benefits, AMO, TFP) on full gross; family benefits and TFP are employer only; the employer pays both shares to CNSS and keeps the employee share from pay; TFP is collected through CNSS although it is a tax. See the last line of Sources.
 
 ## The base
 
@@ -87,7 +80,7 @@ The monthly bands are the annual bands divided by 12. The subtraction figures ar
 4. Take employee CNSS and AMO, pension contributions to the schemes at art. 59-II, the employee share of group insurance (art. 59-IV), and repayments on a social-housing loan retained monthly by the employer (art. 59-V). For a pension scheme, the employer must pay monthly and keep a certified copy of the membership contract. Foreign nationals paying only into a foreign pension fund deduct up to the rate paid by Moroccan staff (art. 59-II-B).
 5. Result: net taxable income. Apply the monthly band, then subtract the family reduction. It imputes on IR withheld (art. 75) and does not create a refund in the worked cases.
 
-Employer and employee contributions: run the capped branches on the lower of gross and MAD 6,000, the uncapped ones on full gross. Family benefits and TFP are employer only. The employee never pays them. The employer pays both shares to CNSS and takes the employee share from pay. The most an employee pays on the capped branches is 4.48% of 6,000: MAD 268.80. TFP goes through CNSS although it is a tax.
+Employer and employee contributions: run the capped branches on the lower of gross and the CNSS ceiling, the uncapped ones on full gross, at the rates on the client's CNSS statement (see the CNSS sub-section above). Family benefits and TFP are employer only. The employee never pays them. The employer pays both shares to CNSS and takes the employee share from pay. Only the employee share (CNSS and AMO) comes off the IR base.
 
 Sales reps tied to one employer may ask to use the scale instead of 30%. Reps with several employers may do so for one employer (art. 58-II-B); file with the employer's inspector.
 
@@ -108,7 +101,8 @@ The treatment of each benefit, allowance and bonus for CNSS, as distinct from IR
 |---|---|---|
 | Late payment of IR withheld | Penalty 10%, down to 5% if paid within 30 days; 20% for failure to pay or late payment of withheld tax at art. 156 to 160 ter. Plus 5% for the first month and 0.50% for each further month or part (art. 200-I, 208-I). The 5% and 20% rules overlap in the text: confirm which applies on a late retention | https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1 |
 | Annual declaration late | 5% up to 30 days late, or a late corrective return with extra tax; 15% after 30 days (art. 200-II) | same |
-| Late CNSS | Unverified for 2026: 3% first month, 0.5% each further month since April 2025 | no official page read |
+
+Late CNSS filing or payment carries a surcharge set by CNSS rules; no 2026 figure was read (see Not yet confirmed).
 
 ## Cross-border points
 
@@ -116,40 +110,38 @@ Foreign staff paying only into foreign pension funds: art. 59-II-B above. Foreig
 
 ## Two worked examples that recompute
 
-All use CNSS rates marked unverified above. No extra pension or insurance.
+The IR figures are the 2026 scale and frais rules above. The employee CNSS and AMO amount is an input: in a real file it comes from the employer's CNSS statement, because no 2026 CNSS rate is confirmed here. The amounts used below are illustrations only. No extra pension or insurance.
 
-**Example 1: pay MAD 8,000, three dependants.** Annual gross 96,000 is above 78,000, so 25%: frais 2,000. Capped contributions on 6,000: 268.80. AMO on 8,000: 180.80. Net taxable 5,550.40, band 20%. IR before family 276.75, family 150, IR 126.75. Net pay 7,423.65.
+**Example 1: pay MAD 8,000, three dependants, employee CNSS and AMO MAD 449.60 (from the statement).** Annual gross 96,000 is above 78,000, so 25%: frais 2,000. Net taxable 8,000 less 2,000 less 449.60 is 5,550.40, in the monthly 20% band (5,000 to 6,666.67). IR before family 5,550.40 x 20% less 833.33 is 276.75; family 3 x 50 is 150; IR 126.75. Net pay 7,423.65.
 
 ```oa-check
 name: Pay 8000, three dependants
 inputs:
   gross: 8000
   dependants: 3
+  employee_social: 449.60
 steps:
-  - capped: min(gross, 6000) * 0.0448
-  - amo: gross * 0.0226
   - frais: min(gross * 0.25, 2916.67)
-  - rni: gross - frais - capped - amo
+  - rni: gross - frais - employee_social
   - ir: rni * 0.20 - 833.33 - dependants * 50
-  - net: gross - capped - amo - ir
+  - net: gross - employee_social - ir
 expected:
   rni: 5550.40
   ir: 126.75
   net: 7423.65
 ```
 
-**Example 2, a decision: a new company hires on CDI at MAD 10,000. Is the art. 57-20 relief worth claiming?** With no dependants the ordinary monthly IR is 601.56. If all art. 57-20 conditions are met, IR is nil for 24 months: 14,437.44 saved for the employee. If the company cannot show the conditions in the March list, use the ordinary figure. CNSS still runs on the rows above; the state support for employer contributions under the ANAPEC Tahfiz programme has no 2026 CNSS text here.
+**Example 2, a decision: a new company hires on CDI at MAD 10,000, employee CNSS and AMO MAD 494.80 (from the statement). Is the art. 57-20 relief worth claiming?** Frais 2,500; net taxable 7,005.20, in the monthly 30% band (6,666.67 to 8,333.33). With no dependants the ordinary monthly IR is 7,005.20 x 30% less 1,500: 601.56. If all art. 57-20 conditions are met (company created 1 Jan 2015 to 31 Dec 2026, up to 10 employees, CDI, hired in the first two years), IR is nil for 24 months: 14,437.44 saved for the employee. If the company cannot show the conditions in the March list (art. 79-V), use the ordinary figure. CNSS still runs; state support for employer contributions under ANAPEC Tahfiz has no 2026 text here.
 
 ```oa-check
-name: Tahfiz decision at 10000
+name: Art 57-20 decision at 10000
 inputs:
   gross: 10000
   months: 24
+  employee_social: 494.80
 steps:
-  - capped: min(gross, 6000) * 0.0448
-  - amo: gross * 0.0226
   - frais: min(gross * 0.25, 2916.67)
-  - rni: gross - frais - capped - amo
+  - rni: gross - frais - employee_social
   - ir: rni * 0.30 - 1500
   - saved: ir * months
 expected:
@@ -158,9 +150,9 @@ expected:
   saved: 14437.44
 ```
 
-**Case 3: low pay, MAD 4,000, two dependants.** Annual 48,000, so 35%: frais 1,400. Capped 179.20, AMO 90.40, net taxable 2,330.40. No IR. Net 3,730.40. Employer cost: capped 8.98% of 4,000 is 359.20, family 256, AMO 164.40, TFP 64: 843.60.
+**Case 3: low pay, MAD 4,000, two dependants, employee CNSS and AMO MAD 269.60 (from the statement).** Annual 48,000, so 35%: frais 1,400. Net taxable 2,330.40, below the monthly exempt band of 3,333.33. No IR. Net 3,730.40. The employer cost adds the employer shares and TFP from the statement.
 
-**Case 4: the ceiling, MAD 18,000, one dependant.** Frais cap 2,916.67. Capped 268.80, AMO 406.80. Net taxable 14,407.73, band 34%. IR before family 3,065.30, IR 3,015.30. Net 14,309.10. The capped amount stays flat; AMO and IR keep rising.
+**Case 4: high pay, MAD 18,000, one dependant, employee CNSS and AMO MAD 675.60 (from the statement).** Frais at the cap, 2,916.67. Net taxable 14,407.73, in the monthly 34% band (8,333.33 to 15,000). IR before family 14,407.73 x 34% less 1,833.33 is 3,065.30; less 50, IR 3,015.30. Net 14,309.10. The capped CNSS branches stay flat above the ceiling; AMO and IR keep rising.
 
 ## Ask the client first
 
@@ -169,7 +161,7 @@ expected:
 3. Dependants, and any change this month.
 4. Job category for art. 59-I-B or C, or a relief: intern, CDI after internship, new-company hire, first job at 35 or under, doctoral student.
 5. Employer's creation and start date, and head count under any relief.
-6. Any supplementary pension, group insurance, social-housing loan.
+6. Any supplementary pension, group insurance, social-housing loan, and the employer's latest CNSS statement (the 2026 rates and ceiling it applies).
 
 Before delivering, check: ceiling on capped branches only, right frais rate and cap, contributions deducted before the scale, family reduction after it, employer-only branches kept off the employee.
 
@@ -179,12 +171,10 @@ Do not file or pay for the user. Produce computations and draft payslips only.
 
 | Source | URL | Read on |
 |---|---|---|
-| Code Général des Impôts 2026, DGI, arts 56 to 60, 73 to 75, 79, 80, 155, 156, 174, 200, 208, 247 (including XXXII, XXXIII, XXXXIII) read by section | https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1 | 2026-11-01 |
-| CLEISS, Les cotisations au Maroc, table at 1 January 2024 (French public body, not a Moroccan source) | https://www.cleiss.fr/docs/cotisations/maroc.html | 2026-11-01 |
-| cnss.ma, failed: no connection from script or browser | https://www.cnss.ma | not read, connection failed 2026-11-01 |
+| Code Général des Impôts 2026, DGI, French edition. Read for the art. 73-I IR scale, art. 59 frais professionnels (35% to MAD 78,000, 25% capped at MAD 35,000), art. 74 family reduction (MAD 600, cap 3,600), the art. 57 exemptions (57-7, 57-13, 57-16, 57-20 with its 1 Jan 2015 to 31 Dec 2026 window), art. 60 pensions, art. 247-XXXII athletes (60% in 2026), art. 247-XXXIII first job (CDI to 31 Dec 2026), arts 79, 80, 155, 156, 174, 200 and 208 | https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1 | 2026-11-14 |
 
-Not yet confirmed: every CNSS, AMO and TFP rate and the MAD 6,000 ceiling for 2026 (cnss.ma unreachable; the latest read is dated 1 January 2024); SMIG for 2026; Damancom deadline, BDS date, Mon e-ID access, EFI and EDI; CNSS late surcharge; quarterly IR payment for small employers (not in art. 174-I); form number 9421 and portal fields; payslip legal contents and retention period under the Code du travail; IR rounding to the dirham; CNSS treatment of benefits, indemnities (travel, meal, representation) with their limits, overtime, 13th month; apprentices; hiring limits for auto-entrepreneurs; monthly versus year-end spreading of bonuses; CIMR terms; ANAPEC Idmaj and Tahfiz social relief for 2026.
+Not yet confirmed: every 2026 CNSS, AMO and TFP rate and the CNSS monthly ceiling (cnss.ma did not answer on 14 Nov 2026 and no archived copy was available; the last table seen, from the French CLEISS body at 1 January 2024 and not a Moroccan source, showed a MAD 6,000 ceiling and employee 6.74%, employer 21.09% in total); CNSS late surcharge; SMIG for 2026; Damancom deadline, BDS date, Mon e-ID access, EFI and EDI; quarterly IR payment for small employers (not in art. 174-I); form number 9421 and portal fields; payslip legal contents and retention period under the Code du travail; IR rounding to the dirham; CNSS treatment of benefits, indemnities (travel, meal, representation) with their limits, overtime, 13th month; apprentices; hiring limits for auto-entrepreneurs; monthly versus year-end spreading of bonuses; CIMR terms; ANAPEC Idmaj and Tahfiz social relief for 2026.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-01. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `morocco-payroll` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/morocco-payroll. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `morocco-payroll` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/morocco-payroll. If neither is available, confirm every figure against the official source pages cited above before relying on it.

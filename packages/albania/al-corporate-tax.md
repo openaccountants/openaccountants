@@ -1,10 +1,11 @@
 ---
 name: al-corporate-tax
 description: "Albanian corporate income tax (tatimi mbi të ardhurat e korporatave, often called tatimi mbi fitimin) for tax year 2026 under Law No. 29/2023 'Për tatimin mbi të ardhurat' as amended to Law No. 81/2025. Covers resident companies and permanent establishments of foreign companies: the 15% rate, the 8% dividend rate, the 0% rate for entities with gross income up to ALL 14 million until 2029, the 5% sector rates, the taxable base, 30% EBITDA interest limit, depreciation rates, participation exemption, five-year loss carry-forward, quarterly advance payments, the 31 March annual return, penalties under the tax procedures law, withholding at 8% and 15%, and exit tax. Trigger on 'Albania corporate tax', 'tatimi mbi fitimin', 'Albanian profit tax', 'SHPK tax Albania', '15% Albania', 'parapagime', 'withholding tax Albania dividends'. Out of scope: individuals and sole traders (albania-income-tax), VAT (albania-vat), payroll (albania-payroll), social contributions (albania-social-contributions), planning (albania-tax-optimization)."
-version: 0.3
+version: 0.4
+type: computation
 jurisdiction: AL
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
@@ -38,22 +39,22 @@ See also: `albania-income-tax` (individuals, self-employed, sole traders), `al-t
 | Item | Rate or amount | Tax year | Source |
 |---|---|---|---|
 | Corporate income tax, standard rate | 15% | 2026 | Law 29/2023 art. 41, [tatime.gov.al consolidated text](https://tatime.gov.al/wp-content/uploads/2026/09/Ligj-Nr.-29-2023-Per-Tatimin-mbi-te-Ardhurat-i-ndryshuar.pdf) |
-| Dividends received (taxed gross, no costs deducted) | 8% | 2026 | Law 29/2023 art. 41 |
+| Dividends received (taxed gross, no costs deducted) | 8% | 2026 | [Law 29/2023 art. 41](https://tatime.gov.al/wp-content/uploads/2026/09/Ligj-Nr.-29-2023-Per-Tatimin-mbi-te-Ardhurat-i-ndryshuar.pdf) |
 | Entities with gross income up to ALL 14,000,000 a year | 0% until 31 Dec 2029 | 2026 | Law 29/2023 art. 69(1)(dh); [tatime.gov.al: Shoqëritë tregtare](https://tatime.gov.al/entitete/?artikull=shoqerite-tregtare) |
-| Certified agrotourism | 5% until 31 Dec 2029 | 2026 | Law 29/2023 art. 69(1)(a) |
-| Agricultural cooperation companies (Law 38/2012) | 5% until 31 Dec 2029 | 2026 | Law 29/2023 art. 69(1)(c) |
-| Automotive industry | 5% until 31 Dec 2029 | 2026 | Law 29/2023 art. 69(1)(d) |
-| Software production or development, entities registered before the law | 5% ended 31 Dec 2025; standard rules from 2026 | 2025 only | Law 29/2023 art. 69(1)(ç) |
-| 4 and 5 star "special status" hotels and resorts with an international brand | Exempt for 10 years, for structures obtaining special status by December 2026 | 2026 | Law 29/2023 art. 69(1)(b) |
+| Certified agrotourism | 5% until 31 Dec 2029 | 2026 | [Law 29/2023 art. 69(1)(a)](https://tatime.gov.al/wp-content/uploads/2026/09/Ligj-Nr.-29-2023-Per-Tatimin-mbi-te-Ardhurat-i-ndryshuar.pdf) |
+| Agricultural cooperation companies (Law 38/2012) | 5% until 31 Dec 2029 | 2026 | [Law 29/2023 art. 69(1)(c)](https://tatime.gov.al/wp-content/uploads/2026/09/Ligj-Nr.-29-2023-Per-Tatimin-mbi-te-Ardhurat-i-ndryshuar.pdf) |
+| Automotive industry | 5% until 31 Dec 2029 | 2026 | [Law 29/2023 art. 69(1)(d)](https://tatime.gov.al/wp-content/uploads/2026/09/Ligj-Nr.-29-2023-Per-Tatimin-mbi-te-Ardhurat-i-ndryshuar.pdf) |
+| Software production or development, entities registered before the law | 5% ended 31 Dec 2025; standard rules from 2026 | 2025 only | [Law 29/2023 art. 69(1)(ç)](https://tatime.gov.al/wp-content/uploads/2026/09/Ligj-Nr.-29-2023-Per-Tatimin-mbi-te-Ardhurat-i-ndryshuar.pdf) |
+| 4 and 5 star "special status" hotels and resorts with an international brand | Exempt for 10 years, for structures obtaining special status by December 2026 | 2026 | [Law 29/2023 art. 69(1)(b)](https://tatime.gov.al/wp-content/uploads/2026/09/Ligj-Nr.-29-2023-Per-Tatimin-mbi-te-Ardhurat-i-ndryshuar.pdf) |
 | Interest deduction cap | 30% of EBITDA (profit + taxes + interest + depreciation and amortisation); excess carried forward 5 years | 2026 | Law 29/2023 art. 30; [Instruction 26/2023 points 30.2, 30.4](https://tatime.gov.al/wp-content/uploads/2026/09/Udhezimi-nr-26-date-8.9.2023-Per-tatimin-mbi-te-ardhuart.pdf) |
-| Representation and entertainment costs | Deductible up to 0.3% of annual revenue | 2026 | Law 29/2023 art. 50(1)(g) |
-| Employee life and health insurance | Deductible up to 5% of gross wages | 2026 | Law 29/2023 art. 50(1)(ll) |
-| Loss carry-forward | 5 years, first in first out; no carry-back | 2026 | Law 29/2023 art. 54 |
-| Withholding on dividends | 8% | 2026 | Law 29/2023 art. 59 |
-| Withholding on interest, royalties, services, and other art. 58 payments | 15% | 2026 | Law 29/2023 art. 59 |
-| Surcharges or local taxes on profit | None in Law 29/2023. Art. 71(2) repealed the simplified profit tax in Chapter III of Law 9632/2006 on local taxes | 2026 | Law 29/2023 art. 71(2) |
-| Minimum tax | None in Law 29/2023 | 2026 | Law 29/2023 |
-| Pillar Two (15% global minimum tax) | No provision in the consolidated Law 29/2023 read today; Albania is not an EU member, so the EU directive does not apply directly | 2026 | Law 29/2023 |
+| Representation and entertainment costs | Deductible up to 0.3% of annual revenue | 2026 | [Law 29/2023 art. 50(1)(g)](https://tatime.gov.al/wp-content/uploads/2026/09/Ligj-Nr.-29-2023-Per-Tatimin-mbi-te-Ardhurat-i-ndryshuar.pdf) |
+| Employee life and health insurance | Deductible up to 5% of gross wages | 2026 | [Law 29/2023 art. 50(1)(ll)](https://tatime.gov.al/wp-content/uploads/2026/09/Ligj-Nr.-29-2023-Per-Tatimin-mbi-te-Ardhurat-i-ndryshuar.pdf) |
+| Loss carry-forward | 5 years, first in first out; no carry-back | 2026 | [Law 29/2023 art. 54](https://tatime.gov.al/wp-content/uploads/2026/09/Ligj-Nr.-29-2023-Per-Tatimin-mbi-te-Ardhurat-i-ndryshuar.pdf) |
+| Withholding on dividends | 8% | 2026 | [Law 29/2023 art. 59](https://tatime.gov.al/wp-content/uploads/2026/09/Ligj-Nr.-29-2023-Per-Tatimin-mbi-te-Ardhurat-i-ndryshuar.pdf) |
+| Withholding on interest, royalties, services, and other art. 58 payments | 15% | 2026 | [Law 29/2023 art. 59](https://tatime.gov.al/wp-content/uploads/2026/09/Ligj-Nr.-29-2023-Per-Tatimin-mbi-te-Ardhurat-i-ndryshuar.pdf) |
+| Surcharges or local taxes on profit | None in Law 29/2023. Art. 71(2) repealed the simplified profit tax in Chapter III of Law 9632/2006 on local taxes | 2026 | [Law 29/2023 art. 71(2)](https://tatime.gov.al/wp-content/uploads/2026/09/Ligj-Nr.-29-2023-Per-Tatimin-mbi-te-Ardhurat-i-ndryshuar.pdf) |
+| Minimum tax | None in Law 29/2023 | 2026 | [Law 29/2023](https://tatime.gov.al/wp-content/uploads/2026/09/Ligj-Nr.-29-2023-Per-Tatimin-mbi-te-Ardhurat-i-ndryshuar.pdf) |
+| Pillar Two (15% global minimum tax) | No provision in the consolidated Law 29/2023 read today; Albania is not an EU member, so the EU directive does not apply directly | 2026 | [Law 29/2023](https://tatime.gov.al/wp-content/uploads/2026/09/Ligj-Nr.-29-2023-Per-Tatimin-mbi-te-Ardhurat-i-ndryshuar.pdf) |
 
 **The ALL 14 million rule is a threshold, not a band.** Art. 69(1)(dh) applies the 0% rate to entities "with gross income up to ALL 14 million a year". It does not say the first ALL 14 million of a larger entity is taxed at 0%. Read literally, an entity with gross income of ALL 14,000,001 pays 15% on all its taxable profit. Confirm with the client's adviser how gross income is measured (the law does not define "gross income" in this article) before relying on the threshold near the line.
 

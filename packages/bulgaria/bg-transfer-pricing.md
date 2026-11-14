@@ -1,14 +1,15 @@
 ---
 name: bg-transfer-pricing
 description: "Bulgarian transfer pricing (трансферно ценообразуване) for tax year 2026 under the Corporate Income Tax Act (ZKPO) Article 15, the Tax-Insurance Procedure Code (DOPK) Chapter 8a (Articles 71a to 71zh), Articles 116 and 278a, the related-party definition in DOPK Additional Provisions para. 1 item 3, and Ordinance N-3 of 7 November 2025 on the market price methods, which replaced Ordinance N-9 from 1 January 2026. Covers who is related, the arm's length rule for domestic and cross-border deals, the five methods, the interquartile range and adjustment to the median, local and master file tests and euro thresholds, the 30 June deadline, hidden profit distribution, penalties, country-by-country reporting and the absence of an APA procedure. Trigger on: Bulgaria transfer pricing, местно досие, обобщено досие, свързани лица, Наредба Н-3, Bulgarian local file, country-by-country report Bulgaria. Out of scope: the full CIT computation, thin capitalisation detail and withholding tax (bg-corporate-income-tax), VAT (bulgaria-vat-return)."
-version: 0.1
+version: 0.3
 jurisdiction: BG
 tax_year: 2026
-last_updated: 2026-10-23
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: transfer-pricing
+type: situation-rules
 ---
 
 # Bulgaria: transfer pricing (трансферно ценообразуване), tax year 2026
@@ -215,4 +216,4 @@ Leva amounts: the Euro Introduction Act (para. 34) restated in euro only the DOP
 
 Not yet confirmed: whether underpricing of sales to a shareholder (not only overpayments) counts as a hidden profit distribution under ZKPO para. 1, item 5(a); the required language of the local file; whether the annual CIT return has a related-party disclosure schedule; the text of Council of Ministers Decree 347/2025 itself (the interest formula is taken from the NRA overdue liabilities page); whether the old NRA Transfer Pricing Manual will be reissued under Ordinance N-3.
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.

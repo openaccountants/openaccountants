@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/gg-gst-transition"
   jurisdiction: "GG"
   tax_year: "2026"
-  last_updated: "2026-10-28"
+  last_updated: "2026-11-14"
 ---
 
 # Guernsey GST transition: approved policy and implementation evidence
@@ -37,9 +37,8 @@ The existing future-price examples below remain unchanged and explicitly hypothe
 | Personal tax and social-security changes | 1 January 2029 | Planned timetable; do not replace 2026 rates; [reform page](https://gov.gg/taxreform) |
 | Corporate changes | 1 January 2027 | Separate timetable; do not assume every reform starts together; [reform page](https://gov.gg/taxreform) |
 | Food produced or grown by small independent suppliers | 0% instead of 3% in the adopted direction | Final statutory definitions and evidence requirements still needed; [Proposition 1](https://statesvoting-records.gov.gg/Propositions/Details/2682) |
-| Registration and turnover threshold | Not established by this Guide | Obtain enacted registration rules; no threshold is inferred from Jersey |
 
-The official page says monetary thresholds will be adjusted for inflation before implementation. Do not treat an illustrative calculator threshold as a fixed future statutory figure. [Reform page](https://gov.gg/taxreform).
+No GST registration or turnover threshold has been enacted; obtain the enacted registration rules and do not infer one from Jersey (see Not yet confirmed under Sources). The official page says monetary thresholds will be adjusted for inflation before implementation. Do not treat an illustrative calculator threshold as a fixed future statutory figure. [Reform page](https://gov.gg/taxreform).
 
 ## The base
 
@@ -107,6 +106,10 @@ expected:
 
 All three sources in frontmatter were read on 22 October 2026: [official timetable](https://gov.gg/taxreform), [adopted commencement conditions](https://statesvoting-records.gov.gg/Propositions/Details/2682) and [legislation direction](https://statesvoting-records.gov.gg/Propositions/Details/2787). The latter two record votes carried on 2 October 2026. This draft records a verified policy transition, not comprehensive VAT/GST coverage, professional attestation or a determination that consumption taxes are inapplicable. The earlier review left current domestic tax scope open. The new current-scope evidence above establishes the independently reviewed 2026 domestic general VAT/GST not-applicable finding; complete customs/excise methods and future GST legislation/operations are separate limits. Independent source review is recorded in the pack README. The reform timetable was re-read on 27 October 2026, and its [current consumption-tax detail page](https://gov.gg/taxpackage) was fetched and read on the same UTC date. It describes implementation from 2029 and the assurance-report condition; it does not itself supply an operative 2026 charging, registration or return regime. The new scope finding uses the additional current primary sources below, rather than a future timetable alone. The [fresh independent whole-pack review](../../evidence/research/guernsey-2026/review/report.md) and [bounded contribution-assessment closure](../../evidence/research/guernsey-2026/review/bounded-addition-closure.md) accept the earlier published revision at 6ae8c8a2; the new current-scope method is checked in the [fresh ordinary-method whole-pack review](../../evidence/research/guernsey-2026/ordinary-completion-2026-10-28/independent-review/report.md) and professional attestation remains pending.
 
+The reform page and Proposition 1 were read again on 14 November 2026 for the 3% GST rate from the first quarter of 2029, the 1 January 2027 and 1 January 2029 timetables, the inflation adjustment of thresholds and the 0% rate for food from small independent suppliers.
+
+Not yet confirmed: the GST registration and turnover threshold (no enacted figure); the final statutory definitions, evidence rules and inflation-adjusted thresholds, which await the GST legislation.
+
 | Additional official source | Read scope | Read on |
 |---|---|---|
 | [HMRC VAT Notice 700](https://www.gov.uk/guidance/vat-guide-notice-700) and [VATPOSG2300](https://www.gov.uk/hmrc-internal-manuals/vat-place-of-supply-goods/vatposg2300) | Notice paragraph 4.7.3 and the manual's complete territorial explanation; no VAT in the Channel Islands, separate UK import/export treatment | 2026-10-28 |
@@ -117,8 +120,8 @@ All three sources in frontmatter were read on 22 October 2026: [official timetab
 
 General reference and planning material only. A qualified professional must verify the applicable law, commencement and facts before filing, paying or acting on this draft.
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-28. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `gg-gst-transition` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/gg-gst-transition. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `gg-gst-transition` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/gg-gst-transition. If neither is available, confirm every figure against the official source pages cited above before relying on it.

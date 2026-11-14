@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/pl-cross-border"
   jurisdiction: "PL"
   tax_year: "2026"
-  last_updated: "2026-11-01"
+  last_updated: "2026-11-14"
 ---
 
-# Poland: cross-border tax for individuals (2026) v0.2
+# Poland: cross-border tax for individuals (2026) v0.3
 
 > **General reference only.** This skill is general tax reference material for AI-assisted work. It has not been reviewed for any specific person's facts. Do not rely on it to file, pay or take a position without review by a qualified professional in Poland.
 
@@ -52,21 +52,21 @@ Either test is enough. Both are read subject to tax treaties (art. 4a), so a per
 | Item | Rate or amount | Tax year | Source |
 |---|---|---|---|
 | Residence test | Centre of vital interests in Poland, or more than 183 days in Poland in the tax year | 2026 | [PIT Act art. 3 ust. 1a](https://api.sejm.gov.pl/eli/acts/DU/2026/592/text/U/D20260592Lj.pdf) |
-| Tax scale (residents, and non-residents on scale income) | 12% minus PLN 3,600 up to PLN 120,000; PLN 10,800 plus 32% of the excess above PLN 120,000 | 2026 | PIT Act art. 27 ust. 1 |
+| Tax scale (residents, and non-residents on scale income) | 12% minus PLN 3,600 up to PLN 120,000; PLN 10,800 plus 32% of the excess above PLN 120,000 | 2026 | PIT Act art. 27 ust. 1; https://api.sejm.gov.pl/eli/acts/DU/2026/592/text/U/D20260592Lj.pdf |
 | Return relief (ulga na powrót) | Exempt revenue up to PLN 85,528 a year, for four consecutive tax years starting with the year of the move or the next year | 2026 | PIT Act art. 21 ust. 1 pkt 152; [podatki.gov.pl, ulga na powrót](https://www.podatki.gov.pl/ulgi-i-odliczenia/ulga-na-powrot-pit) |
-| Shared cap with the young-person, 4+ family and working-senior reliefs | PLN 85,528 a year in total across art. 21 ust. 1 pkt 148 and 152-154 | 2026 | PIT Act art. 21 ust. 44 |
-| Employee standard costs, one employer | PLN 250 a month, PLN 3,000 a year | 2026 | PIT Act art. 22 ust. 2 pkt 1 |
-| Withholding on non-residents: personal-activity fees under art. 13 pkt 2 and 6-9 (arts, sport and teaching; board and supervisory seats; mandate and specific-task contracts; management contracts), royalties, know-how, equipment rental, interest outside art. 30a | 20% of revenue | 2026 | PIT Act art. 29 ust. 1 pkt 1 |
-| Withholding on non-residents: advisory, accounting, market research, legal, advertising, management and control, data processing, recruitment, guarantees and similar services | 20% of revenue | 2026 | PIT Act art. 29 ust. 1 pkt 5 |
-| Withholding on non-residents: entertainment and sports performers | 20% of revenue | 2026 | PIT Act art. 29 ust. 1 pkt 2 |
-| Flat tax on dividends, interest on loans, bank deposits and securities | 19% | 2026 | PIT Act art. 30a ust. 1 pkt 1-4 |
-| Payments to a related non-resident above PLN 2,000,000 in the payer's tax year (art. 29 ust. 1 pkt 1 and art. 30a ust. 1 pkt 1-5a) | Domestic rate withheld on the excess, ignoring treaty relief, unless the payer files a statement or holds an opinion | 2026 | PIT Act art. 41 ust. 12-15 |
-| Validity of a certificate of residence with no stated period | 12 months from the date of issue | 2026 | PIT Act art. 41 ust. 9a |
+| Shared cap with the young-person, 4+ family and working-senior reliefs | PLN 85,528 a year in total across art. 21 ust. 1 pkt 148 and 152-154 | 2026 | PIT Act art. 21 ust. 44; https://api.sejm.gov.pl/eli/acts/DU/2026/592/text/U/D20260592Lj.pdf |
+| Employee standard costs, one employer | PLN 250 a month, PLN 3,000 a year | 2026 | PIT Act art. 22 ust. 2 pkt 1; https://api.sejm.gov.pl/eli/acts/DU/2026/592/text/U/D20260592Lj.pdf |
+| Withholding on non-residents: personal-activity fees under art. 13 pkt 2 and 6-9 (arts, sport and teaching; board and supervisory seats; mandate and specific-task contracts; management contracts), royalties, know-how, equipment rental, interest outside art. 30a | 20% of revenue | 2026 | PIT Act art. 29 ust. 1 pkt 1; https://api.sejm.gov.pl/eli/acts/DU/2026/592/text/U/D20260592Lj.pdf |
+| Withholding on non-residents: advisory, accounting, market research, legal, advertising, management and control, data processing, recruitment, guarantees and similar services | 20% of revenue | 2026 | PIT Act art. 29 ust. 1 pkt 5; https://api.sejm.gov.pl/eli/acts/DU/2026/592/text/U/D20260592Lj.pdf |
+| Withholding on non-residents: entertainment and sports performers | 20% of revenue | 2026 | PIT Act art. 29 ust. 1 pkt 2; https://api.sejm.gov.pl/eli/acts/DU/2026/592/text/U/D20260592Lj.pdf |
+| Flat tax on dividends, interest on loans, bank deposits and securities | 19% | 2026 | PIT Act art. 30a ust. 1 pkt 1-4; https://api.sejm.gov.pl/eli/acts/DU/2026/592/text/U/D20260592Lj.pdf |
+| Payments to a related non-resident above PLN 2,000,000 in the payer's tax year (art. 29 ust. 1 pkt 1 and art. 30a ust. 1 pkt 1-5a) | Domestic rate withheld on the excess, ignoring treaty relief, unless the payer files a statement or holds an opinion | 2026 | PIT Act art. 41 ust. 12-15; https://api.sejm.gov.pl/eli/acts/DU/2026/592/text/U/D20260592Lj.pdf |
+| Validity of a certificate of residence with no stated period | 12 months from the date of issue | 2026 | PIT Act art. 41 ust. 9a; https://api.sejm.gov.pl/eli/acts/DU/2026/592/text/U/D20260592Lj.pdf |
 | Abolition relief (ulga abolicyjna) cap | PLN 1,360, except for employment and certain service income earned outside the land territory of any state | 2026 | PIT Act art. 27g ust. 2 and 5; [podatki.gov.pl, ulga abolicyjna](https://www.podatki.gov.pl/ulgi-i-odliczenia/ulga-abolicyjna-pit) |
-| Exit tax threshold | Applies only if the market value of the assets moved exceeds PLN 4,000,000 (one limit for both spouses together) | 2026 | PIT Act art. 30db |
-| Exit tax rate | 19% where the asset has a tax value; 3% where no tax value is set | 2026 | PIT Act art. 30da ust. 1 |
-| Exit tax instalments | Up to 5 years, on application, for a move to an EU/EEA state with a recovery-assistance agreement | 2026 | PIT Act art. 30de |
-| Employee social contributions withheld by the employer | Pension 9.76% (half of 19.52%), disability 1.5%, sickness 2.45%: 13.71% in total | 2026 | [Social Insurance System Act art. 16 and 22](https://api.sejm.gov.pl/eli/acts/DU/2026/199/text/U/D20260199Lj.pdf) |
+| Exit tax threshold | Applies only if the market value of the assets moved exceeds PLN 4,000,000 (one limit for both spouses together) | 2026 | PIT Act art. 30db; https://api.sejm.gov.pl/eli/acts/DU/2026/592/text/U/D20260592Lj.pdf |
+| Exit tax rate | 19% where the asset has a tax value; 3% where no tax value is set | 2026 | PIT Act art. 30da ust. 1; https://api.sejm.gov.pl/eli/acts/DU/2026/592/text/U/D20260592Lj.pdf |
+| Exit tax instalments | Up to 5 years, on application, for a move to an EU/EEA state with a recovery-assistance agreement | 2026 | PIT Act art. 30de; https://api.sejm.gov.pl/eli/acts/DU/2026/592/text/U/D20260592Lj.pdf |
+| Employee social contributions withheld by the employer | Pension 9.76% (half of 19.52%), disability 1.5%, sickness 2.45%: 13.71% in total (pension half and total computed) | 2026 | [Social Insurance System Act art. 16 and 22](https://api.sejm.gov.pl/eli/acts/DU/2026/199/text/U/D20260199Lj.pdf) |
 | Annual cap on the pension and disability contribution base | PLN 282,600 | 2026 | [MRPiPS notice, M.P. 2025 poz. 1206](https://api.sejm.gov.pl/eli/acts/MP/2025/1206/text.pdf) |
 | Late payment interest | 10.50% a year (200% of the NBP lombard rate of 4.25% plus 2 points, floor 8%) | from 5 March 2026 | Tax Ordinance art. 56 § 1; [MF notice, M.P. 2026 poz. 269](https://api.sejm.gov.pl/eli/acts/MP/2026/269/text.pdf); [NBP base rates](https://static.nbp.pl/dane/stopy/stopy_procentowe.xml) |
 
@@ -110,7 +110,7 @@ Either test is enough. Both are read subject to tax treaties (art. 4a), so a per
 | PIT-8AR annual return of flat-rate tax withheld (filed electronically, art. 45ba; so is the IFT-1R) | Payer | End of January 2027 | PIT Act art. 42 ust. 1a; [podatki.gov.pl, PIT forms](https://www.podatki.gov.pl/podatki-firmowe/pit/formularze-pit) |
 | IFT-1R information on income of a non-resident individual | Payer, to the taxpayer and to the tax office for foreign persons; also where a treaty means nothing was withheld | End of February 2027; within 14 days of the taxpayer's written request | PIT Act art. 42 ust. 2 pkt 2, 4 and 6 |
 | PIT-11 for revenue covered by the return relief | Employer | With the usual PIT-11 | PIT Act art. 42 ust. 5 |
-| PIT-NZ exit tax return and payment | Taxpayer | By the 7th of the month after the month in which the assets moved pass PLN 4,000,000 | PIT Act art. 30da ust. 14; [podatki.gov.pl, PIT forms](https://www.podatki.gov.pl/podatki-firmowe/pit/formularze-pit) |
+| PIT-NZ exit tax return and payment | Taxpayer | By the 7th of the month after the month in which the assets moved pass PLN 4,000,000 (PIT Act text: https://api.sejm.gov.pl/eli/acts/DU/2026/592/text.pdf) | PIT Act art. 30da ust. 14; [podatki.gov.pl, PIT forms](https://www.podatki.gov.pl/podatki-firmowe/pit/formularze-pit) |
 
 ## Penalties and interest
 
@@ -224,19 +224,19 @@ expected:
 | Source | URL | Read on |
 |---|---|---|
 | PIT Act, consolidated text Dz.U. 2026 poz. 592, ELI record (later amendments 779, 846, 1079) | https://api.sejm.gov.pl/eli/acts/DU/2026/592 | 2026-10-23 |
-| PIT Act, Sejm unified text incl. Dz.U. 2026 poz. 592, 779, 846, 1079, 1098, 1123 (arts. 3, 4a, 13, 21 ust. 1 pkt 152 and ust. 39, 43, 44, 22 ust. 2 and 3b, 23 ust. 1 pkt 31 and ust. 10, 26, 27, 27g, 29, 30a, 30da-30df, 31a, 41, 42, 45, 45ba) | https://api.sejm.gov.pl/eli/acts/DU/2026/592/text/U/D20260592Lj.pdf | 2026-10-23 |
-| Social Insurance System Act, Sejm unified text of Dz.U. 2026 poz. 199 (arts. 16, 22) | https://api.sejm.gov.pl/eli/acts/DU/2026/199/text/U/D20260199Lj.pdf | 2026-10-23 |
+| PIT Act, Sejm unified text incl. Dz.U. 2026 poz. 592, 779, 846, 1079, 1098, 1123 (arts. 3, 4a, 13, 21 ust. 1 pkt 152 and ust. 39, 43, 44, 22 ust. 2 and 3b, 23 ust. 1 pkt 31 and ust. 10, 26, 27, 27g, 29, 30a, 30da-30df, 31a, 41, 42, 45, 45ba) | https://api.sejm.gov.pl/eli/acts/DU/2026/592/text/U/D20260592Lj.pdf | 2026-11-14 |
+| Social Insurance System Act, Sejm unified text of Dz.U. 2026 poz. 199 (arts. 16, 22) | https://api.sejm.gov.pl/eli/acts/DU/2026/199/text/U/D20260199Lj.pdf | 2026-11-14 |
 | MRPiPS notice on the 2026 annual contribution cap, M.P. 2025 poz. 1206 | https://api.sejm.gov.pl/eli/acts/MP/2025/1206/text.pdf | 2026-10-23 |
-| Tax Ordinance, Sejm unified text of Dz.U. 2026 poz. 622 (arts. 12, 26a, 30, 56, 63, 75) | https://api.sejm.gov.pl/eli/acts/DU/2026/622/text/U/D20260622Lj.pdf | 2026-10-23 |
-| MF notice on late payment interest, M.P. 2026 poz. 269 | https://api.sejm.gov.pl/eli/acts/MP/2026/269/text.pdf | 2026-10-23 |
+| Tax Ordinance, Sejm unified text of Dz.U. 2026 poz. 622 (arts. 12, 26a, 30, 56, 63, 75) | https://api.sejm.gov.pl/eli/acts/DU/2026/622/text/U/D20260622Lj.pdf | 2026-11-14 |
+| Read for Late payment interest: MF notice on late payment interest, M.P. 2026 poz. 269 | https://api.sejm.gov.pl/eli/acts/MP/2026/269/text.pdf | 2026-11-14 |
 | NBP base rates (lombard 4.25% from 5 March 2026) | https://static.nbp.pl/dane/stopy/stopy_procentowe.xml | 2026-10-23 |
-| Poland-Germany double tax treaty, Dz.U. 2005 nr 12 poz. 90 (art. 14) | https://api.sejm.gov.pl/eli/acts/DU/2005/90/text.pdf | 2026-10-23 |
-| Act of 29 October 2021 amending the PIT Act (Polski Ład), Dz.U. 2021 poz. 2105, art. 53 (return relief only for moves after 31 December 2021) | https://api.sejm.gov.pl/eli/acts/DU/2021/2105/text.pdf | 2026-10-23 |
+| Poland-Germany double tax treaty, Dz.U. 2005 nr 12 poz. 90 (art. 14) | https://api.sejm.gov.pl/eli/acts/DU/2005/90/text.pdf | 2026-11-14 |
+| Act of 29 October 2021 amending the PIT Act (Polski Ład), Dz.U. 2021 poz. 2105, art. 53 (return relief only for moves after 31 December 2021) | https://api.sejm.gov.pl/eli/acts/DU/2021/2105/text.pdf | 2026-11-14 |
 | Ministry of Finance tax explanations of 29 April 2021 on tax residence of individuals (sections 2.2 and 2.3), in the MF Eureka system | https://eureka.mf.gov.pl/informacje/podglad/482416 | 2026-10-23 |
-| podatki.gov.pl, ulga na powrót (updated 6 October 2026) | https://www.podatki.gov.pl/ulgi-i-odliczenia/ulga-na-powrot-pit | 2026-10-23 |
-| podatki.gov.pl, ulga abolicyjna (updated 13 October 2026) | https://www.podatki.gov.pl/ulgi-i-odliczenia/ulga-abolicyjna-pit | 2026-10-23 |
-| podatki.gov.pl, deduction of social contributions (contributions on exempt revenue not deductible) | https://www.podatki.gov.pl/ulgi-i-odliczenia/odliczenie-skladek-na-ubezpieczenie-spoleczne-pit | 2026-10-23 |
-| podatki.gov.pl, PIT forms for businesses (PIT-NZ (2), PIT-8AR (14), IFT-1R (18)) | https://www.podatki.gov.pl/podatki-firmowe/pit/formularze-pit | 2026-10-23 |
+| Read for Return relief (ulga na powrót): podatki.gov.pl, ulga na powrót (updated 6 October 2026) | https://www.podatki.gov.pl/ulgi-i-odliczenia/ulga-na-powrot-pit | 2026-11-14 |
+| Read for Abolition relief (ulga abolicyjna) cap: podatki.gov.pl, ulga abolicyjna (updated 13 October 2026) | https://www.podatki.gov.pl/ulgi-i-odliczenia/ulga-abolicyjna-pit | 2026-11-14 |
+| Read for the points the body cites to it: podatki.gov.pl, deduction of social contributions (contributions on exempt revenue not deductible) | https://www.podatki.gov.pl/ulgi-i-odliczenia/odliczenie-skladek-na-ubezpieczenie-spoleczne-pit | 2026-11-14 |
+| Read for the points the body cites to it: podatki.gov.pl, PIT forms for businesses (PIT-NZ (2), PIT-8AR (14), IFT-1R (18)) | https://www.podatki.gov.pl/podatki-firmowe/pit/formularze-pit | 2026-11-14 |
 
 The ISAP pages (isap.sejm.gov.pl) serve a browser check to scripted requests, so the law texts were read from the Sejm's own ELI service (api.sejm.gov.pl), which serves the same documents.
 
@@ -244,4 +244,4 @@ Not yet confirmed: whether, in the year of arrival, a person who passes 183 days
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-01. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `pl-cross-border` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/pl-cross-border. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `pl-cross-border` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/pl-cross-border. If neither is available, confirm every figure against the official source pages cited above before relying on it.

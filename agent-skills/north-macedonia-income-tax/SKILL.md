@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/north-macedonia-income-tax"
   jurisdiction: "MK"
   tax_year: "2026"
-  last_updated: "2026-10-30"
+  last_updated: "2026-11-14"
 ---
 
-# North Macedonia personal income tax v0.3
+# North Macedonia personal income tax v0.4
 
 **Tax year: 2026. Checked against the law, tier 2.** Amounts are MKD unless stated otherwise. Professional review remains outstanding.
 
@@ -24,22 +24,22 @@ This skill covers ordinary PIT. Salary insurance is computed in `north-macedonia
 
 | Item | Amount | Tax year | Official provision |
 |---|---|---|---|
-| Ordinary PIT | 10% | 2026 | [PIT art. 11(1)][pit] |
-| Games-of-chance income, separately classified | 15% | 2026 | [PIT art. 11(2)][pit] |
-| First-year business PIT advance reference / base / tax | January-published net wage 45,961; 50% base 22,980.50; 10% advance 2,298.05 before accepted payment rounding | 2026 | [PIT art. 94(2)][pit]; [State Statistical Office, 21 January 2026 release][net-wage] |
-| Unsupported business-loan interest fallback | Matching-maturity EURIBOR (FX) or SKIBOR (MKD), plus 1 percentage point | 2026 | [PIT art. 27(7)][pit] |
-| Own-product agricultural sales boundary | 1,000,000; activity-registration and paid-tax-refund tests are separate | 2026 | [PIT arts. 45-46][pit] |
-| Salary/pension reduction | 10,932 monthly; 131,184 published annual amount | 2026 | [PIT arts. 10, 17][pit]; [2026 ministerial publication][allowance] |
-| Rental deemed costs | 10%; furnished residential/business premises 15% | 2026 | [PIT art. 53][pit] |
-| Industrial-property rights deemed costs | 10% for original holder; inherited/transferred holder uses full receipt | 2026 | [PIT art. 50][pit] |
-| Copyright deemed costs | 50%, 40%, 30% or 20%, by statutory work type | 2026 | [PIT art. 40][pit] |
-| Business entertainment add-back | 90% | 2026 | [PIT art. 27(3)][pit] |
-| Own/rented vehicle use and maintenance add-back | 50% | 2026 | [PIT art. 27(4)][pit] |
-| Ordinary business expansion relief | 30% of qualifying investment, capped at 50% of the period's tax base; retain assets 5 years | 2026 | [PIT art. 28(1)-(4)][pit] |
-| Qualifying capital-gain deemed costs | 10% | 2026 | [PIT art. 60(2)][pit] |
-| Undeclared income of unproven origin (special UJP assessment) | 70% of the difference between asset value and proven funding | 2026 | [PIT arts. 76-78][pit] |
-| Late-payment interest | 0.03% each day from day after original due date | 2026 | [Tax Procedure Law arts. 3, 123][procedure] |
-| Late-filing surcharge | Up to 10% of the tax assessed by law | 2026 | [Tax Procedure Law art. 55][procedure] |
+| Ordinary PIT | 10% | 2026 | [PIT art. 11(1)](https://www.ujp.gov.mk/files/attachment/0000/1466/ZAKON_ZA_DANOKOT_NA_LICEN_DOHOD_-_Azuriran_so_Sl.vesnik____274___od_20.12.2022.pdf) |
+| Games-of-chance income, separately classified | 15% | 2026 | [PIT art. 11(2)](https://www.ujp.gov.mk/files/attachment/0000/1466/ZAKON_ZA_DANOKOT_NA_LICEN_DOHOD_-_Azuriran_so_Sl.vesnik____274___od_20.12.2022.pdf) |
+| First-year business PIT advance reference / base / tax | January-published net wage 45,961; 50% base 22,980.50 and 10% advance 2,298.05 (both computed from the 45,961 net wage) before accepted payment rounding | 2026 | [PIT art. 94(2)](https://www.ujp.gov.mk/files/attachment/0000/1466/ZAKON_ZA_DANOKOT_NA_LICEN_DOHOD_-_Azuriran_so_Sl.vesnik____274___od_20.12.2022.pdf); [State Statistical Office, 21 January 2026 release](https://www.stat.mk/en/stat/population-and-living-conditions/labour-market/average-monthly-net-wage-paid-per-employee/average-monthly-net-wage-paid-per-employee-november-2025/) |
+| Unsupported business-loan interest fallback | Matching-maturity EURIBOR (FX) or SKIBOR (MKD), plus 1 percentage point | 2026 | [PIT art. 27(7)](https://www.ujp.gov.mk/files/attachment/0000/1466/ZAKON_ZA_DANOKOT_NA_LICEN_DOHOD_-_Azuriran_so_Sl.vesnik____274___od_20.12.2022.pdf) |
+| Own-product agricultural sales boundary | 1,000,000; activity-registration and paid-tax-refund tests are separate | 2026 | [PIT arts. 45-46](https://www.ujp.gov.mk/files/attachment/0000/1466/ZAKON_ZA_DANOKOT_NA_LICEN_DOHOD_-_Azuriran_so_Sl.vesnik____274___od_20.12.2022.pdf) (scanned PDF: figure read by OCR on 14 Nov 2026) |
+| Salary/pension reduction | 10,932 monthly; 131,184 published annual amount | 2026 | [PIT arts. 10, 17](https://www.ujp.gov.mk/files/attachment/0000/1466/ZAKON_ZA_DANOKOT_NA_LICEN_DOHOD_-_Azuriran_so_Sl.vesnik____274___od_20.12.2022.pdf); [2026 ministerial publication](https://www.ujp.gov.mk/e/plakjanje/licno_osloboduvanje) |
+| Rental deemed costs | 10%; furnished residential/business premises 15% | 2026 | [PIT art. 53](https://www.ujp.gov.mk/files/attachment/0000/1466/ZAKON_ZA_DANOKOT_NA_LICEN_DOHOD_-_Azuriran_so_Sl.vesnik____274___od_20.12.2022.pdf) |
+| Industrial-property rights deemed costs | 10% for original holder; inherited/transferred holder uses full receipt | 2026 | [PIT art. 50](https://www.ujp.gov.mk/files/attachment/0000/1466/ZAKON_ZA_DANOKOT_NA_LICEN_DOHOD_-_Azuriran_so_Sl.vesnik____274___od_20.12.2022.pdf) |
+| Copyright deemed costs | 50%, 40%, 30% or 20%, by statutory work type | 2026 | [PIT art. 40](https://www.ujp.gov.mk/files/attachment/0000/1466/ZAKON_ZA_DANOKOT_NA_LICEN_DOHOD_-_Azuriran_so_Sl.vesnik____274___od_20.12.2022.pdf) (scanned PDF: figure read by OCR on 14 Nov 2026) |
+| Business entertainment add-back | 90% | 2026 | [PIT art. 27(3)](https://www.ujp.gov.mk/files/attachment/0000/1466/ZAKON_ZA_DANOKOT_NA_LICEN_DOHOD_-_Azuriran_so_Sl.vesnik____274___od_20.12.2022.pdf) (scanned PDF: figure read by OCR on 14 Nov 2026) |
+| Own/rented vehicle use and maintenance add-back | 50% | 2026 | [PIT art. 27(4)](https://www.ujp.gov.mk/files/attachment/0000/1466/ZAKON_ZA_DANOKOT_NA_LICEN_DOHOD_-_Azuriran_so_Sl.vesnik____274___od_20.12.2022.pdf) |
+| Ordinary business expansion relief | 30% of qualifying investment, capped at 50% of the period's tax base; retain assets 5 years | 2026 | [PIT art. 28(1)-(4)](https://www.ujp.gov.mk/files/attachment/0000/1466/ZAKON_ZA_DANOKOT_NA_LICEN_DOHOD_-_Azuriran_so_Sl.vesnik____274___od_20.12.2022.pdf) (scanned PDF: figure read by OCR on 14 Nov 2026) |
+| Qualifying capital-gain deemed costs | 10% | 2026 | [PIT art. 60(2)](https://www.ujp.gov.mk/files/attachment/0000/1466/ZAKON_ZA_DANOKOT_NA_LICEN_DOHOD_-_Azuriran_so_Sl.vesnik____274___od_20.12.2022.pdf) |
+| Undeclared income of unproven origin (special UJP assessment) | 70% of the difference between asset value and proven funding | 2026 | [PIT arts. 76-78](https://www.ujp.gov.mk/files/attachment/0000/1466/ZAKON_ZA_DANOKOT_NA_LICEN_DOHOD_-_Azuriran_so_Sl.vesnik____274___od_20.12.2022.pdf) |
+| Late-payment interest | 0.03% each day from day after original due date | 2026 | [Tax Procedure Law arts. 3, 123](https://www.ujp.gov.mk/files/attachment/0000/0900/_________________________.pdf) |
+| Late-filing surcharge | Up to 10% of the tax assessed by law | 2026 | [Tax Procedure Law art. 55](https://www.ujp.gov.mk/files/attachment/0000/0900/_________________________.pdf) |
 
 The annual salary reduction is restricted to the right actually used on salary, salary compensation and pension during advance assessment (art. 10(5)). Do not deduct the full annual publication from sole-trader profit or rent.
 
@@ -162,4 +162,4 @@ Not yet confirmed: A standalone departure/deemed-disposal tax procedure. Do not 
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-30. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `north-macedonia-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/north-macedonia-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `north-macedonia-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/north-macedonia-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

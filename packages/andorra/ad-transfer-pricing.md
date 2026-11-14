@@ -1,17 +1,17 @@
 ---
 name: ad-transfer-pricing
 description: "Andorra transfer pricing for resident companies, related individuals, group entities and permanent establishments in tax year 2026. Identifies the distinct ownership, family, director and control tests; builds a market-value working paper from actual transactions, comparables, functions, risks and evidence; reconciles services and related financing to the tax base. Covers financing deduction proof, advance-pricing applications, approval effects and annual agreement reporting, plus country-by-country group thresholds, notification, report contents, local filing and surrogate conditions. Includes current information sanctions and tax interest. Use for Andorra intercompany charges, shareholder loans, service allocations, pricing adjustments and CbCR questions. Actual treaty disputes and live exchange eligibility need the operative case-specific instruments."
-version: 0.3
+version: 0.4
 jurisdiction: AD
 tax_year: 2026
-last_updated: 2026-10-28
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: transfer-pricing
 ---
 
-# Andorra transfer pricing v0.3
+# Andorra transfer pricing v0.4
 
 ## Who this applies to
 
@@ -167,4 +167,4 @@ Not yet confirmed: a universal minimum transaction threshold, fixed markup/inter
 [reg]: https://www.portaljuridicandorra.ad/R20231229C
 [irnr]: https://www.portaljuridicandorra.ad/L2010094
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.

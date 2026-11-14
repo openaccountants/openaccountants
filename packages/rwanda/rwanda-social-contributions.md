@@ -1,16 +1,17 @@
 ---
 name: rwanda-social-contributions
 description: "Rwanda RSSB contributions for 2026: pension 6% plus 6% under Presidential Order 086/01, steps to 20% by 2030, maternity, medical, CBHI, Ishema declaration by the 15th, payment and sanctions."
-version: 0.2
+version: 0.3
 jurisdiction: RW
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
+type: computation
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
 ---
 
-# Rwanda RSSB Social Contributions v0.2
+# Rwanda RSSB Social Contributions v0.3
 
 Tax year 2026. PAYE computation sits in [rwanda-payroll](rwanda-payroll.md).
 
@@ -32,7 +33,6 @@ Employers and employees under the labour law and public service statutes; volunt
 | Maternity | 0.3% employer, 0.3% employee of gross | 2026 | https://www.rra.gov.rw/en/domestic-tax-services/rssb-contributions/maternity-leave-contribution |
 | Medical scheme | 7.5% employer, 7.5% employee of basic salary | 2026 | https://www.rra.gov.rw/en/domestic-tax-services/rssb-contributions/medical-scheme-contribution |
 | CBHI | 0.5% of net salary, employee, deducted by employer | 2026 | https://www.rra.gov.rw/en/domestic-tax-services/rssb-contributions/cbhi-contribution |
-| Occupational hazards | unverified: 2% employer (old file; no official page opened states it) | 2026 | unverified |
 | RSSB late surcharge | 1.5% a month for the late list, 1.5% for late payment | 2026 | https://www.rra.gov.rw/en/domestic-tax-services/rssb-contributions/declaration-payment-of-rssb-contributions |
 
 ## The base
@@ -330,17 +330,17 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Presidential Order 086/01 of 12/12/2024, pension rate (whole) | https://www.minijust.gov.rw/fileadmin/user_upload/Minijust/Official_gazettes_2/______2024_Igazeti_ya_Leta/UKUBOZA-December-Decembre/OG_n___Special_of_13.12.2024__Ingano_y_umusanzu_mu_bwiteganyirize_bwa_pansiyo_butegetswe.pdf | 2026-11-01 |
-| RSSB, Imisanzu portal home page (whole page) | https://imisanzu.rssb.rw/ | 2026-11-01 |
-| RRA, pension contribution page (whole page) | https://www.rra.gov.rw/en/domestic-tax-services/rssb-contributions/pension-scheme-contribution | 2026-11-01 |
-| RRA, medical scheme page (whole page) | https://www.rra.gov.rw/en/domestic-tax-services/rssb-contributions/medical-scheme-contribution | 2026-11-01 |
-| RRA, maternity leave page (whole page) | https://www.rra.gov.rw/en/domestic-tax-services/rssb-contributions/maternity-leave-contribution | 2026-11-01 |
-| RRA, CBHI page (whole page) | https://www.rra.gov.rw/en/domestic-tax-services/rssb-contributions/cbhi-contribution | 2026-11-01 |
-| RRA, declaration and payment of RSSB contributions page (whole page) | https://www.rra.gov.rw/en/domestic-tax-services/rssb-contributions/declaration-payment-of-rssb-contributions | 2026-11-01 |
-| RRA, Calculate PAYE page (whole page) | https://www.rra.gov.rw/en/domestic-tax-services/employment-tax-paye/calculate-paye | 2026-11-01 |
-| Law 020/2023 on tax procedures (read: arts 15, 35, 78, 80-88) | https://www.rra.gov.rw/fileadmin/user_upload/OG_n___Special_ter_of_31.03.2023_Uburyo_bw_isoresha_Tax_procedures_01.pdf | 2026-11-01 |
-| Commissioner General Instructions 001/2023, quarterly PAYE and VAT (whole) | https://www.rra.gov.rw/fileadmin/user_upload/13.1.23_OG_n___Special_of_11.01.2023_Kumenyekanisha_no_kwishyura_umusoro_ku_bihembo_n_umusoro_ku_nyongeragaciro_ku_gihembwe.pdf | 2026-11-01 |
-| Law 027/2022 establishing taxes on income (read: arts 3-5, 8-10, 12-21, 24-33, 36-38, 44-50, 56-69) | https://www.rra.gov.rw/fileadmin/user_upload/Income_Tax_law_of_2022.pdf | 2026-11-01 |
-| RRA Tax Handbook 2025 (read: E-Tax steps, real regime, PAYE, VAT declaration chapters) | https://www.rra.gov.rw/fileadmin/Folder_for_2025/RRA_Tax_Handbook_2025_Final.pdf | 2026-11-01 |
+| Presidential Order 086/01 of 12/12/2024, pension rate: read in full | https://www.minijust.gov.rw/fileadmin/user_upload/Minijust/Official_gazettes_2/______2024_Igazeti_ya_Leta/UKUBOZA-December-Decembre/OG_n___Special_of_13.12.2024__Ingano_y_umusanzu_mu_bwiteganyirize_bwa_pansiyo_butegetswe.pdf | 2026-11-14 |
+| RSSB, Imisanzu portal home page: read in full | https://imisanzu.rssb.rw/ | 2026-11-14 |
+| RRA, pension contribution page: read in full | https://www.rra.gov.rw/en/domestic-tax-services/rssb-contributions/pension-scheme-contribution | 2026-11-14 |
+| RRA, medical scheme page: read in full | https://www.rra.gov.rw/en/domestic-tax-services/rssb-contributions/medical-scheme-contribution | 2026-11-14 |
+| RRA, maternity leave page: read in full | https://www.rra.gov.rw/en/domestic-tax-services/rssb-contributions/maternity-leave-contribution | 2026-11-14 |
+| RRA, CBHI page: read in full | https://www.rra.gov.rw/en/domestic-tax-services/rssb-contributions/cbhi-contribution | 2026-11-14 |
+| RRA, declaration and payment of RSSB contributions page: read in full | https://www.rra.gov.rw/en/domestic-tax-services/rssb-contributions/declaration-payment-of-rssb-contributions | 2026-11-14 |
+| RRA, Calculate PAYE page: read in full | https://www.rra.gov.rw/en/domestic-tax-services/employment-tax-paye/calculate-paye | 2026-11-14 |
+| Law 020/2023 on tax procedures: read for arts 15, 35, 78, 80-88 | https://www.rra.gov.rw/fileadmin/user_upload/OG_n___Special_ter_of_31.03.2023_Uburyo_bw_isoresha_Tax_procedures_01.pdf | 2026-11-14 |
+| Commissioner General Instructions 001/2023, quarterly PAYE and VAT: read in full | https://www.rra.gov.rw/fileadmin/user_upload/13.1.23_OG_n___Special_of_11.01.2023_Kumenyekanisha_no_kwishyura_umusoro_ku_bihembo_n_umusoro_ku_nyongeragaciro_ku_gihembwe.pdf | 2026-11-14 |
+| Law 027/2022 establishing taxes on income: read for arts 3-5, 8-10, 12-21, 24-33, 36-38, 44-50, 56-69 | https://www.rra.gov.rw/fileadmin/user_upload/Income_Tax_law_of_2022.pdf | 2026-11-14 |
+| RRA Tax Handbook 2025: read for E-Tax steps, real regime, PAYE, VAT declaration chapters | https://www.rra.gov.rw/fileadmin/Folder_for_2025/RRA_Tax_Handbook_2025_Final.pdf | 2026-11-14 |
 
-Not yet confirmed: occupational hazards rate; the pension and maternity treatment of transport; the definition of net for CBHI; the 7-employee minimum and 10th of the month date for medical; split of pension from 2027.
+Not yet confirmed: occupational hazards rate; the pension and maternity treatment of transport; the definition of net for CBHI; the 7-employee minimum and 10th of the month date for medical; split of pension from 2027; the occupational hazards rate (old file: 2% employer), moved out of the rates table; the RRA RSSB pages read 2026-11-14 name the scheme but give no rate.

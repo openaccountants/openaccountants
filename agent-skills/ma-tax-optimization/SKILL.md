@@ -1,250 +1,206 @@
 ---
 name: ma-tax-optimization
-description: "Use this skill whenever asked about legitimate (legal) tax optimization for a self-employed person, freelancer, or sole trader in Morocco — that is, choosing the most efficient tax regime and using lawful levers to reduce the tax bill without evasion. Trigger on phrases like 'reduce tax Morocco', 'optimiser mes impôts Maroc', 'auto-entrepreneur vs CPU', 'tax planning Morocco freelancer', 'quel régime fiscal Maroc', 'lower my tax legally Morocco', 'best status freelance Maroc', 'كيف أقلل الضريبة'. Covers the choice between auto-entrepreneur (0.5% / 1% of turnover), the Contribution Professionnelle Unique (CPU), and the Résultat Net Simplifié / Réel (RNS / RNR, net profit on the IR scale to 37%), with break-even logic by turnover and margin; the auto-entrepreneur single-client 80,000 MAD anti-disguised-salary rule and disguised-employment risk; the cotisation minimale and new-business exemption; VAT registration threshold management; and export / Casablanca Finance City incentives. Reply"
+description: "Use this skill whenever asked about legitimate tax optimization for a self-employed person, freelancer or sole trader in Morocco for tax year 2026, choosing the most efficient regime and using lawful levers without evasion. Trigger on phrases like \"reduce tax Morocco\", \"optimiser mes impots Maroc\", \"auto-entrepreneur vs CPU\", \"tax planning Morocco freelancer\", \"quel regime fiscal Maroc\", \"lower my tax legally Morocco\", \"best status freelance Maroc\", \"كيف أقلل الضريبة\". Covers the choice between auto-entrepreneur (0.5% or 1% of turnover), the Contribution Professionnelle Unique (CPU) and the simplified or real net result (RNS or RNR, net profit on the IR scale to 37%), worked both ways to the figure that decides; the MAD 80,000 single-client rule and disguised-employment risk; the cotisation minimale and its three-year start exemption; VAT exposure; and when to consider incorporating. Reply in the user's language (English, French or Darija). Legal planning only, never evasion. Cross-ref"
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/ma-tax-optimization"
   jurisdiction: "MA"
   tax_year: "2026"
-  last_updated: "2026-10-31"
+  last_updated: "2026-11-14"
 ---
 
-# MA Tax Optimization
+# Morocco: legitimate tax optimization for the self-employed, tax year 2026 (optimisation fiscale legale)
 
-## Morocco — Legitimate Tax Optimization for the Self-Employed (Optimisation Fiscale Légale)
+## Scope
 
-This skill helps a self-employed person in Morocco — a freelancer, sole trader, or independent professional (**travailleur indépendant**) — pay **the least tax the law allows**, by choosing the right regime and using lawful levers. It is **planning, not evasion**. Every technique here is grounded in the **Code Général des Impôts (CGI)** and the **Loi de Finances 2026**, administered by the **Direction Générale des Impôts (DGI)**.
+This skill helps a self-employed person in Morocco (a freelancer, sole trader or independent professional, travailleur independant) pay the least tax the law allows for 2026, by choosing the right regime and using lawful levers. It is planning, not evasion. Every figure is from the 2026 Code General des Impots (CGI), which includes Finance Law 50-25 for 2026, administered by the Direction Generale des Impots (DGI).
 
-The decisive idea: a self-employed person in Morocco is taxed under the **Impôt sur le Revenu (IR)**, but *how* the taxable base is built depends entirely on the **régime fiscal** chosen. The same MAD 300,000 of turnover can produce wildly different tax depending on whether it is taxed as a flat percentage of turnover (auto-entrepreneur), turnover × a profession coefficient (CPU), or actual net profit on the progressive IR scale (RNS / RNR). Optimization is mostly the art of matching the regime to the **turnover** and the **margin**.
+The decisive idea: the self-employed are taxed under the Impot sur le Revenu (IR), but the base depends on the regime. The same MAD 300,000 of turnover can produce very different tax depending on whether it is taxed as a flat percentage of turnover (auto-entrepreneur), turnover times a trade coefficient (CPU), or real net profit on the progressive scale (RNS or RNR). Optimization is mostly matching the regime to the turnover and the margin.
 
-This skill replies in the user's language. Moroccan users mix English, French, and Darija — keep the native terms (auto-entrepreneur, CPU, RNS, RNR, IR, TVA, CNSS, cotisation minimale, DGI) and explain them in the user's chosen language.
+This skill sits above the regime skills and helps choose between them. For the mechanics defer to `ma-auto-entrepreneur` (the 0.5% and 1% regime and its CNSS and AMO cover), `ma-cpu` and `morocco-professional-income-tax` (the scale, RNS and RNR, deductions). Reply in the user's language and keep the native terms (auto-entrepreneur, CPU, RNS, RNR, IR, TVA, CNSS, cotisation minimale, DGI).
 
-> **Cross-references.** For the mechanics of each regime, defer to the dedicated skills: **ma-auto-entrepreneur** (the 0.5% / 1% turnover status and its CNSS/AMO cover), **ma-cpu** (the Contribution Professionnelle Unique), and **morocco-professional-income-tax** (the IR scale, RNS/RNR net-profit regimes, and deductions). This skill sits *above* them and helps choose between them.
+## Ask the client first
 
-## 1. Quick Reference
+1. Activity: commercial, industrial or craft, or services? Name the trade (the CPU coefficient and the CPU exclusions depend on it).
+2. Turnover collected in 2026 and in each of the last two years.
+3. Real costs: what is the genuine net margin (profit divided by turnover)?
+4. Clients: how many, and does any one pay more than MAD 80,000 a year for services? Is the work done under that client's direction?
+5. When did the activity start (the cotisation minimale start exemption runs for three financial years)?
+6. Are the clients VAT-registered businesses or consumers, and how much VAT is on the person's own purchases?
 
-**Quick Reference Table**
+## The method, step by step
 
-| Item | Value (2026) |
-| --- | --- |
-| **Scope** | Legal tax planning for self-employed individuals (IR taxpayers) |
-| **Authority** | Direction Générale des Impôts (DGI), Ministère de l'Économie et des Finances |
-| **Currency** | Moroccan Dirham (MAD / DH) |
-| **Legal basis** | Code Général des Impôts (CGI); Loi de Finances 2026; Loi n° 114-13 (auto-entrepreneur) |
-| **IR scale top rate** | 37% (income above MAD 180,000/year) |
-| **IR exempt band** | First MAD 40,000/year taxed at 0% |
-| **Auto-entrepreneur IR** | 0.5% of turnover (commerce/industry/craft); 1% (services) — liberatory |
-| **Auto-entrepreneur ceilings** | MAD 500,000 (commerce/industry/craft); MAD 200,000 (services) |
-| **CPU** | Turnover × profession coefficient, then 10% liberatory IR (+ supplementary droit) |
-| **CPU ceilings** | MAD 2,000,000 (commerce/industry); MAD 500,000 (services) — *verify* |
-| **RNS / RNR** | Actual net profit on the progressive IR scale (up to 37%) |
-| **Cotisation minimale (CM)** | 0.25% standard; 4% for professions libérales — *verify rate for your activity* |
-| **New-business CM exemption** | First 36 months of activity (per CGI Art. 144) |
-| **Single-client AE rule** | Excess over MAD 80,000/year from one client → 30% withholding (services) |
-| **Quality tier** | **Research-verified — pending sign-off by a Moroccan expert-comptable** |
-| **Version** | 1.0 |
+1. **Check what is open.** Turnover against each regime's limit, the CPU excluded professions (see `ma-cpu`), AMO membership for CPU, social security membership for auto-entrepreneur.
+2. **Price each open regime** on the client's own turnover and margin: auto-entrepreneur turnover x rate; CPU turnover x coefficient x 10% plus the droit complementaire; RNS or RNR net profit on the scale, never below the cotisation minimale.
+3. **Test the single-client rule and the employment substance** before recommending anything.
+4. **Add the levers:** the three-year cotisation minimale exemption, VAT position, incorporation.
+5. **Recommend the regime that survives audit,** not the one with the lowest headline number, and say what figure decides it.
+
+### Rates, bands and thresholds
+
+| Item | Rate or amount | Conditions | Year | Source URL |
+|---|---|---|---|---|
+| IR scale, exempt band | 0% to MAD 40,000 | Art. 73-I | 2026 | https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1 |
+| IR scale bands | 10% (40,001 to 60,000), 20% (to 80,000), 30% (to 100,000), 34% (to 180,000) | Art. 73-I | 2026 | same |
+| IR scale, top band | 37% above MAD 180,000 | Art. 73-I | 2026 | same |
+| Auto-entrepreneur IR | 0.5% commercial, industrial, craft; 1% services, on turnover collected | Art. 73-III | 2026 | same |
+| Auto-entrepreneur limits | MAD 500,000 commercial, industrial, craft; MAD 200,000 services | Art. 42 ter-II-A. Option stays valid until two consecutive years over (Art. 43-4°) | 2026 | same |
+| Single-client rule, services | 30% withheld by the client on turnover above MAD 80,000 a year from that client | Art. 73-II-G-8° and 45 bis. Applies to auto-entrepreneurs and CPU payers | 2026 | same |
+| CPU | Turnover x trade coefficient, then 10%, plus the droit complementaire (MAD 1,200 to 14,400 a year) | Art. 40-I, 73-II-B-6° | 2026 | same |
+| CPU limits | MAD 2,000,000 commercial, industrial, craft; MAD 500,000 services | Art. 41-II-A | 2026 | same |
+| RNS limits | MAD 2,000,000 commercial, industrial, craft; MAD 500,000 services, excluding VAT | Art. 39 | 2026 | same |
+| Cotisation minimale, standard rate | 0.25% of turnover | Art. 144-I-D. RNS and RNR | 2026 | same |
+| Cotisation minimale, listed liberal professions | 4% | Art. 144-I-D, professions at Art. 89-I-12° and 91-VI-1° taxed under IR | 2026 | same |
+| Cotisation minimale, floor for RNS and RNR | MAD 1,500 a year, even with no turnover | Art. 144-I-D | 2026 | same |
+| Cotisation minimale, start exemption | First three financial years after the activity starts | Art. 144-I-C-2°. Not again on restarting the same activity | 2026 | same |
+| VAT rates | 20% standard, 10% reduced | Art. 99 | 2026 | same |
+| VAT exemption for small makers and service providers | Turnover up to MAD 500,000, individuals | Art. 91-II-3°. Exemption without right to deduct | 2026 | same |
+| Optional VAT registration | Binding for at least three consecutive years | Art. 90 | 2026 | same |
+
+### The three options at a glance
+
+| Regime | Tax base | Headline rate | Best when | Key limit | Source URL |
+| --- | --- | --- | --- | --- | --- |
+| Auto-entrepreneur (AE) | Turnover collected | 0.5% (goods) or 1% (services), final | Low costs, high margin, turnover within the limit | MAD 500,000 or 200,000; single-client MAD 80,000 rule | https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1 |
+| CPU | Turnover x trade coefficient | 10% on the coefficient base, plus droit complementaire | Turnover above AE limits, margin near the coefficient, no full accounts wanted | MAD 2,000,000 or 500,000; excluded professions | same |
+| RNS or RNR (net profit) | Real net profit | Scale 0% to 37%, never below the cotisation minimale | High real costs, thin margin, or turnover above CPU limits | Books; cotisation minimale floor | same |
+
+RNS (resultat net simplifie) and RNR (resultat net reel) both tax real net profit on the scale; RNR needs fuller accounting. See `morocco-professional-income-tax`.
+
+### Break-even logic: turnover and margin decide
+
+- **Auto-entrepreneur is hard to beat when margin is high and costs are low.** It taxes turnover at 0.5% or 1%. On MAD 200,000 of services, AE IR is MAD 2,000. No net-profit regime matches that for a freelancer with few costs.
+- **Net profit (RNS or RNR) wins when margin is thin.** A trader reselling at a 10% margin pays AE or CPU on turnover the suppliers took; net profit deducts the cost of goods. The crossover is where net profit on the scale costs less than the turnover-based tax.
+- **CPU sits between.** The coefficient approximates a margin for the trade, then 10% applies. CPU is not automatically cheaper: if the real margin is well below the coefficient, it can cost more (worked case 2).
+- **Decision rule.** (1) Within the AE limit, high margin, no dominant client: AE. (2) Above the AE limit, within CPU, margin near the coefficient, trade not excluded: CPU. (3) Thin margin, turnover above CPU, or large real expenses (rent, salaries, equipment): RNS or RNR.
+- **Margin sensitivity.** At a 20% net margin, 1% of turnover is 5% of profit, cheap. At a 5% margin it is 20% of profit, and a net-profit regime may now win. Always run the client's numbers.
+
+### The MAD 80,000 single-client rule and disguised employment
+
+**What the rule says.** When annual services turnover from one client passes MAD 80,000, the client withholds IR at 30% on the excess (Art. 73-II-G-8°, 45 bis). The flat rate applies only to the first MAD 80,000 from that client.
+
+**Why it exists.** It targets disguised employment (salariat deguise): businesses replacing staff with auto-entrepreneurs to avoid payroll tax, CNSS and Labour Code duties.
+
+**How to plan around it legitimately.** Never hide the relationship or split invoices across shell entities: that is evasion. The lawful options:
+- Genuinely diversify clients, so no single one passes MAD 80,000.
+- Accept the withholding and move to the right regime: re-run the break-even, CPU (if the trade is not excluded) or RNS or RNR may be lawful and cheaper.
+- If the relationship is in substance employment, treat it as employment: a salaried contract with CNSS and wage withholding (see `morocco-payroll`).
+
+**Red flags the DGI looks for.** One dominant client giving most or all income; subordination (fixed hours, the client's premises and equipment, direction and supervision); no business autonomy (no other clients, no own tools, no commercial risk, no right to refuse work); continuity like permanent employment. If several are present, warn the client: the DGI, the labour authorities and CNSS can requalify the relationship, with back taxes, contributions and penalties.
+
+### Cotisation minimale, start years and VAT
+
+- **Cotisation minimale.** Under RNS and RNR a low or no-profit year still owes the cotisation minimale on turnover: 0.25%, or 4% for the listed liberal professions, at least MAD 1,500 (Art. 144). It is a floor: a net-profit regime never costs less.
+- **Start exemption.** IR taxpayers are exempt from the cotisation minimale for the first three financial years after the activity starts, once only for the same activity (Art. 144-I-C-2°). In early thin-margin years a net-profit regime gets more attractive; note when the window ends.
+- **VAT.** Individual makers and service providers with turnover up to MAD 500,000 are exempt without the right to deduct (Art. 91-II-3°); details and the trader rules are in `morocco-vat`. Above that, VAT applies at 20% (10% for some items) with input VAT deductible. Optional registration can pay when clients are VAT-registered and the person carries input VAT, but it binds for at least three years (Art. 90): model it first.
+- **Do not suppress turnover** to stay under a limit. Declining work is a business choice; concealing turnover is evasion.
+
+### Incorporating, exports and Casablanca Finance City
+
+Export reliefs and Casablanca Finance City (CFC) status are company (IS) matters, not for a bare sole trader. Mention them only as a "consider incorporating" prompt and route to `morocco-corporate-income-tax` and a specialist. Their 2026 terms are not confirmed in this skill.
+
+## Boundary and exception table
+
+| Situation | Risk or rule | What to do |
+|---|---|---|
+| One dominant client plus subordination | Requalification as employment | Flag; consider a salaried contract; never facilitate |
+| Turnover split across relatives or sham entities to stay under limits or the MAD 80,000 rule | Abusive and illegal | Refuse |
+| Turnover under-declared or off-book | Evasion | Refuse |
+| AE turnover over the limit in one year | Option stays valid; two consecutive years over moves the person to RNR from 1 January of the next year unless RNS or CPU is chosen (Art. 43-4°) | Plan the move; do not hide it |
+| CPU chosen with real margin far below the coefficient | CPU can cost more | Price RNS or RNR too |
+| Net-profit regime modelled without the cotisation minimale | Understates the tax | Apply the floor |
+| Optional VAT election | Three-year lock-in (Art. 90) | Model before opting |
+| Trade on the CPU excluded list (consultants, IT services, medical, legal and others) | CPU closed at any turnover | AE or RNS or RNR only |
 
 ### Conservative defaults
 
-When the facts are incomplete, default to the **safer, more conservative** answer and tell the user to verify:
-
-- **Default to the regime that survives audit, not the one with the lowest headline number.** A regime that minimizes tax but exposes the client to requalification (e.g. disguised employment) is not optimization — it is risk.
-- **Treat the 80,000 MAD single-client situation as a red flag** until the relationship is shown to be genuinely independent.
-- **Assume VAT applies** to services above the relevant threshold unless an exclusion or exemption is clearly established.
-- **Assume the standard cotisation minimale applies** once the new-business window closes, unless a reduced rate or exemption is confirmed.
-- Where a figure is marked **"verify"**, state it as provisional and tell the user to confirm with the DGI or an **expert-comptable** before relying on it.
-
-## 2. Choosing the Regime (the Core Optimization Decision)
-
-A self-employed Moroccan has, broadly, three families of regime. The first lever of optimization is picking the right one.
-
-### 2.1 The three options at a glance
-
-**The three options at a glance**
-
-| Regime | Tax base | Headline rate | Best when | Key limit |
-| --- | --- | --- | --- | --- |
-| **Auto-entrepreneur (AE)** | Turnover collected | 0.5% (goods) / 1% (services), liberatory | Low costs, high margin, turnover under the ceiling | MAD 500k / 200k ceilings; single-client 80k rule |
-| **CPU** (Contribution Professionnelle Unique) | Turnover × profession coefficient | 10% liberatory on the coefficiented base (+ droit complémentaire) | Modest turnover above AE ceilings, no full accounts wanted | MAD 2,000,000 / 500,000 ceilings *(verify)* |
-| **RNS / RNR** (net-profit) | Actual net profit (revenue − deductible expenses) | Progressive IR scale, 0%–37% | High real costs / thin margin, or turnover above CPU ceilings | Full bookkeeping; cotisation minimale floor |
-
-### 2.1 The three options at a glance
-
-> RNS (**Résultat Net Simplifié**) and RNR (**Résultat Net Réel**) both tax *real net profit* on the IR scale; RNR requires fuller accounting. See **morocco-professional-income-tax**.
-
-### 2.2 The IR scale (the engine behind CPU and RNS/RNR)
-
-**The IR scale**  _(Loi de Finances 2026)_
-
-| Annual taxable income (MAD) | Rate |
-| --- | --- |
-| 0 – 40,000 | 0% |
-| 40,001 – 60,000 | 10% |
-| 60,001 – 80,000 | 20% |
-| 80,001 – 100,000 | 30% |
-| 100,001 – 180,000 | 34% |
-| above 180,000 | 37% |
-
-### 2.2 The IR scale (the engine behind CPU and RNS/RNR)
-
-(Loi de Finances 2026; unchanged from 2025. *Verify the bracket edges before filing.*)
-
-### 2.3 Break-even logic — turnover and margin are everything
-
-Two variables drive the choice: **turnover (CA)** and **net margin** (profit ÷ turnover).
-
-**Auto-entrepreneur is unbeatable when margin is high and costs are low.** Because AE taxes *turnover* — not profit — at just 0.5% / 1%, a freelancer with almost no deductible costs (a typical service freelancer: laptop, internet, software) pays a tiny effective rate. On MAD 200,000 of services, AE IR is only **MAD 2,000** (1%). No net-profit regime can match that, because even after deductions the IR scale would tax most of that income at 30–37%.
-
-**Net-profit (RNS/RNR) wins when margin is thin.** If a sole trader buys and resells goods at a 10% margin, AE taxes the whole turnover, ignoring the 90% that went to suppliers. Here the net-profit regime — which deducts the cost of goods — produces a far smaller base. The crossover happens when **real deductible costs are large enough that net profit × IR-scale rate < turnover × AE rate**.
-
-**CPU sits in the middle.** It is the natural home for someone who has outgrown the AE ceilings but still has modest turnover and does not want full RNR accounting. The coefficient is meant to *approximate* a realistic margin for the profession, then 10% is applied.
-
-**A practical decision rule:**
-
-1. **Turnover within AE ceiling (200k services / 500k goods) AND high margin AND not dependent on a single client?** → **Auto-entrepreneur** is almost always the lowest legal tax.
-2. **Turnover above the AE ceiling but within the CPU ceiling, margin roughly in line with the profession coefficient?** → **CPU**.
-3. **Thin margin (high real costs), OR turnover above CPU ceilings, OR you want to deduct genuine business expenses (rent, salaries, equipment)?** → **RNS / RNR** on the IR scale.
-
-> **Margin sensitivity check.** Always recompute. AE's appeal collapses as margin falls: at a 20% net margin, 1% of turnover equals 5% of profit — cheap. At a 5% margin, 1% of turnover equals 20% of profit — and a net-profit regime that deducts real costs may now beat it. Run the actual numbers for the client's CA and margin before recommending.
-
-## 3. The 80,000 MAD Single-Client Rule & Disguised-Employment Risk
-
-This is the single most important compliance trap in Moroccan freelance optimization — and the one where naive "optimization" tips into illegality.
-
-### 3.1 What the rule says
-
-- **80,000 MAD single-client withholding rule** — For an auto-entrepreneur providing services, the portion of annual turnover billed to the same client that exceeds MAD 80,000 is no longer taxed at the favourable 1% liberatory rate. Instead, the client is required to apply a 30% withholding on the excess. The 1% rate continues to apply only up to MAD 80,000 per client.  _(Loi de Finances 2023, in force in 2026)_
-
-### 3.2 Why it exists — the anti-disguised-salary purpose
-
-The rule targets **disguised employment (salariat déguisé)**: companies replacing salaried staff with auto-entrepreneurs to dodge payroll tax, CNSS contributions, and Labour Code obligations. A "freelancer" who works full-time for one employer, under that employer's direction, looks like an employee. The 80,000 MAD threshold plus 30% withholding removes the tax advantage of that arrangement.
-
-### 3.3 How to plan around it — *legitimately*
-
-The lawful response is **not** to hide the relationship or split invoices across shell entities — that is evasion and is prohibited (see PROHIBITIONS). The legitimate options are:
-
-- **Genuinely diversify the client base.** If the freelancer really serves several clients, no single one breaches 80,000 MAD and the rule simply does not bite. This is the cleanest path and reflects a true independent business.
-- **Accept the withholding and move to the right regime.** If income from one client legitimately exceeds 80,000 MAD, the AE status may simply be the wrong tool. Re-run the break-even (Section 2): **CPU** or **RNS/RNR** may now be both lawful and more efficient than AE plus 30% withholding.
-- **If the relationship is, in substance, employment, treat it as employment.** The honest answer is sometimes a salaried contract (with CNSS and the IR withholding on wages). Recommending this is good advice, not a failure.
-
-### 3.4 The disguised-employment red flags the DGI looks for
-
-Flag the risk to the client if the arrangement shows:
-
-- A **single dominant client** providing most or all income.
-- **Subordination**: fixed hours, the client's premises/equipment, the client's direction and supervision.
-- **No real business autonomy**: no other clients, no own tools, no commercial risk, no ability to refuse work.
-- **Continuity** mimicking permanent employment.
-
-If several of these are present, **warn the client**: the DGI (and the labour authorities / CNSS) can **requalify** the relationship as employment, with back taxes, social contributions, and penalties. Optimization stops where substance says "employee".
-
-## 4. Cotisation Minimale / New-Business / VAT Levers
-
-Beyond regime choice, three lawful levers move the tax bill.
-
-### 4.1 Cotisation minimale (CM) — the floor under net-profit regimes
-
-- **Cotisation minimale standard rate** — 0.25% percent of turnover (standard rate under RNS/RNR)  _(CGI)_
-- **Cotisation minimale professions libérales rate** — 4% percent of turnover (professions libérales — verify for the specific activity)  _(CGI)_
-
-Under **RNS / RNR**, even a low- or no-profit year owes a **cotisation minimale**: a minimum tax computed on **turnover** (plus certain other income), not profit. The **standard rate is 0.25%**; **professions libérales** face a higher rate (reported at **4%** — *verify for the specific activity*). The CM matters for optimization because it sets a *floor*: a net-profit regime never costs less than the CM, so a very-low-margin business should compare AE/CPU against "RNS net-profit tax, but never below the CM".
-
-### 4.2 The new-business exemption — a real, time-limited lever
-
-- **New-business cotisation minimale exemption** — New taxpayers are exempt from the cotisation minimale for the first 36 months of activity.  _(CGI Art. 144)_
-
-This is a genuine planning point: in the early, loss-making or thin-margin years, a net-profit regime can be attractive because the CM floor is switched off. Plan the regime choice with this 36-month window in mind, and note when it expires (the CM floor then re-engages).
-
-### 4.3 VAT (TVA) threshold management
-
-Auto-entrepreneurs operate **outside the scope of VAT (hors champ de la TVA)** while within their ceilings — they charge **no TVA**, which makes them cheaper to non-recoverable clients (consumers, exempt businesses). This is a legitimate competitive and cash-flow advantage.
-
-- **VAT standard rate** — 20% percent
-- **VAT reduced rate** — 10% percent (for some services)
-- **Optional VAT registration lock-in period** — The option, once taken, is binding for a minimum of 3 consecutive years.
-
-Optimization levers:
-
-- **Staying within the AE ceiling keeps you VAT-free.** Crossing the ceiling (or moving to CPU/RNS) generally brings you **into** VAT: you must register, charge TVA (standard **20%**, reduced **10%** for some services), file VAT returns, and keep accounts — but you also gain the **right to deduct input VAT** on purchases.
-- **Optional VAT registration** can pay off when your clients are VAT-registered businesses (they reclaim the TVA you charge) and you carry significant input VAT (equipment, subcontractors). The option, once taken, is binding for a **minimum of 3 consecutive years** — so model it before opting in.
-- **Do not artificially suppress turnover** to stay under a threshold (e.g. refusing real work, or pushing income off-book). Declining growth is a business choice; *concealing* turnover is evasion (see PROHIBITIONS).
-
-### 4.4 Export & Casablanca Finance City (brief mention)
-
-These are largely **corporate (IS)** incentives, but relevant when a freelancer considers incorporating:
-
-- **Export activities** benefit from preferential corporate treatment (historically a full IS exemption for the first years, then a reduced rate). A self-employed exporter selling services abroad should ask whether incorporating to access these reliefs is worthwhile — *verify current 2026 terms*.
-- **Casablanca Finance City (CFC)** offers strong incentives for eligible companies (a multi-year IS exemption then a reduced **20%** rate, with CM relief in the early years). This is **company-level**, not for a bare sole trader, and eligibility is restrictive. Mention it only as a "consider incorporating" prompt and route the client to a specialist. *Verify all CFC terms against the Loi de Finances 2026.*
-
-## 5. Worked Examples (3 Personas)
-
-> Illustrative only. Figures rounded; confirm bracket edges and rates before filing.
-
-### 5.1 Amine — high-margin solo developer (AE wins)
-
-- **Activity:** freelance software developer, several clients (none above 80k).
-- **Turnover:** MAD 180,000 (services). **Real costs:** ~MAD 15,000 (laptop, internet, SaaS) → margin ~92%.
-- **Auto-entrepreneur:** 1% × 180,000 = **MAD 1,800** IR (liberatory), no VAT, no accounts. Within the 200,000 services ceiling.
-- **RNS comparison:** net profit ≈ 165,000 → IR scale tax would be in the tens of thousands of dirhams. Far worse.
-- **Recommendation:** **Auto-entrepreneur.** Keep clients diversified so the 80k single-client rule never bites. Monitor the 200,000 ceiling.
-
-### 5.2 Khadija — single-client consultant (the 80k trap)
-
-- **Activity:** consultant invoicing **one** company MAD 240,000/year.
-- **Naive AE view:** "1% = MAD 2,400." **Wrong** — only the first 80,000 enjoys 1%; the **MAD 160,000 excess from the same client** suffers **30% withholding** ≈ **MAD 48,000**. And the 240,000 turnover **exceeds the 200,000 services ceiling**, so AE is not even available beyond it.
-- **Disguised-employment risk:** one client, likely subordination → high requalification risk.
-- **Recommendation:** **(a)** if genuinely independent, move to **CPU or RNS** and re-run the numbers — likely cheaper than AE-plus-withholding and audit-safe; **(b)** if in substance an employee, advise a **salaried contract**. Do **not** split invoices or interpose entities to dodge the 80k rule.
-
-### 5.3 Younes — low-margin trader (net-profit regime wins)
-
-- **Activity:** buys and resells electronics. **Turnover:** MAD 1,200,000. **Cost of goods + costs:** MAD 1,080,000 → net profit ≈ **MAD 120,000**, margin ~10%.
-- **AE:** unavailable — turnover far above the 500,000 goods ceiling.
-- **CPU vs RNS:** under **RNS**, tax is on the **MAD 120,000 net profit** on the IR scale (≈ low-to-mid four figures up to the 34% band on the top slice), subject to the **cotisation minimale** floor (0.25% × 1,200,000 = **MAD 3,000**). Compare against the CPU coefficiented base.
-- **New-business lever:** in his first 36 months, the **CM is waived**, improving the net-profit option in early years.
-- **Recommendation:** a **net-profit regime (RNS/RNR)** that deducts the genuine cost of goods, with CPU as a fallback to model. VAT registration is required at this turnover — use input-VAT deduction on stock.
-
-## 6. Risks & Red Flags
-
-- **Disguised employment (salariat déguisé).** The biggest one. Single dominant client + subordination = requalification risk. See Section 3. Flag it; never facilitate it.
-- **Splitting / fragmenting turnover** across several auto-entrepreneurs or fake entities to stay under ceilings or under the 80k rule — **abusive and illegal.**
-- **Under-declaring turnover** or keeping income off-book to stay VAT-free or below a ceiling — **evasion**, not optimization.
-- **Ceiling breach by stealth.** Exceeding the AE ceilings for **two consecutive years** triggers automatic transition to a higher regime from 1 January of the next year. Plan the transition; do not pretend it isn't happening.
-- **Mismatched coefficient (CPU).** Choosing CPU when the real margin is far below the profession coefficient can *cost* tax — CPU is not automatically cheaper.
-- **Forgetting the cotisation minimale floor** when modelling a net-profit regime.
-- **Optional VAT lock-in.** The 3-year minimum commitment means a bad VAT election is sticky — model it first.
-- **Treating "verify" figures as settled.** Bracket edges, ceilings, and reduced CM rates must be confirmed against the **Loi de Finances 2026** and the DGI.
-
-## 7. Reference
-
-**Primary sources (verify before relying):**
-
-- **Code Général des Impôts (CGI)** — IR scale and regimes (Art. 73, 144 cotisation minimale, 40 CPU coefficients, 42 bis–44 auto-entrepreneur), VAT (Art. 88+).
-- **Loi de Finances 2026**, Ministère de l'Économie et des Finances.
-- **Loi n° 114-13** — auto-entrepreneur status.
-- **Direction Générale des Impôts (DGI)** — official guides and the auto-entrepreneur portal (ae.gov.ma); CNSS for social cover.
-
-**Key figures used (2026 — confirm before filing):**
-
-- IR scale: 0% to 40,000; 10%; 20%; 30%; 34%; **37%** above 180,000.
-- AE: **0.5%** goods / **1%** services; ceilings **500,000 / 200,000** MAD.
-- AE single-client: **30%** withholding on the excess over **80,000** MAD (services).
-- CPU: **10%** liberatory on turnover × profession coefficient; ceilings **2,000,000 / 500,000** MAD *(verify)*.
-- Cotisation minimale: **0.25%** standard; **4%** professions libérales *(verify)*; **36-month** new-business exemption (CGI Art. 144).
-- VAT: standard **20%**, reduced **10%**; optional registration binds **3 years**.
-
-**Cross-references:** ma-auto-entrepreneur · ma-cpu · morocco-professional-income-tax
-
-## PROHIBITIONS
-
-- **Prohibited activities** — This skill provides **legal tax optimization only**. It must **never**: - Advise, design, or facilitate **tax evasion** — under-declaring or concealing turnover/income, keeping cash off-book, or falsifying records. - Help structure or disguise an **employment relationship** as freelancing to dodge payroll tax, CNSS, or Labour Code duties (**salariat déguisé**). Where the substance is employment, say so. - Suggest **fragmenting turnover** across multiple auto-entrepreneurs, relatives, or sham entities to stay under ceilings or under the 80,000 MAD single-client rule. - Recommend **artificial invoice-splitting**, backdating, or fictitious deductions. - Present any **abusive arrangement** that fails a substance/economic-reality test as "optimization". - State unverified figures as certain. Mark estimates **"verify"** and route the user to the DGI or an expert-comptable. When a request crosses into evasion or disguised employment, **decline the unlawful part, explain why, and offer the lawful alternative.**
-
-## Disclaimer
-
-This skill is **research-verified** against public DGI guidance, the Loi de Finances 2026, and reputable professional commentary, but is **pending sign-off by a Moroccan expert-comptable** (chartered accountant). It is general information for legitimate tax planning, **not** personalised tax advice. Tax rates, thresholds, coefficients, and rules change and may have exceptions specific to your activity or region. Before acting, confirm the current position with the **Direction Générale des Impôts (DGI)** or a qualified Moroccan **expert-comptable**. Figures marked "verify" are provisional.
-
-Part of **OpenAccountants** — open-source tax skills for the self-employed. openaccountants.com
+- Default to the regime that survives audit, not the lowest headline number.
+- Treat a single client above MAD 80,000 as a red flag until the relationship is shown to be genuinely independent.
+- Assume VAT applies above the exemption limit unless an exemption is clearly established.
+- Assume the standard cotisation minimale applies once the three-year window closes.
+- State any figure on the Not yet confirmed line as provisional and send the user to the DGI or an expert-comptable.
+
+## Worked cases
+
+Illustrative clients; 2026 rates and limits from the table above.
+
+**Case 1, a decision: Amine, freelance developer, services turnover MAD 180,000, several clients (none above MAD 80,000), real costs MAD 15,000.** AE: 180,000 x 1% = MAD 1,800, final, within the MAD 200,000 limit. RNS: net profit 165,000 on the scale, 165,000 x 34% less 22,000 = MAD 34,100 (above the cotisation minimale). AE saves MAD 32,300. CPU is closed: IT service providers are on the excluded list. Recommendation: auto-entrepreneur; keep clients diversified and watch the MAD 200,000 limit.
+
+```oa-check
+name: Amine, AE against RNS
+inputs:
+  turnover: 180000
+  costs: 15000
+steps:
+  - ae: turnover * 0.01
+  - profit: turnover - costs
+  - rns: profit * 0.34 - 22000
+  - saving: rns - ae
+expected:
+  ae: 1800
+  rns: 34100
+  saving: 32300
+```
+
+**Case 2, a decision: Younes, electronics reseller, turnover MAD 1,200,000, cost of goods and expenses MAD 1,080,000, net profit MAD 120,000.** AE is closed (above MAD 500,000). RNS: 120,000 x 34% less 22,000 = MAD 18,800; the cotisation minimale is 0.25% x 1,200,000 = MAD 3,000, below the IR, so IR stands at MAD 18,800. CPU: trade "Autres produits non alimentaires", coefficient 12%: base 144,000, IR 14,400, droit complementaire MAD 6,000 (band 10,001 to 25,000), total MAD 20,400. RNS is cheaper by MAD 1,600 and deducts the real cost of goods. If he is in his first three financial years, the cotisation minimale is switched off, which only matters in a loss year. VAT applies at this turnover as a reseller only on the rules in `morocco-vat`.
+
+```oa-check
+name: Younes, RNS against CPU
+inputs:
+  turnover: 1200000
+  profit: 120000
+  coefficient: 0.12
+  droit: 6000
+steps:
+  - rns_ir: profit * 0.34 - 22000
+  - cm: max(turnover * 0.0025, 1500)
+  - rns: max(rns_ir, cm)
+  - cpu: turnover * coefficient * 0.10 + droit
+  - cpu_extra: cpu - rns
+expected:
+  rns_ir: 18800
+  cm: 3000
+  rns: 18800
+  cpu: 20400
+  cpu_extra: 1600
+```
+
+**Case 3: Khadija, consultant invoicing one company MAD 240,000 a year.** Naive view: "1% is MAD 2,400". Wrong: only the first MAD 80,000 from that client stays at 1% (MAD 800); the client withholds 30% on the MAD 160,000 excess (MAD 48,000). Turnover is also above the MAD 200,000 services limit; the option stays valid for this year, but a second consecutive year over moves her to RNR (Art. 43-4°). One client and likely subordination: high requalification risk. Recommendation: (a) if genuinely independent, price RNS (CPU is likely closed, as legal, tax and other consultants are excluded); (b) if in substance an employee, a salaried contract. Never split invoices or interpose entities.
+
+## When to refuse or refer
+
+This skill gives legal tax optimization only. It must never:
+- advise, design or facilitate tax evasion: under-declaring or concealing turnover or income, cash off-book, falsified records;
+- help structure or disguise an employment relationship as freelancing to dodge payroll tax, CNSS or Labour Code duties (salariat deguise); where the substance is employment, say so;
+- suggest fragmenting turnover across several auto-entrepreneurs, relatives or sham entities to stay under limits or the MAD 80,000 rule;
+- recommend artificial invoice-splitting, backdating or fictitious deductions;
+- present an abusive arrangement that fails a substance test as "optimization";
+- state an unconfirmed figure as certain.
+
+When a request crosses into evasion or disguised employment, decline the unlawful part, explain why, and offer the lawful alternative. Refer incorporation, export, CFC and any regime change with past-year consequences to a Moroccan expert-comptable.
+
+## Filing and payment
+
+The filing calendar for each regime is in `ma-return-assembly`: auto-entrepreneur monthly or quarterly (Art. 82 bis), CPU before 1 April of the following year (Art. 82 quater), RNS or RNR before 1 May (Art. 82-I). An option for a regime is made in writing to the tax inspector within the deadlines of Art. 43 and 44 (see `ma-cpu` for the CPU option).
+
+## Completion checklist
+
+- Regimes actually open checked: limits, CPU exclusions, membership conditions.
+- Each open regime priced on the client's own turnover and margin, with the cotisation minimale floor on net-profit regimes.
+- Single-client rule and employment substance tested.
+- Start-year exemption, VAT position and lock-in considered.
+- Recommendation names the deciding figure and survives audit.
+- Nothing suggests splitting, concealment or disguised employment.
+
+## Sources
+
+| Source | URL | Read on |
+|---|---|---|
+| Code Général des Impôts 2026, DGI, French edition (includes Finance Law 50-25). Read for Art. 73-I scale, Art. 73-III auto-entrepreneur rates, Art. 42 ter and 43-4° limits and exit, Art. 73-II-G-8° and 45 bis single-client 30%, Art. 40-I coefficients and Art. 73-II-B-6° droit complementaire, Art. 39 and 41-II limits, Art. 144 cotisation minimale (0.25%, 4%, MAD 1,500, three-year start exemption), Art. 89, 90, 91-II-3° and 99 VAT | https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1 | 2026-11-14 |
+
+Not yet confirmed: 2026 terms of export reliefs and Casablanca Finance City status for companies (old file: multi-year IS exemption then a reduced 20% rate); whether a given consultant trade is on the CPU excluded list (decree 2-08-124, see `ma-cpu`).
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-31. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ma-tax-optimization` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ma-tax-optimization. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ma-tax-optimization` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ma-tax-optimization. If neither is available, confirm every figure against the official source pages cited above before relying on it.

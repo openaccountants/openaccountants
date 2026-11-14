@@ -1,21 +1,22 @@
 ---
 name: luxembourg-social-contributions
 description: "Luxembourg social security contributions (cotisations sociales) for tax year 2026, collected by the CCSS: employee and employer shares for sickness (2.80% + 0.25% cash surcharge each side), pension (8.50% each side, 17% in total from 1 January 2026), dependency (1.40%, employee only, no ceiling, after a quarter-SSM abatement), accident (0.65% times the bonus-malus factor), Mutualité des employeurs classes 1 to 4, occupational health 0.14% and family benefits 1.70% (public sector only); the SSM floor and 5x SSM ceiling for 1 January and 1 June 2026; self-employed contributions on professional income with the provisional SSM base; entry, exit and wage declarations, the monthly account statement and 10-day payment, 0.6% monthly late interest and fines. Trigger on: CCSS cotisations 2026, Luxembourg social security rates, independant cotisations, MDE classe, maximum cotisable, dependance abattement. Out of scope: luxembourg-payroll (wage tax withholding), luxembourg-income-tax, lu-cross-border, lu-corporate-tax."
-version: 0.4
+version: 0.5
 jurisdiction: LU
 tax_year: 2026
-last_updated: 2026-10-27
+last_updated: 2026-11-14
 depends_on:
   - social-contributions-workflow-base
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
+type: computation
 ---
 
 # Luxembourg social security contributions (2026)
 
-## Luxembourg Social Security Contributions (Cotisations Sociales) Skill v0.4
+## Luxembourg Social Security Contributions (Cotisations Sociales) Skill v0.5
 
 What matters for 2026:
 
@@ -41,7 +42,7 @@ Out of scope: voluntary insurance, farmers, public-sector special schemes, and t
 |---|---|---|---|
 | Sickness, benefits in kind (soins de santé) | 2.80% employee + 2.80% employer | 2026 | https://ccss.public.lu/dam-assets/publications/2026/ccss-20260116-avis-80-99-fr-de.pdf |
 | Sickness, cash benefits surcharge (prestations en espèces) | 0.25% employee + 0.25% employer, only for people entitled to sick pay | 2026 | https://ccss.public.lu/dam-assets/publications/2026/ccss-20260116-avis-80-99-fr-de.pdf |
-| Pension | 8.50% employee + 8.50% employer (17% total; 16% in 2025) | 2026 | https://ccss.public.lu/fr/parametres-sociaux.html |
+| Pension | 8.50% employee + 8.50% employer (17% total on the page, each half computed; 16% in 2025) | 2026 | https://ccss.public.lu/fr/parametres-sociaux.html |
 | Dependency (long-term care) | 1.40%, insured person only, no floor and no ceiling | 2026 | https://ccss.public.lu/dam-assets/publications/2026/ccss-20260116-avis-80-99-fr-de.pdf |
 | Dependency abatement (1/4 SSM), 1 January to 31 May | EUR 675.93 a month | 2026 | https://ccss.public.lu/dam-assets/publications/2026/ccss-20260116-avis-80-99-fr-de.pdf |
 | Dependency abatement, from 1 June | EUR 692.83 a month | 2026 | https://ccss.public.lu/dam-assets/publications/2026/ccss-20260814-avis-80-99.pdf |
@@ -178,20 +179,20 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| CCSS, notice to employers, contribution rates and minima/maximum at 1 January 2026 (16 January 2026) | https://ccss.public.lu/dam-assets/publications/2026/ccss-20260116-avis-80-99-fr-de.pdf | 2026-10-27 |
-| CCSS, notice to employers, minima and maximum at 1 June 2026 (14 August 2026) | https://ccss.public.lu/dam-assets/publications/2026/ccss-20260814-avis-80-99.pdf | 2026-10-27 |
-| CCSS, social parameters (rates 2014 to 2026) | https://ccss.public.lu/fr/parametres-sociaux.html | 2026-10-27 |
-| CCSS, employers: pay to declare and contributable bases | https://ccss.public.lu/fr/employeurs/secteur-prive/remuneration.html | 2026-10-27 |
-| CCSS, employers: hiring, entry and exit declarations | https://ccss.public.lu/fr/employeurs/secteur-prive/engager-personnel.html | 2026-10-27 |
-| CCSS, employers: billing, payment and late interest | https://ccss.public.lu/fr/employeurs/secteur-prive/facturation.html | 2026-10-27 |
-| CCSS, employers: registration | https://ccss.public.lu/fr/employeurs/secteur-prive/immatriculation-employeur.html | 2026-10-27 |
-| CCSS, self-employed: professional income | https://ccss.public.lu/fr/independants/cotisations-sociales/revenu-professionnel.html | 2026-10-27 |
-| CCSS, self-employed: contribution base and recalculation | https://ccss.public.lu/fr/independants/cotisations-sociales/assiette-cotisation-adaptation.html | 2026-10-27 |
-| CCSS, self-employed: billing and payment | https://ccss.public.lu/fr/independants/cotisations-sociales/facturation.html | 2026-10-27 |
-| CCSS, self-employed: payment plans | https://ccss.public.lu/fr/independants/cotisations-sociales/demander-delai-paiement.html | 2026-10-27 |
-| Code de la sécurité sociale, consolidated at 1 January 2026 (arts. 1, 29, 32, 352, 376, 377, 378, 445; RGD of 8 February 2016 on bonus-malus) | https://legilux.public.lu/eli/etat/leg/code/securite_sociale/20260101 | 2026-10-27 |
-| Guichet.lu, entry declaration and late fine | https://guichet.public.lu/fr/entreprises/ressources-humaines/securite-sociale/declaration-entree.html | 2026-10-27 |
+| CCSS, notice to employers, contribution rates and minima/maximum at 1 January 2026 (16 January 2026). Read for the 2026 contribution rates and minimum and maximum. | https://ccss.public.lu/dam-assets/publications/2026/ccss-20260116-avis-80-99-fr-de.pdf | 2026-10-27 |
+| CCSS, notice to employers, minima and maximum at 1 June 2026 (14 August 2026). Read for the minimum and maximum from 1 June 2026. | https://ccss.public.lu/dam-assets/publications/2026/ccss-20260814-avis-80-99.pdf | 2026-10-27 |
+| CCSS, social parameters (rates 2014 to 2026). Read for the rates by year. | https://ccss.public.lu/fr/parametres-sociaux.html | 2026-10-27 |
+| CCSS, employers: pay to declare and contributable bases. Read for what pay is declared. | https://ccss.public.lu/fr/employeurs/secteur-prive/remuneration.html | 2026-10-27 |
+| CCSS, employers: hiring, entry and exit declarations. Read for entry and exit declarations. | https://ccss.public.lu/fr/employeurs/secteur-prive/engager-personnel.html | 2026-10-27 |
+| CCSS, employers: billing, payment and late interest. Read for billing, payment and late interest. | https://ccss.public.lu/fr/employeurs/secteur-prive/facturation.html | 2026-10-27 |
+| CCSS, employers: registration. Read for employer registration. | https://ccss.public.lu/fr/employeurs/secteur-prive/immatriculation-employeur.html | 2026-10-27 |
+| CCSS, self-employed: professional income. Read for the self-employed income base. | https://ccss.public.lu/fr/independants/cotisations-sociales/revenu-professionnel.html | 2026-10-27 |
+| CCSS, self-employed: contribution base and recalculation. Read for how the self-employed base is recalculated. | https://ccss.public.lu/fr/independants/cotisations-sociales/assiette-cotisation-adaptation.html | 2026-10-27 |
+| CCSS, self-employed: billing and payment. Read for self-employed billing and payment. | https://ccss.public.lu/fr/independants/cotisations-sociales/facturation.html | 2026-10-27 |
+| CCSS, self-employed: payment plans. Read for payment plans. | https://ccss.public.lu/fr/independants/cotisations-sociales/demander-delai-paiement.html | 2026-10-27 |
+| Code de la sécurité sociale, consolidated at 1 January 2026 (arts. 1, 29, 32, 352, 376, 377, 378, 445; RGD of 8 February 2016 on bonus-malus) | https://data.legilux.public.lu/filestore/eli/etat/leg/code/securite_sociale/20260101/fr/pdf/eli-etat-leg-code-securite_sociale-20260101-fr-pdf.pdf | 2026-10-27 |
+| Guichet.lu, entry declaration and late fine. Read for the entry declaration fine. | https://guichet.public.lu/fr/entreprises/ressources-humaines/securite-sociale/declaration-entree.html | 2026-10-27 |
 
 Not yet confirmed: the State's own pension share and the text of the pension reform law of 18 December 2025 (Legilux not readable today; the 17% total is from the CCSS); the amount the CCSS actually charges for a late exit or missing wage declaration within the art. 445 CSS cap of EUR 2,500; a calendar deadline date for the monthly wage declaration beyond the 10-day return of the wage list; the reference period the AAA uses to set the bonus-malus factor (the old version's 1 April Y-2 to 31 March Y-1 came from secondary sources; the AAA page was down on 27 October 2026); bank statement descriptions for CCSS debits (old version's pattern table, not from an official source).
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.

@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/be-vat-return"
   jurisdiction: "BE"
   tax_year: "2026"
-  last_updated: "2026-10-31"
+  last_updated: "2026-11-14"
 ---
 
-# Belgium VAT and the periodic VAT return (btw-aangifte / déclaration TVA): the law, preparing and filing, tax year 2026 v2.4
+# Belgium VAT and the periodic VAT return (btw-aangifte / déclaration TVA): the law, preparing and filing, tax year 2026 v2.6
 
 > **Source-cited draft: not reviewed by an accountant.** This skill is general tax reference material for AI-assisted work. It has not been reviewed for any business's facts. Do not rely on it to file, pay or take a position without review by a qualified professional in Belgium.
 
@@ -295,8 +295,8 @@ expected:
 
 Not yet confirmed: the EUR 250 per-customer floor of the client listing is on the FOD Financiën page but not in KB nr. 23 (neither its articles nor its annex, model form 725, state an amount), so its legal basis was not found; the 2027 late-interest rate (the fiscal rate for 2027 is published in the third quarter) was not looked up; the FOD Financiën page waives only the fine for late filing (KB nr. 44) for June, Q2 and July 2026 returns filed by 10 August or 10 September 2026; whether the late-payment fine on such a return is 5% or 10% (KB nr. 41 Table G, I.1 or I.2) is not stated in the sources read; the old v2.0 internal review flags (EUR 5,000 single transaction, EUR 400 default delta and similar) were working rules, not law, and were not carried; the treatment of short-term letting income (platform sales, Airbnb) beyond the 12% rate for furnished accommodation is not covered here; whether the pro rata limit for a business that starts mid-year is also the limit tested for the "exceeded in the previous year" bar in art. 56decies; the full item lists of Tables A, B and C are summarised, not reproduced; who must file the annual intra-EU listing shown on the btw-kalender, and its legal basis: KB nr. 50 as read sets monthly and quarterly listings, and the calendar does not say who the annual one is for; the date for the 2026 annual listing, because the calendar gives only the 2025 date; WBTW art. 56decies was not re-read on 2026-10-31, as the FisconetPlus page rendered without its text in a browser, so its 10% tolerance rests on the earlier read.
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-31. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `be-vat-return` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/be-vat-return. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `be-vat-return` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/be-vat-return. If neither is available, confirm every figure against the official source pages cited above before relying on it.

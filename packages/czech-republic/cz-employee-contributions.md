@@ -1,17 +1,18 @@
 ---
 name: cz-employee-contributions
 description: "Czech social security and public health insurance contributions on employment income for tax year 2026. Covers the employee social rate of 7.1% (6.5% pension, 0.6% sickness) and the employer rate of 24.8%, health insurance of 13.5% split one third employee (4.5%) and two thirds employer (9%), the 2026 annual cap on the social base of CZK 2,350,416 (48 times the average wage), the health minimum base of CZK 22,400, the CZK 4,500 small-scope threshold and the CZK 12,000 threshold for work agreements (DPP), employer discounts, monthly payment by the 20th, the new single monthly employer report (JMHZ), penalties and EU posting rules. Trigger on: Czech payroll contributions, sociální pojištění zaměstnance, zdravotní pojištění zaměstnavatel, DPP, DPČ, JMHZ, maximální vyměřovací základ. Out of scope: self-employed contributions (cz-social-health), income tax withholding, residence and treaties (cz-cross-border)."
-version: 0.2
+version: 0.3
 jurisdiction: CZ
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
+type: computation
 ---
 
-# Czech Republic: employee and employer social and health contributions (2026) v0.2
+# Czech Republic: employee and employer social and health contributions (2026) v0.3
 
 > **Source-cited draft.** No accountant has reviewed this skill yet. Every figure below comes from the Czech Social Security Administration (ČSSZ), the General Health Insurance Company (VZP), the Czech National Bank and the statutes in the Collection of Laws (e-Sbírka), read on 23 October 2026. It prepares working papers; it is not authority to file or pay.
 
@@ -43,24 +44,24 @@ The law is Act No. 589/1992 Coll. on social security premiums (zákon o pojistn�
 | Item | 2026 figure | Year | Source |
 |---|---|---|---|
 | Employee social insurance | 7.1% of the base (6.5% pension, 0.6% sickness) | 2026 | [ČSSZ, Sazby pojistného](https://www.cssz.gov.cz/web/cz/vyse-a-sazba); SSPA § 7(1)(d) |
-| Employer social insurance, ordinary employees | 24.8% of the base (21.5% pension, 2.1% sickness, 1.2% state employment policy) | 2026 | ČSSZ, Sazby pojistného; SSPA § 7(1)(a) |
-| Employer rate for paramedics and company fire brigade members | 29.8% | 2026 | SSPA § 7(1)(b)(4) |
-| Employer rate for staff in risk jobs (rizikové zaměstnání) | 27.8% (28.8% in 2027, 29.8% from 2028) | 2026 | SSPA § 7(1)(c)(2) |
+| Employer social insurance, ordinary employees | 24.8% of the base (21.5% pension, 2.1% sickness, 1.2% state employment policy) | 2026 | ČSSZ, Sazby pojistného; SSPA § 7(1)(a); https://www.cssz.gov.cz/web/cz/vyse-a-sazba |
+| Employer rate for paramedics and company fire brigade members | 29.8% | 2026 | SSPA § 7(1)(b)(4); https://www.cssz.gov.cz/web/cz/vyse-a-sazba |
+| Employer rate for staff in risk jobs (rizikové zaměstnání) | 27.8% (28.8% in 2027, 29.8% from 2028) | 2026 | SSPA § 7(1)(c)(2); https://www.cssz.gov.cz/web/cz/vyse-a-sazba |
 | Health insurance, total | 13.5% of the base | 2026 | [VZP, Vyměřovací základ a výpočet pojistného](https://www.vzp.cz/platci/informace/zamestnavatel/vymerovaci-zaklad-a-vypocet-pojistneho); HIPA § 2(1) |
-| Health insurance split | One third employee (4.5% of the base), two thirds employer (9%) | 2026 | PHIA § 9(2); [VZP, Splatnost](https://www.vzp.cz/platci/informace/zamestnavatel/splatnost-a-dalsi-zasady-pro-platbu-pojistneho) |
+| Health insurance split | One third employee (4.5% of the base), two thirds employer (9%) (computed: thirds of the 13.5% rate) | 2026 | PHIA § 9(2); [VZP, Splatnost](https://www.vzp.cz/platci/informace/zamestnavatel/splatnost-a-dalsi-zasady-pro-platbu-pojistneho) |
 | Average wage for 2026 | CZK 48,967 | 2026 | derived: CZK 2,350,416 divided by 48 ([ČSSZ](https://www.cssz.gov.cz/web/cz/maximalni-vymerovaci-zaklad)); ČSSZ also gives half (CZK 24,484) and a quarter (CZK 12,242) ([ČSSZ, Výpočet pojistného](https://www.cssz.gov.cz/web/cz/vypocet-pojistneho)) |
 | Annual maximum social insurance base per employee (48 times the average wage) | CZK 2,350,416 | 2026 | [ČSSZ, Maximální vyměřovací základ](https://www.cssz.gov.cz/web/cz/maximalni-vymerovaci-zaklad); SSPA § 15a(1) |
-| Maximum health insurance base | None | 2026 | VZP, Vyměřovací základ a výpočet pojistného |
-| Minimum health insurance base (the minimum wage) | CZK 22,400 a month; minimum premium CZK 3,024 (minimum wage CZK 24,900 from 1 January 2027) | 2026 | [MPSV Communication 356/2025 Coll.](https://e-sbirka.gov.cz/sb/2025/356); [MPSV Communication 171/2026 Coll.](https://e-sbirka.gov.cz/sb/2026/171); [VZP, Minimální mzda](https://www.vzp.cz/platci/informace/obzp/minimalni-mzda); HIPA § 3(6) |
-| Earnings threshold for an employment contract or DPČ (rozhodný příjem) | CZK 4,500 a month | 2026 | [SIA § 6(2)](https://e-sbirka.gov.cz/sb/2006/187); [ČSSZ](https://www.cssz.gov.cz/web/cz/vypocet-pojistneho) (twice the threshold is CZK 9,000 in 2026) |
+| Maximum health insurance base | None | 2026 | VZP, Vyměřovací základ a výpočet pojistného; https://www.vzp.cz/platci/informace/zamestnavatel/vymerovaci-zaklad-a-vypocet-pojistneho |
+| Minimum health insurance base (the minimum wage) | CZK 22,400 a month; minimum premium CZK 3,024 (minimum wage CZK 24,900 from 1 January 2027) | 2026 | [MPSV Communication 356/2025 Coll.](https://e-sbirka.gov.cz/sb/2025/356); [MPSV Communication 171/2026 Coll.](https://e-sbirka.gov.cz/sb/2026/171) ([e-Sbírka text](https://e-sbirka.gov.cz/sbr-cache/dokumenty-sbirky/%2Fsb%2F2026%2F171/fragmenty?cisloStranky=0)); [VZP, Minimální mzda](https://www.vzp.cz/platci/informace/obzp/minimalni-mzda); HIPA § 3(6) |
+| Earnings threshold for an employment contract or DPČ (rozhodný příjem) | CZK 4,500 a month | 2026 | [SIA § 6(2)](https://e-sbirka.gov.cz/sb/2006/187); [ČSSZ](https://www.cssz.gov.cz/web/cz/vypocet-pojistneho) (twice the threshold is CZK 9,000 in 2026); [ČSSZ, key figures for 2026](https://www.cssz.gov.cz/-/prehled-nejdulezitejsich-udaju-pro-socialni-zabezpeceni-v-roce-2026) |
 | Earnings threshold for a DPP | CZK 12,000 a month per employer (CZK 12,500 from 1 January 2027) | 2026 | [MPSV Communication 396/2025 Coll.](https://e-sbirka.gov.cz/sb/2025/396); [MPSV Communication 184/2026 Coll.](https://e-sbirka.gov.cz/sb/2026/184); SIA § 7a(1) |
-| Employer discount for qualifying part-time staff | 5% of their bases | 2026 | SSPA § 7a and § 7b(1) |
+| Employer discount for qualifying part-time staff | 5% of their bases | 2026 | SSPA § 7a and § 7b(1); https://e-sbirka.gov.cz/sb/1992/586/2026-08-01 |
 | Ceiling for that discount: monthly base per employee | 1.5 times the average wage, CZK 73,451 (rounded up) | 2026 | SSPA § 7a(3)(a); [ČSSZ, Sleva na pojistném zaměstnavatele](https://www.cssz.gov.cz/web/cz/slevy-na-pojistnem) |
-| Ceiling for that discount: base per hour worked | 1.15% of the average wage, CZK 564 (rounded up) | 2026 | SSPA § 7a(3)(b); ČSSZ, Sleva na pojistném zaměstnavatele |
-| Discount for a working old-age pensioner (employee's share) | 6.5% of the base, so the employee pays 0.6% | 2026 | [ČSSZ, Sleva na pojistném zaměstnance](https://www.cssz.gov.cz/web/cz/sleva-na-pojistnem-zamestnance); SSPA § 7e |
-| Discount for a DPP worker in fruit or vegetable growing (employee's share) | 7.1% of the base, so the employee pays nothing; not due if the month's DPP income from that employer exceeds the average wage rounded down to CZK 500 | 2026 | SSPA §§ 7f and 7g |
-| Voluntary sickness insurance for an employee of a foreign employer | 2.7% | 2026 | ČSSZ, Sazby pojistného; SSPA § 7(1)(g) |
-| Late payment penalty (penále), social and health | Civil-law default interest: CNB repo rate on the first day of the half-year when the default began, plus 8 points. 11.50% a year for defaults starting 1 January to 30 June 2026 (repo 3.50%). 11.75% for defaults starting 1 July to 31 December 2026 (repo 3.75% from 19 June 2026). VZP gives 0.0322% a day | 2026 | SSPA § 20(1); HIPA § 18(1); [Government Regulation 351/2013 Coll. § 2](https://e-sbirka.gov.cz/sb/2013/351); [CNB repo history](https://www.cnb.cz/cs/faq/vyvoj_repo_historie.txt); [VZP, Dlužné pojistné](https://www.vzp.cz/platci/informace/zamestnavatel/dluzne-pojistne-penale-pokuty) |
+| Ceiling for that discount: base per hour worked | 1.15% of the average wage, CZK 564 (rounded up) | 2026 | SSPA § 7a(3)(b); ČSSZ, Sleva na pojistném zaměstnavatele; https://www.cssz.gov.cz/web/cz/slevy-na-pojistnem |
+| Discount for a working old-age pensioner (employee's share) | 6.5% of the base, so the employee pays 0.6% (computed: 7.1% less 6.5%) | 2026 | [ČSSZ, Sleva na pojistném zaměstnance](https://www.cssz.gov.cz/web/cz/sleva-na-pojistnem-zamestnance); SSPA § 7e |
+| Discount for a DPP worker in fruit or vegetable growing (employee's share) | 7.1% of the base, so the employee pays nothing; not due if the month's DPP income from that employer exceeds the average wage rounded down to CZK 500 | 2026 | SSPA §§ 7f and 7g; https://e-sbirka.gov.cz/sb/1992/586/2026-08-01 |
+| Voluntary sickness insurance for an employee of a foreign employer | 2.7% | 2026 | ČSSZ, Sazby pojistného; SSPA § 7(1)(g); https://www.cssz.gov.cz/web/cz/vyse-a-sazba |
+| Late payment penalty (penále), social and health | Civil-law default interest: CNB repo rate on the first day of the half-year when the default began, plus 8 points. 11.50% a year for defaults starting 1 January to 30 June 2026 (repo 3.50%). 11.75% for defaults starting 1 July to 31 December 2026 (repo 3.75% from 19 June 2026; computed: repo plus 8 points). VZP gives 0.0322% a day | 2026 | SSPA § 20(1); HIPA § 18(1); [Government Regulation 351/2013 Coll. § 2](https://e-sbirka.gov.cz/sb/2013/351); [CNB repo history](https://www.cnb.cz/cs/faq/vyvoj_repo_historie.txt); [VZP, Dlužné pojistné](https://www.vzp.cz/platci/informace/zamestnavatel/dluzne-pojistne-penale-pokuty) |
 
 Bases and premiums are rounded up to whole koruna (SSPA § 7(3); HIPA § 2(2)).
 
@@ -228,33 +229,34 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| ČSSZ, Sazby pojistného (2026 rates) | https://www.cssz.gov.cz/web/cz/vyse-a-sazba | 2026-10-23 |
-| ČSSZ, Výpočet pojistného (base, 2026 thresholds CZK 9,000, 12,242, 24,484) | https://www.cssz.gov.cz/web/cz/vypocet-pojistneho | 2026-10-23 |
-| ČSSZ, Maximální vyměřovací základ (CZK 2,350,416 for 2026) | https://www.cssz.gov.cz/web/cz/maximalni-vymerovaci-zaklad | 2026-10-23 |
-| ČSSZ, Vrácení přeplatku při dosažení maximálního vyměřovacího základu | https://www.cssz.gov.cz/web/cz/vraceni-preplatku-na-pojistnem-pri-dosazeni-maximalniho-vymerovaciho-zakladu | 2026-10-23 |
-| ČSSZ, Platba a termíny | https://www.cssz.gov.cz/web/cz/platba-a-terminy | 2026-10-23 |
-| ČSSZ, Obecné informace (pojistné) | https://www.cssz.gov.cz/web/cz/platba-pojistneho-obecne-informace | 2026-10-23 |
-| ČSSZ, Sleva na pojistném zaměstnance pracujícího důchodce | https://www.cssz.gov.cz/web/cz/sleva-na-pojistnem-zamestnance | 2026-10-23 |
-| ČSSZ, Sleva na pojistném zaměstnavatele (2026 limits CZK 73,451 and CZK 564; notice of intention) | https://www.cssz.gov.cz/web/cz/slevy-na-pojistnem | 2026-10-23 |
-| ČSSZ, Co je JMHZ? | https://www.cssz.gov.cz/web/cz/co-je-jmhz- | 2026-10-23 |
-| ČSSZ, Kdo podává JMH, způsob, lhůty a jeho obsah | https://www.cssz.gov.cz/web/cz/kdo-podava-jmh- | 2026-10-23 |
-| ČSSZ, Evidence zaměstnanců (přihlášení, změna, odhlášení) | https://www.cssz.gov.cz/web/cz/evidence-zamestnancu-prihlaseni-zmena-odhlaseni- | 2026-10-23 |
-| ČSSZ, JMHZ a odměny členů volebních komisí 2026 (CZK 4,500 small-scope threshold) | https://www.cssz.gov.cz/web/cz/-/jmhz-a-odmeny-clenu-volebnich-komisi-prehled-pravidel-pro-rok-2026 | 2026-10-23 |
-| ČSSZ, Vyslaní pracovníci (Regulation 883/2004, A1, 24 months) | https://www.cssz.gov.cz/vyslani-pracovnici | 2026-10-23 |
-| VZP, Vyměřovací základ a výpočet pojistného (13.5%, minimum CZK 22,400, no maximum) | https://www.vzp.cz/platci/informace/zamestnavatel/vymerovaci-zaklad-a-vypocet-pojistneho | 2026-10-23 |
-| VZP, Minimální mzda (CZK 22,400, premium CZK 3,024) | https://www.vzp.cz/platci/informace/obzp/minimalni-mzda | 2026-10-23 |
-| VZP, Splatnost a další zásady pro platbu pojistného (one third and two thirds, due 1st to 20th) | https://www.vzp.cz/platci/informace/zamestnavatel/splatnost-a-dalsi-zasady-pro-platbu-pojistneho | 2026-10-23 |
-| VZP, Dlužné pojistné, penále, pokuty (0.0322% a day) | https://www.vzp.cz/platci/informace/zamestnavatel/dluzne-pojistne-penale-pokuty | 2026-10-23 |
-| Act No. 589/1992 Coll. (SSPA), consolidated: §§ 5, 7, 7a, 7b, 7e, 7f, 7g, 8, 9, 15a, 20 | https://e-sbirka.gov.cz/sb/1992/589 | 2026-10-23 |
-| Act No. 187/2006 Coll. (SIA), version in force 1 July to 31 December 2026: §§ 5, 6, 7, 7a, 9 | https://e-sbirka.gov.cz/sb/2006/187 | 2026-10-23 |
-| Act No. 592/1992 Coll. (HIPA), consolidated: §§ 2, 3, 5, 18, 25, 25a, 26 | https://e-sbirka.gov.cz/sb/1992/592 | 2026-10-23 |
-| Act No. 48/1997 Coll. (PHIA), consolidated: §§ 5, 9, 10 | https://e-sbirka.gov.cz/sb/1997/48 | 2026-10-23 |
-| Act No. 323/2025 Coll. (JMHZ Act): §§ 7, 8, 17, 19, 28, 34, 40 | https://e-sbirka.gov.cz/sb/2025/323 | 2026-10-23 |
+| Read for Employee social insurance, Employer social insurance, ordinary employees, Employer rate for paramedics and company fire brigade members, Employer rate for staff in risk jobs (rizikové zaměstnání): ČSSZ, Sazby pojistného (2026 rates) | https://www.cssz.gov.cz/web/cz/vyse-a-sazba | 2026-11-14 |
+| Read for Average wage for 2026, Earnings threshold for an employment contract or DPČ (rozhodný příjem): ČSSZ, Výpočet pojistného (base, 2026 thresholds CZK 9,000, 12,242, 24,484) | https://www.cssz.gov.cz/web/cz/vypocet-pojistneho | 2026-11-14 |
+| Read for Average wage for 2026, Annual maximum social insurance base per employee (48 times the average wage): ČSSZ, Maximální vyměřovací základ (CZK 2,350,416 for 2026) | https://www.cssz.gov.cz/web/cz/maximalni-vymerovaci-zaklad | 2026-11-14 |
+| Read for the points the body cites to it: ČSSZ, Vrácení přeplatku při dosažení maximálního vyměřovacího základu | https://www.cssz.gov.cz/web/cz/vraceni-preplatku-na-pojistnem-pri-dosazeni-maximalniho-vymerovaciho-zakladu | 2026-11-14 |
+| Read for the points the body cites to it: ČSSZ, Platba a termíny | https://www.cssz.gov.cz/web/cz/platba-a-terminy | 2026-11-14 |
+| Read for the points the body cites to it: ČSSZ, Obecné informace (pojistné) | https://www.cssz.gov.cz/web/cz/platba-pojistneho-obecne-informace | 2026-11-14 |
+| Read for Discount for a working old-age pensioner (employee's share): ČSSZ, Sleva na pojistném zaměstnance pracujícího důchodce | https://www.cssz.gov.cz/web/cz/sleva-na-pojistnem-zamestnance | 2026-11-14 |
+| Read for Ceiling for that discount: monthly base per employee, Ceiling for that discount: base per hour worked: ČSSZ, Sleva na pojistném zaměstnavatele (2026 limits CZK 73,451 and CZK 564; notice of intention) | https://www.cssz.gov.cz/web/cz/slevy-na-pojistnem | 2026-11-14 |
+| Read for the points the body cites to it: ČSSZ, Co je JMHZ? | https://www.cssz.gov.cz/web/cz/co-je-jmhz- | 2026-11-14 |
+| Read for the points the body cites to it: ČSSZ, Kdo podává JMH, způsob, lhůty a jeho obsah | https://www.cssz.gov.cz/web/cz/kdo-podava-jmh- | 2026-11-14 |
+| Read for the points the body cites to it: ČSSZ, Evidence zaměstnanců (přihlášení, změna, odhlášení) | https://www.cssz.gov.cz/web/cz/evidence-zamestnancu-prihlaseni-zmena-odhlaseni- | 2026-11-14 |
+| Read for the points the body cites to it: ČSSZ, JMHZ a odměny členů volebních komisí 2026 (CZK 4,500 small-scope threshold) | https://www.cssz.gov.cz/web/cz/-/jmhz-a-odmeny-clenu-volebnich-komisi-prehled-pravidel-pro-rok-2026 | 2026-11-14 |
+| Read for the points the body cites to it: ČSSZ, Vyslaní pracovníci (Regulation 883/2004, A1, 24 months) | https://www.cssz.gov.cz/vyslani-pracovnici | 2026-11-14 |
+| Read for Health insurance, total, Maximum health insurance base: VZP, Vyměřovací základ a výpočet pojistného (13.5%, minimum CZK 22,400, no maximum) | https://www.vzp.cz/platci/informace/zamestnavatel/vymerovaci-zaklad-a-vypocet-pojistneho | 2026-11-14 |
+| Read for Minimum health insurance base (the minimum wage): VZP, Minimální mzda (CZK 22,400, premium CZK 3,024) | https://www.vzp.cz/platci/informace/obzp/minimalni-mzda | 2026-11-14 |
+| Read for Health insurance split: VZP, Splatnost a další zásady pro platbu pojistného (one third and two thirds, due 1st to 20th) | https://www.vzp.cz/platci/informace/zamestnavatel/splatnost-a-dalsi-zasady-pro-platbu-pojistneho | 2026-11-14 |
+| Read for Late payment penalty (penále), social and health: VZP, Dlužné pojistné, penále, pokuty (0.0322% a day) | https://www.vzp.cz/platci/informace/zamestnavatel/dluzne-pojistne-penale-pokuty | 2026-11-14 |
+| Act No. 589/1992 Coll. (SSPA), consolidated: §§ 5, 7, 7a, 7b, 7e, 7f, 7g, 8, 9, 15a, 20 | https://e-sbirka.gov.cz/sb/1992/589 | 2026-11-14 |
+| Act No. 187/2006 Coll. (SIA), version in force 1 July to 31 December 2026: §§ 5, 6, 7, 7a, 9 | https://e-sbirka.gov.cz/sb/2006/187 | 2026-11-14 |
+| Act No. 592/1992 Coll. (HIPA), consolidated: §§ 2, 3, 5, 18, 25, 25a, 26 | https://e-sbirka.gov.cz/sb/1992/592 | 2026-11-14 |
+| Act No. 48/1997 Coll. (PHIA), consolidated: §§ 5, 9, 10 | https://e-sbirka.gov.cz/sb/1997/48 | 2026-11-14 |
+| Act No. 323/2025 Coll. (JMHZ Act): §§ 7, 8, 17, 19, 28, 34, 40 | https://e-sbirka.gov.cz/sb/2025/323 | 2026-11-14 |
 | MPSV Communication No. 396/2025 Coll. (DPP threshold CZK 12,000 from 1 January 2026) | https://e-sbirka.gov.cz/sb/2025/396 | 2026-10-23 |
 | MPSV Communication No. 184/2026 Coll. (DPP threshold CZK 12,500 from 1 January 2027) | https://e-sbirka.gov.cz/sb/2026/184 | 2026-10-23 |
 | MPSV Communication No. 356/2025 Coll. (minimum wage CZK 22,400 for 2026) | https://e-sbirka.gov.cz/sb/2025/356 | 2026-10-23 |
-| MPSV Communication No. 171/2026 Coll. (minimum wage CZK 24,900 for 2027) | https://e-sbirka.gov.cz/sb/2026/171 | 2026-10-23 |
-| Government Regulation No. 351/2013 Coll., § 2 (default interest: repo plus 8 points) | https://e-sbirka.gov.cz/sb/2013/351 | 2026-10-23 |
-| Czech National Bank, two-week repo rate history | https://www.cnb.cz/cs/faq/vyvoj_repo_historie.txt | 2026-10-23 |
+| Read for Minimum health insurance base (the minimum wage): MPSV Communication No. 171/2026 Coll. (minimum wage CZK 24,900 for 2027) | https://e-sbirka.gov.cz/sb/2026/171 | 2026-11-14 |
+| Government Regulation No. 351/2013 Coll., § 2 (default interest: repo plus 8 points) | https://e-sbirka.gov.cz/sb/2013/351 | 2026-11-14 |
+| Read for Late payment penalty (penále), social and health: Czech National Bank, two-week repo rate history | https://www.cnb.cz/cs/faq/vyvoj_repo_historie.txt | 2026-11-14 |
+| Read for Employer discount for qualifying part-time staff, Discount for a DPP worker in fruit or vegetable growing (employee's share): e-sbirka.gov.cz | https://e-sbirka.gov.cz/sb/1992/586/2026-08-01 | 2026-11-14 |
 
 Not yet confirmed: whether the health minimum base applies to DPP and DPČ workers who pass the earnings threshold (VZP describes the minimum for employees in an employment contract; HIPA § 3(8) does not list agreements among the exceptions, and no other statutory exclusion was found); how the employee's one third of the health premium is rounded when the total is not divisible by 3 (PHIA § 9(2) sets the split but not the rounding); the CZK 4,500 small-scope threshold for 2027 (no MPSV communication found).

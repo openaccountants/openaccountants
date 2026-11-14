@@ -1,14 +1,15 @@
 ---
 name: se-transfer-pricing
 description: "Swedish transfer pricing (internprissättning) for companies with cross-border related-party transactions, tax year 2026. Covers the arm's length rule in Inkomstskattelagen 14 kap. 19-20 §§ (korrigeringsregeln) and what counts as ekonomisk intressegemenskap; the documentation duty in Skatteförfarandelagen 39 kap. 15-16 f §§ and Skatteförfarandeförordningen 9 kap. 9-19 §§ (group part and company part, the 250 employees / SEK 450 million / SEK 400 million exemption, the SEK 5 million immaterial-transaction rule, timing, language, seven-year retention); country-by-country reports (SFL 33 a kap., SEK 7 billion, twelve months, notification); prissättningsbesked (APA) fees; MAP and the EU dispute law 2019:601; skattetillägg and reopening periods. Trigger on: internprissättning, transfer pricing Sweden, armlängdsprincipen, korrigeringsregeln, master file, local file, land-för-land-rapport, CbCR Sweden, prissättningsbesked, APA Sweden, ömsesidig överenskommelse. Out of scope: corporate tax computation and interest limitation (se-corporate-tax), cross-border individuals and exit tax (se-cross-border), VAT (sweden-vat-return)."
-version: 0.2
+version: 0.3
 jurisdiction: SE
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: transfer-pricing
+type: situation-rules
 ---
 
 # Sweden: transfer pricing (internprissättning), tax year 2026
@@ -175,14 +176,14 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Inkomstskattelag (1999:1229), consolidated to SFS 2026:1393 (14 kap. 19-20 §§, 24 kap. 10 a-10 f, 16-19 a §§, 65 kap. 10 §) | https://data.riksdagen.se/dokument/sfs-1999-1229.text | 2026-10-23 |
-| Skatteförfarandelag (2011:1244), consolidated to SFS 2026:1305 (33 a kap.; 39 kap. 2 a, 15-16 f §§; 49 kap. 4-15 §§; 51 kap. 1 §; 65 kap. 3-4, 8-9, 13 §§; 66 kap. 21, 27 §§) | https://data.riksdagen.se/dokument/sfs-2011-1244.text | 2026-10-23 |
-| Skatteförfarandeförordning (2011:1261), consolidated to SFS 2026:1570 (9 kap. 9-19 §§) | https://data.riksdagen.se/dokument/sfs-2011-1261.text | 2026-10-23 |
-| Lag (2009:1289) om prissättningsbesked vid internationella transaktioner | https://data.riksdagen.se/dokument/sfs-2009-1289.text | 2026-10-23 |
-| Förordning (2009:1295) om prissättningsbesked vid internationella transaktioner (7-9 §§, fees) | https://data.riksdagen.se/dokument/sfs-2009-1295.text | 2026-10-23 |
-| Lag (2019:601) om tvistlösningsförfarande i ärenden som rör skatteavtal inom Europeiska unionen | https://data.riksdagen.se/dokument/sfs-2019-601.text | 2026-10-23 |
-| Skatteverket: Internprissättning och vinstallokering | https://www.skatteverket.se/foretag/internationellt/internprissattningochvinstallokering.4.3dfca4f410f4fc63c8680005982.html | 2026-10-23 |
-| Skatteverket: Ansökan om prissättningsbesked | https://www.skatteverket.se/foretag/internationellt/ansokanomprissattningsbesked.4.58d555751259e4d661680003946.html | 2026-10-23 |
-| Skatteverket: Undanröjande av dubbelbeskattning (MAP, Arbitration Convention, Lag 2019:601) | https://www.skatteverket.se/foretagochorganisationer/skatter/internationellt/dubbelbeskattning/undanrojandeavdubbelbeskattning.106.233f91f71260075abe8800018011.html | 2026-10-23 |
+| Inkomstskattelag (1999:1229), consolidated to SFS 2026:1393 (14 kap. 19-20 §§, 24 kap. 10 a-10 f, 16-19 a §§, 65 kap. 10 §) | https://data.riksdagen.se/dokument/sfs-1999-1229.text | 2026-11-14 |
+| Skatteförfarandelag (2011:1244), consolidated to SFS 2026:1305 (33 a kap.; 39 kap. 2 a, 15-16 f §§; 49 kap. 4-15 §§; 51 kap. 1 §; 65 kap. 3-4, 8-9, 13 §§; 66 kap. 21, 27 §§) | https://data.riksdagen.se/dokument/sfs-2011-1244.text | 2026-11-14 |
+| Skatteförfarandeförordning (2011:1261), consolidated to SFS 2026:1570 (9 kap. 9-19 §§) | https://data.riksdagen.se/dokument/sfs-2011-1261.text | 2026-11-14 |
+| Read for APA term: Lag (2009:1289) om prissättningsbesked vid internationella transaktioner | https://data.riksdagen.se/dokument/sfs-2009-1289.text | 2026-11-14 |
+| Förordning (2009:1295) om prissättningsbesked vid internationella transaktioner (7-9 §§, fees) | https://data.riksdagen.se/dokument/sfs-2009-1295.text | 2026-11-14 |
+| Read for EU dispute resolution request: Lag (2019:601) om tvistlösningsförfarande i ärenden som rör skatteavtal inom Europeiska unionen | https://data.riksdagen.se/dokument/sfs-2019-601.text | 2026-11-14 |
+| Read for the points the body cites to it: Skatteverket: Internprissättning och vinstallokering | https://www.skatteverket.se/foretag/internationellt/internprissattningochvinstallokering.4.3dfca4f410f4fc63c8680005982.html | 2026-11-14 |
+| Read for the points the body cites to it: Skatteverket: Ansökan om prissättningsbesked | https://www.skatteverket.se/foretag/internationellt/ansokanomprissattningsbesked.4.58d555751259e4d661680003946.html | 2026-11-14 |
+| Read for MAP request: Skatteverket: Undanröjande av dubbelbeskattning (MAP, Arbitration Convention, Lag 2019:601) | https://www.skatteverket.se/foretagochorganisationer/skatter/internationellt/dubbelbeskattning/undanrojandeavdubbelbeskattning.106.233f91f71260075abe8800018011.html | 2026-11-14 |
 
 Not yet confirmed: how many days Skatteverket gives to hand over documentation on request in practice (the law sets no period); which treaties lack a three-year MAP deadline; the Swedish statute implementing the EU Arbitration Convention (90/436/EEC) was not read.

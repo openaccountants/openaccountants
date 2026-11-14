@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/na-company-formation"
   jurisdiction: "NA"
   tax_year: "2026"
-  last_updated: "2026-11-01"
+  last_updated: "2026-11-14"
 ---
 
-# Namibia Company Formation and Entity Choice v0.2
+# Namibia Company Formation and Entity Choice v0.3
 
 > **General reference only.** This skill is general tax reference material for AI-assisted workflows. Do not rely on it to file, pay or take a position without review by a qualified professional in Namibia.
 
@@ -89,15 +89,15 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| BIPA private companies (read: whole page) | https://www.bipa.na/business-registration/companies/private/ | 2026-11-01 |
-| BIPA close corporation (read: whole page) | https://www.bipa.na/business-registration/close-corporation/ | 2026-11-01 |
-| BIPA beneficial ownership (read: part) | https://www.bipa.na/beneficial-ownership/ | 2026-11-01 |
-| BIPA annual returns (read: list) | https://www.bipa.na/annual-returns/ | 2026-11-01 |
-| Companies Act 28 of 2004 (read: targeted) | https://www.lac.org.na/laws/annoSTAT/Companies%20Act%2028%20of%202004.pdf | 2026-11-01 |
-| Close Corporations Act (read: s.2) | https://www.lac.org.na/laws/annoSTAT/Close%20Corporations%20Act%2026%20of%201988.pdf | 2026-11-01 |
+| BIPA private companies: read in full | https://www.bipa.na/business-registration/companies/private/ | 2026-11-14 |
+| BIPA close corporation: read in full | https://www.bipa.na/business-registration/close-corporation/ | 2026-11-14 |
+| BIPA beneficial ownership: read in part, for the filing duty | https://www.bipa.na/beneficial-ownership/ | 2026-11-14 |
+| BIPA annual returns: read for the list of returns and fees | https://www.bipa.na/annual-returns/ | 2026-11-14 |
+| Companies Act 28 of 2004: read for the targeted sections on 2026-11-01 | https://www.lac.org.na/laws/annoSTAT/Companies%20Act%2028%20of%202004.pdf | 2026-11-01; tried again 2026-11-14, lac.org.na refused the script (406) |
+| Close Corporations Act: read for s.2 on 2026-11-01 | https://www.lac.org.na/laws/annoSTAT/Close%20Corporations%20Act%2026%20of%201988.pdf | 2026-11-01; tried again 2026-11-14, lac.org.na refused the script (406) |
 
 Not yet confirmed: No minimum share capital; audit relief for private companies and CCs; typical timeline of days to weeks (old skill, not on pages read); annual duty amount and due date; fee amounts.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-01. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `na-company-formation` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/na-company-formation. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `na-company-formation` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/na-company-formation. If neither is available, confirm every figure against the official source pages cited above before relying on it.
