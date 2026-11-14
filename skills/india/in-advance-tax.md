@@ -31,6 +31,8 @@ This skill covers advance tax in India: who must pay it during the year, the ins
 
 ## The method, step by step
 
+**Section 425 limitation applying throughout this skill:** every ordinary-instalment deferment table, example, EC and test below is a conditional working under the old version's interpretation described in section 4.4. Its subsection (2)/(3) construction is not confirmed here. Do not finalize a section 425 filing amount from these illustrations; refer the construction for professional confirmation. The separately sourced advance-tax dates and section 424 rules remain distinct.
+
 1. Fix the year and the law: tax year 2026-27 (1 April 2026 to 31 March 2027), Income-tax Act, 2025 (https://egazette.gov.in/WriteReadData/2025/265620.pdf). For 2025-26 or earlier, refer (R-IN-AT-3).
 2. Check the senior citizen exemption under section 403(3): resident, 60 or more at any time in the tax year, AND no business or profession income. If both hold, stop: no advance tax (https://egazette.gov.in/WriteReadData/2025/265620.pdf).
 3. Estimate current income and compute the tax for the year under the chosen regime (rates in `india-income-tax`). Deduct the tax deductible or collectible at source on income in the estimate (section 405(1)) (https://egazette.gov.in/WriteReadData/2025/265620.pdf).
@@ -79,13 +81,13 @@ Read this whole section before computing anything. Internal Tier 1/2/3 reference
 | Section 425(3): presumptive taxpayer (serial 1 or 3) short at 15 March | 1% | "simple interest at the rate of 1% on the amount of shortfall from the tax due on returned income" | https://egazette.gov.in/WriteReadData/2025/265620.pdf |
 | Section 423: interest for a late or missing return, I = 1% x A x T (A = tax on which interest is payable, T = months) | 1% | "I = 1% x A x T" | https://egazette.gov.in/WriteReadData/2025/265620.pdf |
 | Presumptive business, section 58(2) serial 1: turnover or gross receipts limit | INR 20,000,000 (in words on the page) | "(a) Does not" ... "exceed two" ... "crore rupees" (columns interleaved) | https://egazette.gov.in/WriteReadData/2025/265620.pdf |
-| Presumptive business, serial 1: higher limit where cash receipts do not exceed 5% of the total | INR 30,000,000 (in words on the page) | "exceed three receipts which is against serial crore rupees" | https://egazette.gov.in/WriteReadData/2025/265620.pdf |
+| Presumptive business, serial 1: higher limit where cash receipts do not exceed 5% of the total; non-account-payee cheques/drafts count as cash under section 58(9) | INR 30,000,000 (in words on the page) | "exceed three receipts which is against serial crore rupees" | https://egazette.gov.in/WriteReadData/2025/265620.pdf |
 | Presumptive business, serial 1: cash receipts share for the higher limit | 5% | "in cash, does not respect of that tax exceed 5% of year; the total" | https://egazette.gov.in/WriteReadData/2025/265620.pdf |
-| Presumptive business, serial 1: deemed profit on turnover received by bank or other specified non-cash mode | 6% | "(i) 6% of total business (b) does not turnover or gross" | https://egazette.gov.in/WriteReadData/2025/265620.pdf |
-| Presumptive business, serial 1: deemed profit on the rest of the turnover | 8% | "(ii) 8% of total turnover or turnover or gross" | https://egazette.gov.in/WriteReadData/2025/265620.pdf |
+| Presumptive business, serial 1: minimum profit on turnover received by specified banking/online mode during the tax year or by the section 263(1) return due date; compare with higher actual profit claimed | 6% | "(i) 6% of total business (b) does not turnover or gross" | https://egazette.gov.in/WriteReadData/2025/265620.pdf |
+| Presumptive business, serial 1: minimum profit on the rest of the turnover; compare aggregate computed profit with higher actual profit claimed | 8% | "(ii) 8% of total turnover or turnover or gross" | https://egazette.gov.in/WriteReadData/2025/265620.pdf |
 | Presumptive profession, serial 3 (specified profession, section 62(4)): gross receipts limit | INR 5,000,000 (in words on the page) | "not exceed fifty receipts or profit as referred lakh rupees;" | https://egazette.gov.in/WriteReadData/2025/265620.pdf |
-| Presumptive profession, serial 3: higher limit where cash does not exceed 5% of gross receipts | INR 7,500,000 (in words on the page) | "seventy-five higher. lakh rupees" | https://egazette.gov.in/WriteReadData/2025/265620.pdf |
-| Presumptive profession, serial 3: deemed profit | 50% | "3. Specified Specified (a) Does 50% of the gross" | https://egazette.gov.in/WriteReadData/2025/265620.pdf |
+| Presumptive profession, serial 3: higher limit where cash does not exceed 5% of gross receipts; non-account-payee cheques/drafts count as cash under section 58(9) | INR 7,500,000 (in words on the page) | "seventy-five higher. lakh rupees" | https://egazette.gov.in/WriteReadData/2025/265620.pdf |
+| Presumptive profession, serial 3: minimum deemed profit or higher actual profit claimed | 50% | "3. Specified Specified (a) Does 50% of the gross" | https://egazette.gov.in/WriteReadData/2025/265620.pdf |
 
 The Gazette prints multi-column tables; quotes above retain its extracted column ordering. Figures are numerals; wording-only statutory values are labelled. The Finance Act, 2026 amendments were also read for current sections 263, 423-425 and 428.
 
@@ -95,10 +97,10 @@ For tax year 2026-27 these dates fall in 2027. They matter here because section 
 
 | Who | Due date | Note (verbatim) | Official source |
 | --- | --- | --- |---|
-| Company; or an assessee whose accounts must be audited, where section 172 does not apply | 31 October | "2. (i) Company; Where the 31st October." | https://egazette.gov.in/WriteReadData/2026/271439.pdf |
-| Business or profession income with accounts not required to be audited, and partners of such firms | 31 August | "3. (i) Assessee having income Where the 31st August." | https://egazette.gov.in/WriteReadData/2026/271439.pdf |
-| Any other assessee (for example salary, rent, capital gains, no business income) | 31 July | "4. Any other assessee. 31st July." | https://egazette.gov.in/WriteReadData/2026/271439.pdf |
-| Where section 172 (transfer pricing report) applies | 30 November | "Where the 30th November." | https://egazette.gov.in/WriteReadData/2026/271439.pdf |
+| Company; assessee with accounts audited under this Act or any other law; partner of an audited firm, or that partner's spouse if section 10 applies; where section 172 does not apply | 31 October | "2. (i) Company; Where the 31st October." | https://egazette.gov.in/WriteReadData/2026/271439.pdf |
+| Business/profession assessee whose accounts need no audit under this Act or other law; partner of such an unaudited firm, or that partner's spouse if section 10 applies; where section 172 does not apply | 31 August | "3. (i) Assessee having income Where the 31st August." | https://egazette.gov.in/WriteReadData/2026/271439.pdf |
+| Any other assessee, after excluding the preceding partner/spouse, audit, business and section 172 categories | 31 July | "4. Any other assessee. 31st July." | https://egazette.gov.in/WriteReadData/2026/271439.pdf |
+| Where section 172 applies, including partners of the firm and a partner's spouse if section 10 applies | 30 November | "Where the 30th November." | https://egazette.gov.in/WriteReadData/2026/271439.pdf |
 
 **Paying on the e-Filing portal (e-Pay Tax)**
 
@@ -237,7 +239,7 @@ The choice between the default regime in section 202 and the old regime changes 
 
 #### 4.7 Worked examples (hypothetical amounts)
 
-All amounts in these examples are hypothetical and in INR. The resident individual is under 60, has no presumptive income, and has no TDS or TCS, so the advance tax, the tax due on returned income and the assessed tax are the same figure. Interest is computed with the rates in the Section 1 table.
+All amounts in these examples are hypothetical and in INR. For C, assume the INR 60,000 is the tax component and all INR 3,000 interest is also paid on 20 July 2027, with no other interest/fee due: total cash INR 63,000 (derived). Section 266(3) allocates an inadequate payment first to fees, then interest, then tax; paying only INR 60,000 total cash would not clear the tax principal. Ordinary section 425 examples remain conditional on section 4.4's construction. The resident individual is under 60, has no presumptive income, and has no TDS or TCS, so the advance tax, the tax due on returned income and the assessed tax are the same figure. Interest is computed with the rates in the Section 1 table.
 
 | Example | Hypothetical amount (INR) | How it is computed | Official source |
 | --- | --- | --- |---|
@@ -252,7 +254,7 @@ All amounts in these examples are hypothetical and in INR. The resident individu
 | B. Section 425 interest in total (no March shortfall; section 424 does not apply because the whole amount was paid by 31 March) | 9,720 | 1,080 + 3,240 + 5,400 | https://egazette.gov.in/WriteReadData/2025/265620.pdf |
 | C. Instalments A paid on time to 15 December 2026, nothing more by 31 March 2027: section 424 share test | 216,000 | 90% of 240,000; 180,000 paid is less, so section 424 applies | https://egazette.gov.in/WriteReadData/2025/265620.pdf |
 | C. Section 424 shortfall | 60,000 | 240,000 - 180,000 | https://egazette.gov.in/WriteReadData/2025/265620.pdf |
-| C. Section 424 interest if the 60,000 is paid as self-assessment tax on 20 July 2027 | 2,400 | 1% x 60,000 x 4 months (April, May, June, July 2027; part of a month counts) | https://egazette.gov.in/WriteReadData/2025/265620.pdf |
+| C. Section 424 interest if the 60,000 tax component plus all interest/fees is paid on 20 July 2027, so no principal remains | 2,400 | 1% x 60,000 x 4 months (April, May, June, July 2027; part of a month counts) | https://egazette.gov.in/WriteReadData/2025/265620.pdf |
 | C. Section 425 interest for March | 600 | 1% of 60,000 | https://egazette.gov.in/WriteReadData/2025/265620.pdf |
 | D. As C, but 216,000 paid by 15 March 2027: section 424 | nil | 216,000 is not less than 90% of 240,000 | https://egazette.gov.in/WriteReadData/2025/265620.pdf |
 | D. Section 425 interest for March | 240 | 1% of 24,000 (240,000 - 216,000) | https://egazette.gov.in/WriteReadData/2025/265620.pdf |
@@ -483,7 +485,7 @@ expected:
   total_interest: 9720
 ```
 
-**Cases C and D: the decision at the default threshold.** With assessed tax INR 240,000, paying INR 180,000 by year end leaves INR 60,000 short. Payment of that balance on 20 July 2027 gives section 424 interest for 4 months/parts, INR 2,400, plus March deferment INR 600. Paying INR 216,000 by the March instalment instead meets exactly the 90% test, so no section 424 interest; the INR 24,000 March shortfall still gives INR 240 deferment interest. If the top-up to INR 216,000 occurs after the March instalment but by year end, the default test is still met but March deferment remains INR 600.
+**Cases C and D: the decision at the default threshold.** With assessed tax INR 240,000, paying INR 180,000 by year end leaves INR 60,000 short. Payment on 20 July 2027 of that tax balance **plus** all interest gives section 424 interest for 4 months/parts, INR 2,400, plus March deferment INR 600: total cash INR 63,000 (derived), assuming no other fee/interest. Paying only the tax-balance amount as total cash would leave principal after section 266(3)'s fee/interest allocation. Paying INR 216,000 by the March instalment instead meets exactly the 90% test, so no section 424 interest; the INR 24,000 March shortfall still gives INR 240 deferment interest. If the top-up to INR 216,000 occurs after the March instalment but by year end, the default test is still met but March deferment remains INR 600.
 
 ```oa-check
 name: Default threshold versus deferment decision
@@ -499,6 +501,7 @@ steps:
   march_interest_C: shortfall_C * 0.01
   shortfall_D: assessed_tax - threshold_paid
   march_interest_D: shortfall_D * 0.01
+  total_cash_C: shortfall_C + default_interest_C + march_interest_C
 expected:
   default_threshold: 216000
   shortfall_C: 60000
@@ -506,6 +509,7 @@ expected:
   march_interest_C: 600
   shortfall_D: 24000
   march_interest_D: 240
+  total_cash_C: 63000
 ```
 
 ## When to refuse or refer
@@ -529,7 +533,7 @@ The most up-to-date version of this Guide is maintained on the OpenAccountants s
 
 | Official source | Read for | Read on |
 |---|---|---|
-| https://egazette.gov.in/WriteReadData/2025/265620.pdf | Read for ss.58(2),(9),(11),403-410,412,423-425: presumptive thresholds and receipt conditions, advance tax base, senior exemption, orders, dates, default/deferment, unexpected income and penalty limits; original Gazette read with Finance Act amendments | 2026-11-14 |
+| https://egazette.gov.in/WriteReadData/2025/265620.pdf | Read for ss.58(2),(9),(11),266(1)-(3),403-410,411(7),412,423-425: presumptive thresholds and receipt conditions, advance tax base, senior exemption, orders, dates, default/deferment, unexpected income and penalty limits; original Gazette read with Finance Act amendments | 2026-11-14 |
 | https://egazette.gov.in/WriteReadData/2026/271439.pdf | Read for s.66 substituting s.263(1)(c) and revised-return timing; ss.93-96 amending interest-credit references and late fees; s.40 amendment to s.58(11) | 2026-11-14 |
 | https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-03/En-Notified-IT-Rules-2026-20-03-2026.pdf | Read for rules222-223: Form151 demand and Form152 lower estimate; rule75-76 separately read for cross-border referral context | 2026-11-14 |
 | https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/e-pay-tax | Read for Q4-15 and Q38: access, CRN, modes, restricted bank-counter use, mistaken payments, validity, receipt and cash limit | 2026-11-14 |
