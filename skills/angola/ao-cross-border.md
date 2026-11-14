@@ -4,14 +4,15 @@ description: "Angola cross-border tax for tax year 2026, built from Lei 14/25 (t
 jurisdiction: AO
 category: cross-border
 tax_year: 2026
-last_updated: 2026-11-01
-version: 0.1
+last_updated: 2026-11-14
+type: situation-rules
+version: 0.2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: cross-border
 ---
 
-# Angola Cross-Border Tax v0.1
+# Angola Cross-Border Tax v0.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -28,7 +29,6 @@ Payments between Angola and abroad: investment income under IAC, non-resident wo
 | Section B, listed on a regulated market, or compensation for suspended activity | 5% | 2026 | https://portaldocontribuinte.minfin.gov.ao/impostos-e-taxas/imposto-sobre-aplicacao-de-capitais |
 | IAC rate after Lei 14/25 | Art 41(3) revokes art 27(3) of the IAC Code, with the new rate set at 10%. Which income it reaches was not read in the code | 2026 | https://www.ucm.minfin.gov.ao/cs/groups/public/documents/document/aw41/mje2/~edisp/minfin5216784.pdf |
 | Dividend exemption | Angolan company holding 25% or more for over a year before distribution | 2026 | https://portaldocontribuinte.minfin.gov.ao/impostos-e-taxas/imposto-sobre-aplicacao-de-capitais |
-| Reduced rates under incentive packages | Dividends and royalties 2.5% or 0%; interest 10% or 2.5% in certain cases (old version) | 2026 | unverified: no official text opened |
 
 ## The base
 
@@ -101,4 +101,4 @@ expected:
 | AGT, IAC page (whole page read; undated) | https://portaldocontribuinte.minfin.gov.ao/impostos-e-taxas/imposto-sobre-aplicacao-de-capitais | 2026-11-01 |
 | AGT quick guide, tax residence certificate (read in part: menu step) | https://portaldocontribuinte.minfin.gov.ao/pdfs/guia-rapido/acordos-dupla-tributacao/guia-rapido-adt-certificado-de-residencia-fiscal.pdf | 2026-11-01 |
 
-Not yet confirmed: Whether section A interest stays at 15% after Lei 14/25 art 41(3); treaty list and rates; CEOC rate; incentive rates; non-resident service withholding.
+Not yet confirmed: Whether section A interest stays at 15% after Lei 14/25 art 41(3); treaty list and rates; CEOC rate; incentive rates; non-resident service withholding; reduced dividend, royalty and interest rates under incentive packages (2.5% or 0%; 10% or 2.5%, old version).
