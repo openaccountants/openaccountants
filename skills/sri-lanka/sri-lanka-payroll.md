@@ -101,7 +101,7 @@ Built from the law: not yet approved by an accountant. APIT figures come from th
 | **Included** | Salary/wages/fees; cost-of-living and special living allowances; holiday payments; cash value of food supplied by the employer; food allowances; commissions; piece-rate / contract payments: *EPF Employer FAQ* |
 | **Excluded** | Overtime pay; reimbursable travelling expenses; incentive / bonus payments: *EPF Employer FAQ* |
 
-- **EPF base ≠ APIT base**: APIT (Section 2) is computed on full regular profits including overtime and many allowances; the EPF base **excludes** overtime, reimbursed travel and bonuses. Compute the two bases separately; never reuse the gross figure blindly.  _(EPF Employer FAQ)_
+- **EPF base ≠ APIT base**: APIT (rates table) is computed on full regular profits including overtime and many allowances; the EPF base **excludes** overtime, reimbursed travel and bonuses. Compute the two bases separately; never reuse the gross figure blindly.  _(EPF Employer FAQ)_
 
 
 ### Transaction / Payment Pattern Library
@@ -138,7 +138,7 @@ Deterministic mapping of Sri Lankan bank-statement narrations to payroll classif
 
 ### Payslip examples
 
-All examples use **APIT Table 01** (Section 2.2), **EPF 8%/12%** (Section 3.1) and **ETF 3%** (Section 4). For simplicity each example assumes the EPF base equals the APIT gross (i.e. no overtime/bonus); where overtime or a bonus exists, the EPF base would be lower: see the note after Example 6. Every figure recomputed end-to-end.
+All examples use **APIT Table 01** (rates table), **EPF 8%/12%** (rates table) and **ETF 3%** (rates table). For simplicity each example assumes the EPF base equals the APIT gross (i.e. no overtime/bonus); where overtime or a bonus exists, the EPF base would be lower: see the note after Example 6. Every figure recomputed end-to-end.
 
 #### Example 1: Minimum-wage earner (gross LKR 30,000/month, from 1 January 2026)
 
@@ -203,7 +203,7 @@ Statement line: `STAFF SAL EMP001 ... 27,600`
 
 ### Tier 1 Rules (deterministic, always apply)
 
-- **Tier 1 Rules**: 1. APIT is computed on **gross monthly regular profits** using **Table 01** (Section 2.2) for resident / Sri Lankan-citizen-non-resident primary employment. 2. The personal relief is **LKR 150,000/month**, already built into the Table 01 formula: never deduct it twice. 3. EPF = **8% employee + 12% employer = 20%** of **total earnings** (Section 3.1), **no floor, no ceiling**. 4. ETF = **3% employer-only** of total earnings (Section 4): **never** deduct ETF from the employee. 5. The **EPF/ETF base excludes** overtime, reimbursed travel and bonuses; the **APIT base includes** them. Compute the two bases separately. 6. Currency is **LKR** only. 7. APIT is remitted by the **15th of the following month**; EPF and ETF by the **last working day of the following month**. 8. The minimum monthly wage is **LKR 27,000** (LKR 30,000 from 1 Jan 2026): flag any gross below it. 9. Every output is labelled **provisional / pending accountant sign-off**.
+- **Tier 1 Rules**: 1. APIT is computed on **gross monthly regular profits** using **Table 01** (rates table) for resident / Sri Lankan-citizen-non-resident primary employment. 2. The personal relief is **LKR 150,000/month**, already built into the Table 01 formula: never deduct it twice. 3. EPF = **8% employee + 12% employer = 20%** of **total earnings** (rates table), **no floor, no ceiling**. 4. ETF = **3% employer-only** of total earnings (rates table): **never** deduct ETF from the employee. 5. The **EPF/ETF base excludes** overtime, reimbursed travel and bonuses; the **APIT base includes** them. Compute the two bases separately. 6. Currency is **LKR** only. 7. APIT is remitted by the **15th of the following month**; EPF and ETF by the **last working day of the following month**. 8. The minimum monthly wage is **LKR 27,000** (LKR 30,000 from 1 Jan 2026): flag any gross below it. 9. Every output is labelled **provisional / pending accountant sign-off**.
 
 
 ### Tier 2 Catalogue (reviewer judgement required)
@@ -396,7 +396,7 @@ Suggested column layout for a monthly Sri Lanka payroll working paper (one row p
 | D | APIT gross / regular profits (LKR) | input |
 | E | EPF/ETF base: total earnings (LKR) | input (exclude OT, reimbursed travel, bonus) |
 | F | APIT band applied | lookup on D |
-| G | APIT (LKR) | Table 01 formula (Section 2.2) |
+| G | APIT (LKR) | Table 01 formula (rates table) |
 | H | EPF employee 8% (LKR) | `=ROUND(E*0.08,2)` |
 | I | EPF employer 12% (LKR) | `=ROUND(E*0.12,2)` |
 | J | ETF employer 3% (LKR) | `=ROUND(E*0.03,2)` |
@@ -404,7 +404,7 @@ Suggested column layout for a monthly Sri Lanka payroll working paper (one row p
 | L | Total employer cost (LKR) | `=D+I+J` |
 | M | Remittance month | APIT 15th; EPF/ETF last working day |
 
-- **APIT Table 01 formula (Excel)**: =IF(D<=150000,0, IF(D<=233333,D*0.06-9000, IF(D<=275000,D*0.18-37000, IF(D<=316667,D*0.24-53500, IF(D<=358333,D*0.30-72500, D*0.36-94000)))))  _(Section 2.2)_
+- **APIT Table 01 formula (Excel)**: =IF(D<=150000,0, IF(D<=233333,D*0.06-9000, IF(D<=275000,D*0.18-37000, IF(D<=316667,D*0.24-53500, IF(D<=358333,D*0.30-72500, D*0.36-94000)))))  _(rates table)_
 
 Reconcile column G against the worked examples before relying on the sheet. Note: K subtracts APIT and EPF employee only; ETF and EPF employer are employer costs (column L), not employee deductions.
 

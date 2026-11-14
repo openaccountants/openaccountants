@@ -254,19 +254,19 @@ Classification: Payroll cost (employer share deductible). FLAG: confirm employer
 
 #### 5.1 The wholly-and-exclusively / business-nexus test
 
-- **Business-nexus test** : An expense is deductible only if incurred in producing the business income. Mixed-use expenses must be apportioned on a reasonable, documented basis. Domestic/private expenses are not deductible.  _(Inland Revenue Act No. 24 of 2017 (deductions provisions))_
+- **Business-nexus test**: An expense is deductible only if incurred in producing the business income. Mixed-use expenses must be apportioned on a reasonable, documented basis. Domestic/private expenses are not deductible.  _(Inland Revenue Act No. 24 of 2017 (deductions provisions))_
 
 #### 5.2 Income recognition
 
-- **Income recognition** : All business income goes into assessable income. Where the individual is VAT-registered, report income net of the 18% VAT collected (VAT is a liability to IRD, not income). Employment income subject to APIT is included but reconciled against the APIT certificate (the APIT already deducted is a credit).
+- **Income recognition**: All business income goes into assessable income. Where the individual is VAT-registered, report income net of the 18% VAT collected (VAT is a liability to IRD, not income). Employment income subject to APIT is included but reconciled against the APIT certificate (the APIT already deducted is a credit).
 
 #### 5.3 Personal relief
 
-- **Personal relief application detail** : Deduct Rs. 1,800,000/year from assessable income before applying the slabs (residents and non-resident citizens only). Relief does NOT apply against investment-asset gains. Monthly equivalent Rs. 150,000 is used in APIT.  _(IRD PN/IT/2025-01 (26.03.2025))_
+- **Personal relief application detail**: Deduct Rs. 1,800,000/year from assessable income before applying the slabs (residents and non-resident citizens only). Relief does NOT apply against investment-asset gains. Monthly equivalent Rs. 150,000 is used in APIT.  _(IRD PN/IT/2025-01 (26.03.2025))_
 
 #### 5.4 Capital allowances (depreciation)
 
-- **Capital allowances research gap** : Capital assets are not fully expensed in year one; they are written off over time via capital allowances under the Inland Revenue Act No. 24 of 2017. [RESEARCH GAP: reviewer to confirm the current per-class capital-allowance rates and the depreciable-asset classes under IRA No. 24 of 2017 before applying any depreciation figure.] Until confirmed, flag every capital asset for reviewer treatment rather than guessing a rate.  _(Inland Revenue Act No. 24 of 2017)_
+- **Capital allowances research gap**: Capital assets are not fully expensed in year one; they are written off over time via capital allowances under the Inland Revenue Act No. 24 of 2017. [RESEARCH GAP: reviewer to confirm the current per-class capital-allowance rates and the depreciable-asset classes under IRA No. 24 of 2017 before applying any depreciation figure.] Until confirmed, flag every capital asset for reviewer treatment rather than guessing a rate.  _(Inland Revenue Act No. 24 of 2017)_
 
 
 #### 5.7 Non-deductible expenses
@@ -286,19 +286,19 @@ Classification: Payroll cost (employer share deductible). FLAG: confirm employer
 
 #### 6.1 Home office deduction
 
-- **Home office deduction rules** : - Calculate the proportion of the home used wholly for business (dedicated room / floor area). - Apply that percentage to rent, electricity (CEB/LECO), water (NWSDB), broadband. - A dual-use room does not qualify. Conservative default: 0% until reviewer confirms a dedicated workspace and basis. Flag for reviewer: confirm room/floor-area basis and that the space is genuinely dedicated.
+- **Home office deduction rules**: - Calculate the proportion of the home used wholly for business (dedicated room / floor area). - Apply that percentage to rent, electricity (CEB/LECO), water (NWSDB), broadband. - A dual-use room does not qualify. Conservative default: 0% until reviewer confirms a dedicated workspace and basis. Flag for reviewer: confirm room/floor-area basis and that the space is genuinely dedicated.
 
 #### 6.2 Motor vehicle business use
 
-- **Motor vehicle business use rules** : - Only the business-use percentage of fuel, insurance, maintenance and depreciation is deductible. - Requires a mileage log. Conservative default: 0% business use until a log is provided. Flag for reviewer: confirm business percentage and capital-allowance rate (see Section 5.4 research gap).
+- **Motor vehicle business use rules**: - Only the business-use percentage of fuel, insurance, maintenance and depreciation is deductible. - Requires a mileage log. Conservative default: 0% business use until a log is provided. Flag for reviewer: confirm business percentage and capital-allowance rate (see Section 5.4 research gap).
 
 #### 6.3 EPF: Employees' Provident Fund
 
-- **EPF rules** : - Employee: 8% of total monthly earnings (withheld from salary). - Employer: 12% of total monthly earnings. - Total: 20%. No statutory salary ceiling/floor on the percentage (applies to "total earnings"). - Remit on or before the last working day of the following month. - Late surcharge (escalating on the contribution): 1-10 days 5%; 11 days-1 month 15%; 1-3 months 20%; 3-6 months 30%; 6-12 months 40%; over 12 months 50%. Plus 2% surcharge for incomplete details.  _(EPF (CBSL) Employer FAQ: https://epf.lk/?page_id=811 ; CBSL: https://www.cbsl.gov.lk/en/employees-provident-fund)_
+- **EPF rules**: - Employee: 8% of total monthly earnings (withheld from salary). - Employer: 12% of total monthly earnings. - Total: 20%. No statutory salary ceiling/floor on the percentage (applies to "total earnings"). - Remit on or before the last working day of the following month. - Late surcharge (escalating on the contribution): 1-10 days 5%; 11 days-1 month 15%; 1-3 months 20%; 3-6 months 30%; 6-12 months 40%; over 12 months 50%. Plus 2% surcharge for incomplete details.  _(EPF (CBSL) Employer FAQ: https://epf.lk/?page_id=811 ; CBSL: https://www.cbsl.gov.lk/en/employees-provident-fund)_
 
 #### 6.4 ETF: Employees' Trust Fund
 
-- **ETF rules** : - Employer: 3% of total monthly earnings. Employee: nil: the employer may not deduct ETF from the employee. - Remit on or before the last working day of the succeeding month. - Late surcharge: same escalating 5% -> 50% scale; late half-yearly returns add a 1% surcharge per delayed month on face value.  _(ETF Board Employers FAQ: https://etfb.lk/employers-faq/)_
+- **ETF rules**: - Employer: 3% of total monthly earnings. Employee: nil: the employer may not deduct ETF from the employee. - Remit on or before the last working day of the succeeding month. - Late surcharge: same escalating 5% -> 50% scale; late half-yearly returns add a 1% surcharge per delayed month on face value.  _(ETF Board Employers FAQ: https://etfb.lk/employers-faq/)_
 
 #### 6.5 Gratuity
 
@@ -306,11 +306,11 @@ Classification: Payroll cost (employer share deductible). FLAG: confirm employer
 
 #### 6.6 Foreign-currency / foreign-source concession (max 15%)
 
-- **Foreign-currency concession rule** : The max-15% rate on foreign-source income, or service income earned in/remitted via foreign currency through a bank, depends on remittance routing and documentation. Conservative default: apply ordinary progressive rates and FLAG; do not auto-apply 15% (R-LK-4).
+- **Foreign-currency concession rule**: The max-15% rate on foreign-source income, or service income earned in/remitted via foreign currency through a bank, depends on remittance routing and documentation. Conservative default: apply ordinary progressive rates and FLAG; do not auto-apply 15% (R-LK-4).
 
 #### 6.7 Bad debt write-off
 
-- **Bad debt write-off rule** : Deductible only if the income was previously brought to account, recovery steps were taken, and the debt is genuinely irrecoverable. Flag for reviewer to confirm all three.
+- **Bad debt write-off rule**: Deductible only if the income was previously brought to account, recovery steps were taken, and the debt is genuinely irrecoverable. Flag for reviewer to confirm all three.
 
 
 ## Boundary and exception table
@@ -427,16 +427,16 @@ Expected: include as business income at progressive rates by default; FLAG for r
 
 #### Required Inputs
 
-- **Minimum viable / Recommended / Ideal / Refusal** : Minimum viable: bank statement for the full year of assessment (1 Apr: 31 Mar) in CSV, PDF, or pasted text, plus confirmation of residence status (resident / non-resident citizen / non-citizen non-resident) and source of income (employment APIT, self-employment/business, or both). Recommended: sales invoices, purchase invoices/receipts, EPF/ETF contribution records, prior-year return or assessment, APIT certificate(s) from employer(s), withholding/AIT certificates (interest, rent, dividends), TIN. Ideal: complete income and expenditure statement, asset register, Statement of Estimated Tax (SET) and quarterly instalment receipts, foreign-currency remittance evidence (for the 15% concession). Refusal if minimum is missing: SOFT WARN. No bank statement at all = hard stop. Bank statement without invoices = proceed with reviewer warning: "This computation was produced from a bank statement alone. The reviewer must verify all deductions are supported by valid documentation and that income source classifications (especially foreign-currency concessions and capital gains) are correct."
+- **Minimum viable / Recommended / Ideal / Refusal**: Minimum viable: bank statement for the full year of assessment (1 Apr: 31 Mar) in CSV, PDF, or pasted text, plus confirmation of residence status (resident / non-resident citizen / non-citizen non-resident) and source of income (employment APIT, self-employment/business, or both). Recommended: sales invoices, purchase invoices/receipts, EPF/ETF contribution records, prior-year return or assessment, APIT certificate(s) from employer(s), withholding/AIT certificates (interest, rent, dividends), TIN. Ideal: complete income and expenditure statement, asset register, Statement of Estimated Tax (SET) and quarterly instalment receipts, foreign-currency remittance evidence (for the 15% concession). Refusal if minimum is missing: SOFT WARN. No bank statement at all = hard stop. Bank statement without invoices = proceed with reviewer warning: "This computation was produced from a bank statement alone. The reviewer must verify all deductions are supported by valid documentation and that income source classifications (especially foreign-currency concessions and capital gains) are correct."
 
 #### Refusal Catalogue
 
-- **R-LK-1** : Residence status unknown. "Residence status determines whether the Rs. 1,800,000 personal relief applies and which rates are used. A non-citizen non-resident does not get the relief; a non-resident citizen does. This skill cannot compute tax without it. Please confirm."
-- **R-LK-2** : Companies / partnerships filing. "This skill covers individuals and sole proprietors. Partnership-level returns and company income tax (corporate rates) are out of scope: escalate to a Sri Lankan tax professional."
-- **R-LK-3** : Investment-asset (capital) gains. "Gains on realisation of investment assets are taxed at 15% from 3 June 2026 (10% before) and the personal relief does NOT apply to them. The base computation requires asset cost, proceeds, and dates. Escalate to a reviewer for capital gains."
-- **R-LK-4** : Foreign-source / foreign-currency concessions. "The max-15% concessions for foreign-source income or foreign-currency service income remitted through a bank depend on remittance evidence and bank routing. Flag and escalate: do not apply the 15% cap without confirmation."
-- **R-LK-5** : Arrears / enforcement / penalties. "Client has outstanding tax, EPF/ETF arrears, or is subject to IRD enforcement. Escalating surcharges (EPF/ETF up to 50%) and income-tax penalties/interest apply. Escalate to a Sri Lankan tax professional immediately."
-- **R-LK-6** : VAT / SSCL return requested. "This skill covers personal income tax only. VAT and the Social Security Contribution Levy (SSCL) are separate turnover taxes: see Section 10 for thresholds, then use the relevant indirect-tax skill."
+- **R-LK-1**: Residence status unknown. "Residence status determines whether the Rs. 1,800,000 personal relief applies and which rates are used. A non-citizen non-resident does not get the relief; a non-resident citizen does. This skill cannot compute tax without it. Please confirm."
+- **R-LK-2**: Companies / partnerships filing. "This skill covers individuals and sole proprietors. Partnership-level returns and company income tax (corporate rates) are out of scope: escalate to a Sri Lankan tax professional."
+- **R-LK-3**: Investment-asset (capital) gains. "Gains on realisation of investment assets are taxed at 15% from 3 June 2026 (10% before) and the personal relief does NOT apply to them. The base computation requires asset cost, proceeds, and dates. Escalate to a reviewer for capital gains."
+- **R-LK-4**: Foreign-source / foreign-currency concessions. "The max-15% concessions for foreign-source income or foreign-currency service income remitted through a bank depend on remittance evidence and bank routing. Flag and escalate: do not apply the 15% cap without confirmation."
+- **R-LK-5**: Arrears / enforcement / penalties. "Client has outstanding tax, EPF/ETF arrears, or is subject to IRD enforcement. Escalating surcharges (EPF/ETF up to 50%) and income-tax penalties/interest apply. Escalate to a Sri Lankan tax professional immediately."
+- **R-LK-6**: VAT / SSCL return requested. "This skill covers personal income tax only. VAT and the Social Security Contribution Levy (SSCL) are separate turnover taxes: use `sri-lanka-vat` or `sri-lanka-sscl` for thresholds and returns."
 
 
 ### PROHIBITIONS
@@ -553,18 +553,18 @@ REVIEWER FLAGS:
 | MAASIKA | Monthly (pay) | Salary: employment income |
 | WHT / AIT | Withholding / advance income tax | Tax credit, gross up income |
 | APIT | Advance Personal Income Tax | Employer-deducted advance tax (PAYE-equivalent) |
-| EPF / ETF | Provident / Trust Fund | Statutory payroll contribution (Section 6) |
-| SSCL | Social Security Contribution Levy | Turnover tax, not payroll (Section 10) |
+| EPF / ETF | Provident / Trust Fund | Statutory payroll contribution (Tier 2 catalogue, 6.3 and 6.4) |
+| SSCL | Social Security Contribution Levy | Turnover levy, not payroll (`sri-lanka-sscl`) |
 | LKR / Rs. | Sri Lankan Rupee | Currency |
 
 ### Onboarding Fallback
 
 If the client provides a bank statement but cannot answer onboarding questions immediately:
 
-1. Classify all transactions using the pattern library (Section 3).
+1. Classify all transactions using the pattern library (Transaction Pattern Library).
 2. Mark all Tier 2 items and concession-eligible income as "PENDING: reviewer must confirm".
 3. Apply conservative defaults (Boundary and exception table).
-4. Generate the working paper (Section 7) with clear flags.
+4. Generate the working paper (Excel Working Paper Template) with clear flags.
 5. Present the following questions to the client:
 
 ```
