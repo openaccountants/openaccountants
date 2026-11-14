@@ -30,23 +30,24 @@ financial statements, transfer pricing, tax optimization) plus
 18. `canada-tax-optimization.md`
 19. `canada-transfer-pricing.md`
 20. `leaving-canada-departure-tax.md`
-21. `references.md`
-22. `bookkeeping-workflow-base.md`
-23. `payroll-workflow-base.md`
-24. `company-formation-workflow-base.md`
-25. `financial-statements-workflow-base.md`
-26. `transfer-pricing-workflow-base.md`
-27. `crypto-tax-workflow-base.md`
-28. `qc-employer-contributions.md`
-29. `qc-individual-return.md`
-30. `qc-qst-return.md`
-31. `ca-freelance-intake.md`
-32. `ca-return-assembly.md`
-33. `global-router.md`
-34. `workflow-base.md`
-35. `social-contributions-workflow-base.md`
+21. `qc-corporate-tax-co17.md`
+22. `references.md`
+23. `bookkeeping-workflow-base.md`
+24. `payroll-workflow-base.md`
+25. `company-formation-workflow-base.md`
+26. `financial-statements-workflow-base.md`
+27. `transfer-pricing-workflow-base.md`
+28. `crypto-tax-workflow-base.md`
+29. `qc-employer-contributions.md`
+30. `qc-individual-return.md`
+31. `qc-qst-return.md`
+32. `ca-freelance-intake.md`
+33. `ca-return-assembly.md`
+34. `global-router.md`
+35. `workflow-base.md`
 36. `income-tax-workflow-base.md`
-37. `vat-workflow-base.md`
+37. `social-contributions-workflow-base.md`
+38. `vat-workflow-base.md`
 
 ## How to use
 

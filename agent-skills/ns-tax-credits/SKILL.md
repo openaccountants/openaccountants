@@ -1,406 +1,231 @@
 ---
 name: ns-tax-credits
-description: "Use this skill for Nova Scotia provincial tax credits — NS Low-Income Tax Reduction, Affordable Living Tax Credit, Age Amount Supplement, Volunteer Firefighters and Search/Rescue Tax Credit, NS Digital Media Tax Credit (refundable corporate, 25-30%), Capital Investment Tax Credit (15%), Film Industry Tax Credit. Triggers \"Nova Scotia tax credits\", \"NS Affordable Living\", \"Form NS428\", \"NS digital media credit\", \"Form NSDMTC\"."
+description: "Nova Scotia 2026 personal and corporate credits: correct refundable volunteer amount, dated family benefits, two-limb digital-media calculation, approved-project capital credit and annual-form evidence limits."
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/ns-tax-credits"
   jurisdiction: "CA"
-  tax_year: "2025"
-  last_updated: "2026-07-13"
+  tax_year: "2026"
+  last_updated: "2026-11-14"
 ---
 
-# NS Tax Credits
+# Nova Scotia tax credits v2.0
 
-## Nova Scotia — Provincial Tax Credits — Skill v1.0
+## Scope
 
-This skill covers Nova Scotia's suite of provincial tax credits available to individuals and corporations in tax year 2025. NS has unusual indexation behaviour — many provincial amounts have been frozen since the early 2000s and were only partially un-frozen by Bill 37 (2024) for select brackets and the basic personal amount. Always check the Department of Finance Nova Scotia bulletins for the operative figures before signing off.
+Apply Nova Scotia personal and corporate credit rules for **2026**, in CAD. Keep annual income-tax claims separate from the **July 2026-June 2027 benefit period** and clearly dated **2025 annual form** instructions. Personal NS428/NS479 work, corporate DMTC/capital/R&D work and provincial applications have different bases, claimants and evidence. This publication has no accountant approval.
 
-The skill is structured around the personal credits flowing through Form NS428 and the corporate credits administered via separate certification programs (NSDMTC, NSCITC, Film) that produce refundable or non-refundable amounts reported on the T2 corporate return with a Nova Scotia schedule.
+### Quick reference
 
-## 1. Quick reference — personal and corporate credit summary
+| Item | Figure and conditions | Official source |
+|---|---|---|
+| 2026 basic personal / spouse / eligible-dependant maxima | CAD 11,932 each where the relevant status/support tests are met; convert eligible bases at 8.79%; no old income-based supplemental reduction | https://notices.novascotia.ca/files/ftb-taxation/ftb-tn-personal-income-tax-indexation-update-2025-12-31.pdf |
+| 2026 age amount | CAD 5,826 maximum base; verify actual age/eligibility; not a separate income-based supplement | https://notices.novascotia.ca/files/ftb-taxation/ftb-tn-personal-income-tax-indexation-update-2025-12-31.pdf |
+| Separate age tax credit | CAD 1,000 non-refundable tax reduction, age at least 65 by year end, NS resident on 31 December and taxable income below CAD 24,000; distinct from the ordinary age amount | https://www.novascotia.ca/sites/default/files/documents/1-3953/tax-101-personal-income-tax-age-tax-credit-en.pdf |
+| 2026 infirm dependant maximum | CAD 2,931 base for a qualifying infirm dependant aged at least 18, with the relevant support/income tests | https://notices.novascotia.ca/files/ftb-taxation/ftb-tn-personal-income-tax-indexation-update-2025-12-31.pdf |
+| Current volunteer firefighter/ground SAR credit | CAD 500 refundable dollar credit; at least six months qualifying service and programme evidence; not a credit base | https://www.novascotia.ca/volunteer-firefighter-and-ground-search-and-rescue-worker-tax-credit |
+| ALTC, July 2026-June 2027 | Annual CAD 255 individual OR couple, plus CAD 60 per child; reduce by 5% of AFNI above CAD 30,000; quarterly separate CRA payment | https://www.canada.ca/en/revenue-agency/services/child-family-benefits/provincial-territorial-programs/province-nova-scotia.html |
+| NS child benefit, July 2026-June 2027 | Up to CAD 127.08 per month per qualifying child under 18; partial between AFNI CAD 26,000 and CAD 34,000; not CAD 150 per quarter | https://www.canada.ca/en/revenue-agency/services/child-family-benefits/provincial-territorial-programs/province-nova-scotia.html |
+| Nova Scotia HST | 14% from 1 April 2025 for supplies governed by the NS place-of-supply and transition rules | https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/charge-collect-which-rate.html |
 
-**Quick reference summary heading (no direct body, subsections follow)**
+| Item | Figure and conditions | Official source |
+|---|---|---|
+| DMTC ordinary | Lesser of 50% of qualifying expenditure and 25% of total expenditure; certified eligible product/corporation only | https://www.novascotia.ca/digital-media-tax-credit |
+| DMTC regional | Lesser of 60% of qualifying expenditure and 30% of total expenditure if the prescribed outside-Halifax regional labour condition is met; not simply any Sydney address | https://www.novascotia.ca/digital-media-tax-credit |
+| Qualifying-expenditure base | Eligible salaries + 65% of eligible remuneration + eligible marketing/distribution up to CAD 100,000 per product; apply the statutory cost exclusions | https://novascotia.ca/just/regulations/regs/incdigitalmedia.htm |
+| DMTC period / certificate deadline | Qualifying expenditure before 1 January 2031; apply no later than 30 months after the expenditure tax-year end; Part A optional/Part B mandatory | https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/corporations/provincial-territorial-corporation-tax/nova-scotia-provincial-corporation-tax/nova-scotia-digital-media-tax-credit.html |
+| Capital investment credit, post-30-September-2022 property | 25% of eligible property cost net of assistance; maximum CREDIT CAD 100 million per approved project duration; refundable, not a 20-year carryforward credit | https://www.novascotia.ca/capital-investment-tax-credit |
+| Earlier capital investment cohort | 15% and maximum CREDIT CAD 30 million per approved project for the programme's pre-1-October-2022 cohort; not the current ordinary rate | https://www.novascotia.ca/capital-investment-tax-credit |
+| Capital project / application | Qualifying project investment above CAD 15 million; application window extended through 31 December 2035; project and property must be approved | https://news.novascotia.ca/en/2026/09/04/capital-investment-tax-credit-extended |
+| NS R&D credit | 15% of eligible NS R&D expenditure; fully refundable after taxes; NS permanent establishment and eligible work required; Schedule 340 within 18 months of year end | https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/corporations/provincial-territorial-corporation-tax/nova-scotia-provincial-corporation-tax/nova-scotia-research-development-tax-credit.html |
 
-### Personal credits (Form NS428 / NS-BEN)
+## Ask the client first
 
-**Personal credits table**  _(NS ITA s. 10, 11, 13, 49, 37A, 37C, 40, 47)_
+1. Which tax year and benefit-payment period, and which province on the last day of the year? Obtain arrival, departure, death and interprovincial moving dates, Canadian residence status and every business permanent establishment.
+2. What are taxable income, net income and adjusted family net income, separately? Obtain all slips, foreign income, deductions, CPP/EI details and the spouse's return. Do not default an unknown marital status to single.
+3. Which age, dependant, disability, pension, tuition, medical, donation, volunteer and investment facts apply? Obtain certificates, receipts, shared claims and carryover assessments before using a credit.
+4. Is this an individual, an unincorporated business or a corporation? Identify self-employment, farming/fishing, instalments and prior assessments. A corporate credit cannot be placed on a personal return.
+5. What is the requested output: a planning estimate, the actual annual filing or a separate CRA-administered benefit calculation? Do not call a partial provincial computation a final refund.
 
-| Credit | Type | 2025 amount (approx.) | Authority |
-| --- | --- | --- | --- |
-| Basic personal amount (NS) | Non-refundable | $8,744 (low-income enhanced up to $11,481) | NS ITA s. 10 |
-| Spouse / common-law partner | Non-refundable | $8,481 base | NS ITA s. 11 |
-| Age amount (65+) | Non-refundable | $4,141 federal + **$1,465 NS supplement** | NS ITA s. 13 |
-| Affordable Living Tax Credit (ALTC) | **Refundable** | $255 single + $60 per child (quarterly) | NS ITA s. 49 |
-| Low-Income Tax Reduction (LITR) | Non-refundable | Up to $300 (single) / $600 (family) + $165 per child | NS ITA s. 37A |
-| Volunteer Firefighter / Search & Rescue | Non-refundable | $500 ($72.50 max tax savings at 8.79%) | NS ITA s. 37C |
-| Healthy Living | **Repealed** (do not claim post-2014) | n/a | n/a |
-| Sport and recreation expenses for children | **Repealed** | n/a | n/a |
-| Equity Tax Credit | Non-refundable | 35% of eligible investment | NS ITA s. 40 |
-| Innovation Equity Tax Credit (IETC) | Non-refundable | 35% (45% in oceans tech / life sciences) | NS ITA s. 47 |
+For corporate projects also collect corporate/PE status, product/property/activity classification, acquisition/payment/year-end dates, regional employee evidence, cost categories and assistance, group/project limits, preliminary decisions and final certificates. For personal volunteer/sports/food-bank work collect service reports or invoices, qualifying ages/programmes, reimbursement/duplicate claims and the actual claimant.
 
-### Corporate credits
+## The method, step by step
 
-**Corporate credits table**  _(Corporate credits summary table)_
+### Affordable living and other cash benefits
 
-| Credit | Type | Rate | Notes |
-| --- | --- | --- | --- |
-| **NS Digital Media Tax Credit (NSDMTC)** | Refundable | **25%** eligible labour + **5%** geographic bonus (outside Halifax Regional Municipality) = up to **30%** | Certification by NS Dept. of Communities, Culture, Tourism and Heritage. Filed with T2 + Form NSDMTC. |
-| **NS Capital Investment Tax Credit (NSCITC)** | Non-refundable | **15%** of capital cost of qualifying property | Manufacturing/processing/farming/fishing/logging in NS. Annual cap $30M cost ($4.5M credit). 20-year carryforward, 3-year carryback. |
-| **NS Film Industry Tax Credit** | Refundable | **50%** eligible labour for Atlantic Canada residents (with Halifax bonus structure varying) / **25%** non-Atlantic spend | Issued via Film and Creative Industries Nova Scotia certification. |
-| **Scientific Research & Experimental Development (NS SR&ED)** | Refundable (CCPC) | **15%** of qualifying SR&ED expenditures | Stacks with federal 35% / 15% SR&ED credit. |
+ALTC is a quarterly CRA payment, not a non-refundable line that multiplies by the provincial credit rate. Compute the dated annual benefit as `max(0, 255 + 60 * qualifying_children - 0.05 * max(0, AFNI - 30000))`. The base is CAD 255 for either an individual or a couple, not per adult. Use the assessed family-income period and actual custody/status. The NS child benefit is monthly with CCB; the current maximum and AFNI band are in the table. Do not put either on an invented NS-BEN schedule or simply net it against personal tax. [Current CRA programme page](https://www.canada.ca/en/revenue-agency/services/child-family-benefits/provincial-territorial-programs/province-nova-scotia.html).
 
-## 2. Required inputs and refusal catalogue
+The old guide's single parent/two children/AFNI CAD 25,000 ALTC example produces CAD 375 annually or CAD 93.75 for an illustrative full quarter; couple/one child/CAD 40,000 produces zero. Those examples remain below with the current benefit period. A CRA determination can reflect partial periods, changes and allocation; an annual formula does not promise all instalments. Poverty Reduction Credit and temporary affordability payments have separate qualifying programmes; their old generic age/income/maxima are held rather than treated as current tax credits.
 
-### Required inputs (personal)
+### Indexed non-refundable bases, LITR and age
 
-- **Required personal inputs** — Tax year 2025 Nova Scotia residency confirmation as at December 31, 2025; T1 General with line 23600 net income, line 26000 taxable income; Adjusted family net income (line 23600 + spouse's line 23600 minus certain UCCB / RDSP amounts); Number of children under 19 in the household at December 31; Marital status at December 31, 2025; For LITR / ALTC: dependent children eligibility for Canada Child Benefit; For Volunteer Firefighter credit: certification letter from the fire chief / search and rescue authority confirming ≥ 200 hours; For Age Amount Supplement: date of birth (must be 65 or older on December 31, 2025)  _(NS ITA)_
+The 2026 basic personal/spouse/eligible-dependant and ordinary age maxima are sourced above. Do not retain the old frozen CAD 8,481 base or the old income-based supplementary amount. The separate age tax credit is a CAD 1,000 reduction in tax, subject to year-end residence, age at least 65 and taxable income below CAD 24,000; it is not an extra age-amount base multiplied by 8.79%. [Current indexation page](https://www.novascotia.ca/personal-income-tax-rates-and-indexation); [age-tax-credit factsheet](https://www.novascotia.ca/sites/default/files/documents/1-3953/tax-101-personal-income-tax-age-tax-credit-en.pdf).
 
-### Required inputs (corporate)
+The **2025 annual instructions** allow the low-income reduction for a year-end NS resident aged at least 19, married/common-law or a parent, with a prison exclusion and specified deceased-return treatment. Choose a single family claimant, calculate adjusted family income from both returns, and distinguish CAD 300 spouse OR CAD 300 eligible dependant from CAD 165 for other qualifying dependent children. Do not count the same child in both categories. The guide defines those other children by age/status/residence and only one claimant. The old higher family threshold, blanket “all unused transfers” rule and exact current phase-out are not authorised without the actual year's readable law/form. The original single/CAD 18,000 LITR example is retained as a held calculation, not a current CAD 150 promise. [2025 CRA family rules](https://www.canada.ca/en/revenue-agency/services/forms-publications/tax-packages-years/general-income-tax-benefit-package/nova-scotia/5003-pc.html).
 
-- **Required corporate inputs** — For NSDMTC: certificate of registration + certificate of completion from Nova Scotia Department of Communities, Culture, Tourism and Heritage; eligible labour schedule; geographic apportionment between Halifax Regional Municipality and outside-HRM. For NSCITC: capital cost of qualifying property, in-service date, prescribed use confirmation (manufacturing/processing/farming/fishing/logging), evidence property was new. For Film Tax Credit: Film and Creative Industries Nova Scotia certificate, Atlantic Canada residency declarations for cast/crew, Halifax vs. outside-Halifax spend allocation. T2 corporate return with Schedule 5 (provincial credits) and the relevant NS schedules.  _(NS ITA)_
+For pension, disability, medical, tuition, spouse transfers and donations obtain the actual year's worksheet, certification, receipt period, net reimbursements and assessed carryovers. The 2025 pension maximum is CAD 1,173 in that guide; do not use the old CAD 1,000 for that historical year. Current-year tuition transfer is limited by the permitted designation and own use; old carryforwards cannot be transferred. Provincial tax on split income, minimum tax, foreign tax credit and R&D recapture have separate NS428 adjustments; a low ordinary-income computation does not dispense with those checks. [2025 annual map](https://www.canada.ca/en/revenue-agency/services/forms-publications/tax-packages-years/general-income-tax-benefit-package/nova-scotia/5003-pc.html).
 
-### Refusal catalogue
+### Volunteer service: provincial conditions are not the federal hours test
 
-**Refusal catalogue table**
+The current provincial programme gives a refundable CAD 500 dollar credit. Qualifying volunteers must be resident at year end, serve at least six months, receive no wages/compensation beyond reasonable reimbursement/allowance, and satisfy the applicable participation/reporting test. Firefighters need at least 20% of calls/training/meetings and inclusion on the fire chief's report; ground search/rescue has its own organisation report. The programme describes the annual report due by 31 January following the service year. Do not replace those conditions with 200 hours, infer eligibility from 220 hours alone, or say 199 hours automatically bars the NS credit. The federal volunteer credit/exemption has separate conditions and is a separate calculation. [Current provincial programme](https://www.novascotia.ca/volunteer-firefighter-and-ground-search-and-rescue-worker-tax-credit).
 
-| Code | Refusal trigger |
-| --- | --- |
-| R-NS-CR-1 | Part-year residents — Form NS428 has special proration that this skill v1.0 does not handle. Escalate. |
-| R-NS-CR-2 | Deceased taxpayer final return — survivor benefit / ALTC entitlement rules out of scope. |
-| R-NS-CR-3 | NSDMTC where the corporation is not a "taxable Canadian corporation" or lacks a permanent establishment in NS — defer to specialist. |
-| R-NS-CR-4 | NSCITC where the property is used outside NS for any part of the year — apportionment rules out of scope. |
-| R-NS-CR-5 | Film Tax Credit on co-productions involving non-Canadian treaty co-producers — escalate. |
-| R-NS-CR-6 | Equity Tax Credit / Innovation Equity Tax Credit recapture events (early disposition within 4 years) — escalate. |
-| R-NS-CR-7 | Claims for credits that have been repealed (Healthy Living, Sport & Recreation, Volunteer Emergency First Aid) — refuse and educate the client. |
-| R-NS-CR-8 | Anything involving the now-repealed Food Bank Tax Credit for Farmers transitional rules — refuse. |
-| R-NS-CR-9 | NSDMTC where the product is "interactive digital media" but consists primarily of news, current affairs, weather, sports reporting, or advertising — these are excluded. |
-| R-NS-CR-10 | Stacking analysis where the federal credit is at issue (e.g. SR&ED interaction with NSDMTC labour) — refer to a federal SR&ED specialist before signing. |
+The historical 2025 return enters CAD 500 on NS479 line 1; it is not CAD 43.95 (500 times 8.79%). Death cases have the guide's day-of-death residence and other conditions. Keep the service evidence and reports with the claim. [CRA 2025 NS479 instructions](https://www.canada.ca/en/revenue-agency/services/forms-publications/tax-packages-years/general-income-tax-benefit-package/nova-scotia/5003-pc.html).
 
-- **R-NS-CR-1** — Part-year residents — Form NS428 has special proration that this skill v1.0 does not handle. Escalate.
-- **R-NS-CR-2** — Deceased taxpayer final return — survivor benefit / ALTC entitlement rules out of scope.
-- **R-NS-CR-3** — NSDMTC where the corporation is not a "taxable Canadian corporation" or lacks a permanent establishment in NS — defer to specialist.
-- **R-NS-CR-4** — NSCITC where the property is used outside NS for any part of the year — apportionment rules out of scope.
-- **R-NS-CR-5** — Film Tax Credit on co-productions involving non-Canadian treaty co-producers — escalate.
-- **R-NS-CR-6** — Equity Tax Credit / Innovation Equity Tax Credit recapture events (early disposition within 4 years) — escalate.
-- **R-NS-CR-7** — Claims for credits that have been repealed (Healthy Living, Sport & Recreation, Volunteer Emergency First Aid) — refuse and educate the client.
-- **R-NS-CR-8** — Anything involving the now-repealed Food Bank Tax Credit for Farmers transitional rules — refuse.
-- **R-NS-CR-9** — NSDMTC where the product is "interactive digital media" but consists primarily of news, current affairs, weather, sports reporting, or advertising — these are excluded.
-- **R-NS-CR-10** — Stacking analysis where the federal credit is at issue (e.g. SR&ED interaction with NSDMTC labour) — refer to a federal SR&ED specialist before signing.
+### Food bank and children's sports/arts: do not call live programmes repealed
 
-## 3. NS Affordable Living Tax Credit (ALTC)
+The 2025 CRA instructions expressly include the food-bank credit for farmers. It is 25% of qualifying NS-produced agricultural products donated to an eligible NS registered-charity food bank, with the linked charitable-donation claim. Shared claims cannot exceed the gift, unused eligible amounts can carry forward five years subject to the farming-income condition, and death/bankruptcy have their specified allocation rules. The historical form route is NS428 line 88 from the qualifying donations field 62150. A purchase of groceries or a donation to any charity is not automatically this farming credit. [2025 CRA instructions](https://www.canada.ca/en/revenue-agency/services/forms-publications/tax-packages-years/general-income-tax-benefit-package/nova-scotia/5003-pc.html).
 
-### Statutory authority
+The sports/arts programme is refundable and uses NS479; it has not simply been repealed. The official factsheet and 2025 guide describe qualifying expenditure up to CAD 500 per child, under 19 at year end, with qualifying supervised arts/sports/development/nature activities. The 2025 guide specifies six-week weekly, five-day camp or specified eight-week choice-programme tests. Ordinary food, accommodation, travel and beverages are excluded; qualifying integral uniform/equipment costs can be included. Reduce non-taxable reimbursement/assistance and prevent duplicated deductions/credits; payments to the spouse or an under-18 provider and the specific emigration/death/bankruptcy restrictions need review. Shared claims cannot exceed the child's maximum, and disagreement can prevent either claimant. Do not multiply the cap by parents or treat a generic course as qualifying. The final annual-form conversion/output is held until the actual NS479 is read; do not promise a CAD 500 cash refund merely from a CAD 500 receipt. [Provincial factsheet](https://www.novascotia.ca/sites/default/files/documents/1-3953/tax-101-personal-income-tax-childrens-sports-arts-refundable-tax-credit-en.pdf); [2025 annual rules](https://www.canada.ca/en/revenue-agency/services/forms-publications/tax-packages-years/general-income-tax-benefit-package/nova-scotia/5003-pc.html).
 
-- **ALTC statutory authority** — Nova Scotia Income Tax Act s. 49; administered by CRA on behalf of NS under the tax collection agreement. Paid quarterly with the federal GST/HST credit cycle (July, October, January, April).  _(NS ITA s. 49)_
+### Digital media: qualify the product and both expenditure bases
 
-### 2025 amounts (per benefit year July 2025 – June 2026, based on 2024 net income)
+The corporation must be a taxable Canadian corporation incorporated in Canada/province, have an NS permanent establishment and not be the prescribed labour-sponsored venture corporation. Foreign ownership alone is not the blanket disqualification invented by the old guide. The product must meet the actual interactive educate/inform/entertain definition and two of text/sound/images. Ordinary application/operating-system software, primarily promotional or interpersonal-communication products and prohibited adult/hateful content are excluded. Do not import every NL product exclusion into NS, or add an unsupported requirement to own all copyright. [DMTC Regulations sections 2, 4-5](https://novascotia.ca/just/regulations/regs/incdigitalmedia.htm).
 
-- **ALTC base amount** — $255 per family unit per year ($63.75 per quarterly payment)  _(NS ITA s. 49)_
-- **ALTC child supplement** — $60 per dependent child under 19 per year ($15 per quarter)  _(NS ITA s. 49)_
-- **ALTC phase-out threshold** — $30,000 adjusted family net income  _(NS ITA s. 49)_
-- **ALTC phase-out rate** — 5% of family net income above $30,000  _(NS ITA s. 49)_
+Build two supported workpapers. Qualifying expenditure is eligible salaries plus 65% of eligible remuneration plus eligible marketing/distribution up to CAD 100,000 per product. Total expenditure follows the prescribed eligible-production outlay plus eligible marketing/distribution less government assistance. Local permanent-establishment, arm's-length, directly-attributable, reasonable-cost and payment timing rules matter. Eligible salaries cannot be profit/revenue-based; contractor and subcontractor amounts need the regulation's look-through tests. Ordinary payment is within the expenditure year or 60 days after year end; the regulation has a subsequent-year rule for eligible late-paid salaries/remuneration. Marketing has a specific completion-related window and excludes ordinary order fulfilment/shipping. Do not treat every T4A or every overhead charge as qualifying labour. [Regulations sections 6-10](https://novascotia.ca/just/regulations/regs/incdigitalmedia.htm).
 
-Confirm 2025 indexation — the ALTC base has been $255 since 2012; the 2024 NS budget announced an indexation review effective 2026 onwards, so the **operating assumption for 2025 is $255 unchanged**. Verify against the Nova Scotia Department of Finance Tax Measures bulletin for fiscal 2025-26 before signing.
+Take the lesser of the two percentage limbs in the table. For the regional uplift, at least half of eligible salaries must meet the normal-reporting-to-an-eligible-NS-establishment-outside-Halifax condition; a project title or mailing address alone is insufficient. Keep staff residence/reporting locations, timesheets and product cost allocations. Remove government assistance from the appropriate base and prevent overlapping section 41/47 expenditure claims; federal incentives require their own cost-base/assistance analysis. Do not add percentages to the entire project or freely stack assistance. [Current DMTC programme](https://www.novascotia.ca/digital-media-tax-credit); [Regulations sections 6-10](https://novascotia.ca/just/regulations/regs/incdigitalmedia.htm).
 
-### Eligibility
+Part A preliminary eligibility is optional, not a mandatory pre-project condition. Part B tax-credit certificate application is mandatory no later than 30 months after the end of the tax year in which the costs were incurred, not 30 months after product completion. Include corporate standing, product evidence, expenditure statements and the prescribed employee/location/certification information. The programme now covers qualifying expenditure before 1 January 2031; “sunset 2025, likely extension” is stale. The CRA claim is T2 Schedule 5 line 567, single certificate number at line 838 or Schedule 347 for multiple certificates; file the certificates and retain records. Refundable credit offsets taxes first. [Current programme](https://www.novascotia.ca/digital-media-tax-credit); [CRA corporate instructions](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/corporations/provincial-territorial-corporation-tax/nova-scotia-provincial-corporation-tax/nova-scotia-digital-media-tax-credit.html).
 
-- **ALTC eligibility** — Resident of NS at the beginning of the payment month; 19 or older, OR married/common-law, OR a parent living with a child; Filed a 2024 T1 return (the ALTC is auto-calculated by CRA from the T1 — no separate form); Family net income below approximately $35,100 (single, no kids) or higher with children  _(NS ITA s. 49)_
+### Capital Investment Tax Credit: approved project, refundable credit
 
-### Worked snippet (single parent, 2 children, $25,000 family net income)
+Current eligible property acquired on/after 1 October 2022 attracts 25%, subject to the approved project's maximum credit, not a 15% non-refundable credit with twenty-year carryover. The property's cost is net of assistance and must fit the actual capital-asset/activity rules. The official programme describes qualified property for prescribed manufacturing/processing, farming, fishing, logging, grain storage, peat harvesting and qualifying freight/space activities. Personal assets, unsupported used/replacement costs and an ordinary acquisition without a qualifying project must not be swept into the base. The project investment threshold is above CAD 15 million, not a standalone CAD 2 million machine. [Current programme](https://www.novascotia.ca/capital-investment-tax-credit); [2026 extension](https://news.novascotia.ca/en/2026/09/04/capital-investment-tax-credit-extended).
 
-Base: $255
-Children: $60 × 2 = $120
-Total entitlement: $375
-Phase-out: none (income < $30,000)
-Quarterly payment: $93.75
+Part A eligibility approval and Part B certificate are mandatory; preliminary application before acquisition is encouraged but should not be represented as a different invented statutory precondition. Once eligibility and property are established, the programme requires Part B within **18 months after the taxation year-end**. Assemble property invoices, dates, acquisition/available-use evidence, project costs, assistance and approval, then use the actual certificate/T2 route. The CAD 100 million ceiling is a **credit ceiling over the project**, not annual spending or an automatic claim each year. The earlier pre-October-2022 cohort uses its own rate/cap. The extension permits applications through the end of 2035; it does not remove property or project eligibility. Federal CCA/assistance interactions and recapture require separate analysis before a disposal or stacking recommendation. [Programme](https://www.novascotia.ca/capital-investment-tax-credit).
 
-### Worked snippet (couple, 1 child, $40,000 family net income)
+### R&D, film and investment-credit routes
 
-Base + supplement: $255 + $60 = $315
-Phase-out: ($40,000 − $30,000) × 5% = $500
-Reduced credit: max($315 − $500, $0) = **$0**
-This family is **above the ALTC ceiling** — no entitlement.
+NS R&D is a fully refundable 15% credit for eligible work and expenditure with an NS permanent establishment, not a CCPC-only cash promise. Prepare Schedule 340 within 18 months after year end, claim Schedule 5 line 566, and use Schedule 340/line 221 for any recapture. Disposal or conversion to commercial use can trigger recapture. Government assistance and the federal SR&ED base must be reconciled; being a software company does not establish eligible scientific research. [CRA current instructions](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/corporations/provincial-territorial-corporation-tax/nova-scotia-provincial-corporation-tax/nova-scotia-research-development-tax-credit.html).
 
-## 4. NS Low-Income Tax Reduction (LITR)
+The old film tax-credit and the current screen-production funding route are not interchangeable. A genuinely legacy credit needs production dates, actual transitional law and its certificate; a current grant needs its current programme decision and assistance treatment. The original asserted post-July-2015 closure and legacy exceptions cannot be used to create a current tax claim without that evidence. Do not route a film grant through the DMTC formula merely because both use media labour. This topic remains held under Sources until the actual current film programme and transition are read.
 
-### Statutory authority
+For **2025 annual filing only**, equity tax credit uses T1285/NSETC-1; innovation equity uses T225/NSIETC-1; venture capital uses T224/NSVCTC-1. Confirm approved issuer/fund, security, payment date, age/residence, certificates and all previous claims before considering any current rate or carryover. The old 35%/35%-45% catalogue, connected-person exclusion, holding period and annual cap are not current permission to invest or claim until the applicable programme law is read. The 2025 guide separately gives labour-sponsored venture credit at 20% up to CAD 2,000 with its certificate, not a generic equity rate. [CRA 2025 investment routes](https://www.canada.ca/en/revenue-agency/services/forms-publications/tax-packages-years/general-income-tax-benefit-package/nova-scotia/5003-pc.html).
 
-- **LITR statutory authority** — NS Income Tax Act s. 37A. Non-refundable; reduces NS provincial tax payable to zero before being clawed back. Calculated on Form NS428 Step 3.  _(NS ITA s. 37A)_
+### Filing, records and follow-up
 
-### 2025 amounts (frozen since 2010; verify against current NS428 form)
+Use the actual year's provincial 428 for tax/credits and 479 for specified refundable credits, with T1 line 42800/47900 only where directed. No NS-BEN form was established by the package read. Use CRA-certified NETFILE software or the actual paper package, review all calculations, obtain approval, save confirmation and check the assessment/benefit notices. Corporate and provincial certificate applications remain separate, with their own clocks. Do not assume a permitted tax-return adjustment extends a programme filing deadline. [CRA 2025 guide](https://www.canada.ca/en/revenue-agency/services/forms-publications/tax-packages-years/general-income-tax-benefit-package/nova-scotia/5003-pc.html); [CRA change-return process](https://www.canada.ca/en/services/taxes/income-tax/personal-income-tax/after-you-file/change-return.html).
 
-- **LITR single individual maximum** — $300 maximum  _(NS ITA s. 37A)_
-- **LITR married/common-law maximum** — $300 + $300 spousal = $600 maximum per couple  _(NS ITA s. 37A)_
-- **LITR per dependent child under 19** — $165  _(NS ITA s. 37A)_
-- **LITR phase-out threshold (single)** — $15,000 net income  _(NS ITA s. 37A)_
-- **LITR phase-out threshold (family)** — $18,000 family net income  _(NS ITA s. 37A)_
-- **LITR phase-out rate** — 5% of net income above the threshold  _(NS ITA s. 37A)_
+### Filing dates and the actual form year
 
-### Mechanics on Form NS428
+For ordinary 2026 individual returns, ITA section 150(1)(d) gives the following-year filing rule: 30 April 2027 ordinarily; 15 June 2027 where the individual or their spouse/common-law partner carried on a qualifying business, subject to the statutory exceptions. Deaths and other special returns have different clocks. The later business filing date does not itself extend the balance-payment deadline. [ITA section 150](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-150.html).
 
-- **LITR computation mechanics** — 1. Compute NS tax payable (Step 2 of NS428) at the four-bracket NS rate schedule. 2. Apply non-refundable credits (basic personal, spouse, age, CPP, EI, etc.) at 8.79%. 3. Compute LITR on Form NS428 Step 3: - Sum: $300 + $300 (if spouse) + $165 × children - Less: 5% × (net income − threshold) - LITR equals this amount, capped at NS tax otherwise payable. 4. Subtract LITR from NS tax payable. LITR **cannot reduce NS tax below zero**. The Affordable Living Tax Credit (Section 3) is the refundable companion that pays out when the taxpayer has no NS tax liability.  _(NS ITA s. 37A)_
-
-### Worked snippet (single, no kids, $18,000 net income)
-
-LITR notional: $300
-Phase-out: ($18,000 − $15,000) × 5% = $150
-LITR claimable: $300 − $150 = **$150**
-This $150 offsets NS tax otherwise payable on the slice of income above the NS basic personal amount.
-
-## 5. NS Age Amount Supplement
-
-### Statutory authority
-
-- **Age Amount Supplement statutory authority** — NS Income Tax Act s. 13. **In addition to** the federal age amount on line 30100 of the T1 and the NS age amount on Form NS428.  _(NS ITA s. 13)_
-
-### 2025 amounts
-
-- **Federal age amount (line 30100)** — $9,028 (for context — not claimed on NS428)  _(NS ITA s. 13)_
-- **NS age amount on NS428** — $4,141 (frozen)  _(NS ITA s. 13)_
-- **NS Age Amount Supplement** — additional $1,465 added to the NS age amount where the senior's income is at or below the NS LITR phase-out range (low-income test)  _(NS ITA s. 13)_
-
-### Eligibility
-
-- **Age Amount Supplement eligibility** — 65 or older on December 31, 2025; Net income at or below the NS Age Amount Supplement income threshold (approximately $24,000; confirm against CRA NS428 instructions for 2025 — the threshold tracks the federal age amount phase-out start adjusted to NS); Supplement is **fully clawed back** at higher incomes via the standard 15% reduction once net income exceeds the threshold  _(NS ITA s. 13)_
-
-### Mechanics
-
-- **Age Amount Supplement mechanics** — The supplement is built into the NS age amount line on Form NS428 — there is no separate line. The taxpayer enters their full age amount including the supplement; CRA's NETFILE calculator applies the income test automatically. Reviewers should verify the calculation manually for low-income seniors because tax software occasionally omits the supplement.  _(NS ITA s. 13)_
-
-### Conservative default
-
-If the client is 65+ and net income is below $25,000, **always check** whether the supplement has been applied. If software omits it, file a T1-ADJ with the corrected NS428.
-
-## 6. NS Volunteer Firefighter and Search & Rescue Tax Credit
-
-### Statutory authority
-
-- **Volunteer Firefighter credit statutory authority** — NS Income Tax Act s. 37C. Non-refundable; introduced 2007.  _(NS ITA s. 37C)_
-
-### 2025 amount
-
-- **Volunteer Firefighter credit base amount and rate** — $500 credit base amount; Applied at NS lowest bracket rate of 8.79% → maximum tax saving of $43.95. (Note: the federal Volunteer Firefighters Amount on line 31220 is separately $6,000 base × 15% = $900 federal saving; the NS credit is a standalone provincial benefit, not stacked at the federal rate.)  _(NS ITA s. 37C)_
-
-### Eligibility
-
-- **Volunteer Firefighter credit eligibility** — Performed at least 200 hours of eligible volunteer service in the year as a volunteer firefighter or volunteer search and rescue volunteer; Service certified in writing by the fire chief or by an authorized representative of the search and rescue organization; Cannot have received more than $1,000 in honoraria for the same service (the credit is intended for unpaid or nominally-paid volunteers; honoraria above $1,000 disqualify under the federal rule and NS follows); Reported on Form NS428 line 5829 (verify line number against current-year form)  _(NS ITA s. 37C)_
-
-### Documentation to retain
-
-- **Documentation to retain for Volunteer Firefighter credit** — Certification letter from the chief / authority, naming the volunteer, the organization, total hours, and the year; Confirmation that combined hours of firefighter and search-and-rescue service total ≥ 200 (the two activities can be aggregated under the federal/provincial rules but the volunteer can claim only one of the two federal credits, and similarly only one NS credit — they are not stackable across the two roles)  _(NS ITA s. 37C)_
-
-## 7. NS Digital Media Tax Credit (NSDMTC)
-
-### Statutory authority
-
-- **NSDMTC statutory authority** — NS Income Tax Act s. 47A and 47B; Digital Media Tax Credit Regulations under the NS ITA. Administered jointly by the NS Department of Finance and Treasury Board (tax administration) and the Department of Communities, Culture, Tourism and Heritage (certification).  _(NS ITA s. 47A, 47B)_
-
-### Rate (2025)
-
-- **NSDMTC base rate** — 25% of eligible Nova Scotia labour expenditures  _(NS ITA s. 47A, 47B)_
-- **NSDMTC geographic bonus** — additional 5% for labour incurred outside the Halifax Regional Municipality (HRM)  _(NS ITA s. 47A, 47B)_
-- **NSDMTC maximum effective rate** — 30% for fully outside-HRM productions  _(NS ITA s. 47A, 47B)_
-- **NSDMTC alternative computation cap** — 50% of eligible labour OR 25% of total eligible expenditure, whichever is less (this cap operates as a labour-intensity floor — productions that are not predominantly labour-driven default to the 25% of total cost limit)  _(NS ITA s. 47A, 47B)_
-
-### Refundability
-
-- **NSDMTC refundability** — Fully refundable — paid out by CRA to the corporation after assessment of the T2, regardless of whether NS corporate tax is otherwise payable.  _(NS ITA s. 47A, 47B)_
-
-### Eligibility — corporation
-
-- **NSDMTC corporate eligibility** — Taxable Canadian corporation; Permanent establishment in Nova Scotia; Primary business: development of interactive digital media products; Not controlled directly or indirectly by tax-exempt persons or non-residents (subject to specific safe harbours)  _(NS ITA s. 47A, 47B)_
-
-### Eligibility — product
-
-- **Eligible interactive digital media product** — An eligible interactive digital media product is a product that: 1. Is intended to educate, inform, or entertain; 2. Achieves its purpose by presenting information in at least two of: text, sound, images; 3. Is interactive (the user can choose paths, modify content, or otherwise affect the presentation); 4. Is developed for commercial exploitation  _(Digital Media Tax Credit Regulations, NS Reg. under the NS Income Tax Act)_
-
-### Exclusions
-
-- **NSDMTC exclusions** — News, current events, public affairs, weather, market reporting, sports; Advertising and promotional products; Operating systems; Adult content; Products produced for in-house use only by the corporation; Products that are predominantly databases or reference works without interactive narrative  _(Digital Media Tax Credit Regulations, NS Reg. under the NS Income Tax Act)_
-
-### Eligible labour expenditures
-
-- **NSDMTC eligible labour expenditures** — Salaries and wages paid to NS-resident employees for work performed in NS on the eligible product, during the development period; Amounts paid to NS-resident contractors for personal services; Pro-rated where the employee works on both eligible and ineligible products; Excludes: bonuses paid out of profits, stock-based compensation, related-party amounts exceeding fair market value, signing bonuses unconnected to development work  _(Digital Media Tax Credit Regulations, NS Reg. under the NS Income Tax Act)_
-
-### Certification process
-
-- **NSDMTC certification process** — 1. Registration Certificate: filed with NS Department of Communities, Culture, Tourism and Heritage before development begins (or within early development phase). Confirms product eligibility in principle. 2. Completion Certificate: filed within 30 months of the corporation's year-end in which development was completed. Confirms actual eligible spend. 3. T2 filing: file Form NSDMTC along with the corporate T2 return for each taxation year of the development period. The credit is claimed per year, not only at completion.  _(NSDMTC certification guidelines, NS Department of Communities, Culture, Tourism and Heritage)_
-
-### Worked snippet (Halifax studio, $1M total spend, $700k NS labour, all in HRM)
-
-Eligible NS labour: $700,000
-25% labour rate: $175,000
-Geographic bonus: $0 (all in HRM)
-Cap test 1 (50% of labour): $350,000 — not binding
-Cap test 2 (25% of total eligible spend): $250,000 — not binding (credit $175k < $250k cap)
-**NSDMTC**: **$175,000 refundable**
-
-### Worked snippet (Sydney studio, $500k spend, $400k NS labour, all outside HRM)
-
-Eligible NS labour: $400,000
-25% labour: $100,000
-5% geographic bonus: $20,000
-Subtotal: $120,000
-Cap test 1 (50% of labour): $200,000 — not binding
-Cap test 2 (25% of total spend): $125,000 — not binding
-**NSDMTC**: **$120,000 refundable**
-
-### Sunset clause
-
-The NSDMTC has been renewed in successive provincial budgets. As of the 2024 NS Budget the credit was extended through December 31, 2025. Verify the post-2025 status against the most recent provincial budget bulletin before quoting the credit to clients planning new productions — re-extension is likely but not automatic.
-
-## 8. NS Capital Investment Tax Credit (NSCITC)
-
-### Statutory authority
-
-- **NSCITC statutory authority** — NS Income Tax Act s. 47C. Administered by the Department of Finance and Treasury Board with NETFILE T2 processing through CRA.  _(NS ITA s. 47C)_
-
-### Rate
-
-- **NSCITC rate and cap** — 15% of the capital cost of qualifying property acquired and made available for use in Nova Scotia; Annual capital cost cap per associated group: $100 million of qualifying property (so maximum annual credit = $15M before the lifetime cap; older guidance referenced a $30M annual cost cap — confirm current cap with NS Department of Finance for 2025)  _(NS ITA s. 47C)_
-
-### Refundability
-
-- **NSCITC refundability** — Non-refundable. Reduces NS Part I tax otherwise payable. Unused amounts: Carryback: 3 years (cannot carry back to a year prior to the credit's enactment); Carryforward: 20 years  _(NS ITA s. 47C)_
-
-### Qualifying property
-
-- **NSCITC qualifying property definition** — Property is qualifying property if it: 1. Was acquired after the enactment date (current program: post-2014 acquisitions); 2. Is prescribed property — i.e. Class 8, 29, 43, 53 capital cost allowance classes used primarily in qualifying activity in NS; 3. Used primarily in NS for one of: Manufacturing or processing of goods for sale or lease, Farming, Fishing, Logging; 4. Was new when acquired (used property does not qualify, with limited exceptions for refurbishment programs); 5. Was acquired from an arm's-length supplier (or at fair market value if non-arm's-length)  _(Capital Investment Tax Credit Regulations, NS Reg. under the NS Income Tax Act)_
-
-### Exclusions
-
-- **NSCITC exclusions** — Property used primarily for non-qualifying activity (administrative offices, retail, distribution to consumers); Property eligible for the Atlantic Investment Tax Credit at the federal level may still qualify for NSCITC (the two credits can stack, subject to the general anti-avoidance rules) — but verify each property's classification; Property leased to a person not engaged in qualifying activity in NS  _(Capital Investment Tax Credit Regulations, NS Reg. under the NS Income Tax Act)_
-
-### Mechanics
-
-- **NSCITC computation mechanics** — 1. Compute capital cost of qualifying property acquired in the year (net of GIA / government assistance other than NSCITC itself). 2. Apply 15% rate. 3. Reduce by any associated-corporation allocation under the $100M annual cap. 4. Claim on T2 Schedule 5 (provincial and territorial credits) with the NSCITC schedule. 5. Track unused balance on the corporation's continuity schedule for the 20-year carryforward.  _(NS ITA s. 47C)_
-
-### Worked snippet (Lunenburg seafood processor, $2M new processing line)
-
-Capital cost of qualifying property: $2,000,000
-NSCITC at 15%: $300,000
-Carryback potentially available against NS Part I tax in the three prior years
-Remaining balance carried forward up to 20 years if unused
-
-## 9. NS Film Industry Tax Credit
-
-### Status note
-
-- **Film Industry Tax Credit status note** — The original NS Film Industry Tax Credit was discontinued effective July 1, 2015 and replaced by the Nova Scotia Film and Television Production Incentive Fund — which is a direct grant program, not a tax credit. A separate Nova Scotia Film Industry Tax Credit Refund mechanism remains for productions that had already commenced under the pre-2015 regime, with limited transitional rules.
-
-### Current film-related tax measures in NS (2025)
-
-**Current film-related tax measures table**
-
-| Program | Type | Rate / structure |
-| --- | --- | --- |
-| Film and Television Production Incentive Fund | **Direct grant** (not tax credit) | Up to 25% of all eligible expenditure + Nova Scotia content/regional bonuses |
-| Co-Production Incentive | Direct grant | Similar structure, applied to certified treaty co-productions |
-| **NSDMTC** (Section 7 above) | Refundable tax credit | 25-30% labour — applies to interactive digital media, **not** linear film/TV |
-
-### Practitioner note
-
-If a client asks about the "Nova Scotia Film Tax Credit", clarify whether they mean:
-- The legacy 50% / 25% labour-based tax credit (now closed to new productions) — refuse and escalate; or
-- The current Film and Television Production Incentive Fund — refer to Film and Creative Industries Nova Scotia. This is a grant treated as government assistance on the corporate income tax return (reduces eligible cost / increases income), not a credit claimed on the T2.
-
-If asked to compute, refuse under R-NS-CR-5 / R-NS-CR-7 and refer to a film-specialist accountant.
-
-## 10. Form NS428 and the NS-BEN combined benefit form
-
-### Form NS428 — Nova Scotia Tax and Credits
-
-- **Form NS428 structure** — Form NS428 is the provincial schedule to the T1 General. Three steps: - Step 1 — NS tax on taxable income: applies the 2025 NS tax brackets to line 26000. - Step 2 — Non-refundable provincial credits: enters NS basic personal amount, spousal amount, age amount (with supplement where applicable), CPP/QPP, EI, NS volunteer firefighter, NS adoption expense, NS medical, NS donations, etc. Sum is multiplied by 8.79% (the lowest NS bracket rate). - Step 3 — Low-Income Tax Reduction: applies the LITR (Section 4) to reduce Step 2 NS tax to zero where applicable.
-
-### Form NS-BEN — Application for Nova Scotia Affordable Living Tax Credit and Poverty Reduction Credit
-
-- **Form NS-BEN details** — ALTC (Section 3) is auto-computed from the T1; no separate application required for residents who filed a T1. Poverty Reduction Credit (PRC): separate from ALTC; targeted at income assistance recipients; outside scope of this skill — escalate if claimed. NS-BEN is used principally by new residents who did not file a prior-year NS T1 to register for the ALTC payment stream. File NS-BEN at the same time as the first NS T1.
-
-## 11. Worked example — Halifax family, $60,000 income, 1 volunteer firefighter parent, 2 children
-
-### Facts
-
-Halifax resident family, both parents age 42
-Parent A: employment income $40,000, volunteer firefighter (220 hours certified)
-Parent B: employment income $20,000
-Two children, ages 8 and 11
-Family net income: $60,000
-Each parent files Form NS428
-
-### Step 1: ALTC (refundable, family-level)
-
-Base $255 + 2 × $60 = $375
-Phase-out: ($60,000 − $30,000) × 5% = $1,500
-Reduced credit: max($375 − $1,500, 0) = **$0**
-ALTC entitlement: nil at this income level.
-
-### Step 2: LITR (non-refundable, Parent A)
-
-Threshold (family, $18,000): exceeded
-Phase-out: ($60,000 − $18,000) × 5% = $2,100
-LITR notional: $300 + $300 + 2 × $165 = $930
-Reduced LITR: max($930 − $2,100, 0) = **$0**
-LITR: nil. (Note: in NS the LITR phase-out is calculated on family net income for couples, then allocated between the two NS428 forms — but at $60k family income the reduction zeroes the entire credit before allocation.)
-
-### Step 3: Volunteer Firefighter credit (Parent A only)
-
-$500 × 8.79% = **$43.95**
-Claimed on Parent A's NS428.
-
-### Step 4: NS tax on Parent A's $40,000 taxable income
-
-Bracket 1 (up to $29,590): $29,590 × 8.79% = $2,601.96
-Bracket 2 ($29,590 to $59,180): ($40,000 − $29,590) × 14.95% = $1,556.30
-Subtotal: $4,158.26
-Less basic personal credit: $8,744 × 8.79% = $768.60
-Less CPP/EI credits (approx): say $400
-Less volunteer firefighter: $43.95
-**Parent A NS tax**: approximately $2,946
-
-### Step 5: NS tax on Parent B's $20,000
-
-Bracket 1: $20,000 × 8.79% = $1,758
-Less basic personal: $768.60
-Less CPP/EI credits: say $200
-**Parent B NS tax**: approximately $789
-
-### Step 6: Combined household NS provincial outcome
-
-Total NS tax: ~$3,735
-ALTC refund: $0
-LITR offset: $0
-Volunteer firefighter saving: $43.95 (already absorbed into Parent A's NS tax computation)
-Net NS tax paid: **~$3,735**
-
-This household is above all the low-income relief thresholds and benefits only from the volunteer firefighter credit on the NS side. The bulk of household benefit comes through the federal Canada Child Benefit and the federal Volunteer Firefighters Amount (line 31220, $6,000 × 15% = $900), neither of which is computed in this skill.
-
-## 12. Conservative defaults
-
-- **Indexation**: if you cannot confirm whether a 2024 figure has been re-indexed for 2025, use the 2024 figure and flag the uncertainty in the reviewer brief. NS has a long history of frozen credit amounts (LITR amounts unchanged since 2010, ALTC base unchanged since 2012, NS age amount unchanged since 2010). Do not assume CPI indexation.
-- **NSDMTC certification status**: never claim the credit on a T2 until the Registration Certificate has been issued. Filing a T2 with the credit before certification is a deficient return and will be reassessed.
-- **NSCITC carryforward**: maintain a continuity schedule for every corporate client with NSCITC. The 20-year carryforward is generous but easily lost during reorganizations (acquisition of control limits under federal s. 111(4) apply to NSCITC via NS s. 47C(7) — escalate any AOC event).
-- **LITR allocation between spouses**: NS allows either spouse to claim the LITR, but only one spouse may claim it. Verify the higher-tax-payable spouse claims the full amount.
-- **Volunteer firefighter hours**: 199 hours = zero credit. There is no partial credit. If the certification letter shows 199 hours, refuse the credit and document the refusal.
-- **Repealed credits**: if prior-year filings claimed the Healthy Living or Sport and Recreation credit, do not repeat the claim; flag the prior-year filing for potential T1-ADJ if within three years.
-- **Provincial vs. federal stacking**: NSDMTC and federal SR&ED on the same labour cost — the federal SR&ED treats NSDMTC as government assistance, reducing federal qualifying expenditure. Always model both credits together before recommending which to maximize.
-- **Reviewer sign-off**: this skill produces a working draft only. A Canadian-licensed practitioner (CPA Canada / CPA Nova Scotia member, or a licensed tax preparer registered with CRA EFILE) must review and sign every output.
-
-## 13. Sources
-
-- **Nova Scotia Income Tax Act**, RSNS 1989, c. 217, as amended — primary authority for all NS personal and corporate credits. Sections cited: s. 10 (basic personal), s. 11 (spousal), s. 13 (age amount and supplement), s. 37A (LITR), s. 37C (volunteer firefighter / S&R), s. 40 (Equity Tax Credit), s. 47 (Innovation Equity Tax Credit), s. 47A–B (NSDMTC), s. 47C (NSCITC), s. 49 (Affordable Living Tax Credit).
-- **Digital Media Tax Credit Regulations**, NS Reg. under the NS Income Tax Act — definitions of eligible product, eligible labour, certification process.
-- **Capital Investment Tax Credit Regulations**, NS Reg. under the NS Income Tax Act — definitions of qualifying property, prescribed activity.
-- **Nova Scotia Department of Finance and Treasury Board** — annual Tax Measures bulletins, especially the 2024-25 and 2025-26 Budget bulletins for current-year amount confirmations and indexation status.
-- **Nova Scotia Department of Communities, Culture, Tourism and Heritage** — NSDMTC certification guidelines, eligible product determination guidance.
-- **Film and Creative Industries Nova Scotia** — Film and Television Production Incentive Fund (grant program, not a tax credit).
-- **Canada Revenue Agency** — Form NS428 (Nova Scotia Tax and Credits), Form NS-BEN (NS Affordable Living and Poverty Reduction Credits application), Form T2 Schedule 5 (provincial credits including NSDMTC and NSCITC line entries), and Provincial Income Tax Folio for Nova Scotia.
-- **Federal Income Tax Act** — incorporated by reference into NS ITA for most computational provisions; relevant sections include 110.1 (donations), 118 (personal credits), 118.06 (federal volunteer firefighter), 127.41 (provincial credits as government assistance).
-
-## Skill footer disclaimer
-
-Skill v1.0 — pending verification by Nova Scotia-licensed reviewer. Tax year 2025. All amounts subject to confirmation against the 2025-26 NS Budget Tax Measures bulletin before client-facing use.
+The annual provincial instructions read for this rewrite are the **2025 tax year, 2025-2026 filing cycle**, not final 2026 annual forms. Those instructions are used below only for the explicitly dated filing map and historical credit details. Do not put a 2026 figure on a 2025 return or assume a 2025 line number is final for 2026. Verify the released 2026 package before filing. For payments, current interest, instalment requirements and penalties, load the current federal filing/payment rules and the taxpayer's CRA account notices; the old guide's unsupported penalty/interest estimate is not a payment instruction.
+
+## Worked cases
+
+### ALTC comparison: retain both household examples
+
+Single parent, two qualifying children, AFNI CAD 25,000: annual ALTC CAD 375 and illustrative full quarter CAD 93.75. Couple, one qualifying child, AFNI CAD 40,000: maximum CAD 315 less CAD 500 phase-out, floored at zero. These belong to the **July 2026-June 2027 payment period** and use that period's assessed AFNI. [CRA current benefits](https://www.canada.ca/en/revenue-agency/services/child-family-benefits/provincial-territorial-programs/province-nova-scotia.html).
+
+```oa-check
+name: NS ALTC two retained household examples
+inputs:
+  afni_a: 25000
+  children_a: 2
+  afni_b: 40000
+  children_b: 1
+steps:
+  - annual_a: max(0, 255 + children_a * 60 - max(0, afni_a - 30000) * 0.05)
+  - quarter_a: annual_a / 4
+  - annual_b: max(0, 255 + children_b * 60 - max(0, afni_b - 30000) * 0.05)
+expected:
+  annual_a: 375
+  quarter_a: 93.75
+  annual_b: 0
+```
+
+### Halifax versus Sydney DMTC: apply both caps
+
+Retain the old project's numbers. Assume certifications establish a Halifax eligible product with total expenditure CAD 1,000,000 and qualifying expenditure CAD 700,000 after assistance and all prescribed adjustments. Credit is the lesser of CAD 350,000 and CAD 250,000: **CAD 250,000**, not CAD 175,000. For the Sydney project assume the actual regional labour test is documented, total expenditure CAD 500,000 and qualifying expenditure CAD 400,000: lesser of CAD 240,000 and CAD 150,000 gives **CAD 150,000**, not CAD 120,000. If Sydney fails the regional test, ordinary limbs give CAD 125,000; the city name alone does not justify the uplift. [Current programme](https://www.novascotia.ca/digital-media-tax-credit).
+
+```oa-check
+name: NS DMTC ordinary and regional decision
+inputs:
+  halifax_qualifying: 700000
+  halifax_total: 1000000
+  sydney_qualifying: 400000
+  sydney_total: 500000
+steps:
+  - halifax_credit: min(halifax_qualifying * 0.50, halifax_total * 0.25)
+  - sydney_regional: min(sydney_qualifying * 0.60, sydney_total * 0.30)
+  - sydney_without_regional: min(sydney_qualifying * 0.50, sydney_total * 0.25)
+expected:
+  halifax_credit: 250000
+  sydney_regional: 150000
+  sydney_without_regional: 125000
+```
+
+### Lunenburg seafood machine: project approval changes the answer
+
+Retain the CAD 2,000,000 line in Lunenburg. It does **not** by itself meet a project threshold above CAD 15 million, so the actual standalone case cannot claim merely from the invoice. If it is instead proven eligible property in an approved qualifying project and the net eligible 2026 cost is CAD 2,000,000 with project cap available, 25% gives CAD 500,000. This is a conditional refundable credit after tax, not the old CAD 300,000 non-refundable balance carried twenty years. Do not invent a larger project to approve the real taxpayer. [Capital programme](https://www.novascotia.ca/capital-investment-tax-credit); [project threshold](https://news.novascotia.ca/en/2026/09/04/capital-investment-tax-credit-extended).
+
+```oa-check
+name: NS CITC approved-project conditional 2026 slice
+inputs:
+  net_eligible_property: 2000000
+  available_project_credit_cap: 100000000
+steps:
+  - conditional_credit: min(net_eligible_property * 0.25, available_project_credit_cap)
+expected:
+  conditional_credit: 500000
+```
+
+### Halifax family and volunteer evidence
+
+Retain Parents A and B, incomes CAD 40,000/CAD 20,000, ages 42 and children aged 8/11. Assume those income figures are already their taxable income, each has the sourced CAD 11,932 BPA, no spouse/eligible-dependant amount and separately evidenced provincial credit dollars of CAD 400/CAD 200. This is a component illustration: combined provincial tax after those stated inputs is CAD 3,131.06. Parent A's 220 volunteer hours alone is **not** enough for the NS claim; if the separate six-month/participation/report conditions are proven, the CAD 500 refundable provincial credit reduces that provincial net cash slice to CAD 2,631.06. Without that evidence do not claim it. This is not a complete T1 or a recomputed LITR entitlement. Current family AFNI CAD 60,000 yields zero ALTC under its separate period formula. The old CAD 43.95 saving was wrong. [Current bands/bases](https://www.novascotia.ca/personal-income-tax-rates-and-indexation); [volunteer criteria](https://www.novascotia.ca/volunteer-firefighter-and-ground-search-and-rescue-worker-tax-credit).
+
+```oa-check
+name: NS Halifax family known provincial components and conditional volunteer
+inputs:
+  income_a: 40000
+  income_b: 20000
+  bpa: 11932
+  other_credit_a: 400
+  other_credit_b: 200
+steps:
+  - gross_a: 30995 * 0.0879 + (income_a - 30995) * 0.1495
+  - gross_b: income_b * 0.0879
+  - tax_a: max(0, gross_a - bpa * 0.0879 - other_credit_a)
+  - tax_b: max(0, gross_b - bpa * 0.0879 - other_credit_b)
+  - combined: round(tax_a + tax_b, 2)
+  - with_evidenced_volunteer: combined - 500
+expected:
+  combined: 3131.06
+  with_evidenced_volunteer: 2631.06
+```
+
+## When to refuse or refer
+
+- Stop the final calculation when residence, year, taxable income, family status, credit evidence or a current source needed for the answer is missing. State the exact missing fact; do not invent a conservative numeric default or relabel a prior-year amount as current.
+- Refer special returns, disputed residence, multiple-province business allocation, treaty income, minimum tax, tax on split income, Indigenous tax exemptions, trusts and corporate claims to the relevant specialist workflow. Do not turn “outside this ordinary computation” into an unsupported statement that no relief exists.
+- Do not substitute payroll withholding for annual tax, cash benefits for non-refundable credits, a provincial label for a federal credit, or a corporation's incentive for its shareholder's personal credit.
+- Do not promise a refund, investment eligibility, programme funding, investment value or professional approval. Obtain the relevant certificate and calculate tax and cash payments separately. Keep records supporting shared claims, carryovers, amendments and recapture.
+
+Additional stops: corporate project/media work requires a final certificate and evidence for the right base and period; below-threshold standalone capital property does not become eligible by assumption. Volunteer hours alone do not pass provincial conditions. No-current-source investment, film, LITR, poverty or graduate incentive remains a held question, not a denial that the programme could exist.
+
+## Sources
+
+| Official source and scope actually read | URL | Read on |
+|---|---|---|
+| Read for: NS current indexation page and principal credit table: actual 2026 values and old income-based supplement removal | https://www.novascotia.ca/personal-income-tax-rates-and-indexation | 2026-11-14 |
+| Read for: NS indexation notice both pages: annual credit maxima and scope of indexation | https://notices.novascotia.ca/files/ftb-taxation/ftb-tn-personal-income-tax-indexation-update-2025-12-31.pdf | 2026-11-14 |
+| Read for: NS age-credit factsheet: separate CAD 1,000 tax reduction and actual age/residence/income conditions | https://www.novascotia.ca/sites/default/files/documents/1-3953/tax-101-personal-income-tax-age-tax-credit-en.pdf | 2026-11-14 |
+| Read for: CRA 2025 NS guide: historical Parts A-C, family LITR inputs, food-bank and sports/arts rules, investment-form routes and refundable volunteer line | https://www.canada.ca/en/revenue-agency/services/forms-publications/tax-packages-years/general-income-tax-benefit-package/nova-scotia/5003-pc.html | 2026-11-14 |
+| Read for: NS current volunteer programme: refundable dollars, six-month/participation conditions and reporting | https://www.novascotia.ca/volunteer-firefighter-and-ground-search-and-rescue-worker-tax-credit | 2026-11-14 |
+| Read for: CRA NS benefits: current dated ALTC formula and monthly child benefit | https://www.canada.ca/en/revenue-agency/services/child-family-benefits/provincial-territorial-programs/province-nova-scotia.html | 2026-11-14 |
+| Read for: NS sports/arts factsheet, both pages: eligible expenditure, child/programme conditions and NS479 route | https://www.novascotia.ca/sites/default/files/documents/1-3953/tax-101-personal-income-tax-childrens-sports-arts-refundable-tax-credit-en.pdf | 2026-11-14 |
+| Read for: Current DMTC programme: ordinary/regional two-limb rates, project/corporation eligibility and application stages | https://www.novascotia.ca/digital-media-tax-credit | 2026-11-14 |
+| Read for: DMTC Regulations sections 2-10: product/corporation exclusions, expenditure bases, payment, assistance and application deadline | https://novascotia.ca/just/regulations/regs/incdigitalmedia.htm | 2026-11-14 |
+| Read for: CRA DMTC instructions: pre-2031 expenditure period, T2 destination and certificate handling | https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/corporations/provincial-territorial-corporation-tax/nova-scotia-provincial-corporation-tax/nova-scotia-digital-media-tax-credit.html | 2026-11-14 |
+| Read for: NS Capital Investment Tax Credit page: acquisition cohorts, net eligible cost, refundable project ceilings and Part A/B process | https://www.novascotia.ca/capital-investment-tax-credit | 2026-11-14 |
+| Read for: September 2026 official CITC extension: project threshold and 2035 application window | https://news.novascotia.ca/en/2026/09/04/capital-investment-tax-credit-extended | 2026-11-14 |
+| Read for: CRA NS R&D page: eligible PE/work, refundable rate, deadline, T2 lines and recapture | https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/corporations/provincial-territorial-corporation-tax/nova-scotia-provincial-corporation-tax/nova-scotia-research-development-tax-credit.html | 2026-11-14 |
+| Read for: Federal ITA section 150(1)(b),(d): ordinary/business/death filing rules | https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-150.html | 2026-11-14 |
+| Read for: CRA change-return instructions: assessment and adjustment process | https://www.canada.ca/en/services/taxes/income-tax/personal-income-tax/after-you-file/change-return.html | 2026-11-14 |
+
+Not yet confirmed: Final 2026 personal annual forms/line numbers; readable current LITR formula/threshold, including the original single/18,000-income example (the legislature and NS428 PDF reads failed); exact final sports/arts expense-to-credit conversion until the actual NS479 is read; current non-indexed pension/disability/medical/donation/dividend details beyond the historical guide; current Poverty Reduction Credit, graduate and temporary affordability programmes; film-tax-credit closure/transitions and current film-production fund; current equity/innovation credit rates, caps, holding/control and assistance rules beyond the dated 2025 filing routes; corporate CITC recapture/CCA and federal assistance interactions not established by the programme overview. Never label those held figures current or substitute prior-year defaults.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-07-13. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ns-tax-credits` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ns-tax-credits. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ns-tax-credits` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ns-tax-credits. If neither is available, confirm every figure against the official source pages cited above before relying on it.
