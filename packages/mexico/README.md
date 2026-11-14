@@ -20,17 +20,15 @@
 13. `mx-income-tax.md`
 14. `mx-payroll-withholding.md`
 15. `mx-social-contributions.md`
-16. `mx-vat-return.md`
-17. `references.md`
-18. `einvoice-workflow-base.md`
-19. `payroll-workflow-base.md`
-20. `transfer-pricing-workflow-base.md`
-21. `crypto-tax-workflow-base.md`
-22. `mexico-guided-intake.md`
-23. `mexico-return-assembly.md`
-24. `workflow-base.md`
-25. `income-tax-workflow-base.md`
-26. `vat-workflow-base.md`
+16. `references.md`
+17. `einvoice-workflow-base.md`
+18. `payroll-workflow-base.md`
+19. `transfer-pricing-workflow-base.md`
+20. `crypto-tax-workflow-base.md`
+21. `mexico-guided-intake.md`
+22. `mexico-return-assembly.md`
+23. `workflow-base.md`
+24. `income-tax-workflow-base.md`
 
 ## Also known as
 

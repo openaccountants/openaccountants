@@ -1,13 +1,14 @@
 ---
 name: ad-payroll-social
 description: "Andorra payroll and CASS social security for tax year 2026. Covers resident employee IRPF withholding, non-resident employment and the elected frontier or seasonal method, ordinary employee and employer contributions, working pension recipients, self-employed income and turnover tiers, director classification, startup reductions, the separate young-worker regime and health complements. Distinguishes the January and July minimum wages and the 2026 average-salary reference. Includes gross-to-net reconciliation, benefits and reimbursements, employer and worker registrations, monthly combined CASS and tax declarations, non-CASS filing, rate notices, regularisation and penalties. Use for Andorra payroll, employee net salary, employer cost, retencions, CASS0031, compte propi and contribution-base questions. Source-cited draft requiring professional review."
-version: 0.2
+version: 0.3
 jurisdiction: AD
 tax_year: 2026
-last_updated: 2026-10-28
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
+type: computation
 ---
 
 # Andorra payroll and social security, 2026

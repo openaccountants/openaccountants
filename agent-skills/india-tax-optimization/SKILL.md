@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/india-tax-optimization"
   jurisdiction: "IN"
   tax_year: "2026"
-  last_updated: "2026-11-07"
+  last_updated: "2026-11-14"
 ---
 
-# India Tax Optimization v1.2
+# India Tax Optimization v1.3
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -141,10 +141,10 @@ Rebate limits: s 198(7) keeps s 198 long-term gains out of the rebate. Whether s
 
 | Person | Rate | Surcharge and combined rate | Basis | URL |
 | --- | --- | --- | --- | --- |
-| Domestic company, s 200 option | 22% | 10% surcharge, 4% cess: 25.168% | ss 200, 205; Finance Act 2026 s 3(4)(b) Table, Sl. No. 9 | https://egazette.gov.in/WriteReadData/2026/271439.pdf |
-| Domestic manufacturing company, s 201 option | 15% on the qualifying income; 22% on the income in s 201 Table column C clause (b); 22% on short-term gains on an asset with no depreciation allowable (clause (c)); 30% on income deemed under s 205(4) (clause (d)) | 10% surcharge, 4% cess: 17.16% on the 15% slice. Set up and registered on or after 1 October 2019, and manufacturing begun by 31 March 2024, so a new company cannot meet it | s 201; same Sl. No. 9 | https://egazette.gov.in/WriteReadData/2025/265620.pdf |
+| Domestic company, s 200 option | 22% | 10% surcharge, 4% cess: 25.168% (computed) | ss 200, 205; Finance Act 2026 s 3(4)(b) Table, Sl. No. 9 | https://egazette.gov.in/WriteReadData/2026/271439.pdf |
+| Domestic manufacturing company, s 201 option | 15% on the qualifying income; 22% on the income in s 201 Table column C clause (b); 22% on short-term gains on an asset with no depreciation allowable (clause (c)); 30% on income deemed under s 205(4) (clause (d)) | 10% surcharge, 4% cess: 17.16% on the 15% slice (computed). Set up and registered on or after 1 October 2019, and manufacturing begun by 31 March 2024, so a new company cannot meet it | s 201; same Sl. No. 9 | https://egazette.gov.in/WriteReadData/2025/265620.pdf |
 | Other domestic company | 25% if turnover or gross receipts in 2024-25 did not exceed ₹400 crore; otherwise 30% | 7% over ₹1 crore to ₹10 crore; 12% over ₹10 crore; 4% cess | Finance Act 2026 Part I-B Paragraphs E and F | https://egazette.gov.in/WriteReadData/2026/271439.pdf |
-| Firm, including LLP | 30% | 12% over ₹1 crore; 4% cess: 31.2% or 34.944% | Finance Act 2026 Part I-B Paragraphs C and F; s 2(45) | https://egazette.gov.in/WriteReadData/2026/271439.pdf |
+| Firm, including LLP | 30% | 12% over ₹1 crore; 4% cess: 31.2% or 34.944% (computed) | Finance Act 2026 Part I-B Paragraphs C and F; s 2(45) | https://egazette.gov.in/WriteReadData/2026/271439.pdf |
 
 ### Deductions by regime
 
@@ -220,9 +220,9 @@ Column extraction in Appendix I was scrambled. The first Part A page was checked
 | Registration, special category | Over ₹10 lakh. On a State's request the Government may raise this by notification to no more than ₹20 lakh (second proviso); no such notification was read | s 22(1) and Explanation (iii): the States in Constitution article 279A(4)(g), except Jammu and Kashmir, Arunachal Pradesh, Assam, Himachal Pradesh, Meghalaya, Sikkim and Uttarakhand. Article 279A was not read, so the States left, inferred to be Manipur, Mizoram, Nagaland and Tripura, are held | https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/acts/2017_CGST_act/active/chapter6/section22_v1.00.html |
 | Registration, exclusive supplier of goods | Over ₹40 lakh | Notification 10/2019-Central Tax. Not for ice cream, pan masala or tobacco, compulsory registrants under s 24, voluntary registrants, or intra-State suppliers in Arunachal Pradesh, Manipur, Meghalaya, Mizoram, Nagaland, Puducherry, Sikkim, Telangana, Tripura and Uttarakhand | https://gstcouncil.gov.in/sites/default/files/2024-05/notfctn-10-central-tax-english-2019.pdf |
 | Composition limit | ₹1.5 crore in the preceding year; ₹75 lakh in Arunachal Pradesh, Manipur, Meghalaya, Mizoram, Nagaland, Sikkim, Tripura and Uttarakhand | CGST Act s 10(1); Notification 14/2019-Central Tax | https://gstcouncil.gov.in/sites/default/files/2024-05/notfctn-14-central-tax-english-2019.pdf |
-| Composition central tax rate | Manufacturers 0.5% of turnover; Schedule II paragraph 6(b) restaurant-type supplies 2.5%; other eligible suppliers 0.5% of taxable supplies | CGST Rules rule 7, read in the April 2019 edition | https://cbic-gst.gov.in/pdf/23042019-CGST-Rules-2017-Part-A-Rules.pdf |
+| Composition central tax rate | Manufacturers half per cent (0.5 per cent) of turnover; Schedule II paragraph 6(b) restaurant-type supplies two and a half per cent; other eligible suppliers half per cent of taxable supplies (rule 7 states the rates in words) | CGST Rules rule 7, read in the April 2019 edition | https://cbic-gst.gov.in/pdf/23042019-CGST-Rules-2017-Part-A-Rules.pdf |
 | Service supplier option | Preceding-year aggregate turnover up to ₹50 lakh; 3% central tax | CGST Act s 10(2A); rate as stated in CBIC Circular 97/16/2019-GST | https://cbic-gst.gov.in/pdf/circular-cgst-97.pdf |
-| Goods rates, IGST | Schedule I 5%, II 18%, III 40%, IV 3%, V 0.25%, VI 1.5%, VII 28% | Notification 9/2025-Integrated Tax (Rate), from 22 September 2025, read in an ICAI print hosted on CBIC | https://courier.cbic.gov.in/ECCS/advisory/2025/NOTIFICATION%20NO.%209_2025-INTEGRATED%20TAX%20(RATE)%20-1759486719.pdf |
+| Goods rates, IGST | Schedule I 5%, II 18%, III 40%, IV 3%, V 0.25%, VI 1.5%, VII 28% | Notification 9/2025-Integrated Tax (Rate), from 22 September 2025, read in an ICAI print hosted on CBIC | https://courier.cbic.gov.in/ECCS/advisory/2025/NOTIFICATION%20NO.%209_2025-INTEGRATED%20TAX%20%28RATE%29%20-1759486719.pdf |
 | E-invoicing limit | ₹5 crore from 1 August 2023 | Notification 10/2023-Central Tax, which substitutes that figure in Notification 13/2020 (not read) | https://einvoice6.gst.gov.in/content/wp-content/uploads/2023/05/GST-notification-10-central-tax-english-2023.pdf |
 
 The composition rates are central tax. State or Union territory tax is charged under that Act, which was not read, so the combined 1%, 5% and 6% in the earlier version are held as twice the central rate. Schedule VII keeps 28% for pan masala, tobacco and tobacco products, so the 28% rate was not abolished. Schedule IV Sl. No. 5 carries gold at heading 7108 at 3%.
@@ -235,8 +235,8 @@ The composition rates are central tax. State or Union territory tax is charged u
 | ESI coverage wage limit | ₹21,000 a month, pending rules | Ministry of Labour FAQ of 16 March 2026, reply 12 | https://www.labour.gov.in/static/uploads/2026/03/a4ccf4c6d97c4f1f36a6d83f8c64213d.pdf |
 | Employer contribution taxable in employee's hands | Aggregate over ₹7,50,000 a year to recognised provident fund, s 124(1) scheme and approved superannuation fund | Income-tax Act 2025 s 17(1)(h) | https://egazette.gov.in/WriteReadData/2025/265620.pdf |
 | Provident fund interest, taxable part | Interest on own contributions from 1 April 2021 above ₹2,50,000 a year, or ₹5,00,000 where the employer does not contribute | Schedule II Sl. Nos. 3 and 4 | https://egazette.gov.in/WriteReadData/2025/265620.pdf |
-| EPF 12%, EPS 8.33%, EPF balance 3.67% | unverified: held | Not read in a primary source. EPFO refused direct access. Use `in-pf-esi-employer` and check | unverified |
-| ESI 0.75% employee, 3.25% employer | unverified: held | Not read in a primary source. ESIC was unreachable. Use `in-pf-esi-employer` and check | unverified |
+
+EPF, EPS and ESI contribution rates are not given here: EPFO refused access and ESIC was unreachable on 14 Nov 2026, so no rate was read in a primary source. Use `in-pf-esi-employer` and check its source before applying any rate. They are listed under Not yet confirmed.
 
 ### Reporting thresholds
 
@@ -743,7 +743,7 @@ Questions come before any output, and an unanswered fact stays Needs Input.
 | Income-tax Act 1961, India Code copy archived 24 March 2026, read in part: arrangement of sections, ss 64 and 115-O headings and s 80D only. The copy omits s 115BAC | https://web.archive.org/web/20260324194825id_/https://www.indiacode.nic.in/bitstream/123456789/2435/1/a1961-43.pdf | 2026-11-06 |
 | Income-tax Rules 2026, G.S.R. 198(E), as notified 20 March 2026, Department copy archived that day, read in part: rules 25, 127, 128, 204, 205, 237, 278, 279, 280, Appendix I, and Forms 122, 124, 125 and 130 in part | https://web.archive.org/web/20260320162411id_/https://www.incometaxindia.gov.in/documents/d/guest/en-notified-it-rules-2026-20-03-2026-pdf | 2026-11-05 |
 | CBDT Circular 7/2026 of 28 September 2026, read in full, with an extraction warning at the end of the file | https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-09/Circular-7-2026.pdf | 2026-11-05 |
-| PFRDA (Exits and Withdrawals under the NPS) Regulations 2015, last amended 16 December 2025, read in part: regulations 3 and 4 | https://www.pfrda.org.in/documents/33652/184762/PFRDA+(Exits+and+Withdrawals+under+the+NPS)+Regulations,+2015+%5BLast+amended+on+16+December+2025%5D.pdf | 2026-11-05 |
+| PFRDA (Exits and Withdrawals under the NPS) Regulations 2015, last amended 16 December 2025, read in part: regulations 3 and 4 | https://www.pfrda.org.in/documents/33652/184762/PFRDA+%28Exits+and+Withdrawals+under+the+NPS%29+Regulations,+2015+%5BLast+amended+on+16+December+2025%5D.pdf | 2026-11-05 |
 | S.O. 5109(E) of 17 September 2026, Ministry of Labour and Employment, read in full | https://egazette.gov.in/WriteReadData/2026/276299.pdf | 2026-11-05 |
 | Ministry of Labour and Employment, additional FAQs on Labour Codes, as on 16 March 2026, read in part: replies on wages and ESI coverage | https://www.labour.gov.in/static/uploads/2026/03/a4ccf4c6d97c4f1f36a6d83f8c64213d.pdf | 2026-11-05 |
 | CGST Act s 10, CBIC tax information portal, undated text, read in part: sub-sections (1) to (5) | https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/acts/2017_CGST_act/active/chapter3/section10_v1.00.html | 2026-11-05 |
@@ -757,7 +757,7 @@ Questions come before any output, and an unanswered fact stays Needs Input.
 | Notification 10/2019-Central Tax, read in full | https://gstcouncil.gov.in/sites/default/files/2024-05/notfctn-10-central-tax-english-2019.pdf | 2026-11-05 |
 | Notification 14/2019-Central Tax, read in full | https://gstcouncil.gov.in/sites/default/files/2024-05/notfctn-14-central-tax-english-2019.pdf | 2026-11-05 |
 | Notification 10/2023-Central Tax, read in full | https://einvoice6.gst.gov.in/content/wp-content/uploads/2023/05/GST-notification-10-central-tax-english-2023.pdf | 2026-11-05 |
-| Notification 9/2025-Integrated Tax (Rate), ICAI print hosted on CBIC, read in part: Schedule headings, Schedules III and VII, Schedule IV Sl. No. 5 and paragraph 2 | https://courier.cbic.gov.in/ECCS/advisory/2025/NOTIFICATION%20NO.%209_2025-INTEGRATED%20TAX%20(RATE)%20-1759486719.pdf | 2026-11-05 |
+| Notification 9/2025-Integrated Tax (Rate), ICAI print hosted on CBIC, read in part: Schedule headings, Schedules III and VII, Schedule IV Sl. No. 5 and paragraph 2 | https://courier.cbic.gov.in/ECCS/advisory/2025/NOTIFICATION%20NO.%209_2025-INTEGRATED%20TAX%20%28RATE%29%20-1759486719.pdf | 2026-11-05 |
 | CBIC Circular 97/16/2019-GST of 5 April 2019, read in part: its first page. Notification 2/2019-Central Tax (Rate) itself was not read | https://cbic-gst.gov.in/pdf/circular-cgst-97.pdf | 2026-11-05 |
 
 Not yet confirmed: EPF, EPS, EDLI and ESI contribution rates and any schemes or rules under the Code on Social Security 2020 (EPFO refused access and ESIC was unreachable); whether the Labour Codes' wages definition sets the provident fund contribution base; Public Provident Fund, Sukanya Samriddhi, NSC and ELSS scheme limits, terms and lock-ins; 2025-26 slabs under 1961 Act s 115BAC; old section numbers beyond the 1961 arrangement of sections read; amendments to the Income-tax Rules 2026 after 20 March 2026 (the Department's site refused direct access), including any to rules 128, 204, 205, 237 and 279; amendments to the 2025 Act after the 12 June 2026 copy; whether Form 12BBA survives under another rule; whether Sl. No. 1 declarants under s 58 need books under s 62; s 156 against special-rate income other than s 198; the prescribed calculations for life policies outside the exemption (ss 67(5), 92(2)(l)); whether each s 425(2) limb relieves only its own instalment; the s 263(6) conditions; penalty immunity routes; Prohibition of Benami Property Transactions Act 1988 terms; rule 36(4) and the GSTR-2B link; State and Union territory GST rates and combined composition rates; Notification 2/2019-Central Tax (Rate) itself; CGST Rules after April 2019; IGST Act amendments, including to s 16(3); Notification 13/2020-Central Tax; that e-invoicing generates an invoice reference number through an NIC portal or improves credit accuracy; Constitution article 279A(4)(g), the special category States it leaves, and any notification raising their ₹10 lakh limit; later amendments to Notifications 10/2019 and 14/2019-Central Tax; rate notifications after 9/2025, and service rates.
@@ -773,4 +773,4 @@ This skill and its outputs are provided for informational and computational purp
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-07. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `india-tax-optimization` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/india-tax-optimization. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `india-tax-optimization` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/india-tax-optimization. If neither is available, confirm every figure against the official source pages cited above before relying on it.

@@ -8,16 +8,17 @@ description: >
   la source non resident Maroc", "Morocco withholding tax", "produits bruts article 15", "royalties
   Morocco", "societe non residente", "imposition forfaitaire 8%", "convention fiscale Maroc",
   "credit d'impot etranger", "الاقتطاع من المنبع المغرب". Replies in the user's language.
-version: 0.1
+version: 0.2
 jurisdiction: MA
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 category: cross-border
 tier: 2
 domain: cross-border
+type: situation-rules
 ---
 
-# Morocco cross-border tax v0.1
+# Morocco cross-border tax v0.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing position or professional obligations. Verify figures against the cited primary sources or with a licensed professional before relying on them.
 

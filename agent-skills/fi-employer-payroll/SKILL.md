@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/fi-employer-payroll"
   jurisdiction: "FI"
   tax_year: "2026"
-  last_updated: "2026-10-27"
+  last_updated: "2026-11-14"
 ---
 
-# Finland employer payroll reporting v0.11
+# Finland employer payroll reporting v0.12
 **Tax year:** 2026. Ordinary private-sector payroll, including taxable benefits. Independent source-review evidence is in the [pack README](README.md).
 
 ## Who this applies to
@@ -23,32 +23,32 @@ Keep cash wages, taxable benefits, tax-free reimbursements, statutory insurance 
 
 | Item | 2026 rule | Primary source |
 |---|---|---|
-| Wage withholding | Valid tax-card basic/additional rates and income ceiling; ordinary missing-data rate 60% where no other prescribed rate applies | [Prepayment Decree 1124/1996, sections 2–4][decree] |
-| Employer health | 1.91% of qualifying wages; starts the month after 16th birthday and ends after the month of 68th birthday, Finnish health coverage required | [Act 771/2016, sections 4–5][employer-health]; [Decree 1026/2025, section 3][health-rates] |
-| Employee health | Care 1.10% wage/work base; daily allowance 0.88% on its full qualifying base if annual wage/work total at least EUR 17,255; included in ordinary tax-card withholding | [Decree 1026/2025, sections 1–2][health-rates]; [Health Insurance Act chapter 18][health-law] |
-| Employee TyEL | 7.30% for covered employees in 2026; insurer invoices determine the full premium | [Employees Pensions Act, sections 152–153][tyel-law]; [Vero 2026 contributions][insurance] |
-| TyEL monthly minimum | EUR 71.72 per employee/employer in 2026: the Act's EUR 41.89 (section 4(3)(1)) × 2026 wage coefficient 1.712 (section 96). Below that in a calendar month, TyEL does not apply to that employee | [Employees Pensions Act, sections 4, 96][tyel-law]; [STM Decree 952/2025, section 1: 2026 coefficient 1.712][coef-2026]; [Finnish Centre for Pensions][etk-2026]; [indexed statutory amounts][tyel-index]; [Elo TyEL 2026 limit][tyel-elo] |
-| TyEL temporary employer | No continuous employee and fixed-term wages under EUR 10,272 per six months in 2026 (EUR 6,000 × 1.712); may insure without a contract | [Employees Pensions Act, sections 96, 147][tyel-law]; [STM Decree 952/2025][coef-2026]; [Finnish Centre for Pensions][etk-2026] |
-| TyEL ages | From month after 17th birthday; through birthday month for upper age 68 (born through 1957), 69 (1958–1961), 70 (1962 onward) | [Employees Pensions Act, section 4][tyel-law] |
-| Ordinary employer unemployment | 0.31% on ordinary annual payroll through EUR 2,509,500; 1.23% above | [Unemployment Financing Act 555/1998, section 18][fund-law] |
-| Employee unemployment | 0.89%; part-owner 0.39%; employer on part-owner wages 0.31% | [Unemployment Financing Act, section 18][fund-law] |
-| Unemployment small payroll | Fund-payment threshold EUR 1,500/year; employee deduction still required below threshold | [Act 555/1998, sections 12a, 21][fund-law]; [Employment Fund liability][fund-scope] |
-| Accident / group life | Employer-only actual policy premiums; accident policy required when the employer’s total calendar-year paid or agreed wages exceed EUR 1,500 in 2026; no universal flat rate | [Accident Act 459/2015, sections 3, 166, 268][accident-law]; [Vero 2026 contributions][insurance] |
+| Wage withholding | Valid tax-card basic/additional rates and income ceiling; ordinary missing-data rate 60% where no other prescribed rate applies | [Prepayment Decree 1124/1996, sections 2–4](https://www.finlex.fi/fi/lainsaadanto/1996/1124) |
+| Employer health | 1.91% of qualifying wages; starts the month after 16th birthday and ends after the month of 68th birthday, Finnish health coverage required | [Act 771/2016, sections 4–5](https://www.finlex.fi/fi/lainsaadanto/2016/771); [Decree 1026/2025, section 3](https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2025/1026) |
+| Employee health | Care 1.10% wage/work base; daily allowance 0.88% on its full qualifying base if annual wage/work total at least EUR 17,255; included in ordinary tax-card withholding | [Decree 1026/2025, sections 1–2](https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2025/1026); [Health Insurance Act chapter 18](https://www.finlex.fi/fi/lainsaadanto/2004/1224) |
+| Employee TyEL | 7.30% for covered employees in 2026; insurer invoices determine the full premium | [Employees Pensions Act, sections 152–153](https://www.finlex.fi/fi/lainsaadanto/2006/395); [Vero 2026 contributions](https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/being-an-employer/social-insurance-contributions/) |
+| TyEL monthly minimum | EUR 71.72 per employee/employer in 2026: the Act's EUR 41.89 (section 4(3)(1)) × 2026 wage coefficient 1.712 (section 96). Below that in a calendar month, TyEL does not apply to that employee | [Employees Pensions Act, sections 4, 96](https://www.finlex.fi/fi/lainsaadanto/2006/395); [STM Decree 952/2025, section 1: 2026 coefficient 1.712](https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2025/952); [Finnish Centre for Pensions](https://www.etk.fi/ajankohtaista/tyoelakkeisiin-tulossa-lahes-yhden-prosentin-korotus/); [indexed statutory amounts](https://www.telp.fi/indeksit/tyoelakelaeissa_saadetyt_rahamaarat_vuodesta-2/tyel_2026/); [Elo TyEL 2026 limit](https://www.elo.fi/en/employer/tyel-insurance/) |
+| TyEL temporary employer | No continuous employee and fixed-term wages under EUR 10,272 per six months in 2026 (computed: EUR 6,000 × 1.712); may insure without a contract | [Employees Pensions Act, sections 96, 147](https://www.finlex.fi/fi/lainsaadanto/2006/395); [STM Decree 952/2025](https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2025/952); [Finnish Centre for Pensions](https://www.etk.fi/ajankohtaista/tyoelakkeisiin-tulossa-lahes-yhden-prosentin-korotus/) |
+| TyEL ages | From month after 17th birthday; through birthday month for upper age 68 (born through 1957), 69 (1958–1961), 70 (1962 onward) | [Employees Pensions Act, section 4](https://www.finlex.fi/fi/lainsaadanto/2006/395) |
+| Ordinary employer unemployment | 0.31% on ordinary annual payroll through EUR 2,509,500; 1.23% above | [Unemployment Financing Act 555/1998, section 18](https://www.finlex.fi/fi/lainsaadanto/1998/555) |
+| Employee unemployment | 0.89%; part-owner 0.39%; employer on part-owner wages 0.31% | [Unemployment Financing Act, section 18](https://www.finlex.fi/fi/lainsaadanto/1998/555) |
+| Unemployment small payroll | Fund-payment threshold EUR 1,500/year; employee deduction still required below threshold | [Act 555/1998, sections 12a, 21](https://www.finlex.fi/fi/lainsaadanto/1998/555); [Employment Fund liability](https://www.tyollisyysrahasto.fi/en/Unemploymentinsurancecontribution/payment-liability-for-unemployment-insurance-contributions/) |
+| Accident / group life | Employer-only actual policy premiums; accident policy required when the employer’s total calendar-year paid or agreed wages exceed EUR 1,500 in 2026; no universal flat rate | [Accident Act 459/2015, sections 3, 166, 268](https://www.finlex.fi/fi/lainsaadanto/2015/459); [Vero 2026 contributions](https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/being-an-employer/social-insurance-contributions/) |
 
 Separate part-owner wages from the ordinary employer unemployment band. State enterprises' upper rate is 0.72% and universities' 0.79%, not the ordinary 1.23%. A TyEL average (24.40% total / 17.10% employer in 2026) is an estimate, not a substitute for the actual insurer rate, expenses, bonuses and large-employer risk component. [Unemployment Financing Act, section 18][fund-law]; [Ilmarinen contribution calculation][tyel-calculation].
 
 | Ordinary fringe benefit | 2026 valuation | Official annual decision provision |
 |---|---|---|
-| Mobile/fixed telephone private-use benefit | EUR 20/month | [Benefit Decision, section 26][benefits] |
-| Ordinary employer meal | EUR 8.80 if direct cost including VAT EUR 8.80–14.00; otherwise actual direct cost | [Sections 10–11][benefits] |
-| Qualifying restricted meal voucher | 75% nominal value, minimum EUR 8.80, nominal value at most EUR 14; otherwise nominal; working-day/use restrictions apply | [Sections 13–14][benefits] |
-| Unlimited / limited company car, first used 2024–2026 | Basic 1.5% adjusted replacement price + EUR 285 / 105 monthly, or 19 / 7 cents private km | [Sections 17–24][benefits] |
-| First used 2021–2023 | 1.2% + EUR 300 / 120 monthly, or 20 / 8 cents private km | [Sections 17–24][benefits] |
-| First used before 2021 | 0.9% + EUR 315 / 135 monthly, or 21 / 9 cents private km | [Sections 17–24][benefits] |
-| Workplace charging, own/limited-benefit car | EUR 30/month pure electric; EUR 20/month plug-in hybrid | [Section 25][benefits] |
-| Central-heated housing, Helsinki 1 / 2 | EUR 299 + 13.20/m² / EUR 298 + 12.10/m² per month | [Sections 2–8, postal-code map][benefits] |
-| Helsinki 3/Espoo/Kauniainen; Helsinki 4/Vantaa | EUR 266 + 11.20/m²; EUR 214 + 11.20/m² monthly | [Sections 2–8][benefits] |
-| Listed regional cities / other metropolitan municipalities; elsewhere | EUR 206 + 9.70/m²; EUR 178 + 8.70/m² monthly | [Sections 2–8, full location list][benefits] |
+| Mobile/fixed telephone private-use benefit | EUR 20/month | [Benefit Decision, section 26](https://www.vero.fi/en/detailed-guidance/decisions/47380/in-kind-benefits-fringe-benefits-2026/) |
+| Ordinary employer meal | EUR 8.80 if direct cost including VAT EUR 8.80–14.00; otherwise actual direct cost | [Sections 10–11](https://www.vero.fi/en/detailed-guidance/decisions/47380/in-kind-benefits-fringe-benefits-2026/) |
+| Qualifying restricted meal voucher | 75% nominal value, minimum EUR 8.80, nominal value at most EUR 14; otherwise nominal; working-day/use restrictions apply | [Sections 13–14](https://www.vero.fi/en/detailed-guidance/decisions/47380/in-kind-benefits-fringe-benefits-2026/) |
+| Unlimited / limited company car, first used 2024–2026 | Basic 1.5% adjusted replacement price + EUR 285 / 105 monthly, or 19 / 7 cents private km | [Sections 17–24](https://www.vero.fi/en/detailed-guidance/decisions/47380/in-kind-benefits-fringe-benefits-2026/) |
+| First used 2021–2023 | 1.2% + EUR 300 / 120 monthly, or 20 / 8 cents private km | [Sections 17–24](https://www.vero.fi/en/detailed-guidance/decisions/47380/in-kind-benefits-fringe-benefits-2026/) |
+| First used before 2021 | 0.9% + EUR 315 / 135 monthly, or 21 / 9 cents private km | [Sections 17–24](https://www.vero.fi/en/detailed-guidance/decisions/47380/in-kind-benefits-fringe-benefits-2026/) |
+| Workplace charging, own/limited-benefit car | EUR 30/month pure electric; EUR 20/month plug-in hybrid | [Section 25](https://www.vero.fi/en/detailed-guidance/decisions/47380/in-kind-benefits-fringe-benefits-2026/) |
+| Central-heated housing, Helsinki 1 / 2 | EUR 299 + 13.20/m² / EUR 298 + 12.10/m² per month | [Sections 2–8, postal-code map](https://www.vero.fi/en/detailed-guidance/decisions/47380/in-kind-benefits-fringe-benefits-2026/) |
+| Helsinki 3/Espoo/Kauniainen; Helsinki 4/Vantaa | EUR 266 + 11.20/m²; EUR 214 + 11.20/m² monthly | [Sections 2–8](https://www.vero.fi/en/detailed-guidance/decisions/47380/in-kind-benefits-fringe-benefits-2026/) |
+| Listed regional cities / other metropolitan municipalities; elsewhere | EUR 206 + 9.70/m²; EUR 178 + 8.70/m² monthly | [Sections 2–8, full location list](https://www.vero.fi/en/detailed-guidance/decisions/47380/in-kind-benefits-fringe-benefits-2026/) |
 
 These are valuation rules after eligibility/classification, not automatic benefits every worker has. Obtain the full annual decision for housing heating/electricity/garage exceptions and car details. [Benefit Decision][benefits].
 
@@ -220,4 +220,4 @@ Not yet confirmed: separately scoped public/seafarer/athlete schemes, share ince
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-27. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `fi-employer-payroll` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/fi-employer-payroll. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `fi-employer-payroll` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/fi-employer-payroll. If neither is available, confirm every figure against the official source pages cited above before relying on it.

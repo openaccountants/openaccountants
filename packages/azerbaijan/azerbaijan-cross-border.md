@@ -4,13 +4,14 @@ description: 'Use this skill for 2026 Azerbaijan cross-border income and corpora
 jurisdiction: AZ
 category: cross-border
 tax_year: 2026
-last_updated: 2026-10-31
-version: 0.1
+last_updated: 2026-11-14
+version: 0.2
 tier: 2
 domain: cross-border
+type: situation-rules
 ---
 
-# Azerbaijan Cross-border Tax, Treaties and Non-residents v0.1
+# Azerbaijan Cross-border Tax, Treaties and Non-residents v0.2
 
 > **Checked against the law.** Tax year 2026. Figures independently re-checked against the official sources on 31 October 2026. General reference for working papers; a qualified professional must review the facts and filing position. No accountant has signed this skill off.
 

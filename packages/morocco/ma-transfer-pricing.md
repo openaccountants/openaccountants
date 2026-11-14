@@ -9,16 +9,17 @@ description: >
   Maroc", "Morocco transfer pricing", "fichier principal", "fichier local", "declaration pays par
   pays Maroc", "CbCR Morocco", "accord prealable prix de transfert", "liens de dependance",
   "benefices indirectement transferes", "أسعار التحويل المغرب". Replies in the user's language.
-version: 0.1
+version: 0.2
 jurisdiction: MA
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 category: transfer-pricing
 tier: 2
 domain: transfer-pricing
+type: situation-rules
 ---
 
-# Morocco transfer pricing v0.1
+# Morocco transfer pricing v0.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing position or professional obligations. Verify figures against the cited primary sources or with a licensed professional before relying on them.
 

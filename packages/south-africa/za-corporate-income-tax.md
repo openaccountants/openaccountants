@@ -1,13 +1,14 @@
 ---
 name: za-corporate-income-tax
 description: "South African corporate income tax for companies and close corporations, for years of assessment ending 1 April 2026 to 31 March 2027, under the Income Tax Act 58 of 1962 and the Tax Administration Act 28 of 2011. Covers residence, the flat 27% company rate, the small business corporation (SBC) bands and qualifying tests, SBC allowances, the assessed loss cap (higher of R1 million and 80% of taxable income), provisional tax, the underestimation and late-payment penalties, interest, the ITR14, fixed administrative penalties, dividends tax and withholding on payments to non-residents. Trigger on: South Africa company tax, CIT rate South Africa, SBC tax rates, small business corporation, ITR14, IRP6 company, provisional tax company, assessed loss 80%, Pty Ltd tax, close corporation tax. Out of scope: individuals (za-income-tax), payroll and UIF/SDL (za-payroll-paye-uif-sdl), VAT (za-vat-return), turnover tax for micro businesses, transfer pricing (south-africa-transfer-pricing)."
-version: 0.1
+version: 0.2
 jurisdiction: ZA
 tax_year: 2026
-last_updated: 2026-11-02
+last_updated: 2026-11-14
 category: international
 tier: 2
 domain: corporate-tax
+type: computation
 ---
 
 # South African corporate income tax: 2026/27 rates, SBC bands, losses, provisional tax and filing
