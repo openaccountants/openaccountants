@@ -141,7 +141,7 @@ The case facts are invented. Recurring-tax amounts below illustrate the rules ow
 
 **Case 1: venture-track corporation, "startup standard" shares.** Assume the corporation was formed on 1 January 2026, operated throughout the year and had no capital amendments. Two founders authorize 10,000,000 authorized shares at $0.0001 par and issue 8,000,000 to themselves. At year-end, gross assets on Form 1120 Schedule L are $100,000. [How to calculate](https://corp.delaware.gov/frtaxcalc/)
 
-- Filing fee: the stock fee is at the $15 minimum, so the fee is $109, plus $50 for 24-hour service. [§ 391](https://delcode.delaware.gov/title8/c001/sc18/index.html); [Fee schedule](https://corpfiles.delaware.gov/Fee_Schedule/AugustFee2026.pdf)
+- **Separate current filing illustration:** an identically capitalized new corporation filing on or after 1 August 2026 has the $15 minimum stock component and the scheduled $109 filing fee, plus $50 for 24-hour service, a total of $159. This is not the 1 January corporation's historical formation fee. [§ 391](https://delcode.delaware.gov/title8/c001/sc18/index.html); [Fee schedule](https://corpfiles.delaware.gov/Fee_Schedule/AugustFee2026.pdf)
 - Authorized Shares method: $250 + 999 × $85 = $85,165. [How to calculate](https://corp.delaware.gov/frtaxcalc/)
 - Assumed Par Value Capital method: assumed par $100,000 ÷ 8,000,000 = $0.0125. That is above the $0.0001 par, so capital = $0.0125 × 10,000,000 = $125,000. Tax = $125,000 ÷ $1,000,000 × $400 = $50, raised to the $400 minimum. [How to calculate](https://corp.delaware.gov/frtaxcalc/)
 - Due by 1 March: the $400 tax plus the $50 annual-report fee = $450. Report the issued shares and gross assets so the lower method applies. [Division](https://corp.delaware.gov/paytaxes/)
