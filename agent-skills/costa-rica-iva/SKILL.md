@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/costa-rica-iva"
   jurisdiction: "CR"
   tax_year: "2026"
-  last_updated: "2026-10-16"
+  last_updated: "2026-11-14"
 ---
 
 # Costa Rica IVA (Impuesto sobre el Valor Agregado)
@@ -69,7 +69,7 @@ Law as published: [Ley 9635, Título I (SCIJ)](https://www.pgrweb.go.cr/DOCS/NOR
 
 | Situation | Treatment | Condition or trap |
 | --- | --- | --- |
-| Rent of property used exclusively as housing ("destinados exclusivamente a viviendas"), including garages, annexes and furniture let together | Exempt if the monthly rent is equal to or less than 1.5 salarios base (CRC 693,300 in 2026) | A mixed-use let (for example a home that also serves as an office or shop) is not used exclusively as housing, so it does not qualify under this heading: treat it at 13% unless another exemption applies, and refer if unsure. If the rent exceeds the ceiling, 13% applies to the **whole** rent, not only the excess: "el impuesto se aplicará al total de la renta" (art. 8(9)) ([Ley 6826 art. 8](https://www.pgrweb.go.cr/DOCS/NORMAS/1/NOVIGEN/L/2010-2019/2015-2019/2018/156A8/127E2C.HTML)) |
+| Rent of property used exclusively as housing ("destinados exclusivamente a viviendas"), including garages, annexes and furniture let together | Exempt if the monthly rent is equal to or less than 1.5 salarios base (CRC 693,300 in 2026, computed: 1.5 x CRC 462,200) | A mixed-use let (for example a home that also serves as an office or shop) is not used exclusively as housing, so it does not qualify under this heading: treat it at 13% unless another exemption applies, and refer if unsure. If the rent exceeds the ceiling, 13% applies to the **whole** rent, not only the excess: "el impuesto se aplicará al total de la renta" (art. 8(9)) ([Ley 6826 art. 8](https://www.pgrweb.go.cr/DOCS/NORMAS/1/NOVIGEN/L/2010-2019/2015-2019/2018/156A8/127E2C.HTML)) |
 | Rent paid by micro and small businesses registered with MEIC, or micro and small farm businesses registered with MAG | Exempt up to the same 1.5 salarios base ceiling | Needs the authorisation issued through EXONET (Hacienda rent guidance) |
 | Rent of premises used for worship by religious organisations | Exempt | art. 8(9) |
 | Interest and commissions on loans and credit; invoice discounting; financial and operating leases that work as financing; transfers through SUGEF-supervised entities; deposit-taking from the public; cash withdrawals by any means; paying bills and taxes through a financial entity; buying, selling or exchanging foreign currency and similar FX services; card commissions; bank guarantees; pension-fund commissions | Exempt | art. 8(3)-(7), law as published. This is a list, not a blanket "financial services" exemption. A bank fee for a service that none of these items covers is not exempt under this row: check it against the current art. 8 before charging 13% ([Ley 6826 art. 8](https://www.pgrweb.go.cr/DOCS/NORMAS/1/NOVIGEN/L/2010-2019/2015-2019/2018/156A8/127E2C.HTML)) |
@@ -111,6 +111,34 @@ All amounts are hypothetical and are in colones before tax unless stated otherwi
 **Case 1: consulting fee at the general rate.** A San José consultancy invoices a local company CRC 1,000,000 plus tax in March 2026. Output tax: 13% × CRC 1,000,000 = CRC 130,000, reported on the March return. That return is due by the fifteenth of April 2026. ([rate: Ley 6826 art. 10](https://www.pgrweb.go.cr/DOCS/NORMAS/1/NOVIGEN/L/2010-2019/2015-2019/2018/156A8/127E2C.HTML))
 
 **Case 2: housing rent above the ceiling.** A landlord lets a furnished flat for CRC 800,000 a month in 2026. The ceiling is CRC 693,300 (1.5 × CRC 462,200). The rent exceeds it, so tax applies to the whole rent: 13% × CRC 800,000 = CRC 104,000 a month. It is not charged only on the excess. At a rent of CRC 693,300 or less, the rent would be exempt. ([Hacienda rent guidance](https://www.hacienda.go.cr/docs/ArrendamientoBienesMueblesInmuebles.pdf))
+
+```oa-check
+name: CR 2026 IVA consulting fee at 13%
+inputs:
+  fee: 1000000
+steps:
+  - output_tax: fee * 0.13
+expected:
+  output_tax: 130000
+```
+
+```oa-check
+name: CR 2026 housing rent ceiling decides IVA on the whole rent
+inputs:
+  salario_base: 462200
+  rent_a: 800000
+  rent_b: 690000
+steps:
+  - ceiling: salario_base * 1.5
+  - tax_a: rent_a * 0.13 * min(max(rent_a - ceiling, 0), 1)
+  - tax_b: rent_b * 0.13 * min(max(rent_b - ceiling, 0), 1)
+expected:
+  ceiling: 693300
+  tax_a: 104000
+  tax_b: 0
+```
+
+Case 2 is the decision: a rent of CRC 690,000 stays exempt, while CRC 800,000 is taxed in full (CRC 104,000 a month). A landlord near the ceiling should know that crossing it by one colón taxes the whole rent.
 
 **Case 3: private clinic.** An authorised private clinic charges CRC 500,000 for a consultation and tests. Tax: 4% × CRC 500,000 = CRC 20,000. If the clinic also bills a companion's lodging, that lodging is at 13% and goes on a separate line. When the patient pays by credit or debit card, the provider refunds the tax to the patient on the spot and claims it as a payment on account (pago a cuenta) in its monthly return (Hacienda health-services note). ([Hacienda health-services note](https://www.hacienda.go.cr/docs/ServiciosSaludHumanaPrivada.pdf))
 
@@ -167,6 +195,18 @@ Source: [Hacienda, "Infracciones y Sanciones Administrativas más relevantes", u
 - [ ] Credit balance carried forward or claimed under arts. 45 and 47 of the Código.
 - [ ] Any late filing or payment penalty self-assessed on D-176, with the art. 88 reduction claimed where it is still available.
 
+## Sources
+
+| Source | URL | Read on |
+| --- | --- | --- |
+| Read for Ley 9635 Title I (Ley 6826 as rewritten), SCIJ copy: arts. 4, 5, 8 (rent, electricity, water), 10 (13%), 11 (4%, 2%, 1%), 26, 27 (decimoquinto dia natural) | https://www.pgrweb.go.cr/DOCS/NORMAS/1/NOVIGEN/L/2010-2019/2015-2019/2018/156A8/127E2C.HTML | 2026-11-14 |
+| Read for the Hacienda salario base table: CRC 462,200 for 1 January to 31 December 2026 (Circular 246-2025) | https://www.hacienda.go.cr/docs/SalariosBaseActualEHistorico.pdf | 2026-11-14 |
+| Read for Hacienda, Infracciones y sanciones administrativas mas relevantes (2026): arts. 78, 79, 80, 84, 85 and the art. 88 reductions | https://www.hacienda.go.cr/docs/InfraccionesYSancionesAdministrativasMasRelevantes.pdf | 2026-11-14 |
+| Read for Hacienda rent guidance: exempt housing and small-business rent up to 1.5 salarios base, 13% on the whole rent above it, EXONET | https://www.hacienda.go.cr/docs/ArrendamientoBienesMueblesInmuebles.pdf | 2026-11-14 |
+| Read for Hacienda note on private human health services: 4% rate, separate lines, card refund | https://www.hacienda.go.cr/docs/ServiciosSaludHumanaPrivada.pdf | 2026-11-14 |
+
+Not yet confirmed: the DGT deck of July 2021, the draft 2025 form resolution and Canasta Basica decree 43790-H-MEIC-S, cited in the body from the previous version, were not re-opened in this pass; the current consolidated text of arts. 8, 9, 11 and 19 after later amendments (SCIJ copy read is the law as published); what the 0.5% and 3% return columns cover; whether a newer Canasta Basica decree replaces 43790-H-MEIC-S; the 2021 DGT deck points (air ticket base, phase-in end dates, pre-operating credit) were not re-read in this pass; late-payment interest.
+
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-16. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `costa-rica-iva` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/costa-rica-iva. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `costa-rica-iva` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/costa-rica-iva. If neither is available, confirm every figure against the official source pages cited above before relying on it.

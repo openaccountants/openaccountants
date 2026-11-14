@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/ukraine-vat"
   jurisdiction: "UA"
   tax_year: "2026"
-  last_updated: "2026-10-30"
+  last_updated: "2026-11-14"
 ---
 
 # Ukraine VAT
@@ -72,21 +72,21 @@ Ukraine has been under martial law since 24 February 2022 (Presidential Decree N
 
 | Exempt supply | TCU article |
 |---|---|
-| Baby food and infant goods on the Cabinet list | 197.1.1 |
-| Higher, secondary, vocational and pre-school education by licensed institutions | 197.1.2 |
-| Rehabilitation aids and special-purpose goods for people with disabilities | 197.1.3 |
-| Delivery of pensions, insurance payments and cash aid to the public | 197.1.4 |
-| Medical services by licensed healthcare institutions | 197.1.5 |
-| Childcare, rehabilitation stays, social services, school and hospital meals | 197.1.7 |
-| Urban public transport (not taxis) at regulated fares | 197.1.8 |
-| Religious services and religious items supplied by religious organisations | 197.1.9 |
-| Funeral services and goods of state and municipal services | 197.1.10 |
-| Supply of housing, except the first supply | 197.1.14 |
-| Charitable aid, including free supplies to registered charities | 197.1.15 |
-| Land plots and land shares, except land under buildings | 197.1.21 |
-| Domestic printed periodicals and their distribution | 197.1.25 |
-| Supplies to the National Bank of Ukraine (listed items) | 197.19 |
-| Import of renewable-energy and energy-saving equipment and materials | 197.16 |
+| Baby food and infant goods on the Cabinet list | 197.1.1, https://zakon.rada.gov.ua/laws/show/2755-17 |
+| Higher, secondary, vocational and pre-school education by licensed institutions | 197.1.2, https://zakon.rada.gov.ua/laws/show/2755-17 |
+| Rehabilitation aids and special-purpose goods for people with disabilities | 197.1.3, https://zakon.rada.gov.ua/laws/show/2755-17 |
+| Delivery of pensions, insurance payments and cash aid to the public | 197.1.4, https://zakon.rada.gov.ua/laws/show/2755-17 |
+| Medical services by licensed healthcare institutions | 197.1.5, https://zakon.rada.gov.ua/laws/show/2755-17 |
+| Childcare, rehabilitation stays, social services, school and hospital meals | 197.1.7, https://zakon.rada.gov.ua/laws/show/2755-17 |
+| Urban public transport (not taxis) at regulated fares | 197.1.8, https://zakon.rada.gov.ua/laws/show/2755-17 |
+| Religious services and religious items supplied by religious organisations | 197.1.9, https://zakon.rada.gov.ua/laws/show/2755-17 |
+| Funeral services and goods of state and municipal services | 197.1.10, https://zakon.rada.gov.ua/laws/show/2755-17 |
+| Supply of housing, except the first supply | 197.1.14, https://zakon.rada.gov.ua/laws/show/2755-17 |
+| Charitable aid, including free supplies to registered charities | 197.1.15, https://zakon.rada.gov.ua/laws/show/2755-17 |
+| Land plots and land shares, except land under buildings | 197.1.21, https://zakon.rada.gov.ua/laws/show/2755-17 |
+| Domestic printed periodicals and their distribution | 197.1.25, https://zakon.rada.gov.ua/laws/show/2755-17 |
+| Supplies to the National Bank of Ukraine (listed items) | 197.19, https://zakon.rada.gov.ua/laws/show/2755-17 |
+| Import of renewable-energy and energy-saving equipment and materials | 197.16, https://zakon.rada.gov.ua/laws/show/2755-17 |
 
 A tax invoice for an exempt supply carries the note "Bez PDV" with the article that grants the exemption (art. 201.3).
 
@@ -304,4 +304,4 @@ Not yet confirmed: the VAT return form, its line numbers and its annexes (the Mi
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-30. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ukraine-vat` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ukraine-vat. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ukraine-vat` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ukraine-vat. If neither is available, confirm every figure against the official source pages cited above before relying on it.

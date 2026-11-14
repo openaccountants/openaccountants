@@ -2,19 +2,20 @@
 name: ivory-coast-income-tax
 description: >
   Use this skill for Côte d'Ivoire (Ivory Coast) income tax in 2026: salary tax ITS with the RICF family reduction, business profit under BIC, BA and BNC, the entreprenant taxes, the microenterprise tax, RSI and RNI regimes, minimum tax IMF, withholding, dividends and patente. It covers employees, sole traders, professionals and companies. Trigger on "impôt sur les salaires", "ITS", "net pay Abidjan", "régime de l'entreprenant", "microentreprise", "BIC", "BNC", "IMF", "DGI", "e-impots" or "how much tax do I pay in Ivory Coast". It includes the Annexe fiscale 2026 changes: quarterly TEE and micro payments, mobile money deductibility, beneficial owner form and notes to the accounts.
-version: 0.2
+version: 0.3
 jurisdiction: CI
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 depends_on:
   - income-tax-workflow-base
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
+type: computation
 ---
 
-# Côte d'Ivoire (Ivory Coast) Income Tax v0.2
+# Côte d'Ivoire (Ivory Coast) Income Tax v0.3
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it without checking the cited official source or a licensed professional.
 

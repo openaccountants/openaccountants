@@ -1,19 +1,20 @@
 ---
 name: eg-corporate-tax
 description: Use this skill whenever asked about Egyptian corporate income tax for tax year 2026 on resident companies, partnerships, branches and permanent establishments of foreign companies, to compute, review, or explain the tax on legal persons' profits, deductions, thin capitalisation, losses, depreciation, dividends, capital gains, advance payments and the annual return. Trigger on phrases like "Egypt corporate tax", "Egypt CIT", "Egyptian company tax", "22.5% Egypt", "thin cap Egypt", "ضريبة أرباح الأشخاص الاعتبارية", "ضريبة دخل الشركات", "إقرار الشركات", "permanent establishment Egypt", or any request to prepare or check an Egyptian company tax return. ALWAYS read this skill before touching any Egypt corporate tax work.
-version: 0.2
+version: 0.3
 jurisdiction: EG
 tax_year: 2026
-last_updated: 2026-11-02
+last_updated: 2026-11-14
 depends_on:
   - income-tax-workflow-base
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: corporate-tax
+type: computation
 ---
 
-# EG Corporate Tax v0.2
+# EG Corporate Tax v0.3
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 

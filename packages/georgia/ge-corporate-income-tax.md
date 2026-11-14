@@ -1,11 +1,12 @@
 ---
 name: ge-corporate-income-tax
 description: "Profit tax (corporate income tax) in Georgia (the country, GE) for tax year 2026, under Chapter XIII of the Tax Code of Georgia. Covers who pays; the distributed-profit model, where a company pays 15% only when it pays dividends, spends money on things unrelated to its business, gives things away free, or exceeds the 1% entertainment cap; the 0.85 gross-up; the 20% annual-profit regime for banks, credit unions, microfinance organisations and loan providers; the international company 5% rate; key exemptions; the monthly return and payment by the 15th; withholding on dividends, interest and royalties (5%) and on other payments to non-residents (10%, or 15% to preferential tax countries); penalty interest of 0.05% a day and the late-filing and understatement fines. Trigger phrases: Georgia profit tax, Estonian model Georgia, distributed profit tax Georgia, 15% Georgia company tax, dividend tax Georgia LLC, rs.ge profit tax return. Out of scope: personal income tax (georgia-income-tax), VAT (georgia-vat), payroll (georgia-payroll), pension contributions (georgia-social-contributions), planning (georgia-tax-optimization), formation (ge-company-formation)."
-version: 1.0
+version: 1.1
+type: computation
 jurisdiction: GE
 category: international
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
@@ -32,27 +33,27 @@ Since 1 January 2017 most companies are not taxed on the profit they earn in a y
 | Item | Rate or amount | Year | Source URL |
 |---|---|---|---|
 | Standard profit tax rate | 15% | 2026 | https://matsne.gov.ge/en/document/view/1043717?publication=247 (art. 98(1)) |
-| Gross-up for distributed-profit items | taxable amount = amount paid / 0.85 | 2026 | same, art. 97(10) |
-| Effective rate on the net amount paid | 15 / 85 = about 17.65% | 2026 | derived from arts. 97(10), 98(1) |
-| Banks, credit unions, microfinance organisations, loan providers (annual profit) | 20% | 2026 | same, art. 98(4) |
-| Slot machine salons and online games of chance (domestic players); the base is bets accepted less winnings paid (art. 97(9^1)) | 20% | 2026 | same, art. 98(6) |
-| Online games of chance and betting, profit from foreign-citizen players | 5% | 2026 | same, art. 98(5) |
-| Oil and gas "existing agreements" signed before 1 January 1998 | 10% | 2026 | same, art. 98(2) |
-| International company (status granted by the Government) | 5%; gross-up / 0.95 | 2026 | same, art. 23(10), (11) |
-| Entertainment cap | 1% of prior-year income (1% of expenses if expenses exceed income); first year: 1% of expenses to year end | 2026 | same, art. 98^4(2), (3) |
-| Donations to charities not taxed | up to 10% of prior-year net profit | 2026 | same, art. 98^3(3)(a) |
-| Withholding on dividends (to individuals, non-profits, non-residents) | 5% | 2026 | same, art. 130(1) |
-| Dividends received by a Georgian company (a form listed in art. 2(3) of the Law on Entrepreneurs, other than an individual enterprise) | not taxed at source | 2026 | same, art. 130(2) |
-| Dividends paid by a bank, credit union, microfinance organisation or loan provider out of profit earned in 2023 or later | not taxed at source | 2026 | same, art. 130(8) |
-| Withholding on interest (to individuals, non-residents without a PE) | 5% | 2026 | same, art. 131(1) |
-| Interest paid by a licensed Georgian financial institution | not taxed at source | 2026 | same, art. 131(5) |
-| Withholding on royalties paid to non-residents | 5% | 2026 | same, art. 134(1)(b^1) |
-| Withholding on royalties paid to resident individuals | 20% | 2026 | same, art. 132(1) |
-| Other Georgian-source payments to non-residents | 10% | 2026 | same, art. 134(1)(e) |
-| International telecom and transport services paid to non-residents | 10% | 2026 | same, art. 134(1)(c) |
-| Interest, royalties and other payments to a person in a preferential tax country | 15% | 2026 | same, art. 134(1^1) |
-| Preferential tax country test | no profit tax, or a rate not over 1/3 of the Georgian rate | 2026 | same, art. 98^2(5) |
-| Penalty interest on late payment | 0.05% of the unpaid tax per day | 2026 | same, art. 272(4) |
+| Gross-up for distributed-profit items | taxable amount = amount paid / 0.85 | 2026 | https://matsne.gov.ge/en/document/view/1043717?publication=247, art. 97(10) |
+| Effective rate on the net amount paid | 15 / 85 = about 17.65% | 2026 | derived from arts. 97(10), 98(1), https://matsne.gov.ge/en/document/view/1043717?publication=247 |
+| Banks, credit unions, microfinance organisations, loan providers (annual profit) | 20% | 2026 | https://matsne.gov.ge/en/document/view/1043717?publication=247, art. 98(4) |
+| Slot machine salons and online games of chance (domestic players); the base is bets accepted less winnings paid (art. 97(9^1)) | 20% | 2026 | https://matsne.gov.ge/en/document/view/1043717?publication=247, art. 98(6) |
+| Online games of chance and betting, profit from foreign-citizen players | 5% | 2026 | https://matsne.gov.ge/en/document/view/1043717?publication=247, art. 98(5) |
+| Oil and gas "existing agreements" signed before 1 January 1998 | 10% | 2026 | https://matsne.gov.ge/en/document/view/1043717?publication=247, art. 98(2) |
+| International company (status granted by the Government) | 5%; gross-up / 0.95 | 2026 | https://matsne.gov.ge/en/document/view/1043717?publication=247, art. 23(10), (11) |
+| Entertainment cap | 1% of prior-year income (1% of expenses if expenses exceed income); first year: 1% of expenses to year end | 2026 | https://matsne.gov.ge/en/document/view/1043717?publication=247, art. 98^4(2), (3) |
+| Donations to charities not taxed | up to 10% of prior-year net profit | 2026 | https://matsne.gov.ge/en/document/view/1043717?publication=247, art. 98^3(3)(a) |
+| Withholding on dividends (to individuals, non-profits, non-residents) | 5% | 2026 | https://matsne.gov.ge/en/document/view/1043717?publication=247, art. 130(1) |
+| Dividends received by a Georgian company (a form listed in art. 2(3) of the Law on Entrepreneurs, other than an individual enterprise) | not taxed at source | 2026 | https://matsne.gov.ge/en/document/view/1043717?publication=247, art. 130(2) |
+| Dividends paid by a bank, credit union, microfinance organisation or loan provider out of profit earned in 2023 or later | not taxed at source | 2026 | https://matsne.gov.ge/en/document/view/1043717?publication=247, art. 130(8) |
+| Withholding on interest (to individuals, non-residents without a PE) | 5% | 2026 | https://matsne.gov.ge/en/document/view/1043717?publication=247, art. 131(1) |
+| Interest paid by a licensed Georgian financial institution | not taxed at source | 2026 | https://matsne.gov.ge/en/document/view/1043717?publication=247, art. 131(5) |
+| Withholding on royalties paid to non-residents | 5% | 2026 | https://matsne.gov.ge/en/document/view/1043717?publication=247, art. 134(1)(b^1) |
+| Withholding on royalties paid to resident individuals | 20% | 2026 | https://matsne.gov.ge/en/document/view/1043717?publication=247, art. 132(1) |
+| Other Georgian-source payments to non-residents | 10% | 2026 | https://matsne.gov.ge/en/document/view/1043717?publication=247, art. 134(1)(e) |
+| International telecom and transport services paid to non-residents | 10% | 2026 | https://matsne.gov.ge/en/document/view/1043717?publication=247, art. 134(1)(c) |
+| Interest, royalties and other payments to a person in a preferential tax country | 15% | 2026 | https://matsne.gov.ge/en/document/view/1043717?publication=247, art. 134(1^1) |
+| Preferential tax country test | no profit tax, or a rate not over 1/3 of the Georgian rate | 2026 | https://matsne.gov.ge/en/document/view/1043717?publication=247, art. 98^2(5) |
+| Penalty interest on late payment | 0.05% of the unpaid tax per day | 2026 | https://matsne.gov.ge/en/document/view/1043717?publication=247, art. 272(4) |
 
 ## The taxable base
 

@@ -11,12 +11,10 @@
 4. `bermuda-tax.md`
 5. `bm-company-formation.md`
 6. `bm-corporate-income-tax.md`
-7. `bm-income-tax.md`
-8. `bm-payroll-social.md`
-9. `bm-tax-overview.md`
-10. `payroll-workflow-base.md`
-11. `company-formation-workflow-base.md`
-12. `workflow-base.md`
+7. `bm-payroll-social.md`
+8. `payroll-workflow-base.md`
+9. `company-formation-workflow-base.md`
+10. `workflow-base.md`
 
 ## How to use
 

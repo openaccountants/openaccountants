@@ -3,15 +3,16 @@ name: td-corporate-income-tax
 description: "Prepare a Chad corporate income tax working paper for 2026 using the ordinary or qualifying industrial and energy profit rate, taxable-profit rounding, ordinary losses and the turnover minimum. Covers territorial scope, expense support and disallowances, head-office and shareholder-interest boundaries, annual DSF preparation, e-Tax obligations, payment timing and related-party referrals. Use for Chad IS, minimum fiscal, real normal or simplified regime, company profit, loss carryforward and corporate filing intake. The Guide compares the profit and minimum limbs without double charging. Special-sector computations, unresolved regime and instalment references, depreciation maxima and live filing screens remain explicit gaps; this is a partial preparation method."
 jurisdiction: TD
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: international
-version: 1.1
+version: 1.2
 tier: 2
 domain: income-tax
+type: computation
 ---
 
-# Chad corporate income tax v1.1
+# Chad corporate income tax v1.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 

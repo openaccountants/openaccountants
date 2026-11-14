@@ -1,14 +1,15 @@
 ---
 name: uk-non-resident-sa109
 description: "UK income tax and capital gains tax for individuals who are not UK resident but have UK income or sell UK land, for tax year 2026/27 (6 April 2026 to 5 April 2027) and 2025/26 returns due by 31 January 2027. Covers what a non-resident is taxed on, the default rates, the limit on liability for disregarded income (ITA 2007 s.811), who can claim a Personal Allowance, the SA109 pages, the Non-resident Landlord Scheme and NRL1, non-resident CGT on UK property with 2015 and 2019 rebasing and the 60-day return, UK work days and treaty relief, deadlines and penalties. Trigger phrases: non-resident, non-resident landlord, NRL1, SA109, live abroad UK rental, expat selling UK flat, UK income while living abroad, disregarded income, 60-day return non-resident. Out of scope: the residence test itself (uk-statutory-residence-test), the FIG regime (uk-non-dom), relocation plans (uk-to-uae-relocation-tax, uk-to-italy-flat-tax-relocation)."
-version: 0.2
+version: 0.3
 jurisdiction: GB
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 category: cross-border
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: cross-border
+type: situation-rules
 ---
 
 # UK non-residents with UK income (SA109)

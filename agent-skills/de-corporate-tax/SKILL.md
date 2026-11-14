@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/de-corporate-tax"
   jurisdiction: "DE"
   tax_year: "2026"
-  last_updated: "2026-11-01"
+  last_updated: "2026-11-14"
 ---
 
 # German corporate income tax (Körperschaftsteuer): 2026
@@ -34,7 +34,7 @@ Tax year: the calendar year 2026 (Veranlagungszeitraum 2026). A company with a f
 | Enacted rate cuts | 14% (2028), 13% (2029), 12% (2030), 11% (2031), 10% (2032 onwards) | 2028 to 2032 | [§ 23(1) KStG](https://www.gesetze-im-internet.de/kstg_1977/__23.html); [BMF Monatsbericht August 2025](https://www.bundesfinanzministerium.de/Monatsberichte/Ausgabe/2025/08/Inhalte/Kapitel-2-Fokus/investitionssofortprogramm-deutschland.html) |
 | Small-company rate | None. One flat rate. The EUR 5,000 allowance in § 24 KStG does not apply to companies whose distributions are dividends | 2026 | [§ 24 KStG](https://www.gesetze-im-internet.de/kstg_1977/__24.html) |
 | Solidarity surcharge (Solidaritätszuschlag) | 5.5% of the corporate income tax. The exemption threshold applies only to individuals, so a company pays from the first euro | 2026 | [§ 4 SolzG](https://www.gesetze-im-internet.de/solzg_1995/__4.html); [§ 3(1) and (3) SolzG](https://www.gesetze-im-internet.de/solzg_1995/__3.html) |
-| Corporate tax plus surcharge | 15.825% (15% x 1.055) | 2026 | Computed from the two rows above |
+| Corporate tax plus surcharge | 15.825% (15% x 1.055) | 2026 | Computed from the two rows above; https://www.gesetze-im-internet.de/kstg_1977/__23.html ; https://www.gesetze-im-internet.de/solzg_1995/__4.html |
 | Trade tax (Gewerbesteuer) base rate | 3.5% of trade income, times the municipal multiplier (Hebesatz). Companies get no allowance (the EUR 24,500 allowance is for individuals and partnerships) | 2026 | [§ 11 GewStG](https://www.gesetze-im-internet.de/gewstg/__11.html); [§ 16 GewStG](https://www.gesetze-im-internet.de/gewstg/__16.html) |
 | Trade tax multiplier floor | 200% in 2026; 280% from 2027 | 2026; 2027 | [BGBl. 2026 I Nr. 197](https://www.recht.bund.de/bgbl/1/2026/197/VO.html), law of 29 June 2026, Art. 8 no. 1: in § 16(4) sentence 2 GewStG "wird die Angabe „200“ durch die Angabe „280“ ersetzt", first applied for 2027 under [§ 36(5b) GewStG](https://www.gesetze-im-internet.de/gewstg/__36.html). So the text in force for 2026 is 200%. The current [§ 16(4) GewStG](https://www.gesetze-im-internet.de/gewstg/__16.html) page shows only the 2027 wording |
 | Trade tax deductibility | Not a business expense | 2026 | [§ 4(5b) EStG](https://www.gesetze-im-internet.de/estg/__4.html) |
@@ -294,4 +294,4 @@ Not yet confirmed: the ELSTER form set for tax year 2026. ELSTER's 2026 instruct
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-01. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `de-corporate-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/de-corporate-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `de-corporate-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/de-corporate-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/be-social-contributions"
   jurisdiction: "BE"
   tax_year: "2026"
-  last_updated: "2026-10-31"
+  last_updated: "2026-11-14"
 ---
 
 # Belgium: social contributions for the self-employed (contribution year 2026) v2.1
@@ -164,15 +164,15 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| RSVZ, Bijdragen 2026, main categories (January 2026) | https://www.rsvz.be/sites/rsvz/files/2024-01/folder_sociale_bijdragen.pdf | 2026-10-23 |
-| RSVZ, publication page for the 2026 contribution amounts | https://www.rsvz.be/nl/publicaties/sociale-bijdragen | 2026-10-23 |
-| RSVZ, Hoeveel sociale bijdragen moet ik betalen? | https://www.rsvz.be/nl/faq/hoeveel-sociale-bijdragen-moet-ik-betalen | 2026-10-23 |
-| RSVZ, Wat als ik mijn bijdragen niet betaal? | https://www.rsvz.be/nl/faq/wat-als-ik-mijn-bijdragen-niet-betaal | 2026-10-23 |
-| RSVZ, Wijzigingen VAPZ (13 October 2026) | https://www.rsvz.be/nl/nieuws/wijzigingen-vapz | 2026-10-23 |
+| RSVZ, Bijdragen 2026, main categories (January 2026). Read for the 2026 contribution rates and income bands. | https://www.rsvz.be/sites/rsvz/files/2024-01/folder_sociale_bijdragen.pdf | 2026-10-23 |
+| RSVZ, publication page for the 2026 contribution amounts. Read for where the 2026 amounts are published. | https://www.rsvz.be/nl/publicaties/sociale-bijdragen | 2026-10-23 |
+| RSVZ, Hoeveel sociale bijdragen moet ik betalen?. Read for how contributions are worked out. | https://www.rsvz.be/nl/faq/hoeveel-sociale-bijdragen-moet-ik-betalen | 2026-10-23 |
+| RSVZ, Wat als ik mijn bijdragen niet betaal?. Read for the surcharges for late payment. | https://www.rsvz.be/nl/faq/wat-als-ik-mijn-bijdragen-niet-betaal | 2026-10-23 |
+| RSVZ, Wijzigingen VAPZ (13 October 2026). Read for the VAPZ changes. | https://www.rsvz.be/nl/nieuws/wijzigingen-vapz | 2026-10-23 |
 | Fisconetplus, art. 52 WIB 92 (income 2026), deductibility | https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/e2123748-b2c4-49ab-8b2d-5eacb94fbc34 | 2026-10-23 |
 
 Not yet confirmed: the management cost rates of the social insurance funds and their legal maximum; the VAPZ maximum in euro for 2026; the 2026 amounts for self-employed with an early retirement pension or a survivor's pension only (sections 6 and 7 of the RSVZ table were not worked into this skill); the annual company contribution (vennootschapsbijdrage) for 2026.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-31. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `be-social-contributions` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/be-social-contributions. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `be-social-contributions` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/be-social-contributions. If neither is available, confirm every figure against the official source pages cited above before relying on it.
