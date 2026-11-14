@@ -1,6 +1,6 @@
 ---
 name: vg-payroll-social
-description: "British Virgin Islands employment contributions for 2026. Covers Social Security Board contributions (4% employee and 4.5% employer for private employers, 8.5% self-employed, civil servant and voluntary rates), the 2026 maximum insurable earnings of USD 53,400 and the 2027 figure, National Health Insurance at 3.75% plus 3.75% on up to twice the Social Security ceiling, due dates, the 10% late penalty, refunds for people with more than one employer, and where payroll tax is filed (eTax at efiling.gov.vg). Payroll tax rates are not confirmed in this version. Trigger phrases include BVI social security, BVI NHI, insurable earnings BVI, BVI payroll tax filing."
+description: "British Virgin Islands employment contributions for 2026. Covers Social Security Board contributions (4% employee and 4.5% employer for private employers, 8.5% self-employed, civil servant and voluntary rates), the 2026 maximum insurable earnings of USD 53,400 and the 2027 figure, National Health Insurance at 3.75% plus 3.75% on up to twice the Social Security ceiling, due dates, the late penalty (10% or 5%: the Board's two pages differ), refunds for people with more than one employer, and where payroll tax is filed (eTax at efiling.gov.vg). Payroll tax rates are not confirmed in this version. Trigger phrases include BVI social security, BVI NHI, insurable earnings BVI, BVI payroll tax filing."
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
@@ -10,8 +10,7 @@ metadata:
   last_updated: "2026-11-14"
 ---
 
-# British Virgin Islands payroll and social contributions v1.0
-
+# British Virgin Islands payroll and social contributions v1.1
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
 ## Scope
@@ -50,7 +49,8 @@ The territory has no income tax; see [bvi-tax](bvi-tax.md).
 | NHI, self-employed | 7.5% of stated income | same |
 | NHI ceiling rule | Twice the upper wage limit for Social Security contributions | same |
 | Due date | On or by the 14th of the month after the month the contributions are due | [SSB contributions](https://www.vissb.vg/contributions/) |
-| Late payment | Payments made on or after the 15th incur a 10% penalty | same |
+| Late payment, contributions page | Payments made on or after the 15th incur a 10% penalty | same |
+| Late payment, 2026 bulletin | Payments made on or after the 15th incur a 5% penalty; the Board's own pages disagree, so confirm the rate with the Board before quoting either | [SSB 2026 bulletin](https://www.vissb.vg/wp-content/uploads/2026/09/2026-SSB-Maximum-Earnings.pdf) |
 
 ### Steps
 
@@ -69,7 +69,7 @@ The territory has no income tax; see [bvi-tax](bvi-tax.md).
 | Employee earning above USD 53,400 in 2026 | SSB stops at the ceiling; NHI continues to USD 106,800 (computed: twice the SSB ceiling, per the NHI brochure) | [SSB 2026 bulletin](https://www.vissb.vg/wp-content/uploads/2026/09/2026-SSB-Maximum-Earnings.pdf); [NHI brochure](https://vinhi.vg/wp-content/nhi/NHI-Brochure.pdf) |
 | Civil servant | Lower SSB rates; no sickness benefit cover | [SSB contributions](https://www.vissb.vg/contributions/) |
 | Two employers | Each deducts in full; refund of the excess over the maximum from the Board | same |
-| Paid on the 15th or later | 10% penalty | same |
+| Paid on the 15th or later | 10% penalty per the contributions page, 5% per the 2026 bulletin; confirm with the Board | same; [SSB 2026 bulletin](https://www.vissb.vg/wp-content/uploads/2026/09/2026-SSB-Maximum-Earnings.pdf) |
 | 2027 payroll | Use USD 55,536 (SSB) and 111,072 (NHI) from 1 January 2027 | [SSB notice](https://www.vissb.vg/increase-in-maximum-insurable-earnings-effective-1st-january-2027/) |
 
 ## Worked cases
@@ -100,7 +100,7 @@ expected:
 
 ### Case 2 (decision): two jobs, claim the refund or not
 
-An employee earns USD 40,000 from one employer and 30,000 from another in 2026. Each employer deducts 4%: 1,600 and 1,200, total 2,800. The 2026 maximum employee contribution is 2,136, so the employee should claim a refund of 664 from the Board. Paying a month's contributions on the 15th instead of the 14th would add a 10% penalty: on a USD 5,000 monthly salary at the private SSB rate (8.5% of the 4,450 cap, 378.25) that is 37.83.
+An employee earns USD 40,000 from one employer and 30,000 from another in 2026. Each employer deducts 4%: 1,600 and 1,200, total 2,800. The 2026 maximum employee contribution is 2,136, so the employee should claim a refund of 664 from the Board. Paying a month's contributions on the 15th instead of the 14th would add a penalty: on a USD 5,000 monthly salary at the private SSB rate (8.5% of the 4,450 cap, 378.25) that is 37.83 at the contributions page's 10%, or 18.91 at the 2026 bulletin's 5% (both derived). Confirm which rate the Board applies.
 
 ```oa-check
 name: BVI SSB two employers refund and late penalty, 2026
@@ -115,18 +115,20 @@ steps:
   - refund: max(0, deducted - maximum)
   - month_contribution: monthly_cap * 0.085
   - late_penalty: month_contribution * 0.10
+  - late_penalty_bulletin: month_contribution * 0.05
 expected:
   deducted: 2800
   maximum: 2136
   refund: 664
   month_contribution: 378.25
   late_penalty: 37.825
+  late_penalty_bulletin: 18.9125
 ```
 
 ## When to refuse or refer
 
 - Payroll tax amounts (employer class, rates, exemption): not confirmed here; ask the IRD (bvitaxes@gov.vg, (284) 468-2155) or a local adviser before computing.
-- Whether the 10% late penalty also applies to NHI contributions, and any interest: confirm with the Board.
+- Which late penalty applies (10% on the contributions page, 5% in the 2026 bulletin), whether it also applies to NHI contributions, and any interest: confirm with the Board.
 - Benefit entitlement questions (pensions, sickness, unemployment): out of scope.
 
 ## Filing and payment
@@ -146,13 +148,13 @@ expected:
 | Source | URL | Read on |
 |---|---|---|
 | Social Security Board, contributions page (read via Firecrawl; direct fetch refused): read for the rates by contributor type, the 14th due date, the 10% penalty and the multiple-employer refund | https://www.vissb.vg/contributions/ | 2026-11-14 |
-| Social Security Board, 2026 maximum insurable earnings bulletin (PDF): read for the 2026 ceiling by pay period and the maximum contributions | https://www.vissb.vg/wp-content/uploads/2026/09/2026-SSB-Maximum-Earnings.pdf | 2026-11-14 |
+| Social Security Board, 2026 maximum insurable earnings bulletin (PDF): read for the 2026 ceiling by pay period, the maximum contributions, the 14th due date and the 5% late penalty | https://www.vissb.vg/wp-content/uploads/2026/09/2026-SSB-Maximum-Earnings.pdf | 2026-11-14 |
 | Social Security Board, notice of 2027 maximum insurable earnings: read for the 2026 to 2027 SSB and NHI ceilings | https://www.vissb.vg/increase-in-maximum-insurable-earnings-effective-1st-january-2027/ | 2026-11-14 |
 | National Health Insurance brochure (PDF): read for the 3.75% shares, the self-employed 7.5% and the twice-the-ceiling rule (its 2016 monthly example figures are not used) | https://vinhi.vg/wp-content/nhi/NHI-Brochure.pdf | 2026-11-14 |
 | Inland Revenue Department page: read for the taxes the IRD collects and its contacts | https://gov.vg/inland-revenue-department | 2026-11-14 |
 | Ministry of Finance notice of 6 November 2026 (PDF): read for the eTax portal launch on 2 November 2026 | https://gov.vg/sites/default/files/2026-11/ministry_of_finance_launches_enhanced_etax_portal_and_online_tax_payments.pdf | 2026-11-14 |
 
-Not yet confirmed: payroll tax rates and classes (the old file had 8% employee, 2% Class 1 and 6% Class 2 employer, Class 1 limits of 7 employees, USD 150,000 payroll and USD 300,000 turnover, and a USD 10,000 employee exemption); the payroll tax due date (the old files gave both the 15th and the 21st of the following month) and the late filing and payment penalties (old file: USD 50 a day, 1.5% a month); the self-employed payroll tax rule; none of these could be read on an official page (the Payroll Taxes Act was not reachable on laws.gov.vg and bvi.gov.vg did not respond). The old SSB rate "4.5% each, 9% total" in bvi-tax was wrong: the Board shows 4% employee and 4.5% employer.
+Not yet confirmed: payroll tax rates and classes (the old file had 8% employee, 2% Class 1 and 6% Class 2 employer, Class 1 limits of 7 employees, USD 150,000 payroll and USD 300,000 turnover, and a USD 10,000 employee exemption); the payroll tax due date (the old files gave both the 15th and the 21st of the following month) and the late filing and payment penalties (old file: USD 50 a day, 1.5% a month); the self-employed payroll tax rule; none of these could be read on an official page (the Payroll Taxes Act was not reachable on laws.gov.vg, and the Inland Revenue "Guide to Payroll Tax" PDF at bvi.gov.vg, which Ryan Duguid's fork cites for 10% and 14% class totals, the USD 10,000 exemption from 1 January 2007, a 21-day monthly deadline and a 30 April annual return, returned 404 on 14 November 2026). Indirect evidence only: the FSC's 2024 audited accounts record payroll tax of 6% of salaries for the Commission as employer, and the Financial Investigation Agency's 2024 accounts are reported to show a 14% liability of which 8 points are recoverable from employees. The old SSB rate "4.5% each, 9% total" in bvi-tax was wrong: the Board shows 4% employee and 4.5% employer.
 
 ## Today's figures and who stands behind this skill
 
