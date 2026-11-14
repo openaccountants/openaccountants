@@ -37,9 +37,9 @@ Out of scope: ACC claims, weekly compensation, rehabilitation, levy disputes and
 
 | Levy | What it covers | Who pays | Where the rate comes from |
 | --- | --- | --- | --- |
-| Earners' levy | Injuries outside work (IR335 page 18: "to cover the cost of non-work-related injuries") | Employees through PAYE; the self-employed on their ACC invoice; close companies on shareholder-employee pay with no PAYE | IRD rates page (below) |
-| Work levy | Injuries at work | Employers, for their employees; the self-employed, for themselves | Set by ACC for each classification unit. **check** on the ACC invoice |
-| Working Safer levy | Collected by ACC with the other levies (IRD lists it alongside the Work levy for the self-employed) | Businesses and the self-employed | ACC invoice. **check** |
+| Earners' levy | Injuries outside work (IR335 page 18: "to cover the cost of non-work-related injuries") | Employees through PAYE; the self-employed on their ACC invoice; close companies on shareholder-employee pay with no PAYE | IRD rates page (below) (https://www.ird.govt.nz/income-tax/income-tax-for-individuals/acc-clients-and-carers/acc-earners-levy-rates) |
+| Work levy | Injuries at work | Employers, for their employees; the self-employed, for themselves | Set by ACC for each classification unit. **check** on the ACC invoice (IRD lists it for the self-employed: https://www.ird.govt.nz/situations/work-or-study-in-new-zealand) |
+| Working Safer levy | Collected by ACC with the other levies (IRD lists it alongside the Work levy for the self-employed) | Businesses and the self-employed | ACC invoice. **check** (IRD lists it for the self-employed: https://www.ird.govt.nz/situations/work-or-study-in-new-zealand) |
 
 Source for the self-employed list: IRD, "I am coming to work or study in New Zealand": "In addition to the Earners' levy that people getting salary or wages pay, you'll also pay the: Work levy Working Safer levy" ([IRD](https://www.ird.govt.nz/situations/work-or-study-in-new-zealand)).
 
