@@ -53,23 +53,23 @@ Most cantons state the multipliers as a percentage of the simple tax. Some (for 
 | NW | Stans | 2.66 | 2.35 | 0.26 | 0.40 | units | same |
 | GL | Glarus | 58% | 61% | 7.5% | 8% | plus a 1.7% building surcharge on the simple tax | same |
 | ZG | Zug | 78% | 52% | 6% | 5.95% | ESTV prints the 2025 commune and church figures (52.11%, 7.5%, 7%); 2026 from the [Zug tax office](https://zg.ch/dam/jcr:24fb8832-3383-4718-9a48-9461bc7501fc/Steuerf%C3%BCsse%202026_effektiv%2021.1.26.pdf) | same |
-| FR | Fribourg | 96% (wealth 100%) | 80% | 9% (wealth 10%) | 7% (wealth 20%) | | same |
-| SO | Solothurn | 104% | 107% | 16% | 21% | ESTV shows the 2025 figures | same |
-| BS | Basel | 100% | none | 8% of the cantonal income tax | 8% of the cantonal income tax | the city levies no communal tax; the canton's tax includes it | same |
-| BL | Liestal | 100% | 65% | 0.55% of taxable income; on wealth ESTV prints 0.05 (footnote: per cent or per mille) | 6.75% of the cantonal tax | | same |
-| SH | Schaffhausen | 76% | 83% | 13% | 13% | | same |
-| AR | Herisau | 3.3 | 4.1 | 0.60 | 0.47 | units | same |
-| AI | Appenzell | 96% | 56% | 10% | 10% | ESTV shows the 2025 figures | same |
-| SG | St. Gallen | 105% | 138% | 25% | 26% | | same |
-| GR | Chur | 92% | 88% of the simple cantonal tax | 14.5% | 9% | | same |
-| AG | Aarau | 103% | 96% | 15% | 18% | | same |
-| TG | Frauenfeld | 109% | 142% | 16% | 16% | | same |
-| TI | Bellinzona | 100% | 93% | none | none | | same |
-| VD | Lausanne | 155% | 78.5% | none | none | | same |
-| VS | Sion | no multiplier: tariff applies directly | 1.10 | 3% of the communal tax | 3% of the communal tax | | same |
-| NE | Neuchâtel | 124% | 65% | none | none | | same |
-| GE | Geneva | 48.5% | 45.49% | none | none | ESTV footnote: a deduction of 12% of the cantonal tax at 147.5% | same |
-| JU | Delémont | 2.85 | 1.90 | 8.1% | 6.4% | units | same |
+| FR | Fribourg | 96% (wealth 100%) | 80% | 9% (wealth 10%) | 7% (wealth 20%) | | [ESTV, Steuersatz und Steuerfuss, table 3.4.1](https://www.estv2.admin.ch/stp/ds/e-steuersatz-steuerfuss-de.pdf) |
+| SO | Solothurn | 104% | 107% | 16% | 21% | ESTV shows the 2025 figures | [ESTV, Steuersatz und Steuerfuss, table 3.4.1](https://www.estv2.admin.ch/stp/ds/e-steuersatz-steuerfuss-de.pdf) |
+| BS | Basel | 100% | none | 8% of the cantonal income tax | 8% of the cantonal income tax | the city levies no communal tax; the canton's tax includes it | [ESTV, Steuersatz und Steuerfuss, table 3.4.1](https://www.estv2.admin.ch/stp/ds/e-steuersatz-steuerfuss-de.pdf) |
+| BL | Liestal | 100% | 65% | 0.55% of taxable income; on wealth ESTV prints 0.05 (footnote: per cent or per mille) | 6.75% of the cantonal tax | | [ESTV, Steuersatz und Steuerfuss, table 3.4.1](https://www.estv2.admin.ch/stp/ds/e-steuersatz-steuerfuss-de.pdf) |
+| SH | Schaffhausen | 76% | 83% | 13% | 13% | | [ESTV, Steuersatz und Steuerfuss, table 3.4.1](https://www.estv2.admin.ch/stp/ds/e-steuersatz-steuerfuss-de.pdf) |
+| AR | Herisau | 3.3 | 4.1 | 0.60 | 0.47 | units | [ESTV, Steuersatz und Steuerfuss, table 3.4.1](https://www.estv2.admin.ch/stp/ds/e-steuersatz-steuerfuss-de.pdf) |
+| AI | Appenzell | 96% | 56% | 10% | 10% | ESTV shows the 2025 figures | [ESTV, Steuersatz und Steuerfuss, table 3.4.1](https://www.estv2.admin.ch/stp/ds/e-steuersatz-steuerfuss-de.pdf) |
+| SG | St. Gallen | 105% | 138% | 25% | 26% | | [ESTV, Steuersatz und Steuerfuss, table 3.4.1](https://www.estv2.admin.ch/stp/ds/e-steuersatz-steuerfuss-de.pdf) |
+| GR | Chur | 92% | 88% of the simple cantonal tax | 14.5% | 9% | | [ESTV, Steuersatz und Steuerfuss, table 3.4.1](https://www.estv2.admin.ch/stp/ds/e-steuersatz-steuerfuss-de.pdf) |
+| AG | Aarau | 103% | 96% | 15% | 18% | | [ESTV, Steuersatz und Steuerfuss, table 3.4.1](https://www.estv2.admin.ch/stp/ds/e-steuersatz-steuerfuss-de.pdf) |
+| TG | Frauenfeld | 109% | 142% | 16% | 16% | | [ESTV, Steuersatz und Steuerfuss, table 3.4.1](https://www.estv2.admin.ch/stp/ds/e-steuersatz-steuerfuss-de.pdf) |
+| TI | Bellinzona | 100% | 93% | none | none | | [ESTV, Steuersatz und Steuerfuss, table 3.4.1](https://www.estv2.admin.ch/stp/ds/e-steuersatz-steuerfuss-de.pdf) |
+| VD | Lausanne | 155% | 78.5% | none | none | | [ESTV, Steuersatz und Steuerfuss, table 3.4.1](https://www.estv2.admin.ch/stp/ds/e-steuersatz-steuerfuss-de.pdf) |
+| VS | Sion | no multiplier: tariff applies directly | 1.10 | 3% of the communal tax | 3% of the communal tax | | [ESTV, Steuersatz und Steuerfuss, table 3.4.1](https://www.estv2.admin.ch/stp/ds/e-steuersatz-steuerfuss-de.pdf) |
+| NE | Neuchâtel | 124% | 65% | none | none | | [ESTV, Steuersatz und Steuerfuss, table 3.4.1](https://www.estv2.admin.ch/stp/ds/e-steuersatz-steuerfuss-de.pdf) |
+| GE | Geneva | 48.5% | 45.49% | none | none | ESTV footnote: a deduction of 12% of the cantonal tax at 147.5% | [ESTV, Steuersatz und Steuerfuss, table 3.4.1](https://www.estv2.admin.ch/stp/ds/e-steuersatz-steuerfuss-de.pdf) |
+| JU | Delémont | 2.85 | 1.90 | 8.1% | 6.4% | units | [ESTV, Steuersatz und Steuerfuss, table 3.4.1](https://www.estv2.admin.ch/stp/ds/e-steuersatz-steuerfuss-de.pdf) |
 
 **Other figures.**
 
