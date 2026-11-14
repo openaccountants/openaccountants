@@ -44,23 +44,17 @@ All rates below are for the 2026 year of income. The KRA consolidated Act notes 
 | Resident professional-fee WHT credit | 5% on aggregate qualifying fee KES 24,000 or more in a month, Head B para5(f), in words on the page; certificate supports credit, not a second final charge | https://www.kra.go.ke/images/publications/Income-Tax-Act-2026.pdf |
 | Individual instalment exemption | Current-year total tax not exceeding KES 40,000, s12(5), in words on the page; not old prior-year less-than test | https://www.kra.go.ke/images/publications/Income-Tax-Act-2026.pdf |
 | Proprietor medical costs | Own medical expenses or medical insurance cover, up to KES 1,000,000 per year, s15(3)(g), in words on the page; separate from insurance credit | https://www.kra.go.ke/images/publications/Income-Tax-Act-2026.pdf |
-| Proprietor medical costs | Own medical expenses or medical insurance cover, up to KES 1,000,000 per year, s15(3)(g), in words on the page; separate from insurance credit | https://www.kra.go.ke/images/publications/Income-Tax-Act-2026.pdf |
-| Proprietor medical costs | Own medical expenses or medical insurance cover, up to KES 1,000,000 per year, s15(3)(g), in words on the page; separate from insurance credit | https://www.kra.go.ke/images/publications/Income-Tax-Act-2026.pdf |
 | SHIF | Contribution deductible under s15(2)(ae); not insurance relief | https://www.kra.go.ke/images/publications/Income-Tax-Act-2026.pdf |
 
 Capital allowances replace the old reducing-balance table; use the actual asset/use category, not just its bank narration.
 
 | Capital expenditure | Allowance and condition | Official source |
 |---|---|---|
-| Motor vehicles/heavy earth-moving equipment | 25% per year in equal instalments, Second Schedule para1(b)(v); non-commercial motor vehicle capital cost limited to KES 3,000,000 under para6(1), with proportionate deemed sale proceeds under para6(2), in words on the page; non-commercial motor vehicle capital cost limited to KES 3,000,000 under para6(1), with proportionate deemed sale proceeds under para6(2), in words on the page; non-commercial motor vehicle capital cost limited to KES 3,000,000 under para6(1), with proportionate deemed sale proceeds under para6(2), in words on the page | https://www.kra.go.ke/images/publications/Income-Tax-Act-2026.pdf |
+| Motor vehicles/heavy earth-moving equipment | 25% per year in equal instalments, Second Schedule para1(b)(v); non-commercial motor vehicle capital cost limited to KES 3,000,000 under para6(1), with proportionate deemed sale proceeds under para6(2), in words on the page | https://www.kra.go.ke/images/publications/Income-Tax-Act-2026.pdf |
 | Computers/peripheral hardware/software, calculators/copiers/duplicating | 25% per year in equal instalments, para1(b)(vi) | https://www.kra.go.ke/images/publications/Income-Tax-Act-2026.pdf |
 | Furniture and fittings | 10% per year in equal instalments, para1(b)(vii) | https://www.kra.go.ke/images/publications/Income-Tax-Act-2026.pdf |
 | Manufacture machinery | 50% first year of use; residual 25% per year in equal instalments, paras1(b)(i),(iv); special investment conditions need review | https://www.kra.go.ke/images/publications/Income-Tax-Act-2026.pdf |
 | Other machinery | 10% per year in equal instalments, para1(b)(xii) | https://www.kra.go.ke/images/publications/Income-Tax-Act-2026.pdf |
-
-Insurance credit conditions under s31: establish paid premium and policy evidence. Life cover must insure the individual, spouse or child, secure a capital sum, be with an insurer lawfully carrying on life insurance in Kenya, and pay sums in Kenya in Kenyan currency; an employer-paid premium must be taxed on the individual. The optional pre-determination withdrawal benefit portion is excluded subject to the Commissioner’s allocation. Education maturity must be at least 10 years; life/education terms commence on or after 1 January 2003, health terms on or after 1 January 2007. A child must be under 18 when the premium is paid (including the statutory child categories). Surrender before maturity triggers recovery of relief by the insurer. These dates, periods and age are in words on the cited page. The examples assume qualifying life cover and full-year residence. Medical-expense deduction and insurance credit are distinct provisions; the treatment of an overlapping health premium requires specific authority rather than an invented blanket prohibition.
-
-Insurance credit conditions under s31: establish paid premium and policy evidence. Life cover must insure the individual, spouse or child, secure a capital sum, be with an insurer lawfully carrying on life insurance in Kenya, and pay sums in Kenya in Kenyan currency; an employer-paid premium must be taxed on the individual. The optional pre-determination withdrawal benefit portion is excluded subject to the Commissioner’s allocation. Education maturity must be at least 10 years; life/education terms commence on or after 1 January 2003, health terms on or after 1 January 2007. A child must be under 18 when the premium is paid (including the statutory child categories). Surrender before maturity triggers recovery of relief by the insurer. These dates, periods and age are in words on the cited page. The examples assume qualifying life cover and full-year residence. Medical-expense deduction and insurance credit are distinct provisions; the treatment of an overlapping health premium requires specific authority rather than an invented blanket prohibition.
 
 Insurance credit conditions under s31: establish paid premium and policy evidence. Life cover must insure the individual, spouse or child, secure a capital sum, be with an insurer lawfully carrying on life insurance in Kenya, and pay sums in Kenya in Kenyan currency; an employer-paid premium must be taxed on the individual. The optional pre-determination withdrawal benefit portion is excluded subject to the Commissioner’s allocation. Education maturity must be at least 10 years; life/education terms commence on or after 1 January 2003, health terms on or after 1 January 2007. A child must be under 18 when the premium is paid (including the statutory child categories). Surrender before maturity triggers recovery of relief by the insurer. These dates, periods and age are in words on the cited page. The examples assume qualifying life cover and full-year residence. Medical-expense deduction and insurance credit are distinct provisions; the treatment of an overlapping health premium requires specific authority rather than an invented blanket prohibition.
 
@@ -76,7 +70,6 @@ Insurance credit conditions under s31: establish paid premium and policy evidenc
 ### Transaction-pattern library (intake prompts, never proof of tax treatment)
 
 The following retained bank/counterparty patterns help classify documents. Deductibility always depends on actual business purpose under ss15-16, not the supplier brand. They are illustrative workflow labels, not an official authority endorsement of any vendor.
-
 
 #### 3.1 Kenyan banks (fees and interest)
 
@@ -189,7 +182,6 @@ The following retained bank/counterparty patterns help classify documents. Deduc
 | MPESA TO BANK, BANK TO MPESA | EXCLUDE | Own account transfer |
 | DRAWINGS, PERSONAL | EXCLUDE | Owner drawings |
 
-
 ### Working papers, bank formats and escalation
 
 Retain a Transactions sheet: Date, Counterparty, Description, KES amount, Revenue/Expense/Capital/Insurance/Exclude classification, deductible amount, provisional default, question and notes. Tax Computation sheet: taxable profit, bands, relief, instalments and WHT credits. These are working-paper labels, not official iTax boxes.
@@ -198,8 +190,11 @@ Read actual export headers before importing: common fields Date, Description/Nar
 
 Ask follow-ups on business activity, turnover, elected regime, insurance, instalments and WHT certificates; do not infer residence from the bank/PIN or credits from a narration. Vehicle/home-office mixed use requires an evidenced business allocation. Industrial buildings/complex allowances go to a reviewer. A dedicated room is not treated here as a universally necessary statutory home-office condition.
 
-### Finance Act, 2026 changes retained
+### Recordkeeping
 
+[TPA s23(1)-(4)](https://www.kra.go.ke/images/publications/Tax-Procedures-Act--2026.pdf) requires documents in an official language ([Constitution art7(2): English or Kiswahili](https://www.ca.go.ke/sites/default/files/2023-06/The-Kenya-Constitution-2010-1.pdf)), sufficient to ascertain liability, retained for 5 years from the end of the reporting period or a shorter period specifically set by tax law (period in words on the page). Keep the underlying paper/electronic invoices, statements and reconciliations; a summary sheet alone does not replace them. For an amended assessment retain until the s31(7) period expires; for proceedings begun before the ordinary retention period ends, retain until all proceedings finish. The Commissioner can require an approved translation at the taxpayer’s cost by the notice date. Ordinary records/returns use KES, subject to s23(2A)-(2B) non-resident exceptions.
+
+### Finance Act, 2026 changes retained
 
 Act No. 19 of 2026, assented 23 June 2026, published in Kenya Gazette Supplement No. 157 (Acts No. 19), 26 June 2026. Read in the KRA copy of the Gazette. Commencement (s.1): ss.17, 18 and 24 on 1 January 2027; s.43 on 1 September 2026; all other sections on 1 July 2026. Income Tax Act amendments that reach individuals and small businesses:
 
@@ -241,7 +236,7 @@ For TOT, KRA's [official instructions](https://www.kra.go.ke/individual/filing-p
 
 ## Penalties and interest
 
-[TPA ss38,83(1)(b),(d)(ii),83A](https://www.kra.go.ke/images/publications/Tax-Procedures-Act--2026.pdf): late ordinary individual return, higher of 5% of tax payable or KES 2,000, with tax reduced by prior payments/WHT credits; late TOT return KES 1,000; late tax 5% plus 1% simple interest per month or part (in words on the page). These are distinct charges. Under s38(8), aggregate accrued late interest cannot exceed the principal tax liability. Section38(6) stops accrual between notification and payment where the outstanding tax, including interest to notification, is paid in full within the notice’s specified time. Section38(2) refunds interest to the extent the underlying principal is found not payable. Under s38(8), aggregate accrued late interest cannot exceed the principal tax liability. Section38(6) stops accrual between notification and payment where the outstanding tax, including interest to notification, is paid in full within the notice’s specified time. Section38(2) refunds interest to the extent the underlying principal is found not payable. The old 20% underestimation-penalty assertion is not used without the applicable provision and facts.
+[TPA ss38,83(1)(b),(d)(ii),83A](https://www.kra.go.ke/images/publications/Tax-Procedures-Act--2026.pdf): late ordinary individual return, higher of 5% of tax payable or KES 2,000, with tax reduced by prior payments/WHT credits; late TOT return KES 1,000; late tax 5% plus 1% simple interest per month or part (in words on the page). These are distinct charges. Under s38(8), aggregate accrued late interest cannot exceed the principal tax liability. Section38(6) stops accrual between notification and payment where the outstanding tax, including interest to notification, is paid in full within the notice’s specified time. Section38(2) refunds interest to the extent the underlying principal is found not payable. The old 20% underestimation-penalty assertion is not used without the applicable provision and facts.
 
 ## Cross-border points
 
@@ -249,10 +244,9 @@ Non-residents are referred outside this resident workflow; the old universal fla
 
 ## Two worked examples that recompute
 
-
 ### Example 1 -- Standard self-employed, mid-range
 
-**Input:** Resident, revenue KES 3,000,000, expenses KES 1,200,000, qualifying life-qualifying life-qualifying life-insurance premiums KES 100,000, instalment tax KES 150,000.
+**Input:** Resident, revenue KES 3,000,000, expenses KES 1,200,000, qualifying life-insurance premiums KES 100,000, instalment tax KES 150,000.
 **Computation:** Taxable = KES 1,800,000. Tax = 28,800 + 25,000 + 423,600 = KES 477,400. Less personal relief 28,800. Less insurance relief min(15,000, 60,000) = 15,000. Net = KES 433,600. Less instalment KES 150,000. Due = KES 283,600.
 
 ```oa-check
@@ -306,7 +300,6 @@ expected:
 
 **Input:** Resident small trader, turnover KES 500,000, documented deductible expenses KES 350,000.
 **Computation:** Normal profit KES 150,000. Tax KES 15,000 before personal relief; payable KES 0 after the non-refundable relief. Turnover tax does not apply below its lower boundary. Do not charge the old file's invented KES 15,000 annual presumptive tax.
-
 
 ### Example 5 -- Legal election decision: eligible trader
 
@@ -366,6 +359,7 @@ Preserved prohibitions/edge cases: personal relief is never an expense; insuranc
 |---|---|---|
 | Read for ITA s2 residence;ss3-4,12,12C,15-16,22A-22B,29-31,35,52B,92A; Second Schedule and Third Schedule Heads A/B, Twelfth Schedule; passages on normal business income, deductions, rates, capital allowances, credits, exclusions and timing | https://www.kra.go.ke/images/publications/Income-Tax-Act-2026.pdf | 2026-11-14 |
 | Read for Finance Act 2026 ss1-23,42,47, operative amendments affecting individuals and small businesses and deferred return commencement | https://www.kra.go.ke/images/publications/Finance-Act-2026.pdf | 2026-11-14 |
+| Read for Constitution art7(1)-(3), official-language rule | https://www.ca.go.ke/sites/default/files/2023-06/The-Kenya-Constitution-2010-1.pdf | 2026-11-14 |
 | Read for TPA ss23,38,75,83,83A, records, pre-populated returns, penalties and interest | https://www.kra.go.ke/images/publications/Tax-Procedures-Act--2026.pdf | 2026-11-14 |
 | Read for KRA TOT eligibility, written election, exclusions, registration, return and payment steps | https://www.kra.go.ke/individual/filing-paying/types-of-taxes/turnover-tax-tot | 2026-11-14 |
 | Read for KRA PAYE deduction/relief passages for SHIF and registered pension interaction | https://www.kra.go.ke/individual/filing-paying/types-of-taxes/paye | 2026-11-14 |
