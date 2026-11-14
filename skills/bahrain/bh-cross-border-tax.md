@@ -63,7 +63,7 @@ English translation, which it marks "unofficial"; the Arabic text governs.
 | Item | Rate or amount | Year | Source URL |
 |---|---|---|---|
 | Withholding tax on dividends, interest, royalties and service fees paid to non-residents | None under the law in force for 2026: neither income tax law has a withholding provision | 2026 | https://www.lloc.gov.bh/Legislation/id/L2279 ; https://www.nbr.gov.bh/laws_regulations/dmtt |
-| Hydrocarbon income tax, residents and non-residents alike | 46% | 2026 | https://www.lloc.gov.bh/Legislation/id/L2279 |
+| Hydrocarbon income tax, residents and non-residents alike | 46% | 2026 | https://www.lloc.gov.bh/Legislation/HTM/L2279 (art. 2) |
 | DMTT Minimum Rate | 15% | 2026 | https://www.nbr.gov.bh/laws_regulations/dmtt |
 | DMTT Revenue Test | EUR 750 million or more in 2 of the 4 preceding Fiscal Years | 2026 | https://www.nbr.gov.bh/laws_regulations/dmtt |
 | COR for an individual: physical presence | At least 183 days in the year the COR covers | 2026 | https://www.nbr.gov.bh/FTR/certificate_of_tax_residence |

@@ -93,7 +93,7 @@ Bahrain.
 | Master file supply chain description | Five largest products or services, plus any product or service of at least 5% of group turnover | 2026 | https://www.nbr.gov.bh/laws_regulations/dmtt |
 | Local file and master file size threshold | None set: every in-scope Bahrain entity with an intra-group transaction prepares both | 2026 | https://www.nbr.gov.bh/laws_regulations/dmtt |
 | Record retention, incl. transfer pricing documentation | 5 years after the end of the Fiscal Year | 2026 | https://www.nbr.gov.bh/publications/view/dmtt_procedural_guide |
-| Hydrocarbon income tax | 46% | 2026 | https://www.lloc.gov.bh/Legislation/id/L2279 |
+| Hydrocarbon income tax | 46% | 2026 | https://www.lloc.gov.bh/Legislation/HTM/L2279 (art. 2) |
 
 The two thresholds are different tests. The DMTT test is in euros and looks at
 two of the four prior years (DMTT Law art. 3(C)). The CbCR test is in Bahraini
