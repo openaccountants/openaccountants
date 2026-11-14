@@ -13,23 +13,25 @@ description: >
   presence and component checks do not establish comprehensive jurisdiction acceptance.
 jurisdiction: NC
 category: international
-tax_year: 2025
-tax_year_notes: "Selected 2025 notice and retained code; conditional raw component only, source chronology and actual-period applicability unresolved"
+tax_year: 2026
 tier: 2
-last_updated: 2026-10-29
-version: 0.1
-review_status: pending_review
-verified_by: pending
+last_updated: 2026-11-14
+version: 0.2
 depends_on:
   - workflow-base
   - income-tax-workflow-base
+type: computation
 ---
 
-# New Caledonia: ordinary one-part IRPP reference v0.1
+# New Caledonia: ordinary one-part IRPP reference v0.2
 
 > **General reference only.** This source-cited Tier 2 conditional draft illustrates a selected ordinary raw income tax component. It does not complete an income tax engagement, final assessment, withholding or payment. Guide presence, source preparation and component checks do not establish comprehensive jurisdiction acceptance.
 
-## Scope and source conditions
+**Answer first.** New Caledonian personal income tax (IRPP) is worked out on net taxable income rounded **down to the lower thousand francs** (article 132), divided by the household's parts, with a progressive scale per part: nothing on the first **1.000.000 F**, then **4%**, **12%**, **25%** and **40%** (article 136 I). For one part (N = 1) the raw tax on the floored income B is 4% of B between 1.000.000 and 1.800.000 F, 12% between 1.800.000 and 3.000.000 F, 25% between 3.000.000 and 4.500.000 F and 40% above. Reductions such as the redistributive relief (article 136 II) come afterwards and are not computed here. Amounts are in francs Pacifique (XPF).
+
+**Tax year 2026.** The code read on 14 November 2026 (Juridoc, updated 14 January 2026, citing an arrêté of 18 March 2026) gives this scale, last amended in 2017. It applies to 2025 income declared in 2026 and, unless the 2026 budget laws change it, to 2026 income declared in 2027. Ryan's cases are labelled "selected 2025"; the scale and floor give the same results for 2026.
+
+## Scope and who this is for
 
 Load workflow-base and income-tax-workflow-base in full. Preserve all 4 universal outputs and 18 checks, all 5 income tax outputs and 12 checks, all mandatory country slots and every shared refusal. Missing applicable law, facts, tools, outputs or qualified review prevents delivery of an actual financial result.
 
@@ -41,19 +43,27 @@ These examples exclude unresolved exceptional, deferred or unusual income and an
 
 All amounts are francs Pacifique, as identified by the DSF calculation page. No currency conversion is established. Exact fractional C values are synthetic precision tests for the floor operation, not proof that an actual statutory input may have those decimal places. Establish lawful input precision separately and preserve exact evidence. No preliminary rounding, silent zero or coercion is permitted.
 
-## Primary sources and chronology
+## Ask the client first
 
-| Source | Selected proposition and limit |
-|---|---|
-| [L1: Juridoc, Code des impôts de la Nouvelle-Calédonie](https://juridoc.gouv.nc/juridoc/jdcodes.nsf/0/050372C3F3A0E7D14B257567007545A1/%24File/Code_des_impots_Nouvelle-Caledonie_ChG_14-01-2026.pdf) | Complete official 647-page PDF retained. Selected articles 46-54 distinguish annual income, domicile and assessment unit; 128 and 131 address input formation and special income; 132 requires the lower-thousand income floor before division by parts; 133, Lp. 133 bis, Lp. 134, Lp. 134 bis and 135 require separate household/abatement/timing treatment; 136 I gives the progressive scale and separate quotient-benefit limitation. Article 136 II begins later reductions. Selected physical pages 181, 192-194 and 196-197 were compared with originals. Complete retention is not review of every amendment or branch. |
-| [L2: DSF, notice for déclaration des revenus 2025](https://dsf.gouv.nc/sites/default/files/documents/Notice%20d%C3%A9claration%20de%20revenus%20normale%202025.pdf) | Complete official 6-page PDF retained. Original page 2 corroborates additional-part branches, family changes, hosted-child abatement, quotient limits and redistributive relief. This selected 2025 administrative context does not establish the complete law or all form procedures. |
-| [L3: DSF, calculating income tax](https://dsf.gouv.nc/particuliers-impots-et-taxes/impot-sur-le-revenu/calculer-mon-impot-sur-le-revenu) | Complete loaded public text retained on 29 October 2026. Identifies francs Pacifique, article 136 I and simulations for 2025, 2024 and 2023. The calculator is anonymous and is not a declaration. No completed simulator run or authority-endorsed result is claimed. |
+1. **Which income year**, and fiscal domicile in New Caledonia for the whole year (articles 46-54).
+2. **The household and its parts**: marital status, dependants, and any special part (invalidity, veteran, dependency) under article 133 and Lp. 133 bis.
+3. **Complete net taxable income** after every deduction and abatement, including any Lp. 134 bis hosted-child abatement (not gross salary or gross global income).
+4. **Exceptional, deferred or separate-rate income** (articles 131 and 131 bis).
+5. **Gross global income of the household**, for the separate article 136 II reductions.
 
-L1's filename and repeated header say 'Mise à jour le 14/01/2026', but physical page 181 cites arrêté AG-2026-DSF-0179 of 18 March 2026. Both were observed in the original. Preserve this chronology inconsistency; neither the filename nor header is accepted as an exhaustive verified law-as-at date. L2 supports a selected 2025 context, not reconciliation of every amendment, commencement or transitional provision. Actual 2025 and current-period applicability remain held until an authoritative period-specific source chain is established. An editing date does not establish operative law.
+## The method, step by step
 
-L1 article 132's editorial note directs its dependant reference to Lp. 134. Preserve the operative cross-references, including Lp. 133 bis and the upstream Lp. 134 bis abatement. Missing evidence is not evidence of no rule. No rate, exemption, deduction, deadline, rounding or filing default is imported from metropolitan France or another territory.
+### Rates, bands and thresholds
 
-## Intake and component mechanics
+| Item | Amount or rule | Source |
+|---|---|---|
+| Rounding of taxable income | Rounded to the lower thousand francs before division by parts | [L1, article 132](https://juridoc.gouv.nc/juridoc/jdcodes.nsf/0/050372C3F3A0E7D14B257567007545A1/%24File/Code_des_impots_Nouvelle-Caledonie_ChG_14-01-2026.pdf) |
+| Scale per part | Nil to 1.000.000 F; 4% to 1.800.000 F; 12% to 3.000.000 F; 25% to 4.500.000 F; 40% above (band table below) | [L1, article 136 I(1)](https://juridoc.gouv.nc/juridoc/jdcodes.nsf/0/050372C3F3A0E7D14B257567007545A1/%24File/Code_des_impots_Nouvelle-Caledonie_ChG_14-01-2026.pdf) |
+| Cap on the quotient familial benefit | 300 000 francs per half-part, or half of that per quarter-part | [L1, article 136 I(2)](https://juridoc.gouv.nc/juridoc/jdcodes.nsf/0/050372C3F3A0E7D14B257567007545A1/%24File/Code_des_impots_Nouvelle-Caledonie_ChG_14-01-2026.pdf) |
+| Redistributive reduction, gross global income limit (not computed here) | 6 100 000 francs for the first part (single, widowed, divorced); 12 200 000 francs for the first two parts (joint) | [L1, article 136 II(1)](https://juridoc.gouv.nc/juridoc/jdcodes.nsf/0/050372C3F3A0E7D14B257567007545A1/%24File/Code_des_impots_Nouvelle-Caledonie_ChG_14-01-2026.pdf) |
+| Currency | Francs Pacifique; the DSF simulator covers 2025, 2024 and 2023 | [L3, DSF calculation page](https://dsf.gouv.nc/particuliers-impots-et-taxes/impot-sur-le-revenu/calculer-mon-impot-sur-le-revenu) |
+
+### Intake and component mechanics
 
 Reuse redacted records before grouped questions. Establish the obligation, income/basis year and complete applicable source chain; fiscal domicile and liability class; annual assessment unit and any change/death; exact parts and all special-part evidence; complete income categories, losses, deductions and abatements; exceptional/deferred/unusual income; C and its lawful precision; currency; all later reductions, credits and contributions; prepayments; procedures; reviewer and tools. Present the inferred profile and wait for confirmation. Profile confirmation does not establish law. Keep identifiers, bank details and signatures with the professional.
 
@@ -64,17 +74,58 @@ Reuse redacted records before grouped questions. Establish the obligation, incom
 5. **Compute raw G.** G = 0.04 x W1 + 0.12 x W2 + 0.25 x W3 + 0.40 x W4. Apply each rate only to its width. Do not apply the highest reached rate to all B. There is no invented maximum input or maximum raw tax. _(L1 article 136 I(1))_
 6. **Retain the stage.** Record C, N, B, R, every marginal width and G with the established premises and held later stages. B and each W are multiples of 1000, so these rational rates produce mathematically integral G. This arithmetic property is not a general tax-rounding, collection or settlement rule. No final-tax rounding is inferred.
 
-| Selected scale band, francs per part | Marginal rate | Cumulative raw G at upper boundary for N = 1 |
-|---|---:|---:|
-| B up to 1000000 | 0% | 0 |
-| B above 1000000 through 1800000 | 4% | 32000 |
-| B above 1800000 through 3000000 | 12% | 176000 |
-| B above 3000000 through 4500000 | 25% | 551000 |
-| B above 4500000 | 40% | No upper boundary |
+| Selected scale band, francs per part | Marginal rate | Cumulative raw G at upper boundary for N = 1 (derived) | Source |
+|---|---:|---:|---|
+| B up to 1000000 | 0% | 0 | [L1, article 136 I(1)](https://juridoc.gouv.nc/juridoc/jdcodes.nsf/0/050372C3F3A0E7D14B257567007545A1/%24File/Code_des_impots_Nouvelle-Caledonie_ChG_14-01-2026.pdf) |
+| B above 1000000 through 1800000 | 4% | 32000 | same |
+| B above 1800000 through 3000000 | 12% | 176000 | same |
+| B above 3000000 through 4500000 | 25% | 551000 | same |
+| B above 4500000 | 40% | No upper boundary | same |
 
 The rate table is L1 article 136 I(1). Its cumulative values are exact derived checks for the declared one-part branch, not final liability figures.
 
-## Fictional selected-2025 boundary checks
+## Worked cases
+
+Two of Ryan's boundary checks, as CI recomputes them (one part, XPF).
+
+**Case 1 (NCIR09), net taxable income 1,234,567.89.** Floored to B = 1,234,000. Only the 4% band is reached: 234,000 at 4% = 9,360 raw tax.
+
+```oa-check
+name: New Caledonia IRPP, one part, income 1234567.89 F (2026 scale)
+inputs:
+  income: 1234567.89
+steps:
+  - b: floor(income / 1000) * 1000
+  - w1: min(max(b - 1000000, 0), 800000)
+  - w2: min(max(b - 1800000, 0), 1200000)
+  - w3: min(max(b - 3000000, 0), 1500000)
+  - w4: max(b - 4500000, 0)
+  - tax: w1 * 0.04 + w2 * 0.12 + w3 * 0.25 + w4 * 0.40
+expected:
+  b: 1234000
+  tax: 9360
+```
+
+**Case 2 (NCIR21), a decision: marginal bands or the top rate on everything?** Income 4,501,000. The four widths are 800,000, 1,200,000, 1,500,000 and 1,000, charged 32,000 + 144,000 + 375,000 + 400 = 551,400. Applying 40% to all of B would wrongly give 1,800,400.
+
+```oa-check
+name: New Caledonia IRPP, one part, income 4501000 F (2026 scale)
+inputs:
+  income: 4501000
+steps:
+  - b: floor(income / 1000) * 1000
+  - w1: min(max(b - 1000000, 0), 800000)
+  - w2: min(max(b - 1800000, 0), 1200000)
+  - w3: min(max(b - 3000000, 0), 1500000)
+  - w4: max(b - 4500000, 0)
+  - tax: w1 * 0.04 + w2 * 0.12 + w3 * 0.25 + w4 * 0.40
+  - flat_wrong: b * 0.40
+expected:
+  tax: 551400
+  flat_wrong: 1800400
+```
+
+### Ryan's fictional selected-2025 boundary checks
 
 Every row stipulates the complete component premises above. Fractional inputs test the floor only; actual lawful precision and operative-year applicability remain held. All G values are raw francs before reductions, credits, contributions, prepayments and settlement.
 
@@ -110,7 +161,7 @@ NCIR07 preserves C = 1000999.99, B = 1000000 and G = 0. Rounding C first to 1001
 
 NCIR21 gives W1 = 800000, W2 = 1200000, W3 = 1500000 and W4 = 1000. Their charges are 32000, 144000, 375000 and 400, totalling G = 551400. Applying 40% to all B would wrongly give 1800400. NCIR22-NCIR24 preserve the raw scale across amounts that resemble separate redistributive-relief boundaries; those relief rules use gross global income, not C or B. Do not use these rows to decide relief eligibility. NCIR25 illustrates an uncapped large raw input without establishing special-income eligibility or final tax.
 
-## Refusal catalogue and held cases
+## When to refuse or refer
 
 Every shared refusal remains mandatory. For actual work add these stops:
 
@@ -142,7 +193,7 @@ Every shared refusal remains mandatory. For actual work add these stops:
 
 These rows document intended behaviour. Documentary and one-off fixture checks do not establish a deployed calculation engine or a completed consuming-LLM engagement.
 
-## Outputs, checks and country contract
+## Completion checklist
 
 Retain the universal working paper, reviewer brief, action list and practitioner checklist and all 5 income tax outputs: transaction classification register, computation working paper, filing/payment calendar, reviewer brief and taxpayer action list. Preserve identifiable components wherever the universal base permits combination. This reference replaces none of them.
 
@@ -170,28 +221,30 @@ The 13 universal slots are addressed only within this conditional scope: scope, 
 
 Optional regimes, international matters, local obligations and integrations remain incomplete. No actual income tax, payroll or comprehensive New Caledonia acceptance follows.
 
-## Revision and disclaimer
+### Revision and disclaimer
 
 29 October 2026, v0.1: conditional selected-2025 ordinary one-part raw IRPP component with exact lower-thousand floor, all marginal boundaries, complete upstream-input and household premises, source chronology caveat and actual-work holds. Tier 2, pending_review and verified_by pending remain.
 
 This document is general reference material and does not constitute tax, legal or financial advice. A qualified professional in the relevant jurisdiction must establish applicable law, verify facts and complete and sign off every required output before filing, paying or relying on a result.
 
-<!-- openaccountants-cta-block -->
+## Sources
 
----
+| Source | Read for | URL | Read on |
+|---|---|---|---|
+| L1: Juridoc, Code des impôts de la Nouvelle-Calédonie (update of 14/01/2026) | Read for article 132 (lower-thousand floor), article 136 I(1) (scale), 136 I(2) (quotient cap) and 136 II(1) (redistributive limits) | https://juridoc.gouv.nc/juridoc/jdcodes.nsf/0/050372C3F3A0E7D14B257567007545A1/%24File/Code_des_impots_Nouvelle-Caledonie_ChG_14-01-2026.pdf | 2026-11-14 |
+| L2: DSF, notice for the 2025 income declaration | Read for additional parts, hosted-child abatement and quotient limits (2025 context); downloaded, not re-read in full | https://dsf.gouv.nc/sites/default/files/documents/Notice%20d%C3%A9claration%20de%20revenus%20normale%202025.pdf | 2026-10-29 (read by Ryan); downloaded 2026-11-14 |
+| L3: DSF, calculating income tax | Read for the currency (francs Pacifique), the reference to article 136 I and the 2025, 2024 and 2023 simulators | https://dsf.gouv.nc/particuliers-impots-et-taxes/impot-sur-le-revenu/calculer-mon-impot-sur-le-revenu | 2026-11-14 |
 
-## Talk to a verified accountant
+### Ryan's notes on each source (kept)
 
-This guide is maintained in the
-[ryanduguid/openaccountants fork](https://github.com/ryanduguid/openaccountants).
-Check its quality tier, recorded review status and cited sources before use.
-Choose a practitioner whose credentials and engagement scope you have verified.
-The links below are optional upstream services; they do not publish or verify
-this fork's changes.
+| Source | Selected proposition and limit | Read on |
+|---|---|---|
+| [L1: Juridoc, Code des impôts de la Nouvelle-Calédonie](https://juridoc.gouv.nc/juridoc/jdcodes.nsf/0/050372C3F3A0E7D14B257567007545A1/%24File/Code_des_impots_Nouvelle-Caledonie_ChG_14-01-2026.pdf) | Complete official 647-page PDF retained. Selected articles 46-54 distinguish annual income, domicile and assessment unit; 128 and 131 address input formation and special income; 132 requires the lower-thousand income floor before division by parts; 133, Lp. 133 bis, Lp. 134, Lp. 134 bis and 135 require separate household/abatement/timing treatment; 136 I gives the progressive scale and separate quotient-benefit limitation. Article 136 II begins later reductions. Selected physical pages 181, 192-194 and 196-197 were compared with originals. Complete retention is not review of every amendment or branch. | 2026-10-29 (read by Ryan) |
+| [L2: DSF, notice for déclaration des revenus 2025](https://dsf.gouv.nc/sites/default/files/documents/Notice%20d%C3%A9claration%20de%20revenus%20normale%202025.pdf) | Complete official 6-page PDF retained. Original page 2 corroborates additional-part branches, family changes, hosted-child abatement, quotient limits and redistributive relief. This selected 2025 administrative context does not establish the complete law or all form procedures. | 2026-10-29 (read by Ryan) |
+| [L3: DSF, calculating income tax](https://dsf.gouv.nc/particuliers-impots-et-taxes/impot-sur-le-revenu/calculer-mon-impot-sur-le-revenu) | Complete loaded public text retained on 29 October 2026. Identifies francs Pacifique, article 136 I and simulations for 2025, 2024 and 2023. The calculator is anonymous and is not a declaration. No completed simulator run or authority-endorsed result is claimed. | 2026-10-29 (read by Ryan) |
 
-- Upstream connection service: https://www.openaccountants.com/connect
-- Upstream accountant network: https://www.openaccountants.com/network
+L1's filename and repeated header say 'Mise à jour le 14/01/2026', but physical page 181 cites arrêté AG-2026-DSF-0179 of 18 March 2026. Both were observed in the original. Preserve this chronology inconsistency; neither the filename nor header is accepted as an exhaustive verified law-as-at date. L2 supports a selected 2025 context, not reconciliation of every amendment, commencement or transitional provision. Actual 2025 and current-period applicability remain held until an authoritative period-specific source chain is established. An editing date does not establish operative law.
 
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
+L1 article 132's editorial note directs its dependant reference to Lp. 134. Preserve the operative cross-references, including Lp. 133 bis and the upstream Lp. 134 bis abatement. Missing evidence is not evidence of no rule. No rate, exemption, deduction, deadline, rounding or filing default is imported from metropolitan France or another territory.
+
+Not yet confirmed: any 2026 budget law changing the article 136 scale for 2026 income (no 2026 notice or simulator was published on the DSF site on 2026-11-14; the 2025 notice and the code as updated in 2026 are used, labelled for the 2025-2026 filing cycle); the code's chronology (header 14 January 2026, but it cites an arrêté of 18 March 2026); household parts other than one, the quotient cap and the article 136 II reductions (not computed); lawful input precision; filing and payment dates (not covered).

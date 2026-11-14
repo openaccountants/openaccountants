@@ -910,6 +910,13 @@
   "dir": "skills/namibia"
  },
  {
+  "code": "NC",
+  "name": "New Caledonia",
+  "region": "apac",
+  "owner": "ryan",
+  "dir": "skills/new-caledonia"
+ },
+ {
   "code": "NE",
   "name": "Niger",
   "region": "africa",
