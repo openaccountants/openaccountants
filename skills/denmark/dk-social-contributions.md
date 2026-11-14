@@ -202,33 +202,33 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Arbejdsmarkedsbidragsloven, LBK nr. 121 of 7 February 2020, §§ 1-5, 7, 9 | https://www.retsinformation.dk/eli/lta/2020/121 | 2026-10-23 |
-| Lov nr. 96 of 4 February 2025, § 1 (new AMBL § 1, stk. 2: 0% to 31 December of the year the person turns 17) and § 7, stk. 4 (effect from 1 January 2026) | https://www.retsinformation.dk/eli/lta/2025/96 | 2026-10-23 |
-| Personskatteloven, LBK nr. 1284 of 14 June 2021, § 3, stk. 2, nr. 6 | https://www.retsinformation.dk/eli/lta/2021/1284 | 2026-10-23 |
-| Skattestyrelsen, AM-bidrag (8%, base, exempt income, 2026 age rule, order of deduction) | https://skat.dk/borger/am-bidrag | 2026-10-23 |
-| Skattestyrelsen, B-income (B-skat instalments, 2026 age rule) | https://skat.dk/en-us/individuals/b-income | 2026-10-23 |
-| SKAT Juridisk Vejledning C.A.4.1.11 (AM-bidrag deductible; foreign social contributions) | https://info.skat.dk/data.aspx?oid=2061784 | 2026-10-23 |
-| Opkrævningsloven, LBK nr. 1040 of 13 September 2024, §§ 2, 4, 6, 7, 16 c | https://www.retsinformation.dk/eli/lta/2024/1040 | 2026-10-23 |
-| Lov nr. 1694 of 30 December 2024, § 1, nr. 6 and 15 (0.85-point addition; no interest on interest on the tax account) | https://www.retsinformation.dk/eli/lta/2024/1694 | 2026-10-23 |
-| SKAT Juridisk Vejledning A.B.4.7.2 (interest base plus 0.85 points; DKK 65 fee before 14 September 2026) | https://info.skat.dk/data.aspx?oid=2168585 | 2026-10-23 |
-| Lov nr. 763 of 8 September 2026, § 1, nr. 1 (Opkrævningsloven § 6 reminder fee DKK 65 to DKK 160) and § 8 (in force 14 September 2026) | https://www.retsinformation.dk/eli/lta/2026/763 | 2026-10-23 |
-| Skattestyrelsen, Payments to your tax account (reminder fee DKK 160 from 14 September 2026) | https://skat.dk/en-us/businesses/payment-and-the-tax-account-skattekontoen/payments-to-your-tax-account | 2026-10-23 |
-| SKM2025.720.SKTST, Opkrævningsloven § 7, stk. 2 rate for 2026 (0.1%) | https://info.skat.dk/data.aspx?oid=2459995 | 2026-10-23 |
-| Skattestyrelsen, deadlines for A-skat and AM-bidrag | https://skat.dk/erhverv/ansatte-og-loen/frister-ansatte-og-loen | 2026-10-23 |
-| borger.dk, ATP rates for 2026, private employers | https://www.borger.dk/pension-og-efterloen/atp-livslang-pension-oversigt/atp-bidraget/atp-satser-for-privat-virksomhed | 2026-10-23 |
-| virk.dk, ATP rates (14-day, weekly, casual, 2026 hourly rates) | https://virk.dk/vejledning/atp/atp-arbejdsgiver/atp-satser/ | 2026-10-23 |
-| virk.dk, ATP employer (who, split, quarters, interest) | https://virk.dk/vejledning/atp/atp-arbejdsgiver/ | 2026-10-23 |
-| virk.dk, ATP self-employed | https://virk.dk/vejledning/atp/atp-selvstaendig | 2026-10-23 |
-| virk.dk, ATP foreign business | https://virk.dk/vejledning/atp/atp-udenlandsk-virksomhed/ | 2026-10-23 |
-| virk.dk, Samlet Betaling contribution rates 2017-2026 | https://businessindenmark.virk.dk/guidance/samlet-betaling-bid/sb-employer/samlet-betaling-bid-contribution-rates | 2026-10-23 |
-| virk.dk, AUB employer | https://virk.dk/vejledning/aub/aub-arbejdsgiver/ | 2026-10-23 |
-| virk.dk, Barsel.dk fully covered employers | https://virk.dk/vejledning/barsel-dk/bdk-privat-arbejdsgiver/fuldt-omfattet/ | 2026-10-23 |
-| virk.dk, Finansieringsbidrag (FIB) | https://businessindenmark.virk.dk/guidance/fib-bid-finansieringsbidrag/fib-bid-finansieringsbidrag | 2026-10-23 |
-| virk.dk, AES contribution | https://virk.dk/vejledning/aes/aes-bidrag | 2026-10-23 |
+| Arbejdsmarkedsbidragsloven, LBK nr. 121 of 7 February 2020, §§ 1-5, 7, 9 | https://www.retsinformation.dk/eli/lta/2020/121 | 2026-11-14 |
+| Lov nr. 96 of 4 February 2025, § 1 (new AMBL § 1, stk. 2: 0% to 31 December of the year the person turns 17) and § 7, stk. 4 (effect from 1 January 2026) | https://www.retsinformation.dk/eli/lta/2025/96 | 2026-11-14 |
+| Personskatteloven, LBK nr. 1284 of 14 June 2021, § 3, stk. 2, nr. 6 | https://www.retsinformation.dk/eli/lta/2021/1284 | 2026-11-14 |
+| Read for the points the body cites to it: Skattestyrelsen, AM-bidrag (8%, base, exempt income, 2026 age rule, order of deduction) | https://skat.dk/borger/am-bidrag | 2026-11-14 |
+| Read for the points the body cites to it: Skattestyrelsen, B-income (B-skat instalments, 2026 age rule) | https://skat.dk/en-us/individuals/b-income | 2026-11-14 |
+| Read for the points the body cites to it: SKAT Juridisk Vejledning C.A.4.1.11 (AM-bidrag deductible; foreign social contributions) | https://info.skat.dk/data.aspx?oid=2061784 | 2026-11-14 |
+| Opkrævningsloven, LBK nr. 1040 of 13 September 2024, §§ 2, 4, 6, 7, 16 c | https://www.retsinformation.dk/eli/lta/2024/1040 | 2026-11-14 |
+| Lov nr. 1694 of 30 December 2024, § 1, nr. 6 and 15 (0.85-point addition; no interest on interest on the tax account) | https://www.retsinformation.dk/eli/lta/2024/1694 | 2026-11-14 |
+| Read for Reminder fee, A-skat and AM-bidrag (reminder sent only when the tax account debit balance exceeds DKK 5,000), to 13 September 2026: SKAT Juridisk Vejledning A.B.4.7.2 (interest base plus 0.85 points; DKK 65 fee before 14 September 2026) | https://info.skat.dk/data.aspx?oid=2168585 | 2026-11-14 |
+| Lov nr. 763 of 8 September 2026, § 1, nr. 1 (Opkrævningsloven § 6 reminder fee DKK 65 to DKK 160) and § 8 (in force 14 September 2026) | https://www.retsinformation.dk/eli/lta/2026/763 | 2026-11-14 |
+| Read for the points the body cites to it: Skattestyrelsen, Payments to your tax account (reminder fee DKK 160 from 14 September 2026) | https://skat.dk/en-us/businesses/payment-and-the-tax-account-skattekontoen/payments-to-your-tax-account | 2026-11-14 |
+| SKM2025.720.SKTST, Opkrævningsloven § 7, stk. 2 rate for 2026 (0.1%) | https://info.skat.dk/data.aspx?oid=2459995 | 2026-11-14 |
+| Read for the points the body cites to it: Skattestyrelsen, deadlines for A-skat and AM-bidrag | https://skat.dk/erhverv/ansatte-og-loen/frister-ansatte-og-loen | 2026-11-14 |
+| Read for ATP, monthly paid, 117 hours or more a month (employee 99, employer 198): borger.dk, ATP rates for 2026, private employers | https://www.borger.dk/pension-og-efterloen/atp-livslang-pension-oversigt/atp-bidraget/atp-satser-for-privat-virksomhed | 2026-11-14 |
+| Read for ATP, 14-day paid, 54 hours or more (employee 52.20, employer 104.40): virk.dk, ATP rates (14-day, weekly, casual, 2026 hourly rates) | https://virk.dk/vejledning/atp/atp-arbejdsgiver/atp-satser/ | 2026-11-14 |
+| Read for ATP, 14-day paid, 54 hours or more (employee 52.20, employer 104.40), Late payment interest, Samlet Betaling, 1 January to 30 June 2026 (yearly): virk.dk, ATP employer (who, split, quarters, interest) | https://virk.dk/vejledning/atp/atp-arbejdsgiver/ | 2026-11-14 |
+| Read for Voluntary ATP, self-employed: virk.dk, ATP self-employed | https://virk.dk/vejledning/atp/atp-selvstaendig | 2026-11-14 |
+| Read for the points the body cites to it: virk.dk, ATP foreign business | https://virk.dk/vejledning/atp/atp-udenlandsk-virksomhed/ | 2026-11-14 |
+| Read for ATP collected per full-time employee per quarter (3 x 297), FerieKonto admin fee, per employee: virk.dk, Samlet Betaling contribution rates 2017-2026 | https://businessindenmark.virk.dk/guidance/samlet-betaling-bid/sb-employer/samlet-betaling-bid-contribution-rates | 2026-11-14 |
+| Read for AUB (training levy), per full-time employee (AUB 596.75 plus VEU 108.50 a quarter): virk.dk, AUB employer | https://virk.dk/vejledning/aub/aub-arbejdsgiver/ | 2026-11-14 |
+| Read for Barsel.dk (parental leave fund), per full-time employee: virk.dk, Barsel.dk fully covered employers | https://virk.dk/vejledning/barsel-dk/bdk-privat-arbejdsgiver/fuldt-omfattet/ | 2026-11-14 |
+| Read for FIB (financing contribution), per full-time employee per quarter, of which Lønmodtagernes Garantifond DKK 55: virk.dk, Finansieringsbidrag (FIB) | https://businessindenmark.virk.dk/guidance/fib-bid-finansieringsbidrag/fib-bid-finansieringsbidrag | 2026-11-14 |
+| Read for the points the body cites to it: virk.dk, AES contribution | https://virk.dk/vejledning/aes/aes-bidrag | 2026-11-14 |
 | AES rates 2026 (PDF) | https://virk.dk/assets/6feKOXUjVtAaPklFxxBz9C/aes_bidragssatser_2026.pdf | 2026-10-23 |
-| virk.dk, AES work accident | https://virk.dk/vejledning/aes/aes-arbejdsulykke/ | 2026-10-23 |
-| Arbejdsskadesikringsloven, LBK nr. 667 of 8 July 2026, §§ 48, 50, 51, 82 | https://www.retsinformation.dk/eli/lta/2026/667 | 2026-10-23 |
-| Beskæftigelsesministeriet, VEJ nr. 10230 of 9 December 2025, rates for unemployment insurance 2026 (table 4.1) | https://www.retsinformation.dk/eli/retsinfo/2025/10230 | 2026-10-23 |
-| lifeindenmark.borger.dk, social security cover when working abroad | https://lifeindenmark.borger.dk/working/social-security-cover | 2026-10-23 |
+| Read for the points the body cites to it: virk.dk, AES work accident | https://virk.dk/vejledning/aes/aes-arbejdsulykke/ | 2026-11-14 |
+| Arbejdsskadesikringsloven, LBK nr. 667 of 8 July 2026, §§ 48, 50, 51, 82 | https://www.retsinformation.dk/eli/lta/2026/667 | 2026-11-14 |
+| Read for A-kasse unemployment insurance contribution to the state, full-time / part-time insured: Beskæftigelsesministeriet, VEJ nr. 10230 of 9 December 2025, rates for unemployment insurance 2026 (table 4.1) | https://www.retsinformation.dk/eli/retsinfo/2025/10230 | 2026-11-14 |
+| Read for the points the body cites to it: lifeindenmark.borger.dk, social security cover when working abroad | https://lifeindenmark.borger.dk/working/social-security-cover | 2026-11-14 |
 
 Not yet confirmed: whether an A1 from another country removes Danish AM-bidrag, rather than only giving a deduction for foreign contributions, was not settled from an official source. Whether Samlet Betaling charges exactly a quarter of the yearly AES amount each quarter on the ATP-based full-time count was not stated on the pages read, so Example 1 shows AES as a yearly figure. How AUB counts "every 50th employee" when the full-time count is a fraction was not read. The SMV payment date rests on Opkrævningsloven § 2, stk. 5 as consolidated in 2024; skat.dk does not publish the 2026 SMV table on the page read. The Samlet Betaling late interest rate from 1 July 2026 was not published on the page read. The commencement order for the 0.85-point addition under lov nr. 1694/2024, § 18, stk. 2 was not located; Den juridiske vejledning 2026-2 applies it. The monthly a-kasse admin fee charged by each a-kasse and work accident insurance premiums were not read.
