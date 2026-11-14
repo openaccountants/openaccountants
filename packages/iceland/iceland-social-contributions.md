@@ -6,19 +6,20 @@ description: >
   filing, separate pension deadlines and A1 evidence. Use for payroll social
   costs, pension deductions, employer pension, seamen and contribution
   remittance reconciliation. Includes source conflicts and recomputable cases.
-version: 0.7
+version: 0.8
 jurisdiction: IS
 tax_year: 2026
-last_updated: 2026-10-30
+last_updated: 2026-11-14
 depends_on:
   - social-contributions-workflow-base
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
+type: computation
 ---
 
-# Iceland social contributions and mandatory pension v0.7
+# Iceland social contributions and mandatory pension v0.8
 
 Tax year 2026, amounts in ISK. This method separates the employer levy, employee pension and employer pension, and produces contribution workpapers. General reference only: check the facts of each case against the cited law. The [payroll skill](iceland-payroll.md) handles income-tax withholding and net pay. The linked statutes are Alþingi's 1 October 2026 compilation (158a).
 

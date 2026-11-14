@@ -1,65 +1,130 @@
 ---
 name: sx-personal-income-tax-tables
-description: "Sint Maarten personal income tax calculation reference for calendar year 2026. Uses enacted regulation AB 2026 number 11 and its income-tax annex to explain the low-income override, marginal bands, lookup-table interpolation and basic credit already embedded in published amounts. Reproduces verified worked examples and distinguishes taxable income from salary or turnover. Highlights rounding risks when rebuilding the schedule and avoids assuming eligibility for child, elderly or sole-earner supplements. Applies to Dutch Sint Maarten, not French Saint-Martin. Residence, deductions, filing, credits eligibility and complete amendment reconciliation require further work. Independent accountant review is pending."
+description: "Sint Maarten personal income tax for calendar year 2026 under AB 2026 no. 11 and its Annex I. Covers the nil-tax rule for taxable income up to Cg 27,281.28, the six marginal bands from 12.5% to 47.5%, the lookup-table method with the basic credit already deducted, the 2026 supplements (sole earner, child categories I to IV, elderly), worked examples from the annex, who must file, the two-month deadline after the invitation, the 36-month rule, postponement and the escalating late-filing fines. Applies to Dutch Sint Maarten, not French Saint-Martin. Trigger phrases include Sint Maarten income tax, inkomstenbelasting Sint Maarten, St. Maarten tax table 2026, basisaftrek, Inspectorate of Taxes Sint Maarten."
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/sx-personal-income-tax-tables"
   jurisdiction: "SX"
   tax_year: "2026"
-  last_updated: "2026-11-01"
+  last_updated: "2026-11-14"
 ---
 
-# Sint Maarten: 2026 personal income-tax tables
+# Sint Maarten: 2026 personal income tax tables v1.0
 
-## Source and scope
+> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
-[AB 2026 no. 11](https://www.sintmaartengov.org/Documents/Income%20Tax%20Forms/AB%202026%2C%20no.%2011%20Regeling%20vaststelling%20inkomsten-%20en%20loonbelastingtabellen%202026.pdf), dated 16 March and published 18 March 2026, establishes the 2026 income and wage-tax tables. Article 1 adopts Annex I for income tax; article 3 repeals the 2025 table regulation. Article 4 provides for entry into force with retrospective effect to 1 January 2026, subject to the constitutional-review provisions stated there.
+Tax year: calendar year 2026. Authority: the Inspectorate of Taxes, Sint Maarten Tax Administration (tax.sx). Amounts are Caribbean guilders (Cg or XCG). Dutch Sint Maarten (SX) and French Saint-Martin (MF) are separate jurisdictions.
 
-This Guide explains the official 2026 calculation on an **already determined taxable-income figure**. It does not determine residence, income source, allowable deductions or special tax treatment. Amounts use the source's Cg currency notation. Dutch Sint Maarten (SX) and French Saint-Martin (MF) are separate jurisdictions.
+## Who this applies to
 
-## Apply the low-income rule first
+- Every natural person who receives worldwide income must file an income tax return with the Inspectorate of Taxes ([Sint Maarten Tax Administration, FAQ](https://www.tax.sx/)).
+- This skill computes tax on an **already determined taxable income**. It does not determine residence, income source, deductions or special treatment.
+- [AB 2026 no. 11](https://www.sintmaartengov.org/Documents/Income%20Tax%20Forms/AB%202026%2C%20no.%2011%20Regeling%20vaststelling%20inkomsten-%20en%20loonbelastingtabellen%202026.pdf), dated 16 March and published 18 March 2026, sets the 2026 income and wage tax tables: article 1 adopts Annex I for income tax, article 3 repeals the 2025 table regulation, article 4 gives retrospective effect to 1 January 2026, subject to the constitutional-review provisions it states.
+- Wage tax withholding is in `sx-wage-tax-tables`; turnover tax in `sx-turnover-tax`.
 
-[Annex I, introductory instructions](https://www.sintmaartengov.org/Documents/Income%20Tax%20Forms/AB%202026%2C%20no.%2011%20Bijlage%20I%20TABEL%20INKOMSTENBELASTING%202026.pdf) states that no income tax is levied when taxable income is **Cg 27,281.28 or less** from 1 January 2026. Otherwise, the normal 2026 table applies.
+## Rates, bands and thresholds
 
-This is not an instruction to deduct Cg 27,281.28 from everyone's income. It is also not safe to ignore the rule because the detailed lookup table shows positive amounts below that threshold. For example, the printed lookup row at Cg 27,248 shows Cg 1,025, but the express low-income rule makes the tax nil at that income.
+| Item | Figure | Conditions | Tax year | Source |
+|---|---|---|---|---|
+| Nil-tax rule | no income tax if taxable income is Cg 27,281.28 or less | From 1 January 2026; otherwise the normal table applies | 2026 | [Annex I, AB 2026 no. 11](https://www.sintmaartengov.org/Documents/Income%20Tax%20Forms/AB%202026%2C%20no.%2011%20Bijlage%20I%20TABEL%20INKOMSTENBELASTING%202026.pdf) |
+| Band 1: 0 to 36,576 | 12.5% | Tax at the upper limit 4,571.95 (before credits) | 2026 | same |
+| Band 2: over 36,576 to 54,864 | 20% | Tax at the lower limit 4,571.95 | 2026 | same |
+| Band 3: over 54,864 to 76,200 | 26.25% | Tax at the lower limit 8,229.49 | 2026 | same |
+| Band 4: over 76,200 to 114,297 | 33.75% | Tax at the lower limit 13,830.02 | 2026 | same |
+| Band 5: over 114,297 to 161,540 | 40% | Tax at the lower limit 26,688.11 | 2026 | same |
+| Band 6: over 161,540 | 47.5% | Tax at the lower limit 45,585.20 | 2026 | same |
+| Basic credit (basisaftrek) | 2,381 | Already deducted in the lookup table | 2026 | same |
+| Sole-earner supplement | 1,590 | Eligibility not set out in the annex | 2026 | same |
+| Child supplement I, II, III, IV | 847, 420, 107, 86 | Category conditions not set out in the annex | 2026 | same |
+| Elderly supplement; transferred | 1,199; 603 | Eligibility not set out in the annex | 2026 | same |
+| Late-filing fines after a reminder | XCG 250, 500, 1,000, 1,500, 2,500 | First to fifth default | 2026 | [Sint Maarten Tax Administration, FAQ](https://www.tax.sx/) |
 
-## Ordinary marginal schedule
+## The base
 
-Annex I gives the following bands. Boundary descriptions below follow its greater-than / less-than-or-equal columns.
+1. **Low-income rule first.** If taxable income is Cg 27,281.28 or less, tax is nil. Do not deduct 27,281.28 from everyone's income, and do not ignore the rule because the lookup table shows positive amounts below it: the row at Cg 27,248 shows Cg 1,025, but tax is nil there ([Annex I](https://www.sintmaartengov.org/Documents/Income%20Tax%20Forms/AB%202026%2C%20no.%2011%20Bijlage%20I%20TABEL%20INKOMSTENBELASTING%202026.pdf)).
+2. **Lookup method.** Take the tax printed in the table at the table income just below the taxable income and add the remainder times the listed percentage (same annex).
+3. **Basic credit is already in the table.** The table is headed "Inclusief basiskorting" and starts at 19,048 with nil tax (2,381 / 12.5%). Do not deduct 2,381 again. Other supplements are still deducted, but tax never goes below nil (same annex).
+4. **Do not rebuild the table from the bands.** The printed cumulative amounts carry cent differences that a formula on rounded thresholds would miss; for a return use the printed table (same annex).
+5. **Supplements need eligibility evidence.** The annex lists amounts only; who qualifies and which child or elderly category applies come from the ordinance and the facts.
 
-| Taxable income above Cg | Up to and including Cg | Marginal percentage |
-|---:|---:|---:|
-| 0 | 36,576 | 12.5% |
-| 36,576 | 54,864 | 20% |
-| 54,864 | 76,200 | 26.25% |
-| 76,200 | 114,297 | 33.75% |
-| 114,297 | 161,540 | 40% |
-| 161,540 | No upper limit shown | 47.5% |
+## Deadlines and filing
 
-Use these to understand the marginal rates, together with the separate low-income rule. For a return computation, use the published lookup procedure and values rather than reconstructing cumulative tax from rounded band thresholds. The annex's published cumulative amounts contain cent differences that a simple rounded-threshold formula would miss. [Annex I, schedule and detailed table](https://www.sintmaartengov.org/Documents/Income%20Tax%20Forms/AB%202026%2C%20no.%2011%20Bijlage%20I%20TABEL%20INKOMSTENBELASTING%202026.pdf).
+- File within two months of the invitation date, on the paper return form. If you cannot, request a postponement from the Inspector before the deadline, preferably by email to taxinfo@sintmaartengov.org with your name, CRIB number, the period and the reason ([Sint Maarten Tax Administration, FAQ](https://www.tax.sx/)).
+- No invitation received: you must still file within 36 months from the return's due date (same page).
+- CRIB number for individuals: the Personal CRIB Number Registration Form with a valid ID or passport and proof of address (census form under 6 months old or a recent utility bill) (same page).
+- Payment by bank transfer to the Receiver's accounts at Windward Island Bank or RBC Royal Bank, in USD or XCG; refunds by the Tax Refund Form to Receivers.Admin@sintmaartengov.org (same page).
 
-## Lookup-table method and examples
+## Penalties and interest
 
-The introductory instructions say to take the published tax amount at the relevant table income and add the residual income multiplied by the listed percentage. The examples below are in Annex I and were checked arithmetically:
+After the deadline (including any approved extension) the Inspector sends a reminder. Not filing after the reminder brings a fine that rises with repeated defaults: XCG 250, 500, 1,000, 1,500 and 2,500 for the first to fifth default ([Sint Maarten Tax Administration, FAQ](https://www.tax.sx/)). Interest is not on the pages read.
 
-| Taxable income | Published anchor | Tax at anchor | Residual calculation | Total |
-|---|---:|---:|---:|---:|
-| Cg 42,360 | 42,348 | 3,345.40 | 12 × 20% = 2.40 | 3,347.80 |
-| Cg 169,958 | 169,948 | 47,197.96 | 10 × 47.5% = 4.75 | 47,202.71 |
+## Cross-border points
 
-The source expressly states that the **basic credit is already deducted** in these calculated amounts. Do not deduct it again. Annex I lists Cg 2,381 for the basic amount; its detailed table is labelled as including the basic credit. Other eligible supplements still need to be deducted, but the resulting tax cannot be below zero. [Annex I](https://www.sintmaartengov.org/Documents/Income%20Tax%20Forms/AB%202026%2C%20no.%2011%20Bijlage%20I%20TABEL%20INKOMSTENBELASTING%202026.pdf).
+- The table applies to Dutch Sint Maarten only; French Saint-Martin has its own tax code (see `skills/saint-martin/`).
+- Non-resident taxation, treaties and the tax arrangement for the Kingdom are not covered: refer.
 
-## Supplements need eligibility evidence
+## Two worked examples that recompute
 
-The annex lists sole-earner, child and elderly supplements, but a rate table alone does not establish who qualifies, how competing claims are assigned or which child/elderly category applies. Obtain the applicable statutory conditions and facts before applying those amounts. This Guide deliberately does not convert a list of supplement figures into automatic relief.
+**Case 1: taxable income Cg 42,360 (Annex I example I).** Table tax at 42,348 is 3,345.40; remainder 12 at 20% = 2.40; total 3,347.80, with the basic credit already deducted. A check against the bands: 4,571.95 + 20% of (42,360 less 36,576) = 5,728.75, less the basic credit 2,381 = 3,347.75, five cents off the printed table, which is why the table is used.
 
-## Verification and remaining work
+```oa-check
+name: Sint Maarten 2026 income tax, taxable income 42360
+inputs:
+  taxable_income: 42360
+  table_row: 42348
+  table_tax: 3345.40
+steps:
+  - remainder_tax: (taxable_income - table_row) * 0.20
+  - total_tax: table_tax + remainder_tax
+  - band_formula: 4571.95 + (taxable_income - 36576) * 0.20 - 2381
+  - difference: total_tax - band_formula
+expected:
+  remainder_tax: 2.40
+  total_tax: 3347.80
+  band_formula: 3347.75
+  difference: 0.05
+```
 
-Checked 22 October 2026. Official regulation and Annex I downloaded; introductory examples and nil-tax instruction visually checked. The government host's expired certificate required a one-off certificate-verification bypass for these public PDF downloads; the indexed official titles and matching PDF content were also checked. The alternate www1 host returned an under-construction page.
+**Case 2: taxable income Cg 169,958 (Annex I example II), and the nil-rule edge.** Table tax at 169,948 is 47,197.96; remainder 10 at 47.5% = 4.75; total 47,202.71. By contrast, someone with taxable income of 27,248 pays nil, not the 1,025 printed on that row, because 27,248 is not more than 27,281.28.
 
-Residence, taxable scope, deductions, filing obligations, supplement eligibility, constitutional-review status and the complete amendment history still require reconciliation before merge. Independent accountant review has not occurred. This is a source-cited calculation draft, not comprehensive country coverage.
+```oa-check
+name: Sint Maarten 2026 income tax, taxable income 169958
+inputs:
+  taxable_income: 169958
+  table_row: 169948
+  table_tax: 47197.96
+  nil_limit: 27281.28
+  low_income: 27248
+steps:
+  - remainder_tax: (taxable_income - table_row) * 0.475
+  - total_tax: table_tax + remainder_tax
+  - low_income_headroom: nil_limit - low_income
+expected:
+  remainder_tax: 4.75
+  total_tax: 47202.71
+  low_income_headroom: 33.28
+```
+
+## Ask the client first
+
+1. Do you live in Sint Maarten (Dutch side), and did you all year?
+2. Taxable income for 2026, after the deductions you claim.
+3. Married, and does your spouse earn income (sole-earner supplement)?
+4. Children: ages and schooling (child categories).
+5. Your age and your spouse's (elderly supplement).
+6. Did you receive the invitation to file, and when?
+
+## Sources
+
+| Source | URL | Read on |
+|---|---|---|
+| AB 2026 no. 11, Regeling vaststelling inkomsten- en loonbelastingtabellen 2026: read for articles 1 to 4 (adoption of Annex I and II, repeal of the 2025 tables, retrospective entry into force) | https://www.sintmaartengov.org/Documents/Income%20Tax%20Forms/AB%202026%2C%20no.%2011%20Regeling%20vaststelling%20inkomsten-%20en%20loonbelastingtabellen%202026.pdf | 2026-11-14 |
+| AB 2026 no. 11, Annex I (income tax table 2026): read for the instructions, both examples, the nil-tax rule, the band table, the supplements and the lookup rows at 19,048 and 27,248 | https://www.sintmaartengov.org/Documents/Income%20Tax%20Forms/AB%202026%2C%20no.%2011%20Bijlage%20I%20TABEL%20INKOMSTENBELASTING%202026.pdf | 2026-11-14 |
+| Sint Maarten Tax Administration, home page FAQ: read for who must file, the two-month and 36-month rules, postponement, the escalating fines, CRIB registration, payment accounts and refunds | https://www.tax.sx/ | 2026-11-14 |
+
+Not yet confirmed: the conditions for the sole-earner, child and elderly supplements; deductions and residence rules in the Landsverordening inkomstenbelasting; interest on late tax; whether the constitutional-review condition in article 4 was met.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-01. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `sx-personal-income-tax-tables` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/sx-personal-income-tax-tables. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `sx-personal-income-tax-tables` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/sx-personal-income-tax-tables. If neither is available, confirm every figure against the official source pages cited above before relying on it.

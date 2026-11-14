@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/algeria-income-tax"
   jurisdiction: "DZ"
   tax_year: "2026"
-  last_updated: "2026-11-01"
+  last_updated: "2026-11-14"
 ---
 
-# Algeria Income Tax (IRG): Employee and Self-Employed v0.2
+# Algeria Income Tax (IRG): Employee and Self-Employed v0.3
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -66,7 +66,6 @@ Residents and non-residents earning salary, business, professional, rental or in
 | IFU minimum | 30,000 DA a year | Art. 365 bis, LF 2025 art. 29; was 20,000 in the old skill; paid in full by 30 June | 2026 | https://www.joradp.dz/FTP/JO-FRANCAIS/2024/F2024084.pdf |
 | IFU minimum, auto-entrepreneur | 10,000 DA a year | Same article | 2026 | same |
 | Professional activity tax (TAP) | Removed | DGI circular of 13 Feb 2024 | 2026 | https://web.archive.org/web/20250219180444/http://mfdgi.gov.dz/fr/a-propos/actu-fr/circulaire-relative-a-la-suppression-de-la-taxe-sur-l-lactivite-professionnelle-tap |
-| Interest | unverified: 10% in the old skill | Not read in the law | 2026 | unverified |
 
 ## The base
 
@@ -423,4 +422,4 @@ Not yet confirmed: interest withholding rate (10% in the old skill); property ca
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-01. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `algeria-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/algeria-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `algeria-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/algeria-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
