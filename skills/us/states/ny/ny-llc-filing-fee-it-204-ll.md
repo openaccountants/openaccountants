@@ -1,10 +1,10 @@
 ---
 name: ny-llc-filing-fee-it-204-ll
 description: New York annual filing fee for LLCs, LLPs and partnerships on Form IT-204-LL (Tax Law 658(c)(3)), for tax year 2026. Who must file (a disregarded single-member LLC with any New York source income, gain, loss or deduction; an LLC or LLP treated as a partnership with New York source items; a regular partnership with New York source gross income of at least $1 million in the preceding year), who does not (no New York source items, an LLC taxed as a corporation), the fee ($25 for a disregarded LLC; $25 to $4,500 on preceding-year New York source gross income for LLCs and LLPs; $500 to $4,500 for regular partnerships), no proration, the due date (15th day of the third month, 15 March 2027 for calendar 2026) and no extension. Trigger on "IT-204-LL", "New York LLC fee", "NY LLC filing fee", "LLC annual fee New York", "partnership filing fee New York". New York only.
-version: "1.0"
+version: "1.1"
 jurisdiction: US-NY
 tax_year: 2026
-last_updated: 2026-11-13
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: formation
@@ -98,7 +98,7 @@ The fee table has applied to taxable years beginning in 2008 and after and is no
 | Partnership-taxed LLC formed in 2026 | No preceding-year New York source gross income: USD 25 | [Tax Law 658(c)(3)(B)](https://www.nysenate.gov/legislation/laws/TAX/658) |
 | Partnership-taxed LLC with a New York loss in 2026 | Still files (a loss is a New York source item); fee on 2025 gross income | [IT-204-LL-I (2025)](https://www.tax.ny.gov/pdf/2025/inc/it204lli_2025.pdf) |
 | LLC that elected S corporation or C corporation treatment | Does not file IT-204-LL; corporate tax rules apply | [Tax Department, annual filing fee](https://www.tax.ny.gov/pit/efile/annual_filing_fee.htm) |
-| Regular partnership with USD 900,000 of 2025 New York source gross income | No fee, do not file | [IT-204-LL-I (2025)](https://www.tax.ny.gov/pdf/2025/inc/it204lli_2025.pdf) |
+| Regular partnership with USD 900,000 of 2025 New York source gross income (derived: an example below the IT-204-LL-I test of at least $1 million) | No fee, do not file | [IT-204-LL-I (2025)](https://www.tax.ny.gov/pdf/2025/inc/it204lli_2025.pdf) |
 | Gross income exactly on a band edge (for example USD 250,000) | The lower band: "not more than" | [Tax Department, annual filing fee](https://www.tax.ny.gov/pit/efile/annual_filing_fee.htm) |
 | Disregarded LLC with no EIN or New York temporary number | Enter the member's Social Security number | [IT-204-LL instructions page](https://www.tax.ny.gov/forms/current-forms/it/it204lli.htm) |
 

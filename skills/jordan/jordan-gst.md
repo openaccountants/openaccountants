@@ -1,11 +1,12 @@
 ---
 name: jordan-gst
 description: "Conditional Jordan General Sales Tax extracts for a 2026 refresh under Law No. 6 of 1994. Covers the standard-rate clause, registration framework, source-text periods, payment timing, deductions, refunds and late charges. Registration limits, schedules, supplier-specific classifications, current return fields, amendment currentness and operational filing procedures remain on hold. Bank descriptions are investigation prompts and cannot establish tax treatment. Two executable examples illustrate standard-rate arithmetic and payment timing under stated assumptions. Use for Jordan GST research, Jordan VAT, ISTD sales tax and imported-service questions. Read the Sources holds before any classification or filing decision."
-version: 2.3
+version: 2.4
+type: situation-rules
 jurisdiction: JO
 category: international
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: vat-gst
@@ -31,7 +32,6 @@ Refuse and refer: Aqaba Special Economic Zone operations and any transaction req
 | Zero rate | 0% | Schedule 2 goods, sales to free zones, exports, sales to exempt bodies, art. 7(a) | same |
 | Exempt | Exempt sale under the readable exemption clause; input treatment is on hold | Schedule 3 list title / art. 7(b) extract; no input entitlement or prohibition inferred from the title | https://www.istd.gov.jo/AR/List/%D8%AC%D8%AF%D8%A7%D9%88%D9%84_%D8%A7%D9%84%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9_%D8%A7%D9%84%D8%B9%D8%A7%D9%85%D8%A9_%D8%B9%D9%84%D9%89__%D8%A7%D9%84%D9%85%D8%A8%D9%8A%D8%B9%D8%A7%D8%AA |
 | Reduced lists | 10%, 5%, 4%, 2% | Goods named on ISTD lists; look up the item, never guess | https://www.istd.gov.jo/AR/List/%D8%A7%D9%84%D9%86%D8%B3%D8%A8_%D8%A7%D9%84%D8%B6%D8%B1%D9%8A%D8%A8%D9%8A%D8%A9 |
-| Registration limit | unverified, on hold | The regulation setting the limit has not been read; no threshold can be applied from this draft | unverified |
 | Importer | No limit | Register within 30 days of first import, unless personal use | https://istd.gov.jo/EBV4.0/Root_Storage/AR/QRCODE/sales2.pdf |
 | Tourist refund | JOD 50 to JOD 500 of tax refunded | Non-resident's goods held on departure; these are refund amounts, not purchase-value thresholds. The exact refund article/subparagraph number remains on hold | same |
 
