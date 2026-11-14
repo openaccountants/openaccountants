@@ -2,11 +2,12 @@
 name: zw-payroll-social
 description: >
   Zimbabwe payroll and social contributions, tax year 2026: PAYE in USD and ZWG, 3% AIDS levy, NSSA pension 4.5% each on a USD 700 ceiling, workers compensation by industry, ZIMDEF, the monthly PAYE return due on the 5th and payment on the 10th, and the long return in TaRMS. Use for questions such as Zimbabwe payroll, ZIMRA PAYE, P2 return, NSSA contributions, P4 form or what does an employee cost in Zimbabwe. Individual returns are in zw-income-tax.
-version: 1.0
+version: 1.1
 jurisdiction: ZW
 category: international
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
+type: computation
 source_checked: 2026-11-01
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
@@ -42,8 +43,6 @@ ZIMRA lists no 2026 table as read on 1 November 2026. The 2025 tables are the la
 | NSSA pension, employer | 4.5% | 2026 | Same | same |
 | NSSA insurable ceiling | USD 700 a month | 2026 | NSSA says it is gazetted quarterly; the page carries no date | same |
 | Workers compensation, example IC 0110 | 1.38% | 2026 | Employer only; rate depends on industry code and NSSA notice | same |
-| ZIMDEF levy | unverified: 1% of wage bill | 2026 | Not reconfirmed on an official page | unverified |
-| National minimum wage | unverified: USD 150 a month | 2026 | SI 186 of 2024 not opened | unverified |
 
 ## The base
 
@@ -53,7 +52,7 @@ These sections come from the earlier version. Where a figure conflicts with the 
 
 ## zimbabwe-payroll
 
-### Zimbabwe Payroll Skill v1.0
+### Zimbabwe Payroll Skill v1.1
 
 > **Verification status:** Tier 2. `verified_by: pending`  -  this skill has NOT yet been signed off by a registered Zimbabwean tax accountant or ZIMRA-registered tax agent. Every output must be labelled as an estimate and routed to a qualified professional.
 
@@ -565,4 +564,4 @@ expected:
 | ZIMRA Tax Tables page and 2025 PDFs, monthly and annual tables | https://www.zimra.co.zw/domestic-taxes/tax-tables | 2026-11-01 |
 | NSSA Contributions page, whole page, in a browser | https://www.nssa.org.zw/contributions/ | 2026-11-01 |
 
-Not yet confirmed: any 2026 PAYE table; current quarter NSSA ceiling and its ZWG equivalent; full IC rates; ZIMDEF rate and deadline; SI 186 of 2024 and NEC wages, including the 65% USD split; late PAYE penalty; order of NSSA and PAYE.
+Not yet confirmed: any 2026 PAYE table; current quarter NSSA ceiling and its ZWG equivalent; full IC rates; ZIMDEF rate and deadline; SI 186 of 2024 and NEC wages, including the 65% USD split; late PAYE penalty; order of NSSA and PAYE; rows moved out of the rates table on 2026-11-14: ZIMDEF levy 1% of wage bill (earlier version) and national minimum wage USD 150 a month (SI 186 of 2024 not opened).

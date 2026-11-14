@@ -2,11 +2,12 @@
 name: zimbabwe-vat
 description: >
   Zimbabwe VAT return work, tax year 2026: the 15.5% standard rate from 1 January 2026, registration at USD 25,000, VAT categories, returns on the 10th and payment on the 15th, fiscal tax invoices through FDMS, imported services paid in USD, digital services withholding tax, and 10% export taxes on some minerals. Use for classifying transactions, preparing a VAT return, or questions such as what is the VAT rate in Zimbabwe, do I need to register for VAT with ZIMRA, or can I claim input tax on this invoice.
-version: 2.1
+version: 2.2
 jurisdiction: ZW
 category: international
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
+type: situation-rules
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: vat-gst
@@ -109,11 +110,11 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Finance Act No. 7 of 2025 (Veritas copy of the Government Printer text), whole Act | https://www.veritaszim.net/sites/veritas_d/files/Finance%20Act%2C%20Act%20No.%207%20of%202025.pdf | 2026-11-01 |
-| ZIMRA Public Notices 5, 7, 11, 49, 50, 58, 61 of 2026 (list page; each PDF opened) | https://www.zimra.co.zw/public-notices | 2026-11-01 |
-| ZIMRA VAT Registration page, read thresholds and how to register | https://www.zimra.co.zw/domestic-taxes/vat/vat-registration | 2026-11-01 |
-| ZIMRA Mechanics of VAT page, read rates, obligations, input tax | https://www.zimra.co.zw/domestic-taxes/vat/mechanics-of-vat | 2026-11-01 |
-| ZIMRA Public Notice 5 of 2026, sections 1 to 8 read | https://www.zimra.co.zw/public-notices | 2026-11-01 |
-| ZIMRA VAT 7 form, whole form read, older issue with RTGS wording | https://www.zimra.co.zw/downloads/category/9-domestic-taxes | 2026-11-01 |
+| Finance Act No. 7 of 2025 (Veritas copy of the Government Printer text): read in full | https://www.veritaszim.net/sites/veritas_d/files/Finance%20Act%2C%20Act%20No.%207%20of%202025.pdf | 2026-11-14 |
+| ZIMRA Public Notices 5, 7, 11, 49, 50, 58, 61 of 2026: each PDF read on 2026-11-01; the list page reopened 2026-11-14 and read for notices 49 and 50 (still listed) | https://www.zimra.co.zw/public-notices | 2026-11-14 (list page only) |
+| ZIMRA VAT Registration page: read for the thresholds and how to register | https://www.zimra.co.zw/domestic-taxes/vat/vat-registration | 2026-11-14 |
+| ZIMRA Mechanics of VAT page: read for the rates, obligations and input tax | https://www.zimra.co.zw/domestic-taxes/vat/mechanics-of-vat | 2026-11-14 |
+| ZIMRA Public Notice 5 of 2026: read for sections 1 to 8 on 2026-11-01; the list page reopened 2026-11-14 | https://www.zimra.co.zw/public-notices | 2026-11-14 (list page only) |
+| ZIMRA VAT 7 form, older issue with RTGS wording: read in full on 2026-11-01; the downloads page reopened 2026-11-14 | https://www.zimra.co.zw/downloads/category/9-domestic-taxes | 2026-11-14 (downloads page only) |
 
 Not yet confirmed: the exemption list in the VAT regulations (earlier version: financial, medical, education, residential rental, public transport, postal, water, and as zero-rated: maize meal, bread, milk, sugar, cooking oil, salt, fruit and vegetables, farming inputs, medical supplies, fuel, domestic electricity); blocked input under s.16 (earlier version: vehicles under 9 seats, entertainment, club subscriptions, personal use); gifts over USD 25 as deemed supply; late filing USD 30 a day and late payment 10%; criminal penalty for non-fiscalisation; Category D period; USD to ZiG conversion rule; the 3/23 fraction, which predates 15.5%; SI 81 of 2025 text; the current TaRMS field numbers.

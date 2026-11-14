@@ -2,11 +2,12 @@
 name: zw-corporate-income-tax
 description: >
   Zimbabwe corporate income tax, tax year 2026: 25% plus 3% AIDS levy, reduced rates for exporters, mining, licensed investors and special economic zones, BKPO services at 15%, the domestic minimum top-up tax, quarterly payment dates, the ITF12C return, the 50:50 currency rule, new permanent establishment tests and new credits and deductions from Finance Act 7 of 2025. Use for questions on company tax in Zimbabwe, QPD dates, ZIMRA corporate rates or withholding tax on dividends.
-version: 1.0
+version: 1.1
 jurisdiction: ZW
 category: international
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
+type: computation
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
@@ -42,8 +43,6 @@ Companies, trusts and pension funds with income from a Zimbabwe source or deemed
 | Gaming operators tax | 20% | 2026 | Gross monthly takings, final tax | same |
 | Sports credit | up to USD 10,000 | 2026 | Registered, tax compliant, NSSA compliant | same |
 | Special capital gains tax | 20% | 2026 | Offshore transfer of land-holding entity interests | same |
-| Dividend WHT, ZSE, VFEX, unlisted | unverified: 10%, 5%, 15% | 2026 | Earlier version, not reconfirmed | unverified |
-| Royalties and interest to non-residents | unverified: 15% | 2026 | Earlier version, not reconfirmed | unverified |
 
 ## The base
 
@@ -109,4 +108,4 @@ expected:
 | ZIMRA Tax Rates page, whole table; undated | https://www.zimra.co.zw/domestic-taxes/corporate/tax-rates | 2026-11-01 |
 | ZIMRA Self Assessment Return Notes | https://www.zimra.co.zw/domestic-taxes/corporate/self-assessment-return-notes | 2026-11-01 |
 
-Not yet confirmed: payment days of QPDs 1 to 3; whether the ZIMRA rates table reflects all 2026 changes; withholding rates; the 2026 start date of non-residents' tax on interest; mining rate notes; treaty rates; penalties and interest; approved SEZ terms beyond the table.
+Not yet confirmed: payment days of QPDs 1 to 3; whether the ZIMRA rates table reflects all 2026 changes; withholding rates; the 2026 start date of non-residents' tax on interest; mining rate notes; treaty rates; penalties and interest; approved SEZ terms beyond the table; rows moved out of the rates table on 2026-11-14 (earlier version, not reconfirmed): dividend withholding 10% ZSE, 5% VFEX, 15% unlisted; royalties and interest to non-residents 15%.

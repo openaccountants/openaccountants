@@ -2,11 +2,12 @@
 name: zw-income-tax
 description: >
   Zimbabwe income tax for individuals and the self-employed, tax year 2026: PAYE bands in USD and ZWG, the 3% AIDS levy, the flat 25% on trade and investment income, quarterly payment dates, the ITF12C return, the move of professionals and larger transporters to self-assessment, presumptive rental income tax and the 50:50 currency rule. Use for questions such as how much PAYE do I pay, ZIMRA tax table, QPD dates, freelancer tax in Zimbabwe, or rental income tax in Zimbabwe. Companies are in zw-corporate-income-tax and employer payroll in zw-payroll-social.
-version: 1.0
+version: 1.1
 jurisdiction: ZW
 category: international
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
+type: computation
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
@@ -41,8 +42,6 @@ ZIMRA's tax tables page lists no 2026 table as read on 1 November 2026. The 2025
 | Presumptive rental income tax | 15% of rent | 2026 | Proprietors renting to tenants liable for presumptive tax; from 1 Jan 2026 | https://www.veritaszim.net/sites/veritas_d/files/Finance%20Act%2C%20Act%20No.%207%20of%202025.pdf |
 | Punters tax | 25% of gross winnings | 2026 | Withheld by the gaming operator | https://www.veritaszim.net/sites/veritas_d/files/Finance%20Act%2C%20Act%20No.%207%20of%202025.pdf |
 | Intermediated money transfer tax, local currency | 1.5% | 2026 | Replaces the 2% in the earlier version; flat USD 10,150 equivalent at USD 500,000 or more | https://www.veritaszim.net/sites/veritas_d/files/Finance%20Act%2C%20Act%20No.%207%20of%202025.pdf |
-| Bonus exemption | unverified: USD 700 | 2026 | Not reconfirmed on an official page | unverified |
-| Credit for age 55 and over, blind or disabled | unverified: USD 900 a year | 2026 | Not reconfirmed on an official page | unverified |
 
 ## The base
 
@@ -54,7 +53,7 @@ These sections come from the earlier version. Where a figure conflicts with the 
 
 ## zimbabwe-income-tax
 
-### Zimbabwe Income Tax -- Individual & Self-Employed Skill v1.0
+### Zimbabwe Income Tax -- Individual & Self-Employed Skill v1.1
 
 > **Tier 2.** Figures are drawn from ZIMRA Jan-Dec 2025 PAYE tax tables, ZIMRA corporate/individual rate pages, NSSA contribution schedules, and reputable secondary sources . Every figure carries an inline citation or an explicit `[RESEARCH GAP -- reviewer to confirm]` marker. This skill has NOT yet been signed off by a registered Zimbabwean tax practitioner.
 
@@ -764,4 +763,4 @@ expected:
 | ZIMRA Tax Rates page, whole table | https://www.zimra.co.zw/domestic-taxes/corporate/tax-rates | 2026-11-01 |
 | ZIMRA Self Assessment Return Notes | https://www.zimra.co.zw/domestic-taxes/corporate/self-assessment-return-notes | 2026-11-01 |
 
-Not yet confirmed: payment days of QPDs 1 to 3; any 2026 ZIMRA PAYE table; USD 700 bonus exemption; USD 900 credits; income tax late filing and late payment penalties, including the 100% figure in the earlier version; the text of SI 81 of 2025 (dates come from ZIMRA notices citing it); ZWG conversion rules.
+Not yet confirmed: payment days of QPDs 1 to 3; any 2026 ZIMRA PAYE table; USD 700 bonus exemption; USD 900 credits; income tax late filing and late payment penalties, including the 100% figure in the earlier version; the text of SI 81 of 2025 (dates come from ZIMRA notices citing it); ZWG conversion rules; rows moved out of the rates table on 2026-11-14 (earlier version): USD 700 bonus exemption and USD 900 a year credit for age 55 and over, blind or disabled.
