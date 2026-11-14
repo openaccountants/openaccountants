@@ -1,371 +1,228 @@
 ---
 name: id-bookkeeping
-description: "Use this skill whenever asked about Indonesian bookkeeping or transaction classification for income tax purposes. Trigger on phrases like \"Indonesia bookkeeping\", \"Pembukuan\", \"Pencatatan\", \"NPPN\", \"Norma Penghitungan\", \"Norma Penghitungan Penghasilan Neto\", \"classify transactions Indonesia\", \"bank statement Indonesia tax\", \"SPT 1770 classification\", \"SPT 1771 classification\", \"PPh OP bookkeeping\", \"PPh Badan bookkeeping\", \"KLU coefficient\", \"deemed profit Indonesia\", \"pembukuan vs pencatatan\". Covers the Pasal 28 UU KUP obligation, the pembukuan-vs-NPPN choice, KLU coefficient norms, transaction classification mapping to SPT 1770 Lampiran appendices and SPT 1771 Lampiran I, record retention, cash-vs-accrual election, and the Pasal 9 UU PPh non-deductible catalogue. Out of scope: the tax calculations themselves (those live in id-income-tax / id-corporate-tax), PPN/VAT classification (see indonesia-vat), PPh 21 payroll (see id-payroll-pph21), and final-tax PP 23 / PP 55 micro regimes are referenced but not computed here. ALWAYS read this skill before classifying transactions for an Indonesian SPT."
+description: >
+  Prepare Indonesian bookkeeping and NPPN classification working papers for
+  calendar 2026. Establish books versus simple records, actual statutory KLU
+  and region, gross revenue and withholding reconciliations, inventory, capital
+  assets, fiscal add-backs and an evidence-linked handoff. Does not file a return
+  or infer a tax credit from a bank deposit. Trigger on pembukuan, pencatatan,
+  NPPN, bank classification and Indonesian tax bookkeeping.
 jurisdiction: ID
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: bookkeeping
+version: "2.0"
+category: bookkeeping
+type: computation
 ---
 
-# ID Bookkeeping
-
-## Indonesia Bookkeeping (Pembukuan & NPPN) Skill v1.0
-
-"Pembukuan" = full books. "Pencatatan" = simple records (NPPN electors). "Norma Penghitungan Penghasilan Neto" (NPPN) = deemed-deduction norm: Net Income = NPPN% × Gross Turnover, where NPPN% is set by KLU industry code.
-
-This skill classifies money movements. It does NOT compute the tax. For PPh Orang Pribadi (individual) calculations see `id-income-tax`. For PPh Badan (corporate) calculations see `id-corporate-tax`. For PPN see `indonesia-vat`.
-
-## Rates and thresholds
-
-
-### Bookkeeping
-
-- **Badan (all corporations)** — Full pembukuan mandatory  _(UU KUP Art. 28(1))_
-- **OP turnover > IDR 4.8B** — Full pembukuan mandatory  _(UU KUP Art. 28(2))_
-- **OP turnover ≤ IDR 4.8B** — Individual taxpayers with annual gross turnover not exceeding IDR 4.8 billion may maintain records (pencatatan) and elect NPPN treatment by submitting notification to DJP within the prescribed period. Taxpayers meeting UMKM Final eligibility requirements may alternatively apply the final income tax regime under prevailing regulations.  _(UU PPh Art. 14(2) as amended by UU HPP No. 7/2021; PER-17/PJ/2015; PP 55/2022 as amended by PP 20/2026.)_
-- **Record retention** — 10 years from end of tax year  _(UU KUP Art. 28(11))_
-- **Language & currency** — Bahasa Indonesia and IDR; bilingual/forex requires DJP approval  _(UU KUP Art. 28(4) as amended by UU HPP No. 7/2021.; PMK 81/2024)_
-- **Cash vs accrual** — Elected at start; must be consistent; change requires DJP approval  _(UU KUP Art. 28(5))_
-- **Inventory valuation** — FIFO or Weighted Average only; LIFO prohibited  _(UU PPh Art. 10(6) as amended by UU HPP No. 7/2021.)_
-- **Retail trade** — Retail-trading NPPN coefficients generally range around 20%–35% depending on detailed KLU classification and region category  _(UU PPh Art. 14(2); PER-17/PJ/2015 Full NPPN coefficient table (3,477 KLU) provided in separate attachment: TER_NPPN_Attachment_Indonesia.xlsx — Sheet 'NPPN Coefficients'. Source: Lampiran PER-17/PJ/2015. Three rate columns apply: (1) Ibukota Provinsi, (2) Ibukota Daerah Provinsi Lainnya, (3) Daerah Lainnya)_
-- **Restaurants / food service** — Restaurant and food-service NPPN coefficients generally range around 20%–30% depending on activity classification and region  _(UU PPh Art. 14(2); PER-17/PJ/2015 Full NPPN coefficient table (3,477 KLU) provided in separate attachment: TER_NPPN_Attachment_Indonesia.xlsx — Sheet 'NPPN Coefficients'. Source: Lampiran PER-17/PJ/2015. Three rate columns apply: (1) Ibukota Provinsi, (2) Ibukota Daerah Provinsi Lainnya, (3) Daerah Lainnya)_
-- **Professional services** — Professional-service activities generally subject to NPPN coefficients around 45%–50% depending on profession type  _(UU PPh Art. 14(2); PER-17/PJ/2015 Full NPPN coefficient table (3,477 KLU) provided in separate attachment: TER_NPPN_Attachment_Indonesia.xlsx — Sheet 'NPPN Coefficients'. Source: Lampiran PER-17/PJ/2015. Three rate columns apply: (1) Ibukota Provinsi, (2) Ibukota Daerah Provinsi Lainnya, (3) Daerah Lainnya)_
-- **Software / IT freelance** — Certain IT consulting and software freelance activities generally follow professional-service NPPN classifications around 50%  _(UU PPh Art. 14(2); PER-17/PJ/2015 Full NPPN coefficient table (3,477 KLU) provided in separate attachment: TER_NPPN_Attachment_Indonesia.xlsx — Sheet 'NPPN Coefficients'. Source: Lampiran PER-17/PJ/2015. Three rate columns apply: (1) Ibukota Provinsi, (2) Ibukota Daerah Provinsi Lainnya, (3) Daerah Lainnya)_
-- **Doctor / medical practice** — Medical professional services generally subject to NPPN coefficients around 50%  _(UU PPh Art. 14(2); PER-17/PJ/2015 Full NPPN coefficient table (3,477 KLU) provided in separate attachment: TER_NPPN_Attachment_Indonesia.xlsx — Sheet 'NPPN Coefficients'. Source: Lampiran PER-17/PJ/2015. Three rate columns apply: (1) Ibukota Provinsi, (2) Ibukota Daerah Provinsi Lainnya, (3) Daerah Lainnya)_
-- **Lawyer / notary** — Legal and notarial services generally subject to NPPN coefficients around 50%  _(UU PPh Art. 14(2); PER-17/PJ/2015 Full NPPN coefficient table (3,477 KLU) provided in separate attachment: TER_NPPN_Attachment_Indonesia.xlsx — Sheet 'NPPN Coefficients'. Source: Lampiran PER-17/PJ/2015. Three rate columns apply: (1) Ibukota Provinsi, (2) Ibukota Daerah Provinsi Lainnya, (3) Daerah Lainnya)_
-- **Construction** — ~20-25%  _(KEP-536/PJ./2000 — TBC)_
-- **Agriculture / fisheries** — Agriculture and fisheries activities generally subject to NPPN coefficients around 10%–20% depending on commodity and activity classification  _(UU PPh Art. 14(2); PER-17/PJ/2015 Full NPPN coefficient table (3,477 KLU) provided in separate attachment: TER_NPPN_Attachment_Indonesia.xlsx — Sheet 'NPPN Coefficients'. Source: Lampiran PER-17/PJ/2015. Three rate columns apply: (1) Ibukota Provinsi, (2) Ibukota Daerah Provinsi Lainnya, (3) Daerah Lainnya)_
-- **Manufacturing — garments** — Garment manufacturing activities generally subject to NPPN coefficients around 12.5%–15% depending on manufacturing classification and region  _(UU PPh Art. 14(2); PER-17/PJ/2015 Full NPPN coefficient table (3,477 KLU) provided in separate attachment: TER_NPPN_Attachment_Indonesia.xlsx — Sheet 'NPPN Coefficients'. Source: Lampiran PER-17/PJ/2015. Three rate columns apply: (1) Ibukota Provinsi, (2) Ibukota Daerah Provinsi Lainnya, (3) Daerah Lainnya)_
-- **Pembukuan → NPPN** — Changes between bookkeeping and deemed-profit recording methods must follow consistency requirements and generally require DJP approval under prevailing tax regulations.  _(UU KUP Art. 28(5) as amended by UU HPP; PMK 81/2024.)_
-- **NPPN → Pembukuan** — Individual taxpayers previously using NPPN may transition to full bookkeeping starting from the following tax year in accordance with prevailing tax administration rules.  _(UU PPh Art. 14; PER-17/PJ/2015.)_
-- **Either → PP 55 final tax** — Application of the UMKM Final income tax regime (0.5%) is subject to taxpayer eligibility requirements, turnover thresholds, and exclusion criteria under prevailing regulations. Eligibility provisions were significantly amended by PP 20/2026.  _(UU PPh Art. 4(2) as amended by UU HPP; PP 55/2022 Arts. 56–58 as amended by PP 20/2026; PMK 164/PMK.03/2023.)_
-
-## Section 1 -- Quick Reference
-
-**Quick Reference**
+# Indonesia bookkeeping and NPPN working papers v2.0
 
-| Field | Value |
-| --- | --- |
-| Country | Republic of Indonesia |
-| Currency | IDR (Rupiah). USD books are permitted only for specific industries (oil/gas, mining contracts, foreign-currency-functional taxpayers) with prior DJP approval per PMK 196/PMK.03/2007 as amended. |
-| Tax year | Calendar year by default (1 January -- 31 December). A non-calendar fiscal year is allowed if used consistently and notified to DJP (Pasal 1 angka 8 UU KUP). |
-| Tax authority | Direktorat Jenderal Pajak (DJP), Ministry of Finance |
-| Filing portal | Coretax DJP (rolled out under PMK 81/PMK.03/2024). Replaces legacy e-Filing / e-SPT / DJP Online for SPT submission from 2025 onwards. |
-| Forms (individuals) | SPT 1770 (with business / freelance income); SPT 1770 S (employees + simple other income); SPT 1770 SS (turnover < IDR 60m). |
-| Forms (companies) | SPT 1771 (corporate income tax return, including Lampiran I -- profit calc). |
-| Pembukuan obligation | All badan (corporations). Individuals with gross turnover from business / freelance > IDR 4.8 billion in the preceding tax year (Pasal 28 ayat 1-2 UU KUP). |
-| Pencatatan + NPPN option | Individuals with turnover ≤ IDR 4.8b who notify DJP in writing within 3 months of the start of the tax year (Pasal 14 ayat 2 UU PPh). |
-| Record retention | 10 years from the end of the relevant tax year (Pasal 28 ayat 11 UU KUP). |
-| Cash vs accrual | Elected at the start; must be applied consistently year-over-year. Changing the method requires DJP approval (Pasal 28 ayat 5 UU KUP). |
-| Bahasa & format | Books must be kept in Bahasa Indonesia and IDR; bilingual / foreign-currency books require prior DJP approval (Pasal 28 ayat 4 UU KUP, PMK 196/2007). |
+**Answer first.** NPPN multiplies turnover by a statutory **net-income percentage**, not a deemed expense deduction. It is available to an otherwise eligible individual with turnover **strictly below IDR 4.8 billion**, with timely notice. Exactly that ceiling does not qualify. Companies keep books. Select the actual KLU and region, not the highest plausible coefficient or a generic professional-service rate. [UU PPh art. 14](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf); [PER-17/PJ/2015 arts. 1-6](https://www.pajak.go.id/index.php/id/peraturan/norma-penghitungan-penghasilan-neto).
 
-### Primary legislation cited throughout
+## Scope
 
-**Primary legislation cited throughout**
+Calendar-2026 transaction classification and evidence preparation for Indonesian resident individuals and ordinary resident businesses. Pembukuan means books; pencatatan means records; NPPN determines net income from a statutory percentage. Produce the working paper and reviewer brief, not a filed SPT or an assertion that the income tax was paid. Corporate tax goes to `id-corporate-tax`, final small-business tax to `id-pph-final-umkm`, payroll to `id-payroll-pph21`, VAT to `indonesia-vat`, Coretax to `id-einvoice-coretax`, and annual assembly to `id-return-assembly`. The old route `id-income-tax` is not present in this country folder at this reading; do not invent a successful load or substitute another jurisdiction.
 
-| Citation | Short title |
-| --- | --- |
-| UU No. 6/1983 jo. UU No. 7/2021 (HPP) | Ketentuan Umum dan Tata Cara Perpajakan (KUP) -- general tax procedure |
-| UU No. 7/1983 jo. UU No. 36/2008 jo. UU No. 7/2021 | Pajak Penghasilan (PPh) -- income tax |
-| KEP-536/PJ./2000 | NPPN coefficient schedule by KLU (still the operative reference; verify if superseded by a later KEP/PER before signing off) |
-| PER-17/PJ/2015 | Procedures for notifying use of NPPN |
-| PP 23/2018 | Final-tax 0.5% micro/UMKM regime (separate elective regime; NOT NPPN) |
-| PP 55/2022 | Implementing rules for PPh including UMKM final tax and successor framework |
-| PMK 81/PMK.03/2024 | Coretax administration rules from 2025 |
-| PMK 196/PMK.03/2007 (as amended) | USD bookkeeping permission |
+Preserve specialised-sector, BUT/permanent-establishment, foreign-currency-permission, cross-border related-party, concession, crypto/capital-market and mixed-regime checks below. An accountant's approval of another file does not establish approval of this method.
 
-## Section 2 -- Who Must Do What
+## Ask the client first
 
-### Decision tree -- which regime applies
+1. Taxpayer/entity, actual period, residence, NIK/NPWP and registered activity; prior returns and complete prior/current-year turnover from all activities.
+2. Actual chosen accounting basis and inventory method, earlier books/records, notice and receipt for NPPN, and any permission changing method/year or using foreign language/currency.
+3. Actual statutory KLU, activity description and the place where each business/profession is performed, not just a newer KBLI label or registered address.
+4. Full-year bank/card/platform statements, cash books, sales and purchase invoices, returns, payroll, expenses and fixed-asset/inventory records, with source identifiers.
+5. Withholding slips and payment confirmations, loan/lease/related-party contracts, VAT registration/invoices and the separation of final, non-final and non-taxable income.
+6. Supporting evidence for personal/business allocation, concessions, source-specific deductions, tax-basis differences and unresolved notices/audits.
 
-- **Decision tree** — Badan (PT, CV, koperasi, yayasan, BUT)? ├── YES → MANDATORY Pembukuan. SPT 1771. No NPPN option. │         PP 23 unavailable for PT after 3 yrs / CV after 4 yrs (PP 55/2022). └── NO (orang pribadi): prior-year gross turnover from usaha/pekerjaan bebas? ├── > IDR 4.8b  → MANDATORY Pembukuan. SPT 1770. No NPPN. No PP 23. └── ≤ IDR 4.8b  → THREE options: ├── (a) Pembukuan voluntarily (actual deductions) ├── (b) Pencatatan + NPPN: notify DJP in writing within 3 months │       of the start of the tax year (Pasal 14(2) UU PPh, │       PER-17/PJ/2015). Without timely notification, NPPN is │       invalid -- 50% uplift risk under Pasal 14(5). └── (c) PP 23/2018 0.5% final tax on gross (separate regime; classified in `id-income-tax`, not here).  _(Pasal 14(2) UU PPh; PER-17/PJ/2015; PP 55/2022)_
+Read existing records first. Minimum missing taxpayer, period, gross-turnover evidence or accounting regime prevents an asserted final classification. Missing detail can remain an explicit unresolved item while independently supported bank reconciliation continues.
 
-### Switching regimes
+## The method, step by step
 
-**Switching regimes**
+## Rates, bands and thresholds
 
-| From | To | Allowed? |
-| --- | --- | --- |
-| Pembukuan | NPPN | NO without DJP approval; Pasal 28 ayat 5 + KEP-536/PJ./2000 art. 3. Once full books have been elected they must continue. |
-| NPPN | Pembukuan | YES — taxpayer can always upgrade to full books at the start of the next tax year. Notify DJP. |
-| Either | PP 23 final tax | Annual election by 31 March of the tax year (PMK 99/PMK.03/2018 as amended). |
+| Item | Rule, 2026 | Official source |
+|---|---|---|
+| NPPN ceiling | Individual gross turnover strictly less than IDR 4,800,000,000, not less-than-or-equal | [UU PPh art.14(2)](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf) |
+| NPPN notice | Within the first three months of the tax year; absent timely notice, treated as choosing books | [PER-17 arts.1-2](https://www.pajak.go.id/index.php/id/peraturan/norma-penghitungan-penghasilan-neto) |
+| Books and retention | Companies and otherwise required individuals keep books; supporting books/records, including electronic material, kept ten years in Indonesia | [KUP art.28](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf) |
+| Inventory | Cost by weighted average or first-in-first-out; no LIFO | [UU PPh art.10(6)](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf) |
+| Income-generating expenditure with benefit beyond one year | Capitalise and apply the actual depreciation/amortisation rule; no invented low-value safe harbour | [UU PPh art.9(2)](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf) |
 
-**Conservative default:** if the prior-year turnover is unknown or border-line at IDR 4.8b, treat the client as having a pembukuan obligation and request the prior SPT and gross-turnover reconciliation before classifying.
+The table below replaces the old approximate samples with the actual **PER-17 annex I KLU** rows. The three percentage columns are, in order, the ten specified provincial capitals, other provincial capitals and other areas. The ten are Medan, Palembang, Jakarta, Bandung, Semarang, Surabaya, Denpasar, Manado, Makassar and Pontianak. These are not three freely chosen tax brackets. Determine the actual activity and region before applying a row, and establish that the income is non-final and NPPN eligible. [PER-17 art.4](https://www.pajak.go.id/index.php/id/peraturan/norma-penghitungan-penghasilan-neto).
 
-## Section 3 -- Required Inputs (Intake Checklist)
-
-**Required Inputs (Intake Checklist)**
-
-| # | Input | Why |
-| --- | --- | --- |
-| 1 | NPWP (15-digit, or 16-digit NIK-as-NPWP from 2024) | OP vs badan; SPT header. |
-| 2 | KLU / KBLI code (5-digit) | Drives NPPN% and SPT 1771 sector lines. |
-| 3 | Prior-year peredaran bruto | Determines pembukuan threshold. |
-| 4 | NPPN notification letter (if claimed) | NPPN invalid without timely notification. |
-| 5 | Cash or accrual basis declaration | Must match prior years. |
-| 6 | Bank statements (all business accounts, full year) | Classification source. |
-| 7 | Cash book / petty cash log | Off-bank revenue. |
-| 8 | E-faktur PPN data (if PKP) | Cross-check sales and input VAT. |
-| 9 | Bukti potong (PPh 23, 22, 4(2), 26) | Prepaid-tax credits. |
-| 10 | Asset register + depreciation method (Pasal 11 UU PPh) | Capital allowances. |
-| 11 | Loan agreements, leases, related-party contracts | Pasal 18 TP and thin-cap DER 4:1 (PMK 169/2015). |
-| 12 | Inventory count + valuation method (FIFO or WAvg; LIFO prohibited) | COGS. |
-
-### Refusal catalogue -- DO NOT proceed; escalate to reviewer
-
-**Refusal catalogue**
-
-| Code | Trigger | Why refused |
-| --- | --- | --- |
-| R-ID-1 | Taxpayer is a PE of a foreign entity (BUT) | Specific Pasal 5 rules + PER on BUT — out of scope. |
-| R-ID-2 | Mining, oil & gas, or shariah banking | Sector-specific PSAK and PMK regimes — out of scope. |
-| R-ID-3 | USD or other foreign-currency books | Need to verify PMK 196/2007 permission letter first. |
-| R-ID-4 | Taxpayer has cross-border related-party transactions and turnover > IDR 50b | Transfer pricing documentation per PMK 213/2016 required first. |
-| R-ID-5 | Final-tax PP 23 (0.5%) regime is in force | Classification model is different; route to `id-income-tax`. |
-| R-ID-6 | Yayasan / koperasi / educational entity with concessional treatment | Specific Pasal 4 ayat 3 exclusions need separate review. |
-| R-ID-7 | KLU is missing or the client claims an NPPN coefficient that cannot be confirmed in KEP-536/PJ./2000 (or a later instrument) | Stop and verify KLU before applying any norm. |
-| R-ID-8 | Crypto, derivative, or capital-markets income | Final-tax / Pasal 4(2) — see separate skill. |
-| R-ID-9 | NPPN claimed without a timely written notification | NPPN is invalid; Pasal 14 ayat 5 uplift risk. Stop. |
-| R-ID-10 | Mixed regime: pembukuan for part of the year, NPPN for part | Not allowed -- pick one regime per tax year. |
-
-### What "pembukuan" means
-
-- **Pembukuan definition** — Full double-entry bookkeeping producing, at minimum: general ledger + subsidiary ledgers (cash, A/R, A/P, inventory, fixed assets), trial balance, P&L (Laporan Laba Rugi), balance sheet (Neraca), and supporting documents (faktur, kuitansi, bukti potong, bank statements) linked to journal entries. Pasal 28(3) UU KUP requires good-faith books reflecting actual business condition. Pasal 28(7) requires Bahasa Indonesia, Latin alphabet, Arabic numerals, and IDR currency, with bilingual / USD permitted only on prior DJP approval (PMK 196/2007).  _(Pasal 28(3), 28(7) UU KUP; PMK 196/2007)_
-
-### Who must keep pembukuan
-
-- **Who must keep pembukuan** — 1. All badan (PT, CV, firma, koperasi, BUMN/BUMD, yayasan conducting business). No turnover threshold. 2. Orang pribadi conducting usaha or pekerjaan bebas with prior-year gross turnover > IDR 4.8b (Pasal 28(2) UU KUP).  _(Pasal 28(2) UU KUP)_
-
-### Cash vs accrual
-
-- **Cash vs accrual election** — Pasal 28(5) UU KUP allows either basis; whichever is elected must be applied consistently and a change requires DJP written approval. Inventory must be valued FIFO or weighted-average (Pasal 10(6)); LIFO is prohibited. **Conservative default:** if the basis is undocumented, ASSUME accrual and flag for confirmation.  _(Pasal 28(5) UU KUP; Pasal 10(6) UU PPh)_
-
-### Record retention
-
-- **Record retention** — 10 years from the end of the relevant tax year (Pasal 28(11) UU KUP) -- longer than the 5-year assessment SOL (Pasal 13) to cover criminal-procedure timelines.  _(Pasal 28(11) UU KUP; Pasal 13 UU KUP)_
-
-### Mechanic
-
-- **NPPN mechanic** — Net Income (Penghasilan Neto) = NPPN% × Gross Turnover (Peredaran Bruto) The NPPN% varies by KLU industry code and by region tier (the historical KEP-536/PJ./2000 schedule distinguishes "10 ibukota provinsi", "ibukota provinsi lain", and "daerah lainnya" -- often abbreviated tier 1 / tier 2 / tier 3). The taxpayer does NOT separately claim any business expenses; the NPPN% IS the deemed expense deduction.  _(KEP-536/PJ./2000)_
-
-### Eligibility
-
-- **NPPN eligibility** — - Orang pribadi only (no badan). - Prior-year gross turnover ≤ IDR 4.8 billion (Pasal 14 ayat 2 UU PPh, threshold set by PMK 17/PMK.03/2013 and successor instruments aligned with the pembukuan threshold). - Written notification to DJP within 3 months of the start of the tax year (Pasal 14 ayat 2; procedurally PER-17/PJ/2015). - Pencatatan (simple records of gross turnover) must still be kept.  _(Pasal 14 ayat 2 UU PPh; PMK 17/PMK.03/2013; PER-17/PJ/2015)_
-
-### What "pencatatan" requires
-
-- **Pencatatan requirement** — A daily log of gross receipts by month, supported by invoices / receipts. No expense ledger is required because no expenses are deducted. Income from outside the business (employment, dividend, rental) is added separately to total taxable income.
-
-### Non-creditable input VAT under NPPN
-
-- **Non-creditable input VAT under NPPN** — Because the NPPN taxpayer is not deducting actual expenses, input VAT on purchases is also not creditable for PPh purposes -- the NPPN% is gross-of-input-VAT. (Input VAT crediting under PPN itself depends on PKP status, which is a separate question handled by `indonesia-vat`.)
-
-### Failure-to-keep-books uplift
-
-- **Failure-to-keep-books uplift** — Pasal 14 ayat 5 UU PPh -- if a taxpayer is required to keep books but does not, or refuses to produce them on inspection, DJP may apply the NPPN% to gross turnover AND add a 50% uplift to the resulting taxable income (or 20% for individuals subject to other Pasal 14 conditions; the 50% applies to badan under jabatan assessment). Conservative reading: any non-NPPN-electing taxpayer without books faces the uplift.  _(Pasal 14 ayat 5 UU PPh)_
-
-## Section 6 -- Sample KLU NPPN Coefficients
-
-> **CAUTION.** The coefficients below are illustrative samples drawn from
-> KEP-536/PJ./2000. Two warnings:
->
-> 1. KEP-536/PJ./2000 was issued under the pre-2008 PPh law and uses the old
->    9-digit KLU. The DJP has migrated to the 5-digit KBLI 2020. You MUST
->    confirm the exact NPPN% applicable to the client's current 5-digit KBLI
->    code in the latest KEP / PER published on www.pajak.go.id before signing
->    off any return.
-> 2. The KEP-536 schedule distinguishes three regional tiers (10 ibukota
->    provinsi -- typically the highest %; other ibukota -- middle; daerah
->    lainnya -- lowest). The samples below show the 10-ibukota tier. Adjust
->    for the client's actual domicile tier.
->
-> Where a coefficient cannot be confirmed in the current schedule, write
-> "TBC -- see current KLU table" in the working paper and trigger R-ID-7.
-
-**Sample KLU NPPN Coefficients**  _(KEP-536/PJ./2000)_
-
-| Activity | KBLI | Indicative NPPN% (tier 1) |
-| --- | --- | --- |
-| Retail trade -- food & beverages (perdagangan eceran) | 47111 | ~30% (TBC) |
-| Retail trade -- clothing | 47711 | ~30% (TBC) |
-| Online retail seller (e-commerce) | 47911 | ~30% (TBC -- post-KEP-536 KBLI; use retail proxy) |
-| Restaurants & cafés (restoran) | 56101 | ~25% (TBC) |
-| Construction -- residential building | 41011 | ~20-25% (TBC) |
-| Land transport -- taxi / ride-hail | 49429 | ~20% (TBC) |
-| Vehicle rental without driver | 77100 | ~25% (TBC) |
-| Hairdressing & beauty (salon) | 96021 | ~40% (TBC) |
-| Doctor (specialist, private practice) | 86202 | ~50% (TBC) |
-| Lawyer / advocate (pengacara) | 69100 | ~50% (TBC) |
-| Notary / PPAT | 69200 | ~50% (TBC) |
-| Accountant / tax consultant | 69201/69202 | ~50% (TBC) |
-| Architect | 71101 | ~50% (TBC) |
-| Software developer / freelance IT | 62010 | ~50% (TBC -- pekerjaan bebas) |
-| Independent author / journalist | 90001 | ~50% (TBC) |
-| Manufacture -- garments | 14111 | ~12.5-15% (TBC) |
-| Repair of motor vehicles | 45201 | ~20% (TBC) |
-| Educational tutoring (private) | 85490 | ~35% (TBC) |
-| Photography services | 74201 | ~50% (TBC) |
-
-**Conservative default:** when two KBLI codes plausibly fit a client's activity and one has a higher NPPN% than the other, apply the higher percentage (= higher deemed income = higher tax). Document the choice in the working paper and let the reviewer relax it if they disagree.
-
-### Mixed activities
-
-- **Mixed activities** — If a taxpayer has multiple distinct revenue streams (e.g. a freelance accountant who also runs an Etsy shop), apply the NPPN% separately to each stream's gross turnover. Pasal 14 ayat 3 UU PPh and PER-17/PJ/2015 art. 4 require segregated pencatatan by activity.  _(Pasal 14 ayat 3 UU PPh; PER-17/PJ/2015 art. 4)_
-
-## Section 7 -- Transaction Classification
-
-### How to map a bank statement line to an SPT line
-
-- **Mapping procedure** — For each inflow/outflow: 1. Identify the counterparty and the underlying transaction (look at description, reference, invoice). 2. Decide which classification bucket it belongs to (table below). 3. Map to the SPT 1770 (individual) or SPT 1771 (corporate) line. 4. Tag any PPN component (recoverable / non-recoverable / out of scope). 5. Tag any PPh withholding that should have been or was applied. 6. Flag conservative defaults and "Needs Input" lines per the foundation contract.
-
-### Buckets and SPT mapping -- INDIVIDUAL (SPT 1770)
-
-**Buckets and SPT mapping -- INDIVIDUAL (SPT 1770)**
-
-| Bucket (Bahasa) | Examples | SPT 1770 line |
-| --- | --- | --- |
-| Peredaran bruto dari usaha | Invoices paid, Shopee/Tokopedia payouts, POS settlement | Lampiran I Bag. A (pembukuan); Bag. B (NPPN) |
-| Penghasilan dari pekerjaan bebas | Doctor/lawyer/consultant fees | As above; distinguished by KLU |
-| Harga Pokok Penjualan (HPP) | Stock purchases, freight-in, direct labour, factory overhead | Pembukuan only -- Lampiran I Bag. A. NPPN: not claimed. |
-| Beban usaha | Gaji, sewa, listrik, internet, ATK, penyusutan, asuransi | Pembukuan only. NPPN: not claimed. |
-| Penghasilan lain-lain | Bank interest (final tax), forex gain, asset disposal gain | Induk Bag. A line 2; final-tax items → Lampiran III |
-| Pasal 9 non-deductibles | Prive, private use, non-qualifying donations, certain provisions, in-kind (subject to PMK 66/2023), admin penalties | Pembukuan: koreksi fiskal positif. NPPN: n/a. |
-| Pembelian aktiva tetap | Equipment, vehicles, computers | Capitalised; depreciated Pasal 11 golongan I-IV. NPPN: n/a. |
-| Setoran modal pemilik | Owner injects cash | Equity -- not income. |
-| Prive | Owner takes cash | Equity -- non-deductible (Pasal 9(1)(b)). |
-| Pokok pinjaman | Loan drawdown / repayment principal | Balance sheet only. Interest deductible subject to DER 4:1. |
-| Pembayaran pajak | PPh 25 instalments, withholdings, PPN setoran | PPh 25 = prepaid credit; own PPh = non-deductible (Pasal 9(1)(h)). |
-
-### Buckets and SPT mapping -- BADAN (SPT 1771)
-
-**Buckets and SPT mapping -- BADAN (SPT 1771)**
-
-| Bucket | Bahasa | SPT 1771 line |
-| --- | --- | --- |
-| Gross revenue | Peredaran usaha | Lampiran I line 1.a |
-| Cost of goods sold | Harga pokok penjualan | Lampiran I line 1.b |
-| Gross profit | Laba bruto | Lampiran I line 1.c |
-| Operating expenses | Biaya usaha lainnya | Lampiran I line 1.d |
-| Operating profit | Penghasilan neto dari usaha | Lampiran I line 1.e |
-| Non-operating income/expense | Penghasilan dari luar usaha / biaya dari luar usaha | Lampiran I line 2, 3 |
-| Fiscal adjustments positive (add-backs) | Penyesuaian fiskal positif | Lampiran I line 5 |
-| Fiscal adjustments negative | Penyesuaian fiskal negatif | Lampiran I line 6 |
-| Final-tax income (carved out) | Penghasilan yang dikenakan PPh Final | Lampiran IV |
-| Non-taxable income | Penghasilan yang tidak termasuk objek pajak | Lampiran IV |
-
-## Section 8 -- Pasal 9 UU PPh: Non-Deductible Expenses
-
-These items are NEVER deductible for either OP (pembukuan) or badan. If they appear in the books, classify them as koreksi fiskal positif (positive fiscal adjustment / add-back) when computing taxable income.
-
-**Pasal 9(1) Non-Deductible Expenses**  _(Pasal 9(1) UU PPh)_
-
-| Pasal 9(1) | Item | Notes |
-| --- | --- | --- |
-| a | Profit distributions (dividen, prive, SHU) | Already taxed at entity level. |
-| b | Personal-benefit expenses of shareholders/partners | Private vehicle, family travel, personal insurance. |
-| c | Reserves & provisions | Exceptions for bank bad-debt, mining reclamation, forestry replanting, insurance technical reserve (PMK 81/2009). |
-| d | Self-paid health/life/accident/endowment premiums (individual) | Employer-paid for employees may be deductible as compensation. |
-| e | Benefits in kind (natura/kenikmatan) | Largely deductible post-UU HPP subject to PMK 66/2023 carve-outs; add back if no carve-out confirmed. |
-| f | Excessive related-party compensation | Only arm's-length portion deductible. |
-| g | Gifts, aid, donations | Exception: approved zakat / disaster relief. |
-| h | PPh on taxpayer's own income | Never deductible. Third-party withholdings are credits, not expenses. |
-| i | Personal living expenses | Private rent, groceries, school fees. |
-| j | "Salary" to members of firma/CV (capital not in shares) | Treated as profit distribution. |
-| k | Administrative tax penalties (UU KUP sanksi) | Always added back. |
-
-**Conservative default:** if a payment plausibly mixes personal and business use (vehicles, mobile phone, internet, partial home office), apportion using a reasonable business-use percentage and document the basis. If no basis can be documented, treat the entire amount as non-deductible.
-
-## Section 9 -- Worked Example
-
-### Scenario
-
-Andi, an Indonesian individual resident, runs a freelance graphic-design practice. KLU/KBLI 74100 (specialised design activities) -- treated under pekerjaan bebas. Tax year 2025. He notified DJP on 28 February 2025 that he would use NPPN for 2025. His prior-year (2024) turnover was IDR 380 million, so he is eligible. Assume tier-1 NPPN% for design services is ~50% (TBC against current schedule).
-
-### Bank statement extract (BCA business account, Jan-Dec 2025)
-
-**Bank statement extract (BCA business account, Jan-Dec 2025)**
-
-| Date | Description | Amount IDR | Classification | Notes |
-| --- | --- | --- | --- | --- |
-| 12 Jan | From PT XYZ -- invoice 001 | +18,500,000 | Peredaran bruto | PT XYZ should have withheld PPh 23 at 2%; declare gross (assume IDR 18.87m gross, 377k withheld) and claim credit. |
-| 25 Jan | Sewa kantor co-working | -2,500,000 | Beban usaha (rent) | NPPN: NOT separately deductible. |
-| 03 Feb | Cash -- penjualan tunai project A | +6,000,000 | Peredaran bruto | Add to gross. |
-| 18 Feb | Adobe Creative Cloud | -812,000 | Beban usaha (software) | NPPN: ignored. Flag for PPN-PMSE. |
-| 06 Mar | Penarikan biaya rumah tangga | -5,000,000 | Prive | Pasal 9(1)(b) -- never deductible. |
-| 15 May | From CV ABC (gross 25m, PPh 23 500k) | +24,500,000 | Peredaran bruto | Declare 25m gross; claim 500k credit. |
-| 30 Jun | PPh 25 angsuran Q2 | -1,200,000 | Prepaid PPh 25 | Credit; not an expense. |
-| 08 Aug | Refund to client (project cancelled) | -3,000,000 | Reduction of peredaran bruto | Retur penjualan. |
-| 12 Sep | Bank interest (giro) | +84,000 | Final-tax under PP 131/2000 (PPh 4(2)) | Exclude from NPPN base; Lampiran III. |
-| 30 Nov | Stripe payout (USD 1,200) | +19,200,000 | Peredaran bruto -- export of services | No PPh 23 (non-resident payer). |
-
-### NPPN computation (assuming 50% coefficient, TBC)
-
-**NPPN computation (assuming 50% coefficient, TBC)**
-
-| Item | IDR |
-| --- | --- |
-| Peredaran bruto (domestic clients) | 18,870,000 + 6,000,000 + 25,000,000 - 3,000,000 = 46,870,000 |
-| Peredaran bruto (foreign clients) | 19,200,000 |
-| Total peredaran bruto | 66,070,000 |
-| NPPN% (50%) × peredaran bruto | 33,035,000 |
-| Penghasilan neto dari pekerjaan bebas | 33,035,000 |
-| Plus: bank interest -- FINAL TAX, not added to ordinary base | (excluded) |
-| Less: PTKP (TK/0 hypothetically -- IDR 54,000,000) | (54,000,000) |
-| Penghasilan Kena Pajak | NIL (loss carried forward NOT allowed under NPPN -- pencatatan does not produce a fiscal loss; Pasal 6 ayat 2 UU PPh only allows loss carryforward where pembukuan is kept) |
-| PPh credits to claim | PPh 23 IDR 877,000 (370k + 500k+ 7k rounding) + PPh 25 IDR 1,200,000 -- may produce a refund (lebih bayar) |
-
-This worked example is for illustration only. The actual rate, PTKP, and percentages must be computed in `id-income-tax`.
-
-## Section 10 -- Conservative Defaults (Recap)
-
-**Conservative Defaults (Recap)**
-
-| Situation | Default |
-| --- | --- |
-| Turnover threshold ambiguous | Treat as pembukuan-required |
-| Cash vs accrual ambiguous | Accrual |
-| KLU has two plausible matches with different NPPN% | Use the higher % |
-| Expense plausibly mixed personal/business with no documentation | Treat fully non-deductible |
-| NPPN notification cannot be located in the file | Assume NOT validly elected -- treat as pembukuan and flag uplift risk under Pasal 14(5) |
-| Income type unclear (final-tax vs ordinary) | Treat as ordinary (higher likely tax) and flag for reviewer |
-| Foreign-currency receipt | Translate at the BI tengah-rate on receipt date; flag if BI rate not available |
-| Inventory valuation method undocumented | Assume weighted-average |
-| Bukti potong PPh 23/22/4(2) cannot be located | Do NOT claim the credit until obtained; revenue is still declared gross |
-| Capex vs revex unclear (item between IDR 0 and IDR 1m useful life > 1 yr) | Capitalise. (Pasal 11 has no de-minimis; reviewer can expense.) |
-
-## Section 11 -- Sources
-
-**Sources**
-
-| Citation | Where it bites |
-| --- | --- |
-| UU 6/1983 jo. UU 16/2009 jo. UU 7/2021 (HPP) -- KUP | Pembukuan obligation (Pasal 28), retention 10 yrs (Pasal 28(11)), Bahasa/IDR (Pasal 28(4)&(7)), method consistency (Pasal 28(5)), statute of limitations (Pasal 13) |
-| UU 7/1983 jo. UU 36/2008 jo. UU 7/2021 -- PPh | NPPN & uplift (Pasal 14), non-deductibles (Pasal 9), depreciation (Pasal 11), loss carryforward (Pasal 6), inventory FIFO/avg (Pasal 10), arm's length (Pasal 18) |
-| KEP-536/PJ./2000 | NPPN KLU coefficient schedule. Confirm with later PER/KEP before signing. |
-| PER-17/PJ/2015 | NPPN notification procedure; segregated pencatatan by activity |
-| PMK 196/PMK.03/2007 (as amended) | USD bookkeeping permission |
-| PMK 213/PMK.03/2016 | Transfer pricing documentation refusal trigger |
-| PP 23/2018 + PP 55/2022 | UMKM 0.5% final-tax regime + time limits |
-| PMK 66/PMK.03/2023 | In-kind benefit (natura) carve-outs |
-| PMK 81/PMK.03/2024 | Coretax filing channel from 2025 |
-| PMK 169/PMK.010/2015 | Thin-cap DER 4:1 |
-
-**Verification status:** All citations above are statutory or PMK-level references that were operative at the time of drafting (tax year 2025). The NPPN coefficient table in Section 6 is illustrative; before signing off any return that relies on a specific NPPN%, the reviewer must confirm the current coefficient in the latest DJP-published instrument for the client's exact 5-digit KBLI and regional tier.
-
-## Section 12 -- Output Contract
-
-When this skill is invoked to classify a transaction set, produce:
-
-1. **Working paper (CSV or table)** -- one row per transaction with columns: date, counterparty, amount IDR, classification bucket, SPT 1770/1771 line, PPh withholding flag, PPN flag, conservative-default flag, evidence reference, reviewer note.
-2. **Regime summary** -- pembukuan or NPPN; if NPPN, the KLU code used, the NPPN% applied, and the citation.
-3. **Reviewer brief** -- list of "Needs Input" items and "Assumed" items with cash impact ranking per the foundation contract.
-4. **Sources block** -- every cited Pasal / PMK / KEP that materially drove a classification.
-5. **Sign-off checklist** -- pre-populated for the credentialed reviewer (Konsultan Pajak Bersertifikat / Akuntan Publik / Kuasa Hukum Pajak per UU Konsultan Pajak draft & PMK 111/PMK.03/2014).
-
-No SPT figure leaves this skill without a numbered citation. No NPPN coefficient leaves this skill without a "TBC verified against current KEP/PER on [date]" note.
-
-## End of skill.
-
-*End of skill.*
+| Statutory KLU | Actual annex activity and condition | Ten capitals | Other capitals | Other areas | Official source |
+|---|---|---|---|---|---|
+| 47111 | Supermarket/minimarket principally food, drink or tobacco | 30% | 25% | 20% | [PER-17 annex I](https://www.pajak.go.id/sites/default/files/2019-03/Lampiran%201_PER%20-%2017.PJ_.2015.pdf) |
+| 47711 | Clothing retail | 30% | 25% | 20% | [PER-17 annex I](https://www.pajak.go.id/sites/default/files/2019-03/Lampiran%201_PER%20-%2017.PJ_.2015.pdf) |
+| 47911 | Retail through media for the specified food/drink/tobacco/chemical/pharmacy/cosmetic/lab products, not every online seller | 30% | 25% | 20% | [PER-17 annex I](https://www.pajak.go.id/sites/default/files/2019-03/Lampiran%201_PER%20-%2017.PJ_.2015.pdf) |
+| 56101 | Restaurant | 25% | 20% | 20% | [PER-17 annex I](https://www.pajak.go.id/sites/default/files/2019-03/Lampiran%201_PER%20-%2017.PJ_.2015.pdf) |
+| 41011 | Residential building construction; test separate final-tax treatment first | 20% | 19% | 18% | [PER-17 annex I](https://www.pajak.go.id/sites/default/files/2019-03/Lampiran%201_PER%20-%2017.PJ_.2015.pdf) |
+| 49429 | Other land passenger transport, not an automatic taxi/ride-hailing classification | 20% | 15% | 15% | [PER-17 annex I](https://www.pajak.go.id/sites/default/files/2019-03/Lampiran%201_PER%20-%2017.PJ_.2015.pdf) |
+| 77100 | Motor-vehicle operating rental without operator | 32% | 31% | 29% | [PER-17 annex I](https://www.pajak.go.id/sites/default/files/2019-03/Lampiran%201_PER%20-%2017.PJ_.2015.pdf) |
+| 86202 | Specialist medical practice | 50% | 50% | 50% | [PER-17 annex I](https://www.pajak.go.id/sites/default/files/2019-03/Lampiran%201_PER%20-%2017.PJ_.2015.pdf) |
+| 69100 | Legal services including notarial work | 51% | 50% | 50% | [PER-17 annex I](https://www.pajak.go.id/sites/default/files/2019-03/Lampiran%201_PER%20-%2017.PJ_.2015.pdf) |
+| 69200 | Accounting, bookkeeping, audit and tax consultancy | 50% | 50% | 50% | [PER-17 annex I](https://www.pajak.go.id/sites/default/files/2019-03/Lampiran%201_PER%20-%2017.PJ_.2015.pdf) |
+| 71100 | Architecture, civil engineering and technical consultancy | 50% | 50% | 50% | [PER-17 annex I](https://www.pajak.go.id/sites/default/files/2019-03/Lampiran%201_PER%20-%2017.PJ_.2015.pdf) |
+| 62010 | Computer programming | 50% | 50% | 50% | [PER-17 annex I](https://www.pajak.go.id/sites/default/files/2019-03/Lampiran%201_PER%20-%2017.PJ_.2015.pdf) |
+| 90001 | Performing-arts production, not an automatic author classification | 35% | 32.5% | 31.5% | [PER-17 annex I](https://www.pajak.go.id/sites/default/files/2019-03/Lampiran%201_PER%20-%2017.PJ_.2015.pdf) |
+| 14111 | Textile garment manufacture | 13.5% | 13% | 12.5% | [PER-17 annex I](https://www.pajak.go.id/sites/default/files/2019-03/Lampiran%201_PER%20-%2017.PJ_.2015.pdf) |
+| 45201 | Motor-car repair | 20% | 18.5% | 17.5% | [PER-17 annex I](https://www.pajak.go.id/sites/default/files/2019-03/Lampiran%201_PER%20-%2017.PJ_.2015.pdf) |
+| 85495 | Private tutoring and counselling | 30% | 27.5% | 25% | [PER-17 annex I](https://www.pajak.go.id/sites/default/files/2019-03/Lampiran%201_PER%20-%2017.PJ_.2015.pdf) |
+| 74201 | Photography | 50% | 50% | 50% | [PER-17 annex I](https://www.pajak.go.id/sites/default/files/2019-03/Lampiran%201_PER%20-%2017.PJ_.2015.pdf) |
+| 74100 | Specialised design | 32% | 31% | 29% | [PER-17 annex I](https://www.pajak.go.id/sites/default/files/2019-03/Lampiran%201_PER%20-%2017.PJ_.2015.pdf) |
+| 96111 | Hair cutting | 30% | 28% | 27% | [PER-17 annex I](https://www.pajak.go.id/sites/default/files/2019-03/Lampiran%201_PER%20-%2017.PJ_.2015.pdf) |
+| 96112 | Beauty salon | 30% | 28% | 27% | [PER-17 annex I](https://www.pajak.go.id/sites/default/files/2019-03/Lampiran%201_PER%20-%2017.PJ_.2015.pdf) |
+
+The earlier codes 96021,69201/69202,71101 and85490 were not located as those exact annex-I entries. Their activities are retained above through the actual salon, accounting, architecture and tutoring entries, but no automatic newer-KBLI-to-statutory-KLU crosswalk is certified. The old author's classification of 90001 as independent writing is wrong; 90001 describes performing-arts production. Determine the actual writer/artist activity rather than borrowing its rate. Construction can have its own final tax, so the presence of a norm in the annex does not authorise NPPN for separately-final receipts.
+
+### 1. Establish books versus records
+
+KUP art.28(1)-(2) requires books for Indonesian companies and individuals carrying on business/professional work, subject to the statutory records exceptions. Under UU PPh art.14 and PER-17 arts.1-2, an eligible individual below the ceiling may use NPPN with timely notice and records; a company cannot elect that individual regime. At the exact ceiling the individual is in the books-required branch. Do not treat the separate final-turnover regime as NPPN. Its eligibility, professional exclusions, owner/spouse aggregation, permanent election-out and 2026 transitions belong to `id-pph-final-umkm`. [KUP art.28/UU PPh art.14](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf); [PER-17 arts.1-3](https://www.pajak.go.id/index.php/id/peraturan/norma-penghitungan-penghasilan-neto); [PP 20 amended arts.56-58](https://www.pajak.go.id/id/peraturan/perubahan-atas-peraturan-pemerintah-nomor-55-tahun-2022-tentang-penyesuaian-pengaturan-0).
+
+PER-17 art.8 expressly repeals KEP-536/PJ./2000 from the regulation's effective tax year. Do not describe the earlier schedule as the current coefficient source or use a retail proxy for an unlocated online seller. Use annex I for an individual validly using NPPN; annex II and III concern the audit fallback for failure to keep/show records, not an elective company concession. [PER-17 arts.3-9](https://www.pajak.go.id/index.php/id/peraturan/norma-penghitungan-penghasilan-neto).
+
+Changing the accounting method or book year needs DJP approval under KUP art.28(6), and the chosen basis must be consistent. Do not invent an automatic annual election from books/NPPN into final tax by March. A previous notice choosing general rates can prevent future final-tax access. Missing election records remain missing; the absence of a document in this chat does not prove no notice was filed. [KUP art.28](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf); [PP 20 amended art.57(4)](https://www.pajak.go.id/id/peraturan/perubahan-atas-peraturan-pemerintah-nomor-55-tahun-2022-tentang-penyesuaian-pengaturan-0).
+
+### 2. Maintain good-faith books and actual recognition
+
+Books/records must reflect the true activity. Keep them in Indonesia, using Latin script, Arabic numbers, rupiah and the authorised language/currency. Foreign-language/currency books require the actual ministerial permission; a bilingual export or USD bank account is not that permission. KUP art.28(5)-(8) distinguishes a consistent cash/accrual basis and prior permission to change. Its explanation says tax cash accounting still includes cash and non-cash sales, inventory and capital depreciation; it is not a licence to move taxable revenue simply by delaying cash. Retain general/subledgers, trial balance, receivables/payables, inventory, fixed assets, financial statements and linked supporting evidence. [KUP art.28 and explanation](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf).
+
+For inventory, apply the supported FIFO/average method consistently. An undocumented method is unresolved, not automatically weighted-average. Separate purchase of inventory from period consumption and closing stock. For assets, capitalise qualifying expenditure with benefit beyond one year and preserve cost, in-service date, business use, prior tax basis and actual classification; do not expense/capitalise by an arbitrary rupiah cutoff. The current depreciation schedule and special useful-life conditions must be read in the applicable current regulation; do not default an unclassified asset to obsolete PMK96/2009. [UU PPh arts.9(2),10(6),11](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf).
+
+### 3. Classify the source transaction before its bank movement
+
+For every inflow/outflow identify counterparty, underlying contract/invoice, period, sign/currency, gross amount, withholding, fees/VAT and net bank movement. Preserve the chain of source identifiers and any unreconciled difference. A Shopee/Tokopedia/Stripe payout is not necessarily gross revenue; a loan or capital transfer is not automatically sales. A foreign customer does not alone prove VAT export treatment or eliminate every withholding responsibility.
+
+| Working-paper bucket | Retained examples | Required treatment or handoff |
+|---|---|---|
+| Peredaran bruto dari usaha | Sales invoices, POS, marketplace receipts | Reconcile gross and settlement; distinguish non-final, final and exempt receipts. No brand-based rate  [KUP art.28 and UU PPh art.9](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf) |
+| Pekerjaan bebas | Doctor, lawyer, consultant, designer fees | Actual professional classification/KLU; route payer withholding separately rather than presume corporate-service PPh 23  [KUP art.28 and UU PPh art.9](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf) |
+| HPP/cost of goods sold | Stock, freight-in, direct labour, factory overhead | Actual books and inventory movement. NPPN does not deduct these expenses again  [KUP art.28 and UU PPh art.9](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf) |
+| Beban usaha | Gaji, sewa, listrik, internet, ATK, software, depreciation, insurance | Apply business purpose, period and specific deduction rules under books; do not add actual deductions on top of NPPN  [KUP art.28 and UU PPh art.9](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf) |
+| Penghasilan lain-lain | Bank interest, foreign-exchange gains, disposal gains | Determine actual ordinary/final/exempt treatment and keep it separate; no blanket final-tax assumption  [KUP art.28 and UU PPh art.9](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf) |
+| Fiscal add-backs | Prive, personal use, unsupported donations/provisions, penalties | Apply the statutory exclusion and exception, not a blanket add-back for all employee benefits  [KUP art.28 and UU PPh art.9](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf) |
+| Fixed assets | Computers, equipment, vehicles | Capitalise and calculate through the current asset-specific rule, not by merchant label  [KUP art.28 and UU PPh art.9](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf) |
+| Owner capital/prive | Contributions and withdrawals | Equity movements; document whether capital, distribution, loan or remuneration. No automatic income/expense  [KUP art.28 and UU PPh art.9](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf) |
+| Loan principal/interest | Drawdowns, repayments, leases | Principal is a balance-sheet movement; test interest's business purpose and actual related-party/limitation rules separately  [KUP art.28 and UU PPh art.9](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf) |
+| Tax settlement | PPh instalments, withholding, VAT settlement | Separate prepaid tax, own non-deductible income tax and third-party collections. A bank payment is not proof of a legally creditable slip  [KUP art.28 and UU PPh art.9](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf) |
+For company books, retain the sequence gross revenue, HPP, gross profit, operating expense/profit, non-operating items, positive/negative fiscal adjustments, final and exempt income, assets/liabilities/equity. For individual books retain the analogous business/professional split. Earlier 1770/1771 appendix and line references are historical navigation only; no exact 2026 Coretax field map is certified here. Supply the current tax computation/assembly method with the reconciled category totals instead of silently placing them in a legacy box.
+
+### 4. Apply deduction rules under books, without inventing them under NPPN
+
+UU PPh art.9 excludes profit distributions (including cooperative SHU), personal shareholder/partner/member costs, unqualified reserves, the individual's specified personal insurance unless the statutory employer-payment treatment applies, excessive related-party remuneration, unqualified gifts/donations, own income tax, private living costs, salaries to members of partnerships/firma/CV whose capital is not divided into shares, and administrative tax sanctions/criminal tax fines. Its reserve exceptions include specified credit institutions/factoring/insurance/BPJS/LPS and mining/forestry/waste restoration, with actual conditions. Qualifying statutory donations and approved religious contributions have exceptions. Former art.9(1)(e)'s benefits-in-kind prohibition is deleted; do not automatically add back every natura item. Apply actual current employee/employer treatment separately. [UU PPh art.9](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf).
+
+Allocate mixed private/business expenses on an evidenced basis. Missing business use or documentation means the deduction is unsupported, not that a legal all-or-nothing allocation has been proved. Income-generating capital expenditure is relieved through the appropriate depreciation/amortisation rule. Bribes/gratuities and the specified foreign-public-official payments are independently excluded by amended art.20A. No expense is deducted from the small-business final-turnover base; final-tax costs and ordinary costs must remain segregated. [UU PPh art.9](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf); [PP 20 amended art.20A](https://www.pajak.go.id/id/peraturan/perubahan-atas-peraturan-pemerintah-nomor-55-tahun-2022-tentang-penyesuaian-pengaturan-0).
+
+### 5. Compute NPPN by actual activity and region
+
+For each qualifying non-final activity, statutory net income = its applicable annex-I percentage times that activity's supported gross turnover. Sum the activities' net incomes under PER-17 art.5, then route PTKP, individual brackets, other ordinary income and valid credits to the actual individual return method. No separate COGS/operating expense deduction or accounting loss is appended to this deemed-net-income computation. A final/exempt receipt is handled under its own rules. VAT input credit rights depend separately on actual PKP/tax conditions; NPPN does not turn VAT into an ordinary income-tax expense deduction. [PER-17 arts.1,5-6](https://www.pajak.go.id/index.php/id/peraturan/norma-penghitungan-penghasilan-neto).
+
+If required books/records were not kept/shown, UU PPh art.14(5) and PER-17 art.3 permit the stated assessment method with KUP sanctions. They do not prescribe the old file's automatic 50%/20% uplift to net income. Identify the real assessment article and notice before calculating any penalty. Failure to notify NPPN makes the individual deemed to choose books; it does not itself prove that precise invented uplift. [UU PPh art.14](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf); [PER-17 arts.2-3](https://www.pajak.go.id/index.php/id/peraturan/norma-penghitungan-penghasilan-neto).
+
+## Boundary and exception table
+
+| Retained code/topic | Action |
+|---|---|
+| R-ID-1, foreign BUT/PE | Refer source attribution, treaty and specific books/return rules |
+| R-ID-2, mining/oil/gas/shariah banking | Specialist accounting and tax regime; no generic deduction/concession assumption |
+| R-ID-3, USD/foreign-currency books | Obtain and test actual permission and current administration before using currency-sensitive return totals |
+| R-ID-4, cross-border related parties/TP | Preserve contracts, relationship, price and documentation questions. No unverified copied threshold or obsolete PMK213 shortcut |
+| R-ID-5, final-turnover regime | Retain accounting evidence but compute final tax through `id-pph-final-umkm`, not NPPN |
+| R-ID-6, yayasan/cooperative/education concessions | Confirm actual income/exemption conditions separately |
+| R-ID-7, unknown KLU/region | No coefficient by analogy or highest-rate default; obtain the classification evidence |
+| R-ID-8, crypto/derivative/capital markets | Refer actual current final/non-final rule; do not merge into ordinary professional turnover automatically |
+| R-ID-9, missing NPPN notice | Obtain receipt; if legally not timely, use the books branch rather than invented net-income uplift |
+| R-ID-10, mixed books/NPPN within year | Resolve the applicable consistent regime; do not switch by whichever transaction gives lower tax |
+| Foreign-currency receipt | Preserve amount/currency/date and actual conversion evidence; no automatic BI middle-rate instruction |
+| Missing bukti potong | Do not claim a documented credit that has not been obtained or reconciled; continue supported gross-revenue classification |
+| Two plausible activities | Determine actual statutory classification, not the more punitive coefficient |
+
+## Worked cases
+
+### Andi's original bank scenario, retained with reconciliation corrections
+
+Andi is a resident graphic designer with timely NPPN notice, working in Jakarta under the actual statutory specialised-design activity KLU 74100, tax year 2026. Retain prior-year turnover 380m and the recorded 28 February notice as hypothetical evidence inputs, updated to the current year where applicable. Annex I gives **32%**, not the old assumed50%; this does not classify every modern graphic-design business automatically. The client's actual KLU must fit the annex description. [PER-17 arts.1-6/annex I](https://www.pajak.go.id/index.php/id/peraturan/norma-penghitungan-penghasilan-neto), [annex I](https://www.pajak.go.id/sites/default/files/2019-03/Lampiran%201_PER%20-%2017.PJ_.2015.pdf).
+
+Retain every original statement item: PT XYZ deposit18.5m; co-working rent2.5m; cash project A6m; Adobe 812,000; private withdrawal5m; CV ABC deposit24.5m against stated gross25m; PPh 25 payment1.2m; cancelled-project refund3m; bank giro interest84,000; Stripe payout19.2m identified as USD1,200. Rent/software are not deducted again under NPPN, private withdrawal is not a business expense, instalment is not an expense and bank interest needs its own classification. The Stripe net settlement is not proved to be gross export turnover or the correct statutory currency conversion.
+
+The first deposit's old annotations conflict: assumed gross18.87m implies withholding370,000, while its note says377,000. The credit total877,000 therefore cannot be accepted through a7,000 "rounding" plug. The second slip indicates500,000. If documents actually establish gross18.87m and withheld370,000, the two withholding amounts total870,000, not877,000; their legal article and creditability still require valid slips. In particular, a professional individual should not automatically be treated as a company subject to2% PPh 23. Route the actual payer/recipient facts to the payroll/withholding method.
+
+Conditionally assume documents establish those first two gross amounts, cash6m, supported ordinary refund3m and actual gross foreign turnover19.2m with the proper conversion and no additional fees. Then gross is66.07m and deemed net income21.1424m at the actual Jakarta 32% row. This is the bookkeeping handoff, not a tax or refund award. The old NIL-tax outcome depended additionally on the actual applicable allowance and other income, which the separate individual return calculation must establish.
+
+```oa-check
+name: Andi corrected source-document reconciliation and design norm
+inputs:
+  first_gross: 18870000
+  first_net: 18500000
+  second_gross: 25000000
+  second_net: 24500000
+  cash: 6000000
+  supported_refund: 3000000
+  supported_foreign_gross: 19200000
+  jakarta_design_norm: 0.32
+steps:
+  - first_difference: first_gross - first_net
+  - second_difference: second_gross - second_net
+  - total_differences: first_difference + second_difference
+  - gross: first_gross + second_gross + cash - supported_refund + supported_foreign_gross
+  - deemed_net: gross * jakarta_design_norm
+  - old_unsupported_credit_difference: 877000 - total_differences
+expected:
+  first_difference: 370000
+  second_difference: 500000
+  total_differences: 870000
+  gross: 66070000
+  deemed_net: 21142400
+  old_unsupported_credit_difference: 7000
+```
+
+### Same gross, different statutory region, no highest-rate default
+
+A properly qualifying specialised-design activity has supported non-final gross100m. The actual ten-capital region gives net32m, another provincial capital31m, another area29m. At exactly4.8b of turnover the NPPN eligibility branch fails regardless of which percentage gives less tax. The old 50% guess would overstate the first hypothetical net by18m. These are net-income figures before the individual's separate tax/allowance/credit calculation. [PER-17 art.1,4-6](https://www.pajak.go.id/index.php/id/peraturan/norma-penghitungan-penghasilan-neto); [annex I KLU 74100](https://www.pajak.go.id/sites/default/files/2019-03/Lampiran%201_PER%20-%2017.PJ_.2015.pdf).
+
+```oa-check
+name: Actual design region instead of the old professional proxy
+inputs:
+  gross: 100000000
+steps:
+  - ten_capitals_net: gross * 0.32
+  - other_capital_net: gross * 0.31
+  - other_area_net: gross * 0.29
+  - old_guess_net: gross * 0.50
+  - old_guess_overstatement: old_guess_net - ten_capitals_net
+expected:
+  ten_capitals_net: 32000000
+  other_capital_net: 31000000
+  other_area_net: 29000000
+  old_guess_overstatement: 18000000
+```
+
+## When to refuse or refer
+
+Retain the ten codes above. Refer unsupported KLU/permission/regime, specialised sector, professional withholding, source-sensitive currency/foreign receipts, concession, audit or material related-party matters to a qualified Indonesian tax reviewer. Stop the unsupported calculation, explain the specific missing evidence, and continue a supported transaction reconciliation if possible. No SPT total leaves this method without its source or a clearly identified unresolved field. No unsupported NPPN coefficient is printed as an illustrative rate.
+
+## Filing and payment
+
+This method does not file or pay. Deliver the supported books/records, category totals, adjustment schedules, KLU/region/notice evidence, final/ordinary split, source-currency reconciliation and candidate tax-credit slips to the return assembler. Use the actual taxpayer's current authorised Coretax workflow and official forms, not a legacy attachment map guessed from the old text. Preserve accepted annual returns, payment/BPN/NTPN and withholding evidence when provided; a proposed posting list or import file is not proof of an accepted filing.
+
+## Completion checklist
+
+1. Working paper: one row per transaction with date, counterparty, source/net/gross currency amounts, working-paper category, tax regime, PPh/PPN flag, document reference and unresolved/reviewer note.
+2. Regime summary: actual books/records method, prior/current turnover, timely notice, actual statutory KLU and activity/region; for NPPN, the applicable row/percentage/source.
+3. Reconciliation: bank-to-gross differences, withholding/fees, loan/capital/prive, inventory/capital assets, final/exempt/ordinary income and separate fiscal adjustments all traced.
+4. Reviewer brief: missing documents, unsupported assumptions and monetary differences ranked by actual cash impact; exact permission, concession and source gaps retained.
+5. Sign-off handoff: independent recomputation, source passages/read dates, actual return-version/field map and accountable qualified review. Preparation is not professional approval or payment.
+
+## Sources
+
+| Source and scope actually read | Official URL | Read on |
+|---|---|---|
+| PER-17/PJ/2015 operative arts.1-9. Read for strict ceiling, notice, books/records branches, audit fallback, exact ten-capital regions, separate activity computations and repeal of KEP 536 | https://www.pajak.go.id/index.php/id/peraturan/norma-penghitungan-penghasilan-neto | 2026-11-14 |
+| PER-17 annex I, header and the twenty exact KLU rows shown above, with adjacent descriptions. Read for actual activity wording and all three regional net-income percentages, not a complete certification of the whole annex or a new KBLI crosswalk | https://www.pajak.go.id/sites/default/files/2019-03/Lampiran%201_PER%20-%2017.PJ_.2015.pdf | 2026-11-14 |
+| DJP consolidated tax laws through UU 6/2023. Read for KUP art.28 and explanation, UU PPh arts.9,10(6),14, including records, consistency, foreign-language/currency permission, deductions, inventory and NPPN. This is not claimed to consolidate later laws | https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf | 2026-11-14 |
+| PP 20/2026 amended arts.20A,56-58 and art.II. Read for bribery exclusion and final-turnover eligibility/aggregation/election/transition interactions, whose calculation remains in the final-tax owner | https://www.pajak.go.id/id/peraturan/perubahan-atas-peraturan-pemerintah-nomor-55-tahun-2022-tentang-penyesuaian-pengaturan-0 | 2026-11-14 |
+
+Not yet confirmed: current exact Coretax individual/company field mappings replacing the historical1770/1771 references; activity-specific crosswalk for the old96021,69201/69202,71101,85490 codes and the actual independent writer/author classification; current detailed foreign-currency permission/conversion, interest/thin-cap ratios, specialised TP thresholds and benefits-in-kind exceptions; the actual legal category/creditability of Andi's payer slips, his foreign gross/fees/conversion and any final tax on giro interest; current personal allowance and total individual-return outcome through the missing general individual-income-tax companion. Old generic NPPN ranges, the50% design assumption, the7,000 rounding plug, an automatic50%/20% uplift, a universal BI midpoint and copied legacy return fields are not usable guidance. The supported bookkeeping method and actual annex rows remain available.
