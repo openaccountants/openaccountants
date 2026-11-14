@@ -1,16 +1,17 @@
 ---
 name: france-financial-statements
 description: Use this skill when preparing, reviewing, or advising on annual financial statements (comptes annuels) for a French company. Trigger on phrases like "comptes annuels", "dépôt des comptes", "greffe", "Plan Comptable Général", "PCG", "bilan", "compte de résultat", "annexe", "commissaire aux comptes", "audit France", "petite entreprise", "micro-entreprise comptable", "liasse fiscale", or any question about preparing and filing statutory accounts under French commercial law. Covers PCG framework, size thresholds, required statements, formats, notes, filing deadlines, and audit requirements.
-version: 1.2
+version: 2.0
 jurisdiction: FR
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-14
 depends_on:
   - financial-statements-workflow-base
 category: financial-statements
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: financial-statements
+type: filing-howto
 ---
 
 # France: annual accounts (comptes annuels), their filing and the statutory audit
@@ -19,24 +20,20 @@ This skill prepares, reviews and advises on the annual accounts of a French comm
 
 The selected clarifications to the size-change, disclosure, reserve, confidentiality, presentation and filing rules were checked on 29 October 2026 against the cited code and ANC text. Earlier page-version and review dates above are preserved.
 
-## Section 1: Quick reference
+## Scope
 
-**Quick reference**
+In scope: a French commercial company (SARL, EURL, SAS, SASU, SA) or a société civile with an economic activity closing a financial year in 2026: its size category, which statements it must draw up, the year-end adjustments, the bilan, compte de résultat and annexe, approval, the transfer to the legal reserve, filing at the greffe with the confidentiality option, and when a statutory auditor is compulsory.
 
-| Field | Value |
-| --- | --- |
-| Country | France (République française) |
-| Currency and accounting language | EUR; accounting documents are established in euros and in French (Code de commerce L. 123-22, reproduced in the ANC compendium) |
-| Filing authority | Greffe du tribunal de commerce (or tribunal des activités économiques) of the registered office; in Alsace-Moselle, the tribunal judiciaire |
-| Filing channel | Online on the guichet des formalités des entreprises, or on paper at the greffe, or by registered post |
-| Accounting framework | Plan Comptable Général, ANC regulation no. 2014-03 as amended (consolidated text of 1 January 2026) |
-| Legal references printed by the filing page | Code de commerce, art. L. 232-21 to L. 232-26 (filing), art. R. 123-111 and R. 123-111-1 (filing deadline and confidentiality), art. D. 123-200 (size thresholds) |
-| Size thresholds | Décret n° 2024-152 du 28 février 2024; see Section 3 |
-| Approval of the accounts | SA, SARL, EURL and SASU: within 6 months of the year end. For a SAS with multiple shareholders, apply the period fixed in its statutes. See Section 9 |
-| Filing deadline | Within 1 month after approval, or within 2 months when filed electronically. See Section 9 |
-| Penalties for not filing | See the table in Section 9 |
-| Statutory auditor | Compulsory above the thresholds in Section 10; an SA is not audited automatically |
-| Companion skills | `france-bookkeeping` (books, chart of accounts, depreciation), `france-vat-return`, `france-einvoice`, `france-formation`, `france-payroll`, `fr-tax-audit` |
+- Out of scope here: the books themselves (`france-bookkeeping`), the corporation tax return that goes with the accounts in depth (`fr-corporate-tax`), consolidated accounts, banks, insurers and associations.
+
+## Ask the client first
+
+- What is the legal form and number of shareholders? For a SAS with multiple shareholders, what approval period do the statutes set? For a SASU or EURL, does the sole shareholder personally hold the relevant management office and use the statutory signed-document deposit route?
+- Does the company control another entity, or is it controlled by one? (This changes the auditor thresholds, the management report and whether consolidated accounts are due.)
+- For the year being closed and the year before: what were the balance sheet total, the net turnover excluding VAT and the average headcount?
+- Is a statutory auditor in office, and when does the mandate end?
+- Is the company's activity the management of shareholdings and securities? (A micro-enterprise with that activity cannot skip the annexe.)
+- Does the company want its accounts, or its compte de résultat, kept out of publication?
 
 ## The method, step by step
 
@@ -52,24 +49,24 @@ The selected clarifications to the size-change, disclosure, reserve, confidentia
 
 A micro-enterprise that uses the annexe exemption must still give the information listed in PCG art. 811-7 after its balance sheet: the accounting regulation used; off-balance-sheet financial commitments, guarantees, contingent liabilities and security interests; retirement commitments; commitments to related or associated entities; advances and credits to management bodies with their terms, repayments and commitments on their behalf; and, for legal persons, the number, value and movements of own shares. This is an exemption from the annexe, not from those disclosures. Source: the ANC compendium in Section 2.
 
-## Ask the client first
+## Section 1: Quick reference
 
-- What is the legal form and number of shareholders? For a SAS with multiple shareholders, what approval period do the statutes set? For a SASU or EURL, does the sole shareholder personally hold the relevant management office and use the statutory signed-document deposit route?
-- Does the company control another entity, or is it controlled by one? (This changes the auditor thresholds, the management report and whether consolidated accounts are due.)
-- For the year being closed and the year before: what were the balance sheet total, the net turnover excluding VAT and the average headcount?
-- Is a statutory auditor in office, and when does the mandate end?
-- Is the company's activity the management of shareholdings and securities? (A micro-enterprise with that activity cannot skip the annexe.)
-- Does the company want its accounts, or its compte de résultat, kept out of publication?
+**Quick reference**
 
-## When to refuse or refer
-
-- Consolidated accounts, IFRS accounts, and the choice between French standards and IFRS for a group. This skill covers individual accounts only; consolidated accounts under French standards follow ANC regulation no. 2020-01, which this skill does not cover.
-- Public-interest entities (EIP) and listed companies, and banks, insurers and other entities with a sector accounting regulation of their own (the PCG applies to them only where their own regulation is silent).
-- Associations, foundations and private training bodies (organismes de formation), which have their own auditor rules.
-- Sustainability reporting (informations en matière de durabilité).
-- A company whose equity has fallen below half of its share capital: a specific legal procedure applies (https://entreprendre.service-public.gouv.fr/vosdroits/F24024). Refer to a lawyer or accountant.
-- A foreign company filing the accounts of a French branch, mergers, transformations, liquidation and a first financial year longer or shorter than 12 months.
-- Signing an audit opinion. Only a commissaire aux comptes may do that.
+| Field | Detail |
+| --- | --- |
+| Country | France (République française) |
+| Currency and accounting language | EUR; accounting documents are established in euros and in French (Code de commerce L. 123-22, reproduced in the ANC compendium) |
+| Filing authority | Greffe du tribunal de commerce (or tribunal des activités économiques) of the registered office; in Alsace-Moselle, the tribunal judiciaire |
+| Filing channel | Online on the guichet des formalités des entreprises, or on paper at the greffe, or by registered post |
+| Accounting framework | Plan Comptable Général, ANC regulation no. 2014-03 as amended (consolidated text of 1 January 2026) |
+| Legal references printed by the filing page | Code de commerce, art. L. 232-21 to L. 232-26 (filing), art. R. 123-111 and R. 123-111-1 (filing deadline and confidentiality), art. D. 123-200 (size thresholds) |
+| Size thresholds | Décret n° 2024-152 du 28 février 2024; see Section 3 |
+| Approval of the accounts | SA, SARL, EURL and SASU: within 6 months of the year end. For a SAS with multiple shareholders, apply the period fixed in its statutes. See Section 9 |
+| Filing deadline | Within 1 month after approval, or within 2 months when filed electronically. See Section 9 |
+| Penalties for not filing | See the table in Section 9 |
+| Statutory auditor | Compulsory above the thresholds in Section 10; an SA is not audited automatically |
+| Companion skills | `france-bookkeeping` (books, chart of accounts, depreciation), `france-vat-return`, `france-einvoice`, `france-formation`, `france-payroll`, `fr-tax-audit` |
 
 ## Section 2: Reporting framework
 
@@ -101,21 +98,21 @@ A company belongs to a category when it meets at least 2 of the 3 criteria of th
 | Item | Value | Note (verbatim, page checked by its publisher on 07 septembre 2026) |
 | --- | --- | --- |
 | Source | all figures below | https://entreprendre.service-public.gouv.fr/vosdroits/F37169 |
-| Micro-enterprise, balance sheet total, at most | EUR 450,000 | "Bilan total inférieur ou égal à 450 000 €" |
-| Micro-enterprise, net turnover, at most | EUR 900,000 | "Montant net du chiffre d'affaires inférieur ou égal à 900 000 €" |
-| Micro-enterprise, average headcount, at most | 10 employees | "Nombre moyen de salariés employés au cours de l'année inférieur ou égal à 10" |
-| Small enterprise, balance sheet total, at most | EUR 7,500,000 | "Bilan total inférieur ou égal à 7 500 000 €" |
-| Small enterprise, net turnover excluding VAT, at most | EUR 15,000,000 | "Montant net HT du chiffre d'affaires inférieur ou égal à 15 000 000 €" |
-| Small enterprise, average headcount, at most | 50 employees | "Nombre moyen de salariés employés au cours de l'année inférieur ou égal à 50" |
-| Medium enterprise, balance sheet total, at most | EUR 25,000,000 | "Bilan total inférieur ou égal à 25 000 000 €" |
-| Medium enterprise, net turnover excluding VAT, at most | EUR 50,000,000 | "Montant net HT du chiffre d'affaires inférieur ou égal à 50 000 000 €" |
-| Medium enterprise, average headcount, at most | 250 employees | "Nombre moyen de salariés employés au cours de l'année inférieur ou égal à 250" |
-| How many criteria | 2 of 3 | "si elle remplit 2 des 3 critères suivants" |
-| Ordinary prior-year simplified VAT turnover reference, selling, catering and accommodation | EUR 945,000 | Current BOI-BAREME-000036 20260701, L. 162-4 reference; apply the separate overrun and activity conditions in `france-vat-return` |
-| Ordinary prior-year simplified VAT turnover reference, other activities | EUR 286,000 | Current BOI-BAREME-000036 20260701, L. 162-4 reference; apply the separate overrun and activity conditions in `france-vat-return` |
-| Previous-year VAT threshold for compulsory monthly filing under CGI art. 287-3 bis | Monthly filing is triggered above EUR 15,000; exactly EUR 15,000 does not cross this gate | "taxe exigible au titre de l'année précédente est supérieur à 15 000 €" |
-| Keeping the books and vouchers, from the close of the year | at least 10 years | "au moins 10 ans à partir de la clôture de l'exercice comptable" |
-| Fine for not keeping them | EUR 10,000 | "s'expose à une amende de 10 000 €" |
+| Micro-enterprise, balance sheet total, at most | EUR 450,000 | "Bilan total inférieur ou égal à 450 000 €" https://entreprendre.service-public.gouv.fr/vosdroits/F31214 |
+| Micro-enterprise, net turnover, at most | EUR 900,000 | "Montant net du chiffre d'affaires inférieur ou égal à 900 000 €" https://entreprendre.service-public.gouv.fr/vosdroits/F31214 |
+| Micro-enterprise, average headcount, at most | 10 employees | "Nombre moyen de salariés employés au cours de l'année inférieur ou égal à 10" https://entreprendre.service-public.gouv.fr/actualites/A17100 |
+| Small enterprise, balance sheet total, at most | EUR 7,500,000 | "Bilan total inférieur ou égal à 7 500 000 €" https://entreprendre.service-public.gouv.fr/vosdroits/F31214 |
+| Small enterprise, net turnover excluding VAT, at most | EUR 15,000,000 | "Montant net HT du chiffre d'affaires inférieur ou égal à 15 000 000 €" https://entreprendre.service-public.gouv.fr/vosdroits/F31214 |
+| Small enterprise, average headcount, at most | 50 employees | "Nombre moyen de salariés employés au cours de l'année inférieur ou égal à 50" https://entreprendre.service-public.gouv.fr/actualites/A17100 |
+| Medium enterprise, balance sheet total, at most | EUR 25,000,000 | "Bilan total inférieur ou égal à 25 000 000 €" https://entreprendre.service-public.gouv.fr/vosdroits/F31214 |
+| Medium enterprise, net turnover excluding VAT, at most | EUR 50,000,000 | "Montant net HT du chiffre d'affaires inférieur ou égal à 50 000 000 €" https://entreprendre.service-public.gouv.fr/vosdroits/F31214 |
+| Medium enterprise, average headcount, at most | 250 employees | "Nombre moyen de salariés employés au cours de l'année inférieur ou égal à 250" https://entreprendre.service-public.gouv.fr/vosdroits/F31214 |
+| How many criteria | 2 of 3 | "si elle remplit 2 des 3 critères suivants" https://entreprendre.service-public.gouv.fr/actualites/A17100 |
+| Ordinary prior-year simplified VAT turnover reference, selling, catering and accommodation | EUR 945,000 | Current BOI-BAREME-000036 20260701, L. 162-4 reference; apply the separate overrun and activity conditions in `france-vat-return` https://bofip.impots.gouv.fr/bofip/9368-PGP.html/identifiant=BOI-BAREME-000036-20260701 |
+| Ordinary prior-year simplified VAT turnover reference, other activities | EUR 286,000 | Current BOI-BAREME-000036 20260701, L. 162-4 reference; apply the separate overrun and activity conditions in `france-vat-return` https://bofip.impots.gouv.fr/bofip/9368-PGP.html/identifiant=BOI-BAREME-000036-20260701 |
+| Previous-year VAT threshold for compulsory monthly filing under CGI art. 287-3 bis | Monthly filing is triggered above EUR 15,000; exactly EUR 15,000 does not cross this gate | "taxe exigible au titre de l'année précédente est supérieur à 15 000 €" https://entreprendre.service-public.gouv.fr/vosdroits/F23566 |
+| Keeping the books and vouchers, from the close of the year | at least 10 years | "au moins 10 ans à partir de la clôture de l'exercice comptable" https://entreprendre.service-public.gouv.fr/vosdroits/F37169 |
+| Fine for not keeping them | EUR 10,000 | "s'expose à une amende de 10 000 €" https://entreprendre.service-public.gouv.fr/vosdroits/F37169 |
 
 Accounting relief and VAT reporting use separate legal tests. Apply L. 123-25 to the company's actual simplified income-tax status and the specific controlled-company restriction for closing-date receivable/debt recording. For VAT, CGI art. 287-3 bis uses previous-year VAT above EUR 15,000 as the compulsory monthly-filing trigger; the accounting overview's strict-below wording does not settle the equality case. Separately apply the turnover continuation/overrun rules, options and activity exclusions, including intra-EU acquisitions/imports/suspensive-regime exits under art. 287-3 ter, using `france-vat-return`. The two VAT turnover references above do not establish complete eligibility by themselves. Primary/current sources: the ANC compendium, CGI art. 287 (https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006069577/LEGISCTA000006191928/2026-10-29) and the 2026 indexed turnover table (https://bofip.impots.gouv.fr/bofip/9368-PGP.html/identifiant=BOI-BAREME-000036-20260701).
 
@@ -179,8 +176,8 @@ Sources: https://entreprendre.service-public.gouv.fr/vosdroits/F37169 (compositi
 | Item | Value | Note (verbatim) |
 | --- | --- | --- |
 | Source | all figures below | https://bofip.impots.gouv.fr/bofip/839-PGP.html |
-| Turnover at which a business comes within the CVAE at all | EUR 152,500 | "seuil d’assujettissement à la CVAE (152 500 €)" |
-| Maximum rate for 2026 (highest turnover band) | 0.28% | "> 50 000 000 € 0,19 % 0,28 %" |
+| Turnover at which a business comes within the CVAE at all | EUR 152,500 | "seuil d’assujettissement à la CVAE (152 500 €)" https://bofip.impots.gouv.fr/bofip/839-PGP.html |
+| Maximum rate for 2026 (highest turnover band) | 0.28% | "> 50 000 000 € 0,19 % 0,28 %" https://bofip.impots.gouv.fr/bofip/839-PGP.html |
 
 At the highest turnover band, the 2026 ordinary CVAE maximum is 0.28%, compared with the 2025 ordinary maximum of 0.19%. Use the 2026 column for the current accrual; lower turnover bands follow their own formulas. This is a comparison of ordinary rates: BOFiP also records a separate 2025-only complementary contribution of 47.4% of CVAE, so the ordinary-rate comparison does not establish that the total 2025 burden was lower.
 
@@ -351,21 +348,21 @@ A micro-enterprise may skip the annexe, unless its activity is managing sharehol
 | Item | Value | Note (verbatim, page checked by its publisher on 11 juin 2025) |
 | --- | --- | --- |
 | Source | all figures below | https://entreprendre.service-public.gouv.fr/vosdroits/F31214 |
-| Criminal fine on the director for not filing | EUR 1,500 | "le dirigeant de la société s'expose à une amende pénale de 1 500 €" |
-| Fine on a repeat failure | EUR 3,000 | "En cas de récidive, l'amende passe à 3 000 €" |
-| Time limit for prosecution | 1 year from the date the accounts were due | "peut être poursuivie pendant un délai de 1 an à compter de la date à laquelle les comptes auraient dû être déposés" |
-| Civil order (injonction) | The president of the tribunal de commerce may order filing within one month, often with a daily penalty (astreinte) | "le président du tribunal de commerce peut adresser au dirigeant une injonction de les déposer dans le délai d'un mois" |
-| Approval deadline, SA, SARL/EURL and SASU | Within 6 months of the year end; SASU is governed by L. 227-9 | "L’approbation des comptes doit intervenir dans les 6 mois de la clôture de l’exercice" |
-| Approval deadline, SAS with multiple shareholders | Apply the statutes; do not extend this to a SASU | "dans un délai librement fixé par les associés" |
-| Filing deadline | 1 month after approval; 2 months if electronic | "Dans les 2 mois suivant l'approbation des comptes par l'assemblée ordinaire des actionnaires ou de l’actionnaire unique lorsque le dépôt est fait par voie électronique" |
+| Criminal fine on the director for not filing | EUR 1,500 | "le dirigeant de la société s'expose à une amende pénale de 1 500 €" https://entreprendre.service-public.gouv.fr/vosdroits/F31214 |
+| Fine on a repeat failure | EUR 3,000 | "En cas de récidive, l'amende passe à 3 000 €" https://entreprendre.service-public.gouv.fr/vosdroits/F31214 |
+| Time limit for prosecution | 1 year from the date the accounts were due | "peut être poursuivie pendant un délai de 1 an à compter de la date à laquelle les comptes auraient dû être déposés" https://entreprendre.service-public.gouv.fr/vosdroits/F31214 |
+| Civil order (injonction) | The president of the tribunal de commerce may order filing within one month, often with a daily penalty (astreinte) | "le président du tribunal de commerce peut adresser au dirigeant une injonction de les déposer dans le délai d'un mois" https://entreprendre.service-public.gouv.fr/vosdroits/F31214 |
+| Approval deadline, SA, SARL/EURL and SASU | Within 6 months of the year end; SASU is governed by L. 227-9 | "L’approbation des comptes doit intervenir dans les 6 mois de la clôture de l’exercice" https://entreprendre.service-public.gouv.fr/vosdroits/F31214 |
+| Approval deadline, SAS with multiple shareholders | Apply the statutes; do not extend this to a SASU | "dans un délai librement fixé par les associés" https://entreprendre.service-public.gouv.fr/vosdroits/F31214 |
+| Filing deadline | 1 month after approval; 2 months if electronic | "Dans les 2 mois suivant l'approbation des comptes par l'assemblée ordinaire des actionnaires ou de l’actionnaire unique lorsque le dépôt est fait par voie électronique" https://entreprendre.service-public.gouv.fr/vosdroits/F31214 |
 
 **Appropriation of the result: the legal reserve**
 
 | Item | Value | Note (verbatim, page checked by its publisher on 10 avril 2024) |
 | --- | --- | --- |
 | Source | all figures below | https://entreprendre.service-public.gouv.fr/vosdroits/F24024 |
-| Transfer to the legal reserve, out of each year's profit after prior losses, at least | 5% | Code de commerce L. 232-10: "sur le bénéfice de l'exercice, diminué, le cas échéant, des pertes antérieures, un prélèvement d'un vingtième au moins" |
-| The transfer stops being compulsory when the reserve reaches this share of the share capital | 10% | "Ce prélèvement cesse d'être obligatoire lorsque la réserve légale atteint 10 % du capital social" |
+| Transfer to the legal reserve, out of each year's profit after prior losses, at least | 5% | Code de commerce L. 232-10: "sur le bénéfice de l'exercice, diminué, le cas échéant, des pertes antérieures, un prélèvement d'un vingtième au moins" https://entreprendre.service-public.gouv.fr/vosdroits/F24024 |
+| The transfer stops being compulsory when the reserve reaches this share of the share capital | 10% | "Ce prélèvement cesse d'être obligatoire lorsque la réserve légale atteint 10 % du capital social" https://entreprendre.service-public.gouv.fr/vosdroits/F24024 |
 
 The legal reserve cannot be distributed. Code de commerce L. 232-10 applies this minimum allocation to sociétés à responsabilité limitée and sociétés par actions: use the year's profit after deducting prior losses, and stop the compulsory allocation once the reserve reaches 10% of share capital. Read the statute with the administrative overview: https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000051322888/.
 
@@ -378,19 +375,19 @@ The legal reserve cannot be distributed. Code de commerce L. 232-10 applies this
 | Item | Value | Note (verbatim, page checked by its publisher on 10 avril 2025) |
 | --- | --- | --- |
 | Source | all figures below | https://entreprendre.service-public.gouv.fr/vosdroits/F31440 |
-| Independent company, and parent of a small group: balance sheet total | EUR 5,000,000 | "5 000 000 € de total bilan" |
-| Independent company, and parent of a small group: turnover excluding VAT | EUR 10,000,000 | "10 000 000 € de chiffre d'affaires HT" |
-| Independent company, and parent of a small group: employees | 50 employees | "10 000 000 € de chiffre d'affaires HT 50 salariés" |
-| Company controlled by the parent of a small group: balance sheet total | EUR 2,500,000 | "2 500 000 € de total bilan" |
-| Company controlled by the parent of a small group: turnover excluding VAT | EUR 5,000,000 | "5 000 000 € de chiffre d'affaires HT 25 salariés" |
-| Company controlled by the parent of a small group: employees | 25 employees | "5 000 000 € de chiffre d'affaires HT 25 salariés" |
-| Société civile with an economic activity: balance sheet total | EUR 1,550,000 | "1 550 000 € de total bilan" |
-| Société civile with an economic activity: turnover excluding VAT | EUR 3,100,000 | "3 100 000 € de chiffre d'affaires HT 50 salariés" |
-| Société civile with an economic activity: employees | 50 employees | "3 100 000 € de chiffre d'affaires HT 50 salariés" |
-| How many thresholds | 2 of 3 crossed | "dès lors que 2 des 3 seuils suivants sont franchis" |
-| Mandate length | 6 years, renewable; 3 years for a voluntary appointment | "6 ans renouvelable ou 3 ans en cas de désignation volontaire" |
-| Not appointing a CAC when compulsory | 2 years' imprisonment and a fine of EUR 30,000 | "passible d'un emprisonnement de 2 ans et d'une amende de 30 000 €" |
-| Partners' request to a judge below the thresholds (SARL, SA, SAS, SCA) | One or more partners holding at least 10% of the capital; the judge may refuse | "un ou plusieurs associés représentant au moins 10 % du capital peuvent demander au juge la nomination d'un CAC" |
+| Independent company, and parent of a small group: balance sheet total | EUR 5,000,000 | "5 000 000 € de total bilan" https://entreprendre.service-public.gouv.fr/vosdroits/F31440 |
+| Independent company, and parent of a small group: turnover excluding VAT | EUR 10,000,000 | "10 000 000 € de chiffre d'affaires HT" https://entreprendre.service-public.gouv.fr/vosdroits/F31440 |
+| Independent company, and parent of a small group: employees | 50 employees | "10 000 000 € de chiffre d'affaires HT 50 salariés" https://entreprendre.service-public.gouv.fr/vosdroits/F31440 |
+| Company controlled by the parent of a small group: balance sheet total | EUR 2,500,000 | "2 500 000 € de total bilan" https://entreprendre.service-public.gouv.fr/vosdroits/F31440 |
+| Company controlled by the parent of a small group: turnover excluding VAT | EUR 5,000,000 | "5 000 000 € de chiffre d'affaires HT 25 salariés" https://entreprendre.service-public.gouv.fr/vosdroits/F31440 |
+| Company controlled by the parent of a small group: employees | 25 employees | "5 000 000 € de chiffre d'affaires HT 25 salariés" https://entreprendre.service-public.gouv.fr/vosdroits/F31440 |
+| Société civile with an economic activity: balance sheet total | EUR 1,550,000 | "1 550 000 € de total bilan" https://entreprendre.service-public.gouv.fr/vosdroits/F31440 |
+| Société civile with an economic activity: turnover excluding VAT | EUR 3,100,000 | "3 100 000 € de chiffre d'affaires HT 50 salariés" https://entreprendre.service-public.gouv.fr/vosdroits/F31440 |
+| Société civile with an economic activity: employees | 50 employees | "3 100 000 € de chiffre d'affaires HT 50 salariés" https://entreprendre.service-public.gouv.fr/vosdroits/F31440 |
+| How many thresholds | 2 of 3 crossed | "dès lors que 2 des 3 seuils suivants sont franchis" https://entreprendre.service-public.gouv.fr/vosdroits/F31440 |
+| Mandate length | 6 years, renewable; 3 years for a voluntary appointment | "6 ans renouvelable ou 3 ans en cas de désignation volontaire" https://entreprendre.service-public.gouv.fr/vosdroits/F31440 |
+| Not appointing a CAC when compulsory | 2 years' imprisonment and a fine of EUR 30,000 | "passible d'un emprisonnement de 2 ans et d'une amende de 30 000 €" https://entreprendre.service-public.gouv.fr/vosdroits/F31440 |
+| Partners' request to a judge below the thresholds (SARL, SA, SAS, SCA) | One or more partners holding at least 10% of the capital; the judge may refuse | "un ou plusieurs associés représentant au moins 10 % du capital peuvent demander au juge la nomination d'un CAC" https://entreprendre.service-public.gouv.fr/vosdroits/F31440 |
 
 The parent-of-a-small-group row excludes public-interest entities and entities that must publish consolidated accounts. A voluntary appointment may also be decided by partners holding at least one third of the capital. In an SNC or an SCS a single partner may ask the judge.
 
@@ -410,19 +407,70 @@ The parent-of-a-small-group row excludes public-interest entities and entities t
 | Year closed on 31 December 2025 | 20 May 2026 | "Exercice clos le 31/12/2025 Au plus tard le 2 e jour ouvré suivant le 1 er mai 20/05/2026 (compte tenu du délai de 15 jours supp.)" |
 | Filing channel | Electronic only. Simplified regime: EFI on the professional space, or EDI through an agent. Normal regime: EDI-TDFC through an EDI partner only | "La société doit obligatoirement réaliser sa déclaration par voie électronique en mode EDI-TDFC" |
 
+## Worked cases
+
+The case recomputes in CI. The 5% transfer and the 10% target come from Service Public F24024 (https://entreprendre.service-public.gouv.fr/vosdroits/F24024), linked in the table above.
+
+### Case 1: the transfer to the legal reserve when the reserve is nearly full
+
+A SARL with share capital of EUR 50,000 closes 2026 with a profit of EUR 80,000 and EUR 10,000 of losses brought forward. Its legal reserve already stands at EUR 3,000. The transfer is at least 5% of the profit less the prior losses, but it stops once the reserve reaches 10% of the share capital, so the smaller figure applies.
+
+```oa-check
+name: Legal reserve transfer capped by the 10% target
+inputs:
+  profit: 80000
+  prior_losses: 10000
+  share_capital: 50000
+  reserve_before: 3000
+  transfer_rate: 0.05
+  target_share: 0.10
+steps:
+  - base: profit - prior_losses
+  - five_percent: base * transfer_rate
+  - room_left: share_capital * target_share - reserve_before
+  - compulsory_transfer: min(five_percent, room_left)
+  - reserve_after: reserve_before + compulsory_transfer
+expected:
+  base: 70000
+  five_percent: 3500
+  room_left: 2000
+  compulsory_transfer: 2000
+  reserve_after: 5000
+```
+
+The approving meeting may transfer more, but the compulsory part is EUR 2,000. Book it to 1061 (réserve légale) out of 120 (résultat de l'exercice) when the appropriation is voted.
+
+## When to refuse or refer
+
+- Consolidated accounts, IFRS accounts, and the choice between French standards and IFRS for a group. This skill covers individual accounts only; consolidated accounts under French standards follow ANC regulation no. 2020-01, which this skill does not cover.
+- Public-interest entities (EIP) and listed companies, and banks, insurers and other entities with a sector accounting regulation of their own (the PCG applies to them only where their own regulation is silent).
+- Associations, foundations and private training bodies (organismes de formation), which have their own auditor rules.
+- Sustainability reporting (informations en matière de durabilité).
+- A company whose equity has fallen below half of its share capital: a specific legal procedure applies (https://entreprendre.service-public.gouv.fr/vosdroits/F24024). Refer to a lawyer or accountant.
+- A foreign company filing the accounts of a French branch, mergers, transformations, liquidation and a first financial year longer or shorter than 12 months.
+- Signing an audit opinion. Only a commissaire aux comptes may do that.
+
 ## Sources
 
-- Accounting obligations of a commercial company, size categories, simplified regime, record keeping: https://entreprendre.service-public.gouv.fr/vosdroits/F37169
-- Filing the annual accounts, approval deadlines, confidentiality, penalties: https://entreprendre.service-public.gouv.fr/vosdroits/F31214
-- Statutory auditor: https://entreprendre.service-public.gouv.fr/vosdroits/F31440
-- Equity, reserves and the legal reserve: https://entreprendre.service-public.gouv.fr/vosdroits/F24024
-- New size thresholds from 2024 (news item of 5 March 2024): https://entreprendre.service-public.gouv.fr/actualites/A17100
-- Management report exemption for micro-enterprises (news item of 14 May 2025): https://entreprendre.service-public.gouv.fr/actualites/A18259
-- Corporation tax return and deadlines: https://entreprendre.service-public.gouv.fr/vosdroits/F23575
-- Employee profit-sharing: https://www.service-public.gouv.fr/particuliers/vosdroits/F2141
-- CVAE rates and thresholds (BOFiP): https://bofip.impots.gouv.fr/bofip/839-PGP.html
-- PCG and French accounting standards, consolidated compendium of 1 January 2026 (ANC): https://www.anc.gouv.fr/files/anc/files/1_Normes_fran%C3%A7aises/recueil/2026/Recueil-PCG-Janvier-2026.pdf
+
+| Source and what was read | Official URL | Read on |
+|---|---|---|
+| BAREME - TVA - Seuils de chiffres d’affaires relatifs au régime simplifié de déclaration: read for Ordinary prior-year simplified VAT turnover reference, selling, catering and acc; Ordinary prior-year simplified VAT turnover reference, other activities | https://bofip.impots.gouv.fr/bofip/9368-PGP.html/identifiant=BOI-BAREME-000036-20260701 | 2026-11-14 |
+| Déclarer et payer la TVA: read for Previous-year VAT threshold for compulsory monthly filing under CGI art. 287-3 b | https://entreprendre.service-public.gouv.fr/vosdroits/F23566 | 2026-11-14 |
+| Accounting obligations of a commercial company, size categories, simplified regime, record keeping: read for Fine for not keeping them; Keeping the books and vouchers, from the close of the year | https://entreprendre.service-public.gouv.fr/vosdroits/F37169 | 2026-11-14 |
+| Filing the annual accounts, approval deadlines, confidentiality, penalties: read for Micro-enterprise, balance sheet total, at most; Micro-enterprise, net turnover, at most; Small enterprise, balance sheet total, at most; Small enterprise, net turnover excluding VAT, at most; Medium enterprise, balance sheet total, at most; Medium enterprise, net turnover excluding VAT, at most; and 7 more rows | https://entreprendre.service-public.gouv.fr/vosdroits/F31214 | 2026-11-14 |
+| Statutory auditor: read for Independent company, and parent of a small group: employees; Company controlled by the parent of a small group: turnover excluding VAT; Company controlled by the parent of a small group: employees; Société civile with an economic activity: turnover excluding VAT; Société civile with an economic activity: employees; Partners' request to a judge below the thresholds (SARL, SA, SAS, SCA); and 7 more rows | https://entreprendre.service-public.gouv.fr/vosdroits/F31440 | 2026-11-14 |
+| Equity, reserves and the legal reserve: read for The transfer stops being compulsory when the reserve reaches this share of the s; Transfer to the legal reserve, out of each year's profit after prior losses, at | https://entreprendre.service-public.gouv.fr/vosdroits/F24024 | 2026-11-14 |
+| New size thresholds from 2024 (news item of 5 March 2024): read for Micro-enterprise, average headcount, at most; Small enterprise, average headcount, at most; How many criteria | https://entreprendre.service-public.gouv.fr/actualites/A17100 | 2026-11-14 |
+| Management report exemption for micro-enterprises (news item of 14 May 2025): read for EUR 900,000, EUR 450,000 and the conditions next to them | https://entreprendre.service-public.gouv.fr/actualites/A18259 | 2026-11-14 |
+| Corporation tax return and deadlines: read for 10%, EUR 10,000,000, EUR 286,000, EUR 945,000, EUR 15,000 and the conditions next to them | https://entreprendre.service-public.gouv.fr/vosdroits/F23575 | 2026-11-14 |
+| Employee profit-sharing: read for 5% and the conditions next to them | https://www.service-public.gouv.fr/particuliers/vosdroits/F2141 | 2026-11-14 |
+| CVAE rates and thresholds (BOFiP): read for Turnover at which a business comes within the CVAE at all; Maximum rate for 2026 (highest turnover band) | https://bofip.impots.gouv.fr/bofip/839-PGP.html | 2026-11-14 |
+| PCG and French accounting standards, consolidated compendium of 1 January 2026 (ANC): read for 10%, 5%, EUR 10,000,000, EUR 15,000,000, EUR 25,000,000 and the conditions next to them | https://www.anc.gouv.fr/files/anc/files/1_Normes_fran%C3%A7aises/recueil/2026/Recueil-PCG-Janvier-2026.pdf | 2026-11-14 |
+
 - Selected repair reads, 31 October 2026: Code de commerce L232-23 deposit and L232-25 simplified publication are distinct; the published F23575 electronic extension also follows the ordinary non-December three-month baseline. Literal quotations/conditions and source representation are recorded in the figure ledger; the existing simplified-publication notice and 20 May 2026 example remain unchanged.
+
+Not yet confirmed: the headcount wording quoted in the size table comes from the earlier reading of the Code de commerce; the Service Public news page read today (A17100) gives the same 10 and 50 employee limits and the 2-of-3 rule in its own words. The Legifrance Code de commerce section cited above was not reopened today. The guichet unique filing screens were not opened today.
 
 ## Disclaimer
 
