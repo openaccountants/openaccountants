@@ -1776,5 +1776,12 @@
   "region": "africa",
   "owner": "ryan",
   "dir": "skills/zimbabwe"
+ },
+ {
+  "code": "scripts/data/jurisdictions.json",
+  "name": "UM",
+  "region": "apac",
+  "owner": "ryan",
+  "dir": "skills/United States Minor Outlying Islands"
  }
 ]
