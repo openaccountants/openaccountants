@@ -12,8 +12,7 @@ domain: income-tax
 type: computation
 ---
 
-# Aruba individual income tax: 2026 table and method v1.0
-
+# Aruba individual income tax: 2026 table and method v1.1
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
 Tax year: calendar year 2026. Authority: Departamento di Impuesto (DIMP), impuesto.aw. Amounts are Aruban florins (Afl.). DIMP converts USD at Afl. 1.79 ([DIMP, Hoeveel BBO en BAVP moet u betalen](https://www.impuesto.aw/hoeveel-bbo-en-bavp-moet-u-betalen)).
