@@ -53,8 +53,8 @@ What changed for 2026:
 | Temporary 0%: baby milk, nappies, feminine hygiene products, listed fresh fruit and vegetables, continued | 0% from 1 Jan to 31 Dec 2027 | 2027 | https://www.cylaw.org/KDP/data/2026_1_362.pdf (para. 4) |
 | Temporary 0%: fresh and frozen meat and offal, fish, cuttlefish, squid and octopus (Sixth Schedule paras 25(γ) and 25(δ)) | 0% from 6 Apr to 30 Sep 2026, then continued from 1 Oct 2026 to 31 May 2027; 5% food rate before 6 Apr 2026 | 2026 | https://www.cylaw.org/KDP/data/2026_1_168.pdf (para. 4); https://www.cylaw.org/KDP/data/2026_1_354.pdf (para. 4(α)) |
 | Temporary 0%: bread, milk, coffee, sugar and baby food (Sixth Schedule para. 25(ε)) | 0% from 12 Oct 2026 to 31 May 2027; 5% food rate before | 2026 | https://www.cylaw.org/KDP/data/2026_1_354.pdf (para. 4(β)) |
-| Home solar (photovoltaic) systems of household customers, for self-consumption in their homes (Twelfth Schedule para. 6) | 9% from the order's publication on 16 Oct 2026 (it states no other start date) | 2026 | https://www.cylaw.org/KDP/data/2026_1_363.pdf |
-| Household electricity, tariffs 01, 02, 08 and 56 | 9% for readings from 1 Apr 2026 until the 9% entry was deleted on 30 Apr 2026; 5% for readings 1 May 2026 to 31 Mar 2027 | 2026 | https://www.cylaw.org/KDP/data/2026_1_82.pdf; https://www.cylaw.org/KDP/data/2026_1_167.pdf |
+| Home solar (photovoltaic) systems of household customers, for self-consumption in their homes (Twelfth Schedule para. 6) | 9% from the order's publication on 16 Oct 2026 (it states no other start date); derived: the order adds the item to the Twelfth Schedule, which art. 18A(1) taxes at "εννέα τοις εκατόν (9%)" | 2026 | https://www.cylaw.org/KDP/data/2026_1_363.pdf; [VAT Law art. 18A](https://www.cylaw.org/nomoi/enop/non-ind/2000_1_95/full.html) |
+| Household electricity, tariffs 01, 02, 08 and 56 | 9% for readings from 1 Apr 2026 until the 9% entry was deleted on 30 Apr 2026; 5% for readings 1 May 2026 to 31 Mar 2027; derived: Κ.Δ.Π. 82/2026 adds the item to the Twelfth Schedule (9%, art. 18A) and Κ.Δ.Π. 167/2026 moves it to Table A of the Fifth Schedule (5%) and deletes the Twelfth Schedule entry from 30.4.2026 | 2026 | https://www.cylaw.org/KDP/data/2026_1_82.pdf; https://www.cylaw.org/KDP/data/2026_1_167.pdf |
 | 5% main residence: first 130 m² of buildable area, up to this value | EUR 350,000 | 2026 | https://www.cylaw.org/nomoi/enop/non-ind/2000_1_95/full.html (Fifth Schedule, Table Γ) |
 | 5% main residence: lost entirely if total value passes / total buildable area passes | EUR 475,000 / 190 m² | 2026 | https://www.cylaw.org/nomoi/enop/non-ind/2000_1_95/full.html (Fifth Schedule, Table Γ) |
 | Registration threshold, established business | EUR 15,600 (past 12 months or next 30 days) | 2026 | https://www.gov.cy/mof-tax/documents/eggrafi-akyrosi-f-p-a/eggrafes-mitrooy-f-p-a/ypochreosi-dikaioma-eggrafis-sto-mitroo-f-p-a/ |
@@ -283,10 +283,10 @@ expected:
 | Κ.Δ.Π. 168/2026 (0% on meat and fish, 6 Apr to 30 Sep 2026) | https://www.cylaw.org/KDP/data/2026_1_168.pdf | 2026-10-24 |
 | Κ.Δ.Π. 354/2026 (0% on meat and fish 1 Oct 2026 to 31 May 2027; bread, milk, coffee, sugar, baby food 12 Oct 2026 to 31 May 2027) | https://www.cylaw.org/KDP/data/2026_1_354.pdf | 2026-10-24 |
 | Κ.Δ.Π. 362/2026 (0% on baby milk, nappies, hygiene products, fruit and vegetables, 1 Jan to 31 Dec 2027) | https://www.cylaw.org/KDP/data/2026_1_362.pdf | 2026-10-24 |
-| Κ.Δ.Π. 363/2026 (9% on home solar systems) | https://www.cylaw.org/KDP/data/2026_1_363.pdf | 2026-10-24 |
+| Κ.Δ.Π. 363/2026, Official Gazette Αρ. 6053 of 16.10.2026: read for the new Twelfth Schedule para. 6 (home solar systems) | https://www.cylaw.org/KDP/data/2026_1_363.pdf | 2026-11-14 |
 | Κ.Δ.Π. 172/2026 (form to opt out of VAT on a commercial lease) | https://www.cylaw.org/KDP/data/2026_1_172.pdf | 2026-10-24 |
 | CyLaw index of 2026 regulatory acts (Κ.Δ.Π.) | https://www.cylaw.org/KDP/2026.html | 2026-10-24 |
-| Κ.Δ.Π. 82/2026 (9% household electricity from 1 Apr 2026) | https://www.cylaw.org/KDP/data/2026_1_82.pdf | 2026-10-24 |
+| Κ.Δ.Π. 82/2026, Official Gazette Αρ. 5998 of 20.2.2026: read for the new Twelfth Schedule para. 6 (household electricity tariffs 01, 02, 08, 56) and its 1.4.2026 to 31.3.2027 start | https://www.cylaw.org/KDP/data/2026_1_82.pdf | 2026-11-14 |
 | Κ.Δ.Π. 167/2026 (5% household electricity, readings 1 May 2026 to 31 Mar 2027) | https://www.cylaw.org/KDP/data/2026_1_167.pdf | 2026-10-24 |
 | Κ.Δ.Π. 102/2026 and 103/2026 (renovation and first establishment, from 1 Sep 2026) | https://www.cylaw.org/KDP/data/2026_1_102.pdf; https://www.cylaw.org/KDP/data/2026_1_103.pdf | 2026-10-24 |
 | Κ.Δ.Π. 221/2026 (Seventh Schedule wording) | https://www.cylaw.org/KDP/data/2026_1_221.pdf | 2026-10-24 |
