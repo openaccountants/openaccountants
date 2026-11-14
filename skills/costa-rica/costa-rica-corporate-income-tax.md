@@ -16,16 +16,17 @@ category: international
 tax_year: 2026
 tax_year_notes: "Fiscal period 1 January to 31 December 2026 (Ley 7092 art. 4); return due by 15 March 2027. Selected source reading on 2 November 2026."
 tier: 2
-last_updated: 2026-11-03
-version: 0.1
-review_status: pending_review
+last_updated: 2026-11-14
+version: 0.2
 depends_on:
   - corporate-income-tax-workflow-base
   - workflow-base
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+domain: corporate-tax
+type: computation
 ---
 
-# Costa Rica Corporate Income Tax Reference: Ordinary Domiciled Companies, 2026 v0.1
+# Costa Rica Corporate Income Tax Reference: Ordinary Domiciled Companies, 2026 v0.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -279,7 +280,7 @@ expected:
 
 | Source | URL | Read on |
 | --- | --- | --- |
-| S1. Ley 7092, Ley del Impuesto sobre la Renta, consolidated version 83 of 83 (SINALEVI): arts. 1 to 9 bis, 14, 15, 20 to 24 and 26 read in full | https://sinalevi.go.cr/ResultadosNormativa/Informacion?param1=10969&param2=148972&param3=1 | 2026-11-02 |
+| S1. Ley 7092, Ley del Impuesto sobre la Renta, consolidated version 83 of 83 (SINALEVI): arts. 1 to 9 bis, 14, 15, 20 to 24 and 26 read in full; art. 15 a) and b) reread 2026-11-14 | https://sinalevi.go.cr/ResultadosNormativa/Informacion?param1=10969&param2=148972&param3=1 | 2026-11-14 |
 | S2. Ley 7092 art. 8, article version 9 of 11 (before Ley 10657): inciso g) read | https://sinalevi.go.cr/ResultadosNormativa/Informacion?param1=10969&param2=144103&param3=3&param4=63824 | 2026-11-02 |
 | S3. Ley 10657, Ley de Cinematografía y Audiovisual: art. 32 read | https://sinalevi.go.cr/ResultadosNormativa/Informacion?param1=104196&param2=145503&param3=1 | 2026-11-02 |
 | S4. Decreto Ejecutivo 45333-H, 2026 bracket update: arts. 1 to 7 read in full | https://sinalevi.go.cr/ResultadosNormativa/Informacion?param1=105834&param2=148657&param3=1 | 2026-11-02 |
@@ -294,23 +295,3 @@ expected:
 | S13. Hacienda form, Solicitud de disminución o eliminación de pagos parciales: part 1 read | https://www.hacienda.go.cr/docs/FormularioSolicitudElimDismPP.pdf | 2026-11-02 |
 
 Not yet confirmed: the publication date and commencement of Ley 10392, and how its years of business activity apply to companies that began before it took effect; the order of use of several live loss vintages; the regulation's depreciation rates; the 2026 interest-limit percentage for a given company; arts. 2 bis to 2 quinquies and art. 2 b) tests; the art. 9 non-deductible items, which this file does not list; withholding rates creditable under art. 23 and CNPT art. 103 d); the 2026 salario base; the interest rate currently fixed under CNPT art. 57; CNPT arts. 38 and 81(2) and penalties on bases above 500 salarios base; the first-period estimate deadline for a company that starts after January; Hacienda's payment channels for the 2026 instalments and the 2027 return; TRIBU-CR form 102 box numbers; and whether Hacienda will move a weekend deadline in later years.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained in the
-[ryanduguid/openaccountants fork](https://github.com/ryanduguid/openaccountants).
-Check its quality tier, recorded review status and cited sources before use.
-Choose a practitioner whose credentials and engagement scope you have verified.
-The links below are optional upstream services; they do not publish or verify
-this fork's changes.
-
-- Upstream connection service: https://www.openaccountants.com/connect
-- Upstream accountant network: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
