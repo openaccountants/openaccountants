@@ -4,8 +4,8 @@ description: >
   Barbados employer payroll for 2026, PAYE and National Insurance. Gives the
   private sector NIS rates (employee 11.00%, employer 12.75% of insurable
   earnings), the 2026 ceiling of BBD 5,360 a month or BBD 1,238 a week, the
-  Resilience and Regeneration Fund of 0.25% each on gross earnings, PAYE at the
-  2026 rates of 11.5% and 27.5% after the BBD 25,000 allowance with tax codes,
+  Resilience and Regeneration Fund of 0.25% each on gross earnings, PAYE after the BBD 25,000
+  allowance with tax codes (2026 band rates held as not yet confirmed),
   and remittance by the 15th of the following month. Trigger on Barbados payroll,
   PAYE Barbados, NIS Barbados, NISSS, Resilience and Regeneration Fund. Built
   from BRA and NIS pages; not reviewed by an accountant.
@@ -47,12 +47,11 @@ Out of scope: government employees (categories P and T), apprentices, foreign em
 | Insurable earnings ceiling 2026 | BBD 5,360 a month | BBD 1,238 a week | Monthly from 1 January 2026; weekly from 5 January 2026 | NIS, increase in earnings ceiling 2026: https://www.nis.gov.bb/increase-in-earnings-ceiling-2026/ |
 | PAYE starting point | Over BBD 481 a week or BBD 2,083 a month | | | BRA, guide to PAYE: https://bra.gov.bb/Popular-Topics/Employing-People/Guide-to-PAYE |
 | PAYE remittance | | By the 15th of the month after deduction | Monthly PAYE return through TAMIS | same |
-| PAYE rates 2026 | 11.5% to BBD 50,000 taxable, 27.5% above | | After allowances (BBD 25,000 basic) | BRA, Policy Note OGC No. 001/2026: https://bra.gov.bb/attachment?file=Attachments%2FPolicy+Note+2026_Reduction+in+Personal+Income+Tax+Rates_April+2026.pdf&name=Policy+Note+2026_Reduction+in+Personal+Income+Tax+Rates_April+2026 |
 
 ## The base
 
 - **Insurable earnings** are capped at the ceiling; the Resilience and Regeneration Fund is on gross earnings, uncapped.
-- **PAYE** uses the employee's tax code from claimed allowances (250M for the BBD 25,000 basic allowance, monthly) and BRA's tax tables (effective income year 2020 instructions, with the 2026 rates).
+- **PAYE** uses the employee's tax code from claimed allowances (250M for the BBD 25,000 basic allowance, monthly) and BRA's tax tables (effective income year 2020 instructions; the 2026 band rates are under Not yet confirmed).
 - **Basic salary** for the PAYE upload is total remuneration less taxable allowances and benefits.
 - **Employee TINs** must be 13 digits on the monthly return.
 - The earlier version's note that employer components summed to 13.00% was wrong: NIS lists 12.75% for category R.
@@ -78,7 +77,7 @@ Social security agreements and non-resident employees: not covered; refer.
 
 ### Example 1: Monthly pay BBD 6,000 in 2026, standard allowance
 
-Insurable earnings capped at BBD 5,360: employee NIS 11% = BBD 589.60, employer 12.75% = BBD 683.40. Resilience and Regeneration Fund 0.25% of BBD 6,000 = BBD 15.00 each. PAYE: taxable BBD 6,000 - BBD 2,083.33 = BBD 3,916.67, all within the monthly 11.5% band of BBD 4,166.67: BBD 450.42.
+Insurable earnings capped at BBD 5,360: employee NIS 11% = BBD 589.60, employer 12.75% = BBD 683.40. Resilience and Regeneration Fund 0.25% of BBD 6,000 = BBD 15.00 each. PAYE: taxable BBD 6,000 - BBD 2,083.33 = BBD 3,916.67, all within the monthly lower band of BBD 4,166.67; the PAYE on it waits for the 2026 band rates (see Not yet confirmed).
 
 ```oa-check
 name: BB 2026 monthly payroll, gross 6000
@@ -91,13 +90,11 @@ steps:
   - nis_employer: min(gross, ceiling) * 0.1275
   - rrf_each: gross * 0.0025
   - taxable: gross - allowance_month
-  - paye: round(min(taxable, 4166.67) * 0.115 + max(taxable - 4166.67, 0) * 0.275, 2)
 expected:
   nis_employee: 589.60
   nis_employer: 683.40
   rrf_each: 15
   taxable: 3916.67
-  paye: 450.42
 ```
 
 ### Example 2: Employee over pensionable age or regular employee, same pay
@@ -136,5 +133,8 @@ expected:
 | NIS, increase in earnings ceiling 2026 (via Firecrawl): read in full | https://www.nis.gov.bb/increase-in-earnings-ceiling-2026/ | 2026-11-14 |
 | BRA, guide to PAYE: read for the threshold, tax codes, basic salary and remittance date | https://bra.gov.bb/Popular-Topics/Employing-People/Guide-to-PAYE | 2026-11-14 |
 | BRA, Policy Note OGC No. 001/2026: read for the 2026 rates and the monthly worked example | https://bra.gov.bb/attachment?file=Attachments%2FPolicy+Note+2026_Reduction+in+Personal+Income+Tax+Rates_April+2026.pdf&name=Policy+Note+2026_Reduction+in+Personal+Income+Tax+Rates_April+2026 | 2026-11-14 |
+| BRA, Income Tax Act legislation page: read for the list of amending Acts (latest 2025-30; no 2026 amending Act listed) | https://bra.gov.bb/About/Legislation-Regulations/Income-Tax-Act | 2026-11-14 |
+| Parliament of Barbados, bills and resolutions list: read for 2026 bills (no Income Tax (Amendment) Bill or Act, 2026 listed) | https://www.barbadosparliament.com/bills/ | 2026-11-14 |
+| Provisional Collection of Taxes Act, Cap. 85: read for s. 3 (provisional effect of a new tax or rate increase in budget proposals) | https://bra.gov.bb/attachment?file=Attachments%2fProvisional+Collection+of+Taxes+Act%2c+Cap.+85.pdf&name=Provisional+Collection+of+Taxes+Act%2c+Cap.+85 | 2026-11-14 |
 
-Not yet confirmed: the NIS payment due date (earlier version: 15th of the following month); penalties and interest on late PAYE and NIS; the NIS age range of 16 to 67 in the earlier version; the 2027 ceiling announced by NIS (not read).
+Not yet confirmed: the 2026 personal income tax rates: BRA's Policy Note OGC No. 001/2026 says BRA applies 11.5% (taxable income to BBD 50,000) and 27.5% (above) from income year 2026, down from 12.5% and 28.5%, following the 16 March 2026 budget, but no Income Tax (Amendment) Act, 2026 appears on BRA's Income Tax Act legislation page or on Parliament's bills list (both read 14 Nov 2026), and the Provisional Collection of Taxes Act, Cap. 85, s. 3 gives provisional effect only to a new tax or a rate increase, not a cut; the earlier 12.5% and 28.5% rates were not found in an enactment read for this version either, so confirm the rates with BRA before computing or filing; the NIS payment due date (earlier version: 15th of the following month); penalties and interest on late PAYE and NIS; the NIS age range of 16 to 67 in the earlier version; the 2027 ceiling announced by NIS (not read).

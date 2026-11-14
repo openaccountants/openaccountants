@@ -2,9 +2,9 @@
 name: bb-income-tax
 description: >
   Barbados personal income tax for income year 2026, for employees, pensioners
-  and the self-employed. Covers the new 2026 rates (11.5% on taxable income up to
-  BBD 50,000 above the BBD 25,000 personal allowance, 27.5% above, down from 12.5%
-  and 28.5%), who must file, the 30 April return in TAMIS, self-employed
+  and the self-employed. Covers the BBD 25,000 personal allowance (the 2026 band
+  rates in BRA's policy note are held as not yet confirmed until the amending
+  Act is found), who must file, the 30 April return in TAMIS, self-employed
   prepayments of 25% in June, September and December, PAYE, the reverse tax
   credit, NIS for the self-employed (17% to the BBD 64,320 ceiling plus 0.25%
   Resilience and Regeneration Fund) and withholding at 15% for non-treaty
@@ -46,9 +46,7 @@ Individuals liable to Barbados income tax under the Income Tax Act, Cap. 73, for
 
 | Item | Amount | Conditions | Source |
 |---|---|---|---|
-| Rate on taxable income up to BBD 50,000 | 11.5% | Income year 2026 onwards; income above BBD 25,000 up to BBD 75,000 (down from 12.5%) | BRA, Policy Note OGC No. 001/2026, reduction of personal income tax rates: https://bra.gov.bb/attachment?file=Attachments%2FPolicy+Note+2026_Reduction+in+Personal+Income+Tax+Rates_April+2026.pdf&name=Policy+Note+2026_Reduction+in+Personal+Income+Tax+Rates_April+2026 |
-| Rate on taxable income above BBD 50,000 | 27.5% | Income over BBD 75,000 with the standard allowance (down from 28.5%) | same |
-| Personal allowance used in BRA's examples and PAYE codes | BBD 25,000 | Each employed person starts with BBD 25,000 (code 250W or 250M) | same |
+| Personal allowance used in PAYE codes | BBD 25,000 | Each employed person starts with BBD 25,000 (code 250W or 250M) | BRA, guide to PAYE: https://bra.gov.bb/Popular-Topics/Employing-People/Guide-to-PAYE |
 | PAYE starting point | Wage or salary over BBD 481 a week or BBD 2,083 a month | Employees | BRA, guide to PAYE: https://bra.gov.bb/Popular-Topics/Employing-People/Guide-to-PAYE |
 | Who must file | Employees with annual income above BBD 25,000; contributory pensioners with income above BBD 75,000 (from income year 2025) | Return due 30 April of the following year in TAMIS | BRA, personal income tax: https://bra.gov.bb/Popular-Topics/Employed-Retired-Persons/PIT |
 | Self-employed prepayments | 25% of the prior year's tax in each of June, September and December | Based on the prior-year return; balance with the return | BRA, self-employment: https://bra.gov.bb/Popular-Topics/Self-Employment/ |
@@ -61,7 +59,7 @@ Individuals liable to Barbados income tax under the Income Tax Act, Cap. 73, for
 
 ```
 taxable income = assessable income - personal allowance and other allowances and deductions
-tax = 11.5% x min(taxable income, 50,000) + 27.5% x (taxable income - 50,000, not below 0)
+tax = band rates applied to taxable income (2026 band rates: see Not yet confirmed)
 self-employed NIS = 17% x min(insurable earnings, 64,320) + 0.25% x gross earnings
 ```
 
@@ -118,35 +116,31 @@ Penalties for late filing and late payment were not confirmed on a BRA page read
 
 ## Two worked examples that recompute
 
-### Example 1: Employee on BBD 60,000 and BBD 100,000 in 2026 (BRA's own examples)
+### Example 1: Employee on BBD 60,000 and BBD 100,000 in 2026, taxable income
 
-At BBD 60,000, taxable income BBD 35,000 at 11.5% = BBD 4,025.00. At BBD 100,000, taxable income BBD 75,000: BBD 5,750.00 at 11.5% plus BBD 6,875.00 at 27.5% = BBD 12,625.00. Under the 2025 rates the second case would have cost BBD 13,375.00.
+At BBD 60,000, taxable income after the BBD 25,000 allowance is BBD 35,000, all in the lower band. At BBD 100,000, taxable income is BBD 75,000: BBD 50,000 in the lower band and BBD 25,000 in the upper band. The tax on each band waits for the 2026 band rates (see Not yet confirmed).
 
 ```oa-check
-name: BB 2026 employee tax at 60k and 100k, and the 2025 comparison
+name: BB 2026 employee taxable income and band split at 60k and 100k
 inputs:
   pay_a: 60000
   pay_b: 100000
   allowance: 25000
 steps:
   - taxable_a: pay_a - allowance
-  - tax_a: min(taxable_a, 50000) * 0.115 + max(taxable_a - 50000, 0) * 0.275
   - taxable_b: pay_b - allowance
-  - tax_b: min(taxable_b, 50000) * 0.115 + max(taxable_b - 50000, 0) * 0.275
-  - tax_b_2025: min(taxable_b, 50000) * 0.125 + max(taxable_b - 50000, 0) * 0.285
-  - saving_b: tax_b_2025 - tax_b
+  - lower_band_b: min(taxable_b, 50000)
+  - upper_band_b: max(taxable_b - 50000, 0)
 expected:
   taxable_a: 35000
-  tax_a: 4025
   taxable_b: 75000
-  tax_b: 12625
-  tax_b_2025: 13375
-  saving_b: 750
+  lower_band_b: 50000
+  upper_band_b: 25000
 ```
 
 ### Example 2: Self-employed, profit BBD 80,000: is NIS capped?
 
-Insurable earnings are capped at BBD 64,320, so NIS is 17% x BBD 64,320 = BBD 10,934.40, plus 0.25% Resilience and Regeneration Fund on the full BBD 80,000 = BBD 200. Income tax on taxable income BBD 55,000 = BBD 5,750 + BBD 1,375 = BBD 7,125.
+Insurable earnings are capped at BBD 64,320, so NIS is 17% x BBD 64,320 = BBD 10,934.40, plus 0.25% Resilience and Regeneration Fund on the full BBD 80,000 = BBD 200. Taxable income for income tax is BBD 55,000; the tax on it waits for the 2026 band rates (see Not yet confirmed).
 
 ```oa-check
 name: BB 2026 self-employed NIS cap and income tax
@@ -158,12 +152,10 @@ steps:
   - nis: min(profit, ceiling) * 0.17
   - rrf: profit * 0.0025
   - taxable: profit - allowance
-  - income_tax: min(taxable, 50000) * 0.115 + max(taxable - 50000, 0) * 0.275
 expected:
   nis: 10934.40
   rrf: 200
   taxable: 55000
-  income_tax: 7125
 ```
 
 ## Ask the client first
@@ -179,7 +171,10 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| BRA, Policy Note OGC No. 001/2026: read in full for the 2026 rates and the worked examples | https://bra.gov.bb/attachment?file=Attachments%2FPolicy+Note+2026_Reduction+in+Personal+Income+Tax+Rates_April+2026.pdf&name=Policy+Note+2026_Reduction+in+Personal+Income+Tax+Rates_April+2026 | 2026-11-14 |
+| BRA, Policy Note OGC No. 001/2026: read in full for the 2026 rates BRA says it applies and its worked examples (an administrative note, not an enactment) | https://bra.gov.bb/attachment?file=Attachments%2FPolicy+Note+2026_Reduction+in+Personal+Income+Tax+Rates_April+2026.pdf&name=Policy+Note+2026_Reduction+in+Personal+Income+Tax+Rates_April+2026 | 2026-11-14 |
+| BRA, Income Tax Act legislation page: read for the list of amending Acts (latest 2025-30; no 2026 amending Act listed) | https://bra.gov.bb/About/Legislation-Regulations/Income-Tax-Act | 2026-11-14 |
+| Parliament of Barbados, bills and resolutions list: read for 2026 bills (no Income Tax (Amendment) Bill or Act, 2026 listed) | https://www.barbadosparliament.com/bills/ | 2026-11-14 |
+| Provisional Collection of Taxes Act, Cap. 85: read for s. 3 (provisional effect of a new tax or rate increase in budget proposals) | https://bra.gov.bb/attachment?file=Attachments%2fProvisional+Collection+of+Taxes+Act%2c+Cap.+85.pdf&name=Provisional+Collection+of+Taxes+Act%2c+Cap.+85 | 2026-11-14 |
 | BRA, personal income tax page: read for who must file and the 30 April date | https://bra.gov.bb/Popular-Topics/Employed-Retired-Persons/PIT | 2026-11-14 |
 | BRA, guide to PAYE: read for the PAYE threshold, BBD 25,000 basic allowance, tax codes and the 15th remittance date | https://bra.gov.bb/Popular-Topics/Employing-People/Guide-to-PAYE | 2026-11-14 |
 | BRA, self-employment page: read for the 25% prepayments | https://bra.gov.bb/Popular-Topics/Self-Employment/ | 2026-11-14 |
@@ -188,4 +183,4 @@ expected:
 | NIS, contribution rates and earnings ceilings (via Firecrawl; the site blocks scripts): read for the self-employed and private sector tables, the Resilience and Regeneration Fund and the ceiling history | https://www.nis.gov.bb/contribution-rates/ | 2026-11-14 |
 | NIS, increase in earnings ceiling 2026 (via Firecrawl): read in full | https://www.nis.gov.bb/increase-in-earnings-ceiling-2026/ | 2026-11-14 |
 
-Not yet confirmed: the pensioner allowance of BBD 40,000 and spouse allowance of BBD 3,000; the 182-day residence test and the treatment of resident non-domiciled persons; 15% flat tax on residential rental income; 15% final withholding on local interest over BBD 100 and local dividends; the 50% royalty exemption; the deduction caps listed under The base; late filing (earlier version: BBD 500 plus 5%), late payment (5%) and 1% a month interest; the salaried 50% / 50% payment schedule (30 April, 30 September); the earlier version's non-resident withholding rates of nil on interest and royalties from 1 April 2019 and 25% on dividends from untaxed profits; whether self-employed NIS is deductible; stamp duty rates; whether the 2026 rate change has been enacted by an amendment act (BRA's policy note applies it from income year 2026).
+Not yet confirmed: the pensioner allowance of BBD 40,000 and spouse allowance of BBD 3,000; the 182-day residence test and the treatment of resident non-domiciled persons; 15% flat tax on residential rental income; 15% final withholding on local interest over BBD 100 and local dividends; the 50% royalty exemption; the deduction caps listed under The base; late filing (earlier version: BBD 500 plus 5%), late payment (5%) and 1% a month interest; the salaried 50% / 50% payment schedule (30 April, 30 September); the earlier version's non-resident withholding rates of nil on interest and royalties from 1 April 2019 and 25% on dividends from untaxed profits; whether self-employed NIS is deductible; stamp duty rates; the 2026 personal income tax rates: BRA's Policy Note OGC No. 001/2026 says BRA applies 11.5% (taxable income to BBD 50,000) and 27.5% (above) from income year 2026, down from 12.5% and 28.5%, following the 16 March 2026 budget, but no Income Tax (Amendment) Act, 2026 appears on BRA's Income Tax Act legislation page or on Parliament's bills list (both read 14 Nov 2026), and the Provisional Collection of Taxes Act, Cap. 85, s. 3 gives provisional effect only to a new tax or a rate increase, not a cut; the earlier 12.5% and 28.5% rates were not found in an enactment read for this version either, so confirm the rates with BRA before computing or filing.

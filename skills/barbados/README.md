@@ -17,7 +17,7 @@ partial:
 
 # Barbados: tax pack
 
-The income year is the calendar year. The Barbados Revenue Authority (BRA) collects income tax, corporation tax, VAT and PAYE through TAMIS; the National Insurance and Social Security Service (NISSS) collects NIS. Amounts are BBD. This map covers 2026, including the personal rate cut to 11.5% and 27.5% from income year 2026.
+The income year is the calendar year. The Barbados Revenue Authority (BRA) collects income tax, corporation tax, VAT and PAYE through TAMIS; the National Insurance and Social Security Service (NISSS) collects NIS. Amounts are BBD. This map covers 2026. BRA's policy note applies a personal rate cut to 11.5% and 27.5% from income year 2026; no amending Act was found on 14 Nov 2026, so the skills hold those rates under Not yet confirmed.
 
 ## Domains
 
