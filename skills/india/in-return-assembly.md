@@ -289,10 +289,10 @@ The rules are in section 58 of the [Income-tax Act 2025](https://egazette.gov.in
 | Total liability | Return computation | Tax on total income plus surcharge plus cess; show s.423/424/425 interest and s.428 fees separately, then add for total cash payable |
 | Payable or refund | Liability minus (advance tax plus TDS plus self-assessment tax) | Derived tax balance only: positive = tax payable; negative = provisional refund. Add separately computed interest/fees; allocate s.266(3) payments to fees first, then interest, then tax; unresolved credits are not a final refund |
 
-- **Section 424 (default).** A person liable to advance tax under section 404 who paid none, or paid less than 90% of "assessed tax", pays simple interest of 1% for every month or part of a month from 1 April following the tax year to the date total income is determined under section 270(1), or to the completion of regular assessment where one is made. Interest is on the assessed tax where nothing was paid, or on the shortfall. "Assessed tax" is tax on the total income as reduced by TDS and tax collected at source, among other credits listed in section 424(2). Rates in the Act table above.
+- **Section 424 (default).** A person liable to advance tax under section 404 who paid none, or paid less than 90% of "assessed tax", pays simple interest of 1% for every month or part of a month from 1 April following the tax year to the date total income is determined under section 270(1), or to the completion of regular assessment where one is made. Interest is on the assessed tax where nothing was paid, or on the shortfall. "Assessed tax" is tax on the total income as reduced by TDS and tax collected at source, among other credits listed in section 424(2). Under s.424(3), self-assessment or another payment before determination/assessment ends interest on the paid tax portion at that payment date; recompute the remainder thereafter. Apply s.266(3) fees first, interest next, tax last, rather than treating the whole cash payment as tax. Rates in the Act table above.
 - **Section 425 construction hold.** The s.425(1) table shows ordinary cumulative shortfalls at 15%,45%,75%,100% and 3%,3%,3%,1% interest respectively. Section 425(2) says no subsection 1 interest if June paid at least 12% or September at least 36%, but prints no connector between clauses. Section 425(3) includes both serial 1/3 presumptive assessees and the further phrase "or, who is liable to pay advance tax under section 404". The latter wording creates a material interaction with the ordinary schedule. Preserve these statutory provisions and the conventional June/September-only interpretation as a conditional working, not a resolved rule. Use `in-advance-tax`'s explicit hold; do not deliver a final ordinary-case s.425 amount until the construction is resolved against authoritative text/guidance. No generic software assumption settles it. [s.425(1)-(6)](https://egazette.gov.in/WriteReadData/2025/265620.pdf).
 - **Section 425(3), presumptive.** For a serial 1/3 case with a March shortfall the provision states 1% on the shortfall; complete payment by 15March avoids that shortfall. The ordinary-case scope remains held as above.
-- Section 425(4): no interest under 425(1) or (3) on a shortfall caused by under-estimating capital gains, dividends, or business or profession income "accruing or arising for the first time", or winnings under section 2(49)(n), if the tax on it is paid in the remaining instalments or by 31 March.
+- Section 425(4): no interest under 425(1) or (3) on a shortfall caused by under-estimating capital gains, dividends, or business or profession income "accruing or arising for the first time", or winnings under section 2(49)(n), if the tax on it is paid in the remaining instalments, if any, or by 31 March where none remains.
 - **Section 423 (late return).** Interest of 1% a month on the tax on total income as reduced by tax paid, for each month from the day after the due date (section 423(2) Table).
 
 **Advance tax schedule, section 408**
@@ -314,7 +314,7 @@ The rules are in section 58 of the [Income-tax Act 2025](https://egazette.gov.in
 | --- | --- |
 | Every TDS entry on the tax credit statement and Form No. 168 | The matching income must appear in the return |
 | TDS credit claimed in the return | Must equal the statement; explain every difference |
-| Section of deduction | Payments from 1 April 2026 are deducted under a table item of section 393; the Department warns that quoting "old section numbers such as 194C, 194J, or 194H" for such transactions "may result in system -level validation errors" ([tax payments FAQs](https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/tax-payments-faq)) |
+| Section of deduction | Where the earlier credit/payment event is on or after 1 April 2026, deduct under the applicable section 393 item; an earlier March credit followed by April payment remains under the older law. Current transactions use section 393; the Department warns that quoting "old section numbers such as 194C, 194J, or 194H" for such transactions "may result in system -level validation errors" ([tax payments FAQs](https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/tax-payments-faq)) |
 | Tax collected at source entries | Credit against the liability, if any |
 
 **If they differ:** common causes are a deductor's late TDS statement, a wrong PAN quoted, or income booked in a different year. Flag for the reviewer with the specific entries. A missing entry is corrected by the deductor.
@@ -460,7 +460,7 @@ Planning only under currently enacted law; recheck Finance Act 2027 and notifica
 
 ### Ongoing:
 1. Issue GST tax invoices for all taxable supplies
-2. Keep books of account (actual profit) or records of receipts (presumptive)
+2. Keep the books required by s.62 and the applicable rules for actual or presumptive cases; maintain receipt records too, without assuming a blanket books waiver for presumptive professions
 3. File GSTR-3B and GSTR-1 on time
 4. Pay advance tax by each due date
 5. Collect TDS certificates from clients
