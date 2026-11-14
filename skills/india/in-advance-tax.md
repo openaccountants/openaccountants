@@ -41,7 +41,7 @@ This skill covers advance tax in India: who must pay it during the year, the ins
 6. Pay each instalment through e-Pay Tax with a CRN under the 2025 Act, tax year 2026-27, advance tax; keep the Challan Receipt (https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/e-pay-tax).
 7. Re-estimate before each date and adjust the remaining instalments (section 406(2)). If an Assessing Officer's order arrives, follow section 407 and use Form No. 152 for a lower estimate (https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-03/En-Notified-IT-Rules-2026-20-03-2026.pdf).
 8. After the year: prepare a conditional section 425 interest working on the tax due on returned income for professional confirmation of the constructions in section 4.4; compute section 424 interest on assessed tax if advance tax paid by 31 March is below the share in the Section 1 table. Pay any balance with interest as self-assessment tax under section 266 before filing (https://egazette.gov.in/WriteReadData/2025/265620.pdf).
-9. File by the section 263(1)(c) due date that fits the client, or section 423 interest applies where its statutory tax base remains positive after the tax-paid reductions (https://egazette.gov.in/WriteReadData/2026/271439.pdf).
+9. File by the section 263(1)(c) due date that fits the client, or section 423 interest applies where its statutory tax base remains positive after the tax-paid reductions (https://egazette.gov.in/WriteReadData/2025/265620.pdf ; https://egazette.gov.in/WriteReadData/2026/271439.pdf).
 
 
 ### Section 1: Quick reference
@@ -54,7 +54,7 @@ Read this whole section before computing anything. Internal Tier 1/2/3 reference
 | Jurisdiction code | IN | https://egazette.gov.in/WriteReadData/2025/265620.pdf |
 | Tax | Advance tax on income tax (Income-tax Act, 2025, Chapter XIX-C) | https://egazette.gov.in/WriteReadData/2025/265620.pdf |
 | Primary legislation | Income-tax Act, 2025 (30 of 2025): sections 403 to 410 (liability, computation, payment, instalments, credit); sections 423, 424 and 425 (interest) | https://egazette.gov.in/WriteReadData/2025/265620.pdf |
-| Supporting legislation | Section 58 (presumptive income); section 266 (self-assessment tax); section 263 as substituted by the Finance Act, 2026 (return due dates); Income-tax Rules, 2026, rule 223 (Form No. 152) | https://egazette.gov.in/WriteReadData/2026/271439.pdf ; https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-03/En-Notified-IT-Rules-2026-20-03-2026.pdf |
+| Supporting legislation | Section 58 (presumptive income); section 266 (self-assessment tax); section 263 as substituted by the Finance Act, 2026 (return due dates); Income-tax Rules, 2026, rule 223 (Form No. 152) | https://egazette.gov.in/WriteReadData/2025/265620.pdf ; https://egazette.gov.in/WriteReadData/2026/271439.pdf ; https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-03/En-Notified-IT-Rules-2026-20-03-2026.pdf |
 | Tax authority | Income Tax Department | https://egazette.gov.in/WriteReadData/2025/265620.pdf |
 | Payment and filing portal | e-Filing portal, e-Pay Tax service | https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/e-pay-tax |
 | Tax year | Tax year 2026-27: 1 April 2026 to 31 March 2027 | https://egazette.gov.in/WriteReadData/2025/265620.pdf |
@@ -93,7 +93,7 @@ The Gazette prints multi-column tables. Quotes above follow the operative column
 
 **Return due dates (section 263(1)(c) as substituted by the Finance Act, 2026)**
 
-For tax year 2026-27 these dates fall in 2027. They matter here because section 266 self-assessment tax is paid before the return, and section 423 interest runs from the due date where its statutory tax base remains positive after tax-paid reductions.
+For tax year 2026-27 these dates fall in 2027. They matter here because section 266 self-assessment tax is paid before the return, and section 423 interest runs from the due date where its statutory tax base remains positive after tax-paid reductions (https://egazette.gov.in/WriteReadData/2025/265620.pdf).
 
 | Who | Due date | Note (verbatim) | Official source |
 | --- | --- | --- |---|
