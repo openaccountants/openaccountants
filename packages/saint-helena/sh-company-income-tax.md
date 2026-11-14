@@ -2,17 +2,18 @@
 name: sh-company-income-tax
 description: >
   Saint Helena island company income tax for tax year 2026 (1 April 2026 to 31 March 2027). Covers the 25% standard rate, the 15% qualifying-production rate, dividends, capital gains, residence, registration, annual filing on the P50 company return, instalments, penalties, depreciation and the investment tax credit. Use for company tax, corporation tax, company return or instalment questions on St Helena. Does not apply to Ascension or Tristan da Cunha.
-version: 0.3
+version: 0.4
 jurisdiction: SH
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
+type: computation
 ---
 
-# Saint Helena island: company income tax v0.3
+# Saint Helena island: company income tax v0.4
 
 > **General reference only.** This skill is general tax reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts. It covers Saint Helena island only, not Ascension or Tristan da Cunha, which have separate laws.
 

@@ -1,19 +1,20 @@
 ---
 name: eg-transfer-pricing
 description: Use this skill whenever asked about Egyptian transfer pricing for tax year 2026, for resident companies, permanent establishments of non-resident companies and Egyptian-parented groups with domestic or cross-border related-party dealings. Covers the arm's length rule in Income Tax Law 91 of 2005 art. 30 and executive regulation arts. 38 to 40, the related-person definition (art. 1 as replaced by Law 30 of 2023), the master file, local file and country-by-country report under Unified Tax Procedures Law 206 of 2020 arts. 12 and 13 and its executive regulations, the 1%, 2% and 3% charges and their 3% cap, advance pricing agreements, the debt to equity limit and interest-rate cap that hit related-party loans. Trigger on "Egypt TP", "Egypt transfer pricing", "Master File Egypt", "Local File Egypt", "CbCR Egypt", "تسعير المعاملات", "الأشخاص المرتبطة", "الملف المحلى". ALWAYS read this skill before touching any Egypt TP work.
-version: 0.2
+version: 0.3
 jurisdiction: EG
 tax_year: 2026
-last_updated: 2026-11-02
+last_updated: 2026-11-14
 depends_on:
   - transfer-pricing-workflow-base
 category: transfer-pricing
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: transfer-pricing
+type: situation-rules
 ---
 
-# Egypt Transfer Pricing (تسعير المعاملات بين الأشخاص المرتبطة) Skill v0.2
+# Egypt Transfer Pricing (تسعير المعاملات بين الأشخاص المرتبطة) Skill v0.3
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 

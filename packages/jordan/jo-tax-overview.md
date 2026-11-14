@@ -1,14 +1,15 @@
 ---
 name: jo-tax-overview
 description: "Conditional overview of Jordan tax sources for a 2026 refresh. Routes individual income tax, company tax, General Sales Tax and social security questions to the existing detailed Jordan Guides. Gives source-text headline rates and calendar illustrations with the conditions in those Guides. All source-currentness and filing-procedure holds carry through to this overview. Includes two executable arithmetic examples for a standard company and an ordinary full-coverage employee. Use for Jordan tax overview research, taxes in Jordan, ISTD, social security and the Jordan tax calendar. Do not treat the target tax year as clearance of a current filing position."
-version: 1.2
+version: 1.3
 jurisdiction: JO
 category: international
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
+type: situation-rules
 ---
 
 # Jordan Tax Overview

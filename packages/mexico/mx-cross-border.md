@@ -6,8 +6,9 @@ jurisdiction: MX
 category: cross-border
 tax_year: 2026
 tier: 2
-last_updated: 2026-11-05
-version: 0.4
+last_updated: 2026-11-14
+version: 0.5
+type: situation-rules
 ---
 
 # Mexico cross-border (non-resident income, Title V LISR)
