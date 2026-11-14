@@ -7,360 +7,166 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/israel-vat"
   jurisdiction: "IL"
   tax_year: "2026"
-  last_updated: "2026-11-03"
+  last_updated: "2026-11-14"
 ---
 
-# Israel VAT
+# Israel: VAT registration, transaction review and returns
 
-## Section 1: Quick reference
+## Scope
 
-**Quick reference**
+Prepare a documented Israeli Ma'am working paper for review by an Israel-licensed CPA. This covers ordinary dealers outside Eilat in 2026, not an authorization to file. Distinguish Osek Murshe, Osek Patur, financial institution and non-profit status before classifying supplies. The latest complete guidance read is the 2025 rights guide's VAT annex, explicitly updated for several January/June 2026 figures; other annual forms/extensions remain subject to current notices.
 
-| Field | Value | Source |
-| --- | --- | --- |
-| Country | Israel (מדינת ישראל) | |
-| Tax | Ma'am (מס ערך מוסף: Value Added Tax) | |
-| Currency | ILS (Israeli New Shekel: ₪) | |
-| Standard rate | 18% as at January 2026 (was 17% before 1 January 2025) | https://www.gov.il/BlobFolder/generalpage/income-tax-guide-knowyourright/he/Guides_IncomeTax_da-2025.pdf (PDF p.140: "as at January 2026 the VAT rate is 18%") |
-| Reduced rate | unverified: 0% on exports, specific agricultural produce, tourism services to non-residents | unverified |
-| Exempt | unverified: financial services, insurance, residential rent (if not commercial), medical services | unverified |
-| Exempt dealer (Osek Patur) ceiling | ILS 122,833 expected annual turnover as at January 2026, updated once a year; below this a dealer can be classed "Osek Patur". Some professions (for example doctors, architects, bookkeepers, VAT Registration Regulations reg. 13) must register as Osek Murshe whatever the turnover | https://www.gov.il/BlobFolder/generalpage/income-tax-guide-knowyourright/he/Guides_IncomeTax_da-2025.pdf (PDF pp.139-140, VAT annex s.4) |
-| Small business | Osek Murshe (עוסק מורשה): registered dealer filing periodic returns | |
-| Tax authority | Israel Tax Authority (ITA: רשות המיסים בישראל) | |
-| Filing portal | Shaam Online: https://www.misim.gov.il | |
-| Return form | unverified: Doch Ma'am (דוח מע"מ: Form PCN83 / PCN874) | unverified |
-| Filing frequency | Two-monthly if turnover in the determining year is up to ILS 1,775,000; monthly above ILS 1,775,000 (amount as at 1 January 2026, updated once a year) | https://www.gov.il/BlobFolder/generalpage/income-tax-guide-knowyourright/he/Guides_IncomeTax_da-2025.pdf (PDF p.141, VAT annex s.9) |
-| Deadline | Within 15 days after the end of the reporting period | https://www.gov.il/BlobFolder/generalpage/income-tax-guide-knowyourright/he/Guides_IncomeTax_da-2025.pdf (PDF p.141, VAT annex s.9) |
-| Tax invoices | A registered dealer may issue a Heshbonit Mase (חשבונית מס) and must do so when the customer asks. unverified: the ILS 305 figure in earlier versions | https://www.gov.il/BlobFolder/generalpage/income-tax-guide-knowyourright/he/Guides_IncomeTax_da-2025.pdf (PDF p.140, VAT annex s.7); ILS 305 unverified |
-| Contributor | Open Accountants Community | |
-| Validated by | Pending: requires sign-off by Israel-licensed CPA (רואה חשבון) | |
-| Skill version | 2.1 | |
+| Quick reference | Condition | Official source |
+|---|---|---|
+| Standard VAT | 18% from 1 January 2025, subject to place, liability and tax point | ITA Interpretation01/2025, https://www.gov.il/BlobFolder/policy/vat_11/he/vat_represent-info-051224-2.pdf |
+| Osek Patur | Turnover across all businesses does not exceed NIS 122,833 in 2026; compulsory Murshe professions under registration reg.13 override turnover | VAT Law s.1 and rights guide reg.13 explanation, https://www.btl.gov.il/Laws1/00_0022_000000.pdf |
+| Input-document time limit | Generally 6 months from lawful invoice, import declaration or approved document; statutory conditions apply | VAT Law s.38(a), https://www.btl.gov.il/Laws1/00_0022_000000.pdf |
+| Invoice allocation | No input deduction for an invoice above NIS 10,000 before VAT from 1 January 2026, above NIS 5,000 from 1 June 2026, without the required allocation number | Rights guide VAT annex s.8; VAT Law ss.38/47, https://www.gov.il/BlobFolder/generalpage/income-tax-guide-knowyourright/he/Guides_IncomeTax_da-2025.pdf |
 
-### Key return form fields
+## Ask the client first
 
-**Key return form fields**
+Obtain the registration certificate and taxpayer/Osek number, assigned reporting periods, all business bank statements, issued sales invoices/credit notes, suppliers' lawful tax invoices and registration status, prior return and assessment/credit position, customs import declarations in the dealer's name, export releases, service contracts and actual beneficiaries, tourist status/stay records, property leases and vehicle licences/use logs. Ask for foreign invoices, currency conversion evidence, fixed-asset records and mixed/private use. A bank narration or payment currency is evidence to match, not a tax classification.
 
-| Field | Meaning |
-| --- | --- |
-| Iska (עסקה) | Output tax base: taxable supplies at 18% |
-| Yetsia (יציאה) | Exports / zero-rated supplies |
-| Pator (פטור) | Exempt supplies |
-| Totchaot (תשומות) | Input tax on purchases |
-| Maam Letashlum (מע"מ לתשלום) | Net Ma'am payable (Output − Input) |
-| Yiteret Totchaot (יתרת תשומות) | Excess input tax carried forward |
-| Mechira LeZar (מכירה לזר) | Sale to foreign resident (zero-rated tourism) |
+## The method, step by step
 
-### Conservative defaults
+### Establish registration, place and tax point
 
-**Conservative defaults**
+Register by business commencement; identify the correct status and any compulsory Murshe profession, including doctors, architects, technicians and bookkeepers under reg.13. A Patur is registered, generally exempt from periodic VAT payments/returns, but s.31(3) excludes its real-estate sales and specified equipment sales where input tax was deducted; review those before using the ordinary exemption. It cannot issue a tax invoice or deduct input VAT, and reports the preceding calendar year's turnover by 31 January. Seek reclassification if turnover exceeds the ceiling. Patur is not an income-tax exemption ([rights guide VAT annex](https://www.gov.il/BlobFolder/generalpage/income-tax-guide-knowyourright/he/Guides_IncomeTax_da-2025.pdf)).
 
-| Ambiguity | Default |
-| --- | --- |
-| Unknown rate on a sale | 18% standard |
-| Unknown whether export documentation complete | Treat as domestic 18% |
-| Unknown business-use % (vehicle, phone, home) | 0% input credit |
-| Unknown whether Heshbonit Mase issued | No input credit until confirmed |
-| Financial service vs professional service | Treat as professional: 18% |
-| Residential rent vs commercial | Treat as exempt until lease reviewed |
-| Foreign digital service (B2B) | unverified: buyer self-assesses under reverse charge (see Example 4) |
+A service is treated as supplied in Israel under s.15 where the supplier's business is in Israel, the recipient is a defined Israeli resident/entity, or it concerns Israeli property. Determine the statutory tax point rather than using bank date alone. Issued tax invoices must be included even if consideration has not arrived where the applicable reporting rule requires it. Do not assume every cash receipt is VAT-inclusive taxable turnover ([VAT Law ss.15, 22-29, 69](https://www.btl.gov.il/Laws1/00_0022_000000.pdf); rights guide VAT annex).
 
-### Red flag thresholds
+### Classify each supply
 
-**Red flag thresholds**
+The standard rate, zero rating and exemption have different input-tax consequences. Under s.30(a)(1), goods exports, excluding s.33 goods, need a released export declaration or Director-approved document. Section 30(c) defines the relevant foreign resident as outside Israel with no business or activity in Israel. Under s.30(a)(5), a foreign customer does not establish zero rating if the contracted service is actually also supplied to an Israeli resident/entity; the customs-value exception refers to Customs Ordinance ss.129-133T and prescribed exclusions require review. Hotel accommodation of a statutory tourist falls under s.30(a)(8)(a), including only the prescribed incidental services. Regulation12 requires transaction price/payment method/currency recorded in the books, a written agreement or other document confirming details, and for tourist supplies the tourist's name, permanent address, passport number and an invoice detailing the service. Foreign payment or a passport copy alone does not prove all tourist/document conditions. International travel rights have s.30(a)(10), rather than a blanket rate for every airline bill ([VAT Law s.30](https://www.btl.gov.il/Laws1/00_0022_000000.pdf)).
 
-| Threshold | Value |
-| --- | --- |
-| HIGH single transaction | ILS 100,000 |
-| HIGH tax delta on single conservative default | ILS 17,000 |
-| MEDIUM counterparty concentration | >40% of output or input |
-| MEDIUM conservative default count | >4 per return |
-| LOW absolute net Ma'am position | ILS 250,000 |
+Residential letting for no more than 25 years is exempt under s.31(1), except hotel accommodation; review actual residential use and tenant/entity circumstances. Do not label all financial, insurance, medical or educational suppliers exempt: the supplier's statutory registration and the particular supply matter. Private doctors can be compulsorily Murshe even below the turnover ceiling. Specific agricultural produce, Eilat, diamonds/precious metals and special schemes need their operative rules before use ([VAT Law s.31](https://www.btl.gov.il/Laws1/00_0022_000000.pdf); rights guide reg.13 explanation).
 
-## Section 2: Required inputs and refusal catalogue
+### Compute import VAT and foreign-service liability
 
-### Required inputs
+For ordinary goods imports, s.11(a) uses the customs value under Customs Ordinance ss.129-134A plus customs duty and other applicable import taxes/levies, with the special s.11(b)/(c) cases separately checked. Use the accepted customs declaration, valuation and currency basis; this is import VAT paid through customs, not an automatic service reverse charge ([VAT Law s.11](https://www.btl.gov.il/Laws1/00_0022_000000.pdf)).
 
-- **Required inputs before starting Israel Ma'am work**: 1. Osek number (מספר עוסק: 9-digit taxpayer ID) and registration certificate 2. Bimonthly bank statements in ILS (all business accounts) 3. Heshbonit Mase (tax invoices) from all suppliers: must include supplier's Osek number 4. Sales invoices issued (Heshbonit Mase or Heshbonit Kala for amounts below ILS 305) 5. Prior period Doch Ma'am (for carried-forward excess input credit) 6. Import documents from Customs (ASYCUDA / import declarations) for imported goods 7. Details of zero-rated tourism transactions (passports, foreign payment evidence)
+ITA's published Position 02/2016, reproduced in its 2024 positions list, explains that imported services with an Israeli consumption/property link are taxable under s.15(a). Under VAT reg.6D, the buyer pays unless it holds an invoice for the transaction. A foreign supplier's brand/local marketing name does not settle invoice issuer or liability. Input deduction is separately subject to ss.38/41 and is not allowed merely because output tax is self-assessed; the position specifically excludes deduction for service imports consumed in Eilat. Obtain CPA confirmation of invoice/self-invoicing mechanics and actual use before filing ([ITA position 02/2016](https://www.gov.il/BlobFolder/policy/tax-report-station-2024/he/IncomeTax_ReportStation_IncomeTax_ReportStation_2024_5.pdf)).
 
-### Refusal catalogue
+### Substantiate the input claim
 
-- **Items requiring escalation to licensed CPA**: Refuse and escalate to a licensed CPA (רואה חשבון) for: - Partial exemption (Alut Yechusit: עלות יחסית): businesses with mixed exempt/taxable - Real estate Ma'am transactions (Mas Rechisha: complex exemptions on property) - Ma'am group registration (Kvutzat Osek: עוסק קבוצה) - Designated area supplies (Eilat free zone: zero-rated) - Diamond and precious metal special scheme - Ma'am on long-term contracts and construction - Retroactive registration for Osek Patur transitioning to Osek Murshe
+Use a lawful tax invoice, import declaration or approved document in the dealer's name, within the statutory time limit and for taxable business supplies, including zero-rated supplies; exempt/private use does not qualify. Check required allocation numbers and credit-note adjustments. Section 38(a2) can deny input after the specified penalized cash-law violation unless the Director is satisfied lawful tax was paid. Sections 40/40A have a documented pre-registration setup exception, not a blanket pre-registration credit. Separate fixed-asset input VAT from other inputs ([VAT Law ss.38, 41, 43](https://www.btl.gov.il/Laws1/00_0022_000000.pdf)).
 
-## Section 3: Supplier pattern library
+Private passenger-car purchase input VAT is generally blocked under reg.14, even for a salesperson. Regulation 14(b)(2)(a) separately permits qualifying vehicle-dealer inventory where the main business is vehicle sales and the car is unused/not intended for use except sale. Other exceptions require exclusive qualifying driving-school, vehicle-hire, passenger-transport or tour-business use. A commercial vehicle over 3,500 kg must also be outside the private/similar-fourth-schedule exclusion. Running costs differ: regulation 18 generally uses actual taxable-use proportion or the Director-determined ratio. Only where mixed use is indeterminate and the Director has not determined the ratio do the fallback fractions apply: 2/3 where mainly business, 1/4 where mainly non-business. Verify registration/use, not the invoice label. Regulation 15 blocks specified mixed residential-home purchase/build/service inputs; regulation 15A separately governs employee-benefit inputs; regulation 16 blocks hospitality except hospitality of a person from abroad. Home office, phones, entertainment and mixed property need their applicable block/exception conditions and evidence, not merely a guessed business percentage ([rights guide VAT annex s.8](https://www.gov.il/BlobFolder/generalpage/income-tax-guide-knowyourright/he/Guides_IncomeTax_da-2025.pdf)).
 
-unverified: every row in this section. A supplier's name does not settle the legal treatment of a supply; the 18% figure is the standard rate as at January 2026 (rights guide, PDF p.140), but whether a given supply is exempt, zero-rated or under a reverse charge was not checked against the law for any row. Classify each supply on its facts.
+Under ss.45-47, distinguish the transaction invoice from a tax invoice. A Murshe may issue a tax invoice for a taxable supply and must do so on buyer request, subject to s.47(a1): where the tax point is receipt of payment, the buyer cannot demand it before payment of consideration or part. Section 46 generally requires invoice issue within 14 days of the tax point; apply the actual transaction/exception rules. These rights do not permit a Patur tax invoice.
 
-### 3.1 Banking and financial services
+### Build and reconcile the working paper
 
-**Banking and financial services suppliers**
+Use columns Date, Supplier/Customer, Osek number, Invoice number, Net ILS, Rate, VAT, In/Out, Zero-rated, Exempt, Unresolved and Notes/source. Keep Output_Sales, Input_Purchases, ReverseCharge_Foreign, MaamSummary and Tier2_Items tabs. Reconcile sales, exempt/zero-rated turnover, foreign-service output, admissible inputs and customs VAT to documents and the assigned period. Match prior credits to the authority account before deducting them; excess inputs require a refund return, not an unsupported automatic carryforward formula.
 
-| Supplier | Typical description | Ma'am rate | Input credit |
-| --- | --- | --- | --- |
-| Bank Hapoalim (בנק הפועלים) | Bank fees, wire charges | unverified: Exempt | No |
-| Bank Leumi (בנק לאומי) | Account maintenance, loans | unverified: Exempt | No |
-| Mizrahi Tefahot (מזרחי טפחות) | Mortgage, business banking | unverified: Exempt | No |
-| Discount Bank (בנק דיסקונט) | Commercial banking fees | unverified: Exempt | No |
-| Bank Otsar HaHayal (אוצר החייל) | Military banking | unverified: Exempt | No |
-| Bit (ביט: Hapoalim app) | P2P payment transfer | unverified: Exempt | No |
-| PayBox (פייבוקס: Leumi) | P2P digital wallet | unverified: Exempt | No |
-| Pelecard / Creditguard | Payment processing | unverified: 18% | Yes |
-| Tranzila | E-commerce payment gateway | unverified: 18% | Yes |
+The old internal screening flags remain optional review priorities, **not legal thresholds**: single transaction NIS 100,000, tax delta NIS 17,000, counterparty concentration above 40%, more than 4 unresolved defaults, and absolute net position NIS 250,000. Do not turn a missing classification into the old defaults of 18% output, exempt residential rent, or 0% credit as a final conclusion. Missing input evidence means no supported claim yet; missing output classification means an unresolved filing item.
 
-### 3.2 Electricity and utilities
+## Worked cases
 
-**Electricity and utilities suppliers**
+### Consulting invoice and a documented import
 
-| Supplier | Typical description | Ma'am rate | Input credit |
-| --- | --- | --- | --- |
-| Israel Electric Corporation (חברת החשמל: IEC) | Electricity | unverified: 18% | Yes (business) |
-| Mekorot (מקורות) | Water supply wholesale | unverified: 18% | Yes |
-| Local municipality water (ועדה מקומית) | Water: municipal | unverified: 18% | Yes |
-| Paz Gas / Supergas | Gas: cooking/heating | unverified: 18% | Yes |
-| Cellcom Energy | Green electricity supply | unverified: 18% | Yes |
+Retain TECH SOLUTIONS LTD's old NIS 236,000 receipt, invoice 041/2025 dated 15 April 2025: assuming an ordinary taxable consulting supply, net NIS 200,000 plus VAT NIS 36,000. Interpretation01/2025 confirms 18% for tax points from 1 January 2025; the historical case still requires its actual supply/tax-point facts. For the old Germany electronics import through Ben Gurion dated 10 April 2025, assume the accepted customs value is NIS 400,000 and actual duty NIS 112,000, no other import tax/levy or special valuation case: import base NIS 512,000 and VAT NIS 92,160. The duty is an assumed assessment, **not a verified tariff rate**. The old Bank Leumi line/ASYCUDA REF 2025-04-1234 is matching evidence, not proof of input eligibility. Claim only with the qualifying import document and taxable use.
 
-### 3.3 Telecommunications
-
-**Telecommunications suppliers**
-
-| Supplier | Typical description | Ma'am rate | Input credit |
-| --- | --- | --- | --- |
-| Cellcom (סלקום) | Mobile, broadband | unverified: 18% | Yes (business use) |
-| Partner Communications (פרטנר) | Mobile, fiber, TV | unverified: 18% | Yes (business use) |
-| Bezeq (בזק) | Fixed line, DSL internet | unverified: 18% | Yes (business use) |
-| HOT (הוט) | Cable TV, internet, phone | unverified: 18% | Yes (business use) |
-| 012 Mobile / 013 Netvision | MVNO, internet | unverified: 18% | Yes |
-| Golan Telecom (גולן טלקום) | Discount mobile | unverified: 18% | Yes |
-
-### 3.4 Transport and travel
-
-**Transport and travel suppliers**
-
-| Supplier | Typical description | Ma'am rate | Input credit |
-| --- | --- | --- | --- |
-| El Al (אל על) | Domestic flights (Eilat) | unverified: 18% | Yes |
-| El Al | International flights | unverified: 0% | No input credit applicable |
-| Arkia | Domestic flights | unverified: 18% | Yes |
-| Israir | Domestic flights | unverified: 18% | Yes |
-| Israel Railways (רכבת ישראל) | Train tickets | unverified: 18% | Yes |
-| Egged (אגד) | Bus: intercity | unverified: 18% | Yes |
-| Dan (דן) | Bus: Tel Aviv metro | unverified: 18% | Yes |
-| Gett (גט) | Taxi app | unverified: 18% | Yes (business use) |
-| Yango | Ride-hailing | unverified: 18% | Yes (business use) |
-
-### 3.5 Logistics and postal
-
-**Logistics and postal suppliers**
-
-| Supplier | Typical description | Ma'am rate | Input credit |
-| --- | --- | --- | --- |
-| Israel Post (דואר ישראל) | Domestic mail, parcels | unverified: 18% | Yes |
-| DHL Israel | International courier | unverified: 0% (export) / 18% (domestic) | Yes |
-| UPS Israel | International courier | unverified: 0% / 18% | Yes |
-| FedEx Israel | International courier | unverified: 0% / 18% | Yes |
-| Ashot Logistics | Domestic delivery | unverified: 18% | Yes |
-
-### 3.6 Retail and office supplies
-
-**Retail and office supplies suppliers**
-
-| Supplier | Typical description | Ma'am rate | Input credit |
-| --- | --- | --- | --- |
-| Shufersal (שופרסל) | Supermarket: food/non-food | unverified: 18% (food not zero-rated in IL) | Yes (business) |
-| Rami Levy (רמי לוי) | Discount supermarket | unverified: 18% | Yes |
-| Office Depot Israel | Office supplies | unverified: 18% | Yes |
-| KSP (כ.ס.פ) | Electronics | unverified: 18% | Yes |
-| SuperPharm | Pharmacy: medicines | unverified: 18% (medicines not zero-rated in IL) | Yes |
-| Factory 54 / Castro | Clothing | unverified: 18% | Yes |
-
-### 3.7 Software and digital services
-
-**Software and digital services suppliers**
-
-| Supplier | Typical description | Ma'am rate | Input credit |
-| --- | --- | --- | --- |
-| Priority Software (פריוריטי) | Israeli ERP | unverified: 18% | Yes |
-| Greeninvoice (חשבונית ירוקה) | Cloud invoicing platform | unverified: 18% | Yes |
-| Hashavshevet (חשבשבת) | Accounting software | unverified: 18% | Yes |
-| iCount | Cloud accounting | unverified: 18% | Yes |
-| Microsoft Israel (Azure, M365) | Cloud services: B2B | unverified: 18% (buyer reverse-charge) | Yes |
-| Google Workspace IL | Cloud: B2B | unverified: 18% (buyer reverse-charge) | Yes |
-| Salesforce Israel | CRM: B2B | unverified: 18% (buyer reverse-charge) | Yes |
-| AWS Israel | Cloud infrastructure: B2B | unverified: 18% (buyer reverse-charge) | Yes |
-
-### 3.8 Professional services
-
-**Professional services suppliers**
-
-| Supplier | Typical description | Ma'am rate | Input credit |
-| --- | --- | --- | --- |
-| Roeh Heshbon (רואה חשבון: CPA) | Accounting, audit | unverified: 18% | Yes |
-| Orech Din (עורך דין: lawyer) | Legal services | unverified: 18% | Yes |
-| Munahel Ishur (מנהל אישור: notary equivalent) | Document certification | unverified: 18% | Yes |
-| Reklam / marketing agency | Advertising, PR | unverified: 18% | Yes |
-| Building contractor (קבלן) | Construction services | unverified: 18% | Yes |
-
-### 3.9 Insurance
-
-**Insurance suppliers**
-
-| Supplier | Typical description | Ma'am rate | Input credit |
-| --- | --- | --- | --- |
-| Harel Insurance (הראל) | Business insurance | unverified: Exempt | No |
-| Menora Mivtachim (מנורה מבטחים) | Property, liability | unverified: Exempt | No |
-| Clal Insurance (כלל ביטוח) | Vehicle, business | unverified: Exempt | No |
-| AIG Israel | Professional indemnity | unverified: Exempt | No |
-
-### 3.10 Healthcare
-
-**Healthcare suppliers**
-
-| Supplier | Typical description | Ma'am rate | Input credit |
-| --- | --- | --- | --- |
-| Clalit (כללית) | Health fund / Kupat Holim | unverified: Exempt | No |
-| Maccabi (מכבי) | Health fund | unverified: Exempt | No |
-| Meuhedet (מאוחדת) | Health fund | unverified: Exempt | No |
-| Private clinic / specialist | Private medical | unverified: Exempt | No |
-
-## Section 4: Worked examples
-
-### Example 1: Standard Ma'am on consulting fee
-
-**Scenario:** Tel Aviv software consulting firm issues Heshbonit Mase to Israeli corporate client.
-
-**Bank statement line (Bank Hapoalim format):**
-```
-תאריך    : 15/04/2025
-סוג פעולה: זיכוי - העברה בנקאית
-תיאור    : TECH SOLUTIONS LTD - חשבונית 041/2025 - שכ"ט ייעוץ
-סכום     : +236,000 ₪
+```oa-check
+name: Consulting invoice and assessed customs base
+inputs:
+  consulting_net: 200000
+  customs_value: 400000
+  assessed_duty: 112000
+steps:
+  - consulting_vat: consulting_net*0.18
+  - receipt: consulting_net+consulting_vat
+  - import_base: customs_value+assessed_duty
+  - import_vat: import_base*0.18
+expected:
+  consulting_vat: 36000
+  receipt: 236000
+  import_base: 512000
+  import_vat: 92160
 ```
 
-**Working:**
-- Heshbonit Mase: net ILS 200,000 + Ma'am 18% ILS 36,000 = ILS 236,000
-- Return entry: Output Iska: ILS 200,000 | Output Ma'am: ILS 36,000
+### Hotel, foreign software and passenger car
 
-### Example 2: Import of goods (reverse-charge customs)
+Retain HOTEL BOOKING, FOREIGN GUEST, BOOKING REF TL-2025-0418, 18 April 2025: NIS 7,650 (old USD 2,100 narration). Conditional on statutory tourist hotel accommodation and all documents, output VAT is zero. The narration/currency does not establish that condition, and Form 1345 concerns reportable opinions, not tourism documentation.
 
-**Scenario:** Company imports electronics from Germany: customs clears at Ben Gurion.
+Retain GOOGLE IRELAND LTD, WORKSPACE SUBSCRIPTION APR 2025, 5 April 2025: NIS 5,865 (old USD 1,600 narration). If the imported-service buyer liability applies, VAT is NIS 5,865 x 18% = NIS 1,055.70, not a gross-price extraction. Only a fully eligible taxable use/document claim offsets the same amount as input. Neither USD illustration supplies a verified exchange rate.
 
-**Bank statement line (Bank Leumi format):**
-```
-תאריך    : 10/04/2025
-פעולה    : שוברי רכש - פרעון / מכס ומע"מ
-תיאור    : תשלום מכס ומע"מ יבוא: ASYCUDA REF 2025-04-1234
-סכום     : -92,160 ₪
-```
+Retain CHAMPION MOTORS LTD, invoice 2025-V-041, 3 April 2025: salesperson's private car net NIS 150,000, VAT NIS 27,000, gross NIS 177,000. On the stated facts with no qualifying reg.14 exception, purchase credit is zero, regardless of business sales use. Running costs require their separate test.
 
-**Working:**
-- unverified: the import VAT base (CIF value plus duty). Import customs document: CIF value ILS 400,000 + customs duty ILS 112,000 = ILS 512,000 × 18% = ILS 92,160 Ma'am
-- Pay at port of entry: then claim as input tax in Doch Ma'am filing
-- Return entry: Input Totchaot: ILS 512,000; Input Ma'am: ILS 92,160
-
-### Example 3: Zero-rated tourism service
-
-**Scenario:** Hotel provides accommodation to foreign tourist paying in USD.
-
-**Bank statement line (Mizrahi Tefahot format):**
-```
-תאריך    : 18/04/2025
-סוג      : זיכוי מטבע חוץ
-תיאור    : HOTEL BOOKING - FOREIGN GUEST - BOOKING REF TL-2025-0418
-סכום     : +7,650 ₪ (USD 2,100)
+```oa-check
+name: Foreign service both sides and blocked private car
+inputs:
+  foreign_service: 5865
+  car_net: 150000
+steps:
+  - reverse_output: foreign_service*0.18
+  - eligible_service_input: reverse_output
+  - service_net_vat: reverse_output-eligible_service_input
+  - car_vat: car_net*0.18
+  - car_gross: car_net+car_vat
+  - car_input_allowed: 0
+expected:
+  reverse_output: 1055.70
+  service_net_vat: 0
+  car_vat: 27000
+  car_gross: 177000
+  car_input_allowed: 0
 ```
 
-**Working:**
-- Foreign tourist: payment in foreign currency: qualifies as zero-rated tourist service
-- unverified: the zero rate for this service and its documents (passport copy, foreign payment evidence, ITA Form 1345)
-- Return entry: Mechira LeZar: ILS 7,650 | Ma'am: ILS 0
+### Period return with foreign services on both sides
 
-### Example 4: Reverse-charge on foreign digital service
+Assume the dealer's assigned period is bimonthly; all input conditions, export evidence and service-import liability are satisfied. Domestic software net NIS 800,000 gives NIS 144,000 output, exports NIS 300,000 give zero, foreign cloud net NIS 30,000 gives NIS 5,400 output. Hardware net NIS 200,000 gives NIS 36,000 input, office rent NIS 50,000 gives NIS 9,000, cloud gives NIS 5,400. Total output NIS 149,400, input NIS 50,400, payable NIS 99,000. Service-import consideration is not sales turnover; the old NIS 1,130,000 mixed total must not be reported as customer sales. No prior credit is assumed. Omitting reverse output would understate liability by NIS 5,400.
 
-**Scenario:** Company pays for Google Workspace (billed from Google Ireland).
-
-**Bank statement line (Discount Bank format):**
-```
-תאריך    : 05/04/2025
-פעולה    : חיוב: שירות בנקאי חו"ל
-תיאור    : GOOGLE IRELAND LTD: WORKSPACE SUBSCRIPTION APR 2025
-סכום     : -5,865 ₪ (USD 1,600)
-```
-
-**Working:**
-- unverified: whether the Israeli business buyer must self-assess VAT on this service, and under which provision. The provision that puts the tax on an Israeli buyer of a service from a foreign supplier was not opened in an official text; confirm it before using this example.
-- If the buyer must self-assess: the foreign price contains no Israeli VAT, so the tax is 18% of the consideration, not 18/118 of it. VAT is charged at a fixed rate on the transaction price agreed between the parties (rights guide, PDF p.140). ILS 5,865 x 18% = ILS 1,055.70.
-- Declare the ILS 1,055.70 as output tax AND claim it as input tax (a fully taxable business that holds the document the input claim needs): net zero.
-- Return entry: Reverse-charge output: base ILS 5,865, tax ILS 1,055.70 | Input Totchaot: tax ILS 1,055.70
-
-### Example 5: Business vehicle purchase (blocked credit)
-
-**Scenario:** Company purchases a passenger car (רכב פרטי) for a salesperson.
-
-**Bank statement line (Hapoalim format):**
-```
-תאריך    : 03/04/2025
-סוג פעולה: חיוב - העברה בנקאית
-תיאור    : CHAMPION MOTORS LTD - רכישת רכב: חשב׳ 2025-V-041
-סכום     : -177,000 ₪
+```oa-check
+name: Return reconciliation with paired reverse charge
+inputs:
+  domestic_sales: 800000
+  exports: 300000
+  foreign_service: 30000
+  hardware: 200000
+  office_rent: 50000
+steps:
+  - sales_turnover: domestic_sales+exports
+  - output: (domestic_sales+foreign_service)*0.18
+  - input: (hardware+office_rent+foreign_service)*0.18
+  - payable: output-input
+expected:
+  sales_turnover: 1100000
+  output: 149400
+  input: 50400
+  payable: 99000
 ```
 
-**Working:**
-- Passenger car (רכב פרטי): as a rule, no input tax may be deducted on buying a private car (VAT Regulations reg. 14, as stated in rights guide, PDF p.141). Exceptions: a car used only for driving lessons, for car hire by a car-hire business, for carrying passengers by a passenger-transport business, or for tours by a tour business; and a commercial vehicle over 3,500 kg used for the business that is not like a vehicle in the fourth schedule
-- Heshbonit Mase shows: net ILS 150,000 + Ma'am ILS 27,000 = ILS 177,000
-- Input credit: ILS 0 (none of the exceptions applies to a salesperson's car)
-- Record as Tier 2: confirm whether vehicle classified as commercial (רכב מסחרי) or private
+## When to refuse or refer
 
-### Example 6: Bimonthly return summary
+Escalate mixed exempt/taxable allocations, real estate VAT, group registration, Eilat, diamonds/precious metals, long-term contracts/construction, retrospective Patur-to-Murshe registration, uncertain imported services, tourist status/documents and any unsupported rate or credit. Mas Rechisha is a separate purchase tax; do not use its name as a VAT provision. Obtain all material evidence and an Israeli CPA's review before filing.
 
-**Bimonthly return summary**
+## Filing and payment
 
-| Item | Net (ILS) | Ma'am (ILS) |
-| --- | --- | --- |
-| Software sales (domestic) | 800,000 | 144,000 |
-| Export (zero-rated) | 300,000 | 0 |
-| Cloud subscriptions (reverse-charge output, self-assessed) | 30,000 | 5,400 |
-| Total Output | 1,130,000 | 149,400 |
-| Purchases: hardware | 200,000 | 36,000 |
-| Office rent | 50,000 | 9,000 |
-| Cloud subscriptions (reverse-charge) | 30,000 | 5,400 |
-| Total Input | 280,000 | 50,400 |
-| **Net Ma'am payable** |  | **99,000** |
+Use the authority-assigned monthly/bimonthly cycle, not an inferred frequency. The guide gives the determining-year turnover figure NIS 1,775,000 as at 1 January 2026, but the recovered text renders both frequency branches monthly; the low-turnover branch remains unresolved. The guide's baseline is within 15 days after period end; online payment is permitted through the 19th and detailed reporting/payment through the 23rd under its specified route. Check live extensions, holidays, registration and detailed-reporting duty before calendaring. File zero and refund returns on time too ([rights guide VAT annex s.9](https://www.gov.il/BlobFolder/generalpage/income-tax-guide-knowyourright/he/Guides_IncomeTax_da-2025.pdf)).
 
-The reverse-charge line appears twice: once as output (5,400) and once as input (5,400), so it nets to zero and leaves the payable at 144,000 − 45,000 = 99,000. Claiming the 5,400 as input without declaring it as output understates the tax by ILS 5,400. Whether this service falls under a reverse charge at all is unverified (see Example 4).
+In the Tax Authority personal/Shaam service, select the assigned period, enter reconciled sales/output and separated input categories, validate and obtain approval, submit and retain receipt, then confirm payment separately. Filing codes PCN83/PCN874 are not verified here. Excess-input refunds are subject to VAT Law s.39 review/investigation and compliance conditions; do not promise exporter refund timing from a generic estimate.
 
-## Section 5: Tier 1 rules (compressed)
+## Completion checklist
 
-- **Rate assignment**: - 18% standard (rights guide, PDF p.140); unverified for the lists that follow: almost all goods and services (food, clothing, electronics, professional services: all at standard rate unlike EU VAT) - 0%: exports of goods with customs declaration, services exported to foreign residents used outside Israel, tourism services to non-residents with foreign currency payment - Exempt: financial services, insurance, residential rent (non-commercial), medical services by licensed practitioners, educational services
-- **Input credit** (rights guide, PDF p.141, VAT Law s.38(a)): - A dealer deducts input tax shown on a tax invoice lawfully issued to it, an import declaration or another document the Director approved, bearing the dealer's name, within six months of the document's date - Input tax is deductible only for use in a taxable transaction (full rate or zero rate), not an exempt one - From 1.1.2026 no deduction on a tax invoice above ILS 10,000 before VAT (ILS 5,000 from 1.6.2026) that lacks an allocation number under VAT Law s.47(a2)(2) - Blocked: buying a private car (רכב פרטי), VAT Regulations reg. 14, with the exceptions in Example 5 - Running costs of a business car, VAT Regulations reg. 18: up to 2/3 of the input tax if the car is mainly used for the business; up to 1/4 if it is mainly not - unverified: entertainment and other personal-expense blocks - Reverse charge (foreign services): where it applies (unverified, see Example 4), declare the output and claim the input; they net to zero for a fully taxable Osek Murshe
-- **Filing mechanics** (rights guide, PDF p.141, VAT annex s.9): - Two-monthly return if turnover in the determining year is up to ILS 1,775,000; monthly above ILS 1,775,000 (as at 1 January 2026; the amount is updated once a year) - File within 15 days after the end of the reporting period - Show input tax on fixed assets separately from other input tax; the last line is output tax minus input tax; if input exceeds output, file a refund return - unverified: the ILS 305 invoice figure, refund timing for exporters, and monthly filing for new businesses
+Confirm status, period and tax point; match every bank line to invoices; check invoice issuer, allocation number and lawful document; verify place/rate/zero-rating conditions; separate taxable/exempt/private use and fixed assets; reconcile import and service-import tax; resolve prior credits, complete CPA review and retain return/payment acknowledgments.
 
-## Section 6: Tier 2 catalogue (genuinely data-unknowable items)
+## Sources
 
-**Tier 2 catalogue**
+| Source | URL | Read on |
+|---|---|---|
+| Consolidated VAT Law; Read for ss.7, 11 price/import base, 15 place, 30 exports/foreign services/tourists/travel, 31 residential letting, 38/41 input conditions, 43 adjustment and 45-47 invoices, 39 refund conditions | https://www.btl.gov.il/Laws1/00_0022_000000.pdf | 2026-11-14 |
+| Official VAT General Regulations; Read for regs.6D imported services, 14 car/dealer exceptions, 15/15A/16 home/employee/hospitality blocks and 18 mixed-use proportion/fallback conditions | https://www.btl.gov.il/Laws1/02_0022_100000.pdf | 2026-11-14 |
+| Official VAT Registration Regulations; Read for regs.2/13 registration and compulsory Murshe professions | https://www.btl.gov.il/Laws1/02_0022_100001.pdf | 2026-11-14 |
+| ITA Interpretation01/2025; Read for introduction giving standard18% on Israeli transactions and goods imports with tax point from1January2025 under the2024 amending order | https://www.gov.il/BlobFolder/policy/vat_11/he/vat_represent-info-051224-2.pdf | 2026-11-14 |
+| ITA 2025 rights guide, 2025-2026 filing cycle; Read for VAT annex registration/Patur/reg.13, invoice fields and Form1345 reportable-opinion purpose, input limits/allocation numbers, regs.14/18 vehicles, periodic/zero/refund returns and 15/19/23-day routes; guide expressly labels January/June 2026 figures | https://www.gov.il/BlobFolder/generalpage/income-tax-guide-knowyourright/he/Guides_IncomeTax_da-2025.pdf | 2026-11-14 |
+| ITA 2024 reportable positions list; Read for Position 02/2016 service imports, reg.6D buyer liability/invoice exception and separate ss.38/41 input conditions, Eilat exclusion | https://www.gov.il/BlobFolder/policy/tax-report-station-2024/he/IncomeTax_ReportStation_IncomeTax_ReportStation_2024_5.pdf | 2026-11-14 |
 
-| Item | Why unknowable | What to ask |
-| --- | --- | --- |
-| Vehicle purchase | Private (blocked credit) vs commercial (allowed) depends on registration | "Provide vehicle licence: is it רכב פרטי or רכב מסחרי?" |
-| Home office | Business % of home use unknown | "What % of your home is used exclusively for business?" |
-| Mobile phone | Business vs personal split | "Is this a dedicated business phone? Estimate business use %." |
-| Entertainment | Must prove business purpose | "List attendees and business purpose of each entertainment expense." |
-| Mixed residential/commercial property | Residential rent exempt, commercial 18% | "Is the lease for residential or commercial use? Provide lease agreement." |
-| Export documentation incomplete | Zero-rate only with valid export evidence | "Provide customs export declaration or foreign payment evidence." |
-| Osek Patur supplier | Unregistered supplier: no Heshbonit Mase available, no input credit | "Confirm supplier registration status: Osek Murshe or Osek Patur?" |
+Not yet confirmed: low-turnover frequency branch at NIS 1,775,000 from the recovered guide; all live extensions, new-business automatic monthly filing, exporter refund timing, PCN83/PCN874, the old NIS 305 invoice cutoff, tourist document checklist and all tourism ancillary-service conditions, agricultural/Eilat/special-scheme details, entertainment/private-expense blocks and the brand-based classifications below. The old unknown-sale 18%, financial-as-professional, residential-as-exempt defaults and blanket bank gross-up are withdrawn as filing instructions. A gross/1.18 calculation is only a provisional arithmetic estimate after independently establishing an 18% VAT-inclusive amount; it cannot create a lawful input invoice.
 
-## Section 7: Excel working paper
+### Bank-document matching cues retained from the earlier version
 
-**Columns:** Date | Supplier / Customer | Osek No. | Invoice No. | Net (ILS) | Ma'am Rate % | Ma'am (ILS) | In/Out | Zero-rated? | Exempt? | Tier 2 flag | Notes
-
-**Tab structure:**
-1. `Output_Sales`: all sales (domestic 18%, zero-rated exports, exempt)
-2. `Input_Purchases`: all purchases with Ma'am credit
-3. `ReverseCharge_Foreign`: foreign services self-assessed
-4. `MaamSummary`: bimonthly return totals
-5. `Tier2_Items`: awaiting client response
-
-- **Key formula**: Net_Maam_Payable = Total_Output_Maam - Total_Input_Maam - Excess_BF
-
-## Section 8: Bank statement reading guide
+These illustrative layouts do not establish tax treatment or authority approval. Preserve the distinction between credit/inflow and debit/outflow, foreign currency and customs/VAT payments.
 
 ### Bank Hapoalim format
 
@@ -387,65 +193,123 @@ Fields: תאריך (date) | סוג פעולה (transaction type) | תיאור (d
 - **מטבע חוץ (foreign currency):** Foreign payment: check for zero-rated export or reverse-charge
 - **מכס ומע"מ:** Customs and Ma'am: import duty + import Ma'am payment
 
-## Section 9: Onboarding fallback
 
-- **Fallback when Heshbonit Mase unavailable**: When client cannot provide Heshbonit Mase for all transactions: 1. Use bank statement amounts as Ma'am-inclusive totals and back-calculate: - Net = Total ÷ 1.18 | Ma'am = Total − Net 2. Apply conservative defaults: 18% output on all unverified sales; 0% input credit without valid Heshbonit Mase 3. Flag all items without Heshbonit Mase in Tier2_Items tab 4. Issue data request listing missing invoice references 5. Warn client: ITA can disallow input credit claims without valid Heshbonit Mase from Osek Murshe supplier: risk of penalty
 
-## Section 10: Reference material
+### Legacy supplier matching library: unresolved treatments
 
-**Reference material**
+Every old supplier/description and proposed treatment below is retained for traceability, **not usable rate or input-credit guidance**. Apply the operative rules above to the actual invoice, supplier status, transaction and use. This boundary includes all banks/payment apps, utilities, telecoms, travel, logistics, retail, software, professionals, insurers and healthcare. A row saying “Yes” does not authorize a credit; a row saying “Exempt” does not establish exemption.
 
-| Resource | Reference |
-| --- | --- |
-| ITA filing portal (Shaam Online) | https://www.misim.gov.il |
-| Ma'am Law (מס ערך מוסף, 1975) | ITA website: tax law library |
-| ITA official guidance (חוזרים) | taxes.gov.il/maam |
-| Registration threshold updates | ITA annual circular |
-| Heshbonit Mase requirements | Section 9 Ma'am Law |
-| Tourist refund scheme | ITA Form 1345 guidance |
+### Banking and financial services
 
-## Recomputed checks (2026)
+**Banking and financial services suppliers**
 
-```oa-check
-name: Invoice net ILS 200,000
-inputs:
-  n: 200000
-steps:
-  - v: n*0.18
-expected:
-  v: 36000
-```
+- Bank Hapoalim (בנק הפועלים); Bank fees, wire charges. Old unconfirmed proposal: unverified: Exempt; input credit No.
+- Bank Leumi (בנק לאומי); Account maintenance, loans. Old unconfirmed proposal: unverified: Exempt; input credit No.
+- Mizrahi Tefahot (מזרחי טפחות); Mortgage, business banking. Old unconfirmed proposal: unverified: Exempt; input credit No.
+- Discount Bank (בנק דיסקונט); Commercial banking fees. Old unconfirmed proposal: unverified: Exempt; input credit No.
+- Bank Otsar HaHayal (אוצר החייל); Military banking. Old unconfirmed proposal: unverified: Exempt; input credit No.
+- Bit (ביט: Hapoalim app); P2P payment transfer. Old unconfirmed proposal: unverified: Exempt; input credit No.
+- PayBox (פייבוקס: Leumi); P2P digital wallet. Old unconfirmed proposal: unverified: Exempt; input credit No.
+- Pelecard / Creditguard; Payment processing. Old unconfirmed proposal: unverified: 18%; input credit Yes.
+- Tranzila; E-commerce payment gateway. Old unconfirmed proposal: unverified: 18%; input credit Yes.
 
-```oa-check
-name: Bimonthly net payable with reverse-charge output declared
-inputs:
-  sales: 800000
-  rc: 30000
-  hardware: 200000
-  rent: 50000
-steps:
-  - output: (sales+rc)*0.18
-  - input: (hardware+rent+rc)*0.18
-  - p: output-input
-expected:
-  output: 149400
-  input: 50400
-  p: 99000
-```
+### 3.2 Electricity and utilities
 
-## Sources
+**Electricity and utilities suppliers**
 
-| Source | URL | Read on |
-|---|---|---|
-| Israel Tax Authority, "Know your rights and duties" guide, tax year 2025 (published July 2026), Annex C VAT guide for a new dealer, read PDF pp.139-141 (Osek Patur ceiling ILS 122,833 as at January 2026, 18% rate as at January 2026, tax invoice, input tax under VAT Law s.38(a), allocation-number limits, VAT Regulations regs. 14 and 18 on cars, two-monthly/monthly ILS 1,775,000 as at 1/1/2026, 15-day deadline) | https://www.gov.il/BlobFolder/generalpage/income-tax-guide-knowyourright/he/Guides_IncomeTax_da-2025.pdf | 2026-11-03 |
-| Israel Tax Authority, Form 1301 service page, tax year 2025 | https://www.gov.il/he/service/reporting-and-payment-2025-annual-tax-report-for-individuals | 2026-11-01 |
+- Israel Electric Corporation (חברת החשמל: IEC); Electricity. Old unconfirmed proposal: unverified: 18%; input credit Yes (business).
+- Mekorot (מקורות); Water supply wholesale. Old unconfirmed proposal: unverified: 18%; input credit Yes.
+- Local municipality water (ועדה מקומית); Water: municipal. Old unconfirmed proposal: unverified: 18%; input credit Yes.
+- Paz Gas / Supergas; Gas: cooking/heating. Old unconfirmed proposal: unverified: 18%; input credit Yes.
+- Cellcom Energy; Green electricity supply. Old unconfirmed proposal: unverified: 18%; input credit Yes.
 
-Not yet confirmed: the reverse-charge rule for services bought from a foreign supplier and its legal basis (no official text of the VAT Law or Regulations was opened; Examples 4 and 6 depend on it); the ILS 305 invoice figure; the zero-rate and exempt lists; refund timing for exporters and monthly filing for new businesses; the entertainment block; form names PCN83/PCN874; the supplier treatment tables in Section 3 (a supplier's name does not settle the legal treatment; each row is unverified); Form 1345 and the tourism zero rate in Example 3; the import base in Example 2.
+### 3.3 Telecommunications
 
-## Disclaimer
+**Telecommunications suppliers**
 
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
+- Cellcom (סלקום); Mobile, broadband. Old unconfirmed proposal: unverified: 18%; input credit Yes (business use).
+- Partner Communications (פרטנר); Mobile, fiber, TV. Old unconfirmed proposal: unverified: 18%; input credit Yes (business use).
+- Bezeq (בזק); Fixed line, DSL internet. Old unconfirmed proposal: unverified: 18%; input credit Yes (business use).
+- HOT (הוט); Cable TV, internet, phone. Old unconfirmed proposal: unverified: 18%; input credit Yes (business use).
+- 012 Mobile / 013 Netvision; MVNO, internet. Old unconfirmed proposal: unverified: 18%; input credit Yes.
+- Golan Telecom (גולן טלקום); Discount mobile. Old unconfirmed proposal: unverified: 18%; input credit Yes.
+
+### 3.4 Transport and travel
+
+**Transport and travel suppliers**
+
+- El Al (אל על); Domestic flights (Eilat). Old unconfirmed proposal: unverified: 18%; input credit Yes.
+- El Al; International flights. Old unconfirmed proposal: unverified: 0%; input credit No input credit applicable.
+- Arkia; Domestic flights. Old unconfirmed proposal: unverified: 18%; input credit Yes.
+- Israir; Domestic flights. Old unconfirmed proposal: unverified: 18%; input credit Yes.
+- Israel Railways (רכבת ישראל); Train tickets. Old unconfirmed proposal: unverified: 18%; input credit Yes.
+- Egged (אגד); Bus: intercity. Old unconfirmed proposal: unverified: 18%; input credit Yes.
+- Dan (דן); Bus: Tel Aviv metro. Old unconfirmed proposal: unverified: 18%; input credit Yes.
+- Gett (גט); Taxi app. Old unconfirmed proposal: unverified: 18%; input credit Yes (business use).
+- Yango; Ride-hailing. Old unconfirmed proposal: unverified: 18%; input credit Yes (business use).
+
+### 3.5 Logistics and postal
+
+**Logistics and postal suppliers**
+
+- Israel Post (דואר ישראל); Domestic mail, parcels. Old unconfirmed proposal: unverified: 18%; input credit Yes.
+- DHL Israel; International courier. Old unconfirmed proposal: unverified: 0% (export) / 18% (domestic); input credit Yes.
+- UPS Israel; International courier. Old unconfirmed proposal: unverified: 0% / 18%; input credit Yes.
+- FedEx Israel; International courier. Old unconfirmed proposal: unverified: 0% / 18%; input credit Yes.
+- Ashot Logistics; Domestic delivery. Old unconfirmed proposal: unverified: 18%; input credit Yes.
+
+### 3.6 Retail and office supplies
+
+**Retail and office supplies suppliers**
+
+- Shufersal (שופרסל); Supermarket: food/non-food. Old unconfirmed proposal: unverified: 18% (food not zero-rated in IL); input credit Yes (business).
+- Rami Levy (רמי לוי); Discount supermarket. Old unconfirmed proposal: unverified: 18%; input credit Yes.
+- Office Depot Israel; Office supplies. Old unconfirmed proposal: unverified: 18%; input credit Yes.
+- KSP (כ.ס.פ); Electronics. Old unconfirmed proposal: unverified: 18%; input credit Yes.
+- SuperPharm; Pharmacy: medicines. Old unconfirmed proposal: unverified: 18% (medicines not zero-rated in IL); input credit Yes.
+- Factory 54 / Castro; Clothing. Old unconfirmed proposal: unverified: 18%; input credit Yes.
+
+### 3.7 Software and digital services
+
+**Software and digital services suppliers**
+
+- Priority Software (פריוריטי); Israeli ERP. Old unconfirmed proposal: unverified: 18%; input credit Yes.
+- Greeninvoice (חשבונית ירוקה); Cloud invoicing platform. Old unconfirmed proposal: unverified: 18%; input credit Yes.
+- Hashavshevet (חשבשבת); Accounting software. Old unconfirmed proposal: unverified: 18%; input credit Yes.
+- iCount; Cloud accounting. Old unconfirmed proposal: unverified: 18%; input credit Yes.
+- Microsoft Israel (Azure, M365); Cloud services: B2B. Old unconfirmed proposal: unverified: 18% (buyer reverse-charge); input credit Yes.
+- Google Workspace IL; Cloud: B2B. Old unconfirmed proposal: unverified: 18% (buyer reverse-charge); input credit Yes.
+- Salesforce Israel; CRM: B2B. Old unconfirmed proposal: unverified: 18% (buyer reverse-charge); input credit Yes.
+- AWS Israel; Cloud infrastructure: B2B. Old unconfirmed proposal: unverified: 18% (buyer reverse-charge); input credit Yes.
+
+### 3.8 Professional services
+
+**Professional services suppliers**
+
+- Roeh Heshbon (רואה חשבון: CPA); Accounting, audit. Old unconfirmed proposal: unverified: 18%; input credit Yes.
+- Orech Din (עורך דין: lawyer); Legal services. Old unconfirmed proposal: unverified: 18%; input credit Yes.
+- Munahel Ishur (מנהל אישור: notary equivalent); Document certification. Old unconfirmed proposal: unverified: 18%; input credit Yes.
+- Reklam / marketing agency; Advertising, PR. Old unconfirmed proposal: unverified: 18%; input credit Yes.
+- Building contractor (קבלן); Construction services. Old unconfirmed proposal: unverified: 18%; input credit Yes.
+
+### 3.9 Insurance
+
+**Insurance suppliers**
+
+- Harel Insurance (הראל); Business insurance. Old unconfirmed proposal: unverified: Exempt; input credit No.
+- Menora Mivtachim (מנורה מבטחים); Property, liability. Old unconfirmed proposal: unverified: Exempt; input credit No.
+- Clal Insurance (כלל ביטוח); Vehicle, business. Old unconfirmed proposal: unverified: Exempt; input credit No.
+- AIG Israel; Professional indemnity. Old unconfirmed proposal: unverified: Exempt; input credit No.
+
+### 3.10 Healthcare
+
+**Healthcare suppliers**
+
+- Clalit (כללית); Health fund / Kupat Holim. Old unconfirmed proposal: unverified: Exempt; input credit No.
+- Maccabi (מכבי); Health fund. Old unconfirmed proposal: unverified: Exempt; input credit No.
+- Meuhedet (מאוחדת); Health fund. Old unconfirmed proposal: unverified: Exempt; input credit No.
+- Private clinic / specialist; Private medical. Old unconfirmed proposal: unverified: Exempt; input credit No.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-03. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `israel-vat` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/israel-vat. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `israel-vat` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/israel-vat. If neither is available, confirm every figure against the official source pages cited above before relying on it.
