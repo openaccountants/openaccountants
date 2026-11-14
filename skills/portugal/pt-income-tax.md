@@ -13,7 +13,7 @@ domain: income-tax
 type: computation
 ---
 
-# Portugal: IRS for the self-employed, Category B (tax year 2026) v2.2
+# Portugal: IRS for the self-employed, Category B (tax year 2026) v2.4
 
 This skill computes the annual IRS of a Portuguese resident who earns business or professional income (Category B): freelancers issuing recibos verdes, sole traders and professionals. It covers the simplified regime and organised accounts, client withholding, payments on account and IRS Jovem. The return for 2026 income is the Modelo 3 with Anexo B, filed from 1 April to 30 June 2027.
 
@@ -41,14 +41,14 @@ The law is the Código do IRS (CIRS). AT (Autoridade Tributária e Aduaneira) pu
 
 | Item | Rate or amount | Tax year | Source |
 |---|---|---|---|
-| IRS band 1: taxable income up to EUR 8,342 | 12.50% (average 12.500%) | 2026 | CIRS art. 68(1), wording of Lei 73-A/2025: https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs68.aspx |
-| Band 2: over 8,342 to 12,587 | 15.70% (average 13.579%) | 2026 | same |
-| Band 3: over 12,587 to 17,838 | 21.20% (average 15.823%) | 2026 | same |
-| Band 4: over 17,838 to 23,089 | 24.10% (average 17.705%) | 2026 | same |
-| Band 5: over 23,089 to 29,397 | 31.10% (average 20.579%) | 2026 | same |
-| Band 6: over 29,397 to 43,090 | 34.90% (average 25.130%) | 2026 | same |
-| Band 7: over 43,090 to 46,566 | 43.10% (average 26.472%) | 2026 | same |
-| Band 8: over 46,566 to 86,634 | 44.60% (average 34.856%) | 2026 | same |
+| IRS band 1: taxable income up to EUR 8,342 | 12.20% (average 12.200%) | 2026 | CIRS art. 68(1), wording of Decreto-Lei 212/2026 (effect from 1 January 2026): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs68.aspx |
+| Band 2: over 8,342 to 12,587 | 15.20% (average 13.212%) | 2026 | same |
+| Band 3: over 12,587 to 17,838 | 20.70% (average 15.416%) | 2026 | same |
+| Band 4: over 17,838 to 23,089 | 23.60% (average 17.277%) | 2026 | same |
+| Band 5: over 23,089 to 29,397 | 30.60% (average 20.136%) | 2026 | same |
+| Band 6: over 29,397 to 43,090 | 34.60% (average 24.732%) | 2026 | same |
+| Band 7: over 43,090 to 46,566 | 43.10% (average 26.103%) | 2026 | same |
+| Band 8: over 46,566 to 86,634 | 44.60% (average 34.658%) | 2026 | same |
 | Band 9: over 86,634 | 48.00% | 2026 | same |
 | Solidarity surcharge | 2.5% on taxable income over EUR 80,000 up to 250,000; 5% over 250,000 | 2026 | CIRS art. 68-A: https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs68a.aspx |
 | Coefficient: sales of goods, crypto operations (not mining), restaurants, bars and hotels (not local lodging in a house or flat) | 0.15 | 2026 | CIRS art. 31(1)(a): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs31.aspx |
@@ -76,7 +76,7 @@ The law is the Código do IRS (CIRS). AT (Autoridade Tributária e Aduaneira) pu
 | Payments on account | Three, by 20 July, 20 September and 20 December; total 65% of the formula amount; none if each is under EUR 50 | 2026 | CIRS art. 102(1) to (3): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs102.aspx |
 | Self-employed social security | 21.4% (25.2% for sole traders with a business, empresários em nome individual) on 70% of service income (20% of sales of goods and of hotel and restaurant income), monthly base capped at 12 x IAS = EUR 6,445.56 | 2026 | Segurança Social, Guia Prático, Trabalhadores Independentes; detail in `pt-social-contributions` https://diariodarepublica.pt/dr/legislacao-consolidada/lei/2009-34514575 |
 
-The 2026 bands are lower than the 2025 bands. Lei 73-A/2025 (the 2026 State Budget) cut the rates of bands 2 to 5 (band 2 from 16.00% to 15.70%, band 3 from 21.50% to 21.20%, band 4 from 24.40% to 24.10%, band 5 from 31.40% to 31.10%) and raised every band limit (band 1 from EUR 8,059 to EUR 8,342; band 9 from over EUR 83,696 to over EUR 86,634). Do not use the 2025 table (Lei 55-A/2025) for 2026 income.
+The 2026 bands are lower than the 2025 bands. Lei 73-A/2025 (the 2026 State Budget) cut the rates of bands 2 to 5 (band 2 from 16.00% to 15.70%, band 3 from 21.50% to 21.20%, band 4 from 24.40% to 24.10%, band 5 from 31.40% to 31.10%) and raised every band limit (band 1 from EUR 8,059 to EUR 8,342; band 9 from over EUR 83,696 to over EUR 86,634). Do not use the 2025 table (Lei 55-A/2025) for 2026 income. Decreto-Lei 212/2026 of 4 November 2026 then cut the rates of bands 1 to 6 again, to 12.20%, 15.20%, 20.70%, 23.60%, 30.60% and 34.60%, for income obtained in 2026 with effect from 1 January 2026; the table above shows those rates. Withholding during 2026 used the older tables, so the final assessment will usually refund more.
 
 ## The taxable base
 
@@ -142,8 +142,8 @@ Ana is resident, aged 40, and works as a consultant under an activity code in th
 2. Social security (art. 31(2)): 10% of gross is EUR 5,200. She paid EUR 4,200, which is less, so nothing is deducted.
 3. The 15% rule (art. 31(13)): 15% x 52,000 = EUR 7,800. Against it count the higher of EUR 4,587.09 and her non-deducted contributions (EUR 4,200), so EUR 4,587.09, plus EUR 2,000 of e-fatura expenses: EUR 6,587.09. The shortfall of EUR 1,212.91 is added.
 4. Taxable income: 39,000 + 1,212.91 = EUR 40,212.91, in band 6.
-5. Tax: 29,397 x 20.579% + (40,212.91 - 29,397) x 34.90% = 6,049.61 + 3,774.75 = EUR 9,824.36.
-6. Balance due: 9,824.36 - 9,200 = EUR 624.36, by 31 August 2027.
+5. Tax: 29,397 x 20.136% + (40,212.91 - 29,397) x 34.60% = 5,919.38 + 3,742.30 = EUR 9,661.68.
+6. Balance due: 9,661.68 - 9,200 = EUR 461.68, by 31 August 2027.
 
 ```oa-check
 name: PT Category B consultant, simplified regime, gross EUR 52,000 (2026)
@@ -161,7 +161,7 @@ steps:
   - ss_not_deducted: ss_paid - ss_deduction
   - shortfall: max(0, gross * 0.15 - (max(specific, ss_not_deducted) + efatura_expenses))
   - taxable: base - ss_deduction + shortfall
-  - tax: round(29397 * 0.20579 + (taxable - 29397) * 0.349, 2)
+  - tax: round(29397 * 0.20136 + (taxable - 29397) * 0.346, 2)
   - balance: tax - withheld
 expected:
   base: 39000
@@ -169,8 +169,8 @@ expected:
   specific: 4587.09
   shortfall: 1212.91
   taxable: 40212.91
-  tax: 9824.36
-  balance: 624.36
+  tax: 9661.68
+  balance: 461.68
 ```
 
 ### Example 2: young programmer, IRS Jovem year 3, cap applies
@@ -181,8 +181,8 @@ Pedro is 29, resident, and in his third year of earning income, so IRS Jovem exe
 2. Social security above 10% of gross: 7,500 - 7,000 = EUR 500 deducted. Net EUR 52,000. The EUR 7,000 not deducted stays available for the 15% rule.
 3. The 15% rule: 15% x 70,000 = EUR 10,500. Against it: the higher of EUR 4,587.09 and EUR 7,000, so EUR 7,000, plus EUR 4,000 of expenses: EUR 11,000. No shortfall. Taxable income EUR 52,000.
 4. IRS Jovem: 75% x 52,000 = EUR 39,000, above the 2026 cap. Exempt income is EUR 29,542.15. Non-exempt income is 52,000 - 29,542.15 = EUR 22,457.85.
-5. Tax on the full EUR 52,000 (band 8): 46,566 x 26.472% + (52,000 - 46,566) x 44.60% = 12,326.95 + 2,423.56 = EUR 14,750.52 (EUR 14,750.5155 before rounding).
-6. Tax due on the non-exempt part: 14,750.52 x 22,457.85 / 52,000 = EUR 6,370.48. Applying the bands to EUR 22,457.85 alone would give too little tax, because the exempt income counts for the rate (art. 22(4)).
+5. Tax on the full EUR 52,000 (band 8): 46,566 x 26.103% + (52,000 - 46,566) x 44.60% = 12,155.12 + 2,423.56 = EUR 14,578.69 (EUR 14,578.68698 before rounding).
+6. Tax due on the non-exempt part: 14,578.69 x 22,457.85 / 52,000 = EUR 6,296.27. Applying the bands to EUR 22,457.85 alone would give too little tax, because the exempt income counts for the rate (art. 22(4)).
 
 ```oa-check
 name: PT Category B programmer, IRS Jovem year 3 with the 2026 cap, gross EUR 70,000
@@ -201,7 +201,7 @@ steps:
   - cap: 55 * ias
   - exempt: min(taxable * exempt_share, cap)
   - non_exempt: taxable - exempt
-  - tax_on_all: round(46566 * 0.26472 + (taxable - 46566) * 0.446, 2)
+  - tax_on_all: round(46566 * 0.26103 + (taxable - 46566) * 0.446, 2)
   - tax_due: round(tax_on_all * non_exempt / taxable, 2)
 expected:
   ss_deduction: 500
@@ -210,8 +210,8 @@ expected:
   cap: 29542.15
   exempt: 29542.15
   non_exempt: 22457.85
-  tax_on_all: 14750.52
-  tax_due: 6370.48
+  tax_on_all: 14578.69
+  tax_due: 6296.27
 ```
 
 ## Ask the client first
@@ -227,7 +227,8 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| CIRS art. 68, IRS bands 2026 (wording of Lei 73-A/2025) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs68.aspx | 2026-10-23 |
+| CIRS art. 68. Read for the 2026 bands in the wording of Decreto-Lei 212/2026 | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs68.aspx | 2026-11-14 |
+| Decreto-Lei 212/2026 of 4 November 2026 (AT copy). Read for the new rates of bands 1 to 6 and their effect from 1 January 2026 | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Decreto-Lei-212-2026.pdf | 2026-11-14 |
 | CIRS art. 68, 2025 bands (wording of Lei 55-A/2025, until December 2025) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/ra/Pages/irs68ra_202512.aspx | 2026-10-23 |
 | CIRS art. 68-A, solidarity surcharge | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs68a.aspx | 2026-10-23 |
 | CIRS art. 12-B, IRS Jovem | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs12b.aspx | 2026-10-23 |
