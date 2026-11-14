@@ -10,12 +10,10 @@
 3. `README.md`
 4. `bvi-tax.md`
 5. `vg-company-formation.md`
-6. `vg-corporate-income-tax.md`
-7. `vg-payroll-social.md`
-8. `vg-tax-overview.md`
-9. `payroll-workflow-base.md`
-10. `company-formation-workflow-base.md`
-11. `workflow-base.md`
+6. `vg-payroll-social.md`
+7. `payroll-workflow-base.md`
+8. `company-formation-workflow-base.md`
+9. `workflow-base.md`
 
 ## How to use
 

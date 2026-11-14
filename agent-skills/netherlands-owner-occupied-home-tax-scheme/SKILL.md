@@ -7,10 +7,12 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/netherlands-owner-occupied-home-tax-scheme"
   jurisdiction: "NL"
   tax_year: "2026"
-  last_updated: "2026-11-12"
+  last_updated: "2026-11-14"
 ---
 
 # Netherlands: Owner-Occupied Home Tax Scheme
+
+## Scope
 
 Use this method for Dutch income-tax classification of a private main home, qualifying home debt and legacy home-saving products in 2026. Establish the applicable year before calculating: a return filed during 2026 may concern 2025. Use the separate [2025 home instructions](https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2025/eigen_woning_en_restschuld_vroegere) for that return; the figures below are 2026 figures. This is a calculation and evidence workflow, not authority to file or change a mortgage contract.
 
@@ -19,6 +21,31 @@ Use this method for Dutch income-tax classification of a private main home, qual
 - Obtain the tax year and residence/treaty position; all owners, beneficial interests and fiscal-partner dates; purchase/sale and succession deeds; actual occupation and BRP dates; the correct year's WOZ decision; all loan contracts, annual statements, repayment schedules and refinancing history; renovation invoices and payments; prior home sales, equity reserves and loan repayment-period records; rent receipts and occupancy agreements; and any KEW, SEW or BEW contracts, premiums, previous exemptions and planned payouts. For divorce, care admission or temporary absence, obtain exact dates, remaining occupants, payment arrangements and evidence of intended return. Missing material information means an explicit calculation hold, not an assumed entitlement.
 
 ## The method, step by step
+
+### Rates, bands and thresholds
+
+All figures are for tax year 2026 unless the row says 2025. Conditions sit in the steps below.
+
+| Item | Figure | Condition | Source |
+|---|---|---|---|
+| Eigenwoningforfait, WOZ up to EUR 12,500 | 0% | Ordinary main home, 2026 WOZ (valuation date 1 January 2025) | https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/eigen_woning_en_restschuld_vroegere |
+| WOZ above EUR 12,500 to EUR 25,000 | 0.10% of WOZ | same | same |
+| WOZ above EUR 25,000 to EUR 50,000 | 0.20% of WOZ | same | same |
+| WOZ above EUR 50,000 to EUR 75,000 | 0.25% of WOZ | same | same |
+| WOZ above EUR 75,000 to EUR 1,350,000 | 0.35% of WOZ | same | same |
+| WOZ above EUR 1,350,000 | EUR 4,725 plus 2.35% of the excess | same | same |
+| Temporary-assignment home, WOZ up to EUR 1,350,000 | 0.55% of WOZ | Only the temporary-absence exception of art. 3.111 | same |
+| Temporary-assignment home, WOZ above EUR 1,350,000 | EUR 7,425 plus 2.35% of the excess | same | same |
+| Ordinary temporary letting of the main home | 70% of rent received, after directly related letting costs | Home stays in the own-home scheme | same |
+| Room-letting exemption ceiling | EUR 6,633 rent a year, incl. furniture and energy charges | Non-independent part, both registered there, not short stays | same |
+| Former home for sale, future home | Calendar year of the event plus the next 3 years | Vacant and genuinely for sale, or intended main home | same |
+| Repayment term for post-2012 debt | Maximum 360 months, at least annuity | Debt taken on from 1 January 2013 | same |
+| Residual debt relief | Interest deductible for at most 15 years | Home sold between 29 October 2012 and 31 December 2017 | same |
+| Hillen deduction (no or small home debt) | 71.867% of the positive difference | Deemed benefit above deductible costs, 2026 | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/woning/eigenwoningforfait/geen_of_een_kleine_eigenwoningschuld/geen_of_een_kleine_eigenwoningschuld |
+| Rate cap on home-cost deductions | 37.56% (top rate 49.50%) | Deduction above the first-band rate is cut back | same |
+| KEW, SEW, BEW lifetime exemption, 2026 | EUR 207,500 per person (EUR 415,000 with a fiscal partner where both qualify) | Reduced by earlier use, capped by debt repaid | https://www.belastingdienst.nl/wps/wcm/connect/nl/koopwoning/content/belasting-betalen-over-uitkering-kapitaalverzekering-eigen-woning |
+| KEW, SEW, BEW lifetime exemption, 2025 | EUR 204,000 per person (EUR 408,000 with a fiscal partner) | same | same |
+| Premium ratio for legacy products | Highest yearly premium at most 10 times the lowest | Insurance or contract years | https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/verzekeren_of_sparen_voor_de_aflossing |
 
 1. **Classify the property and each relevant period.** A qualifying home is normally the taxpayer's or household's main residence, held through legal/economic ownership or a qualifying cooperative right, with benefits, burdens and predominantly the value-change risk borne by the taxpayer or partner. An inherited usufruct, use or residence right can also qualify subject to its conditions. A qualifying fixed houseboat/caravan and appurtenances can fall within the definition. Registration or a mortgage alone does not establish main-residence status. Business premises, investment homes and independent rented portions need separate classification. Fiscal partners generally choose one main home; statutory temporary exceptions can allow additional qualifying properties. Record the facts and legal basis, not just the address. [Wet IB, article 3.111](https://wetten.overheid.nl/BWBR0011353); [annual instructions, 10.2](https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/eigen_woning_en_restschuld_vroegere).
 
@@ -66,7 +93,7 @@ Interest on qualifying residual debt arising from a home sale between 29 October
 
 8. **Review KEW, SEW and BEW before any payout or contract change.** These are legacy home endowment, blocked savings and investment products. New arrangements have generally been closed since 2013, except qualifying continuation/conversion. Verify provider, contractual destination, continuing own-home connection, annual contributions and the maximum ten-to-one ratio between highest and lowest annual contributions. For that ratio, use insurance/contract years rather than casually using calendar years. Conversion, partial surrender, death, emigration, sale or loss of own-home status can trigger special or deemed-payout rules and require specialist review before changing the product. [2026 product instructions, 11.1–11.5](https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/verzekeren_of_sparen_voor_de_aflossing); [product guidance](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/woning/uw_hypotheek_of_lening/sparen_voor_de_aflossing_van_uw_hypotheek).
 
-The ordinary 2026 lifetime exemption is €207,500 per person across these products, reduced by previous use; it is capped by qualifying debt at payout and debt actually repaid from the payout. The corresponding 2025 amount is €204,000. Check the actual payout year, any legacy additions, beneficiary/partner conditions and prior exemptions. The former minimum premium-payment period has been removed, but annual contributions and other conditions still matter. Ordinarily the whole payout must repay qualifying home debt; spending it on renovation is not the required repayment. Payment via the taxpayer can qualify if the taxpayer actually repays the debt and documents the flow. Do not automatically double the exemption merely because someone is married. [Payout conditions](https://www.belastingdienst.nl/wps/wcm/connect/nl/koopwoning/content/belasting-betalen-over-uitkering-kapitaalverzekering-eigen-woning); [annual product instructions](https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/verzekeren_of_sparen_voor_de_aflossing).
+The ordinary 2026 lifetime exemption is €207,500 per person across these products, reduced by previous use; it is capped by qualifying debt at payout and debt actually repaid from the payout. The corresponding 2025 amount is €204,000. Check the actual payout year, any legacy additions, beneficiary/partner conditions and prior exemptions. The former minimum premium-payment period has been removed, but annual contributions and other conditions still matter. Ordinarily the whole payout must repay qualifying home debt; spending it on renovation is not the required repayment. Payment via the taxpayer can qualify if the taxpayer actually repays the debt and documents the flow. Each fiscal partner has their own exemption (the payout page shows EUR 415,000 together for 2026) only where each partner meets the conditions for their own policy or account; do not double it merely because someone is married. [Payout conditions](https://www.belastingdienst.nl/wps/wcm/connect/nl/koopwoning/content/belasting-betalen-over-uitkering-kapitaalverzekering-eigen-woning); [annual product instructions](https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/verzekeren_of_sparen_voor_de_aflossing).
 
 When only part of a qualifying payout is exempt, taxable interest is `(payout − available exemption) / payout × (payout − qualifying premiums/contributions)`. If no exemption applies, the interest component is normally taxable, rather than the entire gross payout. Refer exceptional sale, death, pre-existing policy and deemed-payout cases for their specific provisions; do not override them with the ordinary formula. [2026 product instructions, 11.3–11.5](https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/verzekeren_of_sparen_voor_de_aflossing).
 
@@ -74,7 +101,9 @@ When only part of a qualifying payout is exempt, taxable interest is `(payout �
 
 There is no free election to put qualifying home debt into Box 3. Deliberately changing repayment terms can affect tax eligibility, cure provisions, the contract and total tax; do not recommend a breach from a simple Box 1/Box 3 rate comparison. Use the actual statutory classification and refer before restructuring. Describe enacted law as of the review date; do not promise that a government will leave the regime unchanged. [Current home-debt provisions](https://wetten.overheid.nl/BWBR0011353).
 
-## Worked decision checks
+## Boundary and exception table
+
+### Decision checks
 
 - **Sale vacancy:** a former home is vacated during 2023 and remains genuinely vacant for sale throughout 2026. The sale-home period can extend through the end of 2026; it does not restart when the price is reduced. Letting during that period changes the classification for the letting period. [10.2.2](https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/eigen_woning_en_restschuld_vroegere).
 - **Room threshold:** ordinary non-independent room receipts are exactly €6,633 in 2026 and all registration/duration conditions hold: exemption possible. A receipt above that ceiling fails this exemption; do not deduct only the excess. [10.2.1](https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/eigen_woning_en_restschuld_vroegere).
@@ -85,25 +114,26 @@ There is no free election to put qualifying home debt into Box 3. Deliberately c
 - **Payout destination:** a legacy policy payout is spent on renovation without repaying debt. It does not satisfy the ordinary repayment condition; examine whether a specific exception applies before final tax treatment. [Product instructions](https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/verzekeren_of_sparen_voor_de_aflossing).
 - **Wrong return year:** a 2025 return is prepared in 2026. Hold any calculation using the 2026 benefit table, Hillen percentage or payout exemption until the 2025 source and assessment data are used. [2025 instructions](https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2025/eigen_woning_en_restschuld_vroegere).
 
+## Worked cases
+
 - **Ordinary home and Hillen (2026):** assume a qualifying full-year main home with WOZ €300,000, no deductible costs, no other home adjustments and no partner allocation. Deemed benefit is €300,000 × 0.35% = €1,050. Hillen is €1,050 × 71.867% = €754.60, leaving €295.40 of home income before the return's rounding and the wider income-tax calculation. [Home table](https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/eigen_woning_en_restschuld_vroegere); [Hillen](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/woning/eigenwoningforfait/geen_of_een_kleine_eigenwoningschuld/geen_of_een_kleine_eigenwoningschuld).
 - **Partial KEW exemption (2026):** assume an eligible payout of €250,000, qualifying total premiums of €100,000, no prior exemption use, debt and actual repayment sufficient for the ordinary exemption, and no exceptional additions. Available exemption is €207,500. Taxable interest is (€250,000 − €207,500) / €250,000 × (€250,000 − €100,000) = €25,500. This is taxable income, not the tax bill. [Payout calculation](https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/verzekeren_of_sparen_voor_de_aflossing).
 
-## When to refuse or refer
-
-- Do not calculate a final filing amount without ownership, occupation periods, correct-year valuation, debt history and supporting payments. Refer disputed economic ownership, cross-border treaty/residence, inheritance rights, divorce/maintenance allocations, mixed business property, complex arrears or transitions, disputed equity reserves, and legacy-product events. Refer disputed main-residence facts before relying on a judicial precedent.
-
-Deliver a property-period schedule, debt-tranche reconciliation, source/year register, home-income calculation, partner allocation and unresolved-input list. Keep supporting documents and client approval; the guide itself does not authorize submission.
-
-## Checked examples
+### Checked examples
 
 ```oa-check
-name: Eigenwoningforfait, WOZ value EUR 400,000 (2026)
+name: Eigenwoningforfait and Hillen deduction, WOZ EUR 300,000 (2026)
 inputs:
-  woz: 400000
+  woz: 300000
+  costs: 0
 steps:
-  - forfait: pct(woz, 0.35)
+  - forfait: woz * 0.0035
+  - hillen: (forfait - costs) * 0.71867
+  - home_income: forfait - costs - hillen
 expected:
-  forfait: 1400
+  forfait: 1050.00
+  hillen: 754.60
+  home_income: 295.40
 ```
 
 ```oa-check
@@ -116,13 +146,39 @@ expected:
   forfait: 8250
 ```
 
+```oa-check
+name: Partial KEW exemption, payout EUR 250,000 (2026)
+inputs:
+  payout: 250000
+  premiums: 100000
+  exemption: 207500
+steps:
+  - taxable_interest: (payout - exemption) / payout * (payout - premiums)
+expected:
+  taxable_interest: 25500.00
+```
+
+## When to refuse or refer
+
+- Do not calculate a final filing amount without ownership, occupation periods, correct-year valuation, debt history and supporting payments. Refer disputed economic ownership, cross-border treaty/residence, inheritance rights, divorce/maintenance allocations, mixed business property, complex arrears or transitions, disputed equity reserves, and legacy-product events. Refer disputed main-residence facts before relying on a judicial precedent.
+
+## Filing and payment
+
+Deliver a property-period schedule, debt-tranche reconciliation, source/year register, home-income calculation, partner allocation and unresolved-input list. Keep supporting documents and client approval; the guide itself does not authorize submission.
+
 ## Sources
 
-- https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2025/eigen_woning_en_restschuld_vroegere (read 2026-10-31)
-- https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/eigen_woning_en_restschuld_vroegere (read 2026-10-31)
+| Source | URL | Read on |
+|---|---|---|
+| Belastingdienst, Toelichting aangifte 2026, chapter 10 eigen woning | https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/eigen_woning_en_restschuld_vroegere | 2026-11-14, read for the 2026 eigenwoningforfait table, the 0.55% and EUR 7,425 assignment schedule, 70% letting rule, EUR 6,633 room ceiling, 3-year sale and future-home periods, 360 months and the 15-year residual-debt rule |
+| Belastingdienst, Toelichting aangifte 2025, chapter 10 eigen woning | https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2025/eigen_woning_en_restschuld_vroegere | 2026-11-14, read for the 2025 table, to keep 2025 returns on 2025 figures |
+| Belastingdienst, geen of een kleine eigenwoningschuld | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/woning/eigenwoningforfait/geen_of_een_kleine_eigenwoningschuld/geen_of_een_kleine_eigenwoningschuld | 2026-11-14, read for the 71.867% Hillen percentage and the 37.56% rate cap example |
+| Belastingdienst, uitkering kapitaalverzekering eigen woning | https://www.belastingdienst.nl/wps/wcm/connect/nl/koopwoning/content/belasting-betalen-over-uitkering-kapitaalverzekering-eigen-woning | 2026-11-14, read for the EUR 207,500 (2026) and EUR 204,000 (2025) exemptions and the partner amounts |
+| Belastingdienst, Toelichting 2026, verzekeren of sparen voor de aflossing | https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/verzekeren_of_sparen_voor_de_aflossing | 2026-11-14, read for the 10-times premium ratio and the partial-exemption calculation |
+| Wet inkomstenbelasting 2001, art. 3.111 to 3.123a and 10bis.1, version 1 January 2026 | https://wetten.overheid.nl/BWBR0011353/2026-01-01 | 2026-11-14, read for the article list and art. 3.112 headings; the article texts were not re-read line by line today |
 
-Not yet confirmed: nothing outstanding from this pass.
+Not yet confirmed: the rijksoverheid.nl lending pages (100% loan-to-value and the energy-saving exception) and the tijdelijk-verhuren page were not reopened today; they hold no figure used in a calculation. Art. 3.111(7) wording on free family occupancy was not re-read line by line today.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-12. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `netherlands-owner-occupied-home-tax-scheme` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/netherlands-owner-occupied-home-tax-scheme. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `netherlands-owner-occupied-home-tax-scheme` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/netherlands-owner-occupied-home-tax-scheme. If neither is available, confirm every figure against the official source pages cited above before relying on it.

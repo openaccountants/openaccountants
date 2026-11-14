@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/morocco-corporate-income-tax"
   jurisdiction: "MA"
   tax_year: "2026"
-  last_updated: "2026-11-01"
+  last_updated: "2026-11-14"
 ---
 
 # Morocco: company tax (IS), 2026
@@ -30,7 +30,7 @@ Companies of any form and purpose, except those in Art. 3; public bodies and oth
 | Banks and insurers | 40% | Credit institutions and similar bodies, Bank Al Maghrib, CDG, insurers and reinsurers including Takaful. Certain microfinance SAs excluded for five years | 2026 | CGI Art. 19-I-C https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1 |
 | Non-resident contractors, flat tax | 8% of contract value excl. VAT | Option under Art. 16; discharges Art. 4 withholding | 2026 | CGI Art. 19-III-A https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1 |
 | Non-resident gross income withholding | 10% | Art. 15 income excl. VAT | 2026 | CGI Art. 19-IV-B https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1 |
-| Dividends withholding | 11.25% | Art. 13 income distributed from 1 January 2026; 10% from 1 January 2027 | 2026 | CGI Art. 19-IV-B, 247-XXXVII-C same PDF |
+| Dividends withholding | 11.25% | Art. 13 income distributed from 1 January 2026; 10% from 1 January 2027 | 2026 | CGI Art. 19-IV-B, 247-XXXVII-C https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1 |
 | Fixed-income withholding | 20% | Art. 14 and 14 bis income | 2026 | CGI Art. 19-IV-C https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1 |
 | Withholding on Art. 15 bis and 15 ter payments to IS companies | 5% | Art. 15 bis fees and commissions, Art. 15 ter rent, excl. VAT, paid by the State, local authorities, public enterprises and subsidiaries, banks and insurers (fees from 1 July 2026). Other businesses by last closed year turnover: MAD 500,000,000 from 1 July 2026, 350,000,000 from 1 January 2027, 200,000,000 from 1 January 2028. Rent: amounts allocated from 1 July 2026 | 2026 | CGI Art. 19-IV-A, 247-XXXXVI, Finance Law 50-25 Art. 7-IV https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1 |
 | Cotisation minimale | 0.25%, or 0.15% on commercial sales of listed goods (petroleum products, gas, butter, oil, sugar, flour, water, electricity, medicines) | Art. 144-I-B base, excl. VAT | 2026 | CGI Art. 144-I-D https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1 |
@@ -110,4 +110,4 @@ Not yet confirmed: Art. 6 exemptions; SIMPL-IS portal steps and form number; tre
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-01. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `morocco-corporate-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/morocco-corporate-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `morocco-corporate-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/morocco-corporate-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

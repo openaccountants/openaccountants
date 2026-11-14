@@ -1,19 +1,20 @@
 ---
 name: eg-social-insurance
 description: Use this skill for Egypt social insurance contributions in tax year 2026 for an employee, employer, or self-employed business owner, professional, craftsman, merchant, farmer, freelancer, company director, Egyptian abroad or irregular worker. Trigger on "Egypt social insurance", "التأمينات الاجتماعية", "social insurance contributions Egypt", "self-employed social insurance Egypt", "Law 148 2019", "NOSI", "insurance wage Egypt", "comprehensive social insurance scheme" or "تأمين أصحاب الأعمال". It covers rates by branch, the 2026 wage band, payment, forms, late charges and fines. Read this skill before any Egypt social insurance work. Salary tax sits in eg-payroll.
-version: 1.1
+version: 1.2
 jurisdiction: EG
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 depends_on:
   - social-contributions-workflow-base
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
+type: computation
 ---
 
-# Egypt Social Insurance v1.1
+# Egypt Social Insurance v1.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 

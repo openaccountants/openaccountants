@@ -1,14 +1,15 @@
 ---
 name: ch-corporate-income-tax
 description: "Swiss profit tax on companies for tax year 2026, from the law and ESTV publications. Covers who is taxable (seat or effective management, Swiss branches), the federal profit tax of 8.5% of net profit after tax (DBG art. 68, about 7.83% of profit before tax), how cantonal and communal profit tax is built from a simple rate times multipliers (Zurich 2026 worked through), the taxable base, 7-year loss carry-forward, the participation reduction (10% or CHF 1 million), the STAF measures (patent box, R&D super deduction, notional interest deduction, 70% relief cap), cantonal capital tax, the 15% Pillar Two minimum tax, filing, payment, late interest of 4.0% and penalties. Trigger on: Swiss corporate tax, Gewinnsteuer, Beteiligungsabzug, AG or GmbH tax Switzerland, Zurich company tax rate, patent box Switzerland, Ergänzungssteuer. Out of scope: ch-transfer-pricing, ch-cross-border, ch-cantonal-tax, ch-vat-return, ch-company-formation."
-version: 0.2
+version: 0.3
 jurisdiction: CH
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: corporate-tax
+type: computation
 ---
 
 # Switzerland: corporate profit tax (2026)

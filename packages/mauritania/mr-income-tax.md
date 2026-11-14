@@ -3,16 +3,17 @@ name: mr-income-tax
 description: "Prepare a source-based Mauritania research file for individual business profit, employment and property-income classification in the 2026 country pack. Use this Guide to identify the taxpayer, classify the transaction, assemble the relevant documents and compare the cited statutory baseline with later amendments. It covers the stated ordinary cases, computation conditions, filing obligations and worked decisions, with official source links and explicit limits. Trigger phrases include Mauritania tax, DGI, taxpayer registration, taxable base, payment deadline and compliance evidence. This is a partial research draft: the complete operative amendment chain and current submission procedures are not established, and no licensed accountant has attested this revision."
 jurisdiction: MR
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: international
-version: 0.2
+version: 0.3
 tax_year_notes: "2026 research draft; cited historical baseline and selected later replacements; operative amendment chain incomplete"
 tier: 2
 domain: income-tax
+type: computation
 ---
 
-# Mauritania Individual Income Tax v0.2
+# Mauritania Individual Income Tax v0.3
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
