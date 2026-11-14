@@ -78,7 +78,7 @@ The computation is referred: rule 76(7) requires a separate source/country compa
 3. Attach the required evidence. Arrange accountant verification when the threshold/recipient condition above applies. An individual under that threshold is still responsible for a correct statement and proof.
 4. Preview, proceed to e-Verify and submit. Complete verification, then save the Transaction ID, Acknowledgement Number and downloaded copy. Retain the email/mobile confirmation. These prove submission, not that the claim was substantively allowed.
 
-[Official Form 44 guidance, pp.1-3](https://www.incometaxindia.gov.in/documents/d/guest/fn-44); [rule 76(10)-(17)](https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-03/En-Notified-IT-Rules-2026-20-03-2026.pdf). For a later settlement, use Form 45's Part A particulars, prepopulated non-editable Part B and Part C settlement intimation; attach settlement/payment evidence, preview, e-verify and retain its acknowledgement within the separate settlement deadline. [Guidance pp.3-5](https://www.incometaxindia.gov.in/documents/d/guest/fn-44).
+[Official Form 44 guidance, pp.1-3](https://www.incometaxindia.gov.in/documents/d/guest/fn-44); [rule 76(10)-(17)](https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-03/En-Notified-IT-Rules-2026-20-03-2026.pdf). For a later settlement, use Form 45's Part A particulars, Part B with only columns (1)-(12) prepopulated and non-editable (complete its remaining fields), and Part C settlement intimation; attach settlement/payment evidence, preview, e-verify and retain its acknowledgement within the separate settlement deadline. [Guidance pp.3-5](https://www.incometaxindia.gov.in/documents/d/guest/fn-44).
 
 ### 4. Earlier-period Form 67 workflow: 2025-2026 filing cycle
 
@@ -189,7 +189,6 @@ The old file carried the ITR-4 page's **31 August 2026** due date for AY 2026-27
 | https://www.incometax.gov.in/iec/foportal/formsfaqs | Read for Form 67 section only: EVC/DSC, representative and documents, not all forms on page | 2026-11-14 |
 | https://www.incometax.gov.in/iec/foportal/newformpage/forms/form41-UM | Read for full Form 41 manual: eligibility, certificate/TIN, new Act tab, 3 panels, PAN/NR-ID verification and receipt | 2026-11-14 |
 | https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/file-itr-4-sugam-online | Read for Q1-2,22,25 and neighboring eligibility exclusions: old cycle ITR-4date/latefee and RNOR/NR exclusion | 2026-11-14 |
-
 | https://egazette.gov.in/WriteReadData/2022/238191.pdf | Read for complete English notification and proviso on PDF p.2: amended old rule 128(9), commencement and updated-return exception; recovered genuine Gazette PDF, not a search extract | 2026-11-14 |
 | https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-04/Notification%20No.64_2026.pdf | Read for all 4 pages of the corrigendum; items 8-9 change accountant-verification wording on Forms 44/45, no change to rule 76 deadline or threshold | 2026-11-14 |
 
