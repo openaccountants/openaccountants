@@ -1,21 +1,21 @@
 ---
 name: portugal-formation
-description: "Utilize esta skill sempre que lhe perguntarem sobre constituição, incorporação ou registo de uma empresa em Portugal em 2026. Acione perante expressões como \"constituir empresa em Portugal\", \"constituição de Lda\", \"sociedade por quotas\", \"Empresa na Hora\", \"Empresa Online\", \"constituição de empresa portuguesa\", \"registar negócio em Portugal\", \"sociedade unipessoal\", \"NIF Portugal\", \"Registo Comercial\", \"beneficiário efetivo\", \"RCBE\", ou qualquer questão sobre o início de uma entidade empresarial em Portugal. Abrange tipos de entidade (Lda, Unipessoal Lda, SA, ENI), Código das Sociedades Comerciais (capital, entradas, reserva legal, revisor oficial de contas), emolumentos do IRN para 2026 (Empresa na Hora, Empresa Online, certificado de admissibilidade, certidão permanente), RCBE, inscrição fiscal, obrigações pós-constituição e abertura de conta bancária. Fora do âmbito, ver: pt-corporate-tax (cálculo do IRC), portugal-vat-return (IVA), pt-social-contributions (Segurança Social), portugal-bookkeeping (contabilidade e SNC), pt-cross-border (não residentes). LEIA SEMPRE esta skill antes de aconselhar sobre a constituição de empresas em Portugal. Trigger also on: \"set up a company in Portugal\", \"Lda formation\", \"sociedade por quotas\", \"Empresa na Hora\", \"Portuguese company formation\", \"register a business Portugal\", \"sociedade unipessoal\", \"NIF Portugal\", \"Registo Comercial\", \"beneficial owner register Portugal\"."
-version: 1.3
+description: "Utilize esta skill sempre que lhe perguntarem sobre constituição, incorporação ou registo de uma empresa em Portugal em 2026. Acione perante expressões como \"constituir empresa em Portugal\", \"constituição de Lda\", \"sociedade por quotas\", \"Empresa na Hora\", \"Empresa Online\", \"constituição de empresa portuguesa\", \"registar negócio em Portugal\", \"sociedade unipessoal\", \"NIF Portugal\", \"Registo Comercial\", \"beneficiário efetivo\", \"RCBE\", ou qualquer questão sobre o início de uma entidade empresarial em Portugal. Abrange tipos de entidade (Lda, Unipessoal Lda, SA, ENI), Código das Sociedades Comerciais (capital, entradas, reserva legal, revisor oficial de contas), emolumentos do IRN para 2026 (Empresa na Hora, Empresa Online, certificado de admissibilidade, certidão permanente), RCBE, inscrição fiscal, obrigações pós-constituição e abertura de conta bancária. Fora do âmbito, ver, pt-corporate-tax (cálculo do IRC), portugal-vat-return (IVA), pt-social-contributions (Segurança Social), portugal-bookkeeping (contabilidade e SNC), pt-cross-border (não residentes). LEIA SEMPRE esta skill antes de aconselhar sobre a constituição de empresas em Portugal. Trigger also on, \"set up a company in Portugal\", \"Lda formation\", \"sociedade por quotas\", \"Empresa na Hora\", \"Portuguese company formation\", \"register a business Portugal\", \"sociedade unipessoal\", \"NIF Portugal\", \"Registo Comercial\", \"beneficial owner register Portugal\"."
+version: 2.0
 jurisdiction: PT
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-14
 depends_on:
   - company-formation-workflow-base
 category: formation
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: formation
+type: filing-howto
 ---
 
 # Portugal Formation
 
-## Portugal: Constituição de Empresa e Seleção de Entidade, Skill v1.2 (2026)
 
 Esta skill cobre a escolha da forma jurídica e a constituição de uma sociedade comercial em Portugal em 2026. Os números de imposto vêm das skills de domínio do mesmo pacote, que mandam quando os números divergem:
 
@@ -25,48 +25,69 @@ Esta skill cobre a escolha da forma jurídica e a constituição de uma sociedad
 - `portugal-bookkeeping`: contabilidade organizada, SNC e SAF-T.
 - `pt-cross-border`: não residentes e estabelecimento estável.
 
-## Rates and thresholds
+## Scope
 
-### Constituição de Empresa
+This skill is the how-to for choosing a legal form and forming a commercial company in Portugal in 2026: ENI (sole trader), sociedade por quotas (Lda), sociedade unipessoal por quotas and sociedade anónima (SA); Empresa na Hora, Empresa Online and the traditional route; capital and its deposit; the name certificate; registration fees; the IRC and VAT start-of-activity steps; the RCBE beneficial owner declaration; and the first duties after formation.
 
-- **Lda: capital**: livremente fixado; cada quota tem no mínimo €1, com pelo menos 2 sócios (logo, €2 no mínimo)  _(CSC art. 7.º, n.º 2, art. 201.º e art. 219.º, n.º 3)_
-- **Unipessoal Lda: capital**: quota única de no mínimo €1  _(CSC art. 219.º, n.º 3, e art. 270.º-A; justica.gov.pt, Capital social)_
-- **SA: capital mínimo**: €50.000; pode ser diferida a realização de até 70% das entradas em dinheiro (ou seja, pelo menos 30% realizado)  _(CSC art. 276.º, n.º 5, e art. 277.º, n.º 2)_
-- **SA: valor nominal mínimo da ação**: 1 cêntimo  _(CSC art. 276.º, n.º 3)_
-- **ENI**: sem personalidade jurídica, responsabilidade ilimitada; tributado em IRS (ver `pt-income-tax`)
-- **Empresa na Hora (pedido normal)**: €360  _(RERN art. 27.º, n.º 3.1; IRN, Criar Empresa na Hora)_
-- **Empresa na Hora com marca (uma classe)**: €200 segundo a tabela do IRN; €44 por cada classe adicional  _(IRN, Criar Empresa na Hora)_
-- **Empresa Online (pacto pré-aprovado)**: €220 normal / €440 urgente  _(RERN art. 27.º, n.º 3.6; IRN, Criar Empresa Online)_
-- **Empresa Online (pacto elaborado pelos sócios)**: €360 normal / €720 urgente  _(RERN art. 27.º, n.º 3.7; IRN, Criar Empresa Online)_
-- **Registo de constituição pela via tradicional**: €360  _(RERN art. 22.º, n.º 2.1)_
-- **Certificado de admissibilidade**: €75; a urgência acresce o valor do emolumento do ato (€75), total €150; validade 3 meses  _(RERN art. 23.º, n.º 2.1 e 2.2; gov.pt)_
-- **Certidão permanente (assinatura)**: €25 por 1 ano; €40 por 2; €60 por 3; €70 por 4 anos  _(RERN art. 22.º, n.º 13.4)_
-- **Depósito do capital (Lda, Unipessoal)**: 5 dias úteis, ou declaração de entrega nos cofres da sociedade até ao fim do primeiro exercício económico  _(CSC art. 202.º, n.º 4; IRN, Capital social)_
-- **RCBE (beneficiário efetivo)**: declaração inicial em 30 dias após o registo; atualização em 30 dias após cada alteração; confirmação anual até 31 de dezembro  _(RJRCBE arts. 12.º, 14.º e 15.º)_
-- **Inscrição em IRC**: sociedade sujeita a registo comercial: 15 dias a partir da apresentação a registo na Conservatória; entidade não sujeita a registo comercial: 90 dias a partir da inscrição no RNPC. Quando a declaração de início de atividade do IVA deva ser entregue dentro desse prazo, vale como declaração de inscrição  _(CIRC art. 118.º, n.os 1 e 2)_
-- **Declaração de início de atividade (IVA)**: antes de iniciar a atividade  _(CIVA art. 31.º, n.º 1)_
-- **IES**: até 15 de julho do ano seguinte  _(CIRC art. 121.º, n.º 2)_
-- **IRC (Modelo 22)**: até ao último dia de maio do ano seguinte  _(CIRC art. 120.º, n.º 1)_
-- **Contabilidade organizada**: obrigatória para sociedades comerciais; atrasos de execução até 90 dias no máximo  _(CIRC art. 123.º, n.os 1 e 3)_
-- **Taxa normal de IRC**: 19% nos períodos iniciados em 2026  _([CIRC art. 87.º](https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc87.aspx); ver `pt-corporate-tax`)_
-- **PME: primeiros €50.000 de matéria coletável**: 15% em 2026  _(CIRC art. 87.º, n.º 2; Lei 64/2025 art. 3.º; ver `pt-corporate-tax`)_
+Who is in: residents and non-residents forming a company in Portugal. Who is out: regulated activities (banks, insurers, investment firms), cooperatives, branches of foreign companies beyond the basics, and immigration (Golden Visa) questions. Tax after formation is in `pt-corporate-tax`, `portugal-vat-return`, `pt-social-contributions`, `portugal-bookkeeping` and `pt-cross-border`.
 
-## Secção 1: Referência Rápida
+### Quick reference
 
 **Referência Rápida**
 
 | Campo | Valor |
 | --- | --- |
-| País | Portugal (República Portuguesa) |
-| Moeda | EUR |
 | Registo comercial | Instituto dos Registos e do Notariado (IRN): Conservatória do Registo Comercial e Registo Nacional de Pessoas Coletivas (RNPC) |
 | Legislação principal | Código das Sociedades Comerciais (CSC); DL 111/2005 (Empresa na Hora); DL 125/2006 (Empresa Online); Regulamento Emolumentar dos Registos e Notariado (RERN, DL 322-A/2001); Lei 89/2017 (RCBE) |
 | Tempo de constituição | Empresa na Hora: todo o processo "num único balcão, num único momento" (IRN). Empresa Online: o IRN não publica um prazo; analisa o pedido depois do pagamento |
 | Custo de constituição (2026) | €360 Empresa na Hora; €220 ou €360 Empresa Online (RERN art. 27.º) |
 | Taxa de IRC | 19% (taxa geral, períodos iniciados em 2026); 15% sobre os primeiros €50.000 de matéria coletável para PME e Small Mid Cap (ver `pt-corporate-tax`) |
-| Versão da skill | 1.2 |
+| Versão da skill | 2.0 |
 
-## Secção 2: Comparação de Tipos de Entidade
+## Ask the client first
+
+- How many founders, are they natural persons or companies, and does anyone need limited liability?
+- How much capital, in cash or in assets (assets need a ROC report)?
+- Are the founders resident in Portugal or the EU/EEA, and do they already have a NIF? Non-EU residents need a tax representative unless they join electronic notifications.
+- Is the company name pre-approved (Bolsa de Firmas) or new (admissibility certificate)?
+- What will the company do (CAE code, regulated activity)?
+- Who will be the contabilista certificado? Every company must keep organised accounts.
+
+## Rates, bands and thresholds
+
+Figures below were found on 2026-11-14 on the IRN (justica.gov.pt), gov.pt and Portal das Finanças pages linked on each row. Tax rates are owned by `pt-corporate-tax`; they are repeated here only as pointers.
+
+| Item | Figure | Tax year | Source |
+| --- | --- | --- | --- |
+| Lda (at least 2 members): minimum per quota | EUR 1 (so EUR 2 in all) | 2026 | https://justica.gov.pt/Como-criar-uma-empresa-online/Capital-social |
+| Sociedade unipessoal por quotas: minimum quota | EUR 1 | 2026 | same |
+| SA: minimum capital | EUR 50,000 | 2026 | same |
+| SA: minimum value of each share | EUR 0.01 | 2026 | same |
+| SA: share of capital the shareholders must deposit | at least 30% | 2026 | same |
+| Lda and unipessoal: capital deposit | within 5 working days, or declared to be delivered to the company by the end of the first financial year | 2026 | same |
+| Empresa na Hora: normal request | EUR 360 | 2026 | https://justica.gov.pt/Servicos/Empresa-na-Hora |
+| Empresa na Hora: with a trade mark in one class / each extra class | EUR 200 / EUR 44 | 2026 | same |
+| Beneficial owner (RCBE) declaration after formation | within 30 days | 2026 | same |
+| Empresa Online, pre-approved articles: normal / urgent | EUR 220 / EUR 440 | 2026 | https://justica.gov.pt/Servicos/Empresa-Online |
+| Empresa Online, articles drafted by the founders: normal / urgent | EUR 360 / EUR 720 | 2026 | same |
+| Certificate of admissibility of the company name: validity | 3 months | 2026 | https://www.gov.pt/servicos/pedir-o-certificado-de-admissibilidade-de-firma-ou-denominacao |
+| IRC registration: company subject to commercial registration / other entity | 15 days from filing for registration / 90 days from RNPC registration | 2026 | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc118.aspx |
+| IRC return (Modelo 22) | by the last day of May of the following year | 2026 | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc120.aspx |
+| IES (annual accounting and tax declaration) | by 15 July, working day or not | 2026 | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc121.aspx |
+| Organised accounts: maximum delay in bookkeeping | 90 days | 2026 | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc123.aspx |
+| IRC general rate, periods starting in 2026 / SME rate on the first EUR 50,000 | 19% / 15% | 2026 | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc87.aspx |
+
+## The method, step by step
+
+
+1. **Pick the form.** ENI for one person accepting unlimited liability (taxed in IRS); Lda or unipessoal for limited liability with a minimum quota of EUR 1; SA from EUR 50,000. One natural person may hold only one sociedade unipessoal por quotas.
+2. **Pick the route.** Empresa na Hora (one counter, the same day, EUR 360), Empresa Online (EUR 220 or EUR 360, urgent EUR 440 or EUR 720), or the traditional route with a name certificate (valid 3 months).
+3. **Pay in the capital.** Lda and unipessoal: within 5 working days, or declare delivery to the company by the end of the first financial year. SA: at least 30% deposited.
+4. **Register for tax.** The VAT start-of-activity declaration goes in before activity starts (CIVA art. 31); IRC registration within 15 days of filing for commercial registration (CIRC art. 118). Name the contabilista certificado.
+5. **File the RCBE** beneficial owner declaration within 30 days.
+6. **Set up compliance.** Electronic mailbox, organised accounts with no more than 90 days' delay (CIRC art. 123), Modelo 22 by the end of May and IES by 15 July of the following year.
+
+### Comparação de Tipos de Entidade
 
 **Comparação de Tipos de Entidade**
 
@@ -85,9 +106,9 @@ Esta skill cobre a escolha da forma jurídica e a constituição de uma sociedad
 
 **Limite à unipessoal (CSC art. 270.º-C).** Uma pessoa singular só pode ser sócia de uma única sociedade unipessoal por quotas, e uma sociedade por quotas não pode ter como sócio único uma sociedade unipessoal por quotas. Em caso de violação, qualquer interessado pode pedir a dissolução por via administrativa. Pergunte sempre se o cliente já detém outra unipessoal.
 
-## Secção 3: Processo de Registo
+### Processo de Registo
 
-### Opção A: Empresa na Hora (Constituição no Próprio Dia)
+#### Opção A: Empresa na Hora (Constituição no Próprio Dia)
 
 O IRN faz a constituição "num único balcão, num único momento". Permite criar sociedade unipessoal por quotas, sociedade por quotas e sociedade anónima (não sociedades anónimas europeias).
 
@@ -101,7 +122,7 @@ O IRN faz a constituição "num único balcão, num único momento". Permite cri
 8. **Depositar o capital** em 5 dias úteis na conta da sociedade, salvo se já depositado no ato ou se os sócios declararem a entrega nos cofres da sociedade até ao fim do primeiro exercício económico.
 9. **Declarar o beneficiário efetivo** (RCBE) no prazo de 30 dias.
 
-### Opção B: Empresa Online (serviço Empresa 2.0)
+#### Opção B: Empresa Online (serviço Empresa 2.0)
 
 1. Aceder ao serviço Empresa 2.0 com Cartão de Cidadão, Chave Móvel Digital, certificado digital de profissional jurídico ou autenticação europeia (eIDAS). Um cidadão estrangeiro pode usar a Chave Móvel Digital associada ao passaporte ou eIDAS.
 2. Preencher o formulário: tipo de sociedade, sócios e gerentes ou administradores, CAE e objeto, capital, sede, firma e beneficiário efetivo. Documentos em língua estrangeira levam tradução.
@@ -112,7 +133,7 @@ O IRN faz a constituição "num único balcão, num único momento". Permite cri
 
 **Não é possível a Empresa Online** se um sócio for menor de 18 anos, se algum sócio não tiver NIF português, se a sociedade resultar de fusão ou cisão, se um sócio for sociedade estrangeira sem NIPC português, ou se o capital for realizado em espécie. Na Empresa Online a entrada de capital só pode ser feita em dinheiro.
 
-### Opção C: Constituição Tradicional (Conservatória)
+#### Opção C: Constituição Tradicional (Conservatória)
 
 1. Obter certificado de admissibilidade da firma junto do RNPC (€75; válido 3 meses).
 2. Elaborar o pacto social (estatutos).
@@ -121,7 +142,7 @@ O IRN faz a constituição "num único balcão, num único momento". Permite cri
 5. Inscrever a sociedade nas Finanças (CIRC art. 118.º) e na Segurança Social.
 6. É a via para entradas em espécie complexas e pactos à medida. Os custos de advogado ou notário não têm tabela pública nesta skill.
 
-### Passos Pós-Registo (Todas as Opções)
+#### Passos Pós-Registo (Todas as Opções)
 
 - Inscrição em IRC: uma sociedade comercial está sujeita a registo comercial, por isso entrega a declaração de inscrição em 15 dias a partir da apresentação a registo na Conservatória (o prazo de 90 dias a partir da inscrição no RNPC é só para entidades não sujeitas a registo comercial). Quando a declaração de início de atividade do IVA deva ser entregue dentro desse prazo, vale como declaração de inscrição (CIRC art. 118.º, n.os 1 e 2).
 - Declaração de início de atividade para IVA antes de iniciar a atividade (CIVA art. 31.º, n.º 1). Periodicidade e regras: ver `portugal-vat-return`.
@@ -129,7 +150,7 @@ O IRN faz a constituição "num único balcão, num único momento". Permite cri
 - Inscrição na Segurança Social como entidade empregadora quando contratar, e contribuições de gerentes remunerados: ver `pt-social-contributions`.
 - Declaração do beneficiário efetivo (RCBE) em 30 dias (RJRCBE art. 12.º, n.º 1).
 
-## Secção 4: Requisitos de Capital
+### Requisitos de Capital
 
 **Requisitos de Capital**
 
@@ -143,7 +164,7 @@ Não são admitidas contribuições de indústria (só trabalho) nas Lda e SA (C
 
 **Reserva legal.** Pelo menos 5% do lucro de cada exercício vai para a reserva legal até esta atingir 20% do capital (CSC art. 295.º, n.º 1). Numa Lda a reserva legal nunca é inferior a €2.500 (art. 218.º, n.º 2), mesmo com capital de €1 ou €2. Isto limita a distribuição de lucros nos primeiros anos.
 
-## Secção 5: Repartição de Custos
+### Repartição de Custos
 
 **Repartição de Custos (emolumentos de 2026)**
 
@@ -161,7 +182,7 @@ Não são admitidas contribuições de indústria (só trabalho) nas Lda e SA (C
 | **Total mínimo (Empresa Online, pacto pré-aprovado)** | **€220** | Opção mais barata, mas exige NIF português para todos os sócios |
 | **Total (Empresa na Hora)** | **€360** | Constituição no próprio dia |
 
-### Manutenção Anual
+#### Manutenção Anual
 
 **Manutenção Anual**
 
@@ -173,7 +194,7 @@ Não são admitidas contribuições de indústria (só trabalho) nas Lda e SA (C
 | Alterações ao contrato de sociedade | €200; com aumento ou redução de capital €225 (RERN art. 22.º, n.os 2.4 e 2.4.1) |
 | Publicações obrigatórias | Incluídas no emolumento do registo (RERN art. 22.º, n.º 1) |
 
-## Secção 6: Cumprimento Pós-Constituição
+### Cumprimento Pós-Constituição
 
 **Cumprimento Pós-Constituição**
 
@@ -195,9 +216,9 @@ Não são admitidas contribuições de indústria (só trabalho) nas Lda e SA (C
 
 Para os períodos de tributação diferentes do ano civil, os prazos do Modelo 22 e da IES contam do fim do período (CIRC arts. 120.º, n.º 2, e 121.º, n.º 3).
 
-## Secção 7: Abertura de Conta Bancária
+### Abertura de Conta Bancária
 
-### Documentos Habitualmente Exigidos
+#### Documentos Habitualmente Exigidos
 
 São exigências dos bancos, não da lei societária; confirme com o banco escolhido.
 
@@ -209,16 +230,16 @@ São exigências dos bancos, não da lei societária; confirme com o banco escol
 - Declaração de início de atividade
 - Declaração do beneficiário efetivo (RCBE)
 
-### Prazos
+#### Prazos
 
 Os bancos não têm prazo legal. Para não residentes, conte com mais documentação e mais tempo. Lembre-se do prazo de 5 dias úteis para o depósito do capital quando os sócios não optaram pela entrega até ao fim do exercício.
 
-### Bancos Comuns
+#### Bancos Comuns
 
 - Caixa Geral de Depósitos, Millennium BCP, Novo Banco, BPI (tradicionais)
 - Revolut Business, Wise Business (digitais; confirme se emitem IBAN português)
 
-## Secção 8: Considerações para Sócios Fundadores Estrangeiros
+### Considerações para Sócios Fundadores Estrangeiros
 
 **Considerações para Sócios Fundadores Estrangeiros**  _(https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/lgt/Pages/lgt19.aspx)_
 
@@ -233,7 +254,7 @@ Os bancos não têm prazo legal. Para não residentes, conte com mais documenta�
 | Restrições à propriedade estrangeira | Nenhumas para a Lda comum; setores regulados podem exigir autorizações específicas e capital mínimo superior |
 | Golden Visa | A autorização de residência para investimento (ARI) tem regras próprias na Lei 23/2007, art. 3.º, alteradas em 2023. Não foram relidas hoje: ver "Not yet confirmed" |
 
-## Secção 9: Erros Comuns e Recusas
+### Erros Comuns e Recusas
 
 - **R-PT-F1**: Dispensar o Contabilista Certificado. "Toda a sociedade comercial tem de ter contabilidade organizada (CIRC art. 123.º, n.º 1), e a constituição pede a indicação de um Contabilista Certificado (IRN). Só um Contabilista Certificado inscrito na Ordem pode assumir a responsabilidade técnica pela contabilidade de uma entidade com contabilidade organizada e assinar as suas demonstrações financeiras e declarações fiscais (Estatuto da OCC, art. 10.º, n.º 1, alínea b)). Não é opcional."
 - **R-PT-F2**: Não depositar o capital a tempo. "Na Empresa na Hora e na Empresa Online há 5 dias úteis para depositar o capital, salvo depósito no ato ou declaração de entrega nos cofres da sociedade até ao fim do primeiro exercício. Os sócios declaram a entrega sob sua responsabilidade (CSC art. 202.º, n.os 4 e 6)."
@@ -244,7 +265,7 @@ Os bancos não têm prazo legal. Para não residentes, conte com mais documenta�
 - **R-PT-F7**: Entradas em espécie sem ROC. "Qualquer entrada em bens diferentes de dinheiro precisa de relatório de um ROC sem interesses na sociedade, qualquer que seja o valor (CSC art. 28.º, n.º 1). A Empresa Online não aceita entradas em espécie."
 - **R-PT-F8**: Distribuir todo o lucro com capital de €1. "Numa Lda, 5% do lucro vai para a reserva legal até 20% do capital e nunca abaixo de €2.500 (CSC arts. 218.º e 295.º). Com capital mínimo, a reserva legal tem de chegar a €2.500 antes de deixar de reter lucros."
 
-## Secção 10: Cronograma
+### Cronograma
 
 **Cronograma (prazos legais; durações práticas variam)**
 
@@ -261,30 +282,66 @@ Os bancos não têm prazo legal. Para não residentes, conte com mais documenta�
 | Entrega do RCBE | 30 dias após o registo | RJRCBE art. 12.º |
 | **Pronta para operar** | Residentes via Empresa na Hora: a sociedade fica constituída no próprio dia | IRN |
 
+## Worked cases
+
+### Case 1: two founders form an Lda through Empresa Online
+
+Facts. Two residents form an Lda with capital of EUR 5,000 (EUR 2,500 each, in cash) through Empresa Online using pre-approved articles, normal request. The name is from the Bolsa de Firmas.
+
+Steps and figures. The IRN fee is EUR 220. Each quota is above the EUR 1 minimum. The founders declare they will deposit the capital within 5 working days. The company is registered; within 15 days of filing for registration it is registered for IRC (the VAT start-of-activity declaration counts as that registration if filed within the period); within 30 days it files the RCBE declaration. Had they chosen urgent processing, the fee would have been EUR 440; with founder-drafted articles, EUR 360.
+
+```oa-check
+name: Portugal 2026, Lda by Empresa Online, fees and quotas
+inputs:
+  capital: 5000
+  founders: 2
+  fee_normal: 220
+  fee_urgent: 440
+  min_quota: 1
+steps:
+  - quota_each: capital / founders
+  - headroom_over_minimum: quota_each - min_quota
+  - urgent_extra: fee_urgent - fee_normal
+expected:
+  quota_each: 2500.00
+  headroom_over_minimum: 2499.00
+  urgent_extra: 220.00
+```
+
+## When to refuse or refer
+
+- Regulated activities needing a licence (banking, insurance, investment, some professions): refer.
+- Contributions in kind (they need a ROC report under CSC art. 28): refer to a ROC and a lawyer.
+- Golden Visa or residence questions: formation alone gives no residence right; refer to an immigration lawyer.
+- Shareholder agreements, articles drafted from scratch, SA governance: refer to a lawyer.
+- Registration fees outside the IRN pages linked here (traditional route, certificates of the register): confirm with the IRN before quoting.
+
 ## Sources
+
+Rows dated 2026-11-14 were opened that day and the figures this skill takes from them were found in the text. The Diário da República consolidated pages keep their earlier read date (see Not yet confirmed).
 
 | Source | URL | Read on |
 |---|---|---|
-| IRN, Criar Empresa na Hora (fees, documents, 5 working days, 30-day RCBE, 15-day início de atividade) | https://justica.gov.pt/Servicos/Empresa-na-Hora | 2026-10-30 |
-| IRN, Criar Empresa Online (Empresa 2.0: fees normal and urgent, EUR 30 correction, exclusions) | https://justica.gov.pt/Servicos/Empresa-Online | 2026-10-30 |
-| IRN, Capital social (minimum quota EUR 1, SA EUR 50,000 and 30%, deposit options) | https://justica.gov.pt/Como-criar-uma-empresa-online/Capital-social | 2026-10-30 |
-| gov.pt, Pedir o certificado de admissibilidade de firma ou denominação (validity three months) | https://www.gov.pt/servicos/pedir-o-certificado-de-admissibilidade-de-firma-ou-denominacao | 2026-10-30 |
+| IRN, Criar Empresa na Hora (fees, documents, 5 working days, 30-day RCBE, 15-day início de atividade) | https://justica.gov.pt/Servicos/Empresa-na-Hora | 2026-11-14 |
+| IRN, Criar Empresa Online (Empresa 2.0: fees normal and urgent, EUR 30 correction, exclusions) | https://justica.gov.pt/Servicos/Empresa-Online | 2026-11-14 |
+| IRN, Capital social (minimum quota EUR 1, SA EUR 50,000 and 30%, deposit options) | https://justica.gov.pt/Como-criar-uma-empresa-online/Capital-social | 2026-11-14 |
+| gov.pt, Pedir o certificado de admissibilidade de firma ou denominação (validity three months) | https://www.gov.pt/servicos/pedir-o-certificado-de-admissibilidade-de-firma-ou-denominacao | 2026-11-14 |
 | Código das Sociedades Comerciais, consolidated (arts. 7, 28, 65, 201, 202, 218, 219, 262, 270-A, 270-C, 273, 276, 277, 295, 413, 414, 488) | https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-lei/1986-34443975 | 2026-10-30 |
 | Regulamento Emolumentar dos Registos e Notariado (DL 322-A/2001), consolidated (arts. 22, 23, 27) | https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-lei/2001-34475775 | 2026-10-30 |
 | Lei 89/2017 and Regime Jurídico do RCBE, consolidated (Lei art. 6; RJRCBE arts. 12, 14, 15, 37) | https://diariodarepublica.pt/dr/legislacao-consolidada/lei/2017-108031925 | 2026-10-30 |
-| CIRC art. 87, IRC rates 2026 | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc87.aspx | 2026-10-30 |
-| CIRC art. 118, declaração de inscrição | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc118.aspx | 2026-10-30 |
-| CIRC art. 120, Modelo 22 by the last day of May | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc120.aspx | 2026-10-30 |
-| CIRC art. 121, IES by 15 July | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc121.aspx | 2026-10-30 |
-| CIRC art. 123, contabilidade organizada, 90-day limit | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc123.aspx | 2026-10-30 |
-| CIVA art. 31, declaração de início de atividade | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/iva31.aspx | 2026-10-30 |
-| CIVA art. 41, monthly or quarterly returns (EUR 650,000) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/iva41.aspx | 2026-10-30 |
-| LGT art. 19, tax representative and electronic mailbox | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/lgt/Pages/lgt19.aspx | 2026-10-30 |
-| Estatuto da Ordem dos Contabilistas Certificados (DL 452/99 as amended, OCC consolidated text in force from 1 March 2024), art. 10(1)(b), acts reserved to Contabilistas Certificados | https://www.occ.pt/sites/default/files/public/2024-09/Estatuto_2024.pdf | 2026-10-30 |
+| CIRC art. 87, IRC rates 2026 | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc87.aspx | 2026-11-14 |
+| CIRC art. 118, declaração de inscrição | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc118.aspx | 2026-11-14 |
+| CIRC art. 120, Modelo 22 by the last day of May | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc120.aspx | 2026-11-14 |
+| CIRC art. 121, IES by 15 July | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc121.aspx | 2026-11-14 |
+| CIRC art. 123, contabilidade organizada, 90-day limit | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc123.aspx | 2026-11-14 |
+| CIVA art. 31, declaração de início de atividade | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/iva31.aspx | 2026-11-14 |
+| CIVA art. 41, monthly or quarterly returns (EUR 650,000) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/iva41.aspx | 2026-11-14 |
+| LGT art. 19, tax representative and electronic mailbox | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/lgt/Pages/lgt19.aspx | 2026-11-14 |
+| Estatuto da Ordem dos Contabilistas Certificados (DL 452/99 as amended, OCC consolidated text in force from 1 March 2024), art. 10(1)(b), acts reserved to Contabilistas Certificados | https://www.occ.pt/sites/default/files/public/2024-09/Estatuto_2024.pdf | 2026-11-14 |
 
-Not yet confirmed: whether the IRN's EUR 200 "pedido com marca associada" at Empresa na Hora is charged on top of the EUR 360 or replaces it (the IRN page lists both without saying; the RERN has no trade-mark fee); whether a power of attorney (procuração) is accepted instead of personal presence at Empresa na Hora, and for the online and traditional routes (the old file said yes for those two); whether foreign documents need an apostille and a certified translation (the IRN pages ask only for a translation); the old claim that a late capital deposit makes the managers personally liable; the Golden Visa (ARI) investment routes and amounts after the 2023 reform (Lei 23/2007 art. 3, not re-read); the old practical estimates, which have no official source: Empresa Online processing in 5 to 10 working days, traditional route in 1 to 3 weeks and EUR 500 to 1,500 for notary and registration, Contabilista Certificado fees of EUR 1,200 to 3,600 a year, "EUR 1,000 or more" of capital in practice, bank account opening in 1 to 5 days (1 to 3 weeks for non-residents), and NIF in 1 to 10 days.
+Not yet confirmed: whether the IRN's EUR 200 "pedido com marca associada" at Empresa na Hora is charged on top of the EUR 360 or replaces it (the IRN page lists both without saying; the RERN has no trade-mark fee); whether a power of attorney (procuração) is accepted instead of personal presence at Empresa na Hora, and for the online and traditional routes (the old file said yes for those two); whether foreign documents need an apostille and a certified translation (the IRN pages ask only for a translation); the old claim that a late capital deposit makes the managers personally liable; the Golden Visa (ARI) investment routes and amounts after the 2023 reform (Lei 23/2007 art. 3, not re-read); the old practical estimates, which have no official source: Empresa Online processing in 5 to 10 working days, traditional route in 1 to 3 weeks and EUR 500 to 1,500 for notary and registration, Contabilista Certificado fees of EUR 1,200 to 3,600 a year, "EUR 1,000 or more" of capital in practice, bank account opening in 1 to 5 days (1 to 3 weeks for non-residents), and NIF in 1 to 10 days; the Código das Sociedades Comerciais, the Regulamento Emolumentar (RERN) and the RCBE regime were not re-read on 2026-11-14 because the Diário da República consolidated pages serve only a script shell and the web archive refused requests; so these earlier figures are not in usable guidance until re-read: traditional-route registration EUR 360 (RERN art. 22), admissibility certificate EUR 75 (EUR 150 urgent) (RERN art. 23), certidão permanente EUR 25 / 40 / 60 / 70 for 1 to 4 years (RERN art. 22), SA deferral of up to 70% of cash contributions (CSC art. 277), the RCBE update within 30 days of a change and yearly confirmation by 31 December (RJRCBE arts 14 and 15), and the legal reserve of 5% of profit up to 20% of capital, never below EUR 2,500 (CSC arts 218 and 295).
 
-## Aviso Legal
+## Disclaimer
 
 Esta skill e os seus resultados são fornecidos apenas para fins informativos e de cálculo e não constituem aconselhamento jurídico, fiscal ou financeiro. A Open Accountants e os seus contribuidores não assumem qualquer responsabilidade por erros, omissões ou consequências decorrentes da utilização desta skill. Todos os resultados devem ser revistos e validados por um profissional qualificado antes de qualquer atuação.
 

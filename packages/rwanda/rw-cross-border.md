@@ -1,18 +1,19 @@
 ---
 name: rw-cross-border
 description: "Rwanda cross-border income tax for the 2026 tax period under Law 027/2022 establishing taxes on income (as amended by Laws 051/2023 and 014/2025), Ministerial Order 009/26/10/TC on permanent residence and effective place of management, and Law 020/2023 on tax procedures. Covers residence of individuals (183 days, 122-day average) and companies (incorporation or effective management, four tests), the permanent establishment rules including the 90-day services test and dependent agents, Rwanda-source income including services performed abroad for residents, 15% withholding on dividends, interest, royalties, service fees, performance payments, repatriated branch profits and reinsurance premiums, the 5% rate for listed securities and long treasury bonds, the 10% tax on direct and indirect share transfers, the pending 1.5% digital services tax, the foreign tax credit cap, treaty residence certificates and the anti-abuse rule. Trigger on: Rwanda withholding tax non-resident, Rwanda permanent establishment, Rwanda tax residence, foreign tax credit Rwanda, Rwanda branch profits, Rwanda indirect transfer. Out of scope: treaty rates, VAT on imported services."
-version: 0.1
+version: 0.2
 jurisdiction: RW
 category: cross-border
 tax_year: 2026
-last_updated: 2026-11-02
+last_updated: 2026-11-14
 depends_on:
   - rw-corporate-income-tax
 tier: 2
 domain: cross-border
+type: situation-rules
 ---
 
-# Rwanda cross-border: residence, permanent establishment, withholding on non-residents and foreign tax credit (2026) v0.1
+# Rwanda cross-border: residence, permanent establishment, withholding on non-residents and foreign tax credit (2026) v0.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 

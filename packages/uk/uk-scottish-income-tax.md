@@ -1,14 +1,15 @@
 ---
 name: uk-scottish-income-tax
 description: "Scottish income tax for UK resident individuals, tax year 2026/27 (6 April 2026 to 5 April 2027), with the 2025/26 bands for returns filed now. Covers who is a Scottish taxpayer (Scotland Act 1998 ss 80D to 80F: close connection, main home, midnight days count), the six Scottish rates and band limits set by the Scottish Rate Resolution 2026-27, why savings and dividends stay on UK rates and the UK basic rate limit, the Personal Allowance taper, how the SA100 computes it, Gift Aid and relief-at-source pension extensions of the Scottish limits, and PAYE S codes (S1257L, SBR, SD0 to SD3). Trigger phrases: Scottish taxpayer, Scottish income tax, intermediate rate 21%, S tax code, live in Scotland tax return, moving to Scotland tax. Out of scope: UK-wide rules and allowances (uk-income-tax-sa100), self-employment profits (uk-self-employment-sa103), National Insurance (uk-national-insurance), payroll running (uk-payroll), residence (uk-statutory-residence-test)."
-version: 0.2
+version: 0.3
 jurisdiction: GB
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
+type: computation
 ---
 
 # Scottish income tax on the SA100 (2026/27, with 2025/26)

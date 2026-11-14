@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/fo-cross-border-payments"
   jurisdiction: "FO"
   tax_year: "2026"
-  last_updated: "2026-11-01"
+  last_updated: "2026-11-14"
 ---
 
-# Faroe Islands cross-border payments and migration v0.3
+# Faroe Islands cross-border payments and migration v0.4
 
 > **Checked against the law.** Professional review is pending. This Guide prepares working papers for income year 2026 from the cited provisions read on 25 October 2026, with ordinary foreign-tax credit, branch attribution, corporate-loan interest and bounded later-disposal methods checked on 28 October.
 
@@ -197,4 +197,4 @@ Not yet confirmed: actual treaty provisions, beneficial-owner/anti-abuse applica
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-01. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `fo-cross-border-payments` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/fo-cross-border-payments. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `fo-cross-border-payments` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/fo-cross-border-payments. If neither is available, confirm every figure against the official source pages cited above before relying on it.

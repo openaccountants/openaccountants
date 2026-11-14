@@ -7,25 +7,29 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/italy-tax-optimization"
   jurisdiction: "IT"
   tax_year: "2026"
-  last_updated: "2026-10-31"
+  last_updated: "2026-11-14"
 ---
 
 # Tax planning for the self-employed in Italy
 
 Lawful tax planning for a self-employed person in Italy: forfettario or ordinario, sole trader (ditta individuale) or S.r.l., pensions, family business, losses, timing, and where planning becomes abuse of law. Figures are for tax year 2026, the calendar year. The old TUIR (D.P.R. 917/1986) applies for 2026 income; the new TUIR (D.Lgs. 117/2026) applies only from 1° gennaio 2027 (art. 377); statutes were read on Normattiva as in force on 30 June 2026. The IRAP rate is from the tax year 2025 instructions. No saving amounts are given. Detail sits in the sibling Guides named below.
 
-## Section 1: Quick Reference
+## Scope
+
+This skill is the "which should I" guide for lawful tax planning by a self-employed person in Italy in tax year 2026: forfettario or ordinario, sole trader (ditta individuale) or S.r.l., pension fund contributions, the impresa familiare, losses, timing, VAT and INPS choices, and where planning becomes abuse of law (L. 212/2000 art. 10-bis). The tax year is the calendar year (TUIR art. 7).
+
+Who is in: Italian-resident individuals with business or professional income, and their advisers. Who is out: groups and larger companies, non-residents, impatriati and new residents beyond a pointer (see `it-impatriati`), and anything to be filed: computations here are estimates for a commercialista to confirm. The income tax computation itself is in `it-income-tax` and `it-regime-forfettario`.
+
+### Quick reference
 
 | Field | Value | Source |
 | --- | --- |---|
-| Country | Italy (Repubblica Italiana) | same |
 | Key legislation | TUIR art. 5, 8, 10, 11, 16-ter, 54 to 54-octies, 84, 102, 164; L. 190/2014 art. 1 co. 54-89 (forfettario); D.Lgs. 252/2005 (pension funds); L. 212/2000 art. 10-bis (abuse of law) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2014-12-23;190~art1!vig=2026-10-24 |
-| Attitude to planning | Choosing between regimes and lawful options is free (art. 10-bis(4)); abuse is disregarded (Section 10) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2000-07-27;212~art10bis!vig=2026-06-30 |
-| Currency | EUR | same |
+| Attitude to planning | Choosing between regimes and lawful options is free (art. 10-bis(4)); abuse is disregarded (section "Red Lines") | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2000-07-27;212~art10bis!vig=2026-06-30 |
 | Tax year | Calendar year | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art7!vig=2026-06-30 |
 | Return | Modello Redditi PF online by 31 October of the following year (D.P.R. 322/1998 art. 2). Not the 730 for VAT-number income. See `it-income-tax` | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1998-07-22;322~art2!vig=2026-06-30 and https://www.agenziaentrate.gov.it/portale/documents/d/guest/pf1_istruzioni_2026 |
 
-### IRPEF Rates 2026 (Legge di Bilancio 2026)
+#### IRPEF Rates 2026 (Legge di Bilancio 2026)
 
 - Top of the first bracket: EUR 28,000; top of the second bracket: EUR 50,000 ([TUIR art. 11](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art11!vig=)): "a) fino a 28.000 euro, 23 per cento"; "fino a 50.000 euro".
 
@@ -39,7 +43,7 @@ Lawful tax planning for a self-employed person in Italy: forfettario or ordinari
 
 - Regional and municipal surcharges come on top (not on forfettario income): `it-income-tax`.
 
-### Detrazioni Limits (Art. 16-ter TUIR, from 2025)
+#### Detrazioni Limits (Art. 16-ter TUIR, from 2025)
 
 | What | Value | Note | Source |
 | --- | --- | --- |---|
@@ -52,7 +56,7 @@ Lawful tax planning for a self-employed person in Italy: forfettario or ordinari
 - Reddito complessivo above which a further cut applies (art. 16-ter(5-bis)): EUR 200,000; cut to the detrazioni for certain oneri: EUR 440 ([L. 199/2025](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2025-12-30;199)): "reddito complessivo superiore a 200.000 euro"; "pari a 440 euro".
 - Above the first limit, oneri giving a detrazione count only up to the base amount times a family coefficient that rises with the number of children; some items are outside the cap (art. 16-ter(4) and (5)).
 
-### Regime Forfettario vs Regime Ordinario
+#### Regime Forfettario vs Regime Ordinario
 
 The first decision. The entry conditions decide whether the forfettario is open; a taxpayer who qualifies may still choose the ordinario.
 
@@ -77,7 +81,7 @@ The first decision. The entry conditions decide whether the forfettario is open;
 - **Start-up rate**: no such activity in the previous three years, and not a mere continuation of previous work (compulsory practice excepted); and if a business is taken over from someone else, its previous-year revenue must be within the entry limit.
 - **How to compare.** The forfettario wins when real costs are below what the coefficient assumes. Compare both on the client's own figures (method below).
 
-### SRL (Società a Responsabilità Limitata) vs Ditta Individuale
+#### SRL (Società a Responsabilità Limitata) vs Ditta Individuale
 
 | What | Value | Note (source) |
 | --- | --- | --- |
@@ -96,41 +100,79 @@ The first decision. The entry conditions decide whether the forfettario is open;
 
 - IRES and IRAP have different bases and are never combined into one figure. INPS for S.r.l. members was not read: refer.
 
-### Impresa Familiare (Family Business)
+#### Impresa Familiare (Family Business)
 
 - Largest share of the owner's declared income attributed to family members: 49% ([TUIR art. 5](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art5!vig=2026-06-30)): "limitatamente al 49 per cento".
 - Conditions (art. 5(4)): members named, with relationship, in a public or authenticated private deed dated BEFORE the tax year starts; the return states the shares and that they match the work done; each member declares continuous, prevalent work. Family: spouse, relatives to the third degree, in-laws to the second (art. 5(5)).
 - **Businesses only.** Art. 5(4) speaks of the income of "imprese familiari" and of the "imprenditore"; a professional (arti e professioni) should not rely on it: refer.
 - **No split in the forfettario:** the owner pays the substitute tax on income before the family's shares (Agenzia forfettario page).
 
-### Oneri Deducibili (reduce taxable income): TUIR Art. 10
+#### Oneri Deducibili (reduce taxable income): TUIR Art. 10
 
 | Deduction | Detail | Legislation |
 | --- | --- | --- |
 | Contributi previdenziali | Compulsory contributions (gestione separata, artigiani, commercianti, a cassa), and voluntary ones to the same scheme | [TUIR art. 10(1)(e)](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art10!vig=2026-06-30) |
-| Fondi pensione integrativi | Within the D.Lgs. 252/2005 art. 8 limit (Section 8) | Art. 10(1)(e-bis) |
+| Fondi pensione integrativi | Within the D.Lgs. 252/2005 art. 8 limit (section "Social Security Optimization") | Art. 10(1)(e-bis) |
 | Assegni periodici | To a spouse on separation or divorce, by court order; not child maintenance | Art. 10(1)(c) |
 
-### Detrazioni (reduce tax payable): TUIR Art. 15
+#### Detrazioni (reduce tax payable): TUIR Art. 15
 
 - Detrazioni cut the tax, not the income. Normattiva's art. 15(1) still prints its original rate and some limits only in lire; no detrazioni table or bonus rates are given here, nor family detrazioni (art. 12). Most detrazioni for oneri fall in the art. 16-ter cap; medical costs are outside the high-income cut. Use the Redditi PF instructions for 2026 income and `it-income-tax`.
 
-## Section 4: Capital Allowances Optimization
+## Ask the client first
+
+- Revenue/fees last year and expected this year? Which ATECO code?
+- Employment or pension income last year, how much? Job ended? Working mainly for a former employer?
+- Stake in a partnership, professional association, impresa familiare, or control of an S.r.l.?
+- Artigiano, commerciante, gestione separata or cassa member? Already a pensioner?
+- When did you become resident in Italy?
+- Profits kept in the business, or taken out each year?
+
+## The method, step by step
+
+1. Check residence and arrival date: impatriati first ([D.Lgs. 209/2023 art. 5](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2023-12-27;209~art5!vig=2026-06-30); `it-impatriati`).
+2. Test the forfettario on the [Agenzia forfettario page](https://www.agenziaentrate.gov.it/portale/regime-forfetario-le-regole-2020-/infogen-regime-forfetario-le-regole-2020-); if open, compute both regimes on the client's figures (`it-income-tax`), add IVA effects, show both, without promising a saving.
+3. Choose the legal form: IRPEF for a sole trader, IRES ([TUIR art. 77](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art77!vig=)) and IRAP for an S.r.l., profits paid out taxed again.
+4. Set the INPS position from [Circolare n. 14/2026](https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/02/Circolare_15162/Allegati/16561_Circolare-numero-14-del-09-02-2026.pdf) (artigiani, commercianti) or Circolare n. 8/2026 (gestione separata); consider the forfettario cut.
+5. Use contributions ([TUIR art. 10](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art10!vig=2026-06-30)) and the pension fund limit ([D.Lgs. 252/2005 art. 8](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2005-12-05;252~art8!vig=2026-06-30)).
+6. Test each idea against [art. 10-bis](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2000-07-27;212~art10bis!vig=2026-06-30): a real non-tax reason? If in doubt, interpello.
+7. Pay acconti as the [Agenzia payment page](https://www.agenziaentrate.gov.it/portale/come-si-paga-l-irpef) sets out; file by 31 October ([D.P.R. 322/1998 art. 2](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1998-07-22;322~art2!vig=2026-06-30)).
+
+### Rates, bands and thresholds
+
+| Item | Figure | Tax year | Source |
+| --- | --- | --- | --- |
+| IRPEF: income up to EUR 28,000 | 23% | 2026 | https://www.agenziaentrate.gov.it/portale/imposta-sul-reddito-delle-persone-fisiche-irpef-/aliquote-e-calcolo-dell-irpef |
+| IRPEF: EUR 28,000 to 50,000 (35% in 2024 and 2025) | 33% | 2026 | same |
+| IRPEF: above EUR 50,000 | 43% | 2026 | same |
+| Forfettario entry: previous-year revenue or fees, annualised, not above | EUR 85,000 | 2026 | https://www.agenziaentrate.gov.it/portale/regime-forfetario-le-regole-2020-/infogen-regime-forfetario-le-regole-2020- |
+| Forfettario exit in the same year once revenue or fees go over | EUR 100,000 | 2026 | same |
+| Forfettario entry: previous-year staff and collaborator costs not above | EUR 20,000 | 2026 | same |
+| Forfettario exclusion: previous-year employment income above (raised for 2025 and 2026 only; EUR 30,000 otherwise) | EUR 35,000 | 2026 | same |
+| Forfettario substitute tax (start-up rate 5% for the first five years if the conditions are met) | 15% | 2026 | same |
+| Forfettario coefficient: professional, scientific, technical, health, education, financial services | 78% | 2026 | https://www.agenziaentrate.gov.it/portale/documents/20143/241208/allegato+4.pdf/d69be7fc-b18a-3c73-bd2e-b0f3c1970218 |
+| Forfettario coefficient: other activities, including IT services | 67% | 2026 | same |
+| IRES on an S.r.l.'s profit | 24% | 2026 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art77!vig= |
+| Tax on profits paid by an S.r.l. to a resident individual (final withholding) | 26% | 2026 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2014-04-24;66~art3!vig=2026-06-30 |
+
+IRAP (it-irap), INPS rates (it-inps-contributions, it-inps-artigiani-commercianti) and the detrazioni limits are owned by their own skills or by the tables below; they are not used in the worked cases.
+
+### Capital Allowances Optimization
 
 - Businesses: TUIR art. 102. Professionals: TUIR art. 54-quinquies, own small-asset limit. Ignored in the forfettario (costs excluded).
 
-### Ammortamento (Depreciation)
+#### Ammortamento (Depreciation)
 
 - Depreciation may not exceed the ministerial coefficient, "ridotti alla metà per il primo esercizio" (art. 102(2)). The D.M. 31 December 1988 table was not read; no per-class rates given here.
 
-### Small assets expensed in the year
+#### Small assets expensed in the year
 
 | What | Value | Note (source) |
 | --- | --- | --- |
 | Business asset: unit cost up to which it is expensed in the year bought | EUR 516.46 | "non è superiore a 516,46 euro" ([art. 102(5)](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art102!vig=2026-06-30)) |
 | Professional's asset: the same limit | EUR 516.40 | "euro 516,40" ([art. 54-quinquies](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art54quinquies!vig=2026-06-30)) |
 
-### Motor Vehicle Deduction Limits (Art. 164 TUIR)
+#### Motor Vehicle Deduction Limits (Art. 164 TUIR)
 
 | What | Value | Note | Source |
 | --- | --- | --- |---|
@@ -142,7 +184,7 @@ The first decision. The entry conditions decide whether the forfettario is open;
 
 - Only vehicles used exclusively as tools of the business itself (impresa) are deducted in full (art. 164(1)(a)). Cost caps still apply: purchase and hire costs count only up to limits that art. 164(1)(b) writes in lire; for sales agents the article prints the raised purchase limit in euro (table). Fuel is deductible only if paid by credit, debit or prepaid card (art. 164(1-bis)).
 
-## Section 5: Loss Utilization
+### Loss Utilization
 
 - Share of later business income that carried-forward business losses may offset: 80% ([TUIR art. 8](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art8!vig=2026-06-30)): "all'80 per cento dei relativi redditi".
 
@@ -154,11 +196,11 @@ The first decision. The entry conditions decide whether the forfettario is open;
 | Carry-back | Not provided in art. 8 or 84 |
 | Forfettario | No loss. Contributions above forfettario income are deducted from total income the same year (Agenzia page); they do not carry forward |
 
-### Strategy
+#### Strategy
 
 - Start-up losses keep full value only under art. 84(2). Spending with no business purpose creates no loss.
 
-## Section 6: Timing Strategies
+### Timing Strategies
 
 | What | Value | Note | Source |
 | --- | --- | --- |---|
@@ -171,12 +213,12 @@ The first decision. The entry conditions decide whether the forfettario is open;
 
 | Strategy | Detail | Source |
 | --- | --- |---|
-| Forfettario limits | Tested on revenue earned or fees received in the year; watch both during the year. Splitting activity or invoices only to stay under them is a Section 10 risk | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2014-12-23;190~art1!vig=2026-10-24 |
+| Forfettario limits | Tested on revenue earned or fees received in the year; watch both during the year. Splitting activity or invoices only to stay under them is a section "Red Lines" risk | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2014-12-23;190~art1!vig=2026-10-24 |
 | Costs (ordinario) | Professionals use the cash basis: costs count when paid (TUIR art. 54(1)) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art54!vig=2026-06-30 |
 | Acconti | A lower forecast is allowed; underpaying on a wrong one brings penalties and interest (`it-estimated-tax`) | https://www.agenziaentrate.gov.it/portale/come-si-paga-l-irpef and https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;471~art13!vig=2026-10-24 |
-| Pension fund | Paid by 31 December, within the Section 8 limit |  |
+| Pension fund | Within the EUR 5,300 limit for the year (timing of payment: see Not yet confirmed) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2005-12-05;252~art8!vig=2026-06-30 |
 
-## Section 7: VAT Optimization (IVA)
+### VAT Optimization (IVA)
 
 | Strategy | Detail | Source |
 | --- | --- |---|
@@ -185,9 +227,9 @@ The first decision. The entry conditions decide whether the forfettario is open;
 | IVA per cassa | By option, on supplies to business or professional customers: IVA due on payment, and IVA on purchases deductible on payment, for volume d'affari "non superiore a 2 milioni di euro" ([D.L. 83/2012 art. 32-bis](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2012-06-22;83~art32bis!vig=2026-06-30)); due anyway after one year. Not with special VAT schemes or reverse charge |  |
 | Split payment, refunds, reverse charge | `italy-vat-return` | same |
 
-## Section 8: Social Security Optimization
+### Social Security Optimization
 
-### INPS Contribution Structures
+#### INPS Contribution Structures
 
 | What | Value | Note | Source |
 | --- | --- | --- |---|
@@ -211,7 +253,7 @@ The first decision. The entry conditions decide whether the forfettario is open;
 
 - A cassa member pays the cassa; its rates are on no allowed page (`it-inps-contributions`).
 
-### Optimization Strategies
+#### Optimization Strategies
 
 | Strategy | Detail | Source |
 | --- | --- |---|
@@ -219,7 +261,7 @@ The first decision. The entry conditions decide whether the forfettario is open;
 | Other cuts | Circolare 14/2026 also keeps a cut for artigiani and commercianti over 65 already drawing an INPS pension, and one for those first enrolled in 2025: `it-inps-contributions` | same |
 | Minimum contribution | Artigiani and commercianti owe the fixed amount whatever their income | same |
 
-### Fondi Pensione Integrativi (Supplementary Pension): TUIR Art. 10, D.Lgs. 252/2005
+#### Fondi Pensione Integrativi (Supplementary Pension): TUIR Art. 10, D.Lgs. 252/2005
 
 | What | Value | Note | Source |
 | --- | --- | --- |---|
@@ -232,19 +274,19 @@ The first decision. The entry conditions decide whether the forfettario is open;
 - **First job started after 1 January 2007:** in the twenty years after the fifth year of membership, the unused limit of the first five years may be deducted, up to half the yearly limit (art. 8(6)).
 - **Forfettario:** the deduction runs against total income; with no other income it may give nothing.
 
-### PIR (Piani Individuali di Risparmio)
+#### PIR (Piani Individuali di Risparmio)
 
 - PIR limits (L. 232/2016 art. 1 commi 100-114) could not be read (Normattiva returns only the first hundred commi). Out of scope; crypto: `italy-crypto-tax`.
 
-### Bonus Investimenti
+#### Bonus Investimenti
 
 - None was read for 2026. Do not advise from this Guide.
 
-### Impatriati and new residents
+#### Impatriati and new residents
 
 - Someone moving to Italy should check the impatriati regime first (D.Lgs. 209/2023 art. 5, linked in the method below): part of qualifying work income is exempt for five years, within a yearly cap. Detail: `it-impatriati`.
 
-## Section 10: Red Lines
+### Red Lines
 
 **Abuse of law, L. 212/2000 art. 10-bis** ([text](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2000-07-27;212~art10bis!vig=2026-06-30)):
 
@@ -259,7 +301,7 @@ The first decision. The entry conditions decide whether the forfettario is open;
 | False invoices | Four to eight years of prison ([D.Lgs. 74/2000 art. 2](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2000-03-10;74~art2!vig=2026-06-30)); less below centomila euro of fictitious costs |
 | Evasion vs avoidance | Not filing is a crime above cinquantamila euro of tax evaded for any one tax ([art. 5](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2000-03-10;74~art5!vig=2026-06-30)); an understated return, above centomila euro evaded AND hidden income above ten per cent of that declared or two million euro ([art. 4](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2000-03-10;74~art4!vig=2026-06-30)) |
 
-## Section 11: Annual Tax Planning Calendar
+### Annual Tax Planning Calendar
 
 | Month | Action |
 | --- | --- |
@@ -270,24 +312,57 @@ The first decision. The entry conditions decide whether the forfettario is open;
 | November | By 30 November: second acconto |
 | December | Pay deductible costs and pension contributions for the year |
 
-## The method, step by step
+## Worked cases
 
-1. Check residence and arrival date: impatriati first ([D.Lgs. 209/2023 art. 5](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2023-12-27;209~art5!vig=2026-06-30); `it-impatriati`).
-2. Test the forfettario on the [Agenzia forfettario page](https://www.agenziaentrate.gov.it/portale/regime-forfetario-le-regole-2020-/infogen-regime-forfetario-le-regole-2020-); if open, compute both regimes on the client's figures (`it-income-tax`), add IVA effects, show both, without promising a saving.
-3. Choose the legal form: IRPEF for a sole trader, IRES ([TUIR art. 77](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art77!vig=)) and IRAP for an S.r.l., profits paid out taxed again.
-4. Set the INPS position from [Circolare n. 14/2026](https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/02/Circolare_15162/Allegati/16561_Circolare-numero-14-del-09-02-2026.pdf) (artigiani, commercianti) or Circolare n. 8/2026 (gestione separata); consider the forfettario cut.
-5. Use contributions ([TUIR art. 10](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art10!vig=2026-06-30)) and the pension fund limit ([D.Lgs. 252/2005 art. 8](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2005-12-05;252~art8!vig=2026-06-30)).
-6. Test each idea against [art. 10-bis](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2000-07-27;212~art10bis!vig=2026-06-30): a real non-tax reason? If in doubt, interpello.
-7. Pay acconti as the [Agenzia payment page](https://www.agenziaentrate.gov.it/portale/come-si-paga-l-irpef) sets out; file by 31 October ([D.P.R. 322/1998 art. 2](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1998-07-22;322~art2!vig=2026-06-30)).
+### Case 1 (decision): forfettario or ordinario for a consultant?
 
-## Ask the client first
+Facts. Marco, a management consultant (coefficient 78%), expects 2026 fees of EUR 60,000 and real costs of EUR 6,000, and will pay EUR 9,000 of compulsory contributions. He qualifies for the forfettario (2025 fees under EUR 85,000, no employment income) but is past his first five years.
 
-- Revenue/fees last year and expected this year? Which ATECO code?
-- Employment or pension income last year, how much? Job ended? Working mainly for a former employer?
-- Stake in a partnership, professional association, impresa familiare, or control of an S.r.l.?
-- Artigiano, commerciante, gestione separata or cassa member? Already a pensioner?
-- When did you become resident in Italy?
-- Profits kept in the business, or taken out each year?
+Working. Forfettario: taxable income is EUR 60,000 x 78% = EUR 46,800, less EUR 9,000 contributions = EUR 37,800, taxed at 15% = EUR 5,670. Ordinario: EUR 60,000 - 6,000 - 9,000 = EUR 45,000, gross IRPEF 23% on EUR 28,000 plus 33% on EUR 17,000 = EUR 12,050, before detrazioni and regional and municipal surcharges (which would only widen the gap). The forfettario saves at least EUR 6,380, so it wins unless real costs come close to the 22% the coefficient assumes. VAT is not charged in the forfettario, which also matters if his clients are consumers.
+
+```oa-check
+name: Italy 2026, consultant forfettario against ordinario (gross IRPEF)
+inputs:
+  fees: 60000
+  costs: 6000
+  contributions: 9000
+  coefficient: 0.78
+steps:
+  - forf_taxable: fees * coefficient - contributions
+  - forf_tax: forf_taxable * 0.15
+  - ord_income: fees - costs - contributions
+  - ord_irpef: min(ord_income, 28000) * 0.23 + max(min(ord_income, 50000) - 28000, 0) * 0.33 + max(ord_income - 50000, 0) * 0.43
+  - saving: ord_irpef - forf_tax
+expected:
+  forf_taxable: 37800.00
+  forf_tax: 5670.00
+  ord_irpef: 12050.00
+  saving: 6380.00
+```
+
+### Case 2 (decision): sole trader or S.r.l. paying out all profit?
+
+Facts. Sara's trading business makes EUR 100,000 of profit a year, too much for the forfettario. She asks whether an S.r.l. would cut her tax if she takes all the profit out each year.
+
+Working. As a sole trader in the ordinario, gross IRPEF on EUR 100,000 is EUR 6,440 + EUR 7,260 + 43% of EUR 50,000 = EUR 35,200. Through an S.r.l., IRES at 24% is EUR 24,000; paying the remaining EUR 76,000 out as dividends costs 26% final withholding, EUR 19,760; together EUR 43,760, before IRAP on the company. Paying everything out, the S.r.l. costs EUR 8,560 more. It only helps if most profit stays in the company (IRES 24% against a 43% marginal IRPEF rate), and contributions, directors' pay and IRAP must then be modelled (refer).
+
+```oa-check
+name: Italy 2026, sole trader IRPEF against S.r.l. IRES plus 26% on dividends
+inputs:
+  profit: 100000
+steps:
+  - irpef: 28000 * 0.23 + 22000 * 0.33 + (profit - 50000) * 0.43
+  - ires: profit * 0.24
+  - dividend_tax: (profit - ires) * 0.26
+  - srl_total: ires + dividend_tax
+  - extra_cost_srl: srl_total - irpef
+expected:
+  irpef: 35200.00
+  ires: 24000.00
+  dividend_tax: 19760.00
+  srl_total: 43760.00
+  extra_cost_srl: 8560.00
+```
 
 ## When to refuse or refer
 
@@ -299,22 +374,29 @@ The first decision. The entry conditions decide whether the forfettario is open;
 
 ## Sources
 
-- Every page used is linked once in the tables or text above; plus D.Lgs. 117/2026 art. 377: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2026-06-19;117:1~art377 (read 2026-10-31)
-- L. 190/2014 art. 1: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2014-12-23;190~art1!vig=2026-10-24 (read 2026-10-31)
-- L. 212/2000 art. 10-bis: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2000-07-27;212~art10bis!vig=2026-06-30 (read 2026-10-31)
-- TUIR art. 7: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art7!vig=2026-06-30 (read 2026-10-31)
-- D.P.R. 322/1998 art. 2: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1998-07-22;322~art2!vig=2026-06-30 (read 2026-10-31)
-- Agenzia, Redditi PF 2026 instructions, fascicolo 1: https://www.agenziaentrate.gov.it/portale/documents/d/guest/pf1_istruzioni_2026 (read 2026-10-31)
-- Agenzia, IRPEF rates: https://www.agenziaentrate.gov.it/portale/imposta-sul-reddito-delle-persone-fisiche-irpef-/aliquote-e-calcolo-dell-irpef (read 2026-10-31)
-- L. 207/2024: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2024-12-30;207 (read 2026-10-31)
-- Agenzia, forfettario rules: https://www.agenziaentrate.gov.it/portale/regime-forfetario-le-regole-2020-/infogen-regime-forfetario-le-regole-2020- (read 2026-10-31)
-- TUIR art. 164: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art164!vig=2026-06-30 (read 2026-10-31)
-- Agenzia, how IRPEF is paid: https://www.agenziaentrate.gov.it/portale/come-si-paga-l-irpef (read 2026-10-31)
-- TUIR art. 54: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art54!vig=2026-06-30 (read 2026-10-31)
-- D.Lgs. 471/1997 art. 13: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;471~art13!vig=2026-10-24 (read 2026-10-31)
-- INPS Circolare 8/2026: https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/02/Circolare_15153/Allegati/16573_Circolare-numero-8-del-03-02-2026.pdf (read 2026-10-31)
-- INPS Circolare 14/2026: https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/02/Circolare_15162/Allegati/16561_Circolare-numero-14-del-09-02-2026.pdf (read 2026-10-31)
-- D.Lgs. 252/2005 art. 8: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2005-12-05;252~art8!vig=2026-06-30 (read 2026-10-31)
+Every page below was opened on 2026-11-14 and the figures this skill takes from it were found in the text. Pages linked only inline in the tables above (TUIR arts 10, 11, 15, 16-ter, 84, 102, the IRAP instructions, D.P.R. 600/1973) were checked by quote on the same day.
+
+| Source | URL | Read on |
+| --- | --- | --- |
+| D.Lgs. 117/2026 art. 377. Read for art. 377, the new income tax code applying from 1 January 2027 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2026-06-19;117:1~art377 | 2026-11-14 |
+| L. 190/2014 art. 1. Read for commi 54 to 89, the forfettario | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2014-12-23;190~art1!vig=2026-10-24 | 2026-11-14 |
+| L. 212/2000 art. 10-bis. Read for the abuse of law test in art. 10-bis | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2000-07-27;212~art10bis!vig=2026-06-30 | 2026-11-14 |
+| TUIR art. 7. Read for the calendar tax year | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art7!vig=2026-06-30 | 2026-11-14 |
+| D.P.R. 322/1998 art. 2. Read for the 31 October return deadline | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1998-07-22;322~art2!vig=2026-06-30 | 2026-11-14 |
+| Agenzia, Redditi PF 2026 instructions, fascicolo 1. Read for the oneri deducibili and detrazioni rows | https://www.agenziaentrate.gov.it/portale/documents/d/guest/pf1_istruzioni_2026 | 2026-11-14 |
+| Agenzia, IRPEF rates. Read for the 23%, 33% and 43% bands for 2026 | https://www.agenziaentrate.gov.it/portale/imposta-sul-reddito-delle-persone-fisiche-irpef-/aliquote-e-calcolo-dell-irpef | 2026-11-14 |
+| L. 207/2024. Read for the 2025 budget law changes to detrazioni | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2024-12-30;207 | 2026-11-14 |
+| Agenzia, forfettario rules. Read for the EUR 85,000, EUR 100,000, EUR 20,000 and EUR 35,000 limits and the 15% and 5% rates | https://www.agenziaentrate.gov.it/portale/regime-forfetario-le-regole-2020-/infogen-regime-forfetario-le-regole-2020- | 2026-11-14 |
+| TUIR art. 164. Read for the car cost shares and limits | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art164!vig=2026-06-30 | 2026-11-14 |
+| Agenzia, how IRPEF is paid. Read for the acconti and balance dates | https://www.agenziaentrate.gov.it/portale/come-si-paga-l-irpef | 2026-11-14 |
+| TUIR art. 54. Read for professional income | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art54!vig=2026-06-30 | 2026-11-14 |
+| D.Lgs. 471/1997 art. 13. Read for the 25% late payment penalty | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;471~art13!vig=2026-10-24 | 2026-11-14 |
+| INPS Circolare 8/2026. Read for the 2026 gestione separata rates | https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/02/Circolare_15153/Allegati/16573_Circolare-numero-8-del-03-02-2026.pdf | 2026-11-14 |
+| INPS Circolare 14/2026. Read for the 2026 artigiani and commercianti rates | https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/02/Circolare_15162/Allegati/16561_Circolare-numero-14-del-09-02-2026.pdf | 2026-11-14 |
+| D.Lgs. 252/2005 art. 8. Read for the EUR 5,300 pension fund deduction limit | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2005-12-05;252~art8!vig=2026-06-30 | 2026-11-14 |
+| Agenzia, forfettario coefficients (L. 145/2018 allegato 4). Read for the 78% and 67% coefficients | https://www.agenziaentrate.gov.it/portale/documents/20143/241208/allegato+4.pdf/d69be7fc-b18a-3c73-bd2e-b0f3c1970218 | 2026-11-14 |
+| D.L. 66/2014 art. 3. Read for the 26% rate on capital income including dividends | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2014-04-24;66~art3!vig=2026-06-30 | 2026-11-14 |
+| TUIR art. 77. Read for the 24% IRES rate | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art77!vig= | 2026-11-14 |
 
 Not yet confirmed: that a pension fund contribution must be paid by 31 December to count for the year (no text read says this directly).
 
@@ -326,4 +408,4 @@ This Guide and its outputs are provided for informational and computational purp
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-31. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `italy-tax-optimization` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/italy-tax-optimization. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `italy-tax-optimization` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/italy-tax-optimization. If neither is available, confirm every figure against the official source pages cited above before relying on it.

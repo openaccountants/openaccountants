@@ -7,12 +7,12 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/uk-formation"
   jurisdiction: "GB"
   tax_year: "2026"
-  last_updated: "2026-10-30"
+  last_updated: "2026-11-14"
 ---
 
 # Starting a business in the UK: structure, registration, Companies House identity rules and first filings
 
-This skill is written for the UK tax year 2026/27 (6 April 2026 to 5 April 2027) and for the Companies House rules in force on 25 September 2026. Fees are as published by Companies House on 25 September 2026.
+This skill is written for the UK tax year 2026/27 (6 April 2026 to 5 April 2027) and for the Companies House rules in force on 14 November 2026. Fees are as published by Companies House and read on 14 November 2026.
 
 ## Scope
 
@@ -48,7 +48,7 @@ Related Skills: company accounts (uk-financial-statements), payroll (uk-payroll)
 8. **VAT:** test turnover at the end of every month. Register within 30 days of the end of the month in which rolling 12-month taxable turnover went over £90,000. If you expect taxable turnover in the next 30 days alone to go over £90,000, register by the end of that 30-day period ([when to register for VAT](https://www.gov.uk/vat-registration/when-to-register)).
 9. **Diary the company's first filings:** the first confirmation statement falls due 12 months after incorporation plus 14 days. The first accounts are due 21 months after incorporation (or 3 months from the accounting reference date if that is later) where the first period is more than 12 months. The CT600 return is due 12 months after the end of each accounting period, and Corporation Tax is payable 9 months and 1 day after the end of the period.
 
-## Choosing a structure
+### Choosing a structure
 
 Most businesses start as a sole trader or a limited company. You can move from one structure to another, and gov.uk notes it is usually easier to move from sole trader to limited company than the other way ([set up a business](https://www.gov.uk/business-legal-structures)).
 
@@ -72,16 +72,20 @@ Points of method when comparing:
 - **Privacy.** A company's and an LLP's directors or members, PSCs, registered office and accounts are public. A sole trader and an ordinary partnership appear on no public register.
 - **Public limited company (PLC).** Rarely right for a new owner-managed business. A PLC needs at least two directors and a company secretary. Its allotted share capital must be at least the authorised minimum of £50,000, and each share must be paid up to at least one quarter of its nominal value plus the whole of any premium. It must not do business or borrow until Companies House issues a trading certificate ([CA 2006 s154](https://www.legislation.gov.uk/ukpga/2006/46/section/154); [s271](https://www.legislation.gov.uk/ukpga/2006/46/section/271); [s763](https://www.legislation.gov.uk/ukpga/2006/46/section/763); [s586](https://www.legislation.gov.uk/ukpga/2006/46/section/586); [s761](https://www.legislation.gov.uk/ukpga/2006/46/section/761)).
 
-## Registering the business
+### Registering the business
 
-### Sole trader ([become a sole trader](https://www.gov.uk/become-sole-trader); [register for Self Assessment](https://www.gov.uk/register-for-self-assessment))
+#### Sole trader
+
+Sources: [become a sole trader](https://www.gov.uk/become-sole-trader); [register for Self Assessment](https://www.gov.uk/register-for-self-assessment)
 
 - You can start trading straight away without registering.
 - You must register for Self Assessment if you earn more than £1,000 from self-employment in a tax year (6 April to 5 April). You can choose to register earlier.
 - **Deadline:** by 5 October after the end of the tax year. In law, the notice is due within 6 months from the end of the year of assessment, unless HMRC has already sent a notice to file a return ([TMA 1970 s7](https://www.legislation.gov.uk/ukpga/1970/9/section/7)). For the 2025 to 2026 tax year (6 April 2025 to 5 April 2026), gov.uk gives the date as 5 October 2026. If you tell HMRC after that, you could get a penalty.
 - You can trade under your own name or a trading name. A trading name is not registered anywhere, but it must follow the business name rules.
 
-### Private company limited by shares ([set up a private limited company](https://www.gov.uk/limited-company-formation/print))
+#### Private company limited by shares
+
+Sources: [set up a private limited company](https://www.gov.uk/limited-company-formation/print)
 
 1. **Name.** It cannot be the same as another registered company's name. It must usually end in "Limited" or "Ltd" (or "Cyfyngedig" or "Cyf" for a company registered in Wales). A "sensitive" word or expression, or a name suggesting a connection with government or local authorities, needs permission. You may have to change a name that is "too like" an earlier one if someone complains and Companies House agrees.
 2. **Registered office and registered email address.** See "ECCTA: what is already in force" below.
@@ -92,7 +96,7 @@ Points of method when comparing:
 7. **Memorandum and articles.** Online, the memorandum is created automatically. Use the model articles or upload your own.
 8. **SIC code and type of company.** The application states the company type and its intended principal business activities.
 9. **Lawful purpose statement.** The application must state that the subscribers wish to form the company for lawful purposes. A company may not be formed for an unlawful purpose ([CA 2006 s9(2)(e)](https://www.legislation.gov.uk/ukpga/2006/46/section/9); [s7](https://www.legislation.gov.uk/ukpga/2006/46/section/7)).
-10. **File and pay.** The fees published on 25 September 2026 ([Companies House fees](https://www.gov.uk/government/publications/companies-house-fees/companies-house-fees)) are:
+10. **File and pay.** The fees read on 14 November 2026 ([Companies House fees](https://www.gov.uk/government/publications/companies-house-fees/companies-house-fees)) are:
 
 | Filing | Online | Software | Paper |
 | --- | --- | --- | --- |
@@ -104,7 +108,9 @@ Points of method when comparing:
 
 Postal applications on form IN01 take 8 to 10 days. When registering online you are usually set up for Corporation Tax at the same time, unless the company is dormant. If you register by post, by agent or through software, add Corporation Tax services to the business tax account once the 10-digit UTR arrives. If no UTR has arrived 15 working days after registration, you can request it online ([set up a private limited company](https://www.gov.uk/limited-company-formation/print)).
 
-### Ordinary partnership ([set up a business partnership](https://www.gov.uk/set-up-business-partnership/print))
+#### Ordinary partnership
+
+Sources: [set up a business partnership](https://www.gov.uk/set-up-business-partnership/print)
 
 - An ordinary partnership is not registered at Companies House.
 - Choose a nominated partner. They manage the partnership tax return and keep the business records.
@@ -112,7 +118,9 @@ Postal applications on form IN01 take 8 to 10 days. When registering online you 
 - **Deadline:** by 5 October in the business's second tax year, or a penalty may be charged.
 - The nominated partner should file the partnership return early enough for the partners to complete their own returns.
 
-### LLP ([set up and run an LLP](https://www.gov.uk/guidance/set-up-and-run-a-limited-liability-partnership-llp); [LLPA 2000 s2](https://www.legislation.gov.uk/ukpga/2000/12/section/2); [s8](https://www.legislation.gov.uk/ukpga/2000/12/section/8))
+#### LLP
+
+Sources: [set up and run an LLP](https://www.gov.uk/guidance/set-up-and-run-a-limited-liability-partnership-llp); [LLPA 2000 s2](https://www.legislation.gov.uk/ukpga/2000/12/section/2); [s8](https://www.legislation.gov.uk/ukpga/2000/12/section/8)
 
 - For an LLP registered in Northern Ireland, the equivalent rules are in the Limited Liability Partnerships Act (Northern Ireland) 2002.
 - Two or more persons carrying on a lawful business with a view to profit must subscribe to an incorporation document.
@@ -122,11 +130,11 @@ Postal applications on form IN01 take 8 to 10 days. When registering online you 
 - An LLP agreement is recommended. It sets out profit shares, decision-making, and how members join and leave.
 - LLP members count as the equivalent of a director and must verify their identity. Corporate members of LLPs will be brought into identity verification at a later date ([verifying your identity](https://www.gov.uk/guidance/verifying-your-identity-for-companies-house)).
 
-## ECCTA: what is already in force
+### ECCTA: what is already in force
 
 Only changes that have commenced are stated as law here. Later stages are listed separately as planned ([outline transition plan](https://www.gov.uk/government/publications/economic-crime-and-corporate-transparency-act-outline-transition-plan-for-companies-house/economic-crime-and-corporate-transparency-act-outline-transition-plan-for-companies-house)).
 
-### From 4 March 2024: registered office, registered email and lawful purpose
+#### From 4 March 2024: registered office, registered email and lawful purpose
 
 - **Appropriate address.** A company must ensure its registered office is at all times at an appropriate address. That means an address where, in the ordinary course of events, a document delivered by hand or post would be expected to come to the attention of a person acting for the company, **and** where delivery can be recorded by obtaining an acknowledgement of delivery. Failing without reasonable excuse is an offence by the company and every officer in default ([CA 2006 s86](https://www.legislation.gov.uk/ukpga/2006/46/section/86)).
 - In practice ([set up a private limited company](https://www.gov.uk/limited-company-formation/print)): the address must be a physical address in the UK, in the same part of the UK as the company is registered (a Scottish company needs a Scottish address). A Royal Mail PO Box, or a similar service from another company, can no longer be used. An accountant's or solicitor's address can be used with their permission, but it must meet every requirement. The address is public, so do not use a home address you want kept private. The address must be in place before you register. A company without an appropriate address can be struck off.
@@ -134,7 +142,7 @@ Only changes that have commenced are stated as law here. Later stages are listed
 - **Lawful purpose.** The application to register must state that the subscribers wish to form the company for lawful purposes ([CA 2006 s9](https://www.legislation.gov.uk/ukpga/2006/46/section/9)). The company then confirms every year, on the confirmation statement, that its future activities are lawful.
 - From the same date Companies House can query and reject filings and company names it suspects are wrong, fraudulent or misleading.
 
-### From 18 November 2025: identity verification for directors and PSCs
+#### From 18 November 2025: identity verification for directors and PSCs
 
 Identity verification became voluntary on 8 April 2025 and a legal requirement on 18 November 2025 ([outline transition plan](https://www.gov.uk/government/publications/economic-crime-and-corporate-transparency-act-outline-transition-plan-for-companies-house/economic-crime-and-corporate-transparency-act-outline-transition-plan-for-companies-house); [rollout announcement](https://www.gov.uk/government/news/companies-house-confirms-identity-verification-rollout-from-18-november-2025)).
 
@@ -153,7 +161,7 @@ Identity verification became voluntary on 8 April 2025 and a legal requirement o
 - **If someone does not verify:** it may be an offence, leading to prosecution and a fine or a financial penalty. A director who keeps acting after the deadline without complying commits an offence, and the company and all its directors may also commit one. Companies House says it will later mark the name on the register, and the person will be unable to be appointed as a new director or to register a new company.
 - **Not yet required:** people who file at Companies House, limited partnerships, corporate directors, corporate members of LLPs and officers of corporate PSCs. These will be brought in later.
 
-### Planned, not yet in force on 25 September 2026
+#### Planned, not yet in force (plan read on 14 November 2026)
 
 These appear in Companies House's outline transition plan and should not be treated as law until commenced:
 
@@ -161,16 +169,18 @@ These appear in Companies House's outline transition plan and should not be trea
 - from April 2028: every company files its accounts in iXBRL using commercial software, and web and paper filing close for accounts. The requirement for small companies and micro-entities to file a profit and loss account is paused, so abridged accounts and "filleting" the profit and loss account stay available after 1 April 2028. Also from April 2028: a strengthened eligibility statement for companies claiming audit exemption, the component parts of the accounts filed together, and a limit on how often a company can shorten its accounting reference period ([Companies House update to accounts filing from April 2028, 23 October 2026](https://www.gov.uk/government/news/companies-house-update-to-accounts-filing-from-april-2028); see uk-financial-statements)
 - restrictions on corporate directors, on a date not yet fixed
 
-## Figures and deadlines, with years
+### Rates, bands and thresholds
+
+UK figures for 2026-27 (from 6 April 2026) and Companies House fees as read on 14 November 2026.
 
 | Item | Figure or deadline | Year / status | Source |
 | --- | --- | --- | --- |
 | Sole trader must register for Self Assessment | Self-employment income more than £1,000 in a tax year | Current, 2026/27 | [become a sole trader](https://www.gov.uk/become-sole-trader) |
 | Self Assessment registration (sole trader, partner) | By 5 October after the end of the tax year (5 October 2026 for 2025 to 2026) | 2025/26 and later years | [register for Self Assessment](https://www.gov.uk/register-for-self-assessment); [TMA 1970 s7](https://www.legislation.gov.uk/ukpga/1970/9/section/7) |
 | Partnership registration | By 5 October in the business's second tax year | Current | [set up a business partnership](https://www.gov.uk/set-up-business-partnership/print) |
-| Company incorporation fee | £100 online or software; £124 paper; £156 same-day (software only) | Published 25 September 2026 | [Companies House fees](https://www.gov.uk/government/publications/companies-house-fees/companies-house-fees) |
-| LLP incorporation fee | £100 software; £124 paper; £156 same-day | Published 25 September 2026 | [Companies House fees](https://www.gov.uk/government/publications/companies-house-fees/companies-house-fees) |
-| Confirmation statement fee | £50 online or software; £110 paper, once per 12-month payment period | Published 25 September 2026 | [confirmation statement guidance](https://www.gov.uk/guidance/confirmation-statement-guidance) |
+| Company incorporation fee | £100 online or software; £124 paper; £156 same-day (software only) | Read 14 November 2026 | [Companies House fees](https://www.gov.uk/government/publications/companies-house-fees/companies-house-fees) |
+| LLP incorporation fee | £100 software; £124 paper; £156 same-day | Read 14 November 2026 | [Companies House fees](https://www.gov.uk/government/publications/companies-house-fees/companies-house-fees) |
+| Confirmation statement fee | £50 online or software; £110 paper, once per 12-month payment period | Read 14 November 2026 | [confirmation statement guidance](https://www.gov.uk/guidance/confirmation-statement-guidance) |
 | Confirmation statement | At least once every 12 months; file up to 14 days after the review period ends | Current | [confirmation statement guidance](https://www.gov.uk/guidance/confirmation-statement-guidance) |
 | Failure to file the confirmation statement | Fine of up to £5,000; the company may be struck off | Current | [confirmation statement guidance](https://www.gov.uk/guidance/confirmation-statement-guidance) |
 | Corporation Tax registration | Within 3 months after the first accounting period begins | Current | [FA 2004 s55](https://www.legislation.gov.uk/ukpga/2004/12/section/55) |
@@ -184,6 +194,10 @@ These appear in Companies House's outline transition plan and should not be trea
 | PSC threshold | More than 25% of shares or voting rights | Current | [PSC guidance](https://www.gov.uk/guidance/people-with-significant-control-pscs) |
 | PLC authorised minimum | £50,000 nominal allotted share capital; each share paid up at least one quarter plus premium | Current | [CA 2006 s763](https://www.legislation.gov.uk/ukpga/2006/46/section/763); [s586](https://www.legislation.gov.uk/ukpga/2006/46/section/586) |
 | Director minimum age | 16 | Current | [CA 2006 s157](https://www.legislation.gov.uk/ukpga/2006/46/section/157) |
+| Personal Allowance; basic rate band | £12,570; 20% from £12,571 to £50,270 | 2026/27 | [Income Tax rates](https://www.gov.uk/income-tax-rates) |
+| Class 4 National Insurance (sole trader, partner) | 6% on profits over £12,570 up to £50,270, 2% above; Class 2 treated as paid at profits of £7,105 or more | 2026/27 | [self-employed National Insurance rates](https://www.gov.uk/self-employed-national-insurance-rates) |
+| Class 1 secondary threshold (employer); employer rate | £5,000 a year; 15% | 2026/27 | [rates and thresholds for employers 2026 to 2027](https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2026-to-2027) |
+| Dividend allowance; dividend basic rate | £500; 10.75% | 2026/27 | [tax on dividends](https://www.gov.uk/tax-on-dividends) |
 
 ## Boundary and exception table
 
@@ -208,7 +222,9 @@ These appear in Companies House's outline transition plan and should not be trea
 
 ## Worked cases
 
-### Case 1: sole trader starting in 2026/27 ([become a sole trader](https://www.gov.uk/become-sole-trader); [TMA 1970 s7](https://www.legislation.gov.uk/ukpga/1970/9/section/7))
+### Case 1: sole trader starting in 2026/27
+
+Sources: [become a sole trader](https://www.gov.uk/become-sole-trader); [TMA 1970 s7](https://www.legislation.gov.uk/ukpga/1970/9/section/7)
 
 Priya starts freelance design work on 1 June 2026 and expects about £8,000 of income by 5 April 2027. She has never filed a return.
 
@@ -217,7 +233,9 @@ Priya starts freelance design work on 1 June 2026 and expects about £8,000 of i
 - Her qualifying income is under the £20,000 Making Tax Digital threshold for 2026 to 2027, so on these facts she is not brought into Making Tax Digital for Income Tax from 6 April 2028.
 - If her turnover goes over £90,000 on a rolling 12-month basis, she must register for VAT.
 
-### Case 2: new company, first deadlines ([life of a company: accounts](https://www.gov.uk/government/publications/life-of-a-company-annual-requirements/life-of-a-company-part-1-accounts); [FA 2004 s55](https://www.legislation.gov.uk/ukpga/2004/12/section/55))
+### Case 2: new company, first deadlines
+
+Sources: [life of a company: accounts](https://www.gov.uk/government/publications/life-of-a-company-annual-requirements/life-of-a-company-part-1-accounts); [FA 2004 s55](https://www.legislation.gov.uk/ukpga/2004/12/section/55)
 
 Company incorporated on 10 January 2026. It rents an office and starts doing business on 1 March 2026. It keeps its default accounting reference date.
 
@@ -225,15 +243,37 @@ Company incorporated on 10 January 2026. It rents an office and starts doing bus
 - **First accounts:** they cover 10 January 2026 to 31 January 2027, which is more than 12 months. The deadline is the longer of 21 months from incorporation (10 October 2027) and 3 months from the ARD (30 April 2027): **10 October 2027**.
 - **Corporation Tax:** the first accounting period begins on 1 March 2026, when the company starts to carry on business. Notice to HMRC is due no later than 3 months after that. Diary 31 May 2026 to be safe: that is one day earlier than the statutory limit, which on the corresponding-date rule runs to 1 June 2026. The period 10 January to 28 February 2026 is dormant for Corporation Tax.
 - **First confirmation statement:** the review period ends 12 months after incorporation. The statement can be filed up to 14 days after that. Check the exact confirmation date on the register. It costs £50 online. The company cannot file it unless every director is verified.
+- **Companies House fees in the first year:** incorporation £100 online plus the first confirmation statement £50 online is £150. On paper the same two filings cost £124 plus £110, which is £234 ([Companies House fees](https://www.gov.uk/government/publications/companies-house-fees/companies-house-fees)).
 
-### Case 3: VAT registration by the backward look ([when to register for VAT](https://www.gov.uk/vat-registration/when-to-register))
+```oa-check
+name: Companies House fees in year one, online against paper (fees read 14 November 2026)
+inputs:
+  incorporation_online: 100
+  confirmation_online: 50
+  incorporation_paper: 124
+  confirmation_paper: 110
+steps:
+  - online_total: incorporation_online + confirmation_online
+  - paper_total: incorporation_paper + confirmation_paper
+  - saving_online: paper_total - online_total
+expected:
+  online_total: 150.00
+  paper_total: 234.00
+  saving_online: 84.00
+```
+
+### Case 3: VAT registration by the backward look
+
+Sources: [when to register for VAT](https://www.gov.uk/vat-registration/when-to-register)
 
 On 15 July the business's taxable turnover for the last 12 months reaches £100,000, the first time it has gone over £90,000.
 
 - It must register by 30 August (30 days after the end of July).
 - Its effective date of registration is 1 September, the first day of the second month after going over.
 
-### Case 4: existing PSC who is not a director ([when you need to verify](https://www.gov.uk/guidance/when-you-need-to-verify-your-identity-for-companies-house))
+### Case 4: existing PSC who is not a director
+
+Sources: [when you need to verify](https://www.gov.uk/guidance/when-you-need-to-verify-your-identity-for-companies-house)
 
 Tom has held 40% of a company's shares since 2019 and is not a director. His date of birth is 22 January.
 
@@ -241,7 +281,9 @@ Tom has held 40% of a company's shares since 2019 and is not a director. His dat
 - He must verify his identity and provide his personal code through the PSC service within the first 14 days of his birth month: 1 to 14 January.
 - If he is appointed a director later, he must also give his code for the director role, separately.
 
-### Case 5: registered office at a PO Box ([CA 2006 s86](https://www.legislation.gov.uk/ukpga/2006/46/section/86); [set up a private limited company](https://www.gov.uk/limited-company-formation/print))
+### Case 5: registered office at a PO Box
+
+Sources: [CA 2006 s86](https://www.legislation.gov.uk/ukpga/2006/46/section/86); [set up a private limited company](https://www.gov.uk/limited-company-formation/print)
 
 A founder living abroad wants to use a Royal Mail PO Box in London as the registered office.
 
@@ -249,13 +291,59 @@ A founder living abroad wants to use a Royal Mail PO Box in London as the regist
 - Use a physical UK address in the company's part of the UK where post comes to someone acting for the company and delivery can be acknowledged. An accountant's or solicitor's address works with their permission.
 - The directors themselves do not have to live in the UK.
 
-### Case 6: sole director taking a salary ([register as an employer](https://www.gov.uk/register-employer))
+### Case 6: sole director taking a salary
+
+Sources: [register as an employer](https://www.gov.uk/register-employer)
 
 A one-person company will pay its director a salary from 30 November 2026.
 
 - It must register as an employer even though the only employee is the director.
 - It must register before 30 November 2026, and cannot register more than 2 months before it starts paying: so no earlier than 30 September 2026.
 - Payroll operation is covered in uk-payroll.
+
+### Case 7: decision, sole trader or limited company at £30,000 profit (2026/27)
+
+Sources: [Income Tax rates](https://www.gov.uk/income-tax-rates); [self-employed National Insurance rates](https://www.gov.uk/self-employed-national-insurance-rates); [Corporation Tax rates](https://www.gov.uk/corporation-tax-rates); [tax on dividends](https://www.gov.uk/tax-on-dividends); [rates and thresholds for employers 2026 to 2027](https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2026-to-2027)
+
+Sam expects £30,000 profit a year before paying himself, lives in England, has no other income, and wants to know which structure costs less tax in 2026/27. Worked both ways, at method level:
+
+- **Sole trader:** Income Tax at 20% on £17,430 (£30,000 less the £12,570 Personal Allowance) is £3,486. Class 4 at 6% on the same £17,430 is £1,045.80. Class 2 is treated as paid because profits are over £7,105. Total £4,531.80.
+- **Company:** salary £5,000, at the employer's secondary threshold, so no employer or employee Class 1. Company profit £25,000, Corporation Tax at 19% is £4,750. The £20,250 left is paid as a dividend. The unused £7,570 of Personal Allowance covers part of it; £500 is covered by the dividend allowance; the other £12,180 is taxed at 10.75%, which is £1,309.35. Total £6,059.35.
+- **The figure that decides it:** the company route costs £1,527.55 more at this profit, because 19% Corporation Tax plus 10.75% dividend tax is more than 20% Income Tax plus 6% Class 4 in the basic rate band. Limited liability, privacy and the costs of running a company (accounts, confirmation statement, payroll) are separate points. Re-run with the client's real figures from the rate Guides before advising; a higher profit, retained profits or a spouse's shares change the answer.
+
+```oa-check
+name: Sole trader or company at GBP 30,000 profit, 2026/27, England
+inputs:
+  profit: 30000
+  personal_allowance: 12570
+  basic_rate: 0.20
+  class4_rate: 0.06
+  salary: 5000
+  ct_small_rate: 0.19
+  dividend_allowance: 500
+  dividend_basic_rate: 0.1075
+steps:
+  - st_income_tax: (profit - personal_allowance) * basic_rate
+  - st_class4: (profit - personal_allowance) * class4_rate
+  - st_total: st_income_tax + st_class4
+  - co_ct: (profit - salary) * ct_small_rate
+  - dividend: profit - salary - co_ct
+  - pa_left: personal_allowance - salary
+  - dividend_taxed: max(dividend - pa_left - dividend_allowance, 0)
+  - dividend_tax: dividend_taxed * dividend_basic_rate
+  - co_total: co_ct + dividend_tax
+  - company_costs_more_by: co_total - st_total
+expected:
+  st_income_tax: 3486.00
+  st_class4: 1045.80
+  st_total: 4531.80
+  co_ct: 4750.00
+  dividend: 20250.00
+  dividend_taxed: 12180.00
+  dividend_tax: 1309.35
+  co_total: 6059.35
+  company_costs_more_by: 1527.55
+```
 
 ## When to refuse or refer
 
@@ -278,9 +366,9 @@ A one-person company will pay its director a salary from 30 November 2026.
 - **Company registers:** every company must keep a register of its members, entering their names and addresses and the dates each became and ceased to be a member ([CA 2006 s113](https://www.legislation.gov.uk/ukpga/2006/46/section/113)). Check it when identifying PSCs ([PSC guidance](https://www.gov.uk/guidance/people-with-significant-control-pscs)).
 - **Payroll and VAT:** once registered, follow uk-payroll and uk-vat-return.
 
-## Registrations due now for the previous year (2025/26)
+### Late registration for 2025/26
 
-Anyone who started self-employment, or became a partner, between 6 April 2025 and 5 April 2026 and has not received a notice to file must tell HMRC **by 5 October 2026**. After that date a penalty may be charged ([register for Self Assessment](https://www.gov.uk/register-for-self-assessment)).
+Anyone who started self-employment, or became a partner, between 6 April 2025 and 5 April 2026 and had not received a notice to file had to tell HMRC **by 5 October 2026**. That date has passed: register now, because a penalty may be charged for late notice ([register for Self Assessment](https://www.gov.uk/register-for-self-assessment)).
 
 ## Completion checklist
 
@@ -296,6 +384,43 @@ Anyone who started self-employment, or became a partner, between 6 April 2025 an
 - [ ] VAT turnover tested every month against £90,000
 - [ ] Anything on the refer list sent to a specialist
 
+## Sources
+
+| Source | What was read | URL | Read on |
+| --- | --- | --- | --- |
+| GOV.UK, Set up a business (legal structures) | Read for sole trader, company and partnership features and moving between them | https://www.gov.uk/business-legal-structures | 2026-11-14 |
+| GOV.UK, Become a sole trader | Read for the GBP 1,000 registration test | https://www.gov.uk/become-sole-trader | 2026-11-14 |
+| GOV.UK, Register for Self Assessment | Read for the 5 October 2026 deadline for 2025 to 2026 | https://www.gov.uk/register-for-self-assessment | 2026-11-14 |
+| Taxes Management Act 1970, s.7 | Read for the notice within 6 months of the year end | https://www.legislation.gov.uk/ukpga/1970/9/section/7 | 2026-11-14 |
+| GOV.UK, Set up a business partnership | Read for the nominated partner, SA400 and 5 October in the second tax year | https://www.gov.uk/set-up-business-partnership/print | 2026-11-14 |
+| GOV.UK, Set up a private limited company | Read for names, registered office rules, shares, UTR and Corporation Tax set-up | https://www.gov.uk/limited-company-formation/print | 2026-11-14 |
+| GOV.UK, Set up and run an LLP | Read for members, designated members and Self Assessment | https://www.gov.uk/guidance/set-up-and-run-a-limited-liability-partnership-llp | 2026-11-14 |
+| Limited Liability Partnerships Act 2000, ss.2 and 8 | Read for the incorporation document and designated members | https://www.legislation.gov.uk/ukpga/2000/12/section/8 | 2026-11-14 |
+| Companies House fees | Read for GBP 100, 124, 156, 50 and 110 | https://www.gov.uk/government/publications/companies-house-fees/companies-house-fees | 2026-11-14 |
+| Companies House, Confirmation statement guidance | Read for the 14-day filing window, the fee and the GBP 5,000 fine | https://www.gov.uk/guidance/confirmation-statement-guidance | 2026-11-14 |
+| Companies Act 2006, ss.7, 9, 86, 88A, 113, 154, 155, 157, 271, 586, 761, 763 | Read for formation, registered office and email, directors, age 16 and the PLC minimum of GBP 50,000 | https://www.legislation.gov.uk/ukpga/2006/46/section/763 | 2026-11-14 |
+| Companies House, PSC guidance | Read for more than 25% and the 14-day change rule | https://www.gov.uk/guidance/people-with-significant-control-pscs | 2026-11-14 |
+| Companies House, ECCTA outline transition plan | Read for 4 March 2024, 8 April 2025, end of 2026 and November 2027 | https://www.gov.uk/government/publications/economic-crime-and-corporate-transparency-act-outline-transition-plan-for-companies-house/economic-crime-and-corporate-transparency-act-outline-transition-plan-for-companies-house | 2026-11-14 |
+| Companies House news, identity verification from 18 November 2025 | Read for the 12-month transition and 6 to 7 million people | https://www.gov.uk/government/news/companies-house-confirms-identity-verification-rollout-from-18-november-2025 | 2026-11-14 |
+| Companies House, Verifying your identity and when you need to verify | Read for who verifies, the personal code and the PSC 14-day windows | https://www.gov.uk/guidance/when-you-need-to-verify-your-identity-for-companies-house | 2026-11-14 |
+| Companies House news, accounts filing from April 2028 | Read for iXBRL and the paused profit and loss requirement | https://www.gov.uk/government/news/companies-house-update-to-accounts-filing-from-april-2028 | 2026-11-14 |
+| Companies House, Life of a company part 1 | Read for 21 months, 9 months and the public company 18 months | https://www.gov.uk/government/publications/life-of-a-company-annual-requirements/life-of-a-company-part-1-accounts | 2026-11-14 |
+| Finance Act 2004, s.55 and CTA 2009, s.9 | Read for notice within three months and when an accounting period starts | https://www.legislation.gov.uk/ukpga/2004/12/section/55 | 2026-11-14 |
+| GOV.UK, Dormant for Corporation Tax | Read for dormant companies before trading | https://www.gov.uk/dormant-company/dormant-for-corporation-tax | 2026-11-14 |
+| GOV.UK, Company Tax Returns and Pay Corporation Tax | Read for 12 months to file and 9 months and 1 day to pay | https://www.gov.uk/pay-corporation-tax | 2026-11-14 |
+| GOV.UK, Corporation Tax rates | Read for 25%, 19%, GBP 50,000 and 250,000 and associated companies | https://www.gov.uk/corporation-tax-rates | 2026-11-14 |
+| GOV.UK, Register as an employer | Read for registering before the first payday and not more than 2 months before | https://www.gov.uk/register-employer | 2026-11-14 |
+| GOV.UK, When to register for VAT | Read for GBP 90,000, 30 days, the effective date and non-established persons | https://www.gov.uk/vat-registration/when-to-register | 2026-11-14 |
+| GOV.UK, Check if you need MTD for Income Tax | Read for the GBP 50,000, 30,000 and 20,000 tests | https://www.gov.uk/guidance/check-if-youre-eligible-for-making-tax-digital-for-income-tax | 2026-11-14 |
+| GOV.UK, Income Tax rates | Read for GBP 12,570 and 20% to GBP 50,270 in 2026/27 | https://www.gov.uk/income-tax-rates | 2026-11-14 |
+| GOV.UK, Self-employed National Insurance rates | Read for 6% and 2% Class 4 and the GBP 7,105 Class 2 line in 2026/27 | https://www.gov.uk/self-employed-national-insurance-rates | 2026-11-14 |
+| HMRC, Rates and thresholds for employers 2026 to 2027 | Read for the GBP 5,000 secondary threshold and 15% employer rate | https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2026-to-2027 | 2026-11-14 |
+| GOV.UK, Tax on dividends | Read for the GBP 500 allowance and 10.75% basic rate | https://www.gov.uk/tax-on-dividends | 2026-11-14 |
+
+Every other page is linked in its step, table row or case above and was opened on 2026-11-14.
+
+Not yet confirmed: whether the same-day incorporation fee of £156 is offered online as well as by software (the fees page lists £156 without making the channel clear; the old file said software only); and whether any planned ECCTA stage has been commenced since the transition plan was last updated (no commencement order was read on this pass).
+
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-30. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `uk-formation` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/uk-formation. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `uk-formation` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/uk-formation. If neither is available, confirm every figure against the official source pages cited above before relying on it.

@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/fr-personal-income-tax"
   jurisdiction: "FR"
   tax_year: "2026"
-  last_updated: "2026-10-31"
+  last_updated: "2026-11-14"
 ---
 
 # France: personal income tax for a household (impôt sur le revenu)
@@ -61,7 +61,7 @@ Self-employed results in depth are in `fr-income-tax`; social contributions in `
 | Social levies on general investment income collected at source under CSS art. L136-7 during 2025 (CSG 9.2%, CRDS 0.5%, solidarity levy 7.5%) | 17.2% total | Source-collected payments in 2025 | https://www.service-public.gouv.fr/particuliers/vosdroits/F2329 |
 | CSG on general investment and patrimony income (CSS art. L136-8, I-2°; LFSS 2026, loi n° 2025-1403 art. 12 II) | 10.6%, so 18.6% total levies | L136-6 assessed income from 2025; L136-7 source-collected payments from 1 January 2026, subject to the statutory exceptions below | https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000054336623/2026-10-24 |
 | CSG kept at 9.2% (CSS art. L136-8, IV): rental income, gains on real property, and the PEL, CEL and life-insurance products covered by IV | 17.2% total | Protected categories; check the product and applicable collection rules | same, and https://www.service-public.gouv.fr/particuliers/vosdroits/F2329 |
-| Flat tax on dividends and interest, total (12.8% plus levies) | 30% where the levies are 17.2%; 31.4% where they are 18.6% | For general L136-7 source-collected dividends: 30% in 2025; 31.4% from 1 January 2026. Assessed L136-6 income follows its separate commencement rule | computed from the two rows above |
+| Flat tax on dividends and interest, total (12.8% plus levies) | 30% where the levies are 17.2%; 31.4% where they are 18.6% | For general L136-7 source-collected dividends: 30% in 2025; 31.4% from 1 January 2026. Assessed L136-6 income follows its separate commencement rule | computed from the two rows above; https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000053546896/2026-10-24 ; https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000054336623/2026-10-24 |
 | Dividend allowance, only if the household opts for the scale | 40% | 2025 | https://www.service-public.gouv.fr/particuliers/vosdroits/F2613 |
 | Deductible CSG, income taxed at the scale | 6.8% | Income of 2025 | https://www.impots.gouv.fr/www2/fichiers/documentation/brochure/ir_2026/pdf_som/12-charges_ded_rev_225a236.pdf |
 | Salary deduction for expenses (CGI art. 83, 3°) | 10%, min EUR 509, max EUR 14,555 per person; never more than the relevant declared remuneration | Income of 2025 | https://bofip.impots.gouv.fr/bofip/10855-PGP.html/identifiant=BOI-BAREME-000035-20260217 |
@@ -74,7 +74,7 @@ Self-employed results in depth are in `fr-income-tax`; social contributions in `
 | Micro limit, unclassified tourist lets | EUR 15,000 | 2025 and 2026 | same |
 | Micro limit, long-term furnished lets and classified tourist lets or chambres d'hôtes (services limit) | EUR 77,700 (income of 2025); EUR 83,600 (income of 2026) | 2025 and 2026 | same |
 | Micro flat payment option, household RFR of year N-2 must not exceed the stated ceiling (2.5-part example as published) | EUR 29,315 for 1 part; EUR 58,630 for 2 parts; EUR 87,945 for 3 parts; DGFiP’s 2.5-part example requires RFR below EUR 73,288 | Option for 2026; RFR of 2024 | https://www.impots.gouv.fr/professionnel/questions/en-tant-que-micro-entrepreneur-sous-quelles-conditions-puis-je-opter-pour-l |
-| Micro flat payment option, following year | EUR 29,579 for 1 part; EUR 59,158 for 2 parts; EUR 88,737 for 3 parts. For 2.5 parts the exact product is EUR 73,947.50, while DGFiP’s published test is RFR below EUR 73,948 | Option for 2027; RFR of 2025 | https://www.impots.gouv.fr/professionnel/questions/en-tant-que-micro-entrepreneur-sous-quelles-conditions-puis-je-opter-pour-l |
+| Micro flat payment option, following year | EUR 29,579 for 1 part; EUR 59,158 for 2 parts; EUR 88,737 for 3 parts. For 2.5 parts the exact product is EUR 73,947.50 (computed), while DGFiP’s published test is RFR below EUR 73,948 | Option for 2027; RFR of 2025 | https://www.impots.gouv.fr/professionnel/questions/en-tant-que-micro-entrepreneur-sous-quelles-conditions-puis-je-opter-pour-l |
 | Micro flat payment rates | 1% sales, catering and lodging excluding furnished letting; 1.7% other eligible BIC, including classified furnished letting; 2.2% BNC | 2026 | https://entreprendre.service-public.gouv.fr/vosdroits/F23267 |
 | Micro-foncier (CGI art. 32) | Gross rent up to EUR 15,000; 30% allowance | Income of 2025 | https://bofip.impots.gouv.fr/bofip/3973-PGP.html |
 | Retirement savings (PER) deduction ceiling per person, subject to the dated carry-period and payment-eligibility rules below | Initial floor/cap before specified prior professional/employer pension reductions: 10% of last year's net professional income; max EUR 37,094, min EUR 4,637 (paid 2025); max EUR 37,680, min EUR 4,710 (paid 2026) | 2025 and 2026 | https://www.impots.gouv.fr/www2/fichiers/documentation/brochure/ir_2026/pdf_som/12-charges_ded_rev_225a236.pdf |
@@ -360,4 +360,4 @@ Not yet confirmed: the scale for the income of 2026 (no 2027 finance law enacted
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-31. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `fr-personal-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/fr-personal-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `fr-personal-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/fr-personal-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

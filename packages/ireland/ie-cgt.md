@@ -1,14 +1,15 @@
 ---
 name: ie-cgt
 description: "Irish Capital Gains Tax (CGT) for individuals, tax year 2026. Covers the standard rate of 33% for disposals up to 6 October 2026 and 31% from 7 October 2026 (Financial Resolution No. 3 and section 36 of the Finance (No. 2) Bill 2026, provisional until enacted), development land at 33%, the EUR 1,270 annual exemption, the computation and allowable costs, share identification, losses, Principal Private Residence relief, Revised Entrepreneur Relief at 10% (lifetime limit EUR 1,500,000 for gains from 1 January 2026), Retirement Relief, the site to a child relief, indexation, the CG50A clearance and 15% withholding, payment by 15 December or 31 January, returns on Form 11, Form 12 or CG1 by 31 October, surcharges and interest. Triggers: Ireland CGT, 31% capital gains, CG50, Entrepreneur Relief, Form CG1. Out of scope: companies (ie-corporation-tax), gifts and inheritances on the recipient side (ie-cat), remittance basis (ie-non-dom), treaty credits (ie-foreign-tax-and-withholding)."
-version: 2.3
+version: 2.4
 jurisdiction: IE
 tax_year: 2026
-last_updated: 2026-11-06
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
+type: situation-rules
 ---
 
 # Ireland Capital Gains Tax (CGT) for individuals, 2026

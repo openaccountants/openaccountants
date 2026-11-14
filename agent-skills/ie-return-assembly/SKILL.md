@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/ie-return-assembly"
   jurisdiction: "IE"
   tax_year: "2026"
-  last_updated: "2026-10-31"
+  last_updated: "2026-11-14"
 ---
 
-# Ireland: assembling the 2026 individual tax return (Form 11 and Form 12), v1.2
+# Ireland: assembling the 2026 individual tax return (Form 11 and Form 12), v1.3
 
 This skill is the last step for an individual's Irish return for tax year 2026. The tax year is the calendar year. The authority is the Revenue Commissioners. It does not redo the work of the other skills. It takes their results, checks that they fit together, adds them up, and produces a working paper, the amount to pay and the dates. It does not file anything: the taxpayer or their agent files on ROS or myAccount.
 
@@ -215,4 +215,4 @@ Not yet confirmed: the ROS pay and file extension date for 2026 returns (due in 
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-31. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ie-return-assembly` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ie-return-assembly. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ie-return-assembly` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ie-return-assembly. If neither is available, confirm every figure against the official source pages cited above before relying on it.

@@ -1,253 +1,169 @@
 ---
 name: myanmar-ct
-description: "Use this skill whenever asked to prepare, review, or classify transactions for a Myanmar Commercial Tax (CT) return for any client. Trigger on phrases like \"Myanmar CT\", \"commercial tax\", \"IRD filing Myanmar\", or any request involving Myanmar commercial tax. MUST be loaded alongside vat-workflow-base v0.1 or later. ALWAYS read this skill before touching any Myanmar CT work."
+description: "Myanmar commercial tax (CT), the country's turnover tax in place of VAT or GST, for FY 2026-27 (1 April 2026 to 31 March 2027) under the Union Taxation Law 2026 and the Commercial Tax Law. Covers the 5% general rate on goods, imports and services, the 3% rates (hotels and tourism, gold, construction for sale), 15% on internet services, the SIM card charge, 0% on exports (8% electricity, 5% crude oil), the 50 million kyat threshold, exempt goods and services, set-off, monthly payment within 10 days, quarterly and annual returns, and fines. Also classifies bank-statement lines for a CT return. Use for Myanmar VAT, GST, sales tax or commercial tax questions."
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/myanmar-ct"
   jurisdiction: "MM"
-  tax_year: "2025"
-  last_updated: "2026-07-13"
+  tax_year: "2026"
+  last_updated: "2026-11-14"
 ---
 
-# Myanmar Ct
-
-## Section 1 — Quick reference
-
-**Quick reference**
-
-| Field | Value |
-| --- | --- |
-| Country | Myanmar (Republic of the Union of Myanmar) |
-| Standard rate | 5% (commercial tax on most goods and services) |
-| Higher rates | 8%-100% on specified goods (alcohol, tobacco, gems, vehicles, fuel) |
-| Zero rate | 0% (exports) |
-| Exempt | Basic foodstuffs, agricultural products, education, healthcare |
-| Return form | Monthly CT return |
-| Filing portal | IRD Myanmar (Internal Revenue Department) |
-| Authority | Internal Revenue Department (IRD), Ministry of Planning and Finance |
-| Currency | MMK (Myanmar Kyat) |
-| Filing frequency | Monthly |
-| Deadline | 10th of the month following the tax period |
-| Companion skill | vat-workflow-base v0.1 or later — MUST be loaded |
-
-**Note:** Myanmar uses Commercial Tax, not VAT. There is no input tax credit mechanism for most businesses. CT is a turnover-based tax for most sectors.
-
-**Conservative defaults**
-
-| Ambiguity | Default |
-| --- | --- |
-| Unknown rate on a sale | 5% |
-| Unknown input credit eligibility | No credit (single-stage for most) |
-| Unknown counterparty location | Domestic Myanmar |
-
-## Section 2 — Required inputs and refusal catalogue
-
-### Required inputs
-
-**Minimum viable** — bank statement for the month. Acceptable from: KBZ (Kanbawza Bank), CB Bank (Co-operative Bank), AYA Bank, Yoma Bank, Myanmar Citizens Bank, or any other.
-
-### Myanmar-specific refusal catalogue
-
-- **R-MM-1 — Special goods with high CT rates** — Trigger: client deals in gems, jade, alcohol, tobacco, vehicles, or fuel. Message: "Goods with enhanced CT rates (8%-100%) require product-level classification. Please escalate."  _(R-MM-1)_
-- **R-MM-2 — Special Economic Zone (SEZ)** — Trigger: client in Thilawa SEZ or other SEZ. Message: "SEZ entities have bespoke tax treatment. Please escalate."  _(R-MM-2)_
-- **R-MM-3 — Foreign company branch** — Trigger: foreign company branch in Myanmar. Message: "Branch operations have specific CT and income tax obligations. Please escalate."  _(R-MM-3)_
-
-## Section 3 — Supplier pattern library
-
-### 3.1 Myanmar banks (fees — exclude)
-
-**Myanmar banks (fees — exclude)**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| KBZ, KANBAWZA | EXCLUDE for bank charges | Financial charges |
-| CB BANK, CO-OPERATIVE BANK | EXCLUDE for bank charges | Same |
-| AYA BANK, YOMA BANK | EXCLUDE for bank charges | Same |
-| INTEREST, LOAN, REPAYMENT | EXCLUDE | Out of scope |
-
-### 3.2 Government (exclude)
-
-**Government (exclude)**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| IRD, INTERNAL REVENUE | EXCLUDE | Tax payment |
-| CUSTOMS, MYANMAR CUSTOMS | EXCLUDE | Duty |
-| SSB, SOCIAL SECURITY BOARD | EXCLUDE | Social security |
-
-### 3.3 Utilities
-
-**Utilities**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| YESC, ELECTRICITY SUPPLY | Domestic 5% | Electricity |
-| MPT, OOREDOO MM, TELENOR MM, ATOM | Domestic 5% | Telecoms |
-
-### 3.4 Digital payments
-
-**Digital payments**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| WAVE MONEY, KBZ PAY, OK$ | EXCLUDE for fees | Financial service |
-
-### 3.5 SaaS and international services
-
-**SaaS and international services**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| GOOGLE, MICROSOFT, META, AWS | Self-assess 5% | Non-resident |
-| ZOOM, SLACK | Self-assess 5% | Same |
-
-### 3.6 Payroll and exclusions
-
-**Payroll and exclusions**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| SALARY, WAGES | EXCLUDE | Outside CT scope |
-| OWN TRANSFER, INTERNAL | EXCLUDE | Internal |
-| CASH WITHDRAWAL | TIER 2 — ask | Default exclude |
-
-## Section 4 — Worked examples
-
-### Example 1 — Standard domestic sale at 5%
-
-**Input line:** `05.04.2026 ; YANGON TRADING CO ; CREDIT ; Invoice MM-041 ; MMK 10,500,000`
-
-**Reasoning:** Domestic. 5%. Net = MMK 10,000,000, CT = MMK 500,000.
-
-**Example 1 result table**
-
-| Date | Counterparty | Gross | Net | CT | Rate | Field | Default? | Excluded? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 05.04.2026 | YANGON TRADING CO | +10,500,000 | +10,000,000 | 500,000 | 5% | Output | N | — |
-
-### Example 2 — Export, zero-rated
-
-**Input line:** `15.04.2026 ; THAI BUYER CO ; CREDIT ; Exported goods ; MMK 50,000,000`
-
-**Example 2 result table**
-
-| Date | Counterparty | Gross | Net | CT | Rate | Field | Default? | Excluded? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 15.04.2026 | THAI BUYER CO | +50,000,000 | +50,000,000 | 0 | 0% | Zero-rated | N | — |
-
-### Example 3 — Bank charges
-
-**Input line:** `30.04.2026 ; KBZ ; DEBIT ; Service fee ; MMK -5,000`
-
-**Example 3 result table**
-
-| Date | Counterparty | Gross | Net | CT | Rate | Field | Default? | Excluded? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 30.04.2026 | KBZ | -5,000 | — | — | — | — | N | "Financial charge" |
-
-## Section 5 — Tier 1 classification rules (compressed)
-
-### 5.1 Standard rate 5% — Default for most goods and services.
-
-- **Standard rate** — 5% — Default for most goods and services.  _(5.1 Standard rate 5% — Default for most goods and services.)_
-
-### 5.2 Higher rates — 8% (select processed goods), 25%-100% (alcohol, tobacco, gems, vehicles, fuel).
-
-- **Higher rates** — 8% (select processed goods), 25%-100% (alcohol, tobacco, gems, vehicles, fuel).  _(5.2 Higher rates — 8% (select processed goods), 25%-100% (alcohol, tobacco, gems, vehicles, fuel).)_
-
-### 5.3 Zero rate — Exports.
-
-- **Zero rate** — Exports.  _(5.3 Zero rate — Exports.)_
-
-### 5.4 Exempt — Basic food, agriculture, education, healthcare.
-
-- **Exempt** — Basic food, agriculture, education, healthcare.  _(5.4 Exempt — Basic food, agriculture, education, healthcare.)_
-
-### 5.5 Input tax credit — LIMITED. Only available in specific manufacturing/production chain scenarios. Most businesses: no credit.
-
-- **Input tax credit** — LIMITED. Only available in specific manufacturing/production chain scenarios. Most businesses: no credit.  _(5.5 Input tax credit — LIMITED. Only available in specific manufacturing/production chain scenarios. Most businesses: no credit.)_
-
-### 5.6 Imports — CT at applicable rate on CIF plus duty.
-
-- **Imports** — CT at applicable rate on CIF plus duty.  _(5.6 Imports — CT at applicable rate on CIF plus duty.)_
-
-### 5.7 Reverse charge — Non-resident services: self-assess 5%.
-
-- **Reverse charge** — Non-resident services: self-assess 5%.  _(5.7 Reverse charge — Non-resident services: self-assess 5%.)_
-
-## Section 6 — Tier 2 catalogue (compressed)
-
-### 6.1 Product classification — Default: 5%. Question: "Is this a special-rate product (alcohol, tobacco, gems, vehicles)?"
-
-- **Product classification** — Default: 5%. Question: "Is this a special-rate product (alcohol, tobacco, gems, vehicles)?"  _(6.1 Product classification — Default: 5%. Question: "Is this a special-rate product (alcohol, tobacco, gems, vehicles)?")_
-
-### 6.2 Input credit eligibility — Default: no credit. Question: "Are you in a qualifying production chain?"
-
-- **Input credit eligibility** — Default: no credit. Question: "Are you in a qualifying production chain?"  _(6.2 Input credit eligibility — Default: no credit. Question: "Are you in a qualifying production chain?")_
-
-### 6.3 SaaS entities — Default: self-assess 5%.
-
-- **SaaS entities** — Default: self-assess 5%.  _(6.3 SaaS entities — Default: self-assess 5%.)_
-
-### 6.4 Cash withdrawals — Default: exclude.
-
-- **Cash withdrawals** — Default: exclude.  _(6.4 Cash withdrawals — Default: exclude.)_
-
-## Section 7 — Excel working paper template
-
-Per vat-workflow-base Section 3, with Myanmar fields: Output 5%, Output higher rates, Zero-rated, Exempt, Input (if applicable), Net CT.
-
-## Section 8 — Bank statement reading guide
-
-KBZ and CB Bank exports CSV/PDF. MMK primary. Burmese script descriptions possible. Internal transfers: exclude. Convert foreign currency at CBM reference rate.
-
-## Section 9 — Onboarding fallback
-
-### 9.1 Registration — "Are you registered for Commercial Tax?"
-
-"Are you registered for Commercial Tax?"
-
-### 9.2 Filing period — Monthly. "Which month?"
-
-Monthly. "Which month?"
-
-### 9.3 Industry — "What goods/services do you deal in?"
-
-"What goods/services do you deal in?"
-
-### 9.4 Exports — "Do you export?"
-
-"Do you export?"
-
-### 9.5 Credit brought forward — Ask if applicable.
-
-Ask if applicable.
-
-## Section 10 — Reference material
-
-### Sources
-
-1. Myanmar Commercial Tax Law (as amended). 2. IRD guidelines. 3. Union Tax Law (annual rates).
-
-### Known gaps
-
-1. Special goods rates refused. 2. SEZ refused. 3. Input credit eligibility narrow and poorly documented.
-
-### Change log
-
-- v2.0 (April 2026): Full rewrite to Malta v2.0 ten-section structure.
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. All outputs must be reviewed by a qualified professional before filing.
-
-The most up-to-date version is maintained at [openaccountants.com](https://openaccountants.com).
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
+# Myanmar Commercial Tax v3.0
+
+> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
+
+## Who this applies to
+
+Anyone producing and selling goods, importing, trading or providing services in Myanmar in FY 2026-27. Myanmar has no VAT or GST: it levies **commercial tax (CT)** under the Commercial Tax Law (1990, as amended), with the schedules and rates set each year by the Union Taxation Law. For FY 2026-27 that is the Union Taxation Law 2026, Chapter VI (ss 14 to 18), in force 1 April 2026. CT is administered by the Internal Revenue Department (IRD); CT on imports is collected by the Customs Department with customs duty.
+
+**Specific goods tax** (tobacco, liquor, vehicles, fuel, gems and other listed goods, UTL 2026 Chapter V) is a separate tax and is not computed here (refusal R-MM-1).
+
+## Rates, bands and thresholds
+
+| Item | Amount and conditions | Tax year | Official URL |
+|---|---|---|---|
+| Goods produced and sold domestically, or imported | 5% of sale proceeds, or of landed value on import (including any specific goods tax) (UTL 2026 s 14(b)) | FY 2026-27 | https://www.ird.gov.mm/storage/laws/6a6b496e035ea-utl2026.pdf |
+| Importing and reselling, and trading | 5% of sale proceeds (s 14(c)) | FY 2026-27 | same |
+| Services and other goods not listed | 5% of receipts (s 14(e)) | FY 2026-27 | same |
+| SIM cards | 20,000 kyats per SIM card sold or activated (s 14(f)(i)) | FY 2026-27 | same |
+| Internet service | 15% of receipts (s 14(f)(ii)) | FY 2026-27 | same |
+| Construction, repair and sale of buildings and infrastructure (long-term lease of State land, with the State or on private land) | 3% of sale proceeds (s 14(g)) | FY 2026-27 | same |
+| Hotel and tourism services | 3% of receipts (s 14(h)) | FY 2026-27 | same |
+| Pure gold (bars, blocks, coins) and gold jewellery | 3% of sale proceeds or landed value; CT paid on purchase or import is not set off (s 14(i)) | FY 2026-27 | same |
+| Exempt goods | 46 listed goods: staple foods (rice, pulses, fresh produce, fish, meat, eggs, milk, sugar), agricultural inputs, school books and stationery, medicines and medical supplies, solar equipment, CMP raw materials and others (s 14(a)) | FY 2026-27 | same |
+| Exempt services | 34 listed services: goods and public transport, air transport, education, healthcare (not fitness), life insurance, microfinance, capital market, licensed banking and money services, childcare, funeral services, EV charging and others (s 14(d)) | FY 2026-27 | same |
+| Threshold | No CT unless the year's sale proceeds from domestic production, receipts from services, or trading proceeds exceed 50 million kyats (each, measured over 12 months from commencement) (s 15(b)) | FY 2026-27 | same |
+| Exports of goods | 0%; CT paid on purchase or production may be set off, and refunded if larger (s 17(b)) | FY 2026-27 | same |
+| Exported electricity | 8% (s 17(a)) | FY 2026-27 | same |
+| Exported crude oil | 5% (s 17(a)) | FY 2026-27 | same |
+| Foreign currency proceeds | CT paid in kyats at the rates above (s 16) | FY 2026-27 | same |
+| Monthly payment | Within 10 days after the end of each month (Commercial Tax Law s 12(a)) | FY 2026-27 | https://www.ird.gov.mm/storage/laws/68b55a995979f-Commercial%20Tax%20Law%20English%20version.pdf |
+| Quarterly return | Within one month after the end of each quarter (s 12(a)) | FY 2026-27 | same |
+| Annual return | Within 3 months after the end of the year (s 13(a)) | FY 2026-27 | same |
+| Annual CT return due, FY 2025-26 | 30 June 2026 | FY 2025-26 | https://www.ird.gov.mm/announcement-lists/96 |
+| Late return penalty (IRD notice) | Greater of 5% of tax owing plus 1% a month (to assessment) and K 100,000 | 2026 | same |
+| Commercial Tax Law fines | 10% of the tax due for each default: failure to register, to pay monthly, to send the quarterly or annual return in time, to pay assessed tax, to keep receipts (s 21) | FY 2026-27 | https://www.ird.gov.mm/storage/laws/68b55a995979f-Commercial%20Tax%20Law%20English%20version.pdf |
+
+## The base
+
+1. **Is the item taxable?** Check the exempt goods list (s 14(a)) and exempt services list (s 14(d)). If listed, no CT.
+2. **Is the person over the threshold?** Below 50 million kyats a year of taxable proceeds or receipts, no CT, but a person who wants to set off CT, or whose proceeds are chargeable on registration, must register (s 15(b), Explanation 2). Once over the threshold, CT applies to the whole amount, not only the excess (IRD companies page).
+3. **Which rate?** 5% by default; 3%, 15%, the SIM charge or the export rates where listed.
+4. **Base.** Sale proceeds for domestic sales; landed value for imports (collected by Customs); receipts for services. CT is charged on top of the price.
+5. **Set-off.** CT paid on purchase or production may be set off under the Commercial Tax Regulations; for exports, any excess is refundable (s 17(b)). Gold is the exception: no set-off (s 14(i)).
+6. **Landlords.** Rent from land, buildings and rooms over 50 million kyats a year: 5% CT collected from the tenant and paid with challan Form (KaThaKha)-7 (IRD individual page).
+
+### Bank-statement classification
+
+| Pattern | Treatment | Note |
+|---|---|---|
+| KBZ, KANBAWZA; CB BANK; AYA BANK; YOMA BANK | Exclude bank charges and interest | Money services of licensed banks are exempt services |
+| INTEREST, LOAN, REPAYMENT | Exclude | Out of scope |
+| IRD, INTERNAL REVENUE; CUSTOMS; SSB | Exclude | Tax, duty and social security payments |
+| YESC, ELECTRICITY SUPPLY | Purchase; check set-off eligibility | Electricity |
+| MPT, OOREDOO, TELENOR, ATOM (mobile and internet) | Purchase; internet bills carry 15% CT | Telecoms |
+| WAVE MONEY, KBZ PAY, OK$ | Exclude fees | Financial service |
+| GOOGLE, MICROSOFT, META, AWS, ZOOM, SLACK | Flag: services from non-residents (see Cross-border points) | Not self-assessed by default |
+| SALARY, WAGES; OWN TRANSFER; INTERNAL | Exclude | Outside CT |
+| CASH WITHDRAWAL | Ask | Default exclude |
+
+### Conservative defaults
+
+| Unknown | Default |
+|---|---|
+| Rate on a domestic sale | 5% |
+| Whether a purchase can be set off | No set-off until the regulation condition is shown |
+| Counterparty location | Domestic Myanmar |
+| Whether a product is a specific good | Ask; refuse if it is (R-MM-1) |
+
+## Deadlines and filing
+
+1. **Register** with the Township Revenue Officer (Form PaTaKha (KaThaKha)-1; the office issues (KaThaKha)-2) and give notice of commencement (Form (KaThaKha)-3). Companies register with the tax office that assesses them, after DICA approval, through e-Registration for a TIN.
+2. **Pay monthly** within 10 days after each month.
+3. **Quarterly return** within one month after each quarter: Form (KaThaKha)-5 for goods, (KaThaKha)-6 for services.
+4. **Annual return** within 3 months after year end (30 June): Forms (KaThaKha)-11 and -12, or (KaThaKha)-11Ka for self-assessment taxpayers. For FY 2026-27, due 30 June 2027. Large and Medium Taxpayer Office taxpayers file electronically.
+5. **Imports:** CT is collected by Customs with the customs duty.
+
+## Penalties and interest
+
+- Late annual return: greater of 5% of tax owing plus 1% a month and K 100,000 (IRD notice of 28 April 2026, which covers the annual CT return).
+- Commercial Tax Law s 21: 10% of the tax due for each listed default (failure to register, late monthly payment, late quarterly or annual return, unpaid assessed tax, missing receipts).
+- Where the two sources overlap, see Not yet confirmed.
+
+## Cross-border points
+
+- **Exports** of goods: 0% (electricity 8%, crude oil 5%), with set-off and refund of CT paid on inputs.
+- **Imports** of goods: 5% on landed value (including specific goods tax), collected by Customs; goods under temporary admission or drawback are exempt but CT is repaid if they stay in Myanmar.
+- **Services from non-residents:** the Union Taxation Law 2026 sets no separate rule for them in Chapter VI. The old file told users to self-assess 5% on SaaS and cloud services; no official source opened today says so, so it is removed and listed under Not yet confirmed.
+- **Foreign currency proceeds** are taxed in kyats.
+
+## Two worked examples that recompute
+
+**Example 1. Manufacturer, domestic sales 60,000,000 kyats in the year plus 20,000,000 exported, CT paid on inputs 1,000,000.** Domestic proceeds exceed 50 million, so CT is 5% of the whole 60,000,000 = 3,000,000. Exports 0%. Assuming the inputs qualify for set-off, net CT 2,000,000.
+
+```oa-check
+name: Myanmar CT, manufacturer over the threshold with exports
+inputs:
+  domestic: 60000000
+  exports: 20000000
+  input_ct: 1000000
+steps:
+  - output_domestic: domestic * 0.05
+  - output_exports: exports * 0
+  - net_ct: output_domestic + output_exports - input_ct
+expected:
+  output_domestic: 3000000.00
+  net_ct: 2000000.00
+```
+
+**Example 2 (decision). A guesthouse expects 48,000,000 kyats of receipts; a new tour package would add 5,000,000. Register?** At 48,000,000 it is under the 50 million threshold: CT nil. At 53,000,000 it is over, and hotel and tourism receipts carry 3% on the whole amount: 1,590,000. The extra 5,000,000 of receipts brings 1,590,000 of CT, so the package adds only 3,410,000 net unless prices rise to pass the CT on. The figure that decides is the 50 million line.
+
+```oa-check
+name: Myanmar CT threshold cliff, hotel receipts
+inputs:
+  base: 48000000
+  extra: 5000000
+steps:
+  - ct_base: 0
+  - total: base + extra
+  - ct_total: total * 0.03
+  - net_gain: extra - ct_total
+expected:
+  ct_total: 1590000.00
+  net_gain: 3410000.00
+```
+
+## Ask the client first
+
+1. What goods or services, and are any on the exempt lists or specific goods?
+2. Expected sale proceeds or receipts in the year (over 50 million kyats?) and when the business started.
+3. Domestic sales, imports, trading or exports?
+4. Hotel, tourism, gold, construction for sale, internet or SIM card business (special rates)?
+5. CT paid on purchases and whether it qualifies for set-off.
+6. Which tax office assesses the business, and is it on self-assessment?
+
+## When to refuse or escalate
+
+| Code | Trigger | Message |
+|---|---|---|
+| R-MM-1 | Specific goods (tobacco, liquor, vehicles, fuel, gems, natural gas and other UTL 2026 Chapter V goods) | "Specific goods tax is a separate tax with price-tier rates. This skill does not compute it; please escalate." |
+| R-MM-2 | Special Economic Zone (Thilawa or other) | "SEZ businesses have their own incentives. Please escalate." |
+| R-MM-3 | Branch of a foreign company | "Branch operations have specific CT and income tax obligations. Please escalate." |
+
+## Sources
+
+| Source | What was read | URL | Read on |
+|---|---|---|---|
+| Union Taxation Law 2026, English (IRD), Chapter VI | Read for ss 14 to 18: exempt goods and services, 5%, 3%, 15% and SIM rates, the 50 million threshold, foreign currency, export rates and set-off | https://www.ird.gov.mm/storage/laws/6a6b496e035ea-utl2026.pdf | 2026-11-14 |
+| Commercial Tax Law, English (IRD) | Read for s 11 registration, s 12 monthly payment and quarterly return, s 13 annual return, s 21 fines | https://www.ird.gov.mm/storage/laws/68b55a995979f-Commercial%20Tax%20Law%20English%20version.pdf | 2026-11-14 |
+| IRD notice to file returns (28 April 2026) | Read for the annual CT return due 30 June 2026, filing methods and the late filing penalty | https://www.ird.gov.mm/announcement-lists/96 | 2026-11-14 |
+| IRD, taxes: companies (Burmese) | Read for the registration and return form numbers and that CT applies to the whole amount once over 50 million | https://www.ird.gov.mm/tax-knowledge/taxes/companies | 2026-11-14 |
+| IRD, taxes: individual (Burmese) | Read for landlords' 5% CT over 50 million kyats and Form (KaThaKha)-7 | https://www.ird.gov.mm/tax-knowledge/taxes/individual | 2026-11-14 |
+
+Not yet confirmed: whether a Myanmar business must self-assess CT on services bought from non-residents (the old file said 5%; no official text read supports it); the conditions for set-off of input CT under the Commercial Tax Regulations (not opened); how the Commercial Tax Law s 21 fines of 10% interact with the Tax Administration Law penalty quoted in the IRD notice of 28 April 2026 (both are official; the Tax Administration Law text was not opened); specific goods tax rates.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-07-13. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `myanmar-ct` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/myanmar-ct. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `myanmar-ct` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/myanmar-ct. If neither is available, confirm every figure against the official source pages cited above before relying on it.

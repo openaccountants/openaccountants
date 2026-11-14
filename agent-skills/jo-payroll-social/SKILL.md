@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/jo-payroll-social"
   jurisdiction: "JO"
   tax_year: "2026"
-  last_updated: "2026-11-01"
+  last_updated: "2026-11-14"
 ---
 
 # Jordan Payroll and Social Contributions
@@ -28,15 +28,14 @@ Ordinary employment covered by all four insurances under the Social Security Law
 | Maternity, employer | 0.75% | Art. 42(a)(1) | same |
 | Unemployment, employer | 0.5% | Art. 48(a) | same |
 | Unemployment, employee | 1% | Art. 48(b) | same |
-| Employer total | 14.25% | Sum of the above | same |
-| Employee total | 7.5% | Sum of the above | same |
-| Total | 21.75% | Sum of the above | same |
+| Employer total | 14.25% | Sum of the above (computed) | same |
+| Employee total | 7.5% | Sum of the above (computed) | same |
+| Total | 21.75% | Sum of the above (computed) | same |
 | Hazardous occupation addition | 1% of wage, employer | On top of other contributions for a profession prescribed as hazardous, art. 64(c)(3)-(4) | same |
 | Voluntary insured | 17.5% | Art. 59(a)(3), reached by the yearly steps | same |
 | Wage ceiling 2026 | JOD 3,733 | Set from 1.77% inflation; JOD 3,668 in 2025 | https://petra.gov.jo/en/news/ssc-says-jd3733-maximum-wage-for-social-security-deductions |
 | Older insured ceiling | JOD 5,000 base | Insured covered before 15 Oct 2009, art. 20(c)(1); qualifying higher pre-date wages stay frozen under art. 20(c)(2), subject to the inflation catch-up in art. 20(c)(3) | https://www.ssc.gov.jo/wp-content/uploads/2025/02/law-26.1.2025-compressed.pdf |
 | Maximum net unemployment benefit 2026 | JOD 623 | JOD 612 in 2025 | https://petra.gov.jo/en/news/ssc-says-jd3733-maximum-wage-for-social-security-deductions |
-| Minimum wage | unverified | No Ministry of Labour text read | unverified |
 
 ## The base
 
@@ -115,4 +114,4 @@ Not yet confirmed: minimum wage (the old JOD 260 is out of date; press reports s
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-01. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `jo-payroll-social` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/jo-payroll-social. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `jo-payroll-social` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/jo-payroll-social. If neither is available, confirm every figure against the official source pages cited above before relying on it.

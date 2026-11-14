@@ -1,14 +1,15 @@
 ---
 name: de-payroll-benefits
 description: "German payroll benefits for 2026: how an employer values and taxes benefits in kind on the payslip. Covers the EUR 50 monthly limit for benefits in kind and vouchers, company cars (1% rule, 0.03% commute charge, a quarter or a half of the list price for electric and plug-in hybrid cars, the EUR 100,000 price cap, the logbook method, user charges), meals and lodging at the 2026 official values, the 30% flat tax of § 37b EStG and the 15%, 20% and 25% flat taxes of §§ 40 and 40b, tax-free items (public transport tickets, childcare, health promotion, bikes, charging, devices, employee shares), employer pensions (8% and 4% limits, the § 100 subsidy, salary sacrifice and the 15% top-up), and the social insurance status of managing directors with the DRV status procedure. Trigger on: Sachbezug, geldwerter Vorteil, Dienstwagen, 1%-Regelung, Fahrtenbuch, Sachbezugswerte 2026, 37b, Pauschalsteuer, Jobticket, bAV, Entgeltumwandlung, Gesellschafter-Geschäftsführer, Statusfeststellung. Out of scope: the wage tax and contribution run itself (de-payroll), the employee's annual return (de-employee-income-tax), self-employed contributions (de-social-contributions)."
-version: 0.3
+version: 0.4
 jurisdiction: DE
 tax_year: 2026
-last_updated: 2026-10-29
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
+type: computation
 ---
 
 # German payroll benefits 2026: benefits in kind, company cars, flat taxes, employer pensions and managing directors

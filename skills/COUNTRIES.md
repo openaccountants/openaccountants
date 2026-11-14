@@ -21,7 +21,7 @@ Owner: Michael Cutajar
 | [Bulgaria](bulgaria/) | Needs signature | 10 | 10 | 0 |
 | [Croatia](croatia/) | Needs signature | 10 | 10 | 0 |
 | [Cyprus](cyprus/) | Needs signature | 9 | 9 | 0 |
-| [Czech Republic](czech-republic/) | Needs signature | 13 | 12 | 0 |
+| [Czech Republic](czech-republic/) | Needs signature | 12 | 12 | 0 |
 | [Denmark](denmark/) | Needs signature | 9 | 8 | 0 |
 | [Estonia](estonia/) | Needs signature | 10 | 10 | 0 |
 | [Faroe Islands](faroe-islands/) | Needs writing | 12 | 12 | 0 |
@@ -36,33 +36,33 @@ Owner: Michael Cutajar
 | [Iceland](iceland/) | Needs signature | 10 | 10 | 0 |
 | [Ireland](ireland/) | Needs signature | 18 | 18 | 0 |
 | [Isle of Man](isle-of-man/) | Needs writing | 8 | 8 | 0 |
-| [Italy](italy/) | Needs signature | 22 | 21 | 0 |
+| [Italy](italy/) | Needs signature | 22 | 22 | 0 |
 | [Kosovo](kosovo/) | Needs writing | 8 | 8 | 0 |
 | [Latvia](latvia/) | Needs signature | 10 | 10 | 0 |
 | [Liechtenstein](liechtenstein/) | Needs writing | 8 | 8 | 0 |
 | [Lithuania](lithuania/) | Needs signature | 9 | 8 | 0 |
 | [Luxembourg](luxembourg/) | Needs signature | 8 | 8 | 0 |
-| [Malta](malta/) | Needs writing | 34 | 34 | 5 |
+| [Malta](malta/) | Needs writing | 31 | 31 | 5 |
 | [Moldova](moldova/) | Needs writing | 13 | 13 | 0 |
 | [Monaco](monaco/) | Needs signature | 8 | 8 | 0 |
 | [Montenegro](montenegro/) | Needs writing | 10 | 10 | 0 |
 | [Netherlands](netherlands/) | Needs signature | 27 | 25 | 0 |
 | [North Macedonia](north-macedonia/) | Needs writing | 10 | 10 | 0 |
 | [Norway](norway/) | Needs signature | 12 | 12 | 0 |
-| [Poland](poland/) | Needs signature | 12 | 11 | 0 |
+| [Poland](poland/) | Needs signature | 11 | 11 | 0 |
 | [Portugal](portugal/) | Needs signature | 18 | 18 | 0 |
 | [Romania](romania/) | Needs signature | 12 | 11 | 0 |
 | [San Marino](san-marino/) | Needs writing | 8 | 8 | 0 |
 | [Serbia](serbia/) | Needs signature | 10 | 10 | 1 |
 | [Slovakia](slovakia/) | Needs signature | 10 | 9 | 0 |
 | [Slovenia](slovenia/) | Needs signature | 10 | 10 | 0 |
-| [Spain](spain/) | Needs writing | 53 | 52 | 4 |
+| [Spain](spain/) | Needs writing | 53 | 53 | 4 |
 | [Svalbard](svalbard/) | Needs writing | 10 | 10 | 0 |
 | [Sweden](sweden/) | Needs signature | 14 | 13 | 0 |
 | [Switzerland](switzerland/) | Needs signature | 14 | 14 | 0 |
 | [Turkey](turkey/) | Needs writing | 10 | 9 | 1 |
 | [Ukraine](ukraine/) | Needs signature | 17 | 17 | 0 |
-| [United Kingdom](uk/) | Needs signature | 35 | 33 | 2 |
+| [United Kingdom](uk/) | Needs signature | 33 | 33 | 2 |
 | [Vatican City](vatican-city/) | Needs writing | 1 | 1 | 0 |
 
 ## Americas
@@ -75,49 +75,49 @@ Owner: Jeff Watts
 | [Antigua And Barbuda](antigua-and-barbuda/) | Needs writing | 3 | 3 | 0 |
 | [Argentina](argentina/) | Needs writing | 12 | 12 | 0 |
 | [Aruba](aruba/) | Needs writing | 3 | 3 | 0 |
-| [Bahamas](bahamas/) | Needs writing | 6 | 0 | 0 |
-| [Barbados](barbados/) | Needs writing | 6 | 0 | 0 |
-| [Belize](belize/) | Needs writing | 6 | 0 | 0 |
-| [Bermuda](bermuda/) | Needs writing | 7 | 0 | 0 |
+| [Bahamas](bahamas/) | Needs writing | 6 | 6 | 0 |
+| [Barbados](barbados/) | Needs writing | 6 | 6 | 0 |
+| [Belize](belize/) | Needs writing | 6 | 6 | 0 |
+| [Bermuda](bermuda/) | Needs signature | 4 | 4 | 0 |
 | [Bolivia](bolivia/) | Needs writing | 8 | 8 | 0 |
 | [Brazil](brazil/) | Needs writing | 21 | 21 | 0 |
-| [British Virgin Islands](british-virgin-islands/) | Needs writing | 6 | 0 | 0 |
+| [British Virgin Islands](british-virgin-islands/) | Needs writing | 3 | 3 | 0 |
 | [Canada](canada/) | Needs writing | 21 | 5 | 13 |
-| [Cayman Islands](cayman-islands/) | Needs writing | 6 | 0 | 0 |
-| [Chile](chile/) | Needs signature | 11 | 10 | 0 |
-| [Colombia](colombia/) | Needs signature | 11 | 10 | 0 |
-| [Costa Rica](costa-rica/) | Needs writing | 5 | 2 | 0 |
-| [Curaçao](curacao/) | Needs writing | 6 | 1 | 0 |
+| [Cayman Islands](cayman-islands/) | Needs writing | 5 | 5 | 0 |
+| [Chile](chile/) | Needs signature | 10 | 10 | 0 |
+| [Colombia](colombia/) | Needs signature | 10 | 10 | 0 |
+| [Costa Rica](costa-rica/) | Needs writing | 5 | 5 | 0 |
+| [Curaçao](curacao/) | Needs writing | 6 | 6 | 0 |
 | [Dominica](dominica/) | Needs writing | 4 | 4 | 0 |
-| [Dominican Republic](dominican-republic/) | Needs updating | 22 | 1 | 19 |
+| [Dominican Republic](dominican-republic/) | Needs updating | 22 | 3 | 19 |
 | [Ecuador](ecuador/) | Needs signature | 10 | 10 | 0 |
-| [El Salvador](el-salvador/) | Needs writing | 5 | 0 | 0 |
+| [El Salvador](el-salvador/) | Needs writing | 5 | 5 | 0 |
 | [Falkland Islands](falkland-islands/) | Needs writing | 5 | 5 | 0 |
 | [French Guiana](french-guiana/) | Needs signature | 8 | 8 | 0 |
 | [Greenland](greenland/) | Needs writing | 2 | 2 | 0 |
 | [Grenada](grenada/) | Needs writing | 3 | 3 | 0 |
 | [Guadeloupe](guadeloupe/) | Needs writing | 1 | 1 | 0 |
-| [Guatemala](guatemala/) | Needs writing | 7 | 2 | 0 |
+| [Guatemala](guatemala/) | Needs writing | 7 | 7 | 0 |
 | [Guyana](guyana/) | Needs signature | 7 | 7 | 0 |
-| [Honduras](honduras/) | Needs writing | 7 | 1 | 0 |
-| [Jamaica](jamaica/) | Needs writing | 6 | 0 | 0 |
+| [Honduras](honduras/) | Needs writing | 7 | 7 | 0 |
+| [Jamaica](jamaica/) | Needs writing | 6 | 6 | 0 |
 | [Martinique](martinique/) | Needs writing | 1 | 1 | 0 |
-| [Mexico](mexico/) | Needs writing | 16 | 13 | 0 |
+| [Mexico](mexico/) | Needs writing | 15 | 13 | 0 |
 | [Montserrat](montserrat/) | Needs writing | 3 | 3 | 0 |
-| [Nicaragua](nicaragua/) | Needs writing | 7 | 0 | 0 |
-| [Panama](panama/) | Needs writing | 4 | 1 | 0 |
+| [Nicaragua](nicaragua/) | Needs writing | 7 | 7 | 0 |
+| [Panama](panama/) | Needs writing | 4 | 4 | 0 |
 | [Paraguay](paraguay/) | Needs writing | 7 | 7 | 0 |
 | [Peru](peru/) | Needs writing | 9 | 9 | 0 |
-| [Puerto Rico](puerto-rico/) | Needs writing | 3 | 1 | 0 |
+| [Puerto Rico](puerto-rico/) | Needs writing | 6 | 6 | 0 |
 | [Saint Barthelemy](saint-barthelemy/) | Needs writing | 2 | 2 | 0 |
 | [Saint Kitts And Nevis](saint-kitts-and-nevis/) | Needs writing | 2 | 2 | 0 |
-| [Saint Lucia](saint-lucia/) | Needs writing | 5 | 4 | 0 |
+| [Saint Lucia](saint-lucia/) | Needs writing | 5 | 5 | 0 |
 | [Saint Martin](saint-martin/) | Needs writing | 3 | 3 | 0 |
 | [Saint Pierre And Miquelon](saint-pierre-and-miquelon/) | Needs writing | 2 | 1 | 0 |
 | [Saint Vincent And The Grenadines](saint-vincent-and-the-grenadines/) | Needs writing | 3 | 3 | 0 |
 | [Sint Maarten](sint-maarten/) | Needs writing | 3 | 3 | 0 |
-| [Suriname](suriname/) | Needs signature | 7 | 5 | 0 |
-| [Trinidad And Tobago](trinidad-and-tobago/) | Needs writing | 6 | 0 | 0 |
+| [Suriname](suriname/) | Needs signature | 7 | 7 | 0 |
+| [Trinidad And Tobago](trinidad-and-tobago/) | Needs writing | 6 | 6 | 0 |
 | [Turks And Caicos](turks-and-caicos/) | Needs writing | 3 | 3 | 0 |
 | [Uruguay](uruguay/) | Needs signature | 9 | 9 | 0 |
 | [Us Virgin Islands](us-virgin-islands/) | Needs writing | 3 | 3 | 0 |
@@ -133,9 +133,9 @@ Owner: Ryan Duguid
 | [Bhutan](bhutan/) | Needs writing | 6 | 0 | 0 |
 | [Brunei](brunei/) | Needs writing | 7 | 0 | 0 |
 | [Cambodia](cambodia/) | Needs writing | 6 | 0 | 0 |
-| [China](china/) | Needs writing | 15 | 9 | 0 |
+| [China](china/) | Needs writing | 15 | 15 | 0 |
 | [Fiji](fiji/) | Needs writing | 6 | 1 | 0 |
-| [Hong Kong](hong-kong/) | Needs writing | 7 | 0 | 0 |
+| [Hong Kong](hong-kong/) | Needs writing | 7 | 7 | 0 |
 | [India](india/) | Needs writing | 20 | 17 | 1 |
 | [Indonesia](indonesia/) | Needs writing | 12 | 1 | 1 |
 | [Japan](japan/) | Needs writing | 18 | 1 | 0 |
@@ -146,14 +146,14 @@ Owner: Ryan Duguid
 | [Malaysia](malaysia/) | Needs writing | 8 | 1 | 1 |
 | [Maldives](maldives/) | Needs writing | 6 | 0 | 0 |
 | [Mongolia](mongolia/) | Needs writing | 5 | 0 | 0 |
-| [Myanmar](myanmar/) | Needs writing | 7 | 0 | 0 |
+| [Myanmar](myanmar/) | Needs writing | 6 | 6 | 0 |
 | [Nepal](nepal/) | Needs writing | 5 | 0 | 1 |
 | [New Zealand](new-zealand/) | Needs writing | 10 | 9 | 0 |
 | [Pakistan](pakistan/) | Needs writing | 19 | 8 | 1 |
 | [Papua New Guinea](papua-new-guinea/) | Needs writing | 6 | 0 | 0 |
 | [Philippines](philippines/) | Needs writing | 7 | 0 | 0 |
 | [Samoa](samoa/) | Needs writing | 6 | 0 | 0 |
-| [Singapore](singapore/) | Needs writing | 10 | 3 | 0 |
+| [Singapore](singapore/) | Needs writing | 10 | 6 | 0 |
 | [South Korea](south-korea/) | Needs writing | 6 | 0 | 1 |
 | [Sri Lanka](sri-lanka/) | Needs writing | 10 | 0 | 1 |
 | [Taiwan](taiwan/) | Needs writing | 6 | 0 | 0 |

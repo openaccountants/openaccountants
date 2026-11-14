@@ -1,243 +1,134 @@
 ---
 name: bvi-tax
-description: "Use this skill whenever asked about British Virgin Islands (BVI) taxation, payroll tax, or the absence of income tax and VAT. Trigger on phrases like \"BVI tax\", \"British Virgin Islands tax\", \"BVI VAT\", \"BVI payroll tax\", or any request involving BVI tax compliance. BVI does NOT have income tax, capital gains tax, or VAT. The primary tax is payroll tax. ALWAYS read this skill before handling any BVI tax work."
+description: "Start here for any British Virgin Islands tax question in 2026. The territory collects no income tax from individuals or companies, no capital gains tax and no VAT or GST. This skill says what the Inland Revenue Department does collect (payroll tax, stamp duty, land and house tax, hotel accommodation tax, self-drive vehicle tax, cheque duty, liquor licences, service charges), the 2026 import relief measures and the first-time Belonger stamp duty waiver, the new eTax portal, and routes social security, NHI, payroll and company questions to their own skills. Trigger phrases include BVI tax, British Virgin Islands income tax, BVI VAT, BVI corporate tax, BVI stamp duty."
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/bvi-tax"
   jurisdiction: "VG"
-  tax_year: "2025"
-  last_updated: "2026-07-13"
+  tax_year: "2026"
+  last_updated: "2026-11-14"
 ---
 
-# Bvi Tax
+# British Virgin Islands tax v3.0
 
-## Section 1 -- Quick Reference
+> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
-**Quick Reference**
+## Who this applies to
 
-| Field | Value |
-| --- | --- |
-| Country | British Virgin Islands (BVI) |
-| Tax | Payroll tax (primary), customs duties, property tax, social security, NHI |
-| Currency | USD |
-| Tax year | Calendar year |
-| Primary legislation | Payroll Taxes Act, 2004 (as amended); Customs Management and Duties Act |
-| Supporting legislation | BVI Business Companies Act, 2004; Economic Substance Act, 2018 |
-| Tax authority | Inland Revenue Department (IRD) |
-| Filing portal | https://www.bvi.gov.vg/departments/inland-revenue-department |
-| Filing deadline | Payroll tax monthly by 15th; annual reconciliation March 31 |
-| Contributor | Open Accountants Community |
-| Skill version | 2.0 |
+Anyone asking which taxes apply in the British Virgin Islands (the Virgin Islands, BVI): residents, employers, importers, property buyers and owners, and BVI companies. The currency is the US dollar. The calendar year is the period for social security and the budget.
 
-### Tax Landscape
+The Inland Revenue Department (IRD), under the Ministry of Finance, collects payroll tax, stamp duty, self-drive motor vehicle tax, hotel accommodation tax, land and house tax (property tax), liquor licences, cheque duty and service charges ([IRD](https://gov.vg/inland-revenue-department)). None of these is an income tax. The Government's 2026 and 2027 revenue lines are financial services fees, payroll tax, taxes on international trade, work permits, hotel accommodation tax, stamp duty and the tourist arrival levy; there is no income tax or VAT line ([2027 Budget Address](https://gov.vg/news/2027-budget-address-honourable-dr-natalio-d-wheatley)).
 
-**Tax Landscape**
+So, in plain terms: individuals file no income tax return; BVI companies pay no corporate income tax or capital gains tax on profits; there is no VAT, GST, sales tax, registration threshold or reverse charge. Companies pay annual government fees instead ([vg-company-formation](vg-company-formation.md)).
 
-| Tax Type | Status |
-| --- | --- |
-| Income Tax (personal/corporate) | None |
-| Capital Gains Tax | None |
-| VAT / Sales Tax | None |
-| Withholding Tax | None |
-| Payroll Tax | Yes |
-| Customs Duties | Yes |
-| Property Tax | Yes |
-| Social Security (SSB) | Yes -- 9% total (4.5% each) |
-| National Health Insurance (NHI) | Yes -- 7.5% total (3.75% each) |
+| Question | Skill |
+|---|---|
+| Social security, NHI, payroll tax filing | [vg-payroll-social](vg-payroll-social.md) |
+| Forming a BVI business company, annual return, beneficial ownership | [vg-company-formation](vg-company-formation.md) |
+| No income tax, no VAT, import charges, stamp duty, property tax | this skill |
 
-### Payroll Tax Rates
+## Rates, bands and thresholds
 
-- **Class 1 payroll tax rate** — Employer 2% + Employee 8% = 10% (<=7 employees, payroll <=USD 150,000, revenue <=USD 300,000)
-- **Class 2 payroll tax rate** — Employer 6% + Employee 8% = 14% (all others)
-- **Employee exemption** — 10,000 USD (first USD 10,000 annual remuneration exempt)
+| Item | 2026 figure and conditions | Official source |
+|---|---|---|
+| Income tax, corporate income tax, capital gains tax, VAT or GST | None collected; not among the IRD's taxes or the budget's revenue lines | [IRD](https://gov.vg/inland-revenue-department) |
+| Wharfage on imports, 2026 relief measure | Halved from 2% to 1% | [2027 Budget Address](https://gov.vg/news/2027-budget-address-honourable-dr-natalio-d-wheatley) |
+| Container-handling charge, 2026 relief measure | Halved from USD 300 to USD 150 | same |
+| Customs valuation, 2026 relief measure | Freight and insurance removed from customs valuation; duties reduced on food, hygiene, household and medical essentials | same |
+| Stamp duty, first-time Belonger purchasers of homes and land | One-year waiver continued into 2027 under the applicable rules | same |
+| SSB rates, NHI rates and ceilings | Owned by [vg-payroll-social](vg-payroll-social.md); not restated here | [SSB contributions](https://www.vissb.vg/contributions/) |
 
-### Conservative Defaults
+## The base
 
-**Conservative Defaults**
+- **Customs duty** is charged on imported goods; in 2026 the customs value excludes freight and insurance under the relief measure, and wharfage is 1% (both announced as cost-of-living measures; check they still apply on the import date). Duty rates by tariff line are not confirmed in this skill.
+- **Stamp duty** is collected by the IRD on instruments including transfers of land. First-time Belonger buyers of homes and land qualify for a one-year waiver under the applicable rules.
+- **Land and house tax** (property tax) is collected by the IRD; the IRD publishes property tax lists.
+- **No income base:** salaries, profits, dividends, interest and gains are not taxed on income. Employment income bears payroll tax and social contributions instead.
 
-| Ambiguity | Default |
-| --- | --- |
-| Unknown employer class | Class 2 |
-| Unknown duty rate | General merchandise |
-| Unknown economic substance | Assume relevant activity applies |
+## Deadlines and filing
 
-## Section 2 -- Required Inputs and Refusal Catalogue
+| Item | When and how | Source |
+|---|---|---|
+| Payroll tax and other IRD taxes | Filed and paid on the eTax portal at efiling.gov.vg since 2 November 2026, by card through the payment gateway; inquiries bvitaxes@gov.vg, (284) 468-2155 | [Ministry of Finance notice](https://gov.vg/sites/default/files/2026-11/ministry_of_finance_launches_enhanced_etax_portal_and_online_tax_payments.pdf) |
+| SSB and NHI | By the 14th of the following month | [SSB contributions](https://www.vissb.vg/contributions/) |
+| Company annual financial return | To the registered agent; new form from 2 November 2026 | [SI 71 of 2026](https://laws.gov.vg/sites/default/files/2026-11/SI%20No%2071%20of%202026%20--%20BVI%20Business%20Companies%20%28Financial%20Return%29%20%28Amendment%29%20Order%2C%202026%20%28signed%29.pdf) |
 
-### Required Inputs
+## Penalties and interest
 
-**Minimum viable** -- payroll records, employee count, employer classification.
+- SSB contributions paid on or after the 15th incur a 10% penalty ([SSB contributions](https://www.vissb.vg/contributions/)).
+- Payroll tax, stamp duty and property tax penalties are not confirmed in this version.
 
-**Recommended** -- remuneration breakdown by employee, BVI BC registration, prior returns.
+## Cross-border points
 
-**Ideal** -- complete payroll export, economic substance filings, customs records.
+- With no income tax, the territory levies no withholding tax on dividends, interest or royalties paid abroad (no charging tax among those the IRD collects).
+- A resident who is a citizen or resident of a country that taxes worldwide income (for example the United States) is taxed there; use that country's skill.
+- Whether the territory applies a domestic minimum top-up tax to large multinational groups is not confirmed here; check before advising a group with EUR 750 million revenue.
+- Non-Belongers need a land holding licence to hold land; the 2027 budget plans computerised processing from the first quarter of 2027 ([2027 Budget Address](https://gov.vg/news/2027-budget-address-honourable-dr-natalio-d-wheatley)).
 
-### Refusal Catalogue
+## Two worked examples that recompute
 
-- **R-VG-1 -- Income tax** — BVI has no income tax.  _(R-VG-1)_
-- **R-VG-2 -- VAT/sales tax** — BVI has no VAT or sales tax.  _(R-VG-2)_
-- **R-VG-3 -- Economic substance detail** — Escalate to specialist.  _(R-VG-3)_
-- **R-VG-4 -- CRS/FATCA compliance** — Escalate to specialist.  _(R-VG-4)_
+### Example 1: port charges on a USD 20,000 container in 2026
 
-## Section 3 -- Compliance Pattern Library
+Wharfage at 1% is 200 and container handling 150, total 350. Before the relief (2% and USD 300) the same container cost 700, so the relief saves 350. Customs duty itself is extra and depends on the tariff line.
 
-### 3.1 Employer Payment Patterns
-
-**Employer Payment Patterns**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| SALARY, WAGES, BONUS, COMMISSION | Payroll tax base | Include in taxable remuneration |
-| BENEFITS IN KIND | Payroll tax base | Include |
-| CONTRACTOR (independent) | Not payroll tax | Verify independence |
-| SSB CONTRIBUTION | Social security | 4.5% employer + 4.5% employee |
-| NHI CONTRIBUTION | Health insurance | 3.75% + 3.75% |
-
-### 3.2 Customs Duty Categories
-
-**Customs Duty Categories**
-
-| Category | Rate |
-| --- | --- |
-| General merchandise | 5% -- 20% |
-| Food/essential goods | Lower or exempt |
-| Motor vehicles | 20% + environmental levy |
-| Building materials | 5% -- 10% |
-
-### 3.3 BVI BC Annual Fees
-
-**BVI BC Annual Fees**
-
-| Authorized Shares | Annual Fee (USD) |
-| --- | --- |
-| Up to 50,000 (no par) | 450 |
-| 50,001+ | 1,200 |
-
-## Section 4 -- Worked Examples
-
-### Example 1 -- Payroll Tax (Class 2)
-
-**Input:** Monthly payroll USD 50,000, 10 employees.
-
-**Computation:** Employer payroll tax: 6% x USD 50,000 = USD 3,000/month. Employee: 8% on remuneration above USD 10,000 annual exemption. Plus SSB 4.5% each + NHI 3.75% each.
-
-### Example 2 -- BVI BC Annual Obligations
-
-**Input:** BVI BC with 10,000 no-par shares, no employees.
-
-**Classification:** Annual fee USD 450. No income tax. No payroll tax. Economic substance filing if conducting relevant activities.
-
-### Example 3 -- Import Duty
-
-**Input:** Office equipment USD 10,000.
-
-**Computation:** Duty ~15%: USD 1,500. No VAT. No sales tax.
-
-## Section 5 -- Tier 1 Rules (When Data Is Clear)
-
-### 5.1 No Income Tax / No VAT
-
-- **No income tax / no VAT** — No personal/corporate income tax, no capital gains tax, no VAT/sales tax, no withholding tax, no estate tax.
-
-### 5.2 Payroll Tax Filing
-
-- **Payroll tax filing deadlines and penalties** — Monthly by 15th. Annual reconciliation March 31. Late filing: USD 50/day. Late payment: 1.5%/month.
-
-### 5.3 Social Security and NHI
-
-- **SSB and NHI rates** — SSB: 4.5% employer + 4.5% employee. NHI: 3.75% + 3.75%.
-
-## Section 6 -- Tier 2 Catalogue (Reviewer Judgement Required)
-
-### 6.1 Payroll Tax Exemptions
-
-- **Payroll tax exemptions** — Small business concessions may apply. Flag for practitioner.
-
-### 6.2 Economic Substance
-
-- **Economic substance** — Entities conducting relevant activities must demonstrate adequate substance in BVI. Flag for specialist.
-
-### 6.3 Stamp Duty
-
-- **Stamp duty on real estate** — Real estate: 4% buyer + 4% seller. Belonger concessions may apply.
-
-## Section 7 -- Excel Working Paper Template
-
-```
-BVI TAX -- Working Paper
-
-A. PAYROLL TAX
-  A1. Total remuneration          ___________
-  A2. Employer class              ___________
-  A3. Employer payroll tax        ___________
-  A4. Employee payroll tax        ___________
-
-B. SOCIAL SECURITY & NHI
-  B1. SSB employer (4.5%)         ___________
-  B2. NHI employer (3.75%)        ___________
-
-C. BVI BC FEES
-  C1. Annual government fee       ___________
-
-REVIEWER FLAGS:
-  [ ] Employer classification confirmed?
-  [ ] Employee exemption applied?
-  [ ] Economic substance filing required?
+```oa-check
+name: BVI wharfage and container handling, 2026 relief against before
+inputs:
+  value: 20000
+steps:
+  - wharfage_2026: value * 0.01
+  - charges_2026: wharfage_2026 + 150
+  - charges_before: value * 0.02 + 300
+  - saving: charges_before - charges_2026
+expected:
+  charges_2026: 350
+  charges_before: 700
+  saving: 350
 ```
 
-## Section 8 -- Bank Statement Reading Guide
+### Example 2 (decision): one container or two
 
-**Bank Statement Reading Guide**
+An importer has two lots worth USD 9,000 and 7,000. Shipped in two containers, charges are 1% wharfage (160) plus 2 x 150 handling (300) = 460. Consolidated into one container, 160 plus 150 = 310. Consolidation saves 150, the handling charge; wharfage is the same either way because it follows value.
 
-| Bank | Format | Key Fields |
-| --- | --- | --- |
-| VP Bank, First Caribbean | PDF, CSV | Date, Description, Debit, Credit, Balance |
-| Scotiabank BVI | CSV | Date, Narrative, Amount |
-
-## Section 9 -- Onboarding Fallback
-
-```
-ONBOARDING QUESTIONS -- BVI TAX
-1. Do you have employees in BVI?
-2. How many employees?
-3. Total payroll?
-4. Employer class (1 or 2)?
-5. Do you import goods?
-6. BVI Business Company held?
-7. Relevant activities for economic substance?
-8. Non-Belonger employees (work permits)?
-9. Property in BVI?
-10. Prior returns available?
+```oa-check
+name: BVI one container or two, 2026 charges
+inputs:
+  lot_a: 9000
+  lot_b: 7000
+  handling: 150
+steps:
+  - wharfage: (lot_a + lot_b) * 0.01
+  - two_containers: wharfage + 2 * handling
+  - one_container: wharfage + handling
+  - saving: two_containers - one_container
+expected:
+  wharfage: 160
+  two_containers: 460
+  one_container: 310
+  saving: 150
 ```
 
-## Section 10 -- Reference Material
+## Ask the client first
 
-**Reference Material**
+1. Individual or company? Is the company part of a multinational group with EUR 750 million revenue?
+2. Do you employ staff or work for yourself in the territory?
+3. Are you importing goods, of what kind and value?
+4. Are you buying land or a home, and are you a Belonger buying for the first time?
+5. Are you a citizen or resident of another country that taxes worldwide income?
 
-| Topic | Reference |
-| --- | --- |
-| Payroll tax | Payroll Taxes Act, 2004 |
-| Customs | Customs Management and Duties Act |
-| BVI BCs | BVI Business Companies Act, 2004 |
-| Economic substance | Economic Substance Act, 2018 |
-| Social security | Social Security Act |
-| Health insurance | National Health Insurance Act |
+## Sources
 
-## PROHIBITIONS
+| Source | URL | Read on |
+|---|---|---|
+| Inland Revenue Department page: read for the list of taxes the IRD collects and contacts | https://gov.vg/inland-revenue-department | 2026-11-14 |
+| 2027 Budget Address (November 2026): read for revenue sources, the 2026 wharfage, container-handling and customs valuation relief, the Belonger stamp duty waiver and the land holding licence plan | https://gov.vg/news/2027-budget-address-honourable-dr-natalio-d-wheatley | 2026-11-14 |
+| Ministry of Finance notice of 6 November 2026 (PDF): read for the eTax portal and online payments | https://gov.vg/sites/default/files/2026-11/ministry_of_finance_launches_enhanced_etax_portal_and_online_tax_payments.pdf | 2026-11-14 |
+| Social Security Board, contributions page (via Firecrawl): read for the due date and the 10% penalty | https://www.vissb.vg/contributions/ | 2026-11-14 |
+| SI 71 of 2026, BVI Business Companies (Financial Return) (Amendment) Order (PDF): read for the new annual financial return form from 2 November 2026 | https://laws.gov.vg/sites/default/files/2026-11/SI%20No%2071%20of%202026%20--%20BVI%20Business%20Companies%20%28Financial%20Return%29%20%28Amendment%29%20Order%2C%202026%20%28signed%29.pdf | 2026-11-14 |
 
-- NEVER state BVI has income tax -- it does not
-- NEVER state BVI has VAT or sales tax -- it does not
-- NEVER apply income tax or VAT calculations to BVI transactions
-- NEVER ignore payroll tax obligations
-- NEVER confuse government fees with taxes
-- NEVER ignore economic substance requirements
-- NEVER ignore SSB and NHI contributions
-- NEVER present calculations as definitive
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional before filing or acting upon.
+Not yet confirmed: payroll tax rates (see vg-payroll-social); customs duty rates by tariff line (the old file's "general merchandise 5% to 20%", "motor vehicles 20% plus environmental levy", "building materials 5% to 10%" and "office equipment about 15%" had no official source); stamp duty rates on land (the old files gave 4% buyer plus 4% seller, and 4% Belongers against 12% non-Belongers; not read); the land and house tax due date (old file: 1 September) and rates; whether an Income Tax Act remains on the books at a zero rate; whether a domestic minimum top-up tax applies to in-scope groups; how long the 2026 wharfage, handling and valuation relief lasts.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-07-13. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `bvi-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/bvi-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `bvi-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/bvi-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
