@@ -1,281 +1,210 @@
 ---
 name: jp-estimated-tax
-description: Use this skill whenever asked about Japanese estimated tax prepayments (yotei nozei / 予定納税) for self-employed individuals, freelancers, or sole proprietors. Trigger on phrases like "予定納税", "yotei nozei", "estimated tax Japan", "Japanese advance tax", "予定納税基準額", "reduction application", "予定納税額の減額申請", or any question about advance income tax obligations under the Income Tax Act (所得税法). Covers the two-instalment schedule (July and November), the JPY 150,000 threshold, reduction applications, penalties for non-payment, and payment procedures. ALWAYS read this skill before touching any estimated tax work for Japan.
-version: 2.0
+description: Use this skill for Japanese individual estimated income tax prepayments (yotei nozei / 予定納税), the notified baseline, instalments, reduction applications, non-payment interest and payment reconciliation. Trigger on 予定納税基準額, 減額申請, Japanese advance tax or freelancer prepayments. Resident individual ordinary regime; special agriculture, non-residence, foreign credits and corporations require separate review.
+version: 2.1
 jurisdiction: JP
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: 2026-11-14
 depends_on:
   - income-tax-workflow-base
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
+type: computation
 ---
 
-# JP Estimated Tax
+# Japan estimated income-tax payments v2.1
 
-## Section 1 -- Quick reference
+> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
-**Quick reference table**
+## Scope
 
-| Field | Value |
+Resident individuals, including self-employed people, freelancers and sole proprietors, under the ordinary 2026 estimated-payment regime. Income tax and reconstruction income tax are included together in the baseline. Japan's National Tax Agency (国税庁, NTA) administers this; amounts are JPY. These payments credit the final annual return; they are not deductible business expenses.
+
+| Quick reference | Amount/condition | Official source |
+| --- | --- | --- |
+| Obligation threshold | Notified baseline at least JPY 150,000, including reconstruction income tax | Income Tax Act art. 104; Reconstruction Finance Act art. 16: https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/2040.htm |
+| Ordinary instalments | Each 1/3 of baseline, rounded down to JPY 100 | Income Tax Act art. 104(1),(3), figure written in words on the statute page: https://laws.e-gov.go.jp/law/340AC0000000033 |
+| Ordinary payment periods | 1-31 July and 1-30 November; holiday/extension rules apply | Income Tax Act art. 104; General Tax Act arts. 10-11: https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/2040.htm |
+| Special agricultural regime | Separate rule: 1/2 of baseline in second period only; do not use the ordinary pair | Income Tax Act art. 107: https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/2040.htm |
+| Reduction dates | Ordinarily 15 July or 15 November; shift for holidays and late notice as law provides | Income Tax Act art. 111: https://www.nta.go.jp/taxes/tetsuzuki/shinsei/annai/shinkoku/annai/02.htm |
+
+The final amount is actual annual tax after the other credits less estimated payments shown for the year. It is **not** automatically the remaining 1/3 of the baseline. A refund can arise.
+
+## Ask the client first
+
+Minimum: NTA notice stating the 予定納税基準額 and instalments, prior-year final return and current residence status. Without a confirmed baseline, HARD STOP: no computed payment instruction. Obtain income types, source and withholding documents; blue-return status; foreign credit/disaster relief; current income/deduction changes; payment notices, bank records, direct-debit registration and any reduction/extension decision. Reconcile the notice against the return rather than inventing a baseline from a bank debit.
+
+Preserved referrals:
+
+- **R-JP-ET-1 -- Cross-border income:** Foreign-source income or treaty-credit timing needs a Japanese tax accountant (zeirishi); the baseline has special foreign-credit adjustments.
+- **R-JP-ET-2 -- Non-resident estimated tax:** Separate rules, not computed here.
+- **R-JP-ET-3 -- Corporate estimated tax:** Corporate prepayments are not individual 予定納税.
+- Special agricultural status, death/departure, disasters or an exceptional notice must be reviewed before the ordinary calculation.
+
+## The method, step by step
+
+### Establish the baseline
+
+Use the NTA's notice, ordinarily sent by 15 June. The baseline generally starts from the previous year's declared amount as fixed at 15 May. A smaller amount fixed later within the statutory interval can change it (Income Tax Act arts. 105-106). Do not simply take the last year's total tax before withholding.
+
+NTA No. 2040 excludes specified non-recurring/separately taxed items, including capital gains, occasional income, miscellaneous income, timber and retirement, subject to its explicit exception for separately taxed listed-share dividends. Prior-year foreign tax credit or disaster relief also requires its special baseline computation. Corresponding excluded-income withholding is left out; reconstruction tax is included. In particular, miscellaneous income is not automatically recurring income eligible for the baseline merely because it was earned repeatedly. The exact notice takes precedence over a shorthand spreadsheet formula.
+
+Blue approval does not itself alter the instalment fraction or calendar. New activity with no prior assessed baseline generally has no prepayment; check the notice and complete prior-year position, not merely whether the client says they filed a return.
+
+### Compute and reconcile
+
+If the confirmed baseline is below the threshold, the ordinary liability is nil. Otherwise each ordinary instalment is `floor(baseline / 3 / 100) * 100`. For the special agricultural regime refer rather than using that formula. Compare the result with both notice lines before instructing payment.
+
+At annual filing enter the total notified estimated-payment amount in **予定納税額** as the current-year NTA notice instructs. Reconcile payments and any unpaid collection separately; do not omit the notice credit merely because the cash proof is missing, or count a debit twice. The annual balance can differ from a third of the old baseline, and an excess can produce a refund. `jp-income-tax` owns the annual tax computation; this file supplies the reconciled prepayment schedule.
+
+### Payment and bank classification
+
+These are bookkeeping matching aids, not evidence that a liability has been settled. Match exact tax, year, period and amount to the notice and payment result.
+
+| Pattern | Classification and check |
 | --- | --- |
-| Country | Japan |
-| Tax | Estimated income tax prepayments (予定納税 / yotei nozei) |
-| Primary legislation | Income Tax Act (所得税法), Arts. 104-108, 111 |
-| Supporting legislation | National Tax General Act (国税通則法), Arts. 60-63 |
-| Authority | National Tax Agency (国税庁 / NTA) |
-| Portal | e-Tax (etax.nta.go.jp) |
-| Currency | JPY only |
-| Payment schedule | Two instalments: 1/3 by July 31, 1/3 by November 30; final 1/3 with return (Feb-Mar) |
-| Computation basis | 予定納税基準額 (baseline amount) from prior year final return |
-| Minimum threshold | JPY 150,000 baseline amount |
-| Contributor | Open Accountants Community |
-| Validation date | Pending |
+| 税務署 / tax office | Possible prepayment; verify tax and notice |
+| 予定納税 / 予定 | Candidate estimated payment |
+| 所得税 / 申告所得税 | Could be final tax or prepayment; identify period |
+| 振替納税 | Registered direct debit; verify actual successful debit |
+| e-Tax + 所得税 + 予定 | Electronic estimated payment; retain payment result |
+| 納付書 | Payment slip; inspect tax/year/instalment |
+| クレジットカード + 国税 | Possible card tax payment; separate service fee and verify completion |
+| Pay-easy + 国税 | Possible electronic banking payment; verify completion |
+| 消費税 / 住民税 | Exclude from income-tax prepayment; consumption/local tax |
+| 国民健康保険 / 国民年金 | Exclude; social insurance, potentially separate income deduction |
+| 加算税 / 延滞税 | Exclude from principal credit; surcharge/interest |
+| 還付金 | Refund; reconcile nature before classification |
 
-**Instalment schedule summary**
+July/August, November/December and February/March date ranges from the old matching library are only search windows. They do not prove payment type or a delayed statutory debit. For 2026 the NTA's actual ordinary prepayment debit dates are **31 July and 30 November**, the same as the ordinary due dates. The old assertion of an automatic 1-month grace period is wrong. Final-return payments around February/March are not estimated instalments without notice evidence. A bank row `2025/07/31 ; 振替納税 所得税予定1期 ; 出金 ; -200,000 ; JPY` remains a historical matching fixture, not proof of a current liability.
 
-| Instalment | Due date | Amount |
+### Reduction application
+
+A lower annual estimate following closure, suspension, declining income, unemployment, disaster/theft/embezzlement, new dependants, medical/insurance expenses or other increased deductions/credits can support an application. Do not reduce cash payments on the client's own forecast alone.
+
+1. Compute the supported annual **申告納税見積額** from the position at 30 June for the July application or 31 October for the November application. This is a projected full-year amount, not merely the tax on income earned to that date. Include reconstruction tax. NTA's 2026 instruction specifically excludes the new 2026 basic-deduction revision from this estimate; the change is settled at final filing.
+2. Complete **令和8年分所得税及び復興特別所得税の予定納税額の7月（11月）減額申請書**, stating estimate, reasons and supporting facts. Attach documents based on transaction records, not an unexplained income-drop percentage.
+3. Submit through e-Tax software to the competent tax office, or by paper delivered/posted. First-time electronic applicants obtain a user identification number. Retain receipt and copy.
+4. Await the tax office's approval, revised estimate or rejection and reasons. Article 113 mandates approval for the named events reducing the estimate, or otherwise when the estimate is at most 70% of the relevant baseline/previous approved estimate; other cases require the statutory decision, not a presumed automatic entitlement. Keep the official decision with the working paper.
+5. An approved July reduction generally replaces each instalment with 1/3 of the approved estimate. An approved November ordinary-regime reduction is **1/2 of approved estimate less the first instalment liability**, with the subtraction **inside** the halving: `(approved estimate - first instalment liability) / 2`, rounded down to JPY 100. Follow the revised notice where the result or prior adjustments need interpretation. Approved estimate below JPY 150,000 means no reduced instalment under art. 114(4).
+
+A forecast 50% fall in revenue is not itself a 50% fall in tax. Have the zeirishi check the forecast and application; missed deadlines require separate relief analysis. The old unsourced claim of an automatic penalty merely for a low estimate is held under Sources, not a usable rule.
+
+## Boundary and exception table
+
+| Situation | Action | Official source |
 | --- | --- | --- |
-| 1st (第1期) | 1-31 July | 1/3 of baseline |
-| 2nd (第2期) | 1-30 November | 1/3 of baseline |
-| Final (確定申告) | 16 Feb - 15 Mar (next year) | Actual tax minus yotei nozei paid |
+| Excluded income or prior foreign tax credit/disaster relief | Rebuild under the specific baseline rule and reconcile NTA notice | NTA No. 2040 calculation section: https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/2040.htm |
+| Low income now but unrevised notice | Apply for reduction; do not unilaterally reduce payment | Income Tax Act arts. 111-114: https://www.nta.go.jp/taxes/tetsuzuki/shinsei/annai/shinkoku/annai/02.htm |
+| Disaster extension puts instalment deadline after year-end | That extended instalment is treated as absent under the special rule; confirm actual extension | Income Tax Act art. 104(2): https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/2040.htm |
+| Failed direct debit | Interest can run from the original deadline, not failed-debit discovery | NTA No. 2040 payment notes: https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/2040.htm |
+| Late notice | Statutory application extension may apply, not a guessed new date | Income Tax Act art. 111(3): https://laws.e-gov.go.jp/law/340AC0000000033 |
 
-**Conservative defaults**
+## Worked cases
 
-| Ambiguity | Default |
-| --- | --- |
-| Baseline amount unknown | Request prior year final return -- do not estimate |
-| Capital gains in prior year | Verify exclusion from baseline (should be excluded) |
-| Income dropping | File reduction application (減額申請) before reducing payments |
-| Blue return status | Does not affect yotei nozei schedule |
-| Disaster circumstances | Flag for zeirishi -- special provisions may apply |
+Inputs are fixtures. Derived results, estimated and not reviewed. First-year/no-baseline and foreign-credit cases remain conditional routing cases rather than dummy arithmetic.
 
-## Section 2 -- Required inputs and refusal catalogue
+### Ordinary liability, threshold and final refund
 
-- **Minimum viable input** — The 予定納税基準額 (baseline amount) from the prior year final return (確定申告). (Minimum viable)
-- **Recommended inputs** — Nature of income, withholding tax (源泉徴収) credits, blue return (青色申告) status, current year income trend. (Recommended)
-- **Ideal inputs** — Complete prior year 確定申告, NTA notification of yotei nozei amounts, bank statements showing prior payments. (Ideal)
-- **Refusal policy if minimum is missing** — HARD STOP. Without the baseline amount, yotei nozei cannot be computed.
-- **R-JP-ET-1 -- Cross-border income** — Trigger: client has foreign-source income with treaty credits. Message: "Cross-border income and treaty credit timing for yotei nozei are outside this skill."
-- **R-JP-ET-2 -- Non-resident estimated tax** — Trigger: non-resident client. Message: "Non-resident estimated tax is outside this skill."
-- **R-JP-ET-3 -- Corporate estimated tax** — Trigger: client asks about corporate prepayments. Message: "Corporate estimated tax has different rules. This skill covers individuals only."
+```oa-check
+name: Ordinary two instalments and final refund
+inputs:
+  baseline: 600000
+  actual_after_other_credits: 300000
+steps:
+  - first: floor(baseline / 3 / 100) * 100
+  - second: first
+  - credit: first + second
+  - refund: max(credit - actual_after_other_credits, 0)
+expected:
+  first: 200000
+  second: 200000
+  credit: 400000
+  refund: 100000
+```
 
-## Section 3 -- Payment pattern library
+At a baseline of JPY 120,000 there is no ordinary instalment; at exactly JPY 150,000 there are 2 instalments of JPY 50,000. A baseline of JPY 600,250 gives JPY 200,000 each after rounding, not JPY 200,083.33.
 
-This is the deterministic pre-classifier for bank statement transactions. When a debit matches a pattern below, classify it as a yotei nozei payment.
+### Approved November reduction
 
-### 3.1 NTA income tax debits
+```oa-check
+name: November reduction uses one half after subtracting first liability
+inputs:
+  approved_annual_estimate: 300000
+  first_liability: 200000
+steps:
+  - second_reduced: floor((approved_annual_estimate - first_liability) / 2 / 100) * 100
+  - total_liability: first_liability + second_reduced
+expected:
+  second_reduced: 50000
+  total_liability: 250000
+```
 
-**NTA income tax debits pattern table**
+### Late payment, corrected calendar and rounding
 
-| Pattern | Treatment | Notes |
+JPY 200,000 due 31 July 2026 and paid 15 October is 76 days late: 61 days from 1 August through 30 September at the lower rate, then 15 days at the higher rate. Two calendar months are not a fixed 60 days. No partial payments or exclusions are assumed.
+
+```oa-check
+name: 2026 estimated payment late through 15 October
+inputs:
+  unpaid: 200000
+  lower_days: 61
+  higher_days: 15
+steps:
+  - interest_base: floor(unpaid / 10000) * 10000
+  - raw_interest: interest_base * 0.028 * lower_days / 365 + interest_base * 0.091 * higher_days / 365
+  - rounded_interest: floor(raw_interest / 100) * 100
+expected:
+  rounded_interest: 1600
+```
+
+The old JPY 1,551 example used historical rates, a fixed 60-day split and no statutory final rounding. It is not a payment instruction for 2026.
+
+## When to refuse or refer
+
+Keep all named referrals above. Do not compute without the confirmed baseline or reduce without the official reduction basis. Do not include excluded capital/retirement/occasional/miscellaneous items by calling them recurring. Do not use the ordinary fraction for special agriculture. Do not assess withholding non-payment surcharge on an estimated income-tax instalment: late estimated principal is subject to interest under General Tax Act art. 60(1)(4); annual-return penalties are a separate question. Refer cross-year interest, partial payments, disasters, disputed notices and questionable estimates. Every output is estimated until professionally reviewed.
+
+## Filing and payment
+
+| Event | Date or amount | Official source |
 | --- | --- | --- |
-| 税務署 (zeimusho / tax office) | Yotei nozei payment | Match with July/November timing |
-| 予定納税, 予定 | Yotei nozei payment | Explicit description |
-| 所得税 (shotokuzei / income tax) | Yotei nozei payment | Match with timing -- could also be final payment |
-| 申告所得税 | Yotei nozei payment | "Declared income tax" |
-| 振替納税 (furikae nozei) | Yotei nozei payment | Direct debit for tax (debit typically ~1 month after due date) |
-
-### 3.2 Timing-based identification
-
-**Timing-based identification table**
-
-| Debit date range | Likely payment | Confidence |
-| --- | --- | --- |
-| 1 July -- 10 August | 1st instalment (第1期) | High if payee is tax office |
-| Late July -- early August | 1st instalment via 振替納税 (direct debit) | Debit date is later than due date |
-| 1 November -- 10 December | 2nd instalment (第2期) | High |
-| Late December | 2nd instalment via 振替納税 | Debit date is later |
-| 16 February -- 15 March | Final return payment (not yotei nozei) | Flag separately |
-
-### 3.3 Related but NOT yotei nozei
-
-**Related but not yotei nozei table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| 消費税 (shouhizei) | EXCLUDE | Consumption tax payment |
-| 住民税 (juuminzei) | EXCLUDE | Resident tax (municipal) |
-| 国民健康保険 (kokumin kenko hoken) | EXCLUDE | National health insurance |
-| 国民年金 (kokumin nenkin) | EXCLUDE | National pension |
-| 加算税 (kasanzei) | EXCLUDE | Penalty surcharge |
-| 延滞税 (entaizei) | EXCLUDE | Delinquent tax interest |
-| 還付金 (kanpukin) | Flag for reviewer | Tax refund |
-
-### 3.4 Payment method references
-
-**Payment method references table**
-
-| Reference pattern | Treatment | Notes |
-| --- | --- | --- |
-| e-Tax + 所得税 + 予定 | Yotei nozei via e-Tax | Electronic payment |
-| 納付書 (nofusho) | Yotei nozei via payment slip | Bank counter payment |
-| クレジットカード + 国税 | Yotei nozei via credit card | Via NTA credit card site |
-| Pay-easy + 国税 | Yotei nozei via Pay-easy | Electronic banking |
-
-## Section 4 -- Worked examples
-
-### Example 1 -- Standard two-instalment computation
-
-**Instalment table**
-
-| Instalment | Period | Amount |
-| --- | --- | --- |
-| 1st (第1期) | July 2025 | JPY 200,000 |
-| 2nd (第2期) | November 2025 | JPY 200,000 |
-| Final return | Feb-Mar 2026 | Actual tax - JPY 400,000 |
-
-Baseline amount (予定納税基準額) = JPY 600,000.
-
-### Example 2 -- Below threshold
-
-**Input:** Baseline amount = JPY 120,000.
-
-**Output:** Below JPY 150,000 threshold. No yotei nozei required.
-
-### Example 3 -- Delinquent tax computation
-
-**Input:** 1st instalment JPY 200,000 due 31 July. Paid 15 October (76 days late).
-
-**Computation:**
-- First 60 days: JPY 200,000 x 2.4% x 60/365 = JPY 789
-- Remaining 16 days: JPY 200,000 x 8.7% x 16/365 = JPY 762
-- Total delinquent tax = JPY 1,551
-
-### Example 4 -- Bank statement classification
-
-**Input line:** `2025/07/31 ; 振替納税 所得税予定1期 ; 出金 ; -200,000 ; JPY`
-
-**Classification:** Yotei nozei, 1st instalment for 2025. Tax payment -- not a deductible business expense.
-
-## Section 5 -- Computation rules
-
-### 5.1 Baseline amount (予定納税基準額)
-
-- **Baseline amount formula** — baseline = prior_year_tax_on_recurring_income - withholding_on_recurring_income if baseline >= 150,000: yotei_nozei required else: no yotei_nozei
-- **Baseline composition** — The baseline is computed from the prior year's final return: income tax on recurring income sources minus withholding credits on those sources.
-- **Excluded from baseline** — Capital gains from asset sales, retirement income, timber income, one-off income.
-
-### 5.2 Instalment amounts
-
-- **Instalment amount formula** — each_instalment = baseline / 3
-- **Instalment fraction** — Each instalment is exactly 1/3 of the baseline (not 1/2).
-
-### 5.3 Final return reconciliation
-
-- **Final return reconciliation formula** — actual_tax = income_tax + special_reconstruction_tax (復興特別所得税) total_yotei_paid = 1st + 2nd instalments if actual_tax > total_yotei_paid: balance due with final return if actual_tax < total_yotei_paid: refund via final return
-
-## Section 6 -- Penalties and interest
-
-### 6.1 Delinquent tax (延滞税 / entaizei)
-
-**Delinquent tax rate table**
-
-| Period | Rate (2025) |
-| --- | --- |
-| First 2 months from due date | 2.4% per annum (特例基準割合, reviewed annually) |
-| After 2 months | 8.7% per annum (standard rate) |
-
-### 6.2 No penalty surcharge (加算税)
-
-- **No penalty surcharge applies** — Yotei nozei is not subject to penalty surcharges (加算税) because it is a prepayment, not a return-based assessment. Only delinquent tax (延滞税) applies.
-
-## Section 7 -- Reduction application (減額申請)
-
-### 7.1 When to apply
-
-**When to apply table**
-
-| Trigger | Action |
-| --- | --- |
-| Current year income significantly lower | File 予定納税額の減額申請書 |
-| Business closed or suspended | File reduction application |
-| Disaster or extraordinary circumstances | File reduction application |
-| New dependents or increased deductions | File reduction application |
-
-### 7.2 Application deadlines
-
-**Application deadlines table**
-
-| Instalment | Deadline |
-| --- | --- |
-| 1st instalment reduction | By 15 July |
-| 2nd instalment reduction | By 15 November |
-
-### 7.3 Process
-
-- **Reduction application process** — 1. Complete 予定納税額の減額申請書 2. Attach estimated income statement through 30 June (for 1st) or 31 October (for 2nd) 3. Submit to jurisdictional tax office (所轄税務署) 4. Tax office reviews and approves or denies If the NTA determines the estimate was unreasonably low, penalties may apply.
-
-## Section 8 -- Edge cases
-
-No prior year return. No yotei nozei obligation. Tax settled entirely through final return.
-
-Capital gains from asset sales are excluded from baseline by definition. If incorrectly included, contact tax office for correction.
-
-File 減額申請 by 15 July (1st) or 15 November (2nd). Flag for zeirishi.
-
-Special deferral or reduction provisions under the Disaster Tax Relief Act (災害減免法). Flag for zeirishi.
-
-Actual debit date is typically about 1 month after official due date. No delinquent tax for the gap between the official due date and the debit date.
-
-## Section 9 -- Self-checks
-
-Before delivering output, verify:
-
-- [ ] 予定納税基準額 confirmed from prior year return
-- [ ] JPY 150,000 threshold checked
-- [ ] Instalments correctly calculated as 1/3 each (not 1/2)
-- [ ] Capital gains, retirement, one-off income excluded from baseline
-- [ ] Reduction application deadlines identified if applicable
-- [ ] Delinquent tax rates current for the applicable year
-- [ ] Payment method appropriate for the amount (convenience store cap JPY 300,000)
-- [ ] 振替納税 timing noted if applicable
-- [ ] Special reconstruction tax included in final reconciliation
-- [ ] Output labelled as estimated until zeirishi confirms
-
-## Section 10 -- Test suite
-
-### Test 1 -- Standard computation
-
-**Input:** Baseline = JPY 600,000.
-**Expected:** 1st = JPY 200,000 (Jul). 2nd = JPY 200,000 (Nov). Final = actual - JPY 400,000.
-
-### Test 2 -- Below threshold
-
-**Input:** Baseline = JPY 120,000.
-**Expected:** No yotei nozei required.
-
-### Test 3 -- Delinquent tax (76 days late)
-
-**Input:** JPY 200,000 paid 76 days late.
-**Expected:** First 60 days at 2.4%, remaining 16 days at 8.7%. Total approx. JPY 1,551.
-
-### Test 4 -- First year
-
-**Input:** New freelancer, no prior return.
-**Expected:** No yotei nozei. Tax paid with final return.
-
-### Test 5 -- Reduction application
-
-**Input:** Baseline JPY 600,000. Client expects 50% income drop.
-**Expected:** Flag for zeirishi. File 減額申請 by 15 July or 15 November.
-
-### Test 6 -- Refund on final return
-
-**Input:** Yotei nozei paid JPY 400,000. Actual tax JPY 300,000.
-**Expected:** Refund JPY 100,000 claimed on final return.
-
-## Prohibitions
-
-- NEVER compute yotei nozei without confirming the 予定納税基準額
-- NEVER include capital gains, retirement, or one-off income in the baseline
-- NEVER forget that each instalment is 1/3 (not 1/2) of the baseline
-- NEVER advise filing a reduction application without flagging for zeirishi review
-- NEVER apply penalty surcharge (加算税) to yotei nozei -- only delinquent tax (延滞税) applies
-- NEVER present amounts as definitive -- advise confirmation with zeirishi
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a zeirishi or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
+| 2026 first ordinary instalment | 1-31 July; bank debit 31 July | NTA 2026 leaflet pp. 2-3: https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/pdf/2040_01.pdf |
+| 2026 second ordinary instalment | 1-30 November legally; counter-payment business days start 2 November; debit 30 November | Same: https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/pdf/2040_01.pdf |
+| July reduction filing | 1-15 July; based on 30 June position | Income Tax Act arts. 111-112: https://www.nta.go.jp/taxes/tetsuzuki/shinsei/annai/shinkoku/annai/02.htm |
+| November reduction filing | 1-15 November ordinarily; 2026 deadline 16 November, derived because 15 November is Sunday | Same; holiday rule: https://www.nta.go.jp/taxes/tetsuzuki/shinsei/annai/shinkoku/annai/02.htm |
+| Final 2026 return and payment | Ordinarily 16 February-15 March 2027; specific extensions separate | Income Tax Act art. 120: https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/2020.htm |
+| Convenience-store QR limit | At most JPY 300,000; cash, no receipt certificate (payment receipt supplied) | NTA payment procedure: https://www.nta.go.jp/taxes/nozei/nofu/conveni_qr_nofu/index.htm |
+| Late interest incurred in 2026 | 2.8% annually through first 2 calendar months, 9.1% thereafter; split at calendar-year changes | General Tax Act art. 60; special rates: https://www.nta.go.jp/taxes/nozei/entaizei/keisan/entai_wariai.htm |
+| Historical interest incurred in 2025 | 2.4% / 8.7%, historical use only | Same: https://www.nta.go.jp/taxes/nozei/entaizei/keisan/entai_wariai.htm |
+| Interest rounding | Base down to JPY 10,000; final down to JPY 100; entire charge below JPY 1,000 omitted (in words on statute page) | General Tax Act arts. 118(3),119(4): https://laws.e-gov.go.jp/law/337AC0000000066 |
+
+Use the notice's correct year, tax and period for payment slip, bank counter, registered debit, Pay-easy/internet banking, e-Tax direct payment or card payment. A filing receipt is not payment proof. For convenience-store QR create the code in NTA/e-Tax, obtain the kiosk barcode and pay cash at the designated counter; retain the payment receipt. Check the notice and funded account before each registered debit. Card fees and other payment-method conditions require that method's live NTA instruction.
+
+## Completion checklist
+
+- Confirmed notice and prior return; baseline exclusions, withholding and reconstruction tax reconciled.
+- Threshold includes equality; each ordinary instalment divided by 3 and rounded correctly.
+- Special agriculture, foreign credits, disaster and residence issues resolved or referred.
+- Reduction evidence, timely application and actual decision retained; approved November formula correct.
+- Payment route, successful settlement and actual 2026 debit dates recorded.
+- Annual notice credit and unpaid collection distinguished; no duplicate credit or business deduction.
+- Interest uses correct year, calendar-month periods and statutory rounding; output estimated, not reviewed.
+
+## Sources
+
+| Source | Official URL | Read on | Operative material read |
+| --- | --- | --- | --- |
+| NTA No. 2040 | https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/2040.htm | 2026-11-14 | Read for entire baseline calculation, excluded-income and foreign-credit/disaster cases, thresholds, ordinary/agricultural fractions, deadlines, extension and failed-debit notes; law dated 1 June 2026 |
+| NTA 2026 estimated-payment leaflet | https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/pdf/2040_01.pdf | 2026-11-14 | Read for notice credit, baseline, both actual 2026 debit dates, counter dates and payment instructions, pp. 1-4; malformed extracted form image not used as a box map |
+| Income Tax Act arts. 104-114 | https://laws.e-gov.go.jp/law/340AC0000000033 | 2026-11-14 | Read for full main arts. 104-114 through official e-Gov API, text effective 1 October 2026; ordinary rounding, baseline dates, agriculture boundary, reductions and late notice |
+| Reconstruction Finance Act art. 16 | https://laws.e-gov.go.jp/law/423AC0000000117 | 2026-11-14 | Read for entire combined baseline and reconstruction-tax prepayment rule, official e-Gov API text effective 1 April 2026 |
+| NTA reduction procedure A1-3 | https://www.nta.go.jp/taxes/tetsuzuki/shinsei/annai/shinkoku/annai/02.htm | 2026-11-14 | Read for conditions, annual forecast, 2026 deduction restriction, forms, dates, attachments, submission and decision/review routes |
+| General Tax Act arts. 60,118,119 | https://laws.e-gov.go.jp/law/337AC0000000066 | 2026-11-14 | Read for estimated-payment interest, calendar-month boundary and all rounding paragraphs, official e-Gov API text effective 1 November 2026 |
+| NTA interest schedule | https://www.nta.go.jp/taxes/nozei/entaizei/keisan/entai_wariai.htm | 2026-11-14 | Read for lower/higher rates and 2025/2026 rows, not interest-tax or refund-addition columns |
+| NTA No. 9205 | https://www.nta.go.jp/taxes/shiraberu/taxanswer/osirase/9205.htm | 2026-11-14 | Read for interest commencement, two calendar months and principal-only basis |
+| NTA No. 2020 | https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/2020.htm | 2026-11-14 | Read for final-return reconciliation, filing/payment dates, forms and payment routes |
+| NTA convenience-store QR | https://www.nta.go.jp/taxes/nozei/nofu/conveni_qr_nofu/index.htm | 2026-11-14 | Read for amount ceiling, cash requirement, code creation, barcode payment and receipt distinction |
+
+Not yet confirmed: case-specific foreign tax credit or disaster relief; special agricultural baseline computation beyond the referral; non-resident/corporate prepayment computation; card payment fees/limits; annual interest rates after 2026; a specific client's notice, reduction decision or payment; the old claim that an unreasonably low forecast automatically incurs a penalty. Bank timing/narrations are matching aids, not independently validated bank specifications.

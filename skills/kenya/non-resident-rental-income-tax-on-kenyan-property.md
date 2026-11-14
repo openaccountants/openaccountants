@@ -2,89 +2,103 @@
 name: non-resident-rental-income-tax-on-kenyan-property
 description: "Non-resident rental income tax on Kenyan property: a guide for foreign landlords"
 jurisdiction: KE
-tax_year: 2025
-last_updated: 2026-07-29
+tax_year: 2026
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: corporate-tax
+version: 0.1
+type: situation-rules
+category: international
 ---
 
-# Non-resident rental income tax on Kenyan property: a guide for foreign landlords
+# Non-resident rental income tax on Kenyan property (2026)
 
-If you live outside Kenya and earn rent from property you own in Kenya, you now owe non-resident rental income tax. It is a final tax on that rental income, it runs on a monthly cycle tied to the month the rent is paid, and it started on 1 July 2026. This guide explains who it applies to, what you have to do, and the mistakes to avoid.
+> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
-## Does this apply to you
+Non-resident income from use or occupation of property situated in Kenya is subject to final rental income tax under [ITA s6B](https://www.kra.go.ke/images/publications/Income-Tax-Act-2026.pdf), effective from 1 July 2026 under [Finance Act 2026 ss1(c),4](https://www.kra.go.ke/images/publications/Finance-Act-2026.pdf). For immovable property, the Third Schedule Head B para3(c)(i) specifies 30% of the gross amount. Confirm residence, the property and collection route before computing.
 
-It applies if you are a non-resident person, whether an individual or a company, earning rent from immovable property situated in Kenya. It does not apply if you are a Kenyan tax resident, in which case a different rental regime covers you. Get professional advice before you act if you are unsure of your residency status, if you hold the property through a company or trust, or if a double tax treaty may exist between Kenya and your country.
+## Who this applies to
 
-## Work out your situation first
+A non-resident person, individual or company, receiving income from Kenyan immovable property. Resident landlords use a different regime. Company/trust ownership, uncertain residence and treaty claims require professional review. This file does not settle commercial-letting VAT or a foreign tax credit.
 
-- Are you genuinely non-resident for Kenyan tax purposes across the whole period?
-- Who collects your rent: you directly, or a Kenyan agent or property manager on your behalf? This changes how the tax is paid.
-- Is the property residential or commercial? Commercial letting can bring in other taxes on top of this one.
-- Does a double tax treaty exist between Kenya and your country of residence?
-- Do you already have a Kenyan PIN or any prior filing history?
-- What is your gross rent each month, and are there months with no rent?
+## Rates, bands and thresholds
 
-## What you need to do
+| Item | Amount and complete condition | Official source |
+|---|---|---|
+| Immovable-property rent | 30% of gross amount payable to non-resident, Head B para3(c)(i), in words on the page | https://www.kra.go.ke/images/publications/Income-Tax-Act-2026.pdf |
+| Nature | Final tax on the s6B income; do not include it again as taxable income | https://www.kra.go.ke/images/publications/Income-Tax-Act-2026.pdf |
+| Direct collection return/payment | By 20th day of following month for which rent is paid, s6B(2)(b), in words on the page | https://www.kra.go.ke/images/publications/Income-Tax-Act-2026.pdf |
+| Resident collection agent | s6B(2) does not apply when rent received by resident for non-resident is subject to s35(1)(c) withholding | https://www.kra.go.ke/images/publications/Income-Tax-Act-2026.pdf |
+| Withholding remittance and certificate | Within 5 working days after deduction, s35(5), in words on the page | https://www.kra.go.ke/images/publications/Income-Tax-Act-2026.pdf |
+| Commencement | 1 July 2026, FA2026 s1(c) | https://www.kra.go.ke/images/publications/Finance-Act-2026.pdf |
 
-1. Confirm your residency status for the period. Everything below depends on it.
-2. Settle how your rent is collected, because that decides how you pay. If you collect the rent directly, you register and file monthly. If a Kenyan agent collects it for you, that agent withholds the tax and remits it, and you may not need to file monthly yourself. Getting this wrong leaves tax unpaid on the other route.
-3. Register under the simplified registration framework the Commissioner provides.
-4. Work out the tax on your gross rent for the month at the applicable rate (confirm the current rate before you file).
-5. File the return and pay by the 20th day of the month following the month the rent was paid.
-6. Because it is a final tax, do not declare the same rental income again in any other return.
-7. Keep your records and match rent received to the amounts you declare.
+## The base
 
-## Common mistakes to avoid
+Use gross rent, reconcile each property and month, and do not deduct repairs, commissions or other expenses from the gross statutory base. Establish whether the landlord receives it directly or a resident receives it on their behalf and is subject to s35(1)(c). Do not freely elect between the routes or leave a gap where neither accounts. Keep leases, rent statements, bank records, agent agreements, PIN/registration evidence and withholding certificates. No rent in a month is a filing-status question, not permission to assume deregistration.
 
-- Assuming you can freely switch between filing it yourself and letting your agent withhold. Only one route applies to your situation, and picking wrong leaves a live liability.
-- Treating it as an annual return and missing the monthly deadlines.
-- Declaring the income a second time elsewhere, forgetting it is a final tax.
-- Overlooking a treaty that could change the rate or Kenya's right to tax the income.
-- Registering late and running up penalties you could have avoided.
+## Deadlines and filing
 
-## Rates and deadlines
+For direct collection, s6B(2) requires registration/accounting through the simplified framework prescribed by the Commissioner, followed by monthly return and payment by the deadline above. Obtain KRA's current registration and return instructions; this source does not give the live form name, boxes or payment screen, so do not invent them. For resident-agent collection within s35(1)(c), the agent deducts, remits and supplies the certificate under s35(5); match that certificate to gross rent. Keep the final-tax income separate from other return income to avoid double taxation.
 
-Rate on gross rent
-  Value:   confirm the current rate before you file (set in the Third Schedule)
-  Source:  Finance Act 2026 s.4 inserting s.6B(1), Income Tax Act (Cap. 470);
-           Third Schedule rate, citation to confirm
+## Penalties and interest
 
-Nature of the tax
-  Value:   Final tax
-  Source:  s.6B(1), Income Tax Act (Cap. 470)
+[TPA ss38,83,83A](https://www.kra.go.ke/images/publications/Tax-Procedures-Act--2026.pdf) govern late compliance. Identify the actual return type and taxpayer before using a late-return minimum; this file does not claim the individual annual-return minimum governs a new monthly simplified return. Late tax ordinarily attracts a 5% late-payment penalty and 1% simple interest per month or part under ss83A and38, in words on the page. Refer an assessment or late registration promptly. Under s38(8), aggregate accrued late interest cannot exceed the principal tax liability. Section38(6) stops accrual between notification and payment where the outstanding tax, including interest to notification, is paid in full within the notice’s specified time. Section38(2) refunds interest to the extent the underlying principal is found not payable.
 
-Registration
-  Value:   Simplified registration framework provided by the Commissioner
-  Source:  s.6B(2)(a), Income Tax Act (Cap. 470)
+## Cross-border points
 
-Return and payment deadline
-  Value:   On or before the 20th day of the month following the month the rent is paid
-  Source:  s.6B(2)(b), Income Tax Act (Cap. 470)
+The property remains situated in Kenya even if rent is paid abroad. Obtain the landlord's residence-country details and applicable treaty text before granting any treaty treatment. A treaty's property article, beneficial ownership, relief procedure and residence-country credit must be assessed separately. Commercial property may trigger VAT and other obligations as well.
 
-If a Kenyan agent collects your rent
-  Value:   The agent withholds under s.35(1)(c) and remits it, instead of you filing monthly
-  Source:  s.6B(3), Income Tax Act (Cap. 470)
+## Two worked examples that recompute
 
-Withholding rate on the agent route
-  Value:   confirm before filing
-  Source:  s.35(1)(c) / Third Schedule, citation to confirm
+Direct collection: hypothetical monthly gross Kenyan property rent KES 100,000 gives final tax KES 30,000 and KES 70,000 after tax, before expenses. File and pay under s6B(2).
 
-Late-filing or late-payment penalty
-  Value:   confirm before filing
-  Source:  Tax Procedures Act (Cap. 469B), citation to confirm
+```oa-check
+name: Direct non-resident immovable rent
+inputs:
+  gross: 100000
+steps:
+  - tax: gross * 0.30
+  - after_tax: gross - tax
+expected:
+  tax: 30000
+  after_tax: 70000
+```
 
-Start date
-  Value:   1 July 2026
-  Source:  Finance Act 2026, s.1(c)
+Resident-agent decision: on hypothetical gross rent KES 200,000 and an assumed separately charged KES 10,000 management fee, withholding remains KES 60,000 on gross rent, not KES 57,000 on rent net of fees. The landlord receives KES 130,000 after both deductions. Use the agent route only when s35(1)(c) applies and retain its certificate.
+
+```oa-check
+name: Agent withholding is on gross rent
+inputs:
+  gross: 200000
+  fee: 10000
+steps:
+  - withholding: gross * 0.30
+  - incorrect_net_basis: (gross - fee) * 0.30
+  - landlord_cash: gross - withholding - fee
+expected:
+  withholding: 60000
+  incorrect_net_basis: 57000
+  landlord_cash: 130000
+```
+
+## Ask the client first
+
+- Residence status for the period, ownership entity and residence country/treaty.
+- Kenyan PIN, simplified registration and prior filing history.
+- Lease, property location, residential/commercial use and gross monthly rent, including vacant periods.
+- Direct collection or resident agent; agreement, deductions and certificates.
+- Other taxes, missed deadlines, assessments or outstanding payments.
 
 ## Sources
 
-- Finance Act 2026 (No. 19 of 2026), s.4 inserting s.6B into the Income Tax Act (Cap. 470), and s.1(c).
-- Income Tax Act (Cap. 470), s.35(1)(c) and Third Schedule, citation to confirm for the specific rates.
-- Tax Procedures Act (Cap. 469B), citation to confirm for penalties.
-- FFP Consult, ffp.co.ke
+| Source and passages actually read | Official URL | Read on |
+|---|---|---|
+| Read for ITA ss6B,35(1)(c),35(5), Third Schedule Head B para3(c)(i)-(ii), rate, finality and two collection routes | https://www.kra.go.ke/images/publications/Income-Tax-Act-2026.pdf | 2026-11-14 |
+| Read for Finance Act 2026 ss1,4, new regime and effective date | https://www.kra.go.ke/images/publications/Finance-Act-2026.pdf | 2026-11-14 |
+| Read for TPA ss38,83,83A, late compliance framework | https://www.kra.go.ke/images/publications/Tax-Procedures-Act--2026.pdf | 2026-11-14 |
+
+Not yet confirmed: Exact simplified-registration portal route, form/box names, nil-month procedure and the late-return classification for s6B. No treaty rate or relief is established here. The old file left both rental rates open; the immovable-property rate is now sourced.
 
 ## Need help
 
