@@ -1,14 +1,15 @@
 ---
 name: pl-income-tax
 description: "Polish personal income tax (PIT) for individuals and the self-employed for tax year 2026. Covers residence, the three tax forms for a sole trader (the 12% and 32% scale with the PLN 30,000 tax-free amount and PLN 120,000 threshold; the 19% flat tax with the PLN 14,100 health deduction limit; ryczałt on revenue at 2% to 17% with the 2026 eligibility limit of EUR 2 million, PLN 8,517,200), the 4% solidarity levy above PLN 1 million, IP Box at 5%, joint filing for spouses and single parents, the main reliefs (child relief, the PLN 85,528 reliefs, losses), the PIT-36, PIT-36L, PIT-28 and PIT-37 returns due 30 April 2027, and monthly or quarterly advances. Trigger on: PIT 2026, skala podatkowa, podatek liniowy, ryczałt, danina solidarnościowa, wspólne rozliczenie, zaliczki PIT, PIT-36. Out of scope: ZUS in pl-zus-contributions; employee withholding in pl-payroll; mandate contracts in pl-civil-law-contracts; non-residents and foreign income in pl-cross-border; shares, crypto and property gains in pl-capital-gains."
-version: 2.2
+version: 2.3
 jurisdiction: PL
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
+type: computation
 ---
 
 # Poland: personal income tax for individuals and the self-employed (2026)

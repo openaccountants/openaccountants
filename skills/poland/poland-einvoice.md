@@ -1,14 +1,15 @@
 ---
 name: poland-einvoice
 description: "Polish KSeF e-invoicing (Krajowy System e-Faktur) for tax year 2026: who must issue structured FA(3) invoices and from when (1 February 2026 for businesses with 2024 sales over PLN 200 million including VAT, 1 April 2026 for the rest), who is outside KSeF (businesses with no seat or fixed establishment in Poland, consumer invoices, OSS, IOSS and EU SME scheme invoices, tolls and single tickets), the 2026 carve-outs for PLN 10,000 a month and for cash-register invoices, receiving invoices, the offline24, unavailability and failure modes with their deadlines, QR codes, storage for 10 years, what KSeF means for input VAT, and the fines from 1 January 2027. Trigger on: KSeF, e-faktura, faktura ustrukturyzowana, FA(3), offline24, tryb awaryjny, numer KSeF, kod QR, art. 106ga, art. 145m. Out of scope: VAT rates, JPK_V7 and the VAT return (poland-vat-return), income tax (pl-income-tax, pl-cit-corporate-tax)."
-version: 1.2
+version: 1.3
 jurisdiction: PL
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: e-invoicing
+type: filing-howto
 ---
 
 # Poland KSeF e-invoicing (2026)

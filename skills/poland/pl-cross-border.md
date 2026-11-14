@@ -1,17 +1,18 @@
 ---
 name: pl-cross-border
 description: "Polish cross-border personal income tax (PIT) for tax year 2026. Covers individual residence (centre of vital interests or over 183 days, PIT Act art. 3), non-residents and Polish-source income (art. 3 ust. 2a-2b), the return relief for people moving to Poland (ulga na powrót, art. 21 ust. 1 pkt 152: four years, PLN 85,528 a year), withholding on payments to non-resident individuals (20% on fees, royalties and advisory services, 19% on dividends and interest, art. 29 and 30a), certificates of residence, IFT-1R and PIT-8AR, exemption with progression and credit (art. 27 ust. 8-9a), the abolition relief (art. 27g, PLN 1,360 cap), and individual exit tax (art. 30da-30df: 19% or 3% above PLN 4,000,000, PIT-NZ). Trigger on: moving to Poland, leaving Poland, non-resident, ulga na powrót, ulga abolicyjna, certyfikat rezydencji, IFT-1R, PIT-NZ, exit tax Poland. Out of scope: companies (pl-cit-corporate-tax), transfer pricing (pl-transfer-pricing), sole-trader computation (pl-income-tax), investment income (pl-capital-gains), ZUS (pl-zus-contributions)."
-version: 0.2
+version: 0.3
 jurisdiction: PL
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: cross-border
+type: situation-rules
 ---
 
-# Poland: cross-border tax for individuals (2026) v0.2
+# Poland: cross-border tax for individuals (2026) v0.3
 
 > **General reference only.** This skill is general tax reference material for AI-assisted work. It has not been reviewed for any specific person's facts. Do not rely on it to file, pay or take a position without review by a qualified professional in Poland.
 

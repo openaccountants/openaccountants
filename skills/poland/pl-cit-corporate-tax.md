@@ -1,14 +1,15 @@
 ---
 name: pl-cit-corporate-tax
 description: "Polish corporate income tax (CIT, podatek dochodowy od osób prawnych) for tax year 2026: resident companies (sp. z o.o., S.A., P.S.A., limited partnerships taxed as companies) and Polish permanent establishments of foreign companies. Covers the 19% rate, the 9% rate for small taxpayers and start-ups (revenue limit PLN 8,431,000 for a 2026 calendar year), the 2026 bank rates, Estonian CIT (ryczałt od dochodów spółek, 10% or 20%), the 10% minimum tax, tax on shifted income, losses (five years, 50% a year or PLN 5m once), tax capital groups (PGK), the PLN 3m or 30% interest limit, CIT-8 filing, monthly, quarterly and simplified advances, late payment interest, outbound withholding (19%, 20%, pay-and-refund above PLN 2m), CFC and exit tax. Trigger on: CIT Poland, Polish corporate tax, CIT-8, mały podatnik, 9% CIT, estoński CIT, CIT-8E, podatek minimalny, PGK. Out of scope: individuals (pl-income-tax, pl-capital-gains), VAT (pl-vat-return), ZUS (pl-zus-contributions), e-invoicing (poland-einvoice)."
-version: 0.2
+version: 0.3
 jurisdiction: PL
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: corporate-tax
+type: computation
 ---
 
 # Polish corporate income tax (CIT): tax year 2026

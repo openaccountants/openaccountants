@@ -1,14 +1,15 @@
 ---
 name: pl-payroll
 description: "Polish payroll for employees (umowa o pracę) for tax year 2026: monthly PIT advances under PIT Act art. 31a-32 and 38 (12% and 32% with the PLN 120,000 threshold per payer, standard costs PLN 250 or 300, the PIT-2 reduction of PLN 300 a month), the PLN 85,528 reliefs for under-26s, returners, parents of four and working seniors, employee and employer ZUS contributions (19.52%, 8%, 2.45%, accident 1.67% for small payers, FP and Solidarity Fund 2.45%, FGŚP 0.10%, FEP 1.5%) with the PLN 282,600 annual cap, 9% health contribution, PPK, the PLN 4,806 minimum wage, ZUS DRA and PIT-4R and PIT-11 deadlines, and penalties. Trigger on: wynagrodzenie netto, zaliczka na PIT pracownika, składki ZUS pracodawcy, PIT-11, PIT-4R, koszt pracodawcy. Out of scope: self-employed ZUS in pl-zus-contributions; annual return and business income in pl-income-tax; company tax in pl-cit-corporate-tax."
-version: 0.2
+version: 0.3
 jurisdiction: PL
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
+type: computation
 ---
 
 # Poland: payroll for employees (2026)

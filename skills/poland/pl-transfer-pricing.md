@@ -1,14 +1,15 @@
 ---
 name: pl-transfer-pricing
 description: "Polish transfer pricing (ceny transferowe) for tax year 2026, under CIT Act chapter 1a (art. 11a to 11t) and the matching PIT Act chapter 4b (art. 23m to 23zf). Covers related parties (25% test), arm's length and recharacterisation, local file thresholds (PLN 10m goods and financial, PLN 2m services and other; PLN 2.5m and PLN 0.5m for tax havens), exemptions, deadlines, the TPR-C return and its 2026 changes (Dz.U. 2026 poz. 1371), the PLN 200m master file, the 2026 loan safe harbour (WIBOR, WIRON or POLSTR 3M plus 2.0 or 2.6 points), the 5% low-value services safe harbour, the 10%, 20% and 30% additional tax liability, fiscal penal fines, APA fees, MAP and CbC (PLN 3.25bn or EUR 750m). Trigger on: ceny transferowe, local file Poland, TPR-C, safe harbour pożyczki. Out of scope: rates and base in pl-cit-corporate-tax; individuals in pl-income-tax."
-version: 0.2
+version: 0.3
 jurisdiction: PL
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: transfer-pricing
+type: situation-rules
 ---
 
 # Poland: transfer pricing (2026)

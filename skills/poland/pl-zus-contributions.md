@@ -1,14 +1,15 @@
 ---
 name: pl-zus-contributions
 description: "Polish ZUS social contributions and the health contribution for the self-employed (jednoosobowa działalność gospodarcza) for 2026. Covers the standard base of PLN 5,652 (60% of the PLN 9,420 forecast wage), the rates (pension 19.52%, disability 8%, voluntary sickness 2.45%, accident 1.67%, Labour Fund 1.0% and Solidarity Fund 1.45%), the start relief (ulga na start), the 24-month preferential base of PLN 1,441.80, Mały ZUS Plus, the one-month contribution holiday, the annual cap of PLN 282,600, and the health contribution by tax form: 9% of income on the scale, 4.9% on the flat tax, both with a PLN 432.54 monthly minimum, and three fixed ryczałt bands (PLN 498.35, 830.58, 1,495.04). Also the DRA due on the 20th, the annual health reconciliation and 10.50% late interest. Trigger on: składki ZUS, ZUS przedsiębiorcy 2026, mały ZUS plus, ulga na start, preferencyjny ZUS, składka zdrowotna 2026. Out of scope: income tax in pl-income-tax; employees in pl-payroll; contract workers in pl-civil-law-contracts; cross-border residence in pl-cross-border."
-version: 2.3
+version: 2.4
 jurisdiction: PL
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
+type: computation
 ---
 
 # Poland: ZUS and health contributions for the self-employed (2026)
