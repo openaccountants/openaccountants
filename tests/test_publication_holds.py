@@ -95,10 +95,10 @@ class BuilderHoldTests(unittest.TestCase):
     def test_actual_held_source_files_are_held_without_dependents(self):
         _skills, targets, held, errors = publication_catalogue(ROOT)
         self.assertEqual(errors, [])
-        names = {"fl-sales-tax"}
-        for name in names:
-            self.assertEqual(held[name], "status: needs_sources")
-            self.assertNotIn(name, targets)
+        # fl-sales-tax was the last held file; it was retired on 14 Nov 2026
+        # (a duplicate of the approved fl-sales-use-tax).
+        self.assertNotIn("fl-sales-tax", held)
+        self.assertNotIn("fl-sales-tax", targets)
         # Wisconsin payroll now carries dated official sources in its 2026 rebuild.
         self.assertNotIn("wi-payroll", held)
         self.assertIn("wi-payroll", targets)
