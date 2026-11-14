@@ -11,17 +11,31 @@
 4. `new-zealand-crypto-tax.md`
 5. `nz-acc-levies.md`
 6. `nz-capital-gains.md`
-7. `nz-gst-return.md`
-8. `nz-income-tax-ir3.md`
-9. `nz-motor-vehicle-expenses-logbook-business-use.md`
-10. `nz-provisional-tax.md`
-11. `nz-tax-residency.md`
-12. `nz-timing-deductions-when-expense-incurred.md`
-13. `references.md`
-14. `crypto-tax-workflow-base.md`
-15. `workflow-base.md`
-16. `vat-workflow-base.md`
-17. `income-tax-workflow-base.md`
+7. `nz-company-capital-records-core.md`
+8. `nz-company-dividend-rwt-core.md`
+9. `nz-company-financial-reporting-core.md`
+10. `nz-company-ica-ir4j.md`
+11. `nz-company-income-tax-ir4.md`
+12. `nz-company-register-core.md`
+13. `nz-employee-share-schemes.md`
+14. `nz-employer-payroll.md`
+15. `nz-gst-return.md`
+16. `nz-income-tax-ir3.md`
+17. `nz-kiwisaver-esct.md`
+18. `nz-motor-vehicle-expenses-logbook-business-use.md`
+19. `nz-payroll-notices-filing-penalties.md`
+20. `nz-provisional-tax.md`
+21. `nz-tax-residency.md`
+22. `nz-timing-deductions-when-expense-incurred.md`
+23. `references.md`
+24. `payroll-workflow-base.md`
+25. `crypto-tax-workflow-base.md`
+26. `workflow-base.md`
+27. `company-formation-workflow-base.md`
+28. `corporate-income-tax-workflow-base.md`
+29. `financial-statements-workflow-base.md`
+30. `vat-workflow-base.md`
+31. `income-tax-workflow-base.md`
 
 ## Also known as
 

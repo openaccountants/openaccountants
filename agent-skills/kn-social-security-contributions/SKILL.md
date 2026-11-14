@@ -52,6 +52,7 @@ Contributions under the Social Security Act, Chapter 22.10 (revised to 31 Decemb
 
 | Situation | Treatment | Source |
 |---|---|---|
+| Legal basis of the 1% employment injury contribution | The Contributions Regulations Schedule 1 (2017 revision) prints employer 5% and employee 5%; the extra 1% employer injury contribution comes from Board guidance (2018 Employer's Guide; 2024 booklet, which dates the injury branch to 1 January 1986). The charging instrument for the 1% was not found; the Board collects 11% in practice | [Cap. 22.10, Schedule 1](https://lawcommission.gov.kn/wp-content/documents/Act17TOC/Ch-22_10-Social-Security-Act.pdf); [Board booklet](https://socialsecurity.kn/wp-content/uploads/2024/06/Things-You-Should-Know-12-06-24.pdf) |
 | Worker earns 9,000 a month | Social security base 6,500; the housing levy still applies to all 9,000 | [Board employers' guide](https://socialsecurity.kn/wp-content/uploads/2018/05/Employers-Guide-2018.pdf) |
 | Worker turns 62 on a Monday | No contribution for that week (only the 1% employer injury from then) | [Act Cap. 22.10, reg.5](https://lawcommission.gov.kn/wp-content/documents/Act17TOC/Ch-22_10-Social-Security-Act.pdf) |
 | January wages | Due end of January, may be paid by end of February | [Board employers' guide](https://socialsecurity.kn/wp-content/uploads/2018/05/Employers-Guide-2018.pdf) |
@@ -133,7 +134,7 @@ expected:
 | Board employers' guide 2018: read for payment timing, the 6,500 ceiling against no ceiling for the levy, and penalties | https://socialsecurity.kn/wp-content/uploads/2018/05/Employers-Guide-2018.pdf | 2026-11-14 |
 | Board employers page: read for employer registration and the employer number | https://socialsecurity.kn/employers-2/ | 2026-11-14 |
 
-Not yet confirmed: amendments after 31 December 2017 (none checked); the social security late penalty in the regulations themselves (the guide describes it with the levy); the self-employed income categories.
+Not yet confirmed: amendments after 31 December 2017 (none checked); the legal instrument for the 1% employment injury contribution; the social security late penalty in the regulations themselves (the guide describes it with the levy); the self-employed income categories.
 
 ## Today's figures and who stands behind this skill
 

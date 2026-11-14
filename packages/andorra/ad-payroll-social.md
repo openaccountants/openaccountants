@@ -1,7 +1,7 @@
 ---
 name: ad-payroll-social
 description: "Andorra payroll and CASS social security for tax year 2026. Covers resident employee IRPF withholding, non-resident employment and the elected frontier or seasonal method, ordinary employee and employer contributions, working pension recipients, self-employed income and turnover tiers, director classification, startup reductions, the separate young-worker regime and health complements. Distinguishes the January and July minimum wages and the 2026 average-salary reference. Includes gross-to-net reconciliation, benefits and reimbursements, employer and worker registrations, monthly combined CASS and tax declarations, non-CASS filing, rate notices, regularisation and penalties. Use for Andorra payroll, employee net salary, employer cost, retencions, CASS0031, compte propi and contribution-base questions. Source-cited draft requiring professional review."
-version: 0.4
+version: 0.5
 jurisdiction: AD
 tax_year: 2026
 last_updated: 2026-11-14
@@ -56,6 +56,8 @@ Genuine client tips/liberalities and qualifying reimbursements are different fro
 For cash payroll, employee CASS = contribution base × employee rate; employer CASS = base × employer rate. Deduct the employee share from wages and add the employer share to employer cost. The employer cannot transfer its contribution to the employee by agreement. For benefits in kind, distinguish cash available from the total assessable remuneration: do not subtract a noncash benefit from cash twice. Working pension recipients use the applicable general-only regime; early retirement can instead suspend the pension under article 205. Occupational injury is within the statutory general branch, not an invented extra percentage on ordinary pay. [Social law arts 97, 100, 103, 205](https://www.portaljuridicandorra.ad/L2008017).
 
 Below-minimum pay can require a **general-branch health complement**, rather than treating every employee's contribution base as automatically a full-time monthly wage. Regulation article 19 assigns the worker the 10% complement on the difference from the current minimum, subject to other direct coverage, multi-employer aggregation and the statutory exceptions. The indirectly insured part-time regime has its separate conditions. Identify actual hours, other coverage and the CASS decision before adding a complement. [Social law arts 99, 224](https://www.portaljuridicandorra.ad/L2008017); [regulation arts 19, 25](https://www.portaljuridicandorra.ad/R20150527A).
+
+For an employee, the complement is the worker's own separate CASS declaration, not an employer payslip deduction and not an increase in the employer's ordinary base. The CASS employee sheet dated 9 July 2026 gives the procedure: register with form CASS-0087 and an identity document (effective from the date of presentation until cancellation), obtain the CASS digital certificate, then declare and pay 10% of (official monthly minimum wage minus aggregate gross monthly salary) from the 1st to the 15th of the month after the month being complemented. All salaries from every job are added together. A month in which salary reaches the minimum, or a month of temporary incapacity throughout, is declared at zero. Late payment carries article 93 surcharges. Where registration did not start on the first day of the month, incapacity covered only part of the month or the worker received pay in kind, CASS supplies the correct amount; do not apply the simple formula. The sheet excludes students and high-performance athletes aged 25 to 30 in their special regime, and lower-paid employees in the indirectly insured regime; age or low pay alone does not prove either exclusion. Use the minimum for the month itself: EUR 1,525.33 to June, EUR 1,568.67 from July. The sheet says it has no legal validity and the BOPA text controls. A worker entitled to general-branch benefits on another basis than salary contributions is outside the obligation under regulation article 19; confirm that entitlement first. [CASS employee complement sheet, 9 July 2026, both pages](https://www.cass.ad/sites/default/files/arxius/CASS_COMPLEMENT%20ART99%20ASS%20fitxa%2009-07-2026.pdf); [CASS complement page](https://www.cass.ad/complement-de-salari); [regulation art 19](https://www.portaljuridicandorra.ad/R20150527A).
 
 CASS temporary incapacity, maternity, paternity, pregnancy-risk and invalidity benefits themselves have general/retirement contribution treatment under regulation article 21: CASS declares/pays the employer part and retains the beneficiary part. Retirement and lifetime widow pensions have general-only treatment; specified reimbursement, lump-sum and orphan benefits are outside that contribution base. Reconcile benefit periods and salary actually payable; do not charge employer salary contributions again on the same CASS-paid benefit. [Regulation art 21](https://www.portaljuridicandorra.ad/R20150527A).
 
@@ -198,6 +200,28 @@ expected:
   annual_quota: 4084.08
 ```
 
+### Employee health complement across the July minimum-wage change
+
+A part-time employee with one job has an aggregate gross monthly salary of EUR 1,000 in June and in July 2026. CASS has confirmed the worker is in no excluded special regime, has no other general-branch entitlement, worked the full months, had no incapacity and received no pay in kind. The worker's own complement is 10% of the shortfall against each month's minimum: (1,525.33 minus 1,000) × 10% = EUR 52.53 for June (derived) and (1,568.67 minus 1,000) × 10% = EUR 56.87 for July (derived), each declared and paid by the 15th of the next month. The employer's ordinary 15.5% on EUR 1,000 is unchanged, and the June minimum is not carried into July.
+
+```oa-check
+name: Andorra employee article 99 complement June and July 2026
+inputs:
+  gross_salary: 1000
+  june_minimum: 1525.33
+  july_minimum: 1568.67
+  complement_rate: 0.10
+  employer_rate: 0.155
+steps:
+  june_complement: round(max(0, june_minimum - gross_salary) * complement_rate, 2)
+  july_complement: round(max(0, july_minimum - gross_salary) * complement_rate, 2)
+  employer_cass: gross_salary * employer_rate
+expected:
+  june_complement: 52.53
+  july_complement: 56.87
+  employer_cass: 155
+```
+
 ## 8. Ask the client first
 
 - What are the worker's residence, work locations, legal capacity, other jobs, pension status and social-coverage certificates?
@@ -221,11 +245,12 @@ expected:
 | Labour Inspection circular: minimum from 1 July 2026 | https://www.cass.ad/sites/default/files/arxius/Circular%20informativa%20salari%20m%C3%ADnim%20a%20partir%20de%20l%271%20de%20juliol%20del%202026_0.pdf | 2026-10-27 |
 | Government, 2026 average salary announcement, 28 January | https://www.govern.ad/ca/w/el-salari-mitja-de-l-any-2026-se-situa-en-2-672-52-euros | 2026-10-27 |
 | CASS, current salaried/self-employed tables; self-employed page's old publication header does not date the current 2026 figure | https://www.cass.ad/cotitzacions-recarrecs-sancions ; https://www.cass.ad/cotitzacions-del-treballadors-per-compte-propi | 2026-10-27 |
+| CASS employee (assalariat) article 99 complement sheet, 9 July 2026, both pages: CASS-0087, 1st–15th declaration, aggregation, zero declaration, exclusions | https://www.cass.ad/sites/default/files/arxius/CASS_COMPLEMENT%20ART99%20ASS%20fitxa%2009-07-2026.pdf ; https://www.cass.ad/complement-de-salari | 2026-11-14 |
 | CASS 2026 article 99 complement sheet, both pages | https://www.cass.ad/sites/default/files/arxius/CASS_COMPLEMENT%20ART99%20COMPTE%20PROPI%20fitxa%2002-02-2026.pdf | 2026-10-27 |
 | CASS0031 combined declaration and form | https://www.cass.ad/tramits/cass-0031 ; https://www.cass.ad/sites/default/files/tramits/CASS%200031.pdf | 2026-10-27 |
 | Tax administration, benefits-in-kind response, employment portions read; CV0312-2024 vehicle response | https://www.govern.ad/ca/l/4193406 ; https://www.govern.ad/ca/l/4194426 | 2026-10-27 |
 | General Tax Law 21/2014, arts 23–25, 125–132; Budget Law 1/2026 art 17 | https://www.portaljuridicandorra.ad/L2014021 ; https://www.portaljuridicandorra.ad/L2026001 | 2026-10-27 |
 
-Not yet confirmed: the old universal 7%-maximum gross-salary bands, EUR 750 ascendant reduction, salaried CASS ceiling, five-day post-hire grace period, twenty-day separate payroll remittance and blanket EUR 500–10,000 minimum-wage fine have no current primary support and are not applied. Legacy numbered DTF form mappings (300/310/311/312/315/316/317/340/341 and annexes) require the actual current approved form rather than inference from a number; the statutory CASS/non-CASS workflow above is confirmed. No complete current CASS enforcement-interest assessment is calculated from the regulation's partly superseded article 29: use the actual CASS notice and operative enforcement rule, not the tax 4.05% rate. For partial-month health complements, CASS expressly supplies the actual amount. Treaty/foreign social-coverage matrices and precise termination entitlement, food/lodging administrative valuations or special benefits require the actual relevant instrument and worker facts. Individual savings, capital gains and annual relief methods are in `ad-income-tax` rather than duplicated as payroll deductions. Portal consolidations lack official legal status; retain operative amendment annotations when checking historical periods.
+Not yet confirmed: the old universal 7%-maximum gross-salary bands, EUR 750 ascendant reduction, salaried CASS ceiling, five-day post-hire grace period, twenty-day separate payroll remittance and blanket EUR 500–10,000 minimum-wage fine have no current primary support and are not applied. Legacy numbered DTF form mappings (300/310/311/312/315/316/317/340/341 and annexes) require the actual current approved form rather than inference from a number; the statutory CASS/non-CASS workflow above is confirmed. No complete current CASS enforcement-interest assessment is calculated from the regulation's partly superseded article 29: use the actual CASS notice and operative enforcement rule, not the tax 4.05% rate. For partial-month health complements, CASS expressly supplies the actual amount. The wording of the indirectly insured exclusion conflicts: the 9 July 2026 CASS employee sheet excludes lower-paid employees who are indirectly insured, while the CASS complement web page describes lower-paid workers who are not indirectly insured; social law article 224 and its 2022 and 2024 amendments need the BOPA text and a CASS confirmation of the worker's regime before relying on that exclusion. Treaty/foreign social-coverage matrices and precise termination entitlement, food/lodging administrative valuations or special benefits require the actual relevant instrument and worker facts. Individual savings, capital gains and annual relief methods are in `ad-income-tax` rather than duplicated as payroll deductions. Portal consolidations lack official legal status; retain operative amendment annotations when checking historical periods.
 
 > Contributed by OpenAccountants.

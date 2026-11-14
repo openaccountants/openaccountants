@@ -12,12 +12,13 @@
 5. `th-company-formation.md`
 6. `th-payroll-social.md`
 7. `th-tax-overview.md`
-8. `thailand-pit.md`
-9. `thailand-vat.md`
-10. `payroll-workflow-base.md`
-11. `company-formation-workflow-base.md`
-12. `workflow-base.md`
-13. `vat-workflow-base.md`
+8. `th-top-up-tax.md`
+9. `thailand-pit.md`
+10. `thailand-vat.md`
+11. `payroll-workflow-base.md`
+12. `company-formation-workflow-base.md`
+13. `workflow-base.md`
+14. `vat-workflow-base.md`
 
 ## Also known as
 
