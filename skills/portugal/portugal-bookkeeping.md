@@ -1,28 +1,33 @@
 ---
 name: portugal-bookkeeping
-description: "Utilize esta skill sempre que lhe forem colocadas questões sobre contabilidade portuguesa no ano de 2026: plano de contas SNC (Portaria 218/2015), normas NCRF, NCRF-PE e NC-ME, categorias de dimensão com os novos limites de 2026 (DL 126-B/2025), demonstrações financeiras (Portaria 220/2015), regras fiscais de depreciação (DR 25/2009, CIRC 29.º a 34.º), tributação autónoma, regime simplificado da Categoria B (CIRS 28.º e 31.º), faturação com programa certificado, comunicação de faturas (dia 5), SAF-T (PT), IES até 15 de julho e conservação por 10 anos. Active perante \"contabilidade Portugal\", \"SNC\", \"código de contas\", \"microentidade\", \"NC-ME\", \"IES\", \"SAF-T(PT)\", \"contabilista certificado\", \"regime simplificado\", \"contabilidade organizada\". Trigger also on: \"Portuguese bookkeeping\", \"Portugal accounting\", \"SNC chart of accounts\", \"Portuguese GAAP\", \"SAF-T Portugal\". Fora de âmbito: cálculo do IRC (pt-corporate-tax), IRS (pt-income-tax), IVA (portugal-vat-return), Segurança Social (pt-social-contributions), demonstrações financeiras em detalhe (portugal-financial-statements), faturação eletrónica (portugal-einvoice)."
-version: 1.2
+description: "Utilize esta skill sempre que lhe forem colocadas questões sobre contabilidade portuguesa no ano de 2026, plano de contas SNC (Portaria 218/2015), normas NCRF, NCRF-PE e NC-ME, categorias de dimensão com os novos limites de 2026 (DL 126-B/2025), demonstrações financeiras (Portaria 220/2015), regras fiscais de depreciação (DR 25/2009, CIRC 29.º a 34.º), tributação autónoma, regime simplificado da Categoria B (CIRS 28.º e 31.º), faturação com programa certificado, comunicação de faturas (dia 5), SAF-T (PT), IES até 15 de julho e conservação por 10 anos. Active perante \"contabilidade Portugal\", \"SNC\", \"código de contas\", \"microentidade\", \"NC-ME\", \"IES\", \"SAF-T(PT)\", \"contabilista certificado\", \"regime simplificado\", \"contabilidade organizada\". Trigger also on, \"Portuguese bookkeeping\", \"Portugal accounting\", \"SNC chart of accounts\", \"Portuguese GAAP\", \"SAF-T Portugal\". Fora de âmbito, cálculo do IRC (pt-corporate-tax), IRS (pt-income-tax), IVA (portugal-vat-return), Segurança Social (pt-social-contributions), demonstrações financeiras em detalhe (portugal-financial-statements), faturação eletrónica (portugal-einvoice)."
+version: 2.0
 jurisdiction: PT
 tax_year: 2026
-last_updated: 2026-10-30
+last_updated: 2026-11-14
 depends_on:
   - bookkeeping-workflow-base
 category: bookkeeping
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: bookkeeping
+type: situation-rules
 ---
 
 # Portugal Bookkeeping
 
-## Secção 1: Referência Rápida
+## Scope
+
+This skill covers bookkeeping in Portugal for 2026: the SNC chart of accounts (Código de Contas, Portaria 218/2015), revenue recognition, expense classification and the IRC adjustments that follow from it (non-deductible costs, autonomous taxes, depreciation), the profit and loss and balance sheet models, bank reconciliation, the micro and small entity simplifications, SAF-T(PT), retention, and the link to the tax skills.
+
+Who is in: companies and other entities subject to the SNC, and self-employed people with organised accounts. Who is out: IFRS reporters, banks and insurers, public sector entities, and the self-employed in the simplified regime beyond its records (`pt-income-tax`). Annual accounts are in `portugal-financial-statements`; invoicing is in `portugal-einvoice`.
+
+### Quick reference
 
 **Referência Rápida** (ano de 2026)
 
 | Campo | Valor |
 | --- | --- |
-| País | Portugal (República Portuguesa) |
-| Moeda | EUR |
 | Período de tributação | Ano civil (CIRC art. 8.º, n.º 1). As pessoas coletivas podem adotar outro período anual, que coincida com o período de prestação de contas e se mantenha pelo menos 5 períodos (art. 8.º, n.º 2) |
 | Normas contabilísticas | SNC (Sistema de Normalização Contabilística, DL 158/2009): NCRF (28 normas), NCRF-PE (pequenas entidades), NC-ME (microentidades) |
 | Plano de contas padrão | Código de Contas (Portaria n.º 218/2015), de aplicação obrigatória para as entidades sujeitas ao SNC, para períodos iniciados em ou após 1 de janeiro de 2016 |
@@ -38,11 +43,48 @@ domain: bookkeeping
 | Atraso máximo na contabilidade | 90 dias, contados do último dia do mês a que as operações respeitam (CIRC art. 123.º, n.º 3) |
 | Período de conservação de documentos | 10 anos (DL 28/2019, art. 19.º, n.º 1; CIVA art. 52.º, n.º 1) |
 
-## Secção 2: Plano de Contas Padrão (Código de Contas SNC)
+## Ask the client first
+
+- Company, other entity, or self-employed person? If self-employed, simplified regime or organised accounts (and was gross income above EUR 200,000)?
+- Size category for the period (micro, small, medium, large) and the standard used (NC-ME, NCRF-PE, NCRF)?
+- Does the business own or lease passenger cars, and at what purchase cost?
+- Mainland, Azores or Madeira (VAT rates differ)?
+- Employees on payroll, and who is the contabilista certificado?
+
+## Rates, bands and thresholds
+
+Figures below were found on 2026-11-14 on the Portal das Finanças, the CNC, the Diário da República PDF of Decreto Regulamentar 25/2009 and the Segurança Social pages linked on each row. Tax rates are owned by `pt-corporate-tax`, `portugal-vat-return` and `pt-social-contributions`; they appear here because bookkeeping entries depend on them.
+
+| Item | Figure | Tax year | Source |
+| --- | --- | --- | --- |
+| Category B simplified regime: yearly gross income not above | EUR 200,000 | 2026 | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs28.aspx |
+| Maximum delay in organised accounts | 90 days from the end of the month | 2026 | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc123.aspx |
+| Retention of books and supporting documents | 10 years | 2026 | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/iva52.aspx |
+| IES deadline | 15 July | 2026 | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc121.aspx |
+| IRC general rate, periods starting in 2026 / SME rate on the first EUR 50,000 | 19% / 15% | 2026 | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc87.aspx |
+| Autonomous tax: representation expenses | 10% | 2026 | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc88.aspx |
+| Autonomous tax: car costs, purchase cost below EUR 37,500 / EUR 37,500 to below EUR 45,000 / EUR 45,000 or more | 8% / 25% / 32% | 2026 | same |
+| Autonomous tax: undocumented expenses | 50% (70% for exempt or non-commercial entities) | 2026 | same |
+| Depreciation: computers and software (DR 25/2009, codes 2240 and 2440) | 33.33% a year | 2026 | https://files.diariodarepublica.pt/1s/2009/09/17800/0627006285.pdf |
+| VAT rates, mainland: reduced / intermediate / standard | 6% / 13% / 23% | 2026 | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/iva18.aspx |
+| Social security, employees: employer / employee | 23.75% / 11% | 2026 | https://www.seg-social.pt/ptss/pssd/documento/cmc1xlxpq00d9kl2y0p3inyft |
+| Social security, self-employed: general / sole traders and EIRL holders | 21.4% / 25.2% | 2026 | https://www.seg-social.pt/ptss/pssd/documento/cmc1xyfxz00dekl2ynxz676sw |
+
+## The method, step by step
+
+
+1. **Set the regime.** Companies always keep organised accounts with a contabilista certificado; a self-employed person may stay in the simplified regime while gross income stays within EUR 200,000 (CIRS art. 28).
+2. **Use the Código de Contas** (Portaria 218/2015) and the size-category standard; keep entries no more than 90 days behind (CIRC art. 123(3)).
+3. **Book revenue and expenses** under the rules below, flagging non-deductible items and autonomous-tax items (CIRC arts 23-A and 88) for the Modelo 22.
+4. **Depreciate** fixed assets at the Decreto Regulamentar 25/2009 rates, straight line.
+5. **Reconcile** bank accounts monthly and send the monthly invoice data (SAF-T(PT) or real time) by the 5th (`portugal-einvoice`).
+6. **Close the year**: prepare the statements in the Portaria 220/2015 models, file the IES by 15 July, and keep everything for 10 years.
+
+### Plano de Contas Padrão (Código de Contas SNC)
 
 O Código de Contas da Portaria n.º 218/2015 é obrigatório para as entidades sujeitas ao SNC e está estruturado em 8 classes. As contas abaixo seguem a numeração e as designações da Portaria. Algumas contas não existem para as microentidades (ex.: 37 Ativos biológicos) e a Portaria assinala-o no Quadro Síntese.
 
-### Classe 1: Meios Financeiros Líquidos
+#### Classe 1: Meios Financeiros Líquidos
 
 **Classe 1: Meios Financeiros Líquidos**
 
@@ -53,7 +95,7 @@ O Código de Contas da Portaria n.º 218/2015 é obrigatório para as entidades 
 | 13 | Outros depósitos bancários | Outros depósitos bancários (a prazo) |
 | 14 | Outros instrumentos financeiros | Derivados, instrumentos detidos para negociação e outros ativos e passivos financeiros ("Outros" para as microentidades) |
 
-### Classe 2: Contas a Receber e a Pagar
+#### Classe 2: Contas a Receber e a Pagar
 
 **Classe 2: Contas a Receber e a Pagar**
 
@@ -100,7 +142,7 @@ O Código de Contas da Portaria n.º 218/2015 é obrigatório para as entidades 
 | 28 | Diferimentos | Gastos a reconhecer e rendimentos a reconhecer |
 | 29 | Provisões | Provisões |
 
-### Classe 3: Inventários e Ativos Biológicos
+#### Classe 3: Inventários e Ativos Biológicos
 
 **Classe 3: Inventários e Ativos Biológicos**
 
@@ -120,7 +162,7 @@ O Código de Contas da Portaria n.º 218/2015 é obrigatório para as entidades 
 | 38 | Reclassificação e regularização de inventários | Reclassificação e regularização |
 | 39 | Adiantamentos por conta de compras | Adiantamentos por conta de compras |
 
-### Classe 4: Investimentos (Ativos Fixos)
+#### Classe 4: Investimentos (Ativos Fixos)
 
 **Classe 4: Investimentos (Ativos Fixos)**
 
@@ -149,7 +191,7 @@ O Código de Contas da Portaria n.º 218/2015 é obrigatório para as entidades 
 | 45 | Investimentos em curso | Investimentos em curso |
 | 46 | Ativos não correntes detidos para venda | Ativos não correntes detidos para venda |
 
-### Classe 5: Capital, Reservas e Resultados Transitados
+#### Classe 5: Capital, Reservas e Resultados Transitados
 
 **Classe 5: Capital, Reservas e Resultados Transitados**
 
@@ -167,7 +209,7 @@ O Código de Contas da Portaria n.º 218/2015 é obrigatório para as entidades 
 | 58 | Excedentes de revalorização de ativos fixos tangíveis e intangíveis | Excedentes de revalorização |
 | 59 | Outras variações no capital próprio | Outras variações no capital próprio |
 
-### Classe 6: Gastos
+#### Classe 6: Gastos
 
 **Classe 6: Gastos**
 
@@ -237,7 +279,7 @@ O Código de Contas da Portaria n.º 218/2015 é obrigatório para as entidades 
 | 692 | Diferenças de câmbio desfavoráveis | Diferenças de câmbio desfavoráveis |
 | 698 | Outros gastos de financiamento | Outros gastos de financiamento (ex.: comissões de financiamento) |
 
-### Classe 7: Rendimentos
+#### Classe 7: Rendimentos
 
 **Classe 7: Rendimentos**
 
@@ -260,7 +302,7 @@ O Código de Contas da Portaria n.º 218/2015 é obrigatório para as entidades 
 | 788 | Outros | Outros rendimentos |
 | 79 | Juros, dividendos e outros rendimentos similares | Juros obtidos, dividendos e rendimentos similares |
 
-### Classe 8: Resultados
+#### Classe 8: Resultados
 
 **Classe 8: Resultados**
 
@@ -274,9 +316,9 @@ O Código de Contas da Portaria n.º 218/2015 é obrigatório para as entidades 
 | 818 | Resultado líquido | Resultado líquido |
 | 89 | Dividendos antecipados | Dividendos antecipados |
 
-## Secção 3: Reconhecimento do Rédito
+### Reconhecimento do Rédito
 
-### Base de Caixa vs Base de Acréscimo
+#### Base de Caixa vs Base de Acréscimo
 
 **Base de Caixa vs Base de Acréscimo**
 
@@ -287,14 +329,14 @@ O Código de Contas da Portaria n.º 218/2015 é obrigatório para as entidades 
 | Pessoas singulares com atividade comercial, industrial ou agrícola e volume de negócios médio dos últimos 3 anos até 200.000 EUR | Fora do SNC | Dispensadas do SNC (DL 158/2009, art. 10.º, n.º 1). Deixam de estar dispensadas no período seguinte àquele em que o limite é ultrapassado (art. 10.º, n.º 5) |
 | Trabalhadores independentes (Categoria B do IRS) | Regime simplificado ou contabilidade organizada | O regime simplificado aplica coeficientes aos rendimentos; a contabilidade organizada segue o acréscimo |
 
-### Regras-Chave
+#### Regras-Chave
 
 - **Rédito da venda de bens**: Reconhecido quando, entre outras condições, a entidade transferiu para o comprador os riscos e vantagens significativos da propriedade dos bens (NCRF 20, § 14; NC-ME 12.4). Para efeitos fiscais, considera-se em geral realizado na data da entrega ou expedição ou, se anterior, na da transferência de propriedade (CIRC art. 18.º, n.º 3, al. a)).
 - **Rédito de prestação de serviços**: Pela fase de acabamento quando o desfecho pode ser estimado com fiabilidade; caso contrário, só até ao limite dos gastos recuperáveis (NC-ME 12.6). Fiscalmente, na data de conclusão do serviço, exceto serviços continuados ou com mais de um ato, que são imputados proporcionalmente à execução (CIRC art. 18.º, n.º 3, al. b)).
 - **NC-ME (microentidades)**: Aplica as mesmas condições de reconhecimento: bens quando os riscos e vantagens passam ao comprador; serviços pela fase de acabamento (NC-ME 12.4 a 12.6).
 - **IVA e prazo da fatura**: O imposto torna-se exigível nos termos do art. 7.º do CIVA. A fatura deve ser emitida o mais tardar no 5.º dia útil seguinte ao momento em que o imposto é devido (CIVA art. 36.º, n.º 1, al. a)), ou na data do recebimento, em caso de pagamento antecipado (al. c)).
 
-### Regime Simplificado para Trabalhadores Independentes (Categoria B do IRS)
+#### Regime Simplificado para Trabalhadores Independentes (Categoria B do IRS)
 
 - **Limite do regime simplificado**: 200.000 EUR de rendimentos da categoria B no período de tributação anterior  _(artigo 28.º, n.º 2, do CIRS)_
 - **Coeficiente 0,75**: Rendimentos das atividades profissionais da tabela do artigo 151.º do CIRS  _(artigo 31.º, n.º 1, al. b), do CIRS)_
@@ -309,9 +351,9 @@ O Código de Contas da Portaria n.º 218/2015 é obrigatório para as entidades 
 
 Para titulares do regime de Residente Não Habitual (RNH) ou do Incentivo Fiscal à Investigação Científica e Inovação (IFICI), consulte a skill pt-nhr-ifici para o tratamento específico desses regimes. Para o cálculo do IRS da categoria B, consulte a skill pt-income-tax.
 
-## Secção 4: Classificação de Gastos
+### Classificação de Gastos
 
-### Gastos Dedutíveis (IRC)
+#### Gastos Dedutíveis (IRC)
 
 Um gasto é dedutível quando é suportado para obter ou garantir os rendimentos sujeitos a IRC e está documentado; as exceções estão no art. 23.º-A do CIRC.
 
@@ -332,7 +374,7 @@ Um gasto é dedutível quando é suportado para obter ou garantir os rendimentos
 | Subscrições de software | 6221 | Dedutível |
 | Conservação e reparação | 6226 | Dedutível |
 
-### Gastos Parcial ou Totalmente Não Dedutíveis
+#### Gastos Parcial ou Totalmente Não Dedutíveis
 
 **Gastos Parcial ou Totalmente Não Dedutíveis** (CIRC art. 23.º-A, n.º 1)
 
@@ -346,7 +388,7 @@ Um gasto é dedutível quando é suportado para obter ou garantir os rendimentos
 | Pagamentos a entidades em regime fiscal claramente mais favorável | Não dedutíveis, salvo prova de que as operações foram efetivamente realizadas e não têm caráter anormal nem montante exagerado (al. r)) |
 | Despesas de representação e encargos com viaturas | Dedutíveis, mas sujeitos a tributação autónoma (art. 88.º) |
 
-### Tributação Autónoma
+#### Tributação Autónoma
 
 Tributação adicional incidente sobre determinados gastos, devida ainda que a empresa não tenha lucro tributável (CIRC art. 88.º). Taxas de 2026, alinhadas com a skill pt-corporate-tax:
 
@@ -367,9 +409,9 @@ Tributação adicional incidente sobre determinados gastos, devida ainda que a e
 
 Os encargos com viaturas incluem depreciações, rendas ou alugueres, seguros, manutenção e conservação, combustíveis e impostos sobre a posse ou utilização (art. 88.º, n.º 5). As taxas dos n.os 7, 9, 11 e 13 e o agravamento não se aplicam a sujeitos passivos no regime simplificado do IRC (art. 88.º, n.º 16).
 
-## Secção 5: Limiares Ativo vs Gasto
+### Limiares Ativo vs Gasto
 
-### Regras de Capitalização
+#### Regras de Capitalização
 
 **Regras de Capitalização**
 
@@ -379,7 +421,7 @@ Os encargos com viaturas incluem depreciações, rendas ou alugueres, seguros, m
 | Elementos de reduzido valor | Ativos com custo unitário até 1.000 EUR podem ser totalmente depreciados num só período de tributação, salvo se fizerem parte de um conjunto que deva ser depreciado como um todo; constam do mapa de depreciações numa linha própria (DR 25/2009, art. 19.º) |
 | Dispêndio subsequente | Componentes, grandes reparações e beneficiações reconhecidos como ativo são depreciáveis (CIRC art. 29.º, n.º 5); a sua taxa calcula-se pela vida útil esperada (art. 31.º, n.º 6) |
 
-### Taxas de Depreciação (Decreto Regulamentar n.º 25/2009: Tabela II, taxas genéricas)
+#### Taxas de Depreciação (Decreto Regulamentar n.º 25/2009: Tabela II, taxas genéricas)
 
 **Taxas de Depreciação (Decreto Regulamentar n.º 25/2009: Tabela II)**  _(DR 25/2009, Tabela II, texto original no Diário da República; única alteração às tabelas: código 2250, Lei 82-D/2014)_
 
@@ -404,7 +446,7 @@ As taxas da Tabela I (por setor de atividade) prevalecem para o equipamento espe
 
 Limites ao custo de viaturas ligeiras de passageiros para efeitos de depreciação (Portaria 467/2010, art. 1.º, n.º 4): 62.500 EUR (elétricas), 50.000 EUR (híbridas plug-in), 37.500 EUR (GPL ou GNV), 25.000 EUR (restantes). A parte do custo acima do limite não é depreciável fiscalmente (CIRC art. 34.º, n.º 1, al. e)).
 
-### Regras-Chave
+#### Regras-Chave
 
 - **Método regra**: Linha reta (CIRC art. 30.º, n.º 1). As quotas decrescentes podem ser usadas em ativos fixos tangíveis não adquiridos em estado de uso e que não sejam edifícios, viaturas ligeiras de passageiros ou mistas (salvo serviço público de transportes ou aluguer), mobiliário e equipamentos sociais (art. 30.º, n.º 2). Na NC-ME o método contabilístico é sempre a linha reta (NC-ME 7.14)
 - **Coeficientes das quotas decrescentes**: 1,5 (vida útil inferior a 5 anos), 2 (5 ou 6 anos), 2,5 (mais de 6 anos) (CIRC art. 31.º, n.º 4)
@@ -414,11 +456,11 @@ Limites ao custo de viaturas ligeiras de passageiros para efeitos de depreciaç�
 - **Terrenos não depreciáveis**: Não é aceite a depreciação de imóveis na parte do valor do terreno (CIRC art. 34.º, n.º 1, al. b))
 - **Vida útil máxima**: Não se aceitam depreciações para além do período máximo de vida útil, que resulta das quotas mínimas (CIRC art. 34.º, n.º 1, al. d), e n.º 2)
 
-## Secção 6: Modelo da Demonstração de Resultados (por Naturezas)
+### Modelo da Demonstração de Resultados (por Naturezas)
 
 As entidades sujeitas ao SNC apresentam a demonstração dos resultados por naturezas; a demonstração por funções é facultativa (DL 158/2009, art. 11.º, n.os 1 e 2). Linhas do modelo reduzido da Portaria 220/2015 (as subtotais "EBITDA" e "EBIT" correspondem às linhas oficiais indicadas):
 
-### Por Naturezas (modelo padrão para todas as entidades sujeitas ao SNC)
+#### Por Naturezas (modelo padrão para todas as entidades sujeitas ao SNC)
 
 **Modelo Demonstração de Resultados por Naturezas**
 
@@ -456,11 +498,11 @@ Imposto sobre o rendimento do período                          -/+xxx
 Resultado líquido do período                                     xxx
 ```
 
-## Secção 7: Modelo do Balanço
+### Modelo do Balanço
 
 Portugal utiliza o formato vertical com classificação corrente/não corrente (Portaria 220/2015). Linhas principais do modelo:
 
-### Modelo
+#### Modelo
 
 **Modelo do Balanço**
 
@@ -539,13 +581,13 @@ TOTAL DO CAPITAL PRÓPRIO E PASSIVO                            xxx
                                                            =======
 ```
 
-## Secção 8: Padrões de Reconciliação Bancária
+### Padrões de Reconciliação Bancária
 
-### Extratos bancários
+#### Extratos bancários
 
 Os bancos portugueses (Millennium BCP, Caixa Geral de Depósitos, Novo Banco, Santander, BPI, ActivoBank e outros) disponibilizam extratos exportáveis. O formato e os campos variam por banco e por canal: confirme com o cliente o ficheiro que o seu banco entrega (CSV, OFX ou PDF) antes de importar.
 
-### Descrições Habituais de Movimentos
+#### Descrições Habituais de Movimentos
 
 **Descrições Habituais de Movimentos** (padrões práticos, não normas)
 
@@ -562,9 +604,9 @@ Os bancos portugueses (Millennium BCP, Caixa Geral de Depósitos, Novo Banco, Sa
 | COMISSAO, DESPESA | Despesas bancárias |
 | IMPOSTO SELO | Imposto do selo (sobre operações bancárias, conta 681) |
 
-## Secção 9: Simplificações para Microentidades e Pequenos Negócios
+### Simplificações para Microentidades e Pequenos Negócios
 
-### Categorias de Dimensão (períodos iniciados em ou após 1 de janeiro de 2026)
+#### Categorias de Dimensão (períodos iniciados em ou após 1 de janeiro de 2026)
 
 O DL 126-B/2025 alterou o art. 9.º do DL 158/2009 e aplica-se às demonstrações financeiras dos exercícios iniciados em ou após 1 de janeiro de 2026. Os limites de número de empregados não mudaram.
 
@@ -580,7 +622,7 @@ O DL 126-B/2025 alterou o art. 9.º do DL 158/2009 e aplica-se às demonstraçõ
 - **Regra dos 2 de 3 critérios**: Cada categoria abrange as entidades que, à data do balanço, não ultrapassem dois dos três limites (DL 158/2009, art. 9.º). Os limites reportam-se ao período imediatamente anterior; a entidade só sai da categoria quando ultrapassa dois dos três limites em dois períodos consecutivos, a partir do terceiro período, e regressa quando deixa de os ultrapassar em dois períodos consecutivos (art. 9.º-A).
 - **Grupos**: Pequenos grupos: balanço 7.500.000 EUR, volume de negócios 15.000.000 EUR, 50 empregados; grupos médios: 25.000.000 EUR, 50.000.000 EUR, 250 empregados (art. 9.º-B, na redação do DL 126-B/2025).
 
-### Normas Aplicáveis
+#### Normas Aplicáveis
 
 **Normas Aplicáveis**
 
@@ -590,7 +632,7 @@ O DL 126-B/2025 alterou o art. 9.º do DL 158/2009 e aplica-se às demonstraçõ
 | Pequena entidade | NCRF-PE (por opção, em alternativa às NCRF; art. 9.º-C) | Dispensa da demonstração dos fluxos de caixa e da demonstração das alterações no capital próprio; modelos reduzidos (art. 11.º, n.º 3) |
 | Média/Grande | NCRF completas (NCRF 1 a 28) | Balanço, demonstração dos resultados por naturezas, demonstração das alterações no capital próprio, demonstração dos fluxos de caixa e anexo (art. 11.º, n.º 1) |
 
-### Simplificações NC-ME (Microentidades)
+#### Simplificações NC-ME (Microentidades)
 
 - **Demonstrações financeiras**: Balanço e demonstração dos resultados (modelos reduzidos); sem demonstração dos fluxos de caixa nem das alterações no capital próprio (DL 158/2009, art. 11.º, n.º 3)
 - **Anexo**: A microentidade fica dispensada do anexo se divulgar, no fim do balanço, os compromissos e garantias fora do balanço, os adiantamentos e créditos a membros dos órgãos sociais e as demais informações do art. 11.º, n.º 4
@@ -598,7 +640,7 @@ O DL 126-B/2025 alterou o art. 9.º do DL 158/2009 e aplica-se às demonstraçõ
 - **Impostos sobre o rendimento**: Método do imposto a pagar, sem impostos diferidos; inclui as tributações autónomas (NC-ME 16.1 e 16.2)
 - **Locações**: A NC-ME distingue locações financeiras e operacionais. O locatário reconhece a locação financeira como ativo e passivo (NC-ME 9.5); as rendas de locações operacionais são gasto em linha reta durante o prazo (NC-ME 9.8)
 
-### Empresário em Nome Individual (Trabalhador Independente)
+#### Empresário em Nome Individual (Trabalhador Independente)
 
 - **Dispensa do SNC**: Pessoas singulares com atividade comercial, industrial ou agrícola cujo volume de negócios médio dos últimos três anos não exceda 200.000 EUR (DL 158/2009, art. 10.º, n.º 1)
 - **Regime simplificado**: Até 200.000 EUR de rendimentos da categoria B no ano anterior (CIRS art. 28.º, n.º 2); tributação pela aplicação dos coeficientes do art. 31.º; sem contabilidade organizada, apenas os registos do art. 116.º do CIRS
@@ -607,9 +649,9 @@ O DL 126-B/2025 alterou o art. 9.º do DL 158/2009 e aplica-se às demonstraçõ
 
 Para o tratamento do regime de Residente Não Habitual (RNH) e do Incentivo Fiscal à Investigação Científica e Inovação (IFICI), consulte a skill pt-nhr-ifici.
 
-## Secção 10: Articulação com Skills Fiscais
+### Articulação com Skills Fiscais
 
-### Imposto sobre o Rendimento das Pessoas Coletivas (IRC)
+#### Imposto sobre o Rendimento das Pessoas Coletivas (IRC)
 
 - **IES integra dados contabilísticos e fiscais**: A IES cumpre num só envio a declaração anual de informação contabilística e fiscal, o registo da prestação de contas, a informação estatística ao INE, ao Banco de Portugal e à DGAE e a confirmação do beneficiário efetivo (Portaria 191/2025/1, preâmbulo; DL 8/2007, art. 2.º). Entrega até 15 de julho (CIRC art. 121.º, n.º 2); se o período não for o ano civil, até ao dia 15 do 7.º mês após o fim do período (n.º 3)
 - **Modelo 22**: Até ao último dia de maio (CIRC art. 120.º, n.º 1); período diferente do ano civil: até ao último dia do 5.º mês após o fim do período (n.º 2)
@@ -620,7 +662,7 @@ Para o tratamento do regime de Residente Não Habitual (RNH) e do Incentivo Fisc
 
 Utilize a skill pt-corporate-tax para o apuramento do IRC e a skill pt-income-tax para o IRS da categoria B.
 
-### IVA
+#### IVA
 
 - **Contas do IVA**: Conta 243 do Código de Contas, subcontas 2431 a 2439
 - **Periodicidade mensal vs trimestral**: Declaração mensal se o volume de negócios do ano civil anterior for igual ou superior a 650.000 EUR; trimestral se inferior; entrega até ao dia 20 do 2.º mês seguinte ao período (CIVA art. 41.º, n.º 1)
@@ -631,7 +673,7 @@ Utilize a skill pt-corporate-tax para o apuramento do IRC e a skill pt-income-ta
 
 Utilize a skill portugal-vat-return para detalhes da submissão.
 
-### Faturação, comunicação de faturas e SAF-T (PT)
+#### Faturação, comunicação de faturas e SAF-T (PT)
 
 - **Programa de faturação certificado**: Os sujeitos passivos com sede, estabelecimento estável ou domicílio em Portugal são obrigados a usar exclusivamente programas certificados pela AT quando se verifique qualquer uma destas três condições: a) volume de negócios superior a 50.000 EUR no ano civil anterior (no ano de início de atividade com período inferior ao ano civil, o volume de negócios anualizado); b) utilizem programas informáticos de faturação; c) estejam obrigados a ter contabilidade organizada ou tenham optado por ela (DL 28/2019, art. 4.º, n.º 1). Se o programa estiver inoperacional, emitem documentos pré-impressos em tipografia autorizada e recuperam-nos depois para o programa (art. 4.º, n.º 4). Desde 1 de julho de 2025 qualquer sujeito passivo pode, em alternativa, usar as aplicações de faturação da AT, e quem pratique uma só operação tributável tem de as usar (art. 4.º-A, n.os 1 e 2, aditado pelo DL 49/2025). Fora destes casos, a fatura pode ser processada em documentos pré-impressos em tipografia autorizada (art. 3.º); outros meios eletrónicos, como máquinas registadoras, só servem para faturas simplificadas do art. 40.º do CIVA (art. 4.º, n.º 5)
 - **Comunicação dos elementos das faturas (e-fatura)**: Até ao dia 5 do mês seguinte ao da emissão, em tempo real, por ficheiro SAF-T (PT) ou por inserção no Portal das Finanças (DL 198/2012, art. 3.º, n.os 1 e 2). Quem está obrigado a produzir o SAF-T (PT) usa o envio em tempo real ou o ficheiro (art. 3.º, n.º 3)
@@ -640,7 +682,7 @@ Utilize a skill portugal-vat-return para detalhes da submissão.
 - **Faturas em PDF**: Até 31 de dezembro de 2026 as faturas em PDF são aceites como faturas eletrónicas para todos os efeitos fiscais (Lei 73-A/2025, art. 95.º, n.º 3). Ver portugal-einvoice
 - **Capacidade de exportação**: As entidades com contabilidade organizada devem conseguir exportar ficheiros no formato definido por portaria (CIRC art. 123.º, n.º 8)
 
-### Segurança Social
+#### Segurança Social
 
 - **Contribuição da entidade empregadora**: 23,75 % da remuneração ilíquida, no regime geral (Código Contributivo, art. 53.º; ISS, Guia Prático de Inscrição, Vinculação e Cessação de Atividade de Trabalhador por Conta de Outrem; ver pt-social-contributions)
 - **Contribuição do trabalhador**: 11 % da remuneração ilíquida (idem)
@@ -649,57 +691,108 @@ Utilize a skill portugal-vat-return para detalhes da submissão.
 
 Utilize a skill pt-social-contributions para detalhes.
 
-### Conservação de Documentos
+#### Conservação de Documentos
 
 - **Período de conservação obrigatório**: 10 anos para todos os livros, registos e documentos de suporte, salvo prazo especial; se o sujeito passivo exercer um direito com prazo mais longo, conserva até ao fim do prazo de caducidade da liquidação respetiva  _(DL 28/2019, art. 19.º, n.os 1 e 2; CIVA art. 52.º, n.º 1)_. O antigo n.º 4 do art. 123.º do CIRC foi revogado pelo DL 28/2019
 - **Âmbito de aplicação**: Livros, registos, faturas e documentos de suporte, incluindo a documentação da análise, programação e execução dos tratamentos informáticos e as cópias de segurança dos programas de faturação e contabilidade (DL 28/2019, art. 19.º, n.º 4)
 - **Conservação eletrónica**: Admitida, com armazenamento seguro, controlos de integridade e acesso e legibilidade pela AT (DL 28/2019, art. 19.º, n.º 3)
 - **Local do arquivo**: Em papel: em estabelecimento em Portugal; em suporte eletrónico: em qualquer Estado-membro da UE; fora da UE só com autorização prévia da AT (DL 28/2019, art. 20.º, n.os 1 e 2). O local do arquivo indica-se na declaração de início de atividade (art. 20.º, n.º 5)
 
+## Worked cases
+
+### Case 1 (decision): simplified regime or organised accounts for a self-employed consultant?
+
+Facts. Joana, a self-employed consultant, had gross category B income of EUR 180,000 in 2025 and expects about the same in 2026.
+
+Working. She is EUR 20,000 below the EUR 200,000 limit, so she may stay in the simplified regime (keeping only the category B records of CIRS arts 116 and 117) or opt for organised accounts. If income passes EUR 200,000 in two consecutive years, or by more than 25% in one year (above EUR 250,000), organised accounts become compulsory.
+
+```oa-check
+name: Portugal 2026, simplified regime limit for a self-employed consultant
+inputs:
+  income: 180000
+  limit: 200000
+steps:
+  - headroom: limit - income
+  - one_year_trigger: limit * 1.25
+expected:
+  headroom: 20000.00
+  one_year_trigger: 250000.00
+```
+
+### Case 2: autonomous tax on a company car and representation expenses
+
+Facts. Alfa, Lda owns a petrol passenger car bought for EUR 40,000. In 2026 it books EUR 6,000 of costs for the car (depreciation, fuel, insurance) and EUR 2,000 of representation expenses.
+
+Working. A car costing EUR 37,500 to below EUR 45,000 carries 25% autonomous tax on its costs: EUR 1,500. Representation expenses carry 10%: EUR 200. Total autonomous tax EUR 1,700, booked as tax expense and declared in the Modelo 22.
+
+```oa-check
+name: Portugal 2026, autonomous tax on car costs and representation
+inputs:
+  car_costs: 6000
+  representation: 2000
+steps:
+  - car_at: car_costs * 0.25
+  - rep_at: representation * 0.10
+  - total_at: car_at + rep_at
+expected:
+  car_at: 1500.00
+  rep_at: 200.00
+  total_at: 1700.00
+```
+
+## When to refuse or refer
+
+- IFRS, consolidated accounts, banks, insurers, public sector (SNC-AP), non-profit entities (ESNL): refer.
+- Tax audits, missing books or accounts more than 90 days late: refer to a contabilista certificado.
+- Transfer pricing, group restructurings, deferred tax beyond the basics: refer (`pt-corporate-tax`).
+- Azores and Madeira regional rules beyond the VAT rates: refer.
+
 ## Sources
+
+Rows dated 2026-11-14 were opened that day and the figures this skill takes from them were found in the text. The Diário da República detail page for Lei 73-A/2025 serves only a script shell, so it keeps its earlier date; the same article was read in the AT copy.
 
 | Source | URL | Read on |
 |---|---|---|
-| DL 158/2009 (SNC), republicado pelo DL 98/2015: arts. 9.º a 11.º (categorias, NC-ME, NCRF-PE, dispensa, demonstrações financeiras) | https://www.cnc.min-financas.pt/pdf/SNC/2016/DL_98_2015_2_jun.pdf | 2026-10-30 |
-| DL 126-B/2025: novos limites de dimensão a partir de 2026 (arts. 9.º e 9.º-B do DL 158/2009) | https://www.cnc.min-financas.pt/pdf/SNC/DL126_B_2025_05Dez.pdf | 2026-10-30 |
-| Portaria 218/2015, Código de Contas SNC | https://www.cnc.min-financas.pt/pdf/SNC/2016/Portaria_218_2015_23Jul_CContas.pdf | 2026-10-30 |
-| Portaria 220/2015, modelos de demonstrações financeiras | https://www.cnc.min-financas.pt/pdf/SNC/2016/Portaria_220_2015_24Jul_DF.pdf | 2026-10-30 |
-| Aviso 8255/2015, NC-ME | https://www.cnc.min-financas.pt/pdf/SNC/2016/Aviso_8255_2015_29Jul_NC_ME.pdf | 2026-10-30 |
-| Aviso 8256/2015, NCRF (NCRF 20 Rédito) | https://www.cnc.min-financas.pt/pdf/SNC/2016/Aviso_8256_2015_29Jul_NCRF_RG.pdf | 2026-10-30 |
-| CIRC art. 8.º, período de tributação | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc8.aspx | 2026-10-30 |
-| CIRC art. 18.º, periodização | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc18.aspx | 2026-10-30 |
-| CIRC art. 23.º-A, encargos não dedutíveis | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc23a.aspx | 2026-10-30 |
-| CIRC arts. 29.º, 30.º, 31.º, 31.º-A, depreciações | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc31a.aspx | 2026-10-30 |
-| CIRC art. 34.º, depreciações não dedutíveis | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc34.aspx | 2026-10-30 |
-| CIRC art. 45.º-A, goodwill em 15 períodos (Lei 82/2023) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc45a.aspx | 2026-10-30 |
-| CIRC art. 87.º, taxas de IRC 2026 (Lei 64/2025) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc87.aspx | 2026-10-30 |
-| CIRC art. 87.º-A, derrama estadual acima de 1.500.000 EUR | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc87a.aspx | 2026-10-30 |
-| CIRC art. 88.º, tributação autónoma | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc88.aspx | 2026-10-30 |
-| CIRC arts. 120.º e 121.º, Modelo 22 e IES | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc121.aspx | 2026-10-30 |
-| CIRC art. 123.º, obrigações contabilísticas | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc123.aspx | 2026-10-30 |
-| CIRS art. 28.º, regime simplificado e opção | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs28.aspx | 2026-10-30 |
-| CIRS art. 31.º, coeficientes | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs31.aspx | 2026-10-30 |
-| CIRS arts. 116.º e 117.º, registos da categoria B | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs116.aspx | 2026-10-30 |
-| CIVA art. 18.º, taxas | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/iva18.aspx | 2026-10-30 |
-| CIVA art. 36.º, prazo de emissão das faturas | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/iva36.aspx | 2026-10-30 |
-| CIVA art. 41.º, periodicidade (650.000 EUR) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/iva41.aspx | 2026-10-30 |
-| CIVA art. 52.º, conservação por 10 anos (DL 49/2025) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/iva52.aspx | 2026-10-30 |
-| DL 28/2019 (versão consolidada AT): arts. 3.º, 4.º, 19.º e 20.º | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Decreto_Lei_28_2019.pdf | 2026-10-30 |
-| DL 198/2012 (versão consolidada AT): arts. 3.º e 3.º-A | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Decreto-Lei%20n%20_198_2012_24_08.pdf | 2026-10-30 |
-| Lei 73-A/2025 (OE 2026), art. 95.º (SAF-T contabilidade, inventários, faturas PDF) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Lei-73-A-2025.pdf | 2026-10-30 |
+| DL 158/2009 (SNC), republicado pelo DL 98/2015: arts. 9.º a 11.º (categorias, NC-ME, NCRF-PE, dispensa, demonstrações financeiras) | https://www.cnc.min-financas.pt/pdf/SNC/2016/DL_98_2015_2_jun.pdf | 2026-11-14 |
+| DL 126-B/2025: novos limites de dimensão a partir de 2026 (arts. 9.º e 9.º-B do DL 158/2009) | https://www.cnc.min-financas.pt/pdf/SNC/DL126_B_2025_05Dez.pdf | 2026-11-14 |
+| Portaria 218/2015, Código de Contas SNC | https://www.cnc.min-financas.pt/pdf/SNC/2016/Portaria_218_2015_23Jul_CContas.pdf | 2026-11-14 |
+| Portaria 220/2015, modelos de demonstrações financeiras | https://www.cnc.min-financas.pt/pdf/SNC/2016/Portaria_220_2015_24Jul_DF.pdf | 2026-11-14 |
+| Aviso 8255/2015, NC-ME | https://www.cnc.min-financas.pt/pdf/SNC/2016/Aviso_8255_2015_29Jul_NC_ME.pdf | 2026-11-14 |
+| Aviso 8256/2015, NCRF (NCRF 20 Rédito) | https://www.cnc.min-financas.pt/pdf/SNC/2016/Aviso_8256_2015_29Jul_NCRF_RG.pdf | 2026-11-14 |
+| CIRC art. 8.º, período de tributação | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc8.aspx | 2026-11-14 |
+| CIRC art. 18.º, periodização | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc18.aspx | 2026-11-14 |
+| CIRC art. 23.º-A, encargos não dedutíveis | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc23a.aspx | 2026-11-14 |
+| CIRC arts. 29.º, 30.º, 31.º, 31.º-A, depreciações | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc31a.aspx | 2026-11-14 |
+| CIRC art. 34.º, depreciações não dedutíveis | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc34.aspx | 2026-11-14 |
+| CIRC art. 45.º-A, goodwill em 15 períodos (Lei 82/2023) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc45a.aspx | 2026-11-14 |
+| CIRC art. 87.º, taxas de IRC 2026 (Lei 64/2025) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc87.aspx | 2026-11-14 |
+| CIRC art. 87.º-A, derrama estadual acima de 1.500.000 EUR | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc87a.aspx | 2026-11-14 |
+| CIRC art. 88.º, tributação autónoma | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc88.aspx | 2026-11-14 |
+| CIRC arts. 120.º e 121.º, Modelo 22 e IES | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc121.aspx | 2026-11-14 |
+| CIRC art. 123.º, obrigações contabilísticas | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc123.aspx | 2026-11-14 |
+| CIRS art. 28.º, regime simplificado e opção | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs28.aspx | 2026-11-14 |
+| CIRS art. 31.º, coeficientes | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs31.aspx | 2026-11-14 |
+| CIRS arts. 116.º e 117.º, registos da categoria B | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs116.aspx | 2026-11-14 |
+| CIVA art. 18.º, taxas | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/iva18.aspx | 2026-11-14 |
+| CIVA art. 36.º, prazo de emissão das faturas | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/iva36.aspx | 2026-11-14 |
+| CIVA art. 41.º, periodicidade (650.000 EUR) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/iva41.aspx | 2026-11-14 |
+| CIVA art. 52.º, conservação por 10 anos (DL 49/2025) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/iva52.aspx | 2026-11-14 |
+| DL 28/2019 (versão consolidada AT): arts. 3.º, 4.º, 19.º e 20.º | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Decreto_Lei_28_2019.pdf | 2026-11-14 |
+| DL 198/2012 (versão consolidada AT): arts. 3.º e 3.º-A | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Decreto-Lei%20n%20_198_2012_24_08.pdf | 2026-11-14 |
+| Lei 73-A/2025 (OE 2026), art. 95.º (SAF-T contabilidade, inventários, faturas PDF) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Lei-73-A-2025.pdf | 2026-11-14 |
 | Lei 73-A/2025, Diário da República, art. 95.º, n.º 2 (SAF-T da contabilidade: períodos de 2027, entrega em 2028) | https://diariodarepublica.pt/dr/detalhe/lei/73-a-2025-993270096 | 2026-10-30 |
-| Portaria 191/2025/1, IES/DA | https://files.diariodarepublica.pt/1s/2025/04/07500/0005800061.pdf | 2026-10-30 |
-| Decreto Regulamentar 25/2009, texto original (Tabela II) | https://files.diariodarepublica.pt/1s/2009/09/17800/0627006285.pdf | 2026-10-30 |
-| Decreto Regulamentar 25/2009, versão AT (art. 19.º, elementos de reduzido valor) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/outros_diplomas/Documents/Dec_Regulamentar25_2009.pdf | 2026-10-30 |
-| Portaria 467/2010, limites de custo das viaturas | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Portaria_467-2010.pdf | 2026-10-30 |
-| Estatuto da Ordem dos Contabilistas Certificados (texto da OCC, 2024), art. 10.º | https://www.occ.pt/sites/default/files/public/2024-09/Estatuto_2024.pdf | 2026-10-30 |
-| Segurança Social, Guia Prático, Trabalhadores Independentes (21,4 %, 25,2 %, 70 %/20 %) | https://www.seg-social.pt/ptss/pssd/documento/cmc1xyfxz00dekl2ynxz676sw | 2026-10-30 |
-| Segurança Social, Guia Prático, Inscrição, Vinculação e Cessação de Atividade de Trabalhador por Conta de Outrem (19 May 2026: 23,75 % / 11 %) | https://www.seg-social.pt/ptss/pssd/documento/cmc1xlxpq00d9kl2y0p3inyft | 2026-10-30 |
-| AT, Ofício Circulado 25045/2024 (taxas do IVA nos Açores e na Madeira) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/instrucoes_administrativas/Documents/Oficio_circulado_25045_2024.pdf | 2026-10-30 |
+| Portaria 191/2025/1, IES/DA | https://files.diariodarepublica.pt/1s/2025/04/07500/0005800061.pdf | 2026-11-14 |
+| Decreto Regulamentar 25/2009, texto original (Tabela II) | https://files.diariodarepublica.pt/1s/2009/09/17800/0627006285.pdf | 2026-11-14 |
+| Decreto Regulamentar 25/2009, versão AT (art. 19.º, elementos de reduzido valor) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/outros_diplomas/Documents/Dec_Regulamentar25_2009.pdf | 2026-11-14 |
+| Portaria 467/2010, limites de custo das viaturas | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Portaria_467-2010.pdf | 2026-11-14 |
+| Estatuto da Ordem dos Contabilistas Certificados (texto da OCC, 2024), art. 10.º | https://www.occ.pt/sites/default/files/public/2024-09/Estatuto_2024.pdf | 2026-11-14 |
+| Segurança Social, Guia Prático, Trabalhadores Independentes (21,4 %, 25,2 %, 70 %/20 %) | https://www.seg-social.pt/ptss/pssd/documento/cmc1xyfxz00dekl2ynxz676sw | 2026-11-14 |
+| Segurança Social, Guia Prático, Inscrição, Vinculação e Cessação de Atividade de Trabalhador por Conta de Outrem (19 May 2026: 23,75 % / 11 %) | https://www.seg-social.pt/ptss/pssd/documento/cmc1xlxpq00d9kl2y0p3inyft | 2026-11-14 |
+| AT, Ofício Circulado 25045/2024 (taxas do IVA nos Açores e na Madeira) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/instrucoes_administrativas/Documents/Oficio_circulado_25045_2024.pdf | 2026-11-14 |
 
 Not yet confirmed: the 2027 State Budget proposal (Proposta de Lei 110/XVII/2.ª, not yet law) would move the accounting SAF-T to 2028 periods, delivered in 2029, and accept PDF invoices until 31 December 2027, so check the enacted 2027 budget before 1 January 2027; whether the Azores 2026 regional budget changed the Azores VAT rates (the AT circular is dated 6 December 2024; the Azores budget was not read); the CAE revision now in force (the old version said Rev. 3; DL 28/2019 still cites Rev. 3); the old "anexo NC-ME com máximo de 15 rubricas" claim (no such limit found in the NC-ME or DL 158/2009, art. 11.º); account 6811 label (blank in the Portaria text extracted); the tax treatment of goodwill recognised before 2024 (the old version said 20 years / 5%; the earlier wording of CIRC art. 45.º-A was not read); the bank-by-bank statement export formats (CSV/OFX per bank) from the old version, which have no official source.
 
-## Aviso Legal
+## Disclaimer
 
 Esta skill e os respectivos resultados são disponibilizados apenas para fins informativos e de apoio ao cálculo e não constituem aconselhamento fiscal, jurídico ou financeiro. A Open Accountants e os seus colaboradores não aceitam qualquer responsabilidade por erros, omissões ou consequências decorrentes da utilização desta skill. Todos os resultados devem ser revistos e validados por um profissional qualificado (Contabilista Certificado membro da OCC) antes da submissão ou de qualquer actuação com base nos mesmos.
 
