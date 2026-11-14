@@ -1,7 +1,7 @@
 ---
 name: de-formation
 description: Form a Delaware LLC or corporation in 2026, including a public benefit corporation. Check the name, registered agent, certificate fields, share-dependent incorporation fee, optional reservation, expedited services and internal records. Route recurring franchise and LLC taxes to de-franchise-tax-and-llc and federal classification, founder-stock and foreign-owned LLC filings to their federal skills. Covers series boundaries, statutory-trust referral, BOI and operating-state registration. Trigger on "Delaware formation", "Delaware LLC", "certificate of incorporation", "startup shares" and "Delaware registered agent".
-version: "1.0"
+version: "1.1"
 jurisdiction: US-DE
 category: formation
 tax_year: 2026
@@ -131,7 +131,7 @@ Keep the prior-year boundary explicit: [85 Del. Laws c.273 §§23 and 45](https:
 | --- | --- | --- |
 | Protected series | LLC agreement must provide for the liability limitation, records must separately account for series assets and the LLC certificate must give notice. Agreements can vary recourse; this is not an unconditional firewall. | [6 Del. C. §18-215(b)](https://delcode.delaware.gov/title6/c018/sc02/index.html) |
 | Registered series | File a certificate of registered series; the LLC certificate must contain liability-limitation notice and asset records must be separate. Separate annual-tax obligations go to `de-franchise-tax-and-llc`; a merely protected series is not the registered series named in the tax statute. | [§18-218(a)-(c)](https://delcode.delaware.gov/title6/c018/sc02/index.html); [§18-1107(b)](https://delcode.delaware.gov/title6/c018/sc11/index.html) |
-| PBC | State specific public benefit(s) and PBC heading in the certificate; provide the benefit statement to stockholders no less than biennially. A third-party standard/certification is required only if the certificate/bylaws require it. | [8 Del. C. §§362,366](https://delcode.delaware.gov/title8/c001/sc15/index.html) |
+| PBC | State specific public benefit(s) and PBC heading in the certificate; provide the benefit statement to stockholders no less than biennially. A third-party standard/certification is required only if the certificate/bylaws require it. | [8 Del. C. § 362 and § 366](https://delcode.delaware.gov/title8/c001/sc15/index.html) |
 | Statutory trust, banking/insurance structure or series relied on across states | Specialist formation, liability and regulatory review. The fee table retains the trust filing fee, not a trust-formation method. | [Division entity types](https://corp.delaware.gov/howtoform/); [fee schedule p. 4](https://corpfiles.delaware.gov/Fee_Schedule/AugustFee2026.pdf) |
 | Dormant or late-year LLC; existing delinquent entity | Do not assume no annual tax. Use `de-franchise-tax-and-llc` for full-year tax, default, loss of good standing, cancellation and revival; obtain the account statement. | [Division annual taxes](https://corp.delaware.gov/alt-entitytaxinstructions/); [§§18-1107-1109](https://delcode.delaware.gov/title6/c018/sc11/index.html) |
 
