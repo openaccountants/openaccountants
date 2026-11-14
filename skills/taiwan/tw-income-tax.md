@@ -190,7 +190,7 @@ expected:
 | Source | URL | Read on |
 | --- | --- | --- |
 | Taipei National Taxation Bureau, applicable rates. Read for the 2026 (115年度) brackets and progressive differences | https://www.ntbt.gov.tw/multiplehtml/1b82b380e1a34de9afd204d39b007db2 | 2026-11-14 |
-| MOF, 2026 amounts table (PDF attached to the 27 November 2025 announcement). Read for the exemption, standard, salary and disability deductions, brackets and the 7,500,000 basic tax deduction | https://www.mof.gov.tw/download/bb34472701e4443c910788e792dae85c | 2026-11-14 |
+| MOF, 2026 amounts table (PDF attached to the 27 November 2025 announcement). Read for the exemption, standard, salary and disability deductions, brackets and the 750萬 basic tax deduction | https://www.mof.gov.tw/download/bb34472701e4443c910788e792dae85c | 2026-11-14 |
 | MOF, announcement of 2026 amounts. Read for the 4.13% CPI adjustment and May 2027 filing | https://www.mof.gov.tw/singlehtml/384fb3077bb349ea973e7fc6f13b6974?cntId=34b463dc8f1b49f29d440d92a6fd5139 | 2026-11-14 |
 | Taipei National Taxation Bureau, exemptions and deductions (2025 page for residents). Read for the special and itemised deduction amounts, exclusions and the 213,000 basic living expense for 2025 | https://www.ntbt.gov.tw/multiplehtml/f4e3899a499b4f05821af5a5afadd2f5 | 2026-11-14 |
 | MOF, 2025 professional expense standard (114年度執行業務者費用標準). Read for the expense rates | https://law-out.mof.gov.tw/LawContent.aspx?id=GL011721 | 2026-11-14 |
