@@ -40,8 +40,8 @@ Use federal **line 26000 taxable income** after federal deductions. For 2026 ord
 | 2026 taxable-income slice | Saskatchewan rate | Official source |
 |---|---|---|
 | First $54,532 | 10.5% | https://www.saskatchewan.ca/residents/taxes-and-investments/personal-income-tax/personal-income-tax-structure |
-| Above $54,532 to $155,805 | 12.5%; second band is $101,273 wide | https://www.saskatchewan.ca/residents/taxes-and-investments/personal-income-tax/personal-income-tax-structure ; https://www.canada.ca/en/revenue-agency/services/forms-publications/payroll/t4032-payroll-deductions-tables/t4032sk-jan/t4032sk-january-general-information.html |
-| Above $155,805 | 14.5% | https://www.saskatchewan.ca/residents/taxes-and-investments/personal-income-tax/personal-income-tax-structure ; https://www.canada.ca/en/revenue-agency/services/forms-publications/payroll/t4032-payroll-deductions-tables/t4032sk-jan/t4032sk-january-general-information.html |
+| Above $54,532 to $155,805 | 12.5%; second band is $101,273 wide; upper endpoint $155,805 is computed as $54,532 + $101,273 | https://www.saskatchewan.ca/residents/taxes-and-investments/personal-income-tax/personal-income-tax-structure ; https://www.canada.ca/en/revenue-agency/services/forms-publications/payroll/t4032-payroll-deductions-tables/t4032sk-jan/t4032sk-january-general-information.html |
+| Above $155,805, computed as $54,532 + $101,273 | 14.5% | https://www.saskatchewan.ca/residents/taxes-and-investments/personal-income-tax/personal-income-tax-structure ; https://www.canada.ca/en/revenue-agency/services/forms-publications/payroll/t4032-payroll-deductions-tables/t4032sk-jan/t4032sk-january-general-information.html |
 
 Compute `min(income,54532)*0.105 + min(max(income-54532,0),101273)*0.125 + max(income-155805,0)*0.145`. Use continuous slices; do not leave a dollar untaxed by treating rounded whole-dollar bracket labels as the arithmetic boundaries.
 

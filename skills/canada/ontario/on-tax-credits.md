@@ -43,7 +43,7 @@ Prepare an Ontario credit worksheet, supporting schedules and benefit applicatio
 | NOEC | Up to $189 single without children or $290 family, a household amount; ON-BEN 61040 | 2026 benefit / 2025 base | https://www.canada.ca/en/revenue-agency/services/child-family-benefits/provincial-territorial-programs/northern-ontario-energy-credit-questions-answers.html |
 | CARE | Eligible federal child-care deduction times actual stepped statutory rate; ON479-A to ON479 63050 | Current continuing law; latest form 2025 | https://www.ontario.ca/laws/statute/07t11 ; https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5006-tca/5006-tca-25e.pdf |
 | Senior homeowners grant | Lesser of eligible property tax and $500 before income reduction; ON-BEN 61070, separate payment | 2026 grant / 2025 base | https://www.canada.ca/en/revenue-agency/services/child-family-benefits/provincial-territorial-programs/ontario-senior-homeowners-property-tax-grant-oshptg-questions-answers.html |
-| Seniors care at home | ON428 net allowable medical amount, 25%, maximum $1,500 before family-income reduction; ON479 63095 | Continuing law; latest form 2025 | https://www.ontario.ca/laws/statute/07t11 ; https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5006-tc/5006-tc-25e.pdf |
+| Seniors care at home | ON428 net allowable medical amount, 25%, maximum $1,500 before family-income reduction; ON479 63095 | Continuing law; latest form 2025 | https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5006-tc/5006-tc-25e.pdf |
 | ON428 and LIFT | Non-refundable tax calculation, not an OTB component; load on-individual-return | 2026 income | https://www.ontario.ca/laws/statute/07t11 |
 
 The law at section 103.3 was amended in April 2026: the old **$360** single-payment cutoff belongs to earlier base years. For the 2025 and later base years the current cutoff is **$500**, consistent with the current CRA Q&A. Do not follow an old PDF footer that still says $360. [Act 103.3(3), (3.0.1)](https://www.ontario.ca/laws/statute/07t11), [OTB Q&A](https://www.canada.ca/en/revenue-agency/services/child-family-benefits/provincial-territorial-programs/ontario-trillium-benefit-questions-answers.html).
@@ -101,12 +101,49 @@ Complete federal **T778 / line 21400** first. The normal federal annual limits a
 
 Under **Taxation Act 103.0.2**, family adjusted income adds back the child-care deduction and social-benefits repayment and applies the statutory split-income adjustment. On the latest form, add **line 23600 + line 21400 + line 23500** for the claimant/supporting persons, floor the individual adjusted amount at zero, and follow the multiple-supporting-person rules on page 1. It is not simply both spouses' line 23600. [Act 103.0.2(1)](https://www.ontario.ca/laws/statute/07t11), [ON479-A lines 1-5](https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5006-tca/5006-tca-25e.pdf).
 
-| Family adjusted income | Statutory CARE rate | Official source |
+The statutory equivalent is 75% up to $20,000; above $20,000 to $40,000 subtract 2 percentage points for each $2,500 **or part thereof**; above $40,000 to $60,000 start at 59% and subtract 2 points for each $5,000 or part; above $60,000 start at 51% and subtract 2 points for each $3,600 or part, floored at zero. The final 1% band includes exactly $150,000. [Act 103.0.2, tax credit rate definition](https://www.ontario.ca/laws/statute/07t11). The following is the actual interval table printed on page 2 of the latest ON479-A, rather than a linear approximation.
+
+| Family adjusted income | CARE rate | Official source |
 |---|---|---|
-| Up to $20,000 | 75% | https://www.ontario.ca/laws/statute/07t11 ; https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5006-tca/5006-tca-25e.pdf |
-| Above $20,000 to $40,000 | 75% less 2 percentage points for each $2,500 **or part thereof** above $20,000 | https://www.ontario.ca/laws/statute/07t11 ; https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5006-tca/5006-tca-25e.pdf |
-| Above $40,000 to $60,000 | 59% less 2 points for each $5,000 **or part thereof** above $40,000 | https://www.ontario.ca/laws/statute/07t11 ; https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5006-tca/5006-tca-25e.pdf |
-| Above $60,000 | 51% less 2 points for each $3,600 **or part thereof**, floored at zero; the table gives 1% through $150,000 and 0% above $150,000 | https://www.ontario.ca/laws/statute/07t11 ; https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5006-tca/5006-tca-25e.pdf |
+| $0 to $20,000 | 75% | https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5006-tca/5006-tca-25e.pdf |
+| More than $20,000 to $22,500 | 73% | https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5006-tca/5006-tca-25e.pdf |
+| More than $22,500 to $25,000 | 71% | https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5006-tca/5006-tca-25e.pdf |
+| More than $25,000 to $27,500 | 69% | https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5006-tca/5006-tca-25e.pdf |
+| More than $27,500 to $30,000 | 67% | https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5006-tca/5006-tca-25e.pdf |
+| More than $30,000 to $32,500 | 65% | https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5006-tca/5006-tca-25e.pdf |
+| More than $32,500 to $35,000 | 63% | https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5006-tca/5006-tca-25e.pdf |
+| More than $35,000 to $37,500 | 61% | https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5006-tca/5006-tca-25e.pdf |
+| More than $37,500 to $40,000 | 59% | https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5006-tca/5006-tca-25e.pdf |
+| More than $40,000 to $45,000 | 57% | https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5006-tca/5006-tca-25e.pdf |
+| More than $45,000 to $50,000 | 55% | https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5006-tca/5006-tca-25e.pdf |
+| More than $50,000 to $55,000 | 53% | https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5006-tca/5006-tca-25e.pdf |
+| More than $55,000 to $60,000 | 51% | https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5006-tca/5006-tca-25e.pdf |
+| More than $60,000 to $63,600 | 49% | https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5006-tca/5006-tca-25e.pdf |
+| More than $63,600 to $67,200 | 47% | https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5006-tca/5006-tca-25e.pdf |
+| More than $67,200 to $70,800 | 45% | https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5006-tca/5006-tca-25e.pdf |
+| More than $70,800 to $74,400 | 43% | https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5006-tca/5006-tca-25e.pdf |
+| More than $74,400 to $78,000 | 41% | https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5006-tca/5006-tca-25e.pdf |
+| More than $78,000 to $81,600 | 39% | https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5006-tca/5006-tca-25e.pdf |
+| More than $81,600 to $85,200 | 37% | https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5006-tca/5006-tca-25e.pdf |
+| More than $85,200 to $88,800 | 35% | https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5006-tca/5006-tca-25e.pdf |
+| More than $88,800 to $92,400 | 33% | https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5006-tca/5006-tca-25e.pdf |
+| More than $92,400 to $96,000 | 31% | https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5006-tca/5006-tca-25e.pdf |
+| More than $96,000 to $99,600 | 29% | https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5006-tca/5006-tca-25e.pdf |
+| More than $99,600 to $103,200 | 27% | https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5006-tca/5006-tca-25e.pdf |
+| More than $103,200 to $106,800 | 25% | https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5006-tca/5006-tca-25e.pdf |
+| More than $106,800 to $110,400 | 23% | https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5006-tca/5006-tca-25e.pdf |
+| More than $110,400 to $114,000 | 21% | https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5006-tca/5006-tca-25e.pdf |
+| More than $114,000 to $117,600 | 19% | https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5006-tca/5006-tca-25e.pdf |
+| More than $117,600 to $121,200 | 17% | https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5006-tca/5006-tca-25e.pdf |
+| More than $121,200 to $124,800 | 15% | https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5006-tca/5006-tca-25e.pdf |
+| More than $124,800 to $128,400 | 13% | https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5006-tca/5006-tca-25e.pdf |
+| More than $128,400 to $132,000 | 11% | https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5006-tca/5006-tca-25e.pdf |
+| More than $132,000 to $135,600 | 9% | https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5006-tca/5006-tca-25e.pdf |
+| More than $135,600 to $139,200 | 7% | https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5006-tca/5006-tca-25e.pdf |
+| More than $139,200 to $142,800 | 5% | https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5006-tca/5006-tca-25e.pdf |
+| More than $142,800 to $146,400 | 3% | https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5006-tca/5006-tca-25e.pdf |
+| More than $146,400 to $150,000 | 1% | https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5006-tca/5006-tca-25e.pdf |
+| More than $150,000 | 0% | https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/5006-tca/5006-tca-25e.pdf |
 
 Do not linearly interpolate or apply a 2021-only top-up. Multiply the actual federal deduction (ON479-A line 6) by the selected rate (line 7), carry line 8 to **ON479 63050**. The maximum theoretical 75%-of-cap amounts are $6,000/$3,750/$8,250, but only if all federal restrictions and family-income conditions permit. The same properly allowed child-care expense supports both the federal deduction and CARE; it must not be duplicated across children or also deducted as disability supports. Bankruptcy can eliminate CARE; death is not an automatic exclusion. [Act 103.0.2(2)-(4)](https://www.ontario.ca/laws/statute/07t11), [CRA CARE instructions](https://www.canada.ca/en/revenue-agency/services/forms-publications/tax-packages-years/general-income-tax-benefit-package/ontario/5006-pc.html).
 
