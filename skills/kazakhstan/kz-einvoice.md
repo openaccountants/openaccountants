@@ -106,4 +106,4 @@ expected:
 | Read for Tax Code arts. 19, 110–111, 207–209, 480–482, 491–493 | https://www.gov.kz/org/kgd-akmola/documents/details/1084149?lang=ru | 2026-11-14 |
 | Read for Ministry invoice form and issuance rules: operative issuance/status/form portions | https://www.gov.kz/org/minfin/documents/details/917390 | 2026-11-14 |
 
-Not yet confirmed: Current СНТ/Virtual Warehouse goods lists and issue deadlines, exact new 2026 ESF field, all special supply-category deadlines, machine firmware/model detail and numerical penalties. Do not assert a blanket nonVAT services exemption or a universal paper-invoice recovery rule.
+Not yet confirmed: Exact fiscal-receipt content and QR requirements; Current СНТ/Virtual Warehouse goods lists and issue deadlines, exact new 2026 ESF field, all special supply-category deadlines, machine firmware/model detail and numerical penalties. Do not assert a blanket nonVAT services exemption or a universal paper-invoice recovery rule.
