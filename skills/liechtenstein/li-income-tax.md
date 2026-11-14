@@ -38,13 +38,13 @@ SteV article 8 sets these monthly gross minima, with the amended base amounts fi
 
 | Established category | CHF per month | CHF for a full twelve months | Source |
 |---|---:|---:|---|
-| Single | 2,100 | 25,200 | [SteV art. 8 (Existenzminimum)](https://www.gesetze.li/konso/pdf/2010437000) |
-| Qualifying single parent | 2,600 | 31,200 | same |
-| Jointly assessed spouses/registered partners | 3,200 | 38,400 | same |
-| Separately assessed spouses/registered partners in the same household, or factual cohabiting partners | 1,600 each | 19,200 each | same |
-| Each child aged up to 5, additional | 300 | 3,600 | same |
-| Each child aged 6–11, additional | 450 | 5,400 | same |
-| Each child aged 12 or older, additional | 600 | 7,200 | same |
+| Single | 2,100 | 25,200 (computed: monthly x 12) | [SteV art. 8 (Existenzminimum)](https://www.gesetze.li/konso/pdf/2010437000) |
+| Qualifying single parent | 2,600 | 31,200 (computed: monthly x 12) | same |
+| Jointly assessed spouses/registered partners | 3,200 | 38,400 (computed: monthly x 12) | same |
+| Separately assessed spouses/registered partners in the same household, or factual cohabiting partners | 1,600 each | 19,200 each (computed: monthly x 12) | same |
+| Each child aged up to 5, additional | 300 | 3,600 (computed: monthly x 12) | same |
+| Each child aged 6–11, additional | 450 | 5,400 (computed: monthly x 12) | same |
+| Each child aged 12 or older, additional | 600 | 7,200 (computed: monthly x 12) | same |
 
 Establish the actual family/child category, article 14 total income including relevant deemed wealth yield, and liability period before deciding eligibility. Resolve changing family circumstances or disputed attribution separately; do not replace this gross-income test with post-deduction taxable income **x**. [SteV, article 8 and its amendment notes][ordinance]
 
