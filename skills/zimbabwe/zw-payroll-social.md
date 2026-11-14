@@ -26,13 +26,13 @@ ZIMRA lists no 2026 table as read on 1 November 2026. The 2025 tables are the la
 
 | Item | Amount | Tax year | Conditions | Official URL |
 |---|---|---|---|---|
-| USD monthly 0 to 100 | 0% | 2026 | Latest ZIMRA table is labelled Jan-Dec 2025; Finance Act 7 of 2025 does not amend these bands | https://www.zimra.co.zw/domestic-taxes/tax-tables |
+| USD monthly 0 to 100 | 0% | 2026 | Latest ZIMRA table is labelled Jan-Dec 2025; Finance Act 7 of 2025 does not amend these bands | https://www.zimra.co.zw/domestic-taxes/tax-tables?download=4211:usd-jan-dec-2025-tax-tables |
 | USD monthly 100.01 to 300 | 20%, deduct 20 | 2026 | Same | same |
 | USD monthly 300.01 to 1,000 | 25%, deduct 35 | 2026 | Same | same |
 | USD monthly 1,000.01 to 2,000 | 30%, deduct 85 | 2026 | Same | same |
 | USD monthly 2,000.01 to 3,000 | 35%, deduct 185 | 2026 | Same | same |
 | USD monthly above 3,000 | 40%, deduct 335 | 2026 | Same | same |
-| ZWG monthly 0 to 2,800 | 0% | 2026 | Same; ZWG pay only | same |
+| ZWG monthly 0 to 2,800 | 0% | 2026 | Same; ZWG pay only | https://www.zimra.co.zw/domestic-taxes/tax-tables?download=4205:zwg-2025-tax-tables |
 | ZWG monthly 2,800.01 to 8,400 | 20%, deduct 560 | 2026 | Same | same |
 | ZWG monthly 8,400.01 to 28,000 | 25%, deduct 980 | 2026 | Same | same |
 | ZWG monthly 28,000.01 to 56,000 | 30%, deduct 2,380 | 2026 | Same | same |

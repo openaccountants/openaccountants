@@ -24,7 +24,7 @@ Companies, trusts and pension funds with income from a Zimbabwe source or deemed
 | Item | Amount | Tax year | Conditions | Official URL |
 |---|---|---|---|---|
 | Company or trust | 25% | 2026 | s.14(2c) | https://www.zimra.co.zw/domestic-taxes/corporate/tax-rates |
-| AIDS levy | 3% of tax | 2026 | Effective 25.75% | same |
+| AIDS levy | 3% of tax | 2026 | Effective 25.75% (computed: 25% plus 3% of it) | same |
 | Pension fund, trade or investment | 15% | 2026 | s.14(2)d | same |
 | Licensed investor | 0%, then 25% | 2026 | First five years, then after | same |
 | Special mining lease | 15% | 2026 | s.14(2)(f) | same |
@@ -41,7 +41,7 @@ Companies, trusts and pension funds with income from a Zimbabwe source or deemed
 | Top-up tax | to 15% | 2026 | Combined effective rate below 15% | same |
 | Levy on coal, lithium, granite, stone | 3% | 2026 | Gross value | same |
 | Gaming operators tax | 20% | 2026 | Gross monthly takings, final tax | same |
-| Sports credit | up to USD 10,000 | 2026 | Registered, tax compliant, NSSA compliant | same |
+| Sports credit | up to ten thousand United States dollars | 2026 | Registered, tax compliant, NSSA compliant | same |
 | Special capital gains tax | 20% | 2026 | Offshore transfer of land-holding entity interests | same |
 
 ## The base
