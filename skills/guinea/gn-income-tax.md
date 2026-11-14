@@ -3,15 +3,16 @@ name: gn-income-tax
 description: "Guinea individual income-tax routing and ordinary monthly salary-tax working method for 2026. Use it to establish residence and salary territoriality, distinguish categorical taxes from the old annual IRPP idea, build the ITS base from cash pay and real-value benefits, test actual expense reimbursements and capped flat allowances, deduct employee compulsory contributions, and apply the monthly progressive bands. It separates the employee's tax from employer CNSS and salary taxes, explains local withholding, foreign-paid salary and annual employer statements, and flags year-end multi-source reconciliation. Applicability of the source versions, including any October rectifying law, must be established before live use. Non-employment income, treaty relief, exceptional payments and complete annual reconciliation remain explicit separate gaps."
 jurisdiction: GN
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: international
-version: 1.1
+version: 1.2
 tier: 2
 domain: income-tax
+type: computation
 ---
 
-# Guinea individual income tax and monthly ITS v1.1
+# Guinea individual income tax and monthly ITS v1.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
