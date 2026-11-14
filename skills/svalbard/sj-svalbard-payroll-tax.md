@@ -2,17 +2,18 @@
 name: sj-svalbard-payroll-tax
 description: >
   Calculate and administer Svalbard salary withholding for 2026 for resident employees and qualifying temporary workers. Covers gross salary, holiday pay, directors fees, pensions and specified benefits; the shared annual twelve-basic-amount threshold; multiple employers; standard housing, car and subsistence valuations; and the new youth allowance administered through refunds. Separates employee insurance contributions from the zero employer contribution rate and links to membership rules. Includes reporting, next-working-day remittance, corrections, departure accruals, penalties and two reproducible payroll calculations. Use for Svalbard payroll, a-melding, noncash benefits, wage tax and youth refunds. Jan Mayen and specialist project regimes are excluded. This source-cited draft awaits licensed professional review.
-version: 0.3
+version: 0.4
 jurisdiction: SJ
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
+type: computation
 ---
 
-# Svalbard: payroll withholding in 2026 v0.3
+# Svalbard: payroll withholding in 2026 v0.4
 
 > **Source-cited draft.** Tax year 2026, checked 24 October 2026. General reference for working papers; a qualified professional must review the facts and filing position. Independent AI review does not confer accountant review.
 
