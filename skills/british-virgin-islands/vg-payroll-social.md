@@ -51,8 +51,8 @@ The territory has no income tax; see [bvi-tax](bvi-tax.md).
 | SSB, civil servants | 3.5% employee plus 4% Government (7.5% total); civil servants are not covered for sickness benefit | same |
 | SSB, self-employed | 8.5% of insurable earnings | same |
 | SSB, voluntary contributor | 7% of earnings established by the Board; covers age, invalidity, funeral and survivors benefits only | same |
-| SSB maximum insurable earnings 2026 | USD 53,400 a year (USD 4,450.00 a month, 2,225.00 semi-monthly, 2,053.85 fortnightly, 1,026.92 weekly) | [SSB 2026 maximum insurable earnings](https://www.vissb.vg/wp-content/uploads/2026/09/2026-SSB-Maximum-Earnings.pdf) |
-| SSB maximum contributions 2026 at the private rate | USD 2,136.00 employee and 2,403.00 employer a year (178.00 and 200.25 a month) | same |
+| SSB maximum insurable earnings 2026 | USD 53,400 a year (period maxima computed: 53,400 / 12 = 4,450.00 a month, / 24 = 2,225.00 semi-monthly, / 26 = 2,053.85 fortnightly, / 52 = 1,026.92 weekly, matching the bulletin's schedule) | [SSB 2026 maximum insurable earnings](https://www.vissb.vg/wp-content/uploads/2026/09/2026-SSB-Maximum-Earnings.pdf) |
+| SSB maximum contributions 2026 at the private rate | USD 2,136.00 employee and 2,403.00 employer a year (178.00 and 200.25 a month), computed: 4% and 4.5% of the ceiling, matching the bulletin's schedule | same |
 | SSB maximum insurable earnings from 1 January 2027 | USD 55,536 a year; contribution rates unchanged | [SSB notice, 2027 earnings](https://www.vissb.vg/increase-in-maximum-insurable-earnings-effective-1st-january-2027/) |
 | NHI maximum insurable earnings 2026 | USD 106,800 a year (from 1 January 2027, USD 111,072) | same |
 | NHI, employee | 3.75% of insurable income | [NHI brochure](https://vinhi.vg/wp-content/nhi/NHI-Brochure.pdf) |
@@ -76,7 +76,7 @@ The territory has no income tax; see [bvi-tax](bvi-tax.md).
 
 | Situation | Treatment | Source |
 |---|---|---|
-| Employee earning above USD 53,400 in 2026 | SSB stops at the ceiling; NHI continues to USD 106,800 | [SSB 2026 bulletin](https://www.vissb.vg/wp-content/uploads/2026/09/2026-SSB-Maximum-Earnings.pdf); [NHI brochure](https://vinhi.vg/wp-content/nhi/NHI-Brochure.pdf) |
+| Employee earning above USD 53,400 in 2026 | SSB stops at the ceiling; NHI continues to USD 106,800 (computed: twice the SSB ceiling, per the NHI brochure) | [SSB 2026 bulletin](https://www.vissb.vg/wp-content/uploads/2026/09/2026-SSB-Maximum-Earnings.pdf); [NHI brochure](https://vinhi.vg/wp-content/nhi/NHI-Brochure.pdf) |
 | Civil servant | Lower SSB rates; no sickness benefit cover | [SSB contributions](https://www.vissb.vg/contributions/) |
 | Two employers | Each deducts in full; refund of the excess over the maximum from the Board | same |
 | Paid on the 15th or later | 10% penalty | same |
