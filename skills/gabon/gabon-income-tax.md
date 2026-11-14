@@ -8,12 +8,12 @@ type: situation-rules
 tax_year: 2026
 tax_year_notes: "2026 research draft; CGI 2025 baseline plus enacted finance laws read; currency and commencement holds remain"
 last_updated: 2026-11-14
-version: 0.2
+version: 0.3
 tier: 2
 domain: income-tax
 ---
 
-# Gabon individual income tax v0.2
+# Gabon individual income tax v0.3
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 

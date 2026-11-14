@@ -2,7 +2,7 @@
 name: gh-corporate-income-tax
 description: >
   Use this skill to compute or review Ghana corporate income tax for tax year 2026. It covers resident and non-resident companies, the 25% general rate, sector rates for hotels, non-traditional exports, farming and leasing loans, manufacturing by location, free zones, mining and petroleum, the 5% rate for concession holders, capital allowances, five-year loss carry-forward, thin capitalisation, minimum chargeable income of 5% of turnover, the Growth and Sustainability Levy, withholding credits, quarterly instalments, forms DT 101 and DT 102 on ETAX, and penalties. Trigger on "Ghana company tax", "CIT Ghana", "corporate income tax GRA", "capital allowance Ghana", "provisional tax Ghana", "minimum chargeable income". Individuals are in ghana-pit; cross-border withholding is in gh-cross-border.
-version: 0.4
+version: 0.5
 jurisdiction: GH
 category: international
 tax_year: 2026
@@ -13,7 +13,7 @@ domain: income-tax
 type: computation
 ---
 
-# Ghana Corporate Income Tax v0.4
+# Ghana Corporate Income Tax v0.5
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
