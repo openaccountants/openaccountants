@@ -59,7 +59,7 @@ Tax year: payroll tax runs 1 April to 31 March; this skill uses the 1 April 2026
 | Employer rate, annual remuneration over BMD 350,000 to 500,000 | 4.75% | same |
 | Employer rate, Class AA, qualifying retail store: payroll for the store or group of stores over BMD 500,000 and a Commissioner determination, on written application, that at least 50% of the period's sales are clothing, shoes, jewellery and perfume | 5.00% | [Payroll Tax Rates Act 1995 s.5A](https://www.bermudalaws.bm/Laws/Consolidated%20Law/1995/Payroll%20Tax%20Rates%20Act%201995) |
 | Employer rate, annual payroll over BMD 500,000 up to 1,000,000 | 7.00% | same |
-| Employer rate, annual payroll over BMD 1,000,000 (over BMD 250,000 a quarter) | 9.50% | same |
+| Employer rate, annual payroll over BMD 1,000,000 (over BMD 250,000 a quarter, derived) | 9.50% | same |
 | Employer rate, exempt undertakings (an exempted undertaking or a permit company under Payroll Tax Act s.2(3), not every exempted company) and the standard rate | 9.75% | [Payroll Tax Rates Act 1995 s.3](https://www.bermudalaws.bm/Laws/Consolidated%20Law/1995/Payroll%20Tax%20Rates%20Act%201995) |
 | Employee portion band 1, annual remuneration 0 to 48,000 | 0.25% | same |
 | Employee portion band 2, above the first 48,000 up to 96,000 | 7.75% | same |
@@ -74,7 +74,7 @@ Tax year: payroll tax runs 1 April to 31 March; this skill uses the 1 April 2026
 | Social insurance, self-employed under 65 | BMD 78.50 a week | same |
 | Social insurance, self-employed over 65 | BMD 39.25 a week | same |
 | Social insurance, voluntary contributor under 65 | BMD 78.50 a week | same |
-| Social insurance, yearly rate at the full weekly rate | BMD 4,082.00 | same |
+| Social insurance, yearly rate at the full weekly rate | BMD 4,082.00 (BMD 78.50 x 52, derived) | same |
 | Social insurance, small-income certificate | Annual income not exceeding BMD 3,000 (inclusive); only with a certificate granted by the Director on application, backdated by up to 13 weeks at the Director's discretion; covers the insured person's contribution for whole weeks only, not the employer's | [Exception from Liability Regulations 1973, regs 1-2](https://www.bermudalaws.bm/Laws/Consolidated%20Law/1973/Contributory%20Pensions%20(Exception%20from%20Liability%20for%20Contributions)%20Regulations%201973) |
 | Social insurance, payment due | Each contribution week's contributions by the last working day of the following month | [Contributory Pensions Act 1970 s.4(7)](https://www.bermudalaws.bm/Laws/Consolidated%20Law/1970/Contributory%20Pensions%20Act%201970) |
 | Social insurance, self-employed registration | Register with the Director within 7 days of becoming self-employed | [Contributory Pensions Act 1970 s.8](https://www.bermudalaws.bm/Laws/Consolidated%20Law/1970/Contributory%20Pensions%20Act%201970) |
@@ -98,7 +98,7 @@ Tax year: payroll tax runs 1 April to 31 March; this skill uses the 1 April 2026
 
 | Situation | Treatment | Source |
 |---|---|---|
-| Exempted company employing staff in Bermuda | Payroll tax applies. It is an exempt undertaking (9.75%) only if it meets Payroll Tax Act s.2(3) to (5); an exempted company needing a licence or statutory authority for any of its business is classified under the ordinary classes unless the Commissioner directs it is an exempt undertaking. Exempted status is never a payroll tax exemption | [Payroll Tax Act 1995 s.2](https://www.bermudalaws.bm/Laws/Consolidated%20Law/1995/Payroll%20Tax%20Act%201995) |
+| Exempted company employing staff in Bermuda | Payroll tax applies. It is an exempt undertaking (9.75%) only if it meets Payroll Tax Act s.2(3) to (5); an exempted company needing a licence or statutory authority for any of its business is classified under the ordinary classes unless the Commissioner directs it is an exempt undertaking. Exempted status is never a payroll tax exemption | [Payroll Tax Act 1995 s.2](https://www.bermudalaws.bm/Laws/Consolidated%20Law/1995/Payroll%20Tax%20Act%201995); 9.75% rate: [Payroll Tax Rates Act 1995](https://www.bermudalaws.bm/Laws/Consolidated%20Law/1995/Payroll%20Tax%20Rates%20Act%201995) |
 | New Hire Relief 2026 | For exempted companies and other employers with remuneration over BMD 500,000 that increase full-time equivalents (15 hours or more a week) above the January to March 2025 baseline. Qualifying employees: hired 1 April 2025 to 31 March 2026 and still employed after 1 April 2026, or hired 1 April 2026 to 31 March 2028, not previously employed by a parent or affiliate. Employer portion exemption only. Apply by the end of the quarter in which the employee qualifies; no retroactive approval | same |
 | Self-employed caregiver | 0% employer portion; returns still filed quarterly and the employee portion paid | same |
 | Carer employed in the home of a person with a disability | Exempt on application to the Office of the Tax Commissioner for the Minister's approval | [Payroll tax](https://www.gov.bm/payroll-tax) |
