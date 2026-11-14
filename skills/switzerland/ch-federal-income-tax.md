@@ -13,20 +13,21 @@ description: >
   deductions, and federal filing and collection. Cantonal and municipal taxes are
   out of scope. This Tier 2 draft supports source checking and reviewer
   questions; it does not authorise filing, payment or a tax position.
-version: 2.3
+version: 2.4
 jurisdiction: CH
 tax_year: 2026
 tax_year_notes: "Tax period (Steuerperiode) 2026, the calendar year 2026. Enacted: DBG Art. 36 as set by the FDF ordinance of 10 September 2025 on cold progression, in force on 1 January 2026. Tax period 2025 is kept as a comparison. Enacted 2027 figures are shown for reference and 2027 is not the coverage year. The Federal Act on Individual Taxation, accepted on 8 March 2026, is not applied."
-last_updated: 2026-11-05
+last_updated: 2026-11-14
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 depends_on:
   - income-tax-workflow-base
 domain: income-tax
+type: computation
 ---
 
-# Switzerland Federal Income Tax (Direkte Bundessteuer): Self-Employed Skill v2.3
+# Switzerland Federal Income Tax (Direkte Bundessteuer): Self-Employed Skill v2.4
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 

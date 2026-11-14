@@ -3,15 +3,16 @@ name: td-payroll-social
 description: "Prepare Chad payroll and social contribution working papers for 2026, separating CNPS from employer payroll and training taxes and referring salary IRPP to its own Guide. Covers employer and worker registration, contributable pay, genuine reimbursements, ordinary full-month floor and ceiling, employer and employee shares, headcount-based declaration periods, payment timing, daily late charges and annual ceiling reconciliation. Use for Chad CNPS, first employee, payroll tax, training levy, capped salary contributions or monthly versus quarterly remittance. Two cases recompute charges and the ceiling. The authority’s archived contribution guidance, later-law checks, special employment cases and live filing-screen limitations remain explicit; SC and PR remain partial."
 jurisdiction: TD
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: payroll
-version: 1.2
+version: 1.3
 tier: 2
 domain: payroll
+type: computation
 ---
 
-# Chad payroll and social contributions v1.2
+# Chad payroll and social contributions v1.3
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
