@@ -42,7 +42,7 @@ Under [TPA ss23,31,51,56](https://www.kra.go.ke/images/publications/Tax-Procedur
 | Stage | Time threshold and complete condition | Official source |
 |---|---|---|
 | Object | Within 30 days of notification; precise grounds, amendments and reasons, relevant documents, and undisputed tax paid or extension applied for, s51(2)-(3), in words on the page | https://www.kra.go.ke/images/publications/Tax-Procedures-Act--2026.pdf |
-| Invalidity notice/information | Commissioner notifies within 14 days, requests information within 7 days; failure engages s51(4A), in words on the page | https://www.kra.go.ke/images/publications/Tax-Procedures-Act--2026.pdf |
+| Invalidity notice/information | Commissioner notifies invalidity within 14 days; taxpayer provides the requested information within 7 days after the invalidity notice date; failure engages s51(4A), in words on the page | https://www.kra.go.ke/images/publications/Tax-Procedures-Act--2026.pdf |
 | Objection decision | Within 60 days of receipt of valid notice; otherwise deemed allowed, s51(11), in words on the page. Invalid objections have separate s51(4A) treatment | https://www.kra.go.ke/images/publications/Tax-Procedures-Act--2026.pdf |
 | Tribunal appeal | Within 30 days after notification of objection decision, s51(12); undisputed tax paid or payment arrangement at lodging, s52(2), in words on the page | https://www.kra.go.ke/images/publications/Tax-Procedures-Act--2026.pdf |
 | High Court appeal | Within 30 days of notification or further time allowed; questions of law only, ss53,56(2), in words on the page | https://www.kra.go.ke/images/publications/Tax-Procedures-Act--2026.pdf |

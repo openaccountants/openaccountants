@@ -31,8 +31,8 @@ Resident companies and non-resident companies carrying on business through a Ken
 | NIFCA-certified start-up | 15% for first 3 years and 20% for succeeding 4 years, Head B para2(nb), in words on the page; actual certification required | https://www.kra.go.ke/images/publications/Income-Tax-Act-2026.pdf |
 | Capital gains | 15% of net chargeable gain, final tax, s3(2)(f), Eighth Schedule and Third Schedule Head B para14, in words on the page; do not treat all securities as taxable without exemptions analysis | https://www.kra.go.ke/images/publications/Income-Tax-Act-2026.pdf |
 | Ordinary dividend WHT | 15% under Head B paras3(d),5(a), in words on the page; distinguish qualifying dividends and statutory exemptions | https://www.kra.go.ke/images/publications/Income-Tax-Act-2026.pdf |
-| Qualifying dividend | 5%, final tax under Head B para5(e), in words on the page; s2 definition includes resident individuals and citizens of EAC Partner States; do not assume every company receipt qualifies | https://www.kra.go.ke/images/publications/Income-Tax-Act-2026.pdf |
-| Resident corporate dividend exemption | s7(2): recipient resident company, other than an exempt company, controls directly/indirectly at least 12.5% of voting power, in words on the page | https://www.kra.go.ke/images/publications/Income-Tax-Act-2026.pdf |
+| Qualifying dividend | 5%, final tax under Head B para5(e), in words on the page; resident-WHT Head B para5(e); s2 means the chargeable, otherwise non-exempt dividend under s3(2)(b), excluding designated-cooperative dividends under s19A(2)/(3); the definition does not impose an individual/EAC-citizen test | https://www.kra.go.ke/images/publications/Income-Tax-Act-2026.pdf |
+| Resident corporate dividend exemption | s7(2): recipient resident company controls directly/indirectly at least 12.5% of voting power, in words on the page; s7(3) overrides for Fourth Schedule financial institutions | https://www.kra.go.ke/images/publications/Income-Tax-Act-2026.pdf |
 | Interest WHT | Ordinary other-source interest 15%; bearer instruments and qualifying interest have different rates, Head B paras3(e),5(b),5(h), in words on the page | https://www.kra.go.ke/images/publications/Income-Tax-Act-2026.pdf |
 | Royalty WHT, resident | 5% of gross, Head B para5(g), in words on the page | https://www.kra.go.ke/images/publications/Income-Tax-Act-2026.pdf |
 | Royalty WHT, non-resident | Ordinary 20% of gross; qualifying payment by SEZ enterprise/developer/operator 5%, Head B para3(b), in words on the page; check treaty | https://www.kra.go.ke/images/publications/Income-Tax-Act-2026.pdf |
@@ -40,7 +40,7 @@ Resident companies and non-resident companies carrying on business through a Ken
 
 ## The base
 
-Start with accounting profit. Exclude exempt/non-chargeable income, add back disallowed and capital expenses, deduct qualifying revenue expenditure wholly and exclusively incurred to produce income under s15(1), and claim current Second Schedule allowances rather than accounting depreciation. Separate capital gains and final-withholding income. Test losses under s15(4) and its conditions; do not presume unrestricted utilisation. Refer special-rate, EPZ/SEZ, NIFCA and cross-border cases.
+Start with accounting profit. Exclude exempt/non-chargeable income, add back disallowed and capital expenses, deduct qualifying revenue expenditure wholly and exclusively incurred to produce income under s15(1), applying s16 exclusions including electronic-tax-invoice requirements unless a TPA exemption applies, applying s16 exclusions including electronic-tax-invoice requirements unless a TPA exemption applies, and claim current Second Schedule allowances rather than accounting depreciation. Separate capital gains and final-withholding income. Test losses under s15(4) and its conditions; do not presume unrestricted utilisation. Refer special-rate, EPZ/SEZ, NIFCA and cross-border cases.
 
 For a branch, repatriated income uses s7B: opening net assets + (accounting net profit - tax on chargeable income) - closing net assets. It is a separate tax question from the ordinary branch rate. Accounting profit and taxable profit are different inputs.
 
@@ -59,11 +59,11 @@ Log into iTax (https://itax.kra.go.ke), select the company's income-tax obligati
 
 ## Penalties and interest
 
-[TPA ss38,83(1)(d)(i),83A](https://www.kra.go.ke/images/publications/Tax-Procedures-Act--2026.pdf): a late ordinary company return attracts the higher of 5% of tax payable or KES 20,000, with tax reduced by amounts paid and WHT credits; late tax attracts a 5% penalty and simple interest at 1% per month or part (in words on the page). Special returns have separate minima. Refer deliberate shortfalls, assessments and contested instalment penalties.
+[TPA ss38,83(1)(d)(i),83A](https://www.kra.go.ke/images/publications/Tax-Procedures-Act--2026.pdf): a late ordinary company return attracts the higher of 5% of tax payable or KES 20,000, with tax reduced by amounts paid and WHT credits; late tax attracts a 5% penalty and simple interest at 1% per month or part (in words on the page). Special returns have separate minima. Under s38(8), aggregate accrued late interest cannot exceed the principal tax liability. Section38(6) stops accrual between notification and payment where the outstanding tax, including interest to notification, is paid in full within the notice’s specified time. Section38(2) refunds interest to the extent the underlying principal is found not payable. Under s38(8), aggregate accrued late interest cannot exceed the principal tax liability. Section38(6) stops accrual between notification and payment where the outstanding tax, including interest to notification, is paid in full within the notice’s specified time. Section38(2) refunds interest to the extent the underlying principal is found not payable. Refer deliberate shortfalls, assessments and contested instalment penalties.
 
 ## Cross-border points
 
-Non-resident dividend WHT is ordinarily 15%, not the old file's blanket 10%. A qualifying EAC-citizen dividend is governed by the actual s2 definition and para5(e), not a blanket listed-share assumption. Source, beneficial ownership, treaty, exemption and documentation must be established before applying a reduced WHT rate. Interest is not universally 15%: identify the instrument and recipient. Preserve the dividend exemption voting-power test; shareholding percentage alone may not prove it.
+Non-resident dividend WHT is ordinarily 15%, not the old file's blanket 10%. For resident withholding, distinguish the 15% ordinary row from the 5% final qualifying-dividend row by applying s2 and s7; neither resident-company receipts nor an EAC citizen’s receipt should be classified solely from the recipient’s label. The s2 definition read contains no EAC-citizenship or individual-only limitation; para3 governs non-resident rates. Source, beneficial ownership, treaty, exemption and documentation must be established before applying a reduced WHT rate. Interest is not universally 15%: identify the instrument and recipient. Preserve the dividend exemption voting-power test; shareholding percentage alone may not prove it.
 
 ## Two worked examples that recompute
 
@@ -119,8 +119,8 @@ expected:
 
 | Source and passages actually read | Official URL | Read on |
 |---|---|---|
-| Read for ITA ss2-4,7(2),7B,12,15-16,35,52B,92A; Second, Third and Twelfth Schedules, passages on base, rates, credits and deadlines | https://www.kra.go.ke/images/publications/Income-Tax-Act-2026.pdf | 2026-11-14 |
+| Read for ITA ss2-4,7(2)-(3),7B,12,15-16,35,52B,92A; Second, Third and Twelfth Schedules, passages on base, rates, credits and deadlines | https://www.kra.go.ke/images/publications/Income-Tax-Act-2026.pdf | 2026-11-14 |
 | Read for Finance Act 2026 ss1,18 and21, commencement, return distinction and Third Schedule changes | https://www.kra.go.ke/images/publications/Finance-Act-2026.pdf | 2026-11-14 |
 | Read for TPA ss38,83,83A, penalties, tax-paid reduction and interest | https://www.kra.go.ke/images/publications/Tax-Procedures-Act--2026.pdf | 2026-11-14 |
 
-Not yet confirmed: Specific treaty relief, live iTax form boxes/attachments, special regimes beyond the certified-start-up line, capital-gain exemptions for particular transfers, and instalment underpayment penalty calculations need case-specific checking. The former listed-share-only EAC dividend limitation is not supported by the s2 definition read.
+Not yet confirmed: Specific treaty relief, live iTax form boxes/attachments, special regimes beyond the certified-start-up line, capital-gain exemptions for particular transfers, and instalment underpayment penalty calculations need case-specific checking. The former EAC-citizen/listed-share and individual-only qualifying-dividend limitations are not supported by the s2 definition read.
