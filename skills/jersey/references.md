@@ -1,6 +1,6 @@
 # Jersey pack: sources and coverage
 
-This pack contains fourteen source-cited guides. Core topics were checked against the stated primary sections on 11 October 2026; the corporate, income-tax compliance, GST, Pillar Two, formation and selected payroll/Class 1 additions were checked on 15 October 2026. Property and annual parish-rate additions were prepared on 16 October using 15 October UTC captures. All remain `tier: 2` and `pending_review`. Jersey now has guide presence; comprehensive topic coverage and professional sign-off remain outstanding.
+This pack contains fourteen source-cited guides. Core topics were checked against the stated primary sections on 11 October 2026; the corporate, income-tax compliance, GST, Pillar Two, formation and selected payroll/Class 1 additions were checked on 15 October 2026. Property and annual parish-rate additions were prepared on 16 October using 15 October UTC captures. All remain `tier: 2` (not yet approved by an accountant). Jersey now has guide presence; comprehensive topic coverage and professional sign-off remain outstanding.
 
 ## Coverage and remaining work
 
@@ -34,7 +34,7 @@ The table records captured primary sources used by guide citations. SHA-256 iden
 | S1.05 | [About Pillar Two](https://www.gov.je/TaxesMoney/IncomeTax/PillarTwo/pages/aboutpillartwo.aspx) | `c11f14ae39c043b476ed13e0c71c2187c0b112e09fb98a490a42cf8bff3cbb4a` |
 | S1.06 | [Employing staff and your responsibilities for paying tax and contributions](https://www.gov.je/TaxesMoney/IncomeTax/Employers/Returns/Pages/EmployingStaff.aspx) | `63316bda78c6d0c43912be8baa7c02bd09a783144964b76d44a0db2e4b6deb09` |
 | S1.07 | [Moving to Jersey: Money and tax](https://www.gov.je/lifeevents/movingtojersey/livinginjersey/pages/moneytax.aspx) | `d49fb5f88292dec764f5381a8ced4e828b7776b49701ce10ee59223932d727b1` |
-| S1.08 | [Annual confirmation — Jersey Financial Services Commission](https://www.jerseyfsc.org/registry/annual-confirmation/) | `47210d8f9ca7abb08153566faf9bb8f4fafb6596b5fcaeb07b2b18087d08633e` |
+| S1.08 | [Annual confirmation, Jersey Financial Services Commission](https://www.jerseyfsc.org/registry/annual-confirmation/) | `47210d8f9ca7abb08153566faf9bb8f4fafb6596b5fcaeb07b2b18087d08633e` |
 | S2.01 | [Large corporate retailers](https://www.gov.je/TaxesMoney/IncomeTax/Companies/Guidelines/Pages/LargeCorporateRetailers.aspx) | `9e43a02d1d891d34c25090735589337ee7467731ce4f3e3c4a4a73cddc77d531` |
 | S2.03 | [Class 2 Social Security contributions](https://www.gov.je/Working/Contributions/Payments/pages/class2contributionsstatement.aspx) | `89ed3e23646cc96b018ba37c479abf9657ad83ee18505417ae6b56762e523294` |
 | S2.04 | [Residency for Jersey income tax](https://www.gov.je/TaxesMoney/IncomeTax/Individuals/IncomeTaxCircumstances/Pages/ResidencyForJerseyTax.aspx) | `3431cee737145f8667fa89e27d8b709ef80ebb8f1d085cc66e1b22b92587e813` |

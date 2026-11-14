@@ -225,7 +225,7 @@ Add to the base's Section D: correct year/parish and pence-to-GBP conversion; ac
 
 ## Sources
 
-Version 1.0, 16 October 2026: dated annual-rates reference, published 2026 cells, liability/procedure distinctions, hypothetical positions and workflow controls. Capture hashes and source scopes are in references.md. Tier 2/pending_review; no professional sign-off or comprehensive-country credit.
+Version 1.0, 16 October 2026: dated annual-rates reference, published 2026 cells, liability/procedure distinctions, hypothetical positions and workflow controls. Capture hashes and source scopes are in references.md. Tier 2, not yet approved; no professional sign-off or comprehensive-country credit.
 
 | Source | URL | Read on |
 |---|---|---|

@@ -16,9 +16,9 @@ jurisdiction: JE
 category: formation
 tax_year: 2026
 tier: 2
-last_updated: 2026-10-15
-version: 1.2
-review_status: pending_review
+type: filing-howto
+last_updated: 2026-11-14
+version: 1.3
 depends_on:
   - workflow-base
   - company-formation-workflow-base
@@ -27,13 +27,36 @@ depends_on:
 
 # Jersey company formation and reporting
 
-## Scope and period
+Period: the 2026 calendar year (JFSC fee notice 1 January to 31 December 2026). Currency is GBP. Authorities: Jersey Financial Services Commission (Registry), Revenue Jersey and the Government of Jersey (licensing).
+
+## Who this applies to
 
 This partial reference covers selected ordinary company formation and reporting rules. It does not fill the formation base's complete entity catalogue, capital, cost and licensing slots, or the complete financial-statements companion. Keep entity recommendations, total engagement costs and the complete output package held until those requirements and the applicant's facts are established. Hypothetical source examples remain usable as references.
 
 The reused [*Companies (Jersey) Law 1991*](https://www.jerseylaw.je/laws/current/l_30_1991) snapshot applies from 30 September 2026; current business-licence Order from 2 October 2026, status Regulations from 14 September 2026 and disclosure Regulations from 1 June 2026. The JFSC fee notice covers 1 January to 31 December 2026. Earlier events and later fees require their own sources. An editing date does not establish an operative period.
 
-## Company form, documents and submission
+## Rates, bands and thresholds
+
+The **final** [2026 JFSC Fees Notice](https://www.jerseyfsc.org/media/kdpn4ow1/2026-fees-notices.pdf), Part I sections 1, 3 and 6, supplies these selected fees. They are registry charges, not a total provider/legal/office/audit cost quotation.
+
+| Selected service or fee category | GBP | Source |
+|---|---:|---|
+| Ordinary company incorporation within five business days | 205 | [2026 JFSC Fees Notice](https://www.jerseyfsc.org/media/kdpn4ow1/2026-fees-notices.pdf) |
+| Within three business days | 308 | same |
+| Within two business days | 395 | same |
+| Within one business day | 543 | same |
+| Within two hours | 856 | same |
+| Out of hours, by agreement, minimum | 1,548 | same |
+| Optional online name reservation | 10 | same |
+| Annual confirmation: entity administered by trust company or fund services business | 339, including government levy 175 | same |
+| Annual confirmation: ordinarily administered entity | 220, including government levy 145 | same |
+| Licensing: resident business licence | 0 (no fee stated) | [Licensing guidance](https://www.gov.je/Industry/BusinessAdviceHub/IndustryRegulationsResponsibilities/Pages/ControlHousingWorkBusinessGuidance.aspx) |
+
+Confirm the annual fee category. [Disclosure Regulations, Regulation 7](https://www.jerseylaw.je/laws/current/ro_138_2020) separately sets the levy at GBP 175 for relevant-business administered entities and GBP 145 for others; relevant business uses the statutory fund/trust definitions and excludes class O-only trust-company services. This settles the levy rule, not the JFSC notice's undefined ordinarily administered base-fee category. Hold a disputed class O-only total rather than choosing a total from the levy alone. No 2027 amount is inferred.
+
+## The base
+
+### Company form, documents and submission
 
 [Companies Law Articles 3 to 9](https://www.jerseylaw.je/laws/current/l_30_1991) distinguish public/private, par value/no par value/guarantee, limited/unlimited, cell and limited-life forms. Member liability follows the actual share/guarantee/unlimited provisions. Do not infer an entity recommendation, public/private status or capital requirement from a generic portal option or member count alone. Full special-form and deemed-public analysis remains open.
 
@@ -52,25 +75,7 @@ For an established ordinary company route, the incorporation checklist requires:
 
 The procedure's service times are processing options. Sensitive activity can prevent guaranteed priority processing, and fees are non-refundable. No application, identity document or payment is submitted by this guide.
 
-## Published 2026 fees
-
-The **final** [2026 JFSC Fees Notice](https://www.jerseyfsc.org/media/kdpn4ow1/2026-fees-notices.pdf), Part I sections 1, 3 and 6, supplies these selected fees. They are registry charges, not a total provider/legal/office/audit cost quotation.
-
-| Selected service or fee category | GBP |
-|---|---:|
-| Ordinary company incorporation within five business days | 205 |
-| Within three business days | 308 |
-| Within two business days | 395 |
-| Within one business day | 543 |
-| Within two hours | 856 |
-| Out of hours, by agreement, minimum | 1,548 |
-| Optional online name reservation | 10 |
-| Annual confirmation: entity administered by trust company or fund services business | 339, including government levy 175 |
-| Annual confirmation: ordinarily administered entity | 220, including government levy 145 |
-
-Confirm the annual fee category. [Disclosure Regulations, Regulation 7](https://www.jerseylaw.je/laws/current/ro_138_2020) separately sets the levy at GBP 175 for relevant-business administered entities and GBP 145 for others; relevant business uses the statutory fund/trust definitions and excludes class O-only trust-company services. This settles the levy rule, not the JFSC notice's undefined ordinarily administered base-fee category. Hold a disputed class O-only total rather than choosing a total from the levy alone. No 2027 amount is inferred.
-
-## Business and staffing licences
+### Business and staffing licences
 
 The [government startup sequence](https://www.gov.je/Industry/BusinessAdviceHub/StartingABusiness/Pages/home.aspx) puts limited-company incorporation before its business-licence application. Incorporation automatically initiates corporate tax registration, with tax references and filing information; it does not establish GST, employer, industry or data-protection registration completion. Check each stream separately, with je-gst, je-payroll and je-corporate-income-tax as applicable.
 
@@ -91,13 +96,7 @@ Order Article 6 separately addresses staffing licences and maximum permissions f
 
 The startup guidance also identifies data-protection registration, employer combined returns and industry permissions. Direct data-protection exceptions and complete licensing/worker branches remain to be verified before an engagement checklist is complete.
 
-## Registry obligations
-
-[JFSC annual confirmation guidance](https://www.jerseyfsc.org/registry/annual-confirmation/) covers entities registered in or before the year preceding that confirmation. Submit from 1 January to the last day of February through an authorised nominated person. Confirm registered office and associated parties and update company share-capital information first. Entities dissolved or placed into winding up before or during that confirmation period do not have to submit; Jersey registered charities have no fee. Verify the actual entity and exemption.
-
-Notify beneficial-owner, controller or significant-person information changes within 21 days of knowledge. Annual confirmation does not replace those updates or tax returns. LLPs have additional solvency/accounting confirmations, and relevant special-purpose vehicle COBO consents have separate confirmation conditions; neither branch is completed by the ordinary company steps above.
-
-## Accounts, records and audit
+### Accounts, records and audit
 
 The current [Companies Law, Articles 103 to 105, 108 and 113](https://www.jerseylaw.je/laws/current/l_30_1991) supplies the statutory framework:
 
@@ -118,13 +117,31 @@ Revenue Jersey separately requires the relevant signed financial accounts or sta
 
 First establish whether an ordinary company return is required for the year or period. [Income Tax Law, Article 120AC](https://www.jerseylaw.je/laws/current/l_29_1961) disapplies specified ordinary returns for relevant MNE group entities, with conditions in Article 120AB. See `je-corporate-income-tax` and `je-pillar-two`; this tax-return exception does not establish an exemption from company accounting or registry duties.
 
-## Economic substance
+### Economic substance
 
 [Companies Economic Substance Law, Articles 3 to 5A](https://www.jerseylaw.je/laws/current/l_3_2019) identifies relevant activities, core income-generating activities and the substance tests. Relevant company activities include banking, insurance, fund management, finance and leasing, headquarters, shipping, holding, intellectual property, and distribution or service centres, subject to definitions and exclusions.
 
 For an ordinary resident company with gross income from a relevant activity, assess Jersey direction and management, adequate people, expenditure and physical assets, Jersey core income-generating activities and control of permitted outsourcing. Self-managed funds have a separate provision. Retain contemporaneous evidence and use the published guidance; a registered office alone does not satisfy these tests. Partnership substance requirements require separate legislation and remain outside this guide.
 
-## Hypothetical worked positions
+## Deadlines and filing
+
+### Registry obligations
+
+[JFSC annual confirmation guidance](https://www.jerseyfsc.org/registry/annual-confirmation/) covers entities registered in or before the year preceding that confirmation. Submit from 1 January to the last day of February through an authorised nominated person. Confirm registered office and associated parties and update company share-capital information first. Entities dissolved or placed into winding up before or during that confirmation period do not have to submit; Jersey registered charities have no fee. Verify the actual entity and exemption.
+
+Notify beneficial-owner, controller or significant-person information changes within 21 days of knowledge. Annual confirmation does not replace those updates or tax returns. LLPs have additional solvency/accounting confirmations, and relevant special-purpose vehicle COBO consents have separate confirmation conditions; neither branch is completed by the ordinary company steps above.
+
+## Penalties and interest
+
+The 2026 JFSC Fees Notice, Part I section 3, adds a sliding scale of charges when the annual confirmation is late: GBP 77 if provided after the end of February but before the end of March; GBP 159 before the end of April; GBP 236 before the end of May; GBP 308 after the end of May ([2026 JFSC Fees Notice](https://www.jerseyfsc.org/media/kdpn4ow1/2026-fees-notices.pdf), read 14 November 2026). Civil penalties under the Companies Law and the economic substance regime are not covered here.
+
+## Cross-border points
+
+Submission routes depend on whether beneficial ownership is wholly Jersey resident or a regulated provider is used (see "Company form, documents and submission"). A foreign company that becomes Jersey resident or acquires Jersey income must notify Revenue Jersey within 6 months (`je-corporate-income-tax`). Incorporation abroad does not exempt a resident business from licensing. Economic substance applies to resident companies with relevant-activity income.
+
+## Two worked examples that recompute
+
+### Hypothetical worked positions
 
 These are source illustrations for established facts, not a complete entity recommendation or first-year package.
 
@@ -135,7 +152,39 @@ These are source illustrations for established facts, not a complete entity reco
 5. **Two-member company.** A resident company with two members and seven hours' weekly work fails Article 5(4)'s one-member condition even if it has no employees. Do not adopt the broader guidance shorthand. No overall licence conclusion follows without checking other exemptions. Source: the same provision.
 6. **Status and disputed fee.** A sole trader with Standard status working seven hours fails Article 5(4)'s eligible-status condition. Separately, an entity receiving only class O trust-company services is outside Regulation 7(2)(b)'s higher-levy treatment; this does not establish its full JFSC fee category. Hold the disputed total. Sources: Order Article 5(4), Status Regulations and Disclosure Regulations Regulation 7.
 
-## Intake, holds and reviewer checks
+**Check of positions 1 and 2: incorporation charges and service choice.**
+
+```oa-check
+name: Jersey 2026 incorporation, five-day service plus online name reservation; one-day premium
+inputs:
+  five_day: 205
+  name_reservation: 10
+  one_day: 543
+steps:
+  - registry_items: five_day + name_reservation
+  - premium_one_day: one_day - five_day
+expected:
+  registry_items: 215
+  premium_one_day: 338
+```
+
+**Check of position 3 and the late-confirmation scale: an ordinarily administered company confirmed in April 2026.** The GBP 220 fee includes a GBP 145 levy, so the JFSC element is GBP 75 (derived). Filing after the end of March but before the end of April adds GBP 159 (derived total GBP 379).
+
+```oa-check
+name: Jersey 2026 annual confirmation, ordinarily administered entity, filed in April
+inputs:
+  fee: 220
+  levy: 145
+  late_charge_april: 159
+steps:
+  - jfsc_element: fee - levy
+  - total_if_late_april: fee + late_charge_april
+expected:
+  jfsc_element: 75
+  total_if_late_april: 379
+```
+
+## Ask the client first
 
 Record the requested period; proposed legal form, memorandum and member/share/guarantee rights; owners/controllers; applicant/nominated person; Jersey office; activity; exact CHW statuses; everyone working for the business and weekly hours; staffing/immigration permissions; desired service; administered-entity fee category; existing incorporation date; and each registration/filing stream. Unknown capital, fees, ownership or status remains unknown, never a zero cost or an exemption.
 
@@ -148,26 +197,25 @@ Record the requested period; proposed legal form, memorandum and member/share/gu
 
 Every recommendation, eligibility decision and monetary position requires reviewer attention, regardless of amount; this is review policy. Extend the reviewer brief with provision/version, applicant/owner/status evidence, each licence stream, selected fee category, missing costs and separate registry/tax calendars. Reconcile the same source conditions, fees and dates across outputs. Do not present the complete package while a mandatory slot or dependent position remains held.
 
-## Sources and revision
+## Sources
 
 The source library and coverage gaps are in references.md. Version 1.2 adds current incorporation/fee and CHWL evidence checked on 15 October 2026. Earlier selected Companies Law accounts/records/audit and substance provisions were checked on 11 October; those captures were reused, without a fresh full-law verification. Complete entity selection/capital, fee-category interpretation, regulated/partnership reporting, statutory accounts formats, direct data-protection rules and specialist substance guidance remain outstanding. This draft awaits professional review.
 
-<!-- openaccountants-cta-block -->
+| Source | URL | Read on |
+|---|---|---|
+| Companies (Jersey) Law 1991, Arts. 3 to 9, 103 to 105, 108 and 113: read for company forms, memorandum, incorporation, records, accounts and audit | https://www.jerseylaw.je/laws/current/l_30_1991 | 2026-10-11 |
+| JFSC, 2026 Fees Notice (final), Part I sections 1, 3 and 6: read for incorporation, annual confirmation, late-confirmation and name reservation fees | https://www.jerseyfsc.org/media/kdpn4ow1/2026-fees-notices.pdf | 2026-11-14 |
+| JFSC, Incorporate a company: read for the incorporation checklist and processing | https://www.jerseyfsc.org/registry/register-or-make-a-change/incorporate-a-company/ | 2026-10-15 |
+| JFSC, About companies (14 July 2025): read for submission routes | https://www.jerseyfsc.org/registry/register-or-make-a-change/about-companies/ | 2026-10-15 |
+| JFSC, Annual confirmation: read for the 1 January to end of February window and the 21-day change rule | https://www.jerseyfsc.org/registry/annual-confirmation/ | 2026-10-15 |
+| Financial Services (Disclosure and Provision of Information) Regulations 2020, Reg. 7: read for the GBP 175 and GBP 145 levy | https://www.jerseylaw.je/laws/current/ro_138_2020 | 2026-10-15 |
+| Control of Housing and Work (Jersey) Law 2012, Arts. 22 to 25: read for business licences | https://www.jerseylaw.je/laws/current/l_31_2012 | 2026-10-15 |
+| Control of Housing and Work (Licences and Exemptions) Order 2026, Arts. 5 and 6: read for the small-hours exemption and staffing | https://www.jerseylaw.je/laws/current/ro_40_2026 | 2026-10-15 |
+| Control of Housing and Work (Residential and Employment Status) Regulations, Reg. 24: read for Standard status | https://www.jerseylaw.je/laws/current/ro_16_2025 | 2026-10-15 |
+| Government of Jersey, Starting a business: read for the startup sequence | https://www.gov.je/Industry/BusinessAdviceHub/StartingABusiness/Pages/home.aspx | 2026-10-15 |
+| Government of Jersey, Control of housing and work business guidance: read for licence fees and processing | https://www.gov.je/Industry/BusinessAdviceHub/IndustryRegulationsResponsibilities/Pages/ControlHousingWorkBusinessGuidance.aspx | 2026-10-15 |
+| Revenue Jersey, Corporate tax return notes: read for accounts attached to returns | https://www.gov.je/TaxesMoney/IncomeTax/Companies/CompanyTaxGuidance/pages/companytaxreturnnotes.aspx | 2026-10-15 |
+| Income Tax (Jersey) Law 1961, Arts. 120AB and 120AC: read for the MNE return exception | https://www.jerseylaw.je/laws/current/l_29_1961 | 2026-10-15 |
+| Taxation (Companies, Economic Substance) (Jersey) Law 2019, Arts. 3 to 5A: read for relevant activities and the substance test | https://www.jerseylaw.je/laws/current/l_3_2019 | 2026-10-11 |
 
----
-
-## Talk to a verified accountant
-
-This guide is maintained in the
-[ryanduguid/openaccountants fork](https://github.com/ryanduguid/openaccountants).
-Check its quality tier, recorded review status and cited sources before use.
-Choose a practitioner whose credentials and engagement scope you have verified.
-The links below are optional upstream services; they do not publish or verify
-this fork's changes.
-
-- Upstream connection service: https://www.openaccountants.com/connect
-- Upstream accountant network: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
+Not yet confirmed: complete entity selection and capital rules; the JFSC notice's annual fee category for some administered entities (disputed); direct data-protection registration rules; regulated and partnership reporting; complete licensing and worker branches; a 2027 annual confirmation fee.
