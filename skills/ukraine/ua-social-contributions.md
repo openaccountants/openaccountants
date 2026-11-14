@@ -35,7 +35,7 @@ The unified social contribution (єдиний соціальний внесок,
 | ЄСВ rate | 22% of the base | 2026 | https://zakon.rada.gov.ua/laws/show/2464-17 (art. 8 part 5) |
 | Rate on pay of employees with disabilities | 8.41% | 2026 | same, art. 8 part 13 |
 | Minimum wage from 1 January 2026 | UAH 8,647 a month | 2026 | https://zakon.rada.gov.ua/laws/show/4695-20 (art. 8) |
-| Minimum contribution (22% x minimum wage) | UAH 1,902.34 a month | 2026 | ЄСВ law art. 1 point 5, art. 8 part 5; Budget art. 8, https://zir.tax.gov.ua/docs/stavki/esv.pdf |
+| Minimum contribution (22% x minimum wage) | UAH 1,902.34 a month (computed) | 2026 | ЄСВ law art. 1 point 5, art. 8 part 5; Budget art. 8, https://zir.tax.gov.ua/docs/stavki/esv.pdf |
 | Minimum for a quarter / a year | UAH 5,707.02 / UAH 22,828.08 | 2026 | computed from the line above, https://zir.tax.gov.ua/docs/stavki/esv.pdf |
 | Maximum monthly base (except service members and police) | 20 minimum wages, UAH 172,940 | 2026 | https://zakon.rada.gov.ua/laws/show/4695-20 (art. 32) |
 | Maximum monthly contribution | UAH 38,046.80 (22% x 172,940) | 2026 | computed from the two lines above, https://zt.tax.gov.ua/media-ark/news-ark/print-987217.html |

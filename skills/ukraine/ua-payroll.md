@@ -32,7 +32,7 @@ An employer in Ukraine is a tax agent for its staff. From each salary it withhol
 | Employer ЄСВ | 22% of gross pay, on top | 2026 | https://zakon.rada.gov.ua/laws/show/2464-17 (art. 8 part 5) |
 | Employer ЄСВ for employees with disabilities | 8.41% | 2026 | same, art. 8 part 13 |
 | Minimum wage | UAH 8,647 a month; UAH 52 an hour | 2026 | https://zakon.rada.gov.ua/laws/show/4695-20 (art. 8) |
-| ЄСВ floor at the main place of work | UAH 1,902.34 a month (22% x 8,647) | 2026 | ЄСВ law art. 8 part 5; Budget art. 8, https://zir.tax.gov.ua/docs/stavki/esv.pdf |
+| ЄСВ floor at the main place of work | UAH 1,902.34 a month (computed: 22% x 8,647) | 2026 | ЄСВ law art. 8 part 5; Budget art. 8, https://zir.tax.gov.ua/docs/stavki/esv.pdf |
 | ЄСВ maximum base | 20 minimum wages, UAH 172,940 a month | 2026 | https://zakon.rada.gov.ua/laws/show/4695-20 (art. 32) |
 | ЄСВ maximum per person | UAH 38,046.80 a month | 2026 | computed: 22% x 172,940, https://zt.tax.gov.ua/media-ark/news-ark/print-987217.html |
 | Tax social benefit (ПСП), basic | UAH 1,664 a month (50% of UAH 3,328) | 2026 | TCU art. 169.1.1; Budget art. 7, https://zir.tax.gov.ua/docs/stavki/amount_of_the_tax_social_benefit.pdf |
