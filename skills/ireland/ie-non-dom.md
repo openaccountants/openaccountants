@@ -1,13 +1,14 @@
 ---
 name: ie-non-dom
 description: "Use this skill for any question about Ireland's non-dom tax rules. Trigger on: \"Ireland non-dom\", \"Irish non-domiciled\", \"remittance basis Ireland\", \"move to Ireland tax\", \"Irish tax foreign income\", \"Ireland domicile tax\", \"not domiciled Ireland\", \"Irish resident non-dom\", \"Ireland foreign dividends tax\", \"Irish non-dom CGT\". Covers residence and ordinary residence, non-dom eligibility, the remittance basis for foreign income and foreign gains, Irish-source income treatment, CGT for non-doms (33% for disposals up to 6 October 2026, 31% from 7 October 2026, provisional until the Finance (No. 2) Act 2026 is in force), and the domicile levy for Irish domiciled individuals. Tax year 2026. It does not compare Ireland with the UK regime."
-version: 1.1
+version: 2.0
 jurisdiction: IE
 tax_year: 2026
-last_updated: 2026-10-24
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+type: situation-rules
 domain: cross-border
 ---
 
@@ -15,7 +16,11 @@ domain: cross-border
 
 This skill covers how Ireland taxes an individual who is resident or ordinarily resident in Ireland but not domiciled here. It sets out the residence and ordinary residence tests, the remittance basis for foreign income and foreign gains, what the remittance basis does not cover, and the domicile levy (which applies only to people who ARE Irish domiciled). Figures are for tax year 2026. The Irish tax year is the calendar year, 1 January to 31 December.
 
-## Quick reference
+## Scope
+
+Who can use the remittance basis in Ireland for tax year 2026, how foreign income and foreign gains are taxed when brought in, residence and ordinary residence, and the domicile levy for Irish domiciled individuals.
+
+### Quick reference
 
 | Item | Position | Where it is proven |
 | --- | --- | --- |
@@ -29,13 +34,12 @@ This skill covers how Ireland taxes an individual who is resident or ordinarily 
 
 ## Residence: who is resident in Ireland for a tax year
 
-| Item | Value | Note (verbatim, revenue.ie) |
-| --- | --- | --- |
-| Source | all figures below | https://www.revenue.ie/en/jobs-and-pensions/tax-residence/resident-for-tax-purposes.aspx |
-| Days test, one year | 183 days or more in the tax year | "183 days or more in a tax year or" |
-| Days test, two years | 280 days or more across the current and preceding tax year together | "280 days or more in total, taking the current tax year plus the preceding tax year together." |
-| Short stay | 30 days or less in a tax year: not resident | "You will not be resident in Ireland if you are here for 30 days or less in a tax year." |
-| A day | Present for any part of a day | "You will be present in Ireland for a day if you are here for any part of a day." |
+| Item | Value | Note (verbatim, revenue.ie) | Source |
+| --- | --- | --- |---|
+| Days test, one year | 183 days or more in the tax year | "183 days or more in a tax year or" | https://www.revenue.ie/en/jobs-and-pensions/tax-residence/resident-for-tax-purposes.aspx |
+| Days test, two years | 280 days or more across the current and preceding tax year together | "280 days or more in total, taking the current tax year plus the preceding tax year together." | https://www.revenue.ie/en/jobs-and-pensions/tax-residence/resident-for-tax-purposes.aspx |
+| Short stay | 30 days or less in a tax year: not resident | "You will not be resident in Ireland if you are here for 30 days or less in a tax year." | https://www.revenue.ie/en/jobs-and-pensions/tax-residence/resident-for-tax-purposes.aspx |
+| A day | Present for any part of a day | "You will be present in Ireland for a day if you are here for any part of a day." | https://www.revenue.ie/en/jobs-and-pensions/tax-residence/resident-for-tax-purposes.aspx |
 
 - The two days tests are joined by OR. Either one makes the individual resident for that tax year.
 - The two-year test has a floor. TDM Part 34-00-01 says that if an individual is present for not more than 30 days in a tax year, "that individual will not be resident for that tax year", and "such days are ignored for the purposes of (b) above" (the 280-day test). Source: https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-34/34-00-01.pdf
@@ -44,12 +48,11 @@ This skill covers how Ireland taxes an individual who is resident or ordinarily 
 
 ## Ordinary residence
 
-| Item | Value | Note (verbatim, revenue.ie) |
-| --- | --- | --- |
-| Source | all figures below | https://www.revenue.ie/en/jobs-and-pensions/tax-residence/ordinarily-resident-tax-purposes.aspx |
-| Becoming ordinarily resident | After three consecutive tax years of residence, from the beginning of the fourth tax year | "you become ordinarily resident from the beginning of the fourth tax year" |
-| Ceasing after leaving | Remains ordinarily resident for three consecutive tax years after leaving | "you continue to be ordinarily resident for three consecutive tax years" |
-| Other foreign income limit while ordinarily resident but not resident | EUR 3,810 | "If it is more than" this amount, "the full amount is taxable" |
+| Item | Value | Note (verbatim, revenue.ie) | Source |
+| --- | --- | --- |---|
+| Becoming ordinarily resident | After three consecutive tax years of residence, from the beginning of the fourth tax year | "you become ordinarily resident from the beginning of the fourth tax year" | https://www.revenue.ie/en/jobs-and-pensions/tax-residence/ordinarily-resident-tax-purposes.aspx |
+| Ceasing after leaving | Remains ordinarily resident for three consecutive tax years after leaving | "you continue to be ordinarily resident for three consecutive tax years" | https://www.revenue.ie/en/jobs-and-pensions/tax-residence/ordinarily-resident-tax-purposes.aspx |
+| Other foreign income limit while ordinarily resident but not resident | EUR 3,810 | "If it is more than" this amount, "the full amount is taxable" | https://www.revenue.ie/en/jobs-and-pensions/tax-residence/ordinarily-resident-tax-purposes.aspx |
 
 - WHO: an individual who has left Ireland, is no longer resident, but is still ordinarily resident.
 - WHAT: that individual pays Irish tax on worldwide income EXCEPT (i) income from a trade or profession no part of which is carried on in Ireland, (ii) income from an office or employment where all the duties (except merely incidental duties) (TDM Part 34-00-01 section 2, which also says that performing the duties in Ireland "for less than 30 days in any tax year may generally be regarded as incidental") are performed outside Ireland, and (iii) other foreign income, such as investment income, of EUR 3,810 or less.
@@ -71,15 +74,14 @@ Sources: https://www.revenue.ie/en/jobs-and-pensions/tax-residence/domicile-domi
 
 ## The remittance basis for foreign income
 
-| Item | Position | Note (verbatim, TDM Part 05-01-21A) |
-| --- | --- | --- |
-| Source | all figures below | https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-05/05-01-21a.pdf |
-| Who | A person who satisfies Revenue that he or she is not domiciled in the State | "provides that section 71(1) shall not apply to any person who satisfies Revenue that he or she is not domiciled in the State" |
-| What is taxed | Foreign income from foreign securities and possessions, on the actual sums received in the State in the tax year | "computed on the full amount of the actual sums received in the State" |
-| Domicile only, from 2010 | Irish citizens who are not ordinarily resident lost the remittance basis for 2010 and later years | "for 2010 and subsequent tax years, the remittance basis of assessment no longer applies in respect of the foreign income of an Irish citizen not ordinarily resident in the State" |
-| Not for Irish duties | Foreign employment income for duties performed in Ireland, from 1 January 2006 | "the remittance basis of assessment no longer applies to such income" |
-| Not for Case IV | Foreign income chargeable under Case IV of Schedule D | "it does not apply to income chargeable under Case IV of Schedule D" |
-| UK income | UK source income arising on or after 1 January 2008 can use the remittance basis | "the remittance basis may apply to UK source income arising on or after that date to individuals who are non-domiciled in the State" |
+| Item | Position | Note (verbatim, TDM Part 05-01-21A) | Source |
+| --- | --- | --- |---|
+| Who | A person who satisfies Revenue that he or she is not domiciled in the State | "provides that section 71(1) shall not apply to any person who satisfies Revenue that he or she is not domiciled in the State" | https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-05/05-01-21a.pdf |
+| What is taxed | Foreign income from foreign securities and possessions, on the actual sums received in the State in the tax year | "computed on the full amount of the actual sums received in the State" | https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-05/05-01-21a.pdf |
+| Domicile only, from 2010 | Irish citizens who are not ordinarily resident lost the remittance basis for 2010 and later years | "for 2010 and subsequent tax years, the remittance basis of assessment no longer applies in respect of the foreign income of an Irish citizen not ordinarily resident in the State" | https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-05/05-01-21a.pdf |
+| Not for Irish duties | Foreign employment income for duties performed in Ireland, from 1 January 2006 | "the remittance basis of assessment no longer applies to such income" | https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-05/05-01-21a.pdf |
+| Not for Case IV | Foreign income chargeable under Case IV of Schedule D | "it does not apply to income chargeable under Case IV of Schedule D" | https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-05/05-01-21a.pdf |
+| UK income | UK source income arising on or after 1 January 2008 can use the remittance basis | "the remittance basis may apply to UK source income arising on or after that date to individuals who are non-domiciled in the State" | https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-05/05-01-21a.pdf |
 
 Rules an assistant gets wrong:
 
@@ -94,12 +96,11 @@ Rules an assistant gets wrong:
 
 ## The remittance basis for foreign gains (CGT)
 
-| Item | Position | Note (verbatim, Revenue TDM) |
-| --- | --- | --- |
-| Source | all figures below | https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-02/02-01-03.pdf |
-| Charge | A person resident or ordinarily resident is chargeable on gains accruing in a year of assessment (section 29(2) of the Taxes Consolidation Act 1997) | "a person who is resident or ordinarily resident in the State is chargeable to CGT on gains accruing in a year of assessment" |
-| Remittance basis | Section 29(4) disapplies that charge for gains on assets "situated outside the State" accruing to a non-domiciled individual | "disapplies subsection (2) where the gain accrues from the disposal of assets “situated outside the State” to an individual who is not domiciled in the State" |
-| Crypto-assets | An asset with no location is not "situated outside the State"; the taxpayer must prove where the gain accrued | "the onus is on the taxpayer to prove where the gain accrued" |
+| Item | Position | Note (verbatim, Revenue TDM) | Source |
+| --- | --- | --- |---|
+| Charge | A person resident or ordinarily resident is chargeable on gains accruing in a year of assessment (section 29(2) of the Taxes Consolidation Act 1997) | "a person who is resident or ordinarily resident in the State is chargeable to CGT on gains accruing in a year of assessment" | https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-02/02-01-03.pdf |
+| Remittance basis | Section 29(4) disapplies that charge for gains on assets "situated outside the State" accruing to a non-domiciled individual | "disapplies subsection (2) where the gain accrues from the disposal of assets “situated outside the State” to an individual who is not domiciled in the State" | https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-02/02-01-03.pdf |
+| Crypto-assets | An asset with no location is not "situated outside the State"; the taxpayer must prove where the gain accrued | "the onus is on the taxpayer to prove where the gain accrued" | https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-02/02-01-03.pdf |
 
 - Irish assets: gains on assets situated in Ireland are taxed on the arising basis whatever the owner's domicile.
 - UK assets: TDM Part 05-01-21 says the remittance basis "applies to UK source chargeable gains arising from disposals made on or after 20 November 2008". Source: https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-05/05-01-21.pdf
@@ -108,24 +109,21 @@ Rules an assistant gets wrong:
 
 ### CGT figures for gains that are taxed
 
-| Item | Value | Note (verbatim, revenue.ie) |
-| --- | --- | --- |
-| Source | all figures below | https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/how-to-calculate-cgt.aspx |
-| CGT rate, most gains, disposals on or after 7 October 2026 (provisional) | 31% | "The rate of CGT is 31% for most gains." "Rates for most gains changed on 7 October 2026 to 31%." |
-| CGT rate, most gains, disposals up to 6 October 2026 | 33% | "6 October 2026 33%" (historic rates table) |
-| CGT rate, development land (unchanged) | 33% | "33% for gains from development land." |
+| Item | Value | Note (verbatim, revenue.ie) | Source |
+| --- | --- | --- |---|
+| CGT rate, most gains, disposals on or after 7 October 2026 (provisional) | 31% | "The rate of CGT is 31% for most gains." "Rates for most gains changed on 7 October 2026 to 31%." | https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/how-to-calculate-cgt.aspx |
+| CGT rate, most gains, disposals up to 6 October 2026 | 33% | "6 October 2026 33%" (historic rates table) | https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/how-to-calculate-cgt.aspx |
+| CGT rate, development land (unchanged) | 33% | "33% for gains from development land." | https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/how-to-calculate-cgt.aspx |
 
-| Item | Value | Note (verbatim, revenue.ie) |
-| --- | --- | --- |
-| Source | all figures below | https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/what-is-exempt-from-cgt.aspx |
-| Personal exemption, each tax year, after losses | EUR 1,270 | "of your gain or gains (after deducting losses) are exempt from CGT" |
+| Item | Value | Note (verbatim, revenue.ie) | Source |
+| --- | --- | --- |---|
+| Personal exemption, each tax year, after losses | EUR 1,270 | "of your gain or gains (after deducting losses) are exempt from CGT" | https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/what-is-exempt-from-cgt.aspx |
 
-| Item | Value | Note (verbatim, revenue.ie) |
-| --- | --- | --- |
-| Source | all figures below | https://www.revenue.ie/en/gains-gifts-and-inheritance/cgt-reliefs/revised-entrepreneur-relief.aspx |
-| Revised Entrepreneur Relief rate | 10% | "on gains from the disposal of chargeable business assets" |
-| Lifetime limit, gains on or after 1 January 2026 | EUR 1,500,000 | "For gains arising on or after 1 January 2026, the lifetime limit increases" |
-| Lifetime limit, gains 1 January 2016 to 31 December 2025 | EUR 1,000,000 | "of gains arising between 1 January 2016 and 31 December 2025" |
+| Item | Value | Note (verbatim, revenue.ie) | Source |
+| --- | --- | --- |---|
+| Revised Entrepreneur Relief rate | 10% | "on gains from the disposal of chargeable business assets" | https://www.revenue.ie/en/gains-gifts-and-inheritance/cgt-reliefs/revised-entrepreneur-relief.aspx |
+| Lifetime limit, gains on or after 1 January 2026 | EUR 1,500,000 | "For gains arising on or after 1 January 2026, the lifetime limit increases" | https://www.revenue.ie/en/gains-gifts-and-inheritance/cgt-reliefs/revised-entrepreneur-relief.aspx |
+| Lifetime limit, gains 1 January 2016 to 31 December 2025 | EUR 1,000,000 | "of gains arising between 1 January 2016 and 31 December 2025" | https://www.revenue.ie/en/gains-gifts-and-inheritance/cgt-reliefs/revised-entrepreneur-relief.aspx |
 
 The 31% rate comes from Financial Resolution No. 3 of 6 October 2026, which amends section 28(3) of the Taxes Consolidation Act 1997 for "disposals of assets made on or after 7 October 2026" ([Dáil record, 6 October 2026](https://data.oireachtas.ie/akn/ie/debateRecord/dail/2026-10-06/debate/mul@/main.xml)). It has effect under the Provisional Collection of Taxes Act 1927 until the Finance (No. 2) Act 2026 is in force; [ie-cgt](ie-cgt.md) sets out when it would lapse. If it lapses, those disposals go back to 33%.
 
@@ -135,13 +133,12 @@ Entrepreneur Relief has ownership and working-time conditions. Use [ie-cgt](ie-c
 
 ## The domicile levy (Irish domiciled individuals only)
 
-| Item | Value | Note (verbatim, TDM Part 18C-00-01) |
-| --- | --- | --- |
-| Source | all figures below | https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-18c/18c-00-01.pdf |
-| Levy, per year | EUR 200,000 | "and is payable annually" |
-| Condition 2: world-wide income in the tax year must be more than | EUR 1,000,000 | "an individual must have “world-wide income” in excess of" |
-| Condition 3: liability to Irish income tax in the tax year must be less than | EUR 200,000 | "whose liability to Irish income tax in the tax year is less than" |
-| Condition 4: market value of Irish property on 31 December in the tax year must be more than | EUR 5,000,000 | "Irish property to which the individual is beneficially entitled in possession on 31 December in the tax year must exceed" |
+| Item | Value | Note (verbatim, TDM Part 18C-00-01) | Source |
+| --- | --- | --- |---|
+| Levy, per year | EUR 200,000 | "and is payable annually" | https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-18c/18c-00-01.pdf |
+| Condition 2: world-wide income in the tax year must be more than | EUR 1,000,000 | "an individual must have “world-wide income” in excess of" | https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-18c/18c-00-01.pdf |
+| Condition 3: liability to Irish income tax in the tax year must be less than | EUR 200,000 | "whose liability to Irish income tax in the tax year is less than" | https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-18c/18c-00-01.pdf |
+| Condition 4: market value of Irish property on 31 December in the tax year must be more than | EUR 5,000,000 | "Irish property to which the individual is beneficially entitled in possession on 31 December in the tax year must exceed" | https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-18c/18c-00-01.pdf |
 
 - WHO: a "relevant individual" is an individual who meets ALL four conditions, joined by AND in TDM paragraph 2.1: domiciled in Ireland in the tax year; world-wide income above the income figure in the table above; Irish income tax liability below the tax figure in the table above; and Irish property on 31 December above the property figure in the table above. A non-domiciled individual is never liable.
 - Residence does not matter: "residence or ordinary residence status is not a factor in determining whether they are considered to be a" relevant individual (TDM Part 34-00-01 paragraph 4.3).
@@ -150,6 +147,15 @@ Entrepreneur Relief has ownership and working-time conditions. Use [ie-cgt](ie-c
 - Credit: Irish income tax paid for the year is a credit against the levy "but only to the extent that such income tax has been paid at the same time as, or before, the domicile levy for that year is paid" (section 531AC of the Taxes Consolidation Act 1997). USC cannot be offset (Revenue domicile page).
 - Anti-avoidance: property transferred on or after 18 February 2010 for less than market value to a spouse, civil partner, minor children (or the minor children of their civil partner), a discretionary trust or a foundation is treated as the transferor's property on each valuation date.
 - Pay and file: Form DL1, on a self-assessment basis, "on or before 31 October in the year following the valuation date". The valuation date is 31 December. Where the individual pays the income tax balance through ROS, the deadline is extended to the ROS pay and file date.
+
+## Ask the client first
+
+- Which tax years were you present in Ireland, and how many days in each, including the year before arrival?
+- Where were you born, where was your father domiciled at your birth, and do you intend to stay in Ireland permanently or to return to another country?
+- Are you an Irish citizen, and have you ever been Irish domiciled?
+- What foreign income and foreign assets do you have, where are they located, and which bank accounts hold income, capital or a mix of both?
+- What money or property have you brought into Ireland in the year, from which account, and have you transferred foreign funds to a spouse or civil partner or used them to repay a loan?
+- Do you work for a foreign employer, and on how many days did you perform the duties in Ireland?
 
 ## The method, step by step
 
@@ -163,14 +169,43 @@ Entrepreneur Relief has ownership and working-time conditions. Use [ie-cgt](ie-c
 8. If the individual IS Irish domiciled, test the four domicile levy conditions together and, if all are met, file Form DL1 and pay by the date above, after crediting Irish income tax already paid. Source: https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-18c/18c-00-01.pdf
 9. If the individual has left Ireland but is still ordinarily resident, apply the three exceptions and the EUR 3,810 cliff for other foreign income, then check any double taxation agreement. Source: https://www.revenue.ie/en/jobs-and-pensions/tax-residence/ordinarily-resident-tax-purposes.aspx
 
-## Ask the client first
+## Worked cases
 
-- Which tax years were you present in Ireland, and how many days in each, including the year before arrival?
-- Where were you born, where was your father domiciled at your birth, and do you intend to stay in Ireland permanently or to return to another country?
-- Are you an Irish citizen, and have you ever been Irish domiciled?
-- What foreign income and foreign assets do you have, where are they located, and which bank accounts hold income, capital or a mix of both?
-- What money or property have you brought into Ireland in the year, from which account, and have you transferred foreign funds to a spouse or civil partner or used them to repay a loan?
-- Do you work for a foreign employer, and on how many days did you perform the duties in Ireland?
+### Case 1: foreign income, remittance basis
+
+A non-domiciled individual resident in Ireland in 2026 has EUR 100,000 of foreign rental income (Case III) and brings EUR 30,000 of it into Ireland in the year. On the remittance basis (section 71 TCA 1997) only the EUR 30,000 remitted is taxed in Ireland; the other EUR 70,000 is not taxed while it stays abroad. Irish employment income would be taxed in full whatever is remitted.
+
+```oa-check
+name: Ireland 2026 remittance basis foreign income
+inputs:
+  foreign_income: 100000
+  remitted: 30000
+steps:
+  - taxable_in_ireland: min(remitted, foreign_income)
+  - kept_abroad_untaxed: foreign_income - taxable_in_ireland
+expected:
+  taxable_in_ireland: 30000
+  kept_abroad_untaxed: 70000
+```
+
+### Case 2: a foreign gain remitted, disposal after 7 October 2026
+
+The same person sells foreign shares on 1 December 2026 for a gain of EUR 50,000 and remits all of the proceeds. The remitted gain is chargeable; after the EUR 1,270 personal exemption, CGT at 31% (the provisional rate for disposals from 7 October 2026 under Financial Resolution No. 3) is EUR 15,106.30. Had the disposal been on 6 October 2026, the rate would be 33% (EUR 16,080.90). The disposal date decides the rate.
+
+```oa-check
+name: Ireland 2026 remitted foreign gain CGT before and after 7 October
+inputs:
+  gain: 50000
+  exemption: 1270
+steps:
+  - chargeable: gain - exemption
+  - cgt_31: round(chargeable * 0.31, 2)
+  - cgt_33: round(chargeable * 0.33, 2)
+expected:
+  chargeable: 48730
+  cgt_31: 15106.30
+  cgt_33: 16080.90
+```
 
 ## When to refuse or refer
 
@@ -183,24 +218,28 @@ Entrepreneur Relief has ownership and working-time conditions. Use [ie-cgt](ie-c
 
 ## Sources
 
-- Revenue, How to know if you are resident for tax purposes: https://www.revenue.ie/en/jobs-and-pensions/tax-residence/resident-for-tax-purposes.aspx
-- Revenue, How to know if you are ordinarily resident for tax purposes: https://www.revenue.ie/en/jobs-and-pensions/tax-residence/ordinarily-resident-tax-purposes.aspx
-- Revenue, What is domicile and the domicile levy?: https://www.revenue.ie/en/jobs-and-pensions/tax-residence/domicile-domicile-levy.aspx
-- Revenue TDM Part 34-00-01, Provisions Relating to Residence of Individuals: https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-34/34-00-01.pdf
-- Revenue TDM Part 05-01-21A, The Remittance Basis of Assessment: https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-05/05-01-21a.pdf
-- Revenue TDM Part 05-01-21, The remittance basis as regards UK source income and gains: https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-05/05-01-21.pdf
-- Revenue TDM Part 02-01-03, Taxation of Crypto-Asset Transactions (section 8, remittance basis): https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-02/02-01-03.pdf
-- Revenue TDM Part 18C-00-01, Domicile Levy: https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-18c/18c-00-01.pdf
-- Revenue, How to calculate CGT: https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/how-to-calculate-cgt.aspx
-- Revenue, What is exempt from CGT: https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/what-is-exempt-from-cgt.aspx
-- Revenue, Revised Entrepreneur Relief: https://www.revenue.ie/en/gains-gifts-and-inheritance/cgt-reliefs/revised-entrepreneur-relief.aspx
-- Dáil Éireann debate, 6 October 2026, Financial Resolution No. 3 (Capital Gains Tax), read 23 October 2026: https://data.oireachtas.ie/akn/ie/debateRecord/dail/2026-10-06/debate/mul@/main.xml
-- Taxes Consolidation Act 1997, section 29 as enacted, read 23 October 2026: https://www.irishstatutebook.ie/eli/1997/act/39/section/29/enacted/en/html
-- Taxes Consolidation Act 1997, section 542 as enacted (time of disposal), read 23 October 2026: https://www.irishstatutebook.ie/eli/1997/act/39/section/542/enacted/en/html
-- Finance (No. 2) Bill 2026 (Bill 98 of 2026), as initiated, section 36, read 23 October 2026: https://data.oireachtas.ie/ie/oireachtas/bill/2026/98/eng/initiated/b9826d.pdf
+Every page below was opened on 14 November 2026 and the quoted words in the tables above were found on it that day.
 
-Revenue's How to calculate CGT page was read again on 23 October 2026 for the 31% and 33% rates.
+| Source | What was read | URL | Read on |
+|---|---|---|---|
+| Revenue, How to know if you are resident for tax purposes | Read for the 183 and 280 day tests, 30 days, part of a day | https://www.revenue.ie/en/jobs-and-pensions/tax-residence/resident-for-tax-purposes.aspx | 2026-11-14 |
+| Revenue, How to know if you are ordinarily resident for tax purposes | Read for three years in and out, EUR 3,810 limit | https://www.revenue.ie/en/jobs-and-pensions/tax-residence/ordinarily-resident-tax-purposes.aspx | 2026-11-14 |
+| Revenue, What is domicile and the domicile levy? | Read for domicile and the levy overview | https://www.revenue.ie/en/jobs-and-pensions/tax-residence/domicile-domicile-levy.aspx | 2026-11-14 |
+| Revenue TDM Part 34-00-01, Provisions Relating to Residence of Individuals | Read for residence rules | https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-34/34-00-01.pdf | 2026-11-14 |
+| Revenue TDM Part 05-01-21A, The Remittance Basis of Assessment | Read for the remittance basis: who, what it covers, Irish citizens from 2010 | https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-05/05-01-21a.pdf | 2026-11-14 |
+| Revenue TDM Part 05-01-21, The remittance basis as regards UK source income and gains | Read for UK income from 1 January 2008, UK gains from 20 November 2008 | https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-05/05-01-21.pdf | 2026-11-14 |
+| Revenue TDM Part 02-01-03, Taxation of Crypto-Asset Transactions (section 8, remittance basis) | Read for section 8, crypto and the remittance basis | https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-02/02-01-03.pdf | 2026-11-14 |
+| Revenue TDM Part 18C-00-01, Domicile Levy | Read for the levy of EUR 200,000 and its four conditions (EUR 1,000,000, EUR 200,000, EUR 5,000,000) | https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-18c/18c-00-01.pdf | 2026-11-14 |
+| Revenue, How to calculate CGT | Read for 31% from 7 October 2026, 33% before, development land 33% | https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/how-to-calculate-cgt.aspx | 2026-11-14 |
+| Revenue, What is exempt from CGT | Read for the EUR 1,270 personal exemption | https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/what-is-exempt-from-cgt.aspx | 2026-11-14 |
+| Revenue, Revised Entrepreneur Relief | Read for 10% and the EUR 1,500,000 and EUR 1,000,000 lifetime limits | https://www.revenue.ie/en/gains-gifts-and-inheritance/cgt-reliefs/revised-entrepreneur-relief.aspx | 2026-11-14 |
+| Dáil Éireann debate, 6 October 2026, Financial Resolution No. 3 (Capital Gains Tax) | Read for Financial Resolution No. 3 (31% CGT from 7 October 2026) | https://data.oireachtas.ie/akn/ie/debateRecord/dail/2026-10-06/debate/mul@/main.xml | 2026-11-14 |
+| Taxes Consolidation Act 1997, section 29 as enacted | Read for section 29(4) remittance of gains | https://www.irishstatutebook.ie/eli/1997/act/39/section/29/enacted/en/html | 2026-11-14 |
+| Taxes Consolidation Act 1997, section 542 as enacted (time of disposal) | Read for time of disposal | https://www.irishstatutebook.ie/eli/1997/act/39/section/542/enacted/en/html | 2026-11-14 |
+| Finance (No. 2) Bill 2026 (Bill 98 of 2026), as initiated, section 36 | Read for section 36 (31% rate) of the Bill as initiated | https://data.oireachtas.ie/ie/oireachtas/bill/2026/98/eng/initiated/b9826d.pdf | 2026-11-14 |
+| Oireachtas, Finance (No. 2) Bill 2026 (Bill 98) page | Read for its stage: Dáil Committee Stage since 20 October 2026, not yet enacted (page updated 12 Nov 2026) | https://www.oireachtas.ie/en/bills/bill/2026/98/ | 2026-11-14 |
 
 Not yet confirmed: whether the Finance (No. 2) Act 2026 is enacted with the 31% rate unchanged. The rate on a remitted gain from a disposal before 7 October 2026 rests on the wording of section 29(4)(b), the resolution and Bill 98 section 36(2); no Revenue guidance deals with remittances across this rate change.
 
 > **Working paper only.** Irish domicile determination is fact-specific and can have significant gift and inheritance tax implications in addition to income tax. Engage a qualified Irish tax adviser.
+
