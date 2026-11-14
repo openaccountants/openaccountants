@@ -1,392 +1,170 @@
 ---
 name: us-ca-return-assembly
-description: Final orchestrator skill that assembles the complete federal and California filing package for California resident sole proprietors and single-member LLCs disregarded for federal tax. Consumes outputs from all federal content skills (bookkeeping, Schedule C/SE, QBI, retirement, SE health insurance, quarterly estimated tax, federal assembly, 1099-NEC) and all California content skills (540 individual return, 540-ES estimated tax, 568 SMLLC where applicable, 3853 coverage) to produce a single unified reviewer package containing every worksheet, every form, every brief section, all cross-skill reconciliations, and the final taxpayer action list with payment instructions, filing instructions, and 2026 planning. This is the capstone skill that runs last and produces the final deliverable. MUST be loaded alongside us-tax-workflow-base v0.2 or later and all content skills listed above. California residents only.
-version: 0.2
+description: Final assembly of the 2026 federal and California return package for a full-year California resident sole proprietor or single-member LLC owner. Runs the skills in dependency order (bookkeeping, Schedule C and SE, retirement, health insurance, QBI, federal assembly, federal estimates, 1099-NEC, California Form 540, Form 568, California estimates, form FTB 3853), then checks that each figure lands where the next form expects it, that federal and California agree where they must and differ only where California law says so, and produces three files for a credentialed reviewer (master workbook, reviewer brief, taxpayer action list). Trigger after us-ca-freelance-intake on "assemble the return", "finish my federal and California return", "reviewer package", "complete return package California".
+version: "1.0"
 jurisdiction: US-CA
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: 2026-11-13
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
+type: router
 ---
 
-# US Ca Return Assembly
+# Federal and California return assembly for a California freelancer, tax year 2026
 
-## How this workflow runs
+> **Source-cited draft.** Built from the 2025 Form 540 and its booklet, the 2026 Form 540-ES instructions and the FTB extension page, read on 2026-11-13, and from the skills it routes to. No accountant has reviewed it. All outputs must be reviewed by a qualified tax professional before filing.
 
-Intake and the content Guides have already collected the facts for this working paper. Use what they captured, and ask the user again only where something is missing or contradicts itself.
+**Answer first.** This skill computes nothing new. It runs the federal and California skills in the order below, checks that every figure carries to the right line, records every refusal and judgment call, and hands a credentialed reviewer (enrolled agent, CPA or attorney) three files: a master workbook, a reviewer brief and a taxpayer action list. If an upstream skill did not run or a check fails, it says which one and carries on to the end rather than stopping to ask how to proceed.
 
-Specifically:
+## Scope and who this is for
 
-- **Do NOT ask the user "how deep do you want me to go"** or "do you want the full package" or any variant. The user asked for a tax return. They want the tax return. Produce it.
-- **Do NOT announce how many tokens or tool calls this will take.** The user does not care about your tool budget. Execute.
-- **Do NOT ask which deliverables to prioritize.** Produce all deliverables listed in Section 8. If you run out of context mid-execution, finish the computation work first (numbers, positions, flags) then produce whatever formatted outputs you can, and at the very end state clearly which deliverables were not produced and why. Partial output with an honest status beats a question asking permission.
-- **Do NOT re-validate scope that intake already validated.** If `us-ca-freelance-intake` produced an intake package, trust it. You can cross-check specific numbers during reconciliation but do not re-interrogate the user about filing status, residency, business structure, or anything else intake already captured.
-- **Do NOT pause between content skills to check in.** Run them in dependency order (Section 2) without prose status updates between each one. A single status message at the end is fine; per-skill status is noise.
-- **Self-checks are targets, not blockers.** If a self-check fails, note it in the reviewer brief's open flags section and continue. Do NOT halt the entire workflow because one self-check in one content skill had an ambiguous answer. The reviewer handles edge cases.
-- **Primary source citations go in the final reviewer brief, not in intermediate computation steps.** Don't stop to cite §199A in the middle of computing QBI. Compute QBI, then cite §199A once in the brief's QBI section.
+A full-year California resident, sole proprietor or single-member LLC disregarded for federal tax, tax year 2026 (or 2025 on extension, with that year's figures), filing Form 1040, Form 540 and, for an LLC, Form 568. Out of scope: multi-state returns, foreign income, partnerships and corporations, e-filing itself (the reviewer files), and paying (the taxpayer pays).
 
-**The user has already been told (by the intake skill) that the final package requires credentialed reviewer signoff before filing. You do not need to reiterate this before every step. State it once in the final output and move on.**
+## The method, step by step
 
-**Failure mode to avoid:** The skill halts mid-execution and asks the user a meta-question about workflow pacing. This is disqualifying behavior. If you feel the urge to ask "how should I proceed," the correct action is to pick the most defensible path and proceed, flagging the decision in the reviewer brief so the reviewer can challenge it.
+### How it runs
 
-## What this file is
+- Use what intake (`us-ca-freelance-intake`) collected. Ask the user again only where something is missing or contradicts itself; do not re-interrogate filing status, residency or entity.
+- Do not ask how deep to go, which deliverables to prioritize, or announce a tool budget. Produce the package.
+- Run the skills in order without status messages between them; one status line at the end.
+- A failed self-check is a flag in the reviewer brief, not a stop.
+- Cite sources once, in the reviewer brief, not in the middle of each computation.
+- State once, in the final output, that a credentialed reviewer must sign off before filing.
+- If context runs short, finish the numbers, positions and flags first, then state which files are missing or partial.
 
-The final capstone skill. Every other skill feeds into this one. The output is the complete reviewer package that a credentialed reviewer (Enrolled Agent, CPA, or attorney under Circular 230) can review, sign off on, and deliver to the taxpayer along with filing instructions.
+### Order of the skills
 
-This skill does not compute anything new. Its job is to verify that every upstream skill ran, every upstream self-check passed, every cross-skill reconciliation holds, and the entire package is internally consistent.
+| Step | Skill | Needs |
+| --- | --- | --- |
+| 1 | `us-sole-prop-bookkeeping` | Intake package |
+| 2 | `us-schedule-c-and-se-computation` | Step 1 |
+| 3 | `us-self-employed-retirement` | Step 2 |
+| 4 | `us-self-employed-health-insurance` | Step 2 |
+| 5 | `us-qbi-deduction` | Steps 2 to 4 |
+| 6 | `us-federal-return-assembly` | Steps 2 to 5 |
+| 7 | `us-quarterly-estimated-tax` | Federal total tax from step 6 |
+| 8 | `us-1099-nec-issuance` | Step 1 (can run beside 2 to 7) |
+| 9 | `ca-540-individual-return` (figures from `ca-income-tax`) | Federal AGI from step 6 |
+| 10 | `ca-smllc-form-568` and `ca-llc-fee-and-tax` | LLC only; beside step 9 |
+| 11 | `ca-estimated-tax-540es` | California total tax from step 9 |
+| 12 | `ca-form-3853-coverage` | Coverage by month from intake; beside step 9 |
+| 13 | This skill | Steps 1 to 12 |
 
-## Section 1 — Scope
+### Checks that figures carry
 
-Produces the complete federal + California filing package for:
-- Full-year California residents
-- Sole proprietors or single-member LLCs disregarded for federal tax
-- Tax year 2025
-- Filing Form 1040 and Form 540 (and Form 568 if SMLLC)
+**Federal.** Schedule C net profit to Schedule 1 and Form 1040; Schedule SE tax to Schedule 2; half of SE tax, SE retirement and SE health insurance to Schedule 1 adjustments; QBI deduction below AGI; total tax; Form 2210 penalty; total payments. Line numbers come from `us-federal-return-assembly` for the 2026 forms.
 
-## Section 2 — Execution order enforcement
+**California** (2025 Form 540 line numbers until the 2026 form is published):
 
-The skill enforces the following execution order and refuses to proceed if any step is missing:
+| From | To |
+| --- | --- |
+| Federal AGI | Form 540 line 13 |
+| Schedule CA (540) Part I line 27 column B and column C | Lines 14 and 16 |
+| Bonus depreciation and section 179 differences (FTB 3885A) | Schedule CA Section B line 3 |
+| HSA deduction and employer HSA | Schedule CA Section C line 13 column B; line 1h column C |
+| QBI deduction | Nothing: it is below federal AGI |
+| California AGI | Line 17 |
+| Tax | Line 31; exemption credits line 32 |
+| Behavioral Health Services Tax | Line 62 (taxable income over $1,000,000) |
+| Use tax | Line 91 (never blank) |
+| FTB 3853 penalty or full-year coverage box | Line 92 |
+| FTB 5805 penalty | Line 113 |
+| Form 568 balance | Separate from Form 540 |
 
-1. `us-sole-prop-bookkeeping`
-2. `us-schedule-c-and-se-computation`
-3. `us-self-employed-retirement`
-4. `us-self-employed-health-insurance`
-5. `us-qbi-deduction`
-6. `us-federal-return-assembly`
-7. `us-quarterly-estimated-tax` (needs federal total tax)
-8. `us-1099-nec-issuance` (parallel, only needs bookkeeping)
-9. `ca-540-individual-return` (needs federal assembly)
-10. `ca-smllc-form-568` (if SMLLC; parallel with 540)
-11. `ca-estimated-tax-540es` (needs CA 540 total tax)
-12. `ca-form-3853-coverage` (parallel, needs coverage intake)
-13. **THIS SKILL** — final assembly and verification
+**Federal and California together.** Same filing status and dependents (RDP exceptions documented); standard or itemized may differ but the choice is documented; the Schedule C profit used federally is the start of Schedule CA; California depreciation recomputed where bonus or section 179 differs; 1099-NEC payees match contract labor on Schedule C and W-9 gaps are listed with the January 31, 2027 due date.
 
-If any of the above has not produced validated output, the skill refuses with a specific message identifying the missing step.
+### The three output files
 
-0. **Step 1** — us-sole-prop-bookkeeping
-0. **Step 2** — us-schedule-c-and-se-computation
-0. **Step 3** — us-self-employed-retirement
-0. **Step 4** — us-self-employed-health-insurance
-0. **Step 5** — us-qbi-deduction
-0. **Step 6** — us-federal-return-assembly
-0. **Step 7** — us-quarterly-estimated-tax
-0. **Step 8** — us-1099-nec-issuance
-0. **Step 9** — ca-540-individual-return
-0. **Step 10** — ca-smllc-form-568
-0. **Step 11** — ca-estimated-tax-540es
-0. **Step 12** — ca-form-3853-coverage
-0. **Step 13** — us-ca-return-assembly
+1. **`<taxpayer>_2026_master.xlsx`**: one workbook with every worksheet and form (cover, income, Schedule C, Form 4562, Form 8829, Schedule SE, retirement, SE health, Form 8962, Form 8995 or 8995-A, Schedules 1 and 2, Form 1040, Form 2210, Form 540, Schedule CA (540), FTB 5805, Form 568, FTB 3853, 1099-NEC batch, 2027 estimates). Build the cross-sheet anchors first, check there is no #REF!, and check each computed value against the model within $1.
+2. **`reviewer_brief.md`**: taxpayer summary; each computation (Schedule C, SE tax, retirement, SE health, QBI, federal tax, California tax, Form 568); federal and California reconciliation; reviewer attention flags; refusals triggered; positions taken; self-check results; sources.
+3. **`taxpayer_action_list.md`**: what the taxpayer must do, with dates and amounts: corrective actions now (late 1099s, DE 542), before April 15, 2027 (sign, pay, first 2027 estimates), and the year ahead.
 
-## Section 3 — Verification matrix
+Do not fragment the package into more files.
 
-- **Verification matrix overview** — The skill runs a comprehensive verification pass across all upstream outputs.
+## When to refuse or refer
 
-### Federal internal consistency
+| Code | Situation | Action |
+| --- | --- | --- |
+| R-FINAL-1 | An upstream skill did not run | Name it; produce the rest and mark the gap |
+| R-FINAL-2 | An upstream self-check failed | Name the check; flag in the brief |
+| R-FINAL-3 | A carry-forward check fails | Name both figures and the difference |
+| R-FINAL-4 | An upstream refusal was not surfaced | Surface it and force a decision in the brief |
+| R-FINAL-5 | Intake is incomplete | List the missing items |
+| Out of scope | Part-year residence, another state's income, foreign income, partnership or corporation | Refer (`ca-residency-leaving-california`, `us-multi-state-residency-and-allocation`) |
 
-- **Federal internal consistency checks** — Schedule C net profit → Schedule 1 Line 3 → Form 1040 Line 8; Schedule SE SE tax → Schedule 2 Line 4 → Form 1040 Line 23; Half of SE tax → Schedule 1 Line 15 → Form 1040 Line 10; SE retirement → Schedule 1 Line 16 → Form 1040 Line 10; SE health insurance → Schedule 1 Line 17 → Form 1040 Line 10; QBI deduction → Form 1040 Line 13; Total tax → Form 1040 Line 24; Form 2210 penalty → Schedule 2 Line 8; Total payments → Form 1040 Line 33
+## Worked cases
 
-### California internal consistency
+### Case 1: the carry-forward check catches a missing Schedule CA entry
 
-- **California internal consistency checks** — Federal AGI → Schedule CA (540) starting point; QBI add-back → Schedule CA (540) additions; HSA add-back if applicable → Schedule CA (540) additions; Bonus depreciation add-back → Schedule CA (540) additions; §179 cap difference → Schedule CA (540) additions; California AGI → Form 540 line 17; California tax → Form 540 line 31; Behavioral Health Services Tax → Form 540 line 62 if applicable; Form 5805 penalty → Form 540 line 113; Form 3853 penalty → Form 540 line 92; Form 568 balance (if SMLLC) → separate from Form 540  _(https://www.ftb.ca.gov/forms/2025/2025-540-instructions.html)_
+Federal AGI is $142,000. The federal return took $18,000 of bonus depreciation; California allows $2,400 of depreciation on the same asset, so Schedule CA column C should carry an addition of $15,600. The client's $4,300 federal HSA deduction is not allowed in California: it goes on Schedule CA Section C line 13, column B, which takes it back out of the adjustments and so raises California AGI by $4,300. The draft Form 540 shows line 17 of $142,000. Expected California AGI is $142,000 plus $15,600 plus $4,300 = $161,900, so the check fails by $19,900 (R-FINAL-3).
 
-### Federal-California coordination
-
-- **Federal-California coordination checks** — Filing status consistent (MFJ federal + MFJ California); Dependents consistent; Deduction election (standard vs itemized) may differ but must be documented; Schedule C net profit used federally and on California Schedule CA match; Depreciation recomputed for California if bonus or §179 differences exist
-
-### 1099 issuance reconciliation
-
-- **1099 issuance reconciliation checks** — Payments flagged for 1099-NEC match Schedule C Line 11 (Contract Labor) and related lines; W-9 collection gaps identified; Filing deadline noted (January 31, 2026)
-
-## Section 4 — Final reviewer package contents
-
-### Documents
-
-1. **Executive summary** — one-page overview: filing status, income, federal tax, state tax, total liability, refund/balance due
-2. **Federal Form 1040 worksheet** — line-by-line with formulas
-3. **Schedule 1** — adjustments to income
-4. **Schedule 2** — additional taxes
-5. **Schedule 3** — credits and payments (if applicable)
-6. **Schedule C** — sole prop P&L
-7. **Schedule SE** — SE tax
-8. **Form 8995 or 8995-A** — QBI
-9. **Form 7206** — SE health insurance worksheet
-10. **Form 8962** — PTC reconciliation (if marketplace coverage)
-11. **Form 2210** — underpayment penalty (if applicable)
-12. **Form 4562** — depreciation (if applicable)
-13. **Form 8829** — home office actual method (if applicable)
-14. **Form 1040-ES** — 2026 prospective payment schedule
-15. **California Form 540** — state return worksheet
-16. **California Schedule CA (540)** — state adjustments
-17. **California Form 5805** — state underpayment penalty (if applicable)
-18. **California Form 3853** — individual mandate (if applicable)
-19. **California Form 540-ES** — 2026 state prospective payment schedule
-20. **California Form 568** — SMLLC return (if applicable)
-21. **Form 3522** — $800 LLC tax voucher (if applicable)
-22. **Form 3536** — LLC fee estimation voucher (if applicable)
-23. **1099-NEC batch** — contractor information returns (if applicable)
-24. **Reviewer brief** — comprehensive narrative with positions, citations, flags, self-check results
-25. **Taxpayer action list** — what the taxpayer needs to do, with dates and amounts
-
-### Reviewer brief contents
-
-```markdown
-# Complete Return Package: [Taxpayer Name] — Tax Year 2025
-
-## Executive Summary
-- Filing status: [X]
-- Residence: California (full-year)
-- Business: Sole proprietor / Single-member LLC disregarded
-- Federal total tax: $X
-- California total tax: $X
-- Total 2025 tax liability: $X
-- Total payments (federal + CA): $X
-- Net refund or balance due: $X
-- Action required by April 15, 2026: [summary]
-
-## Federal Return
-[Content from us-federal-return-assembly brief]
-
-## California Return
-[Content from ca-540-individual-return brief]
-
-## California SMLLC (if applicable)
-[Content from ca-smllc-form-568 brief]
-
-## Individual Mandate
-[Content from ca-form-3853-coverage brief]
-
-## Estimated Tax
-[Content from us-quarterly-estimated-tax brief]
-[Content from ca-estimated-tax-540es brief]
-
-## 1099 Issuance
-[Content from us-1099-nec-issuance brief]
-
-## Cross-skill verification
-- All upstream skills ran: [verified]
-- All upstream self-checks passed: [verified]
-- All cross-form reconciliations passed: [verified]
-- Specific checks: [list]
-
-## Reviewer attention flags
-[Aggregated from all upstream skills]
-
-## Refusals triggered
-[Any refusals from any skill in the chain]
-
-## Positions taken
-[Aggregated list with citations]
-
-## Planning notes for 2026
-- Federal estimated tax schedule
-- California estimated tax schedule
-- S-corp election consideration (if applicable)
-- 2026 rate changes (QBI 20% → 23%, 1099 threshold $600 → $2,000)
-- Expanded PTC expiration after 2025
-- Retirement contribution planning
-- W-9 collection for contractors
-- Other
-
-## Taxpayer action list
-
-### Before April 15, 2026:
-1. Review and sign this return package
-2. Sign Form 8879 (e-file authorization) — if e-filing
-3. Pay federal balance due of $X via EFTPS, Direct Pay, or check
-4. Pay California balance due of $X via FTB Web Pay or check
-5. File Form 568 and pay $800 LLC tax + $X LLC fee (if applicable)
-6. Pay 2026 Q1 federal estimated tax of $X
-7. Pay 2026 Q1 California estimated tax of $X (30% installment)
-
-### Before January 31, 2026 (ALREADY PASSED — check if done):
-1. File 1099-NEC forms with IRS (IRIS or FIRE)
-2. Furnish Copy B to contractors
-3. If missed, assess penalty exposure and file ASAP
-
-### Before June 15, 2026:
-1. Pay 2026 Q2 federal estimated tax of $X
-2. Pay 2026 Q2 California estimated tax of $X (40% installment)
-3. Pay 2026 Form 3536 LLC fee estimate of $X (if applicable)
-
-### Before September 15, 2026:
-1. Pay 2026 Q3 federal estimated tax of $X
-2. California Q3 is $0 under 30/40/0/30 rule — no payment needed
-
-### Before January 15, 2027:
-1. Pay 2026 Q4 federal estimated tax of $X
-2. Pay 2026 Q4 California estimated tax of $X (30% installment)
-
-### Ongoing:
-1. Collect W-9 from new contractors before paying them
-2. Track business expenses with receipts
-3. Monitor income to adjust Solo 401(k) contribution
-4. Watch for mid-year health coverage changes
+```oa-check
+name: CA assembly check, California AGI carry-forward
+inputs:
+  federal_agi: 142000
+  federal_depreciation: 18000
+  ca_depreciation: 2400
+  hsa_deduction: 4300
+  draft_line_17: 142000
+steps:
+  - depreciation_addition: federal_depreciation - ca_depreciation
+  - expected_line_17: federal_agi + depreciation_addition + hsa_deduction
+  - difference: expected_line_17 - draft_line_17
+expected:
+  depreciation_addition: 15600
+  expected_line_17: 161900
+  difference: 19900
 ```
 
-## Executive Summary
+### Case 2: the action list dates for 2027 estimates (decision on the fourth installment)
 
-- Filing status: [X]
-- Residence: California (full-year)
-- Business: Sole proprietor / Single-member LLC disregarded
-- Federal total tax: $X
-- California total tax: $X
-- Total 2025 tax liability: $X
-- Total payments (federal + CA): $X
-- Net refund or balance due: $X
-- Action required by April 15, 2026: [summary]
+California 2026 tax is $10,000 and the 2027 required annual payment is set at $10,000 by `ca-estimated-tax-540es`. The action list shows $3,000 by April 15, 2027, $4,000 by June 15, 2027, nothing in September and $3,000 by January 15, 2028. If the client will file the 2027 return and pay in full by January 31, 2028, the fourth installment can be skipped, so the action list carries the choice: pay $3,000 in January, or file and pay the balance by January 31.
 
-## Federal Return
+```oa-check
+name: CA assembly action list, 2027 installments from a 10,000 required payment
+inputs:
+  required: 10000
+steps:
+  - april: required * 0.3
+  - june: required * 0.4
+  - september: required * 0
+  - january: required * 0.3
+  - total: april + june + september + january
+expected:
+  april: 3000
+  june: 4000
+  september: 0
+  january: 3000
+  total: 10000
+```
 
-[Content from us-federal-return-assembly brief]
+### Self-checks for the brief
 
-## California Return
+- All upstream skills ran; all their self-checks passed or are flagged.
+- Federal and California carry-forward checks pass.
+- Federal and California coordination checks pass.
+- 1099-NEC and DE 542 reconciliation done.
+- Taxpayer action list complete, with dates, amounts and payment methods.
+- Planning notes cover the 2027 changes the upstream skills flagged.
+- Every refusal catalogue was tested against the facts, and every flag is in the brief.
 
-[Content from ca-540-individual-return brief]
+## Filing and payment
 
-## California SMLLC (if applicable)
+| Item | Date | Source |
+| --- | --- | --- |
+| Federal and California 2026 returns | April 15, 2027 | `us-federal-return-assembly`; [2025 Form 540 booklet](https://www.ftb.ca.gov/forms/2025/2025-540-booklet.pdf) |
+| California automatic extension to file (not to pay) | October 15, 2027 | [FTB extension to file](https://www.ftb.ca.gov/file/when-to-file/extension-to-file.html) |
+| 2027 California estimates | 30% April 15, 40% June 15, none September, 30% January 15, 2028 | `ca-estimated-tax-540es`; [2026 Form 540-ES instructions](https://www.ftb.ca.gov/forms/2026/2026-540-es-instructions.pdf) |
+| Form 1099-NEC for 2026 payments | January 31, 2027 | `us-1099-nec-issuance` |
 
-[Content from ca-smllc-form-568 brief]
+## Sources
 
-## Individual Mandate
+| Source | URL | Read on |
+| --- | --- | --- |
+| 2025 Form 540. Read for lines 13 to 17, 31, 32, 62, 91, 92 and 113. | https://www.ftb.ca.gov/forms/2025/2025-540.pdf | 2026-11-13 |
+| 2025 California 540 Personal Income Tax Booklet. Read for the due date and line instructions. | https://www.ftb.ca.gov/forms/2025/2025-540-booklet.pdf | 2026-11-13 |
+| 2026 Instructions for Form 540-ES. Read for the installment shares and the January 31 early-filing rule. | https://www.ftb.ca.gov/forms/2026/2026-540-es-instructions.pdf | 2026-11-13 |
+| FTB extension to file. Read for the automatic six-month extension. | https://www.ftb.ca.gov/file/when-to-file/extension-to-file.html | 2026-11-13 |
 
-[Content from ca-form-3853-coverage brief]
-
-## Estimated Tax
-
-[Content from us-quarterly-estimated-tax brief]
-[Content from ca-estimated-tax-540es brief]
-
-## 1099 Issuance
-
-[Content from us-1099-nec-issuance brief]
-
-## Cross-skill verification
-
-- All upstream skills ran: [verified]
-- All upstream self-checks passed: [verified]
-- All cross-form reconciliations passed: [verified]
-- Specific checks: [list]
-
-## Reviewer attention flags
-
-[Aggregated from all upstream skills]
-
-## Refusals triggered
-
-[Any refusals from any skill in the chain]
-
-## Positions taken
-
-[Aggregated list with citations]
-
-## Planning notes for 2026
-
-- Federal estimated tax schedule
-- California estimated tax schedule
-- S-corp election consideration (if applicable)
-- 2026 rate changes (QBI 20% → 23%, 1099 threshold $600 → $2,000)
-- Expanded PTC expiration after 2025
-- Retirement contribution planning
-- W-9 collection for contractors
-- Other
-
-### Before April 15, 2026:
-
-1. Review and sign this return package
-2. Sign Form 8879 (e-file authorization) — if e-filing
-3. Pay federal balance due of $X via EFTPS, Direct Pay, or check
-4. Pay California balance due of $X via FTB Web Pay or check
-5. File Form 568 and pay $800 LLC tax + $X LLC fee (if applicable)
-6. Pay 2026 Q1 federal estimated tax of $X
-7. Pay 2026 Q1 California estimated tax of $X (30% installment)
-
-### Before January 31, 2026 (ALREADY PASSED — check if done):
-
-1. File 1099-NEC forms with IRS (IRIS or FIRE)
-2. Furnish Copy B to contractors
-3. If missed, assess penalty exposure and file ASAP
-
-### Before June 15, 2026:
-
-1. Pay 2026 Q2 federal estimated tax of $X
-2. Pay 2026 Q2 California estimated tax of $X (40% installment)
-3. Pay 2026 Form 3536 LLC fee estimate of $X (if applicable)
-
-### Before September 15, 2026:
-
-1. Pay 2026 Q3 federal estimated tax of $X
-2. California Q3 is $0 under 30/40/0/30 rule — no payment needed
-
-### Before January 15, 2027:
-
-1. Pay 2026 Q4 federal estimated tax of $X
-2. Pay 2026 Q4 California estimated tax of $X (30% installment)
-
-### Ongoing:
-
-1. Collect W-9 from new contractors before paying them
-2. Track business expenses with receipts
-3. Monitor income to adjust Solo 401(k) contribution
-4. Watch for mid-year health coverage changes
-
-## Section 5 — Refusals
-
-- **R-FINAL-1** — Upstream skill did not run. Name the specific skill.  _(R-FINAL-1)_
-- **R-FINAL-2** — Upstream self-check failed. Name the specific check.  _(R-FINAL-2)_
-- **R-FINAL-3** — Cross-skill reconciliation failed. Name the specific reconciliation and describe the discrepancy.  _(R-FINAL-3)_
-- **R-FINAL-4** — Refusal hidden upstream. A refusal from an upstream skill was not surfaced in its output. Name the refusal and force resolution.  _(R-FINAL-4)_
-- **R-FINAL-5** — Taxpayer intake incomplete. Specific missing intake items prevent final assembly.  _(R-FINAL-5)_
-
-## Section 6 — Self-checks
-
-- **Check 130** — All upstream skills executed.  _(Check 130)_
-- **Check 131** — All upstream self-checks passed.  _(Check 131)_
-- **Check 132** — Federal internal consistency verified.  _(Check 132)_
-- **Check 133** — California internal consistency verified.  _(Check 133)_
-- **Check 134** — Federal-California coordination verified.  _(Check 134)_
-- **Check 135** — 1099-NEC reconciliation verified.  _(Check 135)_
-- **Check 136** — Taxpayer action list is complete with dates and amounts.  _(Check 136)_
-- **Check 137** — Planning notes include 2026 changes (QBI rate, 1099 threshold, PTC expiration).  _(Check 137)_
-- **Check 138** — Every refusal in the catalogue was evaluated against taxpayer facts.  _(Check 138)_
-- **Check 139** — Every reviewer attention flag is surfaced.  _(Check 139)_
-- **Check 140** — Payment instructions are specific (amount, method, due date).  _(Check 140)_
-
-## Section 7 — Output files
-
-The final output is **three files** (not eleven — do not fragment the package):
-
-1. **`[taxpayer_slug]_2025_master.xlsx`** — Single master workbook containing every worksheet and form. Sheets include: Cover, Income, Schedule C (Parts I-V), Form 4562, Form 8829, Schedule SE, Retirement, SE Health, Form 8962, Form 8995-A (or 8995), Schedule 1, Form 1040, Form 2210, Form 540, Schedule CA (540), Form 5805, Form 568, Schedule IW, Form 3853, 1099-NEC batch, 2026 Est Tax. Use the Excel builder pattern specified in `us-federal-return-assembly` — collect anchors as a Python dict before writing cross-sheet formulas, verify no `#REF!` errors, verify computed values match the Python model within $1 before shipping.
-
-2. **`reviewer_brief.md`** — Single markdown file covering all sections: taxpayer summary, Schedule C summary, SE tax, retirement, SE health insurance, QBI, federal tax computation, California tax computation, Form 568 (if SMLLC), cross-jurisdiction reconciliation, open flags for reviewer, self-check results, primary source citations, position statements for anything requiring reviewer judgment.
-
-3. **`taxpayer_action_list.md`** — Single markdown file with step-by-step actions for the taxpayer: this week (corrective actions, late 1099 filings), before reviewer finishes, by April 15 (signing, payments, estimates), and year-ahead planning items.
-
-**If execution runs out of context mid-build:** produce whatever is complete, then state at the end which of the three files were not produced or are partial. Three files with honest status beats eleven files partially built.
-
-**All files are placed in `/mnt/user-data/outputs/` and presented to the user via the `present_files` tool at the end.**
-
-## Section 8 — Cross-skill references
-
-Inputs: every other skill in the product.
-
-Outputs: the final reviewer package. No downstream skill.
-
-## Section 9 — Known gaps
-
-1. PDF form filling is not automated. The reviewer uses the worksheets to fill official IRS/FTB forms in their tax software.
-2. E-filing is handled by the reviewer, not by this skill.
-3. Payment execution is the taxpayer's responsibility; the skill only provides instructions.
-4. Multi-state returns not supported (California only).
-5. Foreign income not supported.
-6. The package is complete only for the 2025 tax year; 2026 appears only as prospective planning.
-
-### Change log
-
-- **v0.1 (April 2026):** Initial draft.
-
-## End of skill
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
+Not yet confirmed: the 2026 Form 540 and Schedule CA (540) line numbers (2025 forms used); the 2027 Form 540-ES (the 2026 pattern of 30/40/0/30 is assumed to continue for 2027 installments in Case 2).

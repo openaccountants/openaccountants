@@ -1,324 +1,170 @@
 ---
 name: us-ny-freelance-intake
-description: "ALWAYS USE THIS SKILL when a user asks for help preparing their US federal or New York state tax return AND mentions freelancing, self-employment, software development, contracting, sole proprietorship, or a single-member LLC in New York. Trigger on phrases like \"I'm a freelancer in New York\", \"NYC self-employed taxes\", \"I have an LLC in NY\", \"New York freelance tax return\", \"I live in Manhattan and do contracting\", or any similar phrasing where the user is a New York-resident freelancer needing tax return preparation. This is the REQUIRED entry point for the New York freelance developer tax workflow. Uses upload-first workflow and ask_user_input_v0 for structured questions. New York full-year residents only; handles both NYC residents (subject to NYC UBT and city income tax) and rest-of-state residents. Sole proprietors and single-member LLCs disregarded for federal tax only."
+description: "Entry point for a New York resident freelancer, sole proprietor or single-member LLC owner who wants help with a 2026 federal and New York return. Runs a scope check (entity, residence, multi-state income, open years), asks for the documents, reads them, fills the gaps, and hands a confirmed fact sheet to us-ny-return-assembly, naming which federal and New York skills apply (IT-201, NYC UBT, MCTMT, estimated tax, LLC fee). Carries no rates of its own; every figure is in the linked skill. Trigger on \"I'm a freelancer in New York\", \"NYC self-employed taxes\", \"I have an LLC in NY\", \"New York freelance tax return\", \"I live in Manhattan and do contracting\". Full-year New York residents only."
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/us-ny-freelance-intake"
   jurisdiction: "US-NY"
-  tax_year: "2025"
-  last_updated: "2026-07-13"
+  tax_year: "2026"
+  last_updated: "2026-11-14"
 ---
 
-# US Ny Freelance Intake
+# New York freelancer intake, tax year 2026
 
-## Section 1 — The opening
+> **Source-cited draft.** Routing built from the New York Tax Department's IT-201 and IT-2105 instructions, the residency FAQ and the NYC Department of Finance UBT page, read on 2026-11-13 and 2026-11-14. No accountant has reviewed it. All outputs must be reviewed by a qualified tax professional before filing.
 
-When triggered, respond with ONE message that:
+**Answer first.** This skill decides whether the client is in scope, gathers the documents and facts, and routes them. A full-year New York resident who is a sole proprietor or a single-member LLC disregarded for federal tax goes through the federal skills, then `ny-it-201-resident-return`, plus `nyc-ubt` if the business is carried on in New York City, the MCTMT if self-employment earnings are allocated to the MCTD, and `ny-estimated-tax` for 2027 payments, and finally `us-ny-return-assembly`. It states no tax figures: each threshold lives in the skill that owns it.
 
-1. One-line greeting
-2. One-line summary of the flow (scope check → upload → gaps → handoff to return assembly)
-3. One-line reviewer reminder (must be reviewed by EA/CPA before filing)
-4. Launch the refusal sweep immediately using `ask_user_input_v0`
+## Scope and who this is for
 
-**Example first message:**
+In scope: a full-year New York State resident (New York City, Yonkers or rest of state) who is a sole proprietor or the owner of a single-member LLC disregarded for federal tax, filing Form 1040 and Form IT-201 for tax year 2026.
 
-> Let's get your 2025 federal + New York return ready. Quick scope check, then you upload your documents, then I fill gaps. Target: 10 minutes.
->
-> Reminder: everything I produce needs signoff from a credentialed tax professional (EA, CPA, or tax attorney) before filing.
->
-> Scope check:
+Out of scope, and where it goes:
 
-Then immediately call `ask_user_input_v0` with the refusal questions.
-
-## Section 2 — Refusal sweep
-
-Present the first batch as a single `ask_user_input_v0` call with 3 questions:
-
-```
-Q1: "Business structure?"
-    Options: ["Sole prop (no LLC)", "Single-member LLC", "Multi-member LLC", "S-corp", "C-corp", "Not sure"]
-
-Q2: "Revenue range for 2025?"
-    Options: ["Under $100K", "$100K–$250K", "$250K–$500K", "$500K–$1M", "Over $1M"]
-
-Q3: "NYC resident (any of the 5 boroughs) or rest of NY state?"
-    Options: ["NYC (Manhattan, Brooklyn, Queens, Bronx, Staten Island)", "Rest of NY state", "Part-year NYC / moved during 2025", "I don't live in NY"]
-```
-
-**Evaluate:**
-
-- **Q1 = Sole prop or Single-member LLC** → continue
-- **Q1 = Multi-member LLC** → stop. "Multi-member LLCs file Form 1065 as partnerships. You need a CPA familiar with partnership returns and NY PTET elections."
-- **Q1 = S-corp or C-corp** → stop. "I don't cover corporate returns. S-corp (1120-S) and C-corp (1120) plus NY CT-3/CT-4 require a CPA."
-- **Q1 = Not sure** → follow-up: "Did you file Form 2553 (S-corp election) or receive a W-2 from your own business? Yes to either = S-corp."
-
-- **Q2** → record for downstream. Over $1M triggers additional NYC UBT considerations.
-
-- **Q3 = NYC** → continue, flag NYC UBT (Form NYC-202) + NYC personal income tax (Form NYC-1127 if applicable)
-- **Q3 = Rest of NY state** → continue, no NYC taxes
-- **Q3 = Part-year NYC** → continue with flag: NYC part-year allocation required
-- **Q3 = I don't live in NY** → stop. "I'm set up for full-year New York residents only. Non-residents need Form IT-203 and multi-state allocation. You need a CPA who handles non-resident returns."
-
-**Second batch (after first batch passes):**
-
-```
-Q4: "Filing status?"
-    Options: ["Single, no dependents", "Single with dependents (HoH)", "Married filing jointly", "Married filing separately", "Qualified surviving spouse"]
-
-Q5: "Did you file a 2024 return normally?"
-    Options: ["Yes", "No (skipped year)", "Yes but amended / under audit"]
-
-Q6: "Any of these in 2025?" (multi-select)
-    Options: [
-      "Rental property income",
-      "Active crypto/day trading",
-      "Foreign bank account over $10K",
-      "W-2 employees on payroll",
-      "Partnership income (K-1 from another entity)",
-      "None of the above"
-    ]
-
-Q7: "NYS estimated tax payments made in 2025?"
-    Options: ["Yes, all 4 quarters", "Yes, some quarters", "No", "Not sure"]
-
-Q8: "Do you also have income sourced outside NY?"
-    Options: ["No, all income is NY-sourced", "Yes, some income from other states", "Yes, significant out-of-state income"]
-```
-
-**Evaluate Q4:** Record filing status. All options in scope.
-
-**Evaluate Q5:**
-- Yes → continue
-- No or amended/under audit → stop. "Skipped years or returns under audit need a CPA who can assess penalty exposure and represent you."
-
-**Evaluate Q6:**
-- Any of the first five options selected → stop with appropriate refusal
-- "None of the above" → continue
-
-**Evaluate Q7:** Record for downstream estimated tax analysis.
-
-**Evaluate Q8:**
-- All NY-sourced → continue
-- Some or significant out-of-state → stop. "Multi-state income allocation requires IT-203 schedules and credit-for-taxes-paid-to-other-states analysis. You need a CPA who handles multi-state returns."
-
-- **Q1 = Multi-member LLC** — Multi-member LLCs file Form 1065 as partnerships. You need a CPA familiar with partnership returns and NY PTET elections.  _(Section 2 — Refusal sweep)_
-- **Q1 = S-corp or C-corp** — I don't cover corporate returns. S-corp (1120-S) and C-corp (1120) plus NY CT-3/CT-4 require a CPA.  _(Section 2 — Refusal sweep)_
-- **Q3 = I don't live in NY** — I'm set up for full-year New York residents only. Non-residents need Form IT-203 and multi-state allocation. You need a CPA who handles non-resident returns.  _(Section 2 — Refusal sweep)_
-- **Q5 = No (skipped year) or amended/under audit** — Skipped years or returns under audit need a CPA who can assess penalty exposure and represent you.  _(Section 2 — Refusal sweep)_
-- **Q8 = Some or significant out-of-state income** — Multi-state income allocation requires IT-203 schedules and credit-for-taxes-paid-to-other-states analysis. You need a CPA who handles multi-state returns.  _(Section 2 — Refusal sweep)_
-
-## Section 3 — The dump
-
-Once the refusal sweep passes, request the document dump:
-
-> Scope is good. Upload everything you have for 2025:
->
-> - Business bank statement(s) for 2025 (CSV or PDF)
-> - Tax forms received (1099-NEC, 1099-MISC, 1095-A/B/C, W-2 from side employment)
-> - Year-end retirement account statements
-> - NYS/NYC estimated tax payment confirmations or cancelled checks
-> - Your 2024 tax return (federal + NY)
-> - Any NY-specific notices (DTF correspondence, NYC Finance letters)
-> - LLC formation docs if applicable (Articles of Organization filed with NY DOS)
-> - Anything else tax-related
->
-> Drop it all in — I'll sort it out.
-
-## Section 4 — The inference pass
-
-Parse all documents and extract:
-
-**Bank statement:**
-- Total deposits (gross receipts)
-- Client retainer payments
-- IRS EFTPS payments (federal estimated tax)
-- NY DTF payments (state estimated tax)
-- NYC Finance payments (city estimated tax or UBT)
-- Retirement contributions
-- Health insurance premiums
-- Business expenses (SaaS, equipment, travel)
-- Contractor payments
-- NY LLC filing fee ($25 biennial)
-
-**1099-NEC received:**
-- Payer name, TIN, Box 1 amount
-- Cross-check against bank deposits
-
-**Prior year return (federal + NY IT-201):**
-- Federal total tax (1040 Line 24)
-- Federal AGI (1040 Line 11)
-- NY taxable income (IT-201 Line 38)
-- NY tax (IT-201 Line 39)
-- NYC taxable income (IT-201 Line 47, if NYC resident)
-- NYC tax (IT-201 Line 48)
-- NY household credit claimed
-- NYC UBT paid (Form NYC-202)
-
-**Retirement account statement:**
-- Plan type, contributions, dates
-- Solo 401(k) limits: $23,500 employee + employer up to §415(c) $70,000 total
-
-- **NY LLC filing fee (biennial)** — $25 USD (biennial)  _(Section 4 — The inference pass)_
-- **Solo 401(k) employee contribution limit** — $23,500 USD  _(Section 4 — The inference pass)_
-- **Solo 401(k) total limit (employee + employer, §415(c))** — $70,000 USD  _(Section 4 — The inference pass)_
-
-## Section 5 — The confirmation
-
-Present compact summary showing extracted data. Structure:
-
-> **Identity**
-> - [Name], [filing status], [dependents]
-> - Full-year NY resident ([NYC/rest of state])
-> - [Business structure]
->
-> **Income**
-> - Gross receipts: $X
-> - [Client breakdown]
->
-> **Expenses**
-> - [Category breakdown from bank statement]
->
-> **NY-specific**
-> - NYC UBT applicability: [Yes/No — triggered if NYC resident with business income]
-> - NYC UBT allocation: [100% if all work in NYC]
-> - NYS estimated payments made: $X
-> - NYC estimated payments made: $X
->
-> **Flags:**
-> - [Any issues identified]
->
-> **Is any of this wrong?**
-
-## Section 6 — Gap filling
-
-Things that usually need asking:
-
-1. **Home office** — exclusive use test, square footage
-2. **NYC UBT allocation** — percentage of business conducted in NYC (if any work done outside city)
-3. **Health insurance source** — NY State of Health marketplace vs employer vs COBRA
-4. **Commuter benefits** — transit pre-tax (if also W-2 employment)
-5. **MCTMT** — Metropolitan Commuter Transportation Mobility Tax: applies to self-employment income > $50,000 for NYC-area taxpayers (rate: 0.34% of net SE earnings allocated to MCTD)
-
-- **MCTMT rate on net SE earnings allocated to MCTD** — 0.34% (applies to self-employment income > $50,000 for NYC-area taxpayers)  _(Section 6 — Gap filling)_
-
-## Section 7 — NY-specific tax framework
-
-### New York State income tax (Form IT-201)
-
-**2025 NY State income tax rates (full-year resident)**  _(Section 7 — NY-specific tax framework > New York State income tax (Form IT-201))_
-
-| Rate | Bracket |
+| Situation | Skill or action |
 | --- | --- |
-| 4.00% | $0–$8,500 |
-| 4.50% | $8,501–$11,700 |
-| 5.25% | $11,701–$13,900 |
-| 5.50% | $13,901–$80,650 |
-| 6.00% | $80,651–$215,400 |
-| 6.85% | $215,401–$1,077,550 |
-| 9.65% | $1,077,551–$5,000,000 |
-| 10.30% | $5,000,001–$25,000,000 |
-| 10.90% | Over $25,000,000 |
+| Moved into or out of New York State or New York City during 2026, or lives outside New York | `ny-residency-leaving-new-york` (Form IT-203); refer the return |
+| Multi-member LLC or partnership | `us-form-1065-partnership`; refer |
+| S corporation or C corporation | refer (New York Article 9-A is `ny-corporate-franchise-article-9a`) |
+| Should the client become an S corporation? | `us-s-corp-election-decision` |
+| Income taxed by another state | `us-multi-state-residency-and-allocation`; refer |
 
-- **NY standard deduction (single, 2025)** — $8,000 USD  _(Section 7 — NY-specific tax framework > New York State income tax (Form IT-201))_
-- **NY standard deduction (MFJ, 2025)** — $16,050 USD  _(Section 7 — NY-specific tax framework > New York State income tax (Form IT-201))_
-- **NY itemized deduction basis** — Based on federal Schedule A with NY modifications (no SALT deduction add-back at state level, but NY limits itemized deductions for high earners)  _(Section 7 — NY-specific tax framework > New York State income tax (Form IT-201))_
+## Ask the client first
 
-### NYC personal income tax (NYC resident surcharge)
+1. **Business structure:** sole proprietor, single-member LLC, multi-member LLC, S corporation, C corporation, or not sure. If not sure: did they file Form 2553, or receive a W-2 from their own business? Either means an S corporation.
+2. **Where did they live all of 2026,** and did they move? New York City (the five boroughs), Yonkers, rest of New York State, part-year, or outside New York.
+3. **Where is the work done?** Home office or office address, and whether any work is done outside New York City or outside the MCTD counties.
+4. **Filing status and dependents** for 2026.
+5. **Any 2026 income from other states, K-1s, rental property, active trading, foreign accounts, or employees on payroll?**
+6. **Were the 2025 returns filed, and is any year under audit or amended?**
 
-**2025 NYC resident surcharge rates**  _(Section 7 — NY-specific tax framework > NYC personal income tax (NYC resident surcharge))_
+## The method, step by step
 
-| Rate | Bracket |
+1. **Open with one message:** a one-line greeting, a one-line summary of the flow (scope check, upload, gaps, handoff), and a reminder that everything produced must be reviewed by a credentialed tax professional (EA, CPA or tax attorney) before filing. Then ask the scope questions at once, using the host's structured question tool where it has one.
+2. **Scope check, first batch:** structure (question 1), residence (question 2), revenue range for 2026 (record it; it tells `nyc-ubt` whether a return may be due). Stop on any answer in the refusal table below.
+3. **Scope check, second batch:** filing status (question 4), the 2025 return (question 6), the special items (question 5), whether New York estimated payments were made in 2026 (all four, some, none, not sure), and income from outside New York.
+4. **Ask for the documents in one list:**
+   - business bank and card statements for 2026 (CSV or PDF);
+   - every 1099-NEC, 1099-MISC and 1099-K, and any W-2 from side employment;
+   - 1095-A, B or C;
+   - year-end retirement account statements;
+   - federal, New York State and New York City estimated payment confirmations for 2026;
+   - the 2025 federal return, Form IT-201 and, if filed, Form NYC-202 or NYC-202S;
+   - any Tax Department or NYC Department of Finance notices;
+   - LLC formation papers (Articles of Organization filed with the New York Department of State).
+5. **Read the documents and extract:**
+   - bank: total deposits (gross receipts), client payments, IRS (EFTPS) payments, New York State DTF payments, NYC Department of Finance payments, retirement contributions, health insurance premiums, business expenses by type, contractor payments, any New York LLC filing fee paid;
+   - each 1099: payer, TIN, amount, matched to deposits;
+   - the 2025 returns: federal AGI and total tax; IT-201 New York AGI, taxable income, state tax, city taxable income and city tax; the household credit; UBT paid. These feed the 2026 estimated tax safe harbour (`ny-estimated-tax`) and the federal one (`us-quarterly-estimated-tax`);
+   - retirement statements: plan type, contributions and dates (limits in `us-self-employed-retirement`).
+6. **Confirm in one compact summary:** identity, filing status, dependents, residence (city, Yonkers or rest of state), structure; gross receipts by client; expenses by category; the New York flags (UBT likely or not, MCTMT zone, state and city estimates paid). Ask "Is any of this wrong?"
+7. **Fill the gaps** that documents rarely answer: home office (exclusive use, square feet); the share of work done in New York City if any is done outside; the source of health insurance (NY State of Health marketplace, employer, COBRA); commuter benefits from any W-2 job; the MCTD county where the business is carried on.
+8. **Route and hand off.** Set the flags and pass the fact sheet to `us-ny-return-assembly`, which runs the skills in order:
+
+| Flag | Set when | Skill |
+| --- | --- | --- |
+| Federal core | always | `us-sole-prop-bookkeeping`, `us-schedule-c-and-se-computation`, `us-self-employed-retirement`, `us-self-employed-health-insurance`, `us-qbi-deduction`, `us-federal-return-assembly`, `us-quarterly-estimated-tax` |
+| Contractors paid | the client paid contractors | `us-1099-nec-issuance` |
+| State return | always | `ny-it-201-resident-return` |
+| NYC UBT | business carried on wholly or partly in New York City | `nyc-ubt` |
+| MCTMT | business carried on in an MCTD county (the five boroughs, Dutchess, Nassau, Orange, Putnam, Rockland, Suffolk, Westchester) | `ny-mctmt` (the IT-201 lines are in `ny-it-201-resident-return`) |
+| State estimates | always, for 2027 | `ny-estimated-tax` |
+| LLC fee | single-member LLC | `ny-llc-filing-fee-it-204-ll` |
+| PTET question | the client asks about the pass-through entity tax | `ny-pte-tax-ptet` |
+
+9. **Handoff message:** "Intake complete. Handing off to the return assembly workflow. You will receive: a working paper (federal, New York State and New York City lines), a reviewer brief with positions, citations and flags, the form packages (1040, IT-201, NYC-202 if it applies), 2027 estimated tax schedules (federal, New York State, New York City), and an action list with deadlines."
+
+## Boundary and exception table
+
+| Situation | Treatment |
 | --- | --- |
-| 3.078% | $0–$12,000 |
-| 3.762% | $12,001–$25,000 |
-| 3.819% | $25,001–$50,000 |
-| 3.876% | $50,001 and over |
+| Single-member LLC taxed as an S corporation (Form 2553 filed) | Not a disregarded entity: refuse under R-NYI-2 |
+| Single-member LLC owned by a married couple in New York (not a community property state) | Two owners make it a partnership for federal tax: refuse under R-NYI-1 |
+| Lives in New York State all year but moved between New York City and the rest of the state | Part-year New York City resident: refuse under R-NYI-3 |
+| Domiciled elsewhere but kept a permanent place of abode in New York for substantially all of 2026 and spent 184 days or more there | A statutory resident, taxed as a full-year resident; in scope, but record the day count and send the residency question to `ny-residency-leaving-new-york` for the reviewer ([residency FAQ](https://www.tax.ny.gov/pit/file/nonresident-faqs.htm)) |
+| Lives outside New York City but the business is carried on in New York City | UBT can still apply (it follows where the business is carried on): set the UBT flag |
+| Lives in Yonkers | In scope; the Yonkers lines are in `ny-it-201-resident-return` |
+| Business carried on outside the MCTD (for example Albany or Erie County) | No MCTMT flag |
+| W-2 job as well as the business | In scope; the W-2 feeds the federal and IT-201 lines; no refusal |
 
-- **Additional NYC surcharge for high earners** — Additional NYC surcharge for taxable income > $500,000 effectively brings top combined NYC rate to approximately 3.876% + additional tiers.  _(Section 7 — NY-specific tax framework > NYC personal income tax (NYC resident surcharge))_
+### Defaults when a fact is missing
 
-### NYC Unincorporated Business Tax (UBT) — Form NYC-202
+| Missing fact | Default | Flag for the reviewer |
+| --- | --- | --- |
+| Where the work is done | The home or office address the client gave | Yes, if any client is outside New York City |
+| MCTD county | The county of the business address | No |
+| Whether 2026 New York estimates were paid | None paid, until a confirmation or a bank debit shows otherwise | Yes |
+| The 2025 IT-201 | Ask for it; without it the prior-year safe harbour in `ny-estimated-tax` cannot be used | Yes |
+| Health insurance source | Ask; do not assume the self-employed health insurance deduction | Yes |
 
-- **UBT applicability** — Applies to any unincorporated business (sole prop, SMLLC) carried on in NYC  _(Section 7 — NY-specific tax framework > NYC Unincorporated Business Tax (UBT) — Form NYC-202)_
-- **UBT tax rate** — 4% (of taxable income after exemption)  _(Section 7 — NY-specific tax framework > NYC Unincorporated Business Tax (UBT) — Form NYC-202)_
-- **UBT exemption** — $95,000 USD (phases out between $95,000 and $150,000 of NYC UBT taxable income)  _(Section 7 — NY-specific tax framework > NYC Unincorporated Business Tax (UBT) — Form NYC-202)_
-- **Partial credit against NYC personal income tax** — Partial credit against NYC personal income tax (Form NYC-1127 or IT-201 Line 51)  _(Section 7 — NY-specific tax framework > NYC Unincorporated Business Tax (UBT) — Form NYC-202)_
-- **UBT estimated tax quarterly payment threshold** — $3,400 USD (quarterly payments required if UBT liability expected to exceed this amount)  _(Section 7 — NY-specific tax framework > NYC Unincorporated Business Tax (UBT) — Form NYC-202)_
+### Red flags to raise before the handoff
 
-### Metropolitan Commuter Transportation Mobility Tax (MCTMT)
+| Red flag | Why it matters |
+| --- | --- |
+| Bank deposits well above the 1099 total | Clients who send no 1099 still paid income; the gap is income unless shown to be a transfer, a loan or a refund (Case 1) |
+| A Tax Department or NYC Department of Finance notice | May mean an open year (R-NYI-4) |
+| Payments to the NYC Department of Finance but no NYC-202 on file | UBT estimates paid without a return; check `nyc-ubt` |
+| No LLC filing fee paid for a single-member LLC with New York source income | Check `ny-llc-filing-fee-it-204-ll` |
 
-- **MCTMT applicability** — Applies to self-employed individuals with net earnings from self-employment allocated to the Metropolitan Commuter Transportation District (NYC + Dutchess, Nassau, Orange, Putnam, Rockland, Suffolk, Westchester)  _(Section 7 — NY-specific tax framework > Metropolitan Commuter Transportation Mobility Tax (MCTMT))_
-- **MCTMT rate** — 0.34% (on net SE earnings > $50,000 allocated to MCTD)  _(Section 7 — NY-specific tax framework > Metropolitan Commuter Transportation Mobility Tax (MCTMT))_
-- **MCTMT reporting and due dates** — Reported on Form MTA-6 (annual) or quarterly. Due dates align with estimated tax quarters  _(Section 7 — NY-specific tax framework > Metropolitan Commuter Transportation Mobility Tax (MCTMT))_
+## Worked cases
 
-### NY estimated tax (Form IT-2105)
+The client is invented.
 
-- **NY estimated tax requirement threshold** — $300 USD (required if NY tax liability expected to exceed this amount after credits and withholding)  _(Section 7 — NY-specific tax framework > NY estimated tax (Form IT-2105))_
-- **Quarterly due dates** — April 15, June 15, September 15, January 15  _(Section 7 — NY-specific tax framework > NY estimated tax (Form IT-2105))_
-- **Safe harbor** — 100% of prior year NY tax OR 90% of current year NY tax  _(Section 7 — NY-specific tax framework > NY estimated tax (Form IT-2105))_
-- **Underpayment penalty computation** — Underpayment penalty: computed on Form IT-2105.9  _(Section 7 — NY-specific tax framework > NY estimated tax (Form IT-2105))_
+**Case 1, the gross receipts check before the handoff.** A Manhattan designer with a single-member LLC shows total 2026 business account deposits of USD 148,900. Of these, USD 6,000 is a transfer from her personal savings and USD 400 is a refund from a supplier; neither is income. Her 1099-NEC forms total USD 121,500 and one 1099-K from a payment platform shows USD 18,000. Gross receipts from the bank are 148,900 minus 6,000 minus 400 = USD 142,500. The forms cover 121,500 + 18,000 = USD 139,500. The gap of USD 3,000 is income from clients who sent no 1099; it goes into gross receipts, and the fact sheet records USD 142,500 with the gap explained. Intake records the figure and the flag; it does not test it against any threshold (that is for `nyc-ubt` and `us-schedule-c-and-se-computation`).
 
-## Section 8 — Handoff
+```oa-check
+name: NY freelancer intake, bank deposits to 1099 reconciliation (2026)
+inputs:
+  deposits: 148900
+  owner_transfers: 6000
+  supplier_refunds: 400
+  form_1099_nec: 121500
+  form_1099_k: 18000
+steps:
+  - gross_receipts: deposits - owner_transfers - supplier_refunds
+  - reported_on_forms: form_1099_nec + form_1099_k
+  - unreported_gap: gross_receipts - reported_on_forms
+expected:
+  gross_receipts: 142500.00
+  reported_on_forms: 139500.00
+  unreported_gap: 3000.00
+```
 
-Once gap-filling is complete, produce handoff message and invoke `us-ny-return-assembly`:
+## When to refuse or refer
 
-> Intake complete. Handing off to the return assembly workflow.
->
-> You'll receive:
-> 1. Excel working paper (federal + NY + NYC lines)
-> 2. Reviewer brief with positions, citations, and flags
-> 3. Form packages (1040, IT-201, NYC-202 if applicable)
-> 4. 2026 estimated tax vouchers (federal + NY + NYC)
-> 5. Action items with deadlines
->
-> Starting now.
+| Code | Trigger | What to say |
+| --- | --- | --- |
+| R-NYI-1 | Multi-member LLC | "Multi-member LLCs file Form 1065 as partnerships. You need a CPA familiar with partnership returns and New York PTET elections." |
+| R-NYI-2 | S corporation or C corporation | "I do not cover corporate returns. Form 1120-S or 1120 and New York Form CT-3 or CT-3-S need a CPA." |
+| R-NYI-3 | Lives outside New York, or moved into or out of New York State or New York City in 2026 | "I am set up for full-year New York residents only. A part-year or nonresident return (Form IT-203, with IT-360.1 for the city) needs a CPA who handles them." See `ny-residency-leaving-new-york`. |
+| R-NYI-4 | A skipped year, an amended return or an open audit | "Skipped years or returns under audit need a CPA who can assess penalty exposure and represent you." |
+| R-NYI-5 | Income from other states | "Multi-state allocation and the credit for tax paid to another state need a CPA who handles multi-state returns." |
+| R-NYI-6 | Rental property, active crypto or day trading, foreign accounts over USD 10,000, employees on payroll, or K-1 income | Stop, name the item, and refer: these are outside the freelancer workflow. |
 
-0. **Handoff to return assembly** — Once gap-filling is complete, invoke us-ny-return-assembly
+When a refusal fires: stop, state the specific reason, say what to do next, and do not work around it.
 
-## Section 9 — Refusal handling
+## Completion checklist
 
-When a refusal fires:
-1. Stop the workflow
-2. State the specific reason
-3. Recommend the path forward
-4. Do not try to work around the refusal
+- [ ] Structure, residence and filing status confirmed, and no refusal fired
+- [ ] Every document on the list received, or its absence recorded
+- [ ] Gross receipts reconciled from the bank to the 1099s, the gap explained (Case 1)
+- [ ] 2025 federal and IT-201 figures recorded for the safe harbours
+- [ ] New York State, New York City and federal 2026 estimates listed by date and amount
+- [ ] Flags set: UBT, MCTMT zone, LLC fee, contractors, PTET question
+- [ ] Fact sheet confirmed by the client and handed to `us-ny-return-assembly`
 
-**Sample refusals:**
+## Sources
 
-> Stop — you have partnership income from a K-1. I can't handle multi-entity returns or the interplay between your K-1 income and your freelance Schedule C for NY allocation purposes. You need a CPA.
+| Source | URL | Read on |
+| --- | --- | --- |
+| IT-201-I (2025). Read for who files Form IT-201 (full-year residents) and the New York City, Yonkers and MCTMT lines. | https://www.tax.ny.gov/pdf/current_forms/it/it201i.pdf | 2026-11-13 |
+| IT-2105-I (2026). Read for the MCTD counties and zones and who must pay estimated tax. | https://www.tax.ny.gov/pdf/current_forms/it/it2105i.pdf | 2026-11-13 |
+| NYC Department of Finance, Unincorporated business tax. Read for who is subject to the UBT. | https://www.nyc.gov/site/finance/business/business-unincorporated-business-tax-ubt.page | 2026-11-13 |
+| Residency FAQ. Read for domicile, the statutory resident test (permanent place of abode and 184 days) and New York City residence. | https://www.tax.ny.gov/pit/file/nonresident-faqs.htm | 2026-11-14 |
 
-> Stop — you moved out of NYC mid-year. Part-year NYC allocation on the UBT and city income tax requires Form NYC-1127 and careful day-counting. You need a CPA familiar with NYC part-year filings.
-
-## Section 10 — Self-checks
-
-**Check NY-IN1 — Refusal sweep used ask_user_input_v0.**
-**Check NY-IN2 — NYC vs rest-of-state determined before proceeding.**
-**Check NY-IN3 — UBT applicability flag set if NYC resident with business income.**
-**Check NY-IN4 — Upload-first flow honored.**
-**Check NY-IN5 — Documents parsed before gap-filling questions.**
-**Check NY-IN6 — MCTMT flagged for MCTD-area taxpayers.**
-**Check NY-IN7 — Filing status recorded for IT-201 rate determination.**
-**Check NY-IN8 — Handoff to us-ny-return-assembly is explicit.**
-
-## End of Skill
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
-
-## 
-
-- **Annual compensation limit for qualified plans (§401(a)(17))** — $360,000  _([IRS Notice 2025-67](https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-401k-and-profit-sharing-plan-contribution-limits))_
-- **401(k) catch-up contribution limit (age 50+)** — $8,000  _([IRS Notice 2025-67](https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-401k-and-profit-sharing-plan-contribution-limits))_
-- **401(k) enhanced catch-up contribution limit (age 60-63, SECURE 2.0)** — $11,250  _([IRS Notice 2025-67](https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-401k-and-profit-sharing-plan-contribution-limits))_
-- **401(k)/403(b) employee elective deferral limit (§402(g))** — $24,500  _([IRS Notice 2025-67](https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-401k-and-profit-sharing-plan-contribution-limits))_
-- **Defined-contribution annual additions limit (§415(c), employee + employer, excl. catch-up)** — $72,000  _([IRS Notice 2025-67](https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-401k-and-profit-sharing-plan-contribution-limits))_
-- **IRA catch-up contribution (age 50+)** — $1,100  _([IRS Notice 2025-67](https://www.irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500))_
-- **IRA contribution limit (traditional + Roth combined)** — $7,500  _([IRS Notice 2025-67](https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-ira-contribution-limits))_
-- **SIMPLE plan catch-up contribution (age 50+)** — $4,000  _([IRS Notice 2025-67](https://www.irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500))_
-- **SIMPLE plan enhanced catch-up contribution (age 60-63, SECURE 2.0)** — $5,250  _([IRS Notice 2025-67](https://www.irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500))_
-- **SIMPLE IRA / SIMPLE 401(k) employee elective deferral limit** — $17,000  _([IRS Notice 2025-67](https://www.irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500))_
+Not yet confirmed: the 2026 Form IT-201 instructions are not published; this skill carries no tax figures (the 184-day count is from the residency FAQ), so nothing here depends on them.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-07-13. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `us-ny-freelance-intake` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/us-ny-freelance-intake. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `us-ny-freelance-intake` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/us-ny-freelance-intake. If neither is available, confirm every figure against the official source pages cited above before relying on it.

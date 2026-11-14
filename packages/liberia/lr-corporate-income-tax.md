@@ -3,15 +3,16 @@ name: lr-corporate-income-tax
 description: "Builds a 2026 Liberian business income tax working paper for ordinary resident legal persons, with the taxable-profit and gross-income minimum comparison, small-business classification, advance payments and minimum-tax credits. Use for Liberia corporate tax, turnover tax, an interest deduction, depreciation, losses, company residence or quarterly tax. It incorporates the December 2024 change to the nonbank business-interest limit and routes withholding and transfer pricing to separate Guides. Mining, petroleum, renewable resources, rice and life insurance are identified without pretending their full sector computations are complete. The pack remains partial, with concession terms, incentives, current return boxes and the complete amendment/currentness chain awaiting closure and independent review."
 jurisdiction: LR
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: international
-version: 0.2
+version: 0.3
 tier: 2
 domain: income-tax
+type: computation
 ---
 
-# Liberia Corporate Income Tax v0.2
+# Liberia Corporate Income Tax v0.3
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 

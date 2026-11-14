@@ -1,10 +1,10 @@
 ---
 name: spain-payroll
 description: Use this Guide to calculate ordinary common-territory Spanish employee payroll for 2026. It computes annual IRPF withholding inputs, the withholding-specific employment reduction, national personal and family minima, the reference scale, quota limits, rate truncation and mid-year recalculation. It reconciles taxable cash and in-kind pay with separate employee and employer social contributions, extra-pay proration, overtime and solidarity through the companion contribution Guide. Trigger phrases include nómina, bruto a neto, retención IRPF, Modelo 145, paga extraordinaria, regularización del tipo, payroll cost, Modelo 111 and Modelo 190. Obtain the contract, collective agreement, contribution classification, annual pay forecast, declared family circumstances and prior pay and withholding records. Foral, non-resident and elected impatriate payroll require their own applicable tax route.
-version: 1.5
+version: 1.6
 jurisdiction: ES
 tax_year: 2026
-last_updated: 2026-10-28
+last_updated: 2026-11-14
 drafted_by: OpenAccountants
 approved_by: pending
 depends_on:
@@ -13,9 +13,10 @@ category: payroll
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
+type: computation
 ---
 
-# Spain: employee payroll and withholding v1.5
+# Spain: employee payroll and withholding v1.6
 
 Turn contractual pay into a payslip, contribution settlement and withholding working paper for 2026. This revision is sourced from the law; independent whole-pack review is pending and no accountant has signed it off. The payroll withholding calculation is separate from the worker's annual state-plus-regional IRPF return.
 

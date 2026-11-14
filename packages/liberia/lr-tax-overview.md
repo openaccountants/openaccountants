@@ -3,15 +3,16 @@ name: lr-tax-overview
 description: "Routes Liberia tax questions across the 2026 country pack and supplies the shared tax-administration working paper: currency, period, registration, records, filing cutoffs, late filing, late payment and statutory interest. Use for Liberia tax overview, LRA registration, TIN, tax-year change, record retention, penalties or an electronic return confirmation. The Guide links income, corporate, payroll, GST, transfer pricing, cross-border and formation computations to their owning Guides instead of maintaining duplicate rate tables. It distinguishes the current source review date from accountant attestation and flags unresolved VAT commencement, assessment wording, source-chain completeness and live filing details. Every domain remains partial; Guide presence does not establish comprehensive country coverage."
 jurisdiction: LR
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: international
-version: 0.1
+version: 0.2
 tier: 2
 domain: income-tax
+type: situation-rules
 ---
 
-# Liberia Tax Administration and Pack Overview v0.1
+# Liberia Tax Administration and Pack Overview v0.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 

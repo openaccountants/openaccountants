@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/es-rental-income"
   jurisdiction: "ES"
   tax_year: "2026"
-  last_updated: "2026-10-28"
+  last_updated: "2026-11-14"
 ---
 
-# Spain: rental and own-use property income v1.3
+# Spain: rental and own-use property income v1.4
 
 Compute 2026 common-territory rental income property by property, then apply the correct lease-date relief and annual IRPF route. This revision is sourced from the law; independent whole-pack review is pending and no accountant has signed it off.
 
@@ -224,4 +224,4 @@ expected:
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-28. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `es-rental-income` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/es-rental-income. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `es-rental-income` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/es-rental-income. If neither is available, confirm every figure against the official source pages cited above before relying on it.

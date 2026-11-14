@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/iceland-social-contributions"
   jurisdiction: "IS"
   tax_year: "2026"
-  last_updated: "2026-10-30"
+  last_updated: "2026-11-14"
 ---
 
-# Iceland social contributions and mandatory pension v0.7
+# Iceland social contributions and mandatory pension v0.8
 
 Tax year 2026, amounts in ISK. This method separates the employer levy, employee pension and employer pension, and produces contribution workpapers. General reference only: check the facts of each case against the cited law. The [payroll skill](iceland-payroll.md) handles income-tax withholding and net pay. The linked statutes are Alþingi's 1 October 2026 compilation (158a).
 
@@ -221,4 +221,4 @@ Not yet confirmed: the reduced levy rate for A1-certificate workers for 2026; wh
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-30. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `iceland-social-contributions` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/iceland-social-contributions. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `iceland-social-contributions` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/iceland-social-contributions. If neither is available, confirm every figure against the official source pages cited above before relying on it.
