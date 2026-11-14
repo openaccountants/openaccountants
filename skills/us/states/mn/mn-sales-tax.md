@@ -1,10 +1,10 @@
 ---
 name: mn-sales-tax
 description: "Minnesota6.875%state plus actual local tax,rolling remote nexus,clothing exceptions,software/digital patterns,capital equipment and filing."
-version: "2.1"
+version: "2.2"
 jurisdiction: US-MN
 tax_year: 2026
-last_updated: 2026-11-13
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: vat-gst
@@ -24,8 +24,8 @@ Minnesota retailers, remote sellers, marketplace providers and purchasers of unt
 
 | Item | Rate / boundary | Official source |
 | --- | --- | --- |
-| General state sales/use tax | 6.875%; actual local taxes can add to it | [297A.62](https://www.revisor.mn.gov/statutes/cite/297A.62) |
-| Local taxes | Use address, product and effective-date lookup; no fixed statewide 8.875% maximum asserted | [Revenue rate calculator](https://www.revenue.state.mn.us/sales-tax-rate-calculator) |
+| General state sales/use tax | 6.875% (derived: 6.5% under subd. 1 plus 0.375% under subd. 1a); actual local taxes can add to it | [297A.62](https://www.revisor.mn.gov/statutes/cite/297A.62) |
+| Local taxes | Use address, product and effective-date lookup; no fixed statewide maximum combined rate asserted | [Revenue rate calculator](https://www.revenue.state.mn.us/sales-tax-rate-calculator) |
 | Remote economic nexus | 200 or more retail sales OR more than 100,000 retail sales into Minnesota over prior 12 months; separate physical-nexus tests apply | [297A.66 subd. 1](https://www.revisor.mn.gov/statutes/cite/297A.66) |
 | Annual filing | Average tax less than 100 per month; dueFebruary 5 following year | [Filing schedule](https://www.revenue.state.mn.us/so/node/9616) |
 | Quarterly filing | Average tax 100-500 per month; ordinary dueApril 20, July 20, October 20, January 20 | [Filing schedule](https://www.revenue.state.mn.us/so/node/9616) |
