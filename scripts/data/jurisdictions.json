@@ -882,6 +882,13 @@
   "dir": "skills/macau"
  },
  {
+  "code": "MP",
+  "name": "Northern Mariana Islands",
+  "region": "apac",
+  "owner": "ryan",
+  "dir": "skills/northern-mariana-islands"
+ },
+ {
   "code": "MQ",
   "name": "Martinique",
   "region": "americas",
