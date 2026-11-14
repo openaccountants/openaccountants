@@ -1057,6 +1057,13 @@
   "dir": "skills/saint-pierre-and-miquelon"
  },
  {
+  "code": "PN",
+  "name": "Pitcairn",
+  "region": "apac",
+  "owner": "ryan",
+  "dir": "skills/pitcairn"
+ },
+ {
   "code": "PR",
   "name": "Puerto Rico",
   "region": "americas",
