@@ -12,19 +12,20 @@ description: >
   between final liability and withholding. Cross-border residence and relief use
   the linked individual cross-border skill; Åland municipal differences require
   the separate regional schedule.
-version: 1.9
+version: "1.10"
 jurisdiction: FI
 tax_year: 2026
-last_updated: 2026-10-27
+last_updated: 2026-11-14
 depends_on:
   - income-tax-workflow-base
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
+type: computation
 ---
 
-# Finland individual income tax v1.9
+# Finland individual income tax v1.10
 **Tax year:** 2026. Source-cited ordinary individual computation; independent source-review evidence is in the [pack README](README.md). The October 2026 amendments below apply to the whole 2026 assessment, including eligible payments before commencement.
 
 ## Who this applies to
@@ -37,28 +38,28 @@ Keep earned and capital categories separately. Wages, taxable benefits, pensions
 
 | 2026 taxable earned income EUR | State tax at lower limit EUR | Rate on excess | Law |
 |---|---:|---:|---|
-| 0–22,000 | 0 | 12.64% | [2026 scale Act 1140/2025, section 1][scale] |
-| 22,000–32,600 | 2,780.80 | 19% | [Section 1][scale] |
-| 32,600–40,100 | 4,794.80 | 30.25% | [Section 1][scale] |
-| 40,100–52,100 | 7,063.55 | 33.25% | [Section 1][scale] |
-| Above 52,100 | 11,053.55 | 37.5% | [Section 1][scale] |
+| 0–22,000 | 0 | 12.64% | [2026 scale Act 1140/2025, section 1](https://www.finlex.fi/fi/lainsaadanto/2025/1140) |
+| 22,000–32,600 | 2,780.80 | 19% | [Section 1](https://www.finlex.fi/fi/lainsaadanto/2025/1140) |
+| 32,600–40,100 | 4,794.80 | 30.25% | [Section 1](https://www.finlex.fi/fi/lainsaadanto/2025/1140) |
+| 40,100–52,100 | 7,063.55 | 33.25% | [Section 1](https://www.finlex.fi/fi/lainsaadanto/2025/1140) |
+| Above 52,100 | 11,053.55 | 37.5% | [Section 1](https://www.finlex.fi/fi/lainsaadanto/2025/1140) |
 
 | Item | Applicable 2026 amount / formula | Primary source |
 |---|---|---|
-| Capital tax | 30% through EUR 30,000 annual taxable capital income; 34% above | [Income Tax Act, section 124][law] |
-| Municipal/parish | Select the actual municipality/parish from the annual decision. Mainland 2026 municipal range 4.70% (Kauniainen) to 10.90% (Pomarkku); Lutheran parish 1.00% to 2.00%; Orthodox 1.75% to 2.25%. Helsinki: municipal 5.30%, Lutheran 1.00%, Orthodox 1.80% | [Vero annual decision under Assessment Procedure Act section 91a(3)][local-rates] |
-| Wage expense deduction | EUR 750, capped at wage income; qualifying actual ordinary expenses replace it if greater | [Income Tax Act, section 95][law] |
-| Commuting | Actual cheapest qualifying mode, deduction after EUR 800 own liability capped at EUR 7,000; specified benefit months reduce own liability by EUR 75 each, minimum EUR 150 | [Income Tax Act, section 93, Act 873/2026 commencement][law] |
-| Basic deduction | Up to EUR 4,265, reduced by 18% of income above EUR 4,265 after prior qualifying deductions; never above remaining income | [Income Tax Act, section 106][law] |
-| Work-income credit | 18% of qualifying work income, maximum EUR 3,430; reduce 2% of net earned income between EUR 35,000 and 50,550, with no further reduction above 50,550 | [Income Tax Act, section 125][law] |
-| Credit cap supplements | EUR 1,200 if aged 65 before year start; EUR 105 per minor child in custody at year end, doubled for the statutory sole-custodian/no-spouse case | [Income Tax Act, section 125(3)–(4)][law] |
-| Pension deduction | Full maximum EUR 11,080 from annual national pension × 1.173 rounded up to next EUR 10, capped at pension; taper below | [Income Tax Act, section 100][law]; [Kela 2026 full pension EUR 787.07/month][kela] |
-| Pension supplement tax | 5.85% of pension after pension deduction above EUR 60,000 | [Income Tax Act, section 124(4)][law] |
-| Health care | 1.10% of established health-care base plus 0.39% of the eligible positive care-base/daily-base difference; pure pension/benefit base can therefore bear 1.49%; apply the mixed-base and §14(2) exclusion rules below | [Health Insurance Act, chapter 18 sections 14–20][health-law]; [2026 tax bases][tax-bases] |
-| Daily allowance | 0.88% of qualifying wage/work base if annual wage/work income at least EUR 17,255; liability starts the month after the 16th birthday and continues through the month of the 68th birthday; self-employed add a 0.23% supplement on YEL confirmed income, so a sole YEL base at or above EUR 17,255 bears 1.11%, and below it 0.23% only; see the [YEL skill](fi-yel-social.md) | [Health Insurance Act, chapter 18 sections 5, 15, 23–24][health-law]; [2026 tax bases][tax-bases] |
-| Broadcasting tax | Covered mainland residents reaching 18 in the year: 2.5% above EUR 15,150 of the larger of net earned+capital income or confirmed YEL+MYEL income, capped at EUR 160 | [Broadcasting Tax Act, sections 1–2][yle-law] |
-| Ordinary household credit | 40% qualifying registered-company labour charge including VAT, or 15% qualifying directly paid wages plus listed employer contributions; 40% also for ordinary household, care and nursing work bought from a section 22 non-profit; EUR 150 own liability; ordinary-work maximum EUR 2,100/person | [Income Tax Act, sections 127a–127c, 127f][law] |
-| Oil-heating replacement | 60% qualifying contractor labour, or 30% wages plus listed employer contributions; combined household-credit ceiling EUR 3,500/person, of which other work at most EUR 2,100 | [Income Tax Act, section 127f][law] |
+| Capital tax | 30% through EUR 30,000 annual taxable capital income; 34% above | [Income Tax Act, section 124](https://www.finlex.fi/fi/lainsaadanto/1992/1535) |
+| Municipal/parish | Select the actual municipality/parish from the annual decision. Mainland 2026 municipal range 4.70% (Kauniainen) to 10.90% (Pomarkku); Lutheran parish 1.00% to 2.00%; Orthodox 1.75% to 2.25%. Helsinki: municipal 5.30%, Lutheran 1.00%, Orthodox 1.80% | [Vero annual decision under Assessment Procedure Act section 91a(3)](https://www.vero.fi/syventavat-vero-ohjeet/paatokset/47465/kuntien-ja-seurakuntien-tuloveroprosentit-vuonna-2026/) |
+| Wage expense deduction | EUR 750, capped at wage income; qualifying actual ordinary expenses replace it if greater | [Income Tax Act, section 95](https://www.finlex.fi/fi/lainsaadanto/1992/1535) |
+| Commuting | Actual cheapest qualifying mode, deduction after EUR 800 own liability capped at EUR 7,000; specified benefit months reduce own liability by EUR 75 each, minimum EUR 150 | [Income Tax Act, section 93, Act 873/2026 commencement](https://www.finlex.fi/fi/lainsaadanto/1992/1535) |
+| Basic deduction | Up to EUR 4,265, reduced by 18% of income above EUR 4,265 after prior qualifying deductions; never above remaining income | [Income Tax Act, section 106](https://www.finlex.fi/fi/lainsaadanto/1992/1535) |
+| Work-income credit | 18% of qualifying work income, maximum EUR 3,430; reduce 2% of net earned income between EUR 35,000 and 50,550, with no further reduction above 50,550 | [Income Tax Act, section 125](https://www.finlex.fi/fi/lainsaadanto/1992/1535) |
+| Credit cap supplements | EUR 1,200 if aged 65 before year start; EUR 105 per minor child in custody at year end, doubled for the statutory sole-custodian/no-spouse case | [Income Tax Act, section 125(3)–(4)](https://www.finlex.fi/fi/lainsaadanto/1992/1535) |
+| Pension deduction | Full maximum EUR 11,080 from annual national pension × 1.173 rounded up to next EUR 10, capped at pension; taper below | [Income Tax Act, section 100](https://www.finlex.fi/fi/lainsaadanto/1992/1535); [Kela 2026 full pension EUR 787.07/month](https://www.kela.fi/ajankohtaista/muutoksia-kelan-etuuksiin-vuonna-2026) |
+| Pension supplement tax | 5.85% of pension after pension deduction above EUR 60,000 | [Income Tax Act, section 124(4)](https://www.finlex.fi/fi/lainsaadanto/1992/1535) |
+| Health care | 1.10% of established health-care base plus 0.39% of the eligible positive care-base/daily-base difference; pure pension/benefit base can therefore bear 1.49%; apply the mixed-base and §14(2) exclusion rules below | [Health Insurance Act, chapter 18 sections 14–20](https://www.finlex.fi/fi/lainsaadanto/2004/1224); [2026 tax bases](https://www.vero.fi/en/individuals/tax-cards-and-tax-returns/tax_card/tax-rate-and-income-ceiling/tax-bases/) |
+| Daily allowance | 0.88% of qualifying wage/work base if annual wage/work income at least EUR 17,255; liability starts the month after the 16th birthday and continues through the month of the 68th birthday; self-employed add a 0.23% supplement on YEL confirmed income, so a sole YEL base at or above EUR 17,255 bears 1.11%, and below it 0.23% only; see the [YEL skill](fi-yel-social.md) | [Health Insurance Act, chapter 18 sections 5, 15, 23–24](https://www.finlex.fi/fi/lainsaadanto/2004/1224); [2026 tax bases](https://www.vero.fi/en/individuals/tax-cards-and-tax-returns/tax_card/tax-rate-and-income-ceiling/tax-bases/) |
+| Broadcasting tax | Covered mainland residents reaching 18 in the year: 2.5% above EUR 15,150 of the larger of net earned+capital income or confirmed YEL+MYEL income, capped at EUR 160 | [Broadcasting Tax Act, sections 1–2](https://www.finlex.fi/fi/lainsaadanto/2012/484) |
+| Ordinary household credit | 40% qualifying registered-company labour charge including VAT, or 15% qualifying directly paid wages plus listed employer contributions; 40% also for ordinary household, care and nursing work bought from a section 22 non-profit; EUR 150 own liability; ordinary-work maximum EUR 2,100/person | [Income Tax Act, sections 127a–127c, 127f](https://www.finlex.fi/fi/lainsaadanto/1992/1535) |
+| Oil-heating replacement | 60% qualifying contractor labour, or 30% wages plus listed employer contributions; combined household-credit ceiling EUR 3,500/person, of which other work at most EUR 2,100 | [Income Tax Act, section 127f](https://www.finlex.fi/fi/lainsaadanto/1992/1535) |
 
 **Currency corrections.** Act 873/2026 commenced on 13 October but expressly applies the amended commuting rule to tax year 2026 and section 127f to eligible payments from 1 January 2026. Do not divide the annual commuting/credit calculation at 13 October. The Vero household-credit summary still displaying EUR 1,600/35% and the English automatic-deductions page retaining a 3.44% upper work-credit taper conflict with the current statute; use the enacted rules above. [Income Tax Act, sections 93, 125, 127f and amendment commencement][law]; [older household summary][household]; [automatic deductions summary][automatic].
 

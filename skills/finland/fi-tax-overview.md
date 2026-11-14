@@ -10,16 +10,17 @@ description: >
   country pack's partial coverage. This overview supplies no standalone tax
   calculation of its own or current formation fee, and the country remains a source-cited
   draft with source-review evidence in the pack README; professional attestation is separate.
-version: 0.5
+version: 0.6
 jurisdiction: FI
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+type: situation-rules
 ---
 
-# Finland tax overview v0.5
+# Finland tax overview v0.6
 
 ## Scope
 

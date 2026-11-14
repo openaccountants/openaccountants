@@ -12,16 +12,17 @@ description: >
   or deductible input VAT. Use with vat-workflow-base and eu-vat-directive;
   special margin, travel, marketplace and other sector schemes need separately
   verified treatment.
-version: 2.7
+version: 2.8
 jurisdiction: FI
 tax_year: 2026
-last_updated: 2026-10-27
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: vat-gst
+type: filing-howto
 ---
 
-# Finland VAT return v2.7
+# Finland VAT return v2.8
 
 ## Who this applies to
 
@@ -33,14 +34,14 @@ The ordinary method covers registration, base/rates, return mapping, input deduc
 
 | Item | 2026 rule | Act / official source |
 |---|---|---|
-| General rate | 25.5% from 1 September 2024 (24% for supplies up to 31 August 2024; use 24% when correcting an older period) | VAT Act §84 [text][law]; [Vero rates][rates] |
-| Reduced rate | 13.5% from 1 January 2026, formerly 14%; listed food/feed, meals, passenger transport, accommodation, medicines, books, qualifying sport/culture, sanitary products and specified art/performance/copyright/broadcasting items | VAT Act §85, Acts 1358/2025 and 921/2024 [text][law] |
-| Newspapers/magazines | 10%, subject to publication definition | VAT Act §85a [text][law] |
-| Small-business exemption | Both current and preceding calendar-year counted turnover at most EUR 20,000; no voluntary registration | VAT Act §3 [text][law] |
-| Longer period application | Quarterly turnover ceiling EUR 100,000; annual EUR 30,000 | Procedure Act §12 [text][procedure]; [Vero tax periods][period] |
-| Cash basis ordinary domestic sales | Calendar turnover at most EUR 500,000 or other statutory qualifying accounting status; 12-month collection backstop | VAT Act §§137,143 [text][law] |
-| Small-error correction alternative | Tax difference at most EUR 500, subject to timing/data exclusions | Procedure Act §25 [text][procedure]; [return instructions][return] |
-| EU cross-border consumer distance-sale/TBE threshold | EUR 10,000 combined current and preceding-year test, with single-state establishment and other §69m conditions | VAT Act §§63a,69i,69m [text][law] |
+| General rate | 25.5% from 1 September 2024 (24% for supplies up to 31 August 2024; use 24% when correcting an older period) | VAT Act §84 [text](https://www.finlex.fi/fi/lainsaadanto/1993/1501); [Vero rates](https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/vat/rates-of-vat/) |
+| Reduced rate | 13.5% from 1 January 2026, formerly 14%; listed food/feed, meals, passenger transport, accommodation, medicines, books, qualifying sport/culture, sanitary products and specified art/performance/copyright/broadcasting items | VAT Act §85, Acts 1358/2025 and 921/2024 [text](https://www.finlex.fi/fi/lainsaadanto/1993/1501) |
+| Newspapers/magazines | 10%, subject to publication definition | VAT Act §85a [text](https://www.finlex.fi/fi/lainsaadanto/1993/1501) |
+| Small-business exemption | Both current and preceding calendar-year counted turnover at most EUR 20,000; no voluntary registration | VAT Act §3 [text](https://www.finlex.fi/fi/lainsaadanto/1993/1501) |
+| Longer period application | Quarterly turnover ceiling EUR 100,000; annual EUR 30,000 | Procedure Act §12 [text](https://www.finlex.fi/fi/lainsaadanto/2016/768); [Vero tax periods](https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/vat/when-to-file-and-pay/tax-period/) |
+| Cash basis ordinary domestic sales | Calendar turnover at most EUR 500,000 or other statutory qualifying accounting status; 12-month collection backstop | VAT Act §§137,143 [text](https://www.finlex.fi/fi/lainsaadanto/1993/1501) |
+| Small-error correction alternative | Tax difference at most EUR 500, subject to timing/data exclusions | Procedure Act §25 [text](https://www.finlex.fi/fi/lainsaadanto/2016/768); [return instructions](https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/vat/when-to-file-and-pay/) |
+| EU cross-border consumer distance-sale/TBE threshold | EUR 10,000 combined current and preceding-year test, with single-state establishment and other §69m conditions | VAT Act §§63a,69i,69m [text](https://www.finlex.fi/fi/lainsaadanto/1993/1501) |
 
 Vero's 13.5% examples include groceries and food, animal feed, restaurant and meal services, printed and electronic books, pharmaceuticals, sanitary protection products and baby diapers, sports and fitness services (including gym, golf, ice-rink bookings and ski-lift tickets), admission to cultural, entertainment and sports events, passenger transport, accommodation and, from 2026, public broadcasting services (10% until 31 December 2025). [Vero rates][rates]. Alcohol, tobacco and the serving of alcoholic drinks retain the general rate, even when sold by a restaurant or shop. An advertising-dominated or principally video/music publication does not qualify as a reduced-rate book/newspaper just because it is called one. Use supply/advance-payment tax-point rules at a rate transition; filing date alone does not select the rate. [VAT Act §§15–16,84–85a][law].
 
