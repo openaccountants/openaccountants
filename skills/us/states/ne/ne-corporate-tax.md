@@ -1,11 +1,11 @@
 ---
 name: ne-corporate-tax
 description: "Nebraska 2026 C-corporation tax: federal income adjustments, Nebraska allocation/apportionment, flat 4.55%, estimates, extensions and financial-institution franchise routing."
-version: "0.1"
+version: "0.2"
 jurisdiction: US-NE
 category: state-tax
 tax_year: 2026
-last_updated: 2026-11-13
+last_updated: 2026-11-14
 tier: 2
 domain: corporate-tax
 type: computation
@@ -50,7 +50,7 @@ Ordinary C-corporation computation once Nebraska nexus, income base and factor a
 
 | Fact | Treatment or stopping point |
 | --- | --- |
-| Financial institution | Section 77-3802 imposes franchise tax on financial institutions with Nebraska business locations, based on average deposits, subject to the separate statutory limitation and separate return. The dated booklet routes chartered/qualified institutions or those with permanent place and active deposit solicitation to 1120NF. Deposit/net-financial-income calculation and 2026 rate/limitation detail remain partial; do not use 4.55% ordinary income tax as their franchise calculation. [77-3802](https://nebraskalegislature.gov/laws/statutes.php?statute=77-3802); [Who must file](https://revenue.nebraska.gov/sites/default/files/doc/tax-forms/2025/f_Corp_Booklet.pdf). |
+| Financial institution | Section 77-3802 imposes franchise tax on financial institutions with Nebraska business locations, based on average deposits, subject to the separate statutory limitation and separate return. The dated booklet routes chartered/qualified institutions or those with permanent place and active deposit solicitation to 1120NF. Deposit/net-financial-income calculation and 2026 rate/limitation detail remain partial; do not use the ordinary corporate income tax rate (Income tax row above) as their franchise calculation. [77-3802](https://nebraskalegislature.gov/laws/statutes.php?statute=77-3802); [Who must file](https://revenue.nebraska.gov/sites/default/files/doc/tax-forms/2025/f_Corp_Booklet.pdf). |
 | Unitary group | Combined scope, nonapportionable income and factor/source rules require specialist work; federal consolidated status is evidence, not the sole decision. |
 | Insurance / PTE / exempt organization | Regime and special rules must be identified before using the ordinary C-corporation method. |
 | NOL / credits / state basis | Use actual Nebraska balances and statutory limits; do not apply an arbitrary percentage of federal NOL or duplicate federal asset deductions. |

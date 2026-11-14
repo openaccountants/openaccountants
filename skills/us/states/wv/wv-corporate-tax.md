@@ -6,8 +6,8 @@ category: state-tax
 domain: tax
 tax_year: 2026
 tier: 2
-last_updated: 2026-11-13
-version: "1.0"
+last_updated: 2026-11-14
+version: "1.1"
 type: situation-rules
 ---
 
@@ -36,14 +36,14 @@ West Virginia domestic/foreign corporations, including entities taxed as corpora
 
 | Item | Amount or rule | Official source |
 | --- | --- | --- |
-| Corporate rate | 6.5% of WV taxable income; current rate in statute | [§11-24-4(8)](https://code.wvlegislature.gov/11-24-4/) |
+| Corporate rate | 6.5% of WV taxable income; current rate in statute (in words on the page) | [§11-24-4(8)](https://code.wvlegislature.gov/11-24-4/); [CIT-120 instructions, Tax rates](https://tax.wv.gov/Documents/CIT/2025/cit120.instructions.2025.pdf) |
 | Estimates, 2025-2026 filing cycle | Expected WV taxable income more than $10,000 / liability after credits more than $650; four equal installments | [CIT-120 p.5](https://tax.wv.gov/Documents/CIT/2025/cit120.instructions.2025.pdf) |
 | Ordinary annual return | 15th of fourth month; exempt organization with taxable UBI: 15th of fifth month | [CIT-120 p.4](https://tax.wv.gov/Documents/CIT/2025/cit120.instructions.2025.pdf) |
 | Installments, 2025-2026 filing cycle | 15th of months 4, 6, 9 and 12 of the tax year | [CIT-120 p.5](https://tax.wv.gov/Documents/CIT/2025/cit120.instructions.2025.pdf) |
 | Post-2017 WV NOL, 2025-2026 filing cycle | Indefinite carryforward; deduction limited to 80% of taxable income; separate vintage/entity restrictions | [CIT-120 pp.14-15](https://tax.wv.gov/Documents/CIT/2025/cit120.instructions.2025.pdf) |
 | Electronic payment/filing, latest read instructions | Annual remittance of any single tax at least $50,000; combined filers and specified schedules require e-file separately | [CIT-120 pp.4-5](https://tax.wv.gov/Documents/CIT/2025/cit120.instructions.2025.pdf) |
 | Late filing, 2025-2026 filing cycle | 5% per month or part, maximum 25% | [CIT-120 p.6](https://tax.wv.gov/Documents/CIT/2025/cit120.instructions.2025.pdf) |
-| Late payment, 2025-2026 filing cycle | 0.5% per month or part, maximum 25%; concurrent monthly maximum 5%, overall maximum 50% | [CIT-120 p.6](https://tax.wv.gov/Documents/CIT/2025/cit120.instructions.2025.pdf) |
+| Late payment, 2025-2026 filing cycle | 0.5% per month or part, maximum 25%; concurrent monthly maximum 5%, overall maximum 50% (in words on the page, with decimals such as .005) | [CIT-120 p.6](https://tax.wv.gov/Documents/CIT/2025/cit120.instructions.2025.pdf) |
 
 ### Computation and schedules
 
