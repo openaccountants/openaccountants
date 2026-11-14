@@ -16,9 +16,9 @@ jurisdiction: JE
 category: international
 tax_year: 2026
 tier: 2
-last_updated: 2026-10-15
-version: 1.2
-review_status: pending_review
+type: computation
+last_updated: 2026-11-14
+version: 1.3
 depends_on:
   - workflow-base
   - corporate-income-tax-workflow-base
@@ -26,7 +26,9 @@ depends_on:
 
 # Jersey corporate income tax: 2026
 
-## Scope and registration
+Tax year: the 2026 year of assessment. Currency is GBP. Authority: Revenue Jersey. Law: Income Tax (Jersey) Law 1961.
+
+## Who this applies to
 
 Under [Income Tax Law, Article 123](https://www.jerseylaw.je/laws/current/l_29_1961), a Jersey incorporated company is generally Jersey resident. The exception requires central management and control abroad, residence there, and a jurisdiction whose highest company tax rate meets the statutory 10% test. A foreign incorporated company managed and controlled in Jersey is Jersey resident. Confirm the actual facts and any treaty before changing residence treatment.
 
@@ -34,22 +36,25 @@ JFSC incorporation passes company details to Revenue Jersey for automatic corpor
 
 [Income Tax Law, Articles 120AB and 120AC](https://www.jerseylaw.je/laws/current/l_29_1961) qualify that generic guidance. Article 120AB exempts income, profits and gains of a relevant MNE group entity from ordinary income tax. The entity must be a Jersey constituent entity for the relevant whole or part of the assessment year, and its group must be a chargeable MNE group under the MCIT Law for a fiscal year ending in that assessment year. Part-year status requires apportionment under Article 120AB(3). Article 120AC disapplies the specified ordinary company-return requirement for the year or period in which the company meets that status. Establish these conditions and the separate MCIT obligations before deciding which return is required; registration alone does not establish exemption. See `je-pillar-two`.
 
-## Rate classification
+## Rates, bands and thresholds
 
 Classify each source and company under the applicable provisions before applying a rate. A zero rate is not statutory exemption. The [company guidance](https://www.gov.je/Industry/BusinessAdviceHub/BusinessTaxesSocialSecurity/pages/companytax.aspx), [corporate return notes](https://www.gov.je/TaxesMoney/IncomeTax/Companies/CompanyTaxGuidance/pages/companytaxreturnnotes.aspx) and [Income Tax Law, Articles 123C to 123DA](https://www.jerseylaw.je/laws/current/l_29_1961) identify the ordinary structure:
 
-| 2026 classification | Ordinary treatment |
-|---|---|
-| Company without an applicable exception | 0% |
-| Qualifying financial services company | 10% |
-| Utility company | 20% |
-| Specified Jersey property income, hydrocarbon trade and quarrying | 20% under the relevant income provisions |
-| Company in the statutory cannabis industry category | 20% |
-| Large corporate retailer | Retail computation below |
+| 2026 classification | Rate | Conditions | Source |
+|---|---|---|---|
+| Company without an applicable exception | 0% | Standard rate; a zero rate is not exemption and the return is still due | [Company tax guidance](https://www.gov.je/Industry/BusinessAdviceHub/BusinessTaxesSocialSecurity/pages/companytax.aspx) |
+| Qualifying financial services company | 10% | Definitions in Article 123D | [Income Tax Law, Arts. 123C to 123DA](https://www.jerseylaw.je/laws/current/l_29_1961) |
+| Utility company | 20% | Definitions in the Law | same |
+| Specified Jersey property income, hydrocarbon trade and quarrying | 20% | Under the relevant income provisions | [Company tax guidance](https://www.gov.je/Industry/BusinessAdviceHub/BusinessTaxesSocialSecurity/pages/companytax.aspx) |
+| Company in the statutory cannabis industry category | 20% | Statutory category | [Income Tax Law, Arts. 123C to 123DA](https://www.jerseylaw.je/laws/current/l_29_1961) |
+| Large corporate retailer | 0% to 20% | Retail turnover of GBP 2 million and above; profits under GBP 500,000 at 0%, GBP 500,000 to GBP 750,000 tapered, over GBP 750,000 at 20%; computation under "The base" | [Income Tax Law, Arts. 123H to 123L](https://www.jerseylaw.je/laws/current/l_29_1961) |
+| Large company instalment test | Liability equal to or above GBP 500,000 in each of the 2 preceding assessment years | Article 41AB(7) | [Income Tax Law, Art. 41AB](https://www.jerseylaw.je/laws/current/l_29_1961) |
 
 Definitions, deductions and source rules determine whether an exception applies. First check relevant MNE group status and the ordinary-tax exemption above. The separate multinational computation in `je-pillar-two` is not a flat surcharge on this table.
 
-## Large corporate retailer computation
+## The base
+
+### Large corporate retailer computation
 
 [Income Tax Law, Articles 123H to 123L](https://www.jerseylaw.je/laws/current/l_29_1961) and [retailer guidance](https://www.gov.je/TaxesMoney/IncomeTax/Companies/Guidelines/Pages/LargeCorporateRetailers.aspx) require Jersey residence or a permanent establishment, qualifying gross Jersey retail turnover and the retail proportion test. The ordinary 12-month turnover threshold is GBP 2 million and retail must represent at least 60% of the company's Jersey trading turnover.
 
@@ -77,7 +82,7 @@ For A = GBP 600,000, B = GBP 120,000 and C = GBP 60,000. The difference is GBP 6
 
 Article 123L adjusts both profit thresholds by days / 365 for financial periods differing from 12 months. Associated-company calculations aggregate relevant profits, treat a group member's loss as zero for this aggregation, apply the period rules and apportion tapered tax. The simple table is unavailable for those cases until the group and periods are established. Retail loss carryforward, group relief and capital allowances have additional restrictions; see the [retailer guidance](https://www.gov.je/TaxesMoney/IncomeTax/Companies/Guidelines/Pages/LargeCorporateRetailers.aspx).
 
-## Deductions and capital allowances
+### Deductions and capital allowances
 
 Reconcile approved accounting profit to the statutory tax base before applying a sector rate. [Income Tax Law, Article 70](https://www.jerseylaw.je/laws/current/l_29_1961) requires business expenditure to be wholly and exclusively for the trade or profession and contains specific disallowances for private expenditure, capital, unrelated losses, insurance-recoverable amounts, certain interest, annual payments and patent royalties. Bad and doubtful debts have their own evidence conditions. This is not a general permission to deduct every expense in the accounts. Establish the applicable exceptions before treating interest or another listed item as deductible.
 
@@ -99,7 +104,7 @@ Article 106A(7) and (8) requires separate, just-and-reasonable treatment for mix
 
 [Article 106BA](https://www.jerseylaw.je/laws/current/l_29_1961) separately substitutes 150% for qualifying regulatory-compliance hardware/software capital expenditure from assessment year 2024. Expenditure deducted under Article 70E cannot also use this provision. The pre-2024 connected-person transfer exclusion and disposal clawbacks must be tested: an ordinary disposal generally recaptures 100% of the statutory disposal value; a connected-person disposal uses market value and recaptures 150% if fewer than 3 financial periods have elapsed, or 100% from 3 periods. Keep the enhanced schedule distinct to prevent duplicate expenditure or relief; a 150% label alone does not establish eligibility.
 
-## Losses and group relief
+### Losses and group relief
 
 [Article 108](https://www.jerseylaw.je/laws/current/l_29_1961) carries an unrelieved trading/professional loss forward against the same trade or profession, using the earliest subsequent assessment as far as possible. Keep a year-by-year register of the original loss, relief already given, surrender and balance. The same loss cannot be relieved twice. This provision does not authorise use against unrelated income.
 
@@ -109,7 +114,7 @@ Under [Article 123F](https://www.jerseylaw.je/laws/current/l_29_1961), the claim
 
 The Article 123F control definition requires the power to secure the controlled company's affairs through one or more of the listed share, voting or constitutional powers of **more than 50%**, together with rights to **more than 50% of profits and gains**. Establish direct/indirect rights and the ultimate holding company from the legal documents. A percentage of ordinary shares alone does not prove the group. [Article 123S](https://www.jerseylaw.je/laws/current/l_29_1961) modifies the permitted group composition for retailers, but both claimant and surrenderer must be large corporate retailers; a zero-rated member cannot surrender to a retailer merely because it is in the wider group.
 
-## Distributions and vouchers
+### Distributions and vouchers
 
 Corporate profits are computed before dividends under [Article 88](https://www.jerseylaw.je/laws/current/l_29_1961). It permits deductions associated with profits taxed at 20% or 10% subject to its exceptions, and prohibits a tax deduction on a dividend from Article 123C profits taxed at 0%. Recipient credits have separate conditions and limits. A recipient's liability is not established by subtracting a flat corporate rate from 20%.
 
@@ -117,7 +122,9 @@ Classify the transaction under Articles 3AE, 78 and the relevant Case III/IX pro
 
 [Article 89](https://www.jerseylaw.je/laws/current/l_29_1961) specifies vouchers showing the relevant gross portions, corporate rates, deductions and net payments, with exceptions. For distributions within Article 89(1A), provide the individual statement within 1 month after the assessment year ends; Article 89(1B) requires the company-recipient statement at distribution or as soon as reasonably practicable afterwards. The [distribution guidance](https://www.gov.je/taxesmoney/incometax/companies/reportingcompanies/pages/distributionsextension.aspx) separately states a penalty concession if information is supplied by 31 December of the following year. That concession does not rewrite the statutory deadline or establish exemption of every capital distribution.
 
-## Company instalments and balance
+## Deadlines and filing
+
+### Company instalments and balance
 
 For Jersey resident companies and Jersey permanent establishments within ordinary income tax, [Articles 39 and 41AB](https://www.jerseylaw.je/laws/current/l_29_1961) set the following dates in the year following the assessment year:
 
@@ -130,7 +137,23 @@ A large company must notify the Comptroller by 31 March if the estimated instalm
 
 Article 41AB(7) includes liability **equal to or above GBP 500,000 in each of the 2 assessment years immediately preceding the assessment year in which the instalment is payable**. The [payment guidance](https://www.gov.je/TaxesMoney/IncomeTax/Companies/ReportingCompanies/Pages/CompanyTaxPaymentDates.aspx) uses a broad 'exceeds' description and a different look-back description. Use the statute's inclusive boundary and exact year reference. The guide's second historical example also changes its assessment-year label mid-example; it is not used to establish a period rule here. Obtain both relevant liabilities and the payment year before classifying a company.
 
-## Additional hypothetical positions
+### Filing and checks
+
+The ordinary corporate return must be delivered online by midnight 30 November following the year of assessment. The [company guidance](https://www.gov.je/Industry/BusinessAdviceHub/BusinessTaxesSocialSecurity/pages/companytax.aspx) establishes this return deadline; it does not establish every payment deadline. Tax-resident companies and Jersey permanent establishments attach the accounts required by the [return notes](https://www.gov.je/TaxesMoney/IncomeTax/Companies/CompanyTaxGuidance/pages/companytaxreturnnotes.aspx).
+
+Check residence, income source, sector classification, period length, associations and deductions before computing tax. Keep registry confirmations, corporate returns, substance reporting and Pillar Two separate. Complete distribution allocation, withholding, foreign-tax credits, anti-avoidance, specialist asset transfers and operational rounding remain research gaps. See je-income-tax-compliance for ordinary income-tax penalties, corrections and appeals.
+
+## Penalties and interest
+
+Ordinary income-tax late-return penalties, corrections, appeals and the late-payment surcharge for companies are in [je-income-tax-compliance](je-income-tax-compliance.md) (one figure, one home). The Article 89 voucher penalty concession is noted under "Distributions and vouchers".
+
+## Cross-border points
+
+Company residence under [Article 123](https://www.jerseylaw.je/laws/current/l_29_1961) is set out under "Who this applies to": the incorporation test, its central management and control exception with the 10% highest-rate test, and residence by management and control for a foreign incorporated company. Jersey permanent establishments are within the instalment rules and attach accounts to the return. Relevant MNE group entities are exempt from ordinary income tax under Article 120AB and fall under `je-pillar-two`. Foreign-tax credits, withholding and non-resident distribution treatment remain research gaps; see `je-cross-border-withholding` for individuals.
+
+## Two worked examples that recompute
+
+### Additional hypothetical positions
 
 These 2026 examples assume the stated eligibility, ordinary 12-month periods, validated inputs and no other credits or adjustments. They are arithmetic or classification checks, not executed financial outputs.
 
@@ -143,7 +166,49 @@ These 2026 examples assume the stated eligibility, ordinary 12-month periods, va
 | Inclusive large-company boundary | Instalment payable in 2027; liabilities for 2025 and 2026 each GBP 500,000; Article 41AB(7) | Large-company timetable applies: 31 March/30 September 2027 for assessment year 2026 |
 | Incomplete group evidence | Shares 60%; voting/constitutional control and profit rights unverified; Article 123F | Needs Input; no group-relief amount or complete package |
 
-## Reviewer controls and intake
+**Example 1: large corporate retailer in the taper, A = GBP 600,000.** B = 20% x 600,000 = GBP 120,000; C = 40% x (750,000 - 600,000) = GBP 60,000; tax D = GBP 60,000, an effective rate of 10% (derived).
+
+```oa-check
+name: Jersey 2026 large corporate retailer, standalone 12-month period, A GBP 600,000
+inputs:
+  a: 600000
+steps:
+  - b: a * 0.20
+  - c: (750000 - a) * 0.40
+  - tax: b - c
+  - effective_rate_pct: tax / a * 100
+expected:
+  b: 120000
+  c: 60000
+  tax: 60000
+  effective_rate_pct: 10
+```
+
+**Example 2: ordinary capital pool and ordinary company instalment.** Pool: GBP 120,000 qualifying expenditure less GBP 20,000 disposals leaves GBP 100,000; 25% gives a GBP 25,000 allowance and GBP 75,000 carried forward. Instalment: a reasonable estimate of GBP 50,000 for assessment year 2026 gives GBP 25,000 by 31 May 2027; a final liability of GBP 60,000 leaves GBP 35,000 by 30 November 2027.
+
+```oa-check
+name: Jersey 2026 capital pool at 25% and ordinary company instalment
+inputs:
+  expenditure: 120000
+  disposals: 20000
+  estimate: 50000
+  final_liability: 60000
+steps:
+  - excess: expenditure - disposals
+  - allowance: excess * 0.25
+  - carried_forward: excess - allowance
+  - instalment: estimate * 0.50
+  - balance: final_liability - instalment
+expected:
+  allowance: 25000
+  carried_forward: 75000
+  instalment: 25000
+  balance: 35000
+```
+
+## Ask the client first
+
+### Reviewer controls and intake
 
 Load the universal and corporate workflow bases. This source-cited guide remains an incomplete operational companion for a full company return: all base slots, applicable credits, anti-avoidance, distribution, foreign-tax and specialist regimes must be populated and verified before a complete financial result. Missing scope or law is not permission to select a higher tax amount. Base refusals, including regulated financial institutions and active controversy, still apply.
 
@@ -159,13 +224,7 @@ No missing-fact defaults are authorised for these ambiguities. Preserve unknown 
 
 Extend the base reviewer brief and working papers with the PBT-to-tax reconciliation, separate ordinary/enhanced asset schedules, loss utilisation and surrender register, distribution-source/voucher evidence, and payment-year calendar. Identify every source, period, uncertainty and held output. Carry a credit or payment into its prescribed stage once. Do not file, amend, sign, authenticate or pay on the taxpayer's behalf.
 
-## Filing and checks
-
-The ordinary corporate return must be delivered online by midnight 30 November following the year of assessment. The [company guidance](https://www.gov.je/Industry/BusinessAdviceHub/BusinessTaxesSocialSecurity/pages/companytax.aspx) establishes this return deadline; it does not establish every payment deadline. Tax-resident companies and Jersey permanent establishments attach the accounts required by the [return notes](https://www.gov.je/TaxesMoney/IncomeTax/Companies/CompanyTaxGuidance/pages/companytaxreturnnotes.aspx).
-
-Check residence, income source, sector classification, period length, associations and deductions before computing tax. Keep registry confirmations, corporate returns, substance reporting and Pillar Two separate. Complete distribution allocation, withholding, foreign-tax credits, anti-avoidance, specialist asset transfers and operational rounding remain research gaps. See je-income-tax-compliance for ordinary income-tax penalties, corrections and appeals.
-
-## Self-checks and provenance
+### Self-checks
 
 - Confirm every base content slot, refusal and source condition before accepting a financial result.
 - Keep book depreciation and tax allowances distinct; reconcile each pool and disposal.
@@ -174,26 +233,20 @@ Check residence, income source, sector classification, period length, associatio
 - Verify both look-back years, the instalment year and the filing/payment calendars.
 - Reconcile utilised credits and payments once; complete all required base outputs and checks.
 
+## Sources
+
 Revision 1.2 adds the above statutory rules and controls on 15 October 2026; version 1.1 covered residence, sector and retail classification.
 
 Core residence, sector and retail provisions were checked on 11 October 2026. The added deduction, allowance, loss, distribution-statement and payment provisions and cited guidance were checked on 15 October 2026 against the current Income Tax Law snapshot effective from 17 June 2026. Use the applicable historical version for an earlier period or transaction. See `references.md`; this draft has no professional sign-off.
 
-<!-- openaccountants-cta-block -->
+| Source | URL | Read on |
+|---|---|---|
+| Income Tax (Jersey) Law 1961, Arts. 3AE, 3AF, 39, 41AB, 70, 70E, 70F, 78, 88, 89, 106A to 106C, 106BA, 107, 107A, 108, 110B, 120AB, 120AC, 123, 123C to 123DA, 123F, 123H to 123L, 123P, 123S: read for residence, rates, base, losses, groups, distributions and payments | https://www.jerseylaw.je/laws/current/l_29_1961 | 2026-10-15 |
+| Government of Jersey, Company tax: read for the 0%, 10%, 20% and retail rates, the 30 November return deadline and the 6-month notification | https://www.gov.je/Industry/BusinessAdviceHub/BusinessTaxesSocialSecurity/pages/companytax.aspx | 2026-11-14 |
+| Revenue Jersey, Corporate tax return guidance notes, Section 1: read for classification and accounts to attach | https://www.gov.je/TaxesMoney/IncomeTax/Companies/CompanyTaxGuidance/pages/companytaxreturnnotes.aspx | 2026-10-15 |
+| Revenue Jersey, Large corporate retailers: read for the GBP 2 million and 60% tests and retail restrictions | https://www.gov.je/TaxesMoney/IncomeTax/Companies/Guidelines/Pages/LargeCorporateRetailers.aspx | 2026-10-11 |
+| Revenue Jersey, Capital allowances explanation: read for the 25% pool | https://www.gov.je/TaxesMoney/IncomeTax/BusinessesSelfEmployed/CapitalAllowances/pages/explanation.aspx | 2026-10-15 |
+| Revenue Jersey, Distributions extension: read for the 31 December penalty concession | https://www.gov.je/taxesmoney/incometax/companies/reportingcompanies/pages/distributionsextension.aspx | 2026-10-15 |
+| Revenue Jersey, Company tax payment dates: read for the instalment description (contrasted with Art. 41AB(7)) | https://www.gov.je/TaxesMoney/IncomeTax/Companies/ReportingCompanies/Pages/CompanyTaxPaymentDates.aspx | 2026-10-15 |
 
----
-
-## Talk to a verified accountant
-
-This guide is maintained in the
-[ryanduguid/openaccountants fork](https://github.com/ryanduguid/openaccountants).
-Check its quality tier, recorded review status and cited sources before use.
-Choose a practitioner whose credentials and engagement scope you have verified.
-The links below are optional upstream services; they do not publish or verify
-this fork's changes.
-
-- Upstream connection service: https://www.openaccountants.com/connect
-- Upstream accountant network: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
+Not yet confirmed: complete distribution allocation, Case IX and participator rules, MCIT distribution credits, non-resident treatment, withholding, foreign-tax credits, anti-avoidance, specialist asset transfers and operational rounding remain research gaps.
