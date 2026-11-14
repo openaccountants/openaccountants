@@ -251,4 +251,4 @@ expected:
 
 Not yet confirmed: the 2027 notice, refund and extension dates (Skatteverket has published only the 2026 round); the base interest rate in force when 2026 residual tax is charged; the public service fee rate (only the 2026 maximum was read); the regional reduction of egenavgifter (Lag 2001:1170) and the egenavgift waiting-period options, left to se-social-contributions; the NE form line for each income and cost type (R1-R47) and the bank-statement classification library of the old version, which are working practice rather than law and were not re-read on an official page; the church fee rate for a given parish; the 2-5% straight-line rates for buildings in the old version (the law sets the rate by the building's economic life, IL 19 kap. 5 §, and no official page with a 2-5% range was read).
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.
