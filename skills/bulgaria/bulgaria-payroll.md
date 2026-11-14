@@ -43,7 +43,7 @@ Tax year: the calendar year. Authorities: the National Revenue Agency (NRA, НА
 | Work accident and occupational disease | 0.4% to 1.1% by economic activity, employer only (e.g. IT and accounting 0.4%, retail 0.5%, building construction 1.1%) | 2026 | KSO art. 6(1)(7), (6); ZBDOO 2026 art. 14, Appendices 2 and 2A, https://lex.bg/laws/ldoc/1597824512 |
 | Guaranteed receivables fund | Not paid for 2026 | 2026 | ZBDOO 2026 art. 15(1), https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=244982 |
 | Health insurance | 8%: employer 4.8%, employee 3.2% (computed from the 60:40 split) | 2026 | NHIF Budget Act 2026 art. 2, [dv.parliament.bg](https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=244981); ZZO art. 40(1)(1), [lex.bg](https://lex.bg/laws/ldoc/2134412800) |
-| Total, standard employee | Employee 13.78%; employer 18.52% plus the work accident rate | 2026 | Sum of the rows above, https://lex.bg/laws/ldoc/1597824512 |
+| Total, standard employee | Employee 13.78%; employer 18.52% plus the work accident rate (computed) | 2026 | Sum of the rows above, https://lex.bg/laws/ldoc/1597824512 |
 | Wage tax | 10% of gross pay less the employee's own mandatory contributions | 2026 | ZDDFL arts. 42(2), (4), 48(1), [lex.bg](https://lex.bg/laws/ldoc/2135538631) |
 | Teachers' pension fund (teachers only) | 4.3%, employer only | 2026 | KSO art. 6(7), https://lex.bg/laws/ldoc/1597824512 |
 | Professional pension fund (category I or II labour only) | 12% (cat. I) or 7% (cat. II), employer only | 2026 | KSO art. 157(1)(2), (4), https://lex.bg/laws/ldoc/1597824512 |
