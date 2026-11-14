@@ -4,14 +4,15 @@ description: "Angola payroll and social contributions for tax year 2026, built f
 jurisdiction: AO
 category: payroll
 tax_year: 2026
-last_updated: 2026-11-01
-version: 0.2
+last_updated: 2026-11-14
+type: computation
+version: 0.3
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
 ---
 
-# Angola Payroll and Social Contributions v0.2
+# Angola Payroll and Social Contributions v0.3
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -23,9 +24,6 @@ Employers with staff in Angola: withholding IRT on Group A pay and declaring to 
 
 | Item | Amount and conditions | Tax year | Official URL |
 |---|---|---|---|
-| Employer INSS | 8% of gross remuneration (old version) | 2026 | unverified: Decreto Presidencial 227/18 text not opened; INSS contribution pages require login |
-| Employee INSS | 3% of gross remuneration (old version) | 2026 | unverified: same source not opened |
-| Retired employee INSS | 8% (old version) | 2026 | unverified: same source not opened |
 | Food allowance not subject to IRT | Up to Kz 30,000 a month | 2026 | https://portaldocontribuinte.minfin.gov.ao/impostos-e-taxas/imposto-sobre-rendimentos-do-trabalho |
 | Transport allowance not subject to IRT | Up to Kz 30,000 a month | 2026 | https://portaldocontribuinte.minfin.gov.ao/impostos-e-taxas/imposto-sobre-rendimentos-do-trabalho |
 | Family allowance not subject to IRT | Up to 5% of monthly base pay, private sector | 2026 | https://portaldocontribuinte.minfin.gov.ao/impostos-e-taxas/imposto-sobre-rendimentos-do-trabalho |
@@ -108,4 +106,4 @@ expected:
 | AGT, IRT page (whole page read; undated) | https://portaldocontribuinte.minfin.gov.ao/impostos-e-taxas/imposto-sobre-rendimentos-do-trabalho | 2026-11-01 |
 | AGT quick guide, monthly payroll map (read in part: steps) | https://portaldocontribuinte.minfin.gov.ao/pdfs/guia-rapido/irt/novos-guias/guia-rapido-mapa-mensal-de-remuneracoes-de-irt.pdf | 2026-11-01 |
 
-Not yet confirmed: All INSS rates, base and due date: Decreto Presidencial 227/18 was not opened and portal.inss.gov.ao contribution pages sit behind a login. Coverage (family, pension, unemployment) and self-employed rates (Decreto Legislativo Presidencial 2/22 seen only in search results).
+Not yet confirmed: All INSS rates, base and due date: Decreto Presidencial 227/18 was not opened and portal.inss.gov.ao contribution pages sit behind a login. Coverage (family, pension, unemployment) and self-employed rates (Decreto Legislativo Presidencial 2/22 seen only in search results); INSS rates (old version: employer 8%, employee 3%, retired employee 8%); Decreto Presidencial 227/18 not opened and the INSS pages need a login.
