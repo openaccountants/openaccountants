@@ -52,8 +52,8 @@ Paid membership of a control commission or a similar audit body is not "taking p
 |---|---|---|---|
 | Corporate income tax rate (applies to any TP adjustment of a company) | 21% | 2026 | https://e-sbirka.gov.cz/sb/1992/586 (§ 21(1)) |
 | Capital link test for related persons | at least 25% of capital or voting rights, direct or indirect | 2026 | https://e-sbirka.gov.cz/sb/1992/586 (§ 23(7)(a)) |
-| Annex size test: total assets | more than CZK 40,000,000 | periods starting 2025 (form vzor 12) | https://financnisprava.gov.cz/assets/tiskopisy/5404-E_12.pdf |
-| Annex size test: annual net turnover | more than CZK 80,000,000 | periods starting 2025 (form vzor 12) | https://financnisprava.gov.cz/assets/tiskopisy/5404-E_12.pdf |
+| Annex size test: total assets | more than 40 mil. Kč (CZK 40 million) | periods starting 2025 (form vzor 12) | https://financnisprava.gov.cz/assets/tiskopisy/5404-E_12.pdf |
+| Annex size test: annual net turnover | more than 80 mil. Kč (CZK 80 million) | periods starting 2025 (form vzor 12) | https://financnisprava.gov.cz/assets/tiskopisy/5404-E_12.pdf |
 | Annex size test: average employees | more than 50 | periods starting 2025 (form vzor 12) | https://financnisprava.gov.cz/assets/tiskopisy/5404-E_12.pdf |
 | Annex figures | whole CZK thousands | periods starting 2025 | https://financnisprava.gov.cz/assets/tiskopisy/5404-E_12.pdf |
 | Thin capitalisation: related-party debt above which interest is not deductible | 4 times equity (6 times for banks and insurers) | 2026 | https://e-sbirka.gov.cz/sb/1992/586 (§ 25(1)(w)) |
@@ -62,7 +62,7 @@ Paid membership of a control commission or a similar audit body is not "taking p
 | Penalty on extra tax assessed by the tax office (penále) | 20% of the extra tax; 1% of a reduced tax loss | 2026 | https://e-sbirka.gov.cz/sb/2009/280 (§ 251(1)) |
 | Late return penalty | 0.05% of the tax a day after 5 working days, capped at 5% and CZK 300,000 | 2026 | https://e-sbirka.gov.cz/sb/2009/280 (§ 250) |
 | Penalty for a missed reporting or record-keeping duty | up to CZK 500,000 | 2026 | https://e-sbirka.gov.cz/sb/2009/280 (§ 247a(1)) |
-| Late payment interest: CNB repo rate on the first day of the calendar half-year in which each day of interest falls, plus 8 points | 11.50% a year for days from 1 January to 30 June 2026; 11.75% for days from 1 July to 31 December 2026 | 2026 | https://e-sbirka.gov.cz/sb/2009/280 (§ 251a(5), § 252(4)); https://e-sbirka.gov.cz/sb/2013/351 (§ 2(1)); https://www.cnb.cz/cs/faq/vyvoj_repo_historie.txt |
+| Late payment interest: CNB repo rate on the first day of the calendar half-year in which each day of interest falls, plus 8 points | 11.50% a year for days from 1 January to 30 June 2026; 11.75% for days from 1 July to 31 December 2026 (computed: CNB repo rate plus 8 points, repo 3.50% on 1 January 2026 and 3.75% on 1 July 2026 per the CNB history) | 2026 | https://e-sbirka.gov.cz/sb/2009/280 (§ 251a(5), § 252(4)); https://e-sbirka.gov.cz/sb/2013/351 (§ 2(1)); https://www.cnb.cz/cs/faq/vyvoj_repo_historie.txt |
 | Country-by-country report: group consolidated revenue in the prior year | EUR 750,000,000 or more | 2026 | https://e-sbirka.gov.cz/sb/2013/164 (§ 13zd(2)) |
 | Time limit to assess tax | 3 years from the filing deadline, extendable, 10 years at most | 2026 | https://e-sbirka.gov.cz/sb/2009/280 (§ 148(1), (5)) |
 

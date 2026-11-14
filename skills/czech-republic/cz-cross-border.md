@@ -48,7 +48,7 @@ A resident is taxed on worldwide income. A non-resident is taxed only on Czech-s
 |---|---|---|
 | Individual income tax, base up to 36 times the average wage | 15% | [ITA § 16(1)](https://www.zakonyprolidi.cz/cs/1992-586) |
 | Individual income tax, base above 36 times the average wage | 23% | ITA § 16(1); https://e-sbirka.gov.cz/sb/1992/586/2026-08-01 |
-| Average wage for 2026 (tax purposes use the social insurance figure, ITA § 21g(2)) | CZK 48,967 (general assessment base 2024 of CZK 46,278 × coefficient 1.0581, rounded up) | [Act 589/1992 § 23b(4)](https://www.zakonyprolidi.cz/cs/1992-589); [Government Regulation 365/2025 § 1](https://www.zakonyprolidi.cz/cs/2025-365) |
+| Average wage for 2026 (tax purposes use the social insurance figure, ITA § 21g(2)) | CZK 48,967 (general assessment base 2024 of CZK 46,278 × coefficient 1.0581, rounded up) | [Act 589/1992 § 23b(4)](https://e-sbirka.gov.cz/sb/1992/589); [Government Regulation 365/2025 § 1](https://e-sbirka.gov.cz/sb/2025/365); [ČSSZ, key figures for 2026](https://www.cssz.gov.cz/-/prehled-nejdulezitejsich-udaju-pro-socialni-zabezpeceni-v-roce-2026) |
 | 23% threshold for 2026 | CZK 1,762,812 (36 × 48,967) | computed from the two rows above; https://e-sbirka.gov.cz/sb/1992/586/2026-08-01; https://www.cssz.gov.cz/-/prehled-nejdulezitejsich-udaju-pro-socialni-zabezpeceni-v-roce-2026 |
 | Basic taxpayer credit (sleva na poplatníka), residents and non-residents | CZK 30,840 a year | ITA § 35ba(1)(a) and (2); [Finanční správa](https://financnisprava.gov.cz/cs/dane/dane/dan-z-prijmu/fyzicke-osoby/obecne-informace) |
 | Spouse credit, disability credits, ZTP/P credit and child benefit for a non-resident | Only if resident in the EU or EEA and at least 90% of world income is Czech-source | ITA § 35ba(2) (credits), § 35c(5) (child benefit); Finanční správa; https://e-sbirka.gov.cz/sb/1992/586/2026-08-01 |
@@ -64,7 +64,7 @@ A resident is taxed on worldwide income. A non-resident is taxed only on Czech-s
 | Tax security (zajištění daně) on other Czech-source income of non-EU and non-EEA residents | 10% of the payment | ITA § 38e(1)(c) and (2)(c); https://e-sbirka.gov.cz/sb/1992/586/2026-08-01 |
 | Tax security on bond redemptions, sales of investment instruments and payments on assigned receivables | 1% | ITA § 38e(1)(a), (b) and (2)(a), (b); https://e-sbirka.gov.cz/sb/1992/586/2026-08-01 |
 | Rental expense lump sum (individuals) | 30% of rent, at most CZK 600,000 | ITA § 9(4); https://e-sbirka.gov.cz/sb/1992/586/2026-08-01 |
-| Late payment interest (úrok z prodlení) | CNB repo rate on the first day of the half-year plus 8 points: 11.50% for 1 January to 30 June 2026 (repo 3.50%), 11.75% for 1 July to 31 December 2026 (repo 3.75% from 19 June 2026) | [Tax Code § 252(4) and § 251a(5)](https://www.zakonyprolidi.cz/cs/2009-280); [Government Regulation 351/2013 § 2](https://www.zakonyprolidi.cz/cs/2013-351); [CNB repo history](https://www.cnb.cz/cs/faq/vyvoj_repo_historie.txt) |
+| Late payment interest (úrok z prodlení) | CNB repo rate on the first day of the half-year plus 8 points: 11.50% for 1 January to 30 June 2026 (repo 3.50%), 11.75% for 1 July to 31 December 2026 (repo 3.75% from 19 June 2026; computed: repo plus 8 points) | [Tax Code § 252(4) and § 251a(5)](https://e-sbirka.gov.cz/sb/2009/280); [Government Regulation 351/2013 § 2](https://e-sbirka.gov.cz/sb/2013/351); [CNB repo history](https://www.cnb.cz/cs/faq/vyvoj_repo_historie.txt) |
 
 The tax is computed on the base after deductions, rounded down to whole hundreds of CZK, as the sum of each slice times its rate (ITA § 16(2)).
 
@@ -214,6 +214,6 @@ expected:
 | Czech National Bank, two-week repo rate history | https://www.cnb.cz/cs/faq/vyvoj_repo_historie.txt | 2026-10-22 |
 | ČSSZ, Vyslaní pracovníci (posting, A1, Regulation 883/2004) | https://www.cssz.gov.cz/vyslani-pracovnici | 2026-10-22 |
 | Read for Individual income tax, base above 36 times the average wage, 23% threshold for 2026, Spouse credit, disability credits, ZTP/P credit and child benefit for a non-resident, Special inbound regime for new arrivals: e-sbirka.gov.cz | https://e-sbirka.gov.cz/sb/1992/586/2026-08-01 | 2026-11-14 |
-| Read for 23% threshold for 2026: www.cssz.gov.cz | https://www.cssz.gov.cz/-/prehled-nejdulezitejsich-udaju-pro-socialni-zabezpeceni-v-roce-2026 | 2026-11-14 |
+| Read for the 2026 average wage behind the top-rate threshold (CZK 48,967): www.cssz.gov.cz | https://www.cssz.gov.cz/-/prehled-nejdulezitejsich-udaju-pro-socialni-zabezpeceni-v-roce-2026 | 2026-11-14 |
 
 Not yet confirmed: the exact filing dates for the 2026 return (in 2027), which the Financial Administration had not published on the page read; registration duties for an arriving self-employed person or a foreign company (Tax Code § 125 and following, not read); the rounding of the final tax to whole koruna (Tax Code § 146, not read); the 25% ownership threshold and other conditions for the EU interest and royalty exemption in ITA § 19 (only summarised here); individual treaty rates and relief methods.
