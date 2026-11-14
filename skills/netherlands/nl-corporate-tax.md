@@ -31,7 +31,7 @@ This skill covers Dutch corporate income tax for a Dutch-resident bv (private li
 | Item | Rate or amount | Year | Source URL |
 |---|---|---|---|
 | Vpb on taxable amount up to and including EUR 200,000 (Wet Vpb art. 22) | 19% | 2026 (same 2023 to 2025) | https://wetten.overheid.nl/BWBR0002672/2026-01-01 |
-| Vpb on taxable amount above EUR 200,000 (art. 22: EUR 38,000 plus 25.8% of the excess) | 25.8% | 2026 | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/tarieven_vennootschapsbelasting |
+| Vpb on taxable amount above EUR 200,000 (art. 22: EUR 38,000 plus 25.8% of the excess) | 25.8% | 2026 | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/tarieven_vennootschapsbelasting ; https://wetten.overheid.nl/BWBR0002672/2026-01-01 |
 | Earnings stripping: net interest not deductible above the higher of (art. 15b(1)) | 24.5% of adjusted profit, or EUR 1,000,000 | 2026 (and 2025; 20% in 2023 and 2024) | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/veranderingen-vennootschapsbelasting-2026 |
 | Loss carry-back (art. 20(2)) | 1 year | 2026 | https://wetten.overheid.nl/BWBR0002672/2026-01-01 |
 | Loss carry-forward (art. 20(2)) | No time limit | Losses from 2022 on, and older losses still open at end 2021 | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/verrekenen_van_verliezen |

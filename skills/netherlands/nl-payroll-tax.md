@@ -51,11 +51,11 @@ Out of this skill: private use of a company car, see nl-company-car; the expat s
 | Band 1, under AOW age: wage tax 8.10% + AOW 17.90% + Anw 0.10% + Wlz 9.65% | 35.75% up to EUR 38,883 | 2026 | https://download.belastingdienst.nl/belastingdienst/docs/bijlage-nieuwsbrief-loonheffingen-2026-lh2091b64fd.pdf |
 | Band 2 | 37.56% from EUR 38,883 to EUR 78,426 | 2026 | same |
 | Band 3 | 49.50% above EUR 78,426 | 2026 | same |
-| Annual box 1 amount, exact method | Wage tax per the Wet IB art. 2.10(1) table: 8.10% to EUR 38,883; EUR 3,149 plus 37.56% above it; EUR 18,001 plus 49.50% above EUR 78,426. Plus the national insurance premium of 27.65% on wage up to EUR 38,883 (at most EUR 10,751.15). The combined 35.75% across band 1 is EUR 0.52 too high above band 1 | 2026 | Wet IB art. 2.10(1), https://wetten.overheid.nl/jci1.3:c:BWBR0011353&hoofdstuk=2&afdeling=2.3&artikel=2.10&z=2026-01-01&g=2026-01-01 ; Wfsv art. 8(3), 10 |
-| Band 1, AOW age, born 1946 or later (no AOW premium) | 17.85% up to EUR 38,883 | 2026 | same |
-| Band 1, born 1945 or earlier | 17.85% up to EUR 41,123 | 2026 | same |
+| Annual box 1 amount, exact method | Wage tax per the Wet IB art. 2.10(1) table: 8.10% to EUR 38,883; EUR 3,149 plus 37.56% above it; EUR 18,001 plus 49.50% above EUR 78,426. Plus the national insurance premium of 27.65% on wage up to EUR 38,883 (at most EUR 10,751.15, computed). The combined 35.75% across band 1 is EUR 0.52 too high above band 1 | 2026 | Wet IB art. 2.10(1), https://wetten.overheid.nl/jci1.3:c:BWBR0011353&hoofdstuk=2&afdeling=2.3&artikel=2.10&z=2026-01-01&g=2026-01-01 ; Wfsv art. 8(3), 10 ; https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/heffingskortingen |
+| Band 1, AOW age, born 1946 or later (no AOW premium) | 17.85% up to EUR 38,883 | 2026 | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/inkomstenbelasting/heffingskortingen_boxen_tarieven/boxen_en_tarieven/box_1/box_1 |
+| Band 1, born 1945 or earlier | 17.85% up to EUR 41,123 | 2026 | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/inkomstenbelasting/heffingskortingen_boxen_tarieven/boxen_en_tarieven/box_1/box_1 |
 | General credit (algemene heffingskorting), under AOW age | EUR 3,115; reduces 6.398% above EUR 29,736; nil at EUR 78,426 | 2026 | same |
-| General credit, AOW age | EUR 1,556; reduces 3.195% | 2026 | same |
+| General credit, AOW age | EUR 1,556; reduces 3.195% | 2026 | https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/heffingskortingen |
 | Employment credit (arbeidskorting), under AOW age | max EUR 5,685 (reached at EUR 45,592); reduces 6.510% above EUR 45,592; nil at EUR 132,920 | 2026 | same |
 | Employment credit, AOW age | max EUR 2,840; reduces 3.250% | 2026 | same |
 | Elderly credit (ouderenkorting) | EUR 2,067; reduces above EUR 46,002; nil at EUR 59,782 | 2026 | same |
