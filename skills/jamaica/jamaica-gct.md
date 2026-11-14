@@ -57,7 +57,7 @@ Mixed activities count exempt supplies in the gross value for the threshold test
 | Telephone services, telephone instruments and telephone cards | 25% | Specified rate under the Act | same |
 | Zero rate | 0% | First Schedule supplies, including exports with a customs certificate of exportation | same |
 | Registration threshold | J$15,000,000 gross supplies over 12 months, or J$1,250,000 a month average for a shorter period | Effective 1 April 2025; exempt supplies count in a mixed activity | same |
-| Penalty, failure to apply for registration | J$5,000 (individual), J$10,000 (company), plus interest of 2.5% a month on the tax for the unregistered period | Person liable to register as a Registered Taxpayer | same |
+| Penalty, failure to apply for registration | J$5,000 (individual), J$10,000 (company), plus interest of two and one-half percent (2 ½%) a month on the tax for the unregistered period | Person liable to register as a Registered Taxpayer | same |
 | Capital goods, full credit in the period | Consideration of J$100,000 or less, or exports at least 25% of manufactures (or US$416,666.67 equivalent) | Otherwise the credit is spread over 24 months | same |
 | Restricted credit | 50% of input tax on restaurant, club and catering services, entertainment, motor vehicle expenses, leasing private motor vehicles, and services from a tourism activity | Business use | same |
 | Motor car purchased for the taxable activity | 7% of cost, cost capped at the J$ equivalent of US$35,000, over 24 months | Private motor car | same |

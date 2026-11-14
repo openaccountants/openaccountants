@@ -41,8 +41,8 @@ Anyone who needs the shape of Jamaican tax for 2026 before loading a detailed sk
 | Item | 2026 figure | Conditions | Source |
 |---|---|---|---|
 | Year of assessment | Calendar year | Individuals and companies | TAJ, rates, threshold and exemptions 2013 to 2028: https://www.jamaicatax.gov.jm/documents/10194/15307403/INDIVIDUAL_INCOME_TAX_RATES_THRESHOLD_AND_EXEMPTIONS_2013-2028.pdf/c0987986-f35c-7106-85a4-d488a6f52627 |
-| Personal threshold, effective 2026 | J$1,876,614 | Residents only (J$1,902,360 a year from 1 April 2026) | same |
-| Personal rates | 25% above the threshold to J$6,000,000 of statutory income, 30% above J$6,000,000 | Statutory income | same |
+| Personal threshold, effective 2026 | J$1,876,614 | Residents only; PAYE uses a higher annual rate from 1 April 2026 (see `jm-payroll-social`) | same |
+| Personal rates | 25% above the threshold to J$6M of statutory income, 30% above J$6M | Statutory income | same |
 | Non-resident individual | 25%, no threshold | Unless a treaty sets a rate | TAJ, non-residents and income tax: https://www.jamaicatax.gov.jm/documents/10194/20399532/1-Non-residents+and+Income+Tax+Final+Document.pdf/d8ccd3fa-4a99-e798-1a4b-841e952d82ba |
 | Company rate, unregulated | 25% | From 1 January 2013 | Jamaica Information Service: https://jis.gov.jm/new-threshold-and-corporate-income-tax-rate-january-1/ |
 | Company rate, regulated | 33 1/3% | Regulated by the BOJ, FSC, OUR or Ministry of Finance | same |

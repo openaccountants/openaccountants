@@ -38,14 +38,14 @@ Definitions TAJ uses: **gross emoluments** are all income from employment, in ca
 
 | Item | Employee | Employer | Base and conditions | Source |
 |---|---|---|---|---|
-| NIS | 3% | 3% | Gross emoluments not exceeding J$5,000,000 a year (J$416,666.67 a month, so at most J$12,500 a month each side) | TAJ, payroll taxes and statutory contributions (April 2025 edition): https://www.jamaicatax.gov.jm/documents/10194/53547865/Payroll+Taxes+and+Statutory+Contributions+%28Employee+Employer%29.pdf/bef9095b-fb2d-db4a-5de4-b19405bd8631 |
+| NIS | 3% | 3% | Gross emoluments not exceeding J$5,000,000 a year (5,000,000/12 a month, which TAJ prints as J$416,666.66, so at most J$12,500 a month each side) | TAJ, payroll taxes and statutory contributions (April 2025 edition): https://www.jamaicatax.gov.jm/documents/10194/53547865/Payroll+Taxes+and+Statutory+Contributions+%28Employee+Employer%29.pdf/bef9095b-fb2d-db4a-5de4-b19405bd8631 |
 | NHT | 2% | 3% | Gross emoluments, no ceiling | same |
 | Education Tax | 2.25% | 3.5% | Statutory income | same |
-| HEART | none | 3% | Gross emoluments, where the employer's payroll exceeds J$173,328 a year (J$14,444 a month) | same |
+| HEART | none | 3% | Gross emoluments, where the employer's payroll exceeds J$173,328 a year (one twelfth a month, computed) | same |
 | PAYE, threshold 1 January to 31 March 2026 | J$149,948 a month at 0% | n/a | Annual rate J$1,799,376 | same |
 | PAYE, threshold from 1 April 2026 | J$158,530 a month at 0% | n/a | Annual rate J$1,902,360 | same |
-| PAYE rate, above the threshold | 25% | n/a | Statutory income above the threshold up to J$500,000 a month (J$6,000,000 a year) | TAJ, rates, threshold and exemptions 2013 to 2028: https://www.jamaicatax.gov.jm/documents/10194/15307403/INDIVIDUAL_INCOME_TAX_RATES_THRESHOLD_AND_EXEMPTIONS_2013-2028.pdf/c0987986-f35c-7106-85a4-d488a6f52627 |
-| PAYE rate, top | 30% | n/a | Statutory income above J$500,000 a month (J$6,000,000 a year) | same |
+| PAYE rate, above the threshold | 25% | n/a | Statutory income above the threshold up to J$500,000 a month (J$6M a year) | TAJ, rates, threshold and exemptions 2013 to 2028: https://www.jamaicatax.gov.jm/documents/10194/15307403/INDIVIDUAL_INCOME_TAX_RATES_THRESHOLD_AND_EXEMPTIONS_2013-2028.pdf/c0987986-f35c-7106-85a4-d488a6f52627 |
+| PAYE rate, top | 30% | n/a | Statutory income above J$500,000 a month (J$6M a year) | same |
 | Effective 2026 annual threshold | J$1,876,614 | n/a | For the annual true-up | same |
 | Monthly remittance (S01) | n/a | due | Within 14 days after the end of the month of deduction (by the 14th) | TAJ, employer's guide (December 2019): https://www.jamaicatax.gov.jm/documents/10194/14559577/Employers_guide_13122019.pdf/9d09b82e-e215-6aaa-72c8-7b8a3dd7f061 |
 | Annual return (S02) | n/a | due | 31 March of the following year, online | same |
