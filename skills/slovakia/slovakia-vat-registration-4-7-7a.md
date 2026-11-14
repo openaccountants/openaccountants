@@ -1,14 +1,15 @@
 ---
 name: slovakia-vat-registration-4-7-7a
 description: "Which Slovak VAT registration a client needs in 2026 under Act No. 222/2004 Coll.: § 4 (VAT payer, EUR 50,000 calendar-year turnover for payer status from 1 January of the next year, EUR 62,500 for payer status at the crossing supply, application within five working days), voluntary § 4 registration, § 7 (goods from other member states, EUR 14,000) and § 7a (cross-border services, no threshold), and why a § 7 or § 7a registrant self-assesses VAT but cannot deduct it. Covers the 2025 change from EUR 49,790 over 12 months to the calendar-year test, decision times, and the fine for late registration. Trigger on: Slovak VAT registration, registracia DPH, platitel dane, § 7a, IC DPH, Meta or Google Ireland invoices Slovakia. Out of scope: the periodic return, rates, control statement and penalties (slovakia-vat-return), income tax (slovakia-pit)."
-version: 1.3
+version: 1.4
 jurisdiction: SK
 tax_year: 2026
-last_updated: 2026-10-27
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: vat-gst
+type: filing-howto
 ---
 
 # Slovakia VAT registration (§4, §7, §7a), 2026

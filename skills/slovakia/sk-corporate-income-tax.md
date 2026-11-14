@@ -1,17 +1,18 @@
 ---
 name: sk-corporate-income-tax
 description: "Slovak corporate income tax (daň z príjmov právnických osôb) for tax year 2026 under Act No. 595/2003 Coll. as amended, including Act No. 261/2025 Coll. Covers the three rates set by taxable revenue (10% up to EUR 100,000, 24% above EUR 5,000,000, 21% otherwise), the minimum tax with its new EUR 11,520 band for revenue above EUR 5,000,000, the tax base from accounting profit, paid-basis expenses, unrecoverable VAT, depreciation groups 0 to 6, the 5-year loss carry-forward with the 50% cap, the two interest limits (25% EBITDA for related-party loans and 30% above EUR 3,000,000 net interest), dividends, advances, the DPPO return and extensions, and penalties. Trigger on: Slovakia corporate tax, DPPO, s.r.o. tax, 10% rate Slovakia, minimálna daň, daňová licencia, preddavky na daň. Out of scope: individuals (slovakia-pit), payroll (sk-payroll-social), VAT (slovakia-vat-return), company set-up (sk-company-formation)."
-version: 0.4
+version: 0.5
 jurisdiction: SK
 tax_year: 2026
-last_updated: 2026-10-27
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: corporate-tax
+type: computation
 ---
 
-# Slovak corporate income tax (DPPO): 2026 rates, minimum tax, losses and filing v0.4
+# Slovak corporate income tax (DPPO): 2026 rates, minimum tax, losses and filing v0.5
 
 The law is the Income Tax Act, Act No. 595/2003 Coll. (zákon o dani z príjmov). This skill reads the consolidated version in force from 1 January 2026 on slov-lex.sk, which includes the consolidation package Act No. 261/2025 Coll. Penalties and interest come from the Tax Procedure Code, Act No. 563/2009 Coll. (daňový poriadok). The Financial Administration (Finančná správa) runs the return and the portal at financnasprava.sk. Figures are for the 2026 tax period: the calendar year 2026, or a fiscal year (hospodársky rok) that ends in 2026 or 2027. Where a rule applies only to periods that start on or after 1 January 2026, the skill says so.
 

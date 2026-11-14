@@ -1,14 +1,15 @@
 ---
 name: sk-payroll-social
 description: "Slovak payroll and social contributions for tax year 2026. Covers employee and employer social insurance (Sociálna poisťovňa, Act 461/2003) and public health insurance (Act 580/2004) at the 2026 rates, including the health rise to 5% employee, 11% employer and 16% self-employed; the EUR 16,764 social ceiling; self-employed (SZČO) contributions from the tax base with the 1.486 coefficient, the EUR 914.40 minimum and the new EUR 396.24 special base; monthly gross-to-net with the EUR 497.23 allowance, the 19/25/30/35% advance bands and the child tax bonus; monthly reports and payment dates; the annual tax and health reconciliations; and penalties. Trigger on 'Slovakia payroll', 'odvody 2026', 'SZČO odvody', 'gross to net Slovakia', 'ročné zúčtovanie', 'Sociálna poisťovňa', 'zdravotné poistenie 2026'. Out of scope: the annual personal return (slovakia-pit), companies (sk-corporate-income-tax), treaties and non-residents in depth (sk-cross-border), set-up (sk-company-formation)."
-version: 0.9
+version: "0.10"
 jurisdiction: SK
 tax_year: 2026
-last_updated: 2026-10-29
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
+type: computation
 ---
 
 # Slovakia payroll and social contributions, tax year 2026
