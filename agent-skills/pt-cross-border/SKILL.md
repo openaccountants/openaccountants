@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/pt-cross-border"
   jurisdiction: "PT"
   tax_year: "2026"
-  last_updated: "2026-11-01"
+  last_updated: "2026-11-14"
 ---
 
 # Portugal: cross-border tax, residence, non-residents, arriving and leaving (tax year 2026)
@@ -55,33 +55,33 @@ A day of presence is any day, full or part, that includes a night spent in Portu
 | Item | Rate or amount | Year | Source |
 |---|---|---|---|
 | Non-resident, salary and all business and professional income from Portuguese sources | 25% final withholding | 2026 | CIRS art. 71(4)(a): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs71.aspx |
-| Non-resident, pensions | 25% final withholding, on the pension less the art. 53 deduction | 2026 | CIRS art. 71(4)(c) and (8) |
-| No withholding on monthly salary or services up to the minimum wage, single payer, written declaration | 25% only on the excess | 2026 | CIRS art. 71(5) and (6) |
+| Non-resident, pensions | 25% final withholding, on the pension less the art. 53 deduction | 2026 | CIRS art. 71(4)(c) and (8) https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs71.aspx |
+| No withholding on monthly salary or services up to the minimum wage, single payer, written declaration | 25% only on the excess | 2026 | CIRS art. 71(5) and (6) https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs71.aspx |
 | Non-resident, salary or pension not withheld | 25% autonomous rate | 2026 | CIRS art. 72(6)(b): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs72.aspx |
-| Non-resident with a Portuguese permanent establishment | 25% autonomous rate on its income | 2026 | CIRS art. 72(6)(a) |
-| Non-resident individual, dividends and interest from Portuguese payers | 28% final withholding | 2026 | CIRS art. 71(1)(a) |
-| Non-resident individual, rent from residential leases | 25% autonomous rate | 2026 | CIRS art. 72(2) |
-| Residential leases for permanent housing of 5 to under 10 years / 10 to under 20 years / 20 years or more | 25% less 10 / 15 / 20 points (the rule is not limited to residents) | 2026 | CIRS art. 72(3) to (5) |
-| Non-resident individual, other rent (shops, offices) | 28% autonomous rate | 2026 | CIRS art. 72(1)(e) |
-| Non-resident individual, other income not withheld | 28% autonomous rate | 2026 | CIRS art. 72(1)(b) |
+| Non-resident with a Portuguese permanent establishment | 25% autonomous rate on its income | 2026 | CIRS art. 72(6)(a) https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs72.aspx |
+| Non-resident individual, dividends and interest from Portuguese payers | 28% final withholding | 2026 | CIRS art. 71(1)(a) https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs71.aspx |
+| Non-resident individual, rent from residential leases | 25% autonomous rate | 2026 | CIRS art. 72(2) https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs72.aspx |
+| Residential leases for permanent housing of 5 to under 10 years / 10 to under 20 years / 20 years or more | 25% less 10 / 15 / 20 points (the rule is not limited to residents) | 2026 | CIRS art. 72(3) to (5) https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs72.aspx |
+| Non-resident individual, other rent (shops, offices) | 28% autonomous rate | 2026 | CIRS art. 72(1)(e) https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs72.aspx |
+| Non-resident individual, other income not withheld | 28% autonomous rate | 2026 | CIRS art. 72(1)(b) https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs72.aspx |
 | Non-resident individual, gain on Portuguese property (not through a permanent establishment) | 50% of the gain is included and aggregated; the art. 68 rate is set on all income, foreign included. The old 28% rate of art. 72(1)(a) is repealed | 2026 | CIRS art. 43(2)(b), art. 22(3)(a) and (10): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs22.aspx |
 | Capital income paid to a holder in a listed low-tax place, or to an account for unidentified third parties | 35% | 2026 | CIRS art. 71(17); CIRC art. 87(4)(h) and (i): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc87.aspx |
-| Non-resident company without a permanent establishment, general IRC rate | 25% | 2026 | CIRC art. 87(4) |
+| Non-resident company without a permanent establishment, general IRC rate | 25% | 2026 | CIRC art. 87(4) https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc87.aspx |
 | IRC withholding, general rate / directors' fees | 25% / 21.5% | 2026 | CIRC art. 94(4): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc94.aspx |
 | IRS withholding on Category F rent paid by a payer with organised accounts | 25% | 2026 | CIRS art. 101(1)(e): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs101.aspx |
-| Resident IRC rate (exit gains are taxed at this rate) | 19% for periods starting in 2026; 18% in 2027; 17% from 2028 | 2026 | CIRC art. 87(1) and Lei 64/2025 art. 3 (note on the AT page) |
+| Resident IRC rate (exit gains are taxed at this rate) | 19% for periods starting in 2026; 18% in 2027; 17% from 2028 | 2026 | CIRC art. 87(1) and Lei 64/2025 art. 3 (note on the AT page) https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc87.aspx |
 | Art. 17-A option: Portuguese income as a share of worldwide income | At least 90% | 2026 | CIRS art. 17-A(1): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs17a.aspx |
-| IRS bands used for the art. 17-A, art. 72(15) and art. 71(11) options | 12.50% to 48% (first band up to EUR 8,342; band 3 to 17,838 at 21.20%; band 6 to 43,090 at 34.90%) | 2026 | CIRS art. 68(1), wording of Lei 73-A/2025: https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs68.aspx |
+| IRS bands used for the art. 17-A, art. 72(15) and art. 71(11) options | 12.20% to 48% (first band up to EUR 8,342; band 3 to 17,838 at 20.70%; band 6 to 43,090 at 34.60%) | 2026 | CIRS art. 68(1), wording of Decreto-Lei 212/2026 (effect from 1 January 2026): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs68.aspx |
 | Category A specific deduction | 8.54 x IAS = EUR 4,587.09, or compulsory social security if higher | 2026 | CIRS art. 25(1)(a) and (2); IAS EUR 537.13, Portaria 480-A/2025/1: https://files.diariodarepublica.pt/1s/2025/12/25001/0000200002.pdf |
 | IFICI special rate on net Category A and B income from a qualifying activity | 20% for 10 consecutive years | 2026 | EBF art. 58-A(2): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/bf_rep/Pages/ebf58a.aspx |
-| IFICI look-back | Not resident in any of the 5 previous years | 2026 | EBF art. 58-A(1) |
+| IFICI look-back | Not resident in any of the 5 previous years | 2026 | EBF art. 58-A(1) https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/bf_rep/Pages/ebf58a.aspx |
 | Leaver kept resident for the whole year | More than 183 days in the year, plus Portuguese-taxable income after leaving | 2026 | CIRS art. 16(14): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs16.aspx |
-| Leaver test: foreign tax at least this share of the Portuguese tax (non-EU/EEA) | 60% | 2026 | CIRS art. 16(15)(b) |
-| National moving to a listed low-tax place | Resident in the year of the move and 4 more years | 2026 | CIRS art. 16(6) |
+| Leaver test: foreign tax at least this share of the Portuguese tax (non-EU/EEA) | 60% | 2026 | CIRS art. 16(15)(b) https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs16.aspx |
+| National moving to a listed low-tax place | Resident in the year of the move and 4 more years | 2026 | CIRS art. 16(6) https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs16.aspx |
 | IRC exit tax, EU/EEA move | Pay in full, or in 5 equal yearly instalments with interest at the late-payment rate | 2026 | CIRC art. 83(2)(c) and (3): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc83.aspx |
-| Bank guarantee if AT fears non-collection | Tax plus 25% | 2026 | CIRC art. 83(4) |
+| Bank guarantee if AT fears non-collection | Tax plus 25% | 2026 | CIRC art. 83(4) https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc83.aspx |
 | Parent-Subsidiary exemption on dividends to an EU, EEA or treaty parent | Holding at least 10%, held 1 year | 2026 | CIRC art. 14(3): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc14.aspx (detail in `pt-corporate-tax`) |
-| Interest and Royalties Directive exemption | Direct holding of at least 25%, held 2 years without interruption | 2026 | CIRC art. 14(12) and (13)(b) |
+| Interest and Royalties Directive exemption | Direct holding of at least 25%, held 2 years without interruption | 2026 | CIRC art. 14(12) and (13)(b) https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc14.aspx |
 | Treaty relief form (21-RFI) validity | At most 1 year from the certificate's issue, and it ends earlier on the last day of the tax period the certificate covers; the directive interest and royalties form (MOD. 01-DJR) lasts 2 years per contract | 2026 | CIRC art. 98(3): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc98.aspx; CIRS art. 101-C(4) for individuals; AT FAQ 4201, 4203, 5642 |
 | A1 posting, EU rules | Up to 24 months; longer only by exception agreement | 2026 | Segurança Social, practical guide on postings from Portugal (Reg. 883/2004 art. 12): https://www.seg-social.pt/ptss/pssd/documento/cmc2117bg00thkl2y1r0iz21r |
 
@@ -166,8 +166,8 @@ Claire lives in France and is tax resident there. In 2026 she lets her Lisbon fl
 
 1. **The 90% test.** Portuguese income is 14,400 / (14,400 + 1,000) = 93.5% of her total. That is at least 90%, so she can opt under art. 17-A. (The ratio is above 90% on net figures too.)
 2. **Flat rate.** Residential rent of a non-resident: 25% x 13,000 = EUR 3,250.00 (art. 72(2)).
-3. **Art. 17-A.** Under resident rules, residential rent is taxed at 25% unless the owner opts to aggregate it (art. 72(2) and (13)). The rate of art. 17-A(3) applies to income that a resident would aggregate, so Claire also ticks the aggregation option for her rent (see Not yet confirmed). Taxable income includes foreign income. Her pension of EUR 1,000 is below EUR 4,587.09, so the art. 53 deduction removes all of it. Taxable income is EUR 13,000, all Portuguese. Tax = 12,587 x 13.579% + (13,000 - 12,587) x 21.20% = 1,709.19 + 87.56 = EUR 1,796.74.
-4. **Result.** The option saves EUR 1,453.26. She files a Modelo 3 between 1 April and 30 June 2027 with Anexo F, makes the election and attaches proof of French residence and of her worldwide income. If she has health or other expenses that France does not allow, she may also claim the art. 78 deductions (art. 17-A(4)). How France then treats the rent is outside this skill.
+3. **Art. 17-A.** Under resident rules, residential rent is taxed at 25% unless the owner opts to aggregate it (art. 72(2) and (13)). The rate of art. 17-A(3) applies to income that a resident would aggregate, so Claire also ticks the aggregation option for her rent (see Not yet confirmed). Taxable income includes foreign income. Her pension of EUR 1,000 is below EUR 4,587.09, so the art. 53 deduction removes all of it. Taxable income is EUR 13,000, all Portuguese. Tax = 12,587 x 13.212% + (13,000 - 12,587) x 20.70% = EUR 1,748.49.
+4. **Result.** The option saves EUR 1,501.51. She files a Modelo 3 between 1 April and 30 June 2027 with Anexo F, makes the election and attaches proof of French residence and of her worldwide income. If she has health or other expenses that France does not allow, she may also claim the art. 78 deductions (art. 17-A(4)). How France then treats the rent is outside this skill.
 
 ```oa-check
 name: PT non-resident landlord, 25% flat vs art. 17-A resident bands, 2026
@@ -178,8 +178,8 @@ inputs:
   pension_deduction: 4587.09
   flat_rate: 0.25
   band2_top: 12587
-  band2_avg: 0.13579
-  band3_rate: 0.212
+  band2_avg: 0.13212
+  band3_rate: 0.207
 steps:
   - share_pt: rent_gross / (rent_gross + foreign_pension)
   - net_rent: rent_gross - rent_costs
@@ -193,8 +193,8 @@ expected:
   net_rent: 13000
   flat_tax: 3250.00
   taxable: 13000
-  tax_17a: 1796.74
-  saving: 1453.26
+  tax_17a: 1748.49
+  saving: 1501.51
 tolerance: 0.01
 ```
 
@@ -207,8 +207,8 @@ Mark is British. He has never lived in Portugal. He arrives in Lisbon on 1 July 
 3. **IFICI entry test.** He became resident under art. 16(1). He was not resident in 2021 to 2025. ICT specialists (CPP code 25) are an Annex I profession. He has a master's plus three or more years' experience. The employer meets letter (c)(ii). He has never had NHR or art. 12-A. So he qualifies under EBF art. 58-A(1)(c)(ii), reviewed by AT. He must register by 15 January 2027. If he registers late, IFICI starts only in the year he registers (art. 58-A(7)).
 4. **Net Category A income.** Social security of EUR 4,620 is more than 8.54 x IAS (EUR 4,587.09), so the deduction is EUR 4,620 (art. 25(2)). Net income = 42,000 - 4,620 = EUR 37,380.
 5. **IFICI tax:** 20% x 37,380 = EUR 7,476.00.
-6. **General rates, for comparison:** 29,397 x 20.579% + (37,380 - 29,397) x 34.90% = 6,049.61 + 2,786.07 = EUR 8,835.68.
-7. **Result.** IFICI saves EUR 1,359.68 for 2026, before the deductions from the tax, which this comparison leaves out. The minimum-existence deduction does not apply on either route: his gross income is above 2.2 x 14 x IAS = EUR 16,543.60 (art. 70(4)(a)). He must tell AT about the change of status within 60 days (LGT art. 19(5)).
+6. **General rates, for comparison:** 29,397 x 20.136% + (37,380 - 29,397) x 34.60% = 5,919.38 + 2,762.12 = EUR 8,681.50.
+7. **Result.** IFICI saves EUR 1,205.50 for 2026, before the deductions from the tax, which this comparison leaves out. The minimum-existence deduction does not apply on either route: his gross income is above 2.2 x 14 x IAS = EUR 16,543.60 (art. 70(4)(a)). He must tell AT about the change of status within 60 days (LGT art. 19(5)).
 
 ```oa-check
 name: PT arrival 1 July 2026, 183-day count and IFICI 20% vs 2026 bands
@@ -218,8 +218,8 @@ inputs:
   ias: 537.13
   ifici_rate: 0.20
   band5_top: 29397
-  band5_avg: 0.20579
-  band6_rate: 0.349
+  band5_avg: 0.20136
+  band6_rate: 0.346
 steps:
   - days_present: 31 + 31 + 30 + 31 + 30 + 31
   - over_183: days_present - 183
@@ -235,8 +235,8 @@ expected:
   specific_deduction: 4620.00
   net_a: 37380.00
   ifici_tax: 7476.00
-  general_tax: 8835.68
-  saving: 1359.68
+  general_tax: 8681.50
+  saving: 1205.50
 ```
 
 ## Ask the client first
@@ -263,7 +263,8 @@ expected:
 | CIRS art. 53, pension deduction | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs53.aspx | 2026-10-23 |
 | CIRS art. 57, returns (two residence statuses) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs57.aspx | 2026-10-23 |
 | CIRS art. 60, filing period | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs60.aspx | 2026-10-23 |
-| CIRS art. 68, 2026 bands (Lei 73-A/2025) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs68.aspx | 2026-10-23 |
+| CIRS art. 68. Read for the 2026 bands in the wording of Decreto-Lei 212/2026 | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs68.aspx | 2026-11-14 |
+| Decreto-Lei 212/2026 of 4 November 2026 (AT copy). Read for the new rates of bands 1 to 6 and their effect from 1 January 2026 | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Decreto-Lei-212-2026.pdf | 2026-11-14 |
 | CIRS art. 70, minimum existence | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs70.aspx | 2026-10-23 |
 | CIRS art. 71, final withholding rates and refunds | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs71.aspx | 2026-10-23 |
 | CIRS art. 72, special rates | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs72.aspx | 2026-10-23 |
@@ -299,4 +300,4 @@ Not yet confirmed:
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-01. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `pt-cross-border` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/pt-cross-border. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `pt-cross-border` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/pt-cross-border. If neither is available, confirm every figure against the official source pages cited above before relying on it.
