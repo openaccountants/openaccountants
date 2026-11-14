@@ -1,16 +1,17 @@
 ---
 name: ie-income-tax-form11
 description: "Irish income tax self-assessment on Form 11 for tax year 2026 (and the 2025 return due now). Covers who is a chargeable person (self-employed, proprietary directors over 15%, non-PAYE income over EUR 5,000 net or EUR 30,000 gross), the 20% and 40% bands (EUR 44,000 single, EUR 53,000 married) and the main credits including the EUR 2,000 Earned Income Credit, Case I and II trading profit, add-backs, capital allowances at 12.5% over 8 years and the car CO2 limits, losses, pension relief, Case V rental income, where USC and PRSI Class S fit, pay and file on 31 October (18 November 2026 on ROS), preliminary tax, the 5% and 10% surcharges and 0.0219% daily interest. Trigger on: Form 11, self-assessment Ireland, sole trader tax Ireland, Case I, ROS pay and file, earned income credit, proprietary director return. Out of scope: ie-payroll, ie-usc, ie-prsi-class-s, ie-preliminary-tax, ie-paye-rental-nonresident, ie-cgt, ie-corporation-tax, ie-cross-border."
-version: 2.1
+version: 2.2
 jurisdiction: IE
 tax_year: 2026
-last_updated: 2026-10-24
+last_updated: 2026-11-14
 depends_on:
   - income-tax-workflow-base
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
+type: computation
 ---
 
 # Ireland Form 11 (2026): self-assessment for self-employed and other chargeable persons
@@ -216,18 +217,18 @@ Refer to a practitioner: partnerships' own accounts (Form 1 (Firms)), the High I
 | Finance Act 2025 s.102: s.959I(6) late claims | https://www.irishstatutebook.ie/eli/2025/act/18/section/102/enacted/en/html | 2026-10-24 |
 | Finance Act 2025 s.107: Part 1 in operation 1 January 2026 | https://www.irishstatutebook.ie/eli/2025/act/18/section/107/enacted/en/html | 2026-10-24 |
 | Revenue, Notes for Guidance TCA 1997 Part 41A, Finance Act 2025 edition (s.959B, 959I, 959AN to 959AP) | https://www.revenue.ie/en/tax-professionals/documents/notes-for-guidance/tca/part41a.pdf | 2026-10-24 |
-| Revenue, Guide to Completing 2025 Pay and File Self-Assessment Returns | https://www.revenue.ie/en/self-assessment-and-self-employment/documents/guide-pay-file.pdf | 2026-10-24 |
-| Revenue, Tax rates, bands and reliefs | https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/tax-relief-charts/index.aspx | 2026-10-24 |
-| Revenue, Earned Income Credit | https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/income-and-employment/earned-income-credit/index.aspx | 2026-10-24 |
-| Revenue, Who should register for Income Tax self-assessment | https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/register-it-self-assessment.aspx | 2026-10-24 |
-| Revenue, What is preliminary tax | https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/preliminary-tax.aspx | 2026-10-24 |
-| Revenue, Pay and file system | https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/pay-file-system.aspx | 2026-10-24 |
-| Revenue, eBrief 034/26, ROS extension to 18 November 2026 | https://www.revenue.ie/en/tax-professionals/ebrief/2026/no-0342026.aspx | 2026-10-24 |
-| Revenue, Do you need to pay PRSI | https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/prsi-need-pay.aspx | 2026-10-24 |
-| Revenue, High Income Earner Restriction | https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/hier.aspx | 2026-10-24 |
-| Revenue, Tax relief limits on pension contributions | https://www.revenue.ie/en/jobs-and-pensions/pension/relief/tax-relief-limits.aspx | 2026-10-24 |
-| Revenue, Tax relief for pension contributions (income tax relief only; no USC or PRSI relief) | https://www.revenue.ie/en/jobs-and-pensions/pension/relief/index.aspx | 2026-10-24 |
-| Revenue, Tax and Duty Manual, Guidelines for charging interest on late payment (updated May 2025) | https://www.revenue.ie/en/tax-professionals/tdm/collection/debt-management/guidelines-for-charging-interest-on-late-payment.pdf | 2026-10-24 |
-| Department of Social Protection, PRSI Class S rates | https://www.gov.ie/en/department-of-social-protection/publications/prsi-class-s-rates/ | 2026-10-24 |
+| Revenue, Guide to Completing 2025 Pay and File Self-Assessment Returns. Read for the Form 11 panels and how to complete them. | https://www.revenue.ie/en/self-assessment-and-self-employment/documents/guide-pay-file.pdf | 2026-10-24 |
+| Revenue, Tax rates, bands and reliefs. Read for the 2026 income tax rates, bands and credits. | https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/tax-relief-charts/index.aspx | 2026-10-24 |
+| Revenue, Earned Income Credit. Read for the Earned Income Credit amount. | https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/income-and-employment/earned-income-credit/index.aspx | 2026-10-24 |
+| Revenue, Who should register for Income Tax self-assessment. Read for who must file Form 11. | https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/register-it-self-assessment.aspx | 2026-10-24 |
+| Revenue, What is preliminary tax. Read for the preliminary tax rule. | https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/preliminary-tax.aspx | 2026-10-24 |
+| Revenue, Pay and file system. Read for the pay and file dates. | https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/pay-file-system.aspx | 2026-10-24 |
+| Revenue, eBrief 034/26, ROS extension to 18 November 2026. Read for the 2026 ROS extension date. | https://www.revenue.ie/en/tax-professionals/ebrief/2026/no-0342026.aspx | 2026-10-24 |
+| Revenue, Do you need to pay PRSI. Read for who pays PRSI. | https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/prsi-need-pay.aspx | 2026-10-24 |
+| Revenue, High Income Earner Restriction. Read for the high income earner restriction. | https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/hier.aspx | 2026-10-24 |
+| Revenue, Tax relief limits on pension contributions. Read for the age-related pension relief limits and earnings cap. | https://www.revenue.ie/en/jobs-and-pensions/pension/relief/tax-relief-limits.aspx | 2026-10-24 |
+| Revenue, Tax relief for pension contributions (income tax relief only; no USC or PRSI relief). Read for how pension relief works. | https://www.revenue.ie/en/jobs-and-pensions/pension/relief/index.aspx | 2026-10-24 |
+| Revenue, Tax and Duty Manual, Guidelines for charging interest on late payment (updated May 2025). Read for the daily interest rate on late tax. | https://www.revenue.ie/en/tax-professionals/tdm/collection/debt-management/guidelines-for-charging-interest-on-late-payment.pdf | 2026-10-24 |
+| Department of Social Protection, PRSI Class S rates. Read for the Class S rate and minimum. | https://www.gov.ie/en/department-of-social-protection/publications/prsi-class-s-rates/ | 2026-10-24 |
 
 Not yet confirmed: (1) the consolidated TCA text: the Law Reform Commission's Revised Acts do not include the TCA, so sections are cited through the amending Finance Act and Revenue's Notes for Guidance; amendments before Finance Act 2024 were not read in their enacting acts; (2) the 2027 ROS extension date for the 2026 Form 11; (3) the conditions the Collector-General now sets for preliminary tax direct debits after FA 2025 s.100 (the old version's rules of 8 or more payments, or at least 3 for a mid-year start, were in the deleted subsections); (4) the rule letting a new trader file the first two years' returns by the second year's return date (old version, Tax and Duty Manual 41-00-28, not re-read); (5) the DIRT rate on deposit interest (the old version said 33%; the USC exemption for DIRT-paid interest is in `ie-usc`); (6) the statutory section behind the EUR 250 penalty for an incomplete self-assessment panel; (7) whether the PRSI exemption above age 66 in Revenue's 2025 guide still applies after the age limit moved to 70 from 1 January 2024 (see `ie-prsi-class-s`); (8) whether the s.1084 surcharge base includes USC and PRSI; (9) the home office apportionment and the "treat unclear items as capital" practice points from the old version; (10) Budget 2027 changes, not yet law.

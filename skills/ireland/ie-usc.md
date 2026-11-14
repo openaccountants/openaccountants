@@ -1,14 +1,15 @@
 ---
 name: ie-usc
 description: "Ireland's Universal Social Charge (USC) for tax year 2026, for employees, pensioners, the self-employed and investors. Covers the 2026 bands (0.5% on the first EUR 12,012, 2% on the next EUR 16,688, 3% on the next EUR 41,344, 8% on the balance), the EUR 13,000 exemption cliff, the reduced rates for people aged 70 or over and full medical card holders with income of EUR 60,000 or less, the 3% surcharge on non-PAYE income over EUR 100,000, exempt income such as social welfare payments and DIRT-paid interest, capital allowances and losses, spouses and maintenance, cumulative deduction through payroll, payment with preliminary tax and Form 11, and the late filing surcharge and interest. Trigger on 'USC', 'universal social charge', 'USC rates 2026', 'USC surcharge', 'USC medical card', 'USC exemption'. Out of scope: running a payroll (ie-payroll), income tax (ie-income-tax-form11), PRSI (ie-prsi-class-s), residence (ie-cross-border)."
-version: 2.1
+version: 2.2
 jurisdiction: IE
 tax_year: 2026
-last_updated: 2026-10-26
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
+type: computation
 ---
 
 # Ireland Universal Social Charge (USC), tax year 2026
@@ -210,22 +211,22 @@ Refer to a qualified practitioner: property relief surcharge cases where the Hig
 | Revenue, Notes for Guidance TCA 1997 Part 18D, Finance Act 2025 edition (s.531AL to 531AAF) | https://www.revenue.ie/en/tax-professionals/documents/notes-for-guidance/tca/part18d.pdf | 2026-10-24 |
 | Finance Act 2011 (No. 6 of 2011) s.3: inserts Part 18D, including s.531AM(2) ("does not exceed") | https://www.irishstatutebook.ie/eli/2011/act/6/section/3/enacted/en/html | 2026-10-24 |
 | Finance Act 2012 (No. 9 of 2012) s.3: inserts s.531AAE (property relief surcharge) | https://www.irishstatutebook.ie/eli/2012/act/9/section/3/enacted/en/html | 2026-10-24 |
-| Revenue, Basic exemption (termination payments) | https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/lump-sum-payments/basic-exemption.aspx | 2026-10-24 |
-| Universal Social Charge Regulations 2018 (S.I. No. 510 of 2018), regs. 14 and 19 | https://www.irishstatutebook.ie/eli/2018/si/510/made/en/html | 2026-10-24 |
+| Revenue, Basic exemption (termination payments). Read for the basic exemption on termination payments. | https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/lump-sum-payments/basic-exemption.aspx | 2026-10-24 |
+| Universal Social Charge Regulations 2018 (S.I. No. 510 of 2018), regs. 14 and 19. Read for USC on payments under regs. 14 and 19. | https://www.irishstatutebook.ie/eli/2018/si/510/made/en/html | 2026-10-24 |
 | Revenue, Tax and Duty Manual Part 18D-00-01 Universal Social Charge (last reviewed January 2026) | https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-18d/18D-00-01.pdf | 2026-10-24 |
-| Revenue, USC overview | https://www.revenue.ie/en/jobs-and-pensions/usc/index.aspx | 2026-10-24 |
-| Revenue, Standard rates and thresholds of USC | https://www.revenue.ie/en/jobs-and-pensions/usc/standard-rates-thresholds.aspx | 2026-10-24 |
-| Revenue, Reduced rates of USC | https://www.revenue.ie/en/jobs-and-pensions/usc/reduced-rates.aspx | 2026-10-24 |
-| Revenue, Other rates of USC | https://www.revenue.ie/en/jobs-and-pensions/usc/other-rates.aspx | 2026-10-24 |
-| Revenue, Payments and income exempt from USC | https://www.revenue.ie/en/jobs-and-pensions/usc/exempt-payments-income.aspx | 2026-10-24 |
-| Revenue, Calculating your USC | https://www.revenue.ie/en/jobs-and-pensions/usc/calculating-usc.aspx | 2026-10-24 |
-| Revenue, USC between spouses, civil partners and on maintenance payments | https://www.revenue.ie/en/jobs-and-pensions/usc/married-couples-civil-partners.aspx | 2026-10-24 |
-| Revenue, How USC affects redundancy payments | https://www.revenue.ie/en/jobs-and-pensions/usc/redundancy-payments.aspx | 2026-10-24 |
-| Revenue, Cumulative basis | https://www.revenue.ie/en/employing-people/paying-an-employee/methods-of-calculating-tax/cumulative-basis.aspx | 2026-10-24 |
-| Revenue, Emergency Basis of Tax and USC Deduction 2026 | https://www.revenue.ie/en/jobs-and-pensions/documents/emergency-rates.pdf | 2026-10-24 |
-| Revenue, Preliminary tax | https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/preliminary-tax.aspx | 2026-10-24 |
-| Revenue, Pay and file system (late filing surcharge) | https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/pay-file-system.aspx | 2026-10-24 |
-| Revenue, eBrief 034/26 (ROS extension to 18 November 2026) | https://www.revenue.ie/en/tax-professionals/ebrief/2026/no-0342026.aspx | 2026-10-24 |
-| Revenue, Tax and Duty Manual, Guidelines for charging interest on late payment (updated May 2025) | https://www.revenue.ie/en/tax-professionals/tdm/collection/debt-management/guidelines-for-charging-interest-on-late-payment.pdf | 2026-10-24 |
+| Revenue, USC overview. Read for who pays USC. | https://www.revenue.ie/en/jobs-and-pensions/usc/index.aspx | 2026-10-24 |
+| Revenue, Standard rates and thresholds of USC. Read for the 2026 USC rates and bands. | https://www.revenue.ie/en/jobs-and-pensions/usc/standard-rates-thresholds.aspx | 2026-10-24 |
+| Revenue, Reduced rates of USC. Read for the reduced USC rates. | https://www.revenue.ie/en/jobs-and-pensions/usc/reduced-rates.aspx | 2026-10-24 |
+| Revenue, Other rates of USC. Read for the other USC rates. | https://www.revenue.ie/en/jobs-and-pensions/usc/other-rates.aspx | 2026-10-24 |
+| Revenue, Payments and income exempt from USC. Read for income exempt from USC. | https://www.revenue.ie/en/jobs-and-pensions/usc/exempt-payments-income.aspx | 2026-10-24 |
+| Revenue, Calculating your USC. Read for how USC is calculated. | https://www.revenue.ie/en/jobs-and-pensions/usc/calculating-usc.aspx | 2026-10-24 |
+| Revenue, USC between spouses, civil partners and on maintenance payments. Read for USC for spouses and civil partners. | https://www.revenue.ie/en/jobs-and-pensions/usc/married-couples-civil-partners.aspx | 2026-10-24 |
+| Revenue, How USC affects redundancy payments. Read for USC on redundancy payments. | https://www.revenue.ie/en/jobs-and-pensions/usc/redundancy-payments.aspx | 2026-10-24 |
+| Revenue, Cumulative basis. Read for the cumulative basis. | https://www.revenue.ie/en/employing-people/paying-an-employee/methods-of-calculating-tax/cumulative-basis.aspx | 2026-10-24 |
+| Revenue, Emergency Basis of Tax and USC Deduction 2026. Read for the 2026 emergency USC rates. | https://www.revenue.ie/en/jobs-and-pensions/documents/emergency-rates.pdf | 2026-10-24 |
+| Revenue, Preliminary tax. Read for the preliminary tax rule. | https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/preliminary-tax.aspx | 2026-10-24 |
+| Revenue, Pay and file system (late filing surcharge). Read for the late filing surcharge. | https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/pay-file-system.aspx | 2026-10-24 |
+| Revenue, eBrief 034/26 (ROS extension to 18 November 2026). Read for the 2026 ROS extension date. | https://www.revenue.ie/en/tax-professionals/ebrief/2026/no-0342026.aspx | 2026-10-24 |
+| Revenue, Tax and Duty Manual, Guidelines for charging interest on late payment (updated May 2025). Read for the daily interest rate on late tax. | https://www.revenue.ie/en/tax-professionals/tdm/collection/debt-management/guidelines-for-charging-interest-on-late-payment.pdf | 2026-10-24 |
 
 Not yet confirmed: (1) the consolidated text of Part 18D: the Law Reform Commission's Revised Acts do not include the Taxes Consolidation Act 1997 (revisedacts.lawreform.ie returns 404 for it, and it is not in the alphabetical list, checked 2026-10-24), so section wording is taken from Revenue's Notes for Guidance (Finance Act 2025 edition), checked against the enacted Finance Act 2011 s.3, Finance Act 2012 s.3 and Finance Act 2025 s.2; later amendments between 2011 and 2024 were not read in their enacting acts; (2) that the s.1084 late filing surcharge is computed on USC as part of "tax due": it follows from s.531AAA(e) applying Part 47, but no Revenue page read says so in terms; (3) the increased exemption and Standard Capital Superannuation Benefit figures for termination payments (Tax and Duty Manual Part 05-05-19, not read here); (4) Budget 2027 and Finance Bill 2026 changes to USC for 2027 were not read.

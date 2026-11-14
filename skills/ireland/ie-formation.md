@@ -3,11 +3,12 @@ name: ie-formation
 description: "Use this skill whenever asked about forming, incorporating, or registering a business in Ireland. Trigger on phrases like \"Ireland company formation\", \"CRO registration\", \"LTD Ireland\", \"DAC Ireland\", \"sole trader Ireland\", \"Form A1 Ireland\", \"PPS number business\", \"incorporate Ireland\", \"CORE portal\", \"register business Ireland\", \"RBO Ireland\", \"TR1 Ireland\", \"TR2 Ireland\", \"Companies Act 2014\", \"CLG Ireland\", \"PLC Ireland\", or any question about choosing or registering an Irish entity. Covers entity comparison (Sole Trader, Partnership, LP, LLP, LTD / CLS, DAC, CLG, PLC), CRO online portal (CORE) registration steps, Revenue TR1 / TR2 tax registration, sector-specific licensing (Central Bank, CCPC, DPC), RBO beneficial ownership filing, PPS number requirements for directors and shareholders, and tax treatment by entity type including the 12.5% trading CT rate and PRSI Class S. Out of scope: immigration / employment permits for non-EEA founders, bank account opening procedures (high-level only), full corporate governance and shareholders' agreement drafting, deep sector-specific regulatory licensing beyond signposting, listing on Euronext Dublin / ISEQ, and Irish Collective Asset-management Vehicles (ICAV). ALWAYS read this skill before advising on Irish entity formation."
 jurisdiction: IE
 tax_year: 2026
-last_updated: 2026-10-31
-version: 1.0
+last_updated: 2026-11-14
+version: 1.1
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: formation
+type: filing-howto
 ---
 
 # Forming a business in Ireland (2026): sole trader, partnership or company, CRO, RBO and Revenue registration
@@ -190,7 +191,6 @@ A business not established in Ireland that supplies taxable goods or services to
 | PLC authorised minimum share capital | €25,000 | [s.1000](https://www.irishstatutebook.ie/eli/2014/act/38/section/1000/enacted/en/html) | https://www.irishstatutebook.ie/eli/2014/act/38/section/1000/enacted/en/html |
 | PLC shares paid up at allotment | at least one-quarter of nominal value plus all premium | [s.1026](https://www.irishstatutebook.ie/eli/2014/act/38/section/1026/enacted/en/html) | https://www.irishstatutebook.ie/eli/2014/act/38/section/1026/enacted/en/html |
 | RBO fine on indictment | up to €500,000 | [S.I. No. 110 of 2019, reg. 28](https://www.irishstatutebook.ie/eli/2019/si/110/made/en/print) | https://www.irishstatutebook.ie/eli/2019/si/110/made/en/print |
-| CRO incorporation, business name and late annual return fees | **check** on the CRO site | CRO fee regulations | Not confirmed; see Sources |
 
 ## Boundaries and exceptions
 

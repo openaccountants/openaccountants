@@ -1,14 +1,15 @@
 ---
 name: ie-vat-return
 description: "Irish VAT for tax year 2026 under the Value-Added Tax Consolidation Act 2010 (VATCA) as revised to 1 August 2026, including Finance Act 2025. Covers the 23%, 13.5%, 9%, 4.8% and 0% rates, the move of catering, hot take-away food and hairdressing from 13.5% to 9% on 1 July 2026, the EUR 42,500 services and EUR 85,000 goods registration thresholds, the two-monthly VAT3 return and payment by the 19th (23rd on ROS), the annual Return of Trading Details (RTD), the EUR 2,000,000 cash (moneys received) basis, reverse charge on services from abroad, EU goods and RCT construction, VIES statements, blocked input credit and qualifying cars, 0.0274% daily interest and EUR 4,000 fixed and tax-geared penalties. Trigger on 'Irish VAT', 'VAT3', 'ROS VAT return', 'RTD', 'do I need to register for VAT in Ireland', 'Irish reverse charge', 'VIES Ireland'. Out of scope: income tax (ie-income-tax-form11), corporation tax (ie-corporation-tax), payroll (ie-payroll), withholding and treaties (ie-foreign-tax-and-withholding), residence (ie-cross-border); VAT groups, property, Capital Goods Scheme, margin schemes and OSS are referred."
-version: 2.3
+version: 2.4
 jurisdiction: IE
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: vat-gst
+type: filing-howto
 ---
 
 # Irish VAT returns (VAT3 and RTD), tax year 2026
@@ -39,21 +40,21 @@ See also: `ie-income-tax-form11`, `ie-corporation-tax`, `ie-payroll`, `ie-foreig
 | Restaurant and catering services (not alcohol, soft drinks or bottled water), hot take-away food, hot tea and coffee, hairdressing (Sch. 3 paras 3(1), 3(3), 13(3)) | 13.5% from 1 September 2023 to 30 June 2026 (Revenue second reduced rate page: "From 01 September 2023 to 30 June 2026, the reduced rate applies"); **9% from 1 July 2026** | 2026 | https://www.revenue.ie/en/vat/vat-rates/what-are-vat-rates/second-reduced-rate-vat.aspx; Finance Act 2025 s.71, https://www.irishstatutebook.ie/eli/2025/act/18/section/71/enacted/en/html; VATCA s.46(1)(cb); https://www.revenue.ie/en/vat/vat-on-services/restaurant-catering-and-canteen-services/index.aspx |
 | Second reduced rate: periodicals and e-periodicals, sporting facilities (not non-profit), heat pump systems (Sch. 3 paras 7(a), 7A, 12, 12A) | 9% | 2025 and 2026 | VATCA s.46(1)(ca); https://www.revenue.ie/en/vat/vat-rates/what-are-vat-rates/second-reduced-rate-vat.aspx |
 | Electricity, and gas for heating or lighting | 9%, 1 May 2022 to 31 December 2030 | 2026 | VATCA s.46(1)(caa) (Finance Act 2025 s.69, https://www.irishstatutebook.ie/eli/2025/act/18/section/69/enacted/en/html) |
-| Qualifying apartments (supply, and construction until completed) | 9%, 26 November 2025 to 31 December 2030 | 2026 | VATCA s.46(1)(cac), Sch. 3 para 9B |
-| Certain qualifying apartments (supply only), for late or amended 2025 returns | 9%, 8 October 2025 to 25 November 2025 | 2025 | VATCA s.46(1)(cab), Sch. 3 para 9A |
+| Qualifying apartments (supply, and construction until completed) | 9%, 26 November 2025 to 31 December 2030 | 2026 | VATCA s.46(1)(cac), Sch. 3 para 9B; https://revisedacts.lawreform.ie/eli/2010/act/31/revised/en/html |
+| Certain qualifying apartments (supply only), for late or amended 2025 returns | 9%, 8 October 2025 to 25 November 2025 | 2025 | VATCA s.46(1)(cab), Sch. 3 para 9A; https://revisedacts.lawreform.ie/eli/2010/act/31/revised/en/html |
 | Livestock (livestock generally, and horses normally intended for use in making food or for farm production) | 4.8% | 2025 and 2026 | VATCA s.46(1)(d); https://www.revenue.ie/en/vat/vat-rates/what-are-vat-rates/livestock-rate-vat.aspx |
 | Zero rate (exports; intra-EU supplies of goods to registered customers; certain food and drink; certain oral medicines, non-oral medicines and sanitary products; certain books, e-books and audiobooks; certain newspapers and e-newspapers; certain animal feed, fertilisers, and seeds and plants used to produce food; supply and installation of solar panels on private dwellings and recognised schools; clothing and footwear for children under 11; and the other Schedule 2 items) | 0% | 2025 and 2026 | VATCA s.46(1)(b) and Sch. 2; https://www.revenue.ie/en/vat/vat-rates/what-are-vat-rates/zero-rate-vat.aspx |
 | Flat-rate addition charged by unregistered farmers | 4.5% (5.1% in 2025) | 2026 | Revenue current rates table; Finance Act 2025 s.73, https://www.irishstatutebook.ie/eli/2025/act/18/section/73/enacted/en/html (VATCA s.86(1), from 1 January 2026) |
 | Services threshold (services, and goods made from zero-rated materials) | EUR 42,500 | 2025 and 2026 | VATCA s.2(1) "services threshold", s.6(1)(d); https://www.revenue.ie/en/vat/vat-registration/who-should-register-for-vat/vat-thresholds.aspx |
-| Goods threshold (90% or more of turnover from goods) | EUR 85,000 | 2025 and 2026 | VATCA s.2(1) "goods threshold", s.6(1)(c) |
-| Intra-EU acquisitions threshold (continuous 12 months) | EUR 41,000 | 2026 | VATCA s.9(2) |
-| EU-wide distance sales and telecoms, broadcasting and electronic services to consumers | EUR 10,000 | 2026 | VATCA s.35(1); Revenue VAT thresholds |
-| EU VAT SME Scheme Union threshold | EUR 100,000 | 2026 | VATCA s.92B(1) "Union threshold" |
+| Goods threshold (90% or more of turnover from goods) | EUR 85,000 | 2025 and 2026 | VATCA s.2(1) "goods threshold", s.6(1)(c); https://revisedacts.lawreform.ie/eli/2010/act/31/revised/en/html |
+| Intra-EU acquisitions threshold (continuous 12 months) | EUR 41,000 | 2026 | VATCA s.9(2); https://revisedacts.lawreform.ie/eli/2010/act/31/revised/en/html |
+| EU-wide distance sales and telecoms, broadcasting and electronic services to consumers | EUR 10,000 | 2026 | VATCA s.35(1); https://revisedacts.lawreform.ie/eli/2010/act/31/revised/en/html |
+| EU VAT SME Scheme Union threshold | EUR 100,000 | 2026 | VATCA s.92B(1) "Union threshold"; https://revisedacts.lawreform.ie/eli/2010/act/31/revised/en/html |
 | Cash (moneys received) basis: turnover limit, any continuous 12 months | EUR 2,000,000 (or 90% of supplies to unregistered customers) | 2026 | VATCA s.80(1); https://www.revenue.ie/en/vat/accounting-for-vat/accounting-for-vat-on-moneys-received/who-can-opt-moneys-received-basis.aspx |
 | Four-monthly returns allowed if annual liability is | EUR 3,001 to EUR 14,400 | 2026 | https://www.revenue.ie/en/vat/accounting-for-vat/how-to-account-for-value-added-tax/when-vat-becomes-payable.aspx |
 | Six-monthly returns allowed if annual liability is | EUR 1 to EUR 3,000 | 2026 | same page |
-| VIES goods statement: quarterly allowed if intra-EU goods supplies per quarter (and in each of the last 4 quarters) do not exceed | EUR 50,000 | 2026 | VATCA s.82(1), (5) |
-| Qualifying car: share of VAT deductible | 20%, if business use is at least 60% | 2026 | VATCA s.59(1), (2)(d) |
+| VIES goods statement: quarterly allowed if intra-EU goods supplies per quarter (and in each of the last 4 quarters) do not exceed | EUR 50,000 | 2026 | VATCA s.82(1), (5); https://revisedacts.lawreform.ie/eli/2010/act/31/revised/en/html |
+| Qualifying car: share of VAT deductible | 20%, if business use is at least 60% | 2026 | VATCA s.59(1), (2)(d); https://revisedacts.lawreform.ie/eli/2010/act/31/revised/en/html |
 | Interest on late VAT | 0.0274% a day or part of a day | 2026 | VATCA s.114(1); https://www.revenue.ie/en/vat/interest-and-penalties/when-is-interest-applied-by-revenue/index.aspx |
 | Fixed penalty (each failure) | EUR 4,000 | 2026 | VATCA s.115(1), (2), (4); https://www.revenue.ie/en/vat/interest-and-penalties/when-are-penalties-payable-to-revenue/fixed-penalties.aspx |
 
