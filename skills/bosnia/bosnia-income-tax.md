@@ -1,10 +1,11 @@
 ---
 name: bosnia-income-tax
 description: "Bosnia and Herzegovina personal income tax (porez na dohodak) for tax year 2026, set separately by the Federation of BiH (FBiH), Republika Srpska (RS) and Brčko District (BD). Covers residence in each, the flat rates (FBiH 10%, RS 8% on salary, 10% on business income, 13% on capital and other income, BD 10%), personal allowances (FBiH 300 KM a month plus dependant factors, RS 12,000 KM a year, BD 14,400 KM a year), self-employment, the RS 2% small-entrepreneur tax and FBiH flat-rate amounts, rent, interest and property gains, annual returns and fines. Trigger on: porez na dohodak, lični odbitak, porezna kartica, GPD-1051, mali preduzetnik, paušal, godišnja poreska prijava, Bosnia income tax. Out of scope: monthly payroll (bosnia-payroll), contribution rates and bases (bosnia-social-contributions), VAT (bosnia-vat), companies (ba-corporate-income-tax)."
-version: 0.2
+version: 0.3
+type: computation
 jurisdiction: BA
 tax_year: 2026
-last_updated: 2026-10-30
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
@@ -49,29 +50,29 @@ All amounts are in convertible marks (KM, BAM). There are no progressive bands i
 | FBiH income tax rate | 10% | 2026 | [FBiH Law art. 9](https://www.pufbih.ba/v1/public/upload/zakoni/d9bf6-zakon-o-porezu-na-dohodak-ispravan-tekst.pdf) |
 | FBiH basic personal allowance | 3,600 KM a year (300 KM a month) | 2026 | [FBiH Law art. 24(1); Rulebook art. 21(6)](https://www.pufbih.ba/v1/public/upload/zakoni/d9bf6-zakon-o-porezu-na-dohodak-ispravan-tekst.pdf) |
 | FBiH dependant factors (monthly) | spouse 0.5 (150 KM); 1st child 0.5 (150 KM); 2nd child 0.7 (210 KM); 3rd and each further child 0.9 (270 KM); other dependant 0.3 (90 KM); disability 0.3 (90 KM) | 2026 | [FBiH Law art. 24(2); Rulebook art. 21(6)](https://pufbih.ba/v1/public/upload/zakoni/16_02_2026teksta%20Pravilnika%20o%20primjeni%20Zakona%20o%20porezu%20na%20dohodak_12_26/16_02_2026_PRECISCENI%20Pravilnik%20o%20primjeni%20Zakona%20o%20porezu%20na%20dohodak%2012-26.pdf) |
-| FBiH dependant income limit | dependant's own income not above 3,600 KM a year | 2026 | FBiH Law art. 24(3) |
-| FBiH short work, final tax | 10% with no allowance, work up to 10 days or 80 hours a month paid up to 250 KM | 2026 | FBiH Law art. 27(6) |
-| FBiH rental, normed costs | 30% of rent; 50% for rooms and flats let to tourists who pay tourist tax | 2026 | FBiH Law art. 20(8) |
-| FBiH occasional activity and author fees, normed costs | 20% of income (occasional); 30% or actual (author fees) | 2026 | FBiH Law art. 15(7) and (8) |
+| FBiH dependant income limit | dependant's own income not above 3,600 KM a year | 2026 | [FBiH Law art. 24(3)](https://www.pufbih.ba/v1/public/upload/zakoni/d9bf6-zakon-o-porezu-na-dohodak-ispravan-tekst.pdf) |
+| FBiH short work, final tax | 10% with no allowance, work up to 10 days or 80 hours a month paid up to 250 KM | 2026 | [FBiH Law art. 27(6)](https://www.pufbih.ba/v1/public/upload/zakoni/d9bf6-zakon-o-porezu-na-dohodak-ispravan-tekst.pdf) |
+| FBiH rental, normed costs | 30% of rent; 50% for rooms and flats let to tourists who pay tourist tax | 2026 | [FBiH Law art. 20(8)](https://www.pufbih.ba/v1/public/upload/zakoni/d9bf6-zakon-o-porezu-na-dohodak-ispravan-tekst.pdf) |
+| FBiH occasional activity and author fees, normed costs | 20% of income (occasional); 30% or actual (author fees) | 2026 | [FBiH Law art. 15(7) and (8)](https://www.pufbih.ba/v1/public/upload/zakoni/d9bf6-zakon-o-porezu-na-dohodak-ispravan-tekst.pdf) |
 | FBiH flat-rate (paušal) tax, main occupation | 70, 30, 50, 80 or 70 KM a month by activity; half for a secondary occupation | 2026 | [FBiH Rulebook art. 53](https://pufbih.ba/v1/public/upload/zakoni/16_02_2026teksta%20Pravilnika%20o%20primjeni%20Zakona%20o%20porezu%20na%20dohodak_12_26/16_02_2026_PRECISCENI%20Pravilnik%20o%20primjeni%20Zakona%20o%20porezu%20na%20dohodak%2012-26.pdf) |
-| FBiH prizes and games of chance | 10% final on each prize over 100 KM | 2026 | FBiH Law art. 23 and 34 |
+| FBiH prizes and games of chance | 10% final on each prize over 100 KM | 2026 | [FBiH Law art. 23 and 34](https://www.pufbih.ba/v1/public/upload/zakoni/d9bf6-zakon-o-porezu-na-dohodak-ispravan-tekst.pdf) |
 | RS rate on personal income (salary) | 8% | 2026 | [RS Tax Administration notice, February 2026](https://poreskaupravars.org/izmjene-u-podnosenju-obrasca-1002-od-01-01-2026-godine-3/) |
 | RS rate on self-employment income | 10% | 2026 | [RS Law art. 4(2) as amended by 119/21](https://www.poreskaupravars.org/dokumenti/zakoni/Zakon%20o%20doprinosima.pdf) |
-| RS rate on author rights, capital, capital gains and other income | 13% | 2026 | RS Law art. 4(3) as amended by 119/21 |
-| RS basic personal allowance | 12,000 KM a year (1,000 KM a month) | 2026 | RS Law art. 10(3)(1) as amended by 119/21 |
+| RS rate on author rights, capital, capital gains and other income | 13% | 2026 | [RS Law art. 4(3) as amended by 119/21](https://www.poreskaupravars.org/dokumenti/zakoni/Zakon%20o%20doprinosima.pdf) |
+| RS basic personal allowance | 12,000 KM a year (1,000 KM a month) | 2026 | [RS Law art. 10(3)(1) as amended by 119/21](https://www.poreskaupravars.org/dokumenti/zakoni/Zakon%20o%20doprinosima.pdf) |
 | RS dependant allowance | 1,800 KM a year per dependant | 2026 | [RS Law art. 10(3)(2) as amended by 49/21](https://poreskaupravars.org/wp-content/uploads/2021/06/Zakon-o-izmjenama-Zakona-oa-porezu-na-dohodak-.pdf) |
 | RS dependant income limit | 3,000 KM a year | 2026 | [RS Law art. 10(8) as amended by 66/18](https://www.poreskaupravars.org/dokumenti/zakoni/Zakon-o-izmjenama-dopunama-Zakona-o-porezu-na-dohodak-SLGL-66_18.pdf) |
-| RS voluntary pension and life insurance | each deductible up to 1,200 KM a year | 2026 | RS Law art. 10(1) as amended by 66/18 |
+| RS voluntary pension and life insurance | each deductible up to 1,200 KM a year | 2026 | [RS Law art. 10(1) as amended by 66/18](https://www.poreskaupravars.org/dokumenti/zakoni/Zakon-o-izmjenama-dopunama-Zakona-o-porezu-na-dohodak-SLGL-66_18.pdf) |
 | RS tax-free part of salary for jobs needing no qualification or 3-year secondary school | 50 KM a month (net) | from 1 Jan 2026 | [RS Law art. 8(2)(13), added by 114/25](https://poreskaupravars.org/wp-content/uploads/2025/12/Dohodak.pdf) |
 | RS small entrepreneur tax | 2% of total revenue | 2026 | [RS Law art. 23(1)](https://www.poreskaupravars.org/dokumenti/zakoni/zakonoporezunadohodak6015.pdf) |
 | RS small entrepreneur minimum annual tax | 1,200 KM; 600 KM if revenue is not above 50,000 KM | 2026 | [RS Law art. 23(2) and 23a, by 110/24](https://poreskaupravars.org/wp-content/uploads/2025/01/Scan29012025.pdf) |
-| RS small entrepreneur ceiling | revenue up to 100,000 KM, not VAT-registered, at most 3 workers | 2026 | RS Law art. 21 as replaced by 110/24 |
+| RS small entrepreneur ceiling | revenue up to 100,000 KM, not VAT-registered, at most 3 workers | 2026 | [RS Law art. 21 as replaced by 110/24](https://poreskaupravars.org/wp-content/uploads/2025/01/Scan29012025.pdf) |
 | RS small farmer tax | 0 KM up to 12,000 KM revenue; 200 KM up to 25,000; 400 KM up to 50,000 | 2026 | [RS Law art. 27b, added by 112/23](https://poreskaupravars.org/wp-content/uploads/2023/12/Scan26122023.pdf) |
-| RS seasonal and temporary work | 9 KM tax per day of engagement | from 1 Jan 2026 | RS Law art. 52a, added by 114/25 |
-| RS non-resident occasional services | 10% withholding on the gross fee, final; from 2026 also on such payments to non-resident legal persons | 2026 | RS Law art. 61a, added by 110/24; para. 5 added by 114/25 |
+| RS seasonal and temporary work | 9 KM tax per day of engagement | from 1 Jan 2026 | [RS Law art. 52a, added by 114/25](https://poreskaupravars.org/wp-content/uploads/2025/12/Dohodak.pdf) |
+| RS non-resident occasional services | 10% withholding on the gross fee, final; from 2026 also on such payments to non-resident legal persons | 2026 | [RS Law art. 61a, added by 110/24](https://poreskaupravars.org/wp-content/uploads/2025/01/Scan29012025.pdf); [para. 5 added by 114/25](https://poreskaupravars.org/wp-content/uploads/2025/12/Dohodak.pdf) |
 | Brčko income tax rate | 10% | 2026 | [BD Law art. 10](https://skupstinabd.ba/3-zakon/ba/Zakon%20o%20porezu%20na%20dohodak/Nesluz--bena%20prec--is--c-ena%20verzija%20Zakona%20o%20porezu%20na%20dohodak%20B.pdf) |
 | Brčko basic personal allowance | 14,400 KM a year (1,200 KM a month) | from 1 Aug 2022 | [BD Law art. 25(1) as amended by 21/22](https://skupstinabd.ba/3-zakon/ba/Zakon%20o%20porezu%20na%20dohodak/04B21-22%20Zakon%20o%20izmjenama%20i%20dopuni%20Zakona%20o%20porezu%20na%20dohodak.pdf) |
-| Brčko life insurance with savings element | up to 1,800 KM a year added to the allowance | from 1 Aug 2022 | BD Law art. 25(8) as amended by 21/22 |
+| Brčko life insurance with savings element | up to 1,800 KM a year added to the allowance | from 1 Aug 2022 | [BD Law art. 25(8) as amended by 21/22](https://skupstinabd.ba/3-zakon/ba/Zakon%20o%20porezu%20na%20dohodak/04B21-22%20Zakon%20o%20izmjenama%20i%20dopuni%20Zakona%20o%20porezu%20na%20dohodak.pdf) |
 | Brčko meal allowance not taxed | up to 10 KM per working day | from 1 Jan 2023 | [BD Law art. 11(2)(c)(6) as amended by 45/22](https://skupstinabd.ba/3-zakon/ba/Zakon%20o%20porezu%20na%20dohodak/05B45-22%20Zakon%20o%20izmjeni%20Zakona%20o%20porezu%20na%20dohodak.pdf) |
 | Late payment interest | FBiH 0.04% a day; RS 0.03% a day; Brčko 0.03% a day | 2026 | [FBiH interest law art. 2](https://pufbih.ba/v1/public/upload/zakoni/1%20Zakon%20o%20visini%20stope%20zatezne%20kamate%20na%20javne%20prihode%20-%20PRECISCEN%20TEKST.pdf); [RS ZPP art. 60](https://poreskaupravars.org/wp-content/uploads/2026/05/Zakon-o-poreskom-postupku-78-20.pdf); [BD ZPU art. 68](https://skupstinabd.ba/3-zakon/ba/Zakon%20o%20Poreznoj%20upravi%20Brc--ko%20Distrikta%20BiH/011B11-20%20Zakon%20%20o%20poreznoj%20upravi%20Brcko%20distrikta%20BiH.pdf) |
 
