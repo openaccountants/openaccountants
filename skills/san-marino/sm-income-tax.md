@@ -4,15 +4,16 @@ description: >
   San Marino personal income tax (IGR, imposta generale sui redditi) for individuals in tax year 2026, under Law 166/2013 as reformed by Law 141/2025 and Delegated Decree 156/2026. Covers residence, worldwide and domestic-source scope, the eight progressive bands from 9% to 35%, the 18% separate rate on business and professional income for 2026 to 2030 (9% for a qualifying new activity), the employee 7% forfait capped at EUR 2,800, pension forfaits, rental income, family, medical and rent credits, the SMaC card tax credit for wages, pensions and business income, loss relief, foreign tax credit, payroll withholding, the 31 July return deadline and late-filing charges. Use for San Marino income tax, IGR bands, SMaC credit, resident and frontier employee tax, self-employed tax in San Marino and personal return questions. Special residence regimes and mixed-income ordering need their own facts.
 jurisdiction: SM
 tax_year: 2026
-last_updated: 2026-10-30
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: international
-version: 0.4
+version: 0.5
 tier: 2
 domain: income-tax
+type: computation
 ---
 
-# San Marino personal income tax v0.4
+# San Marino personal income tax v0.5
 
 Tax year: calendar year 2026 (1 January to 31 December), return filed in 2027. Currency EUR. Authority: UO Ufficio Tributario (Tax Office), Dipartimento Finanze e Bilancio.
 
@@ -31,64 +32,64 @@ Out of scope here: corporate IGR (`sm-corporate-income-tax`), payroll mechanics 
 
 | Item | Amount | Tax year | Source |
 |---|---|---|---|
-| Band 1: taxable income up to 10,000 | 9% | 2026 | [IGR Annex C, art C1(1)][igr] |
-| Band 2: 10,000.01 to 18,000 | 13% | 2026 | [IGR Annex C, art C1(1)][igr] |
-| Band 3: 18,000.01 to 28,000 | 17% | 2026 | [IGR Annex C, art C1(1)][igr] |
-| Band 4: 28,000.01 to 38,000 | 21% | 2026 | [IGR Annex C, art C1(1)][igr] |
-| Band 5: 38,000.01 to 50,000 | 25% | 2026 | [IGR Annex C, art C1(1)][igr] |
-| Band 6: 50,000.01 to 65,000 | 28% | 2026 | [IGR Annex C, art C1(1)][igr] |
-| Band 7: 65,000.01 to 80,000 | 31% | 2026 | [IGR Annex C, art C1(1)][igr] |
-| Band 8: over 80,000 | 35% | 2026 | [IGR Annex C, art C1(1)][igr] |
-| Band indexation | Every two years by cost of living, capped at 6 points; first adjustment in tax year 2028, none in 2026 | 2026 | [IGR Annex C, art C1(2)][igr] |
-| Business and self-employed income (separate taxation, art 13(1)(a)) and directors' end-of-mandate pay (13(1)(l)) | 18% for tax years 2026 to 2030 (statutory rate 17%) | 2026 | [Law 141/2025, art 54(6)][l141]; [IGR art 13(2)(a)][igr] |
-| Capital gains (13(1)(b)) and qualifying national-athlete sponsorship (13(1)(o)) | 10% separate | 2026 | [IGR art 13(2)(b)][igr] |
-| Arrears and employment termination payments (13(1)(c)) | 2.5% on the first 5,000, 5% above | 2026 | [IGR art 13(2)(c)][igr] |
-| Agency and collaboration termination payments, specified public-office pay (13(1)(d)-(f)) | 12% separate | 2026 | [IGR art 13(2)(d)][igr] |
-| Optional separate taxation of foreign dividends (13(1)(g)) | 3% of the amount received net of foreign tax | 2026 | [IGR art 13(2)(e), (3)][igr] |
-| Optional separate taxation of foreign bond interest and qualifying insurance income (13(1)(h), (m)) | 10% of the amount received net of foreign tax | 2026 | [IGR art 13(2)(f), (3)][igr] |
-| Optional separate taxation of interest on foreign bank accounts (13(1)(i)) | 13% of the amount received net of foreign tax | 2026 | [IGR art 13(2)(g), (3)][igr] |
-| Optional separate taxation of supplementary pension benefits (13(1)(n)) | 5% | 2026 | [IGR art 13(2)(h)][igr] |
-| Employee forfait deduction | 7% of gross employment income, capped at 2,800 | 2026 | [IGR art 24(4)][igr] |
-| Employee travel costs paid without receipts | Excluded up to 15 a day (San Marino and Italy) or 30 a day (abroad excluding Italy), if paid by traceable means | 2026 | [IGR art 24(3), replaced by DD 156/2026, art 8][dd156] |
-| Pension forfait (marginal slices) | 20% of the first 13,000; 12% of 13,000.01 to 19,500; 9% of 19,500.01 to 26,000; 7% above 26,000 | 2026 | [IGR art 26][igr] |
-| Let San Marino home, rent at or below the controlled rent | Income = 20% of rent (never below the cadastral income) | 2026 | [IGR art 22(2)(a), (3)][igr] |
-| Let San Marino home, rent above the controlled rent | Income = 60% of rent (never below the cadastral income) | 2026 | [IGR art 22(2)(b), (3)][igr] |
-| Let home outside San Marino | Income = 60% of rent | 2026 | [IGR art 22(2-quater), added by DD 156/2026, art 6][dd156] |
-| Let business premises, lessor without bookkeeping duty | Income = rent less 25% (never below the cadastral income) | 2026 | [IGR art 23(3)(a), (4)][igr] |
-| Own business premises used as the seat of activity (art 23(2)) | Cadastral rent still counts: 100% in 2026, 75% in 2027, 50% in 2028, 25% in 2029 | 2026 | [Law 141/2025, art 54(5)][l141] |
-| Family credit: dependent spouse | 250 a year | 2026 | [IGR art 16(1)(a)][igr] |
-| Family credit: each dependent child | 250 a year | 2026 | [IGR art 16(1)(b)][igr] |
-| Family credit: dependent parents and parents-in-law, other cohabiting dependants, relatives owed maintenance | 125 a year each | 2026 | [IGR art 16(1)(c)-(e)][igr] |
-| Family credit uplift | +20% where dependants exceed two, or a dependant is disabled or permanently ill | 2026 | [IGR art 16(7)][igr] |
-| Medical and dental credit | 18% of documented, traceably paid costs up to 1,600 per person (taxpayer and each dependant) | 2026 | [IGR art 16(7-bis)(a)][igr] |
-| Residential rent credit | 15% of 50% of rent (80% of rent if the tenant is under 35), rent counted up to 6,000 | 2026 | [IGR art 16(7-bis)(b)][igr] |
-| SMaC credit, no-documentation portion | Up to 752.40 at taxable income up to 8,360, falling to zero at 16,720 | 2026 | [IGR Annex E, art E3(2) and Table 1][igr] |
-| SMaC credit maximum | 1,900 at taxable income of 42,500 and above, on documented SMaC spend up to 10,000 | 2026 | [IGR Annex E, art E3(2) and Table 1][igr] |
-| SMaC eligible fuel | Fuel counts only up to 1,500 a year | 2026 | [IGR Annex E, art E1(1)(a)][igr] |
-| SMaC home utilities and insurance (residents) | Count up to 1,000 at taxable income up to 15,000, tapering to nil at 50,000 | 2026 | [IGR Annex E, art E1(2)][igr] |
-| Business SMaC credit (separately taxed income) | 18% of spend up to 5,000 (income up to 25,000); cap 900 (25,000 to 50,000); 9% of spend up to 10,000 (over 50,000) | 2026 | [IGR art 17(1-ter)][igr] |
-| New-activity incentive for a new sole trader or professional | 50% cut in the separate rate for the first five tax periods (9% in 2026), on option, if the person carried on no similar activity in the 12 months before the request; no first licence fee and no annual licence fee for the next three years | 2026 | [IGR art 73(1), (3)-(5)][igr]; [Law 141/2025, art 54(6)][l141] |
-| Business and self-employed loss carryforward | No time limit; use capped at 70% of taxable business income each year | 2026 | [IGR art 30(4), replaced by DD 156/2026, art 10][dd156] |
-| Return and balance payment deadline | 31 July following the tax year (31 July 2027 for 2026) | 2026 | [IGR arts 93(1), 124(1)][igr] |
-| Employer income certification (IGR G) | Transmitted by 15 April | 2026 | [IGR art 85(2)][igr] |
+| Band 1: taxable income up to 10,000 | 9% | 2026 | [IGR Annex C, art C1(1)](https://www.consigliograndeegenerale.sm/on-line/documento17086436.html) |
+| Band 2: 10,000.01 to 18,000 | 13% | 2026 | [IGR Annex C, art C1(1)](https://www.consigliograndeegenerale.sm/on-line/documento17086436.html) |
+| Band 3: 18,000.01 to 28,000 | 17% | 2026 | [IGR Annex C, art C1(1)](https://www.consigliograndeegenerale.sm/on-line/documento17086436.html) |
+| Band 4: 28,000.01 to 38,000 | 21% | 2026 | [IGR Annex C, art C1(1)](https://www.consigliograndeegenerale.sm/on-line/documento17086436.html) |
+| Band 5: 38,000.01 to 50,000 | 25% | 2026 | [IGR Annex C, art C1(1)](https://www.consigliograndeegenerale.sm/on-line/documento17086436.html) |
+| Band 6: 50,000.01 to 65,000 | 28% | 2026 | [IGR Annex C, art C1(1)](https://www.consigliograndeegenerale.sm/on-line/documento17086436.html) |
+| Band 7: 65,000.01 to 80,000 | 31% | 2026 | [IGR Annex C, art C1(1)](https://www.consigliograndeegenerale.sm/on-line/documento17086436.html) |
+| Band 8: over 80,000 | 35% | 2026 | [IGR Annex C, art C1(1)](https://www.consigliograndeegenerale.sm/on-line/documento17086436.html) |
+| Band indexation | Every two years by cost of living, capped at 6 points; first adjustment in tax year 2028, none in 2026 | 2026 | [IGR Annex C, art C1(2)](https://www.consigliograndeegenerale.sm/on-line/documento17086436.html) |
+| Business and self-employed income (separate taxation, art 13(1)(a)) and directors' end-of-mandate pay (13(1)(l)) | 18% for tax years 2026 to 2030 (statutory rate 17%) | 2026 | [Law 141/2025, art 54(6)](https://www.consigliograndeegenerale.sm/on-line/home/archivio-leggi-decreti-e-regolamenti/documento17155359.html); [IGR art 13(2)(a)](https://www.consigliograndeegenerale.sm/on-line/documento17086436.html) |
+| Capital gains (13(1)(b)) and qualifying national-athlete sponsorship (13(1)(o)) | 10% separate | 2026 | [IGR art 13(2)(b)](https://www.consigliograndeegenerale.sm/on-line/documento17086436.html) |
+| Arrears and employment termination payments (13(1)(c)) | 2.5% on the first 5,000, 5% above | 2026 | [IGR art 13(2)(c)](https://www.consigliograndeegenerale.sm/on-line/documento17086436.html) |
+| Agency and collaboration termination payments, specified public-office pay (13(1)(d)-(f)) | 12% separate | 2026 | [IGR art 13(2)(d)](https://www.consigliograndeegenerale.sm/on-line/documento17086436.html) |
+| Optional separate taxation of foreign dividends (13(1)(g)) | 3% of the amount received net of foreign tax | 2026 | [IGR art 13(2)(e), (3)](https://www.consigliograndeegenerale.sm/on-line/documento17086436.html) |
+| Optional separate taxation of foreign bond interest and qualifying insurance income (13(1)(h), (m)) | 10% of the amount received net of foreign tax | 2026 | [IGR art 13(2)(f), (3)](https://www.consigliograndeegenerale.sm/on-line/documento17086436.html) |
+| Optional separate taxation of interest on foreign bank accounts (13(1)(i)) | 13% of the amount received net of foreign tax | 2026 | [IGR art 13(2)(g), (3)](https://www.consigliograndeegenerale.sm/on-line/documento17086436.html) |
+| Optional separate taxation of supplementary pension benefits (13(1)(n)) | 5% | 2026 | [IGR art 13(2)(h)](https://www.consigliograndeegenerale.sm/on-line/documento17086436.html) |
+| Employee forfait deduction | 7% of gross employment income, capped at 2,800 | 2026 | [IGR art 24(4)](https://www.consigliograndeegenerale.sm/on-line/documento17086436.html) |
+| Employee travel costs paid without receipts | Excluded up to 15 a day (San Marino and Italy) or 30 a day (abroad excluding Italy), if paid by traceable means | 2026 | [IGR art 24(3), replaced by DD 156/2026, art 8](https://www.bollettinoufficiale.sm/on-line/RicercaBU?operation=getDocBU&id=9c3a0dfeb72a7aeab52d1c5c0440879b4cf2ad33) |
+| Pension forfait (marginal slices) | 20% of the first 13,000; 12% of 13,000.01 to 19,500; 9% of 19,500.01 to 26,000; 7% above 26,000 | 2026 | [IGR art 26](https://www.consigliograndeegenerale.sm/on-line/documento17086436.html) |
+| Let San Marino home, rent at or below the controlled rent | Income = 20% of rent (never below the cadastral income) | 2026 | [IGR art 22(2)(a), (3)](https://www.consigliograndeegenerale.sm/on-line/documento17086436.html) |
+| Let San Marino home, rent above the controlled rent | Income = 60% of rent (never below the cadastral income) | 2026 | [IGR art 22(2)(b), (3)](https://www.consigliograndeegenerale.sm/on-line/documento17086436.html) |
+| Let home outside San Marino | Income = 60% of rent | 2026 | [IGR art 22(2-quater), added by DD 156/2026, art 6](https://www.bollettinoufficiale.sm/on-line/RicercaBU?operation=getDocBU&id=9c3a0dfeb72a7aeab52d1c5c0440879b4cf2ad33) |
+| Let business premises, lessor without bookkeeping duty | Income = rent less 25% (never below the cadastral income) | 2026 | [IGR art 23(3)(a), (4)](https://www.consigliograndeegenerale.sm/on-line/documento17086436.html) |
+| Own business premises used as the seat of activity (art 23(2)) | Cadastral rent still counts: 100% in 2026, 75% in 2027, 50% in 2028, 25% in 2029 | 2026 | [Law 141/2025, art 54(5)](https://www.consigliograndeegenerale.sm/on-line/home/archivio-leggi-decreti-e-regolamenti/documento17155359.html) |
+| Family credit: dependent spouse | 250 a year | 2026 | [IGR art 16(1)(a)](https://www.consigliograndeegenerale.sm/on-line/documento17086436.html) |
+| Family credit: each dependent child | 250 a year | 2026 | [IGR art 16(1)(b)](https://www.consigliograndeegenerale.sm/on-line/documento17086436.html) |
+| Family credit: dependent parents and parents-in-law, other cohabiting dependants, relatives owed maintenance | 125 a year each | 2026 | [IGR art 16(1)(c)-(e)](https://www.consigliograndeegenerale.sm/on-line/documento17086436.html) |
+| Family credit uplift | +20% where dependants exceed two, or a dependant is disabled or permanently ill | 2026 | [IGR art 16(7)](https://www.consigliograndeegenerale.sm/on-line/documento17086436.html) |
+| Medical and dental credit | 18% of documented, traceably paid costs up to 1,600 per person (taxpayer and each dependant) | 2026 | [IGR art 16(7-bis)(a)](https://www.consigliograndeegenerale.sm/on-line/documento17086436.html) |
+| Residential rent credit | 15% of 50% of rent (80% of rent if the tenant is under 35), rent counted up to 6,000 | 2026 | [IGR art 16(7-bis)(b)](https://www.consigliograndeegenerale.sm/on-line/documento17086436.html) |
+| SMaC credit, no-documentation portion | Up to 752.40 at taxable income up to 8,360, falling to zero at 16,720 | 2026 | [IGR Annex E, art E3(2) and Table 1](https://www.consigliograndeegenerale.sm/on-line/documento17086436.html) |
+| SMaC credit maximum | 1,900 at taxable income of 42,500 and above, on documented SMaC spend up to 10,000 | 2026 | [IGR Annex E, art E3(2) and Table 1](https://www.consigliograndeegenerale.sm/on-line/documento17086436.html) |
+| SMaC eligible fuel | Fuel counts only up to 1,500 a year | 2026 | [IGR Annex E, art E1(1)(a)](https://www.consigliograndeegenerale.sm/on-line/documento17086436.html) |
+| SMaC home utilities and insurance (residents) | Count up to 1,000 at taxable income up to 15,000, tapering to nil at 50,000 | 2026 | [IGR Annex E, art E1(2)](https://www.consigliograndeegenerale.sm/on-line/documento17086436.html) |
+| Business SMaC credit (separately taxed income) | 18% of spend up to 5,000 (income up to 25,000); cap 900 (25,000 to 50,000); 9% of spend up to 10,000 (over 50,000) | 2026 | [IGR art 17(1-ter)](https://www.consigliograndeegenerale.sm/on-line/documento17086436.html) |
+| New-activity incentive for a new sole trader or professional | 50% cut in the separate rate for the first five tax periods (9% in 2026), on option, if the person carried on no similar activity in the 12 months before the request; no first licence fee and no annual licence fee for the next three years | 2026 | [IGR art 73(1), (3)-(5)](https://www.consigliograndeegenerale.sm/on-line/documento17086436.html); [Law 141/2025, art 54(6)](https://www.consigliograndeegenerale.sm/on-line/home/archivio-leggi-decreti-e-regolamenti/documento17155359.html) |
+| Business and self-employed loss carryforward | No time limit; use capped at 70% of taxable business income each year | 2026 | [IGR art 30(4), replaced by DD 156/2026, art 10](https://www.bollettinoufficiale.sm/on-line/RicercaBU?operation=getDocBU&id=9c3a0dfeb72a7aeab52d1c5c0440879b4cf2ad33) |
+| Return and balance payment deadline | 31 July following the tax year (31 July 2027 for 2026) | 2026 | [IGR arts 93(1), 124(1)](https://www.consigliograndeegenerale.sm/on-line/documento17086436.html) |
+| Employer income certification (IGR G) | Transmitted by 15 April | 2026 | [IGR art 85(2)](https://www.consigliograndeegenerale.sm/on-line/documento17086436.html) |
 
 ### SMaC credit table (Annex E, Table 1)
 
 The credit is limited to tax due and can be claimed in part. Between rows, the credit and the spend limit are interpolated on actual taxable income; the credit percentage (credit divided by the spend limit) is rounded down to two decimals ([IGR Annex E, art E3][igr]).
 
-| Taxable income up to | Total maximum credit | No-SMaC portion | Documented SMaC portion | SMaC spend limit |
-|---:|---:|---:|---:|---:|
-| 8,360 | 752.40 | 752.40 | 0 | 0 |
-| 10,450 | 925.00 | 564.30 | 360.70 | 500 to 1,125 |
-| 12,540 | 1,000.00 | 376.20 | 623.80 | 1,750 |
-| 14,630 | 1,075.00 | 188.10 | 886.90 | 2,375 |
-| 16,720 | 1,150.00 | 0 | 1,150.00 | 3,000 |
-| 20,900 | 1,300.00 | 0 | 1,300.00 | 4,250 |
-| 25,080 | 1,450.00 | 0 | 1,450.00 | 5,500 |
-| 29,260 | 1,600.00 | 0 | 1,600.00 | 6,750 |
-| 33,440 | 1,700.00 | 0 | 1,700.00 | 8,000 |
-| 37,970 | 1,800.00 | 0 | 1,800.00 | 9,250 |
-| 42,500 and above | 1,900.00 | 0 | 1,900.00 | 10,000 |
+| Taxable income up to | Total maximum credit | No-SMaC portion | Documented SMaC portion | SMaC spend limit | Source |
+|---:|---:|---:|---:|---:|---|
+| 8,360 | 752.40 | 752.40 | 0 | 0 | [IGR Annex E, Table 1](https://www.consigliograndeegenerale.sm/on-line/documento17086436.html) |
+| 10,450 | 925.00 | 564.30 | 360.70 | 500 to 1,125 | same |
+| 12,540 | 1,000.00 | 376.20 | 623.80 | 1,750 | same |
+| 14,630 | 1,075.00 | 188.10 | 886.90 | 2,375 | same |
+| 16,720 | 1,150.00 | 0 | 1,150.00 | 3,000 | same |
+| 20,900 | 1,300.00 | 0 | 1,300.00 | 4,250 | same |
+| 25,080 | 1,450.00 | 0 | 1,450.00 | 5,500 | same |
+| 29,260 | 1,600.00 | 0 | 1,600.00 | 6,750 | same |
+| 33,440 | 1,700.00 | 0 | 1,700.00 | 8,000 | same |
+| 37,970 | 1,800.00 | 0 | 1,800.00 | 9,250 | same |
+| 42,500 and above | 1,900.00 | 0 | 1,900.00 | 10,000 | same |
 
 ## 3. The base
 
@@ -140,11 +141,11 @@ Final, non-refundable foreign tax on foreign income included in the base is cred
 
 | Obligation | Deadline | Source |
 |---|---|---|
-| Employer and pension payer transmit IGR G income and withholding data | 15 April following the tax year | [IGR art 85(2)][igr] |
-| Year-end withholding adjustment on wages | Collected by February of the following year | [IGR art 101(5)][igr] |
-| Annual return (electronic, by 24:00) | 31 July following the tax year | [IGR art 93(1), (4)][igr] |
-| Balance payment | Same date as the return | [IGR art 124(1)][igr] |
-| Business and self-employed advances | 35% by 31 August and 55% by 30 November, on prior-year tax net of foreign business-income credits; not due if the activity is suspended or ceased before the date | [IGR art 124(2)][igr] |
+| Employer and pension payer transmit IGR G income and withholding data | 15 April following the tax year | [IGR art 85(2)](https://www.consigliograndeegenerale.sm/on-line/documento17086436.html) |
+| Year-end withholding adjustment on wages | Collected by February of the following year | [IGR art 101(5)](https://www.consigliograndeegenerale.sm/on-line/documento17086436.html) |
+| Annual return (electronic, by 24:00) | 31 July following the tax year | [IGR art 93(1), (4)](https://www.consigliograndeegenerale.sm/on-line/documento17086436.html) |
+| Balance payment | Same date as the return | [IGR art 124(1)](https://www.consigliograndeegenerale.sm/on-line/documento17086436.html) |
+| Business and self-employed advances | 35% by 31 August and 55% by 30 November, on prior-year tax net of foreign business-income credits; not due if the activity is suspended or ceased before the date | [IGR art 124(2)](https://www.consigliograndeegenerale.sm/on-line/documento17086436.html) |
 
 No return is needed by a person with only wages from one employer or only a pension, if the payer transmits the article 85 certification by the return deadline, or by a person with only exempt income up to the social pension amount or income under final withholding ([IGR art 84(1)][igr]). Payroll withholding is on account: the employer annualises expected income at the bands and applies the family and SMaC credits the employee requests; medical and rent credits are claimed in the return ([IGR art 101][igr]).
 
@@ -154,12 +155,12 @@ A return filed within 30 days after 31 July is valid but carries the late-filing
 
 | Item | Amount | Source |
 |---|---|---|
-| Late return (art 137(2)(a)), general | 400 | [IGR art 139(1)(d), replaced by DD 156/2026, art 16][dd156] |
-| Late return filed within 30 days of the deadline, general | 200 | [DD 156/2026, art 16][dd156] |
-| Late return covering only wages, pensions, certified San Marino land and buildings or art 104(3) income | 100, or 50 within 30 days | [DD 156/2026, art 16][dd156] |
-| Omitted return (2021 onward) where the payer's certificate was filed and the person had only wages, pensions or certified property income | 100 | [Law 141/2025, art 54(4)][l141] |
-| Late payment interest | Legal interest rate plus 2 points, from the due date to payment; not charged on penalties | [IGR art 128][igr] |
-| Assessment paid within 60 days of notice | Penalties reduced by 50% | [IGR art 129][igr] |
+| Late return (art 137(2)(a)), general | 400 | [IGR art 139(1)(d), replaced by DD 156/2026, art 16](https://www.bollettinoufficiale.sm/on-line/RicercaBU?operation=getDocBU&id=9c3a0dfeb72a7aeab52d1c5c0440879b4cf2ad33) |
+| Late return filed within 30 days of the deadline, general | 200 | [DD 156/2026, art 16](https://www.bollettinoufficiale.sm/on-line/RicercaBU?operation=getDocBU&id=9c3a0dfeb72a7aeab52d1c5c0440879b4cf2ad33) |
+| Late return covering only wages, pensions, certified San Marino land and buildings or art 104(3) income | 100, or 50 within 30 days | [DD 156/2026, art 16](https://www.bollettinoufficiale.sm/on-line/RicercaBU?operation=getDocBU&id=9c3a0dfeb72a7aeab52d1c5c0440879b4cf2ad33) |
+| Omitted return (2021 onward) where the payer's certificate was filed and the person had only wages, pensions or certified property income | 100 | [Law 141/2025, art 54(4)](https://www.consigliograndeegenerale.sm/on-line/home/archivio-leggi-decreti-e-regolamenti/documento17155359.html) |
+| Late payment interest | Legal interest rate plus 2 points, from the due date to payment; not charged on penalties | [IGR art 128](https://www.consigliograndeegenerale.sm/on-line/documento17086436.html) |
+| Assessment paid within 60 days of notice | Penalties reduced by 50% | [IGR art 129](https://www.consigliograndeegenerale.sm/on-line/documento17086436.html) |
 
 ## 6. Cross-border points
 
