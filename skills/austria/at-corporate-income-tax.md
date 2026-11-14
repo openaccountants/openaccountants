@@ -1,14 +1,15 @@
 ---
 name: at-corporate-income-tax
 description: "Austrian corporate income tax (Körperschaftsteuer, KöSt) for tax year 2026: GmbH, AG, FlexCo and foreign companies with Austrian income. Covers liability (seat or management), the 23% rate (KStG § 22(1)) and the enacted 24% on income above EUR 1,000,000 for financial years starting after 31 December 2027, the minimum tax (EUR 500 a year for a GmbH, EUR 3,500 for an AG), the 75% loss offset limit (§ 8(4) Z 2), the participation exemption and international participations (§§ 10 and 10a), group taxation (§ 9), the interest limit (§ 12a), the clearing-account rule from 2027 (§ 8(2a)), KESt on distributions (27.5%, or 23% to a company), filing deadlines, quarterly prepayments, late-filing surcharge and Anspruchszinsen. Trigger on: Körperschaftsteuer, KöSt, Mindestkörperschaftsteuer, Verlustvortrag GmbH, Schachtelbeteiligung, Gruppenbesteuerung, Zinsschranke, Austrian company tax. Out of scope: at-transfer-pricing, at-cross-border, at-vat-return, at-income-tax, at-company-formation."
-version: 1.2
+version: 1.3
 jurisdiction: AT
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: corporate-tax
+type: computation
 ---
 
 # Austria corporate income tax (Körperschaftsteuer): tax year 2026
@@ -33,31 +34,31 @@ Related skills: `at-transfer-pricing` (arm's length prices with related companie
 |---|---|---|---|
 | KöSt rate on income (unlimited and limited taxpayers) | 23% | Calendar years from 2024 (24% in 2023) | KStG § 22(1): https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004569&Paragraf=22 |
 | KöSt rate, enacted for later years | 23% up to EUR 1,000,000 of income; 24% on the part above EUR 1,000,000. Applies to unlimited taxpayers and to limited taxpayers under § 1(3) Z 1; limited taxpayers under § 1(3) Z 2 and 3 stay at 23% (§ 22(1a)). Foreign income exempt in Austria is left out when testing the EUR 1,000,000 | Financial years starting after 31 December 2027; for a tax group, the group parent's financial years starting after that date | KStG § 22(1) as amended by BGBl. I Nr. 62/2026, § 26c Z 102 lit. a and b: https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004569&Paragraf=26c |
-| Surcharge where the company does not name the recipient of a payment on request | 25% of the amount, on top of KöSt | 2026 | KStG § 22(3) |
+| Surcharge where the company does not name the recipient of a payment on request | 25% of the amount, on top of KöSt | 2026 | KStG § 22(3) https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004569&Paragraf=22 |
 | Minimum tax (Austrian companies with share capital and comparable foreign companies with unlimited liability) | 5% of one quarter of the legal minimum share capital, for each full calendar quarter of unlimited liability | 2026 | KStG § 24(4) Z 1: https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004569&Paragraf=24 |
 | Legal minimum share capital of a GmbH | EUR 10,000 (since BGBl. I Nr. 179/2023) | 2026 | GmbHG § 6(1): https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10001720&Paragraf=6 |
-| Minimum tax of a GmbH | EUR 125 a quarter, EUR 500 a year | 2026 | KStG § 24(4) Z 1 with GmbHG § 6(1) |
+| Minimum tax of a GmbH | EUR 125 a quarter, EUR 500 a year | 2026 | KStG § 24(4) Z 1 with GmbHG § 6(1) https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004569&Paragraf=24 https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10001720&Paragraf=6 |
 | Legal minimum share capital of an AG | EUR 70,000 | 2026 | AktG § 7: https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10002070&Paragraf=7 |
-| Minimum tax of an AG | EUR 875 a quarter, EUR 3,500 a year | 2026 | KStG § 24(4) Z 1 with AktG § 7 |
-| Minimum tax of a foreign company with no legal minimum capital, or one below the GmbH minimum | As for a GmbH: EUR 500 a year | 2026 | KStG § 24(4) Z 1, second sentence |
-| Minimum tax of banks and insurers in company form | EUR 1,363 a quarter | 2026 | KStG § 24(4) Z 2 |
+| Minimum tax of an AG | EUR 875 a quarter, EUR 3,500 a year | 2026 | KStG § 24(4) Z 1 with AktG § 7 https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004569&Paragraf=24 https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10002070&Paragraf=7 |
+| Minimum tax of a foreign company with no legal minimum capital, or one below the GmbH minimum | As for a GmbH: EUR 500 a year | 2026 | KStG § 24(4) Z 1, second sentence https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004569&Paragraf=24 |
+| Minimum tax of banks and insurers in company form | EUR 1,363 a quarter | 2026 | KStG § 24(4) Z 2 https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004569&Paragraf=24 |
 | Loss offset limit for carried-forward losses | 75% of the total income (Gesamtbetrag der Einkünfte) | 2026 | KStG § 8(4) Z 2 lit. a: https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004569&Paragraf=8 |
 | International participation (internationale Schachtelbeteiligung) | At least one tenth of the capital, held without a break for at least one year | 2026 | KStG § 10(2): https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004569&Paragraf=10 |
 | Switch-over to credit (Methodenwechsel): low taxation | Effective foreign tax below 15% | 2026 | KStG § 10a(3) and (7): https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004569&Paragraf=10a |
-| Switch-over: portfolio holdings it also reaches | At least 5% (dividends under § 10(1) Z 5 or 6) | 2026 | KStG § 10a(7) |
+| Switch-over: portfolio holdings it also reaches | At least 5% (dividends under § 10(1) Z 5 or 6) | 2026 | KStG § 10a(7) https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004569&Paragraf=10a |
 | Group taxation: financial link | More than 50% of the capital and of the voting rights, for the whole financial year of the member | 2026 | KStG § 9(4) and (5): https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004569&Paragraf=9 |
-| Group taxation: minimum life | Three financial years of twelve months each | 2026 | KStG § 9(10) |
-| Group taxation: foreign members' losses counted | Up to 75% of the sum of the own incomes of all Austrian members and the group parent | 2026 | KStG § 9(6) Z 6 |
+| Group taxation: minimum life | Three financial years of twelve months each | 2026 | KStG § 9(10) https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004569&Paragraf=9 |
+| Group taxation: foreign members' losses counted | Up to 75% of the sum of the own incomes of all Austrian members and the group parent | 2026 | KStG § 9(6) Z 6 https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004569&Paragraf=9 |
 | Interest limit (Zinsschranke) | Net interest expense deductible up to 30% of tax EBITDA; at least EUR 3,000,000 a year in any case | 2026 | KStG § 12a(1): https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004569&Paragraf=12a |
-| Interest limit: equity ratio escape | Full deduction if the company's equity ratio is at least the group's, or up to 2 points below it | 2026 | KStG § 12a(5) |
-| Interest limit: carryforwards | Unused interest: carried forward on application, no time limit stated. Unused EBITDA capacity: five following years | 2026 | KStG § 12a(6) |
-| Clearing-account receivable against an individual shareholder, not settled at the balance sheet date | Treated as an open distribution to the extent it exceeds EUR 50,000 | Financial years ending in 2027 onwards (not 2026) | KStG § 8(2a) as amended by BGBl. I Nr. 62/2026, § 26c Z 101 |
+| Interest limit: equity ratio escape | Full deduction if the company's equity ratio is at least the group's, or up to 2 points below it | 2026 | KStG § 12a(5) https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004569&Paragraf=12a |
+| Interest limit: carryforwards | Unused interest: carried forward on application, no time limit stated. Unused EBITDA capacity: five following years | 2026 | KStG § 12a(6) https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004569&Paragraf=12a |
+| Clearing-account receivable against an individual shareholder, not settled at the balance sheet date | Treated as an open distribution to the extent it exceeds EUR 50,000 | Financial years ending in 2027 onwards (not 2026) | KStG § 8(2a) as amended by BGBl. I Nr. 62/2026, § 26c Z 101 https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004569&Paragraf=8 https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004569&Paragraf=26c |
 | KESt on a distribution, general rate | 27.5% | 2026 | EStG § 27a(1) Z 2: https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=27a |
 | KESt the payer may withhold when the recipient is a company (§ 1(1) KStG) | 23% | Income received from 2024 | EStG § 93(1a): https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=93 |
 | No KESt on dividends to a company holding at least 10% | Exempt at source; for an EU parent (Annex 2 EStG) only after one year without a break | 2026 | EStG § 94 Z 2: https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=94 |
-| Combined burden on profit paid out to an individual shareholder | 44.175% (23% + 27.5% x 77%) | 2026 | Arithmetic from KStG § 22(1) and EStG § 27a(1) Z 2 |
+| Combined burden on profit paid out to an individual shareholder | 44.175% (23% + 27.5% x 77%) | 2026 | Arithmetic from KStG § 22(1) and EStG § 27a(1) Z 2 https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004569&Paragraf=22 https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=27a |
 | Prepayments | One quarter each on 15 February, 15 May, 15 August and 15 November | 2026 | EStG § 45(2) with KStG § 24(3) Z 1: https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=45 |
-| Prepayment uplift on the last assessed tax | +4% for the first year after the assessed year, +5% for each further year | 2026 | EStG § 45(1) |
+| Prepayment uplift on the last assessed tax | +4% for the first year after the assessed year, +5% for each further year | 2026 | EStG § 45(1) https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=45 |
 | Late-filing surcharge (Verspätungszuschlag) | Up to 10% of the tax assessed; not set below EUR 50 | 2026 | BAO § 135: https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10003940&Paragraf=135 |
 | Interest on assessed differences (Anspruchszinsen) | 2% a year above the base rate (Basiszinssatz), from 1 October of the following year, for at most 48 months; not set below EUR 50 | 2026 | BAO § 205(1) and (2): https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10003940&Paragraf=205 |
 | Base rate (Basiszinssatz), so the Anspruchszinsen rate | 2.03% from 16 September 2026, so 4.03%; 1.53% from 11 June 2025 to 15 September 2026, so 3.53%. The rate moves with the ECB main refinancing rate: check it on the day | 2026 | OeNB, Basis- und Referenzzinssätze: https://www.oenb.at/isawebstat/stabfrage/createReport?lang=DE&report=2.1 |
