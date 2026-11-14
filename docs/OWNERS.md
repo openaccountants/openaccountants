@@ -85,6 +85,7 @@ Writer is who holds the country now. Tax year is the year on every skill on main
 | AL | Albania | Claude | 2026 | Issue #377 closed. |
 | AM | Armenia | ChatGPT | 2026 | Issue #378 closed. |
 | AT | Austria | Claude | 2026 | Issue #379 closed. |
+| AX | Aland Islands | Claude (import of Ryan Duguid's fork, 14 Nov) | 2026 | Scope router and individual income tax imported; no VAT, company tax or payroll skill yet. |
 | AZ | Azerbaijan | ChatGPT | 2025 | Draft PR #797 open. Issue #380 open. |
 | BA | Bosnia and Herzegovina | Claude (from ChatGPT, 30 Oct) | 2026 | All ten skills rebuilt or refreshed (#964, #971, #976 to #979, #981, #985, #989, #993). Issue #381 open. |
 | BE | Belgium | Claude | 2026 | Issue #382 closed. |
