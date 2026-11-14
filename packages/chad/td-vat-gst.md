@@ -3,15 +3,16 @@ name: td-vat-gst
 description: "Prepare Chad VAT working papers for 2026, distinguishing the principal rate from provincial and communal additional centimes, classifying ordinary and reduced supplies, and testing input support. Covers place of supply, tax points, taxable-base rounding, domestic invoices, imports, foreign services, buyer self-liquidation, mixed-activity deduction, monthly preparation and credit/refund conditions. Use for Chad TVA, hotel VAT, import VAT, electronic normalised invoices, VAT credit or non-established supplier intake. Two cases recompute output principal and centimes without assuming input-credit mechanics. Lower-regime contradictions, commodity overlaps, cement rates and current platform and filing screens remain explicit gaps, so the VAT domain remains partial."
 jurisdiction: TD
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: international
-version: 1.1
+version: 1.2
 tier: 2
 domain: vat-gst
+type: situation-rules
 ---
 
-# Chad value added tax v1.1
+# Chad value added tax v1.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 

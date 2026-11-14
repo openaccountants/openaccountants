@@ -3,15 +3,16 @@ name: gn-corporate-income-tax
 description: "Guinea corporate income-tax and minimum-tax working method for an ordinary company in the declarative regime for 2026. Use it to test IS versus TPU scope, bridge accounting profit to taxable profit, apply ordinary loss limits, select the statutory corporate rate, compute the prior-year-turnover IMF with the correct floor and ceiling, and reconcile instalments, annual settlement and distinct credit balances. It also distinguishes payer withholding from the company's own profit tax. The method uses enacted CGI provisions and finance-law amendments corroborated by the April 2026 DGI précis. Establish their applicability to the actual period, including any October rectification, before live use. Sector regimes, specialised deductions, group relief, treaty relief and complete transfer-pricing documentation remain separate gaps."
 jurisdiction: GN
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: international
-version: 1.1
+version: 1.2
 tier: 2
 domain: income-tax
+type: computation
 ---
 
-# Guinea corporate income tax and IMF v1.1
+# Guinea corporate income tax and IMF v1.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
