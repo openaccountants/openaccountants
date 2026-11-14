@@ -43,13 +43,13 @@ The law is the Law on State Social Insurance No. I-1336 ("VSDĮ", consolidated v
 | Employee: sickness insurance (VSD) | 1.99% | 2026 | same |
 | Employee: maternity insurance (VSD) | 1.81% | 2026 | same |
 | Employee: compulsory health insurance (PSD) | 6.98% | 2026 | same; [SDĮ art. 17(2)](https://www.e-tar.lt/portal/lt/legalAct/TAR.94F6B680E8B8/asr) |
-| Employee total without second pillar | 19.5% (12.52% VSD + 6.98% PSD) | 2026 | sum of the four rates above |
+| Employee total without second pillar | 19.5% (12.52% VSD + 6.98% PSD) | 2026 | sum of the four rates above; https://sodra.lt/imoku-tarifai/imoku-tarifai-taikomi-uz-samdomus-darbuotojus |
 | Employee: extra pension accumulation (second pillar), if enrolled | 3% more, so 22.5% in total | 2026 | [Sodra, employee rates](https://sodra.lt/imoku-tarifai/imoku-tarifai-taikomi-uz-samdomus-darbuotojus) |
 | Employer: unemployment insurance | 1.31% (open-ended contract); 2.03% (fixed-term contract) | 2026 | same |
 | Employer: accidents at work and occupational diseases | 0.14% (group I, the usual group); 0.49% (II); 0.7% (III); 1.4% (IV) | 2026 | same |
 | Employer: Guarantee Fund | 0.16% | 2026 | same |
 | Employer: Long-term Employment Benefit Fund | 0.16%, on pay of at least the MMA | 2026 | same |
-| Employer total, group I | 1.77% open-ended (1.31 + 0.14 + 0.16 + 0.16); 2.49% fixed-term | 2026 | sum of the rates above |
+| Employer total, group I | 1.77% open-ended (1.31 + 0.14 + 0.16 + 0.16); 2.49% fixed-term | 2026 | sum of the rates above; https://sodra.lt/imoku-tarifai/imoku-tarifai-taikomi-uz-samdomus-darbuotojus |
 | Minimum monthly wage (MMA) | EUR 1,153 | 2026 | [Sodra, self-employed rates](https://sodra.lt/imoku-tarifai/imoku-tarifai-taikomi-savarankiskai-dirbantiems-asmenims) |
 | Ceiling on employee VSD and, from 2026, employer VSD | 60 VDU a year: EUR 138,729 | 2026 | [Sodra, employers](https://sodra.lt/imokos/idarbinimas-pranesimai-imokos-ir-tarifai?kam=draudejams); [VSDĮ art. 10(9)](https://www.e-tar.lt/portal/lt/legalAct/TAR.0F9036415DBD/asr); [Law XV-633 art. 5(3)](https://www.e-tar.lt/portal/lt/legalAct/2cf13750d9b111f08918e1adc7c5b1ec) |
 | Minimum base for employees | Contributions on at least the MMA (pro rata to time worked); the employer pays the shortfall from its own funds | 2026 | [VSDĮ art. 10(1), 10(7)](https://www.e-tar.lt/portal/lt/legalAct/TAR.0F9036415DBD/asr) |
