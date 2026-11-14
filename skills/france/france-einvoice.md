@@ -402,6 +402,7 @@ A file that shows a single VAT line of EUR 222 without the two rate lines is rej
 
 | Source and what was read | Official URL | Read on |
 |---|---|---|
+| RECUEIL DES NORMES COMPTABLES FRANÇAISES: read for Current PPF formats versus older vendor references | https://www.anc.gouv.fr/files/anc/files/1_Normes_fran%C3%A7aises/recueil/2026/Recueil-PCG-Janvier-2026.pdf | 2026-11-14 |
 | Hub: la facturation électronique: read for the procedure and conditions this skill cites from it | https://www.impots.gouv.fr/professionnel/je-passe-la-facturation-electronique | 2026-11-14 |
 | Je découvre: read for the procedure and conditions this skill cites from it | https://www.impots.gouv.fr/professionnel/je-decouvre-la-facturation-electronique | 2026-11-14 |
 | J'approfondis: read for EUR 261 and the conditions next to them | https://www.impots.gouv.fr/japprofondis-mes-connaissances-sur-la-reforme | 2026-11-14 |

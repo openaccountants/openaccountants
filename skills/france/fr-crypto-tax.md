@@ -329,6 +329,8 @@ expected:
 
 | Source and what was read | Official URL | Read on |
 |---|---|---|
+| PRINCIPALES NOUVEAUTÉS: read for 12.8%, EUR 2,000, EUR 1,000, EUR 100 and the conditions next to them | https://www.impots.gouv.fr/www2/fichiers/documentation/brochure/ir_2026/pdf_som/nouveautes.pdf | 2026-11-14 |
+| Régime fiscal de la micro-entreprise: read for Receipts ceiling for the micro-BNC regime, income received in 2026, tested on 20 | https://entreprendre.service-public.fr/vosdroits/F23267 | 2026-11-14 |
 | Comment déclarer les plus ou moins values sur cessions d’actifs numériques : read for Total flat rate on an occasional disposal; Social levies part; Income tax part | https://www.impots.gouv.fr/particulier/questions/comment-declarer-les-plus-ou-moins-values-sur-cessions-dactifs-numeriques | 2026-11-14 |
 | RPPM - Plus-values sur biens meubles et taxe forfaitaire sur les objets précieux - Cession: read for Those three added up, under the limit, so exempt; Four disposals of the same size, added up, over the limit; Their gain, taxed in full; Three disposals, each of; Their gain, not taxed | https://bofip.impots.gouv.fr/bofip/11967-PGP.html | 2026-11-14 |
 | RPPM - Plus-values sur biens meubles et taxe forfaitaire sur les objets précieux - Cession: read for January: acquisition price, the client held nothing before; March: portfolio value before the disposal; March: disposal price; March: fraction of the acquisition price used against this disposal; March: the gain | https://bofip.impots.gouv.fr/bofip/11968-PGP.html | 2026-11-14 |

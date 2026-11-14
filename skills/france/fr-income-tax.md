@@ -699,6 +699,9 @@ expected:
 
 | Source and what was read | Official URL | Read on |
 |---|---|---|
+| Comment déclarer les revenus provenant de mon activité de micro-entrepreneur ?: read for Household RFR2024 for the2026 flat-payment option,1part; Household RFR2024 for the2026 option, jointly taxed couple2parts; Household RFR2024 for the2026 option,2.5parts; Household RFR2024 for the2026 option,3parts | https://www.impots.gouv.fr/particulier/questions/comment-declarer-les-revenus-provenant-de-mon-activite-dauto-entrepreneur | 2026-11-14 |
+| Comment puis-je bénéficier de la déduction forfaitaire de 10% ?: read for 10%, 50%, EUR 14,555, EUR 509 and the conditions next to them | https://www.impots.gouv.fr/particulier/questions/comment-puis-je-beneficier-de-la-deduction-forfaitaire-de-10 | 2026-11-14 |
+| IR - Prélèvement à la source de l’impôt sur le revenu - Calcul du prélèvement - Taux du pr: read for 10%, 40%, EUR 2,042, EUR 1,000, EUR 200 and the conditions next to them | https://bofip.impots.gouv.fr/bofip/11247-PGP.html/identifiant=BOI-IR-PAS-20-20-10-20260407 | 2026-11-14 |
 | Quel est le barème de l'impôt sur le revenu ?: read for Up to EUR 11,600; EUR 11,601 to EUR 29,579; EUR 29,580 to EUR 84,577; EUR 84,578 to EUR 181,917; Above EUR 181,917 | https://www.service-public.fr/particuliers/vosdroits/F1419 | 2026-11-14 |
 | Impôt sur le revenu - Quotient familial d'un couple marié ou pacsé: read for 11%, 30%, 40%, EUR 29,580, EUR 11,600 and the conditions next to them | https://www.service-public.fr/particuliers/vosdroits/F2705 | 2026-11-14 |
 | Impôt sur le revenu - Prélèvement à la source: read for 10%, 43%, 0%, EUR 1,000, EUR 150 and the conditions next to them | https://www.service-public.fr/particuliers/vosdroits/F34009 | 2026-11-14 |
