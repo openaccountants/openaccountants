@@ -2,18 +2,19 @@
 name: ug-payroll-social
 description: >
   Uganda payroll and social contributions, tax year 2026-27: NSSF at 5% employee and 10% employer, the PAYE bands in force from 1 July 2026, the amendment of July and August returns, remittance by the 15th and Local Service Tax. Use for Uganda questions from URA taxpayers, employers, advisers and foreign investors, including rates, thresholds, filing dates, the URA portal and worked computations. Figures for tax year 2026-27 come from Uganda Revenue Authority pages and the law, and items that could not be opened are named as unverified in the Sources section. Not reviewed by a licensed accountant.
-version: 0.2
+version: 0.3
 jurisdiction: UG
 category: payroll
 tax_year: 2026
 tax_year_notes: "2026-27 (1 July 2026 to 30 June 2027)"
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
+type: computation
 ---
 
-# Uganda Payroll and Social Contributions v0.2
+# Uganda Payroll and Social Contributions v0.3
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 

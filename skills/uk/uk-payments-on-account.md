@@ -1,16 +1,17 @@
 ---
 name: uk-payments-on-account
 description: "UK Self Assessment payments on account for tax year 2026-27 (6 April 2026 to 5 April 2027), set from the 2025-26 return. Covers who must pay them (the GBP 1,000 threshold and the test that more than 80% was collected at source), the 31 January and 31 July due dates, the balancing payment on 31 January after the year, what is in the base (income tax and Class 4 NIC) and what is not (capital gains tax, student loans, voluntary Class 2), reducing payments with SA303 and the interest when the reduction was too big, coding out, Making Tax Digital for Income Tax, late payment interest at Bank Rate plus 4% and late payment penalties. Trigger: 'payments on account', 'POA', 'SA303', 'reduce payments on account', 'July payment', 'balancing payment', '80% rule'. Out of scope: computing the tax itself (uk-income-tax-sa100, uk-self-employment-sa103, uk-scottish-income-tax), NIC rates (uk-national-insurance), capital gains (uk-capital-gains-sa108), non-residents (uk-non-resident-sa109)."
-version: 3.4
+version: 3.5
 jurisdiction: GB
 tax_year: 2026
-last_updated: 2026-10-27
+last_updated: 2026-11-14
 depends_on:
   - income-tax-workflow-base
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
+type: situation-rules
 ---
 
 # UK payments on account (2026-27)

@@ -2,17 +2,18 @@
 name: gh-cross-border
 description: >
   Use this skill for Ghana cross-border tax in tax year 2026: residence of individuals, companies, partnerships and trusts, the withholding rates on payments to residents and non-residents, final withholding, notice of non-resident contracts, foreign tax credit, the double taxation agreements Ghana lists, repatriated branch profits, 3% and 10% withholding on realisation of assets, and the monthly DT 110 return. VAT on imports of services sits in ghana-vat. Trigger on "Ghana withholding tax", "WHT Ghana", "non-resident Ghana", "double tax treaty Ghana", "dividend withholding Ghana", "service fees to foreign company Ghana". Use it for any payment crossing the Ghana border.
-version: 0.1
+version: 0.2
 jurisdiction: GH
 category: cross-border
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: cross-border
+type: situation-rules
 ---
 
-# Ghana Cross-Border Tax v0.1
+# Ghana Cross-Border Tax v0.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
