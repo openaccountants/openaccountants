@@ -1,10 +1,10 @@
 ---
 name: pa-payroll
 description: Use this skill for Pennsylvania employer payroll in 2026, covering state personal income tax withholding at 3.07% (residents, nonresidents, the six reciprocal states and Form REV-419), deposit frequencies and the quarterly return, W-2s with REV-1667, local earned income tax withholding under Act 32 (PSD codes and the higher-of rule), the Local Services Tax (at most $52 a year), unemployment compensation (UC) with the $10,000 employer wage base, new-employer rates of 3.822% and 10.5924%, the 1.419% to 10.3734% experience range and the 0.07% employee contribution, new hire reporting and the $7.25 minimum wage. Trigger on "Pennsylvania payroll", "PA withholding", "REV-419", "PA UC rate", "PA SUTA", "UC-2", "Act 32 withholding", "Local Services Tax". Philadelphia wage tax rates are in pa-local-eit.
-version: "1.0"
+version: "1.1"
 jurisdiction: US-PA
 tax_year: 2026
-last_updated: 2026-11-13
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
@@ -78,11 +78,11 @@ Figures are for tax year 2026 unless a line says 2025. Pennsylvania's withholdin
 | --- | --- | --- |
 | PA income tax withholding | 3.07% flat of PA compensation | [DOR Employer Withholding](https://www.pa.gov/agencies/revenue/resources/tax-types-and-information/employer-withholding) |
 | UC employer taxable wage base | $10,000 per employee per calendar year | [UC yearly tax highlights](https://www.pa.gov/agencies/dli/resources/for-employers-and-educators/how-to-file/uc-tax/yearly-tax-highlights) |
-| UC new employer rate | 3.822% (not construction); 10.5924% (construction) | same |
-| UC experience range | 1.419% to 10.3734% | same |
+| UC new employer rate | 3.822% (not construction); 10.5924% (construction); the page writes them as decimals, .038220 and .105924 | same |
+| UC experience range | 1.419% to 10.3734%; the page writes the 2026 range as decimals, .014190 to .103734 | same |
 | UC employee contribution | 0.07% of all gross wages, no cap | same |
 | Local Services Tax | at most $52 a person a year; low-income exemption under $12,000 | [DCED LST](https://dced.pa.gov/local-government/local-income-tax-information/local-services-tax/) |
-| Minimum wage | $7.25 an hour; tipped cash wage $2.83 | [DLI Wage FAQs](https://www.pa.gov/agencies/dli/resources/compliance-laws-and-regulations/labor-management-relations/pennsylvania-s-minimum-wage-act/wage-faqs) |
+| Minimum wage | $7.25 an hour; tipped cash wage $2.83 | [DLI Minimum Wage Act](https://www.pa.gov/agencies/dli/resources/compliance-laws-and-regulations/labor-management-relations/pennsylvania-s-minimum-wage-act); [DLI Wage FAQs](https://www.pa.gov/agencies/dli/resources/compliance-laws-and-regulations/labor-management-relations/pennsylvania-s-minimum-wage-act/wage-faqs) |
 
 Figures for 2026, and 2025 where they differ. The 2025 figures were the same.
 
