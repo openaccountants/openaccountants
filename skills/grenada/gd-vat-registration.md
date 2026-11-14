@@ -41,9 +41,9 @@ Registration for and returns under the Value Added Tax Act, Chapter 333A, in Gre
 
 | Item | 2026 figure and conditions | Official source |
 |---|---|---|
-| Standard rate | 15% (s.8(3)(e)) | [VAT Act Cap. 333A](https://grenadaparliament.gd/wp-content/uploads/2021/08/Cap333A-VALUE-ADDED-TAX-ACT.pdf) |
-| Hotel or holiday accommodation | 10% (s.8(3)(b)) | same |
-| Dive activity portion of a dive package | 10%, to the extent the Regulations provide (s.8(3)(c)) | same |
+| Standard rate | fifteen per cent, in any case not otherwise provided (s.8(3)(e)) | [VAT Act Cap. 333A](https://grenadaparliament.gd/wp-content/uploads/2021/08/Cap333A-VALUE-ADDED-TAX-ACT.pdf) |
+| Hotel or holiday accommodation | ten per cent (s.8(3)(b)) | same |
+| Dive activity portion of a dive package | ten per cent, to the extent provided in the Regulations (s.8(3)(c)) | same |
 | Registration threshold | Annual taxable supplies in excess of EC$300,000 | [IRD VAT page, archived 6 June 2026](https://web.archive.org/web/20260606100448/https://www.ird.gd/taxes/value-added-tax) |
 | Four-month test | Over one third of the threshold in four months, unless the four months and next eight will not exceed it (s.9(1)(b)) | [VAT Act Cap. 333A](https://grenadaparliament.gd/wp-content/uploads/2021/08/Cap333A-VALUE-ADDED-TAX-ACT.pdf) |
 | Application deadline | No later than 14 days after the day the person became required to register (s.9(4)) | same |
@@ -66,10 +66,10 @@ Registration for and returns under the Value Added Tax Act, Chapter 333A, in Gre
 
 | Situation | Treatment | Source |
 |---|---|---|
-| Consolidated Act text gives a threshold of EC$120,000 "equal to, or greater than" | The IRD's 2026 page states EC$300,000 "in excess of"; the amending instrument was not found; at exactly 300,000 register until confirmed | [VAT Act s.9(2)](https://grenadaparliament.gd/wp-content/uploads/2021/08/Cap333A-VALUE-ADDED-TAX-ACT.pdf); [IRD VAT page, archived](https://web.archive.org/web/20260606100448/https://www.ird.gd/taxes/value-added-tax) |
-| Two activities of 180,000 and 140,000 | One person: 320,000 counts together, registration required | [IRD VAT page, archived](https://web.archive.org/web/20260606100448/https://www.ird.gd/taxes/value-added-tax) |
+| Consolidated Act text gives a threshold of "one hundred and twenty thousand dollars", "equal to, or greater than" | The IRD's 2026 page states the higher threshold in the table above, "in excess of"; the amending instrument was not found; at exactly the threshold register until confirmed | [VAT Act s.9(2)](https://grenadaparliament.gd/wp-content/uploads/2021/08/Cap333A-VALUE-ADDED-TAX-ACT.pdf); [IRD VAT page, archived](https://web.archive.org/web/20260606100448/https://www.ird.gd/taxes/value-added-tax) |
+| Several activities, branches or divisions | Registered in the name of the person: count all their supplies together | [IRD VAT page, archived](https://web.archive.org/web/20260606100448/https://www.ird.gd/taxes/value-added-tax) |
 | Zero-rated supplies | Count toward the threshold even though output tax is 0% | [VAT Act s.9(2)](https://grenadaparliament.gd/wp-content/uploads/2021/08/Cap333A-VALUE-ADDED-TAX-ACT.pdf) |
-| IRD page calls the standard rate "a 10% rate on tourism and accommodation" | Read the Act: 15% standard, 10% accommodation and dive activity | [VAT Act s.8(3)](https://grenadaparliament.gd/wp-content/uploads/2021/08/Cap333A-VALUE-ADDED-TAX-ACT.pdf) |
+| IRD page words the standard rate answer ambiguously | Read the Act: s.8(3) sets the standard, accommodation and dive rates | [VAT Act s.8(3)](https://grenadaparliament.gd/wp-content/uploads/2021/08/Cap333A-VALUE-ADDED-TAX-ACT.pdf) |
 | Objection or appeal | Does not suspend payment of tax, penalty or interest | [IRD VAT page, archived](https://web.archive.org/web/20260606100448/https://www.ird.gd/taxes/value-added-tax) |
 
 ## Worked cases

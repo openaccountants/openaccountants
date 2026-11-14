@@ -50,7 +50,7 @@ Annual stamp tax (AST) under the Annual Stamp Tax Act, Chapter 16A (Act 36 of 19
 | Late filing penalty | Greater of: 5% of tax owing plus 1% a month; or EC$500 plus EC$100 a month; limited to EC$10,000 | [IRD annual stamp tax page, archived 6 June 2026](https://web.archive.org/web/20260606105014/https://www.ird.gd/taxes/annual-stamp-tax) |
 | Late payment fee | 20% of the tax due but not paid | same |
 | Interest | 1.5% a month or part month, compounded | same |
-| Failure to pay (offence) | Fine up to EC$10,000 on summary conviction (s.16) | [Annual Stamp Tax Act Cap. 16A](https://grenadaparliament.gd/wp-content/uploads/2021/08/Cap16A-ANNUAL-STAMP-TAX-ACT.pdf) |
+| Failure to pay (offence) | Fine not exceeding the sum of ten thousand dollars on summary conviction (s.16) | [Annual Stamp Tax Act Cap. 16A](https://grenadaparliament.gd/wp-content/uploads/2021/08/Cap16A-ANNUAL-STAMP-TAX-ACT.pdf) |
 
 ### Steps
 
@@ -64,8 +64,8 @@ Annual stamp tax (AST) under the Annual Stamp Tax Act, Chapter 16A (Act 36 of 19
 
 | Situation | Treatment | Source |
 |---|---|---|
-| Consolidated Act text shows 0.25% and 0.5% bands | Superseded: IRD shows those rates only for periods before 2016; 0.75% applied for 2016; 0.7% from 2018 | [IRD page, archived](https://web.archive.org/web/20260606105014/https://www.ird.gd/taxes/annual-stamp-tax); [Act Cap. 16A](https://grenadaparliament.gd/wp-content/uploads/2021/08/Cap16A-ANNUAL-STAMP-TAX-ACT.pdf) |
-| Act s.13(2) says interest at 2% a month | The IRD page shows 1.5% a month compounded; confirm the operative rule with the IRD before computing interest | same |
+| Consolidated Act text shows 0.25% and 0.5% bands | Superseded: the IRD page lists them only for periods before 2016, then a 2016 rate, then the current rates in the table above (effective 2018) | [IRD page, archived](https://web.archive.org/web/20260606105014/https://www.ird.gd/taxes/annual-stamp-tax); [Act Cap. 16A](https://grenadaparliament.gd/wp-content/uploads/2021/08/Cap16A-ANNUAL-STAMP-TAX-ACT.pdf) |
+| Act s.13(2) says interest at 2% a month | The IRD page shows the lower compounded monthly rate in the table above; confirm the operative rule with the IRD before computing interest | same |
 | 2026 extension | Applies to 2026 only; do not roll it into 2027 | [IRD press release](https://www.finance.gd/docs/2026/PRESS_RELEASE-IRD_Extension.pdf) |
 | Revised instalment schedule after the extension | The release does not set one; reconcile with the IRD | same |
 | Receipts below EC$36,000 | Interaction of the exemption and the EC$100 minimum not resolved; ask the IRD | [IRD page, archived](https://web.archive.org/web/20260606105014/https://www.ird.gd/taxes/annual-stamp-tax) |

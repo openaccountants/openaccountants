@@ -44,7 +44,6 @@ National Insurance Scheme (NIS) contributions in Grenada for 2026, as published 
 | Combined rate, 2026 | 13.5% (13% in 2025; 14% scheduled for 2027) | [NIS 2023 adjustments](https://nisgrenada.org/2023-adjustments/) |
 | Yearly increase | 0.25% employer and 0.25% employee each year from 2024 to 2031 (16% in 2031) | same |
 | 2024 split (12.5%) | Employer 6.75%, employee 5.75% | [NIS contributors page, archived 23 January 2025](https://web.archive.org/web/20250123161437/https://www.nisgrenada.org/contributors/) |
-| 2026 split | Employer 7.25%, employee 6.25% (the 2024 split plus two yearly 0.25% steps a side) | same |
 | Ceiling, monthly | EC$5,200 | [NIS home page](https://nisgrenada.org/) |
 | Ceiling, weekly | EC$1,200 | [NIS contributors page, archived 23 January 2025](https://web.archive.org/web/20250123161437/https://www.nisgrenada.org/contributors/) |
 | Payment | Due at the end of each month; grace of up to 14 days with penalty and interest | same |
@@ -59,7 +58,7 @@ National Insurance Scheme (NIS) contributions in Grenada for 2026, as published 
 1. **Register** each employee (birth certificate, picture ID, supporting documents).
 2. **Insurable earnings:** all earnings including overtime, cost of living bonus, dependant payments, long service supplements, commission, employer-paid gratuities, night or shift pay, service charges, liabilities paid by the employer, holiday pay and danger money.
 3. **Cap** at EC$5,200 a month or EC$1,200 a week; use the weekly rule for weekly pay, not four weeks a month.
-4. **Contributions:** employee 6.25% and employer 7.25% of capped earnings.
+4. **Contributions:** employee 6.25% and employer 7.25% of capped earnings. This 2026 split is derived: the archived 2024 split (employer 6.75%, employee 5.75%) plus the two yearly steps of 0.25% a side for 2025 and 2026 in the [NIS 2023 adjustments](https://nisgrenada.org/2023-adjustments/) table, which gives the 13.5% total.
 5. **Remit** through the NIS web portal (my.nisgrenada.org) by month end, listing each employee's earnings (weekly amounts for weekly workers) and contributions.
 
 ## Boundary and exception table
