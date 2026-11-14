@@ -102,7 +102,7 @@ The indexed figures are in `ca-income-tax`. The rules below are the California d
 | Taxable income exactly $1,000,000 | No Behavioral Health Services Tax: it applies only in excess of $1,000,000 | [R&TC 17043](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=17043) |
 | Joint return, taxable income $1,050,000 | Behavioral Health Services Tax $500 on $50,000; the threshold is not doubled | same |
 | Business gross receipts $999,999 against $1,000,000 (derived: $999,999 is an example input one dollar below the booklet's $1,000,000 test) | Below $1,000,000 business items are excluded from AMTI; at $1,000,000 they are included | [2025 Form 540 booklet](https://www.ftb.ca.gov/forms/2025/2025-540-booklet.pdf) |
-| Section 179 property placed in service costs $225,000 or more | California section 179 limit is nil | [2025 FTB 3885A instructions](https://www.ftb.ca.gov/forms/2025/2025-3885a-instructions.html) |
+| Section 179 property placed in service costs $225,000 or more (derived: the $200,000 threshold plus the $25,000 limit) | California section 179 limit is nil | [2025 FTB 3885A instructions](https://www.ftb.ca.gov/forms/2025/2025-3885a-instructions.html) |
 | Spouse itemizes on a separate return | This spouse must itemize too | [2025 Form 540 booklet, line 18](https://www.ftb.ca.gov/forms/2025/2025-540-booklet.pdf) |
 | Someone else can claim the client as a dependent | Use the California standard deduction worksheet for dependents in the booklet | same |
 | Taxable income $100,000 or less | Tax table, not the schedules | [2026 California Tax Rate Schedules](https://www.ftb.ca.gov/forms/2026/2026-540-tax-rate-schedules.pdf) |
