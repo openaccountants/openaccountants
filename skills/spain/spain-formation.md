@@ -71,17 +71,17 @@ Every figure the method below uses, for formations and first periods in 2026. Ea
 | Item | Figure | Condition | Source |
 |---|---|---|---|
 | S.L. minimum capital | EUR 1 | LSC art 4.1, as amended by Ley 18/2022 | https://www.boe.es/buscar/act.php?id=BOE-A-2010-10544 |
-| S.L. reserve and liability threshold | EUR 3,000 | While capital is below it: 20% of profit to the legal reserve until reserve plus capital reach EUR 3,000; members jointly liable on a short liquidation for EUR 3,000 less capital (LSC art 4.1) | https://www.boe.es/buscar/act.php?id=BOE-A-2010-10544 |
+| S.L. reserve and liability threshold | EUR 3 thousand ("tres mil euros", LSC art. 4) | While capital is below it: 20% of profit to the legal reserve until reserve plus capital reach EUR 3 thousand; members jointly liable on a short liquidation for EUR 3 thousand less capital (LSC art 4.1) | https://www.boe.es/buscar/act.php?id=BOE-A-2010-10544 |
 | S.A. minimum capital | EUR 60,000 | LSC art 4.2 | https://www.boe.es/buscar/act.php?id=BOE-A-2010-10544 |
 | S.A. minimum paid up at the deed | 25% of the nominal value of each share | LSC art 79; S.L. shares fully paid (art 78) | https://www.boe.es/buscar/act.php?id=BOE-A-2010-10544 |
-| Audit exemption | Total assets up to EUR 2,850,000; net turnover up to EUR 5,700,000; average staff up to 50 | Two of three, on two consecutive year ends (LSC art 263) | https://www.boe.es/buscar/act.php?id=BOE-A-2010-10544 |
+| Audit exemption | Total assets up to EUR 2.85 million ("dos millones ochocientos cincuenta mil euros"); net turnover up to EUR 5.7 million ("cinco millones setecientos mil euros"); average staff up to 50 | Two of three, on two consecutive year ends (LSC art 263) | https://www.boe.es/buscar/act.php?id=BOE-A-2010-10544 |
 | Fine for not depositing accounts | EUR 1,200 to EUR 60,000; up to EUR 300,000 a year of delay if turnover is above EUR 6,000,000 | LSC art 283.1, imposed by the ICAC | https://www.boe.es/buscar/act.php?id=BOE-A-2010-10544 |
 | Corporate tax, general rate | 25% | LIS art 29.1 | https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328 |
 | Corporate tax, prior year turnover under EUR 1 million, periods starting in 2026 | 19% on the first EUR 50,000; 21% on the rest | LIS DT 44.2.a | https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328 |
 | Corporate tax, other small companies (art 101), periods starting in 2026 | 23% | LIS DT 44.2.b | https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328 |
 | Corporate tax, new company | 15% in the first period with positive base and the next | LIS art 29.1, economic activity, not a continuation | https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328 |
-| Autónomo societario minimum base, 2026 | EUR 1,424.40 a month | Group 7 minimum of the General regime, once 90 days registered in the year (LGSS art 308.1.a.4ª; Orden PJC/297/2026 art 3) | https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724 |
-| RETA rates, 2026 | 28.30% common, 1.30% professional, 0.90% intergenerational equity (MEI), 0.90% cessation, 0.10% training: 31.50% in all | Orden PJC/297/2026 arts 18.2 and 37 | https://www.boe.es/buscar/act.php?id=BOE-A-2026-7296 |
+| Autónomo societario minimum base, 2026 | EUR 1,424.40 a month | Group 7 minimum of the General regime, once 90 days registered in the year (LGSS art 308.1.a.4ª; Orden PJC/297/2026 art 3) | https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724 ; https://www.boe.es/buscar/act.php?id=BOE-A-2026-7296 |
+| RETA rates, 2026 | 28.30% common, 1.30% professional, 0.90% intergenerational equity (MEI), 0.90% cessation, 0.10% training: 31.50% in all (computed) | Orden PJC/297/2026 arts 18.2 and 37 | https://www.boe.es/buscar/act.php?id=BOE-A-2026-7296 |
 | IAE exemption | First two tax periods of a new activity; companies with net turnover under EUR 1,000,000 | TRLRHL art 82.1.b and c | https://www.boe.es/buscar/act.php?id=BOE-A-2004-4214 |
 | Name certificate | Up to 3 names; decided within 3 working days; reservation 6 months; certificate valid 3 months for the deed | RRM arts 410.1, 411.1, 412.1, 414.1 | https://www.boe.es/buscar/act.php?id=BOE-A-1996-17533 |
 | Fast track (estatutos tipo, CIRCE) | Up to 5 names, certificate within 6 working hours; notary within 12 working hours; registration within 6 working hours | Ley 14/2013 art 15.3 and 15.5 | https://www.boe.es/buscar/act.php?id=BOE-A-2013-10074 |
