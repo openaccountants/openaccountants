@@ -1,11 +1,11 @@
 ---
 name: vt-payroll
 description: "Compute and administer Vermont employer wage withholding and UI for 2026, with W-4VT, current percentage tables, USD 15,400 UI wage base, new-employer rates, registrations and returns. Includes mandatory Child Care Contribution and distinguishes its employee deduction. Trigger on Vermont payroll, withholding, e-Services, unemployment and WHT-436."
-version: "0.1"
+version: "0.2"
 jurisdiction: US-VT
 category: state-tax
 tax_year: 2026
-last_updated: 2026-11-13
+last_updated: 2026-11-14
 tier: 2
 domain: payroll
 type: computation
@@ -43,7 +43,7 @@ Vermont employer withholding and unemployment insurance, plus the linked CCC req
 | UI taxable wage base, calendar 2026 | USD 15,400 per employee, up from 14,800 in 2025 | [UI reporting](https://labor.vermont.gov/unemployment-insurance/ui-employers/quarterly-reporting-taxable-wage-information) |
 | General new employer, effective July 1,2026 | 1%; use earlier-period notice for Jan-June | [UI rate page](https://labor.vermont.gov/unemployment-insurance/ui-employers/unemployment-tax-rates) |
 | Foreign construction new employers, effective July 1,2026 | NAICS 236:1.9%;237:4.0%;238:2.7%; other classification uses notice | [UI rate page](https://labor.vermont.gov/unemployment-insurance/ui-employers/unemployment-tax-rates) |
-| CCC on covered wages | 0.44%; employee deduction optional up to 0.11%, leaving employer at least 0.33% | [CCC rules](https://tax.vermont.gov/business/child-care-contribution) |
+| CCC on covered wages | 0.44%; employee deduction optional up to 0.11%, leaving employer at least 0.33% (derived: 0.44% less 0.11%) | [CCC rules](https://tax.vermont.gov/business/child-care-contribution) |
 | UI liability general screen | USD 1,500 wages in any quarter or one/more workers in 20 different weeks, current/prior year; special coverage/successor rules also apply | [UI coverage](https://labor.vermont.gov/employer-responsibility-unemployment-coverage) |
 
 1. Register a withholding account in myVTax or BR-400. Separately determine UI liability and register through Department of Labor employer e-Services. Covered employers electronically report quarterly wages/contributions; successor, nonprofit, domestic and agricultural coverage differs from the general screen.

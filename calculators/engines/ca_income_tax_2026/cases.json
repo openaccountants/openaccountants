@@ -1,0 +1,1096 @@
+{
+  "engine": "ca_income_tax_2026",
+  "source_commit": "c2e3c2b9",
+  "about": "Inputs from the platform's parity fixture (src/lib/engines/__tests__/fixtures/python-parity.json) plus one year-guard case; expected is the exact output of run(inputs). The platform's parity test checks these outputs against the Python reference engines of the 6 Nov 2026 A/B test (Malta: against an independent Python reference, mt-income-tax.test.ts).",
+  "cases": [
+    {
+      "id": "CMP-CA-IT-01",
+      "from": "python-parity",
+      "inputs": {
+        "province": "ON",
+        "employment_income": 90000,
+        "rrsp_deduction": 5000,
+        "tax_withheld": 18000,
+        "tax_year": "2026"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "ca_income_tax_2026",
+        "headline": {
+          "label": "Balance owing for 2026 (negative = refund), Ontario resident",
+          "value": -2448.94,
+          "currency": "CAD"
+        },
+        "lines": {
+          "total_income": 90000,
+          "cpp": {
+            "base": 3519.45,
+            "first_additional": 711,
+            "cpp2": 416
+          },
+          "ei_premium": 1123.07,
+          "cpp_deduction": 1127,
+          "rrsp_deduction": 5000,
+          "net_income": 83873,
+          "taxable_income": 83873,
+          "federal_tax_on_taxable_income": 13389.97,
+          "federal_basic_personal_amount": 16452,
+          "canada_employment_amount": 1501,
+          "federal_non_refundable_credits": 3163.37,
+          "basic_federal_tax": 10226.6,
+          "provincial": {
+            "tax_on_taxable_income": 5464.85,
+            "non_refundable_credits": 890.39,
+            "basic_tax": 4574.46,
+            "surtax": 0,
+            "tax_reduction": 0,
+            "lift_credit": 0,
+            "health_premium": 750,
+            "provincial_tax": 5324.46
+          },
+          "provincial_tax": 5324.46,
+          "total_income_tax": 15551.06,
+          "cpp_payable_with_return": 0,
+          "tax_withheld": 18000,
+          "balance_owing": -2448.94,
+          "rrsp_saving_next_1000": 296.5,
+          "federal_saving_per_extra_rrsp_dollar": 0.205
+        },
+        "steps": [
+          "Employee CPP: base 4.95% and first additional 1% of earnings between CAD 3,500.00 and YMPE CAD 74,600.00 = CAD 3,519.45 + CAD 711.00; CPP2 4% up to YAMPE CAD 85,000.00 = CAD 416.00; EI 1.63% up to CAD 68,900.00 = CAD 1,123.07 (deducted from pay)",
+          "Line 22215 deduction (first additional + CPP2) = CAD 1,127.00; credit amounts: base CPP CAD 3,519.45 (line 30800), EI CAD 1,123.07 (line 31200)",
+          "Total income CAD 90,000.00 less RRSP CAD 5,000.00 less CPP deduction CAD 1,127.00 = net income CAD 83,873.00 = taxable income (no other deductions)",
+          "Federal tax on CAD 83,873.00 at the 2026 brackets (top dollar at 20.5%) = CAD 13,389.97",
+          "Federal credits = (BPA CAD 16,452.00 + CPP/EI CAD 4,642.52 + Canada employment amount CAD 1,501.00) x 14% = CAD 3,163.37; basic federal tax CAD 10,226.60",
+          "Ontario tax on CAD 83,873.00 at the 2026 brackets = CAD 5,464.85; credits (BPA CAD 12,989.00 + CPP/EI CAD 4,642.52) x 5.05% = CAD 890.39; basic Ontario tax CAD 4,574.46",
+          "Ontario surtax CAD 0.00; tax reduction CAD 0.00; LIFT credit CAD 0.00; Health Premium on taxable income CAD 750.00",
+          "Ontario tax = CAD 5,324.46; total income tax = CAD 15,551.06",
+          "Less tax already paid CAD 18,000.00 = refund CAD 2,448.94",
+          "CAD 1,000.00 more RRSP deduction would save CAD 296.50 of income tax (federal alone: CAD 0.205 per dollar at this income)"
+        ],
+        "inputs_used": {
+          "province": "ON",
+          "employment_income": 90000,
+          "self_employment_net_income": 0,
+          "other_income": 0,
+          "eligible_dividends": 0,
+          "other_dividends": 0,
+          "rrsp_deduction": 5000,
+          "tax_withheld": 18000,
+          "has_spouse_or_partner": false,
+          "dependants": 0,
+          "age_65_or_over": false,
+          "tax_year": "2026"
+        },
+        "constants_used": [
+          {
+            "name": "FEDERAL_BRACKETS_2026",
+            "value": [
+              [
+                58523,
+                0.14
+              ],
+              [
+                117045,
+                0.205
+              ],
+              [
+                181440,
+                0.26
+              ],
+              [
+                258482,
+                0.29
+              ],
+              [
+                null,
+                0.33
+              ]
+            ],
+            "slug": "canada-payroll",
+            "section": "Section 2 -- Income Tax Withholding (Source Deductions) / Federal Tax Brackets (2026)",
+            "quote": "Federal Tax Brackets (2026)\nTaxable Income (CAD) | Rate\n0 -- 58,523 | 14%\n58,523 -- 117,045 | 20.5%\n117,045 -- 181,440 | 26%\n181,440 -- 258,482 | 29%\n258,482+ | 33%"
+          },
+          {
+            "name": "FEDERAL_BPA_2026",
+            "value": {
+              "max": 16452,
+              "min": 14829
+            },
+            "slug": "canada-payroll",
+            "section": "Federal Basic Personal Amount (BPA) -- 2026",
+            "quote": "Federal Basic Personal Amount (BPA) -- 2026\nIncome Level | BPA (CAD)\nUp to $181,440 | $16,452\n$181,440 -- $258,482 | Claws back to $14,829\nAbove $258,482 | $14,829"
+          },
+          {
+            "name": "FEDERAL_CREDIT_RATE_2026",
+            "value": 0.14,
+            "slug": "ca-fed-cpp-ei",
+            "section": "4.5 Tax treatment of self-employed CPP (Tier 1)",
+            "quote": "federal credit at the lowest federal rate: 14.5% for 2025, 14% for 2026"
+          },
+          {
+            "name": "FEDERAL_LOWEST_RATE_2026",
+            "value": 0.14,
+            "slug": "canada-payroll",
+            "section": "Federal Tax Brackets (2026)",
+            "quote": "The lowest bracket rate was reduced from 15% to 14% effective for the 2026 tax year"
+          },
+          {
+            "name": "YMPE_2026",
+            "value": 74600,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "YMPE (2026) — $74,600"
+          },
+          {
+            "name": "BASIC_EXEMPTION",
+            "value": 3500,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "Basic exemption — $3,500"
+          },
+          {
+            "name": "CPP_EMPLOYEE_RATE",
+            "value": 0.0595,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "CPP employee rate — 5.95%"
+          },
+          {
+            "name": "YAMPE_2026",
+            "value": 85000,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "YAMPE (2026) — $85,000"
+          },
+          {
+            "name": "CPP2_EMPLOYEE_RATE",
+            "value": 0.04,
+            "slug": "canada-payroll",
+            "section": "Section 3 -- Social Security: Employee Deductions / Canada Pension Plan (CPP) -- 2026",
+            "quote": "CPP2 (second additional) | 4.00% | Earnings between YMPE $74,600 and YAMPE $85,000 | $416.00"
+          },
+          {
+            "name": "EI_MAX_INSURABLE_EARNINGS",
+            "value": 68900,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "Max insurable earnings — $68,900"
+          },
+          {
+            "name": "EI_EMPLOYEE_RATE_NON_QC",
+            "value": 0.0163,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "EI employee rate (non-QC) — 1.63%"
+          },
+          {
+            "name": "CPP_BASE_RATE_EACH_SIDE",
+            "value": 0.0495,
+            "slug": "ca-fed-cpp-ei",
+            "section": "Rates and thresholds / CPP-CPP2-EI",
+            "quote": "line 22200 deduction = employer-equivalent half of the BASE contribution (4.95% of the 9.9%) plus ALL enhancement (first-additional and CPP2) contributions; only the employee-equivalent half of the base is the line 31000 credit"
+          },
+          {
+            "name": "CPP2_IS_A_DEDUCTION",
+            "value": true,
+            "slug": "ca-fed-cpp-ei",
+            "section": "4.5 Tax treatment of self-employed CPP (Tier 1)",
+            "quote": "CPP2 split -- CPP2 contributions (8% between YMPE and YAMPE) are DEDUCTIBLE, not creditable"
+          },
+          {
+            "name": "EI_PREMIUM_CREDIT",
+            "value": true,
+            "slug": "ca-fed-cpp-ei",
+            "section": "4.6 EI for self-employed (Tier 1)",
+            "quote": "(line 31200 is EI through employment)"
+          },
+          {
+            "name": "CANADA_EMPLOYMENT_AMOUNT",
+            "value": {
+              "2025": 1471,
+              "2026": 1501
+            },
+            "slug": "ca-fed-t1-return",
+            "section": "Rates and thresholds / T1 Return",
+            "quote": "Canada employment amount (line 31260) -- $1,471 (2025); $1,501 (2026). Employment income only; not for the self-employed"
+          },
+          {
+            "name": "ON_BRACKETS_2026",
+            "value": [
+              [
+                53891,
+                0.0505
+              ],
+              [
+                107785,
+                0.0915
+              ],
+              [
+                150000,
+                0.1116
+              ],
+              [
+                220000,
+                0.1216
+              ],
+              [
+                null,
+                0.1316
+              ]
+            ],
+            "slug": "on-individual-return",
+            "section": "Rates, bands and thresholds",
+            "quote": "Band 1: taxable income up to $53,891 | 5.05% | 2026\nBand 2: $53,891.01 to $107,785 | 9.15% | 2026\nBand 3: $107,785.01 to $150,000 | 11.16% | 2026\nBand 4: $150,000.01 to $220,000 | 12.16% | 2026\nBand 5: over $220,000 | 13.16% | 2026"
+          },
+          {
+            "name": "ON_CREDIT_RATE",
+            "value": 0.0505,
+            "slug": "on-individual-return",
+            "section": "Rates, bands and thresholds",
+            "quote": "Non-refundable credit rate (all Part B amounts, CPP and EI included) | 5.05% | 2026, 2025"
+          },
+          {
+            "name": "ON_BPA_2026",
+            "value": 12989,
+            "slug": "on-individual-return",
+            "section": "Rates, bands and thresholds",
+            "quote": "Basic personal amount | $12,989 | 2026"
+          },
+          {
+            "name": "ON_SURTAX_2026",
+            "value": [
+              5818,
+              7446
+            ],
+            "slug": "on-individual-return",
+            "section": "Rates, bands and thresholds",
+            "quote": "Ontario surtax | 20% of basic Ontario tax over $5,818, plus 36% of basic Ontario tax over $7,446 | 2026"
+          },
+          {
+            "name": "ON_TAX_REDUCTION_2026",
+            "value": 300,
+            "slug": "on-individual-return",
+            "section": "Rates, bands and thresholds",
+            "quote": "Ontario tax reduction | basic $300 ... reduction is twice that total minus Ontario tax | 2026"
+          },
+          {
+            "name": "ON_LIFT_CREDIT",
+            "value": {
+              "max": 875,
+              "rate": 0.0505,
+              "threshold": 32500,
+              "clawback": 0.05
+            },
+            "slug": "on-individual-return",
+            "section": "Rates, bands and thresholds",
+            "quote": "LIFT credit | lesser of $875 and 5.05% of employment income, less 5% of the greater of adjusted net income over $32,500 and adjusted family net income over $65,000 | 2026, 2025"
+          },
+          {
+            "name": "ON_HEALTH_PREMIUM",
+            "value": [
+              [
+                20000,
+                0,
+                0
+              ],
+              [
+                25000,
+                0,
+                0.06
+              ],
+              [
+                36000,
+                300,
+                0
+              ],
+              [
+                38500,
+                300,
+                0.06
+              ],
+              [
+                48000,
+                450,
+                0
+              ],
+              [
+                48600,
+                450,
+                0.25
+              ],
+              [
+                72000,
+                600,
+                0
+              ],
+              [
+                72600,
+                600,
+                0.25
+              ],
+              [
+                200000,
+                750,
+                0
+              ],
+              [
+                200600,
+                750,
+                0.25
+              ],
+              [
+                null,
+                900,
+                0
+              ]
+            ],
+            "slug": "on-individual-return",
+            "section": "Rates, bands and thresholds / Ontario Health Premium chart (ON428, line 89)",
+            "quote": "Ontario Health Premium | chart below; not indexed, same for 2025 and 2026 | 2026, 2025\n$20,000 or less | $0\nmore than $20,000, not more than $25,000 | 6% of the amount over $20,000\nmore than $25,000, not more than $36,000 | $300\nmore than $36,000, not more than $38,500 | $300 plus 6% of the amount over $36,000\nmore than $38,500, not more than $48,000 | $450\nmore than $48,000, not more than $48,600 | $450 plus 25% of the amount over $48,000\nmore than $48,600, not more than $72,000 | $600\nmore than $72,000, not more than $72,600 | $600 plus 25% of the amount over $72,000\nmore than $72,600, not more than $200,000 | $750\nmore than $200,000, not more than $200,600 | $750 plus 25% of the amount over $200,000\nmore than $200,600 | $900"
+          }
+        ],
+        "assumptions": [
+          "Resident in Ontario on 31 December 2026 and in Canada all year; single, under 65, no dependants; not bankrupt",
+          "Taxable income equals net income: no loss carryovers, capital gains or other deductions",
+          "Credits are the basic personal amount, CPP/EI and the Canada employment amount only (no medical, tuition, donation, disability or other credits)",
+          "One employer for the whole year; CPP and EI are the statutory annual amounts, assumed deducted from pay",
+          "Ontario LIFT uses net income as adjusted net income (no UCCB or RDSP amounts)"
+        ],
+        "skill_anchors_reproduced": [
+          "ca-fed-cpp-ei Tests 1 to 4 (2025): self-employed CPP, line 22200 deduction and line 31000 credit base",
+          "ca-fed-t1-return Examples 1 to 3 (2025): basic federal tax $7,978.82, $0 and $58,640.54",
+          "on-individual-return Example 1 (2026, employee $34,000): Ontario tax $426.18; Example 2 (2025, $180,000, spouse, donations): $19,722.34",
+          "bc-individual-return Example 1 (2026, $42,000): BC tax $1,506.81; Example 2 (2025, $120,000, spouse, donations): $7,275.24",
+          "ab-individual-return Example 1 (2026, $75,000): Alberta tax $4,102.48; Example 2 (2025, $120,000, supplemental credit $59.30): $5,703.50",
+          "canada-payroll (2026): employee maximums CPP $4,230.45, CPP2 $416.00, EI $1,123.07"
+        ],
+        "notes": [
+          "2026 return due 30 April 2027 (15 June if self-employed); any balance is payable by 30 April 2027",
+          "The 2026 provincial forms are not published yet: the tax on lower bands is worked out from the 2026 brackets the way the 2025 forms print it"
+        ],
+        "defaults_assumed": {
+          "self_employment_net_income": 0,
+          "other_income": 0,
+          "eligible_dividends": 0,
+          "other_dividends": 0,
+          "has_spouse_or_partner": false,
+          "dependants": 0,
+          "age_65_or_over": false
+        },
+        "tax_year": "2026"
+      },
+      "receipt_id": "ed47e3dad2b2a511423f8032c3307d079d4c6dc05e70ae3ba9834359d1860ea9"
+    },
+    {
+      "id": "CA-IT-02",
+      "from": "python-parity",
+      "inputs": {
+        "province": "BC",
+        "self_employment_net_income": 85000,
+        "rrsp_deduction": 10000,
+        "tax_year": "2026"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "ca_income_tax_2026",
+        "headline": {
+          "label": "Balance owing for 2026 (negative = refund), British Columbia resident",
+          "value": 20219.98,
+          "currency": "CAD"
+        },
+        "lines": {
+          "total_income": 85000,
+          "cpp": {
+            "base": 7038.9,
+            "first_additional": 1422,
+            "cpp2": 832
+          },
+          "cpp_deduction": 5773.45,
+          "rrsp_deduction": 10000,
+          "net_income": 69226.55,
+          "taxable_income": 69226.55,
+          "federal_tax_on_taxable_income": 10387.45,
+          "federal_basic_personal_amount": 16452,
+          "canada_employment_amount": 0,
+          "federal_non_refundable_credits": 2796,
+          "basic_federal_tax": 7591.45,
+          "provincial": {
+            "tax_on_taxable_income": 4272.82,
+            "non_refundable_credits": 937.19,
+            "basic_tax": 3335.63,
+            "tax_reduction": 0,
+            "provincial_tax": 3335.63
+          },
+          "provincial_tax": 3335.63,
+          "total_income_tax": 10927.08,
+          "cpp_payable_with_return": 9292.9,
+          "tax_withheld": 0,
+          "balance_owing": 20219.98,
+          "rrsp_saving_next_1000": 282,
+          "federal_saving_per_extra_rrsp_dollar": 0.205
+        },
+        "steps": [
+          "Self-employed CPP (both halves): base CAD 7,038.90 + first additional CAD 1,422.00 + CPP2 CAD 832.00 = CAD 9,292.90, payable with the return",
+          "Line 22200 deduction (half of base + first additional + CPP2) = CAD 5,773.45; line 31000 credit amount (other half of base) = CAD 3,519.45",
+          "Total income CAD 85,000.00 less RRSP CAD 10,000.00 less CPP deduction CAD 5,773.45 = net income CAD 69,226.55 = taxable income (no other deductions)",
+          "Federal tax on CAD 69,226.55 at the 2026 brackets (top dollar at 20.5%) = CAD 10,387.45",
+          "Federal credits = (BPA CAD 16,452.00 + CPP/EI CAD 3,519.45) x 14% = CAD 2,796.00; basic federal tax CAD 7,591.45",
+          "British Columbia tax on CAD 69,226.55 at the 2026 brackets = CAD 4,272.82; credits (BPA CAD 13,216.00 + CPP/EI CAD 3,519.45) x 5.6% = CAD 937.19; basic British Columbia tax CAD 3,335.63",
+          "BC tax reduction CAD 0.00",
+          "British Columbia tax = CAD 3,335.63; total income tax = CAD 10,927.08",
+          "Plus self-employed CPP payable with the return CAD 9,292.90",
+          "Less tax already paid CAD 0.00 = balance owing CAD 20,219.98",
+          "CAD 1,000.00 more RRSP deduction would save CAD 282.00 of income tax (federal alone: CAD 0.205 per dollar at this income)"
+        ],
+        "inputs_used": {
+          "province": "BC",
+          "employment_income": 0,
+          "self_employment_net_income": 85000,
+          "other_income": 0,
+          "eligible_dividends": 0,
+          "other_dividends": 0,
+          "rrsp_deduction": 10000,
+          "tax_withheld": 0,
+          "has_spouse_or_partner": false,
+          "dependants": 0,
+          "age_65_or_over": false,
+          "tax_year": "2026"
+        },
+        "constants_used": [
+          {
+            "name": "FEDERAL_BRACKETS_2026",
+            "value": [
+              [
+                58523,
+                0.14
+              ],
+              [
+                117045,
+                0.205
+              ],
+              [
+                181440,
+                0.26
+              ],
+              [
+                258482,
+                0.29
+              ],
+              [
+                null,
+                0.33
+              ]
+            ],
+            "slug": "canada-payroll",
+            "section": "Section 2 -- Income Tax Withholding (Source Deductions) / Federal Tax Brackets (2026)",
+            "quote": "Federal Tax Brackets (2026)\nTaxable Income (CAD) | Rate\n0 -- 58,523 | 14%\n58,523 -- 117,045 | 20.5%\n117,045 -- 181,440 | 26%\n181,440 -- 258,482 | 29%\n258,482+ | 33%"
+          },
+          {
+            "name": "FEDERAL_BPA_2026",
+            "value": {
+              "max": 16452,
+              "min": 14829
+            },
+            "slug": "canada-payroll",
+            "section": "Federal Basic Personal Amount (BPA) -- 2026",
+            "quote": "Federal Basic Personal Amount (BPA) -- 2026\nIncome Level | BPA (CAD)\nUp to $181,440 | $16,452\n$181,440 -- $258,482 | Claws back to $14,829\nAbove $258,482 | $14,829"
+          },
+          {
+            "name": "FEDERAL_CREDIT_RATE_2026",
+            "value": 0.14,
+            "slug": "ca-fed-cpp-ei",
+            "section": "4.5 Tax treatment of self-employed CPP (Tier 1)",
+            "quote": "federal credit at the lowest federal rate: 14.5% for 2025, 14% for 2026"
+          },
+          {
+            "name": "FEDERAL_LOWEST_RATE_2026",
+            "value": 0.14,
+            "slug": "canada-payroll",
+            "section": "Federal Tax Brackets (2026)",
+            "quote": "The lowest bracket rate was reduced from 15% to 14% effective for the 2026 tax year"
+          },
+          {
+            "name": "YMPE_2026",
+            "value": 74600,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "YMPE (2026) — $74,600"
+          },
+          {
+            "name": "BASIC_EXEMPTION",
+            "value": 3500,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "Basic exemption — $3,500"
+          },
+          {
+            "name": "CPP_EMPLOYEE_RATE",
+            "value": 0.0595,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "CPP employee rate — 5.95%"
+          },
+          {
+            "name": "YAMPE_2026",
+            "value": 85000,
+            "slug": "canada-payroll",
+            "section": "Rates and thresholds / Payroll",
+            "quote": "YAMPE (2026) — $85,000"
+          },
+          {
+            "name": "CPP2_EMPLOYEE_RATE",
+            "value": 0.04,
+            "slug": "canada-payroll",
+            "section": "Section 3 -- Social Security: Employee Deductions / Canada Pension Plan (CPP) -- 2026",
+            "quote": "CPP2 (second additional) | 4.00% | Earnings between YMPE $74,600 and YAMPE $85,000 | $416.00"
+          },
+          {
+            "name": "SELF_EMPLOYED_CPP_BOTH_HALVES_2026",
+            "value": 2,
+            "slug": "canada-tax-optimization",
+            "section": "Section 8 -- CPP/EI & Social Security Optimization / CPP Contributions (2026)",
+            "quote": "Self-employed CPP -- Self-employed pay both halves (11.9% CPP1 + 8% CPP2)"
+          },
+          {
+            "name": "CPP_BASE_RATE_EACH_SIDE",
+            "value": 0.0495,
+            "slug": "ca-fed-cpp-ei",
+            "section": "Rates and thresholds / CPP-CPP2-EI",
+            "quote": "line 22200 deduction = employer-equivalent half of the BASE contribution (4.95% of the 9.9%) plus ALL enhancement (first-additional and CPP2) contributions; only the employee-equivalent half of the base is the line 31000 credit"
+          },
+          {
+            "name": "CPP2_IS_A_DEDUCTION",
+            "value": true,
+            "slug": "ca-fed-cpp-ei",
+            "section": "4.5 Tax treatment of self-employed CPP (Tier 1)",
+            "quote": "CPP2 split -- CPP2 contributions (8% between YMPE and YAMPE) are DEDUCTIBLE, not creditable"
+          },
+          {
+            "name": "SELF_EMPLOYED_CPP_SPLIT",
+            "value": true,
+            "slug": "ca-fed-t1-return",
+            "section": "CPP Self-Employed (2025)",
+            "quote": "Half of base CPP plus all first and second additional (CPP2) contributions are deductible (line 22200); the other half of base CPP is a non-refundable credit (line 31000)."
+          },
+          {
+            "name": "BC_BRACKETS_2026",
+            "value": [
+              [
+                50363,
+                0.056
+              ],
+              [
+                100728,
+                0.077
+              ],
+              [
+                115648,
+                0.105
+              ],
+              [
+                140430,
+                0.1229
+              ],
+              [
+                190405,
+                0.147
+              ],
+              [
+                265545,
+                0.168
+              ],
+              [
+                null,
+                0.205
+              ]
+            ],
+            "slug": "bc-individual-return",
+            "section": "Rates, bands and thresholds / 2026 brackets and rates",
+            "quote": "Taxable income $0 to $50,363 | 5.6% | 2026\n$50,363.01 to $100,728 ... | 7.7% | 2026\n$100,728.01 to $115,648 ... | 10.5% | 2026\n$115,648.01 to $140,430 ... | 12.29% | 2026\n$140,430.01 to $190,405 ... | 14.7% | 2026\n$190,405.01 to $265,545 ... | 16.8% | 2026\nOver $265,545 ... | 20.5% | 2026"
+          },
+          {
+            "name": "BC_CREDIT_RATE_2026",
+            "value": 0.056,
+            "slug": "bc-individual-return",
+            "section": "Rates, bands and thresholds / 2026 brackets and rates",
+            "quote": "Credit rate for non-refundable credits (lowest rate) | 5.6% | 2026"
+          },
+          {
+            "name": "BC_BPA_2026",
+            "value": 13216,
+            "slug": "bc-individual-return",
+            "section": "2026 basic non-refundable credits",
+            "quote": "Basic personal amount (BC428 line 16) | $13,216 | 2026"
+          },
+          {
+            "name": "BC_CPP_EI_CREDITS",
+            "value": true,
+            "slug": "bc-individual-return",
+            "section": "2026 basic non-refundable credits",
+            "quote": "CPP base contributions | up to $3,519.45 | 2026\nEI premiums | up to $1,123.07 | 2026"
+          },
+          {
+            "name": "BC_TAX_REDUCTION_2026",
+            "value": {
+              "basic": 690,
+              "threshold": 25570,
+              "rate": 0.0356
+            },
+            "slug": "bc-individual-return",
+            "section": "2026 BC tax reduction and other credits",
+            "quote": "BC tax reduction, basic amount | $690 | 2026 to 2030\nBC tax reduction, net income threshold where it starts to fall | $25,570 | 2026\nBC tax reduction, rate of reduction | 3.56% of net income above the threshold | 2026"
+          }
+        ],
+        "assumptions": [
+          "Resident in British Columbia on 31 December 2026 and in Canada all year; single, under 65, no dependants; not bankrupt",
+          "Taxable income equals net income: no loss carryovers, capital gains or other deductions",
+          "Credits are the basic personal amount, CPP/EI and the Canada employment amount only (no medical, tuition, donation, disability or other credits)",
+          "Age 18 to 70 for CPP; not opted into EI special benefits as a self-employed person"
+        ],
+        "skill_anchors_reproduced": [
+          "ca-fed-cpp-ei Tests 1 to 4 (2025): self-employed CPP, line 22200 deduction and line 31000 credit base",
+          "ca-fed-t1-return Examples 1 to 3 (2025): basic federal tax $7,978.82, $0 and $58,640.54",
+          "on-individual-return Example 1 (2026, employee $34,000): Ontario tax $426.18; Example 2 (2025, $180,000, spouse, donations): $19,722.34",
+          "bc-individual-return Example 1 (2026, $42,000): BC tax $1,506.81; Example 2 (2025, $120,000, spouse, donations): $7,275.24",
+          "ab-individual-return Example 1 (2026, $75,000): Alberta tax $4,102.48; Example 2 (2025, $120,000, supplemental credit $59.30): $5,703.50",
+          "canada-payroll (2026): employee maximums CPP $4,230.45, CPP2 $416.00, EI $1,123.07"
+        ],
+        "notes": [
+          "2026 return due 30 April 2027 (15 June if self-employed); any balance is payable by 30 April 2027",
+          "The 2026 provincial forms are not published yet: the tax on lower bands is worked out from the 2026 brackets the way the 2025 forms print it"
+        ],
+        "defaults_assumed": {
+          "employment_income": 0,
+          "other_income": 0,
+          "eligible_dividends": 0,
+          "other_dividends": 0,
+          "tax_withheld": 0,
+          "has_spouse_or_partner": false,
+          "dependants": 0,
+          "age_65_or_over": false
+        },
+        "tax_year": "2026"
+      },
+      "receipt_id": "e2840656bc1226a15b917ea1bf0f5daab86ef9f80deb13417b3d6840dd4dabb9"
+    },
+    {
+      "id": "CA-IT-03",
+      "from": "python-parity",
+      "inputs": {
+        "province": "AB",
+        "other_income": 200000,
+        "tax_year": "2025"
+      },
+      "expected": {
+        "status": "ok",
+        "engine": "ca_income_tax_2026",
+        "headline": {
+          "label": "Balance owing for 2025 (negative = refund), Alberta resident",
+          "value": 58813.31,
+          "currency": "CAD"
+        },
+        "lines": {
+          "total_income": 200000,
+          "cpp_deduction": 0,
+          "rrsp_deduction": 0,
+          "net_income": 200000,
+          "taxable_income": 200000,
+          "federal_tax_on_taxable_income": 42909.79,
+          "federal_basic_personal_amount": 15663.11,
+          "canada_employment_amount": 0,
+          "federal_non_refundable_credits": 2271.15,
+          "basic_federal_tax": 40638.64,
+          "provincial": {
+            "tax_on_taxable_income": 19960.51,
+            "non_refundable_credits": 1785.84,
+            "basic_tax": 18174.67,
+            "supplemental_credit": 0,
+            "provincial_tax": 18174.67
+          },
+          "provincial_tax": 18174.67,
+          "total_income_tax": 58813.31,
+          "cpp_payable_with_return": 0,
+          "tax_withheld": 0,
+          "balance_owing": 58813.31,
+          "rrsp_saving_next_1000": 423.05,
+          "federal_saving_per_extra_rrsp_dollar": 0.2931
+        },
+        "steps": [
+          "Total income CAD 200,000.00 less RRSP CAD 0.00 less CPP deduction CAD 0.00 = net income CAD 200,000.00 = taxable income (no other deductions)",
+          "Federal tax on CAD 200,000.00 at the 2025 brackets (top dollar at 29%) = CAD 42,909.79",
+          "Federal credits = (BPA CAD 15,663.11) x 14.5% = CAD 2,271.15; basic federal tax CAD 40,638.64",
+          "Alberta tax on CAD 200,000.00 at the 2025 brackets = CAD 19,960.51; credits (BPA CAD 22,323.00) x 8% = CAD 1,785.84; basic Alberta tax CAD 18,174.67",
+          "Alberta supplemental tax credit CAD 0.00",
+          "Alberta tax = CAD 18,174.67; total income tax = CAD 58,813.31",
+          "Less tax already paid CAD 0.00 = balance owing CAD 58,813.31",
+          "CAD 1,000.00 more RRSP deduction would save CAD 423.05 of income tax (federal alone: CAD 0.2931 per dollar at this income)"
+        ],
+        "inputs_used": {
+          "province": "AB",
+          "employment_income": 0,
+          "self_employment_net_income": 0,
+          "other_income": 200000,
+          "eligible_dividends": 0,
+          "other_dividends": 0,
+          "rrsp_deduction": 0,
+          "tax_withheld": 0,
+          "has_spouse_or_partner": false,
+          "dependants": 0,
+          "age_65_or_over": false,
+          "tax_year": "2025"
+        },
+        "constants_used": [
+          {
+            "name": "FEDERAL_BRACKETS_2025",
+            "value": [
+              [
+                57375,
+                0.145
+              ],
+              [
+                114750,
+                0.205
+              ],
+              [
+                177882,
+                0.26
+              ],
+              [
+                253414,
+                0.29
+              ],
+              [
+                null,
+                0.33
+              ]
+            ],
+            "slug": "ca-fed-t1-return",
+            "section": "Section 1 -- Quick Reference / Federal Tax Brackets (2025)",
+            "quote": "Federal Tax Brackets (2025)\nTaxable Income (CAD) | Rate | Cumulative Tax\n0 -- 57,375 | 14.5%* | 8,319\n57,376 -- 114,750 | 20.5% | 20,081\n114,751 -- 177,882 | 26% | 36,495\n177,883 -- 253,414 | 29% | 58,399\n253,415+ | 33% | 58,399+\n*14.5% is a blended rate for 2025 (15% Jan-Jun, 14% Jul-Dec)."
+          },
+          {
+            "name": "FEDERAL_BPA_2025",
+            "value": {
+              "max": 16129,
+              "min": 14538
+            },
+            "slug": "ca-fed-t1-return",
+            "section": "Basic Personal Amount (2025)",
+            "quote": "Basic Personal Amount (2025)\nNet Income | BPA\n$177,882 or less | $16,129\n$177,882 -- $253,414 | Graduated reduction\n$253,414+ | $14,538"
+          },
+          {
+            "name": "FEDERAL_CREDIT_RATE_2025",
+            "value": 0.145,
+            "slug": "ca-fed-t1-return",
+            "section": "Section 7 -- Excel Working Paper Template",
+            "quote": "D2. Non-refundable credits (x 14.5%)"
+          },
+          {
+            "name": "FEDERAL_BPA_PHASE_DOWN_METHOD",
+            "value": "linear between the 29% and 33% bracket thresholds, on net income",
+            "slug": "ca-fed-t1-return",
+            "section": "Section 6 -- Tier 2 Catalogue (Reviewer Judgement Required) / 6.2 BPA Reduction for High Earners",
+            "quote": "BPA = $16,129 - $1,591 x (net income - $177,882) / $75,532. Flag if net income between $177,882 and $253,414."
+          },
+          {
+            "name": "AB_BRACKETS_2025",
+            "value": [
+              [
+                60000,
+                0.08
+              ],
+              [
+                151234,
+                0.1
+              ],
+              [
+                181481,
+                0.12
+              ],
+              [
+                241974,
+                0.13
+              ],
+              [
+                362961,
+                0.14
+              ],
+              [
+                null,
+                0.15
+              ]
+            ],
+            "slug": "ab-individual-return",
+            "section": "Rates, bands and thresholds",
+            "quote": "Taxable income up to $60,000 | 8% | 2025\n$60,000.01 to $151,234 | 10% ... | 2025\n$151,234.01 to $181,481 | 12% ... | 2025\n$181,481.01 to $241,974 | 13% ... | 2025\n$241,974.01 to $362,961 | 14% ... | 2025\nOver $362,961 | 15% ... | 2025"
+          },
+          {
+            "name": "AB_CREDIT_RATE",
+            "value": 0.08,
+            "slug": "ab-individual-return",
+            "section": "Rates, bands and thresholds",
+            "quote": "Rate used for non-refundable credits (\"specified percentage\") | 8% | 2025 and later"
+          },
+          {
+            "name": "AB_BPA_2025",
+            "value": 22323,
+            "slug": "ab-individual-return",
+            "section": "Rates, bands and thresholds",
+            "quote": "Basic personal amount | $22,323 | 2025"
+          },
+          {
+            "name": "AB_CPP_EI_CREDITS",
+            "value": true,
+            "slug": "ab-individual-return",
+            "section": "The taxable base",
+            "quote": "CPP and EI (lines 30800, 31000, 31200 and 31217 of the return)"
+          },
+          {
+            "name": "AB_SUPPLEMENTAL_CREDIT_2025",
+            "value": {
+              "base": 4800,
+              "rate": 0.25
+            },
+            "slug": "ab-individual-return",
+            "section": "Rates, bands and thresholds",
+            "quote": "Supplemental tax credit | 25% of (credits at 8%, leaving out unused tuition, minus $4,800) | 2025"
+          }
+        ],
+        "assumptions": [
+          "Resident in Alberta on 31 December 2025 and in Canada all year; single, under 65, no dependants; not bankrupt",
+          "Taxable income equals net income: no loss carryovers, capital gains or other deductions",
+          "Credits are the basic personal amount, CPP/EI and the Canada employment amount only (no medical, tuition, donation, disability or other credits)"
+        ],
+        "skill_anchors_reproduced": [
+          "ca-fed-cpp-ei Tests 1 to 4 (2025): self-employed CPP, line 22200 deduction and line 31000 credit base",
+          "ca-fed-t1-return Examples 1 to 3 (2025): basic federal tax $7,978.82, $0 and $58,640.54",
+          "on-individual-return Example 1 (2026, employee $34,000): Ontario tax $426.18; Example 2 (2025, $180,000, spouse, donations): $19,722.34",
+          "bc-individual-return Example 1 (2026, $42,000): BC tax $1,506.81; Example 2 (2025, $120,000, spouse, donations): $7,275.24",
+          "ab-individual-return Example 1 (2026, $75,000): Alberta tax $4,102.48; Example 2 (2025, $120,000, supplemental credit $59.30): $5,703.50",
+          "canada-payroll (2026): employee maximums CPP $4,230.45, CPP2 $416.00, EI $1,123.07"
+        ],
+        "notes": [
+          "2025 return due 30 April 2026 (15 June if self-employed); any balance is payable by 30 April 2026"
+        ],
+        "defaults_assumed": {
+          "employment_income": 0,
+          "self_employment_net_income": 0,
+          "eligible_dividends": 0,
+          "other_dividends": 0,
+          "rrsp_deduction": 0,
+          "tax_withheld": 0,
+          "has_spouse_or_partner": false,
+          "dependants": 0,
+          "age_65_or_over": false
+        },
+        "tax_year": "2025"
+      },
+      "receipt_id": "340686657be220e2c70aa600ceb9d9181d3a4795ab6663a144adc8fbc1f58b5b"
+    },
+    {
+      "id": "CA-IT-04",
+      "from": "python-parity",
+      "inputs": {
+        "province": "QC",
+        "employment_income": 60000,
+        "tax_year": "2026"
+      },
+      "expected": {
+        "status": "missing_rule",
+        "engine": "ca_income_tax_2026",
+        "what": "Quebec income tax for 2026",
+        "why": "A Quebec resident files a separate Quebec return (TP-1) with its own taxable income (worker deduction, line 248 QPP and QPIP deduction), pays QPP and QPIP instead of CPP and part of EI, owes the health services fund contribution and the drug insurance premium on the TP-1, and takes the 16.5% Quebec abatement on federal tax. qc-individual-return says the 2026 line 248 factors are not published and the 2025 ones must not be used for 2026; this engine computes none of the Quebec return.",
+        "partial": {},
+        "inputs_used": {
+          "province": "QC",
+          "employment_income": 60000,
+          "self_employment_net_income": 0,
+          "other_income": 0,
+          "eligible_dividends": 0,
+          "other_dividends": 0,
+          "rrsp_deduction": 0,
+          "tax_withheld": 0,
+          "has_spouse_or_partner": false,
+          "dependants": 0,
+          "age_65_or_over": false,
+          "tax_year": "2026"
+        },
+        "constants_used": [],
+        "instruction": "No OpenAccountants skill serves this figure. Do not invent it: say it is missing, or cite an official source you fetched yourself and label it as not from OpenAccountants.",
+        "defaults_assumed": {
+          "self_employment_net_income": 0,
+          "other_income": 0,
+          "eligible_dividends": 0,
+          "other_dividends": 0,
+          "rrsp_deduction": 0,
+          "tax_withheld": 0,
+          "has_spouse_or_partner": false,
+          "dependants": 0,
+          "age_65_or_over": false
+        },
+        "tax_year": "2026"
+      },
+      "receipt_id": "47bcac2cf4e0bc4c3b7e3091ac53165f0cd104ab9b909d92ee795b7f2484ff2c"
+    },
+    {
+      "id": "CA-IT-05",
+      "from": "python-parity",
+      "inputs": {
+        "employment_income": 60000,
+        "tax_year": "2026"
+      },
+      "expected": {
+        "status": "needs_input",
+        "engine": "ca_income_tax_2026",
+        "what": "missing input 'province'",
+        "schema": {
+          "type": "object",
+          "properties": {
+            "province": {
+              "type": "string",
+              "description": "province of residence on 31 December, two-letter code (QC is refused: Quebec tax is on a separate TP-1 return)",
+              "enum": [
+                "ON",
+                "BC",
+                "AB",
+                "QC"
+              ]
+            },
+            "employment_income": {
+              "type": "number",
+              "description": "CAD, T4 employment income from one employer for the whole year (CPP and EI are computed from it)",
+              "default": 0
+            },
+            "self_employment_net_income": {
+              "type": "number",
+              "description": "CAD, net self-employment profit (T2125); a loss is not supported",
+              "default": 0
+            },
+            "other_income": {
+              "type": "number",
+              "description": "CAD, other fully taxable income with no credit of its own (interest, net rent)",
+              "default": 0
+            },
+            "eligible_dividends": {
+              "type": "number",
+              "description": "CAD, actual eligible dividends received (refused if more than 0)",
+              "default": 0
+            },
+            "other_dividends": {
+              "type": "number",
+              "description": "CAD, actual other-than-eligible dividends received (refused if more than 0)",
+              "default": 0
+            },
+            "rrsp_deduction": {
+              "type": "number",
+              "description": "CAD, RRSP deduction claimed for the year (within the limit on the notice of assessment)",
+              "default": 0
+            },
+            "tax_withheld": {
+              "type": "number",
+              "description": "CAD, income tax already deducted at source (T4 box 22) plus instalments paid for the year",
+              "default": 0
+            },
+            "has_spouse_or_partner": {
+              "type": "boolean",
+              "description": "had a spouse or common-law partner on 31 December (refused if true: spouse credits and family tests are not computed)",
+              "default": false
+            },
+            "dependants": {
+              "type": "number",
+              "description": "dependants supported (refused if more than 0)",
+              "default": 0
+            },
+            "age_65_or_over": {
+              "type": "boolean",
+              "description": "65 or older on 31 December (refused if true: age and pension credits are not computed)",
+              "default": false
+            },
+            "tax_year": {
+              "type": "string",
+              "description": "the tax year the question is about. This engine has figures for 2025 and 2026 only; any other year is refused",
+              "enum": [
+                "2025",
+                "2026"
+              ]
+            }
+          },
+          "required": [
+            "province",
+            "tax_year"
+          ]
+        }
+      }
+    },
+    {
+      "id": "CA-IT-06",
+      "from": "python-parity",
+      "inputs": {
+        "province": "ON",
+        "employment_income": 60000,
+        "has_spouse_or_partner": true,
+        "tax_year": "2025"
+      },
+      "expected": {
+        "status": "missing_rule",
+        "engine": "ca_income_tax_2026",
+        "what": "credits for a spouse or partner, dependants, or age 65 or over",
+        "why": "This engine computes a single person under 65 with no dependants. Spouse, eligible dependant, caregiver, age and pension credits, the Ontario LIFT family test and the Ontario tax reduction for dependants are not implemented.",
+        "partial": {},
+        "inputs_used": {
+          "province": "ON",
+          "employment_income": 60000,
+          "self_employment_net_income": 0,
+          "other_income": 0,
+          "eligible_dividends": 0,
+          "other_dividends": 0,
+          "rrsp_deduction": 0,
+          "tax_withheld": 0,
+          "has_spouse_or_partner": true,
+          "dependants": 0,
+          "age_65_or_over": false,
+          "tax_year": "2025"
+        },
+        "constants_used": [],
+        "instruction": "No OpenAccountants skill serves this figure. Do not invent it: say it is missing, or cite an official source you fetched yourself and label it as not from OpenAccountants.",
+        "defaults_assumed": {
+          "self_employment_net_income": 0,
+          "other_income": 0,
+          "eligible_dividends": 0,
+          "other_dividends": 0,
+          "rrsp_deduction": 0,
+          "tax_withheld": 0,
+          "dependants": 0,
+          "age_65_or_over": false
+        },
+        "tax_year": "2025"
+      },
+      "receipt_id": "3e11185779ab485ec8b1a2fb0fbc230bee59c45111cd8ca019dbda41d1107d7e"
+    },
+    {
+      "id": "YEAR-GUARD",
+      "from": "year guard",
+      "inputs": {
+        "province": "ON",
+        "employment_income": 90000,
+        "rrsp_deduction": 5000,
+        "tax_withheld": 18000,
+        "tax_year": "2019"
+      },
+      "expected": {
+        "status": "missing_rule",
+        "engine": "ca_income_tax_2026",
+        "what": "no OpenAccountants figures for tax year 2019",
+        "why": "This engine holds figures for tax year 2025 and 2026 only. It never applies one year's figures to another year.",
+        "partial": {},
+        "inputs_used": {
+          "tax_year": "2019"
+        },
+        "constants_used": [],
+        "instruction": "No OpenAccountants skill serves this figure. Do not invent it: say it is missing, or cite an official source you fetched yourself and label it as not from OpenAccountants."
+      },
+      "receipt_id": "e51b75c0b8ab8d515c25a490dece34dbddb595d652ed5a572361245e1ca1c9fa"
+    }
+  ]
+}

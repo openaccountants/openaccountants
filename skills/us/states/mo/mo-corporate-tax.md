@@ -1,11 +1,11 @@
 ---
 name: mo-corporate-tax
 description: "Missouri MO-1120: 4% corporate tax, federal liability deduction, receipts apportionment, 2026 estimates, specie subtraction and explicit PTE/special-regime limits."
-version: "0.1"
+version: "0.2"
 jurisdiction: US-MO
 category: state-tax
 tax_year: 2026
-last_updated: 2026-11-13
+last_updated: 2026-11-14
 tier: 2
 type: computation
 ---
@@ -28,7 +28,7 @@ The annual booklet requires a return for each year a corporation must file feder
 | Ordinary corporate filing income threshold | Missouri-source gross income 100 or more, with federal filing requirement and nexus | [Annual booklet, p.2](https://dor.mo.gov/forms/MO-1120%20Instructions_2025.pdf) |
 | Corporate federal-income-tax deduction | 50% of eligible current-year federal liability, subject to group allocation | [143.171.3](https://revisor.mo.gov/main/OneSection.aspx?section=143.171); [annual Part 3](https://dor.mo.gov/forms/MO-1120%20Instructions_2025.pdf) |
 | Corporate estimates | Expected Missouri tax 250 or more | [2026 MO-1120ES](https://dor.mo.gov/forms/MO-1120ES_2026.pdf) |
-| Large-corporation estimate boundary | In any preceding 3 years, federal taxable income at least 1,000,000 **and** Missouri taxable income at least 100,000 | [2026 MO-1120ES /143.761.6](https://dor.mo.gov/forms/MO-1120ES_2026.pdf) |
+| Large-corporation estimate boundary | In any preceding 3 years, federal taxable income at least 1,000,000 **and** Missouri taxable income at least 100,000 (in words on the page) | [2026 MO-1120ES /143.761.6](https://dor.mo.gov/forms/MO-1120ES_2026.pdf) |
 | Ordinary corporation franchise tax | Zero; no ordinary franchise return for tax years beginning on/after January 1,2016 | [DOR franchise phase-out bulletin](https://dor.mo.gov/pdf/TaxBulletin-10-26-15.pdf) |
 | Specie capital-gain subtraction | Gold/silver specie gain included in federal taxable income, beginning 2026; separate from general corporate capital-gain trigger | [Current specie FAQ](https://dor.mo.gov/faq/taxation/individual/specie_subtraction.html) |
 
@@ -122,7 +122,7 @@ expected:
 | Final 2025 MO-1120 instructions. Read for 2025-2026 filing cycle: filing threshold, registration, base/modifications, groups, losses, dividends, MO-MS sourcing, returns and penalties. | https://dor.mo.gov/forms/MO-1120%20Instructions_2025.pdf | 2026-11-13 |
 | 2026 MO-1120ES. Read for 4% rate,250 estimate threshold, dates, safe harbours, large-corporation restrictions and approved credits. | https://dor.mo.gov/forms/MO-1120ES_2026.pdf | 2026-11-13 |
 | Corporate FAQ. Read for 4% current rate and separate-company/NOL requirements. | https://dor.mo.gov/faq/taxation/business/corporation-income.html | 2026-11-13 |
-| 143.171. Read for 50% corporate same-year federal liability deduction. | https://revisor.mo.gov/main/OneSection.aspx?section=143.171 | 2026-11-13 |
+| 143.171. Read for the 50% (in words on the page) corporate same-year federal liability deduction. | https://revisor.mo.gov/main/OneSection.aspx?section=143.171 | 2026-11-13 |
 | 143.121. Read for individual versus corporate capital-gain trigger and 2026 specie distinction. | https://revisor.mo.gov/main/OneSection.aspx?section=143.121 | 2026-11-13 |
 | 2026 MO-1040ES. Read for individual top rate 4.7%, relevant to corporate general capital-gain trigger. | https://dor.mo.gov/forms/MO-1040ES_2026.pdf | 2026-11-13 |
 | Specie FAQ. Read for 2026 corporate subtraction and express short-year pre-publication procedure. | https://dor.mo.gov/faq/taxation/individual/specie_subtraction.html | 2026-11-13 |
