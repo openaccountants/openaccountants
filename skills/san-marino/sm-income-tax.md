@@ -173,7 +173,7 @@ A return filed within 30 days after 31 July is valid but carries the late-filing
 
 ### Example 1: employee, gross wage 30,000 with SMaC interpolation
 
-A resident employee earns 30,000 gross. All three default contribution components apply (9.9%), there are no benefits, other income or family credits, and the employee has enough SMaC spend for the full credit. Forfait 2,100; contributions 2,970; taxable wage 24,930. Tax: 900 + 1,040 + (24,930 - 18,000) x 17% = 3,118.10. Taxable income of 24,930 falls between the 20,900 and 25,080 rows, so the credit is interpolated: 1,444.62 on a spend limit of 5,455.14 (26.48%). Net IGR 1,673.48. The Tax Office calculator returned the same credit and spend limit for this case.
+A resident employee earns 30,000 gross. The example assumes employee contributions of 9.9% (an assumed rate: the calculator default is on the Not yet confirmed line of sm-payroll-social; replace it with the rates on the payslip), there are no benefits, other income or family credits, and the employee has enough SMaC spend for the full credit. Forfait 2,100; contributions 2,970; taxable wage 24,930. Tax: 900 + 1,040 + (24,930 - 18,000) x 17% = 3,118.10. Taxable income of 24,930 falls between the 20,900 and 25,080 rows, so the credit is interpolated: 1,444.62 on a spend limit of 5,455.14 (26.48%). Net IGR 1,673.48. The Tax Office calculator returned the same credit and spend limit for this case.
 
 ```oa-check
 name: San Marino 2026 employee wage 30,000 with interpolated SMaC credit
