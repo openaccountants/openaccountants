@@ -34,20 +34,20 @@ Salaried, passive-income and non-professional taxpayers are covered by art. 93 u
 | Item | Rate or amount | Source |
 |---|---|---|
 | Salary scale, up to XAF 2,000,000 | 10% (11% with CAC) | CGI art. 69(1), 71: https://www.impots.cm/sites/default/files/documents/CODE%20GENERAL%20DES%20IMPOTS%202026%20SITE%20DGI%20VERSION%20FRANCAISE.pdf |
-| XAF 2,000,001 to 3,000,000 | 15% (16.5% with CAC) | same |
-| XAF 3,000,001 to 5,000,000 | 25% (27.5% with CAC) | same |
-| Over XAF 5,000,000 | 35% (38.5% with CAC) | same |
+| XAF 2,000,001 to 3,000,000 | 15% (16.5% with CAC, computed: 15% plus the 10% CAC on it) | same |
+| XAF 3,000,001 to 5,000,000 | 25% (27.5% with CAC, computed: 25% plus the 10% CAC on it) | same |
+| Over XAF 5,000,000 | 35% (38.5% with CAC, computed: 35% plus the 10% CAC on it) | same |
 | Communal surcharge (CAC) | 10% of the tax | same |
-| Professional expenses, salary | 30% of gross, capped at XAF 4,800,000 a year | CGI art. 34: https://www.impots.cm/sites/default/files/documents/CODE%20GENERAL%20DES%20IMPOTS%202026%20SITE%20DGI%20VERSION%20FRANCAISE.pdf |
+| Professional expenses, salary | 30% of gross, capped at four million eight hundred thousand francs CFA a year | CGI art. 34: https://www.impots.cm/sites/default/files/documents/CODE%20GENERAL%20DES%20IMPOTS%202026%20SITE%20DGI%20VERSION%20FRANCAISE.pdf |
 | Business, agricultural, property and listed non-commercial income | Art. 17 rate of 30% (33% with CAC) | CGI art. 17, 69(2), 71: https://www.impots.cm/sites/default/files/documents/CODE%20GENERAL%20DES%20IMPOTS%202026%20SITE%20DGI%20VERSION%20FRANCAISE.pdf |
 | Minimum on those incomes | 2% of turnover, 2.2% with CAC | CGI art. 69(2): https://www.impots.cm/sites/default/files/documents/CODE%20GENERAL%20DES%20IMPOTS%202026%20SITE%20DGI%20VERSION%20FRANCAISE.pdf |
 | Listed non-commercial income, art. 56(2) d, e, f, h | Final 10%; art. 56(2) g: 5% | CGI art. 69(3): https://www.impots.cm/sites/default/files/documents/CODE%20GENERAL%20DES%20IMPOTS%202026%20SITE%20DGI%20VERSION%20FRANCAISE.pdf |
-| Investment income | Final 15% (16.5% with CAC) | CGI art. 70(1), 71: https://www.impots.cm/sites/default/files/documents/CODE%20GENERAL%20DES%20IMPOTS%202026%20SITE%20DGI%20VERSION%20FRANCAISE.pdf |
+| Investment income | Final 15% (16.5% with CAC, computed: 15% plus the 10% CAC on it) | CGI art. 70(1), 71: https://www.impots.cm/sites/default/files/documents/CODE%20GENERAL%20DES%20IMPOTS%202026%20SITE%20DGI%20VERSION%20FRANCAISE.pdf |
 | Dividends from a company with turnover up to XAF 3 billion | 10% (11% with CAC) | CGI art. 70(2): https://www.impots.cm/sites/default/files/documents/CODE%20GENERAL%20DES%20IMPOTS%202026%20SITE%20DGI%20VERSION%20FRANCAISE.pdf |
 | Passive income paid to a tax haven | 30% | CGI art. 70(1): https://www.impots.cm/sites/default/files/documents/CODE%20GENERAL%20DES%20IMPOTS%202026%20SITE%20DGI%20VERSION%20FRANCAISE.pdf |
 | Instalment, real regime and IGS | 2% of monthly turnover plus CAC (2.2%) | CGI art. 21, 91; Arrete 00001 of 5 Jan 2026 art. 2: https://www.impots.cm/sites/default/files/documents/arr%C3%AAt%C3%A9%20RTS%202026%20VF.pdf |
 | Withholding, not on active taxpayer file | 10% | same |
-| Liberal professions and public orders under XAF 5,000,000 | 5.5% | Arrete art. 3: https://www.impots.cm/sites/default/files/documents/arr%C3%AAt%C3%A9%20RTS%202026%20VF.pdf |
+| Liberal professions and public orders under five million francs CFA | 5.5% | Arrete art. 3: https://www.impots.cm/sites/default/files/documents/arr%C3%AAt%C3%A9%20RTS%202026%20VF.pdf |
 | Gain on a building | Final 5%; 10% if paid in cash | CGI art. 90: https://www.impots.cm/sites/default/files/documents/CODE%20GENERAL%20DES%20IMPOTS%202026%20SITE%20DGI%20VERSION%20FRANCAISE.pdf |
 | IGS class 1, under XAF 500,000 | XAF 20,000 | CGI art. C 40: https://www.impots.cm/sites/default/files/documents/CODE%20GENERAL%20DES%20IMPOTS%202026%20SITE%20DGI%20VERSION%20FRANCAISE.pdf |
 | Class 2, to under 1 million | XAF 30,000 | same |
