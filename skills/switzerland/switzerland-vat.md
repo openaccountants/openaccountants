@@ -1,10 +1,10 @@
 ---
 name: switzerland-vat
 description: "Swiss VAT (MWST, TVA, IVA) for tax year 2026: who must register (worldwide turnover of CHF 100,000, CHF 250,000 for non-profit clubs, foreign businesses, electronic platforms since 2025), the 8.1%, 2.6% and 3.8% rates, the taxable base and input tax, the effective method and the net tax rate method (Saldosteuersatz, ten rates, CHF 5,024,000 / CHF 108,000), quarterly, semi-annual, monthly and the new annual reporting option (CHF 5,005,000), the 60-day filing and payment deadline, reverse charge on services from abroad (Bezugsteuer, CHF 10,000), import VAT and the deferral procedure, default interest of 4.0% for 2026 and penalties. Trigger on: Swiss VAT, MWST Abrechnung, Saldosteuersatz, Bezugsteuer, jährliche Abrechnung, Verzugszins MWST, ESTV, Einfuhrsteuer, decompte TVA. Out of scope: Swiss income and profit taxes (ch-federal-income-tax, ch-cantonal-tax, ch-corporate-income-tax), cross-border income tax (ch-cross-border), crypto (switzerland-crypto-tax)."
-version: 2.3
+version: 2.4
 jurisdiction: CH
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-14
 depends_on:
   - vat-workflow-base
 category: international
@@ -13,7 +13,7 @@ tier: 2
 domain: vat-gst
 ---
 
-# Switzerland VAT (MWST): registration, rates, returns and penalties, tax year 2026 v2.2
+# Switzerland VAT (MWST): registration, rates, returns and penalties, tax year 2026 v2.4
 
 > **Source-cited draft: not reviewed by an accountant.** This skill is general tax reference material for AI-assisted work. It has not been reviewed for any business's facts. Do not rely on it to file, pay or take a position without review by a qualified professional in Switzerland.
 
@@ -166,12 +166,12 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| MWSTG, Federal VAT Act, SR 641.20 (consolidated version of 31 March 2025) | https://www.fedlex.admin.ch/eli/cc/2009/615/de | 2026-10-23 |
-| MWSTV, VAT Ordinance, SR 641.201 (consolidated version of 1 January 2025) | https://www.fedlex.admin.ch/eli/cc/2009/828/de | 2026-10-23 |
-| Zinssatzverordnung EFD, SR 631.014 (in force 1 January 2026) | https://www.fedlex.admin.ch/eli/cc/2025/564/de | 2026-10-23 |
-| ESTV, VAT rates in Switzerland | https://www.estv.admin.ch/de/mwst-steuersaetze-schweiz | 2026-10-23 |
-| ESTV, net tax rates and flat tax rates | https://www.estv.admin.ch/de/mwst-saldosteuersaetze-pauschalsteuersaetze | 2026-10-23 |
-| ESTV, paying VAT (deadlines, refunds, default interest) | https://www.estv.admin.ch/de/mwst-bezahlen | 2026-10-23 |
+| MWSTG, Federal VAT Act, SR 641.20 (consolidated version of 31 March 2025): read for the articles this Guide cites (registration, periods, settlement methods, interest) | https://www.fedlex.admin.ch/eli/cc/2009/615/de | 2026-10-23 |
+| MWSTV, VAT Ordinance, SR 641.201 (version of 1 January 2025): read for the articles this Guide cites | https://www.fedlex.admin.ch/eli/cc/2009/828/de | 2026-10-23 |
+| Zinssatzverordnung EFD, SR 631.014 (in force 1 January 2026): read for the 2026 late-payment and refund interest rates | https://www.fedlex.admin.ch/eli/cc/2025/564/de | 2026-10-23 |
+| ESTV, VAT rates in Switzerland: read for the 8.1% standard, 2.6% reduced and 3.8% accommodation rates | https://www.estv.admin.ch/de/mwst-steuersaetze-schweiz | 2026-11-14 |
+| ESTV, net tax rates and flat tax rates: read for the CHF 5.024 million turnover and CHF 108,000 tax limits of the net tax rate method | https://www.estv.admin.ch/de/mwst-saldosteuersaetze-pauschalsteuersaetze | 2026-11-14 |
+| ESTV, paying VAT: read for the 60-day filing and payment deadline and the default and refund interest rules | https://www.estv.admin.ch/de/mwst-bezahlen | 2026-11-14 |
 
 Not yet confirmed: the box (Ziffer) numbers of the ESTV return form were not re-read today, so this skill does not map amounts to boxes; the full list of industries per net tax rate (ESTV ordinance SR 641.202.62) was not read; the amount of the fine for procedural breaches under Art. 98; the day-count basis the ESTV uses for default interest; how Liechtenstein is treated (treaty not read); ESTV practice on private use of company cars and gifts; ESTV practice on input tax on business entertainment (the old version said it is deductible with documented business purpose; Art. 28-29 MWSTG were not checked for a specific rule); which document proves import tax for input tax deduction (the old version named the customs assessment, Veranlagungsverfügung; not checked in MWSTV).
 
