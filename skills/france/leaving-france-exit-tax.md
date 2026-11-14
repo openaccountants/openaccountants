@@ -4,14 +4,15 @@ description: "Leaving France, tax year 2026: the exit tax on unrealised share ga
 jurisdiction: FR
 category: international
 tax_year: 2026
-last_updated: 2026-10-31
-version: 0.3
+last_updated: 2026-11-14
+version: 0.4
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: cross-border
+type: situation-rules
 ---
 
-# Leaving France: the exit tax, the IFI and succession reach (2026) v0.3
+# Leaving France: the exit tax, the IFI and succession reach (2026) v0.4
 
 > **General reference only.** This skill is general tax reference material for AI-assisted work. It has not been reviewed for any person's facts. Do not file, pay or take a tax position on it without review by a qualified professional in France.
 
@@ -47,7 +48,7 @@ Earn-out claims (clause de complément de prix) held on departure have the same 
 | CSG on patrimony income, including exit-tax gains (CSS art. L136-6, I, e bis; L136-8, I, 2°) | 10.6% | Income of 2025 onward (LFSS 2026 art. 12, II) | https://www.legifrance.gouv.fr/jorf/article_jo/JORFARTI000053226452 |
 | CRDS | 0.5% | 2026 | https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000190291 |
 | Solidarity levy (CGI art. 235 ter) | 7.5% | 2026 | https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000037949145 |
-| Total social levies on exit-tax gains / total with income tax | 18.6% / 31.4% | Income of 2025 onward | Sum of the rows above |
+| Total social levies on exit-tax gains / total with income tax | 18.6% / 31.4% | Income of 2025 onward | Sum of the rows above; https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000053546896 ; https://www.legifrance.gouv.fr/jorf/article_jo/JORFARTI000053226452 ; https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000190291 ; https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000037949145 |
 | Exception: deferred 150-0 B ter gain brought into charge by the exit tax | social levies at the rate in force in the year the gain was realised (17.2% for a gain realised in 2024) | 2026 | https://www.legifrance.gouv.fr/jorf/article_jo/JORFARTI000033734387 |
 | Guarantee required for deferral on request (art. 167 bis, V) | 12.8% of the gross gains and claims, before allowances | 2026 | https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000048806379 |
 | Cancellation of the tax (income tax and social levies) if the shares are still held | 2 years after departure | 2026 | https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000048806379 |

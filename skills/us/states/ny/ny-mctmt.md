@@ -1,10 +1,10 @@
 ---
 name: ny-mctmt
 description: New York Metropolitan Commuter Transportation Mobility Tax (MCTMT, Tax Law Article 23) for 2026, for employers and for the self-employed in the 12-county Metropolitan Commuter Transportation District. Employers are subject in a quarter only when payroll expense across both zones is more than $312,500, then pay the zone rate on all of that zone's payroll on Form MTA-305 (Zone 1 0.055%, 0.115%, 0.60% or 0.895%; Zone 2 0.055%, 0.115%, 0.34% or 0.635% for quarters from 1 July 2025). Self-employed individuals and partners pay 0.60% (Zone 1) or 0.34% (Zone 2) on net earnings allocated to a zone once that zone's earnings exceed $150,000 for tax year 2026 ($50,000 for 2025 and earlier), on Form IT-201 or IT-203 with estimates on IT-2105. Trigger on "MCTMT", "MTA payroll tax", "MTA-305", "metropolitan commuter tax", "Zone 1 Zone 2", "MCTD". New York only.
-version: "3.0"
+version: "3.1"
 jurisdiction: US-NY
 tax_year: 2026
-last_updated: 2026-11-13
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
@@ -64,8 +64,8 @@ Out of scope, and where it goes:
 | Employer, Zone 2: over USD 2,500,000 | 0.635% | [Tax Department, MCTMT for employers](https://www.tax.ny.gov/bus/mctmt/emp.htm) |
 | Self-employed threshold, net earnings allocated to one zone, tax year 2026 and after (each zone, each individual) | USD 150,000 | [Tax Department, New York City, Yonkers, and MCTMT](https://www.tax.ny.gov/pit/file/nyc_yonkers_residents.htm) |
 | Self-employed threshold, tax years 2025 and prior | USD 50,000 | [Tax Department, New York City, Yonkers, and MCTMT](https://www.tax.ny.gov/pit/file/nyc_yonkers_residents.htm) |
-| Self-employed rate, Zone 1, on all Zone 1 net earnings once over the threshold | 0.60% | [IT-2105-I (2026)](https://www.tax.ny.gov/pdf/current_forms/it/it2105i.pdf) |
-| Self-employed rate, Zone 2, on all Zone 2 net earnings once over the threshold | 0.34% | [IT-2105-I (2026)](https://www.tax.ny.gov/pdf/current_forms/it/it2105i.pdf) |
+| Self-employed rate, Zone 1, on all Zone 1 net earnings once over the threshold | .60% (.0060) | [IT-2105-I (2026)](https://www.tax.ny.gov/pdf/current_forms/it/it2105i.pdf) |
+| Self-employed rate, Zone 2, on all Zone 2 net earnings once over the threshold | .34% (.0034) | [IT-2105-I (2026)](https://www.tax.ny.gov/pdf/current_forms/it/it2105i.pdf) |
 
 The earlier employer tables, for quarters beginning before 1 July 2025, are in the boundary table below. None of these figures is indexed.
 
@@ -92,7 +92,7 @@ The earlier employer tables, for quarters beginning before 1 July 2025, are in t
 | Situation | Treatment | Source |
 | --- | --- | --- |
 | Employer MCTD payroll exactly USD 312,500 in a quarter | Not subject: the test is "greater than" | [MCTMT for employers](https://www.tax.ny.gov/bus/mctmt/emp.htm) |
-| Employer with USD 300,000 in Zone 1 and USD 100,000 in Zone 2 | Subject: the USD 312,500 test is on both zones together (USD 400,000). Zone 1 and Zone 2 both at 0.055% | [MCTMT for employers](https://www.tax.ny.gov/bus/mctmt/emp.htm) |
+| Employer with USD 300,000 in Zone 1 and USD 100,000 in Zone 2 (derived: example amounts tested against the page's USD 312,500) | Subject: the USD 312,500 test is on both zones together (USD 400,000). Zone 1 and Zone 2 both at 0.055% | [MCTMT for employers](https://www.tax.ny.gov/bus/mctmt/emp.htm) |
 | One busy quarter, three quiet ones | Only the busy quarter is taxable; there is no annualizing | [MCTMT for employers](https://www.tax.ny.gov/bus/mctmt/emp.htm) |
 | Zone 1 payroll of exactly USD 2,500,000 | 0.60% (the 0.895% row starts over USD 2,500,000) | [MCTMT for employers](https://www.tax.ny.gov/bus/mctmt/emp.htm) |
 | Local government employer, Zone 1, payroll over USD 2,500,000 | 0.60%, not 0.895% | [MCTMT for employers](https://www.tax.ny.gov/bus/mctmt/emp.htm) |
@@ -102,7 +102,7 @@ The earlier employer tables, for quarters beginning before 1 July 2025, are in t
 | Household employer | Not subject on wages to household employees; an agency placing workers in homes is not a household employer | [MCTMT for employers](https://www.tax.ny.gov/bus/mctmt/emp.htm) |
 | Employee works in Albany or New Jersey part of the time | Apply the Publication 420 covered-employee tests; Albany and all places outside New York are outside the MCTD | [Publication 420](https://www.tax.ny.gov/pdf/publications/mctmt/pub420.pdf) |
 | Yonkers or White Plains | Westchester County, so Zone 2, not Zone 1 | [MCTMT for employers](https://www.tax.ny.gov/bus/mctmt/emp.htm) |
-| Self-employed with USD 140,000 in Zone 1 and USD 140,000 in Zone 2, 2026 | No MCTMT: neither zone exceeds USD 150,000, even though the MCTD total is USD 280,000 | [New York City, Yonkers, and MCTMT](https://www.tax.ny.gov/pit/file/nyc_yonkers_residents.htm) |
+| Self-employed with USD 140,000 in Zone 1 and USD 140,000 in Zone 2, 2026 (derived: example amounts tested against the page's USD 150,000) | No MCTMT: neither zone exceeds USD 150,000, even though the MCTD total is USD 280,000 | [New York City, Yonkers, and MCTMT](https://www.tax.ny.gov/pit/file/nyc_yonkers_residents.htm) |
 | Self-employed Zone 1 earnings exactly USD 150,000, 2026 | No MCTMT in Zone 1: earnings must exceed the threshold | [New York City, Yonkers, and MCTMT](https://www.tax.ny.gov/pit/file/nyc_yonkers_residents.htm) |
 | Self-employed, 2025 return (filed in 2026) | Threshold USD 50,000 per zone, same rates | [IT-201-I (2025)](https://www.tax.ny.gov/forms/current-forms/it/it201i.htm) |
 | Married couple, both self-employed in Zone 1, USD 200,000 and USD 90,000 in 2026 | Only the USD 200,000 spouse is taxed: 0.60% of USD 200,000. The USD 90,000 is left off line 54a | [IT-201-I (2025)](https://www.tax.ny.gov/forms/current-forms/it/it201i.htm) |
