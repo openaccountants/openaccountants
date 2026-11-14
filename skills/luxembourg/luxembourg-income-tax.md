@@ -292,4 +292,4 @@ expected:
 
 Not yet confirmed: the year-of-acquisition rule rests only on the Guichet.lu page (last changed 2018, and it still says depreciation cannot be deferred, which art. 32(1a) has allowed since 2017); neither the LIR nor an ACD circular states it, so a reviewer must confirm current ACD practice before a part-year charge is filed. Whether the ACD smooths the step from 7% to 9% surcharge just above EUR 150,000 / 300,000 on assessment (the ACD page shows a plain step). The AED rates page was last updated 28 December 2023, and the consolidated VAT law (LTVA) was not read for 2026.
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.

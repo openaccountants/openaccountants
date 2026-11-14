@@ -245,4 +245,4 @@ expected:
 
 Not yet confirmed: the monthly social minimum wage for skilled workers (qualifié, SSM plus 20%) from 1 January and 1 June 2026; the CCSS notices and parameters page publish only the unskilled SSM, and no official 2026 figure for the skilled rate was found. Also whether the 0.6% monthly late-payment interest on the ACD page applies to late withholding payments in the same way as to assessed tax (the page speaks of tax due on an assessment).
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.
