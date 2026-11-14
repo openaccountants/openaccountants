@@ -1,14 +1,15 @@
 ---
 name: de-corporate-tax
 description: "German corporate income tax (Körperschaftsteuer, KSt) for tax year 2026: GmbH, UG, AG and other companies resident in Germany, and German permanent establishments of foreign companies. Covers the 15% rate under § 23 KStG and the enacted cuts from 2028, the 5.5% solidarity surcharge, how trade tax adds to the burden, the taxable base, the § 8b participation exemption, loss carry-forward (EUR 1m plus 70% for 2024 to 2027, 60% from 2028) and carry-back, § 8c share changes, Organschaft, the interest barrier, prepayments, filing deadlines, late filing surcharges, interest, and Kapitalertragsteuer on outbound dividends. Trigger on: Körperschaftsteuer, KSt, GmbH tax Germany, German corporate tax rate, Soli on KSt, § 8b KStG, § 8c KStG, Organschaft, Zinsschranke, Verlustvortrag GmbH, Mindestbesteuerung, KSt-Vorauszahlungen, Kapitalertragsteuer Dividende. Out of scope: trade tax detail (de-trade-tax), transfer pricing (germany-transfer-pricing), individual shareholders (germany-income-tax, de-capital-gains), shareholder exit tax (leaving-germany-exit-tax), VAT (germany-vat-return)."
-version: 0.6
+version: 0.7
 jurisdiction: DE
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: corporate-tax
+type: computation
 ---
 
 # German corporate income tax (Körperschaftsteuer): 2026
@@ -35,7 +36,7 @@ Tax year: the calendar year 2026 (Veranlagungszeitraum 2026). A company with a f
 | Enacted rate cuts | 14% (2028), 13% (2029), 12% (2030), 11% (2031), 10% (2032 onwards) | 2028 to 2032 | [§ 23(1) KStG](https://www.gesetze-im-internet.de/kstg_1977/__23.html); [BMF Monatsbericht August 2025](https://www.bundesfinanzministerium.de/Monatsberichte/Ausgabe/2025/08/Inhalte/Kapitel-2-Fokus/investitionssofortprogramm-deutschland.html) |
 | Small-company rate | None. One flat rate. The EUR 5,000 allowance in § 24 KStG does not apply to companies whose distributions are dividends | 2026 | [§ 24 KStG](https://www.gesetze-im-internet.de/kstg_1977/__24.html) |
 | Solidarity surcharge (Solidaritätszuschlag) | 5.5% of the corporate income tax. The exemption threshold applies only to individuals, so a company pays from the first euro | 2026 | [§ 4 SolzG](https://www.gesetze-im-internet.de/solzg_1995/__4.html); [§ 3(1) and (3) SolzG](https://www.gesetze-im-internet.de/solzg_1995/__3.html) |
-| Corporate tax plus surcharge | 15.825% (15% x 1.055) | 2026 | Computed from the two rows above |
+| Corporate tax plus surcharge | 15.825% (15% x 1.055) | 2026 | Computed from the two rows above; https://www.gesetze-im-internet.de/kstg_1977/__23.html ; https://www.gesetze-im-internet.de/solzg_1995/__4.html |
 | Trade tax (Gewerbesteuer) base rate | 3.5% of trade income, times the municipal multiplier (Hebesatz). Companies get no allowance (the EUR 24,500 allowance is for individuals and partnerships) | 2026 | [§ 11 GewStG](https://www.gesetze-im-internet.de/gewstg/__11.html); [§ 16 GewStG](https://www.gesetze-im-internet.de/gewstg/__16.html) |
 | Trade tax multiplier floor | 200% in 2026; 280% from 2027 | 2026; 2027 | [BGBl. 2026 I Nr. 197](https://www.recht.bund.de/bgbl/1/2026/197/VO.html), law of 29 June 2026, Art. 8 no. 1: in § 16(4) sentence 2 GewStG "wird die Angabe „200“ durch die Angabe „280“ ersetzt", first applied for 2027 under [§ 36(5b) GewStG](https://www.gesetze-im-internet.de/gewstg/__36.html). So the text in force for 2026 is 200%. The current [§ 16(4) GewStG](https://www.gesetze-im-internet.de/gewstg/__16.html) page shows only the 2027 wording |
 | Trade tax deductibility | Not a business expense | 2026 | [§ 4(5b) EStG](https://www.gesetze-im-internet.de/estg/__4.html) |

@@ -1,9 +1,11 @@
 ---
 name: xero-uk-vat-close
-description: Workbench method for AI agents. Pull the quarter from Xero (connector or CSV export), compute the UK VAT return boxes from the accountant-reviewed uk-vat-return Guide, and hand back a working paper plus a Xero-ready adjustment journal for human review and filing.
+description: "Workbench method for AI agents closing a UK VAT return period that ends in tax year 2026/27 from a Xero ledger (connector or CSV export). Covers cut-off by tax point, the nine boxes, reverse charges, postponed import VAT, Making Tax Digital records and digital links, box arithmetic and the VAT control account check, a Xero-ready draft adjustment journal, the deadline, penalty points, late payment penalties and interest, and the error correction limits. Rates, thresholds and scheme eligibility come from the uk-vat-return skill. The output is a draft working paper that a named person reviews and files. Trigger phrases include close VAT quarter Xero, Xero VAT return, VAT working paper, MTD VAT Xero, reconcile VAT control account."
+version: "2.0"
+type: filing-howto
 jurisdiction: GB
 tax_year: 2026
-last_updated: 2026-10-16
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: vat-gst
@@ -40,7 +42,7 @@ Two kinds of statement appear below:
 
 ## The method, step by step
 
-1. **Load the law.** Read the uk-vat-return skill from OpenAccountants for rates, box definitions, scheme rules and blocked input tax. If a figure you need is not there, say so; do not use a remembered number.
+1. **Load the law.** Call `get_skill` with slug `uk-vat-return` (or read it at openaccountants.com/skills/uk-vat-return) for rates, box definitions, scheme rules and blocked input tax. It is a source-cited draft, not an accountant-reviewed skill: each of its figures names its HMRC source. If a figure you need is not there, say so and check the HMRC source it names; do not use a remembered number. If you computed anything before loading it, recompute.
 2. **Confirm the period and scheme in Xero (working step).** Check the VAT registration number, the scheme and the return period set up in Xero's VAT settings against the client's answers and HMRC's online account. A wrong period end or scheme setting makes every figure wrong.
 3. **Pull the data (working step).** From a Xero connection or by CSV export: the trial balance at period end, the VAT control account transactions for the period, the VAT return report for the period (or sales and purchases by tax rate), aged receivables and payables at period end, and bank reconciliation status. If a report is missing, name the export you need; never estimate ledger data.
 4. **Finish the bookkeeping for the period (working step).** All bank accounts reconciled to the period end; no unreconciled statement lines dated in the period; sales invoices and supplier bills dated in the period approved, not left in draft or awaiting approval; nothing coded to a no-VAT rate by mistake.
@@ -50,17 +52,40 @@ Two kinds of statement appear below:
 8. **Compute the nine boxes** in a table with two references for each figure: where it came from in the ledger (report, account, period) and which rule defines it.
 9. **Reconcile.** Box 5 should agree to the movement on the VAT control account for the period, after allowing for the previous return's payment or repayment. List every reconciling item (late-posted bills, manual journals, rounding, adjustments). Do not absorb a difference silently.
 10. **Sense-check.** If all outputs are standard-rated, box 1 should be 20% of box 6 ([VAT Notice 700/12, 7.1](https://www.gov.uk/guidance/how-to-fill-in-and-submit-your-vat-return-vat-notice-70012)). Postponed import VAT, reverse charges and corrections will move box 1 away from that; explain each.
-11. **Produce the three outputs.** (a) The working paper: period, scheme, box table with both references, reconciliation, open questions. (b) A draft adjustment journal, only if reconciling items need posting: tell the user to confirm the column headings against their own Xero import screen, import it as a draft, and approve it in Xero themselves. (c) A filing checklist with the deadline.
+11. **Produce the three outputs.** (a) The working paper: period, scheme, box table with both references, reconciliation, open questions. (b) A draft adjustment journal, only if reconciling items need posting, as a CSV for Xero's manual journal import with the columns `Narration, Date, Description, AccountCode, TaxRate, Amount` (debits positive, credits negative; the lines sum to zero; every account code exists in the client's chart): tell the user to confirm the column headings against their own Xero import screen, import it as a draft, and approve it in Xero themselves. (c) A filing checklist with the deadline.
 12. **Stop at the flash points** in "When to refuse or refer" and hand the item to the reviewer with the data.
 13. **File from the MTD software.** Submit from the software that holds the digital records, or through bridging software fed by a digital link. Do not re-key or copy and paste the working paper's totals into another product. Once submitted, the return cannot be amended.
 14. **Lock the period (working step).** After filing, set a lock date in Xero at the period end so filed transactions cannot be changed. A transaction for a filed period that turns up later is corrected under the error correction rules, not by editing the filed period.
 15. **Hand over.** Present the result as "draft for review by a licensed accountant", never as "ready to file", and say who is reviewing.
 
-## Figures and rules for 2026/27 closes
+### Rates, bands and thresholds
+
+The figures a close uses that are not in uk-vat-return. VAT periods ending in tax year 2026/27 (6 April 2026 to 5 April 2027).
+
+| Item | Figure and condition | Applies | Official source |
+| --- | --- | --- | --- |
+| Return and payment deadline | Usually one calendar month and 7 days after the end of the VAT period; the payment must reach HMRC by then | Monthly and quarterly returns | https://www.gov.uk/vat-returns/deadlines |
+| Late submission points threshold | 2 points (annual returns), 4 (quarterly), 5 (monthly) | Returns for periods from 1 January 2023 | https://www.gov.uk/guidance/penalty-points-and-penalties-if-you-submit-your-vat-return-late |
+| Penalty at the points threshold | GBP 200, and a further GBP 200 for each later late return while at the threshold | same | same |
+| First late payment penalty | Nothing to day 15; 3% of the VAT owed at day 15; a further 3% of the VAT still owed at day 30 | VAT periods from 1 January 2023 | https://www.gov.uk/guidance/how-late-payment-penalties-work-if-you-pay-vat-late |
+| Second late payment penalty | Daily, at an annual rate of 10% on the balance, from day 31 until paid | same | same |
+| Late payment interest, how set | Bank of England base rate plus 4% (from 6 April 2025; plus 2.5% before) | From the day after the due date | https://www.gov.uk/government/publications/rates-and-allowances-hmrc-interest-rates-for-late-and-early-payments/rates-and-allowances-hmrc-interest-rates |
+| Late payment interest rate | 7.75% from 9 January 2026; 8.00% from 24 November 2026 | Read HMRC's table for any later change | same |
+| Error correction on the current return (method 1) | Net errors not more than GBP 10,000, or between GBP 10,000 and GBP 50,000 if not more than 1% of box 6 of the return they are found in | Otherwise method 2 (separate notification); deliberate errors always method 2 | https://www.gov.uk/guidance/how-to-correct-vat-errors-and-make-adjustments-or-claims-vat-notice-70045 |
+| Error correction time limit | 4 years from the end of the period of the error (output tax, over-claimed input tax); 4 years from the return due date for under-claimed input tax | All corrections | same |
+| VAT payments on account | Annual VAT liability of more than GBP 2.3 million | Interim payments at the end of months 2 and 3 of each quarter | https://www.gov.uk/guidance/how-to-fill-in-and-submit-your-vat-return-vat-notice-70012 |
+| Standard-rate sense check | Box 1 should be 20% of box 6 if all outputs are standard-rated | Explain postponed import VAT, reverse charges and corrections | same |
+| Postponed VAT accounting barred | Consignments of more than GBP 135 sent through Royal Mail Group postal services | Imports | https://www.gov.uk/guidance/check-when-you-can-account-for-import-vat-on-your-vat-return |
+| Postponed import VAT statement | Usually available by the 10th working day of the month; viewable for 6 months from publication | Download and keep each one | https://www.gov.uk/guidance/get-your-postponed-import-vat-statement |
+| Petty cash recorded as a total | Each purchase below GBP 50 including VAT; no entry above GBP 500 including VAT | MTD digital records | https://www.gov.uk/government/publications/vat-notice-70022-making-tax-digital-for-vat/vat-notice-70022-making-tax-digital-for-vat |
+| 14-day invoice rule | A VAT invoice issued up to 14 days after the basic tax point moves the tax point to the invoice date | Unless an earlier tax point arose, or the business opted out in writing | https://www.gov.uk/guidance/vat-guide-notice-700 |
+| Record keeping | At least 6 years | VAT records | https://www.gov.uk/guidance/record-keeping-for-vat-notice-70021 |
+
+### Figures and rules for 2026/27 closes
 
 Rates, registration thresholds, scheme limits and the full content of each box are in the uk-vat-return skill. The rules below are the ones a close most often gets wrong.
 
-### The nine boxes: what the close must get right ([VAT Notice 700/12](https://www.gov.uk/guidance/how-to-fill-in-and-submit-your-vat-return-vat-notice-70012))
+#### The nine boxes: what the close must get right ([VAT Notice 700/12](https://www.gov.uk/guidance/how-to-fill-in-and-submit-your-vat-return-vat-notice-70012))
 
 | Box | Close-specific points |
 | --- | --- |
@@ -94,7 +119,7 @@ Rates, registration thresholds, scheme limits and the full content of each box a
 - **Annual accounting:** box 5 is not reduced by instalments paid; the balancing payment is box 5 minus the instalments.
 - **Payments on account:** a business with an annual VAT liability of more than £2.3 million makes interim payments at the end of the second and third months of each quarter. Do not change any box for them; the amount paid with the return is the box 5 liability less the payments on account already made.
 
-### Postponed import VAT ([check when you can use it](https://www.gov.uk/guidance/check-when-you-can-account-for-import-vat-on-your-vat-return); [complete your VAT Return for import VAT](https://www.gov.uk/guidance/complete-your-vat-return-to-account-for-import-vat); [get your statement](https://www.gov.uk/guidance/get-your-postponed-import-vat-statement))
+#### Postponed import VAT ([check when you can use it](https://www.gov.uk/guidance/check-when-you-can-account-for-import-vat-on-your-vat-return); [complete your VAT Return for import VAT](https://www.gov.uk/guidance/complete-your-vat-return-to-account-for-import-vat); [get your statement](https://www.gov.uk/guidance/get-your-postponed-import-vat-statement))
 
 - Available to VAT-registered businesses for goods imported into Great Britain from anywhere outside the UK, and into Northern Ireland from outside the UK and EU. No approval is needed. It is chosen on the import declaration, which cannot be changed once submitted.
 - Account for it on the return for the period that covers the **date of import**: VAT due in box 1, VAT reclaimed in box 4 (normal input tax rules apply), and the value of imported goods excluding VAT in box 7.
@@ -105,7 +130,7 @@ Rates, registration thresholds, scheme limits and the full content of each box a
 - If VAT was paid at the border instead, the evidence for box 4 is the import VAT certificate (C79).
 - Working step: the statement comes from the Customs Declaration Service, not from a bank feed or supplier bill, so check that the monthly totals have been entered in Xero for every month in the period (using whatever postponed-VAT tax rate or journal the client's file uses) and attach the statement.
 
-### Making Tax Digital records and links ([VAT Notice 700/22](https://www.gov.uk/government/publications/vat-notice-70022-making-tax-digital-for-vat/vat-notice-70022-making-tax-digital-for-vat))
+#### Making Tax Digital records and links ([VAT Notice 700/22](https://www.gov.uk/government/publications/vat-notice-70022-making-tax-digital-for-vat/vat-notice-70022-making-tax-digital-for-vat))
 
 - The business must keep its "electronic account" in functional compatible software: business name, principal place of business, VAT number and schemes used; for each supply made and received, the time of supply (tax point), the value excluding VAT and the rate of VAT; and summary data for each return, including each type of adjustment.
 - Records can sit across more than one product, but data moving between them must travel by digital link: linked spreadsheet cells, CSV or XML import and export, emailing a spreadsheet for import, automated transfer or API. HMRC does not accept cut and paste or copy and paste as a digital link.
@@ -118,7 +143,7 @@ Rates, registration thresholds, scheme limits and the full content of each box a
 
 What this means for the method: the agent's working paper is a review document. The figures HMRC receive must come out of the MTD software. If the working paper finds an error, fix it in Xero (a transaction or an adjustment entered there), then let Xero or the bridging software produce the return.
 
-### Tax point and cut-off ([VAT Notice 700, section 14](https://www.gov.uk/guidance/vat-guide-notice-700); [VAT Notice 700/22, 3.3.2](https://www.gov.uk/government/publications/vat-notice-70022-making-tax-digital-for-vat/vat-notice-70022-making-tax-digital-for-vat))
+#### Tax point and cut-off ([VAT Notice 700, section 14](https://www.gov.uk/guidance/vat-guide-notice-700); [VAT Notice 700/22, 3.3.2](https://www.gov.uk/government/publications/vat-notice-70022-making-tax-digital-for-vat/vat-notice-70022-making-tax-digital-for-vat))
 
 - **Basic tax point:** goods, usually the date they are sent to or taken away by the customer (or made available, if not moved); services, the date the service is performed, normally when all work except invoicing is complete.
 - **Earlier invoice or payment:** if a VAT invoice is issued, or payment received, before the basic tax point, the tax point is the earlier of those dates for the amount invoiced or received.
@@ -126,12 +151,13 @@ What this means for the method: the agent's working paper is a review document. 
 - **Cash accounting:** VAT on sales when payment is received; input tax when you pay.
 - **Reverse charge services from abroad:** a single supply's tax point is when the service is completed, or when it is paid for if earlier.
 
-### Records ([VAT Notice 700/21](https://www.gov.uk/guidance/record-keeping-for-vat-notice-70021))
+#### Records ([VAT Notice 700/21](https://www.gov.uk/guidance/record-keeping-for-vat-notice-70021))
 
 - Keep business records for VAT purposes for at least 6 years. Keep the working paper, the downloaded postponed import VAT statements and C79 certificates with them.
 
-## Boundary and exception table ([VAT Notice 700/12](https://www.gov.uk/guidance/how-to-fill-in-and-submit-your-vat-return-vat-notice-70012); [VAT Notice 700/22](https://www.gov.uk/government/publications/vat-notice-70022-making-tax-digital-for-vat/vat-notice-70022-making-tax-digital-for-vat); [VAT Notice 700/45](https://www.gov.uk/guidance/how-to-correct-vat-errors-and-make-adjustments-or-claims-vat-notice-70045); [import VAT](https://www.gov.uk/guidance/complete-your-vat-return-to-account-for-import-vat))
+## Boundary and exception table
 
+Rules from [VAT Notice 700/12](https://www.gov.uk/guidance/how-to-fill-in-and-submit-your-vat-return-vat-notice-70012); [VAT Notice 700/22](https://www.gov.uk/government/publications/vat-notice-70022-making-tax-digital-for-vat/vat-notice-70022-making-tax-digital-for-vat); [VAT Notice 700/45](https://www.gov.uk/guidance/how-to-correct-vat-errors-and-make-adjustments-or-claims-vat-notice-70045); [import VAT](https://www.gov.uk/guidance/complete-your-vat-return-to-account-for-import-vat).
 | Situation | Treatment |
 | --- | --- |
 | Box 3 is less than box 4 | A repayment. The working paper states the direction; the MTD submission still sends box 5 as a positive figure and HMRC treat it as repayable |
@@ -147,8 +173,9 @@ What this means for the method: the agent's working paper is a review document. 
 | Great Britain exports or imports | Not in boxes 8 or 9; these boxes are only for Northern Ireland goods trade with the EU |
 | Submitted return has a mistake | Cannot be amended; correct it later under the error rules |
 
-## Worked cases ([VAT Notice 700/12](https://www.gov.uk/guidance/how-to-fill-in-and-submit-your-vat-return-vat-notice-70012); [import VAT on the return](https://www.gov.uk/guidance/complete-your-vat-return-to-account-for-import-vat); [VAT Notice 700](https://www.gov.uk/guidance/vat-guide-notice-700); [VAT Return deadlines](https://www.gov.uk/vat-returns/deadlines); [VAT Notice 700/45](https://www.gov.uk/guidance/how-to-correct-vat-errors-and-make-adjustments-or-claims-vat-notice-70045))
+## Worked cases
 
+Rules from [VAT Notice 700/12](https://www.gov.uk/guidance/how-to-fill-in-and-submit-your-vat-return-vat-notice-70012); [import VAT on the return](https://www.gov.uk/guidance/complete-your-vat-return-to-account-for-import-vat); [VAT Notice 700](https://www.gov.uk/guidance/vat-guide-notice-700); [VAT Return deadlines](https://www.gov.uk/vat-returns/deadlines); [VAT Notice 700/45](https://www.gov.uk/guidance/how-to-correct-vat-errors-and-make-adjustments-or-claims-vat-notice-70045).
 All amounts are illustrations, not client data.
 
 **Case 1: building the boxes, with an import.** A Great Britain trading company on standard accounting closes the quarter to 30 September 2026. Xero's VAT report shows standard-rated sales of £50,000 net with £10,000 VAT, one credit note issued for £1,000 net with £200 VAT, and standard-rated purchases of £20,000 net with £4,000 VAT. The July postponed import VAT statement shows £1,000 of import VAT on goods valued at £5,000, and the client confirms there were no imports in August or September.
@@ -163,6 +190,35 @@ All amounts are illustrations, not client data.
 
 Sense check: 20% of £49,000 is £9,800. Box 1 is £1,000 higher, and the difference is exactly the postponed import VAT, so the check passes with that item explained.
 
+```oa-check
+name: Quarter to 30 September 2026, boxes with a credit note and postponed import VAT
+inputs:
+  sales_vat: 10000
+  credit_note_vat: 200
+  import_vat: 1000
+  purchase_vat: 4000
+  sales_net: 50000
+  credit_note_net: 1000
+  purchases_net: 20000
+  import_value: 5000
+steps:
+  - box1: sales_vat - credit_note_vat + import_vat
+  - box2: 0
+  - box3: box1 + box2
+  - box4: purchase_vat + import_vat
+  - box5: box3 - box4
+  - box6: sales_net - credit_note_net
+  - box7: purchases_net + import_value
+  - sense_gap: box1 - box6 * 0.20
+expected:
+  box3: 10800.00
+  box4: 5000.00
+  box5: 5800.00
+  box6: 49000.00
+  box7: 25000.00
+  sense_gap: 1000.00
+```
+
 **Case 2: a repayment return.** A business buys equipment in the quarter. Box 3 is £2,000 and box 4 is £3,500. Box 5 = £2,000 less £3,500, a repayment of £1,500 to the business. The MTD submission sends box 5 as £1,500, the absolute difference, and HMRC work out that it is repayable. The working paper must still say "repayment of £1,500" so the reviewer and the client know which way the money moves.
 
 **Case 3: cut-off on a service.** A consultant finishes a project on 28 September 2026 (quarter end 30 September) and has not been paid or invoiced. If she issues the VAT invoice on 8 October 2026, within 14 days, the tax point is 8 October and the VAT goes in the October to December quarter. If she issues it on 20 October 2026 (more than 14 days later, no extension agreed with HMRC), the tax point stays at 28 September and the VAT belongs in the quarter being closed, even though Xero shows an October invoice date. Under cash accounting, the VAT goes in whichever quarter she is paid.
@@ -170,6 +226,28 @@ Sense check: 20% of £49,000 is £9,800. Box 1 is £1,000 higher, and the differ
 **Case 4: deadline.** For the quarter ending 30 September 2026, the return and payment are due by 7 November 2026, one calendar month and 7 days later. That date is a Saturday; the payment must still reach HMRC's account by then, so allow for bank processing time.
 
 **Case 5: an error found at the close.** While reconciling, the preparer finds a sales invoice from the April to June 2026 quarter that was never posted, with £3,000 of VAT. The net error is not more than £10,000, so it can be corrected on the current return (method 1): add £3,000 to box 1 of the current return. Record the invoice in Xero as well (the digital record must be complete) without reopening the filed quarter, and keep a note of the correction. A method 1 correction is not a disclosure for penalty purposes, so the reviewer decides whether the error was careless and, if so, whether to disclose it separately in writing. Had the net error been more than £50,000, or deliberate, it would need a separate error correction notification (method 2).
+
+**Case 6 (decision): method 1 or method 2?** A larger client finds a net error of £18,000 of under-declared output VAT from an earlier quarter. Box 6 of the current return is £2,400,000. The error is above £10,000, so the 1% test decides: 1% of £2,400,000 is £24,000, which is below £50,000, so the method 1 ceiling is £24,000. £18,000 is within it, so the preparer may correct it on the current return (method 1). Had box 6 been £1,500,000, 1% would be £15,000 and the £18,000 error would need method 2. A deliberate error goes to method 2 whatever its size.
+
+```oa-check
+name: Error correction, method 1 ceiling against the 1% of box 6 test
+inputs:
+  box6: 2400000
+  net_error: 18000
+  box6_smaller: 1500000
+steps:
+  - ceiling: min(50000, max(10000, box6 * 0.01))
+  - headroom: ceiling - net_error
+  - ceiling_smaller: min(50000, max(10000, box6_smaller * 0.01))
+  - headroom_smaller: ceiling_smaller - net_error
+expected:
+  ceiling: 24000.00
+  headroom: 6000.00
+  ceiling_smaller: 15000.00
+  headroom_smaller: -3000.00
+```
+
+A positive headroom means method 1 is allowed; a negative headroom means method 2.
 
 ## When to refuse or refer
 
@@ -207,7 +285,7 @@ Sense check: 20% of £49,000 is £9,800. Box 1 is £1,000 higher, and the differ
 | 31 or more | First penalty: 3% of the VAT owed at day 15 plus 3% of the VAT owed at day 30; second penalty: a daily rate of 10% a year on the balance from day 31 until paid |
 
 - Agreeing a Time to Pay arrangement early can stop the next stage of penalty.
-- Late payment interest runs from the day after the due date until payment, at Bank of England base rate plus 4% (from 6 April 2025; previously plus 2.5%). HMRC's table shows 7.75% from 9 January 2026; check it for any later change.
+- Late payment interest runs from the day after the due date until payment, at Bank of England base rate plus 4% (from 6 April 2025; previously plus 2.5%). HMRC's table shows 7.75% from 9 January 2026 and 8.00% from 24 November 2026; check it for any later change.
 
 ### Correcting errors from earlier periods ([VAT Notice 700/45](https://www.gov.uk/guidance/how-to-correct-vat-errors-and-make-adjustments-or-claims-vat-notice-70045))
 
@@ -216,9 +294,10 @@ Sense check: 20% of £49,000 is £9,800. Box 1 is £1,000 higher, and the differ
 - Time limit: 4 years from the end of the period in which the error occurred (output tax, and input tax over-claimed); for under-claimed input tax, 4 years from the due date of the return for the period in which the error occurred.
 - A method 1 correction is not a disclosure for penalty purposes. If the error was careless, the maximum penalty reduction needs a separate written disclosure as well.
 
-## Completion checklist ([VAT Notice 700/12](https://www.gov.uk/guidance/how-to-fill-in-and-submit-your-vat-return-vat-notice-70012); [VAT Notice 700/22](https://www.gov.uk/government/publications/vat-notice-70022-making-tax-digital-for-vat/vat-notice-70022-making-tax-digital-for-vat))
+## Completion checklist
 
-- The uk-vat-return skill was loaded in this session and every rate used appears in it.
+Rules from [VAT Notice 700/12](https://www.gov.uk/guidance/how-to-fill-in-and-submit-your-vat-return-vat-notice-70012); [VAT Notice 700/22](https://www.gov.uk/government/publications/vat-notice-70022-making-tax-digital-for-vat/vat-notice-70022-making-tax-digital-for-vat).
+- The uk-vat-return skill was loaded in this session, before any computing, and every rate used appears in it.
 - Period dates, return frequency, scheme and VAT number agree between Xero, HMRC's online account and the client.
 - Bank accounts reconciled to period end; nothing dated in the period left in draft or awaiting approval.
 - Tax point cut-off tested, including invoices in the first 14 days after period end (or payment dates under cash accounting).
@@ -238,3 +317,28 @@ Sense check: 20% of £49,000 is £9,800. Box 1 is £1,000 higher, and the differ
 - Return submitted from MTD software or via a digital link, not re-keyed; payment arranged to reach HMRC by the deadline.
 - Lock date set in Xero after filing (working step); working paper and statements kept for at least 6 years.
 - Output labelled "draft for review by a licensed accountant", with the reviewer named.
+- A failed check is a finding to show the user, never something to fix silently.
+
+## Sources
+
+| Source | What was read | URL | Read on |
+| --- | --- | --- | --- |
+| HMRC, VAT Notice 700/12 | Read for the content of boxes 1 to 9, pence and whole pounds, reverse charge boxes, scheme rules, the 20% sense check and the GBP 2.3 million payments on account limit | https://www.gov.uk/guidance/how-to-fill-in-and-submit-your-vat-return-vat-notice-70012 | 2026-11-14 |
+| HMRC, VAT Notice 700/22 Making Tax Digital for VAT | Read for the electronic account, digital links, adjustments as totals, supplier statements and the petty cash GBP 50 and GBP 500 limits | https://www.gov.uk/government/publications/vat-notice-70022-making-tax-digital-for-vat/vat-notice-70022-making-tax-digital-for-vat | 2026-11-14 |
+| HMRC, VAT Notice 700/45 correcting errors | Read for method 1 and method 2 limits (GBP 10,000, GBP 50,000, 1% of box 6), the 4 year time limit and disclosure | https://www.gov.uk/guidance/how-to-correct-vat-errors-and-make-adjustments-or-claims-vat-notice-70045 | 2026-11-14 |
+| HMRC, VAT Notice 700 the VAT guide | Read for the basic tax point, earlier invoice or payment, and the 14-day rule (section 14) | https://www.gov.uk/guidance/vat-guide-notice-700 | 2026-11-14 |
+| HMRC, VAT Notice 700/21 record keeping | Read for the 6 year record keeping rule | https://www.gov.uk/guidance/record-keeping-for-vat-notice-70021 | 2026-11-14 |
+| GOV.UK, VAT Return deadlines | Read for one calendar month and 7 days and payment reaching HMRC by then | https://www.gov.uk/vat-returns/deadlines | 2026-11-14 |
+| HMRC, penalty points for late VAT returns | Read for the 2, 4 and 5 point thresholds and the GBP 200 penalty | https://www.gov.uk/guidance/penalty-points-and-penalties-if-you-submit-your-vat-return-late | 2026-11-14 |
+| HMRC, removing VAT penalty points | Read for when points expire and the period of compliance | https://www.gov.uk/guidance/remove-penalty-points-youve-received-after-submitting-your-vat-return-late | 2026-11-14 |
+| HMRC, late payment penalties for VAT | Read for 3% at day 15, 3% at day 30 and 10% a year from day 31 | https://www.gov.uk/guidance/how-late-payment-penalties-work-if-you-pay-vat-late | 2026-11-14 |
+| HMRC, late payment interest on VAT | Read for interest from the day after the due date | https://www.gov.uk/guidance/late-payment-interest-if-you-do-not-pay-vat-or-penalties-on-time | 2026-11-14 |
+| HMRC interest rates for late and early payments | Read for base rate plus 4%, 7.75% from 9 January 2026 and 8.00% from 24 November 2026 | https://www.gov.uk/government/publications/rates-and-allowances-hmrc-interest-rates-for-late-and-early-payments/rates-and-allowances-hmrc-interest-rates | 2026-11-14 |
+| HMRC, when you can use postponed VAT accounting | Read for who can use it and the GBP 135 Royal Mail exclusion | https://www.gov.uk/guidance/check-when-you-can-account-for-import-vat-on-your-vat-return | 2026-11-14 |
+| HMRC, complete your VAT Return for import VAT | Read for boxes 1, 4 and 7 on the return covering the date of import | https://www.gov.uk/guidance/complete-your-vat-return-to-account-for-import-vat | 2026-11-14 |
+| HMRC, get your postponed import VAT statement | Read for the 10th working day and the 6 month viewing limit | https://www.gov.uk/guidance/get-your-postponed-import-vat-statement | 2026-11-14 |
+| HMRC, VAT (MTD) API specification | Read for box 5 as the absolute difference and boxes 6 to 9 to 2 zeroed decimal places | https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/vat-api/1.0/oas/file | 2026-11-14 |
+
+Xero menus, report names, default account codes and the manual journal import format are vendor working steps, not HMRC rules: confirm them in the client's own Xero file.
+
+Not yet confirmed: none of the HMRC figures above is open. Xero screen and import column names are not a tax source and are not confirmed here.

@@ -1,13 +1,15 @@
 ---
 name: at-company-formation
-description: "Source-cited draft: company formation & entity choice for Austria (tax year 2025) — rates, thresholds and rules with primary-source citations. Unverified; pending local-accountant review."
+description: "Company formation and entity choice in Austria for tax year 2026. Which legal form to pick (sole trader, OG, KG, GmbH, FlexCo, AG), the registrations in order (articles, capital, Firmenbuch, trade licence, tax office, SVS), minimum capital and minimum corporate tax, bookkeeping and filing thresholds. Source-cited draft pending local-accountant review."
 jurisdiction: AT
 tax_year: 2026
-last_updated: 2026-09-22
+last_updated: 2026-11-14
 drafted_by: OpenAccountants
 approved_by: pending
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+version: 1.0
 tier: 2
+type: filing-howto
 domain: formation
 ---
 
@@ -15,7 +17,9 @@ domain: formation
 
 How to start a business in Austria: which legal form to pick (sole trader, OG, KG, GmbH, FlexCo, AG), the registrations in the order the authorities describe them (trade licence, commercial register, tax office, social insurance), and the duties that start once the business exists. It is for founders and the advisers who help them. Figures are for tax year 2026. Most pages used were read on 22 September 2026 and carry a 2026 update date. Five sources are older: the BMF register authority note on the FlexCo (26 April 2024), the USP Lexikon entry on corporations with the size classes (21 November 2024), the USP note on capital increases in a GmbH and FlexKapG (26 June 2025), and the two USP tax office pages on the duties of a business and on organisational steps (1 January 2025). Tax rates and contribution amounts are only summarised here; the detail sits in the sibling Guides named below.
 
-## Entity types and company formation
+## Scope
+
+### Entity types and company formation
 
 Austria offers individual and company forms. The main ones:
 
@@ -30,31 +34,37 @@ Austria offers individual and company forms. The main ones:
 
 **Minimum capital and minimum corporate tax (GmbH and AG only; not confirmed for the FlexCo)**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.usp.gv.at/themen/steuern-finanzen/koerperschaftsteuer-ueberblick/koerperschaftsteuerpflicht.html |
-| Minimum share capital (Mindeststammkapital) of a GmbH | EUR 10,000 | "Das Mindeststammkapital von GmbHs (Gesellschaften mit beschränkter Haftung) beträgt 10.000 Euro." The USP Lexikon entry on the GmbH states the same amount and adds that in principle half is paid in cash at formation |
-| Minimum capital (Mindestgrundkapital) of an AG | EUR 70,000 | "Das Mindestgrundkapital einer Aktiengesellschaft (AG) beträgt 70.000 Euro." |
-| Minimum corporate tax, per calendar year, as a share of the statutory minimum capital | 5% | "Sie beträgt pro Kalenderjahr 5 Prozent des gesetzlichen Mindestgrund- bzw. Mindeststammkapitals und ist vierteljährlich zu entrichten." Due even with a loss; credited against later corporate tax, but only against the part of a later year's tax that exceeds that year's minimum tax |
-| Minimum corporate tax of a GmbH, per calendar year, paid in quarterly instalments | EUR 500 | "insgesamt somit 500 Euro" |
-| Minimum corporate tax of an AG, per calendar year, paid in quarterly instalments | EUR 3,500 | The page calls it "kalendervierteljährlich zu entrichtende Mindeststeuer"; it is 5 Prozent of the AG minimum capital, which makes it a yearly amount paid quarterly, like the GmbH figure |
+| What | Value | Note | Source |
+| --- | --- | --- |---|
+| Minimum share capital (Mindeststammkapital) of a GmbH | EUR 10,000 | "Das Mindeststammkapital von GmbHs (Gesellschaften mit beschränkter Haftung) beträgt 10.000 Euro." The USP Lexikon entry on the GmbH states the same amount and adds that in principle half is paid in cash at formation | https://www.usp.gv.at/themen/steuern-finanzen/koerperschaftsteuer-ueberblick/koerperschaftsteuerpflicht.html |
+| Minimum capital (Mindestgrundkapital) of an AG | EUR 70,000 | "Das Mindestgrundkapital einer Aktiengesellschaft (AG) beträgt 70.000 Euro." | https://www.usp.gv.at/themen/steuern-finanzen/koerperschaftsteuer-ueberblick/koerperschaftsteuerpflicht.html |
+| Minimum corporate tax, per calendar year, as a share of the statutory minimum capital | 5% | "Sie beträgt pro Kalenderjahr 5 Prozent des gesetzlichen Mindestgrund- bzw. Mindeststammkapitals und ist vierteljährlich zu entrichten." Due even with a loss; credited against later corporate tax, but only against the part of a later year's tax that exceeds that year's minimum tax | https://www.usp.gv.at/themen/steuern-finanzen/koerperschaftsteuer-ueberblick/koerperschaftsteuerpflicht.html |
+| Minimum corporate tax of a GmbH, per calendar year, paid in quarterly instalments | EUR 500 | "insgesamt somit 500 Euro" | https://www.usp.gv.at/themen/steuern-finanzen/koerperschaftsteuer-ueberblick/koerperschaftsteuerpflicht.html |
+| Minimum corporate tax of an AG, per calendar year, paid in quarterly instalments | EUR 3,500 | The page calls it "kalendervierteljährlich zu entrichtende Mindeststeuer"; it is 5 Prozent of the AG minimum capital, which makes it a yearly amount paid quarterly, like the GmbH figure | https://www.usp.gv.at/themen/steuern-finanzen/koerperschaftsteuer-ueberblick/koerperschaftsteuerpflicht.html |
 
 **FlexCo: enterprise-value shares**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.bmf.gv.at/dam/jcr:05f303a4-befb-48d1-88af-2a35a452cfa7/Fachliche_News_WiEReG_2024-04-26.pdf |
-| Enterprise-value shares (UWA) must be less than this share of the share capital | 25% | "So dürfen weniger als 25% des Stammkapitals als „Unternehmenswert-Anteile“ sein." UWA carry no voting rights. A FlexCo whose registered shareholders are all natural persons is exempt from reporting to the beneficial owners register (§ 6(2a) WiEReG) |
+| What | Value | Note | Source |
+| --- | --- | --- |---|
+| Enterprise-value shares (UWA) must be less than this share of the share capital | 25% | "So dürfen weniger als 25% des Stammkapitals als „Unternehmenswert-Anteile“ sein." UWA carry no voting rights. A FlexCo whose registered shareholders are all natural persons is exempt from reporting to the beneficial owners register (§ 6(2a) WiEReG) | https://www.bmf.gv.at/dam/jcr:05f303a4-befb-48d1-88af-2a35a452cfa7/Fachliche_News_WiEReG_2024-04-26.pdf |
 
 **Taxes on the company and on its profit distributions**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.usp.gv.at/themen/steuern-finanzen/koerperschaftsteuer-ueberblick.html |
-| Corporate income tax (Körperschaftsteuer) rate on a GmbH, FlexCo or AG | 23% | "Die Körperschaftsteuer beträgt 23 Prozent (bis zum Jahr 2022: 25 Prozent, im Jahr 2023: 24 Prozent)" |
-| Withholding tax on dividends paid to individual shareholders | 27.5% | "Kapitalertragsteuer (das sind 27,5 Prozent)". Detail in `at-corporate-income-tax` |
+| What | Value | Note | Source |
+| --- | --- | --- |---|
+| Corporate income tax (Körperschaftsteuer) rate on a GmbH, FlexCo or AG | 23% | "Die Körperschaftsteuer beträgt 23 Prozent (bis zum Jahr 2022: 25 Prozent, im Jahr 2023: 24 Prozent)" | https://www.usp.gv.at/themen/steuern-finanzen/koerperschaftsteuer-ueberblick.html |
+| Withholding tax on dividends paid to individual shareholders | 27.5% | "Kapitalertragsteuer (das sind 27,5 Prozent)". Detail in `at-corporate-income-tax` | https://www.usp.gv.at/themen/steuern-finanzen/koerperschaftsteuer-ueberblick.html |
 
 The corporate rate and the dividend withholding are two separate charges. No official page prints a combined burden, so this Guide does not state one. Sole traders and OG or KG partners pay income tax on their share of profit at the progressive rates in `at-income-tax`, plus social insurance under `at-svs-contributions`.
+
+## Ask the client first
+
+- Will the business carry on an activity under the Gewerbeordnung, and is it a free or a regulated trade? This decides the trade licence, the need for a trade-law managing director and SVS cover under the GSVG.
+- How many founders, and do they want to limit liability? One person: sole trader, one-person GmbH or one-person FlexCo (eGründung possible). Several: OG, KG, GmbH or FlexCo.
+- Do the founders plan to give staff or investors non-voting shares? That points to the FlexCo and its enterprise-value shares.
+- What turnover is expected in the first years? It decides bookkeeping, Firmenbuch entry for a sole trader and the VAT small business exemption.
+- Are the founders EEA or Swiss nationals living in the EEA or Switzerland? Others need a residence permit and, for sole traders without an Austrian residence, a trade-law managing director.
+- Is the client a liberal professional (doctor, lawyer, artist)? Different bookkeeping and social insurance rules apply.
 
 ## Bookkeeping, register entry and disclosure by legal form
 
@@ -62,11 +72,10 @@ The legal form decides whether the business must keep double-entry books and pub
 
 **Bookkeeping and register thresholds**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.usp.gv.at/themen/steuern-finanzen/steuerliche-gewinnermittlung/weitere-informationen-zur-steuerlichen-gewinnermittlung/betriebliches-rechnungswesen/buchfuehrungspflicht-und-buchfuehrung.html |
-| Turnover threshold (Umsatzschwellenwert) for sole traders and OG or KG with a natural person as unlimited partner | EUR 700,000 | "Umsatzschwellenwert Qualifizierter Schwellenwert 700.000 Euro 1.000.000 Euro". Must be exceeded in two consecutive years; the duty then starts after a buffer year ("Pufferjahr") |
-| Qualified threshold (Qualifizierter Schwellenwert) | EUR 1,000,000 | Exceeding it once is enough; the duty starts the following year, with no buffer year |
+| What | Value | Note | Source |
+| --- | --- | --- |---|
+| Turnover threshold (Umsatzschwellenwert) for sole traders and OG or KG with a natural person as unlimited partner | EUR 700,000 | "Umsatzschwellenwert Qualifizierter Schwellenwert 700.000 Euro 1.000.000 Euro". Must be exceeded in two consecutive years; the duty then starts after a buffer year ("Pufferjahr") | https://www.usp.gv.at/themen/steuern-finanzen/steuerliche-gewinnermittlung/weitere-informationen-zur-steuerlichen-gewinnermittlung/betriebliches-rechnungswesen/buchfuehrungspflicht-und-buchfuehrung.html |
+| Qualified threshold (Qualifizierter Schwellenwert) | EUR 1,000,000 | Exceeding it once is enough; the duty starts the following year, with no buffer year | https://www.usp.gv.at/themen/steuern-finanzen/steuerliche-gewinnermittlung/weitere-informationen-zur-steuerlichen-gewinnermittlung/betriebliches-rechnungswesen/buchfuehrungspflicht-und-buchfuehrung.html |
 
 - Corporations (GmbH, FlexCo, AG) and the GmbH & Co KG must keep double-entry books whatever their turnover ("Rechnungslegungspflicht kraft Rechtsform").
 - Liberal professions within the meaning of the UGB (for example doctors, lawyers, artists, writers) have no bookkeeping duty under company law or tax law, whatever the turnover.
@@ -75,10 +84,9 @@ The legal form decides whether the business must keep double-entry books and pub
 
 **Filing annual accounts with the Firmenbuch**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.usp.gv.at/themen/betrieb-und-umwelt/laufender-betrieb/weitere-informationen-laufender-betrieb/bilanzveroeffentlichung.html |
-| Companies with yearly turnover up to this amount may file their accounts on paper; all others must file electronically | EUR 70,000 | "Unternehmen mit einem Jahresumsatz bis zu 70.000 Euro können den Jahresabschluss jedoch auch in Papierform einreichen." |
+| What | Value | Note | Source |
+| --- | --- | --- |---|
+| Companies with yearly turnover up to this amount may file their accounts on paper; all others must file electronically | EUR 70,000 | "Unternehmen mit einem Jahresumsatz bis zu 70.000 Euro können den Jahresabschluss jedoch auch in Papierform einreichen." | https://www.usp.gv.at/themen/betrieb-und-umwelt/laufender-betrieb/weitere-informationen-laufender-betrieb/bilanzveroeffentlichung.html |
 
 - Who files: the legal representatives of corporations (GmbH, AG, SE) and of "hidden corporations" such as the GmbH & Co KG.
 - Deadline: after any shareholders' meeting, but at the latest nine months after the balance sheet date ("spätestens neun Monate nach dem Bilanzstichtag").
@@ -87,11 +95,10 @@ The legal form decides whether the business must keep double-entry books and pub
 
 **Size classes of corporations (what must be filed depends on size)**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.usp.gv.at/services/suchen-und-finden/lexikon/kapitalgesellschaft.html |
-| Micro corporation (Kleinstkapitalgesellschaft): balance sheet total not exceeded | EUR 450,000 | "450.000 Euro Bilanzsumme". Micro if at least two of three criteria are not exceeded; the third is 10 employees on average |
-| Micro corporation: turnover in the twelve months before the balance sheet date not exceeded | EUR 900,000 | "900.000 Euro Umsatzerlöse in den zwölf Monaten vor dem Abschlussstichtag" |
+| What | Value | Note | Source |
+| --- | --- | --- |---|
+| Micro corporation (Kleinstkapitalgesellschaft): balance sheet total not exceeded | EUR 450,000 | "450.000 Euro Bilanzsumme". Micro if at least two of three criteria are not exceeded; the third is 10 employees on average | https://www.usp.gv.at/services/suchen-und-finden/lexikon/kapitalgesellschaft.html |
+| Micro corporation: turnover in the twelve months before the balance sheet date not exceeded | EUR 900,000 | "900.000 Euro Umsatzerlöse in den zwölf Monaten vor dem Abschlussstichtag" | https://www.usp.gv.at/services/suchen-und-finden/lexikon/kapitalgesellschaft.html |
 
 The same page gives the small, medium and large limits; investment and holding companies cannot be micro, and public interest entities are always large.
 
@@ -109,19 +116,31 @@ The order below follows the USP pages. A company needs its Firmenbuch entry befo
 
 **Sole trader: the small business VAT exemption at start-up**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.usp.gv.at/themen/steuern-finanzen/umsatzsteuer-ueberblick/weitere-informationen-zur-umsatzsteuer/weitere-steuertatbestaende-und-befreiungen/kleinunternehmen.html |
-| Small business limit (Kleinunternehmergrenze), yearly gross turnover, previous and current year | EUR 55,000 | "Kleinunternehmergrenze in Höhe von 55.000 Euro (bis 31. Dezember 2024: 35.000 Euro)". Applies to any legal form; detail in `at-vat-return` |
+| What | Value | Note | Source |
+| --- | --- | --- |---|
+| Small business limit (Kleinunternehmergrenze), yearly gross turnover, previous and current year | EUR 55,000 | "Kleinunternehmergrenze in Höhe von 55.000 Euro (bis 31. Dezember 2024: 35.000 Euro)". Applies to any legal form; detail in `at-vat-return` | https://www.usp.gv.at/themen/steuern-finanzen/umsatzsteuer-ueberblick/weitere-informationen-zur-umsatzsteuer/weitere-steuertatbestaende-und-befreiungen/kleinunternehmen.html |
 
-## Ask the client first
+## Worked cases
 
-- Will the business carry on an activity under the Gewerbeordnung, and is it a free or a regulated trade? This decides the trade licence, the need for a trade-law managing director and SVS cover under the GSVG.
-- How many founders, and do they want to limit liability? One person: sole trader, one-person GmbH or one-person FlexCo (eGründung possible). Several: OG, KG, GmbH or FlexCo.
-- Do the founders plan to give staff or investors non-voting shares? That points to the FlexCo and its enterprise-value shares.
-- What turnover is expected in the first years? It decides bookkeeping, Firmenbuch entry for a sole trader and the VAT small business exemption.
-- Are the founders EEA or Swiss nationals living in the EEA or Switzerland? Others need a residence permit and, for sole traders without an Austrian residence, a trade-law managing director.
-- Is the client a liberal professional (doctor, lawyer, artist)? Different bookkeeping and social insurance rules apply.
+### Case 1: minimum corporate tax in a loss year (GmbH or AG?)
+
+A new GmbH makes a loss in 2026. It still pays minimum corporate tax of 5% of the statutory minimum capital of EUR 10,000: EUR 500 for the year, EUR 125 a quarter, credited against corporate tax in later profitable years. An AG pays 5% of EUR 70,000: EUR 3,500. For a small business the choice of form already fixes this floor.
+
+```oa-check
+name: Austria 2026 minimum corporate tax GmbH vs AG
+inputs:
+  gmbh_min_capital: 10000
+  ag_min_capital: 70000
+  rate: 0.05
+steps:
+  - gmbh_year: gmbh_min_capital * rate
+  - gmbh_quarter: gmbh_year / 4
+  - ag_year: ag_min_capital * rate
+expected:
+  gmbh_year: 500
+  gmbh_quarter: 125
+  ag_year: 3500
+```
 
 ## When to refuse or refer
 
@@ -134,26 +153,33 @@ The order below follows the USP pages. A company needs its Firmenbuch entry befo
 
 ## Sources
 
-- https://www.usp.gv.at/services/suchen-und-finden/lexikon/gesellschaft-mit-beschraenkter-haftung-gmbh.html
-- https://www.usp.gv.at/services/suchen-und-finden/lexikon/offene-gesellschaft-og.html
-- https://www.usp.gv.at/services/suchen-und-finden/lexikon/kommanditgesellschaft-kg.html
-- https://www.usp.gv.at/services/suchen-und-finden/lexikon/kapitalgesellschaft.html
-- https://www.oesterreich.gv.at/de/lexicon/P/Seite.991428
-- https://www.usp.gv.at/aktuelles/newsreihen/Gesellschaftsrecht-f-r-Arbeitgeber/gesellschaftsrecht-fuer-arbeitgeber-teil-10.html
-- https://www.bmf.gv.at/dam/jcr:05f303a4-befb-48d1-88af-2a35a452cfa7/Fachliche_News_WiEReG_2024-04-26.pdf
-- https://www.usp.gv.at/themen/steuern-finanzen/koerperschaftsteuer-ueberblick.html
-- https://www.usp.gv.at/themen/steuern-finanzen/koerperschaftsteuer-ueberblick/koerperschaftsteuerpflicht.html
-- https://www.usp.gv.at/themen/steuern-finanzen/steuerliche-gewinnermittlung/weitere-informationen-zur-steuerlichen-gewinnermittlung/betriebliches-rechnungswesen/buchfuehrungspflicht-und-buchfuehrung.html
-- https://www.usp.gv.at/themen/betrieb-und-umwelt/laufender-betrieb/firmenbuch.html
-- https://www.usp.gv.at/themen/betrieb-und-umwelt/laufender-betrieb/weitere-informationen-laufender-betrieb/bilanzveroeffentlichung.html
-- https://www.usp.gv.at/services/egruendung.html
-- https://www.usp.gv.at/gruendung/EAP/gewerbeanmeldung.html
-- https://www.usp.gv.at/themen/steuern-finanzen/steuerliche-rechte-und-pflichten/pflichten-des-unternehmers.html
-- https://www.usp.gv.at/themen/steuern-finanzen/steuerliche-rechte-und-pflichten/organisatorische-massnahmen.html
-- https://www.usp.gv.at/themen/steuern-finanzen/umsatzsteuer-ueberblick/weitere-informationen-zur-umsatzsteuer/weitere-steuertatbestaende-und-befreiungen/kleinunternehmen.html
-- https://www.svs.at/cdscontent/?contentid=10007.816326
-- https://www.svs.at/cdscontent/?contentid=10007.899587&portal=svsportal
+Every page below was opened on 14 November 2026 and the quoted figures in the tables above were found on it that day.
+
+| Source | What was read | URL | Read on |
+|---|---|---|---|
+| USP | Read for the GmbH: EUR 10,000, half paid in cash, liability | https://www.usp.gv.at/services/suchen-und-finden/lexikon/gesellschaft-mit-beschraenkter-haftung-gmbh.html | 2026-11-14 |
+| USP | Read for the OG: two partners, unlimited liability, comes into being on registration | https://www.usp.gv.at/services/suchen-und-finden/lexikon/offene-gesellschaft-og.html | 2026-11-14 |
+| USP | Read for the KG: general and limited partners, Haftsumme | https://www.usp.gv.at/services/suchen-und-finden/lexikon/kommanditgesellschaft-kg.html | 2026-11-14 |
+| USP | Read for the size classes, micro limits EUR 450,000 and EUR 900,000 | https://www.usp.gv.at/services/suchen-und-finden/lexikon/kapitalgesellschaft.html | 2026-11-14 |
+| oesterreich.gv.at | Read for the GesbR: no legal personality, no register entry | https://www.oesterreich.gv.at/de/lexicon/P/Seite.991428 | 2026-11-14 |
+| USP | Read for the FlexCo introduced 1 January 2024 | https://www.usp.gv.at/aktuelles/newsreihen/Gesellschaftsrecht-f-r-Arbeitgeber/gesellschaftsrecht-fuer-arbeitgeber-teil-10.html | 2026-11-14 |
+| BMF | Read for FlexCo enterprise-value shares below 25% | https://www.bmf.gv.at/dam/jcr:05f303a4-befb-48d1-88af-2a35a452cfa7/Fachliche_News_WiEReG_2024-04-26.pdf | 2026-11-14 |
+| USP | Read for the 23% rate and the 27.5% KESt on dividends | https://www.usp.gv.at/themen/steuern-finanzen/koerperschaftsteuer-ueberblick.html | 2026-11-14 |
+| USP | Read for EUR 10,000 and EUR 70,000 minimum capital and the 5% minimum tax (EUR 500, EUR 3,500) | https://www.usp.gv.at/themen/steuern-finanzen/koerperschaftsteuer-ueberblick/koerperschaftsteuerpflicht.html | 2026-11-14 |
+| USP | Read for EUR 700,000 and EUR 1,000,000 bookkeeping thresholds | https://www.usp.gv.at/themen/steuern-finanzen/steuerliche-gewinnermittlung/weitere-informationen-zur-steuerlichen-gewinnermittlung/betriebliches-rechnungswesen/buchfuehrungspflicht-und-buchfuehrung.html | 2026-11-14 |
+| USP | Read for register entry of sole traders and the application | https://www.usp.gv.at/themen/betrieb-und-umwelt/laufender-betrieb/firmenbuch.html | 2026-11-14 |
+| USP | Read for EUR 70,000 paper filing, nine months, JustizOnline from 1 January 2026 | https://www.usp.gv.at/themen/betrieb-und-umwelt/laufender-betrieb/weitere-informationen-laufender-betrieb/bilanzveroeffentlichung.html | 2026-11-14 |
+| USP | Read for one-person GmbH and FlexCo formation online under § 9a GmbHG | https://www.usp.gv.at/services/egruendung.html | 2026-11-14 |
+| USP | Read for the trade licence registration route | https://www.usp.gv.at/gruendung/EAP/gewerbeanmeldung.html | 2026-11-14 |
+| USP | Read for notifying the tax office within one month | https://www.usp.gv.at/themen/steuern-finanzen/steuerliche-rechte-und-pflichten/pflichten-des-unternehmers.html | 2026-11-14 |
+| USP | Read for the Verf questionnaires | https://www.usp.gv.at/themen/steuern-finanzen/steuerliche-rechte-und-pflichten/organisatorische-massnahmen.html | 2026-11-14 |
+| USP | Read for the EUR 55,000 limit (EUR 35,000 to 2024) | https://www.usp.gv.at/themen/steuern-finanzen/umsatzsteuer-ueberblick/weitere-informationen-zur-umsatzsteuer/weitere-steuertatbestaende-und-befreiungen/kleinunternehmen.html | 2026-11-14 |
+| SVS | Read for SVS compulsory insurance start | https://www.svs.at/cdscontent/?contentid=10007.816326 | 2026-11-14 |
+| SVS | Read for SVS registration of managing directors and partners | https://www.svs.at/cdscontent/?contentid=10007.899587&portal=svsportal | 2026-11-14 |
+
+Not yet confirmed: the paid-in capital of an AG at formation and the FlexCo minimum capital (not printed on a readable official page); notary and court fees and formation timelines.
 
 This Guide is a source-cited draft. It is not legal or tax advice. Confirm each figure on the official page before relying on it.
 
 > Contributed by OpenAccountants.
+
