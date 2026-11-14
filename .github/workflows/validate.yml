@@ -177,3 +177,29 @@ jobs:
           echo "## Cross-skill contradictions" >> "$GITHUB_STEP_SUMMARY"
           cat contradictions.md >> "$GITHUB_STEP_SUMMARY"
           cat contradictions.md
+
+  # Row-by-row figure check: every figure in a linked table row must be on the
+  # page that row links to (scripts/check-row-sources.py). Runs on PRs only, with
+  # no secrets and a read-only token; fetches the official pages the skill cites.
+  # Not a required check: a miss shows red with the exact row, and the person
+  # merging explains or fixes each one (docs/AUTOMATED-REVIEW.md, "Figure check").
+  figures:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: "3.11"
+      - name: Install pdftotext
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils
+      - name: Check each linked row against its page
+        env:
+          BASE_REF: ${{ github.base_ref }}
+        run: |
+          git fetch origin "$BASE_REF" --depth 50
+          python3 scripts/check-row-sources.py --changed-only
