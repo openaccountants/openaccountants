@@ -81,6 +81,7 @@ def page_values(page_text):
     (1.234,56, 1 234,56, 2,25 %), so a page that writes figures with a decimal comma is
     not reported as a miss."""
     vals = set()
+    page_text = re.sub(r"\.{2,}", " ", page_text)  # dot leaders: "250,400.....3,916.09"
     found_nums = NUM_RE.findall(page_text) + NUM_RE.findall(GROUP_SPACE_RE.sub("", page_text))
     for m in found_nums:
         v = _value(m)
@@ -171,7 +172,7 @@ def check_text(text, fetcher=fetch):
             unreadable.append((urls, row))
             continue
         vals = set().union(*(page_values(p) for p in readable))
-        derived = bool(re.search(r"(?i)\b(derived|computed)\b", row))
+        derived = bool(re.search(r"(?i)\b(derived|computed)\b|in words on the page", row))
         for f in figs:
             if _value(f) == 0 or derived:
                 continue
