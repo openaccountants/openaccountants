@@ -1,7 +1,7 @@
 // Australian resident individual: income tax (after LITO) plus Medicare levy, and take-home,
 // 2026-27. Skills: au-rates-2026-27 (rates, LITO, Medicare, MLS, standard WRE deduction),
 // au-deductions-offsets (worked example).
-import { FactReader, taxYearFact, missingRule, money, ok, pct, r2, rule, type Engine, type EngineSpec } from "./types";
+import { FactReader, NeedsInput, taxYearFact, missingRule, money, ok, pct, r2, rule, type Engine, type EngineSpec } from "./types";
 
 const S = "au-rates-2026-27";
 export const BRACKETS = rule<[number, number | null, number][]>(
@@ -19,14 +19,16 @@ export const LITO = rule(
   "LITO | $700 to $37,500; taper 5c/$1 to $45,000; then 1.5c/$1 to nil at $66,667",
 );
 export const ML = rule("MEDICARE_LEVY_RATE", 0.02, S, "Medicare", "Levy | 2% of taxable income");
-export const ML_LOW = rule("MEDICARE_LOW_INCOME_SINGLE_2025_26", [28_011, 35_013], S, "Medicare", "Item | 2025-26 | Source\nLow-income threshold (single) | $28,011 / shade-in to $35,013 | ATO QC 27031\n2026-27 Medicare low-income thresholds index with CPI; confirm at ATO QC 27031");
+export const ML_LOW = rule("MEDICARE_LOW_INCOME_SINGLE_2026_27", [28_011, 35_013], S, "Medicare",
+  "2026-27 Medicare levy. The current Act sets the single non-SAPTO threshold at $28,011, with phase-in up to $35,013.");
 export const MLS = rule("MLS_BASE_TIER_SINGLE", 101_000, S, "Medicare", "MLS base tier | Single $101,000 / family $202,000 (then 1% / 1.25% / 1.5%)");
-export const WRE = rule("STANDARD_WRE_DEDUCTION", 1_000, S, "Individual income tax / Offsets and deductions", "$1,000 standard WRE deduction | From 1 July 2026 (2026-27 returns). Excludes PSI and business-only earners");
+export const WRE = rule("STANDARD_WRE_DEDUCTION", 1_000, S, "Individual income tax / Offsets and deductions",
+  "$1,000 standard WRE deduction | From 2026-27, an individual resident at any time in the year with qualifying assessable labour income can receive a top-up: max(0, min($1,000, that labour income) minus specified labour-related deductions). Business/PSI income alone does not qualify");
 const CONSTS = [BRACKETS, LITO, ML, ML_LOW, MLS, WRE];
 
 export const spec: EngineSpec = {
   name: "au_resident_tax_2026_27",
-  version: "1.2.0",
+  version: "1.4.0",
   jurisdiction: "AU",
   tax_years: ["2026-27"],
   summary:
@@ -38,7 +40,12 @@ export const spec: EngineSpec = {
     has_salary_or_wage_income: {
       type: "boolean",
       required: true,
-      description: "does the person earn salary or wages (labour income)? The engine then applies the $1,000 standard work deduction itself",
+      description: "does the person earn salary or wages (labour income)? The engine then applies the $1,000 standard work deduction top-up itself",
+    },
+    labour_income: {
+      type: "number",
+      required: false,
+      description: "AUD qualifying labour income (salary and wages) within gross_income; business or PSI income does not count. Taken as gross_income when not given",
     },
     actual_work_expenses_claimed: { type: "number", required: false, default: 0, description: "work-related expenses the person chooses to claim with records" },
     has_private_hospital_cover: { type: "boolean", required: true, description: "private patient hospital cover for the full year" },
@@ -80,22 +87,25 @@ export function run(facts: Record<string, unknown>) {
   const workExp = f.number("actual_work_expenses_claimed", 0);
   const phi = f.bool("has_private_hospital_cover");
   const help = f.bool("has_help_debt", false);
-  const used = {
+  const labourGiven = labour ? f.number("labour_income", null) : null;
+  if (labourGiven !== null && labourGiven > gross) throw new NeedsInput("input 'labour_income' must not be more than gross_income");
+  const labourIncome = labour ? (labourGiven ?? gross) : 0;
+  const used: Record<string, unknown> = {
     gross_income: gross, other_deductions: ded, has_salary_or_wage_income: labour,
     actual_work_expenses_claimed: workExp, has_private_hospital_cover: phi, has_help_debt: help,
   };
-  // Decided by the engine, not the AI: from 2026-27 the $1,000 standard deduction is
-  // automatic for residents with salary or wage income; actual work expenses claimed
-  // replace it only when larger (ATO example: $550 claimed -> $450 standard), so total
-  // work deductions = max(actual, $1,000). Skill gap: au-rates says "confirm whether
-  // automatic" (issue #1278).
-  const workDed = labour ? Math.max(workExp, WRE.value) : workExp;
+  if (labour) used.labour_income = labourIncome;
+  // au-rates-2026-27: from 2026-27 a resident with qualifying labour income gets a top-up of
+  // max(0, min($1,000, that labour income) minus specified labour-related deductions); business
+  // or PSI income alone does not qualify. The work expenses claimed are taken as those deductions.
+  const topUp = labour ? Math.max(0, Math.min(WRE.value, labourIncome) - workExp) : 0;
+  const workDed = workExp + topUp;
   const ti = Math.max(gross - ded - workDed, 0);
   if (help) {
     return missingRule(spec.name, "HELP repayment 2026-27 thresholds", "au-rates-2026-27 gives 2025-26 repayment thresholds only.", CONSTS, { inputsUsed: used });
   }
   if (ti <= ML_LOW.value[1]) {
-    return missingRule(spec.name, "Medicare levy low-income thresholds 2026-27", "Only 2025-26 thresholds are served; 2026-27 index with CPI (skill says confirm at ATO QC 27031).", CONSTS, { inputsUsed: used });
+    return missingRule(spec.name, "Medicare levy reduction in the low-income range", `Taxable income AUD ${money(ti)} is at or under AUD ${money(ML_LOW.value[1])}, where the 2026-27 levy is reduced or nil (single threshold AUD ${money(ML_LOW.value[0])}, phase-in to AUD ${money(ML_LOW.value[1])}); this engine does not compute the reduction or the family and SAPTO thresholds.`, CONSTS, { inputsUsed: used });
   }
   if (!phi && ti > MLS.value) {
     return missingRule(spec.name, "MLS 2026-27 tiers", "Skill gives the base tier and rates but not the 2026-27 tier bands; MLS would apply here.", CONSTS, { inputsUsed: used });
@@ -108,8 +118,8 @@ export function run(facts: Record<string, unknown>) {
   const takeHome = gross - total;
   const steps = [
     labour
-      ? `Work deductions = the larger of actual work expenses AUD ${money(workExp)} and the standard AUD ${money(WRE.value)} = AUD ${money(workDed)} (applied automatically for salary or wage income)`
-      : `Work deductions = actual work expenses AUD ${money(workExp)} (no salary or wage income, so no standard deduction)`,
+      ? `Standard work deduction top-up = max(0, min(AUD ${money(WRE.value)}, labour income AUD ${money(labourIncome)}) less work expenses AUD ${money(workExp)}) = AUD ${money(topUp)}; work deductions = AUD ${money(workDed)}`
+      : `Work deductions = actual work expenses AUD ${money(workExp)} (no salary or wage income, so no standard deduction top-up)`,
     `Taxable income = AUD ${money(gross)} less other deductions AUD ${money(ded)} less work deductions AUD ${money(workDed)} = AUD ${money(ti)}`,
     `Tax on taxable income at the 2026-27 resident rates = AUD ${money(grossTax)}`,
     `Low income tax offset = AUD ${money(off)}; income tax after offsets = AUD ${money(netTax)}`,
@@ -131,7 +141,8 @@ export function run(facts: Record<string, unknown>) {
         "Resident for the full year",
         "No Medicare levy reduction (income above the low-income range)",
         "Take-home = gross income less income tax and Medicare levy (super is on top of salary)",
-        "Standard $1,000 work deduction applied automatically for salary/wage earners (ATO 2026-27); actual work expenses replace it only if larger",
+        "Standard work deduction: a top-up to the smaller of $1,000 and labour income, less the work expenses claimed (au-rates-2026-27); the work expenses claimed are taken as the specified labour-related deductions",
+        ...(labour && labourGiven === null ? ["Labour income taken as equal to gross income; give labour_income if part of gross income is business or PSI income"] : []),
       ],
       anchors,
     },

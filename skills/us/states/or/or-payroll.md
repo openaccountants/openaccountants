@@ -7,8 +7,8 @@ domain: tax
 tax_year: 2026
 tier: 2
 type: computation
-version: "0.2"
-last_updated: 2026-11-13
+version: "0.3"
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
@@ -94,10 +94,10 @@ The official table labels overlap at exactly $50,000 gross wages and gives minim
 | 2026 Paid Leave subject wage limit | $184,500 per employee for Oregon contributions, as published by Oregon | https://www.oregon.gov/employ/Businesses/Pages/Current-Tax-Rate.aspx |
 | 2026 Paid Leave combined contribution | 1% of subject wages; employee 60% of contribution, employer 40% when subject | https://paidleave.oregon.gov/resources/common-questions.html |
 | Paid Leave employer-share gate | At least 25 employees on average, counting workers in and outside Oregon; smaller employers generally no employer share unless assistance-grant rule applies | https://paidleave.oregon.gov/resources/common-questions.html |
-| 2026 STT | 0.1% of subject employee wages, no annual wage cap; employee-paid | https://www.oregon.gov/dor/programs/businesses/pages/statewide-transit-tax.aspx |
+| 2026 STT | 0.1% of subject employee wages, no annual wage cap; employee-paid | https://www.oregon.gov/dor/programs/businesses/pages/statewide-transit-tax.aspx; https://www.oregon.gov/dor/forms/FormsPubs/combined-payroll_211-155-2_2026.pdf |
 | 2026 TriMet employer payroll tax | 0.8237% of covered wages for services in district; employer-paid | https://www.oregon.gov/dor/forms/FormsPubs/transit-payroll-taxes_211-503.pdf |
 | 2026 LTD employer payroll tax | 0.80% of covered wages for services in district; employer-paid | https://www.oregon.gov/dor/forms/FormsPubs/transit-payroll-taxes_211-503.pdf |
-| 2026 WBF combined assessment | $0.018 per subject hour; employer at least half, employee no more than half | https://wcd.oregon.gov/laws/Documents/New_rules/070%20WBF%20-%20January%201%2C%202026/70-25054-rule-notice-and-rules.pdf |
+| 2026 WBF combined assessment | $0.018 per subject hour; employer at least half, employee no more than half | https://wcd.oregon.gov/laws/Documents/New_rules/070%20WBF%20-%20January%201%2C%202026/70-25054-rule-notice-and-rules.pdf; https://www.oregon.gov/dor/forms/FormsPubs/combined-payroll_211-155-2_2026.pdf |
 
 Report all UI subject wages, excess over the annual base and taxable wages separately. Current-quarter taxable wages are max(0, min(current subject wages, annual base minus prior **same employer** taxable/subject wages used toward that base)). Use the actual rate notice, not the range or an old example rate. Do not label Oregon's wage base the highest nationally; that comparison is unnecessary and unverified. [OED rates](https://www.oregon.gov/employ/Businesses/Pages/Current-Tax-Rate.aspx); [OQ instructions pp.14-15](https://www.oregon.gov/dor/forms/FormsPubs/combined-payroll_211-155-2_2026.pdf).
 

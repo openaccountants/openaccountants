@@ -1,10 +1,10 @@
 ---
 name: pa-income-tax
 description: Use this skill for the Pennsylvania personal income tax return, Form PA-40, for tax year 2026 (with 2025 returns filed in 2026). It covers residents, part-year residents and nonresidents, sole proprietors and single-member LLCs on PA Schedule C, the flat 3.07% rate on eight classes of income, no netting of losses between classes or spouses, Schedule O deductions, tax forgiveness (Schedule SP), the Working Pennsylvanians Tax Credit, the resident credit and reciprocal states, retirement income, PA depreciation and section 179 rules, estimated tax ($14,000 and $430 tests for 2026), extensions and penalties. Trigger on "Pennsylvania income tax", "PA-40", "PA personal income tax", "PA Schedule C", "tax forgiveness", "PA estimated tax". Local earned income tax is in pa-local-eit.
-version: "1.0"
+version: "1.1"
 jurisdiction: US-PA
 tax_year: 2026
-last_updated: 2026-11-13
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
@@ -70,7 +70,7 @@ Line numbers are from the 2025 PA-40 ([2025 PA-40 instructions](https://www.pa.g
 | --- | --- | --- | --- |
 | Tax rate | 3.07% flat | 3.07% flat | [2025 PA-40 instructions](https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/formsforindividuals/pit/documents/2025/2025_pa-40in.pdf): "The state income tax rate for 2025 is 3.07 percent (0.0307)"; [2026 REV-413 (I)](https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/formsforindividuals/pit/documents/2026/2026_rev-413i.pdf): "Multiply Line 1 by 3.07 percent (0.0307)" |
 | Must file if PA gross taxable income is | more than $33, or any loss from a transaction | 2026 instructions not yet published; the 2025 test is the reference | [2025 PA-40 instructions](https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/formsforindividuals/pit/documents/2025/2025_pa-40in.pdf) |
-| Estimated tax: income not subject to PA withholding | $11,000 ($338 of tax) | $14,000 ($430 of tax) | [2026 REV-413 (I)](https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/formsforindividuals/pit/documents/2026/2026_rev-413i.pdf) |
+| Estimated tax: income not subject to PA withholding | $11,000 ($338 of tax, derived: 3.07% of $11,000, rounded) | $14,000 ($430 of tax) | [2026 REV-413 (I)](https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/formsforindividuals/pit/documents/2026/2026_rev-413i.pdf) |
 
 The estimated tax income threshold is set to rise to $17,000 for 2027 and $20,000 for 2028 ([2026 REV-413 (I)](https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/formsforindividuals/pit/documents/2026/2026_rev-413i.pdf)). It is **not** a filing threshold.
 
