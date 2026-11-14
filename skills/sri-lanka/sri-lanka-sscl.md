@@ -1,101 +1,156 @@
 ---
 name: sri-lanka-sscl
-description: ALWAYS read this skill before touching any Sri Lanka Social Security Contribution Levy (SSCL) work. Use whenever asked about SSCL on turnover for importers, manufacturers, service providers, wholesalers/retailers, or financial-service businesses in Sri Lanka. Trigger on phrases like "Sri Lanka SSCL", "Social Security Contribution Levy", "2.5% turnover levy Sri Lanka", "liable turnover Sri Lanka", or "SSCL registration Sri Lanka". Covers the SSCL at 2.5% on liable turnover, the activity-dependent liable-turnover fraction, and its in-force status (most recently amended by the SSCL Amendment Act No. 24 of 2025). Out of scope — income tax, corporate tax, VAT, and withholding tax (separate skills).
+description: ALWAYS read this skill before touching any Sri Lanka Social Security Contribution Levy (SSCL) work for the year of assessment 2026/27 (1 April 2026 to 31 March 2027). Use whenever asked about SSCL on turnover for importers, manufacturers, service providers, wholesalers and retailers, or financial-service businesses in Sri Lanka. Trigger on phrases like Sri Lanka SSCL, Social Security Contribution Levy, 2.5% turnover levy Sri Lanka, liable turnover, SSCL registration threshold, SSCL return. Gives the 2.5% rate, the liable-turnover fractions by activity (100%, 85%, 50%, 25%), the Rs. 15 million quarterly and Rs. 60 million four-quarter registration test, the excluded articles, monthly payment and quarterly return dates.
+version: "2.0"
 jurisdiction: LK
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+tax_year_notes: "Year of assessment 2026/27 (2026-27); SSCL is charged by quarter"
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
+type: computation
 ---
 
-# Sri Lanka Sscl
+# Sri Lanka Social Security Contribution Levy (SSCL), v2.0
 
-## Sri Lanka — Social Security Contribution Levy (SSCL) — Skill v1.0
+Built from the law: not yet approved by an accountant. Produced by OpenAccountants (openaccountants.com). Not tax advice. Period covered: quarters in the year of assessment 2026/27.
 
-> **Produced by OpenAccountants (openaccountants.com).** Research-grade (tier 2), drafted from official IRD sources — pending sign-off by a Sri Lankan CA / IRD-registered practitioner. Not tax advice.
+## Scope and who this is for
 
-## Section 1 — Quick reference
-
-**Quick reference table**
-
-| Field | Value |
+| Field | Detail |
 | --- | --- |
-| Country / authority | Sri Lanka — Inland Revenue Department (IRD) |
-| Tax | Social Security Contribution Levy (SSCL) — a turnover-based levy, separate from VAT and income tax |
+| Country and authority | Sri Lanka, Inland Revenue Department (IRD) |
+| Tax | Social Security Contribution Levy, a turnover levy separate from VAT and income tax |
+| Principal Act | Social Security Contribution Levy Act, No. 25 of 2022, in force from 1 October 2022; amended by the SSCL (Amendment) Act No. 24 of 2025 |
+| Basis | Accrual; charged for every quarter on liable turnover |
 | Currency | LKR |
-| **Rate** | **2.5% on liable turnover** |
-| Liable turnover | An **activity-dependent fraction (25%–100%) of gross turnover** — NOT gross turnover itself |
-| Status | **In force** (most recently amended by the SSCL Amendment Act No. 24 of 2025) |
-| Principal statute | Social Security Contribution Levy Act (2022), as amended — VERIFY the exact principal-Act number/year |
-| Registration threshold | **Not asserted — VERIFY** (a quarterly liable-turnover threshold applies; confirm current LKR figure with the IRD) |
-| Skill version | 1.0 |
+
+- **In:** every taxable person (individual or entity, including a body of persons, an executor, an NGO and a charitable institution) who imports any article, manufactures any article, provides a service of any description, or carries on wholesale or retail sale of any article including importation and sale (other than a sale by the manufacturer already covered as a manufacturer).
+- **Status:** in force. The IRD page for SSCL, read on 14 November 2026, sets out the levy as current. Re-confirm at the date of supply if a change is reported.
+- **Not here:** VAT (`sri-lanka-vat`), income tax (`sri-lanka-income-tax`, `sri-lanka-corporate-tax`), withholding (`sri-lanka-withholding-tax`).
+
+## Ask the client first
+
+1. Activity class: importer, manufacturer, service provider (financial services, real estate, other) or wholesaler and retailer (registered distributor or other)?
+2. Turnover by quarter and for the last four quarters, excluding exempt articles and services.
+3. SSCL registration status and TIN.
+4. Any excluded items: pharmaceuticals, Special Commodity Levy articles sold unprocessed by the importer, exports, petrol, diesel or kerosene sold at a filling station, LP gas, fresh milk, green leaf, cinnamon or rubber bought from local producers.
+5. Bad debts written off or recovered in the quarter; VAT included in the figures.
+
+## The method, step by step
+
+### Rates, bands and thresholds
+
+| Item | Figure | Conditions | Source |
+| --- | --- | --- | --- |
+| Rate | 2.5% of liable turnover | Every quarter from 1 October 2022 | https://www.ird.gov.lk/en/Type%20of%20Taxes/SitePages/Social%20Security%20Contribution%20Levy%20(SSCL).aspx |
+| Liable turnover, importation of any article | 100% of turnover | Value for VAT under VAT Act section 6, less exempt articles | same |
+| Liable turnover, manufacture of any article | 85% of turnover | Sums receivable for articles manufactured and sold in Sri Lanka | same |
+| Liable turnover, financial services | 100% of the value addition attributable to financial services | As under the VAT Act section 25C notification | same |
+| Liable turnover, land and improvements | 100% of the value of improvement | Sale value less market value of the bare land, VAT Act section 5(7) | same |
+| Liable turnover, other services | 100% of turnover | Section 3(2)(c)(iii) | same |
+| Liable turnover, sale by a registered distributor of a Sri Lankan manufacturer or producer | 25% of turnover | Section 3(2)(d) | same |
+| Liable turnover, other wholesale or retail sale, including importation and sale | 50% of turnover | Section 3(2)(d) | same |
+| Registration threshold | Turnover for a quarter over or likely over Rs. 15,000,000, or for four consecutive quarters over or likely over Rs. 60,000,000 | Any period from 1 January 2024; excluding exempt articles or services | same |
+
+### Steps
+
+1. Classify each activity. A person with several activities computes each class separately.
+2. Take turnover for the quarter (sums receivable, received or not), excluding exempt articles and services, bad debts incurred in the quarter (add back recoveries), VAT, and any Export Development Rebate for an approved international event.
+3. Apply the liable-turnover fraction for the class.
+4. Multiply liable turnover by 2.5%.
+5. Pay monthly on self-assessment and file the quarterly return (Filing and payment below).
+6. Register when the quarter or four-quarter test is met.
 
 ### Conservative defaults
 
-**Conservative defaults table**
-
 | Ambiguity | Default |
 | --- | --- |
-| Liable-turnover fraction for the activity unclear | Apply the **higher** fraction (up to 100%) and flag |
-| Registration obligation borderline (threshold) | Treat as registrable and flag — VERIFY threshold |
-| Whether SSCL applies to a supply | Apply 2.5% on the liable fraction and flag for reviewer |
+| Activity class unclear | Apply the higher fraction (up to 100%) and flag |
+| Registration borderline | Treat as registrable and flag |
+| Whether SSCL applies to a supply | Apply 2.5% on the liable fraction and flag for review |
 
-## Section 2 — Required inputs and refusal catalogue
+## Boundary and exception table
 
-### Required inputs
+| Situation | Treatment |
+| --- | --- |
+| Applying 2.5% to gross turnover for a class below 100% | Wrong: over-states the levy; apply the fraction first |
+| Export of an article | Excluded from turnover |
+| Petrol, diesel or kerosene sold at a filling station; LP gas | Excluded from wholesale and retail turnover |
+| Pharmaceuticals | Excluded |
+| Special Commodity Levy article sold by the importer without processing | Excluded |
+| Fresh milk, green leaf, cinnamon or rubber bought from a local producer | Excluded |
+| Bad debt recovered in a later quarter | Included in that later quarter's turnover |
+| Exempt articles (Part IA) and exempt services (Part II) of the First Schedule | Out of turnover; the schedule list itself is not reproduced here |
 
-- **Required inputs** — Business activity classification (importer / manufacturer / service provider / wholesaler-retailer / financial services — drives the liable-turnover fraction); gross turnover for the period; SSCL registration status; any exemptions claimed.
+## Worked cases
 
-### Refusal catalogue
+### Case 1: manufacturer
 
-- **R-LK-SSCL-1 — Liable-turnover fraction tables** — The exact 25%–100% fraction per activity class is set by the SSCL Act/schedules and changes by amendment — this skill states the principle but does NOT assert the per-activity fraction table. VERIFY against the current SSCL Act and IRD guidance; escalate.  _(R-LK-SSCL-1)_
-- **R-LK-SSCL-2 — Registration threshold** — The quarterly liable-turnover registration threshold is NOT asserted here — VERIFY the current LKR figure with the IRD.  _(R-LK-SSCL-2)_
-- **R-LK-SSCL-3 — Exemptions / sector treatment** — Exempt supplies and sector-specific treatment are schedule-driven — escalate.  _(R-LK-SSCL-3)_
-- **R-LK-SSCL-4 — Cross-skill** — Income tax / corporate / VAT / WHT → the respective Sri Lanka skills.  _(R-LK-SSCL-4)_
+A manufacturer sells articles it makes in Sri Lanka for Rs. 100,000,000 in a quarter. Liable turnover is 85%.
 
-## Section 3 — Tier 1 rules
-
-### 3.1 Rate and base
-
-- **SSCL rate on liable turnover** — 2.5% percent (Charged on liable turnover, which is an activity-dependent fraction (25%–100%) of gross turnover)  _(Section 3 — Tier 1 rules, 3.1 Rate and base)_
-- **Over-statement risk of applying 2.5% to gross turnover** — Applying 2.5% directly to gross turnover for every activity over-states the levy for activities with a sub-100% fraction.  _(Section 3 — Tier 1 rules, 3.1 Rate and base)_
-- **SSCL formula** — SSCL = 2.5% × (liable-turnover fraction × gross turnover)  _(Section 3 — Tier 1 rules, 3.1 Rate and base)_
-- **Liable-turnover fraction dependency** — The liable-turnover fraction depends on the activity class (importer, manufacturer, service provider, wholesaler/retailer, financial services). The per-activity fraction is not asserted in this skill — VERIFY against the current SSCL Act and IRD schedule.  _(Section 3 — Tier 1 rules, 3.1 Rate and base)_
-
-### 3.2 Status
-
-- **SSCL in-force status** — SSCL is in force for YA 2025/26, most recently amended by the SSCL Amendment Act No. 24 of 2025. (Note: the existing VAT skill flags SSCL status as volatile — this skill confirms it is currently in force, but the practitioner should re-confirm the in-force status and any rate/fraction changes at the date of supply.)  _(Section 3 — Tier 1 rules, 3.2 Status)_
-
-## Section 4 — Worked example (illustrative — confirm the liable fraction)
-
-A manufacturer with gross turnover LKR 100,000,000 in a period, where the applicable liable-turnover fraction is (illustratively) 50%:
-
-```
-Liable turnover = 50% × 100,000,000 = 50,000,000
-SSCL = 2.5% × 50,000,000 = LKR 1,250,000
+```oa-check
+name: Manufacturer, one quarter
+inputs:
+  turnover: 100000000
+steps:
+  - liable: turnover * 0.85
+  - sscl: liable * 0.025
+expected:
+  liable: 85000000
+  sscl: 2125000
 ```
 
-The 50% fraction is illustrative only — the real fraction must be taken from the current SSCL schedule for the activity class.
+### Case 2: decision, sell as a registered distributor or as an ordinary wholesaler
 
-## Section 5 — Filing
+A wholesaler with Rs. 100,000,000 of quarterly sales of goods made by a Sri Lankan manufacturer. Selling as that manufacturer's registered distributor puts 25% of turnover in the base; selling as an ordinary wholesaler puts 50% in. The distributor route halves the levy.
 
-SSCL is administered by the IRD. Return/payment frequency and due dates — VERIFY against the current IRD SSCL guidance (not asserted here).
+```oa-check
+name: Registered distributor against ordinary wholesale, one quarter
+inputs:
+  turnover: 100000000
+steps:
+  - distributor_levy: turnover * 0.25 * 0.025
+  - wholesale_levy: turnover * 0.50 * 0.025
+  - difference: wholesale_levy - distributor_levy
+expected:
+  distributor_levy: 625000
+  wholesale_levy: 1250000
+  difference: 625000
+```
 
-## Section 6 — Sources
+## When to refuse or refer
 
-1. IRD SSCL page — https://www.ird.gov.lk/en/Type%20of%20Taxes/SitePages/Social%20Security%20Contribution%20Levy%20(SSCL).aspx
-2. IRD YA 2025/26 tax chart (SSCL 2.5% on liable turnover) — https://www.ird.gov.lk/en/publications/SitePages/tax_chart_2526.aspx
+- R-LK-SSCL-1: exempt articles and services. The First Schedule lists drive the result; escalate where an exemption is claimed beyond the exclusions above.
+- R-LK-SSCL-2: changes made by the SSCL (Amendment) Act No. 24 of 2025. Its text was not read; escalate any question that turns on it.
+- R-LK-SSCL-3: sector treatment (financial services value addition, real estate improvement value). Escalate the computation of the value addition or improvement.
+- R-LK-SSCL-4: cross-skill. Income tax, corporate tax, VAT and WHT go to the Sri Lanka skill for each.
+- Never file or instruct filing; produce a working paper for practitioner review.
 
-**Known gaps / VERIFY:** principal-Act number/year; per-activity liable-turnover fractions; registration threshold; filing frequency and due dates; exemptions.
+## Filing and payment
 
-## Prohibitions
+| Obligation | Due date | Source |
+| --- | --- | --- |
+| Payment, first month of the quarter | On or before the 20th day of the second month of the quarter | IRD SSCL page |
+| Payment, second month | On or before the 20th day of the third month of the quarter | IRD SSCL page |
+| Payment, third month | On or before the 20th day of the month after the quarter ends | IRD SSCL page |
+| Quarterly return | On or before the 20th day of the month after the quarter ends | IRD SSCL page |
+| Channel | Online through IRD e-Services | IRD SSCL page |
 
-- NEVER apply 2.5% to **gross** turnover for an activity whose liable-turnover fraction is below 100% — that over-states the levy.
-- NEVER assert a per-activity liable-turnover fraction, a registration threshold, or filing dates this skill flags as VERIFY.
-- NEVER treat SSCL as suspended — it is currently in force (re-confirm at the date of supply).
-- NEVER file or instruct filing — produce a working paper for practitioner review.
+## Completion checklist
 
-## Disclaimer
+- [ ] Activity class and fraction identified for each stream
+- [ ] Exclusions, bad debts and VAT removed from turnover
+- [ ] 2.5% applied to liable turnover, not gross turnover
+- [ ] Registration test checked on the quarter and on four quarters
+- [ ] Monthly payments and the quarterly return diarised
 
-This skill and its outputs are for informational and computational purposes only and do not constitute tax, legal, or financial advice. All outputs must be reviewed and signed off by a qualified Sri Lankan professional (CA / IRD-registered tax practitioner) before filing or acting upon. The latest verified version is maintained at [openaccountants.com](https://openaccountants.com).
+## Sources
+
+| Source | URL | Read on |
+| --- | --- | --- |
+| Read for scope of liability, turnover definitions, exclusions, registration threshold, rate and liable-turnover fractions, payment and return dates on the IRD SSCL page | https://www.ird.gov.lk/en/Type%20of%20Taxes/SitePages/Social%20Security%20Contribution%20Levy%20(SSCL).aspx | 2026-11-14 |
+| Read for the SSCL section (registration test and the liable turnover table) of the IRD tax chart, the latest on the site | https://www.ird.gov.lk/en/publications/SitePages/tax_chart_2526.aspx | 2026-11-14 |
+
+Not yet confirmed: the text of the SSCL (Amendment) Act No. 24 of 2025 and what it changed (not linked from the IRD SSCL page; documents.gov.lk did not serve it to a script); the full First Schedule lists of exempt articles and services; any SSCL change announced for 2026/27 that is not on the IRD SSCL page.
