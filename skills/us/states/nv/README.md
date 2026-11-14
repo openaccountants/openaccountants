@@ -23,8 +23,8 @@ Nevada has no individual or conventional corporate net-income tax and no state i
 | Commerce Tax and MBT | nv-commerce-and-mbt | checked against the law; material partials above |
 | Sales/use tax | nv-sales-tax | checked against the law; material partials above |
 | Payroll UI/CEP | nv-payroll | checked against the law; material partials above |
-| Formation | nv-formation | existing separate job, not rewritten or re-approved in this PR |
+| Formation | nv-formation | 2026 formation/list/licence charges checked against the law; specialist and portal gaps listed in the skill |
 
 The duplicate `nv-commerce-tax.md` is retired into `nv-commerce-and-mbt.md`. The surviving skill preserves its professional-firm case, categories, threshold, source inputs and corrected form mapping. MBT has one computation owner; the UI skill links to it.
 
-Commerce year here is July 2025-June 2026; MBT/UI use calendar 2026 quarters. Sources were read 2026-11-13. Current Commerce/MBT forms are V2026.1 and UI expressly confirms the 2026 wage base. Remaining separate jobs: gaming, net proceeds of minerals/gold-silver excise, insurance premium, live entertainment, property, licences, trust/asset-protection advice and other-state/federal returns. The old formation skill remains outside this tax-pack refresh and may contain stale figures; use its own source/approval status.
+Commerce year here is July 2025-June 2026; MBT/UI use calendar 2026 quarters. Tax sources were read 2026-11-13; formation sources were read 2026-11-14. Current Commerce/MBT forms are V2026.1 and UI expressly confirms the 2026 wage base. Remaining separate jobs: gaming, net proceeds of minerals/gold-silver excise, insurance premium, live entertainment, property, licences, trust/asset-protection advice and other-state/federal returns. The separate formation skill covers ordinary filings and retains trust, series and other-state referrals; it remains a source-cited draft without accountant approval.
