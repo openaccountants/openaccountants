@@ -657,7 +657,7 @@ TERM_SHARED_WITH = {
 #: Territories that lawfully cite a neighbour's law and sites.
 #: French overseas territories cite French state sites (legifrance, impots.gouv, douane), and
 #: Sint Maarten, Curacao and Aruba cite Dutch ones (overheid.nl) for Kingdom law.
-NEIGHBOUR_TLDS = {"GF": {"fr"}, "GP": {"fr"}, "MQ": {"fr"}, "RE": {"fr"}, "YT": {"fr"}, "MF": {"fr"}, "BL": {"fr"}, "PM": {"fr"}, "SX": {"nl"}, "CW": {"nl"}, "AW": {"nl"}, "GG": {"uk"}, "IM": {"uk"}, "JE": {"uk"}, "GI": {"uk"}, "MC": {"fr"}, "SM": {"it"}, "VA": {"it"}, "LI": {"ch", "at"}, "SJ": {"no"}}
+NEIGHBOUR_TLDS = {"GF": {"fr"}, "GP": {"fr"}, "MQ": {"fr"}, "RE": {"fr"}, "YT": {"fr"}, "MF": {"fr"}, "BL": {"fr"}, "PM": {"fr"}, "SX": {"nl"}, "CW": {"nl"}, "AW": {"nl"}, "GG": {"uk"}, "IM": {"uk"}, "JE": {"uk"}, "GI": {"uk"}, "MC": {"fr"}, "SM": {"it"}, "VA": {"it"}, "LI": {"ch", "at"}, "SJ": {"no"}, "HM": {"au"}}
 #: Jurisdiction values that name no single place.
 NON_PLACE_JURISDICTIONS = {"", "GLOBAL", "INTL", "GENERAL", "EU", "EU-27", "EU/EEA/CH/UK", "?"}
 #: Two-letter endings that say nothing about a country.
