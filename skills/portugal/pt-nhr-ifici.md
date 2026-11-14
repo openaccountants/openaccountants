@@ -1,16 +1,17 @@
 ---
 name: pt-nhr-ifici
 description: "Portugal's IFICI regime (EBF art. 58-A, often called NHR 2.0) and the old non-habitual resident (NHR) regime, for tax year 2026. Covers who qualifies for IFICI (not resident in the previous five years, the seven activity routes, Portaria 352/2024/1 professions and business codes, the reviewing bodies), registration by 15 January of the year after arrival, the 20% rate on qualifying Portuguese employment and business income for 10 years, the exemption of most foreign income (not pensions, 35% on income from listed low-tax jurisdictions), the NHR transitional rules (who could still enter in 2024, the 10% pension rate, the pre-2020 pension exemption), the IRS Jovem bar, Annex L, penalties. Trigger on: IFICI, NHR, RNH, residente não habitual, 20% flat rate Portugal, Portugal pension 10%, artigo 58.º-A EBF, Portaria 352/2024. Out of scope: pt-irs-employees-investment, pt-income-tax, pt-cross-border, pt-foreign-source-treaties, portugal-crypto-tax."
-version: 1.1
+version: 1.2
 jurisdiction: PT
 tax_year: 2026
-last_updated: 2026-10-24
+last_updated: 2026-11-14
 depends_on:
   - pt-income-tax
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: cross-border
+type: situation-rules
 ---
 
 # Portugal: IFICI and the old NHR regime, for 2026
@@ -84,14 +85,14 @@ A person who became resident in 2025 or later cannot enter NHR (NHR FAQ 5153). A
 | IFICI withholding on qualifying monthly Category A pay | 20% | 2026 | CIRS art. 99(8): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs99.aspx |
 | IFICI withholding on qualifying Category B income | 20% | 2026 | CIRS art. 101(1)(d): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs101.aspx |
 | IFICI: foreign income of any category paid by an entity in a listed low-tax jurisdiction | 35% (final withholding where a Portuguese payer or agent is involved, otherwise autonomous rate) | 2026 | CIRS art. 81(5), 71(17)(b) and (c), 72(18): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs81.aspx |
-| Gap allowed between two qualifying activities | 6 months | 2026 | EBF art. 58-A(4) |
+| Gap allowed between two qualifying activities | 6 months | 2026 | EBF art. 58-A(4) https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/bf_rep/Pages/ebf58a.aspx |
 | Annex I qualification | Doctorate (level 8), or degree (level 6) plus 3 years' experience | 2026 | Portaria 352/2024/1, art. 7(2): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Portaria_352_2024_1.pdf |
-| Export test, letter (c)(ii) | at least 50% of turnover | 2026 | EBF art. 58-A(1)(c)(ii) |
+| Export test, letter (c)(ii) | at least 50% of turnover | 2026 | EBF art. 58-A(1)(c)(ii) https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/bf_rep/Pages/ebf58a.aspx |
 | AICEP instead of IAPMEI, letter (d) | prior-year consolidated turnover EUR 75 million or more | 2026 | IFICI FAQ 5525: https://info.portaldasfinancas.gov.pt/pt/apoio_contribuinte/questoes_frequentes/pages/faqs-01018.aspx |
 | NHR rate on net Category A and B income from a listed high-value activity | 20% | Whole NHR period | Old CIRS art. 72(10): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/ra/Pages/irs72ra_202312.aspx |
-| NHR rate on net foreign pensions | 10%, or aggregation by choice | Whole NHR period, for NHRs not kept on the pre-2020 rules | Old CIRS art. 72(12) and (13): same URL |
+| NHR rate on net foreign pensions | 10%, or aggregation by choice | Whole NHR period, for NHRs not kept on the pre-2020 rules | Old CIRS art. 72(12) and (13): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/ra/Pages/irs72ra_202312.aspx |
 | NHR withholding on high-value Category A and B income | 20% | Whole NHR period | Old CIRS art. 99(8) and 101(1)(d), kept by art. 236(3); NHR leaflet: https://info.portaldasfinancas.gov.pt/pt/apoio_contribuinte/Folhetos_informativos/Documents/IRS_RNH_PT.pdf |
-| General IRS bands, for comparison | 12.50% to 48.00% in nine bands (table below) | 2026 | CIRS art. 68(1), Lei 73-A/2025: https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs68.aspx |
+| General IRS bands, for comparison | 12.20% to 48.00% in nine bands (table below) | 2026 | CIRS art. 68(1), wording of Decreto-Lei 212/2026 (effect from 1 January 2026): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs68.aspx |
 | Solidarity surcharge | 2.5% on taxable income over EUR 80,000 to 250,000; 5% above | 2026 | CIRS art. 68-A: https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs68a.aspx |
 | Category A specific deduction | 8.54 x IAS = EUR 4,587.09, or compulsory social security if higher | 2026 | CIRS art. 25(1)(a) and (2): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs25.aspx |
 | Category H (pension) specific deduction | Same EUR 4,587.09 per pensioner | 2026 | CIRS art. 53(1) and (2): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs53.aspx |
@@ -99,19 +100,19 @@ A person who became resident in 2025 or later cannot enter NHR (NHR FAQ 5153). A
 
 The 2026 general bands (CIRS art. 68(1)), needed for any comparison:
 
-| Taxable income (EUR) | Marginal rate | Average rate on the whole band |
-|---|---|---|
-| up to 8,342 | 12.50% | 12.500% |
-| over 8,342 to 12,587 | 15.70% | 13.579% |
-| over 12,587 to 17,838 | 21.20% | 15.823% |
-| over 17,838 to 23,089 | 24.10% | 17.705% |
-| over 23,089 to 29,397 | 31.10% | 20.579% |
-| over 29,397 to 43,090 | 34.90% | 25.130% |
-| over 43,090 to 46,566 | 43.10% | 26.472% |
-| over 46,566 to 86,634 | 44.60% | 34.856% |
-| over 86,634 | 48.00% | n/a |
+| Taxable income (EUR) | Marginal rate | Average rate on the whole band | Source |
+|---|---|---|---|
+| up to 8,342 | 12.20% | 12.200% | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs68.aspx; https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Decreto-Lei-212-2026.pdf |
+| over 8,342 to 12,587 | 15.20% | 13.212% | same |
+| over 12,587 to 17,838 | 20.70% | 15.416% | same |
+| over 17,838 to 23,089 | 23.60% | 17.277% | same |
+| over 23,089 to 29,397 | 30.60% | 20.136% | same |
+| over 29,397 to 43,090 | 34.60% | 24.732% | same |
+| over 43,090 to 46,566 | 43.10% | 26.103% | same |
+| over 46,566 to 86,634 | 44.60% | 34.658% | same |
+| over 86,634 | 48.00% | n/a | same |
 
-Income up to the top of the highest full band is taxed at that band's average rate; the excess at the next band's marginal rate (art. 68(2)). Lei 64-B/2026 of 22 October 2026 authorises the Government to cut the first six marginal rates for 2026 by decree-law; no decree had been published on 24 October 2026 (see Sources).
+Income up to the top of the highest full band is taxed at that band's average rate; the excess at the next band's marginal rate (art. 68(2)). Decreto-Lei 212/2026 of 4 November 2026, made under the authorisation in Lei 64-B/2026, cut the first six marginal rates to 12.2%, 15.2%, 20.7%, 23.6%, 30.6% and 34.6% for income obtained in 2026, with effect from 1 January 2026 (see Sources). The table above shows the new rates.
 
 ## The taxable base
 
@@ -194,7 +195,7 @@ Ana is a software engineer (Annex I code 25, master's degree, five years' experi
 3. **German dividends:** Category E obtained abroad, exempt under art. 81(4). They count only to set the rate on other aggregated income; she has none.
 4. **UAE dividends:** the UAE is a listed low-tax jurisdiction (IFICI FAQ 5500), so 35% x 2,000 = EUR 700.00 (art. 81(5) and 72(18)).
 5. **Total IRS before personal deductions:** 15,130 + 700 = EUR 15,830.00.
-6. **General rates, for comparison:** 46,566 x 26.472% + (75,650 - 46,566) x 44.60% = 12,326.95 + 12,971.46 = EUR 25,298.42. IFICI saves EUR 10,168.42 on the salary.
+6. **General rates, for comparison:** 46,566 x 26.103% + (75,650 - 46,566) x 44.60% = 12,155.12 + 12,971.46 = EUR 25,126.59 (unrounded parts). IFICI saves EUR 9,996.59 on the salary.
 
 ```oa-check
 name: PT IFICI startup engineer, 20% vs 2026 bands, UAE dividends at 35%
@@ -207,7 +208,7 @@ inputs:
   uae_dividends: 2000
   listed_rate: 0.35
   band7_top: 46566
-  band7_avg: 0.26472
+  band7_avg: 0.26103
   band8_rate: 0.446
 steps:
   - ss: gross_salary * ss_rate
@@ -224,8 +225,8 @@ expected:
   ifici_tax: 15130.00
   uae_tax: 700.00
   total_ifici: 15830.00
-  general_salary_tax: 25298.42
-  saving: 10168.42
+  general_salary_tax: 25126.59
+  saving: 9996.59
 tolerance: 0.01
 ```
 
@@ -238,7 +239,7 @@ Peter signed a lease on a flat in the Algarve on 1 September 2023. He moved in S
 3. **Pension regime.** He became resident long after Lei 2/2020, so the pre-2020 exemption is not available. The 10% rate applies (old art. 72(12)).
 4. **Net pension:** 25,000 - 4,587.09 = EUR 20,412.91 (art. 53(2)).
 5. **NHR tax:** 10% x 20,412.91 = EUR 2,041.29.
-6. **Aggregation, for comparison:** 17,838 x 15.823% + (20,412.91 - 17,838) x 24.10% = 2,822.51 + 620.55 = EUR 3,443.06. He keeps the 10% rate, saving EUR 1,401.77. The tax deductions under art. 78 are left out of the comparison.
+6. **Aggregation, for comparison:** 17,838 x 15.416% + (20,412.91 - 17,838) x 23.60% = EUR 3,357.58. He keeps the 10% rate, saving EUR 1,316.29. The tax deductions under art. 78 are left out of the comparison.
 
 ```oa-check
 name: PT 2024 NHR transitional pensioner, late request, 10% vs 2026 bands
@@ -249,8 +250,8 @@ inputs:
   pension_deduction: 4587.09
   nhr_pension_rate: 0.10
   band4_top: 17838
-  band4_avg: 0.15823
-  band5_rate: 0.241
+  band4_avg: 0.15416
+  band5_rate: 0.236
 steps:
   - years: end_year - start_year + 1
   - net_pension: gross_pension - pension_deduction
@@ -261,8 +262,8 @@ expected:
   years: 8
   net_pension: 20412.91
   nhr_tax: 2041.29
-  general_tax: 3443.06
-  saving: 1401.77
+  general_tax: 3357.58
+  saving: 1316.29
 tolerance: 0.01
 ```
 
@@ -279,17 +280,18 @@ tolerance: 0.01
 
 | Source | URL | Read on |
 |---|---|---|
-| EBF art. 58-A (IFICI), as added by Lei 82/2023; no later amendment shown | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/bf_rep/Pages/ebf58a.aspx | 2026-10-24 |
+| EBF art. 58-A (IFICI), as added by Lei 82/2023; no later amendment shown. Read for the 5-year look-back, the 6-month gap and the 50% export test | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/bf_rep/Pages/ebf58a.aspx | 2026-11-14 |
 | Portaria 352/2024/1 of 23 December 2024, as amended by Portaria 52-A/2025/1 (AT consolidated copy) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Portaria_352_2024_1.pdf | 2026-10-24 |
 | AT FAQ, IFICI (5494 to 5526, 5857 to 5859) | https://info.portaldasfinancas.gov.pt/pt/apoio_contribuinte/questoes_frequentes/pages/faqs-01018.aspx | 2026-10-24 |
 | AT leaflet, IFICI (March 2025), incl. Despacho 24/2025-XXIV dates and the IRS Jovem note | https://info.portaldasfinancas.gov.pt/pt/apoio_contribuinte/Folhetos_informativos/Documents/incentivos_investigacao.pdf | 2026-10-24 |
 | AT FAQ, NHR (5148, 5149, 5153, 6005 to 6012) | https://info.portaldasfinancas.gov.pt/pt/apoio_contribuinte/questoes_frequentes/Pages/faqs-00309.aspx | 2026-10-24 |
 | AT leaflet, NHR and Annex L | https://info.portaldasfinancas.gov.pt/pt/apoio_contribuinte/Folhetos_informativos/Documents/IRS_RNH_PT.pdf | 2026-10-24 |
 | CIRS art. 16 (residence), current and December 2023 wording | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs16.aspx and https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/ra/Pages/irs16bra_202312.aspx | 2026-10-24 |
-| CIRS art. 81, current (incl. art. 236 Lei 82/2023), December 2023 and March 2020 wording | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs81.aspx ; https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/ra/Pages/irs81ra_202312.aspx ; https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/ra/Pages/irs81ra_202003.aspx | 2026-10-24 |
+| CIRS art. 81, current (incl. art. 236 Lei 82/2023), December 2023 and March 2020 wording. Current page read again on 2026-11-14 for art. 81(4) and (5) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs81.aspx ; https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/ra/Pages/irs81ra_202312.aspx ; https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/ra/Pages/irs81ra_202003.aspx | 2026-10-24 |
 | CIRS art. 72, current (incl. Lei 2/2020 art. 329) and December 2023 wording | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs72.aspx and https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/ra/Pages/irs72ra_202312.aspx | 2026-10-24 |
 | CIRS art. 71(17) (35% final withholding) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs71.aspx | 2026-10-24 |
-| CIRS art. 68 (2026 bands, Lei 73-A/2025) and 68-A | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs68.aspx and https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs68a.aspx | 2026-10-24 |
+| CIRS art. 68 and 68-A. Art. 68 read for the 2026 bands in the wording of Decreto-Lei 212/2026 | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs68.aspx and https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs68a.aspx | 2026-11-14 |
+| Decreto-Lei 212/2026 of 4 November 2026 (AT copy). Read for the new rates of bands 1 to 6 and their effect from 1 January 2026 on income obtained in 2026 | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Decreto-Lei-212-2026.pdf | 2026-11-14 |
 | CIRS art. 10, 12-B, 18, 22, 25, 53, 60, 97, 99, 101 | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs12b.aspx (same path for irs10, irs18, irs22, irs25, irs53, irs60, irs97, irs99, irs101) | 2026-10-24 |
 | Portaria 480-A/2025/1, IAS 2026 EUR 537.13 | https://diariodarepublica.pt/dr/detalhe/portaria/480-a-2025-993056222 | 2026-10-24 |
 | RGIT art. 29, 114, 116, 117 | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/rgit/Pages/rgit116.aspx (same path for rgit29, rgit114, rgit117) | 2026-10-24 |
@@ -299,4 +301,4 @@ tolerance: 0.01
 | Portaria 292/2025/1 of 5 September 2025, amending the low-tax list in Portaria 150/2004 (Hong Kong, Liechtenstein, Uruguay removed from 1 January 2026) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Portaria_292_2025_1.pdf | 2026-10-24 |
 | Lei 64-B/2026 of 22 October 2026, authorisation to cut the first six 2026 IRS rates | https://diariodarepublica.pt/dr/detalhe/lei/64-b-2026-1184484177 | 2026-10-24 |
 
-Not yet confirmed: the decree-law under Lei 64-B/2026 that would lower the 2026 bands used in the comparisons (none published by 24 October 2026); an official consolidated copy of the full low-tax list (Portaria 150/2004 with all amendments to Portaria 292/2025/1); whether the solidarity surcharge reaches income taxed at the IFICI 20% rate (art. 68-A charges "rendimento coletável", which art. 22(1) defines as aggregated income, and art. 22(3)(b) leaves out income taxed under arts. 71 and 72, but the IFICI rate sits in EBF art. 58-A and no AT guidance on the point was found); the original text of Despacho 24/2025-XXIV (taken from the AT leaflet); whether AT will publish different 2027 dates for 2026 arrivals than the Portaria's general dates; the exact day Lei 2/2020 came into force for the pre-2020 pension test; which RGIT fine AT applies to a missed IFICI change notice under Portaria art. 5; any regional decree for letter (g) in the Azores or Madeira.
+Not yet confirmed: an official consolidated copy of the full low-tax list (Portaria 150/2004 with all amendments to Portaria 292/2025/1); whether the solidarity surcharge reaches income taxed at the IFICI 20% rate (art. 68-A charges "rendimento coletável", which art. 22(1) defines as aggregated income, and art. 22(3)(b) leaves out income taxed under arts. 71 and 72, but the IFICI rate sits in EBF art. 58-A and no AT guidance on the point was found); the original text of Despacho 24/2025-XXIV (taken from the AT leaflet); whether AT will publish different 2027 dates for 2026 arrivals than the Portaria's general dates; the exact day Lei 2/2020 came into force for the pre-2020 pension test; which RGIT fine AT applies to a missed IFICI change notice under Portaria art. 5; any regional decree for letter (g) in the Azores or Madeira.
