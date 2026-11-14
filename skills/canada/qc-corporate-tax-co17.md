@@ -1,5 +1,5 @@
 ---
-name: qc-corporate-tax-co 17
+name: qc-corporate-tax-co17
 description: >
   Prepare a Quebec CO-17 corporate-income-tax workpaper alongside the separate
   federal T2. Establish permanent establishments and allocation, Quebec taxable
