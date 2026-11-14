@@ -15,19 +15,22 @@ description: >
 jurisdiction: CC
 category: payroll
 tax_year: 2026
-tax_year_notes: "Selected PAYG instrument applies from 1 July 2026; reporting and payment periods must be established separately; checked 24 October 2026"
+type: computation
+tax_year_notes: "2026-27: selected PAYG instrument applies from 1 July 2026; reporting and payment periods must be established separately; checked 24 October 2026"
 tier: 2
-last_updated: 2026-10-24
-version: 0.1
-review_status: pending_review
+last_updated: 2026-11-14
+version: 0.2
 depends_on:
   - workflow-base
   - payroll-workflow-base
   - cc-tax-system
-verified_by: pending
 ---
 
-# Cocos (Keeling) Islands: PAYG withholding and payroll reporting
+# Cocos (Keeling) Islands: PAYG withholding and payroll reporting (v0.2)
+
+> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
+
+## Scope
 
 Use `cc-tax-system` for the territory framework and separate tax regimes.
 The Taxation Administration Act 1953 (TAA) extends to external territories
@@ -51,7 +54,24 @@ capabilities prevent a deliverable financial result. Unknown required
 facts remain Needs Input; unresolved law remains on hold. No missing-fact
 default is authorised here.
 
-## Classify the payment before choosing a rate
+Christmas Island and the Cocos (Keeling) Islands are Australian external territories inside geographical Australia for income tax (ITAA 1997 section 960-505(1)(d)-(e)), so the Australian Commonwealth figures apply there. The Australian PAYG and payroll skills are `australia-payroll` and `au-payg-instalments`; the 2026-27 withholding coefficients are restated here with their source on the row.
+
+## Ask the client first
+
+Record tax residence, declaration receipt/effective date, threshold claim,
+TFN quotation or exemption/application status, offsets, Medicare variation,
+study loans, payment type and any actual Commissioner variation. A new
+TFN declaration applies to subsequent payments and replaces the earlier
+one; a valid Withholding declaration changes subsequent withholding under
+its terms. A person with missing or inconsistent status is not automatically
+assigned a guessed resident or foreign rate. [WITHHOLD, Schedule 1,
+Payee declarations][WITHHOLD]
+
+Also establish, before choosing a scale: the payment category (employee, director, office-holder, supplier, labour hire); the pay period and payment date; whether the payer and supplier enterprises are carried on only on the island; the withholder's status (large, medium, small) and any Commonwealth notice; and the STP software and reporting status.
+
+## The method, step by step
+
+### Classify the payment before choosing a rate
 
 Schedule 1 section 12-35 requires withholding from salary, wages,
 commissions, bonuses and allowances paid to an individual as an employee,
@@ -71,7 +91,7 @@ supplier no-ABN withholding; do not deduct both. Alienated personal
 services and noncash benefits have separate Divisions 13 and 14. Their
 actual computations remain held. [TAA, sections 12-1 to 12-10][TAA]
 
-### Supplier ABN exception is not an employee exception
+#### Supplier ABN exception is not an employee exception
 
 Section 12-190(1) concerns a supply in an enterprise carried on in Australia
 by the supplier. Subsection (4)(a) separately excludes payments outside an
@@ -91,7 +111,7 @@ does not select an actual supplier no-ABN rate or payment amount; obtain
 the current regulations and all applicable exceptions first. The supplier exception does not remove employee TFN or PAYG duties.
 [TAA]
 
-## Registration and declarations
+### Registration and declarations
 
 Section 16-140 requires a qualifying withholder to apply in the approved
 form by the first day it must withhold or make the specified payment to
@@ -130,7 +150,7 @@ study-loan withholding under this no-TFN branch. It is different from
 supplier no-ABN withholding. [WITHHOLD, Schedule 1 Scale 4 and Payee
 declarations][WITHHOLD]
 
-## Ordinary recurring pay from 1 July 2026
+### Ordinary recurring pay from 1 July 2026
 
 The 2026 instrument commenced on **1 July 2026**, repealing the previous
 2025 instrument. Its June registration date is not the pay-date start.
@@ -146,52 +166,52 @@ annual marginal tax brackets. Scales 1 and 2 already incorporate Medicare;
 do not deduct an annual Medicare calculation again. These scales require
 a provided TFN and established applicable declaration status. [WITHHOLD]
 
-### Scale 1: no tax-free threshold claimed
+#### Scale 1: no tax-free threshold claimed
 
 For weekly equivalent x, compute y = a × x − b using this table.
 [WITHHOLD, Schedule 1 Scale 1][WITHHOLD]
 
-| Weekly equivalent x, A$ | a | b, A$ |
-|---|---|---|
-| Below 188 | 0.1500 | 0.1500 |
-| At least 188, below 371 | 0.2084 | 11.0185 |
-| At least 371, below 515 | 0.1790 | 0.1066 |
-| At least 515, below 932 | 0.3227 | 74.1674 |
-| At least 932, below 2,246 | 0.3200 | 71.6508 |
-| At least 2,246, below 3,303 | 0.3900 | 228.8816 |
-| At least 3,303 | 0.4700 | 493.1893 |
+| Weekly equivalent x, A$ | Coefficient a (rate) | b, A$ | Official URL |
+|---|---|---|---|
+| Below 188 | 0.1500 | 0.1500 | https://www.legislation.gov.au/F2026L00716/asmade/2026-06-12/text/original/epub/OEBPS/document_1/document_1.html |
+| At least 188, below 371 | 0.2084 | 11.0185 | https://www.legislation.gov.au/F2026L00716/asmade/2026-06-12/text/original/epub/OEBPS/document_1/document_1.html |
+| At least 371, below 515 | 0.1790 | 0.1066 | https://www.legislation.gov.au/F2026L00716/asmade/2026-06-12/text/original/epub/OEBPS/document_1/document_1.html |
+| At least 515, below 932 | 0.3227 | 74.1674 | https://www.legislation.gov.au/F2026L00716/asmade/2026-06-12/text/original/epub/OEBPS/document_1/document_1.html |
+| At least 932, below 2,246 | 0.3200 | 71.6508 | https://www.legislation.gov.au/F2026L00716/asmade/2026-06-12/text/original/epub/OEBPS/document_1/document_1.html |
+| At least 2,246, below 3,303 | 0.3900 | 228.8816 | https://www.legislation.gov.au/F2026L00716/asmade/2026-06-12/text/original/epub/OEBPS/document_1/document_1.html |
+| At least 3,303 | 0.4700 | 493.1893 | https://www.legislation.gov.au/F2026L00716/asmade/2026-06-12/text/original/epub/OEBPS/document_1/document_1.html |
 
-### Scale 2: tax-free threshold claimed
+#### Scale 2: tax-free threshold claimed
 
 Use only when the threshold claim and other circumstances select this
 scale. Below the first endpoint, the withholding component is zero.
 [WITHHOLD, Schedule 1 Scale 2][WITHHOLD]
 
-| Weekly equivalent x, A$ | a | b, A$ |
-|---|---|---|
-| Below 362 | Zero withholding | Not applicable |
-| At least 362, below 538 | 0.1500 | 54.3462 |
-| At least 538, below 673 | 0.2500 | 108.2135 |
-| At least 673, below 721 | 0.1700 | 54.3473 |
-| At least 721, below 865 | 0.1790 | 60.8377 |
-| At least 865, below 1,282 | 0.3227 | 185.1935 |
-| At least 1,282, below 2,596 | 0.3200 | 181.7319 |
-| At least 2,596, below 3,653 | 0.3900 | 363.4627 |
-| At least 3,653 | 0.4700 | 655.7704 |
+| Weekly equivalent x, A$ | Coefficient a (rate) | b, A$ | Official URL |
+|---|---|---|---|
+| Below 362 | Zero withholding | Not applicable | https://www.legislation.gov.au/F2026L00716/asmade/2026-06-12/text/original/epub/OEBPS/document_1/document_1.html |
+| At least 362, below 538 | 0.1500 | 54.3462 | https://www.legislation.gov.au/F2026L00716/asmade/2026-06-12/text/original/epub/OEBPS/document_1/document_1.html |
+| At least 538, below 673 | 0.2500 | 108.2135 | https://www.legislation.gov.au/F2026L00716/asmade/2026-06-12/text/original/epub/OEBPS/document_1/document_1.html |
+| At least 673, below 721 | 0.1700 | 54.3473 | https://www.legislation.gov.au/F2026L00716/asmade/2026-06-12/text/original/epub/OEBPS/document_1/document_1.html |
+| At least 721, below 865 | 0.1790 | 60.8377 | https://www.legislation.gov.au/F2026L00716/asmade/2026-06-12/text/original/epub/OEBPS/document_1/document_1.html |
+| At least 865, below 1,282 | 0.3227 | 185.1935 | https://www.legislation.gov.au/F2026L00716/asmade/2026-06-12/text/original/epub/OEBPS/document_1/document_1.html |
+| At least 1,282, below 2,596 | 0.3200 | 181.7319 | https://www.legislation.gov.au/F2026L00716/asmade/2026-06-12/text/original/epub/OEBPS/document_1/document_1.html |
+| At least 2,596, below 3,653 | 0.3900 | 363.4627 | https://www.legislation.gov.au/F2026L00716/asmade/2026-06-12/text/original/epub/OEBPS/document_1/document_1.html |
+| At least 3,653 | 0.4700 | 655.7704 | https://www.legislation.gov.au/F2026L00716/asmade/2026-06-12/text/original/epub/OEBPS/document_1/document_1.html |
 
-### Scale 3: foreign resident with TFN
+#### Scale 3: foreign resident with TFN
 
 This scale does not establish residence or override a special-payment
 schedule. Foreign residents cannot claim offsets to reduce this withholding.
 [WITHHOLD, Schedule 1 Scale 3 and Payee declarations][WITHHOLD]
 
-| Weekly equivalent x, A$ | a | b, A$ |
-|---|---|---|
-| Below 2,596 | 0.3000 | 0.3000 |
-| At least 2,596, below 3,653 | 0.3700 | 181.7308 |
-| At least 3,653 | 0.4500 | 474.0385 |
+| Weekly equivalent x, A$ | Coefficient a (rate) | b, A$ | Official URL |
+|---|---|---|---|
+| Below 2,596 | 0.3000 | 0.3000 | https://www.legislation.gov.au/F2026L00716/asmade/2026-06-12/text/original/epub/OEBPS/document_1/document_1.html |
+| At least 2,596, below 3,653 | 0.3700 | 181.7308 | https://www.legislation.gov.au/F2026L00716/asmade/2026-06-12/text/original/epub/OEBPS/document_1/document_1.html |
+| At least 3,653 | 0.4500 | 474.0385 | https://www.legislation.gov.au/F2026L00716/asmade/2026-06-12/text/original/epub/OEBPS/document_1/document_1.html |
 
-### Period conversion and rounding
+#### Period conversion and rounding
 
 1. Establish earnings and allowances subject to withholding. Allowances
    need their own inclusion rules. Do not put every reimbursement or
@@ -233,7 +253,107 @@ apply the ordinary table indiscriminately. The instrument also warns that
 check its extra-pay guidance and any authorised arrangement before an
 uplift. [WITHHOLD, Schedule 1][WITHHOLD]
 
-## Paying withheld amounts to the ATO
+## Worked cases
+
+Two cases that recompute (derived, AUD, from the 2026 instrument).
+
+**Case 1, weekly pay, Scale 2 (P01).** Earnings A$1,000.75 a week, tax-free threshold claimed.
+
+```oa-check
+name: Cocos (Keeling) Islands weekly A$1,000.75, Scale 2, from 1 July 2026
+inputs:
+  earnings: 1000.75
+  a: 0.3227
+  b: 185.1935
+steps:
+  - x: floor(earnings) + 0.99
+  - y: a * x - b
+  - withhold: round(y)
+expected:
+  x: 1000.99
+  y: 137.825973
+  withhold: 138
+tolerance: 0.000001
+```
+
+**Case 2, the edge case: monthly pay ending in 33 cents with a declared offset (P11).** Monthly
+A$5,400.33, Scale 2, valid declared offset claim A$1,365 (8.3% monthly reduction).
+
+```oa-check
+name: Cocos (Keeling) Islands monthly A$5,400.33, Scale 2, declared offset A$1,365
+inputs:
+  monthly: 5400.33
+  a: 0.3227
+  b: 185.1935
+  offset_claim: 1365
+steps:
+  - weekly_equiv: (monthly + 0.01) * 3 / 13
+  - x: floor(weekly_equiv) + 0.99
+  - weekly_withhold: round(a * x - b)
+  - monthly_withhold: round(weekly_withhold * 13 / 3)
+  - offset_reduction: round(offset_claim * 0.083)
+  - withhold: monthly_withhold - offset_reduction
+expected:
+  x: 1246.99
+  weekly_withhold: 217
+  monthly_withhold: 940
+  offset_reduction: 113
+  withhold: 827
+```
+
+### Fictional component examples and checks
+
+Amounts are AUD. All examples stipulate ordinary recurring cash earnings,
+the stated valid declaration/status and no other adjustment unless shown.
+They are withholding components, not complete payslips or tax assessments.
+
+| Case | Stipulated 2026-27 case | Component result |
+|---|---|---|
+| P01 | Weekly A$1,000.75, Scale 2 | x is 1,000.99; y is 137.825973; withhold A$138. |
+| P02 | Weekly A$361.90 then A$362.00, Scale 2 | x values 361.99 and 362.99 select different rows; rounded withholding is A$0 in both cases. Band selection still matters. |
+| P03 | Fortnightly A$2,000, Scale 2 | Weekly x 1,000.99; weekly A$138; fortnightly A$276. |
+| P04 | Monthly A$4,333.33, Scale 2 | Add A$0.01 before conversion; weekly x 1,000.99; A$138 × 13 ÷ 3 gives A$598. |
+| P05 | Quarterly A$13,000, Scale 2 | Weekly x 1,000.99; A$138 × 13 gives A$1,794. |
+| P06 | Weekly A$1,000.75, Scale 1 | x 1,000.99; y 248.6660; withhold A$249. |
+| P07 | Weekly A$1,000.75, Scale 3 | x 1,000.99; y 299.997; withhold A$300. |
+| P08 | Resident no-TFN branch, A$1,000.99 earnings | Ignore 99 cents; 47% of A$1,000 is A$470; withhold A$470. |
+| P09 | Foreign no-TFN branch, A$1,001.99 earnings | Ignore 99 cents; 45% of A$1,001 is A$450.45; discard result cents and withhold A$450. |
+| P10 | Weekly A$1,000.75, Scale 2 and valid A$1,000 declared offset claim | Base A$138; declared reduction A$19; withhold A$119. This does not establish the underlying offset entitlement. |
+| P11 | Monthly A$5,400.33, Scale 2 and valid A$1,365 declared offset claim | Weekly x 1,246.99; y 217.210173 rounds to A$217; monthly A$940; offset A$113; withholding A$827. |
+| P12 | Island-only supplier enterprise with no ABN | The 12-190(1)(a)/(7) enterprise predicate fails. This does not remove withholding on an employee payment. |
+| P13 | Weekly ordinary own employee: Scale 2 earnings and independently established eligible QE both A$1,000.75; full 12% SG and sufficient annual base; no extra adjustments | PAYG A$138; separate employer SG A$120.09. These do not establish cash net wages or total employer cost. |
+
+Recheck every coefficient, endpoint, x conversion and rounding stage;
+declaration validity; payment category; territorial enterprise facts;
+withholder status and notices; calendar and concessions; STP coverage and
+finalisation; and separate employer liabilities. A correct withholding
+component does not establish lawful gross wages, cash net pay, employer
+cost or a balanced payroll journal without all remaining inputs and rules.
+
+## When to refuse or refer
+
+These are required outcomes. A number in another component cannot release
+a held result. Needs Input identifies missing engagement facts; legal or
+scope gaps require the specified source or separate guide.
+
+| Case | Trigger | Required result |
+|---|---|---|
+| H01 | Tax residence or applicable declaration is unknown | Needs Input; withholding held. Do not guess Scale 1, 2, 3 or 4. |
+| H02 | TFN application/enquiry is claimed but declaration and elapsed dates are missing | Needs Input; withholding held. Do not treat 28 days as a universal grace period. |
+| H03 | Study loan, Medicare variation, working holiday maker, senior/pensioner or special payment applies | Ordinary result held; obtain the complete applicable schedule and inputs. |
+| H04 | Declared offset reduction exceeds ordinary withholding or has unusual terms | Adjusted withholding held; establish authorised handling, with no invented negative deduction. |
+| H05 | An island address is known but payer/supplier enterprise locations are not | Needs Input; supplier no-ABN result held. Employee PAYG remains a separate test. |
+| H06 | Withholder class, group history or Commissioner notice is missing | Needs Input; dated remittance result held. |
+| H07 | Deferred BAS status, relevant holidays or actual payment deferral is unresolved | Dated calendar held; STP or lodgment extension does not itself extend payment. |
+| H08 | An SG labour-contract worker is assumed to be an ordinary STP employee solely from SG section 12(3) | STP result held; establish section 389-5 coverage separately. |
+| H09 | A single STP event is offered as proof that every annual amount was finalised | Annual-report/payment-summary relief held until all relevant notified amounts and the complete declaration are established. |
+| H10 | Actual gross entitlement, awards, payslip law or other compulsory deductions are unresolved | Complete payslip, net wages, employer cost and balanced payroll outputs held. |
+| H11 | QE, annual employer base, SG status, fund choice or receipt deadline is missing | Employer SG or payment-deadline result held; use the SG companion and its inputs. |
+| H12 | Special STP concession, approved form, filing specification or finalisation repair procedure is unverified | Affected filing or correction held; obtain current specific authority and runtime capability. |
+
+## Filing and payment
+
+### Paying withheld amounts to the ATO
 
 Withheld amounts must be paid to the Commissioner. Confirm status for the
 actual month using sections 16-95 to 16-115, historical withholding,
@@ -248,16 +368,16 @@ annual summaries are not a substitute for those statutory tests. [TAA];
 Section 16-75 gives the following ordinary payment rules, subject to the
 stated branches, actual deferrals and applicable calendar rules:
 
-| Established status | Statutory payment rule |
-|---|---|
-| Medium, not a deferred BAS payer | 21st day of the next month |
-| Medium and a deferred BAS payer on the statutory test day | 28th of the next month; December amounts by 28 February |
-| Small, not a deferred BAS payer | 21st day of the month after the quarter |
-| Small and a deferred BAS payer on the statutory test day | September quarter: 28 October; December: 28 February; March: 28 April; June: 28 July |
-| Large: withheld Saturday or Sunday | Second Monday after that day |
-| Large: withheld Monday or Tuesday | First Monday after that day |
-| Large: withheld Wednesday | Second Thursday after that day |
-| Large: withheld Thursday or Friday | First Thursday after that day |
+| Established status | Statutory payment rule | Official URL |
+|---|---|---|
+| Medium, not a deferred BAS payer | 21st day of the next month | https://www.legislation.gov.au/C1953A00001/2026-10-01/text |
+| Medium and a deferred BAS payer on the statutory test day | 28th of the next month; December amounts by 28 February | https://www.legislation.gov.au/C1953A00001/2026-10-01/text |
+| Small, not a deferred BAS payer | 21st day of the month after the quarter | https://www.legislation.gov.au/C1953A00001/2026-10-01/text |
+| Small and a deferred BAS payer on the statutory test day | September quarter: 28 October; December: 28 February; March: 28 April; June: 28 July | https://www.legislation.gov.au/C1953A00001/2026-10-01/text |
+| Large: withheld Saturday or Sunday | Second Monday after that day | https://www.legislation.gov.au/C1953A00001/2026-10-01/text |
+| Large: withheld Monday or Tuesday | First Monday after that day | https://www.legislation.gov.au/C1953A00001/2026-10-01/text |
+| Large: withheld Wednesday | Second Thursday after that day | https://www.legislation.gov.au/C1953A00001/2026-10-01/text |
+| Large: withheld Thursday or Friday | First Thursday after that day | https://www.legislation.gov.au/C1953A00001/2026-10-01/text |
 
 These rules exclude the section's separate closely held trust distributions.
 Large withholders must pay electronically; medium/small use electronic
@@ -279,7 +399,7 @@ actual calendar, notice and payment deferral before giving a dated filing
 calendar; do not assume a territory-only holiday moves every ATO due date.
 [TAA]; [REPORT]
 
-## STP, finalisation and payments outside STP
+### STP, finalisation and payments outside STP
 
 The ordinary section 389-5 notification is due on or before the statutory
 withholding day, including nil withholding. Its current item 2 separately
@@ -360,57 +480,7 @@ valid deferral. [FINALISE]
 These are fictional correction-timing components. They do not establish
 an engagement calendar, actual concessions or permission to submit.
 
-## Fictional component examples and checks
-
-Amounts are AUD. All examples stipulate ordinary recurring cash earnings,
-the stated valid declaration/status and no other adjustment unless shown.
-They are withholding components, not complete payslips or tax assessments.
-
-| Case | Stipulated 2026-27 case | Component result |
-|---|---|---|
-| P01 | Weekly A$1,000.75, Scale 2 | x is 1,000.99; y is 137.825973; withhold A$138. |
-| P02 | Weekly A$361.90 then A$362.00, Scale 2 | x values 361.99 and 362.99 select different rows; rounded withholding is A$0 in both cases. Band selection still matters. |
-| P03 | Fortnightly A$2,000, Scale 2 | Weekly x 1,000.99; weekly A$138; fortnightly A$276. |
-| P04 | Monthly A$4,333.33, Scale 2 | Add A$0.01 before conversion; weekly x 1,000.99; A$138 × 13 ÷ 3 gives A$598. |
-| P05 | Quarterly A$13,000, Scale 2 | Weekly x 1,000.99; A$138 × 13 gives A$1,794. |
-| P06 | Weekly A$1,000.75, Scale 1 | x 1,000.99; y 248.6660; withhold A$249. |
-| P07 | Weekly A$1,000.75, Scale 3 | x 1,000.99; y 299.997; withhold A$300. |
-| P08 | Resident no-TFN branch, A$1,000.99 earnings | Ignore 99 cents; 47% of A$1,000 is A$470; withhold A$470. |
-| P09 | Foreign no-TFN branch, A$1,001.99 earnings | Ignore 99 cents; 45% of A$1,001 is A$450.45; discard result cents and withhold A$450. |
-| P10 | Weekly A$1,000.75, Scale 2 and valid A$1,000 declared offset claim | Base A$138; declared reduction A$19; withhold A$119. This does not establish the underlying offset entitlement. |
-| P11 | Monthly A$5,400.33, Scale 2 and valid A$1,365 declared offset claim | Weekly x 1,246.99; y 217.210173 rounds to A$217; monthly A$940; offset A$113; withholding A$827. |
-| P12 | Island-only supplier enterprise with no ABN | The 12-190(1)(a)/(7) enterprise predicate fails. This does not remove withholding on an employee payment. |
-| P13 | Weekly ordinary own employee: Scale 2 earnings and independently established eligible QE both A$1,000.75; full 12% SG and sufficient annual base; no extra adjustments | PAYG A$138; separate employer SG A$120.09. These do not establish cash net wages or total employer cost. |
-
-Recheck every coefficient, endpoint, x conversion and rounding stage;
-declaration validity; payment category; territorial enterprise facts;
-withholder status and notices; calendar and concessions; STP coverage and
-finalisation; and separate employer liabilities. A correct withholding
-component does not establish lawful gross wages, cash net pay, employer
-cost or a balanced payroll journal without all remaining inputs and rules.
-
-## Held component cases
-
-These are required outcomes. A number in another component cannot release
-a held result. Needs Input identifies missing engagement facts; legal or
-scope gaps require the specified source or separate guide.
-
-| Case | Trigger | Required result |
-|---|---|---|
-| H01 | Tax residence or applicable declaration is unknown | Needs Input; withholding held. Do not guess Scale 1, 2, 3 or 4. |
-| H02 | TFN application/enquiry is claimed but declaration and elapsed dates are missing | Needs Input; withholding held. Do not treat 28 days as a universal grace period. |
-| H03 | Study loan, Medicare variation, working holiday maker, senior/pensioner or special payment applies | Ordinary result held; obtain the complete applicable schedule and inputs. |
-| H04 | Declared offset reduction exceeds ordinary withholding or has unusual terms | Adjusted withholding held; establish authorised handling, with no invented negative deduction. |
-| H05 | An island address is known but payer/supplier enterprise locations are not | Needs Input; supplier no-ABN result held. Employee PAYG remains a separate test. |
-| H06 | Withholder class, group history or Commissioner notice is missing | Needs Input; dated remittance result held. |
-| H07 | Deferred BAS status, relevant holidays or actual payment deferral is unresolved | Dated calendar held; STP or lodgment extension does not itself extend payment. |
-| H08 | An SG labour-contract worker is assumed to be an ordinary STP employee solely from SG section 12(3) | STP result held; establish section 389-5 coverage separately. |
-| H09 | A single STP event is offered as proof that every annual amount was finalised | Annual-report/payment-summary relief held until all relevant notified amounts and the complete declaration are established. |
-| H10 | Actual gross entitlement, awards, payslip law or other compulsory deductions are unresolved | Complete payslip, net wages, employer cost and balanced payroll outputs held. |
-| H11 | QE, annual employer base, SG status, fund choice or receipt deadline is missing | Employer SG or payment-deadline result held; use the SG companion and its inputs. |
-| H12 | Special STP concession, approved form, filing specification or finalisation repair procedure is unverified | Affected filing or correction held; obtain current specific authority and runtime capability. |
-
-## Payroll country contract
+## Completion checklist
 
 The payroll base requires all 12 mandatory slots. Coverage below records
 this reference and its companions without certifying a complete country
@@ -435,7 +505,23 @@ The 5 payroll outputs, 4 universal outputs and all base checks remain
 mandatory. These component examples cannot substitute for missing
 outputs or establish a filing-ready engagement.
 
-## Sources and remaining coverage
+## Sources
+
+| Source | URL | Read on |
+|---|---|---|
+| [TAA] Taxation Administration Act 1953 (compilation in force 2026-10-01). Read for sections 2, 3 and 3AA; Schedule 1 Subdivision 12-B; sections 12-1 to 12-10; section 12-190 | https://www.legislation.gov.au/C1953A00001/2026-10-01/text | 2026-10-24 (read by Ryan Duguid) |
+| [REPORT] Taxation Administration Act 1953 (compilation in force 2026-10-01, volume 3). Read for section 389-25 | https://www.legislation.gov.au/C1953A00001/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_3/document_3.html | 2026-10-24 (read by Ryan Duguid) |
+| [DICT-LATEST] Income Tax Assessment Act 1997 (Federal Register of Legislation record, latest compilation). Read for the provisions cited as [DICT-LATEST] in the body | https://www.legislation.gov.au/C2004A05138/latest/details | 2026-10-24 (read by Ryan Duguid) |
+| [TAA-LATEST] Taxation Administration Act 1953 (Federal Register of Legislation record, latest compilation). Read for the provisions cited as [TAA-LATEST] in the body | https://www.legislation.gov.au/C1953A00001/latest/details | 2026-10-24 (read by Ryan Duguid) |
+| [WITHHOLD] Taxation Administration (Withholding Schedules) Instrument 2026 (as made, volume 1). Read for Schedule 1, Payee declarations; Schedule 1 Scale 4 and Payee declarations; sections 2, 5 to 7 and Schedule 1; Schedule 1 Scale 1; Schedule 1 Scale 2; Schedule 1 Scale 3 and Payee declarations | https://www.legislation.gov.au/F2026L00716/asmade/2026-06-12/text/original/epub/OEBPS/document_1/document_1.html | 2026-11-14 (re-read for Schedule 1 Scales 1, 2 and 3 coefficients (all 19 rows found) and the 47% / 45% no-TFN rates); 2026-10-24 (read by Ryan Duguid) |
+| [WITHHOLD-LATEST] Taxation Administration (Withholding Schedules) Instrument 2026 (Federal Register of Legislation record, latest compilation). Read for the provisions cited as [WITHHOLD-LATEST] in the body | https://www.legislation.gov.au/F2026L00716/latest/details | 2026-10-24 (read by Ryan Duguid) |
+| [DICT] Income Tax Assessment Act 1997 (compilation in force 2026-10-01, volume 10). Read for section 960-505; section 995-1 | https://www.legislation.gov.au/C2004A05138/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_10/document_10.html | 2026-10-24 (read by Ryan Duguid) |
+| [GST] A New Tax System (Goods and Services Tax) Act 1999 (compilation in force 2026-01-01). Read for section 195-1 | https://www.legislation.gov.au/C2004A00446/2026-01-01/text | 2026-10-24 (read by Ryan Duguid) |
+| [REMIT] ATO: paying and reporting payg withholding amounts for small and medium withholders. Read for the provisions cited as [REMIT] in the body | https://www.ato.gov.au/businesses-and-organisations/hiring-and-paying-your-workers/payg-withholding/paying-and-reporting-withheld-amounts/paying-and-reporting-payg-withholding-amounts-for-small-and-medium-withholders | 2026-10-24 (read by Ryan Duguid) |
+| [STP] ATO: single touch payroll reporting under payday super. Read for the provisions cited as [STP] in the body | https://www.ato.gov.au/businesses-and-organisations/super-for-employers/paying-super-on-payday/single-touch-payroll-reporting-under-payday-super | 2026-10-24 (read by Ryan Duguid) |
+| [QE-FIX] ATO: fixing single touch payroll errors in payday super. Read for the provisions cited as [QE-FIX] in the body | https://www.ato.gov.au/businesses-and-organisations/super-for-employers/paying-super-on-payday/single-touch-payroll-reporting-under-payday-super/fixing-single-touch-payroll-errors-in-payday-super | 2026-10-24 (read by Ryan Duguid) |
+| [FINALISE] ATO: finalising your stp data. Read for the provisions cited as [FINALISE] in the body | https://www.ato.gov.au/businesses-and-organisations/hiring-and-paying-your-workers/single-touch-payroll/finalising-your-stp-data | 2026-10-24 (read by Ryan Duguid) |
+| [SG] Superannuation Guarantee (Administration) Act 1992 (compilation in force 2026-07-01). Read for the provisions cited as [SG] in the body | https://www.legislation.gov.au/C2004A04402/2026-07-01/text | 2026-10-24 (read by Ryan Duguid) |
 
 Checked on 24 October 2026. The current Register identifies TAA
 compilation 227 (C2026C00468), effective 1 October 2026, and the 1997
@@ -469,22 +555,4 @@ engagement benchmark or comprehensive-country acceptance is claimed.
 [FINALISE]: https://www.ato.gov.au/businesses-and-organisations/hiring-and-paying-your-workers/single-touch-payroll/finalising-your-stp-data
 [SG]: https://www.legislation.gov.au/C2004A04402/2026-07-01/text
 
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained in the
-[ryanduguid/openaccountants fork](https://github.com/ryanduguid/openaccountants).
-Check its quality tier, recorded review status and cited sources before use.
-Choose a practitioner whose credentials and engagement scope you have verified.
-The links below are optional upstream services; they do not publish or verify
-this fork's changes.
-
-- Upstream connection service: https://www.openaccountants.com/connect
-- Upstream accountant network: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
+Not yet confirmed: the ATO pages ([REMIT], [STP], [QE-FIX], [FINALISE]) refused an automated fetch on 2026-11-14 (HTTP 403); their procedures rest on Ryan Duguid's reading of 24 October 2026. Special-payment schedules, Medicare variation, study loans and the other open payroll slots listed in the checklist.

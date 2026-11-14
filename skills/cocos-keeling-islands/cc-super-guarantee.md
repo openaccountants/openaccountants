@@ -16,19 +16,22 @@ description: >
 jurisdiction: CC
 category: international
 tax_year: 2026
-tax_year_notes: "Primarily QE days from 1 July 2026 to 30 June 2027; saved old quarterly liabilities remain separate"
+type: computation
+tax_year_notes: "2026-27: primarily QE days from 1 July 2026 to 30 June 2027; saved old quarterly liabilities remain separate"
 tier: 2
-last_updated: 2026-10-21
-version: 0.5
-review_status: pending_review
+last_updated: 2026-11-14
+version: 0.6
 depends_on:
   - workflow-base
   - social-contributions-workflow-base
   - cc-tax-system
-verified_by: pending
 ---
 
-# Cocos (Keeling) Islands: employer super guarantee for 2026-27
+# Cocos (Keeling) Islands: employer super guarantee for 2026-27 (v0.6)
+
+> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
+
+## Scope
 
 Load `workflow-base`, `social-contributions-workflow-base` and
 `cc-tax-system`. Preserve profile confirmation, source and period gates,
@@ -40,7 +43,9 @@ complete financial deliverable. A payroll run also needs its payroll base
 and country payroll rules. No comprehensive-country acceptance or
 professional sign-off is claimed.
 
-## Territorial application and period
+Christmas Island and the Cocos (Keeling) Islands are Australian external territories inside geographical Australia for income tax (ITAA 1997 section 960-505(1)(d)-(e)), so the Australian Commonwealth figures apply there. The Australian super guarantee skill is `au-super-guarantee`; the 2026-27 rate and annual base are restated here with their source on the row.
+
+### Territorial application and period
 
 Section 8E of the Cocos (Keeling) Islands Act 1955 extends Commonwealth
 Acts of their own force unless an Act expressly provides otherwise. Its
@@ -69,7 +74,13 @@ This guide's primary year is **1 July 2026 to 30 June 2027**, in AUD.
 Do not roll its annual base into a later financial year. [PAYDAY, section 2
 and Schedule 1 item 182][PAYDAY]; [RATES]
 
-## Programmes and selected figures
+## Ask the client first
+
+Establish these before computing an SG amount (the full list is in "Establish the contributor and earnings" below): the worker's status (employee, labour-contract worker, director or self-employed); age and actual weekly hours for a worker under 18; each qualifying earnings (QE) payment, its day and its components, including salary sacrifice; that employer's earnings ledger for 2026-27 against the annual base; any employer shortfall exemption certificate; the fund, choice and stapled-fund facts; and the actual fund receipt dates.
+
+## The method, step by step
+
+### Programmes and selected figures
 
 Keep SG separate from income tax, Medicare, PAYG withholding, workers'
 compensation, paid parental leave and any local or employment obligation.
@@ -78,15 +89,15 @@ GST geography also does not determine its SG geography. Route income-tax
 and Medicare questions to `cc-income-tax` and territory boundaries to
 `cc-tax-system`; those guides retain their own incomplete slots.
 
-| Programme or parameter | Selected 2026-27 treatment | Primary source |
-|---|---|---|
-| Ordinary employer SG | 12% of eligible QE after the annual-base rule; employer obligation, without an employee SG matching-share calculation in this guide | SG section 17A; RATES |
-| Annual maximum contributions base | AUD 270,830 per employee, per employer, per financial year | SG section 10A(5)-(6); RATES |
-| General earnings floor | No minimum earnings amount for an otherwise eligible adult worker; age and other exclusions still apply | ELIGIBILITY; SG; REG |
-| Normal contribution period | Each QE day; fund receipt normally by the 7th business day after that day | SG sections 6 and 18C; DEADLINES |
-| First eligible contribution extension | Conditional period ending on the 20th business day after the QE day | SG sections 6 and 18C(2) item 1 |
-| Basic administrative uplift | 60% of the combined final shortfalls and notional earnings, subject to statutory reductions | SG section 19B; REG regulations 13A-13D |
-| Choice loading | 25% of relevant non-compliant contributions, limited under section 20C | SG sections 20A and 20C |
+| Programme or parameter | Selected 2026-27 rate or figure | Primary source | Official URL |
+|---|---|---|---|
+| Ordinary employer SG | 12% of eligible QE after the annual-base rule; employer obligation, without an employee SG matching-share calculation in this guide | SG section 17A; RATES | https://www.legislation.gov.au/C2004A04402/2026-07-01/2026-07-01/text/original/epub/OEBPS/document_1/document_1.html |
+| Annual maximum contributions base | AUD 270,830 (derived under section 10A(5)) per employee, per employer, per financial year | SG section 10A(5)-(6); RATES | https://www.legislation.gov.au/C2004A04402/2026-07-01/2026-07-01/text/original/epub/OEBPS/document_1/document_1.html |
+| General earnings floor | No minimum earnings amount for an otherwise eligible adult worker; age and other exclusions still apply | ELIGIBILITY; SG; REG | https://www.ato.gov.au/businesses-and-organisations/super-for-employers/work-out-if-you-have-to-pay-super |
+| Normal contribution period | Each QE day; fund receipt normally by the 7th business day after that day | SG sections 6 and 18C; DEADLINES | https://www.legislation.gov.au/C2004A04402/2026-07-01/2026-07-01/text/original/epub/OEBPS/document_1/document_1.html |
+| First eligible contribution extension | Conditional period ending on the 20th business day after the QE day | SG sections 6 and 18C(2) item 1 | https://www.legislation.gov.au/C2004A04402/2026-07-01/2026-07-01/text/original/epub/OEBPS/document_1/document_1.html |
+| Basic administrative uplift | 60% of the combined final shortfalls and notional earnings, subject to statutory reductions | SG section 19B; REG regulations 13A-13D | https://www.legislation.gov.au/C2004A04402/2026-07-01/2026-07-01/text/original/epub/OEBPS/document_1/document_1.html |
+| Choice loading | 25% of relevant non-compliant contributions, limited under section 20C | SG sections 20A and 20C | https://www.legislation.gov.au/C2004A04402/2026-07-01/2026-07-01/text/original/epub/OEBPS/document_1/document_1.html |
 
 Sources for this table: [SG]; [REG]; [RATES]; [ELIGIBILITY]; [DEADLINES].
 The 12% rate is not Norfolk Island's conditional 2026-27 transition.
@@ -95,7 +106,7 @@ it does not create an 11% concession for Christmas Island or Cocos
 employment. If an engagement actually includes Norfolk earnings, resolve
 that subset and its interaction with the cap separately. [PAYDAY, item 189][PAYDAY]
 
-## Establish the contributor and earnings
+### Establish the contributor and earnings
 
 Use a stable contributor reference. Establish the employer, actual
 employment relationship, age at the relevant time, weekly hours where
@@ -104,7 +115,7 @@ annual earnings history and any applicable certificate. Confirm readiness
 of reviewer-held registrations and fund details. Do not request TFNs,
 bank details or identity documents through this workflow.
 
-### Employee, contractor and self-employed status
+#### Employee, contractor and self-employed status
 
 Section 12 starts with ordinary employment and extends to specified
 directors, labour contracts, performers, related services and office
@@ -141,7 +152,7 @@ island address is insufficient. Where a cross-border decision is needed,
 load its domain base and applicable country/agreement sources first.
 [SG, sections 8, 12 and 15C][SG]; [REG, regulations 11-12][REG]; [ELIGIBILITY]
 
-### Reconcile qualifying earnings
+#### Reconcile qualifying earnings
 
 For each payment, reconcile gross-pay components to the actual section
 10A categories and regulation 12 exclusions. Include overlapping categories
@@ -167,7 +178,7 @@ absence of another programme or permission to ignore an employment award.
 For an invoice, isolate the proved labour component. Do not apply 12%
 mechanically to goods, expenses and labour combined. [ELIGIBILITY]
 
-## Annual base and individual SG amount
+### Annual base and individual SG amount
 
 Section 10A(5) derives the maximum from the basic concessional contributions
 cap and charge percentage, then rounds it down to a multiple of **AUD 10**.
@@ -211,7 +222,7 @@ jobs alone does not supply a certificate. This guide does not prepare
 an exemption application or infer its approval. [SG, section 17B][SG];
 [ELIGIBILITY]
 
-## Fund choice, receipt and allocation
+### Fund choice, receipt and allocation
 
 An eligible employer contribution ordinarily needs a complying fund or
 RSA and sufficient information to allocate it to the employee. Sacrificed
@@ -274,7 +285,7 @@ for statutory minimum SG does not cancel the separate contractual amount
 for a later payday. Verify those obligations before reducing a remittance
 because an SG credit or annual-base limit is available. [HOWTO]
 
-### Act on a valid choice without delaying SG
+#### Act on a valid choice without delaying SG
 
 For the ordinary accumulation-fund route, record when the employee or
 Commissioner gave the written/approved choice notice to the employer.
@@ -306,7 +317,7 @@ covered employer default-fund change and discovery that the specified
 default cannot accept contributions. Apply the section 32NA exceptions
 before treating a form as overdue. [SG, sections 32N-32NA][SG]; [CHOICE]
 
-### Employer and fund readiness
+#### Employer and fund readiness
 
 Keep a readiness register using stable employer, contributor and fund
 references. The employer or authorised practitioner retains actual
@@ -330,7 +341,7 @@ These are selected readiness checks, not a complete employer, PAYG, payroll
 or special-scheme registration manual. Do not invent a separate SG
 registration requirement from this table.
 
-### Quoted TFN hand-off
+#### Quoted TFN hand-off
 
 The SIS Act extends to all external territories. For an employee within
 its section 15A meaning and a contribution to an eligible superannuation
@@ -415,7 +426,7 @@ no alternative result, to contact it for assistance. A rejection is not
 an automatic instruction to use the default fund. Preserve each response
 and resolve the applicable choice branch before payment. [WHERE]; [STAPLED]
 
-### SuperStream, verification and errors
+#### SuperStream, verification and errors
 
 SuperStream requires electronic payment and related contribution data in
 the standard format. Send the payment and data on the **same day**, linked
@@ -451,7 +462,239 @@ from older text. A commercial clearing-house receipt still requires
 proof of timely, allocatable receipt by the employee's fund. [STREAM];
 [SG, sections 18A and 18C][SG]
 
-## Deadline calendar and longer periods
+### Changeover and income-tax interaction
+
+Keep pre-July quarters and new QE-day ledgers separate. Schedule 1 item
+182 saves old quarterly liabilities and related rules, with the stated
+late-payment-offset limitation. Items 185-186 govern eligible unused
+pre-commencement amounts and contributions from **1-28 July 2026** where
+the employee still has a June-quarter shortfall: apply the latter first
+under the saved old rules, then only the unabsorbed remainder under the
+new rules. Do not use the same contribution twice. A July payment for
+June work is new-period QE without cancelling an old-quarter debt.
+[PAYDAY, items 182-186][PAYDAY]
+
+The annual SG base is not a personal deduction or contribution-cap safe
+harbour. Employer contribution deductions, personal voluntary contributions,
+salary sacrifice, excess contributions and high-income additional tax
+need their own income-tax rules and confirmed facts. The Payday Act
+repeals former sections 26-95 and 290-95 of the 1997 Act and contains
+saved-old-law application provisions. Do not carry the old blanket SGC
+non-deductibility rule into every post-July QE-day charge or infer that
+every charge, penalty and interest amount is deductible. No deduction is
+calculated by this companion. [PAYDAY, items 80, 92 and 183][PAYDAY]
+
+Current ATO guidance identifies deductions for on-time and late eligible
+contributions and payment of SGC for QE days from 1 July 2026. It excludes
+late-payment penalties, general interest accruing on unpaid SGC and
+quarterly-period SGC assessments. Keep those categories separate, and
+verify all applicable income-tax deduction conditions before a claim.
+This is a classification route, not a computed deduction. [HOWTO]
+
+### STP reporting, transition and correction controls
+
+For an employer/pay event required to use STP, report on or before each
+payday through STP-enabled software. Keep any verified exemption or
+special reporting arrangement separate; this guide does not establish
+all such cases. Ordinary reporting includes salary/wages, PAYG withholding
+and super liability. From 1 July 2026 the Payday Super requirements add
+QE reporting. An independent contractor who is an SG employee only under
+the labour-contract extension is not mandatorily brought into STP merely
+by that status. If the employer voluntarily reports those payments, the
+reporting requirements apply. [PAYDAY, Schedule 1 item 178][PAYDAY]; [STP]
+
+#### Reconcile 2 distinct year-to-date amounts
+
+| Reported amount | Control | Official URL |
+|---|---|---|
+| QE year to date (YTD) | Reconcile actual QE to the earnings ledger and prior YTD. The increase ordinarily identifies that payday's QE. Exclude non-QE reimbursements/fringe benefits; do not use total taxable pay as a substitute. | https://www.ato.gov.au/businesses-and-organisations/super-for-employers/paying-super-on-payday/single-touch-payroll-reporting-under-payday-super |
+| Annual employer base | After the verified 2026-27 base of AUD 270,830 is reached, the ATO permits QE YTD to remain at that amount for the rest of the year. Keep the unmodified earnings ledger and any separate award/contract obligations. | https://www.ato.gov.au/businesses-and-organisations/super-for-employers/paying-super-on-payday/single-touch-payroll-reporting-under-payday-super |
+| Valid opt-out certificate | A full-year covered employer/employee certificate yields QE YTD of zero from the start. If coverage begins part way through the year, hold the reported QE YTD from the start of the covered period. Verify employer, employee and dates; do not keep it frozen after coverage ends without a lawful basis. | https://www.ato.gov.au/businesses-and-organisations/super-for-employers/paying-super-on-payday/single-touch-payroll-reporting-under-payday-super |
+| Super liability YTD | Report the liability, which includes minimum SG and applicable additional award/enterprise-agreement super. It can include super on a payment excluded from QE, such as stipulated award-covered parental leave. It is not the amount received by the fund. | https://www.ato.gov.au/businesses-and-organisations/super-for-employers/paying-super-on-payday/single-touch-payroll-reporting-under-payday-super |
+
+[SG, sections 10A and 17B][SG]; [RATES]; [STP].
+Preserve the distinction between statutory minimum SG, other contractual
+super, reported liability and actual fund receipts. A zero SG amount after
+the annual base or during certificate coverage does not cancel every
+employment obligation.
+
+#### 2026-27 software transition
+
+Ask the digital service provider how to configure QE and super liability.
+If the product is not yet updated, **still calculate and pay SG using QE**
+and keep each payday's records. Start reporting QE as soon as possible,
+including YTD amounts when reporting starts. The ATO accepts super
+liability with OTE in pay events until **30 June 2027**, but **once QE
+reporting starts, OTE reporting is no longer accepted**. This is a
+conditional reporting transition, not a contribution-payment deferral
+or permission to treat OTE as the new QE base. [STP]
+
+The ATO says no deferral request is needed where QE reporting can start
+during 2026-27; failure to report it during that year increases compliance
+risk. From **1 July 2027**, reports missing either QE or super liability
+will be rejected and penalties may apply. Confirm the applicable period
+and the provider's implementation; do not carry the 2026-27 acceptance
+into a later year. [STP]
+
+#### Correct reporting without inventing a new payment
+
+Use the provider's STP correction process to fix a lodged YTD amount in
+the next pay event or an update event. An omitted/late original report
+is not a correction merely because a later report is submitted. Keep
+the original QE days, corrected amounts, reason, lodged event/response
+and affected contribution/shortfall history. Correcting data does not
+change the day earnings were actually paid or reset an SG deadline.
+[SG, sections 10A and 18C][SG]; [STPFIX]
+
+For ATO data reconciliation, an update event is not ordinarily a pay
+event. The ATO identifies a finalisation-indicator exception when QE
+corrections supply the final reported amount. With no change in QE YTD,
+no new QE/SG amount is inferred from that event; after a reduction, its
+guidance calculates no new QE until a later increase. Reconcile these
+data effects to actual pay and corrected records. Do not infer a cash
+refund, a fresh 20-business-day period or an election to reallocate older
+contributions. Recompute affected liability and retain reviewer holds
+where historical corrections remain unresolved. [STPFIX]; [SG]; [HOWTO]
+
+## Worked cases
+
+Two cases that recompute (derived, AUD, 2026-27).
+
+**Case 1, the payment that crosses the annual base.** The 2026-27 annual base is the $32,500
+concessional cap divided by the 12% charge percentage, rounded down to a multiple of $10 (SG Act
+section 10A(5)). Prior QE from this employer $270,000; a further eligible payment of $2,000.
+
+```oa-check
+name: Cocos (Keeling) Islands employer SG, payment crossing the 2026-27 annual base
+inputs:
+  cap: 32500
+  rate: 0.12
+  prior_qe: 270000
+  payment: 2000
+steps:
+  - annual_base: floor(cap / rate / 10) * 10
+  - remaining: max(0, min(payment, annual_base - prior_qe))
+  - sg_amount: remaining * rate
+expected:
+  annual_base: 270830
+  remaining: 830
+  sg_amount: 99.60
+```
+
+**Case 2, salary sacrifice and a short contribution.** Cash QE $1,800 plus $200 sacrificed; the employer
+sends an on-time eligible contribution of $200 only, treating the sacrifice as if it covered SG.
+
+```oa-check
+name: Cocos (Keeling) Islands SG with salary sacrifice, base shortfall
+inputs:
+  cash_qe: 1800
+  sacrificed: 200
+  rate: 0.12
+  contribution: 200
+steps:
+  - qe: cash_qe + sacrificed
+  - sg_amount: qe * rate
+  - base_shortfall: max(0, sg_amount - contribution)
+expected:
+  qe: 2000
+  sg_amount: 240
+  base_shortfall: 40
+```
+
+### Worked component examples and classification patterns
+
+All examples are fictional AUD for **2026-27**. Worker, earnings and
+ordinary accumulation-fund facts are stipulated. There is no Norfolk
+subset, defined benefit, cross-border certificate or rounding difference
+unless stated. Examples demonstrate selected amounts or classifications,
+not completed engagements. Any unresolved required input remains a hold.
+
+| Fictional facts | Recomputed result or classification |
+|---|---|
+| Adult employee, eligible QE 2,000, prior annual QE 10,000 | Individual SG amount 240. Separate employer funding and receipt still need proof. |
+| Eligible adult employee, QE only 100 | Individual SG amount 12; no assumed AUD 450 monthly floor. |
+| Under-18 employee, exactly 30 actual hours in a week | Part-time exclusion; no SG on the excluded earnings. Do not average hours with another week. |
+| Under-18 employee, 31 actual hours that week, eligible QE 620 | Individual SG amount 74.40, subject to the remaining coverage facts. |
+| Private household worker, 30 hours, all work wholly domestic | Section 12(11) exclusion; do not apply the adult business-employee result. |
+| Labour contract satisfies section 12(3); eligible labour 600 and separately proved goods 400 | Individual SG amount 72 on labour QE 600; not 120 on the total invoice merely because it is paid together. |
+| Cash qualifying pay 1,800 plus qualifying earnings sacrificed 200 | QE 2,000; individual SG amount 240. Sacrificed contribution 200 does not reduce that employer SG amount to 40. |
+| Same-day eligible QE payments 1,200 and 800 | QE day total 2,000; individual SG amount 240, without duplicating a commission already included. |
+| Prior annual QE 270,000; current otherwise eligible payment 2,000 | Remaining annual base 830; individual SG amount 99.60; keep the payment's unmodified earnings visible. |
+| Annual base already reached for that employer; later otherwise eligible QE 1,000 | Nil additional SG amount under the annual-base rule; other obligations remain separate. |
+| Fresh annual ledger, eligible QE exactly 270,830 | Individual SG amount 32,499.60; do not round the statutory base up to create SG of 32,500. |
+| Employer A has reached its base; employer B pays eligible QE 1,000 with a fresh verified ledger | Employer B's individual SG amount 120, absent its own valid certificate or exclusion. |
+| Valid exemption certificate covers only employer A | It does not exempt employer B's payments. Verify each certificate's employer, employee, period and QE day. |
+| Sole trader profit 50,000, no employees or qualifying labour/director relationship | No employer SG on the owner's stipulated profit; voluntary contribution and deduction questions remain separate. |
+| Individual SG amount 240; on-time eligible contribution 200 | Base shortfall 40. If a later eligible 40 is applied before assessment, final shortfall can become nil; this does not establish nil total SGC. |
+| Correct 240 sent to clearing house on the last permitted day; fund receipt unknown | Timing and compliance unresolved; no presumed timely receipt. |
+| Unused eligible receipt 300; applied to first QE day's SG amount 240 | Remainder 60 can be considered under the statutory period/allocation conditions; it cannot be reused as 300 for a later day. |
+| Earlier QE day has base/final shortfall 120; current day has SG amount 120; eligible receipt 120 is late for the earlier day but timely for the current day | Apply to the earlier unpaid day first: its final shortfall becomes nil, its base/history remain 120 and the current base shortfall is 120. Do not elect the current day or infer nil total SGC. |
+| Off-cycle bonus 500 between established scheduled paydays; all determination conditions met | Individual SG amount 60; receipt deadline follows the first subsequent standard QE day's usual period. |
+| Same bonus label, but next scheduled standard payment not made | The determination condition fails; do not assume the out-of-cycle extension. |
+| New employee's first eligible contribution qualifies for item 1 | Use the 20-business-day endpoint; later paydays require their own item 4 or other extension evidence. |
+| Mere irregular contractor invoice, no established pay schedule | Do not classify automatically as determined out-of-cycle QE. |
+| Natural disaster affects employer, but no covering determination established | Hold the extension; the disaster label alone is insufficient. |
+| Same-day no-interest/other-uplift example: relevant choice-failing contribution 240, full notice-period limit available | Choice loading 60 before any applicable statutory exception; no claim that this is total SGC. |
+| Combined final shortfalls and notional earnings 100; no regulation 13 reductions | Basic uplift 60. With proved 20-point history reduction and 40-point valid timely disclosure reduction, uplift becomes nil. |
+| Annual earnings history, fund-choice facts or holiday calendar missing | Needs Input for the affected amount or deadline; no default resolves it. |
+
+[SG]; [REG]; [OUTOFCYCLE]; [RATES]; [ELIGIBILITY]; [DEADLINES]; [CHARGE].
+For remittance matching, distinguish an allocatable fund receipt, clearing
+house settlement, refund, employee salary sacrifice, ATO assessed charge
+and unrelated PAYG/Medicare or insurance payment. Match using stable
+references, amount, date, fund and contributor evidence. An amount or bank
+narrative alone does not establish programme, employee or QE-day allocation.
+
+#### Additional employer-operation cases
+
+The following fictional cases test the operational branches above. Receipt
+and choice facts are stipulated only where stated; none is an actual
+portal submission, bank transfer or completed payroll engagement.
+
+| Fictional facts | Recomputed result or required disposition |
+|---|---|
+| Valid direct choice notice received 15 October 2026; employer determines no earlier effective date | Chosen-fund effective date 15 December 2026. Earlier SG receipt deadlines still apply through the then-lawful fund route. |
+| Another fund was chosen 6 months earlier; otherwise valid new notice | Employer may refuse under section 32FA(2), or accept. Record the decision; do not declare a universal ban on a second choice. |
+| Written request for another standard form; form already supplied 6 months earlier | Section 32N(3) disregards this request. Test other triggers and exceptions separately. |
+| New employee commenced in 2026; no choice; no ATO stapled response yet | Default-fund authority not established. Resolve the request and payment deadline; no invented default or extension. |
+| New employee has no choice; latest ATO response says no stapled fund; default/form/MySuper/insurance conditions all proved | The stipulated ordinary default branch is available. Receipt and amount still need separate proof. |
+| Stapled account rejects payment; alternate request returns the same account | Obtain ATO assistance or a valid alternative choice; do not automatically pay a different default account. |
+| Employee commenced in 2020; no valid chosen fund; lawful default conditions proved | Current ATO guidance does not require a stapled request merely because Payday Super began. |
+| MVR confirms active account; employer debit 240; actual fund receipt unknown | Verification is not remittance. Timeliness/allocatability remain unresolved. |
+| EFT 240 sent; employee data only emailed to fund | No demonstrated SuperStream-compliant electronic data. Correct the process without resetting the statutory receipt deadline. |
+| Employer proposes the ATO Small Business Superannuation Clearing House for an October 2026 payment | Channel closed from 1 July 2026; choose a current compliant route and verify actual fund receipt. |
+| Qualifying labour contractor has QE 600; no other STP status; employer does not report voluntarily | SG amount 72 remains due under the stipulated facts; SG status alone does not make this contractor payment mandatory STP. |
+| Verified prior QE YTD 270,000; current otherwise qualifying earnings 2,000; cap reporting option used | Current SG base 830 and amount 99.60. QE YTD reported at 270,830; preserve uncapped earnings ledger 272,000. |
+| Valid certificate begins midyear at reported QE YTD 20,000 | Hold QE YTD at 20,000 during the covered period for that employer. Recheck when coverage ends; no other employer is exempted. |
+| QE 2,000 plus non-QE paid parental leave 1,000; enterprise agreement expressly requires 12% super on that leave | Minimum SG 240, additional agreement super 120 and super liability 360. Increase QE YTD by 2,000; do not add the leave to QE merely because liability includes its super. |
+| Product has not yet switched to QE reporting in 2026-27; valid transition otherwise established | OTE plus super liability can still be accepted until 30 June 2027; actual SG is calculated and paid using QE. Keep YTD and each payday's records. |
+| Employer has started QE reporting, then sends OTE in another 2026-27 pay event | OTE reporting is no longer accepted under the stated transition. Correct the report and preserve actual QE-day history. |
+| Pay event from 1 July 2027 omits QE or super liability | The ATO says it rejects the report; no extension of the 2026-27 reporting acceptance. Recheck the later year's substantive figures separately. |
+| Update event with no QE YTD change and no actual new pay | Do not create a new QE day or SG amount from the event alone; retain the event and reconcile to actual pay. |
+| Earlier QE was 2,500 but lodged as 2,000; other facts unchanged; no cap or rounding difference | Correct the earlier records/report: SG component rises from 240 to 300, difference 60. The correction does not make the earnings newly paid or reset their receipt deadline. |
+| Approved quotation 1 July 2026; contribution 20 July 2026; same eligible entity; this employer has not previously informed a trustee of that entity | Quotation was 19 days earlier, so section 299C's required time is the end of 20 July 2026. Retain secure notification evidence; no actual TFN belongs in this working paper. |
+| Approved quotation 10 July 2026; contribution 15 July 2026; same conditions | Quotation was 5 days earlier, so the required time is the end of 24 July 2026, the 14th day after quotation. The SG receipt endpoint remains separately determined. |
+| Approved quotation 1 July 2026; contribution 15 July 2026; same conditions | Exactly 14 days is not more than 14. The otherwise branch gives the end of 15 July 2026; do not add another 14 days from contribution. |
+| No TFN quoted; otherwise due SG contribution | Section 299C's quotation condition is not established. Resolve lawful fund/channel acceptance without inventing a TFN or an SG extension; no complete notification certification. |
+| Approved quotation and contribution; evidence proves this employer previously informed a trustee of the same eligible entity of this employee’s TFN | Section 299C(1)(c) is false; no repeated notification by this employer under this provision. Retain evidence of the notifying employer, entity and employee reference; test a different employer or entity separately. |
+| Approved quotation to the current employer and subsequent eligible contribution; the trustee knows the TFN from another employer or the member, but this employer has never informed a trustee of that entity | Mere trustee knowledge does not satisfy the current employer’s prior-notification condition. Its section 299C hand-off obligation remains, subject to the other statutory conditions and deadline. |
+
+[SG]; [REG]; [WHERE]; [CHOICE]; [FORM]; [STAPLED]; [NEWFUND]; [STREAM];
+[UPGRADE]; [STP]; [STPFIX]; [SIS1]; [SIS2]; [SISJULY].
+
+## When to refuse or refer
+
+The selected rules do not satisfy every mandatory slot. Obtain the missing
+primary law, facts, forms and capabilities before a complete financial
+result. Preserve exact tool-unavailable refusal messages from the bases
+where they apply. Do not fill gaps with a mainland assumption, an invented
+island exemption, a zero rate or a claim of comprehensive coverage.
+
+Refer, and do not compute, when: the worker's status, QE, annual ledger, certificate, fund or receipt facts are missing (Needs Input, as slot 10 says); the engagement includes Norfolk Island earnings, a defined benefit fund or a cross-border certificate; or the request is to submit, sign or pay.
+
+## Filing and payment
+
+### Deadline calendar and longer periods
 
 The usual period ends on the **7th business day after the QE day**.
 The statutory business-day definition excludes Saturday, Sunday and a
@@ -499,7 +742,7 @@ and period determination. Verify and retain the actual determination;
 this guide does not assert that one covers a particular employer or day.
 [REG, regulation 13][REG]; [SG, section 18C(4)][SG]; [DEADLINES]
 
-## Late payments, SGC and disclosures
+### Late payments, SGC and disclosures
 
 The individual SG amount, base shortfall, final shortfall and total
 superannuation guarantee charge (SGC) are distinct. On-time eligible
@@ -552,182 +795,7 @@ their own current sources and facts; no complete penalty computation is
 supplied here. The first-year compliance approach does not repeal the
 underlying SG obligation. [SG, sections 33 and 36][SG]; [CHARGE]
 
-## Changeover and income-tax interaction
-
-Keep pre-July quarters and new QE-day ledgers separate. Schedule 1 item
-182 saves old quarterly liabilities and related rules, with the stated
-late-payment-offset limitation. Items 185-186 govern eligible unused
-pre-commencement amounts and contributions from **1-28 July 2026** where
-the employee still has a June-quarter shortfall: apply the latter first
-under the saved old rules, then only the unabsorbed remainder under the
-new rules. Do not use the same contribution twice. A July payment for
-June work is new-period QE without cancelling an old-quarter debt.
-[PAYDAY, items 182-186][PAYDAY]
-
-The annual SG base is not a personal deduction or contribution-cap safe
-harbour. Employer contribution deductions, personal voluntary contributions,
-salary sacrifice, excess contributions and high-income additional tax
-need their own income-tax rules and confirmed facts. The Payday Act
-repeals former sections 26-95 and 290-95 of the 1997 Act and contains
-saved-old-law application provisions. Do not carry the old blanket SGC
-non-deductibility rule into every post-July QE-day charge or infer that
-every charge, penalty and interest amount is deductible. No deduction is
-calculated by this companion. [PAYDAY, items 80, 92 and 183][PAYDAY]
-
-Current ATO guidance identifies deductions for on-time and late eligible
-contributions and payment of SGC for QE days from 1 July 2026. It excludes
-late-payment penalties, general interest accruing on unpaid SGC and
-quarterly-period SGC assessments. Keep those categories separate, and
-verify all applicable income-tax deduction conditions before a claim.
-This is a classification route, not a computed deduction. [HOWTO]
-
-## STP reporting, transition and correction controls
-
-For an employer/pay event required to use STP, report on or before each
-payday through STP-enabled software. Keep any verified exemption or
-special reporting arrangement separate; this guide does not establish
-all such cases. Ordinary reporting includes salary/wages, PAYG withholding
-and super liability. From 1 July 2026 the Payday Super requirements add
-QE reporting. An independent contractor who is an SG employee only under
-the labour-contract extension is not mandatorily brought into STP merely
-by that status. If the employer voluntarily reports those payments, the
-reporting requirements apply. [PAYDAY, Schedule 1 item 178][PAYDAY]; [STP]
-
-### Reconcile 2 distinct year-to-date amounts
-
-| Reported amount | Control |
-|---|---|
-| QE year to date (YTD) | Reconcile actual QE to the earnings ledger and prior YTD. The increase ordinarily identifies that payday's QE. Exclude non-QE reimbursements/fringe benefits; do not use total taxable pay as a substitute. |
-| Annual employer base | After the verified 2026-27 base of AUD 270,830 is reached, the ATO permits QE YTD to remain at that amount for the rest of the year. Keep the unmodified earnings ledger and any separate award/contract obligations. |
-| Valid opt-out certificate | A full-year covered employer/employee certificate yields QE YTD of zero from the start. If coverage begins part way through the year, hold the reported QE YTD from the start of the covered period. Verify employer, employee and dates; do not keep it frozen after coverage ends without a lawful basis. |
-| Super liability YTD | Report the liability, which includes minimum SG and applicable additional award/enterprise-agreement super. It can include super on a payment excluded from QE, such as stipulated award-covered parental leave. It is not the amount received by the fund. |
-
-[SG, sections 10A and 17B][SG]; [RATES]; [STP].
-Preserve the distinction between statutory minimum SG, other contractual
-super, reported liability and actual fund receipts. A zero SG amount after
-the annual base or during certificate coverage does not cancel every
-employment obligation.
-
-### 2026-27 software transition
-
-Ask the digital service provider how to configure QE and super liability.
-If the product is not yet updated, **still calculate and pay SG using QE**
-and keep each payday's records. Start reporting QE as soon as possible,
-including YTD amounts when reporting starts. The ATO accepts super
-liability with OTE in pay events until **30 June 2027**, but **once QE
-reporting starts, OTE reporting is no longer accepted**. This is a
-conditional reporting transition, not a contribution-payment deferral
-or permission to treat OTE as the new QE base. [STP]
-
-The ATO says no deferral request is needed where QE reporting can start
-during 2026-27; failure to report it during that year increases compliance
-risk. From **1 July 2027**, reports missing either QE or super liability
-will be rejected and penalties may apply. Confirm the applicable period
-and the provider's implementation; do not carry the 2026-27 acceptance
-into a later year. [STP]
-
-### Correct reporting without inventing a new payment
-
-Use the provider's STP correction process to fix a lodged YTD amount in
-the next pay event or an update event. An omitted/late original report
-is not a correction merely because a later report is submitted. Keep
-the original QE days, corrected amounts, reason, lodged event/response
-and affected contribution/shortfall history. Correcting data does not
-change the day earnings were actually paid or reset an SG deadline.
-[SG, sections 10A and 18C][SG]; [STPFIX]
-
-For ATO data reconciliation, an update event is not ordinarily a pay
-event. The ATO identifies a finalisation-indicator exception when QE
-corrections supply the final reported amount. With no change in QE YTD,
-no new QE/SG amount is inferred from that event; after a reduction, its
-guidance calculates no new QE until a later increase. Reconcile these
-data effects to actual pay and corrected records. Do not infer a cash
-refund, a fresh 20-business-day period or an election to reallocate older
-contributions. Recompute affected liability and retain reviewer holds
-where historical corrections remain unresolved. [STPFIX]; [SG]; [HOWTO]
-
-## Worked component examples and classification patterns
-
-All examples are fictional AUD for **2026-27**. Worker, earnings and
-ordinary accumulation-fund facts are stipulated. There is no Norfolk
-subset, defined benefit, cross-border certificate or rounding difference
-unless stated. Examples demonstrate selected amounts or classifications,
-not completed engagements. Any unresolved required input remains a hold.
-
-| Fictional facts | Recomputed result or classification |
-|---|---|
-| Adult employee, eligible QE 2,000, prior annual QE 10,000 | Individual SG amount 240. Separate employer funding and receipt still need proof. |
-| Eligible adult employee, QE only 100 | Individual SG amount 12; no assumed AUD 450 monthly floor. |
-| Under-18 employee, exactly 30 actual hours in a week | Part-time exclusion; no SG on the excluded earnings. Do not average hours with another week. |
-| Under-18 employee, 31 actual hours that week, eligible QE 620 | Individual SG amount 74.40, subject to the remaining coverage facts. |
-| Private household worker, 30 hours, all work wholly domestic | Section 12(11) exclusion; do not apply the adult business-employee result. |
-| Labour contract satisfies section 12(3); eligible labour 600 and separately proved goods 400 | Individual SG amount 72 on labour QE 600; not 120 on the total invoice merely because it is paid together. |
-| Cash qualifying pay 1,800 plus qualifying earnings sacrificed 200 | QE 2,000; individual SG amount 240. Sacrificed contribution 200 does not reduce that employer SG amount to 40. |
-| Same-day eligible QE payments 1,200 and 800 | QE day total 2,000; individual SG amount 240, without duplicating a commission already included. |
-| Prior annual QE 270,000; current otherwise eligible payment 2,000 | Remaining annual base 830; individual SG amount 99.60; keep the payment's unmodified earnings visible. |
-| Annual base already reached for that employer; later otherwise eligible QE 1,000 | Nil additional SG amount under the annual-base rule; other obligations remain separate. |
-| Fresh annual ledger, eligible QE exactly 270,830 | Individual SG amount 32,499.60; do not round the statutory base up to create SG of 32,500. |
-| Employer A has reached its base; employer B pays eligible QE 1,000 with a fresh verified ledger | Employer B's individual SG amount 120, absent its own valid certificate or exclusion. |
-| Valid exemption certificate covers only employer A | It does not exempt employer B's payments. Verify each certificate's employer, employee, period and QE day. |
-| Sole trader profit 50,000, no employees or qualifying labour/director relationship | No employer SG on the owner's stipulated profit; voluntary contribution and deduction questions remain separate. |
-| Individual SG amount 240; on-time eligible contribution 200 | Base shortfall 40. If a later eligible 40 is applied before assessment, final shortfall can become nil; this does not establish nil total SGC. |
-| Correct 240 sent to clearing house on the last permitted day; fund receipt unknown | Timing and compliance unresolved; no presumed timely receipt. |
-| Unused eligible receipt 300; applied to first QE day's SG amount 240 | Remainder 60 can be considered under the statutory period/allocation conditions; it cannot be reused as 300 for a later day. |
-| Earlier QE day has base/final shortfall 120; current day has SG amount 120; eligible receipt 120 is late for the earlier day but timely for the current day | Apply to the earlier unpaid day first: its final shortfall becomes nil, its base/history remain 120 and the current base shortfall is 120. Do not elect the current day or infer nil total SGC. |
-| Off-cycle bonus 500 between established scheduled paydays; all determination conditions met | Individual SG amount 60; receipt deadline follows the first subsequent standard QE day's usual period. |
-| Same bonus label, but next scheduled standard payment not made | The determination condition fails; do not assume the out-of-cycle extension. |
-| New employee's first eligible contribution qualifies for item 1 | Use the 20-business-day endpoint; later paydays require their own item 4 or other extension evidence. |
-| Mere irregular contractor invoice, no established pay schedule | Do not classify automatically as determined out-of-cycle QE. |
-| Natural disaster affects employer, but no covering determination established | Hold the extension; the disaster label alone is insufficient. |
-| Same-day no-interest/other-uplift example: relevant choice-failing contribution 240, full notice-period limit available | Choice loading 60 before any applicable statutory exception; no claim that this is total SGC. |
-| Combined final shortfalls and notional earnings 100; no regulation 13 reductions | Basic uplift 60. With proved 20-point history reduction and 40-point valid timely disclosure reduction, uplift becomes nil. |
-| Annual earnings history, fund-choice facts or holiday calendar missing | Needs Input for the affected amount or deadline; no default resolves it. |
-
-[SG]; [REG]; [OUTOFCYCLE]; [RATES]; [ELIGIBILITY]; [DEADLINES]; [CHARGE].
-For remittance matching, distinguish an allocatable fund receipt, clearing
-house settlement, refund, employee salary sacrifice, ATO assessed charge
-and unrelated PAYG/Medicare or insurance payment. Match using stable
-references, amount, date, fund and contributor evidence. An amount or bank
-narrative alone does not establish programme, employee or QE-day allocation.
-
-### Additional employer-operation cases
-
-The following fictional cases test the operational branches above. Receipt
-and choice facts are stipulated only where stated; none is an actual
-portal submission, bank transfer or completed payroll engagement.
-
-| Fictional facts | Recomputed result or required disposition |
-|---|---|
-| Valid direct choice notice received 15 October 2026; employer determines no earlier effective date | Chosen-fund effective date 15 December 2026. Earlier SG receipt deadlines still apply through the then-lawful fund route. |
-| Another fund was chosen 6 months earlier; otherwise valid new notice | Employer may refuse under section 32FA(2), or accept. Record the decision; do not declare a universal ban on a second choice. |
-| Written request for another standard form; form already supplied 6 months earlier | Section 32N(3) disregards this request. Test other triggers and exceptions separately. |
-| New employee commenced in 2026; no choice; no ATO stapled response yet | Default-fund authority not established. Resolve the request and payment deadline; no invented default or extension. |
-| New employee has no choice; latest ATO response says no stapled fund; default/form/MySuper/insurance conditions all proved | The stipulated ordinary default branch is available. Receipt and amount still need separate proof. |
-| Stapled account rejects payment; alternate request returns the same account | Obtain ATO assistance or a valid alternative choice; do not automatically pay a different default account. |
-| Employee commenced in 2020; no valid chosen fund; lawful default conditions proved | Current ATO guidance does not require a stapled request merely because Payday Super began. |
-| MVR confirms active account; employer debit 240; actual fund receipt unknown | Verification is not remittance. Timeliness/allocatability remain unresolved. |
-| EFT 240 sent; employee data only emailed to fund | No demonstrated SuperStream-compliant electronic data. Correct the process without resetting the statutory receipt deadline. |
-| Employer proposes the ATO Small Business Superannuation Clearing House for an October 2026 payment | Channel closed from 1 July 2026; choose a current compliant route and verify actual fund receipt. |
-| Qualifying labour contractor has QE 600; no other STP status; employer does not report voluntarily | SG amount 72 remains due under the stipulated facts; SG status alone does not make this contractor payment mandatory STP. |
-| Verified prior QE YTD 270,000; current otherwise qualifying earnings 2,000; cap reporting option used | Current SG base 830 and amount 99.60. QE YTD reported at 270,830; preserve uncapped earnings ledger 272,000. |
-| Valid certificate begins midyear at reported QE YTD 20,000 | Hold QE YTD at 20,000 during the covered period for that employer. Recheck when coverage ends; no other employer is exempted. |
-| QE 2,000 plus non-QE paid parental leave 1,000; enterprise agreement expressly requires 12% super on that leave | Minimum SG 240, additional agreement super 120 and super liability 360. Increase QE YTD by 2,000; do not add the leave to QE merely because liability includes its super. |
-| Product has not yet switched to QE reporting in 2026-27; valid transition otherwise established | OTE plus super liability can still be accepted until 30 June 2027; actual SG is calculated and paid using QE. Keep YTD and each payday's records. |
-| Employer has started QE reporting, then sends OTE in another 2026-27 pay event | OTE reporting is no longer accepted under the stated transition. Correct the report and preserve actual QE-day history. |
-| Pay event from 1 July 2027 omits QE or super liability | The ATO says it rejects the report; no extension of the 2026-27 reporting acceptance. Recheck the later year's substantive figures separately. |
-| Update event with no QE YTD change and no actual new pay | Do not create a new QE day or SG amount from the event alone; retain the event and reconcile to actual pay. |
-| Earlier QE was 2,500 but lodged as 2,000; other facts unchanged; no cap or rounding difference | Correct the earlier records/report: SG component rises from 240 to 300, difference 60. The correction does not make the earnings newly paid or reset their receipt deadline. |
-| Approved quotation 1 July 2026; contribution 20 July 2026; same eligible entity; this employer has not previously informed a trustee of that entity | Quotation was 19 days earlier, so section 299C's required time is the end of 20 July 2026. Retain secure notification evidence; no actual TFN belongs in this working paper. |
-| Approved quotation 10 July 2026; contribution 15 July 2026; same conditions | Quotation was 5 days earlier, so the required time is the end of 24 July 2026, the 14th day after quotation. The SG receipt endpoint remains separately determined. |
-| Approved quotation 1 July 2026; contribution 15 July 2026; same conditions | Exactly 14 days is not more than 14. The otherwise branch gives the end of 15 July 2026; do not add another 14 days from contribution. |
-| No TFN quoted; otherwise due SG contribution | Section 299C's quotation condition is not established. Resolve lawful fund/channel acceptance without inventing a TFN or an SG extension; no complete notification certification. |
-| Approved quotation and contribution; evidence proves this employer previously informed a trustee of the same eligible entity of this employee’s TFN | Section 299C(1)(c) is false; no repeated notification by this employer under this provision. Retain evidence of the notifying employer, entity and employee reference; test a different employer or entity separately. |
-| Approved quotation to the current employer and subsequent eligible contribution; the trustee knows the TFN from another employer or the member, but this employer has never informed a trustee of that entity | Mere trustee knowledge does not satisfy the current employer’s prior-notification condition. Its section 299C hand-off obligation remains, subject to the other statutory conditions and deadline. |
-
-[SG]; [REG]; [WHERE]; [CHOICE]; [FORM]; [STAPLED]; [NEWFUND]; [STREAM];
-[UPGRADE]; [STP]; [STPFIX]; [SIS1]; [SIS2]; [SISJULY].
-
-## Reviewer outputs, checks and remaining slots
+## Completion checklist
 
 Preserve all universal and social-domain outputs. For a supported component
 working paper, identify the following rather than implying that a correct
@@ -781,13 +849,38 @@ or to delete records automatically at that point. [SG, section 79][SG]
 | 11. Currency and rounding | Examples use AUD and exact cents; statutory annual base rounds down to AUD 10. Operational fractional-cent contribution/charge rules and any foreign-currency conversion remain unverified. |
 | 12. Worked cases | Employee, low earnings, annual ceiling, self-employed, remittance and employer-operation/STP boundaries supplied. No model-executed full contribution engagement, multi-programme or filing test is claimed. |
 
-The selected rules do not satisfy every mandatory slot. Obtain the missing
-primary law, facts, forms and capabilities before a complete financial
-result. Preserve exact tool-unavailable refusal messages from the bases
-where they apply. Do not fill gaps with a mainland assumption, an invented
-island exemption, a zero rate or a claim of comprehensive coverage.
+## Sources
 
-## Sources and verification limits
+| Source | URL | Read on |
+|---|---|---|
+| [SG] Superannuation Guarantee (Administration) Act 1992 (compilation in force 2026-07-01, volume 1). Read for sections 4, 6 and 8; section 12; sections 6 and 12(11); sections 8, 12 and 15C; sections 6 and 10A; section 10A(6) | https://www.legislation.gov.au/C2004A04402/2026-07-01/2026-07-01/text/original/epub/OEBPS/document_1/document_1.html | 2026-11-14 (re-read for section 10A(5) annual base formula, rounded down to a multiple of $10, and section 17A charge percentage 12); 2026-10-21 (read by Ryan Duguid) |
+| [REG] Superannuation Guarantee (Administration) Regulations 2018 (compilation in force 2026-07-01, volume 1). Read for regulations 11(f) and 12(1)(j); regulations 11-12; regulations 14-17; regulation 16; regulations 14 and 16; regulations 17A-17C | https://www.legislation.gov.au/F2018L01289/2026-07-01/2026-07-01/text/original/epub/OEBPS/document_1/document_1.html | 2026-10-21 (read by Ryan Duguid) |
+| [PAYDAY] Treasury Laws Amendment (Payday Superannuation) Act 2025 (as made, volume 1). Read for section 2 and Schedule 1 item 182; item 189; items 182-186; items 80, 92 and 183; Schedule 1 item 178 | https://www.legislation.gov.au/C2025A00057/asmade/2025-11-06/text/original/epub/OEBPS/document_1/document_1.html | 2026-10-21 (read by Ryan Duguid) |
+| [OUTOFCYCLE] Superannuation Guarantee (Administration) (Out-of-Cycle Qualifying Earnings) Determination 2026 (as made, volume 1). Read for sections 4-5 | https://www.legislation.gov.au/F2026L00784/asmade/2026-06-24/text/original/epub/OEBPS/document_1/document_1.html | 2026-10-21 (read by Ryan Duguid) |
+| [RATES] ATO: super guarantee. Read for the provisions cited as [RATES] in the body | https://www.ato.gov.au/tax-rates-and-codes/key-superannuation-rates-and-thresholds/super-guarantee | 2026-10-21 (read by Ryan Duguid) |
+| [DEADLINES] ATO: payment deadlines for payday super. Read for the provisions cited as [DEADLINES] in the body | https://www.ato.gov.au/businesses-and-organisations/super-for-employers/paying-super-on-payday/payment-deadlines-for-payday-super | 2026-10-21 (read by Ryan Duguid) |
+| [ELIGIBILITY] ATO: work out if you have to pay super. Read for the provisions cited as [ELIGIBILITY] in the body | https://www.ato.gov.au/businesses-and-organisations/super-for-employers/work-out-if-you-have-to-pay-super | 2026-10-21 (read by Ryan Duguid) |
+| [HOWTO] ATO: how to work out and pay super. Read for the provisions cited as [HOWTO] in the body | https://www.ato.gov.au/businesses-and-organisations/super-for-employers/paying-super-on-payday/how-to-work-out-and-pay-super | 2026-10-21 (read by Ryan Duguid) |
+| [CHARGE] ATO: what happens if you dont pay super correctly. Read for the provisions cited as [CHARGE] in the body | https://www.ato.gov.au/businesses-and-organisations/super-for-employers/missed-or-late-payday-super-payments/what-happens-if-you-dont-pay-super-correctly | 2026-10-21 (read by Ryan Duguid) |
+| [TERRITORY] Cocos (Keeling) Islands Act 1955 (compilation in force 2020-12-18, volume 1). Read for the provisions cited as [TERRITORY] in the body | https://www.legislation.gov.au/C1955A00034/2020-12-18/2020-12-18/text/original/epub/OEBPS/document_1/document_1.html | 2026-10-21 (read by Ryan Duguid) |
+| [DICT] Income Tax Assessment Act 1997 (compilation in force 2026-08-27, volume 10). Read for section 960-505 | https://www.legislation.gov.au/C2004A05138/2026-08-27/2026-08-27/text/original/epub/OEBPS/document_10/document_10.html | 2026-10-21 (read by Ryan Duguid) |
+| [AMEND71] Treasury Laws Amendment (Tax Reform No. 2) Act 2026 (Act 71 of 2026) (as made, volume 1). Read for the provisions cited as [AMEND71] in the body | https://www.legislation.gov.au/C2026A00071/asmade/2026-08-26/text/original/epub/OEBPS/document_1/document_1.html | 2026-10-21 (read by Ryan Duguid) |
+| [AMEND86] Treasury Laws Amendment (Strengthening Accountability for Tax Adviser Misconduct and Other Measures) Act 2026 (Act 86 of 2026) (as made, volume 1). Read for the provisions cited as [AMEND86] in the body | https://www.legislation.gov.au/C2026A00086/asmade/2026-09-15/text/original/epub/OEBPS/document_1/document_1.html | 2026-10-21 (read by Ryan Duguid) |
+| [NEWFUND] ATO: paying super for a new employee or fund. Read for the provisions cited as [NEWFUND] in the body | https://www.ato.gov.au/businesses-and-organisations/super-for-employers/paying-super-on-payday/paying-super-for-a-new-employee-or-fund | 2026-10-21 (read by Ryan Duguid) |
+| [WHERE] ATO: where to pay super. Read for the provisions cited as [WHERE] in the body | https://www.ato.gov.au/businesses-and-organisations/super-for-employers/paying-super-on-payday/where-to-pay-super | 2026-10-21 (read by Ryan Duguid) |
+| [STREAM] ATO: superstream for employers. Read for the provisions cited as [STREAM] in the body | https://www.ato.gov.au/businesses-and-organisations/super-for-employers/paying-super-on-payday/superstream-for-employers | 2026-10-21 (read by Ryan Duguid) |
+| [STP] ATO: single touch payroll reporting under payday super. Read for the provisions cited as [STP] in the body | https://www.ato.gov.au/businesses-and-organisations/super-for-employers/paying-super-on-payday/single-touch-payroll-reporting-under-payday-super | 2026-10-21 (read by Ryan Duguid) |
+| [DEFAULT] ATO: select your default super fund. Read for the provisions cited as [DEFAULT] in the body | https://www.ato.gov.au/businesses-and-organisations/super-for-employers/setting-up-super-for-your-business/select-your-default-super-fund | 2026-10-21 (read by Ryan Duguid) |
+| [CHOICE] ATO: offer employees a choice of super fund. Read for the provisions cited as [CHOICE] in the body | https://www.ato.gov.au/businesses-and-organisations/super-for-employers/setting-up-super-for-your-business/offer-employees-a-choice-of-super-fund | 2026-10-21 (read by Ryan Duguid) |
+| [STAPLED] ATO: stapled super funds for employers. Read for the provisions cited as [STAPLED] in the body | https://www.ato.gov.au/businesses-and-organisations/super-for-employers/setting-up-super-for-your-business/offer-employees-a-choice-of-super-fund/stapled-super-funds-for-employers | 2026-10-21 (read by Ryan Duguid) |
+| [RECORDS] ATO: record keeping for payday super. Read for the provisions cited as [RECORDS] in the body | https://www.ato.gov.au/businesses-and-organisations/super-for-employers/setting-up-super-for-your-business/record-keeping-for-payday-super | 2026-10-21 (read by Ryan Duguid) |
+| [UPGRADE] ATO: superstream changes for employers. Read for the provisions cited as [UPGRADE] in the body | https://www.ato.gov.au/businesses-and-organisations/super-for-employers/paying-super-on-payday/superstream-for-employers/superstream-changes-for-employers | 2026-10-21 (read by Ryan Duguid) |
+| [STPFIX] ATO: fixing single touch payroll errors in payday super. Read for the provisions cited as [STPFIX] in the body | https://www.ato.gov.au/businesses-and-organisations/super-for-employers/paying-super-on-payday/single-touch-payroll-reporting-under-payday-super/fixing-single-touch-payroll-errors-in-payday-super | 2026-10-21 (read by Ryan Duguid) |
+| [FORM] ATO: superannuation standard choice form. Read for the provisions cited as [FORM] in the body | https://www.ato.gov.au/forms-and-instructions/superannuation-standard-choice-form | 2026-10-21 (read by Ryan Duguid) |
+| [SIS1] Superannuation Industry (Supervision) Act 1993 (compilation in force 2026-08-10, volume 1). Read for sections 8, 10 and 15A | https://www.legislation.gov.au/C2004A04633/2026-08-10/2026-08-10/text/original/epub/OEBPS/document_1/document_1.html | 2026-10-21 (read by Ryan Duguid) |
+| [SISJULY] Superannuation Industry (Supervision) Act 1993 (compilation in force 2026-07-01, volume 2). Read for the provisions cited as [SISJULY] in the body | https://www.legislation.gov.au/C2004A04633/2026-07-01/2026-07-01/text/original/epub/OEBPS/document_2/document_2.html | 2026-10-21 (read by Ryan Duguid) |
+| [SIS2] Superannuation Industry (Supervision) Act 1993 (compilation in force 2026-08-10, volume 2). Read for sections 299A, 299C and 299P; section 299C | https://www.legislation.gov.au/C2004A04633/2026-08-10/2026-08-10/text/original/epub/OEBPS/document_2/document_2.html | 2026-10-21 (read by Ryan Duguid) |
+| [WPN] ATO: withholding payer number super obligations. Read for the provisions cited as [WPN] in the body | https://www.ato.gov.au/businesses-and-organisations/super-for-employers/setting-up-super-for-your-business/withholding-payer-number-super-obligations | 2026-10-21 (read by Ryan Duguid) |
 
 Checked **21 October 2026**: the live Register identified SG Act compilation
 **78**, effective **1 July 2026**, and SG Regulations compilation **8**,
@@ -864,22 +957,4 @@ volatile law and operational guidance before engagement use.
 [SIS2]: https://www.legislation.gov.au/C2004A04633/2026-08-10/2026-08-10/text/original/epub/OEBPS/document_2/document_2.html
 [WPN]: https://www.ato.gov.au/businesses-and-organisations/super-for-employers/setting-up-super-for-your-business/withholding-payer-number-super-obligations
 
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained in the
-[ryanduguid/openaccountants fork](https://github.com/ryanduguid/openaccountants).
-Check its quality tier, recorded review status and cited sources before use.
-Choose a practitioner whose credentials and engagement scope you have verified.
-The links below are optional upstream services; they do not publish or verify
-this fork's changes.
-
-- Upstream connection service: https://www.openaccountants.com/connect
-- Upstream accountant network: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
+Not yet confirmed: the ATO pages (for example [RATES], [DEADLINES], [ELIGIBILITY], [CHARGE]) refused an automated fetch on 2026-11-14 (HTTP 403); their figures and procedures rest on Ryan Duguid's reading of 21 October 2026. Actual daily charge rates, complete SGC forms, holiday mapping, fractional-cent rounding and the other open social-country slots listed in the checklist.

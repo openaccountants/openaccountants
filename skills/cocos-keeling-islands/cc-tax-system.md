@@ -14,17 +14,20 @@ description: >
 jurisdiction: CC
 category: international
 tax_year: 2026
-tax_year_notes: "Selected scope checked on 21 October 2026; identify each income year, event date and operative source separately"
+type: situation-rules
+tax_year_notes: "2026-27: selected scope checked on 21 October 2026; identify each income year, event date and operative source separately"
 tier: 2
-last_updated: 2026-10-23
-version: 0.4
-review_status: pending_review
+last_updated: 2026-11-14
+version: 0.5
 depends_on:
   - workflow-base
-verified_by: pending
 ---
 
-# Cocos (Keeling) Islands: tax application and territory boundaries
+# Cocos (Keeling) Islands: tax application and territory boundaries (v0.5)
+
+> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
+
+## Scope
 
 Establish the taxpayer, period, obligation and locations of the activity,
 asset and counterparties before choosing a rule. The catalogue code CC
@@ -39,24 +42,60 @@ formation, reporting, cross-border or other calculation also needs its
 applicable domain base and complete country sources and mandatory slots.
 No comprehensive-country acceptance or professional sign-off is claimed.
 
-## Period, figures and source conditions
+Christmas Island and the Cocos (Keeling) Islands are Australian external territories inside geographical Australia for income tax (ITAA 1997 section 960-505(1)(d)-(e)), so the Australian Commonwealth figures apply there. Use the Australian skills in `skills/australia/` for the figures of each Commonwealth tax once this skill has settled that it reaches the island: `au-rates-2026-27` (income tax rates), `au-medicare-levy`, `au-super-guarantee`, `australia-payroll` and `au-company-tax`. GST is different: the island is outside the indirect tax zone (see below), so `australia-gst` and `au-gst-bas` do not apply to supplies made wholly on the island.
+
+## Ask the client first
+
+Add these fields to the universal intake, using redacted references:
+
+- Obligation, income year, event dates and any approved substituted period.
+- Individual, company, trust, partnership or other entity; incorporation,
+  residence history and evidence of the actual residence tests.
+- Work, asset, supplier and customer locations; income character/source;
+  shipment origin, destination and goods status; mainland connections.
+- GST registration and enterprise facts, export/import evidence and any
+  special-rule, treaty or relief claim.
+- Medicare residence, dependants, exempt-period and entitlement evidence;
+  historical asset status, acquisition, valuation, records and choices.
+- For state-type/local obligations, the applied law, territory modification,
+  current notice, responsible authority and period.
+
+Do not request tax identifiers, identity documents, bank details or signing
+credentials. The reviewer holds those and completes submissions and payments.
+
+| Missing fact or condition | Treatment |
+|---|---|
+| Residence, income character/source, operative amendment, territory modification or event date | Needs Input; hold affected work. |
+| Registration, export evidence, exemption or historical prescribed status | Needs Input; no assumed entitlement or automatic maximum-tax substitute. |
+| Exchange-rate basis or required valuation | Needs Input; keep the source currency/value and hold conversion or valuation. |
+| Local charge omitted from this guide | Unverified; obtain the primary rule. Do not enter zero. |
+
+No factual defaults are authorised. No cash materiality floor suppresses a
+territorial, residence, source-version, exemption or transition flag: flag
+every such issue, including one with unknown cash impact. Do not describe an
+unverified liability as immaterial. These are workflow review thresholds,
+not statutory monetary thresholds.
+
+## The method, step by step
+
+### Period, figures and source conditions
 
 This is a dated reference checked on **21 October 2026**, with v0.4 source
 metadata. Verify amendments, regulations, modifications and application
 provisions for the requested period before an engagement result. An unknown
 legal condition requires Needs Input and a hold on the affected work.
 
-| Parameter | Selected rule and source |
-|---|---|
-| Territory framework | Cocos (Keeling) Islands Act 1955, compilation 13 of 18 December 2020, shown as latest when checked; sections 8A and 8E. [TERRITORY] |
-| Income-tax residence and accounting period | Income Tax Assessment Act 1936, compilation 193 of 1 October 2026; sections 6(1) and 18. [IT36] |
-| Income-tax geography, core inclusion and financial year | Income Tax Assessment Act 1997, compilation 267, effective 27 August to 30 September 2026; selected sections 4-10, 6-5, 6-10, 6-15, 960-505 and 995-1, with the amendment caveat below. [IT97]; [DICTIONARY] |
-| Financial year | 12 months beginning 1 July; distinguish the income year, company assessment relationship and any permitted substituted accounting period. [IT97, section 4-10][IT97]; [DICTIONARY, section 995-1][DICTIONARY]; [IT36, section 18][IT36] |
-| Income-tax currency | Foreign-currency amounts generally require Australian-currency translation under section 960-50, subject to its rules, exclusions and the separate functional-currency regime; no exchange rate is supplied here. [DICTIONARY, Subdivisions 960-C and 960-D][DICTIONARY] |
-| GST territory | The indirect tax zone excludes external territories. The GST Act compilation 96 of 1 January 2026 was shown as latest when checked. [GST2, section 195-1][GST2] |
-| Customs administration | Customs Ordinance 1993 (CKI), compilation 4 of 1 July 2015, shown as latest when checked; section 3 and Schedule 1. [CUSTOMS-LOCAL] |
-| Excise geography | Excise Act 1901, compilation 69 of 27 August 2026; section 4 expressly excludes Christmas Island and Cocos from its Australia definition. [EXCISE] |
-| Cocos CGT cutoff | 30 June 1991, subject to all statutory conditions and a possible choice to disapply the transition. The current transitional Act compilation 104 is dated 1 October 2026. [TRANS, section 102-25][TRANS] |
+| Parameter | Selected rule, date or figure, and source | Official URL |
+|---|---|---|
+| Territory framework | Cocos (Keeling) Islands Act 1955, compilation 13 of 18 December 2020, shown as latest when checked; sections 8A and 8E. [TERRITORY] | https://www.legislation.gov.au/C1955A00034/2020-12-18/2020-12-18/text/original/epub/OEBPS/document_1/document_1.html |
+| Income-tax residence and accounting period | Income Tax Assessment Act 1936, compilation 193 of 1 October 2026; sections 6(1) and 18. [IT36] | https://www.legislation.gov.au/C1936A00027/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_1/document_1.html |
+| Income-tax geography, core inclusion and financial year | Income Tax Assessment Act 1997, compilation 267, effective 27 August to 30 September 2026; selected sections 4-10, 6-5, 6-10, 6-15, 960-505 and 995-1, with the amendment caveat below. [IT97]; [DICTIONARY] | https://www.legislation.gov.au/C2004A05138/2026-08-27/2026-08-27/text/original/epub/OEBPS/document_1/document_1.html |
+| Financial year | 12 months beginning 1 July; distinguish the income year, company assessment relationship and any permitted substituted accounting period. [IT97, section 4-10][IT97]; [DICTIONARY, section 995-1][DICTIONARY]; [IT36, section 18][IT36] | https://www.legislation.gov.au/C2004A05138/2026-08-27/2026-08-27/text/original/epub/OEBPS/document_1/document_1.html |
+| Income-tax currency | Foreign-currency amounts generally require Australian-currency translation under section 960-50, subject to its rules, exclusions and the separate functional-currency regime; no exchange rate is supplied here. [DICTIONARY, Subdivisions 960-C and 960-D][DICTIONARY] | https://www.legislation.gov.au/C2004A05138/2026-08-27/2026-08-27/text/original/epub/OEBPS/document_10/document_10.html |
+| GST territory | The indirect tax zone excludes external territories. The GST Act compilation 96 of 1 January 2026 was shown as latest when checked. [GST2, section 195-1][GST2] | https://www.legislation.gov.au/C2004A00446/2026-01-01/2026-01-01/text/original/epub/OEBPS/document_2/document_2.html |
+| Customs administration | Customs Ordinance 1993 (CKI), compilation 4 of 1 July 2015, shown as latest when checked; section 3 and Schedule 1. [CUSTOMS-LOCAL] | https://www.legislation.gov.au/F2006B00522/2015-07-01/2015-07-01/text/original/epub/OEBPS/document_1/document_1.html |
+| Excise geography | Excise Act 1901, compilation 69 of 27 August 2026; section 4 expressly excludes Christmas Island and Cocos from its Australia definition. [EXCISE] | https://www.legislation.gov.au/C1901A00009/2026-08-27/2026-08-27/text/original/epub/OEBPS/document_1/document_1.html |
+| Cocos CGT cutoff | 30 June 1991, subject to all statutory conditions and a possible choice to disapply the transition. The current transitional Act compilation 104 is dated 1 October 2026. [TRANS, section 102-25][TRANS] | https://www.legislation.gov.au/C2004A05128/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_1/document_1.html |
 
 The Register's latest 1997 Act text still showed compilation 267 with a
 closed interval ending **30 September 2026**. It is not a complete current
@@ -72,7 +111,7 @@ No tax rate, registration threshold, levy amount, general filing deadline
 or local fee amount is provided. A scope exclusion does not establish a
 refund, offset, deduction or absence of every tax or charge.
 
-## Commonwealth and applied Western Australian law
+### Commonwealth and applied Western Australian law
 
 The Cocos (Keeling) Islands are an Australian external territory. Under section 8E of
 the Cocos (Keeling) Islands Act 1955, Commonwealth Acts extend of their own force
@@ -101,7 +140,7 @@ Use `cc-super-guarantee` with the social contributions base for selected
 2026-27 employer SG, annual-base and fund-receipt rules. It does not
 complete the payroll or all-programme social contribution slots.
 
-## Income tax, residence, period and Medicare
+### Income tax, residence, period and Medicare
 
 The 1936 Act's Australia definition adopts the 1997 Act's meaning. Section
 960-505(1)(d)-(e) expressly includes Christmas Island and the Cocos (Keeling)
@@ -145,7 +184,7 @@ certificate, dependants, exempt periods and the current Levy Acts before
 calculating ordinary levy or surcharge. No levy or surcharge amount is
 computed here. [MEDICARE, sections 251S-251VA][MEDICARE]
 
-## GST: island activity and other connections
+### GST: island activity and other connections
 
 The GST Act section 195-1 indirect-tax-zone definition excludes external
 territories. ATO LCR 2016/1 paragraphs 25-27 identifies both Christmas Island
@@ -177,7 +216,7 @@ not proof that every GST export condition is met. Actual registration,
 export timing, evidence, credits, returns and refunds require the complete
 operative rules, including applicable regulations. [EXPORT]
 
-## Customs controls, excise and direction of movement
+### Customs controls, excise and direction of movement
 
 Federal Customs Act 1901 section 6 generally excludes external territories,
 with its specified Ashmore and Cartier regulation power. Read that with
@@ -211,7 +250,7 @@ remission and other charging law separately. This guide does not calculate
 excise, wine equalisation tax, luxury car tax, fuel credits, biosecurity
 charges, freight, port fees or an overall landed cost. [EXCISE, section 4][EXCISE]
 
-## Cocos asset transition: test every condition
+### Cocos asset transition: test every condition
 
 Section 102-25(1) of the Income Tax (Transitional Provisions) Act 1997
 requires all of these conditions:
@@ -245,49 +284,43 @@ An actual disposal still needs its event, proceeds, complete cost base,
 losses, residence, relief, choice and operative law. This guide supplies no
 net capital gain, discount, withholding or tax payable computation.
 
-## Intake, defaults, refusals and reviewer attention
+## Worked cases
 
-Add these fields to the universal intake, using redacted references:
+Two cases that recompute (derived, AUD).
 
-- Obligation, income year, event dates and any approved substituted period.
-- Individual, company, trust, partnership or other entity; incorporation,
-  residence history and evidence of the actual residence tests.
-- Work, asset, supplier and customer locations; income character/source;
-  shipment origin, destination and goods status; mainland connections.
-- GST registration and enterprise facts, export/import evidence and any
-  special-rule, treaty or relief claim.
-- Medicare residence, dependants, exempt-period and entitlement evidence;
-  historical asset status, acquisition, valuation, records and choices.
-- For state-type/local obligations, the applied law, territory modification,
-  current notice, responsible authority and period.
+**Case 1 (fictional case 2 below).** A stipulated Australian-resident individual on Cocos (Keeling) Islands derives
+AUD 20,000 of local ordinary wages and AUD 4,000 of foreign ordinary interest, both non-exempt; the
+inclusion is worldwide. This is the ordinary income inclusion, not taxable income or tax.
 
-Do not request tax identifiers, identity documents, bank details or signing
-credentials. The reviewer holds those and completes submissions and payments.
+```oa-check
+name: Cocos (Keeling) Islands resident, worldwide ordinary income inclusion
+inputs:
+  local_wages: 20000
+  foreign_interest: 4000
+steps:
+  - inclusion: local_wages + foreign_interest
+expected:
+  inclusion: 24000
+```
 
-| Missing fact or condition | Treatment |
-|---|---|
-| Residence, income character/source, operative amendment, territory modification or event date | Needs Input; hold affected work. |
-| Registration, export evidence, exemption or historical prescribed status | Needs Input; no assumed entitlement or automatic maximum-tax substitute. |
-| Exchange-rate basis or required valuation | Needs Input; keep the source currency/value and hold conversion or valuation. |
-| Local charge omitted from this guide | Unverified; obtain the primary rule. Do not enter zero. |
+**Case 2, the presence branch of the residence test (ITAA 1936 section 6(1)).** The branch looks at
+presence in Australia (which includes the island) for more than half of the ordinary 365-day 2026-27
+income year, subject to its usual-abode and intention exception. 183 days is more than half; 182 is not.
 
-No factual defaults are authorised. No cash materiality floor suppresses a
-territorial, residence, source-version, exemption or transition flag: flag
-every such issue, including one with unknown cash impact. Do not describe an
-unverified liability as immaterial. These are workflow review thresholds,
-not statutory monetary thresholds.
+```oa-check
+name: More than half of a 365-day income year
+inputs:
+  year_days: 365
+  days_present: 183
+steps:
+  - half: year_days / 2
+  - margin: days_present - half
+expected:
+  half: 182.5
+  margin: 0.5
+```
 
-The universal refusal catalogue remains loaded. Use its reviewer-missing
-refusal when that trigger applies. The following additional messages apply
-verbatim; evidence gaps alone remain Needs Input unless a refusal fires.
-
-| Code | Trigger | Verbatim output |
-|---|---|---|
-| R-CC-SCOPE | Asked to give a completed liability, filing-ready return or professional opinion using this selected scope guide alone | This guide supplies selected Cocos (Keeling) Islands scope rules. I need the complete applicable country content, domain workflow and operative sources before preparing that result for a credentialed reviewer. |
-| R-CC-EXEMPTION | Asked to assert an exemption solely from an island address or the absence of a charge in this guide | I cannot establish an exemption from an address or an omitted charge. The applicable primary rule and all required conditions must be established. |
-| R-CC-SUBMISSION | Asked to submit, sign, pay or provide credentials through this workflow | This workflow prepares records for professional review. The reviewer must retain credentials and complete signing, submission and payment. |
-
-## Fictional component cases
+### Fictional component cases
 
 These stipulated cases test classification only. They are not engagement
 files, complete computations, model execution results or benchmark evidence.
@@ -307,7 +340,19 @@ files, complete computations, model execution results or benchmark evidence.
 | 10. The asset was first acquired on 1 July 1991 | Subsection (1)(b)'s cutoff fails. Investigate ordinary rules and other relief; do not apply the transition. [TRANS] |
 | 11. A CGT event occurs and compliant Division 121 records exist, but the entity's choice is unknown | Subsection (4) permits a choice; records alone do not prove it was made. Hold the selected basis pending that fact. [TRANS] |
 
-## Working papers, output mapping and checks
+## When to refuse or refer
+
+The universal refusal catalogue remains loaded. Use its reviewer-missing
+refusal when that trigger applies. The following additional messages apply
+verbatim; evidence gaps alone remain Needs Input unless a refusal fires.
+
+| Code | Trigger | Verbatim output |
+|---|---|---|
+| R-CC-SCOPE | Asked to give a completed liability, filing-ready return or professional opinion using this selected scope guide alone | This guide supplies selected Cocos (Keeling) Islands scope rules. I need the complete applicable country content, domain workflow and operative sources before preparing that result for a credentialed reviewer. |
+| R-CC-EXEMPTION | Asked to assert an exemption solely from an island address or the absence of a charge in this guide | I cannot establish an exemption from an address or an omitted charge. The applicable primary rule and all required conditions must be established. |
+| R-CC-SUBMISSION | Asked to submit, sign, pay or provide credentials through this workflow | This workflow prepares records for professional review. The reviewer must retain credentials and complete signing, submission and payment. |
+
+## Completion checklist
 
 For a permitted scope assignment, follow the universal profile confirmation
 and refusal checks before classification. Keep every item as established
@@ -348,7 +393,27 @@ Run the universal checks plus these component checks:
 - Preserve every issue and source through the workbook and reviewer documents.
 - Keep unresolved country topics open; a guide-presence count is not acceptance.
 
-## Primary sources and remaining coverage
+## Sources
+
+| Source | URL | Read on |
+|---|---|---|
+| [TERRITORY] Cocos (Keeling) Islands Act 1955 (compilation in force 2020-12-18, volume 1). Read for section 8E; section 8A; section 18A | https://www.legislation.gov.au/C1955A00034/2020-12-18/2020-12-18/text/original/epub/OEBPS/document_1/document_1.html | 2026-10-21 (read by Ryan Duguid) |
+| [GOVERNANCE] Department of Infrastructure: governance administration. Read for the territory's governance and administration (section 8A/8E context) | https://www.infrastructure.gov.au/territories-regions-cities/territories/indian-ocean-territories/cocos-keeling-islands/governance-administration | 2026-10-21 (read by Ryan Duguid) |
+| [IT36] Income Tax Assessment Act 1936 (compilation in force 2026-10-01, volume 1). Read for section 18; section 6(1); sections 6(1) and 18 | https://www.legislation.gov.au/C1936A00027/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_1/document_1.html | 2026-10-21 (read by Ryan Duguid) |
+| [IT97] Income Tax Assessment Act 1997 (compilation in force 2026-08-27, volume 1). Read for section 4-10; sections 6-5, 6-10 and 6-15; sections 1-7 and 4-10; sections 6-5 and 6-15 | https://www.legislation.gov.au/C2004A05138/2026-08-27/2026-08-27/text/original/epub/OEBPS/document_1/document_1.html | 2026-10-21 (read by Ryan Duguid) |
+| [DICTIONARY] Income Tax Assessment Act 1997 (compilation in force 2026-08-27, volume 10). Read for section 995-1; Subdivisions 960-C and 960-D; sections 960-505 and 995-1 | https://www.legislation.gov.au/C2004A05138/2026-08-27/2026-08-27/text/original/epub/OEBPS/document_10/document_10.html | 2026-10-21 (read by Ryan Duguid) |
+| [IT97-RECORD] Income Tax Assessment Act 1997 (Federal Register of Legislation record, latest compilation). Read for the provisions cited as [IT97-RECORD] in the body | https://www.legislation.gov.au/C2004A05138/latest/details | 2026-10-21 (read by Ryan Duguid) |
+| [AMEND71] Treasury Laws Amendment (Tax Reform No. 2) Act 2026 (Act 71 of 2026) (as made, volume 1). Read for the provisions cited as [AMEND71] in the body | https://www.legislation.gov.au/C2026A00071/asmade/2026-08-26/text/original/epub/OEBPS/document_1/document_1.html | 2026-10-21 (read by Ryan Duguid) |
+| [AMEND86] Treasury Laws Amendment (Strengthening Accountability for Tax Adviser Misconduct and Other Measures) Act 2026 (Act 86 of 2026) (as made, volume 1). Read for the provisions cited as [AMEND86] in the body | https://www.legislation.gov.au/C2026A00086/asmade/2026-09-15/text/original/epub/OEBPS/document_1/document_1.html | 2026-10-21 (read by Ryan Duguid) |
+| [MEDICARE] Income Tax Assessment Act 1936 (compilation in force 2026-10-01, volume 4). Read for sections 251S-251VA | https://www.legislation.gov.au/C1936A00027/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_4/document_4.html | 2026-10-21 (read by Ryan Duguid) |
+| [GST1] A New Tax System (Goods and Services Tax) Act 1999 (compilation in force 2026-01-01, volume 1). Read for sections 9-5 and 9-25; section 9-25, particularly (5) and (7); sections 9-5 and 9-25(1) | https://www.legislation.gov.au/C2004A00446/2026-01-01/2026-01-01/text/original/epub/OEBPS/document_1/document_1.html | 2026-10-21 (read by Ryan Duguid) |
+| [GST2] A New Tax System (Goods and Services Tax) Act 1999 (compilation in force 2026-01-01, volume 2). Read for section 195-1 | https://www.legislation.gov.au/C2004A00446/2026-01-01/2026-01-01/text/original/epub/OEBPS/document_2/document_2.html | 2026-10-21 (read by Ryan Duguid) |
+| [GST-RULING] ATO: document. Read for the provisions cited as [GST-RULING] in the body | https://www.ato.gov.au/law/view/document?DocID=COG%2FLCR20161%2FNAT%2FATO%2F00001 | 2026-10-21 (read by Ryan Duguid) |
+| [CUSTOMS-FED] Customs Act 1901 (compilation in force 2026-09-29, volume 1). Read for section 6 | https://www.legislation.gov.au/C1901A00006/2026-09-29/2026-09-29/text/original/epub/OEBPS/document_1/document_1.html | 2026-10-21 (read by Ryan Duguid) |
+| [CUSTOMS-LOCAL] Customs Ordinance 1993 (CKI) (compilation in force 2015-07-01, volume 1). Read for sections 3-4 and Schedules 1-3; Schedule 1 item 1 | https://www.legislation.gov.au/F2006B00522/2015-07-01/2015-07-01/text/original/epub/OEBPS/document_1/document_1.html | 2026-10-21 (read by Ryan Duguid) |
+| [EXCISE] Excise Act 1901 (compilation in force 2026-08-27, volume 1). Read for section 4 | https://www.legislation.gov.au/C1901A00009/2026-08-27/2026-08-27/text/original/epub/OEBPS/document_1/document_1.html | 2026-10-21 (read by Ryan Duguid) |
+| [EXPORT] Australian Border Force: export requirements. Read for export requirements for goods moving from the territory | https://www.abf.gov.au/importing-exporting-and-manufacturing/exporting/how-to-export/export-requirements | 2026-10-21 (read by Ryan Duguid) |
+| [TRANS] Income Tax (Transitional Provisions) Act 1997 (compilation in force 2026-10-01, volume 1). Read for section 102-25 | https://www.legislation.gov.au/C2004A05128/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_1/document_1.html | 2026-10-21 (read by Ryan Duguid) |
 
 Selected provisions and the official governance/export guidance were read
 for this reference. The linked full Acts were not reviewed clause by clause.
@@ -392,22 +457,4 @@ filing-ready work product.
 [EXPORT]: https://www.abf.gov.au/importing-exporting-and-manufacturing/exporting/how-to-export/export-requirements
 [TRANS]: https://www.legislation.gov.au/C2004A05128/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_1/document_1.html
 
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained in the
-[ryanduguid/openaccountants fork](https://github.com/ryanduguid/openaccountants).
-Check its quality tier, recorded review status and cited sources before use.
-Choose a practitioner whose credentials and engagement scope you have verified.
-The links below are optional upstream services; they do not publish or verify
-this fork's changes.
-
-- Upstream connection service: https://www.openaccountants.com/connect
-- Upstream accountant network: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
+Not yet confirmed: the ATO ruling page ([GST-RULING]) refused an automated fetch on 2026-11-14 (HTTP 403); the applied Western Australian revenue-law inventory and any local charge or fee; the full border rules, regulations and forms; every topic the remaining-coverage paragraph lists as open.
