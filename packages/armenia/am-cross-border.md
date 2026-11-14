@@ -1,17 +1,18 @@
 ---
 name: am-cross-border
 description: "Prepare Armenia 2026 corporate and personal cross-border workpapers: establish residence and permanent-establishment status, classify Armenian-source receipts, separate PE profit from non-attributed income, compute domestic nonresident withholding and reconcile capped foreign-tax credit. Covers offshore services, payment and dividend triggers, quarterly versus annual filing, electronic residence certificates and enacted future-date gates. Includes two examples and supplementary research controls for royalties, net-guaranteed consultancy, dividends, credit limitation and carryforward, and PE attribution. Use for Armenian nonresident payments, foreign companies, source of income, tax treaties and foreign tax. Supplies ordinary personal source/property, agent/no-agent reporting and departure-year methods. Maps the current SRC recipient application, authority approval and receiving-account instruction. Taxpayer-specific treaty entitlement, specialist property/exit/mobility and actual bank-settlement timing remain separate boundaries. Checked against the law."
-version: 0.2
+version: 0.3
+type: situation-rules
 jurisdiction: AM
 tax_year: 2026
-last_updated: 2026-10-28
+last_updated: 2026-11-14
 category: cross-border
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: cross-border
 ---
 
-# Armenia corporate and personal cross-border preparation v0.2
+# Armenia corporate and personal cross-border preparation v0.3
 
 ## Who this applies to
 
@@ -33,13 +34,13 @@ Ordinary domestic rules before separately established treaty/Code relief:
 
 | Population/receipt | Rate or test | Tax year and primary source |
 |---|---|---|
-| Ordinary resident corporate profit / attributable PE profit | 18% on established taxable profit | 2026, [125(1)][code] |
-| No-PE insurance indemnities, reinsurance fees and freight | 5% | 2026, [125(4)(1)][code] |
-| No-PE passive income, subject to specific exceptions | 10% | 2026, [125(4)(2)][code] |
-| No-PE dividends | 5% | 2026, [125(4)(3.1)][code] |
-| Specified securities capital appreciation / stated participation exception | Statute distinguishes 0% securities appreciation and 18% appreciation on the stated stocks/shares/units in another organisation | 2026, [125(4)(4)][code]; actual instrument classification required |
-| Other Armenian-source no-PE income outside the preceding categories | 20% | 2026, [125(4)(5)][code] |
-| Relevant listed-jurisdiction goods advance without outcome | Statutory deemed-income event on day 366 after payment where the 365-day condition is met | 2026, [125(6)][code]; list/status/outcome must be established |
+| Ordinary resident corporate profit / attributable PE profit | 18% on established taxable profit | 2026, [125(1)][code], https://www.arlis.am/hy/acts/215611/latest |
+| No-PE insurance indemnities, reinsurance fees and freight | 5% | 2026, [125(4)(1)][code], https://www.arlis.am/hy/acts/215611/latest |
+| No-PE passive income, subject to specific exceptions | 10% | 2026, [125(4)(2)][code], https://www.arlis.am/hy/acts/215611/latest |
+| No-PE dividends | 5% | 2026, [125(4)(3.1)][code], https://www.arlis.am/hy/acts/215611/latest |
+| Specified securities capital appreciation / stated participation exception | Statute distinguishes 0% securities appreciation and 18% appreciation on the stated stocks/shares/units in another organisation | 2026, [125(4)(4)][code]; actual instrument classification required, https://www.arlis.am/hy/acts/215611/latest |
+| Other Armenian-source no-PE income outside the preceding categories | 20% | 2026, [125(4)(5)][code], https://www.arlis.am/hy/acts/215611/latest |
+| Relevant listed-jurisdiction goods advance without outcome | Statutory deemed-income event on day 366 after payment where the 365-day condition is met | 2026, [125(6)][code]; list/status/outcome must be established, https://www.arlis.am/hy/acts/215611/latest |
 
 Do not apply corporate interest/royalty withholding rates to an individual. Do not claim all securities are exempt or every participation gain is taxed on gross proceeds. Treaty relief, exempt-income provisions, beneficial receipt, instrument and recipient status must be resolved for the particular transaction. The examples assume no relief and ordinary established corporate scope. [103–105, 107–108, 125][code]
 

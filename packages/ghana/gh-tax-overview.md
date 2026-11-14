@@ -2,17 +2,18 @@
 name: gh-tax-overview
 description: >
   Use this skill for a map of Ghana tax for 2026: the year of assessment, currency, the Ghana Revenue Authority, how residents and non-residents are taxed, the top personal rate from 1 September 2026, the 25% company rate, VAT at 15% plus levies under Act 1151, pensions, the main due dates, and which Ghana skill to load next. Trigger on "Ghana tax overview", "taxes in Ghana", "how does tax work in Ghana", "Ghana tax system", or any general Ghana tax question. Figures are owned by the linked skills.
-version: 0.2
+version: 0.3
 jurisdiction: GH
 category: international
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
+type: situation-rules
 ---
 
-# Ghana Tax Overview v0.2
+# Ghana Tax Overview v0.3
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 

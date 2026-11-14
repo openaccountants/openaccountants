@@ -1,13 +1,14 @@
 ---
 name: de-freelance-intake
 description: ALWAYS USE THIS SKILL when a user asks for help preparing their German tax returns AND mentions freelancing (Freiberufler), self-employment (Selbstständigkeit), trade business (Gewerbetreibender), contracting, or sole proprietorship (Einzelunternehmer). Trigger on phrases like "help me do my German taxes", "prepare my EStE", "I'm self-employed in Germany", "I'm a Freiberufler", "do my Steuererklärung", "prepare my USt and ESt", or any similar phrasing where the user is a Germany-resident self-employed individual needing tax return preparation. This is the REQUIRED entry point for the Germany self-employed tax workflow -- every other skill in the stack (germany-vat-return, de-einkommensteuer-freelancer, de-social-contributions, de-trade-tax, de-estimated-tax, de-return-assembly) depends on this skill running first to produce a structured intake package. Uses upload-first workflow -- the user dumps all their documents and the skill infers as much as possible before asking questions. Uses ask_user_input_v0 for structured questions instead of one-at-a-time prose. Built for speed. Germany full-year residents only; self-employed individuals and sole proprietors.
-version: 0.2
+version: 0.3
 jurisdiction: DE
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
+type: router
 ---
 
 # German freelancer and sole trader tax intake (Freiberufler and Gewerbetreibende)
@@ -289,3 +290,5 @@ expected:
 | IHKG § 3 | https://www.gesetze-im-internet.de/ihkg/__3.html | 2026-10-31 |
 | UStG § 18 | https://www.gesetze-im-internet.de/ustg_1980/__18.html | 2026-10-31 |
 | UStG § 19 | https://www.gesetze-im-internet.de/ustg_1980/__19.html | 2026-10-31 |
+
+Not yet confirmed: none.

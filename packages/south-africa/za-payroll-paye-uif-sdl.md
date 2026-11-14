@@ -1,13 +1,14 @@
 ---
 name: za-payroll-paye-uif-sdl
 description: "South African payroll for the 2027 tax year (1 March 2026 to 28 February 2027): employees' tax (PAYE) under the Fourth Schedule to the Income Tax Act 58 of 1962, Unemployment Insurance Fund contributions under the Unemployment Insurance Contributions Act 4 of 2002, and the Skills Development Levy under the Skills Development Levies Act 9 of 1999. Covers the 2027 tax bands, rebates, thresholds, medical scheme fees tax credits, the annual-equivalent method, the retirement fund deduction, UIF at 1% + 1% up to R17 712 a month and its exclusions, SDL at 1% with the R500 000 exemption, the EMP201 seven-day rule, directors, penalties and interest. Trigger on: South Africa PAYE, payroll South Africa, UIF contribution, UIF ceiling, SDL levy, EMP201, employees' tax, IRP5, medical tax credit, tax rebate 2027. Out of scope: EMP501 reconciliation (za-emp501-reconciliation-and-irp5-corrections-syfile), the Employment Tax Incentive, lump sums and directives, foreign employment exemption (za-foreign-employment-exemption)."
-version: 0.1
+version: 0.2
 jurisdiction: ZA
 tax_year: 2026
-last_updated: 2026-11-02
+last_updated: 2026-11-14
 category: payroll
 tier: 2
 domain: payroll
+type: computation
 ---
 
 # South African payroll: PAYE, UIF and SDL for the 2027 tax year

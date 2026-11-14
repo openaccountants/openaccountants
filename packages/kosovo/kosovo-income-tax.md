@@ -2,19 +2,20 @@
 name: kosovo-income-tax
 description: >
   Compute Kosovo personal income tax for 2026 individuals, sole traders and partners from the current Personal Income Tax Law and its amendments. Covers residence, worldwide and Kosovo-source income, progressive annual bands, small-business gross taxation, the actual-income election, allowable expenses, capital allowances, losses, rent, royalties, gifts, inheritance, capital gains, instalments and foreign tax credits. Separates personal business income from corporate income tax, routes wages and pension contributions to their current skills, and identifies the outdated donation label in the tax authority calculator. Use for annual PD or DI returns, IS or IL advances, self-employment, investment disposals, taxable transfers and income-tax reconciliation.
-version: 0.2
+version: 0.3
 jurisdiction: XK
 tax_year: 2026
-last_updated: 2026-10-30
+last_updated: 2026-11-14
 depends_on:
   - income-tax-workflow-base
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants skill License v1.0 (content)
 tier: 2
 domain: income-tax
+type: computation
 ---
 
-# Kosovo personal income tax v0.2
+# Kosovo personal income tax v0.3
 
 Tax year **2026**. Checked against the law on **30 October 2026** (tier 2); no
 licensed accountant has signed it off. The operative PIT law is

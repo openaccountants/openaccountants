@@ -1,10 +1,11 @@
 ---
 name: hr-cross-border
 description: "Croatian cross-border tax for tax year 2026 (Profit Tax Act NN 177/04 as amended to NN 151/25, Personal Income Tax Act NN 115/16 as amended to NN 152/24, General Tax Act NN 115/16). Covers residence of individuals (home or habitual abode of 183 days) and companies (registered seat or place of effective management), how non-residents are taxed, permanent establishment, withholding tax under Profit Tax Act article 31 (15% interest and royalties, 10% dividends, 10% foreign performers, 25% on payments and listed services to EU-listed non-cooperative jurisdictions), EU directive exemptions, 12% tax on dividends and interest paid to non-resident individuals, treaty relief claim forms, foreign tax credit, and the company exit tax with five-period spreading. Trigger on: Croatia withholding tax, porez po odbitku, Croatian non-resident, move to Croatia, leave Croatia, exit tax Croatia, PE in Croatia. Out of scope: hr-corporate-income-tax, croatia-income-tax, croatia-payroll, croatia-social-contributions, croatia-vat-return."
-version: 0.1
+version: 0.2
+type: situation-rules
 jurisdiction: HR
 tax_year: 2026
-last_updated: 2026-10-24
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
@@ -48,22 +49,22 @@ Storage, display, delivery, purchasing, information gathering and other preparat
 | Item | Rate or amount | Year | Source |
 |---|---|---|---|
 | Withholding: interest and royalties (copyright and other IP, including software that carries IP rights) paid to a foreign person that is not a natural person | 15% of gross | 2026 | ZPD art. 31(4) and (6) as amended by NN 114/23: https://narodne-novine.nn.hr/clanci/sluzbeni/2023_10_114_1613.html |
-| Withholding: dividends and profit shares paid to a foreign person that is not a natural person | 10% of gross | 2026 | ZPD art. 31(7), NN 114/23 |
+| Withholding: dividends and profit shares paid to a foreign person that is not a natural person | 10% of gross | 2026 | [ZPD art. 31(7), NN 114/23](https://porezna-uprava.gov.hr/Propisi/Propis/zakon-o-porezu-na-dobit-redakcijski-procisceni-tekst/1641)|
 | Withholding: fees for performances of foreign artists, entertainers and athletes paid to a foreign entity | 10% of gross; no personal income tax or contributions for the performer | 2026 | ZPD art. 31(10), NN 138/20: https://narodne-novine.nn.hr/clanci/sluzbeni/2020_12_138_2627.html |
-| Withholding: all payments taxable under art. 31, plus market research, tax and business advisory and audit services, paid to persons seated or managed in a jurisdiction on the EU list of non-cooperative jurisdictions with which Croatia applies no tax treaty | 25% of gross | 2026 | ZPD art. 31(12), NN 114/23 |
+| Withholding: all payments taxable under art. 31, plus market research, tax and business advisory and audit services, paid to persons seated or managed in a jurisdiction on the EU list of non-cooperative jurisdictions with which Croatia applies no tax treaty | 25% of gross | 2026 | [ZPD art. 31(12), NN 114/23](https://porezna-uprava.gov.hr/Propisi/Propis/zakon-o-porezu-na-dobit-redakcijski-procisceni-tekst/1641)|
 | Interest exempt from withholding | commodity credits for goods used in the business; loans from a foreign bank or other financial institution; interest to foreign legal-person bondholders | 2026 | ZPD art. 31(5): https://narodne-novine.nn.hr/clanci/sluzbeni/2004_12_177_3067.html |
 | EU Interest and Royalties Directive exemption | 0%: associated companies, direct holding of at least 25% either way or by a common parent, held 24 months without a break, or paid exempt before 24 months against a bank guarantee (ZPD art. 31.b(4), Rulebook art. 51.a(13)); EEA companies too, and under the Rulebook Swiss companies (Rulebook art. 51.a(11)) | 2026 | ZPD arts. 31.a, 31.b, 31.f; NN 57/06: https://narodne-novine.nn.hr/clanci/sluzbeni/2006_05_57_1354.html |
 | EU Parent-Subsidiary Directive exemption on dividends | 0%: EU parent holding at least 10% of capital for 24 months without a break, or paid exempt before 24 months against a bank guarantee (Rulebook art. 51.b(4)); EEA companies too, and under the Rulebook Swiss companies (Rulebook art. 51.b(7)) | 2026 | ZPD arts. 31.e, 31.f; NN 22/12: https://narodne-novine.nn.hr/clanci/sluzbeni/2012_02_22_571.html |
 | Non-resident individual: interest and dividends from Croatia (capital income) | 12%, withheld by the payer | 2026 | ZPDoh art. 70(1) and (19) as amended by NN 114/23: https://narodne-novine.nn.hr/clanci/sluzbeni/2023_10_114_1609.html |
-| Capital gains on financial assets (residents; non-residents on Croatian-source gains) | 12%; no tax if held more than two years | 2026 | ZPDoh art. 67(8), art. 70(4), NN 114/23 |
-| Corporate profit tax rate (non-resident PE profit, exit tax base) | 10% if revenue in the period is up to EUR 1,000,000; 18% if more than EUR 1,000,000 | 2026 | ZPD art. 28, NN 114/23 |
+| Capital gains on financial assets (residents; non-residents on Croatian-source gains) | 12%; no tax if held more than two years | 2026 | [ZPDoh art. 67(8), art. 70(4), NN 114/23](https://porezna-uprava.gov.hr/Propisi/Propis/zakon-o-porezu-na-dohodak-redakcijski-procisceni-tekst/3)|
+| Corporate profit tax rate (non-resident PE profit, exit tax base) | 10% if revenue in the period is up to EUR 1,000,000; 18% if more than EUR 1,000,000 | 2026 | [ZPD art. 28, NN 114/23](https://porezna-uprava.gov.hr/Propisi/Propis/zakon-o-porezu-na-dobit-redakcijski-procisceni-tekst/1641)|
 | Personal income tax, default where the municipality has not set rates | 20% up to EUR 60,000 a year; 30% above | 2026 | ZPDoh art. 19.a(5), NN 152/24: https://narodne-novine.nn.hr/clanci/sluzbeni/2024_12_152_2505.html |
-| Range a local unit may set (Grad Zagreb) | lower rate 15% to 23%; higher rate 25% to 33% | 2026 | ZPDoh art. 19.a(2), NN 152/24 |
-| Basic personal allowance, residents and non-residents (non-residents only for months with Croatian income) | EUR 600 a month | 2026 | ZPDoh arts. 14(1) and 16(1), NN 152/24 |
+| Range a local unit may set (Grad Zagreb) | lower rate 15% to 23%; higher rate 25% to 33% | 2026 | [ZPDoh art. 19.a(2), NN 152/24](https://porezna-uprava.gov.hr/Propisi/Propis/zakon-o-porezu-na-dohodak-redakcijski-procisceni-tekst/3)|
+| Basic personal allowance, residents and non-residents (non-residents only for months with Croatian income) | EUR 600 a month | 2026 | [ZPDoh arts. 14(1) and 16(1), NN 152/24](https://porezna-uprava.gov.hr/Propisi/Propis/zakon-o-porezu-na-dohodak-redakcijski-procisceni-tekst/3)|
 | PE: building site or installation project | more than 6 months | 2026 | OPZ art. 45(3), NN 106/18: https://narodne-novine.nn.hr/clanci/sluzbeni/2018_11_106_2065.html |
-| PE: services through staff | more than 3 months in any 12-month period | 2026 | OPZ art. 45(4), NN 106/18 |
+| PE: services through staff | more than 3 months in any 12-month period | 2026 | [OPZ art. 45(4), NN 106/18](https://porezna-uprava.gov.hr/Propisi/Propis/opci-porezni-zakon-redakcijski-procisceni-tekst/3155)|
 | Home or habitual abode test | at least 183 days in one or two calendar years | 2026 | OPZ art. 43: https://narodne-novine.nn.hr/clanci/sluzbeni/2016_12_115_2519.html |
-| Tax loss carry-forward (companies) | 5 years | 2026 | ZPD art. 17(2), NN 177/04 |
+| Tax loss carry-forward (companies) | 5 years | 2026 | [ZPD art. 17(2), NN 177/04](https://porezna-uprava.gov.hr/Propisi/Propis/zakon-o-porezu-na-dobit-redakcijski-procisceni-tekst/1641)|
 | Treaty example: Cyprus (in force from 1 January 2024) | royalties 5%, interest 5%, dividends 5% | 2026 | Tax Administration, treaty table: https://porezna-uprava.gov.hr/hr/dvostruko-oporezivanje/3997 |
 
 **Services.** The Profit Tax Act once taxed market research, tax and business advisory and audit services paid abroad at 15% (original art. 31(6), NN 177/04). Before NN 114/23 that services clause was paragraph 6 and the 15% rate paragraph 7. NN 114/23 (published 4 October 2023, in force on the eighth day after; applied to tax periods from 1 January 2024: arts. 9, 13(1) and 15) replaced paragraph 6 with the general 15% rate and paragraph 7 with the 10% dividend rate, and dropped the services clause. The consolidated Act in force for 2026 lists in paragraph 4 only interest, dividends, profit shares and intellectual property rights. Those services now appear only in paragraph 12, so they bear withholding only at 25%, and only when paid to a listed non-cooperative jurisdiction with no Croatian treaty. Paid to any other non-resident, they bear no Croatian withholding. Some Tax Administration guidance pages still list these services among withholding items; the Act governs.

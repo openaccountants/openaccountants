@@ -1,510 +1,336 @@
 ---
 name: nh-bpt-bet
-description: "Source-cited tax guide for US-NH: nh bpt bet. Unverified draft, pending local-accountant review."
+description: >
+  New Hampshire BPT and BET for 2026, including corporations, partnerships, proprietors and separate SMLLCs: rates, independent filing tests, reasonable compensation, depreciation, NOL, apportionment, BET credit, forms and payments.
 jurisdiction: US-NH
-tax_year: 2025
-last_updated: 2026-07-13
-license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+category: state-tax
+tax_year: 2026
 tier: 2
-domain: corporate-tax
+last_updated: 2026-11-13
+version: "0.2"
+type: computation
+domain: tax
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+depends_on:
+  - us-form-1120-c-corp
+  - us-schedule-c-and-se-computation
 ---
 
-# NH Bpt Bet
+# New Hampshire Business Profits Tax and Business Enterprise Tax, 2026
 
-## New Hampshire Business Profits Tax (BPT) and Business Enterprise Tax (BET)
+> **Source-cited draft.** Built from RSA 77-A, RSA 77-E, RSA 21-J and DRA business-tax publications read 2026-11-13. No accountant has reviewed this skill. General reference only; a qualified professional must review the facts, workpapers and filing. Circular 230 section 10.37: do not assume entity classification, compensation, nexus or credit eligibility.
 
-New Hampshire has no general personal income tax and no general sales tax, but it taxes business activity through two parallel filings: the Business Profits Tax (BPT) at 7.5% on net business profits and the Business Enterprise Tax (BET) at 0.55% on the enterprise value tax base of compensation, interest, and dividends paid. BET paid is a dollar-for-dollar credit against BPT, so most filers effectively pay the larger of the two. Both taxes apply to sole proprietors, partnerships, LLCs, and corporations conducting business in NH. The Interest & Dividends Tax was fully repealed for tax years beginning on or after January 1, 2025. The 2025 BPT filing threshold is $109,000 of gross business income; the 2025 BET filing threshold is $298,000 of either gross receipts or enterprise value tax base. Tax year 2025.
+**Answer first.** The 2026 BPT is **7.5%** of New Hampshire taxable business profits; BET is **0.55%** of adjusted, apportioned compensation, interest and dividends. Test the taxes separately. The published thresholds for periods beginning on or after January 1, 2025 continue into 2026: BPT gross business income **over USD 109,000**; BET gross receipts **over USD 298,000 or enterprise value tax base over USD 298,000**. The ordinary case pays BET and credits it against BPT, without a second charge for the same credited amount.
 
-## 1. Scope and what New Hampshire does not tax
+**Period distinction.** Statutory rules below cover tax year 2026. The line mappings expressly labelled **2025-2026 filing cycle** use the latest forms listed by DRA when read, the 2025 forms. They are not confirmation of unpublished 2026 line numbers. The announced 2027 BET threshold and future rate-trigger rules must not be applied early.
 
-New Hampshire is famous for what it does not tax. It is one of nine US states with no broad-based personal income tax on wages, and one of five states with no general retail sales tax. There is no withholding from wages, no W-2 state line, no state Form 1040, no state sales-tax permit for retailers selling tangible personal property at retail in-state, and no use-tax self-assessment for consumers.
+## Scope
 
-What New Hampshire does tax, and what this skill covers:
+Businesses with New Hampshire business activity: corporations, S corporations, partnerships, proprietorships, LLCs, fiduciaries, and relevant nonprofit business activity. State BPT can apply to a Schedule C business even though NH has no individual wage tax. A federal disregarded SMLLC is a **separate NH business organization**, not automatically combined with its owner's sole proprietorship. Grantor trusts have their statutory owner-return exception. [RSA 77-A:1 I, III](https://gc.nh.gov/rsa/html/V/77-A/77-A-1.htm), [RSA 77-E:1 III](https://gc.nh.gov/rsa/html/V/77-E/77-E-1.htm), [BT-SUMMARY instructions, SMLLC section, 2025-2026 filing cycle](https://www.revenue.nh.gov/sites/g/files/ehbemt736/files/documents/bt-summary-instructions-2025.pdf).
 
-1. **Business Profits Tax (BPT)** under RSA 77-A — a 7.5% net income tax imposed on every business organization carrying on business activity within New Hampshire, including sole proprietorships, partnerships, LLCs (regardless of federal classification), corporations, S-corporations, trusts, and non-profit organizations to the extent of unrelated business income. The BPT is imposed at the entity level even on pass-through entities — there is no flow-through to owners for NH purposes. This is the single most important point for federal practitioners new to NH: a Schedule C filer with NH-source business income files a NH BPT return in the entity's own right.
+This skill retains the ordinary entity and multistate rules; complex water's-edge groups and special elections require professional computation. Payroll withholding/UI is in `nh-payroll`; personal-tax repeal is in `nh-interest-dividends-note`. The federal computations and figures belong in `us-schedule-c-and-se-computation`, `us-form-1120-c-corp`, `us-form-1065-partnership`, `us-form-1120-s-s-corporation-return`, `us-qbi-deduction` and `us-s-corp-election-decision`. Do not import a federal rate or limit into NH without checking NH's static conformity.
 
-2. **Business Enterprise Tax (BET)** under RSA 77-E — a 0.55% tax on the "enterprise value tax base" (EVTB), which is the sum of compensation paid, interest paid, and dividends paid by the enterprise. The BET is a value-added-tax-like measure that captures economic activity even when the entity has zero or negative profits. The BET paid for a tax period is a credit against the BPT for the same period; any excess BET carries forward five years.
+Selective meals/rentals, real estate transfer, communications, tobacco, beer, electricity, utility-property and municipal property taxes are separate jobs. Their legacy numerical claims are identified under Sources rather than offered as current computations here.
 
-What this skill does NOT cover and refers out:
+## Ask the client first
 
-- **Real Estate Transfer Tax (RETT)** under RSA 78-B — a 1.5% tax on the consideration paid in transfers of real property in NH, split equally between buyer and seller. Refer to a real-estate-tax-focused engagement.
-- **Meals and Rooms (Rentals) Tax** under RSA 78-A — an 8.5% tax on prepared meals, hotel rooms, and certain motor vehicle rentals. Refer to a hospitality-vertical engagement.
-- **Communications Services Tax** under RSA 82-A — 7% on two-way communications services.
-- **Tobacco Tax**, **Beer Tax**, **Electricity Consumption Tax**, **Utility Property Tax** — vertical-specific excises.
-- **Property tax** — administered by municipalities, not the NH Department of Revenue Administration.
-- **Interest & Dividends Tax (I&D)** under RSA 77 — **REPEALED**. See Section 11 for the phase-out and final-year filings.
+1. What legal entities and owners exist, what is each federal classification, and what are the exact taxable periods?
+2. What are **gross** everywhere business income/receipts, business-asset sale proceeds and the pre-apportionment enterprise value tax base for each entity?
+3. Where are tangible goods delivered, services delivered, property and payroll located, and where is the business taxable? Is there a unitary group?
+4. What actual services did each proprietor/partner perform, what compensation deduction is proposed, and is the business/group using the shared safe harbour or substantiation?
+5. What NH/federal depreciation basis differences, interest adjustments, NOL schedules, prior BET credits and other awarded credits exist?
+6. What tax has been paid, what prior-year liability/period is available for estimates, and is this the first filing period or a genuine closure?
 
-The administering agency for BPT and BET is the New Hampshire Department of Revenue Administration (NH DRA), Concord, NH.
+## The method, step by step
 
-### 2.1 Rate
+### Rates, bands and thresholds
 
-- **BPT rate** — 7.5% percent (tax periods ending on or after December 31, 2023, continuing for tax year 2024 and tax year 2025)  _(RSA 77-A)_
-- **BPT rate through tax year 2017** — 8.5% percent
-- **BPT rate tax year 2018** — 7.9% percent  _(Chapter 156, Laws of 2017)_
-- **BPT rate tax years 2019-2021** — 7.7% percent  _(Chapter 156, Laws of 2017)_
-- **BPT rate tax year 2022** — 7.6% percent  _(Chapter 91, Laws of 2021)_
-- **BPT rate** — 7.5% percent (tax periods ending on or after December 31, 2023, continuing for tax year 2024 and tax year 2025)  _(RSA 77-A)_
+| Item | 2026 amount or condition | Official source |
+|---|---|---|
+| BPT rate | 7.5% for periods ending on or after December 31, 2023 | [RSA 77-A:2 III](https://gc.nh.gov/rsa/html/V/77-A/77-A-2.htm) |
+| BET rate | 0.55% for periods ending on or after December 31, 2022 | [RSA 77-E:2 II](https://gc.nh.gov/rsa/html/V/77-E/77-E-2.htm) |
+| BPT ordinary filing threshold | Gross business income from everywhere exceeds USD 109,000, periods beginning on/after January 1, 2025, including 2026 | [DRA Business Taxes](https://www.revenue.nh.gov/taxes-glance/business-taxes), [RSA 77-A:6 I indexation](https://gc.nh.gov/rsa/html/V/77-A/77-A-6.htm) |
+| BET ordinary filing threshold | Gross receipts from everywhere **or** enterprise value tax base exceeds USD 298,000 for periods beginning on/after January 1, 2025, including 2026 | [DRA Business Taxes](https://www.revenue.nh.gov/taxes-glance/business-taxes), [RSA 77-E:5 I](https://gc.nh.gov/rsa/html/V/77-E/77-E-5.htm) |
+| Compensation record-keeping safe harbour | Up to USD 75,000 total per business or related business group, not per partner; actual services still required; cannot reduce taxable profits below zero | [RSA 77-A:4 III](https://gc.nh.gov/rsa/html/V/77-A/77-A-4.htm) |
+| NH section 179 expense cap | USD 500,000 for property placed in service on/after January 1, 2018, subject to the adopted IRC; separate NH basis records | [RSA 77-A:3-a](https://gc.nh.gov/rsa/html/V/77-A/77-A-3-a.htm) |
+| Bonus depreciation | Apply the IRC without section 168(k); no federal bonus deduction in NH | [RSA 77-A:3-b I](https://gc.nh.gov/rsa/html/V/77-A/77-A-3-b.htm) |
+| Ordinary IRC reference date | December 31, 2018 for periods beginning on/after January 1, 2020, subject to statutory exceptions | [RSA 77-A:1 XX(o)](https://gc.nh.gov/rsa/html/V/77-A/77-A-1.htm) |
+| NH NOL | Apportion in loss year, deduct after current-year apportionment; carry forward 10 years; generated loss carryforward capped at USD 10 million for periods ending on/after January 1, 2013 | [RSA 77-A:4 XIII](https://gc.nh.gov/rsa/html/V/77-A/77-A-4.htm) |
+| Unused BET credit | 10 taxable periods for credit from periods ending on/after December 31, 2014; older credit had five periods | [RSA 77-A:5 X](https://gc.nh.gov/rsa/html/V/77-A/77-A-5.htm) |
+| BPT estimated-tax declaration | Statute exempts annual estimate below USD 200; later-quarter estimate over USD 200 requires declaration | [RSA 77-A:6 II](https://gc.nh.gov/rsa/html/V/77-A/77-A-6.htm) |
+| BET estimated-tax declaration | Statute exempts annual estimate below USD 260; later-quarter estimate over USD 260 requires declaration | [RSA 77-E:5 II](https://gc.nh.gov/rsa/html/V/77-E/77-E-5.htm) |
+| Regular estimated instalments | 25% on 15th of months 4, 6, 9 and 12; calendar-year April 15, June 15, September 15, December 15 | [RSA 77-A:7 I](https://gc.nh.gov/rsa/html/V/77-A/77-A-7.htm), [RSA 77-E:6 I](https://gc.nh.gov/rsa/html/V/77-E/77-E-6.htm) |
+| Return due date | Partnership: 15th of month 3 after period ends; exempt organization: month 5; other organizations: month 4 | [RSA 77-A:6 I](https://gc.nh.gov/rsa/html/V/77-A/77-A-6.htm), [RSA 77-E:5 I](https://gc.nh.gov/rsa/html/V/77-E/77-E-5.htm) |
+| Filing extension, 2025-2026 filing cycle | Automatic 7 months if 100% of taxes due paid by original deadline; BT-EXT if payment needed; filing extension does not extend payment | [BT-SUMMARY instructions, extension section](https://www.revenue.nh.gov/sites/g/files/ehbemt736/files/documents/bt-summary-instructions-2025.pdf) |
+| DRA late filing | Greater of 5% of net unpaid tax or USD 10 per month/part; total capped at greater of 25% or USD 50; extension/reasonable-cause exceptions | [RSA 21-J:31](https://gc.nh.gov/rsa/html/I/21-J/21-J-31.htm) |
+| DRA late payment | 10% of nonpayment/underpayment; fraud 50%, with statutory interaction and reasonable-cause conditions | [RSA 21-J:33 I-II](https://gc.nh.gov/rsa/html/I/21-J/21-J-33.htm) |
+| DRA interest for days in calendar 2026 | 9% annual; published daily decimal .000247; historical 2025 was 10% | [BT-SUMMARY instructions, line 4(a), 2025-2026 filing cycle](https://www.revenue.nh.gov/sites/g/files/ehbemt736/files/documents/bt-summary-instructions-2025.pdf) |
 
-Further scheduled reductions tied to general-fund revenue triggers have been **paused** by the legislature. Assume 7.5% for any tax period ending in calendar 2025 unless a later session law moves the rate.
+The historical DRA rate table records BPT 8.2% for periods ending in 2016-2017, 7.9% from December 31, 2018, 7.7% from December 31, 2019, and 7.6% from December 31, 2022 before the current rate. BET statutory history in RSA 77-E:2 records 0.6% from December 31, 2019 before the current rate. These are historical rates, not 2026 alternatives. [DRA BPT FAQ](https://www.revenue.nh.gov/resource-center/frequently-asked-questions/business-profits-tax), [RSA 77-E:2](https://gc.nh.gov/rsa/html/V/77-E/77-E-2.htm).
 
-### 2.2 Taxable base — starting point
+### 1. Decide what must be filed
 
-**Taxable base by NH business organization type**  _(RSA 77-A:1, II)_
+Test BPT and BET independently before apportioning. Gross business income and receipts are defined broadly, before cost of goods sold, expenses and losses: include rents, services, asset-sale proceeds, interest, royalties and other business income as defined in [RSA 77-A:1 VI](https://gc.nh.gov/rsa/html/V/77-A/77-A-1.htm) and [RSA 77-E:1 X](https://gc.nh.gov/rsa/html/V/77-E/77-E-1.htm). A loss does not eliminate a threshold-based return. A sale or exchange of an ownership interest can require a BPT return regardless of the ordinary threshold ([RSA 77-A:6 I-a](https://gc.nh.gov/rsa/html/V/77-A/77-A-6.htm)).
 
-| NH business organization | Federal starting point |
-| --- | --- |
-| Sole proprietorship | Schedule C, Line 31 net profit (or Schedule F net farm profit) |
-| Partnership | Form 1065 ordinary business income plus separately stated items |
-| LLC taxed as partnership | Same as partnership |
-| LLC taxed as disregarded entity | Schedule C of the sole owner |
-| S-corporation | Form 1120-S ordinary business income plus separately stated items (NH does not recognize the S election — see Section 2.5) |
-| C-corporation | Form 1120 taxable income before NOL and special deductions |
-| Trust or estate with business income | Form 1041 fiduciary taxable income from business activity |
+Do not tick FINAL just because receipts fall below the threshold. The published BT-SUMMARY instructions say FINAL only when the organization no longer exists or no longer has NH business activity. Proprietorship installment sales can require returns until all instalments are reported where the original gross sale price exceeded the filing threshold; an election to recognize the whole gain uses DP-95. Separately owned spousal businesses do not combine just because the spouses file one federal Form 1040. [NH-1040 instructions, lines 1(a)-1(i), 2025-2026 filing cycle](https://www.revenue.nh.gov/sites/g/files/ehbemt736/files/documents/nh-1040-instructions-2025.pdf).
 
-### 2.3 NH-specific modifications (RSA 77-A:4)
+### 2. Reconcile federal income to New Hampshire gross business profits
 
-- **Additions to gross business profits** — Interest received on obligations of states and political subdivisions other than NH (federal tax-exempt municipal interest); Net operating loss deductions taken for federal purposes (NH has its own NOL — see Section 2.7); Federal special deductions taken under IRC §§241–250 (corporate dividends-received deduction, etc.) — added back, then the NH-specific Section 3.5 dividends adjustment is computed separately; Compensation paid to partners or proprietors for personal services that exceeds the 'reasonable compensation deduction'; §168(k) bonus depreciation taken for federal purposes — NH does not conform, add it back; §179 expense in excess of the federal pre-2003 limit — historically NH capped §179 at $25,000, but for tax periods ending on or after December 31, 2017, NH conforms to the federal §179 limit as in effect under the IRC tie-in.  _(RSA 77-A:4, I; RSA 77-A:3-b; RSA 77-A:1, XX)_
-- **Subtractions from gross business profits** — Interest on US obligations included in federal income; Foreign dividend gross-up under IRC §78; A portion of dividends received from a unitary affiliate to the extent already included in combined-return income; The reasonable compensation deduction (RSA 77-A:4, III) for sole proprietors and partners; NH NOL carryover — see Section 2.7.  _(RSA 77-A:4, II; RSA 77-A:4, IV; RSA 77-A:4, III)_
+| Entity | Starting computation | Authority |
+|---|---|---|
+| Proprietor, profession, rental or farm activity | Business net profit/loss and gains/losses on business assets; not merely AGI | [RSA 77-A:1 III(d)](https://gc.nh.gov/rsa/html/V/77-A/77-A-1.htm) |
+| Partnership / partnership LLC | Federal ordinary income plus partner payments and separately allocated income/gains, less allocated deductions/losses as specified | [RSA 77-A:1 III(c)](https://gc.nh.gov/rsa/html/V/77-A/77-A-1.htm) |
+| C corporation | Taxable income before NOL and corporate special deductions, recomputed under NH's adopted IRC | [RSA 77-A:1 III(a), XX](https://gc.nh.gov/rsa/html/V/77-A/77-A-1.htm) |
+| S corporation | Entity-level net profit from all business activity; DRA requires DP-120, then NH-1120 | [RSA 77-A:1 I, III(b)](https://gc.nh.gov/rsa/html/V/77-A/77-A-1.htm), [BT-SUMMARY instructions, 2025-2026 filing cycle](https://www.revenue.nh.gov/sites/g/files/ehbemt736/files/documents/bt-summary-instructions-2025.pdf) |
+| Trust / estate with business activity | Net business profits and business-asset gains; grantor exception handled at owner level | [RSA 77-A:1 I, III(e)](https://gc.nh.gov/rsa/html/V/77-A/77-A-1.htm) |
+| Disregarded SMLLC | Separate NH entity return using the owner's federal classification; NH-1040, NH-1041, NH-1065 or NH-1120 as appropriate | [BT-SUMMARY instructions, SMLLC section, 2025-2026 filing cycle](https://www.revenue.nh.gov/sites/g/files/ehbemt736/files/documents/bt-summary-instructions-2025.pdf) |
 
-### 2.4 Reasonable compensation deduction for sole proprietors and partners
+Keep a reconciliation of every federal/NH difference. [RSA 77-A:3-b](https://gc.nh.gov/rsa/html/V/77-A/77-A-3-b.htm) disallows federal bonus depreciation and section 181 expensing and applies NH's section 179 rule. Add the federal excess and deduct the separately calculated NH depreciation; reverse basis differences on disposal. The difference is a timing/basis difference, not a permanent deduction loss. Do not repeat the old assertion that 2025 assets universally took a particular federal bonus percentage.
 
-- **Reasonable compensation deduction** — Because the BPT applies at the entity level to pass-through structures, a sole proprietor or partner who works full-time in the business would be taxed at 7.5% on the entire net profit — including the portion that is really compensation for their labor — unless an adjustment is made. RSA 77-A:4, III provides the reasonable compensation deduction: an amount equal to the fair compensation paid for the personal services of the proprietor or partner is deductible in arriving at gross business profits.  _(RSA 77-A:4, III; Rev 304.04)_
-- **Who qualifies for RCD** — The deduction is available to a proprietor of a sole proprietorship or a partner in a partnership (including an LLC taxed as a partnership) who renders actual personal services to the business. It is not available to a shareholder-employee of a C-corporation or S-corporation — those persons take a W-2 wage that is already deductible at the entity level on the federal return.  _(RSA 77-A:4, III; Rev 304.04)_
-- **How much is reasonable** — "Reasonable compensation" is the amount that would be paid to a person at arm's length for the same services in the same industry and geography. It is the same factual standard the IRS applies to S-corporation reasonable-wage cases, and the NH DRA has historically looked at: Education, training, and certifications of the proprietor/partner; Hours actually worked in the business; Comparable wages in the local labor market (BLS OES data, NH Employment Security wage surveys); Industry norms (an attorney sole proprietor with ten years of experience would expect $120,000+; a part-time craft seller might be $20,000); Whether the proprietor has other employment.  _(RSA 77-A:4, III)_
-- **RCD safe harbor** — 75000 USD (Indexed amount for 2025; verify against the NH DRA's annual TIR/notice before quoting in a client deliverable)  _(Indexed amounts for 2025 (skill text))_
-- **Substantiation above the safe harbor** — A taxpayer claiming compensation above $75,000 must maintain: A written statement of duties performed; Hours worked records (timesheets, calendar, project logs); Comparable-wage evidence (BLS data, recruiter quotes, industry surveys, prior W-2 history); Board-equivalent documentation if the entity has co-owners. The DRA can disallow the excess on audit and rebill BPT plus interest and penalty.  _(RSA 77-A:4, III)_
-- **RCD ceiling** — The deduction cannot exceed the gross business profits before the deduction — i.e., it cannot create or increase a BPT loss. If the business has $30,000 of profit before the deduction and the proprietor claims $75,000 of reasonable compensation, the deduction is capped at $30,000 and the BPT base is zero; the unused $45,000 does NOT carry over as a NOL because it was never compensation actually paid.  _(RSA 77-A:4, III)_
-- **Multiple proprietors/partners** — Each partner computes a separate reasonable-compensation deduction based on their own services. The sum is deducted at the partnership level.  _(RSA 77-A:4, III)_
-- **Interaction with self-employment** — The reasonable compensation deduction is for NH BPT only. It does NOT affect federal Schedule C net profit, does NOT affect federal SE tax, and does NOT change the federal QBI computation. It is purely a NH-side modification.  _(RSA 77-A:4, III)_
+[RSA 77-A:4 II, VII, IX-XI, XIII-XV, XIX-XX](https://gc.nh.gov/rsa/html/V/77-A/77-A-4.htm) supplies further adjustments:
 
-### 2.5 No recognition of the S-corporation election
+- Deduct qualifying direct US-obligation interest, net of related expenses; add back related expenses if not already netted. Do not deduct them twice.
+- Add back deducted state net income taxes, net-income franchise taxes and capital-stock taxes. The published NH-1040 instructions say deducted BPT is added back; BET is not measured by income and is not added back on that line.
+- Apply the wage-credit adjustment, foreign dividend gross-up deduction, qualified charitable/research property adjustments, business-interest adjustments and QIC-holder rules when relevant; preserve the supporting schedules. Ordinary out-of-state municipal income follows the NH-adopted federal computation and applicable adjustments, not an unsupported blanket addition rule.
+- For section 163(j), deduct current-year disallowed interest, add federally used carryforwards already deducted in NH, and deduct the pre-2024 disallowed balance in three equal parts across the specified consecutive years beginning in 2024. Never duplicate the deduction.
+- An ownership-interest transaction with a federal asset-basis step-up has a default NH basis adjustment and an irrevocable timely-return election under paragraph XIV. Refer the election before preparing the return.
 
-- **S-corp treated as C-corp for BPT** — NH does not recognize the federal S election for BPT purposes. An S-corporation is taxed at the entity level as if it were a C-corporation for BPT — the corporation pays 7.5% on its NH-apportioned profits. The shareholders do not separately report their pro-rata share of S-corp income on a NH return (and there is no NH personal income tax for them to report it on anyway).
+The detailed line descriptions in the [NH-1040 instructions, 2025-2026 filing cycle, lines 2 and 6](https://www.revenue.nh.gov/sites/g/files/ehbemt736/files/documents/nh-1040-instructions-2025.pdf) explain Schedule IV attachments, asset-basis reconciliation, US interest, taxes and interest adjustments. They do not establish 2026 line numbering.
 
-Practical implication for the S-corp election decision: in NH, the S-corp election saves federal SE tax but provides no NH-side benefit (and adds NH payroll filings — see Section 7.6). The federal break-even analysis must therefore be net of the additional NH compliance cost and the loss of the reasonable-compensation deduction (which the S-corp shareholder would replace with a federally deductible W-2 wage — economically similar but structurally different).
+### 3. Reasonable compensation: shared safe harbour or supported actual amount
 
-### 2.6 Combined returns and water's-edge
+[Read RSA 77-A:4 III(a)-(g)](https://gc.nh.gov/rsa/html/V/77-A/77-A-4.htm) as a whole. A proprietor/partner/member must have actually provided personal services. The business or related business group may elect a total USD 75,000 record-keeping safe harbour. It is **not USD 75,000 for every owner** and is not indexed. The group allocation is reduced by specified owners' compensation deducted by corporate group members.
 
-- **Combined return requirement** — For unitary business groups, NH requires a combined return when there is more than 50% common ownership (direct or constructive under IRC §1563) and the entities are engaged in a unitary business under the three-unities test. The combined group reports a single NH BPT return on Form NH-1120-WE.  _(RSA 77-A:1, XV; Rev 305.03)_
-- **Water's-edge regime** — NH uses a water's-edge combined-return regime — foreign corporations whose business activity outside the United States is 80% or more of their worldwide activity are excluded from the combined group. There is no worldwide combined election.
+Alternatively, claim the fair and reasonable value of actual services using the adopted section 162 standard. Keep duties, hours, qualifications, comparable-pay support and the relationship between claimed compensation and reported earned income. The deduction cannot reduce taxable business profits below zero; net rental income and business-asset selling commissions have their statutory conditions. Corporate shareholder wages are already in the corporation's expense calculation; a C/S shareholder does not get a second proprietor compensation deduction.
 
-For a single freelancer or small-business owner with one entity, combined-return rules are not triggered. They become relevant when the owner controls multiple operating entities (e.g., an operating LLC and a real-estate holding LLC under common ownership conducting a unitary business).
+**Decision in both directions.** If supported services are worth less than the safe-harbour ceiling and there is sufficient profit, the shared safe harbour can reduce record-keeping. If a supported actual amount exceeds it, substantiation may save BPT; compare both bases, the BET floor and compliance cost. Do not fabricate a market salary as legal evidence. If profit is only USD 30,000, a proposed USD 75,000 deduction is limited to USD 30,000; the excess does not itself create an NOL. The NH-1040 instructions separately discuss a later-year adjustment for intended prior-year under-compensation where adequate records exist; this is not an automatic carryforward deduction.
 
-### 2.7 NH NOL
+### 4. Apportion and then use NH NOL
 
-- **NH NOL computation basis** — NH has its own net operating loss carryover. NH NOL is computed using NH modifications (not federal NOL).  _(RSA 77-A:4, XIII)_
-- **Carryforward period** — 10 years for losses generated in tax periods ending on or after December 31, 2022. Earlier-period losses retain their original carryforward (5 years for pre-2013, etc.) — review carryover schedules carefully.  _(HB 1221, Chapter 144, Laws of 2022)_
-- **No carryback** — No carryback of NH NOL.  _(RSA 77-A:4, XIII)_
-- **Per-year deduction cap** — An apportioned NH NOL deduction is capped at the lesser of the carryover or the gross business profits before the NOL deduction.  _(RSA 77-A:4, XIII)_
-- **80% federal limitation does not apply** — 80%-of-taxable-income federal limitation under IRC §172(a)(2)(B) does not apply for NH purposes.  _(IRC §172(a)(2)(B))_
+[Print the sourcing conditions from RSA 77-A:3](https://gc.nh.gov/rsa/html/V/77-A/77-A-3.htm) with the computation. For periods ending on/after December 31, 2022, ordinary business profits use the single sales factor. A business must meet the multistate taxability test before apportioning.
 
-### 2.8 Reasonable-compensation deduction worked computation
+- Tangible goods: destination receipts, plus the stated origin shipments to the US government or a state where the business is not taxable. The old statement that NH has no throwback rule was incorrect.
+- Services: where delivered; real property: where located; rented tangible property: where located; intangibles: where used. Approximate if the location cannot be determined.
+- Other-than-tangible sales assigned to a state where the business is not taxable, or not determinable/approximable, are excluded from the denominator. The old blanket claim of a nowhere-sales benefit was incorrect.
+- Foreign dividends have their separate statutory formula. Related unitary businesses use combined factors under paragraph III; do not turn a simple two-customer example into proof of group treatment.
 
-To make the mechanic concrete: take a sole proprietor with $200,000 of federal Schedule C net profit, no other NH modifications, and 100% NH apportionment.
+The old developer example survives **only with taxability established**: USD 120,000 of services delivered in California and USD 40,000 delivered in NH, with the business taxable in both, give a 25% NH factor. Adjusted profit after compensation of USD 80,000 produces USD 20,000 NH profits and USD 1,500 BPT before credits. Without the taxability premise, that denominator cannot be assumed.
 
-- Federal Schedule C Line 31: $200,000
-- NH starting gross business profits: $200,000
-- Reasonable compensation deduction (below $75k safe harbor): $75,000
-- NH gross business profits after RCD: $125,000
-- BPT rate: 7.5%
-- BPT before credits: $9,375
-- (BET credit applied — see Section 6)
+Apply the NH NOL **after** current apportionment, using an NOL apportioned once in its loss year. [RSA 77-A:4 XIII](https://gc.nh.gov/rsa/html/V/77-A/77-A-4.htm) provides ten forward years and the generated-loss cap. The DRA FAQ says periods ending on/after December 31, 2022 follow section 172 as adopted by NH; do not use the old blanket assertion that the federal percentage limitation never applies. Use DP-131-A and DP-132, attach the deduction worksheet and prove the loss year. No NH refund-producing NOL carryback is supported; pre-July 2005 historical notional carryback calculations are a separate issue in the [DRA BPT FAQ](https://www.revenue.nh.gov/resource-center/frequently-asked-questions/business-profits-tax).
 
-If the proprietor instead substantiates $150,000 of reasonable compensation (industry comparables documented):
-- NH gross business profits after RCD: $50,000
-- BPT: $3,750
+### 5. Compute BET from its own definitions
 
-### 2.9 §179 and depreciation timing differences
+[Read RSA 77-E:1 V, VI, IX-XI](https://gc.nh.gov/rsa/html/V/77-E/77-E-1.htm) and [77-E:3](https://gc.nh.gov/rsa/html/V/77-E/77-E-mrg.htm) with the [BET instructions, 2025-2026 filing cycle](https://www.revenue.nh.gov/sites/g/files/ehbemt736/files/documents/bet-instructions-2025.pdf):
 
-- **Bonus depreciation non-conformity** — NH does not conform to federal bonus depreciation (§168(k)) at all. For an asset placed in service in 2025 that took 60% federal bonus, NH requires the asset to be depreciated using MACRS without bonus — creating a permanent year-of-acquisition timing difference that reverses over the asset's recovery period. Maintain a separate NH depreciation schedule from year one.
-- **§179 conformity** — For §179, NH currently conforms to the federal §179 limit as of the IRC reference date in RSA 77-A:1, XX. The 2025 IRC reference date should be confirmed against the NH DRA's published IRC update bulletin; if NH is still tied to a pre-OBBBA IRC, the federal §179 limit of $2,500,000 (2025, OBBBA) may differ from the NH limit.  _(RSA 77-A:1, XX)_
+1. **Compensation:** qualifying employee/officer/director payments and specified benefits/deferred compensation, plus the BPT proprietor/partner deduction and remaining statutory self-employment earnings without duplicating them. The state statute does not supply the old skill's Social Security wage-base cap. Do not cap all BET compensation at a federal payroll base. Guaranteed payments, losses and distributive amounts must follow the instructions; do not mechanically add the same partner income twice.
+2. **Interest:** amounts paid or accrued for the use or forbearance of money or property, with the statute's exclusions. Do not restrict the statutory definition to a hand-picked list of federally deducted bank costs.
+3. **Dividends:** NH's own definition covers distributions from accumulated revenues/profits to owners, with specified exclusions. It is not limited to federal C-corporation dividends. The old categorical exemption of partnership and S-corporation distributions is incorrect; distinguish distributed capital and the statutory exceptions.
+4. Sum the components, apply retained-in-business self-employment and qualifying inter-enterprise dividend adjustments without reusing the BPT compensation deduction. A compensation deduction under BPT does not simply disappear from BET.
+5. If multistate, [RSA 77-E:4](https://gc.nh.gov/rsa/html/V/77-E/77-E-4.htm) apportions compensation by the statutory work/payroll rule, interest by **owned real and tangible property**, and dividends by the equally weighted compensation, property and sales factors. This is not interest-expense location or dividends solely at commercial domicile.
+6. Apply 0.55% and eligible BET credits. The simple pre-apportionment example remains: USD 180,000 employee wages plus USD 40,000 correctly determined owner compensation plus USD 8,000 interest gives USD 228,000 EVTB and USD 1,254 BET **only if a separate filing trigger is met**, for example gross receipts above the threshold. Otherwise the below-threshold base alone does not require a return.
 
-## 3. BPT filing threshold
-
-- **2025 BPT filing threshold** — 109000 USD (gross business income; indexed for inflation, rounded to nearest $1,000; 2024 threshold was $103,000)
-- **Filing requirement below threshold** — A taxpayer below the threshold is not required to file a BPT return. A taxpayer that has filed in prior years and falls below the threshold should file a final-return / no-tax-due indicator to close the account; the DRA will otherwise issue a non-filer notice. The threshold applies per business organization, not per owner. A married couple operating two separate proprietorships each tests its own threshold.
-- **BPT and BET threshold independence** — BPT threshold and BET threshold are independent. A taxpayer below the BPT threshold may still be above the BET threshold and required to file the BET. The reverse is also true.
-
-### 4.1 Rate
-
-- **BET rate** — 0.55% percent (tax periods ending on or after December 31, 2023, continuing for tax year 2024 and tax year 2025)  _(RSA 77-E)_
-- **BET rate through tax year 2017** — 0.75% percent
-- **BET rate tax year 2018** — 0.675% percent
-- **BET rate tax years 2019-2021** — 0.60% percent
-- **BET rate tax year 2022 and forward** — 0.55% percent  _(Chapter 91, Laws of 2021)_
-
-### 4.2 Enterprise value tax base (EVTB)
-
-- **Enterprise value tax base** — The BET is imposed on the 'enterprise value tax base,' which under RSA 77-E:3 is the sum of three components, each as adjusted by NH-specific modifications: (1) Compensation paid or accrued; (2) Interest paid or accrued; (3) Dividends paid.  _(RSA 77-E:3)_
-- **Compensation component of EVTB** — Includes: Wages and salaries paid to employees (federal Form 941 Line 2 / Form W-3 Box 1, with reconciliations); Commissions, bonuses, severance; Net earnings from self-employment of proprietors and partners up to the FICA wage base for the year (i.e., the 'self-employment compensation' of the proprietor or partner is included in the BET base even though no W-2 is issued); Deferred-compensation accruals that are deductible federally in the current period; Fringe benefits that are federally taxable to the recipient (health insurance is NOT included if excluded from the employee's federal wages); Compensation paid to independent contractors who are reclassified as common-law employees under federal rules — but bona fide §3121 independent-contractor payments are NOT compensation (they may be the contractor's own BET base). For a sole proprietor with no employees, the 'compensation paid' item is the proprietor's own self-employment net earnings (the same number as Schedule SE Line 4) capped at the year's FICA wage base ($176,100 for 2025).  _(RSA 77-E:3)_
-- **Interest component of EVTB** — Interest paid or accrued during the tax period — interest expense on debt, including: Bank loan interest, business credit-card interest, mortgage interest on business real property; Imputed interest under IRC §483 and §7872 to the extent deductible; Excludes: interest paid to the US government on tax deficiencies (not deductible federally); interest already capitalized to inventory under §263A. Interest paid to a partner or proprietor on a loan from the partner/proprietor IS included if the entity deducts it federally.  _(RSA 77-E:3)_
-- **Dividends component of EVTB** — Dividends paid during the tax period — only by C-corporations and other dividend-paying entities. For C-corporations: all dividends declared during the period out of accumulated earnings and profits. For partnerships and proprietorships: dividends are zero by definition because distributions to partners and proprietors are not federal-tax dividends. For S-corporations: distributions are NOT dividends for BET purposes (they are returns of basis); only constructive dividends under federal §301 are included. Stock dividends and stock splits not taxable to recipients federally are excluded.  _(RSA 77-E:3)_
-
-### 4.3 EVTB worked example
-
-A NH LLC taxed as a partnership pays during 2025:
-- $180,000 in wages to two employees (W-3 Box 1, after pre-tax 401(k) deferrals)
-- $40,000 in self-employment compensation to one managing member (capped at FICA wage base — not exceeded)
-- $8,000 in interest on a business line of credit
-- $0 dividends (it is a partnership, not a corp)
-
-EVTB = $180,000 + $40,000 + $8,000 + $0 = **$228,000**
-BET = $228,000 × 0.55% = **$1,254**
-
-### 4.4 Apportionment of EVTB
-
-- **Apportionment mechanics for EVTB** — For multi-state enterprises, the EVTB is apportioned to NH using payroll, interest, and dividends factors specific to NH activity. The mechanics differ from BPT apportionment (Section 5): Compensation is apportioned by NH payroll / total payroll; Interest is apportioned by NH interest expense location (generally where the related business activity occurs); Dividends are apportioned to the commercial domicile. For a single-state NH business, apportionment is 100%.  _(RSA 77-E:4)_
-
-### 5.1 Single sales factor
-
-- **Single sales factor apportionment** — For tax periods ending on or after December 31, 2022, NH apportions BPT using a single sales factor — the ratio of NH sales to everywhere sales. This is the result of HB 10, Chapter 346, Laws of 2019, as further amended, which phased out the historic three-factor formula: Pre-2020: three-factor with double-weighted sales (property, payroll, sales-sales); 2020–2021: transition weighting; 2022 and forward: 100% sales factor.  _(HB 10, Chapter 346, Laws of 2019)_
-
-### 5.2 Sourcing of receipts
-
-- **Sourcing of receipts rules** — Sales of tangible personal property are sourced to the destination state (where the property is delivered to the customer). Sales of services are sourced using market-based sourcing to the location where the customer receives the benefit of the service (for tax periods ending on or after December 31, 2021). Sales of intangibles (royalties, license fees) are sourced to where the intangible is used. Throwback / throwout: NH does NOT have a throwback rule. Sales to a state where the taxpayer is not taxable are NOT thrown back to NH — they remain in the everywhere denominator only (a 'nowhere sale' benefit).  _(RSA 77-A:3, II; Rev 304; Chapter 91, Laws of 2021)_
-
-### 5.3 Freelance developer example
-
-A NH-resident freelance software developer with one corporate client in California and one in NH:
-- $120,000 from CA client (services sourced to CA — customer receives benefit in CA) → not NH sales
-- $40,000 from NH client → NH sales
-- NH apportionment factor = $40,000 / $160,000 = 25%
-
-If federal Schedule C net profit after NH modifications and RCD is $80,000, NH apportioned base = $80,000 × 25% = $20,000. BPT = $20,000 × 7.5% = $1,500.
-
-This is one of the biggest planning opportunities for NH-based service businesses: market-based sourcing combined with no throwback can apportion a large share of income out of NH.
-
-### 5.4 Combined apportionment
-
-- **Finnigan rule for combined groups** — For combined groups, the sales factor is computed at the group level (Joyce or Finnigan — NH follows Finnigan: a sale by any group member into NH is a NH sale of the group, regardless of which member made it).
-
-## 6. BET credit against BPT
-
-This is the most important interaction in NH business taxation.
-
-### 6.1 The credit
-
-- **BET credit against BPT sequence** — Under RSA 77-A:5, X, the BET paid for a tax period is allowed as a credit against the BPT for the same tax period. The credit is applied after all other BPT credits. Sequence: 1. Compute BPT before credits (Section 2). 2. Compute BET (Section 4). 3. Subtract BET from BPT. 4. If BPT > BET: BPT due is BPT − BET; BET is fully credited; total NH tax = BPT. 5. If BET > BPT: BPT due is zero; BET due is the full BET amount; excess BET carries forward up to 5 tax years (RSA 77-A:5, X(b)). 6. Total NH tax in any year is therefore the greater of BPT or BET (subject to credit carryover dynamics).  _(RSA 77-A:5, X; RSA 77-A:5, X(b))_
-
-### 6.2 Carryforward of unused BET
-
-- **BET carryforward mechanics** — Excess BET (BET in excess of BPT for the year) carries forward five tax periods and is creditable against BPT in those years. The carryforward is FIFO — oldest credit used first. Unused after five years expires.
-
-### 6.3 Common patterns
-
-**Common patterns of BPT vs BET dominance**
-
-| Business type | Typical pattern |
-| --- | --- |
-| Sole prop, low-overhead freelancer with high margin | BPT > BET — BET fully credited, BPT dominates |
-| Labor-intensive service firm (consulting, agency, payroll-heavy) | BET > BPT — BET dominates, may build carryforward |
-| Capital-intensive corp with low headcount, high profit | BPT > BET — BPT dominates |
-| Real-estate LLC with mortgage interest and modest net income | BET often > BPT — BET dominates due to interest in EVTB |
-| Loss year | BET still owed if EVTB threshold exceeded; full BET carries forward 5 years against future BPT |
-
-### 6.4 Filing both is the norm
-
-- **Combined filing norm** — Because of the credit interaction, most NH business taxpayers file both BPT and BET on a combined return form (NH-1120, NH-1065, or NH-1040), with the BET computed on a Schedule BET attached. The BPT and BET share one set of payment vouchers, one estimated-tax schedule, and one return.
-
-### 7.1 Forms by entity type
-
-**Forms by entity type**
-
-| Entity | BPT form | BET schedule | Combined? |
-| --- | --- | --- | --- |
-| Sole proprietor | **NH-1040** | BET-PROP | Yes — single return |
-| Partnership / LLC taxed as partnership | **NH-1065** | BET | Yes |
-| C-corporation | **NH-1120** | BET | Yes |
-| S-corporation (treated as C for NH) | **NH-1120** | BET | Yes |
-| LLC taxed as disregarded entity | Flows to owner's NH-1040 (if owner is individual) | BET-PROP | Yes |
-| Trust / estate with business income | **NH-1041** | BET | Yes |
-| Unitary combined group | **NH-1120-WE** | BET-WE | Yes |
-
-All forms include the Schedule R (apportionment), Schedule IV (NH NOL), and applicable credit schedules.
-
-### 7.2 Due dates
-
-- **Due date - sole prop and partnership/LLC** — 15th day of the 4th month after year-end. For calendar-year filers, April 15 following the close of the tax year — same as federal Form 1040 / Form 1065.
-- **Due date - C-corporation and S-corporation** — 15th day of the 4th month after year-end (note: NH uses the 4th month for corporations, NOT the 3rd month as some states do that follow federal Form 1120-S timing). For calendar-year filers, April 15.
-- **Due date - combined group** — Same as the parent's form due date.
-
-### 7.3 Extensions
-
-- **Automatic extension** — NH grants an automatic 7-month extension for BPT and BET filing if 100% of the tax due is paid by the original due date. No extension form is required if no payment is needed; otherwise file Form BT-EXT with payment. The extension is for filing only — interest accrues on any unpaid tax from the original due date.
-
-### 7.4 Quarterly estimated payments
-
-- **Estimated payment requirement threshold** — 260 USD (Estimated payments are required if combined BPT + BET liability is expected to be $260 or more for the current year; historically the threshold has been $200; verified for 2025 as $260 by Chapter 91, Laws of 2021 indexing — confirm current DRA threshold before quoting in a client deliverable)  _(RSA 77-A:6 and 77-E:6; Chapter 91, Laws of 2021)_
-- **Quarterly due dates** — Q1: April 15; Q2: June 15; Q3: September 15; Q4: December 15.
-- **Installment amount and safe harbor** — Each installment is 25% of the lesser of: 90% of the current year's actual tax, or 100% of the prior year's tax (110% if prior-year tax exceeded $40,000 — RSA 77-A:6 references the safe harbor).  _(RSA 77-A:6)_
-- **2025 underpayment interest rate** — 10% percent per annum (Underpayment interest applies under RSA 21-J:28; DRA publishes the rate annually)  _(RSA 21-J:28)_
-
-### 7.5 Voucher and electronic filing
-
-- **E-filing and payment methods** — NH DRA's Granite Tax Connect portal supports e-file for NH-1120, NH-1065, NH-1040 (BPT), and the BET schedules. Paper filing is still permitted. Estimated payments may be made via ACH debit, ACH credit, check with voucher (Form BT-ESTIMATE), or credit card (with a third-party convenience fee).
-
-### 7.6 Payroll filings if S-corp election is made
-
-- **S-corp payroll filing obligations** — If a NH business operates as an S-corporation and pays the owner a federal W-2 wage, the entity must: Register as a NH employer with NH Employment Security (DES) for unemployment insurance; File Form NHES-0061 quarterly UI wage reports; Pay state UI tax (rate varies; new employers historically pay 2.7%); No state income tax withholding is required — NH has no PIT to withhold against.
-
-This is the most common surprise for federal practitioners helping an out-of-state client move to NH: there is no state W-2 box 17, but there is still a state UI filing.
-
-### 8.1 When required
-
-- **Combined return requirements** — A combined return on Form NH-1120-WE is required when both: 1. Two or more business organizations are members of a unitary business (functional integration, centralization of management, economies of scale — the three unities under Mobil Oil and Container), AND 2. There is more than 50% common ownership (direct or constructive under §1563 attribution).
-
-### 8.2 Water's-edge
-
-- **Water's-edge limit for combined groups** — NH applies a water's-edge limit: a foreign corporation with 80%-or-more foreign business activity is excluded from the combined group. There is no worldwide-combined election.
-
-### 8.3 Single member of a group
-
-- **Single-NH-nexus-member rule** — A single entity that is the only NH-nexus member of a unitary group still files a combined return — it does not get to file as a separate entity merely because its affiliates have no NH nexus. The other group members' apportionment factors and pre-apportionment income enter into the NH combined computation; only the NH-nexus portion is taxed.
-
-### 8.4 BET in combined groups
-
-- **BET computation for combined groups** — BET is computed at the combined-group level: the group's total compensation, interest, and dividends are summed (after eliminating intercompany items) and apportioned to NH using the group's NH payroll / total payroll, NH interest / total interest, and NH dividends / total dividends factors.
-
-### 9.1 Deductibility of NH BPT and BET
-
-- **Federal deductibility of BPT and BET** — Both BPT and BET are deductible on the federal return as state and local taxes paid in the conduct of the trade or business: On Schedule C as 'Taxes and licenses' (Line 23) for a sole proprietor; On Form 1065 / 1120-S / 1120 as a business expense for entities; They are NOT subject to the $10,000 individual SALT cap because they are paid at the entity level on a business — they are above-the-line business deductions.
-- **Cash-basis deduction timing** — The deduction is on the cash basis for cash-basis taxpayers — i.e., the BPT and BET deducted on the 2025 federal return are amounts actually paid in 2025 (estimated payments for Q1–Q4 2025 plus any 2024-year balance due paid in 2025, less any 2024 refund received in 2025 to the extent it was deducted in 2024 — recapture under the tax-benefit rule).
-
-### 9.2 No PTET workaround needed
-
-- **No PTET needed** — Because BPT is already imposed at the entity level (not as a pass-through to owners), NH does not need and does not have a separate Pass-Through Entity Tax (PTET) election like CA, NY, NJ, etc. The structure of the BPT effectively functions as a built-in PTET, and the SALT cap workaround is automatic.
-
-### 9.3 No federal-state coordination on QBI, retirement, or SE tax
-
-- **No coordination with federal QBI/SE tax/retirement** — NH BPT does not reduce federal QBI, does not affect federal SE tax (Schedule SE is unaffected by NH BPT), and does not affect federal retirement-plan contribution limits. The reasonable compensation deduction is a NH-only concept and does not become a federal W-2.
-
-### 10.1 Example A — Sole proprietor freelancer, $300k revenue
-
-**Facts.** Aisha is a NH-resident freelance UX designer operating as a sole proprietor (no LLC). 2025 financial summary:
-- Gross receipts: $300,000 (all from US clients; $90,000 from NH clients, $210,000 from out-of-state clients with services delivered remotely to those clients' locations)
-- Business expenses (rent, software, contractors, etc.): $80,000
-- Federal Schedule C net profit: $220,000
-- No employees
-- No business interest expense
-- Operates from home office (federal home office deduction taken on Form 8829, already in $80k expenses)
-
-**BPT computation.**
-
-1. Federal Schedule C net profit: $220,000
-2. NH modifications: none material
-3. NH gross business profits before RCD: $220,000
-4. Reasonable compensation deduction. Aisha's services are full-time, with 12 years of UX design experience. BLS OES median wage for senior UX designers in NH metro area is approximately $115,000. She documents:
-   - Resume showing 12 years of experience and a portfolio of $200k+ revenue per year for the prior three years
-   - Time records showing 1,900 billable + 300 admin hours = 2,200 hours
-   - Three recruiter quotes in the $110,000–$130,000 range for a comparable salaried role
-   She claims $115,000 of reasonable compensation. This is above the $75,000 safe harbor and is substantiated. Deduction: $115,000.
-5. NH gross business profits after RCD: $220,000 − $115,000 = $105,000
-6. Apportionment. Market-based sourcing of service revenue:
-   - NH-sourced sales: $90,000
-   - Everywhere sales: $300,000
-   - NH sales factor: 30%
-7. NH apportioned base: $105,000 × 30% = $31,500
-8. BPT before credit: $31,500 × 7.5% = **$2,363**
-
-**BET computation.**
-
-1. Compensation: Aisha has no employees. Her self-employment compensation enters the BET base. SE net earnings = $220,000 × 92.35% = $203,170; capped at 2025 FICA wage base of $176,100 → compensation = $176,100.
-2. Interest paid: $0
-3. Dividends paid: $0
-4. EVTB before apportionment: $176,100
-5. BET threshold check: EVTB $176,100 < 2025 threshold $298,000 AND gross receipts $300,000 > $298,000 → **filing required** (threshold is "OR")
-6. Apportionment of EVTB: payroll factor based on NH residence and location of work — Aisha works from her NH home office serving clients in multiple states. The payroll apportionment factor for a proprietor's own compensation is based on where the services are performed (her NH home office) → 100% NH.
-7. NH-apportioned EVTB: $176,100
-8. BET: $176,100 × 0.55% = **$969**
-
-**BPT/BET interaction.**
-
-- BPT before credit: $2,363
-- BET: $969
-- BPT > BET → BET fully credited
-- BPT due: $2,363 − $969 = **$1,394**
-- BET due: **$969**
-- Total NH tax: **$2,363** (the BPT amount; BET is just the floor)
-
-**Federal deduction.** Aisha deducts the $2,363 BPT + $969 BET = $3,332 on her 2025 Schedule C Line 23 (assuming she paid that amount in 2025 — actual cash flow may differ).
-
-### 10.2 Example B — Multi-employee LLC, BET dominates
-
-**Facts.** Granite Marketing LLC is a NH LLC taxed as a partnership with two member-managers and six employees. 2025 financial summary:
-- Gross receipts: $1,800,000 (all NH-sourced; clients are NH-based businesses)
-- W-2 wages to six employees: $620,000
-- Member guaranteed payments / SE compensation to the two members: $180,000 total
-- Office rent, software, marketing spend, other expenses: $920,000
-- Business interest on line of credit: $25,000
-- Federal Form 1065 ordinary business income (after guaranteed payments deducted federally): $55,000 ($27,500 each member)
-
-**BPT computation.**
-
-1. Federal Form 1065 ordinary business income: $55,000
-2. NH modification: federal Form 1065 ordinary income is computed AFTER deducting guaranteed payments. NH adds them back so the partnership starts from the full pre-GP profit, then deducts the reasonable compensation. (See RSA 77-A:4, III(c) and Rev 304.04(d).) Add back: $180,000. NH gross business profits before RCD: $235,000.
-3. Reasonable compensation deduction. Both members work full-time. They claim $75,000 each (within the safe harbor; no substantiation required). RCD: $150,000.
-4. NH gross business profits after RCD: $235,000 − $150,000 = $85,000
-5. Apportionment: 100% NH.
-6. BPT: $85,000 × 7.5% = **$6,375**
-
-**BET computation.**
-
-1. Compensation:
-   - W-2 wages: $620,000
-   - Member SE compensation: $180,000 (each member's share is below the FICA wage base)
-2. Interest paid: $25,000
-3. Dividends paid: $0 (partnership)
-4. EVTB: $620,000 + $180,000 + $25,000 = $825,000
-5. BET: $825,000 × 0.55% = **$4,538**
-
-**BPT/BET interaction.**
-
-- BPT: $6,375
-- BET: $4,538
-- BPT > BET → BET fully credited
-- BPT due: $6,375 − $4,538 = **$1,838**
-- BET due: **$4,538**
-- Total NH tax: **$6,375**
-
-In this example, the labor-intensive business generates a significant BET, but the BPT still exceeds it because the partnership has substantial profit margin. The members' RCD efficiently reduces BPT but does NOT reduce BET (compensation is in EVTB whether characterized as a partner draw, a guaranteed payment, or W-2 wages).
-
-### 10.3 Example C — Capital-light corp, BPT > BET, BET fully credited
-
-**Facts.** Lakeside Software Inc. is a NH C-corporation with two employee-owners and one assistant. 2025 financials:
-- Gross receipts: $850,000 (75% NH market, 25% MA market — services market-sourced)
-- W-2 wages: $260,000 (two founder-shareholders take $110k each; one assistant $40k)
-- Office rent, software, other expenses: $190,000
-- No business interest
-- C-corp pays no dividends (retains earnings)
-- Federal Form 1120 taxable income: $400,000
-
-**BPT computation.**
-
-1. Federal Form 1120 taxable income: $400,000
-2. No material NH modifications
-3. Reasonable compensation deduction: not available to C-corp shareholder-employees (they already deducted federally-deductible W-2 wages). RCD: $0.
-4. NH gross business profits: $400,000
-5. Apportionment: NH sales factor = 75% (services sourced to the NH market clients).
-6. NH apportioned base: $400,000 × 75% = $300,000
-7. BPT: $300,000 × 7.5% = **$22,500**
-
-**BET computation.**
-
-1. Compensation: $260,000 (all W-2)
-2. Interest: $0
-3. Dividends: $0 (no dividends declared)
-4. EVTB: $260,000
-5. Apportionment: NH payroll factor — all employees work in NH → 100%. NH EVTB: $260,000.
-6. BET: $260,000 × 0.55% = **$1,430**
-
-**BPT/BET interaction.**
-
-- BPT: $22,500
-- BET: $1,430
-- BPT > BET → BET fully credited
-- BPT due: $22,500 − $1,430 = **$21,070**
-- BET due: **$1,430**
-- Total NH tax: **$22,500**
-
-This is the typical pattern for a profitable, capital-light services C-corp: BPT dominates and BET is essentially a minimum-floor that is fully absorbed.
-
-### 10.4 Example D — Loss year with BET carryforward
-
-**Facts.** Same Granite Marketing LLC as Example B, but in 2026 the firm has a bad year:
-- Gross receipts: $1,200,000
-- W-2 wages: $580,000
-- Member SE comp: $150,000
-- Other expenses: $700,000
-- Interest: $20,000
-- Federal Form 1065 ordinary business income: −$250,000 (loss)
-
-**BPT.**
-- Gross business profits before RCD: −$250,000 + $150,000 add-back = −$100,000
-- RCD limited to gross business profits, can't increase loss: $0
-- NH NOL generated: $100,000 (carries forward 10 years)
-- BPT: $0
-
-**BET.**
-- EVTB: $580,000 + $150,000 + $20,000 = $750,000
-- BET: $750,000 × 0.55% = $4,125
-- BET threshold ($298k) exceeded → filing required and BET owed.
-- Full $4,125 carries forward as a credit against BPT in the next 5 tax years.
-
-**Total 2026 NH tax: $4,125 BET, no BPT.** The $4,125 sits in carryforward and reduces 2027–2031 BPT until used (FIFO).
-
-## 11. Interest & Dividends Tax — REPEALED
-
-- **I&D Tax repeal** — The NH Interest and Dividends Tax (I&D Tax) under RSA 77 — a 5% personal tax on individuals' interest and dividend income — was fully repealed for tax years beginning on or after January 1, 2025.  _(RSA 77; Chapter 79, Laws of 2023 (HB 2, 2023 session))_
-- **I&D Tax phase-out schedule 2023** — 4% percent (reduced from 5%)  _(Chapter 79, Laws of 2023 (HB 2, 2023 session))_
-- **I&D Tax phase-out schedule 2024** — 3% percent  _(Chapter 79, Laws of 2023 (HB 2, 2023 session))_
-- **I&D Tax 2025 and forward** — tax does not exist  _(Chapter 79, Laws of 2023 (HB 2, 2023 session))_
-
-1. NH residents have no individual-level tax filing obligation with NH DRA for 2025 unless they personally own a business that exceeds the BPT or BET threshold.
-2. For 2024 (last year of the tax), the final DP-10 was due April 15, 2025. A 2025 DP-10 is not required and the DRA will not accept one.
-3. Trusts that were previously NH-grantor-tax exposed (the historic "NH trust tax" concern) are no longer subject to NH income tax on interest and dividends. Migration of trusts into NH for tax-haven purposes remains attractive on the property-tax and asset-protection side, but the I&D angle is gone.
-4. Partnerships and LLCs that were structured to avoid creating I&D-tax exposure for their NH owners no longer need that planning.
-
-**Do not confuse I&D Tax with BPT/BET.** The repeal of I&D Tax does NOT reduce the BPT or BET liability of a business — those continue at 7.5% and 0.55% respectively. A common client misunderstanding (2025 onward): "NH repealed the income tax, so I don't owe anything." Wrong — they likely still owe BPT and/or BET if they operate a business.
-
-## 12. Practical workflow for an NH freelance/small-business return
-
-Step-by-step for an NH-resident sole proprietor or single-member LLC freelancer at year-end 2025:
-
-1. **Threshold check.** Compute 2025 gross business income from federal Schedule C Line 1 (or Schedule C-EZ legacy). If ≤ $109,000, no BPT return is required — but still check BET (Step 3). If > $109,000, a BPT return is required.
-
-2. **Reasonable compensation analysis.** Determine the proprietor's reasonable compensation:
-   - If claiming ≤ $75,000 → safe harbor, no further substantiation
-   - If claiming > $75,000 → assemble BLS data, time records, comparable-wage evidence; document in the workpapers
-
-3. **BET threshold check.** Compute EVTB = SE compensation (Schedule SE Line 4, capped at FICA wage base) + interest paid + dividends paid. Compute gross receipts. If either EVTB > $298,000 OR gross receipts > $298,000, a BET return is required.
-
-4. **NH modifications and apportionment.** Apply NH modifications (interest on non-NH munis added back, US Treasury interest subtracted, bonus depreciation added back if any) and compute NH sales-factor apportionment using market-based sourcing.
-
-5. **BPT and BET computation.** Compute BPT before credits and BET. Apply BET credit against BPT.
-
-6. **Federal-state coordination.**
-   - Add the NH tax to Schedule C Line 23 on a cash basis
-   - Verify that the federal estimated tax safe harbor still holds after the deduction
-   - Compute the federal SE tax and QBI deduction independently — NH numbers do not flow
-
-7. **File.** Use Granite Tax Connect to e-file Form NH-1040 (proprietorship) by April 15, 2026, for tax year 2025. Pay BPT and BET via the same return; remit estimated payments for 2026 quarterly starting April 15, 2026.
-
-8. **Closeout.** If the business is winding down, mark "final return" on the form; the DRA closes the BPT/BET account and stops sending non-filer notices.
-
-## 13. Common errors to catch in review
-
-1. **Missing the BET when business has a loss.** BET is owed even at a loss if EVTB threshold is exceeded. A loss-year client is at risk of forgetting BET.
-
-2. **Claiming reasonable compensation for a C-corp shareholder-employee.** RCD is for proprietors and partners only. C-corp and S-corp shareholder-employees take a W-2 instead.
-
-3. **Excessive RCD without substantiation.** Anything above $75,000 needs documentation. The DRA audits this.
-
-4. **Treating S-corp income as flowing through to NH.** Wrong — S-corp is taxed at the entity level for BPT.
-
-5. **Forgetting bonus depreciation add-back.** If federal Schedule C took bonus depreciation, NH starts higher.
-
-6. **Throwback that doesn't exist.** Some practitioners default to applying throwback because their home state has one; NH does not — out-of-state services with market-based sourcing simply stay out of the NH numerator.
-
-7. **Double-counting RCD against both BPT and BET.** RCD reduces BPT only. The same compensation is fully in BET regardless.
-
-8. **Claiming a 2025 I&D Tax return.** The tax does not exist for 2025. A client who received a 1099-INT does not file a NH return for that interest in 2025.
-
-9. **Missing the combined-return trigger.** Two LLCs > 50% commonly owned and unitary = combined return, not two separate returns.
-
-10. **Estimated-payment underpayment.** The NH safe harbor uses prior-year tax (or 110% if prior-year tax > $40,000). Clients who switched from a loss year to a profit year must pay current-year estimates because 100% of prior-year tax was zero — they cannot use the prior-year safe harbor as a shield.
-
-## 14. Provenance and citations
-
-- **Primary statutes** — RSA 77-A — Business Profits Tax (rate, base, modifications, RCD, apportionment, NOL, combined return); RSA 77-E — Business Enterprise Tax (rate, EVTB, threshold, apportionment, BPT credit); RSA 77 — Interest and Dividends Tax (repealed for tax years beginning on or after 1/1/2025); RSA 78-B — Real Estate Transfer Tax (out of scope); RSA 21-J — DRA general administration, interest and penalties  _(RSA 77-A; RSA 77-E; RSA 77; RSA 78-B; RSA 21-J)_
-- **Session laws relied on for rates and thresholds** — Chapter 156, Laws of 2017 — BPT rate reductions; Chapter 91, Laws of 2021 — BPT to 7.6% then 7.5%, BET to 0.55%, RCD safe harbor changes, market-based sourcing for services, threshold indexation; Chapter 346, Laws of 2019 (HB 10) — single sales factor phase-in completed 2022; Chapter 144, Laws of 2022 (HB 1221) — NOL carryforward extended to 10 years; Chapter 79, Laws of 2023 (HB 2) — I&D Tax phase-out and 2025 repeal  _(Chapter 156, Laws of 2017; Chapter 91, Laws of 2021; Chapter 346, Laws of 2019 (HB 10); Chapter 144, Laws of 2022 (HB 1221); Chapter 79, Laws of 2023 (HB 2))_
-- **NH DRA administrative rules** — Rev 300 series — BPT; Rev 2400 series — BET; Rev 304.04 — Reasonable compensation deduction; Rev 305.03 — Combined returns and unitary business  _(Rev 300 series; Rev 2400 series; Rev 304.04; Rev 305.03)_
-- **Forms (2025 versions)** — NH-1040 — BPT/BET combined return for proprietorship; NH-1065 — BPT/BET combined return for partnership / LLC; NH-1120 — BPT/BET combined return for corporation / S-corp; NH-1120-WE — BPT/BET combined return for unitary water's-edge group; NH-1041 — BPT/BET combined return for fiduciary; Schedule BET / BET-PROP — EVTB computation; Schedule R — Apportionment; Schedule IV — NH NOL; Form BT-EXT — Extension with payment; Form BT-ESTIMATE — Estimated payment voucher  _(NH DRA forms, 2025 versions)_
-- **2025 BPT filing threshold** — 109000 USD (gross business income; indexed for inflation, rounded to nearest $1,000; 2024 threshold was $103,000)
-- **BET filing threshold** — 298000 USD (EVTB OR gross receipts) (Indexed amount for 2025; verify against the NH DRA's annual TIR/notice before quoting in a client deliverable)  _(Indexed amounts for 2025 (skill text))_
-- **RCD safe harbor** — 75000 USD (Indexed amount for 2025; verify against the NH DRA's annual TIR/notice before quoting in a client deliverable)  _(Indexed amounts for 2025 (skill text))_
-- **Estimated payment requirement threshold** — 260 USD (Estimated payments are required if combined BPT + BET liability is expected to be $260 or more for the current year; historically the threshold has been $200; verified for 2025 as $260 by Chapter 91, Laws of 2021 indexing — confirm current DRA threshold before quoting in a client deliverable)  _(RSA 77-A:6 and 77-E:6; Chapter 91, Laws of 2021)_
-- **110% safe-harbor trigger** — 40000 USD prior-year tax (>) (Indexed amount for 2025; verify against the NH DRA's annual TIR/notice before quoting in a client deliverable)  _(Indexed amounts for 2025 (skill text))_
-- **BPT rate** — 7.5% percent (tax periods ending on or after December 31, 2023, continuing for tax year 2024 and tax year 2025)  _(RSA 77-A)_
-- **BET rate** — 0.55% percent (tax periods ending on or after December 31, 2023, continuing for tax year 2024 and tax year 2025)  _(RSA 77-E)_
-
-This skill must be loaded alongside `us-tax-workflow-base` v0.2 or later and any federal content skill the engagement requires (`us-sole-prop-bookkeeping`, `us-schedule-c-and-se-computation`, `us-federal-return-assembly`, etc.). NH-specific verification of indexed thresholds and current IRC reference date is required before producing a final client deliverable. Reviewer signoff under Circular 230 (CPA, EA, or attorney) is required for any return that exceeds workflow-base thresholds.
+BET is legally entity-based; [RSA 77-E:1 III](https://gc.nh.gov/rsa/html/V/77-E/77-E-1.htm) prohibits consolidated/combined reporting as defined there. DRA offers group presentation schedules; those do not authorize disregarding entity computations. Reconcile every member, its factors and the cross-member BPT credit under [RSA 77-E:13](https://gc.nh.gov/rsa/html/V/77-E/77-E-13.htm), rather than summing group wages and eliminating items without authority.
+
+### 6. Credit BET against BPT exactly once
+
+[Rules: RSA 77-A:5 X](https://gc.nh.gov/rsa/html/V/77-A/77-A-5.htm), [77-E:13](https://gc.nh.gov/rsa/html/V/77-E/77-E-13.htm). Track credit by origin period, use and expiry. For periods ending on/after December 31, 2014, unused BET credit carries ten periods. The old five-period instruction is not current. Use the Business Enterprise Tax Credit Worksheet (BET-CW); other credits require their statutory schedules. Do not assume an ordering/FIFO rule not established by the worksheet.
+
+For a stand-alone taxpayer with no other credits or carryovers: current BET credit is the smaller of BET and BPT. BPT net = BPT minus credit, at least zero; total state business tax = BET plus BPT net. That equals the larger gross tax in this simple case. With other credits or carried BET, recompute rather than automatically applying a maximum formula.
+
+### 7. Follow the filing forms and payment sequence
+
+**Published mapping: 2025-2026 filing cycle only.** The [current forms list](https://www.revenue.nh.gov/resource-center/current-year-forms-and-instructions) and [BT-SUMMARY instructions](https://www.revenue.nh.gov/sites/g/files/ehbemt736/files/documents/bt-summary-instructions-2025.pdf) were read together.
+
+| Taxpayer / item | Form and flow |
+|---|---|
+| Proprietor, individual-owned disregarded SMLLC | Separate NH-1040 Business Profits Tax return; SMLLC uses its own FEIN or DRA DIN, not an assumed owner combined return |
+| Partnership / partnership LLC | NH-1065 with relevant federal and state reconciliation schedules |
+| C or S corporation | NH-1120; S corporation also DP-120; retain applicable information reports listed by DRA |
+| Fiduciary | NH-1041 |
+| Water's-edge unitary BPT group | NH-1120-WE with affiliation/member schedules; separate entity analysis remains necessary |
+| BET | Form BET; apportioned filers use BET-80 or relevant group schedule; current return instructions determine the correct attachment |
+| BPT apportionment and NOL | DP-80; DP-131-A for loss history and DP-132 for allowable deduction; Schedule IV for required detailed adjustments |
+| BET credit / other credits | BET-CW; DP-160 for other statutory credits |
+| Every required BPT and/or BET filer | **BT-SUMMARY**; omitting it makes the filing incomplete |
+
+In [NH-1040, 2025-2026 filing cycle](https://www.revenue.nh.gov/sites/g/files/ehbemt736/files/documents/nh-1040-instructions-2025.pdf): line 1 collects business activities; line 2 reconciles the IRC; line 6 adjustments include compensation/taxes/interest; line 8 is apportionment; line 9 profit before NOL; line 10 allowable NOL; line 11 taxable business profits; line 12 gross BPT; line 13 credit; line 14 BPT net goes to **BT-SUMMARY 1(b)**. For the simple un-apportioned BET form, lines 1-3 components total on line 4, line 5 tax, line 6 credits, line 7 net goes to **BT-SUMMARY 1(a)**. Do not use the simple BET form flow as the complete multistate apportionment method.
+
+Open **Granite Tax Connect** from DRA's [Business Taxes page](https://www.revenue.nh.gov/taxes-glance/business-taxes). Select the correct entity, tax and period, complete the BPT/BET computation and required attachments, then BT-SUMMARY. In the published summary, Step 2 identifies entity, LLC status, amended/final and filing tests; Step 3 completes the tax returns; Step 4 lines 1(a)-(c) sum net BET/BPT; 2(a)-(e) reconcile extension, estimates, prior overpayment and amendment payments; line 3 balance; line 4 interest/penalties; line 5 payment; lines 6-7 overpayment, carryforward/refund; Step 5 signature/authorization. Retain filing confirmation and payment reference, and match the payment to the correct FEIN/DIN and taxable period. Paper returns go to the address on the current instructions; do not email or fax a return.
+
+### 8. Estimates, extensions and enforcement
+
+Test each tax against **its own** declaration amount; USD 260 is BET, not a combined BPT-plus-BET threshold. The statute says estimates below each amount are exempt and addresses amounts exceeding it later; for exact-boundary liabilities use the current return/agency instructions rather than inventing a combined rule. Calendar instalments fall in April, June, September and December, unlike federal personal estimates; federal figures belong in `us-quarterly-estimated-tax`.
+
+[RSA 21-J:32](https://gc.nh.gov/rsa/html/I/21-J/21-J-32.htm) computes underpayment by instalment using the 90% current-tax standard and exceptions including a qualifying prior 12-month return **showing a liability**, recomputation at current rates, annualization, and first filing period. The old USD 40,000/110% rule is not in that statute. A zero-liability prior return is not the specified liability-showing prior-year exception. Use DP-2210/2220 for both taxes; different quarters can use different available exceptions. First-period relief from estimated-tax penalty is not exemption from filing or paying the business tax.
+
+Pay the full annual balance by the original due date; a valid filing extension does not defer payment. Use BT-EXT if needed to complete payment for the published automatic extension. The late-filing and late-payment rules in the rates table are separate from interest. Use the rate for each calendar period of delinquency; 9% is confirmed for calendar 2026, **not automatically for payments in 2027**.
+
+### 9. Federal coordination boundary
+
+NH's compensation deduction changes NH BPT; it does not create a federal W-2 or itself reduce federal Schedule C profit. The federal treatment of tax payments depends on the tax, entity, accounting method and deduction category. The old advice to put every proprietor BPT/BET payment on Schedule C, its blanket SALT-cap statement, and its statement that NH tax payments cannot affect federal QBI/SE/retirement calculations are not verified by NH law and must not be used. Route to the federal owner skills. Do not double-count a credited BET payment as though gross BPT and BET were both payable. The entity-level BPT means an S election does not simply remove NH business tax; any entity-choice analysis must include state compliance and compensation treatment as well as the federal decision.
+
+## Boundary and exception table
+
+| Situation | Rule or boundary |
+|---|---|
+| No profit but gross filing test met | File; BET can be payable despite a BPT loss |
+| Federal disregarded LLC | Separate NH entity, with owner-classification form and its own identifier |
+| Partners each claim the full safe harbour | Incorrect; share business/related-group ceiling or substantiate actual services |
+| Personal interest/dividend receipts | Repeal skill handles personal tax; business income/distributions still need entity analysis |
+| Unitary businesses | BPT combined reporting when statutory conditions hold, even if only one group member has NH activity; detailed membership and credit allocations require review |
+| Overseas corporation / 80-20 entity | Read RSA 77-A:1 XV-XIX: foreign-incorporation and foreign payroll/property tests plus 80/20 certification conditions; do not replace them with a generic foreign-revenue test |
+| P.L. 86-272 claim | Use `us-pl-86-272-income-tax-nexus`; analyze BPT and BET separately rather than assuming both exempt |
+| Qualified investment or regenerative manufacturing election | Specific statutory exception, not ordinary business-tax exemption |
+
+The group and entity boundaries above come from [RSA 77-A:1](https://gc.nh.gov/rsa/html/V/77-A/77-A-1.htm), [77-A:3 III](https://gc.nh.gov/rsa/html/V/77-A/77-A-3.htm), [77-A:6 IV](https://gc.nh.gov/rsa/html/V/77-A/77-A-6.htm), and [77-E:1 III](https://gc.nh.gov/rsa/html/V/77-E/77-E-1.htm).
+
+## Worked cases
+
+All taxpayers and compensation facts are invented. Calculation examples keep cents to expose the arithmetic; published return instructions require whole-dollar entries, so round each actual return line as directed and reconcile the final payment.
+
+**Case 1, Aisha, proprietor decision.** Gross receipts USD 300,000; expenses USD 80,000; net business profit USD 220,000. Services are delivered USD 90,000 in NH and USD 210,000 outside, with taxability established in those markets; NH factor 30%. Aisha performed actual services. Compare the shared safe-harbour deduction USD 75,000 with a fully substantiated USD 115,000 actual-services deduction. For the BET illustration, the separately reconciled statutory owner-compensation input is USD 203,170, with no interest/dividends/retained adjustment, and work entirely in NH. This is a supplied input, not a federal wage-base computation.
+
+Safe harbour: BPT (220,000 - 75,000) x 30% x 7.5% = USD 3,262.50. Supported actual amount: (220,000 - 115,000) x 30% x 7.5% = USD 2,362.50. BET = 203,170 x 0.55% = USD 1,117.435 before return rounding. Both taxes must be filed because gross receipts exceed both thresholds. Credited BET leaves the total equal to BPT in each case: the supported deduction saves USD 900. If evidence supported only USD 60,000, BPT under that actual amount would be USD 3,600, compared with USD 3,262.50 under the eligible safe harbour. That is the opposite decision direction. The old USD 3,332 purported federal deduction is not a valid sum of state liabilities.
+
+```oa-check
+name: Aisha compensation decision both directions, NH 2026
+inputs:
+  profit: 220000
+  factor: 0.30
+  owner_compensation_input: 203170
+steps:
+  - safe_bpt: (profit - 75000) * factor * 0.075
+  - supported_bpt: (profit - 115000) * factor * 0.075
+  - low_actual_bpt: (profit - 60000) * factor * 0.075
+  - bet: owner_compensation_input * 0.0055
+  - safe_net_bpt: max(safe_bpt - bet, 0)
+  - supported_net_bpt: max(supported_bpt - bet, 0)
+  - safe_total: bet + safe_net_bpt
+  - supported_total: bet + supported_net_bpt
+  - savings: safe_total - supported_total
+expected:
+  safe_bpt: 3262.50
+  supported_bpt: 2362.50
+  low_actual_bpt: 3600
+  bet: 1117.435
+  safe_total: 3262.50
+  supported_total: 2362.50
+  savings: 900
+```
+
+**Case 2, Granite Marketing LLC, two partners.** Partnership ordinary income USD 55,000 is after USD 180,000 guaranteed payments. Add the payments for NH starting profit USD 235,000. A shared USD 75,000 record-keeping safe harbour leaves USD 160,000 at 100% NH apportionment, BPT USD 12,000. Assume correctly reconciled BET compensation USD 800,000 (USD 620,000 employee wages plus USD 180,000 owner compensation), interest USD 25,000 and no taxable distributions: BET USD 4,537.50. Net BPT is USD 7,462.50; total USD 12,000. If USD 150,000 actual owner services are substantiated, BPT becomes USD 6,375 and total USD 6,375, but that deduction is **not** two safe harbours.
+
+```oa-check
+name: Granite partnership shared compensation ceiling, NH 2026
+inputs:
+  ordinary_income: 55000
+  guaranteed_payments: 180000
+  employee_wages: 620000
+  owner_compensation_input: 180000
+  interest: 25000
+steps:
+  - nh_start: ordinary_income + guaranteed_payments
+  - safe_profit: nh_start - 75000
+  - bpt: safe_profit * 0.075
+  - bet_base: employee_wages + owner_compensation_input + interest
+  - bet: bet_base * 0.0055
+  - bpt_net: max(bpt - bet, 0)
+  - total: bet + bpt_net
+  - supported_actual_bpt: (nh_start - 150000) * 0.075
+expected:
+  nh_start: 235000
+  safe_profit: 160000
+  bpt: 12000
+  bet_base: 825000
+  bet: 4537.50
+  bpt_net: 7462.50
+  total: 12000
+  supported_actual_bpt: 6375
+```
+
+**Case 3, Lakeside Software Inc.** Receipts USD 850,000 establish both filing triggers; federal corporate taxable income before NOL/special deductions, already reconciled to NH, is USD 400,000. A valid 75% NH sales factor produces BPT USD 22,500. Statutory compensation USD 260,000, entirely NH, with zero interest/dividends yields BET USD 1,430. Net BPT USD 21,070; total USD 22,500. No separate proprietor compensation deduction applies to the shareholder-employees' already deducted wages.
+
+```oa-check
+name: Lakeside corporate BPT and BET, NH 2026
+inputs:
+  profits: 400000
+  sales_factor: 0.75
+  compensation: 260000
+steps:
+  - bpt: profits * sales_factor * 0.075
+  - bet: compensation * 0.0055
+  - net_bpt: max(bpt - bet, 0)
+  - total: bet + net_bpt
+expected:
+  bpt: 22500
+  bet: 1430
+  net_bpt: 21070
+  total: 22500
+```
+
+**Case 4, Granite loss-year boundary, corrected assumptions.** Receipts USD 1.2 million; federal partnership loss USD 250,000 after USD 150,000 partner payments; NH profit before compensation is negative USD 100,000, so no compensation deduction creates a larger loss. The correctly reconciled BET compensation **including applicable partner net earnings/losses** is assumed to be USD 630,000, interest USD 20,000, no distributions/retained adjustment, all NH. BET USD 3,575 remains payable; BPT is zero. The unused current BET credit potentially carries for ten taxable periods. Do not copy the old USD 750,000 BET base without reconciling partner losses. The negative NH profit is not automatically a certified NOL amount; determine it under NH-adopted section 172 and loss-year apportionment.
+
+```oa-check
+name: Granite loss year still owes BET, NH 2026
+inputs:
+  federal_loss: -250000
+  partner_payment_addback: 150000
+  reconciled_compensation: 630000
+  interest: 20000
+steps:
+  - profit_before_compensation: federal_loss + partner_payment_addback
+  - bpt: max(profit_before_compensation, 0) * 0.075
+  - bet: (reconciled_compensation + interest) * 0.0055
+  - unused_bet_credit: max(bet - bpt, 0)
+  - total: bet + max(bpt - bet, 0)
+expected:
+  profit_before_compensation: -100000
+  bpt: 0
+  bet: 3575
+  unused_bet_credit: 3575
+  total: 3575
+```
+
+## When to refuse or refer
+
+Refer disputed nexus, denominator exclusions, unitary/water's-edge membership, foreign dividends, section 179 phaseout, NOL percentage limits, special-credit ordering and ownership-basis elections for a professional calculation using the full record. Do not certify a tax amount from this skill when those core inputs remain missing. Federal tax deductibility is a federal-owner job, not a state-law inference.
+
+## Filing and payment
+
+Calendar 2026 partnership returns are statutorily due March 15, 2027; ordinary corporations, proprietors, fiduciaries and combined returns April 15, 2027; exempt-organization return classes use the statutory fifth-month rule. Confirm the relevant 2026 published return instructions before filing. Pay estimates during the taxable year on the separate BPT/BET schedules. Preserve the original payment deadline when using an extension, and confirm the interest rate for any 2027 delinquency.
+
+## Completion checklist
+
+- Every legal entity, including federal disregarded LLC, tested separately where NH requires.
+- Gross everywhere filing tests recorded before apportionment; asset/ownership sale rules checked.
+- Federal-to-NH IRC/basis reconciliation attached; compensation ceiling or supporting records established.
+- BPT and BET definitions/factors kept separate; NOL applied at correct stage.
+- BET credit used once, origin/expiry tracked, other credits supported.
+- Required BPT/BET, BT-SUMMARY, schedules and federal attachments complete.
+- Estimates, extension payments and final balance reconciled to receipts.
+
+## Sources
+
+| Source | URL | Read on |
+|---|---|---|
+| RSA 77-A:1. Read for I, III, IV, VI, XII-XX: separate entities, starting income, gross threshold base, nexus, unitary/water's-edge definitions and IRC date. | https://gc.nh.gov/rsa/html/V/77-A/77-A-1.htm | 2026-11-13 |
+| RSA 77-A:2. Read for III: current BPT rate. | https://gc.nh.gov/rsa/html/V/77-A/77-A-2.htm | 2026-11-13 |
+| RSA 77-A:3. Read for the full section: single sales factor, tangible throwback, service location, denominator exclusions, foreign dividends and combined factors. | https://gc.nh.gov/rsa/html/V/77-A/77-A-3.htm | 2026-11-13 |
+| RSA 77-A:3-a and 3-b. Read for NH section 179 cap and exclusions of bonus/section 181. | https://gc.nh.gov/rsa/html/V/77-A/77-A-3-a.htm ; https://gc.nh.gov/rsa/html/V/77-A/77-A-3-b.htm | 2026-11-13 |
+| RSA 77-A:4. Read for II-III, VII, IX-XV and XIX-XX: compensation including shared safe harbour, base adjustments, NOL, basis elections and interest. | https://gc.nh.gov/rsa/html/V/77-A/77-A-4.htm | 2026-11-13 |
+| RSA 77-A:5. Read for X: ten-period BET credit and neighboring credits to avoid treating it as an unconditional maximum formula. | https://gc.nh.gov/rsa/html/V/77-A/77-A-5.htm | 2026-11-13 |
+| RSA 77-A:6 and 7. Read for filing/ownership sale requirements, separate estimates, return dates and instalments. | https://gc.nh.gov/rsa/html/V/77-A/77-A-6.htm ; https://gc.nh.gov/rsa/html/V/77-A/77-A-7.htm | 2026-11-13 |
+| RSA 77-E:1 and 2. Read for entity-level BET, compensation/distribution/interest definitions and current rate. | https://gc.nh.gov/rsa/html/V/77-E/77-E-1.htm ; https://gc.nh.gov/rsa/html/V/77-E/77-E-2.htm | 2026-11-13 |
+| RSA 77-E chapter. Read for sections 3-6 and future-effective provisions: retained-compensation adjustments, thresholds, instalments and 2027 boundary. | https://gc.nh.gov/rsa/html/V/77-E/77-E-mrg.htm | 2026-11-13 |
+| RSA 77-E:4 and 13. Read for component-specific BET apportionment and member-level BPT credit allocations. | https://gc.nh.gov/rsa/html/V/77-E/77-E-4.htm ; https://gc.nh.gov/rsa/html/V/77-E/77-E-13.htm | 2026-11-13 |
+| RSA 21-J:31, 32 and 33. Read for filing/payment penalties and every estimated-tax exception, including first-period relief and prior liability condition. | https://gc.nh.gov/rsa/html/I/21-J/21-J-31.htm ; https://gc.nh.gov/rsa/html/I/21-J/21-J-32.htm ; https://gc.nh.gov/rsa/html/I/21-J/21-J-33.htm | 2026-11-13 |
+| DRA Business Taxes. Read for USD 109,000 / USD 298,000 thresholds from 2025 onward and current tax/form portal links. | https://www.revenue.nh.gov/taxes-glance/business-taxes | 2026-11-13 |
+| DRA BPT FAQ. Read for historical rate/threshold tables, filing dates, estimates, S corporations, installment sales and NOL rules. | https://www.revenue.nh.gov/resource-center/frequently-asked-questions/business-profits-tax | 2026-11-13 |
+| Current forms catalogue. Read for the Business Taxes entries; the listed forms were 2025, not confirmation of 2026 line numbers. | https://www.revenue.nh.gov/resource-center/current-year-forms-and-instructions | 2026-11-13 |
+| BT-SUMMARY instructions, 2025-2026 filing cycle. Read for the full instructions: separate SMLLCs, both filing tests, separate estimate amounts, seven-month filing extension, all summary steps and calendar 2026 interest. Its Step 2 prose prints 0.055% for BET; RSA 77-E:2 and BET line 5 establish 0.55%, which controls here. | https://www.revenue.nh.gov/sites/g/files/ehbemt736/files/documents/bt-summary-instructions-2025.pdf | 2026-11-13 |
+| BET instructions, 2025-2026 filing cycle. Read for the full instructions: component definitions, partner compensation, lines 1-7 and summary flow. | https://www.revenue.nh.gov/sites/g/files/ehbemt736/files/documents/bet-instructions-2025.pdf | 2026-11-13 |
+| NH-1040 instructions, 2025-2026 filing cycle. Read for lines 1-14 and general instructions: spousal/SMLLC separation, IRC differences, depreciation, compensation, taxes, interest, NOL and credit flow. | https://www.revenue.nh.gov/sites/g/files/ehbemt736/files/documents/nh-1040-instructions-2025.pdf | 2026-11-13 |
+
+DRA HTML and PDF sources were retrieved with basic Firecrawl after direct and ordinary browser reads were blocked; no stealth, CAPTCHA or TLS bypass was used.
+
+Not yet confirmed: final 2026 form lines and portal field labels; full NH-adopted section 172 percentage-limit computation for a particular NOL; detailed section 179 phaseout; current BET-CW credit ordering/FIFO and all statutory group schedules; the old claim that a greater-than-50% IRC 1563 ownership test and a generic Finnigan label determine every group; historical BPT/BET rates before the periods shown by the read sources (including old 8.5%, 0.75% and 0.675% assertions); the old suggestion to automatically close below-threshold accounts; the legacy session-law/enactment-date claims (including 1970 BPT, 1993 BET and the old NOL amendment history); the old categorical claim that no separate PTET election exists or is ever needed; the old federal Schedule C/BPT/BET deduction, SALT-cap, QBI, SE and retirement claims, which must be resolved in their federal owners; legacy out-of-scope RETT 1.5%, meals/rentals 8.5% and communications 7% computations, and estate/inheritance assertions. These items are not usable tax instructions in this skill. No accountant has approved it.
