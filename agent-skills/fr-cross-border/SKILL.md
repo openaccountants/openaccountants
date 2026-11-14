@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/fr-cross-border"
   jurisdiction: "FR"
   tax_year: "2026"
-  last_updated: "2026-11-01"
+  last_updated: "2026-11-14"
 ---
 
-# France: cross-border individuals (non-residents, impatriates, treaty relief) v0.4
+# France: cross-border individuals (non-residents, impatriates, treaty relief) v0.5
 
 > **General reference only.** This skill is general tax reference material for AI-assisted work. It has not been reviewed for any person's facts. Do not file, pay or take a tax position on it without review by a qualified professional in France.
 
@@ -69,7 +69,7 @@ One test is enough. A treaty overrides them: a person who meets a French test bu
 | CSG on other patrimony income, including furnished letting income (CSS art. L136-8, I, 2°) | 10.6% | Income of 2025 onward (patrimony contribution, art. L136-6); payments from 1 Jan 2026 (investment income taxed at source, art. L136-7) | https://www.legifrance.gouv.fr/jorf/article_jo/JORFARTI000053226452 |
 | CRDS | 0.5% | 2026 | https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000190291 |
 | Solidarity levy (prélèvement de solidarité, CGI art. 235 ter) | 7.5% | 2026 | https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000037949145 |
-| Total social levies: unfurnished rents and property gains / other patrimony income | 17.2% / 18.6% | 2026 | Sum of the three rows above |
+| Total social levies: unfurnished rents and property gains / other patrimony income | 17.2% / 18.6% | 2026 | Sum of the three rows above; https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000054336623 ; https://www.legifrance.gouv.fr/jorf/article_jo/JORFARTI000053226452 ; https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000190291 ; https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000037949145 |
 | Holding-period allowance on property gains for the social levies | 1.65% a year from year 6 to 21; 1.60% for year 22; 9% a year from year 23 (exempt after 30 years) | 2026 | https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000053584839 |
 | Person covered for health by a scheme under Regulation 883/2004 (EU, EEA, Switzerland) and not by a French scheme | 7.5% only (no CSG or CRDS) | 2026 | https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000051218166 |
 | Late filing surcharge (art. 1728) | 10%; 40% after formal notice; 80% for hidden activity | 2026 | https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000053546784 |
@@ -299,4 +299,4 @@ Historical source limit: impots.gouv.fr and BOFiP were unavailable to the earlie
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-01. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `fr-cross-border` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/fr-cross-border. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `fr-cross-border` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/fr-cross-border. If neither is available, confirm every figure against the official source pages cited above before relying on it.

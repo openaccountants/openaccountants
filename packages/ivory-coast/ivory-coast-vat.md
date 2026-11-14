@@ -2,17 +2,18 @@
 name: ivory-coast-vat
 description: >
   Use this skill to prepare, review or explain a Côte d'Ivoire (Ivory Coast) VAT or TVA return for 2026. It covers who must charge VAT by regime, the 18% and 9% rates, exemptions and the 2026 changes for factoring and animal feed, the taxable base and when VAT falls due, mobile money deductibility, refunds of credits, monthly deadlines by taxpayer type, non-resident digital platforms and supplier classification on bank statements. Trigger on "TVA Côte d'Ivoire", "DGI return", "e-impots", "VAT Ivory Coast", "FNE", "crédit de TVA". ALWAYS read it before handling Ivory Coast VAT work. It is for businesses, accountants and foreign platforms selling into the country.
-version: 2.1
+version: 2.2
 jurisdiction: CI
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: vat-gst
+type: situation-rules
 ---
 
-# Ivory Coast VAT v2.1
+# Ivory Coast VAT v2.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it without checking the cited official source or a licensed professional.
 

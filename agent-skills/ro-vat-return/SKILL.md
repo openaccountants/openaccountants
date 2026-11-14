@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/ro-vat-return"
   jurisdiction: "RO"
   tax_year: "2026"
-  last_updated: "2026-10-31"
+  last_updated: "2026-11-14"
 ---
 
 # Romania VAT (TVA): rates, registration, D300, D394 and RO e-TVA (2026)
@@ -227,19 +227,19 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Fiscal Code, Legea 227/2015, Title VII (art. 265 to 334), with the HG 1/2016 methodological norms (pt. 103) printed in the same page, ANAF consolidated text last updated by Legea 170/2026 | https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm | 2026-10-23 |
-| Fiscal Procedure Code, Legea 207/2015 (art. 75, 77, 174, 176, 181, 336, 337), ANAF consolidated text last updated by Legea 170/2026 | https://static.anaf.ro/static/10/Anaf/cod_procedura/Cod_Procedura_Fiscala_2023.htm | 2026-10-23 |
-| Legea 141/2025, art. II pt. 42 (art. 291 rates), art. III (9% transitional rate), art. VII(1) (in force 1 August 2025), ANAF copy | https://static.anaf.ro/static/10/Anaf/legislatie/L_141_2025.pdf | 2026-10-23 |
-| OUG 8/2026 (cash accounting ceiling), ANAF copy | https://static.anaf.ro/static/10/Anaf/legislatie/OUG_8_2026.pdf | 2026-10-23 |
-| OUG 89/2025, art. X (RO e-Factura 5 working days, non-established VAT-registered customers), art. XII to XIV (RO e-TVA changes from 1 January 2026), ANAF copy | https://static.anaf.ro/static/10/Anaf/legislatie/OUG_89_2025.pdf | 2026-10-23 |
-| OUG 70/2024 (RO e-TVA), original text, ANAF copy | https://static.anaf.ro/static/10/Anaf/legislatie/OUG_70_2024.pdf | 2026-10-23 |
-| OUG 87/2024, art. III (RO e-TVA timing, 20% and 5,000 lei threshold, compliance notice), ANAF copy | https://static.anaf.ro/static/10/Anaf/legislatie/OUG_87_2024.pdf | 2026-10-23 |
-| OPANAF 174/2026, D300 form, rows and deadlines, ANAF copy | https://static.anaf.ro/static/10/Anaf/legislatie/OPANAF_174_2026.pdf | 2026-10-23 |
-| ANAF, D300 form page (OPANAF 174/2026 from the January 2026 period) | https://static.anaf.ro/static/10/Anaf/Declaratii_R/300.html | 2026-10-23 |
-| OPANAF 77/2022 amending OPANAF 3769/2015, D394 deadline, ANAF copy | https://static.anaf.ro/static/10/Anaf/legislatie/OPANAF_77_2022.pdf | 2026-10-23 |
-| ANAF, D394 form page | https://static.anaf.ro/static/10/Anaf/Declaratii_R/394.html | 2026-10-23 |
-| OPANAF 705/2020, D390 VIES form and deadline, ANAF copy | https://static.anaf.ro/static/10/Anaf/legislatie/OPANAF_705_2020.pdf | 2026-10-23 |
-| OUG 115/2023, art. LXVIII pt. 15 (OUG 120/2021 art. 13^2, 15% fine), ANAF copy | https://static.anaf.ro/static/10/Anaf/legislatie/OUG_115_2023.pdf | 2026-10-23 |
+| Fiscal Code, Legea 227/2015, Title VII (art. 265 to 334), with the HG 1/2016 methodological norms (pt. 103) printed in the same page, ANAF consolidated text last updated by Legea 170/2026 | https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm | 2026-11-14, read for art. 291, 310, 316 and 323: rates, cash accounting, registration and the return |
+| Fiscal Procedure Code, Legea 207/2015 (art. 75, 77, 174, 176, 181, 336, 337), ANAF consolidated text last updated by Legea 170/2026 | https://static.anaf.ro/static/10/Anaf/cod_procedura/Cod_Procedura_Fiscala_2023.htm | 2026-11-14, read for art. 75, 77, 174, 176, 181, 336 and 337: deadlines, interest and fines |
+| Legea 141/2025, art. II pt. 42 (art. 291 rates), art. III (9% transitional rate), art. VII(1) (in force 1 August 2025), ANAF copy | https://static.anaf.ro/static/10/Anaf/legislatie/L_141_2025.pdf | 2026-11-14, read for art. II pt. 42 and art. III: 21%, 11% and the 9% transitional rate |
+| OUG 8/2026 (cash accounting ceiling), ANAF copy | https://static.anaf.ro/static/10/Anaf/legislatie/OUG_8_2026.pdf | 2026-11-14, read for the cash accounting ceilings: RON 5,000,000 from 1 March 2026 |
+| OUG 89/2025, art. X (RO e-Factura 5 working days, non-established VAT-registered customers), art. XII to XIV (RO e-TVA changes from 1 January 2026), ANAF copy | https://static.anaf.ro/static/10/Anaf/legislatie/OUG_89_2025.pdf | 2026-11-14, read for art. X and XII to XIV: e-Factura 5 working days and RO e-TVA |
+| OUG 70/2024 (RO e-TVA), original text, ANAF copy | https://static.anaf.ro/static/10/Anaf/legislatie/OUG_70_2024.pdf | 2026-11-14, read for the original RO e-TVA rules |
+| OUG 87/2024, art. III (RO e-TVA timing, 20% and 5,000 lei threshold, compliance notice), ANAF copy | https://static.anaf.ro/static/10/Anaf/legislatie/OUG_87_2024.pdf | 2026-11-14, read for art. III: the 20% and RON 5,000 RO e-TVA thresholds |
+| OPANAF 174/2026, D300 form, rows and deadlines, ANAF copy | https://static.anaf.ro/static/10/Anaf/legislatie/OPANAF_174_2026.pdf | 2026-11-14, read for the D300 rows and deadlines |
+| ANAF, D300 form page (OPANAF 174/2026 from the January 2026 period) | https://static.anaf.ro/static/10/Anaf/Declaratii_R/300.html | 2026-11-14, read for the D300 versions in use from January 2026 |
+| OPANAF 77/2022 amending OPANAF 3769/2015, D394 deadline, ANAF copy | https://static.anaf.ro/static/10/Anaf/legislatie/OPANAF_77_2022.pdf | 2026-11-14, read for the D394 deadline |
+| ANAF, D394 form page | https://static.anaf.ro/static/10/Anaf/Declaratii_R/394.html | 2026-11-14, read for the D394 versions in use |
+| OPANAF 705/2020, D390 VIES form and deadline, ANAF copy | https://static.anaf.ro/static/10/Anaf/legislatie/OPANAF_705_2020.pdf | 2026-11-14, read for the D390 VIES form and deadline |
+| OUG 115/2023, art. LXVIII pt. 15 (OUG 120/2021 art. 13^2, 15% fine), ANAF copy | https://static.anaf.ro/static/10/Anaf/legislatie/OUG_115_2023.pdf | 2026-11-14, read for art. LXVIII pt. 15: the 15% e-Factura fine |
 
 Not yet confirmed: legislatie.just.ro did not load on 2026-10-23, so OUG 70/2024 and OUG 120/2021 were read as their original texts plus the amending acts listed, not as consolidated texts; an amendment made after OUG 89/2025 would not show here. When the 25th falls on a weekend or public holiday, Procedure Code art. 75 sends the computation to the Civil Procedure Code, which was not read for this skill, so the roll-over to the next working day is not stated here; Example 1 uses a period whose deadline is a working day. The cash accounting ceiling for 1 January to 28 February 2026, before OUG 8/2026 took effect, was not checked.
 
@@ -247,4 +247,4 @@ Not yet confirmed: legislatie.just.ro did not load on 2026-10-23, so OUG 70/2024
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-31. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ro-vat-return` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ro-vat-return. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ro-vat-return` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ro-vat-return. If neither is available, confirm every figure against the official source pages cited above before relying on it.

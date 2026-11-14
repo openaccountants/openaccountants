@@ -1,19 +1,20 @@
 ---
 name: ls-cross-border
 description: "Lesotho cross-border income tax for the 2026-27 year of assessment (1 April 2026 to 31 March 2027) under Part X (International Taxation) of the Income Tax Act 1993 as amended. Covers residence of individuals (normal place of abode, more than 182 days, officials posted abroad) and companies (incorporation, management and control, majority of operations), the domestic branch definition, Lesotho-source income rules (s.103), 25% final withholding on dividends, interest, royalties, natural resource payments and management charges to non-residents, 15% for concessional manufacturing, 10% on non-resident services contracts, the election to be assessed at 40%, the s.110 statement before paying a non-resident, branch profits tax on repatriated income, the foreign tax credit, the foreign employment exemption, tax havens and treaties, with the South Africa treaty as the worked case. Trigger on: Lesotho non-resident tax, Lesotho withholding tax non-resident, branch profits tax Lesotho, Lesotho tax residence, foreign tax credit Lesotho, Lesotho double tax treaty. Out of scope: full treaty-rate tables, VAT on imported services, Lesotho Highlands Water Project Protocol V."
-version: 0.1
+version: 0.2
 jurisdiction: LS
 category: cross-border
 tax_year: 2026
 tax_year_notes: "2026-27"
-last_updated: 2026-11-02
+last_updated: 2026-11-14
 depends_on:
   - ls-corporate-income-tax
 tier: 2
 domain: cross-border
+type: situation-rules
 ---
 
-# Lesotho cross-border: residence, source, withholding on non-residents, branch profits and foreign tax credit (2026-27) v0.1
+# Lesotho cross-border: residence, source, withholding on non-residents, branch profits and foreign tax credit (2026-27) v0.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 

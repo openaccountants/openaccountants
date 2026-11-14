@@ -1,17 +1,18 @@
 ---
 name: kw-payroll-social
 description: "Payroll intake and social contribution verification in Kuwait for tax year 2026. Covers the income-tax exemption for a natural person's own work, the exception for income representing a corporate body's share, and the evidence needed before payroll can be calculated. Use for Kuwait salary tax, PIFSS contributions, insured salary, employer cost, GCC insurance extension and end-of-service indemnity questions. Contribution rates, ceilings, remittance dates, nationality coverage and indemnity formulas are held as unverified source gaps. Worked cases separate the verified income-tax component from contribution amounts supplied in an employer's records. This Guide does not authorise a payroll run without those missing checks."
-version: 0.3
+version: 0.4
+type: computation
 jurisdiction: KW
 category: international
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
 ---
 
-# Kuwait Payroll and Social Contributions v0.3
+# Kuwait Payroll and Social Contributions v0.4
 
 Tax year 2026.
 
@@ -26,8 +27,6 @@ Employers checking Kuwait payroll. The confirmed income-tax rule covers a natura
 | Item | Figure and conditions | Tax year | Official URL |
 |---|---|---|---|
 | Income tax on a person's own salary | Exempt under art. 8(2), unless the income represents a corporate body's share | 2026 | https://www.mof.gov.kw/Desicions/Decree/PDF/la2-2008.pdf |
-| PIFSS rates, insured salary and due dates | unverified: NON-OPERATIVE HOLD. Do not use the historical rates or ceiling in Sources | 2026 | unverified |
-| Nationality coverage and indemnity | unverified: NON-OPERATIVE HOLD. No zero contribution or gratuity conclusion is authorised | 2026 | unverified |
 
 ## The base
 

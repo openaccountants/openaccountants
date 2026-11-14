@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/germany-income-tax"
   jurisdiction: "DE"
   tax_year: "2026"
-  last_updated: "2026-11-09"
+  last_updated: "2026-11-14"
 ---
 
 # Germany: income tax for the self-employed, from bank statement to tax, tax year 2026
@@ -265,4 +265,4 @@ Not yet confirmed: which states charge 8% and which 9% church tax, and their rou
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-09. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `germany-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/germany-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `germany-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/germany-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

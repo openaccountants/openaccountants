@@ -1,107 +1,98 @@
 ---
 name: senegal-payroll
-description: Use this skill whenever asked about Senegal payroll processing for employed persons. Trigger on phrases like "Senegal payroll", "Sénégal paie", "IRPP Senegal", "retenue à la source Senegal", "TRIMF", "IPRES contribution", "CSS Senegal", "prestations familiales", "CFCE", "IPM health Senegal", "quotient familial Senegal" (Senegal has a reduction, not a quotient), "parts fiscales", "net salary Senegal", "salaire net Sénégal", "PAYE Senegal", "employer social charges Senegal", "SMIG Senegal", "minimum wage Senegal", "form F4 Senegal", "gross to net Senegal", "bulletin de paie", or any question about computing employee pay, income tax withholding, or social contributions for Senegal-based employees. Senegal DOES levy personal income tax (IRPP) on salaries plus a fixed local salary tax (TRIMF). This skill covers progressive IRPP withholding with the family reduction on the tax (CGI art. 174), TRIMF, IPRES pensions, CSS family allowances and work-injury, IPM health cover, the employer payroll tax (CFCE), minimum wage, filing obligations, and penalties. ALWAYS read this skill before processing any Senegal payroll.
-version: 0.2
+description: "Senegal payroll for employees, tax year 2026. Gross to net and employer cost for Senegal-based staff. IRPP salary withholding (30 percent abatement capped at XOF 900,000, the art. 173 scale, the art. 174 family reduction by parts, the 43 percent cap), TRIMF, the 3 percent CFCE employer tax, monthly remittance by the 15th, the January salary statement, penalties. Trigger on Senegal payroll, paie Senegal, retenue a la source, IRPP, TRIMF, CFCE, parts fiscales, bulletin de paie, form F4, gross to net Senegal. IPRES, CSS and IPM contributions are in senegal-social-contributions."
+version: 1.0
 jurisdiction: SN
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 depends_on:
   - payroll-workflow-base
 category: payroll
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
+type: computation
 ---
 
-# Senegal Payroll Skill v0.2 (Tier 2: research-verified, pending accountant sign-off)
+# Senegal Payroll Skill v1.0
 
-## Senegal Payroll Skill v0.2 (Tier 2: research-verified, pending accountant sign-off)
+## Scope
 
-> Senegal is **not** a no-income-tax jurisdiction. Salaries bear progressive personal income tax (IRPP) withheld at source, a separate fixed local salary tax (TRIMF), mandatory social contributions (IPRES, CSS, IPM), and an employer-only payroll tax (CFCE). All five must be handled together.
+Salary withholding and employer payroll tax for employees paid in Senegal, tax year 2026 (calendar year, XOF). It covers:
 
-## Section 1: Quick Reference
+- IRPP withheld at source on pay including benefits in kind and bonuses (CGI arts. 181, 183, 184);
+- TRIMF, the fixed local tax on salaries and pensions (arts. 275 to 282);
+- CFCE, the 3% employer flat contribution (arts. 263 to 269);
+- remittance, the annual salary statement, refunds and penalties.
 
-**Quick Reference**
+Senegal does levy income tax on salaries: never treat it as a no-income-tax country. The social contributions (IPRES pensions, CSS family allowances and work injury, IPM health cover) are owned by [senegal-social-contributions](senegal-social-contributions.md); their rates are not restated here. Out of scope: non-resident treaty questions, specific allowances whose taxability needs a ruling, and filing in the client's name.
 
-| Field | Value |
-| --- | --- |
-| Country | Republic of Senegal (République du Sénégal) |
-| Currency | West African CFA franc: XOF / FCFA only |
-| Standard pay frequency | Monthly (mensuel) |
-| Tax year | Calendar year (1 January to 31 December) |
-| Income tax system | IRPP: progressive bands on the whole income (CGI art. 173), then a family reduction on the tax by parts (art. 174), withheld at source (arts. 181, 183) |
-| Fixed local salary tax | TRIMF (Taxe Représentative de l'Impôt du Minimum Fiscal): CGI arts. 275 to 282 |
-| Tax authority | Direction Générale des Impôts et des Domaines (DGID) |
-| Pension body | IPRES (Institution de Prévoyance Retraite du Sénégal) |
-| Family allowance / work injury body | Caisse de Sécurité Sociale (CSS) |
-| Health body | IPM (Institution de Prévoyance Maladie): employer-level institution |
-| Employer payroll tax | CFCE: Contribution Forfaitaire à la Charge de l'Employeur, 3% of payroll |
-| Monthly remittance | First 15 days of the following month, with the art. 186 declaration (CGI art. 185); quarterly for real simplified and CGU employers. F4 is the practitioner name for the form; the CGI does not use it |
-| Skill version | 0.2 |
+## Ask the client first
 
-## Section 2: Income Tax Withholding (IRPP)
+1. Gross monthly pay in XOF, and whether benefits in kind and bonuses are included.
+2. Family situation: single, married, divorced or widowed; number of dependent children; whether the spouse has taxable income (parts and TRIMF).
+3. Tax residence of the employee (non-residents: at most 1.5 parts; TRIMF only for residents).
+4. The employer's tax regime (real normal, real simplified or CGU) and the monthly withholding total (decides monthly or quarterly remittance).
+5. Whether the employer has a CFCE exemption (new company, 50 new jobs, approved investment, mining or petroleum phase).
 
-The employer withholds IRPP at source when paying gross remuneration, including benefits in kind and bonuses (CGI arts. 181, 183, 184). The bands apply to the whole taxable income, not per part. Parts only set the family reduction taken off the tax (art. 174).
+Without the gross pay, stop: nothing can be computed.
 
-Order of the calculation:
+## The method, step by step
 
-1. Gross pay plus benefits in kind.
-2. Less the 30% abatement, capped at 900,000 a year.
-3. Round down to the thousand and apply the bands (art. 173).
-4. Take the family reduction from the tax (art. 174).
-5. Cap the tax at 43% of taxable income (art. 174).
-6. TRIMF is separate and on top.
+### Rates, bands and thresholds
 
-### 2.1 Professional / employment deduction
+| Item | Figure | Tax year | Source |
+|---|---|---|---|
+| Employment abatement | 30% of gross employment income, capped at XOF 900,000 a year; not for pensions and life annuities (arts. 168 b, 182) | 2026 | https://www.dgid.sn/storage/docs/CGI-2025.pdf |
+| IRPP band 1 | 0% on 0 to 630,000 (art. 173) | 2026 | same |
+| IRPP band 2 | 20% on 630,001 to 1,500,000 | 2026 | same |
+| IRPP band 3 | 30% on 1,500,001 to 4,000,000 | 2026 | same |
+| IRPP band 4 | 35% on 4,000,001 to 8,000,000 | 2026 | same |
+| IRPP band 5 | 37% on 8,000,001 to 13,500,000 | 2026 | same |
+| IRPP band 6 | 40% on 13,500,001 to 50,000,000 | 2026 | same |
+| IRPP band 7 | 43% above 50,000,000 | 2026 | same |
+| Cap on the tax | IRPP may not exceed 43% of taxable income (art. 174) | 2026 | same |
+| Family reduction, 1 part | 0% | 2026 | same |
+| Family reduction, 1.5 parts | 10%, minimum 100,000, maximum 300,000 (art. 174) | 2026 | same |
+| Family reduction, 2 parts | 15%, minimum 200,000, maximum 650,000 | 2026 | same |
+| Family reduction, 2.5 parts | 20%, minimum 300,000, maximum 1,100,000 | 2026 | same |
+| Family reduction, 3 parts | 25%, minimum 400,000, maximum 1,650,000 | 2026 | same |
+| Family reduction, 3.5 parts | 30%, minimum 500,000, maximum 2,030,000 | 2026 | same |
+| Family reduction, 4 parts | 35%, minimum 600,000, maximum 2,490,000 | 2026 | same |
+| Family reduction, 4.5 parts | 40%, minimum 700,000, maximum 2,755,000 | 2026 | same |
+| Family reduction, 5 parts | 45%, minimum 800,000, maximum 3,180,000 | 2026 | same |
+| TRIMF, gross 0 to 599,999 | XOF 900 a year (art. 282) | 2026 | same |
+| TRIMF, gross 600,000 to 999,999 | XOF 3,600 a year | 2026 | same |
+| TRIMF, gross 1,000,000 to 1,999,999 | XOF 4,800 a year | 2026 | same |
+| TRIMF, gross 2,000,000 to 6,999,999 | XOF 12,000 a year | 2026 | same |
+| TRIMF, gross 7,000,000 to 11,999,999 | XOF 18,000 a year | 2026 | same |
+| TRIMF, gross 12,000,000 and over | XOF 36,000 a year | 2026 | same |
+| CFCE | 3% of gross payroll, employer only, no ceiling (arts. 263, 266, 267) | 2026 | same |
+| Remittance | First 15 days of the next month; real simplified and CGU employers quarterly, first 15 days of January, April, July and October (arts. 185, 268) | 2026 | same |
+| Late payment interest | 5% of the unpaid amount, plus 0.5% for each further month or part-month (art. 665) | 2026 | same |
+| General fine | XOF 200,000 for a breach with no specific fine (art. 667) | 2026 | same |
+| Penalty, failure to declare or pay | 25% of the tax (art. 671 I) | 2026 | same |
+| Penalty, tax withheld and not paid over or bad faith | 50% of the tax (art. 671 III) | 2026 | same |
+| Penalty, repeat breach or undeclared activity | 100% of the tax (art. 671 IV) | 2026 | same |
 
-- **Abatement**: 30% of gross employment income, covering compulsory pension contributions and job costs  _(CGI arts. 168 b and 182)_
-- **Annual cap on the abatement**: 900,000 XOF/year (= 75,000 XOF/month)  _(CGI arts. 168 b and 182)_
-- **Application order**: The abatement is applied to gross employment income before the bands. It does not apply to pensions and life annuities.
-- **Social contributions are not a separate deduction**: The abatement stands in for compulsory pension contributions. Art. 168 lists no other deduction for employee social contributions, so IPRES and IPM employee shares are never taken off the IRPP base on top of it.
-- **Other deductions in art. 168**: The 10% or 20% special abatement for State agents in diplomatic posts, taken first; and mileage allowances up to 50,000 XOF a month, or 100,000 XOF for sales representatives doing at least 500 km a week (Arrêté 12911 of 31 July 2013, printed under art. 168).
+The 25% band some French payroll sources show is not in art. 173: the band from 1,500,001 to 4,000,000 is 30%.
 
-### 2.2 Progressive IRPP scale (annual taxable income, XOF)
+### Step 1: IRPP withholding
 
-**Progressive IRPP scale**  _(Source: CGI art. 173. https://www.dgid.sn/storage/docs/CGI-2025.pdf)_
+1. Gross pay plus benefits in kind for the year (or the month times 12).
+2. Less the 30% abatement, capped at XOF 900,000 a year (75,000 a month). The abatement stands in for compulsory pension contributions and job costs: never deduct the employee's IPRES or IPM shares on top of it (arts. 168, 182).
+3. Other art. 168 deductions, taken first where they apply: the 10% or 20% special abatement for State agents in diplomatic posts; mileage allowances up to XOF 50,000 a month, or 100,000 for sales representatives doing at least 500 km a week (Arrete 12911 of 31 July 2013, printed under art. 168).
+4. Round down to the thousand francs and apply the bands to the whole income (art. 173). Cumulative tax at the top of each band: 174,000 at 1,500,000; 924,000 at 4,000,000; 2,324,000 at 8,000,000; 4,359,000 at 13,500,000; 18,959,000 at 50,000,000.
+5. Take the family reduction from the tax: rate for the parts, kept between the minimum and the maximum (art. 174). Income is never divided by parts.
+6. Cap the tax at 43% of taxable income (art. 174).
+7. Monthly withholding: the annual tax divided by 12 (our working method; the articles read give no monthly formula, see Not yet confirmed). Regularise at the last pay of the year.
 
-| Annual taxable income (XOF) | Marginal rate | Cumulative tax at top of band (XOF) |
-| --- | --- | --- |
-| 0 – 630,000 | 0% | 0 |
-| 630,001 – 1,500,000 | 20% | 174,000 |
-| 1,500,001 – 4,000,000 | 30% | 924,000 |
-| 4,000,001 – 8,000,000 | 35% | 2,324,000 |
-| 8,000,001 – 13,500,000 | 37% | 4,359,000 |
-| 13,500,001 – 50,000,000 | 40% | 18,959,000 |
-| 50,000,001 + | 43% | n/a |
+There is no minimum IRPP. The 900 to 36,000 table is TRIMF (art. 282), a separate tax added on top. Never compute IRPP as the higher of the scale tax and that table.
 
-**Cumulative-tax arithmetic check (recomputed):**
-- 630,000 → 0
-- 1,500,000 → 0 + (1,500,000 − 630,000) × 20% = 174,000 ✓
-- 4,000,000 → 174,000 + (4,000,000 − 1,500,000) × 30% = 174,000 + 750,000 = 924,000 ✓
-- 8,000,000 → 924,000 + (8,000,000 − 4,000,000) × 35% = 924,000 + 1,400,000 = 2,324,000 ✓
-- 13,500,000 → 2,324,000 + (13,500,000 − 8,000,000) × 37% = 2,324,000 + 2,035,000 = 4,359,000 ✓
-- 50,000,000 → 4,359,000 + (50,000,000 − 13,500,000) × 40% = 4,359,000 + 14,600,000 = 18,959,000 ✓
-
-The 25% band that some French payroll sources show is not in art. 173. The band from 1,500,001 to 4,000,000 is 30%.
-
-### 2.3 Family reduction (réduction pour charges de famille)
-
-Income is not split into parts. The tax from the bands is reduced by the rate for the employee's parts, within a minimum and a maximum (CGI art. 174).
-
-| Parts | Rate | Minimum (XOF) | Maximum (XOF) |
-| --- | --- | --- | --- |
-| 1 | 0% | 0 | 0 |
-| 1.5 | 10% | 100,000 | 300,000 |
-| 2 | 15% | 200,000 | 650,000 |
-| 2.5 | 20% | 300,000 | 1,100,000 |
-| 3 | 25% | 400,000 | 1,650,000 |
-| 3.5 | 30% | 500,000 | 2,030,000 |
-| 4 | 35% | 600,000 | 2,490,000 |
-| 4.5 | 40% | 700,000 | 2,755,000 |
-| 5 | 45% | 800,000 | 3,180,000 |
+### Step 2: parts
 
 | Situation | Parts |
-| --- | --- |
+|---|---|
 | Single, divorced or widowed, no dependent child | 1 |
 | Married, no dependent child | 1.5 |
 | Single or divorced, 1 dependent child | 1.5 |
@@ -109,226 +100,73 @@ Income is not split into parts. The tax from the bands is reduced by the rate fo
 | Each further dependent child | +0.5 |
 | Only one spouse has taxable income | +0.5 (art. 174.3) |
 
-The maximum is 5 parts in all cases (art. 174.4). Non-residents: maximum 1.5 parts (art. 176). Each child gives a half part to each parent with income (art. 174.2). Single people with no dependent child get 1.5 parts if a child has died, on a 40% war or accident pension, or after adopting (art. 175). A married employee who does not give the employer the spouse's details loses the extra half part (art. 191, point 8).
+Maximum 5 parts in all cases (art. 174.4). Non-residents: maximum 1.5 parts (art. 176). Each child gives a half part to each parent with income (art. 174.2). A single person with no dependent child gets 1.5 parts if a child has died, on a 40% war or accident pension, or after adopting (art. 175). A married employee who does not give the employer the spouse's details loses the extra half part (art. 191, point 8).
 
-### 2.4 No minimum income tax
+### Step 3: TRIMF
 
-The old "MPIT floor" does not exist as a floor on IRPP. Arts. 173 and 174 set no minimum. The 900 to 36,000 table is the TRIMF table of art. 282, a separate tax added on top of IRPP, whatever the IRPP. Never compute IRPP as the higher of the scale tax and that table.
+A fixed annual tax on salaries and pensions, withheld by the employer with the salary withholding (arts. 181, 183.3, 275). Due by anyone resident in Senegal receiving salary or pension (art. 275). Technical assistance staff of a foreign State or international body, and pensioners paid from abroad, are outside it (art. 277); the art. 271 points 1 to 7 exemptions also apply (art. 278), such as blind people and people with a 50% work-accident or war disability.
 
-## Section 3: TRIMF (Taxe Représentative de l'Impôt du Minimum Fiscal)
+- The band is read directly from gross income with benefits, before the abatement (art. 282). Amounts are per year.
+- Spouse: the employee is taxed for himself or herself and for a spouse without income (art. 276). Our reading: charge the band amount twice if the spouse has no income, once if the spouse has income (see Not yet confirmed).
+- The employer regularises at the last payment of the year (art. 281); over-withheld TRIMF is reclaimed before 1 April of the next year.
 
-A separate fixed **annual** tax on salaries and pensions, withheld at source by the employer and paid with the salary withholding (CGI arts. 181, 183.3, 275). It funds local authorities. It is due by anyone resident in Senegal receiving salary or pension (art. 275). Technical assistance staff of a foreign State or international body, and pensioners paid from abroad, are outside it (art. 277). The exemptions in art. 271 points 1 to 7 also apply (art. 278), such as blind people and people with a 50% work-accident or war disability.
+### Step 4: CFCE
 
-**TRIMF annual table (art. 282)**
+3% of all salaries, paid leave, bonuses, allowances and benefits in money or kind; expense reimbursements and family benefits are left out (arts. 266, 267). Employer only (art. 263). There is no expatriate rate: art. 267 sets one rate, and art. 265 reaches pay of people domiciled abroad on the same terms. Exemptions: the State, local authorities, foreign or international public bodies; art. 253 companies; 3 years for 50 new stable jobs; 3 years for new companies outside the large-enterprise service; the approved investment regime; mining and petroleum phases (arts. 263, 264). Paid on the same conditions and dates as salary withholding (art. 268).
 
-| Gross annual income, with benefits (XOF) | TRIMF per year (XOF) |
-| --- | --- |
-| 0 to 599,999 | 900 |
-| 600,000 to 999,999 | 3,600 |
-| 1,000,000 to 1,999,999 | 4,800 |
-| 2,000,000 to 6,999,999 | 12,000 |
-| 7,000,000 to 11,999,999 | 18,000 |
-| 12,000,000 and over | 36,000 |
+### Step 5: social contributions
 
-The band is read directly from gross income, before the abatement. Amounts are per year, not per month.
+Add the employee and employer IPRES, CSS and IPM amounts from [senegal-social-contributions](senegal-social-contributions.md). Net pay = gross less IRPP, TRIMF and the employee social shares. Employer cost = gross plus CFCE and the employer social shares.
 
-**Spouse:** the employee is taxed at the rate for his or her band for himself or herself and for a spouse without income (art. 276). If the spouse has no income, charge the band amount twice. If the spouse has income, charge it once.
+## Boundary and exception table
 
-The employer regularises at the last payment of the year, on the year's salary with benefits (art. 281). Over-withheld TRIMF is reclaimed before 1 April of the next year (art. 281).
+| Situation | Treatment |
+|---|---|
+| Non-resident employee paid by a Senegal employer | Withholding still applies (art. 183); at most 1.5 parts (art. 176); no TRIMF (art. 275); treaty questions to an expert-comptable |
+| Employee leaving Senegal for good | Employer regularises the year's tax and gives a certificate stamped by the tax office, or owes the balance (art. 187) |
+| Employer did not withhold, or too little | Employer pays the missing amount, recovers it from staff, and bears the art. 671 penalty, which cannot be recovered (art. 188) |
+| Pensions and life annuities | No 30% abatement (art. 168 b) |
+| Request for a 6% expatriate CFCE | Refuse: CFCE is 3% (art. 267) |
+| Request for a 1,800,000 abatement cap | Refuse: the cap is 900,000 (art. 182) |
 
-The doubling is our reading of art. 276, which does not say "twice"; see Not yet confirmed.
+### Defaults when a fact is missing
 
-## Section 4: Social Contributions: IPRES (Pensions)
+| Unknown | Default | Why |
+|---|---|---|
+| Family situation or parts | 1 part (single, no dependants) | Highest IRPP; never grant unevidenced parts |
+| Spouse income, for TRIMF | Charge the band amount twice until the spouse's income is evidenced | Art. 276 covers a spouse without income |
+| Residence | Resident only if confirmed; otherwise flag | Non-resident rules differ |
+| Unclassified bank narration | Ask; do not guess | Institutions vary |
 
-Both PwC and CLEISS (the French official social-security liaison body) agree; the CLEISS table is effective 1 January 2026.
+### Bank statement narrations
 
-### 4.1 Régime Général (all employees)
-
-**Régime Général**  _(PwC Tax Summaries: Senegal, Other taxes (https://taxsummaries.pwc.com/senegal/corporate/other-taxes) · CLEISS (https://www.cleiss.fr/docs/cotisations/senegal.html))_
-
-| Party | Rate | Monthly ceiling (XOF) |
-| --- | --- | --- |
-| Employee | 5.6% | 432,000 |
-| Employer | 8.4% | 432,000 |
-| **Total** | **14.0%** | 432,000 |
-
-Check: 5.6% + 8.4% = 14.0% ✓. Annual ceiling ≈ 432,000 × 12 = 5,184,000 XOF.
-
-### 4.2 Régime Complémentaire des Cadres (executives / cadres only)
-
-**Régime Complémentaire des Cadres**  _(PwC Tax Summaries: Senegal, Other taxes (https://taxsummaries.pwc.com/senegal/corporate/other-taxes) · CLEISS (https://www.cleiss.fr/docs/cotisations/senegal.html))_
-
-| Party | Rate | Monthly ceiling (XOF) |
-| --- | --- | --- |
-| Employee | 2.4% | 1,296,000 |
-| Employer | 3.6% | 1,296,000 |
-| **Total** | **6.0%** | 1,296,000 |
-
-Check: 2.4% + 3.6% = 6.0% ✓.
-
-## Section 5: Social Contributions: CSS (Family Allowances + Work Injury): Employer Only
-
-**CSS branches**  _(PwC (https://taxsummaries.pwc.com/senegal/corporate/other-taxes) · CLEISS (https://www.cleiss.fr/docs/cotisations/senegal.html))_
-
-| Branch | Rate | Party | Monthly ceiling (XOF) | Source |
-| --- | --- | --- | --- | --- |
-| Family allowances (prestations familiales) | 7% | Employer only | 63,000 | PwC; CLEISS |
-| Work injury / occupational disease (accidents du travail / maladies professionnelles) | 1%, 3% or 5% (by risk class) | Employer only | 63,000 | PwC; CLEISS |
-
-- **Common ceiling and risk class**: Both CSS branches are capped at the same 63,000 XOF/month base. The work-injury rate depends on the employer's assessed risk class: confirm the specific rate with CSS for the employer in question.  _(PwC; CLEISS)_
-
-## Section 6: Health: IPM (Institution de Prévoyance Maladie)
-
-**IPM contribution details**
-
-| Item | Value | Source |
-| --- | --- | --- |
-| Total contribution (PwC "employment medical coverage") | 6% total, split equally employer/employee (3% / 3%) | PwC |
-| Contribution base | Between 60,000 and 250,000 XOF/month | PwC |
-| Branch rate range (CLEISS) | Between 2% and 7.5% | CLEISS |
-| Ceiling (CLEISS) | 250,000 XOF/month | CLEISS |
-| Practitioner-cited caps | Employer up to ~30,000 XOF/month; employee ~10,000 XOF/month (varies by IPM) | Practitioner guides |
-
-Mandatory employer-sponsored health cover via an IPM.
-
-Check: 3% employer + 3% employee = 6.0% total ✓ (PwC split).
-
-> [RESEARCH GAP: reviewer to confirm] PwC (6% on a 60,000–250,000 base) and CLEISS (2%–7.5%, 250,000 ceiling) describe the same branch differently. The exact rate, base and caps are set by the specific IPM the employer is affiliated to. Confirm the IPM's own rules before computing IPM deductions for a given employer.
-
-Sources: PwC (https://taxsummaries.pwc.com/senegal/corporate/other-taxes) · CLEISS (https://www.cleiss.fr/docs/cotisations/senegal.html).
-
-## Section 7: CFCE (Employer Payroll Tax)
-
-**CFCE details**
-
-| Item | Value | Source |
-| --- | --- | --- |
-| Rate | 3% (art. 267) | CGI |
-| Base | All salaries, paid leave, bonuses, allowances and benefits in money or kind; excludes expense reimbursements and family benefits (art. 266) | CGI |
-| Exemptions | State, local authorities, foreign or international public bodies; art. 253 companies; 3 years for 50 new stable jobs; 3 years for new companies outside the large-enterprise service; approved investment regime; mining and petroleum phases (arts. 263, 264) | CGI |
-| Party | Employer only | CGI art. 263 |
-| Monthly payment deadline | Same conditions and dates as salary withholding (art. 268, so art. 185) | CGI |
-| Annual statement | January, with the art. 191 salary statement (art. 269 extends employer obligations to CFCE) | CGI |
-
-Contribution Forfaitaire à la Charge de l'Employeur: an employer-only payroll tax.
-
-There is no expatriate rate. Art. 267 sets one rate of 3%; art. 265 reaches pay of people domiciled abroad on the same terms.
-
-Source: CGI arts. 263 to 269, https://www.dgid.sn/storage/docs/CGI-2025.pdf.
-
-## Section 8: Conservative Defaults
-
-**Conservative defaults table**
-
-| Unknown | Conservative default | Rationale |
-| --- | --- | --- |
-| Family situation / parts | Treat as **1 part (single, no dependants)** | Highest IRPP: never grant unevidenced parts. Maximum is 5 (art. 174) |
-| Cadre vs non-cadre | Treat as **non-cadre** (Régime Général only) | Do not assume the complementary executive scheme applies without confirmation |
-| Work-injury risk class | Use the **highest cited rate, 5%** | Avoids understating employer cost: confirm actual class with CSS |
-| IPM rate | Flag as **[RESEARCH GAP]**, do not compute a number | Rate is IPM-specific; refuse a definitive figure |
-| Spouse income for TRIMF | Charge the band amount twice until the spouse's income is evidenced | Art. 276: covers a spouse without income |
-| Residency | Treat as **resident** only if confirmed; otherwise flag | Non-resident withholding rules are out of scope here |
-
-When inputs are missing or ambiguous, use these defaults and flag them clearly to the user. Defaults are deliberately cautious (tend to overstate tax/contributions or refuse rather than understate).
-
-Always present payroll outputs as estimated, label every gap, and direct the user to a Senegalese expert-comptable.
-
-### 9.1 Required inputs (refuse to compute net pay without these)
-
-1. Gross monthly remuneration in XOF (and whether benefits in kind / bonuses are included).
-2. Pay period and pay frequency (monthly assumed).
-3. Family situation: single / married; number of dependent children (for parts and TRIMF spouse part).
-4. Whether the employee is a cadre (executive): determines the complementary IPRES scheme.
-5. The employer's CSS work-injury risk class (1%, 3% or 5%).
-6. The employer's IPM affiliation and that IPM's rate/base/caps.
-7. Tax residency status of the employee.
-
-### 9.2 Refusal Catalogue: refuse and explain when:
-
-**Refusal Catalogue**
-
-| Trigger | Refuse because |
-| --- | --- |
-| No gross salary figure given | Cannot compute any withholding or contribution |
-| Family parts asserted but not evidenced | Default to 1 part rather than grant unevidenced relief; maximum is 5 (art. 174) |
-| User asks for an exact IPM deduction | IPM-specific; refuse without the IPM's own schedule |
-| User asks to apply a 6% "expat CFCE" | Art. 267 has one rate; CFCE is 3% |
-| Non-resident employee | Withholding still applies where the employer is in Senegal (art. 183), maximum 1.5 parts (art. 176); TRIMF is due only from residents (art. 275); treaty questions go to an expert-comptable |
-| Request to treat the output as final/filed advice | This is a Tier-2 unverified estimate; require accountant sign-off |
-
-## Section 10: Transaction / Payment Pattern Library (Deterministic)
-
-Deterministic mapping of bank-statement narrations to ledger treatment. Match case-insensitively; XOF amounts only.
-
-### 10.1 Salary credits (employee-side, for reconciliation)
-
-**Salary credits**
-
-| Narration pattern | Classification |
-| --- | --- |
+| Narration | Classification |
+|---|---|
 | `SALAIRE`, `PAIE`, `VIREMENT SALAIRE`, `NET A PAYER` | Net salary payment |
 | `ACOMPTE`, `AVANCE SUR SALAIRE` | Salary advance (recoverable, not income) |
-| `PRIME`, `BONUS`, `GRATIFICATION` | Bonus (taxable; subject to IRPP/TRIMF at source) |
-| `INDEMNITE TRANSPORT`, `INDEMNITE` | Allowance (check taxability per CGI) |
-| `RAPPEL SALAIRE` | Back-pay / arrears |
+| `PRIME`, `BONUS`, `GRATIFICATION` | Bonus, taxable through IRPP and TRIMF at source |
+| `INDEMNITE TRANSPORT`, `INDEMNITE` | Allowance, check taxability (arts. 166, 167) |
+| `RAPPEL SALAIRE` | Back pay |
+| `DGID`, `IMPOTS`, `RETENUE SOURCE`, `IR RETENUE`, `F4` | IRPP and TRIMF withholding paid to the DGID |
+| `CFCE` | Employer flat contribution (3%) |
+| `IPRES`, `RETRAITE`, `CSS`, `PRESTATIONS FAMILIALES`, `ACCIDENT TRAVAIL`, `IPM`, `PREVOYANCE MALADIE` | Social contributions: see [senegal-social-contributions](senegal-social-contributions.md) |
+| `VIREMENT SALAIRES`, `MASSE SALARIALE` | Net wages paid out |
 
-### 10.2 Employer debits (payroll run and remittances)
+Terms: salaire brut (gross), net a payer (net pay), retenue a la source (withholding), bulletin de paie (payslip), parts and reduction pour charges de famille (family reduction on the tax), cadre (executive), masse salariale (wage bill).
 
-**Employer debits**
+### Working paper columns (one row per employee, XOF)
 
-| Narration pattern | Classification |
-| --- | --- |
-| `DGID`, `IMPOTS`, `RETENUE SOURCE`, `IR RETENUE`, `F4` | IRPP + TRIMF withholding remitted to DGID |
-| `CFCE` | Employer payroll tax (3%) to DGID |
-| `IPRES`, `RETRAITE` | IPRES pension contribution (employee + employer) |
-| `CSS`, `SECURITE SOCIALE`, `PRESTATIONS FAMILIALES`, `ACCIDENT TRAVAIL` | CSS family-allowance / work-injury (employer only) |
-| `IPM`, `PREVOYANCE MALADIE` | IPM health contribution (employer + employee) |
-| `VIREMENT SALAIRES`, `PAIE`, `MASSE SALARIALE` | Net wages disbursed to employees |
+Gross; benefits in kind; total gross; abatement `MIN(0.30*gross*12, 900000)/12`; monthly IRPP base; parts; IRPP (bands on base times 12, less the art. 174 reduction, capped at 43%, divided by 12); TRIMF (art. 282 lookup on gross times 12, doubled for a spouse without income, divided by 12); employee social shares (from the social contributions skill); net pay; CFCE `0.03*gross`; employer social shares; total employer cost. Add a row summing IRPP, TRIMF and CFCE for the monthly declaration.
 
-> Narration strings above are the most common Senegalese banking/payroll terms; institutions vary. Treat any unmatched narration as unclassified and ask the user rather than guessing.
+## Worked cases
 
-## Section 11: Worked Examples
+All in XOF, 1 part unless stated. Monthly figures divide the annual tax by 12.
 
-All figures in XOF. IRPP computed on gross less the capped abatement, rounded down to the thousand, 1 part unless stated. Monthly figures divide the annual tax by 12. Employee social contributions are not deducted again (art. 182).
+**Example A, 200,000 a month, single.** Gross 2,400,000; abatement 720,000 (under the cap); base 1,680,000; IRPP 174,000 + 180,000 x 30% = 228,000 a year (19,000 a month). TRIMF 12,000 a year (band 2,000,000 to 6,999,999). CFCE 6,000 a month.
 
-### Example A: Junior employee, 200,000/month, single, non-cadre
+**Example D, low pay of 64,300 a month, single.** Gross 771,600; abatement 231,480; base rounded down to 540,000, inside the 0% band: no IRPP. TRIMF is still due: 3,600 a year (band 600,000 to 999,999). CFCE 1,929 a month.
 
-**Example A steps**
-
-| Step | Computation | Result |
-| --- | --- | --- |
-| Gross annual | 200,000 × 12 | 2,400,000 |
-| Abatement | 30% × 2,400,000 = 720,000 (< 900,000 cap) | 720,000 |
-| IRPP base | 2,400,000 − 720,000 | 1,680,000 |
-| IRPP (1 part) | band 1,500,001–4,000,000 @30%: 174,000 + (1,680,000 − 1,500,000) × 30% = 174,000 + 54,000 | **228,000/yr (19,000/mo)** |
-| IPRES employee (Régime Général) | base 200,000 < 432,000 ceiling → 5.6% × 200,000 | 11,200/mo |
-| IPRES employer | 8.4% × 200,000 | 16,800/mo |
-| CSS family allow. (employer) | 7% × 63,000 (base capped at ceiling) | 4,410/mo |
-| CSS work-injury (employer, default 5%) | 5% × 63,000 | 3,150/mo |
-| CFCE (employer) | 3% × 200,000 | 6,000/mo |
-| TRIMF | Gross 2,400,000 is in the 2,000,000–6,999,999 band | 12,000/yr (1,000/mo) |
-| IPM | Fund-specific; take it from the IPM schedule | flag |
-
-Arithmetic check: 174,000 + 54,000 = 228,000 ✓; 228,000 / 12 = 19,000 ✓.
-
-### Example B: Mid employee, 500,000/month, single, non-cadre
-
-**Example B steps**
-
-| Step | Computation | Result |
-| --- | --- | --- |
-| Gross annual | 500,000 × 12 | 6,000,000 |
-| Abatement | 30% × 6,000,000 = 1,800,000, capped at 900,000 | 900,000 |
-| IRPP base | 6,000,000 − 900,000 | 5,100,000 |
-| IRPP (1 part) | band 4,000,001–8,000,000 @35%: 924,000 + (5,100,000 − 4,000,000) × 35% = 924,000 + 385,000 | **1,309,000/yr (109,083/mo)** |
-| TRIMF | Gross 6,000,000 is in the 2,000,000–6,999,999 band | 12,000/yr (1,000/mo) |
-| IPRES employee | salary 500,000 > 432,000 ceiling → 5.6% × 432,000 | 24,192/mo |
-| IPRES employer | 8.4% × 432,000 | 36,288/mo |
-| CSS family allow. (employer) | 7% × 63,000 | 4,410/mo |
-| CSS work-injury (employer, default 5%) | 5% × 63,000 | 3,150/mo |
-| CFCE (employer) | 3% × 500,000 | 15,000/mo |
-
-Arithmetic check: 924,000 + 385,000 = 1,309,000 ✓; 1,309,000 / 12 = 109,083.33 ✓.
+**Case 1, 500,000 a month, single (Example B).** Gross 6,000,000; abatement 1,800,000 capped at 900,000; base 5,100,000; IRPP 924,000 + 1,100,000 x 35% = 1,309,000 a year, 109,083.33 a month. TRIMF 12,000 a year. CFCE 15,000 a month.
 
 ```oa-check
 name: Payroll example B, 500,000 a month, 1 part
@@ -344,29 +182,15 @@ expected:
   monthly: 109083.33
 ```
 
-### Example C: Cadre, 1,000,000/month, married, 2 children, spouse has income
+**Case 2, a decision: does the spouse's income change the withholding? (Example C).** A cadre on 1,000,000 a month, married, 2 children. Gross 12,000,000; abatement capped at 900,000; base 11,100,000; tax from the bands 2,324,000 + 3,100,000 x 37% = 3,471,000.
 
-**Example C steps**
+- Spouse has income: 2.5 parts, reduction 20% x 3,471,000 = 694,200 (inside 300,000 to 1,100,000); IRPP 2,776,800 a year (231,400 a month); TRIMF 36,000 once.
+- Spouse has no income: 3 parts, reduction 25% x 3,471,000 = 867,750 (inside 400,000 to 1,650,000); IRPP 2,603,250 a year; TRIMF 72,000 (charged for the spouse too, art. 276).
 
-| Step | Computation | Result |
-| --- | --- | --- |
-| Gross annual | 1,000,000 × 12 | 12,000,000 |
-| Abatement | 30% × 12,000,000 = 3,600,000, capped at 900,000 | 900,000 |
-| IRPP base | 12,000,000 − 900,000 | 11,100,000 |
-| Tax from the bands | 2,324,000 + (11,100,000 − 8,000,000) × 37% = 2,324,000 + 1,147,000 | 3,471,000 |
-| Parts | Married with 2 children; spouse has income, so no extra half part | 2.5 |
-| Family reduction | 20% × 3,471,000 = 694,200, between 300,000 and 1,100,000 | 694,200 |
-| IRPP due | 3,471,000 − 694,200; below 43% of 11,100,000 | **2,776,800/yr (231,400/mo)** |
-| TRIMF | Gross 12,000,000 is in the top band; spouse has income, so once | 36,000/yr (3,000/mo) |
-| IPRES general employee | 5.6% × 432,000 (ceiling) | 24,192/mo |
-| IPRES cadre employee | 2.4% × 1,000,000 (< 1,296,000 ceiling) | 24,000/mo |
-| IPRES cadre employer | 3.6% × 1,000,000 | 36,000/mo |
-| CFCE (employer) | 3% × 1,000,000 | 30,000/mo |
-
-If the spouse had no income, parts would be 3: reduction 25% × 3,471,000 = 867,750, IRPP 2,603,250, and TRIMF 72,000 (art. 276).
+The spouse's income is the figure that decides: get it in writing before granting the half part. Both results are below 43% of 11,100,000.
 
 ```oa-check
-name: Payroll example C, 1,000,000 a month, 2.5 parts
+name: Payroll example C, 1,000,000 a month, spouse with and without income
 inputs:
   gross: 12000000
 steps:
@@ -376,218 +200,56 @@ steps:
   - reduction: min(max(bands * 0.20, 300000), 1100000)
   - tax: bands - reduction
   - monthly: tax / 12
+  - reduction_3: min(max(bands * 0.25, 400000), 1650000)
+  - tax_3: bands - reduction_3
 expected:
   tax: 2776800.00
   monthly: 231400.00
+  tax_3: 2603250.00
 ```
 
-### Example D: Minimum-wage employee (SMIG), single, non-cadre
+## When to refuse or refer
 
-**Example D steps**
+| Trigger | Response |
+|---|---|
+| No gross pay | Refuse to compute |
+| Parts claimed without evidence | Default to 1 part; maximum 5 (art. 174) |
+| Request for a 6% expatriate CFCE | Refuse: 3% (art. 267) |
+| Treaty relief for a non-resident | Refer to a Senegal expert-comptable |
+| Exact IPRES, CSS or IPM figures | See the social contributions skill; those rates are not yet confirmed from an official source |
+| Output to be treated as filed advice | Refuse: estimate only, needs sign-off by a Senegal expert-comptable |
 
-| Step | Computation | Result |
-| --- | --- | --- |
-| SMIG hourly | 371 FCFA/hr since 1 July 2023 (CLEISS) | 371/hr |
-| Monthly (173.33 hrs) | 371 × 173.33 ≈ | ~64,300/mo |
-| Gross annual | ~64,300 × 12 | ~771,600 |
-| Abatement | 30% × 771,600 | 231,480 |
-| IRPP base | 771,600 − 231,480 | 540,120 |
-| IRPP (1 part) | Rounded to 540,000 ≤ 630,000 → 0% band | **0 IRPP** |
-| TRIMF | Gross 771,600 is in the 600,000–999,999 band | 3,600/yr (300/mo) |
-| IPRES employee | 5.6% × 64,300 (< 432,000) | 3,601/mo |
-| CFCE (employer) | 3% × 64,300 | 1,929/mo |
+Never divide income by parts; never treat TRIMF as monthly; never apply an IRPP floor; never present a computation as final.
 
-Arithmetic check: 540,000 < 630,000 → 0% ✓. TRIMF is due even though IRPP is nil.
-
-### Example E: Employer total cost-of-employment snapshot (Example B employee)
-
-**Example E cost snapshot**
-
-| Cost component (monthly) | Amount |
-| --- | --- |
-| Gross salary | 500,000 |
-| IPRES employer (8.4% × 432,000) | 36,288 |
-| CSS family allowance (7% × 63,000) | 4,410 |
-| CSS work-injury (5% × 63,000, default) | 3,150 |
-| CFCE (3% × 500,000) | 15,000 |
-| IPM employer | [RESEARCH GAP] |
-| **Total employer cost (excl. IPM)** | **558,848** |
-
-Arithmetic check: 500,000 + 36,288 + 4,410 + 3,150 + 15,000 = 558,848 ✓.
-
-## Section 12: Tier 1 Rules (deterministic, no judgement)
-
-- **1. Tax year**: Tax year is the calendar year.
-- **2. IRPP withholding scope**: IRPP is withheld at source on remuneration including benefits in kind and bonuses.  _(CGI arts. 181, 183)_
-- **3. Abatement rule**: The abatement is 30% of gross employment income, capped at 900,000 XOF/year (75,000/month). It replaces any deduction for compulsory pension contributions.  _(CGI arts. 168, 182)_
-- **4. IPRES Régime Général**: IPRES Régime Général: employee 5.6% + employer 8.4% = 14.0%, monthly ceiling 432,000 XOF.  _(PwC; CLEISS)_
-- **5. IPRES Régime Complémentaire des Cadres**: IPRES Régime Complémentaire des Cadres: employee 2.4% + employer 3.6% = 6.0%, monthly ceiling 1,296,000 XOF.  _(PwC; CLEISS)_
-- **6. CSS family allowances**: CSS family allowances: 7% employer-only, ceiling 63,000 XOF/month.  _(PwC; CLEISS)_
-- **7. CSS work-injury**: CSS work-injury: 1%/3%/5% by risk class, employer-only, ceiling 63,000 XOF/month.  _(PwC; CLEISS)_
-- **8. CFCE rate**: CFCE: 3% of total gross payroll, employer-only.  _(CGI arts. 263, 266, 267)_
-- **9. Remittance deadline**: Withholding (IRPP + TRIMF + CFCE) is paid in the first 15 days of the following month. Real simplified and CGU employers, and employers with monthly withholding of at most 20,000, pay in the first 15 days of January, April, July and October.  _(CGI arts. 185, 268)_
-- **10. TRIMF rule**: TRIMF: 900 to 36,000 XOF a year by gross income, added to IRPP, doubled for a spouse without income.  _(CGI arts. 276, 282)_
-
-## Section 13: Tier 2 Catalogue (requires reviewer judgement)
-
-1. The specific IPM's rate, base and caps for a given employer. [RESEARCH GAP]
-2. The employer's CSS work-injury risk class (1%/3%/5%).
-3. Current official SMIG/SMAG decree figures. [RESEARCH GAP]
-4. Taxability of specific allowances and benefits in kind under the CGI (arts. 166, 167).
-5. Evidence for each part claimed, including spouse income.
-
-## Section 14: Excel Working Paper Template
-
-Suggested columns for a monthly payroll working paper (one row per employee). All amounts XOF.
-
-**Working paper columns**
-
-| Col | Header | Formula / source |
-| --- | --- | --- |
-| A | Employee name / matricule | input |
-| B | Gross monthly remuneration | input |
-| C | Benefits in kind | input |
-| D | Total gross (B + C) | `=B+C` |
-| E | Abatement | `=MIN(0.30*D*12,900000)/12` (annual cap) |
-| F | Monthly IRPP base | `=D-E` (no further deduction for social contributions) |
-| G | Parts | input (default 1) |
-| H | IRPP ÷ 12 | bands on `F*12`, less art. 174 reduction for G, capped at 43% |
-| I | TRIMF | art. 282 lookup on `D*12`, doubled for a spouse without income, ÷ 12 |
-| J | IPRES employee (5.6%, base MIN(D,432000)) | `=0.056*MIN(D,432000)` |
-| K | IPRES cadre employee (2.4%, base MIN(D,1296000)) | `=0.024*MIN(D,1296000)` if cadre |
-| L | IPM employee | [RESEARCH GAP] |
-| M | Net pay | `=D-H-I-J-K-L` |
-| N | IPRES employer (8.4%) | `=0.084*MIN(D,432000)` |
-| O | CSS family (7%, base MIN(D,63000)) | `=0.07*MIN(D,63000)` |
-| P | CSS work-injury (rate × MIN(D,63000)) | `=rate*MIN(D,63000)` |
-| Q | CFCE (3%) | `=0.03*D` |
-| R | IPM employer | [RESEARCH GAP] |
-| S | Total employer cost | `=D+N+O+P+Q+R` |
-
-Add a reconciliation row summing columns H, I (DGID remittance), J+N (IPRES), O+P (CSS), Q (CFCE) for the F4 / monthly declaration.
-
-## Section 15: Bank Statement / Terminology Reading Guide
-
-**Terminology guide**
-
-| French / Wolof-influenced term | English meaning |
-| --- | --- |
-| `Salaire brut` | Gross salary |
-| `Salaire net` / `Net à payer` | Net pay |
-| `Retenue à la source` | Withholding at source (IRPP + TRIMF) |
-| `Bulletin de paie` | Payslip |
-| `Parts` / `Réduction pour charges de famille` | Parts / family reduction on the tax |
-| `Cadre` | Executive / managerial employee |
-| `Cotisations sociales` | Social contributions |
-| `Prestations familiales` | Family allowances (CSS) |
-| `Accident du travail` | Work injury (CSS) |
-| `Acompte` / `Avance` | Advance on salary |
-| `Indemnité` | Allowance / indemnity |
-| `Masse salariale` | Total payroll / wage bill |
-| `DGID` | Tax authority |
-| `IPRES` / `CSS` / `IPM` | Pension / social security / health bodies |
-
-## Section 16: Onboarding Fallback
-
-When onboarding a new Senegal payroll client and information is incomplete:
-
-1. Request the latest bulletins de paie and the employer's IPRES, CSS and IPM affiliation numbers.
-2. Confirm each employee's family situation (for parts and TRIMF spouse part) and cadre status.
-3. Obtain the employer's CSS work-injury risk class in writing from CSS.
-4. Obtain the IPM's contribution schedule (rate, base, caps).
-5. Until confirmed, apply the Conservative Defaults (Section 8) and label every output as an estimate with flagged [RESEARCH GAP] items.
-6. Do not file or finalise any return: produce a working paper for the expert-comptable to review and sign off.
-
-## Section 17: Filing, Remittance and Forms
-
-**Filing and remittance schedule**
+## Filing and payment
 
 | Item | Detail | Source |
-| --- | --- | --- |
-| Tax year | Calendar year | CGI |
-| Employer withholding (IRPP + TRIMF + CFCE) | First 15 days of the following month, with the art. 186 declaration (form **F4** in practice); quarterly as in rule 9 | CGI arts. 185, 186, 268 |
-| Annual salary statement | During January, Etat 1024; one more month on request for firms with 300+ staff or several sites | CGI art. 191; https://www.dgid.sn/storage/docs/calendrier-declarations-annuelles.pdf |
+|---|---|---|
+| Monthly withholding (IRPP, TRIMF, CFCE) | First 15 days of the next month, with the art. 186 declaration (called form F4 in practice; the CGI does not use the name); quarterly for real simplified and CGU employers | CGI arts. 185, 186, 268 |
+| Annual salary statement | During January, Etat 1024 and annexes; one more month on request for firms with 300 or more staff or several sites | CGI art. 191; DGID calendar of annual filings |
 | December withholding | Paid within the time for the art. 191 statement | CGI art. 186 |
-| Individual annual income tax return | Before 1 May. Compulsory for an employee with several employers, or with non-salary income not taxed finally, or where withholding was omitted (arts. 60, 196). Otherwise only on request (art. 197) | CGI |
+| Employee's own annual return | Before 1 May; compulsory for an employee with several employers, with non-salary income not taxed finally, or where withholding was omitted (arts. 60, 196); otherwise only on request (art. 197) | CGI |
 | Refund of over-withheld IRPP | Claim before 1 April of the next year | CGI art. 187 |
-| Employee leaving Senegal for good | Employer regularises the tax during the year and gives a certificate stamped by the tax office, or owes the balance | CGI art. 187 |
 | Pay records | Keep to the end of the 11th following year | CGI art. 184 |
 
-Source: https://www.dgid.sn/storage/docs/CGI-2025.pdf.
+Penalties: see the rates table (arts. 665, 667, 671); a repeat offence doubles fines and penalties (art. 671 VII).
 
-## Section 18: Penalties and Interest
+## Completion checklist
 
-**Penalties and interest table**  _(CGI, https://www.dgid.sn/storage/docs/CGI-2025.pdf)_
-
-| Trigger | Penalty / interest | Source |
-| --- | --- | --- |
-| Any breach with no specific fine, including a late return | 200,000 XOF; per document where documents are missing | Art. 667 |
-| Spontaneous late payment of withholding | 5% interest on the amount due, plus 0.5% per further month or part-month | Arts. 189, 665 |
-| Failure to declare or pay | 25% of the tax | Art. 671 I |
-| Tax withheld and not paid over, bad faith, or assessment ex officio | 50% of the tax | Art. 671 III |
-| Repeat breach or undeclared activity | 100% of the tax | Art. 671 IV |
-| Repeat offence | Fines and penalties are doubled | Art. 671 VII |
-| Employer did not withhold, or too little | Pays the missing amount personally, recovers it from staff, and bears the art. 671 penalty, which cannot be recovered | Art. 188 |
-
-## Section 19: Minimum Wage (SMIG / SMAG)
-
-**SMIG / SMAG table**
-
-| Item | Value | Source |
-| --- | --- | --- |
-| SMIG (non-agricultural) | 371 FCFA gross/hour since 1 July 2023 (40-hour legal week) ≈ 64,300 FCFA/month at 173.33 hrs | CLEISS, 2026 table [decree not read] |
-| SMAG (agricultural) | 237 FCFA gross/hour since 1 July 2023 | CLEISS, 2026 table [decree not read] |
-
-An older figure of 52,500 FCFA/month (303.49 FCFA/hour) is widely repeated but predates the 2023 increase. Use 371 FCFA/hour.
-
-## Section 20: Reference Material and Test Suite
-
-### 20.1 Reference anchors
-
-- PwC Tax Summaries: Senegal (individual + corporate). https://taxsummaries.pwc.com/senegal
-- CLEISS: Senegal social-security contributions, effective 01/01/2026. https://www.cleiss.fr/docs/cotisations/senegal.html
-- DGID: impotsetdomaines.gouv.sn (CFCE page, IR simulator).
-- CGI (Code Général des Impôts), official PDF via eRegulations. https://senegal.eregulations.org/media/t-code-general-impots[1].pdf
-- Sénégal Services: CFCE démarche. https://senegalservices.sn
-
-### 20.2 Test Suite (recompute each before relying on the skill)
-
-- **IRPP cumulative @4,000,000**: 924,000. Check: 174,000 + (4,000,000 − 1,500,000) × 30% = 174,000 + 750,000 = 924,000. ✓
-- **IRPP cumulative @8,000,000**: 2,324,000. Check: 924,000 + 4,000,000 × 35% = 2,324,000. ✓
-- **IRPP cumulative @13,500,000**: 4,359,000. Check: 2,324,000 + 5,500,000 × 37% = 4,359,000. ✓
-- **IRPP cumulative @50,000,000**: 18,959,000. Check: 4,359,000 + 36,500,000 × 40% = 18,959,000. ✓
-- **IPRES Régime Général total**: 14.0%. Check: 5.6 + 8.4. ✓
-- **IPRES Cadres total**: 6.0%. Check: 2.4 + 3.6. ✓
-- **Example A IRPP**: 228,000/yr (19,000/mo) on base 1,680,000. Check: 174,000 + 180,000 × 30% = 228,000. ✓
-- **Example B IRPP**: 1,309,000/yr on base 5,100,000. Check: 924,000 + 1,100,000 × 35% = 1,309,000. ✓
-- **Example C IRPP**: 2,776,800/yr, 2.5 parts. Check: 3,471,000 − 20% × 3,471,000 = 2,776,800. ✓
-- **Example D**: base 540,000 ≤ 630,000 → 0% IRPP; TRIMF 3,600. ✓
-- **Example E employer cost (excl. IPM)**: 558,848. Check: 500,000 + 36,288 + 4,410 + 3,150 + 15,000. ✓
-- **IPRES employee cap @500,000 salary**: 24,192/mo. Check: 5.6% × 432,000 (ceiling). ✓
-
-## PROHIBITIONS
-
-- **No no-income-tax treatment**: NEVER treat Senegal as a no-income-tax jurisdiction: IRPP and TRIMF both apply to salaries.
-- **Family parts default**: NEVER grant family parts that are not evidenced; default to 1 part. NEVER divide income by parts: art. 174 is a reduction on the tax.
-- **Abatement cap**: NEVER use a 1,800,000 cap; art. 182 says 900,000. NEVER deduct employee social contributions on top of the abatement.
-- **No IRPP floor**: NEVER apply an MPIT floor to IRPP; the table is TRIMF, added on top.
-- **TRIMF table**: NEVER treat TRIMF as monthly; art. 282 gives annual amounts.
-- **Expatriate CFCE ban**: NEVER apply a 6% "expatriate CFCE"; CFCE is 3% (art. 267).
-- **Ceiling application requirement**: NEVER compute IPRES, CSS or IPM without applying the correct monthly ceiling (432,000 / 1,296,000 / 63,000 / 250,000).
-- **Employer-only branches inclusion**: NEVER forget the employer-only CFCE (3%) and CSS branches in the total cost of employment.
-- **IPM deduction schedule requirement**: NEVER compute a definitive IPM deduction without the specific IPM's schedule.
-- **Remittance deadline**: NEVER miss the art. 185 deadline: penalties and interest apply.
-- **Non-definitive presentation requirement**: NEVER present payroll computations as definitive: always label as estimated, flag every [RESEARCH GAP], and direct to a Senegalese expert-comptable.
+- Gross, benefits and parts evidenced; spouse income known.
+- Abatement capped at 900,000; no extra social deduction.
+- Bands, reduction, 43% cap applied; TRIMF added on top.
+- CFCE at 3% unless an exemption is documented.
+- Social contributions added from the social contributions skill.
+- Remittance date set (monthly or quarterly); January statement diarised.
+- Output labelled as an estimate for review.
 
 ## Sources
 
 | Source | URL | Read on |
 |---|---|---|
-| Code general des impots, edition January 2025 (DGID): arts. 60, 165 to 199, 263 to 269, 275 to 282, 665 to 671 read in the PDF text | https://www.dgid.sn/storage/docs/CGI-2025.pdf | 2026-11-01 |
-| CLEISS, Senegal contributions at 1 January 2026: table and notes read | https://www.cleiss.fr/docs/cotisations/senegal.html | 2026-11-01 |
+| Code general des impots, edition January 2025 (DGID): read arts. 60, 165 to 199 (abatement, scale, parts, withholding, remittance), 263 to 269 (CFCE), 275 to 282 (TRIMF table) and 665 to 671 (interest and penalties) in the PDF text | https://www.dgid.sn/storage/docs/CGI-2025.pdf | 2026-11-14 |
+| DGID calendar of annual filings: read the salary statement (Etat 1024, art. 191) entry | https://www.dgid.sn/storage/docs/calendrier-declarations-annuelles.pdf | 2026-11-14 |
+| DGID, Lois et reglements: read the rates table (income tax scale, CFCE 3%) for 2026 | https://www.dgid.sn/loi-reglement | 2026-11-14 |
 
-Not yet confirmed: whether art. 276 means the TRIMF band amount is charged twice for a spouse without income (the article says the employee is taxed "pour lui-même et son conjoint ne disposant pas de revenus" and a Senegal accountant must confirm); IPRES, CSS and IPM rates rest on CLEISS and PwC, because ipres.sn and secusociale.sn did not open; SMIG and SMAG decrees not read; dividing the annual tax by 12 is our working method for monthly withholding, the articles read give no monthly formula; the text of Loi 2025-17 was not opened; the cadre base (old text charges 6% on pay up to 1,296,000, while CLEISS says the base lies between 432,000 and 1,296,000).
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. This is a **Tier-2, research-verified draft pending sign-off by a licensed Senegalese accountant (expert-comptable)**; several figures are flagged [RESEARCH GAP: reviewer to confirm] and must be checked against the Code Général des Impôts and current decrees. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional before implementation.
+Not yet confirmed: whether art. 276 means the TRIMF band amount is charged twice for a spouse without income (the article says the employee is taxed "pour lui-meme et son conjoint ne disposant pas de revenus"; a Senegal accountant must confirm); dividing the annual tax by 12 is our working method for monthly withholding, the articles read give no monthly formula; SMIG of XOF 371 an hour and SMAG of XOF 237 an hour since 1 July 2023 (the decrees were not read and the only source seen was a foreign liaison body); the text of Loi 2025-17 was not opened. IPRES, CSS and IPM rates are listed in the social contributions skill.

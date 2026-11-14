@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/ge-cross-border"
   jurisdiction: "GE"
   tax_year: "2026"
-  last_updated: "2026-10-31"
+  last_updated: "2026-11-14"
 ---
 
 # Georgia cross-border tax, 2026
@@ -30,22 +30,22 @@ Profit tax is covered in ge-corporate-income-tax. Transfer pricing, including th
 | Item | Rate or amount | Year | Source URL |
 |---|---|---|---|
 | Residence test for individuals | 183 days or more in any continuous 12 calendar months ending in the tax year | 2026 | Tax Code art. 34(2), https://matsne.gov.ge/en/document/view/1043717?publication=247 |
-| Permanent establishment through management by another person | over 3 months | 2026 | art. 29(4), same URL |
-| Dividends paid to a non-resident | 5% at source | 2026 | arts. 130(1), 134(1)(a), same URL |
-| Dividends from profit of banks, credit unions, microfinance organisations and loan providers earned in 2023 or later | not taxed at source | 2026 | art. 130(8), same URL |
-| Interest paid to a non-resident without a PE | 5% at source | 2026 | arts. 131(1), 134(1)(b), same URL |
-| Interest from a Georgian licensed financial institution | not taxed at source | 2026 | art. 131(5), same URL |
-| Interest on debt securities of a Georgian enterprise listed on a recognised foreign exchange | not taxed at source | 2026 | art. 131(8), same URL |
-| Royalties paid to a non-resident | 5% at source | 2026 | art. 134(1)(b^1), same URL |
-| International telecom and international transport services | 10% at source | 2026 | art. 134(1)(c), same URL |
-| Non-resident oil and gas subcontractors | 4% at source | 2026 | art. 134(1)(d), same URL |
-| Other Georgian-source income of a non-resident | 10% at source | 2026 | art. 134(1)(e), same URL |
-| Salary of a non-resident | 20% at source | 2026 | arts. 81(1), 134(1)(f), same URL |
-| Interest, royalties and other income to a person registered in a preferential tax country | 15% at source | 2026 | art. 134(1^1), same URL |
-| Preferential tax country test | profit tax exemption, no profit tax, or a rate not over 1/3 of the Georgian rate | 2026 | art. 98^2(5), (6), same URL |
+| Permanent establishment through management by another person | over 3 months | 2026 | art. 29(4), https://matsne.gov.ge/en/document/view/1043717?publication=247 |
+| Dividends paid to a non-resident | 5% at source | 2026 | arts. 130(1), 134(1)(a), https://matsne.gov.ge/en/document/view/1043717?publication=247 |
+| Dividends from profit of banks, credit unions, microfinance organisations and loan providers earned in 2023 or later | not taxed at source | 2026 | art. 130(8), https://matsne.gov.ge/en/document/view/1043717?publication=247 |
+| Interest paid to a non-resident without a PE | 5% at source | 2026 | arts. 131(1), 134(1)(b), https://matsne.gov.ge/en/document/view/1043717?publication=247 |
+| Interest from a Georgian licensed financial institution | not taxed at source | 2026 | art. 131(5), https://matsne.gov.ge/en/document/view/1043717?publication=247 |
+| Interest on debt securities of a Georgian enterprise listed on a recognised foreign exchange | not taxed at source | 2026 | art. 131(8), https://matsne.gov.ge/en/document/view/1043717?publication=247 |
+| Royalties paid to a non-resident | 5% at source | 2026 | art. 134(1)(b^1), https://matsne.gov.ge/en/document/view/1043717?publication=247 |
+| International telecom and international transport services | 10% at source | 2026 | art. 134(1)(c), https://matsne.gov.ge/en/document/view/1043717?publication=247 |
+| Non-resident oil and gas subcontractors | 4% at source | 2026 | art. 134(1)(d), https://matsne.gov.ge/en/document/view/1043717?publication=247 |
+| Other Georgian-source income of a non-resident | 10% at source | 2026 | art. 134(1)(e), https://matsne.gov.ge/en/document/view/1043717?publication=247 |
+| Salary of a non-resident | 20% at source | 2026 | arts. 81(1), 134(1)(f), https://matsne.gov.ge/en/document/view/1043717?publication=247 |
+| Interest, royalties and other income to a person registered in a preferential tax country | 15% at source | 2026 | art. 134(1^1), https://matsne.gov.ge/en/document/view/1043717?publication=247 |
+| Preferential tax country test | profit tax exemption, no profit tax, or a rate not over 1/3 of the Georgian rate | 2026 | art. 98^2(5), (6), https://matsne.gov.ge/en/document/view/1043717?publication=247 |
 | Preferential tax country list | Part 1: 15 jurisdictions; Part 2: 49 countries | 2026 | Government Ordinance No 615 of 29 December 2016, https://matsne.gov.ge/ka/document/view/3523434 |
-| VAT on services bought from a non-established supplier (reverse charge) | 18% of the amount paid | 2026 | arts. 161(1)(a), (3)(a), 166, same Tax Code URL |
-| Penalty interest on late tax, including tax not withheld | 0.05% of the unpaid tax per day | 2026 | art. 272(4), same Tax Code URL |
+| VAT on services bought from a non-established supplier (reverse charge) | 18% of the amount paid | 2026 | arts. 161(1)(a), (3)(a), 166, https://matsne.gov.ge/en/document/view/1043717?publication=247 |
+| Penalty interest on late tax, including tax not withheld | 0.05% of the unpaid tax per day | 2026 | art. 272(4), https://matsne.gov.ge/en/document/view/1043717?publication=247 |
 
 ## The taxable base
 
@@ -228,4 +228,4 @@ Not yet confirmed: the Minister of Finance order under art. 125 (whether treaty 
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-31. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ge-cross-border` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ge-cross-border. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ge-cross-border` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ge-cross-border. If neither is available, confirm every figure against the official source pages cited above before relying on it.

@@ -1,59 +1,29 @@
 ---
 name: portugal-financial-statements
-description: "Utilize esta skill na preparação, revisão ou aconselhamento sobre demonstrações financeiras anuais de uma sociedade portuguesa para exercícios de 2026. Acione com expressões como \"demonstrações financeiras\", \"IES\", \"Informação Empresarial Simplificada\", \"SNC\", \"NCRF\", \"NCRF-PE\", \"NC-ME\", \"balanço\", \"demonstração de resultados\", \"demonstração de fluxos de caixa\", \"anexo\", \"Portal das Finanças\", \"depósito de contas\", \"ROC\", \"revisão legal de contas\" ou qualquer questão sobre preparação e depósito de contas estatutárias ao abrigo da lei portuguesa. Abrange o referencial SNC, os novos limiares dimensionais do DL 126-B/2025 (micro EUR 450.000 / 900.000, pequenas EUR 5.000.000 / 10.000.000, médias EUR 25.000.000 / 50.000.000), as demonstrações obrigatórias por dimensão, formatos, anexo, prazo de aprovação, submissão da IES até 15 de julho e a revisão legal de contas (CSC art. 262.º: EUR 1.500.000 / 3.000.000 / 50). Fora do âmbito: IRC e impostos diferidos em detalhe (pt-corporate-tax), plano"
+description: "Utilize esta skill na preparação, revisão ou aconselhamento sobre demonstrações financeiras anuais de uma sociedade portuguesa para exercícios de 2026. Acione com expressões como \"demonstrações financeiras\", \"IES\", \"Informação Empresarial Simplificada\", \"SNC\", \"NCRF\", \"NCRF-PE\", \"NC-ME\", \"balanço\", \"demonstração de resultados\", \"demonstração de fluxos de caixa\", \"anexo\", \"Portal das Finanças\", \"depósito de contas\", \"ROC\", \"revisão legal de contas\" ou qualquer questão sobre preparação e depósito de contas estatutárias ao abrigo da lei portuguesa. Abrange o referencial SNC, os novos limiares dimensionais do DL 126-B/2025 (micro EUR 450.000 / 900.000, pequenas EUR 5.000.000 / 10.000.000, médias EUR 25.000.000 / 50.000.000), as demonstrações obrigatórias por dimensão, formatos, anexo, prazo de aprovação, submissão da IES até 15 de julho e a revisão legal de contas (CSC art. 262.º, EUR 1.500.000 / 3.000.000 / 50). Fora do âmbito, IRC e impostos diferidos em detalhe (pt-corporate-tax), plano"
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/portugal-financial-statements"
   jurisdiction: "PT"
   tax_year: "2026"
-  last_updated: "2026-10-31"
+  last_updated: "2026-11-14"
 ---
 
 # Portugal Financial Statements
 
-## Portugal: Demonstrações Financeiras (SNC), Skill v1.2 (exercícios de 2026)
+## Scope
 
-## Rates and thresholds
+This skill covers the annual financial statements of Portuguese companies under the SNC (Sistema de Normalização Contabilística) for periods starting in 2026: the size categories (micro, small, medium, large) and the new limits of DL 126-B/2025, which standard applies (NC-ME, NCRF-PE, full NCRF), which statements are required, year-end adjustments, the IES filing, approval of accounts and statutory audit.
 
-Todos os valores foram lidos no Diário da República (texto consolidado ou original) ou no Portal das Finanças em 30 de outubro de 2026. As fontes estão na secção final. Para as taxas de IRC usadas nos impostos diferidos, a skill `pt-corporate-tax` manda se houver divergência.
+Who is in: commercial companies and other entities reporting under the SNC. Who is out: entities using IFRS as adopted by the EU, banks and insurers, public sector (SNC-AP), and non-profit entities (ESNL) beyond pointers. Bookkeeping is in `portugal-bookkeeping`; IRC is in `pt-corporate-tax`.
 
-### Demonstrações Financeiras
-
-- **Micro: total do balanço**: ≤ €450.000 (exercícios com início em ou após 1 jan 2026) _(DL 158/2009, art. 9.º, n.º 1, na redação do DL 126-B/2025)_
-- **Micro: volume de negócios líquido**: ≤ €900.000 _(idem)_
-- **Micro: número médio de empregados**: ≤ 10 _(idem)_
-- **Pequena: total do balanço**: ≤ €5.000.000 _(DL 158/2009, art. 9.º, n.º 2, na redação do DL 126-B/2025)_
-- **Pequena: volume de negócios líquido**: ≤ €10.000.000 _(idem)_
-- **Pequena: número médio de empregados**: ≤ 50 _(idem)_
-- **Média: total do balanço**: ≤ €25.000.000 _(DL 158/2009, art. 9.º, n.º 3, na redação do DL 126-B/2025)_
-- **Média: volume de negócios líquido**: ≤ €50.000.000 _(idem)_
-- **Média: número médio de empregados**: ≤ 250 _(idem)_
-- **Limites até 2025 (exercícios iniciados antes de 1 jan 2026)**: micro €350.000 / €700.000 / 10; pequena €4.000.000 / €8.000.000 / 50; média €20.000.000 / €40.000.000 / 250 _(DL 158/2009, art. 9.º, na redação do DL 98/2015)_
-- **Pequenos grupos (base consolidada)**: ≤ €7.500.000 de balanço / ≤ €15.000.000 de volume de negócios / 50 empregados _(DL 158/2009, art. 9.º-B, n.º 1, na redação do DL 126-B/2025; o limite de 50 empregados vem do DL 98/2015 e não mudou)_
-- **Grupos médios**: ≤ €25.000.000 / ≤ €50.000.000 / 250 empregados _(DL 158/2009, art. 9.º-B, n.º 2)_
-- **Teste**: não ultrapassar 2 dos 3 limites; os limites reportam-se ao período anterior; muda-se de categoria a partir do 3.º período quando 2 dos 3 limites são ultrapassados em dois períodos consecutivos _(DL 158/2009, arts. 9.º e 9.º-A)_
-- **Entidades de interesse público**: sempre grandes entidades _(DL 158/2009, art. 9.º, n.º 5)_
-- **Aprovação das contas**: 3 meses após o fecho; 5 meses se houver contas consolidadas ou método da equivalência patrimonial _(CSC, art. 65.º, n.º 5)_
-- **IES: prazo**: até 15 de julho (ano civil); 15.º dia do 7.º mês após o fecho (outros períodos), seja ou não dia útil _(CIRC, art. 121.º, n.os 2 e 3; DL 8/2007, art. 5.º, n.º 1)_
-- **IES entregue fora de prazo: coima**: €150 a €3.750, elevada para o dobro para pessoas coletivas _(RGIT, arts. 117.º, n.º 1, e 26.º, n.º 4)_
-- **Gerente que não submete as contas aos sócios: coima**: €50 a €1.500 _(CSC, art. 528.º, n.º 1)_
-- **Revisão legal (Lda sem conselho fiscal): total do balanço**: > €1.500.000 _(CSC, art. 262.º, n.º 2)_
-- **Revisão legal: vendas líquidas e outros proveitos**: > €3.000.000 _(CSC, art. 262.º, n.º 2)_
-- **Revisão legal: número médio de trabalhadores**: > 50 _(CSC, art. 262.º, n.º 2)_
-- **Revisão legal: teste**: 2 dos 3 limites ultrapassados durante dois anos consecutivos _(CSC, art. 262.º, n.º 2)_
-- **SA (Sociedade Anónima)**: fiscalização sempre com ROC (fiscal único ROC, conselho fiscal com ROC, ou ROC autónomo) _(CSC, arts. 413.º, 414.º e 446.º)_
-- **SA com conselho fiscal e ROC separados**: obrigatório para emitentes cotados e SA não totalmente dominadas que ultrapassem 2 de €20.000.000 / €40.000.000 / 250 em dois anos consecutivos _(CSC, art. 413.º, n.º 2)_
-- **Mandato do ROC designado pela assembleia geral**: não superior a 4 anos _(CSC, art. 446.º, n.º 2)_
-
-## Secção 1: Referência Rápida
+### Quick reference
 
 **Referência Rápida**
 
 | Campo | Valor |
 | --- | --- |
-| País | Portugal (República Portuguesa) |
-| Moeda | EUR |
 | Entidade competente | Autoridade Tributária e Aduaneira (AT), através do Portal das Finanças (IES), que serve também o registo comercial, o INE e o Banco de Portugal |
 | Legislação principal | Decreto-Lei n.º 158/2009 (SNC), alterado pelo DL 98/2015 e pelo DL 126-B/2025 (novos limiares a partir de 2026) |
 | Legislação complementar | Código das Sociedades Comerciais (CSC); Código do Registo Comercial; Decreto-Lei n.º 8/2007 (IES); Código do IRC, art. 121.º |
@@ -64,7 +34,43 @@ Todos os valores foram lidos no Diário da República (texto consolidado ou orig
 | Taxa de registo | Ver "Not yet confirmed" (não confirmada hoje) |
 | Submissão eletrónica | IES por transmissão eletrónica no Portal das Finanças |
 
-## Secção 2: Referencial de Relato
+## Ask the client first
+
+- What were total assets, net turnover and average employees for the last two periods?
+- Does the period start on or after 1 January 2026 (new limits) or before (old limits)?
+- Is it an Lda with or without a conselho fiscal, or an SA? Is it a public interest entity?
+- Does it prepare consolidated accounts or use the equity method (5 months to approve)?
+- Has it opted for a fuller standard than its category requires?
+
+## Rates, bands and thresholds
+
+Figures below were found on 2026-11-14 in the Diário da República PDFs of DL 126-B/2025 and DL 98/2015 and on the Portal das Finanças. IRC rates for deferred tax are owned by `pt-corporate-tax`.
+
+| Item | Figure | Tax year | Source |
+| --- | --- | --- | --- |
+| Micro entity, not above two of: total assets / net turnover (periods from 1 January 2026) | EUR 450,000 / EUR 900,000 | 2026 | https://files.diariodarepublica.pt/1s/2025/12/23501/0000400005.pdf |
+| Small entity, not above two of: total assets / net turnover | EUR 5,000,000 / EUR 10,000,000 | 2026 | same |
+| Medium entity, not above two of: total assets / net turnover | EUR 25,000,000 / EUR 50,000,000 | 2026 | same |
+| Small groups (consolidated): total assets / net turnover | EUR 7,500,000 / EUR 15,000,000 | 2026 | same |
+| Average employees: micro / small / medium (unchanged by DL 126-B/2025) | 10 / 50 / 250 | 2026 | https://files.diariodarepublica.pt/1s/2015/06/10600/0347003493.pdf |
+| Limits for periods before 2026: micro / small / medium total assets | EUR 350,000 / EUR 4,000,000 / EUR 20,000,000 | 2026 | same |
+| Limits for periods before 2026: micro / small / medium net turnover | EUR 700,000 / EUR 8,000,000 / EUR 40,000,000 | 2026 | same |
+| IES deadline, calendar-year entities | 15 July, working day or not | 2026 | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc121.aspx |
+| IES filed late (RGIT art. 117(1)) | EUR 150 to EUR 3,750 | 2026 | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/rgit/Pages/rgit117.aspx |
+| Companies: fine limits doubled (RGIT art. 26(4)) | x 2 | 2026 | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/rgit/Pages/rgit26.aspx |
+| IRC general rate, periods starting in 2026 | 19% | 2026 | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc87.aspx |
+
+## The method, step by step
+
+
+1. **Find the size category** for the period: compare total assets, net turnover and average employees with the limits in the table; a company is in a category if it does not exceed two of the three. The limits refer to the previous period, and the category changes from the third period once two limits are exceeded in two consecutive periods (DL 158/2009 arts 9 and 9-A). Public interest entities are always large.
+2. **Pick the standard**: NC-ME for micro, NCRF-PE for small, full NCRF otherwise, unless the entity opts up.
+3. **Prepare the statements** the category requires (see "Demonstrações Financeiras Obrigatórias" below) with the year-end adjustments.
+4. **Approve the accounts** at the general meeting within the CSC deadline (see Not yet confirmed).
+5. **File the IES** electronically on the Portal das Finanças by 15 July for a calendar year (CIRC art. 121(2)); for other periods by the 15th day of the 7th month after year end.
+6. **Check statutory audit**: SA always; Lda without a conselho fiscal when the CSC art. 262 limits are exceeded (see "Requisitos de Auditoria").
+
+### Referencial de Relato
 
 **Referencial de Relato**
 
@@ -80,7 +86,7 @@ Todos os valores foram lidos no Diário da República (texto consolidado ou orig
 
 Uma entidade pode sempre aplicar um normativo de nível superior: a microentidade pode optar pela NCRF-PE ou pelas NCRF (art. 9.º-D, n.º 2); a pequena entidade pode aplicar as NCRF completas, porque a NCRF-PE é uma alternativa (art. 9.º-C).
 
-## Secção 3: Limiares Dimensionais
+### Limiares Dimensionais
 
 **Limiares Dimensionais (exercícios iniciados antes de 1 jan 2026)** _(DL 158/2009, art. 9.º, na redação do DL 98/2015)_
 
@@ -105,7 +111,7 @@ O número de empregados não mudou. Os limites de grupos (art. 9.º-B) passaram 
 - **Entidades de interesse público**: são sempre grandes entidades, seja qual for a dimensão (art. 9.º, n.º 5).
 - **Atenção**: os limiares da revisão legal de contas do CSC (Secção 10) são outra regra e não mudaram com o DL 126-B/2025.
 
-## Secção 4: Demonstrações Financeiras Obrigatórias
+### Demonstrações Financeiras Obrigatórias
 
 **Demonstrações Financeiras Obrigatórias** _(DL 158/2009, art. 11.º; método direto: NCRF 2, § 14; relatório de gestão: CSC, arts. 65.º e 66.º)_
 
@@ -121,7 +127,7 @@ O número de empregados não mudou. Os limites de grupos (art. 9.º-B) passaram 
 
 Divulgações no final do balanço de uma microentidade que não apresente anexo (art. 11.º, n.º 4): (a) compromissos financeiros, garantias e ativos e passivos contingentes fora do balanço, incluindo pensões e compromissos com empresas coligadas ou associadas; (b) adiantamentos e créditos concedidos a membros dos órgãos de administração, direção ou supervisão; (c) as informações da alínea d) do n.º 5 do art. 66.º do CSC, quando aplicável.
 
-## Secção 5: Checklist de Ajustamentos de Fim de Exercício
+### Checklist de Ajustamentos de Fim de Exercício
 
 **Checklist de Ajustamentos de Fim de Exercício**
 
@@ -142,7 +148,7 @@ Divulgações no final do balanço de uma microentidade que não apresente anexo
 
 A numeração das NCRF segue o SNC; o conteúdo de cada norma não foi relido hoje (ver "Not yet confirmed").
 
-## Secção 6: Demonstração de Resultados por Naturezas
+### Demonstração de Resultados por Naturezas
 
 Modelo SNC por naturezas (estrutura de referência; os modelos oficiais constam de portaria, ver "Not yet confirmed"):
 
@@ -176,7 +182,7 @@ Imposto sobre o rendimento do período
   --- Resultado líquido do período ---
 ```
 
-## Secção 7: Formato do Balanço
+### Formato do Balanço
 
 Modelo SNC (estrutura de referência):
 
@@ -238,7 +244,7 @@ TOTAL DO PASSIVO
 TOTAL DO CAPITAL PRÓPRIO E PASSIVO
 ```
 
-## Secção 8: Anexo às Demonstrações Financeiras
+### Anexo às Demonstrações Financeiras
 
 **Anexo às Demonstrações Financeiras**
 
@@ -259,7 +265,7 @@ TOTAL DO CAPITAL PRÓPRIO E PASSIVO
 
 As linhas 4 e 8 da coluna "Micro" vêm do art. 11.º, n.º 4 do DL 158/2009. O detalhe das restantes divulgações por norma (NC-ME, NCRF-PE, NCRF) não foi relido hoje (ver "Not yet confirmed").
 
-## Secção 9: Requisitos de Submissão
+### Requisitos de Submissão
 
 **Requisitos de Submissão**
 
@@ -278,9 +284,9 @@ As linhas 4 e 8 da coluna "Micro" vêm do art. 11.º, n.º 4 do DL 158/2009. O d
 | Gerente que não submete as contas aos sócios | Coima de EUR 50 a EUR 1 500 (CSC, art. 528.º, n.º 1) |
 | Taxa de registo, submissão por Contabilista Certificado, consequências da falta de depósito | Ver "Not yet confirmed" |
 
-## Secção 10: Requisitos de Auditoria
+### Requisitos de Auditoria
 
-### Sociedades por quotas (Lda) sem conselho fiscal
+#### Sociedades por quotas (Lda) sem conselho fiscal
 
 - **Condição de nomeação** (CSC, art. 262.º, n.º 2): a Lda sem conselho fiscal tem de designar um revisor oficial de contas (ROC) para a revisão legal quando, durante dois anos consecutivos, ultrapassa 2 dos 3 limites seguintes.
 
@@ -297,52 +303,102 @@ As linhas 4 e 8 da coluna "Micro" vêm do art. 11.º, n.º 4 do DL 158/2009. O d
 - **Conselho fiscal facultativo** (art. 262.º, n.º 1): o contrato de sociedade pode prever um conselho fiscal, com as regras das sociedades anónimas.
 - Estes limites não foram alterados pelo DL 126-B/2025 e podem ser mudados por portaria (art. 262.º, n.º 7).
 
-### Sociedades anónimas (SA): sempre com ROC
+#### Sociedades anónimas (SA): sempre com ROC
 
 - **Modelo clássico** (CSC, art. 413.º, n.º 1): fiscal único, que tem de ser ROC ou SROC, ou conselho fiscal; ou conselho fiscal e ROC separado. O conselho fiscal tem de incluir um ROC, salvo se houver ROC separado (art. 414.º, n.os 1 e 2).
 - **Conselho fiscal e ROC separados obrigatórios** (art. 413.º, n.º 2, al. a)): emitentes de valores mobiliários admitidos em mercado regulamentado, e SA não totalmente dominadas que, durante dois anos consecutivos, ultrapassem 2 de: balanço EUR 20 000 000, volume de negócios líquido EUR 40 000 000, 250 empregados.
 - **Outros modelos** (art. 446.º, n.º 1): nos modelos com comissão de auditoria ou conselho geral e de supervisão, a assembleia geral designa um ROC ou SROC.
 
-### Outras entidades com certificação legal
+#### Outras entidades com certificação legal
 
 - Grupos não cotados que optem por IFRS nas contas consolidadas (DL 158/2009, art. 4.º, n.º 2).
 - Filiais de grupos cotados que usem IFRS nas contas individuais (DL 158/2009, art. 4.º, n.º 3).
 - Entidades de interesse público e entidades que preparam contas consolidadas em geral: ver "Not yet confirmed".
 
-### Qualificação do auditor
+#### Qualificação do auditor
 
 - **Qualificação do auditor**: Revisor Oficial de Contas (ROC) ou Sociedade de Revisores Oficiais de Contas (SROC) (CSC, arts. 262.º, 413.º, 414.º e 446.º), inscritos na Ordem dos Revisores Oficiais de Contas.
 
-### Mandato do auditor
+#### Mandato do auditor
 
 - **Duração**: o ROC designado pela assembleia geral ao abrigo do art. 446.º é designado por tempo não superior a quatro anos (art. 446.º, n.º 2). As regras de rotação para entidades de interesse público não foram relidas hoje.
 
-## Secção 11: Exemplos
+### Earlier worked examples (prose)
 
 **Exemplo 1: pequena entidade que passa a microentidade em 2026.** Uma Lda tem, em 2024 e 2025, balanço de EUR 480 000, volume de negócios de EUR 850 000 e 8 empregados. Com os limites até 2025, ultrapassava 2 dos 3 limites de microentidade (EUR 480 000 > 350 000 e EUR 850 000 > 700 000) e era pequena entidade. Para as contas de 2026, aplicam-se os novos limites: só o balanço ultrapassa o limite (EUR 480 000 > 450 000); o volume de negócios (EUR 850 000 ≤ 900 000) e os empregados (8 ≤ 10) não. Ultrapassa 1 dos 3, logo pode ser microentidade: deve aplicar a NC-ME, salvo opção pela NCRF-PE ou NCRF (art. 9.º-D), e fica dispensada da demonstração das alterações no capital próprio e da demonstração dos fluxos de caixa (art. 11.º, n.º 3). A revisão legal de contas não se aplica: não ultrapassa nenhum dos limites do CSC.
 
 **Exemplo 2: Lda que passa a precisar de ROC.** Uma Lda sem conselho fiscal tem, em 2024 e em 2025, balanço de EUR 1 600 000, vendas líquidas e outros proveitos de EUR 2 800 000 e 55 trabalhadores em média. Em cada um dos dois anos ultrapassa 2 dos 3 limites do art. 262.º, n.º 2 (balanço EUR 1 600 000 > 1 500 000 e trabalhadores 55 > 50; as vendas ficam abaixo de EUR 3 000 000). Tem de designar um ROC para a revisão legal. Para efeitos do SNC continua pequena entidade (EUR 1 600 000 ≤ 5 000 000, EUR 2 800 000 ≤ 10 000 000, 55 > 50: ultrapassa só 1 dos 3), o que mostra que os dois testes são independentes.
 
+## Worked cases
+
+### Case 1 (decision): a small entity becomes micro in 2026
+
+Facts. An Lda had, in 2024 and 2025, total assets of EUR 480,000, net turnover of EUR 850,000 and 8 employees.
+
+Working. Under the old limits it exceeded two of three micro limits (EUR 480,000 above 350,000; EUR 850,000 above 700,000) and was small. Under the 2026 limits only total assets exceed (above EUR 450,000); turnover (below EUR 900,000) and staff (below 10) do not. It exceeds one of three, so it may be a micro entity and apply NC-ME, unless it opts for NCRF-PE or NCRF.
+
+```oa-check
+name: Portugal 2026, micro entity test under old and new limits
+inputs:
+  assets: 480000
+  turnover: 850000
+  staff: 8
+steps:
+  - old_exceeded: min(max(assets - 350000, 0), 1) + min(max(turnover - 700000, 0), 1) + min(max(staff - 10, 0), 1)
+  - new_exceeded: min(max(assets - 450000, 0), 1) + min(max(turnover - 900000, 0), 1) + min(max(staff - 10, 0), 1)
+expected:
+  old_exceeded: 2
+  new_exceeded: 1
+```
+
+### Case 2: IES filed late by a company
+
+Facts. A calendar-year Lda files its 2026 IES on 20 August 2027, after the 15 July deadline.
+
+Working. The fine for a late declaration is EUR 150 to EUR 3,750 (RGIT art. 117(1)); for a company both limits are doubled (RGIT art. 26(4)): EUR 300 to EUR 7,500.
+
+```oa-check
+name: Portugal 2026, late IES fine range for a company
+inputs:
+  fine_min: 150
+  fine_max: 3750
+steps:
+  - company_min: fine_min * 2
+  - company_max: fine_max * 2
+expected:
+  company_min: 300.00
+  company_max: 7500.00
+```
+
+## When to refuse or refer
+
+- IFRS reporters, consolidated accounts beyond the size test, banks, insurers, public sector entities: refer.
+- Going-concern doubts, restatements, or accounts not approved in time: refer to a contabilista certificado and a ROC.
+- The accounts-filing registration fee: not confirmed; ask the IRN.
+- Statutory audit opinions and ROC appointments: refer to a ROC.
+
 ## Sources
+
+Rows dated 2026-11-14 were opened that day and the figures this skill takes from them were found in the text. The Diário da República consolidated pages keep their earlier read date (see Not yet confirmed).
 
 | Source | URL | Read on |
 |---|---|---|
 | Decreto-Lei 158/2009 (SNC), consolidated text: arts. 4.º, 9.º, 9.º-A, 9.º-C, 9.º-D, 11.º | https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-lei/2009-34517175 | 2026-10-30 |
-| Decreto-Lei 126-B/2025, arts. 2.º (new arts. 9.º and 9.º-B limits) and 3.º (applies to periods starting on or after 1 January 2026) | https://files.diariodarepublica.pt/1s/2025/12/23501/0000400005.pdf | 2026-10-30 |
-| Decreto-Lei 98/2015, art. 2.º (art. 9.º limits in force until 2025, art. 9.º-B small-group 50 employees, art. 11.º(1)(d) without "método direto") and art. 5.º (CSC art. 66.º(6), micro entities exempt from the management report) | https://files.diariodarepublica.pt/1s/2015/06/10600/0347003493.pdf | 2026-10-30 |
-| Aviso 8256/2015 (NCRF, DR 2.ª série n.º 146, 29 Jul 2015; copy published by the Comissão de Normalização Contabilística), NCRF 2 § 14: operating cash flows by the direct method | https://www.cnc.min-financas.pt/pdf/SNC/2016/Aviso_8256_2015_29Jul_NCRF_RG.pdf | 2026-10-30 |
+| Decreto-Lei 126-B/2025, arts. 2.º (new arts. 9.º and 9.º-B limits) and 3.º (applies to periods starting on or after 1 January 2026) | https://files.diariodarepublica.pt/1s/2025/12/23501/0000400005.pdf | 2026-11-14 |
+| Decreto-Lei 98/2015, art. 2.º (art. 9.º limits in force until 2025, art. 9.º-B small-group 50 employees, art. 11.º(1)(d) without "método direto") and art. 5.º (CSC art. 66.º(6), micro entities exempt from the management report) | https://files.diariodarepublica.pt/1s/2015/06/10600/0347003493.pdf | 2026-11-14 |
+| Aviso 8256/2015 (NCRF, DR 2.ª série n.º 146, 29 Jul 2015; copy published by the Comissão de Normalização Contabilística), NCRF 2 § 14: operating cash flows by the direct method | https://www.cnc.min-financas.pt/pdf/SNC/2016/Aviso_8256_2015_29Jul_NCRF_RG.pdf | 2026-11-14 |
 | Código das Sociedades Comerciais, art. 262.º (consolidated, last change 2026-08-26) | https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-lei/1986-34443975-66858136 | 2026-10-30 |
 | Código das Sociedades Comerciais, arts. 65.º, 70.º, 413.º, 414.º, 446.º, 528.º (consolidated) | https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-lei/1986-34443975 | 2026-10-30 |
 | Decreto-Lei 8/2007 (IES), consolidated: arts. 2.º and 5.º | https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-lei/2007-34526275 | 2026-10-30 |
-| CIRC art. 121.º, annual accounting and tax declaration (IES) deadline | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc121.aspx | 2026-10-30 |
-| CIRC art. 87.º with Lei 64/2025 art. 3.º (IRC 19% in 2026, 18% in 2027, 17% from 2028) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc87.aspx | 2026-10-30 |
-| RGIT art. 117.º, late or missing declarations | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/rgit/Pages/rgit117.aspx | 2026-10-30 |
-| RGIT art. 26.º, fines doubled for companies | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/rgit/Pages/rgit26.aspx | 2026-10-30 |
+| CIRC art. 121.º, annual accounting and tax declaration (IES) deadline | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc121.aspx | 2026-11-14 |
+| CIRC art. 87.º with Lei 64/2025 art. 3.º (IRC 19% in 2026, 18% in 2027, 17% from 2028) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc87.aspx | 2026-11-14 |
+| RGIT art. 117.º, late or missing declarations | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/rgit/Pages/rgit117.aspx | 2026-11-14 |
+| RGIT art. 26.º, fines doubled for companies | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/rgit/Pages/rgit26.aspx | 2026-11-14 |
 | Regulamento Emolumentar dos Registos e Notariado (consolidated, searched for the accounts-filing fee) | https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-lei/2001-34475775 | 2026-10-30 |
 
-Not yet confirmed: the registration fee for the accounts filing (the old version said EUR 80; the RERN text read today does not state it, and a 2007 portaria set EUR 85, so the current amount is open); that the IES must be submitted by a Contabilista Certificado; the consequences of not depositing accounts (no certificates, administrative dissolution); that banks and insurers must use IFRS in their individual accounts (Banco de Portugal and ASF rules not read); that entities preparing consolidated accounts under NCRF and public-interest entities always need a statutory audit; audit-firm rotation rules for public-interest entities; the line-by-line content of the official statement models (Portaria 220/2015) and the NCRF, NCRF-PE and NC-ME disclosure detail in Sections 5, 6, 7 and 8; the list of IES annexes (Anexo A, A1 and others) and the file format (old version: XML, with PDF annexes for consolidated accounts); whether the 2027 State Budget changes any of these figures.
+Not yet confirmed: the registration fee for the accounts filing (the old version said EUR 80; the RERN text read today does not state it, and a 2007 portaria set EUR 85, so the current amount is open); that the IES must be submitted by a Contabilista Certificado; the consequences of not depositing accounts (no certificates, administrative dissolution); that banks and insurers must use IFRS in their individual accounts (Banco de Portugal and ASF rules not read); that entities preparing consolidated accounts under NCRF and public-interest entities always need a statutory audit; audit-firm rotation rules for public-interest entities; the line-by-line content of the official statement models (Portaria 220/2015) and the NCRF, NCRF-PE and NC-ME disclosure detail in Sections 5, 6, 7 and 8; the list of IES annexes (Anexo A, A1 and others) and the file format (old version: XML, with PDF annexes for consolidated accounts); whether the 2027 State Budget changes any of these figures; the Código das Sociedades Comerciais and DL 158/2009 / DL 8/2007 consolidated texts were not re-read on 2026-11-14 (the Diário da República consolidated pages serve only a script shell and the web archive refused requests), so these earlier figures are not in usable guidance until re-read: approval within 3 months of year end, 5 with consolidation or the equity method (CSC art. 65(5)); statutory audit of an Lda without a conselho fiscal above two of EUR 1,500,000 total assets, EUR 3,000,000 sales and 50 employees for two years (CSC art. 262(2)); SA with separate conselho fiscal and ROC above two of EUR 20,000,000 / EUR 40,000,000 / 250 (CSC art. 413(2)); ROC mandate up to 4 years (CSC art. 446(2)); fine of EUR 50 to EUR 1,500 for a manager who does not submit the accounts (CSC art. 528(1)).
 
-## Aviso Legal
+## Disclaimer
 
 Esta skill e os respetivos resultados são disponibilizados apenas para fins informativos e de cálculo e não constituem aconselhamento fiscal, jurídico ou financeiro. A Open Accountants e os seus contribuidores não assumem qualquer responsabilidade por erros, omissões ou consequências decorrentes da utilização desta skill. Todos os resultados devem ser revistos e validados por um profissional qualificado antes de serem submetidos ou utilizados como base de decisão.
 
@@ -350,4 +406,4 @@ Esta skill e os respetivos resultados são disponibilizados apenas para fins inf
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-31. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `portugal-financial-statements` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/portugal-financial-statements. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `portugal-financial-statements` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/portugal-financial-statements. If neither is available, confirm every figure against the official source pages cited above before relying on it.
