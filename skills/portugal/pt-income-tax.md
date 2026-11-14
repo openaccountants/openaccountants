@@ -253,4 +253,4 @@ expected:
 
 Not yet confirmed: which activity codes of Portaria 1011/2001 fall in the art. 151 table (the table was not read); which simplified-regime coefficient applies to code 1519 (an earlier version said 0.75 as AT's position; the AT ruling read covers withholding only); that AT applies the IRS Jovem art. 22(4) rule as average rate on total income x non-exempt income, as this skill does, and that for Category B in the simplified regime the exempt share and the cap apply to income after the coefficient, as this skill does (no AT guidance read); the EBF art. 58 relief for authors' income, not read for 2026 and not used here; CIRS art. 68(2) still names EUR 8,059 (the 2025 first band limit), and this skill applies the method with the 2026 band limits.
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.

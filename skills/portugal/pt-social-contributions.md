@@ -234,4 +234,4 @@ expected:
 
 Not yet confirmed: Code art. 163(8) says the EUR 20 minimum is updated in line with the IAS, but no updated figure was found and the 2026 ISS Guia Prático still gives EUR 20.00, which this skill uses; the employer deadlines that apply during 2026 to employers not yet moved to the new reporting model under DL 127/2025 art. 5 (the old model's declaration date was not read); the regulation (Decreto Regulamentar 1-A/2011) that lists income left out of relevant income, which was read only through the ISS Guia Prático; the EUR 5 de minimis for the excess base, from the ISS Guia Prático only; the EUR 20 threshold for the annual review is in the ISS Guia Prático, not in art. 164-A; other special rates (for example very short contracts, pensioners in work, rural workers) and the contribution reductions for first jobs and long-term unemployed were not read and are left to `portugal-payroll`; EU coordination under Regulation 883/2004 (EUR-Lex did not load) is left to `pt-cross-border`.
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.
