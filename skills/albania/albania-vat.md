@@ -1,10 +1,11 @@
 ---
 name: albania-vat
 description: "Albanian VAT (TVSH, tatimi mbi vlerën e shtuar) for tax year 2026 under Law No. 92/2014 as amended to Law No. 80/2025, Council of Ministers Decision No. 953/2014 and Law No. 87/2019 on invoices and fiscalisation. Covers the 20% standard rate, the 6% and 10% reduced rates and what each covers, 0% exports and international transport, exempt supplies, the ALL 10,000,000 registration threshold, voluntary registration above ALL 5,000,000, notaries and bailiffs at zero threshold, monthly returns due 14 days after the month, reverse charge and self-invoicing on imported services, e-invoicing and fiscalisation, refunds above ALL 400,000, and penalties under Law No. 9920/2008. Trigger on 'Albania VAT', 'TVSH', 'Albanian VAT return', 'VAT registration Albania', 'fiskalizimi', 'reverse charge Albania'. Out of scope: income tax (albania-income-tax, al-corporate-tax), payroll (albania-payroll), social contributions (albania-social-contributions), withholding and treaties (al-cross-border), planning (albania-tax-optimization)."
-version: 2.1
+version: 2.2
+type: situation-rules
 jurisdiction: AL
 tax_year: 2026
-last_updated: 2026-10-23
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
@@ -47,26 +48,26 @@ See also: `albania-income-tax`, `al-corporate-tax`, `al-cross-border` (tax repre
 |---|---|---|---|
 | Standard rate | 20% | 2026 | Law 92/2014 art. 48, [tatime.gov.al consolidated text](https://tatime.gov.al/wp-content/uploads/2026/09/Ligji-Nr.-92-2014-Per-tatimin-mbi-vleren-e-shtuar-ne-Republiken-e-Shqiperise-i-ndryshuar.pdf) |
 | Accommodation in accommodation structures under tourism law (room, and breakfast if included in the room price) | 6% | 2026 | Law 92/2014 art. 49(3); [VKM 953/2014 art. 11/1](https://tatime.gov.al/wp-content/uploads/2026/09/VKM-Nr.953-date-29.12.2014-i-ndryshuar.pdf) |
-| Every service supplied inside a 5-star "special status" hotel or resort carrying an internationally recognised brand | 6% | 2026 | Law 92/2014 art. 49(4) |
-| Certified agrotourism: accommodation and restaurant, except drinks | 6% | 2026 | Law 92/2014 art. 49(5) |
-| Advertising by audiovisual media | 6% | 2026 | Law 92/2014 art. 49(6) |
-| Licensed public passenger buses with 9+1 seats or more, electric motor only (supply of the vehicles) | 6% | 2026 | Law 92/2014 art. 49(7) |
-| Books of every kind | 6% | 2026 | Law 92/2014 art. 49(8) |
-| Construction works for sports infrastructure (state investment of sports clubs or federations, or private investment, as defined in sports law) | 6% | 2026 | Law 92/2014 art. 49(9) |
-| Agricultural inputs: chemical fertilisers, pesticides, seeds and seedlings (not hormones in CN 2937), on the Council of Ministers list | 10% | 2026 | Law 92/2014 art. 49(10); VKM 953/2014 art. 8/1(1) and Annex 4 (the list) |
-| Exports of goods, processing under inward processing for re-export, transport and ancillary services linked to imports or exports | 0% | 2026 | Law 92/2014 art. 57 |
-| International transport of passengers; supplies for sea-going vessels and international aircraft | 0% | 2026 | Law 92/2014 art. 59 |
-| Diplomatic and consular supplies, international organisations, donor-funded projects where the agreement bars paying tax, NATO forces | 0% | 2026 | Law 92/2014 art. 60 |
-| Gold supplied to the Bank of Albania; intermediaries in 0% supplies | 0% | 2026 | Law 92/2014 arts. 61, 62 |
-| Imports of goods | Same rate as a domestic sale of the same goods | 2026 | Law 92/2014 art. 50 |
+| Every service supplied inside a 5-star "special status" hotel or resort carrying an internationally recognised brand | 6% | 2026 | [Law 92/2014 art. 49(4)](https://tatime.gov.al/wp-content/uploads/2026/09/Ligji-Nr.-92-2014-Per-tatimin-mbi-vleren-e-shtuar-ne-Republiken-e-Shqiperise-i-ndryshuar.pdf) |
+| Certified agrotourism: accommodation and restaurant, except drinks | 6% | 2026 | [Law 92/2014 art. 49(5)](https://tatime.gov.al/wp-content/uploads/2026/09/Ligji-Nr.-92-2014-Per-tatimin-mbi-vleren-e-shtuar-ne-Republiken-e-Shqiperise-i-ndryshuar.pdf) |
+| Advertising by audiovisual media | 6% | 2026 | [Law 92/2014 art. 49(6)](https://tatime.gov.al/wp-content/uploads/2026/09/Ligji-Nr.-92-2014-Per-tatimin-mbi-vleren-e-shtuar-ne-Republiken-e-Shqiperise-i-ndryshuar.pdf) |
+| Licensed public passenger buses with 9+1 seats or more, electric motor only (supply of the vehicles) | 6% | 2026 | [Law 92/2014 art. 49(7)](https://tatime.gov.al/wp-content/uploads/2026/09/Ligji-Nr.-92-2014-Per-tatimin-mbi-vleren-e-shtuar-ne-Republiken-e-Shqiperise-i-ndryshuar.pdf) |
+| Books of every kind | 6% | 2026 | [Law 92/2014 art. 49(8)](https://tatime.gov.al/wp-content/uploads/2026/09/Ligji-Nr.-92-2014-Per-tatimin-mbi-vleren-e-shtuar-ne-Republiken-e-Shqiperise-i-ndryshuar.pdf) |
+| Construction works for sports infrastructure (state investment of sports clubs or federations, or private investment, as defined in sports law) | 6% | 2026 | [Law 92/2014 art. 49(9)](https://tatime.gov.al/wp-content/uploads/2026/09/Ligji-Nr.-92-2014-Per-tatimin-mbi-vleren-e-shtuar-ne-Republiken-e-Shqiperise-i-ndryshuar.pdf) |
+| Agricultural inputs: chemical fertilisers, pesticides, seeds and seedlings (not hormones in CN 2937), on the Council of Ministers list | 10% | 2026 | [Law 92/2014 art. 49(10)](https://tatime.gov.al/wp-content/uploads/2026/09/Ligji-Nr.-92-2014-Per-tatimin-mbi-vleren-e-shtuar-ne-Republiken-e-Shqiperise-i-ndryshuar.pdf); [VKM 953/2014 art. 8/1(1) and Annex 4 (the list)](https://tatime.gov.al/wp-content/uploads/2026/09/VKM-Nr.953-date-29.12.2014-i-ndryshuar.pdf) |
+| Exports of goods, processing under inward processing for re-export, transport and ancillary services linked to imports or exports | 0% | 2026 | [Law 92/2014 art. 57](https://tatime.gov.al/wp-content/uploads/2026/09/Ligji-Nr.-92-2014-Per-tatimin-mbi-vleren-e-shtuar-ne-Republiken-e-Shqiperise-i-ndryshuar.pdf) |
+| International transport of passengers; supplies for sea-going vessels and international aircraft | 0% | 2026 | [Law 92/2014 art. 59](https://tatime.gov.al/wp-content/uploads/2026/09/Ligji-Nr.-92-2014-Per-tatimin-mbi-vleren-e-shtuar-ne-Republiken-e-Shqiperise-i-ndryshuar.pdf) |
+| Diplomatic and consular supplies, international organisations, donor-funded projects where the agreement bars paying tax, NATO forces | 0% | 2026 | [Law 92/2014 art. 60](https://tatime.gov.al/wp-content/uploads/2026/09/Ligji-Nr.-92-2014-Per-tatimin-mbi-vleren-e-shtuar-ne-Republiken-e-Shqiperise-i-ndryshuar.pdf) |
+| Gold supplied to the Bank of Albania; intermediaries in 0% supplies | 0% | 2026 | [Law 92/2014 arts. 61, 62](https://tatime.gov.al/wp-content/uploads/2026/09/Ligji-Nr.-92-2014-Per-tatimin-mbi-vleren-e-shtuar-ne-Republiken-e-Shqiperise-i-ndryshuar.pdf) |
+| Imports of goods | Same rate as a domestic sale of the same goods | 2026 | [Law 92/2014 art. 50](https://tatime.gov.al/wp-content/uploads/2026/09/Ligji-Nr.-92-2014-Per-tatimin-mbi-vleren-e-shtuar-ne-Republiken-e-Shqiperise-i-ndryshuar.pdf) |
 | Mandatory registration threshold | Turnover above ALL 10,000,000 in a calendar year (12 consecutive months for the crossing test) | 2026 | VKM 953/2014 art. 11(1); Law 92/2014 art. 122; [tatime.gov.al, commercial companies](https://tatime.gov.al/entitete/?artikull=shoqerite-tregtare) |
-| Voluntary registration floor | Annual turnover above ALL 5,000,000 | 2026 | VKM 953/2014 art. 11(1); Law 92/2014 art. 120 |
-| Notaries, state and private bailiffs | Threshold zero | 2026 | VKM 953/2014 art. 11(2) |
-| Minimum stay after voluntary registration | 2 calendar years | 2026 | Law 92/2014 art. 120(2) |
-| Refund: minimum excess credit | Above ALL 400,000, carried forward 3 consecutive months (exporters: above ALL 400,000) | 2026 | Law 92/2014 art. 77(1), (3) |
-| Refund: time limit for the administration | 60 days from the claim; 30 days for exporters | 2026 | Law 92/2014 art. 77(4); Law 9920/2008 art. 75/1(1) |
-| Late input VAT deduction | Within 12 tax periods, counting the period the right arose | 2026 | Law 92/2014 art. 76(4) |
-| Capital goods adjustment period | 5 years movable, 10 years immovable | 2026 | Law 92/2014 art. 80(3), (4) |
+| Voluntary registration floor | Annual turnover above ALL 5,000,000 | 2026 | [VKM 953/2014 art. 11(1)](https://tatime.gov.al/wp-content/uploads/2026/09/VKM-Nr.953-date-29.12.2014-i-ndryshuar.pdf); [Law 92/2014 art. 120](https://tatime.gov.al/wp-content/uploads/2026/09/Ligji-Nr.-92-2014-Per-tatimin-mbi-vleren-e-shtuar-ne-Republiken-e-Shqiperise-i-ndryshuar.pdf) |
+| Notaries, state and private bailiffs | Threshold zero | 2026 | [VKM 953/2014 art. 11(2)](https://tatime.gov.al/wp-content/uploads/2026/09/VKM-Nr.953-date-29.12.2014-i-ndryshuar.pdf) |
+| Minimum stay after voluntary registration | 2 calendar years | 2026 | [Law 92/2014 art. 120(2)](https://tatime.gov.al/wp-content/uploads/2026/09/Ligji-Nr.-92-2014-Per-tatimin-mbi-vleren-e-shtuar-ne-Republiken-e-Shqiperise-i-ndryshuar.pdf) |
+| Refund: minimum excess credit | Above ALL 400,000, carried forward 3 consecutive months (exporters: above ALL 400,000) | 2026 | [Law 92/2014 art. 77(1), (3)](https://tatime.gov.al/wp-content/uploads/2026/09/Ligji-Nr.-92-2014-Per-tatimin-mbi-vleren-e-shtuar-ne-Republiken-e-Shqiperise-i-ndryshuar.pdf) |
+| Refund: time limit for the administration | 60 days from the claim; 30 days for exporters | 2026 | [Law 92/2014 art. 77(4)](https://tatime.gov.al/wp-content/uploads/2026/09/Ligji-Nr.-92-2014-Per-tatimin-mbi-vleren-e-shtuar-ne-Republiken-e-Shqiperise-i-ndryshuar.pdf); [Law 9920/2008 art. 75/1(1)](https://tatime.gov.al/wp-content/uploads/2026/10/Ligj-Nr-9920-Dt-2008.05.19-perditesuar-1.pdf) |
+| Late input VAT deduction | Within 12 tax periods, counting the period the right arose | 2026 | [Law 92/2014 art. 76(4)](https://tatime.gov.al/wp-content/uploads/2026/09/Ligji-Nr.-92-2014-Per-tatimin-mbi-vleren-e-shtuar-ne-Republiken-e-Shqiperise-i-ndryshuar.pdf) |
+| Capital goods adjustment period | 5 years movable, 10 years immovable | 2026 | [Law 92/2014 art. 80(3), (4)](https://tatime.gov.al/wp-content/uploads/2026/09/Ligji-Nr.-92-2014-Per-tatimin-mbi-vleren-e-shtuar-ne-Republiken-e-Shqiperise-i-ndryshuar.pdf) |
 
 **Which 6% rule applies matters.** The art. 49(3) rate covers only the sleeping service (and breakfast sold inside the room price). Food, drinks and other services in the same hotel are at 20%, and the accommodation must be shown separately on the invoice (VKM 953/2014 art. 11/1(1)). A taxpayer that runs other activities as well must register a separate taxable person for the accommodation business to use the 6% rate (VKM 953/2014 art. 11/1(1), (2)). The art. 49(4) branded 5-star special-status hotels are the exception: every service inside them is at 6%.
 
@@ -249,15 +250,15 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Law No. 92/2014 "Për tatimin mbi vlerën e shtuar në Republikën e Shqipërisë", consolidated to Law No. 80/2025 (General Directorate of Taxes copy) | https://tatime.gov.al/wp-content/uploads/2026/09/Ligji-Nr.-92-2014-Per-tatimin-mbi-vleren-e-shtuar-ne-Republiken-e-Shqiperise-i-ndryshuar.pdf | 2026-10-23 |
-| Council of Ministers Decision No. 953 of 29.12.2014 on the implementing provisions of the VAT law, consolidated to VKM No. 612/2026, arts. 8, 8/1, 9, 10, 11, 11/1 | https://tatime.gov.al/wp-content/uploads/2026/09/VKM-Nr.953-date-29.12.2014-i-ndryshuar.pdf | 2026-10-23 |
-| Instruction No. 6 of 30.1.2015 on VAT, consolidated to Instruction No. 6/2025, arts. 27, 28, 67 | https://tatime.gov.al/wp-content/uploads/2026/09/Udhezim-nr.-6-dt.30.01.2015-Per-Tatimin-mbi-Vleren-e-Shtuar-ne-Republiken-e-Shqiperise-i-ndryshuar.pdf | 2026-10-23 |
-| Law No. 87/2019 "Për faturën dhe sistemin e monitorimit të qarkullimit", consolidated to Law No. 83/2025 | https://tatime.gov.al/wp-content/uploads/2026/09/Ligj-Nr.87-2019-Per-faturen-dhe-sistemin-e-monitorimit-te-qarkullimit-i-ndryshuar.pdf | 2026-10-23 |
-| Law No. 9920/2008 "Për procedurat tatimore në Republikën e Shqipërisë", consolidated to Law No. 79/2025 | https://tatime.gov.al/wp-content/uploads/2026/10/Ligj-Nr-9920-Dt-2008.05.19-perditesuar-1.pdf | 2026-10-23 |
-| Instruction No. 24 of 02.09.2008 on tax procedures, as amended (para. 113.1, late filing fine) | https://tatime.gov.al/wp-content/uploads/2026/01/UMF-nr.24-date-02.09.2008-Per-Procedurat-Tatimore-i-ndryshuar.pdf | 2026-10-23 |
-| General Directorate of Taxes, VAT legislation page | https://tatime.gov.al/legjislacioni/tatimi-mbi-vleren-e-shtuar/ | 2026-10-23 |
-| General Directorate of Taxes, fiscalisation legislation page | https://tatime.gov.al/legjislacioni/fiskalizimi/ | 2026-10-23 |
-| General Directorate of Taxes, commercial companies (20% standard rate, registration mandatory above ALL 10 million, monthly e-Filing) | https://tatime.gov.al/entitete/?artikull=shoqerite-tregtare | 2026-10-23 |
+| Law No. 92/2014 "Për tatimin mbi vlerën e shtuar në Republikën e Shqipërisë": read for consolidated to Law No. 80/2025 (General Directorate of Taxes copy) | https://tatime.gov.al/wp-content/uploads/2026/09/Ligji-Nr.-92-2014-Per-tatimin-mbi-vleren-e-shtuar-ne-Republiken-e-Shqiperise-i-ndryshuar.pdf | 2026-11-14 |
+| Council of Ministers Decision No. 953 of 29.12.2014 on the implementing provisions of the VAT law, consolidated to VKM No. 612/2026, arts. 8, 8/1, 9, 10, 11, 11/1 | https://tatime.gov.al/wp-content/uploads/2026/09/VKM-Nr.953-date-29.12.2014-i-ndryshuar.pdf | 2026-11-14 |
+| Instruction No. 6 of 30.1.2015 on VAT, consolidated to Instruction No. 6/2025, arts. 27, 28, 67 | https://tatime.gov.al/wp-content/uploads/2026/09/Udhezim-nr.-6-dt.30.01.2015-Per-Tatimin-mbi-Vleren-e-Shtuar-ne-Republiken-e-Shqiperise-i-ndryshuar.pdf | 2026-11-14 |
+| Law No. 87/2019 "Për faturën dhe sistemin e monitorimit të qarkullimit": read for consolidated to Law No. 83/2025 | https://tatime.gov.al/wp-content/uploads/2026/09/Ligj-Nr.87-2019-Per-faturen-dhe-sistemin-e-monitorimit-te-qarkullimit-i-ndryshuar.pdf | 2026-11-14 |
+| Law No. 9920/2008 "Për procedurat tatimore në Republikën e Shqipërisë": read for consolidated to Law No. 79/2025 | https://tatime.gov.al/wp-content/uploads/2026/10/Ligj-Nr-9920-Dt-2008.05.19-perditesuar-1.pdf | 2026-11-14 |
+| Instruction No. 24 of 02.09.2008 on tax procedures: read for as amended (para. 113.1, late filing fine) | https://tatime.gov.al/wp-content/uploads/2026/01/UMF-nr.24-date-02.09.2008-Per-Procedurat-Tatimore-i-ndryshuar.pdf | 2026-11-14 |
+| General Directorate of Taxes, VAT legislation page: read for which VAT acts are in force | https://tatime.gov.al/legjislacioni/tatimi-mbi-vleren-e-shtuar/ | 2026-11-14 |
+| General Directorate of Taxes: read for fiscalisation legislation page | https://tatime.gov.al/legjislacioni/fiskalizimi/ | 2026-11-14 |
+| General Directorate of Taxes: read for commercial companies (20% standard rate, registration mandatory above ALL 10 million, monthly e-Filing) | https://tatime.gov.al/entitete/?artikull=shoqerite-tregtare | 2026-11-14 |
 
 Not yet confirmed: the current quarter's late payment interest rate published under Law 9920/2008 art. 76(3); which art. 113 band (ALL 5,000 or ALL 3,000) applies to a late VAT return filed by a VAT-registered natural person who pays personal income tax on business income, since the law does not define "individual taxpayer" for art. 113(c) and Instruction 24/2008 predates that band; the minimum purchase value for the traveller export rule in art. 58 (set by ministerial instruction, not read); the item-by-item contents of VKM 953/2014 Annex 4 (agricultural inputs) and Annex 1/A (agricultural machinery), not read; whether "professions such as notary, bailiff" in VKM 953/2014 art. 11(2) reaches any other profession in practice.
 

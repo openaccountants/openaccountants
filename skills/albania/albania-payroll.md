@@ -1,10 +1,11 @@
 ---
 name: albania-payroll
 description: "Albanian monthly payroll for tax year 2026: how an employer computes and pays employment income tax (TAP) at 13% and 23% with the art. 22 monthly deductions, employee and employer social and health contributions within the ALL 50,000 floor and ALL 186,416 social ceiling, net pay and total employer cost, and files the monthly listëpagesa (E-SIG 025/a) with payment by the 20th. Covers the personal status declaration, second employers, part-time staff, new-hire notice (E-SIG 027/a), the annual position on the employee's DVAP return, and Law 9920/2008 penalties and interest. Trigger on 'Albania payroll', 'listëpagesa', 'gross to net Albania', 'TAP Albania', 'employer cost Albania', 'E-SIG 025'. Out of scope: contribution rules for the self-employed and special categories (albania-social-contributions), the annual return and other income (albania-income-tax), companies (al-corporate-tax), treaties (al-cross-border)."
-version: 0.2
+version: 0.3
+type: computation
 jurisdiction: AL
 tax_year: 2026
-last_updated: 2026-10-23
+last_updated: 2026-11-14
 depends_on:
   - payroll-workflow-base
 category: international
@@ -38,16 +39,16 @@ See also: `albania-social-contributions` (contribution rules in full, self-emplo
 | Maximum monthly base, social contributions | ALL 186,416 (ALL 176,416 to 31.12.2025) | 2026 | [tatime.gov.al notice, 14.01.2026](https://tatime.gov.al/nga-1-janari-2026-rritet-paga-minimale-dhe-maksimale/); Law 7703/1993 art. 10 |
 | Maximum base, health contribution | None: full gross pay | 2026 | [Instruction 26/2023, payroll form item 24](https://tatime.gov.al/wp-content/uploads/2026/09/Udhezimi-nr-26-date-8.9.2023-Per-tatimin-mbi-te-ardhuart.pdf); Law 10383/2011 art. 7(1) |
 | Social insurance, employee working more than 87 hours a month | Employer 15.0%, employee 9.5% (total 24.5%) | 2026 | [Decision 77/2015 ch. III para. 3(a)](https://www.issh.gov.al/wp-content/uploads/2026/08/VENDIM-NR.-77-DATE-28.1.2015-PER-KONTRIBUTET-E-DETYRUESHME-DHE-PERFITIMET-NGA-SISTEMI-I-SIGURIMEVE-SHOQERORE-DHE-SIGURIMI-I-KUJDESIT-SHENDETESOR.pdf) |
-| Social insurance, employee working less than 87 hours a month | Employer 13.9%, employee 9.4% (total 23.3%) | 2026 | Decision 77/2015 ch. III para. 4(a) |
-| Social insurance, contract shorter than one week | 0.3% of gross, employer only | 2026 | Decision 77/2015 ch. III para. 5(a) |
+| Social insurance, employee working less than 87 hours a month | Employer 13.9%, employee 9.4% (total 23.3%) | 2026 | [Decision 77/2015 ch. III para. 4(a)](https://www.issh.gov.al/wp-content/uploads/2026/08/VENDIM-NR.-77-DATE-28.1.2015-PER-KONTRIBUTET-E-DETYRUESHME-DHE-PERFITIMET-NGA-SISTEMI-I-SIGURIMEVE-SHOQERORE-DHE-SIGURIMI-I-KUJDESIT-SHENDETESOR.pdf) |
+| Social insurance, contract shorter than one week | 0.3% of gross, employer only | 2026 | [Decision 77/2015 ch. III para. 5(a)](https://www.issh.gov.al/wp-content/uploads/2026/08/VENDIM-NR.-77-DATE-28.1.2015-PER-KONTRIBUTET-E-DETYRUESHME-DHE-PERFITIMET-NGA-SISTEMI-I-SIGURIMEVE-SHOQERORE-DHE-SIGURIMI-I-KUJDESIT-SHENDETESOR.pdf) |
 | Health insurance, all employees | Employer 1.7%, employee 1.7% (total 3.4%) | 2026 | Decision 77/2015 ch. III paras. 3(b), 4(b), 5(b); [Law 10383/2011 art. 8](https://fsdksh.gov.al/project/ligji-i-fondit/) |
 | Employment income tax (TAP), annual base | 13% up to ALL 2,040,000; 23% above | 2026 | [Law 29/2023 art. 24(1)](https://tatime.gov.al/wp-content/uploads/2026/09/Ligj-Nr.-29-2023-Per-Tatimin-mbi-te-Ardhurat-i-ndryshuar.pdf) |
-| TAP, monthly base | 13% up to ALL 170,000; 23% above | 2026 | Instruction 26/2023 para. 24.1 |
-| Monthly deduction, gross up to ALL 50,000 | ALL 50,000 (1/12 of ALL 600,000) | 2026 | Law 29/2023 arts. 22(1)(a), 65(1) |
-| Monthly deduction, gross ALL 50,001 to 60,000 | ALL 35,000 (1/12 of ALL 420,000) | 2026 | Law 29/2023 arts. 22(1)(b), 65(1) |
-| Monthly deduction, gross above ALL 60,000 | ALL 30,000 (1/12 of ALL 360,000) | 2026 | Law 29/2023 arts. 22(1)(c), 65(1) |
-| Voluntary pension contribution withheld from pay | Deducted from the TAP base, up to the minimum wage a month | 2026 | Law 29/2023 art. 20; Instruction 26 payroll form item 26 |
-| Payment to a non-employee individual (no status declaration, not employment) | 15% of the gross | 2026 | Law 29/2023 art. 65(1)(b) |
+| TAP, monthly base | 13% up to ALL 170,000; 23% above | 2026 | [Instruction 26/2023 para. 24.1](https://tatime.gov.al/wp-content/uploads/2026/09/Udhezimi-nr-26-date-8.9.2023-Per-tatimin-mbi-te-ardhuart.pdf) |
+| Monthly deduction, gross up to ALL 50,000 | ALL 50,000 (1/12 of ALL 600,000) | 2026 | [Law 29/2023 arts. 22(1)(a), 65(1)](https://tatime.gov.al/wp-content/uploads/2026/09/Ligj-Nr.-29-2023-Per-Tatimin-mbi-te-Ardhurat-i-ndryshuar.pdf) |
+| Monthly deduction, gross ALL 50,001 to 60,000 | ALL 35,000 (1/12 of ALL 420,000) | 2026 | [Law 29/2023 arts. 22(1)(b), 65(1)](https://tatime.gov.al/wp-content/uploads/2026/09/Ligj-Nr.-29-2023-Per-Tatimin-mbi-te-Ardhurat-i-ndryshuar.pdf) |
+| Monthly deduction, gross above ALL 60,000 | ALL 30,000 (1/12 of ALL 360,000) | 2026 | [Law 29/2023 arts. 22(1)(c), 65(1)](https://tatime.gov.al/wp-content/uploads/2026/09/Ligj-Nr.-29-2023-Per-Tatimin-mbi-te-Ardhurat-i-ndryshuar.pdf) |
+| Voluntary pension contribution withheld from pay | Deducted from the TAP base, up to the minimum wage a month | 2026 | [Law 29/2023 art. 20](https://tatime.gov.al/wp-content/uploads/2026/09/Ligj-Nr.-29-2023-Per-Tatimin-mbi-te-Ardhurat-i-ndryshuar.pdf); [Instruction 26 payroll form item 26](https://tatime.gov.al/wp-content/uploads/2026/09/Udhezimi-nr-26-date-8.9.2023-Per-tatimin-mbi-te-ardhuart.pdf) |
+| Payment to a non-employee individual (no status declaration, not employment) | 15% of the gross | 2026 | [Law 29/2023 art. 65(1)(b)](https://tatime.gov.al/wp-content/uploads/2026/09/Ligj-Nr.-29-2023-Per-Tatimin-mbi-te-Ardhurat-i-ndryshuar.pdf) |
 | Late-payment interest (art. 76) | 7.8% a year from 11.04.2026, confirmed from 08.10.2026 | 2026 | [tatime.gov.al: Normat e interesit](https://tatime.gov.al/institucioni/publikime/normat-e-interesit/) |
 
 The ceiling rose by the same ALL 10,000 as the minimum wage, not by the same percentage (tatime.gov.al notice of 14.01.2026). Law 7703/1993 art. 10 sets the employer social rate for sickness, maternity and pensions at 13.8%; the 15.0% in Decision 77/2015 adds the employer-only work-accident (0.3%) and unemployment (0.9%) branches.
@@ -209,22 +210,22 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Law No. 29/2023 "Për tatimin mbi të ardhurat", consolidated (General Directorate of Taxes copy), arts. 4, 12, 20, 22 to 24, 61, 65 to 67 | https://tatime.gov.al/wp-content/uploads/2026/09/Ligj-Nr.-29-2023-Per-Tatimin-mbi-te-Ardhurat-i-ndryshuar.pdf | 2026-10-23 |
-| General Instruction No. 26 of 8.9.2023, consolidated to Instruction No. 9 of 12.3.2026, paras. 4.8, 4.9, 9.4, 24.1, 65, 66 and Annex 2 (listëpagesa filing notes, items 8 to 33) | https://tatime.gov.al/wp-content/uploads/2026/09/Udhezimi-nr-26-date-8.9.2023-Per-tatimin-mbi-te-ardhuart.pdf | 2026-10-23 |
-| Law No. 9920/2008 "Për procedurat tatimore", consolidated to Law No. 79/2025, arts. 76, 111, 113 to 119 | https://tatime.gov.al/wp-content/uploads/2026/10/Ligj-Nr-9920-Dt-2008.05.19-perditesuar-1.pdf | 2026-10-23 |
-| General Directorate of Taxes, "Nga 1 janari 2026, rritet paga minimale dhe maksimale" (14.01.2026) | https://tatime.gov.al/nga-1-janari-2026-rritet-paga-minimale-dhe-maksimale/ | 2026-10-23 |
-| General Directorate of Taxes, tax calendar: listëpagesa | https://tatime.gov.al/kalendari_tatimor/listepagesa/ | 2026-10-23 |
-| General Directorate of Taxes, form models (E-SIG 025/a.1, 025/a.2, 027/a and filing notes) | https://tatime.gov.al/institucioni/publikime/modele-dokumentash-tatimore/ | 2026-10-23 |
-| General Directorate of Taxes, payroll Q&A | https://tatime.gov.al/pyetje-pergjigje-per-listepagesat/ | 2026-10-23 |
-| General Directorate of Taxes, interest rates for late-payment interest | https://tatime.gov.al/institucioni/publikime/normat-e-interesit/ | 2026-10-23 |
-| Council of Ministers Decision No. 776 of 19.12.2025 on the national minimum wage (ISSH copy) | https://www.issh.gov.al/wp-content/uploads/2026/08/VKM-NR.-776-DATE-19.12.2025-PER-PERCAKTIMIN-E-PAGES-MINIMALE-NE-SHKALLE-VENDI.pdf | 2026-10-23 |
-| Council of Ministers Decision No. 77 of 28.1.2015 on compulsory contributions, consolidated to Decision No. 702 of 13.11.2024 (ISSH copy), chs. II and III | https://www.issh.gov.al/wp-content/uploads/2026/08/VENDIM-NR.-77-DATE-28.1.2015-PER-KONTRIBUTET-E-DETYRUESHME-DHE-PERFITIMET-NGA-SISTEMI-I-SIGURIMEVE-SHOQERORE-DHE-SIGURIMI-I-KUJDESIT-SHENDETESOR.pdf | 2026-10-23 |
-| Law No. 7703/1993 "Për sigurimet shoqërore", consolidated (ISSH copy), arts. 7, 9, 10, 13 | https://www.issh.gov.al/wp-content/uploads/2026/08/LIGJ-NR.-7703-DATE-11.5.1993-PER-SIGURIMET-SHOQERORE-NE-REPUBLIKEN-E-SHQIPERISE-I-NDRYSHUAR-1-1.pdf | 2026-10-23 |
-| Instruction No. 23 of 9.12.2014 on collection of compulsory contributions, consolidated to Instruction No. 16 of 8.7.2026 (ISSH copy), paras. 4 and 6 | https://www.issh.gov.al/wp-content/uploads/2026/08/UDHEZIM-NR.-23-DATE-09.12.2014-PER-MBLEDHJEN-E-KONTRIBUTEVE-TE-DETYRUESHME-TE-SIGURIMEVE-SHOQERORE-DHE-SHENDETESORE-i-perditesuar.pdf | 2026-10-23 |
-| Law No. 10383/2011 on compulsory health insurance, consolidated (FSDKSH), arts. 6 to 8 | https://fsdksh.gov.al/project/ligji-i-fondit/ | 2026-10-23 |
-| Social Insurance Institute, compulsory insurance | https://www.issh.gov.al/sigurimi-i-detyruar/ | 2026-10-23 |
-| Social Insurance Institute, social insurance for foreigners | https://www.issh.gov.al/sigurimet-shoqerore-per-te-huajt-ne-shqiperi/ | 2026-10-23 |
-| Social Insurance Institute, bilateral agreements in force | https://www.issh.gov.al/shtetet-me-te-cilat-shqiperia-ka-marreveshje/ | 2026-10-23 |
+| Law No. 29/2023 "Për tatimin mbi të ardhurat", consolidated (General Directorate of Taxes copy), arts. 4, 12, 20, 22 to 24, 61, 65 to 67 | https://tatime.gov.al/wp-content/uploads/2026/09/Ligj-Nr.-29-2023-Per-Tatimin-mbi-te-Ardhurat-i-ndryshuar.pdf | 2026-11-14 |
+| General Instruction No. 26 of 8.9.2023: read for consolidated to Instruction No. 9 of 12.3.2026, paras. 4.8, 4.9, 9.4, 24.1, 65, 66 and Annex 2 (listëpagesa filing notes, items 8 to 33) | https://tatime.gov.al/wp-content/uploads/2026/09/Udhezimi-nr-26-date-8.9.2023-Per-tatimin-mbi-te-ardhuart.pdf | 2026-11-14 |
+| Law No. 9920/2008 "Për procedurat tatimore", consolidated to Law No. 79/2025, arts. 76, 111, 113 to 119 | https://tatime.gov.al/wp-content/uploads/2026/10/Ligj-Nr-9920-Dt-2008.05.19-perditesuar-1.pdf | 2026-11-14 |
+| General Directorate of Taxes, notice "Nga 1 janari 2026, rritet paga minimale dhe maksimale" (14.01.2026): read for the 2026 minimum and maximum contribution bases | https://tatime.gov.al/nga-1-janari-2026-rritet-paga-minimale-dhe-maksimale/ | 2026-11-14 |
+| General Directorate of Taxes: read for tax calendar: listëpagesa | https://tatime.gov.al/kalendari_tatimor/listepagesa/ | 2026-11-14 |
+| General Directorate of Taxes: read for form models (E-SIG 025/a.1, 025/a.2, 027/a and filing notes) | https://tatime.gov.al/institucioni/publikime/modele-dokumentash-tatimore/ | 2026-11-14 |
+| General Directorate of Taxes: read for payroll Q&A | https://tatime.gov.al/pyetje-pergjigje-per-listepagesat/ | 2026-11-14 |
+| General Directorate of Taxes: read for interest rates for late-payment interest | https://tatime.gov.al/institucioni/publikime/normat-e-interesit/ | 2026-11-14 |
+| Council of Ministers Decision No. 776 of 19.12.2025 on the national minimum wage (ISSH copy): read for the 2026 minimum wage of ALL 50,000 | https://www.issh.gov.al/wp-content/uploads/2026/08/VKM-NR.-776-DATE-19.12.2025-PER-PERCAKTIMIN-E-PAGES-MINIMALE-NE-SHKALLE-VENDI.pdf | 2026-11-14 |
+| Council of Ministers Decision No. 77 of 28.1.2015 on compulsory contributions: read for consolidated to Decision No. 702 of 13.11.2024 (ISSH copy), chs. II and III | https://www.issh.gov.al/wp-content/uploads/2026/08/VENDIM-NR.-77-DATE-28.1.2015-PER-KONTRIBUTET-E-DETYRUESHME-DHE-PERFITIMET-NGA-SISTEMI-I-SIGURIMEVE-SHOQERORE-DHE-SIGURIMI-I-KUJDESIT-SHENDETESOR.pdf | 2026-11-14 |
+| Law No. 7703/1993 "Për sigurimet shoqërore", consolidated (ISSH copy), arts. 7, 9, 10, 13 | https://www.issh.gov.al/wp-content/uploads/2026/08/LIGJ-NR.-7703-DATE-11.5.1993-PER-SIGURIMET-SHOQERORE-NE-REPUBLIKEN-E-SHQIPERISE-I-NDRYSHUAR-1-1.pdf | 2026-11-14 |
+| Instruction No. 23 of 9.12.2014 on collection of compulsory contributions: read for consolidated to Instruction No. 16 of 8.7.2026 (ISSH copy), paras. 4 and 6 | https://www.issh.gov.al/wp-content/uploads/2026/08/UDHEZIM-NR.-23-DATE-09.12.2014-PER-MBLEDHJEN-E-KONTRIBUTEVE-TE-DETYRUESHME-TE-SIGURIMEVE-SHOQERORE-DHE-SHENDETESORE-i-perditesuar.pdf | 2026-11-14 |
+| Law No. 10383/2011 on compulsory health insurance, consolidated (FSDKSH), arts. 6 to 8 | https://fsdksh.gov.al/project/ligji-i-fondit/ | 2026-11-14 |
+| Social Insurance Institute: read for compulsory insurance | https://www.issh.gov.al/sigurimi-i-detyruar/ | 2026-11-14 |
+| Social Insurance Institute: read for social insurance for foreigners | https://www.issh.gov.al/sigurimet-shoqerore-per-te-huajt-ne-shqiperi/ | 2026-11-14 |
+| Social Insurance Institute: read for bilateral agreements in force | https://www.issh.gov.al/shtetet-me-te-cilat-shqiperia-ka-marreveshje/ | 2026-11-14 |
 
 Not yet confirmed: when and on which form a resident employee of a foreign employer with no Albanian payroll agent pays the tax during the year (Instruction 26 para. 4.8 gives the duty, not the timing); how the listëpagesa rounds contribution and tax amounts (the examples here are unrounded); how the ALL 186,416 social cap is split between two employers in practice (Instruction 23 and listëpagesa categories 8 to 10 set the rules, not worked through today); whether art. 117 (withholding agents) or only art. 114 applies to employee contributions withheld but not paid; the ISSH page still says ALL 10,000 for every late listëpagesa and Instruction 23 para. 6.2 still says ALL 500,000 or 250,000 for an undeclared worker, while the consolidated Law 9920/2008 arts. 113 and 119 give the amounts in the table (this skill follows the law); whether the E-SIG 025/a form codes on tatime.gov.al match the current e-Filing screens; the E-SIG 027/a filing notes on tatime.gov.al still say the form goes in at least 48 hours before work starts, while Instruction 23/2014 para. 4.1 (consolidated to 2026) and Law 9920/2008 art. 119(1) say at least one calendar day (this skill follows the law).
 
