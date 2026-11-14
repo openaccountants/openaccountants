@@ -28,7 +28,7 @@ Basis for 2026: the law is the State Budget 2026 (Lei 69/X/2025, in force 1 Janu
 | Ice for licensed fish preservation | Exempt | 2026 | https://boe.incv.cv/Bulletins/DownloadAct?id=89137 |
 | Water for irrigated farming | Exempt | 2026 | https://boe.incv.cv/Bulletins/DownloadAct?id=89137 |
 | Goods moved out of the exempt list (Budget art. 32, Anexo I) | 15%, for the listed tariff codes | 2026 | https://boe.incv.cv/Bulletins/DownloadAct?id=89137 |
-| REMPE, micro turnover | Up to CVE 5,000,000: no IVA charged | 2026 | https://www.mf.gov.cv/documents/54571/273413/Desdobr%C3%A1vel%20REMPE.pdf |
+| REMPE, micro turnover | Up to 5 mil contos (CVE 5,000,000, computed: 1 conto = CVE 1,000): no IVA charged | 2026 | https://www.mf.gov.cv/documents/54571/273413/Desdobr%C3%A1vel%20REMPE.pdf |
 
 ## The base
 

@@ -28,8 +28,8 @@ Basis for 2026: the law is the State Budget 2026 (Lei 69/X/2025, in force 1 Janu
 | TEU (REMPE art. 25) | 4% of gross sales | 2026 | https://boe.incv.cv/Bulletins/Download/1891 |
 | TEU minimum, micro company turnover up to CVE 1,000,000 | CVE 30,000 a year, pro rata in a start year | 2026 | same |
 | TEU retention by organised-accounts payers (art. 25-A) | 4% on account of the quarter | 2026 | https://boe.incv.cv/Bulletins/Download/5549 |
-| REMPE micro | Turnover up to CVE 5,000,000 and/or up to 5 workers | 2026 | https://www.mf.gov.cv/documents/54571/273413/Desdobr%C3%A1vel%20REMPE.pdf |
-| REMPE small | Turnover CVE 5,000,000 to 10,000,000 and/or 6 to 10 workers | 2026 | same |
+| REMPE micro | Turnover up to 5 mil contos (CVE 5,000,000, computed: 1 conto = CVE 1,000) and/or up to 5 workers | 2026 | https://www.mf.gov.cv/documents/54571/273413/Desdobr%C3%A1vel%20REMPE.pdf |
+| REMPE small | Turnover from 5 to 10 mil contos (CVE 5,000,000 to 10,000,000, computed: 1 conto = CVE 1,000) and/or 6 to 10 workers | 2026 | same |
 | REMPE exit | Over 30% above the art. 3(1)(c) turnover in a year: excluded next year | 2026 | https://boe.incv.cv/Bulletins/Download/6150 |
 | Qualified minimum tax (IMG) | 15%, groups with EUR 750,000,000 revenue in 2 of the prior 4 years; detail in separate rules | 2026 | https://boe.incv.cv/Bulletins/DownloadAct?id=89137 |
 | Capital income withholding (art. 85) | 20%, some items 10%; on account for organised accounts, otherwise final | 2026 | https://boe.incv.cv/Bulletins/Download/1957 |
