@@ -39,7 +39,7 @@ The ordinary method covers registration, base/rates, return mapping, input deduc
 | Newspapers/magazines | 10%, subject to publication definition | VAT Act §85a [text](https://www.finlex.fi/fi/lainsaadanto/1993/1501) |
 | Small-business exemption | Both current and preceding calendar-year counted turnover at most EUR 20,000; no voluntary registration | VAT Act §3 [text](https://www.finlex.fi/fi/lainsaadanto/1993/1501) |
 | Longer period application | Quarterly turnover ceiling EUR 100,000; annual EUR 30,000 | Procedure Act §12 [text](https://www.finlex.fi/fi/lainsaadanto/2016/768); [Vero tax periods](https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/vat/when-to-file-and-pay/tax-period/) |
-| Cash basis ordinary domestic sales | Calendar turnover at most EUR 500,000 or other statutory qualifying accounting status; 12-month collection backstop | VAT Act §§137,143 [text](https://www.finlex.fi/fi/lainsaadanto/1993/1501) |
+| Cash basis ordinary domestic sales | Calendar turnover at most EUR 500,000 or other statutory qualifying accounting status; 12-month collection backstop | VAT Act §§ 137 and 143 [text](https://www.finlex.fi/fi/lainsaadanto/1993/1501) |
 | Small-error correction alternative | Tax difference at most EUR 500, subject to timing/data exclusions | Procedure Act §25 [text](https://www.finlex.fi/fi/lainsaadanto/2016/768); [return instructions](https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/vat/when-to-file-and-pay/) |
 | EU cross-border consumer distance-sale/TBE threshold | EUR 10,000 combined current and preceding-year test, with single-state establishment and other §69m conditions | VAT Act §§63a,69i,69m [text](https://www.finlex.fi/fi/lainsaadanto/1993/1501) |
 
