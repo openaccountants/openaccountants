@@ -1,10 +1,11 @@
 ---
 name: ro-income-tax
 description: "Use this skill for Romanian income tax on self-employed individuals for tax year 2026: PFA (persoană fizică autorizată), II (întreprindere individuală), IF (întreprindere familială) and liberal professions. Covers the flat 10% tax on net income in the real system (sistem real), income norms (norma de venit) and when they are barred, gross income and deductible, capped and non-deductible expenses, the deduction of CAS and CASS from the base, the 70% five-year loss carry-forward, the Declarația unică filed and paid by 25 May 2027 on actual 2026 figures, and the interest, penalties and fines for late filing or payment. Trigger phrases: impozit pe venit PFA, sistem real, norma de venit, cheltuieli deductibile PFA, Declarația unică 2027, PFA tax Romania, freelancer tax Romania. Out of scope: ro-cas-cass (contribution rules in depth), ro-employee-income-tax (salary, rent, investments), ro-corporate-income-tax (SRL), ro-vat-return, ro-cross-border."
-version: 2.2
+version: 2.3
+type: computation
 jurisdiction: RO
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-14
 depends_on:
   - income-tax-workflow-base
 category: international
@@ -33,23 +34,23 @@ The pension (CAS) and health (CASS) contributions on the same income are set out
 | Item | Rate or amount | Year | Source URL |
 |---|---|---|---|
 | Income tax on net income from independent activities | 10% | 2026 | Fiscal Code art. 64(1)(a), https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm |
-| Tax on an income norm | 10% of the norm, adjusted where allowed | 2026 | art. 69^2(1), same page |
+| Tax on an income norm | 10% of the norm, adjusted where allowed | 2026 | art. 69^2(1), https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm |
 | National gross minimum wage used for 2026 thresholds (wage in force on 1 January 2026) | RON 4,050 a month | 2026 | art. 135^1(3), same page; HG 1506/2024 art. 1, https://static.anaf.ro/static/10/Anaf/legislatie/HG_1506_2024.pdf |
 | Minimum wage from 1 July 2026 (does not change 2026 thresholds or norm floors) | RON 4,325 a month | 2026 | HG 146/2026 art. 1, https://static.anaf.ro/static/10/Anaf/legislatie/HG_146_2026.pdf |
 | Floor for any income norm: 12 minimum wages in force on 1 January | RON 48,600 | 2026 | art. 69(3); ANAF DGRFP Brașov 2026 summary, p. 33, https://static.anaf.ro/static/10/Brasov/Brasov/modificari_fiscale_2026.pdf |
-| Gross income above which norm taxpayers must move to the real system the next year | EUR 25,000 equivalent, at the BNR average annual rate | 2026 | art. 69(9), Fiscal Code page |
-| Lock-in after opting for the real system | 2 consecutive fiscal years, renewed automatically | 2026 | art. 69^1(2), same page |
-| CAS (pension), self-employed: base chosen by the taxpayer, at least 12 or 24 minimum wages | 25%; minimum CAS RON 12,150 (12 wages) or RON 24,300 (24 wages) | 2026 | art. 138(a), art. 148; see ro-cas-cass |
-| CASS (health), self-employed: base is actual net income or norm, floor 6 and cap 72 minimum wages | 10%; floor RON 2,430, cap RON 29,160 | 2026 | art. 156, art. 170(1), art. 174(6); ANAF Brașov summary, p. 38 |
-| Loss carry-forward (real system) | 70% of the same source's net income, 5 following years | 2026 | art. 118(4)-(5), Fiscal Code page |
-| Protocol (entertainment) expenses | up to 2% of the calculation base | 2026 | art. 68(5)(b), (6) |
-| Private scholarships | up to 5% of the calculation base | 2026 | art. 68(5)(a), (6) |
-| Voluntary or occupational pension contributions; voluntary health insurance | EUR 400 a year each, per person | 2026 | art. 68(5)(g), (g^1), (h) |
-| Sports subscriptions | EUR 100 a year per person | 2026 | art. 68(5)(r) |
-| Membership of professional associations (voluntary) | EUR 4,000 a year | 2026 | art. 68(5)(p) |
-| Compulsory professional body contributions | up to 5% of gross income | 2026 | art. 68(5)(q) |
-| Cars not used only for the business (up to 3,500 kg, up to 9 seats) | 50% of running costs not deductible | 2026 | art. 68(7)(k) |
-| Income from an unidentified source | 70% | 2026 | art. 117 |
+| Gross income above which norm taxpayers must move to the real system the next year | EUR 25,000 equivalent, at the BNR average annual rate | 2026 | art. 69(9), Fiscal Code page, https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm |
+| Lock-in after opting for the real system | 2 consecutive fiscal years, renewed automatically | 2026 | art. 69^1(2), https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm |
+| CAS (pension), self-employed: base chosen by the taxpayer, at least 12 or 24 minimum wages | 25%; minimum CAS RON 12,150 (12 wages) or RON 24,300 (24 wages) | 2026 | art. 138(a), art. 148; see ro-cas-cass, https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm |
+| CASS (health), self-employed: base is actual net income or norm, floor 6 and cap 72 minimum wages | 10%; floor RON 2,430, cap RON 29,160 | 2026 | art. 156, art. 170(1), art. 174(6); ANAF Brașov summary, p. 38, https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm |
+| Loss carry-forward (real system) | 70% of the same source's net income, 5 following years | 2026 | art. 118(4)-(5), Fiscal Code page, https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm |
+| Protocol (entertainment) expenses | up to 2% of the calculation base | 2026 | art. 68(5)(b), (6), https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm |
+| Private scholarships | up to 5% of the calculation base | 2026 | art. 68(5)(a), (6), https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm |
+| Voluntary or occupational pension contributions; voluntary health insurance | EUR 400 a year each, per person | 2026 | art. 68(5)(g), (g^1), (h), https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm |
+| Sports subscriptions | EUR 100 a year per person | 2026 | art. 68(5)(r), https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm |
+| Membership of professional associations (voluntary) | EUR 4,000 a year | 2026 | art. 68(5)(p), https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm |
+| Compulsory professional body contributions | up to 5% of gross income | 2026 | art. 68(5)(q), https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm |
+| Cars not used only for the business (up to 3,500 kg, up to 9 seats) | 50% of running costs not deductible | 2026 | art. 68(7)(k), https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm |
+| Income from an unidentified source | 70% | 2026 | art. 117, https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm |
 
 ## The taxable base
 
@@ -198,11 +199,11 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Legea 227/2015, Codul fiscal, ANAF consolidated text (last update Legea 170/2026): art. 64, 67, 67^1, 68, 68^3, 69, 69^1, 69^2, 117, 118, 120, 121, 122, 123, 131, 135^1, 137, 138, 148, 151, 155, 156, 170, 174 | https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm | 2026-10-23 |
-| Legea 207/2015, Codul de procedură fiscală, ANAF consolidated text (last update Legea 170/2026): art. 174, 175, 176, 181, 336 | https://static.anaf.ro/static/10/Anaf/cod_procedura/Cod_Procedura_Fiscala_2023.htm | 2026-10-23 |
-| HG 1506/2024, minimum wage RON 4,050 from 1 January 2025 | https://static.anaf.ro/static/10/Anaf/legislatie/HG_1506_2024.pdf | 2026-10-23 |
-| HG 146/2026, minimum wage RON 4,325 from 1 July 2026 | https://static.anaf.ro/static/10/Anaf/legislatie/HG_146_2026.pdf | 2026-10-23 |
-| ANAF DGRFP Brașov, summary of 2026 tax changes (21 July 2026), pp. 33 and 38: norms set on RON 4,050; CASS cap 72 wages, RON 291,600 | https://static.anaf.ro/static/10/Brasov/Brasov/modificari_fiscale_2026.pdf | 2026-10-23 |
-| ANAF, Declarația unică online filing (SPV) | https://www.anaf.ro/anaf/internet/ANAF/servicii_online/declaratia_unica | 2026-10-23 |
+| Legea 227/2015, Codul fiscal, ANAF consolidated text (last update Legea 170/2026): art. 64, 67, 67^1, 68, 68^3, 69, 69^1, 69^2, 117, 118, 120, 121, 122, 123, 131, 135^1, 137, 138, 148, 151, 155, 156, 170, 174 | https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm | 2026-11-14, read for art. 64, 68, 69, 69^1, 69^2, 117, 118, 135^1, 138, 148, 156, 170 and 174: rates, deduction limits, norms and losses |
+| Legea 207/2015, Codul de procedură fiscală, ANAF consolidated text (last update Legea 170/2026): art. 174, 175, 176, 181, 336 | https://static.anaf.ro/static/10/Anaf/cod_procedura/Cod_Procedura_Fiscala_2023.htm | 2026-11-14, read for art. 174, 176 and 181: interest and penalty rates |
+| HG 1506/2024, minimum wage RON 4,050 from 1 January 2025 | https://static.anaf.ro/static/10/Anaf/legislatie/HG_1506_2024.pdf | 2026-11-14, read for art. 1: minimum wage RON 4,050 |
+| HG 146/2026, minimum wage RON 4,325 from 1 July 2026 | https://static.anaf.ro/static/10/Anaf/legislatie/HG_146_2026.pdf | 2026-11-14, read for art. 1: minimum wage RON 4,325 from 1 July 2026 |
+| ANAF DGRFP Brașov, summary of 2026 tax changes (21 July 2026), pp. 33 and 38: norms set on RON 4,050; CASS cap 72 wages, RON 291,600 | https://static.anaf.ro/static/10/Brasov/Brasov/modificari_fiscale_2026.pdf | 2026-11-14, read for pp. 33 and 38: norm floor and the 72-wage CASS cap |
+| ANAF, Declarația unică online filing (SPV) | https://www.anaf.ro/anaf/internet/ANAF/servicii_online/declaratia_unica | 2026-11-14, read for the online filing route for the Declarația unică |
 
 Not yet confirmed: the early-payment discount (art. 121) for amounts paid in 2027 is not set yet. The 2026 norm amounts for each county and activity were not read; use the regional directorate's published list. The norm activity list is cited as OMFP 925/2017 from the reference note in the Fiscal Code; the order itself was not read.
