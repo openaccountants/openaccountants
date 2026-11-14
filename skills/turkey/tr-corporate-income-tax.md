@@ -51,7 +51,7 @@ Turkish corporate income tax is charged under the Kurumlar Vergisi Kanunu no. 55
 | Withholding on loan interest to non-resident companies | 0% on loans from foreign states, international bodies and foreign banks or lenders that lend to the public; 5% on deferred-payment charges for goods; 10% on other loans | 2026 | KVK art. 30(1)(ç); Decision 2009/14593; GİB table of art. 30 rates, https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Fyardim-kaynaklar%2Fyararli-bilgiler%2Fkvk-nun-30-ve-gecici14-ile-gvk-nun-gecici-67inci-maddeleri-uyarinca-dar-mukellef.pdf |
 | Withholding on construction work of more than one year by non-residents | 5% (1% for rail systems, shipbuilding and nuclear plants) | 2026 | KVK art. 30(1)(a); GİB table of art. 30 rates, https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Fyardim-kaynaklar%2Fyararli-bilgiler%2Fkvk-nun-30-ve-gecici14-ile-gvk-nun-gecici-67inci-maddeleri-uyarinca-dar-mukellef.pdf |
 | Foreign participation exemption, minimum holding | 10% for at least one year, foreign tax burden at least 15% | 2026 | KVK art. 5(1)(b), https://www.mevzuat.gov.tr/MevzuatMetin/1.5.5520.pdf |
-| Late-payment surcharge | 3.7% a month | 2026 | Law 6183 art. 51, https://www.mevzuat.gov.tr/MevzuatMetin/1.5.6183.pdf |
+| Late-payment surcharge | 3.7% a month | 2026 | Law 6183 art. 51, https://www.mevzuat.gov.tr/MevzuatMetin/1.3.6183.pdf |
 
 ## The taxable base
 
@@ -164,9 +164,9 @@ expected:
 | Kurumlar Vergisi Kanunu no. 5520, consolidated (to Law 7590): arts. 1, 3, 5, 6, 9, 10(1)(i)-(j), 11, 12, 14, 16, 21, 30, 32, 32/C, 33, ek 1, ek 6, ek 8, ek 10, provisional art. 17, amendment table | https://www.mevzuat.gov.tr/MevzuatMetin/1.5.5520.pdf | 2026-10-31 |
 | Law 7582, Bazı Kanunlarda Değişiklik Yapılmasına Dair Kanun (accepted 21 May 2026), Official Gazette 4 June 2026 no. 33270: arts. 6, 7, 8, 9, 14 | https://www.resmigazete.gov.tr/eskiler/2026/06/20260604-1.htm | 2026-10-31 |
 | KVK, archived consolidated text of 6 October 2024 (arts. 10(1)(i) and 32(8) before Law 7582) | https://web.archive.org/web/20241006151859/https://www.mevzuat.gov.tr/MevzuatMetin/1.5.5520.pdf | 2026-10-31 |
-| Vergi Usul Kanunu no. 213, consolidated: provisional art. 37 (inflation accounting), arts. mükerrer 28, 344, 352, table 1 | https://www.mevzuat.gov.tr/MevzuatMetin/1.5.213.pdf | 2026-10-31 |
-| Gelir Vergisi Kanunu no. 193, mükerrer art. 120 (provisional tax) | https://www.mevzuat.gov.tr/MevzuatMetin/1.5.193.pdf | 2026-10-31 |
-| Law 6183, art. 51 | https://www.mevzuat.gov.tr/MevzuatMetin/1.5.6183.pdf | 2026-10-31 |
+| Vergi Usul Kanunu no. 213, consolidated: provisional art. 37 (inflation accounting), arts. mükerrer 28, 344, 352, table 1 | https://www.mevzuat.gov.tr/MevzuatMetin/1.4.213.pdf | 2026-10-31 |
+| Gelir Vergisi Kanunu no. 193, mükerrer art. 120 (provisional tax) | https://www.mevzuat.gov.tr/MevzuatMetin/1.4.193.pdf | 2026-10-31 |
+| Law 6183, art. 51 | https://www.mevzuat.gov.tr/MevzuatMetin/1.3.6183.pdf | 2026-10-31 |
 | Presidential Decision 9286 (dividend withholding 10% to 15%), Official Gazette 22 December 2024 no. 32760 | https://www.resmigazete.gov.tr/eskiler/2024/12/20241222-15.pdf | 2026-10-31 |
 | GİB, Gelir Vergisi Kanununun 94 üncü maddesinde yer alan kesinti oranları (dividend withholding scope) | https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Fyardim-kaynaklar%2Fyararli-bilgiler%2Fgelir-vergisi-kanununun-94uncu-maddesinde-yer-alan-kesinti-oranlari.pdf | 2026-10-31 |
 | GİB, Kurumlar vergisi oranları, 2026 ve 2025 hesap dönemi (25%, 30%, IPO 23%, export 20%, manufacturing 24%) | https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Fyardim-kaynaklar%2Fyararli-bilgiler%2Fkurumlar-vergisi-oranlari.pdf | 2026-10-31 |
