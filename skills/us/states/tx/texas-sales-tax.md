@@ -1,7 +1,7 @@
 ---
 name: texas-sales-tax
 description: Texas sales and use tax for 2026, from the Texas Comptroller of Public Accounts and Tax Code Chapter 151. Covers the 6.25% state rate and up to 2% local tax (8.25% maximum), local sourcing by place of business, the $500,000 remote seller safe harbor and the 1.75% single local use tax rate, marketplace providers, taxable services including the 80% base for data processing and SaaS, resale and exemption certificates (Form 01-339), the manufacturing exemption, occasional sales, use tax, monthly, quarterly and yearly filing on Form 01-114, the 0.5% timely filing and 1.25% prepayment discounts, penalties and 2026 interest at 7.75%. Trigger on "Texas sales tax", "TX sales tax", "Comptroller", "Texas use tax", "Form 01-114", "Texas sales tax permit", "Texas resale certificate", "Texas SaaS tax". Not franchise tax.
-version: "2.1"
+version: "2.2"
 jurisdiction: US-TX
 tax_year: 2026
 last_updated: 2026-11-14
@@ -112,7 +112,7 @@ A remote seller is an out-of-state seller whose only activity in Texas is remote
 
 | Liability | Frequency | Rule |
 | --- | --- | --- |
-| Less than $500 a month or $1,500 a calendar quarter | Quarterly | Section 151.401(b); due the 20th after the quarter ([Tax Code Chapter 151](https://statutes.capitol.texas.gov/Docs/TX/htm/TX.151.htm)) |
+| Less than $500 a month or $1,500 a calendar quarter | Quarterly | Section 151.401(b); due the 20th after the quarter ([Tax Code Chapter 151](https://tcss.legis.texas.gov/resources/TX/htm/TX.151.htm)) |
 | Otherwise | Monthly | Section 151.401(a); due the 20th of the next month ([Tax Code Chapter 151](https://statutes.capitol.texas.gov/Docs/TX/htm/TX.151.htm)) |
 | A period other than monthly, set by the Comptroller | Yearly (or other) | Section 151.405; yearly returns are due 20 January ([Comptroller sales tax page](https://comptroller.texas.gov/taxes/sales/)) |
 - **Electronic payment.** Taxpayers who paid $10,000 or more in a payment category in the preceding state fiscal year must pay electronically (TEXNET, Webfile, EDI or credit card). The Comptroller notifies them at least 60 days before the due date. Those who paid $500,000 or more must pay by TEXNET.
@@ -127,8 +127,8 @@ Only the services in Tax Code Section 151.0101 are taxable. Services not on the 
 
 | Service | Treatment | Condition or exception |
 | --- | --- | --- |
-| Data processing, including SaaS and application service providers | Taxable on 80% of the charge (20% exempt) | Word processing, data entry, storage, manipulation, web hosting and site maintenance, backup, check preparation, payables and receivables. Using a computer as a tool for a professional service (for example, preparing tax returns or original architectural plans) is not data processing ([source](https://comptroller.texas.gov/taxes/publications/96-259.php)) |
-| Information services | Taxable on 80% of the charge (20% exempt) | Newsletters, database subscriptions, market reports, mailing lists. Not taxable when sold to FCC-licensed radio or TV stations or to newspapers published daily, weekly or at other short intervals. Polygraph tests, seminars and medical lab tests are not taxable ([Publication 94-109](https://comptroller.texas.gov/taxes/publications/94-109.php)) |
+| Data processing, including SaaS and application service providers | Taxable on 80% of the charge (derived), 20% exempt (in words on the page) | Word processing, data entry, storage, manipulation, web hosting and site maintenance, backup, check preparation, payables and receivables. Using a computer as a tool for a professional service (for example, preparing tax returns or original architectural plans) is not data processing ([source](https://comptroller.texas.gov/taxes/publications/96-259.php)) |
+| Information services | Taxable on 80% of the charge, 20% exempt (in words on the page) | Newsletters, database subscriptions, market reports, mailing lists. Not taxable when sold to FCC-licensed radio or TV stations or to newspapers published daily, weekly or at other short intervals. Polygraph tests, seminars and medical lab tests are not taxable ([Publication 94-109](https://comptroller.texas.gov/taxes/publications/94-109.php)) |
 | Real property services | Taxable, residential and nonresidential | Landscaping and lawn care, garbage collection, building or grounds cleaning and janitorial, structural pest control, surveying. Not taxable when bought by a homebuilder for a new residential structure, with certification ([Publication 94-157](https://comptroller.texas.gov/taxes/publications/94-157.php)) |
 | Household services by a self-employed individual | Not taxable | Only traditional household services (housekeeping, babysitting, cooking) by a person who is the household's employee and not a subcontractor for a maid service. Pool cleaning is still taxable ([Publication 94-111](https://comptroller.texas.gov/taxes/publications/94-111.php)) |
 | Nonresidential real property repair, restoration or remodeling | Taxable on labor and materials | Excludes adding new usable square footage and scheduled periodic maintenance. Property used as a family dwelling (including apartments, nursing homes and retirement homes) is not nonresidential |
@@ -149,8 +149,8 @@ Only the services in Tax Code Section 151.0101 are taxable. Services not on the 
 | Item | Treatment | Condition |
 | --- | --- | --- |
 | Computer programs, canned or custom | Taxable as tangible personal property | Section 151.009 includes "a computer program" in tangible personal property, with no exclusion for custom programs. The older files said custom software is exempt; that is wrong. Detailed licensing questions: refer ([source](https://statutes.capitol.texas.gov/Docs/TX/htm/TX.151.htm)) |
-| SaaS and hosted software | Data processing, taxable on 80% | See the services table above ([source](https://statutes.capitol.texas.gov/Docs/TX/htm/TX.151.htm)) |
-| Web hosting | Data processing, taxable on 80% | Listed as data processing in Publication 96-259 ([source](https://statutes.capitol.texas.gov/Docs/TX/htm/TX.151.htm)) |
+| SaaS and hosted software | Data processing, taxable on 80% (derived: 20 percent exempt under Section 151.351) | See the services table above ([source](https://tcss.legis.texas.gov/resources/TX/htm/TX.151.htm)) |
+| Web hosting | Data processing, taxable on 80% (derived: 20 percent exempt under Section 151.351) | Listed as data processing in Publication 96-259 ([Publication 96-259](https://comptroller.texas.gov/taxes/publications/96-259.php); [Section 151.351](https://tcss.legis.texas.gov/resources/TX/htm/TX.151.htm)) |
 | Occasional sale | Exempt | One or two retail sales of taxable items (not amusement services) in a 12-month period by a person not habitually selling, or the sale of the entire operating assets of a business or a separate division (Section 151.304) ([source](https://statutes.capitol.texas.gov/Docs/TX/htm/TX.151.htm)) |
 | Agricultural and timber items | Exempt only with an Ag/Timber Number | Section 151.316; the buyer gives Form 01-924, not Form 01-339. Refer for detail ([source](https://statutes.capitol.texas.gov/Docs/TX/htm/TX.151.htm)) |
 
@@ -219,10 +219,10 @@ There is no separate deduction line on the basic return: the audit reconciles de
 | Missing fact | Default |
 | --- | --- |
 | No Form 01-339 for an exempt or resale sale | Treat the sale as taxable; sales without a certificate are presumed taxable on audit ([source](https://comptroller.texas.gov/taxes/publications/96-122.php)) |
-| Remote seller's revenue unknown | Assume above the $500,000 safe harbor until the 12-month total is computed ([source](https://comptroller.texas.gov/taxes/publications/96-122.php)) |
+| Remote seller's revenue unknown | Assume above the $500,000 safe harbor until the 12-month total is computed ([remote sellers](https://comptroller.texas.gov/taxes/sales/remote-sellers.php)) |
 | Local rate unknown | Use the Comptroller's Sales Tax Rate Locator for the address; never a ZIP code |
 | Filing frequency unknown | Follow the Comptroller's letter or account; do not choose one |
-| Mixed service charge not separately stated | Whole charge taxable if the taxable part is more than 5% ([source](https://comptroller.texas.gov/taxes/publications/96-122.php)) |
+| Mixed service charge not separately stated | Whole charge taxable if the taxable part is more than 5% ([Publication 94-127](https://comptroller.texas.gov/taxes/publications/94-127.php)) |
 
 ### Red flags to raise with the client
 
@@ -230,10 +230,10 @@ There is no separate deduction line on the basic return: the audit reconciles de
 | --- | --- |
 | A customer quotes a "tax exempt number" | Form 01-339 says these numbers do not exist; get a completed certificate ([source](https://comptroller.texas.gov/taxes/publications/96-122.php)) |
 | A nonprofit buyer without a Comptroller exemption letter | Nonprofits are not exempt by status alone |
-| Remote sales near $500,000 | The Comptroller's pages disagree at exactly $500,000; get written confirmation ([source](https://comptroller.texas.gov/taxes/publications/96-122.php)) |
+| Remote sales near $500,000 | The Comptroller's pages disagree at exactly $500,000; get written confirmation ([remote sellers](https://comptroller.texas.gov/taxes/sales/remote-sellers.php)) |
 | A Texas-based seller selling only on marketplaces with no permit | A Texas-based seller always needs a permit and must file |
-| Zero returns not filed | A $50 penalty applies to each late return even with no tax due ([source](https://comptroller.texas.gov/taxes/publications/96-122.php)) |
-| Prepayment discount claimed without a timely prepayment | The 1.25% is lost and the shortfall is due with penalty ([source](https://comptroller.texas.gov/taxes/publications/96-122.php)) |
+| Zero returns not filed | A $50 penalty applies to each late return even with no tax due ([Comptroller sales tax page](https://comptroller.texas.gov/taxes/sales/); [Section 151.703(d)](https://tcss.legis.texas.gov/resources/TX/htm/TX.151.htm)) |
+| Prepayment discount claimed without a timely prepayment | The 1.25% is lost and the shortfall is due with penalty ([Comptroller sales tax page](https://comptroller.texas.gov/taxes/sales/); [Section 151.424](https://tcss.legis.texas.gov/resources/TX/htm/TX.151.htm)) |
 
 
 ## Worked cases

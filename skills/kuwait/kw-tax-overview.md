@@ -1,17 +1,18 @@
 ---
 name: kw-tax-overview
 description: "Overview of the Kuwait tax system for tax year 2026. Covers which regime applies: 15% income tax on corporate bodies, 1% Zakat and contribution, 2.5% NLST, the 15% DMTT for large multinational groups, no tax on individual income from work, and the held VAT implementation question. Use as the first stop for what taxes apply in Kuwait, how a company is taxed in Kuwait, Kuwait tax year, tax authority, main deadlines and routing to the detailed Kuwait skills. Read from the Ministry of Finance texts. Not signed off by an accountant."
-version: 0.3
+version: 0.4
+type: situation-rules
 jurisdiction: KW
 category: international
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
 ---
 
-# Kuwait Tax Overview v0.3
+# Kuwait Tax Overview v0.4
 
 Tax year 2026.
 
@@ -31,8 +32,6 @@ Anyone asking which Kuwait tax applies. Each figure's home is the linked skill.
 | Individuals | Exempt on own income from trade or work, unless it represents a corporate body's share (reg. art. 8(2)) | 2026 | https://www.mof.gov.kw/Desicions/Decree/PDF/la2-2008.pdf |
 | Corporate bodies | See [corporate income tax](kw-corporate-income-tax.md) | 2026 | same |
 | Zakat, NLST, DMTT | See corporate Guide for separate statutory scope and conditions | 2026 | https://www.mof.gov.kw/Desicions/Decree/PDF/Law46_2006e.pdf ; https://www.mof.gov.kw/Desicions/Decree/PDF/LawNo19Of2000NationalLabor.pdf ; https://www.mof.gov.kw/Desicions/Decree/PDF/DecreeLawDMTTNo157of2024.pdf |
-| VAT or GST | unverified: current implementation status is a NON-OPERATIVE HOLD, see [VAT](kw-vat-gst.md) | 2026 | https://www.mof.gov.kw/MOFDesicions/mofDesicions1.aspx |
-| Social insurance | unverified: rates, coverage and due dates are held in [payroll](kw-payroll-social.md) | 2026 | unverified |
 
 ## The base
 
