@@ -3,6 +3,8 @@ jurisdiction: VC
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
 covered_by:
+  IT-CORP: vc-corporate-income-tax
+  VAT: vc-vat
   SC: vc-national-insurance
 partial: {}
 ---
