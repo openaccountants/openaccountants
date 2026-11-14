@@ -64,11 +64,11 @@ This skill sits above the regime skills and helps choose between them. For the m
 
 ### The three options at a glance
 
-| Regime | Tax base | Headline rate | Best when | Key limit |
-| --- | --- | --- | --- | --- |
-| Auto-entrepreneur (AE) | Turnover collected | 0.5% (goods) or 1% (services), final | Low costs, high margin, turnover within the limit | MAD 500,000 or 200,000; single-client MAD 80,000 rule |
-| CPU | Turnover x trade coefficient | 10% on the coefficient base, plus droit complementaire | Turnover above AE limits, margin near the coefficient, no full accounts wanted | MAD 2,000,000 or 500,000; excluded professions |
-| RNS or RNR (net profit) | Real net profit | Scale 0% to 37%, never below the cotisation minimale | High real costs, thin margin, or turnover above CPU limits | Books; cotisation minimale floor |
+| Regime | Tax base | Headline rate | Best when | Key limit | Source URL |
+| --- | --- | --- | --- | --- | --- |
+| Auto-entrepreneur (AE) | Turnover collected | 0.5% (goods) or 1% (services), final | Low costs, high margin, turnover within the limit | MAD 500,000 or 200,000; single-client MAD 80,000 rule | https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1 |
+| CPU | Turnover x trade coefficient | 10% on the coefficient base, plus droit complementaire | Turnover above AE limits, margin near the coefficient, no full accounts wanted | MAD 2,000,000 or 500,000; excluded professions | same |
+| RNS or RNR (net profit) | Real net profit | Scale 0% to 37%, never below the cotisation minimale | High real costs, thin margin, or turnover above CPU limits | Books; cotisation minimale floor | same |
 
 RNS (resultat net simplifie) and RNR (resultat net reel) both tax real net profit on the scale; RNR needs fuller accounting. See `morocco-professional-income-tax`.
 
