@@ -24,7 +24,7 @@ partial:
 
 # Wyoming: 2026 tax skills
 
-Wyoming has sales/use tax and employer UI, with no individual or corporate income tax. This batch rewrites sales/use and fills payroll. General corporate income/franchise/gross-receipts computation is not applicable, but SOS annual report/license tax still applies: it is an entity-maintenance job, not a profits tax. The existing `wy-formation` is retained unchanged outside this four-job tax rewrite and is not represented as refreshed2026 coverage. All tax skills are unapproved drafts. Property, minerals, wind-generation and detailed lodging compliance remain separate.
+Wyoming has sales/use tax and employer UI, with no individual or corporate income tax. This batch rewrites sales/use and fills payroll. General corporate income/franchise/gross-receipts computation is not applicable, but SOS annual report/license tax still applies: it is an entity-maintenance job, not a profits tax. `wy-formation` separately covers current2026 domestic formation and SOS maintenance, with series, privacy, creditor and trust boundaries; federal and other-state decisions remain with their owners. All tax skills are unapproved drafts. Property, minerals, wind-generation and detailed lodging compliance remain separate.
 
 ## Domains
 
@@ -33,6 +33,7 @@ Wyoming has sales/use tax and employer UI, with no individual or corporate incom
 | VAT | `wy-sales-tax` | checked against the law; not accountant-reviewed |
 | SC | `wy-payroll` | checked against the law; not accountant-reviewed |
 | PR | `wy-payroll` | checked against the law; not accountant-reviewed |
+| Formation and SOS maintenance | `wy-formation` | checked against the law; not accountant-reviewed |
 
 ## Official sources
 
