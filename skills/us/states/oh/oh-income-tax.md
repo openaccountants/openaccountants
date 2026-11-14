@@ -1,10 +1,10 @@
 ---
 name: oh-income-tax
 description: Compute an Ohio individual's 2026 income tax on Form IT 1040, for residents, part-year residents and nonresidents, including sole proprietors and pass-through owners. Covers the 2026 single nonbusiness rate under R.C. 5747.02 as amended by HB 96 (no tax up to $26,050, then $332.00 plus 2.75% of the excess), the business income deduction (first $250,000, or $125,000 married filing separately) with the 3% rate on the rest, exemptions by modified AGI with the 2026 cut-off of $500,000, the Schedule of Adjustments, credits, the contact-period residency test, estimated tax and penalties. Trigger on "Ohio income tax", "IT 1040", "Ohio business income deduction", "Ohio nonresident", "Ohio estimated tax", "IT 1040ES". Points to school district and municipal income taxes without computing them. Load the federal skills first for federal AGI.
-version: "1.0"
+version: "1.1"
 jurisdiction: US-OH
 tax_year: 2026
-last_updated: 2026-11-13
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
@@ -64,10 +64,10 @@ Out of scope, and where it goes:
 | Nonbusiness income above the band | $332.00 plus 2.75% of the amount over $26,050 | $26,050 to $100,000: $342.00 plus 2.75% of the excess; over $100,000: $2,394.32 plus 3.125% of the excess | [R.C. 5747.02(A)(3)(b) and (c)](https://codes.ohio.gov/ohio-revised-code/section-5747.02) |
 | Business income deduction | First $250,000 ($125,000 married filing separately) | Same | [2025 IT 1040 instructions](https://dam.assets.ohio.gov/image/upload/tax.ohio.gov/forms/ohio_individual/individual/2025/it1040-booklet.pdf); 2026 not yet confirmed |
 | Rate on taxable business income | 3% | 3% | [R.C. 5747.02(A)(4)(a)](https://codes.ohio.gov/ohio-revised-code/section-5747.02) |
-| Exemption allowed only if MAGI is less than | $500,000 | $750,000 | [R.C. 5747.025(A)](https://codes.ohio.gov/ohio-revised-code/section-5747.025) |
-| Exemption per person, MAGI $40,000 or less | not yet published (statutory base $2,350, indexed) | $2,400 | [R.C. 5747.025(A)(1), (C)](https://codes.ohio.gov/ohio-revised-code/section-5747.025); [2025 instructions](https://dam.assets.ohio.gov/image/upload/tax.ohio.gov/forms/ohio_individual/individual/2025/it1040-booklet.pdf) |
-| Exemption per person, MAGI $40,001 to $80,000 | not yet published (statutory base $2,100, indexed) | $2,150 | same |
-| Exemption per person, MAGI above $80,000 | not yet published (statutory base $1,850, indexed); the 2026 IT 1040ES uses $1,900 | $1,900 | [R.C. 5747.025(A)(3)](https://codes.ohio.gov/ohio-revised-code/section-5747.025); [2026 IT 1040ES](https://dam.assets.ohio.gov/image/upload/v1768492539/tax.ohio.gov/forms/ohio_individual/individual/2026/ites-instructions-fi.pdf) |
+| Exemption allowed only if MAGI is less than | $500,000 | $750,000 | [R.C. 5747.025(A)](https://codes.ohio.gov/ohio-revised-code/section-5747.025); [2025 instructions](https://dam.assets.ohio.gov/image/upload/tax.ohio.gov/forms/ohio_individual/individual/2025/it1040-booklet.pdf); [2026 IT 1040ES](https://dam.assets.ohio.gov/image/upload/v1768492539/tax.ohio.gov/forms/ohio_individual/individual/2026/ites-instructions-fi.pdf) |
+| Exemption per person, MAGI $40,000 or less | not yet published (indexed under R.C. 5747.025(C)) | $2,400 | [R.C. 5747.025(A)(1), (C)](https://codes.ohio.gov/ohio-revised-code/section-5747.025); [2025 instructions](https://dam.assets.ohio.gov/image/upload/tax.ohio.gov/forms/ohio_individual/individual/2025/it1040-booklet.pdf) |
+| Exemption per person, MAGI $40,001 to $80,000 | not yet published (indexed under R.C. 5747.025(C)) | $2,150 | same |
+| Exemption per person, MAGI above $80,000 | not yet published (indexed under R.C. 5747.025(C)); the 2026 IT 1040ES uses $1,900 | $1,900 | [R.C. 5747.025(A)(3)](https://codes.ohio.gov/ohio-revised-code/section-5747.025); [2025 instructions](https://dam.assets.ohio.gov/image/upload/tax.ohio.gov/forms/ohio_individual/individual/2025/it1040-booklet.pdf); [2026 IT 1040ES](https://dam.assets.ohio.gov/image/upload/v1768492539/tax.ohio.gov/forms/ohio_individual/individual/2026/ites-instructions-fi.pdf) |
 | Estimated payments needed if tax after credits less withholding is more than | $500 | $500 | [2026 IT 1040ES](https://dam.assets.ohio.gov/image/upload/v1768492539/tax.ohio.gov/forms/ohio_individual/individual/2026/ites-instructions-fi.pdf) |
 | Estimated tax safe harbor | lesser of 90% of 2026 tax or 100% of 2025 tax | same rule | [2026 IT 1040ES worksheet lines 10 and 11](https://dam.assets.ohio.gov/image/upload/v1768492539/tax.ohio.gov/forms/ohio_individual/individual/2026/ites-instructions-fi.pdf) |
 | Interest rate on unpaid tax | 7% (calendar year 2026) | 8% (calendar year 2025) | [Department interest rate page](https://tax.ohio.gov/individual/resources/interest-rates) |
@@ -290,7 +290,7 @@ expected:
 | Source | URL | Read on |
 | --- | --- | --- |
 | R.C. 5747.02, tax rates (effective 30 September 2025, HB 96). Read for (A)(3)(b) 2025 brackets, (A)(3)(c) 2026 "$332.00 plus 2.75% of the amount in excess of $26,050", (A)(4) 3% on taxable business income, (A)(5) August indexing. | https://codes.ohio.gov/ohio-revised-code/section-5747.02 | 2026-11-13 |
-| R.C. 5747.025, personal exemptions (effective 30 September 2025, HB 96). Read for (A) the $750,000 (2025) and $500,000 (2026 and after) MAGI cut-offs and the $2,350, $2,100 and $1,850 statutory bases, (C) indexing. | https://codes.ohio.gov/ohio-revised-code/section-5747.025 | 2026-11-13 |
+| R.C. 5747.025, personal exemptions (effective 30 September 2025, HB 96). Read for (A) the $750,000 (2025) and $500,000 (2026 and after) MAGI cut-offs and the statutory bases, (C) indexing. | https://codes.ohio.gov/ohio-revised-code/section-5747.025 | 2026-11-13 |
 | 2026 Ohio IT 1040ES worksheet and instructions (revised January 2026). Read for the $1,900 exemption on line 4, the $500,000 note, the 90% and 100% safe harbor, 25% installments, the $500 threshold and the four due dates. | https://dam.assets.ohio.gov/image/upload/v1768492539/tax.ohio.gov/forms/ohio_individual/individual/2026/ites-instructions-fi.pdf | 2026-11-13 |
 | 2025 Ohio IT 1040 instructions. Read for who must file, the business income deduction ($250,000 or $125,000) and 3%, the 2025 exemption table, the credits, residency and contact periods, and the April 2026 due dates. | https://dam.assets.ohio.gov/image/upload/tax.ohio.gov/forms/ohio_individual/individual/2025/it1040-booklet.pdf | 2026-11-13 |
 | Ohio Department of Taxation, interest rates. Read for 7.0% (2026) and 8.0% (2025). | https://tax.ohio.gov/individual/resources/interest-rates | 2026-11-13 |
