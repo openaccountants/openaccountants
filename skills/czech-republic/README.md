@@ -22,7 +22,7 @@ Calendar tax year. Authority: the Financial Administration (Finanční správa) 
 | Transfer pricing | cz-transfer-pricing | checked against the law |
 | Cross-border | cz-cross-border | checked against the law |
 
-Also in the pack: cz-tax-overview, cz-company-formation, references.md.
+Also in the pack: cz-tax-overview (entry point and headline figures), cz-company-formation (formation and entity choice).
 
 ## Official sources
 
