@@ -11,7 +11,7 @@ covered_by:
   VAT: bahamas-vat
   SC: bs-payroll-social
 partial:
-  SC: "The 2026 NIB insurable wage ceiling, the payment due date and the late payment surcharge are not yet confirmed from an official page."
+  SC: "Any NIB ceiling change from July 2026, the monthly ceiling and the late payment surcharge are not yet confirmed from an official page."
 ---
 
 # Bahamas: tax pack

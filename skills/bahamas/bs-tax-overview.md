@@ -146,4 +146,4 @@ At BSD 1.5 million both owners pay BSD 11,250. From BSD 1 million upwards the tw
 | Stamp (Amendment) Act 2026: read for the business definition and sale of a business from 1 July 2026 | https://laws.bahamas.gov.bs/cms/images/LEGISLATION/AMENDING/2026/2026-0018A/2026-0018A.pdf | 2026-11-14 |
 | DIR, What is DMTT FAQ: read for DMTT scope and dates | https://inlandrevenue.finance.gov.bs/wp-content/uploads/2026/06/What-is-DMTT-FAQ-1.pdf | 2026-11-14 |
 
-Not yet confirmed: stamp duty rates under the Stamp Act 2024 First Schedule (the text did not extract cleanly); customs duty rates; the 15% DMTT minimum rate figure; the NIB wage ceiling; the first RPT bill year for the 2026 Act changes.
+Not yet confirmed: stamp duty rates under the Stamp Act 2024 First Schedule (the text did not extract cleanly); customs duty rates; the 15% DMTT minimum rate figure; any NIB wage ceiling change from July 2026; the first RPT bill year for the 2026 Act changes.

@@ -43,19 +43,24 @@ There is no income tax in The Bahamas, so no income tax is withheld from wages: 
 | Persons employed during the summer | 0% | 2.0% | 2.0% | same |
 | Self-employed under 65, not receiving retirement benefit | 10.30% | | 10.30% | Regs 2024, reg. 5 (new reg. 30(1A)): 8.8% plus 1.5 points: https://laws.bahamas.gov.bs/cms/images/LEGISLATION/AMENDING/2024/2024-0037S/2024-0037S.pdf |
 | Voluntarily insured | 6.50% | | 6.50% | Regs 2024, reg. 7 (new reg. 35(1A)): 5.0% plus 1.5 points: https://laws.bahamas.gov.bs/cms/images/LEGISLATION/AMENDING/2024/2024-0037S/2024-0037S.pdf |
+| Insurable wage ceiling | BSD 810 a week | Effective July 2024; contributions stop at the ceiling; no later ceiling shown on the NIB page read | NIB, contributions: https://www.nib-bahamas.com/contributions |
+| Payment deadline | Received by NIB by the 15th of the month after the month the contributions were due | Monthly | same |
+| Contribution week | Monday to Sunday | One contribution a week per worker, paid by the principal employer | same |
+| Retirement benefit recipients aged 60 to 64 earning under half the ceiling | 2.0%, employer only (employed); 2.0% (self-employed) | | same |
 | Income tax withheld | None | | | No income tax Act, Bahamas legislation index: https://laws.bahamas.gov.bs/cms/legislation/acts_only/acts-by-year.html |
 
 ## The base
 
-1. Insurable wage: the employee's actual weekly wage, capped at the NIB ceiling on insurable wages (ceiling figure not confirmed, see below).
+1. Insurable wage: the wage earned in each contribution week (Monday to Sunday), capped at BSD 810 a week. Commission earners: the average weekly or monthly wage of the previous year, or the actual wage for the period; daily or piece workers: the lower of the basic wage for similar work and the actual cash paid (NIB).
 2. Employee share 4.65%, employer share 6.65% of the insurable wage; the employer deducts the employee share from pay (reg. 19(1) as amended: for each employee at the end of every month).
 3. Pensioner categories: the employer pays 2.0% and the employee nothing.
 4. Self-employed persons pay 10.30% on insurable income themselves; voluntary contributors 6.50%.
-5. A late contribution paid within 12 months after the end of the year it fell due counts as paid on time for retirement and invalidity benefit (reg. 16 as replaced).
+5. Deduct from the first pay, including probation. Contributions not deducted when due cannot be recovered from later pay; the employer alone owes the arrears (NIB).
+6. A late contribution paid within 12 months after the end of the year it fell due counts as paid on time for retirement and invalidity benefit (reg. 16 as replaced).
 
 ## Deadlines and filing
 
-- Employers register with NIB before paying wages and report each employee's contributions monthly on the C10 return (form named on the NIB site; the payment day is not confirmed in this version).
+- Employers register with NIB before paying wages and pay monthly so that payment reaches NIB by the 15th of the following month.
 - Self-employed persons register (form R1) and pay monthly.
 
 ## Penalties and interest
@@ -71,7 +76,7 @@ The NIB late payment surcharge and interest were not confirmed from a source ope
 
 ### Three employees at BSD 600 a week
 
-A small business pays three employees BSD 600 a week each (under any likely ceiling; confirm the ceiling for higher wages).
+A small business pays three employees BSD 600 a week each, below the BSD 810 weekly ceiling.
 
 ```oa-check
 name: BS NIB three employees at 600 a week, 2026
@@ -135,7 +140,8 @@ expected:
 | Source | URL | Read on |
 |---|---|---|
 | National Insurance (Contributions) (Amendment) Regulations 2024, S.I. 37 of 2024, in force 1 July 2024: read for the Fifth Schedule rates by category and the 1.5 point increases for employed, self-employed and voluntary contributors | https://laws.bahamas.gov.bs/cms/images/LEGISLATION/AMENDING/2024/2024-0037S/2024-0037S.pdf | 2026-11-14 |
+| NIB, contributions page (opened with Firecrawl because it is built by script): read for the BSD 810 weekly ceiling, the 15th day deadline, the contribution week, the rates and the retiree 2.0% rows | https://www.nib-bahamas.com/contributions | 2026-11-14 |
 | Bahamas legislation, Acts by year: read to confirm there is no income tax Act and no 2026 National Insurance amendment | https://laws.bahamas.gov.bs/cms/legislation/acts_only/acts-by-year.html | 2026-11-14 |
 | Bahamas legislation, subsidiary legislation by year 2024 to 2026: read to find the 2024 contributions regulations and that no later contributions regulations are listed | https://laws.bahamas.gov.bs/cms/legislation/subsidiary/subsidiary-by-year.html | 2026-11-14 |
 
-Not yet confirmed: the insurable wage ceiling for 2026 (old file: BSD 810 a week, BSD 3,510 a month; the NIB site loads only in a browser and no regulation setting the ceiling was found); the C10 due date (old file: 15th of the following month); the NIB late payment surcharge and interest; fines for failing to register an employer (old file: up to BSD 5,000).
+Not yet confirmed: whether the ceiling changes from July 2026 (old file: BSD 830 a week; the NIB page read still shows BSD 810 effective July 2024) and the monthly ceiling (old: BSD 3,510); the C10 form name; the NIB late payment surcharge and interest; fines for failing to register an employer (old file: up to BSD 5,000).
