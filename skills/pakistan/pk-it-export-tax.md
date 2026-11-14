@@ -1,6 +1,6 @@
 ---
 name: pk-it-export-tax
-description: >
+description: Use for pakistan it and freelance export tax. Read the stated period, eligibility conditions, evidence requirements, owner skills and unresolved boundaries before calculating or preparing a return.
   Use this skill whenever asked about how Pakistani freelancers and IT exporters are taxed on income
   earned from foreign clients. Trigger on phrases like "Pakistan freelancer tax", "IT export tax
   Pakistan", "PSEB tax", "Upwork Fiverr tax Pakistan", "0.25% IT export", "software export tax
@@ -19,7 +19,7 @@ domain: income-tax
 type: computation
 ---
 
-# Pakistan IT and freelance export tax v1.1
+# Pakistan IT and freelance export tax v 1.1
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -47,7 +47,7 @@ Quick answer: PSEB-registered qualifying proceeds attract 0.25%; another qualify
 
 ## Deadlines and filing
 
-Report qualifying proceeds and bank deduction in the applicable IRIS final/fixed-tax schedule, and ordinary domestic business income in its own schedule. Reconcile the resident individual's wealth statement. The ordinary individual/AOP return date is 30 September after year end under s.118; tax year 2026 therefore has an ordinary date of 30 September 2026 (derived), subject to any valid extension. Confirm the applicable extension before describing a return as late. Generate a PSID for an amount due and retain the CPR after payment; a CPR is evidence of payment, not the payment instruction. [ITO ss.114,116,118,137,154A](https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf).
+Report qualifying proceeds and bank deduction in the applicable IRIS final/fixed-tax schedule, and ordinary domestic business income in its own schedule. Reconcile the resident individual's wealth statement. The ordinary individual/AOP return date is 30 September after year end under s.118; tax year 2026 therefore has an ordinary date of 30 September 2026 (derived), subject to any valid extension. Confirm the applicable extension before describing a return as late. Generate a PSID for an amount due and retain the CPR after payment; a CPR is evidence of payment, not the payment instruction. [ITO ss.114,116,118,137,154 A](https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf).
 
 ## Penalties and interest
 
@@ -93,11 +93,13 @@ expected:
 
 Obtain residence, legal form, actual tax period, service classification, contracts and foreign-client evidence, gross proceeds and fees by receipt, domestic receipts, bank/e-PRC support, PSEB registration/certification dates, actual tax deductions, required returns/statements, any foreign tax and the annual option. Recommend checking PSEB eligibility for genuine IT/ITeS exports; never backdate or assume registration. Refuse a final tax result where eligibility or finality evidence is missing.
 
+For the actual tax-year-2026 filing cycle, FBR Circular 04 of 2026-27 dated 15 October 2026 extends the filing date to **31 October 2026** for persons originally due 30 September 2026 and previously extended to 15 October. It does not extend every company return. Apply any individual further order only on its evidence; this circular does not itself state a general payment extension. [Official circular](https://download1.fbr.gov.pk/Docs/20261015221039470Extension.pdf), read and scanned page inspected 2026-11-14.
+
 ## Sources
 
 | Source and actual portions read | Official URL | Read on |
 |---|---|---|
-| Read for ITO ss.74,114,116,118,137,154A(1)-(3),182,205; Division IVA rows 1-2 and neighboring provisions; tax year 2026 law | https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf | 2026-11-14 |
+| Read for ITO ss.74,114,116,118,137,154 A(1)-(3),182,205; Division IVA rows 1-2 and neighboring provisions; tax year 2026 law | https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf | 2026-11-14 |
 | Read for June 2026 consolidation s.154A and Division IVA footnote extending the period through tax year 2029; distinguish later amendments from this tax year | https://download1.fbr.gov.pk/Docs/2026724177725705IncomeTaxOrdinanace2001.pdf | 2026-11-14 |
 
 Not yet confirmed: the taxpayer's PSEB period, classification, gross proceeds, actual remittances/withholding and compliance; tax-year-specific extension and current IRIS box identifiers; treatment of a failed-condition or opted-out case beyond this withholding computation. No USD/PKR exchange rate is asserted by the examples. Future tax years need their own effective-law check.

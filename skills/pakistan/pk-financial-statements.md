@@ -1,6 +1,6 @@
 ---
 name: pk-financial-statements
-description: >
+description: Use for pakistan financial statements and reporting route. Read the stated period, eligibility conditions, evidence requirements, owner skills and unresolved boundaries before calculating or preparing a return.
   Use this skill whenever asked about financial statements and accounting reporting in Pakistan.
   Trigger on phrases like "Pakistan financial statements", "do I file accounts as sole proprietor
   Pakistan", "SECP financial statements", "IFRS Pakistan", "audit requirement Pakistan". Explains that
@@ -18,7 +18,7 @@ domain: financial-statements
 type: situation-rules
 ---
 
-# Pakistan financial statements and reporting route v1.1
+# Pakistan financial statements and reporting route v 1.1
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -111,7 +111,7 @@ Legal form established; accounting framework/classification supported; audit tes
 | Source and actual portions read | Official URL | Read on |
 |---|---|---|
 | Read for SECP Third Schedule small/medium/large/public-interest classifications and notes, including higher-framework options | https://www.secp.gov.pk/document/updated-3rd-schedule-to-the-companies-act-2017-29-12-2025/?refresh=6991a886b4e621771153542&wpdmdl=63339 | 2026-11-14 |
-| Read for SECP FAQ parts 2.8 and3.1, annual accounts route, separate audit and filing capital boundaries | https://www.secp.gov.pk/company-formation/faqs-on-company-regulation-2024/ | 2026-11-14 |
+| Read for SECP FAQ parts 2.8 and 3.1, annual accounts route, separate audit and filing capital boundaries | https://www.secp.gov.pk/company-formation/faqs-on-company-regulation-2024/ | 2026-11-14 |
 | Read for ITO ss.92,114,116,174, AOP/member audit condition and individual tax accounts/wealth context | https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf | 2026-11-14 |
 
 Not yet confirmed: taxpayer's full classification/history and notified special thresholds, detailed recognition/measurement under its selected standard, all special/group/foreign/NPO reporting rules, filing dates and current screen details. The original blanket AOP/no-audit and all-companies-file statements are replaced by separate conditional tests above.

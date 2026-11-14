@@ -1,315 +1,135 @@
 ---
 name: pakistan-sales-tax
-description: Use this skill whenever asked to prepare, review, or classify transactions for a Pakistan Sales Tax return (federal or provincial) for any client. Trigger on phrases like "Pakistan sales tax", "FBR return", "IRIS portal", "Sindh sales tax", "Punjab sales tax", or any request involving Pakistan sales tax. MUST be loaded alongside vat-workflow-base v0.1 or later. ALWAYS read this skill before touching any Pakistan sales tax work.
-version: 2.0
+description: Use for pakistan sales-tax transaction classification workflow. Read the stated period, eligibility conditions, evidence requirements, owner skills and unresolved boundaries before calculating or preparing a return.
+version: 2.1
 jurisdiction: PK
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: vat-gst
+type: router
 ---
 
-# Pakistan Sales Tax
+# Pakistan sales-tax transaction classification workflow v 2.1
+
+> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
+
+## Start here
+
+Load `vat-workflow-base` with this Pakistan workflow. Classify and reconcile transactions, then send the federal goods leg to `pk-sales-tax-federal` and each provincial/ICT services leg to `pk-sales-tax-services`. This 2026 skill supplies 2025-2026 cycle examples, not a common rate/deadline across all authorities. Mixed businesses may have several registrations/returns. Unknown country, goods/service, rate or tax status is a pending classification, not a domestic 18% default.
 
-## Section 1 — Quick reference
+## Ask the client first
 
-**Quick reference table**
+Obtain actual filing period(s), taxpayer legal identity/NTN and federal/provincial registrations, establishment/worker/customer locations, activity/category, invoice-level contracts and tax-exclusive/inclusive prices, sales/purchase/import/export ledgers, bank/wallet statements, goods/PCT/service CPC codes, delivery/payment/invoice dates, export and remittance evidence, actual supplier/recipient tax status, input invoices/use/payment support, withholding certificates, prior credit/returns/CPRs and actual exemptions/elections/SROs.
 
-| Field | Value |
-| --- | --- |
-| Country | Pakistan (Islamic Republic of Pakistan) |
-| Federal Sales Tax rate (goods) | 18% (standard); 25% (luxury/sin goods); reduced rates via SRO |
-| Provincial Sales Tax rate (services) | Varies: Sindh 13%, Punjab 16%, KP 15%, Balochistan 15% |
-| Zero rate | 0% (exports, certain essential goods via SRO) |
-| Exempt | Basic food (unprocessed), education, healthcare, financial services |
-| Return form | Federal: monthly via IRIS; Provincial: via respective portals |
-| Filing portal | https://iris.fbr.gov.pk (IRIS — federal); SRB/PRA/KPRA/BRA portals (provincial) |
-| Authority | Federal Board of Revenue (FBR) — goods; SRB/PRA/KPRA/BRA — services |
-| Currency | PKR (Pakistani Rupee) |
-| Filing frequency | Monthly (federal and most provincial) |
-| Deadline | Federal: 18th of following month; Provincial: varies (typically 15th-18th) |
-| Companion skill | vat-workflow-base v0.1 or later — MUST be loaded |
+A bank statement is the starting completeness record, not sufficient tax evidence. If intake is incomplete ask for missing identifiers, authority type(goods/services/both), establishment and supply locations, actual period/frequency, exports and credit brought forward. Search available records before requesting information; do not infer the customer's supply province merely from the registered-office address.
 
-- **Federal/provincial split** — Pakistan has SPLIT federal/provincial sales tax. Federal covers goods (FBR). Provincial covers services (SRB for Sindh, PRA for Punjab, KPRA for KP, BRA for Balochistan). A single business may file BOTH.
+## Route the work
 
-**Conservative defaults**
+| Actual issue | Owner and gate |
+|---|---|
+| Federal goods sale/import and federal registration | `pk-sales-tax-federal`: actual category/PCT/time/value/schedule/status and supporting documents |
+| Domestic/provincial/ICT services, imported services or cross-province supply | `pk-sales-tax-services`: real service code/location/liability/rate/election/period |
+| Income withholding on the same payment | `pk-withholding-tax`: separate from sales-tax withholding |
+| Qualifying export income | `pk-it-export-tax`: PSEB/realisation/finality analysis separate from sales-tax export exemption |
+| Real-time invoice integration/correction | `pk-einvoice`: actual applicable digital reporting and remediation |
+| Books, payroll and owner transfers | `pk-bookkeeping`/`pk-payroll`: determine the underlying transaction before sales-tax exclusion |
+| Refund, SRO manufacturer, EOU, sales-tax withholding or jurisdiction dispute | Specialist work with the actual operative rule and evidence before a final return |
 
-| Ambiguity | Default |
-| --- | --- |
-| Unknown rate on goods | 18% (federal) |
-| Unknown rate on services | Apply province rate based on client location |
-| Unknown input tax status | Not deductible |
-| Unknown counterparty location | Domestic Pakistan |
-| Unknown business-use proportion | 0% recovery |
+## Rates, bands and thresholds
 
-## Section 2 — Required inputs and refusal catalogue
+These are routing checks, not replacements for each owner skill's conditions.
 
-### Required inputs
+| Confirmed cycle reference | Boundary and source |
+|---|---|
+| Federal 18% standard;4% further tax | Actual taxable goods and further-tax conditions/exclusions; no blanket higher/luxury rate or universal unregistered-buyer charge. [STA s.3](https://download1.fbr.gov.pk/Docs/202586148252375SalesTaxActupdatedupto2025-26.pdf) |
+| Federal input timing/restriction | Relevant period plus 6 succeeding periods;90% ordinary adjustment restriction with fixed/capital asset, notification and other exceptions. [STA ss.7/8 B](https://download1.fbr.gov.pk/Docs/202586148252375SalesTaxActupdatedupto2025-26.pdf) |
+| Sindh 15% standard | Specific service/election/schedule can differ; IT 3% option and CPC 83159 exclusion are owned by services skill. [Sindh s.8/Second Schedule](https://www.srb.gos.pk/srb/wp-content/uploads/2026/01/Sindh-Sales-Tax-Act-2011-25-26-2.pdf) |
 
-- **Minimum viable inputs** — Minimum viable — bank statement for the month. Acceptable from: HBL (Habib Bank), UBL (United Bank), MCB (Muslim Commercial Bank), Allied Bank, Bank Alfalah, Meezan Bank, Standard Chartered PK, or any other. JazzCash and Easypaisa statements also accepted.
-- **Recommended inputs** — Recommended — sales invoices, purchase invoices with supplier NTN/STRN, client's NTN and STRN.
+Zero-rate, exemption, outside-scope, nonclaimable input and provisional-unverified are distinct statuses. A 0 tax field must carry its actual reason. Federal s.4 zero-rating is not s.13 exemption; taxable-business input eligibility under ss.7/8/73 and provincial rules must still be established. [STA ss.4/7/8/13/73](https://download1.fbr.gov.pk/Docs/202586148252375SalesTaxActupdatedupto2025-26.pdf); [Sindh First Schedule 14](https://www.srb.gos.pk/srb/wp-content/uploads/2026/01/Sindh-Sales-Tax-Act-2011-25-26-2.pdf).
 
-### Pakistan-specific refusal catalogue
+## Supplier pattern library: hints, never a tax determination
 
-- **R-PK-1 — Provincial service tax complexity** — Trigger: client provides services in multiple provinces. Message: "Multi-province service tax filing requires separate returns to each provincial authority. Please escalate for province-by-province analysis."  _(R-PK-1)_
-- **R-PK-2 — Manufacturing under SRO regime** — Trigger: client is a manufacturer with SRO-based reduced rates or exemptions. Message: "SRO-based manufacturing exemptions require gazette-level verification. Please escalate."  _(R-PK-2)_
-- **R-PK-3 — Withholding agent (sales tax)** — Trigger: client is a designated withholding agent for sales tax. Message: "Withholding agent obligations require tracking of certificates and deposits. Please escalate."  _(R-PK-3)_
-- **R-PK-4 — Export-oriented units (EOU)** — Trigger: client in export-oriented unit with zero-rating facility. Message: "EOU zero-rating requires SRO-level verification. Please escalate."  _(R-PK-4)_
+| Statement pattern retained | Initial classification and required evidence |
+|---|---|
+| HBL/HABIBBANK, UBL/UNITEDBANK, MCB/MUSLIMCOMMERCIAL, ALLIEDBANK, BANKALFALAH, MEEZANBANK, STANDARDCHARTEREDPK | Separate account transfer/principal from actual fee; bank fees can be provincial services, so do not label all financial services exempt |
+| INTEREST/LOAN/REPAYMENT | Separate principal/interest/fees and own financing from underlying trade; route income/withholding separately; a description alone establishes no sales-tax credit |
+| JAZZCASH/JAZZCASH, EASYPAISA/EASYPAISA, NAYAPAY/SADAPAY | Payment channel does not determine underlying goods/service. Separate platform/transfer fee and obtain actual invoice; do not universally exempt wallet fees |
+| FBR/FEDERALBOARDOFREVENUE, CUSTOMS/PAKISTANCUSTOMS, SRB/SINDHREVENUE, PRA/PUNJABREVENUE, EOBI/SOCIALSECURITY, SECP | Actual tax/duty/contribution/registration remittance is a control/payment line, not a purchase invoice. Match CPR/GD; recoverable import tax comes from the proper customs evidence, not duplicate bank booking |
+| K-ELECTRIC/KESC/LESCO/FESCO/IESCO, SSGC/SNGPL | Obtain utility invoice and separate sales tax, income tax, levies and principal; no 18% on the whole bill by pattern |
+| PTCL/JAZZ/ZONG/TELENOR/UFONE | Telecom service/location/rate analysis, actual tax invoice; do not apply federal goods standard automatically |
+| GOOGLE/MICROSOFT/META/AWS, ZOOM/SLACK/CANVA/FIGMA | Determine legal supplier, service/software/goods, recipient/use/location and imported-service liability. No automatic federal 18% self-assessment |
+| AUDIT/CA FIRM/ACCOUNTING, LAW FIRM/ADVOCATE, CONSULTANT/ENGINEERING | Actual professional-service code/location and possible reduced/input/withholding conditions in services skill |
+| SALARY/WAGES/TANKHWAH | Confirm genuine employment and payroll, then outside this sales-tax sale/purchase register; do not exclude contractor services as payroll by label |
+| OWNTRANSFER/INTERNAL | Exclude a supported transfer from sales/purchases, reconcile both sides and avoid duplication |
+| CASHWITHDRAWAL/ATM | Cash-control movement pending supporting expenditure; neither automatically taxable sale nor deductible input |
 
-## Section 3 — Supplier pattern library
+Preserve raw statement descriptions, including Urdu, alongside any translation. HBL/UBL/MCBCSV and wallet exports are usable ingestion inputs; detect currency, debit/credit convention, period, opening/closing balance and duplicates before classification. Keep foreign amounts/rates/dates and actual owner-law conversion evidence; do not apply an invented SBPrate or take a net platform receipt as gross export turnover.
 
-### 3.1 Pakistani banks (fees — check)
+## The method, step by step
 
-**Pakistani banks pattern table**
+1. Reconcile each statement to opening/movements/closing, preserving original transaction IDs and documents. Match internal transfers once; isolate taxes, financing, payroll and cash controls from the sales/purchase base.
+2. Link sales/purchases to invoices and actual goods/service/location/date. Separate output from input and tax-exclusive value from gross. Mark missing evidence/ambiguous split in a pending register; never invent a higher “safe” rate or country.
+3. Run the appropriate owner computation. Federal input needs actual ss.7/8/8 B/73 evidence and restrictions, including business use, matching, banking and statutory exceptions. Provincial input, mixed-use apportionment and cross-credit are authority-specific. Keep denied and unverified credits separately identified.
+4. Preserve imports via own-name GD and exports via actual conditions/documents; imported goods and imported services follow different routes. Further tax, extra tax, retail-price/special regimes and sales-tax withholding need actual owner law. Do not conflate export income withholding with goods/services sales tax.
+5. Build the `vat-workflow-base` working paper with Pakistan fields: date, source ID, counterparty/rawdescription, direction/currency/gross, net, tax, rate/base, goods/service/code, authority/province, registration/status, document/source, exemption/election reason, business use/admissibility, default/pending flag and reviewer action. Use distinct federal output/input/zero/exempt, each provincial output/input, withholding, brought-forward/next credit and each authority's net payment.
+6. Reconcile control totals to documents/owner calculations and actual returns/payments. Do not offset one authority's liability with another's credit. Produce a brief and action list for missing evidence and specialist matters, then route to `pk-return-assembly` if relevant. This workflow does not file or certify a return.
 
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| HBL, HABIB BANK | EXCLUDE for bank charges | Financial service (provincial ST may apply) |
-| UBL, UNITED BANK | EXCLUDE for bank charges | Same |
-| MCB, MUSLIM COMMERCIAL | EXCLUDE for bank charges | Same |
-| ALLIED BANK, BANK ALFALAH | EXCLUDE for bank charges | Same |
-| MEEZAN BANK | EXCLUDE for bank charges | Same |
-| STANDARD CHARTERED PK | EXCLUDE for bank charges | Same |
-| INTEREST, LOAN, REPAYMENT | EXCLUDE | Out of scope |
+## Two worked examples that recompute
 
-### 3.2 Mobile financial services
+### Earlier domestic goods case retained
 
-**Mobile financial services pattern table**
+The 05 April 2026 DOMESTICBUYER receipt 1,180,000 is assumed supported by an ordinary 18%-tax-inclusive goods invoice, with no further/special tax. This is a conditional owner calculation, not the unknown-rate default.
 
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| JAZZCASH, JAZZ CASH | EXCLUDE for transaction fees | Financial service |
-| EASYPAISA, EASY PAISA | EXCLUDE for transaction fees | Same |
-| NAYAPAY, SADAPAY | EXCLUDE for transaction fees | Same |
+```oa-check
+name: Domestic goods inclusive invoice
+inputs:
+  gross_receipt: 1180000
+steps:
+  - net_value: gross_receipt / 1.18
+  - output_tax: gross_receipt - net_value
+expected:
+  net_value: 1000000
+  output_tax: 180000
+```
 
-### 3.3 Government (exclude)
+### Earlier Sindh service case retained and corrected
 
-**Government pattern table**
+The 10 April 2026 CLIENTCOcase previously used 13% and 226,000 gross. For **the same exclusive value 200,000**, assume a supported ordinary 15% Sindh service with no special rate/election; corrected tax 30,000 andgross 230,000 follow. Do not silently treat the old 226,000 payment as 230,000 cash; reconcile actual invoice/receivable or, if price truly inclusive, apply the actual inclusive-price calculation.
 
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| FBR, FEDERAL BOARD OF REVENUE | EXCLUDE | Tax payment |
-| CUSTOMS, PAKISTAN CUSTOMS | EXCLUDE | Duty |
-| SRB, SINDH REVENUE, PRA, PUNJAB REVENUE | EXCLUDE | Provincial tax payment |
-| EOBI, SOCIAL SECURITY | EXCLUDE | Social security |
-| SECP | EXCLUDE | Registration fee |
+```oa-check
+name: Sindh ordinary service correction and actual cash reconciliation
+inputs:
+  exclusive_service_value: 200000
+  actual_received_under_old_invoice: 226000
+steps:
+  - corrected_output_tax: exclusive_service_value * 0.15
+  - corrected_gross: exclusive_service_value + corrected_output_tax
+  - receivable_difference: corrected_gross - actual_received_under_old_invoice
+expected:
+  corrected_output_tax: 30000
+  corrected_gross: 230000
+  receivable_difference: 4000
+```
 
-### 3.4 Utilities
+### Other historical cases preserved as their actual evidence gates
 
-**Utilities pattern table**
+The 15 April 2026 USIMPORTERINC 5,000,000 goods export has 0 output **only after actual export/zero-rate conditions**; input/refund is a separate test. The 18 April 2026 GOOGLECLOUD 50,000 payment is an imported-service classification hold; the old 9,000 federal 18% assertion is withdrawn. The 25 April 2026 JAZZCASH 50 fee requires its actual invoice/service/authority classification, not the blanket “financial-serviceexempt” label. None of these transfers creates input credit from bank text alone.
 
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| K-ELECTRIC, KESC, LESCO, FESCO, IESCO | Domestic 18% (federal ST on electricity) | Electricity |
-| SSGC, SNGPL | Domestic 18% | Gas |
-| PTCL, JAZZ, ZONG, TELENOR, UFONE | Provincial service tax applies | Telecoms |
+## Deadlines, filing and records
 
-### 3.5 SaaS and international services
+Use each owner skill's actual category/period/calendar and extension evidence. Federal ordinary 15/18 dates have special categories/quarterly branches; provincial periods also vary. Keep authority payment instruction and actual CPR separate from submitted-return acknowledgment. Retain the actual authority's records period, including extended proceedings and historic asset/basis needs; no universal 5 or 6 year rule across all authorities. [STA s.24](https://download1.fbr.gov.pk/Docs/202586148252375SalesTaxActupdatedupto2025-26.pdf); [Sindh s.27](https://www.srb.gos.pk/srb/wp-content/uploads/2026/01/Sindh-Sales-Tax-Act-2011-25-26-2.pdf); owner skills.
 
-**SaaS and international services pattern table**
+## When to refuse or refer
 
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| GOOGLE, MICROSOFT, META, AWS | Self-assess (federal 18% on digital goods; provincial on services) | Non-resident |
-| ZOOM, SLACK, CANVA, FIGMA | Self-assess | Same |
+Retain R-PK-1 multi-province service analysis, R-PK-2 SROmanufacturing concessions, R-PK-3 sales-tax withholding agents and R-PK-4 EOUzero-rating. Also hold incomplete documents, mixed goods/service contracts, rate/exemption/export doubts, registration/place disputes, reverse-charge/imported services, partial exemption/blocked input/cross-credit/refunds and notices/audits. Refer with the evidence register and exact unresolved issue; do not remove the transaction or finalise a return on a guessed default.
 
-### 3.6 Professional services
+## Sources
 
-**Professional services pattern table**
+| Source and actual portions read | Official URL | Read on |
+|---|---|---|
+| Read for federal Act ss.3/4/7/8/8 B/13/14/23/24/73; owner skill retains operative conditions and exceptions | https://download1.fbr.gov.pk/Docs/202586148252375SalesTaxActupdatedupto2025-26.pdf |2026-11-14|
+| Read for Sindh Act ss.3/8/9/27 and First Schedule 14/Second Schedule 20; separate services law, not a universal 13% rate | https://www.srb.gos.pk/srb/wp-content/uploads/2026/01/Sindh-Sales-Tax-Act-2011-25-26-2.pdf |2026-11-14|
 
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| AUDIT, CA FIRM, ACCOUNTING | Provincial service tax | Check province |
-| LAW FIRM, ADVOCATE | Provincial service tax | Same |
-| CONSULTANT, ENGINEERING | Provincial service tax | Same |
-
-### 3.7 Payroll and exclusions
-
-**Payroll and exclusions pattern table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| SALARY, WAGES, TANKHWAH | EXCLUDE | Outside sales tax scope |
-| OWN TRANSFER, INTERNAL | EXCLUDE | Internal |
-| CASH WITHDRAWAL, ATM | TIER 2 — ask | Default exclude |
-
-## Section 4 — Worked examples
-
-### Example 1 — Federal sales tax on goods at 18%
-
-**Input line:** `05.04.2026 ; DOMESTIC BUYER LTD ; CREDIT ; Invoice PK-041 manufactured goods ; PKR 1,180,000`
-
-**Reasoning:** Manufacturer selling taxable goods. Federal 18%. Net = PKR 1,000,000, ST = PKR 180,000.
-
-**Example 1 worked table**  _(FBR)_
-
-| Date | Counterparty | Gross | Net | Tax | Rate | Authority | Default? | Excluded? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 05.04.2026 | DOMESTIC BUYER | +1,180,000 | +1,000,000 | 180,000 | 18% | FBR | N | — |
-
-### Example 2 — Provincial service tax (Sindh 13%)
-
-**Input line:** `10.04.2026 ; CLIENT CO ; CREDIT ; Consulting fee ; PKR 226,000`
-
-**Reasoning:** Service in Sindh. SRB 13%. Net = PKR 200,000, Tax = PKR 26,000.
-
-**Example 2 worked table**  _(SRB)_
-
-| Date | Counterparty | Gross | Net | Tax | Rate | Authority | Default? | Excluded? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 10.04.2026 | CLIENT CO | +226,000 | +200,000 | 26,000 | 13% | SRB | N | — |
-
-### Example 3 — Export, zero-rated
-
-**Input line:** `15.04.2026 ; US IMPORTER INC ; CREDIT ; Textile export ; PKR 5,000,000`
-
-**Example 3 worked table**  _(FBR)_
-
-| Date | Counterparty | Gross | Net | Tax | Rate | Authority | Default? | Excluded? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 15.04.2026 | US IMPORTER INC | +5,000,000 | +5,000,000 | 0 | 0% | FBR | N | — |
-
-### Example 4 — Non-resident digital service
-
-**Input line:** `18.04.2026 ; GOOGLE CLOUD ; DEBIT ; Cloud April ; PKR -50,000`
-
-**Reasoning:** Non-resident digital service. Self-assess federal 18%. Input credit if for taxable supplies.
-
-**Example 4 worked table**  _(FBR)_
-
-| Date | Counterparty | Gross | Net | Tax | Rate | Authority | Default? | Excluded? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 18.04.2026 | GOOGLE CLOUD | -50,000 | -50,000 | 9,000 | 18% | FBR | N | — |
-
-### Example 5 — JazzCash transfer fee
-
-**Input line:** `25.04.2026 ; JAZZCASH ; DEBIT ; Transfer fee ; PKR -50`
-
-**Example 5 worked table**  _(—)_
-
-| Date | Counterparty | Gross | Net | Tax | Rate | Authority | Default? | Excluded? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 25.04.2026 | JAZZCASH | -50 | — | — | — | — | N | "Financial service" |
-
-## Section 5 — Tier 1 classification rules (compressed)
-
-### 5.1 Federal sales tax on goods — 18% standard. Manufacturers, importers, and specified retailers.
-
-- **Federal sales tax on goods** — 18% standard. Manufacturers, importers, and specified retailers.
-
-### 5.2 Provincial service tax — Varies by province (Sindh 13%, Punjab 16%, KP 15%, Balochistan 15%).
-
-- **Provincial service tax** — Varies by province (Sindh 13%, Punjab 16%, KP 15%, Balochistan 15%).
-
-### 5.3 Zero rate — Exports (federal). Input tax credit available.
-
-- **Zero rate** — Exports (federal). Input tax credit available.
-
-### 5.4 Exempt — Basic food (unprocessed), education, healthcare.
-
-- **Exempt** — Basic food (unprocessed), education, healthcare.
-
-### 5.5 Input tax credit — Federal: available on goods. Provincial: varies. Valid invoice with NTN/STRN required.
-
-- **Input tax credit** — Federal: available on goods. Provincial: varies. Valid invoice with NTN/STRN required.
-
-### 5.6 Blocked input — Personal consumption, entertainment, passenger vehicles.
-
-- **Blocked input** — Personal consumption, entertainment, passenger vehicles.
-
-### 5.7 Imports — Federal sales tax at customs. Provincial not applicable at import.
-
-- **Imports** — Federal sales tax at customs. Provincial not applicable at import.
-
-### 5.8 Reverse charge — Non-resident services: self-assess.
-
-- **Reverse charge** — Non-resident services: self-assess.
-
-### 5.9 Withholding — Designated agents withhold sales tax at prescribed rates.
-
-- **Withholding** — Designated agents withhold sales tax at prescribed rates.
-
-### 5.10 Further tax / extra tax — Additional levies on sales to unregistered persons.
-
-- **Further tax / extra tax** — Additional levies on sales to unregistered persons.
-
-## Section 6 — Tier 2 catalogue (compressed)
-
-### 6.1 Federal vs provincial split — Default: flag. Question: "Is this goods (FBR) or services (provincial)?"
-
-- **Federal vs provincial split** — Default: flag. Question: "Is this goods (FBR) or services (provincial)?"
-
-### 6.2 Province identification — Default: client's registered province. Question: "Which province is the service provided in?"
-
-- **Province identification** — Default: client's registered province. Question: "Which province is the service provided in?"
-
-### 6.3 SaaS entities — Default: self-assess federal 18%. Question: "Goods or services? Check invoice."
-
-- **SaaS entities** — Default: self-assess federal 18%. Question: "Goods or services? Check invoice."
-
-### 6.4 Cash withdrawals — Default: exclude.
-
-- **Cash withdrawals** — Default: exclude.
-
-### 6.5 JazzCash/Easypaisa transactions — Default: classify underlying transaction, not payment method.
-
-- **JazzCash/Easypaisa transactions** — Default: classify underlying transaction, not payment method.
-
-## Section 7 — Excel working paper template
-
-Per vat-workflow-base Section 3, with Pakistan fields: Federal output 18%, Zero-rated, Exempt, Federal input, Provincial output (by province), Provincial input, Net payable (federal), Net payable (provincial).
-
-## Section 8 — Bank statement reading guide
-
-HBL, UBL, MCB exports CSV. PKR primary. JazzCash/Easypaisa exports also usable. Urdu descriptions possible. Internal transfers: exclude. Convert foreign currency at SBP rate.
-
-## Section 9 — Onboarding fallback
-
-### 9.1 NTN/STRN — "What is your FBR NTN? Provincial STRN?"
-
-- **NTN/STRN question** — "What is your FBR NTN? Provincial STRN?"
-
-### 9.2 Province — "Where is the business registered?"
-
-- **Province question** — "Where is the business registered?"
-
-### 9.3 Registration type — "Federal (goods), provincial (services), or both?"
-
-- **Registration type question** — "Federal (goods), provincial (services), or both?"
-
-### 9.4 Filing period — Monthly. "Which month?"
-
-- **Filing period question** — Monthly. "Which month?"
-
-### 9.5 Exports — "Do you export?"
-
-- **Exports question** — "Do you export?"
-
-### 9.6 Credit brought forward — Always ask.
-
-- **Credit brought forward** — Always ask.
-
-## Section 10 — Reference material
-
-### Sources
-
-1. Sales Tax Act 1990 (federal, as amended). 2. Provincial sales tax acts (Sindh, Punjab, KP, Balochistan). 3. FBR IRIS portal. 4. SROs for exemptions and reduced rates.
-
-### Known gaps
-
-1. Multi-province filing refused. 2. SRO-based manufacturing exemptions refused. 3. Withholding agent obligations refused. 4. Provincial rate changes frequent — verify before filing.
-
-### Change log
-
-- v2.0 (April 2026): Full rewrite to Malta v2.0 ten-section structure. Federal/provincial split emphasized.
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. All outputs must be reviewed by a qualified professional before filing.
-
-The most up-to-date version is maintained at [openaccountants.com](https://openaccountants.com).
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
+Not yet confirmed: individual supplier/tax-invoice classifications, actual later 2026 amendments/extension calendars, all provincial input/cross-credit/refund/withholding/marketplace specifics and any special SRO/EOU/extra-tax/POS eligibility. The pattern library is workflow guidance, not legal evidence for a counterparty exemption. No professional approval is claimed.

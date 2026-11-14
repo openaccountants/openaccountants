@@ -1,11 +1,11 @@
 ---
 name: pk-income-tax
-description: Use this skill whenever asked about Pakistan personal income tax for resident individuals, self-employed professionals, freelancers, sole proprietors, and Associations of Persons (AOP) filing an annual return with the Federal Board of Revenue (FBR). Trigger on phrases like "Pakistan income tax", "ITO 2001", "Income Tax Ordinance 2001", "FBR IRIS", "filer ATL Pakistan", "non-filer surcharge", "salary brackets Pakistan", "non-salary brackets Pakistan", "Finance Act 2025", "self-employed Pakistan tax", "AOP Pakistan", "freelance tax Pakistan", "PSEB IT export exemption", "Section 65 Pakistan", "10% surcharge Pakistan", or "annual return Pakistan". Covers the Income Tax Ordinance 2001 as amended by Finance Act 2024 and Finance Act 2025, salary vs non-salary progressive brackets, the Active Taxpayers List (ATL) filer-vs-non-filer differential withholding, AOP separate-entity taxation, Section 65 / PSEB IT export final-tax exemption, the 10% surcharge on income above Rs 10 million, foreign income credits, and IRIS portal mechanics. Out of scope ; company (corporate) returns, Tax Year July-June for super tax above thresholds, capital gains on listed securities (NCCPL), property gain regimes, NTN registration mechanics, and provincial sales tax on services. ALWAYS read this skill before touching any Pakistan personal income tax work.
+description: Use for pakistan personal income tax and aop working paper. Read the stated period, eligibility conditions, evidence requirements, owner skills and unresolved boundaries before calculating or preparing a return.
 version: 1.1
 jurisdiction: PK
 tax_year: 2026
 last_updated: 2026-11-14
-source_checked: 2026-10-17
+source_checked: 2026-11-14
 depends_on:
   - income-tax-workflow-base
 category: international
@@ -15,7 +15,7 @@ domain: income-tax
 type: computation
 ---
 
-# Pakistan personal income tax and AOP working paper v1.1
+# Pakistan personal income tax and AOP working paper v 1.1
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -23,7 +23,7 @@ type: computation
 
 Resident individuals, self-employed professionals, freelancers, sole proprietors and AOPs preparing a reviewed working paper for Pakistan tax year 2026, meaning 1 July 2025 to 30 June 2026 under s.74. Use the Finance Act 2025 table applicable to this period, not a tax-year-2025 baseline or later prospective table. Companies, securities/property gains, treaties/non-residents, provincial services tax and employer monthly payroll have separate computations.
 
-Quick answer: determine residence and the actual income category, separate final-tax receipts, then apply the salary table only if salary exceeds 75% of taxable income (in words on the page). At exactly 75%, use the other table. Keep the s.4AB surcharge, s.4C super tax and any minimum tax distinct. [ITO ss.4AB,4C,11,74 and First Schedule Division I](https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf).
+Quick answer: determine residence and the actual income category, separate final-tax receipts, then apply the salary table only if salary exceeds 75% of taxable income (in words on the page). At exactly 75%, use the other table. Keep the s.4AB surcharge, s.4C super tax and any minimum tax distinct. [ITO ss.4AB,4 C,11,74 and First Schedule Division I](https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf).
 
 ## Rates, bands and thresholds
 
@@ -67,7 +67,7 @@ Section 11 has 5 heads: Salary, Property, Business, Capital Gains and Other Sour
 4. Compute s.4AB separately using its actual taxable-income threshold and salary proviso. Do not impose 10% on every salaried case or confuse this with s.4C super tax. Refer high-income s.4C cases for the separate charge.
 5. Compute eligible credits using their own formulas and conditions. Section 4(3) applies foreign tax credit first, then Part X credits, then ss.147/168 credits. Donation/pension credits use an average-rate formula; withholding is a tax credit where legally adjustable, not a reduction of gross receipts. Section 62 shares/sukuk credit is omitted; do not revive it. Historic s.65 industrial credits require their actual section and eligibility, not a generic claim.
 6. Test s.113 turnover minimum tax if in scope; s.113C ACT is corporate and outside this individual/AOP computation. Industrial AOP WWF/WPPF needs specialist routing. Reconcile normal/minimum/separate charges, actual s.168 adjustable withholding and s.147 payments before stating balance or refund. The original invented universal ordering of minimum tax/surcharge/refund is not a substitute for each operative provision.
-7. Prepare the resident individual's s.116 wealth statement and reconciliation; reconcile opening/closing assets/liabilities, expenditure, tax, transfers and income. Never plug a gap; s.111 unexplained-income risk needs evidence. [ss.4,11,20,21,57,61-65,92,103,111,113,116,147,154A,168](https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf).
+7. Prepare the resident individual's s.116 wealth statement and reconciliation; reconcile opening/closing assets/liabilities, expenditure, tax, transfers and income. Never plug a gap; s.111 unexplained-income risk needs evidence. [ss.4,11,20,21,57,61-65,92,103,111,113,116,147,154 A,168](https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf).
 
 ### AOP member treatment
 
@@ -80,11 +80,11 @@ An AOP is taxed separately. A member's share from taxed AOP income is exempt sub
 | Individual/AOP annual return | 30 September following tax-year end; ordinary tax-year-2026 date is 30 September 2026 (derived); applicable extension must be checked | [s.118(3)](https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf) |
 | Resident individual wealth/reconciliation statement | With return; notice-based statements by their notice date | [ss.116,118(4)](https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf) |
 | Return-balance tax payment | By the return due date | [s.137(1)](https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf) |
-| Individual advance-tax quarters | 15 September,15 December,15 March,15 June; s.147 exclusions/threshold/formula apply | [s.147(4B)-(5)](https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf) |
-| AOP advance-tax quarters | 25 September,25 December,25 March,15 June; turnover formula applies, not an individual-income threshold | [s.147(4),(5A)](https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf) |
+| Individual advance-tax quarters | 15 September,15 December,15 March,15 June; s.147 exclusions/threshold/formula apply | [s.147(4 B)-(5)](https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf) |
+| AOP advance-tax quarters | 25 September,25 December,25 March,15 June; turnover formula applies, not an individual-income threshold | [s.147(4),(5 A)](https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf) |
 | Extension application | Apply under s.119 with reasons before the applicable due date; not automatic relief | [s.119](https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf) |
 
-For an individual, s.147(4B) uses latest assessed tax divided by 4 less relevant quarter credits, with its statutory exclusions; it is not simply current brackets on last year's income. For an AOP, s.147(4) uses quarter turnover x latest assessed tax / latest-year turnover less relevant quarter tax. Estimates have their own conditions. Refer changed-income, missing-turnover or estimate cases rather than invent inputs. [s.147](https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf).
+For an individual, s.147(4 B) uses latest assessed tax divided by 4 less relevant quarter credits, with its statutory exclusions; it is not simply current brackets on last year's income. For an AOP, s.147(4) uses quarter turnover x latest assessed tax / latest-year turnover less relevant quarter tax. Estimates have their own conditions. Refer changed-income, missing-turnover or estimate cases rather than invent inputs. [s.147](https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf).
 
 In IRIS open the actual year and individual/AOP return, complete each applicable income/separate-tax schedule, reconcile tax deductions to CPRs and complete the individual's wealth statement. Generate a PSID for any due balance, pay through the authorised channel and keep the CPR, then submit the reviewed return/statements and retain acknowledgements. Reconcile prefilled deductions to taxpayer, section, period and actual payment; do not treat prefilling as proof of credit entitlement. Exact current screens/boxes are not certified here.
 
@@ -92,15 +92,17 @@ In IRIS open the actual year and individual/AOP return, complete each applicable
 
 | Default and complete basic condition | Published rule | Official source |
 |---|---|---|
-| Late annual return | Higher of 0.1% of tax payable or 1,000 per day; minimum 10,000 for individual with at least 75% salary income,50,000 otherwise; maximum 200% tax payable; statutory reductions 75%,50%,25% for filing within1,2,3 months of due/extended due date (worded figures converted to numerals) | [s.182 table item1](https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf) |
+| Late annual return | Higher of 0.1% of tax payable or 1,000 per day; minimum 10,000 for individual with at least 75% salary income,50,000 otherwise; maximum 200% tax payable; statutory reductions 75%,50%,25% for filing within 1,2,3 months of due/extended due date (worded figures converted to numerals) | [s.182 table item 1](https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf) |
 | Unpaid ordinary tax/penalty/other covered amount | Higher of 12% per annum and KIBOR+3%; period due date to payment; s.205(1) proviso may affect an appealed-order case | [s.205(1)](https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf) |
-| Unpaid advance tax | Same stated rate under s.205(1A), to payment or return due date, whichever earlier; estimated-tax shortfall has a separate s.205(1B) test | [s.205(1A)-(1B)](https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf) |
+| Unpaid advance tax | 12% yearly under s.205(1 A), due date to payment or return due date, whichever earlier; s.205(1 B) separately tests the 90% estimated-tax shortfall and its statutory accrual window | [Current s.205(1 A)-(1 B)](https://download1.fbr.gov.pk/Docs/2026724177725705IncomeTaxOrdinanace2001.pdf); [enacted Finance Act 2024 amendment 31](https://download1.fbr.gov.pk/Docs/2024630146346801FinanceAct-2024.pdf) |
+
+For default after 1 July 2026, s.182 item 1 now defines tax payable as the higher of current assessed/treat-as-assessed tax and tax payable for the immediately preceding duly-filed return year. Do not reuse the older explanation for a current late-return calculation. The 2025 consolidation incorrectly spreads the Finance Act 2024 rate change into advance-tax subsections: enacted amendment 31 changes **s.205(1) only**; current s.205(1 A)/(1 B)and withholding s.205(3) print 12% yearly. This is an editorial reconciliation, not a claimed prospective 2026 rate reduction. Preserve each subsection's dates and relief. [Current ss.182/205](https://download1.fbr.gov.pk/Docs/2026724177725705IncomeTaxOrdinanace2001.pdf); [Finance Act 2024 amendment 31](https://download1.fbr.gov.pk/Docs/2024630146346801FinanceAct-2024.pdf), read 2026-11-14.
 
 Wealth-statement default is a separate s.182 offence; s.182A concerns late-return consequences, not a generic wealth-statement penalty. Concealment/false statements, audits under s.177, amendments under s.122, recovery and appeals require specialist handling. No guaranteed refund processing time or audit selection is asserted.
 
 ## Cross-border points
 
-Residents include relevant foreign-source income within each head, with actual gross receipts/foreign withholding supported. Section 103 credit is the lesser of foreign income tax paid and Pakistan tax at the average Pakistan rate on net foreign-source income, tested separately by head; speculation is separately treated. Tax must be paid within 2 years after the income year end (in words on the page). Unused credit is neither refunded nor carried back/forward. Treaty relief needs the actual s.107 treaty, residence and other conditions; it is not an automatic foreign-income exemption. Final s.154A income does not also get a foreign-tax credit. [ss.11,103,107,154A](https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf).
+Residents include relevant foreign-source income within each head, with actual gross receipts/foreign withholding supported. Section 103 credit is the lesser of foreign income tax paid and Pakistan tax at the average Pakistan rate on net foreign-source income, tested separately by head; speculation is separately treated. Tax must be paid within 2 years after the income year end (in words on the page). Unused credit is neither refunded nor carried back/forward. Treaty relief needs the actual s.107 treaty, residence and other conditions; it is not an automatic foreign-income exemption. Final s.154A income does not also get a foreign-tax credit. [ss.11,103,107,154 A](https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf).
 
 Convert currency under s.71 at the applicable SBP rate on the date the amount is taken into account under the Ordinance; the old s.72 receipt-date citation was wrong. Keep the date/rate evidence. Refer foreign-asset statements/amnesty claims, treaty positions and non-resident mixed-source cases.
 
@@ -110,7 +112,7 @@ ATL affects specified withholding events under the Tenth Schedule, with general 
 
 ### Saad's mixed export and domestic business example, corrected
 
-Saad remains the Karachi-resident freelance developer in the earlier case. Assume fully qualifying PSEB export proceeds4,000,000 with authorised-dealer proof and all s.154A finality conditions; domestic receipts1,000,000 and allowable attributable expenses200,000. The old assumed3% domestic-service withholding is not a verified tax-year-2026 rate or automatically an adjustable credit. Use actual section/treatment/payment evidence before claiming it.
+Saad remains the Karachi-resident freelance developer in the earlier case. Assume fully qualifying PSEB export proceeds 4,000,000 with authorised-dealer proof and all s.154A finality conditions; domestic receipts 1,000,000 and allowable attributable expenses 200,000. The old assumed 3% domestic-service withholding is not a verified tax-year-2026 rate or automatically an adjustable credit. Use actual section/treatment/payment evidence before claiming it.
 
 ```oa-check
 name: Saad ordinary and final streams kept separate
@@ -130,11 +132,11 @@ expected:
   tax_before_other_tests: 40000
 ```
 
-If actual legally adjustable domestic credit were30,000, the ordinary balance would be0 (derived), but the old3%-rate assumption does not prove that credit or override minimum-tax treatment. Without PSEB but with another qualifying s.154A service case and all conditions, the export withholding is40,000 (derived at1%), not automatically ordinary income. Only if the4,000,000 stream genuinely belongs in ordinary business income and200,000 is the complete supported cost would4,800,000 ordinary income give1,290,000 table tax (derived). That conditional historical alternative is retained, without the false claim that missing PSEB alone costs1,280,000.
+If actual legally adjustable domestic credit were 30,000, the ordinary balance would be 0 (derived), but the old 3%-rate assumption does not prove that credit or override minimum-tax treatment. Without PSEB but with another qualifying s.154A service case and all conditions, the export withholding is 40,000 (derived at 1%), not automatically ordinary income. Only if the 4,000,000 stream genuinely belongs in ordinary business income and 200,000 is the complete supported cost would 4,800,000 ordinary income give 1,290,000 table tax (derived). That conditional historical alternative is retained, without the false claim that missing PSEB alone costs 1,280,000.
 
 ### Salary classification boundary
 
-Both cases below assume total taxable income3,000,000, no other charges/credits and correctly classified components. Salary2,400,000 is80%, so salary-table tax is300,000. Recompute the formula rather than reuse an old illustrative payroll table:116,000+23% x800,000 =300,000 (derived). Salary2,000,000 is66.6667% (derived), so non-salary table tax590,000 applies to the whole taxable income.
+Both cases below assume total taxable income 3,000,000, no other charges/credits and correctly classified components. Salary 2,400,000 is 80%, so salary-table tax is 300,000. Recompute the formula rather than reuse an old illustrative payroll table:116,000+23% x 800,000 =300,000 (derived). Salary 2,000,000 is 66.6667% (derived), so non-salary table tax 590,000 applies to the whole taxable income.
 
 ```oa-check
 name: Salary table versus non-salary table on same taxable income
@@ -160,13 +162,23 @@ expected:
 
 Obtain residence days/citizenship/foreign tax residence and government posting, individual/AOP/company status, salary and all other taxable/separate/final streams, full-year bank/ledger/salary certificates, allowable expense/asset records, prior returns, actual tax certificates/CPRs, event-date ATL and late-filing history, PSEB period/e-PRCs and export conditions, foreign tax/head/net-income evidence, qualifying donation/pension evidence, AOP deed/member types and current/prior turnover/audited accounts, loss history and complete wealth reconciliation.
 
-Refuse a final filing computation without residence, income records and legal classification. Continue supported reconstruction while evidence is obtained. Refer company returns, employer monthly payroll, NCCPL gains, property gains/236C/236K, provincial services tax, historic amnesties/foreign-asset statements, s.4C super tax, audit/recovery/amendment/appeal matters and industrial WWF/WPPF. Never invent credits, revive omitted relief, double-tax a qualifying member share, assume blanket exemption, or file an unreviewed working paper.
+Refuse a final filing computation without residence, income records and legal classification. Continue supported reconstruction while evidence is obtained. Refer company returns, employer monthly payroll, NCCPL gains, property gains/236 C/236 K, provincial services tax, historic amnesties/foreign-asset statements, s.4C super tax, audit/recovery/amendment/appeal matters and industrial WWF/WPPF. Never invent credits, revive omitted relief, double-tax a qualifying member share, assume blanket exemption, or file an unreviewed working paper.
+
+
+### Current late-entry ATL route, November 2026
+
+Current s.182A surcharge amounts are company 100,000/AOP 50,000/individual 25,000; these are current-action amounts, not the historical 20,000/10,000/1,000 table. For a late individual, r 81 B(2 B)-(2 D)now allows IRIS**Form ATL-U**undertaking instead of the surcharge: sixmonths starts from successful IRIS acknowledgment, with no purchase/acquisition/ownership or beneficial interest in any property during the undertaking. An established breach after electronic hearing withdraws the benefit from the breach date and ordinary rules then govern. Do not promise this route to an AOP/company or describe filing alone as automatic fee-free entry. Datedevent status and actual charge conditions still control withholding. [Current ITO s.182A](https://download1.fbr.gov.pk/Docs/2026724177725705IncomeTaxOrdinanace2001.pdf); [signed 10 November 2026 SRO 2097](https://download1.fbr.gov.pk/SROs/202611101511326308SRO2097of2026.pdf), read 2026-11-14 for the operative rule/form.
+
+For the actual tax-year-2026 filing cycle, FBR Circular 04 of 2026-27 dated 15 October 2026 extends the filing date to **31 October 2026** for persons originally due 30 September 2026 and previously extended to 15 October. It does not extend every company return. Apply any individual further order only on its evidence; this circular does not itself state a general payment extension. [Official circular](https://download1.fbr.gov.pk/Docs/20261015221039470Extension.pdf), read and scanned page inspected 2026-11-14.
 
 ## Sources
 
+
+
 | Source and actual portions read | Official URL | Read on |
 |---|---|---|
-| Read for ITO ss.4/4AB,11,18,20-21,57,61-63,71,74,82/84,92,103,113,116,118,137,147,154A,168,174,182/205 and First Schedule Division I/IX; operative text distinguished from historic footnotes | https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf | 2026-11-14 |
-| Read for June2026 consolidation s.154A/DivisionIVA period amendment; this skill uses tax-year-2026 effective law rather than automatically adopting later-year amendments | https://download1.fbr.gov.pk/Docs/2026724177725705IncomeTaxOrdinanace2001.pdf | 2026-11-14 |
+| Read for current-action s.182 item 1 explanation and s.205(1)/(1 A)/(1 B)/(3)in the 2026 consolidation, plus enacted Finance Act 2024 amendment 31, on 2026-11-14 | https://download1.fbr.gov.pk/Docs/2026724177725705IncomeTaxOrdinanace2001.pdf; https://download1.fbr.gov.pk/Docs/2024630146346801FinanceAct-2024.pdf. | 2026-11-14 |
+| Read for ITO ss.4/4 AB,11,18,20-21,57,61-63,71,74,82/84,92,103,113,116,118,137,147,154 A,168,174,182/205 and First Schedule Division I/IX; operative text distinguished from historic footnotes | https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf | 2026-11-14 |
+| Read for June 2026 consolidation s.154A/Division IVA period amendment; this skill uses tax-year-2026 effective law rather than automatically adopting later-year amendments | https://download1.fbr.gov.pk/Docs/2026724177725705IncomeTaxOrdinanace2001.pdf | 2026-11-14 |
 
-Not yet confirmed: client-specific residence/treaty/source/classification, actual tax credits and PSEB compliance, current IRIS field identifiers, tax-year-2026 deadline extensions/ATL refresh details, complete super-tax/sector-minimum-tax/WWF/WPPF calculations, historical residual industrial-credit/amnesty claims and full dispute procedures. The old6-24-month refund estimate, blanket AOP remuneration exemption, and automatic PSEB-failure/ordinary-income assumption are not usable instructions. The historic pension age uplift is expired; no current uplift is claimed.
+Not yet confirmed: client-specific residence/treaty/source/classification, actual tax credits and PSEB compliance, current IRIS field identifiers, any further individual deadline orders/ATL event details, complete super-tax/sector-minimum-tax/WWF/WPPF calculations, historical residual industrial-credit/amnesty claims and full dispute procedures. The old 6-24-month refund estimate, blanket AOP remuneration exemption, and automatic PSEB-failure/ordinary-income assumption are not usable instructions. The historic pension age uplift is expired; no current uplift is claimed.

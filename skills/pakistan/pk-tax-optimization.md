@@ -1,6 +1,6 @@
 ---
 name: pk-tax-optimization
-description: >
+description: Use for pakistan lawful freelancer tax planning. Read the stated period, eligibility conditions, evidence requirements, owner skills and unresolved boundaries before calculating or preparing a return.
   Use this skill whenever asked about legally reducing tax for a freelancer or small business in
   Pakistan. Trigger on phrases like "reduce tax Pakistan", "PSEB benefit", "filer vs non-filer",
   "tax planning Pakistan freelancer", "save tax IT export Pakistan". Covers the PSEB IT-export
@@ -18,7 +18,7 @@ domain: tax-optimization
 type: decision
 ---
 
-# Pakistan lawful freelancer tax planning v1.1
+# Pakistan lawful freelancer tax planning v 1.1
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -33,8 +33,8 @@ Obtain services/contracts and domestic/export split, residence, bank/e-PRCs, gro
 ## The method, step by step
 
 1. Test the service and authorised-dealer realisation under s.154A. For qualifying PSEB IT/ITeS proceeds the tax-year-2026 table is 0.25%; another qualifying s.154A case is 1%. Recommend lawful PSEB registration where eligible; never backdate it. Finality also requires the return and other statutory conditions, with no foreign-tax credit. [s.154A; First Schedule Part III Division IVA](https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf).
-2. Keep domestic income and its properly evidenced allowable business costs separate; use ordinary income-tax rules for that stream. The old comparison to ordinary marginal rates is not an election to put any receipt in whichever regime is cheaper. [ss.18,20,21,154A](https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf).
-3. Check actual ATL status for each withholding event. Filing/compliance can affect future rates, but paying an ATL surcharge does not erase every late-filer rule or guarantee a retrospective refund. Distinguish final, minimum and adjustable tax before claiming a credit. [ss.168,182A; Tenth Schedule](https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf).
+2. Keep domestic income and its properly evidenced allowable business costs separate; use ordinary income-tax rules for that stream. The old comparison to ordinary marginal rates is not an election to put any receipt in whichever regime is cheaper. [ss.18,20,21,154 A](https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf).
+3. Check actual ATL status for each withholding event. Filing/compliance can affect future rates, but paying an ATL surcharge does not erase every late-filer rule or guarantee a retrospective refund. Distinguish final, minimum and adjustable tax before claiming a credit. [ss.168,182 A; Tenth Schedule](https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf).
 4. Reconcile required advance tax with actual withholding/payments. Do not pay twice or claim unproved credit; late payment can incur default surcharge. [ss.147,168,205](https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf).
 
 ## Boundary and exception table

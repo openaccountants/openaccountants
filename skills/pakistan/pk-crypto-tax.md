@@ -1,6 +1,6 @@
 ---
 name: pk-crypto-tax
-description: >
+description: Use for pakistan virtual assets and tax evidence. Read the stated period, eligibility conditions, evidence requirements, owner skills and unresolved boundaries before calculating or preparing a return.
   Use this skill whenever asked about taxation and legal status of cryptocurrency in Pakistan. Trigger
   on phrases like "Pakistan crypto tax", "is crypto legal Pakistan", "Bitcoin tax Pakistan", "PVARA",
   "crypto gains Pakistan FBR". Covers the evolving legal/regulatory status, how gains could be taxed,
@@ -17,7 +17,7 @@ domain: crypto
 type: situation-rules
 ---
 
-# Pakistan virtual assets and tax evidence v1.1
+# Pakistan virtual assets and tax evidence v 1.1
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 

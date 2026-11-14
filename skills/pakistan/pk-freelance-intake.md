@@ -1,6 +1,6 @@
 ---
 name: pk-freelance-intake
-description: ALWAYS USE THIS SKILL when a user asks for help with their Pakistan taxes AND mentions freelancing, self-employment, sole proprietorship, IT exports, or being a business individual in Pakistan. Trigger on phrases like "help me with my Pakistan taxes", "I'm a freelancer in Pakistan", "I export IT services", "file my FBR return", "I'm self-employed in Pakistan". This is the REQUIRED entry point for the Pakistan self-employed workflow ; downstream skills (pk-it-export-tax, pk-income-tax, pk-social-contributions, pakistan-sales-tax, pk-return-assembly) depend on it. Upload-first; Pakistan-resident individuals only.
+description: Use for pakistan freelance and sme intake. Read the stated period, eligibility conditions, evidence requirements, owner skills and unresolved boundaries before calculating or preparing a return.
 version: 1.1
 jurisdiction: PK
 tax_year: 2026
@@ -12,15 +12,15 @@ domain: income-tax
 type: router
 ---
 
-# Pakistan freelance and SME intake v1.1
+# Pakistan freelance and SME intake v 1.1
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
 ## Scope
 
-Entry point for Pakistan resident self-employed individuals, sole proprietors, AOP partners and small private-company founders, preparing a reviewer package for tax year 2026, the normal year1 July2025 to30 June2026. Its job is evidence collection, classification and routing; it does not file a return or certify tax. Company status routes to the company skill, rather than being treated as an individual's business. Non-resident, uncertain-residence and special regimes require specialist handling.
+Entry point for Pakistan resident self-employed individuals, sole proprietors, AOP partners and small private-company founders, preparing a reviewer package for tax year 2026, the normal year 1 July 2025 to 30 June 2026. Its job is evidence collection, classification and routing; it does not file a return or certify tax. Company status routes to the company skill, rather than being treated as an individual's business. Non-resident, uncertain-residence and special regimes require specialist handling.
 
-Quick answer: read the available documents first, identify the person, period and income streams, then load the relevant skills. The salary-table gate is more than75% of taxable income, not the old50% threshold. The repealed120-day-plus-prior365-day residence test must not be used. [ITO s.82 and First Schedule Division I](https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf).
+Quick answer: read the available documents first, identify the person, period and income streams, then load the relevant skills. The salary-table gate is more than 75% of taxable income, not the old 50% threshold. The repealed 120-day-plus-prior 365-day residence test must not be used. [ITO s.82 and First Schedule Division I](https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf).
 
 ## Ask the client first
 
@@ -41,9 +41,9 @@ Do not request passwords in the intake package. Access status is enough for rout
 
 ## The method, step by step
 
-1. **Open and sweep scope.** Explain the document-to-reviewer workflow and establish residence, entity, income mix, turnover and province. Non-resident/uncertain cases pause final classification. AJK/GB require their own administration analysis, not this ordinary Pakistan workflow. Income-tax residence under s.82 includes presence of at least183 days, government posting, and the separate citizenship/foreign-residence alternatives (figures in words on the page). A resident AOP has a different s.84 test. [ss.82,84](https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf).
+1. **Open and sweep scope.** Explain the document-to-reviewer workflow and establish residence, entity, income mix, turnover and province. Non-resident/uncertain cases pause final classification. AJK/GB require their own administration analysis, not this ordinary Pakistan workflow. Income-tax residence under s.82 includes presence of at least 183 days, government posting, and the separate citizenship/foreign-residence alternatives (figures in words on the page). A resident AOP has a different s.84 test. [ss.82,84](https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf).
 2. **Read and infer.** Import all accounts and source documents; separate gross receipts, costs, transfers, foreign conversion, withholding suffered and advances. Never re-ask a fact clearly evidenced by documents. Reconcile contradictory figures and present the discrepancy with sources instead of choosing an arbitrary higher-tax number.
-3. **Classify entity and income.** Individual/AOP annual income returns are under s.114; s.116 is the resident individual's wealth statement, not an AOP return form. Salary-table eligibility is more than75% salary of taxable income; the remaining individual/AOP table is shared, with a professional-AOP proviso. A company needs its applicable company regime. Do not certify an old form32A or guessed portal identifier. [ss.11,92,114,116; First Schedule](https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf).
+3. **Classify entity and income.** Individual/AOP annual income returns are under s.114; s.116 is the resident individual's wealth statement, not an AOP return form. Salary-table eligibility is more than 75% salary of taxable income; the remaining individual/AOP table is shared, with a professional-AOP proviso. A company needs its applicable company regime. Do not certify an old form 32 A or guessed portal identifier. [ss.11,92,114,116; First Schedule](https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf).
 4. **Test export candidate.** Genuine PSEB IT/ITeS export proceeds with authorised-dealer realisation go to `pk-it-export-tax`; finality also requires the statutory filing/other conditions and no foreign-tax credit. The s.154A(2)(c) proviso removes the sales-tax-return condition for the specified PSEB branch, not provincial liability itself. A foreign client/platform alone does not qualify and missing PSEB does not automatically mean ordinary slabs. [s.154A](https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf).
 5. **Check ATL and withholding.** Capture actual event-date status and any late-filer history; route specific payment categories and payer definitions to `pk-withholding-tax`. Do not use a single turnover threshold for salary, services, rent and foreign payments or promise a weekly ATL update. Preserve the prior-return/surcharge evidence and missing-status flag.
 6. **Run the parallel routing table.** Goods and services can require different returns. Employment creates a payroll assessment even where the person previously had no staff. Capital events and entity uncertainty need their own evidence/routing.
@@ -69,7 +69,7 @@ Do not request passwords in the intake package. Access status is enough for rout
 
 ### Structured package
 
-Keep the original handoff fields, but record evidence and unknowns explicitly. `tax_year` is2026 and the normal window is2025-07-01 through2026-06-30 (derived under s.74). Each registration/eligibility field is true/false only when established.
+Keep the original handoff fields, but record evidence and unknowns explicitly. `tax_year` is 2026 and the normal window is 2025-07-01 through 2026-06-30 (derived under s.74). Each registration/eligibility field is true/false only when established.
 
 ```json
 {
@@ -102,7 +102,7 @@ Keep the original handoff fields, but record evidence and unknowns explicitly. `
 
 ### Ahmed Khan historical intake, retained with conditions
 
-Ahmed Khan remains the Lahore individual/sole proprietor from the earlier handoff, present245 days, with assumed PKR8,500,000 export proceeds and no domestic income/staff. The earlier USD30,000/PKR8,500,000 pairing is an assumed conversion, not a live quote. The bank-account label, including the older Meezan Bank Roshan Digital Account description, does not independently prove permissible business-export realisation. With genuine PSEB eligibility, authorised-dealer proof and all finality conditions, withholding is21,250 (derived). PRA export treatment must be established separately; do not promise exemption from PSEB alone.
+Ahmed Khan remains the Lahore individual/sole proprietor from the earlier handoff, present 245 days, with assumed PKR 8,500,000 export proceeds and no domestic income/staff. The earlier USD 30,000/PKR 8,500,000 pairing is an assumed conversion, not a live quote. The bank-account label, including the older Meezan Bank Roshan Digital Account description, does not independently prove permissible business-export realisation. With genuine PSEB eligibility, authorised-dealer proof and all finality conditions, withholding is 21,250 (derived). PRA export treatment must be established separately; do not promise exemption from PSEB alone.
 
 ```oa-check
 name: Ahmed Khan qualifying export candidate
@@ -132,22 +132,26 @@ expected:
   distance_below_salary_gate: 5
 ```
 
-Salary is70% (derived), so this is below the statutory more-than75% gate; the old50% routing would wrongly choose the salary table. This is a classification case, not a full tax computation.
+Salary is 70% (derived), so this is below the statutory more-than 75% gate; the old 50% routing would wrongly choose the salary table. This is a classification case, not a full tax computation.
 
 ## When to refuse or refer
 
-Preserve the original scope refusals: non-resident/part-year/dual-resident treaty cases; foreign-resident Pakistan-source-only claims; listed/public companies and consolidated groups; banking, insurance, petroleum/oil/gas/mineral regimes; transfer-pricing/CbCR; AJK/GB administration; undocumented smuggling/informal/cash-only operations; and missing AOP deed/allocation evidence. Private companies with more than50 staff or audited revenue over PKR1,000,000,000 remain an **internal specialist-review trigger**, not a statutory tax threshold. More than20 staff remains an internal payroll-volume flag, not a legal audit requirement.
+Preserve the original scope refusals: non-resident/part-year/dual-resident treaty cases; foreign-resident Pakistan-source-only claims; listed/public companies and consolidated groups; banking, insurance, petroleum/oil/gas/mineral regimes; transfer-pricing/CbCR; AJK/GB administration; undocumented smuggling/informal/cash-only operations; and missing AOP deed/allocation evidence. Private companies with more than 50 staff or audited revenue over PKR 1,000,000,000 remain an **internal specialist-review trigger**, not a statutory tax threshold. More than 20 staff remains an internal payroll-volume flag, not a legal audit requirement.
 
-Do not repeat the old sample asserting that110 days proves non-residence: all s.82 alternatives must be tested. Unknown ATL, PSEB, province, entity, threshold, minimum tax, super tax or book status stays unresolved; do not invent non-filer tax, dual-province registration, an individual entity, a foreign exchange rate or an old-year rate. Pause the affected final conclusion while completing supported reconstruction. Never claim the professional reviewer has approved the package merely because intake is complete.
+Do not repeat the old sample asserting that 110 days proves non-residence: all s.82 alternatives must be tested. Unknown ATL, PSEB, province, entity, threshold, minimum tax, super tax or book status stays unresolved; do not invent non-filer tax, dual-province registration, an individual entity, a foreign exchange rate or an old-year rate. Pause the affected final conclusion while completing supported reconstruction. Never claim the professional reviewer has approved the package merely because intake is complete.
 
 ## Completion checklist
 
 Preserve every original handoff check: scope/residence evidence; legal entity/deed/CUIN; NTN/registration gaps; event-date ATL; PSEB period and bank evidence; gross PKR/FX and domestic/export split; regime reason; goods/services footprint and named authorities; employee/headcount/location and coverage; section-specific payer obligations; minimum/super/ACT flags; capital events; books/framework needs; IRIS access; all defaults/open items/refusals; chosen and omitted skills with reasons; and reviewer disclaimer.
 
+## Sindh self-employed coverage screen
+
+Ask about work category and existing SESSI coverage even without staff. Sindh 2021 amendment ss.2-3 adds self-employed workers and s.20A fixed PKR 1,500 monthly contribution subject to prescribed conditions. Obtain those conditions before determining that a particular freelancer is covered; no-staff status alone is insufficient. Route to `pk-social-contributions`. [Official amendment](https://www.sessi.gov.pk/assets/files/content/2026/01/Sindh-Act-No.XIX-of-2021.pdf), read for ss.2-3 on 2026-11-14.
+
 ## Sources
 
 | Source and actual portions read | Official URL | Read on |
 |---|---|---|
-| Read for ITO ss.11,71,74,82/84,92,114/116,147,154A,174 and First Schedule salary classification; repealed residence footnote distinguished from operative text | https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf | 2026-11-14 |
+| Read for ITO ss.11,71,74,82/84,92,114/116,147,154 A,174 and First Schedule salary classification; repealed residence footnote distinguished from operative text | https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf | 2026-11-14 |
 
-Not yet confirmed: event-specific ATL rates/refresh and current re-entry surcharge, all provincial registration/place/exemption decisions, EOBI/provincial coverage and bases, actual current IRIS identifiers/screens, taxpayer evidence and special-year/treaty regimes. The old turnover intake bins600,000/5,000,000/50,000,000/250,000,000 were workflow bins, not universal liability thresholds; no tax conclusion follows from them. Repeated tax tables belong to their named computation owners, with source checks required before use; unsupported historic50% salary/120+365-day residence routes are withdrawn as contradicted by the cited law.
+Not yet confirmed: event-specific ATL rates/refresh and current re-entry surcharge, all provincial registration/place/exemption decisions, EOBI/provincial coverage and bases, actual current IRIS identifiers/screens, taxpayer evidence and special-year/treaty regimes. The old turnover intake bins 600,000/5,000,000/50,000,000/250,000,000 were workflow bins, not universal liability thresholds; no tax conclusion follows from them. Repeated tax tables belong to their named computation owners, with source checks required before use; unsupported historic 50% salary/120+365-day residence routes are withdrawn as contradicted by the cited law.
