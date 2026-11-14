@@ -11,7 +11,6 @@ covered_by:
   TP: malta-transfer-pricing
   XB: moving-to-malta-tax-residence
 partial:
-  IT-IND: "The Act and MTCA's 2026 table disagree on one subtraction (parent with one qualifying child above EUR 60,000); held in malta-income-tax."
   IT-CORP: "mt-corporate-tax has not yet been rebuilt to the 2026 standard."
 ---
 
