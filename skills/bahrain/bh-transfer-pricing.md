@@ -17,13 +17,14 @@ description: >
 jurisdiction: BH
 category: international
 tax_year: 2026
-last_updated: 2026-10-29
-version: 0.1
+last_updated: 2026-11-14
+version: 0.2
+type: situation-rules
 tier: 2
 domain: transfer-pricing
 ---
 
-# Bahrain transfer pricing v0.1
+# Bahrain transfer pricing v0.2
 
 **Draft law.** This skill states the law in force for 2026. A draft corporate income tax law went to the legislature on 29 December 2025. Secondary sources report fiscal years from 1 January 2027 and transfer pricing rules for residents above BHD 1 million ([KPMG, March 2026](https://kpmg.com/us/en/taxnewsflash/news/2026/03/tnf-bahrain-overview-of-draft-law-introducing-10-percent-corporate-income-tax.html)). We found no confirmation of enactment. Before advising on a period starting in 2027, check its status with the NBR.
 
@@ -342,17 +343,17 @@ expected:
 |---|---|---|
 | Decree-Law No. 11 of 2024 (DMTT Law), arts. 1, 3, 5, 9, 13, 25, 28, 44 (NBR unofficial English) | https://www.nbr.gov.bh/laws_regulations/dmtt | 2026-10-29 |
 | Decision No. 172 of 2024, DMTT Executive Regulations, arts. 1(33), 13, 66, 75 (NBR unofficial English) | https://www.nbr.gov.bh/laws_regulations/dmtt | 2026-10-29 |
-| NBR DMTT Transfer Pricing Guide, version 1.0, June 2026, sections 1.2 and 3 | https://www.nbr.gov.bh/publications/view/dmtt_transfer_pricing_guide | 2026-10-29 |
-| NBR DMTT Administrative Guide, version 1.1 (2 July 2025), section 10.1 | https://www.nbr.gov.bh/publications/view/dmtt_procedural_guide | 2026-10-29 |
-| NBR DMTT FAQs 1.5, 2.4, 2.9, 2.11, 8.4 | https://www.nbr.gov.bh/dmtt_faqs | 2026-10-29 |
-| Ministerial Order No. 28 of 2021 concerning Country-by-Country Reporting (Sijilat unofficial English) | https://www.sijilat.bh/temp/CommercialLaws/18%20EN.pdf | 2026-10-29 |
-| Ministerial Order No. 28 of 2021, Arabic, Official Gazette No. 3509 of 4 February 2021 | https://www.sijilat.bh/temp/CommercialLaws/18%20AR.pdf | 2026-10-29 |
-| Legislative Decree No. 27 of 2015 on the Commercial Register, art. 20 (Arabic) | https://www.sijilat.bh/temp/CommercialLaws/6.docx | 2026-10-29 |
-| CBB Directive EDFIS/C/020/2021, 21 March 2021 | https://www.cbb.gov.bh/wp-content/uploads/2021/03/Directive-on-CbCR-Reporting.pdf | 2026-10-29 |
-| MOIC Circular FAEI/11/MSJ/2021, 30 December 2021 | https://www.nbr.gov.bh/media/MOIC_Circular_FAEI_11_MSJ_2021 | 2026-10-29 |
-| NBR, Action 13 (Country-by-Country Reporting) | https://www.nbr.gov.bh/FTR/bebs_projects/action_thirteen | 2026-10-29 |
-| NBR, Tax Treaties Network | https://www.nbr.gov.bh/FTR/bahrain_tax_treaties_network | 2026-10-29 |
-| NBR, Guidance on Mutual Agreement Procedure, version 1.1 | https://www.nbr.gov.bh/publications/view/Bahrains_Mutual_Agreement_Procedure_MAP_Guidance | 2026-10-29 |
+| NBR DMTT Transfer Pricing Guide, version 1.0, June 2026, sections 1.2 and 3 | https://www.nbr.gov.bh/publications/view/dmtt_transfer_pricing_guide | 2026-11-14, read for sections 1.2 and 3: scope and comparability factors |
+| NBR DMTT Administrative Guide, version 1.1 (2 July 2025), section 10.1 | https://www.nbr.gov.bh/publications/view/dmtt_procedural_guide | 2026-11-14, read for section 10.1: record retention |
+| NBR DMTT FAQs 1.5, 2.4, 2.9, 2.11, 8.4 | https://www.nbr.gov.bh/dmtt_faqs | 2026-11-14, read for the FAQ sections on scope and penalties |
+| Ministerial Order No. 28 of 2021 concerning Country-by-Country Reporting (Sijilat unofficial English) | https://www.sijilat.bh/temp/CommercialLaws/18%20EN.pdf | 2026-11-14, read for the CbCR obligations in the unofficial English text |
+| Ministerial Order No. 28 of 2021, Arabic, Official Gazette No. 3509 of 4 February 2021 | https://www.sijilat.bh/temp/CommercialLaws/18%20AR.pdf | 2026-11-14, read for the Arabic text as published in the Gazette |
+| Legislative Decree No. 27 of 2015 on the Commercial Register, art. 20 (Arabic) | https://www.sijilat.bh/temp/CommercialLaws/6.docx | 2026-11-14, read for art. 20 of the Commercial Register law |
+| CBB Directive EDFIS/C/020/2021, 21 March 2021 | https://www.cbb.gov.bh/wp-content/uploads/2021/03/Directive-on-CbCR-Reporting.pdf | 2026-11-14, read for the CbCR notification directive to CBB licensees |
+| MOIC Circular FAEI/11/MSJ/2021, 30 December 2021 | https://www.nbr.gov.bh/media/MOIC_Circular_FAEI_11_MSJ_2021 | 2026-11-14, read for the circular to MOICT-registered entities on CbCR |
+| NBR, Action 13 (Country-by-Country Reporting) | https://www.nbr.gov.bh/FTR/bebs_projects/action_thirteen | 2026-11-14, read for the CbCR exchange framework page |
+| NBR, Tax Treaties Network | https://www.nbr.gov.bh/FTR/bahrain_tax_treaties_network | 2026-11-14, read for the list of treaties in force and signed |
+| NBR, Guidance on Mutual Agreement Procedure, version 1.1 | https://www.nbr.gov.bh/publications/view/Bahrains_Mutual_Agreement_Procedure_MAP_Guidance | 2026-11-14, read for the MAP request route and the 3-year default time limit |
 | Legislative Decree No. 22 of 1979, Income Tax Law, arts. 1, 2, 4, 7, 8, 9, 12 (LLOC English) | https://www.lloc.gov.bh/Legislation/id/L2279 | 2026-10-29 |
 
 Not yet confirmed: whether the draft corporate income tax law has been enacted, and its final terms; whether the NBR accepts unilateral or bilateral APA requests
