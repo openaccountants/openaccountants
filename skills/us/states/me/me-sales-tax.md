@@ -1,10 +1,10 @@
 ---
 name: me-sales-tax
 description: "Maine 2026 sales/use computation: 5.5% general, food/lodging/rental special rates, remote/marketplace nexus, conditional software treatment and filing. Load us-sales-tax first."
-version: "2.2"
+version: "2.3"
 jurisdiction: US-ME
 tax_year: 2026
-last_updated: 2026-11-13
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: vat-gst
@@ -43,8 +43,8 @@ Ordinary Maine retail sales and purchases, remote sellers and marketplace facili
 | 2026 transaction | State rate or rule | Authority |
 | --- | --- | --- |
 | General taxable retail property/services | 5.5% | [1811(1)(D)](https://legislature.maine.gov/statutes/36/title36sec1811.html) |
-| Prepared food / qualifying on-premises liquor | 8% | [1811(1)(D)(1),(2)](https://legislature.maine.gov/statutes/36/title36sec1811.html) |
-| Hotel/rooming-house/tourist or trailer-camp living quarters | 9% | [1811(1)(D)(3)](https://legislature.maine.gov/statutes/36/title36sec1811.html) |
+| Prepared food / qualifying on-premises liquor | 8% (in words on the page) | [1811(1)(D)(1),(2)](https://legislature.maine.gov/statutes/36/title36sec1811.html) |
+| Hotel/rooming-house/tourist or trailer-camp living quarters | 9% (in words on the page) | [1811(1)(D)(3)](https://legislature.maine.gov/statutes/36/title36sec1811.html) |
 | Automobile / qualifying non-warranty loaner rental for less than one year | 10% | [1811(1)(D)(4)](https://legislature.maine.gov/statutes/36/title36sec1811.html) |
 | Covered adult-use/nonpatient cannabis from January 1, 2026 | **14%**, replacing 10% | [1811(1)(D)(5)](https://legislature.maine.gov/statutes/36/title36sec1811.html) |
 | Remote seller / facilitator nexus | More than $100,000 previous/current-year qualifying Maine deliveries | [1754-B](https://legislature.maine.gov/statutes/36/title36sec1754-B.html) |

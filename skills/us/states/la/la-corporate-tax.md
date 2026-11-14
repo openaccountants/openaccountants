@@ -1,11 +1,11 @@
 ---
 name: la-corporate-tax
 description: "Louisiana 2026 corporation income/franchise job: 5.5% C-corporation income tax, $20,000 subtraction, allocation/apportionment, franchise repeal, S-corporation boundary, estimates and CIT-620 filing."
-version: "0.1"
+version: "0.2"
 jurisdiction: US-LA
 category: state-tax
 tax_year: 2026
-last_updated: 2026-11-13
+last_updated: 2026-11-14
 tier: 2
 domain: corporate-tax
 type: computation
@@ -41,7 +41,7 @@ Louisiana domestic and Louisiana-source foreign C corporations, including LLCs t
 
 | Item | Amount or rule | Authority |
 | --- | --- | --- |
-| C-corporation income rate, periods beginning 2025+ | 5.5% | [R.S.47:287.12](https://legis.la.gov/legis/Law.aspx?d=101674) |
+| C-corporation income rate, periods beginning 2025+ | 5.5% (in words on the page) | [R.S.47:287.12](https://legis.la.gov/legis/Law.aspx?d=101674) |
 | Corporate all-source subtraction | Up to $20,000, limited as instructed to positive modified income | [R.S.47:287.71(B)(9)](https://legis.la.gov/legis/Law.aspx?d=101718); [Schedule F line3f](https://dam.ldr.la.gov/taxforms/Cit620i-2025-revised%204-10-2026%20FINAL.pdf) |
 | Franchise tax, periods beginning 2026+ | Repealed; earlier periods still due | [LDR corporate/franchise page](https://revenue.louisiana.gov/businesses/widely-used-tax-types/corporate-income-franchise-tax) |
 | Estimates trigger | $1,000 or more after credits | [CIT-620ESi2026](https://dam.ldr.la.gov/taxforms/CIT-620ESi-2026.pdf) |
