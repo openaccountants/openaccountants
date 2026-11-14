@@ -1,13 +1,13 @@
 ---
 name: uk-vat-return
-description: "UK VAT for a business registered in Great Britain, as the law stands on 24 October 2026. VAT has no tax year: each figure carries the date it applies from. Covers the 20%, 5% and 0% rates, exempt supplies, the temporary zero rate on domestic electricity (1 October 2026 to 31 March 2027), registration at GBP 90,000, deregistration at GBP 88,000, Making Tax Digital, the nine boxes, the deadline, blocked input tax (cars, business entertainment), mobile phones, bad debt relief, the Capital Goods Scheme (GBP 600,000 from 29 July 2026), the Flat Rate, cash and annual accounting schemes, reverse charges for overseas services and construction, penalty points, late payment penalties and interest. Trigger on: VAT return, VAT100, 9 boxes, VAT threshold, MTD for VAT, reverse charge, input tax, bad debt relief, VAT penalty. Out of scope: the short routine (vat-returns-for-small-businesses-in-the-uk), Xero closes (close-the-uk-vat-quarter-from-xero, xero-uk-vat-close), EU goods sellers (gb-vat-eu-go"
+description: "UK VAT for a business registered in Great Britain, as the law stands on 24 October 2026. VAT has no tax year: each figure carries the date it applies from. Covers the 20%, 5% and 0% rates, exempt supplies, the temporary zero rate on domestic electricity (1 October 2026 to 31 March 2027), registration at GBP 90,000, deregistration at GBP 88,000, Making Tax Digital, the nine boxes, the deadline, blocked input tax (cars, business entertainment), mobile phones, bad debt relief, the Capital Goods Scheme (GBP 600,000 from 29 July 2026), the Flat Rate, cash and annual accounting schemes, reverse charges for overseas services and construction, penalty points, late payment penalties and interest. Trigger on: VAT return, VAT100, 9 boxes, VAT threshold, MTD for VAT, reverse charge, input tax, bad debt relief, VAT penalty. Out of scope: the short routine (vat-returns-for-small-businesses-in-the-uk), Xero closes (xero-uk-vat-close), EU goods sellers (gb-vat-eu-goods-sellers)."
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/uk-vat-return"
   jurisdiction: "GB"
   tax_year: "2026"
-  last_updated: "2026-10-31"
+  last_updated: "2026-11-14"
 ---
 
 # UK VAT return: rates, registration, the nine boxes, penalties (position at 24 October 2026)
@@ -17,7 +17,7 @@ VAT is not tied to the 6 April income tax year. Rates change when the law change
 This skill is the method and the figures. It links to the other UK VAT skills and does not repeat them:
 
 - `vat-returns-for-small-businesses-in-the-uk`: the short quarterly routine for a small business.
-- `close-the-uk-vat-quarter-from-xero` and `xero-uk-vat-close`: closing a quarter from Xero.
+- `xero-uk-vat-close`: closing a quarter from Xero.
 - `gb-vat-eu-goods-sellers`: EU sellers shipping goods into Great Britain.
 
 ## Who this applies to
@@ -52,13 +52,13 @@ This skill is the method and the figures. It links to the other UK VAT skills an
 | Annual accounting: join / must leave | GBP 1.35 million or less expected / over GBP 1.6 million | in force | https://www.gov.uk/vat-annual-accounting-scheme/eligibility |
 | Partial exemption de minimis | Exempt input tax not more than GBP 625 a month on average and not more than half of all input tax | in force | https://www.gov.uk/guidance/partial-exemption-vat-notice-706 |
 | Input tax on buying a car (VAT (Input Tax) Order 1992 art 7(1), (2), (2E) to (2G)) | 100% blocked, unless intended for exclusive business use with no private availability, or primarily for taxi, self-drive hire or driving instruction | in force (unchanged on 24 Oct 2026) | https://www.legislation.gov.uk/uksi/1992/3222/article/7 |
-| Input tax on leasing or hiring a car that does not meet those conditions (art 7(2H)) | 50% blocked | in force | https://www.legislation.gov.uk/uksi/1992/3222/article/7 |
+| Input tax on leasing or hiring a car that does not meet those conditions (art 7(2H)) | One half of the tax blocked (art 7(2H) words it "one half of the tax") | in force | https://www.legislation.gov.uk/uksi/1992/3222/article/7 |
 | Business entertainment (Input Tax Order art 5) | 100% blocked, except reasonable entertainment of overseas customers | in force | https://www.legislation.gov.uk/uksi/1992/3222/article/5 |
 | Bad debt relief (VATA 1994 s 36; VAT Regs 1995 regs 165A and 172(1A)) | Debt written off at least 6 months after the later of supply and due date; claim within 4 years and 6 months | in force | https://www.legislation.gov.uk/ukpga/1994/23/section/36 |
 | Customer's input tax on supplies unpaid 6 months after the later of supply and due date (VATA 1994 s 26A) | Repay to HMRC | in force | https://www.legislation.gov.uk/ukpga/1994/23/section/26A |
-| Capital Goods Scheme: land, buildings, civil engineering works (VAT Regs 1995 regs 113(4)(a), 114(3)(a)) | VAT-bearing capital expenditure of GBP 600,000 or more; adjusted over 10 intervals | 29 July 2026 (SI 2026/765); GBP 250,000 where any relevant expenditure on the item was incurred before 29 July 2026 | https://www.legislation.gov.uk/uksi/1995/2518/regulation/113 |
+| Capital Goods Scheme: land, buildings, civil engineering works (VAT Regs 1995 regs 113(4)(a), 114(3)(a)) | VAT-bearing capital expenditure of GBP 600,000 or more; adjusted over 10 intervals | 29 July 2026 (SI 2026/765); GBP 250,000 where any relevant expenditure on the item was incurred before 29 July 2026 | https://www.legislation.gov.uk/uksi/1995/2518/regulation/113 ; https://www.legislation.gov.uk/uksi/2026/765/made |
 | Capital Goods Scheme: aircraft, ships, boats and other vessels (regs 113(4)(b), 114(3)(b)) | GBP 50,000 or more; adjusted over 5 intervals | in force | https://www.legislation.gov.uk/uksi/1995/2518/regulation/113 |
-| Capital Goods Scheme: computers (previously GBP 50,000 or more, 5 intervals) | Removed from the scheme | 29 July 2026 (SI 2026/765 reg 2(2)(a)); items with any relevant expenditure before that date stay in | https://www.legislation.gov.uk/uksi/2026/765/made |
+| Capital Goods Scheme: computers (previously GBP 50,000 or more, 5 intervals) | Removed from the scheme | 29 July 2026 (SI 2026/765 reg 2(2)(a)); items with any relevant expenditure before that date stay in | https://www.legislation.gov.uk/uksi/2026/765/made ; https://www.legislation.gov.uk/uksi/1995/2518/regulation/113 |
 | Late submission penalty (FA 2021 Sch 24) | GBP 200 at the points threshold: annual 2, quarterly 4, monthly 5 points | periods starting on or after 1 January 2023 | https://www.gov.uk/guidance/penalty-points-and-penalties-if-you-submit-your-vat-return-late |
 | Late payment penalties (FA 2021 Sch 26 paras 5 and 8) | 3% of VAT unpaid at day 15, plus 3% of VAT unpaid at day 30, plus 10% a year from day 31 | VAT periods starting on or after 1 April 2025 (SI 2025/589); earlier periods 2%, 2%, 4% | https://www.legislation.gov.uk/ukpga/2021/26/schedule/26 |
 | Late payment interest | Bank of England base rate plus 4%: 7.75% (base rate 3.75%) | plus 4% since 6 April 2025; 7.75% since 9 January 2026 | https://www.gov.uk/government/publications/rates-and-allowances-hmrc-interest-rates-for-late-and-early-payments/rates-and-allowances-hmrc-interest-rates |
@@ -337,4 +337,4 @@ Not yet confirmed: HMRC's interest rate table was last updated 23 December 2025;
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-31. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `uk-vat-return` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/uk-vat-return. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `uk-vat-return` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/uk-vat-return. If neither is available, confirm every figure against the official source pages cited above before relying on it.

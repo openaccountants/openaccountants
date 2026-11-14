@@ -1,182 +1,217 @@
 ---
 name: az-income-tax
-description: Use this skill whenever asked about Arizona individual income tax for self-employed individuals or sole proprietors — filing Form 140, AZ estimated tax (Form 140ES), Arizona flat tax rate, Arizona standard deduction, or any query involving Arizona state income tax compliance. Trigger on phrases like "Arizona income tax", "AZ income tax", "Form 140", "Arizona estimated tax", "Arizona self-employed tax", "AZDOR income tax", "Arizona flat tax", or "ARS §43".
+description: Compute Arizona individual income tax for tax year 2026 on Form 140, 140PY or 140NR for residents, part-year residents and nonresidents, including sole proprietors. Covers the 2.5% flat rate, the Arizona standard deduction and its new charitable increase (actual contributions up to $1,000 single or $2,000 joint from 2026), the Arizona subtractions for Social Security, US government interest, federal tips, overtime and senior deductions, the dependent credit of $125 and $25, and the estimated tax rule (Arizona gross income over $75,000 or $150,000 joint in both this year and last). Trigger on "Arizona income tax", "AZ income tax", "Form 140", "Arizona estimated tax", "140ES", "Arizona flat tax", "A.R.S. 43-1011". Federal figures live in the federal skills.
+version: "1.1"
 jurisdiction: US-AZ
-last_updated: 2026-06-12
-version: "0.1"
-validation_status: ai-drafted-q3
+tax_year: 2026
+last_updated: 2026-11-14
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
+type: computation
 ---
 
-# Arizona Individual Income Tax Skill — Self-Employed / Sole Proprietor
+# Arizona individual income tax, tax year 2026
 
-> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
+> **Source-cited draft.** Built from A.R.S. 43-105, 43-501, 43-581, 43-1022, 43-1023, 43-1041 and 43-1073.01 on azleg.gov and the Arizona Department of Revenue (ADOR) withholding page, read on 2026-11-13. No accountant has reviewed it. All outputs must be reviewed by a qualified tax professional before filing.
 
-> **Scope.** This skill covers Arizona individual income tax for self-employed individuals and sole proprietors filing Form 140. It addresses tax computation, deductions, estimated payments, and form mapping.
-> **Quality tier.** Q3 — AI-drafted with citations; not independently verified by a licensed professional.
+**Answer first.** Arizona taxes 2026 taxable income at a flat **2.5%** for every filing status. Start from federal adjusted gross income, add and subtract the Arizona items, take the Arizona standard deduction (or itemize), then apply 2.5%. From 2026 the standard deduction is increased by the taxpayer's actual charitable contributions, capped at **$1,000** (single or separate) or **$2,000** (joint). The dependent credit is **$125** per dependent under 17 and **$25** for older dependents. Estimated payments are required only when Arizona gross income is over **$75,000** ($150,000 joint) in **both** 2026 and 2025.
 
-## Section 1: Metadata
+## Scope and who this is for
 
-| Field | Value |
-|---|---|
-| Jurisdiction | Arizona, United States |
-| Jurisdiction code | US-AZ |
-| Tax authority | Arizona Department of Revenue (AZDOR) |
-| Filing portal | https://www.aztaxes.gov |
-| Legislation citation | Arizona Revised Statutes Title 43 (Taxation of Income) |
-| Primary form | Form 140 — Arizona Resident Personal Income Tax |
-| Filing deadline | April 15 (follows federal deadline) |
-| Version | 0.1 |
-| Generated | 2026-05-22 |
-| Validation status | AI-drafted — Q3 |
+In scope: one individual (or a married couple) filing the 2026 Arizona Form 140 (resident), with the same method on Form 140PY (part-year) and Form 140NR (nonresident); Schedule C, wage and investment income flowing through federal AGI; Arizona estimated tax on Form 140ES.
 
-### Sources consulted
+Out of scope, and where it goes:
 
-1. Arizona Department of Revenue — Individual Income Tax Highlights (2025): https://azdor.gov/forms/individual-income-tax-highlights
-2. Arizona Department of Revenue — Individual Estimated Tax Payments: https://azdor.gov/individuals/individual-estimated-tax-payments
-3. Arizona Form 140 Instructions (TY 2025): https://azdor.gov/forms/individual
-4. Arizona Tax Tables 2025: https://www.taxformcalculator.com/arizona/tax-tables/2025.html
+| Topic | Skill |
+| --- | --- |
+| Federal AGI, Schedule C and self-employment tax | `us-schedule-c-and-se-computation` |
+| Federal figures (tips, overtime and senior deduction amounts, federal standard deduction) | `us-form-1040-individual-return` |
+| Arizona employer withholding (Form A-4, A1-QRT) and unemployment insurance | `az-payroll` |
+| Arizona corporate tax and the partnership or S corporation entity-level election | `az-corporate-tax` |
+| Arizona transaction privilege (sales) tax | `az-sales-tax` |
+| Federal estimated tax | `us-quarterly-estimated-tax` |
 
----
+## Ask the client first
 
-## Section 2: Quick reference — rates and thresholds
+1. Filing status, and were they an Arizona resident for all of 2026? Part-year and nonresident filers use 140PY or 140NR and allocate income.
+2. Federal AGI from the 2026 Form 1040, and the federal tips, overtime and senior (age 65 or older) deductions claimed.
+3. Social Security or railroad retirement benefits included in federal AGI; interest on US government obligations; interest on non-Arizona municipal bonds.
+4. Charitable contributions paid in 2026, and whether they itemize.
+5. Dependents, their ages at 31 December 2026, and federal AGI against the $200,000 / $400,000 credit phase-out.
+6. Arizona gross income for 2025 and expected for 2026, Arizona withholding to date, and the 2025 Arizona tax (for the estimated tax rule).
+7. Any income taxed by another state (credit on Form 309), any Arizona tax credits claimed (school, charitable, foster care), any Arizona net operating loss.
 
-### Tax rate (TY 2025)
+## The method, step by step
 
-Arizona imposes a **flat income tax rate of 2.5%** on all taxable income, regardless of filing status or income level. This flat rate took effect in tax year 2023.
+### Rates, bands and thresholds
 
-| Filing status | Rate | Applies to |
-|---|---|---|
-| All statuses | 2.5% | All Arizona taxable income |
+| Item | 2026 figure | Source |
+| --- | --- | --- |
+| Tax rate, all filing statuses | 2.5% of Arizona taxable income ("for tax year 2023 and beyond, the tax rate for Arizona taxable income is 2.5%") | [ADOR withholding page](https://azdor.gov/individuals/withholding-tax-individual) |
+| Standard deduction, single or married filing separately | $15,750 (2025-2026 filing cycle; ADOR adjusts it for inflation as the federal amount is adjusted, and has not published a 2026 figure) | [A.R.S. 43-1041(A)(1), (H)](https://www.azleg.gov/ars/43/01041.htm) |
+| Standard deduction, head of household | $23,625 (2025-2026 filing cycle) | [A.R.S. 43-1041(A)(2), (H)](https://www.azleg.gov/ars/43/01041.htm) |
+| Standard deduction, married filing jointly | $31,500 (2025-2026 filing cycle) | [A.R.S. 43-1041(A)(3), (H)](https://www.azleg.gov/ars/43/01041.htm) |
+| Charitable increase to the standard deduction (2026 on) | Total charitable contributions under IRC 170(c), up to $1,000 single or separate, $2,000 joint | [A.R.S. 43-1041(I)(2)](https://www.azleg.gov/ars/43/01041.htm) |
+| Exemption for age 65 or over, or blind | $1,500 each | [A.R.S. 43-1023(A)](https://www.azleg.gov/ars/43/01023.htm) |
+| Dependent credit, federal AGI under $200,000 ($400,000 joint) | $125 per dependent under 17; $25 per dependent 17 or older | [A.R.S. 43-1073.01(B)](https://www.azleg.gov/ars/43/01073-01.htm) |
+| Dependent credit phase-out | Each credit reduced by five percent for each $1,000 (or part) of federal AGI over the threshold | [A.R.S. 43-1073.01(C)](https://www.azleg.gov/ars/43/01073-01.htm) |
+| Estimated tax required | Arizona gross income over $75,000 ($150,000 joint) in 2026 **and** over that amount in 2025 | [A.R.S. 43-581(A)](https://www.azleg.gov/ars/43/00581.htm) |
+| Estimated tax safe harbour | Payments plus withholding of at least ninety percent of 2026 tax or one hundred percent of 2025 tax | [A.R.S. 43-581(A)](https://www.azleg.gov/ars/43/00581.htm) |
+| No underpayment penalty | Tax due on the return (after withholding and credits) under $1,000 | [A.R.S. 43-581(E)(2)](https://www.azleg.gov/ars/43/00581.htm) |
+| Internal Revenue Code conformity for 2026 | The Code as in effect on 1 January 2026, so the July 2025 federal law is included unless Arizona decouples | [A.R.S. 43-105(A)](https://www.azleg.gov/ars/43/00105.htm) |
 
-### Standard deduction (TY 2025)
+### Step 1: federal AGI
 
-| Filing status | Standard deduction |
-|---|---|
-| Single | $15,750 |
-| Married Filing Jointly | $31,500 |
-| Married Filing Separately | $15,750 |
-| Head of Household | $23,625 |
+Take federal AGI from the 2026 Form 1040. Self-employment items (half of self-employment tax, self-employed health insurance, SEP and solo 401(k) contributions, the home office deduction inside Schedule C) are already in it. The federal qualified business income deduction is below AGI, so it never reaches Arizona.
 
-Arizona also allows a **Standard Deduction Increase** equal to 34% of qualifying charitable contributions (TY 2025), calculated on page 3 of Form 140.
+### Step 2: Arizona additions and subtractions
 
-### Personal exemptions
+Main subtractions under [A.R.S. 43-1022](https://www.azleg.gov/ars/43/01022.htm):
 
-Arizona does not use personal exemptions in the traditional sense. The standard deduction effectively replaces the exemption for most filers.
+| Item | Paragraph |
+| --- | --- |
+| Social Security and railroad retirement benefits included in federal AGI | (10) |
+| Qualified tips deducted federally under IRC 224, to the extent not already excluded | (31), from 2025 |
+| Qualified overtime deducted federally under IRC 225, to the extent not already excluded | (32), from 2025 |
+| Federal senior deduction under IRC 151(d)(5)(C) | (35), from 2025 |
+| Car loan interest deducted under IRC 163(h)(4) | (36), 2025 only, so not for 2026 |
+| Distributions from an IRC 530A account | (33), from 2026 |
+| Child and dependent care expenses over the federal IRC 21 credit received | (34), from 2026 |
 
----
+The federal tips, overtime and senior deductions sit below federal AGI, so Arizona gives the same relief through its own subtraction. Use the amounts actually deducted on the federal return; the federal limits are in `us-form-1040-individual-return`. Interest on US government obligations is also subtracted and interest on other states' municipal bonds is added; check the 2026 Form 140 instructions for the full lists when published.
 
-## Section 3: How this skill works with the federal return
+### Step 3: deduction and exemptions
 
-1. **Starting point:** Arizona begins with **federal adjusted gross income** (federal Form 1040, Line 11).
-2. **Arizona additions:** Add back amounts deducted federally but not recognized by Arizona (e.g., other states' municipal bond interest).
-3. **Arizona subtractions:** Subtract Arizona-exempt income (e.g., Social Security benefits, U.S. government interest, Arizona-specific exclusions).
-4. **Arizona AGI:** Federal AGI ± additions/subtractions.
-5. **Deductions:** Subtract standard deduction or Arizona itemized deductions.
-6. **Result:** Arizona taxable income × 2.5% = tax liability.
+Arizona AGI less the standard deduction (plus the charitable increase) or Arizona itemized deductions, less $1,500 for each age 65 or blind exemption. The charitable increase is only for those who take the standard deduction. Compare standard and itemized every year.
 
----
+### Step 4: tax and credits
 
-## Section 4: Self-employed specific rules
+Arizona taxable income x 2.5%. Subtract the dependent credit, the credit for taxes paid to another state (Form 309) and other Arizona credits.
 
-### Federal conformity
-- Arizona generally conforms to the Internal Revenue Code as of a specific date (rolling conformity with some exceptions).
-- Schedule C business income and deductions flow through federal AGI into Arizona's computation.
+### Step 5: estimated tax
 
-### QBI deduction (§199A)
-- The federal QBI deduction reduces federal taxable income but does **not** directly apply to Arizona's computation since Arizona starts from federal AGI (above the line).
-- However, Arizona allows its own subtraction for certain small business income (check current year instructions).
+Apply the two-year gross income test of A.R.S. 43-581(A). If both years are over the threshold, pay four installments on the federal due dates totalling the smaller of 90% of 2026 tax and 100% of 2025 tax, less withholding. No penalty applies if the balance due on the return is under $1,000.
 
-### SE health insurance deduction
-- Flows through federal AGI (above-the-line deduction) and is automatically reflected in Arizona's starting point.
+### How the result flows on
 
-### Retirement contributions
-- SEP-IRA and Solo 401(k) contributions reduce federal AGI and therefore reduce Arizona starting income.
+Tax after credits, less withholding (W-2 box 17) and estimated payments, gives the balance due or refund on Form 140.
 
-### Home office deduction
-- Federal home office deduction (simplified or actual) flows through Schedule C and is reflected in federal AGI.
+## Boundary and exception table
 
-### Estimated tax payments (Form 140ES)
+| Situation | Treatment |
+| --- | --- |
+| Gross income over $75,000 in 2026 but not in 2025 | Estimated payments not required (both years must exceed); voluntary payments allowed under 43-581(B) |
+| Charitable gifts of $3,000 by a single filer taking the standard deduction | Increase limited to $1,000 for 2026 (the percentage method ended with 2025) |
+| Taxpayer itemizes | No charitable increase; charitable gifts go in itemized deductions |
+| Federal tips or overtime deduction | Subtract the same amount in Arizona; never subtract tips or overtime that never entered federal AGI |
+| Small business income (Form 140-SBI) election | Separate regime; refer (R-AZ-SBI) |
+| Nonresident who worked in Arizona | Form 140NR; Arizona taxes Arizona-source income |
+| Partnership or S corporation elected entity-level tax | See `az-corporate-tax` for the owner's side |
+| Dependent credit, federal AGI $205,500 single, one child under 17 | $125 less 5% x 6 (six $1,000 steps or part) = $87.50 |
 
-- **Required if:** Your Arizona gross income exceeds $75,000 (single/MFS/HOH) or $150,000 (MFJ) for the current or prior year.
-- **Safe harbor:** Total estimated payments + withholding must equal the lesser of 90% of current year tax or 100% of prior year tax.
-- **Due dates:** April 15, June 15, September 15, January 15.
-- **Payment methods:** Online via AZTaxes.gov or mail Form 140ES to AZDOR.
-- **Small business variant:** Form 140ES-SBI for those electing the small business income tax.
+### Defaults when a fact is missing
 
----
+| Missing fact | Default |
+| --- | --- |
+| Residency for part of the year | Do not compute; ask (it changes the form) |
+| Charitable contributions | Assume none; say so |
+| 2025 Arizona gross income | Do not conclude estimates are not required; ask |
+| 2026 standard deduction figure | Use the 2025-2026 filing cycle amount and say it may be adjusted |
 
-## Section 5: Tier 1 rules — deterministic
+### Red flags to raise with the client
 
-| # | Rule | Logic |
-|---|---|---|
-| T1-01 | Apply 2.5% flat rate to Arizona taxable income | Single rate × taxable income |
-| T1-02 | Standard deduction by filing status | Fixed amounts: $15,750 / $31,500 / $23,625 |
-| T1-03 | Social Security benefits fully exempt | Subtract from AZ computation |
-| T1-04 | U.S. government bond interest exempt | Subtract from AZ income |
-| T1-05 | Estimated tax threshold | Gross income > $75,000 (single) or $150,000 (MFJ) |
-| T1-06 | Standard deduction increase | Add 34% of qualifying charitable contributions |
+| Flag | Why |
+| --- | --- |
+| Withholding at the 2.0% default with large non-wage income | Underpaid by year end; estimates may be required |
+| Charitable increase above $1,000 / $2,000 | 2026 cap |
+| Social Security not subtracted | Over-taxation |
+| Federal car loan interest subtracted for 2026 | The Arizona subtraction was for 2025 only |
 
----
+## Worked cases
 
-## Section 6: Tier 2 rules — requires judgment
+**Case 1, a single sole proprietor.** A single Phoenix web designer has 2026 federal AGI of $80,000, all from Schedule C, no Arizona additions or subtractions, takes the standard deduction ($15,750, 2025-2026 filing cycle figure) and gave $800 to charity. The charitable increase is $800 (under the $1,000 cap). Arizona taxable income: $80,000 less $15,750 less $800 = $63,450. Tax at 2.5%: $1,586.25.
 
-| # | Rule | Why judgment needed |
-|---|---|---|
-| T2-01 | Standard deduction vs. itemized | Taxpayer must compare both methods |
-| T2-02 | IRC conformity date issues | Some federal provisions may not be adopted; requires checking current conformity |
-| T2-03 | Part-year resident allocation | Requires apportionment of income to AZ residency period |
-| T2-04 | Small Business Income Tax election | Taxpayer may elect to pay 2.5% separately on business income — requires evaluation of benefit |
-| T2-05 | Credit for taxes paid to other states | Requires analysis of multistate income sourcing (Form 309) |
-| T2-06 | Charitable contribution substantiation | Standard deduction increase requires documentation of qualified contributions |
+```oa-check
+name: AZ 2026 single sole proprietor, standard deduction plus charitable increase
+inputs:
+  federal_agi: 80000
+  standard_deduction: 15750
+  charity: 800
+  charity_cap: 1000
+  rate: 0.025
+steps:
+  - increase: min(charity, charity_cap)
+  - taxable: federal_agi - standard_deduction - increase
+  - tax: taxable * rate
+expected:
+  increase: 800.00
+  taxable: 63450.00
+  tax: 1586.25
+```
 
----
+**Case 2, a decision: must this couple pay Arizona estimated tax, and how much?** A married couple filing jointly had Arizona gross income of $160,000 in 2025 and expect $170,000 in 2026 (federal AGI $170,000, no Arizona modifications). They take the joint standard deduction ($31,500), have two children under 17, $1,000 of Arizona withholding, and their 2025 Arizona tax was $3,000. Both years are over $150,000, so estimates are required. 2026 tax: ($170,000 less $31,500) x 2.5% = $3,462.50, less the $250 dependent credit = $3,212.50. Required annual payment: the smaller of 90% x $3,212.50 = $2,891.25 and $3,000, so $2,891.25. Less $1,000 withholding leaves $1,891.25, or $472.81 a quarter. Without estimates the balance due would be $2,212.50, over the $1,000 no-penalty line. Decision: pay four installments of $472.81 on the federal dates.
 
-## Section 7: Supplier pattern library
+```oa-check
+name: AZ 2026 joint estimated tax requirement and installment
+inputs:
+  federal_agi: 170000
+  standard_deduction: 31500
+  children_under_17: 2
+  withholding: 1000
+  prior_year_tax: 3000
+  rate: 0.025
+steps:
+  - tax: (federal_agi - standard_deduction) * rate
+  - net_tax: tax - children_under_17 * 125
+  - required: min(net_tax * 0.9, prior_year_tax)
+  - installment: round((required - withholding) / 4, 2)
+  - balance_without_estimates: net_tax - withholding
+expected:
+  tax: 3462.50
+  net_tax: 3212.50
+  required: 2891.25
+  installment: 472.81
+  balance_without_estimates: 2212.50
+```
 
-| Pattern on bank/CC statement | Likely meaning |
-|---|---|
-| `AZ DEPT OF REVENUE` / `AZDOR` | Arizona income tax payment (estimated or balance due) |
-| `AZTAXES.GOV` | Electronic payment via AZTaxes portal |
-| `STATE OF AZ TAX` | State tax payment |
-| `ARIZONA DOR` | Department of Revenue payment |
+## When to refuse or refer
 
----
+| Code | Situation | Action |
+| --- | --- | --- |
+| R-AZ-MULTI | Multistate business activity needing apportionment | Refer |
+| R-AZ-PY | Part-year resident with complex sourcing (140PY) | Refer, or compute only with the allocation given |
+| R-AZ-SBI | Small business income tax election (Form 140-SBI) cost and benefit | Refer |
+| R-AZ-CREDITS | Arizona credits (school tuition, charitable, foster care, solar, research) beyond the dependent credit | Refer; each has its own form and cap |
+| R-AZ-NOL | Arizona net operating loss carryforward | Refer |
+| R-AZ-TPT | Transaction privilege tax questions | Use `az-sales-tax` |
+| R-AZ-AUDIT | Audit, protest or controversy | Refer to an Arizona-licensed practitioner |
+| R-AZ-EVADE | Any fraudulent, evasive or aggressive position | Refuse |
 
-## Section 8: Form mapping
+## Filing and payment
 
-| Computed value | Form 140 line |
-|---|---|
-| Federal AGI | Line 12 |
-| Arizona additions | Line 13 |
-| Arizona subtractions | Line 15 |
-| Arizona adjusted gross income | Line 16 |
-| Standard or itemized deduction | Line 18 |
-| Arizona taxable income | Line 19 |
-| Tax (2.5% × Line 19) | Line 20 |
-| Credits | Lines 21–30 |
-| Estimated payments + withholding | Lines 40–43 |
-| Balance due / refund | Lines 52–56 |
+The 2026 return is due **15 April 2027** ([A.R.S. 43-501](https://www.azleg.gov/ars/43/00501.htm)). File through AZTaxes.gov or approved e-file software. Estimated payments use Form 140ES on the federal installment dates (15 April, 15 June, 15 September 2026 and 15 January 2027). On a bank statement, payments show as "AZ DEPT OF REVENUE", "AZDOR", "ARIZONA DOR" or "AZTAXES.GOV".
 
----
+## Completion checklist
 
-## Section 9: Refusal catalogue
+- Residency and form (140, 140PY or 140NR) settled.
+- Social Security, tips, overtime and senior subtractions matched to the federal return.
+- Standard deduction flagged as the 2025-2026 filing cycle amount until ADOR publishes 2026.
+- Charitable increase capped at $1,000 / $2,000.
+- Dependent credit phase-out tested against federal AGI.
+- Estimated tax two-year test applied.
 
-This skill must refuse and recommend professional review when:
+## Sources
 
-| # | Condition |
-|---|---|
-| R-01 | Taxpayer has multistate business activity requiring apportionment |
-| R-02 | Taxpayer is a part-year resident (Form 140PY) with complex sourcing |
-| R-03 | Taxpayer is considering the Small Business Income Tax election and needs cost-benefit analysis |
-| R-04 | Issues involving Arizona tax credits (solar, research, qualified facilities, etc.) |
-| R-05 | Taxpayer has Arizona net operating loss carryforward |
-| R-06 | Questions about TPT (Transaction Privilege Tax) nexus or classification |
-| R-07 | Audit representation or controversy matters |
-| R-08 | Any question about tax fraud, evasion, or aggressive positions |
+| Source | URL | Read on |
+| --- | --- | --- |
+| ADOR, Withholding Tax: Individual. Read for "for tax year 2023 and beyond, the tax rate for Arizona taxable income is 2.5%". | https://azdor.gov/individuals/withholding-tax-individual | 2026-11-13 |
+| A.R.S. 43-1041. Read for (A) $15,750, $23,625, $31,500, (H) inflation adjustment and (I)(2) the 2026 charitable increase capped at $1,000 / $2,000. | https://www.azleg.gov/ars/43/01041.htm | 2026-11-13 |
+| A.R.S. 43-1022. Read for subtractions (10) and (31) to (36). | https://www.azleg.gov/ars/43/01022.htm | 2026-11-13 |
+| A.R.S. 43-1023. Read for the $1,500 age and blindness exemption. | https://www.azleg.gov/ars/43/01023.htm | 2026-11-13 |
+| A.R.S. 43-1073.01. Read for the $125 / $25 credit and the 5% phase-out over $200,000 / $400,000. | https://www.azleg.gov/ars/43/01073-01.htm | 2026-11-13 |
+| A.R.S. 43-581. Read for the $75,000 / $150,000 two-year test, 90% / 100% and the $1,000 no-penalty line. | https://www.azleg.gov/ars/43/00581.htm | 2026-11-13 |
+| A.R.S. 43-105. Read for conformity to the Code as of 1 January 2026. | https://www.azleg.gov/ars/43/00105.htm | 2026-11-13 |
+| A.R.S. 43-501. Read for the 15 April due date. | https://www.azleg.gov/ars/43/00501.htm | 2026-11-13 |
 
----
-
-## Disclaimer
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
+Not yet confirmed: the 2026 inflation-adjusted Arizona standard deduction (ADOR has not published it; the 2025-2026 filing cycle amounts are shown); 2026 Form 140 line numbers (the 2026 form is not out, so none are quoted); the statutory text of the 2.5% rate in A.R.S. 43-1011 (azleg.gov served an older version of the section, so the rate is cited to ADOR).

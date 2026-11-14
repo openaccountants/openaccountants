@@ -1,10 +1,11 @@
 ---
 name: mexico-einvoice
 description: Use this skill whenever asked about Mexico e-invoicing, CFDI (Comprobante Fiscal Digital por Internet), SAT (Servicio de Administración Tributaria), PAC (Proveedor Autorizado de Certificación), timbrado (digital stamping), Anexo 20, CFDI version 4.0, XML schema for Mexican invoices, UUID/folio fiscal, RFC validation, complemento de pago, carta porte, nomina, cancelación de CFDI, or any question about generating, validating, certifying, or troubleshooting Mexican electronic invoices. Also trigger when advising on SAT compliance, PAC selection, XML structure, fiscal regime codes, product catalog codes (c_ClaveProdServ), or CFDI workflow. ALWAYS read this skill before touching any Mexico e-invoice work.
-version: 1.1
+version: 1.2
 jurisdiction: MX
 tax_year: 2026
-last_updated: 2026-11-05
+last_updated: 2026-11-14
+type: filing-howto
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
@@ -53,11 +54,11 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 **IVA (Value Added Tax)**
 
-| Rate | Application |
-| --- | --- |
-| 16% | General rate (most goods and services) |
-| 0% | Basic foodstuffs, medicines, exports |
-| Exempt | Education, residential rent, medical services |
+| Rate | Application | Source |
+| --- | --- | --- |
+| 16% | General rate (most goods and services) | [LIVA Art. 1 (SAT)](https://wwwmatnp.sat.gob.mx/articulo/19848/articulo-1) |
+| 0% | Basic foodstuffs, medicines, exports | [LIVA Art. 2-A (SAT)](https://wwwmatnp.sat.gob.mx/articulo/06071/articulo-2-a) |
+| Exempt | Education (Art. 15 Fr. IV), residential rent (Art. 20 Fr. II), medical services by individuals (Art. 15 Fr. XIV) | [LIVA Art. 15 (SAT)](https://wwwmatnp.sat.gob.mx/articulo/67548/articulo-15); [LIVA Art. 20 (SAT)](https://wwwmatnp.sat.gob.mx/articulo/39877/articulo-20) |
 
 ### IEPS (Special Production and Services Tax)
 
@@ -67,12 +68,12 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 **Tax Retention**
 
-| Tax | Rate | When |
-| --- | --- | --- |
-| ISR retention | 10% (general regime payees; LISR Art. 106, penultimate paragraph, in force) | Professional services paid by personas morales to personas físicas |
-| ISR retention - RESICO | 1.25% (LISR Art. 113-J) | Business/professional services or rent from RESICO personas físicas to personas morales |
-| IVA retention | Two thirds of the IVA trasladado and effectively paid: 2/3 x 16% = 10.6667% of the invoice (RLIVA Art. 3 fr. I: "las dos terceras partes del impuesto que se les traslade y que haya sido efectivamente pagado"; retention duty: LIVA Art. 1o.-A fr. II a) and c)) | Independent personal services, commission services, and temporary use of goods (leases) from personas físicas to personas morales |
-| IVA retention - autotransporte | 4% of the consideration effectively paid (RLIVA Art. 3 fr. II) | Land freight autotransporte terrestre de bienes services received by personas morales |
+| Tax | Rate | When | Source |
+| --- | --- | --- | --- |
+| ISR retention | 10% (general regime payees; LISR Art. 106, penultimate paragraph, in force) | Professional services paid by personas morales to personas físicas | [LISR Art. 106, DOF 11-12-2013](https://dof.gob.mx/nota_detalle.php?codigo=5325373&fecha=11/12/2013) |
+| ISR retention - RESICO | 1.25% (LISR Art. 113-J) | Business/professional services or rent from RESICO personas físicas to personas morales | [LISR Art. 113-J, DOF 12-11-2021](https://dof.gob.mx/nota_detalle.php?codigo=5635286&fecha=12/11/2021) |
+| IVA retention | Two thirds of the IVA trasladado and effectively paid: 2/3 x 16% = 10.6667% of the invoice, computed (RLIVA Art. 3 fr. I: "las dos terceras partes del impuesto que se les traslade y que haya sido efectivamente pagado"; retention duty: LIVA Art. 1o.-A fr. II a) and c)) | Independent personal services, commission services, and temporary use of goods (leases) from personas físicas to personas morales | [RLIVA Art. 3 fr. I, DOF 04-12-2006](https://dof.gob.mx/nota_detalle.php?codigo=4939297&fecha=04/12/2006) |
+| IVA retention - autotransporte | 4% of the consideration effectively paid (RLIVA Art. 3 fr. II) | Land freight autotransporte terrestre de bienes services received by personas morales | [RLIVA Art. 3 fr. II, DOF 04-12-2006](https://dof.gob.mx/nota_detalle.php?codigo=4939297&fecha=04/12/2006) |
 
 ### Calculation Rules
 
@@ -400,6 +401,10 @@ expected:
 
 | Source | URL | Read on |
 | --- | --- | --- |
+| SAT article portal, LIVA Arts. 1, 2-A, 15 and 20, read for 16%, the 0% list, exempt education (Art. 15 Fr. IV), medical services (Art. 15 Fr. XIV) and residential rent (Art. 20 Fr. II) | https://wwwmatnp.sat.gob.mx/ordenamiento/37585/ley-del-impuesto-al-valor-agregado | 2026-11-14 |
+| DOF 11-12-2013, decree issuing the LISR, read for Art. 106 (10% retention) | https://dof.gob.mx/nota_detalle.php?codigo=5325373&fecha=11/12/2013 | 2026-11-14 |
+| DOF 12-11-2021, RESICO reform, read for LISR Art. 113-J (1.25%) | https://dof.gob.mx/nota_detalle.php?codigo=5635286&fecha=12/11/2021 | 2026-11-14 |
+| DOF 04-12-2006, Reglamento de la Ley del IVA, read for Art. 3 fr. I (two thirds) and fr. II (4% on land freight) | https://dof.gob.mx/nota_detalle.php?codigo=4939297&fecha=04/12/2006 | 2026-11-14 |
 | Codigo Fiscal de la Federacion, texto vigente (ultima reforma DOF 09-04-2026; multas actualizadas DOF 28-12-2025) | https://www.diputados.gob.mx/LeyesBiblio/pdf/CFF.pdf | 2026-10-31 |
 | Ley del Impuesto sobre la Renta, texto vigente (DOF 01-04-2024) | https://www.diputados.gob.mx/LeyesBiblio/pdf/LISR.pdf | 2026-10-28 |
 | Ley del Impuesto al Valor Agregado, texto vigente 2026 | https://www.diputados.gob.mx/LeyesBiblio/pdf/LIVA.pdf | 2026-11-02 |

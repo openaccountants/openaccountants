@@ -4,14 +4,15 @@ description: >
   Burkina Faso business income tax reference for the 2026 tax year, covering individuals with commercial, industrial, agricultural or non-commercial professional income. Use for IBICA, IBNC, progressive annual profit bands, minimum tax, CGA reductions, turnover regimes, CME contributions and the election from a microenterprise regime to real-profit taxation. It distinguishes accrual business profit from the professional receipts-and-paid-expenses base, and separates statutory return preparation from unverified electronic filing details. Two executable cases compare ordinary tax with the applicable minimum and the cost of a regime election. Personal employment tax, investment income, rental income and treaty residence require their own analysis.
 jurisdiction: BF
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-version: 1.1
+version: 1.2
 tier: 2
 domain: income-tax
+type: computation
 ---
 
-# Burkina Faso business income tax (IBICA / IBNC) v1.1
+# Burkina Faso business income tax (IBICA / IBNC) v1.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 

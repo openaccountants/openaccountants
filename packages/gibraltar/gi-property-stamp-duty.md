@@ -5,8 +5,8 @@ description: >
 jurisdiction: GI
 category: international
 tax_year: 2026
-last_updated: 2026-11-01
-version: "0.6"
+last_updated: 2026-11-14
+version: "0.7"
 sources:
   - url: "https://www.parliament.gi/uploads/contents/bills/2025/2025B05.pdf"
     title: "Bill B05/2025: proposed changes only; enactment not verified"
@@ -19,9 +19,10 @@ sources:
     as_of: "2026-10-22"
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+type: computation
 ---
 
-# Gibraltar property conveyance and mortgage stamp duty v0.6
+# Gibraltar property conveyance and mortgage stamp duty v0.7
 
 **Source-cited draft. Independent review pending.** Scope: ordinary conveyances, the stated buyer relief, specified special duty and principal mortgage security. This is not a complete property-tax Guide. The official index identifies 23 December 2024 as the current consolidation on the access date.
 
