@@ -1,16 +1,17 @@
 ---
 name: costa-rica-iva
 description: Use this skill whenever asked to prepare, review, or classify transactions for a Costa Rica IVA (Impuesto al Valor Agregado) return or advise on Costa Rican VAT registration, filing, and Hacienda compliance. Trigger on phrases like "prepare IVA return Costa Rica", "Costa Rica VAT", "IVA Costa Rica", "Hacienda", "CÉDULA jurídica", or any Costa Rica IVA request. ALWAYS read this skill before touching any Costa Rica IVA work.
-version: 2.0
+version: 2.1
 jurisdiction: CR
 tax_year: 2026
-last_updated: 2026-10-16
+last_updated: 2026-11-14
 depends_on:
   - vat-workflow-base
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: vat-gst
+type: situation-rules
 ---
 
 # Costa Rica IVA (Impuesto sobre el Valor Agregado)
@@ -115,6 +116,34 @@ All amounts are hypothetical and are in colones before tax unless stated otherwi
 
 **Case 2: housing rent above the ceiling.** A landlord lets a furnished flat for CRC 800,000 a month in 2026. The ceiling is CRC 693,300 (1.5 × CRC 462,200). The rent exceeds it, so tax applies to the whole rent: 13% × CRC 800,000 = CRC 104,000 a month. It is not charged only on the excess. At a rent of CRC 693,300 or less, the rent would be exempt. ([Hacienda rent guidance](https://www.hacienda.go.cr/docs/ArrendamientoBienesMueblesInmuebles.pdf))
 
+```oa-check
+name: CR 2026 IVA consulting fee at 13%
+inputs:
+  fee: 1000000
+steps:
+  - output_tax: fee * 0.13
+expected:
+  output_tax: 130000
+```
+
+```oa-check
+name: CR 2026 housing rent ceiling decides IVA on the whole rent
+inputs:
+  salario_base: 462200
+  rent_a: 800000
+  rent_b: 690000
+steps:
+  - ceiling: salario_base * 1.5
+  - tax_a: rent_a * 0.13 * min(max(rent_a - ceiling, 0), 1)
+  - tax_b: rent_b * 0.13 * min(max(rent_b - ceiling, 0), 1)
+expected:
+  ceiling: 693300
+  tax_a: 104000
+  tax_b: 0
+```
+
+Case 2 is the decision: a rent of CRC 690,000 stays exempt, while CRC 800,000 is taxed in full (CRC 104,000 a month). A landlord near the ceiling should know that crossing it by one colón taxes the whole rent.
+
 **Case 3: private clinic.** An authorised private clinic charges CRC 500,000 for a consultation and tests. Tax: 4% × CRC 500,000 = CRC 20,000. If the clinic also bills a companion's lodging, that lodging is at 13% and goes on a separate line. When the patient pays by credit or debit card, the provider refunds the tax to the patient on the spot and claims it as a payment on account (pago a cuenta) in its monthly return (Hacienda health-services note). ([Hacienda health-services note](https://www.hacienda.go.cr/docs/ServiciosSaludHumanaPrivada.pdf))
 
 **Case 4: international air ticket.** A Costa Rican travel seller sells a San José–Madrid ticket for CRC 600,000. The tax base is 10% of the ticket value, CRC 60,000, and the rate is 4%. Tax: CRC 60,000 × 4% = CRC 2,400. The 4% air rate and the 10% base rest on the law as published and the 2021 DGT deck: confirm the current art. 11 before relying on them. ([Ley 6826 art. 11](https://www.pgrweb.go.cr/DOCS/NORMAS/1/NOVIGEN/L/2010-2019/2015-2019/2018/156A8/127E2C.HTML))
@@ -169,3 +198,15 @@ Source: [Hacienda, "Infracciones y Sanciones Administrativas más relevantes", u
 - [ ] Return code 150 filed by the fifteenth calendar day of the following month, even if nil or in credit; tax paid at filing.
 - [ ] Credit balance carried forward or claimed under arts. 45 and 47 of the Código.
 - [ ] Any late filing or payment penalty self-assessed on D-176, with the art. 88 reduction claimed where it is still available.
+
+## Sources
+
+| Source | URL | Read on |
+| --- | --- | --- |
+| Read for Ley 9635 Title I (Ley 6826 as rewritten), SCIJ copy: arts. 4, 5, 8 (rent, electricity, water), 10 (13%), 11 (4%, 2%, 1%), 26, 27 (decimoquinto dia natural) | https://www.pgrweb.go.cr/DOCS/NORMAS/1/NOVIGEN/L/2010-2019/2015-2019/2018/156A8/127E2C.HTML | 2026-11-14 |
+| Read for the Hacienda salario base table: CRC 462,200 for 1 January to 31 December 2026 (Circular 246-2025) | https://www.hacienda.go.cr/docs/SalariosBaseActualEHistorico.pdf | 2026-11-14 |
+| Read for Hacienda, Infracciones y sanciones administrativas mas relevantes (2026): arts. 78, 79, 80, 84, 85 and the art. 88 reductions | https://www.hacienda.go.cr/docs/InfraccionesYSancionesAdministrativasMasRelevantes.pdf | 2026-11-14 |
+| Read for Hacienda rent guidance: exempt housing and small-business rent up to 1.5 salarios base, 13% on the whole rent above it, EXONET | https://www.hacienda.go.cr/docs/ArrendamientoBienesMueblesInmuebles.pdf | 2026-11-14 |
+| Read for Hacienda note on private human health services: 4% rate, separate lines, card refund | https://www.hacienda.go.cr/docs/ServiciosSaludHumanaPrivada.pdf | 2026-11-14 |
+
+Not yet confirmed: the DGT deck of July 2021, the draft 2025 form resolution and Canasta Basica decree 43790-H-MEIC-S, cited in the body from the previous version, were not re-opened in this pass; the current consolidated text of arts. 8, 9, 11 and 19 after later amendments (SCIJ copy read is the law as published); what the 0.5% and 3% return columns cover; whether a newer Canasta Basica decree replaces 43790-H-MEIC-S; the 2021 DGT deck points (air ticket base, phase-in end dates, pre-operating credit) were not re-read in this pass; late-payment interest.
