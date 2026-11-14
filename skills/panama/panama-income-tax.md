@@ -1,31 +1,43 @@
 ---
 name: panama-income-tax
-description: Use this skill whenever asked about Panama personal income tax (ISR — Impuesto sobre la Renta) for individuals, self-employed persons, or payroll. Trigger on phrases like "how much income tax do I pay in Panama", "Panama ISR", "declaración jurada de rentas", "income tax return Panama", "allowable deductions Panama", "CSS contributions", "Caja de Seguro Social", "seguro educativo", "territorial taxation", "Panama-source income", "self-employed CSS Law 462", "décimo tercer mes", "estimated tax instalments", "DGI filing", "non-resident withholding Panama", or any question about filing or computing personal income tax or social security for an individual or self-employed client in Panama. Also trigger when classifying a Panamanian bank statement, computing CSS/educational-insurance payroll deductions, or advising on the 15 March filing deadline. This skill covers the progressive ISR brackets, personal deductions, CSS + educational insurance under Law 462 of 2025, filing deadlines, estimated tax, penalties, minimum wage, and the territorial source rule. ALWAYS read this skill before touching any Panama income tax work.
-version: 0.1
+description: >
+  Use this skill for Panama income tax (Impuesto sobre la Renta, ISR) of individuals,
+  the self-employed and employers withholding on salaries, for tax year 2026, with the
+  company rules an individual client meets. It gives the art. 700 table (0% to
+  USD 11,000, 15% to USD 50,000, USD 5,850 plus 25% above), representation allowances,
+  personal deductions, educational insurance at 2.75%, the 25% company rate, dividend
+  tax (10%, 5%, 20%) and complementary tax, the Aviso de Operacion tax, withholding on
+  payments abroad, filing by 15 March (individuals) and 31 March (companies), estimated
+  tax and DGI penalties. Trigger phrases include ISR Panama, declaracion jurada de
+  rentas, e-Tax 2.0, seguro educativo, renta territorial and Formulario 07.
+version: "1.0"
 jurisdiction: PA
 tax_year: 2026
-last_updated: 2026-10-16
+last_updated: 2026-11-14
 depends_on:
   - income-tax-workflow-base
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
+type: computation
 ---
 
 # Panama income tax (ISR): individuals, the self-employed, payroll, and the company rules they meet
 
-Tax year 2026. Panama's tax year is the calendar year, so "2026" means income earned from 1 January to 31 December 2026, reported on the return due by 15 March 2027 (individuals) or 31 March 2027 (companies). The rules below are as published by the Dirección General de Ingresos (DGI) on dgi.mef.gob.pa, read on 25 September 2026. The DGI tax table has not changed since 2010, so the 2026 figures are the same as 2025. A short dated section covers the 2025 returns filed in 2026.
+Tax year 2026. Panama's tax year is the calendar year, so "2026" means income earned from 1 January to 31 December 2026, reported on the return due by 15 March 2027 (individuals) or 31 March 2027 (companies). The rules below are as published by the Dirección General de Ingresos (DGI) on dgi.mef.gob.pa, re-read on 14 November 2026. The DGI tax table has not changed since 2010, so the 2026 figures are the same as 2025. A short dated section covers the 2025 returns filed in 2026.
 
 Amounts are in balboas (B/.), which trade at par with the US dollar; this skill writes them as USD.
 
-## Scope and who this is for ([DGI, rates](https://dgi.mef.gob.pa/DInforme/Tarifa.php); [DGI, income tax FAQ](https://dgi.mef.gob.pa/Preguntas/Rent.php))
+## Scope and who this is for
+
+Sources for this section: [DGI, rates](https://dgi.mef.gob.pa/DInforme/Tarifa.php); [DGI, income tax FAQ](https://dgi.mef.gob.pa/Preguntas/Rent.php).
 
 This skill covers Panama's income tax (Impuesto sobre la Renta, ISR) for:
 
 - Individuals (personas naturales): employees, independent professionals and traders (comerciantes), resident or not, on Panama-source income.
 - Employers withholding ISR from salaries.
-- At summary level, the company rules an individual client meets: the 25% corporate rate, the alternative minimum calculation (CAIR), dividend tax, the Aviso de Operación tax, and withholding on payments abroad.
+- At summary level, the company rules an individual client meets: the 25% corporate rate, the alternative minimum calculation (CAIR, referred), dividend tax, the Aviso de Operación tax, and withholding on payments abroad.
 
 It does not cover ITBMS (the goods and services tax), capital gains on real estate or securities, the special regimes (City of Knowledge, SEM, Colón Free Zone, Panamá Pacífico and other free zones), banking and insurance levies, or CSS social security rates. Those are referred.
 
@@ -60,6 +72,32 @@ Foreign-source income is still reported on the return, on its own line, "de acue
 11. **File** on e-Tax 2.0, countersigned by a CPA if income is above USD 11,000 ([DGI FAQ, question 45](https://dgi.mef.gob.pa/Preguntas/DeclaracionInformes.php)), and **pay** by the due dates.
 
 ## Figures for 2026
+
+### Rates, bands and thresholds
+
+| Item | 2026 figure | Condition | Source |
+| --- | --- | --- | --- |
+| Individuals, net taxable income up to USD 11,000 | 0% | Art. 700 Codigo Fiscal | DGI, Tarifa: https://dgi.mef.gob.pa/DInforme/Tarifa.php |
+| Individuals, USD 11,000 to USD 50,000 | 15% of the excess over USD 11,000 | | same |
+| Individuals, above USD 50,000 | USD 5,850 plus 25% of the excess | | same |
+| Companies | 25% of net taxable income | Since 2011; former higher-rate sectors 25% since 1 January 2014 | same |
+| Companies more than 40% owned by the State | 30% | | same |
+| Representation allowances, up to USD 25,000 | 10% | Separate from salary | DGI, Planilla 03: https://dgi.mef.gob.pa/DInforme/Planilla03.php |
+| Representation allowances, above USD 25,000 | USD 2,500 plus 15% of the excess | | same |
+| Dividends from Panama-source profits | 10% | Form 07 within 10 days | DGI, Formulario 07: https://dgi.mef.gob.pa/DInforme/Formulario07.php |
+| Dividends from foreign-source, export or exempt-interest profits, and free zone companies | 5% | | same |
+| Dividends on bearer shares | 20% | | same |
+| Complementary tax | 10% of the shortfall below 40% of net profits distributed (20% test for 5% payers) | | same |
+| Payments abroad of Panama-source income | Company rate or individual table on 50% of the payment | Form 05 within 10 days | DGI, Formulario 05: https://dgi.mef.gob.pa/DInforme/Formulario05.php |
+| Educational insurance on self-employed income | 2.75% of the base (1.25% for embassy employees) | Paid with the estimated tax | DGI return instructions, persona natural: https://dgi.mef.gob.pa/DInforme/pdf/RENTA%20-%20NATURAL.pdf |
+| Aviso de Operacion tax | 2% of capital, minimum USD 100, maximum USD 60,000 | Declared on the ISR return | same |
+| Mortgage interest on own home in Panama | Up to USD 15,000 a year | No preferential-rate loans | same |
+| School costs per dependant | Up to USD 3,600 | Panama only; salaried filers recover 15% or 25% as a credit | DGI FAQ, Renta: https://dgi.mef.gob.pa/Preguntas/Rent.php |
+| Tasa Unica, sociedad anonima | USD 300 a year (foundations USD 400; USD 50 surcharge if late) | | DGI FAQ, Tasa Unica: https://dgi.mef.gob.pa/Preguntas/TasaU.php |
+| Individual return deadline | 15 March of the following year; extension to 15 April | | DGI, articulo 710: https://dgi.mef.gob.pa/DInforme/A710codigofiscal.php |
+| Company return deadline | 31 March; extension to 30 April | | same |
+| Estimated tax instalments | 30 June, 30 September, 31 December | | DGI FAQ, Renta: https://dgi.mef.gob.pa/Preguntas/Rent.php |
+| Late return fine (art. 710) | USD 100 to USD 1,000 | DGI FAQ: USD 100 individuals, USD 500 to USD 1,000 companies | DGI, Multas y sanciones: https://dgi.mef.gob.pa/MS/MS.php |
 
 ### Individuals: the tax table ([DGI, rates](https://dgi.mef.gob.pa/DInforme/Tarifa.php); [DGI, Planilla 03](https://dgi.mef.gob.pa/DInforme/Planilla03.php))
 
@@ -104,14 +142,7 @@ DGI's list of personal deduction lines has no per-dependant deduction. Do not cl
 
 **Rate.** Companies (personas jurídicas) pay 25% of net taxable income for 2011 and later years. Companies in which the State holds more than 40% of the shares pay 30%. The sectors once taxed at higher rates (electricity, telecoms, insurance, regulated finance companies, cement, gaming, mining, banking) have paid 25% since 1 January 2014 ([DGI, rates](https://dgi.mef.gob.pa/DInforme/Tarifa.php)).
 
-**CAIR, the alternative calculation.** A company whose total taxable income (gross income less exempt, non-taxable and foreign-source income) is more than USD 1,500,000 a year pays tax on the greater of:
-
-1. net taxable income worked out the normal way, and
-2. 4.67% of total taxable income.
-
-Both bases are taxed at the company's rate, so at 25% the CAIR floor is 25% of the 4.67% base. A company with taxable income of USD 1,500,000 or less is outside CAIR ([DGI, general rules](https://dgi.mef.gob.pa/DInforme/GD-ISR.php)).
-
-A company that would make a loss under CAIR, or whose effective rate under CAIR would exceed the rate in force (DGI's page also mentions 30% in one place: check), may ask DGI not to apply CAIR for up to three years. The request is due no later than 90 calendar days after the year end, or with the return if an extension was granted. If DGI has not decided by the filing deadline, the company pays on the normal method; DGI has six months after the filing deadline to decide, and silence means the request is accepted ([DGI, general rules](https://dgi.mef.gob.pa/DInforme/GD-ISR.php)).
+**CAIR, the alternative minimum calculation.** Large companies may have to pay on an alternative base (CAIR). Its threshold and percentage could not be confirmed on an official page in this pass (DGI's general rules page did not load), so this skill does not compute it: refer, and see Not yet confirmed.
 
 **Dividend tax.** A company must withhold dividend tax when it distributes profits ([DGI, Form 07](https://dgi.mef.gob.pa/DInforme/Formulario07.php)):
 
@@ -138,7 +169,9 @@ A shareholder whose only income is dividends that have already been taxed at sou
 
 Anyone who pays or credits Panama-source income to a person based abroad must withhold tax. The rate for a company (25%) or the individual table applies to 50% of the amounts paid in the year, less withholding already made. The tax goes on Form 05 within 10 days of the payment or credit, whichever comes first ([DGI, returns and due dates](https://dgi.mef.gob.pa/DInforme/Tab-Decla.php)). Treaty relief goes on Form 433 and is referred.
 
-## Boundaries and exceptions ([DGI, article 710](https://dgi.mef.gob.pa/DInforme/A710codigofiscal.php); [DGI, general rules](https://dgi.mef.gob.pa/DInforme/GD-ISR.php); [DGI return instructions](https://dgi.mef.gob.pa/DInforme/pdf/RENTA%20-%20NATURAL.pdf))
+## Boundaries and exceptions
+
+Sources for this section: [DGI, article 710](https://dgi.mef.gob.pa/DInforme/A710codigofiscal.php); [DGI, general rules](https://dgi.mef.gob.pa/DInforme/GD-ISR.php); [DGI return instructions](https://dgi.mef.gob.pa/DInforme/pdf/RENTA%20-%20NATURAL.pdf).
 
 | Situation | Treatment |
 | --- | --- |
@@ -156,11 +189,12 @@ Anyone who pays or credits Panama-source income to a person based abroad must wi
 | School costs abroad or online from abroad | Not deductible; only school costs in Panama count. |
 | Mortgage interest at a preferential rate | Not deductible. |
 | Office in a property the taxpayer owns | No rent deduction for the space. Rent on property used partly for the business is deductible in proportion to the taxable use. |
-| Company taxable income exactly USD 1,500,000 | Outside CAIR; CAIR applies above that amount. |
 | Company distributes 40% or more of net profits after tax | No complementary tax (20% test for companies taxed at 5% on dividends). |
 | Return being audited by DGI | No amended return can be filed. |
 
-## Worked cases ([DGI, rates](https://dgi.mef.gob.pa/DInforme/Tarifa.php); [DGI, general rules](https://dgi.mef.gob.pa/DInforme/GD-ISR.php); [DGI, Form 07](https://dgi.mef.gob.pa/DInforme/Formulario07.php))
+## Worked cases
+
+Sources for this section: [DGI, rates](https://dgi.mef.gob.pa/DInforme/Tarifa.php); [DGI, general rules](https://dgi.mef.gob.pa/DInforme/GD-ISR.php); [DGI, Form 07](https://dgi.mef.gob.pa/DInforme/Formulario07.php).
 
 All cases are for tax year 2026 and assume Panama-source income unless stated.
 
@@ -168,9 +202,21 @@ All cases are for tax year 2026 and assume Panama-source income unless stated.
 
 **Case 2. Independent professional, top band.** Net taxable income USD 75,000. Tax = 5,850 + (75,000 − 50,000) × 25% = 5,850 + 6,250 = USD 12,100.
 
-**Case 3. Consultant working abroad.** A Panama resident invoices USD 5,000 to a foreign client for work done wholly outside Panama. It is foreign-source: reported on the foreign-source line, not taxed, and the costs of earning it are not deductible. If some of the work was done in Panama, or the client relies on the offshore services rules, refer.
 
-**Case 4. Company inside CAIR.** Total taxable income USD 3,000,000; net taxable income by the normal method USD 100,000. Normal tax = 100,000 × 25% = USD 25,000. CAIR base = 3,000,000 × 4.67% = USD 140,100; CAIR tax = 140,100 × 25% = USD 35,025. The company pays the greater, USD 35,025, unless DGI agrees not to apply CAIR. Its effective rate under CAIR, 35,025 ÷ 100,000 = 35%, exceeds the 25% rate, so it may apply for non-application within 90 calendar days of the year end.
+```oa-check
+name: PA 2026 individual, middle and top band
+inputs:
+  net_a: 40000
+  net_b: 75000
+steps:
+  - tax_a: (net_a - 11000) * 0.15
+  - tax_b: 5850 + (net_b - 50000) * 0.25
+expected:
+  tax_a: 4350
+  tax_b: 12100
+```
+
+**Case 3. Consultant working abroad.** A Panama resident invoices USD 5,000 to a foreign client for work done wholly outside Panama. It is foreign-source: reported on the foreign-source line, not taxed, and the costs of earning it are not deductible. If some of the work was done in Panama, or the client relies on the offshore services rules, refer.
 
 **Case 5. Salaried parent claiming school costs.** Salary USD 30,000 from one employer, tax fully withheld; USD 2,000 of documented school costs in Panama for one child with no scholarship. No return is required, but the employee may file to recover school costs as a credit: 2,000 × 15% = USD 300, because income is between USD 11,000 and USD 50,000. The costs are under the USD 3,600 per-dependant cap.
 
@@ -179,6 +225,30 @@ All cases are for tax year 2026 and assume Panama-source income unless stated.
 **Case 7. Estimated tax.** Case 1's return, filed by 15 March 2027, shows tax of USD 4,350 for 2026. The estimated income for 2027 may not be lower than the income declared for 2026, so on the same deductions the estimated tax is USD 4,350, paid as 4,350 ÷ 3 = USD 1,450 by each of 30 June, 30 September and 31 December 2027 (or in one payment). Any balance of 2026 tax not covered by the 2026 instalments is due by 31 March 2027.
 
 **Case 8. Dividends and complementary tax.** A company has net profits after its own tax of USD 600,000, all Panama-source, and distributes USD 200,000. Dividend tax = 200,000 × 10% = USD 20,000, on Form 07 within 10 days. The 40% test is 600,000 × 40% = USD 240,000; the shortfall is 240,000 − 200,000 = USD 40,000, so complementary tax = 40,000 × 10% = USD 4,000.
+
+
+```oa-check
+name: PA 2026 dividends and complementary tax (decision on how much to distribute)
+inputs:
+  net_profit: 600000
+  distributed: 200000
+steps:
+  - dividend_tax: distributed * 0.10
+  - required: net_profit * 0.40
+  - shortfall: max(required - distributed, 0)
+  - complementary: shortfall * 0.10
+  - total: dividend_tax + complementary
+  - total_if_40pct: required * 0.10
+expected:
+  dividend_tax: 20000
+  required: 240000
+  shortfall: 40000
+  complementary: 4000
+  total: 24000
+  total_if_40pct: 24000
+```
+
+Distributing the full 40% (USD 240,000) costs the same USD 24,000 in tax as distributing USD 200,000 plus complementary tax, so below 40% the company gains nothing in tax by holding cash; the complementary tax paid is credited against later dividend tax under DGI rules (not read in this pass).
 
 **Case 9. Payment abroad.** A Panama company pays a foreign company USD 10,000 for services received in Panama, its only such payment in the year. Withholding = 10,000 × 50% × 25% = USD 1,250, on Form 05 within 10 days of payment, unless a treaty applies (refer).
 
@@ -194,7 +264,9 @@ All cases are for tax year 2026 and assume Panama-source income unless stated.
 - **Arrears, audits, enforcement**, closure of premises, criminal tax fraud, suspension of the Aviso de Operación, or a client already under DGI audit (no amended return is allowed).
 - **Prescription questions.** DGI's FAQ says individual income tax prescribes after 7 years in one answer and 5 years in another ([DGI FAQ, questions 6 and 32](https://dgi.mef.gob.pa/Preguntas/Rent.php)). Check the Código Fiscal before advising.
 
-## Filing and payment ([DGI, filing deadlines](https://dgi.mef.gob.pa/DInforme/P-Presentacion.php); [DGI, article 710](https://dgi.mef.gob.pa/DInforme/A710codigofiscal.php); [DGI, returns and due dates](https://dgi.mef.gob.pa/DInforme/Tab-Decla.php))
+## Filing and payment
+
+Sources for this section: [DGI, filing deadlines](https://dgi.mef.gob.pa/DInforme/P-Presentacion.php); [DGI, article 710](https://dgi.mef.gob.pa/DInforme/A710codigofiscal.php); [DGI, returns and due dates](https://dgi.mef.gob.pa/DInforme/Tab-Decla.php).
 
 ### Who must file
 
@@ -262,3 +334,21 @@ The 2025 returns were due by 15 March 2026 (individuals) and 31 March 2026 (comp
 - [ ] CPA countersignature if income is more than USD 11,000 ([DGI FAQ, question 45](https://dgi.mef.gob.pa/Preguntas/DeclaracionInformes.php)).
 - [ ] Filed by 15 March 2027 (individuals) or 31 March 2027 (companies), or extension requested in time; balance paid by 31 March 2027.
 - [ ] CSS contribution rates and any offshore services claim marked "check" and referred.
+
+## Sources
+
+| Source | URL | Read on |
+| --- | --- | --- |
+| Read for DGI, Tarifa: art. 700 table for individuals, company rates (25%, 30% State-owned, sector history) | https://dgi.mef.gob.pa/DInforme/Tarifa.php | 2026-11-14 |
+| Read for DGI, Planilla 03: representation allowance table, employer report | https://dgi.mef.gob.pa/DInforme/Planilla03.php | 2026-11-14 |
+| Read for DGI, Formulario 07: dividend rates 10%, 5%, 20%, complementary tax, 10-day deadline | https://dgi.mef.gob.pa/DInforme/Formulario07.php | 2026-11-14 |
+| Read for DGI, Formulario 05: payments abroad on 50% of the amount, 10-day deadline | https://dgi.mef.gob.pa/DInforme/Formulario05.php | 2026-11-14 |
+| Read for DGI, articulo 710 Codigo Fiscal: who files, deadlines, extensions, estimated tax, amendments | https://dgi.mef.gob.pa/DInforme/A710codigofiscal.php | 2026-11-14 |
+| Read for DGI return instructions, persona natural: deductions, educational insurance 2.75% and 1.25%, Aviso de Operacion tax, mortgage interest cap | https://dgi.mef.gob.pa/DInforme/pdf/RENTA%20-%20NATURAL.pdf | 2026-11-14 |
+| Read for DGI FAQ, Renta: territorial rule, estimated tax dates, school costs and the 15% and 25% credit | https://dgi.mef.gob.pa/Preguntas/Rent.php | 2026-11-14 |
+| Read for DGI FAQ, Declaraciones e Informes: 25% company rate, first USD 11,000 exempt, who need not file, late filing fines, Form 07 timing | https://dgi.mef.gob.pa/Preguntas/DeclaracionInformes.php | 2026-11-14 |
+| Read for DGI FAQ, Tasa Unica: USD 300, USD 400, USD 50 surcharge | https://dgi.mef.gob.pa/Preguntas/TasaU.php | 2026-11-14 |
+| Read for DGI, Multas y sanciones: art. 710 late return fine, books, information requests | https://dgi.mef.gob.pa/MS/MS.php | 2026-11-14 |
+| Read for DGI, Presentacion and Fecha de vencimientos pages: deadlines by form | https://dgi.mef.gob.pa/DInforme/P-Presentacion.php | 2026-11-14 |
+
+Not yet confirmed: CAIR (the alternative minimum calculation; the previous version gave USD 1,500,000 of taxable income and 4.67%, from DGI's general rules page, which did not load today); the article 694 offshore rules text; CSS contribution rates under Ley 462 of 2025 (CSS and Gaceta sites blocked or scanned); late-payment interest under art. 1072-A; the agricultural filing threshold (USD 300,000 or USD 250,000); the prescription period (DGI FAQ gives 7 years and 5 years in different answers).
