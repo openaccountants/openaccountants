@@ -1,14 +1,15 @@
 ---
 name: lt-cross-border
 description: "Hub skill for crossing the Lithuanian border in tax year 2026. Covers individual residence under GPMĮ article 4 (permanent home, centre of interests, 183 days, the 280 and 90 day two-year test, departure); companies and permanent establishments under PMĮ articles 2 and 4; tax at source on payments to foreign entities (PMĮ articles 4(4), 5, 34, 37, 37-1): 17% on dividends and real estate income, 10% on royalties and on interest to non-EEA, non-treaty lenders, 0% on interest to EEA and treaty lenders; the 10% and 12 month dividend exemption; DAS-1 and DAS-2 treaty forms and the FR0313 return; inbound dividends and foreign PE profits; foreign tax credits for companies and individuals; tax withheld from non-resident individuals (GPMĮ articles 6 and 23(7)); the corporate exit tax and its five year spread (PMĮ article 40-2); late payment interest. Includes the 2026 changes: CIT at 17%, PIT at 20, 25 and 32%, Russia and Belarus treaties no longer applied. Trigger phrases: nenuolatinis gyventojas, užsienio vienetas, DAS-1, išskaičiuojamas pelno mokestis, turto perkėlimas, exit tax Lithuania, withholding tax Lithuania, leaving Lithuania. Out of scope: lt-corporate-income-tax, lithuania-pit, lt-payroll-social, lithuania-vat-return."
-version: 0.2
+version: 0.3
 jurisdiction: LT
 tax_year: 2026
-last_updated: 2026-10-24
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: cross-border
+type: situation-rules
 ---
 
 # Lithuania: cross-border tax for people and companies (2026)

@@ -1,17 +1,18 @@
 ---
 name: lithuania-vat-return
 description: "Use this skill for Lithuanian VAT (pridėtinės vertės mokestis, PVM) in tax year 2026. It covers the 21% standard rate, the 12% and 5% reduced rates and the end of the 9% rate on 31 December 2025 (heating, firewood, books, accommodation, transport and culture moved), the EUR 45,000 small business scheme and when VAT starts once it is passed, the EU cross-border small business scheme, the EUR 14,000 acquisitions threshold, tax periods, the FR0600 return and payment by the 25th, i.SAF invoice data by the 20th, the EU sales list (FR0564), reverse charge on services and goods from foreign suppliers and on construction work, blocked input VAT on representation and cars, fines and 0.027% a day late payment interest. Trigger on: Lithuanian VAT, PVM, FR0600, i.SAF, PVM mokėtojas, Lithuania VAT registration, 12% PVM. Out of scope: corporate income tax (lt-corporate-income-tax), personal income tax (lithuania-pit), payroll (lt-payroll-social), cross-border income tax (lt-cross-border)."
-version: 2.2
+version: 2.3
 jurisdiction: LT
 tax_year: 2026
-last_updated: 2026-10-24
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: vat-gst
+type: filing-howto
 ---
 
-# Lithuania: VAT (2026) v2.2
+# Lithuania: VAT (2026) v2.3
 
 This skill sets out who must charge Lithuanian VAT (pridėtinės vertės mokestis, PVM), at what rate, and how to file and pay it for 2026. The law is the Law on VAT No. IX-751 (Pridėtinės vertės mokesčio įstatymas, PVMĮ), in its consolidated version in force from 1 July 2026 to 31 December 2026. Art. 19 (rates) is the same in the version in force from 1 January 2026: its last changes are laws XV-287 and XV-366 of June 2025. Fines and late payment interest come from the Law on Tax Administration No. IX-2112 (Mokesčių administravimo įstatymas, MAĮ). The tax authority is the State Tax Inspectorate (VMI).
 
