@@ -1,10 +1,11 @@
 ---
 name: bulgaria-payroll
 description: "Bulgarian payroll for employees for tax year 2026, in euro. Covers the monthly gross-to-net: employee and employer social contributions on the insurable income (floor and ceiling), health insurance, the 10% wage tax withheld on gross pay less the employee's own contributions, the annual recalculation by 31 January, and filing of Declarations 1 and 6 and payment by the 25th of the next month. Uses the 2026 minimum wage (EUR 620.20) and the two ceilings for 2026 (EUR 2,111.64 to 31 July, EUR 2,300 from 1 August). Lev amounts are shown in euro at BGN 1.95583. Trigger phrases: Bulgaria payroll, gross to net Bulgaria, заплата, данък по чл. 42 ЗДДФЛ, Декларация образец 1, Декларация образец 6, осигуровки работодател. Out of scope: self-employed contributions and fund-by-fund detail (bulgaria-social-contributions), the annual income tax return (bulgaria-income-tax), posted workers and treaties (bg-cross-border)."
-version: 0.2
+version: 0.3
+type: computation
 jurisdiction: BG
 tax_year: 2026
-last_updated: 2026-10-24
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
@@ -31,21 +32,21 @@ Tax year: the calendar year. Authorities: the National Revenue Agency (NRA, НА
 |---|---|---|---|
 | Minimum monthly wage | EUR 620.20 (BGN 1,213); hourly EUR 3.74 | 2026 | Decree 243/2025, ДВ 98/2025, [dv.parliament.bg](https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=238961) |
 | Maximum monthly insurable income, 1 Jan to 31 Jul | EUR 2,111.64 (BGN 4,130) | 2026 | State Social Insurance Budget Act 2026 (ZBDOO) art. 9(1)(c), [dv.parliament.bg](https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=244982) |
-| Maximum monthly insurable income, 1 Aug to 31 Dec | EUR 2,300 | 2026 | ZBDOO 2026 art. 9(2)(c) |
-| Minimum insurable income by activity and job group, 1 Jan to 31 Jul | EUR 550.66 to EUR 901.41 (Appendix 1) | 2026 | ZBDOO 2026 art. 9(1)(a), Appendix 1 |
-| Minimum insurable income by activity and job group, 1 Aug to 31 Dec | EUR 620.20 to EUR 1,532.00 (Appendix 1A) | 2026 | ZBDOO 2026 art. 9(2)(a), Appendix 1A |
+| Maximum monthly insurable income, 1 Aug to 31 Dec | EUR 2,300 | 2026 | ZBDOO 2026 art. 9(2)(c), https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=244982 |
+| Minimum insurable income by activity and job group, 1 Jan to 31 Jul | EUR 550.66 to EUR 901.41 (Appendix 1) | 2026 | ZBDOO 2026 art. 9(1)(a), Appendix 1, https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=244982 |
+| Minimum insurable income by activity and job group, 1 Aug to 31 Dec | EUR 620.20 to EUR 1,532.00 (Appendix 1A) | 2026 | ZBDOO 2026 art. 9(2)(a), Appendix 1A, https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=244982 |
 | Pension fund, born after 31 Dec 1959 | 14.8%: employer 8.22%, employee 6.58% | 2026 | KSO art. 6(1)(2)(a), (1)(4), (3)(9), [lex.bg](https://lex.bg/laws/ldoc/1597824512) |
-| Pension fund, born before 1 Jan 1960 | 19.8%: employer 11.02%, employee 8.78% | 2026 | KSO art. 6(1)(1)(a), (1)(4), (3)(8) |
-| Universal pension fund (second pillar), born after 31 Dec 1959 | 5%: employer 2.8%, employee 2.2% | 2026 | KSO art. 157(1)(1)(c), (3) |
-| General illness and maternity | 3.5%: employer 2.1%, employee 1.4% (60:40) | 2026 | KSO art. 6(1)(5), (3)(7) |
-| Unemployment | 1%: employer 0.6%, employee 0.4% (60:40) | 2026 | KSO art. 6(1)(6), (3)(7) |
-| Work accident and occupational disease | 0.4% to 1.1% by economic activity, employer only (e.g. IT and accounting 0.4%, retail 0.5%, building construction 1.1%) | 2026 | KSO art. 6(1)(7), (6); ZBDOO 2026 art. 14, Appendices 2 and 2A |
-| Guaranteed receivables fund | Not paid for 2026 | 2026 | ZBDOO 2026 art. 15(1) |
+| Pension fund, born before 1 Jan 1960 | 19.8%: employer 11.02%, employee 8.78% | 2026 | KSO art. 6(1)(1)(a), (1)(4), (3)(8), https://lex.bg/laws/ldoc/1597824512 |
+| Universal pension fund (second pillar), born after 31 Dec 1959 | 5%: employer 2.8%, employee 2.2% | 2026 | KSO art. 157(1)(1)(c), (3), https://lex.bg/laws/ldoc/1597824512 |
+| General illness and maternity | 3.5%: employer 2.1%, employee 1.4% (60:40) | 2026 | KSO art. 6(1)(5), (3)(7), https://lex.bg/laws/ldoc/1597824512 |
+| Unemployment | 1%: employer 0.6%, employee 0.4% (60:40) | 2026 | KSO art. 6(1)(6), (3)(7), https://lex.bg/laws/ldoc/1597824512 |
+| Work accident and occupational disease | 0.4% to 1.1% by economic activity, employer only (e.g. IT and accounting 0.4%, retail 0.5%, building construction 1.1%) | 2026 | KSO art. 6(1)(7), (6); ZBDOO 2026 art. 14, Appendices 2 and 2A, https://lex.bg/laws/ldoc/1597824512 |
+| Guaranteed receivables fund | Not paid for 2026 | 2026 | ZBDOO 2026 art. 15(1), https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=244982 |
 | Health insurance | 8%: employer 4.8%, employee 3.2% (60:40) | 2026 | NHIF Budget Act 2026 art. 2, [dv.parliament.bg](https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=244981); ZZO art. 40(1)(1), [lex.bg](https://lex.bg/laws/ldoc/2134412800) |
-| Total, standard employee | Employee 13.78%; employer 18.52% plus the work accident rate | 2026 | Sum of the rows above |
+| Total, standard employee | Employee 13.78%; employer 18.52% plus the work accident rate | 2026 | Sum of the rows above, https://lex.bg/laws/ldoc/1597824512 |
 | Wage tax | 10% of gross pay less the employee's own mandatory contributions | 2026 | ZDDFL arts. 42(2), (4), 48(1), [lex.bg](https://lex.bg/laws/ldoc/2135538631) |
-| Teachers' pension fund (teachers only) | 4.3%, employer only | 2026 | KSO art. 6(7) |
-| Professional pension fund (category I or II labour only) | 12% (cat. I) or 7% (cat. II), employer only | 2026 | KSO art. 157(1)(2), (4) |
+| Teachers' pension fund (teachers only) | 4.3%, employer only | 2026 | KSO art. 6(7), https://lex.bg/laws/ldoc/1597824512 |
+| Professional pension fund (category I or II labour only) | 12% (cat. I) or 7% (cat. II), employer only | 2026 | KSO art. 157(1)(2), (4), https://lex.bg/laws/ldoc/1597824512 |
 
 Totals for a standard employee born after 1959: employee 6.58 + 2.2 + 1.4 + 0.4 + 3.2 = 13.78%; employer 8.22 + 2.8 + 2.1 + 0.6 + 4.8 = 18.52%, plus 0.4% to 1.1% work accident. For an employee born before 1960 there is no second-pillar contribution, and the higher pension rate gives the same totals.
 
