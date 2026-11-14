@@ -1,4 +1,55 @@
-## Annual company reporting under the 2014 AUSCGIE
+---
+name: ohada-company-reporting-accounting-and-audit
+description: >
+  Shared OHADA company-law, accounting and audit reference for 2026, for companies in the OHADA member states we cover (Benin, Burkina Faso, Cameroon, Chad, Comoros, Republic of Congo, Cote d'Ivoire, Equatorial Guinea, Gabon, Guinea, Mali, Niger, Senegal, Togo). Covers SARL and SA annual meetings within 6 months of year end, sole-member decisions, RCCM deposit of annual accounts within a month of approval (AUSCGIE 2014), the AUDCIF 2017 accounting regimes (normal system, SMT cash system below CFA 60, 40 or 30 million turnover, IFRS for listed entities), the 4-month drawing-up rule and 10-year record retention, statutory auditor appointment tests for SARL, SA and SAS (2 of 3: balance sheet above CFA 125 million, turnover above CFA 250 million, staff above 50), auditor terms and eligibility, Regulation 01/2017/CM/OHADA and the OHADA Code of Ethics for accountants and auditors. Trigger on "OHADA", "AUSCGIE", "AUDCIF", "SYSCOHADA", "commissaire aux comptes", "assemblee generale ordinaire", "depot des etats financiers RCCM", "SMT". Load the country pack too: tax deadlines, national derogations and fees sit there.
+version: 0.1
+jurisdiction: GLOBAL
+category: foundation
+tax_year: 2026
+tax_year_notes: "Original 2014 AUSCGIE and 2017 AUDCIF texts, in force in 2026; later amendments not checked"
+last_updated: 2026-11-14
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+domain: references
+type: cross-country-method
+---
+
+# OHADA company reporting, accounting and audit v0.1
+
+> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
+
+Written by Ryan Duguid on his fork (ryanduguid/openaccountants, November 2026) and brought into this repository as one shared file, so the same OHADA text is not repeated in every country pack.
+
+## Who this applies to
+
+Commercial companies (SARL, SA, SAS) and other entities within the OHADA Uniform Acts, in the member states this repository covers: Benin, Burkina Faso, Cameroon, Chad, Comoros, Republic of Congo, Cote d'Ivoire, Equatorial Guinea, Gabon, Guinea, Mali, Niger, Senegal and Togo. The Central African Republic, DR Congo and Guinea-Bissau are also OHADA members but are outside our coverage (UN sanctions regimes, see `scripts/data/sanctioned.yml`).
+
+Use this file for the shared company-law, accounting and audit rules. Use the country pack for national derogations (for example SARL capital), registry fees and the tax calendar. The CFA amounts below are stated in the Uniform Acts; in Comoros and Guinea, which do not use the CFA franc, check the equivalent in the legal currency.
+
+Key figures, before the detail:
+
+| Rule | Figure | Source |
+|---|---|---|
+| SARL and SA ordinary annual meeting | Within 6 months of year end; court can extend | AUSCGIE arts 348, 548 https://biblio.ohada.org/doc_num.php?explnum_id=3974 |
+| RCCM deposit of annual accounts | Within the month after approval | AUSCGIE art 269 https://biblio.ohada.org/doc_num.php?explnum_id=3974 |
+| Accounts drawn up | Within 4 months of year end | AUDCIF art 23 https://justice.sec.gouv.sn/wp-content/uploads/textes-reglements/OHADA/Acte-uniforme-relatif-droit-comptable-information-financiere-JAN-2017-JO.pdf |
+| Documents to the auditor | At least 45 days before the ordinary general meeting | AUDCIF art 71 https://justice.sec.gouv.sn/wp-content/uploads/textes-reglements/OHADA/Acte-uniforme-relatif-droit-comptable-information-financiere-JAN-2017-JO.pdf |
+| Record retention | 10 years | AUDCIF art 24 https://justice.sec.gouv.sn/wp-content/uploads/textes-reglements/OHADA/Acte-uniforme-relatif-droit-comptable-information-financiere-JAN-2017-JO.pdf |
+| SMT cash system ceiling | Turnover below CFA 60 million (trading), 40 million (craft), 30 million (services) | AUDCIF art 13 https://justice.sec.gouv.sn/wp-content/uploads/textes-reglements/OHADA/Acte-uniforme-relatif-droit-comptable-information-financiere-JAN-2017-JO.pdf |
+| SARL or SAS auditor test | 2 of 3 at year end: balance sheet above CFA 125 million, turnover above CFA 250 million, staff above 50 | AUSCGIE arts 376, 853-13 https://biblio.ohada.org/doc_num.php?explnum_id=3974 |
+| SA auditor | Always; 2 principal and 2 substitute if public offering | AUSCGIE arts 694, 702 https://biblio.ohada.org/doc_num.php?explnum_id=3974 |
+| Auditor terms | SARL 3 years; SA 2 years first, then 6 | AUSCGIE arts 379, 703 to 705 https://biblio.ohada.org/doc_num.php?explnum_id=3974 |
+
+## The method, step by step
+
+1. Identify the legal form, member state, year end and whether the company is listed or offers securities publicly.
+2. Check the country pack for any national derogation and the tax deadline.
+3. Apply the annual meeting, accounts and deposit rules below, each from its own trigger date.
+4. Choose the accounting system (normal, SMT, plus IFRS where listed).
+5. Run the auditor appointment test for the legal form, including SAS control links.
+6. For a practitioner, check eligibility, the 2017 Regulation and the Code of Ethics.
+
+### Annual company reporting under the 2014 AUSCGIE
 
 The revised AUSCGIE took effect on **5 May 2014**. The following rules address
 annual SARL and SA decisions and commercial-company registry deposits.
@@ -29,7 +80,7 @@ national tax-return deadline separately. The current registry filing method,
 fees, applicable accounting and audit rules and any sector-specific obligations
 still need verification. [AUSCGIE, articles 269 and 348](https://biblio.ohada.org/doc_num.php?explnum_id=3974)
 
-## Selected accounting rules under the 2017 AUDCIF
+### Selected accounting rules under the 2017 AUDCIF
 
 This reference summarises selected provisions of the original AUDCIF adopted on
 26 January 2017. Article 113 expressly fixes commencement at **1 January 2018**
@@ -40,7 +91,7 @@ paragraph. Verify later amendments, accounting-standard updates and the rules
 for the entity's actual period before use.
 [AUDCIF, article 113, PDF page 53](https://justice.sec.gouv.sn/wp-content/uploads/textes-reglements/OHADA/Acte-uniforme-relatif-droit-comptable-information-financiere-JAN-2017-JO.pdf#page=53)
 
-### Scope and accounting regime
+#### Scope and accounting regime
 
 Articles 1 and 2 impose accounting duties on entities within their scope,
 including commercial companies, and exclude entities governed by public
@@ -73,7 +124,7 @@ non-profit framework separately.
   distributable profit. Group-accounting requirements need a separate assessment.
   [AUDCIF, article 8, PDF pages 18 and 19](https://justice.sec.gouv.sn/wp-content/uploads/textes-reglements/OHADA/Acte-uniforme-relatif-droit-comptable-information-financiere-JAN-2017-JO.pdf#page=19)
 
-### Annual timetable and records
+#### Annual timetable and records
 
 Article 7 sets an ordinary **12-month calendar accounting year**, with specific
 first-year and liquidation exceptions. Article 23 requires annual statements to
@@ -115,7 +166,7 @@ legal-form audit requirements, national submission procedures and fees, and
 qualified local review remain outstanding. These selected provisions do not
 establish complete reporting coverage or filing readiness.
 
-## Selected statutory audit rules under the 2014 AUSCGIE
+### Selected statutory audit rules under the 2014 AUSCGIE
 
 This reference reads selected provisions of the original revised AUSCGIE,
 adopted on 30 January 2014 and effective from **5 May 2014**. Check later
@@ -124,7 +175,7 @@ actual period before applying them. These appointment tests are separate
 from the accounting-regime tests in the AUDCIF section.
 [AUSCGIE, article 920, PDF page 226](https://biblio.ohada.org/doc_num.php?explnum_id=3974#page=226)
 
-### SARL: size test, other appointments and term
+#### SARL: size test, other appointments and term
 
 Under article 376, a SARL must appoint at least one statutory auditor if it
 meets at least 2 of these 3 conditions at financial year-end:
@@ -153,7 +204,7 @@ statutes provide otherwise, appointment is by a majority of votes cast,
 regardless of the proportion of capital represented.
 [AUSCGIE, article 379, PDF page 94](https://biblio.ohada.org/doc_num.php?explnum_id=3974#page=94)
 
-### SA: mandatory appointment and different terms
+#### SA: mandatory appointment and different terms
 
 Article 694 provides for statutory audit in every SA. Article 702 requires
 one principal auditor and one substitute for an SA that does not make a
@@ -172,7 +223,7 @@ continues the mission until the next annual ordinary meeting unless the
 auditor expressly refuses. Check these rules before treating a term as lapsed.
 [AUSCGIE, articles 703 to 709, PDF pages 163 and 164](https://biblio.ohada.org/doc_num.php?explnum_id=3974#page=164)
 
-### SAS: size test and additional triggers
+#### SAS: size test and additional triggers
 
 Article 853-13 permits voluntary appointments and requires at least one
 auditor when 2 of the same 3 year-end size conditions above are met. It also
@@ -187,7 +238,7 @@ claims against the company when it has no auditor. Treat that transaction-specif
 certification separately from the ongoing appointment tests.
 [AUSCGIE, articles 174 and 853-13, PDF pages 45, 209 and 210](https://biblio.ohada.org/doc_num.php?explnum_id=3974#page=209)
 
-### Practitioner eligibility and a worked boundary
+#### Practitioner eligibility and a worked boundary
 
 Article 377 directs SARL selection to articles 694 onwards. Article 695
 requires registration with the professional order where one exists in the
@@ -213,7 +264,7 @@ requirements. Later law, detailed audit standards and procedures, professional
 registration and qualified local review remain outstanding. These selected
 appointment rules do not establish complete reporting coverage or filing readiness.
 
-## Selected professional framework under the 2017 OHADA Regulation
+### Selected professional framework under the 2017 OHADA Regulation
 
 This reference reads the signed 3-page facsimile of Regulation
 **01/2017/CM/OHADA**, adopted on **8 June 2017** and effective from
@@ -227,7 +278,7 @@ current tool editions or national professional eligibility.
 [Regulation, article 9, PDF page 3](https://www.ohada.com/uploads/actualite/3573/Reglement-n-012017CMOHADA-fr.pdf#page=3),
 [issuer’s notice](https://www.ohada.org/mise-en-ligne-du-reglement-portant-harmonisation-des-pratiques-des-professionnels-de-la-comptabilite-et-de-l-audit-dans-les-etats-membres-de-l-ohada/)
 
-### Audit standards and other professional engagements
+#### Audit standards and other professional engagements
 
 Articles 1 and 2 cover professional standards, practical guides, ethics and
 quality assurance across the member states. Article 2 expressly leaves the
@@ -255,7 +306,7 @@ reading the full relevant standards and application material.
 Do not classify every professional engagement as an ISA audit.
 [Regulation, articles 4 and 5, PDF page 2](https://www.ohada.com/uploads/actualite/3573/Reglement-n-012017CMOHADA-fr.pdf#page=2)
 
-### Ethics, quality assurance and tool versions
+#### Ethics, quality assurance and tool versions
 
 Article 6 establishes an OHADA ethics code for contractual and statutory
 audit, other professional engagements and professional accountants working
@@ -285,7 +336,7 @@ eligibility. Later law, complete standards and tools, national implementation
 and qualified local review remain outstanding. These selected provisions
 do not establish complete reporting coverage or audit readiness.
 
-## Retrieved OHADA ethics and quality tools
+### Retrieved OHADA ethics and quality tools
 
 **Evidence period:** issuer-hosted files retrieved on 12 November 2026,
 with their stated historical bases. The issuer's 7 March 2018 notice reports
@@ -296,7 +347,7 @@ equal the adopted versions or remain operative for a later engagement.
 [OHADA adoption notice](https://www.ohada.org/mise-en-ligne-des-outils-d-harmonisation-des-pratiques-des-professionnels-de-la-comptabilite-et-de-l-audit/)
 [Issuer tools page](https://www.ohada.org/en/practical-tools-for-implementing-isa-standards/)
 
-### The retrieved Code's stated basis
+#### The retrieved Code's stated basis
 
 The retrieved Code's preamble identifies a May 2015 IESBA basis, including
 April 2015 changes applicable from April 2016. Footers say 'Version après
@@ -321,7 +372,7 @@ summary does not establish complete confidentiality or independence
 compliance.
 [Code, section 140, rendered pages 10 and 11](https://www.ohada.org/wp-content/uploads/2020/10/OHADA-Code-de%CC%81thique-des-professionnels-de-la-comptabilite%CC%81-et-de-laudit.docx)
 
-### Quality manual and remaining verification
+#### Quality manual and remaining verification
 
 The retrieved quality manual is labelled January 2018. Its preamble
 describes a system based on ISA, ISA 220 and ISQC 1 and an institutional
@@ -342,7 +393,7 @@ notice about cooperation or a meeting agenda cannot substitute for an
 adopted instrument. Qualified local review, actual professional eligibility
 and complete reporting coverage remain outstanding.
 
-## Additional provisions in the retrieved OHADA Code
+### Additional provisions in the retrieved OHADA Code
 
 Use these selected provisions as a historical reference when checking a
 professional engagement or financial reporting role. The issuer-hosted Code
@@ -352,7 +403,7 @@ atelier' footers. Those dates do not establish the commencement, final adopted
 identity or current applicability of this OHADA file.
 [Code, preamble and footer, rendered page 5](https://www.ohada.org/wp-content/uploads/2020/10/OHADA-Code-de%CC%81thique-des-professionnels-de-la-comptabilite%CC%81-et-de-laudit.docx)
 
-### Professionals in practice
+#### Professionals in practice
 
 Section 200 prohibits knowingly undertaking activities incompatible with the
 fundamental principles. Section 210 requires assessing threats when accepting
@@ -395,7 +446,7 @@ Section 280 requires assessing objectivity threats from interests or
 relationships and applying appropriate safeguards.
 [Code, sections 270 and 280, rendered pages 16 and 17](https://www.ohada.org/wp-content/uploads/2020/10/OHADA-Code-de%CC%81thique-des-professionnels-de-la-comptabilite%CC%81-et-de-laudit.docx)
 
-### Professionals employed in business
+#### Professionals employed in business
 
 Sections 300 and 310 address incompatible activities and pressures threatening
 the fundamental principles. Section 320 requires the responsible preparer or
@@ -419,7 +470,7 @@ recommendations when the employer pressures the professional to offer an
 unethical inducement.
 [Code, sections 330 to 350, rendered pages 45 and 46](https://www.ohada.org/wp-content/uploads/2020/10/OHADA-Code-de%CC%81thique-des-professionnels-de-la-comptabilite%CC%81-et-de-laudit.docx)
 
-### Remaining verification
+#### Remaining verification
 
 This selection does not complete the Code. The selected independence and
 definitions references below do not reconcile all provisions or exceptions. Establish
@@ -428,7 +479,7 @@ national and sector rules and the professional's eligibility. Complete
 financial reporting, audit and quality-management coverage and qualified
 local review remain outstanding.
 
-## Retrieved OHADA Code audit-independence reference
+### Retrieved OHADA Code audit-independence reference
 
 Check independence against the adopted rules for the actual engagement.
 The following is a selected historical reference to section 290 of the
@@ -439,7 +490,7 @@ footers. Neither retrieval nor these labels proves final adopted-byte identity,
 OHADA commencement or current applicability.
 [Code, preamble and section 290, rendered pages 5, 17 and 26](https://www.ohada.org/wp-content/uploads/2020/10/OHADA-Code-de%CC%81thique-des-professionnels-de-la-comptabilite%CC%81-et-de-laudit.docx)
 
-### Framework and engagement boundaries
+#### Framework and engagement boundaries
 
 Section 290 requires independence of mind and in appearance. Identify and
 assess threats and apply necessary safeguards. If threats cannot be reduced
@@ -472,7 +523,7 @@ may be necessary; the text also addresses remedial action and specific
 conditions for inadvertent financial-interest breaches.
 [Code, rendered pages 21 to 23](https://www.ohada.org/wp-content/uploads/2020/10/OHADA-Code-de%CC%81thique-des-professionnels-de-la-comptabilite%CC%81-et-de-laudit.docx)
 
-### Interests and employment
+#### Interests and employment
 
 The firm, audit-team members and their immediate families must not hold direct
 financial interests or material indirect interests in the audit client.
@@ -508,7 +559,7 @@ These are the file's statements, not confirmation of the rule for a current
 appointment.
 [Code, rendered pages 26 and 47](https://www.ohada.org/wp-content/uploads/2020/10/OHADA-Code-de%CC%81thique-des-professionnels-de-la-comptabilite%CC%81-et-de-laudit.docx)
 
-### Other services and fees
+#### Other services and fees
 
 The firm must not assume client management responsibility. Client management
 must retain significant decisions, competent oversight, evaluation of results
@@ -554,7 +605,7 @@ non-assurance services to their audit clients; ordinary partner profit-sharing
 arrangements are not intended to be prohibited.
 [Code, rendered pages 31 and 32](https://www.ohada.org/wp-content/uploads/2020/10/OHADA-Code-de%CC%81thique-des-professionnels-de-la-comptabilite%CC%81-et-de-laudit.docx)
 
-### Remaining verification
+#### Remaining verification
 
 The file also addresses trivial gifts, actual or probable litigation and
 restricted-use reports. It refers restricted-report modifications to IESBA
@@ -573,11 +624,11 @@ not complete the remaining Code provisions. Complete reporting and
 quality-management requirements, adopted versions and qualified local review
 remain outstanding.
 
-## Retrieved OHADA Code other-assurance and definitions reference
+### Retrieved OHADA Code other-assurance and definitions reference
 
 The following is a selected historical reference to section 291 and definitions in the issuer-hosted Code retrieved on 12 November 2026. Its preamble states a May 2015 IESBA basis, including April 2015 changes applicable from April 2016; workshop footers and later editorial references remain. Final adopted-byte identity, OHADA commencement and current applicability are unproved. [Code, rendered pages 5, 35, 47](https://www.ohada.org/wp-content/uploads/2020/10/OHADA-Code-de%CC%81thique-des-professionnels-de-la-comptabilite%CC%81-et-de-laudit.docx)
 
-### Other assurance: scope and independence
+#### Other assurance: scope and independence
 
 Section 291 expressly concerns assurance other than audits and limited reviews. It distinguishes assertion-based engagements, where the responsible party measures or evaluates the subject matter and supplies an assertion to users, from direct-reporting engagements, where the practitioner measures or evaluates it or obtains a responsible-party representation unavailable to users. The subject-matter information reaches users through the assurance report in the latter case. Both involve a practitioner, responsible party and intended users. [Code, rendered pages 35, 37](https://www.ohada.org/wp-content/uploads/2020/10/OHADA-Code-de%CC%81thique-des-professionnels-de-la-comptabilite%CC%81-et-de-laudit.docx)
 
@@ -589,7 +640,7 @@ Document independence conclusions and supporting discussions, threats and necess
 
 Independence includes mind and appearance. Identify and assess threats and apply necessary safeguards. If threats cannot be reduced acceptably, eliminate the circumstances or relationship, refuse the engagement or end it. [Code, rendered page 37](https://www.ohada.org/wp-content/uploads/2020/10/OHADA-Code-de%CC%81thique-des-professionnels-de-la-comptabilite%CC%81-et-de-laudit.docx)
 
-### Interests, relationships and services
+#### Interests, relationships and services
 
 The firm, assurance-team members and immediate family must not hold direct or material indirect financial interests in the client. The prohibition also specifies an entity holding a material direct or indirect financial interest in an entity with a majority holding in that client. Assess known interests held by other partners, staff, their immediate families and people closely connected to team members. For prohibited interests received by the firm, team members or their immediate families through inheritance, gift or merger, dispose immediately, or reduce an indirect holding until the remainder is immaterial. [Code, rendered pages 37, 38](https://www.ohada.org/wp-content/uploads/2020/10/OHADA-Code-de%CC%81thique-des-professionnels-de-la-comptabilite%CC%81-et-de-laudit.docx)
 
@@ -601,13 +652,13 @@ When a former team member or partner joins the client in a specified senior or i
 
 The firm cannot assume management responsibilities within the assurance engagement. A management responsibility undertaken in another client service must be unrelated to both the subject matter and subject-matter information. The firm must ensure management retains significant judgements and decisions: the client designates a competent, experienced person to take responsibility for decisions and supervision of the work, evaluates the work's adequacy and accepts responsibility for resulting action. Other services concerning subject-matter information require assessment of involvement and whether safeguards can reduce unacceptable self-review threats. [Code, rendered pages 40, 41](https://www.ohada.org/wp-content/uploads/2020/10/OHADA-Code-de%CC%81thique-des-professionnels-de-la-comptabilite%CC%81-et-de-laudit.docx)
 
-### Fees, gifts and disputes
+#### Fees, gifts and disputes
 
 A large proportion of firm fees or an individual partner's managed revenue from an assurance engagement creates a threat requiring assessment and safeguards where necessary. The file expects the firm to require payment before issuing the assurance report; if fees remain unpaid afterwards, assess threats and apply necessary safeguards. [Code, rendered page 41](https://www.ohada.org/wp-content/uploads/2020/10/OHADA-Code-de%CC%81thique-des-professionnels-de-la-comptabilite%CC%81-et-de-laudit.docx)
 
 Direct or indirect contingent fees for assurance are prohibited. For another service to the assurance client, contingent fees are prohibited where its outcome and fee depend on a present or future judgement concerning a matter significant to the subject-matter information; safeguards cannot reduce that threat acceptably. Other contingent-fee cases require threat assessment and implementation of safeguards. Gifts from the client are prohibited for the firm and team unless trivial and inconsequential. Actual or probable litigation requires assessment and necessary safeguards. [Code, rendered pages 41, 42](https://www.ohada.org/wp-content/uploads/2020/10/OHADA-Code-de%CC%81thique-des-professionnels-de-la-comptabilite%CC%81-et-de-laudit.docx)
 
-### Selected definitions affecting scope
+#### Selected definitions affecting scope
 
 The glossary's firm includes a sole practitioner, partnership or company and controlling or controlled entities. A network is a larger cooperative structure clearly directed to profit/cost sharing or shared ownership, control, management, quality policies, strategy, brand or significant professional resources; a network firm is a firm or entity in that network. [Code, rendered pages 47, 51](https://www.ohada.org/wp-content/uploads/2020/10/OHADA-Code-de%CC%81thique-des-professionnels-de-la-comptabilite%CC%81-et-de-laudit.docx)
 
@@ -623,7 +674,41 @@ Assurance is a conclusion intended to increase the confidence of intended users 
 
 This selection does not complete the glossary, Code, operative-law checks or reporting coverage. Reconcile final adoption, amendments, underlying IESBA references, national/sector eligibility, actual-period standards and qualified local review before reliance.
 
-<!-- openaccountants-cta-block -->
+## Worked example that recomputes
 
----
+**Does this SARL need an auditor?** Year end 31 December 2025. Balance sheet CFA 126,000,000, turnover CFA 250,000,000, permanent staff 51. Each test is a strict excess, so turnover at exactly 250,000,000 does not count. Balance sheet and staff count: 2 of 3, so article 376 requires an auditor. Annual meeting by 30 June 2026; accounts drawn up by 30 April 2026.
 
+```oa-check
+name: SARL auditor test, 2 of 3
+inputs:
+  balance_sheet: 126000000
+  turnover: 250000000
+  staff: 51
+steps:
+  - bs_test: min(max(balance_sheet - 125000000, 0), 1)
+  - turnover_test: min(max(turnover - 250000000, 0), 1)
+  - staff_test: min(max(staff - 50, 0), 1)
+  - conditions_met: bs_test + turnover_test + staff_test
+expected:
+  conditions_met: 2.00
+```
+
+## Ask the client first
+
+1. Legal form, member state and registered office.
+2. Year end, and the date the accounts were approved.
+3. Balance sheet total, turnover and permanent staff at the last two year ends.
+4. Listed securities or public offering; any controlling or controlled company.
+5. Existing auditor, appointment date and term.
+
+## Sources
+
+| Source | URL | Read on |
+|---|---|---|
+| AUSCGIE, revised 30 January 2014, Journal Officiel de l'OHADA special issue of 4 February 2014: arts 269, 347, 348, 376, 548, 558, 694 read in the PDF text; others as cited by Ryan Duguid | https://biblio.ohada.org/doc_num.php?explnum_id=3974 | 2026-11-14 |
+| AUDCIF, 26 January 2017 (Senegal Ministry of Justice copy), OCR: arts 13 (60, 40, 30 million), 23 (4 months), 24 (10 years), 71 (45 days), 113 (1 January 2018 and 2019) read | https://justice.sec.gouv.sn/wp-content/uploads/textes-reglements/OHADA/Acte-uniforme-relatif-droit-comptable-information-financiere-JAN-2017-JO.pdf | 2026-11-14 |
+| Regulation 01/2017/CM/OHADA, 8 June 2017, 3-page facsimile (secondary host ohada.com), OCR: art 9, in force 1 January 2018, read | https://www.ohada.com/uploads/actualite/3573/Reglement-n-012017CMOHADA-fr.pdf | 2026-11-14 |
+| OHADA Code of Ethics for accounting and audit professionals (docx): read for the 7-year key audit partner rotation, 2 to 5 year cooling-off, 12-month conditions and the 15% fee-dependence rule | https://www.ohada.org/wp-content/uploads/2020/10/OHADA-Code-de%CC%81thique-des-professionnels-de-la-comptabilite%CC%81-et-de-laudit.docx | 2026-11-14 |
+| OHADA company law register page (dated header: in force 5 May 2014), as cited by Ryan Duguid, not reopened | https://www.ohada.org/droit-des-societes-commerciales-et-du-gie/ | 2026-11-12 |
+
+Not yet confirmed: (1) Later amendments to the 2014 AUSCGIE and 2017 AUDCIF, and SYSCOHADA standard-setting decisions after 2017, were not checked. (2) Regulation 01/2017 is read from a facsimile on a secondary host; an issuer copy and Gazette date were not found. (3) Articles cited by Ryan Duguid other than those listed in Sources (for example arts 174, 377 to 379, 695 to 709, 853-13 of the AUSCGIE and arts 1 to 28 and 70 of the AUDCIF) were not each re-read; his page references are kept. (4) The quality manual and ISA practical tools pages and current tool editions were not reopened. (5) Legal-currency equivalents for Comoros and Guinea.
