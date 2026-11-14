@@ -1,10 +1,10 @@
 ---
 name: us-ca-freelance-intake
 description: Intake for a full-year California resident freelancer, sole proprietor or single-member LLC owner before the 2026 federal and California returns are prepared. Decides whether the client is in scope, which documents to collect, and which skill each answer routes to. California items covered here are the ABC test for anyone the client paid, the EDD DE 542 independent contractor report ($600, 20 calendar days, $24 and $490 penalties), the CDTFA seller's permit trigger, local permits through CalGold, the same-classification rule for an LLC, health coverage by month, and the California estimated tax test. Federal figures are routed by slug, not restated. Trigger on "help me do my taxes", "I'm a freelancer in California", "self-employed California", "I have an LLC in California", "contractor taxes California", "prepare my 2026 return". Load first, then us-ca-return-assembly.
-version: "1.0"
+version: "1.1"
 jurisdiction: US-CA
 tax_year: 2026
-last_updated: 2026-11-13
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
