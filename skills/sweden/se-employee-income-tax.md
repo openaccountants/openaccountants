@@ -38,7 +38,7 @@ This skill computes the final tax of a person whose income is pay, pension and s
 | Credit for the pension contribution | 100% of the contribution | 2026 | IL 67 kap. 4 §; https://www.skatteverket.se/privat/skatter/beloppochprocent/2026.4.1522bf3f19aea8075ba21.html |
 | Job tax credit (jobbskatteavdrag), under 66 | Formula in IL 67 kap. 7 §; flat above 8.08 price base amounts (SEK 478,336); no phase-out | 2026 | IL 67 kap. 7 § (Lag 2025:1376); https://data.riksdagen.se/dokument/sfs-1999-1229.text |
 | Earned income credit (skattereduktion för förvärvsinkomst) | SEK 1,500 when taxable earned income is SEK 240,000 or more; 0.75% of the excess over SEK 40,000 between SEK 40,000 and 240,000 | 2026 | IL 67 kap. 46-47 §§; https://data.riksdagen.se/dokument/sfs-1999-1229.text |
-| Commuting to work | SEK 25 per mil (SEK 2.50 per km) by own car; only the part of the year's costs above SEK 15,000 | 2026 | same page; IL 12 kap. 2 and 27 §§; https://data.riksdagen.se/dokument/sfs-2011-1244.text |
+| Commuting to work | SEK 25 per mil (SEK 2.50 per km) by own car; only the part of the year's costs above SEK 15,000 | 2026 | same page; IL 12 kap. 2 and 27 §§; https://data.riksdagen.se/dokument/sfs-1999-1229.text |
 | Other work expenses | Only the part above SEK 5,000 | 2026 | IL 12 kap. 2 §; https://data.riksdagen.se/dokument/sfs-1999-1229.text |
 | Tax on capital income | 30% | 2026 | IL 65 kap. 7 §; https://www.skatteverket.se/privat/skatter/beloppochprocent/2026.4.1522bf3f19aea8075ba21.html |
 | Capital deficit credit | 30% of a deficit up to SEK 100,000; 21% of the rest | 2026 | same page; IL 67 kap. 10 §; https://www.skatteverket.se/privat/skatter/beloppochprocent/2026.4.1522bf3f19aea8075ba21.html |

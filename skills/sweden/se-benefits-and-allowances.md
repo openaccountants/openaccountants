@@ -50,7 +50,7 @@ See also, in this pack: `sweden-payroll` (registration, withholding tables, the 
 | Per diem, domestic (maximibelopp) | SEK 300 full day; SEK 150 half day; SEK 150 night allowance | 2026 | IL 12 kap. 10-11 §§; Skatteverket 2026 page; https://www.skatteverket.se/privat/skatter/beloppochprocent/2026.4.1522bf3f19aea8075ba21.html |
 | Per diem after three months at the same place | SEK 210 a full day (70%); after two years SEK 150 (50%) | 2026 | IL 12 kap. 6 § second paragraph and 21 §; https://www.skatteverket.se/foretag/arbetsgivare/lonochersattning/traktamenteochbilersattning.4.361dc8c15312eff6fd1703e.html |
 | Meal reduction of a SEK 300 full day | all three meals SEK 270; lunch and dinner SEK 210; lunch or dinner SEK 105; breakfast SEK 60 | 2026 | IL 12 kap. 17 §; Skatteverket traktamente page; https://www.skatteverket.se/foretag/arbetsgivare/lonochersattning/traktamenteochbilersattning.4.361dc8c15312eff6fd1703e.html |
-| Mileage, own car | SEK 25 a mil (SEK 2.50 a km) | 2026 | IL 12 kap. 5 §; https://data.riksdagen.se/dokument/sfs-2011-1244.text |
+| Mileage, own car | SEK 25 a mil (SEK 2.50 a km) | 2026 | IL 12 kap. 5 §; https://data.riksdagen.se/dokument/sfs-1999-1229.text |
 | Mileage, benefit car, employee pays all fuel | SEK 12 a mil; fully electric SEK 9.50 a mil | 2026 | IL 12 kap. 5 §; https://www.skatteverket.se/privat/skatter/beloppochprocent/2026.4.1522bf3f19aea8075ba21.html |
 | Employer contributions on benefits | 31.42% ordinary full rate: 18.80% arbetsgivaravgifter plus 12.62% allmän löneavgift (reduced rates in `sweden-payroll`) | 2026 | SAL 2 kap. 10 and 26 §§; Lag (1994:1920) om allmän löneavgift 3 §; Skatteverket 2026 page; https://www.skatteverket.se/privat/skatter/beloppochprocent/2026.4.1522bf3f19aea8075ba21.html |
 
