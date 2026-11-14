@@ -5,14 +5,15 @@ jurisdiction: LS
 category: payroll
 tax_year: 2026
 tax_year_notes: "2026-27"
-last_updated: 2026-11-01
-version: 0.2
+last_updated: 2026-11-14
+type: computation
+version: 0.3
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
 ---
 
-# Lesotho Payroll and Social Contributions v0.2
+# Lesotho Payroll and Social Contributions v0.3
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -33,8 +34,6 @@ Lesotho's tax year runs 1 April to 31 March. This skill covers 2026-27, from 1 A
 | No tax below | M5,100 a month |  | https://www.rsl.org.ls/sites/default/files/2026-09/Guide%20on%20Taxation%20of%20Employment%20Income%2026-27.pdf |
 | Fringe benefits tax | 40% | Employer pays on the taxable value | https://www.rsl.org.ls/sites/default/files/2026-09/Income%20Tax%20Act%201993%20%20Updated%20up%20to%201%20April%202012.pdf |
 | Pension deduction cap | 20% of employment income | Contributions above this are a superannuation fringe benefit | https://www.rsl.org.ls/sites/default/files/2024-07/FBT%20Public%20Ruling.pdf |
-| National social security | unverified | The older skill said no compulsory contributory scheme for private employees; not confirmed at source | unverified: not opened |
-| Occupational pension contributions | unverified | Scheme rules set them; the older figure of about 5% each came from a secondary site | unverified: not opened |
 
 ## The base
 
