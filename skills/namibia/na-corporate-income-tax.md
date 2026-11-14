@@ -2,18 +2,19 @@
 name: na-corporate-income-tax
 description: >
   Namibia corporate income tax, 2026: 30% rate, mining rates, assessed loss limit, provisional tax, the 7-month return, withholding and penalties. Figures come from Namibian law and official pages opened on 2026-11-01. Items that could not be opened are named as not yet confirmed. Not reviewed by a licensed accountant.
-version: 0.2
+version: 0.3
 jurisdiction: NA
 category: international
 tax_year: 2026
 tax_year_notes: "Individuals: year of assessment 1 March 2026 to 28 February 2027. Companies: financial year."
-last_updated: 2026-11-01
+last_updated: 2026-11-14
+type: computation
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
 ---
 
-# Namibia Corporate Income Tax v0.2
+# Namibia Corporate Income Tax v0.3
 
 > **General reference only.** This skill is general tax reference material for AI-assisted workflows. Do not rely on it to file, pay or take a position without review by a qualified professional in Namibia.
 
@@ -100,11 +101,11 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Income Tax Act 24 of 1981, annotated to Act 4 of 2024 (read: Schedule 4 para 3, ss.17, 17E, 21, 45, 56, 66, 79, 80, Schedule 2 paras 19, 20, 24, 28) | https://www.lac.org.na/laws/annoSTAT/Income%20Tax%20Act%2024%20of%201981.pdf | 2026-11-01 |
-| NamRA companies page (read: whole page, 32% is stale) | https://www.namra.org.na/business-tax/page/companies-amp-close-corporations/ | 2026-11-01 |
-| NamRA income tax page (read: company table 2018/19) | https://www.namra.org.na/tax-types/page/income-tax/ | 2026-11-01 |
-| NamRA withholding page (read: whole page) | https://www.namra.org.na/tax-types/page/withholding-tax-30120/ | 2026-11-01 |
-| NamRA ITAS brochure (read: whole) | https://www.namra.org.na/documents/cms/uploaded/information-brochure--how-to-register-on-itas-ce02d8af03.pdf | 2026-11-01 |
-| NamRA tax payments brochure (read: whole) | https://www.namra.org.na/documents/cms/uploaded/information-brochure--tax-payments-325a997127.pdf | 2026-11-01 |
+| Income Tax Act 24 of 1981, annotated to Act 4 of 2024: read for Schedule 4 para 3, ss.17, 17E, 21, 45, 56, 66, 79, 80, Schedule 2 paras 19, 20, 24, 28 on 2026-11-01 | https://www.lac.org.na/laws/annoSTAT/Income%20Tax%20Act%2024%20of%201981.pdf | 2026-11-01; tried again 2026-11-14, lac.org.na refused the script (406) |
+| NamRA companies page: read in full (its 32% is stale) | https://www.namra.org.na/business-tax/page/companies-amp-close-corporations/ | 2026-11-14 |
+| NamRA income tax page: read for the company table (2018/19) | https://www.namra.org.na/tax-types/page/income-tax/ | 2026-11-14 |
+| NamRA withholding page: read in full | https://www.namra.org.na/tax-types/page/withholding-tax-30120/ | 2026-11-14 |
+| NamRA ITAS brochure: read in full | https://www.namra.org.na/documents/cms/uploaded/information-brochure--how-to-register-on-itas-ce02d8af03.pdf | 2026-11-14 |
+| NamRA tax payments brochure: read in full | https://www.namra.org.na/documents/cms/uploaded/information-brochure--tax-payments-325a997127.pdf | 2026-11-14 |
 
 Not yet confirmed: Whether the 18% registered manufacturer rate in para 3(2) still applies, since Act 5 of 2021 deleted the continued application of s.5A while para 3(2) remains in the text; current petroleum and long-term insurer rates (only the 2018/19 page was read; the Petroleum (Taxation) Act was not opened); Budget 2026/27 proposals; company return boxes.
