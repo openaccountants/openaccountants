@@ -34,14 +34,14 @@ For a solo self-employed individual choosing a Universal Pension scheme. This is
 
 | Scheme and conditions | Contribution/eligibility | Official source |
 |---|---|---|
-| Surokkha, self-employed/informal-sector citizen | Monthly BDT 1,000, 2,000, 3,000 or 5,000 | NPA scheme brief and Rules schedule: https://www.upension.gov.bd/assets/public/files/scheme%20rules_English.pdf?v=47 |
-| Progoti, private employees/owners; employer participates institutionally | Monthly BDT 2,000, 3,000, 5,000 or 10,000; employer and employee each 50% | NPA brief: https://www.upension.gov.bd/Public/PensionBriefEn |
-| Samata, qualifying low-income participant | Annual income not exceeding BDT 60,000 under Rules; monthly BDT 1,000, subscriber 500 and government 500 | Rules 3 and schedule: https://www.upension.gov.bd/assets/public/files/scheme%20rules_English.pdf?v=47 |
-| Standard joining ages; older participant exception | Ages 18-50; older entrants require at least 10 years of subscription under the Rules | Rule 4: https://www.upension.gov.bd/assets/public/files/scheme%20rules_English.pdf?v=47 |
+| Surokkha, self-employed/informal-sector citizen | Monthly BDT 1,000, 2,000, 3,000 or 5,000 | Current replacement schedule, page 2: https://www.upension.gov.bd/assets/public/files/up-doc-8.pdf?v=11 |
+| Progoti, private employees/owners; employer participates institutionally | Monthly BDT 2,000, 3,000, 5,000 or 10,000; employer and employee each 50% | Rule 3(b) and replacement schedule, page 3: https://www.upension.gov.bd/assets/public/files/up-doc-5.pdf?v=11 ; https://www.upension.gov.bd/assets/public/files/up-doc-8.pdf?v=11 |
+| Samata, participant below the poverty line using BBS income limits published from time to time | Rule 3(d) describes the current annual limit as BDT 60,000 (in words on the page); verify the applicable BBS limit. Monthly BDT 1,000, subscriber 500 and government 500 | Rule 3(d) and replacement schedule, page 3: https://www.upension.gov.bd/assets/public/files/up-doc-5.pdf?v=11 ; https://www.upension.gov.bd/assets/public/files/up-doc-8.pdf?v=11 |
+| Standard joining ages; older participant exception | Bangladeshi NID holders aged 18-50; entry above 50 requires special consideration, with pension from the age reached after 10 continuous years of subscriptions | Rule 4(1): https://www.upension.gov.bd/assets/public/files/up-doc-5.pdf?v=11 |
 
 1. A solo freelancer's voluntary scheme choice is separate from income tax and employee payroll. Route staff/fund/gratuity matters to [payroll/social](bd-payroll-social.md); do not conclude that an employer can opt out of labour law.
 2. Choose Surokkha for self-employment, Progoti for private employment/owners, Probash for eligible Bangladeshis abroad, or Samata where the statutory low-income condition is met. Probash contributions use the prescribed foreign-currency channel; do not assume its tiers equal the domestic schemes.
-3. Register through https://www.upension.gov.bd with required identity, bank and nominee details, select the scheme/contribution and retain the pension ID and payment confirmations. The NPA brief describes online banking/card/MFS and counter payment routes; check the current portal before payment.
+3. Apply Rule 4 eligibility before registration. An expatriate without an NID can use a passport but must obtain and submit the NID copy as soon as possible and supply renewed/reissued passport copies. A person receiving a social-security-programme benefit must surrender that benefit before joining the applicable scheme; do not assume the benefits can be combined. Register through https://www.upension.gov.bd with the required identity, bank and nominee details, select the scheme/contribution and retain the pension ID and payment confirmations. Rules 4-5 and the NPA brief describe registration and bank/card/MFS/counter payment routes; check the actual portal before payment (https://www.upension.gov.bd/assets/public/files/up-doc-5.pdf?v=11).
 4. The NPA brief describes contribution tax concession and exempt pension benefits. Apply the actual [PIT](bangladesh-pit.md) investment qualifications and cap rather than deducting the entire payment from income. Future pension amounts are contingent, not guaranteed returns.
 5. Preserve employer PF and gratuity documents separately. Do not conflate the Universal Pension scheme with a universal compulsory self-employed social-security percentage.
 
@@ -98,8 +98,11 @@ Refer citizenship/age exceptions, arrears, nominations/death claims, scheme loan
 
 | Source and sections actually read | Official URL | Read on |
 |---|---|---|
-| Read for Rules 3-4 scheme scope/eligibility and schedule contribution tiers; Rules 12-13 contingency and scheme conversion | https://www.upension.gov.bd/assets/public/files/scheme%20rules_English.pdf?v=47 | 2026-11-14 |
+| Read for original gazetted Rules 3-5 scheme scope, complete eligibility and registration/payment conditions | https://www.upension.gov.bd/assets/public/files/up-doc-5.pdf?v=11 | 2026-11-14 |
+| Read for August 2024 removal of Pratyay additions and replacement contribution schedule, pages 1-3 | https://www.upension.gov.bd/assets/public/files/up-doc-8.pdf?v=11 | 2026-11-14 |
+| Read for official source identity: English rules labelled Unofficial translation | https://www.upension.gov.bd/Public/Laws | 2026-11-14 |
+| Read for comparison of Rules 3-5 and 12-13; this is an unofficial English translation, read with the original and later schedule | https://www.upension.gov.bd/assets/public/files/scheme%20rules_English.pdf?v=47 | 2026-11-14 |
 | Read for scheme participation, Progoti institutional split, registration/payment channels and tax-benefit description | https://www.upension.gov.bd/Public/PensionBriefEn | 2026-11-14 |
 | Read for rebate formula and income exclusions | https://bdlaws.minlaw.gov.bd/act-1429/section-51908.html | 2026-11-14 |
 
-Not yet confirmed: Live NPA portal eligibility and any later scheme amendment applicable to the applicant; Probash tier discrepancy between the English rules schedule and NPA brief (not used here), exact fund/gratuity duties and taxpayer-specific rebate qualification. The generic assertion that employer benefits are always optional is not retained.
+Not yet confirmed: Live NPA portal fields, the BBS poverty-income limit applicable to a particular Samata application, exact fund/gratuity duties and taxpayer-specific rebate qualification. The old English Probash schedule differs because the August 2024 gazette replaced the schedule; do not use that older schedule. The generic assertion that employer benefits are always optional is not retained.

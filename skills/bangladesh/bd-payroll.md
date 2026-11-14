@@ -40,8 +40,30 @@ Employers paying Bangladesh employment income. Covers the salary-tax estimate/de
 2. Section 86 requires deduction at payment at the average tax rate on estimated employment income. Keep the annual estimate, applicable base and pay-period calculation together; do not apply the highest marginal band to all salary (https://bdlaws.minlaw.gov.bd/act-1429/section-51916.html).
 3. Reforecast for bonus, benefit, joiner/leaver or corrected evidence. Section 86(4) permits an in-year increase/decrease for a deduction shortfall/excess. A statutory reduced/no-deduction certificate is a separate mechanism; do not simply stop withholding on an employee's assertion.
 4. Record salary expense, employee withholding payable, net salary and any separate employee PF deduction. Use [payroll/social](bd-payroll-social.md) for mandatory PF/Progoti, WPPF and gratuity conditions; use [social contributions](bd-social-contributions.md) for voluntary individual choices. Do not infer that all employer benefits are voluntary.
-5. Deposit deducted tax to the government and retain the challan/reference and employee allocation. Prepare the withholding return required by current law and reconcile payroll, bank payments, treasury deposits and certificates. Before submission load the applicable current withholding rules/return instructions for the exact deposit date, reporting frequency, portal and fields; the old approximate fortnight/monthly-return wording is not verified.
+5. Deposit deducted tax by e-challan under Rule 9 of the current Withholding Tax Rules, 2026, SRO 273 dated 5 July 2026, deemed effective from 1 July 2026. It replaces the June SRO 210. Keep the employee allocation and treasury evidence; use the exact calendar below, not a uniform fortnight estimate (https://www.dpp.gov.bd/upload_file/gazettes/62247_76058.pdf).
 6. Give the reviewer the annual estimate, deduction history, in-year corrections, deposit evidence and unresolved reporting items. A payroll calculation is not proof that withholding was remitted or the required return was filed.
+
+### Deposits, certificates and withholding returns
+
+| Deduction/collection timing | Treasury deposit deadline | Official source |
+|---|---|---|
+| July through May | Within 2 weeks after the deduction/collection month ends | Current Rules 9, printed page 20719: https://www.dpp.gov.bd/upload_file/gazettes/62247_76058.pdf |
+| June 1-20 | Within 7 days following deduction/collection | same |
+| Other June days, except the final working day | Following day | same |
+| Final working day of June | Same day | same |
+
+Rule 10 uses Schedule 1 for an employment-income withholding certificate where the pay is not government salary; Schedule 2 covers other deductions and Schedule 3 collections. Attach the deposited e-challan. Give the certificate within 2 weeks of the following month or at the time suitable to settle the recipient's tax liability under Rule 10(5). The alternative records described in Rule 10(6) do not substitute for the employment certificate because Rule 10(7) excludes salary withholding from that provision. Keep the salary, benefits, TIN, deduction, estimate/relief and challan particulars specified in Schedule 1 (https://www.dpp.gov.bd/upload_file/gazettes/62247_76058.pdf, printed pages 20719-20721).
+
+Section 177 requires a **quarterly** withholding return from its listed payers. The list includes companies excluding government ministries, divisions, directorates, inspectorates and MPO educational institutions; firms; AOPs; private hospitals, clinics and diagnostic centres; PPPs; e-commerce/online marketplaces and hotels, resorts, motels, restaurants, convention centres, community centres and transport agencies with annual turnover over BDT 10,000,000 (1 crore, in words on the page); non-farmer tobacco-product producers; and individuals with annual business turnover over BDT 100,000,000 (10 crore, in words on the page). Apply the complete entity/activity conditions, rather than assuming every employer is automatically included (https://bdlaws.minlaw.gov.bd/act-1429/section-52007.html).
+
+| Reporting quarter | Return due | Official source |
+|---|---|---|
+| July-September | 25 October | Section 177(3): https://bdlaws.minlaw.gov.bd/act-1429/section-52007.html |
+| October-December | 25 January | same |
+| January-March | 25 April | same |
+| April-June | 25 July | same |
+
+If a listed return date is a weekly or government holiday, file on the next working day. Rule 13 prescribes Schedule 4; section 177 also requires the appropriate Deputy Commissioner jurisdiction, prescribed schedules/documents and signature/verification, with Board power to prescribe electronic filing. Reconcile quarterly return totals to payroll and other covered payments, deductions, deposits and certificates. Confirm the actual e-TDS fields before submission; quarterly reporting does not extend a Rule 9 deposit deadline.
 
 ## Worked cases
 
@@ -93,5 +115,7 @@ Refer foreign/non-resident employees, disputed employment status, unsupported re
 | Read for salary cap amendment, Sixth Schedule paragraph 27 | https://bdlaws.minlaw.gov.bd/act-1718/section-59129.html | 2026-11-14 |
 | Read for ordinary individual bands and thresholds, Finance Act schedule 2 | https://bdlaws.minlaw.gov.bd/upload/act/2026-08-17-10-27-29-%E0%A6%A4%E0%A6%AB%E0%A6%B8%E0%A6%BF%E0%A6%B2_Act-No-96.pdf | 2026-11-14 |
 | Read for investment rebate formula and qualifications section 78 | https://bdlaws.minlaw.gov.bd/act-1429/section-51908.html | 2026-11-14 |
+| Read visually for current Rules 9-14, deposit calendar, certificates, Schedule 1 and replacement of June rules; printed pages 20719-20722 | https://www.dpp.gov.bd/upload_file/gazettes/62247_76058.pdf | 2026-11-14 |
+| Read for complete current section 177 payer classes, quarterly dates, holiday exception, documents and electronic-filing power | https://bdlaws.minlaw.gov.bd/act-1429/section-52007.html | 2026-11-14 |
 
-Not yet confirmed: Current withholding-tax rules for deposit deadlines, reporting frequency, live e-TDS portal/form fields and employee-certificate process. Those must be resolved before a payroll filing is signed off; the old approximate two-week remittance and monthly-return assertion is not an instruction.
+Not yet confirmed: Live e-TDS portal fields, any case-specific later Board filing direction or extension, and taxpayer-specific foreign/non-resident employment adjustments. The sourced deposit and quarterly-return rules above replace the old approximate remittance/monthly-return wording.

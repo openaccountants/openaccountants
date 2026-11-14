@@ -49,8 +49,8 @@ Amounts are BDT. These are enacted figures, not the original budget proposal.
 | Following band | Next 2,000,000 at 25% | same |
 | Balance above those bands | 30% | same |
 | Minimum where total income exceeds applicable threshold | 5,000; 1,000 for a new taxpayer, not a location-based floor | same |
-| Employment-income exclusion | Lower of 1/3 of employment income or 500,000; apply to the statutory employment base | Sixth Schedule part 1 paragraph 27; cap amended by Act 89 section 135: https://bdlaws.minlaw.gov.bd/act-1718/section-59129.html |
-| Investment rebate for resident individual or non-resident Bangladeshi individual | Lowest of 3% of adjusted income A, 10% of eligible investment B, or 750,000 | Income Tax Act section 78: https://bdlaws.minlaw.gov.bd/act-1429/section-51908.html |
+| Employment-income exclusion | Lower of 1/3 of employment income or 500,000 (in words on the page); apply to the statutory employment base | Sixth Schedule part 1 paragraph 27 for 1/3: https://nbr.gov.bd/uploads/acts/Income_tax_act_2023.pdf ; cap amended by Act 89 section 135: https://bdlaws.minlaw.gov.bd/act-1718/section-59129.html |
+| Investment rebate for resident individual or non-resident Bangladeshi individual | Lowest of 3% of adjusted income A, 10% of eligible investment B (source coefficient 0.10), or 750,000 (7.50 lakh, in words on the page) | Income Tax Act section 78: https://bdlaws.minlaw.gov.bd/act-1429/section-51908.html |
 
 ### Establish the base before applying bands
 
@@ -69,12 +69,12 @@ The current section 170 replaced the old universal November deadline. For ordina
 
 | Filing window and condition | Adjustment | Official provision |
 |---|---|---|
-| 1 July to 30 September | Incentive: lower of 5% of section 173(2) tax payable or 25,000 | Section 170(1)(a): https://bdlaws.minlaw.gov.bd/act-1429/section-52000.html |
+| 1 July to 30 September | Incentive: lower of 5% of section 173(2) tax payable or 25,000 (in words on the page) | Section 170(1)(a): https://bdlaws.minlaw.gov.bd/act-1429/section-52000.html |
 | 1 October to 31 December | No timing incentive or additional tax | same |
-| 1 January to 31 March | Additional tax: higher of 2% of section 173(2) tax payable or 3,000 | same |
-| 1 April to 30 June | Additional tax: higher of 5% of section 173(2) tax payable or 5,000 | same |
+| 1 January to 31 March | Additional tax: higher of 2% of section 173(2) tax payable or 3,000 (in words on the page) | same |
+| 1 April to 30 June | Additional tax: higher of 5% of section 173(2) tax payable or 5,000 (in words on the page) | same |
 | Individual who has never filed | May file by 30 June after the income-year end, paying tax at the applicable rate | Section 170(1)(b): https://bdlaws.minlaw.gov.bd/act-1429/section-52000.html |
-| Qualifying overseas individual on higher-study leave, deputation/lien or lawful earning visa/permit | File within 90 days after return to Bangladesh | Section 170(1)(c): https://bdlaws.minlaw.gov.bd/act-1429/section-52000.html |
+| Qualifying overseas individual on higher-study leave, deputation/lien or lawful earning visa and permit | File within 90 days after return to Bangladesh | Section 170(1)(c): https://bdlaws.minlaw.gov.bd/act-1429/section-52000.html |
 | Listed day is a government holiday | Immediately following working day | Section 170(3): https://bdlaws.minlaw.gov.bd/act-1429/section-52000.html |
 
 Pay the applicable tax and surcharge by filing under section 173. Do not substitute an assumed automatic January extension. Other penalties, arrears and notices require the relevant current section and are not replaced by these timing adjustments.
@@ -146,6 +146,7 @@ Do not infer an exemption, rebate instrument, credit or residence. Refer non-Ban
 | Read for Income Tax Act section 78, investment formula and income exclusions | https://bdlaws.minlaw.gov.bd/act-1429/section-51908.html | 2026-11-14 |
 | Read for Income Tax Act section 170, complete individual windows, first-filer/overseas and holiday exceptions | https://bdlaws.minlaw.gov.bd/act-1429/section-52000.html | 2026-11-14 |
 | Read for Income Tax Act section 173, payable tax and source/advance tax credits | https://bdlaws.minlaw.gov.bd/act-1429/section-52003.html | 2026-11-14 |
+| Read for original Sixth Schedule part 1 paragraph 27 one-third salary exclusion, with its cap superseded by the following 2026 amendment | https://nbr.gov.bd/uploads/acts/Income_tax_act_2023.pdf | 2026-11-14 |
 | Read for Finance Act 89 section 135, services banking proviso and salary cap amendment | https://bdlaws.minlaw.gov.bd/act-1718/section-59129.html | 2026-11-14 |
 | Read for Income Tax Act section 2(15), (24), (45), periods and residence | https://bdlaws.minlaw.gov.bd/act-1429/section-51794.html | 2026-11-14 |
 | Read for Income Tax Act section 26, resident/non-resident scope | https://bdlaws.minlaw.gov.bd/act-1429/section-51818.html | 2026-11-14 |

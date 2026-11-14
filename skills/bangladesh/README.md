@@ -9,8 +9,8 @@ covered_by:
 partial:
   IT-IND: "ordinary bands and relief covered; detailed property, capital-gain, loss and surcharge computations require separate source work"
   IT-CORP: "ordinary classes covered; detailed minimum/final tax and current nonresident payment-specific withholding rules remain unresolved"
-  VAT: "core working papers covered; current return field map, sector notifications, fixed turnover-tax notifications and penalties remain unresolved"
-  PR: "salary estimate and deduction covered; current deposit and withholding-return procedure remains unresolved"
+  VAT: "core working papers covered; live return fields and printed 9.2/current statutory period inconsistency, sector notifications, fixed turnover-tax notifications and penalties remain unresolved"
+  PR: "salary estimate and deduction covered; current deposit calendar, certificates and quarterly payer-class returns covered; live e-TDS fields and case-specific later directions remain unresolved"
   TP: "no standalone transfer-pricing computation or documentation skill"
   XB: "no complete treaty, permanent-establishment or foreign-tax-credit skill"
 ---
@@ -25,7 +25,7 @@ The pack distinguishes the income year from the assessment year, uses BDT and ci
 | Company tax | [Corporate income tax](bd-corporate-income-tax.md) | Ordinary classes, selected withholding and filing |
 | VAT | [VAT working papers](bangladesh-vat.md) | Registration, classification, credit and return preparation boundaries |
 | Self-employed pension | [Social contributions](bd-social-contributions.md) | Universal Pension choices |
-| Salary withholding | [Payroll](bd-payroll.md) | Annual estimate and in-year deduction adjustments |
+| Salary withholding | [Payroll](bd-payroll.md) | Annual estimate, deduction adjustments, deposits, certificates and quarterly reporting |
 | Employer funds | [Payroll and social duties](bd-payroll-social.md) | Provident fund/Progoti and WPPF conditions |
 | Services relief | [IT/freelancer tax](bd-it-freelancer-tax.md) | Conditional successor exemption and remittance evidence |
 | Setup | [Business registrations](bd-formation.md), [Company incorporation](bd-company-formation.md) | Distinct registration and incorporation jobs |

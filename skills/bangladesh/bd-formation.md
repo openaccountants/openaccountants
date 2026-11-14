@@ -30,48 +30,47 @@ For a person starting freelancing or a small business. This file organizes regis
 
 ## The method, step by step
 
-1. Compare sole proprietorship (individual owner and personal liability), partnership (deed/partners and separate firm tax reporting), and company (incorporation, governance and accounts/audit). Do not choose solely on a headline tax rate. Route company setup to [company formation](bd-company-formation.md); the Companies Act defines the separate legal forms (https://bdlaws.minlaw.gov.bd/act-788/section-32006.html, https://bdlaws.minlaw.gov.bd/act-788/section-32025.html).
+1. Compare sole proprietorship (individual owner and personal liability), partnership (deed/partners and separate firm tax reporting), and company (incorporation, governance and accounts/audit). Partnership Act sections 4-6 require an agreement to share business profits with all or any acting for all; status or profit-sharing alone does not establish partnership (https://bdlaws.minlaw.gov.bd/act-157/act-chapter-print-411.html). Do not choose solely on a headline tax rate. Route company setup to [company formation](bd-company-formation.md); the Companies Act defines the separate legal forms (https://bdlaws.minlaw.gov.bd/act-788/section-32006.html, https://bdlaws.minlaw.gov.bd/act-788/section-32025.html).
 2. Obtain taxpayer registration/TIN through the NBR's official e-TIN service linked from https://nbr.gov.bd; use the actual entity identity and documents. The individual e-Return at https://etaxnbr.gov.bd is a filing service, not a substitute for incorporation. Keep the certificate and login under the taxpayer's control.
 3. Obtain the applicable trade licence from the city corporation, paurashava or union parishad. The official investment FAQ describes OSS services for participating city corporations, or the local form, supporting documents/NOC, enquiry and assessed fee route elsewhere. Collect the issued licence and track renewals; no universal fee is asserted (https://investbangladesh.gov.bd/faq).
 4. Open the appropriate business banking arrangement and retain remittance/encashment certificates for export receipts. An account does not by itself prove tax exemption or an incentive award.
-5. Apply [VAT](bangladesh-vat.md) to registration/enlistment, including turnover-independent activity triggers and voluntary registration. Do not use the old turnover amounts or assume every unregistered freelancer is outside all obligations. Preserve the certificate/BIN and effective date.
+5. Apply [VAT](bangladesh-vat.md) to registration/enlistment, including turnover-independent activity triggers and voluntary registration. Do not use the old turnover amounts or assume every unregistered freelancer is outside all obligations. Preserve the certificate/BIN and effective date. Sections 2 and 4 test actual preceding and expected following 12-month turnover, excluding specified amounts: ordinary registration is over BDT 5,000,000 (50 lakh, in words on the page), while section 4 also lists activities requiring registration regardless of turnover (https://bdlaws.minlaw.gov.bd/act-print-1106/section-print-42295.html; https://bdlaws.minlaw.gov.bd/act-print-1106/section-print-42297.html). Section 8 applies the same VAT duties to voluntary registration and bars an application to cancel until at least 1 year has elapsed (https://bdlaws.minlaw.gov.bd/act-1106/section-42301.html).
 6. Online selling needs a separate check of the currently applicable DBID/e-commerce and sector rules. Do not assume that a trade licence replaces every activity permission. Keep this unresolved check in the setup checklist rather than inventing a DBID mandate for all freelancers.
 7. File applicable annual income-tax returns and retain proof of filing using [PIT](bangladesh-pit.md) or corporate tax, as appropriate. TIN, trade licence, VAT and income-tax return are separate obligations.
 
 ## Worked cases
 
-### Documented setup budget
+### Expected turnover triggers registration work
 
-Illustrative authority-assessed licence/registration fees 5,000 and bank/other setup costs 2,000 produce a 7,000 cash budget. These are assumed client-specific assessed costs, not published statutory fees or a promise of total incorporation cost.
+An ordinary taxable domestic business expects BDT 450,000 each month for the following 12 months, all within statutory turnover, with no exempt/excluded value. Expected turnover is 5,400,000, exceeding the 5,000,000 registration threshold by 400,000. Register under section 4 and follow the current Rule 4 application route in [VAT](bangladesh-vat.md); waiting for profit or the first full year would miss the expected-turnover test. Activity-independent triggers must also be tested even below this amount.
 
 ```oa-check
-name: Actual assessed setup costs
+name: Expected taxable turnover exceeds registration threshold
 inputs:
-  assessed_fees: 5000
-  other_setup_costs: 2000
+  monthly_turnover: 450000
+  months: 12
+  registration_threshold: 5000000
 steps:
-  - cash_budget: assessed_fees + other_setup_costs
+  - expected_turnover: monthly_turnover * months
+  - excess: expected_turnover - registration_threshold
 expected:
-  cash_budget: 7000
+  expected_turnover: 5400000
+  excess: 400000
 ```
 
-### Edge: shared capital does not determine entity tax
+### Edge: voluntary registration cannot be cancelled early
 
-Two partners fund a business with 300,000 and 200,000. Record capital 500,000 and shares 60%/40%, derived. The deed and legal registration still determine the vehicle and liability; do not label the partnership a company just because it has shared capital.
+A voluntarily registered business has completed 8 calendar months since registration. Section 8(3)'s minimum 1 year has not elapsed: 4 calendar months remain before it may apply for cancellation. Track the actual registration anniversary, not a guessed day count; reaching that anniversary permits an application and does not automatically cancel the registration or waive the remaining conditions.
 
 ```oa-check
-name: Partners capital reconciliation
+name: Voluntary registration minimum period before cancellation application
 inputs:
-  partner_a: 300000
-  partner_b: 200000
+  minimum_calendar_months: 12
+  completed_calendar_months: 8
 steps:
-  - capital: partner_a + partner_b
-  - share_a: partner_a / capital
-  - share_b: partner_b / capital
+  - remaining_calendar_months: minimum_calendar_months - completed_calendar_months
 expected:
-  capital: 500000
-  share_a: 0.6
-  share_b: 0.4
+  remaining_calendar_months: 4
 ```
 
 ## When to refuse or refer
@@ -86,5 +85,10 @@ Refer partnership deed/registration specifics, online-seller DBID scope, foreign
 | Read for separate company forms and membership definition | https://bdlaws.minlaw.gov.bd/act-788/section-32006.html | 2026-11-14 |
 | Read for company formation | https://bdlaws.minlaw.gov.bd/act-788/section-32025.html | 2026-11-14 |
 | Read for NBR official service links including e-TIN/e-Return | https://nbr.gov.bd/regulations/acts/finance-acts/eng/contents/eng | 2026-11-14 |
+
+| Read for Partnership Act sections 4-6 contractual relationship, profit sharing and agency conditions | https://bdlaws.minlaw.gov.bd/act-157/act-chapter-print-411.html | 2026-11-14 |
+| Read for VAT Act section 2 registration threshold and statutory turnover exclusions | https://bdlaws.minlaw.gov.bd/act-print-1106/section-print-42295.html | 2026-11-14 |
+| Read for VAT Act section 4 actual/expected rolling turnover and independent activity triggers | https://bdlaws.minlaw.gov.bd/act-print-1106/section-print-42297.html | 2026-11-14 |
+| Read for VAT Act section 8 voluntary duties and minimum year before cancellation application | https://bdlaws.minlaw.gov.bd/act-1106/section-42301.html | 2026-11-14 |
 
 Not yet confirmed: Activity-specific DBID/e-commerce duty, local licence fees/renewals, partnership registration details and live registration fields for the individual; these are checks to resolve, not a universal exemption or mandate.

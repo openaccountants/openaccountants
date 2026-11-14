@@ -40,7 +40,7 @@ Prepare accounting evidence and working papers for Bangladesh individuals and sm
 1. Keep client invoices, platform statements (including Upwork/Fiverr), receipts, bank credits and the full statements for every BDT/foreign-currency account. Keep contracts and remittance/encashment certificates for foreign receipts; reconcile gross sales, platform charges, bank charges, exchange differences and net credits. Do not discard certificates or merge domestic/export records.
 2. Record vendor bills, rent/utilities, internet, software subscriptions and other claimed business costs. Separate personal expenses, drawings and equipment/capital expenditure; maintain the asset/depreciation register. No fixed depreciation rate is supplied here.
 3. Retain prior returns, TIN, trade licence, tax-payment records and withholding certificates. Relief/incentive evidence must match the actual scheme. A remittance certificate is evidence, not proof that an export incentive has been approved.
-4. VAT-registered/enlisted persons maintain the prescribed purchase/sale records and issue the applicable invoice. Read [VAT](bangladesh-vat.md) and [e-invoicing](bd-einvoice.md) for Mushak records, invoice content, software/device applicability and return handling. Do not use an ordinary invoice or bank statement as a substitute for compliant VAT evidence (https://nbr.gov.bd/uploads/rules/Authentic_English_Text_VAT_Rules_2016.pdf).
+4. VAT-registered/enlisted persons maintain VAT-6.1 purchase and VAT-6.2 sale records, or VAT-6.2.1 for goods resold without processing, and issue the applicable invoice. Rule 40(1)(bbb) prescribes the ERP records; SRO 125 adds VAT-6.3 to the specified VAT-6.1/6.2/6.2.1 ERP records, distinct from device-notification scope. Read [VAT](bangladesh-vat.md) and [e-invoicing](bd-einvoice.md) for Mushak records, invoice content, software/device applicability and return handling. Do not use an ordinary invoice or bank statement as a substitute for compliant VAT evidence (https://nbr.gov.bd/uploads/rules/Authentic_English_Text_VAT_Rules_2016.pdf).
 5. Tie each working-paper total to source documents and keep a list of unmatched receipts and unsupported expenses. Refer [financial statements](bd-financial-statements.md) for company accounts, audit and filing. Do not destroy records needed for an outstanding proceeding merely because a baseline period has elapsed.
 
 ## Worked cases
@@ -92,6 +92,8 @@ Do not approve an unsupported deduction, credit or incentive. Refer disputed rem
 |---|---|---|
 | Read for section 72A non-company retention and permitted storage forms | https://bdlaws.minlaw.gov.bd/act-1725/section-59432.html | 2026-11-14 |
 | Read for Companies Act section 181 books, vouchers and company retention | https://bdlaws.minlaw.gov.bd/act-788/section-33570.html | 2026-11-14 |
-| Read for VAT Rules 40 and 47 invoice/records and return forms | https://nbr.gov.bd/uploads/rules/Authentic_English_Text_VAT_Rules_2016.pdf | 2026-11-14 |
+| Read for VAT Rules 40-41 prescribed purchase/sale registers, ERP and invoices | https://nbr.gov.bd/uploads/rules/Authentic_English_Text_VAT_Rules_2016.pdf | 2026-11-14 |
+
+| Read for SRO 125 item 10 adding VAT-6.3 to ERP records, effective 1 July 2026 | https://nbr.gov.bd/uploads/sros/VAT_SRO-125.pdf | 2026-11-14 |
 
 Not yet confirmed: Any longer case-specific preservation order, asset-specific depreciation, export cash-incentive qualification, and current device-category notifications. The old unqualified retention estimate is replaced by entity-specific statutory rules.
