@@ -53,7 +53,7 @@ Out of scope, and where it goes:
 | Additional extension on line 4, partnerships and S corporations | 3 months | [Instructions for Form 7004 (Rev. December 2025), Line 4](https://www.irs.gov/pub/irs-pdf/i7004.pdf) |
 | Additional extension on line 4, C corporations and Form 1120-POL filers | 4 months | [Instructions for Form 7004 (Rev. December 2025), Line 4](https://www.irs.gov/pub/irs-pdf/i7004.pdf) |
 | Advance notice before the IRS terminates an extension | at least 10 days | [Instructions for Form 7004 (Rev. December 2025), Termination of extension period](https://www.irs.gov/pub/irs-pdf/i7004.pdf) |
-| Late payment penalty, per month or part month | 0.5% of the unpaid tax (page prints 1/2 of 1%) | [Instructions for Form 7004 (Rev. December 2025), Penalty for late payment of tax](https://www.irs.gov/pub/irs-pdf/i7004.pdf) |
+| Late payment penalty, per month or part month | 0.5% of the unpaid tax (derived: the page prints 1/2 of 1%) | [Instructions for Form 7004 (Rev. December 2025), Penalty for late payment of tax](https://www.irs.gov/pub/irs-pdf/i7004.pdf) |
 | Late payment penalty, maximum | 25% | [Instructions for Form 7004 (Rev. December 2025), Penalty for late payment of tax](https://www.irs.gov/pub/irs-pdf/i7004.pdf) |
 | Failure to file addition, per month or part month | 5% of the unpaid tax, reduced by the failure to pay addition for the same month | [26 U.S.C. 6651(a)(1) and (c)(1)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap68-subchapA-partI-sec6651.htm) |
 | Failure to file addition, maximum | 25% | [26 U.S.C. 6651(a)(1)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap68-subchapA-partI-sec6651.htm) |

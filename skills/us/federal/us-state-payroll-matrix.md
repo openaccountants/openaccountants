@@ -89,7 +89,7 @@ In scope: state unemployment insurance (SUI) wage bases and new employer rates, 
 | Ohio | USD 9,000 | 2.85% (construction 5.85%) | None | [ODJFS contribution rates](https://jfs.ohio.gov/page/CAJM.hl56rs7cilxWeGzd) | `oh-payroll` |
 | Oklahoma | Not confirmed | Not confirmed | None | [OESC](https://oklahoma.gov/oesc.html) |  |
 | Oregon | USD 56,700 | Not confirmed | Paid Leave Oregon: not confirmed | [Oregon Employment Department, 2026 rates](https://www.oregon.gov/employ/businesses/pages/current-tax-rate.aspx) |  |
-| Pennsylvania | USD 10,000 (employer); employee 0.07% on all wages | 3.822% (construction 10.5924%) (page prints .038220 and .105924) | None | [DLI UC yearly tax highlights](https://www.pa.gov/agencies/dli/resources/for-employers-and-educators/how-to-file/uc-tax/yearly-tax-highlights) | `pa-payroll` |
+| Pennsylvania | USD 10,000 (employer); employee 0.07% on all wages | 3.822% (construction 10.5924%) (derived: the page prints .038220 and .105924) | None | [DLI UC yearly tax highlights](https://www.pa.gov/agencies/dli/resources/for-employers-and-educators/how-to-file/uc-tax/yearly-tax-highlights) | `pa-payroll` |
 | Rhode Island | USD 30,800 | 1.00% UI plus 0.21% JDF (1.21%) | TDI 1.1% employee on the first USD 100,000 | [DLT 2026 quick reference](https://dlt.ri.gov/sites/g/files/xkgbur571/files/2025-12/FINAL%202026%20Quick%20Reference.pdf) | `ri-payroll` |
 | South Carolina | Not confirmed | Not confirmed | None | [SC Department of Employment and Workforce](https://dew.sc.gov/) |  |
 | South Dakota | Not confirmed | Not confirmed | None | [SD Department of Labor and Regulation](https://dlr.sd.gov/) |  |
