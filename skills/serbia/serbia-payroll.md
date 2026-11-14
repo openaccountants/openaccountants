@@ -39,8 +39,8 @@ Out of scope here: entrepreneurs paying themselves a personal salary (see serbia
 | Salary tax | 10% | 2026 | [ZPDG Art. 16](https://www.mfin.gov.rs//upload/media/MOq4eO_6aa14ac8c7a47.docx) |
 | Non-taxable salary amount, full-time | RSD 34,221 a month | 2026 | [Law 109/2025, Art. 7, in the ZPDG consolidated text](https://www.mfin.gov.rs/upload/media/MOq4eO_6aa14ac8c7a47.docx) |
 | Non-taxable salary amount from 2027 | RSD 37,369 a month | 2027 | [ZPDG Art. 15a(2) as amended by 80/2026](https://www.mfin.gov.rs/upload/media/MOq4eO_6aa14ac8c7a47.docx) |
-| Employee contributions | PIO 14% + health 5.15% + unemployment 0.75% = 19.9% | 2026 | [ZDOSO Art. 44(2) and (3)](https://www.mfin.gov.rs/upload/media/c59gCf_6aa14bd2e2c04.docx) |
-| Employer contributions | PIO 10% + health 5.15% = 15.15% | 2026 | [ZDOSO Art. 44(2)](https://www.mfin.gov.rs/upload/media/c59gCf_6aa14bd2e2c04.docx) |
+| Employee contributions | PIO 14% + health 5.15% + unemployment 0.75% = 19.9% (total computed) | 2026 | [ZDOSO Art. 44(2) and (3)](https://www.mfin.gov.rs/upload/media/c59gCf_6aa14bd2e2c04.docx) |
+| Employer contributions | PIO 10% + health 5.15% = 15.15% (total computed) | 2026 | [ZDOSO Art. 44(2)](https://www.mfin.gov.rs/upload/media/c59gCf_6aa14bd2e2c04.docx) |
 | Minimum monthly contribution base | RSD 51,297 | from 1 Jan 2026 | [Minister of Finance, Sl. glasnik 112/2025](https://www.mfin.gov.rs/upload/media/nATlw2_69429ec84247a.docx) |
 | Maximum monthly contribution base | RSD 732,820 | from 1 Jan 2026 | [Minister of Finance, Sl. glasnik 112/2025](https://www.mfin.gov.rs/upload/media/mYTnAm_6942704946245.docx) |
 | Maximum annual contribution base | RSD 8,793,840 | 2026 | [Minister of Finance, Sl. glasnik 112/2025](https://www.mfin.gov.rs/upload/media/ZKR4zZ_6942708d56248.docx) |
@@ -52,7 +52,7 @@ Out of scope here: entrepreneurs paying themselves a personal salary (see serbia
 | Jubilee award, not taxed up to | RSD 28,912 | from 1 Feb 2026 | [Government, Sl. glasnik 6/2026; ZPDG Art. 18(1)(9)](https://www.mfin.gov.rs/upload/media/O1eqFP_6981bc02426f9.docx) |
 | Aid on the death of an employee's family member, not taxed up to | RSD 101,194 | from 1 Feb 2026 | [Government, Sl. glasnik 6/2026; ZPDG Art. 18(1)(9a)](https://www.mfin.gov.rs/upload/media/O1eqFP_6981bc02426f9.docx) |
 | Employer-paid voluntary health and pension premiums, not taxed up to | RSD 8,677 a month | from 1 Feb 2026 | [Government, Sl. glasnik 6/2026; ZPDG Art. 21a(2); ZDOSO Art. 13(3)](https://www.mfin.gov.rs/upload/media/O1eqFP_6981bc02426f9.docx) |
-| New-hire refund of salary tax | 65%, 70% or 75% by number of new hires, on salary paid up to 31 Dec 2026 | 2026 | [ZPDG Art. 21v as amended by 109/2025; Law 80/2026 Art. 2](https://www.parlament.gov.rs/upload/archive/files/cir/doc/zakoni/14_saziv/2551-26.doc) |
+| New-hire refund of salary tax | 65%, 70% or 75% by number of new hires, on salary paid up to 31 Dec 2026 | 2026 | [ZPDG Art. 21v, consolidated text](https://www.mfin.gov.rs/upload/media/MOq4eO_6aa14ac8c7a47.docx); [Law 80/2026 Art. 2](https://www.parlament.gov.rs/upload/archive/files/cir/doc/zakoni/14_saziv/2551-26.doc) |
 | New-hire refund of contributions | 65%, 70% or 75%, on salary paid up to 31 Dec 2026 | 2026 | [ZDOSO Art. 45, text up to 109/2025](https://www.mfin.gov.rs/upload/media/JTHpSm_693c0cc4015d4.docx) |
 | Minimum wage | RSD 371 an hour, net of tax and contributions | from 1 Jan 2026 | [Government decision of 11 September 2025](https://www.srbija.gov.rs/vest/en/257386/government-adopts-decision-on-regular-increase-in-minimum-wage.php) |
 | Late payment interest | NBS reference rate plus 10 percentage points, simple | 2026 | [ZPPPA Art. 75](https://www.mfin.gov.rs/upload/media/2UkJa3_6a9fe325297c3.docx) |
