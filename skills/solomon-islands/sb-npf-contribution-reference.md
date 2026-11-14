@@ -13,23 +13,25 @@ description: >
   This is a source-cited draft, not comprehensive jurisdiction acceptance.
 jurisdiction: SB
 category: international
-tax_year: 2024
-tax_year_notes: "Conditional reference to the Act as at 5 February 2024; fictional February 2024 wages, March contribution month; later law and actual application held"
+tax_year: 2026
 tier: 2
-last_updated: 2026-10-28
-version: 0.1
-review_status: pending_review
-verified_by: pending
+last_updated: 2026-11-14
+version: 0.2
 depends_on:
   - workflow-base
   - social-contributions-workflow-base
+type: computation
 ---
 
-# Solomon Islands: ordinary monthly NPF contribution reference v0.1
+# Solomon Islands: ordinary monthly NPF contribution reference v0.2
 
 > **General reference only.** This Tier 2 conditional draft illustrates one contribution component under a dated statutory source. It does not establish actual coverage, a lawful deduction from pay, a complete contribution position or a filing or payment amount. Guide presence, source preparation and passing component checks do not establish comprehensive jurisdiction acceptance.
 
-## Scope and source conditions
+**Answer first.** For an ordinary employee, the employer pays the Solomon Islands National Provident Fund **12.5 cents per complete dollar** of the employee's wages for the preceding month (the standard rate of 12.5%) and may recover **5 cents per complete dollar** (5%) from the employee's wages at the time they are paid, leaving 7.5% as the employer's own share. Cents on each payment occasion are ignored (an occasion under SBD 1 counts as SBD 1), and a half cent on each employee's monthly total is rounded up. No contribution is payable for a month after one in which the employee earned less than **SBD 20.00** or worked fewer than **6 days**. Late contributions carry a surcharge of 2 per centum a month (minimum SBD 2).
+
+**Tax year 2026.** The latest authorised reprint of the Act is version 5, as at 5 February 2024. The Fund's contribution rates page, read on 14 November 2026, states the same rates, so they apply to 2026. Ryan's fictional cases are dated February and March 2024; the same rules give the same results for a 2026 month.
+
+## Scope and who this is for
 
 Load workflow-base and social-contributions-workflow-base in full. Preserve all 4 universal outputs and 18 checks, all 5 social contributions outputs and 12 checks, every mandatory country slot and all shared refusals. A missing applicable source, fact, tool, output or qualified review prevents delivery of an actual financial result. This component supplies none of the missing slots by assumption.
 
@@ -37,17 +39,7 @@ The fictional branch concerns one established employee of one established employ
 
 Monthly and longer pay intervals require the separate section 2 branch for wages due **in respect of** the month. Do not allocate them by simply collecting payment dates, dividing an annual salary or reusing this example branch. Multiple employers, noncash benefits, salary sacrifice, unusual payment arrangements, contractual minimum pay and actual recovery from wages require separate work.
 
-## Primary sources and limits
-
-| Source | Selected proposition and limit |
-|---|---|
-| [L1: Attorney-General, authorised National Provident Fund Act v5](https://attorneygenerals.gov.sb/Download/solomon-islands-national-provident-fund-act-cap-109-v5_as-at-050224/) | Complete 41-page PDF retained, expressly as at 5 February 2024. Selected native text was compared with original pages. Physical pages 5-8, printed 1-4, contain the definitions; pages 14-20, printed 10-16, contain complete sections 13-21; pages 22-24 contain complete sections 25-27; pages 35-38 contain complete sections 49-51; page 39 contains both Schedules. This is not proof of all subsequent amendments, instruments or their application to a person. |
-| [L2: SINPF, contribution rates](https://www.sinpf.org.sb/employers/contribution-rates/) | Public page accessed 28 October 2026 describes standard total 12.5%, employee 5%, employer 7.5% and the 6-day/$20 monthly conditions. Its broad gross-wage summary does not replace L1's payment-occasion precision, scheduled half-cent rule, recovery conditions or exemptions. Its current EDI description does not establish the complete filing rules for the fictional 2024 period. |
-| [L3: Attorney-General, subsidiary legislation index S](https://attorneygenerals.gov.sb/legislation-dashboard/download-info/index-of-subsidiary-legislation-s/) | Complete official workbook retained. Selected sheet S entries identify exemption orders, including the 2020 pandemic order and amendment at rows 524-525. The index is a locator, not the text of those instruments or proof that no other instrument applies. No exemption is inferred or rejected solely from this index. |
-
-The source date controls the primary figures: **2024**. Accessing the sources in 2026 does not prove that the complete 2026 law is unchanged. Obtain and reconcile the applicable amendment and commencement chain, regulations, Board directions, exemptions and agreements before using the mechanics for any actual month.
-
-## Coverage and wage intake
+### Coverage and wage intake
 
 Under L1 section 2, establish the employee and linked employer definitions, rather than relying on a job label or a generic contract-for-services description. Check both Schedules and any section 50(a) order. Section 14 can place liability on a principal in contractor arrangements. The wider definition also contains particular overseas, crew, government and co-operative branches. Those branches are outside this calculation.
 
@@ -61,7 +53,29 @@ For this branch, establish and record:
 4. Raw statutory money wages W and precision-adjusted amount B separately. Retain the original cents. Do not use cash net wages, a PAYE base or the adjusted B as an unexplained substitute for earnings evidence.
 5. Coverage, ordinary threshold treatment, no overriding direction or exemption, no voluntary addition and the basis for any lawful recovery. Missing evidence means Needs Input.
 
-## Rates, precision and calculation
+## Ask the client first
+
+1. **The wage month and the contribution month** (the contribution is on the preceding month's wages).
+2. **Pay frequency and every complete payment occasion** with its pay day and amount; a monthly total alone is not enough for a worker paid more often.
+3. **Days actually worked** in the wage month (fewer than 6 means no contribution).
+4. **Coverage**: employee or contractor, any First Schedule exclusion, section 27 certificate, foreign employer or scheme, Board direction or exemption order.
+5. **Whether the 5% was actually recovered** from those wages when they were paid.
+6. **When the contribution was paid**, for the surcharge.
+
+## The method, step by step
+
+### Rates, bands and thresholds
+
+| Item | Amount or rule | Source |
+|---|---|---|
+| Employer's total monthly contribution | Twelve and one half cents in respect of each complete dollar of the preceding month's wages; a half cent on each employee's monthly total rounded up | [L1, Second Schedule](https://attorneygenerals.gov.sb/Download/solomon-islands-national-provident-fund-act-cap-109-v5_as-at-050224/) |
+| Employee portion the employer may recover | Five cents in respect of each complete dollar of those wages | same |
+| Published rates | Employee 5 %, employer 7.5 %, total 12.5 % | [SINPF, contribution rates](https://www.sinpf.org.sb/employers/contribution-rates/) |
+| Wages for a worker paid more often than monthly | Aggregate of wages due on pay days in the month; cents on each occasion ignored; an occasion under one dollar deemed one dollar | [L1, section 2, "wages"](https://attorneygenerals.gov.sb/Download/solomon-islands-national-provident-fund-act-cap-109-v5_as-at-050224/) |
+| No contribution for the month | Preceding month: earned less than $20.00, or worked fewer than 6 days | [L1, section 13(1) proviso (a)](https://attorneygenerals.gov.sb/Download/solomon-islands-national-provident-fund-act-cap-109-v5_as-at-050224/) |
+| Surcharge on late payment | Two per centum for each month or part month; minimum two dollars; rounded to the next highest multiple of two dollars; Board may remit | [L1, section 16](https://attorneygenerals.gov.sb/Download/solomon-islands-national-provident-fund-act-cap-109-v5_as-at-050224/) |
+
+### Rates, precision and calculation
 
 L1 section 13(1) uses preceding-month wages for the monthly contribution, including the contribution month following termination. Its ordinary proviso removes the contribution where the preceding month earned less than **SBD 20.00** **or** involved fewer than **6 worked days**. A prescribed-employment Board direction can change intervals, calculation, payer and that proviso. Worked days are not the number of payment occasions. Do not turn the $20 condition into a minimum contribution base.
 
@@ -89,7 +103,46 @@ T is the amount the employer owes to the Fund under this component. R is a **rec
 
 Do not calculate 7.5% of unadjusted decimal gross wages and add a separately rounded 5%. Do not round the contribution on each pay day, average payment amounts, reset the rule per earnings line or round only a pooled total for several employees or months. The Schedule rounds **each employee's monthly total**.
 
-## Fictional 2024 examples
+## Worked cases
+
+Two of Ryan's cases, as CI recomputes them (amounts in SBD; T = floor((25 x B + 1) / 2) cents).
+
+**Case 1 (N3), wages of 21.00, 6 days worked.** B = 21 complete dollars. The total is 262.5 cents, rounded up to 263 cents (2.63). The recoverable employee portion is 1.05, leaving 1.58 for the employer if the full 1.05 is lawfully recovered.
+
+```oa-check
+name: Solomon Islands NPF, preceding-month wages 21.00 (2026 rates)
+inputs:
+  wages_dollars: 21
+steps:
+  - total_cents: floor((25 * wages_dollars + 1) / 2)
+  - employee_cents: 5 * wages_dollars
+  - employer_balance_cents: total_cents - employee_cents
+expected:
+  total_cents: 263
+  employee_cents: 105
+  employer_balance_cents: 158
+```
+
+**Case 2 (N5), a decision: drop cents per payment occasion or once a month?** Four weekly occasions of 1,000.60 each. The law ignores cents on each occasion, so B = 4,000 and T = 500.00. Flooring the monthly total (4,002.40) once would give B = 4,002 and an unsupported T = 500.25.
+
+```oa-check
+name: Solomon Islands NPF, four weekly occasions of 1000.60 (2026 rates)
+inputs:
+  occasion: 1000.60
+  occasions: 4
+steps:
+  - b_per_occasion: floor(occasion) * occasions
+  - total_cents: floor((25 * b_per_occasion + 1) / 2)
+  - b_monthly_wrong: floor(occasion * occasions)
+  - total_wrong_cents: floor((25 * b_monthly_wrong + 1) / 2)
+expected:
+  b_per_occasion: 4000
+  total_cents: 50000
+  b_monthly_wrong: 4002
+  total_wrong_cents: 50025
+```
+
+### Ryan's fictional 2024 examples
 
 Every row below stipulates the same ordinary branch and established inputs. Amounts are SBD. The small values are artificial boundary cases, not evidence that pay complies with minimum wages or other employment law. 'Balance' means E only if full lawful R recovery is made. All actual delivery remains held.
 
@@ -121,7 +174,7 @@ Aggregation checks:
 - **A2, separate months:** One otherwise qualifying employee has B = 21 in each of 2 independently established wage months under the same rules. The 2 monthly totals sum to 5.26. Do not recompute a single contribution on B = 42 or infer a carry of half cents between months. This additional fixture stipulates the applicable law for both months; it does not establish it.
 - **A3, one occasion with several wage components:** Qualifying money components of 500.99 and 500.01 due and paid together on one complete occasion total 1001.00. That occasion gives B = 1001, T = 125.13, R = 50.05 and conditional E = 75.08. N6 instead has 2 separate occasions and T = 125.00. Payroll line-item count does not identify the payment occasions.
 
-## Held cases and exact stops
+## When to refuse or refer
 
 Return **Needs Input**, with no dependent financial result, for each unresolved case:
 
@@ -149,7 +202,7 @@ Preserve these topical stops alongside all shared refusals:
 
 No country-specific factual default is authorised. Resolve a legal gap from primary authority, not an answer guessed by the worker or employer.
 
-## Procedure, outputs and verification
+## Filing and payment
 
 The fictional calculation uses the preceding wage month and following contribution month under section 13(1). Actual registration, declarations, EDI/version rules, submission, due-date treatment and payments require the complete applicable procedures. Do not infer a day-specific deadline from the monthly calculation. Section 16's surcharge, minimum, multiples and Board remission require a separate calculation; none is supplied here. Do not use the Income Tax Act's employer NPF exclusion limit as a contribution rate or deduction determination.
 
@@ -165,28 +218,36 @@ All 13 universal country slots remain mandatory. This reference addresses only t
 
 Neither optional regimes nor other payroll, tax, formation, reporting, property, cross-border or compliance topics are completed by this document.
 
-## Revision and disclaimer
+## Completion checklist
+
+- Wage month, contribution month, days worked and coverage recorded.
+- Every payment occasion floored to whole dollars (sub-dollar occasion counted as 1) before adding.
+- T computed once per employee per month, half cent rounded up.
+- Employee recovery only from the same wages when paid.
+- Late payment surcharge flagged.
+
+### Revision and disclaimer
 
 28 October 2026, v0.1: conditional ordinary monthly NPF component using the authorised 5 February 2024 Act, with payment-occasion precision, scheduled monthly total, separately recoverable portion and explicit coverage, procedure, current-law and delivery holds. Tier 2, pending_review and verified_by pending remain.
 
 This document is general reference material and does not constitute tax, legal or financial advice. A qualified professional in the relevant jurisdiction must establish the applicable law and facts and complete and sign off all required outputs before filing, paying, deducting or relying on a result.
 
-<!-- openaccountants-cta-block -->
+## Sources
 
----
+| Source | Read for | URL | Read on |
+|---|---|---|---|
+| L1: National Provident Fund Act (Cap. 109), authorised reprint v5 as at 5 February 2024 | Read for s 2 (wages definition), s 13(1) proviso ($20.00, 6 days), s 16 (surcharge), Second Schedule (12.5 and 5 cents) | https://attorneygenerals.gov.sb/Download/solomon-islands-national-provident-fund-act-cap-109-v5_as-at-050224/ | 2026-11-14 |
+| L2: SINPF, contribution rates | Read for the published rates (5 %, 7.5 %, 12.5 %) and the six-day and $20.00 conditions | https://www.sinpf.org.sb/employers/contribution-rates/ | 2026-11-14 |
+| L3: Attorney-General, subsidiary legislation index S | Read for the exemption orders listed (rows 524-525); not re-read | https://attorneygenerals.gov.sb/legislation-dashboard/download-info/index-of-subsidiary-legislation-s/ | 2026-10-28 (read by Ryan); not read on 2026-11-14 |
 
-## Talk to a verified accountant
+### Ryan's notes on each source (kept)
 
-This guide is maintained in the
-[ryanduguid/openaccountants fork](https://github.com/ryanduguid/openaccountants).
-Check its quality tier, recorded review status and cited sources before use.
-Choose a practitioner whose credentials and engagement scope you have verified.
-The links below are optional upstream services; they do not publish or verify
-this fork's changes.
+| Source | Selected proposition and limit | Read on |
+|---|---|---|
+| [L1: Attorney-General, authorised National Provident Fund Act v5](https://attorneygenerals.gov.sb/Download/solomon-islands-national-provident-fund-act-cap-109-v5_as-at-050224/) | Complete 41-page PDF retained, expressly as at 5 February 2024. Selected native text was compared with original pages. Physical pages 5-8, printed 1-4, contain the definitions; pages 14-20, printed 10-16, contain complete sections 13-21; pages 22-24 contain complete sections 25-27; pages 35-38 contain complete sections 49-51; page 39 contains both Schedules. This is not proof of all subsequent amendments, instruments or their application to a person. | 2026-10-28 (read by Ryan) |
+| [L2: SINPF, contribution rates](https://www.sinpf.org.sb/employers/contribution-rates/) | Public page accessed 28 October 2026 describes standard total 12.5%, employee 5%, employer 7.5% and the 6-day/$20 monthly conditions. Its broad gross-wage summary does not replace L1's payment-occasion precision, scheduled half-cent rule, recovery conditions or exemptions. Its current EDI description does not establish the complete filing rules for the fictional 2024 period. | 2026-10-28 (read by Ryan) |
+| [L3: Attorney-General, subsidiary legislation index S](https://attorneygenerals.gov.sb/legislation-dashboard/download-info/index-of-subsidiary-legislation-s/) | Complete official workbook retained. Selected sheet S entries identify exemption orders, including the 2020 pandemic order and amendment at rows 524-525. The index is a locator, not the text of those instruments or proof that no other instrument applies. No exemption is inferred or rejected solely from this index. | 2026-10-28 (read by Ryan) |
 
-- Upstream connection service: https://www.openaccountants.com/connect
-- Upstream accountant network: https://www.openaccountants.com/network
+The source date controls the primary figures: **2024**. Accessing the sources in 2026 does not prove that the complete 2026 law is unchanged. Obtain and reconcile the applicable amendment and commencement chain, regulations, Board directions, exemptions and agreements before using the mechanics for any actual month.
 
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
+Not yet confirmed: any amendment after 5 February 2024 (no later authorised reprint was found; the SINPF page read on 2026-11-14 shows the same rates, so the figures are used for 2026); the exemption orders in the subsidiary legislation index; the current EDI filing and payment procedure and day-specific due date; the threshold interpretation where raw wages W and adjusted wages B fall on different sides of SBD 20 (held, cases H5 and H6).
