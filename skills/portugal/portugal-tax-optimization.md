@@ -1,16 +1,17 @@
 ---
 name: portugal-tax-optimization
 description: "Utilize esta skill ao aconselhar sobre estratégias LEGAIS de minimização fiscal para contribuintes portugueses no ano fiscal de 2026: particulares, trabalhadores independentes (recibos verdes) e pequenos empresários. Acione com expressões como \"reduzir o meu imposto Portugal\", \"planeamento fiscal\", \"regime simplificado\", \"contabilidade organizada\", \"optimização do IRS\", \"segurança social trabalhador independente\", \"IVA\", \"recibos verdes\", \"Categoria B\", \"deduções Portugal\", ou qualquer questão sobre minimização legal do IRS ou IRC português. Cobre selecção de entidade, regime simplificado vs contabilidade organizada, tributação conjunta, IRS Jovem, deduções à coleta, amortizações, utilização de prejuízos, timing, optimização do IVA, segurança social, PPR, englobamento e linhas vermelhas (cláusula geral anti-abuso). Fora do âmbito, ver: pt-income-tax (cálculo da Categoria B), pt-irs-employees-investment (Categorias A, E, F, G, H), pt-nhr-ifici, pt-social-contributions, portugal-vat-return, pt-corporate-tax, portugal-crypto-tax. LEIA SEMPRE esta skill antes de prestar aconselhamento de optimização fiscal portuguesa. Trigger also on: \"reduce my tax Portugal\", \"tax planning\", \"regime simplificado\", \"organized accounts\", \"IRS optimization\", \"social security self-employed\", \"IVA\", \"recibos verdes\", \"Category B\", \"deductions Portugal\"."
-version: 1.4
+version: 1.5
 jurisdiction: PT
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-14
 depends_on:
   - bookkeeping-workflow-base
 category: tax-optimization
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: tax-optimization
+type: situation-rules
 ---
 
 # Portugal Tax Optimization
@@ -70,21 +71,21 @@ Todos os valores abaixo foram lidos no texto consolidado publicado pela AT no Po
 
 ### Escalões de IRS (2026)
 
-**Escalões de IRS (2026)**: CIRS art. 68.º, n.º 1, na redação da Lei 73-A/2025.
+**Escalões de IRS (2026)**: CIRS art. 68.º, n.º 1, na redação do Decreto-Lei 212/2026, de 4 de novembro (taxas dos escalões 1 a 6 reduzidas para os rendimentos obtidos em 2026, com efeitos desde 1 de janeiro de 2026).
 
 | Escalão | Rendimento coletável (€) | Taxa normal (A) | Taxa média (B) |
 | --- | --- | --- | --- |
-| 1 | Até 8.342 | 12,50% | 12,500% |
-| 2 | Mais de 8.342 até 12.587 | 15,70% | 13,579% |
-| 3 | Mais de 12.587 até 17.838 | 21,20% | 15,823% |
-| 4 | Mais de 17.838 até 23.089 | 24,10% | 17,705% |
-| 5 | Mais de 23.089 até 29.397 | 31,10% | 20,579% |
-| 6 | Mais de 29.397 até 43.090 | 34,90% | 25,130% |
-| 7 | Mais de 43.090 até 46.566 | 43,10% | 26,472% |
-| 8 | Mais de 46.566 até 86.634 | 44,60% | 34,856% |
+| 1 | Até 8.342 | 12,20% | 12,200% |
+| 2 | Mais de 8.342 até 12.587 | 15,20% | 13,212% |
+| 3 | Mais de 12.587 até 17.838 | 20,70% | 15,416% |
+| 4 | Mais de 17.838 até 23.089 | 23,60% | 17,277% |
+| 5 | Mais de 23.089 até 29.397 | 30,60% | 20,136% |
+| 6 | Mais de 29.397 até 43.090 | 34,60% | 24,732% |
+| 7 | Mais de 43.090 até 46.566 | 43,10% | 26,103% |
+| 8 | Mais de 46.566 até 86.634 | 44,60% | 34,658% |
 | 9 | Superior a 86.634 | 48,00% | (não aplicável) |
 
-Como a AT calcula (art. 68.º, n.º 2): o limite do maior escalão que cabe no rendimento é tributado à taxa média (B) desse escalão; o excedente é tributado à taxa normal (A) do escalão seguinte. Exemplo: €35.000 = 29.397 × 20,579% + (35.000 - 29.397) × 34,90% = €8.005,06.
+Como a AT calcula (art. 68.º, n.º 2): o limite do maior escalão que cabe no rendimento é tributado à taxa média (B) desse escalão; o excedente é tributado à taxa normal (A) do escalão seguinte. Exemplo: €35.000 = 29.397 × 20,136% + (35.000 - 29.397) × 34,60% = €7.858,02.
 
 - **Taxa adicional de solidariedade**: 2,5% sobre a parte do rendimento coletável entre €80.000 e €250.000; 5% acima de €250.000 _(CIRS art. 68.º-A, n.os 1 e 2)_
 - **Mínimo de existência (2026)**: valor de referência igual ao maior entre €12.880 e 1,5 × 14 × IAS (€11.279,73), ou seja €12.880 _(CIRS art. 70.º, n.º 1)_. Aplica-se a quem tem rendimentos sobretudo de trabalho, pensões ou atividades da tabela do art. 151.º. A fórmula completa está em `pt-irs-employees-investment`.
@@ -342,9 +343,9 @@ Os exemplos usam os escalões de 2026 e o método do art. 68.º, n.º 2 (taxa m�
 **Freelancer de uma atividade da tabela do art. 151.º, residente, sem outros rendimentos, rendimentos brutos de €50.000 em 2026. Outras despesas reais da atividade (sem a Segurança Social): €8.000, todas em faturas comunicadas. Não está nos dois primeiros anos de atividade.**
 
 1. **Segurança Social** (igual nos dois cenários, para comparar): 70% × 50.000 × 21,4% = €7.490 no ano. A base mensal (35.000 / 12 = €2.916,67) está abaixo do limite de €6.445,56. Em contabilidade organizada a base seria o lucro do ano anterior; o exemplo assume o mesmo valor.
-2. **Regime simplificado:** 50.000 × 0,75 = €37.500. A Segurança Social acima de 10% do bruto deduz-se: 7.490 - 5.000 = €2.490 (art. 31.º, n.º 2). Rendimento tributável €35.010. Regra dos 15%: 15% × 50.000 = €7.500; justificado = 5.000 (maior entre €4.587,09 e a Segurança Social não deduzida de €5.000) + 8.000 = €13.000. Não há acréscimo. IRS: 29.397 × 20,579% + (35.010 - 29.397) × 34,90% = €8.008,55.
-3. **Contabilidade organizada:** 50.000 - 8.000 - 7.490 = €34.510. IRS: 29.397 × 20,579% + (34.510 - 29.397) × 34,90% = €7.834,05.
-4. **Resultado:** a contabilidade organizada poupa €174,50 de IRS antes dos honorários do contabilista certificado. Se os honorários forem superiores, o simplificado ganha. Com Segurança Social acima de 10% do bruto, a contabilidade organizada só baixa o IRS quando as outras despesas reais excedem 15% do bruto (aqui €7.500).
+2. **Regime simplificado:** 50.000 × 0,75 = €37.500. A Segurança Social acima de 10% do bruto deduz-se: 7.490 - 5.000 = €2.490 (art. 31.º, n.º 2). Rendimento tributável €35.010. Regra dos 15%: 15% × 50.000 = €7.500; justificado = 5.000 (maior entre €4.587,09 e a Segurança Social não deduzida de €5.000) + 8.000 = €13.000. Não há acréscimo. IRS: 29.397 × 20,136% + (35.010 - 29.397) × 34,60% = €7.861,48.
+3. **Contabilidade organizada:** 50.000 - 8.000 - 7.490 = €34.510. IRS: 29.397 × 20,136% + (34.510 - 29.397) × 34,60% = €7.688,48.
+4. **Resultado:** a contabilidade organizada poupa €173,00 de IRS antes dos honorários do contabilista certificado. Se os honorários forem superiores, o simplificado ganha. Com Segurança Social acima de 10% do bruto, a contabilidade organizada só baixa o IRS quando as outras despesas reais excedem 15% do bruto (aqui €7.500).
 
 ```oa-check
 name: PT freelancer art. 151, gross 50,000, simplified vs organised accounts, 2026 bands
@@ -356,8 +357,8 @@ inputs:
   coef: 0.75
   specific_deduction: 4587.09
   band5_top: 29397
-  band5_avg: 0.20579
-  band6_rate: 0.349
+  band5_avg: 0.20136
+  band6_rate: 0.346
 steps:
   - ss: gross * ss_share * ss_rate
   - ss_deductible: max(0, ss - 0.10 * gross)
@@ -372,19 +373,19 @@ expected:
   ss: 7490.00
   simplified_taxable: 35010.00
   addback: 0
-  simplified_tax: 8008.55
+  simplified_tax: 7861.48
   organised_taxable: 34510.00
-  organised_tax: 7834.05
-  saving_organised: 174.50
+  organised_tax: 7688.48
+  saving_organised: 173.00
 ```
 
 ### Exemplo 2: Tributação Conjunta vs Separada
 
 **Casal casado. Rendimento coletável do Cônjuge A: €60.000. Cônjuge B: €10.000 (segundo cenário: €0).**
 
-1. **Separada:** A: 46.566 × 26,472% + (60.000 - 46.566) × 44,60% = €18.318,52. B: 8.342 × 12,50% + (10.000 - 8.342) × 15,70% = €1.303,06. Total €19.621,58.
-2. **Conjunta:** 70.000 / 2 = €35.000. Imposto sobre metade: 29.397 × 20,579% + (35.000 - 29.397) × 34,90% = €8.005,06. Vezes dois: €16.010,12. **A tributação conjunta poupa €3.611,46** neste caso.
-3. **Se o Cônjuge B aufere €0:** conjunta: 60.000 / 2 = €30.000; 29.397 × 20,579% + 603 × 34,90% = €6.260,06; vezes dois €12.520,12. Separada: €18.318,52. **A tributação conjunta poupa €5.798,40.**
+1. **Separada:** A: 46.566 × 26,103% + (60.000 - 46.566) × 44,60% = €18.146,69. B: 8.342 × 12,20% + (10.000 - 8.342) × 15,20% = €1.269,74. Total €19.416,43.
+2. **Conjunta:** 70.000 / 2 = €35.000. Imposto sobre metade: 29.397 × 20,136% + (35.000 - 29.397) × 34,60% = €7.858,02. Vezes dois: €15.716,04. **A tributação conjunta poupa €3.700,39** neste caso.
+3. **Se o Cônjuge B aufere €0:** conjunta: 60.000 / 2 = €30.000; 29.397 × 20,136% + 603 × 34,60% = €6.128,02; vezes dois €12.256,04. Separada: €18.146,69. **A tributação conjunta poupa €5.890,65.**
 4. Antes de optar, refazer a comparação com as deduções à coleta e o mínimo de existência (art. 70.º), que o exemplo não inclui: na tributação separada cada cônjuge tem os seus limites, e o limite global do art. 78.º, n.º 7, muda com o rendimento coletável.
 
 ```oa-check
@@ -393,13 +394,13 @@ inputs:
   a_income: 60000
   b_income: 10000
   band1_top: 8342
-  band1_rate: 0.125
-  band2_rate: 0.157
+  band1_rate: 0.122
+  band2_rate: 0.152
   band5_top: 29397
-  band5_avg: 0.20579
-  band6_rate: 0.349
+  band5_avg: 0.20136
+  band6_rate: 0.346
   band7_top: 46566
-  band7_avg: 0.26472
+  band7_avg: 0.26103
   band8_rate: 0.446
 steps:
   - tax_a: round(band7_top * band7_avg + (a_income - band7_top) * band8_rate, 2)
@@ -411,13 +412,13 @@ steps:
   - joint_b_zero: 2 * round(band5_top * band5_avg + (a_income / 2 - band5_top) * band6_rate, 2)
   - saving_b_zero: tax_a - joint_b_zero
 expected:
-  tax_a: 18318.52
-  tax_b: 1303.06
-  separate: 19621.58
-  joint: 16010.12
-  saving_joint: 3611.46
-  joint_b_zero: 12520.12
-  saving_b_zero: 5798.40
+  tax_a: 18146.69
+  tax_b: 1269.74
+  separate: 19416.43
+  joint: 15716.04
+  saving_joint: 3700.39
+  joint_b_zero: 12256.04
+  saving_b_zero: 5890.65
 ```
 
 ### Exemplo 3: Criptoativos Detidos Mais de 365 Dias
@@ -450,9 +451,9 @@ expected:
 **Venda em junho de 2026 da habitação própria e permanente por €300.000, comprada em março de 2025 por €200.000 e usada como domicílio fiscal desde a compra (mais de 12 meses antes da venda, art. 10.º, n.º 5 e)). Sem empréstimo. Outro rendimento coletável do vendedor: €30.000. Sem correção monetária: detida menos de 24 meses (art. 50.º, n.º 1).**
 
 1. Mais-valia €100.000; 50% incluído = €50.000 (art. 43.º, n.º 2 b)). Rendimento coletável passa de €30.000 para €80.000.
-2. IRS sobre €30.000: €6.260,06. IRS sobre €80.000: 46.566 × 26,472% + (80.000 - 46.566) × 44,60% = €27.238,52. Imposto adicional da venda: **€20.978,46**. (Sem taxa de solidariedade: aplica-se só acima de €80.000.)
+2. IRS sobre €30.000: €6.128,02. IRS sobre €80.000: 46.566 × 26,103% + (80.000 - 46.566) × 44,60% = €27.066,69. Imposto adicional da venda: **€20.938,67**. (Sem taxa de solidariedade: aplica-se só acima de €80.000.)
 3. Reinvestir os €300.000 em nova habitação própria e permanente dentro do prazo, declarar a intenção e morar nela no prazo de 12 meses: **€0 de imposto** sobre a venda (art. 10.º, n.os 5 e 6).
-4. Reinvestimento parcial de €200.000 (2/3 do valor de realização): exclui-se a parte proporcional (art. 10.º, n.º 12). Fica tributado 1/3 do ganho: 100.000 / 3 × 50% = €16.666,67 incluídos. IRS sobre €46.666,67: 46.566 × 26,472% + 100,67 × 44,60% = €12.371,85; imposto adicional **€6.111,79**.
+4. Reinvestimento parcial de €200.000 (2/3 do valor de realização): exclui-se a parte proporcional (art. 10.º, n.º 12). Fica tributado 1/3 do ganho: 100.000 / 3 × 50% = €16.666,67 incluídos. IRS sobre €46.666,67: 46.566 × 26,103% + 100,67 × 44,60% = €12.200,02; imposto adicional **€6.072,00**.
 
 ```oa-check
 name: PT main home sale gain 100,000, other income 30,000, full and two-thirds reinvestment, 2026 bands
@@ -463,10 +464,10 @@ inputs:
   reinvested: 200000
   inclusion: 0.50
   band5_top: 29397
-  band5_avg: 0.20579
-  band6_rate: 0.349
+  band5_avg: 0.20136
+  band6_rate: 0.346
   band7_top: 46566
-  band7_avg: 0.26472
+  band7_avg: 0.26103
   band8_rate: 0.446
 steps:
   - gain: sale - cost
@@ -480,19 +481,20 @@ steps:
   - extra_partial: tax_partial - tax_base
 expected:
   included: 50000
-  tax_base: 6260.06
-  tax_with_sale: 27238.52
-  extra_no_reinvest: 20978.46
+  tax_base: 6128.02
+  tax_with_sale: 27066.69
+  extra_no_reinvest: 20938.67
   included_partial: 16666.67
-  tax_partial: 12371.85
-  extra_partial: 6111.79
+  tax_partial: 12200.02
+  extra_partial: 6072.00
 ```
 
 ## Sources
 
 | Source | URL | Read on |
 |---|---|---|
-| CIRS art. 68, IRS bands 2026 (wording of Lei 73-A/2025) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs68.aspx | 2026-10-30 |
+| CIRS art. 68. Read for the 2026 bands in the wording of Decreto-Lei 212/2026 | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs68.aspx | 2026-11-14 |
+| Decreto-Lei 212/2026 of 4 November 2026 (AT copy). Read for the new rates of bands 1 to 6 and their effect from 1 January 2026 on income obtained in 2026 | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Decreto-Lei-212-2026.pdf | 2026-11-14 |
 | CIRS art. 68-A, solidarity surcharge | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs68a.aspx | 2026-10-30 |
 | CIRS art. 69, joint taxation divisor | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs69.aspx | 2026-10-30 |
 | CIRS art. 59, joint taxation option | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs59.aspx | 2026-10-30 |
