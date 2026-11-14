@@ -75,7 +75,7 @@ A weekday flat does not by itself move the person's residence. If the person is 
 | 2026 tariff, zone 3 (taxable EUR 17,800 to 69,878) | (173.10 × z + 2,397) × z + 1,034.87, z = (taxable − 17,799) / 10,000, result rounded down | 2026 | https://www.gesetze-im-internet.de/estg/__32a.html |
 | Prepayments | 10 March, 10 June, 10 September, 10 December; set only if at least EUR 400 a year and EUR 100 a date | 2026 | https://www.gesetze-im-internet.de/estg/__37.html |
 | Art. 15(4) consultation agreement | Applies to 31 December 2027 | 2026 | https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Schweiz/2025-10-16-weiterfuehrung-konsultationsvereinb.pdf?__blob=publicationFile&v=3 |
-| Swiss mandatory ordinary assessment of source-taxed pay | Gross employment income of at least CHF 120,000 | 2026 | See ch-cross-border (QStV art. 9); https://www.fedlex.admin.ch/eli/cc/2018/274/de |
+| Swiss mandatory ordinary assessment of source-taxed pay | Gross employment income of at least CHF 120,000 | 2026 | See ch-cross-border (QStV art. 9); https://www.fedlex.admin.ch/eli/cc/2018/274/de ; https://www.fedlex.admin.ch/filestore/fedlex.data.admin.ch/eli/cc/2018/274/20250101/de/html/fedlex-data-admin-ch-eli-cc-2018-274-20250101-de-html.html |
 
 ## The taxable base
 
