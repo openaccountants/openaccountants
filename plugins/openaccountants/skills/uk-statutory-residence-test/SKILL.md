@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/uk-statutory-residence-test"
   jurisdiction: "GB"
   tax_year: "2026"
-  last_updated: "2026-10-26"
+  last_updated: "2026-11-14"
 ---
 
 # The UK statutory residence test (SRT), tax year 2026/27
@@ -265,29 +265,29 @@ In the check, a `ties_needed` of 5 would mean no number of ties is enough (22 da
 
 | Source | URL | Read on |
 |---|---|---|
-| Finance Act 2013, Schedule 45 (paras 1-56, 109-115) | https://www.legislation.gov.uk/ukpga/2013/29/schedule/45 | 2026-10-24 |
-| HMRC, RDR3 Statutory Residence Test guidance note (updated 11 June 2026) | https://www.gov.uk/government/publications/rdr3-statutory-residence-test-srt/guidance-note-for-statutory-residence-test-srt-rdr3 | 2026-10-24 |
-| HMRC Residence and FIG regime manual, RFIG20720 (deeming rule) | https://www.gov.uk/hmrc-internal-manuals/residence-and-fig-regime-manual/rfig20720 | 2026-10-24 |
-| HMRC Residence and FIG regime manual, RFIG21500 (temporary non-residence) | https://www.gov.uk/hmrc-internal-manuals/residence-and-fig-regime-manual/rfig21500 | 2026-10-24 |
+| Finance Act 2013, Schedule 45 (paras 1-56, 109-115). Read for the automatic tests, sufficient ties test and split year cases. | https://www.legislation.gov.uk/ukpga/2013/29/schedule/45 | 2026-10-24 |
+| HMRC, RDR3 Statutory Residence Test guidance note (updated 11 June 2026). Read for how HMRC applies the test. | https://www.gov.uk/government/publications/rdr3-statutory-residence-test-srt/guidance-note-for-statutory-residence-test-srt-rdr3 | 2026-10-24 |
+| HMRC Residence and FIG regime manual, RFIG20720 (deeming rule). Read for the deeming rule for days. | https://www.gov.uk/hmrc-internal-manuals/residence-and-fig-regime-manual/rfig20720 | 2026-10-24 |
+| HMRC Residence and FIG regime manual, RFIG21500 (temporary non-residence). Read for temporary non-residence. | https://www.gov.uk/hmrc-internal-manuals/residence-and-fig-regime-manual/rfig21500 | 2026-10-24 |
 | Taxation of Chargeable Gains Act 1992, s1M (temporary non-residents) | https://www.legislation.gov.uk/ukpga/1992/12/section/1M | 2026-10-24 |
 | ITTOIA 2005, s845A and s845B (FIG regime claim and qualifying new resident) | https://www.legislation.gov.uk/ukpga/2005/5/section/845B | 2026-10-24 |
-| GOV.UK, Check if you can claim the 4-year foreign income and gains regime | https://www.gov.uk/guidance/check-if-you-can-claim-the-4-year-foreign-income-and-gains-regime | 2026-10-24 |
+| GOV.UK, Check if you can claim the 4-year foreign income and gains regime. Read for the 4-year foreign income and gains regime. | https://www.gov.uk/guidance/check-if-you-can-claim-the-4-year-foreign-income-and-gains-regime | 2026-10-24 |
 | Taxes Management Act 1970, s7, s8 and s59B | https://www.legislation.gov.uk/ukpga/1970/9/section/8 | 2026-10-24 |
-| Finance Act 2009, Schedule 55, paras 3-6 (late filing penalties) | https://www.legislation.gov.uk/ukpga/2009/10/schedule/55 | 2026-10-24 |
-| Finance Act 2007, Schedule 24, para 4 (inaccuracy penalties) | https://www.legislation.gov.uk/ukpga/2007/11/schedule/24/paragraph/4 | 2026-10-24 |
-| GOV.UK, Self Assessment tax returns: deadlines | https://www.gov.uk/self-assessment-tax-returns/deadlines | 2026-10-24 |
-| GOV.UK, Self Assessment tax returns: penalties | https://www.gov.uk/self-assessment-tax-returns/penalties | 2026-10-24 |
-| HMRC interest rates for late and early payments | https://www.gov.uk/government/publications/rates-and-allowances-hmrc-interest-rates-for-late-and-early-payments/rates-and-allowances-hmrc-interest-rates | 2026-10-24 |
+| Finance Act 2009, Schedule 55, paras 3-6 (late filing penalties). Read for the late filing penalties. | https://www.legislation.gov.uk/ukpga/2009/10/schedule/55 | 2026-10-24 |
+| Finance Act 2007, Schedule 24, para 4 (inaccuracy penalties). Read for the inaccuracy penalties. | https://www.legislation.gov.uk/ukpga/2007/11/schedule/24/paragraph/4 | 2026-10-24 |
+| GOV.UK, Self Assessment tax returns: deadlines. Read for the filing deadlines. | https://www.gov.uk/self-assessment-tax-returns/deadlines | 2026-10-24 |
+| GOV.UK, Self Assessment tax returns: penalties. Read for the Self Assessment penalties. | https://www.gov.uk/self-assessment-tax-returns/penalties | 2026-10-24 |
+| HMRC interest rates for late and early payments. Read for the late payment interest rate. | https://www.gov.uk/government/publications/rates-and-allowances-hmrc-interest-rates-for-late-and-early-payments/rates-and-allowances-hmrc-interest-rates | 2026-10-24 |
 | Interpretation Act 1978, s5 and Schedule 1 ("Month" means calendar month) | https://www.legislation.gov.uk/ukpga/1978/30/schedule/1 | 2026-10-24 |
-| HMRC Residence and FIG regime manual, RFIG20960 (whole months) | https://www.gov.uk/hmrc-internal-manuals/residence-and-fig-regime-manual/rfig20960 | 2026-10-24 |
+| HMRC Residence and FIG regime manual, RFIG20960 (whole months). Read for whole months in the 4-year regime. | https://www.gov.uk/hmrc-internal-manuals/residence-and-fig-regime-manual/rfig20960 | 2026-10-24 |
 | Finance Act 2026, Schedule 3 para 3 (age-10 condition in s845B) | https://www.legislation.gov.uk/ukpga/2026/11/schedule/3 | 2026-10-24 |
 | Finance Act 2020, s109 (coronavirus modifications, 2019/20 and 2020/21) | https://www.legislation.gov.uk/ukpga/2020/14/section/109 | 2026-10-24 |
 | Inheritance Tax Act 1984, s6A (long-term UK resident) | https://www.legislation.gov.uk/ukpga/1984/51/section/6A | 2026-10-24 |
-| GOV.UK, Penalties for Making Tax Digital for Income Tax | https://www.gov.uk/guidance/penalties-for-making-tax-digital-for-income-tax | 2026-10-24 |
-| GOV.UK, SA109 Residence and FIG regime etc (page updated 28 September 2026) | https://www.gov.uk/government/publications/self-assessment-residence-remittance-basis-etc-sa109 | 2026-10-24 |
+| GOV.UK, Penalties for Making Tax Digital for Income Tax. Read for the Making Tax Digital penalties. | https://www.gov.uk/guidance/penalties-for-making-tax-digital-for-income-tax | 2026-10-24 |
+| GOV.UK, SA109 Residence and FIG regime etc (page updated 28 September 2026). Read for the SA109 residence pages. | https://www.gov.uk/government/publications/self-assessment-residence-remittance-basis-etc-sa109 | 2026-10-24 |
 
 Not yet confirmed: whether the age-10 condition in ITTOIA 2005 s845B(1)(d), in force from 18 March 2026, also governs claims for 2025/26 (FA 2026 Sch 3 para 3 has no commencement rule of its own; 2026/27 is covered either way).
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-26. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `uk-statutory-residence-test` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/uk-statutory-residence-test. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `uk-statutory-residence-test` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/uk-statutory-residence-test. If neither is available, confirm every figure against the official source pages cited above before relying on it.

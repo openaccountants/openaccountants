@@ -2,19 +2,20 @@
 name: ghana-pit
 description: >
   Use this skill to prepare or review Ghana personal income tax for tax year 2026: employees under PAYE, self-employed people, partners, landlords and investors. It covers residence, the resident bands before and after the Income Tax (Amendment) Act, 2026 (Act 1178) took effect on 1 September 2026, the 25% non-resident rate, personal reliefs, the Modified Taxation Scheme with its GHS 750,000 limit, quarterly instalments, the 30 April return, the ETAX portal and forms DT 103 and DT 104, and interest and penalties. Trigger on "Ghana income tax", "PAYE Ghana", "GRA return", "tax reliefs Ghana", "self-employed Ghana", "Modified Taxation Scheme", "presumptive tax", or any Ghana personal tax request. Employer payroll operation sits in gh-payroll-social; company tax sits in gh-corporate-income-tax.
-version: 1.1
+version: 1.2
 jurisdiction: GH
 category: international
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 depends_on:
   - workflow-base
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
+type: computation
 ---
 
-# Ghana Personal Income Tax v1.1
+# Ghana Personal Income Tax v1.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 

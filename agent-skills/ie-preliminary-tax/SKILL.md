@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/ie-preliminary-tax"
   jurisdiction: "IE"
   tax_year: "2026"
-  last_updated: "2026-10-26"
+  last_updated: "2026-11-14"
 ---
 
 # Ireland preliminary tax for self-assessed individuals, tax year 2026
@@ -31,18 +31,18 @@ See also: `ie-income-tax-form11` (computing the Form 11 liability and the return
 | Item | Rate or amount | Year | Source |
 |---|---|---|---|
 | Preliminary tax due date (not direct debit) | 31 October of the tax year: 31 October 2026 for 2026 | 2026 | s.959AO(1); https://www.irishstatutebook.ie/eli/2012/act/9/enacted/en/print |
-| Safe harbour 1: current year | 90% of the income tax payable for 2026 | 2026 | s.959AO(3)(b)(i); same |
-| Safe harbour 2: preceding year | 100% of the income tax payable for 2025 | 2026 | s.959AO(3)(b)(ii); same |
-| Safe harbour 3: pre-preceding year, direct debit payers only | 105% of the income tax payable for 2024; not available if that was nil, or is taken as nil because the person was not a chargeable person for 2024 | 2026 | s.959AO(3)(b)(iii); same |
-| Preceding or pre-preceding year when not a chargeable person then | Taken as nil | 2026 | s.959AO(4)(a); same |
+| Safe harbour 1: current year | 90% of the income tax payable for 2026 | 2026 | s.959AO(3)(b)(i); https://www.revenue.ie/en/tax-professionals/documents/notes-for-guidance/tca/part41a.pdf |
+| Safe harbour 2: preceding year | 100% of the income tax payable for 2025 | 2026 | s.959AO(3)(b)(ii); https://www.revenue.ie/en/tax-professionals/documents/notes-for-guidance/tca/part41a.pdf |
+| Safe harbour 3: pre-preceding year, direct debit payers only | 105% of the income tax payable for 2024; not available if that was nil, or is taken as nil because the person was not a chargeable person for 2024 | 2026 | s.959AO(3)(b)(iii); https://www.revenue.ie/en/tax-professionals/documents/notes-for-guidance/tca/part41a.pdf |
+| Preceding or pre-preceding year when not a chargeable person then | Taken as nil | 2026 | s.959AO(4)(a); https://www.revenue.ie/en/tax-professionals/documents/notes-for-guidance/tca/part41a.pdf |
 | ROS extension, 2025 Form 11 balance and 2026 preliminary tax | Wednesday 18 November 2026, only if the person both pays and files through ROS | 2026 | https://www.revenue.ie/en/tax-professionals/ebrief/2026/no-0342026.aspx |
 | Balance of 2026 tax (if preliminary tax was sufficient and on time) | Specified return date: 31 October 2027 | 2026 | s.959AO(2), s.959A; https://www.irishstatutebook.ie/eli/2012/act/9/enacted/en/print |
 | Direct debit collection day | 9th of the month, or next working day | 2026 | Collector-General's conditions under s.959AP(1)(b); https://www.revenue.ie/en/tax-professionals/tdm/collection/direct-debit/preliminary-income-tax-direct-debit-guidelines.pdf |
-| Direct debit minimum monthly amount | EUR 10 | 2026 | s.959AP(1)(b) conditions; same |
+| Direct debit minimum monthly amount | EUR 10 | 2026 | s.959AP(1)(b) conditions; https://www.revenue.ie/en/tax-professionals/tdm/collection/direct-debit/preliminary-income-tax-direct-debit-guidelines.pdf |
 | Direct debit: minimum number of instalments in law | None. Finance Act 2025 s.100 deleted s.959AP(2) to (4) (the 3 and 8 equal monthly instalment rule) | 2026 | https://www.irishstatutebook.ie/eli/2025/act/18/section/100/enacted/en/html |
 | Interest on late income tax, USC and Class S | 0.0219% a day, for each day or part of a day, from 1 July 2009 | 2026 | s.1080(2); https://www.revenue.ie/en/tax-professionals/documents/notes-for-guidance/tca/part47.pdf |
-| Late return surcharge, filed within 2 months of the return date | 5% of the tax, capped at EUR 12,695 | 2026 | s.1084(2)(a); same |
-| Late return surcharge, filed 2 months or more late | 10% of the tax, capped at EUR 63,485 | 2026 | s.1084(2)(a); same |
+| Late return surcharge, filed within 2 months of the return date | 5% of the tax, capped at EUR 12,695 | 2026 | s.1084(2)(a); https://www.revenue.ie/en/tax-professionals/documents/notes-for-guidance/tca/part47.pdf |
+| Late return surcharge, filed 2 months or more late | 10% of the tax, capped at EUR 63,485 | 2026 | s.1084(2)(a); https://www.revenue.ie/en/tax-professionals/documents/notes-for-guidance/tca/part47.pdf |
 | PRSI Class S in the 2026 estimate | 4.2375% blended rate for 2026 income (4.2% to 30 September, 4.35% from 1 October 2026); EUR 650 minimum | 2026 | https://www.gov.ie/en/department-of-social-protection/publications/prsi-class-s-rates/ |
 | PRSI Class S in the 2025 balance | 4.125% blended rate for 2025 income | 2025 | same |
 
@@ -188,4 +188,4 @@ Not yet confirmed: (1) whether the 3 and 8 instalment minimums still apply in 20
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-26. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ie-preliminary-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ie-preliminary-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ie-preliminary-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ie-preliminary-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

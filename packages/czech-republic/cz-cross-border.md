@@ -1,17 +1,18 @@
 ---
 name: cz-cross-border
 description: "Hub skill for crossing the Czech border in tax year 2026. Covers tax residence for individuals (domicile or 183 days in the calendar year, Income Tax Act section 2) and companies (seat or place of management, section 17); arriving (no special inbound regime); leaving (no exit tax for individuals; corporate exit tax under section 23g, payable over up to 5 years inside the EU and EEA); non-residents taxed on Czech-source income (section 22); 15% withholding on dividends, interest, royalties and service fees, 35% to non-cooperative states (section 36); the 10% and 1% tax security (section 38e); treaty relief (section 38f). Tax year is the calendar year. Trigger on: moving to the Czech Republic, leaving Czechia, non-resident, expat, exit tax, digital nomad, srážková daň, zajištění daně. Out of scope: self-employed income tax (cz-income-tax), corporate tax (cz-corporate-income-tax), social and health insurance (cz-social-health), VAT (cz-vat-return)."
-version: 0.2
+version: 0.3
 jurisdiction: CZ
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 category: cross-border
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: cross-border
+type: situation-rules
 ---
 
-# Czech Republic: cross-border tax for people and companies (2026) v0.2
+# Czech Republic: cross-border tax for people and companies (2026) v0.3
 
 > **Source-cited draft.** No accountant has reviewed this skill yet. Every figure below comes from the Income Tax Act and the Tax Code as published on zakonyprolidi.cz (versions in force for 2026), financnisprava.gov.cz, cssz.gov.cz and cnb.cz, read on 22 October 2026. It prepares working papers; it is not authority to file or pay.
 
@@ -46,24 +47,24 @@ A resident is taxed on worldwide income. A non-resident is taxed only on Czech-s
 | Item | 2026 figure | Source |
 |---|---|---|
 | Individual income tax, base up to 36 times the average wage | 15% | [ITA § 16(1)](https://www.zakonyprolidi.cz/cs/1992-586) |
-| Individual income tax, base above 36 times the average wage | 23% | ITA § 16(1) |
-| Average wage for 2026 (tax purposes use the social insurance figure, ITA § 21g(2)) | CZK 48,967 (general assessment base 2024 of CZK 46,278 × coefficient 1.0581, rounded up) | [Act 589/1992 § 23b(4)](https://www.zakonyprolidi.cz/cs/1992-589); [Government Regulation 365/2025 § 1](https://www.zakonyprolidi.cz/cs/2025-365) |
-| 23% threshold for 2026 | CZK 1,762,812 (36 × 48,967) | computed from the two rows above |
+| Individual income tax, base above 36 times the average wage | 23% | ITA § 16(1); https://e-sbirka.gov.cz/sb/1992/586/2026-08-01 |
+| Average wage for 2026 (tax purposes use the social insurance figure, ITA § 21g(2)) | CZK 48,967 (general assessment base 2024 of CZK 46,278 × coefficient 1.0581, rounded up) | [Act 589/1992 § 23b(4)](https://e-sbirka.gov.cz/sb/1992/589); [Government Regulation 365/2025 § 1](https://e-sbirka.gov.cz/sb/2025/365); [ČSSZ, key figures for 2026](https://www.cssz.gov.cz/-/prehled-nejdulezitejsich-udaju-pro-socialni-zabezpeceni-v-roce-2026) |
+| 23% threshold for 2026 | CZK 1,762,812 (36 × 48,967) | computed from the two rows above; https://e-sbirka.gov.cz/sb/1992/586/2026-08-01; https://www.cssz.gov.cz/-/prehled-nejdulezitejsich-udaju-pro-socialni-zabezpeceni-v-roce-2026 |
 | Basic taxpayer credit (sleva na poplatníka), residents and non-residents | CZK 30,840 a year | ITA § 35ba(1)(a) and (2); [Finanční správa](https://financnisprava.gov.cz/cs/dane/dane/dan-z-prijmu/fyzicke-osoby/obecne-informace) |
-| Spouse credit, disability credits, ZTP/P credit and child benefit for a non-resident | Only if resident in the EU or EEA and at least 90% of world income is Czech-source | ITA § 35ba(2) (credits), § 35c(5) (child benefit); Finanční správa |
-| Special inbound regime for new arrivals | None in the ITA; arrivals are taxed under the normal rules | ITA (no such provision) |
-| Exit tax, individuals | None | ITA § 23g applies to corporate taxpayers only |
+| Spouse credit, disability credits, ZTP/P credit and child benefit for a non-resident | Only if resident in the EU or EEA and at least 90% of world income is Czech-source | ITA § 35ba(2) (credits), § 35c(5) (child benefit); Finanční správa; https://e-sbirka.gov.cz/sb/1992/586/2026-08-01 |
+| Special inbound regime for new arrivals | None in the ITA; arrivals are taxed under the normal rules | ITA (no such provision); https://e-sbirka.gov.cz/sb/1992/586/2026-08-01 |
+| Exit tax, individuals | None | ITA § 23g applies to corporate taxpayers only; https://e-sbirka.gov.cz/sb/1992/586/2026-08-01 |
 | Corporate income tax rate (also applies to the corporate exit charge) | 21% | [ITA § 21(1)](https://www.zakonyprolidi.cz/cs/1992-586) |
-| Withholding tax on dividends and other profit shares paid to a non-resident | 15% | ITA § 36(1)(b) and (2) |
-| Withholding tax on interest paid to a non-resident | 15% | ITA § 36(1)(b) |
-| Withholding tax on royalties, services in Czechia, independent professional and artists' fees, board fees paid to a company | 15% | ITA § 36(1)(a)(1), with § 22(1)(c), (f) and (g)(1), (2), (6) |
-| Board fees paid to a non-resident individual | Not under § 36: taxed as employment income through payroll; a return is required if they exceed 36 times the average wage | ITA § 22(1)(g)(15), § 38g(6) |
-| Withholding on the above to a resident of a state outside the EU and EEA with no tax treaty and no tax information exchange agreement in force | 35% | ITA § 36(1)(c) |
-| Withholding on finance lease payments | 5% | ITA § 36(1)(d) |
-| Tax security (zajištění daně) on other Czech-source income of non-EU and non-EEA residents | 10% of the payment | ITA § 38e(1)(c) and (2)(c) |
-| Tax security on bond redemptions, sales of investment instruments and payments on assigned receivables | 1% | ITA § 38e(1)(a), (b) and (2)(a), (b) |
-| Rental expense lump sum (individuals) | 30% of rent, at most CZK 600,000 | ITA § 9(4) |
-| Late payment interest (úrok z prodlení) | CNB repo rate on the first day of the half-year plus 8 points: 11.50% for 1 January to 30 June 2026 (repo 3.50%), 11.75% for 1 July to 31 December 2026 (repo 3.75% from 19 June 2026) | [Tax Code § 252(4) and § 251a(5)](https://www.zakonyprolidi.cz/cs/2009-280); [Government Regulation 351/2013 § 2](https://www.zakonyprolidi.cz/cs/2013-351); [CNB repo history](https://www.cnb.cz/cs/faq/vyvoj_repo_historie.txt) |
+| Withholding tax on dividends and other profit shares paid to a non-resident | 15% | ITA § 36(1)(b) and (2); https://e-sbirka.gov.cz/sb/1992/586/2026-08-01 |
+| Withholding tax on interest paid to a non-resident | 15% | ITA § 36(1)(b); https://e-sbirka.gov.cz/sb/1992/586/2026-08-01 |
+| Withholding tax on royalties, services in Czechia, independent professional and artists' fees, board fees paid to a company | 15% | ITA § 36(1)(a)(1), with § 22(1)(c), (f) and (g)(1), (2), (6); https://e-sbirka.gov.cz/sb/1992/586/2026-08-01 |
+| Board fees paid to a non-resident individual | Not under § 36: taxed as employment income through payroll; a return is required if they exceed 36 times the average wage | ITA § 22(1)(g)(15), § 38g(6); https://e-sbirka.gov.cz/sb/1992/586/2026-08-01 |
+| Withholding on the above to a resident of a state outside the EU and EEA with no tax treaty and no tax information exchange agreement in force | 35% | ITA § 36(1)(c); https://e-sbirka.gov.cz/sb/1992/586/2026-08-01 |
+| Withholding on finance lease payments | 5% | ITA § 36(1)(d); https://e-sbirka.gov.cz/sb/1992/586/2026-08-01 |
+| Tax security (zajištění daně) on other Czech-source income of non-EU and non-EEA residents | 10% of the payment | ITA § 38e(1)(c) and (2)(c); https://e-sbirka.gov.cz/sb/1992/586/2026-08-01 |
+| Tax security on bond redemptions, sales of investment instruments and payments on assigned receivables | 1% | ITA § 38e(1)(a), (b) and (2)(a), (b); https://e-sbirka.gov.cz/sb/1992/586/2026-08-01 |
+| Rental expense lump sum (individuals) | 30% of rent, at most CZK 600,000 | ITA § 9(4); https://e-sbirka.gov.cz/sb/1992/586/2026-08-01 |
+| Late payment interest (úrok z prodlení) | CNB repo rate on the first day of the half-year plus 8 points: 11.50% for 1 January to 30 June 2026 (repo 3.50%), 11.75% for 1 July to 31 December 2026 (repo 3.75% from 19 June 2026; computed: repo plus 8 points) | [Tax Code § 252(4) and § 251a(5)](https://e-sbirka.gov.cz/sb/2009/280); [Government Regulation 351/2013 § 2](https://e-sbirka.gov.cz/sb/2013/351); [CNB repo history](https://www.cnb.cz/cs/faq/vyvoj_repo_historie.txt) |
 
 The tax is computed on the base after deductions, rounded down to whole hundreds of CZK, as the sum of each slice times its rate (ITA § 16(2)).
 
@@ -212,5 +213,7 @@ expected:
 | Finanční správa, Fyzické osoby: obecné informace (residence, filing dates, credits for non-residents) | https://financnisprava.gov.cz/cs/dane/dane/dan-z-prijmu/fyzicke-osoby/obecne-informace | 2026-10-22 |
 | Czech National Bank, two-week repo rate history | https://www.cnb.cz/cs/faq/vyvoj_repo_historie.txt | 2026-10-22 |
 | ČSSZ, Vyslaní pracovníci (posting, A1, Regulation 883/2004) | https://www.cssz.gov.cz/vyslani-pracovnici | 2026-10-22 |
+| Read for Individual income tax, base above 36 times the average wage, 23% threshold for 2026, Spouse credit, disability credits, ZTP/P credit and child benefit for a non-resident, Special inbound regime for new arrivals: e-sbirka.gov.cz | https://e-sbirka.gov.cz/sb/1992/586/2026-08-01 | 2026-11-14 |
+| Read for the 2026 average wage behind the top-rate threshold (CZK 48,967): www.cssz.gov.cz | https://www.cssz.gov.cz/-/prehled-nejdulezitejsich-udaju-pro-socialni-zabezpeceni-v-roce-2026 | 2026-11-14 |
 
 Not yet confirmed: the exact filing dates for the 2026 return (in 2027), which the Financial Administration had not published on the page read; registration duties for an arriving self-employed person or a foreign company (Tax Code § 125 and following, not read); the rounding of the final tax to whole koruna (Tax Code § 146, not read); the 25% ownership threshold and other conditions for the EU interest and royalty exemption in ITA § 19 (only summarised here); individual treaty rates and relief methods.

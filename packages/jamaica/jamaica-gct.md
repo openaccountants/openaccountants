@@ -1,306 +1,253 @@
 ---
 name: jamaica-gct
-description: Use this skill whenever asked to prepare, review, or classify transactions for a Jamaica GCT (General Consumption Tax) return (Form GCT-R) for any client. Trigger on phrases like "prepare GCT return", "Jamaica VAT", "GCT return", "TAJ filing", or any request involving Jamaica consumption tax filing. This skill covers standard GCT-registered businesses only. Free-zone entities and approved farmer/manufacturer schemes are in the refusal catalogue. ALWAYS read this skill before touching any Jamaica GCT work.
-version: 2.0
+description: >
+  Jamaica General Consumption Tax (GCT) for 2026, for registered taxpayers
+  preparing or reviewing the monthly Form 4A standard return. Covers the 15%
+  standard rate (from April 2020), 25% on telephone services and instruments, the
+  7% residential electricity line, the J$15,000,000 registration threshold from 1
+  April 2025, zero-rated exports, exempt supplies, imported services by reverse
+  charge, input tax credit rules (50% on entertainment and motor vehicle costs,
+  capital goods over 24 months, apportionment above 5% exempt supplies), tax
+  invoices, the return due by the last day of the following month and the
+  registration penalties. Trigger on Jamaica GCT, Jamaica VAT, Form 4A, GCT return,
+  TAJ GCT, GCT registration threshold. Built from Tax Administration Jamaica pages;
+  not reviewed by an accountant.
+version: 3.0
 jurisdiction: JM
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+category: international
 tier: 2
 domain: vat-gst
+type: situation-rules
 ---
 
-# Jamaica Gct
+# Jamaica General Consumption Tax (GCT) v3.0
 
-## Section 1 — Quick reference
+> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
-**Quick reference fields**
+## Who this applies to
 
-| Field | Value |
-| --- | --- |
-| Country | Jamaica |
-| Standard rate | 15% |
-| Special rate | 25% (telephone services and handsets) |
-| Zero rate | Exports, international transport, supplies to diplomats, certain agricultural inputs, supplies to free-zone entities |
-| Exempt supplies | Unprocessed agricultural produce, basic food items (flour, rice, cornmeal, chicken backs/necks), medical/dental services, education, financial services (interest, life insurance), residential rental, public transport, water/electricity (domestic thresholds), petroleum (subject to SCT) |
-| Return form | GCT-R |
-| Filing portal | https://www.jamaicatax.gov.jm |
-| Authority | Tax Administration Jamaica (TAJ) |
-| Currency | JMD (Jamaican Dollar) |
-| Filing frequency | Monthly (standard); bi-monthly (approved small taxpayers) |
-| Deadline | 25th of month following period |
-| Registration threshold | JMD 15,000,000 annual taxable supplies |
-| Contributor | Open Accountants Skills Registry |
-| Validation date | Pending |
+Persons carrying on a taxable activity in Jamaica in 2026 under the General Consumption Tax Act, administered by Tax Administration Jamaica (TAJ). A taxable activity is the supply of goods and services, including services imported into Jamaica, carried on continuously or regularly, for consideration, whether or not for profit. Amounts are J$.
 
-**Key GCT-R lines**
+| Status | Who | Effect |
+|---|---|---|
+| Registered Taxpayer | Gross value of supplies of J$15,000,000 or more over 12 months (or an average of J$1,250,000 a month for a shorter period), or registered voluntarily | Charges GCT, files Form 4A, claims input tax; receives a Certificate of Registration |
+| Registered Person | Below the threshold | Notice of Registration only; may not charge GCT; pays GCT on purchases with no credit |
 
-| Line | Meaning |
-| --- | --- |
-| 1 | Taxable supplies at 15% (net) |
-| 2 | GCT on taxable supplies (output) |
-| 3 | Zero-rated supplies |
-| 4 | Exempt supplies |
-| 5 | Total supplies |
-| 6 | GCT on imports (customs C78) |
-| 7 | Total output tax (2+6) |
-| 8 | Input GCT on local purchases |
-| 9 | Input GCT on imports (C78) |
-| 10 | Total input tax (8+9) |
-| 11 | Adjustments (blocked/apportioned) |
-| 12 | Net input tax claimable (10-11) |
-| 13 | Net GCT payable/refundable (7-12) |
-| 14 | Credit brought forward |
-| 15 | Net amount payable/refundable (13-14) |
+Mixed activities count exempt supplies in the gross value for the threshold test.
 
-**Conservative defaults**
-
-| Ambiguity | Default |
-| --- | --- |
-| Unknown rate on a sale | 15% |
-| Unknown GCT status of a purchase | Not deductible |
-| Unknown counterparty country | Domestic Jamaica |
-| Unknown business-use proportion | 0% recovery |
-| Unknown blocked-input status | Blocked |
-
-**Red flag thresholds**
-
-| Threshold | Value |
-| --- | --- |
-| HIGH single-transaction size | JMD 500,000 |
-| HIGH tax-delta on a single conservative default | JMD 50,000 |
-| MEDIUM counterparty concentration | >40% of output OR input |
-| MEDIUM conservative-default count | >4 |
-| LOW absolute net GCT position | JMD 1,000,000 |
-
-## Section 2 — Required inputs and refusal catalogue
-
-### Required inputs
-
-- **Minimum viable** — bank statement for the period. Acceptable from: NCB, Scotiabank Jamaica, JMMB, Sagicor Bank, First Global Bank, CIBC FirstCaribbean, or any other.
-- **Recommended** — tax invoices, customs entries (C78), withholding certificates.
-- **Ideal** — complete sales and purchase records, prior GCT-R, credit balance reconciliation.
+- **In:** standard registered businesses filing Form 4A.
+- **Out (refer):** approved tourism activities (Form 4D), general insurance (Form 4E), Special Consumption Tax goods (Form 4C), GCT groups (Form 4H), Special Economic Zone entities, approved farmers or manufacturers claiming relief or deferment. Non-registered persons accounting for imported services or one-off events use Form 4G.
 
 ### Refusal catalogue
 
-- **R-JM-1 — Below registration threshold** — Below mandatory GCT registration threshold. (Trigger: turnover below JMD 15,000,000 and not voluntarily registered.)
-- **R-JM-2 — Free-zone entity** — Free-zone benefits require valid licence. Escalate. (Trigger: client operates in a Special Economic Zone.)
-- **R-JM-3 — Approved farmer/manufacturer** — Confirm TAJ approved status before applying GCT relief. (Trigger: client claims approved status.)
-- **R-JM-4 — Partial exemption** — Apportionment required. Flag for reviewer. (Trigger: mixed taxable/exempt.)
-- **R-JM-5 — Tourism sector concessions** — Tourism sector has multiple overlapping levies. Flag for reviewer. (Trigger: hotel/tourism operator claiming special treatment.)
+- **R-JM-1, below the threshold and not registered.** No Form 4A; the person cannot charge GCT.
+- **R-JM-2, Special Economic Zone entity.** Escalate; reliefs depend on the licence.
+- **R-JM-3, approved farmer, manufacturer or deferment approval.** Confirm the TAJ approval before applying any relief.
+- **R-JM-4, tourism activity licensed under the Tourist Board Act.** Form 4D; refer.
+- **R-JM-5, general insurance.** Form 4E; refer.
 
-## Section 3 — Supplier pattern library
+## Rates, bands and thresholds
 
-### 3.1 Banks (fees taxable, interest exempt)
+| Item | Amount | Conditions | Source |
+|---|---|---|---|
+| Standard rate | 15% | In force from April 2020 (16.5% from June 2012 to March 2020) | TAJ, General Consumption Tax guide, history of the standard rate: https://www.jamaicatax.gov.jm/general-consumption-tax1 |
+| Telephone services, telephone instruments and telephone cards | 25% | Specified rate under the Act | same |
+| Zero rate | 0% | First Schedule supplies, including exports with a customs certificate of exportation | same |
+| Registration threshold | J$15,000,000 gross supplies over 12 months, or J$1,250,000 a month average for a shorter period | Effective 1 April 2025; exempt supplies count in a mixed activity | same |
+| Penalty, failure to apply for registration | J$5,000 (individual), J$10,000 (company), plus interest of two and one-half percent (2 ½%) a month on the tax for the unregistered period | Person liable to register as a Registered Taxpayer | same |
+| Capital goods, full credit in the period | Consideration of J$100,000 or less, or exports at least 25% of manufactures (or US$416,666.67 equivalent) | Otherwise the credit is spread over 24 months | same |
+| Restricted credit | 50% of input tax on restaurant, club and catering services, entertainment, motor vehicle expenses, leasing private motor vehicles, and services from a tourism activity | Business use | same |
+| Motor car purchased for the taxable activity | 7% of cost, cost capped at the J$ equivalent of US$35,000, over 24 months | Private motor car | same |
+| Other motor vehicle purchased | 14% of cost, over 24 months | Not a private motor car | same |
+| Advance GCT at the port | 5% of the value of goods imported for resale by a registered importer | Prepayment of output tax, claimed as input tax; not passed on to customers | same |
+| Records | Kept at least 6 years from the end of the taxable period | All registered taxpayers | same |
+| Tax invoice | Issued within 7 days of the supply | Supplies to other registered taxpayers | same |
+| Return due, Form 4A | On or before the last day of the month after the return period | Standard return | TAJ, GCT forms page: https://www.jamaicatax.gov.jm/general-consumption-tax |
+| Return due, payments basis | Within 15 days after the taxable period | Approved payments (cash) basis | TAJ, General Consumption Tax guide: https://www.jamaicatax.gov.jm/general-consumption-tax1 |
+| Residential electricity (power supply) | 7% output tax line | Section C2 of Form 4A, by residential customer type | TAJ, Form 4A (revised 3 June 2025): https://www.jamaicatax.gov.jm/documents/10194/18006/GCT+Form+4A+amended+03.06.2025+%28002%29.pdf/b2428c2a-346f-6eeb-0b18-550ec5b60d72 |
+| Apportionment trigger | Exempt supplies above 5% of total supplies | Complete Section D1 | same |
 
-**Banks pattern table**
+TAJ's guide still prints 16.5% in its older narrative paragraphs; its rate history table gives 15% from April 2020, which is the rate applied here.
+
+## The base
+
+### Supplies and value
+
+- **Value of a supply** for money is the consideration excluding GCT; for part-money consideration or a connected-person buyer, open market value; with no consideration, the cost to the registered taxpayer.
+- **Imports of goods**: GCT is collected by Customs on the customs value plus duty, additional stamp duty and Special Consumption Tax. A non-registered commercial importer bears an uplift instead of advance GCT; no importer bears both.
+- **Imported services**: a registered taxpayer self-assesses (reverse charge) on Form 4A lines 20 and 21, and may claim the input tax at line 35 if the service is for taxable supplies.
+- **Exports** are zero-rated when the customs export documents are held.
+- **Exempt supplies** (Third Schedule): no GCT charged and no input credit on related purchases.
+- **Time of supply** (invoice basis): the earliest of invoice, delivery or payment. The payments basis is available on written approval for general insurance, professional services, telephone service and commercial rental.
+- **Own use**: goods given away, taken for personal use or diverted to an exempt activity are output tax; prepare a tax invoice marked "Own Use".
+
+### Tax invoice contents
+
+The words "Tax Invoice"; date; serial number; supplier name, address and GCT registration number; buyer name and address; quantity and description; consideration; rate and amount of tax; total including GCT. One tax invoice per supply; a replacement is marked "COPY". Credit and debit notes adjust output or input tax.
+
+### Form 4A, line by line (revision of 3 June 2025)
+
+| Lines | Content |
+|---|---|
+| 6 | Total supplies for the period, excluding imported services |
+| 7, 8, 9, 10 | Exempt, export and other zero-rated supplies, and their total |
+| 11 | Taxable supplies at a positive rate (6 minus 10) |
+| 12, 13 | Supplies to tax withholding entities (TWEs) at the standard rate, and GCT |
+| 14, 15 | Supplies to other entities at the standard rate, and GCT |
+| 16 to 19 | Supplies at other rates (Section C1, and C2 power supply), to TWEs and others |
+| 20, 21 | Imported services and GCT on them |
+| 22, 23 | GCT deferred; GCT on goods for exempt activities, personal use and other adjustments |
+| 24 | Total output tax (13, 15, 17, 19, 21, 22, 23) |
+| 25 to 28 | Purchases and expenses that qualify for credit: imported goods, local purchases, local expenses |
+| 29 | GCT on local purchases and expenses that qualify |
+| 30 to 32 | GCT paid or deferred on imports that qualifies |
+| 33 | GCT on capital goods, if not in 32 |
+| 34 | GCT withheld by TWEs (claim only on an e-filed return) |
+| 35 | GCT on imported services that qualifies |
+| 36, 37 | Adjustments; total input tax (29, 32, 33, 34, 35, 36) |
+| 38 | GCT payable or creditable (24 minus 37) |
+| 39, 40 | Balance brought forward; total payable or creditable |
+| 41, 42, 43 | JPS subsidy line; GCT paid this period; refund or credit choice if 38 is negative |
+
+Where exempt supplies exceed 5% of total supplies, Section D1 apportions input tax by the taxable share. Do not take a credit for a refund requested but not yet received.
+
+### Conservative defaults
+
+| Ambiguity | Default |
+|---|---|
+| Unknown rate on a sale | 15% |
+| Unknown GCT status of a purchase | No credit |
+| Unknown counterparty country | Domestic |
+| Unknown business-use share | No credit |
+| Entertainment, restaurant, motor vehicle running cost | 50% credit at most |
+
+### Red flags for review
+
+| Flag | Level |
+|---|---|
+| Single transaction over J$500,000, or a single default moving tax by over J$50,000 | High |
+| One counterparty over 40% of output or input, or more than 4 defaults used | Medium |
+| Net GCT position over J$1,000,000 | Low |
+
+### Supplier pattern library
 
 | Pattern | Treatment | Notes |
-| --- | --- | --- |
-| NCB, NATIONAL COMMERCIAL BANK | 15% for fees; EXCLUDE for interest |  |
-| SCOTIABANK, JMMB, SAGICOR BANK | Same |  |
-| FIRST GLOBAL, CIBC FIRSTCARIBBEAN | Same |  |
-
-### 3.2 Government (exclude)
-
-**Government pattern table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| TAJ, TAX ADMINISTRATION JAMAICA | EXCLUDE | Tax payment |
-| NIS, NHT, EDUCATION TAX | EXCLUDE | Statutory deductions |
-| CUSTOMS, JAMAICA CUSTOMS | EXCLUDE for duty; check GCT on imports |  |
-
-### 3.3 Utilities
-
-**Utilities pattern table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| JPS, JAMAICA PUBLIC SERVICE | Domestic 15% (commercial) | Electricity |
-| NWC, NATIONAL WATER COMMISSION | Exempt (domestic threshold) or 15% | Check threshold |
-| FLOW, DIGICEL | 25% (telephone) or 15% (internet) | Telephone at 25%; internet at 15% |
-
-### 3.4 Insurance
-
-**Insurance pattern table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| SAGICOR LIFE, GUARDIAN LIFE | EXCLUDE | Life insurance exempt |
-| GENERAL INSURANCE, ADVANTAGE GENERAL | Domestic 15% | General insurance taxable |
-
-### 3.5 SaaS non-resident (reverse charge)
-
-**SaaS non-resident pattern table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| GOOGLE, MICROSOFT, ADOBE, META | Reverse charge 15% | Self-assess output/input |
-| ZOOM, SLACK, NOTION, ANTHROPIC, OPENAI | Reverse charge 15% | Same |
-
-### 3.6 Food and entertainment (blocked)
-
-**Food and entertainment pattern table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| HI-LO, LOSHUSAN, MEGAMART, PRICESMART | Default BLOCK | Personal provisioning |
-| RESTAURANT | Default BLOCK | Entertainment |
-
-### 3.7 Fuel
-
-**Fuel pattern table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| PETCOM, SHELL, TOTAL | No GCT (subject to SCT) | Petroleum |
-
-### 3.8 Internal transfers
-
-**Internal transfers pattern table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| OWN TRANSFER, INTERNAL | EXCLUDE |  |
-| SALARY, WAGES, PAYE | EXCLUDE |  |
-
-## Section 4 — Worked examples
-
-### Example 1 — Non-resident reverse charge (CARICOM consulting)
-
-**Input:** `TRINIDAD CONSULTING LTD ; DEBIT ; JMD 310,000`
-**Treatment:** Reverse charge 15%. Output = JMD 46,500. Input = JMD 46,500. Net zero.
-
-### Example 2 — Standard domestic sale
-
-**Input:** `ABC JAMAICA LTD ; CREDIT ; JMD 575,000`
-**Treatment:** Net = 500,000. GCT = 75,000. Line 1/2.
-
-### Example 3 — Entertainment, blocked
-
-**Input:** `RESTAURANT CHEZ MARIE ; DEBIT ; JMD 23,000`
-**Treatment:** GCT of JMD 3,000 blocked. No input credit.
-
-### Example 4 — Export
-
-**Input:** `US BUYER INC ; CREDIT ; JMD 500,000`
-**Treatment:** Line 3. Zero-rated. Full input credit.
-
-### Example 5 — Motor car, blocked
-
-**Input:** `AUTOMOTORS JA LTD ; DEBIT ; sedan ; JMD 5,000,000`
-**Treatment:** GCT JMD 750,000 blocked. No input credit.
-
-### Example 6 — Telephone service at 25%
-
-**Input:** `DIGICEL ; DEBIT ; phone service ; JMD 12,500`
-**Treatment:** Net = 10,000. GCT = 2,500 at 25%. Input credit allowed if business line.
-
-## Section 5 — Tier 1 classification rules (compressed)
-
-### 5.1 Standard rate 15%
-
-- **Standard rate 15%** — Default for all taxable supplies. Sales Line 1/2. Purchases Line 8.
-
-### 5.2 Telephone rate 25%
-
-- **Telephone rate 25%** — Telephone services and handsets. Sales at 25%.
-
-### 5.3 Zero-rated
-
-- **Zero-rated** — Exports, international transport, diplomatic supplies, approved agricultural inputs, free-zone supplies.
-
-### 5.4 Exempt (Second Schedule)
-
-- **Exempt (Second Schedule)** — Basic food items, medical/dental, education, financial interest, life insurance, residential rental, public transport, domestic water/electricity, petroleum.  _(Second Schedule)_
-
-### 5.5 Reverse charge (Section 4A)
-
-- **Reverse charge (Section 4A)** — Services from non-residents. Self-assess 15%.  _(Section 4A)_
-
-### 5.6 Blocked input GCT (Section 16(2), 17)
-
-- **Blocked input GCT (Section 16(2), 17)** — Entertainment, motor cars, club subscriptions, personal use, exempt supply costs.  _(Section 16(2), 17)_
-
-### 5.7 Customs GCT
-
-- **Customs GCT** — GCT paid at customs on imports. Line 6 (output), Line 9 (input).
-
-### 5.8 Withholding GCT (Section 19A)
-
-- **Withholding GCT (Section 19A)** — Designated agents withhold two-thirds of GCT (effectively 10% of GCT-exclusive value).  _(Section 19A)_
-
-### 5.9 Tax invoice (Section 20)
-
-- **Tax invoice (Section 20)** — Must show: "Tax Invoice", supplier TRN, customer TRN (B2B > JMD 10,000), GCT amount.  _(Section 20)_
-
-## Section 6 — Tier 2 catalogue (compressed)
-
-### 6.1 Tourism sector
-
-- **Tourism sector** — Default: flag. Question: "Confirm applicable concessions with TAJ."
-
-### 6.2 Approved farmer/manufacturer
-
-- **Approved farmer/manufacturer** — Default: flag. Question: "Confirm TAJ approved status."
-
-### 6.3 Mixed supplies apportionment
-
-- **Mixed supplies apportionment** — Default: flag. Question: "Confirm taxable/exempt ratio."
-
-### 6.4 Motor vehicle exception
-
-- **Motor vehicle exception** — Default: blocked. Question: "Is this a taxi, rental car, driving school vehicle, or goods transport vehicle?"
-
-### 6.5 Digital services from non-residents
-
-- **Digital services from non-residents** — Default: flag. Question: "Confirm registration obligations for non-resident digital suppliers."
-
-## Section 7 — Excel working paper template
-
-Standard layout. Column H accepts GCT-R line numbers.
-```
-Line 7 = Total output GCT
-Line 12 = Net input GCT
-Line 13 = 7 - 12
-Line 15 = 13 - 14
+|---|---|---|
+| NCB, SCOTIABANK, JMMB, SAGICOR BANK, FIRST GLOBAL, CIBC FIRSTCARIBBEAN | Fees: check the invoice for GCT; interest: no GCT | Financial services exemption to confirm per Third Schedule |
+| TAJ, TAX ADMINISTRATION JAMAICA, NIS, NHT, EDUCATION TAX | Exclude | Tax and statutory payments |
+| JAMAICA CUSTOMS | Duty excluded; GCT on the import entry to line 30, advance GCT also creditable | Keep the entry |
+| JPS (electricity) | Commercial supply at 15%; residential power at 7% is the supplier's line | Check the bill |
+| NWC (water) | Check the bill | |
+| FLOW, DIGICEL | Telephone at 25%; check internet lines on the bill | Credit if a business line |
+| SAGICOR LIFE, GUARDIAN LIFE | Exclude | Life insurance |
+| GENERAL INSURANCE, ADVANTAGE GENERAL | GCT on general insurance per the insurer's invoice | Insurer files Form 4E |
+| GOOGLE, MICROSOFT, ADOBE, META, ZOOM, SLACK, NOTION, ANTHROPIC, OPENAI (non-resident) | Imported service: lines 20 and 21 at 15%, credit at line 35 | Net nil if fully taxable |
+| HI-LO, MEGAMART, PRICESMART, LOSHUSAN | No credit by default | Personal provisioning |
+| RESTAURANT, CATERING, CLUB | 50% credit at most | Business purpose needed |
+| PETCOM, RUBIS, TOTAL, SHELL (fuel) | Check the invoice; petroleum carries Special Consumption Tax | Motor vehicle expense: 50% credit at most |
+| OWN TRANSFER, SALARY, WAGES, PAYE | Exclude | |
+
+Bank statements: NCB and Scotiabank CSV or PDF, DD/MM/YYYY, J$; own-account transfers excluded.
+
+## Deadlines and filing
+
+| Step | What | When |
+|---|---|---|
+| 1 | Apply on Form GCT-1 (with a TRN branch extension) | When the threshold is reached, or voluntarily |
+| 2 | Receive a Certificate of Registration (above threshold) or Notice of Registration (below) | After TAJ approves |
+| 3 | Issue tax invoices | Within 7 days of each supply |
+| 4 | File Form 4A online through the TAJ portal and pay line 42 | By the last day of the following month (15 days for the payments basis) |
+| 5 | If line 38 is negative, tick refund or credit at line 43 | With the return |
+
+Online filing is required to claim GCT withheld by TWEs (line 34).
+
+## Penalties and interest
+
+- Failure to apply for registration: J$5,000 (individual) or J$10,000 (company), plus 2.5% a month interest on the tax for the period unregistered.
+- Late return and late payment: TAJ's guide has a "Penalty, Surcharge and Interest" section whose figures were not reached in the text read; see Not yet confirmed.
+
+## Cross-border points
+
+- Imported services: self-assess on lines 20 and 21 if registered; a non-registered person uses Form 4G.
+- Imported goods: GCT at Customs, plus 5% advance GCT for registered importers of goods for resale (not on petroleum, capital goods, deferred goods, telephone instruments, exempt goods, raw foodstuff, goods with productive input relief, or goods imported by non-registered persons).
+- Exports: zero-rated with customs export evidence.
+- Non-resident digital suppliers: registration duties not confirmed (see Not yet confirmed).
+
+## Two worked examples that recompute
+
+### Example 1: Monthly Form 4A with an imported service
+
+Standard-rated sales J$2,000,000 net to non-TWE customers (line 14, GCT J$300,000). A cloud subscription from a non-resident, J$300,000 (lines 20 and 21, GCT J$45,000). Local input GCT that qualifies J$180,000 (line 29). Imported service credit J$45,000 (line 35). Output J$345,000, input J$225,000, payable J$120,000 by the last day of the next month.
+
+```oa-check
+name: JM GCT 2026 Form 4A, standard sales and imported service
+inputs:
+  sales: 2000000
+  imported_services: 300000
+  local_input_gct: 180000
+steps:
+  - line15: sales * 0.15
+  - line21: imported_services * 0.15
+  - line24: line15 + line21
+  - line37: local_input_gct + line21
+  - line38: line24 - line37
+expected:
+  line15: 300000
+  line21: 45000
+  line24: 345000
+  line37: 225000
+  line38: 120000
 ```
 
-## Section 8 — Bank statement reading guide
+### Example 2: Must input tax be apportioned? Exempt share 10% or 4%
 
-**Format:** NCB/Scotiabank CSV, DD/MM/YYYY, JMD. **Language:** English.
-**Internal transfers:** "Own account transfer". Exclude. **Fuel:** No GCT (SCT instead).
+Total supplies J$10,000,000. Input GCT J$350,000, of which J$50,000 relates only to taxable supplies and J$300,000 is common. Case A: exempt supplies J$1,000,000 (10%, above 5%): Section D1 applies, common GCT allowed at 90%, credit J$320,000. Case B: exempt supplies J$400,000 (4%): no apportionment on Form 4A, credit J$350,000. The 5% test is worth J$30,000.
 
-## Section 9 — Onboarding fallback
+```oa-check
+name: JM GCT 2026 apportionment above or below 5% exempt
+inputs:
+  total_supplies: 10000000
+  exempt_a: 1000000
+  direct_gct: 50000
+  common_gct: 300000
+steps:
+  - taxable_share_a: (total_supplies - exempt_a) / total_supplies
+  - credit_a: direct_gct + common_gct * taxable_share_a
+  - credit_b: direct_gct + common_gct
+  - difference: credit_b - credit_a
+expected:
+  taxable_share_a: 0.9
+  credit_a: 320000
+  credit_b: 350000
+  difference: 30000
+```
 
-### 9.1 Registration status
+### Short cases kept from the earlier version (corrected)
 
-- **Registration status** — Inference: if filing GCT-R, registered. Fallback: "Are you GCT-registered?"
+- Sale to ABC Jamaica Ltd, J$575,000 GCT-inclusive: net J$500,000, GCT J$75,000 (lines 14 and 15).
+- Export to a US buyer, J$500,000: line 8, zero-rated, full input credit.
+- Restaurant bill J$23,000 including GCT J$3,000: credit at most J$1,500 (50%), not blocked as the earlier version said.
+- Sedan J$5,000,000 bought for the business: 7% of cost (cost capped at the US$35,000 equivalent) over 24 months, not blocked as the earlier version said.
+- Digicel phone service J$12,500: net J$10,000, GCT J$2,500 at 25%; credit if a business line.
 
-### 9.2 TRN
+## Ask the client first
 
-- **TRN** — Fallback: "What is your 9-digit TRN?"
+1. Are you a Registered Taxpayer (Certificate) or a Registered Person (Notice)? What is your TRN and filing period?
+2. Total supplies in the last 12 months, split into standard-rated, other rates, zero-rated, exports and exempt.
+3. Do you sell to tax withholding entities, and have you received GCT withheld certificates?
+4. Imported goods (customs entries) and imported services from non-residents in the period.
+5. Capital goods, motor vehicles, entertainment and restaurant costs in the period.
+6. Any credit brought forward (line 39) or refund requested and not yet received?
 
-### 9.3 Filing period
+## Sources
 
-- **Filing period** — Inference: from statement. Fallback: "Monthly or bi-monthly? Which period?"
+| Source | URL | Read on |
+|---|---|---|
+| TAJ, General Consumption Tax guide: read for the threshold (effective 1 April 2025), registration statuses and penalty, the rate history, the 25% telephone rate, value of supply, imports and advance GCT, tax invoice contents, records, input tax credit rules (capital goods, 50% items, motor vehicles), accounting bases and the payments-basis deadline | https://www.jamaicatax.gov.jm/general-consumption-tax1 | 2026-11-14 |
+| TAJ, General Consumption Tax forms page: read for the Form 4A to 4H descriptions and the due date on or before the last day of the following month | https://www.jamaicatax.gov.jm/general-consumption-tax | 2026-11-14 |
+| TAJ, Form 4A, GCT standard return (revised 3 June 2025): read in full for lines 6 to 43, Section C2 power supply at 7% and the 5% apportionment trigger | https://www.jamaicatax.gov.jm/documents/10194/18006/GCT+Form+4A+amended+03.06.2025+%28002%29.pdf/b2428c2a-346f-6eeb-0b18-550ec5b60d72 | 2026-11-14 |
 
-### 9.4 Credit brought forward
-
-- **Credit brought forward** — Always ask: "Excess credit from prior period? (Line 14)"
-
-## Section 10 — Reference material
-
-### Sources
-
-- **Sources list** — 1. General Consumption Tax Act, 1991 (as amended) — Sections 2-4A, 8, 16-21, 25, 28, 30, 31 2. GCT Regulations; First Schedule (zero-rated); Second Schedule (exempt) 3. Special Economic Zones Act, 2016  _(General Consumption Tax Act, 1991 (as amended); GCT Regulations; Special Economic Zones Act, 2016)_
-
-### Change log
-
-- **v2.0 (April 2026):** Full rewrite to 10-section architecture.
-- **v1.1/v1.0:** Initial skill.
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
+Not yet confirmed: the GCT withholding rate applied by tax withholding entities (the earlier version said two-thirds of the GCT, about 10% of value); late-filing and late-payment penalties, surcharge and interest on GCT returns; the tourism rate (TAJ's older text says 10%); whether the 50% restricted credits and the 7% and 14% motor vehicle rules in TAJ's guide (written when the rate was 16.5%) are unchanged in the current Act; the full First Schedule zero-rated list and Third Schedule exempt list (the earlier version listed basic foods, medical and dental services, education, financial services, life insurance, residential rental, public transport, domestic water and electricity under thresholds, and petroleum); registration duties for non-resident digital service suppliers; the earlier version's section numbers of the Act (ss. 4A, 16(2), 17, 19A, 20), which could not be checked because the Act on laws.moj.gov.jm returned an error (503); the bi-monthly filing option for small taxpayers named in the earlier version.

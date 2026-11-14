@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/croatia-social-contributions"
   jurisdiction: "HR"
   tax_year: "2026"
-  last_updated: "2026-10-24"
+  last_updated: "2026-11-14"
 ---
 
-# Croatia social contributions (tax year 2026) v0.2
+# Croatia social contributions (tax year 2026) v0.4
 
 > **Source-cited draft.** No accountant has reviewed this skill yet. Figures come from the consolidated Contributions Act in the Tax Administration (Porezna uprava) register and from Narodne novine, read on 23 and 24 October 2026. It prepares working papers; it is not authority to file or pay.
 
@@ -34,25 +34,25 @@ Laws used: the Contributions Act (Zakon o doprinosima, "ZoD", NN 84/08 as amende
 
 | Item | Rate or amount | Year | Source |
 |---|---|---|---|
-| Pension Pillar I, member of Pillar II too | 15% | 2026 | ZoD art. 13(1) point 1.2, https://porezna-uprava.gov.hr/Propisi |
-| Pension Pillar I, Pillar I only | 20% | 2026 | ZoD art. 13(1) point 1.1 |
-| Pension Pillar II | 5% | 2026 | ZoD art. 17(1) point 1 |
-| Health | 16.5% | 2026 | ZoD art. 14(1) point 1 |
-| Work injury health contribution (certain insured, e.g. trainees outside employment) | 0.5% | 2026 | ZoD art. 14(1) point 4 |
+| Pension Pillar I, member of Pillar II too | 15% | 2026 | [ZoD art. 13(1) point 1.2](https://porezna-uprava.gov.hr/Propisi/Propis/zakon-o-doprinosima-redakcijski-procisceni-tekst/3119) |
+| Pension Pillar I, Pillar I only | 20% | 2026 | [ZoD art. 13(1) point 1.1](https://porezna-uprava.gov.hr/Propisi/Propis/zakon-o-doprinosima-redakcijski-procisceni-tekst/3119)|
+| Pension Pillar II | 5% | 2026 | [ZoD art. 17(1) point 1](https://porezna-uprava.gov.hr/Propisi/Propis/zakon-o-doprinosima-redakcijski-procisceni-tekst/3119)|
+| Health | 16.5% | 2026 | [ZoD art. 14(1) point 1](https://porezna-uprava.gov.hr/Propisi/Propis/zakon-o-doprinosima-redakcijski-procisceni-tekst/3119)|
+| Work injury health contribution (certain insured, e.g. trainees outside employment) | 0.5% | 2026 | [ZoD art. 14(1) point 4](https://porezna-uprava.gov.hr/Propisi/Propis/zakon-o-doprinosima-redakcijski-procisceni-tekst/3119)|
 | Average wage (Jan to Aug 2025) | EUR 1,993.00 | 2026 | Naredba NN 150/25 art. 2, https://narodne-novine.nn.hr/clanci/sluzbeni/2025_12_150_2237.html |
-| Minimum monthly base, full time (x 0.38) | EUR 757.34 | 2026 | Naredba art. 3; ZoD art. 200 |
-| Maximum monthly base, pension (x 6.0) | EUR 11,958.00 | 2026 | Naredba art. 4; ZoD art. 204 and 205 |
-| Maximum annual base, Pillar I (x 6.0 x 12) | EUR 143,496.00 | 2026 | Naredba art. 5; ZoD art. 206 and 208 |
+| Minimum monthly base, full time (x 0.38) | EUR 757.34 | 2026 | [Naredba art. 3](https://narodne-novine.nn.hr/clanci/sluzbeni/2025_12_150_2237.html); ZoD art. 200 |
+| Maximum monthly base, pension (x 6.0) | EUR 11,958.00 | 2026 | [Naredba art. 4](https://narodne-novine.nn.hr/clanci/sluzbeni/2025_12_150_2237.html); ZoD art. 204 and 205 |
+| Maximum annual base, Pillar I (x 6.0 x 12) | EUR 143,496.00 | 2026 | [Naredba art. 5](https://narodne-novine.nn.hr/clanci/sluzbeni/2025_12_150_2237.html); ZoD art. 206 and 208 |
 | Low-wage relief, gross up to EUR 700 | Pillar I base cut by EUR 300 | 2026 | ZoD art. 21.a(1), https://narodne-novine.nn.hr/clanci/sluzbeni/2023_10_114_1611.html |
-| Low-wage relief, gross EUR 700.01 to 1,300 | Pillar I base cut by 0.5 x (1,300 - gross) | 2026 | ZoD art. 21.a(2) |
-| Obrt paying income tax on actual income (x 0.65) | EUR 1,295.45 a month | 2026 | Naredba art. 6 row 1; ZoD art. 66(1) point 1 |
-| Freelancer paying income tax (x 1.1) | EUR 2,192.30 a month | 2026 | Naredba art. 6 row 3; ZoD art. 66(1) point 2 |
-| Nurse, dental technician, physiotherapist, journalist, film worker (x 0.65) | EUR 1,295.45 a month | 2026 | Naredba art. 6; ZoD art. 66(2) |
-| Self-employed paying profit tax instead (x 1.1) | EUR 2,192.30 a month | 2026 | Naredba art. 6 rows 2, 4; ZoD art. 82(2) |
-| Flat-rate (paušal) obrt (x 0.4) | EUR 797.20 a month | 2026 | Naredba art. 7 row 1; ZoD art. 70 |
-| Board member or executive director without employment (x 1.0) | EUR 1,993.00 a month | 2026 | Naredba art. 7 row 6; ZoD art. 92 |
-| Employed in Croatia by a foreign employer with no Croatian branch (x 1.0) | EUR 1,993.00 a month | 2026 | Naredba art. 7 row 9; ZoD art. 109 |
-| Voluntary higher base for the self-employed | coefficients 0.5 to 6.0 | 2026 | ZoD art. 203(2) |
+| Low-wage relief, gross EUR 700.01 to 1,300 | Pillar I base cut by 0.5 x (1,300 - gross) | 2026 | [ZoD art. 21.a(2)](https://porezna-uprava.gov.hr/Propisi/Propis/zakon-o-doprinosima-redakcijski-procisceni-tekst/3119)|
+| Obrt paying income tax on actual income (x 0.65) | EUR 1,295.45 a month | 2026 | [Naredba art. 6 row 1](https://narodne-novine.nn.hr/clanci/sluzbeni/2025_12_150_2237.html); ZoD art. 66(1) point 1 |
+| Freelancer paying income tax (x 1.1) | EUR 2,192.30 a month | 2026 | [Naredba art. 6 row 3](https://narodne-novine.nn.hr/clanci/sluzbeni/2025_12_150_2237.html); ZoD art. 66(1) point 2 |
+| Nurse, dental technician, physiotherapist, journalist, film worker (x 0.65) | EUR 1,295.45 a month | 2026 | [Naredba art. 6](https://narodne-novine.nn.hr/clanci/sluzbeni/2025_12_150_2237.html); ZoD art. 66(2) |
+| Self-employed paying profit tax instead (x 1.1) | EUR 2,192.30 a month | 2026 | [Naredba art. 6 rows 2, 4](https://narodne-novine.nn.hr/clanci/sluzbeni/2025_12_150_2237.html); ZoD art. 82(2) |
+| Flat-rate (paušal) obrt (x 0.4) | EUR 797.20 a month | 2026 | [Naredba art. 7 row 1](https://narodne-novine.nn.hr/clanci/sluzbeni/2025_12_150_2237.html); ZoD art. 70 |
+| Board member or executive director without employment (x 1.0) | EUR 1,993.00 a month | 2026 | [Naredba art. 7 row 6](https://narodne-novine.nn.hr/clanci/sluzbeni/2025_12_150_2237.html); ZoD art. 92 |
+| Employed in Croatia by a foreign employer with no Croatian branch (x 1.0) | EUR 1,993.00 a month | 2026 | [Naredba art. 7 row 9](https://narodne-novine.nn.hr/clanci/sluzbeni/2025_12_150_2237.html); ZoD art. 109 |
+| Voluntary higher base for the self-employed | coefficients 0.5 to 6.0 | 2026 | [ZoD art. 203(2)](https://porezna-uprava.gov.hr/Propisi/Propis/zakon-o-doprinosima-redakcijski-procisceni-tekst/3119)|
 
 ## The taxable base
 
@@ -183,8 +183,8 @@ expected:
 
 Not yet confirmed: that no amendment to the Contributions Act after NN 152/24, or to the 2026 Order after NN 150/25, applies in 2026 (the Tax Administration register lists none, and the fiskai.hr database lists no amendment to the Order; its 28 March 2026 date is a review date, not a new version); that the Obligations Act art. 29(2) rate for non-commercial relationships (5.40% from 1 July 2026) is the rate the Tax Administration charges on late tax and contributions, since no official text found ties them together (General Tax Act art. 130(1) points to a special regulation only); who must be a Pillar II member (Mandatory Pension Funds Act) was not read.
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-24. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `croatia-social-contributions` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/croatia-social-contributions. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `croatia-social-contributions` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/croatia-social-contributions. If neither is available, confirm every figure against the official source pages cited above before relying on it.

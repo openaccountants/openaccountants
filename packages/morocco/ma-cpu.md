@@ -1,10 +1,11 @@
 ---
 name: ma-cpu
-description: Use this skill whenever asked about Morocco's Contribution Professionnelle Unique (CPU) — the single-tax regime that replaced the régime forfaitaire (régime du bénéfice forfaitaire) for small self-employed people and professionals who are not on the auto-entrepreneur status. Trigger on phrases like "CPU Maroc", "Contribution Professionnelle Unique", "régime forfaitaire Maroc", "contribution professionnelle unique calcul", "droit complémentaire AMO CPU", "coefficient bénéfice CPU", "المساهمة المهنية الموحدة", "CPU vs auto-entrepreneur Maroc". Covers eligibility and turnover ceilings, the CPU computation (turnover × profession coefficient → 10% liberatory IR), the effective minimum, the mandatory complementary health contribution (droit complémentaire) banded by profit for AMO, and the filing & payment calendar. Reply in the user's language (English, French, or Moroccan Arabic / Darija) and keep the native terms (CPU, IR, DGI, AMO, CNSS). Cross-reference ma-auto-entrepreneur (simpler, lower ceilings) and morocco-professional-income-tax (RNR/RNS) as alternatives.
-version: 1.0
+description: Use this skill whenever asked about Morocco's Contribution Professionnelle Unique (CPU) for tax year 2026, the single-tax regime that replaced the regime forfaitaire for small individual businesses and professionals who are not auto-entrepreneurs. Trigger on phrases like "CPU Maroc", "Contribution Professionnelle Unique", "regime forfaitaire Maroc", "droit complementaire AMO CPU", "coefficient benefice CPU", "المساهمة المهنية الموحدة", "CPU vs auto-entrepreneur Maroc". Covers eligibility and the MAD 2,000,000 and MAD 500,000 ceilings, the computation (turnover times the trade coefficient, then 10% IR), the droit complementaire banded by IR for AMO, the 30% client withholding above MAD 80,000, gains on sale or closure with the 2026 retirement relief, and the filing and payment calendar. Reply in the user's language (English, French or Darija) and keep the native terms (CPU, IR, DGI, AMO, CNSS). Cross-reference ma-auto-entrepreneur and morocco-professional-income-tax.
+version: 2.0
 jurisdiction: MA
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-14
+type: computation
 depends_on:
   - income-tax-workflow-base
 category: international
@@ -15,7 +16,7 @@ domain: income-tax
 
 # Morocco: Contribution Professionnelle Unique (CPU) for small individual businesses
 
-## Scope ([Code Général des Impôts, 2026 edition, Art. 40 and 41](https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1))
+## Scope
 
 Figures are for tax year 2026 (calendar year 2026, turnover declared before 1 April 2027). There is also a dated section for the 2025 returns that were due before 1 April 2026. The law is the Code Général des Impôts (CGI) in the 2026 edition published by the Direction Générale des Impôts (DGI). That edition includes the Finance Law for 2026 (loi de finances n° 50-25).
 
@@ -51,19 +52,21 @@ Not covered here: the auto-entrepreneur regime (ma-auto-entrepreneur), the real-
 8. **File the turnover return** before 1 April of the following year on SIMPL. It is pre-filled; correct it where needed. Pay annually or in four equal quarterly instalments, as chosen on the return.
 9. **Deal with events.** On a sale or cessation, file the gains return within 45 days and pay the flat gains tax with it. On a move, a departure from Morocco or a death, use the special deadlines in the filing section.
 
-## Figures with years ([2026 edition of the CGI, Art. 40, 41, 73](https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1))
+### Rates, bands and thresholds
 
 All figures below are in the 2026 edition of the CGI and apply to turnover of 2025 and 2026. None was changed by the Finance Laws for 2025 or 2026. The one CPU change in 2026 is the new relief on gains at retirement (see "Selling or closing the business").
 
-| Item | Figure | Since | Source |
-| --- | --- | --- | --- |
-| Turnover ceiling, commercial, industrial and artisanal activities | MAD 2,000,000 a year | 2021 | Art. 41-II-A |
-| Turnover ceiling, service providers | MAD 500,000 a year | 2021 | Art. 41-II-A |
-| IR rate on CPU professional income | 10% | 2021 | Art. 73-II-B-6° |
-| Withholding by a client on service turnover above MAD 80,000 from that client | 30% of the excess | 1 January 2023 | Art. 40-I, 45 bis-II, 73-II-G-8° |
-| IR on business gains and indemnities | 20% | 2021 | Art. 40-II, 73-II-F-11° |
-| Deemed depreciation on assets sold (equipment, tools, furniture / vehicles) | 10% / 20% a year | 2021 | Art. 40-II |
-| Retirement relief on intangible gains (age 65+, no pension scheme) | 50% of the gain, on gains up to MAD 1,000,000 | disposals from 1 January 2026 | Art. 31-V |
+| Item | Figure | Since | Article | Source URL |
+| --- | --- | --- | --- | --- |
+| Turnover ceiling, commercial, industrial and artisanal activities | MAD 2,000,000 a year | 2021 | Art. 41-II-A | https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1 |
+| Turnover ceiling, service providers | MAD 500,000 a year | 2021 | Art. 41-II-A | same |
+| IR rate on CPU professional income | 10% | 2021 | Art. 73-II-B-6° | same |
+| Withholding by a client on service turnover above MAD 80,000 from that client | 30% of the excess | 1 January 2023 | Art. 40-I, 45 bis-II, 73-II-G-8° | same |
+| IR on business gains and indemnities | 20% | 2021 | Art. 40-II, 73-II-F-11° | same |
+| Deemed depreciation on assets sold (equipment, tools, furniture / vehicles) | 10% / 20% a year | 2021 | Art. 40-II | same |
+| Retirement relief on intangible gains (age 65+, no pension scheme) | 50% of the gain, on gains up to MAD 1,000,000 | disposals from 1 January 2026 | Art. 31-V | same |
+| Droit complementaire, annual, lowest band (IR component under MAD 500) | MAD 1,200 (MAD 300 a quarter) | 2021 | Art. 73-II-B-6° | same |
+| Droit complementaire, annual, highest band (IR component above MAD 50,000) | MAD 14,400 (MAD 3,600 a quarter) | 2021 | Art. 73-II-B-6° | same |
 
 The [DGI CPU practical guide](https://www.tax.gov.ma/wps/wcm/connect/cecc3309-6ca8-494c-903b-160c1649cd9a/CPU+guide+pratique+Version+fran%C3%A7aise.pdf?MOD=AJPERES&CACHEID=cecc3309-6ca8-494c-903b-160c1649cd9a) states that the ceilings are measured "taxe sur la valeur ajoutée comprise" (VAT included).
 
@@ -71,31 +74,31 @@ The [DGI CPU practical guide](https://www.tax.gov.ma/wps/wcm/connect/cecc3309-6c
 
 The Finance Law for 2022 abolished the old annexed table of 795 professions. It replaced it with this grouped table in Art. 40-I ([Note circulaire n° 732](https://tax.gov.ma/wps/wcm/connect/982a0f63-09eb-4c60-8b44-2f2a474dc865/Note+Circulaire+n+732+relative+aux+mesures+fiscales+de+la+LF+2022.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-982a0f63-09eb-4c60-8b44-2f2a474dc865-nWihlos)). Coefficients quoted in the 2021 DGI guide (for example 8% for a general food shop or 40% for a hairdresser) come from the abolished table. Do not use them for 2022 onwards.
 
-| Group | Category of profession | Coefficient |
-| --- | --- | --- |
-| Commerce | Alimentation générale (general food shop, grocer) | 6% |
-| Commerce | Autres produits alimentaires (other food products) | 8% |
-| Commerce | Matières premières; matériaux de construction | 8% |
-| Commerce | Produits chimiques et engrais | 10% |
-| Commerce | Autres produits non alimentaires (other non-food goods) | 12% |
-| Services | Restauration légère ou rapide (snack, fast food) | 10% |
-| Services | Exploitant de restaurant et débitant de boissons | 20% |
-| Services | Transport de personnes et de marchandises | 10% |
-| Services | Activités d'entretien (maintenance, cleaning) | 15% |
-| Services | Location de biens meubles (renting movable goods) | 20% |
-| Services | Autres activités de location et de gestion | 25% |
-| Services | Coiffure et esthétique (hairdressing, beauty) | 20% |
-| Services | Mécanicien réparateur; réparateur d'appareils électroniques; activités artistiques et de divertissement; exploitant de moulin | 30% |
-| Services | Autres artisans de services | 12% |
-| Services | Courtiers (brokers) | 45% |
-| Services | Autres prestations (other services) | 20% |
-| Fabrication | Produits alimentaires; produits non alimentaires | 10% |
-| Specific trades | Chevillard (wholesale butcher) | 4% |
-| Specific trades | Marchand de tabac | 3% |
-| Specific trades | Marchand de gaz comprimé, liquéfié et dissous | 4.5% |
-| Specific trades | Marchand de farine, fécules, semoules ou son | 5% |
-| Specific trades | Armateur, adjudicataire ou fermier (pêche) | 7% |
-| Specific trades | Boulanger (baker) | 8% |
+| Group | Category of profession | Coefficient | Source URL |
+| --- | --- | --- | --- |
+| Commerce | Alimentation générale (general food shop, grocer) | 6% | https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1 |
+| Commerce | Autres produits alimentaires (other food products) | 8% | same |
+| Commerce | Matières premières; matériaux de construction | 8% | same |
+| Commerce | Produits chimiques et engrais | 10% | same |
+| Commerce | Autres produits non alimentaires (other non-food goods) | 12% | same |
+| Services | Restauration légère ou rapide (snack, fast food) | 10% | same |
+| Services | Exploitant de restaurant et débitant de boissons | 20% | same |
+| Services | Transport de personnes et de marchandises | 10% | same |
+| Services | Activités d'entretien (maintenance, cleaning) | 15% | same |
+| Services | Location de biens meubles (renting movable goods) | 20% | same |
+| Services | Autres activités de location et de gestion | 25% | same |
+| Services | Coiffure et esthétique (hairdressing, beauty) | 20% | same |
+| Services | Mécanicien réparateur; réparateur d'appareils électroniques; activités artistiques et de divertissement; exploitant de moulin | 30% | same |
+| Services | Autres artisans de services | 12% | same |
+| Services | Courtiers (brokers) | 45% | same |
+| Services | Autres prestations (other services) | 20% | same |
+| Fabrication | Produits alimentaires; produits non alimentaires | 10% | same |
+| Specific trades | Chevillard (wholesale butcher) | 4% | same |
+| Specific trades | Marchand de tabac | 3% | same |
+| Specific trades | Marchand de gaz comprimé, liquéfié et dissous | 4.5% | same |
+| Specific trades | Marchand de farine, fécules, semoules ou son | 5% | same |
+| Specific trades | Armateur, adjudicataire ou fermier (pêche) | 7% | same |
+| Specific trades | Boulanger (baker) | 8% | same |
 
 - Several activities with different coefficients: the professional income is the total of the incomes worked out separately for each activity (Art. 40-I, wording added by the Finance Law for 2022).
 - The DGI's system maps each registered activity to one of these categories. It shows the category when the taxpayer first registers or files ([Note circulaire n° 732](https://tax.gov.ma/wps/wcm/connect/982a0f63-09eb-4c60-8b44-2f2a474dc865/Note+Circulaire+n+732+relative+aux+mesures+fiscales+de+la+LF+2022.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-982a0f63-09eb-4c60-8b44-2f2a474dc865-nWihlos)). If the trade could fit two rows, check the pre-filled SIMPL return or ask the local tax office. Do not choose the lower coefficient on your own.
@@ -104,22 +107,22 @@ The Finance Law for 2022 abolished the old annexed table of 795 professions. It 
 
 The IR component is increased by a droit complémentaire. The band is set by the **annual IR component in dirhams**, not by turnover.
 
-| Annual IR component (MAD) | Quarterly droit (MAD) | Annual droit (MAD) |
-| --- | --- | --- |
-| Less than 500 | 300 | 1,200 |
-| 500 to 1,000 | 390 | 1,560 |
-| 1,001 to 2,500 | 570 | 2,280 |
-| 2,501 to 5,000 | 720 | 2,880 |
-| 5,001 to 10,000 | 1,050 | 4,200 |
-| 10,001 to 25,000 | 1,500 | 6,000 |
-| 25,001 to 50,000 | 2,250 | 9,000 |
-| More than 50,000 | 3,600 | 14,400 |
+| Annual IR component (MAD) | Quarterly droit (MAD) | Annual droit (MAD) | Source URL |
+| --- | --- | --- | --- |
+| Less than 500 | 300 | 1,200 | https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1 |
+| 500 to 1,000 | 390 | 1,560 | same |
+| 1,001 to 2,500 | 570 | 2,280 | same |
+| 2,501 to 5,000 | 720 | 2,880 | same |
+| 5,001 to 10,000 | 1,050 | 4,200 | same |
+| 10,001 to 25,000 | 1,500 | 6,000 | same |
+| 25,001 to 50,000 | 2,250 | 9,000 | same |
+| More than 50,000 | 3,600 | 14,400 | same |
 
 - The droit is paid according to the person's AMO membership status. By way of exception to Art. 173-I, the transitional rule of the Finance Law for 2021 says it "est versé selon la situation du redevable en matière d'adhésion" to AMO. The [DGI CPU notice](https://www.tax.gov.ma/wps/wcm/connect/66026b2b-3420-4719-9c8b-2b9cdf64a494/Notice+explicative+CPU+2021.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-66026b2b-3420-4719-9c8b-2b9cdf64a494-ouzv3A9) says it is paid once the taxpayer joins AMO. AMO membership is also a condition of the CPU option itself (Art. 41-II-B), so treat it as due.
 - Part year (start or cessation): the DGI annualises the IR component to find the band, then pro-rates the annual droit by months. See worked case 5.
 - The bands are written in whole dirhams. If an IR component with centimes falls between two rows, the law does not say which row applies. Flag it and confirm with the local tax office.
 
-## Who can use the CPU ([CGI Art. 41, 43, 44](https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1))
+### Who can use the CPU ([CGI Art. 41, 43, 44](https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1))
 
 **Who is in.** Individuals with professional income who opt for CPU (Art. 41-I). The individual members of an *indivision* or *société de fait* are also covered (Art. 32). According to the [DGI CPU practical guide](https://www.tax.gov.ma/wps/wcm/connect/cecc3309-6ca8-494c-903b-160c1649cd9a/CPU+guide+pratique+Version+fran%C3%A7aise.pdf?MOD=AJPERES&CACHEID=cecc3309-6ca8-494c-903b-160c1649cd9a), this includes:
 
@@ -146,7 +149,7 @@ The IR component is increased by a droit complémentaire. The band is set by the
 
 **Staying in and leaving (Art. 41-II).** The option stays valid until turnover exceeds the ceiling for **two consecutive years**. RNR then applies to income from 1 January of the year after those two years. If the DGI spots two years over the ceiling, it sends a notified letter asking for corrective returns under the right regime within 30 days (Art. 221 bis-II).
 
-### Excluded professions ([décret n° 2-08-124 of 28 May 2009](https://www.tax.gov.ma/wps/wcm/connect/24a95c1a-b857-432c-a516-8dc833bb445b/D%C3%A9cret+n%C2%B0+2-08-124+du+3+joumada+II+1430+%2828+mai+2009%29+relatif+aux+professions+ou+activit%C3%A9s+exclues+du+r%C3%A9gime+forfaitaire.pdf?MOD=AJPERES&CACHEID=24a95c1a-b857-432c-a516-8dc833bb445b))
+#### Excluded professions ([décret n° 2-08-124 of 28 May 2009](https://www.tax.gov.ma/wps/wcm/connect/24a95c1a-b857-432c-a516-8dc833bb445b/D%C3%A9cret+n%C2%B0+2-08-124+du+3+joumada+II+1430+%2828+mai+2009%29+relatif+aux+professions+ou+activit%C3%A9s+exclues+du+r%C3%A9gime+forfaitaire.pdf?MOD=AJPERES&CACHEID=24a95c1a-b857-432c-a516-8dc833bb445b))
 
 Art. 41-III excludes professions "fixées par voie réglementaire". The DGI guide says these are the professions listed in décret n° 2-08-124, excluded "quel que soit le chiffre d'affaires réalisé". The decree was written for the forfaitaire regime, and the DGI applies it to CPU. The list:
 
@@ -160,7 +163,7 @@ Art. 41-III excludes professions "fixées par voie réglementaire". The DGI guid
 
 If the activity is close to one of these (for example "web design" against "prestataires de services informatiques"), treat it as excluded until the tax office confirms otherwise.
 
-## Withholding by clients on large service contracts ([CGI Art. 40-I, 45 bis-II, 73-II-G](https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1))
+### Withholding by clients on large service contracts ([CGI Art. 40-I, 45 bis-II, 73-II-G](https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1))
 
 This rule has applied since 1 January 2023. When a CPU taxpayer's annual **service** turnover with **one client** exceeds MAD 80,000, the client withholds IR on the excess at 30%. The client pays the tax to the DGI ([Note circulaire n° 733](https://www.tax.gov.ma/wps/wcm/connect/070abc0f-a958-4cf9-84be-7e9b76434063/NC+N%C2%B0+733+relative+aux+mesures+fiscales+de+la+LF+2023+vf.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-070abc0f-a958-4cf9-84be-7e9b76434063-oq2C8BE)).
 
@@ -170,7 +173,7 @@ This rule has applied since 1 January 2023. When a CPU taxpayer's annual **servi
 - **Effect on the CPU return:** the DGI's own example leaves the withheld excess out of the CPU base. The turnover return must show the service turnover above MAD 80,000 with the same client (Art. 82 quater-I-8°).
 - The droit complémentaire is still due on the CPU part.
 
-## Selling or closing the business ([CGI Art. 31-V, 40-II, 82 quater-II](https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1))
+### Selling or closing the business ([CGI Art. 31-V, 40-II, 82 quater-II](https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1))
 
 Taxed at 20% (Art. 73-II-F-11°), separately from the turnover-based CPU:
 
@@ -193,7 +196,7 @@ The relief applies to sales or withdrawals of the *fonds de commerce* from 1 Jan
 
 **Return.** File the gains and indemnities return (form ADP160B) with payment (bordereau RSP160B) within **45 days** of selling all or part of the business or clientele, or of ceasing activity (Art. 82 quater-II). Attach the evidence of sale and purchase prices. The turnover return for the part year is also due; see the filing section.
 
-## Other rules that trip people up ([CGI Art. 144, 145, 146 bis, 247 ter](https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1))
+### Other rules that trip people up ([CGI Art. 144, 145, 146 bis, 247 ter](https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1))
 
 - **No real expenses.** The base is turnover x coefficient. Costs are not deducted, and the progressive IR scale is not applied to CPU income. The 10% flat rate replaces it.
 - **No minimum contribution.** The cotisation minimale of Art. 144 applies to companies and to individuals under RNR or RNS ("selon le régime du résultat net réel ou du résultat net simplifié"), not to CPU.
@@ -201,7 +204,7 @@ The relief applies to sales or withdrawals of the *fonds de commerce* from 1 Jan
 - **Books.** The accounting rules of Art. 145 do not apply to CPU taxpayers (Art. 145-XI). Two things still apply. The person must hold an email address and give it to the DGI (Art. 145-X). The purchase invoice rules of Art. 146 apply through Art. 146 bis, so keep invoices for purchases.
 - **All CPU taxpayers must file**, including those whose tax was below 5,000 dirhams and who were exempt from filing under the old Art. 86-4° ([DGI CPU practical guide](https://www.tax.gov.ma/wps/wcm/connect/cecc3309-6ca8-494c-903b-160c1649cd9a/CPU+guide+pratique+Version+fran%C3%A7aise.pdf?MOD=AJPERES&CACHEID=cecc3309-6ca8-494c-903b-160c1649cd9a)). CPU is a self-declared regime and the DGI can audit it.
 
-## Boundary and exception table ([CGI Art. 40 to 44](https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1))
+## Boundary and exception table
 
 | Situation | Rule | What to do |
 | --- | --- | --- |
@@ -217,7 +220,7 @@ The relief applies to sales or withdrawals of the *fonds de commerce* from 1 Jan
 | Owner 65+, no pension, final closure in 2026 | 50% relief on intangible gains up to MAD 1,000,000 (Art. 31-V) | Check all four conditions |
 | Mobile-payment turnover in 2025 or 2026 | Taxable in full; the exclusion ended with 2024 returns (Art. 247 ter) | Include it |
 
-## Worked cases ([CGI Art. 40 and 73-II-B-6°](https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1))
+## Worked cases
 
 Cases 1, 2 and 5 use invented client figures with the 2026 rates. Cases 3, 4, 6 and 7 are the DGI's own published examples; the year of each is stated.
 
@@ -227,6 +230,22 @@ Cases 1, 2 and 5 use invented client figures with the 2026 rates. Cases 3, 4, 6 
 - Band 1,001 to 2,500, so the droit complémentaire is MAD 2,280.
 - CPU for 2026 = 2,250 + 2,280 = MAD 4,530, due before 1 April 2027 (or in four quarterly instalments during 2027).
 - The 2021 DGI guide used 8% for this trade. That coefficient belongs to the table abolished in 2022.
+
+```oa-check
+name: CPU general food shop, turnover 375000 (2026)
+inputs:
+  turnover: 375000
+  coefficient: 0.06
+  droit_annual: 2280
+steps:
+  - income: turnover * coefficient
+  - ir: income * 0.10
+  - total: ir + droit_annual
+expected:
+  income: 22500
+  ir: 2250
+  total: 4530
+```
 
 **Case 2: men's hairdresser, 2026 turnover.** Turnover is MAD 60,000. The category is *Coiffure et esthétique*, coefficient 20%.
 
@@ -252,6 +271,28 @@ Cases 1, 2 and 5 use invented client figures with the 2026 rates. Cases 3, 4, 6 
 - To find the band, annualise it: 900 x 12 / 6 = 1,800, which is in band 1,001 to 2,500 (annual MAD 2,280). Pro-rate the droit: 2,280 x 6 / 12 = MAD 1,140.
 - CPU for the part year: 900 + 1,140 = MAD 2,040. Gains tax: 100,000 x 20% = MAD 20,000, with form ADP160B within 45 days of the sale.
 
+```oa-check
+name: CPU closing on 30 June 2026 with a sale
+inputs:
+  turnover: 90000
+  coefficient: 0.10
+  months: 6
+  droit_annual: 2280
+  gain: 100000
+steps:
+  - ir: turnover * coefficient * 0.10
+  - annualised_ir: ir * 12 / months
+  - droit: droit_annual * months / 12
+  - cpu: ir + droit
+  - gains_tax: gain * 0.20
+expected:
+  ir: 900
+  annualised_ir: 1800
+  droit: 1140
+  cpu: 2040
+  gains_tax: 20000
+```
+
 **Case 6: retirement relief (DGI example, 2026, [Note circulaire n° 737](https://www.tax.gov.ma/wps/wcm/connect/e48c5c9d-ae80-4b30-a1b3-80af7ec09be1/NC+737+LF+2026.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-e48c5c9d-ae80-4b30-a1b3-80af7ec09be1-pOvNbSq)).** The owner is 66 with no pension scheme and closes a manufacturing business for good. He sells the *fonds de commerce* for MAD 1,300,000.
 
 - Equipment: sold for MAD 200,000, bought in 2014 for MAD 450,000. Deemed depreciation is 450,000 x 10% x 10 years, which wipes out the cost, so the gain is MAD 200,000.
@@ -273,7 +314,7 @@ Cases 1, 2 and 5 use invented client figures with the 2026 rates. Cases 3, 4, 6 
 - Late returns, penalties already charged, a DGI letter under Art. 221 bis, or an audit: refer.
 - A company (SARL, SA) or an auto-entrepreneur: not CPU. Use the right Guide.
 
-## Filing and payment ([CGI Art. 82 quater, 148, 173, 184, 208](https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1))
+## Filing and payment
 
 | Obligation | Deadline | Form or channel |
 | --- | --- | --- |
@@ -319,3 +360,17 @@ What the turnover return contains (Art. 82 quater-I):
 - Payment option chosen, and dates diarised (1 April, or the four quarter-ends).
 - Any sale or cessation: gains return within 45 days, land and buildings split out, retirement relief conditions checked.
 - Email address on file with the DGI. Purchase invoices kept.
+
+## Sources
+
+| Source | URL | Read on |
+|---|---|---|
+| Code Général des Impôts 2026, DGI, French edition (includes Finance Law 50-25 for 2026). Read for Art. 40-I coefficient table and the MAD 80,000 one-client rule, Art. 40-II gains, Art. 41 ceilings (MAD 2,000,000 and 500,000) and AMO condition, Art. 31-V retirement relief (50%, MAD 1,000,000, age 65), Art. 73-II-B-6° 10% rate and droit complementaire bands, Art. 73-II-F-11° 20%, Art. 73-II-G-8° 30%, Art. 82 quater 45-day return, Arts 43, 44, 144, 145, 173, 184, 208, 247 ter | https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1 | 2026-11-14 |
+| DGI, CPU practical guide (French). Read for the ceilings measured VAT included, the automatic move from forfaitaire, the excluded-professions reading and the machine-sale example (gain MAD 15,000) | https://www.tax.gov.ma/wps/wcm/connect/cecc3309-6ca8-494c-903b-160c1649cd9a/CPU+guide+pratique+Version+fran%C3%A7aise.pdf?MOD=AJPERES&CACHEID=cecc3309-6ca8-494c-903b-160c1649cd9a | 2026-11-14 |
+| DGI, Note circulaire 732 (Finance Law 2022). Read for the new coefficient table replacing the annex and the two-trade example (total MAD 10,200) | https://tax.gov.ma/wps/wcm/connect/982a0f63-09eb-4c60-8b44-2f2a474dc865/Note+Circulaire+n+732+relative+aux+mesures+fiscales+de+la+LF+2022.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-982a0f63-09eb-4c60-8b44-2f2a474dc865-nWihlos | 2026-11-14 |
+| DGI, Note circulaire 733 (Finance Law 2023). Read for the 30% client withholding above MAD 80,000 and the maintenance example (total tax MAD 9,150) | https://www.tax.gov.ma/wps/wcm/connect/070abc0f-a958-4cf9-84be-7e9b76434063/NC+N%C2%B0+733+relative+aux+mesures+fiscales+de+la+LF+2023+vf.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-070abc0f-a958-4cf9-84be-7e9b76434063-oq2C8BE | 2026-11-14 |
+| DGI, Note circulaire 737 (Finance Law 2026). Read for the Art. 31-V retirement relief, the MAD 1,300,000 sale example and land and buildings taxed as profits fonciers | https://www.tax.gov.ma/wps/wcm/connect/e48c5c9d-ae80-4b30-a1b3-80af7ec09be1/NC+737+LF+2026.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-e48c5c9d-ae80-4b30-a1b3-80af7ec09be1-pOvNbSq | 2026-11-14 |
+| DGI, CPU explanatory notice 2021. Read for the SIMPL pre-filled turnover return and when the droit complementaire is paid | https://www.tax.gov.ma/wps/wcm/connect/66026b2b-3420-4719-9c8b-2b9cdf64a494/Notice+explicative+CPU+2021.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-66026b2b-3420-4719-9c8b-2b9cdf64a494-ouzv3A9 | 2026-11-14 |
+| Decree 2-08-124 of 28 May 2009, as published by the DGI. Read for the list of professions excluded from the forfaitaire regime, applied to CPU | https://www.tax.gov.ma/wps/wcm/connect/24a95c1a-b857-432c-a516-8dc833bb445b/D%C3%A9cret+n%C2%B0+2-08-124+du+3+joumada+II+1430+%2828+mai+2009%29+relatif+aux+professions+ou+activit%C3%A9s+exclues+du+r%C3%A9gime+forfaitaire.pdf?MOD=AJPERES&CACHEID=24a95c1a-b857-432c-a516-8dc833bb445b | 2026-11-14 |
+
+Not yet confirmed: which band applies when an IR component with centimes falls between two whole-dirham bands of the droit complementaire table (the law is silent; ask the local tax office); which year an option filed during activity first covers (Art. 44 and the DGI guide read differently).

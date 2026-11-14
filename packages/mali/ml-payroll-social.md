@@ -6,14 +6,15 @@ jurisdiction: ML
 category: international
 tax_year: 2026
 tax_year_notes: "2026 research draft only; older DGI source baseline, operative 2026 amendment chain unproved."
-version: 0.1
-last_updated: 2026-11-01
+version: 0.2
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
+type: computation
 ---
 
-# Mali payroll and social contributions source-reference draft v0.1
+# Mali payroll and social contributions source-reference draft v0.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 

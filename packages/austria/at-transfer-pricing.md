@@ -1,14 +1,15 @@
 ---
 name: at-transfer-pricing
 description: "Austrian transfer pricing (Verrechnungspreise) for tax year 2026: Austrian companies and permanent establishments dealing with related companies abroad. Covers the arm's length rule in § 6 Z 6 EStG and treaty Article 9, hidden distributions under § 8(2) KStG and the KESt that follows (27.5%, or 23% for a company shareholder, grossed up when the company bears it), the VPR 2021 guidelines (methods, low value-adding services at cost plus 5%, financing), the VPDG master file and local file above EUR 50m revenue in both preceding years, country-by-country reporting at EUR 750m, fines up to EUR 50,000, § 118 BAO rulings (fee EUR 1,500 to 20,000), APAs, MAP and the EU-BStbG. Trigger on: Verrechnungspreis, Fremdvergleich, Master File, Local File, VPDG, verdeckte Ausschüttung, management fee Austria. Out of scope: at-corporate-income-tax (rate, base, return), at-cross-border (residence, exit tax, outbound withholding), at-vat-return."
-version: 0.2
+version: 0.3
 jurisdiction: AT
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: transfer-pricing
+type: situation-rules
 ---
 
 # Austrian transfer pricing (Verrechnungspreise): tax year 2026
@@ -37,19 +38,19 @@ Related skills: `at-corporate-income-tax` (the 23% rate, the taxable base, the K
 | Ownership link that brings in § 6 Z 6 EStG | More than 25% of the capital, either direction | 2026 | EStG § 6 Z 6 lit. a: https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=6 |
 | KESt on a hidden distribution, general rate | 27.5% | 2026 | EStG § 27a(1) Z 2: https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=27a |
 | KESt the payer may withhold when the recipient is a company (§ 1(1) KStG, which includes a foreign company) | 23% | Income received from 2024 | EStG § 93(1a): https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=93 |
-| KESt when the company bears it, as a share of the net advantage | 29.87% (23 / 77) for a company shareholder; 37.93% (27.5 / 72.5) for an individual shareholder | 2026 | VPR 2021 Rz 515 and 517 (gross-up method; 37.93% for individuals; 33.33% for a company shareholder when the company rate was 25%, now 23% under EStG § 93(1a)) |
+| KESt when the company bears it, as a share of the net advantage | 29.87% (computed: 23 / 77) for a company shareholder; 37.93% (27.5 / 72.5) for an individual shareholder | 2026 | VPR 2021 Rz 515 and 517 (gross-up method; 37.93% for individuals; 33.33% for a company shareholder when the company rate was 25%, now 23% under EStG § 93(1a)) https://findok.bmf.gv.at/findok/resources/pdf/450cc0c6-d106-4f65-ba18-e3d0d33d2227/80297.1.1.pdf |
 | Master file and local file: revenue test | Umsatzerlöse over EUR 50,000,000 in each of the two preceding financial years | 2026 | VPDG § 3(2): https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=20009608 |
-| Country-by-country report: group revenue test | Consolidated group revenue of at least EUR 750,000,000 in the preceding financial year | 2026 | VPDG § 3(1) |
+| Country-by-country report: group revenue test | Consolidated group revenue of at least EUR 750,000,000 in the preceding financial year | 2026 | VPDG § 3(1) https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=20009608&Paragraf=3 |
 | Low value-adding intra-group services (optional simplified approach) | Cost plus 5% | 2026 | VPR 2021 Rz 95: https://findok.bmf.gv.at/findok/resources/pdf/450cc0c6-d106-4f65-ba18-e3d0d33d2227/80297.1.1.pdf |
-| Routine services outside that approach, no database study | Net cost-plus mark-up between 3% and 10% (often 5%), justified on the facts | Services from 1 January 2022 | VPR 2021 Rz 90 |
-| Production of master and local file on request | Within 30 days | 2026 | VPDG § 8(2) |
+| Routine services outside that approach, no database study | Net cost-plus mark-up between 3% and 10% (often 5%), justified on the facts | Services from 1 January 2022 | VPR 2021 Rz 90 https://findok.bmf.gv.at/findok/resources/pdf/450cc0c6-d106-4f65-ba18-e3d0d33d2227/80297.1.1.pdf |
+| Production of master and local file on request | Within 30 days | 2026 | VPDG § 8(2) https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=20009608&Paragraf=8 |
 | Fine: country-by-country report late, missing or wrong, intentional | Up to EUR 50,000 | 2026 | FinStrG § 49b(1): https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10003898 |
-| Fine: same, grossly negligent | Up to EUR 25,000 | 2026 | FinStrG § 49b(2) |
-| Fine: intentional breach of a notification or record-keeping duty (CbC notification, master and local file) | Up to EUR 5,000 | 2026 | FinStrG § 51(1) lit. a and c, (2); VPR 2021 Rz 450 and 494 |
+| Fine: same, grossly negligent | Up to EUR 25,000 | 2026 | FinStrG § 49b(2) https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10003898 |
+| Fine: intentional breach of a notification or record-keeping duty (CbC notification, master and local file) | Up to EUR 5,000 | 2026 | FinStrG § 51(1) lit. a and c, (2); VPR 2021 Rz 450 and 494 https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10003898 https://findok.bmf.gv.at/findok/resources/pdf/450cc0c6-d106-4f65-ba18-e3d0d33d2227/80297.1.1.pdf |
 | Ruling fee (Auskunftsbescheid, § 118 BAO) | EUR 1,500; EUR 3,000 above EUR 400,000 revenue; EUR 5,000 above EUR 700,000; EUR 10,000 above the UGB small-company revenue limit; EUR 20,000 above the UGB medium-company revenue limit or for any member of a group that must prepare consolidated accounts | 2026 | BAO § 118(10): https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10003940&Paragraf=118 |
 | UGB revenue limits that § 118(10) points to | EUR 12,500,000 (small) and EUR 50,000,000 (medium). The UGB-Schwellenwerte-Verordnung replaces the words "10 Millionen" and "40 Millionen" in § 221(1) Z 2 and (2) Z 2 themselves, for financial years starting on or after 1 January 2024 | 2026 | UGB § 221(1) Z 2 and (2) Z 2 with notes 2 and 6; UGB-SchweVO, BGBl. II Nr. 318/2024, §§ 1 Z 2 and Z 6, 3: https://www.ris.bka.gv.at/Dokumente/BgblAuth/BGBLA_2024_II_318/BGBLA_2024_II_318.html |
-| Ruling fee if the application is rejected, treated as withdrawn under § 85(2) BAO, or withdrawn before work starts | EUR 500 | 2026 | BAO § 118(11) |
-| Surcharge where the company will not name the recipient of a payment on request | 25% of the amount, on top of corporate tax | 2026 | KStG § 22(3) |
+| Ruling fee if the application is rejected, treated as withdrawn under § 85(2) BAO, or withdrawn before work starts | EUR 500 | 2026 | BAO § 118(11) https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10003940&Paragraf=118 |
+| Surcharge where the company will not name the recipient of a payment on request | 25% of the amount, on top of corporate tax | 2026 | KStG § 22(3) https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004569&Paragraf=22 |
 
 ## The taxable base
 

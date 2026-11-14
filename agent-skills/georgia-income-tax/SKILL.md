@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/georgia-income-tax"
   jurisdiction: "GE"
   tax_year: "2026"
-  last_updated: "2026-10-31"
+  last_updated: "2026-11-14"
 ---
 
-# Georgia (country): personal income tax for individuals and individual entrepreneurs (2026) v0.2
+# Georgia (country): personal income tax for individuals and individual entrepreneurs (2026) v0.3
 
 Georgia taxes individuals at one flat rate of 20%, with a 5% rate for some rent and gains and two special regimes for small traders. There are no progressive bands and no general personal allowance. Figures below are from the Tax Code of Georgia (Law No 3591 of 17 September 2010) as consolidated on matsne.gov.ge to the law of 15 October 2026 (publication 247), read in English and checked against the Georgian text. The tax year is the calendar year.
 
@@ -28,32 +28,32 @@ Georgia taxes individuals at one flat rate of 20%, with a 5% rate for some rent 
 | Item | Rate or amount | Year | Source |
 |---|---|---|---|
 | Income tax on taxable income | 20% flat | 2026 | Tax Code art. 81(1), https://matsne.gov.ge/en/document/view/1043717?publication=247 |
-| Residential rent to a person for living purposes, no deductions claimed | 5% of the rent | 2026 | art. 81(2), same URL |
-| Gain on a flat or house with its land, or on a car | 5% | 2026 | art. 81(3), same URL |
-| Gain on a flat or house with its land owned more than 2 years | exempt | 2026 | art. 82(1)(f.a), same URL |
-| Gain on a car owned more than 6 months after registration | exempt | 2026 | art. 82(1)(f.b), same URL |
-| Gain on other assets owned more than 2 years and not used in business | exempt | 2026 | art. 82(1)(f.c), same URL |
-| Income of a resident that is not Georgian-source | exempt | 2026 | art. 82(1)(u), same URL |
-| Micro business status: gross income limit, no hired staff | GEL 30,000 a year; no income tax | 2026 | art. 84(1), 86, same URL |
-| Micro business: inventory limit | status revoked if inventory exceeds GEL 45,000 | 2026 | art. 85(2)(b), same URL |
-| Small business status | 1% of taxable income | 2026 | art. 90(1), same URL |
-| Small business, after gross income passes the limit | 3%, from the start of the month the limit is passed to year end | 2026 | art. 90(2), same URL |
+| Residential rent to a person for living purposes, no deductions claimed | 5% of the rent | 2026 | art. 81(2), https://matsne.gov.ge/en/document/view/1043717?publication=247 |
+| Gain on a flat or house with its land, or on a car | 5% | 2026 | art. 81(3), https://matsne.gov.ge/en/document/view/1043717?publication=247 |
+| Gain on a flat or house with its land owned more than 2 years | exempt | 2026 | art. 82(1)(f.a), https://matsne.gov.ge/en/document/view/1043717?publication=247 |
+| Gain on a car owned more than 6 months after registration | exempt | 2026 | art. 82(1)(f.b), https://matsne.gov.ge/en/document/view/1043717?publication=247 |
+| Gain on other assets owned more than 2 years and not used in business | exempt | 2026 | art. 82(1)(f.c), https://matsne.gov.ge/en/document/view/1043717?publication=247 |
+| Income of a resident that is not Georgian-source | exempt | 2026 | art. 82(1)(u), https://matsne.gov.ge/en/document/view/1043717?publication=247 |
+| Micro business status: gross income limit, no hired staff | GEL 30,000 a year; no income tax | 2026 | art. 84(1), 86, https://matsne.gov.ge/en/document/view/1043717?publication=247 |
+| Micro business: inventory limit | status revoked if inventory exceeds GEL 45,000 | 2026 | art. 85(2)(b), https://matsne.gov.ge/en/document/view/1043717?publication=247 |
+| Small business status | 1% of taxable income | 2026 | art. 90(1), https://matsne.gov.ge/en/document/view/1043717?publication=247 |
+| Small business, after gross income passes the limit | 3%, from the start of the month the limit is passed to year end | 2026 | art. 90(2), https://matsne.gov.ge/en/document/view/1043717?publication=247 |
 | Construction services (SEK 006-2016 group 41.2, divisions 42, 43) to an enterprise, organisation or individual entrepreneur | outside small business status, taxed under the general rules, from 1 February 2025 | 2026 | Resolution No 415, annex 5, item 12 (Resolution No 436 of 23 December 2024), https://matsne.gov.ge/ka/document/view/6344539 |
-| Small business gross income limit | GEL 500,000; GEL 700,000 for wine tourism and agro tourism operators | 2026 | art. 88(3), 89(2)(a), 90(2), same URL |
-| Salary paid by a new or small small-business employer, not taxed at source | up to GEL 6,000 a year in total | 2026 | art. 94(4), same URL |
-| Dividends from a resident company | 5% at source, final | 2026 | art. 130(1), (3), same URL |
-| Interest | 5% at source, final; interest from a licensed Georgian financial institution exempt | 2026 | art. 131(1), (3), (5), same URL |
-| Royalty paid to a resident individual (not VAT-registered) | 20% at source | 2026 | art. 132(1), same URL |
-| Gifts and inheritance received by first and second line heirs | exempt | 2026 | art. 82(1)(g), same URL |
-| Gifts and inheritance received by third and fourth line heirs | exempt up to GEL 150,000 a year | 2026 | art. 82(1)(i), same URL |
-| Gifts from an individual (not from the employer) | exempt up to GEL 1,000 a year | 2026 | art. 82(1)(h), same URL |
-| Lottery winnings | exempt up to GEL 1,000 | 2026 | art. 82(1)(w), same URL |
-| Contributions to a voluntary private pension | exempt up to GEL 6,000 a year | 2026 | art. 82(1)(b4.a), same URL |
-| Primary supply of Georgian farm produce by a farmer | exempt if gross income from it is up to GEL 200,000, until 1 January 2028 | 2026 | art. 82(1)(k), same URL |
-| Disability from childhood, or severe or persistent disability | first GEL 6,000 of taxable income a year not taxed | 2026 | art. 82(2)(b), same URL |
-| Veterans, single parents, adopters, foster parents and other art. 82(2)(a) groups | first GEL 3,000 of taxable income a year not taxed | 2026 | art. 82(2)(a), same URL |
-| Current tax payments (entrepreneurs) | 25% of last year's tax on each of 15 May, 15 July, 15 September, 15 December | 2026 | art. 155(1), same URL |
-| Penalty interest on late tax | 0.05% of the unpaid tax a day | 2026 | art. 272(4), same URL |
+| Small business gross income limit | GEL 500,000; GEL 700,000 for wine tourism and agro tourism operators | 2026 | art. 88(3), 89(2)(a), 90(2), https://matsne.gov.ge/en/document/view/1043717?publication=247 |
+| Salary paid by a new or small small-business employer, not taxed at source | up to GEL 6,000 a year in total | 2026 | art. 94(4), https://matsne.gov.ge/en/document/view/1043717?publication=247 |
+| Dividends from a resident company | 5% at source, final | 2026 | art. 130(1), (3), https://matsne.gov.ge/en/document/view/1043717?publication=247 |
+| Interest | 5% at source, final; interest from a licensed Georgian financial institution exempt | 2026 | art. 131(1), (3), (5), https://matsne.gov.ge/en/document/view/1043717?publication=247 |
+| Royalty paid to a resident individual (not VAT-registered) | 20% at source | 2026 | art. 132(1), https://matsne.gov.ge/en/document/view/1043717?publication=247 |
+| Gifts and inheritance received by first and second line heirs | exempt | 2026 | art. 82(1)(g), https://matsne.gov.ge/en/document/view/1043717?publication=247 |
+| Gifts and inheritance received by third and fourth line heirs | exempt up to GEL 150,000 a year | 2026 | art. 82(1)(i), https://matsne.gov.ge/en/document/view/1043717?publication=247 |
+| Gifts from an individual (not from the employer) | exempt up to GEL 1,000 a year | 2026 | art. 82(1)(h), https://matsne.gov.ge/en/document/view/1043717?publication=247 |
+| Lottery winnings | exempt up to GEL 1,000 | 2026 | art. 82(1)(w), https://matsne.gov.ge/en/document/view/1043717?publication=247 |
+| Contributions to a voluntary private pension | exempt up to GEL 6,000 a year | 2026 | art. 82(1)(b4.a), https://matsne.gov.ge/en/document/view/1043717?publication=247 |
+| Primary supply of Georgian farm produce by a farmer | exempt if gross income from it is up to GEL 200,000, until 1 January 2028 | 2026 | art. 82(1)(k), https://matsne.gov.ge/en/document/view/1043717?publication=247 |
+| Disability from childhood, or severe or persistent disability | first GEL 6,000 of taxable income a year not taxed | 2026 | art. 82(2)(b), https://matsne.gov.ge/en/document/view/1043717?publication=247 |
+| Veterans, single parents, adopters, foster parents and other art. 82(2)(a) groups | first GEL 3,000 of taxable income a year not taxed | 2026 | art. 82(2)(a), https://matsne.gov.ge/en/document/view/1043717?publication=247 |
+| Current tax payments (entrepreneurs) | 25% of last year's tax on each of 15 May, 15 July, 15 September, 15 December | 2026 | art. 155(1), https://matsne.gov.ge/en/document/view/1043717?publication=247 |
+| Penalty interest on late tax | 0.05% of the unpaid tax a day | 2026 | art. 272(4), https://matsne.gov.ge/en/document/view/1043717?publication=247 |
 
 ## The taxable base
 
@@ -188,4 +188,4 @@ Not yet confirmed: the rest of the Government lists of income outside the micro 
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-31. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `georgia-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/georgia-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `georgia-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/georgia-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

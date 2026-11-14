@@ -1,10 +1,11 @@
 ---
 name: cyprus-payroll
 description: "Cyprus payroll for tax year 2026: PAYE income tax withheld by employers under the Income Tax Law 118(I)/2002 as amended by Law 244(I)/2025 and the Assessment and Collection of Taxes Law 4/1978, with the employee and employer contributions an employer deducts or pays. Covers the T.D.59A declaration, the 2026 bands with the EUR 22,000 tax-free band, the one-fifth cap, the 20% and 50% first-employment deductions through payroll, the 13 or 12 divisor, Social Insurance at 8.8% plus 8.8% up to the 2026 ceiling of EUR 5,742 a month, GHS at 2.65% and 2.90%, the Redundancy, HRDA, Social Cohesion and Central Holiday funds, the minimum wage, monthly PAYE returns through TFA, deadlines and the 1% monthly surcharge. Trigger on: Cyprus payroll 2026, PAYE Cyprus, TD59, TD7, TD63, gross to net Cyprus, employer cost Cyprus. Out of scope: cyprus-social-contributions (self-employed, voluntary, GHS on other income), cyprus-income-tax, cy-cross-border, cy-non-dom."
-version: 0.3
+version: 0.4
+type: computation
 jurisdiction: CY
 tax_year: 2026
-last_updated: 2026-10-27
+last_updated: 2026-11-14
 depends_on:
   - payroll-workflow-base
 category: international
@@ -31,23 +32,23 @@ Sibling skills: contribution detail (self-employed, voluntary contributors, GHS 
 | Item | Rate or amount | Year | Source |
 |---|---|---|---|
 | 0% band, chargeable income up to | EUR 22,000 | 2026 | ITL Second Schedule para. 1(γ), https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html |
-| 20% / 25% / 30% bands | EUR 22,001 to 32,000 / 32,001 to 42,000 / 42,001 to 72,000 | 2026 | Same URL; also T.D. FAQs 11 May 2026, https://www.gov.cy/media/sites/167/2026/05/FAQs-110526.pdf |
-| 35% band | over EUR 72,000 (tax at EUR 72,000 is EUR 13,500) | 2026 | Same URLs |
+| 20% / 25% / 30% bands | EUR 22,001 to 32,000 / 32,001 to 42,000 / 42,001 to 72,000 | 2026 | [ITL Second Schedule para. 1(γ)](https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html); also T.D. FAQs 11 May 2026, https://www.gov.cy/media/sites/167/2026/05/FAQs-110526.pdf |
+| 35% band | over EUR 72,000 (tax at EUR 72,000 is EUR 13,500) | 2026 | [ITL Second Schedule para. 1(γ)](https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html); same T.D. FAQs as the row above |
 | Social Insurance, employee share | 8.8% of insurable earnings | 2026 | Business in Cyprus, https://www.businessincyprus.gov.cy/social-insurance-registration-and-contributions/ |
 | Social Insurance, employer share | 8.8% of insurable earnings | 2026 | Same URL |
 | Social Insurance, state share (not an employer cost) | 5.2% | 2026 | Same URL |
 | Maximum insurable earnings, monthly-paid | EUR 5,742 a month from 1 January 2026 | 2026 | Social Insurance Services notice, December 2025, https://sisweb.mlsi.gov.cy/anotato2025/ |
 | Maximum insurable earnings, weekly-paid | EUR 1,325 a week from 5 January 2026 | 2026 | Same URL |
 | GHS, employee | 2.65% of pay | 2026 | GHS Law 89(I)/2001 art. 19(1)(α), https://www.cylaw.org/nomoi/enop/non-ind/2001_1_89/full.html |
-| GHS, employer | 2.90% of each employee's pay | 2026 | GHS Law art. 19(1)(β), same URL |
+| GHS, employer | 2.90% of each employee's pay | 2026 | [GHS Law art. 19(1)(β)](https://www.cylaw.org/nomoi/enop/non-ind/2001_1_89/full.html)|
 | GHS annual maximum per person, all income added | EUR 180,000 | 2026 | GHS Law art. 19(4)(α); T.D.59A 2026 note 22, https://www.gov.cy/media/sites/167/2026/02/IR59_2026_English__.pdf |
-| Redundancy Fund (employer only, up to the ceiling) | 1.2% | 2026 | Business in Cyprus page above |
+| Redundancy Fund (employer only, up to the ceiling) | 1.2% | 2026 | [Business in Cyprus page above](https://www.businessincyprus.gov.cy/social-insurance-registration-and-contributions/) |
 | Human Resources Development Fund (employer only, up to the ceiling) | 0.5% | 2026 | Same URL |
 | Social Cohesion Fund (employer only, no ceiling) | 2% of total earnings | 2026 | Same URL; Social Insurance Services contributions page, https://www.mlsi.gov.cy/mlsi/sdg/sdg.nsf/All/EA4F396F80C4BAA8C22586A10042659F?OpenDocument |
 | Central Holiday Fund (employer only, unless exempt) | 8% at 20 days of leave to 16% at 40 days (five-day week) | 2026 | Social Insurance Services, Annual Leave, https://www.mlsi.gov.cy/mlsi/sdg/sdg.nsf/All/00DDEF169CC27CAEC22586B7003F35FE?OpenDocument |
-| One-fifth cap on contributions and premiums | 1/5 of the intermediary figure B6 | 2026 | ITL art. 14(2); T.D.59A note 10 |
-| First-employment deduction, 20% option | 20% of pay, max EUR 8,550 | 2026 | ITL art. 8(21A); T.D.59A note 7 |
-| First-employment deduction, 50% option | 50% of pay where pay exceeds EUR 55,000 (art. 8(23A)) or EUR 100,000 (old art. 8(23)) | 2026 | ITL arts. 8(23), 8(23A); T.D.59A note 7 |
+| One-fifth cap on contributions and premiums | 1/5 of the intermediary figure B6 | 2026 | [ITL art. 14(2)](https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html); T.D.59A note 10 |
+| First-employment deduction, 20% option | 20% of pay, max EUR 8,550 | 2026 | [ITL art. 8(21A)](https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html); T.D.59A note 7 |
+| First-employment deduction, 50% option | 50% of pay where pay exceeds EUR 55,000 (art. 8(23A)) or EUR 100,000 (old art. 8(23)) | 2026 | [ITL arts. 8(23), 8(23A)](https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html); T.D.59A note 7 |
 | Minimum wage, full time, after 6 months' continuous employment | EUR 1,088 a month from 1 January 2026 | 2026 | Ministry of Labour statement, 27 December 2025, https://www.gov.cy/ergasia-kai-koinonikes-asfaliseis/dilosi-tou-ypourgou-ergasias-kai-koinonikon-asfaliseon-gia-tin-afxisi-tou-ethnikou-katotatou-misthou/ |
 | Minimum wage, full time, before 6 months | EUR 979 a month from 1 January 2026 | 2026 | Same URL |
 | PAYE late-payment surcharge | 1% for each month of delay | 2026 | ACL art. 44(2), as stated in the PAYE FAQ, https://www.gov.cy/mof-tax/documents/ypovoli-diloseon-t-f-7/dilosi-parakratisis-f-e-kai-eisforon-paye/sychnes-erotiseis-diloseon-parakratisis-f-e-kai-eisforon-paye/ |

@@ -16,13 +16,14 @@ description: >
 jurisdiction: FO
 category: transfer-pricing
 tax_year: 2026
-last_updated: 2026-10-25
-version: 0.2
+last_updated: 2026-11-14
+version: 0.3
 tier: 2
 domain: transfer-pricing
+type: situation-rules
 ---
 
-# Faroe Islands transfer pricing v0.2
+# Faroe Islands transfer pricing v0.3
 
 ## Who this applies to
 

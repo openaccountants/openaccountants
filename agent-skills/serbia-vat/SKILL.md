@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/serbia-vat"
   jurisdiction: "RS"
   tax_year: "2026"
-  last_updated: "2026-10-31"
+  last_updated: "2026-11-14"
 ---
 
 # Serbia: value added tax (PDV), 2026
@@ -37,7 +37,7 @@ See also: [rs-corporate-tax](rs-corporate-tax.md), [serbia-income-tax](serbia-in
 
 | Item | Rate or amount | Year | Source URL |
 |---|---|---|---|
-| General rate (opšta stopa) | 20% | 2026 | https://www.mfin.gov.rs/propisi/zakon-o-porezu-na-dodatu-vrednost2 (ZPDV Art. 23(1)) |
+| General rate (opšta stopa) | 20% | 2026 | https://www.mfin.gov.rs/upload/media/5MwIQ2_6aa12716d86e0.docx (ZPDV Art. 23(1)) |
 | Special rate (posebna stopa) | 10% | 2026 | Same, ZPDV Art. 23(2) |
 | Registration threshold, previous 12 months | above RSD 8,000,000 | 2026 | Same, ZPDV Art. 38(1) and Art. 33(1) |
 | Registration application after crossing the threshold | within 5 days | 2026 | Same, ZPDV Art. 38(1) |
@@ -48,11 +48,11 @@ See also: [rs-corporate-tax](rs-corporate-tax.md), [serbia-income-tax](serbia-in
 | Domestic reverse charge on construction | supplies above RSD 500,000 net of VAT | 2026 | Same, ZPDV Art. 10(2)(3) |
 | VAT compensation to unregistered farmers | 8% | 2026 | Same, ZPDV Art. 34(3) |
 | e-VAT records (EEO output, EPP input) | by the 12th of the month after the period | 2026 | https://www.mfin.gov.rs/propisi/zakon-o-elektronskom-fakturisanju-slubeni-glasnik-rs-br-442021-1292021-1382022-922023-92024-1092025-i-802026-nezvanino-preien-redakcije-slubenog-glasnika- (ZEF Arts. 4 and 4a) |
-| Input tax: e-invoice accepted by | the day before the return is filed, and no later than the 10th of the next month | 2026 | ZPDV Art. 28 |
-| Refund deadline | 45 days, or 15 days for mainly exporters | 2026 | ZPDV Art. 52(4) |
-| Foreign business VAT refund (refakcija), minimum claim | above EUR 200, reciprocity required | 2026 | ZPDV Art. 53(1) |
-| Tourist VAT refund, minimum purchase | RSD 6,000 including VAT | 2026 | ZPDV Art. 24(1)(4) |
-| Late payment interest | NBS annual reference rate plus 10 percentage points, simple interest | 2026 | https://www.mfin.gov.rs/propisi/zakon-o-poreskom-postupku-i-poreskoj-administraciji-0809 (ZPPPA Art. 75(1)) |
+| Input tax: e-invoice accepted by | the day before the return is filed, and no later than the 10th of the next month | 2026 | [ZPDV Art. 28](https://www.mfin.gov.rs/upload/media/5MwIQ2_6aa12716d86e0.docx) |
+| Refund deadline | 45 days, or 15 days for mainly exporters | 2026 | [ZPDV Art. 52(4)](https://www.mfin.gov.rs/upload/media/5MwIQ2_6aa12716d86e0.docx) |
+| Foreign business VAT refund (refakcija), minimum claim | above EUR 200, reciprocity required | 2026 | [ZPDV Art. 53(1)](https://www.mfin.gov.rs/upload/media/5MwIQ2_6aa12716d86e0.docx) |
+| Tourist VAT refund, minimum purchase | RSD 6,000 including VAT | 2026 | [ZPDV Art. 24(1)(4)](https://www.mfin.gov.rs/upload/media/5MwIQ2_6aa12716d86e0.docx) |
+| Late payment interest | NBS annual reference rate plus 10 percentage points, simple interest | 2026 | https://www.mfin.gov.rs/upload/media/2UkJa3_6a9fe325297c3.docx (ZPPPA Art. 75(1)) |
 
 **What the 10% rate covers (Article 23(2)).** Bread and bakery products, milk and dairy, flour, sugar, edible sunflower, maize, rapeseed, soy and olive oil, edible fats and honey; fresh, chilled and frozen fruit, vegetables, meat, fish and eggs; cereals, sunflower, soy, sugar beet and rapeseed; medicines, including veterinary ones; orthotic and prosthetic aids and surgically implanted medical devices; dialysis material; fertiliser, plant protection products, seed, seedlings, animal feed and live livestock; textbooks and teaching aids; daily newspapers; monographic and serial publications; firewood, briquettes and pellets; accommodation in accommodation establishments; tickets for cinema, theatre, fairs, circuses, amusement parks, concerts, exhibitions, sports events, museums, galleries, botanical gardens and zoos (where not exempt); natural gas; heat for heating; transfer of residential buildings and units; drinking water by network, but not bottled water; waste water treatment; municipal waste; public cleaning and green areas; passenger transport with its luggage; cemetery and funeral services. The minister's rulebook defines the scope of most items. Everything else is at 20%.
 
@@ -186,4 +186,4 @@ Not yet confirmed: the PDV Rulebook (Pravilnik o PDV) text for the POPDV fields,
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-31. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `serbia-vat` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/serbia-vat. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `serbia-vat` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/serbia-vat. If neither is available, confirm every figure against the official source pages cited above before relying on it.
