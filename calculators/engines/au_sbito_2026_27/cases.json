@@ -1,6 +1,6 @@
 {
   "engine": "au_sbito_2026_27",
-  "source_commit": "9931ceb6",
+  "source_commit": "c2e3c2b9",
   "about": "Inputs from the platform's parity fixture (src/lib/engines/__tests__/fixtures/python-parity.json) plus one year-guard case; expected is the exact output of run(inputs). The platform's parity test checks these outputs against the Python reference engines of the 6 Nov 2026 A/B test (Malta: against an independent Python reference, mt-income-tax.test.ts).",
   "cases": [
     {
@@ -77,21 +77,21 @@
             "value": 0.16,
             "slug": "au-rates-2026-27",
             "section": "Individual income tax / Offsets and deductions",
-            "quote": "SBITO | 16% of tax on net small business income, cap $1,000, turnover < $5m"
+            "quote": "SBITO | For eligible individuals with positive taxable income: 16% x (total net small business income / taxable income) x basic income tax liability"
           },
           {
             "name": "SBITO_CAP",
             "value": 1000,
             "slug": "au-rates-2026-27",
             "section": "Individual income tax / Offsets and deductions",
-            "quote": "SBITO | ... cap $1,000"
+            "quote": "SBITO | ... capped at $1,000"
           },
           {
             "name": "SBITO_TURNOVER_LIMIT",
             "value": 5000000,
             "slug": "au-rates-2026-27",
             "section": "Individual income tax / Offsets and deductions",
-            "quote": "SBITO | ... turnover < $5m"
+            "quote": "SBITO | ... aggregated turnover must be < $5m"
           },
           {
             "name": "TAX_ON_NET_SBI_METHOD",
@@ -102,7 +102,7 @@
           }
         ],
         "assumptions": [
-          "METHOD NOT STATED IN THE SKILLS: when income is mixed, 'tax on net small business income' is taken as basic income tax liability (before offsets) times net SBI / taxable income. The skill's only example has business = 100% of income.",
+          "Tax on net small business income = basic income tax liability (before offsets) x net small business income / taxable income, the income share capped at 1 (au-rates-2026-27 SBITO row)",
           "Basic income tax liability uses the 2026-27 resident brackets (no Medicare levy)"
         ],
         "skill_anchors_reproduced": [
@@ -112,7 +112,7 @@
         "defaults_assumed": {},
         "tax_year": "2026-27"
       },
-      "receipt_id": "f662c14bbed41e83d3516267ecab6695ccc0c42e87b73901e91ce43f5bcdbc04"
+      "receipt_id": "5731b61876398c63370e12dcace466c724d72d7cc43b38809a440ea5fa0971da"
     },
     {
       "id": "SB-0",
@@ -188,21 +188,21 @@
             "value": 0.16,
             "slug": "au-rates-2026-27",
             "section": "Individual income tax / Offsets and deductions",
-            "quote": "SBITO | 16% of tax on net small business income, cap $1,000, turnover < $5m"
+            "quote": "SBITO | For eligible individuals with positive taxable income: 16% x (total net small business income / taxable income) x basic income tax liability"
           },
           {
             "name": "SBITO_CAP",
             "value": 1000,
             "slug": "au-rates-2026-27",
             "section": "Individual income tax / Offsets and deductions",
-            "quote": "SBITO | ... cap $1,000"
+            "quote": "SBITO | ... capped at $1,000"
           },
           {
             "name": "SBITO_TURNOVER_LIMIT",
             "value": 5000000,
             "slug": "au-rates-2026-27",
             "section": "Individual income tax / Offsets and deductions",
-            "quote": "SBITO | ... turnover < $5m"
+            "quote": "SBITO | ... aggregated turnover must be < $5m"
           },
           {
             "name": "TAX_ON_NET_SBI_METHOD",
@@ -213,7 +213,7 @@
           }
         ],
         "assumptions": [
-          "METHOD NOT STATED IN THE SKILLS: when income is mixed, 'tax on net small business income' is taken as basic income tax liability (before offsets) times net SBI / taxable income. The skill's only example has business = 100% of income.",
+          "Tax on net small business income = basic income tax liability (before offsets) x net small business income / taxable income, the income share capped at 1 (au-rates-2026-27 SBITO row)",
           "Basic income tax liability uses the 2026-27 resident brackets (no Medicare levy)"
         ],
         "skill_anchors_reproduced": [
@@ -223,7 +223,7 @@
         "defaults_assumed": {},
         "tax_year": "2026-27"
       },
-      "receipt_id": "c385925274abff2e8ceef69d89d611fd231cae8b7cb8c2b8023d5c22f95f4093"
+      "receipt_id": "3db064a9a0d14e16af822ecfbb5fe2747f64be576f8b68b85fe82b9768f8e291"
     },
     {
       "id": "SB-1",
@@ -299,21 +299,21 @@
             "value": 0.16,
             "slug": "au-rates-2026-27",
             "section": "Individual income tax / Offsets and deductions",
-            "quote": "SBITO | 16% of tax on net small business income, cap $1,000, turnover < $5m"
+            "quote": "SBITO | For eligible individuals with positive taxable income: 16% x (total net small business income / taxable income) x basic income tax liability"
           },
           {
             "name": "SBITO_CAP",
             "value": 1000,
             "slug": "au-rates-2026-27",
             "section": "Individual income tax / Offsets and deductions",
-            "quote": "SBITO | ... cap $1,000"
+            "quote": "SBITO | ... capped at $1,000"
           },
           {
             "name": "SBITO_TURNOVER_LIMIT",
             "value": 5000000,
             "slug": "au-rates-2026-27",
             "section": "Individual income tax / Offsets and deductions",
-            "quote": "SBITO | ... turnover < $5m"
+            "quote": "SBITO | ... aggregated turnover must be < $5m"
           },
           {
             "name": "TAX_ON_NET_SBI_METHOD",
@@ -324,7 +324,7 @@
           }
         ],
         "assumptions": [
-          "METHOD NOT STATED IN THE SKILLS: when income is mixed, 'tax on net small business income' is taken as basic income tax liability (before offsets) times net SBI / taxable income. The skill's only example has business = 100% of income.",
+          "Tax on net small business income = basic income tax liability (before offsets) x net small business income / taxable income, the income share capped at 1 (au-rates-2026-27 SBITO row)",
           "Basic income tax liability uses the 2026-27 resident brackets (no Medicare levy)"
         ],
         "skill_anchors_reproduced": [
@@ -334,7 +334,7 @@
         "defaults_assumed": {},
         "tax_year": "2026-27"
       },
-      "receipt_id": "834834bdedcd9735a872464e922cc5e5db3ff083dbd1f762d53479db49b75eb9"
+      "receipt_id": "876599682dd024ee0fbe5046b741459421aa00f916dc101b1b9901b2921fa834"
     },
     {
       "id": "SB-2",
@@ -410,21 +410,21 @@
             "value": 0.16,
             "slug": "au-rates-2026-27",
             "section": "Individual income tax / Offsets and deductions",
-            "quote": "SBITO | 16% of tax on net small business income, cap $1,000, turnover < $5m"
+            "quote": "SBITO | For eligible individuals with positive taxable income: 16% x (total net small business income / taxable income) x basic income tax liability"
           },
           {
             "name": "SBITO_CAP",
             "value": 1000,
             "slug": "au-rates-2026-27",
             "section": "Individual income tax / Offsets and deductions",
-            "quote": "SBITO | ... cap $1,000"
+            "quote": "SBITO | ... capped at $1,000"
           },
           {
             "name": "SBITO_TURNOVER_LIMIT",
             "value": 5000000,
             "slug": "au-rates-2026-27",
             "section": "Individual income tax / Offsets and deductions",
-            "quote": "SBITO | ... turnover < $5m"
+            "quote": "SBITO | ... aggregated turnover must be < $5m"
           },
           {
             "name": "TAX_ON_NET_SBI_METHOD",
@@ -435,7 +435,7 @@
           }
         ],
         "assumptions": [
-          "METHOD NOT STATED IN THE SKILLS: when income is mixed, 'tax on net small business income' is taken as basic income tax liability (before offsets) times net SBI / taxable income. The skill's only example has business = 100% of income.",
+          "Tax on net small business income = basic income tax liability (before offsets) x net small business income / taxable income, the income share capped at 1 (au-rates-2026-27 SBITO row)",
           "Basic income tax liability uses the 2026-27 resident brackets (no Medicare levy)"
         ],
         "skill_anchors_reproduced": [
@@ -445,7 +445,7 @@
         "defaults_assumed": {},
         "tax_year": "2026-27"
       },
-      "receipt_id": "40b1f49909d502b9648b0a3cf1751f012d1afb4c800444f2285d416f904475a2"
+      "receipt_id": "e1644809972131077fadd271f4e4893cd65ee7cf001a449d79464eacf6f4698f"
     },
     {
       "id": "SB-3",
@@ -521,21 +521,21 @@
             "value": 0.16,
             "slug": "au-rates-2026-27",
             "section": "Individual income tax / Offsets and deductions",
-            "quote": "SBITO | 16% of tax on net small business income, cap $1,000, turnover < $5m"
+            "quote": "SBITO | For eligible individuals with positive taxable income: 16% x (total net small business income / taxable income) x basic income tax liability"
           },
           {
             "name": "SBITO_CAP",
             "value": 1000,
             "slug": "au-rates-2026-27",
             "section": "Individual income tax / Offsets and deductions",
-            "quote": "SBITO | ... cap $1,000"
+            "quote": "SBITO | ... capped at $1,000"
           },
           {
             "name": "SBITO_TURNOVER_LIMIT",
             "value": 5000000,
             "slug": "au-rates-2026-27",
             "section": "Individual income tax / Offsets and deductions",
-            "quote": "SBITO | ... turnover < $5m"
+            "quote": "SBITO | ... aggregated turnover must be < $5m"
           },
           {
             "name": "TAX_ON_NET_SBI_METHOD",
@@ -546,7 +546,7 @@
           }
         ],
         "assumptions": [
-          "METHOD NOT STATED IN THE SKILLS: when income is mixed, 'tax on net small business income' is taken as basic income tax liability (before offsets) times net SBI / taxable income. The skill's only example has business = 100% of income.",
+          "Tax on net small business income = basic income tax liability (before offsets) x net small business income / taxable income, the income share capped at 1 (au-rates-2026-27 SBITO row)",
           "Basic income tax liability uses the 2026-27 resident brackets (no Medicare levy)"
         ],
         "skill_anchors_reproduced": [
@@ -556,7 +556,7 @@
         "defaults_assumed": {},
         "tax_year": "2026-27"
       },
-      "receipt_id": "dbe2fba5fdc472a513f2e69a43ba874cd0fd193fff3fe30fdd028792761d5ee4"
+      "receipt_id": "7f3fbd0ae3d754840eb82f2684a7f4ed623c83857e9a0fb06599f02ffa996cf5"
     },
     {
       "id": "SB-4",
@@ -632,21 +632,21 @@
             "value": 0.16,
             "slug": "au-rates-2026-27",
             "section": "Individual income tax / Offsets and deductions",
-            "quote": "SBITO | 16% of tax on net small business income, cap $1,000, turnover < $5m"
+            "quote": "SBITO | For eligible individuals with positive taxable income: 16% x (total net small business income / taxable income) x basic income tax liability"
           },
           {
             "name": "SBITO_CAP",
             "value": 1000,
             "slug": "au-rates-2026-27",
             "section": "Individual income tax / Offsets and deductions",
-            "quote": "SBITO | ... cap $1,000"
+            "quote": "SBITO | ... capped at $1,000"
           },
           {
             "name": "SBITO_TURNOVER_LIMIT",
             "value": 5000000,
             "slug": "au-rates-2026-27",
             "section": "Individual income tax / Offsets and deductions",
-            "quote": "SBITO | ... turnover < $5m"
+            "quote": "SBITO | ... aggregated turnover must be < $5m"
           },
           {
             "name": "TAX_ON_NET_SBI_METHOD",
@@ -657,7 +657,7 @@
           }
         ],
         "assumptions": [
-          "METHOD NOT STATED IN THE SKILLS: when income is mixed, 'tax on net small business income' is taken as basic income tax liability (before offsets) times net SBI / taxable income. The skill's only example has business = 100% of income.",
+          "Tax on net small business income = basic income tax liability (before offsets) x net small business income / taxable income, the income share capped at 1 (au-rates-2026-27 SBITO row)",
           "Basic income tax liability uses the 2026-27 resident brackets (no Medicare levy)"
         ],
         "skill_anchors_reproduced": [
@@ -667,7 +667,7 @@
         "defaults_assumed": {},
         "tax_year": "2026-27"
       },
-      "receipt_id": "57f025f0e220b72c51a4edaad408f45a73ea1493671746f0ef0d38e09813b047"
+      "receipt_id": "91c77197a9d3979dbb7d27d2d6d5c9cf9caaf2a653f2bfef0b66c262a0745316"
     },
     {
       "id": "SB-5",
@@ -737,21 +737,21 @@
             "value": 0.16,
             "slug": "au-rates-2026-27",
             "section": "Individual income tax / Offsets and deductions",
-            "quote": "SBITO | 16% of tax on net small business income, cap $1,000, turnover < $5m"
+            "quote": "SBITO | For eligible individuals with positive taxable income: 16% x (total net small business income / taxable income) x basic income tax liability"
           },
           {
             "name": "SBITO_CAP",
             "value": 1000,
             "slug": "au-rates-2026-27",
             "section": "Individual income tax / Offsets and deductions",
-            "quote": "SBITO | ... cap $1,000"
+            "quote": "SBITO | ... capped at $1,000"
           },
           {
             "name": "SBITO_TURNOVER_LIMIT",
             "value": 5000000,
             "slug": "au-rates-2026-27",
             "section": "Individual income tax / Offsets and deductions",
-            "quote": "SBITO | ... turnover < $5m"
+            "quote": "SBITO | ... aggregated turnover must be < $5m"
           },
           {
             "name": "TAX_ON_NET_SBI_METHOD",
@@ -769,7 +769,7 @@
         "defaults_assumed": {},
         "tax_year": "2026-27"
       },
-      "receipt_id": "7632614fd17cc15cdbfbc56db0eeb640168ebe34c4938fb0676c9a7bf79fbe9d"
+      "receipt_id": "9e1db0776bda87e4c5d7b2fdde6c540284274a7059b0dd306c7d0dfa3988562b"
     },
     {
       "id": "SB-6",
@@ -838,21 +838,21 @@
             "value": 0.16,
             "slug": "au-rates-2026-27",
             "section": "Individual income tax / Offsets and deductions",
-            "quote": "SBITO | 16% of tax on net small business income, cap $1,000, turnover < $5m"
+            "quote": "SBITO | For eligible individuals with positive taxable income: 16% x (total net small business income / taxable income) x basic income tax liability"
           },
           {
             "name": "SBITO_CAP",
             "value": 1000,
             "slug": "au-rates-2026-27",
             "section": "Individual income tax / Offsets and deductions",
-            "quote": "SBITO | ... cap $1,000"
+            "quote": "SBITO | ... capped at $1,000"
           },
           {
             "name": "SBITO_TURNOVER_LIMIT",
             "value": 5000000,
             "slug": "au-rates-2026-27",
             "section": "Individual income tax / Offsets and deductions",
-            "quote": "SBITO | ... turnover < $5m"
+            "quote": "SBITO | ... aggregated turnover must be < $5m"
           },
           {
             "name": "TAX_ON_NET_SBI_METHOD",
@@ -870,7 +870,7 @@
         "defaults_assumed": {},
         "tax_year": "2026-27"
       },
-      "receipt_id": "f2f0d6364b40a31b668967f8d36e5826fd703ab750fd464b3678529096a2a6e2"
+      "receipt_id": "e6a72867bb43bf543b2fef3f085779c7c73811f6453b53b3a27bd882c43f1966"
     },
     {
       "id": "SB-7",
@@ -946,21 +946,21 @@
             "value": 0.16,
             "slug": "au-rates-2026-27",
             "section": "Individual income tax / Offsets and deductions",
-            "quote": "SBITO | 16% of tax on net small business income, cap $1,000, turnover < $5m"
+            "quote": "SBITO | For eligible individuals with positive taxable income: 16% x (total net small business income / taxable income) x basic income tax liability"
           },
           {
             "name": "SBITO_CAP",
             "value": 1000,
             "slug": "au-rates-2026-27",
             "section": "Individual income tax / Offsets and deductions",
-            "quote": "SBITO | ... cap $1,000"
+            "quote": "SBITO | ... capped at $1,000"
           },
           {
             "name": "SBITO_TURNOVER_LIMIT",
             "value": 5000000,
             "slug": "au-rates-2026-27",
             "section": "Individual income tax / Offsets and deductions",
-            "quote": "SBITO | ... turnover < $5m"
+            "quote": "SBITO | ... aggregated turnover must be < $5m"
           },
           {
             "name": "TAX_ON_NET_SBI_METHOD",
@@ -971,7 +971,7 @@
           }
         ],
         "assumptions": [
-          "METHOD NOT STATED IN THE SKILLS: when income is mixed, 'tax on net small business income' is taken as basic income tax liability (before offsets) times net SBI / taxable income. The skill's only example has business = 100% of income.",
+          "Tax on net small business income = basic income tax liability (before offsets) x net small business income / taxable income, the income share capped at 1 (au-rates-2026-27 SBITO row)",
           "Basic income tax liability uses the 2026-27 resident brackets (no Medicare levy)"
         ],
         "skill_anchors_reproduced": [
@@ -981,7 +981,7 @@
         "defaults_assumed": {},
         "tax_year": "2026-27"
       },
-      "receipt_id": "fcf30425323de93c9d51f55986e2afa395e3211703fafbfdac8d55135f94cb0e"
+      "receipt_id": "9683e0638cbda2c313a89c2976e19b2512258350ad3274dc20ce04ec63192fc5"
     },
     {
       "id": "SB-missing",
@@ -1047,7 +1047,7 @@
         "constants_used": [],
         "instruction": "No OpenAccountants skill serves this figure. Do not invent it: say it is missing, or cite an official source you fetched yourself and label it as not from OpenAccountants."
       },
-      "receipt_id": "0951996c0adf18f27b5352e9993fbb0c65884ed05232273853788eaf76c12d83"
+      "receipt_id": "aff81566f4c210f5e5094daed28c9cbd8e748d341f31caae59ef4cb554f39849"
     }
   ]
 }
