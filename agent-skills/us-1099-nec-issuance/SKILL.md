@@ -1,434 +1,308 @@
 ---
 name: us-1099-nec-issuance
-description: "Tier 2 content skill for determining which contractor payments made by a US sole proprietor or single-member LLC require issuing Form 1099-NEC and producing the information returns for tax year 2025. Covers the §6041A $600 reporting threshold (rising to $600 for electronic payments after repeated deferrals of the §6050W $600 threshold), the corporate exception under Treas. Reg. §1.6041-3(p), the attorney exception under §6045(f), the medical/health care exception under §6041A(a)(2), the Form W-9 collection requirement, backup withholding at 24% under §3406, the January 31 filing deadline under §6071(c), e-filing requirements under §6011(e) and the 2025 threshold of 10 forms, penalties for failure to file under §6721 and failure to furnish under §6722, TIN matching and B-notice procedures, and state filing requirements. MUST be loaded alongside us-tax-workflow-base v0.1+. Federal only."
+description: "Decide which 2026 payments by a US sole proprietor or single-member LLC to contractors need a Form 1099-NEC, and produce the forms on time. Covers the USD 2,000 threshold for payments made after 31 December 2025 (raised from USD 600 by Public Law 119-21 section 70433 and indexed from 2027), the corporate exception and its carve-outs for attorneys and medical payments, Form W-9 collection, 24% backup withholding, the 31 January due date (1 February 2027 for 2026 forms), the 10-return e-file rule and IRIS replacing FIRE, the section 6721 and 6722 penalties for returns due in 2027, B-notices and state filing. Trigger on \"1099-NEC\", \"do I need to send a 1099\", \"contractor 1099\", \"W-9\", \"backup withholding\", \"1099 penalty\", \"1099 threshold 2026\". Payments by card or payment app go on Form 1099-K instead (us-1099-k-and-payment-processors). Federal only."
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/us-1099-nec-issuance"
   jurisdiction: "US"
-  tax_year: "2025"
-  last_updated: "2026-07-13"
+  tax_year: "2026"
+  last_updated: "2026-11-13"
 ---
 
-# US 1099 NEC Issuance
+# US Form 1099-NEC issuance, payments made in 2026
 
-## US 1099-NEC Issuance Skill v0.2
+> **Source-cited draft.** Built from Rev. Proc. 2025-32, Public Law 119-21 sections 70432 and 70433, the Instructions for Forms 1099-MISC and 1099-NEC (Rev. December 2026), Pub. 1099 (2026), Pub. 1281 and 26 U.S.C. 3406, 6041A, 6045, 6050W, 6071, 6011, 6721, 6722, 6724 and 7503, read on 2026-11-13. No accountant has reviewed it. All outputs must be reviewed by a qualified tax professional before filing.
 
-## Rates and thresholds
+**Answer first.** For payments made in 2026, a business files Form 1099-NEC for each non-corporate contractor it paid **USD 2,000** or more for services during the year (it was USD 600 for 2025 payments). Attorneys get one whatever their entity type. Payments by credit card, debit card or a payment app such as PayPal Goods and Services are reported by the processor on Form 1099-K, not on 1099-NEC. The 2026 forms are due to the IRS and the contractor by **Monday 1 February 2027** (31 January 2027 is a Sunday), with no automatic extension. A business filing 10 or more information returns of all kinds must e-file, and from the 2027 filing season the IRS accepts e-filed information returns only through IRIS (FIRE is retired). If a contractor gives no taxpayer identification number, the payer must withhold 24%.
 
-- **Review statement** — Reviewed against the cited tax authorities by a licensed accountant on 2026-06-03. Items flagged for further clarification are tracked separately and excluded here. This block is generated from verified skill_facts — edit the facts, not the prose.  _(n/a)_
+## Scope and who this is for
 
-### 1099-NEC
+In scope: a US sole proprietor filing Schedule C, or a single-member LLC treated as disregarded, that pays non-employees for services in the course of its trade or business in calendar 2026. The skill decides, for each payee, whether a 1099-NEC is required; captures the data for boxes 1a, 2 and 4; flags missing W-9s and the backup withholding duty; works out penalties for late or missing forms; tests the e-file requirement; and flags state filing. It produces working papers for a credentialed reviewer (EA, CPA or attorney). It does not file the forms; that is done in IRIS, through an IRS-approved provider, or on paper.
 
-- **Threshold** — $600 for 2025 payments (OBBBA raises the threshold to $2,000 for payments after 12/31/2025)  _(IRC 6041A; OBBBA.)_
-- **Backup WH** — 24% backup withholding (made permanent by OBBBA)  _(IRC 3406.)_
-- **Due** — File with IRS and furnish recipient by January 31 (no automatic 30-day extension)  _(IRC 6071(c); 1099-NEC instr.)_
-- **After Aug 1** — 2025 late-filing penalty tiers $60/$130/$340; $340 applies if filed after Aug 1 or not filed  _([IRC 6721; 2025 General Instr. for Certain Information Returns.](https://www.irs.gov/instructions/i1099gi))_
+The expense is deductible on Schedule C whether or not the 1099-NEC is issued; failing to issue it brings penalties and audit risk, not loss of the deduction.
 
-## What this file is, and what it is not
+Out of scope, and where it goes:
 
-This file is a content skill that loads on top of us-tax-workflow-base v0.1. It provides the rules for determining which payments to non-employees require issuing Form 1099-NEC, and for producing the information returns correctly and on time. It does not classify the underlying business expenses — that comes from us-sole-prop-bookkeeping. It does not compute Schedule C deductions — the expense is deductible regardless of whether the 1099-NEC is issued (though failure to issue may increase audit risk and trigger penalties).
+| Topic | Skill |
+| --- | --- |
+| Payments by card, payment app or marketplace, and reconciling a Form 1099-K received | `us-1099-k-and-payment-processors` |
+| Classifying the business's transactions into Schedule C lines | `us-sole-prop-bookkeeping` |
+| The Schedule C deduction and self-employment tax of the person who receives the 1099-NEC | `us-schedule-c-and-se-computation` |
+| Employees (Form W-2, payroll withholding, Forms 941 and 940) | `us-form-941-940-payroll` |
+| Nonresident alien payees (Form 1042-S, W-8BEN, 30% withholding) | refer |
+| Form 1099-MISC boxes other than the overlaps named below, 1099-INT, 1099-DIV | refer |
+| Worker classification (employee or contractor) | flagged for the reviewer, not decided here |
+| State information returns beyond the Combined Federal/State Filing Program | the state's skill |
 
-Tax year coverage. This skill is current for tax year 2025 (forms due January 31, 2026) as of its currency date (April 2026). It reflects the One Big Beautiful Bill Act (Public Law 119-21, signed July 4, 2025) and all IRS guidance available as of the currency date.
+## Ask the client first
 
-Scope. This skill determines, for each payee, whether a 1099-NEC is required, captures the required data fields, flags missing W-9s, computes backup withholding obligations, identifies penalties for late or missing filings, and produces a checklist for the reviewer. It does not prepare the actual electronic filing — that is done through IRS FIRE system, an IRS-approved e-file provider, or paper forms.
+1. **A list of every person or business paid for services in 2026**, with the total paid to each, and how each payment was made (check, ACH, wire, cash, Zelle, Venmo or PayPal personal, card, PayPal Goods and Services, Stripe, Square). Card and payment app payments drop out of the 1099-NEC count.
+2. **A Form W-9 for each payee**, dated, with line 3 (tax classification) and the TIN. If any is missing, ask whether any payment was withheld on.
+3. **Whether any payee is an attorney or law firm**, and whether any payment was a settlement paid to an attorney for a claimant (that is 1099-MISC box 10, not 1099-NEC).
+4. **Medical or health care payments** (occupational health, drug testing): these go on 1099-MISC box 6.
+5. **Direct sales:** did the business sell USD 5,000 or more of consumer products to anyone for resale outside a permanent retail establishment? That is 1099-NEC box 2 (or 1099-MISC box 7).
+6. **Total information returns** the business will file for 2026 (1099-NEC, 1099-MISC, W-2 and others): 10 or more means e-file.
+7. **Any CP2100 or CP2100A notice** received in 2026 (B-notice duty), and whether a second one arrived within 3 years.
+8. **Foreign payees**, payees who died during the year, staffing agencies, joint ventures, and payments in virtual currency.
+9. **The states** where the business and each payee are, for state filing.
 
-The reviewer is the customer of this output. Per the base, this skill assumes a credentialed reviewer (Enrolled Agent, CPA, or attorney under Circular 230) reviews and signs off. The skill produces working papers, not filed returns.
+## The method, step by step
 
-## Section 1 — Scope statement
+### Rates, bands and thresholds
 
-This skill covers Form 1099-NEC issuance for tax year 2025 for filers who are:
-
-- US sole proprietors filing Schedule C, OR
-- Single-member LLCs treated as disregarded entities for federal income tax purposes
-
-For the following kinds of work:
-
-- Identifying which payments require a 1099-NEC (the $600 threshold, service vs non-service payments, payee entity type)
-- Applying the corporate exception and its carve-outs (attorneys, medical/health care)
-- Flagging missing Form W-9s and computing backup withholding obligations
-- Verifying TINs and handling B-notices
-- Producing the 1099-NEC data for each required payee (Boxes 1, 4, 5-7)
-- Computing filing penalties under §6721 and §6722 for late or missing forms
-- Identifying the e-filing requirement threshold
-- Flagging state filing requirements (Combined Federal/State Filing Program)
-
-This skill does NOT cover:
-
-- Form 1099-MISC — different form for rents, royalties, prizes, etc.
-- Form 1099-K — issued by payment settlement entities (PayPal, Stripe, etc.), not by the payer
-- Form 1099-INT, 1099-DIV, or other information returns — out of scope
-- The Schedule C deduction for the underlying payment — handled by us-sole-prop-bookkeeping
-- State-specific information return requirements beyond the Combined Federal/State Filing Program
-- Worker classification (employee vs independent contractor) — flagged for reviewer but not adjudicated
-
-## Section 2 — Year coverage and currency
-
-Tax year covered: 2025 (forms due to recipients and the IRS by January 31, 2026).
-
-Currency date: April 2026.
-
-Legislation reflected:
-- Internal Revenue Code as in force for tax year 2025
-- One Big Beautiful Bill Act (OBBBA), Public Law 119-21, signed July 4, 2025
-- American Rescue Plan Act of 2021 §9674 (§6050W threshold reduction — repeatedly deferred)
-- IRS Notice 2024-85 (deferral of $600 threshold for third-party settlement organizations to 2026; $5,000 threshold for TY2025)
-- IRS Form 1099-NEC Instructions for tax year 2025
-- IRS General Instructions for Certain Information Returns (2025)
-- Treasury Regulations under §6041, §6041A, §6045(f), and §3406
-
-Currency limitations:
-- The §6050W reporting threshold for third-party settlement organizations (Form 1099-K) has been repeatedly deferred. For TY2025, the threshold is more than $20,000 and more than 200 transactions (P.L. 119-21, sec. 70432, effective as if included in section 9674 of the American Rescue Plan Act). This does NOT affect the 1099-NEC threshold, which is $600 under §6041A for 2025 payments (increased to $2,000 for tax years beginning after 2025). However, some payments previously reported on 1099-NEC may also be reported on 1099-K by the payment processor, creating potential duplicate reporting that must be managed.
-
-## Section 3 — Year-specific figures table for tax year 2025
-
-### Filing thresholds
-
-**Filing thresholds**  _(IRC §6041A(a); §6041(a))_
-
-| Figure | Value for TY2025 | Primary source |
+| Item | Amount | Source |
 | --- | --- | --- |
-| 1099-NEC filing threshold (nonemployee compensation) | $600 | IRC §6041A(a); §6041(a) |
-| Applies to: payments for services | Yes | IRC §6041A(a)(1) |
-| Applies to: payments for goods/merchandise | No | IRC §6041A applies to services; goods are not reportable on 1099-NEC |
-| Direct sales threshold (consumer products for resale) | $5,000 | IRC §6041A(b) — reported in Box 2 of 1099-NEC |
+| Reporting threshold for payments made after 31 December 2025 (section 6041(a), applied to services by 6041A(a)(2)) | USD 2,000 | [Rev. Proc. 2025-32, section 2.15](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
+| Threshold for payments made in 2025 (forms filed in early 2026) | USD 600 | [Public Law 119-21, section 70433(a)](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
+| Inflation indexing of the USD 2,000, rounded to the nearest USD 100 | Calendar years after 2026 | [Public Law 119-21, section 70433(b)](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
+| Direct sales of consumer products for resale (box 2) | USD 5,000 | [Instructions for Forms 1099-MISC and 1099-NEC (12-2026), box 2](https://www.irs.gov/pub/irs-pdf/i1099mec.pdf) |
+| Gross proceeds paid to an attorney (1099-MISC box 10) | USD 600 | [Instructions for Forms 1099-MISC and 1099-NEC (12-2026)](https://www.irs.gov/pub/irs-pdf/i1099mec.pdf) |
+| Medical and health care payments (1099-MISC box 6) | USD 2,000 | [Instructions for Forms 1099-MISC and 1099-NEC (12-2026), box 6](https://www.irs.gov/pub/irs-pdf/i1099mec.pdf) |
+| Cash payments for fish bought for resale (1099-MISC box 11) | USD 600 | [Instructions for Forms 1099-MISC and 1099-NEC (12-2026), box 11](https://www.irs.gov/pub/irs-pdf/i1099mec.pdf) |
+| Royalties (1099-MISC box 2) | USD 10 | [Instructions for Forms 1099-MISC and 1099-NEC (12-2026)](https://www.irs.gov/pub/irs-pdf/i1099mec.pdf) |
+| Backup withholding rate | 24% | [26 U.S.C. 3406(a)(1)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleC-chap24-sec3406.htm) |
+| Due date to the IRS and to the payee | 31 January (no automatic extension) | [26 U.S.C. 6071(c)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap61-subchapA-partV-sec6071.htm) |
+| Due date shift when the day is a weekend or holiday | Next business day | [26 U.S.C. 7503](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap77-sec7503.htm) |
+| E-file required at this many information returns (all types aggregated) | 10 | [Pub. 1099 (2026), Reminders](https://www.irs.gov/pub/irs-pdf/p1099.pdf) |
+| Penalty per return, corrected within 30 days of the due date (returns due 2027) | USD 60 | [Rev. Proc. 2025-32, section 4.57](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
+| Penalty per return, corrected after 30 days but by 1 August | USD 130 | [Rev. Proc. 2025-32, section 4.57](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
+| Penalty per return, general rule (after 1 August or never filed) | USD 340 | [Rev. Proc. 2025-32, section 4.57](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
+| Calendar-year maximum, gross receipts USD 5,000,000 or less: 30-day tier / 1 August tier / general | USD 244,500 / USD 698,500 / USD 1,397,000 | [Rev. Proc. 2025-32, section 4.57(2)](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
+| Calendar-year maximum, gross receipts over USD 5,000,000: 30-day tier / 1 August tier / general | USD 698,500 / USD 2,095,500 / USD 4,191,500 | [Rev. Proc. 2025-32, section 4.57(1)](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
+| Intentional disregard, per return | Greater of USD 690 or 10% of the amounts required to be reported, no maximum | [Rev. Proc. 2025-32, section 4.57(3)](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
+| Payee statement penalties (section 6722), statements due 2027 | Same amounts and maximums as section 6721 | [Rev. Proc. 2025-32, section 4.58](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
+| Records: keep copies at least | 3 years (4 years if backup withholding was imposed) | [Pub. 1099 (2026), Keeping copies](https://www.irs.gov/pub/irs-pdf/p1099.pdf) |
+| First B-notice: send to the payee within | 15 business days of the CP2100 or CP2100A | [Pub. 1281](https://www.irs.gov/pub/irs-pdf/p1281.pdf) |
+| Start backup withholding if no response by | 30 business days after the CP2100 or CP2100A | [Pub. 1281](https://www.irs.gov/pub/irs-pdf/p1281.pdf) |
 
-### Backup withholding
+The USD 2,000 threshold also sets when backup withholding applies to payments reportable under section 6041 (section 3406(b)(6), as amended by section 70433(d)). The attorney gross proceeds and fish amounts stayed at USD 600 because they sit in other sections (6045(f) and 6050R) that Public Law 119-21 did not change.
 
-**Backup withholding**  _(IRC §3406(a)(1))_
+### Step 1: list the payees and drop what is not a 1099-NEC payment
 
-| Figure | Value for TY2025 | Primary source |
+For each payee, total the 2026 payments for services in the course of the trade or business. Then remove:
+
+- **Card and payment app payments.** Payments made with a credit, debit or gift card, and payments through a third party settlement organization (PayPal Goods and Services, Stripe, Square, and similar), "must be reported on Form 1099-K by the payment settlement entity under section 6050W and are not subject to reporting on Form 1099-MISC or Form 1099-NEC". Source: [Instructions for Forms 1099-MISC and 1099-NEC (12-2026)](https://www.irs.gov/pub/irs-pdf/i1099mec.pdf). Peer-to-peer transfers that are not a third party network transaction for the payee (Zelle, Venmo or Cash App personal, a bank transfer) stay with the payer.
+- **Goods and merchandise.** Not services; not on 1099-NEC (rent and royalties are 1099-MISC).
+- **Employees.** They get a Form W-2.
+- **Personal payments.** Only trade or business payments are reportable.
+
+### Step 2: apply the USD 2,000 test per payee
+
+The threshold applies per payee per calendar year to the total paid, not per invoice. If the total reaches USD 2,000, the whole amount goes in box 1a, not just the excess. The test is "equals or exceeds" (section 6041A(a)(2) as amended): USD 2,000.00 is reportable, USD 1,999.99 is not. Source: [Public Law 119-21, section 70433(c)](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm).
+
+Services include professional fees (accounting, legal, consulting, design, programming), contract labor and subcontractors, commissions to non-employees, fees to independent directors, prizes and awards for services to non-employees, and payments for parts and labor where the labor cannot be separated (report the full amount).
+
+### Step 3: apply the corporate exception, then its carve-outs
+
+- **Corporations are generally exempt.** Payments to a C corporation, an S corporation, or an LLC that elected to be taxed as one (Form W-9 line 3) need no 1099-NEC. Source: Treas. Reg. 1.6041-3(p), referred to in the [Instructions for Forms 1099-MISC and 1099-NEC](https://www.irs.gov/pub/irs-pdf/i1099mec.pdf).
+- **Attorneys: always report.** Attorneys' fees for legal services of USD 2,000 or more go in 1099-NEC box 1a whatever the entity type (sole practitioner, partnership, professional corporation, S corporation, LLC). "The term 'attorney' includes a law firm or other provider of legal services." Gross proceeds paid to an attorney, for example a settlement paid for a claimant, go in 1099-MISC box 10 once they reach USD 600. Source: [26 U.S.C. 6045(f)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap61-subchapA-partIII-subpartB-sec6045.htm); [Instructions for Forms 1099-MISC and 1099-NEC](https://www.irs.gov/pub/irs-pdf/i1099mec.pdf).
+- **Medical and health care payments:** 1099-MISC box 6 at USD 2,000 or more, including to a corporation. Not the owner's own health insurance (that is a deduction under section 162(l), not a 1099 matter).
+- **Fish bought for resale:** cash payments of USD 600 or more, 1099-MISC box 11, regardless of corporate status. Rare for clients in scope.
+- **Substitute payments in lieu of dividends or tax-exempt interest:** reportable regardless of corporate status (1099-MISC box 8). Rare for clients in scope.
+
+### Step 4: W-9 and backup withholding
+
+Before the first payment, collect Form W-9: legal name, business name, federal tax classification, exemption codes, TIN (SSN or EIN), and certification that the TIN is correct and the payee is not subject to backup withholding.
+
+If the payee gives no TIN, or the IRS says the TIN is wrong, or the payee does not certify, the payer must withhold 24% from reportable payments. Source: [26 U.S.C. 3406(a)(1)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleC-chap24-sec3406.htm). Mechanics: withhold 24% of each payment; deposit it as nonpayroll withholding; report it in 1099-NEC box 4; file Form 945 for the year by 31 January (1 February 2027 for 2026). Many small businesses never withheld: the skill records the gap for the reviewer rather than assuming it was done.
+
+TIN matching: the IRS e-Services TIN Matching program checks a name and TIN pair before filing. Optional, recommended for unfamiliar payees.
+
+B-notices: if the IRS sends a CP2100 or CP2100A listing a name and TIN mismatch, send the first B-notice with a new Form W-9 within 15 business days, and begin backup withholding if the payee has not responded within 30 business days. On a second notice for the same payee within 3 years, send the second B-notice; the payee must get validation from the IRS (Form 147C for an EIN) or the SSA, and a new W-9 alone is not enough. Source: [Pub. 1281](https://www.irs.gov/pub/irs-pdf/p1281.pdf).
+
+### Step 5: complete the form
+
+| Box | What goes in it |
+| --- | --- |
+| 1a | Nonemployee compensation of USD 2,000 or more, including attorneys' fees for services |
+| 1b, 1c, 1d (new for 2026) | Cash tips included in box 1a, the Treasury Tipped Occupation Code, and qualified overtime, under Public Law 119-21 sections 70201 and 70202; rare for contractors in scope |
+| 2 | Checkbox for direct sales of USD 5,000 or more of consumer products for resale |
+| 3 | Excess golden parachute payments (moved here from 1099-MISC) |
+| 4 | Federal income tax withheld (backup withholding) |
+| 5 to 7 | State tax withheld, state number, state income |
+
+Source: [Instructions for Forms 1099-MISC and 1099-NEC (12-2026)](https://www.irs.gov/pub/irs-pdf/i1099mec.pdf).
+
+### Step 6: file and furnish
+
+| Copy | Who gets it | When |
 | --- | --- | --- |
-| Backup withholding rate | 24% | IRC §3406(a)(1) |
-| Triggers: payee fails to provide TIN | Yes | IRC §3406(a)(1)(A) |
-| Triggers: IRS B-notice (incorrect TIN) | Yes | IRC §3406(a)(1)(B) |
-| Triggers: payee fails to certify not subject to backup withholding | Yes | IRC §3406(a)(1)(D) |
+| Copy A | IRS | 1 February 2027 for 2026 payments |
+| Copy 1 | State tax department, if required | Varies by state |
+| Copy B | Payee | 1 February 2027 |
+| Copy 2 | Payee, for the state return | With Copy B |
+| Copy C | Payer's records | Keep at least 3 years (4 if backup withholding was imposed) |
 
-### Filing deadlines
+- **E-file or paper.** E-filing is required if the business files 10 or more information returns in the year, counted across all types (1099-NEC, 1099-MISC, W-2 and others). A business with 5 1099-NECs and 6 W-2s has 11 and must e-file everything. Source: [Pub. 1099 (2026)](https://www.irs.gov/pub/irs-pdf/p1099.pdf).
+- **IRIS, not FIRE.** "Beginning tax year 2026/filing season 2027, the Information Returns Intake System (IRIS) will be the only intake system for information returns." FIRE is shut down at the end of 2026, including for corrections and prior years. A Transmitter Control Code application can take about 45 business days, so apply well before January. Source: [Pub. 1099 (2026), What's New](https://www.irs.gov/pub/irs-pdf/p1099.pdf).
+- **Paper.** Under 10 returns, paper Copy A with Form 1096 as the transmittal, one Form 1096 per form type.
+- **No automatic extension** for 1099-NEC. A 30-day extension is available only on request for extraordinary circumstances.
 
-**Filing deadlines**  _(IRC §6071(c))_
+### Step 7: corrections
 
-| Figure | Value for TY2025 forms | Primary source |
+If a filed 1099-NEC is wrong, file a corrected return with the IRS and furnish it to the payee. Error Type 1 (wrong amount, code or checkbox): one corrected return. Error Type 2 (wrong payee name or TIN, or the wrong form): a return that zeroes out the incorrect one plus a new correct return. Do not check the VOID box on a paper correction. In IRIS, corrections follow Pub. 5718 or Pub. 5717. Source: [Instructions for Forms 1099-MISC and 1099-NEC (12-2026)](https://www.irs.gov/pub/irs-pdf/i1099mec.pdf); [Pub. 1099 (2026)](https://www.irs.gov/pub/irs-pdf/p1099.pdf).
+
+### Step 8: state filing
+
+The Combined Federal/State Filing Program forwards e-filed 1099 data to participating states. Many states with an income tax take part, but some require their own filing even so, and some have lower thresholds. States with no individual income tax on wages (Alaska, Florida, Nevada, New Hampshire, South Dakota, Tennessee, Texas, Washington, Wyoming) generally need no state copy. Flag every payee state for the reviewer; this skill does not track 50 state thresholds. Source: [Pub. 1099 (2026)](https://www.irs.gov/pub/irs-pdf/p1099.pdf).
+
+## Boundary and exception table
+
+| Situation | Treatment |
+| --- | --- |
+| Paid through PayPal Goods and Services, Stripe, Square or by card | No 1099-NEC from the payer; the processor reports on Form 1099-K. See `us-1099-k-and-payment-processors` |
+| Paid through Zelle, Venmo or Cash App personal, or bank transfer | The payer keeps the 1099-NEC duty |
+| Payment method unclear | Treat as reportable by the payer and flag |
+| Single-member LLC payee, disregarded | Report in the owner's name and TIN as shown on the W-9 |
+| LLC payee that elected S or C corporation status | Corporate exception, unless attorney or medical |
+| Nonresident alien performing services in the US | Form 1042-S, W-8BEN, 30% withholding under section 1441 or the treaty rate. Refer |
+| Payee died during the year | Payments before death in the decedent's name and TIN; payments after death to the estate under its EIN. Flag |
+| Married couple's qualified joint venture (section 761(f)) | Report to each spouse for their share. Flag |
+| Expense reimbursements paid to a contractor | Include in box 1a (accountable plans are for employees). Flag if large |
+| Staffing agency supplies workers | The agency is the payee; corporate exception may apply. Collect its W-9 |
+| Payments in virtual currency | Fair market value on the payment date counts toward USD 2,000 and is the amount reported. Flag for valuation |
+| Legal settlement paid to an attorney's trust account | Gross amount on 1099-MISC box 10 (USD 600 or more), not 1099-NEC, unless purely for the payer's own legal services |
+| A 2025 payment, form filed in early 2026 | Old USD 600 threshold and the 2026 penalty table apply; a late 2025 form filed now is outside the 2026 figures above |
+| Payee is an employee, or may be | Do not issue a 1099-NEC to an employee. Worker classification is referred |
+
+### Defaults when a fact is missing
+
+| Missing fact | Default, and flag it |
+| --- | --- |
+| Payee entity type (no W-9) | Treat as non-corporate and issue the 1099-NEC; avoids the section 6721 penalty |
+| Split between goods and services | Report the full amount on 1099-NEC |
+| Payment method | Treat as paid by the payer (not by card or app) |
+| TIN given but no signed W-9 | File with the TIN given; flag the missing W-9 |
+| Payee total just under USD 2,000 | No form; keep the per-payee total in the file |
+| Law firm is an S corporation | Issue the 1099-NEC: the attorney rule overrides the corporate exception |
+| Number of other information returns | Ask; if unknown, plan to e-file in IRIS |
+
+### Red flags to raise with the client
+
+| Flag | Why it matters |
+| --- | --- |
+| Any payee with no W-9 | Backup withholding was due at 24%; Form 945 and penalty exposure |
+| A contractor paid regularly, full time, under the client's control | Possible employee; refer for classification |
+| No IRIS Transmitter Control Code yet and 10 or more returns | FIRE is gone; the TCC can take about 45 business days |
+| Payments to an attorney not on the list | Attorneys are always reportable |
+| A CP2100 or CP2100A notice received | B-notice clock of 15 and 30 business days |
+| The client wants to pay contractors by card to avoid 1099s | Not a compliance strategy; the skill will not advise it |
+
+## Worked cases
+
+**Case 1, the threshold sort.** A designer's sole proprietorship paid four non-corporate contractors in 2026 by check or ACH, each with a W-9 on file: a copywriter USD 1,950, a developer USD 2,000, a photographer USD 8,500 and a dog walker USD 640 (eight payments of USD 80, for the business's office dog). Under the 2025 USD 600 rule all four would get a form. For 2026 only the developer (USD 2,000 reaches the threshold exactly) and the photographer need one: 2 forms, box 1a USD 2,000.00 and USD 8,500.00, due 1 February 2027.
+
+```oa-check
+name: 1099-NEC threshold sort, payments made in 2026
+inputs:
+  copywriter: 1950
+  developer: 2000
+  photographer: 8500
+  dog_walker: 640
+  threshold: 2000
+steps:
+  - copywriter_form: floor(min(copywriter, threshold) / threshold)
+  - developer_form: floor(min(developer, threshold) / threshold)
+  - photographer_form: floor(min(photographer, threshold) / threshold)
+  - dog_walker_form: floor(min(dog_walker, threshold) / threshold)
+  - forms_required: copywriter_form + developer_form + photographer_form + dog_walker_form
+expected:
+  copywriter_form: 0
+  developer_form: 1
+  photographer_form: 1
+  dog_walker_form: 0
+  forms_required: 2
+```
+
+**Case 2, a decision: six forms missed, file now or later?** A small business (gross receipts well under USD 5,000,000) finds on 20 February 2027 that it never filed or furnished six 2026 1099-NECs. Each late form carries both a section 6721 penalty (IRS copy) and a section 6722 penalty (payee copy). Filed and furnished by 3 March 2027 (within 30 days of 1 February) the exposure is 6 x USD 60 x 2 = USD 720. After that but by 1 August, 6 x USD 130 x 2 = USD 1,560. Later or never, 6 x USD 340 x 2 = USD 4,080. Recommend filing within the 30 days, and ask for a reasonable-cause waiver under section 6724 only if the facts support it. Also: if any of the six had no W-9, 24% backup withholding was due (on a USD 3,600 payee, USD 864) and Form 945 is owed.
+
+```oa-check
+name: Late 1099-NEC penalties for 2026 forms, small business
+inputs:
+  forms: 6
+  tier_30_days: 60
+  tier_aug_1: 130
+  tier_general: 340
+  unwithheld_payee: 3600
+steps:
+  - within_30_days: forms * tier_30_days * 2
+  - by_aug_1: forms * tier_aug_1 * 2
+  - after_aug_1: forms * tier_general * 2
+  - saving_filing_now: after_aug_1 - within_30_days
+  - backup_withholding_due: unwithheld_payee * 0.24
+expected:
+  within_30_days: 720
+  by_aug_1: 1560
+  after_aug_1: 4080
+  saving_filing_now: 3360
+  backup_withholding_due: 864.00
+```
+
+More test facts kept from the earlier version, updated for 2026:
+
+| Facts | Result |
+| --- | --- |
+| Freelance graphic designer, individual, W-9 on file, paid USD 8,500 | 1099-NEC: box 1a USD 8,500.00, box 4 zero, due 1 February 2027 |
+| IT firm, W-9 shows S corporation, paid USD 12,000 | No 1099-NEC (corporate exception); keep the W-9 |
+| "Smith and Jones, P.C." (C corporation), contract review, USD 4,200 | 1099-NEC box 1a USD 4,200.00: attorney rule overrides the corporate exception |
+| Handyman, no W-9, USD 3,600, nothing withheld | 1099-NEC box 1a USD 3,600.00, box 4 zero; flag USD 864 that should have been withheld and Form 945 |
+| Virtual assistant paid USD 2,400 through PayPal Goods and Services | No 1099-NEC from the payer; PayPal's 1099-K duty depends on the payee's totals (see the 1099-K skill) |
+| Attorney's law firm paid USD 1,500 for services | No 1099-NEC: under USD 2,000 (it would have been required for 2025 payments) |
+
+## When to refuse or refer
+
+| Code | Situation | Action |
 | --- | --- | --- |
-| Due date to recipient | January 31, 2026 (Saturday, so due February 2, 2026) | IRC §6071(c) |
-| Due date to IRS (paper) | January 31, 2026 (same — February 2, 2026) | IRC §6071(c) |
-| Due date to IRS (electronic) | January 31, 2026 (same — February 2, 2026) | IRC §6071(c) |
-| Extension available? | NO — there is no automatic extension for 1099-NEC | IRC §6071(c); IRS instructions |
-| 30-day extension by letter? | Only for extraordinary circumstances | IRS Pub 1220, §6081 |
+| R-NEC-FILE | Asked to transmit the forms to the IRS | Refuse: the skill prepares the data; the filer files in IRIS or on paper |
+| R-NEC-CLASS | Is this worker an employee or a contractor? | Refer: common law test, Form SS-8, state ABC tests |
+| R-NEC-AVOID | Pay by card to avoid issuing 1099s | Refuse to advise restructuring to avoid reporting |
+| R-NEC-VERBAL | Payee says by phone or email that it is a corporation | Refuse to rely on it: get a W-9 |
+| R-NEC-DOUBLE | Report the same card or app payment on both 1099-NEC and 1099-K | Refuse: the processor reports it on 1099-K only |
+| R-NEC-BWH | Skip backup withholding because it is impractical | Refuse: the duty exists; record the gap |
+| R-NEC-EMP | Issue a 1099-NEC to an employee | Refuse: employees get a W-2; misclassification brings section 3509 and FICA liability |
+| R-NEC-FOREIGN | Nonresident alien payee | Refer: Form 1042-S regime |
+| R-NEC-STATE | State thresholds and separate state filing | Flag for the reviewer, never ignore |
 
-- **Saturday due-date shift note** — January 31, 2026 falls on a Saturday. Per IRC §7503, when a due date falls on a Saturday, Sunday, or legal holiday, the deadline shifts to the next business day — Monday, February 2, 2026.  _(IRC §7503)_
+## Filing and payment
 
-### E-filing threshold
+- **Forms 1099-NEC for 2026 payments:** file Copy A with the IRS and furnish Copy B by Monday 1 February 2027 (26 U.S.C. 6071(c) and 7503). E-file in IRIS at 10 or more returns.
+- **Form 945** for any backup withholding in 2026: due 1 February 2027; deposits during the year under the deposit rules.
+- **Penalty notices** (CP215 and letters proposing section 6721 and 6722 penalties): answer by the date shown; reasonable cause under 26 U.S.C. 6724.
+- **Corrections:** as soon as an error is found; a correction within 30 days of the due date falls in the USD 60 tier.
 
-**E-filing threshold**  _(IRC §6011(e); Treas. Reg. §301.6011-2; T.D. 9972 (Feb 2023))_
+## Completion checklist
 
-| Figure | Value for TY2025 | Primary source |
+- Every 2026 service payee listed with total paid and payment method.
+- Card and payment app payments removed and noted as 1099-K.
+- USD 2,000 test applied per payee for the calendar year.
+- Corporate exception applied only from a W-9, with attorneys and medical payments carved out.
+- Missing W-9s flagged, with the 24% backup withholding amount and Form 945.
+- Information return count done; IRIS TCC in place if 10 or more.
+- Forms filed and furnished by 1 February 2027; copies kept 3 years (4 with backup withholding).
+- State filing flagged for each payee state.
+- Any B-notice handled within 15 and 30 business days.
+
+## Sources
+
+| Source | URL | Read on |
 | --- | --- | --- |
-| E-filing required if filing ≥ | 10 information returns | IRC §6011(e); Treas. Reg. §301.6011-2; T.D. 9972 (Feb 2023) |
-
-- **E-filing threshold note** — The threshold was reduced from 250 to 10 by T.D. 9972 (February 2023), effective for returns filed in calendar year 2024 and later. For TY2025 forms (filed in January/February 2026), the 10-form threshold applies. The count includes ALL information returns filed (1099-NEC, 1099-MISC, 1099-K, W-2, etc.), not just 1099-NEC.  _(T.D. 9972 (Feb 2023))_
-
-### Penalties for failure to file (§6721) and failure to furnish (§6722)
-
-**Penalties for failure to file (§6721) and failure to furnish (§6722)**  _([IRC §6721](https://www.irs.gov/instructions/i1099gi))_
-
-| Timing of correction | Penalty per form (2025) | Maximum per year (small business ≤ $5M gross receipts) | Primary source |
-| --- | --- | --- | --- |
-| Filed within 30 days of due date | $60 | $239,000 | IRC §6721(b)(1); inflation-adjusted |
-| Filed after 30 days but by August 1 | $130 | $683,000 | IRC §6721(b)(2); inflation-adjusted |
-| Filed after August 1 or not filed | $340 | $1,366,000 ($4,098,500 for large filers) | IRC §6721(a); inflation-adjusted |
-| Intentional disregard | $680 per form, no maximum | No cap | IRC §6721(e) |
-
-- **Penalty adjustment note** — Penalty amounts are inflation-adjusted annually. The figures above are for returns required to be filed in calendar year 2026 (i.e., TY2025 forms). The same penalty structure applies to failure to furnish correct payee statements under §6722.  _(IRC §6721; IRC §6722)_
-
-## Section 4 — Primary source library
-
-### Statute (Internal Revenue Code, Title 26 USC)
-
-- **IRC §6041** — Information at source (payments of $600 or more in the course of trade or business)  _(IRC §6041)_
-- **IRC §6041A** — Returns regarding payments of remuneration for services and direct sales  _(IRC §6041A)_
-- **IRC §6041A(a)(1)** — $600 threshold for service payments  _(IRC §6041A(a)(1))_
-- **IRC §6041A(a)(2)** — Payments to corporations generally exempt; medical and legal exceptions  _(IRC §6041A(a)(2))_
-- **IRC §6045(f)** — Returns of brokers — payments to attorneys (always reportable regardless of entity type)  _(IRC §6045(f))_
-- **IRC §6050W** — Returns relating to payments made in settlement of payment card and third-party network transactions (Form 1099-K, separate from 1099-NEC)  _(IRC §6050W)_
-- **IRC §6071(c)** — Due date for 1099-NEC: January 31  _(IRC §6071(c))_
-- **IRC §6109** — Identifying numbers (TIN requirement)  _(IRC §6109)_
-- **IRC §6721** — Failure to file correct information returns (penalty on filer for IRS copy)  _(IRC §6721)_
-- **IRC §6722** — Failure to furnish correct payee statements (penalty on filer for payee copy)  _(IRC §6722)_
-- **IRC §6724** — Waiver of penalties for reasonable cause  _(IRC §6724)_
-- **IRC §3406** — Backup withholding  _(IRC §3406)_
-- **IRC §3406(a)(1)** — Backup withholding rate and triggers  _(IRC §3406(a)(1))_
-- **IRC §6011(e)** — Electronic filing requirement  _(IRC §6011(e))_
-- **IRC §7503** — Time for performance of acts where last day falls on Saturday, Sunday, or legal holiday  _(IRC §7503)_
-
-### Treasury Regulations
-
-- **Treas. Reg. §1.6041-1** — Return of information as to payments of $600 or more  _(Treas. Reg. §1.6041-1)_
-- **Treas. Reg. §1.6041-3(p)** — Exemption for payments to corporations (the corporate exception)  _(Treas. Reg. §1.6041-3(p))_
-- **Treas. Reg. §1.6041-3(p)(1)-(4)** — Exceptions to the corporate exception (attorneys, medical, fish purchases, substitute payments)  _(Treas. Reg. §1.6041-3(p)(1)-(4))_
-- **Treas. Reg. §1.6045-5** — Information reporting on payments to attorneys  _(Treas. Reg. §1.6045-5)_
-- **Treas. Reg. §31.3406-0 through §31.3406(j)-1** — Backup withholding procedures  _(Treas. Reg. §31.3406-0 through §31.3406(j)-1)_
-- **Treas. Reg. §301.6011-2** — Electronic filing of information returns (10-form threshold)  _(Treas. Reg. §301.6011-2)_
-- **T.D. 9972 (Feb 2023)** — Final regulations reducing e-filing threshold to 10 returns  _(T.D. 9972 (Feb 2023))_
-
-### IRS Publications and Guidance
-
-- **IRS General Instructions for Certain Information Returns (2025)** — Master guide for all 1099 forms  _(IRS General Instructions for Certain Information Returns (2025))_
-- **IRS Instructions for Form 1099-NEC (2025)** — Specific instructions  _(IRS Instructions for Form 1099-NEC (2025))_
-- **IRS Pub 1220 (2025)** — Specifications for Electronic Filing of Forms 1098, 1099, 5498, and W-2G  _(IRS Pub 1220 (2025))_
-- **IRS Pub 1281** — Backup Withholding for Missing and Incorrect Name/TIN(s)  _(IRS Pub 1281)_
-- **IRS Notice 2024-85** — Deferral of $600 1099-K threshold to 2026; $5,000 transitional for 2025  _(IRS Notice 2024-85)_
-
-### Form W-9
-
-- **Form W-9 (Rev. March 2024)** — Request for Taxpayer Identification Number and Certification  _(Form W-9 (Rev. March 2024))_
-
-## Section 5 — The basic 1099-NEC filing rule
-
-### When to issue
-
-- **1099-NEC required when all true** — A Form 1099-NEC is required when ALL of the following are true: 1. You made a payment of $600 or more during the calendar year 2. The payment was for services performed in the course of your trade or business (not for merchandise, rent, or other non-service items) 3. The payee is not your employee (employees receive W-2, not 1099-NEC) 4. The payee is not a corporation (unless an exception applies — see Section 6) 5. The payment was made to an individual, partnership, estate, or LLC that is not classified as a corporation for federal tax purposes  _(IRC §6041A)_
-
-### What counts as "services"
-
-- **Services include** — Professional fees (accounting, legal, consulting, design, programming); Contract labor (freelancers, independent contractors, subcontractors); Commissions paid to non-employees; Fees paid to independent directors on a board; Prizes and awards for services (non-employee); Payment for parts AND labor where the labor component cannot be separated (report the full amount)  _(IRC §6041A(a)(1))_
-- **Services do NOT include** — Payments for merchandise or goods (no 1099-NEC; may require 1099-MISC for certain categories); Rent payments (reported on 1099-MISC Box 1); Royalties (reported on 1099-MISC Box 2); Payments made via credit card, debit card, or third-party payment network (e.g., PayPal, Stripe) — these are reported by the payment settlement entity on Form 1099-K, NOT by the payer on 1099-NEC; Payments to employees (reported on W-2)  _(IRC §6041A applies to services; goods are not reportable on 1099-NEC)_
-
-### The $600 threshold
-
-- **Threshold applies per payee, per year** — The threshold applies per payee, per calendar year. If total payments to a single payee for services reach $600, the entire amount is reported — not just the amount over $600.  _(IRC §6041A(a))_
-
-## Section 6 — The corporate exception and its carve-outs
-
-### General rule: corporations are exempt
-
-- **Corporations generally exempt** — Under Treas. Reg. §1.6041-3(p), payments to corporations (C-corps and S-corps) are generally exempt from 1099-NEC reporting. This includes: C-corporations; S-corporations; LLCs that have elected corporate treatment (checked "C Corporation" or "S Corporation" on Form W-9 Line 3). How to identify corporate payees: The payee's Form W-9 indicates entity type on Line 3. If the payee checks "C Corporation" or "S Corporation," no 1099-NEC is required (unless an exception below applies).  _(Treas. Reg. §1.6041-3(p))_
-
-### Exception 1 — Attorneys and legal fees (ALWAYS report)
-
-- **Attorney exception** — Under IRC §6045(f) and Treas. Reg. §1.6045-5, payments to attorneys for legal services must ALWAYS be reported, regardless of whether the attorney is: A sole practitioner; A partnership (law firm); A professional corporation (P.C.); An S-corporation; An LLC taxed as any entity type. This is the broadest exception. If you paid $600 or more to any attorney or law firm for legal services, you must issue a 1099-NEC. The payment is reported in Box 1 (nonemployee compensation) if the attorney performed services for you. If the payment is to an attorney as part of a settlement (gross proceeds), it is reported on 1099-MISC Box 10, not 1099-NEC.  _(IRC §6045(f); Treas. Reg. §1.6045-5)_
-
-### Exception 2 — Medical and health care payments
-
-- **Medical and health care exception** — Under IRC §6041A(a)(2) and Treas. Reg. §1.6041-3(p)(3), payments for medical or health care services must be reported on 1099-MISC Box 6 (not 1099-NEC) regardless of corporate status. This applies to payments to: Physicians and medical professionals; Hospitals; Medical corporations. Note for sole proprietors: This exception is most relevant to businesses that pay for occupational health services, drug testing, or similar. It does NOT apply to the taxpayer's own health insurance premiums (those are a personal deduction under §162(l), not a 1099 situation).  _(IRC §6041A(a)(2); Treas. Reg. §1.6041-3(p)(3))_
-
-### Exception 3 — Fish purchases
-
-- **Fish purchase exception** — Under IRC §6050R, total cash payments of $600 or more for fish purchased for resale are reportable regardless of corporate status. Reported on 1099-MISC Box 11. Unlikely to apply to most sole proprietors in scope.  _([IRC §6050R](https://www.irs.gov/instructions/i1099mec))_
-
-### Exception 4 — Substitute payments in lieu of dividends or interest
-
-- **Substitute payment exception** — Under Treas. Reg. §1.6041-3(p)(4), substitute payments in lieu of dividends or tax-exempt interest are reportable regardless of corporate status. Unlikely to apply to most sole proprietors in scope.  _(Treas. Reg. §1.6041-3(p)(4))_
-
-## Section 7 — Form W-9 collection and backup withholding
-
-### The W-9 requirement
-
-- **W-9 provides** — Before making the first payment to a new contractor, the payer should collect a completed Form W-9. The W-9 provides: Payee's legal name; Business name (if different); Federal tax classification (individual, partnership, C-corp, S-corp, LLC, etc.); Exemption codes (if applicable); TIN (SSN or EIN); Certification that the TIN is correct and the payee is not subject to backup withholding.  _(Form W-9 (Rev. March 2024))_
-
-### What happens without a W-9
-
-- **Backup withholding obligation without W-9** — If the payee fails to provide a W-9 (or provides one without a TIN), the payer is required to begin backup withholding at 24% on all subsequent payments. Backup withholding mechanics: 1. Withhold 24% from each payment 2. Deposit withheld amounts using Form 945 (Annual Return of Withheld Federal Income Tax) 3. Report the withholding on the 1099-NEC in Box 4 4. File Form 945 by January 31 of the following year Practical reality: Many small business owners do not know about the backup withholding requirement and simply fail to collect W-9s. The skill flags missing W-9s and notes the backup withholding obligation, but most sole proprietors will not have actually withheld. The reviewer should note the compliance gap.  _(IRC §3406(a)(1)(A))_
-
-### TIN matching
-
-- **TIN Matching program** — The IRS offers an online TIN Matching program (available through the IRS e-Services portal) that allows payers to verify that a payee's name/TIN combination matches IRS records before filing. This is optional but recommended, especially for payees with unfamiliar names or when the W-9 appears inconsistent.  _(IRS e-Services)_
-
-### B-notices (IRS CP2100 / CP2100A)
-
-- **B-notice procedures** — If the IRS identifies a name/TIN mismatch on a filed 1099, it sends a B-notice to the filer: - First B-notice (CP2100/CP2100A): The filer must solicit a new W-9 from the payee within 15 business days and begin backup withholding if the payee does not respond within 30 business days - Second B-notice (within 3 years): The filer must instruct the payee to contact the IRS or SSA to verify their TIN. The filer must begin backup withholding if validation is not received within 30 business days after the date of the second B-notice and cannot accept a new W-9 alone — the payee must provide IRS/SSA validation  _([IRS CP2100/CP2100A procedures](https://www.irs.gov/pub/irs-pdf/p1281.pdf))_
-
-## Section 8 — Filing mechanics
-
-### Paper vs electronic filing
-
-**Paper vs electronic filing**  _(IRS FIRE system)_
-
-| Filing method | When required | How |
-| --- | --- | --- |
-| Paper (Copy A to IRS) | Fewer than 10 total information returns | Mail to IRS with Form 1096 transmittal |
-| Electronic (FIRE system or approved provider) | 10 or more total information returns | IRS FIRE system, IRS-approved e-file provider, or commercial software |
-
-- **10-form count includes all info returns** — The 10-form count includes ALL information returns (1099-NEC, 1099-MISC, 1099-K, W-2, 1099-INT, etc.), not just 1099-NECs. A sole proprietor who issues 5 1099-NECs but also files 6 W-2s for employees exceeds the threshold and must e-file everything.  _(IRC §6011(e); Treas. Reg. §301.6011-2)_
-
-### Copies and distribution
-
-**Copies and distribution**  _([IRS Form 1099-NEC Instructions](https://www.irs.gov/instructions/i1099gi))_
-
-| Copy | Recipient | Due date |
-| --- | --- | --- |
-| Copy A | IRS | January 31 (February 2, 2026 for TY2025) |
-| Copy 1 | State tax department (if applicable) | Varies by state |
-| Copy B | Payee (recipient) | January 31 (February 2, 2026 for TY2025) |
-| Copy 2 | Payee (for state return, if applicable) | With Copy B |
-| Copy C | Filer's records | Retain for at least 3 years (4 years if backup withholding was imposed) |
-
-### Form 1096 transmittal (paper filing only)
-
-- **Form 1096 requirement** — When filing paper 1099-NECs, the filer must include Form 1096 as a cover sheet. One Form 1096 is submitted per type of form (e.g., one 1096 for all 1099-NECs, a separate 1096 for all 1099-MISCs).  _(IRS General Instructions for Certain Information Returns (2025))_
-
-### Corrected returns
-
-- **Corrected return procedure** — If a 1099-NEC was filed with errors, a corrected return must be filed: - Check the "CORRECTED" box on the form - File with the IRS and furnish to the payee - Two types of corrections: Type 1 (wrong amount, code, or checkbox) and Type 2 (wrong payee name/TIN — requires filing a zero return for the incorrect payee and a new return for the correct payee)  _(IRS General Instructions for Certain Information Returns (2025))_
-
-## Section 9 — State filing requirements
-
-### Combined Federal/State Filing Program (CF/SF)
-
-- **CF/SF program** — The IRS offers the CF/SF program, which automatically forwards 1099 data to participating state tax agencies when the filer e-files through the FIRE system. Many (but not all) states participate. Participating states include most states with an income tax. Notable non-participants or states with special requirements include: - States with no income tax (TX, FL, NV, WA, WY, SD, AK, NH, TN) — no state filing required - States that require separate filing even if participating in CF/SF (varies; check current year list)  _(IRS Combined Federal/State Filing Program)_
-
-### State-specific thresholds
-
-Some states have lower reporting thresholds than the federal $600. The skill flags this for reviewer attention but does not track all 50 state thresholds. The reviewer should verify state requirements for each payee's state.
-
-## Section 10 — Conservative defaults table
-
-**Conservative defaults table**  _(Various — see individual rationale cells)_
-
-| Situation | Conservative default | Rationale |
-| --- | --- | --- |
-| Payee's entity type unknown (no W-9) | Treat as non-corporate; issue 1099-NEC | Avoids §6721 penalty for failure to file |
-| Payment includes both goods and services, amounts unclear | Report full amount on 1099-NEC | Cannot exclude goods component without clear documentation |
-| Payment made via Venmo/Zelle personal (not business) account | Issue 1099-NEC | Personal P2P payments are not reportable by the payment processor; payer retains 1099-NEC obligation |
-| Payee provided TIN but no W-9 | Issue 1099-NEC with TIN provided; flag missing W-9 for reviewer | Better to file with a TIN than to not file at all |
-| Payment just below $600 to a single payee | Do not issue 1099-NEC but document the total | Threshold is statutory; no obligation below $600 |
-| Attorney's law firm is an S-corp | Issue 1099-NEC (attorney exception overrides corporate exception) | §6045(f) applies regardless of entity type |
-| Unsure whether payee performed "services" vs provided "goods" | Treat as services; issue 1099-NEC | Conservative; penalties for failure to file exceed any cost of over-reporting |
-
-## Section 11 — PROHIBITIONS
-
-The skill MUST NOT:
-
-1. File 1099-NECs or transmit data to the IRS — the skill produces working papers and data; filing execution is the filer's responsibility
-2. Classify workers as employees vs independent contractors — this is a complex legal determination (common law test, Form SS-8, state ABC tests) that the skill flags for reviewer attention but does not adjudicate
-3. Advise payers to avoid 1099 obligations by paying via credit card — while credit card payments shift reporting to the payment processor (1099-K), deliberately restructuring payments to avoid 1099-NEC is not a legitimate compliance strategy
-4. Accept a payee's verbal assertion of corporate status — entity type must be documented on Form W-9; verbal or email claims are insufficient
-5. Report the same payment on both 1099-NEC and 1099-K — if the payment was made via a payment settlement entity (credit card, PayPal Business, etc.), the payment processor issues the 1099-K and the payer does NOT issue a 1099-NEC for that payment
-6. Waive backup withholding requirements — if a W-9 is missing, the legal obligation to backup withhold exists regardless of practical difficulty
-7. Issue 1099-NEC to employees — employees receive W-2; misclassification has severe consequences (§3509 penalties, FICA liability, worker protections)
-8. Ignore state filing requirements — flag for reviewer even when out of scope for detailed state analysis
-
-## Section 12 — Edge cases
-
-If the payment was processed through a third-party settlement organization (PayPal Business, Stripe, Square), the payment processor is responsible for issuing Form 1099-K to the payee. The payer does NOT issue 1099-NEC for that payment. However, payments through peer-to-peer (P2P) transfers (Venmo personal, Zelle, Cash App personal) are NOT considered third-party settlement organization transactions — the payer retains the 1099-NEC obligation. The distinction turns on whether the payment processor is a "third-party settlement organization" under §6050W. Flag for reviewer when the payment method is ambiguous.
-
-The entity type for 1099 purposes depends on the LLC's federal tax classification, as shown on its W-9. If the SMLLC is disregarded (default), report using the owner's name and SSN/EIN. If the SMLLC elected S-corp or C-corp treatment, the corporate exception applies (unless an attorney or medical exception kicks in). The W-9 controls.
-
-Payments for services performed in the US by a nonresident alien are reported on Form 1042-S, not 1099-NEC. The payer must collect Form W-8BEN (not W-9) and withhold at 30% under §1441 (or a reduced treaty rate). This is a fundamentally different regime. The skill flags foreign payees and defers to the reviewer.
-
-If a payee dies during the year, the 1099-NEC should be issued in the decedent's name and TIN for payments made before death. Payments to the estate after death should be issued to the estate using the estate's EIN (if obtained). Flag for reviewer.
-
-Payments to a joint venture that is not a partnership (e.g., a qualified joint venture under §761(f) for a married couple) should be reported to each spouse separately based on their share. Payments to a disregarded entity should use the owner's TIN. The W-9 should clarify, but many joint arrangements are informal. Flag for reviewer.
-
-Payments that reimburse a contractor for expenses (e.g., travel reimbursement) are generally included in the 1099-NEC total if paid directly to the contractor. Only amounts paid under an accountable plan with adequate accounting and return of excess are excludable — and accountable plans generally apply to employees, not independent contractors. Include reimbursements in the 1099-NEC amount. Flag for reviewer if the amounts are large.
-
-When a sole proprietor pays a staffing agency that provides workers, the 1099-NEC goes to the staffing agency (not to the individual workers). The agency is the payee. If the agency is a corporation, the corporate exception may apply. Collect the agency's W-9.
-
-When multiple small payments to the same payee aggregate to exactly $600 or slightly above, the 1099-NEC is required. The threshold is met at $600.00, not $600.01. Track cumulative payments per payee throughout the year.
-
-When a sole proprietor makes a legal settlement payment, the full gross amount paid to the attorney's trust account is reportable — not just the attorney's fee portion. If the attorney distributes part to the claimant, the attorney reports that distribution. The payer reports the gross payment to the attorney. This is reported on 1099-MISC Box 10 (gross proceeds to attorney), not 1099-NEC Box 1, unless the payment is purely for legal services rendered to the payer.
-
-Payments made in virtual currency (e.g., Bitcoin) are treated as property payments. The fair market value of the virtual currency on the date of payment is used for the $600 threshold and reporting amount. The payer must determine FMV and report on 1099-NEC if the payment was for services. Flag for reviewer due to valuation complexity.
-
-## Section 13 — Test suite
-
-### Test 1 — Standard contractor payment
-
-Input: Sole proprietor paid a freelance graphic designer $8,500 during TY2025. Designer provided W-9 showing: individual, SSN, no corporate entity.
-Expected output:
-- 1099-NEC required: YES
-- Box 1: $8,500.00
-- Box 4: $0.00 (no backup withholding — W-9 on file)
-- Filing deadline: February 2, 2026 (January 31 falls on Saturday)
-
-### Test 2 — Payment to S-corporation (corporate exception applies)
-
-Input: Sole proprietor paid an IT consulting firm $12,000 during TY2025. Firm's W-9 shows: S-Corporation, EIN.
-Expected output:
-- 1099-NEC required: NO (corporate exception under Treas. Reg. §1.6041-3(p))
-- Document the W-9 on file showing S-corp status
-
-### Test 3 — Payment to attorney's professional corporation
-
-Input: Sole proprietor paid $4,200 to "Smith & Jones, P.C." (a professional corporation) for contract review services during TY2025. W-9 shows: C-Corporation.
-Expected output:
-- 1099-NEC required: YES (attorney exception under §6045(f) overrides corporate exception)
-- Box 1: $4,200.00
-- Filing deadline: February 2, 2026
-
-### Test 4 — Missing W-9 with backup withholding
-
-Input: Sole proprietor paid a handyman $3,600 during TY2025. No W-9 was collected. No backup withholding was actually performed.
-Expected output:
-- 1099-NEC required: YES (treat as non-corporate per conservative default)
-- Box 1: $3,600.00
-- Box 4: $0.00 (backup withholding was legally required but not performed)
-- Reviewer flag: Missing W-9. Backup withholding at 24% ($864) should have been withheld under §3406. Compliance gap to address with client. Potential Form 945 filing obligation.
-
-### Test 5 — Payment via PayPal Business below 1099-K threshold
-
-Input: Sole proprietor paid a virtual assistant $2,400 via PayPal Business during TY2025. VA provided W-9 showing individual status.
-Expected output:
-- 1099-NEC required: NO — payment was made through a third-party settlement organization (PayPal Business). The payment processor is responsible for 1099-K reporting. The payer does not issue 1099-NEC.
-- Note: PayPal's 1099-K threshold for TY2025 is more than $20,000 and more than 200 transactions (P.L. 119-21, sec. 70432). The VA may not receive a 1099-K either if below threshold, but the payer's obligation is discharged.
-
-### Test 6 — Penalty computation for late filing
-
-Input: Sole proprietor was required to file 3 1099-NECs for TY2025. Filed all three on March 15, 2026 (42 days late). Small business (gross receipts < $5M).
-Expected output:
-- Filed within 30 days: NO (42 days > 30 days)
-- Filed by August 1: YES
-- Penalty tier: $130 per form (filed after 30 days but by August 1)
-- Total penalty: 3 x $130 = $390
-- §6722 penalty for late payee statements: same structure, additional $130 per form if payee copies were also late
-- Total potential exposure: $390 (IRS) + $390 (payee) = $780
-
-### Test 7 — Multiple payments aggregating to threshold
-
-Input: Sole proprietor made 8 payments of $80 each to a dog walker throughout TY2025. Total: $640. W-9 on file showing individual.
-Expected output:
-- Total payments: $640
-- Threshold: $600
-- 1099-NEC required: YES
-- Box 1: $640.00
-
-## Section 14 — Cross-skill references
-
-Inputs from upstream skills:
-
-- From us-sole-prop-bookkeeping: The classified transaction list identifies all payments to non-employees (Schedule C Line 11 — Contract labor, and other service payments). The bookkeeping skill flags payments ≥ $600 to individual payees as potential 1099-NEC candidates.
-
-Outputs to downstream skills:
-
-- This skill does not feed into downstream computation skills. It produces a standalone 1099-NEC filing checklist and data set for the reviewer.
-
-Parallel operation:
-
-- This skill operates in parallel with the computation pipeline (Schedule C/SE, QBI, estimated tax). The 1099-NEC obligation exists independently of whether the expense is deductible.
-
-## Section 15 — Reference material
-
-### Validation status
-
-This file is v0.2 of us-1099-nec-issuance, drafted in April 2026. Penalty amounts and e-filing thresholds are verified against IRC §6721, §6722, and T.D. 9972. Filing deadlines verified against IRC §6071(c) and §7503.
-
-### Known gaps
-
-1. State-specific filing requirements beyond the Combined Federal/State Filing Program are not tracked. The reviewer must verify state obligations for each payee.
-2. The skill does not handle Form 1099-MISC, which covers rents, royalties, and other non-service payments. A future companion skill could address 1099-MISC.
-3. The interaction between 1099-NEC and 1099-K for payments made via "hybrid" platforms (e.g., Venmo with both personal and business accounts) is evolving. The skill applies the conservative default of issuing 1099-NEC when the payment method is unclear.
-4. The skill does not adjudicate worker classification. The distinction between employee and independent contractor is the most consequential decision in information return compliance and is deferred to the reviewer.
-5. Penalty amounts are inflation-adjusted annually. The figures in Section 3 are for returns required to be filed in calendar year 2026. Future years will require updates.
-
-### Change log
-
-- v0.1 (April 2026): Stub.
-- v0.2 (April 2026): Full skill. Tax year 2025. Built on us-tax-workflow-base v0.1.
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
+| Rev. Proc. 2025-32. Read for section 2.15 (USD 2,000 base threshold for payments after 31 December 2025) and sections 4.57 and 4.58 (section 6721 and 6722 penalties for returns and statements due in 2027). | https://www.irs.gov/pub/irs-drop/rp-25-32.pdf | 2026-11-13 |
+| Public Law 119-21 (govinfo). Read for section 70433 (USD 600 to USD 2,000, indexing after 2026, 6041A(a)(2) and 3406(b)(6) cross-references, payments after 31 December 2025) and section 70432 (Form 1099-K de minimis rule). | https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm | 2026-11-13 |
+| Instructions for Forms 1099-MISC and 1099-NEC (Rev. December 2026). Read for What's New (USD 2,000, inflation from 2027, new boxes 1b to 1d, box 3 golden parachutes), Form 1099-K payments, attorneys, boxes 2, 6, 10 and 11, the 31 January date and corrections. | https://www.irs.gov/pub/irs-pdf/i1099mec.pdf | 2026-11-13 |
+| Pub. 1099 (2026), General Instructions for Certain Information Returns. Read for IRIS replacing FIRE from filing season 2027, the 10-return e-file rule, keeping copies, and the Combined Federal/State Filing Program. | https://www.irs.gov/pub/irs-pdf/p1099.pdf | 2026-11-13 |
+| Pub. 1281, Backup Withholding for Missing and Incorrect Name/TIN(s). Read for the 15 and 30 business day B-notice rules and the second B-notice. | https://www.irs.gov/pub/irs-pdf/p1281.pdf | 2026-11-13 |
+| 26 U.S.C. 3406 (govinfo). Read for the 24% rate and the triggers in (a)(1). | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleC-chap24-sec3406.htm | 2026-11-13 |
+| 26 U.S.C. 6041A (govinfo). Read for services reporting and direct sales; the 2024 edition shows the pre-2026 USD 600 text, amended by section 70433(c). | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap61-subchapA-partIII-subpartB-sec6041A.htm | 2026-11-13 |
+| 26 U.S.C. 6045 (govinfo). Read for subsection (f), payments to attorneys. | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap61-subchapA-partIII-subpartB-sec6045.htm | 2026-11-13 |
+| 26 U.S.C. 6050W (govinfo). Read for the Form 1099-K regime that displaces 1099-NEC for card and network payments. | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap61-subchapA-partIII-subpartB-sec6050W.htm | 2026-11-13 |
+| 26 U.S.C. 6071 (govinfo). Read for (c), the 31 January date. | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap61-subchapA-partV-sec6071.htm | 2026-11-13 |
+| 26 U.S.C. 6011 (govinfo). Read for (e), electronic filing. | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap61-subchapA-partII-subpartA-sec6011.htm | 2026-11-13 |
+| 26 U.S.C. 6721, 6722 and 6724 (govinfo). Read for the penalty structure and the reasonable cause waiver. | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap68-subchapB-partII-sec6721.htm | 2026-11-13 |
+| 26 U.S.C. 7503 (govinfo). Read for the next-business-day rule. | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap77-sec7503.htm | 2026-11-13 |
+
+Not yet confirmed: Rev. Proc. 2025-32 section 4.57 labels the middle penalty tier "on or before August 1, 2026" for returns required to be filed in 2027, which reads as a typo for 1 August 2027; this skill applies 1 August of the filing year as section 6721(b)(2) provides. The inflation-adjusted threshold for payments made in 2027 is not yet published. The 2026 Form W-9 revision was not re-read; Treas. Reg. 1.6041-3(p) and 1.6045-5 were not re-read on an official host this session.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-07-13. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `us-1099-nec-issuance` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/us-1099-nec-issuance. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-13. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `us-1099-nec-issuance` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/us-1099-nec-issuance. If neither is available, confirm every figure against the official source pages cited above before relying on it.

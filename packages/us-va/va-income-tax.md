@@ -1,18 +1,23 @@
 ---
 name: va-income-tax
-description: Use this skill whenever asked about Virginia individual income tax, Virginia Form 760, Virginia graduated tax rates, Virginia self-employment income tax at the state level, Virginia standard deduction, or any Virginia personal income tax question for sole proprietors. Trigger on phrases like "Virginia income tax", "VA income tax", "Form 760", "Virginia tax brackets", "Virginia 5.75%", "Virginia standard deduction", or any request involving Virginia state individual income tax computation or filing.
-version: "0.1"
+description: Compute Virginia resident individual income tax on Form 760 for tax year 2026 (and 2025 returns still being filed), including sole proprietors and single-member LLC owners. Covers federal AGI as the start, Schedule ADJ additions and subtractions, the $8,750 / $17,500 standard deduction, $930 exemptions, the age deduction, the 2% to 5.75% rate schedule (5.75% over $17,000), the spouse tax adjustment, the low-income and Virginia earned income credits, Schedule OSC, the PTET credit, the December 31, 2025 conformity date and P.L. 119-21 decoupling, estimated tax (more than $1,000 for 2026) and penalties. Trigger on "Virginia income tax", "VA income tax", "Form 760", "Virginia tax brackets", "Virginia standard deduction", "Virginia age deduction". Residents only. Not for US Virgin Islands (see skills/us-virgin-islands).
+version: "1.0"
 jurisdiction: US-VA
 tax_year: 2026
-last_updated: 2026-10-16
+last_updated: 2026-11-13
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
+type: computation
 ---
 
 # Virginia individual income tax (Form 760) for residents, including sole proprietors
 
-## Scope and who this is for ([2025 Form 760 instructions](https://www.tax.virginia.gov/sites/default/files/vatax-pdf/2025-760-instructions.pdf))
+> **Source-cited draft.** Built from Va. Code §§ 58.1-301, 58.1-302, 58.1-320, 58.1-322.03, 58.1-339.8, 58.1-390.3, 58.1-490 and 58.1-492, the 2025 Form 760 instructions, the 2026 Form 760ES and Tax Bulletin 26-1, read on 2026-10-16 and rechecked on 2026-11-13. No accountant has reviewed it. All outputs must be reviewed by a qualified tax professional before filing.
+
+**Answer first.** For 2026 a full-year Virginia resident starts from federal AGI, adds and subtracts on Schedule ADJ, takes the Virginia standard deduction of $8,750 (single) or $17,500 (joint) only if they did not itemize federally, subtracts $930 per exemption, and applies 2% on the first $3,000, 3% to $5,000, 5% to $17,000 and 5.75% above $17,000. The federal QBI deduction does not reach Virginia. Estimated payments are needed when 2026 tax after withholding and credits will be more than $1,000. Payroll withholding is in `va-payroll`; the PTET election itself is in `va-corporate-tax-and-bpol`.
+
+## Scope and who this is for
 
 This skill covers the Virginia resident individual income tax return, **Form 760**, for **tax year 2026** (returns filed in 2027), with a dated section for **2025 returns** (still being filed on extension until November 2026). It is written for full-year Virginia residents, including sole proprietors and owners of a single-member LLC that is disregarded for federal tax, whose business profit reaches Virginia through federal adjusted gross income.
 
@@ -64,27 +69,29 @@ Form 760 line numbers are from the 2025 return.
 15. **Lines 19 to 26, payments and credits**: withholding, estimated payments, extension payment, the low-income or earned income credit (Line 23), credit for tax paid to another state (Line 24, Schedule OSC), and Schedule CR credits including the PTET credit (Line 25). The other-state credit is the lesser of the net tax on the other state's return on earned, business and capital gain income (Schedule OSC Line 5) and the Virginia ratio (Line 9: Form 760 Line 18 tax times the share of Virginia taxable income that the other state taxed): "Enter the lesser of Line 5 or Line 9". It is nonrefundable, and the sum of all nonrefundable credits cannot exceed the tax on Form 760 Line 18.
 16. **Line 32**, addition to tax, penalties and interest (see Filing and payment).
 
-## Rates, thresholds and figures by year
+### Rates, bands and thresholds ([§ 58.1-320](https://law.lis.virginia.gov/vacode/title58.1/chapter3/section58.1-320/))
 
-### Tax rates (all filing statuses; unchanged since 1990; same for 2025 and 2026) ([§ 58.1-320](https://law.lis.virginia.gov/vacode/title58.1/chapter3/section58.1-320/))
+The figures below are grouped by topic, each with its source.
 
-| Virginia taxable income | Tax |
-| --- | --- |
-| Not over $3,000 | 2% of taxable income |
-| Over $3,000, not over $5,000 | $60 plus 3% of the excess over $3,000 |
-| Over $5,000, not over $17,000 | $120 plus 5% of the excess over $5,000 |
-| Over $17,000 | $720 plus 5.75% of the excess over $17,000 |
+#### Tax rates (all filing statuses; unchanged since 1990; same for 2025 and 2026) ([§ 58.1-320](https://law.lis.virginia.gov/vacode/title58.1/chapter3/section58.1-320/))
+
+| Virginia taxable income | Tax | Source |
+| --- | --- | --- |
+| Not over $3,000 | 2% of taxable income | [§ 58.1-320](https://law.lis.virginia.gov/vacode/title58.1/chapter3/section58.1-320/) |
+| Over $3,000, not over $5,000 | $60 plus 3% of the excess over $3,000 | [§ 58.1-320](https://law.lis.virginia.gov/vacode/title58.1/chapter3/section58.1-320/) |
+| Over $5,000, not over $17,000 | $120 plus 5% of the excess over $5,000 | [§ 58.1-320](https://law.lis.virginia.gov/vacode/title58.1/chapter3/section58.1-320/) |
+| Over $17,000 | $720 plus 5.75% of the excess over $17,000 | [§ 58.1-320](https://law.lis.virginia.gov/vacode/title58.1/chapter3/section58.1-320/) |
 
 Source: Va. Code § 58.1-320 ("Five and three-quarters percent on income in excess of $17,000 for taxable years beginning on and after January 1, 1990"), https://law.lis.virginia.gov/vacode/title58.1/chapter3/section58.1-320/ , and the rate schedule in the 2025 instructions and 2026 Form 760ES. The official example: taxable income of $90,000 gives $4,917.50, rounded to $4,918.
 
-### Standard deduction (only if the client did not itemize federally) ([§ 58.1-322.03](https://law.lis.virginia.gov/vacode/title58.1/chapter3/section58.1-322.03/))
+#### Standard deduction (only if the client did not itemize federally) ([§ 58.1-322.03](https://law.lis.virginia.gov/vacode/title58.1/chapter3/section58.1-322.03/))
 
-| Taxable years | Single | Married filing jointly | Married filing separately |
-| --- | --- | --- | --- |
-| 2025 and 2026 | $8,750 | $17,500 | $8,750 |
-| 2027 (Code as now published) | $9,200 | $18,400 | one-half of the married amount |
-| 2028 and 2029 (Code as now published) | $9,300 | $18,600 | one-half of the married amount |
-| 2030 onward (Code as now published) | $3,000 | $6,000 | one-half of the married amount |
+| Taxable years | Single | Married filing jointly | Married filing separately | Source |
+| --- | --- | --- | --- | --- |
+| 2025 and 2026 | $8,750 | $17,500 | $8,750 | [§ 58.1-322.03](https://law.lis.virginia.gov/vacode/title58.1/chapter3/section58.1-322.03/) |
+| 2027 (Code as now published) | $9,200 | $18,400 | one-half of the married amount | [§ 58.1-322.03](https://law.lis.virginia.gov/vacode/title58.1/chapter3/section58.1-322.03/) |
+| 2028 and 2029 (Code as now published) | $9,300 | $18,600 | one-half of the married amount | [§ 58.1-322.03](https://law.lis.virginia.gov/vacode/title58.1/chapter3/section58.1-322.03/) |
+| 2030 onward (Code as now published) | $3,000 | $6,000 | one-half of the married amount | [§ 58.1-322.03](https://law.lis.virginia.gov/vacode/title58.1/chapter3/section58.1-322.03/) |
 
 - A single filer with head-of-household federal status uses the single amount.
 - A person who can be claimed as a dependent on another return may take the standard deduction "only with respect to earned income": the smaller of earned income or the standard deduction.
@@ -92,7 +99,7 @@ Source: Va. Code § 58.1-320 ("Five and three-quarters percent on income in exce
 
 Sources: https://law.lis.virginia.gov/vacode/title58.1/chapter3/section58.1-322.03/ ; 2025 instructions, Line 11.
 
-### Exemptions and the age deduction ([§ 58.1-322.03](https://law.lis.virginia.gov/vacode/title58.1/chapter3/section58.1-322.03/))
+#### Exemptions and the age deduction ([§ 58.1-322.03](https://law.lis.virginia.gov/vacode/title58.1/chapter3/section58.1-322.03/))
 
 - **Exemptions (2025 and 2026):** $930 per personal and dependent exemption; an additional $800 for each taxpayer or spouse aged 65 or older or blind (for 2025, 65 or older on or before January 1, 2026). The additional $800 is allowed whether or not the client itemizes. Source: Va. Code § 58.1-322.03(2); 2026 Form 760ES worksheet line 4.
 - **Age deduction (Line 4):** up to $12,000 per qualifying taxpayer.
@@ -103,11 +110,11 @@ Sources: https://law.lis.virginia.gov/vacode/title58.1/chapter3/section58.1-322.
   - A taxpayer who claims the age deduction may not claim the disability income subtraction, the low-income credit or either Virginia earned income credit. If either spouse claims one of those credits, neither spouse may claim the age deduction.
   - Source: Va. Code § 58.1-322.03(5); 2025 instructions, Line 4 and the Age 65 and Older Deduction Worksheet.
 
-### Spouse tax adjustment (joint filers) ([2025 instructions](https://www.tax.virginia.gov/sites/default/files/vatax-pdf/2025-760-instructions.pdf))
+#### Spouse tax adjustment (joint filers) ([2025 instructions](https://www.tax.virginia.gov/sites/default/files/vatax-pdf/2025-760-instructions.pdf))
 
 Filing status 2 couples may reduce tax by up to $259 if both spouses have income and combined taxable income is more than $3,000. Compute it with the worksheet in the instructions or the Department's calculator, and enter the spouse's VAGI on the return. Source: 2025 instructions, Line 17.
 
-### Federal conformity and One Big Beautiful Bill Act (P.L. 119-21) decoupling ([§ 58.1-301](https://law.lis.virginia.gov/vacode/title58.1/chapter3/section58.1-301/))
+#### Federal conformity and One Big Beautiful Bill Act (P.L. 119-21) decoupling ([§ 58.1-301](https://law.lis.virginia.gov/vacode/title58.1/chapter3/section58.1-301/))
 
 - Virginia now conforms to the Internal Revenue Code **as it existed on December 31, 2025**, plus later federal amendments that only extend the expiry of a provision Virginia already follows (Va. Code § 58.1-301 B). This replaced the suspended rolling conformity; it was enacted February 20, 2026 and applies to 2025 returns (Tax Bulletin 26-1).
 - Virginia follows P.L. 119-21 only to the extent it changes federal AGI or federal itemized deductions, **except** that it decouples from:
@@ -119,7 +126,7 @@ Filing status 2 couples may reduce tax by up to $259 if both spouses have income
 - Business interest: Virginia follows the federal IRC § 163(j) limitation, and for 2025 and later allows a Virginia deduction of 20% of the business interest disallowed federally (enclose federal Form 8990).
 - Sources: https://law.lis.virginia.gov/vacode/title58.1/chapter3/section58.1-301/ ; Tax Bulletin 26-1, https://www.tax.virginia.gov/sites/default/files/inline-files/tb-26-1-date-of-irc-conformity-advanced.pdf .
 
-### Estimated tax ([2026 Form 760ES](https://www.tax.virginia.gov/sites/default/files/taxforms/individual-income-tax/2026/760es-2026.pdf))
+#### Estimated tax ([2026 Form 760ES](https://www.tax.virginia.gov/sites/default/files/taxforms/individual-income-tax/2026/760es-2026.pdf))
 
 - **2026 onward:** estimated payments (or more withholding) are required if Virginia tax after withholding and credits is expected to be **more than $1,000**. Nothing is required if the excess is $1,000 or less, or if expected VAGI is below the filing threshold.
 - **2025:** there is no addition to tax if every payment was on time and the balance owed with the 2025 return is $150 or less.
@@ -128,25 +135,25 @@ Filing status 2 couples may reduce tax by up to $259 if both spouses have income
 - **Electronic payment mandate:** all payments must be electronic if any estimated installment or any return or extension payment exceeds $1,500, or total estimated tax exceeds $6,000.
 - Sources: 2026 Form 760ES sections I, II and VIII; 2025 instructions, Schedule ADJ Line 18; https://law.lis.virginia.gov/vacode/title58.1/chapter3/section58.1-490/ ; https://law.lis.virginia.gov/vacode/title58.1/chapter3/section58.1-492/ .
 
-### Low-income credit and Virginia earned income credit (Line 23; claim only one) ([§ 58.1-339.8](https://law.lis.virginia.gov/vacode/title58.1/chapter3/section58.1-339.8/))
+#### Low-income credit and Virginia earned income credit (Line 23; claim only one) ([§ 58.1-339.8](https://law.lis.virginia.gov/vacode/title58.1/chapter3/section58.1-339.8/))
 
 - **Credit for Low-Income Individuals:** nonrefundable, $300 for each personal and dependent exemption (not the 65-or-older or blind exemptions), if **family VAGI** (taxpayer, spouse and dependents) is equal to or less than the federal poverty guideline for the family size. For 2025 returns the table starts at $15,650 for one person and is $26,650 for three. Only one spouse may claim it when filing separately.
 - **Virginia earned income credit:** for taxpayers who claimed the federal earned income credit. For **2025 and 2026 only**, a **refundable** credit of 20% of the federal credit (it was 15% for 2022 to 2024). The alternative nonrefundable credit is also 20% of the federal credit. Nonresidents and part-year residents cannot take the refundable version.
 - **Barred** for the whole household if the taxpayer, spouse or any dependent claims: the age deduction; the 65-or-older or blind exemption; the Virginia National Guard, basic military pay or federal/state employee subtraction; or if the taxpayer is claimed as a dependent on another return.
 - Sources: https://law.lis.virginia.gov/vacode/title58.1/chapter3/section58.1-339.8/ ; 2025 instructions, "Tax Credit for Low-Income Individuals or Virginia Earned Income Tax Credit".
 
-### Pass-through entity elective tax (PTET) ([§ 58.1-390.3](https://law.lis.virginia.gov/vacode/title58.1/chapter3/section58.1-390.3/))
+#### Pass-through entity elective tax (PTET) ([§ 58.1-390.3](https://law.lis.virginia.gov/vacode/title58.1/chapter3/section58.1-390.3/))
 
 A partnership, LLC taxed as a partnership, or S corporation (including an S corporation with a single shareholder, since the test is being a separate entity for federal tax, not the number of owners) may elect annually, on its timely filed return (including extensions), to pay Virginia tax at 5.75% on its eligible owners' shares. An individual owner then claims a refundable credit for their share on Schedule CR and must add back their share of the entity's state income tax deduction. A sole proprietorship or single-member LLC disregarded for federal tax is **not** a pass-through entity for this purpose, because the definition requires an entity "recognized as a separate entity for federal income tax purposes". Sources: https://law.lis.virginia.gov/vacode/title58.1/chapter3/section58.1-390.3/ ; https://law.lis.virginia.gov/vacode/title58.1/chapter3/section58.1-390.1/ .
 
-### 2025 returns: what differs from 2026 ([2025 instructions](https://www.tax.virginia.gov/sites/default/files/vatax-pdf/2025-760-instructions.pdf))
+#### 2025 returns: what differs from 2026 ([2025 instructions](https://www.tax.virginia.gov/sites/default/files/vatax-pdf/2025-760-instructions.pdf))
 
 - Rates, standard deduction ($8,750 / $17,500), exemptions and age-deduction limits are the same.
 - The 2025 estimated-tax penalty test uses the $150 balance-due rule, not the $1,000 rule.
 - Conformity: the December 31, 2025 conformity date and the P.L. 119-21 decouplings apply to 2025 returns. Clients who filed a 2025 return before February 20, 2026 may need to amend (Tax Bulletin 26-1).
 - Due dates: filed by May 1, 2026; extended returns are due November 1, 2026, which is a Sunday, so a return postmarked Monday, November 2, 2026 is timely under the weekend rule.
 
-## Boundaries and exceptions ([2025 instructions](https://www.tax.virginia.gov/sites/default/files/vatax-pdf/2025-760-instructions.pdf))
+## Boundary and exception table
 
 | Situation | Rule |
 | --- | --- |
@@ -167,7 +174,7 @@ A partnership, LLC taxed as a partnership, or S corporation (including an S corp
 | Qualified business income deduction and Schedule 1-A deductions | Taken after federal AGI; no effect on Virginia; no Virginia addition needed |
 | Disregarded single-member LLC | Reported on the owner's Form 760; cannot make the PTET election |
 
-## Worked cases ([2025 instructions](https://www.tax.virginia.gov/sites/default/files/vatax-pdf/2025-760-instructions.pdf))
+## Worked cases
 
 All are hypothetical full-year residents with no additions or subtractions unless stated. Tax is shown before rounding to whole dollars.
 
@@ -176,6 +183,20 @@ All are hypothetical full-year residents with no additions or subtractions unles
 - Tax = $720 + 5.75% × ($70,320 − $17,000) = $3,785.90.
 - Expected tax after withholding (none) is more than $1,000, so four estimated payments are required (25% each on May 1, June 15 and September 15, 2026 and January 15, 2027). The federal QBI deduction does not reduce Virginia income.
 
+```oa-check
+name: VA 2026 single sole proprietor, federal AGI 80,000
+inputs:
+  federal_agi: 80000
+  standard_deduction: 8750
+  exemptions: 930
+steps:
+  - taxable: federal_agi - standard_deduction - exemptions
+  - tax: 0.02 * min(taxable, 3000) + 0.03 * clamp(taxable - 3000, 0, 2000) + 0.05 * clamp(taxable - 5000, 0, 12000) + 0.0575 * max(taxable - 17000, 0)
+expected:
+  taxable: 70320
+  tax: 3785.90
+```
+
 **Case C2, age deduction phase-out (2025).** Single, born 1958. Federal AGI $80,000, of which $20,000 is taxable Social Security. No conformity adjustments. Standard deduction.
 - AFAGI = $80,000 − $20,000 = $60,000. Excess over $50,000 = $10,000. Age deduction = $12,000 − $10,000 = $2,000.
 - VAGI = $80,000 − $2,000 − $20,000 = $58,000.
@@ -183,10 +204,32 @@ All are hypothetical full-year residents with no additions or subtractions unles
 - Tax = $720 + 5.75% × ($47,520 − $17,000) = $2,474.90.
 - With AFAGI of $62,000 or more, the age deduction would be nil. Because this client claims the age deduction and the 65-or-older exemption, no low-income or earned income credit is available.
 
-**Case C3, choosing the credit (2025).** Married filing jointly, one child, family VAGI $26,000 (at or below the $26,650 guideline for three), federal earned income credit claimed $4,000. Standard deduction.
+**Case C3, a decision: which credit (2025).** Married filing jointly, one child, family VAGI $26,000 (at or below the $26,650 guideline for three), federal earned income credit claimed $4,000. Standard deduction.
 - Taxable income = $26,000 − $17,500 − $2,790 (three exemptions) = $5,710. Tax = $120 + 5% × ($5,710 − $5,000) = $155.50.
 - Low-income credit = $900 (three exemptions at $300) but nonrefundable, so limited to $155.50.
-- Refundable Virginia earned income credit = 20% × $4,000 = $800; tax is eliminated and the excess is refunded. Claim the earned income credit, not both.
+- Refundable Virginia earned income credit = 20% × $4,000 = $800; tax is eliminated and $644.50 is refunded. The low-income credit only wipes out the $155.50 of tax and refunds nothing. Decision: claim the earned income credit; it is worth $644.50 more. The low-income credit would win only where 20% of the federal credit is below the tax and below $300 per exemption.
+
+```oa-check
+name: VA 2025 joint filers, low-income credit against refundable earned income credit
+inputs:
+  family_vagi: 26000
+  standard_deduction: 17500
+  exemptions: 3
+  federal_eic: 4000
+steps:
+  - taxable: family_vagi - standard_deduction - exemptions * 930
+  - tax: 0.02 * min(taxable, 3000) + 0.03 * clamp(taxable - 3000, 0, 2000) + 0.05 * clamp(taxable - 5000, 0, 12000) + 0.0575 * max(taxable - 17000, 0)
+  - low_income_credit_used: min(exemptions * 300, tax)
+  - eic_refundable: 0.20 * federal_eic
+  - refund_with_eic: eic_refundable - tax
+  - advantage_of_eic: refund_with_eic - 0
+expected:
+  taxable: 5710
+  tax: 155.50
+  low_income_credit_used: 155.50
+  refund_with_eic: 644.50
+  advantage_of_eic: 644.50
+```
 
 **Case C4, extension penalty threshold (2025 return).** Total 2025 tax $5,000. By May 1, 2026 the client paid $4,400 (withholding, estimates and a Form 760IP payment) and filed on August 15, 2026, paying the rest.
 - Underpayment $600 is more than 10% of the tax ($500), so the extension penalty applies: 2% per month or part of a month from May 1 to August 15 (four months) = 8% × $600 = $48, plus interest.
@@ -205,7 +248,7 @@ All are hypothetical full-year residents with no additions or subtractions unles
 - Business credits on Schedule CR (land preservation, historic rehabilitation and others), net operating loss carrybacks, and amended returns after a federal audit (federal changes must be reported within one year of the final determination).
 - Planning for 2027 and later standard deductions until the 2027 forms are published.
 
-## Filing and payment ([2025 instructions](https://www.tax.virginia.gov/sites/default/files/vatax-pdf/2025-760-instructions.pdf))
+## Filing and payment
 
 | Item | 2025 return | 2026 return |
 | --- | --- | --- |
@@ -222,7 +265,7 @@ All are hypothetical full-year residents with no additions or subtractions unles
 - **Fiscal year filers:** the 15th day of the 4th month after year end.
 - Sources: 2025 instructions ("When to File Your Return", "Reminders", Schedule ADJ Lines 18 to 20); https://law.lis.virginia.gov/vacode/title58.1/chapter3/section58.1-341/ ; https://law.lis.virginia.gov/vacode/title58.1/chapter3/section58.1-344/ .
 
-## Completion checklist ([2026 Form 760ES](https://www.tax.virginia.gov/sites/default/files/taxforms/individual-income-tax/2026/760es-2026.pdf))
+## Completion checklist
 
 - [ ] Residency confirmed as full year (domicile, or a Virginia home kept more than 183 days); otherwise stop. Present more than 183 days with no Virginia abode: refer.
 - [ ] Line 1 is federal AGI, not taxable income.
@@ -235,3 +278,21 @@ All are hypothetical full-year residents with no additions or subtractions unles
 - [ ] Schedule OSC credit limited to the lesser of other-state tax and the Virginia tax on that income; none for Arizona, California or Oregon (claimed there), none for D.C. income (get any D.C. withholding refunded), none for Kentucky, Maryland, Pennsylvania or West Virginia wages those states do not tax; PTET credit with its add-back.
 - [ ] Estimated tax tested: 2026 more-than-$1,000 rule; 2025 $150 rule; electronic payment mandate.
 - [ ] Balance paid by May 1 even when filing on extension.
+
+## Sources
+
+| Source | URL | Read on |
+| --- | --- | --- |
+| Va. Code § 58.1-302. Read for the definition of resident (domicile, 183-day abode test) and the Member of Congress exception. | https://law.lis.virginia.gov/vacode/title58.1/chapter3/section58.1-302/ | 2026-10-16 |
+| Va. Code § 58.1-320. Read for the rate schedule (2%, 3%, 5%, 5.75% over $17,000). | https://law.lis.virginia.gov/vacode/title58.1/chapter3/section58.1-320/ | 2026-11-13 |
+| Va. Code § 58.1-322.03. Read for the standard deduction ($8,750 / $17,500 for 2025 and 2026; $9,200 / $18,400 for 2027; $9,300 / $18,600 for 2028 and 2029), the $930 and $800 exemptions and the age deduction. | https://law.lis.virginia.gov/vacode/title58.1/chapter3/section58.1-322.03/ | 2026-11-13 |
+| Va. Code § 58.1-301. Read for the December 31, 2025 conformity date and the P.L. 119-21 decouplings. | https://law.lis.virginia.gov/vacode/title58.1/chapter3/section58.1-301/ | 2026-10-16 |
+| Va. Code § 58.1-339.8. Read for the low-income credit and the Virginia earned income credit (20% for 2025 and 2026). | https://law.lis.virginia.gov/vacode/title58.1/chapter3/section58.1-339.8/ | 2026-10-16 |
+| Va. Code § 58.1-390.3 and § 58.1-390.1. Read for the PTET at 5.75%, the annual election and the owner credit with add-back. | https://law.lis.virginia.gov/vacode/title58.1/chapter3/section58.1-390.3/ | 2026-11-13 |
+| Va. Code §§ 58.1-341 and 58.1-344. Read for the due date, the six-month extension and the July 1 date for taxpayers abroad. | https://law.lis.virginia.gov/vacode/title58.1/chapter3/section58.1-344/ | 2026-10-16 |
+| Va. Code §§ 58.1-490 and 58.1-492. Read for the estimated tax requirement and the safe harbours. | https://law.lis.virginia.gov/vacode/title58.1/chapter3/section58.1-492/ | 2026-10-16 |
+| 2025 Form 760 instructions. Read for line numbers, filing thresholds, Schedule ADJ, Schedule OSC, the spouse tax adjustment, the credits and the penalties. | https://www.tax.virginia.gov/sites/default/files/vatax-pdf/2025-760-instructions.pdf | 2026-11-13 |
+| 2026 Form 760ES. Read for the 2026 more-than-$1,000 rule, the 2026 due dates, the filing thresholds and the electronic payment mandate. | https://www.tax.virginia.gov/sites/default/files/taxforms/individual-income-tax/2026/760es-2026.pdf | 2026-11-13 |
+| Tax Bulletin 26-1. Read for the conformity advance enacted February 20, 2026 and the decoupled P.L. 119-21 provisions. | https://www.tax.virginia.gov/sites/default/files/inline-files/tb-26-1-date-of-irc-conformity-advanced.pdf | 2026-10-16 |
+
+Not yet confirmed: the 2026 Form 760 instructions and line numbers were not yet published when read (line numbers above are from the 2025 return); the 2026 birth-date cut-off for the age deduction; the 2026 federal poverty guideline table for the low-income credit; the 2026 statutory interest rate.
