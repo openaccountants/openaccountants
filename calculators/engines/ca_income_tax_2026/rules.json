@@ -1,0 +1,854 @@
+{
+  "engine": "ca_income_tax_2026",
+  "code_url": "https://github.com/openaccountants/openaccountants/tree/main/calculators/engines/ca_income_tax_2026",
+  "generated_from": "src/lib/engines/ca-income-tax-2026.ts",
+  "source_commit": "c2e3c2b9",
+  "licence": "Figures and wording: OpenAccountants Guide License v1.0. Code: AGPL-3.0-only.",
+  "spec": {
+    "name": "ca_income_tax_2026",
+    "version": "2.0.0",
+    "jurisdiction": "CA",
+    "tax_years": [
+      "2025",
+      "2026"
+    ],
+    "summary": "Canada personal income tax for 2026 or 2025 for a single person resident in Ontario, British Columbia or Alberta on 31 December: CPP and EI, net and taxable income, federal tax (basic personal amount with its phase-down, Canada employment amount), provincial tax (Ontario surtax, tax reduction, LIFT and Health Premium; BC tax reduction; Alberta 8% band and supplemental credit), the balance owing or refund against tax already paid, and what more RRSP saves. Quebec, dividends, a spouse or dependants, age 65 or over, and employment plus self-employment together are refused.",
+    "facts": {
+      "province": {
+        "type": "string",
+        "required": true,
+        "choices": [
+          "ON",
+          "BC",
+          "AB",
+          "QC"
+        ],
+        "description": "province of residence on 31 December, two-letter code (QC is refused: Quebec tax is on a separate TP-1 return)"
+      },
+      "employment_income": {
+        "type": "number",
+        "required": false,
+        "default": 0,
+        "description": "CAD, T4 employment income from one employer for the whole year (CPP and EI are computed from it)"
+      },
+      "self_employment_net_income": {
+        "type": "number",
+        "required": false,
+        "default": 0,
+        "description": "CAD, net self-employment profit (T2125); a loss is not supported"
+      },
+      "other_income": {
+        "type": "number",
+        "required": false,
+        "default": 0,
+        "description": "CAD, other fully taxable income with no credit of its own (interest, net rent)"
+      },
+      "eligible_dividends": {
+        "type": "number",
+        "required": false,
+        "default": 0,
+        "description": "CAD, actual eligible dividends received (refused if more than 0)"
+      },
+      "other_dividends": {
+        "type": "number",
+        "required": false,
+        "default": 0,
+        "description": "CAD, actual other-than-eligible dividends received (refused if more than 0)"
+      },
+      "rrsp_deduction": {
+        "type": "number",
+        "required": false,
+        "default": 0,
+        "description": "CAD, RRSP deduction claimed for the year (within the limit on the notice of assessment)"
+      },
+      "tax_withheld": {
+        "type": "number",
+        "required": false,
+        "default": 0,
+        "description": "CAD, income tax already deducted at source (T4 box 22) plus instalments paid for the year"
+      },
+      "has_spouse_or_partner": {
+        "type": "boolean",
+        "required": false,
+        "default": false,
+        "description": "had a spouse or common-law partner on 31 December (refused if true: spouse credits and family tests are not computed)"
+      },
+      "dependants": {
+        "type": "number",
+        "required": false,
+        "default": 0,
+        "description": "dependants supported (refused if more than 0)"
+      },
+      "age_65_or_over": {
+        "type": "boolean",
+        "required": false,
+        "default": false,
+        "description": "65 or older on 31 December (refused if true: age and pension credits are not computed)"
+      },
+      "tax_year": {
+        "type": "string",
+        "required": true,
+        "choices": [
+          "2025",
+          "2026"
+        ],
+        "description": "the tax year the question is about. This engine has figures for 2025 and 2026 only; any other year is refused"
+      }
+    },
+    "outputs": {
+      "taxable_income": "CAD",
+      "basic_federal_tax": "CAD",
+      "provincial_tax": "CAD",
+      "total_income_tax": "CAD",
+      "cpp_payable_with_return": "CAD (self-employed only)",
+      "balance_owing": "CAD (negative = refund)",
+      "rrsp_saving_next_1000": "CAD of income tax saved by CAD 1,000 more RRSP deduction",
+      "federal_saving_per_extra_rrsp_dollar": "CAD per CAD"
+    }
+  },
+  "anchors": [
+    "ca-fed-cpp-ei Tests 1 to 4 (2025): self-employed CPP, line 22200 deduction and line 31000 credit base",
+    "ca-fed-t1-return Examples 1 to 3 (2025): basic federal tax $7,978.82, $0 and $58,640.54",
+    "on-individual-return Example 1 (2026, employee $34,000): Ontario tax $426.18; Example 2 (2025, $180,000, spouse, donations): $19,722.34",
+    "bc-individual-return Example 1 (2026, $42,000): BC tax $1,506.81; Example 2 (2025, $120,000, spouse, donations): $7,275.24",
+    "ab-individual-return Example 1 (2026, $75,000): Alberta tax $4,102.48; Example 2 (2025, $120,000, supplemental credit $59.30): $5,703.50",
+    "canada-payroll (2026): employee maximums CPP $4,230.45, CPP2 $416.00, EI $1,123.07"
+  ],
+  "rules": [
+    {
+      "name": "FEDERAL_BRACKETS_2026",
+      "value": [
+        [
+          58523,
+          0.14
+        ],
+        [
+          117045,
+          0.205
+        ],
+        [
+          181440,
+          0.26
+        ],
+        [
+          258482,
+          0.29
+        ],
+        [
+          null,
+          0.33
+        ]
+      ],
+      "slug": "canada-payroll",
+      "section": "Section 2 -- Income Tax Withholding (Source Deductions) / Federal Tax Brackets (2026)",
+      "quote": "Federal Tax Brackets (2026)\nTaxable Income (CAD) | Rate\n0 -- 58,523 | 14%\n58,523 -- 117,045 | 20.5%\n117,045 -- 181,440 | 26%\n181,440 -- 258,482 | 29%\n258,482+ | 33%",
+      "skill_url": "https://www.openaccountants.com/skills/canada-payroll"
+    },
+    {
+      "name": "FEDERAL_BPA_2026",
+      "value": {
+        "max": 16452,
+        "min": 14829
+      },
+      "slug": "canada-payroll",
+      "section": "Federal Basic Personal Amount (BPA) -- 2026",
+      "quote": "Federal Basic Personal Amount (BPA) -- 2026\nIncome Level | BPA (CAD)\nUp to $181,440 | $16,452\n$181,440 -- $258,482 | Claws back to $14,829\nAbove $258,482 | $14,829",
+      "skill_url": "https://www.openaccountants.com/skills/canada-payroll"
+    },
+    {
+      "name": "FEDERAL_LOWEST_RATE_2026",
+      "value": 0.14,
+      "slug": "canada-payroll",
+      "section": "Federal Tax Brackets (2026)",
+      "quote": "The lowest bracket rate was reduced from 15% to 14% effective for the 2026 tax year",
+      "skill_url": "https://www.openaccountants.com/skills/canada-payroll"
+    },
+    {
+      "name": "FEDERAL_CREDIT_RATE_2026",
+      "value": 0.14,
+      "slug": "ca-fed-cpp-ei",
+      "section": "4.5 Tax treatment of self-employed CPP (Tier 1)",
+      "quote": "federal credit at the lowest federal rate: 14.5% for 2025, 14% for 2026",
+      "skill_url": "https://www.openaccountants.com/skills/ca-fed-cpp-ei"
+    },
+    {
+      "name": "SELF_EMPLOYED_CPP_BOTH_HALVES_2026",
+      "value": 2,
+      "slug": "canada-tax-optimization",
+      "section": "Section 8 -- CPP/EI & Social Security Optimization / CPP Contributions (2026)",
+      "quote": "Self-employed CPP -- Self-employed pay both halves (11.9% CPP1 + 8% CPP2)",
+      "skill_url": "https://www.openaccountants.com/skills/canada-tax-optimization"
+    },
+    {
+      "name": "FEDERAL_BRACKETS_2025",
+      "value": [
+        [
+          57375,
+          0.145
+        ],
+        [
+          114750,
+          0.205
+        ],
+        [
+          177882,
+          0.26
+        ],
+        [
+          253414,
+          0.29
+        ],
+        [
+          null,
+          0.33
+        ]
+      ],
+      "slug": "ca-fed-t1-return",
+      "section": "Section 1 -- Quick Reference / Federal Tax Brackets (2025)",
+      "quote": "Federal Tax Brackets (2025)\nTaxable Income (CAD) | Rate | Cumulative Tax\n0 -- 57,375 | 14.5%* | 8,319\n57,376 -- 114,750 | 20.5% | 20,081\n114,751 -- 177,882 | 26% | 36,495\n177,883 -- 253,414 | 29% | 58,399\n253,415+ | 33% | 58,399+\n*14.5% is a blended rate for 2025 (15% Jan-Jun, 14% Jul-Dec).",
+      "skill_url": "https://www.openaccountants.com/skills/ca-fed-t1-return"
+    },
+    {
+      "name": "FEDERAL_BPA_2025",
+      "value": {
+        "max": 16129,
+        "min": 14538
+      },
+      "slug": "ca-fed-t1-return",
+      "section": "Basic Personal Amount (2025)",
+      "quote": "Basic Personal Amount (2025)\nNet Income | BPA\n$177,882 or less | $16,129\n$177,882 -- $253,414 | Graduated reduction\n$253,414+ | $14,538",
+      "skill_url": "https://www.openaccountants.com/skills/ca-fed-t1-return"
+    },
+    {
+      "name": "FEDERAL_BPA_PHASE_DOWN_METHOD",
+      "value": "linear between the 29% and 33% bracket thresholds, on net income",
+      "slug": "ca-fed-t1-return",
+      "section": "Section 6 -- Tier 2 Catalogue (Reviewer Judgement Required) / 6.2 BPA Reduction for High Earners",
+      "quote": "BPA = $16,129 - $1,591 x (net income - $177,882) / $75,532. Flag if net income between $177,882 and $253,414.",
+      "skill_url": "https://www.openaccountants.com/skills/ca-fed-t1-return"
+    },
+    {
+      "name": "FEDERAL_CREDIT_RATE_2025",
+      "value": 0.145,
+      "slug": "ca-fed-t1-return",
+      "section": "Section 7 -- Excel Working Paper Template",
+      "quote": "D2. Non-refundable credits (x 14.5%)",
+      "skill_url": "https://www.openaccountants.com/skills/ca-fed-t1-return"
+    },
+    {
+      "name": "EI_RATE_2025",
+      "value": 0.0164,
+      "slug": "ca-fed-t1-return",
+      "section": "Rates and thresholds / T1 Return",
+      "quote": "EI rate (2025) -- $1.64/$100",
+      "skill_url": "https://www.openaccountants.com/skills/ca-fed-t1-return"
+    },
+    {
+      "name": "YMPE_2025",
+      "value": 71300,
+      "slug": "ca-fed-cpp-ei",
+      "section": "Section 1 -- Quick reference / CPP1 thresholds (2025)",
+      "quote": "CPP1 thresholds (2025)\nYear's Maximum Pensionable Earnings (YMPE) | $71,300.00",
+      "skill_url": "https://www.openaccountants.com/skills/ca-fed-cpp-ei"
+    },
+    {
+      "name": "BASIC_EXEMPTION_2025",
+      "value": 3500,
+      "slug": "ca-fed-cpp-ei",
+      "section": "Section 1 -- Quick reference / CPP1 thresholds (2025)",
+      "quote": "CPP1 thresholds (2025)\nYear's Basic Exemption | $3,500.00",
+      "skill_url": "https://www.openaccountants.com/skills/ca-fed-cpp-ei"
+    },
+    {
+      "name": "CPP_EMPLOYEE_RATE_2025",
+      "value": 0.0595,
+      "slug": "ca-fed-cpp-ei",
+      "section": "Section 1 -- Quick reference / CPP1 thresholds (2025)",
+      "quote": "CPP1 thresholds (2025)\nEmployee rate | 5.95%\nSelf-employed rate (2x employee) | 11.90%",
+      "skill_url": "https://www.openaccountants.com/skills/ca-fed-cpp-ei"
+    },
+    {
+      "name": "YAMPE_2025",
+      "value": 81200,
+      "slug": "ca-fed-cpp-ei",
+      "section": "Rates and thresholds / CPP-CPP2-EI",
+      "quote": "YAMPE -- $81,200.00",
+      "skill_url": "https://www.openaccountants.com/skills/ca-fed-cpp-ei"
+    },
+    {
+      "name": "CPP2_EMPLOYEE_RATE_2025",
+      "value": 0.04,
+      "slug": "ca-fed-cpp-ei",
+      "section": "Rates and thresholds / CPP-CPP2-EI",
+      "quote": "Employee CPP2 rate -- 4.00%\nSelf-employed CPP2 rate (2x employee) -- 8.00%",
+      "skill_url": "https://www.openaccountants.com/skills/ca-fed-cpp-ei"
+    },
+    {
+      "name": "EI_MAX_INSURABLE_EARNINGS_2025",
+      "value": 65700,
+      "slug": "ca-fed-cpp-ei",
+      "section": "Rates and thresholds / CPP-CPP2-EI",
+      "quote": "Max insurable earnings (MIE) -- $65,700.00",
+      "skill_url": "https://www.openaccountants.com/skills/ca-fed-cpp-ei"
+    },
+    {
+      "name": "CANADA_EMPLOYMENT_AMOUNT",
+      "value": {
+        "2025": 1471,
+        "2026": 1501
+      },
+      "slug": "ca-fed-t1-return",
+      "section": "Rates and thresholds / T1 Return",
+      "quote": "Canada employment amount (line 31260) -- $1,471 (2025); $1,501 (2026). Employment income only; not for the self-employed",
+      "skill_url": "https://www.openaccountants.com/skills/ca-fed-t1-return"
+    },
+    {
+      "name": "CPP_BASE_RATE_EACH_SIDE",
+      "value": 0.0495,
+      "slug": "ca-fed-cpp-ei",
+      "section": "Rates and thresholds / CPP-CPP2-EI",
+      "quote": "line 22200 deduction = employer-equivalent half of the BASE contribution (4.95% of the 9.9%) plus ALL enhancement (first-additional and CPP2) contributions; only the employee-equivalent half of the base is the line 31000 credit",
+      "skill_url": "https://www.openaccountants.com/skills/ca-fed-cpp-ei"
+    },
+    {
+      "name": "CPP2_IS_A_DEDUCTION",
+      "value": true,
+      "slug": "ca-fed-cpp-ei",
+      "section": "4.5 Tax treatment of self-employed CPP (Tier 1)",
+      "quote": "CPP2 split -- CPP2 contributions (8% between YMPE and YAMPE) are DEDUCTIBLE, not creditable",
+      "skill_url": "https://www.openaccountants.com/skills/ca-fed-cpp-ei"
+    },
+    {
+      "name": "SELF_EMPLOYED_CPP_SPLIT",
+      "value": true,
+      "slug": "ca-fed-t1-return",
+      "section": "CPP Self-Employed (2025)",
+      "quote": "Half of base CPP plus all first and second additional (CPP2) contributions are deductible (line 22200); the other half of base CPP is a non-refundable credit (line 31000).",
+      "skill_url": "https://www.openaccountants.com/skills/ca-fed-t1-return"
+    },
+    {
+      "name": "EI_PREMIUM_CREDIT",
+      "value": true,
+      "slug": "ca-fed-cpp-ei",
+      "section": "4.6 EI for self-employed (Tier 1)",
+      "quote": "(line 31200 is EI through employment)",
+      "skill_url": "https://www.openaccountants.com/skills/ca-fed-cpp-ei"
+    },
+    {
+      "name": "CPP_EMPLOYEE_RATE",
+      "value": 0.0595,
+      "slug": "canada-payroll",
+      "section": "Rates and thresholds / Payroll",
+      "quote": "CPP employee rate — 5.95%",
+      "skill_url": "https://www.openaccountants.com/skills/canada-payroll"
+    },
+    {
+      "name": "BASIC_EXEMPTION",
+      "value": 3500,
+      "slug": "canada-payroll",
+      "section": "Rates and thresholds / Payroll",
+      "quote": "Basic exemption — $3,500",
+      "skill_url": "https://www.openaccountants.com/skills/canada-payroll"
+    },
+    {
+      "name": "YMPE_2026",
+      "value": 74600,
+      "slug": "canada-payroll",
+      "section": "Rates and thresholds / Payroll",
+      "quote": "YMPE (2026) — $74,600",
+      "skill_url": "https://www.openaccountants.com/skills/canada-payroll"
+    },
+    {
+      "name": "YAMPE_2026",
+      "value": 85000,
+      "slug": "canada-payroll",
+      "section": "Rates and thresholds / Payroll",
+      "quote": "YAMPE (2026) — $85,000",
+      "skill_url": "https://www.openaccountants.com/skills/canada-payroll"
+    },
+    {
+      "name": "CPP2_EMPLOYEE_RATE",
+      "value": 0.04,
+      "slug": "canada-payroll",
+      "section": "Section 3 -- Social Security: Employee Deductions / Canada Pension Plan (CPP) -- 2026",
+      "quote": "CPP2 (second additional) | 4.00% | Earnings between YMPE $74,600 and YAMPE $85,000 | $416.00",
+      "skill_url": "https://www.openaccountants.com/skills/canada-payroll"
+    },
+    {
+      "name": "EI_EMPLOYEE_RATE_NON_QC",
+      "value": 0.0163,
+      "slug": "canada-payroll",
+      "section": "Rates and thresholds / Payroll",
+      "quote": "EI employee rate (non-QC) — 1.63%",
+      "skill_url": "https://www.openaccountants.com/skills/canada-payroll"
+    },
+    {
+      "name": "EI_MAX_INSURABLE_EARNINGS",
+      "value": 68900,
+      "slug": "canada-payroll",
+      "section": "Rates and thresholds / Payroll",
+      "quote": "Max insurable earnings — $68,900",
+      "skill_url": "https://www.openaccountants.com/skills/canada-payroll"
+    },
+    {
+      "name": "ON_BRACKETS_2026",
+      "value": [
+        [
+          53891,
+          0.0505
+        ],
+        [
+          107785,
+          0.0915
+        ],
+        [
+          150000,
+          0.1116
+        ],
+        [
+          220000,
+          0.1216
+        ],
+        [
+          null,
+          0.1316
+        ]
+      ],
+      "slug": "on-individual-return",
+      "section": "Rates, bands and thresholds",
+      "quote": "Band 1: taxable income up to $53,891 | 5.05% | 2026\nBand 2: $53,891.01 to $107,785 | 9.15% | 2026\nBand 3: $107,785.01 to $150,000 | 11.16% | 2026\nBand 4: $150,000.01 to $220,000 | 12.16% | 2026\nBand 5: over $220,000 | 13.16% | 2026",
+      "skill_url": "https://www.openaccountants.com/skills/on-individual-return"
+    },
+    {
+      "name": "ON_BRACKETS_2025",
+      "value": [
+        [
+          52886,
+          0.0505
+        ],
+        [
+          105775,
+          0.0915
+        ],
+        [
+          150000,
+          0.1116
+        ],
+        [
+          220000,
+          0.1216
+        ],
+        [
+          null,
+          0.1316
+        ]
+      ],
+      "slug": "on-individual-return",
+      "section": "Rates, bands and thresholds",
+      "quote": "Band 1: taxable income up to $52,886 | 5.05% | 2025\nBand 2: $52,886.01 to $105,775 ... | 9.15% | 2025\nBand 3: $105,775.01 to $150,000 ... | 11.16% | 2025\nBand 4: $150,000.01 to $220,000 ... | 12.16% | 2025\nBand 5: over $220,000 ... | 13.16% | 2025",
+      "skill_url": "https://www.openaccountants.com/skills/on-individual-return"
+    },
+    {
+      "name": "ON_CREDIT_RATE",
+      "value": 0.0505,
+      "slug": "on-individual-return",
+      "section": "Rates, bands and thresholds",
+      "quote": "Non-refundable credit rate (all Part B amounts, CPP and EI included) | 5.05% | 2026, 2025",
+      "skill_url": "https://www.openaccountants.com/skills/on-individual-return"
+    },
+    {
+      "name": "ON_BPA_2026",
+      "value": 12989,
+      "slug": "on-individual-return",
+      "section": "Rates, bands and thresholds",
+      "quote": "Basic personal amount | $12,989 | 2026",
+      "skill_url": "https://www.openaccountants.com/skills/on-individual-return"
+    },
+    {
+      "name": "ON_BPA_2025",
+      "value": 12747,
+      "slug": "on-individual-return",
+      "section": "Rates, bands and thresholds",
+      "quote": "Basic personal amount | $12,747 | 2025",
+      "skill_url": "https://www.openaccountants.com/skills/on-individual-return"
+    },
+    {
+      "name": "ON_SURTAX_2026",
+      "value": [
+        5818,
+        7446
+      ],
+      "slug": "on-individual-return",
+      "section": "Rates, bands and thresholds",
+      "quote": "Ontario surtax | 20% of basic Ontario tax over $5,818, plus 36% of basic Ontario tax over $7,446 | 2026",
+      "skill_url": "https://www.openaccountants.com/skills/on-individual-return"
+    },
+    {
+      "name": "ON_SURTAX_2025",
+      "value": [
+        5710,
+        7307
+      ],
+      "slug": "on-individual-return",
+      "section": "Rates, bands and thresholds",
+      "quote": "Ontario surtax | 20% of basic Ontario tax over $5,710, plus 36% of basic Ontario tax over $7,307 | 2025",
+      "skill_url": "https://www.openaccountants.com/skills/on-individual-return"
+    },
+    {
+      "name": "ON_TAX_REDUCTION_2026",
+      "value": 300,
+      "slug": "on-individual-return",
+      "section": "Rates, bands and thresholds",
+      "quote": "Ontario tax reduction | basic $300 ... reduction is twice that total minus Ontario tax | 2026",
+      "skill_url": "https://www.openaccountants.com/skills/on-individual-return"
+    },
+    {
+      "name": "ON_TAX_REDUCTION_2025",
+      "value": 294,
+      "slug": "on-individual-return",
+      "section": "Rates, bands and thresholds",
+      "quote": "Ontario tax reduction | basic $294 ... | 2025",
+      "skill_url": "https://www.openaccountants.com/skills/on-individual-return"
+    },
+    {
+      "name": "ON_LIFT_CREDIT",
+      "value": {
+        "max": 875,
+        "rate": 0.0505,
+        "threshold": 32500,
+        "clawback": 0.05
+      },
+      "slug": "on-individual-return",
+      "section": "Rates, bands and thresholds",
+      "quote": "LIFT credit | lesser of $875 and 5.05% of employment income, less 5% of the greater of adjusted net income over $32,500 and adjusted family net income over $65,000 | 2026, 2025",
+      "skill_url": "https://www.openaccountants.com/skills/on-individual-return"
+    },
+    {
+      "name": "ON_HEALTH_PREMIUM",
+      "value": [
+        [
+          20000,
+          0,
+          0
+        ],
+        [
+          25000,
+          0,
+          0.06
+        ],
+        [
+          36000,
+          300,
+          0
+        ],
+        [
+          38500,
+          300,
+          0.06
+        ],
+        [
+          48000,
+          450,
+          0
+        ],
+        [
+          48600,
+          450,
+          0.25
+        ],
+        [
+          72000,
+          600,
+          0
+        ],
+        [
+          72600,
+          600,
+          0.25
+        ],
+        [
+          200000,
+          750,
+          0
+        ],
+        [
+          200600,
+          750,
+          0.25
+        ],
+        [
+          null,
+          900,
+          0
+        ]
+      ],
+      "slug": "on-individual-return",
+      "section": "Rates, bands and thresholds / Ontario Health Premium chart (ON428, line 89)",
+      "quote": "Ontario Health Premium | chart below; not indexed, same for 2025 and 2026 | 2026, 2025\n$20,000 or less | $0\nmore than $20,000, not more than $25,000 | 6% of the amount over $20,000\nmore than $25,000, not more than $36,000 | $300\nmore than $36,000, not more than $38,500 | $300 plus 6% of the amount over $36,000\nmore than $38,500, not more than $48,000 | $450\nmore than $48,000, not more than $48,600 | $450 plus 25% of the amount over $48,000\nmore than $48,600, not more than $72,000 | $600\nmore than $72,000, not more than $72,600 | $600 plus 25% of the amount over $72,000\nmore than $72,600, not more than $200,000 | $750\nmore than $200,000, not more than $200,600 | $750 plus 25% of the amount over $200,000\nmore than $200,600 | $900",
+      "skill_url": "https://www.openaccountants.com/skills/on-individual-return"
+    },
+    {
+      "name": "BC_BRACKETS_2026",
+      "value": [
+        [
+          50363,
+          0.056
+        ],
+        [
+          100728,
+          0.077
+        ],
+        [
+          115648,
+          0.105
+        ],
+        [
+          140430,
+          0.1229
+        ],
+        [
+          190405,
+          0.147
+        ],
+        [
+          265545,
+          0.168
+        ],
+        [
+          null,
+          0.205
+        ]
+      ],
+      "slug": "bc-individual-return",
+      "section": "Rates, bands and thresholds / 2026 brackets and rates",
+      "quote": "Taxable income $0 to $50,363 | 5.6% | 2026\n$50,363.01 to $100,728 ... | 7.7% | 2026\n$100,728.01 to $115,648 ... | 10.5% | 2026\n$115,648.01 to $140,430 ... | 12.29% | 2026\n$140,430.01 to $190,405 ... | 14.7% | 2026\n$190,405.01 to $265,545 ... | 16.8% | 2026\nOver $265,545 ... | 20.5% | 2026",
+      "skill_url": "https://www.openaccountants.com/skills/bc-individual-return"
+    },
+    {
+      "name": "BC_BRACKETS_2025",
+      "value": [
+        [
+          49279,
+          0.0506
+        ],
+        [
+          98560,
+          0.077
+        ],
+        [
+          113158,
+          0.105
+        ],
+        [
+          137407,
+          0.1229
+        ],
+        [
+          186306,
+          0.147
+        ],
+        [
+          259829,
+          0.168
+        ],
+        [
+          null,
+          0.205
+        ]
+      ],
+      "slug": "bc-individual-return",
+      "section": "Rates, bands and thresholds / 2025 figures (for 2025 returns), as printed on Form BC428 2025",
+      "quote": "Taxable income $0 to $49,279 | 5.06% | 2025\n$49,279.01 to $98,560 ... | 7.7% | 2025\n$98,560.01 to $113,158 ... | 10.5% | 2025\n$113,158.01 to $137,407 ... | 12.29% | 2025\n$137,407.01 to $186,306 ... | 14.7% | 2025\n$186,306.01 to $259,829 ... | 16.8% | 2025\nOver $259,829 ... | 20.5% | 2025",
+      "skill_url": "https://www.openaccountants.com/skills/bc-individual-return"
+    },
+    {
+      "name": "BC_CREDIT_RATE_2026",
+      "value": 0.056,
+      "slug": "bc-individual-return",
+      "section": "Rates, bands and thresholds / 2026 brackets and rates",
+      "quote": "Credit rate for non-refundable credits (lowest rate) | 5.6% | 2026",
+      "skill_url": "https://www.openaccountants.com/skills/bc-individual-return"
+    },
+    {
+      "name": "BC_CREDIT_RATE_2025",
+      "value": 0.0506,
+      "slug": "bc-individual-return",
+      "section": "Rates, bands and thresholds / 2025 figures",
+      "quote": "Credit rate (line 55) | 5.06% | 2025",
+      "skill_url": "https://www.openaccountants.com/skills/bc-individual-return"
+    },
+    {
+      "name": "BC_BPA_2026",
+      "value": 13216,
+      "slug": "bc-individual-return",
+      "section": "2026 basic non-refundable credits",
+      "quote": "Basic personal amount (BC428 line 16) | $13,216 | 2026",
+      "skill_url": "https://www.openaccountants.com/skills/bc-individual-return"
+    },
+    {
+      "name": "BC_BPA_2025",
+      "value": 12932,
+      "slug": "bc-individual-return",
+      "section": "Rates, bands and thresholds / 2025 figures",
+      "quote": "Basic personal amount (line 16) | $12,932 | 2025",
+      "skill_url": "https://www.openaccountants.com/skills/bc-individual-return"
+    },
+    {
+      "name": "BC_CPP_EI_CREDITS",
+      "value": true,
+      "slug": "bc-individual-return",
+      "section": "2026 basic non-refundable credits",
+      "quote": "CPP base contributions | up to $3,519.45 | 2026\nEI premiums | up to $1,123.07 | 2026",
+      "skill_url": "https://www.openaccountants.com/skills/bc-individual-return"
+    },
+    {
+      "name": "BC_TAX_REDUCTION_2026",
+      "value": {
+        "basic": 690,
+        "threshold": 25570,
+        "rate": 0.0356
+      },
+      "slug": "bc-individual-return",
+      "section": "2026 BC tax reduction and other credits",
+      "quote": "BC tax reduction, basic amount | $690 | 2026 to 2030\nBC tax reduction, net income threshold where it starts to fall | $25,570 | 2026\nBC tax reduction, rate of reduction | 3.56% of net income above the threshold | 2026",
+      "skill_url": "https://www.openaccountants.com/skills/bc-individual-return"
+    },
+    {
+      "name": "BC_TAX_REDUCTION_2025",
+      "value": {
+        "basic": 562,
+        "threshold": 25020,
+        "rate": 0.0356
+      },
+      "slug": "bc-individual-return",
+      "section": "Rates, bands and thresholds / 2025 figures",
+      "quote": "BC tax reduction: basic reduction (line 73) | $562 | 2025\nBC tax reduction: base amount (line 75), where it starts to fall | $25,020 | 2025\nBC tax reduction: rate (line 77) | 3.56% | 2025",
+      "skill_url": "https://www.openaccountants.com/skills/bc-individual-return"
+    },
+    {
+      "name": "AB_BRACKETS_2026",
+      "value": [
+        [
+          61200,
+          0.08
+        ],
+        [
+          154259,
+          0.1
+        ],
+        [
+          185111,
+          0.12
+        ],
+        [
+          246813,
+          0.13
+        ],
+        [
+          370220,
+          0.14
+        ],
+        [
+          null,
+          0.15
+        ]
+      ],
+      "slug": "ab-individual-return",
+      "section": "Rates, bands and thresholds",
+      "quote": "Taxable income up to $61,200 | 8% | 2026\n$61,200.01 to $154,259 | 10% | 2026\n$154,259.01 to $185,111 | 12% | 2026\n$185,111.01 to $246,813 | 13% | 2026\n$246,813.01 to $370,220 | 14% | 2026\nOver $370,220 | 15% | 2026",
+      "skill_url": "https://www.openaccountants.com/skills/ab-individual-return"
+    },
+    {
+      "name": "AB_BRACKETS_2025",
+      "value": [
+        [
+          60000,
+          0.08
+        ],
+        [
+          151234,
+          0.1
+        ],
+        [
+          181481,
+          0.12
+        ],
+        [
+          241974,
+          0.13
+        ],
+        [
+          362961,
+          0.14
+        ],
+        [
+          null,
+          0.15
+        ]
+      ],
+      "slug": "ab-individual-return",
+      "section": "Rates, bands and thresholds",
+      "quote": "Taxable income up to $60,000 | 8% | 2025\n$60,000.01 to $151,234 | 10% ... | 2025\n$151,234.01 to $181,481 | 12% ... | 2025\n$181,481.01 to $241,974 | 13% ... | 2025\n$241,974.01 to $362,961 | 14% ... | 2025\nOver $362,961 | 15% ... | 2025",
+      "skill_url": "https://www.openaccountants.com/skills/ab-individual-return"
+    },
+    {
+      "name": "AB_CREDIT_RATE",
+      "value": 0.08,
+      "slug": "ab-individual-return",
+      "section": "Rates, bands and thresholds",
+      "quote": "Rate used for non-refundable credits (\"specified percentage\") | 8% | 2025 and later",
+      "skill_url": "https://www.openaccountants.com/skills/ab-individual-return"
+    },
+    {
+      "name": "AB_BPA_2026",
+      "value": 22769,
+      "slug": "ab-individual-return",
+      "section": "Rates, bands and thresholds",
+      "quote": "Basic personal amount | $22,769 | 2026",
+      "skill_url": "https://www.openaccountants.com/skills/ab-individual-return"
+    },
+    {
+      "name": "AB_BPA_2025",
+      "value": 22323,
+      "slug": "ab-individual-return",
+      "section": "Rates, bands and thresholds",
+      "quote": "Basic personal amount | $22,323 | 2025",
+      "skill_url": "https://www.openaccountants.com/skills/ab-individual-return"
+    },
+    {
+      "name": "AB_CPP_EI_CREDITS",
+      "value": true,
+      "slug": "ab-individual-return",
+      "section": "The taxable base",
+      "quote": "CPP and EI (lines 30800, 31000, 31200 and 31217 of the return)",
+      "skill_url": "https://www.openaccountants.com/skills/ab-individual-return"
+    },
+    {
+      "name": "AB_SUPPLEMENTAL_CREDIT_2025",
+      "value": {
+        "base": 4800,
+        "rate": 0.25
+      },
+      "slug": "ab-individual-return",
+      "section": "Rates, bands and thresholds",
+      "quote": "Supplemental tax credit | 25% of (credits at 8%, leaving out unused tuition, minus $4,800) | 2025",
+      "skill_url": "https://www.openaccountants.com/skills/ab-individual-return"
+    },
+    {
+      "name": "AB_2026_AMOUNTS_RISE",
+      "value": 0.02,
+      "slug": "ab-individual-return",
+      "section": "Rates, bands and thresholds",
+      "quote": "Alberta says: \"In 2026, thresholds and credit amounts will rise by 2%.\"",
+      "skill_url": "https://www.openaccountants.com/skills/ab-individual-return"
+    },
+    {
+      "name": "AB_SUPPLEMENTAL_BASE_2026_NOT_PRINTED",
+      "value": 4896,
+      "slug": "ab-individual-return",
+      "section": "Rates, bands and thresholds",
+      "quote": "Three 2026 amounts are not printed by the CRA or Alberta yet\nsupplemental tax credit base: $4,896 (2025: $4,800);",
+      "skill_url": "https://www.openaccountants.com/skills/ab-individual-return"
+    }
+  ]
+}

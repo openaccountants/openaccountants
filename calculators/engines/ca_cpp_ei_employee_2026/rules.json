@@ -2,7 +2,7 @@
   "engine": "ca_cpp_ei_employee_2026",
   "code_url": "https://github.com/openaccountants/openaccountants/tree/main/calculators/engines/ca_cpp_ei_employee_2026",
   "generated_from": "src/lib/engines/ca-cpp-ei-employee-2026.ts",
-  "source_commit": "9931ceb6",
+  "source_commit": "c2e3c2b9",
   "licence": "Figures and wording: OpenAccountants Guide License v1.0. Code: AGPL-3.0-only.",
   "spec": {
     "name": "ca_cpp_ei_employee_2026",
