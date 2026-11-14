@@ -25,7 +25,7 @@ Companies and other bodies liable under CGI art. 2 to 5. Profit made in Cameroon
 | Item | Rate or amount | Source |
 |---|---|---|
 | Standard rate | 30% (33% with CAC) | CGI art. 17(1): https://www.impots.cm/sites/default/files/documents/CODE%20GENERAL%20DES%20IMPOTS%202026%20SITE%20DGI%20VERSION%20FRANCAISE.pdf |
-| Turnover up to XAF 3 billion | 25% (27.5% with CAC, computed: 25% plus the 10% CAC on it) | CGI art. 17 bis: https://www.impots.cm/sites/default/files/documents/CODE%20GENERAL%20DES%20IMPOTS%202026%20SITE%20DGI%20VERSION%20FRANCAISE.pdf |
+| Turnover up to XAF 3 billion | 25% (27.5% with CAC) | CGI art. 17 bis: https://www.impots.cm/sites/default/files/documents/CODE%20GENERAL%20DES%20IMPOTS%202026%20SITE%20DGI%20VERSION%20FRANCAISE.pdf |
 | CAC on company tax, instalments and minimum | 10% of principal and of surcharges | CGI art. C 83(1), (3), 21, 22(2): https://www.impots.cm/sites/default/files/documents/CODE%20GENERAL%20DES%20IMPOTS%202026%20SITE%20DGI%20VERSION%20FRANCAISE.pdf |
 | Monthly instalment, real regime | 2% of turnover (2.2% with CAC) | CGI art. 21(1)a: https://www.impots.cm/sites/default/files/documents/CODE%20GENERAL%20DES%20IMPOTS%202026%20SITE%20DGI%20VERSION%20FRANCAISE.pdf |
 | Distributors of price-margin products | 14% of gross margin plus CAC | CGI art. 21: https://www.impots.cm/sites/default/files/documents/CODE%20GENERAL%20DES%20IMPOTS%202026%20SITE%20DGI%20VERSION%20FRANCAISE.pdf |
