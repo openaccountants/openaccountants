@@ -89,7 +89,7 @@ Bahrain.
 | CbCR: Excluded MNE Group | Consolidated revenue under BHD 342 million in the preceding Fiscal Year | Fiscal Years from 1 Jan 2021, incl. 2026 | https://www.sijilat.bh/temp/CommercialLaws/18%20EN.pdf |
 | CbCR report deadline (Bahrain Ultimate Parent Entity) | 12 months after the last day of the Reporting Fiscal Year | 2026 | https://www.sijilat.bh/temp/CommercialLaws/18%20EN.pdf |
 | Transitional CbCR safe harbour, de minimis test | Bahrain revenue under EUR 10 million and profit before tax under EUR 1 million on the CbC report | Fiscal Years beginning on or before 31 Dec 2026 (none ending after 30 Jun 2028) | https://www.nbr.gov.bh/laws_regulations/dmtt |
-| Transitional CbCR safe harbour, alternative ETR test | 16% (Fiscal Years beginning in 2025), 17% (Fiscal Years beginning in 2026) | 2025, 2026 | https://www.nbr.gov.bh/laws_regulations/dmtt |
+| Transitional CbCR safe harbour, alternative ETR test | 16% (Fiscal Years beginning in 2025); the 2026 rate is on the Not yet confirmed line | 2025 | https://www.nbr.gov.bh/laws_regulations/dmtt |
 | Master file supply chain description | Five largest products or services, plus any product or service of at least 5% of group turnover | 2026 | https://www.nbr.gov.bh/laws_regulations/dmtt |
 | Local file and master file size threshold | None set: every in-scope Bahrain entity with an intra-group transaction prepares both | 2026 | https://www.nbr.gov.bh/laws_regulations/dmtt |
 | Record retention, incl. transfer pricing documentation | 5 years after the end of the Fiscal Year | 2026 | https://www.nbr.gov.bh/publications/view/dmtt_procedural_guide |
@@ -333,7 +333,7 @@ expected:
 - What intra-group transactions does each Bahrain entity have, with which
   countries, and are any of them asset sales between Bahrain entities?
 - Does the group's CbC report for Bahrain show revenue under EUR 10 million and
-  profit under EUR 1 million, or an alternative ETR of 17% or more for 2026?
+  profit under EUR 1 million, or an alternative ETR at or above the 2026 safe harbour rate (see Not yet confirmed)?
 - Does any Bahrain entity explore for, produce or refine hydrocarbons, and are
   there foreign APAs, foreign transfer pricing adjustments or open MAP cases?
 
@@ -357,7 +357,7 @@ expected:
 | Legislative Decree No. 22 of 1979, Income Tax Law, arts. 1, 2, 4, 7, 8, 9, 12 (LLOC English) | https://www.lloc.gov.bh/Legislation/id/L2279 | 2026-10-29 |
 | Legislative Decree No. 22 of 1979, Income Tax Law, LLOC text page: read for art. 2, income tax at forty-six per cent (46%) | https://www.lloc.gov.bh/Legislation/HTM/L2279 | 2026-11-14 |
 
-Not yet confirmed: whether the draft corporate income tax law has been enacted, and its final terms; whether the NBR accepts unilateral or bilateral APA requests
+Not yet confirmed: the transitional CbCR safe harbour ETR rate for Fiscal Years beginning in 2026 (17% in the old file; the NBR DMTT page read by the figure check shows only 16%, and the page refused a manual read on 2026-11-14); whether the draft corporate income tax law has been enacted, and its final terms; whether the NBR accepts unilateral or bilateral APA requests
 (no published procedure); the deadline the NBR sets when it requests a local
 file or master file (set case by case under DMTT Law art. 25(B)); whether the
 NBR has prescribed a form or language for the local file and master file under
