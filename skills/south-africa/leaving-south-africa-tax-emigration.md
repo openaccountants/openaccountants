@@ -36,11 +36,11 @@ Out of scope: the destination country's rules (UK, Australia, Netherlands, US, U
 | Physical presence test: the five preceding years together | more than 915 days in aggregate | same |
 | Physical-presence resident ceases when continuously outside the Republic for | at least 330 full days | https://www.sars.gov.za/individuals/cease-to-be-an-sa-tax-resident-and-reinstatement-of-sa-tax-resident/ |
 | Non-residency before full retirement annuity or preservation fund withdrawal | an uninterrupted period of three years or longer, on or after 1 March 2021 | https://www.sars.gov.za/guide-to-tax-directive-for-cease-to-be-resident-and-expiry-of-visa/ |
-| Foreign employment exemption cap for those who stay resident | R1,250,000 per year of assessment | https://www.sars.gov.za/individuals/tax-during-all-life-stages-and-events/foreign-employment-income-exemption/ |
+| Foreign employment exemption cap for those who stay resident | R1.25 million per year of assessment | https://www.sars.gov.za/individuals/tax-during-all-life-stages-and-events/foreign-employment-income-exemption/ |
 | Dividends tax (final, withheld) | 20% | https://www.sars.gov.za/budget-tax-guide-2026-online-version-for-printing/ |
 | Withholding tax on South African interest paid to non-residents (final) | 15% | same |
 | Withholding on a non-resident's sale of South African immovable property (s 35A, credited against the final tax) | 7.5% individual, 10% company, 15% trust | same |
-| Retirement fund lump sum withdrawal benefits, top rate | 36% above R1,089,000 | same |
+| Retirement fund lump sum withdrawal benefits, top rate | 36% above R 1,089,000 | same |
 | Estate duty on residents' estates and non-residents' South African property | 20% on the first R30 million of dutiable value, 25% above R30 million | same |
 | Estate duty basic deduction | R3.5 million | same |
 | Interest on late or underpaid tax, from 1 March 2026 | 10.25% a year | same |

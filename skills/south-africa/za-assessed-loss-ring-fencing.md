@@ -44,10 +44,10 @@ The threshold is defined by reference to a marginal rate, so it moves with the b
 | Year of assessment | Rate the threshold keys off | Taxable income at which that rate starts | Source |
 | --- | --- | --- | --- |
 | 2027 (2026/27) | 39% (s 20A(2) as amended by TLAA 5 of 2026, for years commencing on or after 1 March 2026) | Above R695,800 | https://www.sars.gov.za/legal-lprim-aa-2026-03-taxation-laws-amendment-act-5-of-2026-gg-54448-1-april-2026/ (rate); https://www.sars.gov.za/tax-rates/income-tax/rates-of-tax-for-individuals/ (band floor) |
-| 2026 (2025/26) | 45%, the maximum marginal rate | Above R1,817,000 | https://www.sars.gov.za/tax-rates/income-tax/rates-of-tax-for-individuals/ |
-| 2025 (2024/25) | 45%, the maximum marginal rate | Above R1,817,000 | same |
-| 2024 (2023/24) | 45%, the maximum marginal rate | Above R1,817,000 | same |
-| 2023 (2022/23) | 45%, the maximum marginal rate | Above R1,731,600 | same |
+| 2026 (2025/26) | 45%, the maximum marginal rate | Above R 1,817,000 | https://www.sars.gov.za/tax-rates/income-tax/rates-of-tax-for-individuals/ |
+| 2025 (2024/25) | 45%, the maximum marginal rate | Above R 1,817,000 | same |
+| 2024 (2023/24) | 45%, the maximum marginal rate | Above R 1,817,000 | same |
+| 2023 (2022/23) | 45%, the maximum marginal rate | Above R 1,731,600 | same |
 | Company assessed loss set-off cap (s 20(1)(a)), years of assessment ending on or after 31 March 2023 | Higher of R1 million and 80% of taxable income before the set-off | Companies only | https://www.sars.gov.za/legal-intr-in-33-assessed-losses-companies-trade-and-income-from-trade-requirements/ |
 
 A common error in commentary written during 2025 quotes the new threshold as R673,000. That was the 39% band floor for YoA **2026**, current when the amendment was proposed. The amendment applies from years of assessment commencing on or after 1 March 2026, so the first year is 2027, whose 39% band starts above **R695,800**.

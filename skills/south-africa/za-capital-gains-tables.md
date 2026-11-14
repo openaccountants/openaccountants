@@ -56,11 +56,11 @@ Not covered: base cost; roll-overs; the inclusion rate computation for companies
 
 | YoA | Exclusion of capital gains | Market value limit of the small business | Source |
 | --- | --- | --- | --- |
-| 2027 (2026/27) | R2,700,000 | R15,000,000 | https://www.sars.gov.za/tax-rates/income-tax/capital-gains-tax-cgt/ |
+| 2027 (2026/27) | R2.7 million | R15 million | https://www.sars.gov.za/tax-rates/income-tax/capital-gains-tax-cgt/ |
 | 2026 (2025/26) | R1,800,000 | R10,000,000 | https://www.sars.gov.za/budget-tax-guide-21-may-2025/ |
-| 2025 (2024/25) | R1,800,000 | R10,000,000 | https://www.sars.gov.za/wp-content/uploads/Budget-tax-guide-2024-_.pdf |
-| 2024 (2023/24) | R1,800,000 | R10,000,000 | https://www.sars.gov.za/budget-2023-tax-guide/ |
-| 2023 (2022/23) | R1,800,000 | R10,000,000 | https://www.sars.gov.za/budget-tax-guide-2022/ |
+| 2025 (2024/25) | R1.8 million | R10 million | https://www.sars.gov.za/wp-content/uploads/Budget-tax-guide-2024-_.pdf |
+| 2024 (2023/24) | R1.8 million | R10 million | https://www.sars.gov.za/budget-2023-tax-guide/ |
+| 2023 (2022/23) | R1.8 million | R10 million | https://www.sars.gov.za/budget-tax-guide-2022/ |
 
 ### Maximum effective CGT rates
 

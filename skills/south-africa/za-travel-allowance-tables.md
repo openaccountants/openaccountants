@@ -39,13 +39,13 @@ Fixed cost is an annual rand amount. Fuel and maintenance are in **cents per kil
 | Value of the vehicle (R) | Fixed cost (R a year) | Fuel cost (c/km) | Maintenance cost (c/km) | Source |
 | --- | --- | --- | --- | --- |
 | 0 to 115,000 | 38,344 | 132.9 | 49.1 | https://www.sars.gov.za/wp-content/uploads/Docs/PAYE/Tables/tables2026/PAYE-GEN-01-G03-A01-Rate-per-Kilometre-Schedule-External-Annexure.pdf |
-| 115,001 to 230,000 | 68,487 | 148.4 | 61.4 | same |
-| 230,001 to 345,000 | 98,689 | 161.2 | 67.8 | same |
-| 345,001 to 460,000 | 125,393 | 173.4 | 74.0 | same |
-| 460,001 to 575,000 | 152,097 | 185.5 | 86.9 | same |
-| 575,001 to 690,000 | 180,078 | 212.8 | 102.0 | same |
-| 690,001 to 805,000 | 208,106 | 216.5 | 114.5 | same |
-| 805,001 to 920,000 (maintenance: see note) | 237,679 | 220.1 | see note below the table | same |
+| Over 115,000 to 230,000 | 68,487 | 148.4 | 61.4 | same |
+| Over 230,000 to 345,000 | 98,689 | 161.2 | 67.8 | same |
+| Over 345,000 to 460,000 | 125,393 | 173.4 | 74.0 | same |
+| Over 460,000 to 575,000 | 152,097 | 185.5 | 86.9 | same |
+| Over 575,000 to 690,000 | 180,078 | 212.8 | 102.0 | same |
+| Over 690,000 to 805,000 | 208,106 | 216.5 | 114.5 | same |
+| Over 805,000 to 920,000 (maintenance: see note) | 237,679 | 220.1 | see note below the table | same |
 | exceeding 920,000 | 237,679 | 220.1 | 126.9 | same |
 
 Note on the 805,001 to 920,000 band: the SARS schedule (PAYE-GEN-01-G03-A01, Revision 19) gives **126.1 c/km** for maintenance; the SARS Budget Tax Guide 2026 gives **126.9 c/km** for the same band. The Government Notice fixing the rate (the law text) was not opened today, so the figure is listed under "Not yet confirmed" and neither value is used here. For a vehicle in that band, read the notice before claiming maintenance cost.

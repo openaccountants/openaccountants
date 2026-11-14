@@ -148,7 +148,7 @@ Donations above the 10% limit carry forward to the next year as donations to qua
 
 | YoA | Cap | Applies from | Source |
 | --- | --- | --- | --- |
-| 2021 onwards, including 2023 to 2027 | R1,250,000 per year of assessment | Years of assessment commencing on or after 1 March 2020 | https://www.sars.gov.za/individuals/tax-during-all-life-stages-and-events/foreign-employment-income-exemption/ |
+| 2021 onwards, including 2023 to 2027 | R1.25 million per year of assessment | Years of assessment commencing on or after 1 March 2020 | https://www.sars.gov.za/individuals/tax-during-all-life-stages-and-events/foreign-employment-income-exemption/ |
 
 How the cap interacts with the work-day ratio is in `za-foreign-employment-exemption`.
 

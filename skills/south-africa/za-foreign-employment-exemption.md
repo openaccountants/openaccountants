@@ -42,7 +42,7 @@ Not covered: s 10(1)(o)(i), the separate exemption for officers and crew of ship
 | --- | --- | --- | --- |
 | Days outside the Republic, aggregate | More than 183 full days in any 12-month period | Every year of assessment commencing on or after 1 March 2020 | https://www.sars.gov.za/individuals/tax-during-all-life-stages-and-events/foreign-employment-income-exemption/ |
 | Continuous period outside the Republic | More than 60 full days, within the same 12-month period | same | same |
-| Annual cap on the exemption | R1,250,000 per year of assessment | Years of assessment commencing on or after 1 March 2020, including YoA 2027 (2026/27) | same |
+| Annual cap on the exemption | R1.25 million per year of assessment | Years of assessment commencing on or after 1 March 2020, including YoA 2027 (2026/27) | same |
 | A "full day" | 24 hours, from 00h00 to 24h00 | All years | https://www.sars.gov.za/lapd-intr-in-2012-16-exemption-foreign-employment-income/ |
 
 ### Step 1: settle residency and the employment relationship
