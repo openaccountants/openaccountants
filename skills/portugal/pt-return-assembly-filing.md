@@ -298,7 +298,7 @@ A IES é a declaração anual de informação contabilística e fiscal do CIRC a
 | Falta ou atraso na apresentação de declarações, documentos, comunicações (DMR, Modelo 10, comunicação de faturas, SAF-T) | €150 a €3.750 | RGIT art. 117.º, n.º 1 |
 | Falta ou atraso nas declarações de início, alteração ou cessação de atividade | €300 a €7.500 | RGIT art. 117.º, n.º 2 |
 | Pessoas coletivas | Limites mínimo e máximo elevados para o dobro; máximo de €165.000 em caso de dolo | RGIT art. 26.º, n.os 1 e 4 |
-| Falta de entrega da prestação tributária (imposto, retenções, pagamentos por conta): negligência | 15% a metade do imposto em falta | RGIT art. 114.º, n.º 2 |
+| Falta de entrega da prestação tributária (imposto, retenções, pagamentos por conta): negligência, atraso superior a 90 dias | 15% a metade do imposto em falta | RGIT art. 114.º, n.º 2 |
 | Falta de entrega da prestação tributária: dolo, sem crime | Valor da prestação em falta até ao dobro | RGIT art. 114.º, n.º 1 |
 | Juros compensatórios: liquidação retardada por facto do sujeito passivo, declaração fora de prazo | Contam-se dia a dia | LGT art. 35.º, n.os 1, 3 e 6 |
 | Juros de mora: imposto não pago no prazo legal | 7,221% ao ano desde 1 de janeiro de 2026, a taxa das dívidas ao Estado | LGT art. 44.º, n.º 3; Aviso n.º 18/2026/2 (IGCP) |
