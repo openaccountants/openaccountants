@@ -11,17 +11,22 @@
 4. `new-zealand-crypto-tax.md`
 5. `nz-acc-levies.md`
 6. `nz-capital-gains.md`
-7. `nz-gst-return.md`
-8. `nz-income-tax-ir3.md`
-9. `nz-motor-vehicle-expenses-logbook-business-use.md`
-10. `nz-provisional-tax.md`
-11. `nz-tax-residency.md`
-12. `nz-timing-deductions-when-expense-incurred.md`
-13. `references.md`
-14. `crypto-tax-workflow-base.md`
-15. `workflow-base.md`
-16. `vat-workflow-base.md`
-17. `income-tax-workflow-base.md`
+7. `nz-employee-share-schemes.md`
+8. `nz-employer-payroll.md`
+9. `nz-gst-return.md`
+10. `nz-income-tax-ir3.md`
+11. `nz-kiwisaver-esct.md`
+12. `nz-motor-vehicle-expenses-logbook-business-use.md`
+13. `nz-payroll-notices-filing-penalties.md`
+14. `nz-provisional-tax.md`
+15. `nz-tax-residency.md`
+16. `nz-timing-deductions-when-expense-incurred.md`
+17. `references.md`
+18. `payroll-workflow-base.md`
+19. `crypto-tax-workflow-base.md`
+20. `workflow-base.md`
+21. `vat-workflow-base.md`
+22. `income-tax-workflow-base.md`
 
 ## Also known as
 

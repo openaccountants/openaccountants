@@ -1,7 +1,7 @@
 # OpenAccountants — GitHub Skills Repository
 
 <!-- The counts sentence below is restamped from the `counts` block of index.json by scripts/build-index.py on every default build; do not edit its figures by hand. The README stats block carries the platform-wide totals. -->
-> Open-source AI skills (tax rules your AI follows) for AI agents. 2,360 AI skills across 264 jurisdictions in this repository, 126 of them accountant-reviewed and signed off by named Partners (CPAs/CAs/EAs). Live counts: the `counts` block of `index.json`.
+> Open-source AI skills (tax rules your AI follows) for AI agents. 2,435 AI skills across 282 jurisdictions in this repository, 126 of them accountant-reviewed and signed off by named Partners (CPAs/CAs/EAs). Live counts: the `counts` block of `index.json`.
 
 ## What this repo is
 
@@ -141,7 +141,7 @@ https://www.openaccountants.com
 
 ========================================================================
 
-## Skill inventory (2301 distinct MCP names)
+## Skill inventory (2376 distinct MCP names)
 
 Use the first field as the exact get_skill slug. A source path or filename is not an MCP identity.
 
@@ -185,6 +185,7 @@ Use the first field as the exact get_skill slug. A source path or filename is no
 - algeria-payroll | DZ | tier 2 | reviewed_by -
 - algeria-social-contributions | DZ | tier 2 | reviewed_by -
 - algeria-vat | DZ | tier 2 | reviewed_by -
+- as-federal-payroll-taxes | AS | tier 2 | reviewed_by -
 - ad-company-formation | AD | tier 2 | reviewed_by -
 - ad-corporate-income-tax | AD | tier 2 | reviewed_by -
 - ad-income-tax | AD | tier 2 | reviewed_by -
@@ -201,6 +202,8 @@ Use the first field as the exact get_skill slug. A source path or filename is no
 - ao-tax-overview | AO | tier 2 | reviewed_by -
 - ao-transfer-pricing | AO | tier 2 | reviewed_by -
 - ao-vat-gst | AO | tier 2 | reviewed_by -
+- ai-gst | AI | tier 2 | reviewed_by -
+- ai-payroll | AI | tier 2 | reviewed_by -
 - ag-abst | AG | tier 2 | reviewed_by -
 - ag-medical-benefits | AG | tier 2 | reviewed_by -
 - ag-social-security | AG | tier 2 | reviewed_by -
@@ -233,37 +236,48 @@ Use the first field as the exact get_skill slug. A source path or filename is no
 - au-bas-preparation | AU | tier 1 | reviewed_by Ryan Duguid
 - au-capital-gains-2 | AU | tier 1 | reviewed_by Ryan Duguid
 - au-capital-gains | AU | tier 2 | reviewed_by -
+- au-coal-lsl-levy | AU | tier 2 | reviewed_by -
 - au-company-tax | AU | tier 1 | reviewed_by Ryan Duguid
 - au-crypto-tax-2 | AU | tier 1 | reviewed_by Ryan Duguid
 - au-crypto-tax | AU | tier 2 | reviewed_by -
 - au-deceased-estates | AU | tier 1 | reviewed_by Ryan Duguid
 - au-deductions-offsets | AU | tier 2 | reviewed_by -
+- au-director-penalties | AU | tier 2 | reviewed_by -
 - au-div7a | AU | tier 1 | reviewed_by Ryan Duguid
 - au-dssp | AU | tier 1 | reviewed_by Ryan Duguid
+- au-employee-share-schemes | AU | tier 2 | reviewed_by -
 - au-employment-termination-payments | AU | tier 1 | reviewed_by Ryan Duguid
 - au-fbt-year | AU | tier 1 | reviewed_by Ryan Duguid
 - au-fbt | AU | tier 1 | reviewed_by Ryan Duguid
 - au-foreign-currency-forex-realisation-gains-and | AU | tier 2 | reviewed_by -
 - au-foreign-income | AU | tier 1 | reviewed_by Ryan Duguid
+- au-forex-gains-losses | AU | tier 2 | reviewed_by -
 - au-freelance-intake | AU | tier 1 | reviewed_by Ryan Duguid
+- au-fuel-tax-credits | AU | tier 2 | reviewed_by -
 - au-gst-bas | AU | tier 1 | reviewed_by Ryan Duguid
 - au-gst-property | AU | tier 1 | reviewed_by Ryan Duguid
 - au-individual-return | AU | tier 2 | reviewed_by -
 - au-land-tax | AU | tier 1 | reviewed_by Ryan Duguid
 - au-lodgment-deadlines-penalties | AU | tier 1 | reviewed_by Ryan Duguid
+- au-managed-funds-amit | AU | tier 2 | reviewed_by -
 - au-medicare-levy | AU | tier 1 | reviewed_by Ryan Duguid
 - au-nonresident-cgt-2 | AU | tier 1 | reviewed_by Ryan Duguid
 - au-nonresident-cgt | AU | tier 2 | reviewed_by -
 - au-not-for-profit | AU | tier 1 | reviewed_by Ryan Duguid
+- au-objections | AU | tier 2 | reviewed_by -
 - au-partnerships | AU | tier 1 | reviewed_by Ryan Duguid
 - au-payg-instalments-2 | AU | tier 1 | reviewed_by Ryan Duguid
 - au-payg-instalments | AU | tier 2 | reviewed_by -
 - au-payroll-tax | AU | tier 1 | reviewed_by Ryan Duguid
+- au-primary-production | AU | tier 2 | reviewed_by -
+- au-private-rulings | AU | tier 2 | reviewed_by -
+- au-property-development | AU | tier 2 | reviewed_by -
 - au-psi | AU | tier 1 | reviewed_by Ryan Duguid
 - au-rates-2026-27 | AU | tier 2 | reviewed_by -
 - au-rd-incentive | AU | tier 1 | reviewed_by Ryan Duguid
 - au-rental-property-2 | AU | tier 1 | reviewed_by Ryan Duguid
 - au-rental-property | AU | tier 2 | reviewed_by -
+- au-restructure-rollovers | AU | tier 2 | reviewed_by -
 - au-return-assembly | AU | tier 1 | reviewed_by Ryan Duguid
 - au-small-business-cgt | AU | tier 1 | reviewed_by Ryan Duguid
 - au-smsf | AU | tier 2 | reviewed_by -
@@ -428,6 +442,7 @@ Use the first field as the exact get_skill slug. A source path or filename is no
 - brazil-payroll | BR | tier 2 | reviewed_by -
 - brazil-transfer-pricing | BR | tier 2 | reviewed_by -
 - brazil-vat | BR | tier 2 | reviewed_by -
+- io-tax-scope-reference | IO | tier 2 | reviewed_by -
 - bvi-tax | VG | tier 2 | reviewed_by -
 - vg-company-formation | VG | tier 2 | reviewed_by -
 - vg-payroll-social | VG | tier 2 | reviewed_by -
@@ -575,6 +590,16 @@ Use the first field as the exact get_skill slug. A source path or filename is no
 - cn-transfer-pricing | CN | tier 2 | reviewed_by -
 - cn-vat | CN | tier 2 | reviewed_by -
 - cn-withholding | CN | tier 2 | reviewed_by -
+- cx-income-tax | CX | tier 2 | reviewed_by -
+- cx-medicare-levy-surcharge | CX | tier 2 | reviewed_by -
+- cx-payg-withholding | CX | tier 2 | reviewed_by -
+- cx-super-guarantee | CX | tier 2 | reviewed_by -
+- cx-tax-system | CX | tier 2 | reviewed_by -
+- cc-income-tax | CC | tier 2 | reviewed_by -
+- cc-medicare-levy-surcharge | CC | tier 2 | reviewed_by -
+- cc-payg-withholding | CC | tier 2 | reviewed_by -
+- cc-super-guarantee | CC | tier 2 | reviewed_by -
+- cc-tax-system | CC | tier 2 | reviewed_by -
 - co-company-formation | CO | tier 2 | reviewed_by -
 - co-corporate-income-tax | CO | tier 2 | reviewed_by -
 - co-social-contributions | CO | tier 2 | reviewed_by -
@@ -589,6 +614,10 @@ Use the first field as the exact get_skill slug. A source path or filename is no
 - km-personal-tax-domicile | KM | tier 2 | reviewed_by -
 - km-registration-and-tax-clearance | KM | tier 2 | reviewed_by -
 - km-transfer-pricing | KM | tier 2 | reviewed_by -
+- ck-company-registry-reporting | CK | tier 2 | reviewed_by -
+- ck-company-tax-vat | CK | tier 2 | reviewed_by -
+- ck-paye | CK | tier 2 | reviewed_by -
+- ck-social-contributions | CK | tier 2 | reviewed_by -
 - costa-rica-income-tax | CR | tier 2 | reviewed_by -
 - costa-rica-iva | CR | tier 2 | reviewed_by -
 - costa-rica-payroll | CR | tier 2 | reviewed_by -
@@ -813,6 +842,7 @@ Use the first field as the exact get_skill slug. A source path or filename is no
 - gf-social-contributions | GF | tier 2 | reviewed_by -
 - gf-space-sector-octroi | GF | tier 2 | reviewed_by -
 - gf-transfer-pricing | GF | tier 2 | reviewed_by -
+- pf-salary-cst-reference | PF | tier 2 | reviewed_by -
 - ga-annual-property-tax | GA | tier 2 | reviewed_by -
 - ga-company-formation | GA | tier 2 | reviewed_by -
 - ga-corporate-income-tax | GA | tier 2 | reviewed_by -
@@ -984,6 +1014,7 @@ Use the first field as the exact get_skill slug. A source path or filename is no
 - vat-workflow-base | GLOBAL | tier 2 | reviewed_by -
 - wealth-estate-tax-workflow-base | GLOBAL | tier 2 | reviewed_by -
 - workflow-base | GLOBAL | tier 2 | reviewed_by -
+- ohada-company-reporting-accounting-and-audit | GLOBAL | tier 2 | reviewed_by -
 - deadline-engine | GLOBAL | tier 2 | reviewed_by -
 - optimisation-advisor | GLOBAL | tier 2 | reviewed_by -
 - threshold-alerts | GLOBAL | tier 2 | reviewed_by -
@@ -1188,6 +1219,19 @@ Use the first field as the exact get_skill slug. A source path or filename is no
 - jp-incorporation | JP | tier 2 | reviewed_by -
 - jp-nonpermanent-resident | JP | tier 2 | reviewed_by -
 - jp-return-assembly | JP | tier 2 | reviewed_by -
+- je-class2-contributions | JE | tier 2 | reviewed_by -
+- je-company-formation | JE | tier 2 | reviewed_by -
+- je-corporate-income-tax | JE | tier 2 | reviewed_by -
+- je-crypto-tax | JE | tier 2 | reviewed_by -
+- je-gst | JE | tier 2 | reviewed_by -
+- je-income-tax-compliance | JE | tier 2 | reviewed_by -
+- je-income-tax | JE | tier 2 | reviewed_by -
+- je-parish-rates | JE | tier 2 | reviewed_by -
+- je-payroll | JE | tier 2 | reviewed_by -
+- je-pension-contributions | JE | tier 2 | reviewed_by -
+- je-pillar-two | JE | tier 2 | reviewed_by -
+- je-property-transactions | JE | tier 2 | reviewed_by -
+- je-social-contributions | JE | tier 2 | reviewed_by -
 - jo-company-formation | JO | tier 2 | reviewed_by -
 - jo-corporate-income-tax | JO | tier 2 | reviewed_by -
 - jo-income-tax | JO | tier 2 | reviewed_by -
@@ -1222,6 +1266,7 @@ Use the first field as the exact get_skill slug. A source path or filename is no
 - set-up-your-company-in-kenya-we-handle-it-from-abroad | KE | tier 2 | reviewed_by -
 - tax-amnesty | KE | tier 2 | reviewed_by -
 - the-burden-of-proof-in-tax-cases | KE | tier 2 | reviewed_by -
+- ki-vat-reference | KI | tier 2 | reviewed_by -
 - kosovo-income-tax | XK | tier 2 | reviewed_by -
 - kosovo-payroll | XK | tier 2 | reviewed_by -
 - kosovo-social-contributions | XK | tier 2 | reviewed_by -
@@ -1372,6 +1417,7 @@ Use the first field as the exact get_skill slug. A source path or filename is no
 - mt-reverse-charge-vat-services-received-from | MT | tier 2 | reviewed_by -
 - mt-vat3-quarterly-return-malta | MT | tier 2 | reviewed_by -
 - selling-a-company-in-malta | MT | tier 2 | reviewed_by -
+- mh-retirement-contribution-reference | MH | tier 2 | reviewed_by -
 - mq-antilles-goods-movements | MQ | tier 2 | reviewed_by -
 - mr-company-formation | MR | tier 2 | reviewed_by -
 - mr-corporate-income-tax | MR | tier 2 | reviewed_by -
@@ -1439,8 +1485,14 @@ Use the first field as the exact get_skill slug. A source path or filename is no
 - montenegro-social-contributions | ME | tier 2 | reviewed_by -
 - montenegro-tax-optimization | ME | tier 2 | reviewed_by -
 - montenegro-vat | ME | tier 2 | reviewed_by -
+- ms-company-formation | MS | tier 2 | reviewed_by -
 - ms-corporate-income-tax | MS | tier 2 | reviewed_by -
+- ms-customs-consumption-tax-hotels-tax | MS | tier 2 | reviewed_by -
+- ms-income-tax-individuals | MS | tier 2 | reviewed_by -
+- ms-investment-incentives | MS | tier 2 | reviewed_by -
 - ms-nonresident-withholding | MS | tier 2 | reviewed_by -
+- ms-paye-employer-withholding | MS | tier 2 | reviewed_by -
+- ms-property-tax-landholding-stamp-duty | MS | tier 2 | reviewed_by -
 - ms-social-security-contributions | MS | tier 2 | reviewed_by -
 - ma-auto-entrepreneur | MA | tier 2 | reviewed_by -
 - ma-bookkeeping | MA | tier 2 | reviewed_by -
@@ -1508,12 +1560,17 @@ Use the first field as the exact get_skill slug. A source path or filename is no
 - nl-vat-registration | NL | tier 2 | reviewed_by -
 - nl-vat-return | NL | tier 2 | reviewed_by -
 - nl-zzp-deductions | NL | tier 2 | reviewed_by -
+- nc-ordinary-irpp-reference | NC | tier 2 | reviewed_by -
 - new-zealand-crypto-tax | NZ | tier 2 | reviewed_by -
 - nz-acc-levies | NZ | tier 2 | reviewed_by -
 - nz-capital-gains | NZ | tier 2 | reviewed_by -
+- nz-employee-share-schemes | NZ | tier 2 | reviewed_by -
+- nz-employer-payroll | NZ | tier 2 | reviewed_by -
 - nz-gst-return | NZ | tier 2 | reviewed_by -
 - nz-income-tax-ir3 | NZ | tier 2 | reviewed_by -
+- nz-kiwisaver-esct | NZ | tier 2 | reviewed_by -
 - nz-motor-vehicle-expenses-logbook-business-use | NZ | tier 2 | reviewed_by -
+- nz-payroll-notices-filing-penalties | NZ | tier 2 | reviewed_by -
 - nz-provisional-tax | NZ | tier 2 | reviewed_by -
 - nz-tax-residency | NZ | tier 2 | reviewed_by -
 - nz-timing-deductions-when-expense-incurred | NZ | tier 2 | reviewed_by -
@@ -1554,6 +1611,7 @@ Use the first field as the exact get_skill slug. A source path or filename is no
 - north-macedonia-tax-optimization | MK | tier 2 | reviewed_by -
 - north-macedonia-transfer-pricing | MK | tier 2 | reviewed_by -
 - north-macedonia-vat | MK | tier 2 | reviewed_by -
+- mp-federal-payroll-taxes | MP | tier 2 | reviewed_by -
 - no-capital-gains | NO | tier 2 | reviewed_by -
 - no-company-formation | NO | tier 2 | reviewed_by -
 - no-corporate-income-tax | NO | tier 2 | reviewed_by -
@@ -1589,6 +1647,8 @@ Use the first field as the exact get_skill slug. A source path or filename is no
 - pk-sales-tax-services | PK | tier 2 | reviewed_by -
 - pk-tax-optimization | PK | tier 2 | reviewed_by -
 - pk-withholding-tax | PK | tier 2 | reviewed_by -
+- pw-corporate-records-annual-report-reference | PW | tier 2 | reviewed_by -
+- pw-pgst-charge-value-reference | PW | tier 2 | reviewed_by -
 - panama-income-tax | PA | tier 2 | reviewed_by -
 - panama-itbms | PA | tier 2 | reviewed_by -
 - panama-payroll | PA | tier 2 | reviewed_by -
@@ -1620,12 +1680,14 @@ Use the first field as the exact get_skill slug. A source path or filename is no
 - ph-tax-overview | PH | tier 2 | reviewed_by -
 - ph-withholding | PH | tier 2 | reviewed_by -
 - philippines-vat | PH | tier 2 | reviewed_by -
+- pn-landing-fee-passenger-levy-reference | PN | tier 2 | reviewed_by -
 - pl-capital-gains | PL | tier 2 | reviewed_by -
 - pl-cit-corporate-tax | PL | tier 2 | reviewed_by -
 - pl-civil-law-contracts | PL | tier 2 | reviewed_by -
 - pl-cross-border | PL | tier 2 | reviewed_by -
 - pl-income-tax | PL | tier 2 | reviewed_by -
 - pl-payroll | PL | tier 2 | reviewed_by -
+- pl-small-company-financial-statements | PL | tier 2 | reviewed_by -
 - pl-transfer-pricing | PL | tier 2 | reviewed_by -
 - pl-vat-return | PL | tier 2 | reviewed_by -
 - pl-zus-contributions | PL | tier 2 | reviewed_by -
@@ -1700,8 +1762,15 @@ Use the first field as the exact get_skill slug. A source path or filename is no
 - sh-paye-compliance | SH | tier 2 | reviewed_by -
 - sh-personal-income-tax | SH | tier 2 | reviewed_by -
 - sh-services-tax | SH | tier 2 | reviewed_by -
+- kn-company-formation | KN | tier 2 | reviewed_by -
+- kn-corporate-income-tax | KN | tier 2 | reviewed_by -
 - kn-housing-social-development-levy | KN | tier 2 | reviewed_by -
+- kn-nonresident-withholding | KN | tier 2 | reviewed_by -
+- kn-property-tax-stamp-duty | KN | tier 2 | reviewed_by -
 - kn-social-security-contributions | KN | tier 2 | reviewed_by -
+- kn-special-regimes | KN | tier 2 | reviewed_by -
+- kn-unincorporated-business-tax | KN | tier 2 | reviewed_by -
+- kn-vat-and-import-charges | KN | tier 2 | reviewed_by -
 - lc-first-time-land-interest | LC | tier 2 | reviewed_by -
 - lc-imported-services-vat | LC | tier 2 | reviewed_by -
 - lc-national-insurance | LC | tier 2 | reviewed_by -
@@ -1811,6 +1880,7 @@ Use the first field as the exact get_skill slug. A source path or filename is no
 - slovenia-social-contributions | SI | tier 2 | reviewed_by -
 - slovenia-tax-optimization | SI | tier 2 | reviewed_by -
 - slovenia-vat-return | SI | tier 2 | reviewed_by -
+- sb-npf-contribution-reference | SB | tier 2 | reviewed_by -
 - cancelling-a-vat-registration-and-the-exit-vat-charge | ZA | tier 1 | reviewed_by Brandon Iverach
 - capital-gains-tax-rate-tables-2023-to-2027 | ZA | tier 1 | reviewed_by Brandon Iverach
 - foreign-employment-income-exemption-section-10-1-o-ii | ZA | tier 1 | reviewed_by Brandon Iverach
@@ -1925,6 +1995,7 @@ Use the first field as the exact get_skill slug. A source path or filename is no
 - se-transfer-pricing | SE | tier 2 | reviewed_by -
 - sweden-bookkeeping | SE | tier 2 | reviewed_by -
 - sweden-crypto-tax | SE | tier 2 | reviewed_by -
+- sweden-financial-statements | SE | tier 2 | reviewed_by -
 - sweden-payroll | SE | tier 2 | reviewed_by -
 - sweden-vat-return | SE | tier 2 | reviewed_by -
 - ch-ahv-iv | CH | tier 2 | reviewed_by -
@@ -1962,6 +2033,7 @@ Use the first field as the exact get_skill slug. A source path or filename is no
 - th-company-formation | TH | tier 2 | reviewed_by -
 - th-payroll-social | TH | tier 2 | reviewed_by -
 - th-tax-overview | TH | tier 2 | reviewed_by -
+- th-top-up-tax | TH | tier 2 | reviewed_by -
 - thailand-pit | TH | tier 2 | reviewed_by -
 - thailand-vat | TH | tier 2 | reviewed_by -
 - tl-company-formation | TL | tier 2 | reviewed_by -
@@ -2018,6 +2090,7 @@ Use the first field as the exact get_skill slug. A source path or filename is no
 - tc-hotel-tourism-tax | TC | tier 2 | reviewed_by -
 - tc-national-health-insurance | TC | tier 2 | reviewed_by -
 - tc-national-insurance | TC | tier 2 | reviewed_by -
+- tv-npf-contribution-reference | TV | tier 2 | reviewed_by -
 - ae-company-formation | AE | tier 2 | reviewed_by -
 - ae-corporate-tax | AE | tier 2 | reviewed_by -
 - ae-income-tax | AE | tier 2 | reviewed_by -
@@ -2083,6 +2156,7 @@ Use the first field as the exact get_skill slug. A source path or filename is no
 - ua-tax-overview | UA | tier 2 | reviewed_by -
 - ua-transfer-pricing | UA | tier 2 | reviewed_by -
 - ukraine-vat | UA | tier 2 | reviewed_by -
+- um-tax-scope-reference | UM | tier 2 | reviewed_by -
 - uruguay-income-tax | UY | tier 2 | reviewed_by -
 - uruguay-iva | UY | tier 2 | reviewed_by -
 - uruguay-payroll | UY | tier 2 | reviewed_by -
@@ -2462,6 +2536,7 @@ Use the first field as the exact get_skill slug. A source path or filename is no
 - vn-corporate-income-tax | VN | tier 2 | reviewed_by -
 - vn-payroll-social | VN | tier 2 | reviewed_by -
 - vn-tax-overview | VN | tier 2 | reviewed_by -
+- wf-patente-registration-reference | WF | tier 2 | reviewed_by -
 - zambia-vat | ZM | tier 2 | reviewed_by -
 - zm-company-formation | ZM | tier 2 | reviewed_by -
 - zm-corporate-income-tax | ZM | tier 2 | reviewed_by -
