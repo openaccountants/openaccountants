@@ -15,13 +15,14 @@ description: >
 jurisdiction: LI
 category: transfer-pricing
 tax_year: 2026
-last_updated: 2026-10-30
-version: 0.4
+last_updated: 2026-11-14
+version: 0.5
 tier: 2
 domain: transfer-pricing
+type: situation-rules
 ---
 
-# Liechtenstein transfer pricing v0.4
+# Liechtenstein transfer pricing v0.5
 
 ## Who this applies to
 
@@ -33,9 +34,9 @@ All thresholds below are from current SteV article 31b. “More than” and “e
 
 | Route | Entry gate | Cross-border transaction threshold and content | Official source (2026) |
 |---|---|---|---|
-| Article 31b(2)–(3) | Part of a group with consolidated turnover **more than CHF 900 million** | OECD Master File and Local File; goods purchases/sales **over CHF 1 million** per connected party/PE/year, or other expenses/income **over CHF 250,000** per expense/income category, party/PE/year | [SteV article 31b][ordinance] |
-| Article 31b(4)–(5) | Outside the above group route but exceeding **all** size criteria referenced in PGR article 1064(2) | Specified company/business/structure description, relationship register, functions/risks/assets, reasoned method selection and pricing/arm's-length analyses; goods **over CHF 500,000**, other expenses/income **over CHF 125,000**, on the stated party/category/year bases | [SteV article 31b][ordinance] |
-| Article 31b(8) | Transactions/relationships not captured by paragraphs 2–5 and 7 | Suitable evidence of arm's-length compliance on authority request; no blanket small-company or domestic-transaction exemption | [SteV article 31b][ordinance] |
+| Article 31b(2)–(3) | Part of a group with consolidated turnover **more than CHF 900 million** | OECD Master File and Local File; goods purchases/sales **over CHF 1 million** per connected party/PE/year, or other expenses/income **over CHF 250,000** per expense/income category, party/PE/year | [SteV article 31b](https://www.gesetze.li/konso/pdf/2010437000) |
+| Article 31b(4)–(5) | Outside the above group route but exceeding **all** size criteria referenced in PGR article 1064(2) | Specified company/business/structure description, relationship register, functions/risks/assets, reasoned method selection and pricing/arm's-length analyses; goods **over CHF 500,000**, other expenses/income **over CHF 125,000**, on the stated party/category/year bases | [SteV article 31b](https://www.gesetze.li/konso/pdf/2010437000) |
+| Article 31b(8) | Transactions/relationships not captured by paragraphs 2–5 and 7 | Suitable evidence of arm's-length compliance on authority request; no blanket small-company or domestic-transaction exemption | [SteV article 31b](https://www.gesetze.li/konso/pdf/2010437000) |
 
 The PGR article 1064(2) criteria currently state CHF 32.4 million balance sheet, CHF 64.8 million net sales and 250 average employees. PGR company classification ordinarily uses two of three, whereas SteV's formal-documentation cross-reference expressly says **all** criteria. Do not replace the latter with the generic “large company” label. PGR article 1064(4) also has a two-consecutive-balance-date rule and an initial-application rule; article 1064(5) addresses other reporting currencies. Retain both years, initial-application and currency evidence and confirm any contested interaction before deciding a formal-duty exemption. [PGR, article 1064, current 1 September 2026 consolidation][pgr]; [SteV, article 31b(4)][ordinance]
 
