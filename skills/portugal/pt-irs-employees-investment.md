@@ -1,13 +1,14 @@
 ---
 name: pt-irs-employees-investment
 description: "Portuguese personal income tax (IRS) for tax year 2026 for residents who earn a salary (Category A), a pension (Category H), investment income (Category E dividends and interest), rent (Category F) or capital gains on shares and property (Category G). Covers the 2026 IRS bands of CIRS art. 68 as set by the 2026 State Budget (Lei 73-A/2025), the solidarity surcharge, the specific deduction for employees and pensioners, deductions from the tax (dependants, general family expenses, health, education, rent, invoice VAT), IRS Jovem, the 28% and 25% special rates and the option to aggregate, the reduced rates for long residential leases, the 50% inclusion of property gains and main-home reinvestment, joint or separate filing, the Modelo 3 return and IRS automatico, late filing fines and interest. Trigger on: 'IRS Portugal employee', 'Modelo 3 2026', 'Anexo A', 'Anexo E', 'Anexo F', 'Anexo G', 'englobamento', 'rendas IRS 25%', 'mais-valias imoveis 50%', 'deducoes a coleta', 'IRS Jovem 2026', 'tributacao conjunta'. Out of scope: self-employed income (pt-income-tax), payroll withholding (portugal-payroll), foreign income and treaties (pt-foreign-source-treaties), NHR and IFICI (pt-nhr-ifici), crypto (portugal-crypto-tax)."
-version: 0.2
+version: 0.3
 jurisdiction: PT
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+type: computation
 ---
 
 # Portugal: IRS for employees, pensioners and investment income (tax year 2026)
@@ -57,17 +58,17 @@ The law is the Código do IRS (CIRS). The Tax Authority (Autoridade Tributária 
 | Dividends and interest from Portuguese payers | 28% final withholding; residents may opt to aggregate | 2026 | CIRS art. 71(1) and (9): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs71.aspx |
 | Capital income not withheld (for example foreign interest) | 28% autonomous rate | 2026 | CIRS art. 72(1)(d): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs72.aspx |
 | Dividends of PT or qualifying EU/EEA companies, if aggregated | Only 50% included | 2026 | CIRS art. 40-A(1), (2), (4): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs40a.aspx |
-| Rent from residential leases | 25% autonomous rate | 2026 | CIRS art. 72(2) |
-| Residential lease 5 to under 10 years | 25% less 10 points = 15% (a further 2 points off per renewal, up to 10 points) | 2026 | CIRS art. 72(3) |
-| Residential lease 10 to under 20 years | 25% less 15 points = 10% | 2026 | CIRS art. 72(4) |
-| Residential lease 20 years or more | 25% less 20 points = 5% | 2026 | CIRS art. 72(5) |
-| Long-lease reductions, leases signed from 1 January 2024 | No reduction if the monthly rent is more than 50% above the general rent limits of Portaria 176/2019 for the property type and municipality; a further 5 points off on a new lease whose rent is at least 5% below the previous lease on the same property | 2026 | CIRS art. 72(23) and (24) |
-| Other rent (shops, offices) | 28% autonomous rate | 2026 | CIRS art. 72(1)(e) |
-| Net gains on shares and securities | 28% autonomous rate | 2026 | CIRS art. 72(1)(c) |
+| Rent from residential leases | 25% autonomous rate | 2026 | CIRS art. 72(2) https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs72.aspx |
+| Residential lease 5 to under 10 years | 25% less 10 points = 15% (a further 2 points off per renewal, up to 10 points) | 2026 | CIRS art. 72(3) https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs72.aspx |
+| Residential lease 10 to under 20 years | 25% less 15 points = 10% | 2026 | CIRS art. 72(4) https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs72.aspx |
+| Residential lease 20 years or more | 25% less 20 points = 5% | 2026 | CIRS art. 72(5) https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs72.aspx |
+| Long-lease reductions, leases signed from 1 January 2024 | No reduction if the monthly rent is more than 50% above the general rent limits of Portaria 176/2019 for the property type and municipality; a further 5 points off on a new lease whose rent is at least 5% below the previous lease on the same property | 2026 | CIRS art. 72(23) and (24) https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs72.aspx |
+| Other rent (shops, offices) | 28% autonomous rate | 2026 | CIRS art. 72(1)(e) https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs72.aspx |
+| Net gains on shares and securities | 28% autonomous rate | 2026 | CIRS art. 72(1)(c) https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs72.aspx |
 | Listed securities and open funds held over 2 years | 10% (2 to 5 years), 20% (5 to 8 years), 30% (8 years or more) of the gain excluded | 2026 | CIRS art. 43(5), wording of Lei 31/2024: https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs43.aspx |
-| Short-term securities gains, compulsory aggregation | Held under 365 days and taxable income (including the gain) at or above EUR 86,634 | 2026 | CIRS art. 72(14) |
-| Property gains | 50% of the net gain included, then aggregated at the band rates | 2026 | CIRS art. 43(2)(b) |
-| Gains on shares of unlisted micro and small companies | 50% of the net gain included, then taxed at the 28% autonomous rate unless the resident opts to aggregate | 2026 | CIRS art. 43(3), art. 72(1)(c) and (13) |
+| Short-term securities gains, compulsory aggregation | Held under 365 days and taxable income (including the gain) at or above EUR 86,634 | 2026 | CIRS art. 72(14) https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs72.aspx, https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs68.aspx |
+| Property gains | 50% of the net gain included, then aggregated at the band rates | 2026 | CIRS art. 43(2)(b) https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs43.aspx |
+| Gains on shares of unlisted micro and small companies | 50% of the net gain included, then taxed at the 28% autonomous rate unless the resident opts to aggregate | 2026 | CIRS art. 43(3), art. 72(1)(c) and (13) https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs43.aspx, https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs72.aspx |
 | Return filing exemption for low salary or pension | Total EUR 8,500 or less with no withholding | 2026 | CIRS art. 58(1)(b): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs58.aspx |
 
 The 2026 bands are lower than the 2025 bands. The 2026 State Budget (Lei 73-A/2025, art. 71) rewrote the art. 68 table: bands 2 to 5 were cut (for example band 2 went from 16.00% to 15.70%) and every band limit was raised. The law came into force on 1 January 2026.

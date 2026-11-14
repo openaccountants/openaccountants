@@ -1,15 +1,16 @@
 ---
 name: pt-income-tax
 description: "Portuguese personal income tax (IRS) for tax year 2026 on self-employed income (Category B, recibos verdes) of a resident individual. Covers the 2026 IRS bands of CIRS art. 68 (Lei 73-A/2025), the solidarity surcharge, the simplified regime coefficients of art. 31 (0.75, 0.35, 0.15, 0.95, 0.10, 1), the 10% social security rule and the 15% expenses rule, the first-year coefficient cut, organised accounts and the EUR 200,000 limit, client withholding (23%, 16.5%, 11.5%) and the waiver below EUR 15,000, payments on account, IRS Jovem on the 2026 IAS (EUR 537.13, cap EUR 29,542.15), the Modelo 3 with Anexo B, fines and interest. Trigger on: 'IRS trabalhador independente', 'recibos verdes', 'Anexo B', 'regime simplificado', 'coeficiente 0,75', 'IRS Jovem 2026', 'freelancer tax Portugal'. Out of scope: employees, pensions, rent and investment income (pt-irs-employees-investment), crypto (portugal-crypto-tax), social security (pt-social-contributions), NHR and IFICI (pt-nhr-ifici), non-residents (pt-cross-border)."
-version: 2.3
+version: 2.4
 jurisdiction: PT
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-14
 source_checked: 2026-10-16
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
+type: computation
 ---
 
 # Portugal: IRS for the self-employed, Category B (tax year 2026) v2.2
@@ -51,29 +52,29 @@ The law is the Código do IRS (CIRS). AT (Autoridade Tributária e Aduaneira) pu
 | Band 9: over 86,634 | 48.00% | 2026 | same |
 | Solidarity surcharge | 2.5% on taxable income over EUR 80,000 up to 250,000; 5% over 250,000 | 2026 | CIRS art. 68-A: https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs68a.aspx |
 | Coefficient: sales of goods, crypto operations (not mining), restaurants, bars and hotels (not local lodging in a house or flat) | 0.15 | 2026 | CIRS art. 31(1)(a): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs31.aspx |
-| Coefficient: professional activities listed in the art. 151 table | 0.75 | 2026 | CIRS art. 31(1)(b) |
-| Coefficient: other services | 0.35 | 2026 | CIRS art. 31(1)(c) |
-| Coefficient: crypto mining, licensing of intellectual or industrial property, know-how, capital income and rent of the business, net capital gains | 0.95 | 2026 | CIRS art. 31(1)(d) |
-| Coefficient: grants not for operations | 0.30 | 2026 | CIRS art. 31(1)(e) |
-| Coefficient: operating grants and other Category B income | 0.10 | 2026 | CIRS art. 31(1)(f) |
-| Coefficient: services to a tax-transparent company of which the person is a partner, or to a company in which the person holds at least 5% (or the family at least 25%) for over 183 days | 1 | 2026 | CIRS art. 31(1)(g) |
-| Coefficient: local lodging (house or flat) in a containment area | 0.50 | 2026 | CIRS art. 31(1)(h) |
-| First-year cut of coefficients (b), (c) and (f) | 50% in the year activity starts, 25% in the next year, if no Category A or H income in that year; not if activity ceased less than 5 years before | 2026 | CIRS art. 31(10) and (11) |
-| Social security deduction in the simplified regime, coefficients (b) and (c) | Compulsory contributions only in the part above 10% of gross income | 2026 | CIRS art. 31(2) |
-| 15% expenses rule, coefficients (b) and (c) | Add back 15% of gross service income less the listed amounts (see The taxable base) | 2026 | CIRS art. 31(13) |
+| Coefficient: professional activities listed in the art. 151 table | 0.75 | 2026 | CIRS art. 31(1)(b) https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs31.aspx |
+| Coefficient: other services | 0.35 | 2026 | CIRS art. 31(1)(c) https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs31.aspx |
+| Coefficient: crypto mining, licensing of intellectual or industrial property, know-how, capital income and rent of the business, net capital gains | 0.95 | 2026 | CIRS art. 31(1)(d) https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs31.aspx |
+| Coefficient: grants not for operations | 0.30 | 2026 | CIRS art. 31(1)(e) https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs31.aspx |
+| Coefficient: operating grants and other Category B income | 0.10 | 2026 | CIRS art. 31(1)(f) https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs31.aspx |
+| Coefficient: services to a tax-transparent company of which the person is a partner, or to a company in which the person holds at least 5% (or the family at least 25%) for over 183 days | 1 | 2026 | CIRS art. 31(1)(g) https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs31.aspx |
+| Coefficient: local lodging (house or flat) in a containment area | 0.50 | 2026 | CIRS art. 31(1)(h) https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs31.aspx |
+| First-year cut of coefficients (b), (c) and (f) | 50% in the year activity starts, 25% in the next year, if no Category A or H income in that year; not if activity ceased less than 5 years before | 2026 | CIRS art. 31(10) and (11) https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs31.aspx |
+| Social security deduction in the simplified regime, coefficients (b) and (c) | Compulsory contributions only in the part above 10% of gross income | 2026 | CIRS art. 31(2) https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs31.aspx |
+| 15% expenses rule, coefficients (b) and (c) | Add back 15% of gross service income less the listed amounts (see The taxable base) | 2026 | CIRS art. 31(13) https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs31.aspx |
 | Simplified regime limit | EUR 200,000 of Category B income in the previous year | 2026 | CIRS art. 28(2) and (6): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs28.aspx |
 | IAS (social support index) | EUR 537.13 | 2026 | Portaria 480-A/2025/1, de 30 de dezembro, art. 2 (AT's copy of the Diário da República text): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Portaria_480_A_2025_1.pdf |
 | Category A specific deduction used in the 15% rule | 8.54 x IAS = EUR 4,587.09 | 2026 | CIRS art. 25(1)(a): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs25.aspx |
 | IRS Jovem exemption cap | 55 x IAS = EUR 29,542.15 of exempt income a year | 2026 | CIRS art. 12-B(5): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs12b.aspx |
-| IRS Jovem exempt share | 100% year 1; 75% years 2 to 4; 50% years 5 to 7; 25% years 8 to 10 | 2026 | CIRS art. 12-B(5) |
+| IRS Jovem exempt share | 100% year 1; 75% years 2 to 4; 50% years 5 to 7; 25% years 8 to 10 | 2026 | CIRS art. 12-B(5) https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs12b.aspx |
 | Withholding by clients: art. 151 professional activities | 23% | 2026 | CIRS art. 101(1)(b): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs101.aspx |
-| Withholding: intellectual property income (art. 3(1)(c)) | 16.5% | 2026 | CIRS art. 101(1)(a) |
-| Withholding: other Category B services | 11.5% | 2026 | CIRS art. 101(1)(c) |
-| Withholding: IFICI holders | 20% | 2026 | CIRS art. 101(1)(d) |
+| Withholding: intellectual property income (art. 3(1)(c)) | 16.5% | 2026 | CIRS art. 101(1)(a) https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs101.aspx |
+| Withholding: other Category B services | 11.5% | 2026 | CIRS art. 101(1)(c) https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs101.aspx |
+| Withholding: IFICI holders | 20% | 2026 | CIRS art. 101(1)(d) https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs101.aspx |
 | Withholding waiver | Expected Category B income for the year below the CIVA art. 53(1) limit of EUR 15,000; not if the limit was reached the year before | 2026 | CIRS art. 101-B(1)(a) and (3): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs101b.aspx; CIVA art. 53(1) |
-| No withholding below | EUR 25 per withholding | 2026 | CIRS art. 101-B(1)(d) |
+| No withholding below | EUR 25 per withholding | 2026 | CIRS art. 101-B(1)(d) https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs101b.aspx |
 | Payments on account | Three, by 20 July, 20 September and 20 December; total 65% of the formula amount; none if each is under EUR 50 | 2026 | CIRS art. 102(1) to (3): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs102.aspx |
-| Self-employed social security | 21.4% (25.2% for sole traders with a business, empresários em nome individual) on 70% of service income (20% of sales of goods and of hotel and restaurant income), monthly base capped at 12 x IAS = EUR 6,445.56 | 2026 | Segurança Social, Guia Prático, Trabalhadores Independentes; detail in `pt-social-contributions` |
+| Self-employed social security | 21.4% (25.2% for sole traders with a business, empresários em nome individual) on 70% of service income (20% of sales of goods and of hotel and restaurant income), monthly base capped at 12 x IAS = EUR 6,445.56 | 2026 | Segurança Social, Guia Prático, Trabalhadores Independentes; detail in `pt-social-contributions` https://diariodarepublica.pt/dr/legislacao-consolidada/lei/2009-34514575 |
 
 The 2026 bands are lower than the 2025 bands. Lei 73-A/2025 (the 2026 State Budget) cut the rates of bands 2 to 5 (band 2 from 16.00% to 15.70%, band 3 from 21.50% to 21.20%, band 4 from 24.40% to 24.10%, band 5 from 31.40% to 31.10%) and raised every band limit (band 1 from EUR 8,059 to EUR 8,342; band 9 from over EUR 83,696 to over EUR 86,634). Do not use the 2025 table (Lei 55-A/2025) for 2026 income.
 
