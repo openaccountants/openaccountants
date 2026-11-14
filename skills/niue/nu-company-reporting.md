@@ -1,27 +1,30 @@
 ---
 name: nu-company-reporting
-version: 0.2
+version: 0.3
 description: Bounded reference for reviewers assessing annual company law reporting for an already registered ordinary Niue private share company using unchanged Schedule 2 model rules. Covers allocated annual return months, incorporation year treatment, records, selected financial statement and shareholder reporting requirements, meeting conditions and audit demand boundaries. Use for questions about Form 10, company records or annual reporting. Requires the universal and company formation workflow bases. Holds incomplete operative law, other rules, audit waivers, actual calendars, tax, beneficial ownership and all complete formation, financial statements or filing outputs until the required evidence and contracts are satisfied.
 category: formation
 jurisdiction: NU
 tax_year: 2026
 tax_year_notes: Hypothetical review reference only. The selected 2019 consolidation and public registry material checked on 2026-10-24 do not certify the complete operative law or an actual 2026 filing.
 tier: 2
-last_updated: 2026-11-11
-review_status: pending_review
-verified_by: pending
+last_updated: 2026-11-14
 depends_on:
   - workflow-base
   - company-formation-workflow-base
+type: filing-howto
 ---
 
-# Niue private company annual reporting reference
+# Niue private company annual reporting reference v0.3
 
 > **General reference only.** This is a bounded Tier 2 draft for professional review. It does not authorise formation, a financial statement, tax result, fee payment or filing. Guide presence, source preparation and component checks do not establish comprehensive jurisdiction acceptance.
 
-## Scope, rules and source gate
+**Answer first.** An ordinary Niue private company files an annual return (Form 10) with the Registrar in its **allocated month** (the Companies Office says June for companies generally), dated within that month, with a fee of **$45.00**; no return is due in the calendar year of incorporation (Companies Act 2006, s 124). Financial statements must be completed within **4 months** after balance date (a private company may extend this by special resolution to at most **7 months**) and sent to shareholders within **20 working days** of the required completion date (ss 129-130). Records are kept for **7** completed periods. An audit is triggered by a written demand from holders of **more than 20%** of distribution rights (s 131).
 
-See the [Niue source register](references.md) for dated company registration, business licensing, overseas return and separate tax ownership notification sources.
+**Tax year 2026.** The Companies Office pages were re-read on 14 November 2026 and the 2019 reprint of the Act was reopened. Ryan's fictional positions apply to 2026.
+
+## Scope and who this is for
+
+Ryan's separate Niue source register (company registration, business licensing, overseas returns and the separate tax ownership notification sources) is not in this repository yet; see the pack README.
 
 Load both mandatory bases in full. Retain all 4 universal outputs and 18 checks, all 5 formation outputs and 10 checks, all mandatory country slots and every loaded refusal. This is a selected ongoing-compliance companion, not a complete formation or financial reporting system. A conditional reference example does not waive an engagement's source, profile, factual, reviewer or execution gates.
 
@@ -29,26 +32,27 @@ The selected branch is an already registered ordinary domestic private share com
 
 Before an actual calculation or document, establish the relevant accounting period, incorporation and balance dates, requested obligation, complete operative Act/amendment/commencement/regulation chain and current prescribed forms, fees, notices and calendar. The 2019 reprint and tables through 31 December 2024 do not establish the absence of later direct or indirect amendments. A current registry page corroborates its published procedure, not the completeness of all governing law. Unknown law is a source hold. No ordinary business, tax or beneficial ownership exemption follows from this guide.
 
-## Primary library and source limits
+## Ask the client first
 
-| Authority | Selected reading and limit |
-|---|---|
-| [Official Niue legislation collection](https://www.gov.nu/information) and [2019 Volume 1](https://www.gov.nu/media/pages/information/5977ee14d1-1764012821/niue_laws_vol1_il2022.pdf), Companies Act 2006, ss 9, 14–18, 40–43, 52–53, 56, 117–132 and Schedule 2 cls 33–34, 41, 70–71 | Consolidated selected company-law branch. Volume 1 identifies 2006/275 and 1 August 2006. Sections and model rules must be read together. |
-| [WIPO's reprint record](https://www.wipo.int/wipolex/en/legislation/details/21666) and [2021–2024 supplement Part I](https://www.gov.nu/media/pages/information/51f88605f2-1779840449/niue-legislation-supplement-2021-2024-part-1.pdf), legislation tables | WIPO identifies the 2019 reprint as incorporating 2006/282; the government tables list 2006/275, Reg 2006/2 and 2006/282. Neither proves a complete 2026 chain. Do not infer an amendment's operative date from generic metadata. |
-| [Companies Office legislation](https://www.companies.gov.nu/about/legislation/), [standalone Act](https://www.companies.gov.nu/assets/niue-companies-office/legislation/niue-companies-act-2006.pdf) and [commencement instrument](https://www.companies.gov.nu/assets/niue-companies-office/legislation/companies-act-commencement-regulations-2006.pdf) | Instrument made 31 May 2006 commences remaining provisions on 1 August 2006. The standalone original-print material is not itself proof that 2006/282 was incorporated. Selected reporting provisions were compared with the consolidation. |
-| [Companies Regulations 2006](https://www.companies.gov.nu/assets/niue-companies-office/legislation/companies-regulations-2006-niue.pdf), regs 5–13 and Schedules 1–3 | Prescribed form, acceptance, fees and financial statement content/accounting policies. The actual current regulation and notice chain still requires verification. |
-| [Annual return procedure](https://www.companies.gov.nu/help-centre/keeping-company-details-up-to-date/filing-an-annual-return/), [fee schedule](https://www.companies.gov.nu/help-centre/forms-and-fees/fee-schedule/) and [Form 10](https://www.companies.gov.nu/assets/niue-companies-office/forms/nu-co-form-10-annual-return.pdf) | Current public procedure says June and publishes a $45 annual-return fee. The statutory allocated month and actual applicable fee/form take priority over an unsupported default. |
-| [Records guidance](https://www.companies.gov.nu/help-centre/registering-a-company/maintaining-and-keeping-records/) | Administrative explanation, read with ss 40–43 and 117–129. Registered shareholding information is not a complete beneficial ownership regime. |
+1. **The company's rules**: unchanged Schedule 2 model rules, Schedule 3, or custom rules; private status throughout the period.
+2. **Incorporation date, balance date and the allocated annual return month** (and any written alteration).
+3. **Shareholders' rights**: votes and distribution rights by class, and any written demand for an annual report or audit, with delivery dates.
+4. **Prior audits** and whether any audit is unfinished.
+5. **Where records and the share register are kept**, and any notices given to the Registrar.
 
-### Source and scope conflicts
+## The method, step by step
 
-- **Allocated month.** Section 124 uses the month allocated to the company and permits a written alteration. General June guidance does not establish a particular company's current allocation.
-- **Audit dispensation.** Schedule 2 cl 71(6) permits unanimous written agreement to dispense with an audit/remove the auditor. Section 131 imposes audit requirements on specified triggers and s 16 subordinates inconsistent rules to the Act. This reference does not resolve their interaction or implement a waiver. Hold a request relying on that dispensation; do not cancel a triggered or prior-period audit by assumption.
-- **Share capital guidance.** The registry's [before-you-set-up page](https://www.companies.gov.nu/help-centre/registering-a-company/before-you-set-up-a-company/) describes nominal values, whilst Act s 21 states that shares must not have a nominal/par value. Its 500-share illustration allocates only 450. Do not reuse those explanations, infer capital or recommend formation from this reference.
-- **Different model rules.** Schedule 3 has different financial statement delivery wording. Do not apply Schedule 2's 20-working-day delivery allowance to a Schedule 3 company. Unknown rules remain held.
-- **Currency and calendar.** The published dollar sign does not establish actual ISO currency, conversion or rounding. Statutory month/working-day wording is retained; no actual due date, holiday adjustment, late charge or payment amount is cleared here.
+### Rates, bands and thresholds
 
-## Intake and obligation map
+| Item | Amount or rule | Source |
+|---|---|---|
+| Annual return registration fee, s 124(1) | $45.00 | [Companies Office fee schedule](https://www.companies.gov.nu/help-centre/forms-and-fees/fee-schedule/); [Filing an annual return](https://www.companies.gov.nu/help-centre/keeping-company-details-up-to-date/filing-an-annual-return/) |
+| Annual return month | The month allocated to the company (the Companies Office page says June); none in the calendar year of incorporation | [Companies Act 2006, s 124](https://www.gov.nu/media/pages/information/5977ee14d1-1764012821/niue_laws_vol1_il2022.pdf); [Filing an annual return](https://www.companies.gov.nu/help-centre/keeping-company-details-up-to-date/filing-an-annual-return/) |
+| Financial statements completed | Within 4 months after the balance date, or an extended period not exceeding 7 months for a private company | [Companies Act 2006, s 130 and Schedule 2](https://www.gov.nu/media/pages/information/5977ee14d1-1764012821/niue_laws_vol1_il2022.pdf) |
+| Audit demand threshold | Shareholders who together receive more than 20% of distributions give written notice | [Companies Act 2006, s 131](https://www.gov.nu/media/pages/information/5977ee14d1-1764012821/niue_laws_vol1_il2022.pdf) |
+| Share register history | Shareholders and transfers within the last 7 years | [Companies Act 2006, s 40](https://www.gov.nu/media/pages/information/5977ee14d1-1764012821/niue_laws_vol1_il2022.pdf) |
+
+### Intake and obligation map
 
 Reuse redacted records before grouped questions. Establish the company, registration/classification history, complete registered rules and changes, incorporation date, balance-date history, allocated return month and notices, directors and authority, addresses/record locations, share register and rights by class, shareholder demands and their delivery dates, existing/unfinished audits, accounting records, prior returns/reports/statements, actual forms, authorised recipient and qualified reviewer. Keep names, identifiers, signatures and personal addresses with the reviewer. Do not upload identity documents or bank details.
 
@@ -63,13 +67,52 @@ Reuse redacted records before grouped questions. Establish the company, registra
 9. **Written resolutions, s 52.** The ordinary selected threshold is not less than 75% of entitled votes. Any higher majority or additional requirements must also be satisfied. Send every nonsigning shareholder a copy within 5 working days. Voting rights, headcount, shares and distribution rights are distinct; establish the actual denominator. This is not a formation or audit-waiver authorisation.
 10. **Audit, ss 131–132.** Check public registration at any time in the period, actual rules and a written pre-period-end demand by holders of more than 20% of distribution rights. Exactly 20% is not that demand threshold; it does not by itself clear the other triggers. Appointment is within 30 working days of the trigger/vacancy as applicable. Schedule 2 cl 71(4) allows appointment by ordinary resolution or, for a vacant office, by the directors. If directors appoint to a vacant office, they must give all shareholders notice within 10 working days. That conditional notice limb is not automatically imposed on an ordinary-resolution appointment; other applicable duties remain. A prior required-period audit must still be completed after a later trigger ceases. Existing auditor cessation, waiver, qualification, independence, report content and filings require their own complete evidence; do not certify an audit exemption from this component.
 
-### Statement content and accounting limits
+#### Statement content and accounting limits
 
 Regulations 11–12 and Schedule 3 prescribe statement information and policies, including accrual accounting, receivables at estimated net realisable value, inventories at lower of cost and net realisable value, the specified depreciation/asset treatments and taxes-payable accounting. Preserve comparatives, remuneration/expense/equity disclosures, accounting policies and changes, valuation bases, material securities/guarantees/contingencies and audit status. The immaterial-item exception requires both current and comparative immateriality. Regulation 13's international-standard provision concerns public companies; do not declare that every private company must use New Zealand IFRS.
 
 These references do not supply every recognition, valuation, disclosure, group, tax or audit rule. Actual statements, review sign-off and filing-ready packages remain held until all applicable content and execution contracts are established. Do not invent a prescribed filing of all private-company statements merely because they must be sent to shareholders.
 
-## Fictional worked and held positions
+## Worked cases
+
+Two of Ryan's positions, as CI recomputes them.
+
+**Case 1 (N17), which accounting periods must be kept?** Nine completed periods P1 to P9 and current P10. Accounting records cover the current period and the last 7 completed periods (P3 to P9 plus P10, 8 periods); financial statements cover the last 7 completed periods (P3 to P9).
+
+```oa-check
+name: Niue records periods, 9 completed and 1 current (2026)
+inputs:
+  completed: 9
+  kept_completed: 7
+steps:
+  - first_kept: completed - kept_completed + 1
+  - accounting_record_periods: kept_completed + 1
+  - statement_periods: kept_completed
+expected:
+  first_kept: 3
+  accounting_record_periods: 8
+  statement_periods: 7
+```
+
+**Case 2 (N15), a decision: does a written resolution pass?** The selected threshold is not less than 75% of entitled votes. With 75 of 100 votes signed the shortfall is nil and it passes; with 74 it fails by 1 vote. Nonsigners get a copy within 5 working days.
+
+```oa-check
+name: Niue written resolution, 75 and 74 of 100 votes (2026)
+inputs:
+  entitled: 100
+  signed_a: 75
+  signed_b: 74
+steps:
+  - needed: entitled * 0.75
+  - shortfall_a: max(needed - signed_a, 0)
+  - shortfall_b: max(needed - signed_b, 0)
+expected:
+  needed: 75
+  shortfall_a: 0
+  shortfall_b: 1
+```
+
+### Ryan's fictional worked and held positions
 
 Unless expressly held as a separate branch, each case stipulates the selected law is applicable, unchanged Schedule 2 rules, an ordinary domestic private company, complete relevant facts and no contrary notice or special requirement. These are reference premises, not a way to clear missing actual law. CU is a fictional source-unit illustration, not an established payment currency. No actual fee, calendar or financial output follows.
 
@@ -102,7 +145,7 @@ Unless expressly held as a separate branch, each case stipulates the selected la
 | N25 | Directors appoint an auditor to a vacant office under established cl 71(4)(b) conditions. | Give notice to all shareholders within 10 working days; actual dates and other audit requirements remain held. |
 | N26 | Auditor appointed by ordinary resolution under cl 71(4)(a). | Do not automatically apply the directors-appointed-vacancy notice limb. Check all other applicable requirements; no general notice exemption follows. |
 
-## Held-case register
+## When to refuse or refer
 
 No cash or size floor resolves missing law or facts. Flag every unsupported assumption, conflict, conditional result and override for the reviewer. Group questions after evidence reuse and preserve the shared maximum of 10; more unresolved questions trigger the applicable refusal.
 
@@ -121,7 +164,7 @@ No cash or size floor resolves missing law or facts. Flag every unsupported assu
 | H11 | Actual financial statements, audit or complete formation requested | All country slots, sources, content, tools, outputs/checks and professional review must be established. |
 | H12 | Old records proposed for deletion or late penalties proposed | Preserve all applicable holds and obtain authority; statutory minimum/reference figures are not deletion or payment authority. |
 
-### Topical refusals
+#### Topical refusals
 
 Retain R-REVIEWER-MISSING and R-CONTENT-MISMATCH with the universal base's exact messages and full trace. The following additional messages are exact. Apply the trigger before calculation/assembly; return the message and scope trace, without an incomplete financial artifact.
 
@@ -130,7 +173,7 @@ Retain R-REVIEWER-MISSING and R-CONTENT-MISMATCH with the universal base's exact
 - **R-NU-COMPANY-RUNTIME.** Trigger: required workbook recalculation, zero-error verification, complete document assembly or file delivery is unavailable. Message: 'The required verified calculation and output tools are unavailable. I cannot substitute chat arithmetic, static values or an incomplete file for the required company outputs.'
 - **R-NU-COMPANY-AMBIGUITY.** Trigger: more than 10 grouped factual questions remain after evidence reuse. Message: 'More than 10 grouped factual questions remain unresolved. Obtain the missing company records with the reviewer before continuing.'
 
-## Outputs, checks and country contract
+## Completion checklist
 
 Preserve the universal recalculated working paper, reviewer brief, action list and practitioner checklist and all 5 formation outputs: entity comparison, registration checklist, cost breakdown, first-year compliance calendar and reviewer brief. Each logical component remains identifiable. This selected reference does not clear a formation engagement or permit a standalone prescribed output with missing contract components. Complete financial statements require all applicable content and workflow contracts as well.
 
@@ -153,29 +196,37 @@ Run all 18 universal and 10 formation checks. Add independent checks of: complet
 
 Optional industry, foreign-owner and integration slots are also incomplete. No complete country pack, current-law certification, formation recommendation, financial statement acceptance or professional sign-off follows from this guide.
 
-## Revision and disclaimer
+### Revision and disclaimer
 
 2026-10-24, v0.1: selected ordinary private-company reporting reference, 26 fictional worked/held positions and 12 held-case rows. Tier 2, pending_review and verified_by pending remain.
 
 This document is general reference material and does not constitute tax, legal or financial advice. A qualified professional in the relevant jurisdiction must establish applicable law, verify the facts and complete and sign off all required outputs before filing, paying or relying on a result.
 
-<!-- openaccountants-cta-block -->
+## Sources
 
+| Source | Read for | URL | Read on |
+|---|---|---|---|
+| Niue Laws 2019 reprint, Volume 1, Companies Act 2006 | Read for s 40 (7 years), s 124, s 130 (4 and 7 months), s 131 (more than 20%) | https://www.gov.nu/media/pages/information/5977ee14d1-1764012821/niue_laws_vol1_il2022.pdf | 2026-11-14 |
+| Companies Office, fee schedule | Read for the annual return fee ($45.00, s 124(1)) | https://www.companies.gov.nu/help-centre/forms-and-fees/fee-schedule/ | 2026-11-14 |
+| Companies Office, filing an annual return | Read for the June filing month, Form 10 and the $45 fee | https://www.companies.gov.nu/help-centre/keeping-company-details-up-to-date/filing-an-annual-return/ | 2026-11-14 |
 
----
+### Ryan's notes on each source (kept)
 
-## Talk to a verified accountant
+| Authority | Selected reading and limit | Read on |
+|---|---|---|
+| [Official Niue legislation collection](https://www.gov.nu/information) and [2019 Volume 1](https://www.gov.nu/media/pages/information/5977ee14d1-1764012821/niue_laws_vol1_il2022.pdf), Companies Act 2006, ss 9, 14–18, 40–43, 52–53, 56, 117–132 and Schedule 2 cls 33–34, 41, 70–71 | Consolidated selected company-law branch. Volume 1 identifies 2006/275 and 1 August 2006. Sections and model rules must be read together. | 2026-10-24 (read by Ryan) |
+| [WIPO's reprint record](https://www.wipo.int/wipolex/en/legislation/details/21666) and [2021–2024 supplement Part I](https://www.gov.nu/media/pages/information/51f88605f2-1779840449/niue-legislation-supplement-2021-2024-part-1.pdf), legislation tables | WIPO identifies the 2019 reprint as incorporating 2006/282; the government tables list 2006/275, Reg 2006/2 and 2006/282. Neither proves a complete 2026 chain. Do not infer an amendment's operative date from generic metadata. | 2026-10-24 (read by Ryan) |
+| [Companies Office legislation](https://www.companies.gov.nu/about/legislation/), [standalone Act](https://www.companies.gov.nu/assets/niue-companies-office/legislation/niue-companies-act-2006.pdf) and [commencement instrument](https://www.companies.gov.nu/assets/niue-companies-office/legislation/companies-act-commencement-regulations-2006.pdf) | Instrument made 31 May 2006 commences remaining provisions on 1 August 2006. The standalone original-print material is not itself proof that 2006/282 was incorporated. Selected reporting provisions were compared with the consolidation. | 2026-10-24 (read by Ryan) |
+| [Companies Regulations 2006](https://www.companies.gov.nu/assets/niue-companies-office/legislation/companies-regulations-2006-niue.pdf), regs 5–13 and Schedules 1–3 | Prescribed form, acceptance, fees and financial statement content/accounting policies. The actual current regulation and notice chain still requires verification. | 2026-10-24 (read by Ryan) |
+| [Annual return procedure](https://www.companies.gov.nu/help-centre/keeping-company-details-up-to-date/filing-an-annual-return/), [fee schedule](https://www.companies.gov.nu/help-centre/forms-and-fees/fee-schedule/) and [Form 10](https://www.companies.gov.nu/assets/niue-companies-office/forms/nu-co-form-10-annual-return.pdf) | Current public procedure says June and publishes a $45 annual-return fee. The statutory allocated month and actual applicable fee/form take priority over an unsupported default. | 2026-10-24 (read by Ryan) |
+| [Records guidance](https://www.companies.gov.nu/help-centre/registering-a-company/maintaining-and-keeping-records/) | Administrative explanation, read with ss 40–43 and 117–129. Registered shareholding information is not a complete beneficial ownership regime. | 2026-10-24 (read by Ryan) |
 
-This guide is maintained in the
-[ryanduguid/openaccountants fork](https://github.com/ryanduguid/openaccountants).
-Check its quality tier, recorded review status and cited sources before use.
-Choose a practitioner whose credentials and engagement scope you have verified.
-The links below are optional upstream services; they do not publish or verify
-this fork's changes.
+#### Source and scope conflicts
 
-- Upstream connection service: https://www.openaccountants.com/connect
-- Upstream accountant network: https://www.openaccountants.com/network
+- **Allocated month.** Section 124 uses the month allocated to the company and permits a written alteration. General June guidance does not establish a particular company's current allocation.
+- **Audit dispensation.** Schedule 2 cl 71(6) permits unanimous written agreement to dispense with an audit/remove the auditor. Section 131 imposes audit requirements on specified triggers and s 16 subordinates inconsistent rules to the Act. This reference does not resolve their interaction or implement a waiver. Hold a request relying on that dispensation; do not cancel a triggered or prior-period audit by assumption.
+- **Share capital guidance.** The registry's [before-you-set-up page](https://www.companies.gov.nu/help-centre/registering-a-company/before-you-set-up-a-company/) describes nominal values, whilst Act s 21 states that shares must not have a nominal/par value. Its 500-share illustration allocates only 450. Do not reuse those explanations, infer capital or recommend formation from this reference. (Page read by Ryan on 2026-10-24.)
+- **Different model rules.** Schedule 3 has different financial statement delivery wording. Do not apply Schedule 2's 20-working-day delivery allowance to a Schedule 3 company. Unknown rules remain held.
+- **Currency and calendar.** The published dollar sign does not establish actual ISO currency, conversion or rounding. Statutory month/working-day wording is retained; no actual due date, holiday adjustment, late charge or payment amount is cleared here.
 
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
+Not yet confirmed: amendments after the 2019 reprint and the tables to 31 December 2024; a particular company's allocated month (the June page is general); the interaction of the Schedule 2 audit dispensation with s 131; the effect of the Tax Administration Act 2025 (from 1 July 2026) on company obligations, which is outside this skill; actual day counting and holidays; the currency of the published fee.
