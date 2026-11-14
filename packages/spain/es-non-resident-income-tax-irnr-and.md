@@ -3,17 +3,18 @@ name: es-non-resident-income-tax-irnr-and
 description: Use this Guide to select and compute Spain’s ordinary non-resident and departure tax routes for 2026. It covers individual residence, Spanish-source income, income without a permanent establishment, EU and EEA expense conditions, rental and own-use property, pensions, investment gains, purchaser withholding, Modelo 210 and Modelo 211. It also supplies an ordinary permanent-establishment accounting-to-tax method, branch remittance tests, asset-transfer charges and individual shareholding exit-tax thresholds, valuation, elections and filing clocks. Trigger phrases include IRNR, no residente, Modelo 210, establecimiento permanente, renta imputada, comprador retención tres por ciento, cambio de residencia and exit tax Spain. Obtain actual residence, source, treaty, ownership, accrual, cost and election evidence before calculating. Use the separate foral nonresident Guide where the agreements select Basque law or a foral collector; specialist treaty or establishment outcomes require their actual rules.
 jurisdiction: ES
 tax_year: 2026
-last_updated: 2026-10-28
+last_updated: 2026-11-14
 drafted_by: OpenAccountants
 approved_by: pending
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-version: 1.1
+version: 1.2
 category: international
 tier: 2
 domain: cross-border
+type: computation
 ---
 
-# Spain: non-residents, permanent establishments and departure v1.1
+# Spain: non-residents, permanent establishments and departure v1.2
 
 Select residence and source, then compute the applicable 2026 IRNR or departure route. This revision is sourced from the law; independent whole-pack review is pending and no accountant has signed it off. A treaty or special-regime election can change the route and must be evidenced.
 

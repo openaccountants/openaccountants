@@ -3,15 +3,16 @@ name: ne-tax-overview
 description: "Niger tax overview for 2026 intake and evidence routing, separating ordinary tax research gaps from two source-backed cash-payment and money-transfer-tax jobs. Use this Guide when identifying the applicable person, period, transaction, regime and next tax working paper, or reviewing an old TDTA charge. It distinguishes signed amendment dates, real-regime cash payments, supplier-requested withholding and operator fees without duplicating the owning Guides’ rates. Corporate income tax, VAT and payroll files retained from 2025 are not recertified. Two executable reconciliations test supported monthly cash subtotals and a post-repeal statement charge. Current core law, tax forms and full cross-border coverage remain incomplete; this draft is not a filing instruction or accountant attestation."
 jurisdiction: NE
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
+type: situation-rules
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: international
-version: 0.1
+version: 0.2
 tier: 2
 domain: income-tax
 ---
 
-# Niger tax overview and intake routing v0.1
+# Niger tax overview and intake routing v0.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -28,9 +29,6 @@ Use this 2026 intake Guide to route Niger facts to the right source-backed job, 
 | Ordinary buyer-chosen cash payment involving a real-regime enterprise | Establish payment facts and exemption/base conditions, then use the owning cash-payment Guide. Do not copy a rate into this overview or treat the invoice alone as payment | [2025-44 art. 15, CGI 394 decies–noniesdecies](https://finances.gouv.ne/index.php/lois-de-finances/file/1303-ordonnance-n-2025-44) and [2026-45 art. 10](https://finances.gouv.ne/index.php/actualites/publications-du-ministere/file/1351-ordonnance-n-2026-45-premiere-rectification-de-la-loi-de-finances-2026) |
 | Supplier requested cash | Different withholding branch for a real-regime buyer or the State, its subdivisions, NGOs and nonprofit entities. Calculation/base interaction and invoice workflow remain held in the owning Guide | [2026-45 art. 10, amended CGI 394 undecies](https://finances.gouv.ne/index.php/actualites/publications-du-ministere/file/1351-ordonnance-n-2026-45-premiere-rectification-de-la-loi-de-finances-2026) |
 | Former money-deposit/transfer tax | Repeal of CGI 394 bis–nonies operates from signature, 21 August 2026. Route a former-TDTA charge to the repeal Guide. This is repeal, not a current zero-rated tax | [2026-45 arts. 9,25 and signature, pages 9–10,48](https://finances.gouv.ne/index.php/actualites/publications-du-ministere/file/1351-ordonnance-n-2026-45-premiere-rectification-de-la-loi-de-finances-2026) |
-| Personal income and residence | Unverified: current standalone individual/residence job absent. Do not use the old overview's residence/worldwide-basis statement or top ITS figure as current | Unverified: current consolidated CGI and ITS text not read |
-| Ordinary business profits, VAT, payroll/social and patente | Unverified: retained 2025 files are research leads, not current-year confirmation | Unverified: current core CGI/CNSS procedure not read |
-| Transfer pricing, property, treaties, withholding and PE | Unverified: no comprehensive current job established by these two enactment slices | Unverified: relevant current primary text not read |
 
 ## The base
 
@@ -116,4 +114,4 @@ expected:
 | [Ministry, signed Ordonnance 2026-45](https://finances.gouv.ne/index.php/actualites/publications-du-ministere/file/1351-ordonnance-n-2026-45-premiere-rectification-de-la-loi-de-finances-2026) | Rendered scans pages 9–10: full repeal and amended cash branch; page 48 final article/signature visually read. Upload date not treated as commencement | 2026-11-01 |
 | [OHADA official AUSCGIE original](https://biblio.ohada.org/doc_num.php?explnum_id=2032) | Pages 8,31–32: application, branch and representative-office distinctions; fuller read scope and national sources recorded in formation Guide | 2026-11-01 |
 
-Not yet confirmed: calendar tax year and annual return deadline; old geographic/monetary-union description and declarative-system/DGI administration proposition; currency conversion or monetary-union proposition; current residence/worldwide/source rules and top ITS rate; corporate income-tax rate, TVA rate/exemptions/recovery, ITS/CNSS, patente and property duties; TP, treaties, PE, cross-border withholding, exchange controls and complete 2026 law chain; current form/portal/fields/acknowledgements, numeric sanctions and old TDTA liabilities/refunds; supplier-requested cash calculation and early-period/straddling cases. The CGI2025 itself was not read. The old PwC VAT reference is not a legal source and no figure is adopted from it. All seven tax domains remain partial; no accountant has attested to this draft.
+Not yet confirmed: calendar tax year and annual return deadline; old geographic/monetary-union description and declarative-system/DGI administration proposition; currency conversion or monetary-union proposition; current residence/worldwide/source rules and top ITS rate; corporate income-tax rate, TVA rate/exemptions/recovery, ITS/CNSS, patente and property duties; TP, treaties, PE, cross-border withholding, exchange controls and complete 2026 law chain; current form/portal/fields/acknowledgements, numeric sanctions and old TDTA liabilities/refunds; supplier-requested cash calculation and early-period/straddling cases. The CGI2025 itself was not read. The old PwC VAT reference is not a legal source and no figure is adopted from it. All seven tax domains remain partial; no accountant has attested to this draft; three intake rows moved out of the rates table on 2026-11-14 because no current primary text was read for them: personal income and residence; ordinary business profits, VAT, payroll and social, patente; transfer pricing, property, treaties, withholding and PE.

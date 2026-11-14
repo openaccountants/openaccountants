@@ -2,17 +2,18 @@
 name: fi-property-transfer-tax
 description: >
   Calculate Finnish transfer tax on direct real estate, buildings and housing or real-estate-company shares acquired in 2026. Establish the taxable consideration, property-company debt and ownership percentage before applying the statutory rate. Covers signing versus ownership-transfer deadlines, private and agent-assisted transactions, new construction, foreign buyers, indirect property interests, earnout consideration under the 2026 amendment, corrections, refunds and statutory late-filing sanctions. Trigger on varainsiirtovero, debt-free price, housing shares, property purchase, additional consideration or title registration. Annual real-estate tax is a separate liability, while rental income and disposal gains belong in the individual or corporate income-tax computation.
-version: 0.5
+version: 0.6
 jurisdiction: FI
 tax_year: 2026
-last_updated: 2026-10-27
+last_updated: 2026-11-14
 category: property
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
+type: computation
 ---
 
-# Finland property transfer tax v0.5
+# Finland property transfer tax v0.6
 
 ## Who this applies to
 
@@ -22,14 +23,14 @@ Use for an ordinary buyer of Finnish land, a qualifying leasehold/building or ho
 
 | Item | Rule for 2026 contracts | Official source |
 |---|---|---|
-| Direct real estate and qualifying building/leasehold | 3% of purchase price or other consideration | Act §§5–6 [text][law] |
-| Housing/real-estate-company shares and other taxable securities | 1.5% of statutory consideration; include applicable company debt | Act §20 [text][law] |
-| Direct property ordinary payment | By title/leasehold registration application; otherwise within 6 months of contract | Act §7 [text][law] |
-| Securities ordinary payment | Within 2 months of contract; agent/new-construction exceptions below | Act §21 [text][law] |
-| Later contingent consideration | Separate 2 months after both obligation and amount confirmed after ordinary deadline | Act §§7(2),21(5), Act 1143/2025 transition [text][law] |
-| Late title application | 20% of tax for each started 6-month delay, maximum 100% | Act §8 [text][law] |
-| Voluntary late filing within 60 days | EUR 50 individual/estate; EUR 100 other taxpayer, per return, subject to statutory exceptions | Act §36b [text][law] |
-| Tax increase | Ordinary 10% of added tax; statutory minimum EUR 75 individual/estate, EUR 150 other | Act §36a [text][law] |
+| Direct real estate and qualifying building/leasehold | 3% of purchase price or other consideration | Act §§5–6 [text](https://www.finlex.fi/fi/lainsaadanto/1996/931) |
+| Housing/real-estate-company shares and other taxable securities | 1.5% of statutory consideration; include applicable company debt | Act §20 [text](https://www.finlex.fi/fi/lainsaadanto/1996/931) |
+| Direct property ordinary payment | By title/leasehold registration application; otherwise within 6 months of contract | Act §7 [text](https://www.finlex.fi/fi/lainsaadanto/1996/931) |
+| Securities ordinary payment | Within 2 months of contract; agent/new-construction exceptions below | Act §21 [text](https://www.finlex.fi/fi/lainsaadanto/1996/931) |
+| Later contingent consideration | Separate 2 months after both obligation and amount confirmed after ordinary deadline | Act §§7(2),21(5), Act 1143/2025 transition [text](https://www.finlex.fi/fi/lainsaadanto/1996/931) |
+| Late title application | 20% of tax for each started 6-month delay, maximum 100% | Act §8 [text](https://www.finlex.fi/fi/lainsaadanto/1996/931) |
+| Voluntary late filing within 60 days | EUR 50 individual/estate; EUR 100 other taxpayer, per return, subject to statutory exceptions | Act §36b [text](https://www.finlex.fi/fi/lainsaadanto/1996/931) |
+| Tax increase | Ordinary 10% of added tax; statutory minimum EUR 75 individual/estate, EUR 150 other | Act §36a [text](https://www.finlex.fi/fi/lainsaadanto/1996/931) |
 
 ## The base
 

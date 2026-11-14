@@ -2,18 +2,19 @@
 name: na-cross-border
 description: >
   Namibia cross-border tax, 2026: withholding on dividends, interest, royalties and fees to non-residents, deadlines and rules for non-resident payees. Figures come from Namibian law and official pages opened on 2026-11-01. Items that could not be opened are named as not yet confirmed. Not reviewed by a licensed accountant.
-version: 0.1
+version: 0.2
 jurisdiction: NA
 category: international
 tax_year: 2026
 tax_year_notes: "Individuals: year of assessment 1 March 2026 to 28 February 2027. Companies: financial year."
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: cross-border
+type: situation-rules
 ---
 
-# Namibia Cross-Border Tax v0.1
+# Namibia Cross-Border Tax v0.2
 
 > **General reference only.** This skill is general tax reference material for AI-assisted workflows. Do not rely on it to file, pay or take a position without review by a qualified professional in Namibia.
 

@@ -13,20 +13,21 @@ description: >
   and 33% for 2026. Regime forfettario appears only as an entry gate and
   comparison. This Tier 2 draft supports source checking and reviewer questions;
   it does not authorise filing, payment or a tax position.
-version: 2.3
+version: 2.4
 jurisdiction: IT
 tax_year: 2026
 tax_year_notes: "Coverage starts with the 2025 period (Modello Redditi PF 2026, read at 5 November 2026) and includes the 2026 period, whose return form (Redditi PF 2027) was not available. Only the TUIR text in force to 31 December 2026 is covered; D.Lgs. 117/2026 replaces arts 1-191 for later periods and is not mapped here. The 2027 budget bill is not law."
-last_updated: 2026-11-11
+last_updated: 2026-11-14
 depends_on:
   - income-tax-workflow-base
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 domain: income-tax
+type: computation
 ---
 
-# Italy income tax for self-employed professionals v2.3
+# Italy income tax for self-employed professionals v2.4
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
