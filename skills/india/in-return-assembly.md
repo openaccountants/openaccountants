@@ -395,7 +395,7 @@ The rules are in section 58 of the [Income-tax Act 2025](https://egazette.gov.in
 ## TDS Credit Reconciliation
 [From in-tds-freelance output or computed from the tax credit statement]
 - Deductor-wise summary
-- Section 393 table item for each deduction (payments from 1 April 2026)
+- Section 393 table item where the earlier credit/payment event is on or after 1 April 2026; March credit/April payment stays under the older Act
 - Tax credit statement against the return
 - Mismatches and resolution notes
 - Tax collected at source (if any)
