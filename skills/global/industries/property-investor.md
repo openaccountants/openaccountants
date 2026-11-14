@@ -1,175 +1,146 @@
 ---
 name: property-investor
-description: Industry vertical for property investors including residential landlords, short-term rental operators (Airbnb/Booking.com), commercial property investors, and property developers. Loaded alongside any country skill to provide industry-specific classification guidance for rental income, mortgage interest treatment, capital vs revenue repairs, and property-specific deductions. Trigger phrases — landlord, rental property, property investor, Airbnb host, short-term rental, buy-to-let, commercial property, real estate investor, rental income, property portfolio.
-version: 1.0
+description: "2026 property accounting method for leases, deposits, platforms, repairs, finance and investment-property measurement, including UK FHL repeal and Rent a Room boundaries."
+version: 2.0
 category: vertical
 jurisdiction: GLOBAL
-last_updated: 2026-06-12
+last_updated: 2026-11-14
 tier: 2
 status: needs_sources
+tax_year: 2026
+type: cross-country-method
+domain: tax
 ---
 
-# Property Investor Vertical Skill v1.0
+# Property investor accounting v2.0
 
-> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
+## Scope
 
-## Section 1 — Industry Profile
+For accountants reconciling residential, commercial and short-stay property, lease income, deposits, repairs, finance, assets and platform reporting. Determine the owner, property use and country before a tax computation.
 
-Property investors generate income from real estate assets through rental income, service charges, and eventual capital gains on disposal. The financial profile is characterized by high asset values, significant leverage (mortgage debt), ongoing maintenance obligations, complex tax treatment (income vs. capital, interest restriction, depreciation/capital allowances), and long holding periods.
+This is a cross-country method for 2026. Establish the entity, country, tax year, reporting framework and permitted accounting basis before using it. Financial-reporting recognition is separate from income-tax deductions, capital allowances and VAT/GST. The IFRS principles below use the Australian adopted paragraph text as an official public reference; Australian-specific paragraphs and local simplified rules are not automatically rules in another country. Match the compilation and local adoption to the reporting period. Do not silently apply this method as US GAAP or a country's cash-basis tax computation.
 
-**Typical entity structures:** Individual ownership (sole trader), joint ownership (tenants in common/joint tenants), partnership, limited company (SPV — special purpose vehicle), trust, REIT (institutional).
+## Quick reference
 
-**Revenue model variations:**
-- **Long-term residential letting** — assured shorthold tenancies (6–12+ months), stable monthly income
-- **Short-term rental (STR)** — Airbnb, Booking.com, Vrbo; higher yield but more volatile and management-intensive
-- **Commercial letting** — offices, retail, industrial; longer leases (3–25 years), larger amounts, different tax treatment
-- **Serviced accommodation** — furnished, all-inclusive rentals (between STR and long-term)
-- **HMO (House in Multiple Occupation)** — room-by-room letting, higher yield, more regulation
-- **Holiday lets** — furnished holiday accommodation with special tax treatment in some jurisdictions
-- **Property development** — buying, renovating, selling (trading income, not investment income)
+| Decision | First check | Source |
+| --- | --- | --- |
+| Lease rent or a service? | Determine the lease/non-lease components first; operating-lease income follows the lessor rules, not automatically IFRS 15 | [AASB 16, paragraphs 12-17 and 81](https://standards.aasb.gov.au/aasb-16-nov-2022) |
+| Gross sales or a net commission? | Determine control and principal/agent status for the specified supply, not from the bank payout | [AASB 15, paragraphs B34-B38](https://standards.aasb.gov.au/aasb-15-dec-2022) |
+| Expense or intangible asset? | Identify controlled rights and applicable recognition criteria; business size alone does not decide | [AASB 138, paragraphs 18-23 and 48-71](https://standards.aasb.gov.au/aasb-138-dec-2022) |
+| Rental or right-of-use asset? | Establish the reporting framework, lease and any applicable short-term/low-value election | [AASB 16, paragraphs 5-8 and 22](https://standards.aasb.gov.au/aasb-16-nov-2022) |
 
-**Scale indicators:** Number of units/properties, portfolio value, gross rental income, loan-to-value ratio, occupancy rate. Revenue range: $10K–$50K (single property) to $500K+ (portfolio landlord).
+## Ask the client first
 
-**Cash flow pattern:** Monthly rental income against monthly mortgage payments, with periodic lumpy maintenance expenditure. Void periods (empty properties) create cash flow gaps with no income but continued mortgage/insurance costs. Seasonal pattern for STR (peak summer/holiday periods). Security deposits held in trust (not income).
+- Which person/entity earns the income, owns the assets and signs the contracts? Obtain the legal structure, residence, business locations and reporting dates.
+- Which reporting framework and tax accounting basis apply? What registrations, elections, prior balances and tax losses exist?
+- Obtain contracts, invoices, credit notes, bank and platform statements, withholding certificates, refunds, chargebacks and opening/closing balances.
+- What is sold, when and to whom? Identify customer location and status, performance obligations, intermediaries, private use and any money held for another person.
+- Obtain cost invoices, asset ownership/use records, funding agreements, payroll/contractor documents, related-party dealings and the actual terms of insurance and licences.
 
----
+## The method, step by step
 
-## Section 2 — Revenue Recognition
+1. Establish legal ownership and accounting/tax scope before coding transactions. Keep each business entity, owner and client-money account separate.
+2. Determine whether each receipt is lease income, a service, deposit, financing or another item. For rent apply the lease standard; for separate customer services apply the appropriate revenue standard. Billing, payout, checkout and cash dates are not universal recognition rules.
+3. Reconcile each income source from transactions to returns/refunds, fees, withheld tax, reserves and bank settlement. Review principal/agent status before choosing gross or net reporting. Do not double-count a payout and the underlying sales.
+4. Reconcile receivables, conditional contract assets, customer deposits, contract liabilities, deferred fees and client funds. Separate price concessions from credit losses. Obtain the applicable impairment standard before quantifying a loss allowance.
+5. Establish business purpose, private proportion, capital versus revenue treatment and timing for every cost. Obtain the current country law before claiming a tax deduction; an accounting expense is not proof of tax deductibility.
+6. Prepare an asset register with invoices, costs, ownership, available-for-use date, residual value, useful life, method and disposal proceeds. Maintain a separate tax-capital-allowance schedule. The prior purchase-price and useful-life ranges were unsupported planning estimates, not statutory values, and are held below.
+7. Apply the country's VAT/GST/sales-tax rules by supply, customer, location and registration. Include reverse charges/imported services where relevant. Do not reclaim tax on exempt/private activity just because a supplier charged it.
+8. Test payroll/contractor status, withholding, permanent establishment, cross-border reporting and elections using current country jobs. A platform tax form, incorporation or a merchant-of-record arrangement does not remove every obligation.
+9. Deliver reconciled journals and schedules, source-linked tax adjustments, missing facts and a review checklist. Require the relevant professional review before a return, tax payment or material accounting judgment is relied on.
 
-### Long-term residential rental income
+## Ownership, property use and records
 
-**Monthly rent:**
-- Revenue recognized in the month it relates to, regardless of when received
-- Rent received in advance: deferred revenue (accrual) or recognized on receipt (cash)
-- Rent arrears: still recognized as revenue if expected to be collected (accrual); not recognized until received (cash)
-- Rent-free periods (incentive to tenant): spread the reduced revenue over the lease term (accrual) or recognize nothing in the free period (cash)
+Separate individuals, co-owners, partnerships, companies/SPVs, trusts and agents. Obtain title/leasehold rights, beneficial ownership, joint-income arrangements, financing use, purchase completion documents, tenancy and platform contracts, property ledgers, rent schedules, deposits, invoices, works specifications and personal-use dates.
 
-**Security deposits:**
-- NOT revenue — held on behalf of the tenant as a liability
-- Must be held in a deposit protection scheme in many jurisdictions
-- Only becomes income if legitimately retained for damage/arrears at tenancy end
-- Interest on deposits: follows country skill's rules on deposit interest
+Classify each property as investment property, owner-occupied, inventory for development/sale or another category under the reporting framework. Significant accommodation services can change classification; an owner-managed hotel is not automatically passive investment property. Mixed-use and group-occupied property require separate analysis. [AASB 140, paragraphs 5-15](https://standards.aasb.gov.au/aasb-140-dec-2022).
 
-**Service charges:**
-- If landlord charges for services (cleaning, utilities included in rent): revenue
-- If collecting service charges as agent (to pass to service company): not revenue
-- Variable service charges reconciled annually: recognize per reconciliation
+## Lease, stay and other receipts
 
-### Short-term rental income (Airbnb, Booking.com)
+| Receipt | Instruction | Official source |
+| --- | --- | --- |
+| Operating-lease rent | Recognise on a straight-line basis or another more representative systematic basis. Rent-free periods and fixed incentives can require a schedule; cash and tax basis are separate | [AASB 16, paragraph 81](https://standards.aasb.gov.au/aasb-16-nov-2022) |
+| Short-stay accommodation | Determine lease versus service components and the period of provision. Do not recognise an entire stay only at checkout if part of the performance belongs to an earlier reporting period | [AASB 16, paragraphs 12-17](https://standards.aasb.gov.au/aasb-16-nov-2022); [AASB 15, paragraphs 31-45](https://standards.aasb.gov.au/aasb-15-dec-2022) |
+| Cleaning or service charges | Identify the supplied service and whether the landlord is principal or agent. An annual reconciliation date is not automatically when all service income is earned | [AASB 15, paragraphs 22-45 and B34-B38](https://standards.aasb.gov.au/aasb-15-dec-2022) |
+| Platform settlement | Determine the host's contractual entitlement and the platform's role; gross versus net is not a free choice based only on consistency | [AASB 15, paragraphs B34-B38](https://standards.aasb.gov.au/aasb-15-dec-2022) |
+| Investment-property value change | Apply the selected framework/model separately from cash rent and the tax return | [AASB 140, paragraphs 30-56](https://standards.aasb.gov.au/aasb-140-dec-2022) |
 
-**Platform payouts:**
-- Gross booking value = total guest payment (including cleaning fee, service fee)
-- Platform commission (Airbnb typically 3% host fee; Booking.com 15%) = cost of sale
-- Revenue = gross booking value minus platform commission (or gross with commission as separate expense — either method acceptable, be consistent)
-- Cleaning fees charged to guests: revenue (offset by cleaning expense)
+For arrears, establish the lease income and receivable first, then assess any impairment under the applicable financial-instrument requirements. “Expected to collect” is not a complete standalone lease-recognition rule. A legally permitted cash-basis property return does not turn financial statements into the same computation automatically.
 
-**Seasonal recognition:**
-- Revenue recognized on the check-out date (service delivered) for accrual basis
-- Or on payout receipt date for cash basis
-- Advance bookings with deposits: deferred revenue until stay occurs (accrual)
+Separate refundable security deposits and money held for another from rent. Obtain the return/retention terms and reconciliation; determine any deposit-protection/trust obligation from local law. Retaining a deposit for damage, unpaid rent or another charge can produce different accounting and tax results; it does not automatically become one category of rental revenue on the tenancy-end date. Deposit interest entitlement is also jurisdiction-specific.
 
-**Cancellation and refund policies:**
-- Cancelled bookings before stay: no revenue (or reverse if already recognized)
-- Partial refunds: reduce revenue by refund amount
-- Platform insurance claims (host damage protection): compensation income, not rental revenue
+For cancellations, refunds, platform damage cover, insurance, break payments, dilapidations, key money and lease premiums, identify entitlement, performance, compensation purpose and applicable standard. Do not automatically net every damage receipt against repairs or recognise every break payment on cash receipt. Parking, storage, ground rent and wayleave/easement receipts also require actual rights and income/capital classification; annual versus one-off is evidence, not a universal legal test.
 
-### Commercial rental income
+### Worked case: operating-lease incentive
 
-- Revenue recognized per lease terms (monthly/quarterly in advance or arrears)
-- Rent reviews: new rent applies from review date
-- Lease premiums received: may be partly capital (check country skill)
-- Break clause payments: compensation income in the period received
-- Dilapidations received at lease end: offset against repair costs or capital receipt (country-specific)
+Fabricated currency units. Assume an operating lease, no variable payments, financing or non-lease components, and a straight-line pattern appropriate under the framework. The lease lasts 24 months; the first two months are rent free, followed by 22 months at 1,000. Total fixed consideration is 22,000 and monthly recognised lease income is 916.67 before cumulative rounding. After six months, cumulative income is 5,500 but cash rent is 4,000, leaving accrued lease income of 1,500. This is not a country's cash-basis tax computation. [AASB 16, paragraph 81](https://standards.aasb.gov.au/aasb-16-nov-2022).
 
-### Other property income
+```oa-check
+name: Operating lease with initial rent-free incentive
+inputs:
+  lease_months: 24
+  free_months: 2
+  contractual_monthly_rent: 1000
+  elapsed_months: 6
+steps:
+  total_fixed_rent: (lease_months - free_months) * contractual_monthly_rent
+  monthly_income: total_fixed_rent / lease_months
+  cumulative_income: monthly_income * elapsed_months
+  cash_rent: (elapsed_months - free_months) * contractual_monthly_rent
+  accrued_lease_income: cumulative_income - cash_rent
+expected:
+  total_fixed_rent: 22000
+  monthly_income: 916.67
+  cumulative_income: 5500
+  cash_rent: 4000
+  accrued_lease_income: 1500
+```
 
-- Key money / lease premium from new tenant: treatment varies by jurisdiction (income vs. capital)
-- Parking income, storage rental: revenue
-- Ground rent (if freeholder): revenue
-- Wayleave/easement payments: revenue (annual) or capital (one-off)
-- Insurance proceeds for property damage: not revenue — offset against repair costs or gain on deemed disposal
+Boundary: use another systematic basis when it is more representative of how the underlying benefit diminishes. A finance lease, modification, variable payment, recoverability problem or distinct service requires its own analysis. Do not label this accrued rent an IFRS 15 contract asset merely from the example's arithmetic.
 
----
+## Finance, repairs and ongoing costs
 
-## Section 3 — Industry-Specific Deductions
+Split mortgage/loan payments into principal, interest, fees and other amounts. Obtain borrowing purpose and use of funds for each refinancing or equity release. A property security does not prove all funds were used in the property business. Keep lender statements and a reconciliation of the loan balance; do not deduct an entire instalment as interest.
 
-### Mortgage interest
+Whether interest is deductible, restricted, relieved through a tax reducer, capitalised or carried forward depends on the owner and country. Thin-capitalisation, interest-limitation and connected-party rules can apply. A company does not have an unconditional right to deduct all interest, and a refinancing ceiling is not universally the original purchase loan.
 
-**The single most significant deduction — and the most jurisdiction-variable:**
+Distinguish a repair of an existing asset, a replacement of an entirety, a material improvement, extension, structural alteration, conversion and initial restoration. Obtain the works description, pre/post condition, function and invoices. Comparing only with the condition when purchased is not a complete test. Modern equivalent materials do not automatically turn a repair into an improvement; separate genuinely distinct repair and capital work with evidence. Use the country section below for the specific UK rule, not as worldwide law.
 
-- Some countries allow full deduction of mortgage interest against rental income (e.g., US for rental properties, many European countries)
-- Some countries restrict interest relief (e.g., UK — basic rate tax credit only for residential, full deduction for companies)
-- Some countries have thin capitalization rules (limiting interest if debt exceeds a proportion of value)
-- The country skill provides the specific treatment — this vertical provides the framework
+Retain the following expense/asset questions:
 
-**Classification:** Mortgage interest is a finance cost. Report separately from operating costs regardless of deductibility.
+- Letting/management and tenant-finding fees, advertising, inventories, inspections, references, tenancy drafting, disputes/eviction and deposit schemes. Check the actual contract, capital/revenue treatment, period and tax deductibility; no standard agent percentage applies.
+- Buildings, contents, liability, rent-guarantee, legal-expenses and short-stay insurance. Confirm the actual lender, legal and platform requirements, insured risks, exclusions, claim entitlement and excess. A host-protection product cannot be called either comprehensive insurance or “never insurance” without its terms.
+- Ground rent, service charges, council/property taxes, utilities during voids, gardens, cleaning, safety/energy certificates, pest control, locks and security. Who owes a tax or charge and whether a cost is allowable depend on the law and use; an empty property does not create the same liability everywhere.
+- Accountancy, legal, surveying, valuation, mortgage-broker and tax advice. Distinguish acquisition/disposal/financing work, business administration and the owner's private return. Do not claim every professional invoice as a current rental expense.
+- Furnishings, appliances and replacements. Identify initial acquisition versus a replacement, private use, any proceeds and the local relief. A historic wear-and-tear percentage or “like-for-like always deductible” rule is not a global alternative to actual-cost analysis.
 
-**Refinancing:** Interest on refinanced mortgage deductible up to the original purchase loan amount in some jurisdictions. Additional borrowing for personal use: that portion's interest is NOT deductible.
+## Property and equipment measurement
 
-### Repairs vs. improvements (CRITICAL distinction)
+An investment property under the stated IFRS model can use the applicable cost or fair-value policy, subject to conditions. Under the fair-value model, value changes go through profit or loss rather than a routine building-depreciation schedule. The cost-model and owner-occupied/inventory routes are different. Do not double-count integral equipment or furniture already included in the property's measured value. [AASB 140, paragraphs 30-56](https://standards.aasb.gov.au/aasb-140-dec-2022).
 
-**Repairs (revenue expense — immediately deductible):**
-- Like-for-like replacement (broken boiler → new boiler of similar spec)
-- Repairing damage (storm damage repair, fixing leaks)
-- Redecorating (painting, wallpapering)
-- Replacing broken fixtures with modern equivalent
-- Damp treatment, roof repairs, gutter replacement
+Keep land, structure, integral heating/electrical/plumbing and fixtures as classification questions. Do not use the prior blanket “land NEVER depreciated” and fixed component lives as a tax schedule. Land and finite-life structures generally require distinct accounting, while valuation, extraction/restoration elements or a limited-life asset can need further analysis; obtain the actual standard before deciding an exception. Financial depreciation, tax allowances and tax base for disposal are separate records.
 
-**Improvements (capital expenditure — not immediately deductible):**
-- Adding something not there before (extension, new bathroom, new room)
-- Upgrading substantially beyond the original (single glazing → double glazing is improvement in some jurisdictions, repair in others)
-- Structural alterations
-- Converting space (loft conversion, garage conversion)
-- Improving beyond the condition at acquisition
+For owned, leasehold, leased and sublet property, determine the actual interest acquired and lease obligations; a leasehold is not simply an owned building with every ground-rent payment expensed. Lease extensions, freehold acquisition, acquisition taxes and development costs require current recognition/tax analysis.
 
-**The test:** Would this expenditure restore the property to its condition when acquired (repair) or make it BETTER than when acquired (improvement)? The country skill provides specific rules and case law references.
+Retain furniture and operational assets in the register: white goods; beds/mattresses; sofas and seating; dining furniture; curtains/blinds; televisions/electronics; garden furniture; smart locks/key safes; guest consumables/welcome packs; cleaning equipment; exterior cameras and hot tubs/saunas. Record actual cost, use, availability, residual value, life/method and disposals. Guest privacy and safety requirements remain separate legal checks, not an accounting conclusion.
 
-**Initial repairs (newly acquired property):** Repairs needed to bring a newly purchased property to lettable condition are generally CAPITAL (not deductible as revenue expense) because they reflect the condition factored into the purchase price.
+For brands, trademarks, booking domains, architectural plans/designs, HMO/selective/short-stay permissions, planning fees, property-management software, smart-home systems and channel managers, identify rights, service period and related asset/project. No automatic trademark-registration life, domain dollar cutoff, current licence deduction or generic-plan expense is established. Examples of services to investigate include Guesty, Hostaway, Lodgify, PriceLabs and Beyond Pricing; a vendor name is not a recognition rule.
+## Asset, lease and intellectual-property checks
 
-### Property management and letting costs
+Do not copy the former asset-price and useful-life ranges into an accounting or tax register. Use actual acquisition cost and the applicable framework; review private use, ownership, finance, impairment and disposal separately. For a lessee applying IFRS 16 there is no general exemption merely because the business is a sole practitioner or the lease is called operating. Specific short-term and low-value exemptions have conditions. [AASB 16, paragraphs 5-8 and 22](https://standards.aasb.gov.au/aasb-16-nov-2022).
 
-- Letting agent fees (typically 8–15% of rent for full management)
-- Tenant finding fees / advertising
-- Inventory clerk fees
-- Property inspections
-- Legal costs for new tenancies (lease drafting, references)
-- Eviction costs (legal and court fees)
-- Deposit protection scheme fees
+Research costs and internally generated goodwill/brands are not automatically capitalisable. Development requires all recognition criteria, including technical feasibility, intent, ability to use/sell, probable benefits, resources and reliable cost measurement. Once the criteria are met, qualifying subsequent development costs are not excluded merely because the developer is self-employed. Previously expensed expenditure is not reinstated as an asset later. Finite-life intangibles are amortised from availability for use using a supported life and pattern; indefinite-life intangibles are not amortised and require impairment review. Purchased rights, service subscriptions and business-combination goodwill require separate classification. [AASB 138, paragraphs 48-71 and 97-110](https://standards.aasb.gov.au/aasb-138-dec-2022).
 
-### Insurance
+For an IFRS business combination, goodwill is not routinely amortised; it is carried subject to impairment, with annual testing. Separately identified finite-life customer lists or other intangibles can have amortisation. Other local GAAP and tax amortisation may differ. Do not post tax relief or a generic goodwill amortisation period without identifying the regime. [AASB 3, paragraph B63](https://standards.aasb.gov.au/aasb-3-dec-2022-0); [AASB 136, paragraphs 9-10 and 90](https://standards.aasb.gov.au/aasb-136-jan-2026-0).
 
-- Buildings insurance (mandatory if mortgaged)
-- Landlord liability insurance
-- Contents insurance (furnished properties)
-- Rent guarantee insurance
-- Legal expenses insurance
-- Short-term rental specific insurance (Airbnb host protection is NOT insurance — separate policy needed)
 
-### Maintenance and running costs
+## Bank-statement investigation prompts
 
-- Ground rent and service charges (if leasehold)
-- Council tax / property tax during void periods (landlord liable when empty)
-- Utilities during void periods
-- Garden maintenance, cleaning between tenancies
-- Safety certificates and inspections (gas safety, electrical, EPC/energy rating)
-- Pest control, lock changes
-- Accountancy fees for rental accounts
-- Travel to property for management purposes
-
-### Furnishings (furnished properties)
-
-- Wear and tear allowance (flat percentage) — available in some jurisdictions as alternative to actual costs
-- Replacement furniture relief — deducting cost of replacing furnished items (not initial furnishing)
-- Initial furnishing of a property: capital expenditure (not immediately deductible)
-- White goods (washing machine, fridge): replace like-for-like = deductible; new addition = capital
-
----
-
-## Section 4 — Common Bank Statement Patterns
+These legacy descriptions are search hints, not evidence that a transaction is business income, deductible expenditure or a particular tax supply. Obtain the invoice, contract, settlement and counterparty. Transfers can be loans, refunds, owner funds or money held for someone else. A vendor name alone proves none of those decisions. The lists do not claim current vendor prices or platform contracts.
 
 ### Rental income (inflows)
 
-| Statement description pattern | Likely classification |
+| Statement description pattern | Category to investigate |
 |---|---|
 | TENANT NAME + STANDING ORDER/DIRECT DEBIT | Rental income (long-term) |
 | AIRBNB, AIRBNB PAYMENTS | Short-term rental income |
@@ -178,11 +149,11 @@ Property investors generate income from real estate assets through rental income
 | [LETTING AGENT NAME] | Net rental income (after agent fees deducted) |
 | OPENRENT, RIGHTMOVE | Tenant payment via platform |
 | HOUSING BENEFIT / LHA | Government housing payment |
-| DEPOSIT RETURN | NOT income — return of deposit held |
+| DEPOSIT RETURN | NOT income :  return of deposit held |
 
 ### Mortgage and finance (outflows)
 
-| Statement description pattern | Likely classification |
+| Statement description pattern | Category to investigate |
 |---|---|
 | [MORTGAGE LENDER] DD/STANDING ORDER | Mortgage payment (split: interest = expense, capital = not expense) |
 | NATIONWIDE, HALIFAX, BARCLAYS MTG | Mortgage payment |
@@ -192,20 +163,20 @@ Property investors generate income from real estate assets through rental income
 
 ### Property management (outflows)
 
-| Statement description pattern | Likely classification |
+| Statement description pattern | Category to investigate |
 |---|---|
 | [LETTING AGENT] MANAGEMENT FEE | Property management expense |
 | BRITISH GAS, EDF, UTILITIES | Utilities (void period or included in rent) |
 | COUNCIL TAX, PROPERTY TAX | Property tax (void period) |
 | [INSURANCE COMPANY] BUILDINGS/LANDLORD | Insurance expense |
 | GAS SAFE, ELECTRICAL CERT, EPC | Safety compliance expense |
-| PLUMBER, ELECTRICIAN, BUILDER | Repairs (or improvement — verify nature of work) |
+| PLUMBER, ELECTRICIAN, BUILDER | Repairs (or improvement :  verify nature of work) |
 | B&Q, HOMEBASE, HOME DEPOT, SCREWFIX | Repair materials (verify not improvement) |
 | CLEANER, CLEANING SERVICE | Cleaning expense (between tenancies or STR turnover) |
 
 ### Short-term rental specific (outflows)
 
-| Statement description pattern | Likely classification |
+| Statement description pattern | Category to investigate |
 |---|---|
 | AIRBNB SERVICE FEE | Platform commission (cost of sale) |
 | LINEN SERVICE, TOWEL HIRE | Laundry/linen expense |
@@ -214,246 +185,74 @@ Property investors generate income from real estate assets through rental income
 | PHOTOGRAPHY | Listing photography (marketing) |
 | DYNAMIC PRICING TOOL | Revenue management software |
 
----
+## Platform, withholding and foreign-currency reporting
 
-## Section 5 — Equipment & Assets
+Identify the legal payer and contract separately for every platform or processor. Reconcile gross entitled consideration, platform fees, refunds, taxes withheld, rolling reserves, exchange conversion and settlements. A platform statement can include non-revenue transfers; a tax report can report gross payments that differ from accounting income. Check refunds, duplicated forms and the actual issuing entity. Do not assume every named platform issues the same tax form.
 
-### The property itself
+The former US Form 1099-K shorthand is not a taxability threshold. Current IRS guidance distinguishes payment-card transactions from third-party settlement organisations, notes that a form may be issued below the statutory reporting threshold, and explains that a form alone does not decide taxable income. Retain the reporting question in the current US job; this global method does not introduce a new US return computation. [IRS, Understanding Form 1099-K](https://www.irs.gov/businesses/understanding-your-form-1099-k).
 
-| Component | Treatment | Useful life | Notes |
-|---|---|---|---|
-| Land | NEVER depreciated | N/A | Land has indefinite life |
-| Building structure | Depreciate (where permitted) or claim capital allowances | 25–50 years | Country skill determines if/how |
-| Integral features (heating, electrical, plumbing) | Depreciate or capital allowances | 15–25 years | If separated from building cost |
-| Fixtures (kitchens, bathrooms) | Depreciate or capital allowances | 10–15 years | If material and separately identifiable |
+For an international payment, establish the income's character, source, work location, beneficial recipient, withholding documentation and any treaty claim. A US payer does not make every payment a US-source royalty. A platform's withholding is not automatically the final liability, and a credit requires its own evidence. Record foreign-currency recognition at the applicable transaction date and review the framework's translation and settlement requirements; invoice date is not universal where performance occurred earlier. Exact exchange-rate methods, treaty rates and withholding forms remain country-specific items below.
 
-**Important:** Many jurisdictions do NOT permit depreciation of residential property buildings (e.g., UK). The country skill specifies whether depreciation, capital allowances, or neither applies to each component.
 
-### Furnishings and contents (furnished lets)
+## United Kingdom: current property boundaries
 
-| Asset | Typical cost range | Useful life | Notes |
-|---|---|---|---|
-| Kitchen white goods | $500–$3,000 per unit | 5–10 years | Fridge, cooker, washing machine |
-| Beds and mattresses | $200–$2,000 per unit | 5–8 years | Per bedroom |
-| Sofas and seating | $500–$3,000 per unit | 7–10 years | Living area |
-| Dining furniture | $200–$1,500 | 10 years | Table and chairs |
-| Curtains/blinds | $200–$1,000 per unit | 5–7 years | Per room |
-| TV and electronics | $200–$1,000 | 3–5 years | If provided |
-| Garden furniture | $200–$1,000 | 5 years | If outdoor space |
+### Holiday letting
 
-### Short-term rental specific equipment
+The furnished holiday letting tax regime ceased for tax years beginning **on or after 6 April 2025** for Income Tax/CGT and **1 April 2025** for Corporation Tax/chargeable gains. Do not use the former special FHL treatment as a current 2026 entitlement. Review the ordinary property rules and any actual transition for interest, capital allowances, losses, gains and pension-earnings treatment. VAT and the separate question of whether an activity is a trade are not decided solely by this repeal. [HMRC PIM4165](https://www.gov.uk/hmrc-internal-manuals/property-income-manual/pim4165).
 
-| Asset | Typical cost range | Useful life | Notes |
-|---|---|---|---|
-| Smart locks / key safes | $100–$500 | 5 years | Guest access |
-| Welcome packs / toiletries | Expense | N/A | Consumable per guest |
-| Cleaning equipment | $100–$500 | 3–5 years | If cleaning in-house |
-| Security cameras (exterior) | $200–$800 | 5 years | Must comply with privacy laws |
-| Hot tub / sauna | $3,000–$15,000 | 10 years | Premium STR |
+### Repair versus capital
 
-### Lease vs. buy (for property itself)
+HMRC says that a repair soon after purchase is not automatically capital. Relevant additional factors include unusable/dilapidated condition, a substantial price reduction for that state or a reinstatement commitment. Normal wear reflected in the price does not itself deny a repair deduction. Modern equivalent materials and mixed projects need factual analysis; obtaining a newer product does not automatically mean a capital improvement. Keep the survey, purchase terms and works evidence. [HMRC PIM2030](https://www.gov.uk/hmrc-internal-manuals/property-income-manual/pim2030).
 
-Property investors typically OWN their assets (that is the business model). However:
-- Leasehold properties: the lease is the asset; ground rent and service charges are expenses
-- Lease extensions: capital expenditure (extends the asset life)
-- Freehold purchase of leasehold: capital expenditure
+### Residential finance costs
 
----
+For a relevant individual property business, the dwelling-related finance-cost restriction and basic-rate tax reducer have conditions and limits, including the separate business, carried amounts, profits and adjusted income. Do not deduct every mortgage payment or calculate relief from the interest figure alone. Company, trust and partnership facts require the applicable rules, not a blanket comparison. This global file does not resolve a full personal-tax computation. [HMRC PIM2058, ITTOIA sections 272A-274C](https://www.gov.uk/hmrc-internal-manuals/property-income-manual/pim2058).
 
-## Section 6 — IP & Licensing
+### Rent a Room
 
-### Property-related IP is minimal but exists
+For qualifying furnished accommodation in the home, the GOV.UK overview gives a yearly threshold of **£7,500**, halved to **£3,750 where the income is shared**. Establish actual eligibility and receipt categories before applying it; converted separate flats are excluded. Above the threshold the return and election/ordinary-income-and-expenses choices matter, not automatic exemption of every receipt. Obtain the detailed current helpsheet for the actual election and computation rather than transferring this limit to a whole investment property. [GOV.UK Rent a Room](https://www.gov.uk/rent-room-in-your-home/the-rent-a-room-scheme).
 
-**Brand names for STR businesses:**
-- If operating multiple STR units under a brand, trademark registration may be warranted
-- Capitalize and amortize over registration period (10 years)
-- Domain names for booking websites: expense if <$100, capitalize if premium purchase
+## Other country, VAT and reporting handoffs
 
-**Architectural plans and designs:**
-- Developed for specific properties: capitalize as part of the property improvement cost
-- Generic plans purchased: expense
+- **EU and UK:** separate long residential lets, commercial land, short-stay accommodation, services and any option to tax. Exemption, taxable registration, input recovery and partial exemption require the actual supplies and current law. Do not assume that every residential landlord is prohibited from registration or that every platform fee's VAT can be recovered.
+- **Australia, Canada and other countries:** obtain current residential/commercial/short-stay GST/VAT treatment, expense and capital rules, joint ownership and disposal tax before applying local schedules. The UK's FHL repeal is not another country's change.
+- **US:** retain federal rental/depreciation, passive-activity, state/local occupancy, platform-reporting and sales-tax questions in the existing US jobs. No US property rewrite or unsupported number is introduced here.
 
-**Licensing requirements:**
-- HMO license fees: expense in the period (annual or per-term)
-- Selective licensing schemes: expense over license period
-- Short-term rental licenses (where required): expense over license period
-- Planning permission fees: capitalize as part of the related capital work
+For Airbnb, Booking.com and direct bookings, reconcile by property, stay, legal supplier and channel: charges, cleaning/service amounts, refunds, cancellations, host fees, platform-collected taxes, deposits, reserves and bank settlement. The platform's guest service fee may be its own revenue, not the host's. Occupancy taxes require the actual legal taxpayer/collector; they are not always pass-through amounts outside the host's accounts.
 
-### Software and systems
+Retain platform annual statements, any DAC7/local authority reporting and payment-processor forms. Do not use the prior Form 1099-K threshold or assume that a named booking provider never issues a report. Tax-form gross amounts and host settlement can differ. Check reverse-charge/imported-service VAT on foreign platform fees and entitlement to any input credit. Direct cash or bank receipts still need records and the actual tax treatment; absence of a platform report is not evidence of exemption. Prevent duplicate recognition of a booking, channel-manager entry and payout.
 
-- Property management software (Guesty, Hostaway, Lodgify): operating expense subscription
-- Accounting software: operating expense
-- Dynamic pricing tools (PriceLabs, Beyond Pricing): operating expense
-- Channel managers (connecting to Airbnb + Booking.com): operating expense
-- Smart home systems (if installed for STR management): capitalize if above threshold, otherwise expense
+## Insurance, portfolio decisions and exit
 
----
+Obtain actual policy coverage and claims documents rather than the former premiums, rent-cover durations and commission ranges. A payout replacing rent and compensation for destroyed capital can differ; determine the receipt's legal character and accounting separately from the repair cost. Review landlord associations such as NLA/RLA/NRLA, training and networking costs under current local law without a blanket deduction.
 
-## Section 7 — Platform Income Reporting
+Compare personal/co-owned, partnership, company/SPV and other structures using the actual profits, borrowing, residence, retention, ownership, liability and succession plans. A portfolio count does not make incorporation automatically optimal. Model tax on rental profit, extracting funds, financing, transfers and eventual exit. Transferring existing property can create disposal/transfer-tax, financing and legal costs, but neither “always transfer-taxable” nor “beneficial only for new purchases” is a universal rule.
 
-### Airbnb reporting
+Set management, software, agent and staffing needs from actual property/transaction complexity and capacity. The former property-count and revenue milestones were not statutory thresholds. Distinguish lender portfolio/affordability criteria from tax law. Monitor loan-to-value, fixed/variable funding terms, refinancing costs, cash buffers and use of released capital without implying a lending recommendation.
 
-**Airbnb 1099-K (US):** Issued if gross earnings exceed $600. Reports total payouts to host (gross booking value minus Airbnb service fee, minus Airbnb-collected taxes).
+Plan sales, shares versus property disposals, reliefs, exemptions and inheritance under the current owner/country rules. Phasing sales or incorporating just before exit does not guarantee lower tax. Preserve acquisition and allowable capital-cost evidence; do not add an accounting expense to disposal tax base without the actual rule or claim the same expenditure twice.
 
-**Airbnb annual earnings summary:** Available in all countries — shows total gross earnings, host service fees, cleaning fees earned, platform adjustments. Use this for reconciliation.
+## When to refuse or refer
 
-**Airbnb tax reporting to authorities:**
-- Many jurisdictions require Airbnb to report host earnings to tax authorities (DAC7 in EU, state-by-state in US)
-- Airbnb collects and remits occupancy taxes in many jurisdictions — this is NOT the host's income or expense (pass-through)
-- Where Airbnb collects VAT/GST on service fees, the host claims input VAT on the fee (if VAT-registered)
+Do not certify a deposit's ownership, tenant law, safety, planning or financing compliance from a bank statement. Refuse invented repair allocations, unsupported valuations, private-cost deductions or a company recommendation based on portfolio size alone. Refer material valuation, lease classification, cross-border registration, joint ownership, restructuring and disposal questions with the actual contracts and source records before filing or acting.
+## Sources
 
-### Booking.com reporting
+| Official source | Read date | Read scope |
+| --- | --- | --- |
+| [AASB 15, adopted IFRS revenue text](https://standards.aasb.gov.au/aasb-15-dec-2022) | 2026-11-14 | Read for contract/performance, over-time criteria, variable consideration, principal/agent and contract balances; not US GAAP or cash-basis tax rules |
+| [AASB 138, adopted IAS 38 text](https://standards.aasb.gov.au/aasb-138-dec-2022) | 2026-11-14 | Read for recognition, research/development, internally generated goodwill/brands, later costs and finite/indefinite lives |
+| [AASB 16, adopted IFRS 16 text](https://standards.aasb.gov.au/aasb-16-nov-2022) | 2026-11-14 | Read for lessee recognition and short-term/low-value exemptions, not a sole-practitioner size exemption |
+| [AASB 3, current July 2026 compilation](https://standards.aasb.gov.au/aasb-3-dec-2022-0) | 2026-11-14 | Read for paragraph B63 goodwill measurement versus separately identified intangibles |
+| [AASB 136, current July 2026 compilation](https://standards.aasb.gov.au/aasb-136-jan-2026-0) | 2026-11-14 | Read for paragraphs 9-10 and 90 on impairment and annual goodwill testing |
+| [HMRC self-employed expenses](https://www.gov.uk/expenses-if-youre-self-employed) | 2026-11-14 | Read for sole-trader/individual-partnership scope, business expenses and private allocation |
+| [HMRC marketing and entertainment](https://www.gov.uk/expenses-if-youre-self-employed/marketing-entertainment-subscriptions) | 2026-11-14 | Read for advertising, gifts, subscriptions and client-entertaining restrictions; not a global deduction percentage |
+| [HMRC legal and financial costs](https://www.gov.uk/expenses-if-youre-self-employed/legal-financial) | 2026-11-14 | Read for insurance/professional costs, own Self Assessment distinction, capital expenditure, fines, finance and cash-basis bad debts |
+| [HMRC training courses](https://www.gov.uk/expenses-if-youre-self-employed/training-courses) | 2026-11-14 | Read for existing-business skills, technology and administrative development versus a new unrelated business |
+| [IRS Form 1099-K guidance](https://www.irs.gov/businesses/understanding-your-form-1099-k) | 2026-11-14 | Read for payment-card/TPSO reporting distinction and why receipt of a form does not determine taxable income; no US-country rewrite here |
+| [AASB 140, adopted IAS 40 text](https://standards.aasb.gov.au/aasb-140-dec-2022) | 2026-11-14 | Read for paragraphs 5-15 and 30-58: property classification, models, value changes, integral items and changes of use |
+| [HMRC PIM2030](https://www.gov.uk/hmrc-internal-manuals/property-income-manual/pim2030) | 2026-11-14 | Read for capital/repair distinction, modern equivalents, mixed work and repairs soon after acquisition |
+| [HMRC PIM4165](https://www.gov.uk/hmrc-internal-manuals/property-income-manual/pim4165) | 2026-11-14 | Read for FHL repeal dates and affected relief categories; detailed transitions not resolved here |
+| [HMRC PIM2058](https://www.gov.uk/hmrc-internal-manuals/property-income-manual/pim2058) | 2026-11-14 | Read for residential finance restriction and reducer limits/business separation, not a whole personal-tax computation |
+| [GOV.UK Rent a Room](https://www.gov.uk/rent-room-in-your-home/the-rent-a-room-scheme) | 2026-11-14 | Read for the ordinary/shared threshold, eligibility boundary and above-threshold return/choice; complete election computation remains a country job |
 
-- Booking.com operates differently: guest pays host directly (in most cases), Booking.com invoices host for commission
-- Revenue = full guest payment received; Booking.com commission invoice = cost of sale
-- Booking.com issues invoices (not 1099s in US — host reports full income received from guests)
-- VAT on Booking.com commission: check if reverse charge applies (B2B cross-border service)
-
-### Multi-platform reconciliation
-
-When listing on multiple platforms simultaneously:
-- Maintain per-property, per-platform revenue schedule
-- Reconcile: platform dashboard earnings → bank deposits → accounting records
-- Beware double-booking risk: channel manager should prevent, but verify no duplicate revenue
-- Total occupancy rate: aggregate across all platforms plus direct bookings
-
-### Direct booking income
-
-- Payments received directly (bank transfer, cash, own website booking)
-- Still taxable — no platform reporting doesn't mean no tax obligation
-- Own website payment processor (Stripe, PayPal): may issue tax forms above thresholds
-- Cash payments: MUST be recorded — not reporting cash rental income is tax evasion
-
----
-
-## Section 8 — Industry Tax Traps
-
-### Trap 1: Capital vs. revenue repair misclassification
-
-The most common and highest-value error in property accounting. Claiming a £15,000 kitchen renovation as a "repair" when it is actually an improvement overstates deductions and understates taxable profit. Apply the "condition at acquisition" test rigorously. When in doubt, treat as capital (conservative default).
-
-### Trap 2: Mortgage interest treated as fully deductible when restricted
-
-In jurisdictions with interest restriction (e.g., UK Section 24 for individuals), mortgage interest is NOT a deductible expense against rental income. It instead generates a basic rate tax credit. Applying full deduction understates the tax liability. Check the country skill for current restriction rules.
-
-### Trap 3: Failing to split mortgage payment into interest and capital
-
-The bank takes one monthly payment. Only the INTEREST portion is potentially deductible. The capital repayment is NOT an expense — it reduces the mortgage liability. Common error: deducting the entire mortgage payment as an expense.
-
-### Trap 4: Deposit not treated as liability
-
-Tenant deposits received are NOT income. They are held on trust (literally, in deposit protection schemes in many jurisdictions). Recording as income overstates revenue. Only the portion retained at tenancy end (for legitimate deductions) becomes income.
-
-### Trap 5: Personal use of investment property
-
-If the investor uses the property personally for any period (holidays, between tenants), expenses must be apportioned. Days of personal use reduce the deductible proportion of annual costs. For furnished holiday lets with special tax status, exceeding personal use limits can disqualify the special treatment.
-
-### Trap 6: Initial repair costs deducted as revenue
-
-Costs to bring a newly purchased property to lettable condition are CAPITAL. The property was purchased in that condition (reflected in the price). These costs form part of the property's cost base for future capital gains calculation. Deducting them as revenue expenses is incorrect.
-
-### Trap 7: Forgetting to declare Airbnb/STR income
-
-Platform income is reported to tax authorities in most jurisdictions. The "sharing economy" exemption (e.g., UK Rent-a-Room relief for £7,500) has specific conditions — it only applies if the let room is in the investor's main home and the threshold is not exceeded. A separate investment property on Airbnb does NOT qualify for Rent-a-Room relief.
-
-### Trap 8: CGT base cost not including allowable capital expenditure
-
-When eventually selling an investment property, the base cost for capital gains includes: purchase price + purchase costs (stamp duty, legal fees) + capital improvements made during ownership. If improvements were not tracked because they were incorrectly expensed as repairs, the investor loses the CGT benefit permanently.
-
----
-
-## Section 9 — Insurance & Professional Costs
-
-### Buildings insurance
-
-- Required by mortgage lenders, highly advisable regardless
-- Covers structural damage (fire, flood, storm, subsidence)
-- Cost range: $200–$2,000/year per property depending on value and risk
-- Fully deductible against rental income
-
-### Landlord liability insurance
-
-- Covers injury to tenants or visitors on the property
-- Essential for all rental properties
-- Often bundled with buildings insurance
-- Deductible as operating expense
-
-### Rent guarantee insurance
-
-- Covers lost rent if tenant defaults
-- Typically covers 6–12 months' rent plus legal costs for eviction
-- Cost range: 3–5% of annual rent
-- Deductible as operating expense
-- Payout received = taxable rental income (it replaces rent)
-
-### Legal expenses insurance
-
-- Covers legal costs for tenant disputes, eviction proceedings, lease enforcement
-- Often bundled with landlord insurance
-- Deductible as operating expense
-
-### Professional services
-
-- Accountant fees (rental accounts preparation, tax returns) — deductible
-- Solicitor fees for lease drafting, tenant disputes — deductible
-- Surveyor fees (condition reports, valuations for remortgage) — deductible (revenue) or capital (acquisition)
-- Mortgage broker fees — finance cost (capitalize with loan or expense per country rules)
-- Tax planning advice — deductible
-
-### Memberships and education
-
-- Landlord association membership (NLA, RLA, NRLA in UK; local equivalents)
-- Property investor networking groups
-- Training courses on property investment
-- All deductible as business expenses if maintaining existing property business skills
-
----
-
-## Section 10 — Scaling Triggers
-
-### When to incorporate (individual to company/SPV)
-
-Consider incorporation when:
-- Mortgage interest restriction (country-specific) makes individual ownership tax-inefficient
-- Building a portfolio of 4+ properties (portfolio landlord rules may apply)
-- Higher-rate taxpayer with rental profits pushing into top bands
-- Succession planning (transferring company shares vs. transferring property)
-- Retained earnings strategy (reinvesting profits into more properties at lower tax rate)
-
-**Warning:** Transferring existing individually-owned properties to a company triggers stamp duty/transfer tax and capital gains tax in most jurisdictions. Incorporation is usually beneficial for NEW purchases, not transfers of existing portfolio.
-
-### When to register for VAT/GST
-
-- Residential letting is typically EXEMPT from VAT (no registration required or possible)
-- Commercial letting: may be exempt OR the landlord can opt to tax (election to charge VAT)
-- Short-term rental (furnished holiday lets): may be standard-rated (taxable) in some jurisdictions
-- Check country skill for specific VAT treatment of each property type
-- If taxable STR revenue exceeds the VAT threshold: mandatory registration
-
-### Portfolio growth triggers
-
-- **1 property:** Manual management feasible; spreadsheet accounting
-- **2–3 properties:** Consider letting agent for at least one; dedicated bank account
-- **4–6 properties:** Portfolio landlord rules may apply (stricter mortgage criteria); need proper accounting software
-- **7–10 properties:** Full-time management consideration; employ or contract property manager
-- **10+ properties:** Company structure likely optimal; team needed; professional portfolio management
-
-### Financing decisions
-
-- **Each new purchase:** New mortgage application or remortgage existing (portfolio affects affordability)
-- **Interest rate changes:** Review whether fixed or variable is appropriate; refinancing triggers
-- **LTV management:** Monitor loan-to-value across portfolio; overleveraging risk
-- **Capital release:** Remortgaging to release equity for next purchase — tax implications of purpose of new borrowing
-
-### Exit planning
-
-- **Hold period:** Most property investments are long-term (10+ years). Plan for CGT on disposal.
-- **Phased exit:** Selling one property per tax year to use annual CGT exemptions
-- **Incorporation before exit:** May allow lower tax on eventual sale of company shares vs. property directly
-- **Inheritance planning:** Property in a company passes as shares (potentially easier); individual property may qualify for specific reliefs
-
----
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
+Not yet confirmed: Exact current deposit-protection/trust and interest rules; tax character/timing of premiums, dilapidations, break fees, wayleaves, insurance and occupancy-tax amounts; FHL transition/loss/allowance details; complete Rent a Room election and receipt rules; detailed finance-cost reducer computation and law/manual reconciliation where needed; non-UK repair, depreciation and replacement-furnishing relief; land/PPE limited-life exceptions; actual platform/agent fee rates, settlement methods, reporting issuers and tax collection; current HMO/selective/short-stay licences, safety/privacy and lender portfolio criteria. Historic wear-and-tear, component-life and fixed portfolio thresholds are not adopted as current law. Exact current country deduction restrictions, VAT/GST/sales-tax thresholds, cash-basis eligibility and recognition adjustments, capital allowances, withholding/treaty/source rules, foreign-currency methodology, worker status, pension relief and incorporation consequences must be obtained from the relevant country job before a computation. The former equipment prices/useful-life ranges, platform fee/payout schedules, mandatory insurance/CPD amounts, market margin estimates and management revenue/headcount/hour thresholds had no current official support and are not retained as rules. Platform names and bank descriptions remain investigation hints only.
