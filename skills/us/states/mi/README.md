@@ -5,18 +5,22 @@ not_applicable:
   TP: no Michigan transfer pricing documentation regime; related-party rules sit in the corporate skill and the federal skills
   XB: reciprocity states and residency are in mi-income-tax; part-year and nonresident returns are out of scope
 covered_by:
+  IT-IND: mi-income-tax
+  IT-CORP: mi-corporate-income-tax
+  VAT: mi-sales-tax
   SC: mi-payroll
   PR: mi-payroll
 partial:
-  IT-IND: "2026 MI-1040, Schedule 1, Form 4884 and MI-1040CR not yet published; homestead credit limits and some exemptions are 2025 figures; part-year and nonresident returns not covered"
-  IT-CORP: "corporate income tax skill is being rewritten for 2026 in a separate change"
-  VAT: "sales and use tax skill is being rewritten for 2026 in a separate change"
-  SC: "payroll and unemployment insurance skill is being rewritten for 2026 in a separate change"
+  IT-IND: "2026 MI-1040, Schedule 1, Form 4884 and MI-1040CR not yet published, so 2025 line numbers are used; homestead credit limits and some special exemptions are 2025-2026 filing cycle figures; Detroit uses the 2025 forms; part-year and nonresident returns not covered"
+  IT-CORP: "2026 Small Business Alternative Credit income limit (Form 4893) not yet published; Flow-Through Entity Tax figures and services sourcing not confirmed"
+  VAT: "remote seller threshold, item-by-item taxability, filing frequency thresholds and penalty rates not confirmed"
+  SC: "unemployment insurance report due dates, late penalties and registration thresholds on MiUI not confirmed"
+  PR: "SUW filing frequency thresholds and late penalty and interest rates not confirmed"
 ---
 
 # Michigan (US-MI): tax pack
 
-Calendar tax year for individuals. Authority: the Michigan Department of Treasury (michigan.gov/treasury and michigan.gov/taxes), which also administers the City of Detroit income tax. Currency: US dollars. Michigan taxes individuals at a flat 4.25% for 2026 (Treasury notice of 15 April 2026; MCL 206.51), after a $5,900 personal exemption per person (2026 Withholding Guide). From 2026 every retiree may subtract retirement benefits up to $67,610 single or $135,220 joint (Public Act 4 of 2023, fully phased in). 2025 PA 24 decoupled Michigan from the federal 2025 changes to bonus depreciation, section 179, research expensing and the business interest limit, and added Michigan deductions for federally claimed qualified tips and overtime for 2026 to 2028. Michigan has reciprocity with Illinois, Indiana, Kentucky, Minnesota, Ohio and Wisconsin. A US state: federal income tax, FICA and FUTA sit on top of every domain here.
+Calendar tax year for individuals. Authority: the Michigan Department of Treasury (michigan.gov/treasury and michigan.gov/taxes), which also administers the City of Detroit income tax. Currency: US dollars. Michigan taxes individuals at a flat 4.25% for 2026 (Treasury notice of 15 April 2026; MCL 206.51), after a $5,900 personal exemption per person (2026 Withholding Guide). From 2026 every retiree may subtract retirement benefits up to $67,610 single or $135,220 joint (Public Act 4 of 2023, fully phased in). 2025 PA 24 decoupled Michigan from the federal 2025 changes to bonus depreciation, section 179, research expensing and the business interest limit, and added Michigan deductions for federally claimed qualified tips and overtime for 2026 to 2028. C corporations pay the corporate income tax at 6% of apportioned business income (MCL 206.623, see `mi-corporate-income-tax`), and retail sales of tangible personal property bear the 6% sales tax (see `mi-sales-tax`). Michigan has reciprocity with Illinois, Indiana, Kentucky, Minnesota, Ohio and Wisconsin. A US state: federal income tax, FICA and FUTA sit on top of every domain here.
 
 **City income taxes.** Michigan cities may levy an income tax under the City Income Tax Act. Detroit (2.4% resident, 1.2% nonresident, $600 exemption) is covered by `mi-detroit-individual-return`; other cities are out of scope.
 
@@ -30,10 +34,10 @@ Calendar tax year for individuals. Authority: the Michigan Department of Treasur
 | IT-IND, estimated tax | mi-estimated-tax | checked against the law |
 | IT-IND, City of Detroit individual return | mi-detroit-individual-return | checked against the law (2025 forms) |
 | IT-IND, return assembly (router) | mi-return-assembly | checked against the law |
-| IT-CORP, corporate income tax | mi-corporate-income-tax | being rewritten in a separate change |
-| VAT / sales and use tax | mi-sales-tax | being rewritten in a separate change |
-| SC, unemployment insurance | mi-payroll | being rewritten in a separate change |
-| PR, payroll withholding | mi-payroll | being rewritten in a separate change |
+| IT-CORP, corporate income tax | mi-corporate-income-tax | checked against the law (partial) |
+| VAT / sales and use tax | mi-sales-tax | checked against the law (partial) |
+| SC, unemployment insurance | mi-payroll | checked against the law (partial) |
+| PR, payroll withholding | mi-payroll | checked against the law (partial) |
 | TP, transfer pricing | not applicable, see above | |
 | XB, cross-border | not applicable as a separate skill, see above | |
 
