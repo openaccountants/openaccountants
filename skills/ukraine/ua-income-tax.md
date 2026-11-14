@@ -1,10 +1,11 @@
 ---
 name: ua-income-tax
 description: "Ukrainian personal income tax (податок на доходи фізичних осіб, ПДФО) and the 5% military levy for every individual, tax year 2026, under section IV of the Tax Code of Ukraine. Covers residents and non-residents; salary and civil-law fees withheld by tax agents; the tax social benefit; interest, dividends (5% and 9%), investment profit, rent, property and car sales, gifts and inheritance; foreign income and foreign tax credit; sole proprietors on the general system (net profit, deductible expenses, depreciation, quarterly advances); independent professionals; the annual declaration due 1 May, payment by 1 August, the tax discount and refunds; penalties. Trigger on: Ukraine income tax, ПДФО, декларація про майновий стан і доходи, податкова знижка, ФОП загальна система, military levy Ukraine. Out of scope: single tax (ua-single-tax), crypto (ua-crypto-tax), ЄСВ (ua-social-contributions), employer payroll (ua-payroll), residence and treaties (ua-cross-border), companies (ua-corporate-income-tax)."
-version: 1.1
+version: 1.2
+type: computation
 jurisdiction: UA
 tax_year: 2026
-last_updated: 2026-10-30
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
@@ -36,27 +37,27 @@ There are no bands. Each kind of income has one flat rate.
 | Military levy for individuals taxed under section IV | 5% of the income in art. 163 | 2026 | https://zakon.rada.gov.ua/laws/show/2755-17 (section XX, subs. 10, point 16-1, sub-point 1.3(1)) |
 | Military levy after martial law | 1.5%, from 1 January of the year after the third calendar year after martial law ends | future | same, sub-point 1.3 |
 | Military levy on pay of service members | 1.5% (sub-point 1.3(4)); their money allowance is exempt while martial law lasts | 2026 | same, sub-points 1.3(4) and 1.7 |
-| Passive income (interest, investment profit, royalties) | 18% | 2026 | art. 167.5.1 |
-| Dividends from a Ukrainian company that pays corporate income tax | 5% | 2026 | art. 167.5.2 |
-| Dividends from non-residents, collective investment institutions and companies that do not pay corporate income tax | 9% (half of 18%) | 2026 | art. 167.5.4 |
-| Sale of one home or qualifying land plot a year, owned more than 3 years | 0% (not taxed) | 2026 | art. 172.1 |
-| Sale of a second art. 172.1 property in the year, or of the first property in the year that is not on the art. 172.1 list | 5% | 2026 | art. 172.2, 167.2 |
-| Sale of a third and further art. 172.1 property in the year, a second and further property not on that list, or unfinished construction and off-plan property rights | 18%; 5% where that property was inherited | 2026 | art. 172.2, 167.1, 167.2 |
-| Sale of movable property | 5%; one car, motorcycle or moped a year is not taxed | 2026 | art. 173.1, 173.2 |
-| Inheritance or gift from a family member of the 1st or 2nd degree | 0% | 2026 | art. 174.2.1, 174.6 |
-| Inheritance or gift from anyone else | 5% | 2026 | art. 174.2.2, 174.6 |
-| Inheritance or gift from a non-resident, or received by a non-resident | 18% | 2026 | art. 174.2.3 |
-| Tax social benefit (ПСП), basic | UAH 1,664 a month (50% of UAH 3,328) | 2026 | art. 169.1.1; Law 4695-IX art. 7 |
-| ПСП for a parent of two or more children under 18 | 100% of the basic amount (UAH 1,664) per child | 2026 | art. 169.1.2 |
-| ПСП, 150% group (single parent per child, parent of a disabled child, students, Chernobyl categories 1 and 2, others listed) | UAH 2,496 | 2026 | art. 169.1.3 |
-| ПСП, 200% group (categories listed in art. 169.1.4) | UAH 3,328 | 2026 | art. 169.1.4 |
-| ПСП income limit: monthly salary not above | UAH 4,660 (3,328 x 1.4 = 4,659.20, rounded to the nearest UAH 10); times the number of children for the child benefits | 2026 | art. 169.4.1 |
-| Investment profit: sales proceeds a year not above | UAH 4,660 are not taxed | 2026 | art. 170.2.8 "а" |
-| Tax discount: donations to non-profit organisations | up to 4% of total taxable income of the year | 2026 | art. 166.3.2 |
-| Tax discount: home rent paid by an internally displaced person, a combat participant or a person disabled by the war | up to 30 minimum wages a year, UAH 259,410 | 2026 | art. 166.3.9 |
-| Tax discount: own life, pension or medical insurance | up to UAH 4,660 for each month the contract ran; 50% of that per insured family member | 2026 | art. 166.3.5 |
-| Fixed asset of a sole proprietor | cost above UAH 20,000 and useful life over 1 year | 2026 | art. 14.1.138, 177.4.6 |
-| Minimum useful life for depreciation | buildings 10 years; machines and equipment 5 years; intangibles at least 2 years | 2026 | art. 177.4.9 |
+| Passive income (interest, investment profit, royalties) | 18% | 2026 | art. 167.5.1, https://zir.tax.gov.ua/docs/stavki/podatok_na_dohody_fizychnyh_osib.pdf |
+| Dividends from a Ukrainian company that pays corporate income tax | 5% | 2026 | art. 167.5.2, https://zir.tax.gov.ua/docs/stavki/podatok_na_dohody_fizychnyh_osib.pdf |
+| Dividends from non-residents, collective investment institutions and companies that do not pay corporate income tax | 9% (half of 18%) | 2026 | art. 167.5.4, https://zir.tax.gov.ua/docs/stavki/podatok_na_dohody_fizychnyh_osib.pdf |
+| Sale of one home or qualifying land plot a year, owned more than 3 years | 0% (not taxed) | 2026 | art. 172.1, https://zir.tax.gov.ua/docs/stavki/podatok_na_dohody_fizychnyh_osib.pdf |
+| Sale of a second art. 172.1 property in the year, or of the first property in the year that is not on the art. 172.1 list | 5% | 2026 | art. 172.2, 167.2, https://zir.tax.gov.ua/docs/stavki/podatok_na_dohody_fizychnyh_osib.pdf |
+| Sale of a third and further art. 172.1 property in the year, a second and further property not on that list, or unfinished construction and off-plan property rights | 18%; 5% where that property was inherited | 2026 | art. 172.2, 167.1, 167.2, https://zir.tax.gov.ua/docs/stavki/podatok_na_dohody_fizychnyh_osib.pdf |
+| Sale of movable property | 5%; one car, motorcycle or moped a year is not taxed; the third and later such vehicle sold in the year is taxed at 18% | 2026 | art. 173.1, 173.2, https://zir.tax.gov.ua/docs/stavki/podatok_na_dohody_fizychnyh_osib.pdf |
+| Inheritance or gift from a family member of the 1st or 2nd degree | 0% | 2026 | art. 174.2.1, 174.6, https://zir.tax.gov.ua/docs/stavki/podatok_na_dohody_fizychnyh_osib.pdf |
+| Inheritance or gift from anyone else | 5% | 2026 | art. 174.2.2, 174.6, https://zir.tax.gov.ua/docs/stavki/podatok_na_dohody_fizychnyh_osib.pdf |
+| Inheritance or gift from a non-resident, or received by a non-resident | 18% | 2026 | art. 174.2.3, https://zir.tax.gov.ua/docs/stavki/podatok_na_dohody_fizychnyh_osib.pdf |
+| Tax social benefit (ПСП), basic | UAH 1,664 a month (50% of UAH 3,328) | 2026 | art. 169.1.1; Law 4695-IX art. 7, https://zir.tax.gov.ua/docs/stavki/amount_of_the_tax_social_benefit.pdf |
+| ПСП for a parent of two or more children under 18 | 100% of the basic amount (UAH 1,664) per child | 2026 | art. 169.1.2, https://zir.tax.gov.ua/docs/stavki/amount_of_the_tax_social_benefit.pdf |
+| ПСП, 150% group (single parent per child, parent of a disabled child, students, Chernobyl categories 1 and 2, others listed) | UAH 2,496 | 2026 | art. 169.1.3, https://zir.tax.gov.ua/docs/stavki/amount_of_the_tax_social_benefit.pdf |
+| ПСП, 200% group (categories listed in art. 169.1.4) | UAH 3,328 | 2026 | art. 169.1.4, https://zir.tax.gov.ua/docs/stavki/amount_of_the_tax_social_benefit.pdf |
+| ПСП income limit: monthly salary not above | UAH 4,660 (3,328 x 1.4 = 4,659.20, rounded to the nearest UAH 10); times the number of children for the child benefits | 2026 | art. 169.4.1, https://zir.tax.gov.ua/docs/stavki/amount_of_the_tax_social_benefit.pdf |
+| Investment profit: sales proceeds a year not above | UAH 4,660 are not taxed | 2026 | art. 170.2.8 "а", https://zp.tax.gov.ua/media-ark/news-ark/968495.html |
+| Tax discount: donations to non-profit organisations | up to 4% of total taxable income of the year | 2026 | art. 166.3.2, https://tax.gov.ua/deklaratsiyna-kampaniya/deklaruvannya-dohodiv-gromadyan-/podatkova-znijka-dlya-fizichnih-osib/ |
+| Tax discount: home rent paid by an internally displaced person, a combat participant or a person disabled by the war | up to 30 minimum wages a year, UAH 259,410 | 2026 | art. 166.3.9, https://sumy.tax.gov.ua/media-ark/news-ark/1019675.html |
+| Tax discount: own life, pension or medical insurance | up to UAH 4,660 for each month the contract ran; 50% of that per insured family member | 2026 | art. 166.3.5, https://tax.gov.ua/deklaratsiyna-kampaniya/deklaruvannya-dohodiv-gromadyan-/podatkova-znijka-dlya-fizichnih-osib/ |
+| Fixed asset of a sole proprietor | cost above UAH 20,000 and useful life over 1 year | 2026 | art. 14.1.138, 177.4.6, https://zir.tax.gov.ua/main/bz/view/?src=ques&id=36069 |
+| Minimum useful life for depreciation | buildings 10 years; machines and equipment 5 years; intangibles at least 2 years | 2026 | art. 177.4.9, https://km.tax.gov.ua/media-ark/news-ark/print-547687.html |
 | Minimum wage, 1 January 2026 | UAH 8,647 a month | 2026 | https://zakon.rada.gov.ua/laws/show/4695-20 (art. 8) |
 | Subsistence minimum for able-bodied persons, 1 January 2026 | UAH 3,328 a month | 2026 | https://zakon.rada.gov.ua/laws/show/4695-20 (art. 7) |
 
@@ -82,7 +83,7 @@ There are no bands. Each kind of income has one flat rate.
 
 **Sale of real estate.** One sale a year of a house, flat or part of one (with its land), or of land within the free-transfer norms, is not taxed if owned more than three years; the three-year test does not apply to inherited property (art. 172.1). The second sale in the year of an art. 172.1 property, or the first sale in the year of a property not on that list, is taxed at 5%. The third and later sales of art. 172.1 property, the second and later sales of other property, and sales of unfinished construction or of off-plan purchase rights are taxed at 18%; where that property was inherited, the rate is 5% (art. 172.2). Income is the contract price, but not less than the assessed value from the state valuation module (art. 172.3). The seller pays the tax before the notary certifies the sale (art. 172.5 "а").
 
-**Sale of movable property.** 5% (art. 173.1). One car, motorcycle or moped a year is not taxed (art. 173.2).
+**Sale of movable property.** 5% (art. 173.1). One car, motorcycle or moped a year is not taxed (art. 173.2). The State Tax Service rates sheet taxes the second such vehicle sold in the year at 5% and the third and later at 18%.
 
 **Gifts and inheritance.** 0% within the family of the 1st and 2nd degree, and for certain heirs such as a person with group I disability (art. 174.2.1). 5% for other heirs (art. 174.2.2). 18% where either side is a non-resident (art. 174.2.3). Gifts between individuals follow the same rules (art. 174.6). A gift from a company or a sole proprietor is a fringe benefit taxed at the general rules (art. 174.6).
 
@@ -236,6 +237,13 @@ expected:
 |---|---|---|
 | Tax Code of Ukraine (Податковий кодекс України), Law No. 2755-VI, consolidated text with amendments up to Law No. 4967-IX of 3 Sep 2026: arts. 14.1.138, 14.1.213, 49.18.4, 49.20, 57.1, 69.1 (subs. 10), 120.1, 123, 124.1, 125-1, 129.4, 163 to 179; section XX, subsection 10, point 16-1 | https://zakon.rada.gov.ua/laws/show/2755-17 | 2026-10-30 (zakon.rada.gov.ua timed out from our network; official text read via web.archive.org capture of 12 Oct 2026, https://web.archive.org/web/20261012050950/https://zakon.rada.gov.ua/laws/show/2755-17/print) |
 | Law "On the State Budget of Ukraine for 2026", No. 4695-IX of 3 Dec 2025, arts. 7 and 8 | https://zakon.rada.gov.ua/laws/show/4695-20 | 2026-10-30 (via web.archive.org capture of 4 Jan 2026) |
-| State Tax Service of Ukraine | https://tax.gov.ua | 2026-10-30 (refused automated access with HTTP 403; not read) |
+| State Tax Service (DPS), rates sheet: personal income tax | https://zir.tax.gov.ua/docs/stavki/podatok_na_dohody_fizychnyh_osib.pdf | 2026-11-14, read for the 18%, 5% and 9% rates and the property, vehicle and inheritance rates |
+| DPS, tax social benefit (ПСП) amounts for 2026 | https://zir.tax.gov.ua/docs/stavki/amount_of_the_tax_social_benefit.pdf | 2026-11-14, read for the 2026 ПСП amounts, the UAH 4,660 limit and the UAH 8,647 minimum wage |
+| DPS, tax discount for individuals (art. 166.3 table) | https://tax.gov.ua/deklaratsiyna-kampaniya/deklaruvannya-dohodiv-gromadyan-/podatkova-znijka-dlya-fizichnih-osib/ | 2026-11-14, read for art. 166.3.2 (4% donations cap) and art. 166.3.5 (insurance limit per month, half for a family member) |
+| DPS Sumy region, tax discount for rent paid by displaced persons (11 June 2026) | https://sumy.tax.gov.ua/media-ark/news-ark/1019675.html | 2026-11-14, read for art. 166.3.9: cap of 30 minimum wages a year |
+| DPS Zaporizhzhia region, investment profit (2 January 2026) | https://zp.tax.gov.ua/media-ark/news-ark/968495.html | 2026-11-14, read for art. 170.2.8 "а": proceeds up to the art. 169.4.1 amount are not taxed |
+| DPS Khmelnytskyi region, sole proprietor depreciation | https://km.tax.gov.ua/media-ark/news-ark/print-547687.html | 2026-11-14, read for art. 177.4.9: minimum lives of 10 years (buildings), 5 years (machines), 2 years (intangibles) |
+| DPS knowledge base (ЗІР), question 36069 | https://zir.tax.gov.ua/main/bz/view/?src=ques&id=36069 | 2026-11-14, read for art. 14.1.138: fixed assets exclude items of UAH 20,000 or less |
+| State Tax Service of Ukraine, main site | https://tax.gov.ua | 2026-10-30 (refused automated access with HTTP 403; not read) |
 
 Not yet confirmed: whether a sole proprietor's balance on the annual declaration is due within 10 days after the filing deadline (art. 57.1) or by 1 August (art. 179.7), so pay by the earlier date; whether the 1 August 2027 payment date, a Sunday, moves to the next working day; the full list of 150% and 200% social benefit categories; the National Bank discount rate for penalty interest in 2026; whether a general-system proprietor must also pay the military levy in quarterly advances with the PIT advances (sub-point 1.4 applies the section IV order; art. 177.5.1 names only PIT); whether a proprietor's ЄСВ base is net income before or after deducting that ЄСВ, and whether ЄСВ for the fourth quarter paid in January counts in the year it is for or the year it is paid; the Cabinet of Ministers minimum rent method; the cost-of-goods matching rule and cash-basis timing for proprietors (in the Ministry of Finance record-keeping order, not read); Diia City gig-specialist rates; any amendment after the 12 October 2026 archive capture.
