@@ -645,6 +645,7 @@ Not yet confirmed: the decree or decrees under Code Arts 21, 23 and 24 fixing th
 
 | Version | Date | Change |
 | --- | --- | --- |
+| 0.4 | 2026-11-14 | Declared type computation. Moved the two unverified rows (retirement ceiling 3,375,000; Art 16 base) out of the rates table to the Not yet confirmed line; worked examples still label 3,375,000 unverified. |
 | 0.3 | 2026-11-05 | Converted to the upstream template. Corrected the late-payment penalty, which had wrongly used 10% under Art 30; moved the 31 March date from Art 26 to CNPS leaflets; removed the claim that Décret 2022-986 sets the ceiling; marked 3,375,000 unverified; made ceilings annual with regularisation; corrected the CMU rule beyond 6 children; corrected the RSTI ceiling and added RSTI, apprentice, assimilated and pay-item rules; added CMU's own penalties; removed the 2%, quarterly and single-person defaults; replaced the bank fallback with intake only. |
 | 0.2 | 2026-11-01 | Legacy version. |
 
