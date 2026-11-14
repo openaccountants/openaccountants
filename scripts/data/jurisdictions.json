@@ -700,6 +700,13 @@
   "dir": "skills/cambodia"
  },
  {
+  "code": "KI",
+  "name": "Kiribati",
+  "region": "apac",
+  "owner": "ryan",
+  "dir": "skills/kiribati"
+ },
+ {
   "code": "KM",
   "name": "Comoros",
   "region": "africa",
