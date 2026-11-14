@@ -42,7 +42,7 @@ There is no income tax in The Bahamas, so no income tax is withheld from wages: 
 | Employed, 65 or over and in receipt of retirement benefit | 0% | 2.0% | 2.0% | same |
 | Persons employed during the summer | 0% | 2.0% | 2.0% | same |
 | Self-employed under 65, not receiving retirement benefit | 10.30% | | 10.30% | Regs 2024, reg. 5 (new reg. 30(1A)): 8.8% plus 1.5 points: https://laws.bahamas.gov.bs/cms/images/LEGISLATION/AMENDING/2024/2024-0037S/2024-0037S.pdf |
-| Voluntarily insured | 6.50% | | 6.50% | Regs 2024, reg. 7 (new reg. 35(1A)): 5.0% plus 1.5 points: same |
+| Voluntarily insured | 6.50% | | 6.50% | Regs 2024, reg. 7 (new reg. 35(1A)): 5.0% plus 1.5 points: https://laws.bahamas.gov.bs/cms/images/LEGISLATION/AMENDING/2024/2024-0037S/2024-0037S.pdf |
 | Income tax withheld | None | | | No income tax Act, Bahamas legislation index: https://laws.bahamas.gov.bs/cms/legislation/acts_only/acts-by-year.html |
 
 ## The base

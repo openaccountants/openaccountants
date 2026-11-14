@@ -38,12 +38,12 @@ There is no corporate income tax on profits, and no Bahamian Act imposes withhol
 |---|---|---|---|
 | Corporate income tax | None | No income tax Act in the Bahamian statute list | Bahamas legislation, Acts by year: https://laws.bahamas.gov.bs/cms/legislation/acts_only/acts-by-year.html |
 | Business licence tax, turnover not over BSD 100,000 | Exempt | Not for a family office, financial services entity, IBC or proprietary trading business | Business Licence (Amendment) Act 2024, s. 8 (s. 38(1)(i) and (2)): https://inlandrevenue.finance.gov.bs/wp-content/uploads/2024/08/Business-Licence-Amendment-Act-2024.pdf |
-| Over BSD 100,000 to 500,000 | 0.5% of turnover | General businesses | Business Licence (Amendment) Act 2024, s. 9: same |
+| Over BSD 100,000 to 500,000 | 0.5% of turnover | General businesses | Business Licence (Amendment) Act 2024, s. 9: https://inlandrevenue.finance.gov.bs/wp-content/uploads/2024/08/Business-Licence-Amendment-Act-2024.pdf |
 | Over BSD 500,000 to 5 million | 0.75% of turnover | | same |
 | Over BSD 5 million | 1.25% of turnover | | same |
 | Over BSD 175 million | 1.5% of turnover | From 1 July 2026 | Business Licence (Amendment) Act 2026, s. 8: https://laws.bahamas.gov.bs/cms/images/LEGISLATION/AMENDING/2026/2026-0022A/2026-0022A.pdf |
 | Insurers | Part I rates on revenue other than gross premiums; premium tax collected by the Insurance Commission | From 1 July 2026 | same |
-| Liquor establishment endorsement fee | BSD 250 per establishment | Certificate of Endorsement from the Liquor Review Board before grant or renewal; renewal application by 30 September of the prior year | Business Licence (Amendment) Act 2026, s. 7 (ss. 60F, 60G): same |
+| Liquor establishment endorsement fee | BSD 250 per establishment | Certificate of Endorsement from the Liquor Review Board before grant or renewal; renewal application by 30 September of the prior year | Business Licence (Amendment) Act 2026, s. 7 (ss. 60F, 60G): https://laws.bahamas.gov.bs/cms/images/LEGISLATION/AMENDING/2026/2026-0022A/2026-0022A.pdf |
 | Advance ruling deposit | BSD 1,000 or security set by the Secretary | s. 37 as replaced | Business Licence (Amendment) (No. 2) Act 2025, s. 9: https://inlandrevenue.finance.gov.bs/wp-content/uploads/2025/08/BUSINESS-LICENCE-AMENDMENT-NO.-2-ACT-2025.pdf |
 | DMTT scope, revenue | Consolidated revenue of at least EUR 750 million in at least two of the four fiscal years before the tested year | Group with a foreign parent, a Bahamian parent with foreign entities, or a Bahamian permanent establishment of a foreign entity | DIR, What is DMTT FAQ: https://inlandrevenue.finance.gov.bs/wp-content/uploads/2026/06/What-is-DMTT-FAQ-1.pdf |
 | DMTT, purely domestic groups and small businesses | Out of scope | Even above EUR 750 million in The Bahamas alone | same |
