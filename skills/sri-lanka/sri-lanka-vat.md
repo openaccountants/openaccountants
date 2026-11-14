@@ -1,37 +1,73 @@
 ---
 name: sri-lanka-vat
-description: Use this skill whenever asked to prepare, review, or classify transactions for a Sri Lanka VAT return for any client. Trigger on phrases like "Sri Lanka VAT", "IRD return", "CGIR filing", or any request involving Sri Lanka VAT. MUST be loaded alongside vat-workflow-base v0.1 or later. ALWAYS read this skill before touching any Sri Lanka VAT work.
-version: 2.0
+description: Use this skill whenever asked to prepare, review, or classify transactions for a Sri Lanka VAT return for any client, for taxable periods in 2026 and the year of assessment 2026/27. Trigger on phrases like Sri Lanka VAT, IRD VAT return, CGIR filing, VAT registration Sri Lanka, 18% VAT Sri Lanka, VAT on digital services Sri Lanka, VAT on financial services. Covers the 18% standard rate, zero rating, the Rs. 15 million per period and Rs. 60 million per year registration test, return and payment dates, input tax, the non-resident digital services regime from 1 July 2026 and the 20.5% financial services rate from 1 July 2026, under the Value Added Tax Act No. 14 of 2002 as amended up to Act No. 14 of 2026. MUST be loaded alongside vat-workflow-base v0.1 or later.
+version: 3.0
 jurisdiction: LK
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+tax_year_notes: "Taxable periods in calendar 2026 and the year of assessment 2026/27 (2026-27)"
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: vat-gst
+type: situation-rules
 ---
 
-# Sri Lanka VAT
+# Sri Lanka VAT, taxable periods in 2026, v3.0
 
-## Section 1 — Quick reference
+Built from the law: not yet approved by an accountant. Not tax advice.
 
-**Quick reference table**
+## Scope and who this is for
 
-| Field | Value |
+| Field | Detail |
 | --- | --- |
 | Country | Sri Lanka (Democratic Socialist Republic of Sri Lanka) |
-| Standard rate | 18% (effective 1 January 2024) |
-| Zero rate | 0% (exports, specified essential goods) |
-| Exempt | Financial services, healthcare, education, residential rent, unprocessed agriculture |
-| Return form | Monthly VAT return (via IRD e-filing) |
-| Filing portal | https://www.ird.gov.lk (IRD e-Services) |
+| Law | Value Added Tax Act No. 14 of 2002, in force from 1 August 2002, as amended, most recently by Act No. 4 of 2025 and Act No. 14 of 2026 (certified 30 June 2026) |
 | Authority | Inland Revenue Department (IRD) |
-| Currency | LKR (Sri Lankan Rupee) |
-| Filing frequency | Monthly |
-| Deadline | Last business day of the month following the tax period |
-| Registration threshold | LKR 80 million per annum (or LKR 20 million per quarter) |
-| Companion skill | vat-workflow-base v0.1 or later — MUST be loaded |
+| Currency | LKR |
+| Taxable period | One month or three months, as the Act defines for the person |
+| Return | Electronic, through the IRD system (RAMIS), by the last day of the month after the taxable period |
+| Companion skill | vat-workflow-base v0.1 or later: MUST be loaded |
 
-**Conservative defaults**
+- **In:** registered persons and persons who must register; classifying bank-statement transactions into a VAT return; non-resident suppliers of digital services to persons in Sri Lanka.
+- **Out:** BOI enterprises with bespoke terms, the Simplified VAT (SVAT) scheme, the Tourist VAT Refund Scheme, SSCL (`sri-lanka-sscl`).
+
+## Ask the client first
+
+1. TIN and VAT registration status; taxable period (monthly or quarterly)?
+2. Taxable supplies made in Sri Lanka in the period and in the last 12 months.
+3. Any exports or other zero-rated supplies?
+4. Any purchases of digital services from non-resident platforms, and is the client VAT-registered?
+5. Is the client a specified institution supplying financial services, or under a BOI agreement?
+6. Credit brought forward from the previous period.
+
+## The method, step by step
+
+### Rates, bands and thresholds
+
+| Item | Rate or threshold | Conditions | Source |
+| --- | --- | --- | --- |
+| Standard rate | 18% (tax fraction 9/59) | Any taxable period from 1 January 2024; section 2(1)(ix) | https://www.ird.gov.lk/en/publications/Value%20Added%20Tax_Acts/VAT_Act_No_14%5BE%5D_2002_(Consolidation_2025).pdf |
+| Zero rate | 0% | Direct export of goods and services listed in section 7 | https://www.ird.gov.lk/en/publications/SitePages/tax_chart_2526.aspx |
+| Registration, taxable period test | Taxable supplies in Sri Lanka in the taxable period over Rs. 15,000,000 | From 1 January 2024; section 10 | https://www.ird.gov.lk/en/publications/Value%20Added%20Tax_Acts/VAT_Act_No_14%5BE%5D_2002_(Consolidation_2025).pdf |
+| Registration, 12-month test | Taxable supplies in Sri Lanka in the 12 months then ending over Rs. 60,000,000 | Or reasonable grounds that the next period will exceed Rs. 15,000,000 or the next 12 months Rs. 60,000,000 | same |
+| Financial services VAT on value addition | 18% for periods from 1 January 2022 to 30 June 2026; 20.5% from 1 July 2026 | Section 25C(3)(g), (h) | https://www.ird.gov.lk/en/publications/Value%20Added%20Tax_Acts/VAT_Act_No_14-2026_E.PDF |
+| Non-resident digital services: registration | Over Rs. 60,000,000 in the 12 months then ending, or over Rs. 15,000,000 for a quarter | From 1 July 2026; new section 25L | same |
+| Non-resident digital services charge | Tax under section 2(1)(c) from 1 July 2026 | Not charged where the recipient is a registered person (section 25N) | same |
+| Simplified statement penalty, non-resident supplying registered persons | Up to Rs. 50,000 | Section 25N(4) | same |
+| Return due | Last day of the month after the taxable period | Electronic; section 21(1)(a)(iii) | https://www.ird.gov.lk/en/publications/Value%20Added%20Tax_Acts/VAT_Act_No_14%5BE%5D_2002_(Consolidation_2025).pdf |
+| Payment due | 20th day of the month after the taxable period | Quarterly filers pay month 1 by the 20th of month 2, month 2 by the 20th of month 3; section 26(1) | same |
+
+### Steps
+
+1. Test registration on the period and 12-month figures (section 10). Supplies made in Sri Lanka only.
+2. Classify each sale: 18% standard, 0% zero-rated (section 7), or exempt (First Schedule).
+3. For a VAT-inclusive receipt, output tax is the gross times 9/59.
+4. Input tax: valid tax invoice with TIN, business purpose, apportionment for mixed use; block personal consumption and other items the Act disallows.
+5. Imports: VAT at 18% on the import value under section 6, collected at import.
+6. Digital services bought from a non-resident platform: from 1 July 2026, a registered recipient is not charged VAT (section 25N); if a registered non-resident provider charged it anyway, it must refund it, or, if it has remitted it, the registered recipient may deduct it as input tax on the provider's invoice showing VAT separately. An unregistered recipient is charged VAT by the registered non-resident provider.
+7. File by the last day of the following month; pay by the 20th.
+
+### Conservative defaults
 
 | Ambiguity | Default |
 | --- | --- |
@@ -40,238 +76,128 @@ domain: vat-gst
 | Unknown counterparty location | Domestic Sri Lanka |
 | Unknown business-use proportion | 0% recovery |
 
-## Section 2 — Required inputs and refusal catalogue
-
-### Required inputs
-
-**Minimum viable** — bank statement for the month. Acceptable from: BOC (Bank of Ceylon), People's Bank, Commercial Bank, HNB (Hatton National Bank), Sampath Bank, Seylan Bank, DFCC, NDB, Nations Trust, or any other.
+## Boundary and exception table
 
 ### Sri Lanka-specific refusal catalogue
 
-- **R-LK-1 — BOI enterprise** — Trigger: client under Board of Investment agreement with tax holidays. Message: "BOI enterprises have bespoke tax exemptions. Please escalate."  _(R-LK-1)_
-- **R-LK-2 — Social Security Contribution Levy (SSCL) interaction** — Trigger: SSCL applies alongside VAT. Message: "SSCL is a separate levy that may affect pricing and compliance. Verify current status (SSCL was suspended/reintroduced periodically)."  _(R-LK-2)_
-- **R-LK-3 — Simplified VAT regime** — Trigger: client on simplified regime. Message: "Simplified VAT has different filing requirements. Please escalate."  _(R-LK-3)_
+- **R-LK-1, BOI enterprise:** client under a Board of Investment agreement with tax holidays. "BOI enterprises have bespoke tax exemptions. Please escalate."
+- **R-LK-2, SSCL interaction:** SSCL is a separate levy on turnover that excludes VAT; see `sri-lanka-sscl` (in force on 14 November 2026).
+- **R-LK-3, Simplified VAT regime:** different filing requirements. Escalate.
 
-## Section 3 — Supplier pattern library
+### Supplier pattern library
 
-### 3.1 Sri Lankan banks (fees exempt — exclude)
-
-**Sri Lankan banks pattern table**
+These defaults classify bank lines; confirm each against the First Schedule exemptions before filing.
 
 | Pattern | Treatment | Notes |
 | --- | --- | --- |
-| BOC, BANK OF CEYLON | EXCLUDE for bank charges | Exempt |
-| PEOPLES BANK, PEOPLE'S BANK | EXCLUDE for bank charges | Same |
-| COMMERCIAL BANK, COMBANK | EXCLUDE for bank charges | Same |
-| HNB, HATTON NATIONAL | EXCLUDE for bank charges | Same |
-| SAMPATH, SEYLAN, NDB, DFCC | EXCLUDE for bank charges | Same |
-| NATIONS TRUST | EXCLUDE for bank charges | Same |
-| INTEREST, LOAN, REPAYMENT | EXCLUDE | Out of scope |
+| BOC, BANK OF CEYLON; PEOPLES BANK; COMMERCIAL BANK, COMBANK; HNB, HATTON NATIONAL; SAMPATH, SEYLAN, NDB, DFCC; NATIONS TRUST | Exclude bank charges from input tax | Banks account for VAT on financial services under section 25C, not on each fee |
+| INTEREST, LOAN, REPAYMENT | Exclude | Out of scope of the return |
+| IRD, INLAND REVENUE | Exclude | Tax payment |
+| CUSTOMS, SRI LANKA CUSTOMS | Exclude duty; keep import VAT as input tax with the customs document | Duty is not VAT |
+| EPF, ETF | Exclude | Employee funds |
+| COMPANY REGISTRAR | Exclude | Registration fee |
+| CEB, CEYLON ELECTRICITY; LECO; NWS&DB, NATIONAL WATER | Check the First Schedule | Utilities; treatment not confirmed |
+| SLT, SRI LANKA TELECOM, DIALOG, MOBITEL, HUTCH, AIRTEL LK | Domestic 18% with a tax invoice | Telecoms |
+| FRIMI, GENIE, IPAY | Exclude fees | Financial service |
+| GOOGLE, MICROSOFT, META, AWS, ZOOM, SLACK, CANVA | Registered recipient: no VAT charged from 1 July 2026 (section 25N); unregistered recipient: VAT charged by the provider | Before 1 July 2026, check the provider's invoice |
+| SALARY, WAGES; OWN TRANSFER, INTERNAL; DIVIDEND | Exclude | Outside VAT |
+| CASH WITHDRAWAL | Ask; default exclude | |
 
-### 3.2 Government (exclude)
+### Tier 2 catalogue
 
-**Government pattern table**
+| Item | Default |
+| --- | --- |
+| Vehicle costs | 0% recovery |
+| Entertainment | Block |
+| Digital services before 1 July 2026 | Check the provider's invoice and registration |
+| BOI status | Flag; ask "BOI agreement in force?" |
+| Cash withdrawals | Exclude |
 
-| Pattern | Treatment | Notes |
+### Worked classification lines (from the earlier version)
+
+| Date | Counterparty | Gross | Net | VAT | Code | Field |
+| --- | --- | --- | --- | --- | --- | --- |
+| 05.04.2026 | COLOMBO TRADING PVT, invoice LK-041 | +1,180,000 | +1,000,000 | 180,000 | 18% | Output |
+| 15.04.2026 | UK BUYER LTD, tea export | +5,000,000 | +5,000,000 | 0 | 0% | Zero-rated |
+| 18.07.2026 | AWS, cloud hosting, registered recipient | -60,000 | -60,000 | 0 | none | Not charged (section 25N) |
+| 30.04.2026 | BOC, monthly charge | -1,000 | n/a | n/a | n/a | Excluded |
+
+The AWS line was earlier shown as self-assessed at 18%; the 2026 amendment instead removes the charge where the recipient is registered.
+
+## Worked cases
+
+### Case 1: domestic VAT-inclusive receipt
+
+A registered trader receives Rs. 1,180,000 including VAT. Output tax is 9/59 of the gross.
+
+```oa-check
+name: VAT-inclusive domestic receipt at 18%
+inputs:
+  gross: 1180000
+steps:
+  - vat: round(gross * 9 / 59, 2)
+  - net: gross - vat
+expected:
+  vat: 180000
+  net: 1000000
+```
+
+### Case 2: decision, must a growing business register?
+
+A business has taxable supplies of Rs. 4,000,000 a month: Rs. 12,000,000 a quarter and Rs. 48,000,000 over 12 months, so it is under both tests. A new contract adds Rs. 1,500,000 a month. On a three-month period that is Rs. 16,500,000, over Rs. 15,000,000, so it must register even though its 12-month total (Rs. 66,000,000 projected) is what crosses the annual test later.
+
+```oa-check
+name: Registration test, quarter and 12 months
+inputs:
+  monthly_now: 4000000
+  monthly_extra: 1500000
+steps:
+  - quarter_now: monthly_now * 3
+  - year_now: monthly_now * 12
+  - quarter_new: (monthly_now + monthly_extra) * 3
+  - year_new: (monthly_now + monthly_extra) * 12
+  - quarter_excess: quarter_new - 15000000
+expected:
+  quarter_now: 12000000
+  year_now: 48000000
+  quarter_new: 16500000
+  year_new: 66000000
+  quarter_excess: 1500000
+```
+
+## When to refuse or refer
+
+- BOI enterprises, SVAT scheme, Tourist VAT Refund Scheme: escalate.
+- Specified institutions computing VAT on financial services value addition (section 25C): escalate; the rate rises to 20.5% from 1 July 2026.
+- Non-resident digital service providers registering under Chapter IIIC: escalate the registration and simplified statement.
+- Transitional periods around 1 January 2024 (15% to 18%) and 1 July 2026: verify the period dates.
+
+## Filing and payment
+
+| Step | Detail |
+| --- | --- |
+| Return | Electronically through the IRD system by the last day of the month after the taxable period; an acknowledgement is issued (section 21) |
+| Schedules | In the form the Commissioner-General specifies by Gazette Order |
+| Payment | By the 20th day of the month after the taxable period (section 26) |
+| Working paper | Per vat-workflow-base Section 3, with Sri Lanka fields: Output 18%, Zero-rated, Exempt, Input domestic, Input imports, Net VAT |
+| Bank statements | BOC, People's Bank, Commercial Bank export CSV or PDF; LKR primary; Sinhala or Tamil descriptions possible; internal transfers excluded; convert foreign currency at the CBSL rate |
+| Onboarding questions | TIN; filing period; industry; exports; BOI status; credit brought forward (always ask) |
+
+## Completion checklist
+
+- [ ] Registration tested on the period and on 12 months
+- [ ] Each sale classified 18%, 0% or exempt
+- [ ] Input tax only with valid tax invoices, apportioned
+- [ ] Digital services from 1 July 2026 treated under sections 25L to 25P
+- [ ] Return by the last day of the following month, payment by the 20th
+
+## Sources
+
+| Source | URL | Read on |
 | --- | --- | --- |
-| IRD, INLAND REVENUE | EXCLUDE | Tax payment |
-| CUSTOMS, SRI LANKA CUSTOMS | EXCLUDE | Duty |
-| EPF, ETF | EXCLUDE | Employee provident/trust fund |
-| COMPANY REGISTRAR | EXCLUDE | Registration fee |
-
-### 3.3 Utilities
-
-**Utilities pattern table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| CEB, CEYLON ELECTRICITY | Domestic 18% | Electricity |
-| LECO | Domestic 18% | Electricity (Colombo) |
-| NWS&DB, NATIONAL WATER | Domestic 18% | Water |
-| SLT, SRI LANKA TELECOM, DIALOG, MOBITEL | Domestic 18% | Telecoms |
-| HUTCH, AIRTEL LK | Domestic 18% | Same |
-
-### 3.4 Digital payments
-
-**Digital payments pattern table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| FRIMI, GENIE, IPAY | EXCLUDE for fees | Financial service |
-
-### 3.5 SaaS and international services
-
-**SaaS pattern table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| GOOGLE, MICROSOFT, META, AWS | Self-assess 18% | Non-resident |
-| ZOOM, SLACK, CANVA | Self-assess 18% | Same |
-
-### 3.6 Payroll and exclusions
-
-**Payroll pattern table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| SALARY, WAGES | EXCLUDE | Outside VAT scope |
-| OWN TRANSFER, INTERNAL | EXCLUDE | Internal |
-| DIVIDEND | EXCLUDE | Out of scope |
-| CASH WITHDRAWAL | TIER 2 — ask | Default exclude |
-
-## Section 4 — Worked examples
-
-### Example 1 — Standard domestic sale at 18%
-
-**Input line:** `05.04.2026 ; COLOMBO TRADING PVT ; CREDIT ; Invoice LK-041 ; LKR 1,180,000`
-
-**Reasoning:** Domestic. 18%. Net = LKR 1,000,000, VAT = LKR 180,000.
-
-**Example 1 result table**
-
-| Date | Counterparty | Gross | Net | VAT | Rate | Field | Default? | Excluded? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 05.04.2026 | COLOMBO TRADING | +1,180,000 | +1,000,000 | 180,000 | 18% | Output | N | — |
-
-### Example 2 — Export, zero-rated
-
-**Input line:** `15.04.2026 ; UK BUYER LTD ; CREDIT ; Tea export ; LKR 5,000,000`
-
-**Example 2 result table**
-
-| Date | Counterparty | Gross | Net | VAT | Rate | Field | Default? | Excluded? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 15.04.2026 | UK BUYER LTD | +5,000,000 | +5,000,000 | 0 | 0% | Zero-rated | N | — |
-
-### Example 3 — Non-resident digital service
-
-**Input line:** `18.04.2026 ; AWS ; DEBIT ; Cloud hosting ; LKR -60,000`
-
-**Example 3 result table**
-
-| Date | Counterparty | Gross | Net | VAT | Rate | Field | Default? | Excluded? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 18.04.2026 | AWS | -60,000 | -60,000 | 10,800 | 18% | Output + Input | N | — |
-
-### Example 4 — Bank charges
-
-**Input line:** `30.04.2026 ; BOC ; DEBIT ; Monthly charge ; LKR -1,000`
-
-**Example 4 result table**
-
-| Date | Counterparty | Gross | Net | VAT | Rate | Field | Default? | Excluded? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 30.04.2026 | BOC | -1,000 | — | — | — | — | N | "Exempt" |
-
-## Section 5 — Tier 1 classification rules (compressed)
-
-### 5.1 Standard rate 18% — Default for all taxable supplies (from 1 Jan 2024; previously 15%).
-
-- **Standard rate** — 18% (Default for all taxable supplies (from 1 Jan 2024; previously 15%))
-
-### 5.2 Zero rate — Exports, specified essential goods.
-
-- **Zero rate** — 0% (Exports, specified essential goods)
-
-### 5.3 Exempt — Financial services, healthcare, education, residential rent, unprocessed agriculture.
-
-- **Exempt supplies** — Financial services, healthcare, education, residential rent, unprocessed agriculture
-
-### 5.4 Input tax credit — Valid tax invoice with TIN required. Business purpose. Apportionment if mixed.
-
-- **Input tax credit** — Valid tax invoice with TIN required. Business purpose. Apportionment if mixed.
-
-### 5.5 Blocked input — Personal consumption, entertainment, passenger vehicles.
-
-- **Blocked input** — Personal consumption, entertainment, passenger vehicles
-
-### 5.6 Imports — VAT at 18% on CIF plus duty.
-
-- **Imports** — VAT at 18% on CIF plus duty
-
-### 5.7 Reverse charge — Non-resident services: self-assess 18%.
-
-- **Reverse charge** — Non-resident services: self-assess 18%
-
-### 5.8 Registration — Mandatory if turnover exceeds LKR 80M/year or LKR 20M/quarter.
-
-- **Registration threshold** — LKR 80M/year or LKR 20M/quarter (Mandatory registration)
-
-## Section 6 — Tier 2 catalogue (compressed)
-
-### 6.1 Vehicle costs — Default: 0%.
-
-- **Vehicle costs** — Default: 0%
-
-### 6.2 Entertainment — Default: block.
-
-- **Entertainment** — Default: block
-
-### 6.3 SaaS entities — Default: self-assess 18%.
-
-- **SaaS entities** — Default: self-assess 18%
-
-### 6.4 BOI enterprise status — Default: flag. Question: "BOI agreement in force?"
-
-- **BOI enterprise status** — Default: flag. Question: "BOI agreement in force?"
-
-### 6.5 SSCL interaction — Default: flag. Question: "Is SSCL currently in force?"
-
-- **SSCL interaction** — Default: flag. Question: "Is SSCL currently in force?"
-
-### 6.6 Cash withdrawals — Default: exclude.
-
-- **Cash withdrawals** — Default: exclude
-
-## Section 7 — Excel working paper template
-
-Per vat-workflow-base Section 3, with Sri Lanka fields: Output 18%, Zero-rated, Exempt, Input domestic, Input imports, Net VAT.
-
-## Section 8 — Bank statement reading guide
-
-BOC, People's Bank, Commercial Bank exports CSV/PDF. LKR primary. Sinhala/Tamil descriptions possible. Internal transfers: exclude. Convert foreign currency at CBSL rate.
-
-## Section 9 — Onboarding fallback
-
-### 9.1 TIN — "What is your IRD TIN?"
-
-- **TIN** — "What is your IRD TIN?"
-
-### 9.2 Filing period — Monthly. "Which month?"
-
-- **Filing period** — Monthly. "Which month?"
-
-### 9.3 Industry — "What does the business do?"
-
-- **Industry** — "What does the business do?"
-
-### 9.4 Exports — "Do you export?"
-
-- **Exports** — "Do you export?"
-
-### 9.5 BOI status — "Are you under a BOI agreement?"
-
-- **BOI status** — "Are you under a BOI agreement?"
-
-### 9.6 Credit brought forward — Always ask.
-
-- **Credit brought forward** — Always ask
-
-## Section 10 — Reference material
-
-### Sources
-
-1. Sri Lanka Value Added Tax Act No. 14 of 2002 (as amended). 2. Inland Revenue (Amendment) Act. 3. IRD e-Services portal.
-
-### Known gaps
-
-1. BOI enterprises refused. 2. SSCL status changes frequently. 3. Rate changed from 15% to 18% in Jan 2024 — verify for transitional periods.
-
-### Change log
-
-- v2.1 (June 2026): Added jurisdiction/verification frontmatter; removed duplicate disclaimer; standard rate 18% re-confirmed against IRD YA 2025/26 tax chart.
-- v2.0 (April 2026): Full rewrite to Malta v2.0 ten-section structure.
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
+| Read for sections 2(1) (rates and the section 2(1)(c) digital services charge), 10 (registration), 21 (returns), 26 (payment) and the taxable period definition in section 83 of the IRD consolidated VAT Act | https://www.ird.gov.lk/en/publications/Value%20Added%20Tax_Acts/VAT_Act_No_14%5BE%5D_2002_(Consolidation_2025).pdf | 2026-11-14 |
+| Read for sections 2 (digital services date moved to 1 July 2026), 4, 5, 7 (section 25C 20.5% rate) and 8 (new Chapter IIIC, sections 25L to 25P) of the VAT (Amendment) Act No. 14 of 2026 | https://www.ird.gov.lk/en/publications/Value%20Added%20Tax_Acts/VAT_Act_No_14-2026_E.PDF | 2026-11-14 |
+| Read for the VAT section (registration test, standard and zero rates, financial services rows) of the IRD tax chart, the latest on the site | https://www.ird.gov.lk/en/publications/SitePages/tax_chart_2526.aspx | 2026-11-14 |
+| Read for the list of VAT amending Acts on the IRD VAT page | https://www.ird.gov.lk/en/Type%20of%20Taxes/SitePages/Value%20Added%20Tax%20(VAT).aspx?menuid=1204 | 2026-11-14 |
+
+Not yet confirmed: the First Schedule exemption lists (the earlier version listed healthcare, education, residential rent and unprocessed agriculture, and financial services as exempt; financial services are in fact taxed on value addition under section 25C); utilities treatment; the blocked input tax list (personal consumption, entertainment, passenger vehicles in the earlier version); which persons file monthly and which quarterly under the section 83 definition; whether a reverse charge applies to other imported services; the SVAT scheme rules.
