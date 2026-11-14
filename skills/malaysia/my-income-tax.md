@@ -72,7 +72,7 @@ Resident scale, YA 2026 (ITA Schedule 1 Part I para 1). LHDN's tax-rate page sho
 
 | Chargeable income (RM) | Rate | Tax on the band (RM) | Tax at top of band (RM) | Source |
 | --- | --- | --- | --- | --- |
-| First 5,000 | 0% | 0 | 0 | https://www.hasil.gov.my/wp-content/uploads/Income-Tax-Act-1967-online-version-as-at-1-January-2026.pdf |
+| First 5,000 | 0% | 0 | 0 | https://www.hasil.gov.my/wp-content/uploads/Income-Tax-Act-1967-online-version-as-at-1-January-2026.pdf ; LHDN rate page (same scale, YA 2023 to 2025): https://www.hasil.gov.my/en/individu/kadar-cukai/ |
 | 5,001 to 20,000 | 1% | 150 | 150 | same |
 | 20,001 to 35,000 | 3% | 450 | 600 | same |
 | 35,001 to 50,000 | 6% | 900 | 1,500 | same |
@@ -96,7 +96,7 @@ Personal reliefs, YA 2026 (resident individuals; amounts are maximums unless fix
 
 | Relief | Amount (RM) | Source |
 | --- | --- | --- |
-| Individual and dependent relatives (s. 46(1)(a)) | 9,000 | https://www.hasil.gov.my/wp-content/uploads/Income-Tax-Act-1967-online-version-as-at-1-January-2026.pdf |
+| Individual and dependent relatives (s. 46(1)(a)) | 9,000 | https://www.hasil.gov.my/wp-content/uploads/Income-Tax-Act-1967-online-version-as-at-1-January-2026.pdf ; LHDN reliefs page (YA 2025 list, same amounts): https://www.hasil.gov.my/en/individu/pelepasan-cukai/ |
 | Parents' or grandparents' medical, dental, special needs and carer costs; complete medical examination within it up to 1,000 (s. 46(1)(c)) | 8,000 | same |
 | Basic supporting equipment for a disabled self, spouse, child or parent (s. 46(1)(d)) | 6,000 | same |
 | Disabled individual, further (s. 46(1)(e)) | 7,000 | same |
@@ -118,7 +118,7 @@ Personal reliefs, YA 2026 (resident individuals; amounts are maximums unless fix
 | Each unmarried child under 18, or 18 and over in A-level, matriculation or preparatory study (s. 48(2)(a)) | 2,000 | same |
 | Each unmarried child 18 and over at diploma level or higher in Malaysia, or degree level or higher abroad (s. 48(2)(b)) | 8,000 | same |
 | Disabled child; a further 8,000 if 18 or over and studying at diploma level or higher (s. 48) | 8,000 | https://www.hasil.gov.my/en/individu/pelepasan-cukai/ |
-| Life insurance or family takaful, and additional voluntary EPF (s. 49(1)(a)) | 3,000 | https://www.hasil.gov.my/wp-content/uploads/Income-Tax-Act-1967-online-version-as-at-1-January-2026.pdf |
+| Life insurance or family takaful, and additional voluntary EPF (s. 49(1)(a)) | 3,000 | https://www.hasil.gov.my/wp-content/uploads/Income-Tax-Act-1967-online-version-as-at-1-January-2026.pdf ; https://www.hasil.gov.my/en/individu/pelepasan-cukai/ |
 | EPF or approved scheme contributions, including voluntary EPF of the self-employed (s. 49(1)(b)) | 4,000 | same |
 | Education or medical insurance premiums (s. 49(1)(c)) | 4,000 | same |
 | Private Retirement Scheme and deferred annuity (s. 49(1D)) | 3,000 | same |
