@@ -28,7 +28,7 @@ Individuals with Uganda tax to pay. Residents are taxed on worldwide income and 
 
 | Item | Amount | Tax year | Official URL |
 |---|---|---|---|
-| Resident, annual, up to UGX 4,020,000 | Nil | 2026-27 | https://ura.go.ug/en/download/tax-amendments-fy-2026-2027/ |
+| Resident, annual, up to UGX 4,020,000 | Nil | 2026-27 | https://ura.go.ug/en/domestic-taxes/paye-rates/ (UGX 335,000 a month x 12) |
 | Resident, UGX 4,020,001 to 4,920,000 | 20% over 4,020,000 | 2026-27 | same |
 | Resident, UGX 4,920,001 to 5,820,000 | UGX 180,000 + 25% over 4,920,000 | 2026-27 | same |
 | Resident, UGX 5,820,001 to 120,000,000 | UGX 405,000 + 30% over 5,820,000 | 2026-27 | same |
