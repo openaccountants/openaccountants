@@ -18,8 +18,8 @@ covered_by:
   SC: mt-payroll
   PR: mt-payroll
 partial:
-  IT-IND: Existing repaired 2026 income skill is retained unchanged; it still identifies
-    unpublished Form 2 and indexed subtraction/proration gaps.
+  IT-IND: Rewritten to the 2026 standard on 14 Nov 2026 (rates table, method headings);
+    the 2026 Form 2, the indexed subtractions and EITC proration are not yet published.
   IT-CORP: 2026 return form not confirmed; detailed multistate sourcing, unitary groups,
     credits and NOL calculations referred.
   SC: UI coverage thresholds and monetary delinquency penalty calculations for special
@@ -28,7 +28,7 @@ partial:
 
 # Montana: 2026 tax skills
 
-Montana taxes personal and corporate income but has no general sales tax. The repaired income skill is preserved; this batch fills the missing corporate and payroll jobs. All are source-cited drafts without accountant approval. Currency is USD. No separate general sales skill is created. Selective taxes, property, estate/trust and pass-through entity return computations remain outside this four-job pack.
+Montana taxes personal and corporate income but has no general sales tax. The income skill was brought to the 2026 standard on 14 Nov 2026; the corporate and payroll skills fill the other jobs. All are source-cited drafts without accountant approval. Currency is USD. No separate general sales skill is created. Selective taxes, property, estate/trust and pass-through entity return computations remain outside this four-job pack.
 
 ## Domains
 
