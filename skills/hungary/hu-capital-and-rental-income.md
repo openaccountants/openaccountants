@@ -1,14 +1,15 @@
 ---
 name: hu-capital-and-rental-income
 description: "Hungarian personal income tax on capital income, rental income and the sale of real estate for private individuals, and the annual return (szja bevallás) and NAV's return proposal (bevallási tervezet), tax year 2026. Covers interest (65. §) and dividends (66. §) at 15%; the 13% social contribution tax (szocho) on them and the HUF 7,747,200 cap that applies to dividends but not interest, capital gains on securities (67. §), controlled capital market transactions (67/A. §) and their three-year loss offset, long-term investment accounts (TBSZ, 67/B. §: 0%, 10%, 15%), the NYESZ pension savings credit, rental income (16.-17. §) with the 10% flat cost or itemised costs and no szocho, real estate sales (62.-63. §) with the holding-period reduction, and the 20 May deadline. Triggers: kamatadó, osztalékadó, szocho kamat, TBSZ, NYESZ, árfolyamnyereség, lakáskiadás adó, ingatlan bérbeadás, ingatlaneladás adó, bevallási tervezet, szja bevallás. Out of scope: hu-income-tax (self-employed), hu-payroll (wages), hu-social-contributions, hu-cross-border."
-version: 0.2
+version: 0.3
 jurisdiction: HU
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
+type: computation
 ---
 
 # Hungary: capital income, rental income and the annual return for individuals (2026)

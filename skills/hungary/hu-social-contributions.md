@@ -1,14 +1,15 @@
 ---
 name: hu-social-contributions
 description: "Hungarian social contributions for the self-employed, tax year 2026. Covers the 18.5% social security contribution (társadalombiztosítási járulék, TB), split 54% pension, 37.9% health and 8.1% labour market, and the 13% social contribution tax (szociális hozzájárulási adó, szocho) a sole trader (egyéni vállalkozó) pays on themself: the base for the real-cost regime (the draw) and for flat-rate taxation (the cumulative quarterly method), the monthly floor of the 2026 minimum wage HUF 322,800 or guaranteed minimum wage HUF 373,200, who escapes the floor (36-hour job, student, pensioner), the family contribution allowance, szocho on the business dividend base up to HUF 7,747,200, KATA, company members (társas vállalkozó), the HUF 12,300 health service contribution and the quarterly 2658 return. Trigger phrases: TB járulék egyéni vállalkozó, szocho egyéni vállalkozó, minimum járulékalap, göngyölítés, 58-as bevallás, Hungarian self-employed contributions. Out of scope: hu-payroll (employees), hu-income-tax (szja), hu-cross-border."
-version: 2.2
+version: 2.3
 jurisdiction: HU
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
+type: computation
 ---
 
 # Hungary: social contributions for the self-employed (2026)

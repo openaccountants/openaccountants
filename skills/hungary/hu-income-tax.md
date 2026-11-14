@@ -1,14 +1,15 @@
 ---
 name: hu-income-tax
 description: "Hungarian personal income tax for the self-employed (egyéni vállalkozó), tax year 2026. Covers the three regimes: flat-rate taxation (átalányadózás) with the 45%, 80% and 90% cost ratios, the HUF 38,736,000 and 193,680,000 revenue ceilings and the tax-free HUF 1,936,800; the real-cost regime (vállalkozói személyi jövedelemadó) with the owner's draw (vállalkozói kivét) at 15%, business profit at 9%, the 2% income minimum and the 15% tax on the business dividend base (vállalkozói osztalékalap); and the small-taxpayer fixed tax (KATA) of HUF 50,000 a month with the 40% surtax above HUF 18 million. Also the 2026 family allowance, the mothers' and under-25 allowances, quarterly advances and the 20 May return. Trigger phrases: egyéni vállalkozó adó, átalányadó, vállalkozói kivét, osztalékalap, KATA, szja egyéni vállalkozó, self-employed tax Hungary. Out of scope: hu-social-contributions (TB and szocho), hu-payroll (employees), hu-cross-border, hu-corporate-tax."
-version: 2.2
+version: 2.3
 jurisdiction: HU
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
+type: computation
 ---
 
 # Hungary: income tax for the self-employed (2026)

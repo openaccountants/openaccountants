@@ -1,14 +1,15 @@
 ---
 name: hu-corporate-tax
 description: "Hungarian corporate income tax (társasági adó, TAO) for tax year 2026: resident companies and Hungarian permanent establishments (telephely) of foreign companies. Covers the 9% flat rate (Tao. tv. 19. §), the taxable base from pre-tax profit, the income minimum, development reserve, participation exemption, the interest limitation rule, loss carry-forward (5 years, 50% cap), group taxation (csoportos társasági adó), the 2629 return due on the last day of the fifth month after year end, monthly or quarterly advances, penalties and late payment interest, outbound withholding, CFC and exit tax. Also short sections on local business tax (HIPA), the innovation contribution and KIVA. Trigger phrases: Hungarian corporate tax, TAO, társasági adó, Kft tax, 9% Hungary, 2629 bevallás, HIPA, KIVA. Out of scope: individual income tax (hu-income-tax), social contributions (hu-social-contributions), VAT (hungary-vat-return), e-invoicing (hungary-einvoice)."
-version: 0.2
+version: 0.3
 jurisdiction: HU
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: corporate-tax
+type: computation
 ---
 
 # Hungary corporate income tax (társasági adó): 2026

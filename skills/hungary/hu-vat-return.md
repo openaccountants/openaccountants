@@ -1,10 +1,10 @@
 ---
 name: hu-vat-return
 description: "Hungarian VAT (általános forgalmi adó, ÁFA) for tax year 2026: who must charge it, the 27%, 18%, 5% and 0% rates (0% for prescription-only medicines from 1 September 2026), the subjective exemption limit of HUF 20 million for 2026 and HUF 22 million for 2027, the EU small-business scheme (EUR 100,000), monthly, quarterly or annual filing set from 2024 data, the 20th-of-the-month and 25 February deadlines, form 2665 and its M sheets, online invoice data reporting, refund minimums, domestic reverse charge, blocked input VAT, cash accounting, late-payment interest and penalties under the Art. Trigger on: Hungarian VAT, áfa bevallás, 2665, alanyi adómentesség, áfa gyakoriság, havi negyedéves éves áfa, Online Számla, fordított adózás, NAV refund. Out of scope: row-by-row classification and the supplier library (hungary-vat-return), invoice software and data format (hungary-einvoice), income tax (hu-income-tax), corporate tax (hu-corporate-tax)."
-version: 2.2
+version: 2.3
 jurisdiction: HU
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-14
 depends_on:
   - vat-workflow-base
   - eu-vat-directive
@@ -12,6 +12,7 @@ category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: vat-gst
+type: filing-howto
 ---
 
 # Hungary VAT (ÁFA): rates, thresholds, filing and penalties, tax year 2026 v2.1

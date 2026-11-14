@@ -1,13 +1,14 @@
 ---
 name: hu-other-independent-income
 description: "Hungarian tax on four kinds of private-person income that sit outside sole-trader status, tax year 2026. Covers agricultural primary producers (mezőgazdasági őstermelő): the tax-free band up to half the annual minimum wage (HUF 1,936,800), flat-rate taxation with a 90% cost ratio up to HUF 38,736,000, itemised costs or the 10% cost ratio, the HUF 100,000 producer credit, the family farm, and their TB and szocho; other independent activity such as fees under a civil-law contract (megbízási díj) with the 10% flat cost, payer withholding, 18.5% TB and 13% szocho; crypto-asset gains (Szja tv. 67/C. §) at 15% with annual netting and loss offset; and private accommodation (fizetővendéglátás) under the itemised flat tax of HUF 150,000 or HUF 38,400 per room (Szja tv. 57/A. §). Triggers: őstermelő adózás, megbízási díj adója, kriptoadó, kripto veszteség, magánszálláshely tételes átalányadó, Airbnb adó Magyarország. Out of scope: hu-income-tax, hu-capital-and-rental-income, hu-social-contributions, hu-payroll, hu-cross-border."
-version: 0.3
+version: 0.4
 jurisdiction: HU
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+type: computation
 ---
 
 # Hungary: primary producers, civil-law contract fees, crypto gains and holiday letting (2026)

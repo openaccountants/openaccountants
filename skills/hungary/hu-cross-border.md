@@ -1,14 +1,15 @@
 ---
 name: hu-cross-border
 description: "Hub skill for crossing the Hungarian border in tax year 2026. Covers individual tax residence under Szja tv. 3. § 2. (citizenship, EEA nationals present 183 days, long-term residence permits, then permanent home, centre of vital interests and habitual abode); non-residents taxed only on Hungarian-source income; the payer's 15% withholding on dividends, interest and royalties paid to foreign individuals and the treaty rate at source with a residence certificate and beneficial owner statement (Szja tv. 7. számú melléklet); no withholding on payments to foreign companies; the foreign tax credit (Szja tv. 32. §, 90%) and treaty exemption; the corporate exit tax with five instalments for EU and EEA moves (Tao. tv. 16/A. §); A1 certificates; penalties. Trigger phrases: külföldi illetőségű, belföldi illetőség, kettős adóztatás, illetőségigazolás, exit tax Hungary, moving to Hungary, leaving Hungary, non-resident dividend Hungary. Out of scope: hu-corporate-tax, hu-transfer-pricing, hu-income-tax, hu-social-contributions, hungary-vat-return."
-version: 0.3
+version: 0.4
 jurisdiction: HU
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: cross-border
+type: situation-rules
 ---
 
 # Hungary: cross-border tax for people and companies (2026)

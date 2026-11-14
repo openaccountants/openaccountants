@@ -1,14 +1,15 @@
 ---
 name: hu-payroll
 description: "Hungarian payroll for tax year 2026: what an employer withholds and pays on an employee's wage. Covers the 15% personal income tax advance (szja-előleg), the 18.5% employee social security contribution (társadalombiztosítási járulék, TB), the 13% employer social contribution tax (szociális hozzájárulási adó, szocho), the 2026 minimum wage (HUF 322,800) and guaranteed minimum wage (HUF 373,200), the family tax allowance (családi kedvezmény) at HUF 133,340, 266,660 and 440,000 per child a month, the family contribution allowance, the under-25 exemption (cap HUF 715,765 a month), the mothers' exemptions (under 30, two, three, four or more children), the monthly 08 return (form 2608) by the 12th, and penalties. Trigger phrases: Hungarian payroll, bérszámfejtés, nettó bér, családi kedvezmény, szocho munkáltató, TB járulék munkavállaló, 08-as bevallás, employer cost Hungary. Out of scope: hu-income-tax and hu-social-contributions (self-employed), hu-corporate-tax, hu-transfer-pricing."
-version: 0.2
+version: 0.3
 jurisdiction: HU
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
+type: computation
 ---
 
 # Hungary payroll (bérszámfejtés): 2026
