@@ -45,7 +45,7 @@ Which income is caught:
 | Solidarity surcharge on Kapitalertragsteuer and § 50a tax | 5.5% of the tax withheld | 2026 | https://www.gesetze-im-internet.de/solzg_1995/__4.html (§ 4; base in § 3) |
 | Total withheld on a dividend | 26.375% of gross | 2026 | https://www.bzst.de/DE/Unternehmen/Kapitalertraege/Kapitalertragsteuerentlastung/Sonderkonstellation/Erstattungsverfahren_50c/erstattungsverfahren_50c_node.html |
 | Foreign company without treaty or directive relief | Refund of two fifths of the Kapitalertragsteuer withheld and of the surcharge on it | 2026 | https://www.gesetze-im-internet.de/estg/__44a.html (§ 44a(9)); BZSt refund page (surcharge) |
-| § 50a on royalties | 15% of gross receipts, plus 5.5% surcharge (15.825% in all) | 2026 | https://www.gesetze-im-internet.de/estg/__50a.html (§ 50a(2)) |
+| § 50a on royalties | 15% of gross receipts, plus 5.5% surcharge (15.825% in all, computed) | 2026 | https://www.gesetze-im-internet.de/estg/__50a.html (§ 50a(2)); https://www.gesetze-im-internet.de/solzg_1995/__4.html (SolZG § 4) |
 | Small royalties under a treaty that bars German tax | No withholding if royalties from that payer in the year stay at or below EUR 10,000; the return is still filed | 2026 | https://www.gesetze-im-internet.de/estg/__50c.html (§ 50c(2) no. 2) |
 | Exemption certificate | Valid for at most five years, from the day the application reaches the BZSt; for treaty relief on dividends only for a company that is subject to tax at home without exemption and holds at least 10% of the nominal capital directly | 2026 | Same, § 50c(2) sentences 4, 5 |
 | Refund deadline | Four years from the end of the year of receipt; not before one year after payment, nor before a longer treaty period | 2026 | Same, § 50c(3) sentence 2 |
