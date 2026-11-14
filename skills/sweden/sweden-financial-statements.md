@@ -1,31 +1,31 @@
 ---
 name: sweden-financial-statements
-description: Swedish K2 annual-report working papers for an ordinary solvent non-parent private aktiebolag, with framework and audit screens, complete statement-caption references, conditional BAS mapping, notes, current tax, management report, filing clocks and a fully reconciled fictional example. Load with financial-statements-workflow-base, sweden-bookkeeping and se-corporate-income-tax. This Tier 2 draft requires professional review; unqualified framework, going-concern, transaction and filing cases return Needs Input.
-version: 0.1
+description: Swedish K2 annual-report working papers for an ordinary solvent non-parent private aktiebolag, with framework and audit screens, complete statement-caption references, conditional chart-of-accounts mapping, notes, current tax, management report, filing clocks and a fully reconciled fictional example. Load with financial-statements-workflow-base, sweden-bookkeeping and se-corporate-tax. This Tier 2 draft requires professional review; unqualified framework, going-concern, transaction and filing cases return Needs Input.
+version: 0.2
 jurisdiction: SE
 category: financial-statements
 tax_year: 2026
 tax_year_notes: "Ordinary calendar financial year 2026 under K2 BFNAR 2016:10 consolidated 16 June 2025, including BFNAR 2025:2. Prior-year example comparatives are supplied fictional published figures, not fresh qualification of 2025 law. Actual 2027 filing services remain unverified."
-last_updated: 2026-11-03
-review_status: pending_review
+last_updated: 2026-11-14
 tier: 2
 depends_on:
   - financial-statements-workflow-base
   - sweden-bookkeeping
-  - se-corporate-income-tax
+  - se-corporate-tax
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+domain: financial-statements
+type: situation-rules
 ---
 
-# Sweden Financial Statements
+# Sweden: K2 annual report for a private aktiebolag, 2026
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
-## What this file is
-
-Prepare K2 financial-statement working papers and a reviewer brief with financial-statements-workflow-base. Use sweden-bookkeeping for the reconciled ledger and se-corporate-income-tax for the separately established resident-AB tax computation. The reviewer receives all 6 engagement outputs, the management-report component and the outstanding decisions. This is a source-cited Tier 2 draft for the selected 2026 rules. Professional sign-off, actual signatures, service acceptance and filing remain required before acting.
+Prepare K2 financial-statement working papers and a reviewer brief with financial-statements-workflow-base. Use sweden-bookkeeping for the reconciled ledger and se-corporate-tax for the separately established resident-AB tax computation. The reviewer receives all 6 engagement outputs, the management-report component and the outstanding decisions. This is a source-cited Tier 2 draft for the selected 2026 rules. Professional sign-off, actual signatures, service acceptance and filing remain required before acting.
 
 The statutory annual report contains the applicable management report, income statement, balance sheet and notes. The base's 6 engagement outputs also contain the adjustment schedule, filing checklist and reviewer brief; those working papers do not replace statutory report components. [ÅRL 2:1][ÅRL]
 
-## Scope statement
+## Scope
 
 The implemented example and ordinary workflow concern a solvent Swedish resident, non-parent private aktiebolag already using K2, with a calendar 2026 financial year, SEK bookkeeping and sufficient comparatives. Eligibility is a decision supported by the full tests below, not a consequence of low turnover. A subsidiary, associate interest or jointly controlled interest is not automatically excluded by the non-parent scope; apply the relationship rules to the facts. [K2 chapter 1 and 19][K2]
 
@@ -45,7 +45,18 @@ The implemented example and ordinary workflow concern a solvent Swedish resident
 4. Apply the entire selected framework. BFNAR 2025:2 ordinarily applies to years beginning after 31 December 2025, with the stated earlier extended-first-year selector for businesses beginning after 30 June 2025 and ending 31 December 2026 or later. Its valuation transition applies to new transactions/items remeasured at balance date and does not simply restate prior statements. [K2 transition, p 333][K2]
 5. Establish the reporting and comparative periods, known source gaps and continuing-business evidence. Present the resulting entity/regime/framework/period/going-concern determination and wait for the first base confirmation before reviewing the trial balance. Combine overlapping universal-base questions at this checkpoint. Material later corrections require renewed confirmation of the affected facts.
 
-## Filing requirements
+
+## Ask the client first
+
+- Legal form, articles (auditor clause), directors and MD in office, and whether the company is a parent or has a foreign branch.
+- Employees, balance-sheet total and net turnover for 2024 and 2025, for the smaller-company, K2 and audit tests.
+- The framework used last year and any change of financial year or currency.
+- The closing trial balance with subledgers, asset register, loan maturities and the tax schedules.
+- Planned AGM date, proposed appropriation of the result and any events after year end.
+
+## The method, step by step
+
+### Filing requirements
 
 Every AB prepares an annual report under BFL 6:1; low turnover does not permit an AB to substitute simplified annual closing. The board prepares and decides the report, all current directors and an appointed MD sign, the applicable auditor reports, shareholders adopt and appropriate the result and Bolagsverket receives the required certified documents. Keep decision, individual signature, audit, adoption and submission dates distinct. [BFL 6:1][BFL] [ÅRL 2:7 and 8:2–3][ÅRL] [ABL 7:10–11 and 9:28][ABL]
 
@@ -59,7 +70,7 @@ Every AB prepares an annual report under BFL 6:1; low turnover does not permit a
 | Specified continued meeting |4–8 weeks later; postponed adoption/appropriation requires the specified registry notification within 4 weeks. | Full statutory conditions and notification; ABL 7:14. |
 | Registrar filing | Required certified documents must reach Bolagsverket within 1 month after adoption. A director/MD certifies adoption, its date and the appropriation decision. | Establish the exact document set and certificate; ÅRL 8:3. Upload alone is not submission. |
 | Conditional first-fee clock |7 months from year end, with the separate continued-meeting relief conditions. | This is not the universal adoption-based filing deadline; ÅRL 8:5–6. |
-| Ordinary income-tax return | For 31 December 2026 year end,1 July 2027 under SFL 32:2. Qualifying wholly electronic filing has the extra month;1 August 2027 is Sunday, giving 2 August 2027 under the statutory holiday rule. | All return parts/attachments must meet the electronic condition. Use se-corporate-income-tax, not the registrar clock. Actual 2027 service, signature, authorisation and receipt remain unverified. [SFL][SFL] [Time act][TIME] |
+| Ordinary income-tax return | For 31 December 2026 year end,1 July 2027 under SFL 32:2. Qualifying wholly electronic filing has the extra month;1 August 2027 is Sunday, giving 2 August 2027 under the statutory holiday rule. | All return parts/attachments must meet the electronic condition. Use se-corporate-tax, not the registrar clock. Actual 2027 service, signature, authorisation and receipt remain unverified. [SFL][SFL] [Time act][TIME] |
 | Tax payment and interest | Actual preliminary/final decisions and period rules govern separately from filing. | Use the corporate-tax payment/interest schedules and actual tax-account evidence. No payment instruction follows merely from the example provision. |
 
 For a private AB, the retained conditional late annual-report fee chain is SEK 7,500, another SEK 7,500 and SEK 15,000. Later 2-month periods run from when the relevant notice was sent. The 11-month liquidation ground and 15-month potential liability have their own conditions. Do not turn these into fixed successive filing dates or assume a fee necessarily applies. [ÅRL 8:5–12][ÅRL] [ABL 25:11 and related conditions][ABL]
@@ -68,7 +79,7 @@ For a private AB, the retained conditional late annual-report fee chain is SEK 7
 
 **Filing hold:** the complete current digital/paper document route, compatible software, representation, authentication, signatures, submission validation, acceptance receipt, corrections and payments have not been tested or fully qualified. The official digital sequence includes compatible software, upload, invitation/signing of the certificate, submission and receipt. A successful upload is insufficient. [Bolagsverket][REGISTRY]
 
-## Rates and thresholds
+### Rates and thresholds
 
 All amounts are selectors or source-qualified tax inputs; none is an automatic deduction or an invented materiality limit.
 
@@ -83,15 +94,15 @@ All amounts are selectors or source-qualified tax inputs; none is an automatic d
 | Periodisation-fund deduction | Up to 25% of the statutory pre-deduction business surplus, with matching book provision, eligibility, opening-fund deemed income and release conditions. | Separately established 2026 tax schedule | [IL 30:3,5–6a](https://data.riksdagen.se/dokumentstatus/sfs-1999-1229.json) |
 | Optional equipment useful life |5 years for the eligible K2 simplification, not a mandatory or typical life. Apply the full asset, residual-value and review rules. | Selected K2 edition | [K2 10.20–10.30, pp 204–209](https://www.bfn.se/wp-content/uploads/vl16-10-k2ar-kons2025.pdf) |
 
-## Computation rules
+### Computation rules
 
-### 1. Review inputs and confirm adjustments
+#### 1. Review inputs and confirm adjustments
 
-Obtain the complete signed-convention trial balance, opening balances, subledgers, source documents, asset and inventory registers, debt maturities, capital/appropriation documents, tax schedules, related-party facts, commitments and subsequent events. Match the period and confirm that total debits equal credits. Identify every custom/prohibited/unknown code and whether 8999/2099 closing transfers already exist. A BAS range supplies candidates; the transaction's purpose, counterparty, maturity, vintage and recognition rule determine its destination. [BAS 2026][BAS] [K2 chapters 3–4][K2]
+Obtain the complete signed-convention trial balance, opening balances, subledgers, source documents, asset and inventory registers, debt maturities, capital/appropriation documents, tax schedules, related-party facts, commitments and subsequent events. Match the period and confirm that total debits equal credits. Identify every custom/prohibited/unknown code and whether 8999/2099 closing transfers already exist. A BAS range supplies candidates; the transaction's purpose, counterparty, maturity, vintage and recognition rule determine its destination. [Kontoplan 2026][KONTOPLAN] [K2 chapters 3–4][K2]
 
 Prepare valid double entries with source, recognition/measurement basis, debit/credit, amount and affected notes. Distinguish a confirmed fact from an estimate and an unqualified rule. Apply the relevant K2 method rather than the generic base's IAS 37/IFRS examples. Present all adjustment facts and estimate inputs at the second base checkpoint and wait for confirmation before statements. Preference cannot remove a required adjustment. An unsupported required input returns Needs Input.
 
-### 2. Apply the full income-statement format
+#### 2. Apply the full income-statement format
 
 Use K2 4.4, pp 45–52. The following supplies the official Swedish caption hierarchy, with typographic line wraps joined. The first column preserves order; the second lists distinct items and totals in their order. Do not create an extraordinary-results category or an extra Summa skatter. Use every applicable caption, including separate financial impairments and appropriations. Function-based presentation is unavailable in K2. [K2 3.4–3.5 and 4.4][K2]
 
@@ -109,7 +120,7 @@ Use K2 4.4, pp 45–52. The following supplies the official Swedish caption hier
 
 Show both periods' beginning/end dates, adverse amounts with minus signs and the previous period in a separate right-hand column. A zero current-year item remains when the comparative has a value. Empty captions may otherwise be omitted; a not-retired fully depreciated/impaired asset retains its applicable item even at zero carrying value. K2 3.5 permits better-describing income headings/items/totals and adapted balance-sheet item names, but prohibits arbitrary additions or merging. Its prescribed abbreviated formats are separate authorised routes. The commentary permits omitting Resultat efter finansiella poster where there are no financial items, and Resultat före skatt where there is nothing under Skatter. [K2 3.5,3.10 and 4.3, pp 40–45][K2]
 
-### 3. Apply the full balance-sheet format and AB additions
+#### 3. Apply the full balance-sheet format and AB additions
 
 Use K2 4.7, pp 62–74 and AB 4.10–4.12, pp 92–94. Show both balance dates. Gross untaxed reserves sit separately from equity and provisions; no deferred-tax/equity split replaces that line. Registered capital, pending registration and free-premium vintage need actual documents. [K2 4.6–4.12 and 15.2–15.3][K2]
 
@@ -142,27 +153,27 @@ Use K2 4.7, pp 62–74 and AB 4.10–4.12, pp 92–94. Show both balance dates. 
 
 Only registered capital belongs in Aktiekapital. Apply the prescribed pending-issue and reduction-registration treatment rather than a code-name shortcut. Fri överkursfond contains the free premium paid during the financial year; prior free premium goes within Balanserat resultat following the relevant appropriation. Do not reclassify the current premium in anticipation of a future meeting. A smaller non-parent can still have relationship captions; inspect actual rights and counterparties. [K2 4.10–4.12, pp 92–94 andchapter 19][K2]
 
-Classify by the applicable transaction rule. Under 17.5, debt payable within 12 months is current, subject to its narrow renewable-overdraft exception; do not extend it to similar loans. The tax receivable is current under 13.2 even if later collection is expected. Keep tax, VAT, payroll, trade, accrued and relationship balances distinct and do not offset solely because their BAS codes share a group. [K2 13.2,17.5 andchapter 4][K2]
+Classify by the applicable transaction rule. Under 17.5, debt payable within 12 months is current, subject to its narrow renewable-overdraft exception; do not extend it to similar loans. The tax receivable is current under 13.2 even if later collection is expected. Keep tax, VAT, payroll, trade, accrued and relationship balances distinct and do not offset solely because their account codes share a group. [K2 13.2,17.5 andchapter 4][K2]
 
-### 4. Use abbreviation only through its prescribed substitutions
+#### 4. Use abbreviation only through its prescribed substitutions
 
 For K2 4.5, Bruttoresultat combines all 4 revenue-side items with Råvaror och förnödenheter, Handelsvaror and Övriga externa kostnader. The latter 3 appear in the explanatory column, not as remaining abbreviated face captions. Then retain Personalkostnader, both specified depreciation/impairment items, Övriga rörelsekostnader, Rörelseresultat and the complete financial/appropriation/tax/result sequence. There is no separate Rörelsekostnader heading or Summa rörelsekostnader in 4.5. Supply the 18.8A current/prior net-turnover note unless actual Bolagsverket dispensation establishes the exception. [K2 4.5, pp 52–57;18.8A, p 287][K2]
 
 For 4.8, keep assets, subscribed unpaid capital, fixed assets with intangible/tangible/financial aggregates and their total, current assets with inventory/receivable/investment aggregates, separate Kassa och bank and Redovisningsmedel, current-assets total and total assets. Then preserve all applicable AB 4.12 equity headings/items/totals, aggregate untaxed reserves, the specified Avsättningar aggregate, the separate statutory pension-provision item, long-term debt, short-term debt and the final total. The Avsättningar aggregate combines only other pension provisions and other provisions; the tryggandelagen pension caption remains separate and follows it. There is no abbreviated Summa kassa och bank. Abbreviation retains underlying asset-note detail; the AB long-term shareholder/related-person loan item enters financial fixed assets. [K2 4.8, pp 75–82 and 4.11–4.12, pp 92–94][K2]
 
-### 5. Establish depreciation, tax and reserve bridges
+#### 5. Establish depreciation, tax and reserve bridges
 
 Choose the applicable asset unit and a consumption-based method. The commentary describes straight-line, diminishing and production methods; a universal straight-line rule is unsupported. Begin in the first-use year, with the specified building exception. Full annual depreciation despite part-year use is optional; adjust a non 12-month year. Depreciation may be omitted in the disposal year. Cost-to-zero is the default; acquisition-date residual value has conditions and is unavailable for specified simplifications/buildings. Apply separate-unit/subsequent-expenditure rules and reconsider a plan when required; changed estimates operate prospectively. Hold an unqualified building-life/rate route. [K2 10.20–10.31, pp 204–209][K2]
 
 Apply the actual impairment/disposal rules, including the unit, asset type, life, triggering event, reversal cap and goodwill reversal prohibition. Recompute later depreciation on the reduced carrying value. Book impairment is not automatic tax deductibility. A fully depreciated asset still held is not silently removed from the statement/note. [K2 3.5,7.13–7.14 and 10.32–10.39][K2]
 
-Compute current tax through se-corporate-income-tax after its entity/period/refusal screens and reconciled book-to-tax schedules. Starting before income tax avoids an additional addback of that same charge. Opening periodisation funds can produce deemed income; current allocation needs its matching entry, cap and all eligibility/release conditions. Do not multiply an unqualified book profit by 20.6%. A BAS expense label does not establish a deduction. [IL 1:7,9:9,14:2–5,30:3–10a and 65:10][IL]
+Compute current tax through se-corporate-tax after its entity/period/refusal screens and reconciled book-to-tax schedules. Starting before income tax avoids an additional addback of that same charge. Opening periodisation funds can produce deemed income; current allocation needs its matching entry, cap and all eligibility/release conditions. Do not multiply an unqualified book profit by 20.6%. A BAS expense label does not establish a deduction. [IL 1:7,9:9,14:2–5,30:3–10a and 65:10][IL]
 
 K2 forbids deferred-tax assets/provisions under 11.5,13.3 and 16.4. Losses do not produce a tax asset. Gross untaxed reserves remain separate under 15.2–15.3; recognition generally requires tax legislation to make a corresponding book entry a condition of deduction, subject to the specified replacement-fund exception. Current estimated income tax and relevant prior-year assessment adjustments belong in Skatt på årets resultat. Property tax, pensionSLP and yield tax are operating costs. Do not extend the tax-reduction grant rule 9.14 automatically to every credit. [K2 chapter 4 pp 61–62,9.14,11.5,13.3,15.2–15.3 and 16.4][K2]
 
 Reconstruct the specified current/prior tax position not finally settled on the tax account, less actual preliminary tax paid. A net receivable enters Övriga fordringar; a net liability enters Skatteskulder. Preliminary payments change the balance, not tax expense. Reconcile separately settled tax-account movements, VAT/payroll, foreign tax/credits, interest, charges and contested assessments; hold unsupported recognition or measurement. [K2 p 90 and 13.2][K2]
 
-### 6. Prepare conditional notes and the management report
+#### 6. Prepare conditional notes and the management report
 
 Order notes as policies, statement-item order and other disclosures; cross-reference applicable face items. The following is a trigger register, not permission to omit an untested item. Some rows contain multiple statutory tests. Record the actual evidence for each required note or verified non-applicability. [K2 18.1–18.22 and applicable chapter 19 additions][K2]
 
@@ -193,7 +204,7 @@ Prepare the actual management report under ÅRL 6:1 and K2 5.2–5.8: registered
 
 The equity ratio can use the equity element of untaxed reserves without changing their gross balance-sheet presentation. A smaller-company exemption removes the specified future-development/risk, R&D, foreign-branch, financial-instrument-risk and sustainability requirements, but preserves the relevant fair-overview, special-circumstance and material-event duties. [K2 chapter 5][K2] [ÅRL 6:1][ÅRL]
 
-### 7. Assess continuation and events without inventing a horizon
+#### 7. Assess continuation and events without inventing a horizon
 
 Document the continuing-business assessment, evidence and period covered. ÅRL 2:4(1)(1) establishes the continuing-business presumption. The cited K2 provisions do not state a numeric minimum forecast period; this draft has not established a universal Swedish rule that no minimum exists. The subsequent-event window runs until the report is decided and ready for signature, not a fixed forward forecast horizon. Do not import K3 or auditing-standard periods into K2. [ÅRL 2:4][ÅRL] [K2 2.2 and 2.11–2.11A, pp 26–36][K2]
 
@@ -203,13 +214,13 @@ Do not manufacture an additional universal uncertainty note from ÅRL 2:3 alone.
 
 **Needs Input:** a conclusion depending on an unqualified forecast period, uncertain finance/support, threatened liquidation/bankruptcy or continuing-business measurement despite material doubt requires professional determination. The explicit duties above do not settle every uncertainty fact pattern.
 
-### 8. Present currency and reconcile displayed figures
+#### 8. Present currency and reconcile displayed figures
 
 K2 3.7–3.9 requires Swedish, the prescribed entity/report/year/date identification, currency and scale. SEK is the normal route; EUR requires the BFL 4:6 conditions and any currency-change rules. Permitted statement units are whole kronor or thousands of kronor, or whole euros or hundreds of euros. Label the scale and keep the appropriation in whole kronor/euros. [K2 pp 41–43][K2] [BFL 4:6][BFL] [ÅRL 2:6][ÅRL]
 
 Swedish presentation uses a decimal comma and non-breaking spaces between groups of 3 digits. Those language conventions are not a software/import contract. Keep full working precision, independently validate numeric values and reconcile every displayed subtotal and the accounting equation. This draft supplies no universal statutory tie-breaking/rounding convention beyond the permitted units. The example uses integer SEK; its one-decimal ratios use a stated illustration convention, not a legal rounding claim. [Isof grouping][ISOF-GROUP] [Isof decimal][ISOF-DECIMAL]
 
-## Worked examples
+## Worked cases
 
 ### Example A: complete fictional K2 working papers, calendar 2026
 
@@ -229,9 +240,9 @@ The prior published accounts show share capital 90,000, free premium 10,000, ret
 
 #### Trial balance, adjustments and the second checkpoint
 
-The input uses debit-positive/credit-negative balances and is before the current 8999/2099 closing pair. The table gives every unadjusted and adjusted account, plus its controlled statement destination. English account explanations are fixture definitions; the official BAS chart supplies the underlying labels, not this derived mapping. [BAS 2026][BAS] [K2 chapter 4][K2]
+The input uses debit-positive/credit-negative balances and is before the current 8999/2099 closing pair. The table gives every unadjusted and adjusted account, plus its controlled statement destination. English account explanations are fixture definitions; the official BAS chart supplies the underlying labels, not this derived mapping. [Kontoplan 2026][KONTOPLAN] [K2 chapter 4][K2]
 
-| BAS | Fixture purpose | Unadjusted signed SEK | Adjusted signed SEK | Destination |
+| Account | Fixture purpose | Unadjusted signed SEK | Adjusted signed SEK | Destination |
 | --- | --- | ---: | ---: | --- |
 | 1220 | Equipment cost | 200 000 | 200 000 | Inventarier, verktyg och installationer, gross/N4 |
 | 1229 | Accumulated equipment depreciation | -40 000 | -80 000 | Contra 1220, same net asset/N4 |
@@ -546,7 +557,7 @@ The 4.8 balance sheet aggregates the same tangible assets 120,000, receivables 9
 
 A separate **caption-only** provision control supplies other pension provisions 3,000, other provisions 2,000 and a statutory tryggandelagen pension provision 7,000. The abbreviated Avsättningar aggregate is 5,000; the 7,000 statutory pension item remains separately after it. Total provision exposure is 12,000. These are classification-test inputs, not recognised liabilities in Example A or permission to book an unqualified pension/provision amount. [K2 4.8, pp 79–80][K2]
 
-The main trial balance has no current closing pair: annual result is derived once from its open P&L accounts. If a different export already contains Dr 8999/Cr 2099 for 206,028, recognise that transfer status before reporting. Reconcile its 2099 to the computed annual result and identify 8999 as a closing-transfer control, not another operating/tax expense. Treating it as an expense would reduce the reported result to zero and fail the source-to-statement checks; adding both computed and posted result to equity would overstate equity by 206,028. Do not post a second pair, silently delete either source row or deliver whilst the mapping/closing bridge is unresolved. [BAS 8999/2099][BAS]
+The main trial balance has no current closing pair: annual result is derived once from its open P&L accounts. If a different export already contains Dr 8999/Cr 2099 for 206,028, recognise that transfer status before reporting. Reconcile its 2099 to the computed annual result and identify 8999 as a closing-transfer control, not another operating/tax expense. Treating it as an expense would reduce the reported result to zero and fail the source-to-statement checks; adding both computed and posted result to equity would overstate equity by 206,028. Do not post a second pair, silently delete either source row or deliver whilst the mapping/closing bridge is unresolved. [Kontoplan 8999/2099][KONTOPLAN]
 
 ```oa-check
 name: Fictional abbreviated captions and duplicate-result controls
@@ -635,7 +646,7 @@ expected:
 
 ## Edge cases and special rules
 
-- A balanced trial balance can still contain an unsupported code, prohibited K2 account, missing note or wrong current/non-current split. Investigate and reconcile; arithmetic balance is insufficient. BAS's # legend marks accounts not to use under K2. A code name/range is neither recognition authority nor a tax deduction. The detached # ownership around 8450/8451/8455 and the chart's duplicate 2087 meanings remain unqualified; use actual ledger definitions and source context, not an automated interpretation. [BAS 2026][BAS]
+- A balanced trial balance can still contain an unsupported code, prohibited K2 account, missing note or wrong current/non-current split. Investigate and reconcile; arithmetic balance is insufficient. The chart's # legend marks accounts not to use under K2. A code name/range is neither recognition authority nor a tax deduction. The detached # ownership around 8450/8451/8455 and the chart's duplicate 2087 meanings remain unqualified; use actual ledger definitions and source context, not an automated interpretation. [Kontoplan 2026][KONTOPLAN]
 - Keep prohibited deferred-tax balances, investment/financial impairments, bad debts, provisions, contract work, employee/related-party benefits and unusual asset transactions on hold until their applicable recognition/measurement and reporting rule is established. A generic IAS37 test from the base does not establish a K2 result. [K2 chapters 7–19][K2]
 - Preserve each source row and the no-duplicate-result control where a closing pair exists. Unknown/custom codes or unresolved 8999/2099 status require a complete reconciled bridge before output, not a balancing plug.
 - Do not replace the adoption-based filing deadline with a 7-month grace period or transfer the wholly electronic tax-return extension to annual-report filing. A continued meeting, notice-based fee, document defect, liquidation ground or liability case needs its own statutory conditions. [ÅRL 8][ÅRL] [ABL 7:14 and 25:11][ABL] [SFL 32:2][SFL]
@@ -643,7 +654,17 @@ expected:
 - A proposed dividend requires the applicable capital/distributability conditions and defensibility statement, not only a positive bank balance or unrestricted-equity total. The example proposes no dividend. Capital-control obligations and ongoing solvency need separate current facts. [ABL 17–18 and 25][ABL]
 - Reporting data remains accounting information. Apply BFL 7 retention, including through the end of the 7 thyear after the calendar year in which the financial year ended; the ordinary 2026 illustration points to end 2033. Preserve access, integrity and applicable storage/transfer conditions. This guide authorises no destruction. [BFL 7:1–6][BFL]
 
-## Self-checks
+## When to refuse or refer
+
+| Situation | Action |
+| --- | --- |
+| K2 excluded by K2 1.1A or 1.1B, or the company chooses K3 | Refer: this skill does not implement K3, RFR 2 or IFRS. Do not mix their rules into K2. |
+| Parent company, consolidation, public AB, housing association, foreign branch or another legal form | Refer to the applicable regime; this skill gives no clearance for them. |
+| First adoption, change of framework, first, changed or extended financial year, currency change | Hold until the transition and comparatives are qualified. |
+| Valuation, tax, financing or going-concern facts unsupported | Keep the item and the delivery on hold; never insert a typical amount. |
+| Proposed dividend without the capital and defensibility tests | Refuse to present it as payable until ABL 17-18 are satisfied. |
+
+## Completion checklist
 
 Run all 14 base checks on the complete 6-output package and management-report component. A required unresolved fact is Needs Input, not a passing check. If a check fails, fix the outputs and rerun all 14; after 2 failures on the same item, stop and report under the base. The table records the fictional case's verification targets, not actual professional sign-off.
 
@@ -697,30 +718,10 @@ This skill and its outputs are provided for informational and computational purp
 [ABL]: https://data.riksdagen.se/dokumentstatus/sfs-2005-551.json
 [BFL]: https://data.riksdagen.se/dokumentstatus/sfs-1999-1078.json
 [BFN-SIZE]: https://www.bfn.se/wp-content/uploads/vl-2006-11-gransvarden-kons-2026.pdf
-[BAS]: https://www.bas.se/wp-content/uploads/2026/04/BAS_kontoplan_2026_v2.pdf
+[KONTOPLAN]: https://www.bas.se/wp-content/uploads/2026/04/BAS_kontoplan_2026_v2.pdf
 [IL]: https://data.riksdagen.se/dokumentstatus/sfs-1999-1229.json
 [SFL]: https://data.riksdagen.se/dokumentstatus/sfs-2011-1244.json
 [TIME]: https://data.riksdagen.se/dokumentstatus/sfs-1930-173.json
 [REGISTRY]: https://bolagsverket.se/sjalvservice/etjanster/lamnainarsredovisningendigitalt.1663.html
 [ISOF-GROUP]: https://frageladan.isof.se/faqs/30318
 [ISOF-DECIMAL]: https://frageladan.isof.se/faqs/21402
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained in the
-[ryanduguid/openaccountants fork](https://github.com/ryanduguid/openaccountants).
-Check its quality tier, recorded review status and cited sources before use.
-Choose a practitioner whose credentials and engagement scope you have verified.
-The links below are optional upstream services; they do not publish or verify
-this fork's changes.
-
-- Upstream connection service: https://www.openaccountants.com/connect
-- Upstream accountant network: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
