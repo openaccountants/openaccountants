@@ -46,11 +46,11 @@ The basic answer to "do I pay income tax in the Bahamas" is no. No Bahamian law 
 | Item | 2026 figure | Conditions | Source |
 |---|---|---|---|
 | Personal income tax | None | No income tax Act exists in the Bahamian statute list | Bahamas legislation, Acts by year and index: https://laws.bahamas.gov.bs/cms/legislation/acts_only/acts-by-year.html |
-| NIB employee rate | 4.65% of insurable wages | Fifth Schedule 3.9% plus half of the 1.5 point increase from 1 July 2024 | National Insurance (Contributions) (Amendment) Regulations 2024, regs 4 and 9: https://laws.bahamas.gov.bs/cms/images/LEGISLATION/AMENDING/2024/2024-0037S/2024-0037S.pdf |
-| NIB employer rate | 6.65% of insurable wages | Fifth Schedule 5.9% plus half of the 1.5 point increase | same |
-| NIB combined, employed person | 11.30% | 9.8% plus 1.5 points | same |
-| NIB self-employed rate | 10.30% of insurable income | Fifth Schedule 8.8% plus 1.5 points (reg. 30(1A)), self-employed under 65 not receiving retirement benefit | same |
-| NIB voluntarily insured | 6.50% | 5.0% plus 1.5 points (reg. 35(1A)) | same |
+| NIB employee rate | 4.65% of insurable wages (computed from the Fifth Schedule rates and the 1.5 point increase) | Fifth Schedule 3.9% plus half of the 1.5 point increase from 1 July 2024 | National Insurance (Contributions) (Amendment) Regulations 2024, regs 4 and 9: https://laws.bahamas.gov.bs/cms/images/LEGISLATION/AMENDING/2024/2024-0037S/2024-0037S.pdf |
+| NIB employer rate | 6.65% of insurable wages (computed from the Fifth Schedule rates and the 1.5 point increase) | Fifth Schedule 5.9% plus half of the 1.5 point increase | same |
+| NIB combined, employed person | 11.30% (computed from the Fifth Schedule rates and the 1.5 point increase) | 9.8% plus 1.5 points | same |
+| NIB self-employed rate | 10.30% of insurable income (computed from the Fifth Schedule rates and the 1.5 point increase) | Fifth Schedule 8.8% plus 1.5 points (reg. 30(1A)), self-employed under 65 not receiving retirement benefit | same |
+| NIB voluntarily insured | 6.50% (computed from the Fifth Schedule rates and the 1.5 point increase) | 5.0% plus 1.5 points (reg. 35(1A)) | same |
 | NIB, employed person 65 or over in receipt of retirement benefit, or earning under 50% of the ceiling while receiving it | Employer 2.0% only | Fifth Schedule rows | same |
 | NIB insurable wage ceiling | BSD 810 a week | Effective July 2024 | NIB, contributions: https://www.nib-bahamas.com/contributions |
 | NIB payment deadline | By the 15th of the following month | | same |
@@ -63,8 +63,8 @@ The basic answer to "do I pay income tax in the Bahamas" is no. No Bahamian law 
 | Accountant's report with renewal | Turnover BSD 250K or more: independent accountant's report; BSD 250K to 4.99M: review report by a BICA member; BSD 5 million or more: audited statements | DIR renewal facts | DIR, renewing a business licence: https://inlandrevenue.finance.gov.bs/business-licence/renewing-business-licence/ |
 | VAT registration | Taxable activity over BSD 100,000 | Past or next 12 months; see `bahamas-vat` | DIR VAT FAQs: https://inlandrevenue.finance.gov.bs/value-added-tax/faqs/ |
 | Real property tax, owner-occupied | First BSD 300,000 exempt; next BSD 200,000 at 0.625%; balance at 1% | Owner lives there and uses it only as a dwelling | DIR, RPT FAQs: https://inlandrevenue.finance.gov.bs/real-property-tax/faqs-rpt/ |
-| Real property tax, owner-occupied cap | BSD 150,000 a year | s. 3(2) proviso as replaced | Real Property Tax (Amendment) Act 2026, s. 3: https://laws.bahamas.gov.bs/cms/images/LEGISLATION/AMENDING/2026/2026-0021A/2026-0021A.pdf |
-| Real property tax, foreign owner-occupied | 0.625% on the part up to BSD 1 million; 1% on the part above; cap BSD 200,000 | New s. 3(2)(aa), Act in force 1 July 2026 | same |
+| Real property tax, owner-occupied cap | one hundred and fifty thousand dollars a year | s. 3(2) proviso as replaced | Real Property Tax (Amendment) Act 2026, s. 3: https://laws.bahamas.gov.bs/cms/images/LEGISLATION/AMENDING/2026/2026-0021A/2026-0021A.pdf |
+| Real property tax, foreign owner-occupied | five-eighths of one per centum on the part up to one million dollars; one per centum on the part above; cap two hundred thousand dollars | New s. 3(2)(aa), Act in force 1 July 2026 | same |
 | Real property tax, residential of 4 units or fewer, not owner-occupied | BSD 300 flat up to BSD 75,000; 0.625% above | DIR FAQ | DIR, RPT FAQs: https://inlandrevenue.finance.gov.bs/real-property-tax/faqs-rpt/ |
 | Real property tax, commercial or foreign-owned rental | 0.75% on the first BSD 500,000; 1% on the next BSD 1.5 million; 1.5% on the balance | DIR FAQ | same |
 | Real property tax, due date and discount | Due 31 March; 10% discount if paid in full by 31 March | | same |
@@ -283,7 +283,7 @@ Reviewer flags: NIB registered and current; licence held before trading; first-h
 | DIR, annual business licence: read for eligibility and the Bahamas Investment Authority approval for non-Bahamians | https://inlandrevenue.finance.gov.bs/business-licence/business-licenceannual-business-licence/ | 2026-11-14 |
 | DIR, business licence fines and penalties: read for the cessation notice deadline | https://inlandrevenue.finance.gov.bs/business-licence/fees-fines-and-penalties-bl/ | 2026-11-14 |
 | DIR, RPT FAQs: read for the property classes and rates, 31 March, 10% discount, surcharge, interest and pensioner discount | https://inlandrevenue.finance.gov.bs/real-property-tax/faqs-rpt/ | 2026-11-14 |
-| Real Property Tax (Amendment) Act 2026: read for the BSD 150,000 cap and the foreign owner-occupied class | https://laws.bahamas.gov.bs/cms/images/LEGISLATION/AMENDING/2026/2026-0021A/2026-0021A.pdf | 2026-11-14 |
+| Real Property Tax (Amendment) Act 2026: read for the cap of one hundred and fifty thousand dollars and the foreign owner-occupied class | https://laws.bahamas.gov.bs/cms/images/LEGISLATION/AMENDING/2026/2026-0021A/2026-0021A.pdf | 2026-11-14 |
 | VAT Act reprint 1 July 2024: read for the Third Schedule conveyance rates | https://inlandrevenue.finance.gov.bs/wp-content/uploads/2024/11/Value-Added-Tax-Act.pdf | 2026-11-14 |
 | DIR VAT FAQs: read for the BSD 100,000 registration threshold | https://inlandrevenue.finance.gov.bs/value-added-tax/faqs/ | 2026-11-14 |
 | DIR First home FAQs: read for inter vivos gifts zero rated for VAT | https://inlandrevenue.finance.gov.bs/faqs-first-home/ | 2026-11-14 |

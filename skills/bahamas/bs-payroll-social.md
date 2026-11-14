@@ -35,14 +35,14 @@ There is no income tax in The Bahamas, so no income tax is withheld from wages: 
 
 | Category | Employee | Employer | Total | Source |
 |---|---|---|---|---|
-| Employed persons (general) | 4.65% | 6.65% | 11.30% | National Insurance (Contributions) (Amendment) Regulations 2024, reg. 4 (new reg. 23(1A)) and reg. 9 (Fifth Schedule): https://laws.bahamas.gov.bs/cms/images/LEGISLATION/AMENDING/2024/2024-0037S/2024-0037S.pdf |
+| Employed persons (general) | 4.65% (computed from the Fifth Schedule rates and the 1.5 point increase) | 6.65% | 11.30% | National Insurance (Contributions) (Amendment) Regulations 2024, reg. 4 (new reg. 23(1A)) and reg. 9 (Fifth Schedule): https://laws.bahamas.gov.bs/cms/images/LEGISLATION/AMENDING/2024/2024-0037S/2024-0037S.pdf |
 | Fifth Schedule base before the increase | 3.9% | 5.9% | 9.8% | same |
 | Increase from 1 July 2024 | 0.75 points | 0.75 points | 1.5 points, shared equally | same |
 | Employed, earning under 50% of the ceiling and in receipt of retirement benefit | 0% | 2.0% | 2.0% | same |
 | Employed, 65 or over and in receipt of retirement benefit | 0% | 2.0% | 2.0% | same |
 | Persons employed during the summer | 0% | 2.0% | 2.0% | same |
-| Self-employed under 65, not receiving retirement benefit | 10.30% | | 10.30% | Regs 2024, reg. 5 (new reg. 30(1A)): 8.8% plus 1.5 points: https://laws.bahamas.gov.bs/cms/images/LEGISLATION/AMENDING/2024/2024-0037S/2024-0037S.pdf |
-| Voluntarily insured | 6.50% | | 6.50% | Regs 2024, reg. 7 (new reg. 35(1A)): 5.0% plus 1.5 points: https://laws.bahamas.gov.bs/cms/images/LEGISLATION/AMENDING/2024/2024-0037S/2024-0037S.pdf |
+| Self-employed under 65, not receiving retirement benefit | 10.30% (computed from the Fifth Schedule rates and the 1.5 point increase) | | 10.30% | Regs 2024, reg. 5 (new reg. 30(1A)): 8.8% plus 1.5 points: https://laws.bahamas.gov.bs/cms/images/LEGISLATION/AMENDING/2024/2024-0037S/2024-0037S.pdf |
+| Voluntarily insured | 6.50% (computed from the Fifth Schedule rates and the 1.5 point increase) | | 6.50% | Regs 2024, reg. 7 (new reg. 35(1A)): 5.0% plus 1.5 points: https://laws.bahamas.gov.bs/cms/images/LEGISLATION/AMENDING/2024/2024-0037S/2024-0037S.pdf |
 | Insurable wage ceiling | BSD 810 a week | Effective July 2024; contributions stop at the ceiling; no later ceiling shown on the NIB page read | NIB, contributions: https://www.nib-bahamas.com/contributions |
 | Payment deadline | Received by NIB by the 15th of the month after the month the contributions were due | Monthly | same |
 | Contribution week | Monday to Sunday | One contribution a week per worker, paid by the principal employer | same |
