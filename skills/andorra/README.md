@@ -14,7 +14,7 @@ partial:
 
 # Andorra tax pack
 
-Accountable owner: Michael, [issue #376](https://github.com/openaccountants/openaccountants/issues/376). Existing country work continues in [PR #774](https://github.com/openaccountants/openaccountants/pull/774). Six computational Guides cover the seven domains for 2026. Amounts are EUR; IGI is the domestic indirect tax. All remain Source-cited drafts without accountant attestation. One fresh whole-pack [source and preservation review](../../evidence/research/andorra-2026/independent-review/report.md) is complete; its four P2 findings and P3 clarification are closed in the [repair review](../../evidence/research/andorra-2026/independent-review/repair-closure.md). The IT-IND partial, now narrowed to one income band of the dependant test, remains open and is excluded from complete-coverage claims. This reviewed continuation is published through the existing country PR; issue #376 remains open. Independent agent review does not establish accountant attestation.
+Six skills cover Andorra's seven tax areas for 2026. Amounts are in EUR; IGI is Andorra's general indirect tax (its VAT). None of these skills has been approved by an accountant yet: each is built from the law and its official sources. One gap remains in individual income tax (one income band of the dependant test), so this pack does not claim complete coverage there. Maintained by OpenAccountants.
 
 | Tax | Guide | Draft scope |
 |---|---|---|
