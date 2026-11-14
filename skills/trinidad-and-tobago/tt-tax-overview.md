@@ -7,7 +7,7 @@ description: >
   allowance TT$90,000), corporation tax (30%, 35% for banks and petrochemical
   companies), business levy 0.6%, Green Fund Levy 0.3%, VAT 12.5% (threshold
   TT$600,000) and PAYE; NIBTT collects National Insurance at 16.2% from January
-  2026. Trigger on Trinidad tax overview, TT tax system, BIR, IRD Trinidad. Not
+  2026 (subject to all legislative approvals, per NIBTT). Trigger on Trinidad tax overview, TT tax system, BIR, IRD Trinidad. Not
   reviewed by an accountant.
 version: 1.0
 jurisdiction: TT
@@ -46,7 +46,7 @@ Anyone needing the shape of Trinidad and Tobago tax for the 2026 year of income 
 | Business levy | 0.6% of gross receipts, if higher than income or corporation tax | Exemptions apply | same |
 | Green Fund Levy | 0.3% of gross receipts | Companies and partnerships | IRD, corporations page: https://www.ird.gov.tt/corporations |
 | VAT | 12.5%; registration above TT$600,000 in 12 months | Two-month periods for most | IRD, VAT page: https://www.ird.gov.tt/VAT |
-| National Insurance | 16.2% of insurable earnings from 5 January 2026 | One third employee, two thirds employer | NIBTT: https://www.nibtt.net/Contribution_Rates/rates.html |
+| National Insurance | 16.2% of insurable earnings from 5 January 2026 | One third employee, two thirds employer; NIBTT says subject to all legislative approvals, see Not yet confirmed | NIBTT: https://www.nibtt.net/Contribution_Rates/rates.html |
 | Annual returns | 30 April; 2025 returns of self-employed and companies extended to 2 November 2026 | | IRD, public notice: https://www.ird.gov.tt/news/public-notice-self-employed-sole-traders-and-companies |
 
 ## The base
@@ -124,6 +124,7 @@ expected:
 | IRD, corporations page: read for the Green Fund Levy and quarterly dates | https://www.ird.gov.tt/corporations | 2026-11-14 |
 | IRD, VAT page: read for the rate and threshold | https://www.ird.gov.tt/VAT | 2026-11-14 |
 | NIBTT, contribution rates page: read for the 2026 and 2027 rates | https://www.nibtt.net/Contribution_Rates/rates.html | 2026-11-14 |
+| NIBTT, Acts and amendments page: read for the contribution orders and legal notices listed (latest contribution amendment 2008; none for 2025 or 2026) | https://www.nibtt.net/Amendments/NIBTTAct_amend.html | 2026-11-14 |
 | IRD, public notice on the 2025 filing deadline: read in full | https://www.ird.gov.tt/news/public-notice-self-employed-sole-traders-and-companies | 2026-11-14 |
 
-Not yet confirmed: Finance Act changes for 2026 after the 2024 consolidations; the FY2026 budget proposals (0.25% asset levy on banks and insurers, landlord surcharge of 2.5% and 3.5% on gross rent); interest on late corporation tax.
+Not yet confirmed: whether NIBTT's 16.2% NIS rate from 5 January 2026 received all legislative approvals (NIBTT's 2026 table says it is subject to them; no enacting legal notice found on NIBTT's legislation page, read 14 Nov 2026); Finance Act changes for 2026 after the 2024 consolidations; the FY2026 budget proposals (0.25% asset levy on banks and insurers, landlord surcharge of 2.5% and 3.5% on gross rent); interest on late corporation tax.

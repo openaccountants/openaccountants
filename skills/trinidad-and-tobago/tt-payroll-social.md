@@ -3,7 +3,8 @@ name: tt-payroll-social
 description: >
   Trinidad and Tobago employer payroll for 2026, PAYE income tax, health
   surcharge and National Insurance (NIS). Gives the NIS rate of 16.2% of
-  insurable earnings from 5 January 2026 (19.2% from 4 January 2027), shared one
+  insurable earnings from 5 January 2026 (NIBTT: subject to all legislative
+  approvals; 19.2% from 4 January 2027), shared one
   third employee and two thirds employer, the 16 earnings classes with the top
   class from TT$13,600 a month, health surcharge of TT$8.25 or TT$4.80 a week,
   PAYE at 25% and 30% after the TT$90,000 personal allowance, the TD1 and TD4,
@@ -37,9 +38,9 @@ Employers in Trinidad and Tobago paying emoluments in 2026, and their employees.
 
 | Item | Amount | Conditions | Source |
 |---|---|---|---|
-| NIS total contribution rate | 16.2% of insurable earnings | From 5 January 2026, subject to all legislative approvals (13.2% from 5 September 2016) | NIBTT, earning classes and contribution rates: https://www.nibtt.net/Contribution_Rates/rates.html |
+| NIS total contribution rate | 16.2% of insurable earnings | From 5 January 2026; NIBTT's table and PDF say "subject to all legislative approvals" and no enacting legal notice was found on NIBTT's legislation page (13.2% from 5 September 2016): see Not yet confirmed | NIBTT, earning classes and contribution rates: https://www.nibtt.net/Contribution_Rates/rates.html |
 | NIS rate from 2027 | 19.2% | From 4 January 2027 | same |
-| NIS 2026, class I | Weekly earnings TT$200 to 339.99 (monthly TT$867 to 1,472.99): employee TT$14.60, employer TT$29.20 a week | Lowest class | NIBTT, 2026 contribution table: https://www.nibtt.net/Contribution_Rates/NISContributions_20260105.pdf |
+| NIS 2026, class I | Weekly earnings TT$200 to 339.99 (monthly TT$867 to 1,472.99): employee TT$14.60, employer TT$29.20 a week | Lowest class; 2026 table subject to all legislative approvals | NIBTT, 2026 contribution table: https://www.nibtt.net/Contribution_Rates/NISContributions_20260105.pdf |
 | NIS 2026, class XIV | Weekly TT$2,630 to 2,919.99 (monthly TT$11,397 to 12,652.99): employee TT$149.90, employer TT$299.80 | | same |
 | NIS 2026, class XV | Weekly TT$2,920 to 3,137.99 (monthly TT$12,653 to 13,599.99): employee TT$163.60, employer TT$327.20 | | same |
 | NIS 2026, class XVI (ceiling) | Weekly TT$3,138 and over (monthly TT$13,600 and over): employee TT$169.50, employer TT$339.00, total TT$508.50 a week | Highest class | same |
@@ -93,7 +94,7 @@ income tax liability / number of pay periods = tax per pay period
 
 ### Example 1: Employee on TT$180,000 a year, 12 monthly pays
 
-Chargeable income TT$180,000 - TT$90,000 = TT$90,000; tax TT$22,500 a year, TT$1,875 a month. Monthly pay TT$15,000 is in NIS class XVI: employee TT$169.50 and employer TT$339.00 a week; a month with four contribution weeks gives TT$678.00 and TT$1,356.00. Health surcharge TT$8.25 a week, TT$33.00 for four weeks.
+Chargeable income TT$180,000 - TT$90,000 = TT$90,000; tax TT$22,500 a year, TT$1,875 a month. Monthly pay TT$15,000 is in NIS class XVI of NIBTT's 2026 table (subject to all legislative approvals, see Not yet confirmed): employee TT$169.50 and employer TT$339.00 a week; a month with four contribution weeks gives TT$678.00 and TT$1,356.00. Health surcharge TT$8.25 a week, TT$33.00 for four weeks.
 
 ```oa-check
 name: TT 2026 monthly payroll, salary 180k a year, four-week month
@@ -119,7 +120,7 @@ expected:
 
 ### Example 2: How the class XVI contribution splits, and the employer's cost for a year
 
-At 16.2% the class XVI weekly total is TT$508.50: the employee pays one third (TT$169.50) and the employer two thirds (TT$339.00). A year of 52 contribution weeks costs the employer TT$17,628 at the 2026 rate; budget for the 19.2% table from 4 January 2027.
+At 16.2% (NIBTT's 2026 table, subject to all legislative approvals; see Not yet confirmed) the class XVI weekly total is TT$508.50: the employee pays one third (TT$169.50) and the employer two thirds (TT$339.00). A year of 52 contribution weeks costs the employer TT$17,628 at the 2026 rate; budget for the 19.2% table from 4 January 2027.
 
 ```oa-check
 name: TT 2026 NIS class XVI shares and annual employer cost
@@ -151,8 +152,9 @@ expected:
 |---|---|---|
 | NIBTT, earning classes, contribution rates and benefit rates page: read for the 16.2% rate from 5 January 2026 (subject to legislative approvals) and 19.2% from 4 January 2027 | https://www.nibtt.net/Contribution_Rates/rates.html | 2026-11-14 |
 | NIBTT, earnings classes and contributions from 5 January 2026: read in full for the 16 classes and the employee and employer weekly amounts | https://www.nibtt.net/Contribution_Rates/NISContributions_20260105.pdf | 2026-11-14 |
+| NIBTT, Acts and amendments page: read for the contribution orders and legal notices listed (latest contribution amendment 2008; none for 2025 or 2026) | https://www.nibtt.net/Amendments/NIBTTAct_amend.html | 2026-11-14 |
 | IRD, corporations page: read for PAYE computation, health surcharge rates and exemptions | https://www.ird.gov.tt/corporations | 2026-11-14 |
 | IRD, self-employed and sole traders page: read for employer duties, the 15th monthly deadline and the end of February annual summary | https://www.ird.gov.tt/self-employed-sole-trader | 2026-11-14 |
 | Income Tax Act, Chap. 75:01 (2024 consolidation): read for s. 17, the Third Schedule and the withholding remittance and interest provisions | https://www.ird.gov.tt/Media/Default/IRDLegislation/Ch2024_75.01-Income-Tax-Act--2024.pdf | 2026-11-14 |
 
-Not yet confirmed: whether the 16.2% NIS rate received all legislative approvals; the NIBTT payment due date for contributions (earlier version: by the 15th of the following month) and NIS late payment surcharges; the earlier version's statement that employee NIS is deductible for income tax; how the monthly number of contribution weeks is counted for a monthly payroll; the penalty percentage for late PAYE remittance by employers.
+Not yet confirmed: whether the 16.2% NIS rate and the 2026 class amounts received all legislative approvals (NIBTT's 2026 PDF still says "subject to all legislative approvals"; NIBTT's legislation page, read 14 Nov 2026, lists no 2025 or 2026 contribution order or legal notice); employers paying at the 2026 table follow NIBTT's published rates; the NIBTT payment due date for contributions (earlier version: by the 15th of the following month) and NIS late payment surcharges; the earlier version's statement that employee NIS is deductible for income tax; how the monthly number of contribution weeks is counted for a monthly payroll; the penalty percentage for late PAYE remittance by employers.
