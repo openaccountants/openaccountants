@@ -17,13 +17,14 @@ description: >
 jurisdiction: BH
 category: international
 tax_year: 2026
-last_updated: 2026-10-29
-version: 0.1
+last_updated: 2026-11-14
+version: 0.2
+type: situation-rules
 tier: 2
 domain: transfer-pricing
 ---
 
-# Bahrain transfer pricing v0.1
+# Bahrain transfer pricing v0.2
 
 **Draft law.** This skill states the law in force for 2026. A draft corporate income tax law went to the legislature on 29 December 2025. Secondary sources report fiscal years from 1 January 2027 and transfer pricing rules for residents above BHD 1 million ([KPMG, March 2026](https://kpmg.com/us/en/taxnewsflash/news/2026/03/tnf-bahrain-overview-of-draft-law-introducing-10-percent-corporate-income-tax.html)). We found no confirmation of enactment. Before advising on a period starting in 2027, check its status with the NBR.
 
@@ -88,11 +89,11 @@ Bahrain.
 | CbCR: Excluded MNE Group | Consolidated revenue under BHD 342 million in the preceding Fiscal Year | Fiscal Years from 1 Jan 2021, incl. 2026 | https://www.sijilat.bh/temp/CommercialLaws/18%20EN.pdf |
 | CbCR report deadline (Bahrain Ultimate Parent Entity) | 12 months after the last day of the Reporting Fiscal Year | 2026 | https://www.sijilat.bh/temp/CommercialLaws/18%20EN.pdf |
 | Transitional CbCR safe harbour, de minimis test | Bahrain revenue under EUR 10 million and profit before tax under EUR 1 million on the CbC report | Fiscal Years beginning on or before 31 Dec 2026 (none ending after 30 Jun 2028) | https://www.nbr.gov.bh/laws_regulations/dmtt |
-| Transitional CbCR safe harbour, alternative ETR test | 16% (Fiscal Years beginning in 2025), 17% (Fiscal Years beginning in 2026) | 2025, 2026 | https://www.nbr.gov.bh/laws_regulations/dmtt |
+| Transitional CbCR safe harbour, alternative ETR test | 16% (Fiscal Years beginning in 2025); the 2026 rate is on the Not yet confirmed line | 2025 | https://www.nbr.gov.bh/laws_regulations/dmtt |
 | Master file supply chain description | Five largest products or services, plus any product or service of at least 5% of group turnover | 2026 | https://www.nbr.gov.bh/laws_regulations/dmtt |
 | Local file and master file size threshold | None set: every in-scope Bahrain entity with an intra-group transaction prepares both | 2026 | https://www.nbr.gov.bh/laws_regulations/dmtt |
 | Record retention, incl. transfer pricing documentation | 5 years after the end of the Fiscal Year | 2026 | https://www.nbr.gov.bh/publications/view/dmtt_procedural_guide |
-| Hydrocarbon income tax | 46% | 2026 | https://www.lloc.gov.bh/Legislation/id/L2279 |
+| Hydrocarbon income tax | 46% | 2026 | https://www.lloc.gov.bh/Legislation/HTM/L2279 (art. 2) |
 
 The two thresholds are different tests. The DMTT test is in euros and looks at
 two of the four prior years (DMTT Law art. 3(C)). The CbCR test is in Bahraini
@@ -332,7 +333,7 @@ expected:
 - What intra-group transactions does each Bahrain entity have, with which
   countries, and are any of them asset sales between Bahrain entities?
 - Does the group's CbC report for Bahrain show revenue under EUR 10 million and
-  profit under EUR 1 million, or an alternative ETR of 17% or more for 2026?
+  profit under EUR 1 million, or an alternative ETR at or above the 2026 safe harbour rate (see Not yet confirmed)?
 - Does any Bahrain entity explore for, produce or refine hydrocarbons, and are
   there foreign APAs, foreign transfer pricing adjustments or open MAP cases?
 
@@ -342,20 +343,21 @@ expected:
 |---|---|---|
 | Decree-Law No. 11 of 2024 (DMTT Law), arts. 1, 3, 5, 9, 13, 25, 28, 44 (NBR unofficial English) | https://www.nbr.gov.bh/laws_regulations/dmtt | 2026-10-29 |
 | Decision No. 172 of 2024, DMTT Executive Regulations, arts. 1(33), 13, 66, 75 (NBR unofficial English) | https://www.nbr.gov.bh/laws_regulations/dmtt | 2026-10-29 |
-| NBR DMTT Transfer Pricing Guide, version 1.0, June 2026, sections 1.2 and 3 | https://www.nbr.gov.bh/publications/view/dmtt_transfer_pricing_guide | 2026-10-29 |
-| NBR DMTT Administrative Guide, version 1.1 (2 July 2025), section 10.1 | https://www.nbr.gov.bh/publications/view/dmtt_procedural_guide | 2026-10-29 |
-| NBR DMTT FAQs 1.5, 2.4, 2.9, 2.11, 8.4 | https://www.nbr.gov.bh/dmtt_faqs | 2026-10-29 |
-| Ministerial Order No. 28 of 2021 concerning Country-by-Country Reporting (Sijilat unofficial English) | https://www.sijilat.bh/temp/CommercialLaws/18%20EN.pdf | 2026-10-29 |
-| Ministerial Order No. 28 of 2021, Arabic, Official Gazette No. 3509 of 4 February 2021 | https://www.sijilat.bh/temp/CommercialLaws/18%20AR.pdf | 2026-10-29 |
-| Legislative Decree No. 27 of 2015 on the Commercial Register, art. 20 (Arabic) | https://www.sijilat.bh/temp/CommercialLaws/6.docx | 2026-10-29 |
-| CBB Directive EDFIS/C/020/2021, 21 March 2021 | https://www.cbb.gov.bh/wp-content/uploads/2021/03/Directive-on-CbCR-Reporting.pdf | 2026-10-29 |
-| MOIC Circular FAEI/11/MSJ/2021, 30 December 2021 | https://www.nbr.gov.bh/media/MOIC_Circular_FAEI_11_MSJ_2021 | 2026-10-29 |
-| NBR, Action 13 (Country-by-Country Reporting) | https://www.nbr.gov.bh/FTR/bebs_projects/action_thirteen | 2026-10-29 |
-| NBR, Tax Treaties Network | https://www.nbr.gov.bh/FTR/bahrain_tax_treaties_network | 2026-10-29 |
-| NBR, Guidance on Mutual Agreement Procedure, version 1.1 | https://www.nbr.gov.bh/publications/view/Bahrains_Mutual_Agreement_Procedure_MAP_Guidance | 2026-10-29 |
+| NBR DMTT Transfer Pricing Guide, version 1.0, June 2026, sections 1.2 and 3 | https://www.nbr.gov.bh/publications/view/dmtt_transfer_pricing_guide | 2026-11-14, read for sections 1.2 and 3: scope and comparability factors |
+| NBR DMTT Administrative Guide, version 1.1 (2 July 2025), section 10.1 | https://www.nbr.gov.bh/publications/view/dmtt_procedural_guide | 2026-11-14, read for section 10.1: record retention |
+| NBR DMTT FAQs 1.5, 2.4, 2.9, 2.11, 8.4 | https://www.nbr.gov.bh/dmtt_faqs | 2026-11-14, read for the FAQ sections on scope and penalties |
+| Ministerial Order No. 28 of 2021 concerning Country-by-Country Reporting (Sijilat unofficial English) | https://www.sijilat.bh/temp/CommercialLaws/18%20EN.pdf | 2026-11-14, read for the CbCR obligations in the unofficial English text |
+| Ministerial Order No. 28 of 2021, Arabic, Official Gazette No. 3509 of 4 February 2021 | https://www.sijilat.bh/temp/CommercialLaws/18%20AR.pdf | 2026-11-14, read for the Arabic text as published in the Gazette |
+| Legislative Decree No. 27 of 2015 on the Commercial Register, art. 20 (Arabic) | https://www.sijilat.bh/temp/CommercialLaws/6.docx | 2026-11-14, read for art. 20 of the Commercial Register law |
+| CBB Directive EDFIS/C/020/2021, 21 March 2021 | https://www.cbb.gov.bh/wp-content/uploads/2021/03/Directive-on-CbCR-Reporting.pdf | 2026-11-14, read for the CbCR notification directive to CBB licensees |
+| MOIC Circular FAEI/11/MSJ/2021, 30 December 2021 | https://www.nbr.gov.bh/media/MOIC_Circular_FAEI_11_MSJ_2021 | 2026-11-14, read for the circular to MOICT-registered entities on CbCR |
+| NBR, Action 13 (Country-by-Country Reporting) | https://www.nbr.gov.bh/FTR/bebs_projects/action_thirteen | 2026-11-14, read for the CbCR exchange framework page |
+| NBR, Tax Treaties Network | https://www.nbr.gov.bh/FTR/bahrain_tax_treaties_network | 2026-11-14, read for the list of treaties in force and signed |
+| NBR, Guidance on Mutual Agreement Procedure, version 1.1 | https://www.nbr.gov.bh/publications/view/Bahrains_Mutual_Agreement_Procedure_MAP_Guidance | 2026-11-14, read for the MAP request route and the 3-year default time limit |
 | Legislative Decree No. 22 of 1979, Income Tax Law, arts. 1, 2, 4, 7, 8, 9, 12 (LLOC English) | https://www.lloc.gov.bh/Legislation/id/L2279 | 2026-10-29 |
+| Legislative Decree No. 22 of 1979, Income Tax Law, LLOC text page: read for art. 2, income tax at forty-six per cent (46%) | https://www.lloc.gov.bh/Legislation/HTM/L2279 | 2026-11-14 |
 
-Not yet confirmed: whether the draft corporate income tax law has been enacted, and its final terms; whether the NBR accepts unilateral or bilateral APA requests
+Not yet confirmed: the transitional CbCR safe harbour ETR rate for Fiscal Years beginning in 2026 (17% in the old file; the NBR DMTT page read by the figure check shows only 16%, and the page refused a manual read on 2026-11-14); whether the draft corporate income tax law has been enacted, and its final terms; whether the NBR accepts unilateral or bilateral APA requests
 (no published procedure); the deadline the NBR sets when it requests a local
 file or master file (set case by case under DMTT Law art. 25(B)); whether the
 NBR has prescribed a form or language for the local file and master file under
