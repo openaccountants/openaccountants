@@ -17,15 +17,19 @@ category: international
 tax_year: 2026
 tax_year_notes: "Primary income period 2026–27; new carry-back amendments apply to income years starting on or after 1 July 2026; source check 17 October 2026"
 tier: 2
-last_updated: 2026-10-17
+type: computation
+last_updated: 2026-11-14
 version: 0.1
-review_status: pending_review
 depends_on:
   - workflow-base
   - corporate-income-tax-workflow-base
 ---
 
-# Norfolk Island: ordinary company tax, losses and franking
+# Norfolk Island: ordinary company tax, losses and franking v0.1
+
+> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
+
+## Scope
 
 Use `nf-tax-system` for Australian tax application and territorial
 exceptions. A company is separate from its shareholders and from a sole
@@ -41,7 +45,26 @@ mandatory sources, fields or runtime capabilities still prevent a
 deliverable financial result. Unknown required facts remain Needs Input;
 unresolved rules remain on hold. Use fictional cases only for illustration.
 
-## Residence, income and tax profit
+Norfolk Island is an Australian external territory and, since 1 July 2016, Australian federal tax law applies there with the Norfolk modifications set out below. For the mainland method and figures this skill shares with Australia, load [`au-company-tax`](../australia/au-company-tax.md); where a figure here and in that skill differ, check the official source both cite.
+
+## Ask the client first
+
+- Is the company an Australian resident, and is it a base rate entity (aggregated turnover under A$50 million and base rate entity passive income no more than 80%)?
+- Aggregated turnover, including connected entities and affiliates.
+- Accounting profit and each tax adjustment (depreciation, exempt and non-assessable income).
+- Tax losses carried forward and the ownership and business continuity history.
+- Whether a loss carry-back choice for 2026-27 is being considered.
+
+## The method, step by step
+
+### Key figures
+
+| Item | Figure | Applies to | Source |
+|---|---|---|---|
+| Company tax rate, base rate entity | 25% | Aggregated turnover under A$50 million and base rate entity passive income no more than 80% of assessable income, 2026-27 | [RATES](https://www.legislation.gov.au/C2004A03348/2026-07-01/text) |
+| Company tax rate, other companies | 30% | Companies that are not base rate entities | [RATES](https://www.legislation.gov.au/C2004A03348/2026-07-01/text) |
+
+### Residence, income and tax profit
 
 Section 6 of the 1936 Assessment Act adopts the 1997 Act's geographical
 meaning of Australia, which expressly includes Norfolk Island. Its company
@@ -73,7 +96,7 @@ functional and filing currency and conversion rules. Figures below are
 stipulated Australian dollars unless explicitly stated in euros. They
 do not supply an actual filing calendar or exchange rate.
 
-## Ordinary company rates and base-rate entity tests
+### Ordinary company rates and base-rate entity tests
 
 For an ordinary company outside the special branches, Rates Act section
 23(2) gives **25% for a base rate entity** and **30% otherwise**. This is
@@ -102,7 +125,7 @@ subsections (2)–(3); a label such as business interest does not replace
 those conditions. Actual classification needs the instrument and facts.
 [RATES]
 
-### Aggregated turnover is a separate measure
+#### Aggregated turnover is a separate measure
 
 Section 328-115 adds relevant annual turnovers of the entity and connected
 entities/affiliates, with the specified exclusions for dealings within that
@@ -125,7 +148,7 @@ directions, wishes or concert in business affairs, and does not make an
 ordinary business relationship alone sufficient. Apply the complete
 relevant provisions before accepting an actual aggregation. [TURNOVER]
 
-## Tax losses and carryforward restrictions
+### Tax losses and carryforward restrictions
 
 Section 36-10 starts with deductible amounts excluding earlier tax losses,
 subtracts assessable income and then applicable net exempt income. The
@@ -166,7 +189,7 @@ and other loss rules need further analysis. This reference establishes
 neither a universal carryforward cap/expiry conclusion nor an actual
 deductible balance or deferred-tax asset. [LOSSES]; [CORE]
 
-## New loss carry-back framework for 2026–27
+### New loss carry-back framework for 2026–27
 
 Schedule 1 of Tax Reform No. 2 Act 2026 replaces Division 160. Its
 schedules commenced **1 October 2026**, and the replacement applies to
@@ -227,7 +250,7 @@ under sections 205-25, 205-30 and 205-35, subject to their residency, event
 and other conditions. Model choices, utilisation and franking consequences
 together before any actual election or distribution. [DICT]; [FRANK]
 
-## Dividends and imputation rates
+### Dividends and imputation rates
 
 The **corporate tax rate for imputation purposes** is distinct from the
 current income-tax rate. The section 995-1 definition generally uses the
@@ -252,7 +275,7 @@ benchmark, residency and other franking requirements are met. Actual
 shareholder taxation, withholding, private-company benefits, capital
 returns and distribution mechanics remain held. [FRANK]; [DICT]
 
-## Keep three size tests and minimum taxes separate
+### Keep three size tests and minimum taxes separate
 
 The **$50 million** aggregated-turnover test concerns the ordinary reduced
 company rate. **SGE status** under section 960-555 concerns, among other
@@ -281,7 +304,9 @@ carve-outs and reporting need the complete applicable sources and group
 facts. No top-up amount or automatic exclusion is supplied here.
 [MINIMUM]; [MINRULES, section 10-5][MINRULES]
 
-## Fictional computations and classification patterns
+## Worked cases
+
+### Fictional computations and classification patterns
 
 All relevant eligibility, deduction and special-rule conditions below are
 stipulated satisfied unless the row tests that condition. These are
@@ -308,7 +333,62 @@ liabilities, franking cap/exception and imputation assumptions. Reconcile
 credits and payments exactly once under the corporate workflow. Do not
 prepare an actual election, distribution, return or payment from these rows.
 
-## Sources, currency and remaining coverage
+### Recomputed checks
+
+```oa-check
+name: Taxable profit and basic tax at both company rates
+inputs:
+  accounting_profit: 100000
+  book_depreciation: 5000
+  tax_depreciation: 8000
+  excluded_income: 2000
+steps:
+  - taxable: accounting_profit + book_depreciation - tax_depreciation - excluded_income
+  - tax_base_rate_entity: taxable * 0.25
+  - tax_other: taxable * 0.30
+expected:
+  taxable: 95000
+  tax_base_rate_entity: 23750
+  tax_other: 28500
+```
+
+```oa-check
+name: Maximum franking credit at 25% and 30% imputation rates
+inputs:
+  distribution_25: 750
+  distribution_30: 700
+steps:
+  - credit_25: distribution_25 * 0.25 / 0.75
+  - credit_30: distribution_30 * 0.30 / 0.70
+expected:
+  credit_25: 250
+  credit_30: 300
+```
+
+## When to refuse or refer
+
+- Hold the rate when ownership history, aggregated-group facts or an approved choice is missing.
+- Refer to a specialist for consolidated groups, GloBE (Pillar Two) minimum tax and special entities.
+- An NF address does not set a company rate or remove Australian company tax.
+
+## Sources
+
+Read on dates are Ryan Duguid's reads of each page when he wrote this skill (October 2026). Each label is the reference tag used in the text above.
+
+| Source | URL | Read on |
+|---|---|---|
+| ASSESS. Read for: Residence, income and tax profit; Sources, currency and remaining coverage | https://www.legislation.gov.au/C1936A00027/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_1/document_1.html | 2026-10-17 |
+| CORE. Read for: Residence, income and tax profit; Tax losses and carryforward restrictions; Sources, currency and remaining coverage | https://www.legislation.gov.au/C2004A05138/2026-08-27/2026-08-27/text/original/epub/OEBPS/document_1/document_1.html | 2026-10-17 |
+| RATES. Read for: Ordinary company rates and base-rate entity tests; Keep three size tests and minimum taxes separate; Sources, currency and remaining coverage | https://www.legislation.gov.au/C2004A03348/2026-07-01/text | 2026-10-17 |
+| TURNOVER. Read for: Ordinary company rates and base-rate entity tests; Sources, currency and remaining coverage | https://www.legislation.gov.au/C2004A05138/2026-08-27/2026-08-27/text/original/epub/OEBPS/document_7/document_7.html | 2026-10-17 |
+| LOSSES. Read for: Tax losses and carryforward restrictions; Sources, currency and remaining coverage | https://www.legislation.gov.au/C2004A05138/2026-08-27/2026-08-27/text/original/epub/OEBPS/document_4/document_4.html | 2026-10-17 |
+| FRANK. Read for: New loss carry-back framework for 2026–27; Dividends and imputation rates; Sources, currency and remaining coverage | https://www.legislation.gov.au/C2004A05138/2026-08-27/2026-08-27/text/original/epub/OEBPS/document_5/document_5.html | 2026-10-17 |
+| DICT. Read for: Residence, income and tax profit; Tax losses and carryforward restrictions; New loss carry-back framework for 2026–27; Dividends and imputation rates; Keep three size tests and minimum taxes separate; Sources, currency and remaining coverage | https://www.legislation.gov.au/C2004A05138/2026-08-27/2026-08-27/text/original/epub/OEBPS/document_10/document_10.html | 2026-10-17 |
+| REFORM2. Read for: New loss carry-back framework for 2026–27; Sources, currency and remaining coverage | https://www.legislation.gov.au/C2026A00071/asmade | 2026-10-17 |
+| MINIMUM. Read for: Keep three size tests and minimum taxes separate; Sources, currency and remaining coverage | https://www.legislation.gov.au/C2024A00132/asmade | 2026-10-17 |
+| MINRULES. Read for: Keep three size tests and minimum taxes separate; Sources, currency and remaining coverage | https://www.legislation.gov.au/F2024L01740/2026-07-02/text | 2026-10-17 |
+
+### Sources, currency and remaining coverage
 
 Checked on 17 October 2026: selected Rates Act compilation 66, 1936 Act
 compilation 193 and 1997 Act compilation 267 provisions. The latter's
@@ -333,6 +413,8 @@ pack, actual return, independent model engagement benchmark or practitioner
 sign-off is claimed. No client records or identifiers are needed for these
 fictional checks.
 
+Not yet confirmed: ato.gov.au and the Norfolk Island Regional Council site (nirc.gov.au) refused scripted access on 14 November 2026, so their pages were not re-read for this import; figures taken from them rest on Ryan Duguid's October 2026 read.
+
 [ASSESS]: https://www.legislation.gov.au/C1936A00027/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_1/document_1.html
 [CORE]: https://www.legislation.gov.au/C2004A05138/2026-08-27/2026-08-27/text/original/epub/OEBPS/document_1/document_1.html
 [RATES]: https://www.legislation.gov.au/C2004A03348/2026-07-01/text
@@ -343,23 +425,3 @@ fictional checks.
 [REFORM2]: https://www.legislation.gov.au/C2026A00071/asmade
 [MINIMUM]: https://www.legislation.gov.au/C2024A00132/asmade
 [MINRULES]: https://www.legislation.gov.au/F2024L01740/2026-07-02/text
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained in the
-[ryanduguid/openaccountants fork](https://github.com/ryanduguid/openaccountants).
-Check its quality tier, recorded review status and cited sources before use.
-Choose a practitioner whose credentials and engagement scope you have verified.
-The links below are optional upstream services; they do not publish or verify
-this fork's changes.
-
-- Upstream connection service: https://www.openaccountants.com/connect
-- Upstream accountant network: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

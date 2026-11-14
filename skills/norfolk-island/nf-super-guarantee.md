@@ -16,16 +16,20 @@ category: international
 tax_year: 2026
 tax_year_notes: "Primarily QE days from 1 July 2026 to 30 June 2027; old quarterly liabilities and later years are separate"
 tier: 2
-last_updated: 2026-10-17
+type: computation
+last_updated: 2026-11-14
 version: 0.1
-review_status: pending_review
 depends_on:
   - workflow-base
   - social-contributions-workflow-base
   - nf-tax-system
 ---
 
-# Norfolk Island: employer super guarantee in 2026–27
+# Norfolk Island: employer super guarantee in 2026–27 v0.1
+
+> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
+
+## Scope
 
 Load `workflow-base`, `social-contributions-workflow-base` and
 `nf-tax-system`. Preserve profile confirmation, source/period gates,
@@ -36,7 +40,18 @@ country slot or establish every contributor's programme coverage. Missing
 mandatory source, fact, slot or output prevents a deliverable financial
 result even where an illustrative SG calculation is possible.
 
-## Establish coverage and qualifying earnings first
+Norfolk Island is an Australian external territory and, since 1 July 2016, Australian federal tax law applies there with the Norfolk modifications set out below. For the mainland method and figures this skill shares with Australia, load [`au-super-guarantee`](../australia/au-super-guarantee.md); where a figure here and in that skill differ, check the official source both cite.
+
+## Ask the client first
+
+- Is the worker an employee for SG, and what are their qualifying earnings on each payday?
+- Where the employee and employer are resident (Norfolk Island, mainland, overseas) and where the work was done.
+- The QE payment day for each payment (not the work date).
+- Which fund receives contributions and on what date.
+
+## The method, step by step
+
+### Establish coverage and qualifying earnings first
 
 Record a stable contributor reference, employer and employee residence,
 work location for each earnings component, actual payment day, worker
@@ -71,7 +86,7 @@ between a limited payment and the Norfolk subset. Hold cap-crossing cases
 until those rules and the earnings history are established. Do not copy
 a pre-July 2026 quarterly maximum into Payday Super. [SG]
 
-## Norfolk subset and the 2026–27 calculation
+### Norfolk subset and the 2026–27 calculation
 
 Schedule 1 item 189 of the Payday Super Act applies when a QE day falls
 in the financial year ending **30 June 2027** and some or all of the
@@ -125,7 +140,7 @@ Act's quarterly transition before July 2026; item 189 supplies the new
 transition. Do not apply the old and new reductions twice.
 [PAYDAY, Schedule 1 items 150, 182–186 and 189][PAYDAY]
 
-## Payment, fund and deadline controls
+### Payment, fund and deadline controls
 
 The ATO's current Norfolk guidance requires contributions for each payday.
 Normally they must reach the employee's super fund, with information
@@ -172,7 +187,9 @@ assessment, late-payment allocation, voluntary disclosure, deduction,
 penalty or remedy needs the complete current rules and facts. No late
 case is certified compliant by this guide. [DEADLINES]; [SG, Parts 3–4][SG]
 
-## Worked examples and boundary cases
+## Worked cases
+
+### Worked examples and boundary cases
 
 All amounts below are fictional AUD QE payments in 2026–27. Eligibility
 and residence/work facts are stipulated; earnings are below the applicable
@@ -180,16 +197,16 @@ annual base, with no certificate, sacrificed contribution, defined benefit,
 overlapping contribution allocation or rounding issue. They demonstrate
 the individual SG amount only, not a complete contribution engagement.
 
-| Stipulated payment | Recomputed individual SG amount |
-|---|---|
-| QE of 1,200, all meeting the Norfolk subset | Reduction 100; adjusted QE 1,100; 12% produces 132, equivalent to 11% of 1,200. |
-| QE of 1,200, none meeting the Norfolk subset | No Norfolk reduction; 12% produces 144. |
-| QE of 12,000, with 7,200 Norfolk and 4,800 mainland work | Reduction 600; adjusted QE 11,400; 12% produces 1,368. Cross-check: 792 on the Norfolk part plus 576 on the remainder. |
-| QE of 2,400, wholly Norfolk, paid in July 2026 for June work | Reduction 200; adjusted QE 2,200; individual SG amount 264. The June work date does not make this 10% of 2,400. |
-| Same earnings/residence but payment after 30 June 2027 | Item 189's time condition fails. Establish the rules for the new period; do not continue its one-twelfth reduction. |
-| Employer sends the correct amount to a clearing house but fund receipt is unknown | Amount arithmetic is insufficient; payment compliance remains unresolved. |
-| Employee salary sacrifice equals the example's SG amount | Do not treat it as the employer's eligible contribution merely because the amounts match. |
-| First eligible contribution has an extended due date overlapping a later payday | Apply the actual section 18C conditions and allocation/bunching rules; do not assume a uniform deadline. |
+| Stipulated payment | Recomputed individual SG amount | Source |
+|---|--- |---|
+| QE of 1,200, all meeting the Norfolk subset | Reduction 100; adjusted QE 1,100; 12% produces 132, equivalent to 11% of 1,200. | [SG](https://www.legislation.gov.au/C2004A04402/2026-07-01/text) |
+| QE of 1,200, none meeting the Norfolk subset | No Norfolk reduction; 12% produces 144. | [SG](https://www.legislation.gov.au/C2004A04402/2026-07-01/text) |
+| QE of 12,000, with 7,200 Norfolk and 4,800 mainland work | Reduction 600; adjusted QE 11,400; 12% produces 1,368. Cross-check: 792 on the Norfolk part plus 576 on the remainder. | [SG](https://www.legislation.gov.au/C2004A04402/2026-07-01/text) |
+| QE of 2,400, wholly Norfolk, paid in July 2026 for June work | Reduction 200; adjusted QE 2,200; individual SG amount 264. The June work date does not make this 10% of 2,400. | [SG](https://www.legislation.gov.au/C2004A04402/2026-07-01/text) |
+| Same earnings/residence but payment after 30 June 2027 | Item 189's time condition fails. Establish the rules for the new period; do not continue its one-twelfth reduction. | [SG](https://www.legislation.gov.au/C2004A04402/2026-07-01/text) |
+| Employer sends the correct amount to a clearing house but fund receipt is unknown | Amount arithmetic is insufficient; payment compliance remains unresolved. | [SG](https://www.legislation.gov.au/C2004A04402/2026-07-01/text) |
+| Employee salary sacrifice equals the example's SG amount | Do not treat it as the employer's eligible contribution merely because the amounts match. | [SG](https://www.legislation.gov.au/C2004A04402/2026-07-01/text) |
+| First eligible contribution has an extended due date overlapping a later payday | Apply the actual section 18C conditions and allocation/bunching rules; do not assume a uniform deadline. | [SG](https://www.legislation.gov.au/C2004A04402/2026-07-01/text) |
 
 Before reviewer delivery, verify employee/QE status, residence and work
 components, actual QE day, annual base, Norfolk subset, adjustment once,
@@ -198,7 +215,55 @@ special periods and reconciliation. Keep unverified required conditions
 as Needs Input or a legal hold. Do not turn a correct example into an
 actual taxpayer result.
 
-## Sources and verification limits
+### Recomputed checks
+
+```oa-check
+name: QE A$12,000, of which A$7,200 Norfolk subset (2026-27)
+inputs:
+  qe: 12000
+  norfolk: 7200
+steps:
+  - reduction: norfolk / 12
+  - adjusted: qe - reduction
+  - sg: adjusted * 0.12
+  - cross_check: norfolk * 0.11 + (qe - norfolk) * 0.12
+expected:
+  reduction: 600
+  adjusted: 11400
+  sg: 1368
+  cross_check: 1368
+```
+
+```oa-check
+name: QE A$1,200 wholly Norfolk against wholly mainland
+inputs:
+  qe: 1200
+steps:
+  - norfolk_sg: (qe - qe / 12) * 0.12
+  - mainland_sg: qe * 0.12
+expected:
+  norfolk_sg: 132
+  mainland_sg: 144
+```
+
+## When to refuse or refer
+
+- Do not continue the one-twelfth Norfolk reduction for payments after 30 June 2027.
+- Do not treat salary sacrifice as the employer's SG contribution.
+- Refer SG charge statements and late payment disputes to a registered tax agent.
+
+## Sources
+
+Read on dates are Ryan Duguid's reads of each page when he wrote this skill (October 2026). Each label is the reference tag used in the text above.
+
+| Source | URL | Read on |
+|---|---|---|
+| SG. Read for: Establish coverage and qualifying earnings first; Norfolk subset and the 2026–27 calculation; Payment, fund and deadline controls; Sources and verification limits | https://www.legislation.gov.au/C2004A04402/2026-07-01/text | 2026-10-17 |
+| PAYDAY. Read for: Establish coverage and qualifying earnings first; Norfolk subset and the 2026–27 calculation; Sources and verification limits | https://www.legislation.gov.au/C2025A00057/asmade | 2026-10-17 |
+| EMPLOYER. Read for: Norfolk subset and the 2026–27 calculation; Payment, fund and deadline controls; Sources and verification limits | https://www.ato.gov.au/norfolk-island/super-for-employers | 2026-10-17 |
+| DEADLINES. Read for: Payment, fund and deadline controls; Sources and verification limits | https://www.ato.gov.au/businesses-and-organisations/super-for-employers/paying-super-on-payday/payment-deadlines-for-payday-super | 2026-10-17 |
+
+### Sources and verification limits
 
 Checked on 17 October 2026: SG Act compilation **78**, effective **1 July
 2026**, registered **8 July 2026**, which the live Register identified as
@@ -215,27 +280,9 @@ complete Norfolk social-contributions companion, professional sign-off
 or tested payroll/filing system. All mandatory workflow slots and outputs
 remain required before a financial deliverable.
 
+Not yet confirmed: ato.gov.au and the Norfolk Island Regional Council site (nirc.gov.au) refused scripted access on 14 November 2026, so their pages were not re-read for this import; figures taken from them rest on Ryan Duguid's October 2026 read.
+
 [SG]: https://www.legislation.gov.au/C2004A04402/2026-07-01/text
 [PAYDAY]: https://www.legislation.gov.au/C2025A00057/asmade
 [EMPLOYER]: https://www.ato.gov.au/norfolk-island/super-for-employers
 [DEADLINES]: https://www.ato.gov.au/businesses-and-organisations/super-for-employers/paying-super-on-payday/payment-deadlines-for-payday-super
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained in the
-[ryanduguid/openaccountants fork](https://github.com/ryanduguid/openaccountants).
-Check its quality tier, recorded review status and cited sources before use.
-Choose a practitioner whose credentials and engagement scope you have verified.
-The links below are optional upstream services; they do not publish or verify
-this fork's changes.
-
-- Upstream connection service: https://www.openaccountants.com/connect
-- Upstream accountant network: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

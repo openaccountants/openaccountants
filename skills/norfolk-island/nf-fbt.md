@@ -16,9 +16,9 @@ category: international
 tax_year: 2026
 tax_year_notes: "FBT year 1 April 2026 to 31 March 2027; sources checked 18 October 2026; separately identified work-item changes apply from the FBT year starting 1 April 2027"
 tier: 2
-last_updated: 2026-10-18
+type: computation
+last_updated: 2026-11-14
 version: 0.1
-review_status: pending_review
 depends_on:
   - workflow-base
   - payroll-workflow-base
@@ -27,7 +27,11 @@ depends_on:
   - nf-payg-withholding
 ---
 
-# Norfolk Island: employer fringe benefits tax
+# Norfolk Island: employer fringe benefits tax v0.1
+
+> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
+
+## Scope
 
 Establish the employer, employee or associate, employment connection,
 provider and arrangements, benefit type, provision date, FBT year, taxable
@@ -43,7 +47,26 @@ Missing mandatory facts remain Needs Input and unresolved rules remain
 held. This reference supplies selected ordinary-employer rules, not an
 actual assessment, salary-packaging design or complete payroll/country pack.
 
-## Norfolk application and the correct year
+Norfolk Island is an Australian external territory and, since 1 July 2016, Australian federal tax law applies there with the Norfolk modifications set out below. For the mainland method and figures this skill shares with Australia, load [`au-fbt`](../australia/au-fbt.md); where a figure here and in that skill differ, check the official source both cite.
+
+## Ask the client first
+
+- Which benefits were provided in the FBT year 1 April 2026 to 31 March 2027, and their taxable values.
+- For each benefit, whether the provider is entitled to a GST credit (Type 1) or not (Type 2).
+- Each employee's individual fringe benefits amount, for the reportable fringe benefits test.
+- The employer's FBT liability in the prior year, for instalments.
+
+## The method, step by step
+
+### Key figures
+
+| Item | Figure | Applies to | Source |
+|---|---|---|---|
+| FBT rate | 47% | FBT year 1 April 2026 to 31 March 2027 | [TAX](https://www.legislation.gov.au/C2004A03281/2018-06-19/text) |
+| Type 1 / Type 2 gross-up | 2.0802 / 1.8868 | Type 1 where the provider is entitled to a GST credit, otherwise Type 2 | [CALCULATING](https://www.ato.gov.au/businesses-and-organisations/hiring-and-paying-your-workers/fringe-benefits-tax/calculating-your-fbt) |
+| Reportable fringe benefits trigger | Individual fringe benefits amount more than A$2,000 | Each employee, FBT year ending 31 March 2027 | [REPORTING](https://www.ato.gov.au/businesses-and-organisations/hiring-and-paying-your-workers/fringe-benefits-tax/fbt-registration-lodgment-payment-and-reporting/reportable-fringe-benefits) |
+
+### Norfolk application and the correct year
 
 The ATO's Norfolk business guidance expressly identifies FBT registration
 when an employer provides fringe benefits, and an ABN requirement for an
@@ -78,7 +101,7 @@ exemptions/caps/rebates or a trust/owner-benefit classification for an actual
 case. Acquire those particular rules rather than assuming an organisation's
 name or tax status settles its FBT treatment. [CALCULATING]; [LODGING]
 
-## Taxable value and GST-credit classification
+### Taxable value and GST-credit classification
 
 Value each benefit under its own rules before grossing up. Expense payment,
 property, residual, car, loan, housing, living-away-from-home and
@@ -129,7 +152,7 @@ relevant taxable value under the ATO calculation. Establish concessions,
 adjustments and the year's return instructions before choosing rounding or
 payable return labels. [ASSESS, sections 5C and 5E][ASSESS]; [CALCULATING]
 
-## Minor benefits and work items: conditions before exemption
+### Minor benefits and work items: conditions before exemption
 
 Section 58P requires a notional taxable value **less than A$300**, together
 with its other conditions and an assessment that treating the benefit as a
@@ -161,7 +184,7 @@ new wording to deny the earlier-year exemption without the application
 overlay. Identify the actual year and any later amendments. [REFORM-2026,
 section 2 and Schedule 4 items 18–20][REFORM-2026]
 
-## Electric cars and plug-in hybrids
+### Electric cars and plug-in hybrids
 
 Current section 8A identifies qualifying battery-electric and hydrogen
 fuel-cell car benefits for a **current employee**, with the condition that
@@ -189,7 +212,7 @@ changes outside the selected period require a new source check; no future
 vehicle price threshold is selected here. [ASSESS, section 135P(3)][ASSESS];
 [REPORTING]
 
-## Employee reporting is a separate calculation
+### Employee reporting is a separate calculation
 
 For an ordinary employee, section 135P tests whether the individual's
 fringe benefits amount is **more than A$2,000** for the FBT year ending
@@ -216,7 +239,7 @@ income tests; it is not itself part of the employee's assessable income.
 Use `nf-payg-withholding` for selected STP timing and verify the applicable
 reporting channels, finalisation, corrections and concessions. [REPORTING]
 
-## Returns, instalments and records
+### Returns, instalments and records
 
 The current ATO guidance requires a return if the employer has FBT payable
 **or paid FBT instalments**, including where the return reconciles an
@@ -251,7 +274,9 @@ ascertained. Specific exemptions and exceptions need their own conditions;
 no record-keeping exemption threshold or penalty-unit dollar value is
 selected here. [ASSESS]
 
-## Fictional checks for the year ending 31 March 2027
+## Worked cases
+
+### Fictional checks for the year ending 31 March 2027
 
 These examples assume an ordinary taxable employer, established taxable
 values and entitlement classes, no additional concessions or adjustments,
@@ -284,7 +309,42 @@ components, not actual returns. [CALCULATING]; [REPORTING]; [LODGING]
    The enacted replacement applies to the FBT year beginning April 2027.
    A July 2026 compilation date does not move that application boundary.
 
-## Review before a financial result
+### Recomputed checks
+
+```oa-check
+name: Type 2 reimbursement of A$10,000 (no GST credit)
+inputs:
+  value: 10000
+steps:
+  - grossed_up: value * 1.8868
+  - fbt: grossed_up * 0.47
+expected:
+  grossed_up: 18868
+  fbt: 8867.96
+```
+
+```oa-check
+name: A$10,000 Type 1 plus A$10,000 Type 2
+inputs:
+  type1: 10000
+  type2: 10000
+steps:
+  - grossed_up: type1 * 2.0802 + type2 * 1.8868
+  - fbt: grossed_up * 0.47
+expected:
+  grossed_up: 39670
+  fbt: 18644.90
+```
+
+## When to refuse or refer
+
+- Refer to a registered tax agent for car fleets, salary packaging arrangements and not-for-profit rebates or exemptions.
+- Do not treat a benefit as exempt because it is provided on Norfolk Island or because no GST applies to island supplies.
+- Do not apply the replacement work-item rules before the FBT year starting 1 April 2027.
+
+## Completion checklist
+
+### Review before a financial result
 
 Reconcile the benefit register to the correct April–March population and
 preserve separate records of taxable value, exemptions, reductions,
@@ -305,7 +365,24 @@ credits, salary packaging, forms, reporting corrections and penalties;
 future changes and remaining country topics. A reference check does not
 waive the payroll workflow's required outputs or professional review.
 
-## Primary sources and provenance
+## Sources
+
+Read on dates are Ryan Duguid's reads of each page when he wrote this skill (October 2026). Each label is the reference tag used in the text above.
+
+| Source | URL | Read on |
+|---|---|---|
+| NI-BUSINESS. Read for: Norfolk application and the correct year; Taxable value and GST-credit classification; Primary sources and provenance | https://www.ato.gov.au/norfolk-island/tax-for-businesses | 2026-10-18 |
+| ASSESS. Read for: Norfolk application and the correct year; Taxable value and GST-credit classification; Minor benefits and work items: conditions before exemption; Electric cars and plug-in hybrids; Employee reporting is a separate calculation; Returns, instalments and records; Primary sources and provenance | https://www.legislation.gov.au/C2004A03280/2026-07-01/text | 2026-10-18 |
+| PREVIOUS. Read for: Minor benefits and work items: conditions before exemption; Primary sources and provenance | https://www.legislation.gov.au/C2004A03280/2025-04-01/text | 2026-10-18 |
+| TAX. Read for: Taxable value and GST-credit classification; Primary sources and provenance | https://www.legislation.gov.au/C2004A03281/2018-06-19/text | 2026-10-18 |
+| OVERVIEW. Read for: Norfolk application and the correct year; Primary sources and provenance | https://www.ato.gov.au/businesses-and-organisations/hiring-and-paying-your-workers/fringe-benefits-tax/how-fringe-benefits-tax-works | 2026-10-18 |
+| CALCULATING. Read for: Norfolk application and the correct year; Taxable value and GST-credit classification; Employee reporting is a separate calculation; Fictional checks for the year ending 31 March 2027; Primary sources and provenance | https://www.ato.gov.au/businesses-and-organisations/hiring-and-paying-your-workers/fringe-benefits-tax/calculating-your-fbt | 2026-10-18 |
+| REPORTING. Read for: Electric cars and plug-in hybrids; Employee reporting is a separate calculation; Fictional checks for the year ending 31 March 2027; Primary sources and provenance | https://www.ato.gov.au/businesses-and-organisations/hiring-and-paying-your-workers/fringe-benefits-tax/fbt-registration-lodgment-payment-and-reporting/reportable-fringe-benefits | 2026-10-18 |
+| LODGING. Read for: Norfolk application and the correct year; Returns, instalments and records; Fictional checks for the year ending 31 March 2027; Primary sources and provenance | https://www.ato.gov.au/businesses-and-organisations/hiring-and-paying-your-workers/fringe-benefits-tax/fbt-registration-lodgment-payment-and-reporting/lodging-your-fbt-return-and-paying | 2026-10-18 |
+| REFORM-2026. Read for: Taxable value and GST-credit classification; Minor benefits and work items: conditions before exemption; Primary sources and provenance | https://www.legislation.gov.au/C2026A00049/asmade | 2026-10-18 |
+| EV. Read for: Electric cars and plug-in hybrids; Primary sources and provenance | https://www.legislation.gov.au/C2022A00086/asmade | 2026-10-18 |
+
+### Primary sources and provenance
 
 Checked **18 October 2026**. This is a **Tier 2 source-cited draft pending
 professional review**. Current Register records and selected operative
@@ -322,6 +399,8 @@ Current lodging guidance was updated September 2026. Its link to 2026
 return instructions is not proof of a published 2027 form. No private
 records were queried and no registration, filing or payment was made.
 
+Not yet confirmed: ato.gov.au and the Norfolk Island Regional Council site (nirc.gov.au) refused scripted access on 14 November 2026, so their pages were not re-read for this import; figures taken from them rest on Ryan Duguid's October 2026 read.
+
 [NI-BUSINESS]: https://www.ato.gov.au/norfolk-island/tax-for-businesses
 [ASSESS]: https://www.legislation.gov.au/C2004A03280/2026-07-01/text
 [PREVIOUS]: https://www.legislation.gov.au/C2004A03280/2025-04-01/text
@@ -332,23 +411,3 @@ records were queried and no registration, filing or payment was made.
 [LODGING]: https://www.ato.gov.au/businesses-and-organisations/hiring-and-paying-your-workers/fringe-benefits-tax/fbt-registration-lodgment-payment-and-reporting/lodging-your-fbt-return-and-paying
 [REFORM-2026]: https://www.legislation.gov.au/C2026A00049/asmade
 [EV]: https://www.legislation.gov.au/C2022A00086/asmade
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained in the
-[ryanduguid/openaccountants fork](https://github.com/ryanduguid/openaccountants).
-Check its quality tier, recorded review status and cited sources before use.
-Choose a practitioner whose credentials and engagement scope you have verified.
-The links below are optional upstream services; they do not publish or verify
-this fork's changes.
-
-- Upstream connection service: https://www.openaccountants.com/connect
-- Upstream accountant network: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

@@ -17,9 +17,9 @@ category: international
 tax_year: 2026
 tax_year_notes: "Ordinary 1 July 2026 to 30 June 2027 income year; sources checked 18 October 2026; foreign income, foreign-tax payment and assessment years may differ; 2026 ATO return examples concern 2025-26"
 tier: 2
-last_updated: 2026-10-18
+type: computation
+last_updated: 2026-11-14
 version: 0.1
-review_status: pending_review
 depends_on:
   - workflow-base
   - cross-border-workflow-base
@@ -31,7 +31,11 @@ depends_on:
   - nf-investment-withholding
 ---
 
-# Norfolk Island: foreign income and foreign income tax offsets
+# Norfolk Island: foreign income and foreign income tax offsets v0.1
+
+> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
+
+## Scope
 
 Establish the person or entity, residence and temporary-residence history,
 income character and source, Australian and foreign periods, gross income,
@@ -47,7 +51,19 @@ and every applicable domain output and check. Mandatory facts remain
 Needs Input; unresolved law remains held. A preliminary receipt register
 does not establish an assessable amount, credit or completed return.
 
-## Territory, period and current source chain
+Norfolk Island is an Australian external territory and, since 1 July 2016, Australian federal tax law applies there with the Norfolk modifications set out below. For the mainland method and figures this skill shares with Australia, load [`au-foreign-income`](../australia/au-foreign-income.md), [`au-tax-residency`](../australia/au-tax-residency.md); where a figure here and in that skill differ, check the official source both cite.
+
+## Ask the client first
+
+- The taxpayer's residence and whether they are a temporary resident.
+- Each foreign income item, its source country and the date it was derived.
+- Foreign tax paid on each item, the date paid, and any refund or entitlement to a refund.
+- Whether the intended foreign income tax offset claim is A$1,000 or less.
+- Exchange rates used, and on which dates.
+
+## The method, step by step
+
+### Territory, period and current source chain
 
 The 1936 Assessment Act adopts the 1997 Act's geographical meaning of
 Australia, which expressly includes **Norfolk Island**. A mainland/island
@@ -71,7 +87,7 @@ not supply a 2026–27 personal rate table. Use `nf-income-tax`,
 `nf-company-tax` and `nf-medicare` for their selected current components.
 [REGS-RECORD]; [REGS]; [ATO-ELIGIBILITY]; [ATO-LIMIT]; [ATO-WHEN]; [ATO-RECORDS]
 
-## Establish assessable income before relief
+### Establish assessable income before relief
 
 Sections 6-5 and 6-10 generally include a resident's ordinary and statutory
 income from all sources; their foreign-resident branches have different
@@ -88,7 +104,7 @@ classification. [CORE]
 | Company foreign branch, equity distribution or attributed income | Establish the relevant exemption, participation, attribution and gross-up rules separately. A company does not claim every foreign tax shown in a group account. Actual corporate branch, CFC and special distribution calculations remain held here. [FITO]; [ATO-WHEN] |
 | Foreign pension, trust, joint receipt or mixed transfer | Establish the actual taxpayer, character and statutory/treaty treatment. Do not infer a pension deduction, trust entitlement, income, gift or loan from its label. [CORE]; [FITO]; [ATO-WHEN] |
 
-### Temporary residents
+#### Temporary residents
 
 The section 995-1 definition requires a temporary visa and the specified
 **Social Security Act** non-residence conditions for both the person and
@@ -112,7 +128,7 @@ Keep actual eligibility and values held until those facts and source
 requirements are satisfied. Foreign tax on an ordinary NANE amount does
 not gain an offset merely because it was paid overseas. [TEMP]; [FITO]
 
-### Foreign service
+#### Foreign service
 
 Section **23AG** is a conditional exemption for a resident natural person
 engaged in foreign service for a continuous period of **at least 91 days**.
@@ -138,7 +154,7 @@ actual service-day determinations require their own source work. Exempt
 foreign employment income generally supplies no FITO. [ITAA36]; [FITO];
 [ATO-WHEN]
 
-## Which foreign tax counts
+### Which foreign tax counts
 
 Section **770-10** generally requires foreign income tax paid in respect
 of an amount included in assessable income for the Australian year.
@@ -181,7 +197,7 @@ invoice total is therefore not itself the eligible tax amount. Keep gross
 income and foreign tax separate; do not report only the net remittance as
 assessable income. [ATO-WHEN]
 
-## Ordinary limit and non-refundable use
+### Ordinary limit and non-refundable use
 
 For an ordinary case without a section 770-80 increase:
 
@@ -215,19 +231,19 @@ shorter calculation where eligible foreign tax exceeds A$1,000. It does
 not grant a free A$1,000 credit, waive eligibility or make an unused amount
 refundable. [FITO, subsection 770-75(2) and note 1][FITO]; [ATO-LIMIT]
 
-## Translate the right amounts at the right times
+### Translate the right amounts at the right times
 
 Section **960-50** generally requires Australian currency, translating
 calculation elements before calculating totals. Its table is modified by
 regulation **960-50.01**. For the selected ordinary branches:
 
-| Amount | Relevant timing, subject to the applicable rules |
-|---|---|
-| Ordinary income | Receipt if at or before derivation; otherwise derivation. |
-| Statutory income other than the net capital gain | Receipt if at or before the first inclusion requirement; otherwise when that requirement arises. |
-| Ordinary deduction within modified item 8 | Payment if at or before deductibility; otherwise when deductible. Bad debts, depreciating assets and other special items have their own rules. |
-| Foreign tax payment within residual item 11 | Payment time. Do not automatically reuse the income-date rate. |
-| CGT proceeds, cost and other relevant elements | The relevant transaction/event times. Do not simply translate a foreign net gain at one disposal-date rate. |
+| Amount | Relevant timing, subject to the applicable rules | Source |
+|---|--- |---|
+| Ordinary income | Receipt if at or before derivation; otherwise derivation. | [ATO-LIMIT](https://www.ato.gov.au/forms-and-instructions/foreign-income-tax-offset-rules-guide-2026/calculate-your-fito-or-offset-limit) |
+| Statutory income other than the net capital gain | Receipt if at or before the first inclusion requirement; otherwise when that requirement arises. | [ATO-LIMIT](https://www.ato.gov.au/forms-and-instructions/foreign-income-tax-offset-rules-guide-2026/calculate-your-fito-or-offset-limit) |
+| Ordinary deduction within modified item 8 | Payment if at or before deductibility; otherwise when deductible. Bad debts, depreciating assets and other special items have their own rules. | [ATO-LIMIT](https://www.ato.gov.au/forms-and-instructions/foreign-income-tax-offset-rules-guide-2026/calculate-your-fito-or-offset-limit) |
+| Foreign tax payment within residual item 11 | Payment time. Do not automatically reuse the income-date rate. | [ATO-LIMIT](https://www.ato.gov.au/forms-and-instructions/foreign-income-tax-offset-rules-guide-2026/calculate-your-fito-or-offset-limit) |
+| CGT proceeds, cost and other relevant elements | The relevant transaction/event times. Do not simply translate a foreign net gain at one disposal-date rate. | [ATO-LIMIT](https://www.ato.gov.au/forms-and-instructions/foreign-income-tax-offset-rules-guide-2026/calculate-your-fito-or-offset-limit) |
 
 [DICT, section 960-50][DICT]; [REGS]
 
@@ -240,7 +256,7 @@ have their own conditions. Missing rate evidence does not authorise an
 arbitrary annual average. Actual functional-currency, special-accrual,
 TOFA, election and forex gain/loss computations remain held. [REGS]
 
-## Years, amendments and records
+### Years, amendments and records
 
 The offset belongs to the Australian year in which the relevant income is
 included, even if eligible foreign tax is paid earlier or later. A later
@@ -266,7 +282,9 @@ period requires it. Do not reduce this to five years from lodgment in
 every case. Actual offshore notices, extensions and longer asset-specific
 retention require separate checks. [ATO-RECORDS]
 
-## Fictional 2026–27 components and checks
+## Worked cases
+
+### Fictional 2026–27 components and checks
 
 These examples assume all eligibility, source, residence and period facts
 have been established. Tax amounts used in limit examples are stipulated
@@ -297,6 +315,70 @@ other open cross-border/country slots remain separate work. Neither these
 components nor repository checks confer practitioner sign-off or
 comprehensive-country acceptance.
 
+### Recomputed checks
+
+```oa-check
+name: FITO limit, foreign tax A$1,500, difference A$500
+inputs:
+  foreign_tax: 1500
+  actual_tax: 12000
+  counterfactual_tax: 11500
+steps:
+  - difference: actual_tax - counterfactual_tax
+  - limit: max(1000, difference)
+  - offset: min(foreign_tax, limit)
+expected:
+  difference: 500
+  limit: 1000
+  offset: 1000
+```
+
+```oa-check
+name: FITO limit, foreign tax A$8,000, excess lost
+inputs:
+  foreign_tax: 8000
+  actual_tax: 16120
+  counterfactual_tax: 9720
+steps:
+  - limit: max(1000, actual_tax - counterfactual_tax)
+  - offset: min(foreign_tax, limit)
+  - lost: foreign_tax - offset
+expected:
+  limit: 6400
+  offset: 6400
+  lost: 1600
+```
+
+## When to refuse or refer
+
+- Hold treaty, controlled foreign company, hybrid and foreign pension questions for a specialist; this skill does not resolve them.
+- Do not refund or carry forward a foreign income tax offset above the limit; the excess is lost.
+- Needs Input when temporary-resident status depends on a spouse's Social Security Act status that is unknown.
+
+## Sources
+
+Read on dates are Ryan Duguid's reads of each page when he wrote this skill (October 2026). Each label is the reference tag used in the text above.
+
+| Source | URL | Read on |
+|---|---|---|
+| ACT-RECORD. Read for: Territory, period and current source chain; Fictional 2026–27 components and checks | https://www.legislation.gov.au/C2004A05138/latest/details | 2026-10-18 |
+| ACT-VERSIONS. Read for: Territory, period and current source chain; Fictional 2026–27 components and checks | https://www.legislation.gov.au/C2004A05138/latest/versions | 2026-10-18 |
+| CORE. Read for: Establish assessable income before relief; Fictional 2026–27 components and checks | https://www.legislation.gov.au/C2004A05138/2026-08-27/2026-08-27/text/original/epub/OEBPS/document_1/document_1.html | 2026-10-18 |
+| DICT. Read for: Territory, period and current source chain; Establish assessable income before relief; Translate the right amounts at the right times; Fictional 2026–27 components and checks | https://www.legislation.gov.au/C2004A05138/2026-08-27/2026-08-27/text/original/epub/OEBPS/document_10/document_10.html | 2026-10-18 |
+| TEMP. Read for: Establish assessable income before relief; Fictional 2026–27 components and checks | https://www.legislation.gov.au/C2004A05138/2026-08-27/2026-08-27/text/original/epub/OEBPS/document_9/document_9.html | 2026-10-18 |
+| FITO. Read for: Establish assessable income before relief; Which foreign tax counts; Ordinary limit and non-refundable use; Years, amendments and records; Fictional 2026–27 components and checks | https://www.legislation.gov.au/C2004A05138/2026-08-27/2026-08-27/text/original/epub/OEBPS/document_9/document_9.html | 2026-10-18 |
+| ITAA36. Read for: Territory, period and current source chain; Establish assessable income before relief; Fictional 2026–27 components and checks | https://www.legislation.gov.au/C1936A00027/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_1/document_1.html | 2026-10-18 |
+| REFORM2. Read for: Territory, period and current source chain; Fictional 2026–27 components and checks | https://www.legislation.gov.au/C2026A00071/asmade/2026-08-26/text/original/epub/OEBPS/document_1/document_1.html | 2026-10-18 |
+| OCTOBER. Read for: Territory, period and current source chain; Fictional 2026–27 components and checks | https://www.legislation.gov.au/C2026A00086/asmade/2026-09-15/text/original/epub/OEBPS/document_1/document_1.html | 2026-10-18 |
+| REGS-RECORD. Read for: Territory, period and current source chain; Fictional 2026–27 components and checks | https://www.legislation.gov.au/F2021L00206/latest/details | 2026-10-18 |
+| REGS. Read for: Territory, period and current source chain; Translate the right amounts at the right times; Fictional 2026–27 components and checks | https://www.legislation.gov.au/F2021L00206/2026-06-27/2026-06-27/text/original/epub/OEBPS/document_1/document_1.html | 2026-10-18 |
+| ATO-ELIGIBILITY. Read for: Territory, period and current source chain; Fictional 2026–27 components and checks | https://www.ato.gov.au/forms-and-instructions/foreign-income-tax-offset-rules-guide-2026/eligibility-and-rules-for-the-fito | 2026-10-18 |
+| ATO-LIMIT. Read for: Territory, period and current source chain; Ordinary limit and non-refundable use; Years, amendments and records; Fictional 2026–27 components and checks | https://www.ato.gov.au/forms-and-instructions/foreign-income-tax-offset-rules-guide-2026/calculate-your-fito-or-offset-limit | 2026-10-18 |
+| ATO-WHEN. Read for: Territory, period and current source chain; Establish assessable income before relief; Which foreign tax counts; Fictional 2026–27 components and checks | https://www.ato.gov.au/forms-and-instructions/foreign-income-tax-offset-rules-guide-2026/when-a-fito-applies | 2026-10-18 |
+| ATO-RECORDS. Read for: Territory, period and current source chain; Years, amendments and records; Fictional 2026–27 components and checks | https://www.ato.gov.au/forms-and-instructions/foreign-income-tax-offset-rules-guide-2026/record-keeping-for-fito | 2026-10-18 |
+
+Not yet confirmed: ato.gov.au and the Norfolk Island Regional Council site (nirc.gov.au) refused scripted access on 14 November 2026, so their pages were not re-read for this import; figures taken from them rest on Ryan Duguid's October 2026 read. The ATO foreign income tax offset rules guide 2026 pages were not re-read for this import.
+
 [ACT-RECORD]: https://www.legislation.gov.au/C2004A05138/latest/details
 [ACT-VERSIONS]: https://www.legislation.gov.au/C2004A05138/latest/versions
 [CORE]: https://www.legislation.gov.au/C2004A05138/2026-08-27/2026-08-27/text/original/epub/OEBPS/document_1/document_1.html
@@ -312,19 +394,3 @@ comprehensive-country acceptance.
 [ATO-LIMIT]: https://www.ato.gov.au/forms-and-instructions/foreign-income-tax-offset-rules-guide-2026/calculate-your-fito-or-offset-limit
 [ATO-WHEN]: https://www.ato.gov.au/forms-and-instructions/foreign-income-tax-offset-rules-guide-2026/when-a-fito-applies
 [ATO-RECORDS]: https://www.ato.gov.au/forms-and-instructions/foreign-income-tax-offset-rules-guide-2026/record-keeping-for-fito
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained in the
-[ryanduguid/openaccountants fork](https://github.com/ryanduguid/openaccountants).
-Check its quality tier, recorded review status and cited sources before use.
-Choose a practitioner whose credentials and engagement scope you have verified.
-The links below are optional upstream services; they do not publish or verify
-this fork's changes.
-
-- Upstream connection service: https://www.openaccountants.com/connect
-- Upstream accountant network: https://www.openaccountants.com/network

@@ -17,9 +17,9 @@ category: international
 tax_year: 2026
 tax_year_notes: "Sources checked 21 October 2026; Australian and UK tax years, payment dates and MLI effect dates must be established separately"
 tier: 2
-last_updated: 2026-10-21
+type: computation
+last_updated: 2026-11-14
 version: 0.1
-review_status: pending_review
 depends_on:
   - workflow-base
   - cross-border-workflow-base
@@ -28,7 +28,11 @@ depends_on:
   - nf-foreign-income
 ---
 
-# Norfolk Island: selected Australia-UK treaty relief
+# Norfolk Island: selected Australia-UK treaty relief v0.1
+
+> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
+
+## Scope
 
 Establish the taxpayer, both domestic residence positions, relevant income,
 source, covered tax, tax period and payment/event date before selecting
@@ -44,7 +48,27 @@ holds affected work and the complete financial package. This guide permits
 bounded reference explanations and labelled hypothetical components under
 their stated assumptions; it does not clear a real payment or filing.
 
-## Scope, periods and source order
+Norfolk Island is an Australian external territory and, since 1 July 2016, Australian federal tax law applies there with the Norfolk modifications set out below. For the mainland method and figures this skill shares with Australia, load [`au-foreign-income`](../australia/au-foreign-income.md); where a figure here and in that skill differ, check the official source both cite.
+
+## Ask the client first
+
+- Is the recipient a UK resident under Article 4, and the beneficial owner?
+- Payment type (dividend, interest, royalty) and for dividends the voting power held and for how long.
+- Whether any anti-abuse or principal-purpose condition is in question.
+- For UK-source income: the UK tax correctly due under the treaty and any refundable excess.
+
+## The method, step by step
+
+### Key figures
+
+| Item | Figure | Applies to | Source |
+|---|---|---|---|
+| Dividend ceiling, company holding at least 10% of voting power | 5% of gross | Outside the zero branch, Article 10(2)(a) | [AUTH](https://www.legislation.gov.uk/uksi/2003/3199/schedule/made) |
+| Other qualifying dividends | 15% of gross | Article 10(2)(b) | [AUTH](https://www.legislation.gov.uk/uksi/2003/3199/schedule/made) |
+| Interest | 10% of gross | Ordinary qualifying interest, Article 11(2) | [AUTH](https://www.legislation.gov.uk/uksi/2003/3199/schedule/made) |
+| Royalties | 5% of gross | Qualifying royalties, Article 12(2) | [AUTH](https://www.legislation.gov.uk/uksi/2003/3199/schedule/made) |
+
+### Scope, periods and source order
 
 This companion covers selected provisions of the **2003 Australia-UK
 Convention**, as modified by the **MLI**. The convention entered into
@@ -88,7 +112,7 @@ every rate, form or procedure for a later year. Verify amendments,
 reservations, guidance and actual forms for the requested event before use.
 [FITO-WHEN]; [FITO-LIMIT]; [FIG]
 
-## Territory, persons, taxes and residence
+### Territory, persons, taxes and residence
 
 Article **3(1)(b)** expressly includes **Norfolk Island** in the geographic
 meaning of Australia. Article 3's UK definition covers Great Britain and
@@ -138,7 +162,7 @@ clause; do not deny all partnership income just because Article 3's
 definition of a person excludes a partnership. [AUTH, Article 3][AUTH];
 [MLI, Article 3][MLI]; [SYNTH, Article 1 boxes][SYNTH]
 
-## Match the modifications and anti-abuse conditions
+### Match the modifications and anti-abuse conditions
 
 The final deposit positions list this pair as **Australia's agreement
 40** and **the UK's agreement 6**. Read the governing notification or
@@ -159,7 +183,7 @@ Australia's **2 October 2020** notification links to an objection concerning
 Denmark; it is not a UK-pair amendment. Preserve the table's columns and
 linked document identities when checking later changes. [OECD]
 
-## Selected source-tax limits and computation order
+### Selected source-tax limits and computation order
 
 These are **conditional treaty ceilings**, not automatic tax charges.
 Establish domestic liability, the correct taxpayer and gross component,
@@ -234,7 +258,7 @@ For an Australian payment, coordinate with `nf-investment-withholding`:
    need their own current authority; the Australian procedure cannot be
    copied to a UK payer. Hold actual forms, schemas and submissions here.
 
-## PE, attribution and corresponding relief
+### PE, attribution and corresponding relief
 
 Article **5** starts with a fixed place of business and adds specific
 branches. Its **more-than-12-month** rules for construction/installation
@@ -258,7 +282,7 @@ also has its own Commissioner-satisfaction condition. A foreign adjustment
 does not automatically generate an equal refund or credit. [AUTH,
 Articles 7 and 9][AUTH]; [AGREEMENTS, section 24][AGREEMENTS]
 
-## Credits, limitations and dispute clocks
+### Credits, limitations and dispute clocks
 
 Article **22** coordinates credits subject to the applicable domestic
 rules and treaty-compliant tax. Its corporate underlying-tax branches
@@ -310,7 +334,97 @@ Domestic amendment/refund and dispute remedies require their own clocks;
 use `nf-tax-amendments-objections` only within its verified scope.
 [ATO-SYNTH, introduction and Article 26 notes][ATO-SYNTH]
 
-## Intake, defaults and reviewer attention
+### Primary source library
+
+The references below support the identified provisions, not a claim that
+every page or every treaty article was reviewed. Recheck the live source
+records and any later amendment or notification for actual work.
+
+## Worked cases
+
+### Fictional 2026-27 components and boundary cases
+
+All amounts are **Australian dollars**, with no currency conversion or
+contractual gross-up. The monetary cases stipulate established domestic
+liability, treaty residence, beneficial ownership, character, source, no
+connected-PE or special-relationship exception, cleared Article 23 and
+purpose conditions, and no lower domestic exemption except as stated.
+For source ceilings, cash remaining is illustrative **if** the separately
+established charge/collection equals that ceiling. These are components,
+not actual withholding statements, returns, credit claims or refunds.
+
+| Case and complete additional assumptions | Reproducible component |
+|---|---|
+| A$100,000 taxable unfranked dividend to a UK resident company with exactly 10% direct voting power; zero branch fails | Article 10(2)(a): A$100,000 × 5% = **A$5,000 ceiling**. At that charge, cash remaining is **A$95,000**. An assumed 365-day condition cannot displace this pair's branch. |
+| A$10,000 taxable unfranked dividend beneficially owned by a UK resident individual | Article 10(2)(b): A$10,000 × 15% = **A$1,500 ceiling**; cash at that charge **A$8,500**. The corporate 10% holding branch cannot be selected for the individual. |
+| A$1,000,000 dividend to a UK resident company with exactly 80% voting power for the full 12-month period ending on declaration; all Article 10(3)(a) recognised-listing/regular-trading requirements satisfied | Article 10(3): A$1,000,000 × 0% = **A$0 source-State tax**; cash **A$1,000,000** under the stipulated collection assumptions. With only 6 months' holding and all ordinary Article 10(2)(a) conditions instead met, the alternative ceiling is **A$50,000**, a difference of **A$50,000**. |
+| A$20,000 ordinary interest to a UK resident beneficial owner, with no Article 11(3) exception | A$20,000 × 10% = **A$2,000 ceiling**; cash at that charge **A$18,000**. A fully qualifying unrelated, independent financial institution instead has **A$0** source tax; the stipulated Article 11(4) back-to-back exception restores a **A$2,000** ceiling. |
+| A$8,000 payment entirely within Article 12's royalty definition to its qualifying UK resident beneficial owner | A$8,000 × 5% = **A$400 ceiling**; cash at that charge **A$7,600**. Actual software/equipment rights being unknown would hold this classification, not select 5%. |
+| A$10,000 UK-source interest; the correct treaty-compliant UK tax is established as A$1,000, but A$2,500 was withheld and the A$1,500 excess is refundable | Only **A$1,000** can proceed to the Australian eligible-tax and limit tests; **A$1,500** is a separate foreign-refund matter. No assumed A$2,500 FITO or guaranteed refund. These stipulated figures are not a UK domestic rate table. |
+| Transparent entity receives A$100,000; UK tax law treats A$60,000, and only that amount, as income of a UK resident | The transparent-entity resident-income gate covers **A$60,000**, not all A$100,000 from an ownership label. A **A$40,000** remainder needs its own taxpayer and entitlement analysis; no rate is selected. |
+| Individual domestically resident in both States, no permanent home in either, centre of vital interests established in Australia | Article 4(3)(a) resolves treaty residence to Australia. Do not skip to nationality or insert habitual abode. A different domestic liability or Article 23 question still needs its own test. |
+| Ordinary dual-resident company has Australian effective management but no competent-authority agreement; dual-listed exception does not apply | No treaty tax relief/exemption under the modified Article 4(4). The former automatic effective-management result is unavailable. Domestic taxation and further procedure require their own analysis. |
+| Fixed business place used for 4 months | Duration alone does not clear PE. Test the actual fixed-place facts and applicable exceptions; do not apply a universal 12-month safe harbour. Attribution remains specialist work. |
+| First notification precedes final audit completion by a year | Identify the actual first notification and 3-year MAP clock. Waiting until audit completion does not restart it; do not infer a domestic deadline extension. |
+| UK FIG relief is claimed, or a visa is shown without Australian temporary-resident conditions | Hold the actual Article 23 and domestic interaction. A regime name, visa or guide date does not establish a source-tax exemption. |
+
+### Recomputed checks
+
+```oa-check
+name: Dividend A$100,000 to a 10% UK corporate holder, and A$10,000 to an individual
+inputs:
+  corporate_dividend: 100000
+  individual_dividend: 10000
+steps:
+  - corporate_ceiling: corporate_dividend * 0.05
+  - individual_ceiling: individual_dividend * 0.15
+expected:
+  corporate_ceiling: 5000
+  individual_ceiling: 1500
+```
+
+```oa-check
+name: Interest A$20,000 and royalty A$8,000 to UK beneficial owners
+inputs:
+  interest: 20000
+  royalty: 8000
+steps:
+  - interest_ceiling: interest * 0.10
+  - royalty_ceiling: royalty * 0.05
+  - interest_cash: interest - interest_ceiling
+expected:
+  interest_ceiling: 2000
+  royalty_ceiling: 400
+  interest_cash: 18000
+```
+
+## When to refuse or refer
+
+- Use the topical refusals in this section for treaty shopping, a different treaty partner, or a request to submit a claim.
+- Refer permanent establishment attribution and MAP cases to a specialist.
+- Do not grant a treaty rate from an ownership label or a visa.
+
+### Topical refusals and specialist holds
+
+Retain the universal, cross-border and applicable domain catalogues and
+their exact messages. Add these topical refusals to the refusal trace:
+
+| Code | Trigger | Verbatim output |
+|---|---|---|
+| R-NFUK-INSTRUMENT | Requested computation relies on a different treaty partner, tax, territory or period without its required content/authority | "This Norfolk Island guide covers selected Australia-UK treaty provisions only. I cannot calculate the requested treaty result without the applicable instrument, period and country content." |
+| R-NFUK-ENTITLEMENT | Asked to calculate or clear a treaty outcome despite unresolved mandatory residence, ownership, classification, source, PE or anti-abuse conditions | "The required treaty conditions are unresolved. I cannot clear the affected financial result or complete the output package until the missing authority and evidence are established." |
+| R-NFUK-PROCEDURE | Asked to submit a return, relief/refund claim, MAP case or arbitration request using this reference, or to guarantee its outcome | "This reference does not provide a complete submission or a guaranteed relief outcome. The qualified reviewer must verify the actual procedure, documents and deadlines before acting." |
+
+Missing facts ordinarily remain Needs Input. Apply the matching refusal
+when its trigger arises; do not invent a new code. PE attribution retains
+R-CB-S2 and unresolved residence/instrument disputes retain R-CB-S4. Treaty
+shopping, evasion and other loaded hard refusals are not cleared by the
+examples below. Private identifiers, original ownership records and
+authentication stay with the reviewer; obtain no real client or bank data.
+
+## Completion checklist
+
+### Intake, defaults and reviewer attention
 
 Add these to the combined profile confirmation before computation:
 
@@ -342,51 +456,7 @@ otherwise state the unknown impact. Add the reviewer's confirmed engagement
 materiality threshold for routine reconciliations without suppressing these
 mandatory flags. This is an attention policy, not a statutory threshold.
 
-## Topical refusals and specialist holds
-
-Retain the universal, cross-border and applicable domain catalogues and
-their exact messages. Add these topical refusals to the refusal trace:
-
-| Code | Trigger | Verbatim output |
-|---|---|---|
-| R-NFUK-INSTRUMENT | Requested computation relies on a different treaty partner, tax, territory or period without its required content/authority | "This Norfolk Island guide covers selected Australia-UK treaty provisions only. I cannot calculate the requested treaty result without the applicable instrument, period and country content." |
-| R-NFUK-ENTITLEMENT | Asked to calculate or clear a treaty outcome despite unresolved mandatory residence, ownership, classification, source, PE or anti-abuse conditions | "The required treaty conditions are unresolved. I cannot clear the affected financial result or complete the output package until the missing authority and evidence are established." |
-| R-NFUK-PROCEDURE | Asked to submit a return, relief/refund claim, MAP case or arbitration request using this reference, or to guarantee its outcome | "This reference does not provide a complete submission or a guaranteed relief outcome. The qualified reviewer must verify the actual procedure, documents and deadlines before acting." |
-
-Missing facts ordinarily remain Needs Input. Apply the matching refusal
-when its trigger arises; do not invent a new code. PE attribution retains
-R-CB-S2 and unresolved residence/instrument disputes retain R-CB-S4. Treaty
-shopping, evasion and other loaded hard refusals are not cleared by the
-examples below. Private identifiers, original ownership records and
-authentication stay with the reviewer; obtain no real client or bank data.
-
-## Fictional 2026-27 components and boundary cases
-
-All amounts are **Australian dollars**, with no currency conversion or
-contractual gross-up. The monetary cases stipulate established domestic
-liability, treaty residence, beneficial ownership, character, source, no
-connected-PE or special-relationship exception, cleared Article 23 and
-purpose conditions, and no lower domestic exemption except as stated.
-For source ceilings, cash remaining is illustrative **if** the separately
-established charge/collection equals that ceiling. These are components,
-not actual withholding statements, returns, credit claims or refunds.
-
-| Case and complete additional assumptions | Reproducible component |
-|---|---|
-| A$100,000 taxable unfranked dividend to a UK resident company with exactly 10% direct voting power; zero branch fails | Article 10(2)(a): A$100,000 × 5% = **A$5,000 ceiling**. At that charge, cash remaining is **A$95,000**. An assumed 365-day condition cannot displace this pair's branch. |
-| A$10,000 taxable unfranked dividend beneficially owned by a UK resident individual | Article 10(2)(b): A$10,000 × 15% = **A$1,500 ceiling**; cash at that charge **A$8,500**. The corporate 10% holding branch cannot be selected for the individual. |
-| A$1,000,000 dividend to a UK resident company with exactly 80% voting power for the full 12-month period ending on declaration; all Article 10(3)(a) recognised-listing/regular-trading requirements satisfied | Article 10(3): A$1,000,000 × 0% = **A$0 source-State tax**; cash **A$1,000,000** under the stipulated collection assumptions. With only 6 months' holding and all ordinary Article 10(2)(a) conditions instead met, the alternative ceiling is **A$50,000**, a difference of **A$50,000**. |
-| A$20,000 ordinary interest to a UK resident beneficial owner, with no Article 11(3) exception | A$20,000 × 10% = **A$2,000 ceiling**; cash at that charge **A$18,000**. A fully qualifying unrelated, independent financial institution instead has **A$0** source tax; the stipulated Article 11(4) back-to-back exception restores a **A$2,000** ceiling. |
-| A$8,000 payment entirely within Article 12's royalty definition to its qualifying UK resident beneficial owner | A$8,000 × 5% = **A$400 ceiling**; cash at that charge **A$7,600**. Actual software/equipment rights being unknown would hold this classification, not select 5%. |
-| A$10,000 UK-source interest; the correct treaty-compliant UK tax is established as A$1,000, but A$2,500 was withheld and the A$1,500 excess is refundable | Only **A$1,000** can proceed to the Australian eligible-tax and limit tests; **A$1,500** is a separate foreign-refund matter. No assumed A$2,500 FITO or guaranteed refund. These stipulated figures are not a UK domestic rate table. |
-| Transparent entity receives A$100,000; UK tax law treats A$60,000, and only that amount, as income of a UK resident | The transparent-entity resident-income gate covers **A$60,000**, not all A$100,000 from an ownership label. A **A$40,000** remainder needs its own taxpayer and entitlement analysis; no rate is selected. |
-| Individual domestically resident in both States, no permanent home in either, centre of vital interests established in Australia | Article 4(3)(a) resolves treaty residence to Australia. Do not skip to nationality or insert habitual abode. A different domestic liability or Article 23 question still needs its own test. |
-| Ordinary dual-resident company has Australian effective management but no competent-authority agreement; dual-listed exception does not apply | No treaty tax relief/exemption under the modified Article 4(4). The former automatic effective-management result is unavailable. Domestic taxation and further procedure require their own analysis. |
-| Fixed business place used for 4 months | Duration alone does not clear PE. Test the actual fixed-place facts and applicable exceptions; do not apply a universal 12-month safe harbour. Attribution remains specialist work. |
-| First notification precedes final audit completion by a year | Identify the actual first notification and 3-year MAP clock. Waiting until audit completion does not restart it; do not infer a domestic deadline extension. |
-| UK FIG relief is claimed, or a visa is shown without Australian temporary-resident conditions | Hold the actual Article 23 and domestic interaction. A regime name, visa or guide date does not establish a source-tax exemption. |
-
-## Output extension and working paper specification
+### Output extension and working paper specification
 
 For a completed engagement, preserve the universal **Excel working paper,
 reviewer brief, action list and review checklist**, the applicable domain
@@ -422,7 +492,7 @@ benefit/purpose evidence, computation trail and the exact missing action.
 Address it to the credentialed reviewer and reconcile every figure with
 the workbook and chat. The examples are not a substitute for that work.
 
-## Review Checklist Items
+### Review Checklist Items
 
 Run all universal, cross-border and applicable domain checks, then verify:
 
@@ -443,7 +513,35 @@ Run all universal, cross-border and applicable domain checks, then verify:
 15. Mandatory unknowns stay held, no unpermitted default was used and every loaded refusal has its required trace and exact message where fired.
 16. All flags, source gaps and professional decisions appear in the brief, action list and review checklist, with private records retained by the reviewer.
 
-## Currency, validation and remaining coverage
+## Sources
+
+Read on dates are Ryan Duguid's reads of each page when he wrote this skill (October 2026). Each label is the reference tag used in the text above.
+
+| Source | URL | Read on |
+|---|---|---|
+| REGISTER. Read for: Scope, periods and source order; Primary source library | https://treasury.gov.au/tax-treaties/income-tax-treaties | 2026-10-21 |
+| AUTH. Read for: Scope, periods and source order; Territory, persons, taxes and residence; Match the modifications and anti-abuse conditions; Selected source-tax limits and computation order; PE, attribution and corresponding relief; Credits, limitations and dispute clocks; Primary source library | https://www.legislation.gov.uk/uksi/2003/3199/schedule/made | 2026-10-21 |
+| SYNTH. Read for: Scope, periods and source order; Territory, persons, taxes and residence; Match the modifications and anti-abuse conditions; Selected source-tax limits and computation order; PE, attribution and corresponding relief; Primary source library | https://www.gov.uk/government/publications/australia-tax-treaties/synthesised-text-of-the-multilateral-instrument-and-the-2003-australia-uk-double-taxation-convention-in-force | 2026-10-21 |
+| ATO-SYNTH. Read for: Scope, periods and source order; Credits, limitations and dispute clocks; Primary source library | https://www.ato.gov.au/law/view/document?DocID=MLI%2FMLI-UK-agreement | 2026-10-21 |
+| MLI. Read for: Scope, periods and source order; Territory, persons, taxes and residence; Match the modifications and anti-abuse conditions; Credits, limitations and dispute clocks; Primary source library | https://www.legislation.gov.uk/uksi/2018/630/pdfs/uksi_20180630_en.pdf | 2026-10-21 |
+| AU-POS. Read for: Territory, persons, taxes and residence; Match the modifications and anti-abuse conditions; Primary source library | https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/beps-mli/beps-mli-position-australia-instrument-deposit.pdf | 2026-10-21 |
+| UK-POS. Read for: Territory, persons, taxes and residence; Match the modifications and anti-abuse conditions; Primary source library | https://assets.publishing.service.gov.uk/media/5b4860ac40f0b6633c0c96b4/Final_list_of_UK_reservations_and_notifications_made_on_deposit_of_the_instrument_of_ratification.pdf | 2026-10-21 |
+| OECD. Read for: Match the modifications and anti-abuse conditions; Primary source library | https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/beps-mli/beps-mli-signatories-and-parties.pdf | 2026-10-21 |
+| AGREEMENTS. Read for: Scope, periods and source order; Selected source-tax limits and computation order; PE, attribution and corresponding relief; Primary source library | https://www.legislation.gov.au/C1953A00082/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_1/document_1.html | 2026-10-21 |
+| RESIDENCE. Read for: Scope, periods and source order; Territory, persons, taxes and residence; Selected source-tax limits and computation order; Primary source library | https://www.legislation.gov.au/C1936A00027/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_1/document_1.html | 2026-10-21 |
+| TR. Read for: Territory, persons, taxes and residence; Primary source library | https://www.ato.gov.au/law/view/document?DocID=TXR%2FTR20231%2FNAT%2FATO%2F00001 | 2026-10-21 |
+| SRT. Read for: Territory, persons, taxes and residence; Primary source library | https://www.gov.uk/government/publications/rdr3-statutory-residence-test-srt/guidance-note-for-statutory-residence-test-srt-rdr3 | 2026-10-21 |
+| ADMIN. Read for: Scope, periods and source order; Selected source-tax limits and computation order; Primary source library | https://www.legislation.gov.au/C1953A00001/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_1/document_1.html | 2026-10-21 |
+| REGS. Read for: Scope, periods and source order; Selected source-tax limits and computation order; Primary source library | https://www.legislation.gov.au/F2017L01227/2026-08-27/2026-08-27/text/original/epub/OEBPS/document_1/document_1.html | 2026-10-21 |
+| RATES. Read for: Selected source-tax limits and computation order; Primary source library | https://www.legislation.gov.au/C2004A00086/2007-09-24/2007-09-24/text/original/epub/OEBPS/document_1/document_1.html | 2026-10-21 |
+| FITO-LAW. Read for: Scope, periods and source order; Credits, limitations and dispute clocks; Primary source library | https://www.legislation.gov.au/C2004A05138/2026-08-27/2026-08-27/text/original/epub/OEBPS/document_9/document_9.html | 2026-10-21 |
+| REFORM2. Read for: Scope, periods and source order; Primary source library | https://www.legislation.gov.au/C2026A00071/asmade/2026-08-26/text/original/epub/OEBPS/document_1/document_1.html | 2026-10-21 |
+| OCTOBER. Read for: Scope, periods and source order; Primary source library | https://www.legislation.gov.au/C2026A00086/asmade/2026-09-15/text/original/epub/OEBPS/document_1/document_1.html | 2026-10-21 |
+| FITO-WHEN. Read for: Scope, periods and source order; Credits, limitations and dispute clocks; Primary source library | https://www.ato.gov.au/forms-and-instructions/foreign-income-tax-offset-rules-guide-2026/when-a-fito-applies | 2026-10-21 |
+| FITO-LIMIT. Read for: Scope, periods and source order; Credits, limitations and dispute clocks; Primary source library | https://www.ato.gov.au/forms-and-instructions/foreign-income-tax-offset-rules-guide-2026/calculate-your-fito-or-offset-limit | 2026-10-21 |
+| FIG. Read for: Scope, periods and source order; Credits, limitations and dispute clocks; Primary source library | https://www.gov.uk/government/publications/foreign-income-and-gains-fig-regime-self-assessment-helpsheet-hs266/hs266-foreign-income-and-gains-fig-regime-2026 | 2026-10-21 |
+
+### Currency, validation and remaining coverage
 
 Version **0.1**, checked **21 October 2026**: initial selected UK treaty
 companion. Primary instruments, selected matching positions and current
@@ -461,11 +559,7 @@ practitioner review, actual engagement package or comprehensive-country
 acceptance is claimed. Keep all open Norfolk topic and country slots open
 until their own sources, mandatory contract slots and reviews pass.
 
-## Primary source library
-
-The references below support the identified provisions, not a claim that
-every page or every treaty article was reviewed. Recheck the live source
-records and any later amendment or notification for actual work.
+Not yet confirmed: ato.gov.au and the Norfolk Island Regional Council site (nirc.gov.au) refused scripted access on 14 November 2026, so their pages were not re-read for this import; figures taken from them rest on Ryan Duguid's October 2026 read. gov.uk and OECD pages were not re-read for this import.
 
 [REGISTER]: https://treasury.gov.au/tax-treaties/income-tax-treaties
 [AUTH]: https://www.legislation.gov.uk/uksi/2003/3199/schedule/made
@@ -488,23 +582,3 @@ records and any later amendment or notification for actual work.
 [FITO-WHEN]: https://www.ato.gov.au/forms-and-instructions/foreign-income-tax-offset-rules-guide-2026/when-a-fito-applies
 [FITO-LIMIT]: https://www.ato.gov.au/forms-and-instructions/foreign-income-tax-offset-rules-guide-2026/calculate-your-fito-or-offset-limit
 [FIG]: https://www.gov.uk/government/publications/foreign-income-and-gains-fig-regime-self-assessment-helpsheet-hs266/hs266-foreign-income-and-gains-fig-regime-2026
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained in the
-[ryanduguid/openaccountants fork](https://github.com/ryanduguid/openaccountants).
-Check its quality tier, recorded review status and cited sources before use.
-Choose a practitioner whose credentials and engagement scope you have verified.
-The links below are optional upstream services; they do not publish or verify
-this fork's changes.
-
-- Upstream connection service: https://www.openaccountants.com/connect
-- Upstream accountant network: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

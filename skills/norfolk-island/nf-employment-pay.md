@@ -16,15 +16,19 @@ category: payroll
 tax_year: 2026
 tax_year_notes: "2026 wage order takes employee effect from the first full pay period starting on or after 1 July 2026; current source check 17 October 2026"
 tier: 2
-last_updated: 2026-10-17
+type: computation
+last_updated: 2026-11-14
 version: 0.1
-review_status: pending_review
 depends_on:
   - workflow-base
   - payroll-workflow-base
 ---
 
-# Norfolk Island: employment pay, leave and payslips
+# Norfolk Island: employment pay, leave and payslips v0.1
+
+> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
+
+## Scope
 
 Establish the employer, employment relationship, work location, instrument,
 classification, service, hours and pay period before computing gross pay.
@@ -40,7 +44,26 @@ mandatory facts remain Needs Input and unresolved rules remain held. No
 general missing-fact default, payment, submission or personal-record
 collection is authorised here.
 
-## Coverage and ongoing Norfolk modifications
+Norfolk Island is an Australian external territory and, since 1 July 2016, Australian federal tax law applies there with the Norfolk modifications set out below. For the mainland method and figures this skill shares with Australia, load [`australia-payroll`](../australia/australia-payroll.md); where a figure here and in that skill differ, check the official source both cite.
+
+## Ask the client first
+
+- Is the employee covered by a modern award or enterprise agreement, or award/agreement-free?
+- Full-time, part-time or casual, and ordinary hours per week.
+- Start date and total eligible service, including any Norfolk service before 1 July 2016.
+- The pay period dates, to place the first full pay period on or after 1 July 2026.
+- For termination: the reason, age, and weekly base and full rates of pay.
+
+## The method, step by step
+
+### Key figures
+
+| Item | Figure | Applies to | Source |
+|---|---|---|---|
+| National minimum wage, adult | A$26.44 per hour or A$1,004.90 per 38-hour week | Award/agreement-free adults, from the first full pay period starting on or after 1 July 2026 | [ORDER](https://www.fwc.gov.au/documents/awardsandorders/pdf/pr799279.pdf) |
+| Casual loading | 25% of the base rate | Award/agreement-free casual employees | [ORDER](https://www.fwc.gov.au/documents/awardsandorders/pdf/pr799279.pdf) |
+
+### Coverage and ongoing Norfolk modifications
 
 The Fair Work Act's geographical definition of Australia includes Norfolk
 Island. Sections 13/14 define national-system employee/employer, including
@@ -69,7 +92,7 @@ is marked historical guidance. The current Rule still contains ongoing
 service, preserved-leave and possible take-home-pay protections. Do not
 discard those because the transition ended. [FWO]; [NI]
 
-## Select the applicable wage instrument
+### Select the applicable wage instrument
 
 Establish the actual modern award/agreement, version, coverage,
 classification, ordinary hours, allowances, penalties and overtime.
@@ -100,7 +123,7 @@ reduction. Establish eligibility, supported assessment, the applicable
 Miscellaneous Award provisions and rounding before actual special pay.
 Those computations remain held. [ORDER, clauses 5 to 10 and Schedule A][ORDER]
 
-## Hours, pay bases and selected leave
+### Hours, pay bases and selected leave
 
 Section 62 ordinarily limits requested/required weekly hours to **38 for
 full-time employees**, or the lesser of 38 and ordinary weekly hours for
@@ -133,7 +156,7 @@ service leave, flexible work and special cases need further analysis.
 Check actual Norfolk holiday law, location, dates and substitutions; do
 not automatically use a mainland or ATO business-day calendar. [ACT1]; [FWO]
 
-### Historical service and take-home pay
+#### Historical service and take-home pay
 
 The Rule's inserted section 131B counts Norfolk service on or after
 **1 July 2016** for specified annual/personal accrual and notice
@@ -157,7 +180,7 @@ while the award covers the employee, including when an agreement begins
 to apply. Obtain the actual order/instrument and history before reducing
 pay or asserting a protected amount. [NI]
 
-## Notice and redundancy components
+### Notice and redundancy components
 
 For terminations within section 117, written notice identifies the
 termination day. Ordinary notice uses eligible continuous service when
@@ -208,7 +231,7 @@ Notice and redundancy exclusions differ. Awards/agreements can preserve
 additional obligations. These tables do not settle all final pay, tax,
 dismissal legality or payment deadlines.
 
-## Payment, deductions, payslips and records
+### Payment, deductions, payslips and records
 
 Section 323 requires work-related amounts in full, in money by a permitted
 method, **at least monthly**, subject to permitted deductions. Applicable
@@ -270,7 +293,9 @@ six-month and subsequent annual requirements, not commencement and the
 first twelve-month requirement. Check current statements and actual timing;
 fixed-term and other statement duties require separate rules. [ACT1]
 
-## Fictional components and checks
+## Worked cases
+
+### Fictional components and checks
 
 These cases stipulate the applicable branch and otherwise satisfied
 conditions. Amounts are AUD. They illustrate components, not complete
@@ -295,7 +320,61 @@ notice/redundancy endpoints, deduction authority, identity completion,
 protected information and records. Gross, deductions, net cash, employer
 cost and journal checks still need every payroll source and input.
 
-## Provenance and open coverage
+### Recomputed checks
+
+```oa-check
+name: Award-free adult casual, A$30 base, ten ordinary hours
+inputs:
+  base_rate: 30
+  hours: 10
+steps:
+  - base: base_rate * hours
+  - loading: base * 0.25
+  - total: base + loading
+expected:
+  base: 300
+  loading: 75
+  total: 375
+```
+
+```oa-check
+name: Redundancy, 8.5 years of service, A$1,100 weekly base
+inputs:
+  weeks: 14
+  weekly_base: 1100
+  hourly_minimum: 26.44
+steps:
+  - redundancy: weeks * weekly_base
+  - ten_hours_at_minimum: hourly_minimum * 10
+expected:
+  redundancy: 15400
+  ten_hours_at_minimum: 264.40
+```
+
+## When to refuse or refer
+
+- Refer to the Fair Work Ombudsman or an employment lawyer for unfair dismissal, disputes and award interpretation.
+- Never show family and domestic violence leave on a payslip as a leave balance.
+- Do not use the national minimum wage where an award or agreement sets a higher rate.
+
+## Sources
+
+Read on dates are Ryan Duguid's reads of each page when he wrote this skill (October 2026). Each label is the reference tag used in the text above.
+
+| Source | URL | Read on |
+|---|---|---|
+| ACT1. Read for: Coverage and ongoing Norfolk modifications; Select the applicable wage instrument; Hours, pay bases and selected leave; Notice and redundancy components; Payment, deductions, payslips and records; Provenance and open coverage | https://www.legislation.gov.au/C2009A00028/2026-07-07/2026-07-07/text/original/epub/OEBPS/document_1/document_1.html | 2026-10-17 |
+| ACT2. Read for: Payment, deductions, payslips and records; Provenance and open coverage | https://www.legislation.gov.au/C2009A00028/2026-07-07/2026-07-07/text/original/epub/OEBPS/document_2/document_2.html | 2026-10-17 |
+| ACT-LATEST. Read for: Provenance and open coverage | https://www.legislation.gov.au/C2009A00028/latest/details | 2026-10-17 |
+| NI. Read for: Coverage and ongoing Norfolk modifications; Hours, pay bases and selected leave; Notice and redundancy components; Provenance and open coverage | https://www.legislation.gov.au/F2016L01129/2022-01-01/2022-01-01/text/1/epub/OEBPS/document_1/document_1.html | 2026-10-17 |
+| NI-LATEST. Read for: Provenance and open coverage | https://www.legislation.gov.au/F2016L01129/latest/details | 2026-10-17 |
+| REG. Read for: Payment, deductions, payslips and records; Provenance and open coverage | https://www.legislation.gov.au/F2009L02356/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_1/document_1.html | 2026-10-17 |
+| REG-LATEST. Read for: Provenance and open coverage | https://www.legislation.gov.au/F2009L02356/latest/details | 2026-10-17 |
+| ORDER. Read for: Select the applicable wage instrument; Provenance and open coverage | https://www.fwc.gov.au/documents/awardsandorders/pdf/pr799279.pdf | 2026-10-17 |
+| FWO. Read for: Coverage and ongoing Norfolk modifications; Hours, pay bases and selected leave; Provenance and open coverage | https://www.fairwork.gov.au/about-us/legislation/norfolk-island | 2026-10-17 |
+| FWC. Read for: Select the applicable wage instrument; Provenance and open coverage | https://www.fwc.gov.au/work-conditions/minimum-wages-and-conditions/national-minimum-wage | 2026-10-17 |
+
+### Provenance and open coverage
 
 Checked on 17 October 2026: selected Act provisions in C73 effective
 7 July 2026, Regulations C57 effective 1 October 2026, Norfolk Rule C01
@@ -312,6 +391,8 @@ termination tax/deadlines and remaining payroll country slots remain open.
 No comprehensive-country credit, practitioner sign-off or independent model
 engagement benchmark is claimed.
 
+Not yet confirmed: ato.gov.au and the Norfolk Island Regional Council site (nirc.gov.au) refused scripted access on 14 November 2026, so their pages were not re-read for this import; figures taken from them rest on Ryan Duguid's October 2026 read. Fair Work Ombudsman and Fair Work Commission pages were not re-read for this import.
+
 [ACT1]: https://www.legislation.gov.au/C2009A00028/2026-07-07/2026-07-07/text/original/epub/OEBPS/document_1/document_1.html
 [ACT2]: https://www.legislation.gov.au/C2009A00028/2026-07-07/2026-07-07/text/original/epub/OEBPS/document_2/document_2.html
 [ACT-LATEST]: https://www.legislation.gov.au/C2009A00028/latest/details
@@ -322,23 +403,3 @@ engagement benchmark is claimed.
 [ORDER]: https://www.fwc.gov.au/documents/awardsandorders/pdf/pr799279.pdf
 [FWO]: https://www.fairwork.gov.au/about-us/legislation/norfolk-island
 [FWC]: https://www.fwc.gov.au/work-conditions/minimum-wages-and-conditions/national-minimum-wage
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained in the
-[ryanduguid/openaccountants fork](https://github.com/ryanduguid/openaccountants).
-Check its quality tier, recorded review status and cited sources before use.
-Choose a practitioner whose credentials and engagement scope you have verified.
-The links below are optional upstream services; they do not publish or verify
-this fork's changes.
-
-- Upstream connection service: https://www.openaccountants.com/connect
-- Upstream accountant network: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

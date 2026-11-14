@@ -16,16 +16,20 @@ category: international
 tax_year: 2026
 tax_year_notes: "Australian 2026–27 income year; low-income figures are those enacted for 2025–26 and later years, checked on 17 October 2026 and subject to later amendment"
 tier: 2
-last_updated: 2026-10-17
+type: computation
+last_updated: 2026-11-14
 version: 0.1
-review_status: pending_review
 depends_on:
   - workflow-base
   - income-tax-workflow-base
   - social-contributions-workflow-base
 ---
 
-# Norfolk Island: Medicare levy and surcharge
+# Norfolk Island: Medicare levy and surcharge v0.1
+
+> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
+
+## Scope
 
 Use `nf-tax-system` for the post-2016 reforms and `nf-income-tax` for
 residence, ordinary income tax and selected offsets. Norfolk residence does
@@ -41,7 +45,18 @@ outputs and checks. This reference does not fill every country slot.
 Required missing facts remain Needs Input; unresolved rules remain on hold.
 Do not collect or submit Medicare numbers, identity evidence or returns.
 
-## Charge, residence and exemptions
+Norfolk Island is an Australian external territory and, since 1 July 2016, Australian federal tax law applies there with the Norfolk modifications set out below. For the mainland method and figures this skill shares with Australia, load [`au-medicare-levy`](../australia/au-medicare-levy.md), [`au-rates-2026-27`](../australia/au-rates-2026-27.md); where a figure here and in that skill differ, check the official source both cite.
+
+## Ask the client first
+
+- Is the person a resident, and do they fall in an exemption category for any part of 2026-27?
+- Taxable income and, for the surcharge, reportable fringe benefits, reportable super contributions and other income for surcharge purposes.
+- Family status at year end, spouse income and dependent children.
+- Days covered by appropriate private hospital cover, for each person in the family.
+
+## The method, step by step
+
+### Charge, residence and exemptions
 
 Income Tax Assessment Act 1936 section 251S generally imposes the levy on
 an individual's taxable income where the person was an Australian resident
@@ -73,7 +88,7 @@ to surcharge treatment. The fringe-benefits surcharge Act separately
 modifies those definitions. A half ordinary-levy exemption is not proof of
 a half surcharge exemption. [ASSESS]; [FRINGE, sections 5–8][FRINGE]
 
-## Ordinary levy and low-income relief
+### Ordinary levy and low-income relief
 
 The general individual rate is **2% of taxable income**, subject to the
 applicable adjustments, reductions and exemptions. It is separate from
@@ -102,7 +117,7 @@ Act, effective 1 July 2026, with Schedule 5 expressly applying to
 them unchanged. Recheck before an actual assessment. [AMEND, section 2 and
 Schedule 5][AMEND]
 
-### Family reduction
+#### Family reduction
 
 Section 8 requires the person to be married on the year's last day or
 entitled to one of the specified actual/notional child-related offsets.
@@ -130,7 +145,7 @@ over family income; excess reduction can affect the spouse's levy. Do not
 give both spouses the full family reduction or treat the result as a
 refundable credit. [LEVY, section 8][LEVY]
 
-### Part-year periods and special receipts
+#### Part-year periods and special receipts
 
 Section 9 reduces the ordinary levy in the proportion that established
 prescribed-person days bear to actual days in the income year. It expressly
@@ -144,7 +159,7 @@ family-income calculation. Do not remove arrears, a super receipt or
 foreign exempt income from the base without the complete applicable rule.
 Those special calculations remain held here. [LEVY]; [ASSESS]
 
-## Medicare levy surcharge: income, cover and period
+### Medicare levy surcharge: income, cover and period
 
 The surcharge is additional to the ordinary levy. Establish the person's
 single/married/dependant status, prescribed status and appropriate cover
@@ -154,12 +169,12 @@ single-with-dependants and married branches. [LEVY]; [FRINGE]
 
 The **2026–27** tier boundaries published by the ATO are:
 
-| Tier | Single income for surcharge purposes | Family income for surcharge purposes, before child increases | Surcharge rate when liable |
-|---|---|---|---|
-| Base | At or below $105,000 | At or below $210,000 | Nil |
-| 1 | Over $105,000 to $123,000 | Over $210,000 to $246,000 | 1% |
-| 2 | Over $123,000 to $164,000 | Over $246,000 to $328,000 | 1.25% |
-| 3 | Over $164,000 | Over $328,000 | 1.5% |
+| Tier | Single income for surcharge purposes | Family income for surcharge purposes, before child increases | Surcharge rate when liable | Source |
+|---|---|---|--- |---|
+| Base | At or below $105,000 | At or below $210,000 | Nil | [FRINGE](https://www.legislation.gov.au/C2004A00412/2026-07-01/text) |
+| 1 | Over $105,000 to $123,000 | Over $210,000 to $246,000 | 1% | [FRINGE](https://www.legislation.gov.au/C2004A00412/2026-07-01/text) |
+| 2 | Over $123,000 to $164,000 | Over $246,000 to $328,000 | 1.25% | [FRINGE](https://www.legislation.gov.au/C2004A00412/2026-07-01/text) |
+| 3 | Over $164,000 | Over $328,000 | 1.5% | [FRINGE](https://www.legislation.gov.au/C2004A00412/2026-07-01/text) |
 
 The private health insurance Act provides indexed thresholds and doubled
 family thresholds. For MLS, apply the modified family-tier tests in levy
@@ -207,7 +222,9 @@ and 2025–26 tier figures. Use the later enacted $28,011 condition and the
 period-labelled 2026–27 tier page. Its general explanation of charge bases
 does not make its older numeric examples current. [AMEND]; [ATO-PAYING]; [ATO-RATES]
 
-## Fictional calculations and review patterns
+## Worked cases
+
+### Fictional calculations and review patterns
 
 Amounts below exclude other taxes and assume all unmentioned special
 adjustments are absent. They are component examples, not return balances.
@@ -232,7 +249,58 @@ the whole applicable base; qualifying policy and dependant periods; and
 actual day counts. Reconcile components with `nf-income-tax` only after
 all offsets, credits, prepayments and workflow requirements are resolved.
 
-## Sources, currency and remaining coverage
+### Recomputed checks
+
+```oa-check
+name: Low-income phase-in, taxable income A$30,000
+inputs:
+  taxable: 30000
+steps:
+  - phase_in: (taxable - 28011) * 0.10
+  - full_rate: taxable * 0.02
+  - levy: min(phase_in, full_rate)
+expected:
+  phase_in: 198.90
+  levy: 198.90
+```
+
+```oa-check
+name: Surcharge tier 1, taxable income A$100,000 plus A$10,000 reportable fringe benefits
+inputs:
+  taxable: 100000
+  fringe: 10000
+steps:
+  - taxable_part: taxable * 0.01
+  - fringe_part: fringe * 0.01
+  - surcharge: taxable_part + fringe_part
+expected:
+  surcharge: 1100
+```
+
+## When to refuse or refer
+
+- Do not decide surcharge exemption from one fact (a half levy exemption, or the employee's own cover) when dependant facts are missing.
+- Refer special receipts (lump sums in arrears, super lump sums) to a registered tax agent.
+- Do not prorate the surcharge tier test by days; only the surcharge itself is prorated.
+
+## Sources
+
+Read on dates are Ryan Duguid's reads of each page when he wrote this skill (October 2026). Each label is the reference tag used in the text above.
+
+| Source | URL | Read on |
+|---|---|---|
+| LEVY. Read for: Charge, residence and exemptions; Ordinary levy and low-income relief; Medicare levy surcharge: income, cover and period; Sources, currency and remaining coverage | https://www.legislation.gov.au/C2004A03351/2026-07-01/text | 2026-10-17 |
+| ASSESS. Read for: Charge, residence and exemptions; Ordinary levy and low-income relief; Sources, currency and remaining coverage | https://www.legislation.gov.au/C1936A00027/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_4/document_4.html | 2026-10-17 |
+| FRINGE. Read for: Charge, residence and exemptions; Medicare levy surcharge: income, cover and period; Sources, currency and remaining coverage | https://www.legislation.gov.au/C2004A00412/2026-07-01/text | 2026-10-17 |
+| PHI. Read for: Medicare levy surcharge: income, cover and period; Sources, currency and remaining coverage | https://www.legislation.gov.au/C2007A00031/2026-09-19/text | 2026-10-17 |
+| AMEND. Read for: Ordinary levy and low-income relief; Medicare levy surcharge: income, cover and period; Sources, currency and remaining coverage | https://www.legislation.gov.au/C2026A00058/asmade | 2026-10-17 |
+| DICT. Read for: Medicare levy surcharge: income, cover and period; Sources, currency and remaining coverage | https://www.legislation.gov.au/C2004A05138/2026-08-27/2026-08-27/text/original/epub/OEBPS/document_10/document_10.html | 2026-10-17 |
+| NORFOLK. Read for: Sources, currency and remaining coverage | https://www.ato.gov.au/norfolk-island/norfolk-island-residents-and-individual-tax | 2026-10-17 |
+| ATO-RATES. Read for: Medicare levy surcharge: income, cover and period; Sources, currency and remaining coverage | https://www.ato.gov.au/individuals-and-families/medicare-and-private-health-insurance/medicare-levy-surcharge/medicare-levy-surcharge-income-thresholds-and-rates | 2026-10-17 |
+| ATO-PAYING. Read for: Medicare levy surcharge: income, cover and period; Sources, currency and remaining coverage | https://www.ato.gov.au/individuals-and-families/medicare-and-private-health-insurance/medicare-levy-surcharge/paying-the-medicare-levy-surcharge | 2026-10-17 |
+| GOV-MLS. Read for: Medicare levy surcharge: income, cover and period; Sources, currency and remaining coverage | https://privatehealth.gov.au/health_insurance/surcharges_incentives/medicare_levy.htm | 2026-10-17 |
+
+### Sources, currency and remaining coverage
 
 Checked on 17 October 2026: selected Medicare Levy Act compilation 53 and
 fringe Act compilation 42, both effective 1 July 2026, and private health
@@ -255,6 +323,8 @@ all filing/payment/rounding mechanics and remaining workflow country slots
 remain open. No actual return, complete Norfolk pack, independent model
 engagement benchmark or accountant sign-off is claimed.
 
+Not yet confirmed: ato.gov.au and the Norfolk Island Regional Council site (nirc.gov.au) refused scripted access on 14 November 2026, so their pages were not re-read for this import; figures taken from them rest on Ryan Duguid's October 2026 read.
+
 [LEVY]: https://www.legislation.gov.au/C2004A03351/2026-07-01/text
 [ASSESS]: https://www.legislation.gov.au/C1936A00027/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_4/document_4.html
 [FRINGE]: https://www.legislation.gov.au/C2004A00412/2026-07-01/text
@@ -265,23 +335,3 @@ engagement benchmark or accountant sign-off is claimed.
 [ATO-RATES]: https://www.ato.gov.au/individuals-and-families/medicare-and-private-health-insurance/medicare-levy-surcharge/medicare-levy-surcharge-income-thresholds-and-rates
 [ATO-PAYING]: https://www.ato.gov.au/individuals-and-families/medicare-and-private-health-insurance/medicare-levy-surcharge/paying-the-medicare-levy-surcharge
 [GOV-MLS]: https://privatehealth.gov.au/health_insurance/surcharges_incentives/medicare_levy.htm
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained in the
-[ryanduguid/openaccountants fork](https://github.com/ryanduguid/openaccountants).
-Check its quality tier, recorded review status and cited sources before use.
-Choose a practitioner whose credentials and engagement scope you have verified.
-The links below are optional upstream services; they do not publish or verify
-this fork's changes.
-
-- Upstream connection service: https://www.openaccountants.com/connect
-- Upstream accountant network: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

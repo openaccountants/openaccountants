@@ -16,15 +16,19 @@ category: international
 tax_year: 2026
 tax_year_notes: "Sources checked 18 October 2026; current statutory compilations and Continued Laws Ordinance read together; annual 2026-27 council charges not determined"
 tier: 2
-last_updated: 2026-10-18
+type: computation
+last_updated: 2026-11-14
 version: 0.2
-review_status: pending_review
 depends_on:
   - workflow-base
   - nf-tax-system
 ---
 
-# Norfolk Island: land fees and business transaction levies
+# Norfolk Island: land fees and business transaction levies v0.2
+
+> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
+
+## Scope
 
 Identify the transfer, parties, asset or rights, title, consideration,
 unencumbered value, execution and ownership-change dates, location and
@@ -38,7 +42,16 @@ checks. Required facts remain Needs Input and unresolved law remains held.
 Do not register a transfer, submit private ownership or identity records,
 or make a payment on the strength of this reference.
 
-## Classify the charge before choosing a percentage
+## Ask the client first
+
+- Is the charge the land registration fee on a transfer, or the business transaction levy on a business sale?
+- Consideration, market value and the relationship between the parties.
+- Any exemption claimed and its legal basis.
+- For a company holding Norfolk land: whether shares rather than land are changing hands.
+
+## The method, step by step
+
+### Classify the charge before choosing a percentage
 
 The **Land Administration Fees Act 1996** charges for registration of
 instruments evidencing a transfer of fee simple, a transfer of a Crown
@@ -68,7 +81,7 @@ encumbrances or liabilities. Sections 4 and 5 address value-reduction
 arrangements and levy avoidance. Obtain evidence rather than using a
 nominal price or an artificial split to select relief. [ADMIN]
 
-## Land registration fee and valuation
+### Land registration fee and valuation
 
 For a transaction within section 4(1), section 4(2) sets the fee at the
 **greater of 33 fee units or 4% of the value of the property interest or
@@ -95,11 +108,11 @@ business levy's 5-cent floor into the land fee without authority.
 For a transferred **property interest**, section 4(2A) uses these separate
 valuation branches:
 
-| Statutory facts | Value used |
-|---|---|
-| Sale between related persons for bona fide consideration below unencumbered market value | That consideration. |
-| Other sale where it appears to the Registrar that consideration is not below unencumbered market value | That consideration. |
-| Any other case | Unencumbered market value. |
+| Statutory facts | Value used | Source |
+|---|--- |---|
+| Sale between related persons for bona fide consideration below unencumbered market value | That consideration. | [CONTINUED](https://www.legislation.gov.au/F2015L00835/2023-02-08/text) |
+| Other sale where it appears to the Registrar that consideration is not below unencumbered market value | That consideration. | [CONTINUED](https://www.legislation.gov.au/F2015L00835/2023-02-08/text) |
+| Any other case | Unencumbered market value. | [CONTINUED](https://www.legislation.gov.au/F2015L00835/2023-02-08/text) |
 
 Here property interest means fee simple or a Crown lease; related persons
 means a person and the person's **spouse, parent or grandparent**. Preserve
@@ -117,7 +130,7 @@ interests, agreements or arrangements made on or after **15 July 1998**
 unless the liable person satisfies the Registrar of a purpose other than
 reducing property value. The apparent price is not conclusive. [LAND]
 
-## Land fee exemptions and other registration fees
+### Land fee exemptions and other registration fees
 
 Section 6 removes the section 4 fee for specified transfers to the
 Administration, qualifying charitable/community organisations or their
@@ -169,7 +182,7 @@ review. Establish the exact decision, review route and applicable period;
 neither a common tribunal name nor the business levy objection clock
 settles those questions. [LAND]; [FEDREG, section 27 item 18][FEDREG]
 
-## Company landholding and share-transfer hold
+### Company landholding and share-transfer hold
 
 Land Titles Act sections 55A–55F have special company ownership,
 registration and beneficial-interest rules. Section 55A's property-owning
@@ -199,7 +212,7 @@ property interest at transfer. That formula does not authorise substituting
 a Crown-lease value for L or establish that an actual company is within the
 branch. No actual company share-fee example is selected here. [LAND]
 
-## Business levy: amount, rounding and relief
+### Business levy: amount, rounding and relief
 
 Schedule 1's ordinary conveyance branch, excluding Land Administration
 Fees Act property and its specific branches, uses **4% of the higher of
@@ -234,7 +247,7 @@ Do not substitute that refund for the land regulations' exemption, or
 apply it before checking the actual current family-law instrument.
 [LEVY]
 
-## Business levy lodgement, payment and objections
+### Business levy lodgement, payment and objections
 
 Unless another express provision applies, Administration Act section 10(2)
 requires the liable person to lodge a chargeable instrument for assessment
@@ -291,7 +304,7 @@ showing an excessive assessment. Under section 52, a pending appeal does
 **not** suspend liability or recovery; later adjustment is separate.
 Confirm current procedure, service and any specific extension. [ADMIN]
 
-## Local and federal tribunal routes
+### Local and federal tribunal routes
 
 The local **Administrative Review Tribunal Act 1996 (NI)** remains in
 force. Its sections 14–16 govern reviewable decisions and affected
@@ -341,32 +354,7 @@ stay. The interaction of routes, actual forum/period, fees and complete
 procedure remain held for the particular case; do not let a longer period
 on one route stand in for another route's deadline. [FEDACT]; [LOCALART]
 
-## Fictional computation and boundary checks
-
-These October 2026 examples stipulate classification, sufficient valuation
-evidence, no other chargeable component and no relief unless stated. They
-are not quotes for an actual transaction. Land examples apply sections
-4(2)/(2A); levy examples apply the ordinary Schedule 1 branch and section
-7. Fee-unit conversion uses section 12B. [LAND]; [LEVY]; [INTERP]
-
-| Stipulated facts | Computation or result |
-|---|---|
-| Land-fee value A$20,000 | 4% gives A$800; the A$935 minimum governs. |
-| Land-fee value A$23,375 | 4% gives A$935, equal to the minimum. |
-| Land-fee value A$25,000 | 4% gives A$1,000, exceeding the minimum. |
-| Bona fide sale to a parent for A$80,000, market value A$125,000; section 4(2A)(a) stipulated satisfied | Base A$80,000; fee A$3,200. Do not automatically use the higher value. |
-| Unrelated sale for A$80,000, market value A$125,000; other-case branch established | Base A$125,000; fee A$5,000. |
-| Gift with market value A$50,000 and no exemption granted/applicable | Base A$50,000; fee A$2,000. No consideration is not nil value. |
-| Ordinary leviable goodwill: consideration A$120,000, unencumbered value A$123,456 | Base A$123,456; raw levy A$4,938.24; section 7 reduces it to A$4,938.20. |
-| Ordinary levy base A$125,000 | Levy A$5,000 is already a multiple of 5 cents; no reduction. |
-| Ordinary levy base A$100 | Levy A$4; record payable unless the Officer actually waives it. |
-| Ordinary levy base A$125 | Levy A$5; section 8's below-A$5 condition is not met. |
-| Subsequent conveyance meets the stamped-agreement 0.5-unit branch | Derived levy A$14, subject to all branch conditions. |
-| 2026 transfer has no beneficial-ownership change but no established relief | Do not use the Schedule 2 item 12 relief that ended in 2017. |
-| No instrument, and six months have not elapsed | Test section 30's 60-day event-based statement duty now; do not wait for the offence threshold. |
-| An actual ASIC company's shares change while it holds Norfolk land | Hold company/title-law interaction; do not issue a blanket 14-day instruction or nil-fee result. |
-
-## Evidence, annual charges and remaining coverage
+### Evidence, annual charges and remaining coverage
 
 For a reviewed computation, retain the charge classification and statute;
 title/asset and beneficial-interest evidence held by the authorised
@@ -399,6 +387,92 @@ penalties, interest, complete property compliance and all other country
 slots remain open. This Tier 2 reference awaits professional review; no
 complete-country acceptance or engagement output package is claimed.
 
+## Worked cases
+
+### Fictional computation and boundary checks
+
+These October 2026 examples stipulate classification, sufficient valuation
+evidence, no other chargeable component and no relief unless stated. They
+are not quotes for an actual transaction. Land examples apply sections
+4(2)/(2A); levy examples apply the ordinary Schedule 1 branch and section
+7. Fee-unit conversion uses section 12B. [LAND]; [LEVY]; [INTERP]
+
+| Stipulated facts | Computation or result |
+|---|---|
+| Land-fee value A$20,000 | 4% gives A$800; the A$935 minimum governs. |
+| Land-fee value A$23,375 | 4% gives A$935, equal to the minimum. |
+| Land-fee value A$25,000 | 4% gives A$1,000, exceeding the minimum. |
+| Bona fide sale to a parent for A$80,000, market value A$125,000; section 4(2A)(a) stipulated satisfied | Base A$80,000; fee A$3,200. Do not automatically use the higher value. |
+| Unrelated sale for A$80,000, market value A$125,000; other-case branch established | Base A$125,000; fee A$5,000. |
+| Gift with market value A$50,000 and no exemption granted/applicable | Base A$50,000; fee A$2,000. No consideration is not nil value. |
+| Ordinary leviable goodwill: consideration A$120,000, unencumbered value A$123,456 | Base A$123,456; raw levy A$4,938.24; section 7 reduces it to A$4,938.20. |
+| Ordinary levy base A$125,000 | Levy A$5,000 is already a multiple of 5 cents; no reduction. |
+| Ordinary levy base A$100 | Levy A$4; record payable unless the Officer actually waives it. |
+| Ordinary levy base A$125 | Levy A$5; section 8's below-A$5 condition is not met. |
+| Subsequent conveyance meets the stamped-agreement 0.5-unit branch | Derived levy A$14, subject to all branch conditions. |
+| 2026 transfer has no beneficial-ownership change but no established relief | Do not use the Schedule 2 item 12 relief that ended in 2017. |
+| No instrument, and six months have not elapsed | Test section 30's 60-day event-based statement duty now; do not wait for the offence threshold. |
+| An actual ASIC company's shares change while it holds Norfolk land | Hold company/title-law interaction; do not issue a blanket 14-day instruction or nil-fee result. |
+
+### Recomputed checks
+
+```oa-check
+name: Land registration fee, value A$20,000 and A$25,000
+inputs:
+  value_low: 20000
+  value_high: 25000
+  minimum: 935
+steps:
+  - fee_low: max(value_low * 0.04, minimum)
+  - fee_high: max(value_high * 0.04, minimum)
+expected:
+  fee_low: 935
+  fee_high: 1000
+```
+
+```oa-check
+name: Business levy on goodwill, base A$123,456, rounded down to 5 cents
+inputs:
+  base: 123456
+steps:
+  - raw: base * 0.04
+  - levy: floor(raw * 20) / 20
+expected:
+  raw: 4938.24
+  levy: 4938.20
+```
+
+## When to refuse or refer
+
+- Do not use the Schedule 2 item 12 relief; it ended in 2017.
+- Hold company share transfers over Norfolk land for title-law advice; do not give a blanket nil fee.
+- Refer appeals and objections to the routes set out above; this skill does not lodge them.
+
+## Sources
+
+Read on dates are Ryan Duguid's reads of each page when he wrote this skill (October 2026). Each label is the reference tag used in the text above.
+
+| Source | URL | Read on |
+|---|---|---|
+| LAND. Read for: Classify the charge before choosing a percentage; Land registration fee and valuation; Land fee exemptions and other registration fees; Company landholding and share-transfer hold; Fictional computation and boundary checks; Evidence, annual charges and remaining coverage | https://www.legislation.gov.au/C2015Q00159/2019-08-13/text | 2026-10-18 |
+| LANDREG. Read for: Land fee exemptions and other registration fees; Evidence, annual charges and remaining coverage | https://www.legislation.gov.au/C2015Q00297/2019-08-13/text | 2026-10-18 |
+| TITLES. Read for: Company landholding and share-transfer hold; Evidence, annual charges and remaining coverage | https://www.legislation.gov.au/C2015Q00160/2019-08-13/text | 2026-10-18 |
+| LEVY. Read for: Classify the charge before choosing a percentage; Business levy: amount, rounding and relief; Fictional computation and boundary checks; Evidence, annual charges and remaining coverage | https://www.legislation.gov.au/C2015Q00093/2016-05-11/text | 2026-10-18 |
+| ADMIN. Read for: Classify the charge before choosing a percentage; Business levy: amount, rounding and relief; Business levy lodgement, payment and objections; Evidence, annual charges and remaining coverage | https://www.legislation.gov.au/C2015Q00092/2015-06-18/text | 2026-10-18 |
+| INTERP. Read for: Land registration fee and valuation; Fictional computation and boundary checks; Evidence, annual charges and remaining coverage | https://www.legislation.gov.au/C2015Q00155/2022-01-01/text | 2026-10-18 |
+| CONTINUED. Read for: Land registration fee and valuation; Land fee exemptions and other registration fees; Business levy: amount, rounding and relief; Evidence, annual charges and remaining coverage | https://www.legislation.gov.au/F2015L00835/2023-02-08/text | 2026-10-18 |
+| CORPORATIONS. Read for: Company landholding and share-transfer hold; Evidence, annual charges and remaining coverage | https://www.legislation.gov.au/C2004A00818/2026-09-19/text/6 | 2026-10-18 |
+| REFORM. Read for: Company landholding and share-transfer hold; Evidence, annual charges and remaining coverage | https://www.legislation.gov.au/C2020A00154/2021-09-15/text | 2026-10-18 |
+| LOCALART. Read for: Local and federal tribunal routes; Evidence, annual charges and remaining coverage | https://www.legislation.gov.au/C2015Q00073/2022-01-01/text | 2026-10-18 |
+| FEDACT. Read for: Local and federal tribunal routes; Evidence, annual charges and remaining coverage | https://www.legislation.gov.au/C2024A00040/2026-05-18/text | 2026-10-18 |
+| FEDREG. Read for: Land fee exemptions and other registration fees; Local and federal tribunal routes; Evidence, annual charges and remaining coverage | https://www.legislation.gov.au/F2024L01166/2026-01-01/text | 2026-10-18 |
+| FEDRULES. Read for: Local and federal tribunal routes; Evidence, annual charges and remaining coverage | https://www.legislation.gov.au/F2024L01179/2026-07-01/text | 2026-10-18 |
+| FEESPAGE. Read for: Evidence, annual charges and remaining coverage | https://www.nirc.gov.au/Corporate-finance/Fees-and-charges | 2026-10-18 |
+| RATES. Read for: Evidence, annual charges and remaining coverage | https://www.nirc.gov.au/Corporate-finance/Rates | 2026-10-18 |
+| PLANS. Read for: Evidence, annual charges and remaining coverage | https://www.nirc.gov.au/Your-council/Council-documents/Operational-Plans | 2026-10-18 |
+
+Not yet confirmed: ato.gov.au and the Norfolk Island Regional Council site (nirc.gov.au) refused scripted access on 14 November 2026, so their pages were not re-read for this import; figures taken from them rest on Ryan Duguid's October 2026 read. The Council fees page (FEESPAGE) and 2026-27 annual charges were not re-read; council annual charges are not determined here.
+
 [LAND]: https://www.legislation.gov.au/C2015Q00159/2019-08-13/text
 [LANDREG]: https://www.legislation.gov.au/C2015Q00297/2019-08-13/text
 [TITLES]: https://www.legislation.gov.au/C2015Q00160/2019-08-13/text
@@ -415,23 +489,3 @@ complete-country acceptance or engagement output package is claimed.
 [FEESPAGE]: https://www.nirc.gov.au/Corporate-finance/Fees-and-charges
 [RATES]: https://www.nirc.gov.au/Corporate-finance/Rates
 [PLANS]: https://www.nirc.gov.au/Your-council/Council-documents/Operational-Plans
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained in the
-[ryanduguid/openaccountants fork](https://github.com/ryanduguid/openaccountants).
-Check its quality tier, recorded review status and cited sources before use.
-Choose a practitioner whose credentials and engagement scope you have verified.
-The links below are optional upstream services; they do not publish or verify
-this fork's changes.
-
-- Upstream connection service: https://www.openaccountants.com/connect
-- Upstream accountant network: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

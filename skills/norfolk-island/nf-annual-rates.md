@@ -17,15 +17,19 @@ category: international
 tax_year: 2026
 tax_year_notes: "2026-27 annual rates adopted 30 June 2026; sources checked 18 October 2026; actual notices, later amendments and other charges require separate verification"
 tier: 2
-last_updated: 2026-10-18
+type: computation
+last_updated: 2026-11-14
 version: 0.1
-review_status: pending_review
 depends_on:
   - workflow-base
   - nf-tax-system
 ---
 
-# Norfolk Island: ordinary rates and annual waste charges
+# Norfolk Island: ordinary rates and annual waste charges v0.1
+
+> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
+
+## Scope
 
 Confirm the rating year, liable person, parcel, Council category and
 subcategory, area, dominant use, valuation in force, notice and service
@@ -40,7 +44,16 @@ Missing facts remain Needs Input and unresolved law remains held. This
 reference supplies selected parameters, not an actual assessment, a filing
 instruction or a complete country companion.
 
-## Establish the legal and annual source chain
+## Ask the client first
+
+- Which Council rating category and subcategory applies to the land (residential, farmland, business accommodation, shops, other)?
+- The land value the Council uses for the 2026-27 rating year, and the land area or number of accommodation units where the category depends on it.
+- Whether the property is occupied or confirmed vacant, for the waste charge.
+- Any exemption, concession, arrears or instalment arrangement already on the Council notice.
+
+## The method, step by step
+
+### Establish the legal and annual source chain
 
 Norfolk Island Act sections 5 and 18A apply the prescribed jurisdiction's
 laws from time to time, subject to modifications, suspension and priority
@@ -67,7 +80,7 @@ rates. Before an actual calculation, obtain the applicable notice and any
 later carried amendments; the selected records do not establish that every
 fee or charge remained unchanged. [SEPT]; [JULY]; [AUGUST]
 
-## Classify the land and valuation
+### Classify the land and valuation
 
 Council declares each rateable parcel as farmland, residential, mining or
 business before making its ordinary rate. Farmland requires the statutory
@@ -102,7 +115,7 @@ erase earlier rates, charges or recovery rights. Confirm exemptions,
 apportionment and applicable notices rather than treating private ownership
 or a nonprofit label as conclusive. [LGA, sections 554–561 and 571–572][LGA]
 
-## Ordinary rates adopted for 2026–27
+### Ordinary rates adopted for 2026–27
 
 For a confirmed category, use:
 
@@ -119,30 +132,30 @@ All amounts below are Australian dollars. Category descriptions are the
 adopted resolution's conditions, subject to the statutory classification
 and actual Council declaration. [JUNE]
 
-| Council subcategory and adopted boundary | Base amount A$ | Amount in the dollar |
-|---|---:|---:|
-| Residential Small: area at most 0.3 ha | 155.09 | 0.00133340 |
-| Residential Medium: over 0.3 ha, at most 1 ha | 240.26 | 0.00133340 |
-| Residential Large: over 1 ha | 390.25 | 0.00133340 |
-| Farmland Small: area at most 1 ha | 266.99 | 0.00163743 |
-| Farmland Medium: over 1 ha, at most 3 ha | 358.65 | 0.00163743 |
-| Farmland Large: over 3 ha | 753.83 | 0.00163743 |
-| Business Accommodation A: qualifying non-hotel tourist accommodation house, at most 10 accommodation units | 3,194.42 | 0.01110969 |
-| Business Accommodation B: qualifying non-hotel house, over 10 but fewer than 21 accommodation units | 4,729.90 | 0.01110969 |
-| Business Accommodation C: qualifying non-hotel house, at least 21 accommodation units | 5,010.04 | 0.01110969 |
-| Business Accommodation D: hotel | 5,010.04 | 0.01110969 |
-| Shops/Retail A: area at most 1,000 m², excluding the specified supermarket/shopping and building-supplies categories | 1,269.71 | 0.01110969 |
-| Shops/Retail B: area over 1,000 m², with the corresponding exclusions | 2,320.79 | 0.01110969 |
-| Building Supplies | 1,696.51 | 0.01110969 |
-| Cafe/Restaurant A: area at most 1,000 m² | 950.18 | 0.01110969 |
-| Cafe/Restaurant B: area over 1,000 m² | 2,653.68 | 0.01110969 |
-| Service Station: the resolution specifies area over 1,000 m² | 1,681.52 | 0.01110969 |
-| Car Rentals | 1,429.20 | 0.01110969 |
-| Clubs/Bars A: area at most 1,000 m² | 950.18 | 0.01110969 |
-| Clubs/Bars B: area over 1,000 m² | 2,653.68 | 0.01110969 |
-| Supermarket/Shopping Small: area at most 1,000 m² | 1,778.60 | 0.01110969 |
-| Supermarket/Shopping Large: area over 1,000 m² | 6,895.49 | 0.01110969 |
-| Business Other: residual business subcategory | 1,943.38 | 0.01110969 |
+| Council subcategory and adopted boundary | Base amount A$ | Amount in the dollar | Source |
+|---|---:|---: |---|
+| Residential Small: area at most 0.3 ha | 155.09 | 0.00133340 | [JUNE](https://norfolk.resolve.red/portal/meeting/676/10826?showMinutes=1) |
+| Residential Medium: over 0.3 ha, at most 1 ha | 240.26 | 0.00133340 | [JUNE](https://norfolk.resolve.red/portal/meeting/676/10826?showMinutes=1) |
+| Residential Large: over 1 ha | 390.25 | 0.00133340 | [JUNE](https://norfolk.resolve.red/portal/meeting/676/10826?showMinutes=1) |
+| Farmland Small: area at most 1 ha | 266.99 | 0.00163743 | [JUNE](https://norfolk.resolve.red/portal/meeting/676/10826?showMinutes=1) |
+| Farmland Medium: over 1 ha, at most 3 ha | 358.65 | 0.00163743 | [JUNE](https://norfolk.resolve.red/portal/meeting/676/10826?showMinutes=1) |
+| Farmland Large: over 3 ha | 753.83 | 0.00163743 | [JUNE](https://norfolk.resolve.red/portal/meeting/676/10826?showMinutes=1) |
+| Business Accommodation A: qualifying non-hotel tourist accommodation house, at most 10 accommodation units | 3,194.42 | 0.01110969 | [JUNE](https://norfolk.resolve.red/portal/meeting/676/10826?showMinutes=1) |
+| Business Accommodation B: qualifying non-hotel house, over 10 but fewer than 21 accommodation units | 4,729.90 | 0.01110969 | [JUNE](https://norfolk.resolve.red/portal/meeting/676/10826?showMinutes=1) |
+| Business Accommodation C: qualifying non-hotel house, at least 21 accommodation units | 5,010.04 | 0.01110969 | [JUNE](https://norfolk.resolve.red/portal/meeting/676/10826?showMinutes=1) |
+| Business Accommodation D: hotel | 5,010.04 | 0.01110969 | [JUNE](https://norfolk.resolve.red/portal/meeting/676/10826?showMinutes=1) |
+| Shops/Retail A: area at most 1,000 m², excluding the specified supermarket/shopping and building-supplies categories | 1,269.71 | 0.01110969 | [JUNE](https://norfolk.resolve.red/portal/meeting/676/10826?showMinutes=1) |
+| Shops/Retail B: area over 1,000 m², with the corresponding exclusions | 2,320.79 | 0.01110969 | [JUNE](https://norfolk.resolve.red/portal/meeting/676/10826?showMinutes=1) |
+| Building Supplies | 1,696.51 | 0.01110969 | [JUNE](https://norfolk.resolve.red/portal/meeting/676/10826?showMinutes=1) |
+| Cafe/Restaurant A: area at most 1,000 m² | 950.18 | 0.01110969 | [JUNE](https://norfolk.resolve.red/portal/meeting/676/10826?showMinutes=1) |
+| Cafe/Restaurant B: area over 1,000 m² | 2,653.68 | 0.01110969 | [JUNE](https://norfolk.resolve.red/portal/meeting/676/10826?showMinutes=1) |
+| Service Station: the resolution specifies area over 1,000 m² | 1,681.52 | 0.01110969 | [JUNE](https://norfolk.resolve.red/portal/meeting/676/10826?showMinutes=1) |
+| Car Rentals | 1,429.20 | 0.01110969 | [JUNE](https://norfolk.resolve.red/portal/meeting/676/10826?showMinutes=1) |
+| Clubs/Bars A: area at most 1,000 m² | 950.18 | 0.01110969 | [JUNE](https://norfolk.resolve.red/portal/meeting/676/10826?showMinutes=1) |
+| Clubs/Bars B: area over 1,000 m² | 2,653.68 | 0.01110969 | [JUNE](https://norfolk.resolve.red/portal/meeting/676/10826?showMinutes=1) |
+| Supermarket/Shopping Small: area at most 1,000 m² | 1,778.60 | 0.01110969 | [JUNE](https://norfolk.resolve.red/portal/meeting/676/10826?showMinutes=1) |
+| Supermarket/Shopping Large: area over 1,000 m² | 6,895.49 | 0.01110969 | [JUNE](https://norfolk.resolve.red/portal/meeting/676/10826?showMinutes=1) |
+| Business Other: residual business subcategory | 1,943.38 | 0.01110969 | [JUNE](https://norfolk.resolve.red/portal/meeting/676/10826?showMinutes=1) |
 
 Accommodation categories use the Tourist Accommodation Act's hotel, house
 and unit definitions. This reference does not supply those definitions or
@@ -158,7 +171,7 @@ minimum ordinary-rate revenue is a **Council-wide aggregate**, not a
 minimum amount payable by each property. [JUNE];
 [APPLIED, Schedule 4 item 35][APPLIED]
 
-## Annual waste charges adopted for 2026–27
+### Annual waste charges adopted for 2026–27
 
 Council levies these under section 501 in the June resolution. Apply the
 specified charging unit and relief conditions separately from the ordinary
@@ -203,7 +216,7 @@ services from section 501(1). Do not import an unmodified NSW domestic
 waste, sewerage or cost-limit rule into the Norfolk calculation.
 [APPLIED, Schedule 4 items 29, 33A and 34][APPLIED]
 
-## Payment, relief and overdue amounts
+### Payment, relief and overdue amounts
 
 Section 562 permits a single payment or quarterly instalments. The normal
 single-payment deadline is **31 August**. The normal quarterly dates are
@@ -251,7 +264,7 @@ payments and relief are verified. A NSW minister's notice alone is not
 assumed to resolve the Norfolk Act section 18B power substitution.
 [JUNE]; [LGA, sections 566–567][LGA]; [NI]
 
-## Separate objections and review clocks
+### Separate objections and review clocks
 
 | Matter | Selected statutory trigger and limit | Boundary |
 |---|---|---|
@@ -278,7 +291,7 @@ stayed. Section 85 addresses adjustments after a valuation changes.
 Payment, debt and collection consequences need their own applicable rules;
 an objection is not assumed to suspend liability. [VALUE]
 
-## Other charges require their own basis
+### Other charges require their own basis
 
 **Waste import levy:** Waste Management Act section 8 makes the importer
 liable. Current Regulations section 3 generally sets **A$41 per cubic metre
@@ -314,7 +327,9 @@ Historical assessments and recovery require their own review. [ABSENTEE,
 sections 2, 5 and 13–15][ABSENTEE];
 [CONTINUED, Schedule 1 items 1AAAA–1AAAB][CONTINUED]
 
-## Fictional 2026–27 calculations
+## Worked cases
+
+### Fictional 2026–27 calculations
 
 These examples assume the adopted June tables remain applicable, confirmed
 Council classification and valuation, and no exemption, concession, arrears,
@@ -350,7 +365,52 @@ rounding rule to annual rates. If a value multiplication or vacant discount
 produces fractions of a cent, retain the calculation and verify Council's
 applicable assessment rounding before stating the payable amount.
 
-## Computation and review checks
+### Recomputed checks
+
+```oa-check
+name: Residential Small, occupied, land value A$450,000 (2026-27)
+inputs:
+  value: 450000
+  base: 155.09
+  rate: 0.00133340
+  waste: 340.65
+steps:
+  - value_part: value * rate
+  - ordinary: round(value_part, 2) + base
+  - subtotal: ordinary + waste
+expected:
+  value_part: 600.03
+  ordinary: 755.12
+  subtotal: 1095.77
+```
+
+```oa-check
+name: Business Accommodation A, ten units, land value A$1,000,000 (2026-27)
+inputs:
+  value: 1000000
+  base: 3194.42
+  rate: 0.01110969
+  units: 10
+  waste_per_unit: 151.12
+steps:
+  - ordinary: value * rate + base
+  - waste: units * waste_per_unit
+  - subtotal: ordinary + waste
+expected:
+  ordinary: 14304.11
+  waste: 1511.20
+  subtotal: 15815.31
+```
+
+## When to refuse or refer
+
+- Refer to the Norfolk Island Regional Council when the rating category, valuation or a vacancy status is disputed; this skill does not decide a classification.
+- Do not quote an amount as payable without the actual Council notice: the tables are the adopted June 2026 resolution, not an assessment.
+- Do not calculate the Mining category: the resolution shows hyphens, not a nil rate.
+
+## Completion checklist
+
+### Computation and review checks
 
 1. Establish the current annual resolution and amendments; reconcile the
    notice, valuation and Council declaration to the selected period.
@@ -377,7 +437,28 @@ procedures; all other local fees; and remaining country topics. These gates
 do not prevent use of the selected adopted parameters for an appropriately
 bounded reference calculation.
 
-## Primary sources and provenance
+## Sources
+
+Read on dates are Ryan Duguid's reads of each page when he wrote this skill (October 2026). Each label is the reference tag used in the text above.
+
+| Source | URL | Read on |
+|---|---|---|
+| NI. Read for: Establish the legal and annual source chain; Payment, relief and overdue amounts; Primary sources and provenance | https://www.legislation.gov.au/C2004A02035/2024-12-11/text | 2026-10-18 |
+| APPLIED. Read for: Establish the legal and annual source chain; Classify the land and valuation; Ordinary rates adopted for 2026–27; Annual waste charges adopted for 2026–27; Payment, relief and overdue amounts; Separate objections and review clocks; Other charges require their own basis; Primary sources and provenance | https://www.legislation.gov.au/F2016L00729/2023-06-28/text | 2026-10-18 |
+| LGA. Read for: Classify the land and valuation; Ordinary rates adopted for 2026–27; Annual waste charges adopted for 2026–27; Payment, relief and overdue amounts; Separate objections and review clocks; Other charges require their own basis; Fictional 2026–27 calculations; Primary sources and provenance | https://legislation.nsw.gov.au/view/whole/html/inforce/current/act-1993-030 | 2026-10-18 |
+| REG. Read for: Classify the land and valuation; Payment, relief and overdue amounts; Primary sources and provenance | https://legislation.nsw.gov.au/view/whole/html/inforce/current/sl-2021-0460 | 2026-10-18 |
+| VALUE. Read for: Classify the land and valuation; Separate objections and review clocks; Primary sources and provenance | https://www.legislation.gov.au/C2015Q00162/2019-11-16/text | 2026-10-18 |
+| JUNE. Read for: Establish the legal and annual source chain; Ordinary rates adopted for 2026–27; Annual waste charges adopted for 2026–27; Payment, relief and overdue amounts; Fictional 2026–27 calculations; Computation and review checks; Primary sources and provenance | https://norfolk.resolve.red/portal/meeting/676/10826?showMinutes=1 | 2026-10-18 |
+| JULY. Read for: Establish the legal and annual source chain; Primary sources and provenance | https://norfolk.resolve.red/portal/meeting/641/10963?showMinutes=1 | 2026-10-18 |
+| AUGUST. Read for: Establish the legal and annual source chain; Primary sources and provenance | https://norfolk.resolve.red/portal/meeting/642/11051?showMinutes=1 | 2026-10-18 |
+| SEPT. Read for: Establish the legal and annual source chain; Primary sources and provenance | https://norfolk.resolve.red/portal/meeting/643/11178?type=1&docId=2391 | 2026-10-18 |
+| ART-REG. Read for: Separate objections and review clocks; Primary sources and provenance | https://www.legislation.gov.au/F2024L01166/2026-01-01/text | 2026-10-18 |
+| WASTE. Read for: Other charges require their own basis; Primary sources and provenance | https://www.legislation.gov.au/C2015Q00254/2019-08-13/text | 2026-10-18 |
+| WASTE-REG. Read for: Other charges require their own basis; Primary sources and provenance | https://www.legislation.gov.au/C2015Q00335/2019-08-13/text | 2026-10-18 |
+| ABSENTEE. Read for: Other charges require their own basis; Primary sources and provenance | https://www.legislation.gov.au/C2015Q00072/2017-10-18/text | 2026-10-18 |
+| CONTINUED. Read for: Other charges require their own basis; Primary sources and provenance | https://www.legislation.gov.au/F2015L00835/2023-02-08/text | 2026-10-18 |
+
+### Primary sources and provenance
 
 Checked **18 October 2026**. This is a **Tier 2 source-cited draft awaiting
 professional review**. The current Register records were checked alongside
@@ -387,6 +468,8 @@ cells were checked together, including the per-unit and one-cent cases.
 The September report's three native PDF pages were read in full; that is
 not proof of a later Council vote. No private ownership roll or client
 information was queried.
+
+Not yet confirmed: ato.gov.au and the Norfolk Island Regional Council site (nirc.gov.au) refused scripted access on 14 November 2026, so their pages were not re-read for this import; figures taken from them rest on Ryan Duguid's October 2026 read. The 2026-27 Council resolution tables (JUNE and the later meeting records on norfolk.resolve.red) were not re-read; the Mining category amounts and Council rounding of fractional cents are not confirmed.
 
 [NI]: https://www.legislation.gov.au/C2004A02035/2024-12-11/text
 [APPLIED]: https://www.legislation.gov.au/F2016L00729/2023-06-28/text
@@ -402,23 +485,3 @@ information was queried.
 [WASTE-REG]: https://www.legislation.gov.au/C2015Q00335/2019-08-13/text
 [ABSENTEE]: https://www.legislation.gov.au/C2015Q00072/2017-10-18/text
 [CONTINUED]: https://www.legislation.gov.au/F2015L00835/2023-02-08/text
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained in the
-[ryanduguid/openaccountants fork](https://github.com/ryanduguid/openaccountants).
-Check its quality tier, recorded review status and cited sources before use.
-Choose a practitioner whose credentials and engagement scope you have verified.
-The links below are optional upstream services; they do not publish or verify
-this fork's changes.
-
-- Upstream connection service: https://www.openaccountants.com/connect
-- Upstream accountant network: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

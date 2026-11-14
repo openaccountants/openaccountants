@@ -16,15 +16,19 @@ category: international
 tax_year: 2026
 tax_year_notes: "Primary rate table: Australian 2026–27 income year, 1 July 2026 to 30 June 2027; selected adjacent-year changes separately labelled"
 tier: 2
-last_updated: 2026-10-17
+type: computation
+last_updated: 2026-11-14
 version: 0.2
-review_status: pending_review
 depends_on:
   - workflow-base
   - income-tax-workflow-base
 ---
 
-# Norfolk Island: individual income tax, deductions and zone offset
+# Norfolk Island: individual income tax, deductions and zone offset v0.2
+
+> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
+
+## Scope
 
 Use `nf-tax-system` for the post-2016 territorial reforms and conditional
 pre-reform capital-gains transition. This guide supplies selected rules for
@@ -38,7 +42,19 @@ country slot. Missing mandatory rules, records or runtime capability still
 prevent a deliverable financial result. Keep an unknown required fact as
 Needs Input and an unresolved legal treatment on hold.
 
-## Residence and territorial scope
+Norfolk Island is an Australian external territory and, since 1 July 2016, Australian federal tax law applies there with the Norfolk modifications set out below. For the mainland method and figures this skill shares with Australia, load [`au-rates-2026-27`](../australia/au-rates-2026-27.md), [`au-individual-return`](../australia/au-individual-return.md), [`au-tax-residency`](../australia/au-tax-residency.md); where a figure here and in that skill differ, check the official source both cite.
+
+## Ask the client first
+
+- Is the person an Australian resident for tax, for the whole 2026-27 income year or part of it?
+- Taxable income, separating employment, investment and business income and deductions.
+- Whether the person is eligible for the 2026-27 standard work-expense deduction, and their actual work deductions.
+- Usual place of residence on Norfolk Island and for how long, for the zone tax offset.
+- Any special branch: working holiday maker, minor, trustee, primary producer.
+
+## The method, step by step
+
+### Residence and territorial scope
 
 Income Tax Assessment Act 1936 section 6 adopts the 1997 Act's meaning of
 Australia. Section 960-505(1)(a) of the latter expressly includes Norfolk
@@ -82,7 +98,7 @@ crowdfunding. Those labels are intake prompts, not interchangeable tax
 categories. Identify the legal character, derivation date and applicable
 inclusion or exclusion for each item. [INDIVIDUAL]
 
-## Taxable income and ordinary resident rates
+### Taxable income and ordinary resident rates
 
 Under sections 4-10 and 4-15, establish assessable income and allowable
 deductions before taxable income; then apply the appropriate rates and
@@ -124,7 +140,7 @@ separate definitions and rules for those branches. Do not apply a resident
 table merely because the taxpayer receives money in Norfolk. [RATES,
 sections 3, 3A, 13–15 and Schedule 7][RATES]
 
-### Part-year residence
+#### Part-year residence
 
 For qualifying part-year residency periods, section 20(1) replaces the
 threshold with:
@@ -144,7 +160,7 @@ the person's residence, income inclusion, offset entitlement or final tax.
 Do not reset the threshold merely because an Australian resident moves
 between Norfolk and the mainland.
 
-## Deductions and the 2026–27 standard work-expense rule
+### Deductions and the 2026–27 standard work-expense rule
 
 General deductions under section 8-1 require the income-producing or
 business connection. They exclude capital, private/domestic, exempt-income
@@ -194,7 +210,7 @@ the standard rule as permission to omit all records. Associated asset,
 low-value-pool and salary-packaging amendments require their own analysis.
 [REFORM1, Schedule 4 items 8–20][REFORM1]
 
-## Low income tax offset and priority
+### Low income tax offset and priority
 
 Section 61-110 provides the low income tax offset (LITO) from 2020–21
 onward for an individual who is an Australian resident at any time in the
@@ -204,12 +220,12 @@ has separate trustee/beneficiary rules. [OFFSETS]
 
 Section 61-115's ordinary individual schedule is:
 
-| Relevant taxable income | Statutory LITO amount before applicable caps |
-|---|---|
-| At or below $37,500 | $700 |
-| Over $37,500 to $45,000 | $700 less 5% of the excess over $37,500 |
-| Over $45,000 to $66,667 | $325 less 1.5% of the excess over $45,000 |
-| Above $66,667 | No entitlement under section 61-110 |
+| Relevant taxable income | Statutory LITO amount before applicable caps | Source |
+|---|--- |---|
+| At or below $37,500 | $700 | [OFFSETS](https://www.legislation.gov.au/C2004A05138/2026-08-27/2026-08-27/text/original/epub/OEBPS/document_2/document_2.html) |
+| Over $37,500 to $45,000 | $700 less 5% of the excess over $37,500 | [OFFSETS](https://www.legislation.gov.au/C2004A05138/2026-08-27/2026-08-27/text/original/epub/OEBPS/document_2/document_2.html) |
+| Over $45,000 to $66,667 | $325 less 1.5% of the excess over $45,000 | [OFFSETS](https://www.legislation.gov.au/C2004A05138/2026-08-27/2026-08-27/text/original/epub/OEBPS/document_2/document_2.html) |
+| Above $66,667 | No entitlement under section 61-110 | [OFFSETS](https://www.legislation.gov.au/C2004A05138/2026-08-27/2026-08-27/text/original/epub/OEBPS/document_2/document_2.html) |
 
 At $40,000 the formula gives **$575**; at $45,000 it gives **$325**;
 at $60,000 it gives **$100**. These examples assume an eligible adult
@@ -235,7 +251,7 @@ Use `nf-medicare` for selected levy and surcharge rules. All remaining
 income, offset, credit, prepayment and filing conditions still require
 resolution before a final return balance.
 
-## Norfolk zone tax offset
+### Norfolk zone tax offset
 
 Schedule 2 Part I of the 1936 Act lists Norfolk Island in Zone A. The ATO
 Norfolk individual page identifies **$1,173 as the fixed zone amount most
@@ -276,7 +292,9 @@ may separately affect the return balance. Zone residence does not establish
 Medicare entitlement, a Medicare exemption or eligibility for the Norfolk
 SG transitional rate. [INDIVIDUAL]; `nf-super-guarantee`
 
-## Fictional computations and classification patterns
+## Worked cases
+
+### Fictional computations and classification patterns
 
 All figures below are stipulated examples, not taxpayer determinations:
 
@@ -300,7 +318,59 @@ each zone residence branch. Retain withheld tax, PAYG instalments and other
 credits separately from basic tax. Never infer a final refund from the
 table or from a non-refundable offset alone.
 
-## Sources, currency and remaining work
+### Recomputed checks
+
+```oa-check
+name: Full-year resident, taxable income A$60,000 (2026-27)
+inputs:
+  taxable: 60000
+steps:
+  - tax: 4020 + (taxable - 45000) * 0.30
+expected:
+  tax: 8520
+```
+
+```oa-check
+name: Full-year resident, taxable income A$200,000 (2026-27)
+inputs:
+  taxable: 200000
+steps:
+  - band_15: (45000 - 18200) * 0.15
+  - band_30: (135000 - 45000) * 0.30
+  - band_37: (190000 - 135000) * 0.37
+  - band_45: (taxable - 190000) * 0.45
+  - tax: band_15 + band_30 + band_37 + band_45
+expected:
+  band_15: 4020
+  tax: 55870
+```
+
+## When to refuse or refer
+
+- Do not compute a refund or balance due from the rate table; offsets, Medicare levy and credits sit outside it.
+- Refer working holiday makers, minors, trustees and primary producers to a registered tax agent.
+- Days worked on Norfolk Island alone do not establish the zone tax offset.
+
+## Sources
+
+Read on dates are Ryan Duguid's reads of each page when he wrote this skill (October 2026), except the two rows dated 2026-11-14, which were re-read on import. Each label is the reference tag used in the text above.
+
+| Source | URL | Read on |
+|---|---|---|
+| Income Tax Rates Act 1986, Schedule 7 Part I clause 1, re-read on import. Read for the 2026-27 resident bands (15% to $45,000, 30%, 37%, 45%) and the 2027-28 14% first band | https://www.legislation.gov.au/C2004A03348/2026-07-01/2026-07-01/text/original/epub/OEBPS/document_1/document_1.html | 2026-11-14 |
+| ITAA 1936 s 79A(2)(a), re-read on import. Read for the special-area zone amount of $1,173 plus 50% of the relevant rebate amount | https://www.legislation.gov.au/C1936A00027/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_1/document_1.html | 2026-11-14 |
+| RATES. Read for: Taxable income and ordinary resident rates; Sources, currency and remaining work | https://www.legislation.gov.au/C2004A03348/2026-07-01/text | 2026-10-17 |
+| ITAA36. Read for: Residence and territorial scope; Norfolk zone tax offset; Sources, currency and remaining work | https://www.legislation.gov.au/C1936A00027/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_1/document_1.html | 2026-10-17 |
+| ZONES. Read for: Norfolk zone tax offset; Sources, currency and remaining work | https://www.legislation.gov.au/C1936A00027/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_5/document_5.html | 2026-10-17 |
+| CORE. Read for: Residence and territorial scope; Taxable income and ordinary resident rates; Deductions and the 2026–27 standard work-expense rule; Sources, currency and remaining work | https://www.legislation.gov.au/C2004A05138/2026-08-27/2026-08-27/text/original/epub/OEBPS/document_1/document_1.html | 2026-10-17 |
+| DICT. Read for: Residence and territorial scope; Sources, currency and remaining work | https://www.legislation.gov.au/C2004A05138/2026-08-27/2026-08-27/text/original/epub/OEBPS/document_10/document_10.html | 2026-10-17 |
+| REFORM1. Read for: Deductions and the 2026–27 standard work-expense rule; Low income tax offset and priority; Sources, currency and remaining work | https://www.legislation.gov.au/C2026A00049/asmade | 2026-10-17 |
+| REFORM2. Read for: Sources, currency and remaining work | https://www.legislation.gov.au/C2026A00071/asmade | 2026-10-17 |
+| INDIVIDUAL. Read for: Residence and territorial scope; Norfolk zone tax offset; Sources, currency and remaining work | https://www.ato.gov.au/norfolk-island/norfolk-island-residents-and-individual-tax | 2026-10-17 |
+| OFFSETS. Read for: Low income tax offset and priority; Sources, currency and remaining work | https://www.legislation.gov.au/C2004A05138/2026-08-27/2026-08-27/text/original/epub/OEBPS/document_2/document_2.html | 2026-10-17 |
+| ATO-LITO. Read for: Low income tax offset and priority; Sources, currency and remaining work | https://www.ato.gov.au/individuals-and-families/income-deductions-offsets-and-records/tax-offsets/low-income-tax-offset | 2026-10-17 |
+
+### Sources, currency and remaining work
 
 Checked on 17 October 2026: Rates Act compilation 66, effective 1 July
 2026, identified as latest by its live Register record; selected 1936 Act
@@ -334,6 +404,8 @@ remain open. No actual return, complete Norfolk pack, independent model
 engagement benchmark or practitioner sign-off is claimed. Do not submit
 identifiers, documents, a return or payment through this guide.
 
+Not yet confirmed: ato.gov.au and the Norfolk Island Regional Council site (nirc.gov.au) refused scripted access on 14 November 2026, so their pages were not re-read for this import; figures taken from them rest on Ryan Duguid's October 2026 read.
+
 [RATES]: https://www.legislation.gov.au/C2004A03348/2026-07-01/text
 [ITAA36]: https://www.legislation.gov.au/C1936A00027/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_1/document_1.html
 [ZONES]: https://www.legislation.gov.au/C1936A00027/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_5/document_5.html
@@ -344,23 +416,3 @@ identifiers, documents, a return or payment through this guide.
 [INDIVIDUAL]: https://www.ato.gov.au/norfolk-island/norfolk-island-residents-and-individual-tax
 [OFFSETS]: https://www.legislation.gov.au/C2004A05138/2026-08-27/2026-08-27/text/original/epub/OEBPS/document_2/document_2.html
 [ATO-LITO]: https://www.ato.gov.au/individuals-and-families/income-deductions-offsets-and-records/tax-offsets/low-income-tax-offset
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained in the
-[ryanduguid/openaccountants fork](https://github.com/ryanduguid/openaccountants).
-Check its quality tier, recorded review status and cited sources before use.
-Choose a practitioner whose credentials and engagement scope you have verified.
-The links below are optional upstream services; they do not publish or verify
-this fork's changes.
-
-- Upstream connection service: https://www.openaccountants.com/connect
-- Upstream accountant network: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

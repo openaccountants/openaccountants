@@ -16,16 +16,20 @@ category: international
 tax_year: 2026
 tax_year_notes: "GST Act compilation 96 from 1 January 2026; regulations compilation 5 from 1 November 2025; checked 17 October 2026"
 tier: 2
-last_updated: 2026-10-17
+type: computation
+last_updated: 2026-11-14
 version: 0.1
-review_status: pending_review
 depends_on:
   - workflow-base
   - vat-workflow-base
   - nf-tax-system
 ---
 
-# Norfolk Island: GST territorial and mainland transaction rules
+# Norfolk Island: GST territorial and mainland transaction rules v0.1
+
+> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
+
+## Scope
 
 Load `workflow-base`, `vat-workflow-base` and `nf-tax-system`. Preserve
 their source/period gates, profile confirmation, refusals, all universal
@@ -34,7 +38,25 @@ transactions. It does not fill every country slot, special regime or
 mandatory operational output. A missing required source, fact or slot
 prevents a deliverable financial result.
 
-## Establish the territory and connection for each supply
+Norfolk Island is an Australian external territory and, since 1 July 2016, Australian federal tax law applies there with the Norfolk modifications set out below. For the mainland method and figures this skill shares with Australia, load [`au-gst-bas`](../australia/au-gst-bas.md), [`australia-gst`](../australia/australia-gst.md); where a figure here and in that skill differ, check the official source both cite.
+
+## Ask the client first
+
+- For each supply: is it made on Norfolk Island only, or connected with the Australian mainland (goods delivered there, imports, services used there)?
+- Current and projected GST turnover from connected supplies.
+- Is the business a non-profit body?
+- For each purchase: a tax invoice, the creditable purpose percentage and the consideration actually provided.
+
+## The method, step by step
+
+### Key figures
+
+| Item | Figure | Applies to | Source |
+|---|---|---|---|
+| GST rate | 10% of value | Taxable supplies connected with the mainland | [ACT1](https://www.legislation.gov.au/C2004A00446/2026-01-01/2026-01-01/text/original/epub/OEBPS/document_1/document_1.html) |
+| Registration turnover threshold | AUD 75,000; AUD 150,000 for non-profit bodies | Current or projected GST turnover from connected supplies | [REG](https://www.legislation.gov.au/F2019L00417/2025-11-01/text) |
+
+### Establish the territory and connection for each supply
 
 GST Act section 195-1 excludes the external Territories from the **indirect
 tax zone**, with its separate offshore-installation qualification. The ATO
@@ -74,7 +96,7 @@ sale from any importation and identify the actual importer. No customs,
 excise or biosecurity exemption is established by this guide. [ACT1,
 sections 9-25 and 38-185][ACT1]; [ATO]
 
-## Registration and turnover boundaries
+### Registration and turnover boundaries
 
 For the ordinary section 23-5 test, an entity carrying on an enterprise
 must register when GST turnover **meets** the registration threshold.
@@ -120,7 +142,7 @@ return arrangements require their own checks; use reviewer-held identifier
 readiness and never submit TFNs or bank details through this workflow.
 [ACT1]; [ATO]
 
-## Mainland goods exported to Norfolk
+### Mainland goods exported to Norfolk
 
 Section 38-185(1) item 1 generally requires the **supplier to export** the
 goods before or within **60 days** after receiving any consideration, or
@@ -164,7 +186,7 @@ supplies provided to another entity. Goods export rules cannot establish
 a services exemption. Hold actual service/transport/rights treatment
 where those conditions or supporting instruments are unresolved. [ACT1]
 
-## Tax amount, purchase credits and timing
+### Tax amount, purchase credits and timing
 
 For a wholly standard-rated taxable supply, GST is **10% of value**.
 Section 9-75 generally values a money price at **10/11 of the GST-inclusive
@@ -204,7 +226,9 @@ backdating clock. Establish actual attribution, return due dates, documents
 and assessment history. This guide assigns no live BAS period, extension,
 filing/payment deadline or accounting-method election. [ACT1, Division 93][ACT1]
 
-## Fictional computations and classification cases
+## Worked cases
+
+### Fictional computations and classification cases
 
 Amounts are AUD and do not establish an actual business's eligibility.
 The computation cases stipulate valid registration, ordinary single-rate
@@ -230,7 +254,57 @@ turnover windows, exemptions, importer/exporter, evidence, value versus
 price, credit purpose/consideration, attribution and actual return period.
 Keep missing required facts as Needs Input and unresolved law on hold.
 
-## Primary sources and limits
+### Recomputed checks
+
+```oa-check
+name: Taxable mainland sale and fully creditable purchase
+inputs:
+  sale_value: 1000
+  purchase_price: 550
+steps:
+  - gst_on_sale: sale_value * 0.10
+  - price: sale_value + gst_on_sale
+  - credit: purchase_price / 11
+  - net: gst_on_sale - credit
+expected:
+  gst_on_sale: 100
+  price: 1100
+  credit: 50
+  net: 50
+```
+
+```oa-check
+name: Purchase 80% creditable, output GST A$100
+inputs:
+  purchase_price: 550
+  creditable: 0.80
+  output_gst: 100
+steps:
+  - credit: purchase_price / 11 * creditable
+  - net: output_gst - credit
+expected:
+  credit: 40
+  net: 60
+```
+
+## When to refuse or refer
+
+- Do not charge GST on supplies made wholly on Norfolk Island that have no mainland connection.
+- Hold an input tax credit when the tax invoice is missing; do not infer it by dividing the price by 11.
+- Refer to a registered tax agent for margin scheme, going concern and special schemes.
+
+## Sources
+
+Read on dates are Ryan Duguid's reads of each page when he wrote this skill (October 2026). Each label is the reference tag used in the text above.
+
+| Source | URL | Read on |
+|---|---|---|
+| ACT1. Read for: Establish the territory and connection for each supply; Registration and turnover boundaries; Mainland goods exported to Norfolk; Tax amount, purchase credits and timing; Primary sources and limits | https://www.legislation.gov.au/C2004A00446/2026-01-01/2026-01-01/text/original/epub/OEBPS/document_1/document_1.html | 2026-10-17 |
+| ACT2. Read for: Establish the territory and connection for each supply; Registration and turnover boundaries; Primary sources and limits | https://www.legislation.gov.au/C2004A00446/2026-01-01/2026-01-01/text/original/epub/OEBPS/document_2/document_2.html | 2026-10-17 |
+| REG. Read for: Registration and turnover boundaries; Tax amount, purchase credits and timing; Primary sources and limits | https://www.legislation.gov.au/F2019L00417/2025-11-01/text | 2026-10-17 |
+| ATO. Read for: Establish the territory and connection for each supply; Registration and turnover boundaries; Primary sources and limits | https://www.ato.gov.au/norfolk-island/tax-for-businesses/gst-transactions-with-mainland-australia | 2026-10-17 |
+
+### Primary sources and limits
 
 Checked on 17 October 2026: selected GST Act provisions in compilation 96,
 effective **1 January 2026**, registered **30 January 2026**, and GST
@@ -253,27 +327,9 @@ in this batch; no administrative extension is selected from that HTML.
 This Tier 2 reference confers no accountant sign-off or comprehensive
 Norfolk pack acceptance.
 
+Not yet confirmed: ato.gov.au and the Norfolk Island Regional Council site (nirc.gov.au) refused scripted access on 14 November 2026, so their pages were not re-read for this import; figures taken from them rest on Ryan Duguid's October 2026 read.
+
 [ACT1]: https://www.legislation.gov.au/C2004A00446/2026-01-01/2026-01-01/text/original/epub/OEBPS/document_1/document_1.html
 [ACT2]: https://www.legislation.gov.au/C2004A00446/2026-01-01/2026-01-01/text/original/epub/OEBPS/document_2/document_2.html
 [REG]: https://www.legislation.gov.au/F2019L00417/2025-11-01/text
 [ATO]: https://www.ato.gov.au/norfolk-island/tax-for-businesses/gst-transactions-with-mainland-australia
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained in the
-[ryanduguid/openaccountants fork](https://github.com/ryanduguid/openaccountants).
-Check its quality tier, recorded review status and cited sources before use.
-Choose a practitioner whose credentials and engagement scope you have verified.
-The links below are optional upstream services; they do not publish or verify
-this fork's changes.
-
-- Upstream connection service: https://www.openaccountants.com/connect
-- Upstream accountant network: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

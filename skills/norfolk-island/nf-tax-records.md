@@ -18,9 +18,9 @@ category: international
 tax_year: 2026
 tax_year_notes: "Selected law and guidance checked 18 October 2026; retention depends on the obligation and actual event, return and review dates"
 tier: 2
-last_updated: 2026-10-18
+type: situation-rules
+last_updated: 2026-11-14
 version: 0.1
-review_status: pending_review
 depends_on:
   - workflow-base
   - nf-tax-system
@@ -28,7 +28,11 @@ depends_on:
   - nf-tax-amendments-objections
 ---
 
-# Norfolk Island: tax records and retention
+# Norfolk Island: tax records and retention v0.1
+
+> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
+
+## Scope
 
 Establish the person/entity and capacity, business activities, tax and
 territorial application, income year, transaction completion, record creation
@@ -45,7 +49,27 @@ This reference supports a reviewer-held retention schedule; it does not
 complete bookkeeping, a return, a company pack or country coverage. The
 reviewer handles actual production, authentication, submissions and disposal.
 
-## Application, sources and record contents
+Norfolk Island is an Australian external territory and, since 1 July 2016, Australian federal tax law applies there with the Norfolk modifications set out below. For the mainland method and figures this skill shares with Australia, load [`australia-bookkeeping`](../australia/australia-bookkeeping.md); where a figure here and in that skill differ, check the official source both cite.
+
+## Ask the client first
+
+- Which obligation the record serves: ordinary business records, Division 900 substantiation, CGT, GST or another regime.
+- The date the record was prepared or obtained and the date the related transaction or act completed.
+- The return due day and actual lodgment day, for Division 900.
+- Any open objection, review or dispute.
+
+## The method, step by step
+
+### Key figures
+
+| Item | Figure | Applies to | Source |
+|---|---|---|---|
+| Ordinary business records | Five years after preparation or completion, whichever is later | ITAA 1936 s 262A(4) | [1936](https://www.legislation.gov.au/C1936A00027/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_4/document_4.html) |
+| Division 900 substantiation records | Five years from the return due day, or the lodgment day if later | ITAA 1997 ss 900-25, 900-75, 900-90 | [1997-10](https://www.legislation.gov.au/C2004A05138/2026-08-27/2026-08-27/text/original/epub/OEBPS/document_10/document_10.html) |
+| CGT records | Five years after it is certain no further CGT event can happen | ITAA 1997 s 121-25 | [1997-3](https://www.legislation.gov.au/C2004A05138/2026-08-27/2026-08-27/text/original/epub/OEBPS/document_3/document_3.html) |
+| Record-keeping penalty unit value | A$364 per penalty unit from 1 July 2026 (derived from the penalty unit used in `nf-tax-penalties-remission`) | TAA 1953 Sch 1 s 288-25 | [TAA2](https://www.legislation.gov.au/C1953A00001/2026-08-27/2026-08-27/text/original/epub/OEBPS/document_2/document_2.html) |
+
+### Application, sources and record contents
 
 Australian income-tax application follows the Norfolk reforms and exceptions
 in nf-tax-system. An island address does not make every Australian indirect
@@ -89,7 +113,7 @@ loss. Preserve nature, date, parties, amounts, proceeds, bases, adjustments,
 valuations and relevant history. Reconstruct required records that do not
 already exist. Use nf-cgt for substantive events and relief. [1997-3]
 
-## Retention: choose the obligation before the clock
+### Retention: choose the obligation before the clock
 
 All periods below are conditional statutory or guidance rules, not authority
 to destroy records at the first computed anniversary.
@@ -110,7 +134,7 @@ sections **262A, 121-25 and 382-5**. Establish the actual exception rather than
 treating deregistration, inactivity or a proposed liquidation as sufficient.
 [1936]; [1997-3]; [TAA3]
 
-### Disputes and information reused later
+#### Disputes and information reused later
 
 Under **900-170**, when the ordinary period ends, a related objection,
 review/appeal arising from an objection, or request to amend an assessment
@@ -132,7 +156,7 @@ records. Its longer-record page describes general asset retention and
 special PRRT/minimum-tax periods; those summaries do not replace their
 operative provisions or decide an actual disposal date. [LONGER]
 
-### Norfolk CGT exception and other CGT relief
+#### Norfolk CGT exception and other CGT relief
 
 Transitional Act **102-25(3)(b)** removes the acquisition-date record
 requirement for an asset to which **102-25(2)** actually applies. All four
@@ -157,7 +181,7 @@ after certification**, and the compliant entry for the applicable retention
 period. An ordinary spreadsheet is not automatically a certified replacement
 and an AI-generated summary does not supply that certification. [1997-3]
 
-## Formats, production and missing evidence
+### Formats, production and missing evidence
 
 Current ATO business guidance permits paper/electronic records subject to
 integrity, accessibility and reconstruction requirements. Preserve source
@@ -189,7 +213,7 @@ evidence-quality and reasonable-expectation relief; neither guarantees a
 deduction or excuses a missing substantive entitlement. No fabricated or
 backdated evidence is acceptable. [1997-10]
 
-## Penalties and separate record regimes
+### Penalties and separate record regimes
 
 TAA **288-25** sets a selected administrative penalty of **20 penalty units**
 for failure to keep or retain records in the manner required by a taxation
@@ -221,7 +245,64 @@ archived periods, corporate destruction and local Norfolk records retain
 their own source gates. This reference does not complete those regimes.
 [TAA3]; [1936]; [LONGER]
 
-## Reviewer schedule and handling rules
+## Worked cases
+
+### Fictional boundary positions and self-checks
+
+These stipulated cases select rules; they are not actual expiry or disposal
+authorisations and do not establish a person's deduction or penalty.
+
+| Stipulated facts | Selected result |
+|---|---|
+| Ordinary business record obtained 1 July 2026; related act completes 18 October 2026; no other facts established | The ordinary five-year start uses the later **18 October 2026** event. Other obligations and extensions remain to be checked. [1936]; [BUSINESS] |
+| Division 900 return due 31 October 2026; lodged 1 September 2026 | Use **31 October 2026** as the statutory five-year start. Early lodgement does not advance it. [1997-10] |
+| Same due day, but return lodged 20 November 2026 | Use **20 November 2026** as the start. [1997-10] |
+| Related objection unresolved when a Division 900 five-year period ends | Section 900-170 extends retention until resolution. Record the ATO's longer guidance separately; preserve the records for reviewer assessment. [1997-10]; [INDIVIDUAL] |
+| Covered indirect-tax transaction has stipulated endpoints 31 August 2031 (completion), 30 June 2032 (ordinary review) and 20 January 2033 (qualifying refreshed review) | Select **20 January 2033**, the latest supplied endpoint. A qualifying delayed-credit return may supply an additional clock. [TAA3] |
+| Every Norfolk 102-25(2) condition is stipulated met | Apply only the subsection (3)(b) acquisition-date record exception. Preserve other applicable evidence and duties. Unknown prescribed status instead holds the exception. [TRANS] |
+| A Division 900 expense receipt is lost; a complete copy survives | Section 900-205 treats the complete copy as the original. Deductibility, scope and other evidence remain separate. [1997-10] |
+| The only asserted record failure concerns Division 900 substantiation | Do not automatically impose 288-25's 20 units; its specific exclusion applies. Check the actual deduction and other consequences. [TAA2]; [1997-10] |
+
+Check entity/capacity and territory; every start event; early versus late
+lodgement; statutory extensions versus broader guidance; asset history and
+Norfolk conditions; all overlapping regimes; original/copy/reconstruction
+quality; English/accessibility and system changes; penalty exclusions;
+source completeness, privacy and reviewer holds. Do not clear a record for
+disposal merely because one clock has elapsed.
+
+### Recomputed checks
+
+```oa-check
+name: Division 900 start date, return lodged late (years from 2026)
+inputs:
+  start_year: 2026
+  years: 5
+steps:
+  - end_year: start_year + years
+expected:
+  end_year: 2031
+```
+
+```oa-check
+name: Record-keeping penalty, 20 penalty units at A$364 (derived)
+inputs:
+  units: 20
+  unit_value: 364
+steps:
+  - penalty: units * unit_value
+expected:
+  penalty: 7280
+```
+
+## When to refuse or refer
+
+- Do not advise destroying a record while an objection or review is open.
+- Do not discard CGT records on age alone; the five years run from when no further CGT event can happen.
+- Refer record-keeping penalty disputes to a registered tax agent.
+
+## Completion checklist
+
+### Reviewer schedule and handling rules
 
 1. Classify each record by entity/capacity, tax, territorial connection and
    purpose. One document may support several obligations.
@@ -263,30 +344,30 @@ Use the loaded universal/domain refusal catalogues for reviewer removal,
 content mismatch and other triggers. Missing source/fact conditions remain
 Needs Input unless a defined refusal applies. Do not invent a code.
 
-## Fictional boundary positions and self-checks
+## Sources
 
-These stipulated cases select rules; they are not actual expiry or disposal
-authorisations and do not establish a person's deduction or penalty.
+Read on dates are Ryan Duguid's reads of each page when he wrote this skill (October 2026). Each label is the reference tag used in the text above.
 
-| Stipulated facts | Selected result |
-|---|---|
-| Ordinary business record obtained 1 July 2026; related act completes 18 October 2026; no other facts established | The ordinary five-year start uses the later **18 October 2026** event. Other obligations and extensions remain to be checked. [1936]; [BUSINESS] |
-| Division 900 return due 31 October 2026; lodged 1 September 2026 | Use **31 October 2026** as the statutory five-year start. Early lodgement does not advance it. [1997-10] |
-| Same due day, but return lodged 20 November 2026 | Use **20 November 2026** as the start. [1997-10] |
-| Related objection unresolved when a Division 900 five-year period ends | Section 900-170 extends retention until resolution. Record the ATO's longer guidance separately; preserve the records for reviewer assessment. [1997-10]; [INDIVIDUAL] |
-| Covered indirect-tax transaction has stipulated endpoints 31 August 2031 (completion), 30 June 2032 (ordinary review) and 20 January 2033 (qualifying refreshed review) | Select **20 January 2033**, the latest supplied endpoint. A qualifying delayed-credit return may supply an additional clock. [TAA3] |
-| Every Norfolk 102-25(2) condition is stipulated met | Apply only the subsection (3)(b) acquisition-date record exception. Preserve other applicable evidence and duties. Unknown prescribed status instead holds the exception. [TRANS] |
-| A Division 900 expense receipt is lost; a complete copy survives | Section 900-205 treats the complete copy as the original. Deductibility, scope and other evidence remain separate. [1997-10] |
-| The only asserted record failure concerns Division 900 substantiation | Do not automatically impose 288-25's 20 units; its specific exclusion applies. Check the actual deduction and other consequences. [TAA2]; [1997-10] |
+| Source | URL | Read on |
+|---|---|---|
+| 1936-RECORD. Read for: Application, sources and record contents; Provenance and outstanding work | https://www.legislation.gov.au/C1936A00027/latest/details | 2026-10-18 |
+| 1936. Read for: Application, sources and record contents; Retention: choose the obligation before the clock; Penalties and separate record regimes; Fictional boundary positions and self-checks; Provenance and outstanding work; Key figures | https://www.legislation.gov.au/C1936A00027/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_4/document_4.html | 2026-10-18 |
+| 1997-RECORD. Read for: Application, sources and record contents; Provenance and outstanding work | https://www.legislation.gov.au/C2004A05138/latest/details | 2026-10-18 |
+| 1997-VERSIONS. Read for: Application, sources and record contents; Provenance and outstanding work | https://www.legislation.gov.au/C2004A05138/latest/versions | 2026-10-18 |
+| 1997-3. Read for: Application, sources and record contents; Retention: choose the obligation before the clock; Penalties and separate record regimes; Provenance and outstanding work | https://www.legislation.gov.au/C2004A05138/2026-08-27/2026-08-27/text/original/epub/OEBPS/document_3/document_3.html | 2026-10-18 |
+| 1997-10. Read for: Application, sources and record contents; Retention: choose the obligation before the clock; Formats, production and missing evidence; Fictional boundary positions and self-checks; Provenance and outstanding work | https://www.legislation.gov.au/C2004A05138/2026-08-27/2026-08-27/text/original/epub/OEBPS/document_10/document_10.html | 2026-10-18 |
+| TAA-RECORD. Read for: Application, sources and record contents; Provenance and outstanding work | https://www.legislation.gov.au/C1953A00001/latest/details | 2026-10-18 |
+| TAA-VERSIONS. Read for: Application, sources and record contents; Provenance and outstanding work | https://www.legislation.gov.au/C1953A00001/latest/versions | 2026-10-18 |
+| TAA2. Read for: Penalties and separate record regimes; Fictional boundary positions and self-checks; Provenance and outstanding work | https://www.legislation.gov.au/C1953A00001/2026-08-27/2026-08-27/text/original/epub/OEBPS/document_2/document_2.html | 2026-10-18 |
+| TAA3. Read for: Retention: choose the obligation before the clock; Penalties and separate record regimes; Fictional boundary positions and self-checks; Provenance and outstanding work | https://www.legislation.gov.au/C1953A00001/2026-08-27/2026-08-27/text/original/epub/OEBPS/document_3/document_3.html | 2026-10-18 |
+| REFORM2. Read for: Application, sources and record contents; Provenance and outstanding work | https://www.legislation.gov.au/C2026A00071/asmade/2026-08-26/text/original/epub/OEBPS/document_1/document_1.html | 2026-10-18 |
+| OCTOBER. Read for: Application, sources and record contents; Provenance and outstanding work | https://www.legislation.gov.au/C2026A00086/asmade/2026-09-15/text/original/epub/OEBPS/document_1/document_1.html | 2026-10-18 |
+| TRANS. Read for: Retention: choose the obligation before the clock; Fictional boundary positions and self-checks; Provenance and outstanding work | https://www.ato.gov.au/law/view/print?DocID=PAC%2F19970040%2F102-25 | 2026-10-18 |
+| BUSINESS. Read for: Retention: choose the obligation before the clock; Formats, production and missing evidence; Fictional boundary positions and self-checks; Provenance and outstanding work | https://www.ato.gov.au/businesses-and-organisations/preparing-lodging-and-paying/record-keeping-for-business/overview-of-record-keeping-rules-for-business | 2026-10-18 |
+| LONGER. Read for: Retention: choose the obligation before the clock; Penalties and separate record regimes; Provenance and outstanding work | https://www.ato.gov.au/businesses-and-organisations/preparing-lodging-and-paying/record-keeping-for-business/overview-of-record-keeping-rules-for-business/records-to-keep-longer-than-five-years | 2026-10-18 |
+| INDIVIDUAL. Read for: Application, sources and record contents; Retention: choose the obligation before the clock; Fictional boundary positions and self-checks; Provenance and outstanding work | https://www.ato.gov.au/individuals-and-families/income-deductions-offsets-and-records/records-you-need-to-keep | 2026-10-18 |
 
-Check entity/capacity and territory; every start event; early versus late
-lodgement; statutory extensions versus broader guidance; asset history and
-Norfolk conditions; all overlapping regimes; original/copy/reconstruction
-quality; English/accessibility and system changes; penalty exclusions;
-source completeness, privacy and reviewer holds. Do not clear a record for
-disposal merely because one clock has elapsed.
-
-## Provenance and outstanding work
+### Provenance and outstanding work
 
 Selected provisions and current ATO business/individual guidance were checked
 on **18 October 2026**. The CGT transition and current compilation records
@@ -301,6 +382,8 @@ client records, return, notice response, reconstruction claim, remission or
 disposal was processed. Specialist records, actual calendars/notices,
 privilege, litigation/discovery, local records and complete-country
 acceptance remain open.
+
+Not yet confirmed: ato.gov.au and the Norfolk Island Regional Council site (nirc.gov.au) refused scripted access on 14 November 2026, so their pages were not re-read for this import; figures taken from them rest on Ryan Duguid's October 2026 read. The 20-penalty-unit amount in the second check is derived from A$364 per unit; Ryan's text gives only the unit count.
 
 [1936-RECORD]: https://www.legislation.gov.au/C1936A00027/latest/details
 [1936]: https://www.legislation.gov.au/C1936A00027/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_4/document_4.html
@@ -318,23 +401,3 @@ acceptance remain open.
 [BUSINESS]: https://www.ato.gov.au/businesses-and-organisations/preparing-lodging-and-paying/record-keeping-for-business/overview-of-record-keeping-rules-for-business
 [LONGER]: https://www.ato.gov.au/businesses-and-organisations/preparing-lodging-and-paying/record-keeping-for-business/overview-of-record-keeping-rules-for-business/records-to-keep-longer-than-five-years
 [INDIVIDUAL]: https://www.ato.gov.au/individuals-and-families/income-deductions-offsets-and-records/records-you-need-to-keep
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained in the
-[ryanduguid/openaccountants fork](https://github.com/ryanduguid/openaccountants).
-Check its quality tier, recorded review status and cited sources before use.
-Choose a practitioner whose credentials and engagement scope you have verified.
-The links below are optional upstream services; they do not publish or verify
-this fork's changes.
-
-- Upstream connection service: https://www.openaccountants.com/connect
-- Upstream accountant network: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

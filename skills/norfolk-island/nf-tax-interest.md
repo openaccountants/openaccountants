@@ -18,9 +18,9 @@ category: international
 tax_year: 2026
 tax_year_notes: "Selected rules checked 18 October 2026; published 2026 quarterly rates are calendar-period specific, separately from income-year deduction treatment"
 tier: 2
-last_updated: 2026-10-18
+type: computation
+last_updated: 2026-11-14
 version: 0.1
-review_status: pending_review
 depends_on:
   - workflow-base
   - nf-tax-system
@@ -29,7 +29,11 @@ depends_on:
   - nf-tax-penalties-remission
 ---
 
-# Norfolk Island: tax interest, payments and remission
+# Norfolk Island: tax interest, payments and remission v0.1
+
+> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
+
+## Scope
 
 Establish the person/entity and capacity, tax and territorial application,
 income-year start and balance date, original and amended assessments,
@@ -46,7 +50,25 @@ return or remission application. Mandatory unknown facts remain Needs
 Input; unresolved law remains held. The reviewer personally handles
 representations, declarations, submissions and payment.
 
-## Sources and liability gates
+Norfolk Island is an Australian external territory and, since 1 July 2016, Australian federal tax law applies there with the Norfolk modifications set out below. For the mainland method and figures this skill shares with Australia, load [`au-lodgment-deadlines-penalties`](../australia/au-lodgment-deadlines-penalties.md); where a figure here and in that skill differ, check the official source both cite.
+
+## Ask the client first
+
+- Which charge: general interest charge or shortfall interest charge?
+- The principal, the due date and each charge day.
+- Payments and credits during the period and how they were allocated.
+- The income year in which the interest is incurred, for the deduction rules.
+
+## The method, step by step
+
+### Key figures
+
+| Item | Figure | Applies to | Source |
+|---|---|---|---|
+| General interest charge, annual rate | 11.51% | Charge days in October-December 2026 | [GIC-RATES](https://www.ato.gov.au/tax-rates-and-codes/general-interest-charge-rates) |
+| Shortfall interest charge, annual rate | 7.51% | Charge days in October-December 2026 | [SIC-RATES](https://www.ato.gov.au/tax-rates-and-codes/shortfall-interest-charge-rates) |
+
+### Sources and liability gates
 
 The latest published TAA source is **C226** and the 1997 Assessment Act
 source is **C267**, both for **27 August-30 September 2026**. Their version
@@ -78,7 +100,7 @@ of liability. Do not borrow the administrative-penalty notice's payment
 period for an interest charge. Assessment prerequisites and the particular
 enabling law remain separate. [ADMIN1]; [ASSESS]
 
-## Income-tax payment and interest periods
+### Income-tax payment and interest periods
 
 | Ordinary route | Statutory rule to establish before calculating |
 |---|---|
@@ -112,7 +134,7 @@ to a working day or reuse a filing adjustment without checking the payment
 rule. Actual calendars and route-specific provisions remain required.
 [ADMIN1]
 
-### Ordinary income-tax SIC
+#### Ordinary income-tax SIC
 
 Under **280-100(1)-(2)**, an additional income-tax amount from an amended
 assessment attracts SIC for each day from the **original assessment's
@@ -137,7 +159,7 @@ an unverified credit merely because money was sent before the amendment.
 Actual remission and credit-interest amounts require their own authority
 and account evidence. [ADMIN2]; [PS-SHORTFALL]
 
-## Rates, compounding and calculation sequence
+### Rates, compounding and calculation sequence
 
 TAA **8AAD(1)** gives ordinary GIC's daily rate as the statutory base rate
 plus **7 percentage points**, divided by the number of days in the
@@ -191,7 +213,7 @@ intermediate precision. [ADMIN1]; [ADMIN2]
    not a verified SIC rounding rule. Reconcile the actual posting policy
    and notice before settling an account amount. [ADMIN1]; [ADMIN2]
 
-## Payment receipt, allocation and debt management
+### Payment receipt, allocation and debt management
 
 TAA **8AAZM** treats payment as made when received by the Commissioner or
 a person acting on the Commissioner's behalf. An instruction to a bank
@@ -219,7 +241,7 @@ nf-tax-amendments-objections for selected dispute/payment distinctions;
 actual recovery and relief still need their own rules and orders.
 [ADMIN2]
 
-## Deduction and recoupment: use the incurred income year
+### Deduction and recoupment: use the incurred income year
 
 Act **29 of 2025**, Schedule 2, commenced **1 April 2025** but applies to
 assessments for **income years starting on or after 1 July 2025**. It
@@ -256,7 +278,7 @@ Keep mixed pre/post-change components and any partial deduction separate;
 other assessability provisions and specialist facts require their own
 checks. [ASSESS]; [PS-GIC, paragraphs 73-76][PS-GIC]
 
-## Remission and review
+### Remission and review
 
 TAA **8AAG** supplies GIC remission powers and conditions. For unpaid debts,
 consider the prescribed external-cause/mitigation, taxpayer-cause/fairness,
@@ -292,7 +314,9 @@ more-than-two-penalty-unit remission threshold, an objection against every
 GIC decision or a guarantee of successful review. Actual enabling right,
 decision, notice, grounds and deadline require verification. [ADMIN2]
 
-## Fictional components and checks
+## Worked cases
+
+### Fictional components and checks
 
 Stipulate ordinary rates, an established liability and confirmed charge
 days, unchanged principal, no intervening payments/credits/remission or
@@ -324,7 +348,69 @@ optional versus mandatory rounding, prior/partial remission, income-year
 start, recoupment eligibility, correct review threshold and the applicable
 workflow outputs. Reconcile to reviewer-held notices before action.
 
-## Provenance and remaining work
+### Recomputed checks
+
+```oa-check
+name: A$10,000 GIC and SIC for 5 days, October-December 2026 rates, daily compounding
+inputs:
+  principal: 10000
+  gic_rate: 0.1151
+  sic_rate: 0.0751
+steps:
+  - g: 1 + gic_rate / 365
+  - s: 1 + sic_rate / 365
+  - gic: principal * (g * g * g * g * g - 1)
+  - sic: principal * (s * s * s * s * s - 1)
+expected:
+  gic: 15.78
+  sic: 10.29
+```
+
+```oa-check
+name: SIC remission review threshold, 20% of additional tax
+inputs:
+  additional_tax: 1000
+  unremitted_a: 200
+  unremitted_b: 201
+steps:
+  - share_a: unremitted_a / additional_tax
+  - share_b: unremitted_b / additional_tax
+expected:
+  share_a: 0.20
+  share_b: 0.201
+tolerance: 0.0001
+```
+
+## When to refuse or refer
+
+- Do not stop shortfall interest because an advance payment was made before an amended assessment.
+- Do not claim a deduction for interest incurred in a post-change income year because some days predate the change.
+- Remission requests go to the ATO; this skill does not lodge them.
+
+## Sources
+
+Read on dates are Ryan Duguid's reads of each page when he wrote this skill (October 2026). Each label is the reference tag used in the text above.
+
+| Source | URL | Read on |
+|---|---|---|
+| ADMIN1. Read for: Sources and liability gates; Income-tax payment and interest periods; Rates, compounding and calculation sequence; Payment receipt, allocation and debt management; Remission and review; Provenance and remaining work | https://www.legislation.gov.au/C1953A00001/2026-08-27/2026-08-27/text/original/epub/OEBPS/document_1/document_1.html | 2026-10-18 |
+| ADMIN2. Read for: Sources and liability gates; Income-tax payment and interest periods; Rates, compounding and calculation sequence; Payment receipt, allocation and debt management; Remission and review; Provenance and remaining work | https://www.legislation.gov.au/C1953A00001/2026-08-27/2026-08-27/text/original/epub/OEBPS/document_2/document_2.html | 2026-10-18 |
+| ADMIN-RECORD. Read for: Sources and liability gates; Provenance and remaining work | https://www.legislation.gov.au/C1953A00001/latest/details | 2026-10-18 |
+| ADMIN-VERSIONS. Read for: Sources and liability gates; Provenance and remaining work | https://www.legislation.gov.au/C1953A00001/latest/versions | 2026-10-18 |
+| ASSESS. Read for: Sources and liability gates; Income-tax payment and interest periods; Deduction and recoupment: use the incurred income year; Provenance and remaining work | https://www.legislation.gov.au/C2004A05138/2026-08-27/2026-08-27/text/original/epub/OEBPS/document_1/document_1.html | 2026-10-18 |
+| ASSESS-RECORD. Read for: Sources and liability gates; Provenance and remaining work | https://www.legislation.gov.au/C2004A05138/latest/details | 2026-10-18 |
+| ASSESS-VERSIONS. Read for: Sources and liability gates; Provenance and remaining work | https://www.legislation.gov.au/C2004A05138/latest/versions | 2026-10-18 |
+| REFORM2. Read for: Sources and liability gates; Provenance and remaining work | https://www.legislation.gov.au/C2026A00071/asmade/2026-08-26/text/original/epub/OEBPS/document_1/document_1.html | 2026-10-18 |
+| OCTOBER. Read for: Sources and liability gates; Provenance and remaining work | https://www.legislation.gov.au/C2026A00086/asmade/2026-09-15/text/original/epub/OEBPS/document_1/document_1.html | 2026-10-18 |
+| DEDUCT-ACT. Read for: Deduction and recoupment: use the incurred income year; Provenance and remaining work | https://www.legislation.gov.au/C2025A00029/asmade/2025-03-27/text/original/epub/OEBPS/document_1/document_1.html | 2026-10-18 |
+| REMEDIAL. Read for: Remission and review; Provenance and remaining work | https://www.legislation.gov.au/F2023L00956/asmade/2023-07-04/text/original/epub/OEBPS/document_1/document_1.html | 2026-10-18 |
+| GIC-RATES. Read for: Rates, compounding and calculation sequence; Provenance and remaining work | https://www.ato.gov.au/tax-rates-and-codes/general-interest-charge-rates | 2026-10-18 |
+| SIC-RATES. Read for: Rates, compounding and calculation sequence; Provenance and remaining work | https://www.ato.gov.au/tax-rates-and-codes/shortfall-interest-charge-rates | 2026-10-18 |
+| ATO-DEDUCT. Read for: Deduction and recoupment: use the incurred income year; Provenance and remaining work | https://www.ato.gov.au/about-ato/new-legislation/in-detail/businesses/deny-deductions-for-ato-interest-charges | 2026-10-18 |
+| PS-GIC. Read for: Deduction and recoupment: use the incurred income year; Remission and review; Provenance and remaining work | https://www.ato.gov.au/law/view/print?DocID=PSR%2FPS201112%2FNAT%2FATO%2F00001 | 2026-10-18 |
+| PS-SHORTFALL. Read for: Sources and liability gates; Income-tax payment and interest periods; Remission and review; Provenance and remaining work | https://www.ato.gov.au/law/view/print?DocID=PSR%2FPS20068%2FNAT%2FATO%2F00001 | 2026-10-18 |
+
+### Provenance and remaining work
 
 Checked **18 October 2026**: current records and version grids, October
 amendment targets, selected complete GIC/RBA/allocation/receipt/holiday
@@ -342,6 +428,8 @@ retain their own evidence requirements. No actual taxpayer interest,
 filed request, payment, practitioner sign-off or comprehensive-country
 acceptance is claimed. This reference remains Tier 2 pending review.
 
+Not yet confirmed: ato.gov.au and the Norfolk Island Regional Council site (nirc.gov.au) refused scripted access on 14 November 2026, so their pages were not re-read for this import; figures taken from them rest on Ryan Duguid's October 2026 read. The ATO GIC and SIC rate pages were not re-read; the October-December 2026 rates of 11.51% and 7.51% are Ryan's October read.
+
 [ADMIN1]: https://www.legislation.gov.au/C1953A00001/2026-08-27/2026-08-27/text/original/epub/OEBPS/document_1/document_1.html
 [ADMIN2]: https://www.legislation.gov.au/C1953A00001/2026-08-27/2026-08-27/text/original/epub/OEBPS/document_2/document_2.html
 [ADMIN-RECORD]: https://www.legislation.gov.au/C1953A00001/latest/details
@@ -358,23 +446,3 @@ acceptance is claimed. This reference remains Tier 2 pending review.
 [ATO-DEDUCT]: https://www.ato.gov.au/about-ato/new-legislation/in-detail/businesses/deny-deductions-for-ato-interest-charges
 [PS-GIC]: https://www.ato.gov.au/law/view/print?DocID=PSR%2FPS201112%2FNAT%2FATO%2F00001
 [PS-SHORTFALL]: https://www.ato.gov.au/law/view/print?DocID=PSR%2FPS20068%2FNAT%2FATO%2F00001
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained in the
-[ryanduguid/openaccountants fork](https://github.com/ryanduguid/openaccountants).
-Check its quality tier, recorded review status and cited sources before use.
-Choose a practitioner whose credentials and engagement scope you have verified.
-The links below are optional upstream services; they do not publish or verify
-this fork's changes.
-
-- Upstream connection service: https://www.openaccountants.com/connect
-- Upstream accountant network: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

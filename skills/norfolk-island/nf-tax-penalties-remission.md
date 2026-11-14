@@ -17,9 +17,9 @@ category: international
 tax_year: 2026
 tax_year_notes: "Selected procedural rules checked 18 October 2026; A$364 unit published for 1 July 2026; each penalty's event and period must be verified separately"
 tier: 2
-last_updated: 2026-10-18
+type: computation
+last_updated: 2026-11-14
 version: 0.1
-review_status: pending_review
 depends_on:
   - workflow-base
   - nf-tax-system
@@ -27,7 +27,11 @@ depends_on:
   - nf-tax-amendments-objections
 ---
 
-# Norfolk Island: selected tax penalties and remission
+# Norfolk Island: selected tax penalties and remission v0.1
+
+> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
+
+## Scope
 
 Establish the taxpayer and capacity, underlying tax obligation and period,
 actual due date, approved form and receipt, statement and correct tax
@@ -43,7 +47,18 @@ return, disclosure or objection. Mandatory unknown facts remain Needs
 Input; unresolved law remains held. The reviewer personally handles
 representations, declarations, submission and payment.
 
-## Sources and separate liabilities
+Norfolk Island is an Australian external territory and, since 1 July 2016, Australian federal tax law applies there with the Norfolk modifications set out below. For the mainland method and figures this skill shares with Australia, load [`au-lodgment-deadlines-penalties`](../australia/au-lodgment-deadlines-penalties.md); where a figure here and in that skill differ, check the official source both cite.
+
+## Ask the client first
+
+- Which penalty: failure to lodge on time, false or misleading statement, or another?
+- For failure to lodge: the due date, the lodgment date and the entity size multiplier.
+- For a shortfall: the shortfall amount and the behaviour (reasonable care, recklessness, intentional disregard).
+- Any voluntary disclosure, and whether it came before or after notification of an audit.
+
+## The method, step by step
+
+### Sources and separate liabilities
 
 The latest published TAA compilation is **C226, 27 August-30 September
 2026**. Its versions page identifies unincorporated October Acts **71 and
@@ -61,7 +76,7 @@ minimum-tax, super-guarantee, excise or criminal penalties, or a local
 Norfolk charge. Territorial application and each special regime retain
 their own sources and facts. [ADMIN, sections 284-75 and 286-75][ADMIN]
 
-## Failure to lodge in the approved form
+### Failure to lodge in the approved form
 
 Section **286-75(1)** requires a taxation-law obligation to give the
 Commissioner a specified document in the approved form by a particular day,
@@ -85,7 +100,7 @@ supplied too late from information enabling timely lodgement. Preserve
 dated instructions, information delivery and agent correspondence through
 redacted evidence references. [ADMIN]
 
-### Count periods, then value and classify
+#### Count periods, then value and classify
 
 Section **286-80(2)** supplies **1 penalty unit for each 28-day period or
 part**, capped at **5 base units**. The period starts on the due date and
@@ -141,7 +156,7 @@ before the document is lodged, and section **286-80(6)** permits a later
 increase. Reconcile any later notice to the same obligation and cap.
 [ADMIN]; [PS-FTL]
 
-## False statements, shortfalls and default assessments
+### False statements, shortfalls and default assessments
 
 Section **284-20** includes oral, written and electronic statements;
 **284-25** treats an agent's statement as the taxpayer's. Under
@@ -161,14 +176,14 @@ consolidation and other special attribution rules need their own checks;
 this guide's examples stipulate an ordinary single-taxpayer shortfall.
 [ADMIN, sections 284-30, 284-35 and 284-80][ADMIN]
 
-| Ordinary section 284-90 base penalty item | Base amount before applicable adjustments/remission |
-|---|---|
-| Shortfall caused by intentional disregard: item 1 | **75% of shortfall** |
-| Shortfall caused by recklessness: item 2 | **50% of shortfall** |
-| Shortfall caused by failure to take reasonable care: item 3 | **25% of shortfall** |
-| False statement without shortfall: items 3A/3B/3C | **60 / 40 / 20 penalty units**, respectively, for those behaviours |
-| Qualifying not-reasonably-arguable position: ordinary item 4 | **25% of shortfall**, subject to its threshold and conditions |
-| Required document absent and Commissioner determines liability: item 7 | **75% of the tax-related liability**, not 75% of omitted income |
+| Ordinary section 284-90 base penalty item | Base amount before applicable adjustments/remission | Source |
+|---|--- |---|
+| Shortfall caused by intentional disregard: item 1 | **75% of shortfall** | [ADMIN](https://www.legislation.gov.au/C1953A00001/2026-08-27/2026-08-27/text/original/epub/OEBPS/document_2/document_2.html) |
+| Shortfall caused by recklessness: item 2 | **50% of shortfall** | [ADMIN](https://www.legislation.gov.au/C1953A00001/2026-08-27/2026-08-27/text/original/epub/OEBPS/document_2/document_2.html) |
+| Shortfall caused by failure to take reasonable care: item 3 | **25% of shortfall** | [ADMIN](https://www.legislation.gov.au/C1953A00001/2026-08-27/2026-08-27/text/original/epub/OEBPS/document_2/document_2.html) |
+| False statement without shortfall: items 3A/3B/3C | **60 / 40 / 20 penalty units**, respectively, for those behaviours | [ADMIN](https://www.legislation.gov.au/C1953A00001/2026-08-27/2026-08-27/text/original/epub/OEBPS/document_2/document_2.html) |
+| Qualifying not-reasonably-arguable position: ordinary item 4 | **25% of shortfall**, subject to its threshold and conditions | [ADMIN](https://www.legislation.gov.au/C1953A00001/2026-08-27/2026-08-27/text/original/epub/OEBPS/document_2/document_2.html) |
+| Required document absent and Commissioner determines liability: item 7 | **75% of the tax-related liability**, not 75% of omitted income | [ADMIN](https://www.legislation.gov.au/C1953A00001/2026-08-27/2026-08-27/text/original/epub/OEBPS/document_2/document_2.html) |
 
 The table cites **284-75 and 284-90**. If multiple base items apply,
 **284-90(2)** selects the highest BPA; do not add them. Behaviour needs
@@ -197,7 +212,7 @@ without it. A merely late return is not automatically a 75% default
 penalty. The statute expressly notes that FTL liability can coexist;
 check each cause separately. [ADMIN]
 
-## Adjustment order and voluntary disclosure
+### Adjustment order and voluntary disclosure
 
 First work out the correct BPA, including **284-224** to the extent the
 position agreed with Commissioner advice, general administrative practice
@@ -236,7 +251,7 @@ sequentially to an already increased total. Work separately where different
 parts attract different behaviour or adjustments. Apply any actual remission
 after establishing the statutory amount. [ADMIN]; [PS-STATEMENTS]
 
-## Notice, remission and review
+### Notice, remission and review
 
 Section **298-10** requires written notice of liability and reasons;
 reasons are not required where the penalty is fully remitted. Under
@@ -281,7 +296,9 @@ need their own current sources. Keep penalty principal, underlying tax,
 interest, payment arrangements and disputed amounts separate. No payment
 or filing action is taken through this reference. [ADMIN]
 
-## Fictional components and reviewer checks
+## Worked cases
+
+### Fictional components and reviewer checks
 
 For the FTL monetary examples only, stipulate an ordinary multiplier,
 valid due/receipt dates, all relevant period starts on/after **1 July 2026**,
@@ -319,7 +336,66 @@ approved-form disclosure, notice/reasons, actual remission and review
 route. Reconcile all amounts to the reviewer-held notices and required
 workflow outputs before any professional action.
 
-## Provenance and remaining work
+### Recomputed checks
+
+```oa-check
+name: Failure to lodge, 112 and 200 days late, multiplier 1
+inputs:
+  unit: 364
+  days_a: 112
+  days_b: 200
+steps:
+  - units_a: min(ceil(days_a / 28), 5)
+  - units_b: min(ceil(days_b / 28), 5)
+  - penalty_a: units_a * unit
+  - penalty_b: units_b * unit
+expected:
+  penalty_a: 1456
+  penalty_b: 1820
+```
+
+```oa-check
+name: Shortfall A$10,000, carelessness, 20% increase and 80% disclosure reduction
+inputs:
+  shortfall: 10000
+steps:
+  - bpa: shortfall * 0.25
+  - with_both: bpa + bpa * 0.20 - bpa * 0.80
+  - reduction_only: bpa - bpa * 0.80
+expected:
+  bpa: 2500
+  with_both: 1000
+  reduction_only: 500
+```
+
+## When to refuse or refer
+
+- Do not assume the smallest multiplier when turnover or withholder classification is unknown.
+- Remission requests go to the ATO in writing; this skill does not lodge them.
+- Do not apply A$364 to periods before 1 July 2026.
+
+## Sources
+
+Read on dates are Ryan Duguid's reads of each page when he wrote this skill (October 2026). Each label is the reference tag used in the text above.
+
+| Source | URL | Read on |
+|---|---|---|
+| ADMIN. Read for: Sources and separate liabilities; Failure to lodge in the approved form; False statements, shortfalls and default assessments; Adjustment order and voluntary disclosure; Notice, remission and review; Provenance and remaining work | https://www.legislation.gov.au/C1953A00001/2026-08-27/2026-08-27/text/original/epub/OEBPS/document_2/document_2.html | 2026-10-18 |
+| WITHHOLDING. Read for: Failure to lodge in the approved form; Provenance and remaining work | https://www.legislation.gov.au/C1953A00001/2026-08-27/2026-08-27/text/original/epub/OEBPS/document_1/document_1.html | 2026-10-18 |
+| ADMIN-RECORD. Read for: Sources and separate liabilities; Provenance and remaining work | https://www.legislation.gov.au/C1953A00001/latest/details | 2026-10-18 |
+| ADMIN-VERSIONS. Read for: Sources and separate liabilities; Provenance and remaining work | https://www.legislation.gov.au/C1953A00001/latest/versions | 2026-10-18 |
+| REFORM2. Read for: Sources and separate liabilities; Provenance and remaining work | https://www.legislation.gov.au/C2026A00071/asmade/2026-08-26/text/original/epub/OEBPS/document_1/document_1.html | 2026-10-18 |
+| OCTOBER. Read for: Sources and separate liabilities; Provenance and remaining work | https://www.legislation.gov.au/C2026A00086/asmade/2026-09-15/text/original/epub/OEBPS/document_1/document_1.html | 2026-10-18 |
+| CRIMES. Read for: Failure to lodge in the approved form; Provenance and remaining work | https://www.legislation.gov.au/C1914A00012/2026-08-27/2026-08-27/text/original/epub/OEBPS/document_1/document_1.html | 2026-10-18 |
+| CRIMES-RECORD. Read for: Failure to lodge in the approved form; Provenance and remaining work | https://www.legislation.gov.au/C1914A00012/latest/details | 2026-10-18 |
+| UNIT. Read for: Failure to lodge in the approved form; Provenance and remaining work | https://www.legislation.gov.au/F2026N00424/asmade/2026-06-16/text/original/epub/OEBPS/document_1/document_1.html | 2026-10-18 |
+| REMEDIAL. Read for: Notice, remission and review; Provenance and remaining work | https://www.legislation.gov.au/F2023L00956/asmade/2023-07-04/text/original/epub/OEBPS/document_1/document_1.html | 2026-10-18 |
+| ATO-FTL. Read for: Notice, remission and review; Provenance and remaining work | https://www.ato.gov.au/individuals-and-families/paying-the-ato/interest-and-penalties/penalties/failure-to-lodge-on-time-penalty | 2026-10-18 |
+| PS-FTL. Read for: Failure to lodge in the approved form; Notice, remission and review; Provenance and remaining work | https://www.ato.gov.au/law/view/print?DocID=PSR%2FPS201119%2FNAT%2FATO%2F00001 | 2026-10-18 |
+| ATO-STATEMENTS. Read for: False statements, shortfalls and default assessments; Provenance and remaining work | https://www.ato.gov.au/individuals-and-families/paying-the-ato/interest-and-penalties/penalties/penalties-for-making-false-or-misleading-statements | 2026-10-18 |
+| PS-STATEMENTS. Read for: Adjustment order and voluntary disclosure; Provenance and remaining work | https://www.ato.gov.au/law/view/print?DocID=PSR%2FPS20125%2FNAT%2FATO%2F00001 | 2026-10-18 |
+
+### Provenance and remaining work
 
 Checked **18 October 2026**: selected complete TAA sections **16-95 to
 16-115, 284-15 to 284-35, 284-75 to 284-90, 284-220 to 284-225,
@@ -337,6 +413,8 @@ No real tax result, lodged document, payment, professional sign-off or
 comprehensive-country acceptance is claimed. This reference remains
 Tier 2 pending professional review.
 
+Not yet confirmed: ato.gov.au and the Norfolk Island Regional Council site (nirc.gov.au) refused scripted access on 14 November 2026, so their pages were not re-read for this import; figures taken from them rest on Ryan Duguid's October 2026 read.
+
 [ADMIN]: https://www.legislation.gov.au/C1953A00001/2026-08-27/2026-08-27/text/original/epub/OEBPS/document_2/document_2.html
 [WITHHOLDING]: https://www.legislation.gov.au/C1953A00001/2026-08-27/2026-08-27/text/original/epub/OEBPS/document_1/document_1.html
 [ADMIN-RECORD]: https://www.legislation.gov.au/C1953A00001/latest/details
@@ -351,23 +429,3 @@ Tier 2 pending professional review.
 [PS-FTL]: https://www.ato.gov.au/law/view/print?DocID=PSR%2FPS201119%2FNAT%2FATO%2F00001
 [ATO-STATEMENTS]: https://www.ato.gov.au/individuals-and-families/paying-the-ato/interest-and-penalties/penalties/penalties-for-making-false-or-misleading-statements
 [PS-STATEMENTS]: https://www.ato.gov.au/law/view/print?DocID=PSR%2FPS20125%2FNAT%2FATO%2F00001
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained in the
-[ryanduguid/openaccountants fork](https://github.com/ryanduguid/openaccountants).
-Check its quality tier, recorded review status and cited sources before use.
-Choose a practitioner whose credentials and engagement scope you have verified.
-The links below are optional upstream services; they do not publish or verify
-this fork's changes.
-
-- Upstream connection service: https://www.openaccountants.com/connect
-- Upstream accountant network: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

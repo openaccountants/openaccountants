@@ -17,9 +17,9 @@ category: international
 tax_year: 2026
 tax_year_notes: "Current sources checked 18 October 2026; new Biosecurity Regulations and consequential amendments commence 1 October 2026"
 tier: 2
-last_updated: 2026-10-18
+type: situation-rules
+last_updated: 2026-11-14
 version: 0.1
-review_status: pending_review
 depends_on:
   - workflow-base
   - vat-workflow-base
@@ -27,7 +27,11 @@ depends_on:
   - nf-gst
 ---
 
-# Norfolk Island: imports, customs entry and biosecurity costs
+# Norfolk Island: imports, customs entry and biosecurity costs v0.1
+
+> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
+
+## Scope
 
 Establish each movement's origin, destination, transport, first arrival,
 goods, value, consignor/consignee, purpose and event date. A mainland sale
@@ -43,7 +47,23 @@ mandatory facts remain Needs Input and unresolved rules remain held.
 Nothing here authorises payment, lodging a declaration or collecting
 personal identifiers, bank details or real client records.
 
-## Ordinary customs duty and the law that still applies
+## Ask the client first
+
+- Direction of movement: into Norfolk Island from the mainland or overseas, or from Norfolk into the mainland.
+- Postal or non-postal, and the statutory value of the whole consignment.
+- Ship or aircraft, the first estimated arrival time and, for sea, the voyage length.
+- What the goods are, and any permit or biosecurity condition that attaches to them.
+
+## The method, step by step
+
+### Key figures
+
+| Item | Figure | Applies to | Source |
+|---|---|---|---|
+| Low-value entry exception, non-postal goods | Value not exceeding A$1,000 | One person's consignment to another on one ship or aircraft, not prescribed goods | [CREG](https://www.legislation.gov.au/F2015L00375/2026-07-01/text) |
+| Low-value entry exception, postal goods | Value not exceeding A$1,000 | Consignment through the Post Office, not prescribed goods | [CUSTOMS](https://www.legislation.gov.au/C1901A00006/2026-09-29/text) |
+
+### Ordinary customs duty and the law that still applies
 
 Customs Tariff Act 1995 section 3A excludes Norfolk Island. Section 7 of
 the Customs (Norfolk Island) Ordinance 2016 applies the Customs Act 1901,
@@ -78,7 +98,7 @@ rules for that return leg. This guide does not select a preference or
 clearance merely because the goods were bought or stored on Norfolk.
 [ABF]; [DAFF]
 
-## Entry thresholds are conditional procedural rules
+### Entry thresholds are conditional procedural rules
 
 As applied, Customs Act section 68 distinguishes goods needing an entry
 for home consumption or, where permitted, warehousing from specified
@@ -118,7 +138,7 @@ entry or select a current amount. Check the applied laws, charge law,
 exemption instrument, current Norfolk forms and authority instructions
 before quoting a processing cost or preparing an entry. [CUSTOMS]; [ORD]
 
-## Biosecurity applies, including movements from the mainland
+### Biosecurity applies, including movements from the mainland
 
 Biosecurity Act 2015 section 7(2), together with Biosecurity Regulations
 2026 section 4, extends the Act, other than its separately extended ballast
@@ -135,7 +155,7 @@ outside Australian territory and another part of Australian territory.
 Mainland origin, a customs-entry exception and a duty exclusion each
 leave the separate biosecurity question open. [DAFF]; [GOODS]; [AMEND]
 
-### Advance notice of goods
+#### Advance notice of goods
 
 Act section 120 requires a notice for the covered unloading of goods,
 subject to statutory and prescribed exceptions. Regulation 13 supplies the
@@ -186,7 +206,7 @@ consignment is not automatically within the postal exception. Do not infer
 that all baggage is exempt or that a notice exception removes goods
 conditions or reportable-incident requirements. [BREG, section 14][BREG]
 
-### Goods conditions and permits
+#### Goods conditions and permits
 
 Act sections 173 and 174 distinguish prohibited goods from conditionally
 non-prohibited goods. Sections 176 and 177 provide the relevant permit
@@ -222,7 +242,7 @@ must be granted before the goods leave the mainland. Obtain the full
 applicable conditions before dispatch; this reference makes no actual
 permit application or release decision. [DAFF]
 
-## Separate biosecurity tax charges, fees and other costs
+### Separate biosecurity tax charges, fees and other costs
 
 The Customs and General Biosecurity Charges Imposition Regulations 2016
 remain separate instruments, each at the **1 October 2026** compilation.
@@ -258,7 +278,9 @@ charges already due and payable before commencement and addresses old
 charges becoming payable afterwards. Do not erase an historical debt by
 applying a new instrument without its transition. [BREG]; [ABF]
 
-## Fictional cases and checks
+## Worked cases
+
+### Fictional cases and checks
 
 These are component and routing checks, not actual clearance results.
 All times below use the same stipulated time zone and all low-value cases
@@ -283,7 +305,62 @@ short-voyage boundary; current goods definitions, mixed components and
 permits; separate tax-charge/fee exemptions; and historical debts.
 An unknown goods condition or form is a hold, not a default clearance.
 
-## Sources and remaining coverage
+### Recomputed checks
+
+```oa-check
+name: Two invoices forming one consignment
+inputs:
+  invoice_1: 600
+  invoice_2: 450
+  threshold: 1000
+steps:
+  - consignment: invoice_1 + invoice_2
+  - over_threshold: consignment - threshold
+expected:
+  consignment: 1050
+  over_threshold: 50
+```
+
+```oa-check
+name: Sea arrival 12:00 on 20 October; notice lead time by voyage length
+inputs:
+  arrival_hour: 468
+steps:
+  - long_voyage_due_hour: arrival_hour - 60
+  - short_voyage_due_hour: arrival_hour - 24
+expected:
+  long_voyage_due_hour: 408
+  short_voyage_due_hour: 444
+```
+
+## When to refuse or refer
+
+- Do not lodge a customs entry or biosecurity notice; this skill gives the thresholds and clocks only.
+- Refer to the biosecurity authority for permits; the absence of a fee is not a permit.
+- Do not split a single statutory consignment into invoices to stay under A$1,000.
+
+## Sources
+
+Read on dates are Ryan Duguid's reads of each page when he wrote this skill (October 2026). Each label is the reference tag used in the text above.
+
+| Source | URL | Read on |
+|---|---|---|
+| TARIFF. Read for: Ordinary customs duty and the law that still applies; Sources and remaining coverage | https://www.legislation.gov.au/C2004A04997/2026-07-04/text | 2026-10-18 |
+| ORD. Read for: Ordinary customs duty and the law that still applies; Entry thresholds are conditional procedural rules; Sources and remaining coverage | https://www.legislation.gov.au/F2016L00736/asmade | 2026-10-18 |
+| CUSTOMS. Read for: Ordinary customs duty and the law that still applies; Entry thresholds are conditional procedural rules; Sources and remaining coverage | https://www.legislation.gov.au/C1901A00006/2026-09-29/text | 2026-10-18 |
+| CREG. Read for: Ordinary customs duty and the law that still applies; Entry thresholds are conditional procedural rules; Sources and remaining coverage; Key figures | https://www.legislation.gov.au/F2015L00375/2026-07-01/text | 2026-10-18 |
+| ABF. Read for: Ordinary customs duty and the law that still applies; Separate biosecurity tax charges, fees and other costs; Sources and remaining coverage | https://www.abf.gov.au/help-and-support-subsite/CustomsNotices/2026-11.pdf | 2026-10-18 |
+| BIO. Read for: Biosecurity applies, including movements from the mainland; Sources and remaining coverage | https://www.legislation.gov.au/C2015A00061/2026-09-16/text | 2026-10-18 |
+| BREG. Read for: Biosecurity applies, including movements from the mainland; Separate biosecurity tax charges, fees and other costs; Sources and remaining coverage | https://www.legislation.gov.au/F2026L01194/asmade | 2026-10-18 |
+| REMAKE. Read for: Biosecurity applies, including movements from the mainland; Sources and remaining coverage | https://www.legislation.gov.au/F2026L01195/asmade | 2026-10-18 |
+| BC. Read for: Separate biosecurity tax charges, fees and other costs; Sources and remaining coverage | https://www.legislation.gov.au/F2016L00723/2026-10-01/text | 2026-10-18 |
+| BG. Read for: Separate biosecurity tax charges, fees and other costs; Sources and remaining coverage | https://www.legislation.gov.au/F2016L00727/2026-10-01/text | 2026-10-18 |
+| GOODS. Read for: Biosecurity applies, including movements from the mainland; Sources and remaining coverage | https://www.legislation.gov.au/F2016L01061/2019-09-25/text | 2026-10-18 |
+| AMEND. Read for: Biosecurity applies, including movements from the mainland; Sources and remaining coverage | https://www.legislation.gov.au/F2026L01292/asmade | 2026-10-18 |
+| GOODS-RECORD. Read for: Biosecurity applies, including movements from the mainland; Sources and remaining coverage | https://www.legislation.gov.au/F2016L01061/latest/details | 2026-10-18 |
+| DAFF. Read for: Ordinary customs duty and the law that still applies; Biosecurity applies, including movements from the mainland; Sources and remaining coverage | https://www.agriculture.gov.au/import/goods/external-territories | 2026-10-18 |
+
+### Sources and remaining coverage
 
 Checked on **18 October 2026**: selected current Tariff Act section 3A;
 Customs Act sections 6, 68 and 71A–71BA; the full Norfolk Ordinance and
@@ -303,6 +380,8 @@ cross-border, property, compliance and special-regime gaps remain open.
 No practitioner sign-off, model engagement benchmark, complete-domain
 output or comprehensive-country acceptance is claimed.
 
+Not yet confirmed: ato.gov.au and the Norfolk Island Regional Council site (nirc.gov.au) refused scripted access on 14 November 2026, so their pages were not re-read for this import; figures taken from them rest on Ryan Duguid's October 2026 read. Hours in the second check count from 00:00 on 1 October 2026 (hour 468 is 12:00 on 20 October; 408 is 00:00 on 18 October; 444 is 12:00 on 19 October), as derived from Ryan's examples. ABF and DAFF pages were not re-read for this import.
+
 [TARIFF]: https://www.legislation.gov.au/C2004A04997/2026-07-04/text
 [ORD]: https://www.legislation.gov.au/F2016L00736/asmade
 [CUSTOMS]: https://www.legislation.gov.au/C1901A00006/2026-09-29/text
@@ -317,23 +396,3 @@ output or comprehensive-country acceptance is claimed.
 [AMEND]: https://www.legislation.gov.au/F2026L01292/asmade
 [GOODS-RECORD]: https://www.legislation.gov.au/F2016L01061/latest/details
 [DAFF]: https://www.agriculture.gov.au/import/goods/external-territories
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained in the
-[ryanduguid/openaccountants fork](https://github.com/ryanduguid/openaccountants).
-Check its quality tier, recorded review status and cited sources before use.
-Choose a practitioner whose credentials and engagement scope you have verified.
-The links below are optional upstream services; they do not publish or verify
-this fork's changes.
-
-- Upstream connection service: https://www.openaccountants.com/connect
-- Upstream accountant network: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

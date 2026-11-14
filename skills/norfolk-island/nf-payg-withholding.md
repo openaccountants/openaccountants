@@ -17,15 +17,19 @@ category: payroll
 tax_year: 2026
 tax_year_notes: "Selected PAYG instrument applies from 1 July 2026; reporting and payment periods must be established separately; checked 17 October 2026"
 tier: 2
-last_updated: 2026-10-17
+type: computation
+last_updated: 2026-11-14
 version: 0.2
-review_status: pending_review
 depends_on:
   - workflow-base
   - payroll-workflow-base
 ---
 
-# Norfolk Island: PAYG withholding and payroll reporting
+# Norfolk Island: PAYG withholding and payroll reporting v0.2
+
+> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
+
+## Scope
 
 Use `nf-tax-system` to establish Australian tax application and territorial
 exceptions. Norfolk income-tax inclusion does not mean that every
@@ -45,7 +49,25 @@ capabilities prevent a deliverable financial result. Unknown required
 facts remain Needs Input; unresolved law remains on hold. No missing-fact
 default is authorised here.
 
-## Classify the payment before choosing a rate
+Norfolk Island is an Australian external territory and, since 1 July 2016, Australian federal tax law applies there with the Norfolk modifications set out below. For the mainland method and figures this skill shares with Australia, load [`australia-payroll`](../australia/australia-payroll.md), [`au-rates-2026-27`](../australia/au-rates-2026-27.md); where a figure here and in that skill differ, check the official source both cite.
+
+## Ask the client first
+
+- Is the payment to an employee, a contractor, or another payee category?
+- Has the payee given a TFN declaration, claimed the tax-free threshold, and are they an Australian or foreign resident?
+- Pay period (weekly, fortnightly, monthly, quarterly) and gross earnings.
+- Any withholding declaration claiming offsets.
+- The employer's withholder size and Single Touch Payroll status.
+
+## The method, step by step
+
+### Key figures
+
+| Item | Figure | Applies to | Source |
+|---|---|---|---|
+| No-TFN withholding rate | 47% for residents; 45% for foreign residents | Payees who have not quoted a TFN, earnings of A$1 or more, cents ignored | [WITHHOLD](https://www.legislation.gov.au/F2026L00716/asmade/2026-06-12/text/original/epub/OEBPS/document_1/document_1.html) |
+
+### Classify the payment before choosing a rate
 
 Schedule 1 section 12-35 requires withholding from salary, wages,
 commissions, bonuses and allowances paid to an individual as an employee,
@@ -65,7 +87,7 @@ supplier no-ABN withholding; do not deduct both. Alienated personal
 services and noncash benefits have separate Divisions 13 and 14. Their
 actual computations remain held. [TAA, sections 12-1 to 12-10][TAA]
 
-### Supplier ABN exception is not an employee exception
+#### Supplier ABN exception is not an employee exception
 
 Section 12-190(1) concerns a supply in an enterprise carried on in Australia
 by the supplier. Subsection (4)(a) separately excludes payments outside an
@@ -86,7 +108,7 @@ the current regulations and all applicable exceptions first. The ATO's
 Norfolk supplier guidance does not remove employee TFN or PAYG duties.
 [TAA]; [WORKERS]
 
-## Registration and declarations
+### Registration and declarations
 
 Section 16-140 requires a qualifying withholder to apply in the approved
 form by the first day it must withhold or make the specified payment to
@@ -125,7 +147,7 @@ study-loan withholding under this no-TFN branch. It is different from
 supplier no-ABN withholding. [WITHHOLD, Schedule 1 Scale 4 and Payee
 declarations][WITHHOLD]
 
-## Ordinary recurring pay from 1 July 2026
+### Ordinary recurring pay from 1 July 2026
 
 The 2026 instrument commenced on **1 July 2026**, repealing the previous
 2025 instrument. Its June registration date is not the pay-date start.
@@ -141,7 +163,7 @@ annual marginal tax brackets. Scales 1 and 2 already incorporate Medicare;
 do not deduct an annual Medicare calculation again. These scales require
 a provided TFN and established applicable declaration status. [WITHHOLD]
 
-### Scale 1: no tax-free threshold claimed
+#### Scale 1: no tax-free threshold claimed
 
 For weekly equivalent x, compute y = a × x − b using this table.
 [WITHHOLD, Schedule 1 Scale 1][WITHHOLD]
@@ -156,7 +178,7 @@ For weekly equivalent x, compute y = a × x − b using this table.
 | At least 2,246, below 3,303 | 0.3900 | 228.8816 |
 | At least 3,303 | 0.4700 | 493.1893 |
 
-### Scale 2: tax-free threshold claimed
+#### Scale 2: tax-free threshold claimed
 
 Use only when the threshold claim and other circumstances select this
 scale. Below the first endpoint, the withholding component is zero.
@@ -174,7 +196,7 @@ scale. Below the first endpoint, the withholding component is zero.
 | At least 2,596, below 3,653 | 0.3900 | 363.4627 |
 | At least 3,653 | 0.4700 | 655.7704 |
 
-### Scale 3: foreign resident with TFN
+#### Scale 3: foreign resident with TFN
 
 This scale does not establish residence or override a special-payment
 schedule. Foreign residents cannot claim offsets to reduce this withholding.
@@ -186,7 +208,7 @@ schedule. Foreign residents cannot claim offsets to reduce this withholding.
 | At least 2,596, below 3,653 | 0.3700 | 181.7308 |
 | At least 3,653 | 0.4500 | 474.0385 |
 
-### Period conversion and rounding
+#### Period conversion and rounding
 
 1. Establish earnings and allowances subject to withholding. Allowances
    need their own inclusion rules. Do not put every reimbursement or
@@ -228,7 +250,7 @@ apply the ordinary table indiscriminately. The instrument also warns that
 check its extra-pay guidance and any authorised arrangement before an
 uplift. [WITHHOLD, Schedule 1][WITHHOLD]
 
-## Paying withheld amounts to the ATO
+### Paying withheld amounts to the ATO
 
 Withheld amounts must be paid to the Commissioner. Confirm status for the
 actual month using sections 16-95 to 16-115, historical withholding,
@@ -274,7 +296,7 @@ actual calendar, notice and payment deferral before giving a dated filing
 calendar; do not assume a Norfolk-only holiday moves every ATO due date.
 [TAA]; [REPORT]
 
-## STP, finalisation and payments outside STP
+### STP, finalisation and payments outside STP
 
 The ordinary section 389-5 notification is due on or before the statutory
 withholding day, including nil withholding. Its current item 2 separately
@@ -318,7 +340,9 @@ statement, payment summaries and the PAYG liability without duplicating
 the charge. No correction, submission or actual remittance is authorised
 by this reference. [FINALISE]; [REPORT, sections 389-20 and 389-25][REPORT]
 
-## Fictional component examples and checks
+## Worked cases
+
+### Fictional component examples and checks
 
 Amounts are AUD. All examples stipulate ordinary recurring cash earnings,
 the stated valid declaration/status and no other adjustment unless shown.
@@ -346,7 +370,61 @@ finalisation; and separate employer liabilities. A correct withholding
 component does not establish lawful gross wages, cash net pay, employer
 cost or a balanced payroll journal without all remaining inputs and rules.
 
-## Sources and remaining coverage
+### Recomputed checks
+
+```oa-check
+name: No TFN, resident and foreign resident, weekly
+inputs:
+  resident_earnings: 1000.99
+  foreign_earnings: 1001.99
+steps:
+  - resident_withheld: floor(resident_earnings) * 0.47
+  - foreign_raw: floor(foreign_earnings) * 0.45
+  - foreign_withheld: floor(foreign_raw)
+expected:
+  resident_withheld: 470
+  foreign_raw: 450.45
+  foreign_withheld: 450
+```
+
+```oa-check
+name: Monthly and quarterly conversion of A$138 weekly withholding (Scale 2)
+inputs:
+  weekly: 138
+steps:
+  - monthly: round(weekly * 13 / 3, 0)
+  - quarterly: weekly * 13
+expected:
+  monthly: 598
+  quarterly: 1794
+```
+
+## When to refuse or refer
+
+- The supplier no-ABN exception does not remove employee withholding; reject that inference.
+- Do not finalise STP or lodge activity statements through this skill.
+- Refer working holiday makers, seasonal workers and termination payments to a registered tax agent.
+
+## Sources
+
+Read on dates are Ryan Duguid's reads of each page when he wrote this skill (October 2026). Each label is the reference tag used in the text above.
+
+| Source | URL | Read on |
+|---|---|---|
+| TAA. Read for: Classify the payment before choosing a rate; Registration and declarations; Paying withheld amounts to the Australian Taxation Office; STP, finalisation and payments outside STP; Sources and remaining coverage | https://www.legislation.gov.au/C1953A00001/2026-08-27/text | 2026-10-17 |
+| REPORT. Read for: Paying withheld amounts to the Australian Taxation Office; STP, finalisation and payments outside STP; Sources and remaining coverage | https://www.legislation.gov.au/C1953A00001/2026-08-27/2026-08-27/text/original/epub/OEBPS/document_3/document_3.html | 2026-10-17 |
+| TAA-LATEST. Read for: Sources and remaining coverage | https://www.legislation.gov.au/C1953A00001/latest/details | 2026-10-17 |
+| WITHHOLD. Read for: Registration and declarations; Ordinary recurring pay from 1 July 2026; Sources and remaining coverage | https://www.legislation.gov.au/F2026L00716/asmade/2026-06-12/text/original/epub/OEBPS/document_1/document_1.html | 2026-10-17 |
+| WITHHOLD-LATEST. Read for: Sources and remaining coverage | https://www.legislation.gov.au/F2026L00716/latest/details | 2026-10-17 |
+| DICT. Read for: Paying withheld amounts to the Australian Taxation Office; Sources and remaining coverage | https://www.legislation.gov.au/C2004A05138/2026-08-27/2026-08-27/text/original/epub/OEBPS/document_10/document_10.html | 2026-10-17 |
+| GST. Read for: Classify the payment before choosing a rate; Sources and remaining coverage | https://www.legislation.gov.au/C2004A00446/2026-01-01/text | 2026-10-17 |
+| WORKERS. Read for: Classify the payment before choosing a rate; STP, finalisation and payments outside STP; Sources and remaining coverage | https://www.ato.gov.au/norfolk-island/tax-for-businesses/paying-your-workers | 2026-10-17 |
+| REMIT. Read for: Paying withheld amounts to the Australian Taxation Office; Sources and remaining coverage | https://www.ato.gov.au/businesses-and-organisations/hiring-and-paying-your-workers/payg-withholding/paying-and-reporting-withheld-amounts/paying-and-reporting-payg-withholding-amounts-for-small-and-medium-withholders | 2026-10-17 |
+| FINALISE. Read for: STP, finalisation and payments outside STP; Sources and remaining coverage | https://www.ato.gov.au/finalisingSTP | 2026-10-17 |
+| SG. Read for: STP, finalisation and payments outside STP; Sources and remaining coverage | https://www.legislation.gov.au/C2004A04402/2026-07-01/text | 2026-10-17 |
+| REFORM2. Read for: Sources and remaining coverage | https://www.legislation.gov.au/C2026A00071/asmade | 2026-10-17 |
+
+### Sources and remaining coverage
 
 Checked on 17 October 2026. The Register identifies the TAA's latest
 available compilation as C2026C00393, effective 27 August to 30 September
@@ -365,6 +443,8 @@ state/local payroll charges and the full payroll country contract remain
 open. No blanket absence of another charge, professional sign-off, model
 engagement benchmark or comprehensive-country acceptance is claimed.
 
+Not yet confirmed: ato.gov.au and the Norfolk Island Regional Council site (nirc.gov.au) refused scripted access on 14 November 2026, so their pages were not re-read for this import; figures taken from them rest on Ryan Duguid's October 2026 read.
+
 [TAA]: https://www.legislation.gov.au/C1953A00001/2026-08-27/text
 [REPORT]: https://www.legislation.gov.au/C1953A00001/2026-08-27/2026-08-27/text/original/epub/OEBPS/document_3/document_3.html
 [TAA-LATEST]: https://www.legislation.gov.au/C1953A00001/latest/details
@@ -377,23 +457,3 @@ engagement benchmark or comprehensive-country acceptance is claimed.
 [FINALISE]: https://www.ato.gov.au/finalisingSTP
 [SG]: https://www.legislation.gov.au/C2004A04402/2026-07-01/text
 [REFORM2]: https://www.legislation.gov.au/C2026A00071/asmade
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained in the
-[ryanduguid/openaccountants fork](https://github.com/ryanduguid/openaccountants).
-Check its quality tier, recorded review status and cited sources before use.
-Choose a practitioner whose credentials and engagement scope you have verified.
-The links below are optional upstream services; they do not publish or verify
-this fork's changes.
-
-- Upstream connection service: https://www.openaccountants.com/connect
-- Upstream accountant network: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

@@ -18,9 +18,9 @@ category: international
 tax_year: 2026
 tax_year_notes: "2026 return means ordinary year ended 30 June 2026 or the approved substituted period; current procedural sources checked 18 October 2026; no 2027 return instrument or calendar is supplied"
 tier: 2
-last_updated: 2026-10-18
+type: filing-howto
+last_updated: 2026-11-14
 version: 0.1
-review_status: pending_review
 depends_on:
   - workflow-base
   - nf-tax-system
@@ -29,7 +29,11 @@ depends_on:
   - nf-foreign-income
 ---
 
-# Norfolk Island: annual income-tax returns and filing controls
+# Norfolk Island: annual income-tax returns and filing controls v0.1
+
+> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
+
+## Scope
 
 Establish the person or entity, capacity, residence history, income year,
 accounting period, activities, losses, withholding, instalments, child-support
@@ -45,7 +49,18 @@ return or substitute for those outputs. Mandatory unknown facts remain
 Needs Input; unresolved law remains held. The reviewer completes any
 authentication, declaration, submission and payment personally.
 
-## Period and current authority
+Norfolk Island is an Australian external territory and, since 1 July 2016, Australian federal tax law applies there with the Norfolk modifications set out below. For the mainland method and figures this skill shares with Australia, load [`au-individual-return`](../australia/au-individual-return.md), [`au-lodgment-deadlines-penalties`](../australia/au-lodgment-deadlines-penalties.md); where a figure here and in that skill differ, check the official source both cite.
+
+## Ask the client first
+
+- Which income year: the 2026 return is the year ended 30 June 2026 (the 2025-2026 filing cycle) unless a substituted period is approved.
+- Residence for the whole year or the months of residence.
+- Taxable income, business or loss activity, and any withholding or other trigger for a return.
+- Whether a registered tax agent lodges, and any deferral granted.
+
+## The method, step by step
+
+### Period and current authority
 
 The **2026 year** in the annual instruments ordinarily means the year ended
 **30 June 2026**, with a separate approved substituted-accounting-period
@@ -71,7 +86,7 @@ lodgment and a usual 31 October date. Apply the actual annual instrument
 and adjustments below rather than treating that summary as a universal
 deadline or exemption. [ATO-NORFOLK]
 
-## Determine whether a return is required
+### Determine whether a return is required
 
 Section 161 requires a return when the Commissioner's legislative instrument
 requires one. Sections **162 and 163** separately permit further, fuller or
@@ -103,7 +118,7 @@ summary table mentions low income. Preserve the main instrument's specific
 withholding exclusions rather than applying the ATO's broad non-lodgment
 summary to every foreign-resident payment. [RETURN]; [ATO-NONLODGE]
 
-### Child support is a separate test
+#### Child support is a separate test
 
 For **at least one day** in the 2026 year, being a liable parent or carer
 entitled to child support, other than a non-parent carer, triggers the
@@ -123,7 +138,7 @@ with the threshold does not establish this exception. An exception under
 this instrument does not cancel a separate main-instrument or notice
 requirement. [CHILD, section 5][CHILD]
 
-### Non-lodgment advice and other returns
+#### Non-lodgment advice and other returns
 
 The ATO's **31 August 2026** page explains non-lodgment advice after a
 person establishes that a return is unnecessary. Its online records may
@@ -145,7 +160,7 @@ not itself establish that obligations ended. Actual special-entity returns
 and their calendars require their own current sources. [ATO-NONLODGE];
 [RETURN, sections 6(11), 7(4), 9-17][RETURN]; [OCTOBER, Schedule 7][OCTOBER]
 
-## Establish the actual filing deadline
+### Establish the actual filing deadline
 
 | Selected 2026-return route | Ordinary instrument deadline before adjustments |
 |---|---|
@@ -185,7 +200,7 @@ entries; use their own notice and provisions. No 2027 annual-return date,
 current interest rate or dollar penalty is supplied by this reference.
 [FORMS]; [RETURN, section 4][RETURN]
 
-## Approved forms, declarations and preparation sequence
+### Approved forms, declarations and preparation sequence
 
 Section **388-50** requires the approved form, required signed declaration,
 required information and prescribed delivery method; its limited subsection
@@ -227,7 +242,9 @@ identified in nf-property-transfers and nf-foreign-income where applicable;
 this annual-filing reference does not supply a general dispute or penalty
 calculation. An inability to pay does not by itself remove filing.
 
-## Fictional boundary examples and self-checks
+## Worked cases
+
+### Fictional boundary examples and self-checks
 
 These stipulated components illustrate the selected rules. They are not
 actual tax returns, all-trigger assessments or child-support calculations.
@@ -253,7 +270,52 @@ requirements, taxpayer capacity, approved accounting period, business-day
 definition, actual agent date, declaration timing and payment separation.
 Never turn a missing statutory fact or confirmation into an assumed exemption.
 
-## Sources and limits
+### Recomputed checks
+
+```oa-check
+name: Part-year resident tax-free threshold, three resident months
+inputs:
+  months: 3
+steps:
+  - threshold: min(13464 + months * 395, 18200)
+expected:
+  threshold: 14649
+```
+
+## When to refuse or refer
+
+- Do not lodge a return or a non-lodgment advice through this skill.
+- Treat child support as a separate test; do not conclude no return is needed from taxable income alone.
+- Do not move a payment date because lodgment was deferred.
+
+## Sources
+
+Read on dates are Ryan Duguid's reads of each page when he wrote this skill (October 2026). Each label is the reference tag used in the text above.
+
+| Source | URL | Read on |
+|---|---|---|
+| RETURN. Read for: Period and current authority; Determine whether a return is required; Establish the actual filing deadline; Sources and limits | https://www.legislation.gov.au/F2026L00618/asmade/2026-05-22/text/original/epub/OEBPS/document_1/document_1.html | 2026-10-18 |
+| RETURN-RECORD. Read for: Period and current authority; Sources and limits | https://www.legislation.gov.au/F2026L00618/asmade/details | 2026-10-18 |
+| CHILD. Read for: Period and current authority; Determine whether a return is required; Establish the actual filing deadline; Sources and limits | https://www.legislation.gov.au/F2026L00619/asmade/2026-05-26/text/original/epub/OEBPS/document_1/document_1.html | 2026-10-18 |
+| CHILD-RECORD. Read for: Period and current authority; Sources and limits | https://www.legislation.gov.au/F2026L00619/asmade/details | 2026-10-18 |
+| ASSESS. Read for: Determine whether a return is required; Approved forms, declarations and preparation sequence; Sources and limits | https://www.legislation.gov.au/C1936A00027/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_3/document_3.html | 2026-10-18 |
+| ASSESS-RECORD. Read for: Period and current authority; Sources and limits | https://www.legislation.gov.au/C1936A00027/latest/details | 2026-10-18 |
+| ADMIN1. Read for: Establish the actual filing deadline; Sources and limits | https://www.legislation.gov.au/C1953A00001/2026-08-27/2026-08-27/text/original/epub/OEBPS/document_1/document_1.html | 2026-10-18 |
+| FORMS. Read for: Establish the actual filing deadline; Approved forms, declarations and preparation sequence; Sources and limits | https://www.legislation.gov.au/C1953A00001/2026-08-27/2026-08-27/text/original/epub/OEBPS/document_3/document_3.html | 2026-10-18 |
+| ADMIN-RECORD. Read for: Period and current authority; Sources and limits | https://www.legislation.gov.au/C1953A00001/latest/details | 2026-10-18 |
+| ADMIN-VERSIONS. Read for: Period and current authority; Sources and limits | https://www.legislation.gov.au/C1953A00001/latest/versions | 2026-10-18 |
+| DICT. Read for: Establish the actual filing deadline; Sources and limits | https://www.legislation.gov.au/C2004A05138/2026-08-27/2026-08-27/text/original/epub/OEBPS/document_10/document_10.html | 2026-10-18 |
+| DICT-RECORD. Read for: Period and current authority; Sources and limits | https://www.legislation.gov.au/C2004A05138/latest/details | 2026-10-18 |
+| DICT-VERSIONS. Read for: Period and current authority; Sources and limits | https://www.legislation.gov.au/C2004A05138/latest/versions | 2026-10-18 |
+| REFORM2. Read for: Period and current authority; Sources and limits | https://www.legislation.gov.au/C2026A00071/asmade/2026-08-26/text/original/epub/OEBPS/document_1/document_1.html | 2026-10-18 |
+| OCTOBER. Read for: Period and current authority; Determine whether a return is required; Sources and limits | https://www.legislation.gov.au/C2026A00086/asmade/2026-09-15/text/original/epub/OEBPS/document_1/document_1.html | 2026-10-18 |
+| ATO-PREPARE. Read for: Establish the actual filing deadline; Sources and limits | https://www.ato.gov.au/individuals-and-families/your-tax-return/before-you-prepare-your-tax-return/preparing-your-tax-return | 2026-10-18 |
+| ATO-AGENT. Read for: Establish the actual filing deadline; Sources and limits | https://www.ato.gov.au/individuals-and-families/your-tax-return/how-to-lodge-your-tax-return/lodge-your-tax-return-with-a-registered-tax-agent | 2026-10-18 |
+| ATO-NONLODGE. Read for: Determine whether a return is required; Sources and limits | https://www.ato.gov.au/individuals-and-families/your-tax-return/how-to-lodge-your-tax-return/lodge-a-non-lodgment-advice | 2026-10-18 |
+| ATO-NORFOLK. Read for: Period and current authority; Sources and limits | https://www.ato.gov.au/norfolk-island/norfolk-island-residents-and-individual-tax | 2026-10-18 |
+| HOLIDAYS. Read for: Establish the actual filing deadline; Sources and limits | https://www.fairwork.gov.au/employment-conditions/public-holidays/2026-public-holidays | 2026-10-18 |
+
+### Sources and limits
 
 Sources checked **18 October 2026**: both complete annual instruments and
 live records; selected 1936 Act sections 161-169A; TAA section 3AA and
@@ -270,6 +332,8 @@ interest and full recordkeeping retain their own source and fact gates.
 Technical checks and a merged PR do not confer practitioner sign-off or
 comprehensive compliance/country acceptance. This guide remains Tier 2
 pending professional review.
+
+Not yet confirmed: ato.gov.au and the Norfolk Island Regional Council site (nirc.gov.au) refused scripted access on 14 November 2026, so their pages were not re-read for this import; figures taken from them rest on Ryan Duguid's October 2026 read. This skill concerns the 2025-2026 filing cycle (the return for the year ended 30 June 2026); no 2027 lodgment instrument was published when Ryan read the sources.
 
 [RETURN]: https://www.legislation.gov.au/F2026L00618/asmade/2026-05-22/text/original/epub/OEBPS/document_1/document_1.html
 [RETURN-RECORD]: https://www.legislation.gov.au/F2026L00618/asmade/details
@@ -291,19 +355,3 @@ pending professional review.
 [ATO-NONLODGE]: https://www.ato.gov.au/individuals-and-families/your-tax-return/how-to-lodge-your-tax-return/lodge-a-non-lodgment-advice
 [ATO-NORFOLK]: https://www.ato.gov.au/norfolk-island/norfolk-island-residents-and-individual-tax
 [HOLIDAYS]: https://www.fairwork.gov.au/employment-conditions/public-holidays/2026-public-holidays
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained in the
-[ryanduguid/openaccountants fork](https://github.com/ryanduguid/openaccountants).
-Check its quality tier, recorded review status and cited sources before use.
-Choose a practitioner whose credentials and engagement scope you have verified.
-The links below are optional upstream services; they do not publish or verify
-this fork's changes.
-
-- Upstream connection service: https://www.openaccountants.com/connect
-- Upstream accountant network: https://www.openaccountants.com/network

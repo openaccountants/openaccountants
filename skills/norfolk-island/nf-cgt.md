@@ -17,9 +17,9 @@ category: international
 tax_year: 2026
 tax_year_notes: "Ordinary 1 July 2026 to 30 June 2027 income year; sources checked 18 October 2026; foreign-resident amendments apply by their October 2026 event and assessment rules; 2027 reforms identified separately"
 tier: 2
-last_updated: 2026-10-18
+type: computation
+last_updated: 2026-11-14
 version: 0.1
-review_status: pending_review
 depends_on:
   - workflow-base
   - nf-tax-system
@@ -27,7 +27,11 @@ depends_on:
   - nf-company-tax
 ---
 
-# Norfolk Island: capital gains, losses and foreign-resident property
+# Norfolk Island: capital gains, losses and foreign-resident property v0.1
+
+> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
+
+## Scope
 
 Establish the entity, residence history, asset and ownership interest,
 acquisition and event dates, income year, proceeds, valuation, cost and
@@ -43,7 +47,27 @@ Mandatory facts remain Needs Input and unresolved law remains held. The
 figures below are selected components, not an actual return, conveyance or
 complete capital, property or country pack.
 
-## Establish the territory, period and applicable text
+Norfolk Island is an Australian external territory and, since 1 July 2016, Australian federal tax law applies there with the Norfolk modifications set out below. For the mainland method and figures this skill shares with Australia, load [`au-capital-gains`](../australia/au-capital-gains.md), [`au-nonresident-cgt`](../australia/au-nonresident-cgt.md); where a figure here and in that skill differ, check the official source both cite.
+
+## Ask the client first
+
+- Who disposed of the asset (individual, company, trust, super fund) and their residence for the 2026-27 income year.
+- When and how the asset was acquired, in particular whether it was acquired before or after 23 October 2015 by a Norfolk resident.
+- The CGT event, its date, the capital proceeds and each cost base element.
+- Current-year and carried-forward capital losses.
+- For a foreign resident, whether the asset is taxable Australian property, including the October 2026 overlay facts.
+
+## The method, step by step
+
+### Key figures
+
+| Item | Figure | Applies to | Source |
+|---|---|---|---|
+| Norfolk pre-cutoff acquisition date | Acquired on or before 23 October 2015 (24 October 2015 fails) | Assets meeting all four ITAA 1997 s 102-25(2) conditions | [TRANS](https://www.ato.gov.au/law/view/print?DocID=PAC%2F19970040%2F102-25) |
+| CGT discount, individual | 50%, subject to the section 115-100 conditions | Eligible resident individuals, 2026-27 | [CGT](https://www.legislation.gov.au/C2004A05138/2026-08-27/2026-08-27/text/original/epub/OEBPS/document_3/document_3.html) |
+| CGT discount, company | Nil | Companies | [CGT](https://www.legislation.gov.au/C2004A05138/2026-08-27/2026-08-27/text/original/epub/OEBPS/document_3/document_3.html) |
+
+### Establish the territory, period and applicable text
 
 Income Tax Assessment Act section 960-505 expressly includes **Norfolk
 Island** in Australia when the term is used geographically. The ATO's
@@ -70,7 +94,7 @@ ordinary year, or project a current discount/exemption unchanged beyond its
 statutory boundary. Enacted 2027 indexation, minimum-tax and other changes
 require a separate computation. [REFORM1]; [REFORM2]
 
-## Preserve the Norfolk transition
+### Preserve the Norfolk transition
 
 Transitional Provisions Act section 102-25(2) requires **all four** conditions:
 
@@ -96,7 +120,7 @@ Subsection (4)'s election concerns **Cocos subsection (1)**, not an election
 to disapply the Norfolk rule. No universal market-value uplift or permanent
 exclusion from every later CGT provision is established here. [TRANS]
 
-## Identify the event and capital amount
+### Identify the event and capital amount
 
 A CGT asset can be property, a legal/equitable right, part of an asset,
 goodwill or a partnership interest. Identify capital versus revenue,
@@ -133,7 +157,7 @@ element. A gift is not automatically outside CGT, and a related-person
 land-transfer fee's valuation rule does not settle either CGT amount.
 Use `nf-property-transfers` for those separate fees and levies. [CGT]
 
-## Cost base and loss controls
+### Cost base and loss controls
 
 Section 110-25 has five cost-base elements, subject to adjustments:
 
@@ -171,7 +195,7 @@ residential-category priority to this ordinary year. Bankruptcy/debt-release,
 company/trust continuity and other special rules require separate analysis.
 [PREVIOUS]; [CGT]
 
-## Ordinary discount and asset-class relief
+### Ordinary discount and asset-class relief
 
 For a qualifying ordinary individual gain from an event **before 1 July
 2027**, the current section 115-100 branch specifies **50%**, subject to
@@ -206,7 +230,7 @@ structures are **not** personal-use assets under section 108-20(3); private
 use does not itself place a house within that threshold. Confirm actual
 asset classification and any special rule. [CGT]
 
-## Main residence: test the conditions separately
+### Main residence: test the conditions separately
 
 Section 118-110's basic case requires an individual and main-residence use
 throughout the ownership period, with separate deceased-estate and
@@ -236,7 +260,7 @@ with the Norfolk transition or a transfer-fee valuation without testing
 each rule. Full partial-exemption, deceased-estate and rollover calculations
 remain held for the actual facts. [CGT]
 
-## Foreign residents: apply the October 2026 overlay
+### Foreign residents: apply the October 2026 overlay
 
 Section 855-10 ordinarily disregards a foreign resident's gain **or loss**
 on a non-taxable-Australian-property asset, subject to the full rules.
@@ -282,7 +306,7 @@ timing includes distinct period-length branches. This reference does not
 select the withholding rate, form, actual notice deadline, declaration or
 remittance for a transaction. [OCTOBER, Schedule 2 items 22–37][OCTOBER]
 
-### Conditional renewable-energy concession
+#### Conditional renewable-energy concession
 
 Act 86 Schedule 3 inserts a separate transitional Division 855. For the
 specified foreign residents **other than individuals**, or trustees of
@@ -302,7 +326,9 @@ that numerical limb; it does not establish the whole concession. This is
 not an exemption for every energy business, every foreign individual or
 every company. [OCTOBER, Schedule 3][OCTOBER]
 
-## Fictional 2026–27 component checks
+## Worked cases
+
+### Fictional 2026–27 component checks
 
 Assume each stated classification and amount is established, no unmentioned
 exemption, rollover or adjustment applies, and the ordinary income year
@@ -351,7 +377,54 @@ the non-portfolio threshold is inclusive, the principal-asset comparison
 is strict, and the renewable comparison is inclusive. Keep their bases,
 classes and conditions separate.
 
-## Records, reconciliation and remaining work
+### Recomputed checks
+
+```oa-check
+name: Resident individual, ordinary shares, 2026-27 (example 1)
+inputs:
+  acquisition: 50000
+  acq_costs: 1000
+  disposal_costs: 1500
+  proceeds: 90000
+  current_losses: 5000
+  prior_losses: 2500
+steps:
+  - cost_base: acquisition + acq_costs + disposal_costs
+  - gain: proceeds - cost_base
+  - after_losses: gain - current_losses - prior_losses
+  - net_gain: after_losses * 0.5
+expected:
+  cost_base: 52500
+  gain: 37500
+  after_losses: 30000
+  net_gain: 15000
+```
+
+```oa-check
+name: Decision, which gain absorbs A$10,000 of losses (example 3)
+inputs:
+  non_discount: 20000
+  discount_gain: 40000
+  losses: 10000
+steps:
+  - losses_first_to_non_discount: (non_discount - losses) + discount_gain * 0.5
+  - losses_to_discount_gain: non_discount + (discount_gain - losses) * 0.5
+  - saving: losses_to_discount_gain - losses_first_to_non_discount
+expected:
+  losses_first_to_non_discount: 30000
+  losses_to_discount_gain: 35000
+  saving: 5000
+```
+
+## When to refuse or refer
+
+- Hold the Norfolk transition when historical prescribed status, the acquisition date or any of the four section 102-25(2) conditions is unknown.
+- Refer to a registered tax agent for rollovers, small business concessions, trusts and super funds; this skill does not cover them.
+- Do not present a net capital gain component as a tax bill; it goes into the income-tax working in `nf-income-tax` or `nf-company-tax`.
+
+## Completion checklist
+
+### Records, reconciliation and remaining work
 
 Sections 121-20 to 121-30 require records relevant to possible capital
 gains/losses, including dates, amounts, parties, valuations and cost-base
@@ -375,7 +448,23 @@ forms for actual acquisitions; full main-residence apportionment; enacted
 2027 computations and remaining country topics. Missing facts or sources
 remain held rather than being replaced with assumed exemptions or rates.
 
-## Primary sources and provenance
+## Sources
+
+Read on dates are Ryan Duguid's reads of each page when he wrote this skill (October 2026). Each label is the reference tag used in the text above.
+
+| Source | URL | Read on |
+|---|---|---|
+| NI. Read for: Establish the territory, period and applicable text; Primary sources and provenance | https://www.ato.gov.au/norfolk-island/norfolk-island-residents-and-individual-tax | 2026-10-18 |
+| TRANS. Read for: Preserve the Norfolk transition; Fictional 2026–27 component checks; Records, reconciliation and remaining work; Primary sources and provenance; Key figures | https://www.ato.gov.au/law/view/print?DocID=PAC%2F19970040%2F102-25 | 2026-10-18 |
+| CGT. Read for: Establish the territory, period and applicable text; Preserve the Norfolk transition; Identify the event and capital amount; Cost base and loss controls; Ordinary discount and asset-class relief; Main residence: test the conditions separately; Fictional 2026–27 component checks; Records, reconciliation and remaining work; Primary sources and provenance | https://www.legislation.gov.au/C2004A05138/2026-08-27/2026-08-27/text/original/epub/OEBPS/document_3/document_3.html | 2026-10-18 |
+| PREVIOUS. Read for: Establish the territory, period and applicable text; Cost base and loss controls; Fictional 2026–27 component checks; Primary sources and provenance | https://www.legislation.gov.au/C2004A05138/2026-05-21/2026-05-21/text/original/epub/OEBPS/document_3/document_3.html | 2026-10-18 |
+| FOREIGN. Read for: Establish the territory, period and applicable text; Foreign residents: apply the October 2026 overlay; Primary sources and provenance | https://www.legislation.gov.au/C2004A05138/2026-08-27/2026-08-27/text/original/epub/OEBPS/document_9/document_9.html | 2026-10-18 |
+| DICT. Read for: Establish the territory, period and applicable text; Foreign residents: apply the October 2026 overlay; Primary sources and provenance | https://www.legislation.gov.au/C2004A05138/2026-08-27/2026-08-27/text/original/epub/OEBPS/document_10/document_10.html | 2026-10-18 |
+| REFORM1. Read for: Establish the territory, period and applicable text; Cost base and loss controls; Primary sources and provenance | https://www.legislation.gov.au/C2026A00049/asmade | 2026-10-18 |
+| REFORM2. Read for: Establish the territory, period and applicable text; Primary sources and provenance | https://www.legislation.gov.au/C2026A00071/asmade | 2026-10-18 |
+| OCTOBER. Read for: Establish the territory, period and applicable text; Foreign residents: apply the October 2026 overlay; Fictional 2026–27 component checks; Primary sources and provenance | https://www.legislation.gov.au/C2026A00086/asmade | 2026-10-18 |
+
+### Primary sources and provenance
 
 Checked **18 October 2026**. This is a **Tier 2 source-cited draft awaiting
 professional review**. Current Register records and the unincorporated
@@ -391,6 +480,8 @@ examples were not represented as verified; complex formulas are not used
 in these fictional components. No actual client or ownership records were
 queried, and no return, declaration, registration or payment was submitted.
 
+Not yet confirmed: ato.gov.au and the Norfolk Island Regional Council site (nirc.gov.au) refused scripted access on 14 November 2026, so their pages were not re-read for this import; figures taken from them rest on Ryan Duguid's October 2026 read.
+
 [NI]: https://www.ato.gov.au/norfolk-island/norfolk-island-residents-and-individual-tax
 [TRANS]: https://www.ato.gov.au/law/view/print?DocID=PAC%2F19970040%2F102-25
 [CGT]: https://www.legislation.gov.au/C2004A05138/2026-08-27/2026-08-27/text/original/epub/OEBPS/document_3/document_3.html
@@ -400,23 +491,3 @@ queried, and no return, declaration, registration or payment was submitted.
 [REFORM1]: https://www.legislation.gov.au/C2026A00049/asmade
 [REFORM2]: https://www.legislation.gov.au/C2026A00071/asmade
 [OCTOBER]: https://www.legislation.gov.au/C2026A00086/asmade
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained in the
-[ryanduguid/openaccountants fork](https://github.com/ryanduguid/openaccountants).
-Check its quality tier, recorded review status and cited sources before use.
-Choose a practitioner whose credentials and engagement scope you have verified.
-The links below are optional upstream services; they do not publish or verify
-this fork's changes.
-
-- Upstream connection service: https://www.openaccountants.com/connect
-- Upstream accountant network: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

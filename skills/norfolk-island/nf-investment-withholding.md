@@ -18,9 +18,9 @@ category: international
 tax_year: 2026
 tax_year_notes: "Ordinary 1 July 2026 to 30 June 2027 financial year; sources checked 18 October 2026; payment and reporting periods must be established separately"
 tier: 2
-last_updated: 2026-10-18
+type: computation
+last_updated: 2026-11-14
 version: 0.1
-review_status: pending_review
 depends_on:
   - workflow-base
   - nf-tax-system
@@ -28,7 +28,11 @@ depends_on:
   - nf-company-tax
 ---
 
-# Norfolk Island: dividends, interest and royalty withholding
+# Norfolk Island: dividends, interest and royalty withholding v0.1
+
+> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
+
+## Scope
 
 Establish the payer, recipient and intermediary, residence and permanent
 establishments, payment character and source, gross amount, relevant
@@ -44,7 +48,16 @@ Mandatory facts remain Needs Input; unresolved rules remain held. These
 are selected components, not an actual withholding return, payment or
 complete cross-border or country pack.
 
-## Territory and source currency
+## Ask the client first
+
+- Is the recipient a foreign resident, and is that established (not inferred from an address or passport)?
+- Is the payment interest, an unfranked or franked dividend, or a royalty?
+- Whether any treaty rate is claimed, and on what evidence.
+- The payer's withholder size and the month of payment.
+
+## The method, step by step
+
+### Territory and source currency
 
 The 1936 Assessment Act adopts the 1997 Act's geographical meaning of
 Australia, which expressly includes **Norfolk Island**. Schedule 1 to the
@@ -74,7 +87,7 @@ Neither replaces the selected Subdivision 12-F and Division 16 wording
 used below. Use `nf-cgt` for selected capital-gains rules; actual capital
 gains withholding remains a separate analysis. [OCTOBER]; [REFORM2]
 
-## Classify the income and underlying liability first
+### Classify the income and underlying liability first
 
 Read payment substance rather than the invoice label:
 
@@ -113,7 +126,7 @@ are not established by a label or an ABN. In particular, the foreign-fund
 exception has additional participation, historical holding and influence
 conditions. Keep unverified eligibility held. [ASSESS3]; [TYPES]; [WHEN]
 
-## Identify who must withhold and when
+### Identify who must withhold and when
 
 Liability and the collection trigger are separate tests. Subject to section
 12-300's limits:
@@ -148,16 +161,16 @@ Do not offset an unrelated wage, GST, instalment or capital-gains amount.
 Absence of this withholding does not prove absence of assessment tax.
 [ADMIN]; [ASSESS3, sections 128B and 128D][ASSESS3]
 
-## Domestic amounts, relief and rounding
+### Domestic amounts, relief and rounding
 
 For a confirmed ordinary taxable payment with no applicable lower rate,
 exemption, variation or special branch:
 
-| Payment component | Domestic rate |
-|---|---:|
-| Taxable unfranked dividend | **30%** |
-| Interest | **10%** |
-| Royalty | **30%** |
+| Payment component | Domestic rate | Source |
+|---|---: |---|
+| Taxable unfranked dividend | **30%** | [ASSESS3](https://www.legislation.gov.au/C1936A00027/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_3/document_3.html) |
+| Interest | **10%** | [ASSESS3](https://www.legislation.gov.au/C1936A00027/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_3/document_3.html) |
+| Royalty | **30%** | [ASSESS3](https://www.legislation.gov.au/C1936A00027/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_3/document_3.html) |
 
 These rates follow Withholding Tax Act section 7 and the corresponding
 Administration Regulations sections 40–42; they are not a universal rate
@@ -187,7 +200,7 @@ section 12-300 cap; retain the difference between the original gross cash
 payment, the withholding working and net cash. Contractual gross-up,
 foreign currency and non-cash payments need further analysis. [REGS]
 
-## Registration, remittance and reports
+### Registration, remittance and reports
 
 An entity required to remit within section 16-140 must apply to register,
 in the approved form, by its first withholding/payment obligation unless
@@ -248,7 +261,9 @@ correct withholding has been made and there is no other assessable
 Australian income. Do not turn that into a universal no-return rule for
 every foreign recipient or additional income. [ASSESS3]; [OBLIGATIONS]
 
-## Fictional 2026–27 components and boundary checks
+## Worked cases
+
+### Fictional 2026–27 components and boundary checks
 
 All amounts below are Australian dollars. The examples stipulate ordinary
 taxable cash payments, no treaty relief or special exemption, correct
@@ -268,7 +283,42 @@ statements or actual tax liabilities.
 | Medium, non-deferred payer with a September 2026 withholding amount | Statutory monthly branch points to **21 October 2026**, subject to actual classification and calendar checks; the annual report date is separate. |
 | Only a Norfolk address, foreign passport or overseas payment account is known | Needs Input on actual tax residence and the relevant payer/recipient and transaction conditions. No automatic zero or 30% result. |
 
-## Review checks and remaining country requirements
+### Recomputed checks
+
+```oa-check
+name: Interest A$20,000 to a foreign resident
+inputs:
+  interest: 20000
+steps:
+  - withheld: interest * 0.10
+  - cash: interest - withheld
+expected:
+  withheld: 2000
+  cash: 18000
+```
+
+```oa-check
+name: Dividend A$10,000, A$4,000 unfranked
+inputs:
+  dividend: 10000
+  unfranked: 4000
+steps:
+  - withheld: unfranked * 0.30
+  - cash: dividend - withheld
+expected:
+  withheld: 1200
+  cash: 8800
+```
+
+## When to refuse or refer
+
+- Hold the treaty rate until residence and beneficial ownership are proved; see `nf-uk-treaty-relief` for the UK case.
+- Do not add a franking credit to the withholding base.
+- Do not lodge the annual report or remit amounts through this skill.
+
+## Completion checklist
+
+### Review checks and remaining country requirements
 
 Check liability before rate; payer versus recipient; ordinary versus
 constructive payment; franked versus taxable unfranked portions; treaty
@@ -288,6 +338,37 @@ Transfer pricing, CFC/hybrid rules, foreign credits, comprehensive company
 and individual returns and the other open country slots remain separate
 work. Neither these examples nor repository checks confer professional
 sign-off or comprehensive-country acceptance.
+
+## Sources
+
+Read on dates are Ryan Duguid's reads of each page when he wrote this skill (October 2026). Each label is the reference tag used in the text above.
+
+| Source | URL | Read on |
+|---|---|---|
+| ASSESS-RECORD. Read for: Territory and source currency; Review checks and remaining country requirements | https://www.legislation.gov.au/C1936A00027/latest/details | 2026-10-18 |
+| ASSESS1. Read for: Territory and source currency; Classify the income and underlying liability first; Identify who must withhold and when; Review checks and remaining country requirements | https://www.legislation.gov.au/C1936A00027/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_1/document_1.html | 2026-10-18 |
+| ASSESS3. Read for: Territory and source currency; Classify the income and underlying liability first; Identify who must withhold and when; Registration, remittance and reports; Review checks and remaining country requirements | https://www.legislation.gov.au/C1936A00027/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_3/document_3.html | 2026-10-18 |
+| DICT. Read for: Territory and source currency; Review checks and remaining country requirements | https://www.legislation.gov.au/C2004A05138/2026-08-27/2026-08-27/text/original/epub/OEBPS/document_10/document_10.html | 2026-10-18 |
+| CORE. Read for: Registration, remittance and reports; Review checks and remaining country requirements | https://www.legislation.gov.au/C2004A05138/2026-08-27/2026-08-27/text/original/epub/OEBPS/document_1/document_1.html | 2026-10-18 |
+| RATES-RECORD. Read for: Territory and source currency; Review checks and remaining country requirements | https://www.legislation.gov.au/C2004A00086/latest/details | 2026-10-18 |
+| RATES. Read for: Territory and source currency; Domestic amounts, relief and rounding; Review checks and remaining country requirements | https://www.legislation.gov.au/C2004A00086/2007-09-24/2007-09-24/text/original/epub/OEBPS/document_1/document_1.html | 2026-10-18 |
+| ADMIN-RECORD. Read for: Territory and source currency; Review checks and remaining country requirements | https://www.legislation.gov.au/C1953A00001/latest/details | 2026-10-18 |
+| ADMIN-VERSIONS. Read for: Territory and source currency; Review checks and remaining country requirements | https://www.legislation.gov.au/C1953A00001/latest/versions | 2026-10-18 |
+| ADMIN. Read for: Territory and source currency; Identify who must withhold and when; Domestic amounts, relief and rounding; Registration, remittance and reports; Review checks and remaining country requirements | https://www.legislation.gov.au/C1953A00001/2026-08-27/2026-08-27/text/original/epub/OEBPS/document_1/document_1.html | 2026-10-18 |
+| REFORM2. Read for: Territory and source currency; Review checks and remaining country requirements | https://www.legislation.gov.au/C2026A00071/asmade/2026-08-26/text/original/epub/OEBPS/document_1/document_1.html | 2026-10-18 |
+| OCTOBER. Read for: Territory and source currency; Review checks and remaining country requirements | https://www.legislation.gov.au/C2026A00086/asmade/2026-09-15/text/original/epub/OEBPS/document_1/document_1.html | 2026-10-18 |
+| REGS-RECORD. Read for: Territory and source currency; Review checks and remaining country requirements | https://www.legislation.gov.au/F2017L01227/latest/details | 2026-10-18 |
+| REGS. Read for: Territory and source currency; Domestic amounts, relief and rounding; Review checks and remaining country requirements | https://www.legislation.gov.au/F2017L01227/2026-08-27/2026-08-27/text/original/epub/OEBPS/document_1/document_1.html | 2026-10-18 |
+| AGREEMENTS-RECORD. Read for: Territory and source currency; Review checks and remaining country requirements | https://www.legislation.gov.au/C1953A00082/latest/details | 2026-10-18 |
+| AGREEMENTS. Read for: Territory and source currency; Classify the income and underlying liability first; Domestic amounts, relief and rounding; Review checks and remaining country requirements | https://www.legislation.gov.au/C1953A00082/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_1/document_1.html | 2026-10-18 |
+| TYPES. Read for: Classify the income and underlying liability first; Review checks and remaining country requirements | https://www.ato.gov.au/businesses-and-organisations/hiring-and-paying-your-workers/payg-withholding/payments-you-need-to-withhold-from/withholding-from-investment-income/investment-income-and-royalties-paid-to-foreign-residents/interest-dividends-royalties-and-mit-payments | 2026-10-18 |
+| WHO. Read for: Classify the income and underlying liability first; Review checks and remaining country requirements | https://www.ato.gov.au/businesses-and-organisations/hiring-and-paying-your-workers/payg-withholding/payments-you-need-to-withhold-from/withholding-from-investment-income/investment-income-and-royalties-paid-to-foreign-residents/who-withholds | 2026-10-18 |
+| WHEN. Read for: Classify the income and underlying liability first; Identify who must withhold and when; Review checks and remaining country requirements | https://www.ato.gov.au/businesses-and-organisations/hiring-and-paying-your-workers/payg-withholding/payments-you-need-to-withhold-from/withholding-from-investment-income/investment-income-and-royalties-paid-to-foreign-residents/when-to-withhold | 2026-10-18 |
+| ATO-RATES. Read for: Identify who must withhold and when; Domestic amounts, relief and rounding; Review checks and remaining country requirements | https://www.ato.gov.au/businesses-and-organisations/hiring-and-paying-your-workers/payg-withholding/payments-you-need-to-withhold-from/withholding-from-investment-income/investment-income-and-royalties-paid-to-foreign-residents/withholding-rate | 2026-10-18 |
+| OBLIGATIONS. Read for: Registration, remittance and reports; Review checks and remaining country requirements | https://www.ato.gov.au/businesses-and-organisations/hiring-and-paying-your-workers/payg-withholding/payments-you-need-to-withhold-from/withholding-from-investment-income/investment-income-and-royalties-paid-to-foreign-residents/obligations | 2026-10-18 |
+| ANNUAL. Read for: Territory and source currency; Registration, remittance and reports; Review checks and remaining country requirements | https://www.ato.gov.au/forms-and-instructions/payg-withholding-from-interest-dividend-and-royalty-payments-to-non-residents-annual-report | 2026-10-18 |
+
+Not yet confirmed: ato.gov.au and the Norfolk Island Regional Council site (nirc.gov.au) refused scripted access on 14 November 2026, so their pages were not re-read for this import; figures taken from them rest on Ryan Duguid's October 2026 read.
 
 [ASSESS-RECORD]: https://www.legislation.gov.au/C1936A00027/latest/details
 [ASSESS1]: https://www.legislation.gov.au/C1936A00027/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_1/document_1.html
@@ -311,19 +392,3 @@ sign-off or comprehensive-country acceptance.
 [ATO-RATES]: https://www.ato.gov.au/businesses-and-organisations/hiring-and-paying-your-workers/payg-withholding/payments-you-need-to-withhold-from/withholding-from-investment-income/investment-income-and-royalties-paid-to-foreign-residents/withholding-rate
 [OBLIGATIONS]: https://www.ato.gov.au/businesses-and-organisations/hiring-and-paying-your-workers/payg-withholding/payments-you-need-to-withhold-from/withholding-from-investment-income/investment-income-and-royalties-paid-to-foreign-residents/obligations
 [ANNUAL]: https://www.ato.gov.au/forms-and-instructions/payg-withholding-from-interest-dividend-and-royalty-payments-to-non-residents-annual-report
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained in the
-[ryanduguid/openaccountants fork](https://github.com/ryanduguid/openaccountants).
-Check its quality tier, recorded review status and cited sources before use.
-Choose a practitioner whose credentials and engagement scope you have verified.
-The links below are optional upstream services; they do not publish or verify
-this fork's changes.
-
-- Upstream connection service: https://www.openaccountants.com/connect
-- Upstream accountant network: https://www.openaccountants.com/network

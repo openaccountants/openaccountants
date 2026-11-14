@@ -17,16 +17,20 @@ category: formation
 tax_year: 2026
 tax_year_notes: "Sources checked 18 October 2026; ASIC fee table from 1 July 2026; size thresholds apply from financial year 2019-20; financial reporting and annual review periods are separate"
 tier: 2
-last_updated: 2026-10-18
+type: filing-howto
+last_updated: 2026-11-14
 version: 0.1
-review_status: pending_review
 depends_on:
   - workflow-base
   - company-formation-workflow-base
   - nf-tax-system
 ---
 
-# Norfolk Island: company registration, records and reporting
+# Norfolk Island: company registration, records and reporting v0.1
+
+> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
+
+## Scope
 
 Establish the entity, proposed activity, owners, funding, officers,
 location, registration history and relevant event/financial year. This
@@ -42,7 +46,18 @@ formation companion. Missing facts remain Needs Input and unresolved law
 remains held. A source reference is not permission to register a company,
 make payments or submit identity, tax or banking information.
 
-## Territorial application and the transferred-company branch
+Norfolk Island is an Australian external territory and, since 1 July 2016, Australian federal tax law applies there with the Norfolk modifications set out below. For the mainland method and figures this skill shares with Australia, load [`australia-formation`](../australia/australia-formation.md); where a figure here and in that skill differ, check the official source both cite.
+
+## Ask the client first
+
+- Is the company a new registration, a Norfolk company transferred into the Corporations Act, or an existing ASIC company?
+- Company type (proprietary or public), number of directors and where each ordinarily resides.
+- Consolidated revenue, gross assets and employee numbers, for the small or large proprietary test.
+- The annual review date and the date ASIC issued the annual statement.
+
+## The method, step by step
+
+### Territorial application and the transferred-company branch
 
 Corporations Act 2001 section 9 expressly includes **Norfolk Island** in
 the definition of Territory. Section 5 applies the Act in this jurisdiction,
@@ -75,7 +90,7 @@ preserves specified rules for particular corporations. A new company
 application and a transferred company's historical evidence require
 different checklists. [ACT6]
 
-## Company type, officers and the registration record
+### Company type, officers and the registration record
 
 Section 112 permits proprietary companies limited by shares or unlimited
 with share capital, and specified public-company and investment-vehicle
@@ -130,7 +145,7 @@ obligation. Actual identity applications stay with the authorised person;
 record readiness without collecting identifiers or identity documents.
 [ACT6]
 
-## Registered office, owners and change notifications
+### Registered office, owners and change notifications
 
 Section 142 requires a registered office in this jurisdiction. Where the
 company does not occupy it, retain the occupier's consent under sections
@@ -170,7 +185,7 @@ notice rules when relevant. This reference does not establish that all
 beneficial-ownership, tracing, foreign-investment or activity disclosures
 are absent, or that ASIC's member information replaces them.
 
-## Company size and financial records
+### Company size and financial records
 
 For **2019–20 and later financial years**, current Regulation 1.0.02B,
 with application provision 10.30.01, prescribes the section 45A amounts:
@@ -204,7 +219,7 @@ period of no more than **18 months**. Subsequent years, changes and group
 synchronisation have further conditions. Do not make the financial year,
 income-tax year and annual review date identical by default. [ACT2]
 
-## Financial reports, audits and delivery
+### Financial reports, audits and delivery
 
 Section 292 generally requires annual financial/directors' reports from
 public and large proprietary companies and the other specified entities.
@@ -251,7 +266,7 @@ standards, assurance and relief rules before an actual report. Complete
 financial-statement contents, accounting policies and audit engagement
 requirements also remain to be established. [ACT2]; [ACT6]
 
-## Annual company review and selected current fees
+### Annual company review and selected current fees
 
 Section 345A ordinarily uses the registration anniversary, with approved
 changes and other statutory branches. A would-be 29 February review date
@@ -308,7 +323,9 @@ registered-office, bank, licence, activity and other costs require their
 own evidence; an unknown cost is not zero. No total formation cost or
 processing-time promise is supplied here. [FEES]
 
-## Fictional component cases and self-checks
+## Worked cases
+
+### Fictional component cases and self-checks
 
 | Stipulated facts | Component result |
 |---|---|
@@ -329,7 +346,45 @@ conditions; financial versus review years; and each fee/deadline trigger.
 Hold missing mandatory facts or source conditions before producing any
 engagement outputs.
 
-## Sources and remaining coverage
+### Recomputed checks
+
+```oa-check
+name: New share-capital company with a name reservation (selected ASIC fees from 1 July 2026)
+inputs:
+  registration_fee: 636
+  name_reservation: 65
+  review_fee: 342
+  late_fee: 102
+steps:
+  - formation: registration_fee + name_reservation
+  - late_review: review_fee + late_fee
+expected:
+  formation: 701
+  late_review: 444
+```
+
+## When to refuse or refer
+
+- Do not lodge ASIC forms or pay fees through this skill; the officeholder or a registered agent lodges.
+- Refer to a registered company auditor or agent when a large proprietary company's financial report or audit is in question.
+- Hold the size classification as Needs Input when fewer than two of the three size limbs are known.
+
+## Sources
+
+Read on dates are Ryan Duguid's reads of each page when he wrote this skill (October 2026). Each label is the reference tag used in the text above.
+
+| Source | URL | Read on |
+|---|---|---|
+| ACT1. Read for: Territorial application and the transferred-company branch; Company type, officers and the registration record; Registered office, owners and change notifications; Company size and financial records; Financial reports, audits and delivery; Sources and remaining coverage | https://www.legislation.gov.au/C2004A00818/2026-09-19/text | 2026-10-18 |
+| ACT2. Read for: Company size and financial records; Financial reports, audits and delivery; Annual company review and selected current fees; Sources and remaining coverage | https://www.legislation.gov.au/C2004A00818/2026-09-19/2026-09-19/text/original/epub/OEBPS/document_2/document_2.html | 2026-10-18 |
+| ACT6. Read for: Territorial application and the transferred-company branch; Company type, officers and the registration record; Financial reports, audits and delivery; Sources and remaining coverage | https://www.legislation.gov.au/C2004A00818/2026-09-19/2026-09-19/text/original/epub/OEBPS/document_6/document_6.html | 2026-10-18 |
+| REG1. Read for: Company size and financial records; Sources and remaining coverage | https://www.legislation.gov.au/F2001B00274/2026-09-01/text | 2026-10-18 |
+| REG4. Read for: Company size and financial records; Sources and remaining coverage | https://www.legislation.gov.au/F2001B00274/2026-09-01/2026-09-01/text/original/epub/OEBPS/document_4/document_4.html | 2026-10-18 |
+| REFORM. Read for: Territorial application and the transferred-company branch; Sources and remaining coverage | https://www.legislation.gov.au/C2020A00154/2021-09-15/text | 2026-10-18 |
+| FEES. Read for: Annual company review and selected current fees; Sources and remaining coverage | https://www.asic.gov.au/for-business-and-companies/forms-and-fees/all-fees/fees-for-commonly-lodged-documents | 2026-10-18 |
+| ANNUAL. Read for: Annual company review and selected current fees; Sources and remaining coverage | https://www.asic.gov.au/for-business-and-companies/companies/company-annual-review | 2026-10-18 |
+
+### Sources and remaining coverage
 
 Selected current provisions were read on **18 October 2026** from
 Corporations Act compilation 149, effective 19 September 2026, and
@@ -349,6 +404,8 @@ topics and all required engagement outputs remain open. No professional
 sign-off, model engagement benchmark or comprehensive-country acceptance
 is claimed.
 
+Not yet confirmed: ato.gov.au and the Norfolk Island Regional Council site (nirc.gov.au) refused scripted access on 14 November 2026, so their pages were not re-read for this import; figures taken from them rest on Ryan Duguid's October 2026 read. ASIC fee pages (asic.gov.au) were not re-read for this import.
+
 [ACT1]: https://www.legislation.gov.au/C2004A00818/2026-09-19/text
 [ACT2]: https://www.legislation.gov.au/C2004A00818/2026-09-19/2026-09-19/text/original/epub/OEBPS/document_2/document_2.html
 [ACT6]: https://www.legislation.gov.au/C2004A00818/2026-09-19/2026-09-19/text/original/epub/OEBPS/document_6/document_6.html
@@ -357,23 +414,3 @@ is claimed.
 [REFORM]: https://www.legislation.gov.au/C2020A00154/2021-09-15/text
 [FEES]: https://www.asic.gov.au/for-business-and-companies/forms-and-fees/all-fees/fees-for-commonly-lodged-documents
 [ANNUAL]: https://www.asic.gov.au/for-business-and-companies/companies/company-annual-review
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained in the
-[ryanduguid/openaccountants fork](https://github.com/ryanduguid/openaccountants).
-Check its quality tier, recorded review status and cited sources before use.
-Choose a practitioner whose credentials and engagement scope you have verified.
-The links below are optional upstream services; they do not publish or verify
-this fork's changes.
-
-- Upstream connection service: https://www.openaccountants.com/connect
-- Upstream accountant network: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

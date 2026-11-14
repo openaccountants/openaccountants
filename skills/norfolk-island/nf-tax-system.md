@@ -16,14 +16,18 @@ category: international
 tax_year: 2026
 tax_year_notes: "Scope checked on 20 October 2026; Australian financial years and event-specific transition dates must be identified separately"
 tier: 2
-last_updated: 2026-10-20
+type: router
+last_updated: 2026-11-14
 version: 0.21
-review_status: pending_review
 depends_on:
   - workflow-base
 ---
 
-# Norfolk Island: tax application and territorial exceptions
+# Norfolk Island: tax application and territorial exceptions v0.21
+
+> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
+
+## Scope
 
 Establish the person or entity, residence, income or transaction, asset,
 work location and event date before choosing a tax treatment. NF is the
@@ -37,7 +41,18 @@ universal outputs and all applicable domain outputs and checks. This Tier 2
 reference is not a complete country companion or permission to prepare a
 financial result with missing mandatory sources or country slots.
 
-## Income tax, Medicare and taxpayer classification
+Norfolk Island is an Australian external territory and, since 1 July 2016, Australian federal tax law applies there with the Norfolk modifications set out below. For the mainland method and figures this skill shares with Australia, load [`au-rates-2026-27`](../australia/au-rates-2026-27.md); where a figure here and in that skill differ, check the official source both cite.
+
+## Ask the client first
+
+- What is the tax question: income tax, Medicare, GST, payroll, super, capital gains, or a local charge?
+- Is the person or business resident on Norfolk Island, on the mainland, or overseas?
+- Does the transaction happen only on the island, or is it connected with the mainland?
+- For capital gains: when was the asset acquired, relative to 23 October 2015?
+
+## The method, step by step
+
+### Income tax, Medicare and taxpayer classification
 
 The Tax and Superannuation Laws Amendment (Norfolk Island Reforms) Act 2015
 commenced on **1 July 2016**. Schedule 1 repealed the former territorial
@@ -68,7 +83,7 @@ supplies no income-tax, company-tax or Medicare rate table.
 An administering state's general table must be checked for the actual
 Norfolk facts and period before use.
 
-## Business registration and employee withholding
+### Business registration and employee withholding
 
 The ATO Norfolk business guidance requires attention to business structure,
 tax file number readiness, business income/deductions, PAYG instalments and
@@ -113,7 +128,7 @@ work-item and vehicle application transitions. Actual benefit valuation,
 specialist employers, elections and full payroll/country requirements
 still need their applicable rules and evidence.
 
-## Island transactions and mainland GST connections
+### Island transactions and mainland GST connections
 
 The ATO records that the former Norfolk Island GST ceased on **1 July
 2016**, and Australian GST does not apply to transactions on Norfolk
@@ -168,7 +183,7 @@ Actual notices, later amendments, relief, interest authority and other
 local service fees still need their applicable evidence. This reference
 does not complete the property or country pack.
 
-## Capital gains: preserve the amended transition
+### Capital gains: preserve the amended transition
 
 The original 2015 reform Act proposed a June 2016 market-value/acquisition
 transition. The Norfolk Island CGT Exemption Act 2016 amended that scheme
@@ -253,14 +268,15 @@ It preserves the limited Norfolk acquisition-date exception and separates
 statutory dispute rules from broader ATO guidance. Actual records, notices,
 special regimes and disposal decisions remain with the reviewer.
 
-
 Use nf-transfer-pricing for selected Australian arm's length, benchmarking,
 currency, TP documentation, IDS/CBC reporting and penalty rules. It separates
 income-tax geography from catalogue/treaty/GST territory and preserves
 actual data, source and specialist-country gates. It does not establish a
 completed documentation package or comprehensive cross-border coverage.
 
-## Classification examples and review checks
+## Worked cases
+
+### Classification examples and review checks
 
 These fictional cases select a source branch; they do not calculate a
 person's tax:
@@ -281,7 +297,42 @@ island versus mainland-connected activity; ABN versus employee TFN rules;
 all CGT transition conditions; and the current SG payment day. Keep an
 unknown required fact as Needs Input and an unresolved legal rule on hold.
 
-## Sources, periods and outstanding coverage
+### Recomputed checks
+
+```oa-check
+name: Effective SG rate on wholly Norfolk earnings, 2026-27 (see nf-super-guarantee)
+inputs:
+  charge: 0.12
+steps:
+  - effective: charge * (1 - 1 / 12)
+expected:
+  effective: 0.11
+tolerance: 0.0001
+```
+
+## When to refuse or refer
+
+- Do not apply the pre-2016 Norfolk offshore-income exemption to any current income.
+- Do not infer that local charges are absent when no current island ordinance is supplied; record the gap.
+- Route each topic to its own `nf-` skill; this skill does not compute a liability.
+
+## Sources
+
+Read on dates are Ryan Duguid's reads of each page when he wrote this skill (October 2026). Each label is the reference tag used in the text above.
+
+| Source | URL | Read on |
+|---|---|---|
+| REFORM. Read for: Income tax, Medicare and taxpayer classification; Capital gains: preserve the amended transition; Sources, periods and outstanding coverage | https://www.legislation.gov.au/C2015A00053/asmade | 2026-10-20 |
+| CGT2016. Read for: Capital gains: preserve the amended transition; Sources, periods and outstanding coverage | https://www.legislation.gov.au/C2016A00020/asmade | 2026-10-20 |
+| TRANS. Read for: Capital gains: preserve the amended transition; Sources, periods and outstanding coverage | https://www.ato.gov.au/law/view/print?DocID=PAC%2F19970040%2F102-25 | 2026-10-20 |
+| SCOPE. Read for: Business registration and employee withholding; Island transactions and mainland GST connections; Sources, periods and outstanding coverage | https://www.ato.gov.au/norfolk-island/norfolk-island-tax-and-super | 2026-10-20 |
+| INDIVIDUAL. Read for: Income tax, Medicare and taxpayer classification; Sources, periods and outstanding coverage | https://www.ato.gov.au/norfolk-island/norfolk-island-residents-and-individual-tax | 2026-10-20 |
+| BUSINESS. Read for: Business registration and employee withholding; Sources, periods and outstanding coverage | https://www.ato.gov.au/norfolk-island/tax-for-businesses | 2026-10-20 |
+| GST. Read for: Island transactions and mainland GST connections; Sources, periods and outstanding coverage | https://www.ato.gov.au/norfolk-island/tax-for-businesses/gst-transactions-with-mainland-australia | 2026-10-20 |
+| WORKERS. Read for: Business registration and employee withholding; Sources, periods and outstanding coverage | https://www.ato.gov.au/norfolk-island/tax-for-businesses/paying-your-workers | 2026-10-20 |
+| SG. Read for: Business registration and employee withholding; Sources, periods and outstanding coverage | https://www.legislation.gov.au/C2004A04402/2026-07-01/text | 2026-10-20 |
+
+### Sources, periods and outstanding coverage
 
 Checked on 17 October 2026: the complete 2015 reform and 2016 CGT exemption
 Acts; current section 102-25; the ATO Norfolk collection's resident,
@@ -300,6 +351,8 @@ reporting, withholding/treaties/transfer pricing, property and transaction
 charges, compliance and other special regimes remain open. No complete-country
 credit, practitioner sign-off or engagement output package is claimed.
 
+Not yet confirmed: ato.gov.au and the Norfolk Island Regional Council site (nirc.gov.au) refused scripted access on 14 November 2026, so their pages were not re-read for this import; figures taken from them rest on Ryan Duguid's October 2026 read.
+
 [REFORM]: https://www.legislation.gov.au/C2015A00053/asmade
 [CGT2016]: https://www.legislation.gov.au/C2016A00020/asmade
 [TRANS]: https://www.ato.gov.au/law/view/print?DocID=PAC%2F19970040%2F102-25
@@ -309,23 +362,3 @@ credit, practitioner sign-off or engagement output package is claimed.
 [GST]: https://www.ato.gov.au/norfolk-island/tax-for-businesses/gst-transactions-with-mainland-australia
 [WORKERS]: https://www.ato.gov.au/norfolk-island/tax-for-businesses/paying-your-workers
 [SG]: https://www.legislation.gov.au/C2004A04402/2026-07-01/text
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained in the
-[ryanduguid/openaccountants fork](https://github.com/ryanduguid/openaccountants).
-Check its quality tier, recorded review status and cited sources before use.
-Choose a practitioner whose credentials and engagement scope you have verified.
-The links below are optional upstream services; they do not publish or verify
-this fork's changes.
-
-- Upstream connection service: https://www.openaccountants.com/connect
-- Upstream accountant network: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

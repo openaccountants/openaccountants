@@ -18,9 +18,9 @@ category: international
 tax_year: 2026
 tax_year_notes: "Procedural sources checked 18 October 2026; each assessment income year, original/amended notice and applicable transitional regulation must be identified separately"
 tier: 2
-last_updated: 2026-10-18
+type: filing-howto
+last_updated: 2026-11-14
 version: 0.1
-review_status: pending_review
 depends_on:
   - workflow-base
   - nf-tax-system
@@ -30,7 +30,11 @@ depends_on:
   - nf-foreign-income
 ---
 
-# Norfolk Island: income-tax amendments, objections and review
+# Norfolk Island: income-tax amendments, objections and review v0.1
+
+> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
+
+## Scope
 
 Establish the person or entity and capacity, income year, assessment type,
 correct substantive treatment, original and every amended notice, giving
@@ -47,7 +51,18 @@ objection. Mandatory unknown facts remain Needs Input; unresolved law
 remains held. The reviewer personally handles declarations, submission,
 representation and payment.
 
-## Current sources and distinct decisions
+Norfolk Island is an Australian external territory and, since 1 July 2016, Australian federal tax law applies there with the Norfolk modifications set out below. For the mainland method and figures this skill shares with Australia, load [`au-amending-individual-income-tax-return-period`](../australia/au-amending-individual-income-tax-return-period.md); where a figure here and in that skill differ, check the official source both cite.
+
+## Ask the client first
+
+- Which decision is challenged: an assessment, an amended assessment or another reviewable decision?
+- The date the notice was given or served, and the income year.
+- The taxpayer type and whether a two-year or four-year amendment period applies.
+- Whether an objection, a self-amendment or a late-objection request is intended.
+
+## The method, step by step
+
+### Current sources and distinct decisions
 
 The 1936 Assessment Act source is **C193, effective 1 October 2026**. The
 latest published TAA compilation is **C226, 27 August-30 September 2026**;
@@ -72,7 +87,7 @@ A nil assessment is therefore neither universally objectionable nor
 universally excluded. Establish the actual decision and relief sought.
 [ASSESS]
 
-## Select the assessment amendment period
+### Select the assessment amendment period
 
 Section **170(1)** has different items, qualifications and exceptions. Test
 them for the actual income year and taxpayer capacity before selecting a
@@ -95,7 +110,7 @@ connections, affiliates and the other statutory tests must be established;
 turnover alone is not a classification here. Actual entity-status and
 special-regime calculations remain held. [ASSESS, section 170(14)][ASSESS]
 
-### Conditional four-year self-amendment
+#### Conditional four-year self-amendment
 
 Item **3A** requires all of the following:
 
@@ -123,7 +138,7 @@ into the **two-year objection** branch of TAA section 14ZW. A four-year
 self-amendment opportunity does not create a four-year objection period.
 [SELF-AMEND, section 2 and Schedule 3][SELF-AMEND]; [ADMIN]
 
-### Prescribed exclusions and retained regulations
+#### Prescribed exclusions and retained regulations
 
 The **2025** regulations commence **1 October 2025**. Sections 22-23 apply
 them to income years starting at or after commencement and retain the old
@@ -156,7 +171,7 @@ Use the actual applicable text and underlying statutory definitions.
 Actual ESS, Division 7A, scheme and other specialised outcomes remain held.
 [REG2015]; [REG2025]
 
-### Amended assessments and special powers
+#### Amended assessments and special powers
 
 Section **170(2)** limits ordinary items 1-4 by the original limited period;
 subsection **(2A)** separately limits item 3A. Subsections **(3)-(4)** allow
@@ -173,7 +188,7 @@ powers. Use nf-foreign-income for its selected foreign-offset amendment
 route. A request, informal discussion or pending review does not by itself
 establish an extension of every relevant deadline. [ASSESS]
 
-## Objections: grounds, scope and time
+### Objections: grounds, scope and time
 
 Section **14ZU** requires the approved form, lodgment within section 14ZW's
 period, and the grounds relied on **fully and in detail**. Establish the
@@ -207,7 +222,7 @@ request is not automatically that late-objection package. A refusal can
 have an ART review route, whose application requirements and time must be
 verified separately. [ADMIN]
 
-## Delayed decisions and external review
+### Delayed decisions and external review
 
 Under **14ZY**, the Commissioner decides an in-time objection and serves
 written notice. Section **14ZYA** can permit a written demand for a decision
@@ -237,7 +252,7 @@ the applicant/appellant must prove it is excessive or otherwise incorrect
 **and what it should have been**; other decisions have their own burden.
 A list of asserted deductions without evidence is not that proof. [ADMIN]
 
-## Payment and recovery remain separate
+### Payment and recovery remain separate
 
 A due and payable tax-related liability is a debt recoverable under
 section **255-5**. A payment deferral under **255-10** requires its own
@@ -255,7 +270,9 @@ secure effective review from permanently changing a due date or remitting
 interest. Actual debt management, interest and remission calculations
 remain held. [ADMIN]
 
-## Preparation sequence and fictional checks
+## Worked cases
+
+### Preparation sequence and fictional checks
 
 1. Verify the correct substantive tax outcome and all applicable workflow
    sources before quantifying a correction. Keep unsupported amounts held.
@@ -296,7 +313,51 @@ strict application dates, approved form, two versus four-year purpose,
 later-of comparison, limited grounds, late-request approval, actual
 reviewability, after-service clocks, evidence burden and payment separation.
 
-## Provenance and limits
+### Recomputed checks
+
+```oa-check
+name: Objection period after an amended notice, 80 or 10 days left on the base period
+inputs:
+  base_left_a: 80
+  base_left_b: 10
+  amended_alternative: 60
+steps:
+  - period_a: max(base_left_a, amended_alternative)
+  - period_b: max(base_left_b, amended_alternative)
+expected:
+  period_a: 80
+  period_b: 60
+```
+
+## When to refuse or refer
+
+- Do not lodge an objection or amendment through this skill; the taxpayer or registered agent lodges.
+- Refer Administrative Review Tribunal and Federal Court appeals to a lawyer.
+- Do not count statutory days as business days.
+
+## Sources
+
+Read on dates are Ryan Duguid's reads of each page when he wrote this skill (October 2026). Each label is the reference tag used in the text above.
+
+| Source | URL | Read on |
+|---|---|---|
+| ASSESS. Read for: Current sources and distinct decisions; Select the assessment amendment period; Provenance and limits | https://www.legislation.gov.au/C1936A00027/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_3/document_3.html | 2026-10-18 |
+| ASSESS-RECORD. Read for: Current sources and distinct decisions; Provenance and limits | https://www.legislation.gov.au/C1936A00027/latest/details | 2026-10-18 |
+| ADMIN. Read for: Current sources and distinct decisions; Select the assessment amendment period; Objections: grounds, scope and time; Delayed decisions and external review; Payment and recovery remain separate; Provenance and limits | https://www.legislation.gov.au/C1953A00001/2026-08-27/2026-08-27/text/original/epub/OEBPS/document_1/document_1.html | 2026-10-18 |
+| ADMIN-RECORD. Read for: Current sources and distinct decisions; Provenance and limits | https://www.legislation.gov.au/C1953A00001/latest/details | 2026-10-18 |
+| ADMIN-VERSIONS. Read for: Current sources and distinct decisions; Provenance and limits | https://www.legislation.gov.au/C1953A00001/latest/versions | 2026-10-18 |
+| PAYMENT. Read for: Payment and recovery remain separate; Provenance and limits | https://www.legislation.gov.au/C1953A00001/2026-08-27/2026-08-27/text/original/epub/OEBPS/document_2/document_2.html | 2026-10-18 |
+| SELF-AMEND. Read for: Select the assessment amendment period; Provenance and limits | https://www.legislation.gov.au/C2024A00135/asmade/2024-12-10/text/original/epub/OEBPS/document_1/document_1.html | 2026-10-18 |
+| REG2015. Read for: Select the assessment amendment period; Provenance and limits | https://www.legislation.gov.au/F2015L01415/2022-12-09/2022-12-09/text/original/epub/OEBPS/document_1/document_1.html | 2026-10-18 |
+| REG2025. Read for: Select the assessment amendment period; Provenance and limits | https://www.legislation.gov.au/F2025L01060/asmade/2025-09-09/text/original/epub/OEBPS/document_1/document_1.html | 2026-10-18 |
+| REFORM2. Read for: Current sources and distinct decisions; Provenance and limits | https://www.legislation.gov.au/C2026A00071/asmade/2026-08-26/text/original/epub/OEBPS/document_1/document_1.html | 2026-10-18 |
+| OCTOBER. Read for: Current sources and distinct decisions; Provenance and limits | https://www.legislation.gov.au/C2026A00086/asmade/2026-09-15/text/original/epub/OEBPS/document_1/document_1.html | 2026-10-18 |
+| AIA. Read for: Preparation sequence and fictional checks; Provenance and limits | https://www.legislation.gov.au/C1901A00002/2026-03-28/2026-03-28/text/original/epub/OEBPS/document_1/document_1.html | 2026-10-18 |
+| ATO-AMEND. Read for: Provenance and limits | https://www.ato.gov.au/individuals-and-families/your-tax-return/amend-your-tax-return/time-limits-on-amendments | 2026-10-18 |
+| ATO-BUSINESS. Read for: Provenance and limits | https://www.ato.gov.au/businesses-and-organisations/preparing-lodging-and-paying/fix-a-mistake-or-amend-your-tax-return/request-an-amendment-to-a-business-or-super-tax-return | 2026-10-18 |
+| ATO-OBJECT. Read for: Objections: grounds, scope and time; Provenance and limits | https://www.ato.gov.au/individuals-and-families/your-tax-return/if-you-disagree-with-an-ato-decision/object-to-a-decision/what-you-can-object-to-and-the-time-limits | 2026-10-18 |
+
+### Provenance and limits
 
 Checked **18 October 2026**: selected complete section 170, sections 173-175A,
 Part IVC provisions, Division 255 payment provisions, current records and
@@ -315,6 +376,8 @@ remain subject to their own evidence and professional review. Technical
 checks do not establish practitioner sign-off or comprehensive-country
 acceptance. This guide remains Tier 2 pending review.
 
+Not yet confirmed: ato.gov.au and the Norfolk Island Regional Council site (nirc.gov.au) refused scripted access on 14 November 2026, so their pages were not re-read for this import; figures taken from them rest on Ryan Duguid's October 2026 read.
+
 [ASSESS]: https://www.legislation.gov.au/C1936A00027/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_3/document_3.html
 [ASSESS-RECORD]: https://www.legislation.gov.au/C1936A00027/latest/details
 [ADMIN]: https://www.legislation.gov.au/C1953A00001/2026-08-27/2026-08-27/text/original/epub/OEBPS/document_1/document_1.html
@@ -330,19 +393,3 @@ acceptance. This guide remains Tier 2 pending review.
 [ATO-AMEND]: https://www.ato.gov.au/individuals-and-families/your-tax-return/amend-your-tax-return/time-limits-on-amendments
 [ATO-BUSINESS]: https://www.ato.gov.au/businesses-and-organisations/preparing-lodging-and-paying/fix-a-mistake-or-amend-your-tax-return/request-an-amendment-to-a-business-or-super-tax-return
 [ATO-OBJECT]: https://www.ato.gov.au/individuals-and-families/your-tax-return/if-you-disagree-with-an-ato-decision/object-to-a-decision/what-you-can-object-to-and-the-time-limits
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained in the
-[ryanduguid/openaccountants fork](https://github.com/ryanduguid/openaccountants).
-Check its quality tier, recorded review status and cited sources before use.
-Choose a practitioner whose credentials and engagement scope you have verified.
-The links below are optional upstream services; they do not publish or verify
-this fork's changes.
-
-- Upstream connection service: https://www.openaccountants.com/connect
-- Upstream accountant network: https://www.openaccountants.com/network

@@ -18,15 +18,19 @@ category: transfer-pricing
 tax_year: 2026
 tax_year_notes: "Selected current law checked on 20 October 2026; the 2026 IDS concerns 2025-26; historical periods and actual reporting periods require their own law"
 tier: 2
-last_updated: 2026-10-20
+type: situation-rules
+last_updated: 2026-11-14
 version: 0.1
-review_status: pending_review
 depends_on:
   - workflow-base
   - transfer-pricing-workflow-base
 ---
 
-# Norfolk Island: transfer pricing and international reporting
+# Norfolk Island: transfer pricing and international reporting v0.1
+
+> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
+
+## Scope
 
 Establish the taxpayer, residence, permanent establishments, actual
 conditions and period before assessing a Norfolk Island transfer-pricing
@@ -36,7 +40,26 @@ This selected reference is not a complete country companion; mandatory
 sources, country slots or actual inputs that remain open prevent a
 completed documentation package or tax position.
 
-## Income-tax geography and the substantive test
+Norfolk Island is an Australian external territory and, since 1 July 2016, Australian federal tax law applies there with the Norfolk modifications set out below. For the mainland method and figures this skill shares with Australia, load [`australia-transfer-pricing`](../australia/australia-transfer-pricing.md); where a figure here and in that skill differ, check the official source both cite.
+
+## Ask the client first
+
+- Are the related parties both in Australia (including Norfolk), or is one overseas or a permanent establishment?
+- The value of international related-party dealings for the year.
+- Group annual global income, for country-by-country reporting.
+- What transfer pricing documentation exists, and whether it was in place by the return date.
+
+## The method, step by step
+
+### Key figures
+
+| Item | Figure | Applies to | Source |
+|---|---|---|---|
+| International dealings schedule trigger | International related-party dealings over AUD 2 million (other triggers apply separately) | 2026 company returns | [IDS-GET](https://www.ato.gov.au/forms-and-instructions/international-dealings-schedule-2026-instructions/how-to-get-the-international-dealings-schedule-2026) |
+| Country-by-country reporting entity | Annual global income of at least AUD 1 billion | Groups meeting the statutory control and status conditions | [TAA2](https://www.legislation.gov.au/C1953A00001/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_2/document_2.html) |
+| TP penalty threshold | Shortfall no more than the greater of AUD 10,000 and 1% of return-basis tax | TAA 1953 Sch 1 s 284-165 | [TAA2](https://www.legislation.gov.au/C1953A00001/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_2/document_2.html) |
+
+### Income-tax geography and the substantive test
 
 For the relevant income-tax use, ITAA 1997 section 960-505 expressly
 includes **Norfolk Island** in geographical Australia. The former Norfolk
@@ -82,7 +105,7 @@ creation, anti-avoidance, treaties, customs and indirect taxes retain their
 own source and fact gates. A TP result alone does not establish a deduction
 or every other tax. [ITAA9, 815-140, 815-205 to 815-310][ITAA9]
 
-## Evidence, benchmarking and currency
+### Evidence, benchmarking and currency
 
 Document each dealing, actual conduct, financial reconciliation, functional
 analysis, method alternatives, search date/source, independence/geographic
@@ -116,7 +139,7 @@ selected basis. Verify conditions before averaging; year-end rates are
 not universal defaults. A hypothetical rate below is not current rate
 verification. [FX]
 
-## Keep documentation and filing obligations separate
+### Keep documentation and filing obligations separate
 
 General business and other record duties remain; use nf-tax-records for
 selected retention rules. TAA Schedule 1 **284-250 and 284-255** do not
@@ -161,7 +184,7 @@ liability or PCG eligibility. Use current instructions for every actual
 field and the actual return due date. Public CBC and RTP schedules are
 separate. [IDS-A, questions 1-2][IDS-A]; [IDS-NEW]
 
-## Compliance options, adjustments and penalties
+### Compliance options, adjustments and penalties
 
 PCG 2017/2 concerns ATO compliance resources. Eligibility needs all the
 chosen option's conditions, contemporaneous evidence, self-assessed
@@ -209,7 +232,7 @@ selected other penalties/interest; verify every applicable source and fact
 before a calculation. RAP, a report or an NF address cannot guarantee nil.
 [TAA2]
 
-## APA availability and remaining country requirements
+### APA availability and remaining country requirements
 
 The ATO programme and PS LA 2015/4, revised **29 October 2025**, provide
 unilateral, bilateral and multilateral APAs. The usual **3-5 years** is the
@@ -228,7 +251,67 @@ currency conventions and complete APA procedure. Amount B or a foreign
 safe harbour requires affirmative current Australian authority. Loading
 this reference does not turn those unverified branches into completed slots.
 
-## Intake, holds and reviewer outputs
+## Worked cases
+
+### Fictional positions and self-checks
+
+All amounts are invented AUD except the stated foreign-currency example.
+These cases test branch selection and arithmetic, not real comparables or
+facts, and do not establish an actual taxpayer's liability.
+
+| Stipulated position | Working and bounded conclusion |
+|---|---|
+| Two Australian resident companies, one in Norfolk and one on the mainland, have wholly Australian dealings with no overseas PE or other cross-border condition | Both locations are geographically Australia for the selected income-tax use. Different addresses alone do not satisfy 815-120. Establish every actual condition; do not label the dealing international merely from NF. |
+| Norfolk company has AUD 1.8 million international related-party dealings and an overseas-interest IDS trigger in its 2026 company return | 1.8 million is below 2 million, but the separate interest trigger still requires the IDS. The amount supplies no substantive TP exemption. |
+| Prior-year CBC status and exemptions unknown; parent current revenue AUD 1.2 billion | 1.2 billion exceeds 1 billion, but does not establish the statutory prior-year group/status and exemption conditions. Hold each statement conclusion. |
+| Ordinary company return-basis tax AUD 600,000, TP scheme tax shortfall AUD 10,000 | max(10,000, 1% × 600,000) = **10,000**. Equality meets 284-165(1); no penalty under 284-145(2B), without cancelling tax or interest. |
+| Same company, AUD 100,000 tax shortfall; liability gateway met, AUD 60,000 non-RAP/AUD 40,000 RAP, no purpose branch, no other adjustments or doubling stipulated | 25% × 60,000 + 10% × 40,000 = **19,000** BPA. Do not use 10% for the entire shortfall or assume remission. |
+| Qualifying service cost AUD 100,000 plus AUD 20,000 pass-through, 5% provided mark-up and every other PCG condition stipulated | 5% × 100,000 = **5,000** mark-up; total charge = **125,000**. The arithmetic does not prove an unstipulated eligibility or deduction condition. |
+| Ordinary income FC 1,000 received before derivation; applicable receipt quote FC 2 per AUD 1 stipulated | Receipt is selected under item 6; 1,000 ÷ 2 = **AUD 500**. The invented quote is not a real observation or permission to use an annual average. |
+| Comparable data absent for a Norfolk distributor | Hold the method-dependent result and list the missing data. No automatic TNMM, IQR, median or 3% margin fills the gap. |
+
+Check income-tax territory separately from treaty/GST geography; all
+815-120 conditions; actual relations and method reliability; every data
+and conversion gate; independent documentation/IDS/CBC duties; every PCG
+condition; tax versus profit shortfall; separate trust/partnership
+exceptions; matter-level RAP and adjustments; and consistency across all
+outputs. All 10 TP completion checks remain required.
+
+### Recomputed checks
+
+```oa-check
+name: TP penalty threshold, return-basis tax AUD 600,000
+inputs:
+  tax: 600000
+  shortfall: 10000
+steps:
+  - threshold: max(10000, tax * 0.01)
+  - margin: threshold - shortfall
+expected:
+  threshold: 10000
+  margin: 0
+```
+
+```oa-check
+name: Base penalty amount on AUD 100,000 shortfall, AUD 60,000 without RAP and AUD 40,000 with RAP
+inputs:
+  non_rap: 60000
+  rap: 40000
+steps:
+  - bpa: non_rap * 0.25 + rap * 0.10
+expected:
+  bpa: 19000
+```
+
+## When to refuse or refer
+
+- Hold method-dependent results when comparable data is missing; do not fill with a default margin.
+- Refer advance pricing arrangements and mutual agreement procedures to a specialist.
+- Dealings between Norfolk and the mainland are domestic; do not apply the cross-border rules to them alone.
+
+## Completion checklist
+
+### Intake, holds and reviewer outputs
 
 Confirm entity/residence/PE and periods; complete group and previous-year
 CBC/current SGE facts; transaction catalogue, actual conduct, contracts and
@@ -259,31 +342,27 @@ owner and professional decision for each position. Keep all base outputs
 and checks, with incomplete sections identified. No filing, payment,
 submission, signed opinion or completed-country credit is authorised.
 
-## Fictional positions and self-checks
+## Sources
 
-All amounts are invented AUD except the stated foreign-currency example.
-These cases test branch selection and arithmetic, not real comparables or
-facts, and do not establish an actual taxpayer's liability.
+Read on dates are Ryan Duguid's reads of each page when he wrote this skill (October 2026). Each label is the reference tag used in the text above.
 
-| Stipulated position | Working and bounded conclusion |
-|---|---|
-| Two Australian resident companies, one in Norfolk and one on the mainland, have wholly Australian dealings with no overseas PE or other cross-border condition | Both locations are geographically Australia for the selected income-tax use. Different addresses alone do not satisfy 815-120. Establish every actual condition; do not label the dealing international merely from NF. |
-| Norfolk company has AUD 1.8 million international related-party dealings and an overseas-interest IDS trigger in its 2026 company return | 1.8 million is below 2 million, but the separate interest trigger still requires the IDS. The amount supplies no substantive TP exemption. |
-| Prior-year CBC status and exemptions unknown; parent current revenue AUD 1.2 billion | 1.2 billion exceeds 1 billion, but does not establish the statutory prior-year group/status and exemption conditions. Hold each statement conclusion. |
-| Ordinary company return-basis tax AUD 600,000, TP scheme tax shortfall AUD 10,000 | max(10,000, 1% × 600,000) = **10,000**. Equality meets 284-165(1); no penalty under 284-145(2B), without cancelling tax or interest. |
-| Same company, AUD 100,000 tax shortfall; liability gateway met, AUD 60,000 non-RAP/AUD 40,000 RAP, no purpose branch, no other adjustments or doubling stipulated | 25% × 60,000 + 10% × 40,000 = **19,000** BPA. Do not use 10% for the entire shortfall or assume remission. |
-| Qualifying service cost AUD 100,000 plus AUD 20,000 pass-through, 5% provided mark-up and every other PCG condition stipulated | 5% × 100,000 = **5,000** mark-up; total charge = **125,000**. The arithmetic does not prove an unstipulated eligibility or deduction condition. |
-| Ordinary income FC 1,000 received before derivation; applicable receipt quote FC 2 per AUD 1 stipulated | Receipt is selected under item 6; 1,000 ÷ 2 = **AUD 500**. The invented quote is not a real observation or permission to use an annual average. |
-| Comparable data absent for a Norfolk distributor | Hold the method-dependent result and list the missing data. No automatic TNMM, IQR, median or 3% margin fills the gap. |
+| Source | URL | Read on |
+|---|---|---|
+| ITAA9. Read for: Income-tax geography and the substantive test; Evidence, benchmarking and currency; Keep documentation and filing obligations separate; Compliance options, adjustments and penalties; Source currency and outstanding work | https://www.legislation.gov.au/C2004A05138/2026-08-27/2026-08-27/text/original/epub/OEBPS/document_9/document_9.html | 2026-10-20 |
+| ITAA10. Read for: Income-tax geography and the substantive test; Evidence, benchmarking and currency; Keep documentation and filing obligations separate; Source currency and outstanding work | https://www.legislation.gov.au/C2004A05138/2026-08-27/2026-08-27/text/original/epub/OEBPS/document_10/document_10.html | 2026-10-20 |
+| TAA2. Read for: Keep documentation and filing obligations separate; Compliance options, adjustments and penalties; Source currency and outstanding work | https://www.legislation.gov.au/C1953A00001/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_2/document_2.html | 2026-10-20 |
+| REFORM. Read for: Income-tax geography and the substantive test; Source currency and outstanding work | https://www.legislation.gov.au/C2015A00053/asmade | 2026-10-20 |
+| OECD. Read for: Income-tax geography and the substantive test; Evidence, benchmarking and currency; Compliance options, adjustments and penalties; Source currency and outstanding work | https://doi.org/10.1787/0e655865-en | 2026-10-20 |
+| PCG. Read for: Compliance options, adjustments and penalties; Source currency and outstanding work | https://www.ato.gov.au/law/view/document?docid=COG/PCG20172/NAT/ATO/00001 | 2026-10-20 |
+| IDS-GET. Read for: Keep documentation and filing obligations separate; Source currency and outstanding work; Key figures | https://www.ato.gov.au/forms-and-instructions/international-dealings-schedule-2026-instructions/how-to-get-the-international-dealings-schedule-2026 | 2026-10-20 |
+| IDS-DEFS. Read for: Keep documentation and filing obligations separate; Source currency and outstanding work | https://www.ato.gov.au/forms-and-instructions/international-dealings-schedule-2026-instructions/definitions | 2026-10-20 |
+| IDS-A. Read for: Keep documentation and filing obligations separate; Source currency and outstanding work | https://www.ato.gov.au/forms-and-instructions/international-dealings-schedule-2026-instructions/instructions-to-complete-the-international-dealings-schedule/section-a-international-related-party-dealings | 2026-10-20 |
+| IDS-NEW. Read for: Keep documentation and filing obligations separate; Source currency and outstanding work | https://www.ato.gov.au/forms-and-instructions/international-dealings-schedule-2026-instructions/whats-new-for-the-international-dealings-schedule | 2026-10-20 |
+| FX. Read for: Evidence, benchmarking and currency; Source currency and outstanding work | https://www.ato.gov.au/tax-rates-and-codes/foreign-exchange-rates-overview | 2026-10-20 |
+| APA-PS. Read for: APA availability and remaining country requirements; Source currency and outstanding work | https://www.ato.gov.au/law/view/document?DocID=PSR/PS20154/NAT/ATO/00001&PiT=99991231235958 | 2026-10-20 |
+| APA. Read for: APA availability and remaining country requirements; Source currency and outstanding work | https://www.ato.gov.au/businesses-and-organisations/international-tax-for-business/in-detail/pricing/advance-pricing-arrangements/advance-pricing-arrangement-apa-program | 2026-10-20 |
 
-Check income-tax territory separately from treaty/GST geography; all
-815-120 conditions; actual relations and method reliability; every data
-and conversion gate; independent documentation/IDS/CBC duties; every PCG
-condition; tax versus profit shortfall; separate trust/partnership
-exceptions; matter-level RAP and adjustments; and consistency across all
-outputs. All 10 TP completion checks remain required.
-
-## Source currency and outstanding work
+### Source currency and outstanding work
 
 Version 0.1 checked selected 815-B/C/D/E, 960 and current TAA C227
 284/298 provisions on **20 October 2026**, with current register/version
@@ -299,6 +378,8 @@ Complete tax/financial results, treaty and specialist regimes, operational
 country slots and Norfolk's other topics remain open. Technical checks or
 a merge do not constitute professional sign-off or comprehensive coverage.
 
+Not yet confirmed: ato.gov.au and the Norfolk Island Regional Council site (nirc.gov.au) refused scripted access on 14 November 2026, so their pages were not re-read for this import; figures taken from them rest on Ryan Duguid's October 2026 read.
+
 [ITAA9]: https://www.legislation.gov.au/C2004A05138/2026-08-27/2026-08-27/text/original/epub/OEBPS/document_9/document_9.html
 [ITAA10]: https://www.legislation.gov.au/C2004A05138/2026-08-27/2026-08-27/text/original/epub/OEBPS/document_10/document_10.html
 [TAA2]: https://www.legislation.gov.au/C1953A00001/2026-10-01/2026-10-01/text/original/epub/OEBPS/document_2/document_2.html
@@ -312,23 +393,3 @@ a merge do not constitute professional sign-off or comprehensive coverage.
 [FX]: https://www.ato.gov.au/tax-rates-and-codes/foreign-exchange-rates-overview
 [APA-PS]: https://www.ato.gov.au/law/view/document?DocID=PSR/PS20154/NAT/ATO/00001&PiT=99991231235958
 [APA]: https://www.ato.gov.au/businesses-and-organisations/international-tax-for-business/in-detail/pricing/advance-pricing-arrangements/advance-pricing-arrangement-apa-program
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained in the
-[ryanduguid/openaccountants fork](https://github.com/ryanduguid/openaccountants).
-Check its quality tier, recorded review status and cited sources before use.
-Choose a practitioner whose credentials and engagement scope you have verified.
-The links below are optional upstream services; they do not publish or verify
-this fork's changes.
-
-- Upstream connection service: https://www.openaccountants.com/connect
-- Upstream accountant network: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
