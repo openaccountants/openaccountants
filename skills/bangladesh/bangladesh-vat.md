@@ -1,515 +1,207 @@
 ---
 name: bangladesh-vat
-description: Use this skill whenever asked to prepare, review, or classify transactions for a Bangladesh VAT return (Mushak-9.1) or turnover tax return for any client. Trigger on phrases like "prepare VAT return", "Bangladesh VAT", "Mushak", "BIN registration", "NBR filing", or any request involving Bangladesh VAT. Also trigger when classifying transactions for VAT purposes from bank statements, invoices, or other source data. This skill covers standard VAT-registered (Article 10 equivalent) and turnover tax filers. Complex multi-establishment structures, bond/export processing zones, and supplementary duty computations are in the refusal catalogue. MUST be loaded alongside vat-workflow-base v0.1 or later (for workflow architecture). ALWAYS read this skill before touching any Bangladesh VAT work.
-version: 2.0
+description: "Bangladesh 2026 VAT/turnover-tax working papers, registration, classification, input-credit conditions and Mushak return preparation. Corrected current law replaces the old deterministic supplier-rate and form-part map."
+version: 2.1
 jurisdiction: BD
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: vat-gst
+type: computation
+category: international
 ---
 
-# Bangladesh VAT
-
-## Bangladesh VAT Return Skill (Mushak-9.1) v2.0
-
-## Section 1 — Quick reference
-
-Read this whole section before classifying anything. The workflow runbook is in vat-workflow-base Section 1 — follow that runbook with this skill providing the country-specific content.
-
-**Quick reference table**
-
-| Field | Value |
-| --- | --- |
-| Country | Bangladesh (People's Republic of Bangladesh) |
-| Standard rate | 15% |
-| Reduced rates | 5%, 7.5%, 10% (specified goods/services via SRO) |
-| Turnover tax | 4% (BDT 50 lakh–3 crore turnover); 3% (BDT 30–50 lakh) |
-| Zero rate | 0% (exports, deemed exports, supplies to diplomats) |
-| Return form | Mushak-9.1 (monthly VAT return); Turnover Tax return (quarterly) |
-| Filing portal | https://vat.gov.bd (Mushak Online Portal) |
-| Authority | National Board of Revenue (NBR) |
-| Currency | BDT (Bangladeshi Taka) |
-| Filing frequencies | Monthly (VAT registered); Quarterly (turnover tax) |
-| Deadline | Within 15 days after end of period |
-| Companion skill (Tier 1, workflow) | vat-workflow-base v0.1 or later — MUST be loaded |
-| Contributor | Open Accounting Skills Registry |
-| Validation date | Pending |
-
-**Key Mushak-9.1 sections**
-
-| Part | Meaning |
-| --- | --- |
-| Part 1 | Entity information (BIN, name, period) |
-| Part 2 | Output tax on local sales (standard + reduced rates) |
-| Part 3 | Output tax on exports (zero-rated) |
-| Part 4 | Exempt supplies |
-| Part 5 | Total output tax (derived: sum of Part 2) |
-| Part 6 | Input tax on local purchases (from Mushak-6.1) |
-| Part 7 | Input tax on imports (from Bill of Entry) |
-| Part 8 | Total input tax credit (derived: Part 6 + Part 7) |
-| Part 9 | Net tax payable or credit carried forward (Part 5 minus Part 8) |
-| Part 10 | Supplementary Duty (if applicable) |
-| Part 11 | Interest / penalty (if late) |
-| Part 12 | Total payable (derived: Parts 9 + 10 + 11) |
+# Bangladesh VAT and turnover tax working papers v2.1
 
-**Conservative defaults — Bangladesh-specific values**
+> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
-| Ambiguity | Default |
-| --- | --- |
-| Unknown rate on a sale | 15% |
-| Unknown VAT status of a purchase | Not deductible |
-| Unknown counterparty location | Domestic Bangladesh |
-| Unknown registration type | VAT registered (standard) |
-| Unknown business-use proportion | 0% recovery |
-| Unknown blocked-input status | Blocked |
-| Unknown whether transaction is in scope | In scope |
-
-**Red flag thresholds**
-
-| Threshold | Value |
-| --- | --- |
-| HIGH single-transaction size | BDT 500,000 |
-| HIGH tax-delta on a single conservative default | BDT 30,000 |
-| MEDIUM counterparty concentration | >40% of output OR input |
-| MEDIUM conservative-default count | >4 across the return |
-| LOW absolute net VAT position | BDT 1,000,000 |
-
-## Section 2 — Required inputs and refusal catalogue
-
-### Required inputs
-
-**Minimum viable** — bank statement for the month in CSV, PDF, or pasted text. Must cover the full period. Acceptable from any Bangladeshi bank: Dutch-Bangla Bank, BRAC Bank, Eastern Bank, City Bank, Standard Chartered BD, HSBC BD, Islami Bank, or any other.
-
-**Recommended** — sales invoices (Mushak-11) for the period, purchase invoices with supplier BIN, the client's BIN in writing (13 digits).
-
-**Ideal** — complete Mushak-6.1 (purchase register), Mushak-6.2 (sales register), prior period Mushak-9.1, reconciliation of excess credit brought forward.
-
-**Refusal policy if minimum is missing — SOFT WARN.** If no bank statement is available at all, hard stop. If bank statement only without invoices, proceed but record in the reviewer brief: "This Mushak-9.1 was produced from bank statement alone. The reviewer must verify that input VAT claims are supported by compliant Mushak-11 invoices bearing supplier BIN and that all classifications match supporting documents."
-
-### Bangladesh-specific refusal catalogue
-
-- **R-BD-1 — Turnover tax client attempting to claim input VAT** — Turnover tax payers pay a flat 3%/4% on turnover and cannot recover input VAT. This skill can prepare the turnover tax return but cannot calculate input VAT recovery for a turnover tax client. (Trigger: client is turnover tax registered (annual turnover BDT 30 lakh to BDT 3 crore).)
-- **R-BD-2 — Export Processing Zone (EPZ) entity** — EPZ/SEZ entities have special VAT rules outside the standard Mushak-9.1 framework. Please escalate to a qualified chartered accountant familiar with EPZ obligations. (Trigger: client operates in an EPZ or Special Economic Zone.)
-- **R-BD-3 — Multi-establishment with separate BINs** — Each BIN files a separate Mushak-9.1 with inter-establishment transfers on Mushak-6.4. This requires consolidation analysis beyond this skill. Please use a qualified practitioner. (Trigger: client has multiple business units each with a separate BIN.)
-- **R-BD-4 — Supplementary Duty computation** — Supplementary Duty rates vary widely (7.5%–500%) and SD is calculated before VAT. This requires specialist product-level analysis. Please escalate to a qualified chartered accountant. (Trigger: client manufactures or imports goods subject to Supplementary Duty (tobacco, alcohol, vehicles, SIM cards).)
-- **R-BD-5 — Withholding VAT agent obligations** — VDS withholding obligations require tracking of Mushak-6.10 certificates and deposit schedules. Out of scope for standard return preparation. Please use a qualified practitioner. (Trigger: client is a designated VDS withholding agent (government entity, bank, NGO, listed company).)
-
-## Section 3 — Supplier pattern library (the lookup table)
-
-This is the deterministic pre-classifier. When a transaction's counterparty matches a pattern in this table, apply the treatment directly. Do not second-guess.
-
-**How to read this table.** Match by case-insensitive substring on the counterparty name as it appears in the bank statement. If multiple patterns match, use the most specific. If none match, fall through to Tier 1 rules in Section 5.
-
-### 3.1 Bangladeshi banks (fees exempt — exclude)
-
-**3.1 Bangladeshi banks table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| DUTCH-BANGLA, DUTCH BANGLA, DBBL | EXCLUDE for bank charges/fees | Financial service, exempt |
-| BRAC BANK, BRAC BNK | EXCLUDE for bank charges/fees | Same |
-| EASTERN BANK, EBL | EXCLUDE for bank charges/fees | Same |
-| CITY BANK, ISLAMI BANK, AB BANK | EXCLUDE for bank charges/fees | Same |
-| STANDARD CHARTERED BD, HSBC BD | EXCLUDE for bank charges/fees | Same |
-| UCBL, PRIME BANK, MUTUAL TRUST | EXCLUDE for bank charges/fees | Same |
-| INTEREST, MUNAFA, PROFIT | EXCLUDE | Interest income/expense, out of scope |
-| LOAN, REPAYMENT | EXCLUDE | Loan principal movement, out of scope |
-
-### 3.2 Government, regulators, and statutory bodies (exclude entirely)
-
-**3.2 Government table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| NBR, NATIONAL BOARD OF REVENUE | EXCLUDE | Tax payment, not a supply |
-| VAT DEPARTMENT, MUSHAK | EXCLUDE | VAT payment |
-| CUSTOMS, SHULKO | EXCLUDE | Customs duty (but import VAT on Bill of Entry is claimable) |
-| BIDA, BOI, RJSC | EXCLUDE | Regulatory/licence fees |
-| RAJUK, CDA, KDA | EXCLUDE | Development authority fees |
-| INCOME TAX, TAX DEDUCTED | EXCLUDE | Income tax payment |
-
-### 3.3 Utilities
-
-**3.3 Utilities table**
-
-| Pattern | Treatment | Return section | Notes |
-| --- | --- | --- | --- |
-| DESCO, DPDC, BPDB, NESCO, BREB | Domestic 15% | Part 6 | Electricity — overhead |
-| TITAS GAS, BAKHRABAD GAS, JALALABAD GAS | Domestic 15% | Part 6 | Gas utility |
-| WASA, DHAKA WASA, CHITTAGONG WASA | Domestic 15% | Part 6 | Water supply |
-| GRAMEENPHONE, GP, ROBI, BANGLALINK, TELETALK | Domestic 15% | Part 6 | Telecoms — overhead (note: 15% SD also applies to mobile services) |
-
-### 3.4 Insurance (exempt — exclude)
-
-**3.4 Insurance table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| SADHARAN BIMA, JIBAN BIMA | EXCLUDE | Government insurance, exempt |
-| GREEN DELTA, PRAGATI, PIONEER | EXCLUDE | Insurance premium, exempt |
-| METLIFE BD, GUARDIAN LIFE | EXCLUDE | Same |
-
-### 3.5 Digital payments and mobile financial services
-
-**3.5 Digital payments table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| BKASH, B-KASH | EXCLUDE for transaction fees | Financial service, exempt |
-| NAGAD | EXCLUDE for transaction fees | Same |
-| ROCKET, DBBL MOBILE | EXCLUDE for transaction fees | Same |
-| UPAY, SURE CASH | EXCLUDE for transaction fees | Same |
-
-### 3.6 Payroll and social security (exclude entirely)
-
-**3.6 Payroll table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| SALARY, BETON, WAGES | EXCLUDE | Wages — outside VAT scope |
-| PROVIDENT FUND, PF | EXCLUDE | Employee benefit, out of scope |
-| GRATUITY | EXCLUDE | Employee benefit |
-
-### 3.7 SaaS and international digital services (reverse charge)
-
-**3.7 SaaS table**
-
-| Pattern | Billing entity | Treatment | Notes |
-| --- | --- | --- | --- |
-| GOOGLE, GOOGLE ADS | Google (US/IE entity) | Self-assess 15% | Non-resident digital service |
-| MICROSOFT, AZURE, OFFICE 365 | Microsoft (US/IE) | Self-assess 15% | Same |
-| META, FACEBOOK ADS | Meta (US/IE) | Self-assess 15% | Same |
-| AMAZON AWS, AWS | Amazon (US/LU) | Self-assess 15% | Same |
-| ZOOM, SLACK, DROPBOX | US entities | Self-assess 15% | Same |
-| CANVA, FIGMA, NOTION | Non-resident | Self-assess 15% | Same |
-
-### 3.8 Professional services (Bangladesh)
-
-**3.8 Professional services table**
-
-| Pattern | Treatment | Return section | Notes |
-| --- | --- | --- | --- |
-| CA FIRM, AUDIT, CHARTERED ACCOUNTANT | Domestic 15% | Part 6 | Deductible if business purpose |
-| ADVOCATE, LAWYER, BARRISTER | Domestic 15% | Part 6 | Legal services |
-| CONSULTANT, ENGINEERING | Domestic 15% | Part 6 | Professional overhead |
-
-### 3.9 Property and rent
-
-**3.9 Property and rent table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| RENT, BHARA, OFFICE RENT | Domestic 15% if commercial with VAT invoice | Part 6 |
-| HOUSE RENT, RESIDENTIAL | EXCLUDE | Residential lease, exempt |
-
-### 3.10 Internal transfers and exclusions
-
-**3.10 Internal transfers table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| OWN TRANSFER, INTERNAL, ACCOUNT TRANSFER | EXCLUDE | Internal movement |
-| DIVIDEND | EXCLUDE | Out of scope |
-| CASH WITHDRAWAL, ATM | TIER 2 — ask | Default exclude; ask what cash was spent on |
-| DIRECTOR FEE, PROPRIETOR DRAWING | EXCLUDE | Out of scope |
-
-## Section 4 — Worked examples
-
-These are six fully worked classifications drawn from a hypothetical bank statement of a Dhaka-based self-employed IT consultant.
-
-### Example 1 — Standard domestic sale at 15%
-
-**Example 1 output table**
-
-| Date | Counterparty | Gross | Net | VAT | Rate | Return section | Default? | Excluded? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 05.04.2026 | ABC TECHNOLOGIES LTD | +115,000 | +100,000 | 15,000 | 15% | Part 2 (output) | N | — |
-
-**Input line:**
-`05.04.2026 ; ABC TECHNOLOGIES LTD ; CREDIT ; Invoice BD-2026-041 IT consultancy ; BDT 115,000`
-
-**Reasoning:**
-Domestic sale of IT consulting services to a BDT-paying local company. Standard 15% applies. The gross amount includes VAT. Net = BDT 100,000, VAT = BDT 15,000. Report in Mushak-9.1 Part 2. Mushak-11 tax invoice must be issued.
-
-### Example 2 — Local purchase with input tax credit
-
-**Example 2 output table**
-
-| Date | Counterparty | Gross | Net | VAT | Rate | Return section | Default? | Excluded? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 10.04.2026 | COMPUTER SOURCE BD | -23,000 | -20,000 | 3,000 | 15% | Part 6 (input) | N | — |
-
-**Input line:**
-`10.04.2026 ; COMPUTER SOURCE BD ; DEBIT ; Office supplies ; BDT -23,000`
-
-**Reasoning:**
-Purchase from a local VAT-registered supplier. Assuming valid Mushak-11 held with supplier BIN. Net = BDT 20,000, VAT = BDT 3,000 at 15%. Input VAT claimable in Part 6.
-
-### Example 3 — Export, zero-rated
-
-**Example 3 output table**
-
-| Date | Counterparty | Gross | Net | VAT | Rate | Return section | Default? | Excluded? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 15.04.2026 | STUDIO KREBS GMBH | +350,000 | +350,000 | 0 | 0% | Part 3 (export) | N | — |
-
-**Input line:**
-`15.04.2026 ; STUDIO KREBS GMBH ; CREDIT ; Invoice BD-EXP-018 Software development ; BDT 350,000`
-
-**Reasoning:**
-Export of IT services. Zero-rated under VAT & SD Act 2012 Section 24. Report in Mushak-9.1 Part 3 at 0%. Input VAT on related purchases is fully recoverable. Bank realization certificate required within 6 months.
-
-### Example 4 — Non-resident digital service (reverse charge)
-
-**Example 4 output table**
-
-| Date | Counterparty | Gross | Net | VAT | Rate | Return section | Default? | Excluded? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 18.04.2026 | GOOGLE IRELAND LIMITED | -2,800 | -2,800 | 420 | 15% | Part 2 (output) + Part 6 (input) | N | — |
-
-**Input line:**
-`18.04.2026 ; GOOGLE IRELAND LIMITED ; DEBIT ; Google Workspace April ; BDT -2,800`
-
-**Reasoning:**
-Service from non-resident. No VAT on invoice. Client must self-assess VAT at 15% under reverse charge (Section 18(3)). Self-assessed output = BDT 420. If used for taxable supplies, input credit of BDT 420 also claimable. Net effect zero for fully taxable client.
-
-### Example 5 — Blocked input: passenger vehicle
-
-**Example 5 output table**
-
-| Date | Counterparty | Gross | Net | VAT | Rate | Return section | Default? | Excluded? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 22.04.2026 | TOYOTA BANGLADESH | -85,000 | -85,000 | 0 | — | — | Y | "Vehicle: blocked" |
-
-**Input line:**
-`22.04.2026 ; TOYOTA BANGLADESH ; DEBIT ; Lease payment Corolla ; BDT -85,000`
-
-**Reasoning:**
-Passenger vehicle lease. Input VAT blocked under VAT & SD Act 2012 Section 49 — personal consumption / passenger vehicle unless transport business. IT consultant does not qualify. Full block, zero recovery.
-
-### Example 6 — Bank charges, excluded
-
-**Example 6 output table**
-
-| Date | Counterparty | Gross | Net | VAT | Rate | Return section | Default? | Excluded? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 30.04.2026 | DUTCH-BANGLA BANK | -500 | — | — | — | — | N | "Exempt financial service" |
-
-**Input line:**
-`30.04.2026 ; DUTCH-BANGLA BANK ; DEBIT ; Monthly maintenance fee ; BDT -500`
-
-**Reasoning:**
-Bank charges are exempt financial services. No VAT. Exclude from VAT return entirely.
-
-## Section 5 — Tier 1 classification rules (compressed)
-
-### 5.1 Standard rate 15% (VAT & SD Act 2012, Section 15)
-
-- **Standard rate application** — Default rate for any taxable supply unless a reduced rate, zero rate, or exemption applies. Sales go to Mushak-9.1 Part 2. Purchases go to Part 6.  _(VAT & SD Act 2012, Section 15)_
-
-### 5.2 Reduced rates (Third Schedule, various SROs)
-
-- **Reduced rates application** — 5%, 7.5%, or 10% on specified goods/services as gazetted via Statutory Regulatory Orders. Each reduced rate has its own line in Part 2. Check current SRO schedule before classifying.  _(Third Schedule, various SROs)_
-
-### 5.3 Zero rate (Section 24-25)
-
-- **Zero rate application** — Exports of goods (with customs documentation), deemed exports (EPZ supplies), supplies to diplomats, international transport. Report in Part 3. Input VAT on related purchases fully recoverable.  _(Section 24-25)_
-
-### 5.4 Exempt supplies (First Schedule)
-
-- **Exempt supplies** — Agricultural products, certain food items, education, health services, land transport, financial services. Report in Part 4. No output VAT, no input VAT recovery on related costs.  _(First Schedule)_
-
-### 5.5 Input tax credit — eligibility (Section 45-52)
-
-- **Input tax credit eligibility** — Purchase must be used for making taxable supplies. Valid Mushak-11 with supplier BIN required. Claim within 3 return periods from invoice date.  _(Section 45-52)_
-
-### 5.6 Input tax credit — apportionment
-
-- **Apportionment formula** — creditable input = total input x (taxable supplies / total supplies) (If business makes both taxable and exempt supplies. Annual adjustment required. Flag for reviewer.)
-
-### 5.7 Blocked input VAT (Section 49)
-
-- **Blocked input VAT categories** — Zero VAT recovery regardless of other rules: personal consumption, passenger vehicles (unless transport business), entertainment (unless documented promotion), purchases without valid Mushak-11, purchases from unregistered suppliers, goods lost/stolen/destroyed (unless insured), free samples (unless documented promotional). Check blocked status FIRST before applying any recovery.  _(Section 49)_
-
-### 5.8 Imports
-
-- **Import VAT** — VAT at 15% on (assessable value + customs duty). Paid at customs. Input credit claimable in Part 7 if goods used for taxable supplies.
-
-### 5.9 Reverse charge on imported services (Section 18(3))
-
-- **Reverse charge on imported services** — Non-resident service provider with no BIN: client self-assesses 15% output VAT. Input credit claimable if used for taxable supplies. Net effect zero for fully taxable client.  _(Section 18(3))_
-
-### 5.10 Capital goods
-
-- **Capital goods treatment** — Full credit in period of acquisition if used entirely for taxable supplies. If mixed use (taxable and exempt), apportionment applies — flag for reviewer.
-
-### 5.11 Credit notes (Section 57)
-
-- **Credit notes treatment** — Supplier reduces output VAT in period of credit note. Buyer reverses input VAT. Both update Mushak-6.1/6.2. Register in Mushak-6.2.1.  _(Section 57)_
-
-### 5.12 Time of supply (Section 14)
-
-- **Time of supply rule** — VAT chargeable at the earlier of: invoice date, payment receipt, or delivery. Advance payments trigger VAT at receipt.  _(Section 14)_
-
-### 5.13 Turnover tax (simplified)
-
-- **Turnover tax rule** — Turnover tax payers file quarterly. Rate: 4% (BDT 50 lakh–3 crore) or 3% (BDT 30–50 lakh). No input credit. No reverse charge. Report total turnover and flat-rate tax only.
-
-## Section 6 — Tier 2 catalogue (compressed)
-
-### 6.1 Fuel and vehicle costs
-
-- **Fuel and vehicle costs guidance** — Pattern: petrol station, CNG, Padma Oil, Jamuna Oil. Why insufficient: vehicle type unknown. If passenger car, blocked. If commercial vehicle for business, deductible. Default: 0% recovery. Question: "Is this for a commercial vehicle used exclusively for business?"
-
-### 6.2 Entertainment and meals
-
-- **Entertainment and meals guidance** — Pattern: restaurant, hotel dining, catering. Why insufficient: entertainment blocked unless documented business promotion. Default: block. Question: "Was this documented promotional entertainment with supporting records?"
-
-### 6.3 Ambiguous SaaS billing entities
-
-- **Ambiguous SaaS billing guidance** — Pattern: Google, Microsoft, Meta, Amazon where legal entity not visible. Why insufficient: same brand can bill from various entities. Default: self-assess 15% reverse charge. Question: "Could you check the invoice for the legal entity name and country?"
-
-### 6.4 Round-number incoming transfers
-
-- **Round-number incoming transfers guidance** — Pattern: large round credit from owner-matching name. Default: exclude as proprietor injection. Question: "Is this a customer payment, your own capital injection, or a loan?"
-
-### 6.5 Incoming transfers from individuals
-
-- **Incoming transfers from individuals guidance** — Pattern: incoming from private-looking counterparties. Default: domestic sale at 15% (Part 2). Question: "Was this a sale? If so, what goods/services?"
-
-### 6.6 Cash withdrawals
-
-- **Cash withdrawals guidance** — Pattern: ATM, cash withdrawal. Default: exclude as proprietor drawing. Question: "What was the cash used for?"
-
-### 6.7 Mixed-use phone and internet
-
-- **Mixed-use phone and internet guidance** — Pattern: Grameenphone, Robi, Banglalink personal lines. Default: 0% recovery if mixed use. Question: "Is this a dedicated business line or personal/mixed?"
-
-### 6.8 Rent payments
-
-- **Rent payments guidance** — Pattern: monthly rent to landlord. Default: no input credit (no invoice assumed). Question: "Does the landlord issue a Mushak-11 with their BIN?"
-
-### 6.9 Outgoing transfers to individuals
-
-- **Outgoing transfers to individuals guidance** — Pattern: outgoing to private names. Default: exclude as drawings/wages. Question: "Was this a contractor payment with invoice, wages, or personal transfer?"
-
-### 6.10 Import-related payments
-
-- **Import-related payments guidance** — Pattern: LC, shipping, freight forwarder. Why insufficient: need Bill of Entry to determine VAT paid at customs. Default: exclude until Bill of Entry provided. Question: "Please provide the customs Bill of Entry showing VAT paid."
-
-## Section 7 — Excel working paper template (Bangladesh-specific)
-
-The base specification is in vat-workflow-base Section 3. This section provides the Bangladesh-specific overlay.
-
-### Sheet "Transactions"
-
-Columns A-L per the base. Column H ("Return section") accepts: Part 2, Part 3, Part 4, Part 6, Part 7, or blank for excluded transactions. For reverse-charge transactions, enter "Part 2 + Part 6" in column H.
-
-### Sheet "Return Summary"
-
-**Return Summary formula table**
-
-| Part 2  | Output tax on local sales      | =SUMIFS(Transactions!F:F, Transactions!H:H, "Part 2") |
-| Part 3  | Export sales (zero-rated)       | =SUMIFS(Transactions!E:E, Transactions!H:H, "Part 3") |
-| Part 4  | Exempt supplies                | =SUMIFS(Transactions!E:E, Transactions!H:H, "Part 4") |
-| Part 5  | Total output tax               | =Return_Summary!C[Part2_row] |
-| Part 6  | Input tax local purchases      | =SUMIFS(Transactions!F:F, Transactions!H:H, "Part 6") |
-| Part 7  | Input tax imports              | =SUMIFS(Transactions!F:F, Transactions!H:H, "Part 7") |
-| Part 8  | Total input tax credit         | =C[Part6_row]+C[Part7_row] |
-| Part 9  | Net tax payable                | =C[Part5_row]-C[Part8_row] |
-| Part 12 | Total payable                  | =MAX(C[Part9_row],0) |
-
-### Sheet "Return Form"
-
-Final Mushak-9.1-ready figures. If Part 8 > Part 5, excess credit carried forward (no refund claim via this skill).
-
-## Section 8 — Bank statement reading guide
-
-Follow the universal exclusion rules in vat-workflow-base Step 6, plus these Bangladesh-specific patterns.
-
-**CSV format conventions.** Dutch-Bangla and BRAC Bank exports typically use comma delimiters with DD/MM/YYYY dates. Common columns: Date, Description, Debit, Credit, Balance.
-
-**Bengali/Bangla language variants.** Some descriptions may appear in Bangla script. Treat transliterated equivalents the same as English.
-
-**Internal transfers and exclusions.** Own-account transfers between client's DBBL, BRAC, bKash accounts. Always exclude.
-
-**Proprietor draws.** Self-employed sole proprietors cannot pay themselves wages. Any transfer to personal account is a drawing. Exclude.
-
-**bKash/Nagad transactions.** Mobile financial service transactions appear as "BKASH", "NAGAD". Transaction fees are exempt. The underlying payment may be a sale or purchase — classify based on counterparty, not the payment method.
-
-**Foreign currency transactions.** Convert to BDT at the transaction date rate. Use Bangladesh Bank reference rate.
-
-## Section 9 — Onboarding fallback (only when inference fails)
-
-### 9.1 Entity type
-
-Inference: sole trader names match account holder; company names end in "Ltd", "Limited", "Pvt Ltd". Fallback: "Are you a sole proprietor, partnership, or company?"
-
-### 9.2 Registration type
-
-Inference: if asking for Mushak-9.1, VAT registered. If turnover below BDT 3 crore, may be turnover tax. Fallback: "Are you VAT registered (BIN holder, 15%) or turnover tax (3-4%)?"
-
-### 9.3 BIN
-
-Inference: 13-digit BIN may appear in payment descriptions. Fallback: "What is your 13-digit BIN?"
-
-### 9.4 Filing period
-
-Inference: first and last transaction dates. Monthly for VAT registered. Fallback: "Which month does this cover?"
-
-### 9.5 Industry
-
-Inference: counterparty mix, sales descriptions. Fallback: "What does the business do?"
-
-### 9.6 Exempt supplies
-
-Inference: presence of medical/educational/financial income. Fallback: "Do you make any VAT-exempt sales?" If yes and significant, apportionment required.
-
-### 9.7 Exports
-
-Inference: foreign currency incoming, foreign counterparties. Fallback: "Do you export goods or services?"
-
-### 9.8 Credit brought forward
-
-Not inferable. Always ask: "Do you have excess credit from the prior period?"
-
-## Section 10 — Reference material
-
-### Sources
-
-1. Value Added Tax and Supplementary Duty Act 2012 — Sections 2, 5, 14, 15, 18, 24, 25, 45-52, 57, 107, 109-130
-2. VAT & SD Rules 2016 — Rules 40-47, Mushak form series
-3. NBR Statutory Regulatory Orders (SROs) for reduced rates and exemptions
-4. NBR Mushak Online Portal — https://vat.gov.bd
-
-### Known gaps
-
-1. Supplier pattern library covers major Bangladeshi banks and utilities but not every local vendor. Add patterns as they emerge.
-2. Supplementary Duty computation is refused (R-BD-4) — a future version should add SD for common categories.
-3. SRO-based reduced rates change frequently. Verify current SRO schedule before each filing period.
-4. Multi-establishment (separate BIN) consolidation is refused (R-BD-3).
-5. Worked examples are for a hypothetical IT consultant in Dhaka. Sector-specific examples (garments, pharmaceuticals) should be added in v2.1.
-
-### Change log
-
-- v2.0 (April 2026): Full rewrite to Malta v2.0 ten-section structure. Supplier pattern library added (Section 3). Worked examples added (Section 4). Tier 1 rules compressed (Section 5). Tier 2 catalogue added (Section 6). Excel template specification added (Section 7). Bank statement reading guide added (Section 8). Onboarding moved to fallback role (Section 9).
-- v1.1: Previous monolithic version with full Mushak form mappings and test suite.
-
-### Self-check
-
-1. Quick reference at top with return sections and conservative defaults: yes (Section 1).
-2. Supplier library as literal lookup tables: yes (Section 3, 10 sub-tables).
-3. Worked examples: yes (Section 4, 6 examples).
-4. Tier 1 rules compressed: yes (Section 5, 13 rules).
-5. Tier 2 catalogue compressed: yes (Section 6, 10 items).
-6. Excel template specification: yes (Section 7).
-7. Onboarding as fallback: yes (Section 9, 8 items).
-8. All 5 Bangladesh-specific refusals present: yes (Section 2).
-9. Reference material at bottom: yes (Section 10).
-10. Blocked input VAT explicit: yes (Section 5.7 + Example 5).
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional before filing or acting upon.
+## Scope
+
+Standard VAT-registered and turnover-tax-enlisted businesses. Load vat-workflow-base for document ingestion and review architecture. This file prepares transaction and return working papers; sector relief/SROs, EPZ/SEZ, separate-BIN consolidation, supplementary duty, VDS agents and refund claims require specialist review. Rules below state the law read on 14 November 2026; older 2026 filing periods need their applicable versions.
+
+## Ask the client first
+
+- Actual and expected turnover, excluded turnover categories, activity and registration/enlistment certificate/BIN.
+- Complete period statements, sales and purchase invoices, customs goods declarations and bank service-import challans.
+- Domestic/export/exempt activity, supplier legal entity and any sector SRO.
+- Prior credit, credit/debit notes, taxable/business use, payment channel and special-regime flags.
+
+## The method, step by step
+
+### Quick reference and rates, bands and thresholds
+
+| Item and complete condition | Current amount/rate/time | Official source |
+|---|---|---|
+| Ordinary taxable import/supply, no applicable exception | 15% | Act section 15: https://bdlaws.minlaw.gov.bd/act-1106/section-42308.html |
+| Qualifying zero-rated export/service, with actual section conditions met | 0%; distinguish exemption and input-credit restrictions | Sections 23-24; service text: https://bdlaws.minlaw.gov.bd/act-1106/section-42317.html |
+| General registration threshold | Turnover over BDT 5,000,000 in the relevant rolling/expected 12-month test; excluded values and activity-independent registration apply | Sections 2(57) and 4: https://bdlaws.minlaw.gov.bd/act-print-1106/section-print-42295.html; https://bdlaws.minlaw.gov.bd/act-print-1106/section-print-42297.html |
+| Turnover-tax enlistment | Over BDT 3,000,000 but not over registration threshold, subject to activity rules; application within 30 days of crossing | Sections 2(48), 10: https://bdlaws.minlaw.gov.bd/act-print-1106/section-print-42295.html; https://bdlaws.minlaw.gov.bd/act-1106/section-42303.html |
+| Turnover tax before a relevant region/activity-specific fixed-amount notification is made | 4%; section 63 permits specified fixed amounts up to BDT 200,000, so check notification before using the fallback | Section 63(1): https://bdlaws.minlaw.gov.bd/act-1106/section-42359.html |
+| Tax period | Calendar month; current return rule effective 1 October 2026 is for each tax period | Sections 2(30), 64: https://bdlaws.minlaw.gov.bd/act-print-1106/section-print-42295.html; https://bdlaws.minlaw.gov.bd/act-1106/section-42360.html |
+| Ordinary filing | Within 15 days after period end; next working day if the last day is a government holiday | Section 64(1): https://bdlaws.minlaw.gov.bd/act-1106/section-42360.html |
+| Government/semi-government/autonomous bodies, banks, insurers and nil filers | May file within 20 days after period end; Board extensions must be evidenced | Section 64(1)-(2): https://bdlaws.minlaw.gov.bd/act-1106/section-42360.html |
+| Input-credit time limit, subject to all conditions | Acquisition/invoice or goods-declaration period or next 6 tax periods | Section 46(1)(c): https://bdlaws.minlaw.gov.bd/act-1106/section-42342.html |
+| Taxable supply payment over BDT 100,000 | Banking/mobile-banking payment condition; same-owner registered supply exception in statute | Section 46(1)(a): https://bdlaws.minlaw.gov.bd/act-1106/section-42342.html |
+
+The old BDT 30-50 lakh at 3% and 50 lakh-3 crore at 4% map is not current. No reduced/truncated or sector rate is assumed from a brand name. Read the specific schedule/SRO before using one.
+
+### Establish registration and classification
+
+1. Test actual and expected turnover and the statutory excluded amounts: exempt supplies, capital asset sales, business/part-business transfers and permanent-closure supplies. Section 4 also requires registration regardless of turnover for listed SD activity, tender/contract/work-order supply, import/export business, foreign offices, VAT agents and Board-specified cases. It also contains BIN/enlistment proof requirements for specified business services. Check the full provision, not only a numerical threshold (https://bdlaws.minlaw.gov.bd/act-print-1106/section-print-42297.html).
+2. Apply for registration/enlistment through the official eVAT service https://vat.gov.bd with the entity/activity documents and keep the certificate/effective date. Section 10 gives the enlistment process and electronic certificate. A missing BIN does not mean the business is free of a registration duty (https://bdlaws.minlaw.gov.bd/act-1106/section-42303.html).
+3. A full-period bank statement is the minimum ingestion input. With no statement, stop this bank-led workflow. A statement-only draft may proceed as a clearly provisional working paper; no input credit is signed off without compliant evidence. Obtain sales/purchase registers, invoices, BIN, customs declarations and prior return/credit before finalization. The old recommendation to use Mushak-11 is replaced by current prescribed invoice evidence; see [invoicing](bd-einvoice.md).
+4. Identify the actual supply, consideration, supplier/recipient legal entity, place and time. Standard VAT is not a conservative substitute for missing facts. Use section 33 for the earlier relevant delivery/supply, invoice or payment event and the periodic-supply exceptions; the old section 14 citation was wrong (https://bdlaws.minlaw.gov.bd/act-1106/section-42328.html).
+5. Exports of goods and exported/qualifying overseas services need the actual section 23/24 conditions and evidence. For section 24(6), recipient is abroad when supplied and the service is not directly tied to Bangladesh land/goods or excluded roaming; rights/subsequent Bangladesh supply and other exceptions must be checked. A foreign payer alone does not establish zero rating (https://bdlaws.minlaw.gov.bd/act-1106/section-42317.html). EPZ/deemed-export or diplomatic treatment is not automatically the same as a standard export.
+6. Exemption depends on the current First Schedule/SRO, not merely a health, education, financial or transport counterparty label. Separate exempt output and its attributable inputs; do not treat all bank fees, insurance, mobile-payment fees, regulatory charges or rent as exempt by name.
+
+### Input credit, imports and adjustments
+
+7. Check section 46 before recovery: economic-activity/taxable use, prescribed register, correct names/address/BIN, payment condition and claim window; additional import/guarantee/input-output-coefficient restrictions apply. Exempt activity, turnover tax, SD and many reduced/specific-rate supplies do not give ordinary credit. A banking/telco/utility bill can be the statutory evidence where section 46(3) says so; the bill must show actual VAT, not an assumed rate (https://bdlaws.minlaw.gov.bd/act-1106/section-42342.html).
+8. Passenger vehicles, related repair/maintenance, entertainment and club membership have express restrictions. Vehicle trading/hire/transport and ordinary-course entertainment businesses have specified exceptions; mere documented business promotion does not automatically override the rule. Check the statutory input definition too. Lost/stolen/destroyed goods, free samples, capital goods and mixed-use changes require actual adjustment law, not the old automatic all-or-nothing rule. Apply current section 47 to credit allocation and the required increasing adjustment for the relevant tax period (https://bdlaws.minlaw.gov.bd/act-1106/section-42342.html; https://bdlaws.minlaw.gov.bd/act-1106/section-42343.html).
+9. Import VAT on goods uses the statutory customs value plus relevant duties/taxes under section 28, not merely assessable value plus customs duty. Keep the customs goods declaration and evidence of tax paid before credit (https://bdlaws.minlaw.gov.bd/act-1106/section-42322.html). No SD or advance-tax computation is supplied here.
+10. From the current section 20, imported services other than First-Schedule-exempt services are taxable at the statutory service-import rate. Recipient bears output liability; banks/financial institutions/authorized foreign-exchange dealers depositing VAT on payment provide the treasury challan as invoice evidence. Input credit requires the service to be a qualifying input and compliance with section 46. Display the imported-service output separately and do not double-pay or double-claim bank-collected VAT. The old section 18(3) citation and automatic zero net effect were wrong (https://bdlaws.minlaw.gov.bd/act-1106/section-42313.html).
+11. Use compliant credit/debit notes and matched invoice references for increasing/decreasing adjustments under section 52; preserve both supplier and buyer entries. Do not use section 57 as the credit-note rule (https://bdlaws.minlaw.gov.bd/act-1106/section-42348.html). Carry excess credit through the applicable statutory process; this workflow does not file an automatic refund claim.
+12. Turnover-tax filers have no input-VAT/turnover-tax credit under section 63(4). That does not establish a blanket exemption from imported-service VAT. Keep any separate imported-service liability under section 20 and refer where the process is unresolved (https://bdlaws.minlaw.gov.bd/act-1106/section-42359.html; https://bdlaws.minlaw.gov.bd/act-1106/section-42313.html).
+
+### Supplier cues and exception questions
+
+These preserve the old recognition vocabulary as investigation cues. A counterparty substring never overrides the actual invoice, supply and current schedule.
+
+| Cue group | Patterns retained | Investigation and treatment control |
+|---|---|---|
+| Banks/finance | DUTCH-BANGLA, DUTCH BANGLA, DBBL, BRAC BANK, BRAC BNK, EASTERN BANK, EBL, CITY BANK, ISLAMI BANK, AB BANK, STANDARD CHARTERED BD, HSBC BD, UCBL, PRIME BANK, MUTUAL TRUST, INTEREST, MUNAFA, PROFIT, LOAN, REPAYMENT | Separate principal, interest and fee. Principal is not a sale; check actual fee VAT/exemption and bill, not blanket exclusion. |
+| Government/regulators | NBR, NATIONAL BOARD OF REVENUE, VAT DEPARTMENT, MUSHAK, CUSTOMS, SHULKO, BIDA, BOI, RJSC, RAJUK, CDA, KDA, INCOME TAX, TAX DEDUCTED | Separate tax payment, statutory fee and an actual supply. Customs declaration may support import credit; payment text alone does not. |
+| Utilities/telco | DESCO, DPDC, BPDB, NESCO, BREB, TITAS GAS, BAKHRABAD GAS, JALALABAD GAS, WASA, DHAKA WASA, CHITTAGONG WASA, GRAMEENPHONE, GP, ROBI, BANGLALINK, TELETALK | Read rate and VAT on the bill, service code, tax date, business use and SD. No universal utility VAT/SD rate is assigned. |
+| Insurance/MFS | SADHARAN BIMA, JIBAN BIMA, GREEN DELTA, PRAGATI, PIONEER, METLIFE BD, GUARDIAN LIFE, BKASH, B-KASH, NAGAD, ROCKET, DBBL MOBILE, UPAY, SURE CASH | Separate the underlying sale/purchase, insurance or transaction fee; check the applicable schedule and evidence. |
+| Payroll | SALARY, BETON, WAGES, PROVIDENT FUND, PF, GRATUITY | Genuine employee remuneration/fund movements are not ordinary supplier sales; confirm employment and purpose. |
+| Overseas software/advertising | GOOGLE, GOOGLE ADS, MICROSOFT, AZURE, OFFICE 365, META, FACEBOOK ADS, AMAZON AWS, AWS, ZOOM, SLACK, DROPBOX, CANVA, FIGMA, NOTION | Read legal billing entity, country, VAT shown and any bank challan; apply imported-service and duplicate-payment checks. |
+| Professional/property | CA FIRM, AUDIT, CHARTERED ACCOUNTANT, ADVOCATE, LAWYER, BARRISTER, CONSULTANT, ENGINEERING, RENT, BHARA, OFFICE RENT, HOUSE RENT, RESIDENTIAL | Confirm actual service/use, landlord/supplier status, schedule and invoice. No automatic professional-service credit or blanket residential exemption here. |
+| Transfers/owner/cash | OWN TRANSFER, INTERNAL, ACCOUNT TRANSFER, DIVIDEND, CASH WITHDRAWAL, ATM, DIRECTOR FEE, PROPRIETOR DRAWING | Reconcile matched own-account/principal/drawings separately. Director business services need their statutory exception; a transfer label alone is insufficient. |
+
+Retain questions for fuel/CNG (Padma Oil/Jamuna Oil), commercial versus passenger vehicles, entertainment/meals, ambiguous SaaS entity, round-number incoming capital versus sale/loan, transfers to/from individuals, cash withdrawals, mixed-use phone/internet, rent invoice and import-related LC/shipping/freight payments. Keep unresolved credits out of the claim; retain undecided output classifications visibly for reviewer resolution rather than silently treating them as exempt. Request a customs declaration for import taxes and previous-return proof for credit brought forward.
+
+### Working-paper and filing sequence
+
+13. Normalize source bank dates, debit/credit signs, currency and Bangla/transliterated descriptions. CSV delimiter/date/column formats vary; common Date/Description/Debit/Credit/Balance columns are cues, not guaranteed DBBL/BRAC schemas. Match internal transfers across bank/bKash accounts, distinguish proprietor drawings from wages, and classify the underlying MFS payment. Use documented transaction-date currency conversion; no fixed USD/BDT rate is supplied.
+14. Keep a Transactions sheet with original line, date, counterparty, document reference, legal classification, net consideration, output VAT, eligible input VAT, import challan, adjustments and unresolved facts. Keep output and input in separate columns so a service-import row cannot disappear from a SUMIFS exact-text match.
+15. Build Return Summary by summing those controlled columns and reconciling net liability/credit, SD (where externally computed), adjustments and prior credit. Return Form contains reviewed amounts and actual current form fields. The old synthetic Part 1-12 mapping and `Part 2 + Part 6` string formula are not verified current Mushak boxes and must not be used as filing instructions.
+16. VAT Rules 47 identifies Mushak/VAT-9.1 for registered VAT and 9.2 for turnover tax. Use the actual current form at https://vat.gov.bd, confirm identity, registration, period and relevant output/input/adjustment fields, pay the amount due and retain challan and submission acknowledgement. Current section 64 is monthly from October 2026 with the deadline/exception card above; do not apply the superseded quarterly-return wording to a current period. Earlier periods and Board extensions require their applicable instrument.
+17. Escalate an unknown entity type, certificate/BIN, filing period, industry/exempt activity, export evidence or credit balance. The base workflow's materiality flags may prioritize review but do not turn unsourced old fixed red-flag amounts into statutory thresholds.
+
+## Worked cases
+
+### Domestic sale
+
+ABC TECHNOLOGIES LTD pays gross BDT 115,000 for a documented standard-rated taxable supply. Net 100,000 and VAT 15,000 are derived using the statutory tax fraction; issue the current prescribed invoice. Do not apply the rate solely because the customer pays BDT.
+
+```oa-check
+name: Standard taxable domestic gross amount
+inputs:
+  gross: 115000
+  rate: 0.15
+steps:
+  - net: gross / (1 + rate)
+  - vat: gross - net
+expected:
+  net: 100000
+  vat: 15000
+```
+
+### Purchase: evidence and input definition first
+
+COMPUTER SOURCE BD invoice gross 23,000 contains 3,000 VAT and 20,000 net. Recovery is 3,000 only if this is a qualifying input used for taxable supply and all statutory conditions are established. The old office-supplies label alone did not prove credit.
+
+```oa-check
+name: Qualified purchase invoice arithmetic
+inputs:
+  gross: 23000
+  rate: 0.15
+steps:
+  - net: gross / (1 + rate)
+  - vat: gross - net
+expected:
+  net: 20000
+  vat: 3000
+```
+
+### Service export
+
+STUDIO KREBS GMBH pays 350,000 for a service proved to meet section 24's export conditions. VAT is 0 and consideration 350,000. The old assumed bank-realization deadline is not supplied as a condition here; obtain the applicable remittance rules separately.
+
+```oa-check
+name: Documented qualifying service export
+inputs:
+  consideration: 350000
+  rate: 0
+steps:
+  - vat: consideration * rate
+  - total: consideration + vat
+expected:
+  vat: 0
+  total: 350000
+```
+
+### Imported service: credit is conditional
+
+GOOGLE IRELAND LIMITED service value 2,800, with imported-service VAT 420 established under section 20 and matching bank challan. For a fully qualifying input, credit 420 offsets output 420; if wholly noncreditable, VAT cost is 420. Avoid duplicating VAT already deposited through the bank.
+
+```oa-check
+name: Imported service credit decision after bank challan
+inputs:
+  service_value: 2800
+  rate: 0.15
+steps:
+  - output: service_value * rate
+  - eligible_credit: output
+  - fully_eligible_net: output - eligible_credit
+  - noncreditable_net: output
+expected:
+  output: 420
+  eligible_credit: 420
+  fully_eligible_net: 0
+  noncreditable_net: 420
+```
+
+### Passenger vehicle and bank-charge evidence
+
+TOYOTA BANGLADESH passenger-car lease of 85,000 for a consultant, not a qualifying vehicle business: no input credit is signed off under section 46. DUTCH-BANGLA BANK fee 500: obtain the actual fee invoice and applicable schedule rather than assume exemption. Those cash amounts remain in the working paper; no invented embedded VAT is extracted.
+
+```oa-check
+name: Cash outlays with no evidenced credit signed off
+inputs:
+  car_cash: 85000
+  bank_fee_cash: 500
+  signed_off_credit: 0
+steps:
+  - cash_total: car_cash + bank_fee_cash
+  - cash_after_signed_off_credit: cash_total - signed_off_credit
+expected:
+  cash_total: 85500
+  cash_after_signed_off_credit: 85500
+```
+
+## When to refuse or refer
+
+R-BD-1: do not claim input VAT for a turnover-tax filer. R-BD-2: refer EPZ/SEZ/bond/deemed-export regimes. R-BD-3: refer multi-establishment separate-BIN consolidation and transfer documents. R-BD-4: refer product-specific supplementary duty. R-BD-5: refer designated VDS agent obligations/certificates/deposits. Also refer refunds, uncertain reduced/exempt rates, complex apportionment and unknown output classifications. With no complete bank statement stop this bank-led workflow; without invoices keep only a clearly provisional draft.
+
+## Sources
+
+| Source and sections actually read | Official URL | Read on |
+|---|---|---|
+| Read for definitions: economic activity/director exception, input scope, tax fraction/period, thresholds and excluded turnover | https://bdlaws.minlaw.gov.bd/act-print-1106/section-print-42295.html | 2026-11-14 |
+| Read for section 4 complete registration and BIN-proof triggers | https://bdlaws.minlaw.gov.bd/act-print-1106/section-print-42297.html | 2026-11-14 |
+| Read for section 10 current enlistment/eVAT certificate | https://bdlaws.minlaw.gov.bd/act-1106/section-42303.html | 2026-11-14 |
+| Read for section 15 standard rate and alternatives | https://bdlaws.minlaw.gov.bd/act-1106/section-42308.html | 2026-11-14 |
+| Read for section 20 current imported-service charge, bank collection and conditional credit | https://bdlaws.minlaw.gov.bd/act-1106/section-42313.html | 2026-11-14 |
+| Read for section 24 zero-rated service conditions and neighboring exceptions | https://bdlaws.minlaw.gov.bd/act-1106/section-42317.html | 2026-11-14 |
+| Read for section 28 import valuation | https://bdlaws.minlaw.gov.bd/act-1106/section-42322.html | 2026-11-14 |
+| Read for section 33 time of supply and periodic/other exceptions | https://bdlaws.minlaw.gov.bd/act-1106/section-42328.html | 2026-11-14 |
+| Read for section 46 complete credit restrictions, evidence and time limit | https://bdlaws.minlaw.gov.bd/act-1106/section-42342.html | 2026-11-14 |
+| Read for section 47 partial-credit rule | https://bdlaws.minlaw.gov.bd/act-1106/section-42343.html | 2026-11-14 |
+| Read for section 52 credit/debit-note conditions | https://bdlaws.minlaw.gov.bd/act-1106/section-42348.html | 2026-11-14 |
+| Read for section 63 turnover-tax fallback, fixed-amount power and no-credit rule | https://bdlaws.minlaw.gov.bd/act-1106/section-42359.html | 2026-11-14 |
+| Read for section 64 current deadlines and exceptions, effective October 2026 | https://bdlaws.minlaw.gov.bd/act-1106/section-42360.html | 2026-11-14 |
+| Read for VAT Rules 40 invoice/adjustment documents and 47 return forms | https://nbr.gov.bd/uploads/rules/Authentic_English_Text_VAT_Rules_2016.pdf | 2026-11-14 |
+
+Not yet confirmed: Current activity-specific fixed turnover-tax notifications, reduced/truncated rates (old 5%, 7.5%, 10% labels are not assigned to a supply), First-Schedule/sector exemptions, telecom SD, current Mushak-9.1/9.2 field map, EFD notifications, bank-realization deadlines, historical filing periods, VAT penalties/interest, exact mixed-use/annual-adjustment method and currency conversion requirements. The old fixed red-flag values were workflow choices, not sourced legal thresholds; use explicit reviewer policy. No automatic bank/insurance/MFS exemption or input credit is certified.
