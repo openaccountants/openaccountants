@@ -1,46 +1,137 @@
 ---
 name: tc-hotel-tourism-tax
 description: >
-  Turks and Caicos hotel and tourism tax reference checked for 2026. Covers the administrative scope of the twelve percent levy, advance registration, the application-based small-provider exemption and monthly filing. Includes tax-exclusive and tax-inclusive examples and the 2026 switch to automated emailed remittance forms. Distinguishes accommodation and prescribed tourism services from a universal sales tax, and hotel-attached restaurants from other designated establishments. Use after the transaction’s taxable status and tax base have been established. The operative ordinance, subsequent amendments, records-retention conflict and special transaction rules require further reconciliation. This source-cited draft is not independently accountant-reviewed.
-version: 0.2
+  Turks and Caicos hotel, restaurant and tourism tax for 2026, the Islands' main
+  consumption tax in place of VAT. Covers the 12% rate on accommodation, vacation rentals,
+  designated restaurants and bars and prescribed tourism services, registration 30 days
+  before trading, designation criteria, the USD 4,000 monthly exemption for independent
+  tourism providers on application, the 21st-of-the-month due date, the 20% penalty and
+  1.5% monthly interest, nil returns, records, automated remittance forms, and the other
+  sales-type taxes (communications, financial services, insurance premium, vehicle hire).
+  Trigger phrases include Turks and Caicos hotel tax, HRTT, TCI tourism tax, TCI VAT.
+version: "1.0"
 jurisdiction: TC
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 category: international
+type: situation-rules
+domain: tax
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
-domain: income-tax
 ---
 
-# Turks and Caicos hotel and tourism tax
+# Turks and Caicos hotel and tourism tax v1.0
 
-## Scope and registration
+> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
-Checked 22 October 2026 against Revenue Department administrative guidance. The [tax overview](https://www.gov.tc/revenue/htt) specifies 12% on accommodation, designated restaurants/bars and prescribed tourism services. Examples of prescribed services include watersports, tours, spas, bicycle rental and destination wedding planning. This is not a statement that every sale of goods or services attracts 12%.
+## Who this applies to
 
-The same source requires registration 30 days before operations commence. Hotel-attached bars/restaurants are registered; other restaurants/bars depend on designation. Independent tourism providers can apply in writing for exemption where monthly business is below the stated $4,000 threshold, with evidence. Registration and collection apply initially; low turnover is not automatic exemption. [Revenue overview](https://www.gov.tc/revenue/htt).
+Businesses in the Turks and Caicos Islands that supply accommodation (hotels, resorts, villa and condo owners, vacation rentals), meals and drinks at hotel bars and restaurants or designated restaurants and bars, and prescribed tourism services, under the Hotel, Restaurant and Tourism Taxation Ordinance, administered by the Revenue Department (Inland Revenue Department, Ministry of Finance). Amounts are US dollars.
 
-Before calculating tax, establish the service supplied, applicable registration/designation and any written exemption. Keep the effective date with the transaction records. A business licence alone is not evidence that a transaction is tax-exempt.
+The Islands have no VAT, no general sales tax and no income tax. The Revenue Department administers five sales-type taxes, on tourism, financial services, telecommunications, insurance premiums and vehicle hire, plus business licences ([Revenue streams](https://gov.tc/revenue/streams)). This skill owns the hotel and tourism tax and lists the others.
 
-## Worked calculations
+Prescribed tourism services include tour operator and tourist guide services, camping and caravan sites, camping equipment rental, watersports and watersports or beach equipment rental, sports fishing, sightseeing excursions (including by aircraft or helicopter), non-motorised land and air transport equipment rental, and parasailing, parachuting and zip lining ([Hotel and tourism tax](https://www.gov.tc/revenue/htt)).
 
-Assume taxable status and the tax-exclusive base are already established, with no special adjustments. The [revenue-stream table](https://gov.tc/revenue/streams) independently lists the 12% hotel/tourism rate.
+## Rates, bands and thresholds
 
-| Established taxable charge | Tax | Customer total |
-|---|---:|---:|
-| $1,000 before tax | $120 | $1,120 |
-| $2,500 before tax | $300 | $2,800 |
+| Item | 2026 figure and conditions | Official source |
+|---|---|---|
+| Hotel and tourism tax | 12% on accommodation, vacation rentals, designated meals and drinks and prescribed tourism services | [Hotel and tourism tax](https://www.gov.tc/revenue/htt) |
+| Exemption threshold, independent tourism service providers | Turnover below USD 4,000 a month, on written application with sufficient evidence; all providers are first registered to collect | same |
+| Late payment penalty | 20% of the tax overdue, immediately after the 21st | same |
+| Late payment interest | 1.5% a month of the tax while it remains outstanding | same |
+| Communications tax (telecom companies, internet service providers) | 12% | [Revenue streams](https://gov.tc/revenue/streams) |
+| Domestic financial services sales tax (financial institutions, money transfer operators, on financial services fees) | 12% | same |
+| Insurance premium sales tax (domestic business except life and health) | 2.5% | same |
+| Vehicle hire stamp duty (motor vehicle and scooter rental) | 12% | same |
+| Business licence | Varies | same |
 
-If the agreed $1,120 amount already includes only this 12% tax, the base is 1,120 ÷ 1.12 = $1,000 and the tax is $120. Applying 12% to the inclusive amount would incorrectly produce $134.40. This illustration does not establish treatment of service charges, commissions, deposits or bundled packages; those require their own statutory analysis.
+## The base
 
-## Filing and payment
+- Tax is charged on the charge for the taxable supply. If a price is stated as including the 12% tax and nothing else, the tax is 12/112 of it; applying 12% to an inclusive price overstates the tax.
+- Bars and restaurants attached to a hotel are registered at once. Other bars and restaurants may be designated by the Department on size, location, seating capacity, monthly or annual turnover, or whether the customers are largely tourists.
+- A business licence alone does not make a supply taxable or exempt; check registration, designation and any written exemption, and keep the effective date with the records.
 
-The [tax overview](https://www.gov.tc/revenue/htt) gives the twenty-first of the following month for remittance and requires nil returns during seasonal closure. Its small-provider relief requires an application, so do not stop filing solely because monthly receipts fall. The [Revenue FAQ](https://www.gov.tc/revenue/faqs) states payment is due on the preceding working day when the due date falls on a weekend or holiday. This differs from the health-insurance Board's administrative convention; keep separate calendars.
+## Deadlines and filing
 
-The [July 2026 notice](https://www.gov.tc/revenue/news/inland-revenue-department-introduces-automated-monthly-remittance-forms) announces automatic email distribution of monthly remittance forms from 1 August 2026. It asks taxpayers with missing forms to correct their registered contact details with the Department. This supersedes the older request-by-email procedure. The notice's reminder dates are reminders, not replacement filing deadlines.
+| Step | Rule | Source |
+|---|---|---|
+| Register | 30 days before operations begin, on the HRTT registration form; registrants get an advisory session | [Hotel and tourism tax](https://www.gov.tc/revenue/htt) |
+| File and pay | On or before the 21st of each month for the month before, with the remittance form for the period | same |
+| Weekend or holiday | Pay on the last working day before the weekend or holiday | [Revenue FAQ](https://www.gov.tc/revenue/faqs) |
+| Remittance forms | Generated and emailed automatically since 1 August 2026; keep contact details current with the Department | [IRD notice](https://www.gov.tc/revenue/news/inland-revenue-department-introduces-automated-monthly-remittance-forms) |
+| Seasonal closure | File a nil return and give written notice of the closure period | [Hotel and tourism tax](https://www.gov.tc/revenue/htt) |
+| Changes | Notify the Department of any change to registration details | same |
 
-## Records and open legal checks
+## Penalties and interest
 
-Reconcile registered activity, invoices, tax collected, returns and payments each month. Preserve the records while the retention rule is resolved: the tourism-tax overview says seven years, while the generic FAQ says five. This batch does not certify either as the controlling statutory period.
+Missing the 21st brings an immediate 20% penalty on the overdue tax and interest of 1.5% a month on the tax for as long as it is unpaid ([Hotel and tourism tax](https://www.gov.tc/revenue/htt)). Tax is self-assessed and returns are subject to audit.
 
-The link labelled as the hotel-tax ordinance on the Revenue homepage opened a business-licence consultation document. The separately linked February 2024 hotel-tax advisory also describes proposals. Neither has been treated as enacted law. The actual ordinance and amendment chain still need retrieval and reconciliation before merge, including rate, base, exemption, retention and penalty provisions. Independent accountant review is pending.
+## Cross-border points
+
+- A non-resident owner letting a villa or condo is a taxpayer like any other accommodation provider.
+- Online booking platforms: who collects and remits for a platform booking is not confirmed here; the owner remains registered.
+- The Revenue Department's list of taxes has no income tax, so the rental profit itself is not taxed in the Islands; the owner's home country may tax it.
+
+## Two worked examples that recompute
+
+### Example 1: a price that includes the tax
+
+A guest pays USD 1,120 for a room, stated to include the 12% hotel tax and nothing else. The base is 1,120 / 1.12 = 1,000 and the tax 120. Applying 12% to 1,120 would give 134.40, overstating the tax by 14.40.
+
+```oa-check
+name: TCI hotel tax extracted from a tax-inclusive price
+inputs:
+  inclusive: 1120
+  rate: 0.12
+steps:
+  - base: inclusive / (1 + rate)
+  - tax: inclusive - base
+  - wrong_tax: inclusive * rate
+  - overstatement: wrong_tax - tax
+expected:
+  base: 1000
+  tax: 120
+  wrong_tax: 134.40
+  overstatement: 14.40
+```
+
+### Example 2 (decision): pay on time or two months late
+
+A villa owner owes USD 5,000 for October, due 21 November. Paid on time the cost is 5,000. Paid two months late it is 5,000 plus the 20% penalty (1,000) plus 1.5% interest for two months (150), total 6,150. Borrowing to pay on time is cheaper unless the loan costs more than 1,150 on 5,000 over two months.
+
+```oa-check
+name: TCI hotel tax paid on time against two months late
+inputs:
+  tax: 5000
+  months_late: 2
+steps:
+  - penalty: tax * 0.20
+  - interest: tax * 0.015 * months_late
+  - late_total: tax + penalty + interest
+  - cost_of_delay: late_total - tax
+expected:
+  penalty: 1000
+  interest: 150
+  late_total: 6150
+  cost_of_delay: 1150
+```
+
+## Ask the client first
+
+1. What exactly is supplied: rooms, a villa, meals and drinks, a tour or another listed service?
+2. Is the business registered for the tax, designated, or exempt in writing, and from when?
+3. Are prices quoted before or including the tax?
+4. Monthly turnover (for the USD 4,000 independent provider exemption).
+5. Is the business seasonal, and were nil returns filed for closed months?
+
+## Sources
+
+| Source | URL | Read on |
+|---|---|---|
+| Revenue Department, hotel and tourism tax page: read for the 12% rate, taxable services, registration, designation, the USD 4,000 exemption, the 21st, the penalty and interest, nil returns and the seven-year record rule | https://www.gov.tc/revenue/htt | 2026-11-14 |
+| Revenue Department, major revenue streams: read for the five sales-type taxes and their rates | https://gov.tc/revenue/streams | 2026-11-14 |
+| Revenue Department, FAQ: read for the weekend and holiday rule and the five-year record statement | https://www.gov.tc/revenue/faqs | 2026-11-14 |
+| IRD notice on automated monthly remittance forms: read for the start on 1 August 2026 | https://www.gov.tc/revenue/news/inland-revenue-department-introduces-automated-monthly-remittance-forms | 2026-11-14 |
+
+Not yet confirmed: the record-keeping period (the tax page says seven years, the FAQ five; keep seven); whether interest compounds (the example treats 1.5% a month as simple, on the tax); the text of the Hotel, Restaurant and Tourism Taxation Ordinance itself (not opened; the Revenue homepage link to it opened a business licence consultation) and the Hotel, Restaurant, Tourism (Taxation) (Exemption) Regulations 2024 (LN 13 and 18 of 2024, listed by the Attorney General's Chambers, not opened); how platform bookings are handled.
