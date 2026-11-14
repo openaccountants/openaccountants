@@ -15,9 +15,9 @@
 
 | File | Retained scope and boundary |
 | --- | --- |
-| `nd-estimated-tax.md` | Separate 2025-2026 individual estimate workflow, unchanged; core `nd-income-tax` supplies current 2026 tests and amounts. Do not use old rates as 2026 authority. |
-| `nd-return-assembly.md` | Separate 2025-2026 return assembly, unchanged; final 2026 form mapping is partial. |
-| `nd-cross-border-tax.md` | Separate cross-border job, unchanged 2025 scope; no general 2026 update claimed. |
+| `nd-estimated-tax.md` | 2026 individual ND-1ES workflow and payment/interest owner; final2026ND-1UT remains a stated update gap. |
+| `nd-return-assembly.md` | 2026 reviewer-package preparation; actual2025-2026filing-cycle mapping clearly labelled, final2026forms remain a filing gate. |
+| `nd-cross-border-tax.md` | 2026 source/residence, reciprocity and credit method; final2026ND-1NR/ND-1CR mapping remains partial. |
 | `nd-transfer-pricing.md` | Separate transfer-pricing job, unchanged existing 2026 scope; not an ordinary corporate computation or new independent approval. |
 
 `nd-payroll` owns wage withholding and employer reconciliation; `nd-social-contributions` owns state UI. Both original slugs remain because they serve different jobs. Their UI overlap has been consolidated into the UI owner, with all old UI assertions either corrected there or explicitly reserved.

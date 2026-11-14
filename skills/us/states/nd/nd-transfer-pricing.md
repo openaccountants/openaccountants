@@ -18,8 +18,8 @@ category: transfer-pricing
 tax_year: 2026
 tier: 2
 verified_by: pending
-last_updated: 2026-11-13
-version: 0.4
+last_updated: 2026-11-14
+version: 0.5
 ---
 
 # North Dakota transfer pricing (combined reporting, water's edge, apportionment)
@@ -163,14 +163,14 @@ No figures stated in this section.
 
 | Source | URL | Read on |
 | --- | --- | --- |
-| US-ND-dr-nd-booklet2024.pdf | https://www.tax.nd.gov/sites/www/files/documents/forms/individual/2024-iit/2024-individual-income-tax-booklet.pdf | 2026-10-28 |
-| US-ND-dr-nd-withholding-2025.pdf | https://www.tax.nd.gov/sites/www/files/documents/misc-discuss-folder/Final_2025%20Income%20Tax%20Withholding%20Rates%20%20Instructions.pdf | 2026-10-28 |
-| US-ND-dr-ndwr.pdf | https://www.tax.nd.gov/sites/www/files/documents/forms/business/ndwrfillable.pdf | 2026-10-28 |
-| US-ND-dr-nd-walsh-county-notice-2026.pdf | https://www.tax.nd.gov/sites/www/files/documents/forms/business/sales-use/local-jurisdiction-rates/2026-jurisdiction/notice-to-walsh-county-permit-holders.pdf | 2026-10-28 |
-| US-ND-dr-t57c51-1.pdf | https://ndlegis.gov/cencode/t57c51-1.pdf | 2026-10-28 |
-| US-ND-dr-usc26-1.txt | https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title26-section1&num=0&edition=prelim | 2026-10-28 |
-| US-ND-dr-ndcc-57-39-2.pdf | https://ndlegis.gov/cencode/t57c39-2.pdf | 2026-10-28 |
-| US-ND-tap.html | https://tap.tax.nd.gov/?Check=1 | 2026-10-28 |
+| Legacy listed citation only, not re-read in this repair: US-ND-dr-nd-booklet2024.pdf | https://www.tax.nd.gov/sites/www/files/documents/forms/individual/2024-iit/2024-individual-income-tax-booklet.pdf | 2026-10-28 |
+| Legacy listed citation only, not re-read in this repair: US-ND-dr-nd-withholding-2025.pdf | https://www.tax.nd.gov/sites/www/files/documents/misc-discuss-folder/Final_2025%20Income%20Tax%20Withholding%20Rates%20%20Instructions.pdf | 2026-10-28 |
+| Legacy listed citation only, not re-read in this repair: US-ND-dr-ndwr.pdf | https://www.tax.nd.gov/sites/www/files/documents/forms/business/ndwrfillable.pdf | 2026-10-28 |
+| Legacy listed citation only, not re-read in this repair: US-ND-dr-nd-walsh-county-notice-2026.pdf | https://www.tax.nd.gov/sites/www/files/documents/forms/business/sales-use/local-jurisdiction-rates/2026-jurisdiction/notice-to-walsh-county-permit-holders.pdf | 2026-10-28 |
+| Legacy listed citation only, not re-read in this repair: US-ND-dr-t57c51-1.pdf | https://ndlegis.gov/cencode/t57c51-1.pdf | 2026-10-28 |
+| Legacy listed citation only, not re-read in this repair: US-ND-dr-usc26-1.txt | https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title26-section1&num=0&edition=prelim | 2026-10-28 |
+| Legacy listed citation only, not re-read in this repair: US-ND-dr-ndcc-57-39-2.pdf | https://ndlegis.gov/cencode/t57c39-2.pdf | 2026-10-28 |
+| Legacy listed citation only, not re-read in this repair: US-ND-tap.html | https://tap.tax.nd.gov/?Check=1 | 2026-10-28 |
 
 Not yet confirmed: figures in this skill lack archived line-citations.
 - Exact 2026 Chapter 57-38 late-filing / failure-to-file penalty percentages (ndlegis.nd.gov DNS failure 2026-10-25).
@@ -178,9 +178,25 @@ Not yet confirmed: figures in this skill lack archived line-citations.
 
 | Source | URL | Read on |
 | --- | --- | --- |
-| (see "Not yet confirmed:" paragraph) | -- | 2026-10-28 |
+| (see "Not yet confirmed:" paragraph) | Not read: legacy placeholder, no source URL | 2026-10-28 |
 
 No figures stated in this section.
+
+
+### Source maintenance, 14 November 2026
+
+This is a source-table repair, not a fresh approval of the legacy body. The figures independently re-read here are the ordinary corporate rate table, the water's-edge additional tax/election period, and the apportionment/election and alternative-method provisions. The current `nd-corporate-tax` owner holds the broader corporate computation. In particular, section 57-38.1-19 is **Purpose**, not the combined-reporting authority; the legacy references to it do not support that proposition. The blanket PTET-absence claim and specialist Joyce/Finnigan treatment remain unconfirmed and must not determine a filing without current source review.
+
+| Source and actual read scope | URL | Read on |
+| --- | --- | --- |
+| Corporate overview. Read for ordinary rate brackets and water's-edge surtax; not a comprehensive PTET-absence audit. | https://www.tax.nd.gov/corporate-income-tax | 2026-11-14 |
+| NDCC 57-38.1. Read for sections 09(1)/(4), 18 and 19: factors, election, alternative methods and the actual Purpose heading. | https://ndlegis.gov/cencode/t57c38-1.pdf | 2026-11-14 |
+| NDCC 57-38.4. Read for section 02 water's-edge five-year election and additional tax. | https://ndlegis.gov/cencode/t57c38-4.pdf | 2026-11-14 |
+| 2025 Form 40 instructions, 2025-2026 filing cycle. Read for combined-report definition, pro forma federal starting income, water's-edge election and original-return timing; not final 2026 form mapping. | https://www.tax.nd.gov/sites/default/files/documents/forms/business/corporate-income/2025-corp/28714-corp-income-tax-booklet-2025.pdf | 2026-11-14 |
+
+Source quotes read today: section 57-38.4-02(1)(b), "The water's edge election is binding for five consecutive taxable years after making the election." Section 57-38.4-02(3), "an additional tax of three and one-half percent of taxable income". Section 57-38.1-18, "do not fairly represent the extent of the taxpayer's business activity in this state". Section 57-38.1-19, "Purpose."
+
+Not yet confirmed: full legacy-body legal verification, comprehensive 2026 PTET absence, specialist combined-report attribution, final 2026 Form 40 mapping and unused inherited bibliography. Historical rows above retain their inherited listed dates as provenance, not evidence that they were opened in this repair.
 
 ## Talk to a verified accountant
 
