@@ -43,7 +43,7 @@ Companies liable to corporation tax under the Corporation Tax Act, Chap. 75:02, 
 | Banks | 35% | Licensed under the Financial Institutions Act (First Schedule para. 4) | same |
 | SME listed company | 0% for five years from listing, then 50% of the standard rate for five years | Issued share capital TT$5 million to TT$50 million; at least 25 unconnected shareholders holding 30% of new shares; listed within 60 days (s. 3) | same |
 | Approved small company | Exempt for six years from 1 January 2023 | Ministerial approval under ss. 16A to 16E | same |
-| Business levy | 0.6% of gross sales or receipts | Payable where it exceeds corporation tax; not in the first twelve months after registration, nor where prior-year gross receipts were TT$360,000 or less (s. 3A) | same |
+| Business levy | 0.6% of gross sales or receipts | Payable where it exceeds corporation tax; not in the first twelve months after registration, nor where prior-year gross receipts were three hundred and sixty thousand dollars or less (s. 3A) | same |
 | Green Fund Levy | 0.3% of gross sales or receipts, exempt income included | From 21 January 2016 | IRD, corporations page: https://www.ird.gov.tt/corporations |
 | Quarterly instalments | End of March, June, September and December | Corporation tax, business levy, Green Fund Levy | same |
 | 2025 corporation tax return deadline | 2 November 2026 | IRD public notice | IRD, public notice on the 2025 filing deadline: https://www.ird.gov.tt/news/public-notice-self-employed-sole-traders-and-companies |

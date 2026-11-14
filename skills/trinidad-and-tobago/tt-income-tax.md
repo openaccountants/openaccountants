@@ -40,9 +40,9 @@ Individuals liable to Trinidad and Tobago income tax under the Income Tax Act, C
 |---|---|---|---|
 | Rate up to TT$1,000,000 of chargeable income | 25% | Persons other than companies (Third Schedule Part I para. 1) | Income Tax Act, Chap. 75:01 (2024 consolidation): https://www.ird.gov.tt/Media/Default/IRDLegislation/Ch2024_75.01-Income-Tax-Act--2024.pdf |
 | Rate above TT$1,000,000 | 30% | Every dollar over TT$1,000,000 | same |
-| Personal allowance | TT$90,000 | Residents (s. 17) and non-residents receiving Trinidad and Tobago pension income (s. 18) | same |
+| Personal allowance | ninety thousand dollars (TT$90k) | Residents (s. 17) and non-residents receiving Trinidad and Tobago pension income (s. 18) | same |
 | Small-income relief | No tax where chargeable income does not exceed TT$5,000; marginal relief to TT$8,500 | Residents (Third Schedule Part I para. 2) | same |
-| Exempt total income | Total income not over TT$60,000 | Resident individual (s. 8(1)(k)) | same |
+| Exempt total income | Total income not over sixty thousand dollars | Resident individual (s. 8(1)(k)) | same |
 | Withholding on distributions to non-residents | 8%, or 3% to a parent company | Unless a treaty sets a lower rate (Third Schedule Part II) | same |
 | Withholding on other payments to non-residents | 15% | Individuals and companies, unless a treaty sets a lower rate | same |
 | Tertiary education expenses | Up to TT$72,000 | From 1 January 2019; foreign institutions only, conditions on the IRD page | IRD, deductions and supporting documents: https://www.ird.gov.tt/individual/deductions-and-required-supporting-documents |

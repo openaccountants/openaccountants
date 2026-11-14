@@ -40,7 +40,7 @@ Before classifying anything, know: the BIR file number and VAT registration numb
 |---|---|---|---|
 | Standard rate | 12.5% | Goods and services not zero-rated or exempt | IRD, VAT page: https://www.ird.gov.tt/VAT |
 | Registration threshold | Commercial supplies over TT$600,000 in any 12-month period, or expected to exceed it | From 1 January 2023; register by applying with Forms A, B or C | same |
-| Below-threshold test in the Act | Not required to register where supplies in the past 12 months and the next 12 months are not more than TT$600,000 | VAT Act s. 19 as consolidated | VAT Act, Chap. 75:06 (IRD 2024 consolidation): https://www.ird.gov.tt/Media/Default/IRDLegislation/Ch2024_75.06-Value-Added-Tax-Act--2024.pdf |
+| Below-threshold test in the Act | Not required to register where supplies in the past 12 months and the next 12 months are not more than six hundred thousand dollars | VAT Act s. 19 as consolidated | VAT Act, Chap. 75:06 (IRD 2024 consolidation): https://www.ird.gov.tt/Media/Default/IRDLegislation/Ch2024_75.06-Value-Added-Tax-Act--2024.pdf |
 | Tax period | Two months (category B), or one month then two months (category A), or periods the Board sets (category C) | The Board may move a person between categories | same |
 | Return due | Within 25 days after the end of the tax period | s. 31(2); IRD says by the 25th day of the following month | same |
 | Late payment | Penalty of 8% of the amount outstanding plus interest of 2% a month or part month | s. 54(1); the Board may reduce or waive | same |

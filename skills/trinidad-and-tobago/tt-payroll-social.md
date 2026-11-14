@@ -47,7 +47,7 @@ Employers in Trinidad and Tobago paying emoluments in 2026, and their employees.
 | Health surcharge, higher rate | TT$8.25 a week | Weekly emoluments over TT$109.00 or monthly over TT$469.99 | IRD, corporations page: https://www.ird.gov.tt/corporations |
 | Health surcharge, lower rate | TT$4.80 a week | All other employed persons; none for under 16, 60 and over, or pension-only income | same |
 | PAYE rates | 25% of chargeable income up to TT$1,000,000, 30% above | Annualised from the TD1 | Income Tax Act, Chap. 75:01, Third Schedule: https://www.ird.gov.tt/Media/Default/IRDLegislation/Ch2024_75.01-Income-Tax-Act--2024.pdf |
-| Personal allowance | TT$90,000 a year | Resident employees (s. 17) | same |
+| Personal allowance | ninety thousand dollars a year (TT$90k) | Resident employees (s. 17) | same |
 | PAYE and health surcharge remittance | By the 15th of the month after deduction, with the monthly return | | IRD, self-employed and sole traders (employer duties): https://www.ird.gov.tt/self-employed-sole-trader |
 | Annual PAYE summary and TD4 certificates | By the last day of February of the following year | All employees | same |
 | Late PAYE on pension or annuity refunds withheld | Penalty plus 20% a year interest | Income Tax Act provisions on deducted tax not remitted by the 15th | Income Tax Act, Chap. 75:01: https://www.ird.gov.tt/Media/Default/IRDLegislation/Ch2024_75.01-Income-Tax-Act--2024.pdf |

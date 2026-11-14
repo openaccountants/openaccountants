@@ -41,7 +41,7 @@ Anyone needing the shape of Trinidad and Tobago tax for the 2026 year of income 
 | Item | 2026 figure | Conditions | Source |
 |---|---|---|---|
 | Individual rates | 25% to TT$1,000,000 of chargeable income, 30% above | Persons other than companies | Income Tax Act, Chap. 75:01: https://www.ird.gov.tt/Media/Default/IRDLegislation/Ch2024_75.01-Income-Tax-Act--2024.pdf |
-| Personal allowance | TT$90,000 | Residents | same |
+| Personal allowance | ninety thousand dollars (TT$90k) | Residents | same |
 | Corporation tax | 30%; 35% banks and petrochemical and gas companies | First Schedule | Corporation Tax Act, Chap. 75:02: https://www.ird.gov.tt/Media/Default/IRDLegislation/Ch2024_75.02-Corporation-Tax-Act--2024.pdf |
 | Business levy | 0.6% of gross receipts, if higher than income or corporation tax | Exemptions apply | same |
 | Green Fund Levy | 0.3% of gross receipts | Companies and partnerships | IRD, corporations page: https://www.ird.gov.tt/corporations |
