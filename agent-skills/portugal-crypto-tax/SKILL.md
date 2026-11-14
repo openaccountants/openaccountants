@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/portugal-crypto-tax"
   jurisdiction: "PT"
   tax_year: "2026"
-  last_updated: "2026-10-31"
+  last_updated: "2026-11-14"
 ---
 
-# Portugal: IRS on crypto assets (tax year 2026) v1.2
+# Portugal: IRS on crypto assets (tax year 2026) v1.4
 
 This skill computes the IRS of a Portuguese resident individual on crypto: gains on sale, rewards, mining and trading as a business, and the charge on leaving Portugal. Crypto gains have been taxable since 1 January 2023 (Lei 24-D/2022). Decreto-Lei 97/2026, de 20 de maio, renumbered CIRS art. 10 with effect from 1 January 2026 (DL 97/2026 art. 18(2)). The crypto rules did not change in substance: the 365-day exclusion moved from n.º 19 to n.º 22, swaps from n.º 20 to n.º 23, the carve-out from n.º 21 to n.º 24, and the exit charge from n.º 22 to n.º 25. Older material citing art. 10(17), (19) or (22) uses the old numbers.
 
@@ -45,17 +45,17 @@ Every figure below was read on the Portal das Finanças (AT's consolidated CIRS 
 | Item | Rate or amount | Tax year | Source |
 |---|---|---|---|
 | Net crypto gains (Category G), held under 365 days | 28% autonomous rate | 2026 | CIRS art. 72(1)(c): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs72.aspx |
-| Option to aggregate instead | 2026 IRS bands, 12.50% to 48.00%; solidarity surcharge 2.5% over EUR 80,000 and 5% over EUR 250,000 | 2026 | CIRS art. 72(13), art. 68 (Lei 73-A/2025), art. 68-A: https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs68.aspx |
+| Option to aggregate instead | 2026 IRS bands, 12.20% to 48.00% (Decreto-Lei 212/2026, effect from 1 January 2026); solidarity surcharge 2.5% over EUR 80,000 and 5% over EUR 250,000 | 2026 | CIRS art. 72(13), art. 68 (Decreto-Lei 212/2026), art. 68-A: https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs68.aspx |
 | Crypto held 365 days or more | Gains and losses excluded | 2026 | CIRS art. 10(22), wording of DL 97/2026: https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs10.aspx |
-| Crypto-for-crypto swap (held under 365 days) | No tax; the crypto received takes the acquisition value of the crypto given | 2026 | CIRS art. 10(23) |
-| Carve-out | Exclusion and swap deferral do not apply when the taxpayer or the payer is not resident in the EU/EEA or in a state with a tax treaty or exchange-of-information agreement with Portugal | 2026 | CIRS art. 10(24) |
+| Crypto-for-crypto swap (held under 365 days) | No tax; the crypto received takes the acquisition value of the crypto given | 2026 | CIRS art. 10(23) https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs10.aspx |
+| Carve-out | Exclusion and swap deferral do not apply when the taxpayer or the payer is not resident in the EU/EEA or in a state with a tax treaty or exchange-of-information agreement with Portugal | 2026 | CIRS art. 10(24) https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs10.aspx |
 | Loss of residence | Treated as a sale; income = the positive difference between market value on the date residence ends and acquisition value plus acquisition costs | 2026 | CIRS art. 10(25), art. 43(12): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs43.aspx |
-| Rewards paid in fiat (Category E) | 28% autonomous rate; no withholding | 2026 | CIRS art. 5(2)(u), art. 72(1)(d), art. 101-B(5) |
-| Order of disposal | FIFO, separately at each custodian or crypto service provider | 2026 | CIRS art. 43(8)(g) and (9) |
-| Losses with a counterparty in a listed low-tax regime | Do not count | 2026 | CIRS art. 43(7) |
+| Rewards paid in fiat (Category E) | 28% autonomous rate; no withholding | 2026 | CIRS art. 5(2)(u), art. 72(1)(d), art. 101-B(5) https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs5.aspx, https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs72.aspx, https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs101b.aspx |
+| Order of disposal | FIFO, separately at each custodian or crypto service provider | 2026 | CIRS art. 43(8)(g) and (9) https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs43.aspx |
+| Losses with a counterparty in a listed low-tax regime | Do not count | 2026 | CIRS art. 43(7) https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs43.aspx |
 | Loss carry-forward, Category G crypto | 5 years, only if the person aggregates | 2026 | CIRS art. 55(1)(d): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs55.aspx |
 | Simplified regime coefficients (Category B) | 0.15 crypto operations; 0.95 mining | 2026 | CIRS art. 31(1)(a) and (d): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs31.aspx |
-| Category B loss carry-forward | 12 years | 2026 | CIRS art. 55(1)(a) |
+| Category B loss carry-forward | 12 years | 2026 | CIRS art. 55(1)(a) https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs55.aspx |
 
 There is no 35% rate on crypto gains. The 35% list in art. 72(18) covers capital income from listed low-tax jurisdictions and gains on certain securities and trusts, not art. 10(1)(k). The 2026 bands are lower than 2025: use the Lei 73-A/2025 table, not the 2025 table.
 
@@ -110,8 +110,8 @@ A resident bought 2 BTC at EUR 30,000 each on 1 February 2026, with EUR 200 of f
 
 1. Gain: (100,000 - 300) - (60,000 + 200) = EUR 39,500.
 2. Option A, 28%: 39,500 x 28% = EUR 11,060.
-3. Option B, aggregate: salary less the specific deduction of EUR 4,587.09 (higher than her EUR 4,400 social security) gives EUR 35,412.91. Tax on salary alone: 29,397 x 20.579% + (35,412.91 - 29,397) x 34.90% = EUR 8,149.16. With the gain, taxable income is EUR 74,912.91 (band 8). Tax: 46,566 x 26.472% + (74,912.91 - 46,566) x 44.60% = EUR 24,969.67. Extra tax from the gain: EUR 16,820.51. No solidarity surcharge (under EUR 80,000).
-4. The 28% rate is cheaper by EUR 5,760.51. She declares the gain in Anexo G at 28%.
+3. Option B, aggregate: salary less the specific deduction of EUR 4,587.09 (higher than her EUR 4,400 social security) gives EUR 35,412.91. Tax on salary alone: 29,397 x 20.136% + (35,412.91 - 29,397) x 34.60% = EUR 8,000.88. With the gain, taxable income is EUR 74,912.91 (band 8). Tax: 46,566 x 26.103% + (74,912.91 - 46,566) x 44.60% = EUR 24,797.84. Extra tax from the gain: EUR 16,796.96. No solidarity surcharge (under EUR 80,000).
+4. The 28% rate is cheaper by EUR 5,736.96. She declares the gain in Anexo G at 28%.
 
 ```oa-check
 name: PT crypto gain held under 365 days, 28% vs aggregation (2026)
@@ -127,19 +127,19 @@ steps:
   - autonomous_tax: gain * 0.28
   - specific_deduction: round(max(8.54 * ias, salary * 0.11), 2)
   - cat_a: salary - specific_deduction
-  - tax_salary_only: round(29397 * 0.20579 + (cat_a - 29397) * 0.349, 2)
+  - tax_salary_only: round(29397 * 0.20136 + (cat_a - 29397) * 0.346, 2)
   - aggregated: cat_a + gain
-  - tax_aggregated: round(46566 * 0.26472 + (aggregated - 46566) * 0.446, 2)
+  - tax_aggregated: round(46566 * 0.26103 + (aggregated - 46566) * 0.446, 2)
   - extra_if_aggregated: tax_aggregated - tax_salary_only
   - saving_at_28: extra_if_aggregated - autonomous_tax
 expected:
   gain: 39500
   autonomous_tax: 11060
   cat_a: 35412.91
-  tax_salary_only: 8149.16
-  tax_aggregated: 24969.67
-  extra_if_aggregated: 16820.51
-  saving_at_28: 5760.51
+  tax_salary_only: 8000.88
+  tax_aggregated: 24797.84
+  extra_if_aggregated: 16796.96
+  saving_at_28: 5736.96
 ```
 
 ### Example 2: leaving Portugal with crypto, the exit charge
@@ -154,7 +154,7 @@ He sells nothing. He has no other Category G income in 2026.
 1. Loss of residence is treated as a sale (art. 10(25)).
 2. BTC: 70,000 - 60,000 - 100 = EUR 9,900, held under 365 days, so taxable (art. 43(12)).
 3. ETH: gain of EUR 10,000, held over 365 days, so excluded (art. 10(22)).
-4. Tax at 28%: 9,900 x 28% = EUR 2,772, declared in his 2026 return (Anexo G). He may opt to aggregate instead (art. 72(13)) and should test it as in example 1: if the EUR 9,900 were his only 2026 income, the bands would give 8,342 x 12.50% + 1,558 x 15.70% = EUR 1,287.36 before deductions from the tax, far below EUR 2,772.
+4. Tax at 28%: 9,900 x 28% = EUR 2,772, declared in his 2026 return (Anexo G). He may opt to aggregate instead (art. 72(13)) and should test it as in example 1: if the EUR 9,900 were his only 2026 income, the bands would give 8,342 x 12.20% + 1,558 x 15.20% = EUR 1,254.54 before deductions from the tax, far below EUR 2,772.
 5. If he becomes resident again in 2027, he is treated as resident for the whole of 2026 (art. 16(16)). Ask about plans to return before filing.
 
 ```oa-check
@@ -202,7 +202,8 @@ expected:
 | CIRS art. 43, FIFO, low-tax losses, exit value | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs43.aspx | 2026-10-23 |
 | CIRS art. 55, losses | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs55.aspx | 2026-10-23 |
 | CIRS art. 60 and 97, filing and payment | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs60.aspx | 2026-10-23 |
-| CIRS art. 68, IRS bands 2026 (wording of Lei 73-A/2025) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs68.aspx | 2026-10-23 |
+| CIRS art. 68. Read for the 2026 bands in the wording of Decreto-Lei 212/2026 | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs68.aspx | 2026-11-14 |
+| Decreto-Lei 212/2026 of 4 November 2026 (AT copy). Read for the new rates of bands 1 to 6 and their effect from 1 January 2026 | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Decreto-Lei-212-2026.pdf | 2026-11-14 |
 | CIRS art. 68-A, solidarity surcharge | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs68a.aspx | 2026-10-23 |
 | CIRS art. 72, 28% rate, aggregation option, 35% list | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs72.aspx | 2026-10-23 |
 | CIRS art. 101-B(5), no withholding on crypto remuneration | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs101b.aspx | 2026-10-23 |
@@ -215,8 +216,8 @@ expected:
 
 Not yet confirmed: the acquisition value of crypto received as a reward (this skill assumes EUR 0); whether a swap restarts the 365-day period (no AT guidance read); how occasional mining outside a business is taxed; how NFT sales are taxed once excluded from the crypto definition; the Anexo G, G1, E and B box numbers for 2026; airdrops received free (earlier versions assumed acquisition value EUR 0 and tax only on sale; no AT guidance read); hard forks (earlier versions assumed the new coin has acquisition value EUR 0 and a 365-day period starting at the fork; no AT guidance read); DeFi liquidity pools, yield farming, governance-token rewards and impermanent loss (earlier versions treated a deposit into a pool as a non-taxable swap and losses as recognised only on sale to fiat; no AT guidance read); whether creating and selling NFTs, or NFT royalties, is Category B or Category E income when done regularly (not read); when regular staking or validation becomes a Category B business (art. 3 and 28 not tested against crypto; no AT guidance read); whether AT can extend the four-year document period beyond art. 128(3) during an inspection (earlier versions said 12 years; no source read); that art. 10(24), which still cites "n.os 19 e 20", is read as n.º 22 and 23; DAC8 and Portuguese exchange reporting dates.
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-31. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `portugal-crypto-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/portugal-crypto-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `portugal-crypto-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/portugal-crypto-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

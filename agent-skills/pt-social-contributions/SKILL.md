@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/pt-social-contributions"
   jurisdiction: "PT"
   tax_year: "2026"
-  last_updated: "2026-10-31"
+  last_updated: "2026-11-14"
 ---
 
 # Portugal: social security contributions (tax year 2026)
@@ -49,26 +49,26 @@ Exemption is automatic when Segurança Social already knows the facts; otherwise
 |---|---|---|---|
 | IAS | EUR 537.13 | 2026 | Portaria 480-A/2025/1, art. 2: https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Portaria_480_A_2025_1.pdf |
 | Self-employed rate | 21.4% | 2026 | Code art. 168(1): https://diariodarepublica.pt/dr/legislacao-consolidada/lei/2009-34514575 |
-| Empresário em nome individual, EIRL holder and their spouses | 25.2% | 2026 | Code art. 168(4) |
-| Relevant income: services | 70% of the quarter's service income | 2026 | Code art. 162(1)(a) |
-| Relevant income: goods, and hotel, restaurant and drinks services declared as such | 20% | 2026 | Code art. 162(1)(b) and (2) |
-| Relevant income with organised accounts | prior-year taxable profit; monthly base = 1/12, minimum 1.5 x IAS (EUR 805.70) | 2026 | Code art. 162(3), 163(3); ISS Guia Prático |
-| Monthly base | 1/3 of the quarter's relevant income, for the declaration month and the next two | 2026 | Code art. 163(1) |
-| Minimum contribution | EUR 20.00 a month when there is no income or the result is below EUR 20 | 2026 | Code art. 163(2); ISS Guia Prático (2026 edition) |
-| Ceiling on the monthly base | 12 x IAS = EUR 6,445.56 | 2026 | Code art. 163(5) |
-| Exemption with employment | monthly average relevant income below 4 x IAS = EUR 2,148.52; above it, base = excess | 2026 | Code art. 157(1)(a), 163(4) |
-| Option on the base | up to 25% above or below, in 5% steps | 2026 | Code art. 164(1)-(2) |
-| Contracting entity, dependency over 80% | 10% of services bought in the year | 2026 | Code art. 167, 168(7)(a) |
-| Contracting entity, dependency over 50% up to 80% | 7% | 2026 | Code art. 140(1), 168(7)(b) |
-| Contracting entity: worker's yearly service income at least | 6 x IAS = EUR 3,222.78 | 2026 | Code art. 140(2) |
-| Employees, general regime | 34.75%: employer 23.75%, employee 11% | 2026 | Code art. 53 |
-| MOE with management or administration duties (gerência, administração) | 34.75%: entity 23.75%, member 11% | 2026 | Code art. 69(2) |
-| Other MOE | 29.6%: entity 20.3%, member 9.3% | 2026 | Code art. 69(1) |
-| MOE base | pay actually received, minimum 1 x IAS (EUR 537.13) unless covered elsewhere at IAS or more | 2026 | Code art. 66 |
-| Special rate: employers without profit motive | 33.3%: employer 22.3%, employee 11% | 2026 | Code art. 112 |
-| Special rate: workers with disability | 22.9%: employer 11.9%, employee 11% | 2026 | Code art. 109(1) |
-| Special rate: professional sportspeople | 33.3%: employer 22.3%, employee 11% | 2026 | Code art. 79(1) |
-| Special rate: domestic workers | 28.3% (18.9% + 9.4%) without unemployment cover; 33.3% (22.3% + 11%) with it | 2026 | Code art. 121 |
+| Empresário em nome individual, EIRL holder and their spouses | 25.2% | 2026 | Code art. 168(4) https://diariodarepublica.pt/dr/legislacao-consolidada/lei/2009-34514575 |
+| Relevant income: services | 70% of the quarter's service income | 2026 | Code art. 162(1)(a) https://diariodarepublica.pt/dr/legislacao-consolidada/lei/2009-34514575 |
+| Relevant income: goods, and hotel, restaurant and drinks services declared as such | 20% | 2026 | Code art. 162(1)(b) and (2) https://diariodarepublica.pt/dr/legislacao-consolidada/lei/2009-34514575 |
+| Relevant income with organised accounts | prior-year taxable profit; monthly base = 1/12, minimum 1.5 x IAS (EUR 805.70) | 2026 | Code art. 162(3), 163(3); ISS Guia Prático https://diariodarepublica.pt/dr/legislacao-consolidada/lei/2009-34514575; https://www.seg-social.pt/ptss/pssd/documento/cmc1xyfxz00dekl2ynxz676sw |
+| Monthly base | 1/3 of the quarter's relevant income, for the declaration month and the next two | 2026 | Code art. 163(1) https://diariodarepublica.pt/dr/legislacao-consolidada/lei/2009-34514575 |
+| Minimum contribution | EUR 20.00 a month when there is no income or the result is below EUR 20 | 2026 | Code art. 163(2); ISS Guia Prático (2026 edition) https://diariodarepublica.pt/dr/legislacao-consolidada/lei/2009-34514575; https://www.seg-social.pt/ptss/pssd/documento/cmc1xyfxz00dekl2ynxz676sw |
+| Ceiling on the monthly base | 12 x IAS = EUR 6,445.56 | 2026 | Code art. 163(5) https://diariodarepublica.pt/dr/legislacao-consolidada/lei/2009-34514575 |
+| Exemption with employment | monthly average relevant income below 4 x IAS = EUR 2,148.52; above it, base = excess | 2026 | Code art. 157(1)(a), 163(4) https://diariodarepublica.pt/dr/legislacao-consolidada/lei/2009-34514575; https://www.seg-social.pt/ptss/pssd/documento/cmc1xyfxz00dekl2ynxz676sw |
+| Option on the base | up to 25% above or below, in 5% steps | 2026 | Code art. 164(1)-(2) https://diariodarepublica.pt/dr/legislacao-consolidada/lei/2009-34514575 |
+| Contracting entity, dependency over 80% | 10% of services bought in the year | 2026 | Code art. 167, 168(7)(a) https://diariodarepublica.pt/dr/legislacao-consolidada/lei/2009-34514575 |
+| Contracting entity, dependency over 50% up to 80% | 7% | 2026 | Code art. 140(1), 168(7)(b) https://diariodarepublica.pt/dr/legislacao-consolidada/lei/2009-34514575 |
+| Contracting entity: worker's yearly service income at least | 6 x IAS = EUR 3,222.78 | 2026 | Code art. 140(2) https://diariodarepublica.pt/dr/legislacao-consolidada/lei/2009-34514575 |
+| Employees, general regime | 34.75%: employer 23.75%, employee 11% | 2026 | Code art. 53 https://diariodarepublica.pt/dr/legislacao-consolidada/lei/2009-34514575 |
+| MOE with management or administration duties (gerência, administração) | 34.75%: entity 23.75%, member 11% | 2026 | Code art. 69(2) https://diariodarepublica.pt/dr/legislacao-consolidada/lei/2009-34514575 |
+| Other MOE | 29.6%: entity 20.3%, member 9.3% | 2026 | Code art. 69(1) https://diariodarepublica.pt/dr/legislacao-consolidada/lei/2009-34514575 |
+| MOE base | pay actually received, minimum 1 x IAS (EUR 537.13) unless covered elsewhere at IAS or more | 2026 | Code art. 66 https://diariodarepublica.pt/dr/legislacao-consolidada/lei/2009-34514575 |
+| Special rate: employers without profit motive | 33.3%: employer 22.3%, employee 11% | 2026 | Code art. 112 https://diariodarepublica.pt/dr/legislacao-consolidada/lei/2009-34514575 |
+| Special rate: workers with disability | 22.9%: employer 11.9%, employee 11% | 2026 | Code art. 109(1) https://diariodarepublica.pt/dr/legislacao-consolidada/lei/2009-34514575 |
+| Special rate: professional sportspeople | 33.3%: employer 22.3%, employee 11% | 2026 | Code art. 79(1) https://diariodarepublica.pt/dr/legislacao-consolidada/lei/2009-34514575 |
+| Special rate: domestic workers | 28.3% (18.9% + 9.4%) without unemployment cover; 33.3% (22.3% + 11%) with it | 2026 | Code art. 121 https://diariodarepublica.pt/dr/legislacao-consolidada/lei/2009-34514575 |
 | Late-payment interest | 7.221% a year, charged per calendar month or part | 2026 | Code art. 211-212; IGCP Aviso 18/2026/2: https://diariodarepublica.pt/dr/detalhe/aviso/18-2026-993315668 |
 
 ## The taxable base
@@ -232,8 +232,8 @@ expected:
 
 Not yet confirmed: Code art. 163(8) says the EUR 20 minimum is updated in line with the IAS, but no updated figure was found and the 2026 ISS Guia Prático still gives EUR 20.00, which this skill uses; the employer deadlines that apply during 2026 to employers not yet moved to the new reporting model under DL 127/2025 art. 5 (the old model's declaration date was not read); the regulation (Decreto Regulamentar 1-A/2011) that lists income left out of relevant income, which was read only through the ISS Guia Prático; the EUR 5 de minimis for the excess base, from the ISS Guia Prático only; the EUR 20 threshold for the annual review is in the ISS Guia Prático, not in art. 164-A; other special rates (for example very short contracts, pensioners in work, rural workers) and the contribution reductions for first jobs and long-term unemployed were not read and are left to `portugal-payroll`; EU coordination under Regulation 883/2004 (EUR-Lex did not load) is left to `pt-cross-border`.
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-31. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `pt-social-contributions` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/pt-social-contributions. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `pt-social-contributions` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/pt-social-contributions. If neither is available, confirm every figure against the official source pages cited above before relying on it.

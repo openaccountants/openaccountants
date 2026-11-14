@@ -21,6 +21,13 @@
   "dir": "skills/antigua-and-barbuda"
  },
  {
+  "code": "AI",
+  "name": "Anguilla",
+  "region": "americas",
+  "owner": "michael",
+  "dir": "skills/anguilla"
+ },
+ {
   "code": "AL",
   "name": "Albania",
   "region": "europe",
@@ -805,6 +812,13 @@
   "dir": "skills/madagascar"
  },
  {
+  "code": "MH",
+  "name": "Marshall Islands",
+  "region": "apac",
+  "owner": "ryan",
+  "dir": "skills/marshall-islands"
+ },
+ {
   "code": "MK",
   "name": "North Macedonia",
   "region": "europe",
@@ -1085,6 +1099,13 @@
   "dir": "skills/saudi-arabia"
  },
  {
+  "code": "SB",
+  "name": "Solomon Islands",
+  "region": "apac",
+  "owner": "ryan",
+  "dir": "skills/solomon-islands"
+ },
+ {
   "code": "SC",
   "name": "Seychelles",
   "region": "africa",
@@ -1265,6 +1286,13 @@
   "region": "americas",
   "owner": "jeff",
   "dir": "skills/trinidad-and-tobago"
+ },
+ {
+  "code": "TV",
+  "name": "Tuvalu",
+  "region": "apac",
+  "owner": "ryan",
+  "dir": "skills/tuvalu"
  },
  {
   "code": "TW",
@@ -1762,5 +1790,12 @@
   "region": "africa",
   "owner": "ryan",
   "dir": "skills/zimbabwe"
+ },
+ {
+  "code": "scripts/data/jurisdictions.json",
+  "name": "UM",
+  "region": "apac",
+  "owner": "ryan",
+  "dir": "skills/United States Minor Outlying Islands"
  }
 ]

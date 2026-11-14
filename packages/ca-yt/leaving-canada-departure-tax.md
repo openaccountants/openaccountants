@@ -3,17 +3,31 @@ name: leaving-canada-departure-tax
 description: "Departure tax when an individual stops being resident in Canada: the deemed disposition of shares (including private company and CCPC shares) and other property on emigration, what is excluded (Canadian real estate, RRSP, TFSA and other plans), Forms T1161, T1243 and T1244, deferring the tax with security, the final return for the year you leave, registered plans, and unwinding if you come back. Triggers: \"departure tax Canada\", \"leaving Canada taxes\", \"emigrating from Canada\", \"T1244 security\", \"deemed disposition on emigration\"."
 jurisdiction: CA
 tax_year: 2026
-last_updated: 2026-10-15
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+category: international
+version: "2.0"
+type: situation-rules
 tier: 2
 domain: cross-border
 ---
 
 # Leaving Canada: departure tax on shares and other property
 
-Figures are for tax year 2026. This Guide is for an individual who stops being resident in Canada and owns shares (listed or private company shares), other investments or valuables with an unrealised gain. It covers the deemed disposition on emigration (the "departure tax"), the property that is left out of it, Forms T1161, T1243 and T1244, giving security to defer the tax, the final return for the year you leave, registered plans, and coming back. All amounts are in Canadian dollars (CAD). The CRA pages cited were read on 15 October 2026. Several of them still describe the 2025 return; where a page names a 2025 date, this Guide says so.
+## Scope
+
+Figures are for tax year 2026. This Guide is for an individual who stops being resident in Canada and owns shares (listed or private company shares), other investments or valuables with an unrealised gain. It covers the deemed disposition on emigration (the "departure tax"), the property that is left out of it, Forms T1161, T1243 and T1244, giving security to defer the tax, the final return for the year you leave, registered plans, and coming back. All amounts are in Canadian dollars (CAD). The official sources were reread on 14 November 2026; the exact sections are identified in Sources. Several of them still describe the 2025 return; where a page names a 2025 date, this Guide says so.
 
 This Guide covers Canada's side only. The country you move to has its own rules, and whether it gives you a higher starting cost for the property, or a treaty relief, must be checked separately. For the US side see `us-tax-residency`. For an overview of exit taxes in several countries see `exit-taxes-when-a-family-moves`.
+
+## Ask the client first
+
+- On what date will you stop living in Canada, which country are you moving to, and when do your spouse or common-law partner and dependants leave?
+- Which shares do you own (shares of a private company such as a Canadian-controlled private corporation, or listed shares), and what are their fair market value and adjusted cost base on the departure date?
+- What other property do you own with an unrealised gain or loss (foreign or Canadian real estate, a business carried on in Canada, crypto, art, collections, employee stock options), and is the total value of your property, apart from cash and registered plans, above the T1161 threshold?
+- Do you want to defer paying the departure tax, and could you give the CRA security such as a bank letter of guarantee, a standby letter of credit or a mortgage on property?
+- Which registered plans do you hold (RRSP, RRIF, TFSA, RESP, pension), and do you take part in the Home Buyers' Plan or Lifelong Learning Plan?
+- Did you move to Canada within the last 10 years, and might you come back to live in Canada later?
 
 ## The method, step by step
 
@@ -26,16 +40,7 @@ This Guide covers Canada's side only. The country you move to has its own rules,
 7. Deal with registered plans (RRSP, RRIF, TFSA) under the rules in "Registered plans" below.
 8. Later: when you actually sell a deemed-disposed property, report it to the CRA and pay any deferred tax. If it is taxable Canadian property, follow `ca-nonresident-cgt`. If you come back to Canada, consider the election to unwind (see "If you come back to Canada" below).
 
-## Ask the client first
-
-- On what date will you stop living in Canada, which country are you moving to, and when do your spouse or common-law partner and dependants leave?
-- Which shares do you own (shares of a private company such as a Canadian-controlled private corporation, or listed shares), and what are their fair market value and adjusted cost base on the departure date?
-- What other property do you own with an unrealised gain or loss (foreign or Canadian real estate, a business carried on in Canada, crypto, art, collections, employee stock options), and is the total value of your property, apart from cash and registered plans, above the T1161 threshold?
-- Do you want to defer paying the departure tax, and could you give the CRA security such as a bank letter of guarantee, a standby letter of credit or a mortgage on property?
-- Which registered plans do you hold (RRSP, RRIF, TFSA, RESP, pension), and do you take part in the Home Buyers' Plan or Lifelong Learning Plan?
-- Did you move to Canada within the last 10 years, and might you come back to live in Canada later?
-
-## What the deemed disposition covers
+### What the deemed disposition covers
 
 When you stop being resident, you are deemed to have disposed of certain property at its FMV and to have immediately reacquired it for the same amount. The CRA says this applies to most properties, and gives shares, jewellery, paintings and collections as examples. See [Leaving Canada (emigrants)](https://www.canada.ca/en/revenue-agency/services/tax/international-non-residents/individuals-leaving-entering-canada-non-residents/leaving-canada-emigrants.html).
 
@@ -50,7 +55,7 @@ You may elect to include property in items 1 or 2 in the deemed disposition. To 
 
 Foreign real estate is not on the exception list, so it is deemed disposed of unless item 4 applies. Canadian real estate is excluded, but it stays taxable Canadian property, so a later sale as a non-resident falls under `ca-nonresident-cgt`.
 
-## Private company shares
+### Private company shares
 
 Shares are not on the exception list, and the CRA's forms do not separate private company shares from listed shares. Form T1161 says property includes "shares (both public and private)", and Form T1243 asks for the corporation name and class of shares, the FMV on the date you emigrated and the adjusted cost base. So shares of a Canadian-controlled private corporation or any other private company you hold personally are deemed disposed of at FMV on the departure date, and the gain is reported on Form T1243 and Schedule 3. See the [Form T1243 PDF](https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/t1243/t1243-22e.pdf) and the [Form T1161 PDF](https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/t1161/t1161-22e.pdf).
 
@@ -60,18 +65,17 @@ The lifetime capital gains deduction for qualified small business corporation sh
 
 If you sell the shares before the departure date, you are still a resident and the sale is reported as an ordinary disposition in the world income for the resident part of the year, under `ca-capital-gains`. If you sell them after you leave, see "After you leave" below.
 
-## Forms, thresholds and deadlines
+### Forms, thresholds and deadlines
 
-| Item | Figure | Note |
-|---|---|---|
-| Source | all figures below | https://www.canada.ca/en/revenue-agency/services/tax/international-non-residents/individuals-leaving-entering-canada-non-residents/dispositions-property.html |
-| Form T1161 required if the FMV of all property you owned when you left was more than | CAD 25,000 | "If the fair market value (FMV) of all of the properties that you owned when you left Canada was more than $25,000" |
-| Personal-use property left out of the T1161 list if each item's FMV is less than | CAD 10,000 | "any item of personal-use property (such as household effects, clothing, cars, collectibles) that has a fair market value of less than $10,000" |
-| T1161 late-filing penalty, per day | CAD 25 | "The penalty for failing to file Form T1161 by the due date is $25 for each day the return is late." |
-| T1161 minimum penalty | CAD 100 | "There is a minimum penalty of $100" |
-| T1161 maximum penalty | CAD 2,500 | "and a maximum penalty of $2,500" |
-| T1244: security needed if federal tax owing on the deemed disposition is more than | CAD 16,500 | "the amount of federal tax owing on income from the deemed disposition of property is more than $16,500" |
-| Same threshold for former residents of Quebec | CAD 13,777.50 | "more than $13,777.50 for former residents of Quebec" |
+| Item | Figure | Note | Official source |
+| --- | --- | --- | --- |
+| Form T1161 required if the FMV of all property you owned when you left was more than | CAD 25,000 | "If the fair market value (FMV) of all of the properties that you owned when you left Canada was more than $25,000" | https://www.canada.ca/en/revenue-agency/services/tax/international-non-residents/individuals-leaving-entering-canada-non-residents/dispositions-property.html |
+| Personal-use property left out of the T1161 list if each item's FMV is less than | CAD 10,000 | "any item of personal-use property (such as household effects, clothing, cars, collectibles) that has a fair market value of less than $10,000" | https://www.canada.ca/en/revenue-agency/services/tax/international-non-residents/individuals-leaving-entering-canada-non-residents/dispositions-property.html |
+| T1161 late-filing penalty, per day | CAD 25 | "The penalty for failing to file Form T1161 by the due date is $25 for each day the return is late." | https://www.canada.ca/en/revenue-agency/services/tax/international-non-residents/individuals-leaving-entering-canada-non-residents/dispositions-property.html |
+| T1161 minimum penalty | CAD 100 | "There is a minimum penalty of $100" | https://www.canada.ca/en/revenue-agency/services/tax/international-non-residents/individuals-leaving-entering-canada-non-residents/dispositions-property.html |
+| T1161 maximum penalty | CAD 2,500 | "and a maximum penalty of $2,500" | https://www.canada.ca/en/revenue-agency/services/tax/international-non-residents/individuals-leaving-entering-canada-non-residents/dispositions-property.html |
+| T1244: security needed if federal tax owing on the deemed disposition is more than | CAD 16,500 | "the amount of federal tax owing on income from the deemed disposition of property is more than $16,500" | https://www.canada.ca/en/revenue-agency/services/tax/international-non-residents/individuals-leaving-entering-canada-non-residents/dispositions-property.html |
+| Same threshold for former residents of Quebec | CAD 13,777.50 | "more than $13,777.50 for former residents of Quebec" | https://www.canada.ca/en/revenue-agency/services/tax/international-non-residents/individuals-leaving-entering-canada-non-residents/dispositions-property.html |
 
 ### Form T1243: the deemed disposition
 
@@ -95,7 +99,7 @@ Send Form T1161 on or before your filing due date, even if you do not have to fi
 You can elect to defer paying the tax on income from the deemed disposition, regardless of the amount. You then pay the tax later, without interest, when you sell or otherwise dispose of the property. The election does not apply to the deemed disposition of an employee benefit plan. See [Dispositions of property](https://www.canada.ca/en/revenue-agency/services/tax/international-non-residents/individuals-leaving-entering-canada-non-residents/dispositions-property.html).
 
 - Deadline: the election must be made by April 30 of the year after you emigrate. For someone who leaves in 2026, that is April 30, 2027.
-- Security: if the federal tax owing on income from the deemed disposition is more than the security threshold in the table above (the lower Quebec figure for former residents of Quebec), you must provide adequate security to cover it. You may also have to give security for provincial or territorial tax. Contact the CRA as soon as possible to make acceptable arrangements before April 30.
+- Security: if the federal tax owing on income from the deemed disposition is more than the security threshold in the table above (the lower Quebec figure for former residents of Quebec), obtain CRA confirmation of the adequate security required, taking account of the deemed-security provision in ITA 220(4.51). You may also have to give security for provincial or territorial tax. Contact the CRA as soon as possible to make acceptable arrangements before April 30.
 - At or below the threshold: no security is required, but you must still complete Form T1244 and attach it to your return.
 - Part of the property only: if you defer tax on only some of the properties on Form T1243, list those properties in the chart on page 2 of Form T1244.
 - Former residents of Quebec do not complete lines 11 to 13 (the provincial lines) of the form.
@@ -105,9 +109,9 @@ See the [Form T1244 PDF](https://www.canada.ca/content/dam/cra-arc/formspubs/pbg
 
 What security the CRA accepts is set out in its general collections circular, not on the emigrant pages. The circular says that for certain elections under the Income Tax Act you have to provide adequate security for the CRA to accept the election, and that "some types of security we may accept include bank letters of guarantee, standby letters of credit, or mortgages". Bank letters of guarantee and standby letters of credit should come from a Schedule I or Schedule II Canadian financial institution under the Bank Act. Other forms are accepted case by case, at the Minister's discretion under subsection 220(4). Acceptable security must be liquid, equivalent or near equivalent to cash, and realizable on demand without defence or claim from third parties. A mortgage on real estate is therefore a listed type, but the CRA decides whether a given property is acceptable. Shares of a private company are not named as a type. See [IC98-1, Tax collections policies](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/ic98-1/tax-collections-policies.html).
 
-## The return for the year you leave
+### The return for the year you leave
 
-- Who must file: you file a return for the year you leave if you owe tax or want a refund. If you decide you do not have to file, tell the CRA your departure date as soon as possible. Form T1161, where required, must be sent even if no return is due.
+- Who must file: file if tax is payable, if there is a taxable capital gain or a disposition of capital property while resident during any part of the year, or another requirement in ITA 150(1.1) applies. Filing may also secure a refund. A departure deemed disposition can therefore require a return even when no net tax is payable. [ITA 150](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-150.html). If you decide you do not have to file, tell the CRA your departure date as soon as possible. Form T1161, where required, must be sent even if no return is due.
 - Package: use the income tax package for the province or territory where you lived on the date you left Canada. Former residents of Quebec also deal with Revenu Québec.
 - Departure date: enter it on page 1 of the return, in "Residence Information".
 - Income: report world income for the part of the year you were resident. After you leave, you pay Canadian tax only on Canadian-source income; some of it goes on the return and some is subject to non-resident withholding at source.
@@ -115,37 +119,35 @@ What security the CRA accepts is set out in its general collections circular, no
 - Moving expenses for a move out of Canada are generally not deductible, unless you left to study full-time at post-secondary level abroad AND received a taxable Canadian scholarship, bursary, fellowship or research grant to attend.
 - Benefits: as a non-resident you are generally not eligible for the Canada child benefit or the Canada Groceries and Essentials Benefit. Tell the CRA your departure date.
 - Tell Canadian payers and financial institutions that you are no longer resident.
-- Due date: the CRA's due-date page currently prints the 2025 dates: April 30, 2026 to file and pay, and June 15, 2026 to file if you or your spouse or common-law partner are self-employed (payment is still due April 30). See [Due dates and payment dates](https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/important-dates-individuals.html). The T1244 election deadline is April 30 of the year after you emigrate, whether or not you are self-employed.
+- Due date: for an ordinary 2026 departure return, file and pay by April 30, 2027; a qualifying self-employed person or spouse ordinarily files by June 15, 2027, but payment and T1244 remain April 30. These annual dates follow ITA 150(1)(d) and the balance-due-day rule. The CRA calendar currently prints **2025 return / 2026 filing cycle** dates: April 30, 2026, or June 15, 2026 for qualifying self-employment, payment still April 30. They are not dates for 2026 income. [ITA 150](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-150.html). See [Due dates and payment dates](https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/important-dates-individuals.html). The T1244 election deadline is April 30 of the year after you emigrate, whether or not you are self-employed.
 
 A person who keeps residential ties is usually a factual resident, not an emigrant. A person who keeps ties but is resident of a treaty country under the treaty may be a deemed non-resident, and deemed non-residents are subject to the same rules as emigrants. See [Leaving Canada (emigrants)](https://www.canada.ca/en/revenue-agency/services/tax/international-non-residents/individuals-leaving-entering-canada-non-residents/leaving-canada-emigrants.html) and `ca-tax-residency`.
 
-## Registered plans
+### Registered plans
 
 RRSPs, RRIFs, TFSAs and the other plans listed in item 3 above are not deemed disposed of when you leave, and they are not listed on Form T1161.
 
-| Item | Figure | Note |
-|---|---|---|
-| Source | all figures below | https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/rrsps-related-plans/making-withdrawals/tax-rates-on-withdrawals.html |
-| Withholding on RRSP withdrawals by non-residents, unless a treaty reduces it | 25% | "For non-residents of Canada, withholding is 25% unless reduced by a treaty." |
+| Item | Figure | Note | Official source |
+| --- | --- | --- | --- |
+| Withholding on RRSP withdrawals by non-residents, unless a treaty reduces it | 25% | "For non-residents of Canada, withholding is 25% unless reduced by a treaty." | https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/rrsps-related-plans/making-withdrawals/tax-rates-on-withdrawals.html |
 
 RRSP: after you leave, the financial institution withholds non-resident tax on withdrawals at the rate in the table above, unless a tax treaty reduces it. Treaty rates are in Information Circular IC76-12R8. For certain types of Canadian income paid after you leave, the CRA's emigrant page says the tax withheld is usually your final obligation, but you could benefit from electing under section 217 to include the income on a return; see `ca-tax-residency`.
 
-| Item | Figure | Note |
-|---|---|---|
-| Source | all figures below | https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/tax-free-savings-account/non-resident.html |
-| Tax on a non-resident TFSA contribution, for each month it stays in the account | 1% | "is subject to a 1% tax for each month the contribution remains in the account" |
+| Item | Figure | Note | Official source |
+| --- | --- | --- | --- |
+| Tax on a non-resident TFSA contribution, for each month it stays in the account | 1% | "is subject to a 1% tax for each month the contribution remains in the account" | https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/tax-free-savings-account/non-resident.html |
 
 TFSA: you may keep it. Income earned in it and withdrawals are not taxed in Canada, but they may be taxed in your new country. You cannot contribute tax-free while non-resident. Any non-resident contribution, other than a qualifying transfer or an exempt contribution, is taxed at the monthly rate in the table above until you withdraw it or become resident again; a contribution that also exceeds your room can attract a further tax at the same monthly rate on the excess. You get no new contribution room for a year in which you are non-resident for the whole year; in the year you leave you still receive that year's annual limit. Amounts withdrawn while non-resident are added back as room only when you become resident again. See [How non-residency affects your TFSA](https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/tax-free-savings-account/non-resident.html).
 
 Home Buyers' Plan and Lifelong Learning Plan: special rules apply when a participant leaves Canada. The CRA's emigrant page points to the HBP and LLP pages for them. This Guide does not cover them.
 
-## After you leave
+### After you leave
 
 When you actually sell (or otherwise dispose of) property that was deemed disposed of on emigration and you deferred the tax, you may have to pay some or all of the deferred tax. Send the Non-Resident T1 Adjustments section of the Winnipeg Tax Centre a list giving the description of the property (as on your Form T1243), the number of shares disposed of (if any), and the date of the disposition. Payment of any resulting amount is due by April 30 of the year after the disposition. See [Dispositions of property](https://www.canada.ca/en/revenue-agency/services/tax/international-non-residents/individuals-leaving-entering-canada-non-residents/dispositions-property.html).
 
 If the property is taxable Canadian property, there are further reporting rules (section 116). The CRA gives Canadian real or immovable property, Canadian business property and unlisted shares of Canadian corporations as examples. That process, and whether shares are taxable Canadian property at the time of sale, are covered in `ca-nonresident-cgt`. This Guide stops there.
 
-## If you come back to Canada
+### If you come back to Canada
 
 If you stopped being resident after October 1, 1996 and later become resident again, you can elect to "unwind" the deemed disposition you reported on leaving, for property you still own. See [Dispositions of property](https://www.canada.ca/en/revenue-agency/services/tax/international-non-residents/individuals-leaving-entering-canada-non-residents/dispositions-property.html).
 
@@ -155,6 +157,61 @@ If you stopped being resident after October 1, 1996 and later become resident ag
 - Effect: the election may reduce or eliminate the departure tax. If you had deferred the tax, some or all of the security may be returned.
 - The definition of taxable Canadian property changed on March 5, 2010, and special rules may apply to property that was taxable Canadian property when you left but is not when you return.
 - When you immigrate you are generally treated as disposing of and reacquiring most property you own on that date. If you had deferred departure tax, you may now have to pay it; the CRA says to contact it.
+
+### Election computation and confirmation
+
+T1244 uses **T1 line 26000**, removes the net deemed-disposition income at **68900**, floors the adjusted taxable income at zero, then compares the federal tax on those two incomes (**lines 8-10**) and provincial Form 428 tax (**lines 11-13**). For former Quebec residents the provincial lines are not completed. Enter elected amounts on page 2 at **68910 / 68920**, identify selected property if only part is elected, sign, date and attach the form. Keep the accepted return receipt and the CRA correspondence accepting security separately. **ITA 220(4.5)** includes the statutory payment adjustment in measuring deferrable tax; the simple form difference is not permission to ignore that adjustment or defer ordinary unpaid income tax. [T1244](https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/t1244/t1244-22e.pdf), [ITA 220](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-220.html).
+
+The $16,500 federal trigger reflects the **deemed-security rule in 220(4.51)**, not a prescribed collateral valuation. For an amount above the trigger obtain the CRA computation, including provincial requirements, rather than automatically treating either the full tax or the excess as the required mortgage. Security must remain adequate: **220(4.53)** permits replacement within 90 days after notification of inadequacy, subject to a discretionary extension under **220(4.54)**. Hardship under **220(4.7)** can permit different or lower-value security only where the Minister accepts it. [ITA 220](https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-220.html).
+
+## Worked cases
+
+### Case 1: private shares, T1161 and deferral
+
+My client leaves Canada in 2026 after more than ten years of residence, owning private shares with a documented FMV of $200,000 and ACB of $80,000, cash of $20,000, and household items each below $10,000. There are no other assets or exclusions. The deemed share gain is $120,000 and the T1161 count is $200,000, above $25,000; cash and low-value personal-use items do not inflate it. The taxable gain, losses and any capital-gains deduction require the separate `ca-capital-gains` method; this example does not assume an inclusion rate or qualified-share exemption. Supplied completed federal tax with/without the departure income is $35,000/$10,000 and provincial tax $12,000/$4,000. T1244 differences are $25,000 and $8,000, total $33,000; the federal difference requires a security arrangement by April 30, 2027. [T1243](https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/t1243/t1243-22e.pdf), [T1161](https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/t1161/t1161-22e.pdf), [T1244](https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/t1244/t1244-22e.pdf).
+
+```oa-check
+name: Departure shares, property list and tax-with-without comparison
+inputs:
+  share_fmv: 200000
+  acb: 80000
+  federal_with: 35000
+  federal_without: 10000
+  provincial_with: 12000
+  provincial_without: 4000
+steps:
+  - capital_gain: share_fmv - acb
+  - t1161_reportable_fmv: share_fmv
+  - federal_departure_tax: federal_with - federal_without
+  - provincial_departure_tax: provincial_with - provincial_without
+  - total_departure_tax: federal_departure_tax + provincial_departure_tax
+expected:
+  capital_gain: 120000
+  t1161_reportable_fmv: 200000
+  federal_departure_tax: 25000
+  total_departure_tax: 33000
+```
+
+### Case 2: real estate is excluded from tax, not automatically from the list
+
+My client owns only an Alberta principal residence worth $500,000, a TFSA worth $40,000 and $15,000 cash. No T2061A election is made. The home is excluded from the automatic deemed disposition, but is reportable on T1161; the TFSA and cash are excluded from that form. The listing threshold is therefore tested on $500,000 even though the automatic departure gain in this example is zero. A T1161 filed one day late has the $100 minimum; 120 days late reaches the $2,500 ceiling. Do not charge the maximum for every late day or multiply the daily amount beyond the cap. [Dispositions](https://www.canada.ca/en/revenue-agency/services/tax/international-non-residents/individuals-leaving-entering-canada-non-residents/dispositions-property.html).
+
+```oa-check
+name: Canadian home list-versus-gain distinction and T1161 penalty bounds
+inputs:
+  reportable_home_fmv: 500000
+  automatic_departure_gain: 0
+  short_delay: 1
+  long_delay: 120
+steps:
+  - short_penalty: min(2500, max(100, short_delay * 25))
+  - long_penalty: min(2500, max(100, long_delay * 25))
+expected:
+  reportable_home_fmv: 500000
+  automatic_departure_gain: 0
+  short_penalty: 100
+  long_penalty: 2500
+```
 
 ## When to refuse or refer
 
@@ -173,13 +230,21 @@ Refuse to give an answer that relies on the archived T4056 or IT-451R publicatio
 
 ## Sources
 
-- [Leaving Canada (emigrants), CRA](https://www.canada.ca/en/revenue-agency/services/tax/international-non-residents/individuals-leaving-entering-canada-non-residents/leaving-canada-emigrants.html)
-- [Dispositions of property for emigrants of Canada, CRA](https://www.canada.ca/en/revenue-agency/services/tax/international-non-residents/individuals-leaving-entering-canada-non-residents/dispositions-property.html)
-- [Form T1243](https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t1243.html) and [PDF](https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/t1243/t1243-22e.pdf)
-- [Form T1244](https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t1244.html) and [PDF](https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/t1244/t1244-22e.pdf)
-- [Form T1161](https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t1161.html) and [PDF](https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/t1161/t1161-22e.pdf)
-- [IC98-1, Tax collections policies](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/ic98-1/tax-collections-policies.html)
-- [Line 25400, capital gains deduction](https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-25400-capital-gains-deduction.html)
-- [RRSP withdrawals, tax rates](https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/rrsps-related-plans/making-withdrawals/tax-rates-on-withdrawals.html)
-- [How non-residency affects your TFSA](https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/tax-free-savings-account/non-resident.html)
-- [Due dates and payment dates](https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/important-dates-individuals.html)
+- https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-248.html (balance-due day definition, paragraph (c): ordinary individual balance due April 30 of the following year; paragraph (b) death exception). Read for: definition of balance-due day, 2026-11-14.
+
+Not yet confirmed: the client-specific private-share value, qualified-share tests and 2026 lifetime capital-gains deduction limit are not established by these departure sources; load the current capital-gains method before quantifying that claim. The final 2026 emigrant return/forms have not been confirmed; cited CRA pages still describe the 2025 return, and PDFs are the latest 2022 T1243/T1244/T1161 forms. Destination-country basis, treaty credit and any particular mortgage remain separate determinations.
+
+- https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-128.1.html (subsection 4 exclusions and subsection 6 returning-resident elections, statutory authority).. Read for: the named departure, form, registered-plan or collections rule, 2026-11-14.
+- https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-220.html (subsections 4.5-4.54 and 4.7, deferrable amounts, deemed security and ongoing adequacy).. Read for: the named departure, form, registered-plan or collections rule, 2026-11-14.
+- https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-150.html (paragraph 1(d) and subsection 1.1, filing obligation and annual dates).. Read for: the named departure, form, registered-plan or collections rule, 2026-11-14.
+
+- [Leaving Canada (emigrants), CRA](https://www.canada.ca/en/revenue-agency/services/tax/international-non-residents/individuals-leaving-entering-canada-non-residents/leaving-canada-emigrants.html). Read for: the named departure, form, registered-plan or collections rule, 2026-11-14.
+- [Dispositions of property for emigrants of Canada, CRA](https://www.canada.ca/en/revenue-agency/services/tax/international-non-residents/individuals-leaving-entering-canada-non-residents/dispositions-property.html). Read for: the named departure, form, registered-plan or collections rule, 2026-11-14.
+- [Form T1243](https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t1243.html) and [PDF](https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/t1243/t1243-22e.pdf). Read for: the named departure, form, registered-plan or collections rule, 2026-11-14.
+- [Form T1244](https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t1244.html) and [PDF](https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/t1244/t1244-22e.pdf). Read for: the named departure, form, registered-plan or collections rule, 2026-11-14.
+- [Form T1161](https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t1161.html) and [PDF](https://www.canada.ca/content/dam/cra-arc/formspubs/pbg/t1161/t1161-22e.pdf). Read for: the named departure, form, registered-plan or collections rule, 2026-11-14.
+- [IC98-1, Tax collections policies](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/ic98-1/tax-collections-policies.html). Read for: the named departure, form, registered-plan or collections rule, 2026-11-14.
+- [Line 25400, capital gains deduction](https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-25400-capital-gains-deduction.html). Read for: the named departure, form, registered-plan or collections rule, 2026-11-14.
+- [RRSP withdrawals, tax rates](https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/rrsps-related-plans/making-withdrawals/tax-rates-on-withdrawals.html). Read for: the named departure, form, registered-plan or collections rule, 2026-11-14.
+- [How non-residency affects your TFSA](https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/tax-free-savings-account/non-resident.html). Read for: the named departure, form, registered-plan or collections rule, 2026-11-14.
+- [Due dates and payment dates](https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/important-dates-individuals.html). Read for: the named departure, form, registered-plan or collections rule, 2026-11-14.
