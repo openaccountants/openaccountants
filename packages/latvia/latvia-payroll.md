@@ -1,19 +1,20 @@
 ---
 name: latvia-payroll
 description: "Latvian payroll for tax year 2026: how an employer computes and withholds wage tax (algas nodoklis) and state social insurance contributions (VSAOI) each month. Covers the flat 25.5% monthly withholding, the EUR 550 monthly non-taxable minimum and EUR 250 dependant relief through the wage tax book, employee 10.5% and employer 23.59% contributions, the EUR 105,300 maximum base and solidarity tax, the EUR 780 minimum wage and the EUR 2,340 quarterly minimum contribution base, the employer's monthly report by the 17th and payment by the 23rd, the 33% band settled in the annual return, and late-payment interest of 0.05% a day. Trigger on: Latvia payroll, gross to net Latvia, darba devēja ziņojums, algas nodokļa grāmatiņa, Latvian wage tax. Out of scope: contribution rules in depth and self-employed contributions (latvia-social-contributions), the annual return (latvia-income-tax), non-residents (lv-cross-border)."
-version: 0.2
+version: 0.3
 jurisdiction: LV
 tax_year: 2026
-last_updated: 2026-10-24
+last_updated: 2026-11-14
 depends_on:
   - payroll-workflow-base
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
+type: computation
 ---
 
-# Latvia: payroll (2026) v0.2
+# Latvia: payroll (2026) v0.3
 
 > **Source-cited draft.** No accountant has reviewed this skill yet. Every figure comes from the consolidated Law On Personal Income Tax (PIT Law), the law On State Social Insurance (SI Law), the Solidarity Tax Law, the Law On Taxes and Fees (LTF) and the Administrative Liability Law, and from State Revenue Service (VID) pages. See Sources for how they were read.
 

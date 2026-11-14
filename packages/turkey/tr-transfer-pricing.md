@@ -4,13 +4,14 @@ description: "Turkish transfer pricing for tax year 2026 under Corporate Tax Law
 jurisdiction: TR
 category: international
 tax_year: 2026
-last_updated: 2026-10-31
-version: 0.1
+last_updated: 2026-11-14
+version: 0.2
+type: situation-rules
 tier: 2
 domain: transfer-pricing
 ---
 
-# Türkiye: transfer pricing (transfer fiyatlandırması) (2026) v0.1
+# Türkiye: transfer pricing (transfer fiyatlandırması) (2026) v0.2
 
 Türkiye taxes profit shifted to related persons as a disguised profit distribution (örtülü kazanç dağıtımı). The rule is in the Corporate Tax Law no. 5520 (KVK) art. 13. The detail is in the General Communiqué on Disguised Profit Distribution through Transfer Pricing, Serial No. 1 (Official Gazette 18 November 2007), changed by Serial No. 2 (22 April 2008), No. 3 (7 December 2017), No. 4 (1 September 2020) and No. 5 (17 October 2024). The Revenue Administration (Gelir İdaresi Başkanlığı, GİB) administers it. Corporate tax rates, thin capitalisation and the annual return are in [tr-corporate-income-tax](tr-corporate-income-tax.md). Withholding on payments abroad and treaties are in [tr-cross-border](tr-cross-border.md).
 
@@ -30,19 +31,19 @@ Türkiye taxes profit shifted to related persons as a disguised profit distribut
 | Item | Rate or amount | Year | Source |
 |---|---|---|---|
 | Related person through shareholding, votes or profit rights | At least 10% | 2026 | KVK art. 13(2), https://www.mevzuat.gov.tr/MevzuatMetin/1.5.5520.pdf |
-| Advance pricing agreement, longest term | 3 years | 2026 | KVK art. 13(5) |
+| Advance pricing agreement, longest term | 3 years | 2026 | KVK art. 13(5), https://www.mevzuat.gov.tr/MevzuatMetin/1.5.5520.pdf |
 | Advance pricing agreement renewal, apply before expiry | At least 9 months | 2026 | Communiqué Serial No. 3, section 6, https://www.resmigazete.gov.tr/eskiler/2017/12/20171207-9.htm |
 | Advance pricing agreement fee | None (Fees Law tariff XII repealed by Law 7061) | 2026 | Harçlar Kanunu no. 492, tariff 8, XII, https://www.mevzuat.gov.tr/MevzuatMetin/1.5.492.pdf |
 | Transfer pricing form: related persons that may be left off | Annual net total per related person below TRY 30,000 | 2026 | Communiqué Serial No. 4, section 7.5, https://www.resmigazete.gov.tr/eskiler/2020/09/20200901-3.htm |
-| Master file (genel rapor): who prepares | Member of a multinational group with prior-year total assets and net sales both TRY 500 million or more | 2026 | Communiqué Serial No. 4, section 7.2 |
+| Master file (genel rapor): who prepares | Member of a multinational group with prior-year total assets and net sales both TRY 500 million or more | 2026 | Communiqué Serial No. 4, section 7.2, https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Ffileadmin%2Fuser_upload%2FTebligler%2F5520%2Ftransferteblig1degisen3.pdf |
 | Country-by-country report: group threshold | Prior-year consolidated group revenue EUR 750 million or more | 2026 | Communiqué Serial No. 4, section 7.4; Serial No. 5, art. 2, https://www.resmigazete.gov.tr/eskiler/2024/10/20241017-4.htm |
-| Corporate tax on the adjustment | 25% (30% for the financial sector) | 2026 | KVK art. 32(1) |
+| Corporate tax on the adjustment | 25% (30% for the financial sector) | 2026 | KVK art. 32(1), https://www.mevzuat.gov.tr/MevzuatMetin/1.5.5520.pdf |
 | Withholding on the deemed dividend to a non-resident company | 15% of the grossed-up amount | 2026 | KVK art. 30(3); Decision 2009/14593 item 12 as changed by Decision 9286; GİB table, https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Fyardim-kaynaklar%2Fyararli-bilgiler%2Fkvk-nun-30-ve-gecici14-ile-gvk-nun-gecici-67inci-maddeleri-uyarinca-dar-mukellef.pdf |
 | Withholding on the deemed dividend to an individual | 15% of the grossed-up amount | 2026 | GVK art. 94(6)(b); GİB table, https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Fyardim-kaynaklar%2Fyararli-bilgiler%2Fgelir-vergisi-kanununun-94uncu-maddesinde-yer-alan-kesinti-oranlari.pdf |
 | Tax loss penalty | 1 times the tax lost (3 times for fraud under VUK art. 359) | 2026 | VUK art. 344, https://www.mevzuat.gov.tr/MevzuatMetin/1.4.213.pdf |
-| Tax loss penalty with complete and timely TP documentation | Cut by 50% | 2026 | KVK art. 13(8); Communiqué Serial No. 4, section 8.2 |
+| Tax loss penalty with complete and timely TP documentation | Cut by 50% | 2026 | KVK art. 13(8); Communiqué Serial No. 4, section 8.2, https://www.mevzuat.gov.tr/MevzuatMetin/1.5.5520.pdf |
 | Late interest on assessed tax | 3.7% a month | 2026 | VUK art. 112(3); Law 6183 art. 51 and Decision 10556, https://www.mevzuat.gov.tr/MevzuatMetin/1.3.6183.pdf |
-| Special irregularity penalty for not giving information or documents | TRY 35,000 (first-class traders), TRY 17,000 (second-class), TRY 8,700 (others) | 2026 | VUK repeated art. 355(1), amounts from VUK Communiqué 588 |
+| Special irregularity penalty for not giving information or documents | TRY 35,000 (first-class traders), TRY 17,000 (second-class), TRY 8,700 (others) | 2026 | VUK repeated art. 355(1), amounts from VUK Communiqué 588, https://www.mevzuat.gov.tr/MevzuatMetin/1.4.213.pdf |
 
 ## The taxable base
 
@@ -149,20 +150,20 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Kurumlar Vergisi Kanunu no. 5520, consolidated: arts. 11, 12, 13, 14, 30, 32 | https://www.mevzuat.gov.tr/MevzuatMetin/1.5.5520.pdf | 2026-10-31 |
-| Gelir Vergisi Kanunu no. 193, consolidated: arts. 41(1)(5), 94 | https://www.mevzuat.gov.tr/MevzuatMetin/1.4.193.pdf | 2026-10-31 |
-| Vergi Usul Kanunu no. 213, consolidated: arts. 112, 344, repeated art. 355 (2026 amounts from Communiqué 588) | https://www.mevzuat.gov.tr/MevzuatMetin/1.4.213.pdf | 2026-10-31 |
-| Amme Alacaklarının Tahsil Usulü Hakkında Kanun no. 6183, consolidated: art. 51 and note on Decision 10556 | https://www.mevzuat.gov.tr/MevzuatMetin/1.3.6183.pdf | 2026-10-31 |
-| Harçlar Kanunu no. 492, consolidated: tariff 8, XII | https://www.mevzuat.gov.tr/MevzuatMetin/1.5.492.pdf | 2026-10-31 |
-| Transfer pricing General Communiqué Serial No. 1, Official Gazette 18 November 2007 no. 26704 | https://www.resmigazete.gov.tr/eskiler/2007/11/20071118-5.doc | 2026-10-31 |
-| Serial No. 2 communiqué, Official Gazette 22 April 2008 no. 26855 | https://www.resmigazete.gov.tr/eskiler/2008/04/20080422-6.htm | 2026-10-31 |
-| Serial No. 3 amending communiqué, Official Gazette 7 December 2017 no. 30263 | https://www.resmigazete.gov.tr/eskiler/2017/12/20171207-9.htm | 2026-10-31 |
-| Serial No. 4 amending communiqué, Official Gazette 1 September 2020 no. 31231 | https://www.resmigazete.gov.tr/eskiler/2020/09/20200901-3.htm | 2026-10-31 |
-| Serial No. 5 amending communiqué, Official Gazette 17 October 2024 no. 32695 | https://www.resmigazete.gov.tr/eskiler/2024/10/20241017-4.htm | 2026-10-31 |
-| GİB, consolidated text of Serial No. 1 as amended to Serial No. 5 | https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Ffileadmin%2Fuser_upload%2FTebligler%2F5520%2Ftransferteblig1degisen3.pdf | 2026-10-31 |
-| Presidential Decision 9286, Official Gazette 22 December 2024 no. 32760 (art. 3: KVK 30 dividend rate 15%) | https://www.resmigazete.gov.tr/eskiler/2024/12/20241222-15.pdf | 2026-10-31 |
-| GİB, KVK art. 30 withholding rates for non-resident companies (table) | https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Fyardim-kaynaklar%2Fyararli-bilgiler%2Fkvk-nun-30-ve-gecici14-ile-gvk-nun-gecici-67inci-maddeleri-uyarinca-dar-mukellef.pdf | 2026-10-31 |
-| GİB, GVK art. 94 withholding rates (table) | https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Fyardim-kaynaklar%2Fyararli-bilgiler%2Fgelir-vergisi-kanununun-94uncu-maddesinde-yer-alan-kesinti-oranlari.pdf | 2026-10-31 |
-| GİB, Beyanname verme ve ödeme süreleri (filing calendar) | https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Fyardim-kaynaklar%2Fyararli-bilgiler%2FBeyannameVermeveOdemeSureleri.pdf | 2026-10-31 |
+| Kurumlar Vergisi Kanunu no. 5520, consolidated: arts. 11, 12, 13, 14, 30, 32 | https://www.mevzuat.gov.tr/MevzuatMetin/1.5.5520.pdf | 2026-11-14, read for arts. 12, 13, 30 and 32: the arm's length rule, APA term of three years, 50% penalty cut and the 25% and 30% rates |
+| Gelir Vergisi Kanunu no. 193, consolidated: arts. 41(1)(5), 94 | https://www.mevzuat.gov.tr/MevzuatMetin/1.4.193.pdf | 2026-11-14, read for arts. 41(1)(5) and 94: disguised profit for individuals and withholding |
+| Vergi Usul Kanunu no. 213, consolidated: arts. 112, 344, repeated art. 355 (2026 amounts from Communiqué 588) | https://www.mevzuat.gov.tr/MevzuatMetin/1.4.213.pdf | 2026-11-14, read for repeated art. 355: TRY 35,000, 17,000 and 8,700 (Communiqué 588 amounts for 2026) |
+| Amme Alacaklarının Tahsil Usulü Hakkında Kanun no. 6183, consolidated: art. 51 and note on Decision 10556 | https://www.mevzuat.gov.tr/MevzuatMetin/1.3.6183.pdf | 2026-11-14, read for art. 51: the 3.7% monthly surcharge |
+| Harçlar Kanunu no. 492, consolidated: tariff 8, XII | https://www.mevzuat.gov.tr/MevzuatMetin/1.5.492.pdf | 2026-11-14, read for tariff 8, XII: the APA fee, repealed by Law 7061, so none is charged |
+| Transfer pricing General Communiqué Serial No. 1, Official Gazette 18 November 2007 no. 26704 | https://www.resmigazete.gov.tr/eskiler/2007/11/20071118-5.doc | 2026-11-14, read for the original Serial No. 1 text |
+| Serial No. 2 communiqué, Official Gazette 22 April 2008 no. 26855 | https://www.resmigazete.gov.tr/eskiler/2008/04/20080422-6.htm | 2026-11-14, read for the Serial No. 2 amendments |
+| Serial No. 3 amending communiqué, Official Gazette 7 December 2017 no. 30263 | https://www.resmigazete.gov.tr/eskiler/2017/12/20171207-9.htm | 2026-11-14, read for the Serial No. 3 amendments |
+| Serial No. 4 amending communiqué, Official Gazette 1 September 2020 no. 31231 | https://www.resmigazete.gov.tr/eskiler/2020/09/20200901-3.htm | 2026-11-14, read for the Serial No. 4 amendments, sections 7 and 8 |
+| Serial No. 5 amending communiqué, Official Gazette 17 October 2024 no. 32695 | https://www.resmigazete.gov.tr/eskiler/2024/10/20241017-4.htm | 2026-11-14, read for the Serial No. 5 amendments |
+| GİB, consolidated text of Serial No. 1 as amended to Serial No. 5 | https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Ffileadmin%2Fuser_upload%2FTebligler%2F5520%2Ftransferteblig1degisen3.pdf | 2026-11-14, read for section 7.2: the TRY 500 million master file test |
+| Presidential Decision 9286, Official Gazette 22 December 2024 no. 32760 (art. 3: KVK 30 dividend rate 15%) | https://www.resmigazete.gov.tr/eskiler/2024/12/20241222-15.pdf | 2026-10-31 (the PDF gives no text to a script on 14 November 2026; the 15% rate was read in the GİB KVK 30 table instead) |
+| GİB, KVK art. 30 withholding rates for non-resident companies (table) | https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Fyardim-kaynaklar%2Fyararli-bilgiler%2Fkvk-nun-30-ve-gecici14-ile-gvk-nun-gecici-67inci-maddeleri-uyarinca-dar-mukellef.pdf | 2026-11-14, read for the KVK 30 rates, including 15% on dividends and branch profit |
+| GİB, GVK art. 94 withholding rates (table) | https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Fyardim-kaynaklar%2Fyararli-bilgiler%2Fgelir-vergisi-kanununun-94uncu-maddesinde-yer-alan-kesinti-oranlari.pdf | 2026-11-14, read for the GVK 94 rates |
+| GİB, Beyanname verme ve ödeme süreleri (filing calendar) | https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Fyardim-kaynaklar%2Fyararli-bilgiler%2FBeyannameVermeveOdemeSureleri.pdf | 2026-11-14, read for the corporate return and transfer pricing form deadlines |
 
 Not yet confirmed: whether any amending communiqué after Serial No. 5 (17 October 2024) has been published (none found: GİB's consolidated text of 22 October 2024 stops at Serial No. 5, and Official Gazette searches found nothing later); whether the President has announced any country list under KVK art. 13(2) and art. 30(7); the filing date and return for the withholding on a deemed dividend; the content of Annexes 3 to 6 (form, report and country-by-country templates); the advance pricing agreement process steps beyond those listed here; safe harbours or interest rates for related-party loans (none found).

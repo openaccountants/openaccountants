@@ -1,13 +1,13 @@
 ---
 name: us-secure-2-and-retirement-updates
-description: "Tier 2 US federal content skill for SECURE Act 2.0 (Division T of CAA 2023) retirement plan changes plus IRS guidance through 2025. Covers the RMD age 73 (born 1951-1959) / 75 (born 1960+) transition, the $11,250 super catch-up for ages 60-63 effective 2025, the 2026 Roth-mandatory catch-up for $145k+ wage earners (delayed from 2024), the inherited-IRA annual RMDs during the 10-year rule effective 2025 per the July 2024 final regs, Saver's Match replacing Saver's Credit in 2027, Solo 401(k) ability to establish + fund by extended return due date, emergency-savings within plans, $1,000 emergency distribution, $10k domestic-abuse withdrawal, 529-to-Roth $35k lifetime rollover, the $108,000 QCD limit for 2025, Roth SEP and Roth SIMPLE, and the backdoor / mega-backdoor Roth mechanics with §408(d)(2) pro-rata."
+description: "US federal retirement rules changed by SECURE 2.0 and later IRS guidance, as they apply in tax year 2026. Covers the 2026 limits from IRS Notice 2025-67 ($24,500 deferrals, $8,000 catch-up at 50, $11,250 at ages 60 to 63, $72,000 annual additions, IRA $7,500 plus $1,100, QCD $111,000), the Roth-only catch-up for employees whose 2025 FICA wages from the plan sponsor exceeded $150,000, the RMD starting age by year of birth (73, 75, and the unsettled 1959 cohort), the 25% or 10% excise tax for a missed RMD, inherited accounts and the 10-year rule with annual RMDs enforced from 2025, QCDs, the 529-to-Roth rollover ($35,000 lifetime), the Saver's Credit now and the Saver's Match from 2027, the newer exceptions to the early distribution tax, and first-year solo 401(k) deferrals. A dated section covers 2025 returns. Trigger on \"SECURE 2.0\", \"catch-up 2026\", \"Roth catch-up\", \"RMD age\", \"inherited IRA 10-year rule\", \"QCD limit\", \"529 to Roth\", \"Saver's Match\". Federal only."
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/us-secure-2-and-retirement-updates"
   jurisdiction: "US"
   tax_year: "2026"
-  last_updated: "2026-10-16"
+  last_updated: "2026-11-13"
 ---
 
 # US SECURE 2.0 and retirement rules (tax year 2026)
@@ -48,32 +48,32 @@ A short dated section near the end covers **2025 returns**, since extended 2025 
 3. **Distributions during life.** Find the RMD starting age from the year of birth. Compute the RMD from the prior 31 December balance. Check the deadline. A QCD can satisfy the RMD.
 4. **Inherited accounts.** Classify the beneficiary. Decide whether annual RMDs apply inside the 10-year period, and when the account must be emptied.
 5. **Early distributions.** If the person is under 59½, check whether one of the exceptions below applies. Otherwise the [10% additional tax](https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-exceptions-to-tax-on-early-distributions) applies.
-6. **Shortfalls.** For a missed RMD, compute the [25% excise tax, or 10% if corrected](https://www.law.cornell.edu/uscode/text/26/4974) within the correction window. Consider a reasonable-cause waiver.
+6. **Shortfalls.** For a missed RMD, compute the [25% excise tax, or 10% if corrected](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleD-chap43-sec4974.htm) within the correction window. Consider a reasonable-cause waiver.
 7. **Report** on Form 1040, Form 5329 and Form 8606 as relevant, by the filing deadlines below.
 
-## 2026 figures ([IRS Notice 2025-67](https://www.irs.gov/pub/irs-drop/n-25-67.pdf))
+### Rates, bands and thresholds
 
 Source: IRS Notice 2025-67 and news release IR-2025-111 (13 November 2025).
 
-| Item (2026) | Amount |
-| --- | --- |
-| Elective deferral limit, 401(k) / 403(b) / governmental 457(b) / TSP | $24,500 |
-| Catch-up, age 50 or over | $8,000 |
-| Catch-up, age 60, 61, 62 or 63 in 2026 | $11,250 |
-| Defined contribution annual additions limit, §415(c) | $72,000 |
-| Compensation limit, §401(a)(17) | $360,000 |
-| Roth catch-up wage threshold (2025 wages, used for 2026) | $150,000 |
-| SIMPLE plan deferral limit | $17,000 |
-| SIMPLE deferral limit, certain SIMPLE plans with the higher SECURE 2.0 limit | $18,100 |
-| SIMPLE catch-up, age 50 or over | $4,000 |
-| SIMPLE catch-up in those higher-limit SIMPLE plans | $3,850 |
-| SIMPLE catch-up, age 60 to 63 | $5,250 |
-| IRA contribution limit (traditional and Roth combined) | $7,500 |
-| IRA catch-up, age 50 or over | $1,100 |
-| QCD annual limit per person | $111,000 |
-| One-time QCD to a split-interest entity | $55,000 |
-| Domestic abuse victim distribution cap (or 50% of the account, if lower) | $10,500 |
-| Pension-linked emergency savings account (PLESA) balance cap | $2,600 |
+| Item (2026) | Amount | Source |
+| --- | --- | --- |
+| Elective deferral limit, 401(k) / 403(b) / governmental 457(b) / TSP | $24,500 | [Notice 2025-67](https://www.irs.gov/pub/irs-drop/n-25-67.pdf) |
+| Catch-up, age 50 or over | $8,000 | [Notice 2025-67](https://www.irs.gov/pub/irs-drop/n-25-67.pdf) |
+| Catch-up, age 60, 61, 62 or 63 in 2026 | $11,250 | [Notice 2025-67](https://www.irs.gov/pub/irs-drop/n-25-67.pdf) |
+| Defined contribution annual additions limit, §415(c) | $72,000 | [Notice 2025-67](https://www.irs.gov/pub/irs-drop/n-25-67.pdf) |
+| Compensation limit, §401(a)(17) | $360,000 | [Notice 2025-67](https://www.irs.gov/pub/irs-drop/n-25-67.pdf) |
+| Roth catch-up wage threshold (2025 wages, used for 2026) | $150,000 | [Notice 2025-67](https://www.irs.gov/pub/irs-drop/n-25-67.pdf) |
+| SIMPLE plan deferral limit | $17,000 | [Notice 2025-67](https://www.irs.gov/pub/irs-drop/n-25-67.pdf) |
+| SIMPLE deferral limit, certain SIMPLE plans with the higher SECURE 2.0 limit | $18,100 | [Notice 2025-67](https://www.irs.gov/pub/irs-drop/n-25-67.pdf) |
+| SIMPLE catch-up, age 50 or over | $4,000 | [Notice 2025-67](https://www.irs.gov/pub/irs-drop/n-25-67.pdf) |
+| SIMPLE catch-up in those higher-limit SIMPLE plans | $3,850 | [Notice 2025-67](https://www.irs.gov/pub/irs-drop/n-25-67.pdf) |
+| SIMPLE catch-up, age 60 to 63 | $5,250 | [Notice 2025-67](https://www.irs.gov/pub/irs-drop/n-25-67.pdf) |
+| IRA contribution limit (traditional and Roth combined) | $7,500 | [Notice 2025-67](https://www.irs.gov/pub/irs-drop/n-25-67.pdf) |
+| IRA catch-up, age 50 or over | $1,100 | [Notice 2025-67](https://www.irs.gov/pub/irs-drop/n-25-67.pdf) |
+| QCD annual limit per person | $111,000 | [Notice 2025-67](https://www.irs.gov/pub/irs-drop/n-25-67.pdf) |
+| One-time QCD to a split-interest entity | $55,000 | [Notice 2025-67](https://www.irs.gov/pub/irs-drop/n-25-67.pdf) |
+| Domestic abuse victim distribution cap (or 50% of the account, if lower) | $10,500 | [Notice 2025-67](https://www.irs.gov/pub/irs-drop/n-25-67.pdf) |
+| Pension-linked emergency savings account (PLESA) balance cap | $2,600 | [Notice 2025-67](https://www.irs.gov/pub/irs-drop/n-25-67.pdf) |
 
 Totals that follow from these: a participant aged 50 or over can defer up to **$32,500**. A participant aged 60 to 63 can defer up to **$35,750**. Catch-ups sit on top of the §415(c) limit, so the annual additions ceiling becomes **$80,000** with the age-50 catch-up, or **$83,250** with the age 60–63 catch-up.
 
@@ -89,9 +89,7 @@ Totals that follow from these: a participant aged 50 or over can defer up to **$
 - head of household: $36,375, $39,375 and $60,375;
 - everyone else: $24,250, $26,250 and $40,250.
 
-## The rules
-
-### Catch-ups, including ages 60 to 63 ([IRC §414(v)](https://www.law.cornell.edu/uscode/text/26/414))
+### Catch-ups, including ages 60 to 63 ([IRC §414(v)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapD-partI-subpartB-sec414.htm))
 
 - The age-50 catch-up applies to a participant who reaches age 50 by the end of the year.
 - The higher catch-up applies to a participant who **attains age 60, 61, 62 or 63 by the end of the taxable year**. In the year the participant reaches 64, the regular age-50 catch-up applies again. For 2026 this means people born 1963 through 1966.
@@ -136,7 +134,7 @@ The regular deferral limit ($24,500) can still be pre-tax. Only the catch-up por
   - 401(k) and 457(b) plans: each plan must pay its own RMD.
 - **Roth accounts.** Roth IRAs and designated Roth accounts in 401(k) and 403(b) plans need no withdrawals while the owner is alive. Beneficiaries are subject to the RMD rules.
 
-### Missed RMDs: the excise tax ([IRC §4974](https://www.law.cornell.edu/uscode/text/26/4974))
+### Missed RMDs: the excise tax ([IRC §4974](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleD-chap43-sec4974.htm))
 
 - **Rate.** The tax is **25%** of the shortfall (IRC §4974(a)).
 - **Reduced rate.** It drops to **10%** if, within the correction window, the taxpayer takes the missed amount from the same plan **and** files a return reflecting the tax.
@@ -193,7 +191,7 @@ An EDB may use life-expectancy payments. Other individual beneficiaries, such as
 - **RMD.** A QCD counts toward the year's RMD.
 - **No double benefit.** There is no charitable deduction for a QCD excluded from income.
 
-### 529 plan to Roth IRA rollover ([IRC §529(c)(3)(E)](https://www.law.cornell.edu/uscode/text/26/529))
+### 529 plan to Roth IRA rollover ([IRC §529(c)(3)(E)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapF-partVIII-sec529.htm))
 
 This is available for distributions after 31 December 2023. All of the following conditions must be met:
 
@@ -208,7 +206,7 @@ This is available for distributions after 31 December 2023. All of the following
 
 **Open point.** The statute and IRS publications do not say whether a change of 529 beneficiary restarts the 15-year period. Treat a recently changed beneficiary as a point to confirm with the plan and the IRS before rolling over.
 
-### Saver's Credit now, Saver's Match from 2027 ([IRC §6433](https://www.law.cornell.edu/uscode/text/26/6433), [IRC §25B](https://www.law.cornell.edu/uscode/text/26/25B))
+### Saver's Credit now, Saver's Match from 2027 ([IRC §6433](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap65-subchapB-sec6433.htm), [IRC §25B](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapA-partIV-subpartA-sec25B.htm))
 
 - **2026.** The Saver's Credit (IRC §25B) still applies to IRA contributions, elective deferrals and voluntary employee contributions, with the 2026 income limits above. Contributions to the person's own ABLE account also count: P.L. 119-21 (July 2025) made them permanently eligible, for taxable years ending after 31 December 2025.
 - **From 2027** (taxable years beginning after 31 December 2026):
@@ -238,14 +236,14 @@ The 10% additional tax applies to distributions before age 59½ unless an except
 | Qualified long-term care (§72(t)(2)(N), §401(a)(39)) | Live for distributions after 29 December 2025. Defined contribution plans only. Least of: premiums for certified long-term care insurance, 10% of the vested balance, or $2,600 (2026). Cover for a spouse needs a joint return. Not an eligible rollover distribution | No |
 | Automatic-enrollment permissible withdrawal (§414(w)) | Elected no later than 90 days after the first automatic contribution | Not applicable |
 
-### Solo 401(k): first-year deferrals and deadlines ([IRC §401(b)](https://www.law.cornell.edu/uscode/text/26/401))
+### Solo 401(k): first-year deferrals and deadlines ([IRC §401(b)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapD-partI-subpartA-sec401.htm))
 
 - **Adopting a plan after year end.** An employer may adopt a plan after the year ends but before the return due date **including extensions**, and treat it as adopted on the last day of the year.
-- **The election deadline (all other cases).** A sole proprietor's or partner's compensation is treated as available on the last day of the taxable year, so the owner **cannot make a deferral election for a year after that year ends** ([Treas. Reg. §1.401(k)-1(a)(6)(iii)](https://www.law.cornell.edu/cfr/text/26/1.401%28k%29-1)). For an existing plan, the 2026 deferral election must be made by 31 December 2026. Only the **deposit** of the deferral can wait until the return due date.
+- **The election deadline (all other cases).** A sole proprietor's or partner's compensation is treated as available on the last day of the taxable year, so the owner **cannot make a deferral election for a year after that year ends** ([Treas. Reg. §1.401(k)-1(a)(6)(iii)](https://www.ecfr.gov/current/title-26/section-1.401(k)-1)). For an existing plan, the 2026 deferral election must be made by 31 December 2026. Only the **deposit** of the deferral can wait until the return due date.
 - **First-year exception.** This applies only to a plan adopted after year end under the retroactive-adoption election above. An owner of an unincorporated business who is its **only employee** may make **elective deferrals** for that plan's **first plan year** up to the return due date **without extensions** (normally 15 April). They are treated as made in that first year.
 - **Employer contributions.** Profit-sharing contributions to a 401(k), and SEP contributions, are due by the due date of the employer's return **including extensions**.
 
-### Automatic enrollment for new 401(k) and 403(b) plans ([IRC §414A](https://www.law.cornell.edu/uscode/text/26/414A))
+### Automatic enrollment for new 401(k) and 403(b) plans ([IRC §414A](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapD-partI-subpartB-sec414A.htm))
 
 - **Which plans.** For plan years beginning after 31 December 2024, a 401(k) or 403(b) plan established **on or after 29 December 2022** must auto-enroll.
 - **Default rate.** The first-year rate must be between 3% and 10%. It rises by 1 percentage point a year until it is at least 10%, and never more than 15%.
@@ -258,7 +256,7 @@ The 10% additional tax applies to distributions before age 59½ unless an except
 
   The small-employer relief ends 1 year after the close of the first year in which the employer normally employs more than 10.
 
-## Boundary and exception table ([Notice 2025-67](https://www.irs.gov/pub/irs-drop/n-25-67.pdf), [IRC §414(v)(7)](https://www.law.cornell.edu/uscode/text/26/414))
+## Boundary and exception table
 
 | Situation | Treatment |
 | --- | --- |
@@ -280,7 +278,7 @@ The 10% additional tax applies to distributions before age 59½ unless an except
 | 529 account opened 14 years ago | Not eligible yet |
 | 529 rollover when the beneficiary already contributed the full IRA limit | Nothing can be rolled that year |
 
-## Worked cases ([Notice 2025-67](https://www.irs.gov/pub/irs-drop/n-25-67.pdf), [Pub. 590-B tables](https://www.irs.gov/publications/p590b))
+## Worked cases
 
 **Case C1: ordinary catch-up.** Ana is 55 at the end of 2026. Her 2025 box 3 wages from the employer sponsoring her 401(k) were $120,000, which is under the threshold. She may defer $24,500 + $8,000 = $32,500, pre-tax or Roth as the plan allows.
 
@@ -297,6 +295,17 @@ The 10% additional tax applies to distributions before age 59½ unless an except
 - It is due by 1 April 2027.
 - If he waits until then, his 2027 RMD is also due by 31 December 2027, and both are taxed in 2027.
 
+```oa-check
+name: First RMD at 73 (2026)
+inputs:
+  balance_31_dec_2025: 397500
+  divisor_age_73: 26.5
+steps:
+  - rmd_2026: balance_31_dec_2025 / divisor_age_73
+expected:
+  rmd_2026: 15000
+```
+
 **Case C5: inherited IRA, owner died after RBD.** Eva's father died in 2022 at 80, after his required beginning date. Eva is his adult daughter, not disabled or chronically ill, and more than 10 years younger. She is a non-EDB. She was 50 in 2023, the year after death. Her Table I factor is 36.2 for 2023, falling by 1 each year, so it is 33.2 for 2026. Her father's remaining life expectancy is shorter, so hers applies.
 
 - **2026 RMD.** The balance at 31 December 2025 was $332,000, so the RMD is $332,000 ÷ 33.2 = $10,000, due by 31 December 2026.
@@ -304,25 +313,43 @@ The 10% additional tax applies to distributions before age 59½ unless an except
 - **Earlier years.** The 2023 and 2024 RMDs fell under Notice 2023-54 (2023) and Notice 2024-35 (2024) relief. The 2025 RMD was due, and if it was missed it must be corrected now.
 - **Excise tax if the 2026 RMD is missed.** The tax is 25% of $10,000 = $2,500. It falls to 10% of $10,000 = $1,000 if she takes the amount and files within the correction window. She can also ask for a reasonable-cause waiver on Form 5329.
 
+```oa-check
+name: Inherited IRA annual RMD and missed-RMD excise tax (2026)
+inputs:
+  balance_31_dec_2025: 332000
+  factor_2023: 36.2
+  years_since_2023: 3
+steps:
+  - factor_2026: factor_2023 - years_since_2023
+  - rmd_2026: balance_31_dec_2025 / factor_2026
+  - excise_25: rmd_2026 * 0.25
+  - excise_10_if_corrected: rmd_2026 * 0.10
+expected:
+  factor_2026: 33.2
+  rmd_2026: 10000
+  excise_25: 2500
+  excise_10_if_corrected: 1000
+```
+
 **Case C6: 529 rollover.** Farah's 529 account was opened for her in 2009. In 2026 she is 24, has wages of $40,000 and has already contributed $2,000 to a traditional IRA for 2026. The account has been maintained for more than 15 years. Contributions from the last 5 years, and their earnings, are excluded. Her maximum 2026 rollover is $7,500 − $2,000 = $5,500. It must be a direct transfer to a Roth IRA in her name, and it counts toward her $35,000 lifetime cap.
 
-## 2025 returns, extended returns due 15 October 2026 ([Notice 2025-67](https://www.irs.gov/pub/irs-drop/n-25-67.pdf))
+## 2025 returns, extended returns due 15 October 2026
 
 For 2025, use these figures instead:
 
-| Item (2025) | Amount |
-| --- | --- |
-| Elective deferral limit | $23,500 |
-| Catch-up, age 50 or over | $7,500 |
-| Catch-up, age 60 to 63 in 2025 | $11,250 |
-| §415(c) annual additions limit | $70,000 |
-| SIMPLE deferral limit | $16,500 |
-| SIMPLE catch-up, age 50 or over | $3,500 |
-| IRA limit | $7,000 |
-| IRA catch-up | $1,000 |
-| QCD limit | $108,000 |
-| One-time split-interest QCD | $54,000 |
-| Domestic abuse distribution cap | $10,300 |
+| Item (2025) | Amount | Source |
+| --- | --- | --- |
+| Elective deferral limit | $23,500 | [Notice 2025-67](https://www.irs.gov/pub/irs-drop/n-25-67.pdf) |
+| Catch-up, age 50 or over | $7,500 | [Notice 2025-67](https://www.irs.gov/pub/irs-drop/n-25-67.pdf) |
+| Catch-up, age 60 to 63 in 2025 | $11,250 | [Notice 2025-67](https://www.irs.gov/pub/irs-drop/n-25-67.pdf) |
+| §415(c) annual additions limit | $70,000 | [Notice 2025-67](https://www.irs.gov/pub/irs-drop/n-25-67.pdf) |
+| SIMPLE deferral limit | $16,500 | [Notice 2025-67](https://www.irs.gov/pub/irs-drop/n-25-67.pdf) |
+| SIMPLE catch-up, age 50 or over | $3,500 | [Notice 2025-67](https://www.irs.gov/pub/irs-drop/n-25-67.pdf) |
+| IRA limit | $7,000 | [Notice 2025-67](https://www.irs.gov/pub/irs-drop/n-25-67.pdf) |
+| IRA catch-up | $1,000 | [Notice 2025-67](https://www.irs.gov/pub/irs-drop/n-25-67.pdf) |
+| QCD limit | $108,000 | [Notice 2025-67](https://www.irs.gov/pub/irs-drop/n-25-67.pdf) |
+| One-time split-interest QCD | $54,000 | [Notice 2025-67](https://www.irs.gov/pub/irs-drop/n-25-67.pdf) |
+| Domestic abuse distribution cap | $10,300 | [Notice 2025-67](https://www.irs.gov/pub/irs-drop/n-25-67.pdf) |
 
 - **Roth income phase-out for 2025:** $150,000 to $165,000 for single or head of household; $236,000 to $246,000 married filing jointly.
 - **Roth catch-up.** It was **not** required in 2025, because the Notice 2023-62 transition period ran to 31 December 2025. A pre-tax catch-up in 2025 is fine.
@@ -350,7 +377,9 @@ Refer rather than answer when the question involves:
 
 Never state that a 2026 catch-up can be pre-tax without the 2025 box 3 wages from the sponsoring employer. Never compute an inherited-account RMD without the owner's date of birth and date of death.
 
-## Filing and payment steps, with deadlines ([Pub. 560](https://www.irs.gov/publications/p560), [Pub. 590-A](https://www.irs.gov/publications/p590a))
+## Filing and payment
+
+Sources: [Pub. 560](https://www.irs.gov/publications/p560), [Pub. 590-A](https://www.irs.gov/publications/p590a).
 
 1. **2026 IRA and Roth IRA contributions.** Due by the due date of the 2026 return, **not including extensions**. For most people that is 15 April 2027.
 2. **Elective deferrals.**
@@ -363,7 +392,7 @@ Never state that a 2026 catch-up can be pre-tax without the 2025 box 3 wages fro
 6. **Form 8606.** Report nondeductible IRA contributions, conversions, and distributions with basis.
 7. **Extensions.** An extension to 15 October gives more time to file, not to pay.
 
-## Completion checklist ([Notice 2025-67](https://www.irs.gov/pub/irs-drop/n-25-67.pdf))
+## Completion checklist
 
 - [ ] Tax year confirmed. 2026 figures used for 2026, and the dated 2025 section for 2025.
 - [ ] Age at year end checked for the catch-up band (50+, 60 to 63, back to age-50 at 64).
@@ -380,6 +409,29 @@ Never state that a 2026 catch-up can be pre-tax without the 2025 box 3 wages fro
 - [ ] Early distributions: exception identified and repayment window noted.
 - [ ] Deadlines diarised: IRA contributions (no extension), employer contributions (with extension), RMDs.
 
+## Sources
+
+| Source | URL | Read on |
+| --- | --- | --- |
+| IRS Notice 2025-67. Read for every 2026 limit in the rates table, the $150,000 Roth catch-up wage threshold, the Roth and Saver's Credit income limits, QCD $111,000 and $55,000, domestic abuse $10,500, long-term care distribution $2,600, PLESA $2,600. | https://www.irs.gov/pub/irs-drop/n-25-67.pdf | 2026-11-13 |
+| 26 U.S.C. 414 (govinfo). Read for (v) catch-ups, the ages 60 to 63 increase and (v)(7) Roth-only catch-ups. | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapD-partI-subpartB-sec414.htm | 2026-11-13 |
+| Catch-up contributions final regulations, Federal Register 16 September 2025. Read for box 3 wages, the self-employed exclusion, applicability dates and the deemed Roth election. | https://www.federalregister.gov/documents/2025/09/16/2025-17865/catch-up-contributions | 2026-11-13 |
+| IRS RMD page. Read for the required beginning date, the still-working rule and the 5-percent owner. | https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-required-minimum-distributions-rmds | 2026-11-13 |
+| RMD final regulations, Federal Register 19 July 2024. Read for the 10-year rule, annual RMDs inside it and the age 21 majority rule. | https://www.federalregister.gov/documents/2024/07/19/2024-14542/required-minimum-distributions | 2026-11-13 |
+| RMD proposed regulations, Federal Register 19 July 2024. Read for the 1959 birth year (applicable age 73 proposed). | https://www.federalregister.gov/documents/2024/07/19/2024-14543/required-minimum-distributions | 2026-11-13 |
+| 26 U.S.C. 4974 (govinfo). Read for the 25% excise tax, the 10% reduced rate and the correction window. | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleD-chap43-sec4974.htm | 2026-11-13 |
+| IRS Publication 590-B. Read for QCD rules, the Uniform Lifetime and Single Life tables and the Appendix D worksheet. | https://www.irs.gov/publications/p590b | 2026-11-13 |
+| 26 U.S.C. 529 (govinfo). Read for (c)(3)(E) the 529-to-Roth rollover conditions and the $35,000 cap. | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapF-partVIII-sec529.htm | 2026-11-13 |
+| 26 U.S.C. 6433 (govinfo). Read for the Saver's Match: 50% of up to $2,000, the phase-out and the testing period. | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap65-subchapB-sec6433.htm | 2026-11-13 |
+| 26 U.S.C. 25B (govinfo). Read for the Saver's Credit rates and contribution cap. | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapA-partIV-subpartA-sec25B.htm | 2026-11-13 |
+| IRS exceptions to the tax on early distributions. Read for the emergency, domestic abuse, birth or adoption, disaster, terminal illness and long-term care exceptions. | https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-exceptions-to-tax-on-early-distributions | 2026-11-13 |
+| 26 U.S.C. 401 (govinfo). Read for (b) retroactive plan adoption and the first-year deferral rule. | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapD-partI-subpartA-sec401.htm | 2026-11-13 |
+| Treas. Reg. 1.401(k)-1 (eCFR). Read for (a)(6)(iii), when a self-employed person's compensation is treated as available. | https://www.ecfr.gov/current/title-26/section-1.401(k)-1 | 2026-11-13 |
+| 26 U.S.C. 414A (govinfo). Read for automatic enrollment of new plans and its exceptions. | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapD-partI-subpartB-sec414A.htm | 2026-11-13 |
+| IRS Publications 560 and 590-A. Read for contribution deadlines and IRA rules. | https://www.irs.gov/publications/p590a | 2026-11-13 |
+
+Not yet confirmed: the applicable RMD age for people born in 1959 (proposed regulations only); whether a 529 beneficiary change restarts the 15-year period; the 2026 Form 1040 and Form 5329 line numbers (the 2025 forms are quoted); the Saver's Credit changes from 2027 (ABLE-only, the $2,100 cap) come from Public Law 119-21 as summarised in the earlier version and were not re-read for this version.
+
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-16. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `us-secure-2-and-retirement-updates` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/us-secure-2-and-retirement-updates. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-13. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `us-secure-2-and-retirement-updates` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/us-secure-2-and-retirement-updates. If neither is available, confirm every figure against the official source pages cited above before relying on it.

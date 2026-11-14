@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/ie-cat"
   jurisdiction: "IE"
   tax_year: "2026"
-  last_updated: "2026-10-26"
+  last_updated: "2026-11-14"
 ---
 
 # Ireland Capital Acquisitions Tax (CAT), 2026
@@ -35,20 +35,20 @@ Authority: the Revenue Commissioners. Currency: euro. CAT is one tax charged on 
 |---|---|---|---|
 | CAT rate on the excess over the group threshold | 33% | Benefits taken on or after 6 Dec 2012, unchanged for 2026 | CATCA Sch. 2, Part 1, para 4; https://www.revenue.ie/en/gains-gifts-and-inheritance/cat-thresholds-rates-and-aggregation-rules/cat-rates.aspx |
 | Group A threshold (child of the disponer, minor child of a deceased child, parent taking an absolute inheritance from a child) | EUR 400,000 | Benefits taken 2 Oct 2024 to 6 Oct 2026 | Finance Act 2024 s.99; https://www.irishstatutebook.ie/eli/2024/act/43/section/99/enacted/en/html |
-| Group B threshold (lineal ancestor, lineal descendant other than Group A, brother, sister, niece, nephew) | EUR 40,000 | Benefits taken 2 Oct 2024 to 6 Oct 2026 | Finance Act 2024 s.99 (same URL) |
-| Group C threshold (anyone else) | EUR 20,000 | Benefits taken 2 Oct 2024 to 6 Oct 2026 | Finance Act 2024 s.99 (same URL) |
+| Group B threshold (lineal ancestor, lineal descendant other than Group A, brother, sister, niece, nephew) | EUR 40,000 | Benefits taken 2 Oct 2024 to 6 Oct 2026 | Finance Act 2024 s.99; https://www.irishstatutebook.ie/eli/2024/act/43/section/99/enacted/en/html |
+| Group C threshold (anyone else) | EUR 20,000 | Benefits taken 2 Oct 2024 to 6 Oct 2026 | Finance Act 2024 s.99; https://www.irishstatutebook.ie/eli/2024/act/43/section/99/enacted/en/html |
 | Group A threshold | EUR 420,000 | Benefits taken on or after 7 Oct 2026 | Finance (No. 2) Bill 2026 s.66 (initiated 19 Oct 2026, not yet enacted), https://data.oireachtas.ie/ie/oireachtas/bill/2026/98/eng/initiated/b9826d.pdf ; applied by Revenue: https://www.revenue.ie/en/gains-gifts-and-inheritance/cat-thresholds-rates-and-aggregation-rules/cat-thresholds.aspx |
-| Group B threshold | EUR 44,000 | Benefits taken on or after 7 Oct 2026 | Finance (No. 2) Bill 2026 s.66; Revenue CAT thresholds page (same URLs) |
-| Group C threshold | EUR 22,000 | Benefits taken on or after 7 Oct 2026 | Finance (No. 2) Bill 2026 s.66; Revenue CAT thresholds page (same URLs) |
+| Group B threshold | EUR 44,000 | Benefits taken on or after 7 Oct 2026 | Finance (No. 2) Bill 2026 s.66; Revenue CAT thresholds page, https://www.revenue.ie/en/gains-gifts-and-inheritance/cat-thresholds-rates-and-aggregation-rules/cat-thresholds.aspx |
+| Group C threshold | EUR 22,000 | Benefits taken on or after 7 Oct 2026 | Finance (No. 2) Bill 2026 s.66; Revenue CAT thresholds page, https://www.revenue.ie/en/gains-gifts-and-inheritance/cat-thresholds-rates-and-aggregation-rules/cat-thresholds.aspx |
 | Aggregation start date | Prior benefits in the same group since 5 Dec 1991 | 2026 | CATCA Sch. 2, Part 1, para 3; https://www.revenue.ie/en/gains-gifts-and-inheritance/cat-thresholds-rates-and-aggregation-rules/cat-aggregation-rules.aspx |
 | Small gift exemption | First EUR 3,000 of gifts from each disponer to each donee per calendar year; not aggregated | 2026 | s.69; https://www.revenue.ie/en/tax-professionals/documents/notes-for-guidance/cat/2025/part09.pdf |
 | Agricultural relief | Market value reduced by 90% | 2026 | s.89; https://www.revenue.ie/en/tax-professionals/documents/notes-for-guidance/cat/2025/part10.pdf |
-| Business relief | Taxable value reduced by 90% | 2026 | s.92; Notes for Guidance Part 10 (same URL) |
+| Business relief | Taxable value reduced by 90% | 2026 | s.92; https://www.revenue.ie/en/tax-professionals/documents/notes-for-guidance/cat/2025/part10.pdf |
 | IT38 filing trigger | Aggregate taxable value in the group over 80% of the group threshold | 2026 | s.46(4)(a); https://www.revenue.ie/en/tax-professionals/documents/notes-for-guidance/cat/2025/part06.pdf |
-| 80% trigger amounts | A 320,000 / B 32,000 / C 16,000 to 6 Oct 2026; A 336,000 / B 35,200 / C 17,600 from 7 Oct 2026 | 2026 | Computed: 80% of each threshold above |
+| 80% trigger amounts | A 320,000 / B 32,000 / C 16,000 to 6 Oct 2026; A 336,000 / B 35,200 / C 17,600 from 7 Oct 2026 | 2026 | Computed: 80% of each threshold above, s.46(4)(a); https://www.revenue.ie/en/tax-professionals/documents/notes-for-guidance/cat/2025/part06.pdf |
 | Reporting of interest-free and low-interest loans from close relatives | Return required where the aggregate balance on specified loans exceeds EUR 335,000 on at least one day in the period | From 1 Jan 2025 | s.46(4A)(b) as substituted by Finance Act 2024 s.98; https://www.irishstatutebook.ie/eli/2024/act/43/section/98/enacted/en/html |
 | Late filing surcharge | 5% of tax, capped at EUR 12,695, if under 2 months late; 10%, capped at EUR 63,485, if 2 months or more late | 2026 | s.53A; https://www.revenue.ie/en/tax-professionals/documents/notes-for-guidance/cat/2025/part07.pdf |
-| Under-valuation surcharge | 10%, 20% or 30% of the tax on the asset when the declared value is 50 to under 67%, 40 to under 50%, or under 40% of the ascertained value | 2026 | s.53; Notes for Guidance Part 7 (same URL) |
+| Under-valuation surcharge | 10%, 20% or 30% of the tax on the asset when the declared value is 50 to under 67%, 40 to under 50%, or under 40% of the ascertained value | 2026 | s.53; https://www.revenue.ie/en/tax-professionals/documents/notes-for-guidance/cat/2025/part07.pdf |
 | Interest on late CAT | 0.0219% per day | Since 1 Jul 2009 | s.51(2); https://www.revenue.ie/en/tax-professionals/tdm/collection/debt-management/guidelines-for-charging-interest-on-late-payment.pdf |
 
 Historic rates for older aggregation work: 30% (7 Dec 2011 to 5 Dec 2012), 25% (8 Apr 2009 to 6 Dec 2011), 22% (20 Nov 2008 to 7 Apr 2009), 20% (1 Dec 1999 to 19 Nov 2008) (Revenue CAT rates page). Prior benefits are aggregated at their taxable value; the threshold in force at the date of the current benefit is used.
@@ -218,4 +218,4 @@ Not yet confirmed: enactment of Finance (No. 2) Bill 2026 s.66 (the EUR 420,000 
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-26. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ie-cat` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ie-cat. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ie-cat` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ie-cat. If neither is available, confirm every figure against the official source pages cited above before relying on it.

@@ -1,10 +1,11 @@
 ---
 name: mexico-crypto-tax
 description: Use this skill whenever asked about Mexico cryptocurrency or virtual asset taxation. Trigger on phrases like "crypto tax Mexico", "Bitcoin Mexico", "impuesto criptomonedas", "ISR crypto", "SAT crypto", "activos virtuales Mexico", "Bitso tax", "staking Mexico", "mining income Mexico", "NFT tax Mexico", "Ley Fintech crypto", "declaración anual crypto", "CFDI crypto", or any question about the income tax, ISR, or IVA treatment of cryptocurrency, tokens, or digital assets for Mexican tax residents or Mexico-source crypto income. Covers SAT treatment of virtual assets, ISR rates, cost basis, CARF reporting, and Ley Fintech classification. ALWAYS read this skill before touching any Mexico crypto work.
-version: 1.1
+version: 1.2
 jurisdiction: MX
 tax_year: 2026
-last_updated: 2026-11-05
+last_updated: 2026-11-14
+type: situation-rules
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
@@ -62,19 +63,19 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 **ISR Progressive Rates - Personas Físicas (2025)**  _(LISR Art. 152; Resolución Miscelánea Fiscal 2025.)_
 
-| Lower Limit (MXN) | Upper Limit (MXN) | Fixed Quota (MXN) | Marginal Rate |
-| --- | --- | --- | --- |
-| $0.01 | $8,952.49 | $0.00 | 1.92% |
-| $8,952.50 | $75,984.55 | $171.88 | 6.40% |
-| $75,984.56 | $133,536.07 | $4,461.94 | 10.88% |
-| $133,536.08 | $155,229.80 | $10,723.55 | 16.00% |
-| $155,229.81 | $185,852.57 | $14,194.54 | 17.92% |
-| $185,852.58 | $374,837.88 | $19,682.13 | 21.36% |
-| $374,837.89 | $590,795.99 | $60,049.40 | 23.52% |
-| $590,796.00 | $1,127,926.84 | $110,842.74 | 30.00% |
-| $1,127,926.85 | $1,503,902.46 | $271,981.99 | 32.00% |
-| $1,503,902.47 | $4,511,707.37 | $392,294.17 | 34.00% |
-| $4,511,707.38 | En adelante | $1,414,947.85 | 35.00% |
+| Lower Limit (MXN) | Upper Limit (MXN) | Fixed Quota (MXN) | Marginal Rate | Source |
+| --- | --- | --- | --- | --- |
+| $0.01 | $8,952.49 | $0.00 | 1.92% | [RMF 2026 Anexo 8, C.I, 2025 annual tariff (SAT)](https://www.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/anexos/Anexo-8-RMF-2026_DOF-28122025.pdf) |
+| $8,952.50 | $75,984.55 | $171.88 | 6.40% | same |
+| $75,984.56 | $133,536.07 | $4,461.94 | 10.88% | same |
+| $133,536.08 | $155,229.80 | $10,723.55 | 16.00% | same |
+| $155,229.81 | $185,852.57 | $14,194.54 | 17.92% | same |
+| $185,852.58 | $374,837.88 | $19,682.13 | 21.36% | same |
+| $374,837.89 | $590,795.99 | $60,049.40 | 23.52% | same |
+| $590,796.00 | $1,127,926.84 | $110,842.74 | 30.00% | same |
+| $1,127,926.85 | $1,503,902.46 | $271,981.99 | 32.00% | same |
+| $1,503,902.47 | $4,511,707.37 | $392,294.17 | 34.00% | same |
+| $4,511,707.38 | En adelante | $1,414,947.85 | 35.00% | same |
 
 - **Combining crypto gains with other income** - Crypto gains are added to ALL other income for the year to determine the applicable bracket.  _(LISR Art. 152; Resolución Miscelánea Fiscal 2025.)_
 
@@ -82,9 +83,9 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 **Corporate ISR Rate**  _(LISR Art. 9.)_
 
-| Entity Type | Rate |
-| --- | --- |
-| Personas morales (corporations) | 30% flat on net gain |
+| Entity Type | Rate | Source |
+| --- | --- | --- |
+| Personas morales (corporations) | 30% flat on net gain | [LISR Art. 9, DOF 11-12-2013](https://dof.gob.mx/nota_detalle.php?codigo=5325371&fecha=11/12/2013) |
 
 ### 3.3 RESICO Rates (Régimen Simplificado de Confianza)
 
@@ -92,13 +93,13 @@ If the taxpayer qualifies for RESICO (total annual income ≤ $3,500,000 MXN):
 
 **RESICO Rates (Régimen Simplificado de Confianza)**
 
-| Annual Income (MXN) | Rate |
-| --- | --- |
-| Up to $300,000 | 1.00% |
-| $300,001 – $600,000 | 1.10% |
-| $600,001 – $1,000,000 | 1.50% |
-| $1,000,001 – $2,500,000 | 2.00% |
-| $2,500,001 – $3,500,000 | 2.50% |
+| Annual Income (MXN) | Rate | Source |
+| --- | --- | --- |
+| Up to $300,000 | 1.00% | [LISR Art. 113-F, DOF 12-11-2021](https://dof.gob.mx/nota_detalle.php?codigo=5635286&fecha=12/11/2021) |
+| Over $300,000.00 up to $600,000.00 | 1.10% | same |
+| Over $600,000.00 up to $1,000,000.00 | 1.50% | same |
+| Over $1,000,000.00 up to $2,500,000.00 | 2.00% | same |
+| Over $2,500,000.00 up to $3,500,000.00 | 2.50% | same |
 
 **Warning:** RESICO applicability to crypto traders is uncertain. Conservative default: use the general progressive regime unless a tax professional confirms RESICO eligibility.
 
@@ -110,9 +111,9 @@ If the taxpayer qualifies for RESICO (total annual income ≤ $3,500,000 MXN):
 
 **Annual Exemption**
 
-| Exemption | Amount | Condition |
-| --- | --- | --- |
-| Enajenacion de bienes muebles (LISR Art. 93 fr. XIX b)) | 3x the general minimum wage of the contributor's geographic area, annualized; read as 3x UMA annualized since the 2016 de-indexation: $123,820.56 for 2025, $128,383.92 for 2026 | Measured on the annual difference between total proceeds and documented acquisition cost (net gain, not gross). If the difference exceeds the threshold, tax is paid on the excess: "Por la utilidad que exceda se pagara el impuesto" |
+| Exemption | Amount | Condition | Source |
+| --- | --- | --- | --- |
+| Enajenacion de bienes muebles (LISR Art. 93 fr. XIX b)) | 3x the general minimum wage of the contributor's geographic area, annualized; read as 3x UMA annualized since the 2016 de-indexation: $123,820.56 for 2025, $128,383.92 for 2026 (computed: 3 x the annual UMA) | Measured on the annual difference between total proceeds and documented acquisition cost (net gain, not gross). If the difference exceeds the threshold, tax is paid on the excess: "Por la utilidad que exceda se pagara el impuesto" | [LISR Art. 93 fr. XIX b), DOF 11-12-2013](https://dof.gob.mx/nota_detalle.php?codigo=5325373&fecha=11/12/2013); [INEGI, UMA 2025 and 2026 annual values](https://www.inegi.org.mx/temas/uma/) |
 
 The statute text reads "tres veces el salario minimo general del area geografica del contribuyente elevado al ano" (LISR Art. 93 fr. XIX b)). Since the 2016 constitutional de-indexation, minimum-wage references in federal law are read as UMA. UMA annual values (INEGI): $41,273.52 (2025), $42,794.64 (2026). Whether this exemption extends to intangible movable property such as virtual assets is SAT-practice judgment - flag for professional review.
 
@@ -551,6 +552,10 @@ Before finalising any Mexico crypto tax computation, verify:
 
 | Source | URL | Read on |
 | --- | --- | --- |
+| SAT, RMF 2026 Anexo 8, read for the 2025 annual tariff (C.I) row by row | https://www.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/anexos/Anexo-8-RMF-2026_DOF-28122025.pdf | 2026-11-14 |
+| DOF 11-12-2013, decree issuing the LISR, read for Art. 9 (30%), Art. 93 fr. XIX b) (three times the minimum wage elevated to the year) and Art. 126 (20% provisional payment on other goods) | https://dof.gob.mx/nota_detalle.php?codigo=5325373&fecha=11/12/2013 | 2026-11-14 |
+| DOF 12-11-2021, reform decree adding RESICO, read for LISR Art. 113-F (annual RESICO table) | https://dof.gob.mx/nota_detalle.php?codigo=5635286&fecha=12/11/2021 | 2026-11-14 |
+| INEGI, Unidad de Medida y Actualización, read for the annual UMA: MXN 42,794.64 (2026) and MXN 41,273.52 (2025) | https://www.inegi.org.mx/temas/uma/ | 2026-11-14 |
 | Ley del Impuesto sobre la Renta, texto vigente (ultima reforma DOF 01-04-2024) | https://www.diputados.gob.mx/LeyesBiblio/pdf/LISR.pdf | 2026-10-28 |
 | Codigo Fiscal de la Federacion, texto vigente (zero mentions of "activo virtual") | https://www.diputados.gob.mx/LeyesBiblio/pdf/CFF.pdf | 2026-10-31 |
 | RMF 2025 Anexo 8 (tarifas Art. 152, TY2025) | http://omawww.sat.gob.mx/normatividad_RMF_RGCE/Paginas/documentos2025/rmf/anexos/Anexo8_RMF2025-30122024.pdf | 2026-10-28 |

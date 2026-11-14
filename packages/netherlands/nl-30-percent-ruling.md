@@ -1,14 +1,15 @@
 ---
 name: nl-30-percent-ruling
 description: "Netherlands 30% ruling (expat scheme, expatregeling) for employees recruited or seconded from abroad, tax year 2026: who qualifies (150 km rule, PhD and returning-employee exceptions, the 2026 salary norms of EUR 48,013 and EUR 36,497), the 30% tax-free allowance for 2026 and the cut to 27% from 1 January 2027 written into the law, the transitional rule that keeps 30% for rulings applied by the last pay period of 2023, the WNT cap (EUR 262,000, so EUR 78,600 a year), the 4-month application window, the 5-year term and earlier-stay reductions, the annual choice against actual costs, penalties and interest, and the end of partial non-resident status after the 2026 return. Trigger on: \"Netherlands 30% ruling\", \"30 percent ruling\", \"30 procent regeling\", \"30%-regeling\", \"expat scheme\", \"expatregeling\", \"extraterritorial costs\", \"Holland expat tax ruling\", \"Netherlands inbound worker tax\", \"30% allowance Netherlands\", \"Dutch expat regime\", \"Netherlands tax ruling expatriate\", \"partial non-resident Netherlands\", \"tax-free allowance for expats\". Out of scope: general payroll (nl-payroll-tax), box 1 to 3 income tax (nl-income-tax), residence and treaties (nl-cross-border, nl-double-tax-relief), employees sent abroad from the Netherlands."
-version: 1.1
+version: 1.2
 jurisdiction: NL
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: cross-border
+type: situation-rules
 ---
 
 # Netherlands: the 30% ruling (expatregeling) for incoming employees
@@ -33,19 +34,7 @@ It does not cover employees sent abroad from the Netherlands (a separate version
 
 Main sources: the [Handboek Loonheffingen 2026, section 19.4](https://download.belastingdienst.nl/belastingdienst/docs/handboek-loonheffingen-lh0221t61fd.pdf) (the Belastingdienst's employer manual, March 2026 version) and the Belastingdienst page [Can I apply for the Expat Scheme (30% facility)?](https://www.belastingdienst.nl/wps/wcm/connect/en/individuals/content/coming-to-work-in-the-netherlands-30-percent-facility). The employer must designate the qualifying allowance as a targeted exemption in payroll and retain the joint decision and eligibility evidence.
 
-Law and other sources used, with the date read:
-
-| Source | URL | Read on |
-| --- | --- | --- |
-| Wet op de loonbelasting 1964, art. 31a (version 1 January 2026) | https://wetten.overheid.nl/BWBR0002471/2026-01-01/0 | 2026-10-27 |
-| Wet op de loonbelasting 1964, art. 31a (version 1 January 2027, 27%) | https://wetten.overheid.nl/BWBR0002471/2027-01-01/0 | 2026-10-27 |
-| Uitvoeringsbesluit loonbelasting 1965, art. 10e to 10ej | https://wetten.overheid.nl/BWBR0002489/2026-01-01/0 | 2026-10-27 |
-| Algemene wet inzake rijksbelastingen (AWR), art. 10, 19, 30h, 67b, 67c, 67f | https://wetten.overheid.nl/BWBR0002320/2026-01-01/0 | 2026-10-27 |
-| Belastingplan 2025, Stb. 2024, 434 (Wet LB art. 31a(8): 30% for 2025 and 2026, 27% from 2027) | https://zoek.officielebekendmakingen.nl/stb-2024-434.html | 2026-10-27 |
-| Draft Fiscaal verzamelbesluit 2026, art. II parts B to D (UB LB art. 10ea and 10eb), consultation closed 13 March 2026 | https://www.internetconsultatie.nl/fiscaalverzamelbesluit/document/15293 | 2026-10-27 |
-| Belastingdienst, Handboek Loonheffingen 2026 (March 2026), §19.4 and §22.1.5 | https://download.belastingdienst.nl/belastingdienst/docs/handboek-loonheffingen-lh0221t61fd.pdf | 2026-10-27 |
-| Belastingdienst, Can I apply for the Expat Scheme (30% facility)? | https://www.belastingdienst.nl/wps/wcm/connect/en/individuals/content/coming-to-work-in-the-netherlands-30-percent-facility | 2026-10-27 |
-| Belastingdienst, percentages belastingrente | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/standaard_functies/prive/contact/rechten_en_plichten_bij_de_belastingdienst/belastingrente/overzicht_percentages_belastingrente | 2026-10-24 |
+The sources, with what was read on each, are in the Sources section at the end.
 
 ## Ask the client first
 
@@ -74,9 +63,32 @@ Law and other sources used, with the date read:
 
 The employer is not obliged to pay the maximum allowance: document the agreed amount and payroll designation before calculating. [Employer agreement](https://www.belastingdienst.nl/wps/wcm/connect/en/individuals/content/coming-to-work-in-the-netherlands-30-percent-facility).
 
-## Figures, with years
+### Rates, bands and thresholds
 
-### Salary norm (taxable annual wage must be more than this, excluding the allowance)
+Tax year 2026 unless the row says otherwise. The detail and conditions follow in the sub-sections below.
+
+| Item | Figure | Condition | Source |
+|---|---|---|---|
+| Salary norm 2026, general | Taxable wage more than EUR 48,013 a year, excluding the allowance | Not for designated scientific researchers or doctors in specialist training | https://wetten.overheid.nl/BWBR0002489/2026-01-01/0 |
+| Salary norm 2026, under 30 with a qualifying master's | More than EUR 36,497 | Until the month after the month the person turns 30 | same |
+| Salary norm 2025, general and under 30 | EUR 46,660 and EUR 35,468 | 2025 payroll and returns | https://www.belastingdienst.nl/wps/wcm/connect/en/individuals/content/coming-to-work-in-the-netherlands-30-percent-facility |
+| Salary norm 2024, general and under 30 | EUR 46,107 and EUR 35,048 | Basis of the old norm kept by rulings applied by the last pay period of 2024 | same |
+| Salary norm 2027, announced, before indexation | EUR 51,899 and EUR 39,450 | Not final, see Not yet confirmed | https://download.belastingdienst.nl/belastingdienst/docs/handboek-loonheffingen-lh0221t61fd.pdf |
+| Maximum allowance 2025 and 2026 | 30% of the wage including the allowance | All incoming employees | https://wetten.overheid.nl/BWBR0002471/2026-01-01/0 |
+| Maximum allowance from 1 January 2027 | 27% | Unless first applied by the last pay period of 2023 (stays 30%) | https://wetten.overheid.nl/BWBR0002471/2027-01-01/0 |
+| Cap on the base 2026 (WNT norm) | EUR 262,000, so at most EUR 78,600 tax-free for a full year | Pro rata for a part year | https://www.belastingdienst.nl/wps/wcm/connect/en/individuals/content/coming-to-work-in-the-netherlands-30-percent-facility |
+| 150-kilometre rule | More than 16 of the 24 months before the first working day, more than 150 km from the Dutch border | Exceptions for PhD and some returning employees | same |
+| Decision time | Within 8 weeks | Belastingdienst service aim | same |
+| Application window | Within 4 months of the first working day for effect from that day | Later applications start later, no retroactive effect | https://wetten.overheid.nl/BWBR0002489/2026-01-01/0 |
+| Maximum term | 5 years, less earlier stays or work in the Netherlands in the last 25 years | Rulings since 2019 | same |
+| Gap between employers | At most 3 months | Joint request by employee and new employer | same |
+| Employer housing, actual-cost route | Only costs above 18% of current wage are extraterritorial | Only where actual costs are reimbursed instead of the ruling | https://download.belastingdienst.nl/belastingdienst/docs/handboek-loonheffingen-lh0221t61fd.pdf |
+| Relocation costs, separate exemption | EUR 7,750 plus actual moving and storage costs | Move linked to the employment | same |
+| Payroll return penalty (verzuim) | Up to EUR 1,675 | Late, missing or wrong payroll return | https://wetten.overheid.nl/BWBR0002320/2026-01-01/0 |
+| Late or short payment penalty | Up to EUR 6,709 | Payroll tax not paid on time | same |
+| Belastingrente, all taxes except VPB and benefits | 5% from 1 January 2026 (6.5% in 2025) | Interest on a payroll additional assessment | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/standaard_functies/prive/contact/rechten_en_plichten_bij_de_belastingdienst/belastingrente/overzicht_percentages_belastingrente |
+
+#### Salary norm (taxable annual wage must be more than this, excluding the allowance)
 
 Source: [UB LB art. 10eb(1) and (2), version 1 January 2026](https://wetten.overheid.nl/BWBR0002489/2026-01-01/0) for 2026; [Belastingdienst, Can I apply for the Expat Scheme](https://www.belastingdienst.nl/wps/wcm/connect/en/individuals/content/coming-to-work-in-the-netherlands-30-percent-facility) for 2024 to 2026; [Handboek Loonheffingen 2026 §19.4.1](https://download.belastingdienst.nl/belastingdienst/docs/handboek-loonheffingen-lh0221t61fd.pdf) for 2027. The exemption from the norm for scientific researchers at designated institutions and doctors in specialist training is [UB LB art. 10eb(3)](https://wetten.overheid.nl/BWBR0002489/2026-01-01/0).
 
@@ -91,7 +103,7 @@ Source: [UB LB art. 10eb(1) and (2), version 1 January 2026](https://wetten.over
 - **Who keeps the old norm:** employees whose decision was valid in 2024 and whose ruling was applied by the last pay period of 2024 keep the old salary norm (the 2024 norm, indexed each year) for the whole term of their decision. Employees whose ruling starts from 1 January 2025 move to the new norm from 2027.
 - The lower norm applies only while the person is under 30. From the month after the month in which they turn 30 the general norm applies.
 
-### Maximum percentage
+#### Maximum percentage
 
 Source: [Handboek Loonheffingen 2026 §19.4 and §19.4.3](https://download.belastingdienst.nl/belastingdienst/docs/handboek-loonheffingen-lh0221t61fd.pdf); [Wet LB art. 31a(8), version 1 January 2026](https://wetten.overheid.nl/BWBR0002471/2026-01-01/0) (30%); [Wet LB art. 31a(8), version 1 January 2027](https://wetten.overheid.nl/BWBR0002471/2027-01-01/0) (27%).
 
@@ -107,7 +119,7 @@ Source: [Handboek Loonheffingen 2026 §19.4 and §19.4.3](https://download.belas
 - **The 2024 phasing is gone.** The 2024 law cut the maximum to 30% for the first 20 months, 20% for the next 20 months and 10% for the last 20 months. That was largely reversed from 2025 and replaced by the flat 27% from 2027. Do not apply 30/20/10 to any year from 2025 ([Handboek 2026 §19.4](https://download.belastingdienst.nl/belastingdienst/docs/handboek-loonheffingen-lh0221t61fd.pdf)).
 - **Where the reversal sits in the law.** [Belastingplan 2025 (Wet van 18 December 2024, Stb. 2024, 434)](https://zoek.officielebekendmakingen.nl/stb-2024-434.html) set a flat maximum in Wet LB art. 31a(8): 30% for 2025 and 2026, 27% from 1 January 2027. The government left UB LB art. 10ea(1)(a) and (3) unamended by mistake, so the consolidated text for 2026 on wetten.overheid.nl still shows 30/20/10 (checked 27 October 2026). The [draft Fiscaal verzamelbesluit 2026](https://www.internetconsultatie.nl/fiscaalverzamelbesluit/document/15293) (art. II, part B) deletes the phasing with retroactive effect to 1 January 2025 and (part C) changes 30% to 27% from 2027; its Staatsblad publication was not yet found. The Belastingdienst applies 30% for the full term in 2025 and 2026 ([Handboek §19.4.3](https://download.belastingdienst.nl/belastingdienst/docs/handboek-loonheffingen-lh0221t61fd.pdf)). For 2026, apply 30% for every incoming employee.
 
-### Cap on the base (WNT norm, the "Balkenende" cap)
+#### Cap on the base (WNT norm, the "Balkenende" cap)
 
 Source: [Handboek Loonheffingen 2026 §19.4.3](https://download.belastingdienst.nl/belastingdienst/docs/handboek-loonheffingen-lh0221t61fd.pdf); [Belastingdienst page](https://www.belastingdienst.nl/wps/wcm/connect/en/individuals/content/coming-to-work-in-the-netherlands-30-percent-facility).
 
@@ -116,7 +128,7 @@ Source: [Handboek Loonheffingen 2026 §19.4.3](https://download.belastingdienst.
 - **Transitional rule for the cap:** where the ruling was applied in the last pay period of 2022 (and there was no new start after a break after 31 December 2022), the cap was delayed until 1 January 2026. From 2026 the cap applies to everyone.
 - From 2027 (inference, check): the Handboek states the cap only for 2026 at 30%. Because the cap is a maximum base ("maximumgrondslag waarover u de expatvergoeding mag berekenen"), it should work the same way with the 27% maximum, so a full year would be 27% of the 2027 WNT norm, which was not published in the sources used here. Employees under the 2023 transitional rule (ruling applied by the last pay period of 2023) keep 30%, so for them it would stay 30% of the WNT norm. Confirm both before relying on a 2027 figure ([Handboek 2026 §19.4.3](https://download.belastingdienst.nl/belastingdienst/docs/handboek-loonheffingen-lh0221t61fd.pdf)).
 
-### Other figures
+#### Other figures
 
 - Term: at most 5 years (since 2019) ([UB LB art. 10ec(1)](https://wetten.overheid.nl/BWBR0002489/2026-01-01/0)). Earlier periods in the Netherlands in the 25 years before arrival are deducted.
 - Application window for effect from the first working day: 4 months ([UB LB art. 10ei(2)](https://wetten.overheid.nl/BWBR0002489/2026-01-01/0)).
@@ -310,3 +322,19 @@ Sources: [Handboek Loonheffingen 2026 §19.4](https://download.belastingdienst.n
 - [ ] No actual extraterritorial costs paid tax-free on top of the ruling (qualifying school fees, relocation costs and an employee familiarisation visit to the business excepted).
 - [ ] For 2027 payroll: 27% applied unless the employee is within the 2023 transitional rule; final 2027 salary norms and WNT norm checked ([Handboek 2026 §19.4](https://download.belastingdienst.nl/belastingdienst/docs/handboek-loonheffingen-lh0221t61fd.pdf)).
 - [ ] Employee told whether partial non-resident status is available for the 2025 and 2026 returns and that it ends after 2026.
+
+## Sources
+
+| Source | URL | Read on |
+|---|---|---|
+| Wet op de loonbelasting 1964, art. 31a (version 1 January 2026) | https://wetten.overheid.nl/BWBR0002471/2026-01-01/0 | 2026-11-14, read for the 30% maximum and the WNT cap in art. 31a(8) |
+| Wet op de loonbelasting 1964, art. 31a (version 1 January 2027) | https://wetten.overheid.nl/BWBR0002471/2027-01-01/0 | 2026-11-14, read for the 27% maximum from 2027 |
+| Uitvoeringsbesluit loonbelasting 1965, art. 10e to 10ej (version 1 January 2026) | https://wetten.overheid.nl/BWBR0002489/2026-01-01/0 | 2026-11-14, read for the EUR 48,013 and EUR 36,497 norms, the 150 km wording, the 5-year term, the 3-month gap and the 4-month application window |
+| Algemene wet inzake rijksbelastingen, art. 10, 67b, 67c (version 1 January 2026) | https://wetten.overheid.nl/BWBR0002320/2026-01-01/0 | 2026-11-14, read for the EUR 1,675 and EUR 6,709 penalty maxima |
+| Belastingplan 2025, Stb. 2024, 434 | https://zoek.officielebekendmakingen.nl/stb-2024-434.html | 2026-11-14, read for the change of 30% to 27% in Wet LB art. 31a(8) and (9) |
+| Draft Fiscaal verzamelbesluit 2026, art. II parts B to D | https://www.internetconsultatie.nl/fiscaalverzamelbesluit/document/15293 | 2026-11-14, read for the draft 2027 norms EUR 52,521 and EUR 39,923 (draft only) |
+| Belastingdienst, Handboek Loonheffingen 2026 (March 2026), section 19.4 and 22.1.5 | https://download.belastingdienst.nl/belastingdienst/docs/handboek-loonheffingen-lh0221t61fd.pdf | 2026-11-14, read for the 30% through 2026, the transitional rules, EUR 262,000 and EUR 78,600, the announced 2027 norms, 18% housing and EUR 7,750 relocation |
+| Belastingdienst, Can I apply for the Expat Scheme (30% facility)? | https://www.belastingdienst.nl/wps/wcm/connect/en/individuals/content/coming-to-work-in-the-netherlands-30-percent-facility | 2026-11-14, read for the 2024 to 2026 norms, the 150 km and 16-month test, the 8-week decision time and the EUR 78,600 maximum |
+| Belastingdienst, percentages belastingrente | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/standaard_functies/prive/contact/rechten_en_plichten_bij_de_belastingdienst/belastingrente/overzicht_percentages_belastingrente | 2026-11-14, read for 5% from 1 January 2026 and 6.5% for 2025 |
+
+Not yet confirmed: the final 2027 salary norms (EUR 51,899 and EUR 39,450 announced, EUR 52,521 and EUR 39,923 in the draft decree, neither final) and the 2027 WNT norm, so no 2027 cap figure is given; whether the WNT cap applies to the 27% maximum in the same way from 2027 (inference from the Handboek wording, not stated).
