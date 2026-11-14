@@ -55,16 +55,16 @@ type: filing-howto
 
 | Item | Figure (2026) | Conditions | Source |
 |---|---|---|---|
-| Minimum capital, limited company | TRY 50,000 | Law sets TRY 10,000; raised by Presidential Decision No. 7887 (TTK art. 580(1) and note 83) | TTK No. 6102: https://www.mevzuat.gov.tr/MevzuatMetin/1.5.6102.pdf |
-| Minimum capital, joint stock company | TRY 250,000 | Law sets TRY 50,000; raised by Decision No. 7887 (art. 332(1) and note 42) | same |
-| Initial capital, non-public registered-capital joint stock company | TRY 500,000 | Law sets TRY 100,000; raised by Decision No. 7887 (art. 332(1) and note 42) | same |
+| Minimum capital, limited company | TRY 50,000 | Law sets TRY 10,000; raised by Presidential Decision No. 7887 (TTK art. 580(1) and note 83; amounts in words on the page) | TTK No. 6102: https://www.mevzuat.gov.tr/MevzuatMetin/1.5.6102.pdf |
+| Minimum capital, joint stock company | TRY 250,000 | Law sets TRY 50,000; raised by Decision No. 7887 (art. 332(1) and note 42; amounts in words on the page) | same |
+| Initial capital, non-public registered-capital joint stock company | TRY 500,000 | Law sets TRY 100,000; raised by Decision No. 7887 (art. 332(1) and note 42; amounts in words on the page) | same |
 | Cash capital paid before registration, joint stock company | At least 25% | Rest within 24 months after registration; share premium in full before registration (art. 344(1)) | same |
 | Cash capital paid before registration, limited company | No minimum | Paid within 24 months after registration (arts. 344(1), 585(1)) | same |
 | Maximum partners, limited company | 50 | Art. 574(1) | same |
 | Registry fee, registering a capital company's business and trade name | TRY 35,354.50 | Fees Law tariff (1) C/I/1(c), 2026 amount | Fees Law Communiqué No. 98, annex: https://www.resmigazete.gov.tr/eskiler/2025/12/20251231M5-28.pdf |
 | Registry fee, each person authorised to represent a capital company | TRY 8,598.80 | Tariff (1) C/I/2(c), per person, 2026 amount | same |
 | Registry fee, registering a change for a capital company | TRY 8,598.80 | Tariff (1) C/I/3(c); each branch, including a foreign company's branch, pays the same fees separately | same |
-| Competition Authority share | 0.04% of capital | On formation of every joint stock and limited company, and on the increase in a later capital increase (Law No. 4054, art. 39(1)(c)) | Law No. 4054: https://www.mevzuat.gov.tr/MevzuatMetin/1.5.4054.pdf |
+| Competition Authority share | 0.04% of capital | On formation of every joint stock and limited company, and on the increase in a later capital increase (Law No. 4054, art. 39(1)(c): "on binde dördü", in words on the page) | Law No. 4054: https://www.mevzuat.gov.tr/MevzuatMetin/1.5.4054.pdf |
 | Registration and announcement | Within 30 days of formation | TTK art. 354(1) | TTK No. 6102: https://www.mevzuat.gov.tr/MevzuatMetin/1.5.6102.pdf |
 | Branch registration | Within 15 days of opening | Every merchant registers its business and trade name (art. 40(1)) | same |
 | Capital top-up deadline for existing companies | 31 December 2027 | Extended from 31 December 2026 by the Ministry of Trade communiqué of 17 October 2026, art. 2 | Official Gazette No. 33403: https://www.resmigazete.gov.tr/eskiler/2026/10/20261017-12.htm |
