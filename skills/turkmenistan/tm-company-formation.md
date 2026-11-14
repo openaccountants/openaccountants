@@ -1,62 +1,107 @@
 ---
 name: tm-company-formation
-description: "Turkmenistan's enterprise forms, liability choices, capital, statutory registration procedure, joint-stock reporting and foreign investment rules. Covers the Civil Code from 1 January 2026. The current monetary tax base, implementing procedures and local-accountant review remain open."
+description: "Turkmenistan company formation, 2026: the seven enterprise forms (Law on Enterprises art. 24), minimum charter capital as multiples of the base value (25 sole, 50 co-operative, 100 economic company and joint venture, 200 joint-stock), half paid before registration, registration decision in three working days, documents, re-registration, joint-stock reporting, and foreign founders, under the Civil Code in force from 1 January 2026."
+version: 1.1
 jurisdiction: TM
-category: formation
 tax_year: 2026
-last_updated: 2026-11-11
-version: 1.2
-review_status: pending_review
-tier: 2
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+domain: formation
+type: filing-howto
 ---
 
-# Turkmenistan Company Formation & Entity Choice
+# Turkmenistan company formation and entity choice
 
-The Civil Code entered into force on 1 January 2026. Its general rules leave the creation of commercial legal entities to legislation. A legal entity is created on state registration. A sole founder's charter under article 53 applies when the entity can lawfully have one founder. The commencement law has separate transitional rules for earlier relationships. ([Civil Code commencement law arts 2 and 4 and Civil Code arts 49–53](https://mejlis.gov.tm/single-code/6?lang=tm))
+> **General reference only.** Source-cited draft, not reviewed by an accountant. Do not use it to form a company without professional review.
 
-## Entity choice and capital
+## Who this applies to
 
-- **Enterprise forms.** Article 24 lists state enterprises, sole enterprises, co-operative enterprises, joint ventures, enterprises of public organisations, economic companies (*hojalyk jemgyýeti*) and joint-stock companies (*paýdarlar jemgyýeti*). It allows legislation to provide other forms. ([Law on Enterprises art 24](https://mejlis.gov.tm/single-law/301?lang=tm))
-- **Sole enterprise.** One natural person owns the enterprise, approves its charter and bears full property liability for its obligations. Minimum charter capital is 25 times the statutory base value for calculating taxes and fees. ([Law on Enterprises art 26](https://mejlis.gov.tm/single-law/301?lang=tm))
-- **Economic company.** At least two natural or legal persons form it under a founders' agreement. The participants' general meeting is its highest body and the charter sets the management arrangements. Article 29 permits either joint and several liability with all participants' property or liability limited to each participant's contribution. Minimum charter capital is 100 times the statutory base value for calculating taxes and fees. ([Law on Enterprises art 29](https://mejlis.gov.tm/single-law/301?lang=tm))
-- **Enterprise contributions.** Under the general rule, founders contribute at least half after signing the founding documents and before lodging the registration application. They pay the balance within one year of registration. Joint-stock companies have the separate payment rule below. ([Law on Enterprises art 47](https://mejlis.gov.tm/single-law/301?lang=tm))
-- **Joint-stock company.** Open and closed forms differ in subscription and transfer rules. At formation, all initial shares go to founders and there is no public subscription. The issued and placed shares must have a combined nominal value of at least 200 times the statutory base value for calculating taxes and fees at contribution and submission of registration documents. At least half of the charter capital must be paid at registration and initial shares must be fully paid within 12 months after registration. ([Joint-Stock Companies Law arts 5 and 12](https://mejlis.gov.tm/single-law/308?lang=ru))
-- **Branch or representative office.** Both are units of the parent without separate legal personality. A branch performs all or part of the parent's functions. A representative office represents the parent's interests and acts on its behalf. The parent appoints the head and gives them a power of attorney. The Law on Enterprises provides for state registration of these units. ([Civil Code art 56](https://mejlis.gov.tm/single-code/6?lang=tm) · [Law on Enterprises art 23](https://mejlis.gov.tm/single-law/301?lang=tm))
+Founders, Turkmen or foreign, setting up an enterprise in Turkmenistan. The new Civil Code entered into force on 1 January 2026 (commencement law No. 162-VII of 28 June 2025, arts 2 and 4, with transitional rules); it leaves creation of commercial legal entities to legislation, makes a legal entity exist on state registration, and lets a sole founder adopt a charter where one founder is allowed (arts 49 to 53). Branches and representative offices are units of the parent without legal personality (art. 56). Tax registration and the profit tax regimes are in [corporate income tax](tm-corporate-income-tax.md).
 
-The operative monetary value of the statutory base for calculating taxes and fees still needs primary-source confirmation. Use the capital multiples until that amount and any applicable sector requirements are confirmed.
+## Rates, bands and thresholds
 
-## Enterprise registration and ongoing obligations
+| Form | Minimum charter capital | Tax year | Official URL |
+|---|---|---|---|
+| Sole (individual) enterprise | 25 times the base value for calculating taxes and fees | 2026 | https://mejlis.gov.tm/single-law/301?lang=ru |
+| Co-operative enterprise | 50 times the base value | 2026 | https://mejlis.gov.tm/single-law/301?lang=ru |
+| Joint venture | 100 times the base value | 2026 | https://mejlis.gov.tm/single-law/301?lang=ru |
+| Enterprise of a public organisation | 100 times the base value | 2026 | https://mejlis.gov.tm/single-law/301?lang=ru |
+| Economic company (hojalyk jemgyýeti) | 100 times the base value | 2026 | https://mejlis.gov.tm/single-law/301?lang=ru |
+| Registration decision | Within three working days of the founders submitting the required documents (art. 16) | 2026 | https://mejlis.gov.tm/single-law/301?lang=ru |
 
-- **Registration authority and timing.** The Tax Directorate of the Ministry of Finance and Economy and its tax authorities register enterprises. The decision to register or refuse registration is due within 3 working days after the founders submit the required documents. Law No. 341-VI of 13 March 2021 amended article 16 with effect from official publication. ([Law on Enterprises arts 15–16](https://mejlis.gov.tm/single-law/301?lang=tm) · [2021 amending law parts I–II](https://turkmenistan.gov.tm/index.php/tk/habar/53123/turkmenistanyn-kanuny-karhanalar-hakynda-turkmenistanyn-kanunyna-uytgetme-we-gosmaca-girizmek-hakynda))
-- **Statutory application documents.** Provide a signed application, the charter, the founding agreement where required and proof of payment of the registration fee unless legislation provides otherwise. The application includes the name, legal address, charter capital and founder details. A state enterprise or an enterprise created by one founder does not need a founding agreement under article 12(2). Article 17 permits electronic handling under a Ministry procedure. The Cabinet of Ministers sets the fee procedure and amount. ([Law on Enterprises arts 12, 17 and 20](https://mejlis.gov.tm/single-law/301?lang=tm))
-- **Refusal and changes.** Founders can appeal a refusal or failure to meet the decision deadline in court. Notify the registration authority within one week of amending founding documents. Changes to the enterprise's name, owner, legal address, founders or legal form take effect on re-registration. ([Law on Enterprises arts 18 and 21](https://mejlis.gov.tm/single-law/301?lang=tm))
-- **Joint-stock accounting and reporting.** Keep accounting records and submit financial statements under the applicable legislation. The general meeting approves an auditor annually. The board must give preliminary approval to the annual report at least 30 days before the annual general meeting. Publish the annual report, balance sheet and financial results, amongst other required disclosures, in media accessible to all shareholders. Keep the specified records at the executive body's location. ([Joint-Stock Companies Law arts 56 and 58–60](https://mejlis.gov.tm/single-law/308?lang=ru))
+Joint-stock companies: issued and placed shares of at least 200 times the base value (Joint-Stock Companies Law art. 12, as Ryan Duguid read it). The money value of the base value was not found in a primary source; use the multiples.
 
-## Foreign founders and investment
+## The base
 
-Foreign individuals and legal entities can be founders under the general enterprise law. Foreign investors can choose the amount, composition and structure of the enterprise's capital subject to legislation. Check restrictions for the planned activity and territory, including any reciprocity measures. Formation, registration and liquidation of foreign-invested enterprises, foreign branches and foreign representative offices follow the applicable legislation. ([Law on Enterprises art 11](https://mejlis.gov.tm/single-law/301?lang=tm) · [Law on Foreign Investments arts 8 and 12](https://mejlis.gov.tm/single-law/265?lang=ru))
+Not a tax. Forms (Law on Enterprises art. 24): state enterprise, sole enterprise, co-operative, joint venture, enterprise of a public organisation, economic company and joint-stock company; legislation may add others.
 
-Article 21 provides for foreign-currency transfers of qualifying investment income, including dividends and profits, after taxes and other mandatory payments. Conversion and transfers follow the statutory procedure. Article 9 sets conditional customs relief and article 10 refers tax relief to the Tax Code. ([Law on Foreign Investments arts 9–10 and 21](https://mejlis.gov.tm/single-law/265?lang=ru))
+- **Sole enterprise** (art. 26): one natural person owns it, approves the charter and is fully liable with his or her property.
+- **Economic company** (art. 29): at least two natural or legal persons under a founders' agreement; the general meeting is the highest body; liability either joint and several with all participants' property or limited to each contribution (art. 29(6)). This, not a generic "LLC", is the usual vehicle.
+- **Joint-stock company** (Joint-Stock Companies Law arts 5 and 12): open or closed; at formation all shares go to founders; at least half the charter capital paid at registration and the rest within 12 months.
+- **Contributions** (art. 47): at least half after signing the founding documents and before applying, the balance within one year of registration (joint-stock companies follow their own rule).
 
-The 2026 statutory snapshot leaves the current registration fee, operational filing and payment procedures, sector-specific restrictions, financial reporting forms and submission dates, cross-border withholding and transfer implementation, and local-accountant review open.
+## Deadlines and filing
 
-<!-- openaccountants-cta-block -->
+1. Sign the charter and, where required, the founders' agreement (not needed for a state enterprise or a single-founder enterprise, art. 12(2)); pay at least half the capital.
+2. Apply to the Tax Directorate of the Ministry of Finance and Economy with the signed application (name, legal address, capital, founders), charter, founders' agreement and proof of the registration fee (arts 12, 15 to 17, 20). Electronic handling is allowed under a Ministry procedure (2021 amendment). The Cabinet of Ministers sets the fee.
+3. The decision to register or refuse is due within three working days (art. 16); a refusal or a missed deadline can be appealed in court (art. 18).
+4. Pay the balance of capital within one year.
+5. Notify the registration authority within one week of amending founding documents; a change of name, owner, legal address, founders or form takes effect on re-registration (art. 21).
+6. Joint-stock companies: keep accounts and file financial statements, appoint an auditor each year, have the board pre-approve the annual report at least 30 days before the AGM, publish the annual report, balance sheet and results, and keep the listed records (Joint-Stock Companies Law arts 56, 58 to 60).
 
----
+## Penalties and interest
 
-## Talk to a verified accountant
+Not read for this guide.
 
-This guide is maintained in the
-[ryanduguid/openaccountants fork](https://github.com/ryanduguid/openaccountants).
-Check its quality tier, recorded review status and cited sources before use.
-Choose a practitioner whose credentials and engagement scope you have verified.
-The links below are optional upstream services; they do not publish or verify
-this fork's changes.
+## Cross-border points
 
-- Upstream connection service: https://www.openaccountants.com/connect
-- Upstream accountant network: https://www.openaccountants.com/network
+Foreign individuals and legal entities can be founders (Law on Enterprises art. 11). Foreign investors choose the amount, composition and structure of capital within the law; check restrictions by activity and territory and any reciprocity measures (Law on Foreign Investments arts 8 and 12). Qualifying investment income, including dividends and profits, may be transferred abroad in foreign currency after taxes (art. 21); conditional customs relief (art. 9); tax relief is in the Tax Code (art. 10). Foreign-invested enterprises cannot use the SME 2% profit tax regime.
 
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
+## Two worked examples that recompute
+
+**1. Economic company with charter capital at the minimum, 100 base values.** At least 50 base values paid before applying, 50 within a year (derived).
+
+```oa-check
+name: Turkmenistan economic company capital split
+inputs:
+  capital_base_values: 100
+steps:
+  - before_registration: capital_base_values * 0.5
+  - within_one_year: capital_base_values - before_registration
+expected:
+  before_registration: 50
+  within_one_year: 50
+```
+
+**2. Joint-stock company versus sole enterprise minimums.** 200 against 25 base values: the joint-stock minimum is 8 times the sole-enterprise minimum (derived).
+
+```oa-check
+name: Turkmenistan JSC vs sole enterprise minimum
+inputs:
+  jsc: 200
+  sole: 25
+steps:
+  - ratio: jsc / sole
+expected:
+  ratio: 8
+```
+
+## Ask the client first
+
+- How many founders, and are any foreign?
+- Which form, and what liability do the founders want?
+- Planned activity and territory (restrictions, licences)?
+- Intended charter capital?
+
+## Sources
+
+| Source | URL | Read on |
+|---|---|---|
+| Law on Enterprises, Russian text on the Mejlis site, arts 16, 26, 28 and 29 (Read for the capital multiples and the three-day decision) | https://mejlis.gov.tm/single-law/301?lang=ru | 2026-11-14 |
+| Law on Enterprises, state-language text, arts 11, 12, 15 to 24, 26, 29, 47 (Read by Ryan Duguid) | https://mejlis.gov.tm/single-law/301?lang=tm | 2026-11-11 |
+| Civil Code and its commencement law, arts 49 to 53 and 56 (Read by Ryan Duguid) | https://mejlis.gov.tm/single-code/6?lang=tm | 2026-11-11 |
+| Joint-Stock Companies Law arts 5, 12, 56, 58 to 60 (Read by Ryan Duguid) | https://mejlis.gov.tm/single-law/308?lang=ru | 2026-11-11 |
+| Law on Foreign Investments arts 8 to 10, 12 and 21 (Read by Ryan Duguid) | https://mejlis.gov.tm/single-law/265?lang=ru | 2026-11-11 |
+
+Not yet confirmed: the money value of the base value; the registration fee; sector and reciprocity restrictions; joint-stock and foreign-investment text as Ryan Duguid read it (not reopened here). The old guide's figures (TMT 5,000 or USD 20,000 minimum capital, at least one director of any nationality, possible single-member LLC) came from private websites and are not in the Law on Enterprises.

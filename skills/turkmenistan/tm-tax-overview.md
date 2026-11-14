@@ -1,61 +1,96 @@
 ---
 name: tm-tax-overview
-description: "Source-cited draft: tax overview for Turkmenistan — the flat 10% personal rate, the 8% / 20% / 50% corporate profit-tax bands under art. 172 and the 15% VAT, confirmed against the Unified Law 'On Taxes' published by the Tax Directorate. Pending local-accountant review."
+description: "Turkmenistan tax overview, tax year 2026: personal income tax 10%, profit tax 8% / 20% / 50% and 2% for private SMEs, VAT 15% (privately owned legal persons outside VAT), dividends 15%, property tax 1%, and the main return and payment dates, from the Tax Code on the Mejlis site."
+version: 1.1
 jurisdiction: TM
-category: international
 tax_year: 2026
-last_updated: 2026-11-11
-version: 1.2
-review_status: pending_review
-tier: 2
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+domain: income-tax
+type: situation-rules
 ---
 
-# Turkmenistan Tax Overview
+# Turkmenistan tax overview
 
-## Turkmenistan tax system at a glance
+> **General reference only.** Source-cited draft, not reviewed by an accountant. Do not use it to file without professional review.
 
-Turkmenistan operates a low-rate, source-and-residence based tax system administered under the Tax Code of Turkmenistan. The framework is competitive by regional standards: a flat 10% personal income tax, an 8% corporate profits tax for ordinary Turkmen entities, and a 15% VAT.
+## Who this applies to
 
-- **Tax (fiscal) year** — Calendar year, 1 January to 31 December  _(Tax Code of Turkmenistan)_
-- **Currency** — Turkmen manat (TMT)  _(Central Bank of Turkmenistan)_
-- **Tax authority** — Main State Tax Service of Turkmenistan (State Tax Service)  _(Tax Code of Turkmenistan)_
-- **Basis of taxation** — Residents are taxed on worldwide income; non-residents are taxed on Turkmenistan-source income only  _(Tax Code of Turkmenistan)_
+Anyone who needs the map of Turkmenistan's taxes for 2026. The Tax Code of Turkmenistan (Unified Law "On Taxes") is administered by the Tax Directorate of the Ministry of Finance and Economy. Tax year: the calendar year. Currency: manat (TMT). Residents are taxed on worldwide income, non-residents on Turkmen-source income. Detail sits in the sibling skills, which own their figures: [profit tax](tm-corporate-income-tax.md), [VAT](tm-vat-gst.md), [personal income tax](tm-income-tax.md), [payroll](tm-payroll-social.md), [company formation](tm-company-formation.md).
 
-> **The Tax Code is published by the authority and has been read.** The Tax
-> Directorate of the Ministry of Finance and Economy serves the
-> ***«Salgytlar hakynda» Türkmenistanyň bitewi Kanuny*** (Unified Law of Turkmenistan
-> "On Taxes") at [tax.gov.tm](https://tax.gov.tm/hukuknamalar). The headline rates
-> below are **confirmed** against it — and the corporate row needed a third band.
->
-> _([«Salgytlar hakynda» Türkmenistanyň bitewi Kanuny, arts. 103, 172, 192](https://tax.gov.tm/pdf/ckeditor_assets/attachments/10/2.pdf))_
+## Rates, bands and thresholds
 
-- **Headline personal income tax rate** — **10%**, flat. Article 192(1): *"unless otherwise established in this Unified Law, the tax rate is set at 10 percent"* (flat)  _([Bitewi Kanun, art. 192(1)](https://tax.gov.tm/pdf/ckeditor_assets/attachments/10/2.pdf))_
-- **Headline corporate profits tax rate (ordinary Turkmen entities)** — **8%**, for legal persons resident in Turkmenistan, subject to the article 172(1) exclusions  _([Bitewi Kanun, art. 172(1)](https://tax.gov.tm/pdf/ckeditor_assets/attachments/10/2.pdf))_
-- **Corporate profits tax rate (state-owned >50% and foreign legal entities/branches)** — **20%**, the residual *"other legal persons"* band  _([Bitewi Kanun, art. 172(1)](https://tax.gov.tm/pdf/ckeditor_assets/attachments/10/2.pdf))_
-- **⚠ Corporate profits tax rate — 50%, missing from this overview** — Article 172(1) sets **50%** for **state-owned credit institutions**, **state-owned insurance organisations**, and providers of **communications** (satellite communications excluded), **standardisation, metrology and certification** services. Any summary of Turkmenistan that gives 8% as the corporate rate understates the charge on the state banking, insurance and telecoms sectors by more than six times. See `tm-corporate-income-tax`  _([Bitewi Kanun, art. 172(1)](https://tax.gov.tm/pdf/ckeditor_assets/attachments/10/2.pdf))_
-- **Value-added tax** — Yes — **15%** standard, with a **0%** band for the transactions in article 105. Article 103 sets both percent  _([Bitewi Kanun, art. 103](https://tax.gov.tm/pdf/ckeditor_assets/attachments/10/2.pdf))_
-- **Profit-tax returns.** The filing date follows the applicable financial-statement deadline, which the Ministry of Finance and Economy or Central Bank sets within its remit. The gambling-income return follows a separate monthly rule. See `tm-corporate-income-tax` for statutory payment and publication periods. ([Tax Code art 176(1)](https://mejlis.gov.tm/single-code/10?lang=tm) · [Accounting and Financial Reporting Law arts 19–20](https://mejlis.gov.tm/single-law/254?lang=ru))
-- **Individual tax returns.** Article 197(1) requires individuals who must file under article 196(1) to file by the 25th of the month after the reporting period. Foreign citizens who must file have a 1 April deadline after the tax year, subject to the article 197(2) departure rule. See `tm-income-tax` for individual filing scope. ([Tax Code arts 196–197](https://mejlis.gov.tm/single-code/10?lang=tm))
-- **Double tax treaty network** — Approximately 30 double taxation treaties in force (approx — confirm)  _(Tax Code of Turkmenistan (as described at [gsl.org](https://gsl.org/en/taxes/turkmenistan/)))_
-- **Exchange controls** — Yes — currency exchange controls apply  _(Law of Turkmenistan on Currency Regulation)_
+| Tax | Headline | Tax year | Official URL |
+|---|---|---|---|
+| Personal income tax (art. 192(1)) | 10% unless the Code says otherwise | 2026 | https://mejlis.gov.tm/single-code/10?lang=ru |
+| Profit tax, resident legal persons (art. 172(1)) | 8% | 2026 | https://mejlis.gov.tm/single-code/10?lang=ru |
+| Profit tax, state banks and insurers, communications, certification (art. 172(1)) | 50% | 2026 | https://mejlis.gov.tm/single-code/10?lang=ru |
+| Profit tax, other legal persons (art. 172(1)) | 20% | 2026 | https://mejlis.gov.tm/single-code/10?lang=ru |
+| Private SMEs, on gross income (art. 172(4)) | 2% | 2026 | https://mejlis.gov.tm/single-code/10?lang=ru |
+| VAT (art. 103) | 15%, and 0% for art. 105 transactions | 2026 | https://mejlis.gov.tm/single-code/10?lang=ru |
+| Dividends (art. 172(2)) | 15% | 2026 | https://mejlis.gov.tm/single-code/10?lang=ru |
 
-<!-- openaccountants-cta-block -->
+## The base
 
----
+Profit tax on taxable profit (gross income for private SMEs); VAT on taxable transactions by payers, with privately owned legal persons outside VAT (art. 95(2)); personal income tax on individuals' income; property tax at 1% of the year's base for entities (art. 141).
 
-## Talk to a verified accountant
+## Deadlines and filing
 
-This guide is maintained in the
-[ryanduguid/openaccountants fork](https://github.com/ryanduguid/openaccountants).
-Check its quality tier, recorded review status and cited sources before use.
-Choose a practitioner whose credentials and engagement scope you have verified.
-The links below are optional upstream services; they do not publish or verify
-this fork's changes.
+| Obligation | When | Official URL |
+|---|---|---|
+| VAT return and payment | Return by the 20th, payment by the 25th of the month after the period; entrepreneurs half-yearly | https://mejlis.gov.tm/single-code/10?lang=ru |
+| Profit tax advances | 25th of each month | https://mejlis.gov.tm/single-code/10?lang=ru |
+| Profit tax return | On the financial-statement deadline set by the Ministry or Central Bank (art. 176(1)) | https://mejlis.gov.tm/single-code/10?lang=ru |
+| Individual returns (art. 197(1)) | By the 25th of the month after the reporting period; foreign citizens by 1 April after the tax year | https://mejlis.gov.tm/single-code/10?lang=ru |
 
-- Upstream connection service: https://www.openaccountants.com/connect
-- Upstream accountant network: https://www.openaccountants.com/network
+## Penalties and interest
 
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
+Not read for this guide; see the sibling skills.
+
+## Cross-border points
+
+Non-resident legal persons without a permanent establishment: 15% withheld from gross Turkmen-source income, 6% for bareboat vessel and aircraft leases (art. 180(3)). Treaties may reduce withholding; the treaty list was not checked. Currency exchange controls apply (Law on Currency Regulation, not read).
+
+## Two worked examples that recompute
+
+**1. Employee earning TMT 5,000 in a month.** Personal income tax at 10% = TMT 500 (derived; ignores any deductions under the Code).
+
+```oa-check
+name: Turkmenistan PIT 10 percent
+inputs:
+  income: 5000
+steps:
+  - tax: income * 0.10
+expected:
+  tax: 500
+```
+
+**2. State bank with TMT 2,000,000 profit from banking.** Profit tax at 50% = TMT 1,000,000 (derived), against TMT 160,000 at the 8% resident rate the old guide implied.
+
+```oa-check
+name: Turkmenistan state bank 50 percent
+inputs:
+  profit: 2000000
+steps:
+  - tax: profit * 0.50
+  - at_8: profit * 0.08
+expected:
+  tax: 1000000
+  at_8: 160000
+```
+
+## Ask the client first
+
+- Individual or legal person; resident or not?
+- Ownership (state share, private, foreign investment) and sector?
+- Headcount (for the SME 2% regime)?
+- Payments to non-residents?
+
+## Sources
+
+| Source | URL | Read on |
+|---|---|---|
+| Tax Code of Turkmenistan, Russian text on the Mejlis site, arts 95, 103, 111, 141, 172, 175, 176, 180, 192 and 197 (Read for every figure and date here) | https://mejlis.gov.tm/single-code/10?lang=ru | 2026-11-14 |
+
+Not yet confirmed: the double tax treaty list (the old guide's "about 30 treaties" came from a private website); exchange control rules; penalties; financial-statement deadlines. The old guide's "on or about 31 March" annual return date has no basis in arts 176 or 197.

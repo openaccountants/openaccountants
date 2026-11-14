@@ -1,94 +1,117 @@
 ---
 name: tm-corporate-income-tax
-description: "Source-cited draft: corporate income tax for Turkmenistan — the art. 172 profit-tax rates of 8% / 20% / 50%, the 2% SME rate on a base computed without deductions, art. 170 exemptions, and the art. 180 non-resident withholding, read from the Unified Law 'On Taxes' published by the Tax Directorate. Pending local-accountant review."
+description: "Turkmenistan profit tax, tax year 2026, from the Tax Code: 8% for resident legal persons, 50% for state banks, state insurers, communications and certification, 20% for others; 2% on gross income for private SMEs (headcount test, no foreign investment); youth-enterprise reductions; exemptions; gambling daily amounts; 15% dividends and non-resident withholding, 6% bareboat leases; property tax 1%; advances on the 25th and returns tied to financial statements."
+version: 1.1
 jurisdiction: TM
-category: international
 tax_year: 2026
-last_updated: 2026-11-11
-version: 1.2
-review_status: pending_review
-tier: 2
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
+domain: income-tax
+type: situation-rules
 ---
 
-# Turkmenistan Corporate Income Tax
+# Turkmenistan corporate income tax (profit tax)
 
-## Corporate profits tax rates and base
+> **General reference only.** Source-cited draft, not reviewed by an accountant. Do not use it to file without professional review.
 
-> **The Tax Code has been read, and the guide was missing its highest rate.** The Tax
-> Directorate of the Ministry of Finance and Economy publishes the
-> ***«Salgytlar hakynda» Türkmenistanyň bitewi Kanuny*** (Unified Law of Turkmenistan
-> "On Taxes") at [tax.gov.tm](https://tax.gov.tm/hukuknamalar) — 125 pages with a clean
-> text layer. Every row below was previously sourced to one commercial site.
->
-> **Article 172 sets three profit-tax rates, not the two this guide described, and the
-> top one is 50%.** The 8%, 20%, 15% and 6% figures the guide carried are confirmed;
-> what was absent is the 50% band and the conditions attaching to all of them. Each
-> figure below was checked on the rendered page as well as in the text layer.
->
-> _([«Salgytlar hakynda» Türkmenistanyň bitewi Kanuny, arts. 141, 170–172, 180](https://tax.gov.tm/pdf/ckeditor_assets/attachments/10/2.pdf))_
+## Who this applies to
 
-- **Corporate profits tax — ordinary Turkmen legal entities** — **8 percent**, and the exclusions matter as much as the rate. Article 172(1) gives 8% to legal persons who are **residents of Turkmenistan**, but **not** to: entities whose share in charter capital held by the State **exceeds 50%**; **credit institutions**; **state-owned insurance organisations**; providers of **communications services** (satellite communications services are **not** within this exclusion), **standardisation, metrology and certification** services; or parties operating under the Law *"On Hydrocarbon Resources"* — in each case for the profit from that activity and its related non-sales transactions  _([Bitewi Kanun, art. 172(1)](https://tax.gov.tm/pdf/ckeditor_assets/attachments/10/2.pdf))_
-- **⚠ Corporate profits tax — 50 percent, and this guide did not mention it** — Article 172(1) sets **50%** for **credit institutions** — with the parenthetical that credit institutions **not** in state ownership are **not** included — **state-owned insurance organisations**, and providers of **communications** (again excluding satellite communications), **standardisation, metrology and certification** services, on the profit from that activity and its related non-sales transactions. This is more than double the highest rate the guide previously stated, and it reaches the state banking and insurance sector and the telecoms sector  _([Bitewi Kanun, art. 172(1)](https://tax.gov.tm/pdf/ckeditor_assets/attachments/10/2.pdf))_
-- **Corporate profits tax — all other legal persons** — **20 percent** (*beýleki edara görnüşli taraplar*). This residual band is where non-residents, state-majority entities generally, and — by the 50% band's own parenthetical — **privately-owned credit institutions** land, since the 8% band excludes credit institutions outright while the 50% band takes in only the state-owned ones  _([Bitewi Kanun, art. 172(1)](https://tax.gov.tm/pdf/ckeditor_assets/attachments/10/2.pdf))_
-- **Private SME income tax.** Eligible privately owned legal entities pay 2% on gross income as defined in article 149, subject to the specified deductions in article 154(2) and the exclusions in article 171(6), including qualifying agricultural, poultry and disability-related production income. The regime excludes entities operating under the Hydrocarbon Resources Law. ([Tax Code arts 171(6) and 172(4)](https://mejlis.gov.tm/single-code/10?lang=tm))
-- **Youth enterprises.** Articles 172(1) and 172(4) reduce the applicable tax by 50% in the first tax year of activity and by 25% in the second and third tax years. The state-language Youth Policy Law defines a youth enterprise as non-state-owned, with at least 75% of its workforce meeting the statutory definition of youth, and founded by the specified full-time vocational students, young scientists or entrepreneurs for the purposes stated in the law. The separate definition of youth entrepreneurship in article 1(9) uses a workforce-age and, where applicable, a capital test. Confirm the evidence and administrative procedure for youth-enterprise treatment. ([Tax Code art 172(1), (4)](https://mejlis.gov.tm/single-code/10?lang=tm) · [Youth Policy Law art 1(3), (7), (9)](https://mejlis.gov.tm/single-law/19?lang=tm))
-- **Income excluded from the SME gross base** — Article 171(6) keeps three categories out of the income it otherwise taxes without deductions: agricultural producers' income from selling their own products **other than industrially processed ones**; for the **first three years** from registration of an investment project, income from selling own-produced **poultry and quail meat** (with their edible and inedible by-products) and products of processing them; and income from producing **prosthetic-orthopaedic articles and special vehicles for disabled people**  _([Bitewi Kanun, art. 171(6)](https://tax.gov.tm/pdf/ckeditor_assets/attachments/10/2.pdf))_
-- **Exemptions from profits tax** — Article 170(1) exempts, among others: investment pension funds; organisations restoring the health of disabled people; **educational and scientific institutions**; enterprises of public associations of disabled people where **at least 70%** of total employees are disabled people **and at least 20** disabled people work, whose charter capital belongs wholly to such associations; religious organisations; **agricultural enterprises**; legal persons providing **circus services** (resident or not); and international, intergovernmental and interstate organisations — though **not** their entrepreneurial income. Participants in **free economic zones** are exempt **for the first ten years** of activity, excluding tourist-recreational zones. The exemption does **not** extend to profit from selling goods subject to the additional payment, nor to the article 172(2) and (3) income types  _([Bitewi Kanun, art. 170(1)](https://tax.gov.tm/pdf/ckeditor_assets/attachments/10/2.pdf))_
-- **The SME rate and the exemptions interact** — Article 170(1) closes by providing that where the parties it lists are **privately-owned** legal persons (other than hydrocarbon-law operators) belonging to small and medium entrepreneurship subjects, they are **exempt from paying the income tax at the article 172(4) rate** — so a qualifying SME inside an exempt category does not simply fall back to the 2%  _([Bitewi Kanun, art. 170(1)](https://tax.gov.tm/pdf/ckeditor_assets/attachments/10/2.pdf))_
-- **⚠ The ten-year free-economic-zone exemption is not automatic, and it points the opposite way on foreign ownership** — Article 170(1)'s exemption runs to *participants* of a free economic zone, and the **Law "On free economic zones"** — also published by the Tax Directorate — says who those are. **Article 8(1)**: Turkmen legal persons ***"eýeçiliginiň we guramaçylyk-hukuk görnüşlerine garamazdan"*** — **regardless of their form of ownership and their organisational-legal form**; **foreign legal persons** operating in the zone **through branches and representative offices**; and private entrepreneurs. **Set that against the SME rate above, which excludes enterprises with foreign investment outright**: the two reliefs treat foreign participation in opposite directions, and a reader who generalises from one to the other will be wrong  _([Law "On free economic zones", art. 8(1)](https://mejlis.gov.tm/single-law/116?lang=ru))_
-- **⚠ Participant status is conferred by contract and register entry, not by being in the zone** — **Article 8(2)**: the persons in article 8(1) are recognised as participants **only after the Committee enters them in the register of free-economic-zone participants on the basis of a contract**, and status is granted at that point; a **certificate of registration** issues **within five working days** of the contract being signed. **Operating physically inside a zone does not make a company a participant**, so it does not by itself reach the article 170(1) exemption. Where a candidate — a branch or representative office of a foreign legal person — is not yet on Turkmenistan's Unified State Register of Legal Persons, the Committee petitions the registration body on its behalf, and that body registers it **without any further permit and without agreement from other state bodies**; an unjustified refusal is appealable to court  _([Law "On free economic zones", art. 8(2)](https://mejlis.gov.tm/single-law/116?lang=ru))_
-- **⚠ Who actually qualifies as an SME — a headcount test, split by sector, with no turnover limit at all** — Article 172(4) keys the 2% to being a subject of small and medium entrepreneurship *"under the Law 'On state support of small and medium entrepreneurship'"*, and **the Tax Directorate publishes that Law too**. Its **article 5(1)** defines the subjects **purely by average listed headcount** — there is **no revenue or asset threshold anywhere in the definition** — and the bands differ by sector, one set for **industry, electric power, construction, and gas and water supply**, another for **all other sectors**  _([Law "On state support of small and medium entrepreneurship", art. 5(1)](https://mejlis.gov.tm/single-law/260?lang=ru))_
+Legal persons taxed on profit (or income) under the Tax Code of Turkmenistan (Unified Law "On Taxes"), and payers of Turkmen-source income to non-resident legal persons. Parties under the Law "On Hydrocarbon Resources" are outside the 8% band and the SME regime and compute profit tax under that Law (art. 177); their contract rate is not covered here.
 
-| Category | Industry, power, construction, gas & water | All other sectors |
-| --- | --- | --- |
-| **Microenterprise** | up to **15** employees | no more than **10** |
-| **Small enterprise** | **16 to 50** | **11 to 25** |
-| **Medium enterprise** | **51 to 200** | **26 to 100** |
-| **Private entrepreneur** (no legal person) | — | **not more than 10**, *including the entrepreneur* |
+## Rates, bands and thresholds
 
-- **The headcount is counted wider than a payroll list** — Article 5(2): the average listed number is determined **for the calendar year** and includes **all** employees — those combining it with a main job elsewhere, **seasonal and temporary workers**, and the staff of **branches, representative offices and other separate subdivisions that are not themselves legal persons**. A group that keeps subsidiaries small by pushing staff into unincorporated units does not thereby stay within the bands  _([SME Law, art. 5(2)](https://mejlis.gov.tm/single-law/260?lang=ru))_
-- **⚠ Losing SME status has a 1 April cliff, and regaining it takes a year** — Article 5(3): exceeding the article 5(1) headcount **over the calendar year terminates the right to the Law's reliefs**. Where the average is exceeded for a reporting year, the right ceases **from 1 April of the year following that reporting year** — not from the month the threshold was crossed. And if headcount is brought back within the limits, the right ***"dikeldilip bilner"*** — **may be restored only after one year has passed** since it ceased. So a company that briefly over-hires loses the 2% rate on a delayed, fixed date and then cannot requalify for a further year  _([SME Law, art. 5(3)](https://mejlis.gov.tm/single-law/260?lang=ru))_
-- **⚠ Four categories are outside the SME Law entirely — including any enterprise with foreign investment** — Article 3 limits the Law to the article 5(1) subjects and states that it ***does not apply*** to: **state enterprises**; ***"daşary ýurt maýa goýumlary bolan kärhanalar"*** — **enterprises with foreign investment**; and enterprises carrying on **banking**, **insurance**, or **gambling and games of chance** activity. Because article 172(4) borrows this Law's definition, **a foreign-invested company cannot reach the 2% rate however small it is**. That is the single most consequential gate on this rate for the readers most likely to ask about it, and it sits in a different statute from the one setting the rate  _([SME Law, art. 3](https://mejlis.gov.tm/single-law/260?lang=ru))_
-- **SME law edition.** Parliament consolidates the 2009 law through the amendment of 3 June 2023, No. 32-VII. The November 2026 consolidation retains the article 3 exclusions and the article 5 headcount and loss-of-relief rules above. ([SME Support Law arts 3 and 5](https://mejlis.gov.tm/single-law/260?lang=ru))
-- **Reductions in taxable profit** — Article 170(2) reduces taxable profit by profit from **scientific activity**; by agricultural producers' profit from selling their own products, **provided those products have not been industrially processed**; and by profit from receiving tourists within **national tourist zones** (accommodation, catering, personal and welfare services, organising entertainment other than gambling) and from managing and using tourism-industry objects there — a relief also given to holders of national tourist zone subject status when such services are supplied **outside** those zones  _([Bitewi Kanun, art. 170(2)](https://tax.gov.tm/pdf/ckeditor_assets/attachments/10/2.pdf))_
-- **Petroleum / hydrocarbon operations** — Parties carrying on activity under the Law *"On Hydrocarbon Resources"* are **carved out of the 8% band by article 172(1) itself** and out of the SME regime by article 171(6), so the Bitewi Kanun routes them to a separate regime rather than rating them. The contract-level rate was **not** read and is not stated here (approx — confirm rate per contract)  _([Bitewi Kanun, arts. 171(6), 172(1)](https://tax.gov.tm/pdf/ckeditor_assets/attachments/10/2.pdf); Law of Turkmenistan on Hydrocarbon Resources)_
-- **Gambling business — taxed by fixed daily amounts, not by rate** — Article 172(3) charges gambling income at **TMT 30 per gaming machine per day**, **TMT 370 per gaming table per day**, **TMT 7 per seat per day**, **TMT 3 per square metre** of premises used for the activity per day, or **TMT 38 per cash desk** accepting payments per day. Where more than one of these could apply to a single type of gambling activity, **the one producing the higher amount of tax applies**. Absent from this guide  _([Bitewi Kanun, arts. 171(5) and 172(3)](https://tax.gov.tm/pdf/ckeditor_assets/attachments/10/2.pdf))_
-- **Tax base** — Gross income less deductible business expenses (accounting profit adjusted under the Tax Code) — subject to the **SME exception above**, where deductions are not applied  _([Bitewi Kanun, arts. 149, 154, 171](https://tax.gov.tm/pdf/ckeditor_assets/attachments/10/2.pdf))_
-- **Withholding tax — dividends** — **15 percent**. Article 172(2) sets 15% for dividends and other income in the form of funds received from participating as a shareholder in other legal persons (treaty rates may reduce)  _([Bitewi Kanun, art. 172(2)](https://tax.gov.tm/pdf/ckeditor_assets/attachments/10/2.pdf))_
-- **Withholding tax — interest** — **15 percent**, as part of the general article 180(3) rate on Turkmen-source income of non-resident legal persons (treaty rates may reduce)  _([Bitewi Kanun, art. 180(3)](https://tax.gov.tm/pdf/ckeditor_assets/attachments/10/2.pdf))_
-- **Withholding tax — royalties** — **15 percent**, on the same article 180(3) footing (treaty rates may reduce)  _([Bitewi Kanun, art. 180(3)](https://tax.gov.tm/pdf/ckeditor_assets/attachments/10/2.pdf))_
-- **⚠ Withholding tax — vessel and aircraft leasing is 6% only where leased without crew** — Article 180(3) applies 15% to non-resident income generally, **excepting income from leasing sea and air vessels**, and sets **6%** for income from leasing sea and air vessels ***işgärsiz*** — **without crew**, i.e. bareboat. This guide gave a flat "ship and aircraft lease income — 6 percent"; a wet lease is not within the 6%  _([Bitewi Kanun, art. 180(3)](https://tax.gov.tm/pdf/ckeditor_assets/attachments/10/2.pdf))_
-- **Non-resident withholding bites on gross, and reaches payments made abroad** — Article 180(1): where a non-resident legal person earns Turkmen-source income from activity **not creating a permanent establishment**, the tax agent withholds **from total income without applying deductions** (VAT excluded from the base), on **each payment**, ***including where those payments are made outside Turkmenistan***. **Cessation of a claim in any form counts as payment.** Article 180(4): where payment is made after the last day of the month in which income is treated as received under article 168, the tax agent pays the tax **from its own funds** and recovers it from later sums due to the taxpayer  _([Bitewi Kanun, arts. 180(1) and 180(4)](https://tax.gov.tm/pdf/ckeditor_assets/attachments/10/2.pdf))_
-- **Property tax on entities — 1%, accrued in quarterly steps** — Article 141 sets property tax at **1% of the tax period's tax base**, and fixes the computation amount for each reporting period: **0.25%** for the first quarter, **0.5%** for the half-year, **0.75%** for nine months and **1%** for the year. The guide's "(approx — confirm)" is resolved; the stepped schedule was absent  _([Bitewi Kanun, art. 141](https://tax.gov.tm/pdf/ckeditor_assets/attachments/10/2.pdf))_
-- **Corporate return deadline.** The profit or income tax return follows the deadline for the applicable financial statements. The Ministry of Finance and Economy or Central Bank sets the financial-statement deadline within its remit. The gambling-income return is due to the registering tax office by the 20th of the month after the reporting period. ([Tax Code art 176(1)](https://mejlis.gov.tm/single-code/10?lang=tm) · [Accounting and Financial Reporting Law art 19(2)](https://mejlis.gov.tm/single-law/254?lang=ru))
-- **Profit-tax advances and settlements.** Pay monthly advances on the 25th under article 175(1). Article 174(2) sets the calculation for ordinary interim and simplified interim reporting. Ordinary interim reporting has first-quarter, half-year, nine-month and year-end settlements, and simplified interim reporting has half-year and year-end settlements. Pay each applicable settlement within 5 days of its return deadline. Gambling income tax under article 174(4) is due by the 25th of the month after the reporting period. ([Tax Code arts 174(2), (4) and 175(1)–(2)](https://mejlis.gov.tm/single-code/10?lang=tm))
-- **Private SME income tax payment.** For article 174(5) income, settle the first-quarter, half-year, nine-month and year-end amounts within 5 days of each return deadline. The 2% regime uses advance payment from funds credited to the enterprise's settlement accounts, with tax already paid credited against the liability. ([Tax Code arts 174(5) and 175(3)](https://mejlis.gov.tm/single-code/10?lang=tm))
-- **Tax agents report on dividends by the 20th** — Article 176(2): tax agents must, **by the 20th of the month following the month income was paid**, give their registering tax office information on the legal persons to whom dividends and other participation income were paid, and the amounts computed, withheld and transferred to the State Budget, on a form set by the Ministry of Finance and Economy. **Budget institutions file nothing** for reporting periods in which there was no taxable base  _([Bitewi Kanun, art. 176(2)](https://tax.gov.tm/pdf/ckeditor_assets/attachments/10/2.pdf))_
+| Item | Rate | Tax year | Official URL |
+|---|---|---|---|
+| Resident legal persons (art. 172(1)), except state-majority entities, credit institutions, state insurers, communications (not satellite), standardisation, metrology and certification, and hydrocarbon-law parties, for that activity | 8% | 2026 | https://mejlis.gov.tm/single-code/10?lang=ru |
+| Credit institutions other than non-state ones, state insurance organisations, communications (not satellite), standardisation, metrology and certification, on profit from that activity (art. 172(1)) | 50% | 2026 | https://mejlis.gov.tm/single-code/10?lang=ru |
+| Other legal persons, including non-residents with a permanent establishment and state-majority entities (art. 172(1)) | 20% | 2026 | https://mejlis.gov.tm/single-code/10?lang=ru |
+| Dividends and other participation income (art. 172(2)) | 15% | 2026 | https://mejlis.gov.tm/single-code/10?lang=ru |
+| Privately owned SME legal persons, on gross income (arts 171(6), 172(4)) | 2% | 2026 | https://mejlis.gov.tm/single-code/10?lang=ru |
+| Non-resident Turkmen-source income without a permanent establishment, withheld (art. 180(3)) | 15%; leases of sea or air vessels without crew 6% | 2026 | https://mejlis.gov.tm/single-code/10?lang=ru |
+| Gambling (art. 172(3)), per day | TMT 30 per machine, 370 per table, 7 per seat, 3 per square metre, or 38 per cash desk; the highest applicable amount | 2026 | https://mejlis.gov.tm/single-code/10?lang=ru |
+| Property tax (art. 141) | 1% of the year's base; for the quarter, half-year and nine months 0,25, 0,5 and 0,75 процента (as the Code writes them) | 2026 | https://mejlis.gov.tm/single-code/10?lang=ru |
 
-## Financial statements
+Youth enterprises: the tax at the art. 172(1) and (4) rates is reduced by 50% in the first tax year of activity and by 25% in the second and third. The state-language Youth Policy Law art. 1(7) defines a youth enterprise as non-state-owned with at least 75% young workers and founded by the specified students, young scientists or entrepreneurs; Parliament's Russian translation omits the non-state condition.
 
-- **Reporting periods.** General-purpose statements use the calendar year. Interim periods are quarterly or half-yearly. Simplified statements are annual, with half-yearly simplified interim statements. The first reporting period normally runs from state registration to 31 December. For a fourth-quarter formation, the following calendar year is the first period and includes the formation-year activity. Groups prepare consolidated statements under the applicable standards. ([Accounting and Financial Reporting Law arts 16–18](https://mejlis.gov.tm/single-law/254?lang=ru))
-- **Filing and public disclosure.** Submit general-purpose statements to the founder under the founding documents, the local statistics and tax offices and other users as required. Open joint-stock companies, joint-stock commercial banks and the funds identified in article 20 publish annual statements of public interest and the audit opinion by 1 July of the following year. The financial-statement submission dates remain set separately by the competent Ministry or Central Bank under article 19(2). ([Accounting and Financial Reporting Law arts 19–20](https://mejlis.gov.tm/single-law/254?lang=ru))
+## The base
 
-The November 2026 statutory snapshot leaves the entity-specific filing instruments and forms, operational youth-enterprise eligibility procedure and local-accountant review open.
+Ordinary profit tax: taxable profit for the period, reduced by the art. 170 reliefs, computed cumulatively from the start of the year; a loss gives a nil base (art. 171(1)).
 
-<!-- openaccountants-cta-block -->
+**Private SME regime.** Privately owned legal persons that are SME subjects under the Law "On state support of small and medium entrepreneurship" pay 2% on gross income (art. 149) without deductions except those in art. 154(2) (art. 171(6)). Excluded from that income: agricultural producers' sales of own unprocessed produce; for three years from registration of the investment project, own poultry and quail meat and processed products; prosthetic-orthopaedic articles and special vehicles for disabled people. Who is an SME (SME Law art. 5(1), Ryan Duguid's reading): a headcount test only, no turnover limit.
 
----
+| Category | Industry, power, construction, gas and water | Other sectors |
+|---|---|---|
+| Microenterprise | up to 15 | up to 10 |
+| Small | 16 to 50 | 11 to 25 |
+| Medium | 51 to 200 | 26 to 100 |
 
-## Talk to a verified accountant
+Headcount is the calendar-year average including part-time, seasonal and temporary staff and staff of unincorporated branches (art. 5(2)). Exceeding it ends the reliefs from 1 April of the following year, and they can be restored only after one year (art. 5(3)). The SME Law does not apply to state enterprises, enterprises with foreign investment, or banking, insurance and gambling (art. 3): a foreign-invested company cannot use the 2% rate however small.
 
-This guide is maintained in the
-[ryanduguid/openaccountants fork](https://github.com/ryanduguid/openaccountants).
-Check its quality tier, recorded review status and cited sources before use.
-Choose a practitioner whose credentials and engagement scope you have verified.
-The links below are optional upstream services; they do not publish or verify
-this fork's changes.
+**Exemptions (art. 170(1)), among others:** investment pension funds; organisations restoring the health of disabled people; educational and scientific institutions; enterprises of disabled people's associations (at least 70% disabled staff and at least 20 disabled employees, capital wholly owned by the associations); religious organisations; agricultural enterprises; circus services; international organisations (not their business income); free economic zone participants for their first ten years (not tourist-recreational zones). Not exempt: profit from goods subject to the additional payment, and art. 172(2) and (3) income. A privately owned SME inside an exempt category is also exempt from the 2% (art. 170(1), last paragraph). Free-zone participants are those the Committee enters in its register under a contract (Free Economic Zones Law art. 8(2)); foreign legal persons qualify through branches and representative offices (art. 8(1)).
 
-- Upstream connection service: https://www.openaccountants.com/connect
-- Upstream accountant network: https://www.openaccountants.com/network
+**Reductions (art. 170(2)):** profit from scientific activity; agricultural producers' profit from own unprocessed produce; profit from receiving tourists in national tourist zones.
 
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
+## Deadlines and filing
+
+- **Profit tax (arts 174 to 176).** Monthly advances on the 25th of each month; settlements for the first quarter, half-year, nine months and year within five days of the return deadline for each period (art. 175(1)). Simplified interim reporters settle half-yearly and annually (art. 174(2)).
+- **Return.** Due on the deadline for the financial statements (art. 176(1)), which the Ministry of Finance and Economy or the Central Bank sets (Accounting and Financial Reporting Law art. 19(2)). Gambling income: return by the 20th and payment by the 25th of the month after the period.
+- **SME 2% (arts 174(5), 175(3)).** Settle each quarter, half-year, nine-month and annual amount within five days of the return deadline; advance payment from funds credited to the enterprise's settlement accounts, with tax already paid credited.
+- **Tax agents.** Withhold non-resident tax from gross income on each payment, including payments made abroad; cessation of a claim counts as payment (art. 180(1)). Report dividend payees and amounts by the 20th of the month after payment (art. 176(2)).
+- **Financial statements.** Calendar-year general-purpose statements; quarterly or half-yearly interim statements; simplified statements annual with half-yearly interim. Open joint-stock companies, joint-stock commercial banks and the art. 20 funds publish annual statements and the audit opinion by 1 July (Accounting and Financial Reporting Law arts 16 to 20, as Ryan Duguid read them).
+
+## Penalties and interest
+
+Not read for this guide.
+
+## Cross-border points
+
+Non-resident legal persons without a permanent establishment: 15% withheld on gross Turkmen-source income (VAT excluded), 6% for bareboat vessel and aircraft leases; a wet lease is at 15%. If no agent can withhold, the non-resident registers and pays itself (art. 180(1)). Treaty rates may reduce withholding. Foreign-invested companies cannot use the SME 2% rate but can be free-zone participants.
+
+## Two worked examples that recompute
+
+**1. Resident private company, not an SME (60 staff in trade), taxable profit TMT 500,000.** Profit tax at 8% = TMT 40,000 (derived).
+
+```oa-check
+name: Turkmenistan resident profit tax 8 percent
+inputs:
+  profit: 500000
+steps:
+  - tax: profit * 0.08
+expected:
+  tax: 40000
+```
+
+**2. Youth enterprise in its first year on the SME regime, gross income TMT 300,000.** Tax at 2% = TMT 6,000, reduced by 50% to TMT 3,000 (derived).
+
+```oa-check
+name: Turkmenistan youth SME first year
+inputs:
+  gross_income: 300000
+steps:
+  - base_tax: gross_income * 0.02
+  - tax: base_tax * 0.5
+expected:
+  base_tax: 6000
+  tax: 3000
+```
+
+## Ask the client first
+
+- Resident or not? Ownership (state share, private, foreign investment)?
+- Sector (banking, insurance, communications, certification, hydrocarbons, gambling)?
+- Average headcount for the year, and sector band?
+- Youth enterprise? Free-zone participant registered under a contract?
+- Payments to non-residents, and of what kind?
+
+## Sources
+
+| Source | URL | Read on |
+|---|---|---|
+| Tax Code of Turkmenistan, Russian text on the Mejlis site, arts 141, 170 to 172, 174 to 177 and 180 (Read for every rate and date in the table) | https://mejlis.gov.tm/single-code/10?lang=ru | 2026-11-14 |
+| Law "On state support of small and medium entrepreneurship", arts 3 and 5 (Read by Ryan Duguid for the headcount bands and foreign-investment exclusion) | https://mejlis.gov.tm/single-law/260?lang=ru | 2026-11-11 |
+| Youth Policy Law art. 1(7) and (9), state-language text (Read by Ryan Duguid) | https://mejlis.gov.tm/single-law/19?lang=tm | 2026-11-11 |
+| Free Economic Zones Law art. 8 (Read by Ryan Duguid for participant registration) | https://mejlis.gov.tm/single-law/116?lang=ru | 2026-11-11 |
+| Accounting and Financial Reporting Law arts 16 to 20 (Read by Ryan Duguid for reporting periods and 1 July publication) | https://mejlis.gov.tm/single-law/254?lang=ru | 2026-11-11 |
+
+Not yet confirmed: hydrocarbon contract rates; the financial-statement deadlines the Ministry and Central Bank set; the first effective date and procedure for the youth reductions; SME Law, Youth Policy Law, Free Zones Law and Accounting Law text as Ryan Duguid read it (not reopened here); penalties; treaty list. The old guide's "31 March" return date has no basis in art. 176.
