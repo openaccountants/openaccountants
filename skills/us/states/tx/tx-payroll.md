@@ -1,10 +1,10 @@
 ---
 name: tx-payroll
 description: Texas employer payroll obligations for tax year 2026. Texas has no state income tax, so there is no state withholding, no state W-4 and no state annual withholding reconciliation. The state payroll tax is Texas Workforce Commission (TWC) unemployment insurance tax, paid by the employer only, on the first $9,000 of each employee's wages a year. 2026 rates run from 0.32% to 6.32%; a new employer starts at 2.70%. Covers who is a liable employer ($1,500 of wages in a calendar quarter, or one employee in 20 weeks), registering within 10 days, the five parts of the experience rate, quarterly wage reports and payments due the last day of the month after each quarter, electronic filing, late report penalties and interest. Trigger on "Texas payroll", "Texas withholding", "TWC", "Texas unemployment tax", "Texas SUTA", "Texas wage base", "Texas new employer rate", "C-3 report".
-version: "1.0"
+version: "1.1"
 jurisdiction: US-TX
 tax_year: 2026
-last_updated: 2026-11-13
+last_updated: 2026-11-14
 depends_on:
   - us-form-941-940-payroll
 category: payroll
@@ -50,7 +50,7 @@ Out of scope, and where it goes:
 | Item | Amount, 2026 | Source |
 | --- | --- | --- |
 | State income tax withholding | None: Texas has no individual income tax | [Texas Constitution, Article 8, Section 24-a](https://statutes.capitol.texas.gov/Docs/CN/htm/CN.8.htm) |
-| UI taxable wage base, per employee per calendar year | USD 9,000 | [TWC, Unemployment Insurance Tax Rates](https://www.twc.texas.gov/programs/unemployment-tax/tax-rates); [Labor Code 201.082(1)](https://statutes.capitol.texas.gov/Docs/LA/htm/LA.201.htm) |
+| UI taxable wage base, per employee per calendar year | USD 9,000 | [TWC, Unemployment Insurance Tax Rates](https://www.twc.texas.gov/programs/unemployment-tax/tax-rates); [Labor Code 201.082(1)](https://tcss.legis.texas.gov/resources/LA/htm/LA.201.htm) |
 | Minimum UI tax rate | 0.32% | [TWC, Your 2026 Tax Rates](https://www.twc.texas.gov/programs/unemployment-tax/your-tax-rates) |
 | Maximum UI tax rate | 6.32% | [TWC, Your 2026 Tax Rates](https://www.twc.texas.gov/programs/unemployment-tax/your-tax-rates) |
 | Entry-level rate for a newly liable employer (all industry groups) | 2.70% | [TWC, Unemployment Insurance Tax Rates](https://www.twc.texas.gov/programs/unemployment-tax/tax-rates) |
@@ -61,10 +61,10 @@ Out of scope, and where it goes:
 | Obligation Assessment: Interest Tax Rate | 0.01% | [TWC, Your 2026 Tax Rates](https://www.twc.texas.gov/programs/unemployment-tax/your-tax-rates) |
 | Deficit Tax Rate | None for 2026 (ratio 0.00%) | [TWC, Your 2026 Tax Rates](https://www.twc.texas.gov/programs/unemployment-tax/your-tax-rates) |
 | Employment and Training Investment Assessment (ETIA) | 0.10% | [TWC, Your 2026 Tax Rates](https://www.twc.texas.gov/programs/unemployment-tax/your-tax-rates) |
-| Liable employer: wages paid in a calendar quarter of the current or preceding year | USD 1,500 or more | [Labor Code 201.021(a)(1)](https://statutes.capitol.texas.gov/Docs/LA/htm/LA.201.htm) |
+| Liable employer: wages paid in a calendar quarter of the current or preceding year | USD 1,500 or more | [Labor Code 201.021(a)(1)](https://tcss.legis.texas.gov/resources/LA/htm/LA.201.htm) |
 | Liable employer: weeks with at least one employee in the current or preceding year | 20 or more different calendar weeks | [Labor Code 201.021(a)(2)](https://statutes.capitol.texas.gov/Docs/LA/htm/LA.201.htm) |
 | Register with the TWC after becoming liable | Within 10 days | [TWC, Unemployment Tax Registration](https://www.twc.texas.gov/businesses/unemployment-tax-registration) |
-| Interest on late tax | 1.5% of the tax for each month or part month, capped at 37.5% of the tax due | [Labor Code 213.021(a)](https://statutes.capitol.texas.gov/Docs/LA/htm/LA.213.htm) |
+| Interest on late tax | one and one-half percent of the tax for each month or part month, capped at 37-1/2 percent of the tax due (1.5 and 37.5 in decimals) | [Labor Code 213.021(a)](https://tcss.legis.texas.gov/resources/LA/htm/LA.213.htm) |
 | Late report penalty, filed within 15 days of the due date | USD 15 | [Labor Code 213.022(1)](https://statutes.capitol.texas.gov/Docs/LA/htm/LA.213.htm) |
 
 The wage base is set by statute and has been USD 9,000 every year since at least 2017 (TWC rates table). The 2026 minimum rate equals the three flat parts that every experience-rated employer pays: 0.21% + 0.01% + 0.10% = 0.32%.
