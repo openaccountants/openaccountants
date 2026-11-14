@@ -1,13 +1,14 @@
 ---
 name: de-partners-and-part-year
 description: "Use this skill for two German income tax cases in tax year 2026. Part 1, partners: how a partnership's profit (OHG, KG, GmbH & Co. KG, GbR, PartG) is fixed in the separate and uniform determination (gesonderte und einheitliche Feststellung, § 180 AO), the partnership return and its deadline, how each partner's share, Sondervergütungen and Sonderbetriebsausgaben reach the partner's own return, § 15a loss limits for limited partners, the § 35(2) trade tax credit split, the § 34a retained-profits option, and freelancer partnerships. Part 2, the year of moving to or from Germany: one resident assessment for the whole year (§ 2(7) EStG) with foreign-period income raising the rate (§ 32b). Trigger on: Mitunternehmer, Feststellungserklärung, ESt 1 B, Sondervergütung, Kommanditist Verlust, Thesaurierung, Zuzug, Wegzug, Progressionsvorbehalt. Out of scope: sole traders (germany-income-tax), trade tax computation (de-trade-tax), non-residents (de-non-resident-tax), exit tax (leaving-germany-exit-tax)."
-version: 0.3
+version: 0.4
 jurisdiction: DE
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+type: situation-rules
 ---
 
 # Germany: partners' profit shares and the year of moving to or from Germany, tax year 2026

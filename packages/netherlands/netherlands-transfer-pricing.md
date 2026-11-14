@@ -1,19 +1,20 @@
 ---
 name: netherlands-transfer-pricing
 description: Use this skill whenever asked about Netherlands transfer pricing rules, documentation requirements, or verrekenprijzen compliance. Trigger on phrases like "transfer pricing Netherlands", "Dutch TP documentation", "verrekenprijzen", "master file Netherlands", "local file Netherlands", "CbCR Netherlands", "APA Netherlands", "Article 8b DCITA", "DTA transfer pricing", "CbC fine Netherlands", "missing transfer pricing documentation Netherlands", "verrekenprijzen boete", or any question about intercompany pricing for Dutch entities.
-version: 1.2
+version: 1.3
 jurisdiction: NL
 tax_year: 2026
-last_updated: 2026-10-24
+last_updated: 2026-11-14
 depends_on:
   - transfer-pricing-workflow-base
 category: transfer-pricing
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: transfer-pricing
+type: situation-rules
 ---
 
-# Netherlands transfer pricing: pricing, documentation and reporting, 2026 v1.2
+# Netherlands transfer pricing: pricing, documentation and reporting, 2026 v1.3
 
 Tax year 2026. The law was read as in force on 23 October 2026; the articles used were unchanged from their 1 January 2026 text. This skill covers Dutch corporate transfer pricing (verrekenprijzen): the arm's length rule, the mismatch rules, documentation, country-by-country (CbC) reporting, advance certainty, and what happens when any of it is missing. It does not produce a market price without transaction evidence. Corporate tax computation itself is in `nl-corporate-tax`.
 

@@ -1,14 +1,15 @@
 ---
 name: ee-cross-border
 description: "Estonian cross-border tax for tax year 2026, from the Income Tax Act (tulumaksuseadus) in force from 1 October 2026 and Estonian Tax and Customs Board guidance. Covers individual residence (home in Estonia or 183 days in 12 months), how non-residents are taxed on Estonian-source income, withholding on payments to non-residents (22% on wages, board fees and rent; 10% on services performed in Estonia, royalties and performers), dividends under the distribution-based 22/78 system with no withholding, permanent establishments, treaty relief and residence certificates, the foreign tax credit, and the exit tax when a company moves assets or residence abroad. Confirms the 2026 rate stayed at 22% and that the 2% security tax on income and profits does not apply. Trigger on: non-resident Estonia, Estonian withholding tax, TSD annex 2, moving to Estonia, leaving Estonia, e-resident company abroad, Estonia exit tax. Out of scope: estonia-income-tax, ee-corporate-income-tax, estonia-payroll, estonia-social-contributions, estonia-vat-return."
-version: 0.2
+version: 0.3
 jurisdiction: EE
 tax_year: 2026
-last_updated: 2026-10-24
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: cross-border
+type: situation-rules
 ---
 
 # Estonia cross-border tax: residence, non-residents, withholding, exit (tax year 2026)
