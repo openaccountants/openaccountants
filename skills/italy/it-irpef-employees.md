@@ -1,13 +1,14 @@
 ---
 name: it-irpef-employees
 description: "Italian personal income tax (IRPEF) for resident employees, pensioners and private investors, tax year 2026. Covers the 2026 bands (23%, 33%, 43%; the middle rate cut from 35% by L. 199/2025), the employment and pension detrazioni of TUIR art. 13, the cuneo fiscale measures of L. 207/2024 (tax-free sum and extra detrazione), family detrazioni, the main oneri deducibili and detraibili with their caps, regional and municipal surcharges, 730 or Redditi PF and the 2027 deadlines, the 26% and 12.5% substitute taxes on investment income, rental income and cedolare secca (21%, 26%, 10%), IVIE and IVAFE on foreign assets, penalties and ravvedimento. Trigger on: IRPEF dipendente, 730, busta paga tax, detrazioni lavoro dipendente, cedolare secca, capital gains Italy, IVAFE, IVIE. Out of scope, see: it-income-tax (self-employed), italy-payroll (withholding), it-estimated-tax, it-impatriati, italy-crypto-tax, it-cross-border."
-version: 0.2
+version: 0.3
 jurisdiction: IT
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+type: computation
 ---
 
 # Italy: income tax for employees, pensioners and investment income (2026)
@@ -44,33 +45,33 @@ Out of scope here: anyone with business or self-employment income (see `it-incom
 | IRPEF, taxable income up to EUR 28,000 | 23% | 2026 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art11!vig=2026-06-30 |
 | IRPEF, over EUR 28,000 up to EUR 50,000 | 33% (35% in 2024 and 2025; cut by L. 199/2025 art. 1 comma 3) | 2026 | same; https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2025-12-30;199~art1!vig=2026-06-30 |
 | IRPEF, over EUR 50,000 | 43%; tax on the first EUR 50,000 is EUR 13,700 | 2026 | TUIR art. 11; https://www.agenziaentrate.gov.it/portale/imposta-sul-reddito-delle-persone-fisiche-irpef-/aliquote-e-calcolo-dell-irpef |
-| Band edges | Unchanged at EUR 28,000 and EUR 50,000 (L. 199/2025 changed only the rate) | 2026 | L. 199/2025 art. 1 comma 3 |
-| No IRPEF if the only income is a full-year pension up to EUR 7,500, land up to EUR 185.92 and the main home | nil | 2026 | TUIR art. 11 comma 2 |
+| Band edges | Unchanged at EUR 28,000 and EUR 50,000 (L. 199/2025 changed only the rate) | 2026 | L. 199/2025 art. 1 comma 3 https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2025-12-30;199~art1!vig=2026-06-30; https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art11!vig=2026-06-30 |
+| No IRPEF if the only income is a full-year pension up to EUR 7,500, land up to EUR 185.92 and the main home | nil | 2026 | TUIR art. 11 comma 2 https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art11!vig=2026-06-30 |
 | Employee detrazione, total income up to EUR 15,000 | EUR 1,955 (minimum EUR 690; EUR 1,380 on fixed-term contracts) | 2026 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art13!vig=2026-06-30 |
-| Employee detrazione, over EUR 15,000 up to 28,000 | EUR 1,910 + EUR 1,190 x (28,000 - income) / 13,000 | 2026 | TUIR art. 13 comma 1 lett. b |
-| Employee detrazione, over EUR 28,000 up to 50,000 | EUR 1,910 x (50,000 - income) / 22,000; nil above 50,000 | 2026 | TUIR art. 13 comma 1 lett. c |
-| Employee extra, income over EUR 25,000 up to 35,000 | + EUR 65 | 2026 | TUIR art. 13 comma 1.1 |
-| Pension detrazione, income up to EUR 8,500 | EUR 1,955 (minimum EUR 713) | 2026 | TUIR art. 13 comma 3 lett. a |
-| Pension detrazione, over EUR 8,500 up to 28,000 | EUR 700 + EUR 1,255 x (28,000 - income) / 19,500 | 2026 | TUIR art. 13 comma 3 lett. b |
-| Pension detrazione, over EUR 28,000 up to 50,000 | EUR 700 x (50,000 - income) / 22,000; nil above 50,000 | 2026 | TUIR art. 13 comma 3 lett. c |
-| Pension extra, income over EUR 25,000 up to 29,000 | + EUR 50 | 2026 | TUIR art. 13 comma 3-bis |
+| Employee detrazione, over EUR 15,000 up to 28,000 | EUR 1,910 + EUR 1,190 x (28,000 - income) / 13,000 | 2026 | TUIR art. 13 comma 1 lett. b https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art13!vig=2026-06-30 |
+| Employee detrazione, over EUR 28,000 up to 50,000 | EUR 1,910 x (50,000 - income) / 22,000; nil above 50,000 | 2026 | TUIR art. 13 comma 1 lett. c https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art13!vig=2026-06-30 |
+| Employee extra, income over EUR 25,000 up to 35,000 | + EUR 65 | 2026 | TUIR art. 13 comma 1.1 https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art13!vig=2026-06-30 |
+| Pension detrazione, income up to EUR 8,500 | EUR 1,955 (minimum EUR 713) | 2026 | TUIR art. 13 comma 3 lett. a https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art13!vig=2026-06-30 |
+| Pension detrazione, over EUR 8,500 up to 28,000 | EUR 700 + EUR 1,255 x (28,000 - income) / 19,500 | 2026 | TUIR art. 13 comma 3 lett. b https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art13!vig=2026-06-30 |
+| Pension detrazione, over EUR 28,000 up to 50,000 | EUR 700 x (50,000 - income) / 22,000; nil above 50,000 | 2026 | TUIR art. 13 comma 3 lett. c https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art13!vig=2026-06-30 |
+| Pension extra, income over EUR 25,000 up to 29,000 | + EUR 50 | 2026 | TUIR art. 13 comma 3-bis https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art13!vig=2026-06-30 |
 | Cuneo fiscale: tax-free sum for employees with total income up to EUR 20,000 | 7.1% of employment income up to EUR 8,500; 5.3% over 8,500 up to 15,000; 4.8% over 15,000 | 2026 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2024-12-30;207~art1!vig=2026-06-30 (commi 4 and 5) |
-| Cuneo fiscale: extra detrazione, total income over EUR 20,000 up to 32,000 | EUR 1,000 | 2026 | L. 207/2024 art. 1 comma 6 |
-| Cuneo fiscale: extra detrazione, over EUR 32,000 up to 40,000 | EUR 1,000 x (40,000 - income) / 8,000; nil above 40,000 | 2026 | L. 207/2024 art. 1 comma 6 |
+| Cuneo fiscale: extra detrazione, total income over EUR 20,000 up to 32,000 | EUR 1,000 | 2026 | L. 207/2024 art. 1 comma 6 https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2024-12-30;207~art1!vig=2026-06-30 |
+| Cuneo fiscale: extra detrazione, over EUR 32,000 up to 40,000 | EUR 1,000 x (40,000 - income) / 8,000; nil above 40,000 | 2026 | L. 207/2024 art. 1 comma 6 https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2024-12-30;207~art1!vig=2026-06-30 |
 | Trattamento integrativo (cash supplement), total income up to EUR 15,000 | EUR 1,200 a year, if gross tax on employment income exceeds the art. 13 detrazione less EUR 75 | 2026 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2020-02-05;3~art1!vig=2026-06-30 |
-| Trattamento integrativo, total income over EUR 15,000 up to 28,000 | Only if the family and art. 13 detrazioni, plus mortgage interest on loans taken out up to 2021 and instalments of medical and building-works detrazioni for spending up to 2021, exceed gross tax; the excess, capped at EUR 1,200 | 2026 | D.L. 3/2020 art. 1 comma 1, same URL |
+| Trattamento integrativo, total income over EUR 15,000 up to 28,000 | Only if the family and art. 13 detrazioni, plus mortgage interest on loans taken out up to 2021 and instalments of medical and building-works detrazioni for spending up to 2021, exceed gross tax; the excess, capped at EUR 1,200 | 2026 | D.L. 3/2020 art. 1 comma 1 https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2020-02-05;3~art1!vig=2026-06-30 |
 | Dependent spouse | EUR 800 - 110 x income / 15,000 up to 15,000; EUR 690 from 15,000 to 40,000; EUR 690 x (80,000 - income) / 40,000 from 40,000 to 80,000; small extras between EUR 29,000 and 35,200 | 2026 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art12!vig=2026-06-30 |
-| Dependent child aged 21 to 29 (or 30+ with disability) | EUR 950 x (95,000 - income) / 95,000; EUR 95,000 rises by 15,000 per child after the first; split 50/50 between parents unless agreed | 2026 | TUIR art. 12 comma 1 lett. c |
-| Other dependant: ascendant living with the taxpayer | EUR 750 x (80,000 - income) / 80,000 | 2026 | TUIR art. 12 comma 1 lett. d |
-| Dependant's own income limit | EUR 2,840.51; EUR 4,000 for children up to age 24 | 2026 | TUIR art. 12 comma 2 |
+| Dependent child aged 21 to 29 (or 30+ with disability) | EUR 950 x (95,000 - income) / 95,000; EUR 95,000 rises by 15,000 per child after the first; split 50/50 between parents unless agreed | 2026 | TUIR art. 12 comma 1 lett. c https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art12!vig=2026-06-30 |
+| Other dependant: ascendant living with the taxpayer | EUR 750 x (80,000 - income) / 80,000 | 2026 | TUIR art. 12 comma 1 lett. d https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art12!vig=2026-06-30 |
+| Dependant's own income limit | EUR 2,840.51; EUR 4,000 for children up to age 24 | 2026 | TUIR art. 12 comma 2 https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art12!vig=2026-06-30 |
 | Oneri detraibili: credit rate | 19%, fixed by D.Lgs. 446/1997 art. 49 for oneri paid from 1998 and never amended. Normattiva's consolidated art. 15 still prints "22 per cento" because art. 49 changed the rate without rewriting art. 15 | 2026 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-15;446~art49!vig=2026-06-30 |
 | Medical expenses | 19% of the part above EUR 129.11 (art. 15 prints 250,000 lire) | 2026 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art15!vig=2026-06-30 |
-| Mortgage interest on the main home | 19% of up to EUR 4,000 a year | 2026 | TUIR art. 15 comma 1 lett. b |
-| School fees (infant to upper secondary) | 19% of up to EUR 1,000 per pupil | 2026 | TUIR art. 15 comma 1 lett. e-bis |
-| Funeral costs | 19% of up to EUR 1,550 per death | 2026 | TUIR art. 15 comma 1 lett. d |
-| Phase-out of 19% credits | full up to total income EUR 120,000; then x (240,000 - income) / 120,000; mortgage interest (art. 15 comma 1 lett. a and b, comma 1-ter) and medical costs (lett. c) are kept in full | 2026 | TUIR art. 15 commi 3-bis and 3-quater |
-| Overall cap on the spending that qualifies for detrazioni, total income over EUR 75,000 | base EUR 14,000 (over 100,000: EUR 8,000) x 0.50 / 0.70 / 0.85 / 1 by number of dependent children (1 also with one disabled child). Outside the cap: medical costs, start-up and innovative SME investments, mortgage interest and insurance premiums on contracts made up to 31 December 2024, and yearly instalments of spending made up to 31 December 2024 | 2026 | TUIR art. 16-ter commi 1 to 5 |
-| Cut for total income over EUR 200,000 | 19% credits reduced by EUR 440 (medical costs excluded) | 2026 | TUIR art. 16-ter comma 5-bis (L. 199/2025 art. 1 comma 4) |
+| Mortgage interest on the main home | 19% of up to EUR 4,000 a year | 2026 | TUIR art. 15 comma 1 lett. b https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art15!vig=2026-06-30 |
+| School fees (infant to upper secondary) | 19% of up to EUR 1,000 per pupil | 2026 | TUIR art. 15 comma 1 lett. e-bis https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art15!vig=2026-06-30 |
+| Funeral costs | 19% of up to EUR 1,550 per death | 2026 | TUIR art. 15 comma 1 lett. d https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art15!vig=2026-06-30 |
+| Phase-out of 19% credits | full up to total income EUR 120,000; then x (240,000 - income) / 120,000; mortgage interest (art. 15 comma 1 lett. a and b, comma 1-ter) and medical costs (lett. c) are kept in full | 2026 | TUIR art. 15 commi 3-bis and 3-quater https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art15!vig=2026-06-30 |
+| Overall cap on the spending that qualifies for detrazioni, total income over EUR 75,000 | base EUR 14,000 (over 100,000: EUR 8,000) x 0.50 / 0.70 / 0.85 / 1 by number of dependent children (1 also with one disabled child). Outside the cap: medical costs, start-up and innovative SME investments, mortgage interest and insurance premiums on contracts made up to 31 December 2024, and yearly instalments of spending made up to 31 December 2024 | 2026 | TUIR art. 16-ter commi 1 to 5 https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art16ter!vig=2026-06-30 |
+| Cut for total income over EUR 200,000 | 19% credits reduced by EUR 440 (medical costs excluded) | 2026 | TUIR art. 16-ter comma 5-bis (L. 199/2025 art. 1 comma 4) https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art16ter!vig=2026-06-30 |
 | Supplementary pension contributions (deductible) | up to EUR 5,300 "a decorrere dal periodo d'imposta 2026" (EUR 5,164.57 before); added by L. 199/2025 art. 1 comma 201, which comma 202 brings into effect on 1 July 2026 | 2026 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2005-12-05;252~art8!vig=2026-06-30 |
 | Contributions to registered supplementary health funds (deductible) | up to EUR 3,615.20 | 2026 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art10!vig=2026-06-30 |
 | Regional surcharge (addizionale regionale) | base 1.23%; each region may raise it by up to 2.1 points or lower it | 2026 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2011-05-06;68~art6!vig=2026-06-30 |
@@ -78,12 +79,12 @@ Out of scope here: anyone with business or self-employment income (see `it-incom
 | Interest, dividends and gains (substitute tax or final withholding) | 26%. Gains on qualifying holdings (art. 67 comma 1 lett. c) realised from 2019 fall under the same substitute tax (D.Lgs. 461/1997 art. 5 comma 2 as amended by L. 205/2017 art. 1 comma 1000) | 2026 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2014-04-24;66~art3!vig=2026-06-30 |
 | Italian government bonds and bonds of white-list states | 12.5% on interest; gains counted at 48.08% of the amount, so 26% x 48.08% = 12.5% | 2026 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1996-04-01;239~art2!vig=2026-06-30 ; D.L. 66/2014 art. 3 commi 2 and 5 |
 | Cedolare secca, long-term residential lets | 21% of the yearly rent | 2026 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2011-03-14;23~art3!vig=2026-06-30 |
-| Cedolare secca, agreed-rent contracts (canone concordato) in high-demand comuni | 10% | 2026 | D.Lgs. 23/2011 art. 3 comma 2 |
+| Cedolare secca, agreed-rent contracts (canone concordato) in high-demand comuni | 10% | 2026 | D.Lgs. 23/2011 art. 3 comma 2 https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2011-03-14;23~art3!vig=2026-06-30 |
 | Cedolare secca, short lets (up to 30 days) | 26%; 21% for one unit the taxpayer picks in the return | 2026 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2017-04-24;50~art4!vig=2026-06-30 |
 | Short lets presumed to be a business | more than two flats let short in the tax year (four before 2026); the short-let regime then does not apply | 2026 | L. 178/2020 art. 1 comma 595 as amended by L. 199/2025 art. 1 comma 17, https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2025-12-30;199~art1!vig=2026-06-30 |
 | Rent taxed under IRPEF | rent less a flat 5% (if higher than the cadastral income) | 2026 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art37!vig=2026-06-30 (comma 4-bis) |
 | IVIE (foreign real estate) | 1.06% of value; not due if EUR 200 or less; a main home abroad is exempt unless it would be a luxury category (A/1, A/8, A/9) in Italy, which pays 0.4% less EUR 200 (comma 15-bis) | 2026 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2011-12-06;201~art19!vig=2026-06-30 (comma 15) |
-| IVAFE (foreign financial assets) | 0.2% of value; 0.4% for assets in listed tax havens (from 2024); bank accounts a flat EUR 34.20 | 2026 | D.L. 201/2011 art. 19 comma 20, same URL |
+| IVAFE (foreign financial assets) | 0.2% of value; 0.4% for assets in listed tax havens (from 2024); bank accounts a flat EUR 34.20 | 2026 | D.L. 201/2011 art. 19 comma 20 https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2011-12-06;201~art19!vig=2026-06-30 |
 
 ## The taxable base
 
