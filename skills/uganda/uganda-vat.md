@@ -2,18 +2,19 @@
 name: uganda-vat
 description: >
   Uganda VAT return work, tax year 2026-27: the 18% rate, registration threshold of UGX 300,000,000 from 1 July 2026, withholding VAT at 6% and its 2026 e-invoice exception, zero-rated supplies, blocked input tax, EFRIS, supplier patterns, bad debts and penalties. Use for Uganda questions from URA taxpayers, employers, advisers and foreign investors, including rates, thresholds, filing dates, the URA portal and worked computations. Figures for tax year 2026-27 come from Uganda Revenue Authority pages and the law, and items that could not be opened are named as unverified in the Sources section. Not reviewed by a licensed accountant.
-version: 2.1
+version: 2.2
 jurisdiction: UG
 category: international
 tax_year: 2026
 tax_year_notes: "2026-27 (1 July 2026 to 30 June 2027)"
-last_updated: 2026-11-01
+last_updated: 2026-11-14
+type: situation-rules
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: vat-gst
 ---
 
-# Uganda VAT v2.1
+# Uganda VAT v2.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -27,13 +28,12 @@ Persons making taxable supplies in Uganda above the threshold, voluntary registr
 
 | Item | Amount | Tax year | Official URL |
 |---|---|---|---|
-| Annual registration threshold | UGX 300,000,000 (was 150,000,000) | 2026-27 | https://ura.go.ug/en/download/tax-amendments-fy-2026-2027/ |
-| Quarterly test, one quarter of threshold | UGX 75,000,000 | 2026-27 | same; s.7(1) in https://ura.go.ug/en/download/compendium-for-various-domestic-tax-laws/ |
-| Standard rate | unverified: 18% (old file; s.78(2) not opened) | 2026-27 | unverified |
+| Annual registration threshold | UGX 300,000,000 (was 150,000,000), from 1 July 2026 | 2026-27 | https://ura.go.ug/en/revised-value-added-tax-registration-threshold/ |
+| Quarterly test, one quarter of threshold | UGX 75,000,000 | 2026-27 | https://ura.go.ug/en/value-added-tax-vat/; s.7(1) in https://ura.go.ug/en/download/compendium-for-various-domestic-tax-laws/ |
+| Standard rate | 18% | 2026-27 | https://ura.go.ug/en/value-added-tax-vat/ |
 | Withholding VAT | 6% of taxable value; none if an e-invoice or e-receipt is issued | 2026-27 | https://ura.go.ug/en/download/tax-amendments-fy-2026-2027/ |
-| Refund for non-taxable buyer on e-receipts | 5% of tax, on UGX 2,000,000 within 30 days | 2026-27 | same |
 | Refund interest cut-off | Excess of not less than 5% of the claim | 2026-27 | same |
-| Late return penal tax | Greater of UGX 200,000 or Fifth Schedule charge | 2021 text | https://ura.go.ug/en/download/compendium-for-various-domestic-tax-laws/ |
+| Late return penal tax | Greater of two hundred thousand shillings or the Fifth Schedule interest charge (VAT Act Cap 349 s.65(2)) | 2021 text | https://ura.go.ug/en/download/compendium-for-various-domestic-tax-laws/ |
 
 ## The base
 
@@ -121,9 +121,11 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| URA, Tax Amendments FY 2026-27 handbook (36-page PDF, all read); printed before the Income Tax and Excise Acts were assented | https://ura.go.ug/en/download/tax-amendments-fy-2026-2027/ | 2026-11-01 |
+| URA notice, Revised VAT registration threshold (first published 30 Oct 2026): read in full for the UGX 300,000,000 threshold from 1 July 2026 | https://ura.go.ug/en/revised-value-added-tax-registration-threshold/ | 2026-11-14 |
+| URA, Value Added Tax (VAT) page: read for the 18% standard rate and the UGX 75,000,000 quarterly test | https://ura.go.ug/en/value-added-tax-vat/ | 2026-11-14 |
+| URA, Tax Amendments FY 2026-27 handbook (36-page PDF, all read on 2026-11-01; not reopened 14 Nov 2026, the download is damaged); printed before the Income Tax and Excise Acts were assented | https://ura.go.ug/en/download/tax-amendments-fy-2026-2027/ | 2026-11-01 |
 | URA, File a Tax Return page (still shows the old UGX 2,820,000 threshold) | https://ura.go.ug/en/domestic-taxes/returns/ | 2026-11-01 |
 | URA, EFRIS registration | https://ura.go.ug/en/efris/efris-registration/ | 2026-11-01 |
 | URA compendium of domestic tax laws, as of July 2021: ITA Cap 340, VAT Act Cap 349 (only the sections cited; old numbering) | https://ura.go.ug/en/download/compendium-for-various-domestic-tax-laws/ | 2026-11-01 |
 
-Not yet confirmed: 18% standard rate in the law; the exempt list (old file: unprocessed foodstuffs, financial services, medical, education, unfurnished residential rent, social welfare, burial, postal, domestic water; furnished rent treatment); deemed supplies and the UGX 100,000 gift limit; Fifth Schedule rates (old file: 2% a month, compounding); box numbers 1 to 15 in the old file, including Box 14 for withholding credits; aircraft and diplomatic zero rating; revised-edition section numbers; the enacted VAT (Amendment) Act 2026 text; whether the 2021 Schedules were changed between 2022 and 2025. Old tests kept in mind: UGX 20m sale gives 3.6m output; 500,000 gift gives 90,000 only if the deemed supply rule holds.
+Not yet confirmed: the refund for a non-taxable buyer on e-receipts (row moved out of the rates table on 2026-11-14: 5% of the tax on purchases of UGX 2,000,000 within 30 days, read in the FY 2026-27 amendments handbook on 2026-11-01; the handbook download is damaged and could not be reopened); the text of s.78(2) setting the 18% (the rate now rests on the URA VAT page read 2026-11-14); the exempt list (old file: unprocessed foodstuffs, financial services, medical, education, unfurnished residential rent, social welfare, burial, postal, domestic water; furnished rent treatment); deemed supplies and the UGX 100,000 gift limit; Fifth Schedule rates (old file: 2% a month, compounding); box numbers 1 to 15 in the old file, including Box 14 for withholding credits; aircraft and diplomatic zero rating; revised-edition section numbers; the enacted VAT (Amendment) Act 2026 text; whether the 2021 Schedules were changed between 2022 and 2025. Old tests kept in mind: UGX 20m sale gives 3.6m output; 500,000 gift gives 90,000 only if the deemed supply rule holds.

@@ -1,10 +1,10 @@
 ---
 name: md-income-tax
 description: "Use this skill whenever asked about Maryland individual income tax. Trigger on phrases like \"Maryland income tax\", \"MD income tax\", \"Form 502\", \"Comptroller of Maryland\", \"Maryland county tax\", \"piggyback tax\". Maryland has 10 graduated state brackets (2% to 6.50%) PLUS mandatory county/city income taxes (2.25% to 3.30%). ALWAYS load us-tax-workflow-base first."
-version: "0.2"
+version: "0.3"
 jurisdiction: US-MD
 tax_year: 2026
-last_updated: 2026-11-13
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
@@ -132,32 +132,34 @@ Source: [Exemption Amount Chart 10A](https://www.marylandcomptroller.gov/content
 
 Local tax is a percentage of the same Maryland taxable net income (Line 20). A county may set a rate of at least 2.25% and, from tax years beginning after 31 December 2025, not more than 3.30% (previously 3.20%). Only Dorchester used the one-year option to charge 3.30% for 2025. Counties may use brackets, but no bracket may be below 2.25% and a higher bracket may not carry a lower rate. [§ 10-106](https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gtg&section=10-106&enactments=false)
 
-| Jurisdiction | 2025 | 2026| Source |
-| --- | --- | ---| --- |
-| Baltimore City | 3.20% | 3.20%| [official source](https://www.marylandcomptroller.gov/content/dam/mdcomp/tax/forms/worksheets/2026-pv-worksheet.pdf) |
-| Allegany | 3.03% | 3.20%| [official source](https://www.marylandcomptroller.gov/content/dam/mdcomp/tax/forms/worksheets/2026-pv-worksheet.pdf) |
-| Anne Arundel | brackets, see below | brackets, see below| [official source](https://www.marylandcomptroller.gov/content/dam/mdcomp/tax/forms/worksheets/2026-pv-worksheet.pdf) |
-| Baltimore County | 3.20% | 3.20%| [official source](https://www.marylandcomptroller.gov/content/dam/mdcomp/tax/forms/worksheets/2026-pv-worksheet.pdf) |
-| Calvert | 3.20% | 3.20%| [official source](https://www.marylandcomptroller.gov/content/dam/mdcomp/tax/forms/worksheets/2026-pv-worksheet.pdf) |
-| Caroline | 3.20% | 3.20%| [official source](https://www.marylandcomptroller.gov/content/dam/mdcomp/tax/forms/worksheets/2026-pv-worksheet.pdf) |
-| Carroll | 3.03% | 3.03%| [official source](https://www.marylandcomptroller.gov/content/dam/mdcomp/tax/forms/worksheets/2026-pv-worksheet.pdf) |
-| Cecil | 2.74% | 2.74%| [official source](https://www.marylandcomptroller.gov/content/dam/mdcomp/tax/forms/worksheets/2026-pv-worksheet.pdf) |
-| Charles | 3.03% | 3.03%| [official source](https://www.marylandcomptroller.gov/content/dam/mdcomp/tax/forms/worksheets/2026-pv-worksheet.pdf) |
-| Dorchester | 3.30% | 3.30%| [official source](https://www.marylandcomptroller.gov/content/dam/mdcomp/tax/forms/worksheets/2026-pv-worksheet.pdf) |
-| Frederick | brackets, see below | brackets, see below| [official source](https://www.marylandcomptroller.gov/content/dam/mdcomp/tax/forms/worksheets/2026-pv-worksheet.pdf) |
-| Garrett | 2.65% | 2.65%| [official source](https://www.marylandcomptroller.gov/content/dam/mdcomp/tax/forms/worksheets/2026-pv-worksheet.pdf) |
-| Harford | 3.06% | 3.06%| [official source](https://www.marylandcomptroller.gov/content/dam/mdcomp/tax/forms/worksheets/2026-pv-worksheet.pdf) |
-| Howard | 3.20% | 3.20%| [official source](https://www.marylandcomptroller.gov/content/dam/mdcomp/tax/forms/worksheets/2026-pv-worksheet.pdf) |
-| Kent | 3.20% | 3.30%| [official source](https://www.marylandcomptroller.gov/content/dam/mdcomp/tax/forms/worksheets/2026-pv-worksheet.pdf) |
-| Montgomery | 3.20% | 3.20%| [official source](https://www.marylandcomptroller.gov/content/dam/mdcomp/tax/forms/worksheets/2026-pv-worksheet.pdf) |
-| Prince George's | 3.20% | 3.20%| [official source](https://www.marylandcomptroller.gov/content/dam/mdcomp/tax/forms/worksheets/2026-pv-worksheet.pdf) |
-| Queen Anne's | 3.20% | 3.20%| [official source](https://www.marylandcomptroller.gov/content/dam/mdcomp/tax/forms/worksheets/2026-pv-worksheet.pdf) |
-| St. Mary's | 3.20% | 3.20%| [official source](https://www.marylandcomptroller.gov/content/dam/mdcomp/tax/forms/worksheets/2026-pv-worksheet.pdf) |
-| Somerset | 3.20% | 3.20%| [official source](https://www.marylandcomptroller.gov/content/dam/mdcomp/tax/forms/worksheets/2026-pv-worksheet.pdf) |
-| Talbot | 2.40% | 2.40%| [official source](https://www.marylandcomptroller.gov/content/dam/mdcomp/tax/forms/worksheets/2026-pv-worksheet.pdf) |
-| Washington | 2.95% | 2.95%| [official source](https://www.marylandcomptroller.gov/content/dam/mdcomp/tax/forms/worksheets/2026-pv-worksheet.pdf) |
-| Wicomico | 3.20% | 3.20%| [official source](https://www.marylandcomptroller.gov/content/dam/mdcomp/tax/forms/worksheets/2026-pv-worksheet.pdf) |
-| Worcester | 2.25% | 2.25%| [official source](https://www.marylandcomptroller.gov/content/dam/mdcomp/tax/forms/worksheets/2026-pv-worksheet.pdf) |
+Rates are written as decimals, the way the Comptroller prints them (.0320 = 3.20%). The 2025 column is from the 2025 resident booklet Local Tax Rate Chart; the 2026 column is from the Line 11 list in the 2026 Form PV worksheet.
+
+| Jurisdiction | 2025 | 2026 | Source |
+| --- | --- | --- | --- |
+| Baltimore City | .0320 | .0320 | [2025 booklet](https://www.marylandcomptroller.gov/content/dam/mdcomp/tax/instructions/2025/resident-booklet.pdf); [2026 PV worksheet](https://www.marylandcomptroller.gov/content/dam/mdcomp/tax/forms/worksheets/2026-pv-worksheet.pdf) |
+| Allegany | .0303 | .0320 | [2025 booklet](https://www.marylandcomptroller.gov/content/dam/mdcomp/tax/instructions/2025/resident-booklet.pdf); [2026 PV worksheet](https://www.marylandcomptroller.gov/content/dam/mdcomp/tax/forms/worksheets/2026-pv-worksheet.pdf) |
+| Anne Arundel | brackets, see below | brackets, see below | [2025 booklet](https://www.marylandcomptroller.gov/content/dam/mdcomp/tax/instructions/2025/resident-booklet.pdf); [2026 PV worksheet](https://www.marylandcomptroller.gov/content/dam/mdcomp/tax/forms/worksheets/2026-pv-worksheet.pdf) |
+| Baltimore County | .0320 | .0320 | [2025 booklet](https://www.marylandcomptroller.gov/content/dam/mdcomp/tax/instructions/2025/resident-booklet.pdf); [2026 PV worksheet](https://www.marylandcomptroller.gov/content/dam/mdcomp/tax/forms/worksheets/2026-pv-worksheet.pdf) |
+| Calvert | .0320 | .0320 | [2025 booklet](https://www.marylandcomptroller.gov/content/dam/mdcomp/tax/instructions/2025/resident-booklet.pdf); [2026 PV worksheet](https://www.marylandcomptroller.gov/content/dam/mdcomp/tax/forms/worksheets/2026-pv-worksheet.pdf) |
+| Caroline | .0320 | .0320 | [2025 booklet](https://www.marylandcomptroller.gov/content/dam/mdcomp/tax/instructions/2025/resident-booklet.pdf); [2026 PV worksheet](https://www.marylandcomptroller.gov/content/dam/mdcomp/tax/forms/worksheets/2026-pv-worksheet.pdf) |
+| Carroll | .0303 | .0303 | [2025 booklet](https://www.marylandcomptroller.gov/content/dam/mdcomp/tax/instructions/2025/resident-booklet.pdf); [2026 PV worksheet](https://www.marylandcomptroller.gov/content/dam/mdcomp/tax/forms/worksheets/2026-pv-worksheet.pdf) |
+| Cecil | .0274 | .0274 | [2025 booklet](https://www.marylandcomptroller.gov/content/dam/mdcomp/tax/instructions/2025/resident-booklet.pdf); [2026 PV worksheet](https://www.marylandcomptroller.gov/content/dam/mdcomp/tax/forms/worksheets/2026-pv-worksheet.pdf) |
+| Charles | .0303 | .0303 | [2025 booklet](https://www.marylandcomptroller.gov/content/dam/mdcomp/tax/instructions/2025/resident-booklet.pdf); [2026 PV worksheet](https://www.marylandcomptroller.gov/content/dam/mdcomp/tax/forms/worksheets/2026-pv-worksheet.pdf) |
+| Dorchester | .0330 | .0330 | [2025 booklet](https://www.marylandcomptroller.gov/content/dam/mdcomp/tax/instructions/2025/resident-booklet.pdf); [2026 PV worksheet](https://www.marylandcomptroller.gov/content/dam/mdcomp/tax/forms/worksheets/2026-pv-worksheet.pdf) |
+| Frederick | brackets, see below | brackets, see below | [2025 booklet](https://www.marylandcomptroller.gov/content/dam/mdcomp/tax/instructions/2025/resident-booklet.pdf); [2026 PV worksheet](https://www.marylandcomptroller.gov/content/dam/mdcomp/tax/forms/worksheets/2026-pv-worksheet.pdf) |
+| Garrett | .0265 | .0265 | [2025 booklet](https://www.marylandcomptroller.gov/content/dam/mdcomp/tax/instructions/2025/resident-booklet.pdf); [2026 PV worksheet](https://www.marylandcomptroller.gov/content/dam/mdcomp/tax/forms/worksheets/2026-pv-worksheet.pdf) |
+| Harford | .0306 | .0306 | [2025 booklet](https://www.marylandcomptroller.gov/content/dam/mdcomp/tax/instructions/2025/resident-booklet.pdf); [2026 PV worksheet](https://www.marylandcomptroller.gov/content/dam/mdcomp/tax/forms/worksheets/2026-pv-worksheet.pdf) |
+| Howard | .0320 | .0320 | [2025 booklet](https://www.marylandcomptroller.gov/content/dam/mdcomp/tax/instructions/2025/resident-booklet.pdf); [2026 PV worksheet](https://www.marylandcomptroller.gov/content/dam/mdcomp/tax/forms/worksheets/2026-pv-worksheet.pdf) |
+| Kent | .0320 | .0330 | [2025 booklet](https://www.marylandcomptroller.gov/content/dam/mdcomp/tax/instructions/2025/resident-booklet.pdf); [2026 PV worksheet](https://www.marylandcomptroller.gov/content/dam/mdcomp/tax/forms/worksheets/2026-pv-worksheet.pdf) |
+| Montgomery | .0320 | .0320 | [2025 booklet](https://www.marylandcomptroller.gov/content/dam/mdcomp/tax/instructions/2025/resident-booklet.pdf); [2026 PV worksheet](https://www.marylandcomptroller.gov/content/dam/mdcomp/tax/forms/worksheets/2026-pv-worksheet.pdf) |
+| Prince George's | .0320 | .0320 | [2025 booklet](https://www.marylandcomptroller.gov/content/dam/mdcomp/tax/instructions/2025/resident-booklet.pdf); [2026 PV worksheet](https://www.marylandcomptroller.gov/content/dam/mdcomp/tax/forms/worksheets/2026-pv-worksheet.pdf) |
+| Queen Anne's | .0320 | .0320 | [2025 booklet](https://www.marylandcomptroller.gov/content/dam/mdcomp/tax/instructions/2025/resident-booklet.pdf); [2026 PV worksheet](https://www.marylandcomptroller.gov/content/dam/mdcomp/tax/forms/worksheets/2026-pv-worksheet.pdf) |
+| St. Mary's | .0320 | .0320 | [2025 booklet](https://www.marylandcomptroller.gov/content/dam/mdcomp/tax/instructions/2025/resident-booklet.pdf); [2026 PV worksheet](https://www.marylandcomptroller.gov/content/dam/mdcomp/tax/forms/worksheets/2026-pv-worksheet.pdf) |
+| Somerset | .0320 | .0320 | [2025 booklet](https://www.marylandcomptroller.gov/content/dam/mdcomp/tax/instructions/2025/resident-booklet.pdf); [2026 PV worksheet](https://www.marylandcomptroller.gov/content/dam/mdcomp/tax/forms/worksheets/2026-pv-worksheet.pdf) |
+| Talbot | .0240 | .0240 | [2025 booklet](https://www.marylandcomptroller.gov/content/dam/mdcomp/tax/instructions/2025/resident-booklet.pdf); [2026 PV worksheet](https://www.marylandcomptroller.gov/content/dam/mdcomp/tax/forms/worksheets/2026-pv-worksheet.pdf) |
+| Washington | .0295 | .0295 | [2025 booklet](https://www.marylandcomptroller.gov/content/dam/mdcomp/tax/instructions/2025/resident-booklet.pdf); [2026 PV worksheet](https://www.marylandcomptroller.gov/content/dam/mdcomp/tax/forms/worksheets/2026-pv-worksheet.pdf) |
+| Wicomico | .0320 | .0320 | [2025 booklet](https://www.marylandcomptroller.gov/content/dam/mdcomp/tax/instructions/2025/resident-booklet.pdf); [2026 PV worksheet](https://www.marylandcomptroller.gov/content/dam/mdcomp/tax/forms/worksheets/2026-pv-worksheet.pdf) |
+| Worcester | .0225 | .0225 | [2025 booklet](https://www.marylandcomptroller.gov/content/dam/mdcomp/tax/instructions/2025/resident-booklet.pdf); [2026 PV worksheet](https://www.marylandcomptroller.gov/content/dam/mdcomp/tax/forms/worksheets/2026-pv-worksheet.pdf) |
 
 Anne Arundel County (2025 and 2026, [booklet](https://www.marylandcomptroller.gov/content/dam/mdcomp/tax/instructions/2025/resident-booklet.pdf)):
 - Single, MFS, Dependent: 2.7% of taxable net income up to $50,000; $1,350 plus 2.94% of the excess over $50,000 up to $400,000; $11,640 plus 3.2% of the excess over $400,000.
