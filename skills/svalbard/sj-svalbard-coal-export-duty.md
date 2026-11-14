@@ -46,12 +46,12 @@ All bands below are from the [complete 2026 coal-duty decision](https://lovdata.
 | Over 100,000 through 300,000 | 200,000 tonnes | 0.9% | same |
 | Over 300,000 through 600,000 | 300,000 tonnes | 0.8% | same |
 | Over 600,000 through 1,000,000 | 400,000 tonnes | 0.7% | same |
-| Over 1,000,000 through 1,500,000 | 500,000 tonnes | 0.6% | same |
-| Over 1,500,000 through 2,100,000 | 600,000 tonnes | 0.5% | same |
-| Over 2,100,000 through 2,800,000 | 700,000 tonnes | 0.4% | same |
-| Over 2,800,000 through 3,600,000 | 800,000 tonnes | 0.3% | same |
-| Over 3,600,000 through 4,500,000 | 900,000 tonnes | 0.2% | same |
-| Over 4,500,000 through 5,500,000 | 1,000,000 tonnes | 0.1% | same |
+| Over 1,000,000 through 1,500,000 (computed: running total of the slices) | 500,000 tonnes | 0.6% | same |
+| Over 1,500,000 through 2,100,000 (computed: running total of the slices) | 600,000 tonnes | 0.5% | same |
+| Over 2,100,000 through 2,800,000 (computed: running total of the slices) | 700,000 tonnes | 0.4% | same |
+| Over 2,800,000 through 3,600,000 (computed: running total of the slices) | 800,000 tonnes | 0.3% | same |
+| Over 3,600,000 through 4,500,000 (computed: running total of the slices) | 900,000 tonnes | 0.2% | same |
+| Over 4,500,000 through 5,500,000 (computed: running total of the slices) | 1,000,000 tonnes | 0.1% | same |
 | Exporter/producer records | Submit by 31 December | Record and evidence obligation | [Act §3](https://lovdata.no/dokument/NL/lov/1925-07-17-2) |
 | Payment and ordinary appeal | Each within six weeks from the statutory dispatch/availability event | An appeal does not suspend payment | [Act §§5–6](https://lovdata.no/dokument/NL/lov/1925-07-17-2) |
 

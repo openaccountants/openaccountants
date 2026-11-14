@@ -26,7 +26,7 @@ Employers paying remuneration within [Svalbard Act §§2-1, 2-2, 3-1 and 5-2](ht
 | Item | 2026 amount | Official source |
 |---|---:|---|
 | Income tax on gross band income | 8% through 12 G; 22% above | [Act §3-1](https://lovdata.no/dokument/NL/lov/1996-11-29-68); [decision §3(a)](https://lovdata.no/dokument/STV/forskrift/2025-12-19-2780) |
-| Annual band | 12 × NOK 136,549 = NOK 1,638,588 | [Act §3-1, last G fixed for year](https://lovdata.no/dokument/NL/lov/1996-11-29-68); [NAV](https://www.nav.no/grunnbelopet) |
+| Annual band | 12 × NOK 136,549 = NOK 1,638,588 (computed) | [Act §3-1, last G fixed for year](https://lovdata.no/dokument/NL/lov/1996-11-29-68); [NAV](https://www.nav.no/grunnbelopet) |
 | Youth qualifying earnings allowance | NOK 100,000; age 13–19 at year end | [Act §3-3](https://lovdata.no/dokument/NL/lov/1996-11-29-68); [2026 wage guidance](https://www.skatteetaten.no/person/skatt/hjelp-til-riktig-skatt/svalbard/skatt-lonn/) |
 | Ordinary salary insurance / pension insurance | 7.6% / 5.1%, subject to membership and statutory class | [2026 contribution decision §§6–7](https://lovdata.no/dokument/STV/forskrift/2025-12-18-2748); [National Insurance Act §23-3](https://lovdata.no/dokument/NL/lov/1997-02-28-19/KAPITTEL_8) |
 | Employer contribution in statutory Svalbard cases | 0% | [2026 contribution decision §3](https://lovdata.no/dokument/STV/forskrift/2025-12-18-2748) |

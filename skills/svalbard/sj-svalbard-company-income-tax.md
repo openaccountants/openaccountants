@@ -29,7 +29,7 @@ A nonresident company is liable on Svalbard business income if its activity last
 |---|---:|---|
 | Ordinary company profit | 16% | [2026 Svalbard decision §3(c)](https://lovdata.no/dokument/STV/forskrift/2025-12-19-2780) |
 | Higher profit slice | 22% | [Decision §3(b)](https://lovdata.no/dokument/STV/forskrift/2025-12-19-2780) |
-| Higher slice floor | NOK 15,000,000 | [Decision §3(b)](https://lovdata.no/dokument/STV/forskrift/2025-12-19-2780) |
+| Higher slice floor | NOK 15,000,000 ("15 mill. kroner", in words on the page) | [Decision §3(b)](https://lovdata.no/dokument/STV/forskrift/2025-12-19-2780) |
 | Substance threshold | 10 × qualifying payroll + 20% × qualifying physical-asset tax value | [Decision §3(b)](https://lovdata.no/dokument/STV/forskrift/2025-12-19-2780) |
 | Capitalisation test | Cost at least NOK 30,000 and expected life at least 3 years | [Income Tax Act §14-40](https://lovdata.no/dokument/NL/lov/1999-03-26-14/KAPITTEL_14) |
 | Ordinary machine/furniture balance depreciation | Up to 20% | [Income Tax Act §14-43(1)(d)](https://lovdata.no/dokument/NL/lov/1999-03-26-14/KAPITTEL_14) |
