@@ -1,102 +1,156 @@
 ---
 name: nd-social-contributions
-description: "Use when an employer needs the North Dakota answer (2025 figures) on state-level social contributions: North Dakota has no employee-side social contribution, no state disability insurance and no paid-family-leave payroll tax -- the only state-level social contribution is the employer-only unemployment insurance tax administered by Job Service ND under N.D.C.C. Ch. 52-8 (quarterly Form SFN 41263 via UI EASY, new employer rates 1.02% non-construction / 6.09% construction on the 2025 $45,100 taxable wage base). Trigger on North Dakota UI tax, ND SUTA, new employer rate, Job Service ND, SFN 41263, UI EASY. Source-cited draft; 2026 wage base and rates need confirmation."
+description: "Compute North Dakota 2026 employer unemployment insurance, the 46600 dollar wage base, positive and negative balance schedules, new construction versus nonconstruction rates, coverage elections and UI EASY quarterly filing. Trigger on ND UI, SUTA, social contributions, SFN41263, assigned rate notice and employer wage reports."
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/nd-social-contributions"
   jurisdiction: "US-ND"
-  tax_year: "2025"
+  tax_year: "2026"
   last_updated: "2026-11-13"
 ---
 
-# North Dakota social contributions (employer-only UI; no employee-side levy)
+# North Dakota employer unemployment contributions, 2026
 
-> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
+> **Built from the law. Not yet approved.** Written by Codex. Not reviewed by an accountant. A qualified professional must review the established facts and filing result. Circular 230 section 10.37: consider relevant facts and circumstances; do not assume missing facts or rely on audit risk.
 
-## 1. Who this applies to
+**Answer first.** North Dakota UI is employer-financed and may not be deducted from employee wages. The 2026 wage base is USD 46,600. New nonconstruction rates distinguish positive from negative account balance; construction is a separate 9.67% category. Use the actual notice. [2026 Job Service schedule](https://www.jobsnd.com/sites/www/files/documents/jsnd-documents/uitaxrateschedules2026.pdf); [52-04-01](https://ndlegis.gov/cencode/t52c04.pdf).
 
-Every employer liable for North Dakota unemployment insurance: any person or entity paying wages in North Dakota that meets the coverage tests of N.D.C.C. Ch. 52-8 (Employment Security). North Dakota is an **employer-only** state for social contributions -- there is no state-level employee payroll contribution of any kind. Reimbursement-base governmental and certain nonprofit employers elect reimbursement instead of contribution financing (Job Service ND employer's guide).
+## Scope
 
-### 2. Core rules and rates
+Ordinary contributory employers, state UI wages/rates, officer/member elections, quarterly wage reports and payments. `nd-payroll` owns wage income-tax withholding and employer reconciliation. FICA/FUTA and federal credit-reduction questions belong to `us-form-941-940-payroll`; workers' compensation is a separate state regime. This skill does not turn the absence of an employee UI deduction into proof that no other payroll obligation exists.
 
-- **No employee-side social contribution.** No state disability insurance (contrast NY), no paid-family-leave payroll tax (contrast NY, WA), no state retirement contribution. FICA/FUTA are federal and outside this skill. _(N.D.C.C. Ch. 52-8; corroborated by absence of any employee payroll levy in the ND Tax Commissioner materials, read 2026-10-25)_
-- **UI taxable wage base.** The base "is determined yearly and equals 70% of the calculated statewide average annual payroll" -- Job Service ND, "Determination of Taxable Wage Base," verified 2026-10-25 (US-ND-dr-jsnd-learn-about-taxes.txt). The **2025 base is $45,100** (US-ND-dr-jsnd-uitaxrates2025.pdf: "2025 Taxable Wage Base is $45,100"); the **2026 base is $46,600** (US-ND-dr-jsnd-uitaxrates2026.pdf: "2026 Taxable Wage Base is $46,600").
-- **New employer rates.** Per the JSND rate schedules: 2025 -- non-construction **1.03%** (positive balance) / **6.09%** (negative balance), construction **9.69%** (US-ND-dr-jsnd-uitaxrates2025.pdf); 2026 -- non-construction **1.00%** / **6.07%**, construction **9.67%** (US-ND-dr-jsnd-uitaxrates2026.pdf). _(jobsnd.com "Learn About Taxes" confirms new-employer classification mechanics, verified 2026-10-25)_
-- **Experience rating.** Rates are re-determined each calendar year based on the employer's history as of the preceding June 30; an employer remains a "new employer" until liable for the period ending the prior June 30 (typically 3 full fiscal years). _(jobsnd.com/unemployment-business-tax/learn-about-taxes, verified 2026-10-25)_
-- **Rate range for experience-rated employers:** 2025 schedules run **0.08% (positive-balance minimum) to 9.69% (negative-balance maximum)** (US-ND-dr-jsnd-uitaxrates2025.pdf rate tables). Statutory floor: "The positive employer minimum rate in the first rate schedule of the table of rate schedules is one-hundredth of one percent" (US-ND-dr-nd-t52c04.pdf, § 52-04-05(5)(b)).
+## Ask the client first
 
-### 3. Base and adjustments
+1. Employer entity, registration/coverage dates, account and notice; construction or nonconstruction status.
+2. Workers/services/locations, officer/LLC ownership and approved exclusions, including family-employment facts.
+3. 2026 quarterly paid wages and prior same-employer wages, predecessor and interstate wage-credit evidence.
+4. Positive/negative account status, assigned rate, prior reports and benefits/experience transfers.
+5. Contribution versus reimbursement election, UI EASY access, notices, payments and construction risk-protection requirements.
 
-- Base: each employee's wages up to the calendar-year taxable wage base. Wages follow the Ch. 52-8 definition (remuneration for personal services; exclusions per statute).
-- Contributions are computed per employee: taxable wages × assigned rate. No employee withholding, no employee W-2 Box 14 state social line (contrast NY PFL/SDI).
-- Voluntary contribution account (VCA) and reimbursement options exist for eligible employers (US-ND-jsnd4036.pdf, "VOLUNTARY CONTRIBUTIONS": "Employers may make voluntary contributions to their Unemployment Insurance" accounts; reimbursement option per US-ND-dr-jsnd-learn-about-taxes.txt).
+## The method, step by step
 
-### 4. Deadlines
+### Rates, bands and thresholds
 
-- **Quarterly Form SFN 41263** (Employer's Contribution and Wage Report): due the **last day of the month following the calendar quarter** (Apr 30, Jul 31, Oct 31, Jan 31). Mandatory electronic filing via **UI EASY** for all employers. _(existing `nd-payroll` skill, corroborated by jobsnd.com "File Reports" hub, verified 2026-10-25)_
-- Annual rate notices issue in November/December for the following calendar year (existing `nd-payroll` skill; protest window per notice).
-- New-employer liability begins with the first quarter in which the coverage test is met; register via Job Service ND.
+| 2026 item / condition | Rate / threshold | Official source |
+| --- | --- | --- |
+| Annual taxable wage base per employee | USD 46,600; 70% of statewide average annual wage | [2026 schedule](https://www.jobsnd.com/sites/www/files/documents/jsnd-documents/uitaxrateschedules2026.pdf) |
+| Employee contribution | None; employer contributions may not be deducted from wages | [52-04-01](https://ndlegis.gov/cencode/t52c04.pdf) |
+| New nonconstruction, positive balance | 1.00% | [2026 schedule](https://www.jobsnd.com/sites/www/files/documents/jsnd-documents/uitaxrateschedules2026.pdf) |
+| New nonconstruction, negative balance | 6.07% | [2026 schedule](https://www.jobsnd.com/sites/www/files/documents/jsnd-documents/uitaxrateschedules2026.pdf) |
+| New construction, either balance | 9.67% | [2026 schedule](https://www.jobsnd.com/sites/www/files/documents/jsnd-documents/uitaxrateschedules2026.pdf) |
+| New category on 2026 schedule | Nonconstruction covered after June 30, 2024; construction covered after June 30, 2023 | [2026 schedule](https://www.jobsnd.com/sites/www/files/documents/jsnd-documents/uitaxrateschedules2026.pdf) |
+| Experience status | At least six nonconstruction or ten construction coverage quarters before October for next calendar year's experience rating; notice controls | [Job Service explanation](https://www.jobsnd.com/unemployment-business-tax/learn-about-taxes) |
+| Ordinary liability | One or more workers in 20 weeks or USD 1,500 quarterly; special agricultural/domestic/nonprofit/public/tribal rules differ | [Job Service](https://www.jobsnd.com/unemployment-business-tax/learn-about-taxes) |
 
-### 5. Penalties and interest
+The 2026 schedule gives these reserve-ratio bands. **Positive/negative refers first to the cumulative account balance**, not simply the sign of the six-year reserve ratio; a positive-schedule employer can have a negative six-year ratio.
 
-- Late quarterly reports/contributions: "Contributions unpaid when due must bear interest at the rate of one and one-half percent per month or fraction thereof from due date"; failure to file a contribution and wage report carries "a penalty equal to five percent of the contributions due for each month or part of a month," first-month minimum $25 (subsequent reports $100), capped at 20% of contributions and $500 per report (US-ND-dr-nd-t52c04.pdf, § 52-04-11).
-- Fraudulent reporting and misclassification (employee vs independent contractor) carry separate Ch. 52-8 sanctions; construction project risk protection rules apply to contractors (jobsnd.com "Comply with Construction Project Risk Protection," verified 2026-10-25).
+| Positive schedule reserve ratio | 2026 rate | Official source |
+| --- | --- | --- |
+| -0.90% and less | 1.10% | [2026](https://www.jobsnd.com/sites/www/files/documents/jsnd-documents/uitaxrateschedules2026.pdf) |
+| -0.89% through -0.07% | 0.91% | [2026](https://www.jobsnd.com/sites/www/files/documents/jsnd-documents/uitaxrateschedules2026.pdf) |
+| -0.06% through +0.22% | 0.76% | [2026](https://www.jobsnd.com/sites/www/files/documents/jsnd-documents/uitaxrateschedules2026.pdf) |
+| +0.23% through +0.37% | 0.63% | [2026](https://www.jobsnd.com/sites/www/files/documents/jsnd-documents/uitaxrateschedules2026.pdf) |
+| +0.38% through +0.47% | 0.53% | [2026](https://www.jobsnd.com/sites/www/files/documents/jsnd-documents/uitaxrateschedules2026.pdf) |
+| +0.48% through +0.57% | 0.44% | [2026](https://www.jobsnd.com/sites/www/files/documents/jsnd-documents/uitaxrateschedules2026.pdf) |
+| +0.58% through +0.62% | 0.34% | [2026](https://www.jobsnd.com/sites/www/files/documents/jsnd-documents/uitaxrateschedules2026.pdf) |
+| +0.63% through +0.68% | 0.25% | [2026](https://www.jobsnd.com/sites/www/files/documents/jsnd-documents/uitaxrateschedules2026.pdf) |
+| +0.69% through +0.74% | 0.16% | [2026](https://www.jobsnd.com/sites/www/files/documents/jsnd-documents/uitaxrateschedules2026.pdf) |
+| +0.75% and over | 0.07% | [2026](https://www.jobsnd.com/sites/www/files/documents/jsnd-documents/uitaxrateschedules2026.pdf) |
 
-### 6. Cross-border and federal overlay
+| Negative schedule reserve ratio | 2026 rate | Official source |
+| --- | --- | --- |
+| -8.46% and less | 9.67% | [2026](https://www.jobsnd.com/sites/www/files/documents/jsnd-documents/uitaxrateschedules2026.pdf) |
+| -8.45% through -4.74% | 9.27% | [2026](https://www.jobsnd.com/sites/www/files/documents/jsnd-documents/uitaxrateschedules2026.pdf) |
+| -4.73% through -3.68% | 8.87% | [2026](https://www.jobsnd.com/sites/www/files/documents/jsnd-documents/uitaxrateschedules2026.pdf) |
+| -3.67% through -2.80% | 8.47% | [2026](https://www.jobsnd.com/sites/www/files/documents/jsnd-documents/uitaxrateschedules2026.pdf) |
+| -2.79% through -1.54% | 8.07% | [2026](https://www.jobsnd.com/sites/www/files/documents/jsnd-documents/uitaxrateschedules2026.pdf) |
+| -1.53% through -0.82% | 7.67% | [2026](https://www.jobsnd.com/sites/www/files/documents/jsnd-documents/uitaxrateschedules2026.pdf) |
+| -0.81% through -0.50% | 7.27% | [2026](https://www.jobsnd.com/sites/www/files/documents/jsnd-documents/uitaxrateschedules2026.pdf) |
+| -0.49% through +0.61% | 6.87% | [2026](https://www.jobsnd.com/sites/www/files/documents/jsnd-documents/uitaxrateschedules2026.pdf) |
+| +0.62% through +5.20% | 6.47% | [2026](https://www.jobsnd.com/sites/www/files/documents/jsnd-documents/uitaxrateschedules2026.pdf) |
+| +5.21% and over | 6.07% | [2026](https://www.jobsnd.com/sites/www/files/documents/jsnd-documents/uitaxrateschedules2026.pdf) |
 
-- Multi-state employers: ND UI applies to services performed in ND; reciprocal-state wage rules do not affect UI (UI follows the work-location/coverage tests, not income-tax reciprocity).
-- Federal FUTA credit reduction interacts with the state UI system; ND's credit-reduction status each year: check the DOL list (federal skill).
-- No state PFL/SDI means no interaction with the federal FMLA beyond unpaid-leave protection.
+1. Register through the state login/UI EASY within 20 days after first employing workers. Ordinary coverage, acquisition/FUTA, government/tribal immediate coverage, nonprofit four-workers/20 weeks, agricultural USD 20,000-or-ten-workers/20 weeks and domestic USD 1,000-quarter rules must be checked for the employer type. Use chapter 52-01 coverage and 52-04 financing; the old reference to a nonexistent employer-financing chapter 52-8 is not the operative authority.
+2. Establish covered employment. Officers and specified LLC managers are employees; a manager is covered if the LLC is taxed as a corporation or the manager is not a member. Certain owners with at least 25% may jointly apply for exclusion within 60 days of formation or in January. Family exclusions do not automatically apply to corporations/covered LLCs and require the relationship to every partner where relevant. Sole proprietors/partners are not their own employees.
+3. Determine wages under 52-01-01, including remuneration before employee deductions. Employer-qualified health/retirement contributions have separate exclusions; the federal income-tax wage figure is not automatically the UI figure. Establish localized employment; MN/MT income-tax reciprocity does not transfer UI coverage merely because of residence.
+4. Per employee, taxable current wages are min(current covered wages, max(46,600-prior same-employer covered wages,0)). Report gross and current-quarter excess separately; **do not accumulate prior quarters' excess** in the current report. Verify eligible predecessor/interstate credits rather than assuming every prior employer's wages count.
+5. Apply the exact 2026 assigned rate. The agency uses cumulative balance to choose the schedule, then six-year reserve divided by average three-year taxable payroll for the rate ratio. New-employer duration differs for construction/nonconstruction; the old blanket three-full-fiscal-years/June 30 description is superseded by the read agency conditions and 2026 dates.
+6. Review account transfers, voluntary contributions and reimbursement elections. Transfers can be mandatory for common ownership/control. Job Service permits voluntary contributions from new-rate assignment through April 30 under its stated conditions; determine whether payment actually reduces the rate before making it. Reimbursable government/tribal/nonprofit employers use their own billing method. Construction-project risk protection is separate from ordinary contribution arithmetic.
 
-### 7. Worked examples
+### Historical baseline retained, not 2026 rates
 
-**Example 1 -- two new non-construction employees, 2025 base.** New employer (non-construction), rate 1.02%, 2025 taxable wage base $45,100, two employees each earning over the base.
+The old examples used 2025 USD 45,100 with 1.02% and 6.09% labelled construction, producing USD 920.04 for two employees and USD 2,746.59 for one. These arithmetic results are preserved as **obsolete assumptions**, not verified 2025 filing instructions: the repaired body itself reported 2025 rates 1.03% positive nonconstruction/6.09% negative nonconstruction and 9.69% construction. The 2024 USD 43,800 and historic 0.08%-9.97% range (the former body also stated a 2025 0.08%-9.69% range and a 0.01% statutory floor) are older comparisons only. 2025 schedule amounts beyond that existing record have not been re-read here; do not use the incorrect 1.02%/construction 6.09% examples for any filing. Use verified 2026 rates above.
+
+## Boundary and exception table
+
+| Facts | Treatment |
+| --- | --- |
+| New nonconstruction with negative balance | 6.07%, not the 1.00% positive new rate |
+| New construction | 9.67% for either account balance |
+| Owner/manager with 25% holding | Exclusion is application/eligibility-dependent, not automatic |
+| No wages in an active account | Quarterly zero report still required |
+| MN/MT reciprocal wages | Income withholding exemption does not decide UI coverage |
+| Reimbursable or acquired business | Establish election/experience transfer and possible predecessor liability |
+
+## Worked cases
+
+**Case 1.** Invented new positive-balance nonconstruction employer has two covered employees each paid above USD 46,600 in 2026. Total taxable wages 93,200 at 1.00% gives USD 932 employer UI, with no employee deduction. The old USD 920.04 example cannot be carried into 2026.
 
 ```oa-check
-name: nd ui new employer two employees
+name: ND 2026 new positive nonconstruction two employees
 inputs:
-  base: 45100
+  base: 46600
   employees: 2
-  rate: 0.0102
+  rate: 0.01
 steps:
-  - tax: base * employees * rate
+  - taxable: base * employees
+  - contribution: taxable * rate
 expected:
-  tax: 920.04
+  taxable: 93200
+  contribution: 932
 ```
 
-**Example 2 -- new construction employer.** Same base, construction new-employer rate 6.09%, one employee over the base.
+**Case 2, construction decision.** Invented new construction employer pays one employee above the base. USD 46,600×9.67%= USD 4,506.22. Applying the new negative nonconstruction 6.07% would produce USD 2,828.62, understating USD 1,677.60.
 
 ```oa-check
-name: nd ui new construction employer
+name: ND 2026 construction versus nonconstruction category
 inputs:
-  base: 45100
-  rate: 0.0609
+  base: 46600
+  construction_rate: 0.0967
+  nonconstruction_negative_rate: 0.0607
 steps:
-  - tax: base * rate
+  - construction: base * construction_rate
+  - wrong_category: base * nonconstruction_negative_rate
+  - shortfall: construction - wrong_category
 expected:
-  tax: 2746.59
+  construction: 4506.22
+  wrong_category: 2828.62
+  shortfall: 1677.6
 ```
 
-(2026 figures will differ once Job Service ND publishes the 2026 base and schedules -- recompute before relying.)
+## When to refuse or refer
 
-### 8. Ask the client first
+Refer classification, mixed interstate services, acquisitions, reimbursement elections, owner exclusions, construction risk protection and rate protests. Do not deduct UI from wages or infer a complete no-SDI/PFL/retirement mandate conclusion from an absence search. Such unrelated benefit/leave mandates remain separately unconfirmed; federal payroll stays in `us-form-941-940-payroll`.
 
-1. Is the employer construction or non-construction? (Different new-employer rate and project risk-protection rules.)
-2. Are workers correctly classified as employees for Ch. 52-8? (Misclassification is the top ND UI audit issue.)
-3. Reimbursement or contribution financing -- which election is on file?
-4. Multi-state: are ND wages being reported to another state's UI system by mistake?
-5. Has the 2026 rate notice been reviewed and, if wrong, protested within the notice window?
+## Filing and payment
 
-### 9. Sources
+Use UI EASY state-login registration/account access. Select the quarter, enter required employee wage detail, total/gross/current-quarter excess and taxable wages, apply the notice rate, submit and retain acceptance. All required reports and contribution payments must be electronic under 52-04-01.1. The current agency also permits its approved secure-file-transfer reporting channel; the old library handbook's paper/magnetic-tape instructions are historical and do not override current law.
 
-- Job Service ND -- Learn About Taxes (taxable wage base formula, new-employer and experience-rating mechanics): <https://www.jobsnd.com/unemployment-business-tax/learn-about-taxes> -- 200 with text, 2026-10-25.
-- Job Service ND -- site root and unemployment-business-tax hub (file reports, employer's guide, construction risk protection): <https://www.jobsnd.com/> -- 200, 2026-10-25.
-- Existing `nd-payroll` skill (2025 wage base $45,100; SFN 41263 mechanics; new-employer rates) -- read 2026-10-25; the 2025 base and rates are now archived as US-ND-dr-jsnd-uitaxrates2025.pdf.
-- N.D.C.C. Ch. 52-04 (rate determination; penalties and interest): archived as US-ND-dr-nd-t52c04.pdf. Full Ch. 52-8 text: see the "Not yet confirmed:" paragraph below -- ndlegis.nd.gov DNS failure on 2026-10-25.
-- 2026 ND UI taxable wage base and rate schedules: archived as US-ND-dr-jsnd-uitaxrates2026.pdf ($46,600 base; new-employer and experience-rate tables).
+Quarterly report/payment is due by the last day of the following month: April 30, July 31, October 31, January 31, with next-business-day relief as applicable. File zero wages while active. Correct the erroneous quarter through the agency correction process/SFN 41270 rather than adjusting an unrelated current quarter. The inherited SOC-code mandate, annual rate-notice timing/SFN 41216 and automatic 1% delinquency-rate uplift require current confirmation; follow the actual notice.
+
+Under 52-04-11, unpaid contributions accrue 1.5% per month/part from due date. Late-report penalty is 5% per month/part; first month minimum USD 25 for the first delinquent report in a calendar year and USD 100 for later delinquent reports. The statute separately limits subsequent-month penalties to 20% and total penalty to USD 500 per report; do not simplify this into a universal 20% total cap. Circumstances beyond employer control may support waiver. Misclassification/fraud and personal-liability provisions require separate review.
+
+## Completion checklist
+
+- Coverage, employer category, balance and actual 2026 notice established.
+- Employee wage base and gross/excess amounts reconcile.
+- Owner exclusions/experience transfers supported.
+- Electronic report, separate payment and zero-quarter duty satisfied.
+- Acceptance, posted payment and any protests/corrections retained.
 
 <!-- openaccountants-cta-block -->
+
 
 ---
 
@@ -107,65 +161,18 @@ This guide is maintained by the OpenAccountants network -- accountants who put t
 - Use it in your AI: 
 - Talk to a verified accountant: https://calendly.com/openaccountants-info/30min
 
-## Who this applies to
-
-No figures stated in this section.
-
-## Rates, bands and thresholds
-
-No figures stated in this section.
-
-## The taxable base
-
-No figures stated in this section.
-
-## Deadlines and filing
-
-No figures stated in this section.
-
-## Penalties and interest
-
-No figures stated in this section.
-
-## Cross-border points
-
-No figures stated in this section.
-
-## Worked examples
-
-No figures stated in this section.
-
-## Ask the client first
-
-No figures stated in this section.
-
 ## Sources
 
 | Source | URL | Read on |
 | --- | --- | --- |
-| US-ND-dr-nd-booklet2024.pdf | https://www.tax.nd.gov/sites/www/files/documents/forms/individual/2024-iit/2024-individual-income-tax-booklet.pdf | 2026-10-28 |
-| US-ND-dr-nd-withholding-2025.pdf | https://www.tax.nd.gov/sites/www/files/documents/misc-discuss-folder/Final_2025%20Income%20Tax%20Withholding%20Rates%20%20Instructions.pdf | 2026-10-28 |
-| US-ND-dr-ndwr.pdf | https://www.tax.nd.gov/sites/www/files/documents/forms/business/ndwrfillable.pdf | 2026-10-28 |
-| US-ND-dr-nd-walsh-county-notice-2026.pdf | https://www.tax.nd.gov/sites/www/files/documents/forms/business/sales-use/local-jurisdiction-rates/2026-jurisdiction/notice-to-walsh-county-permit-holders.pdf | 2026-10-28 |
-| US-ND-dr-t57c51-1.pdf | https://ndlegis.gov/cencode/t57c51-1.pdf | 2026-10-28 |
-| US-ND-dr-usc26-1.txt | https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title26-section1&num=0&edition=prelim | 2026-10-28 |
-| US-ND-dr-ndcc-57-39-2.pdf | https://ndlegis.gov/cencode/t57c39-2.pdf | 2026-10-28 |
-| US-ND-tap.html | https://tap.tax.nd.gov/?Check=1 | 2026-10-28 |
+| Job Service 2026 rate schedule. Read for 46600 base, all positive/negative bands, new rates and precise new-employer coverage dates. | https://www.jobsnd.com/sites/www/files/documents/jsnd-documents/uitaxrateschedules2026.pdf |2026-11-13 |
+| Job Service Learn About Taxes. Read for registration 20 days, coverage, owner exclusions, six/ten-quarter experience and transfers/reimbursement. | https://www.jobsnd.com/unemployment-business-tax/learn-about-taxes |2026-11-13 |
+| Job Service Reporting and Payment. Read for schedule selection, reserve formula, current-quarter excess, electronic reports/payment, localization and voluntary contributions. | https://www.jobsnd.com/unemployment-business-tax/about-reporting-and-payment-taxes |2026-11-13 |
+| N.D.C.C.52-04. Read for employer-only contributions, mandatory electronic filing/payment, financing, penalties and interest. | https://ndlegis.gov/cencode/t52c04.pdf |2026-11-13 |
+| N.D.C.C.52-01. Read for covered employment/wage definitions and exclusions. | https://ndlegis.gov/cencode/t52c01.pdf |2026-11-13 |
+| Archived state-library Employer Handbook. Read for SFN 41263, zero reports, quarter deadlines and SFN 41270 corrections; outdated filing channels superseded by current law. | https://www.library.nd.gov/statedocs/JobService/jsnd4036.pdf |2026-11-13 |
 
-Not yet confirmed: figures in this skill lack archived line-citations.
-- Full N.D.C.C. Ch. 52-8 employer-financing text beyond Ch. 52-04 (archived as US-ND-dr-nd-t52c04.pdf) remains unarchived.
-- Historical 2023 UI rate range 0.08%--9.97% appears in US-ND-dr-nd-ui-databook.pdf but predates the archived 2024--2026 schedules.
-
-
-| Source | URL | Read on |
-| --- | --- | --- |
-| (see "Not yet confirmed:" paragraph) | -- | 2026-10-28 |
-
-No figures stated in this section.
-
-## Talk to a verified accountant
-
-No figures stated in this section.
+Not yet confirmed: each employer's assigned notice and eligibility/elections; inherited SOC-code mandate, automatic 1% delinquency-rate addition and notice-number/timing details;2025 historical rates not freshly read; unrelated state disability/paid-leave/retirement mandate assertions. Direct Job Service requests returned 403 and the ordinary browser PDF view was blank; the complete official 2026 PDF and agency explanations were read through the web reader and archived outside Git. No employee-side UI is imposed by this computation.
 
 ## Today's figures and who stands behind this skill
 

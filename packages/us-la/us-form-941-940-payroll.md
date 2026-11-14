@@ -1,824 +1,457 @@
 ---
 name: us-form-941-940-payroll
-description: Tier 2 US federal content skill for employer payroll tax compliance — Forms 941 (quarterly), 940 (annual FUTA), W-2 (employee), W-3 (SSA transmittal). Covers tax year 2025 including the $176,100 Social Security wage base, the 0.9% Additional Medicare withholding threshold, monthly vs semiweekly vs next-day deposit schedules under IRC §6302, the $7,000 FUTA wage base and 5.4% state UI credit (0.6% effective in non-credit-reduction states), W-2 Box 1/3/5 reconciliation traps with §125, HSA, retirement, and the 10+ W-2 electronic-filing mandate from the 2024 IRS final regs.
+description: Run 2026 US federal employer payroll tax compliance for businesses with W-2 employees. Form 941 (quarterly) line by line, Form 940 (annual FUTA) with Schedule A and the final 2026 California credit reduction of 1.5%, Forms W-2 and W-3 with the new 2026 box 12 codes TP, TT and TA and box 14b, the monthly or semiweekly deposit schedule under the lookback rule, the USD 100,000 next-day rule, Additional Medicare Tax withholding above USD 200,000, supplemental wage withholding at 22% and 37% over USD 1 million, the 2026 Form W-4 and the failure-to-deposit penalties. 2026 figures from IRS Pub. 15 (2026), including the Social Security wage base of USD 184,500, 6.2% and 1.45% each side, and FUTA at 6.0% on the first USD 7,000 with up to 5.4% state credit (0.6% net). Trigger on "Form 941", "Form 940", "FUTA", "payroll tax deposit", "semiweekly depositor", "lookback period", "W-2", "W-3", "Additional Medicare withholding", "Schedule B", "credit reduction state". Federal only.
+version: "3.0"
 jurisdiction: US
-tax_year: 2025
-last_updated: 2026-07-13
-source_checked: 2026-10-17
+tax_year: 2026
+last_updated: 2026-11-13
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
+type: computation
 ---
 
-# US Form 941 940 Payroll
+# US federal employer payroll: Forms 941, 940, W-2 and W-3, tax year 2026
 
-## 1. Scope
+> **Source-cited draft.** Built from IRS Pub. 15 (2026), Pub. 15-T (2026), Form 941 (Rev. March 2026) and its instructions, the 2025 Instructions for Form 940 and Schedule A (Form 940), the 2026 General Instructions for Forms W-2 and W-3, the 2026 Form W-4, the 2026 Instructions for Form 8027, the IRS Voluntary Classification Settlement Program page and the U.S. Department of Labor's final 2026 FUTA credit reductions, read on 2026-11-13. No accountant has reviewed it. All outputs must be reviewed by a qualified tax professional before any return is filed or deposit made.
 
-This skill covers US federal employer payroll tax compliance for tax year 2025 for businesses that have one or more W-2 employees. It is the companion to `us-1099-nec-issuance` (which handles independent contractor reporting) and `us-schedule-c-and-se-computation` (which handles the owner's own SE tax when the owner is a sole proprietor or single-member LLC disregarded for federal tax).
+**Answer first.** For 2026, Social Security tax is 6.2% from the employee and 6.2% from the employer on wages up to **USD 184,500** per employee per employer; Medicare tax is 1.45% each side with no cap; the employer withholds a further 0.9% Additional Medicare Tax from an employee's wages above **USD 200,000** in the calendar year (no employer match). FUTA is 6.0% on the first **USD 7,000** of each employee's wages, less a state credit of up to 5.4%, so 0.6% net, except in California, a credit reduction state for 2026 at 1.5% (2.1% net). A Form 941 filer is a monthly depositor for 2026 if its Form 941 line 12 totals for 1 July 2024 to 30 June 2025 were USD 50,000 or less, and a semiweekly depositor if more. A liability of USD 100,000 or more on any day is deposited the next business day. 2026 Forms W-2 go to employees and to the SSA by **1 February 2027**.
 
-In scope:
+## Scope and who this is for
 
-- Form 941 (Employer's Quarterly Federal Tax Return) — federal income tax withholding, employer + employee Social Security tax, employer + employee Medicare tax, and the 0.9% Additional Medicare Tax employer withholding obligation
-- Form 940 (Employer's Annual Federal Unemployment (FUTA) Tax Return) — including Schedule A multi-state credit reduction computation
-- Form W-2 (Wage and Tax Statement) — preparation for each employee, the Box 1 vs Box 3 vs Box 5 reconciliation, Box 12 codes, and Box 14 free-text use
-- Form W-3 (Transmittal of Wage and Tax Statements) — the paper transmittal to SSA
-- Form W-4 (2020-and-later redesigned employee withholding certificate)
-- Deposit schedule determination — the lookback rule, monthly vs semiweekly, the $100,000 next-day deposit rule, EFTPS mechanics
-- Form 944 (annual return for very small employers), Form 943 (agricultural employers), Form 945 (nonpayroll income tax withholding) — referenced for scope routing
-- Form 8027 (tip reporting for large food and beverage establishments) — referenced
-- IRC §6656 deposit penalty tiers (2%, 5%, 10%, 15%)
-- The 2024 IRS final regulations under T.D. 9972 reducing the electronic-filing threshold from 250 to 10 information returns
-- Worker classification at a high level (refers to `us-1099-nec-issuance` for the §3121(d) common-law control test and the DOL economic-realities test under the 2024 Worker Classification rule at 29 C.F.R. Part 795)
+In scope: a US business (sole proprietor, partnership, LLC or corporation) with one or more common-law employees paid wages in 2026, for its federal employment taxes:
 
-Out of scope (refusal-eligible):
+- Form 941, Employer's Quarterly Federal Tax Return: federal income tax withheld, Social Security and Medicare tax (both halves), Additional Medicare Tax withheld, current-quarter adjustments, and Schedule B for semiweekly depositors.
+- Form 941-X corrections (outline only).
+- Deposit schedule: the lookback rule, monthly or semiweekly, the USD 100,000 next-day rule, the USD 2,500 payment-with-return exception, electronic deposit.
+- Form 940, Employer's Annual Federal Unemployment (FUTA) Tax Return, and Schedule A (Form 940) for credit reduction states.
+- Forms W-2, W-3, W-2c and W-3c: the three wage boxes, box 12 codes including the 2026 codes, box 14a and 14b.
+- Form W-4 (2026) administration and supplemental wage withholding.
+- The failure-to-deposit, failure-to-file, failure-to-pay and trust fund recovery penalties.
+- Routing only: Forms 944, 943 and 945, Form 8027, worker classification.
 
-- State income tax withholding (covered separately by state-specific skills such as `ca-540-individual-return`'s payroll-adjacent state filings)
-- State unemployment insurance (SUI) returns — covered by state skills; the federal skill computes only the FUTA portion and the credit for state UI taxes paid
-- Local payroll taxes (city, county, school district)
-- Multi-employer pension plan reporting
-- Form 5500 series (employee benefit plan returns)
-- Affordable Care Act employer mandate forms 1094-C and 1095-C
-- Garnishments, child support withholding orders, and other non-tax payroll deductions
-- Non-US employees (resident aliens are in scope; nonresident aliens, Form 1042, Form 8233 chapter 3 withholding are out of scope)
-- Statutory employees (limited touch — see §11)
-- Household employees on Schedule H (Form 1040) — out of scope; the employer is the household, not a business
-- Family employee exemptions under §3121(b)(3) (parent employing child under 18, etc.) — referenced only
+Out of scope, and where it goes:
 
-This skill assumes a credentialed reviewer (CPA, EA, or attorney) will review all output before any return is signed or any deposit is made on the taxpayer's behalf.
+| Topic | Skill |
+| --- | --- |
+| State income tax withholding, state unemployment (SUTA) returns and rates, state disability and paid leave, local payroll taxes | `us-state-payroll-matrix` |
+| New-hire reporting | `us-state-new-hire-reporting-matrix` |
+| Independent contractors, Form 1099-NEC, the W-9, backup withholding and its rate | `us-1099-nec-issuance` |
+| Worker classification analysis (common-law test) beyond the outline here | `us-1099-nec-issuance` |
+| Wages paid to the owner's own children | `us-hiring-your-children-and-accountable-plans` |
+| The owner's own self-employment tax (no Form 941 for a sole proprietor's own earnings) | `us-schedule-c-and-se-computation` |
+| S corporation owner-employee salary level | `us-s-corp-election-decision` |
+| The qualified small business payroll tax credit for research (election amount, Form 6765) | `us-r-and-d-section-174-and-41` |
+| The employee's deductions for qualified tips and qualified overtime (amounts and phase-outs) | `us-federal-income-tax-return-1040` |
+| Trust fund recovery penalty defence, collections, penalty appeals | `us-irs-collections-and-controversy` |
+| Household employees (Schedule H), U.S. territories, nonresident alien withholding (chapter 3), Forms 1094-C and 1095-C, Form 5500, garnishments | Refer |
 
-## 2. Form 941 — Employer's Quarterly Federal Tax Return
+## Ask the client first
 
-### 2.1 Purpose
+1. **Form 941 line 12 for each quarter from 1 July 2024 to 30 June 2025, as originally filed** (not as later corrected), and whether the business filed Form 944 in 2024 or 2025. This sets the 2026 deposit schedule.
+2. **Did any single day's accumulated liability reach USD 100,000** in 2025 or 2026? That makes the employer semiweekly for the rest of that year and the next.
+3. **Payroll register by pay date** (not by period worked): gross wages, tips reported, supplemental payments, federal income tax withheld, and each pre-tax deduction by type (401(k), Roth, section 125 health, dependent care, HSA).
+4. **Is there a written section 125 cafeteria plan document?** Without one, the pre-tax health and HSA deductions are not excluded.
+5. **Year-to-date wages per employee**, including any wages paid by a predecessor employer that sold the business to the client during 2026, and any change of payroll provider during the year.
+6. **States where each employee works** and whether state unemployment tax was paid in full and on time. Any employee working in California?
+7. **Tipped employees** (and their Treasury Tipped Occupation Code), employees paid FLSA overtime, and any employer contributions to a Trump account from 4 July 2026.
+8. **Group-term life insurance over USD 50,000**, company cars, fringe benefits, third-party sick pay.
+9. **Current Forms W-4** for every employee, including any claiming exemption, and the date each was received.
+10. **EFTPS enrolment** and the deposit confirmations for every 2026 deposit.
 
-Form 941 reports the wages paid to W-2 employees during the calendar quarter and the federal employment taxes attributable to those wages. The form is filed by virtually every employer that pays wages subject to federal income tax withholding or Social Security and Medicare tax, except those qualifying for Form 944 (very small annual filers), Form 943 (farm employers), or Form 944-SS / 941-SS (US territories — out of scope).
+## The method, step by step
 
-The form has four functional sections:
+### Rates, bands and thresholds
 
-1. Identification and totals (Part 1) — wages, tips, federal income tax withheld, FICA (Social Security + Medicare) wages and tax, and the Additional Medicare withholding
-2. Deposit schedule (Part 2) — confirms monthly or semiweekly depositor status and reports the schedule of liabilities (Schedule B for semiweekly)
-3. Business closure / seasonal indicator (Part 3)
-4. Third-party designee and signature (Parts 4-5)
+| Item | Amount, 2026 | Source |
+| --- | --- | --- |
+| Social Security tax rate, employee, and again employer | 6.2% | [IRS Pub. 15 (2026), What's New](https://www.irs.gov/pub/irs-pdf/p15.pdf) |
+| Social Security wage base, per employee per employer | USD 184,500 | [IRS Pub. 15 (2026), What's New](https://www.irs.gov/pub/irs-pdf/p15.pdf) |
+| Medicare tax rate, employee, and again employer; no wage base | 1.45% | [IRS Pub. 15 (2026), What's New](https://www.irs.gov/pub/irs-pdf/p15.pdf) |
+| Form 941 line 5a and 5b multiplier (both halves of Social Security) | 0.124 | [Form 941 (Rev. March 2026)](https://www.irs.gov/pub/irs-pdf/f941.pdf) |
+| Form 941 line 5c multiplier (both halves of Medicare) | 0.029 | [Form 941 (Rev. March 2026)](https://www.irs.gov/pub/irs-pdf/f941.pdf) |
+| Additional Medicare Tax withholding, employee only, line 5d multiplier | 0.009 (0.9%) | [Form 941 (Rev. March 2026)](https://www.irs.gov/pub/irs-pdf/f941.pdf) |
+| Additional Medicare Tax: employer withholds on wages in excess of | USD 200,000 in the calendar year | [Instructions for Form 941 (Rev. March 2026), line 5d](https://www.irs.gov/pub/irs-pdf/i941.pdf) |
+| Additional Medicare Tax owed by the employee, married filing jointly, above | USD 250,000 | [26 U.S.C. 1401(b)(2)(A)(i)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap2-sec1401.htm) |
+| Additional Medicare Tax owed by the employee, married filing separately, above | USD 125,000 | [IRS Additional Medicare Tax questions and answers](https://www.irs.gov/businesses/small-businesses-self-employed/questions-and-answers-for-the-additional-medicare-tax) |
+| Supplemental wage withholding, optional flat rate | 22% | [IRS Pub. 15 (2026), What's New and section 7](https://www.irs.gov/pub/irs-pdf/p15.pdf) |
+| Supplemental wage withholding, mandatory on supplemental wages above USD 1 million in the year | 37% | [IRS Pub. 15 (2026), section 7](https://www.irs.gov/pub/irs-pdf/p15.pdf) |
+| FUTA tax rate | 6.0% | [IRS Pub. 15 (2026), section 14](https://www.irs.gov/pub/irs-pdf/p15.pdf) |
+| FUTA wage base, per employee | USD 7,000 | [IRS Pub. 15 (2026), section 14](https://www.irs.gov/pub/irs-pdf/p15.pdf) |
+| Maximum credit for state unemployment tax | 5.4% | [IRS Pub. 15 (2026), section 14](https://www.irs.gov/pub/irs-pdf/p15.pdf) |
+| FUTA rate after the maximum credit | 0.6% | [IRS Pub. 15 (2026), section 14](https://www.irs.gov/pub/irs-pdf/p15.pdf) |
+| FUTA credit reduction, California, 2026 (final) | 1.5% (0.015) | [U.S. DOL, Final 2026 FUTA Credit Reductions](https://oui.doleta.gov/unemploy/docs/final_credit_states_2026.xlsx) |
+| FUTA credit reduction, U.S. Virgin Islands, 2026 (final; advances repaid) | 0 | [U.S. DOL, Final 2026 FUTA Credit Reductions](https://oui.doleta.gov/unemploy/docs/final_credit_states_2026.xlsx) |
+| FUTA deposit required when the quarter's liability (with carry-forward) is over | USD 500 | [IRS Pub. 15 (2026), section 14](https://www.irs.gov/pub/irs-pdf/p15.pdf) |
+| FUTA general test: wages in any calendar quarter of 2025 or 2026 of | USD 1,500 or more | [IRS Pub. 15 (2026), section 14](https://www.irs.gov/pub/irs-pdf/p15.pdf) |
+| FUTA general test, alternative: an employee on some part of a day in | 20 or more different weeks of 2025 or of 2026 | [IRS Pub. 15 (2026), section 14](https://www.irs.gov/pub/irs-pdf/p15.pdf) |
+| Lookback period for 2026 deposits, Form 941 filer | 1 July 2024 to 30 June 2025 | [IRS Pub. 15 (2026), section 11, Table 1](https://www.irs.gov/pub/irs-pdf/p15.pdf) |
+| Monthly depositor if lookback taxes were | USD 50,000 or less (semiweekly if more) | [IRS Pub. 15 (2026), section 11](https://www.irs.gov/pub/irs-pdf/p15.pdf) |
+| Next-day deposit rule: accumulated liability on any day of | USD 100,000 or more | [IRS Pub. 15 (2026), section 11](https://www.irs.gov/pub/irs-pdf/p15.pdf) |
+| Payment with Form 941 allowed if line 12 for the current or prior quarter is less than | USD 2,500 | [IRS Pub. 15 (2026), section 11](https://www.irs.gov/pub/irs-pdf/p15.pdf) |
+| Form 944 for employers expecting a year's employment taxes of | USD 1,000 or less (IRS written notice required) | [IRS Pub. 15 (2026), Reminders](https://www.irs.gov/pub/irs-pdf/p15.pdf) |
+| Tips reported in a month of this amount or more are subject to withholding and FICA | USD 20 | [IRS Pub. 15 (2026), What's New and section 6](https://www.irs.gov/pub/irs-pdf/p15.pdf) |
+| Form W-2 needed even with no tax withheld once wages reach (new for wages paid after 2025) | USD 2,000 | [General Instructions for Forms W-2 and W-3 (2026), What's New](https://www.irs.gov/pub/irs-pdf/iw2w3.pdf) |
+| Electronic filing of Forms W-2 required if the employer files in total at least | 10 information returns | [General Instructions for Forms W-2 and W-3 (2026)](https://www.irs.gov/pub/irs-pdf/iw2w3.pdf) |
+| Employer contribution to an employee's Trump account, excluded, from 4 July 2026, up to | USD 2,500 a year (box 12 code TA) | [General Instructions for Forms W-2 and W-3 (2026), What's New](https://www.irs.gov/pub/irs-pdf/iw2w3.pdf) |
+| Form W-4 (2026) Step 3: per qualifying child under 17 | USD 2,200 | [Form W-4 (2026)](https://www.irs.gov/pub/irs-pdf/fw4.pdf) |
+| Form W-4 (2026) Step 3: per other dependent | USD 500 | [Form W-4 (2026)](https://www.irs.gov/pub/irs-pdf/fw4.pdf) |
+| Household workers: FICA applies to cash wages in 2026 of (routing only) | USD 3,000 or more | [IRS Pub. 15 (2026), What's New](https://www.irs.gov/pub/irs-pdf/p15.pdf) |
+| Election workers: FICA applies to pay in 2026 of (routing only) | USD 2,500 or more | [IRS Pub. 15 (2026), What's New](https://www.irs.gov/pub/irs-pdf/p15.pdf) |
 
-### 2.2 Line-by-line walkthrough (2025 form)
+The Social Security and Medicare rates, the 0.9% and its USD 200,000 withholding trigger, the 22% and 37% supplemental rates and all the FUTA figures are unchanged from 2025. The wage base rose from USD 176,100 (2025) to USD 184,500. The 22%, 37% and the 24% backup rate are now permanent because Public Law 119-21 (the One Big Beautiful Bill Act) made the 2017 individual rates permanent (Pub. 15 (2026), What's New).
 
-- **Line 1 — Number of employees** — Number of employees who received wages, tips, or other compensation for the pay period including March 12 (Q1), June 12 (Q2), September 12 (Q3), or December 12 (Q4). This is a snapshot count, not a quarter total.  _(Form 941 Line 1)_
-- **Line 2 — Total wages** — Total wages, tips, and other compensation (Box 1 federal income tax wages — federal income tax wages, not FICA wages)  _(Form 941 Line 2)_
-- **Line 3 — Federal income tax withheld** — Federal income tax withheld from those wages, tips, and other compensation  _(Form 941 Line 3)_
-- **Line 4 — no wages subject to SS/Medicare checkbox** — Checkbox if no wages, tips, and other compensation are subject to Social Security or Medicare tax (rare — used by certain religious organizations and certain agricultural employers filing 943 instead)  _(Form 941 Line 4)_
-- **Line 5a — Taxable SS wages tax** — Taxable Social Security wages × 0.124 (combined 6.2% employee + 6.2% employer). Column 1 is the wages, Column 2 is the tax. The wages reported here are capped per employee per calendar year at the Social Security wage base ($176,100 for 2025).  _(Form 941 Line 5a)_
-- **Line 5a(i) — Qualified sick leave wages** — Not on the 2025 Form 941. For tax periods beginning after December 31, 2023, the lines used to claim the credit for qualified sick and family leave wages were removed; an employer that pays such wages claims the credit on Form 941-X after filing Form 941.  _([Form 941 Line 5a(i)](https://www.irs.gov/pub/irs-prior/i941--2025.pdf))_
-- **Line 5a(ii) — Qualified family leave wages** — Not on the 2025 Form 941. The family leave credit line was removed for tax periods beginning after December 31, 2023 (see line 5a(i)).  _([Form 941 Line 5a(ii)](https://www.irs.gov/pub/irs-prior/i941--2025.pdf))_
-- **Line 5b — Taxable Social Security tips** — Taxable Social Security tips × 0.124  _(Form 941 Line 5b)_
-- **Line 5c — Taxable Medicare wages and tips** — Taxable Medicare wages and tips × 0.029 (combined 1.45% employee + 1.45% employer). No wage cap.  _(Form 941 Line 5c)_
-- **Line 5d — Additional Medicare withholding** — Taxable wages and tips subject to Additional Medicare Tax withholding × 0.009. This is the employer's withholding obligation only — the employer must withhold an additional 0.9% on each individual employee's wages in excess of $200,000 paid by that employer during the calendar year, regardless of the employee's filing status or other employers. The actual liability for Additional Medicare Tax is reconciled on the employee's Form 8959 attached to Form 1040.  _(Form 941 Line 5d)_
-- **Line 5e — Total Social Security and Medicare tax** — Sum of 5a Col 2 + 5a(i) Col 2 + 5a(ii) Col 2 + 5b Col 2 + 5c Col 2 + 5d Col 2  _(Form 941 Line 5e)_
-- **Line 5f — §3121(q) Notice and Demand** — Section 3121(q) Notice and Demand for tax on unreported tips (rare; used only when the IRS has issued a §3121(q) notice)  _(Form 941 Line 5f; §3121(q))_
-- **Line 6 — Total taxes before adjustments** — Line 3 + Line 5e + Line 5f  _(Form 941 Line 6)_
-- **Line 7 — fractions of cents adjustment** — Current quarter's adjustment for fractions of cents (small rounding plug, typically a few cents)  _(Form 941 Line 7)_
-- **Line 8 — sick pay adjustment** — Current quarter's adjustment for sick pay (third-party sick pay shifts; see Pub 15-A)  _(Form 941 Line 8; Pub 15-A)_
-- **Line 9 — tips and GTL adjustments** — Current quarter's adjustments for tips and group-term life insurance (the GTL > $50k employer FICA paid on behalf of former employees, etc.)  _(Form 941 Line 9)_
-- **Line 10 — Total taxes after adjustments** — Total taxes after adjustments  _(Form 941 Line 10)_
-- **Line 11a — R&D payroll tax credit** — Qualified small business payroll tax credit for increasing research activities (Form 8974). For 2025, the maximum credit is $500,000 per year ($250,000 against Social Security tax under the original IRC §41(h) limit and an additional $250,000 against Medicare tax under the Inflation Reduction Act of 2022 increase, applicable to tax years beginning after 12/31/2022). Form 8974 must be attached.  _(Form 941 Line 11a; Form 8974; IRC §41(h); Inflation Reduction Act of 2022)_
-- **Line 11b-11f — Reserved** — Not on the 2025 Form 941. Line 11 (qualified small business payroll tax credit, Form 8974) is the only credit line, and line 12 subtracts line 11 from line 10.  _([Form 941 Lines 11b-11f](https://www.irs.gov/pub/irs-prior/f941--2025.pdf))_
-- **Line 11g — Total nonrefundable credits** — Not on the 2025 Form 941; line 12 is line 10 minus line 11.  _([Form 941 Line 11g](https://www.irs.gov/pub/irs-prior/f941--2025.pdf))_
-- **Line 12 — Total taxes after adjustments and nonrefundable credits** — Line 10 minus Line 11 (the 2025 form has no line 11g)  _([Form 941 Line 12](https://www.irs.gov/pub/irs-prior/f941--2025.pdf))_
-- **Line 13a — Total deposits for the quarter** — Total deposits for the quarter, including overpayments from prior quarters applied  _(Form 941 Line 13a)_
-- **Line 13b-13f — Reserved** — Not on the 2025 Form 941; line 13 is the only deposits line.  _([Form 941 Lines 13b-13f](https://www.irs.gov/pub/irs-prior/f941--2025.pdf))_
-- **Line 13g — Total deposits and refundable credits** — Not on the 2025 Form 941; balance due and overpayment compare line 12 with line 13.  _([Form 941 Line 13g](https://www.irs.gov/pub/irs-prior/f941--2025.pdf))_
-- **Line 14 — Balance due** — Line 12 minus Line 13, if positive  _([Form 941 Line 14](https://www.irs.gov/pub/irs-prior/f941--2025.pdf))_
-- **Line 15 — Overpayment** — Line 13 minus Line 12, if positive; check box to apply to next return or request refund  _([Form 941 Line 15](https://www.irs.gov/pub/irs-prior/f941--2025.pdf))_
-- **Line 16 — Tax liability for the quarter** — If Line 12 on this return is less than $2,500 or line 12 on the return for the prior quarter was less than $2,500, and no $100,000 next-day deposit obligation arose during the current quarter, no deposit schedule is required: check the first box on Line 16. If $2,500 or more and a monthly depositor, enter monthly liabilities directly on Line 16. If $2,500 or more and a semiweekly depositor, check the box on Line 16 indicating semiweekly and attach Schedule B (Form 941).  _([Form 941 Line 16](https://www.irs.gov/pub/irs-prior/f941--2025.pdf))_
+### Step 1: decide the 2026 deposit schedule (the lookback rule)
 
-### 2.3 Filing due dates
+1. **Lookback period.** For a Form 941 filer, 2026 deposits are set by the four quarters from 1 July 2024 to 30 June 2025. A 2026 Form 941 filer that filed Form 944 in 2024 or 2025 uses calendar year 2024. A Form 943, 944 or 945 filer uses the second preceding calendar year (2024). Source: [Pub. 15 (2026), section 11, Table 1](https://www.irs.gov/pub/irs-pdf/p15.pdf).
+2. **Add Form 941 line 12 for the four quarters as originally reported.** Adjustments on Form 941-X do not change the lookback amount (Pub. 15's own example: USD 45,000 originally reported, later corrected upward by USD 10,000, is still a monthly depositor).
+3. **USD 50,000 or less: monthly.** Deposit the taxes for wages paid in a month by the 15th of the next month.
+4. **More than USD 50,000: semiweekly.** Taxes for paydays on Wednesday, Thursday or Friday are due the following Wednesday; for Saturday, Sunday, Monday or Tuesday, the following Friday. Attach Schedule B (Form 941) to every Form 941. If a semiweekly period spans two quarters, make two deposits (Pub. 15's example: a Wednesday 30 September 2026 payday and a Friday 2 October 2026 payday need separate deposits, both due Wednesday 7 October 2026).
+5. **New employers** are monthly in their first calendar year (Form 941) or first two years (Forms 943, 944, 945), because lookback quarters before the business started count as zero, subject to the next-day rule.
+6. **Liability arises when wages are paid** (pay date, cash basis), not when they are earned or accrued.
+7. **Next-day rule.** If accumulated taxes reach USD 100,000 on any day in a deposit period, deposit by the next business day. The test is made before nonrefundable credits. Accumulation stops at the end of each deposit period and starts again the day after a next-day deposit. A monthly depositor that hits USD 100,000 becomes semiweekly from the next day for the rest of 2026 and all of 2027. The USD 100,000 counts all of federal income tax withheld plus both halves of Social Security and Medicare.
+8. **Business days.** A deposit due on a Saturday, Sunday or legal holiday moves to the next business day. A semiweekly depositor always has at least 3 business days after the end of the semiweekly period. A statewide holiday does not delay a deposit.
+9. **USD 2,500 exception.** If Form 941 line 12 for the current quarter or the prior quarter is less than USD 2,500 and no next-day obligation arose this quarter, the tax may be paid with a timely filed return. If unsure the quarter will stay under USD 2,500, deposit on schedule. A monthly depositor may also pay a shortfall with the return under the accuracy of deposits rule.
+10. **How to deposit.** All deposits are by electronic funds transfer (EFTPS or a same-day wire through the bank). Through EFTPS a deposit must be submitted by 8:00 p.m. Eastern time the day before it is due. Keep the EFT acknowledgement numbers. Source: [Pub. 15 (2026), section 11](https://www.irs.gov/pub/irs-pdf/p15.pdf).
 
-**Form 941 Filing due dates**  _(IRC §6071(b); Treas. Reg. §31.6071(a)-1(a)(1))_
+### Step 2: compute each pay date's liability
 
-| Quarter | Period covered | Due date | Extended due date if all deposits timely |
-| --- | --- | --- | --- |
-| Q1 | Jan 1 – Mar 31 | April 30 | May 10 |
-| Q2 | Apr 1 – Jun 30 | July 31 | August 10 |
-| Q3 | Jul 1 – Sep 30 | October 31 | November 10 |
-| Q4 | Oct 1 – Dec 31 | January 31 (of next year) | February 10 |
+For each employee and each pay date:
 
-- **10-day extension condition** — The 10-day extension under IRC §6071(b) and Treas. Reg. §31.6071(a)-1(a)(1) is available only if all required deposits for the quarter were made in full and on time.  _(IRC §6071(b); Treas. Reg. §31.6071(a)-1(a)(1))_
-- **Weekend/holiday due date rule** — If the due date falls on a Saturday, Sunday, or legal holiday, the return is timely if filed by the next business day under IRC §7503.  _(IRC §7503)_
+1. **Federal income tax withholding** from the employee's Form W-4 and the Pub. 15-T (2026) tables (percentage method or wage bracket method). The 2026 tables reflect Public Law 119-21. A pre-2020 Form W-4 still on file stays valid. With no Form W-4, withhold as Single or Married filing separately with no entries in Steps 2 to 4. A replacement Form W-4 takes effect no later than the first payroll period ending on or after the 30th day after it is received. Source: [Pub. 15-T (2026)](https://www.irs.gov/pub/irs-pdf/p15t.pdf); [Pub. 15 (2026), section 9](https://www.irs.gov/pub/irs-pdf/p15.pdf).
+2. **Supplemental wages** (bonuses, commissions, severance, back pay, awards; overtime and tips may be treated as regular or supplemental). If paid separately and income tax was withheld from regular wages, the employer may use 22% flat. Once supplemental wages to one employee in 2026 pass USD 1 million (all businesses under common control counted), the excess is withheld at 37% regardless of the Form W-4. Source: [Pub. 15 (2026), section 7](https://www.irs.gov/pub/irs-pdf/p15.pdf).
+3. **Social Security:** 6.2% of wages up to the employee's cumulative USD 184,500 for this employer. Stop at the pay date that crosses it; withhold only on the part that brings the total to USD 184,500.
+4. **Medicare:** 1.45% of all Medicare wages.
+5. **Additional Medicare Tax:** start in the pay period in which this employer's wages to the employee pass USD 200,000; withhold 0.9% on the excess and on all later wages that year. Filing status and other jobs are ignored. There is no employer share.
+6. **Employer share:** 6.2% (to the wage base) and 1.45%, the same base as the employee's.
+7. **Pay-date liability** = income tax withheld + employee and employer Social Security + employee and employer Medicare + Additional Medicare withheld. This is what the deposit schedule and the USD 100,000 test use.
 
-### 2.4 Form 941-X (Adjusted Employer's Quarterly Federal Tax Return or Claim for Refund)
+What is in and out of each wage base:
 
-Used to correct errors on a previously filed Form 941. Two paths:
-
-1. **Adjusted return process** (interest-free under §6205) — used to correct administrative errors (wrong wages, wrong tax) that resulted in either an underpayment or overpayment, when the period of limitation on assessment has not expired and the employer is correcting a §3402 income tax withholding or §3121 FICA error. For underreported tax, file by the due date of the return for the return period in which the error was discovered.
-2. **Claim for refund process** under §6402 — used when the employer is claiming a refund of overcollected employee tax. Requires written consent from each affected employee (or evidence the employer reimbursed the employee) per Treas. Reg. §31.6402(a)-2.
-
-Common 941-X scenarios:
-
-- Discovery of a bonus that was never run through payroll
-- Misclassification correction (treated as 1099, should have been W-2)
-- Mid-year discovery that an employee crossed the $176,100 Social Security wage base earlier than the payroll system tracked
-- Retroactive wage adjustments (settlements, back pay)
-- Reclassification of a fringe benefit (e.g., personal use of company car that was missed during the year — also corrected via W-2c if W-2 was already issued)
-
-Form 941-X is filed separately, not attached to the next Form 941.
-
-- **Adjusted return process** — Interest-free under §6205 — used to correct administrative errors (wrong wages, wrong tax) that resulted in either an underpayment or overpayment, when the period of limitation on assessment has not expired and the employer is correcting a §3402 income tax withholding or §3121 FICA error. For underreported tax, Form 941-X is due by the due date of the return for the return period in which the error was discovered.  _([IRC §6205](https://www.irs.gov/instructions/i941x))_
-- **Claim for refund process** — Under §6402 — used when the employer is claiming a refund of overcollected employee tax. Requires written consent from each affected employee (or evidence the employer reimbursed the employee) per Treas. Reg. §31.6402(a)-2.  _(IRC §6402; Treas. Reg. §31.6402(a)-2)_
-
-### 2.5 Form 944 (annual variant for very small employers)
-
-Form 944 is an annual employment tax return that replaces Form 941 for employers whose total annual employment tax liability is $1,000 or less. **Eligibility is by IRS notification only** — the employer cannot self-elect. The IRS sends a written notice (typically in early in the year) informing the employer that they are eligible to file Form 944 for that year.
-
-Employers who want to file 944 (or who want to switch from 944 to 941) must call the IRS between January 1 and April 1 of the year, or send a written request postmarked between January 1 and March 16 (for 2026: between January 1, 2026, and April 1, 2026 by phone, or postmarked between January 1, 2026, and March 16, 2026).
-
-Form 944 is due January 31 of the following year (February 10 with the 10-day extension if all deposits were timely).
-
-- **Form 944 eligibility threshold** — $1,000 or less USD (total annual employment tax liability)  _(Form 944 instructions)_
-- **Form 944 due date** — Due January 31 of the following year (February 10 with the 10-day extension if all deposits were timely).  _(Form 944 instructions)_
-
-### 2.6 Form 943 (agricultural employers)
-
-Form 943 (Employer's Annual Federal Tax Return for Agricultural Employees) is filed by employers who paid wages to one or more farmworkers if the wages were subject to FICA or federal income tax withholding. The two tests for FICA on farm wages are:
-
-1. **$150 test** — cash wages of $150 or more in the calendar year to any one farmworker, or
-2. **$2,500 test** — total cash and noncash wages of $2,500 or more paid to all farmworkers in the year
-
-If either is met, all cash wages paid to the farmworker are subject to FICA. Form 943 is annual; due January 31 (February 10 extension).
-
-### 2.7 Form 945 (annual return of withheld federal income tax — nonpayroll)
-
-Form 945 reports federal income tax withheld from **nonpayroll** payments. Common items:
-
-- Pensions, annuities, and IRA distributions (1099-R)
-- Military retirement
-- Gambling winnings (W-2G)
-- Indian gaming profits paid to tribal members
-- Backup withholding under §3406 (28% — confirm 24% per TCJA — actually 24% as of 2018 through 2025 under TCJA §11041 sunset rules; backup withholding rate is 24% for 2025 under the TCJA extended provisions of the OBBBA)
-- Voluntary withholding on unemployment compensation, Social Security benefits, and certain federal payments
-
-Form 945 is annual, due January 31 (February 10 extension). Federal income tax withheld from W-2 wages is NOT reported on Form 945 — that goes on Form 941.
-
-- **Backup withholding rate for 2025** — 24%  _(IRC §3406; TCJA §11041 sunset rules; OBBBA extended provisions)_
-
-## 3. Wage Bases and Rates — 2025
-
-### 3.1 Social Security (OASDI)
-
-- **Combined Social Security rate** — 12.4% (6.2% employee + 6.2% employer)  _(Social Security Administration Fact Sheet released October 10, 2024)_
-- **Social Security wage base 2025** — $176,100 USD (limits OASDI portion of SE tax)  _(8.2 Practical SE-tax Examples (skill text))_
-- **Self-employed equivalent** — 12.4% on the same $176,100 base, computed against 92.35% of net SE earnings.  _(Schedule SE)_
-- **Wage base is per employer's EIN** — The wage base is per employer's EIN. If an employee works for two unrelated employers in the same year, each employer is independently obligated to withhold 6.2% up to $176,100 of wages it paid. The employee then receives a credit for the excess on Form 1040, Schedule 3, Line 11 ("Excess Social Security and tier 1 RRTA tax withheld"). The employers do NOT get a refund of their portion — the excess refund is to the employee only.  _(Form 1040 Schedule 3 Line 11)_
-- **Single employer with multiple EINs** — For a single employer with multiple EINs (e.g., common paymaster arrangement under §3121(s) or successor employer rule), there is one combined base if the requirements are met.  _(IRC §3121(s))_
-- **Successor employer rule** — Successor employer rule under §3121(a)(1) and Rev. Proc. 2004-53: when an employer acquires substantially all the property of another employer mid-year, the successor may credit the predecessor's payments toward the wage base.  _(IRC §3121(a)(1); Rev. Proc. 2004-53)_
-
-### 3.2 Medicare (Hospital Insurance)
-
-- **Combined Medicare rate** — 2.9% (1.45% employee + 1.45% employer)  _(3.6 2025 reference table)_
-- **Medicare wage base** — None — uncapped  _(3.6 2025 reference table)_
-- **Medicare applicability** — Applies to all wages and self-employment earnings  _(3.6 2025 reference table)_
-
-### 3.3 Additional Medicare Tax (§3101(b)(2))
-
-- **Additional Medicare Tax rate** — 0.9% (employee only)  _(IRC §3101(b)(2))_
-- **Employee filing threshold — Single, HoH, qualifying widow(er)** — $200,000 USD  _(Form 8959)_
-- **NIIT threshold — MFJ / qualifying surviving spouse** — $250,000  _([IRC §1411; 2025 Instructions for Form 8960](https://www.irs.gov/instructions/i8960))_
-- **Employee filing threshold — Married filing separately** — $125,000 USD  _(Form 8959)_
-- **Employee filing threshold — Single, HoH, qualifying widow(er)** — $200,000 USD  _(Form 8959)_
-- **Reconciliation via Form 8959** — The employee reconciles the difference between what was withheld by the employer (based on the $200,000 per-employer threshold) and what is actually owed (based on filing-status threshold against combined income) on Form 8959 filed with Form 1040.  _(Form 8959)_
-
-This creates two common reconciliation scenarios:
-
-1. **Married filing jointly with one earner at $250,000** — employer withholds 0.9% on wages above $200,000 = $450 withheld. Filing-status threshold is $250,000, so no Additional Medicare Tax owed. The $450 is credited as withheld federal tax via Form 8959 → Schedule 2 → 1040.
-2. **Single earner with two jobs, $150,000 each** — neither employer withholds Additional Medicare (each is below $200,000). Total wages $300,000 against single threshold $200,000 = $100,000 × 0.9% = $900 owed. Computed on Form 8959 and added to total tax.
-
-### 3.4 FUTA (Federal Unemployment Tax Act)
-
-- **FUTA statutory rate** — 6.0%  _(3.6 2025 reference table)_
-- **FUTA wage base** — $7,000 USD (first $7,000 of wages per employee per calendar year)  _(3.6 2025 reference table)_
-- **State credit for UI taxes paid timely** — Up to 5.4% (credit for state unemployment insurance taxes paid timely → effective federal rate 0.6% in non-credit-reduction states)  _(3.6 2025 reference table)_
-- **Maximum FUTA per employee in non-credit-reduction state** — $7,000 × 0.6% = $42.00 per year  _(3.6 2025 reference table)_
-- **Employee does not pay FUTA** — Employee does NOT pay FUTA — employer only  _(3.6 2025 reference table)_
-
-### 3.5 Federal Income Tax Withholding
-
-- **No flat rate** — No flat rate — computed under Pub 15-T using the percentage method or wage bracket method against the employee's Form W-4  _(Pub 15-T)_
-- **W-4 versions** — 2020-and-later W-4 uses dollar amounts; pre-2020 W-4 uses allowances (still valid if on file)  _(Pub 15-T)_
-- **2025 withholding brackets** — 2025 brackets for income tax withholding mirror the 2025 individual tax brackets (10%, 12%, 22%, 24%, 32%, 35%, 37%) under §1, adjusted for inflation per Rev. Proc. 2024-40  _(IRC §1; Rev. Proc. 2024-40)_
-
-### 3.6 2025 reference table
-
-**2025 reference table**  _(3.6 2025 reference table)_
-
-| Tax | Employee rate | Employer rate | Wage base 2025 | Max per employee per year |
+| Item | Box 1 (income tax) | Box 3 (Social Security) | Box 5 (Medicare) | FUTA |
 | --- | --- | --- | --- | --- |
-| Social Security | 6.2% | 6.2% | $176,100 | $10,918.20 each side |
-| Medicare | 1.45% | 1.45% | None | No cap |
-| Additional Medicare | 0.9% | 0% | $200,000 (employer withholding trigger) | Variable |
-| FUTA | 0% | 6.0% gross / 0.6% net | $7,000 | $42.00 (net) |
-| Federal income tax | Variable | 0% | None | Variable |
+| Traditional 401(k), 403(b), governmental 457(b) elective deferral | Out | In | In | In |
+| Roth 401(k), 403(b) or 457(b) deferral | In | In | In | In |
+| Section 125 health premium (written plan) | Out | Out | Out | Out |
+| Dependent care assistance under section 125 (within the limit; box 10) | Out | Out | Out | Out |
+| HSA contribution through a section 125 salary reduction | Out | Out | Out | Out |
+| Employer HSA contribution reasonably believed excludable | Out | Out | Out | Out |
+| Employee's own after-tax HSA contribution (deducted on Form 8889) | In | In | In | In |
+| Group-term life insurance, cost of the first USD 50,000 | Out | Out | Out | Out |
+| Group-term life insurance cost above USD 50,000 (box 12 code C) | In | In | In | Out |
+| Adoption assistance (within the limit; box 12 code T) | Out | In | In | Not covered here: check Pub. 15-B |
+| Qualified transportation fringe (within the limit) | Out | Out | Out | Out |
+| Qualified tips (code TP) and qualified overtime premium (code TT) | In | In | In | In |
+| Nonqualified deferred compensation (section 3121(v)(2)) | When paid | When vested | When vested | When vested |
 
-## 4. Deposit Schedule — The Lookback Rule
+Sources: [Pub. 15 (2026), sections 5 and 15](https://www.irs.gov/pub/irs-pdf/p15.pdf); [General Instructions for Forms W-2 and W-3 (2026)](https://www.irs.gov/pub/irs-pdf/iw2w3.pdf). Tips and overtime stay fully subject to income tax withholding and to both halves of FICA; the employee's deduction for them is taken on Form 1040, and the employee may reduce withholding through Form W-4 (2026) Step 4(b).
 
-The deposit schedule is determined annually based on the employer's lookback period total tax liability under §6302 and Treas. Reg. §31.6302-1.
+### Step 3: Form 941, line by line (Rev. March 2026)
 
-### 4.1 Lookback period definition
+The March 2026 revision is used for all four quarters of 2026 unless the IRS revises it again.
 
-- **Lookback period — Form 941 filers** — The lookback period for Form 941 filers is the 12-month period ending the previous June 30. For deposit obligations during calendar year 2025, the lookback period is July 1, 2023 through June 30, 2024.  _(IRC §6302; Treas. Reg. §31.6302-1)_
-- **Lookback period — Form 944 filers** — For Form 944 (annual) filers who are required or eligible to file 944, the lookback period is the second preceding calendar year (so 2023 for deposits made in 2025).  _(IRC §6302; Treas. Reg. §31.6302-1)_
-- **Lookback period — Form 943 filers** — For Form 943 (agricultural), the lookback period is the second preceding calendar year.  _(IRC §6302; Treas. Reg. §31.6302-1)_
-
-### 4.2 Monthly vs Semiweekly classification
-
-**Monthly vs Semiweekly classification**  _(IRC §6302; Treas. Reg. §31.6302-1)_
-
-| Lookback period total Form 941 liabilities (Lines 12 of all four quarters) | Depositor status for 2025 |
+| Line | What goes there |
 | --- | --- |
-| ≤ $50,000 | Monthly depositor |
-| > $50,000 | Semiweekly depositor |
+| 1 | Employees paid for the pay period including 12 March (Q1), 12 June (Q2), 12 September (Q3) or 12 December (Q4). A snapshot, not a total |
+| 2 | Wages, tips and other compensation (income tax wages, box 1 basis) |
+| 3 | Federal income tax withheld |
+| 4 | Check only if no wages are subject to Social Security or Medicare tax |
+| 5a | Taxable Social Security wages (column 1) x 0.124 (column 2), capped per employee at USD 184,500 for the year |
+| 5b | Taxable Social Security tips x 0.124 |
+| 5c | Taxable Medicare wages and tips x 0.029, no cap |
+| 5d | Wages and tips subject to Additional Medicare Tax withholding (column 1: the wages above USD 200,000) x 0.009. Once wages pass USD 200,000, include all reported tips even if the 0.9% could not be withheld |
+| 5e | Total of column 2 on lines 5a to 5d |
+| 5f | Section 3121(q) Notice and Demand tax on unreported tips (only after an IRS notice) |
+| 6 | Lines 3 + 5e + 5f |
+| 7 | Fractions of cents adjustment |
+| 8 | Sick pay adjustment (third-party sick pay) |
+| 9 | Tips and group-term life insurance adjustments: the employee share of Social Security and Medicare on uncollected tips and on group-term life for former employees, entered as a negative |
+| 10 | Lines 6 to 9 combined |
+| 11 | Qualified small business payroll tax credit for research (attach Form 8974). Used first against the employer share of Social Security tax up to USD 250,000 per quarter, then the employer share of Medicare tax; any rest carries to the next quarter. The election amount is in `us-r-and-d-section-174-and-41` |
+| 12 | Line 10 minus line 11: total taxes. This is the lookback figure |
+| 13 | Deposits for the quarter, including an overpayment applied from the prior quarter |
+| 14 | Balance due (line 12 more than line 13); pay electronically |
+| 15 | Overpayment: apply to the next return, or refund (now paid by direct deposit) |
+| 16 | Under USD 2,500 (current or prior quarter) and no next-day obligation: check the first box. Monthly depositor: enter the liability for each month. Semiweekly depositor: check the third box and attach Schedule B |
 
-- **Monthly depositor rule** — Deposit the entire month's accumulated employment tax by the 15th of the following month. Example: April 2025 payroll taxes are deposited by May 15, 2025.  _(IRC §6302; Treas. Reg. §31.6302-1)_
+Part 3 marks a closed business or a seasonal employer; Part 4 names a third-party designee; Part 5 is the signature. Third-party aggregate filers (section 3504 agents, CPEOs) now complete the Aggregate Return Filers Only section and Schedule R; that is outside this skill. Source: [Form 941 (Rev. March 2026)](https://www.irs.gov/pub/irs-pdf/f941.pdf); [Instructions for Form 941 (Rev. March 2026)](https://www.irs.gov/pub/irs-pdf/i941.pdf). The 2026 form has no lines for the COVID-19 sick and family leave credits; those are claimed on Form 941-X.
 
-**Semiweekly depositor payday-to-deposit schedule**  _(IRC §6302; Treas. Reg. §31.6302-1)_
+**Schedule B (Form 941)** reports the tax liability for each day wages were paid (the liability date, not the deposit date), month by month. Its total must equal line 12. The IRS compares it with EFTPS deposit dates to assess deposit penalties.
 
-| Payday falls on | Deposit due by |
+**Form 941-X** is filed separately, never attached to the next Form 941. Two routes: the adjusted return process (interest-free for an underreported amount if filed by the due date of the return for the quarter in which the error was found), or the claim for refund process, which for overcollected employee tax needs each employee's written consent or proof of repayment to the employee. Typical causes: a bonus never run through payroll, a worker reclassified from contractor to employee, the wage base crossed earlier than the system tracked, a missed fringe benefit (also needs a Form W-2c).
+
+### Step 4: Form 940 and FUTA
+
+1. **Who owes FUTA (general test):** USD 1,500 or more of wages in any calendar quarter of 2025 or 2026, or at least one employee on some part of a day in 20 or more different weeks of 2025 or of 2026. Household employers (USD 1,000 in a quarter) report on Schedule H, not here. Farm employers: USD 20,000 cash wages in a quarter, or 10 or more farmworkers in 20 or more weeks. Only the employer pays FUTA. Source: [Pub. 15 (2026), section 14](https://www.irs.gov/pub/irs-pdf/p15.pdf).
+2. **FUTA wages:** the first USD 7,000 paid to each employee in 2026. A successor employer that acquired the business may count the predecessor's wages toward the USD 7,000.
+3. **Tax:** 6.0% of FUTA wages, less the credit for state unemployment tax of up to 5.4%. Full credit needs state tax paid in full, on time and on the same wages. Where a state's base excludes wages that FUTA taxes (for example some corporate officer wages), more than 0.6% is owed on those wages.
+4. **Credit reduction (Schedule A, Form 940).** For 2026 the Department of Labor's final list (updated 10 November 2026) names only California, at 1.5%: California had an outstanding advance on every 1 January from 2021 to 2026, did not repay before 10 November 2026, and was granted a waiver of the further benefit cost rate add-on. The U.S. Virgin Islands repaid its advances before 10 November 2026, so has no 2026 reduction. FUTA wages paid in California cost 0.6% + 1.5% = 2.1%, which is USD 147 per employee at the USD 7,000 base. Source: [DOL final 2026 credit reductions](https://oui.doleta.gov/unemploy/docs/final_credit_states_2026.xlsx).
+5. **Quarterly deposits.** Each quarter, multiply that quarter's FUTA wages by 0.6%. If the total with any amount carried forward is over USD 500, deposit by the last day of the month after the quarter: 30 April, 31 July, 31 October (2 November 2026, as 31 October is a Saturday) and 31 January (1 February 2027). If USD 500 or less, carry it forward. A fourth-quarter amount of USD 500 or less may be paid with Form 940. **The credit reduction is a fourth-quarter liability:** it is included with the fourth-quarter deposit (it may be deposited earlier but is not due earlier). Source: [Pub. 15 (2026), section 14, Table 4](https://www.irs.gov/pub/irs-pdf/p15.pdf).
+6. **Multi-state employers** file one Form 940 with Schedule A. The USD 7,000 is one cap per employee per employer across states; Schedule A follows the wages that were subject to each state's unemployment tax law (Instructions for Form 940, line 1b and line 2).
+7. **Corrections:** there is no Form 940-X; file a Form 940 marked "Amended" (it can be e-filed).
+
+### Step 5: Forms W-2 and W-3 (2026)
+
+1. **Who gets a W-2:** every employee from whom income tax, Social Security or Medicare tax was withheld (or would have been, but for an exemption claim). New for wages paid after 2025: an employee with no tax withheld needs a W-2 once wages reach USD 2,000 (was USD 600), indexed after 2026.
+2. **Box 1, 3 and 5** follow the table in Step 2. Box 3 is never more than USD 184,500. Box 4 is the employee's 6.2% only; box 6 is the employee's 1.45% plus any Additional Medicare Tax withheld.
+3. **Box 12 codes.** A, B (uncollected tax on tips); C (group-term life over USD 50,000); D, E, F, G, H, S (elective deferrals: 401(k), 403(b), SARSEP, 457(b), 501(c)(18)(D), SIMPLE); AA, BB, EE (Roth 401(k), 403(b), 457(b)); J (nontaxable sick pay); K (golden parachute excise); L (substantiated business expense reimbursements); M, N (uncollected tax on group-term life for former employees); P (excludable moving reimbursements, now only for active-duty Armed Forces members moving on orders, and from 2026 also intelligence community employees and appointees moving on a change in assignment); Q (nontaxable combat pay); R (Archer MSA); T (adoption benefits); V (nonstatutory stock option income); W (employer HSA contributions, including section 125 salary reductions); Y, Z (section 409A); DD (cost of employer health coverage); FF (QSEHRA); GG, HH (section 83(i)); II (Medicaid waiver payments). **New for 2026:** TA (employer contributions to a Trump account under a section 128 programme), TP (total cash tips reported to the employer), TT (total qualified overtime compensation: only the premium part, such as the "half" of time-and-a-half, paid under FLSA section 7). Paper and online-created forms hold four box 12 amounts per W-2; an uploaded electronic file can hold every code. Source: [General Instructions for Forms W-2 and W-3 (2026)](https://www.irs.gov/pub/irs-pdf/iw2w3.pdf).
+4. **Box 14** is split for 2026: box 14a "Other" (what box 14 used to hold: state disability withholding, union dues, after-tax health premiums, vehicle fringe details) and box 14b, the Treasury Tipped Occupation Code(s), required when code TP is used. The 2025 transition relief of Notice 2025-62 covered tax year 2025 only.
+5. **Boxes 15 to 20** carry state and local wages and tax; add rows (or a second W-2) for more states. State rules are in `us-state-payroll-matrix`.
+6. **Due date:** 2026 Forms W-2 to employees, and Forms W-2 and W-3 to the SSA (paper or electronic), by **1 February 2027**. One 30-day extension for the SSA filing may be requested on Form 8809, and it is not automatic.
+7. **Electronic filing:** required if the employer files at least 10 information returns in total (Forms W-2, 1099 and others counted together); a waiver may be requested on Form 8508 at least 45 days before the due date. A W-2c corrects on the same medium as the original. Business Services Online builds the W-3 automatically for e-filed W-2s.
+8. **Penalties for Forms W-2 due after 31 December 2026:** USD 60 per form if correctly filed within 30 days of the due date, USD 130 if by 1 August, USD 340 after that or not at all, with annual maximums (lower for small businesses). Source: [General Instructions for Forms W-2 and W-3 (2026), Penalties](https://www.irs.gov/pub/irs-pdf/iw2w3.pdf).
+9. **Form W-2c and W-3c** correct an issued W-2 (wrong SSN or name, wrong amounts, missed fringe benefit, misallocated state wages). If FICA changes, file Form 941-X for the quarter; if FUTA changes, an amended Form 940.
+
+**Reconcile the year before filing.** The SSA compares the W-3 with the four Forms 941 and sends a discrepancy notice when they differ.
+
+| W-3 box | Should equal, from the four Forms 941 |
 | --- | --- |
-| Wednesday, Thursday, or Friday | Following Wednesday |
-| Saturday, Sunday, Monday, or Tuesday | Following Friday |
+| 1 | Sum of line 2 |
+| 2 | Sum of line 3 |
+| 3 (plus box 7 tips) | Sum of line 5a column 1 (plus 5b column 1) |
+| 4 | Half of the sum of line 5a column 2 (plus 5b), the employee share |
+| 5 | Sum of line 5c column 1 |
+| 6 | Half of the sum of line 5c column 2, plus the sum of line 5d column 2 |
 
-- **Semiweekly minimum banking days and holiday extension** — The semiweekly schedule gives the employer at least 3 banking days from payday to deposit. If a banking holiday intervenes, the deposit due date is extended.  _(IRC §6302; Treas. Reg. §31.6302-1)_
+Common causes of a difference: a 31 December payroll with a January check date (wages belong to the pay-date year), third-party sick pay, group-term life for former employees (line 9 adjustment), section 3121(v)(2) deferred compensation counted for FICA in the vesting year.
 
-### 4.3 The $100,000 Next-Day Deposit Rule
+### Step 6: Form W-4 (2026)
 
-- **$100,000 next-day deposit trigger** — $100,000 USD (accumulated unpaid employment tax liability on any single day)  _(IRC §6302; Treas. Reg. §31.6302-1)_
-- **Next-day deposit obligation** — If accumulated unpaid employment tax liability reaches $100,000 or more on any single day, the employer must deposit by the next business day, regardless of whether the employer is a monthly or semiweekly depositor.  _(IRC §6302; Treas. Reg. §31.6302-1)_
-- **Promotion to semiweekly** — Once the $100,000 next-day rule is triggered, a monthly depositor immediately becomes a semiweekly depositor for the remainder of the current calendar year and for the entire following calendar year. This is sometimes called the "promotion" to semiweekly.  _(IRC §6302; Treas. Reg. §31.6302-1)_
-- **$100,000 amount composition** — The $100,000 amount is the accumulated employment tax — federal income tax withheld plus employee and employer FICA — not just one component.  _(IRC §6302; Treas. Reg. §31.6302-1)_
+- Five steps: (1) personal information and filing status; (2) multiple jobs or a working spouse; (3) dependents: USD 2,200 per qualifying child under 17 and USD 500 per other dependent; (4) other income (4a), deductions (4b, whose worksheet now includes estimated qualified tips, qualified overtime and car loan interest) and extra withholding (4c); (5) signature. Source: [Form W-4 (2026)](https://www.irs.gov/pub/irs-pdf/fw4.pdf).
+- Exemption from withholding is now a checkbox below Step 4(c) (previously written in). It is valid only if the employee had no income tax liability last year and expects none this year, and it lasts one year: a 2026 exemption needs a new Form W-4 by 16 February 2027. Forms W-4 claiming exemption for the previous year expire on 16 February; then withhold as Single or Married filing separately with no adjustments, and do not refund tax withheld while no exemption was in place. Source: [Pub. 15 (2026), Calendar](https://www.irs.gov/pub/irs-pdf/p15.pdf).
+- Do not accept a fixed dollar or percentage instruction instead of a Form W-4; an employee may only add extra withholding in Step 4(c).
 
-### 4.4 The de minimis $2,500 quarter rule
+### Step 7: penalties
 
-- **De minimis $2,500 quarter rule** — $2,500 USD (If total Form 941 liability for the quarter (Line 12) is less than $2,500 and was less than $2,500 in the prior quarter, no deposit schedule applies — the tax may be paid with the return. This is a quarter-by-quarter test, not the annual lookback test.)  _(Form 941 instructions)_
+Failure to deposit (section 6656), measured in calendar days from the due date:
 
-### 4.5 EFTPS — Electronic Federal Tax Payment System
-
-All federal tax deposits must be made electronically via EFTPS (Electronic Federal Tax Payment System), 26 C.F.R. §31.6302-1(h). The mandatory electronic deposit rule applies to substantially all employers; the legacy Form 8109 paper deposit coupon was retired effective December 31, 2010.
-
-Mechanics:
-
-- Enrollment: at eftps.gov, takes 5-7 business days to receive the PIN by mail
-- Deposit must be initiated by 8:00 PM ET on the day before the deposit due date
-- Payments can be scheduled up to 365 days in advance
-- Confirmation number (EFT Acknowledgment Number) is the audit trail
-- Same-day wire option is available for emergency deposits via the Federal Tax Same-Day Payment Worksheet — must be initiated by the employer's financial institution and there is typically a wire fee
-
-- **Mandatory electronic deposit rule** — All federal tax deposits must be made electronically via EFTPS, 26 C.F.R. §31.6302-1(h). The legacy Form 8109 paper deposit coupon was retired effective December 31, 2010.  _(26 C.F.R. §31.6302-1(h))_
-
-### 4.6 Schedule B (Form 941) — Report of Tax Liability for Semiweekly Depositors
-
-Required attachment for semiweekly depositors and for any employer that became a semiweekly depositor mid-quarter under the $100,000 next-day rule.
-
-Schedule B reports the daily tax liability for each of the three months in the quarter. It does NOT report deposits — it reports liabilities (when wages were paid, the day the liability arose). The IRS uses Schedule B to determine deposit timeliness, comparing reported liabilities against EFTPS deposit dates.
-
-## 5. Form 940 — Federal Unemployment (FUTA) Tax
-
-### 5.1 Purpose
-
-Form 940 computes the annual FUTA tax. FUTA funds the federal portion of state unemployment insurance administration and a federal account that lends to states whose UI trust funds become insolvent. FUTA is paid by the employer only — no employee withholding.
-
-### 5.2 Coverage tests
-
-- **Form 940 coverage tests** — An employer must file Form 940 if either: 1. **$1,500 test** — paid wages of $1,500 or more in any calendar quarter of the current or preceding calendar year, OR 2. **One-employee-20-weeks test** — had at least one employee for some part of a day in any 20 different weeks of the current or preceding calendar year Separate tests apply for household employers (paid $1,000+ cash wages in any quarter; reported on Schedule H of Form 1040, not Form 940) and agricultural employers ($20,000 cash wages in any quarter OR 10+ employees for 20+ weeks; reported on Form 940 but with different thresholds).
-
-### 5.3 Computation
-
-- **Gross FUTA computation** — Gross FUTA: 6.0% × first $7,000 of each employee's wages  _(Form 940 instructions)_
-- **State credit for UI taxes paid timely** — Up to 5.4% (credit for state unemployment insurance taxes paid timely → effective federal rate 0.6% in non-credit-reduction states)  _(3.6 2025 reference table)_
-- **Net FUTA in non-credit-reduction states** — 0.6% × first $7,000 per employee = $42.00 per employee per year maximum  _(Form 940 instructions)_
-
-### 5.4 Credit Reduction States — Schedule A
-
-States that have borrowed from the federal unemployment trust fund (Title XII advances) and have not repaid by November 10 of the second consecutive year are subject to a FUTA credit reduction. The reduction starts at 0.3% for the first year of delinquency and increases by 0.3% each subsequent year (with limited "BCR add-on" provisions).
-
-**2024 credit reduction states (for Form 940 filed by January 31, 2025)** — finalized by DOL:
-
-- California (CA): 0.9% reduction → effective FUTA rate 1.5% (0.6% + 0.9%) on first $7,000 = $105 per employee
-- New York (NY): 0.9% reduction → effective FUTA rate 1.5%
-- US Virgin Islands (VI): 4.2% reduction → effective FUTA rate 4.8%
-- Connecticut (CT): not a 2024 credit reduction state — the 2024 Schedule A lists only California and New York (0.009) and the U.S. Virgin Islands (0.042)
-
-**For 2025 (Form 940 filed by January 31, 2026)** — the DOL announces final credit reduction states each November. As of the November 2025 DOL determination, the credit reduction status of each state must be verified against the official DOL Credit Reduction State announcement at oui.doleta.gov/unemploy/futa_credit.asp. The reviewer must check the current-year list before finalizing Form 940 Schedule A.
-
-If the employer paid wages in any credit reduction state, Schedule A (Form 940) is required, listing each state with FUTA-taxable wages and the applicable credit reduction.
-
-- **Credit reduction rate escalation** — The reduction starts at 0.3% for the first year of delinquency and increases by 0.3% each subsequent year (with limited "BCR add-on" provisions).  _(Title XII advances rules)_
-
-### 5.5 Filing due date
-
-- **Form 940 filing due date** — Form 940 is due January 31 of the year following the tax year (for tax year 2025 the due date is February 2, 2026, because January 31, 2026 falls on a Saturday), with an extension to February 10 (February 10, 2026 for tax year 2025) if all FUTA deposits were made on time.  _([Form 940 instructions](https://www.irs.gov/instructions/i940))_
-
-### 5.6 Deposit schedule
-
-- **FUTA deposit schedule** — FUTA is deposited quarterly when accumulated liability exceeds $500: - If FUTA liability at the end of a quarter is more than $500, deposit by the last day of the month following the quarter (April 30, July 31, October 31, January 31) - If $500 or less, carry forward to the next quarter - If Q4 carryforward + Q4 accrual is $500 or less, pay with Form 940 by January 31 - Deposits via EFTPS only  _(Form 940 instructions)_
-- **FUTA quarterly deposit threshold** — $500 USD (accumulated liability at end of quarter)  _(Form 940 instructions)_
-
-### 5.7 Special situations
-
-- **Multi-state employer** — files one Form 940 with Schedule A reporting each state's wages and applicable credit reductions
-- **Successor employer** — may credit predecessor's wage payments toward the $7,000 per-employee base under §3306(c)(8) and §3306(b)(1) for both FUTA and FICA
-- **Employee in two states for same employer** — wages are aggregated per employee per employer; the $7,000 base is one annual cap. The state of payment for credit reduction purposes is generally the state where the employee primarily performs services.
-- **Group-term life insurance imputed income** — FUTA-taxable in most cases (see §3306(b))
-- **§125 cafeteria plan elections, qualified retirement plan elective deferrals, HSA** — generally not FUTA-taxable (parallel to FICA treatment with some nuances; see Pub 15 Section 15 for the wage classification chart)
-
-## 6. Form W-2 — Wage and Tax Statement
-
-### 6.1 Purpose and due dates
-
-- **W-2 purpose** — Form W-2 reports the wages paid to and taxes withheld from each employee during the calendar year. One W-2 is required for each employee who was paid wages from which income, Social Security, or Medicare tax was withheld, or would have been withheld if the employee had not claimed exemption.
-- **W-2 due date to employees** — By January 31 of the year following the tax year  _(PATH Act of 2015)_
-- **W-2 due date to SSA** — By January 31 — both copies share the same date as a result of PATH Act §201  _(PATH Act of 2015 §201)_
-- **Purpose of accelerated SSA due date** — The accelerated SSA due date enables the IRS to match W-2 wage data against individual tax returns claiming refunds in real-time, reducing identity-theft refund fraud.  _(PATH Act of 2015)_
-
-### 6.2 The 10+ electronic filing mandate
-
-- **T.D. 9972 electronic filing threshold** — Under T.D. 9972 (final regulations published February 23, 2023, effective for information returns required to be filed on or after January 1, 2024), the electronic filing threshold for most information returns dropped from 250 to 10 in the aggregate across most return types.  _(T.D. 9972)_
-- **Electronic filing requirement for W-2** — 10 or more returns (An employer required to file 10 or more information returns of any type (W-2, 1099-NEC, 1099-MISC, 1098, etc., counted in aggregate) must file all W-2s electronically with SSA via the SSA Business Services Online (BSO) portal)  _(T.D. 9972)_
-- **Paper filing permitted threshold** — Paper W-2 filing is permitted only if total information returns are 9 or fewer  _(T.D. 9972)_
-- **§6721 penalty for improper paper filing** — Penalty under §6721 for paper filing when electronic was required is the standard information return penalty per return  _(IRC §6721)_
-
-### 6.3 Boxes 1, 3, 5 — The Three Wages
-
-The most common W-2 preparation error is the assumption that Box 1, Box 3, and Box 5 wages should be equal. They very often are not. Understanding the three wages is the single most important payroll-skill concept.
-
-**Boxes 1/3/5 definitions**  _(6.3 Boxes 1, 3, 5 — The Three Wages)_
-
-| Box | Wages reported | Federal tax base |
+| Late | Penalty on the amount | Source |
 | --- | --- | --- |
-| 1 | Wages, tips, other compensation | Federal income tax (Form 1040 Line 1a) |
-| 3 | Social Security wages | OASDI tax (capped at $176,100 for 2025) |
-| 5 | Medicare wages and tips | HI tax (uncapped) |
+| 1 to 5 days | 2% | [Pub. 15 (2026), section 11](https://www.irs.gov/pub/irs-pdf/p15.pdf) |
+| 6 to 15 days | 5% | [Pub. 15 (2026), section 11](https://www.irs.gov/pub/irs-pdf/p15.pdf) |
+| 16 or more days, or paid directly to the IRS or with the return instead of deposited (outside the exceptions) | 10% | [Pub. 15 (2026), section 11](https://www.irs.gov/pub/irs-pdf/p15.pdf) |
+| Still unpaid more than 10 days after the first IRS notice, or the day notice and demand for immediate payment is received, whichever is earlier | 15% | [Pub. 15 (2026), section 11](https://www.irs.gov/pub/irs-pdf/p15.pdf) |
 
-**Differences from Box 1 to Box 3/Box 5**  _(6.3 Boxes 1, 3, 5 — The Three Wages)_
+The penalty is figured deposit by deposit, not on the quarter's net shortfall, so one quarter can carry a 10% and a 2% penalty on different deposits; a late deposit is generally applied to the most recent liability first. Penalties do not apply with reasonable cause and no willful neglect. The IRS may also waive the penalty for an inadvertent failure in the first quarter a deposit was required, or the first deposit after the deposit frequency changed, if the return was timely and the employer meets the section 7430 net worth and size limits (businesses: net worth up to USD 7 million and up to 500 employees; individuals: net worth up to USD 2 million).
 
-| Item | Box 1 | Box 3 (SS) | Box 5 (Medicare) |
-| --- | --- | --- | --- |
-| 401(k) elective deferral (traditional) | Excluded | Included | Included |
-| 403(b) elective deferral | Excluded | Included | Included |
-| 457(b) elective deferral (governmental) | Excluded | Included | Included |
-| Roth 401(k) elective deferral | Included | Included | Included |
-| §125 cafeteria plan health premium | Excluded | Excluded | Excluded |
-| §125 cafeteria plan dependent care FSA | Excluded (reported Box 10) | Excluded | Excluded |
-| HSA contribution via §125 cafeteria plan (payroll deduction) | Excluded | Excluded | Excluded |
-| HSA contribution outside §125 (rare for W-2) | Included | Included | Included |
-| Group-term life insurance ≤ $50,000 | Excluded | Excluded | Excluded |
-| Group-term life insurance > $50,000 (imputed income on excess) | Included | Included | Included |
-| Adoption assistance under §137 (up to limit) | Excluded (reported Box 12 T) | Included | Included |
-| Qualified transportation fringe under §132(f) (up to limit) | Excluded | Excluded | Excluded |
-| Non-qualified deferred comp (§409A) | Depends — generally excluded when deferred, included when paid | Subject to special timing under §3121(v)(2) — included when vested | Included when vested |
+Other penalties:
 
-- **Box 3 cap and Box 5 example** — Box 3 is capped at $176,100 for 2025. If employee earns $250,000 with no pre-tax 401(k), then Box 3 = $176,100 (capped), Box 5 = $250,000 (uncapped)  _(6.3 Boxes 1, 3, 5 — The Three Wages)_
+- **Late Form 941 or 940:** 5% of the unpaid tax per month or part month, up to 25%. **Late payment:** 0.5% per month, up to 25%. When both apply in a month, the filing penalty is reduced by the payment penalty.
+- **Trust fund recovery penalty (section 6672):** 100% of the unpaid income tax withheld and employee Social Security and Medicare, assessable personally against every person responsible for collecting, accounting for or paying it who acted willfully: officers, signatories, sometimes bookkeepers. Defence and appeals: `us-irs-collections-and-controversy`.
+- **First-time abatement** may relieve the failure-to-deposit, failure-to-file and failure-to-pay penalties for an employer with a clean three-year history; request it after the notice.
 
-### 6.4 Box 12 codes — The Single-Letter Reference
+## Boundary and exception table
 
-**Box 12 codes reference**  _([6.4 Box 12 codes — The Single-Letter Reference](https://www.irs.gov/pub/irs-prior/iw2w3--2025.pdf))_
-
-| Code | Description |
+| Situation | Treatment |
 | --- | --- |
-| A | Uncollected SS or RRTA tax on tips |
-| B | Uncollected Medicare tax on tips |
-| C | Taxable cost of group-term life insurance over $50,000 (also in Boxes 1, 3, 5) |
-| D | Elective deferrals to §401(k) (traditional) |
-| E | Elective deferrals to §403(b) |
-| F | Elective deferrals to §408(k)(6) SARSEP |
-| G | Elective deferrals to §457(b) deferred comp plan |
-| H | Elective deferrals to §501(c)(18)(D) plan |
-| J | Nontaxable sick pay |
-| K | 20% excise tax on excess golden parachute payments |
-| L | Substantiated employee business expense reimbursements |
-| M | Uncollected SS or RRTA tax on taxable cost of GTL > $50k (former employees only) |
-| N | Uncollected Medicare tax on taxable cost of GTL > $50k (former employees only) |
-| P | Excludable moving expense reimbursements paid to active-duty military |
-| Q | Nontaxable combat pay |
-| R | Employer contributions to Archer MSA |
-| S | Employee salary reduction contributions under §408(p) SIMPLE |
-| T | Adoption benefits |
-| V | Income from exercise of nonstatutory stock options (also in Boxes 1, 3, 5) |
-| W | Employer + employee contributions to HSA (sum of both, when made via §125 cafeteria plan) |
-| Y | Deferrals under §409A NQDC plan (informational) |
-| Z | Income under §409A on NQDC plan (also in Box 1) |
-| AA | Designated Roth contributions to §401(k) plan |
-| BB | Designated Roth contributions to §403(b) plan |
-| CC | (Reserved — formerly HIRE Act 2010) |
-| DD | Cost of employer-sponsored health coverage (informational, ACA reporting) |
-| EE | Designated Roth contributions to §457(b) governmental plan |
-| FF | Permitted benefits under qualified small employer health reimbursement arrangement (QSEHRA) |
-| GG | Income from qualified equity grants under §83(i) |
-| HH | Aggregate deferrals under §83(i) — current year |
-| II | Medicaid waiver payments excluded from gross income under Notice 2014-7 |
+| Lookback taxes exactly USD 50,000 | Monthly depositor (the test is "more than USD 50,000" for semiweekly) |
+| Form 941-X filed in 2026 for a lookback quarter | Ignored for the lookback; the original line 12 counts |
+| First year of business, Form 941 filer | Monthly, unless the USD 100,000 next-day rule is hit |
+| Monthly depositor accumulates USD 100,000 on a day | Deposit next business day; semiweekly from the next day for the rest of 2026 and all of 2027 |
+| Liability of USD 95,000 on Tuesday and USD 10,000 on Wednesday (semiweekly) | Two deposit periods: no next-day deposit; USD 95,000 by Friday, USD 10,000 by the next Wednesday |
+| Employee works for two unrelated employers | Each employer withholds 6.2% up to USD 184,500; the employee claims the excess on Form 1040; employers get no refund of their share |
+| Related employers with a common paymaster (section 3121(s)) | One wage base for the group if the common paymaster rules are met |
+| Business bought mid-year (successor employer) | Successor may count the predecessor's wages toward USD 184,500 and USD 7,000; new Forms W-4 unless the alternative procedure in Rev. Proc. 2004-53 is used |
+| Employee's wages pass USD 200,000 with this employer | Withhold 0.9% from that pay period; no employer share; the employee reconciles on Form 8959 |
+| Married employee, joint income under USD 250,000, but over USD 200,000 at one job | Employer still withholds; the employee recovers it through Form 8959 |
+| Two jobs of USD 150,000 each, single | Neither employer withholds the 0.9%; the employee owes 0.9% on USD 100,000 on Form 8959 |
+| HSA or health premiums deducted pre-tax with no written section 125 plan | Not excluded: include in boxes 1, 3 and 5 and correct with Forms W-2c and 941-X |
+| Group-term life over USD 50,000, active employee | Imputed cost in boxes 1, 3, 5 and code C; FICA must be withheld; income tax withholding optional; not FUTA wages |
+| Group-term life over USD 50,000, former employee | Employee share of FICA uncollected: codes M and N; negative adjustment on Form 941 line 9 |
+| Large food or beverage establishment (more than 10 employees on a typical business day in the prior year, tipping customary) | Form 8027; if reported tips are under 8% of gross receipts, allocate the difference (W-2 box 8); no withholding on allocated tips |
+| IRS section 3121(q) notice for unreported tips | Employer share on Form 941 line 5f |
+| Back pay or a correction paid later | Wages of the period and year paid, not earned; Form 941-X only to correct an amount already reported |
+| Total quarterly liability under USD 2,500 | May pay with the return, if the prior or current quarter test is met and no next-day obligation arose |
+| Employer filing Form 944 (notified by the IRS) | Annual return due 31 January; to switch between Forms 944 and 941, contact the IRS in the first calendar quarter |
+| Farm workers | Form 943; FICA applies to a worker paid USD 150 or more in cash, or if total farm wages are USD 2,500 or more |
+| Nonpayroll withholding (pensions, gambling, backup withholding) | Form 945, deposited separately from Form 941 taxes |
+| Worker classification in doubt | Common-law test under section 3121(d); section 530 relief or the Voluntary Classification Settlement Program (Form 8952: pay 10% of the employment tax for the most recent year at the reduced section 3509(a) rates). Analysis in `us-1099-nec-issuance` |
 
-- **Box 12 entries limit** — Multiple Box 12 entries are entered in Box 12a, 12b, 12c, 12d (up to four on the W-2 itself; additional codes require a second W-2 for that employee).  _(6.4 Box 12 codes — The Single-Letter Reference)_
+### Red flags and common errors
 
-### 6.5 Box 14 — Free-text "Other"
-
-Box 14 is the catch-all for items the employer wants to report that don't have a specific box. Common Box 14 entries:
-
-- State Disability Insurance (SDI) withholding — e.g., CA SDI, NJ SDI, NY SDI
-- Union dues
-- Charitable contributions via payroll
-- Educational assistance under §127 (over the $5,250 limit, the excess goes in Box 1; the excluded portion may be informational in Box 14)
-- After-tax health insurance premiums
-- Auto fringe benefit details
-- 414(h) pickup contributions (governmental employers)
-
-### 6.6 Boxes 15-20 — State and Local
-
-**Boxes 15-20**  _(6.6 Boxes 15-20 — State and Local)_
-
-| Box | Content |
+| Red flag | What it usually means |
 | --- | --- |
-| 15 | State, employer's state ID number |
-| 16 | State wages, tips, etc. |
-| 17 | State income tax |
-| 18 | Local wages, tips, etc. |
-| 19 | Local income tax |
-| 20 | Locality name |
+| Social Security withholding did not stop at USD 184,500 | Mid-year payroll provider change lost the year-to-date total, an off-cycle bonus run skipped the check, or a negative wage adjustment was not applied to the total |
+| Related companies with separate EINs share one wage base, or unrelated ones do | Common paymaster or successor rules misapplied in one direction or the other |
+| Form 941 line 5a column 1 larger than line 5c column 1 | Almost always an error: Medicare wages have no cap, Social Security wages do |
+| Line 5d column 1 shows the 0.9% tax instead of the wages | Column 1 is wages above USD 200,000; column 2 is the tax |
+| Schedule B does not total line 12 | Deposit dates entered instead of liability (pay) dates, or months transposed |
+| Line 2 for the year differs from W-3 box 1 | A 31 December payroll with a January check date, or third-party sick pay |
+| Pre-tax health or HSA deductions with no plan document | No section 125 exclusion: the deductions are wages in boxes 1, 3 and 5 |
+| Box 3 equals USD 200,000 or USD 176,100 | Wage base confused with the Additional Medicare trigger, or the 2025 base still loaded |
+| Tipped or overtime employees with no code TP or TT on the 2026 W-2 | New 2026 reporting missed; box 14b also needed for tips |
+| FUTA at 0.6% on California wages | The 2026 1.5% credit reduction (Schedule A) left out of the fourth-quarter deposit |
 
-- **Multi-state employee reporting** — If the employee worked in multiple states, multiple rows are reported on the same W-2 (or a second W-2 if more than the form accommodates).  _(6.6 Boxes 15-20 — State and Local)_
+## Worked cases
 
-### 6.7 Form W-2c (Corrected Wage and Tax Statement)
+**Case 1, a decision: monthly or semiweekly depositor for 2026?** Harbor Supply LLC files Form 941. As originally filed, line 12 was USD 11,800 for Q3 2024, USD 12,600 for Q4 2024, USD 13,100 for Q1 2025 and USD 13,400 for Q2 2025. In January 2026 its bookkeeper filed a Form 941-X reducing Q4 2024 by USD 1,500, and proposes to treat the company as a monthly depositor because the corrected total is USD 49,400.
 
-Used to correct an already-issued W-2. Common scenarios:
+The lookback total uses the amounts originally reported: USD 50,900, which is more than USD 50,000, so Harbor Supply is a **semiweekly depositor for all of 2026** and must attach Schedule B to each Form 941. The Form 941-X does not change this (Pub. 15 (2026), section 11, "Adjustments and the lookback rule"). On Friday 6 March 2026 it pays wages of USD 21,000 (all under the wage bases) and withholds USD 2,730 of income tax. FICA on both sides is USD 21,000 x 15.3% = USD 3,213, so the pay-date liability is USD 5,943, due by **Wednesday 11 March 2026**. Under the bookkeeper's monthly reading it would have gone in on 15 April 2026, 35 days late: a 10% failure-to-deposit penalty of USD 594.30 on this one deposit. Recommend: semiweekly schedule, Schedule B, and set the payroll system to deposit on the Wednesday and Friday cycle.
 
-- Wrong Social Security number or name
-- Wrong wages or withheld tax amount
-- Missed bonus or fringe benefit
-- Misallocated state wages
+```oa-check
+name: Lookback rule, monthly or semiweekly for 2026, and one Friday deposit
+inputs:
+  q3_2024: 11800
+  q4_2024: 12600
+  q1_2025: 13100
+  q2_2025: 13400
+  form_941x_change: -1500
+  wages: 21000
+  income_tax_withheld: 2730
+steps:
+  - lookback_total: q3_2024 + q4_2024 + q1_2025 + q2_2025
+  - corrected_total_not_used: lookback_total + form_941x_change
+  - semiweekly: clamp(ceil((lookback_total - 50000) / 1000000), 0, 1)
+  - fica_both_halves: wages * 0.153
+  - deposit: income_tax_withheld + fica_both_halves
+  - penalty_if_paid_monthly: deposit * 0.10
+expected:
+  lookback_total: 50900.00
+  corrected_total_not_used: 49400.00
+  semiweekly: 1
+  fica_both_halves: 3213.00
+  deposit: 5943.00
+  penalty_if_paid_monthly: 594.30
+```
 
-W-2c must be furnished to the employee and to SSA. If the correction also affects FICA, a corresponding Form 941-X may be needed for the affected quarter. If the correction affects FUTA, a corresponding amended Form 940 (no separate "940-X" form — the employer files an amended Form 940 marked "Amended").
+**Case 2, an executive crossing the wage base and the Additional Medicare trigger.** Northwind Analytics Inc. pays its CEO USD 25,000 on the last day of each month in 2026 (USD 300,000 for the year, no pre-tax deductions).
 
-The W-3c (Transmittal of Corrected Wage and Tax Statements) accompanies paper W-2c filings to SSA.
+- **Social Security:** cumulative wages are USD 175,000 after July. August's USD 25,000 is taxed only on USD 9,500 (to reach USD 184,500): employee tax USD 589 that month, then nothing for September to December. Box 3 is USD 184,500 and box 4 is USD 11,439.
+- **Additional Medicare:** cumulative wages reach exactly USD 200,000 at the end of August (not "in excess of"). From the September payroll, 0.9% is withheld on every dollar: USD 225 a month, USD 900 for the year on USD 100,000.
+- **Box 5** is USD 300,000; **box 6** is USD 4,350 (1.45%) + USD 900 = USD 5,250.
+- **Q3 Form 941, this employee only:** line 5a column 1 USD 34,500 (July 25,000 + August 9,500) x 0.124 = USD 4,278; line 5c column 1 USD 75,000 x 0.029 = USD 2,175; line 5d column 1 USD 25,000 x 0.009 = USD 225.
 
-## 7. Form W-3 — Transmittal of Wage and Tax Statements
+Common errors: box 3 at USD 300,000 (no cap), or at USD 200,000 (confusing the wage base with the Additional Medicare trigger), or using the 2025 base of USD 176,100.
 
-The W-3 summarizes the totals from all W-2s filed by the employer. It is required only with paper Copy A W-2 filing. Electronic W-2 filing via SSA BSO does not require a separate W-3 — the totals are computed automatically by the system.
+```oa-check
+name: Wage base crossover and Additional Medicare withholding, USD 300,000 salary (2026)
+inputs:
+  annual_wages: 300000
+  wages_through_july: 175000
+  wage_base: 184500
+  addl_trigger: 200000
+  q3_medicare_wages: 75000
+  september_wages: 25000
+steps:
+  - august_ss_wages: wage_base - wages_through_july
+  - august_employee_ss: august_ss_wages * 0.062
+  - box_3: min(annual_wages, wage_base)
+  - box_4: box_3 * 0.062
+  - additional_medicare: max(annual_wages - addl_trigger, 0) * 0.009
+  - box_6: annual_wages * 0.0145 + additional_medicare
+  - q3_line_5a_wages: 25000 + august_ss_wages
+  - q3_line_5a_tax: q3_line_5a_wages * 0.124
+  - q3_line_5c_tax: q3_medicare_wages * 0.029
+  - q3_line_5d_tax: september_wages * 0.009
+expected:
+  august_ss_wages: 9500.00
+  august_employee_ss: 589.00
+  box_3: 184500.00
+  box_4: 11439.00
+  additional_medicare: 900.00
+  box_6: 5250.00
+  q3_line_5a_wages: 34500.00
+  q3_line_5a_tax: 4278.00
+  q3_line_5c_tax: 2175.00
+  q3_line_5d_tax: 225.00
+```
 
-W-3 boxes mirror W-2 boxes 1-19 but as employer-wide totals. Reconciliation to Form 941:
+**Case 3, FUTA in California, the 2026 credit reduction state.** Pacific Grove Cafe LLC pays wages only in California and pays its state unemployment tax in full and on time. Its 12 employees each earn more than USD 7,000 in 2026, half of the FUTA wages in Q1 and half in Q2.
 
-**W-3 to Form 941 reconciliation**  _(7. Form W-3 — Transmittal of Wage and Tax Statements)_
+FUTA wages: 12 x USD 7,000 = USD 84,000. Gross FUTA at 6.0% is USD 5,040; the 5.4% credit is USD 4,536; net at 0.6% is USD 504. Schedule A: USD 84,000 x 0.015 = USD 1,260 of credit reduction. Total 2026 FUTA: USD 1,764, which is USD 147 per employee. Deposits: Q1 USD 252 (USD 500 or less, carry forward); Q2 cumulative USD 504 (over USD 500), deposit by **31 July 2026**; Q3 nil; the USD 1,260 credit reduction is a fourth-quarter liability, over USD 500, so it is deposited by **1 February 2027** (31 January 2027 is a Sunday). Form 940 with Schedule A is due 1 February 2027, or 10 February 2027 if every FUTA deposit was made on time.
 
-| W-3 box | Should equal sum of four Form 941s, line: |
-| --- | --- |
-| Box 1 (wages) | Line 2 (sum of quarters) |
-| Box 2 (FIT withheld) | Line 3 (sum of quarters) |
-| Box 3 (SS wages) | Line 5a Column 1 (sum of quarters) |
-| Box 4 (SS tax) | (Line 5a Col 2 / 2 — employee half only) |
-| Box 5 (Medicare wages) | Line 5c Column 1 (sum of quarters) |
-| Box 6 (Medicare tax) | (Line 5c Col 2 / 2 + Line 5d Col 2 — employee Medicare + employee Additional Medicare) |
+```oa-check
+name: Form 940 with the 2026 California credit reduction, 12 employees
+inputs:
+  employees: 12
+  futa_base: 7000
+  ca_reduction: 0.015
+steps:
+  - futa_wages: employees * futa_base
+  - gross_futa: futa_wages * 0.06
+  - state_credit: futa_wages * 0.054
+  - net_futa: gross_futa - state_credit
+  - credit_reduction: futa_wages * ca_reduction
+  - total_futa: net_futa + credit_reduction
+  - per_employee: total_futa / employees
+  - q1_liability: futa_wages / 2 * 0.006
+expected:
+  futa_wages: 84000.00
+  gross_futa: 5040.00
+  state_credit: 4536.00
+  net_futa: 504.00
+  credit_reduction: 1260.00
+  total_futa: 1764.00
+  per_employee: 147.00
+  q1_liability: 252.00
+```
 
-**Reconciliation tip**: SSA matches W-3 totals against the four 941s and sends a "CAWR" (Combined Annual Wage Reporting) discrepancy notice if they disagree. Common reconciliation differences:
+**Case 4, a small employer's Q2 2026 Form 941.** Acme Coffee Roasters LLC (three employees, monthly depositor) paid Q2 2026 gross wages of USD 46,200, with USD 2,200 of traditional 401(k) deferrals, USD 2,000 of section 125 health premiums under a written plan, and USD 5,960 of income tax withheld. Nobody is near the wage base. Line 2: USD 46,200 - 2,200 - 2,000 = USD 42,000. Lines 5a and 5c column 1: USD 46,200 - 2,000 = USD 44,200 (the 401(k) stays in FICA wages). Line 5a column 2: USD 5,480.80; line 5c column 2: USD 1,281.80; line 5e: USD 6,762.60; lines 6, 10 and 12: USD 12,722.60. Deposits: April wages by 15 May 2026, May by 15 June 2026, June by 15 July 2026. Form 941 due 31 July 2026, or 10 August 2026 if every deposit was on time.
 
-- Third-party sick pay — adjusted on 941 Line 8 but appears in W-2 wages
-- Group-term life > $50k — fully on W-2 but may have been handled via Schedule B liability rather than Line 2
-- Q4 wage payments made on 12/31 but deposited in January — timing
-- §3121(v)(2) NQDC FICA timing — wages on Box 3/5 in vesting year, Box 1 in payment year
+## When to refuse or refer
 
-## 8. Form W-4 — Employee's Withholding Certificate (2020+ Redesign)
-
-The Form W-4 was substantively redesigned for 2020 in response to the Tax Cuts and Jobs Act of 2017. The 2020-and-later W-4 has five steps and no longer uses withholding allowances.
-
-**Steps**:
-
-1. Step 1 — Personal information and filing status (Single/MFJ/HoH)
-2. Step 2 — Multiple jobs or spouse works (three options: online estimator, multiple jobs worksheet, or check the box if only two jobs and they earn roughly equal amounts)
-3. Step 3 — Dependents (multiply qualifying children under 17 by $2,000, other dependents by $500)
-4. Step 4 — Other adjustments (a) other income (b) deductions in excess of standard deduction (c) extra withholding per pay period
-5. Step 5 — Signature
-
-Employees with W-4s filed before 2020 ("pre-2020 W-4") are NOT required to submit a new W-4. The employer continues to compute withholding using the legacy allowances method per Pub 15-T's pre-2020 W-4 tables.
-
-- **Default if no W-4 on file** — Under Treas. Reg. §31.3402(f)(2)-1(a), if an employee does not furnish a W-4, the employer withholds as if the employee had checked the Single/MFS box on Step 1(c) with no other adjustments — i.e., the highest standard withholding tier.  _(Treas. Reg. §31.3402(f)(2)-1(a))_
-- **Exempt from withholding claim** — An employee may claim "Exempt" on Form W-4 only if (a) had no federal income tax liability the prior year AND (b) expects to have none the current year. The "Exempt" claim must be renewed annually by February 15. If not renewed, the employer reverts to withholding as Single with no adjustments.  _(Form W-4 instructions)_
-- **Mid-year W-4 adjustments effective date** — An employee may submit a new W-4 at any time. The employer must put the new W-4 into effect no later than the first payroll period ending on or after the 30th day from receipt (Treas. Reg. §31.3402(f)(3)-1(b)).  _(Treas. Reg. §31.3402(f)(3)-1(b))_
-
-## 9. Worker Classification — High-Level
-
-The classification of a worker as an employee (W-2) or independent contractor (1099-NEC) determines whether the payroll tax framework in this skill applies at all. The classification is a question of fact under federal common law as codified in §3121(d)(2) and refined by the IRS three-factor test (Rev. Rul. 87-41 with the 20-factor test, modernized to the three-category framework):
-
-1. **Behavioral control** — Does the firm direct and control how the work is done (instructions, training, evaluation systems)?
-2. **Financial control** — Does the worker have a significant investment, opportunity for profit/loss, ability to make services available to others, and an unreimbursed business expense risk?
-3. **Relationship type** — Written contracts, employee-type benefits (insurance, pension, vacation), permanency of relationship, services as a key activity of the business
-
-- **DOL 2024 Worker Classification Rule** — 29 C.F.R. Part 795, effective March 11, 2024 — applies for FLSA (wage-and-hour) purposes, not directly for FICA/FUTA, but is persuasive. The rule uses a six-factor "economic realities" test: 1. Opportunity for profit or loss depending on managerial skill 2. Investments by the worker and the potential employer 3. Degree of permanence of the work relationship 4. Nature and degree of control 5. Extent to which the work performed is integral to the potential employer's business 6. Skill and initiative For payroll tax purposes the IRS common-law test under §3121(d) controls. However, the DOL rule is a useful corroborating analysis, and a worker classified as an employee under the FLSA economic-realities test almost certainly will be classified as an employee for FICA purposes.  _(29 C.F.R. Part 795; IRC §3121(d))_
-- **Section 530 relief** — Revenue Act of 1978, P.L. 95-600 §530, never codified in IRC: An employer may avoid retroactive payroll tax liability for misclassification if: 1. The employer had a reasonable basis (judicial precedent, IRS ruling, prior IRS audit on the same issue, or long-standing industry practice) 2. The employer consistently treated the worker (and similar workers) as independent contractors 3. The employer filed all required information returns (Form 1099-NEC) on a basis consistent with treating the worker as an independent contractor  _(Revenue Act of 1978, P.L. 95-600 §530)_
-- **Voluntary Classification Settlement Program (VCSP)** — Allows an employer to reclassify workers as employees going forward with reduced past-period liability (10% of the employment tax liability for the most recent tax year, computed under the reduced rates of section 3509(a)). Application via Form 8952.  _([Form 8952](https://www.irs.gov/businesses/small-businesses-self-employed/voluntary-classification-settlement-program))_
-
-For independent contractor reporting (1099-NEC), see `us-1099-nec-issuance`. That skill covers the §6041A $600 threshold (rising to $2,000 for 2026 under OBBBA), the §6109 W-9 collection requirement, and the §3406 backup withholding mechanics.
-
-## 10. §6656 Failure-to-Deposit Penalty
-
-**Failure-to-deposit penalty tiers**  _([IRC §6656(b)(1)](https://www.irs.gov/pub/irs-prior/p15--2025.pdf))_
-
-| Days late | Penalty rate |
-| --- | --- |
-| 1-5 calendar days late | 2% |
-| 6-15 calendar days late | 5% |
-| 16+ days late, but before 10 days from the date of the first IRS notice asking for the tax due | 10% |
-| Not paid within 10 days after IRS notice and demand | 15% |
-
-- **Penalty applies per deposit** — The penalty applies to each deposit, not to the cumulative shortfall. So an employer who is 16 days late on the first deposit of the quarter and 3 days late on the second deposit owes 10% on the first underpayment and 2% on the second.  _(IRC §6656(b)(1))_
-- **§6651 failure-to-file penalty** — 5% per month, max 25%, if Form 941 itself is filed late  _(IRC §6651)_
-- **§6651 failure-to-pay penalty** — 0.5% per month, max 25%, if the tax shown on the return is not paid by the due date  _(IRC §6651)_
-- **§6672 Trust Fund Recovery Penalty (TFRP)** — 100% of the employee-portion of withheld tax (federal income tax withheld + employee FICA) assessed personally against any "responsible person" who willfully failed to collect, account for, or pay over. This is a personal liability that survives bankruptcy. Common targets: corporate officers, payroll service signatories, anyone with check-signing authority.  _(IRC §6672)_
-- **Reasonable cause exception** — Under §6656(a) and §6724 — penalty may be abated if the employer can show the failure was due to reasonable cause and not willful neglect. Documentation matters: documented banking error, EFTPS outage with same-day re-attempt, payroll service failure with employer due diligence.  _(IRC §6656(a); IRC §6724)_
-- **First-Time Abatement (FTA)** — Administrative relief under IRM 20.1.1.3.6.1 for employers with a clean compliance history (no penalties in the prior three tax years). One-time relief per taxpayer.  _(IRM 20.1.1.3.6.1)_
-
-## 11. Common Errors and Reconciliation Traps
-
-### 11.1 Social Security wage base mistakes
-
-**Mid-year crossing the $176,100 base** — payroll software should automatically stop the 6.2% Social Security withholding once an employee's YTD wages reach $176,100. Common failure modes:
-
-- Mid-year payroll system change (provider switch) loses the YTD tracker
-- Multiple EINs under common ownership not aggregated when they should be (or, conversely, aggregated when they shouldn't)
-- Bonus or commission paid through a separate "off-cycle" run that misses the YTD check
-- Negative wage adjustments (refund of overpaid wages) that the system doesn't apply to the YTD base
-
-**Multiple jobs at same EIN** — if an employee works for two divisions of the same employer with one EIN, there is one combined wage base. If the divisions have separate EINs and are unrelated, the employee will have excess SS withheld and reclaims it on Schedule 3 Line 11.
-
-### 11.2 HSA, §125, and Box 1/3/5 misalignment
-
-This is the single most common W-2 error in small-business payroll. The rules:
-
-- **HSA contribution via §125 cafeteria plan (payroll deduction with §125 election)** — excluded from Boxes 1, 3, AND 5 (and FUTA)
-- **HSA contribution NOT via §125 cafeteria plan** (e.g., employee writes a personal check, claims the deduction on Form 1040 Schedule 1) — Box 1 is unaffected by payroll; if the employer makes a contribution outside §125, the employer contribution is generally taxable wages
-
-The key practical question: was the HSA contribution funded through pre-tax payroll deduction under a written §125 cafeteria plan? If yes → exclude from all three boxes. If no → include in all three.
-
-Many small employers set up "HSA payroll deduction" without a written §125 plan document and incorrectly exclude from Boxes 1, 3, 5. The IRS position (Notice 2002-3 and Pub 969) is clear: no written §125 plan = no §125 exclusion.
-
-### 11.3 Tipped employees — Form 8027 and §3121(q)
-
-Restaurants and other large food/beverage establishments must file Form 8027 (Employer's Annual Information Return of Tip Income and Allocated Tips) if they:
-
-1. Operate a large food or beverage establishment (more than 10 employees on a typical business day in the prior calendar year), AND
-2. Tipping by customers is customary
-
-Form 8027 reports gross receipts, charged tips, and allocated tips. If reported tip income is less than 8% of gross receipts, the employer must allocate the shortfall among directly tipped employees (Box 8 on the W-2).
-
-The employer FICA on unreported tips — if the IRS later assesses additional tip income on a §3121(q) Notice and Demand, the employer owes the employer share of FICA on the unreported tips. The notice is reported on Form 941 Line 5f. The employee owes their share separately.
-
-### 11.4 Group-term life insurance over $50,000
-
-- **GTL imputed income treatment** — §79 excludes the cost of the first $50,000 of employer-provided group-term life insurance from wages. The cost of coverage above $50,000 is imputed income calculated using the IRS Uniform Premium Table I. The imputed amount is: - Box 1 wages — included - Box 3 SS wages — included - Box 5 Medicare wages — included - Box 12 Code C — reported separately - Federal income tax withholding — optional (not required); the employer may but is not required to withhold - FICA — required to withhold employee Social Security and Medicare on the imputed amount  _(IRC §79; IRS Uniform Premium Table I)_
-- **GTL for former employees** — For former employees (e.g., retirees still receiving employer-provided life insurance), the employer cannot withhold FICA from a paycheck because there is no paycheck. The uncollected FICA goes in Box 12 Code M (SS) and Code N (Medicare). The former employee pays the uncollected FICA on Form 1040.  _(IRC §79)_
-
-### 11.5 Retroactive wage adjustments
-
-- **Retroactive wage adjustment treatment** — If the employer discovers in Q3 that an employee was underpaid in Q1, the corrective wage payment is generally treated as a wage of the period in which it is paid (Q3 deposit and Q3 941). Form 941-X is used only when correcting a previously reported amount, not when paying additional wages discovered late. For W-2 purposes, the wages are reported in the year paid. If Q1 wages discovered and paid in Q3 of the same year — included in that year's W-2. If discovered and paid the next year — included in next year's W-2.
-
-### 11.6 Common 941 reconciliation errors
-
-- Line 2 (federal income tax wages) does not equal the sum of all W-2 Box 1 amounts because of timing differences (e.g., 12/31 payroll with check date 1/2)
-- Line 5a Col 1 (SS wages) > Line 5c Col 1 (Medicare wages) — impossible. Medicare is uncapped, SS is capped. Inverted ratio is always an error.
-- Line 5d (Additional Medicare wages × 0.009) reports the WAGES subject to Additional Medicare, not the tax — read the column header carefully
-- Schedule B liabilities don't reconcile to Line 12 — typically caused by entering a deposit date instead of the liability date, or by transposing months
-
-### 11.7 §125 cafeteria plan written-plan requirement
-
-- **§125 written plan document requirement** — A §125 cafeteria plan must have a written plan document to be effective. Many small employers offer "pre-tax health insurance" via payroll deduction without a written §125 plan. The IRS may recharacterize the deductions as after-tax, making the withheld premiums taxable wages. This is a high-frequency examination issue. The plan document need not be complex but must exist in writing and be available for IRS inspection.
-
-### 12.1 Example 1 — Small employer with 3 W-2 employees, quarterly 941
-
-**Q2 wages table**
-
-| Employee | Q2 gross wages | 401(k) pre-tax | §125 health premium | Federal income tax withheld |
-| --- | --- | --- | --- | --- |
-| Alice (owner-employee) | $25,000 | $1,500 | $1,200 | $4,200 |
-| Bob (shift lead) | $14,000 | $700 | $800 | $1,400 |
-| Carla (barista) | $7,200 | $0 | $0 | $360 |
-| **Totals** | **$46,200** | **$2,200** | **$2,000** | **$5,960** |
-
-**Facts**: Acme Coffee Roasters LLC (SMLLC taxed as an S-corp — owner is a separate employee/shareholder; for this skill we treat all three as W-2 employees and ignore S-corp specifics). Quarter ending June 30, 2025 (Q2). Three employees:
-
-- **Box 1 federal income tax wages (Line 2)** — $46,200 − $2,200 (401(k)) − $2,000 (§125) = $42,000  _(Computations section)_
-- **Box 3 / Line 5a Col 1 SS wages** — $46,200 − $2,000 (§125 only; 401(k) is NOT excluded from SS) = $44,200  _(Computations section)_
-- **Box 5 / Line 5c Col 1 Medicare wages** — $44,200 (same as SS, none crossed $176,100) = $44,200  _(Computations section)_
-
-**Form 941 Q2**
-
-| Line | Item | Amount |
+| Code | Situation | Action |
 | --- | --- | --- |
-| 1 | Employees on June 12 payroll | 3 |
-| 2 | Wages, tips, and other compensation | $42,000 |
-| 3 | Federal income tax withheld | $5,960 |
-| 5a Col 1 | SS wages | $44,200 |
-| 5a Col 2 | SS tax (× 0.124) | $5,480.80 |
-| 5c Col 1 | Medicare wages | $44,200 |
-| 5c Col 2 | Medicare tax (× 0.029) | $1,281.80 |
-| 5d Col 1 | Additional Medicare wages (none > $200k) | $0 |
-| 5d Col 2 | Additional Medicare tax | $0 |
-| 5e | Total FICA | $6,762.60 |
-| 6 | Total before adjustments (3 + 5e) | $12,722.60 |
-| 7 | Fractions of cents adjustment | $0 |
-| 10 | Total after adjustments | $12,722.60 |
-| 12 | Total taxes after credits | $12,722.60 |
+| R-PR-STATE | State withholding, SUTA, state disability or paid leave, local taxes | Use `us-state-payroll-matrix` |
+| R-PR-AGG | Section 3504 agent, CPEO or PEO filing an aggregate Form 941 or 940 (Schedule R) | Refer |
+| R-PR-TERR | Employer in a U.S. territory (Forms 941-SS or 944-SS, territorial W-2s) | Refer |
+| R-PR-NRA | Nonresident alien employees (chapter 3 withholding, Forms 1042 and 8233), totalization agreements | Refer |
+| R-PR-HH | Household employer | Refer: Schedule H (Form 1040) and Pub. 926 |
+| R-PR-TFRP | IRS has proposed a trust fund recovery penalty (Letter 1153) or is collecting unpaid payroll tax | Refer: `us-irs-collections-and-controversy` |
+| R-PR-CLASS | Disputed worker classification with past-year exposure, section 530 or VCSP | Refer after a first read in `us-1099-nec-issuance` |
+| R-PR-NQDC | Section 409A failures, section 3121(v)(2) special timing for deferred compensation | Refer |
+| R-PR-RAIL | Railroad employers (RRTA, Form CT-1), clergy, church employees, government employers (section 218 agreements) | Refer |
+| R-PR-OLDSICK | COVID-19 era sick and family leave credit claims | Refer: Form 941-X only |
+| R-PR-ACA | Employer mandate reporting (Forms 1094-C and 1095-C), Form 5500 | Refer |
 
-**Deposit schedule**: 2025 lookback period is 7/1/2023 – 6/30/2024. If Acme's total Form 941 liability over that period was under $50,000 → monthly depositor. Each month's accumulated tax is due by the 15th of the following month. Q2 monthly liabilities (assumed approximately equal): roughly $4,240 per month, all under $100,000 → next-day rule not triggered.
+## Filing and payment
 
-**Liability month / Deposit due**
-
-| Liability month | Deposit due |
+| What | 2026 due date |
 | --- | --- |
-| April 2025 | May 15, 2025 |
-| May 2025 | June 16, 2025 (15th is Sunday) |
-| June 2025 | July 15, 2025 |
+| Form 941, Q1 | 30 April 2026 (11 May 2026 if all deposits on time; 10 May is a Sunday) |
+| Form 941, Q2 | 31 July 2026 (10 August 2026 if all deposits on time) |
+| Form 941, Q3 | 2 November 2026 (31 October is a Saturday; 10 November 2026 if all deposits on time) |
+| Form 941, Q4 | 1 February 2027 (31 January is a Sunday; 10 February 2027 if all deposits on time) |
+| Monthly depositor | 15th of the following month |
+| Semiweekly depositor | Wednesday after a Wednesday to Friday payday; Friday after a Saturday to Tuesday payday |
+| FUTA deposits | 30 April 2026, 31 July 2026, 2 November 2026, 1 February 2027 (each only if over USD 500) |
+| Form 940 for 2026 | 1 February 2027 (10 February 2027 if all FUTA deposits on time) |
+| Forms W-2 to employees, and W-2 and W-3 to the SSA | 1 February 2027 |
+| Forms 944, 943, 945 for 2026 | 1 February 2027 |
 
-**Form 941 Q2 due**: July 31, 2025 (or August 11, 2025 — Aug 10 is Sunday — if all deposits timely).
+The 941 dates are the last day of the month after the quarter, moved to the next business day when it falls on a weekend or legal holiday (Instructions for Form 941, When To File; Pub. 15 (2026), Calendar). Form 941 and Form 940 are filed electronically through an authorised provider or on paper to the address in the instructions; balances are paid electronically. Every deposit goes through EFTPS or a same-day wire.
 
-### 12.2 Example 2 — Mid-size employer crossing $176,100 wage base mid-year for one executive
+## Completion checklist
 
-**Facts**: TechCo Inc. has 8 employees in 2025. Carol (CEO) earns $300,000/year, paid as $25,000/month (no commissions, no bonus). All other employees earn under $176,100. We focus on the wage-base crossover for Carol.
+- Deposit schedule set from the original line 12 amounts for 1 July 2024 to 30 June 2025, and no USD 100,000 day missed.
+- Every deposit matched to a pay date and an EFTPS acknowledgement; Schedule B total equals line 12 for semiweekly depositors.
+- Box 3 at most USD 184,500 per employee per employer, including any predecessor wages and any mid-year provider change.
+- 0.9% Additional Medicare withheld from the pay period wages passed USD 200,000; line 5d column 1 shows the wages, not the tax.
+- Every difference between boxes 1, 3 and 5 explained by a deduction type, and a written section 125 plan exists for each pre-tax health or HSA deduction.
+- Codes TP and TT, and box 14b, filled for every tipped or FLSA-overtime employee; code TA for Trump account contributions.
+- Four Forms 941 reconciled to the W-3 before filing.
+- Schedule A attached and the California 1.5% included in the fourth-quarter FUTA deposit where wages were paid in California.
+- Forms W-2 e-filed if the employer files 10 or more information returns in total.
+- Current Form W-4 for every employee; 2026 exemption claims renewed by 16 February 2027.
+- Any late deposit identified, with the reasonable-cause facts documented.
 
-**Carol's monthly wages** = $25,000.
+## Sources
 
-**SS wages monthly table**
-
-| Month | Cumulative gross wages | SS wages in this month | SS wages cumulative | SS withheld this month |
-| --- | --- | --- | --- | --- |
-| January | $25,000 | $25,000 | $25,000 | $1,550.00 |
-| February | $50,000 | $25,000 | $50,000 | $1,550.00 |
-| March | $75,000 | $25,000 | $75,000 | $1,550.00 |
-| April | $100,000 | $25,000 | $100,000 | $1,550.00 |
-| May | $125,000 | $25,000 | $125,000 | $1,550.00 |
-| June | $150,000 | $25,000 | $150,000 | $1,550.00 |
-| July | $175,000 | $25,000 | $175,000 | $1,550.00 |
-| August | $200,000 | **$1,100** (only $176,100 − $175,000) | $176,100 | $68.20 |
-| September | $225,000 | $0 | $176,100 | $0 |
-| October | $250,000 | $0 | $176,100 | $0 |
-| November | $275,000 | $0 | $176,100 | $0 |
-| December | $300,000 | $0 | $176,100 | $0 |
-
-- **SS wages for the year and total employee SS withheld** — SS wages for the year: $176,100 (capped). Total employee SS withheld: $176,100 × 6.2% = $10,918.20.
-
-**Medicare and Additional Medicare table**
-
-| Month | Cumulative wages | Medicare wages this month | Additional Medicare 0.9% withheld? |
-| --- | --- | --- | --- |
-| Jan-Aug | up to $200,000 | $25,000/month | No (cumulative wages threshold not crossed) |
-| August (end) | $200,000 | (No Add'l Medicare yet — threshold is "in excess of $200,000") |  |
-| September | $225,000 | $25,000 | Yes — $25,000 × 0.9% = $225 (because YTD wages now exceed $200,000; the employer withholds 0.9% on the portion of wages in the pay period that causes total to exceed $200,000 and on all wages thereafter in the calendar year) |
-| Oct, Nov, Dec | $25,000/month | Yes — $225/month |  |
-
-- **Total Additional Medicare withheld in 2025 by employer** — $100,000 × 0.9% = $900 (on wages from $200,001 to $300,000).
-
-**Form 941 Q3 reporting for Carol** (other employees omitted for clarity):
-
-- Line 5a Col 1 (SS wages): July = $25,000; August = $1,100; September = $0 → Q3 SS wages = **$26,100**
-- Line 5c Col 1 (Medicare wages): Q3 = $25,000 × 3 = **$75,000**
-- Line 5d Col 1 (Additional Medicare wages subject to 0.9%): September only = **$25,000**
-- Line 5d Col 2 (Additional Medicare tax): $25,000 × 0.009 = **$225**
-
-**W-2 for Carol**:
-
-- Box 1: $300,000 (assuming no pre-tax 401(k) or §125)
-- Box 3: **$176,100** (capped at the wage base)
-- Box 4: $176,100 × 6.2% = $10,918.20
-- Box 5: **$300,000** (uncapped Medicare)
-- Box 6: $300,000 × 1.45% = $4,350 PLUS $100,000 × 0.9% = $900 = **$5,250** total
-
-- **Common error** — Reporting Box 3 as $300,000 (forgetting the cap) or as $200,000 (confusing the Additional Medicare threshold with the SS wage base). Always Box 3 = lesser of (FICA wages, $176,100); Box 5 = full FICA wages with no cap.  _(Common error note)_
-
-### 12.3 Example 3 — Employer in California (credit reduction state) computing FUTA
-
-**Facts**: BeachCo LLC pays wages in California only. 2025 calendar year. 12 employees. Total taxable wages per employee (first $7,000 each):
-
-**FUTA taxable wages table**
-
-| Employees | First $7,000 each | Total FUTA-taxable wages |
+| Source | URL | Read on |
 | --- | --- | --- |
-| 12 employees who each earned > $7,000 | $7,000 × 12 | $84,000 |
+| IRS Pub. 15 (2026), Employer's Tax Guide. Read for What's New (6.2%, $184,500, 1.45%, 22% and 37% over $1 million, $3,000 household, $2,500 election workers, tips and overtime, moving expenses, Trump accounts), Calendar (16 February W-4 expiry), sections 5 to 9 (supplemental wages, W-4), section 11 (Table 1 lookback, $50,000, semiweekly table, $100,000 rule, $2,500 payment with return, 8:00 p.m. EFTPS cutoff, deposit penalty tiers, section 7430 limits, trust fund recovery penalty), section 12 (filing and payment penalties) and section 14 (FUTA 6.0%, $7,000, 5.4%, 0.6%, $1,500 and 20-week tests, $500 deposits, Table 4, credit reduction in the fourth quarter) and section 15 (wage treatment chart). | https://www.irs.gov/pub/irs-pdf/p15.pdf | 2026-11-13 |
+| IRS Pub. 15-T (2026), Federal Income Tax Withholding Methods. Read for What's New (2026 tables updated for Public Law 119-21, 2026 Form W-4 exemption checkbox, tips and overtime). | https://www.irs.gov/pub/irs-pdf/p15t.pdf | 2026-11-13 |
+| Form 941 (Rev. March 2026). Read for lines 1 to 16 and the 0.124, 0.029 and 0.009 multipliers. | https://www.irs.gov/pub/irs-pdf/f941.pdf | 2026-11-13 |
+| Instructions for Form 941 (Rev. March 2026). Read for What's New (aggregate filers, direct deposit refunds), When To File, line 5d ($200,000 withholding trigger) and line 11 (research credit against employer Social Security up to $250,000 per quarter, then Medicare). | https://www.irs.gov/pub/irs-pdf/i941.pdf | 2026-11-13 |
+| Instructions for Form 940 (2025). Read for the return structure, Schedule A mechanics and the amended-return route; the 2026 edition is not yet published. | https://www.irs.gov/pub/irs-pdf/i940.pdf | 2026-11-13 |
+| Schedule A (Form 940) 2025. Read for the credit reduction computation and the 2025 rates (California 0.012, U.S. Virgin Islands 0.045), used only to check what changed. | https://www.irs.gov/pub/irs-pdf/f940sa.pdf | 2026-11-13 |
+| U.S. Department of Labor, Final 2026 FUTA Credit Reductions (updated 10 November 2026), linked from the FUTA Credit Reductions page. Read for California 1.5% with the benefit cost rate add-on waived, and the U.S. Virgin Islands at zero after repayment. | https://oui.doleta.gov/unemploy/docs/final_credit_states_2026.xlsx | 2026-11-13 |
+| U.S. Department of Labor, FUTA Credit Reductions page. Read for the 10 November repayment rule and the 0.6% plus reduction formula. | https://oui.doleta.gov/unemploy/futa_credit.asp | 2026-11-13 |
+| General Instructions for Forms W-2 and W-3 (2026). Read for What's New ($2,000 wage reporting threshold, box 14a and 14b, codes TP, TT and TA, $2,500 Trump account contribution), the 1 February 2027 due date, e-filing at 10 returns, Form 8508, box 12 codes and the $60, $130 and $340 penalties. | https://www.irs.gov/pub/irs-pdf/iw2w3.pdf | 2026-11-13 |
+| Form W-4 (2026). Read for Step 3 ($2,200 and $500), the Step 4(b) worksheet and the exemption checkbox with renewal by 16 February 2027. | https://www.irs.gov/pub/irs-pdf/fw4.pdf | 2026-11-13 |
+| Instructions for Form 8027 (2026). Read for the 8% tip allocation rule. | https://www.irs.gov/pub/irs-pdf/i8027.pdf | 2026-11-13 |
+| IRS Voluntary Classification Settlement Program page. Read for the 10% payment at section 3509(a) reduced rates. | https://www.irs.gov/businesses/small-businesses-self-employed/voluntary-classification-settlement-program | 2026-11-13 |
+| 26 U.S.C. 1401 (govinfo). Read for the $250,000 joint Additional Medicare threshold (library figure). | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap2-sec1401.htm | 2026-11-13 |
+| IRS Additional Medicare Tax questions and answers. Read for the $125,000 married filing separately threshold (library figure). | https://www.irs.gov/businesses/small-businesses-self-employed/questions-and-answers-for-the-additional-medicare-tax | 2026-11-13 |
 
-- **Computation assuming CA is a credit reduction state for 2024 at 0.9%** — Gross FUTA: $84,000 × 6.0% = $5,040.00; State UI credit: maximum 5.4% × $84,000 = $4,536.00, less the credit reduction adjustment; Credit reduction (1.2%): $84,000 × 1.2% = $1,008.00 — this is the additional FUTA owed; Effective FUTA: ($84,000 × 0.6%) + ($84,000 × 1.2%) = $504 + $1,008 = $1,512.00; Per employee: $1,512 / 12 = $126.00  _([final 2024 status finalized November 2024](https://www.irs.gov/pub/irs-prior/f940sa--2025.pdf))_
-
-**Form 940 reporting**:
-
-- Part 2 Line 7 (Total FUTA wages): $84,000
-- Part 1 Line 2: Credit reduction states → check the box → attach Schedule A
-- **Schedule A (Form 940)**: Check the CA box; enter $84,000 in the CA row; credit reduction rate 0.012; credit reduction amount $1,008
-- Total FUTA tax (Line 12 of Form 940): $84,000 × 0.006 = $504 (base) plus $1,008 (Schedule A credit reduction) = **$1,512.00**
-
-**FUTA deposit schedule**: Total annual FUTA liability $1,512 > $500 — quarterly deposits required when accumulated liability exceeds $500 within the quarter.
-
-Assuming relatively even payroll across the year and the wage base concentration in Q1-Q2:
-
-- Q1 (Jan-Mar): about $42,000 of FUTA-taxable wages → $42,000 × 0.6% = $252 (no credit reduction is added until year-end) — accrued $252 < $500 → carry forward
-- Q2 (Apr-Jun): about $42,000 FUTA-taxable wages → $252 — cumulative through Q2 = $504 > $500 → **deposit by July 31** → $504
-- Q3, Q4: zero FUTA-taxable wages (all employees over $7,000) → no additional deposit until year-end
-- Year-end: credit reduction of $1,008 is a fourth-quarter liability → **included with the fourth quarter deposit, due February 2, 2026**
-
-(The credit reduction $1,008 is paid with the return rather than via quarterly deposit, because the credit reduction adjustment is computed on Schedule A at year-end. The IRS instructions for Form 940 confirm this treatment — see line 16 instructions, "if Line 9 or 10 applies"… effectively, the additional credit-reduction FUTA tax is owed at the time of filing.)
-
-**Form 940 due date**: January 31, 2026 (or February 10, 2026 if all deposits including the $504 Q2 deposit were timely).
-
-**Worked-example note for the reviewer**: The 2025 Schedule A (Form 940) sets the California credit reduction rate at 0.012 (1.2%), which this example uses. If CA repaid its Title XII loans during 2025, the credit reduction may not apply.
-
-### 12.4 Example 4 — Reconciliation of all four 941s to the W-3 (brief)
-
-**Facts**: Same TechCo Inc. as Example 2, full year, 8 employees. The full year totals across the four 941s should match the W-3:
-
-**Reconciliation table**
-
-| Item | Sum of four 941s | W-3 totals |
-| --- | --- | --- |
-| Total wages (Line 2) | $1,800,000 (illustrative) | Box 1 = $1,800,000 |
-| Federal income tax withheld (Line 3) | $360,000 | Box 2 = $360,000 |
-| SS wages (Line 5a Col 1) | $1,408,800 (Carol capped at $176,100 + 7 others at full wages) | Box 3 = $1,408,800 |
-| SS tax (Line 5a Col 2) | $174,691.20 | Box 4 = $87,345.60 (employee half only) |
-| Medicare wages (Line 5c Col 1) | $1,800,000 (uncapped) | Box 5 = $1,800,000 |
-| Medicare tax (Line 5c Col 2 + 5d Col 2) | $53,100 (Medicare) + $900 (Add'l Med) = $54,000 (employer + employee combined for Medicare; Add'l is employee only) | Box 6 = $27,000 (employee Medicare half) + $900 (employee Add'l Medicare) = $27,900 |
-
-- **Note on Box 4 / Box 6 vs 941** — Box 4 and Box 6 on W-2/W-3 are the EMPLOYEE half only. Form 941 Lines 5a Col 2 and 5c Col 2 report the COMBINED employer + employee. Divide the 941 amount by 2 (for SS) and by 2 (for regular Medicare, then add the Additional Medicare which is 100% employee). If W-3 totals don't match the four 941s, the SSA sends a CAWR discrepancy notice. The employer typically has 45 days to respond with reconciliation.  _(Note on Box 4 / Box 6 vs 941)_
-
-## 13. Self-Checks Before Reviewer Sign-Off
-
-Before delivering Form 941, Form 940, or W-2/W-3 outputs:
-
-1. **Wage base cap check** — Confirm Box 3 SS wages ≤ $176,100 per employee for 2025. Cumulative across the year, including any predecessor-employer credit if applicable.
-2. **Box 1 vs Box 3/5 reconciliation** — Identify and document every difference between Box 1, Box 3, and Box 5 for each employee. Common drivers: 401(k), Roth 401(k), §125, HSA, GTL > $50k. Each driver should be either reported in Box 12 (codes D, AA, W, C) or be implicit (§125).
-3. **§125 written-plan check** — If the employer excluded health premiums, dental, vision, or HSA contributions from any Box, confirm a written §125 cafeteria plan document exists.
-4. **Additional Medicare 0.9%** — For each employee with YTD wages > $200,000, confirm the employer withheld 0.9% on the portion exceeding $200,000 and reported on Line 5d.
-5. **Quarterly 941 sum = W-3** — Reconcile sum of four 941s to W-3 totals; document any differences (typical: Q4 12/31 payroll check-dated 1/2 of next year, third-party sick pay).
-6. **Deposit schedule** — Identify the lookback period (7/1 of two years prior through 6/30 of prior year) and the monthly vs semiweekly classification. Confirm next-day rule was not triggered.
-7. **Schedule B (if semiweekly)** — Each daily liability matches the corresponding EFTPS deposit within the allowed days.
-8. **Form 940 Schedule A** — If any wages were paid in a credit reduction state, Schedule A is attached and the credit reduction is applied.
-9. **2024 credit reduction states** — For Form 940 filed in January 2025 for tax year 2024, confirm against DOL November 2024 announcement (CA 0.9%, NY 0.9%, VI 4.2%, others as applicable).
-10. **2025 credit reduction states** — For Form 940 to be filed January 2026 for tax year 2025, confirm against DOL November 2025 announcement before finalizing.
-11. **W-2 due January 31** — Both employee copies and SSA filing.
-12. **10+ information return e-file mandate** — If the employer has 10+ information returns in aggregate (W-2, 1099-NEC, 1099-MISC, etc.), confirm electronic filing via SSA BSO and IRS IRIS/FIRE.
-13. **EFTPS enrollment** — Confirm employer is enrolled and has the PIN; no paper Form 8109 attempted.
-14. **§6656 deposit penalty exposure** — Identify any late deposits and document reasonable-cause facts.
-15. **Worker classification** — For any disputed 1099 contractor, document the §3121(d) common-law factors and §530 relief eligibility.
-16. **W-4 on file** — Each employee has a current W-4; "Exempt" claims renewed annually by February 15.
-17. **Form 944 eligibility** — If the IRS notified the employer of 944 eligibility and the employer is filing 941, document the conversion request (or vice versa).
-
-## 14. Cross-References
-
-- `us-1099-nec-issuance` — for independent contractor reporting, the §6041A threshold (2026 increase to $2,000 per OBBBA), §3406 backup withholding, and the W-9 collection requirement
-- `us-schedule-c-and-se-computation` — for self-employed owner SE tax (no 941 obligation for the sole proprietor's own earnings)
-- `us-quarterly-estimated-tax` — for individual Form 1040-ES safe-harbor estimated tax (separate from Form 941 deposits)
-- `us-tax-workflow-base` — for the workflow runbook, intake form, and global refusal catalogue
-- `us-federal-return-assembly` — when the employer is a sole proprietor and the payroll output feeds into the Schedule C deduction for "wages" (Line 26)
-
-## 15. Provenance
-
-This skill is based on the following primary sources, all current as of November 15, 2025:
-
-**Statutory**:
-
-- IRC §3101 (FICA employee tax), §3111 (FICA employer tax), §3121 (FICA wages and definitions), §3301-3311 (FUTA), §3401 (income tax withholding wages), §3402 (income tax withholding), §3406 (backup withholding), §6011 (return filing), §6051 (W-2 furnishing), §6071 (timely filing), §6109 (TIN), §6302 (deposit rules), §6656 (failure-to-deposit penalty), §6672 (TFRP), §6721/§6722 (information return penalties)
-- Social Security Act §230 (wage base computation)
-- One Big Beautiful Bill Act of 2025 (P.L. 119-21, July 4, 2025) — for the 2026 1099-NEC threshold change to $2,000 (referenced via `us-1099-nec-issuance`)
-- Inflation Reduction Act of 2022 (P.L. 117-169) — for the §41(h) qualified small business payroll tax credit Medicare-portion increase to $250,000
-
-**Regulatory**:
-
-- Treas. Reg. §31.3402(f) (W-4 administration)
-- Treas. Reg. §31.6302-1 (deposit schedule, EFTPS mandate)
-- Treas. Reg. §31.6071(a)-1 (10-day timely-deposit extension)
-- Treas. Reg. §31.6402(a)-2 (overcollected tax refund)
-- Treas. Reg. §31.6051-1 (W-2 furnishing)
-- T.D. 9972 (final regulations on electronic filing of information returns, effective for returns required to be filed on or after January 1, 2024, reducing the threshold from 250 to 10 aggregate returns)
-- 29 C.F.R. Part 795 (DOL Worker Classification rule, effective March 11, 2024) — referenced
-
-**IRS Publications and Forms**:
-
-- Pub 15 (Circular E), Employer's Tax Guide, 2025 edition
-- Pub 15-A, Employer's Supplemental Tax Guide, 2025 edition
-- Pub 15-B, Employer's Tax Guide to Fringe Benefits, 2025 edition
-- Pub 15-T, Federal Income Tax Withholding Methods, 2025 edition
-- Pub 51 (Circular A), Agricultural Employer's Tax Guide, 2025 edition (for §6 Form 943)
-- Pub 80 (Circular SS), for US Territory employers (not in scope, listed for completeness)
-- Pub 926, Household Employer's Tax Guide (not in scope, listed for completeness)
-- Pub 969, Health Savings Accounts and Other Tax-Favored Health Plans
-- Form 941 (2025 quarterly revisions) and instructions
-- Form 940 (2024 — filed January 2025) and 2025 (filed January 2026) instructions
-- Schedule A (Form 940) — Multi-State Employer and Credit Reduction Information
-- Schedule B (Form 941) — Report of Tax Liability for Semiweekly Schedule Depositors
-- Schedule R (Form 941) — Allocation Schedule for Aggregate Form 941 Filers (PEO/CPEO)
-- Form W-2 and General Instructions for Forms W-2 and W-3 (2025)
-- Form W-3 and W-3c
-- Form W-2c
-- Form W-4 (2025 revision)
-- Form 8959 (Additional Medicare Tax)
-- Form 8027 (Tip income)
-- Form 8974 (Qualified Small Business Payroll Tax Credit)
-
-**Administrative**:
-
-- Rev. Rul. 87-41 (20-factor worker classification test) — superseded for analytical structure but the underlying common-law factors remain authoritative under §3121(d)(2)
-- Rev. Proc. 2024-40 (2025 inflation adjustments for income tax brackets, applied to Pub 15-T withholding tables)
-- Notice 2002-3 (cafeteria plan written-plan requirement)
-- IRM 20.1.1 (Penalty Handbook) — for First-Time Abatement and reasonable-cause procedures
-- DOL Credit Reduction State announcements at oui.doleta.gov/unemploy/futa_credit.asp (November 2024 for tax year 2024 Form 940; November 2025 for tax year 2025 Form 940)
-- SSA Fact Sheet on 2025 Social Security Changes (October 10, 2024) — for the $176,100 wage base
-- IRS news release IR-2024-273 and Rev. Proc. 2024-40 for 2025 figures
-
-**Verification status**: The $176,100 wage base, the 0.6%/1.5% effective FUTA rates, the credit reduction state list (CA, NY, VI for 2024), and the 0.9% Additional Medicare employer withholding threshold of $200,000 are all verified against the cited primary sources as of November 15, 2025. The 2025 final credit reduction state list (for Form 940 to be filed January 2026) must be re-verified against the DOL November 2025 announcement before any 2025 Form 940 is finalized. The 2026 backup withholding rate, 2026 SS wage base, and 2026 OBBBA-driven 1099-NEC threshold are referenced as scope notes; this skill does not produce 2026 returns.
-
-**Reviewer**: pending. This skill has not yet been reviewed by a Circular 230-credentialed practitioner. No Form 941, Form 940, W-2, or W-3 output should be filed without independent review and signature by a CPA, EA, or attorney licensed to practice before the IRS.
+Not yet confirmed: the 2026 Form 940, its instructions and the 2026 Schedule A were not yet published when read, so Form 940 line numbers are not quoted and the 2026 credit reduction comes from the Department of Labor's final list; the IRS has not yet printed the 2026 Schedule A rate. The adoption assistance FUTA treatment was not checked against Pub. 15-B (2026). The first-time abatement criteria are stated from IRS practice, not from a 2026 page read today.

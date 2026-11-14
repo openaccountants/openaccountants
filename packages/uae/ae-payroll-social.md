@@ -1,14 +1,15 @@
 ---
 name: ae-payroll-social
 description: "Use this skill for UAE payroll questions in tax year 2026: why wages are outside Corporate Tax, employee versus self-employed, directors' fees, Corporate Tax deduction of staff costs and private pension contributions, and VAT recovery on staff benefits, including the 1 October 2026 rules and the FTA cases for transport, food, accommodation, phones and parking. Names the pension, gratuity, Wage Protection System and unemployment insurance duties and who to confirm them with; it does not state their rates. Trigger on: UAE payroll, Dubai salary tax, gratuity, GPSSA, staff accommodation VAT, employee benefits UAE."
-version: 1.3
+version: 1.4
 category: PR
 jurisdiction: AE
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
+type: computation
 ---
 
 # UAE payroll for tax year 2026: wages outside Corporate Tax, what the employer's tax return and VAT return do with payroll, and the pension, gratuity and insurance points to confirm

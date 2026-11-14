@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/italy-vat-return"
   jurisdiction: "IT"
   tax_year: "2026"
-  last_updated: "2026-11-11"
+  last_updated: "2026-11-14"
 ---
 
-# Italian VAT return: periodic settlement, LIPE and payment (regime ordinario), tax year 2026 v2.2
+# Italian VAT return: periodic settlement, LIPE and payment (regime ordinario), tax year 2026 v2.3
 > **Source-cited draft: not reviewed by an accountant.** This skill is general tax reference material for AI-assisted work. It has not been reviewed for any business's facts. Do not rely on it to file, pay or take a position without review by a qualified professional in Italy.
 
 **What this skill does.** It takes an Italian business under the regime ordinario from its invoices and bank lines to a settled VAT period: which rate applies, which VP row each amount goes in, when the tax is paid by F24, when the LIPE is sent, and what a late or wrong payment costs. Figures come from D.P.R. 633/1972 (the VAT decree) and its Tabella A, D.P.R. 100/1998, D.P.R. 542/1999, D.L. 78/2010, D.Lgs. 127/2015, and the penalty decrees D.Lgs. 471/1997 and 472/1997 as reformed by D.Lgs. 87/2024, all read on Normattiva on 24 October 2026, plus Agenzia delle Entrate pages.
@@ -271,4 +271,4 @@ Not yet confirmed: whether the EU Council has authorised the logistics reverse c
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-11. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `italy-vat-return` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/italy-vat-return. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `italy-vat-return` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/italy-vat-return. If neither is available, confirm every figure against the official source pages cited above before relying on it.

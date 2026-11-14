@@ -1,14 +1,15 @@
 ---
 name: me-cross-border
 description: "Montenegro corporate cross-border tax for tax year 2026 under the Corporate Profit Tax Law. Covers company residence (incorporation or place of actual management), permanent establishments, the 15% withholding tax on dividends, interest, royalties, capital gains, rents, consulting, market research and audit fees and performers' fees paid to nonresident companies, the 30% rate for companies from the Ministry's list of low-tax territories, treaty relief and its evidence, the nonresident's own 30-day return for capital gains and rents, the annual withholding report due by end of February, credits for foreign tax on business profit and on dividends from foreign subsidiaries, fines and late-payment interest, the EU-directive and 2027 changes that do not apply in 2026, and where the global minimum tax for groups with EUR 750 million revenue sits. Trigger phrases: porez po odbitku, nerezident, stalna poslovna jedinica, Montenegro withholding tax, Montenegro foreign tax credit, double tax treaty Montenegro."
-version: 0.1
+version: 0.2
 jurisdiction: ME
 tax_year: 2026
-last_updated: 2026-10-30
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: cross-border
+type: situation-rules
 ---
 
 # Montenegro corporate cross-border tax, tax year 2026
