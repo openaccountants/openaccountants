@@ -17,7 +17,6 @@ depends_on:
 ---
 
 # Heard Island and McDonald Islands: selected territorial scope, 2026 v1.0
-
 > **Source-cited draft.** Written by Ryan Duguid; brought to the 2026 standard by Claude. Built from the Heard Island and McDonald Islands Act 1953 and the Commonwealth tax, superannuation, GST and corporations compilations of 2026. No accountant has reviewed it.
 
 **Answer first.** Heard Island and McDonald Islands (HIMI, an Australian external territory) receive ACT non-criminal law "as if the Territory formed part of the Australian Capital Territory", so far as applicable and not inconsistent with an Ordinance (HIMI Act s5(1)). The income tax Acts, FBT, superannuation guarantee and PAYG withholding expressly extend to HIMI through the definition of Australia. GST is different: external Territories are outside the indirect tax zone (GST Act s195-1), so the s9-25 connection rules decide each supply. Geographic inclusion does not establish residence, income source, employer coverage, a taxable supply, registration or an amount.
