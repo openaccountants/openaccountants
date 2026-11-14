@@ -1,228 +1,239 @@
 ---
 name: global-vehicle-expenses
-description: Vehicle expense deduction rules across the top 10 jurisdictions for freelancers and self-employed individuals. Covers per-kilometre/mileage rates, actual cost methods, logbook requirements, business-use caps, and common mistakes.
-version: 0.1
+description: "Compare supported 2026 vehicle expense methods across countries. Establish taxpayer, ownership, journey purpose, dates and business use before selecting rates or actual costs. Distinguish employee allowances from self-employed deductions, keep mileage/receipt evidence and route unconfirmed country restrictions before posting."
+version: 1.0
 jurisdiction: GLOBAL
-tax_year: 2025
-last_updated: 2026-07-13
-category: patterns
+tax_year: 2026
+last_updated: 2026-11-14
+category: bookkeeping
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
-domain: bookkeeping
+domain: tax
+type: cross-country-method
+checked_on: 2026-11-14
 ---
 
-# Global Vehicle Expenses
+# Vehicle costs, mileage and business-use allocation v1.0
 
-## Global Vehicle Expense Pattern Library v0.1
+## Scope and required facts
 
-## What this file is
+Checked on 2026-11-14 for 2026 and the expressly named non-calendar tax years. This is a method for actual-cost, mileage and private-use workpapers, not a universal mileage allowance. Obtain country/subnational jurisdiction, employee/sole trader/partner/company role, owned/leased/private/business vehicle status, car/type/seats and weight, acquisition/lease/loan dates, original list price and CO2/range evidence, tax year, business/commute/private journeys, odometers and receipts, reimbursements, earlier method/depreciation choices, VAT/GST status and all currency details. Do not invent a 'credible' business-use percentage from a profession.
 
-**Functional role:** Vehicle expense deduction rules and calculation methods by jurisdiction
-**Status:** Active reference data
+## The method, step by step
 
-Vehicle expenses are a high-audit-risk category because the line between business and personal use is inherently blurred. Every jurisdiction requires some method of distinguishing business trips from personal trips. This file provides the rules, rates, and logbook requirements for the top 10 jurisdictions.
+1. **Identify the taxpayer and journey.** Ordinary home-to-regular-workplace travel must be separated from client visits, temporary locations, travel between workplaces and business errands. Apply that country's actual treatment; the old claim that commuting has no relief anywhere was false. Germany expressly provides a separate commute deduction. A qualifying home office or another statutory exception can change the analysis elsewhere; no automatic worldwide prohibition or permission is supplied.
+2. **Preserve journey evidence.** Record date, origin/destination, purpose, distance and odometers, total annual kilometres/miles, vehicle changes, period and actual personal use. Reconcile opening/closing odometers, receipts, service records and calendar/client appointments. Apply the jurisdiction's timing, representative-sample and exceptional-reconstruction rules, rather than inventing a universal daily/bound-log requirement or an unsupported estimate after year end.
+3. **Choose only an eligible method.** An employee reimbursement rate is not automatically a sole-trader deduction. Test vehicle ownership, earlier elections/depreciation, lease restrictions, fleet/business-use rules and country requirements. Compare eligible mileage and actual costs using the same supplied facts. Do not add fuel, insurance, depreciation or other costs already covered by a mileage amount. Parking/tolls and finance charges require the precise country's rule.
+4. **Compute actual costs correctly.** Separate running costs, lease/loan principal, interest, asset cost, tax capital allowances/depreciation and private use. Book depreciation is not automatically the tax deduction. Apply current acquisition-date caps and adjust for eligible VAT/GST credits before a tax claim. A higher purchase price does not prove all excess is nondepreciable in every vehicle class. Own company-car benefits need the separate payroll/fringe-benefit method.
+5. **Separate indirect tax.** Establish actual charged tax, taxable commercial activity, evidence and passenger-car blocks/adjustments. Do not calculate VAT on insurance or another exempt charge merely from a cost total. Income-tax business use does not establish VAT recovery. Use the country VAT/GST method for fuel scales, ITC/capital vehicle rules, partial exemption and later change of use.
+6. **Deliver a proposal.** Show the log-to-business-use bridge, chosen method and rejected alternatives, date-specific rates, excluded commute/private/reimbursed items, asset/capital schedule, income-tax/VAT differences and proposed accounts. Retain prior elections/carryovers and unresolved items. For read-only books, provide postings/import for human approval, not a claim that anything was filed or posted.
 
-## The fundamental rule
+## United States
 
-- **Commuting is not a business trip** — Commuting is NOT a business trip. Travel from home to your regular place of work is commuting. It is personal, and it is NOT deductible in ANY jurisdiction (though Germany has a partial commute allowance, the Entfernungspauschale, which is technically a reduction in taxable income rather than a business expense). Business trips include: travel to client sites, travel to meetings, travel to temporary workplaces, travel between business locations, travel to the bank/post office for business errands.
+### Business mileage and actual costs
 
-## Vehicle expense rules by jurisdiction
+| Rule | Value and condition | Official source |
+|---|---|---|
+| 2026 business mileage, first period | USD 0.725 per eligible business mile from 1 January through 30 June 2026, subject to method eligibility | https://www.irs.gov/tax-professionals/standard-mileage-rates |
+| 2026 business mileage, second period | USD 0.76 per eligible business mile from 1 July through 31 December 2026; Announcement2026-11 modifies Notice2026-10 | https://www.irs.gov/irb/2026-29_irb |
+| Fleet exclusion | Standard mileage unavailable for five or more cars used simultaneously; alternating vehicles is different | https://www.irs.gov/publications/p463 |
+| Accelerated depreciation restriction | Qualified business use 50% or less triggers the stated straight-line/recapture rules rather than accelerated deductions | https://www.irs.gov/publications/p463 |
 
-### United States
+For an owned car, choose standard mileage in its first business-use year to retain later eligibility. Later actual expenses do not impose the old unconditional 'never switch back' rule; the actual depreciation/section179/bonus history and IRS exclusions decide. A leased car using mileage must keep that method for the whole lease including renewals. Switching an owned car from mileage to actual requires the proper remaining-life straight-line method and basis reduction. Do not combine mileage with the operating/depreciation costs it covers; eligible business parking/tolls are separate. Loan interest can have separate self-employed treatment. Actual expenses use supported business/total miles and receipts with the applicable depreciation/lease rules. [Publication 463, Car Expenses](https://www.irs.gov/publications/p463).
 
-**United States vehicle expense methods**
+Record at or near the trip; weekly records can be timely, representative sampling can qualify with supporting proof, and destroyed/incomplete records have specific corroboration routes. The old categorical assertion that reconstruction is never accepted was false. Regular commuting and parking at the regular workplace differ from visiting a client or travel from a qualifying principal-place home office. Ordinary unreimbursed employee deductions and the specified statutory employee exceptions require the current employee method. Publication 463 here is the 2025 edition; its 2025 mileage and luxury-car limits are not 2026 values. Current 2026 depreciation dollar caps are held, not guessed.
 
-placeholder
+## United Kingdom
 
-**United States vehicle expense methods**  _(IRS Rev. Proc. (annual); IRC Section 274(d); IRC Section 162; Section 280F)_
+### Sole traders and eligible partnerships, 2026-27
 
-| Method | Rate/Formula | Log required? | Business use cap | Citation |
-| --- | --- | --- | --- | --- |
-| **Standard mileage rate** | **70 cents per mile** (2025, IRS announced rate — verify annually) | Yes. Must maintain a contemporaneous mileage log: date, destination, business purpose, miles driven. | No personal miles can be claimed. Must have records to substantiate business vs. personal split. | IRS Rev. Proc. (annual); IRC Section 274(d) |
-| **Actual expense method** | Total actual vehicle costs (gas, oil, tires, repairs, insurance, registration, depreciation/lease payments) multiplied by (business miles / total miles). | Yes. Same log requirement. Also need all receipts for actual expenses. | Depreciation limits (luxury auto caps): Section 280F. Year 1: $12,400 (2025, verify). Bonus depreciation may increase first-year limit. | IRC Section 162; Section 280F |
+| Rule | Value and condition | Official source |
+|---|---|---|
+| Car/goods-vehicle simplified rate | GBP 0.55 for the first 10,000 business miles in 2026-27; GBP 0.25 thereafter, rather than the old 45p first band | https://www.gov.uk/simpler-income-tax-simplified-expenses/vehicles |
+| Motorcycle simplified rate | GBP 0.24 per eligible business mile; no first-band tier | https://www.gov.uk/simpler-income-tax-simplified-expenses/vehicles |
+| Enacted change | Act 2026 section 2 replaces 45p with 55p for 2026-27 and subsequent years inITTOIA 94F/ITEPA 230 | https://www.legislation.gov.uk/ukpga/2026/26/section/2/data.xml |
 
-- You must choose one method for the tax year. Once you use actual expenses for a vehicle, you CANNOT switch to standard mileage rate for that vehicle in future years (with limited exceptions).
-- You CAN switch from standard mileage to actual in a later year, but depreciation will be computed using the standard mileage depreciation component.
-- If you use the standard mileage rate, you CANNOT also deduct gas, repairs, insurance, etc. separately. Parking and tolls ARE deductible on top of the standard rate.
-- The log must be "contemporaneous" — the IRS does not accept logs reconstructed at year-end. Write it down at the time of each trip.
-- Vehicles used less than 50% for business cannot use MACRS accelerated depreciation (must use straight-line).
+The earlier 2025-26 car first band is 45p, with 25p above 10,000; do not apply the new tax-year rate retrospectively to a prior-year return. Companies are not eligible for the sole-trader simplified-expense method. Keep miles and business purpose. Once simplified expenses start for a particular vehicle, continue while using it for the business; the old permission to switch that same vehicle to actual was wrong. Do not use simplified expenses for a vehicle whose capital cost/allowances were already claimed as described by HMRC. [Simplified vehicles](https://www.gov.uk/simpler-income-tax-simplified-expenses/vehicles).
 
-### United Kingdom
+Actual costs need a supported private/business split and the correct capital-allowance treatment. Cars do not qualify for AIA merely because they are business cars; other vehicles and qualifying electric-car first-year allowances require the owning capital-allowance method and date/condition tests. Ordinary accounting depreciation is not the tax allowance. The old bicycle20p employee allowance is not a sole-trader car-method rate. Fuel-VAT recovery or a fuel scale charge is a separate VAT computation with evidence, not automatic recovery on the mileage deduction. [HMRC business cars](https://www.gov.uk/capital-allowances/business-cars).
 
-**United Kingdom vehicle expense methods**  _(ITTOIA 2005 s94B; HMRC Simplified Expenses; ITTOIA 2005 s34; CAA 2001)_
+## Germany
 
-| Method | Rate/Formula | Log required? | Business use cap | Citation |
-| --- | --- | --- | --- | --- |
-| **Simplified mileage rate** | First 10,000 business miles: **45p per mile**. Above 10,000 miles: **25p per mile**. | Yes. Must maintain a mileage log with date, destination, purpose, and miles. | Only business miles claimed. Personal miles excluded. | ITTOIA 2005 s94B; HMRC Simplified Expenses |
-| **Actual cost method** | Total actual costs (fuel, insurance, servicing, repairs, road tax, MOT, depreciation/capital allowances) multiplied by business-use percentage. | Yes. Need a mileage log to determine business-use percentage AND receipts for all costs. | Must apportion between business and personal. | ITTOIA 2005 s34; CAA 2001 for capital allowances |
+### Commute, business vehicle and private use are separate jobs
 
-- The simplified mileage rates are generous for the first 10,000 miles but drop significantly after that. For expensive cars with high running costs, actual may be better after 10,000 miles.
-- Once you use actual costs for a particular vehicle, you CANNOT switch to simplified mileage for that vehicle. You CAN switch from simplified to actual (but not back).
-- Capital allowances (not depreciation — UK uses capital allowances): Annual Investment Allowance (AIA) on the business-use proportion. Electric vehicles: 100% first-year allowance.
-- VAT: fuel VAT can be reclaimed on the business proportion. Alternatively, use the HMRC fuel scale charge.
-- Motorcycles: 24p per mile (flat rate, no tiering).
-- Bicycles: 20p per mile.
+| Rule | Value and condition | Official source |
+|---|---|---|
+| Commute distance allowance, EStG 9(1)sentence3no4 | EUR 0.38 per full one-way kilometre for each actual qualifying work day in 2026, from the first km; shortest road or regularly used clearly better route, not round-trip miles | https://www.gesetze-im-internet.de/estg/__9.html |
+| Commute annual cap and exception | EUR 4500 generally; higher amount for use of owned/available car under the statutory exception; flight/tax-free collective transport exclusions | https://www.gesetze-im-internet.de/estg/__9.html |
+| List-price private use, EStG 6(1)no4 |1% of relevant gross domestic list price each month only for more-than 50% business-use vehicles; proper logbook/actual-cost alternative | https://www.gesetze-im-internet.de/estg/__6.html |
+| Own-business commute adjustment, EStG 4(5)no6 | Stated 0.03% monthly list-price/distance difference or actual attributable costs as applicable, reduced by the separate allowed commute amount; not the same as a round-trip business-km rate | https://www.gesetze-im-internet.de/estg/__4.html |
+| Qualifying zero-emission list-price base | Quarter of list price with gross price no more than EUR 100,000 for qualifying acquisitions after 30 June 2025; EStG 6(1)no4 with 52(12). Older acquisition thresholds and hybrid tests differ | https://www.gesetze-im-internet.de/estg/__6.html ; https://www.gesetze-im-internet.de/estg/__52.html |
 
-### Germany
+Keep the actual full logbook and total costs for the actual-cost alternative; a claim that every electronic log must have a particular 'BMF-approved format' was not confirmed. An inadequate log can defeat that alternative, but the 1% method still needs its own eligibility conditions. For private or optionally allocated vehicles, the property allocation and actual business-trip reimbursement/mileage route is different from the one-way commute allowance. The old under 10%/10-50% blanket choice of '30c same as commute' was not valid current guidance. Route to `germany-income-tax` for allocation and earlier acquisitions; compare actual private cost with eligible list-price treatment before electing. Hybrid half-base eligibility and range/emission dates must be separately tested, not replaced with the electric-car quarter-base rule.
 
-**Germany vehicle expense methods**  _(EStG Section 9 Abs. 1 Satz 3 Nr. 4; EStG Section 4 Abs. 5 Nr. 6; EStG Section 6 Abs. 1 Nr. 4 Satz 2)_
+## Australia
 
-| Method | Rate/Formula | Log required? | Business use cap | Citation |
-| --- | --- | --- | --- | --- |
-| **Entfernungspauschale (commute allowance)** | **30 cents per km** for one-way distance (first 20 km). **38 cents per km** from km 21 onward. Only for commute to primary workplace. | No log required for commute — only the distance. | Only counts actual working days. Maximum one trip per working day. | EStG Section 9 Abs. 1 Satz 3 Nr. 4 |
-| **Fahrtenbuch (logbook) for business trips** | Actual total vehicle costs (fuel, insurance, tax, depreciation, repairs, garage) multiplied by (business km / total km). | Yes. **Extremely strict logbook** (Fahrtenbuch): each trip must record date, departure/arrival location, route, purpose, km reading at start and end. Must be bound or electronic (BMF-approved format). | Only the business-trip proportion. Commute is separately handled by Entfernungspauschale. | EStG Section 4 Abs. 5 Nr. 6 |
-| **1% rule (company car / Privatnutzung)** | If using the car for both business and personal: add 1% of the car's gross list price per month as taxable benefit. Plus 0.03% x list price x km for commute. | No logbook required. | Simplification: you avoid the logbook but accept a deemed private-use addition. | EStG Section 6 Abs. 1 Nr. 4 Satz 2 |
+### Individuals and eligible partnerships, income year 2026-27
 
-- The Entfernungspauschale is unique: it is a commute allowance, not a business-trip deduction. Most countries disallow commute deductions entirely.
-- Important: the Entfernungspauschale is for one-way distance only (not round trip), but you claim it for each working day.
-- The Fahrtenbuch requirements are among the strictest in the world. Missing entries, gaps, or inconsistencies can cause the entire logbook to be rejected, resulting in the 1% rule being applied instead.
-- The 1% rule often results in a HIGHER taxable amount than the Fahrtenbuch for expensive cars with low private use. Run both calculations.
-- For self-employed: if business use is less than 10%, the vehicle is "private" and you can only deduct individual business trips at 30c/km (same as Entfernungspauschale rate). If 10-50%: you choose between Fahrtenbuch and 30c/km. If >50%: the vehicle is "business" and either Fahrtenbuch or 1% rule applies.
-- Electric vehicles: 1% rule uses only 25% of list price (for list prices up to EUR 70,000), making it very favorable.
+| Rule | Value and condition | Official source |
+|---|---|---|
+| Current cents-per-kilometre rate | AUD 0.91 for 2026-27, commencing 1 July 2026; determination F2026L00785 section 6 | https://www.legislation.gov.au/F2026L00785/asmade/2026-06-23/text/original/pdf |
+| Cents-per-kilometre cap |5000 business km per car underITAA 1997 section28-25; supported reasonable estimate, not an additional actual-cost claim on the excess | https://www.legislation.gov.au/C2004A05138/2026-04-01/2026-04-01/text/original/epub/OEBPS/document_1/document_1.html |
+| Initial logbook period | At least 12 continuous weeks held, or the entire shorter holding period; contemporaneous journeys/odometers and evidence under 28-120/125 | https://www.legislation.gov.au/C2004A05138/2026-04-01/2026-04-01/text/original/epub/OEBPS/document_1/document_1.html |
+| Logbook renewal | First method year and then renewal after four consecutive years without a new log; directed/additional-car exceptions under 28-115; concurrent periods for multiple cars | https://www.legislation.gov.au/C2004A05138/2026-04-01/2026-04-01/text/original/epub/OEBPS/document_1/document_1.html |
 
-### Australia
+Use one eligible method per car/year, with different methods possible for different years/cars under 28-20. A logbook actual-cost calculation requires expenses, records and a reasonable business-use estimate reflecting changed use; merely retaining an old sample is not proof unchanged use continues. The kilometre method covers operating costs/capital consumption, so do not add fuel, registration, insurance or depreciation again. If mileage exceeds its cap, compare a properly evidenced eligible logbook method; do not bolt actual costs onto excess kilometres. The earlier 88c/AUD 4,400 example is not a 2026-27 maximum. The new maximum is derived 5,000 × 0.91=AUD 4550. [Div28 and enacted rate](https://www.legislation.gov.au/F2026L00785/asmade/2026-06-23/text/original/pdf).
 
-**Australia vehicle expense methods**  _(ITAA 1997 s28-25; ATO rates; ITAA 1997 Div 28; ATO logbook rules)_
+Vehicle definition, company/other-vehicle costs, depreciation effective life and small-business write-off, FBT electric-car exemption and fuel-tax credits are different jobs. Do not infer a universal eight-year tax life, private-vehicle fuel-credit eligibility or immediate write-off from this method. Route these to `au-sole-trader-schedule` and the relevant Australian tax/FBT method with current official rules. No approved Australian file is edited.
 
-| Method | Rate/Formula | Log required? | Business use cap | Citation |
-| --- | --- | --- | --- | --- |
-| **Cents per km method** | **88 cents per km** (2024-25 income year — verify annually) | No detailed log required. Must be able to show how you calculated business km (reasonable estimate accepted). | Maximum **5,000 business km** per vehicle per year = **AUD 4,400 max deduction**. | ITAA 1997 s28-25; ATO rates |
-| **Logbook method** | Actual total vehicle costs multiplied by business-use percentage (determined by a 12-week representative logbook sample). | Yes. Must keep a **12-week logbook** (continuous period). The logbook is valid for 5 years unless circumstances change materially. Must keep all receipts. | No km cap. Business-use percentage from the logbook applies to total costs including depreciation. | ITAA 1997 Div 28; ATO logbook rules |
+## Canada
 
-- The cents-per-km method is capped at 5,000 km. If you drive more than 5,000 business km, you MUST use the logbook method to claim beyond the cap.
-- The logbook only needs to be kept for 12 continuous weeks, but it must be representative of your usual travel pattern. Do not keep it during an atypical period (e.g., a holiday month with no business driving).
-- Once you have a valid logbook, you apply the business-use percentage for up to 5 years. You must keep a new logbook if your driving pattern changes significantly (e.g., you get a new client across town).
-- The ATO is known for data-matching vehicle claims against other records. Overclaiming is a top audit target.
-- Depreciation: effective life of a car is 8 years. Instant asset write-off for assets under the threshold (check current small business threshold).
-- Fuel tax credits: NOT available for private vehicles — only for heavy vehicles, machinery, and certain business vehicles off-road.
+### Self-employed actual costs versus employee allowances
 
-### Canada
+| Rule |2026 amount and condition | Official source |
+|---|---|---|
+| Employer allowance, provinces | CAD 0.73 first 5,000 business km andCAD0.67 later km; qualifying tax-exempt allowance from employer to employee, not the self-employed deduction method | https://www.canada.ca/en/department-finance/news/2026/01/government-announces-the-2026-automobile-deduction-limits-and-expense-benefit-rates-for-businesses.html |
+| Employer allowance, territories | CAD 0.77 first 5,000 business km andCAD0.71 later km; same taxpayer-type distinction | https://www.canada.ca/en/department-finance/news/2026/01/government-announces-the-2026-automobile-deduction-limits-and-expense-benefit-rates-for-businesses.html |
+| Class 10.1 passenger-vehicle CCA ceiling | CAD 39000 before tax for new/used vehicles acquired from 1 January 2026; not a universal Class 10 cost cap or annual deduction | https://www.canada.ca/en/department-finance/news/2026/01/government-announces-the-2026-automobile-deduction-limits-and-expense-benefit-rates-for-businesses.html |
+| Passenger-vehicle interest ceiling | CAD 350 per month for new loans from 1 January 2026, before business-use allocation and applicable computation | https://www.canada.ca/en/department-finance/news/2026/01/government-announces-the-2026-automobile-deduction-limits-and-expense-benefit-rates-for-businesses.html |
+| Passenger-vehicle lease ceiling | CAD 1100 per month before tax for new leases from 1 January 2026; actual lease-deduction formula may limit further | https://www.canada.ca/en/department-finance/news/2026/01/government-announces-the-2026-automobile-deduction-limits-and-expense-benefit-rates-for-businesses.html |
 
-**Canada vehicle expense methods**  _(CRA Motor Vehicle Expenses guide (T4002); Income Tax Regulations s7306; CRA T4002; ITR s7307; Class 10/10.1)_
+A self-employed person uses reasonable supported actual costs attributable to business, not the employee cents-per-km allowance. Keep total/business distance, dates/destination/purpose and start/end/change odometers separately for each vehicle; deductible running expenses and CCA have separate form computations. Specifically business parking and supplementary business insurance can be separately attributable rather than blindly reducing them by the general percentage. A representative three-month sample can follow a complete base-year log if CRA's stated comparable-use conditions, including the 10% range, are met. [T4002-5 motor-vehicle records and expenses](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/t4002/t4002-5.html).
 
-| Method | Rate/Formula | Log required? | Business use cap | Citation |
-| --- | --- | --- | --- | --- |
-| **Per-km rate (CRA prescribed)** | First 5,000 business km: **70 cents per km**. Each additional km: **64 cents per km**. (2025 rates — verify annually. Yukon/NWT/Nunavut: add 4c/km.) | Yes. Must maintain a logbook: date, destination, purpose, km driven. | Only business km. Must separate business and personal use with a log. | CRA Motor Vehicle Expenses guide (T4002); Income Tax Regulations s7306 |
-| **Actual cost method** | Total actual costs (fuel, insurance, maintenance, licence, interest on car loan, CCA/depreciation) multiplied by (business km / total km). | Yes. Same logbook. Also keep all receipts. | CCA (capital cost allowance) limits: Class 10 vehicle max cost is **CAD 37,000** (2025 — verify). Passenger vehicle interest deduction capped at **CAD 300/month**. Lease costs capped at **CAD 1,050/month**. | CRA T4002; ITR s7307; Class 10/10.1 |
+Determine motor/passenger/zero-emission vehicle classification, joint-ownership caps, original acquisition dates and prescribed CCA class before calculating. The old 37,000/300/1,050 figures and assertion that every expensive Class 10 vehicle loses the excess were wrong. GST/HST operating and capital vehicle credits depend on entity/vehicle/commercial-use rules, not a blanket 'under 90% means limited' rule; route to `ca-gst-hst`. Likewise the claimed universal under 50% CCA-recapture restriction was not supported. Use the actual class and disposal rules.
 
-- The per-km rate is ONLY for calculating the deductible amount. You still need a logbook.
-- The CCA (depreciation) limits are designed to prevent deductions on luxury vehicles. If your car costs more than CAD 37,000, the excess cost is not depreciable.
-- If business use is less than 50%, you may face additional restrictions on CCA recapture.
-- GST/HST: if registered, you can claim input tax credits (ITCs) on the business portion of vehicle expenses. But if the vehicle is used less than 90% for business, ITCs are limited.
-- The CRA audits vehicle claims frequently. A detailed contemporaneous logbook is essential.
+## Spain
 
-### Spain
+IRPF and IVA tests are different. RIRPF article 22 requires qualifying business asset use; ordinary mixed private use of indivisible passenger cars is not automatically eligible. It does not categorically forbid every professional from deducting an exclusively qualifying business car. The incidental-private-use exception has specific vehicle categories, including goods mixed vehicles, paid passenger transport, driving instruction, commercial representatives/agents and habitual paid hire. Maintain records and evidence, rather than using a broad job-title assumption. [RD439/2007 article22](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820).
 
-**Spain vehicle expense methods**  _(LIRPF art. 22; Reglamento IRPF art. 21; LIVA art. 95.Tres.2)_
+| Rule | Value and condition | Official source |
+|---|---|---|
+| LIVA 95 passenger-vehicle presumption |50% business use for qualifying cars/trailers/mopeds/motorcycles under 95.Tres.2, subject to actual qualifying economic use and general deduction conditions; not automatic recovery with no evidence and not an absolute cap | https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740 |
+| Listed vehicle categories |100% presumption for specified goods/passenger transport/instruction/manufacturer testing/commercial-agent/security vehicles; verify the exact statutory category, proof and later adjustment | https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740 |
 
-| Method | Rate/Formula | Log required? | Business use cap | Citation |
-| --- | --- | --- | --- | --- |
-| **IRPF (income tax)** | Vehicle costs are generally **NOT deductible** for autonomos unless you are in a profession where a vehicle is essential (commercial agents, transport, delivery, taxi, sales representatives). | N/A for most. If eligible: yes, logbook needed. | For most autonomos: **0% deductible** for IRPF. | LIRPF art. 22; Reglamento IRPF art. 21 |
-| **IVA (VAT)** | **50% of IVA** on vehicle purchase and expenses is deductible (presumed 50% business use). Can claim 100% if you prove 100% business use (very difficult). | Must keep purchase invoices. | 50% IVA deduction cap unless full business use proven. | LIVA art. 95.Tres.2 |
+Article 95.Tres.3-5 requires adjustment when effective use differs and evidence beyond merely including the asset in records/return. Paragraph Cuatro covers directly related fuel, parts, parking/tolls and repair services under those rules. No VAT can be reclaimed where none was charged, including an exempt insurance item. Article96 and general invoice/pro-rata conditions still apply. The old references to LIRPF article22 and RIRPF article21 for this asset-use test were wrong.
 
-- Spain is uniquely restrictive on vehicle expenses. For income tax (IRPF), most self-employed individuals (autonomos) CANNOT deduct vehicle costs at all. The Tribunal Supremo has consistently held that a vehicle used for mixed purposes is not "exclusively" related to the activity.
-- The exception: certain professions where a vehicle is integral (agentes comerciales, taxistas, transportistas, repartidores). Even then, the burden of proof is on the taxpayer.
-- For IVA: the law presumes 50% business use, so you can deduct 50% of the IVA on fuel, repairs, insurance, and the vehicle purchase. This is automatic — no logbook needed.
-- In practice, many Spanish autonomos simply do not claim vehicle expenses for IRPF and claim the 50% IVA.
+## Netherlands
 
-### Italy
+| Rule | Value and condition | Official source |
+|---|---|---|
+| Privately owned or privately rented means of transport used in the business,2026 | EUR 0.25 per business km for car, motorcycle or bicycle; not employee-only; old 0.23 is the 2025 amount | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/veranderingen-inkomstenbelasting-2026/zakelijk-gebruik-privevervoermiddel-2026 |
 
-**Italy vehicle expense methods**  _(TUIR art. 164 (DPR 917/1986); TUIR art. 164.1.b)_
+The rate includes fuel, insurance, tolls and parking; do not deduct these separately. A business-balance-sheet car instead needs actual costs, appropriate private-use/bijtelling and VAT adjustments. Preserve route/date/distance/odometer evidence for the actual test. The old 'actual only/no self-employed km allowance' was false. The old electric/ordinary bijtelling rates, catalogue thresholds and private-km exemption need the current acquisition-specific country method; this file does not guess those values. Use `nl-zzp-deductions`/`nl-income-tax` for that separate job.
 
-| Method | Rate/Formula | Log required? | Business use cap | Citation |
-| --- | --- | --- | --- | --- |
-| **Statutory percentage** | Vehicle expenses are deductible at **20% of actual costs** for self-employed professionals. Fuel, insurance, repairs, depreciation — all at 20%. | Keep all receipts and invoices. No formal logbook, but recommended. | Depreciation base capped at **EUR 18,075.99** for cars. Fuel deductible at 20%. | TUIR art. 164 (DPR 917/1986) |
-| **Agenti di commercio (commercial agents)** | **80% of actual costs** deductible. | Same record-keeping. | Depreciation base capped at **EUR 25,822.84**. | TUIR art. 164.1.b |
+## Other retained country decision branches
 
-- The 20% cap is regardless of actual business use. Even if you use the car 90% for business, you can only deduct 20% of costs (unless you are an agente di commercio).
-- IVA (VAT): 40% of IVA on vehicle costs is deductible (for non-agents). 100% for agents and certain transport activities.
-- The depreciation cap (EUR 18,075.99) means that if your car cost EUR 50,000, you depreciate as if it cost EUR 18,075.99, and then you apply the 20% rule to that depreciation amount.
-- Tolls (pedaggi) and parking: 20% deductible (same rule).
-- Electronic invoicing (fatturazione elettronica) required for all vehicle-related expenses.
+### Italy, statutory percentages and separate IVA rules
 
-### Netherlands
+TUIR article 164 is read in its version effective on 14 November 2026. Distinguish exclusively instrumental/public-use vehicles, ordinary professional/business cars, commercial agents and cars assigned for mixed employee use; the old 'only agents can exceed 20%' statement omitted other statutory categories. Ordinary professional use is limited to one vehicle for an individual, or one for each partner/associate in the stated professional forms.
 
-**Netherlands vehicle expense methods**  _(Wet IB 2001; Belastingdienst km-administratie)_
+| Rule | Current condition/value | Official source |
+|---|---|---|
+| Ordinary qualifying cost percentage, TUIR article 164(1)(b) |20%; apply cost/lease restrictions and the actual vehicle/category rules, not just an asserted business-use percentage | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art164!vig=2026-11-14 |
+| Commercial agent/representative category |80% under article 164(1)(b), with car acquisition base cap EUR 25,822.84; other asset/lease caps differ | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art164!vig=2026-11-14 |
+| Ordinary professional car/autocaravan acquisition base | EUR 18,075.99 before applying the relevant depreciation/cost percentage; printed in PF2026 RE7 instructions for the 2025-2026 filing cycle, consistent with TUIR article 164's unchanged 35 million-lire base | https://www.agenziaentrate.gov.it/portale/documents/d/guest/pf3_istruzioni_2026_agg-13-05-2026 ; https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art164!vig=2026-11-14 |
+| Car mixed use by employee for most of tax period |70% under article 164(1)(b-bis); not a self-employed 20% or agent 80% election | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art164!vig=2026-11-14 |
+| Nonexclusive road-vehicle IVA, DPR 633 article 19-bis.1(c) |40% restriction for the specified vehicle scope; actual business activity, goods-for-business/agent exceptions and ordinary input conditions still apply, not an automatic 100% claim for every agent | https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1972-10-26;633~art19bis.1!vig=2026-11-14 |
 
-| Method | Rate/Formula | Log required? | Business use cap | Citation |
-| --- | --- | --- | --- | --- |
-| **Actual costs only** | Total actual costs (fuel, insurance, road tax, depreciation, maintenance, financing costs) minus private-use adjustment. | Yes. Must maintain a logbook (rittenadministratie) if claiming more than incidental business use. | If private use > 500 km/year: must add back a deemed private-use amount (bijtelling) — 22% of catalogue value per year for most cars, 16% for zero-emission. | Wet IB 2001; Belastingdienst km-administratie |
-| **No per-km allowance** | The Netherlands does NOT offer a per-km deduction rate for self-employed. | N/A. | N/A. |  |
+For a supplied EUR 50,000 ordinary car, the relevant tax depreciation base is restricted before the statutory cost percentage is applied; do not deduct 20% of the entire purchase immediately. Fuel payments have the traceable-card conditions in article 164(1-bis). DPR 633 article 19-bis.1(d) applies the corresponding input-tax restriction to specified fuel/maintenance/use/toll costs, with its payment evidence; it is not the same as the income-tax 20% rule. The old claim of electronic invoicing for absolutely every vehicle expense is not certified. Rental/finance lease terms, annualisation, disposals and exclusively instrumental/public-use vehicles require their actual statutory branch. Country return boxes and final 2026 tax-period form revisions remain with `it-income-tax`/`italy-vat-return`.
 
-- The Netherlands has no simplified per-km rate for zelfstandigen (self-employed). You must use actual costs.
-- If the vehicle is on your business balance sheet (ondernemingsvermogen): deduct all costs, but add back a bijtelling (deemed private use) if private use exceeds 500 km/year.
-- The bijtelling for 2025 is 22% of the car's catalogue value (new price including BPM and VAT) per year. For zero-emission (electric): 16% up to EUR 30,000 of value, 22% above that.
-- If the vehicle is NOT on your business balance sheet (privebelangvermogen): you can claim EUR 0.23/km for business trips (this is the employee reimbursement rate, sometimes used by IB-ondernemers). But this requires a logbook.
-- The logbook must be very detailed: each trip with date, departure, destination, route, purpose, and odometer readings. The Belastingdienst frequently audits logbooks and rejects them for inconsistencies.
+### India, current statutory details held
 
-### India
+Identify actual versus presumptive professional/business scheme, FY and the applicable Income-tax Act, vehicle class/use and depreciation schedule, books, passenger-vehicle GST blocking/exceptions and whether a fuel is inside GST at all. Do not call all commercial vehicles 30% depreciation, all professional receipts up to 75 lakh automatically eligible, or every petrol/diesel invoice a blocked GST credit. Current 2026 statutory mapping and exceptions were not read here. Route to `india-income-tax` and the current India GST method before a figure; presumptive profits and a further separate expense deduction must not be combined without the actual scheme rule.
 
-**India vehicle expense methods**  _(IT Act 1961, Section 37(1); Section 44ADA; IT Act 1961, Section 32; CBDT depreciation table)_
+### Malta, statutory car-cost cap and input-tax blocks
 
-| Method | Rate/Formula | Log required? | Business use cap | Citation |
-| --- | --- | --- | --- | --- |
-| **Actual costs only** | Actual fuel, maintenance, insurance, depreciation costs attributable to business use. | Must keep receipts and demonstrate business nexus. No formal logbook format prescribed. | Must show business nexus. Presumptive scheme (44ADA) does not allow separate vehicle claims. | IT Act 1961, Section 37(1); Section 44ADA |
-| **Depreciation** | Cars: 15% WDV (written-down value) per year. Commercial vehicles: 30% WDV. | Keep asset register. | Depreciation applies only to the business-use portion. | IT Act 1961, Section 32; CBDT depreciation table |
+| Rule | Condition/value | Official source |
+|---|---|---|
+| S.L.123.07 rule 3(1) car cost restriction | EUR 14,000 deemed cost where the covered vehicle cost exceeds it, for wear/tear, initial deduction and balancing allowance/charge; business-income use and vehicle exceptions still required | https://legislation.mt/getpdf/66f65d8f3b56613c3cae68d9 |
+| Rule 3(2) covered lease listed-price cap | Deduction no more than lease payments × EUR 14,000 ÷ listed price when price exceeds EUR 14,000; not a blanket 'no formal cap' rule | https://legislation.mt/getpdf/66f65d8f3b56613c3cae68d9 |
 
-- Under the presumptive scheme (Section 44ADA, for professionals with receipts up to INR 75 lakh), 50% of gross receipts is deemed profit and you cannot separately claim vehicle expenses.
-- Under non-presumptive (ITR-3): actual expenses are deductible, but you must maintain books of account and demonstrate the business connection.
-- No per-km allowance exists for self-employed. Employees receive exemptions for car perquisites, but that does not apply to freelancers.
-- GST input credit on car purchase: generally NOT available for passenger vehicles (blocked credit under Section 17(5) of the CGST Act), except for specific businesses (driving schools, transport services, dealers).
-- Fuel: GST input credit on petrol/diesel is blocked.
+Read rule 3 as a whole. Where the lessee bears wear and tear, the lease payments are not deductible under rule 3(2)(a). The lease restriction does not apply to occasional use for less than seven days in the year, except use as a replacement for another leased vehicle. For a temporary replacement lasting less than thirty consecutive days with unchanged lease payments, use the original vehicle's listed price; changed payments or a replacement of thirty consecutive days or more require the replacement vehicle's listed price.
 
-### Malta
+Listed price means the Commissioner-approved same/comparable make and model price, including optional accessories. Leasing includes an arrangement involving payment for use, and defined lease payments include insurance, licences, repairs and servicing but exclude fuel and garaging. Rule 3(4) concerns mechanically propelled vehicles transporting individuals and excludes types not commonly used as private vehicles and unsuitable for such use. It also excludes vehicles used wholly or mainly for public hire/carriage, or for driving instruction, in the ordinary course of the claimant's business. Do not apply the cost cap to every truck merely because it is a vehicle.
 
-**Malta vehicle expense methods**  _(ITA Cap. 123; IRD practice; ITA Cap. 123; subsidiary legislation)_
+Cap. 406 Tenth Schedule item 3(1)(a)(iv)-(v) generally blocks the stated vehicles and repairing/maintaining/fuelling/keeping costs, subject to item 3(2)'s exact resale, paid carriage, charter/hire/driving-instruction and vehicle-design exceptions. Self-drive hire has a fuelling exclusion. Business-use apportionment does not by itself remove the block. The old statement that passenger-car fuel/repairs are automatically recoverable in proportion to business use was wrong. Items 1-2 and 4 still require tax/economic-activity evidence and appropriate apportionment where recovery is allowed. [VAT Act Tenth Schedule](https://legislation.mt/getpdf/6ac352947b5e681a8405fbf4).
 
-| Method | Rate/Formula | Log required? | Business use cap | Citation |
-| --- | --- | --- | --- | --- |
-| **Proportional to business use** | Actual fuel, insurance, licence fees, repairs, depreciation — proportioned by business-use percentage. | Must keep fuel receipts and a business-use log or estimate. | Must be proportional. No formal cap, but IRD reviews reasonableness. | ITA Cap. 123; IRD practice |
-| **Capital allowances** | Wear and tear allowance: typically 20% per year on cost (5-year write-off for motor vehicles). | Keep purchase documentation. | Applied to total cost, then proportioned by business-use percentage. | ITA Cap. 123; subsidiary legislation |
+Retain business-use logs/receipts, registration/licence costs and company-car benefit questions. Route the remaining income-tax deduction/capital-allowance schedule to `malta-income-tax` and full VAT computation to `malta-vat-return`; the old universal 20% annual wear-and-tear and acceptance of a guessed 60% split are not certified here. Those approved country files remain untouched.
 
-- Malta has no simplified per-km mileage rate. You must use actual costs proportioned by business use.
-- Fuel receipts are essential. The IRD will request them on audit.
-- A reasonable estimate of business-use percentage (e.g., 60% business, 40% personal) is accepted if supportable, but a trip log strengthens the claim significantly.
-- VAT: 18% VAT on vehicle purchase is NOT reclaimable for passenger cars (blocked). VAT on fuel, repairs, and maintenance: reclaimable on the business-use proportion.
-- Registration tax and annual licence fees: proportioned like other vehicle costs.
-- Company cars: a fringe benefit value is added to the employee/director's income.
+## When to refuse or refer
 
-## Summary comparison table
+Hold unsupported journeys, ownership, dates, prior elections, vehicle class, actual business/private use or tax charged. Refuse an invented default 40-70% business-use allocation or a duplicate deduction. Refer employee/company-car benefits, EV effective-date restrictions, fuel-tax credits, vehicle disposal/recapture, presumptive schemes, VAT-blocked costs and countries whose figures are held to the owning method. A missing log can need corroboration, but never invent one.
 
-**Summary comparison table**
+## Worked cases
 
-| Jurisdiction | Per-km/mile rate available? | Rate | Cap on simplified | Logbook required? | Key restriction |
-| --- | --- | --- | --- | --- | --- |
-| **US** | Yes | 70c/mile | No mile cap (but actual expenses may be better) | Yes (strict) | Must choose method; luxury auto depreciation caps |
-| **UK** | Yes | 45p/25p per mile | No cap | Yes | Cannot switch back from actual to simplified |
-| **Germany** | Only for commute (30c/38c per km) | 30c/km commute; Fahrtenbuch for business trips | Commute only; business trips = actual | Yes (extremely strict Fahrtenbuch) | Fahrtenbuch can be rejected entirely for errors |
-| **Australia** | Yes | 88c/km | 5,000 km/year | 12-week sample logbook (for logbook method) | Cents-per-km capped at 5,000 km |
-| **Canada** | Yes | 70c/64c per km | No km cap | Yes | Depreciation/lease caps on expensive vehicles |
-| **Spain** | No | N/A | N/A | N/A | Vehicle generally NOT deductible for IRPF |
-| **Italy** | No | N/A | N/A | Receipts (no logbook) | Statutory 20% cap regardless of actual use |
-| **Netherlands** | No (EUR 0.23/km for employees only) | N/A | N/A | Yes (strict) | No per-km for self-employed; bijtelling for private use |
-| **India** | No | N/A | N/A | Keep receipts | Presumptive scheme (44ADA) covers all expenses |
-| **Malta** | No | N/A | N/A | Fuel receipts required | Must demonstrate business nexus |
+### US, split the mid-year rate
 
-## Common mistakes
+Assume an eligible standard-mileage vehicle and supported 3,000 business miles in each 2026 half, excluding commute/private miles. The derived deduction is USD 4,455. Applying the old 70c uniformly would give 4,200 and the January rate uniformly 4,350. Only the correct trip dates select the two periods; no extra fuel/depreciation is added.
 
-1. **Claiming commute as business travel.** Home to regular workplace is commuting in every jurisdiction (Germany's Entfernungspauschale is a partial income reduction, not a business expense deduction). Travel from your office to a client IS business travel.
+```oa-check
+name: US 2026 business miles, two effective periods
+inputs:
+  first_half_miles: 3000
+  first_rate: 0.725
+  second_half_miles: 3000
+  second_rate: 0.76
+  stale_rate: 0.70
+steps:
+  - correct_mileage: first_half_miles * first_rate + second_half_miles * second_rate
+  - stale_mileage: (first_half_miles + second_half_miles) * stale_rate
+  - correction: correct_mileage - stale_mileage
+expected:
+  correct_mileage: 4455
+  stale_mileage: 4200
+  correction: 255
+```
 
-2. **No logbook at all.** The US, UK, Canada, Germany, Netherlands, and Australia all require some form of log. Claiming vehicle expenses without a log is the fastest way to lose the deduction on audit. Write it down at the time — do not reconstruct at year-end.
+### Netherlands, private vehicle and no extra parking
 
-3. **Claiming 100% business use.** Unless the vehicle is truly never used personally (very rare for a freelancer), claiming 100% business use is a red flag. A credible business-use percentage for most freelancers is 40-70%.
+For 4,000 documented eligible business km in 2026, the 25c amount is EUR 1000. Supplied EUR 150 business fuel and 50 parking are already covered; adding both produces an incorrect 1,200. Confirm the vehicle is private/privately rented before using this method; a business-asset car needs a different calculation.
 
-4. **Ignoring the Spain/Italy restrictions.** Many freelancers in Spain and Italy assume vehicle costs are fully deductible (like in the US or UK). They are not. Spain generally disallows IRPF deduction for most autonomos. Italy caps at 20% for professionals.
+```oa-check
+name: Dutch2026 private vehicle, covered costs not added twice
+inputs:
+  business_km: 4000
+  rate: 0.25
+  fuel: 150
+  parking: 50
+steps:
+  - deduction: business_km * rate
+  - incorrect_duplicate_cost_claim: deduction + fuel + parking
+  - duplicate_costs: incorrect_duplicate_cost_claim - deduction
+expected:
+  deduction: 1000
+  incorrect_duplicate_cost_claim: 1200
+  duplicate_costs: 200
+```
 
-5. **Using the wrong rate year.** Per-km/mile rates change annually. Always verify the rate for the specific tax year you are filing. Using a prior year's rate is an error.
-
-6. **Double-counting parking and tolls.** In the US, parking and tolls are deductible ON TOP of the standard mileage rate. In other jurisdictions, they may be included in the actual-cost calculation. Do not claim them twice.
-
-7. **Forgetting the electric vehicle advantages.** Many jurisdictions offer more favorable treatment for electric vehicles: Germany's 25% list price for 1% rule, Australia's FBT exemption, UK's 100% first-year allowance, Netherlands' lower bijtelling rate. Check if EV-specific rules apply.
-
-## Disclaimer
-
-This file provides general guidance for vehicle expense deductions. Rates, caps, and logbook requirements change annually. Always verify against the relevant tax authority's current publications and rate announcements. This is not tax advice. A qualified professional should review all vehicle expense claims before filing.
-
-## Disclaimer
+## Existing review requirement
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
+
+## Sources
+
+| Official source | Read on | Read scope |
+|---|---|---|
+| https://www.irs.gov/tax-professionals/standard-mileage-rates | 2026-11-14 | Read for the 2026 table distinguishing Jan1-Jun30 at72.5c and Jul1-Dec31 at76c for business use. |
+| https://www.irs.gov/irb/2026-29_irb | 2026-11-14 | Read for Announcement2026-11 modifying Notice2026-10,76c rate/effective1July2026 and continued pre-July rule. |
+| https://www.irs.gov/publications/p463 | 2026-11-14 | Read for Publication 463(2025) car-method eligibility, first-year/lease/fleet/depreciation rules, parking/tolls, business-use records, exceptions and transport/commuting. Rate figures are superseded by 2026 announcements. |
+| https://www.gov.uk/simpler-income-tax-simplified-expenses/vehicles | 2026-11-14 | Read for current 2026-27 first 10,000-mile55p/25p bands, motorcycle24p, earlier45p, same-vehicle continuity and capital-cost exclusion. |
+| https://www.legislation.gov.uk/ukpga/2026/26/section/2/data.xml | 2026-11-14 | Read for Taxation(Energy and Vehicles)Act 2026 section 2 amending ITEPA 230/ITTOIA 94F to 55p for 2026-27 onward. |
+| https://www.gov.uk/capital-allowances/business-cars | 2026-11-14 | Read for cars versus other vehicles, noAIA for cars, business/private use and car capital-allowance route; current EV/rate specifics not restated. |
+| https://www.gesetze-im-internet.de/estg/__9.html | 2026-11-14 | Read for EStG 9(1)no4 commute38c,4500cap/own-car exception, shortest/practically better route, actual work days and no4a business travel distinction. |
+| https://www.gesetze-im-internet.de/estg/__4.html | 2026-11-14 | Read for EStG 4(5)no6 own-business commute adjustment, actual versus list-price amounts and linkage to9. |
+| https://www.gesetze-im-internet.de/estg/__6.html | 2026-11-14 | Read for EStG 6(1)no4 greater-than 50%business1%monthly, quarter/half EV/hybrid list bases and proper logbook actual alternative. |
+| https://www.gesetze-im-internet.de/estg/__52.html | 2026-11-14 | Read for EStG 52(12) application of 2025 EV-list-price amendment to vehicles acquired after 30 June 2025; do not apply current cap to every earlier acquisition. |
+| https://www.legislation.gov.au/F2026L00785/asmade/2026-06-23/text/original/pdf | 2026-11-14 | Read for enacted determination F2026L00785 sections 2/6, commencement1July2026 and 91c for 2026-27. |
+| https://www.legislation.gov.au/C2004A05138/2026-04-01/2026-04-01/text/original/epub/OEBPS/document_1/document_1.html | 2026-11-14 | Read for ITAA 1997 Div28 method scope,28-20 choice,28-25/35 kilometre cap/estimate,28-90/100 records,28-115/120/125 logbook period/renewal/entries; April2026 Act compilation. |
+| https://www.canada.ca/en/department-finance/news/2026/01/government-announces-the-2026-automobile-deduction-limits-and-expense-benefit-rates-for-businesses.html | 2026-11-14 | Read for every2026 Finance limit and employee allowance, acquisition/lease/loan dates, Class 10.1 and Class 54 distinction. |
+| https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/t4002/t4002-5.html | 2026-11-14 | Read for T4002-5 motor-vehicle records, representative sample logbook, expense/CCA distinction, actual business proportion, parking/supplementary insurance and separate vehicles;2025 guide structural method updated with 2026 Finance amounts. |
+| https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820 | 2026-11-14 | Read for RD439/2007 article22 business asset/exclusive-use and incidental-use vehicle exceptions, distinct from employee travel article9. |
+| https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740 | 2026-11-14 | Read for LIVA 95 all paragraphs and neighbouring96, business-use presumption,listed100%categories,adjustments and evidence; VAT actually incurred and general recovery conditions. |
+| https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/veranderingen-inkomstenbelasting-2026/zakelijk-gebruik-privevervoermiddel-2026 | 2026-11-14 | Read for Belastingdienst2026 own/privately rented vehicle25c per business km, including car/motorcycle/bicycle, no separatefuel/insurance/tolls/parking. |
+| https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art164!vig=2026-11-14 | 2026-11-14 | Read for full current article164, vehicle categories,20/80/70percent, one-vehicle restriction, cost/lease caps, fuel-payment evidence and disposal basis. |
+| https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1972-10-26;633~art19bis.1!vig=2026-11-14 | 2026-11-14 | Read for exact article 19-bis.1(c)-(d),40percent vehicle scope/exceptions, related running costs and payment evidence. Initial different article URL was not relied on. |
+| https://www.agenziaentrate.gov.it/portale/documents/d/guest/pf3_istruzioni_2026_agg-13-05-2026 | 2026-11-14 | Read for RE7-RE9 car acquisition/lease/rental bases and professional vehicle limits; PF2026 is the 2025-2026 filing cycle, not a final 2026-period form. |
+| https://legislation.mt/getpdf/66f65d8f3b56613c3cae68d9 | 2026-11-14 | Read for rule 3(1)-(4) in full, EUR14000 deemed cost/lease cap, defined price/payments and short-use/replacement/business-vehicle exceptions. |
+| https://legislation.mt/getpdf/6ac352947b5e681a8405fbf4 | 2026-11-14 | Read for Cap. 406 Tenth Schedule items1-4, tax evidence, vehicle and running-cost blocks, precise exceptions and apportionment. |
+
+Not yet confirmed: current US 2026 luxury-auto dollar caps and form revisions; UK fuel-scale/EV allowance effective-date detail; Australian effective-life/write-off/FBT/fuel-credit conditions; Canadian class-specific GST/HST and disposal rules; Dutch current company-car/bijtelling values; Italian final 2026-period form lines; Indian 2026 income-tax/GST/depreciation/presumptive eligibility mapping; Maltese remaining capital-allowance rates and fringe-benefit valuation. These specific retained jobs are routed above; no old number is certified merely because it was previously in this file. The 2025 IRS/CRA structural guides are labelled and their 2025 dollar limits are not substituted for 2026 announcements.

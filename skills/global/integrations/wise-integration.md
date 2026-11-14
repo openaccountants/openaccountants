@@ -1,176 +1,96 @@
 ---
 name: wise-integration
-version: 1.0
-category: integration
+version: 2.0
+category: bookkeeping
 description: >
-  Integration skill for Wise (formerly TransferWise) statement CSV exports. Activate when the user uploads a Wise
-  statement, Wise CSV, or mentions Wise, TransferWise, or multi-currency transfers.
+  Reconcile supplied wise exports for bookkeeping in 2026. Establish the actual schema, account, dates and currency, preserve order/invoice/payment relationships, reject malformed or unreconciled data and prepare postings for human approval. Historical fields and sample data are retained, but current API, software and fee behaviour is not certified.
 jurisdiction: GLOBAL
-last_updated: 2026-06-12
+last_updated: 2026-11-14
 tier: 2
-domain: references
+domain: bookkeeping
+tax_year: 2026
+type: cross-country-method
+checked_on: 2026-11-14
 ---
 
-# Wise Integration Skill v1.0
+# Wise statements and paired-currency reconciliation v2.0
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
-## Section 1 — Platform Overview
+## Scope
 
-Wise (formerly TransferWise) is a multi-currency money transfer and business account platform. Headquartered in London, it operates in 170+ countries and holds money in 40+ currencies. Wise is popular with freelancers receiving international payments, businesses paying overseas suppliers, and digital nomads.
+Apply this method to the client's supplied files and supporting documents. It prepares a reconciled workpaper and proposed import/postings; it does not operate a live integration or certify a destination schema. Checked on 2026-11-14. Country tax positions remain with their own current skills.
 
-Wise's key differentiator is its multi-currency account structure: each currency balance is a separate account with its own statement, IBAN/account details, and transaction history. A single Wise user may have GBP, EUR, USD, and other balances, each exported separately.
+## Ask the client first
 
----
+1. Which entity owns the account, which country and reporting period apply, and what accounting framework, cash/accrual basis and functional currency are used?
+2. Which product, region, account, export/report variant and file-generation date produced the supplied data? Obtain the actual headers or authenticated mapping, all pages/files, account identifiers and opening/closing statements.
+3. Does this file describe orders, invoices, authorisations, settled balance activity, payouts, a general ledger or a trial balance? Which overlapping feeds/imports are already in the ledger?
+4. What are the actual delimiter, encoding, header status, date order, timezone, decimal separator, units and signed-amount conventions? For an ambiguous date or missing currency, stop before import.
+5. Which invoices, contracts, refunds, reserve movements, tax reports and supplier fee documents support the transactions? Who is principal, agent or merchant of record for each specified supply?
+6. Is the ledger read-only? Who will approve the proposed import or postings and confirm the result? No live write access is assumed.
 
-## Section 2 — Export Formats
+## The method, step by step
 
-| Format | Use Case |
-|--------|----------|
-| CSV | Per-currency balance statements, transfer lists |
-| XLSX (Excel) | Per-currency balance statements |
-| PDF | Official bank statements (accepted by HMRC, tax offices, lenders) |
-| MT940 | Accounting software import (SWIFT standard) |
-| QIF | Quicken import format |
-| CAMT.053 | European bank standard XML format (v10 only) |
+1. **Keep the evidence.** Preserve original bytes and record file identity, owner/account, report type, currency, covered dates and row count. Parse CSV/TSV with a real delimiter/quote-aware parser, not a split on commas. Preserve leading-zero identifiers, quoted narratives and original timestamps. Validate field count on every row. Treat spreadsheet formatting, headings, blank/footer/summary rows and BOMs explicitly; never remove a first data row merely because the old map expected a header. The historical inventory below is a starting question, not a certified current schema.
+2. **Define the record grain.** Distinguish order, line item, invoice, payment, fee, balance event and payout. Use a stable source ID plus account, event kind and relevant line/currency identity. A repeated order ID can represent legitimate lines; a payment and its invoice are two records of one commercial event. Keep the mapping and a rejected-row report. Do not deduplicate by date/amount alone or silently discard unknown event codes.
+3. **Test signs and units against evidence.** Recompute the supplied gross/fee/net relationship for every row where those fields exist. A signed deduction may be added; a positive charge may be subtracted. Do not force a platform-wide formula on contradictory data. Establish major/minor units from the actual report or supplied schema, including currencies that do not use two decimal places. Reject a conversion based only on an assumed divide-by-100 rule.
+4. **Reconcile each account and currency.** Start from a supported opening balance, add signed balance movements and compare to the closing statement. Prove row-by-row balances where supplied. Include refunds, reversed payments, disputes, reserves, releases, fees, adjustments and transfers according to their actual balance impact and reporting cutoff. An authorisation without movement is different from a posted reversal. A pending label alone is not proof of either outcome. Holds and releases can fall in different periods; keep unmatched reserves on a balance-sheet control.
+5. **Match settlement to the bank.** Group by supported payout/settlement references, currency and completed movement; reconcile settlement components, fees, retained amounts, negative settlements and timing differences. A bank deposit is a transfer from a clearing account, not another sale. Do not assume every intervening row between payouts belongs to the next deposit. Record opening/closing unsettled funds; obtain missing statements instead of inserting a balancing sale. Reconcile a card-funded negative settlement to the funding account.
+6. **Prepare the commercial accounting.** Link the invoice/order/bill and payment, preserve tax and shipping detail, and separate amounts collected for others. A customer shipping charge can be part of the seller's consideration; it is not automatically removed from revenue. Gross cash does not always equal revenue, and a net payout is not by itself proof of agency. Under an applicable AASB 15/IFRS-equivalent reporting policy, assess control of each specified good/service, principal versus agent and third-party collections using paragraphs 47 and B34-B38. That conditional financial-reporting test does not replace local tax law. [AASB 15](https://standards.aasb.gov.au/sites/default/files/2026-11/AASB15_12-14_COMPdec22_07-26.pdf).
+7. **Apply the owning country's tax method.** Currency, marketplace suffix, email, billing country or a configured software tax code alone does not establish tax jurisdiction, business status, nexus or recoverability. Read the actual supply, establishment, customer, product, destination and registrations; link the official rule used. A payment-only file may lack the tax breakdown. UK sole-trader/partner records must identify business transactions and preserve receipts, invoices and statements; traditional accounting also tracks amounts owed/unpaid. Eligible UK business bank charges are distinct from non-deductible loan principal. [HMRC records](https://www.gov.uk/self-employed-records/what-records-to-keep); [financial charges](https://www.gov.uk/expenses-if-youre-self-employed/legal-financial).
+8. **Handle foreign currency without losing either leg.** Keep original, settlement and functional-currency amounts and rate directions. Pair own-account conversion/transfer legs using documented IDs and accounts, not timestamp proximity alone. Transfer principal is not a sale, but settlement/translation differences and separately evidenced charges require their own treatment. For an applicable AASB 121/IFRS-equivalent reporting policy, use recognition-date rates, closing rates for monetary balances and the stated settlement-difference exceptions. An average is acceptable only when it reasonably approximates actual rates. Tax translation follows its own country's method. [AASB 121 paragraphs 21-23,27-30](https://standards.aasb.gov.au/sites/default/files/2025-03/AASB121_08-15_COMPoct23_01-25.pdf).
+9. **Deliver a controlled proposal.** Output a source-to-journal map, reconciliations by currency/account, unique IDs, proposed accounts/tax codes, debit/credit totals, outstanding differences and approvals required. For a read-only ledger, provide an import file or list of postings for a human to approve. Retain a manifest of approved/imported IDs and amounts, check existing feeds and earlier imports before re-running, then compare actual ledger counts and balances to the approved proposal. Never describe a draft as posted or change live bank-feed rules as part of reading a file.
 
-CSV and PDF are available on web and mobile. MT940, QIF, and CAMT.053 are web-only. Statements are always **per currency balance** — a user with GBP and EUR balances must download two separate files.
+## Country and framework boundaries
 
----
+- **United Kingdom.** The HMRC source supports the UK recordkeeping and sole-trader/partner financial-charge points above. VAT on the platform's service and the client's sale are separate questions. Where an overseas service is involved, test actual belonging, establishment, exemption and input entitlement under Notice 741A sections 3-6, including unregistered-recipient registration consequences. A partly exempt buyer's reverse charge need not be neutral. [Notice 741A](https://www.gov.uk/guidance/vat-place-of-supply-of-services-notice-741a).
+- **Australia or another entity using an IFRS-equivalent policy.** The cited AASB documents support only the conditional reporting treatments stated above. Confirm the framework and effective compilation for the entity's period. They do not set every country's income-tax deduction or VAT/GST result.
+- **EU, US, Canada and other tax jurisdictions.** Load the current country/subnational sales-tax, income-tax and reporting methods. No global tax rate, marketplace exemption, information-reporting threshold or customer-location conclusion is certified from this export. EU consolidated VAT/DAC7 law was not readable during the current EUR-Lex outage; those obligations remain with the owning country method, not an inferred universal platform rule.
 
-## Section 3 — Column Mapping
+## When to refuse or refer
 
-### Balance Statement CSV
+- Unknown owner, incomplete date range, missing currency, inconsistent field count, duplicate identity, ambiguous locale/units or a reconciliation difference: hold the import and identify the missing evidence. Never manufacture an opening balance or fee to make it fit.
+- Do not filter away real money movements merely because their narrative says refund, reversal or conversion. Do not post transfers, loan principal, payroll liabilities or tax payments as new sales/ordinary expenses based solely on sign.
+- Unsupported legal tax treatment, principal-agent contract, stock reimbursement, gift-card breakage or regulatory status: preserve the item and hand it to the relevant accounting/country method. Processor legal status and deposit protection depend on the actual entity and product.
+- Exact live API endpoints, current platform export/import rules, software plan capabilities, pricing, fee-return policies and default codes have not been verified under this wave's official-authority-only restriction. No vendor page was used, and this method is not certification of a working live connection.
 
-| Column Header | Meaning |
-|---------------|---------|
-| TransferWise ID | Unique transaction identifier (numeric). Also labelled "ID" in some exports. |
-| Date | Transaction date. Format varies by account region: DD-MM-YYYY (UK), MM-DD-YYYY (US), YYYY-MM-DD (some regions). |
-| Amount | Transaction amount. Positive = money in, negative = money out. Decimal separator varies by region (period or comma). |
-| Currency | Three-letter ISO code for the balance currency (GBP, EUR, USD). |
-| Description | Transaction narrative: recipient name, transfer reference, card payment merchant, or fee description. |
-| Payment Reference | Payment reference or memo attached to the transfer. |
-| Running Balance | Balance after this transaction. |
-| Exchange Rate | FX rate applied if this transaction involved a currency conversion. Blank/null for same-currency transactions. |
-| Payer Name | Name of the person who sent the payment (for incoming transfers). |
-| Payee Name | Name of the recipient (for outgoing transfers). |
-| Payee Account Number | Recipient's account number (if available). |
-| Merchant | Merchant name for card payments. |
-| Total fees | Fee amount charged for this transaction. May be zero. |
+### Wise-specific controls
 
-Note: Column headers and their presence can vary slightly between Wise Personal and Wise Business accounts, and between web and app exports. Some exports combine Date and Time into a single column.
+Identify balance statement versus transfer-list data and obtain all relevant currency balances, account identifiers and source statements. Preserve original payer/payee, merchant and reference evidence. Support card purchases/refunds, direct debits, top-ups, own transfers, conversion legs, charges, interest and cashback with their actual commercial classification. A narrative search is a candidate, not a definitive type code.
 
-### Transfer List CSV (downloaded from Transactions page)
+The retained GBP example records transfer fees in signed cash movements and also repeats fee information in `Total fees`. Do not add a fee-column total to separate fee rows without proving it is a different charge. It contradicts the old claim that fees always have one fixed presentation. The EUR 1,153.20 counterpart described in the GBP conversion narrative has no complete EUR statement here; the second currency remains unreconciled. An effective conversion ratio is not proof of an FX spread, the provider's margin or a deductible fee. Do not infer VAT exemption, tax on interest, banking licence or document acceptance by a tax office from the Wise brand. Obtain the actual fee document and country's rule.
 
-| Column Header | Meaning |
-|---------------|---------|
-| ID | Transfer ID |
-| Date | Creation date of the transfer |
-| Amount | Amount sent or received |
-| Currency | Source or target currency |
-| Recipient | Recipient name |
-| Status | Completed, Cancelled, Pending |
-| Direction | INCOMING or OUTGOING |
-| Fee | Fee charged for the transfer |
-| Exchange Rate | Rate applied |
+## Worked case
 
----
+The retained nine-row GBP fixture implies an illustrative GBP 6,250 opening from its first balance less first movement and closes at GBP 8,285.07. Actual fee movements are GBP 6.66. Adding the repeated GBP 2.10 from the contractor row would incorrectly report GBP 8.76. This is a cash reconciliation, not proof that every receipt is revenue or every outgoing amount is deductible.
 
-## Section 4 — Transaction Type Codes
+```oa-check
+name: Wise statements and paired-currency reconciliation
+inputs:
+  opening: 6250
+  receipts: 3390.5
+  conversion: 1000
+  contractor: 350
+  fee_one: 4.56
+  fee_two: 2.1
+  purchase: 45.99
+  refund: 45.99
+  interest: 1.23
+  repeated_fee: 2.1
+steps:
+  - cash_fees: fee_one + fee_two
+  - naive_fee_total: cash_fees + repeated_fee
+  - closing: opening + receipts - conversion - contractor - cash_fees - purchase + refund + interest
+expected:
+  cash_fees: 6.66
+  naive_fee_total: 8.76
+  closing: 8285.07
+```
 
-Wise does not use formal type codes in CSV exports. Transaction types are inferred from the Description field:
+## Retained supplied-data fixtures
 
-| Description Pattern | Meaning |
-|---------------------|---------|
-| "Received money from [Name]" | Incoming transfer from another Wise user or external bank |
-| "Sent money to [Name]" | Outgoing transfer |
-| "Card payment to [Merchant]" | Debit card purchase |
-| "Card refund from [Merchant]" | Card payment refund |
-| "Converted [amount] [CCY] to [amount] [CCY]" | Currency conversion between balances |
-| "Direct Debit to [Name]" | Direct debit payment |
-| "Added money from [Bank]" | Top-up from linked bank account |
-| "Wise fee for transfer [ID]" | Fee charged as a separate line item |
-| "Interest" | Interest earned on balance |
-| "Cashback" | Cashback reward |
-
----
-
-## Section 5 — Fee Structure
-
-| Fee Type | How It Appears |
-|----------|---------------|
-| Transfer fee | Separate line item in the CSV with negative amount and description "Wise fee for transfer [ID]". Always a distinct row — never deducted from the transfer amount in the same row. |
-| Currency conversion fee | Included in the exchange rate spread. Not shown as a separate line. The mid-market rate vs Wise's rate difference is the implicit fee. |
-| Card payment fee | Usually zero for standard payments. Cross-currency card payments include a conversion spread. |
-| Monthly account fee | Wise Business: £0 for standard, varies for premium plans. Appears as a separate transaction. |
-| ATM withdrawal fee | Free up to limits, then ~£1.50 per withdrawal. Separate line item. |
-
-Key: Wise fees are almost always **separate line items**, not deducted from the transfer amount. This is different from Stripe/PayPal where fees are deducted in the same row.
-
----
-
-## Section 6 — Tax-Relevant Fields
-
-| Field | Notes |
-|-------|-------|
-| Currency | Critical for determining which tax jurisdiction and FX gain/loss calculations apply. |
-| Exchange Rate | Needed for FX gain/loss calculation vs the official rate on the transaction date. |
-| Total fees | Deductible business expense if the account is used for business purposes. |
-| Interest | Taxable income in most jurisdictions. |
-| Payer/Payee details | May be needed for transfer pricing documentation and cross-border payment reporting. |
-
-Wise does not collect or report VAT/GST on behalf of users. Wise itself is VAT-exempt as a financial service in the UK/EU. Wise does not issue invoices for fees — the CSV statement is the source document.
-
----
-
-## Section 7 — Multi-Currency Handling
-
-This is Wise's core complexity and the primary reason this skill exists.
-
-| Scenario | How It Appears |
-|----------|---------------|
-| Single-currency statement | One CSV per currency balance. All amounts in that currency. |
-| Currency conversion | Appears as **two entries across two statements**: a debit in the source currency statement and a credit in the destination currency statement. Both reference the same transfer ID. |
-| Incoming foreign payment | May arrive in the sender's currency and auto-convert, or may credit the matching currency balance directly. |
-| Exchange Rate column | Populated only for transactions involving FX conversion. Shows the rate applied. |
-| Mid-market rate vs Wise rate | Wise advertises the mid-market rate but applies a slightly different rate including their margin. The Exchange Rate column shows the actual rate applied. |
-
-### Reconciling multi-currency conversions
-
-1. Find the debit row in the source currency statement (e.g., -1000.00 GBP).
-2. Find the corresponding credit row in the destination currency statement (e.g., +1150.00 EUR).
-3. The fee appears as a separate debit row in the source currency statement.
-4. Match by transfer ID or by timestamp proximity.
-5. Calculate effective rate: destination amount ÷ source amount = effective rate including fees.
-
----
-
-## Section 8 — Reconciliation Tips
-
-1. **One statement per currency.** You must download and process each currency balance separately. A GBP bank reconciliation uses only the GBP statement.
-2. **Fees are separate rows.** Do not subtract fees from transfer amounts — they are already separate transactions.
-3. **FX conversion = two legs.** A single currency conversion creates entries in two different currency statements. Always reconcile both sides.
-4. **Date format varies by region.** UK accounts: DD-MM-YYYY. US accounts: MM-DD-YYYY. Some accounts: YYYY-MM-DD. Confirm before parsing.
-5. **Decimal separator varies.** UK/US use period (1234.56). European accounts may use comma (1234,56). Check the CSV delimiter too — European locale may use semicolons.
-6. **Running Balance column provides checksum.** Verify that the running balance progression matches Amount additions/subtractions from the opening balance.
-7. **PDF is the official statement.** For HMRC, tax filings, and mortgage applications, the PDF is the accepted format. CSV is for working data only.
-
----
-
-## Section 9 — Common Gotchas
-
-1. **Two-leg FX conversions confuse bookkeepers.** A conversion from GBP to EUR creates a debit in GBP and a credit in EUR. If you only look at the GBP statement, it looks like money disappeared. Always check both currency statements.
-2. **Fees as separate lines double-count risk.** If you sum all negative transactions as "expenses," you'll count transfer fees as expenses AND the transfer itself. Separate transfers from fees using the Description field.
-3. **"Added money" is not income.** Top-ups from a linked bank account are inter-account transfers, not revenue. Exclude from P&L.
-4. **Interest is taxable.** Small amounts of interest earned on Wise balances are taxable income. Easy to miss.
-5. **Wise is not a bank in all jurisdictions.** Wise holds funds under e-money licenses in some countries and banking licenses in others. This affects deposit protection and regulatory reporting.
-6. **Multiple IBANs per account.** A Wise Business account may have different IBANs for GBP (sort code + account number), EUR (Belgian IBAN), and USD (routing + account number). Bank statement matching must account for these different identifiers.
-
----
-
-## Section 10 — Sample Data
-
-### GBP Balance Statement CSV
+These are the original illustrations, retained byte-for-byte inside their code blocks. They are not certified current platform exports, fee schedules or complete accounts. Use the worked control above and the validation method before using any record. A failed example must remain failed, not silently repaired.
 
 ```csv
 TransferWise ID,Date,Amount,Currency,Description,Payment Reference,Running Balance,Exchange Rate,Total fees
@@ -185,8 +105,106 @@ TRANSFER-987654324,19-03-2026,890.50,GBP,Received money from Widget Corp,PO-8891
 INTEREST-001,20-03-2026,1.23,GBP,Interest,,8285.07,,0.00
 ```
 
----
-
-## Disclaimer
+## Existing review requirement
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional before filing or acting upon.
+
+## Sources
+
+| Official source | Read on | Read scope |
+|---|---|---|
+| https://www.gov.uk/self-employed-records/what-records-to-keep | 2026-11-14 | Read for sales/expense proof, accurate records, distinguishing business transactions and accrual records. |
+| https://www.gov.uk/expenses-if-youre-self-employed/legal-financial | 2026-11-14 | Read for business bank/credit-card charges, loan principal exclusion and bad debts/cash-basis distinction for UK sole traders and partners. |
+| https://www.gov.uk/guidance/vat-place-of-supply-of-services-notice-741a | 2026-11-14 | Read for sections 2-6 and 13, actual supply, belonging, reverse-charge conditions, input-tax limits and unregistered recipients. |
+| https://standards.aasb.gov.au/sites/default/files/2026-11/AASB15_12-14_COMPdec22_07-26.pdf | 2026-11-14 | Read for paragraphs 47 and 105-108,B34-B38 and B44-B47 for third-party collections, receivables/contract liabilities, principal-agent control and unexercised rights. Conditional Australian IFRS-equivalent financial-reporting scope, not worldwide tax law. |
+| https://standards.aasb.gov.au/sites/default/files/2025-03/AASB121_08-15_COMPoct23_01-25.pdf | 2026-11-14 | Read for paragraphs 20-23 and 27-30, initial recognition, monetary closing balances and settlement exchange differences; Australian IFRS-equivalent financial reporting, not universal tax translation. |
+
+Not yet confirmed: the live wise API/schema, exact export/import column positions and availability, UI/report paths, region/plan capabilities, pricing and fee/refund conventions, automatic tax/FX behaviour, regulatory status and third-party document acceptance. The following literal table/path inventory records what the old file claimed, only to help locate and compare supplied data. Its fees, codes, timing, default settings and field meanings are historical and must not be treated as 2026 guidance. Known accounting/tax errors are replaced by the method and country boundaries above. No vendor source was used.
+
+### Historical schema and claim inventory, not usable guidance
+
+#### Historical 2 - Export Formats
+
+```text
+Historical item CSV. Use Case: Per-currency balance statements, transfer lists
+Historical item XLSX (Excel). Use Case: Per-currency balance statements
+Historical item PDF. Use Case: Official bank statements (accepted by HMRC, tax offices, lenders)
+Historical item MT940. Use Case: Accounting software import (SWIFT standard)
+Historical item QIF. Use Case: Quicken import format
+Historical item CAMT.053. Use Case: European bank standard XML format (v10 only)
+```
+
+#### Historical Balance Statement CSV
+
+```text
+Historical item TransferWise ID. Meaning: Unique transaction identifier (numeric). Also labelled "ID" in some exports.
+Historical item Date. Meaning: Transaction date. Format varies by account region: DD-MM-YYYY (UK), MM-DD-YYYY (US), YYYY-MM-DD (some regions).
+Historical item Amount. Meaning: Transaction amount. Positive = money in, negative = money out. Decimal separator varies by region (period or comma).
+Historical item Currency. Meaning: Three-letter ISO code for the balance currency (GBP, EUR, USD).
+Historical item Description. Meaning: Transaction narrative: recipient name, transfer reference, card payment merchant, or fee description.
+Historical item Payment Reference. Meaning: Payment reference or memo attached to the transfer.
+Historical item Running Balance. Meaning: Balance after this transaction.
+Historical item Exchange Rate. Meaning: FX rate applied if this transaction involved a currency conversion. Blank/null for same-currency transactions.
+Historical item Payer Name. Meaning: Name of the person who sent the payment (for incoming transfers).
+Historical item Payee Name. Meaning: Name of the recipient (for outgoing transfers).
+Historical item Payee Account Number. Meaning: Recipient's account number (if available).
+Historical item Merchant. Meaning: Merchant name for card payments.
+Historical item Total fees. Meaning: Fee amount charged for this transaction. May be zero.
+```
+
+#### Historical Transfer List CSV (downloaded from Transactions page)
+
+```text
+Historical item ID. Meaning: Transfer ID
+Historical item Date. Meaning: Creation date of the transfer
+Historical item Amount. Meaning: Amount sent or received
+Historical item Currency. Meaning: Source or target currency
+Historical item Recipient. Meaning: Recipient name
+Historical item Status. Meaning: Completed, Cancelled, Pending
+Historical item Direction. Meaning: INCOMING or OUTGOING
+Historical item Fee. Meaning: Fee charged for the transfer
+Historical item Exchange Rate. Meaning: Rate applied
+```
+
+#### Historical 4 - Transaction Type Codes
+
+```text
+Historical item "Received money from [Name]". Meaning: Incoming transfer from another Wise user or external bank
+Historical item "Sent money to [Name]". Meaning: Outgoing transfer
+Historical item "Card payment to [Merchant]". Meaning: Debit card purchase
+Historical item "Card refund from [Merchant]". Meaning: Card payment refund
+Historical item "Converted [amount] [CCY] to [amount] [CCY]". Meaning: Currency conversion between balances
+Historical item "Direct Debit to [Name]". Meaning: Direct debit payment
+Historical item "Added money from [Bank]". Meaning: Top-up from linked bank account
+Historical item "Wise fee for transfer [ID]". Meaning: Fee charged as a separate line item
+Historical item "Interest". Meaning: Interest earned on balance
+Historical item "Cashback". Meaning: Cashback reward
+```
+
+#### Historical 5 - Fee Structure
+
+```text
+Historical item Transfer fee. How It Appears: Separate line item in the CSV with negative amount and description "Wise fee for transfer [ID]". Always a distinct row , never deducted from the transfer amount in the same row.
+Historical item Currency conversion fee. How It Appears: Included in the exchange rate spread. Not shown as a separate line. The mid-market rate vs Wise's rate difference is the implicit fee.
+Historical item Card payment fee. How It Appears: Usually zero for standard payments. Cross-currency card payments include a conversion spread.
+Historical item Monthly account fee. How It Appears: Wise Business: £0 for standard, varies for premium plans. Appears as a separate transaction.
+Historical item ATM withdrawal fee. How It Appears: Free up to limits, then ~£1.50 per withdrawal. Separate line item.
+```
+
+#### Historical 7 - Multi-Currency Handling
+
+```text
+Historical item Single-currency statement. How It Appears: One CSV per currency balance. All amounts in that currency.
+Historical item Currency conversion. How It Appears: Appears as **two entries across two statements**: a debit in the source currency statement and a credit in the destination currency statement. Both reference the same transfer ID.
+Historical item Incoming foreign payment. How It Appears: May arrive in the sender's currency and auto-convert, or may credit the matching currency balance directly.
+Historical item Exchange Rate column. How It Appears: Populated only for transactions involving FX conversion. Shows the rate applied.
+Historical item Mid-market rate vs Wise rate. How It Appears: Wise advertises the mid-market rate but applies a slightly different rate including their margin. The Exchange Rate column shows the actual rate applied.
+```
+
+#### Historical tax-field names, definitions require actual supplied mapping
+
+- Currency; retain as an investigation field, not proof of tax treatment.
+- Exchange Rate; retain as an investigation field, not proof of tax treatment.
+- Total fees; retain as an investigation field, not proof of tax treatment.
+- Interest; retain as an investigation field, not proof of tax treatment.
+- Payer/Payee details; retain as an investigation field, not proof of tax treatment.
