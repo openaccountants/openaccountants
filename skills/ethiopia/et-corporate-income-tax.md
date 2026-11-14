@@ -1,10 +1,11 @@
 ---
 name: et-corporate-income-tax
 description: "Ethiopia corporate income tax for tax year 2026: rates, minimum alternative tax, undistributed profit, withholding and filing, from the gazetted law."
-version: 0.2
+version: 0.3
 jurisdiction: ET
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
+type: computation
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
@@ -20,7 +21,6 @@ Bodies, all Category A whatever their turnover (art. 3). Limited liability partn
 
 | Item | Amount | Tax year | Official URL |
 |---|---|---|---|
-| Standard rate; Proc. 1395/2025 left art. 19(1) of Proc. 979/2016 unchanged | unverified 30% | 2026 | unverified |
 | Minimum alternative tax: on turnover; banks on net banking income; insurers on gross premium; price-regulated bodies on commission (art. 23(2)) | 2.5% | 2026 | https://www.hopr.gov.et/admin/Files/2026/4/8/5fc57d68-d0f6-4bf1-91b4-5b23abd0df72%E1%8C%88%E1%89%A2%20%E1%8C%8D%E1%89%A5%E1%88%AD%20%201395.pdf |
 | Credit for minimum tax (art. 23(5)) | up to 5 years | 2026 | same |
 | Undistributed profit not reinvested within 12 months of year end (art. 64) | 15% | 2026 | same |
@@ -29,7 +29,6 @@ Bodies, all Category A whatever their turnover (art. 3). Limited liability partn
 | Interest (art. 58) | 10% | 2026 | same |
 | Royalty: art and culture / other (art. 56) | 5% / 10% | 2026 | same |
 | Withholding on goods over ETB 20,000 and services of ETB 10,000 (art. 97(1)); 30% without TIN and licence | 3% | 2026 | same |
-| Mining rate, sector rule | unverified 25% | 2026 | unverified |
 
 ## The base
 
