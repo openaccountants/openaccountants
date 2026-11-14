@@ -32,8 +32,8 @@ Türkiye taxes profit shifted to related persons as a disguised profit distribut
 |---|---|---|---|
 | Related person through shareholding, votes or profit rights | At least 10% | 2026 | KVK art. 13(2), https://www.mevzuat.gov.tr/MevzuatMetin/1.5.5520.pdf |
 | Advance pricing agreement, longest term | 3 years | 2026 | KVK art. 13(5), https://www.mevzuat.gov.tr/MevzuatMetin/1.5.5520.pdf |
-| Advance pricing agreement renewal, apply before expiry | At least 9 months | 2026 | Communiqué Serial No. 3, section 6, https://www.mevzuat.gov.tr/MevzuatMetin/1.5.5520.pdf |
-| Advance pricing agreement fee | None (Fees Law tariff XII repealed by Law 7061) | 2026 | Harçlar Kanunu no. 492, tariff 8, XII, https://www.mevzuat.gov.tr/MevzuatMetin/1.5.5520.pdf |
+| Advance pricing agreement renewal, apply before expiry | At least 9 months | 2026 | Communiqué Serial No. 3, section 6, https://www.resmigazete.gov.tr/eskiler/2017/12/20171207-9.htm |
+| Advance pricing agreement fee | None (Fees Law tariff XII repealed by Law 7061) | 2026 | Harçlar Kanunu no. 492, tariff 8, XII, https://www.mevzuat.gov.tr/MevzuatMetin/1.5.492.pdf |
 | Transfer pricing form: related persons that may be left off | Annual net total per related person below TRY 30,000 | 2026 | Communiqué Serial No. 4, section 7.5, https://www.resmigazete.gov.tr/eskiler/2020/09/20200901-3.htm |
 | Master file (genel rapor): who prepares | Member of a multinational group with prior-year total assets and net sales both TRY 500 million or more | 2026 | Communiqué Serial No. 4, section 7.2, https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Ffileadmin%2Fuser_upload%2FTebligler%2F5520%2Ftransferteblig1degisen3.pdf |
 | Country-by-country report: group threshold | Prior-year consolidated group revenue EUR 750 million or more | 2026 | Communiqué Serial No. 4, section 7.4; Serial No. 5, art. 2, https://www.resmigazete.gov.tr/eskiler/2024/10/20241017-4.htm |
