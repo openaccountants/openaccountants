@@ -1,410 +1,163 @@
 ---
 name: sc-sales-tax
-description: "Use this skill whenever asked about South Carolina sales tax, South Carolina use tax, SC sales tax nexus, SC sales tax returns, SC exemption certificates, taxability of goods or services in South Carolina, or any request involving South Carolina state-level consumption taxes. Trigger on phrases like \"South Carolina sales tax\", \"SC sales tax\", \"SC use tax\", \"SC nexus\", \"S.C. Code 12-36\", \"SC DOR sales tax\", or any request involving South Carolina sales and use tax filing, classification, or compliance. NOTE: SC has a max tax cap of $500 on certain items (vehicles, boats, aircraft). ALWAYS read the parent us-sales-tax skill first for federal context."
+description: "South Carolina 6 percent general sales/use, location-specific local taxes, 5 percent maximum-tax items and IMF boundary, software/repair classification, food exemptions, ST-3 and ST-389 filing."
+version: "1.1"
 jurisdiction: US-SC
-tax_year: 2025
-last_updated: 2026-07-13
+category: state-tax
+tax_year: 2026
+last_updated: 2026-11-13
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: vat-gst
+type: computation
 ---
 
-# SC Sales Tax
+# South Carolina sales and use tax, tax year 2026
+
+> **General reference only.** Written by Codex. Not reviewed by an accountant. Obtain qualified professional review before filing, paying or taking a tax position.
+
+> **Circular 230 section 10.37:** Apply relevant law to the taxpayer's facts, evaluate reasonable assumptions and relevant circumstances, and obtain professional review of federal tax implications. Federal figures and computations belong to the linked federal owner skills.
+
+**Answer first.** General SC sales/use tax is 6% plus applicable local levies. Qualifying maximum-tax items instead use **5% up to USD 500**, with no SCDOR-administered local sales tax; many vehicle transactions are subject to DMV infrastructure maintenance fee (IMF) instead. The old 6%-cap-plus-unlimited-local calculation was wrong. Sources: [12-36-910, 1110, 2110 and 2120(83)](https://www.scstatehouse.gov/code/t12c036.php); [maximum-tax chapter, pages 1 to 4](https://dor.sc.gov/resources-site/lawandpolicy/Documents/SandU_10.pdf).
+
+## Scope
+
+Ordinary SC retailers, physically present and economic-nexus remote sellers, marketplace reconciliation and purchasers owing use tax. Covers retained specialist topics with explicit limits; admissions, local hospitality/accommodations fees and DMV IMF administration are not general-retail calculations. `us-sales-tax` owns federal/multistate context; state income and employee taxes route to `sc-income-tax`, `sc-corporate-tax` and `sc-payroll`. Original contributor attribution retained: **Open Accounting Skills Registry**.
+
+## Ask the client first
+
+1. SC locations/employees/inventory, current/prior calendar-year SC gross receipts, sales channels and marketplace collection.
+2. Product/service contract, delivery address and transaction date; taxable and exempt receipts separately.
+3. Maximum-tax item classification, first DMV registration/IMF, boat versus motor/trailer, manufactured-home energy requirements.
+4. Resale/exemption evidence, medical/manufacturing/agricultural use and business purchases without collected tax.
+5. Local county/city/tribal location, food/hospitality/lodging status and assigned tax codes.
+6. Retail licence, assigned filing frequency, sales/use workpapers, discounts already claimed and prior returns/payments.
+
+## The method, step by step
+
+### Rates, bands and thresholds
+
+| Item | Rate, amount and conditions | Official source |
+|---|---|---|
+| General retail/use | 6% state plus applicable local taxes | [general rate](https://dor.sc.gov/sales-use-tax-index/sales-tax) |
+| Local rate lookup | Current fetched map effective 1 May 2026 shows general combined 6% to 9%; exact location/item/date controls | [ST-500 effective-date heading and table](https://dor.sc.gov/sites/dor/files/forms/ST500.pdf) |
+| Qualifying maximum-tax item | 5%, no more than USD 500 per qualifying sale; applicable written leases require more than 90 continuous days | [pages 1 to 3](https://dor.sc.gov/resources-site/lawandpolicy/Documents/SandU_10.pdf) |
+| Qualifying maximum-tax local treatment | No SCDOR-administered local sales/use tax on max-tax sale/lease | [page 1](https://dor.sc.gov/resources-site/lawandpolicy/Documents/SandU_10.pdf) |
+| Certain religious equipment/instruments | 5% capped USD 300 with exempt-purpose/location/affidavit conditions | [page 3, category B](https://dor.sc.gov/resources-site/lawandpolicy/Documents/SandU_10.pdf) |
+| Manufactured home | Special USD 300/energy rules and possible additional 2% above USD 6,000; not blanket USD 500 | [12-36-2110(B)/2120(34)](https://www.scstatehouse.gov/code/t12c036.php); [partial exemptions](https://dor.sc.gov/resources-site/lawandpolicy/Documents/SandU_9.pdf) |
+| Retail licence | One-time USD 50 for each retail location | [retail licence FAQ](https://dor.sc.gov/sales-use-tax-index/sales-tax/remote-sellers) |
+| Remote economic nexus | Gross SC revenue **exceeds** USD 100,000 in previous or current calendar year; no transaction-count test | [current nexus definition](https://dor.sc.gov/sales-use-tax-index/sales-tax/remote-sellers) |
+| Electronic mandate | SC sales/use liability USD 15,000 or more per filing period | [filing and payment mandate](https://dor.sc.gov/sales-use-tax-index/sales-tax) |
+
+1. Establish nexus. Physical presence creates collection from its establishment date, regardless of remote threshold. A remote seller exceeding USD 100,000 SC receipts from property, electronic products or services in previous/current calendar year generally begins collecting the first day of the **second calendar month** after nexus is established. Old November 2018 is the historical first implementation, not a fresh annual effective date. Marketplace facilitator/seller reporting must be reconciled to platform statements and current law; do not collect twice or assume all seller obligations disappear. Source: [definition, effective-date and physical-nexus FAQs](https://dor.sc.gov/sales-use-tax-index/sales-tax/remote-sellers).
+2. Register Retail Licence through MyDORWAY, separately by location, paying the USD 50 fee where required. Document any valid licensing exception. Retain appropriate resale/exemption certificate and evidence of qualifying use; a nonprofit's status is not a universal exemption for every purchase. Source: [retail licence](https://dor.sc.gov/sales-use-tax-index/sales-tax/remote-sellers); [12-36-510 and exemption provisions](https://www.scstatehouse.gov/code/t12c036.php).
+3. Determine ordinary taxable goods and enumerated services, delivery/sourcing and taxable gross proceeds. The 1 May 2026 ST-500 map gives Charleston 9%, Greenville 6%, Berkeley 9%, Myrtle Beach/Horry 9%, among other locations. Use exact address and effective period, not the old assumption Charleston is always 8%. Local option, capital projects, transportation, school/education and tourism levies can differ by item and jurisdiction; Catawba and directly administered hospitality fees need separate treatment. Sources: [dated ST-500](https://dor.sc.gov/sites/dor/files/forms/ST500.pdf); [local tax categories and exemptions, 2025-2026 filing cycle](https://dor.sc.gov/resources-site/lawandpolicy/Documents/SandU_12.pdf).
+4. Qualifying unprepared SNAP-eligible food is exempt from **state** sales tax, but not automatically every local levy. Candy/soft drinks eligibility follows the food definitions, not a blanket exemption for all food products; prepared meals remain taxable and may incur separate local hospitality. Prescription medicine/prosthetics and certain diabetic supplies have specific exemption conditions; ordinary OTC medicine is not blanket exempt. DME needs the current statutory Medicare/Medicaid funding/provider conditions, not just a prescription. Residential electricity/fuel has a statutory exemption, so the old general-taxability claim was wrong. Source: [12-36-2120(28), (33), (74), (75)](https://www.scstatehouse.gov/code/t12c036.php); [medical, residential energy and unprepared-food sections](https://dor.sc.gov/resources-site/lawandpolicy/Documents/SandU_9.pdf).
+5. Distinguish software delivery/access. Software on tangible media can be taxable whether canned or custom; wholly electronic delivery without any tangible backup is not a taxable TPP sale under RR12-1. **Application Service Provider access** to software on the provider's website is taxable communication under that same ruling. The old inverted claims that electronic canned software is taxable and all SaaS is exempt are corrected. Do not decide a mixed cloud/data service solely from the label SaaS, and do not extend electronic-software treatment to all digital goods/streaming. Sources: [RR12-1, questions, conclusions and discussion](https://dor.sc.gov/sales-use-tax-electronically-delivered-software); [chapter 7 software footnote, corroborating 2025-2026 filing cycle](https://dor.sc.gov/resources-site/lawandpolicy/Documents/SandU_7.pdf).
+6. Repair parts/services: where separate agreements and records/invoices distinguish substantial parts transferred unchanged from labor, only the parts may be taxable; an inseparable bundled repair can include both. Auto repair regulation 117-306.2 expressly contains this separation rule. Fabrication/installation/alteration have distinct rules; separately stated reasonable installation can be excluded under 117-313.3. The old prohibition against ever excluding repair labor was wrong. Source: [117-306, 306.1/306.2 and 313](https://www.scstatehouse.gov/coderegs/Chapter%20117.pdf).
+7. For boats/watercraft motors/aircraft/motorcycles/RVs and other listed maximum-tax categories, establish the precise item and whether IMF supersedes sales/use. Apply 5% and USD 500 limit only when the relevant maximum-tax regime applies; ordinary threshold reaches the cap at **USD 10,000**, not old USD 8,333. No SCDOR-administered local tax is added on max-tax items. A boat trailer is not necessarily a qualifying capped boat; a motor or trailer can be a separate item. Manufactured homes have separate rules. Source: [categories, exceptions, boats and manufactured homes](https://dor.sc.gov/resources-site/lawandpolicy/Documents/SandU_10.pdf).
+8. For tax-free purchases used/stored/consumed in SC, evaluate use tax and properly paid other-state credit. Business purchases route through ST-3 and applicable ST-389; individuals can use the applicable SC1040 use-tax route, but final 2026 line number is Not yet confirmed. Maximum-tax and IMF distinctions still apply. Source: [12-36-1310, 2110 and 2120(83)](https://www.scstatehouse.gov/code/t12c036.php); [use-tax purchases worksheet](https://dor.sc.gov/sites/dor/files/forms/ST3.pdf).
+
+## Boundary and exception table
+
+| Old topic retained | Correct treatment or explicit limit |
+|---|---|
+| Clothing/footwear | Ordinary taxable goods outside a qualifying holiday; holiday terms below |
+| Medical/OTC/DME | No blanket OTC or prescription-only DME exemption; apply statutory conditions |
+| Manufacturing machines/components/electricity/pollution equipment | Conditional exemptions under 12-36-2120 and related rules, not every manufacturer's purchase; current detailed mixed-use eligibility Not yet confirmed |
+| Agricultural supplies/equipment | Conditional statutory agricultural exemption and SCATE evidence; current detailed card/use rules Not yet confirmed |
+| Telecommunication/cable/satellite/laundry/commercial utilities | Enumerated communications, laundry and electricity can be taxable; satellite/federal limitations and exact bundles need transaction-specific research |
+| Legal/accounting/medical, haircuts/spa | Professional/personal service versus taxable product true-object test; blanket list not sufficient. Specific accounting/hair/spa transactions Not yet confirmed |
+| Contractors/real property/prefabricated units | Contractors generally consume building materials; distinguish real-property improvement from sale of a manufactured unit under 117-314 |
+| Delivery/freight | Old blanket separately-stated freight exemption is Not yet confirmed; review gross-proceeds terms and actual delivery contract |
+| Casual/private transfers | Specific casual excise/IMF and exempt-transfer rules apply to vehicles/boats; old always-taxable/no-exception prohibition is too broad |
+| Exemption forms ST-8A/ST-8F/ST-8B/SSTCE; good-faith/three-year retention | Old form-to-purpose mapping and universal protection/retention claims are **Not yet confirmed**; use current form and statutory seller evidence requirements |
+| SST membership | Old nonmember assertion Not yet confirmed here; not used for a tax decision |
+| Audit/VDA/penalty abatement | Refer with records and current program terms; no automatic relief |
+
+The sales-tax holiday statute covers specified clothing, school supplies, computers and bed/bath items on the first Friday-Sunday in August. There is no confirmed USD 1,000 computer-price cap in the statutory list: the old cap is not used. For 2026, exact event administration/item exceptions are Not yet confirmed; use the current holiday notice before exempting a transaction. Source: [12-36-2120(57)](https://www.scstatehouse.gov/code/t12c036.php); [holiday list and examples, 2025-2026 filing cycle](https://dor.sc.gov/resources-site/lawandpolicy/Documents/SandU_9.pdf).
+
+## Worked cases
+
+**Case 1, ordinary dated retail.** Invented Charleston delivery of an USD 800 television during the fetched map's effective period uses 6% state plus 3% SCDOR local, total 9%: state USD 48, local USD 24, tax USD 72. The old USD 64 case assumed 2% local; do not reuse that local rate for this dated scenario. Other locally collected fees are not included.
+
+```oa-check
+name: South Carolina ordinary retail at fetched Charleston rate
+inputs:
+  price: 800
+steps:
+  - state_tax: price * 0.06
+  - local_tax: price * 0.03
+  - total_tax: state_tax + local_tax
+expected:
+  state_tax: 48
+  local_tax: 24
+  total_tax: 72
+```
+
+**Case 2, maximum-tax decision.** Invented qualifying boat sale USD 200,000, with no IMF or other special exception, has 5% computed tax USD 10,000 capped at USD 500. SCDOR local sales tax is zero on this capped transaction, not USD 4,000. Total USD 500 replaces the old USD 4,500. Confirm boat/motor/trailer line items independently.
+
+```oa-check
+name: South Carolina qualifying maximum tax boat sale
+inputs:
+  price: 200000
+steps:
+  - before_cap: price * 0.05
+  - state_tax: min(before_cap, 500)
+  - local_tax: 0
+  - total_tax: state_tax + local_tax
+expected:
+  before_cap: 10000
+  state_tax: 500
+  local_tax: 0
+  total_tax: 500
+```
+
+### Remaining old cases, corrected or bounded
 
-## Skill Metadata
+| Old invented case | Correct result and condition |
+|---|---|
+| Qualifying capped item USD 10,000 /25,000 /50,000 /100,000 /500,000 | At 5%, uncapped USD 500 /1,250 /2,500 /5,000 /25,000; each capped USD 500; savings USD 0 /750 /2,000 /4,500 /24,500 |
+| USD 50,000 or 45,000 vehicle with purported local 2% or 1% | First establish DMV IMF versus max sales tax and residence/registration; old USD 1,500/950 result invalid. Under qualifying max-sales regime alone, USD 500 and no SCDOR local; no IMF amount assumed |
+| USD 200 Greenville groceries | Qualifying unprepared food has 0 state; fetched May 2026 map has no SCDOR local general tax for Greenville, so 0 for that location/period; this is not a universal food-local exemption |
+| USD 400 monthly software access | If taxable ASP communication,6% state USD 24 plus applicable local. Electronic delivery-only and mixed services require different classification; oldautomatic 0 revoked |
+| Remote receipts USD 110,000 and 50 transactions | Exceeds USD 100,000 in relevant current/prior year, so economic nexus; 50 transactions is not a test; collection start follows second-month rule |
+| Repair labor USD 300 plusparts USD 400 at hypothetical 8% | Supported separate parts/labor agreements/invoices:USD 400 x 8%=USD 32; if inseparable taxable USD 700 charge, USD 56. Oldalways USD 56 not universal |
 
-**Skill Metadata**
+## When to refuse or refer
 
-| Field | Value |
-| --- | --- |
-| Jurisdiction | South Carolina, United States |
-| Jurisdiction Code | US-SC |
-| Tax Type | Sales and Use Tax |
-| State Tax Rate | 6% |
-| Maximum Combined Rate | 9% (6% state + up to 3% local) |
-| Primary Legal Framework | South Carolina Code of Laws, Title 12, Chapter 36 (Section 12-36-10 et seq.) |
-| Governing Body | South Carolina Department of Revenue (SCDOR) |
-| Filing Portal | MyDORWAY -- https://mydorway.dor.sc.gov |
-| Economic Nexus Effective Date | November 1, 2018 |
-| SST Member | No |
-| Notable Feature | $500 max tax cap on motor vehicles, boats, aircraft, manufactured homes |
-| Contributor | Open Accounting Skills Registry |
-| Validation Date | Pending |
-| Skill Version | 1.0 |
-| Confidence Coverage | Tier 1: rate lookups, basic nexus, standard taxability, max tax cap. Tier 2: SaaS classification, local penny tax, service taxability. Tier 3: audit defense, penalty abatement, complex multi-jurisdiction analysis. |
-| Format | Restructured to Q1 execution format, April 2026 |
-
-## Confidence Tier Definitions
-
-Every rule in this skill is tagged with a confidence tier:
-
-- **[T1] Tier 1 -- Deterministic.** Apply exactly as written. No reviewer judgement required.
-- **[T2] Tier 2 -- Reviewer Judgement Required.** Claude flags the issue and presents options. A licensed CPA, EA, or tax attorney must confirm before filing.
-- **[T3] Tier 3 -- Out of Scope / Escalate.** Do not guess. Escalate to a licensed tax professional.
-
-## Step 0: Client Onboarding Questions
-
-**Client Onboarding Questions**
-
-| # | Question | Why It Matters |
-| --- | --- | --- |
-| 1 | Do you have a South Carolina sales tax registration / tax ID? | Determines whether registration is needed before filing. |
-| 2 | What is your current filing frequency (monthly / quarterly / annually)? | Controls which return periods to prepare. |
-| 3 | What is your nexus type -- physical presence, economic nexus, or both? | Determines registration obligations and applicable rules. |
-| 4 | Are you a marketplace seller (selling through Amazon, Etsy, etc.)? | Marketplace facilitator may already be collecting on your behalf. |
-| 5 | What types of products or services do you sell in South Carolina? | Drives taxability classification under South Carolina law. |
-| 6 | Do you sell to exempt entities (government, nonprofits, resellers)? | Determines whether exemption certificates must be collected and retained. |
-| 7 | Do you have locations, employees, or inventory in South Carolina? | Physical presence creates nexus independent of economic thresholds. |
-| 8 | Do you sell into multiple South Carolina local jurisdictions? | Local tax rates vary; determines compliance complexity. |
+Refer IMF/vehicle/private transfers, uncertain software/communications, manufacturing/agricultural/medical exemptions, tribal/local hospitality, ambiguous labor/delivery, certificate disputes and audits/VDA. Do not use absolute old prohibitions to override primary-law exceptions.
 
-- **Stop condition on Qs 1-4** — If the client cannot answer questions 1-4, STOP and gather this information before proceeding. (T1)
-
-## Step 1: Tax Rate Structure
-
-### 1.1 State Rate
-
-- **State sales and use tax rate** — 6%  _(S.C. Code Section 12-36-910)_
-
-### 1.2 Local Rates
-
-**Local Rates**
-
-| Tax Component | Rate Range | Authority |
-| --- | --- | --- |
-| State tax | 6% | S.C. Code Section 12-36-910 |
-| Local option (county) | 1% -- 3% | S.C. Code Section 4-10 (various articles) |
-| **Maximum combined** | **9%** |  |
-
-- **Capital Projects Sales Tax** — 1%: For specific capital improvement projects, approved by referendum. (T1)
-- **Transportation Penny Tax** — 1%: For transportation infrastructure. (T1)
-- **Local Option Tax** — 1%: General county use, with property tax rollback. (T1)
-- **Not all counties levy local taxes** — Not all counties levy local taxes. Many counties have one or two local levies; some have none. (T1)
+## Filing and payment
 
-### 1.3 Max Tax Cap -- Critical Feature [T1]
+Use https://mydorway.dor.sc.gov, choose sales/use account and period; reconcile gross sales plus purchases subject to use tax, itemize exempt/deductible sales and compute net taxable base. **ST-3** reports state tax and **ST-389** applicable local taxes; select locality/type codes and retain workpaper/acceptance. Pay correct period and save separate payment proof. Default monthly due 20th next month; **quarterly and annual filing are available only with SCDOR approval**, requested by MyDORWAY web message or the stated Department route. Quarterly due 20th after quarter and annual 20 January; seasonal accounts follow their authorized active periods. The old no-quarterly/no-annual and universal e-file requirements were wrong. Electronic filing/payment mandatory at USD 15,000 liability per period; paper remains possible below threshold. Source: [all filing schedules, approval footnote and electronic/paper rules](https://dor.sc.gov/sales-use-tax-index/sales-tax).
 
-**Max Tax Cap Items**  _(S.C. Code Section 12-36-2110(A))_
+ST-3 line 7 discount is **3% if total state/local tax is less than USD 100, or 2% of the total if USD 100 or more**, not 3% of first USD 100 only. Combined discount is limited to USD 3,000 per fiscal year for June-May returns filed July-June; verify available cap and electronic additional-discount eligibility before claiming. Source: [line 7 and form notes](https://dor.sc.gov/sites/dor/files/forms/ST3.pdf).
 
-| Item | Max State Tax | Authority |
-| --- | --- | --- |
-| Motor vehicles | $500 | S.C. Code Section 12-36-2110(A) |
-| Boats and watercraft | $500 | S.C. Code Section 12-36-2110(A) |
-| Aircraft | $500 | S.C. Code Section 12-36-2110(A) |
-| Manufactured homes | $500 | S.C. Code Section 12-36-2110(A) |
-| Motorcycles | $500 | S.C. Code Section 12-36-2110(A) |
-| Recreational vehicles | $500 | S.C. Code Section 12-36-2110(A) |
+Late-filing/payment/fraud, estimated assessments and interest are governed by Title 12 Chapter 54 and applicable period rules. The old 5%-per-month/25%,0.5%-per-month/25%,75%fraud and federal-rate shorthand are **Not yet confirmed** here for each sales-tax assessment; use current notice/law rather than presenting those as a universal calculation. Source for further determination: [Chapter 54, penalties and interest](https://www.scstatehouse.gov/code/t12c054.php).
 
-- **Cap applies regardless of price** — The maximum state sales tax on these items is $500, regardless of the purchase price. (T1)
-- **Cap breakeven price** — $500 / 6% = $8,333. So for items priced at $8,333 or less, the full 6% applies. For items over $8,333, the state tax is capped at $500. (T1)
-- **Local taxes not subject to cap** — Local taxes are NOT subject to the cap and apply to the full purchase price. (T1)
+## Completion checklist
 
-A $50,000 vehicle in a county with 2% local tax: State tax = $500 (capped). Local tax = $50,000 x 2% = $1,000. Total tax = $1,500.
+- Nexus/start date and Retail Licence established; marketplace collections reconciled.
+- Item/date/location taxability and exemptions supported; cap/IMF and local-tax exceptions distinguished.
+- State/use/local workpaper and ST-3/ST-389 match; discount/fiscal cap checked.
+- Authorized frequency and payment mandate followed; acceptance/payment retained; unresolved topics referred.
 
-### 1.4 Sourcing Rules [T1]
+## Sources
 
-- **Destination-based sourcing** — South Carolina is a destination-based sourcing state. (T1)
-- **Shipped goods sourcing** — Shipped goods: Destination (ship-to address). (T1)
-- **Over-the-counter sourcing** — Over-the-counter: Seller's location. (T1)
+| Official source and scope actually read | URL | Read on |
+|---|---|---|
+| Read for Current sales page:6% rate, retail licence,15,000 electronic threshold, paper alternative, monthly/quarterly/annual schedules and approval footnote. | https://dor.sc.gov/sales-use-tax-index/sales-tax | 2026-11-13 |
+| Read for Remote-seller definition, exceeds 100,000 current/prior test, physical nexus, second-month collection start,50 licence and taxable services/use/local FAQs. | https://dor.sc.gov/sales-use-tax-index/sales-tax/remote-sellers | 2026-11-13 |
+| Read for Current Title 12 Chapter 36:910/920/1110/1310/2110 and 2120 medical, residential energy, food, holiday, IMF exceptions; neighboring conditions read. | https://www.scstatehouse.gov/code/t12c036.php | 2026-11-13 |
+| Read for ST-500 effective 1 May 2026: entire county map/rate table, Williamsburg change notice and exclusion of Catawba/direct local taxes. | https://dor.sc.gov/sites/dor/files/forms/ST500.pdf | 2026-11-13 |
+| Read for Manual chapter 10, September 2025:5%,500 maximum, no SCDOR local, IMF, leases, boats/trailers, motor vehicles/nonresident and manufactured-home clauses.2025-2026 filing cycle. | https://dor.sc.gov/resources-site/lawandpolicy/Documents/SandU_10.pdf | 2026-11-13 |
+| Read for Manual chapter 9, September 2025:partial exemptions, food/local exception, medical/DME/residential energy, manufacturing/agriculture and holiday list.2025-2026 filing cycle. | https://dor.sc.gov/resources-site/lawandpolicy/Documents/SandU_9.pdf | 2026-11-13 |
+| Read for Manual chapter 12, September 2025:local levy types, delivery and item-specific exemptions; dates distinguished from 2026 map.2025-2026 filing cycle. | https://dor.sc.gov/resources-site/lawandpolicy/Documents/SandU_12.pdf | 2026-11-13 |
+| Read for RR12-1:all questions/conclusions and neighboring discussion of tangible/electronic software and taxable ASP access; 2025 manual corroboration read. | https://dor.sc.gov/sales-use-tax-electronically-delivered-software | 2026-11-13 |
+| Read for Manual chapter 7, September 2025:true-object test, professional services, software footnote.2025-2026 filing cycle. | https://dor.sc.gov/resources-site/lawandpolicy/Documents/SandU_7.pdf | 2026-11-13 |
+| Read for Current Chapter 117 regulations:117-306/306.1/306.2 repair parts/labor,117-313 installation/fabrication,117-314 contractors, neighboring examples. | https://www.scstatehouse.gov/coderegs/Chapter%20117.pdf | 2026-11-13 |
+| Read for ST-3 all 3 pages:gross sales/use purchases, exemption worksheet, ST-389 integration, line 7 discount and fiscal cap; current unyear-marked form. | https://dor.sc.gov/sites/dor/files/forms/ST3.pdf | 2026-11-13 |
+| Read for Title 12 Chapter 54 fetched for assessment framework; exact legacy penalty/interest claims not established and held unconfirmed. | https://www.scstatehouse.gov/code/t12c054.php | 2026-11-13 |
 
-## Step 2: Transaction Classification Rules
-
-### 2.1 General Rule
-
-- **General rule** — South Carolina sales tax applies to the retail sale of tangible personal property and certain services.  _(S.C. Code Section 12-36-910)_
-
-### 2.2 Taxability Matrix
-
-**Taxability Matrix**
-
-| Item Category | Taxable? | Rate | Authority | Tier |
-| --- | --- | --- | --- | --- |
-| General tangible personal property | Yes | Full rate | S.C. Code Section 12-36-910 | [T1] |
-| Grocery food (food for home consumption) | **Exempt** | 0% | S.C. Code Section 12-36-2120(75) | [T1] |
-| Prepared food (restaurant meals) | Yes | Full rate | S.C. Code Section 12-36-910 | [T1] |
-| Clothing and footwear | Yes | Full rate | No exemption | [T1] |
-| Prescription drugs | Exempt | 0% | S.C. Code Section 12-36-2120(28) | [T1] |
-| Over-the-counter drugs | Exempt | 0% | S.C. Code Section 12-36-2120(28)(c) | [T1] |
-| Durable medical equipment | Exempt (with prescription) | 0% | S.C. Code Section 12-36-2120(28) | [T1] |
-| Motor vehicles | Yes (subject to $500 cap on state tax) | 6% capped at $500 state | S.C. Code Section 12-36-2110(A) | [T1] |
-| Gasoline and motor fuel | Exempt from sales tax (motor fuel excise) | N/A | S.C. Code Section 12-36-2120(16) | [T1] |
-| Utilities (residential electricity) | Yes | Full rate | S.C. Code Section 12-36-910 | [T1] |
-| Utilities (commercial) | Yes | Full rate | S.C. Code Section 12-36-910 | [T1] |
-| Manufacturing equipment (direct use) | Exempt | 0% | S.C. Code Section 12-36-2120(17) | [T2] |
-| Agricultural supplies and equipment | Exempt | 0% | S.C. Code Section 12-36-2120(14)-(15) | [T1] |
-| Software -- canned (tangible medium) | Yes | Full rate | S.C. Code Section 12-36-910 | [T1] |
-| Software -- canned (electronic delivery) | Yes | Full rate | SCDOR Revenue Ruling 16-2 | [T2] |
-| Software -- custom | Exempt | 0% | SCDOR guidance | [T2] |
-| SaaS (Software as a Service) | **Not taxable** | 0% | SCDOR -- not TPP; Revenue Ruling 19-1 | [T2] |
-| Digital goods (electronically delivered) | Not specifically taxable | 0% | Not defined as TPP | [T2] |
-| Newspapers (printed) | Exempt | 0% | S.C. Code Section 12-36-2120(4) | [T1] |
-
-### 2.3 Grocery Food Exemption [T1]
-
-- **SNAP/EBT eligible food exemption** — The exemption applies to food eligible for purchase with SNAP/EBT. (T1)
-- **Prepared food taxable** — Prepared food remains fully taxable. (T1)
-- **Candy and soft drinks** — Candy and soft drinks are treated as food (exempt). (T1)
-- **Local taxes on food** — Local taxes may still apply to food in some jurisdictions. (T2)
-- **Grocery food exemption authority** — South Carolina fully exempts unprepared food (food for home consumption) from sales tax.  _(S.C. Code Section 12-36-2120(75))_
-
-### 2.4 SaaS -- Not Taxable [T2]
-
-- **SaaS not TPP** — SaaS is not considered tangible personal property under SC law. (T2)
-- **Revenue Ruling 19-1** — Revenue Ruling 19-1 confirmed that remotely accessed software does not constitute a taxable sale. (T2)  _(Revenue Ruling 19-1)_
-- **Canned electronic vs SaaS distinction** — Canned software delivered electronically IS taxable, but SaaS (where the software resides on the vendor's server) is distinguished. (T2)
-
-### 2.5 Services Taxability [T2]
-
-**Services Taxability**
-
-| Service | Taxable? | Authority |
-| --- | --- | --- |
-| Telecommunications | Yes | S.C. Code Section 12-36-910 |
-| Cable/satellite TV | Yes | S.C. Code Section 12-36-910 |
-| Repair and maintenance of TPP | Parts: Yes; Labor: Yes (total charge taxable) | S.C. Code Section 12-36-910(B) |
-| Hotel/lodging | Yes (plus local accommodations tax) | S.C. Code Section 12-36-920 |
-| Laundry/dry cleaning | Yes | S.C. Code Section 12-36-910(B)(3) |
-| Electricity/gas utility service | Yes | S.C. Code Section 12-36-910 |
-| Professional services (legal, accounting) | No | Not enumerated |
-| Personal services (haircuts, spa) | No | Not enumerated |
-| Construction/real property | No (materials taxable at purchase) | SCDOR guidance |
-| Transportation/freight | Exempt (if separately stated) | S.C. Code Section 12-36-2120(66) |
-
-## Step 3: Return Form Structure
-
-### 3.1 Registration
-
-- **Registration requirement** — All sellers with nexus must register with SCDOR for a Retail License. Registration through MyDORWAY.  _(S.C. Code Section 12-36-510)_
-- **Registration fee** — $50 per retail location (T1)  _(S.C. Code Section 12-36-510)_
-
-### 3.2 Filing Frequency
-
-**Filing Frequency**
-
-| Filing Status | Frequency | Due Date |
-| --- | --- | --- |
-| All registrants | Monthly | 20th of the following month |
-
-- **No quarterly/annual filing** — South Carolina does NOT offer quarterly or annual filing for general sales tax. All filers file monthly. (T1)
-
-### 3.3 Returns and Payment
-
-- **Form ST-3** — Form ST-3 (State Sales, Use and Accommodations Tax Return) is the primary return. (T1)
-- **Electronic filing required** — Electronic filing through MyDORWAY is required. (T1)
-- **Payment due date** — Payment due by the 20th of the following month. (T1)
-- **State and local reported together** — Both state and state-administered local taxes are reported on the same return. (T1)
-
-### 3.4 Timely Filing Discount
-
-- **Timely payment discount** — 3% of the first $100 of tax due per return period (maximum $3 per period) (T1)  _(S.C. Code Section 12-36-2610)_
-
-### 3.5 Penalties and Interest
-
-**Penalties and Interest**
-
-| Violation | Penalty | Authority |
-| --- | --- | --- |
-| Late filing | 5% per month, up to 25% | S.C. Code Section 12-54-43 |
-| Late payment | 0.5% per month, up to 25% | S.C. Code Section 12-54-43 |
-| Failure to file | Estimated assessment + penalties | S.C. Code Section 12-54-44 |
-| Fraud | 75% of deficiency | S.C. Code Section 12-54-43 |
-| Interest | Federal underpayment rate | S.C. Code Section 12-54-25 |
-
-## Step 4: Deductibility / Exemptions
-
-### 5.1 South Carolina Exemption Certificates
-
-**South Carolina Exemption Certificates**
-
-| Certificate | Use Case | Authority |
-| --- | --- | --- |
-| **Form ST-8A** (Resale Certificate) | Purchases for resale | SCDOR |
-| **Form ST-8F** (Exempt Organization Certificate) | Nonprofit/government purchases | SCDOR |
-| **Form ST-8B** (Manufacturing Exemption) | Manufacturing equipment | SCDOR |
-| **SSTCE** | Multi-state (accepted) | SCDOR policy |
-
-### 5.2 Requirements [T1]
-
-- **Valid certificate requirements** — Valid certificates must include: purchaser information, SC retail license number (for resale), reason for exemption, description of goods, signature, date. (T1)
-
-### 5.3 Good Faith and Retention [T1]
-
-- **Good faith acceptance** — Good faith acceptance protects sellers. (T1)
-- **Certificate retention period** — 3 years from the date of the last transaction (T1)
-
-### 6.1 When Use Tax Applies
-
-- **Use tax applicability** — SC use tax applies when sales tax was not collected on items used, stored, or consumed in South Carolina. (T1)
-
-### 6.2 Use Tax Rate
-
-- **Use tax rate** — 6% state + applicable local (T1)
-- **Cap applies to use tax** — The $500 cap applies to qualifying items for use tax as well. (T1)
-
-### 6.3 Use Tax Reporting
-
-- **Business use tax reporting** — Businesses: Report on Form ST-3. (T1)
-- **Individual use tax reporting** — Individuals: Report on SC income tax return (Form SC1040), Line 19. (T1)
-
-## Step 5: Key Thresholds
-
-### 4.1 Physical Nexus
-
-- **Physical nexus** — Standard physical nexus principles apply. (T1)
-
-### 4.2 Economic Nexus [T1]
-
-**Economic Nexus Thresholds**  _(S.C. Code Section 12-36-71)_
-
-| Threshold | Value | Measurement Period |
-| --- | --- | --- |
-| Revenue | **$100,000** in gross sales into South Carolina | Previous or current calendar year |
-| Transactions | N/A (revenue only) |  |
-| Test | Revenue only |  |
-
-- **Economic nexus effective date** — November 1, 2018 (T1)  _(S.C. Code Section 12-36-71)_
-
-### 4.3 Marketplace Facilitator Rules [T1]
-
-- **Marketplace facilitator collection duty** — Effective April 26, 2019: Marketplace facilitators meeting the nexus threshold must collect and remit. (T1)  _(S.C. Code Section 12-36-71(H))_
-- **Marketplace sellers relieved** — Marketplace sellers relieved for facilitated sales. (T1)  _(S.C. Code Section 12-36-71(H))_
-
-## Step 6: Filing Deadlines and Penalties
-
-Refer to Step 3 for filing frequencies and due dates.
-
-## PROHIBITIONS
-
-- **1** — NEVER apply full 6% state tax to motor vehicles, boats, or aircraft over $8,333 (the $500 cap applies). (T1)
-- **2** — NEVER advise that grocery food is taxable in SC (it is exempt). (T1)
-- **3** — NEVER advise that SaaS is taxable in SC (it is not). (T1)
-- **4** — NEVER tell a seller they can file quarterly in SC -- all filers file monthly. (T1)
-- **5** — NEVER apply the $500 cap to local taxes (only the state tax is capped). (T1)
-- **6** — NEVER use a transaction-count threshold for SC economic nexus (revenue only, $100K). (T1)
-- **7** — NEVER ignore local "penny taxes" -- they can add up to 3% on top of the 6% state rate. (T1)
-- **8** — NEVER advise that repair labor is exempt in SC (the total charge for repair, including labor, is taxable). (T1)
-- **9** — NEVER exempt casual sales of motor vehicles (they are always subject to tax). (T1)
-- **10** — NEVER forget the $50 per-location retail license fee when advising on registration. (T1)
-
-## Edge Case Registry
-
-### 7.1 Max Tax Cap Calculations [T1]
-
-**Max Tax Cap Calculations**
-
-| Purchase Price | Uncapped State Tax (6%) | Capped State Tax | Savings |
-| --- | --- | --- | --- |
-| $10,000 | $600 | $500 | $100 |
-| $25,000 | $1,500 | $500 | $1,000 |
-| $50,000 | $3,000 | $500 | $2,500 |
-| $100,000 | $6,000 | $500 | $5,500 |
-| $500,000 | $30,000 | $500 | $29,500 |
-
-- **Local taxes not capped on full price** — Local taxes still apply to the full purchase price. (T1)
-
-### 7.2 Accommodations Tax [T1]
-
-- **State accommodations tax stated (7%)** — State: 7% (2% more than the general 5% sales tax base -- effectively 7% state rate on lodging). (T1)
-- **Accommodations tax total state rate** — Actually, accommodations are taxed at the 6% state sales tax PLUS a 2% state accommodations tax = 8% total state. (T2)
-- **Local accommodations taxes vary** — Local accommodations taxes also apply (vary by county). (T2)
-- **Marketplace facilitators collect on short-term rentals** — Marketplace facilitators collect on short-term rental platforms. (T1)
-
-### 7.3 Manufacturing Exemptions [T2]
-
-- **Machines used in manufacturing** — Machines used in manufacturing, processing, fabrication. (T2)
-- **Raw materials incorporated** — Raw materials incorporated into finished products. (T1)
-- **Electricity used in manufacturing** — Electricity used in manufacturing (reduced rate). (T2)
-- **Pollution control equipment** — Pollution control equipment. (T2)
-- **Manufacturing exemption authority** — South Carolina provides manufacturing exemptions.  _(S.C. Code Section 12-36-2120(17))_
-
-### 7.4 Casual/Occasional Sales [T1]
-
-- **Casual sales exemption general** — South Carolina exempts casual or occasional sales by persons not regularly engaged in business. (T1)
-- **Vehicles excluded from casual sale exemption** — The exemption does NOT apply to motor vehicles, boats, aircraft, or manufactured homes (always subject to tax, even between private parties). (T1)
-- **Private party vehicle sale cap** — Private party vehicle sales: $500 max tax cap still applies. (T1)
-
-### 7.5 Construction Contractors [T2]
-
-- **Contractors pay tax on materials** — Contractors pay tax on materials at purchase. (T1)
-- **No sales tax collection on real property improvements** — Contractors do NOT collect sales tax on real property improvements. (T1)
-- **Prefabricated components** — Prefabricated components may have different treatment. (T2)
-
-### 7.6 Repair Services -- Total Charge [T1]
-
-- **Both labor and parts taxable** — Both labor and parts are taxable. (T1)
-- **Tax applies to total invoice** — The tax applies to the total invoice amount. (T1)
-- **Important for repair businesses** — This is important for auto repair shops, appliance repair, and similar businesses. (T1)
-
-### 7.7 Sales Tax Holiday [T1]
-
-- **Clothing exemption in holiday** — Clothing (any price): exempt from state and local tax. (T1)
-- **School supplies exemption in holiday** — School supplies: exempt. (T1)
-- **Computers exemption threshold** — $1,000 or less: exempt (T1)
-- **Bed and bath items exemption** — Bed and bath items: exempt. (T1)
-- **Holiday broader than most states** — SC's holiday is broader than most states (no price cap on clothing). (T1)
-
-## Test Suite
-
-### Test 1: Basic Rate Calculation [T1]
-
-**Question:** A retailer in Charleston County (2% local) sells a $800 television. What is the total sales tax?
-
-**Expected Answer:** State: $800 x 6% = $48. Local: $800 x 2% = $16. Total: $64.
-
-### Test 2: Max Tax Cap on Vehicle [T1]
-
-**Question:** A customer buys a $45,000 car in a county with 1% local tax. What is the total sales tax?
-
-**Expected Answer:** State: $500 (capped). Local: $45,000 x 1% = $450 (no cap on local). Total: $950.
-
-### Test 3: Grocery Food Exemption [T1]
-
-**Question:** A consumer buys $200 of groceries in Greenville County. What tax is due?
-
-**Expected Answer:** $0. Grocery food is exempt from both state and local sales tax in SC.
-
-### Test 4: SaaS Taxability [T2]
-
-**Question:** A SC business subscribes to a $400/month SaaS accounting platform. Is SC sales tax due?
-
-**Expected Answer:** No. SaaS is not taxable in South Carolina per Revenue Ruling 19-1.
-
-### Test 5: Economic Nexus [T1]
-
-**Question:** An out-of-state seller made $110,000 in SC sales and 50 transactions. Does the seller have nexus?
-
-**Expected Answer:** Yes. SC uses a revenue-only threshold of $100,000. Transaction count is irrelevant.
-
-### Test 6: Repair Services [T1]
-
-**Question:** An auto repair shop charges $300 for labor and $400 for parts to fix a transmission in SC. What tax is due?
-
-**Expected Answer:** The entire $700 (labor + parts) is taxable. Tax = $700 x 8% (example with 2% local) = $56.
-
-### Test 7: Boat Purchase Cap [T1]
-
-**Question:** A customer buys a $200,000 boat in a county with 2% local tax. What is the total tax?
-
-**Expected Answer:** State: $500 (capped). Local: $200,000 x 2% = $4,000. Total: $4,500. Without the cap, state tax alone would have been $12,000.
-
-## Reviewer Escalation Protocol
-
-**Reviewer Escalation Protocol**
-
-| Trigger | Action |
-| --- | --- |
-| Any [T3] tagged item encountered | STOP. Do not guess. Escalate to licensed CPA, EA, or tax attorney. |
-| Client has audit notice or assessment | Escalate immediately. Do not advise on audit response. |
-| Multi-state nexus question involving 3+ states | Flag for senior reviewer with multi-state experience. |
-| Penalty abatement or voluntary disclosure | Escalate to licensed professional with state-specific experience. |
-| Ambiguous taxability of a product/service | Present both interpretations to reviewer with supporting authority. |
-
-## Contribution Notes
-
-- This skill follows the Q1 execution format (Step 0 through Step 7).
-- All rules are tagged [T1], [T2], or [T3] per the Confidence Tier Definitions.
-- Rate tables are deterministic lookup tables -- no narrative explanation of rates.
-- To update this skill, submit a pull request with the specific section, supporting statutory authority, and effective date of the change.
-- All changes require validation by a US CPA or EA before merging.
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
+Not yet confirmed: final 2026 ST-3/ST-389 line/code updates and post-May locality changes; detailed marketplace exclusions, all certificate mappings/retention/good-faith protections, SST membership, digital goods/mixed cloud services, precise special medical/manufacturing/agriculture/SCATE uses, holiday event terms, IMF/private-transfer/nonresident vehicle exceptions, local hospitality and penalty/interest/VDA calculations. Sources are primary state materials; historical 2025 manual sections are labeled 2025-2026 filing cycle and current law controls. No old subject is silently dropped.
