@@ -9,21 +9,23 @@
 2. `intake.md`
 3. `README.md`
 4. `denmark-vat-return.md`
-5. `dk-capital-gains.md`
-6. `dk-corporate-tax.md`
-7. `dk-cross-border.md`
-8. `dk-income-tax.md`
-9. `dk-payroll.md`
-10. `dk-social-contributions.md`
-11. `dk-transfer-pricing.md`
-12. `references.md`
-13. `eu-vat-base.md`
-14. `eu-vat-directive.md`
-15. `payroll-workflow-base.md`
-16. `transfer-pricing-workflow-base.md`
-17. `workflow-base.md`
-18. `vat-workflow-base.md`
-19. `income-tax-workflow-base.md`
+5. `dk-annual-reporting-reference.md`
+6. `dk-capital-gains.md`
+7. `dk-corporate-tax.md`
+8. `dk-cross-border.md`
+9. `dk-income-tax.md`
+10. `dk-payroll.md`
+11. `dk-social-contributions.md`
+12. `dk-transfer-pricing.md`
+13. `references.md`
+14. `eu-vat-base.md`
+15. `eu-vat-directive.md`
+16. `payroll-workflow-base.md`
+17. `transfer-pricing-workflow-base.md`
+18. `workflow-base.md`
+19. `vat-workflow-base.md`
+20. `financial-statements-workflow-base.md`
+21. `income-tax-workflow-base.md`
 
 ## Also known as
 
