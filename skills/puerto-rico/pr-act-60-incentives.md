@@ -15,7 +15,7 @@ description: >
 jurisdiction: PR
 category: cross-border
 tax_year: 2026
-last_updated: 2026-11-13
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: tax-optimization
@@ -45,7 +45,7 @@ Out of scope:
 | Ordinary individual brackets, exemptions and the optional tax | `pr-individual-income-tax` |
 | Regular corporate tax, including tax on export base-period income | `pr-company-income-tax` |
 | Federal bona fide residence, section 933, and which federal return is required | `pr-federal-residence-and-filing` |
-| Federal self-employment tax | `pr-self-employment-tax-2025` |
+| Federal self-employment tax | `pr-self-employment-tax` |
 | Manufacturing, tourism, agriculture, film, young entrepreneurs, qualified physicians | other chapters of Act 60, not this skill |
 | IVU on sales | `pr-ivu-sales-and-use-tax` |
 
