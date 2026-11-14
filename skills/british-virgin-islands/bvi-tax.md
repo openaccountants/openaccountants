@@ -47,7 +47,7 @@ So, in plain terms: individuals file no income tax return; BVI companies pay no 
 | Container-handling charge, 2026 relief measure | Halved from USD 300 to USD 150 | same |
 | Customs valuation, 2026 relief measure | Freight and insurance removed from customs valuation; duties reduced on food, hygiene, household and medical essentials | same |
 | Stamp duty, first-time Belonger purchasers of homes and land | One-year waiver continued into 2027 under the applicable rules | same |
-| SSB and NHI rates and ceilings | Owned by [vg-payroll-social](vg-payroll-social.md) (4% plus 4.5% SSB; 3.75% plus 3.75% NHI) | [SSB contributions](https://www.vissb.vg/contributions/) |
+| SSB rates, NHI rates and ceilings | Owned by [vg-payroll-social](vg-payroll-social.md); not restated here | [SSB contributions](https://www.vissb.vg/contributions/) |
 
 ## The base
 
