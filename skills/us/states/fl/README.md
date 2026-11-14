@@ -27,7 +27,6 @@ Calendar tax year for individuals; corporations follow their federal year. Autho
 | Annual report (LLCs and corporations) | `fl-annual-report` | approved by an accountant |
 | Payroll: reemployment tax (no state withholding) | `fl-payroll` | source-cited draft |
 | Moving to Florida: domicile, homestead, Save Our Homes | `fl-moving-to-florida-domicile` | source-cited draft |
-| Sales and use tax (older file) | `fl-sales-tax` | held from publication (`status: needs_sources`); duplicates `fl-sales-use-tax`, which is the skill for this job |
 
 ## What Florida does not have, or this pack does not cover
 
