@@ -1,10 +1,10 @@
 ---
 name: ny-sales-tax
 description: New York State and local sales and use tax for 2026 (Tax Law Articles 28 and 29). Registration and the Certificate of Authority, economic nexus (more than $500,000 and more than 100 sales of goods delivered into New York in the preceding four sales tax quarters, counting marketplace sales), the 4% state rate plus local rates and the 0.375% MCTD tax (New York City 8.875%), destination sourcing, what is taxable (clothing under $110 per item, food, prewritten software and SaaS, information services, enumerated services), marketplace providers, use tax, resale and exemption certificates (ST-120), filing frequency (ST-100, ST-101, ST-809, ST-810, PrompTax), due dates 20 days after each period, the vendor collection credit and penalties. Trigger on "New York sales tax", "NY sales tax", "NYC sales tax", "Certificate of Authority", "ST-100", "ST-120", "New York clothing exemption", "New York nexus", "SaaS sales tax New York". New York only.
-version: "3.0"
+version: "3.1"
 jurisdiction: US-NY
 tax_year: 2026
-last_updated: 2026-11-13
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: vat-gst
@@ -45,19 +45,19 @@ type: situation-rules
 | --- | --- | --- |
 | State sales and use tax rate | 4% | [Tax Department, sales tax rates](https://www.tax.ny.gov/bus/st/rates.htm) |
 | MCTD tax, on taxable sales within the Metropolitan Commuter Transportation District | 0.375% | [Tax Department, sales tax rates](https://www.tax.ny.gov/bus/st/rates.htm) |
-| Combined rate, New York City (reporting code 8081, includes the MCTD tax) | 8⅞% (8.875%) | [Publication 718](https://www.tax.ny.gov/pdf/publications/sales/pub718.pdf) |
-| Combined rate, Nassau County (includes the MCTD tax) | 8⅝% (8.625%) | [Publication 718](https://www.tax.ny.gov/pdf/publications/sales/pub718.pdf) |
-| Combined rate, Suffolk County (includes the MCTD tax) | 8¾% (8.75%) | [Publication 718](https://www.tax.ny.gov/pdf/publications/sales/pub718.pdf) |
-| Combined rate, Westchester County outside its taxing cities (includes the MCTD tax) | 8⅜% (8.375%) | [Publication 718](https://www.tax.ny.gov/pdf/publications/sales/pub718.pdf) |
-| Combined rate, Rockland County (includes the MCTD tax) | 8⅜% (8.375%) | [Publication 718](https://www.tax.ny.gov/pdf/publications/sales/pub718.pdf) |
+| Combined rate, New York City (reporting code 8081, includes the MCTD tax) | 8⅞% as printed (8.875% in decimals, computed from the fraction) | [Publication 718](https://www.tax.ny.gov/pdf/publications/sales/pub718.pdf) |
+| Combined rate, Nassau County (includes the MCTD tax) | 8⅝% as printed (8.625% in decimals, computed from the fraction) | [Publication 718](https://www.tax.ny.gov/pdf/publications/sales/pub718.pdf) |
+| Combined rate, Suffolk County (includes the MCTD tax) | 8¾% as printed (8.75% in decimals, computed from the fraction) | [Publication 718](https://www.tax.ny.gov/pdf/publications/sales/pub718.pdf) |
+| Combined rate, Westchester County outside its taxing cities (includes the MCTD tax) | 8⅜% as printed (8.375% in decimals, computed from the fraction) | [Publication 718](https://www.tax.ny.gov/pdf/publications/sales/pub718.pdf) |
+| Combined rate, Rockland County (includes the MCTD tax) | 8⅜% as printed (8.375% in decimals, computed from the fraction) | [Publication 718](https://www.tax.ny.gov/pdf/publications/sales/pub718.pdf) |
 | Combined rate, Albany County (reporting code 0181) | 8% | [Publication 718](https://www.tax.ny.gov/pdf/publications/sales/pub718.pdf) |
-| Combined rate, Erie County (reporting code 1451) | 8¾% (8.75%) | [Publication 718](https://www.tax.ny.gov/pdf/publications/sales/pub718.pdf) |
+| Combined rate, Erie County (reporting code 1451) | 8¾% as printed (8.75% in decimals, computed from the fraction) | [Publication 718](https://www.tax.ny.gov/pdf/publications/sales/pub718.pdf) |
 | Economic nexus: gross receipts from goods delivered into New York in the preceding four sales tax quarters must exceed | USD 500,000 | [Tax Department, nexus](https://www.tax.ny.gov/pubs_and_bulls/publications/sales/nexus.htm) |
 | Economic nexus: and number of sales of goods delivered into New York must be more than | 100 | [Tax Department, nexus](https://www.tax.ny.gov/pubs_and_bulls/publications/sales/nexus.htm) |
 | Clothing and footwear exemption from the 4% state tax: price per item or pair less than | USD 110 | [TB-ST-122](https://www.tax.ny.gov/pubs_and_bulls/tg_bulletins/st/clothing_and_footwear.htm) |
 | Annual filer: tax owed during an annual filing period of | USD 3,000 or less | [TB-ST-275](https://www.tax.ny.gov/pubs_and_bulls/tg_bulletins/st/filing_requirements_for_sales_and_use_tax_returns.htm) |
 | Part-quarterly (monthly) filer: taxable receipts, purchases subject to use tax, rents and amusement charges in a quarter of | USD 300,000 or more | [TB-ST-275](https://www.tax.ny.gov/pubs_and_bulls/tg_bulletins/st/filing_requirements_for_sales_and_use_tax_returns.htm) |
-| PrompTax: sales and use tax liability for the June to May period before the previous one of more than | USD 500,000 | [PrompTax sales and use tax](https://www.tax.ny.gov/bus/prompt/sales_tax/stpthome.htm) |
+| PrompTax: sales and use tax liability for the June to May period before the previous one of more than | USD 500,000 | [PrompTax](https://www.tax.ny.gov/bus/prompt/) |
 | Vendor collection credit (quarterly and annual filers, on time and paid in full) | 5% of taxes and fees, up to USD 200 a period | [TB-ST-925](https://www.tax.ny.gov/pubs_and_bulls/tg_bulletins/st/vendor_collection_credit.htm) |
 | Late return with no tax due | USD 50 | [TB-ST-805](https://www.tax.ny.gov/pubs_and_bulls/tg_bulletins/st/sales_and_use_tax_penalties.htm) |
 | Late return or payment: first month / each further month / maximum | 10% / 1% / 30% of the tax due (not less than USD 50 for a late return) | [TB-ST-805](https://www.tax.ny.gov/pubs_and_bulls/tg_bulletins/st/sales_and_use_tax_penalties.htm) |

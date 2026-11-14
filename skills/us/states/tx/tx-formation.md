@@ -1,10 +1,10 @@
 ---
 name: tx-formation
 description: Form a Texas business entity or register an out-of-state one in Texas, and set up its Texas tax side, for 2026. Covers the Texas LLC (Form 205, $300), the for-profit corporation (Form 201, $300), the series LLC, registering a foreign LLC or corporation (Forms 304 and 301, $750), registered agent changes ($15), the separate Comptroller side (franchise tax account, the annual Public Information Report due 15 May even when no tax is owed, forfeiture and personal liability), when an out-of-state entity has franchise tax nexus ($500,000 of Texas receipts or physical presence), the end of federal beneficial ownership reporting for US companies, and how to choose Texas or another state. Texas has no individual income tax. Trigger on "form an LLC in Texas", "Texas LLC", "Certificate of Formation", "Form 205", "Texas series LLC", "foreign LLC Texas", "Form 304", "Texas registered agent", "Texas vs Delaware", "Public Information Report".
-version: "1.0"
+version: "1.1"
 jurisdiction: US-TX
 tax_year: 2026
-last_updated: 2026-11-13
+last_updated: 2026-11-14
 depends_on:
   - tx-franchise-tax
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -202,7 +202,7 @@ expected:
 | Texas Secretary of State, Form 205, Certificate of Formation, Limited Liability Company (revised 09/26). Read for the $300 fee, name words, registered agent, governing authority, purpose, the franchise tax mailing address, supplemental provisions, effectiveness (90 days) and the mailing address. | https://www.sos.state.tx.us/corp/forms/205_boc.pdf | 2026-11-13 |
 | Texas Secretary of State, Form 304, Application for Registration of a Foreign Limited Liability Company. Read for the $750 fee and the required items, including the date business started and late fees. | https://www.sos.state.tx.us/corp/forms/304_boc.pdf | 2026-11-13 |
 | Texas Secretary of State, Form 201, Certificate of Formation, For-Profit Corporation. Read for the name words and the minimum of one director. | https://www.sos.state.tx.us/corp/forms/201_boc.pdf | 2026-11-13 |
-| Texas Business Organizations Code Chapter 4. Read for 4.151 (name reservation $40, merger or conversion $300), 4.152 (corporation: formation $300, amendment $150, foreign registration $750, change of agent $15, termination $40), 4.154 (LLC fees same as corporation) and 4.155 (limited partnership $750). | https://statutes.capitol.texas.gov/Docs/BO/htm/BO.4.htm | 2026-11-13 |
+| Texas Business Organizations Code Chapter 4. Read for 4.151 (name reservation $40, merger or conversion $300), 4.152 (corporation: formation $300, amendment $150, foreign registration $750, change of agent $15, termination $40), 4.154 (LLC fees same as corporation) and 4.155 (limited partnership $750). | https://tcss.legis.texas.gov/resources/BO/htm/BO.4.htm | 2026-11-13 |
 | Texas Secretary of State, SOSPortal. Read for the $1.00 search fee. | https://www.sos.state.tx.us/corp/sosda/index.shtml | 2026-11-13 |
 | Texas Comptroller, Franchise Tax page. Read for the $2,650,000 threshold, the $50 late report penalty, payment penalties and the 2026 forfeiture notices. | https://comptroller.texas.gov/taxes/franchise/ | 2026-11-13 |
 | Texas Comptroller, 2026 Franchise Tax Report Forms. Read for PIR/OIR-only filing at or below the threshold, the end of the No Tax Due Report and the new veteran-owned business exception. | https://comptroller.texas.gov/taxes/franchise/forms/2026-franchise.php | 2026-11-13 |
