@@ -52,19 +52,17 @@ Permanent establishment at over 91 days (art. 4). Non-resident withholding: insu
 
 ## Two worked examples that recompute
 
-Simple case: profit ETB 100,000, turnover ETB 10,000,000, so minimum tax applies at the 30% rate marked unverified.
+Simple case: turnover ETB 10,000,000; the normal tax on profit, worked out at the standard rate in the client's own computation, is ETB 40,000 (an example input: the standard rate is on the Not yet confirmed line, so it is not applied here). Minimum tax is higher, so it is payable.
 
 ```oa-check
 name: Minimum alternative tax
 inputs:
-  p: 100000
+  normal: 40000
   t: 10000000
 steps:
-  - normal: p * 0.30
   - minimum: t * 0.025
   - payable: max(normal, minimum)
 expected:
-  normal: 30000.00
   minimum: 250000.00
   payable: 250000.00
 ```
@@ -103,6 +101,6 @@ expected:
 | Tax Administration (Amendment) Proclamation 1434/2026, Federal Negarit Gazette 32nd Year No. 48, 30 July 2026, listed by the Ministry of Revenues | https://www.mor.gov.et/domestic-law-proclamation | 2026-11-01 | Whole text read; adds 17 to the penalty article numbers of 983/2016 |
 | Ministry of Revenues forms list | https://www.mor.gov.et/forms | 2026-11-01 | Titles of the published forms read; the form boxes were not read |
 
-Not yet confirmed: the 30% rate and the mining rate: the rate article of Proc. 979/2016 was not read, so both stay marked unverified; the Council of Ministers income tax regulation that sets the digital service tax rate (capped at 5%) was not found; the e-tax portal steps and the box numbers on the Ministry forms were not read, so no box numbers are given as law; the Ministry directives on undistributed profit and advance tax were not read.
+Not yet confirmed: the 30% rate and the mining rate: the rate article of Proc. 979/2016 was not read, so neither is used in this skill or its examples; the Council of Ministers income tax regulation that sets the digital service tax rate (capped at 5%) was not found; the e-tax portal steps and the box numbers on the Ministry forms were not read, so no box numbers are given as law; the Ministry directives on undistributed profit and advance tax were not read.
 
 > **General reference only.** This document does not constitute tax, legal, or financial advice. Verify figures against the cited primary sources or with a licensed professional before relying on them.
