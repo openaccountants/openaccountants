@@ -27,6 +27,10 @@ class RowSources(unittest.TestCase):
         n, misses, unreadable = rs.check_text(t, pages(**{A: "rate 5.2% of income not over $23000 " * 20}))
         self.assertEqual((n, misses, unreadable), (1, [], []))
 
+    def test_table_in_attribute_is_read(self):
+        page = '<div data-table="{&quot;column_1&quot;:{&quot;text&quot;:&quot;Kauniainen 4,70&quot;}}"></div>' + "x" * 500
+        self.assertIn("Kauniainen 4,70", rs.read_bytes(page.encode()))
+
     def test_next_js_page_text_is_read(self):
         page = ('<html><body><nav>menu</nav><script>self.__next_f.push([1,"Veroprosentti on '
                 'v\\u00e4hint\\u00e4\\u00e4n 1,30 ja enint\\u00e4\\u00e4n 2,00 \\u003cb\\u003eprosenttia\\u003c/b\\u003e"])'

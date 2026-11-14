@@ -118,8 +118,10 @@ def read_bytes(raw):
             return ""
     t = raw.decode("utf-8", "replace")
     flight = next_flight_text(t)
+    # Some sites (vero.fi) keep a table as JSON inside a long attribute value: keep that text too.
+    attrs = " ".join(html.unescape(a) for a in re.findall(r'="([^"]{50,})"', t))
     t = re.sub(r"(?s)<script.*?</script>|<style.*?</style>", " ", t)
-    return html.unescape(re.sub(r"<[^>]+>", " ", t)) + flight
+    return html.unescape(re.sub(r"<[^>]+>", " ", t)) + flight + (" " + attrs if attrs else "")
 
 
 # Next.js sites (finlex.fi and others) ship the page text inside
