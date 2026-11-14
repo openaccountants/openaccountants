@@ -3,16 +3,17 @@ name: sl-vat-gst
 description: "Sierra Leone goods and services tax research workpaper for the 2026 intake year. Use it to classify ordinary supplies and imports, test turnover and compulsory digital registration, identify the tax point, separate eligible from blocked input and reconcile output less allowed credit. It distinguishes the enacted return deadline from the later payment deadline and traces the invoice, schedule and electronic-register requirements to specific amendments. Non-resident services, digital suppliers and statutory relief have separate conditions. Every predecessor topic is retained, corrected or explicitly held. Two executable cases compare correct input treatment with unsupported alternatives. The unofficial older baseline, schedule conflicts, current form availability and complete operative amendment chain remain explicit limits."
 jurisdiction: SL
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: international
-version: 1.0
+version: 1.1
 tax_year_notes: "2026 research intake; unofficial2016baseline plus read2017–2026amendment passages; full operative law and filing not closed"
 tier: 2
 domain: vat-gst
+type: situation-rules
 ---
 
-# Sierra Leone Goods and Services Tax v1.0
+# Sierra Leone Goods and Services Tax v1.1
 
 **General reference only.** This Guide is general tax/accounting reference material. It has not been reviewed for any specific person's facts, documents, elections, deadlines or local procedures. Do not rely on it to file, pay or take a tax position without review by a qualified professional in the relevant jurisdiction.
 

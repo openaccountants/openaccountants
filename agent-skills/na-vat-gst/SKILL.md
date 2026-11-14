@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/na-vat-gst"
   jurisdiction: "NA"
   tax_year: "2026"
-  last_updated: "2026-11-01"
+  last_updated: "2026-11-14"
 ---
 
-# Namibia VAT v0.2
+# Namibia VAT v0.3
 
 > **General reference only.** This skill is general tax reference material for AI-assisted workflows. Do not rely on it to file, pay or take a position without review by a qualified professional in Namibia.
 
@@ -100,15 +100,15 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| VAT Act 10 of 2000, annotated (read: ss.6, 15, 23, 24, 53, 66-69, Schedule III para 2 to (ii), Schedule IV by para 2 headings) | https://www.lac.org.na/laws/annoSTAT/Value-Added%20Tax%20Act%2010%20of%202000.pdf | 2026-11-01 |
-| Government Gazette 8864 GN 107 (read: notice) | https://www.lac.org.na/laws/2026/8864.pdf | 2026-11-01 |
-| Government Gazette 9030 GN 299, 300 (read: notices) | https://www.lac.org.na/laws/2026/9030.pdf | 2026-11-01 |
-| NamRA VAT page (read: whole page; threshold stale) | https://www.namra.org.na/tax-types/page/value-added-tax-vat-30120/ | 2026-11-01 |
-| NamRA how to file VAT (read: whole) | https://www.namra.org.na/documents/cms/uploaded/how-to-file-vat-returns-on-itas-a9438c4f18.pdf | 2026-11-01 |
-| NamRA form VAT 2 (read: whole) | https://www.namra.org.na/documents/cms/uploaded/return-for-value-added-tax-f8b15298a9.pdf | 2026-11-01 |
+| VAT Act 10 of 2000, annotated: read for ss.6, 15, 23, 24, 53, 66 to 69, Schedule III para 2 to (ii), Schedule IV by para 2 headings on 2026-11-01 | https://www.lac.org.na/laws/annoSTAT/Value-Added%20Tax%20Act%2010%20of%202000.pdf | 2026-11-01; tried again 2026-11-14, lac.org.na refused the script (406) |
+| Government Gazette 8864 GN 107: read for the VAT interest rate adjustment notice | https://www.lac.org.na/laws/2026/8864.pdf | 2026-11-14 |
+| Government Gazette 9030 GN 299, 300: read for the VAT debt and refund interest notices | https://www.lac.org.na/laws/2026/9030.pdf | 2026-11-14 |
+| NamRA VAT page: read in full (its threshold is stale) | https://www.namra.org.na/tax-types/page/value-added-tax-vat-30120/ | 2026-11-14 |
+| NamRA how to file VAT: read in full | https://www.namra.org.na/documents/cms/uploaded/how-to-file-vat-returns-on-itas-a9438c4f18.pdf | 2026-11-14 |
+| NamRA form VAT 2: read in full | https://www.namra.org.na/documents/cms/uploaded/return-for-value-added-tax-f8b15298a9.pdf | 2026-11-14 |
 
 Not yet confirmed: refund interest rate in GN 300; fitness certificate detail; Budget 2026/27 proposals.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-01. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `na-vat-gst` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/na-vat-gst. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `na-vat-gst` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/na-vat-gst. If neither is available, confirm every figure against the official source pages cited above before relying on it.

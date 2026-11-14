@@ -16,13 +16,14 @@ description: >
 jurisdiction: FO
 category: international
 tax_year: 2026
-last_updated: 2026-10-28
-version: 0.6
+last_updated: 2026-11-14
+version: 0.7
 tier: 2
 domain: corporate-tax
+type: computation
 ---
 
-# Faroe Islands corporate income tax v0.6
+# Faroe Islands corporate income tax v0.7
 
 ## Who this applies to
 

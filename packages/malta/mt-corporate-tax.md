@@ -1,14 +1,15 @@
 ---
 name: mt-corporate-tax
 description: "Malta corporate income tax for basis year 2026 (year of assessment 2027): companies resident in Malta and Malta permanent establishments of foreign companies. Covers the 35% company rate, the full imputation system and the five tax accounts, shareholder refunds (six-sevenths, five-sevenths, two-thirds, full), the elective 15% final tax without imputation (LN 188 of 2025), the taxable base, loss carry-forward, group loss relief (51%) and fiscal units (95%), notional interest deduction, provisional tax, the company return and its deadline, interest and additional tax, outbound withholding, and Pillar Two status. Trigger on: Malta corporate tax, Malta company tax rate, 35% Malta, six-sevenths refund, Malta tax accounts, Malta fiscal unit, Malta group relief, Malta provisional tax company, Malta 15% final tax election. Out of scope: participation exemption detail (mt-holding-company-participation-exemption), company residence, CFC and exit tax (mt-company-residence-and-substance), transfer pricing (malta-transfer-pricing), individuals (malta-income-tax)."
-version: 0.4
+version: 0.5
 jurisdiction: MT
 tax_year: 2026
-last_updated: 2026-11-08
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: corporate-tax
+type: computation
 ---
 
 # Malta corporate income tax: 35%, imputation, refunds and filing (basis year 2026)

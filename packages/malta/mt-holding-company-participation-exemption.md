@@ -1,25 +1,32 @@
 ---
 name: mt-holding-company-participation-exemption
-description: "Malta holding company for a family, in depth: the participating holding test, the participation exemption on dividends and gains with its anti-abuse conditions and the beneficial owner test for selling a Malta subsidiary, the company rate with shareholder refunds, the five tax accounts, tax deducted from untaxed dividends to Malta-resident family members, the elective final tax without imputation, and the notional interest deduction. Trigger on: Malta holding company, participation exemption Malta, Malta tax refund six-sevenths, Malta family holding, Malta untaxed account dividend, Malta final tax without imputation election."
-version: 1.2
+description: "Malta holding company for a family, in depth, the participating holding test, the participation exemption on dividends and gains with its anti-abuse conditions and the beneficial owner test for selling a Malta subsidiary, the company rate with shareholder refunds, the five tax accounts, tax deducted from untaxed dividends to Malta-resident family members, the elective final tax without imputation, and the notional interest deduction. Trigger on, Malta holding company, participation exemption Malta, Malta tax refund six-sevenths, Malta family holding, Malta untaxed account dividend, Malta final tax without imputation election."
+version: 2.0
 jurisdiction: MT
 tax_year: 2026
-last_updated: 2026-11-08
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: corporate-tax
+type: situation-rules
 ---
 
 # Malta holding companies: participation exemption, tax refunds and dividends to the family
 
-**4 November audit correction scope:** this remains source-cited research. This update addresses only the findings and changed claims in [the correction ledger](../../evidence/malta-deep-audit-20261104/ledgers/mt-holding-company-participation-exemption.md). Unchanged claims outside that ledger are retained research, not newly verified operational instructions. Other stated holds and specialist questions remain unresolved; edit dates and passing arithmetic are not a full-law review or professional approval.
-
-Figures are for tax year 2026. Malta taxes by year of assessment, so income of calendar 2026 is taxed in year of assessment 2027. This Guide covers a company registered in Malta that holds shares for a family: what counts as a participating holding, when its dividends and gains are exempt, the alternative of paying the company rate and letting the shareholder claim a refund, the tax accounts that decide which route a dividend takes, the tax deducted from untaxed dividends paid to the family, and the elective fifteen-cent final tax. Every figure sits in a table that names its page on legislation.mt. The Acts print most rates and fractions in words; this Guide keeps them in words. Pages were read on 4 October 2026.
+## Scope and who this is for
+Figures are for tax year 2026. Malta taxes by year of assessment, so income of calendar 2026 is taxed in year of assessment 2027. This Guide covers a company registered in Malta that holds shares for a family: what counts as a participating holding, when its dividends and gains are exempt, the alternative of paying the company rate and letting the shareholder claim a refund, the tax accounts that decide which route a dividend takes, the tax deducted from untaxed dividends paid to the family, and the elective fifteen-cent final tax. Every figure sits in the rates table with its page on legislation.mt. The Acts print most rates and fractions in words; this Guide keeps them in words. Pages were read on 14 November 2026.
 
 This Guide does not cover sales of Malta property or the general capital gains rules (see `mt-capital-gains`), the mechanics of selling a Maltese company (see `selling-a-company-in-malta`), where the company is resident and what substance it needs (see `mt-company-residence-and-substance`), controlled foreign company rules (see `cfc-and-substance-rules-compared`), how to set up a family office in Malta (see `mt-family-office-setup`), or how Malta compares with other holding locations (see `family-holding-company-location-compared`).
 
-## The method, step by step
+## Ask the client first
+- Who are the shareholders of the holding company, and for each: resident in Malta, ordinarily resident and domiciled in Malta, or neither? Is any of them a company or a trust? This decides who is a "recipient" under article 61, who can claim refunds, and whether a gain on a Malta subsidiary can be exempt. For each individual: is their chargeable income, excluding the dividend, at or above the relevant threshold in article 12(1)(c)(iii) of the Income Tax Act? That decides whether a taxed-account dividend is exempt in their hands and whether a refund can be claimed.
+- For each subsidiary: where is it resident, what foreign tax does it pay, what share of its income is passive interest or royalties or comes from portfolio investments, and when was the holding acquired? This decides the anti-abuse test. Can the subsidiary deduct the dividend it pays?
+- Is any subsidiary resident in Malta, or does any non-Maltese subsidiary hold, directly or indirectly, an interest in a Malta-resident company or partnership? This switches on the beneficial owner test for gains.
+- Will the profits be paid out to the family soon, or kept in the company? This decides between the exemption, the refund route and the elective final tax.
+- Has the company claimed double taxation relief on any foreign income, or already made the elective final tax election (and in which year of assessment)?
+- Are the family shareholders registered to claim refunds, and is any refund claim older than four years from the date it became eligible?
 
+## The method, step by step
 1. Confirm the company is "registered in Malta". The participation exemption in article 12(1)(u) of the [Income Tax Act, Cap. 123](https://legislation.mt/eli/cap/123/eng/pdf) applies only to income or gains "derived by a company registered in Malta". Residence and substance are in `mt-company-residence-and-substance`.
 2. Test each holding against the participating holding definition in article 2(1) of the [Income Tax Act](https://legislation.mt/eli/cap/123/eng/pdf). Any one route is enough (see "Participating holding" below).
 3. Sort each item of income into dividend or gain, and the subsidiary into Malta-resident or not. Dividends must pass the anti-abuse conditions in the proviso to article 12(1)(u). Gains on a holding in a Malta-resident company or partnership must pass the separate beneficial owner test in the same article.
@@ -29,41 +36,25 @@ This Guide does not cover sales of Malta property or the general capital gains r
 7. If the company considers the elective final tax in the [Final Income Tax Without Imputation Regulations, S.L. 123.217](https://legislation.mt/eli/sl/123.217/eng/pdf), compare it with the refund route using the floor in regulation 3(4)(a) and the five-year lock-in in regulation 3(3), before the election is made.
 8. Check the [Notional Interest Deduction Rules, S.L. 123.176](https://legislation.mt/eli/sl/123.176/eng/pdf) for a company with equity funding, and the controlled foreign company rules in the [EU Anti-Tax Avoidance Directives Implementation Regulations, S.L. 123.187](https://legislation.mt/eli/sl/123.187/eng/pdf) for the subsidiaries (covered in `cfc-and-substance-rules-compared`).
 
-## Figures from the Income Tax Act, Cap. 123
-
-| Item | Value | Note (verbatim from the page) |
-| --- | --- | --- |
-| Source | all figures below | https://legislation.mt/eli/cap/123/eng/pdf |
-| Participating holding, route (a), article 2(1) | at least five percent of the equity shares | "a company holds directly at least five percent of the equity shares" |
-| Participating holding, route (e), article 2(1) | EUR 1,164,000 | "one million, one hundred and sixty-four thousand euro (€1,164,000)" |
-| Holding period for route (e) only | 183 days | "held for an uninterrupted period of not less than 183 days" |
-| Dividend anti-abuse, limb (i)(2), article 12(1)(u) | 15% | "it is subject to any foreign tax of at least fifteen per cent (15%)" |
-| Dividend anti-abuse, limb (i)(3), article 12(1)(u) | 50% | "it does not have more than fifty per cent (50%) of its income derived from passive interest or royalties" |
-| Dividend anti-abuse, limb (ii)(2), article 12(1)(u) | 5% | "subject to any foreign tax at a rate which is not less than five per cent (5%)" |
-| Company rate, article 56(6) | thirty-five cents on every euro | "at the rate of thirty-five cents (0.35) on every euro of the chargeable income of every" |
-| Tax deducted from an untaxed dividend paid to a recipient, article 62(1) | fifteen per cent | "deduct therefrom tax at a rate of fifteen per cent" |
-
-## Participating holding (article 2(1))
-
+### Participating holding (article 2(1))
 First apply the article 2(1) definition of **equity holding**: the company must not be a property company, and the holding must carry at least two equity rights (votes, distributable profits, winding-up assets), subject to the Commissioner's express determination power. A five-percent stake alone does not bypass this gate. Then a holding is a participating holding where ANY ONE of these routes is met (the Act joins them with "or"):
 
 - (a) the company "holds directly at least five percent of the equity shares" of a company whose capital is divided into shares, and the holding gives at least five percent of any two of: votes, profits available for distribution, and assets available on a winding up;
 - (b) the company is an equity shareholder and is entitled "at its option to call for and acquire the entire balance of the equity shares" it does not hold, to the extent the law of the subsidiary's country allows;
 - (c) the company is an equity shareholder and is "entitled to first refusal" if the remaining equity shares are to be disposed of, redeemed or cancelled;
 - (d) the company is an equity shareholder and is "entitled to either sit on the Board or appoint a person to sit on the Board" as a director;
-- (e) the company is an equity shareholder holding an investment worth at least the amount in the table above "as on the date or dates on which it was acquired", and the holding is "held for an uninterrupted period of not less than 183 days". The 183 days belongs to route (e) only. It is not a general holding period;
+- (e) the company is an equity shareholder holding an investment worth at least the amount in the rates table "as on the date or dates on which it was acquired", and the holding is "held for an uninterrupted period of not less than 183 days". The 183 days belongs to route (e) only. It is not a general holding period;
 - (f) the company is an equity shareholder and the holding is "for the furtherance of its own business" and "is not held as trading stock for the purpose of a trade".
 
 Routes (b) to (f) need only an equity holding, not the five percent of route (a). A proviso to the definition extends it to holdings in certain partnerships, EEIGs, bodies of persons and non-resident collective investment vehicles, reading "equity shares" as the capital that carries at least two of the three rights above.
 
-## The participation exemption (article 12(1)(u))
-
+### The participation exemption (article 12(1)(u))
 WHAT IS EXEMPT. Article 12(1)(u) exempts "any income or gains derived by a company registered in Malta from a participating holding or from the transfer of such holding", where the company "has not shown such income or gain as part of his chargeable" income in its return. The exemption is the company's choice: it may instead declare the income, pay the company rate and let the shareholder claim a refund (see "The refund route" below).
 
 DIVIDENDS: THE ANTI-ABUSE CONDITIONS. For a dividend from a participating holding acquired on or after 1 January 2007, the exemption applies only if condition (i) OR condition (ii) is met. From 1 January 2011 the same conditions also apply to dividends from holdings acquired before 1 January 2007, so they now apply to every dividend.
 
-- Condition (i): the body of persons in which the holding is held meets ANY ONE of these: (1) "it is resident or incorporated in a country or territory which forms part of the European Union"; (2) it is subject to foreign tax of at least the 15% in the table; (3) it does not have more than the 50% in the table of its income from passive interest or royalties. "Passive interest or royalties" means interest or royalties "not derived, directly or indirectly, from a trade or business" that suffered no foreign tax or foreign tax at less than the 5% in the table (article 2(1)).
-- Condition (ii), only where none of (i) is met: BOTH of these must hold. (1) The holding in the non-resident body "is not a portfolio investment". A holding in a non-resident body that "derives more than fifty per cent of its income from portfolio investments shall be deemed to be a portfolio investment". (2) The non-resident body "or its passive interest or royalties have been subject to any foreign tax" at a rate not less than the 5% in the table.
+- Condition (i): the body of persons in which the holding is held meets ANY ONE of these: (1) "it is resident or incorporated in a country or territory which forms part of the European Union"; (2) it is subject to foreign tax of at least the 15% in the rates table; (3) it does not have more than the 50% in the rates table of its income from passive interest or royalties. "Passive interest or royalties" means interest or royalties "not derived, directly or indirectly, from a trade or business" that suffered no foreign tax or foreign tax at less than the 5% in the rates table (article 2(1)).
+- Condition (ii), only where none of (i) is met: BOTH of these must hold. (1) The holding in the non-resident body "is not a portfolio investment". A holding in a non-resident body that "derives more than fifty per cent of its income from portfolio investments shall be deemed to be a portfolio investment". (2) The non-resident body "or its passive interest or royalties have been subject to any foreign tax" at a rate not less than the 5% in the rates table.
 
 These conditions are written for dividends. The Act does not apply them to gains on the transfer of the holding.
 
@@ -81,8 +72,7 @@ GAINS ON A MALTA-RESIDENT HOLDING: THE BENEFICIAL OWNER TEST. A further proviso 
 
 How the gain is then taxed, and duty on the share transfer, are in `mt-capital-gains` and `selling-a-company-in-malta`.
 
-## The tax accounts (article 2(1))
-
+### The tax accounts (article 2(1))
 The Act requires a Malta company's distributable profits to be allocated to five accounts: "final tax account, immovable property account, foreign income account, Maltese taxed account, and untaxed account". The definitions, read on the Act:
 
 - Final tax account: "the taxed account to which an amount of distributable profits which suffered tax, calculated in such manner and in such amount as may be prescribed, shall be allocated before any distributable profits are allocated to any other taxed account". Profits taxed under the elective final tax go here (regulation 3(4)(c) of S.L. 123.217).
@@ -93,17 +83,9 @@ The Act requires a Malta company's distributable profits to be allocated to five
 
 Read together, profits that bore no Malta tax, including participation-exempt dividends and gains, appear to fall into the untaxed account. That reading decides whether article 62 tax is deducted when they are paid out. Confirm it before advising (see "Ask the client first").
 
-## The refund route (Cap. 372, article 48(4) and (4A))
-
+### The refund route (Cap. 372, article 48(4) and (4A))
 Instead of the exemption, the company can declare the income, pay tax at the company rate, and distribute. The shareholder, not the company, then claims a refund.
 
-| Item | Value | Note (verbatim from the page) |
-| --- | --- | --- |
-| Source | all figures below | https://legislation.mt/eli/cap/372/eng/pdf |
-| Standard refund, article 48(4A)(a): dividends from the Maltese taxed account or foreign income account | six-sevenths | "may claim a refund of six-sevenths of the Advance Company Income Tax" |
-| Profits of passive interest or royalties, or dividends from a participating holding that fails the article 12(1)(u) conditions, article 48(4A)(a) proviso (i) | five-sevenths | "the rate of refund shall be of five-sevenths of the said Advance Company Income Tax" |
-| Foreign income account profits, article 48(4)(a) (the route where the company claimed double taxation relief, since article 48(4A) is then barred) | two-thirds | "may claim a refund of two-thirds of the Malta tax paid by the company" |
-| Foreign income account profits from a participating holding or its disposal, article 48(4)(b) | all of the Malta tax paid | "a claim may be made for a refund of all of the Malta tax paid in respect of those profits" |
 
 Rules, from article 48 of the [Income Tax Management Act, Cap. 372](https://legislation.mt/eli/cap/372/eng/pdf):
 
@@ -117,9 +99,8 @@ Rules, from article 48 of the [Income Tax Management Act, Cap. 372](https://legi
 - PAYMENT: the Commissioner pays on receipt of the dividend certificate the company issues under article 59(5) of the Income Tax Act. "Such refund, unless otherwise provided for in the Income Tax Acts, shall not be taxable" (article 48(6)).
 - PENALTY: a person who claims a refund without being entitled to it is liable to "a penalty equal to the amount of the refund claimed" (article 48(10)), plus repayment and additional tax if it was paid.
 
-## Dividends to the family from the untaxed account (articles 61 to 66)
-
-Under article 62(1) of the [Income Tax Act](https://legislation.mt/eli/cap/123/eng/pdf), "Every company shall, on payment of untaxed dividend" to a recipient, "deduct therefrom tax at a rate of fifteen per cent" (the rate in the Cap. 123 table above). An "untaxed dividend" is a dividend paid by a company resident in Malta "to the extent that it is paid out of distributable profits allocated to its untaxed account" (article 61(b)).
+### Dividends to the family from the untaxed account (articles 61 to 66)
+Under article 62(1) of the [Income Tax Act](https://legislation.mt/eli/cap/123/eng/pdf), "Every company shall, on payment of untaxed dividend" to a recipient, "deduct therefrom tax at a rate of fifteen per cent" (the rate in the rates table). An "untaxed dividend" is a dividend paid by a company resident in Malta "to the extent that it is paid out of distributable profits allocated to its untaxed account" (article 61(b)).
 
 A "recipient" (article 61(a)) is any ONE of:
 
@@ -137,18 +118,11 @@ Other rules:
 - Dividends from taxed accounts other than the final tax account: a person not resident in Malta, or an individual resident in Malta, need not disclose them, and "No person shall be charged to further tax" on them (article 68(1)(a) and (b)).
 - Dividends from the final tax account "shall not be charged to further tax and shall not form part of the chargeable income of any person and no person may claim a credit or refund" of tax paid on those profits (article 68(1)(c)).
 
-## The elective final tax (S.L. 123.217)
-
-| Item | Value | Note (verbatim from the page) |
-| --- | --- | --- |
-| Source | all figures below | https://legislation.mt/eli/sl/123.217/eng/pdf |
-| Elective rate, regulation 3(1)(b) | fifteen cents on every euro | "at the rate of fifteen cents (0.15) on every euro of the chargeable income" |
-| Lock-in, regulation 3(3)(a) | five-year period | "shall not be made before the end of the five (5)- year period" |
-
+### The elective final tax (S.L. 123.217)
 Rules, from the [Final Income Tax Without Imputation Regulations, S.L. 123.217](https://legislation.mt/eli/sl/123.217/eng/pdf) (Legal Notice 188 of 2025):
 
 - WHO: an "entity", meaning a company (including a body of persons that elects to be, or is deemed to be, a company) and "any trust that applies the provisions of article 27D(1) of the Act".
-- WHAT: tax on chargeable income at the rate in the table "in lieu of the rate determined in article 56(6) of the Act" (regulation 3(1)(b)).
+- WHAT: tax on chargeable income at the rate in the rates table "in lieu of the rate determined in article 56(6) of the Act" (regulation 3(1)(b)).
 - EXCLUDED INCOME (regulation 3(1) proviso): chargeable income under the election does not include "dividends received from profits that are not allocated to the final tax account of another company registered in Malta", nor income already taxed at a final rate under another provision of the Act and allocated to the final tax account.
 - WHEN: available for income "accruing to or derived by the entity in the fiscal year preceding the year of assessment 2025 and subsequent years", by notice in the form and by the date the Commissioner sets (regulation 3(2)). It applies "with effect from the year of assessment in which the election is made" (regulation 3(3)).
 - LOCK-IN: the entity cannot notify a return to the ordinary system before the end of the five-year period that starts with the first year of assessment under the election. After it returns, the ordinary system "shall apply for at least five (5) consecutive years of assessment" (regulation 3(3)(a) and (c)).
@@ -163,23 +137,37 @@ WHEN IT CAN BEAT THE REFUND ROUTE for a Maltese-resident family, on the wording 
 - The election does not help income the Act already exempts (participation exemption) or income already taxed at a final rate.
 - Whether Malta-resident individual shareholders can in practice claim and keep article 48(4A) refunds decides the comparison. See "Ask the client first".
 
-## Notional interest deduction (S.L. 123.176), briefly
+### Notional interest deduction (S.L. 123.176), briefly
+Under the [Notional Interest Deduction Rules, S.L. 123.176](https://legislation.mt/eli/sl/123.176/eng/pdf) (in force from year of assessment 2018), a Malta-resident company or partnership may deduct deemed interest on its "risk capital" (share capital, share premium, positive retained earnings, interest-free loans and other equity). The reference rate is the yield on Malta Government Stocks with about 20 years to run plus the premium in the rates table. The deduction applies only to profits that stand to be allocated to the foreign income account or the Maltese taxed account, and the excess over the cap in the rates table may be carried forward. Risk capital invested in holdings that could produce exempt income is left out of the base. Each shareholder is deemed to receive interest income equal to its share of the deduction claimed (rule 5). For a pure holding company living on participation-exempt income it usually has little to work on.
 
-| Item | Value | Note (verbatim from the page) |
-| --- | --- | --- |
-| Source | all figures below | https://legislation.mt/eli/sl/123.176/eng/pdf |
-| Premium added to the reference rate | 5% | "with a remaining term of approximately 20 years plus a premium of 5%" |
-| Cap on the deduction, rule 4(2)(a) | 90% | "exceeds ninety per cent (90%) of the undertaking’s chargeable income" |
-
-Under the [Notional Interest Deduction Rules, S.L. 123.176](https://legislation.mt/eli/sl/123.176/eng/pdf) (in force from year of assessment 2018), a Malta-resident company or partnership may deduct deemed interest on its "risk capital" (share capital, share premium, positive retained earnings, interest-free loans and other equity). The reference rate is the yield on Malta Government Stocks with about 20 years to run plus the premium in the table. The deduction applies only to profits that stand to be allocated to the foreign income account or the Maltese taxed account, and the excess over the cap in the table may be carried forward. Risk capital invested in holdings that could produce exempt income is left out of the base. Each shareholder is deemed to receive interest income equal to its share of the deduction claimed (rule 5). For a pure holding company living on participation-exempt income it usually has little to work on.
-
-## Controlled foreign companies (S.L. 123.187)
-
+### Controlled foreign companies (S.L. 123.187)
 Malta's controlled foreign company rules are in regulation 7 of the [EU Anti-Tax Avoidance Directives Implementation Regulations, S.L. 123.187](https://legislation.mt/eli/sl/123.187/eng/pdf). They are covered, with the thresholds, in `cfc-and-substance-rules-compared`. Residence of the Malta company itself is in `mt-company-residence-and-substance`.
 
-## Worked hypotheticals
+## Rates, bands and thresholds
 
-All four are hypothetical facts, not a real client. Amounts are recomputed from the rates and fractions in the tables above.
+| Item | Value | Note (verbatim from the page) | Source |
+| --- | --- | --- | --- |
+| Participating holding, route (a), article 2(1) | at least five percent of the equity shares | "a company holds directly at least five percent of the equity shares" | https://legislation.mt/eli/cap/123/eng/pdf |
+| Participating holding, route (e), article 2(1) | EUR 1,164,000 | "one million, one hundred and sixty-four thousand euro (€1,164,000)" | https://legislation.mt/eli/cap/123/eng/pdf |
+| Holding period for route (e) only | 183 days | "held for an uninterrupted period of not less than 183 days" | https://legislation.mt/eli/cap/123/eng/pdf |
+| Dividend anti-abuse, limb (i)(2), article 12(1)(u) | 15% | "it is subject to any foreign tax of at least fifteen per cent (15%)" | https://legislation.mt/eli/cap/123/eng/pdf |
+| Dividend anti-abuse, limb (i)(3), article 12(1)(u) | 50% | "it does not have more than fifty per cent (50%) of its income derived from passive interest or royalties" | https://legislation.mt/eli/cap/123/eng/pdf |
+| Dividend anti-abuse, limb (ii)(2), article 12(1)(u) | 5% | "subject to any foreign tax at a rate which is not less than five per cent (5%)" | https://legislation.mt/eli/cap/123/eng/pdf |
+| Company rate, article 56(6) | thirty-five cents on every euro | "at the rate of thirty-five cents (0.35) on every euro of the chargeable income of every" | https://legislation.mt/eli/cap/123/eng/pdf |
+| Tax deducted from an untaxed dividend paid to a recipient, article 62(1) | fifteen per cent | "deduct therefrom tax at a rate of fifteen per cent" | https://legislation.mt/eli/cap/123/eng/pdf |
+| Standard refund, article 48(4A)(a): dividends from the Maltese taxed account or foreign income account | six-sevenths | "may claim a refund of six-sevenths of the Advance Company Income Tax" | https://legislation.mt/eli/cap/372/eng/pdf |
+| Profits of passive interest or royalties, or dividends from a participating holding that fails the article 12(1)(u) conditions, article 48(4A)(a) proviso (i) | five-sevenths | "the rate of refund shall be of five-sevenths of the said Advance Company Income Tax" | https://legislation.mt/eli/cap/372/eng/pdf |
+| Foreign income account profits, article 48(4)(a) (the route where the company claimed double taxation relief, since article 48(4A) is then barred) | two-thirds | "may claim a refund of two-thirds of the Malta tax paid by the company" | https://legislation.mt/eli/cap/372/eng/pdf |
+| Foreign income account profits from a participating holding or its disposal, article 48(4)(b) | all of the Malta tax paid | "a claim may be made for a refund of all of the Malta tax paid in respect of those profits" | https://legislation.mt/eli/cap/372/eng/pdf |
+| Elective rate, regulation 3(1)(b) | fifteen cents on every euro | "at the rate of fifteen cents (0.15) on every euro of the chargeable income" | https://legislation.mt/eli/sl/123.217/eng/pdf |
+| Lock-in, regulation 3(3)(a) | five-year period | "shall not be made before the end of the five (5)- year period" | https://legislation.mt/eli/sl/123.217/eng/pdf |
+| Premium added to the reference rate | 5% | "with a remaining term of approximately 20 years plus a premium of 5%" | https://legislation.mt/eli/sl/123.176/eng/pdf |
+| Cap on the deduction, rule 4(2)(a) | 90% | "exceeds ninety per cent (90%) of the undertaking’s chargeable income" | https://legislation.mt/eli/sl/123.176/eng/pdf |
+| Refund claim time limit, Cap. 372 art. 48(5) | four years | "not later than four years from the date from which the amount of tax is eligible for refund" | https://legislation.mt/eli/cap/372/eng/pdf |
+| Tax deducted on untaxed dividends due, Cap. 123 art. 62(2) | by the 14th day after the end of the month of payment | "not later than the fourteenth day following the end of the month in which such dividend was paid" | https://legislation.mt/eli/cap/123/eng/pdf |
+
+## Worked cases
+All four are hypothetical facts, not a real client. Amounts are recomputed from the rates and fractions in the rates table.
 
 Hypothetical 1. A Malta holding company owned by Malta-resident individuals receives a dividend of EUR 1,000,000 from a participating holding in a trading company resident in another EU state. Limb (i)(1) is met and the subsidiary cannot deduct the dividend.
 
@@ -235,27 +223,9 @@ Hypothetical 4. A Malta holding company owned by two Malta-resident siblings sel
 
 If one sibling were not resident in Malta and not owned or controlled by an individual ordinarily resident and domiciled in Malta, the exemption would reach that sibling's share of the gain only. Being a participating holding is not enough: the subsidiary's residence in Malta switches on the beneficial owner test. The gain also cannot go to the foreign income account, which excludes "a participating holding in a company resident in Malta". Refunds on its distribution and duty on the transfer are for `selling-a-company-in-malta` and `mt-capital-gains`.
 
-## Ask the client first
+Hypothetical 3 is the decision: on distributed trading profit the refund route leaves EUR 5,000 and the election EUR 15,000, so for profits that will be paid out the refund route wins by EUR 10,000; the election can only help on retained profits, and only if the floor counts refunds claimable on a later dividend.
 
-- Who are the shareholders of the holding company, and for each: resident in Malta, ordinarily resident and domiciled in Malta, or neither? Is any of them a company or a trust? This decides who is a "recipient" under article 61, who can claim refunds, and whether a gain on a Malta subsidiary can be exempt. For each individual: is their chargeable income, excluding the dividend, at or above the relevant threshold in article 12(1)(c)(iii) of the Income Tax Act? That decides whether a taxed-account dividend is exempt in their hands and whether a refund can be claimed.
-- For each subsidiary: where is it resident, what foreign tax does it pay, what share of its income is passive interest or royalties or comes from portfolio investments, and when was the holding acquired? This decides the anti-abuse test. Can the subsidiary deduct the dividend it pays?
-- Is any subsidiary resident in Malta, or does any non-Maltese subsidiary hold, directly or indirectly, an interest in a Malta-resident company or partnership? This switches on the beneficial owner test for gains.
-- Will the profits be paid out to the family soon, or kept in the company? This decides between the exemption, the refund route and the elective final tax.
-- Has the company claimed double taxation relief on any foreign income, or already made the elective final tax election (and in which year of assessment)?
-- Are the family shareholders registered to claim refunds, and is any refund claim older than four years from the date it became eligible?
-
-## When to refuse or refer
-
-- Refer to a Malta accountant before advising which tax account participation-exempt profits go to. On the definitions they appear to fall into the untaxed account, which triggers the article 62 deduction for Malta-resident family members; the Act does not say so in one sentence.
-- Refer before advising a Malta-resident individual shareholder to rely on a six-sevenths refund. Article 12(1)(c)(iii) of the Income Tax Act exempts some taxed-account dividends paid to individuals and ties that exemption to the refund bar in the last proviso to article 48(1) of Cap. 372. How that interacts with article 48(4A) was not settled from the text.
-- Refer every sale of a Malta-resident subsidiary, or of a foreign company that holds one, to `selling-a-company-in-malta` and a Malta accountant. Do not state that the participation exemption covers it.
-- Refuse to state that the elective final tax is "cheaper" without running the regulation 3(4)(a) floor on the client's own shareholders and refund position. The election locks in for five years.
-- Refer property-rich subsidiaries: article 12(1)(c)(ii) excludes shares in a property company, and the share-transfer duty rules differ (see `mt-capital-gains`).
-- Refer controlled foreign company questions to `cfc-and-substance-rules-compared` and residence or substance questions to `mt-company-residence-and-substance`.
-- Quote the company rate as the Act prints it, "thirty-five cents (0.35) on every euro", and the refunds as the fractions in words.
-
-## Executable checks of the distributed-profit hypotheticals
-
+### Executable checks of the distributed-profit hypotheticals
 Hypothetical 2 assumes the shareholder is registered and entitled to the six-sevenths refund, the income is eligible Maltese-taxed-account trading profit, and it is distributed. Hypothetical 3 additionally assumes the elective base and refund-entitlement floor have been established. No resident-shareholder or retained-profit ambiguity is resolved by these checks.
 
 ```oa-check
@@ -290,23 +260,22 @@ expected:
   extra_vs_refund_route: 10000
 ```
 
-
-## Historical source references
-
-- [Income Tax Act, Cap. 123](https://legislation.mt/eli/cap/123/eng/pdf): article 2(1) (participating holding, the five tax accounts), article 12(1)(c)(ii) and (u), article 56(6), articles 61 to 68.
-- [Income Tax Management Act, Cap. 372](https://legislation.mt/eli/cap/372/eng/pdf): article 48(4), (4A), (5), (6), (7) and (10).
-- [Final Income Tax Without Imputation Regulations, S.L. 123.217](https://legislation.mt/eli/sl/123.217/eng/pdf): regulations 2 and 3.
-- [Notional Interest Deduction Rules, S.L. 123.176](https://legislation.mt/eli/sl/123.176/eng/pdf): rules 2 to 5.
-- [EU Anti-Tax Avoidance Directives Implementation Regulations, S.L. 123.187](https://legislation.mt/eli/sl/123.187/eng/pdf): regulation 7.
+## When to refuse or refer
+- Refer to a Malta accountant before advising which tax account participation-exempt profits go to. On the definitions they appear to fall into the untaxed account, which triggers the article 62 deduction for Malta-resident family members; the Act does not say so in one sentence.
+- Refer before advising a Malta-resident individual shareholder to rely on a six-sevenths refund. Article 12(1)(c)(iii) of the Income Tax Act exempts some taxed-account dividends paid to individuals and ties that exemption to the refund bar in the last proviso to article 48(1) of Cap. 372. How that interacts with article 48(4A) was not settled from the text.
+- Refer every sale of a Malta-resident subsidiary, or of a foreign company that holds one, to `selling-a-company-in-malta` and a Malta accountant. Do not state that the participation exemption covers it.
+- Refuse to state that the elective final tax is "cheaper" without running the regulation 3(4)(a) floor on the client's own shareholders and refund position. The election locks in for five years.
+- Refer property-rich subsidiaries: article 12(1)(c)(ii) excludes shares in a property company, and the share-transfer duty rules differ (see `mt-capital-gains`).
+- Refer controlled foreign company questions to `cfc-and-substance-rules-compared` and residence or substance questions to `mt-company-residence-and-substance`.
+- Quote the company rate as the Act prints it, "thirty-five cents (0.35) on every euro", and the refunds as the fractions in words.
 
 ## Sources
+| Source | URL | Read on |
+|---|---|---|
+| Income Tax Act, Cap. 123: read for art. 2(1) (participating holding, equity holding, passive interest or royalties, the five tax accounts), art. 12(1)(c)(ii), (c)(iii) and (u), art. 56(6), arts. 61 to 68 | https://legislation.mt/eli/cap/123/eng/pdf | 2026-11-14 |
+| Income Tax Management Act, Cap. 372: read for art. 48(1) last proviso, (4), (4A), (5), (6), (7) and (10) | https://legislation.mt/eli/cap/372/eng/pdf | 2026-11-14 |
+| Final Income Tax Without Imputation Regulations, S.L. 123.217: read for regulations 2 and 3 (15%, exclusions, five-year lock-in, floor, final tax account) | https://legislation.mt/eli/sl/123.217/eng/pdf | 2026-11-14 |
+| Notional Interest Deduction Rules, S.L. 123.176: read for rules 2 to 5 (reference rate premium 5%, 90% cap, deemed interest) | https://legislation.mt/eli/sl/123.176/eng/pdf | 2026-11-14 |
+| EU Anti-Tax Avoidance Directives Implementation Regulations, S.L. 123.187: read for regulation 7 (pointer only) | https://legislation.mt/eli/sl/123.187/eng/pdf | 2026-11-14 |
 
-| Official provision / guidance | URL | Read on | Scope |
-|---|---|---|---|
-| Cap123 art2 equityholding | https://legislation.mt/eli/cap/123/eng/pdf | 2026-11-04 | Changed claim only; see ledger |
-| SL123.217 reg3(4)(a) | https://legislation.mt/eli/sl/123.217/eng/pdf | 2026-11-04 | Changed claim only; see ledger |
-| Cap372 art48(4A) | https://legislation.mt/eli/cap/372/eng/pdf | 2026-11-04 | Changed claim only; see ledger |
-
-Prior source-read dates remain historical; this list does not refresh unrelated claims.
-
-Not yet confirmed: all scopes held in the 4 November correction ledger and the existing specialist/referral sections remain unresolved. Earlier source entries above are historical provenance and were not all reread or newly accepted in this correction.
+Not yet confirmed: which tax account participation-exempt profits go to (the definitions point to the untaxed account, but the Act does not say so in one sentence); how article 12(1)(c)(iii) and the last proviso to article 48(1) of Cap. 372 interact with a six-sevenths refund for a Malta-resident individual; whether the S.L. 123.217 floor counts refunds claimable only on a later dividend (no MTCA guidance read); the current 20-year Malta Government Stock yield for the notional interest reference rate.

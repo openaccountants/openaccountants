@@ -4,14 +4,15 @@ description: >
   Burkina Faso payroll tax reference for the 2026 tax year, covering employer IUTS salary withholding and the separate employer-funded TPA. Use for monthly salary bands, current housing, function and transport exemptions, pension and professional-expense deductions, benefits in kind, family reductions, monthly remittance and the small-payment half-year option. It explains the statutory payroll records and annual statements, with two executable cases including a remittance-frequency decision. The Guide keeps CNSS and universal health contributions separate and does not certify their rates, the minimum wage or a complete employment-cost calculation. Current electronic forms, boxes and filing acknowledgements still require source confirmation.
 jurisdiction: BF
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-version: 1.1
+version: 1.2
 tier: 2
 domain: payroll
+type: computation
 ---
 
-# Burkina Faso payroll (IUTS and TPA) v1.1
+# Burkina Faso payroll (IUTS and TPA) v1.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
