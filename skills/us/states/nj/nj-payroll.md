@@ -1,7 +1,7 @@
 ---
 name: nj-payroll
 description: New Jersey employer payroll for 2026. Covers state income tax withholding (Form NJ-W4, the NJ-WT rate tables, allowances, supplemental wages, residents working elsewhere, the Pennsylvania NJ-165 reciprocity form and the convenience rule), NJ-500 and weekly deposits, the quarterly NJ-927 and WR-30, NJ-W-3 and W-2 dates, and the 2026 worker and employer contributions for unemployment insurance, workforce funds, temporary disability and family leave insurance (wage bases 44,800 and 171,100 dollars, new employer rate 2.8% plus 0.5% TDI, Table C experience rates), new hire reporting, the ABC test and the 2026 minimum wage. Trigger on "New Jersey payroll", "NJ withholding", "NJ-W4", "NJ-927", "WR-30", "NJ SUI", "NJ unemployment rate", "NJ TDI", "NJ FLI", "NJ-165", "NJ minimum wage".
-version: "1.0"
+version: "1.1"
 jurisdiction: US-NJ
 tax_year: 2026
 last_updated: 2026-11-14
@@ -115,7 +115,7 @@ Figures are for 2026 unless a line says 2025. Worker contribution rates and wage
 | --- | --- | --- | --- | --- |
 | UI | 2.9825% | 2.6825% | 2.6825% | [NJDOL rate information](https://www.nj.gov/labor/ea/employer-services/rate-info/) |
 | WF/SWF | 0.1175% | 0.1175% | 0.1175% | same |
-| Total UI plus WF/SWF | 3.1% | 2.8% | 2.8% | same |
+| Total UI plus WF/SWF (derived: UI plus WF/SWF; the page prints the two rates separately) | 3.1% | 2.8% | 2.8% | same |
 
 - **New employer TDI (DI):** 0.5% in each of these three rate years ([NJDOL rate information](https://www.nj.gov/labor/ea/employer-services/rate-info/)).
 - **The employer pays no FLI.** FLI is funded by workers ([NJDOL rate information](https://www.nj.gov/labor/ea/employer-services/rate-info/)).
