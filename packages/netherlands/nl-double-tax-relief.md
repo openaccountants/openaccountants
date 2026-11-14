@@ -1,17 +1,18 @@
 ---
 name: nl-double-tax-relief
 description: "How the Netherlands relieves double taxation for its residents in tax year 2026, and the deadlines for the migration (M) and non-resident (C) income tax returns. Covers the Besluit voorkoming dubbele belasting 2001: exemption with progression in box 1 (arts. 8 to 12), credit for foreign tax on dividends, interest and royalties (arts. 15 to 17, 19, 25), the box 3 exemption for foreign real estate, the corporate tax object exemption (Wet Vpb art. 15e) and the art. 23d credit; treaty relief; and treaty dividend rates for 12 partners. Trigger on: aftrek voorkoming dubbele belasting, foreign salary, foreign dividends, US withholding, treaty rate, exemption method, credit method, objectvrijstelling, M-aangifte deadline, C-aangifte deadline. Out of scope: residence and emigration (nl-cross-border), Dutch dividend tax and conditional withholding tax (nl-dividend-withholding), corporate tax generally (nl-corporate-tax), resident income tax (nl-income-tax)."
-version: 0.2
+version: 0.3
 jurisdiction: NL
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: cross-border
+type: situation-rules
 ---
 
-# Netherlands: double tax relief, treaty dividend rates and international return deadlines (2026) v0.2
+# Netherlands: double tax relief, treaty dividend rates and international return deadlines (2026) v0.3
 
 > **Source-cited draft.** No accountant has reviewed this skill yet. Every figure comes from wetten.overheid.nl or belastingdienst.nl, read on 23 October 2026. It prepares working papers; it is not authority to file or pay.
 

@@ -1,14 +1,15 @@
 ---
 name: de-vat-annual-and-special-schemes
 description: "German VAT for tax year 2026 beyond the monthly or quarterly advance return: the annual VAT return (Umsatzsteuererklärung, form USt 2 A) and who files it, its deadline (2 August 2027, or 29 February 2028 with a tax adviser), reconciling it to the advance returns and paying the balance within one month; the small business scheme under § 19 UStG (EUR 25,000 and EUR 100,000, losing it mid-year, no annual return) and the EU small business scheme run by the BZSt; cash accounting under § 20 UStG (EUR 800,000, freelancers); the one-month extension and the 1/11 special prepayment; partial exemption (§ 15(4)) and input tax correction (§ 15a); domestic reverse charge (§ 13b); the EU one-stop shop (§ 18j, EUR 10,000); penalties; and the e-invoicing timetable. Trigger on: Umsatzsteuererklärung, Jahreserklärung, Abschlusszahlung, Kleinunternehmer, Istversteuerung, Sondervorauszahlung, Vorsteueraufteilung, § 15a, OSS. Out of scope: classifying transactions and filling the advance return (germany-vat-return), e-invoice formats (germany-einvoice), income tax (germany-income-tax, de-einkommensteuer-freelancer)."
-version: 0.5
+version: 0.6
 jurisdiction: DE
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: vat-gst
+type: filing-howto
 ---
 
 # Germany: the annual VAT return and the special schemes, tax year 2026
@@ -46,28 +47,28 @@ A small business can give up the scheme by a statement to the tax office up to t
 |---|---|---|---|
 | Standard and reduced VAT rates | 19% and 7% | 2026 | § 12 UStG, https://www.gesetze-im-internet.de/ustg_1980/__12.html |
 | Small business: total turnover, previous year, not exceeded | EUR 25,000 | 2026 (2025 turnover) | § 19(1) UStG, https://www.gesetze-im-internet.de/ustg_1980/__19.html |
-| Small business: total turnover, current year, not exceeded | EUR 100,000 | 2026 | § 19(1) UStG |
-| Small business: limit in the first year of business | EUR 25,000 (current year) | 2026 | UStAE 19.1(3); USt 2 A 2026 instructions, line 53 |
-| Small business waiver: binds for at least | 5 calendar years | 2026 | § 19(3) UStG |
+| Small business: total turnover, current year, not exceeded | EUR 100,000 | 2026 | § 19(1) UStG; https://www.gesetze-im-internet.de/ustg_1980/__19.html |
+| Small business: limit in the first year of business | EUR 25,000 (current year) | 2026 | UStAE 19.1(3); USt 2 A 2026 instructions, line 53; https://www.gesetze-im-internet.de/ustg_1980/__19.html |
+| Small business waiver: binds for at least | 5 calendar years | 2026 | § 19(3) UStG; https://www.gesetze-im-internet.de/ustg_1980/__19.html |
 | EU small business scheme: EU-wide annual turnover, previous and current year | EUR 100,000 | 2026 | § 19a(1) no. 2 UStG, https://www.gesetze-im-internet.de/ustg_1980/__19a.html |
-| EU small business scheme: report after passing EUR 100,000 | Within 15 working days | 2026 | § 19a(4) UStG |
-| EU small business scheme: quarterly turnover report | Within one month after the quarter | 2026 | § 19a(3) UStG |
+| EU small business scheme: report after passing EUR 100,000 | Within 15 working days | 2026 | § 19a(4) UStG; https://www.gesetze-im-internet.de/ustg_1980/__19a.html |
+| EU small business scheme: quarterly turnover report | Within one month after the quarter | 2026 | § 19a(3) UStG; https://www.gesetze-im-internet.de/ustg_1980/__19a.html |
 | Cash accounting: previous-year total turnover, not more than | EUR 800,000 | 2026 (2025 turnover) | § 20 sentence 1 no. 1 UStG, https://www.gesetze-im-internet.de/ustg_1980/__20.html |
 | Advance returns monthly if previous-year VAT was more than | EUR 9,000 | 2026 | § 18(2) UStG, https://www.gesetze-im-internet.de/ustg_1980/__18.html |
-| Tax office may release from advance returns if previous-year VAT was not more than | EUR 2,000 | 2026 | § 18(2) UStG |
+| Tax office may release from advance returns if previous-year VAT was not more than | EUR 2,000 | 2026 | § 18(2) UStG; https://www.gesetze-im-internet.de/ustg_1980/__18.html |
 | One-month extension (Dauerfristverlängerung) | On application, filing and payment one month later | 2026 | § 46 UStDV, https://www.gesetze-im-internet.de/ustdv_1980/__46.html |
 | Special prepayment, monthly filers with the extension | 1/11 of the previous year's advance payments | 2026 | § 47(1) UStDV, https://www.gesetze-im-internet.de/ustdv_1980/__47.html |
 | Input tax correction period | 5 years; 10 years for land and buildings | 2026 | § 15a(1) UStG, https://www.gesetze-im-internet.de/ustg_1980/__15a.html |
 | No § 15a correction if input tax on the asset is not more than | EUR 1,000 | 2026 | § 44(1) UStDV, https://www.gesetze-im-internet.de/ustdv_1980/__44.html |
-| No correction for a year if use changed by less than 10 percentage points, unless the correction exceeds | EUR 1,000 | 2026 | § 44(2) UStDV |
-| Annual-return-only correction ceiling, except sales or § 3(1b) supplies covered by § 44(3) sentence 2 UStDV | EUR 6,000 | 2026 | § 44(3) UStDV |
+| No correction for a year if use changed by less than 10 percentage points, unless the correction exceeds | EUR 1,000 | 2026 | § 44(2) UStDV; https://www.gesetze-im-internet.de/ustdv_1980/__44.html |
+| Annual-return-only correction ceiling, except sales or § 3(1b) supplies covered by § 44(3) sentence 2 UStDV | EUR 6,000 | 2026 | § 44(3) UStDV; https://www.gesetze-im-internet.de/ustdv_1980/__44.html |
 | Reverse charge on mobile phones, tablets, consoles, chips and Annex 4 metals: fees in one transaction at least | EUR 5,000 | 2026 | § 13b(2) nos. 10 and 11 UStG, https://www.gesetze-im-internet.de/ustg_1980/__13b.html |
 | Distance sales and e-services to EU consumers, EU-wide, below which German VAT applies | EUR 10,000 (previous and current year) | 2026 | § 3c(4) UStG, https://www.gesetze-im-internet.de/ustg_1980/__3c.html |
 | Annual return deadline, no adviser | 7 months after the year: 31 July 2027, a Saturday, so Monday 2 August 2027 | Return for 2026 | § 149(2) AO, https://www.gesetze-im-internet.de/ao_1977/__149.html ; § 108(3) AO, https://www.gesetze-im-internet.de/ao_1977/__108.html |
-| Annual return deadline, prepared by a tax adviser | Last day of February of the second year: 29 February 2028 | Return for 2026 | § 149(3) no. 4 AO |
-| Balance due on the annual return | One month after the return reaches the tax office | Return for 2026 | § 18(4) UStG |
+| Annual return deadline, prepared by a tax adviser | Last day of February of the second year: 29 February 2028 | Return for 2026 | § 149(3) no. 4 AO; https://www.gesetze-im-internet.de/ao_1977/__149.html |
+| Balance due on the annual return | One month after the return reaches the tax office | Return for 2026 | § 18(4) UStG; https://www.gesetze-im-internet.de/ustg_1980/__18.html |
 | E-invoices: paper or other format still allowed, B2B supplies made in 2026 | Until 31 December 2026, no turnover test | 2026 | § 27(38) no. 1 UStG, https://www.gesetze-im-internet.de/ustg_1980/__27.html |
-| E-invoices: paper or other format still allowed, B2B supplies made in 2027 | Only if the issuer's 2026 total turnover was not more than EUR 800,000, or by EDI | 2027 | § 27(38) nos. 2 and 3 UStG |
+| E-invoices: paper or other format still allowed, B2B supplies made in 2027 | Only if the issuer's 2026 total turnover was not more than EUR 800,000, or by EDI | 2027 | § 27(38) nos. 2 and 3 UStG; https://www.gesetze-im-internet.de/ustg_1980/__27.html |
 | Late filing surcharge, annual return | 0.25% of the tax less prepayments per started month, at least EUR 25 per month, at most EUR 25,000 | 2026 | § 152(5) and (10) AO, https://www.gesetze-im-internet.de/ao_1977/__152.html |
 | Late payment surcharge | 1% per started month of the overdue tax, rounded down to a multiple of EUR 50 | 2026 | § 240(1) AO, https://www.gesetze-im-internet.de/ao_1977/__240.html |
 | Interest on assessed differences | 0.15% per full month, starting 15 months after the year ends | 2026 | § 233a(2) AO, https://www.gesetze-im-internet.de/ao_1977/__233a.html ; § 238(1a) AO, https://www.gesetze-im-internet.de/ao_1977/__238.html |
