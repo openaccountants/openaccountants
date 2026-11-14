@@ -17,13 +17,14 @@ jurisdiction: FO
 category: international
 job: death-year-and-estate-income-tax
 tax_year: 2026
-last_updated: 2026-10-31
-version: 0.2
+last_updated: 2026-11-14
+version: 0.3
 tier: 2
 domain: estate-wealth-tax
+type: computation
 ---
 
-# Faroe Islands death-year and estate income tax v0.2
+# Faroe Islands death-year and estate income tax v0.3
 
 > **General reference only.** This Guide is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -334,11 +335,11 @@ expected:
 | Current Tax Act 109/2023, current through 2026 amendments; §§1–2,11–20,24,39–41,46–47,54,80–81,100–104,127,135,141–142 | https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt | 2026-10-31 |
 | Assessment Act 87/1983, current §6 | https://logir.fo/Logtingslog/87-fra-01-09-1983-um-aseting-av-skatti-sum-seinast-broytt-vid-logtingslog-nr-170 | 2026-10-31 |
 | Capital Income Act 164/2001 current through 127/2024, §§9–12,14,16 | https://logir.fo/Logtingslog/164-fra-21-12-2001-um-skatting-av-kapitalvinningi-sum-seinast-broytt-vid-logtingslog-nr-173 | 2026-10-31 |
-| Current court-linked D03, all six pages; original delivery and asset/debt fields | https://domstoldk.euwest01.umbraco.io/media/tfjl4r3d/d03-uppger%C3%B0-yvir-ogn-og-skuld-vi%C3%B0-dey%C3%B0a-sambaert-14-%C3%AD-skattal%C3%B3gini-241023.pdf | 2026-10-31 |
-| TAKS estate guidance G.1–G.2, dated 2015; current statute controls settlement-threshold conflict | https://www.taks.fo/fo/log/vegleidingarskriv-vls-2015/g-deydsbugv | 2026-10-31 |
-| TAKS current inheritance/estate information | https://www.taks.fo/fo/borgari/skattur/skattur-og-arvur | 2026-10-31 |
-| TAKS estate-inclusive 2025 return calendar, filing 1 July 2026 | https://www.taks.fo/fo/taks/taks-kalendarin/freist-at-lata-inn-sjalvuppgavu-2025-hja-feloegum | 2026-10-31 |
-| TAKS 2025 entity-return instructions, portal menus and accounts attachments | https://www.taks.fo/fo/vinna/sjalvuppgava-2025/sjalvuppgava | 2026-10-31 |
+| Current court-linked D03, all six pages; original delivery and asset/debt fields: read for the rules and figures this Guide cites from it | https://domstoldk.euwest01.umbraco.io/media/tfjl4r3d/d03-uppger%C3%B0-yvir-ogn-og-skuld-vi%C3%B0-dey%C3%B0a-sambaert-14-%C3%AD-skattal%C3%B3gini-241023.pdf | 2026-10-31 |
+| TAKS estate guidance G.1–G.2, dated 2015; current statute controls settlement-threshold conflict: read for the rules and figures this Guide cites from it | https://www.taks.fo/fo/log/vegleidingarskriv-vls-2015/g-deydsbugv | 2026-10-31 |
+| TAKS current inheritance/estate information: read for the rules and figures this Guide cites from it | https://www.taks.fo/fo/borgari/skattur/skattur-og-arvur | 2026-10-31 |
+| TAKS estate-inclusive 2025 return calendar, filing 1 July 2026: read for the rules and figures this Guide cites from it | https://www.taks.fo/fo/taks/taks-kalendarin/freist-at-lata-inn-sjalvuppgavu-2025-hja-feloegum | 2026-10-31 |
+| TAKS 2025 entity-return instructions, portal menus and accounts attachments: read for the rules and figures this Guide cites from it | https://www.taks.fo/fo/vinna/sjalvuppgava-2025/sjalvuppgava | 2026-10-31 |
 
 Not yet confirmed: application of the Assessment Act§6 allowance where income exceeds Tax Act§15(2)'s ceiling; final estate-specific municipal/church computation and credits; precise reconciliation of §§80(5)/81 payment machinery for each estate assessment; current-year estate return boxes/attachments, authority setup and special-period submission/acknowledgement beyond the dated 2025-return instructions; full inherited-loss/foreign-credit and unusual recapture computations. These are actual implementation gaps, not exemption conclusions. The supported death-year election, opening statement, estate-period and handoff methods do not certify a complete ordinary estate tax computation. This source-cited tier-2 draft is pending independent review and professional attestation.
 
