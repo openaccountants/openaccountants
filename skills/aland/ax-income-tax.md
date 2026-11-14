@@ -1,31 +1,41 @@
 ---
 name: ax-income-tax
 description: >
-  Prepare the 2026 individual income-tax analysis for an Åland fiscal resident.
-  Use for Aland personal income tax, separate state and municipal deductions,
-  the adjusted state scale, municipal rates, work-income credits, sole-trader
-  income, advance collection, interest and filing penalties. Supplies source-linked
-  classification rules, deduction ordering, component examples and a completion
-  register for the reviewing practitioner. This Tier 2 draft remains incomplete
-  as an operational income-tax companion: final rounding, specialist conditions,
-  contribution bases and the full settlement examples require further checks.
-  An unresolved required source or input holds the dependent calculation and
-  the complete financial output package.
+  Prepare the 2026 individual income-tax analysis for an Åland (Aland Islands) fiscal
+  resident. Use for Aland personal income tax, separate state and municipal deductions,
+  the state scale reduced by 12.64 points for Åland, the 16 municipal and church rates,
+  work-income credit, sole-trader income, health and daily-allowance contributions, the
+  EUR 128 media fee, advance collection, residual tax, interest and filing penalties.
+  Supplies source-linked classification rules, deduction ordering, component examples and
+  a completion register for the reviewing practitioner. Tier 2 draft, incomplete as an
+  operational income-tax companion: final rounding, specialist conditions, contribution
+  bases and full settlement examples need further checks. An unresolved required source
+  or input holds the dependent calculation and the complete financial output package.
 jurisdiction: AX
 category: international
+type: situation-rules
 tax_year: 2026
-tax_year_notes: "Calendar 2026 source reference; 2027 amendments and earlier-year guidance are identified separately"
+tax_year_notes: "Calendar 2026; 2027 amendments and earlier-year guidance are identified separately"
 tier: 2
-last_updated: 2026-10-16
-version: 0.4
-review_status: pending_review
+last_updated: 2026-11-14
+version: 0.5
 depends_on:
   - workflow-base
   - income-tax-workflow-base
   - ax-tax-scope
 ---
 
-# Åland individual income tax: 2026
+# Åland individual income tax v0.5
+
+> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
+
+This guide is general reference material, not tax, legal or financial advice.
+A qualified practitioner must verify the applicable law, facts, calculations
+and complete output package before any filing, payment or other reliance.
+
+Written by Ryan Duguid; imported from his fork and brought to the repository standard. Built from the law. Not yet approved by an accountant. Tax year 2026.
+
+## Scope
 
 Prepare separate state and Åland municipal income calculations for a qualified
 reviewer. Establish the tax year, national residence and fiscal home municipality
@@ -39,7 +49,7 @@ the universal workbook and review checklist, all refusal traces and both bases'
 checks. This guide adds substantive rules and reviewer fields; it does not
 replace their workflow, question form, output requirements or tool stops.
 
-## Establish the period and taxpayer
+### Establish the period and taxpayer
 
 For a 2026 calculation, establish full-year Finnish tax residence separately
 from the municipality used for taxation. [Income Tax Act 1535/1992, sections 9
@@ -71,7 +81,28 @@ own work-contribution and net-asset allocation rules. A shared bank account
 does not establish joint taxation. Minors, estates and partnership returns
 require separate verified companions.
 
-## Classify income before applying rates
+## Ask the client first
+
+1. Fiscal home municipality on 31 December 2025 (Assessment Procedure Act s 5), and full-year Finnish tax residence.
+2. Each income source for 2026: salary and benefits, pension, business, capital income, foreign items.
+3. Church membership (Lutheran or Orthodox, parish) on 31 December 2025.
+4. Health-insurance route and confirmed YEL or MYEL income, if any.
+5. Age, minor children and guardian status, and commuting method and costs.
+6. Advances imposed and paid, withholding evidence, and assessed loss balances.
+
+Add fiscal municipality evidence, national residence branch, accounting period,
+income categories, church/parish and effective membership dates, health-insurance
+route/period evidence, state net amounts and confirmed YEL/MYEL income for the
+media comparison, age and guardian/spouse status,
+commuting method and qualifying months, pension/contribution certificates,
+business net-asset/wage/election schedules, losses, credit evidence and the
+authority collection statement to the bases' intake. Use taxpayer references
+and redacted evidence; this guide does not require submission of identity,
+tax-number or bank-detail records.
+
+## The method, step by step
+
+### Classify income before applying rates
 
 [Income Tax Act sections 29–30, 61, 64 and 110](https://www.finlex.fi/sv/lagstiftning/1992/1535)
 establish the two income categories, income in money or money's worth,
@@ -101,7 +132,7 @@ of turnover. Preserve elections for the taxpayer and reviewer. Business expenses
 depreciation, valuation and allocation remain held until their full source
 conditions are verified.
 
-## Build two earned-income bases
+### Build two earned-income bases
 
 [Åland Municipal Income Tax Act 2011:119, sections 1–4](https://www.regeringen.ax/alandsk-lagstiftning/alex/2011119)
 adopts national legislation subject to regional departures. Section 2 excludes
@@ -127,7 +158,7 @@ and [regional section 1a](https://www.regeringen.ax/alandsk-lagstiftning/alex/20
 place prior earned-income losses after the year's income deductions. Do not
 silently reorder that statutory calculation to match a generic workbook label.
 
-### Losses and source restrictions
+#### Losses and source restrictions
 
 [Income Tax Act sections 117–119](https://www.finlex.fi/sv/lagstiftning/1992/1535)
 deduct assessed losses oldest first. The earned-income loss defined in section
@@ -147,7 +178,7 @@ offset a business loss against wages automatically, invent a carry-back or treat
 an unevidenced loss as available relief. Capital-income losses and specialist
 cessation/ownership conditions need their own complete checks.
 
-### Ordinary wage expenses and contributions
+#### Ordinary wage expenses and contributions
 
 The following 2026 figures come from [national sections 31, 93, 95–96 and
 106](https://www.finlex.fi/sv/lagstiftning/1992/1535), [amendment
@@ -199,7 +230,7 @@ section 9(9) govern the home-cost restriction. Regional maximum-amount wording
 and an actual-cost claim require verification; do not infer an election to a
 higher amount or apply this deduction to salary.
 
-### Pension and other deductions
+#### Pension and other deductions
 
 [National section 100](https://www.finlex.fi/sv/lagstiftning/1992/1535) and
 [regional section 19](https://www.regeringen.ax/alandsk-lagstiftning/alex/2011119)
@@ -233,9 +264,9 @@ relevant through 2026; [ÅFS 2026:70](https://www.regeringen.ax/node/226467)
 changes them from 1 January 2027, first applying in tax year 2027. A prospective
 repeal does not remove a 2026 entitlement.
 
-## Apply the tax schedules and credits
+### Apply the tax schedules and credits
 
-### State earned-income tax
+#### State earned-income tax
 
 [Annual Scale Act 1140/2025](https://www.finlex.fi/sv/lagstiftning/2025/1140)
 applies from 1 January 2026. [Income Tax Act section 124(5)](https://www.finlex.fi/sv/lagstiftning/1992/1535)
@@ -244,13 +275,13 @@ fiscal municipality is in Åland. The resulting 2026 scale, corroborated by
 [Vero's Åland table](https://www.vero.fi/sv/Detaljerade_skatteanvisningar/anvisningar/48911/beskattningen-pa-aland8/),
 is applied to state taxable earned income, not gross salary or the municipal base.
 
-| State taxable earned income, EUR | Tax at the lower boundary, EUR | Rate on the excess |
-|---|---|---|
-| 0 to 22,000 | 0.00 | 0% |
-| Over 22,000 to 32,600 | 0.00 | 6.36% |
-| Over 32,600 to 40,100 | 674.16 | 17.61% |
-| Over 40,100 to 52,100 | 1,994.91 | 20.61% |
-| Over 52,100 | 4,468.11 | 24.86% |
+| State taxable earned income, EUR | Tax at the lower boundary, EUR | Rate on the excess | Official source |
+|---|---|---|---|
+| 0 to 22,000 | 0.00 | 0% | [Scale Act 1140/2025](https://www.finlex.fi/sv/lagstiftning/2025/1140); [ITA s 124(5)](https://www.finlex.fi/sv/lagstiftning/1992/1535); [Vero Åland guidance](https://www.vero.fi/sv/Detaljerade_skatteanvisningar/anvisningar/48911/beskattningen-pa-aland8/) |
+| Over 22,000 to 32,600 | 0.00 | 6.36% | [Scale Act 1140/2025](https://www.finlex.fi/sv/lagstiftning/2025/1140); [ITA s 124(5)](https://www.finlex.fi/sv/lagstiftning/1992/1535); [Vero Åland guidance](https://www.vero.fi/sv/Detaljerade_skatteanvisningar/anvisningar/48911/beskattningen-pa-aland8/) |
+| Over 32,600 to 40,100 | 674.16 | 17.61% | [Scale Act 1140/2025](https://www.finlex.fi/sv/lagstiftning/2025/1140); [ITA s 124(5)](https://www.finlex.fi/sv/lagstiftning/1992/1535); [Vero Åland guidance](https://www.vero.fi/sv/Detaljerade_skatteanvisningar/anvisningar/48911/beskattningen-pa-aland8/) |
+| Over 40,100 to 52,100 | 1,994.91 | 20.61% | [Scale Act 1140/2025](https://www.finlex.fi/sv/lagstiftning/2025/1140); [ITA s 124(5)](https://www.finlex.fi/sv/lagstiftning/1992/1535); [Vero Åland guidance](https://www.vero.fi/sv/Detaljerade_skatteanvisningar/anvisningar/48911/beskattningen-pa-aland8/) |
+| Over 52,100 | 4,468.11 | 24.86% | [Scale Act 1140/2025](https://www.finlex.fi/sv/lagstiftning/2025/1140); [ITA s 124(5)](https://www.finlex.fi/sv/lagstiftning/1992/1535); [Vero Åland guidance](https://www.vero.fi/sv/Detaljerade_skatteanvisningar/anvisningar/48911/beskattningen-pa-aland8/) |
 
 At a boundary, the preceding slice and the next row give the same amount.
 The table is before work-income and other tax credits. A zero first state
@@ -266,25 +297,25 @@ additional rate. A pensioner's full state liability requires this separate
 component, the lawful pension deduction and all applicable credit and rounding
 rules. Keep the complete pension result held until those conditions are verified.
 
-### Municipal and capital income tax
+#### Municipal and capital income tax
 
 Use the fiscal municipality established above. The [Tax Administration's 2026
 municipal and church rate decision 1012/2025](https://www.finlex.fi/sv/lagstiftning/2025/1012)
 contains the annual rows below. These municipal percentages apply to the
 separate municipal taxable earned-income base before applicable credits.
 
-| Municipality | 2026 municipal rate | Municipality | 2026 municipal rate |
-|---|---|---|---|
-| Brändö | 17.70% | Kökar | 19.70% |
-| Eckerö | 18.50% | Lemland | 17.80% |
-| Finström | 19.00% | Lumparland | 19.50% |
-| Föglö | 18.50% | Mariehamn | 17.00% |
-| Geta | 18.50% | Saltvik | 18.50% |
-| Hammarland | 18.00% | Sottunga | 18.00% |
-| Jomala | 17.50% | Sund | 19.00% |
-| Kumlinge | 19.30% | Vårdö | 19.00% |
+| Municipality | 2026 municipal rate | Municipality | 2026 municipal rate | Official source |
+|---|---|---|---|---|
+| Brändö | 17.70% | Kökar | 19.70% | [Decision 1012/2025](https://www.finlex.fi/sv/lagstiftning/2025/1012) |
+| Eckerö | 18.50% | Lemland | 17.80% | same |
+| Finström | 19.00% | Lumparland | 19.50% | same |
+| Föglö | 18.50% | Mariehamn | 17.00% | same |
+| Geta | 18.50% | Saltvik | 18.50% | same |
+| Hammarland | 18.00% | Sottunga | 18.00% | same |
+| Jomala | 17.50% | Sund | 19.00% | same |
+| Kumlinge | 19.30% | Vårdö | 19.00% | same |
 
-### Church membership and parish
+#### Church membership and parish
 
 [Act 1013/2012, section 1](https://www.finlex.fi/sv/lagstiftning/2012/1013)
 charges an individual who belonged to an Evangelical Lutheran parish at the end
@@ -301,24 +332,24 @@ rules for members of Olaus Petri and the German parish, and possible liability
 for membership of another Evangelical Lutheran church abroad. Hold those cases
 until their membership, parish and applicable rate are established.
 
-| Municipality | 2026 Lutheran rate | 2026 Orthodox rate |
-|---|---|---|
-| Brändö | 2.00% | 1.75% |
-| Eckerö | 1.80% | 1.75% |
-| Finström | 1.95% | 1.75% |
-| Föglö | 2.00% | 1.75% |
-| Geta | 1.95% | 1.75% |
-| Hammarland | 1.80% | 1.75% |
-| Jomala | 1.70% | 1.75% |
-| Kumlinge | 2.00% | 1.75% |
-| Kökar | 2.00% | 1.75% |
-| Lemland | 1.70% | 1.75% |
-| Lumparland | 1.70% | 1.75% |
-| Mariehamn | 1.55% | 1.75% |
-| Saltvik | 1.75% | 1.75% |
-| Sottunga | 2.00% | 1.75% |
-| Sund | 1.95% | 1.75% |
-| Vårdö | 1.95% | 1.75% |
+| Municipality | 2026 Lutheran rate | 2026 Orthodox rate | Official source |
+|---|---|---|---|
+| Brändö | 2.00% | 1.75% | [Decision 1012/2025](https://www.finlex.fi/sv/lagstiftning/2025/1012) |
+| Eckerö | 1.80% | 1.75% | same |
+| Finström | 1.95% | 1.75% | same |
+| Föglö | 2.00% | 1.75% | same |
+| Geta | 1.95% | 1.75% | same |
+| Hammarland | 1.80% | 1.75% | same |
+| Jomala | 1.70% | 1.75% | same |
+| Kumlinge | 2.00% | 1.75% | same |
+| Kökar | 2.00% | 1.75% | same |
+| Lemland | 1.70% | 1.75% | same |
+| Lumparland | 1.70% | 1.75% | same |
+| Mariehamn | 1.55% | 1.75% | same |
+| Saltvik | 1.75% | 1.75% | same |
+| Sottunga | 2.00% | 1.75% | same |
+| Sund | 1.95% | 1.75% | same |
+| Vårdö | 1.95% | 1.75% | same |
 
 Unknown membership is Needs Input, not zero tax. Record the church, parish and
 effective membership dates and check any conflicting prefilled information.
@@ -336,7 +367,7 @@ separate application-based relief. An unresolved relief claim is not an
 exemption. Estate, foreign-membership, contested effective-date and relief or
 appeal cases require their complete conditions; the table alone cannot clear them.
 
-### Capital income
+#### Capital income
 
 [Income Tax Act section 124(2)](https://www.finlex.fi/sv/lagstiftning/1992/1535)
 taxes ordinary taxable capital income at 30% up to EUR 30,000 and 34% above it.
@@ -344,7 +375,7 @@ Establish the taxable capital-income amount after the relevant source expenses,
 losses, exemptions and allocations first. This rate statement supplies no
 dividend, disposal, rental or foreign-tax calculation by itself.
 
-### Work-income credit and allocation
+#### Work-income credit and allocation
 
 [National section 125](https://www.finlex.fi/sv/lagstiftning/1992/1535), as
 amended by [1141/2025](https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2025/1141),
@@ -372,9 +403,9 @@ taxes and complete allocation/rounding rules before producing final amounts.
 Deficit credits, household/oil-heating credits, student-loan credits and
 maintenance relief require their own eligibility, ordering and spouse rules.
 
-## Contributions, media fee and collection
+### Contributions, media fee and collection
 
-### Establish insured status
+#### Establish insured status
 
 [Health Insurance Act 1224/2004, chapter 1 sections 2–3](https://www.finlex.fi/fi/lainsaadanto/2004/1224)
 links insured status to the work, entrepreneurial and residence routes in
@@ -401,7 +432,7 @@ introduced the reviewed scope reference from 1 April 2019. [Amendment 66/2026](h
 changes Act 16/2019's worker route from 1 May 2026; it does not replace the
 ordinary residence test with a worker earnings threshold.
 
-### Separate contribution bases
+#### Separate contribution bases
 
 [Vero's insured-person health guidance](https://www.vero.fi/syventavat-vero-ohjeet/ohje-hakusivu/338472/vakuutetun-sairausvakuutusmaksu2/)
 distinguishes the deductible daily-allowance premium from the non-deductible
@@ -437,12 +468,12 @@ the increased healthcare rate.
 [Decree 1026/2025, sections 1–4](https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2025/1026)
 applies for 2026 and establishes these insured-person rates:
 
-| 2026 charge | Rate and base condition |
-|---|---|
-| Ordinary healthcare | 1.10% of the applicable municipal or special base |
-| Increased healthcare | Ordinary 1.10% plus the conditional 0.39% differential component below; 1.49% is the combined rate only on a base to which both components apply |
-| Ordinary daily allowance | 0.88% of the whole applicable base once annual relevant wages/entrepreneur income reach EUR 17,255; zero below that threshold |
-| YEL entrepreneur financing supplement | 0.23% of confirmed YEL income, including below the ordinary threshold; not a MYEL supplement |
+| 2026 charge | Rate and base condition | Official source |
+|---|---|---|
+| Ordinary healthcare | 1.10% of the applicable municipal or special base | [Decree 1026/2025 ss 1-4](https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2025/1026); [Vero 2026 rate table](https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/being-an-employer/social-insurance-contributions/) |
+| Increased healthcare | Ordinary 1.10% plus the conditional 0.39% differential component below; 1.49% is the combined rate only on a base to which both components apply | [Decree 1026/2025 ss 1-4](https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2025/1026); [Vero 2026 rate table](https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/being-an-employer/social-insurance-contributions/) |
+| Ordinary daily allowance | 0.88% of the whole applicable base once annual relevant wages/entrepreneur income reach EUR 17,255; zero below that threshold | [Decree 1026/2025 ss 1-4](https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2025/1026); [Vero 2026 rate table](https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/being-an-employer/social-insurance-contributions/) |
+| YEL entrepreneur financing supplement | 0.23% of confirmed YEL income, including below the ordinary threshold; not a MYEL supplement | [Decree 1026/2025 ss 1-4](https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2025/1026); [Vero 2026 rate table](https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/being-an-employer/social-insurance-contributions/) |
 
 [Chapter 18 section 20(3)–(4)](https://www.finlex.fi/fi/lainsaadanto/2004/1224)
 requires the 0.39% additional component where the insured person receives earned
@@ -462,7 +493,7 @@ a person who dies during the tax year from the insured person's health
 contribution. Special bases, age-transition allocations, international coverage
 and changes in insured status remain subject to their own conditions.
 
-### Personal media fee
+#### Personal media fee
 
 [Regional Media Fee Act 2019:103, section 2](https://www.regeringen.ax/alandsk-lagstiftning/alex/2019103)
 requires general Finnish tax liability, an Åland home municipality and turning
@@ -499,7 +530,7 @@ cites that decision. No official correction or complete treatment of collection
 before 1 October 2026 was verified. Preserve both dates; do not silently change
 the original to 2025 or infer an exemption for the earlier period.
 
-### Advance collection reference
+#### Advance collection reference
 
 The [2026 withholding/prepayment decision, sections 3.3–3.4 and 7](https://www.vero.fi/syventavat-vero-ohjeet/paatokset/47363/verohallinnon-paatos-ennakonpidatysprosenttien-laskentaperusteista-palkkatuloa-varten-ja-ennakonkannossa-maarattavan-ennakkoveron-laskentaperusteista-vuodelle-2026/)
 corroborates the separate calculations within advance collection, including
@@ -512,6 +543,150 @@ and omissions do not remove final-assessment deduction rights. Section 8 rounds
 the withholding percentage upward in half-percentage-point increments, capped
 at 60%. That rule does not establish annual taxable-income, credit-allocation
 or tax-amount rounding. A tax card sets collection; it is not the final liability.
+
+### Currency and monetary precision
+
+Use EUR. [The declaration-details decision VH/7150/00.01.00/2025, section 1](https://vero.fi/syventavat-vero-ohjeet/paatokset/62189/verohallinnon-paatos-veroilmoituksessa-annettavista-tiedoista8/)
+requires income, deductions, debts and reportable asset values to cent precision.
+It commences on 1 January 2026 and first applies to personal tax-year-2025
+returns. This reporting rule alone does not settle intermediate calculations
+or a final-assessment rounding tie.
+
+[Acts 896/2001](https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2001/896)
+and [907/2001](https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2001/907)
+repealed the old whole-mark tax/base provisions from 2002. Their
+[explanatory proposal HE 91/2001](https://www.finlex.fi/fi/hallituksen-esitykset/2001/91)
+explains cent precision. This historical explanation is not a complete current
+rounding algorithm. Preserve exact intermediate arithmetic in demonstrations;
+hold the affected final figures until rounding direction, stage and allocation
+are verified. Foreign conversion basis and dates also require separate sources.
+
+### Defaults and reviewer controls
+
+| Uncertainty | Permitted preparation treatment |
+|---|---|
+| Applicable law, year, municipality, residence, insurance or rounding unresolved | Needs Input; hold dependent calculations |
+| Deduction expense unsupported, after its legal treatment is established | No deduction provisionally; flag the missing evidence and alternative effect |
+| Private/business proportion unsupported | No business deduction provisionally; do not invent a proportion |
+| Withholding/payment evidence absent | Do not credit an unverified amount; retain the reconciliation question and any known authority assessment |
+| Election or entitlement unresolved | Hold any result that depends on it; no inferred business-share election, spouse transfer or church exemption |
+| Specialist receipt, capital asset or foreign item | Separate schedule and verified companion before computation |
+
+Flag every source conflict, refusal, unverified legal condition, election and
+potential double count, regardless of amount. The following are review-policy
+thresholds, not statutory limits: flag each assumed item's potential effect of
+at least EUR 100, or an aggregate at least EUR 250. An effect that cannot be
+quantified is a flag, not zero. These thresholds never suppress a legal hold.
+
+## Worked cases
+
+These examples test individual rules with invented inputs. None completes the
+employee, self-employed or mixed full settlement ladder required by the domain
+contract. Monetary results described as unrounded remain intermediate values.
+
+| Position | Hypothetical inputs and calculation | Result and boundary |
+|---|---|---|
+| State scale at EUR 32,600 | EUR 10,600 above EUR 22,000 × 6.36% | EUR 674.16 before credits; municipal and other charges are separate |
+| State scale at EUR 52,100 | EUR 1,994.91 + EUR 12,000 × 20.61% | EUR 4,468.11 before credits |
+| Pension additional-tax boundary | Established 2026 pension income after the pension deduction of EUR 60,000 versus EUR 60,100 | Additional component EUR 0 versus EUR 5.85 before annual rounding; the full pension liability remains held |
+| Healthcare differential | Confirmed ordinary healthcare base EUR 30,000, daily base EUR 20,000 and qualifying non-excluded income under chapter 18 section 20(3) | EUR 330 ordinary plus EUR 39 additional = EUR 369 unrounded; no flat EUR 447 charge |
+| Healthcare supplement exclusions | Daily base equals or exceeds the healthcare base, or the only purported trigger is excluded section 14(2) income | No 0.39% additional component on that basis; verify the ordinary charge separately |
+| Separate basic deductions | R = EUR 20,000 after preceding deductions. State: EUR 4,265 − 18% × EUR 15,735. Municipal: EUR 3,925 − 8.4% × EUR 16,075 | State deduction EUR 1,432.70 and base EUR 18,567.30; municipal deduction EUR 2,574.70 and base EUR 17,425.30, before prior losses |
+| Public-transport commuting | Eligible costs EUR 2,000, all public transport. State cheapest-method conditions satisfied, no benefit-month relief | State deduction EUR 1,100; regional section 10 exception gives municipal deduction EUR 2,000; neither uses a mileage estimate |
+| Work-credit taper plateau | Qualifying income sufficient for the base maximum; net earned income EUR 60,000; no age/child increase | EUR 3,430 − 2% × EUR 15,550 = EUR 3,119; reduction stops at EUR 50,550; allocation still requires each tax |
+| Work-credit family maximum | Age 65 before 2026; two minor children, guardian at year-end; no sole-guardian doubling; sufficient qualifying income and net earned income at most EUR 35,000 | Maximum EUR 3,430 + EUR 1,200 + 2 × EUR 105 = EUR 4,840, subject to accrual and available taxes |
+| Prospective repeal | Eligible collective supplementary pension contribution paid in 2026; the 2027 repeal is displayed in the source | Test the 2026 section and all its eligibility conditions; the future repeal alone is not a disallowance |
+| Unknown municipality | An Åland address is shown but the section 5 municipality evidence is missing | R-AX-I-PROFILE fires; no municipal rate or adjusted state scale is selected |
+| Advance division | Ordinary advance EUR 170.01, two instalments, no schedule variation | EUR 85.01 first and EUR 85.00 second; the cent remainder rule does not establish annual tax rounding |
+| Advance band boundary | Ordinary in-year total EUR 500 versus EUR 500.01, no variation requested | Two versus three instalments; the upper boundary is inclusive |
+| Small advance decision | The authority establishes the tax imposed under section 24 as EUR 9.99 versus EUR 10 | Below EUR 10 is not imposed; at EUR 10 this rule alone does not prevent imposition. A EUR 9.99 balance left from an earlier assessment does not establish the first condition |
+| Residual band boundary | Residual principal EUR 169.99 versus EUR 170, no changed assessment | One versus two instalments; the separate non-imposition and interest rules still apply |
+| Ordinary increase component | Added income EUR 5,000; reviewer establishes the ordinary 2% branch, no non-imposition ground or other failure | EUR 100, exceeding the EUR 75 individual minimum; no liability or actual penalty decision is certified |
+| Ordinary church component | Municipal taxable income EUR 20,000; confirmed 31 December 2025 membership and ordinary Mariehamn geographical parish; no relief or credit yet | Lutheran EUR 310 or Orthodox EUR 350 before credit allocation; unknown membership holds the component |
+| Media threshold | Ordinary 2026 resident aged 18 by year-end; no confirmed YEL/MYEL income or foreign relief; state net sum EUR 14,000 versus EUR 14,000.01 | EUR 0 versus fixed EUR 128 under the annual amount rule; commencement discrepancy remains recorded |
+| Media insured-income comparison | State net sum EUR 5,900; confirmed YEL EUR 17,000 and no MYEL; ordinary resident age conditions met, no foreign relief | EUR 17,000 is the higher measure, giving the fixed EUR 128 annual fee; a low taxable business profit alone does not remove it |
+
+### Full-ladder example work still required
+
+| Required case | Inputs and schedules to establish | Dependent result held |
+|---|---|---|
+| Employee | Gross pay/benefits, separate natural deductions, certified contributions, both basic deductions and losses, state/municipal/church/health/media charges, credit allocation, evidenced collection | Final liability, balance and calendar until all applicable bases, rounding and collection rules are verified |
+| Self-employed | Accounts and tax adjustments, capital allowances, losses, entrepreneur deduction, valued net assets/wage addition, elected capital share, earned-income deductions, YEL/MYEL substitution, credits and advances | Business allocation and complete personal settlement until source conditions and contribution inputs are verified |
+| Mixed salary/business/capital | Both source registers, once-only contribution/expense treatment, entrepreneur share, separate state/municipal/health bases, capital tax, credit ordering and combined collection | Complete liability and balance; a solved salary component cannot certify the mixed result |
+
+### Case 1: separate state and municipal basic deductions, then the state scale
+
+A resident of Mariehamn has EUR 20,000 of income remaining after the preceding deductions (R), for both taxes. The state basic deduction is EUR 4,265 less 18% of the excess of R over 4,265: 1,432.70, leaving a state base of 18,567.30, which is inside the 0% state band. The municipal basic deduction is EUR 3,925 less 8.4% of the excess over 3,925: 2,574.70, leaving a municipal base of 17,425.30. At the Mariehamn rate of 17.00% the municipal tax is 2,962.30 (derived, unrounded, before credits and losses). A second person with a state taxable income of EUR 52,100 pays state tax of 4,468.11 before credits (derived from the bands).
+
+```oa-check
+name: Aland 2026, separate basic deductions on R = 20,000, Mariehamn, and the state scale at 52,100
+inputs:
+  r: 20000
+  state_full: 4265
+  muni_full: 3925
+  mariehamn_rate: 0.17
+  state_income: 52100
+steps:
+  - state_deduction: min(r, max(0, state_full - 0.18 * max(0, r - state_full)))
+  - state_base: r - state_deduction
+  - muni_deduction: min(r, max(0, muni_full - 0.084 * max(0, r - muni_full)))
+  - muni_base: r - muni_deduction
+  - municipal_tax: muni_base * mariehamn_rate
+  - state_tax_52100: (min(state_income, 32600) - 22000) * 0.0636 + (min(state_income, 40100) - 32600) * 0.1761 + (min(state_income, 52100) - 40100) * 0.2061 + max(0, state_income - 52100) * 0.2486
+expected:
+  state_deduction: 1432.70
+  state_base: 18567.30
+  muni_deduction: 2574.70
+  muni_base: 17425.30
+  municipal_tax: 2962.30
+  state_tax_52100: 4468.11
+```
+
+### Case 2 (decision): does the media fee and the health differential apply?
+
+Two residents aged over 18. The first has state net earned plus capital income of exactly EUR 14,000 and no confirmed YEL or MYEL income: the test is "exceeds", so no fee. One cent more (14,000.01) gives the fixed EUR 128. The decision turns only on whether the measure exceeds 14,000, not on the size of the excess. Separately, an insured person with a healthcare base of EUR 30,000, a daily-allowance base of EUR 20,000 and qualifying income under chapter 18 section 20(3) pays the ordinary 1.10% on 30,000 plus 0.39% on the 10,000 difference: 330 + 39 = 369 (derived, unrounded), not 1.49% on the whole base (447).
+
+```oa-check
+name: Aland 2026, media fee threshold both ways and the healthcare differential
+inputs:
+  measure_a: 14000
+  measure_b: 14000.01
+  fee: 128
+  health_base: 30000
+  daily_base: 20000
+steps:
+  - fee_a: fee * min(1, max(0, ceil(measure_a - 14000)))
+  - fee_b: fee * min(1, max(0, ceil(measure_b - 14000)))
+  - ordinary_health: health_base * 0.011
+  - differential: max(0, health_base - daily_base) * 0.0039
+  - total_health: ordinary_health + differential
+  - flat_wrong: health_base * 0.0149
+expected:
+  fee_a: 0
+  fee_b: 128
+  ordinary_health: 330
+  differential: 39
+  total_health: 369
+  flat_wrong: 447
+```
+
+## When to refuse or refer
+
+Record both universal and topical triggers. Use the exact message for each
+fired code; a refusal is not evidence that the underlying tax is zero.
+
+| Code | Trigger | Exact output |
+|---|---|---|
+| R-AX-I-INCOMPLETE | A required domain slot, source condition or full-ladder example remains incomplete for the requested result | "This Åland income-tax companion is incomplete for the requested calculation. The missing requirements are [list]. I can prepare the source and input issues for the reviewer; the dependent figures and complete financial package remain held." |
+| R-AX-I-PROFILE | Tax year, filing unit, national residence or fiscal municipality cannot be established | "I need the applicable tax year, taxpayer/filing unit, residence branch and fiscal home municipality before selecting Åland income-tax rules. The unresolved profile items are [list]." |
+| R-AX-I-CROSS-BORDER | Non-resident, part-year, dual-resident, foreign income/account/tax or treaty issue | "This fact pattern needs a verified cross-border companion and the applicable residence, source, treaty and conversion rules. I have held the affected amounts: [list]." |
+| R-AX-I-BUSINESS | Business status, period, expenses, valuation, capital allowance, loss or split/election is unverified | "The business-income calculation or earned/capital allocation is not established. Obtain [specific accounts, valuation, election or authority] before computing the affected personal-tax amounts." |
+| R-AX-I-CONTRIBUTIONS | Insurance coverage, health base, contributions, church membership or media-fee conditions are unresolved | "The separate contribution, church or media-fee calculation requires [missing evidence or rule]. It cannot be replaced with a flat percentage or an assumed exemption." |
+| R-AX-I-ROUNDING | Conversion, intermediate rounding, credit allocation or final money rule is missing | "The required conversion or rounding rule is unverified for [stage]. I have preserved the supported inputs and held the dependent calculation." |
+| R-AX-I-SETTLEMENT | Collection, return/date, advance reduction, interest, penalty or residual/refund treatment is unverified | "The filing or settlement position is not established. Reconcile [specific statement, notice or rule] before giving a balance, payment date or client instruction." |
+| R-AX-I-SPECIALIST | Estate, partnership return, special pension/maritime/forestry regime, disputed classification or omitted credit mechanics | "This specialist position requires its complete period-specific rules and a qualified review. The unsupported items are [list]; they remain outside this calculation." |
+
+## Filing and payment
 
 ### Return, dates and settlement
 
@@ -729,103 +904,7 @@ not certify that whole chain. Non-imposition under sections 32–33 and later
 collection remission are distinct. Hold the affected charge and remedy calendar
 when facts, competence, service dates or applicable law are unresolved.
 
-## Currency and monetary precision
-
-Use EUR. [The declaration-details decision VH/7150/00.01.00/2025, section 1](https://vero.fi/syventavat-vero-ohjeet/paatokset/62189/verohallinnon-paatos-veroilmoituksessa-annettavista-tiedoista8/)
-requires income, deductions, debts and reportable asset values to cent precision.
-It commences on 1 January 2026 and first applies to personal tax-year-2025
-returns. This reporting rule alone does not settle intermediate calculations
-or a final-assessment rounding tie.
-
-[Acts 896/2001](https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2001/896)
-and [907/2001](https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2001/907)
-repealed the old whole-mark tax/base provisions from 2002. Their
-[explanatory proposal HE 91/2001](https://www.finlex.fi/fi/hallituksen-esitykset/2001/91)
-explains cent precision. This historical explanation is not a complete current
-rounding algorithm. Preserve exact intermediate arithmetic in demonstrations;
-hold the affected final figures until rounding direction, stage and allocation
-are verified. Foreign conversion basis and dates also require separate sources.
-
-## Hypothetical component examples
-
-These examples test individual rules with invented inputs. None completes the
-employee, self-employed or mixed full settlement ladder required by the domain
-contract. Monetary results described as unrounded remain intermediate values.
-
-| Position | Hypothetical inputs and calculation | Result and boundary |
-|---|---|---|
-| State scale at EUR 32,600 | EUR 10,600 above EUR 22,000 × 6.36% | EUR 674.16 before credits; municipal and other charges are separate |
-| State scale at EUR 52,100 | EUR 1,994.91 + EUR 12,000 × 20.61% | EUR 4,468.11 before credits |
-| Pension additional-tax boundary | Established 2026 pension income after the pension deduction of EUR 60,000 versus EUR 60,100 | Additional component EUR 0 versus EUR 5.85 before annual rounding; the full pension liability remains held |
-| Healthcare differential | Confirmed ordinary healthcare base EUR 30,000, daily base EUR 20,000 and qualifying non-excluded income under chapter 18 section 20(3) | EUR 330 ordinary plus EUR 39 additional = EUR 369 unrounded; no flat EUR 447 charge |
-| Healthcare supplement exclusions | Daily base equals or exceeds the healthcare base, or the only purported trigger is excluded section 14(2) income | No 0.39% additional component on that basis; verify the ordinary charge separately |
-| Separate basic deductions | R = EUR 20,000 after preceding deductions. State: EUR 4,265 − 18% × EUR 15,735. Municipal: EUR 3,925 − 8.4% × EUR 16,075 | State deduction EUR 1,432.70 and base EUR 18,567.30; municipal deduction EUR 2,574.70 and base EUR 17,425.30, before prior losses |
-| Public-transport commuting | Eligible costs EUR 2,000, all public transport. State cheapest-method conditions satisfied, no benefit-month relief | State deduction EUR 1,100; regional section 10 exception gives municipal deduction EUR 2,000; neither uses a mileage estimate |
-| Work-credit taper plateau | Qualifying income sufficient for the base maximum; net earned income EUR 60,000; no age/child increase | EUR 3,430 − 2% × EUR 15,550 = EUR 3,119; reduction stops at EUR 50,550; allocation still requires each tax |
-| Work-credit family maximum | Age 65 before 2026; two minor children, guardian at year-end; no sole-guardian doubling; sufficient qualifying income and net earned income at most EUR 35,000 | Maximum EUR 3,430 + EUR 1,200 + 2 × EUR 105 = EUR 4,840, subject to accrual and available taxes |
-| Prospective repeal | Eligible collective supplementary pension contribution paid in 2026; the 2027 repeal is displayed in the source | Test the 2026 section and all its eligibility conditions; the future repeal alone is not a disallowance |
-| Unknown municipality | An Åland address is shown but the section 5 municipality evidence is missing | R-AX-I-PROFILE fires; no municipal rate or adjusted state scale is selected |
-| Advance division | Ordinary advance EUR 170.01, two instalments, no schedule variation | EUR 85.01 first and EUR 85.00 second; the cent remainder rule does not establish annual tax rounding |
-| Advance band boundary | Ordinary in-year total EUR 500 versus EUR 500.01, no variation requested | Two versus three instalments; the upper boundary is inclusive |
-| Small advance decision | The authority establishes the tax imposed under section 24 as EUR 9.99 versus EUR 10 | Below EUR 10 is not imposed; at EUR 10 this rule alone does not prevent imposition. A EUR 9.99 balance left from an earlier assessment does not establish the first condition |
-| Residual band boundary | Residual principal EUR 169.99 versus EUR 170, no changed assessment | One versus two instalments; the separate non-imposition and interest rules still apply |
-| Ordinary increase component | Added income EUR 5,000; reviewer establishes the ordinary 2% branch, no non-imposition ground or other failure | EUR 100, exceeding the EUR 75 individual minimum; no liability or actual penalty decision is certified |
-| Ordinary church component | Municipal taxable income EUR 20,000; confirmed 31 December 2025 membership and ordinary Mariehamn geographical parish; no relief or credit yet | Lutheran EUR 310 or Orthodox EUR 350 before credit allocation; unknown membership holds the component |
-| Media threshold | Ordinary 2026 resident aged 18 by year-end; no confirmed YEL/MYEL income or foreign relief; state net sum EUR 14,000 versus EUR 14,000.01 | EUR 0 versus fixed EUR 128 under the annual amount rule; commencement discrepancy remains recorded |
-| Media insured-income comparison | State net sum EUR 5,900; confirmed YEL EUR 17,000 and no MYEL; ordinary resident age conditions met, no foreign relief | EUR 17,000 is the higher measure, giving the fixed EUR 128 annual fee; a low taxable business profit alone does not remove it |
-
-### Full-ladder example work still required
-
-| Required case | Inputs and schedules to establish | Dependent result held |
-|---|---|---|
-| Employee | Gross pay/benefits, separate natural deductions, certified contributions, both basic deductions and losses, state/municipal/church/health/media charges, credit allocation, evidenced collection | Final liability, balance and calendar until all applicable bases, rounding and collection rules are verified |
-| Self-employed | Accounts and tax adjustments, capital allowances, losses, entrepreneur deduction, valued net assets/wage addition, elected capital share, earned-income deductions, YEL/MYEL substitution, credits and advances | Business allocation and complete personal settlement until source conditions and contribution inputs are verified |
-| Mixed salary/business/capital | Both source registers, once-only contribution/expense treatment, entrepreneur share, separate state/municipal/health bases, capital tax, credit ordering and combined collection | Complete liability and balance; a solved salary component cannot certify the mixed result |
-
-## Intake, defaults and reviewer controls
-
-Add fiscal municipality evidence, national residence branch, accounting period,
-income categories, church/parish and effective membership dates, health-insurance
-route/period evidence, state net amounts and confirmed YEL/MYEL income for the
-media comparison, age and guardian/spouse status,
-commuting method and qualifying months, pension/contribution certificates,
-business net-asset/wage/election schedules, losses, credit evidence and the
-authority collection statement to the bases' intake. Use taxpayer references
-and redacted evidence; this guide does not require submission of identity,
-tax-number or bank-detail records.
-
-| Uncertainty | Permitted preparation treatment |
-|---|---|
-| Applicable law, year, municipality, residence, insurance or rounding unresolved | Needs Input; hold dependent calculations |
-| Deduction expense unsupported, after its legal treatment is established | No deduction provisionally; flag the missing evidence and alternative effect |
-| Private/business proportion unsupported | No business deduction provisionally; do not invent a proportion |
-| Withholding/payment evidence absent | Do not credit an unverified amount; retain the reconciliation question and any known authority assessment |
-| Election or entitlement unresolved | Hold any result that depends on it; no inferred business-share election, spouse transfer or church exemption |
-| Specialist receipt, capital asset or foreign item | Separate schedule and verified companion before computation |
-
-Flag every source conflict, refusal, unverified legal condition, election and
-potential double count, regardless of amount. The following are review-policy
-thresholds, not statutory limits: flag each assumed item's potential effect of
-at least EUR 100, or an aggregate at least EUR 250. An effect that cannot be
-quantified is a flag, not zero. These thresholds never suppress a legal hold.
-
-## Topical refusal catalogue
-
-Record both universal and topical triggers. Use the exact message for each
-fired code; a refusal is not evidence that the underlying tax is zero.
-
-| Code | Trigger | Exact output |
-|---|---|---|
-| R-AX-I-INCOMPLETE | A required domain slot, source condition or full-ladder example remains incomplete for the requested result | "This Åland income-tax companion is incomplete for the requested calculation. The missing requirements are [list]. I can prepare the source and input issues for the reviewer; the dependent figures and complete financial package remain held." |
-| R-AX-I-PROFILE | Tax year, filing unit, national residence or fiscal municipality cannot be established | "I need the applicable tax year, taxpayer/filing unit, residence branch and fiscal home municipality before selecting Åland income-tax rules. The unresolved profile items are [list]." |
-| R-AX-I-CROSS-BORDER | Non-resident, part-year, dual-resident, foreign income/account/tax or treaty issue | "This fact pattern needs a verified cross-border companion and the applicable residence, source, treaty and conversion rules. I have held the affected amounts: [list]." |
-| R-AX-I-BUSINESS | Business status, period, expenses, valuation, capital allowance, loss or split/election is unverified | "The business-income calculation or earned/capital allocation is not established. Obtain [specific accounts, valuation, election or authority] before computing the affected personal-tax amounts." |
-| R-AX-I-CONTRIBUTIONS | Insurance coverage, health base, contributions, church membership or media-fee conditions are unresolved | "The separate contribution, church or media-fee calculation requires [missing evidence or rule]. It cannot be replaced with a flat percentage or an assumed exemption." |
-| R-AX-I-ROUNDING | Conversion, intermediate rounding, credit allocation or final money rule is missing | "The required conversion or rounding rule is unverified for [stage]. I have preserved the supported inputs and held the dependent calculation." |
-| R-AX-I-SETTLEMENT | Collection, return/date, advance reduction, interest, penalty or residual/refund treatment is unverified | "The filing or settlement position is not established. Reconcile [specific statement, notice or rule] before giving a balance, payment date or client instruction." |
-| R-AX-I-SPECIALIST | Estate, partnership return, special pension/maritime/forestry regime, disputed classification or omitted credit mechanics | "This specialist position requires its complete period-specific rules and a qualified review. The unsupported items are [list]; they remain outside this calculation." |
-
-## Completion register and self-check additions
+## Completion checklist
 
 This is the operational acceptance register for this draft, not a claim of
 comprehensive coverage. A row marked partial cannot be cleared by guide
@@ -870,15 +949,9 @@ each credit's allocation, the collection reconciliation, source conflicts,
 period/election decisions and all open acceptance rows. Add these as mapped
 fields to the universal workbook rather than replacing its required columns.
 
-## Sources, revision and limits
+### Revision history
 
-The [pack source register](references.md) records retained primary captures and
-read limits. Selected provisions and enacted amendments were checked on
-16 October 2026 in Australia/Sydney. This editing date does not establish the
-complete operative chain for an engagement. Numerical examples are invented
-component checks; consumer, full-workbook, portal and professional validation
-remain unverified. The guide is Tier 2/pending_review and gives no comprehensive
-country-coverage credit.
+Version 0.5, 14 November 2026: imported from Ryan Duguid's fork and moved to the repository's method headings; official-source column added to the four rate tables; two recomputing worked cases added; 2026 state scale, basic deductions, municipal pension maximum, contribution rates, media fee and interest rates re-read on official pages.
 
 Version 0.3 adds ordinary church membership and sixteen parish-rate rows,
 the ordinary insured-residence test, the personal media-fee comparison and
@@ -894,28 +967,65 @@ Version 0.1: initial 2026 income reference covering the separate bases, ordinary
 deductions, state/municipal schedules, work credit, business-allocation framework
 and the remaining operational requirements.
 
-## Disclaimer
+## Sources
 
-This guide is general reference material, not tax, legal or financial advice.
-A qualified practitioner must verify the applicable law, facts, calculations
-and complete output package before any filing, payment or other reliance.
+The [pack source register](references.md) records retained primary captures and
+read limits. Selected provisions and enacted amendments were checked on
+16 October 2026 in Australia/Sydney. This editing date does not establish the
+complete operative chain for an engagement. Numerical examples are invented
+component checks; consumer, full-workbook, portal and professional validation
+remain unverified. The guide is Tier 2/pending_review and gives no comprehensive
+country-coverage credit.
 
-<!-- openaccountants-cta-block -->
+| Source | URL | Read on |
+|---|---|---|
+| Income Tax Act 1535/1992 (AX13): read by Ryan Duguid for Selected sections 8 to 9, 11, 14, 29 to 31, 38 to 41, 61, 64, 93 to 106, 110, 116 to 125 and credit cross-references; historical/prospective paragraphs distinguished; not the complete operative chain | https://www.finlex.fi/sv/lagstiftning/1992/1535 | 2026-10-16 |
+| Assessment Procedure Act 1558/1995 (AX15): read by Ryan Duguid for Selected sections 1 to 5, 7 to 8, 11, 26/26a/26e, 27, 32 to 33, 34 to 39 and 49 to 51; ordinary penalty text checked against original 15/2018; specialist and notice/service conditions remain open | https://www.finlex.fi/sv/lagstiftning/1995/1558 | 2026-10-16 |
+| Home Municipality Act 201/1994 (AX16): read by Ryan Duguid for Sections 1 to 6a and 9a to 12 plus original commencement; not all amendment originals | https://www.finlex.fi/sv/lagstiftning/1994/201 | 2026-10-16 |
+| Municipal Income Tax Act 2011:119 (AX2): read by Ryan Duguid for Text; sections 1 to 4 and selected 2026 provisions; read-only source pass covered sections 1 to 32 and commencement notes | https://www.regeringen.ax/alandsk-lagstiftning/alex/2011119 | 2026-10-16 |
+| Vero: Beskattningen på Åland: read for the adjusted 2026 state scale table (0 to 22,000 at 0%, 6.36%, 17.61%, 20.61%, 24.86%; 674.16, 1,994.91, 4,468.11), the municipal basic deduction of 3,925 tapered at 8.4% and the municipal pension-income maximum of 11,240 (sections 2.2.6 and 2.2.7) | https://www.vero.fi/sv/Detaljerade_skatteanvisningar/anvisningar/48911/beskattningen-pa-aland8/ | 2026-11-14 |
+| Income Tax amendment 1141/2025 (AX20): read by Ryan Duguid for Original enacted text: selected 2026 deductions, credits, pension/benefit amendments and commencement; future and grandfathering conditions preserved | https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2025/1141 | 2026-10-16 |
+| ÅFS 2026:10: municipal deductions (AX8): read by Ryan Duguid for Original PDF; both pages read through native extraction; commencement 1 March 2026, applying from tax year 2026 | https://www.regeringen.ax/node/222885 | 2026-10-16 |
+| Vero: commuting guidance conflict (AX27): read by Ryan Duguid for Relevant 2026-labelled 800/75/150 figures conflict with retained statute/withholding decision; not adopted; mileage is separately labelled 2025/2026 estimate | https://www.vero.fi/sv/privatpersoner/avdrag/resekostnader/resor-mellan-bostaden-och-arbetsplatsen/ | 2026-10-16 |
+| Vero: 2026 wage withholding/prepayments VH/5046/00.01.00/2025 (AX22): read by Ryan Duguid for Full extracted decision; advance collection only; automatic estimates/omissions do not establish final assessment | https://www.vero.fi/syventavat-vero-ohjeet/paatokset/47363/verohallinnon-paatos-ennakonpidatysprosenttien-laskentaperusteista-palkkatuloa-varten-ja-ennakonkannossa-maarattavan-ennakkoveron-laskentaperusteista-vuodelle-2026/ | 2026-10-16 |
+| Vero: 2026 workroom decision (AX25): read by Ryan Duguid for Full short annual decision; other taxable income than salary, qualifying-use bands and insignificant-use exclusion; local maximum wording remains a source condition | https://www.vero.fi/sv/Detaljerade_skatteanvisningar/beslut/360555/skatteforvaltningens-beslut-om-beloppet-av-avdrag-for-arbetsrum-vid-beskattningen-for-ar-2026/ | 2026-10-16 |
+| Vero: 2026 taxable-income calculation (AX19): read by Ryan Duguid for Selected ordinary income, deduction and work-credit sections; 15 January 2026; inconsistent pension illustration retained as a source conflict | https://www.vero.fi/syventavat-vero-ohjeet/ohje-hakusivu/49038/verotettavan-tulon-laskeminen-henkiloverotuksessa9/ | 2026-10-16 |
+| ÅFS 2026:70: prospective municipal amendment (AX9): read by Ryan Duguid for Original PDF; both pages extracted; merged column text on page 1 checked against rendered original; starts 1 January 2027, first tax year 2027 | https://www.regeringen.ax/node/226467 | 2026-10-16 |
+| 2026 Scale Act 1140/2025 (AX14): read by Ryan Duguid for Full annual Act and five-row table; starts 1 January 2026; adjusted scale also checked against section 124(5) and AX3 | https://www.finlex.fi/sv/lagstiftning/2025/1140 | 2026-10-16 |
+| Annual municipal/church rate decision 1012/2025 (AX17): read by Ryan Duguid for Native DOM JSON from the verified Swedish legislation view; all 309 rows match the retained Swedish table, with one exact row for each of 16 municipalities; church membership/exception chain remains partial | https://www.finlex.fi/sv/lagstiftning/2025/1012 | 2026-10-16 |
+| Lutheran Church Tax Act 1013/2012 (AX50): read by Ryan Duguid for Full short Act sections 1 to 4; ELI 2012-12-21; force 1 January 2013, first tax 2013; old Church Law cross-reference remains displayed | https://www.finlex.fi/sv/lagstiftning/2012/1013 | 2026-10-16 |
+| Vero: church tax (AX53): read by Ryan Duguid for Full short guidance updated 4 January 2022; membership, ordinary/special parish and foreign-membership conditions; next-to-last-day exit-notice wording retained as an unresolved source issue | https://www.vero.fi/sv/skatteforvaltningen/nyhetsrummet/presentations_och_undervisningsmateria/kyrkoskat/ | 2026-10-16 |
+| Orthodox Church Act 985/2006 (AX52): read by Ryan Duguid for Metadata, membership section 3, sections 77 to 79 and original commencement; ELI 2025-12-22; Orthodox preceding-year-end membership timing is corroborated by AX53, not independently proved by section 77 alone | https://www.finlex.fi/sv/lagstiftning/2006/985 | 2026-10-16 |
+| Church Law 652/2023 (AX51): read by Ryan Duguid for Metadata, chapter 6 section 2 and chapter 13 sections 1 to 9; ELI 2024-05-03; force 1 July 2023 repeals 1054/1993; not a complete amendment/transition chain | https://www.finlex.fi/sv/lagstiftning/2023/652 | 2026-10-16 |
+| Health Insurance Act 1224/2004 (AX28): read by Ryan Duguid for Chapter 1 sections 2 to 3; chapter 11 sections 3-4; chapter 18 sections 5, 13-15, 20, 23-24 and selected paragraphs of 29-32. Original lines 499, 2272-2361, 3279-3296, 3397-3492, 3529-3570 and 3595-3636. Section 16 was only partially read in an adjacent span.; Consolidation ELI 2026-07-09. Reviewed operative provisions distinguished from future-dated unrelated amendments. | https://www.finlex.fi/fi/lainsaadanto/2004/1224 | 2026-10-16 |
+| Residence-based Social Security Act 16/2019 (AX56): read by Ryan Duguid for Metadata 42-64; sections 1-2 lines 70-136; sections 4-10 lines 195-250; commencement and transition355-385; ELI consolidation2026-01-16; Act starts 1 April 2019; section 7 amendment66/2026 starts 1 May 2026 | https://www.finlex.fi/fi/lainsaadanto/2019/16 | 2026-10-16 |
+| Vero: insured-person health contribution (AX23): read by Ryan Duguid for Metadata, sections 1.1 to 1.3, 2.1.2 to 2.3.4, 3.1.2 to 3.3.3, 5.1 to 5.2 and 6.1 to 6.3; final-assessment guidance, with special/foreign conditions incomplete | https://www.vero.fi/syventavat-vero-ohjeet/ohje-hakusivu/338472/vakuutetun-sairausvakuutusmaksu2/ | 2026-10-16 |
+| Health-insurance scope amendment 22/2019 (AX58): read by Ryan Duguid for Full original HTML; lines 1-64; Issued 11 January 2019; published 16 January 2019; starts 1 April 2019 | https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2019/22 | 2026-10-16 |
+| Residence worker amendment 66/2026 (AX59): read by Ryan Duguid for Full original HTML; lines 1-61; only section 7 is amended; Issued 16 January 2026; published 22 January 2026; starts 1 May 2026 | https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/66 | 2026-10-16 |
+| Vero: social-insurance rate table: read for the 2026 column: employee pension 7.30%, unemployment 0.89% and 0.39%, healthcare 1.10%, daily allowance 0.88% from EUR 17,255, YEL supplement 0.23% | https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/being-an-employer/social-insurance-contributions/ | 2026-11-14 |
+| 2026 contribution decree 1026/2025 (AX29): read by Ryan Duguid for Full decree sections 1-4, metadata and commencement.; Issued 20 November 2025; published 25 November 2025; effective 1 January through 31 December 2026. Section 1 applies for 2026; sections 2-3 to 2026 wages or confirmed entrepreneur income. | https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2025/1026 | 2026-10-16 |
+| Media Fee Act 2019:103: read for section 2: fixed annual fee where income exceeds EUR 14,000, the income measure and the annual index rule | https://www.regeringen.ax/alandsk-lagstiftning/alex/2019103 | 2026-11-14 |
+| Vero: 2026 Åland media fee: read for the EUR 14,000 test and the appendix row 2026 EUR 128 (ÅFS 2025:54) | https://www.vero.fi/sv/Detaljerade_skatteanvisningar/anvisningar/89754/medieavgift-i-landskapet-%C3%A5land4/ | 2026-11-14 |
+| ÅFS 2025:54: personal media fee for 2026 (AX57): read by Ryan Duguid for Both PDF pages native extraction; page 1 positioned text and rendered original checked. No OCR needed; ÅFS 2025:54 issued 19 June 2025; printed 29 August 2025; fixes taxyear 2026; section 2 literally starts 1 October 2026 | https://www.regeringen.ax/node/219674 | 2026-10-16 |
+| Vero: declaration details VH/7150/00.01.00/2025 (AX21): read by Ryan Duguid for Sections 1, 5 and 24; cent reporting and separate income schedules; personal first application tax 2025; not final rounding | https://vero.fi/syventavat-vero-ohjeet/paatokset/62189/verohallinnon-paatos-veroilmoituksessa-annettavista-tiedoista8/ | 2026-10-16 |
+| Income Tax amendment 896/2001 (AX34): read by Ryan Duguid for Enacting introduction, repeal of former section 125 and commencement read; other substantive amendments not certified. | https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2001/896 | 2026-10-16 |
+| Assessment Procedure amendment 907/2001 (AX35): read by Ryan Duguid for Entire extracted original Act read. Repeals former section 26a(2) from 1 January 2002, retaining it for earlier years. Other historic monetary amounts are not current. | https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2001/907 | 2026-10-16 |
+| Explanatory proposal HE 91/2001 (AX36): read by Ryan Duguid for Historical proposal section 2.4, Income Tax Act former section 125 rationale and Assessment Procedure former section 26a rationale read at original lines 347 to 362, 474 to 483 and 569 to 585. Proposal rationale is not a current enacted rounding algorithm. | https://www.finlex.fi/fi/hallituksen-esitykset/2001/91 | 2026-10-16 |
+| Vero: sole-trader Form 5 (AX30): read by Ryan Duguid for Selected return-duty/form and displayed tax-2025 cycle passages; no 2026-income deadline or PDF-field certification | https://www.vero.fi/sv/foretag-och-samfund/skatter-och-avgifter/rorelseidkare-eller-yrkesutovare/deklarationsanvisning/ | 2026-10-16 |
+| Vero: Form 17 Ålandsbilaga (AX31): read by Ryan Duguid for Full HTML form description; MinSkatt alternative; no PDF-version or live-portal test | https://www.vero.fi/sv/skatteforvaltningen/kontakta-oss/blanketter/beskrivning/17-%C3%A5landsbilaga-3017r/ | 2026-10-16 |
+| Vero: paper correction forms (AX32): read by Ryan Duguid for Full HTML guidance; form identities only, without adopting prior-cycle dates as 2027 deadlines | https://www.vero.fi/sv/privatpersoner/skattekort-och-skattedeklaration/skattedeklaration_och_beskattningsbeslu/deklarationsanvisning/s%C3%A5-h%C3%A4r-deklarerar-du-p%C3%A5-papper/ | 2026-10-16 |
+| Tax Collection Act 11/2018 (AX33): read by Ryan Duguid for Selected sections 1, 12 to 15, 22 to 24, 30 to 32 and 74; due-date/refund rules, not full interest, offsets or instalments | https://www.finlex.fi/sv/lagstiftning/2018/11 | 2026-10-16 |
+| Prepayment Act 1118/1996 (AX40): read by Ryan Duguid for Selected sections 6 and 23 to 24; authority, assessed/amended/cancelled advances and post-year interest; no full commencement/amendment or special-process certification | https://www.finlex.fi/sv/lagstiftning/1996/1118 | 2026-10-16 |
+| Vero: individual advance decision VH/6503/00.01.00/2022 (AX39): read by Ryan Duguid for Full short decision sections 1 to 6; VH/6503/00.01.00/2022, issued 16 December 2022; in force 1 January 2023 until further notice; scope, bands, cent division and amended advances | https://vero.fi/syventavat-vero-ohjeet/paatokset/47497/verohallinnon-p%C3%A4%C3%A4t%C3%B6s--luonnollisen-henkil%C3%B6n-ja-kuolinpes%C3%A4n-ennakonkannon--alarajasta-ja-kantoerist%C3%A4/ | 2026-10-16 |
+| Tax Collection Decree 1010/2019 (AX38): read by Ryan Duguid for Current ELI 2023-12-14; full operative sections 1 to 12 and commencement notes; ordinary individual instalments/refund dates; changed-tax and specialist branches distinguished; not all amendment originals | https://www.finlex.fi/fi/lainsaadanto/2019/1010 | 2026-10-16 |
+| Vero: paying residual tax (AX43): read by Ryan Duguid for Full guidance updated 5 May 2026; calendar-2026 payments, latest assessment notice and changes; not a calendar for 2026 income settled in 2027 | https://www.vero.fi/sv/privatpersoner/betalning/betalning-av-kvarskatt/sa-har-betalar-du/ | 2026-10-16 |
+| Vero: additional advances (AX44): read by Ryan Duguid for Full guidance updated 2 March 2026; displayed tax-2025 settlement cycle, application before payment and period-specific dates; examples are not final 2026-income due dates | https://www.vero.fi/sv/foretag-och-samfund/skatter-och-avgifter/forskottsskatt/tillaggsforskott/ | 2026-10-16 |
+| Tax Interest Act 1556/1995 (AX41): read by Ryan Duguid for ELI 2026-04-17; scope and sections 2 to 7, 10 to 13 selected; ordinary sections 5a to 5c distinguished from other taxes, old forms and special processes; no complete amendment chain or final money rounding | https://www.finlex.fi/sv/lagstiftning/1995/1556 | 2026-10-16 |
+| Interest Act 633/1982 (AX45): read by Ryan Duguid for Selected sections 12 to 12b and 13; half-year reference definition and official publication; not a complete contract-interest or amendment-chain review | https://www.finlex.fi/sv/lagstiftning/1982/633 | 2026-10-16 |
+| Vero: reduced late-payment interest: read for the 2026 reduced late-payment interest of 4.5% and late-payment interest of 9.5% | https://www.vero.fi/sv/foretag-och-samfund/skatter-och-avgifter/forskottsskatt/tillaggsforskott/nedsatt-dr%C3%B6jsm%C3%A5lsr%C3%A4nta/ | 2026-11-14 |
+| Bank of Finland: July–December 2026 reference (AX46): read by Ryan Duguid for Full official release of 30 June 2026; 2.5% reference for 1 July to 31 December 2026; separate contract-late-interest statements are not tax-rate authority | https://www.suomenpankki.fi/fi/ajankohtaista/lehdistotiedotteet-ja-uutiset/tiedotteet/2026/korkolain-mukainen-viitekorko-ja-viivastyskorot-1.7.31.12.2026 | 2026-10-16 |
+| Assessment Procedure amendment 15/2018 (AX48): read by Ryan Duguid for Operative §§ 32/32a/32b/33 lines 91 to 203; commencement 262 to 266; enacting context; Force 1 May 2018; first assessment tax 2018; pre 2018 cases use old rules; The delayed 1 November 2019 clauses concern§ 1(3)/§ 2(2), not selected penalty sections | https://www.finlex.fi/sv/lagstiftning/forfattningssamling/2018/15 | 2026-10-16 |
+| Vero: income-tax penalty guidance (AX47): read by Ryan Duguid for Metadata; sections 1 to 2.4;3.1.1 to 3.1.2;3.2.2 to 3.2.9;3.2.12;3.3 to 3.4; corporate examples encountered as context; Issued 20 May 2026 VH/2608/00.01.00/2026; valid 20 May 2026 onward; updated 21 May 2026; Examples explicitly use earlier tax years; two apparent wording conflicts preserved; guidance heuristics distinguished from statute | https://www.vero.fi/sv/Detaljerade_skatteanvisningar/anvisningar/66816/pofoljdsavgifter-for-inkomstbeskattningen/ | 2026-10-16 |
+| Separate-decision Act 781/2013 (AX49): read by Ryan Duguid for §§ 1 to 6; § 9;2018/954 commencement note; remaining procedural context encountered; Original force 1 December 2013; current consolidated scope includes 2018/954; Separate commencement law for 2018/954 not fetched; criminal-code and full specialised process not certified | https://www.finlex.fi/sv/lagstiftning/2013/781 | 2026-10-16 |
 
----
-
-## Talk to a verified accountant
-
-This guide is maintained in the
-[ryanduguid/openaccountants fork](https://github.com/ryanduguid/openaccountants).
-Check its quality tier, recorded review status and cited sources before use.
-Choose a practitioner whose credentials and engagement scope you have verified.
-The links below are optional upstream services; they do not publish or verify
-this fork's changes.
-
-- Upstream connection service: https://www.openaccountants.com/connect
-- Upstream accountant network: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
+Not yet confirmed: the Finlex texts (Income Tax Act 1535/1992, Scale Act 1140/2025, rate decision 1012/2025, decree 1026/2025, Assessment Procedure Act and the other Acts) render only with JavaScript and could not be re-read by script on 14 November 2026, so their rows rest on Ryan Duguid's reading of 16 October 2026; the 2026 figures that also appear on a Vero page (state scale, municipal basic deduction and pension maximum, contribution rates, media fee, interest) were re-read there, the 16 municipal and church rates were not; final annual rounding, credit allocation and foreign conversion; the 2026 mileage allowance (only the 2025 decision is published); the Vero commuting page's 800/75/150 figures against the statute's 900 own-risk; the media decision ÅFS 2025:54 commencement of 1 October 2026; the Vero media page's summary wording ('paid only on the part that exceeds EUR 14,000') against section 2 of the Act, which fixes an annual fee once income exceeds EUR 14,000 (the Act is followed); the two Vero penalty-guidance wording conflicts (sections 3.2.5 and 3.2.12); the inconsistent national pension illustrations; church exit-notice timing, special parishes and foreign membership; 2027 collection-year interest rates; the employee, self-employed and mixed full-ladder examples; special health-insurance, cross-border and estate cases.

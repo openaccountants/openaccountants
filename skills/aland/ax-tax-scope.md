@@ -1,28 +1,33 @@
 ---
 name: ax-tax-scope
 description: >
-  Establish the tax-law boundary for Åland before using Finnish tax guides.
-  Use for Aland Islands tax, Åland municipal income tax, the Finnish VAT tax
-  border, services supplied to or from Åland, regional business rights and
-  property acquisitions. This 2026 source-cited draft distinguishes national
-  legislation, regional exceptions and prospective amendments. It supplies
-  scope classifications and the evidence needed for a reviewing practitioner.
-  It does not compute a taxpayer's liability, establish registration or filing
-  deadlines, or supply a complete country pack. Income, VAT, payroll, social
-  insurance and property calculations require verified topical companions.
+  Establish the tax-law boundary for Åland (Aland Islands) before using Finnish tax
+  guides. Use for Aland Islands tax, Åland municipal income tax, the Finnish VAT tax
+  border, services supplied to or from Åland, regional business rights and property
+  acquisitions. This 2026 router distinguishes national legislation, regional
+  exceptions and prospective amendments, and names the topical companion each question
+  needs. It supplies scope classifications and the evidence needed for a reviewing
+  practitioner. It does not compute a taxpayer's liability, establish registration or
+  filing deadlines, or supply a complete country pack. Income tax is in ax-income-tax.
 jurisdiction: AX
 category: international
+type: router
 tax_year: 2026
 tax_year_notes: "2026 scope reference; prospective 2027 provisions identified separately"
 tier: 2
-last_updated: 2026-10-16
-version: 1.0
-review_status: pending_review
+last_updated: 2026-11-14
+version: 1.1
 depends_on:
   - workflow-base
 ---
 
-# Åland: tax-law scope for 2026
+# Åland: tax-law scope for 2026 v1.1
+
+> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
+
+Written by Ryan Duguid; imported from his fork and brought to the repository standard. Built from the law. Not yet approved by an accountant. Tax year 2026.
+
+## Scope
 
 Establish the applicable national and Åland rules before classifying a receipt,
 expense, employment relationship or property transaction. This guide supports
@@ -31,7 +36,31 @@ rate table, filing deadline or permission to file, pay, register or acquire land
 Every calculation needs its applicable domain base and a verified topical
 companion. The existing Finland pack alone does not establish Åland's exceptions.
 
-## Legal and territorial boundaries
+For an individual's income tax, load [ax-income-tax](ax-income-tax.md) after this scope check.
+
+## Ask the client first
+
+Obtain the requested period, taxpayer/entity type, residence and home-municipality
+evidence, income/work/property locations, transaction documents, relevant
+establishments, customer business status and the tax or permission being assessed.
+For a service, obtain its contractual description and the actual supplying and
+receiving establishments. For a regional business/property permission, obtain
+the relevant status or decision and current implementing law.
+
+No factual default is authorised for unknown residence, municipality, source,
+establishment, customer status, service category, tax period or legal permission.
+Record Needs Input and hold the dependent classification. Do not estimate a
+cash difference where the legal base or applicable calculation is unknown.
+Ask the base's structured factual questions only when the answer is not already
+in the documents; source and permission evidence belongs in the action list.
+
+Reviewer policy, not a statutory threshold: flag every territorial, competence,
+commencement and permission decision, regardless of amount. All unresolved source
+conditions require Needs Input; a reviewer flag cannot cure unknown law.
+
+## The method, step by step
+
+### Legal and territorial boundaries
 
 The [Self-Government Act 1144/1991](https://www.finlex.fi/sv/lagstiftning/1991/1144)
 section 1 establishes Åland's autonomy. Section 18(5) assigns specified regional
@@ -73,7 +102,7 @@ and 18(22). Property acquisition also requires a separate check under section
 regional permissions. Current regional implementing legislation and the
 particular entitlement are required before either conclusion.
 
-## Period and source controls
+### Period and source controls
 
 This is a dated 2026 reference checked on 16 October 2026. The source register
 in [references.md](references.md) records capture hashes and exact read limits.
@@ -88,7 +117,7 @@ No figure in another guide becomes a 2026 Åland figure through this guide.
 | VAT healthcare amendment [316/2024, official Swedish publication PDF](https://www.finlex.fi/api/media/statute/4577/mainPdf/main.pdf?timestamp=2024-06-13T00%3A00%3A00.000Z) | The published amendment begins on 1 July 2024. The captured Swedish consolidation's healthcare-heading annotation says 2027, while its commencement entry and the official Swedish/Finnish PDFs say 2024. Retain that discrepancy and check the operative healthcare conditions before any exemption. |
 | Vero's tax-border guidance | Its header warns that the 2026 reduced-rate change has not been incorporated throughout the examples. Do not use a historical example as proof of a current rate. |
 
-## Coverage and required companions
+### Coverage and required companions
 
 All topics below remain partial. This file is the pack's scope reference; it
 does not make any topic complete or establish professional sign-off.
@@ -110,39 +139,7 @@ does not make any topic complete or establish professional sign-off.
 These are verification tasks, not findings that a tax is absent. The source
 library has not been certified as a complete operative chain for every topic.
 
-## Intake, defaults and reviewer policy
-
-Obtain the requested period, taxpayer/entity type, residence and home-municipality
-evidence, income/work/property locations, transaction documents, relevant
-establishments, customer business status and the tax or permission being assessed.
-For a service, obtain its contractual description and the actual supplying and
-receiving establishments. For a regional business/property permission, obtain
-the relevant status or decision and current implementing law.
-
-No factual default is authorised for unknown residence, municipality, source,
-establishment, customer status, service category, tax period or legal permission.
-Record Needs Input and hold the dependent classification. Do not estimate a
-cash difference where the legal base or applicable calculation is unknown.
-Ask the base's structured factual questions only when the answer is not already
-in the documents; source and permission evidence belongs in the action list.
-
-Reviewer policy, not a statutory threshold: flag every territorial, competence,
-commencement and permission decision, regardless of amount. All unresolved source
-conditions require Needs Input; a reviewer flag cannot cure unknown law.
-
-## Topical refusal catalogue
-
-Apply the universal catalogue and add these exact messages when their triggers
-apply. Record every code as cleared or fired in the refusal trace.
-
-| Code | Trigger | Verbatim output |
-|---|---|---|
-| R-AX-PERIOD | The requested period or applicable version/commencement cannot be established | "The applicable Åland rule and period have not been established. Obtain the operative primary sources before classifying the affected item." |
-| R-AX-SCOPE | A tax amount, deduction, return field, deadline or registration conclusion is requested without its verified topical companion | "This Åland scope guide cannot establish the requested calculation or compliance treatment. Load the applicable workflow base and a verified topical companion, or obtain specialist review." |
-| R-AX-FACTS | Residence, municipality, establishment, customer status or service category needed for the decision is unresolved | "The facts needed to select the Åland treatment are missing. Keep the affected item as Needs Input until the required evidence is supplied." |
-| R-AX-PERMISSION | The request assumes regional business or property permission from incorporation, a business identifier or tax registration alone | "Regional business or property permission has not been established. Verify the applicable Åland law and entitlement before proceeding." |
-
-## Hypothetical scope positions
+### Hypothetical scope positions
 
 These examples resolve only the stated scope question. They are fabricated
 reference cases, with no tax computation, filing-ready result or workbook claim.
@@ -176,7 +173,7 @@ reference cases, with no tax computation, filing-ready result or workbook claim.
    the conflict and publication evidence. R-AX-SCOPE still holds any exemption
    until the actual statutory care/provider conditions are verified.
 
-## Outputs and self-checks
+### Outputs and self-checks
 
 For an engagement that clears the scope checks, retain all four universal
 outputs: Excel working paper, reviewer brief, action list and review checklist.
@@ -196,7 +193,7 @@ The action list names the missing evidence, its owner and any verified deadline.
 When a refusal occurs before computation, deliver its exact message and scope
 trace under the base's refusal path.
 
-## Review Checklist Items
+### Review Checklist Items
 
 Add to the base's Section D: confirm the requested period and operative wording;
 national/regional tax competence; distinct state/municipal bases; actual residence,
@@ -207,29 +204,36 @@ every Needs Input and refusal; and all applicable base/domain outputs and
 recalculation evidence. Check that no unknown amount is presented as zero and
 no partial topic is described as comprehensive coverage.
 
-## Revision and limitations
+## When to refuse or refer
 
-Version 1.0, 16 October 2026: first dated Åland scope reference and source register.
+Apply the universal catalogue and add these exact messages when their triggers
+apply. Record every code as cleared or fired in the refusal trace.
+
+| Code | Trigger | Verbatim output |
+|---|---|---|
+| R-AX-PERIOD | The requested period or applicable version/commencement cannot be established | "The applicable Åland rule and period have not been established. Obtain the operative primary sources before classifying the affected item." |
+| R-AX-SCOPE | A tax amount, deduction, return field, deadline or registration conclusion is requested without its verified topical companion | "This Åland scope guide cannot establish the requested calculation or compliance treatment. Load the applicable workflow base and a verified topical companion, or obtain specialist review." |
+| R-AX-FACTS | Residence, municipality, establishment, customer status or service category needed for the decision is unresolved | "The facts needed to select the Åland treatment are missing. Keep the affected item as Needs Input until the required evidence is supplied." |
+| R-AX-PERMISSION | The request assumes regional business or property permission from incorporation, a business identifier or tax registration alone | "Regional business or property permission has not been established. Verify the applicable Åland law and entitlement before proceeding." |
+
+## Sources
+
+Version 1.1, 14 November 2026: imported from Ryan Duguid's fork and moved to the repository's router headings; Sources table added. Version 1.0, 16 October 2026: first dated Åland scope reference and source register.
 Tier 2/pending_review. Full tax calculations, complete operative chains, actual
 consumer behaviour, financial-workbook execution, portal use and professional
 sign-off remain unverified. The dated verification note is recorded in the repository verification log.
 
-<!-- openaccountants-cta-block -->
+| Source | URL | Read on |
+|---|---|---|
+| Self-Government Act 1144/1991 (AX1): read by Ryan Duguid for Text; sections 1, 10 to 11, 18(5)/(22), 27(8)/(36), 29(1)(2)/(3); no whole-chain certification | https://www.finlex.fi/sv/lagstiftning/1991/1144 | 2026-10-16 |
+| Municipal Income Tax Act 2011:119 (AX2): read by Ryan Duguid for Text; sections 1 to 4 and selected 2026 provisions; read-only source pass covered sections 1 to 32 and commencement notes | https://www.regeringen.ax/alandsk-lagstiftning/alex/2011119 | 2026-10-16 |
+| Vero: Beskattningen på Åland: read for section 2 (separate state and municipal taxable incomes) and the Åland rate and deduction tables | https://www.vero.fi/sv/Detaljerade_skatteanvisningar/anvisningar/48911/beskattningen-pa-aland8/ | 2026-11-14 |
+| European Commission: Territorial scope: read for the territorial table row 'Finland / The Åland Islands': in EU territory and customs, outside EU VAT and excise | https://taxation-customs.ec.europa.eu/taxation/vat/vat-directive/how-does-vat-work/territorial-scope_en | 2026-11-14 |
+| Åland VAT/Excise Exceptions Act 1266/1996 (AX5): read by Ryan Duguid for Text; sections 1 to 8 and selected commencement notes, including 506/2014, 316/2024 and prospective 598/2026; not all VAT procedures | https://www.finlex.fi/sv/lagstiftning/1996/1266 | 2026-10-16 |
+| Vero: Ahvenanmaan veroraja arvonlisäverotuksessa: read for section 4.9 (intangible services under AVL 69 h section 2) and sections 4 and 4.4 | https://www.vero.fi/syventavat-vero-ohjeet/ohje-hakusivu/48654/ahvenanmaan-veroraja--arvonlisaverotuksessa3/ | 2026-11-14 |
+| ÅFS 2026:10: municipal deductions (AX8): read by Ryan Duguid for Original PDF; both pages read through native extraction; commencement 1 March 2026, applying from tax year 2026 | https://www.regeringen.ax/node/222885 | 2026-10-16 |
+| ÅFS 2025:30: municipal company rates (AX7): read by Ryan Duguid for Original PDF; both pages read through native extraction; general section 29 deferred to tax year 2030 | https://www.regeringen.ax/node/217676 | 2026-10-16 |
+| ÅFS 2026:70: prospective municipal amendment (AX9): read by Ryan Duguid for Original PDF; both pages extracted; merged column text on page 1 checked against rendered original; starts 1 January 2027, first tax year 2027 | https://www.regeringen.ax/node/226467 | 2026-10-16 |
+| 316/2024: Swedish official publication (AX10): read by Ryan Duguid for Original one-page PDF; native extraction read; commencement 1 July 2024 | https://www.finlex.fi/api/media/statute/4577/mainPdf/main.pdf?timestamp=2024-06-13T00%3A00%3A00.000Z | 2026-10-16 |
 
----
-
-## Talk to a verified accountant
-
-This guide is maintained in the
-[ryanduguid/openaccountants fork](https://github.com/ryanduguid/openaccountants).
-Check its quality tier, recorded review status and cited sources before use.
-Choose a practitioner whose credentials and engagement scope you have verified.
-The links below are optional upstream services; they do not publish or verify
-this fork's changes.
-
-- Upstream connection service: https://www.openaccountants.com/connect
-- Upstream accountant network: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
+Not yet confirmed: the Finlex texts (Self-Government Act 1144/1991, Act 1266/1996, the 316/2024 publications) render only with JavaScript and were not re-read on 14 November 2026, so their rows rest on Ryan Duguid's reading of 16 October 2026; current regional implementing law for business rights and land acquisition; the 2027 healthcare annotation in the Swedish VAT consolidation against the 1 July 2024 commencement of 316/2024; any correction notice for that annotation; the commencement of 598/2026 provisions other than sections 3(3) and 6a; the Åland media fee and sectoral charges outside income tax; complete operative chains for every topic in the coverage table.

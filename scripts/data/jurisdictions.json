@@ -70,6 +70,13 @@
   "dir": "skills/aruba"
  },
  {
+  "code": "AX",
+  "name": "Aland Islands",
+  "region": "europe",
+  "owner": "michael",
+  "dir": "skills/aland"
+ },
+ {
   "code": "AZ",
   "name": "Azerbaijan",
   "region": "europe",
