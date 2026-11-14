@@ -96,10 +96,10 @@ If the taxpayer qualifies for RESICO (total annual income ≤ $3,500,000 MXN):
 | Annual Income (MXN) | Rate | Source |
 | --- | --- | --- |
 | Up to $300,000 | 1.00% | [LISR Art. 113-F, DOF 12-11-2021](https://dof.gob.mx/nota_detalle.php?codigo=5635286&fecha=12/11/2021) |
-| $300,001 – $600,000 | 1.10% | same |
-| $600,001 – $1,000,000 | 1.50% | same |
-| $1,000,001 – $2,500,000 | 2.00% | same |
-| $2,500,001 – $3,500,000 | 2.50% | same |
+| Over $300,000.00 up to $600,000.00 | 1.10% | same |
+| Over $600,000.00 up to $1,000,000.00 | 1.50% | same |
+| Over $1,000,000.00 up to $2,500,000.00 | 2.00% | same |
+| Over $2,500,000.00 up to $3,500,000.00 | 2.50% | same |
 
 **Warning:** RESICO applicability to crypto traders is uncertain. Conservative default: use the general progressive regime unless a tax professional confirms RESICO eligibility.
 
@@ -113,7 +113,7 @@ If the taxpayer qualifies for RESICO (total annual income ≤ $3,500,000 MXN):
 
 | Exemption | Amount | Condition | Source |
 | --- | --- | --- | --- |
-| Enajenacion de bienes muebles (LISR Art. 93 fr. XIX b)) | 3x the general minimum wage of the contributor's geographic area, annualized; read as 3x UMA annualized since the 2016 de-indexation: $123,820.56 for 2025, $128,383.92 for 2026 | Measured on the annual difference between total proceeds and documented acquisition cost (net gain, not gross). If the difference exceeds the threshold, tax is paid on the excess: "Por la utilidad que exceda se pagara el impuesto" | [LISR Art. 93 fr. XIX b), DOF 11-12-2013](https://dof.gob.mx/nota_detalle.php?codigo=5325373&fecha=11/12/2013); [INEGI, UMA 2025 and 2026 annual values](https://www.inegi.org.mx/temas/uma/) |
+| Enajenacion de bienes muebles (LISR Art. 93 fr. XIX b)) | 3x the general minimum wage of the contributor's geographic area, annualized; read as 3x UMA annualized since the 2016 de-indexation: $123,820.56 for 2025, $128,383.92 for 2026 (computed: 3 x the annual UMA) | Measured on the annual difference between total proceeds and documented acquisition cost (net gain, not gross). If the difference exceeds the threshold, tax is paid on the excess: "Por la utilidad que exceda se pagara el impuesto" | [LISR Art. 93 fr. XIX b), DOF 11-12-2013](https://dof.gob.mx/nota_detalle.php?codigo=5325373&fecha=11/12/2013); [INEGI, UMA 2025 and 2026 annual values](https://www.inegi.org.mx/temas/uma/) |
 
 The statute text reads "tres veces el salario minimo general del area geografica del contribuyente elevado al ano" (LISR Art. 93 fr. XIX b)). Since the 2016 constitutional de-indexation, minimum-wage references in federal law are read as UMA. UMA annual values (INEGI): $41,273.52 (2025), $42,794.64 (2026). Whether this exemption extends to intangible movable property such as virtual assets is SAT-practice judgment - flag for professional review.
 

@@ -77,10 +77,10 @@ RESICO eligibility and the annual table: LISR Arts. 113-E and 113-F. Client with
 | Annual Income (MXN) | RESICO Rate | Source |
 | --- | --- | --- |
 | Up to 300,000 | 1.00% | [LISR Art. 113-F, DOF 12-11-2021](https://dof.gob.mx/nota_detalle.php?codigo=5635286&fecha=12/11/2021) |
-| 300,001 – 600,000 | 1.10% | same |
-| 600,001 – 1,000,000 | 1.50% | same |
-| 1,000,001 – 2,500,000 | 2.00% | same |
-| 2,500,001 – 3,500,000 | 2.50% | same |
+| Over 300,000.00 up to 600,000.00 | 1.10% | same |
+| Over 600,000.00 up to 1,000,000.00 | 1.50% | same |
+| Over 1,000,000.00 up to 2,500,000.00 | 2.00% | same |
+| Over 2,500,000.00 up to 3,500,000.00 | 2.50% | same |
 
 The statute (LISR Art. 113-F, TABLA ANUAL) states each band as "Hasta" (up to) the upper limit shown: Hasta 300,000.00 at 1.00%, Hasta 600,000.00 at 1.10%, Hasta 1,000,000.00 at 1.50%, Hasta 2,500,000.00 at 2.00%, Hasta 3,500,000.00 at 2.50%. The lower bounds in the table above are the complement of the previous row, not separate statutory figures.
 
@@ -99,7 +99,7 @@ Cannot combine RESICO with Régimen General in same year for same activity
 
 | Client Type | Withholding on Honorarios CFDI | Source |
 | --- | --- | --- |
-| Moral (corporation), payee in Régimen General | 10% ISR (LISR Art. 106: "la tasa del 10% sobre el monto de los pagos que les efectúen") + 2/3 of the IVA transferred (RLIVA Art. 3 fr. I: "las dos terceras partes del impuesto que se les traslade"; 2/3 x 16% = 10.667% of the invoice amount) | [LISR Art. 106, DOF 11-12-2013](https://dof.gob.mx/nota_detalle.php?codigo=5325373&fecha=11/12/2013); [RLIVA Art. 3 fr. I, DOF 04-12-2006](https://dof.gob.mx/nota_detalle.php?codigo=4939297&fecha=04/12/2006) |
+| Moral (corporation), payee in Régimen General | 10% ISR (LISR Art. 106: "la tasa del 10% sobre el monto de los pagos que les efectúen") + 2/3 of the IVA transferred (RLIVA Art. 3 fr. I: "las dos terceras partes del impuesto que se les traslade"; 2/3 x 16% = 10.667% of the invoice amount, computed) | [LISR Art. 106, DOF 11-12-2013](https://dof.gob.mx/nota_detalle.php?codigo=5325373&fecha=11/12/2013); [RLIVA Art. 3 fr. I, DOF 04-12-2006](https://dof.gob.mx/nota_detalle.php?codigo=4939297&fecha=04/12/2006) |
 | Moral (corporation), payee in RESICO | 1.25% ISR on the payment excluding IVA (LISR Art. 113-J) | [LISR Art. 113-J, DOF 12-11-2021 ("la tasa del 1.25%")](https://dof.gob.mx/nota_detalle.php?codigo=5635286&fecha=12/11/2021) |
 | Física (individual) with business activity | Same obligations as Moral | [LISR Art. 106, DOF 11-12-2013](https://dof.gob.mx/nota_detalle.php?codigo=5325373&fecha=11/12/2013) |
 | Persona Física consumer | No withholding obligation | same |

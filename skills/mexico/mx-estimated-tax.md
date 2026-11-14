@@ -46,10 +46,10 @@ The statute (LISR Art. 113-E, TABLA 1) states each band as "Hasta" (up to) the u
 | Monthly income (MXN) | Rate | Source |
 | --- | --- | --- |
 | Up to 25,000 | 1.00% | [LISR Art. 113-E, DOF 12-11-2021 (monthly table)](https://dof.gob.mx/nota_detalle.php?codigo=5635286&fecha=12/11/2021) |
-| 25,000.01 -- 50,000 | 1.10% | same |
-| 50,000.01 -- 83,333.33 | 1.50% | same |
-| 83,333.34 -- 208,333.33 | 2.00% | same |
-| 208,333.34 -- 3,500,000 | 2.50% | same |
+| Over 25,000.00 up to 50,000.00 | 1.10% | same |
+| Over 50,000.00 up to 83,333.33 | 1.50% | same |
+| Over 83,333.33 up to 208,333.33 | 2.00% | same |
+| Over 208,333.33 up to 3,500,000.00 | 2.50% | same |
 
 ## The taxable base
 
