@@ -110,7 +110,7 @@ Each rule states the legal source and the return line mapping. Apply silently if
 
 ### 5.4 Exempt activities (Articles 9, 15, 20, 25 LIVA)
 
-- **Exempt activities rule** -- Sale of land (Art. 9 Fr. I) and of constructions destined or used for housing (Art. 9 Fr. II); used movable goods except those sold by businesses (Art. 9 Fr. IV); residential rental (Art. 20 Fr. II); and the services listed in Art. 15, including accredited education (Fr. IV), urban/suburban public land transport (Fr. V), agro-weather, housing-credit, financial-guarantee and life insurance plus agent commissions on those (Fr. IX), and services deriving from interest in authorized financing operations (Fr. X). Import exemptions sit in Art. 25. Medical services are not listed in the archived Art. 15 text. Exempt = no IVA charged AND no input IVA credit on attributable costs.  _(Articles 9, 15, 20, 25 LIVA)_
+- **Exempt activities rule** -- Sale of land (Art. 9 Fr. I) and of constructions destined or used for housing (Art. 9 Fr. II); used movable goods except those sold by businesses (Art. 9 Fr. IV); residential rental (Art. 20 Fr. II); and the services listed in Art. 15, including accredited education (Fr. IV), urban/suburban public land transport (Fr. V), agro-weather, housing-credit, financial-guarantee and life insurance plus agent commissions on those (Fr. IX), and services deriving from interest in authorized financing operations (Fr. X). Import exemptions sit in Art. 25. Professional medical services that require a medical degree and are provided by individuals (personas físicas), alone or through civil societies, are exempt (Art. 15 Fr. XIV); medical, hospital, radiology and laboratory services of public decentralised bodies are exempt under Fr. XV. Exempt = no IVA charged AND no input IVA credit on attributable costs.  _(Articles 9, 15, 20, 25 LIVA)_
 
 ### 5.5 CFDI requirements for input IVA crediting
 
@@ -648,6 +648,7 @@ For each question, the inference rule comes first. Only ask if inference fails.
 | --- | --- | --- |
 | SAT article portal, LIVA Art. 1, read for the 16% rate | https://wwwmatnp.sat.gob.mx/articulo/19848/articulo-1 | 2026-11-14 |
 | SAT article portal, LIVA Art. 2-A, read for the 0% list, the 16% on food prepared on the premises and the effects of the 0% rate | https://wwwmatnp.sat.gob.mx/articulo/06071/articulo-2-a | 2026-11-14 |
+| SAT article portal, LIVA Art. 15, read for the exempt services list including Fr. IV (education) and Fr. XIV (medical services by individuals) | https://wwwmatnp.sat.gob.mx/articulo/67548/articulo-15 | 2026-11-14 |
 | SAT article portal, LIVA Art. 5-D, read for monthly payment by day 17 | https://wwwmatnp.sat.gob.mx/articulo/73134/articulo-5-d | 2026-11-14 |
 | DOF 31-12-2025, decree extending the northern and southern border stimulus decrees, read for the new validity to 31 December 2026 | https://dof.gob.mx/nota_detalle.php?codigo=5777697&fecha=31/12/2025 | 2026-11-14 |
 | SAT, RMF 2026 (DOF 28-12-2025), read for chapter 11.9 and rule 11.9.3 (CFDI "IVA Crédito aplicado del 50%") | https://sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/rmf/RMF_2026-DOF-28122025.pdf | 2026-11-14 |
