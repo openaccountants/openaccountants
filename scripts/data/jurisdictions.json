@@ -980,6 +980,13 @@
   "dir": "skills/peru"
  },
  {
+  "code": "PF",
+  "name": "French Polynesia",
+  "region": "apac",
+  "owner": "ryan",
+  "dir": "skills/french-polynesia"
+ },
+ {
   "code": "PG",
   "name": "Papua New Guinea",
   "region": "apac",
