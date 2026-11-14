@@ -16,7 +16,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 > **Built from the law. Not yet approved.** Written by Codex. Not reviewed by an accountant. A qualified professional must review the established facts and filing result. Circular 230 section 10.37: consider relevant facts and circumstances; do not assume missing facts or rely on audit risk.
 
-**Answer first.** North Dakota starts with federal taxable income, then applies state adjustments and its indexed 0%, 1.95%, 2.50% schedule. The official 2026 ND-1ES publishes 2026 brackets even though the main individual landing page still displays 2025. Wages and sole-proprietor profit enter through the federal return; no separate state standard deduction is invented. [2026 ND-1ES](https://www.tax.nd.gov/sites/www/files/documents/forms/software-developer/individual-income-forms/28709-form-nd-1es- 2026%20final.pdf); [57-38-30.3](https://ndlegis.gov/cencode/t57c38.pdf).
+**Answer first.** North Dakota starts with federal taxable income, then applies state adjustments and its indexed 0%, 1.95%, 2.50% schedule. The official 2026 ND-1ES publishes 2026 brackets even though the main individual landing page still displays 2025. Wages and sole-proprietor profit enter through the federal return; no separate state standard deduction is invented. [2026 ND-1ES](https://www.tax.nd.gov/sites/www/files/documents/forms/software-developer/individual-income-forms/28709-form-nd-1es-2026%20final.pdf); [57-38-30.3](https://ndlegis.gov/cencode/t57c38.pdf).
 
 ## Scope
 
@@ -38,20 +38,20 @@ These are **2026** schedules printed on page 2 of the official 2026 ND-1ES, not 
 
 | Filing status and North Dakota taxable income, USD | 2026 rate / tax | Official source |
 | --- | --- | --- |
-| Single through 49,575 | 0% | [2026 p 2](https://www.tax.nd.gov/sites/www/files/documents/forms/software-developer/individual-income-forms/28709-form-nd-1es- 2026%20final.pdf) |
-| Single over 49,575 through 250,400 | 1.95% of excess over 49,575 | [2026 p 2](https://www.tax.nd.gov/sites/www/files/documents/forms/software-developer/individual-income-forms/28709-form-nd-1es- 2026%20final.pdf) |
-| Single over 250,400 | 3,916.09 + 2.50% of excess over 250,400 | [2026 p 2](https://www.tax.nd.gov/sites/www/files/documents/forms/software-developer/individual-income-forms/28709-form-nd-1es- 2026%20final.pdf) |
-| Joint/qualifying surviving spouse through 82,800 | 0% | [2026 p 2](https://www.tax.nd.gov/sites/www/files/documents/forms/software-developer/individual-income-forms/28709-form-nd-1es- 2026%20final.pdf) |
-| Joint over 82,800 through 304,850 | 1.95% of excess over 82,800 | [2026 p 2](https://www.tax.nd.gov/sites/www/files/documents/forms/software-developer/individual-income-forms/28709-form-nd-1es- 2026%20final.pdf) |
-| Joint over 304,850 | 4,329.98 + 2.50% of excess over 304,850 | [2026 p 2](https://www.tax.nd.gov/sites/www/files/documents/forms/software-developer/individual-income-forms/28709-form-nd-1es- 2026%20final.pdf) |
-| Separate through 41,400 | 0% | [2026 p 2](https://www.tax.nd.gov/sites/www/files/documents/forms/software-developer/individual-income-forms/28709-form-nd-1es- 2026%20final.pdf) |
-| Separate over 41,400 through 152,425 | 1.95% of excess over 41,400 | [2026 p 2](https://www.tax.nd.gov/sites/www/files/documents/forms/software-developer/individual-income-forms/28709-form-nd-1es- 2026%20final.pdf) |
-| Separate over 152,425 | 2,164.99 + 2.50% of excess over 152,425 | [2026 p 2](https://www.tax.nd.gov/sites/www/files/documents/forms/software-developer/individual-income-forms/28709-form-nd-1es- 2026%20final.pdf) |
-| Head of household through 66,400 | 0% | [2026 p 2](https://www.tax.nd.gov/sites/www/files/documents/forms/software-developer/individual-income-forms/28709-form-nd-1es- 2026%20final.pdf) |
-| Head over 66,400 through 277,600 | 1.95% of excess over 66,400 | [2026 p 2](https://www.tax.nd.gov/sites/www/files/documents/forms/software-developer/individual-income-forms/28709-form-nd-1es- 2026%20final.pdf) |
-| Head over 277,600 | 4,118.40 + 2.50% of excess over 277,600 | [2026 p 2](https://www.tax.nd.gov/sites/www/files/documents/forms/software-developer/individual-income-forms/28709-form-nd-1es- 2026%20final.pdf) |
+| Single through 49,575 | 0% | [2026 p 2](https://www.tax.nd.gov/sites/www/files/documents/forms/software-developer/individual-income-forms/28709-form-nd-1es-2026%20final.pdf) |
+| Single over 49,575 through 250,400 | 1.95% of excess over 49,575 | [2026 p 2](https://www.tax.nd.gov/sites/www/files/documents/forms/software-developer/individual-income-forms/28709-form-nd-1es-2026%20final.pdf) |
+| Single over 250,400 | 3,916.09 + 2.50% of excess over 250,400 | [2026 p 2](https://www.tax.nd.gov/sites/www/files/documents/forms/software-developer/individual-income-forms/28709-form-nd-1es-2026%20final.pdf) |
+| Joint/qualifying surviving spouse through 82,800 | 0% | [2026 p 2](https://www.tax.nd.gov/sites/www/files/documents/forms/software-developer/individual-income-forms/28709-form-nd-1es-2026%20final.pdf) |
+| Joint over 82,800 through 304,850 | 1.95% of excess over 82,800 | [2026 p 2](https://www.tax.nd.gov/sites/www/files/documents/forms/software-developer/individual-income-forms/28709-form-nd-1es-2026%20final.pdf) |
+| Joint over 304,850 | 4,329.98 + 2.50% of excess over 304,850 | [2026 p 2](https://www.tax.nd.gov/sites/www/files/documents/forms/software-developer/individual-income-forms/28709-form-nd-1es-2026%20final.pdf) |
+| Separate through 41,400 | 0% | [2026 p 2](https://www.tax.nd.gov/sites/www/files/documents/forms/software-developer/individual-income-forms/28709-form-nd-1es-2026%20final.pdf) |
+| Separate over 41,400 through 152,425 | 1.95% of excess over 41,400 | [2026 p 2](https://www.tax.nd.gov/sites/www/files/documents/forms/software-developer/individual-income-forms/28709-form-nd-1es-2026%20final.pdf) |
+| Separate over 152,425 | 2,164.99 + 2.50% of excess over 152,425 | [2026 p 2](https://www.tax.nd.gov/sites/www/files/documents/forms/software-developer/individual-income-forms/28709-form-nd-1es-2026%20final.pdf) |
+| Head of household through 66,400 | 0% | [2026 p 2](https://www.tax.nd.gov/sites/www/files/documents/forms/software-developer/individual-income-forms/28709-form-nd-1es-2026%20final.pdf) |
+| Head over 66,400 through 277,600 | 1.95% of excess over 66,400 | [2026 p 2](https://www.tax.nd.gov/sites/www/files/documents/forms/software-developer/individual-income-forms/28709-form-nd-1es-2026%20final.pdf) |
+| Head over 277,600 | 4,118.40 + 2.50% of excess over 277,600 | [2026 p 2](https://www.tax.nd.gov/sites/www/files/documents/forms/software-developer/individual-income-forms/28709-form-nd-1es-2026%20final.pdf) |
 | Qualifying net long-term capital gain/qualified dividend adjustment | 40%, subject to state allocation and nonduplication conditions | [57-38-30.3(2)(d)](https://ndlegis.gov/cencode/t57c38.pdf); [2025-2026 instructions](https://www.tax.nd.gov/sites/www/files/documents/forms/individual/2025-iit/2025-individual-income-tax-booklet.pdf) |
-| Individual estimates | Prior net tax at least 1,000 and current expected balance at least 1,000, plus federal estimate and insufficient-withholding tests | [2026 ND-1ES p 1](https://www.tax.nd.gov/sites/www/files/documents/forms/software-developer/individual-income-forms/28709-form-nd-1es- 2026%20final.pdf) |
+| Individual estimates | Prior net tax at least 1,000 and current expected balance at least 1,000, plus federal estimate and insufficient-withholding tests | [2026 ND-1ES p 1](https://www.tax.nd.gov/sites/www/files/documents/forms/software-developer/individual-income-forms/28709-form-nd-1es-2026%20final.pdf) |
 
 1. Establish resident filing duty and status. Residents generally include all income; part-year/nonresident ND-1NR applies where required. Wage reciprocity with Minnesota/Montana does not exempt nonwage business/rental income. Do not apply a withholding wage table to the final return.
 2. Begin with federal taxable income, not AGI. For the **2025-2026 filing-cycle mapping**, ND-1 line 1b retains a negative federal taxable-income calculation even when federal line 15 displays zero. Federal standard/itemized and business deductions are already incorporated; avoid deducting them twice.
@@ -148,7 +148,7 @@ This skill and its outputs are provided for informational and computational purp
 
 | Source | URL | Read on |
 | --- | --- | --- |
-| 2026 ND-1ES. Read for all 2026 status schedules, four estimate tests, safe-harbor exceptions, deadlines and 12% interest. | https://www.tax.nd.gov/sites/www/files/documents/forms/software-developer/individual-income-forms/28709-form-nd-1es- 2026%20final.pdf |2026-11-13 |
+| 2026 ND-1ES. Read for all 2026 status schedules, four estimate tests, safe-harbor exceptions, deadlines and 12% interest. | https://www.tax.nd.gov/sites/www/files/documents/forms/software-developer/individual-income-forms/28709-form-nd-1es-2026%20final.pdf |2026-11-13 |
 | N.D.C.C.57-38, especially 30.3,34,45,62-63. Read for federal base, state adjustments/exclusions, credit, filing and estimate framework. | https://ndlegis.gov/cencode/t57c38.pdf |2026-11-13 |
 | 2025 individual booklet,2025-2026 filing cycle. Read for retained 2025 schedules/examples, actual ND-1 mapping, federal negative amount, adjustments, extensions and penalties. | https://www.tax.nd.gov/sites/www/files/documents/forms/individual/2025-iit/2025-individual-income-tax-booklet.pdf |2026-11-13 |
 | Current individual page. Read for landing page's 2025 schedule distinction; not the source of 2026 amounts. | https://www.tax.nd.gov/individual-income-tax |2026-11-13 |
