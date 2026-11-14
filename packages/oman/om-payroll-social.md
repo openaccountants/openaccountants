@@ -1,16 +1,17 @@
 ---
 name: om-payroll-social
 description: "Payroll and social contributions for Oman, tax year 2026: Social Protection Fund rates by branch and date, the statutory ceiling and its current-decision hold, payment by the 15th, non-Omani workers, late charges, from the law and the Fund."
-version: 1.2
+version: 1.3
 jurisdiction: OM
 tax_year: 2026
-last_updated: 2026-11-03
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
+type: computation
 ---
 
-# Oman Payroll & Social Contributions v1.2
+# Oman Payroll & Social Contributions v1.3
 
 > **General reference only.** This Guide is a draft for AI-assisted reference. Independent review accepts only the documented partial source closeout and its recorded conditions. It has not received accountant attestation. Do not use it to file, pay or take a position without professional review.
 

@@ -108,7 +108,7 @@ Owner: Jeff Watts
 | [Panama](panama/) | Needs writing | 4 | 1 | 0 |
 | [Paraguay](paraguay/) | Needs writing | 7 | 7 | 0 |
 | [Peru](peru/) | Needs writing | 9 | 9 | 0 |
-| [Puerto Rico](puerto-rico/) | Needs writing | 3 | 1 | 0 |
+| [Puerto Rico](puerto-rico/) | Needs writing | 6 | 6 | 0 |
 | [Saint Barthelemy](saint-barthelemy/) | Needs writing | 2 | 2 | 0 |
 | [Saint Kitts And Nevis](saint-kitts-and-nevis/) | Needs writing | 2 | 2 | 0 |
 | [Saint Lucia](saint-lucia/) | Needs writing | 5 | 4 | 0 |

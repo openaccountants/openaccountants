@@ -13,19 +13,20 @@ description: >
   eu-vat-directive. ALWAYS read this skill before touching any Swedish VAT work.
   This Tier 2 draft supports source checking and reviewer questions; it does not
   authorise filing, payment or a tax position.
-version: 2.3
+version: 2.4
 jurisdiction: SE
 tax_year: 2026
 tax_year_notes: "Swedish VAT reporting periods in calendar 2026, read at 5 November 2026. ML read to SFS 2026:1025 and SFL to SFS 2026:1305. Food at 6% from 1 April 2026 and 12% from 1 January 2028 are enacted. Older rules stay for a tax point before each change date."
-last_updated: 2026-11-05
+last_updated: 2026-11-14
 job: vat-return
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 domain: vat-gst
+type: filing-howto
 ---
 
-# Sweden VAT Return v2.3
+# Sweden VAT Return v2.4
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
 ## Who this applies to

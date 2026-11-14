@@ -1,14 +1,15 @@
 ---
 name: dk-capital-gains
 description: "Danish capital gains for individuals, income year 2026. Covers share gains and dividends as share income (27% up to DKK 79,400, 42% above; DKK 158,800 for married couples living together), the average-cost method, listed and unlisted share losses and the 1 July purchase-reporting condition, investment funds and ETFs (mark-to-market lagerbeskatning for investment companies, realisation for minimum-tax funds), the aktiesparekonto at 17% with the DKK 174,200 deposit ceiling, bonds and currency gains with the DKK 2,000 threshold, property gains and the parcelhusreglen (1,400 m2), property losses, holiday homes, cooperative flats, crypto routing, exit tax on shares and return fields. Trigger on: Denmark capital gains, aktieindkomst, aktieavance, sell shares Denmark, ETF Denmark lager, aktiesparekonto, parcelhusreglen, sell house Denmark tax, Danish crypto tax. Out of scope: companies (dk-corporate-tax), self-employed business income (dk-income-tax), moving in or out of Denmark in depth (dk-cross-border)."
-version: 1.1
+version: 1.2
 jurisdiction: DK
 tax_year: 2026
-last_updated: 2026-10-27
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
+type: computation
 ---
 
 # Denmark capital gains: individual investors and home sales, 2026
