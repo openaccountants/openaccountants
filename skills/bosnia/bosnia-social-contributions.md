@@ -188,7 +188,7 @@ expected:
 | FBiH Pension Fund, Odluka o visini doprinosa za PIO za lica osigurana u određenim okolnostima (62/26), file linked from the FBiH Tax Administration register (pufbih.ba/propisi-zakoni) | https://ik.imagekit.io/9qcwbg8wl/Odluka_62_26_U6SpxhQfE.pdf | 2026-10-30 |
 | FBiH Zakon o visini stope zatezne kamate na javne prihode, art. 2 | https://pufbih.ba/v1/public/upload/zakoni/1%20Zakon%20o%20visini%20stope%20zatezne%20kamate%20na%20javne%20prihode%20-%20PRECISCEN%20TEKST.pdf | 2026-10-30 |
 | RS Zakon o doprinosima 114/17 (gazette text), arts. 10, 11, 21 to 26 | https://www.poreskaupravars.org/dokumenti/zakoni/Zakon-o-doprinosima-SLGL-114_17.pdf | 2026-10-30 |
-| RS amendments 112/19 (unemployment 0.6%), 49/21 (art. 10a), 119/21 (health 10.2%) | https://www.poreskaupravars.org/dokumenti/zakoni/Zakon-o-izmjenama-Zakona-o-doprinosima-SLGL-112_19.pdf | 2026-10-30 |
+| RS amendments 112/19 (unemployment 0.6%), 49/21 (art. 10a), 119/21 (health rate, linked in the RS rates row above) | https://www.poreskaupravars.org/dokumenti/zakoni/Zakon-o-izmjenama-Zakona-o-doprinosima-SLGL-112_19.pdf | 2026-10-30 |
 | RS amendments 110/24 and 114/25 (entrepreneur bases, seasonal work) | https://poreskaupravars.org/wp-content/uploads/2025/12/Doprinosi.pdf | 2026-10-30 |
 | RS Tax Administration, Form 1002 from 1 January 2026 | https://poreskaupravars.org/izmjene-u-podnosenju-obrasca-1002-od-01-01-2026-godine-3/ | 2026-10-30 |
 | RS Zakon o poreskom postupku 78/20, arts. 60, 112, 114, 115 | https://poreskaupravars.org/wp-content/uploads/2026/05/Zakon-o-poreskom-postupku-78-20.pdf | 2026-10-30 |
