@@ -1,357 +1,415 @@
 ---
 name: us-foreign-tax-credit-1116
-description: "Tier 2 US federal content skill for §901 Foreign Tax Credit (Form 1116) covering tax year 2025. Includes the basket separation under §904 (passive, general, GILTI, foreign branch, §901(j) sanctioned countries), the §904(a) limitation formula, the $300/$600 de minimis no-Form-1116 election, §904(j) high-tax kick-out for passive income, the 2022 T.D. 9959 attribution/nexus/cost-recovery requirements with Notice 2023-55/2024-44 (and successor) relief, the FEIE-vs-FTC strategic choice for US expats, 1-year back / 10-year forward credit carries, and the AMT FTC computation. Schedule A itemized deduction alternative when credit isn't useful."
+description: "Work out a US individual's 2026 foreign tax credit on Form 1116, or the no-Form-1116 election, for a citizen or resident alien who paid foreign income tax. Covers credit or deduction, creditable taxes and the Notice 2023-55 and 2023-80 relief, the separate categories, sourcing, the section 904(a) limit, the USD 300 or USD 600 de minimis election under section 904(j), the 1-year carryback and 10-year carryforward, cash or accrual and currency, the line 12 reduction for income excluded on Form 2555, the AMT credit, later changes in foreign tax, and the 2026 One Big Beautiful Bill Act changes for section 951A (net CFC tested income). Trigger on \"foreign tax credit\", \"Form 1116\", \"FTC\", \"foreign taxes paid\", \"1099-DIV foreign tax\", \"FTC carryover\", \"excess foreign tax credit\", \"high-taxed income\". Load us-foreign-earned-income-2555 when the person also excludes foreign earned income. Federal only."
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/us-foreign-tax-credit-1116"
   jurisdiction: "US"
   tax_year: "2026"
-  last_updated: "2026-10-16"
+  last_updated: "2026-11-14"
 ---
 
-# US Foreign Tax Credit (Form 1116) for individuals
+# US foreign tax credit for individuals (Form 1116), tax year 2026
 
-This skill is written for **tax year 2026** (returns filed in 2027). A short dated section near the end covers **2025 returns**, which are still being filed on extension until 15 October 2026. The 2026 Form 1116 and its instructions were not yet published when this was written (25 September 2026). Where this skill describes form lines, it uses the 2025 form, so check the line numbers against the 2026 instructions before filing.
+> **Source-cited draft.** Built from the 2025 Instructions for Form 1116 (the 2026 form and instructions were not yet published), IRS Pub. 514 (for 2025 returns), the 2025 Instructions for Form 6251, Notices 2023-55 and 2023-80, 26 U.S.C. 904 and Public Law 119-21 sections 70311, 70312 and 70321, read on 2026-11-13. No accountant has reviewed it. All outputs must be reviewed by a qualified tax professional before filing.
+
+**Answer first.** A US citizen or resident alien who paid or accrued foreign income tax can credit it against US tax, category by category, up to the US tax on the foreign-source share of taxable income: **limit = US tax x (foreign-source taxable income in the category / worldwide taxable income)** (section 904(a)). Unused credit carries **back 1 year, then forward 10 years**, in the same category. If all the foreign income is passive, reported on Forms 1099 or K-1 or K-3, and the creditable tax is **not more than USD 300 (USD 600 on a joint return)**, the credit can be claimed directly on Schedule 3, line 1 without Form 1116, but then nothing carries to or from that year. Tax on income excluded on Form 2555 can never be credited. For 2026 the 2025 form and instructions are the latest published; check line numbers against the 2026 versions when they appear.
 
 ## Scope and who this is for
 
-It covers a US citizen or resident alien who files Form 1040 and paid or accrued foreign income tax on foreign-source income. It explains how to:
+In scope: a US citizen or resident alien filing Form 1040 for 2026 who paid or accrued foreign income tax on foreign-source income. The skill explains how to:
 
-- choose between the credit and the itemized deduction
-- sort income into the separate categories ("baskets")
-- work out the limit on each Form 1116
-- use the no-Form-1116 election
-- carry excess credit back and forward
-- deal with the foreign earned income exclusion (FEIE)
-- apply the AMT credit, currency conversion and later changes in the foreign tax (Schedules B and C)
+- choose between the credit and the itemized deduction;
+- decide whether a foreign tax is creditable, including the 2022 regulations and the Notice relief;
+- source the income and sort it into the separate categories ("baskets");
+- work out the limit on each Form 1116, and summarise in Part IV;
+- use the no-Form-1116 election;
+- carry excess credit back and forward (Schedule B);
+- convert currency on the cash or accrual basis;
+- reduce the credit for income excluded on Form 2555;
+- run the AMT credit, and report later changes in foreign tax (Schedule C).
 
-It does **not** cover corporations, estates and trusts, nonresident aliens, the §962 computation itself (Form 1118), or state returns. See "When to refuse or refer".
+Out of scope, and where it goes:
+
+| Topic | Skill |
+| --- | --- |
+| The foreign earned income exclusion and housing, and the choice between exclusion and credit | `us-foreign-earned-income-2555` |
+| The rest of Form 1040 and the 2026 tax brackets | `us-form-1040-individual-return` |
+| CFCs, GILTI or net CFC tested income, section 962 elections and Form 1118 | `us-gilti-fdii-beat`, `us-form-5471-cfc-information` |
+| FBAR and Form 8938 | `us-fbar-and-fatca-8938` |
+| Moving abroad, the wider checklist | `us-citizen-moving-abroad-tax` |
+| Nonresident aliens | `us-form-1040-nr-nonresident-return` |
+| Amending a return for a carryback | `us-amended-return-form-1040-including-capital` |
+| Corporations, estates and trusts | not covered; see "When to refuse or refer" |
 
 ## Ask the client first
 
-- Which countries taxed you, on what income, and in which currency? Get the foreign return or assessment, payslips, or the Form 1099-DIV / 1099-INT / Schedule K-1 / K-3 that shows the tax.
-- Was the tax **legally owed**, or could part of it be refunded (for example, the treaty rate is lower than the rate withheld)?
-- Is any foreign tax still under dispute with the foreign authority, or has any been refunded or changed since an earlier US return?
-- Have you ever **deducted** foreign taxes on Schedule A instead of crediting them, and for which years?
-- Do you have a foreign tax credit carryover from earlier years? Bring last year's Schedule B (Form 1116).
-- Have you ever checked the "Accrued" box in Part II of Form 1116?
-- Are you claiming, or have you ever claimed or revoked, the foreign earned income exclusion (Form 2555)?
-- Did you hold the foreign shares for long enough around each dividend date? (See the holding-period rule below.)
-- Are you a US shareholder of a controlled foreign corporation (CFC), a partner in a partnership with foreign activity, or someone who has made a §962 election?
-- Did any income come from Iran, North Korea, Sudan, Syria, or another country on the §901(j) list?
-- Are you subject to alternative minimum tax (AMT)?
+1. Which countries taxed you, on what income, and in which currency? Bring the foreign return or assessment, payslips, or the Form 1099-DIV, 1099-INT, Schedule K-1 or K-3 that shows the tax.
+2. Was the tax **legally owed**, or could part of it be refunded (for example, the treaty rate is lower than the rate withheld)?
+3. Is any foreign tax still under dispute, or has any been refunded or changed since an earlier US return?
+4. Have you ever **deducted** foreign taxes on Schedule A instead of crediting them, and for which years?
+5. Do you have a foreign tax credit carryover from earlier years? Bring the 2025 Schedule B (Form 1116).
+6. Have you ever checked the "Accrued" box in Part II of Form 1116?
+7. Are you claiming, or have you ever claimed or revoked, the foreign earned income exclusion (Form 2555)?
+8. For foreign dividends: did you hold the shares long enough around each ex-dividend date?
+9. Are you a US shareholder of a controlled foreign corporation, a partner in a partnership with foreign activity, or someone who has made a section 962 election?
+10. Did any income come from a country on the section 901(j) list?
+11. Are you subject to the alternative minimum tax?
+12. Do you rely on a tax treaty to treat any income as foreign source or to claim a credit the Code does not allow?
 
 ## The method, step by step
 
-1. **Confirm the tax can be credited.** It must be a foreign income tax (or a tax in place of one) that you legally owe and actually paid or accrued. Taxes you could get refunded, taxes offset by a subsidy, and interest or penalties do not count ([Form 1116 instructions](https://www.irs.gov/instructions/i1116), "Foreign Taxes Not Eligible for a Credit"). See the creditability section below for the 2022 regulations and the Notice relief.
-2. **Choose credit or deduction for the year.** The choice covers all qualifying foreign income taxes of the year ([Pub. 514](https://www.irs.gov/publications/p514)).
-3. **Test the no-Form-1116 election.** If every condition is met, claim the credit on Schedule 3 (Form 1040), line 1, and stop.
-4. **Source the income and sort it into categories.** Use one Form 1116 per category.
-5. **Allocate deductions and apply the qualified dividend and capital gain adjustment** in Part I.
-6. **Enter the foreign taxes in Part II** on the right basis (paid or accrued), converted to dollars at the right exchange rate. Then make the line 12 reductions, such as tax on income excluded on Form 2555.
-7. **Work out the limit in Part III.** The credit on line 24 is the smaller of the foreign tax available (line 14) and the limit on line 23. Line 23 is the US tax multiplied by the foreign share of taxable income (line 21), plus any §960(c) increase (line 22).
-8. **Summarise in Part IV.** This is required even when you file only one Form 1116. The credit goes to Schedule 3 (Form 1040), line 1. Attach Schedule B if any carryover is used or created.
-9. **Repeat for AMT** if Form 6251 applies.
-10. **File, and record later changes.** Report foreign refunds and adjustments on Schedule C (Form 1116) and, where US tax changes, on an amended return.
+### Rates, bands and thresholds
 
-## Step 2: credit or deduction ([Pub. 514](https://www.irs.gov/publications/p514))
+| Item | Amount | Source |
+| --- | --- | --- |
+| No-Form-1116 election: maximum creditable foreign tax, other than joint returns | USD 300 | [26 U.S.C. 904(j)(2)(B)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapN-partIII-subpartA-sec904.htm) |
+| No-Form-1116 election: maximum creditable foreign tax, joint return | USD 600 | [26 U.S.C. 904(j)(2)(B)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapN-partIII-subpartA-sec904.htm) |
+| Carryback of excess credit | 1 year | [26 U.S.C. 904(c)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapN-partIII-subpartA-sec904.htm) |
+| Carryforward of excess credit | 10 years | [26 U.S.C. 904(c)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapN-partIII-subpartA-sec904.htm) |
+| Time to switch from deduction to credit (from the unextended due date of the year the tax was paid or accrued) | 10 years | [IRS Pub. 514 (2025), Making or Changing Your Choice](https://www.irs.gov/pub/irs-pdf/p514.pdf) |
+| Time to switch from credit to deduction | 3 years from filing or 2 years from paying, whichever is later | [IRS Pub. 514 (2025), Making or Changing Your Choice](https://www.irs.gov/pub/irs-pdf/p514.pdf) |
+| Dividend holding period for the credit | 16 days within the 31-day period starting 15 days before the ex-dividend date | [IRS Pub. 514 (2025), Holding period](https://www.irs.gov/pub/irs-pdf/p514.pdf) |
+| Accrued tax must be paid within | 24 months after the year it relates to | [Instructions for Form 1116 (2025)](https://www.irs.gov/pub/irs-pdf/i1116.pdf) |
+| Qualified dividend and capital gain adjustment exception: foreign gains plus dividends must be less than | USD 20,000 | [Instructions for Form 1116 (2025), Qualified Dividends and Capital Gains](https://www.irs.gov/pub/irs-pdf/i1116.pdf) |
+| Adjustment exception threshold, 2025 returns: single, head of household, married filing separately | USD 197,300 | [Instructions for Form 1116 (2025)](https://www.irs.gov/pub/irs-pdf/i1116.pdf) |
+| Adjustment exception threshold, 2025 returns: married filing jointly, qualifying surviving spouse | USD 394,600 | [Instructions for Form 1116 (2025)](https://www.irs.gov/pub/irs-pdf/i1116.pdf) |
+| Interest expense: may be allocated all to US source if gross foreign-source income (including excluded income) is not more than | USD 5,000 | [Instructions for Form 1116 (2025), lines 4a and 4b](https://www.irs.gov/pub/irs-pdf/i1116.pdf) |
+| Sourcing exception: gain on nondepreciable personal property sold with a tax home abroad is foreign source if foreign tax on it is at least | 10% of the gain | [Instructions for Form 1116 (2025)](https://www.irs.gov/pub/irs-pdf/i1116.pdf) |
+| Senior deduction added back on line 18 (per person aged 65 or over, 2025 to 2028) | USD 6,000 | [Public Law 119-21, section 70103](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
+| Penalty for not notifying a foreign tax redetermination, per month or part month | 5% of the tax due, up to 25% | [IRS Pub. 514 (2025)](https://www.irs.gov/pub/irs-pdf/p514.pdf) |
+| Section 250 deduction for net CFC tested income, tax years beginning after 31 December 2025 | 40% | [Public Law 119-21, section 70321](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
+| Section 960(d) deemed-paid credit share, tax years beginning after 31 December 2025 | 90% | [Public Law 119-21, section 70312(a)](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
+| Credit disallowed for foreign tax on a section 959(a) distribution of previously taxed net CFC tested income (after 28 June 2025) | 10% | [Public Law 119-21, section 70312(b)](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
 
-- The credit reduces US tax dollar for dollar. You can take it and still claim the standard deduction. Only the credit can be carried back or forward. The IRS says the credit is better in most cases, but tells you to work out both.
-- In a given year you must either credit **all** qualifying foreign income taxes or deduct **all** of them. You cannot carry a credit into a year in which you deducted.
-- **Time to change the choice:**
-  - You can switch **to the credit** within 10 years from the regular due date (without extensions) of the return for the year the taxes were paid or accrued.
-  - You can switch **to the deduction** within 3 years from filing, or 2 years from paying the tax, whichever is later ([Pub. 514](https://www.irs.gov/publications/p514), "Making or Changing Your Choice").
-  - For 2026 foreign taxes, the credit window runs 10 years from 15 April 2027.
-- **Refund claims:** a refund claim caused by foreign tax you paid or accrued has a 10-year limitation period. It runs from the date the return was due for the year the taxes were actually paid or accrued ([26 U.S.C. §6511(d)(3)(A)](https://www.law.cornell.edu/uscode/text/26/6511)).
+None of these is indexed except the adjustment exception threshold, which follows the brackets; the 2026 thresholds will be in the 2026 instructions (see "Not yet confirmed"). The maximum foreign earned income exclusion for 2026 is owned by `us-foreign-earned-income-2555`.
 
-## Step 3: the no-Form-1116 election ([§904(j)](https://www.law.cornell.edu/uscode/text/26/904); [Form 1116 instructions](https://www.irs.gov/instructions/i1116))
+### Step 1. Confirm the tax can be credited
 
-You may claim the credit without Form 1116 only if **all** of these are true for the year:
+It must be a foreign income tax (or a tax in place of one) that the person legally owes and actually paid or accrued. Taxes that could be refunded (for example withholding above the treaty rate, whether or not the refund is claimed), taxes offset by a subsidy, and interest or penalties do not count. Source: [Instructions for Form 1116 (2025), Foreign Taxes Not Eligible for a Credit](https://www.irs.gov/pub/irs-pdf/i1116.pdf).
 
-1. **All** your foreign-source gross income is passive category income. For this test, high-taxed income and export financing interest still count as passive.
-2. **All** that income, and the foreign tax on it, was reported to you on a qualified payee statement, such as:
-   - Form 1099-DIV or 1099-INT
-   - Schedule K-1 (Form 1041)
-   - Schedule K-3 (Form 1065 or 1120-S)
-   - a similar substitute statement
-3. Total creditable foreign taxes are **not more than $300**, or **not more than $600** on a married-filing-jointly return. The tax is counted only if it appears on a payee statement.
-4. You are an individual. Estates and trusts cannot make this election.
-5. You elect it by entering the smaller of total foreign tax or regular tax on Schedule 3 (Form 1040), line 1.
+**The 2022 regulations and the Notice relief** ([Notice 2023-55](https://www.irs.gov/pub/irs-drop/n-23-55.pdf); [Notice 2023-80](https://www.irs.gov/pub/irs-drop/n-23-80.pdf)):
 
-**What the election costs:**
+- T.D. 9959 (published 4 January 2022, with correcting amendments on 27 July 2022) rewrote Reg. 1.901-2 and 1.903-1 on what counts as a creditable foreign income tax, adding a net gain requirement and attribution requirements.
+- Notice 2023-55 lets taxpayers decide creditability under the pre-2022 rules instead (former Reg. 1.901-2(a) and (b), as revised on 1 April 2021 and modified by the Notice), and apply 1.903-1 without the jurisdiction-to-tax and source-based attribution requirements.
+- Notice 2023-80 extended the relief to tax years ending before a notice or other guidance withdrawing or modifying it is issued. The 2025 Form 1116 instructions describe the relief as extended "until further notice".
+- Conditions: apply it to **all** foreign taxes paid in the relief year, including taxes of others the person can claim (such as a CFC's taxes for a US shareholder). It cannot be used to credit a tax for which a deduction is allowed in that or any other year.
+- **Digital services taxes stay non-creditable** even under the relief: Notice 2023-55 states that a gross-basis DST does not meet the net income requirement and is not a tax in lieu of an income tax.
+- **Gross withholding on services or royalties** by a country that sources income by where the payer is: under the relief, test it as an in-lieu-of tax under 1.903-1 and document the analysis. Where unclear and material, refer.
+- **Before filing a 2026 return,** check IRS.gov/Form1116 and the Internal Revenue Bulletin for any notice that withdraws or modifies Notice 2023-80, and apply its effective date.
 
-- The §904 limitation does not apply for the year.
-- **No carryover** is possible to or from an election year. Foreign taxes of that year cannot be carried anywhere. Carryovers from other years cannot be used in it, and their carry period is not extended.
-- For AMT, the credit equals the regular credit, and **no AMT carryback or carryforward** is allowed to or from that year ([Form 6251 instructions](https://www.irs.gov/instructions/i6251)).
-- You still apply the normal creditability rules, including the holding period, and the line 12 reductions.
+**Holding period** ([IRS Pub. 514 (2025)](https://www.irs.gov/pub/irs-pdf/p514.pdf)):
 
-**Traps:**
+- Tax withheld on a **dividend** is not creditable unless the shares were held at least 16 days within the 31-day period that begins 15 days before the ex-dividend date. A longer period applies to some preferred-stock dividends.
+- A similar 16-day rule applies to other income or gain from property.
+- Tax is also not creditable to the extent the person must make related payments on substantially similar or related positions.
+- Tax that fails these tests may be **deducted** even in a year the credit is taken.
 
-- Any foreign-source wages, self-employment income or business income that stays in gross income blocks the election. This is true even if no foreign tax was paid on it.
-- This includes wages above the FEIE limit.
-- A client with carryovers may do better filing Form 1116 even when the election is available.
+**Treaty-based credit.** A person relying on a treaty to credit a tax the Code does not allow, or to re-source income, discloses it on Form 8833. Source: [Instructions for Form 1116 (2025), category f](https://www.irs.gov/pub/irs-pdf/i1116.pdf).
 
-## Step 4: sourcing and the separate categories ([Form 1116 instructions](https://www.irs.gov/instructions/i1116); [§904(d)](https://www.law.cornell.edu/uscode/text/26/904))
+**Contested tax.** A contested foreign income tax cannot be credited until the contest is resolved, unless the person elects a provisional credit, which needs Form 7204 and then Schedule C (Form 1116) for each later year until it is resolved. Source: [IRS Pub. 514 (2025)](https://www.irs.gov/pub/irs-pdf/p514.pdf).
 
-**Sourcing basics** (Form 1116 instructions, "Income From Sources Outside the United States"):
+### Step 2. Credit or deduction for the year
 
-- Pay for services performed abroad is foreign-source. An employee's pay (other than fringe benefits) for work both in and outside the US is split on a time basis.
-- Dividends from a corporation incorporated abroad and interest from a payer located abroad are foreign-source.
-- Gain on selling personal property by a US resident is generally not foreign-source. One exception applies to nondepreciable personal property sold while you have a tax home abroad: the gain is foreign-source if you paid foreign tax of at least 10% of the gain.
+- The credit reduces US tax dollar for dollar, works with the standard deduction, and is the only one that carries back or forward. The IRS says the credit is better in most cases but tells you to work out both.
+- In one year the person must credit **all** qualifying foreign income taxes or deduct **all** of them. A credit cannot be carried into a year in which foreign taxes were deducted, and the carryover is reduced by the amount that year could have absorbed.
+- Change of choice: to the credit within 10 years from the unextended due date for the year the taxes were paid or accrued (for 2026 taxes, from 15 April 2027); to the deduction within 3 years from filing or 2 years from paying, whichever is later. Either period can be extended by agreement.
+- A refund claim caused by foreign tax paid or accrued has a 10-year limitation period from the due date of the return for the year the taxes were actually paid or accrued.
 
-Use a separate Form 1116 for each category. On the 2025 form the boxes are:
+Source: [IRS Pub. 514 (2025), Choosing To Take Credit or Deduction](https://www.irs.gov/pub/irs-pdf/p514.pdf).
+
+### Step 3. Test the no-Form-1116 election
+
+The credit may be claimed without Form 1116 only if **all** of these are true for the year ([26 U.S.C. 904(j)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapN-partIII-subpartA-sec904.htm); [Instructions for Form 1116 (2025), Election To Claim the Foreign Tax Credit Without Filing Form 1116](https://www.irs.gov/pub/irs-pdf/i1116.pdf)):
+
+1. **All** foreign-source gross income is passive category income (for this test, high-taxed income and export financing interest still count as passive).
+2. All that income, and the foreign tax on it, was reported on a qualified payee statement: Form 1099-DIV or 1099-INT, Schedule K-1 (Form 1041), Schedule K-3 (Form 1065 or 1120-S), or a similar substitute statement.
+3. Total creditable foreign taxes are **not more than USD 300**, or **not more than USD 600** on a joint return.
+4. The person is an individual (estates and trusts cannot elect).
+5. Elect by entering the smaller of total foreign tax or regular tax on Schedule 3 (Form 1040), line 1.
+
+**What it costs:** the section 904 limit does not apply; **no carryover** to or from the election year (that year's taxes cannot be carried anywhere, and carryovers from other years cannot be used in it; their periods are not extended); for AMT the credit equals the regular credit and no AMT carryback or carryforward is allowed to or from that year. The normal creditability rules, the holding period and the line 12 reductions still apply.
+
+**Traps:** any foreign-source wages, self-employment or business income in gross income blocks the election, even with no foreign tax on it, including wages above the exclusion limit. A client with carryovers or with more creditable tax than the election allows may do better filing Form 1116 (Case 2).
+
+### Step 4. Source the income and sort it into categories
+
+**Sourcing** ([Instructions for Form 1116 (2025), Income From Sources Outside the United States](https://www.irs.gov/pub/irs-pdf/i1116.pdf)):
+
+- Pay for services performed abroad is foreign source. An employee's pay (other than fringe benefits) for work both in and outside the US is split on a time basis.
+- Dividends from a corporation incorporated abroad and interest from a payer located abroad are foreign source.
+- Gain on selling personal property by a US resident is generally US source. Exception: nondepreciable personal property sold while the person has a tax home abroad is foreign source if foreign tax of at least 10% of the gain was paid.
+
+**One Form 1116 per category.** On the 2025 form the boxes are:
 
 | Box | Category | Typical individual items |
 | --- | --- | --- |
-| a | Section 951A category income | A US shareholder's CFC inclusion under §951A. From 2026 the statute calls this inclusion "net CFC tested income" (previously GILTI). No carryback or carryover. |
-| b | Foreign branch category income | Business profits of a qualified business unit (QBU) in a foreign country |
-| c | Passive category income | Dividends, interest, royalties, rents, annuities, investment gains. This excludes high-taxed income and export financing interest. |
+| a | Section 951A category income | A US shareholder's CFC inclusion under section 951A; from 2026 the statute calls it net CFC tested income (previously GILTI). No carryback or carryover |
+| b | Foreign branch category income | Business profits of a qualified business unit in a foreign country |
+| c | Passive category income | Dividends, interest, royalties, rents, annuities, investment gains, excluding high-taxed income and export financing interest |
 | d | General category income | Wages, self-employment and active business income, and anything not in another category |
-| e | Section 901(j) income | Income from a sanctioned country. Use one Form 1116 per country. |
-| f | Certain income re-sourced by treaty | US-source income treated as foreign-source under a treaty. Use one Form 1116 per treaty country. |
-| g | Lump-sum distributions | Foreign tax on a qualifying lump-sum distribution |
+| e | Section 901(j) income | Income from a sanctioned country; one Form 1116 per country |
+| f | Certain income re-sourced by treaty | US-source income treated as foreign under a treaty; one Form 1116 per treaty country; Form 8833 may be required |
+| g | Lump-sum distributions | Foreign tax on a qualifying foreign-source lump-sum pension distribution |
 
-- **High-taxed income moves out of passive.** Passive income is "high-taxed" if the foreign tax on it, after expenses, exceeds the highest US tax that can be imposed on it. This is a classification rule, not an election.
-  - Report the income as a negative amount on the passive Form 1116 and a positive amount on the other category's form.
-  - Move the related tax on line 13 in the same way.
-- **Look-through:** dividends, interest, rents or royalties from a CFC in which you own 10% or more of the vote or value may not be passive. Refer out.
-- **§901(j) countries:** Pub. 514 lists Iran, Libya, North Korea, Sudan and Syria for 2025. A waiver has applied to Libya since 10 December 2004.
-  - Taxes paid **to** a sanctioned country are not creditable. Tax paid to a non-sanctioned residence country on that income can be.
-  - The 2026 list will be in the 2026 Pub. 514. Check it, and do not assume the 2025 list carries over.
+Source: [Form 1116 (2025)](https://www.irs.gov/pub/irs-pdf/f1116.pdf); [26 U.S.C. 904(d)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapN-partIII-subpartA-sec904.htm).
 
-## Creditability: the 2022 regulations and the Notice relief ([Notice 2023-55](https://www.irs.gov/pub/irs-drop/n-23-55.pdf); [Notice 2023-80](https://www.irs.gov/pub/irs-drop/n-23-80.pdf))
+- **High-taxed income moves out of passive.** Passive income is high-taxed if the foreign tax on it, after expenses, exceeds the highest US tax that can be imposed on it (section 904(d)(2)(F)). This is a classification rule, not an election. Report the income as a negative amount on the passive Form 1116 and a positive amount on the general category form, and move the related tax on line 13 the same way. (The old version of this skill called this the section 904(j) "high-tax kick-out"; section 904(j) is the de minimis election.)
+- **Look-through:** dividends, interest, rents or royalties from a CFC in which the person owns 10% or more of the vote or value may not be passive. Refer.
+- **Section 901(j) countries.** Pub. 514 for 2025 lists Iran, Libya (a waiver has applied since 10 December 2004), North Korea, Sudan and Syria. Tax paid **to** a sanctioned country is not creditable; tax paid to a non-sanctioned residence country on that income can be (keep completing Form 1116 past line 17). The 2026 list will be in the 2026 Pub. 514; do not assume the 2025 list carries over. Source: [IRS Pub. 514 (2025)](https://www.irs.gov/pub/irs-pdf/p514.pdf).
 
-- **The 2022 regulations.** T.D. 9959 (published 4 January 2022, with correcting amendments on 27 July 2022) rewrote the rules in Reg. §1.901-2 and §1.903-1 on what counts as a creditable "foreign income tax". They added a net gain requirement and attribution requirements.
-- **The relief.** Notice 2023-55 lets taxpayers decide creditability under the pre-2022 rules instead: former Reg. §1.901-2(a) and (b), as revised on 1 April 2021 and modified by the Notice. It also lets them apply §1.903-1 without the jurisdiction-to-tax and source-based attribution requirements.
-  - Notice 2023-80 extended the relief to tax years ending before a notice or other guidance withdrawing or modifying it is issued.
-  - The 2025 Form 1116 instructions still describe the relief as extended "until further notice".
-- **Conditions of the relief:**
-  - Apply it to **all** foreign taxes you paid in the relief year. Also apply it to all taxes paid by others that you could claim, such as taxes of a CFC in which you are a US shareholder.
-  - You cannot use it to credit any tax for which a deduction is allowed in that year or any other year.
-- **Digital services taxes stay non-creditable even under the relief.** Notice 2023-55 states that a gross-basis DST does not meet the net income requirement and does not qualify as a tax in lieu of an income tax. Do not claim a DST on Form 1116.
-- **Gross withholding taxes on services or royalties** from a country that sources income by where the payer is: under the relief, test them as in-lieu-of taxes under §1.903-1. Document the analysis in the workpapers. Where the answer is not clear and the amount matters, refer.
-- **Treaty-based credit.** If you rely on a treaty to credit a tax the Code does not allow, disclose it on Form 8833. Failing to disclose can bring a $1,000 penalty ([Pub. 514](https://www.irs.gov/publications/p514), "Tax Treaties").
-- **Before filing a 2026 return, check** IRS.gov/Form1116 and the Internal Revenue Bulletin for any notice that withdraws or modifies Notice 2023-80. If one has been issued, apply its effective date.
+### Step 5. Part I: income, deductions and the adjustments
 
-## Holding period for dividends and other income ([Form 1116 instructions](https://www.irs.gov/instructions/i1116))
+- Put deductions **definitely related** to the foreign income (for example Schedule C expenses of the foreign work) on line 2.
+- Apportion the standard deduction or other itemized deductions on lines 3a to 3g by gross income (line 3f is line 3d over line 3e, to at least four decimal places). Lines 3d and 3e **include** foreign earned income excluded on Form 2555, while line 1a includes only wages not excluded.
+- Home mortgage interest goes on line 4a, other interest on line 4b, losses on line 5. If gross foreign-source income (including excluded income) is not more than USD 5,000, all interest expense may be allocated to US source.
+- Partnerships and S corporations report their foreign allocations on Schedule K-3.
+- **Senior deduction.** The section 151(d)(5)(C) deduction of USD 6,000 per person aged 65 or over (Schedule 1-A), for 2025 through 2028, is added back to taxable income on line 18, as the line 3b and line 18 instructions describe.
+- **Qualified dividends and capital gains.** Foreign-source qualified dividends and capital gains taxed at preferential rates must usually be scaled down (Worksheet for Line 18 and Worksheets A and B). Skip this under the **adjustment exception** only if both are true: line 5 of the Qualified Dividends and Capital Gain Tax Worksheet is not more than the year's threshold (for 2025, USD 197,300 single, head of household or married filing separately; USD 394,600 joint or qualifying surviving spouse), and foreign-source net capital gain plus qualified dividends is **less than USD 20,000**.
+- **Line 16 adjustments**, in the order the instructions set out: the section 461(l) loss, foreign losses, US losses, and recapture of overall foreign loss, separate limitation loss and overall domestic loss accounts. If line 15 is zero or a loss there is generally no credit for that category, but line 16 is still completed.
+- **New from 2026 for section 951A category income:** only the section 250 deduction for net CFC tested income (and section 164(a)(3) taxes on it) and deductions directly allocable to that income are allocated to it; no interest expense or research costs are. What would otherwise have gone to it is allocated to US source income. Source: [Public Law 119-21, section 70311, new section 904(b)(5)](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm), tax years beginning after 31 December 2025.
 
-- Foreign tax withheld on a **dividend** is not creditable unless you held the stock for at least 16 days within the 31-day period that begins 15 days before the ex-dividend date. A longer period applies to some preferred-stock dividends.
-- A similar 16-day rule applies to other income or gain from property.
-- Tax is also not creditable to the extent you must make related payments on substantially similar or related positions.
-- Tax that fails these tests may be **deducted** even in a year you take the credit.
+Source: [Instructions for Form 1116 (2025), Part I](https://www.irs.gov/pub/irs-pdf/i1116.pdf).
 
-## Step 5: Part I and the limitation formula ([Form 1116 instructions](https://www.irs.gov/instructions/i1116))
+### Step 6. Part II: the foreign taxes, cash or accrual, currency
 
-**The formula:** the limit for each category is US tax × (foreign-source taxable income in the category ÷ total taxable income) ([§904(a)](https://www.law.cornell.edu/uscode/text/26/904)). On the form:
+**Cash basis (the default for most individuals):** credit in the year the tax is **paid**, converted at the rate on the date paid (withheld tax: the date withheld; foreign estimated payments: each payment date). Do **not** use the yearly average rate on a cash basis.
 
-- Line 17 is foreign-source taxable income, after the line 16 adjustments.
-- Line 18 is worldwide taxable income.
-- Line 19 is line 17 ÷ line 18. If line 17 is more than line 18, enter 1.
-- Line 20 is regular tax liability. For 2025 that is Form 1040, line 16, plus Schedule 2, Part I, line 1z, less any Form 4972 tax. It does **not** include the §1411 net investment income tax, and the Form 1116 credit does not reduce that tax.
-- Line 21 is line 20 × line 19.
+**Electing accrual:** a cash-basis individual can credit taxes in the year they accrue by checking the "Accrued" box in Part II on a **timely filed original return**, never on an amended return. The choice binds all later years and covers all foreign taxes. Foreign taxes generally accrue on the last day of the foreign tax year.
 
-**Deductions:**
-
-- Put deductions **definitely related** to the foreign income (for example, Schedule C expenses of the foreign work) on line 2.
-- Apportion the standard deduction or other itemized deductions on lines 3a to 3g.
-- Home mortgage interest goes on line 4a, other interest on line 4b, and losses on line 5.
-- Partnerships and S corporations report their own foreign allocations on Schedule K-3.
-
-**Senior deduction:** the §151(d)(5)(C) deduction of $6,000 for each person aged 65 or over, reported on Schedule 1-A, line 37, applies for 2025 through 2028. For the limitation, it must be **added back** to taxable income on line 18, as the line 3b and line 18 instructions describe.
-
-**Qualified dividends and capital gains:** foreign-source qualified dividends and capital gains taxed at preferential rates must usually be scaled down (the Worksheet for Line 18 and Worksheets A and B). You can skip this under the **adjustment exception** only if both of these are true:
-
-- line 5 of the Qualified Dividends and Capital Gain Tax Worksheet is not more than the threshold for the year (2025 thresholds are below)
-- foreign-source net capital gain plus foreign-source qualified dividends is **less than $20,000**
-
-The 2026 thresholds will be in the 2026 instructions.
-
-**Line 16 adjustments** are made in the order the instructions set out: the §461(l) loss, foreign losses, US losses, and recapture of overall foreign loss, separate limitation loss and overall domestic loss accounts. If line 15 is zero or a loss there is generally no credit for that category, but you still complete line 16.
-
-**New from 2026 for Section 951A category income (net CFC tested income):** only the §250 deduction and deductions directly allocable to this income are allocated to it. No interest expense or research costs are allocated to it ([§904(b)(5)](https://www.law.cornell.edu/uscode/text/26/904), for tax years beginning after 31 December 2025).
-
-## Step 6: Part II, cash or accrual, and currency ([Form 1116 instructions](https://www.irs.gov/instructions/i1116); [Pub. 514](https://www.irs.gov/publications/p514))
-
-**Cash basis (the default for most individuals):**
-
-- You claim the credit in the year you **pay** the tax.
-- Convert at the exchange rate **on the date paid**. For withheld tax, use the rate on the date it was withheld. For foreign estimated payments, use the date of each payment.
-- Do **not** use the yearly average rate on a cash basis.
-
-**Electing accrual:**
-
-- A cash-basis individual can choose to credit taxes in the year they accrue by checking the "Accrued" box in Part II on a **timely filed original return**. You cannot make this choice on an amended return.
-- The choice binds all later years and covers all foreign taxes.
-- Foreign taxes generally accrue on the last day of the foreign tax year.
-
-**Accrual-basis conversion:**
-
-- Accrued taxes use the **average exchange rate** for the tax year they relate to.
-- That rule does not apply if the tax is paid before that year starts, more than 24 months after it ends, or in an inflationary currency. In those cases use the rate on the date paid.
-- You can elect to use the date-paid rate for accrued taxes in a nonfunctional currency. The election is made by the due date, including extensions, and binds later years unless the IRS consents to revoke it.
+**Accrual conversion:** accrued taxes use the **average exchange rate** for the tax year they relate to, except when paid before that year starts, more than 24 months after it ends, or in an inflationary currency; then use the date-paid rate. The person can elect the date-paid rate for accrued taxes in a nonfunctional currency, by the due date including extensions, binding later years unless the IRS consents to revoke.
 
 **Other Part II rules:**
 
-- Tax already shown in dollars on a Form 1099 needs no conversion. Enter "1099 taxes".
-- **Accrued but unpaid tax** must be paid within 24 months after the year it relates to. If it is not, reduce the credit until it is paid.
-- **Line 12 reductions** include tax allocable to income excluded on Form 2555 (see below), and tax connected with a foreign tax credit splitting event.
+- Tax already shown in dollars on a Form 1099 needs no conversion; enter "1099 taxes".
+- **Accrued but unpaid tax** not paid within 24 months after the year it relates to reduces the credit until paid.
 
-## Steps 7 and 8: Part III, Part IV and carryovers ([§904(c)](https://www.law.cornell.edu/uscode/text/26/904); [Form 1116 instructions](https://www.irs.gov/instructions/i1116); [Schedule B instructions](https://www.irs.gov/instructions/i1116sb))
+**Line 12 reductions** include:
 
-- **Line 24** is the smaller of the foreign tax available (line 14) and the limit (line 23).
-- **Part IV:** lines 25 to 32 must be completed even when you file only one Form 1116. Line 33 is the smaller of line 20 or line 32. The credit then goes to Schedule 3 (Form 1040), line 1.
-- **Excess foreign tax** in a category is carried **back 1 year**, then **forward 10 years**, in that order, and stays in the same category.
-  - The carryback is claimed on Form 1040-X with a revised Form 1116 for the earlier year.
-  - The period is not extended because a year could not absorb the carryover.
-  - Current-year taxes are used first, then the oldest carryover.
-- **No carryback or carryover** is allowed for Section 951A category income. Leave line 10 blank on that form.
-- You cannot carry a credit into a year in which you **deducted** foreign taxes. You also reduce the carryover by the amount that year could have used.
-- **Schedule B (Form 1116)** reconciles the carryover from year to year. Attach one for each category whenever line 10 shows a carryover from a prior year or the current year creates one.
+- **Tax on income excluded on Form 2555.** Multiply the foreign tax on foreign earned income by: (excluded foreign earned income and housing amounts, minus otherwise deductible expenses allocable to them, not counting the housing deduction) / (total foreign earned income, minus deductible expenses allocable to it, including the housing deduction). If the foreign tax also covers other income and cannot be separated, the denominator is all income subject to that foreign tax, minus its expenses. If all the foreign earned income is excluded, none of its tax is creditable. Source: [Instructions for Form 1116 (2025), line 12](https://www.irs.gov/pub/irs-pdf/i1116.pdf); [26 U.S.C. 911(d)(6)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapN-partIII-subpartB-sec911.htm).
+- Tax on Puerto Rico income exempt from US tax, tax connected with a foreign tax credit splitting event, and the other items the line 12 instructions list.
 
-## Step 9: AMT foreign tax credit ([Form 6251 instructions](https://www.irs.gov/instructions/i6251); [§59(a)](https://www.law.cornell.edu/uscode/text/26/59))
+Source: [Instructions for Form 1116 (2025), Part II](https://www.irs.gov/pub/irs-pdf/i1116.pdf); [IRS Pub. 514 (2025), Translating foreign currency](https://www.irs.gov/pub/irs-pdf/p514.pdf).
 
-- Work out the AMT foreign tax credit on Form 6251, line 8. You need it when line 10 of Form 6251 (regular tax after the regular credit) is less than line 7.
-- Prepare a separate AMT Form 1116 for each category. Write "AMT" and the category in the top margin.
-  - Use AMT income and deductions.
-  - Test for high-taxed income using the **AMT rate**, not the regular rate.
-- The **simplified limitation election** uses regular-tax foreign-source income in the AMT limitation. It can be made only for the first year after 1997 in which you claim an AMT credit. It binds later years unless the IRS consents to revoke it.
-- Unused AMT credit is carried back and forward under §904(c), tracked separately from the regular carryover. There is none in a year the no-Form-1116 election applies.
+### Step 7. Part III: the limit
 
-## FEIE and the credit ([§911](https://www.law.cornell.edu/uscode/text/26/911); [Rev. Proc. 2025-32](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf); [Form 1116 instructions](https://www.irs.gov/instructions/i1116))
+1. **Line 17:** foreign-source taxable income in the category, after the line 16 adjustments. **Line 18:** worldwide taxable income (with the senior deduction added back). **Line 19:** line 17 divided by line 18; enter 1 if line 17 is more than line 18.
+2. **Line 20:** regular tax liability. On the 2025 form that is Form 1040, line 16, plus Schedule 2, Part I, line 1z, less any Form 4972 tax. It does **not** include the section 1411 net investment income tax, and the Form 1116 credit does not reduce that tax.
+3. **Line 21:** line 20 x line 19. **Line 22:** any section 960(c) increase. **Line 23:** the limit.
+4. **Line 24**, the credit for the category, is the smaller of the foreign tax available (line 14) and the limit (line 23).
 
-- The 2026 FEIE limit is **$132,900** per qualifying person.
-- **No double benefit:**
-  - No credit is allowed for foreign tax allocable to excluded income (§911(d)(6)).
-  - On line 12, reduce foreign tax on foreign earned income by the fraction: (excluded earned income and housing amounts, minus deductible expenses allocable to them) ÷ (total foreign earned income, minus deductible expenses allocable to it, including the housing deduction).
-  - If the foreign tax also covers other income and cannot be separated, the denominator is all income subject to that foreign tax.
-- Income above the exclusion stays in gross income. It is general category income on Form 1116, and it blocks the no-Form-1116 election.
-- **Stacking:** if you exclude income, tax on the rest is figured at the rates that would apply without the exclusion (§911(f)).
-- **Revoking the FEIE:** the election continues until revoked. After revoking, you cannot elect again before the 6th tax year after the year of revocation without IRS consent (§911(e)).
-  - Weigh this before claiming the FEIE in a year you may later want the credit instead.
-- **Rule of thumb, which must be tested for each client:**
-  - Where there is no foreign income tax, only the FEIE helps.
-  - Where the foreign tax on earned income is higher than the US tax on it, the credit alone often removes US tax on that income and creates a carryover.
-  - In other cases, work out the credit alone, the FEIE alone, and the FEIE with the credit on the remainder, and document the choice.
+Source: [26 U.S.C. 904(a)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapN-partIII-subpartA-sec904.htm); [Instructions for Form 1116 (2025), Part III](https://www.irs.gov/pub/irs-pdf/i1116.pdf).
 
-## Section 951A category (NCTI, formerly GILTI) for individuals ([§951A](https://www.law.cornell.edu/uscode/text/26/951A); [§960](https://www.law.cornell.edu/uscode/text/26/960); [§250](https://www.law.cornell.edu/uscode/text/26/250))
+### Step 8. Part IV, carryovers and Schedule B
 
-- For tax years beginning after 31 December 2025, §951A requires a US shareholder of a CFC to include **net CFC tested income**, the renamed GILTI.
-- **Without a §962 election**, an individual gets no deemed-paid credit for the CFC's foreign taxes. The §960(d) deemed-paid credit and the §250 deduction apply to domestic corporations.
-- **With a §962 election**, you claim the credit on **Form 1118**, not Form 1116. For tax years beginning after 31 December 2025:
-  - the §250 deduction for the net CFC tested income amount is **40%**
-  - the §960(d) deemed-paid credit is **90%** of the inclusion percentage × tested foreign income taxes
-- **Previously taxed earnings:** §960(d)(4) disallows the credit for **10%** of foreign taxes on a distribution that is excluded under §959(a) because of an earlier §951A inclusion. The 2025 Form 1116 instructions say it applies to such amounts "after June 28, 2025"; check the exact scope for the client's facts.
-  - Withholding tax on such a distribution otherwise goes on Form 1116, whether or not you made a §962 election.
-- This skill only flags these items. See "When to refuse or refer".
+- **Part IV (lines 25 to 33)** must be completed even when only one Form 1116 is filed (new for 2025). Line 33 is the smaller of line 20 and line 32. The credit goes to Schedule 3 (Form 1040), line 1.
+- **Excess foreign tax** in a category is carried **back 1 year**, then **forward 10 years**, in that order, and stays in the same category. The carryback is claimed on Form 1040-X with a revised Form 1116 for the earlier year. The period is not extended because a year could not absorb it. Current-year taxes are used first, then the oldest carryover.
+- **No carryback or carryover** for section 951A category income; leave line 10 blank on that form.
+- No credit can be carried into a year in which foreign taxes were **deducted**; the carryover is also reduced by what that year could have used.
+- **Schedule B (Form 1116)** reconciles the carryover year to year. Attach one for each category whenever line 10 shows a carryover or the year creates one.
 
-## Boundaries and exceptions
+Source: [26 U.S.C. 904(c)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapN-partIII-subpartA-sec904.htm); [Instructions for Form 1116 (2025), line 10 and Part IV](https://www.irs.gov/pub/irs-pdf/i1116.pdf).
+
+### Step 9. The AMT foreign tax credit
+
+- Work out the AMT foreign tax credit (AMTFTC) on Form 6251, line 8, when line 10 of Form 6251 (regular tax after the regular credit) is less than line 7.
+- If the no-Form-1116 election was made, the AMTFTC equals the regular credit.
+- Otherwise prepare a separate AMT Form 1116 for each category, with "AMT" and the category in the top margin, using AMT income and deductions, and testing for high-taxed income at the **AMT rate**.
+- **Simplified limitation election:** use the regular-tax foreign-source income (line 17) on the AMT Form 1116. It must be made for the first tax year after 1997 for which an AMTFTC is claimed, or never; once made it binds later years unless the IRS consents to revoke.
+- Unused AMTFTC carries back and forward under section 904(c), tracked separately from the regular carryover; none in a year the no-Form-1116 election applies.
+- A person who also excludes income uses the Foreign Earned Income Tax Worksheet in the Form 6251 instructions.
+
+Source: [Instructions for Form 6251 (2025), line 8](https://www.irs.gov/pub/irs-pdf/i6251.pdf).
+
+### Step 10. When the person also excludes foreign earned income
+
+- The exclusion, housing amounts and the decision between exclusion and credit are in `us-foreign-earned-income-2555`.
+- No credit for foreign tax allocable to excluded income: reduce it on line 12 (Step 6).
+- Pay above the exclusion stays in gross income, is general category income, and blocks the no-Form-1116 election.
+- Tax on the income left is stacked: figured at the rates that would apply without the exclusion (section 911(f)), so line 20 is the stacked tax.
+- Claiming the credit or deduction on the excluded pay in a later year, instead of the exclusion, is treated as revoking the exclusion, which then cannot be elected again before the 6th tax year after without IRS consent. Claiming the credit only on tax on pay above the exclusion is allowed.
+
+### Step 11. Section 951A category (net CFC tested income) for individuals: flag only
+
+- For tax years beginning after 31 December 2025, a US shareholder of a CFC includes **net CFC tested income** (the renamed GILTI) under section 951A.
+- **Without a section 962 election** an individual gets no deemed-paid credit for the CFC's foreign taxes and no section 250 deduction; those apply to domestic corporations.
+- **With a section 962 election** the credit is claimed on Form 1118, not Form 1116. For tax years beginning after 31 December 2025 the section 250 deduction for net CFC tested income is **40%** (was 50%) and the section 960(d) deemed-paid credit is **90%** (was 80%) of the inclusion percentage times tested foreign income taxes.
+- **Previously taxed distributions:** no credit for **10%** of foreign taxes on an amount excluded under section 959(a) because of an earlier section 951A inclusion, for amounts after 28 June 2025. Withholding tax on such a distribution otherwise goes on Form 1116, with or without a section 962 election.
+- This skill only flags these items; refer the computation (R-FTC-2).
+
+Source: [Public Law 119-21, sections 70312 and 70321](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm).
+
+## Boundary and exception table
 
 | Situation | Rule | Source |
 | --- | --- | --- |
-| Tax exactly $300 (not a joint return), all passive, all on Forms 1099 | Election available ("not more than") | [Form 1116 instructions](https://www.irs.gov/instructions/i1116) |
-| Tax one dollar over the cap, or any non-passive foreign income | Election not available; file Form 1116 | [§904(j)](https://www.law.cornell.edu/uscode/text/26/904) |
-| Foreign qualified dividends plus net capital gain of exactly $20,000 | Adjustment exception fails (needs "less than") | [Form 1116 instructions](https://www.irs.gov/instructions/i1116) |
-| Tax withheld above the treaty rate | Only the treaty-rate amount is creditable, whether or not you claim the refund | [Form 1116 instructions](https://www.irs.gov/instructions/i1116) |
+| Tax exactly USD 300 (not a joint return), all passive, all on Forms 1099 | Election available ("not more than") | [26 U.S.C. 904(j)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapN-partIII-subpartA-sec904.htm) |
+| Tax one dollar over the cap, or any non-passive foreign income | Election not available; file Form 1116 | [26 U.S.C. 904(j)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapN-partIII-subpartA-sec904.htm) |
+| Foreign qualified dividends plus net capital gain of exactly USD 20,000 | Adjustment exception fails (needs "less than") | [Instructions for Form 1116 (2025)](https://www.irs.gov/pub/irs-pdf/i1116.pdf) |
+| Tax withheld above the treaty rate | Only the treaty-rate amount is creditable, whether or not the refund is claimed | [Instructions for Form 1116 (2025)](https://www.irs.gov/pub/irs-pdf/i1116.pdf) |
 | Digital services tax | Not creditable, even under the Notice relief | [Notice 2023-55](https://www.irs.gov/pub/irs-drop/n-23-55.pdf) |
-| Tax on FEIE-excluded wages | Not creditable; reduce on line 12 | [Form 1116 instructions](https://www.irs.gov/instructions/i1116) |
-| Section 951A category excess | No carryback or carryover | [Form 1116 instructions](https://www.irs.gov/instructions/i1116) |
-| Accrued tax unpaid 24 months after year end | Reduce credit until paid | [Form 1116 instructions](https://www.irs.gov/instructions/i1116) |
-| "Accrued" box first checked on an amended return | Not allowed | [Form 1116 instructions](https://www.irs.gov/instructions/i1116) |
-| Net investment income tax | Form 1116 credit does not reduce it (not regular tax liability) | [Form 1116 instructions](https://www.irs.gov/instructions/i1116) |
+| Tax on wages excluded on Form 2555 | Not creditable; reduce on line 12 | [Instructions for Form 1116 (2025)](https://www.irs.gov/pub/irs-pdf/i1116.pdf) |
+| Section 951A category excess | No carryback or carryover | [Instructions for Form 1116 (2025)](https://www.irs.gov/pub/irs-pdf/i1116.pdf) |
+| Accrued tax unpaid 24 months after year end | Reduce the credit until paid | [Instructions for Form 1116 (2025)](https://www.irs.gov/pub/irs-pdf/i1116.pdf) |
+| "Accrued" box first checked on an amended return | Not allowed | [Instructions for Form 1116 (2025)](https://www.irs.gov/pub/irs-pdf/i1116.pdf) |
+| Net investment income tax | The Form 1116 credit does not reduce it (not regular tax liability) | [Instructions for Form 1116 (2025)](https://www.irs.gov/pub/irs-pdf/i1116.pdf) |
+| Dividend shares held 15 days or fewer in the 31-day window | Not creditable; may be deducted | [IRS Pub. 514 (2025)](https://www.irs.gov/pub/irs-pdf/p514.pdf) |
+| Tax paid to a section 901(j) country | Not creditable; residence-country tax on the same income may be | [IRS Pub. 514 (2025)](https://www.irs.gov/pub/irs-pdf/p514.pdf) |
+| Foreign taxes deducted in a year | No carryover can be used in that year | [IRS Pub. 514 (2025)](https://www.irs.gov/pub/irs-pdf/p514.pdf) |
 
-## Worked cases ([Form 1116 instructions](https://www.irs.gov/instructions/i1116))
+### Defaults when a fact is missing
 
-All amounts are in dollars and are illustrations, not real clients.
+| Missing fact | Default, and flag it |
+| --- | --- |
+| Cash or accrual history | Cash basis, date-paid rates, until the earlier returns show the "Accrued" box |
+| Prior-year carryover | Zero; ask for the 2025 Schedule B |
+| Whether tax is refundable under a treaty | Credit only the treaty rate |
+| Holding period on fund dividends | Assume met for long-held funds; ask where shares were bought or sold near the ex-dividend date |
+| Category of a K-3 item | Follow the K-3; do not re-classify |
+| Whether the Notice 2023-80 relief is still in force | Check IRS.gov/Form1116 before filing; if not checked, say so |
+| Exchange rate for withheld tax | The rate on each withholding date |
+| Whether the client excludes income on Form 2555 | Ask; never credit tax on excluded pay |
 
-**Case 1: ordinary general-category limit (2026).** A single filer is on the cash basis, with no carryovers.
+### Red flags to raise with the client
 
-- Foreign-source general-category taxable income (line 17) is $60,000.
-- Worldwide taxable income (line 18) is $150,000.
-- Regular tax (line 20) is $27,000.
-- Foreign income tax withheld is $15,000, converted at the rates on the withholding dates.
-- Limit: $27,000 × 60,000 ÷ 150,000 = $10,800.
-- Credit: the smaller of $15,000 and $10,800, so $10,800.
-- The excess of $4,200 is carried back to 2025 first, on Form 1040-X with a revised 2025 Form 1116. Any remainder carries forward up to 2036 in the general category. Attach Schedule B.
+| Flag | Why it matters |
+| --- | --- |
+| Foreign tax far above US tax on the same income | Large carryover; check the exclusion is not also being claimed and plan its use |
+| Withholding at a non-treaty rate | Part is refundable abroad and not creditable |
+| A digital services tax or a gross-basis levy | Not creditable |
+| Foreign tax refund or reassessment since the last return | Schedule C and possibly an amended return; penalty for not notifying |
+| Foreign tax first claimed as a deduction in a past year | No carryover into that year; check the 10-year window to switch |
+| CFC shares or a section 962 election | Section 951A category and Form 1118: refer |
+| No-Form-1116 election used while a carryover exists | Carryover cannot be used that year and its clock keeps running |
+| Income from a sanctioned country | Separate Form 1116, often no credit |
 
-**Case 2: the no-Form-1116 boundary (2026).** A married couple filing jointly has only Form 1099-DIV income from foreign funds, with foreign tax of $600 shown on the forms. Every holding period is met.
+## Worked cases
 
-- The election is available, because the cap is "not more than $600".
-- Enter the smaller of $600 and regular tax on Schedule 3, line 1.
-- There is no carryover to or from 2026, and no AMT carryover for 2026.
-- Suppose one spouse also had foreign consulting fees, even with no foreign tax withheld. The election would then fail, because not all foreign-source income is passive. The couple would file separate Forms 1116 for passive and general income.
+The 2026 single and joint brackets used for line 20 are from Rev. Proc. 2025-32 and are owned by `us-form-1040-individual-return`. Taxpayers are invented.
 
-**Case 3: FEIE plus credit (2026).** A single filer abroad for the whole year has foreign wages of $180,000. There are no housing amounts and no deductible expenses. The foreign tax on the wages is $54,000, and the client excludes $132,900.
+**Case 1, the ordinary general category limit.** A single filer on the cash basis, no carryovers. Foreign-source general category taxable income (line 17) USD 60,000; worldwide taxable income (line 18) USD 150,000; regular tax (line 20) on USD 150,000 at the 2026 single rates is USD 28,598. Foreign income tax withheld USD 15,000, converted at the withholding-date rates.
 
-- Tax allocable to excluded income: $54,000 × 132,900 ÷ 180,000 = $39,870. Reduce this on line 12.
-- Tax still available for credit: $54,000 − $39,870 = $14,130.
-- Wages left in gross income: $180,000 − $132,900 = $47,100. This is general category.
-- The no-Form-1116 election is not available.
+Limit: USD 28,598 x 60,000 / 150,000 = USD 11,439.20. Credit: the smaller of USD 15,000 and USD 11,439.20. The excess of USD 3,560.80 is carried back to 2025 first (Form 1040-X with a revised 2025 Form 1116); any remainder carries forward up to 2036 in the general category. Attach Schedule B.
 
-**Case 4: currency (fix of the old guidance).** A cash-basis client had euro tax withheld from each monthly salary payment.
+```oa-check
+name: Form 1116 general category limit and carryover, single (2026)
+inputs:
+  foreign_taxable: 60000
+  worldwide_taxable: 150000
+  foreign_tax: 15000
+steps:
+  - line_20: 0.10 * min(worldwide_taxable, 12400) + 0.12 * clamp(worldwide_taxable - 12400, 0, 38000) + 0.22 * clamp(worldwide_taxable - 50400, 0, 55300) + 0.24 * clamp(worldwide_taxable - 105700, 0, 96075)
+  - line_19: min(foreign_taxable / worldwide_taxable, 1)
+  - line_21: line_20 * line_19
+  - line_24: min(foreign_tax, line_21)
+  - excess: foreign_tax - line_24
+expected:
+  line_20: 28598.00
+  line_21: 11439.20
+  line_24: 11439.20
+  excess: 3560.80
+```
 
-- Convert each withholding at the rate for its date.
-- The yearly average rate is only for accrual-basis taxes paid within the time limits.
-- If the client wants to use accrual and the average rate, check the "Accrued" box on the timely original return. The choice then binds all later years.
+**Case 2, a decision: the no-Form-1116 election or Form 1116?** A married couple filing jointly has only foreign fund dividends reported on Forms 1099-DIV, with foreign tax of USD 580 shown on the forms, all holding periods met, and a USD 1,200 passive category carryover from 2025. Foreign passive taxable income after allocated deductions (line 17) is USD 8,000; worldwide taxable income is USD 120,000; regular tax at the 2026 joint rates is USD 15,824.
 
-**Case 5: DST and a disputed tax.** A freelancer paid a foreign digital services tax and is contesting a foreign income tax assessment.
+The election is available (USD 580 is not more than USD 600), and the credit would be USD 580, with the carryover unusable this year and still ageing. Form 1116: limit USD 15,824 x 8,000 / 120,000 = USD 1,054.93; tax available USD 580 plus USD 1,200 carryover = USD 1,780; credit USD 1,054.93. **File Form 1116**: it gives USD 474.93 more credit this year and uses the oldest carryover, leaving USD 725.07 to carry forward. Without the carryover the election would give the same USD 580 with less paperwork. Had one spouse also had foreign consulting fees, even with no foreign tax, the election would fail outright because not all foreign income is passive.
 
-- The DST is not creditable.
-- The contested income tax cannot be credited until the contest is resolved. The exception is an election for a provisional credit, which needs Form 7204 and then Schedule C (Form 1116) each year until the contest is resolved.
+```oa-check
+name: No-Form-1116 election against Form 1116 with a carryover, joint (2026)
+inputs:
+  foreign_tax: 580
+  carryover: 1200
+  foreign_passive_taxable: 8000
+  worldwide_taxable: 120000
+  de_minimis_cap: 600
+steps:
+  - regular_tax: 0.10 * min(worldwide_taxable, 24800) + 0.12 * clamp(worldwide_taxable - 24800, 0, 76000) + 0.22 * clamp(worldwide_taxable - 100800, 0, 110600)
+  - headroom_under_cap: de_minimis_cap - foreign_tax
+  - election_credit: min(foreign_tax, regular_tax)
+  - limit: regular_tax * foreign_passive_taxable / worldwide_taxable
+  - form_1116_credit: min(foreign_tax + carryover, limit)
+  - extra_credit: form_1116_credit - election_credit
+  - carry_forward: foreign_tax + carryover - form_1116_credit
+expected:
+  regular_tax: 15824.00
+  headroom_under_cap: 20.00
+  election_credit: 580.00
+  limit: 1054.93
+  form_1116_credit: 1054.93
+  extra_credit: 474.93
+  carry_forward: 725.07
+```
+
+**Case 3, exclusion plus credit, by narrative.** A single filer abroad all year has foreign wages of USD 180,000, no housing amounts and no deductible expenses, foreign tax of USD 54,000, and excludes USD 132,900. Tax allocable to excluded income: USD 54,000 x 132,900 / 180,000 = USD 39,870, removed on line 12. Tax still available: USD 14,130. Wages left in income: USD 47,100, general category; line 1a shows USD 47,100 while lines 3d and 3e include the full USD 180,000. The election is not available. The comparison with the credit alone is Case 1 of `us-foreign-earned-income-2555`.
+
+**Case 4, currency, by narrative.** A cash-basis client had euro tax withheld from each monthly salary payment. Convert each withholding at the rate for its date. The yearly average rate is only for accrual-basis taxes paid within the time limits; to use it the client checks "Accrued" on a timely original return, which then binds all later years.
+
+**Case 5, a DST and a disputed tax, by narrative.** A freelancer paid a foreign digital services tax and is contesting a foreign income tax assessment. The DST is not creditable. The contested tax cannot be credited until the contest ends, unless the client elects a provisional credit on Form 7204 and files Schedule C (Form 1116) each year until it is resolved.
 
 ## When to refuse or refer
 
-- Corporations, estates and trusts, and nonresident aliens. This skill covers individual US citizens and residents only.
-- §962 elections, Form 1118, CFC look-through income, previously taxed earnings accounts, and preparing Forms 5471, 8865, 8858 or 8621.
-- Treaty re-sourcing (box f), treaty-based credits needing Form 8833, and the additional credit for US citizens resident in treaty countries.
-- §901(m) covered asset acquisitions, foreign tax credit splitting events, and foreign oil and gas income.
-- Recapture of overall foreign loss, separate limitation loss or overall domestic loss accounts, beyond a single simple year.
-- A material withholding tax on services or royalties whose creditability depends on the Notice relief analysis.
-- Contested foreign taxes and the provisional-credit election (Form 7204).
-- State returns. Do not assume any state gives a credit for foreign tax. Check that state's own rules.
-- Anyone asking for a figure the 2026 instructions have not yet published. Give the 2025 figure, labelled as 2025, and say it must be checked.
+| Code | Situation | Action |
+| --- | --- | --- |
+| R-FTC-1 | Corporations, estates and trusts, or nonresident aliens | Refer: this skill is for individual US citizens and residents |
+| R-FTC-2 | Section 962 elections, Form 1118, CFC look-through income, previously taxed earnings accounts, or Forms 5471, 8865, 8858 or 8621 | Refer: `us-gilti-fdii-beat`, `us-form-5471-cfc-information` |
+| R-FTC-3 | Treaty re-sourcing (box f), treaty-based credits needing Form 8833, or the additional credit for US citizens resident in treaty countries | Refer |
+| R-FTC-4 | Section 901(m) covered asset acquisitions, foreign tax credit splitting events, foreign oil and gas income | Refer |
+| R-FTC-5 | Recapture of overall foreign loss, separate limitation loss or overall domestic loss accounts beyond a single simple year | Refer |
+| R-FTC-6 | A material withholding tax on services or royalties whose creditability depends on the Notice relief analysis | Refer |
+| R-FTC-7 | Contested foreign taxes and the provisional-credit election (Form 7204) | Refer |
+| R-FTC-8 | State returns | Do not assume any state gives a credit for foreign tax; use that state's skill |
+| R-FTC-9 | A figure the 2026 instructions have not yet published | Give the 2025 figure, labelled as 2025, and say it must be checked |
 
-## Filing, payment and later changes ([extension of time to file](https://www.irs.gov/forms-pubs/extension-of-time-to-file-your-tax-return); [Pub. 54](https://www.irs.gov/publications/p54); [Schedule C instructions](https://www.irs.gov/instructions/i1116sc); [Pub. 514](https://www.irs.gov/publications/p514))
+## Filing and payment
 
-- **Attachments:** attach each Form 1116, plus Schedule B and Schedule C where required, to Form 1040. The credit goes on Schedule 3 (Form 1040), line 1.
-- **2026 returns** are due 15 April 2027 for calendar-year filers ([§6072(a)](https://www.law.cornell.edu/uscode/text/26/6072)).
-  - Form 4868 extends the time **to file** to 15 October. It does not extend the time to pay.
-  - Citizens and residents living abroad whose main place of business or post of duty is outside the US get an automatic 2-month extension to file and pay. Interest still runs from the regular due date.
-- **Foreign tax redeterminations** include a foreign refund, extra foreign tax, accrued tax not paid within 24 months, and a change of credit or deduction.
-  - If US tax changes, file an amended return with a revised Form 1116 and a statement.
-  - Also file **Schedule C (Form 1116)** with the current-year return for each category.
-  - If US tax does not change, Schedule C with the original return is enough.
-- **Penalty for not notifying:** failing to notify the IRS of a redetermination without reasonable cause costs 5% of the resulting tax due for each month or part of a month, up to 25%. The IRS can also assess the extra tax outside the normal limitation period.
+Sources: [Instructions for Form 1116 (2025)](https://www.irs.gov/pub/irs-pdf/i1116.pdf); [IRS Pub. 514 (2025)](https://www.irs.gov/pub/irs-pdf/p514.pdf); [Instructions for Form 2555 (2026), When To File](https://www.irs.gov/pub/irs-pdf/i2555.pdf).
 
-## 2025 returns (extended returns due 15 October 2026) ([Form 1116 instructions](https://www.irs.gov/instructions/i1116); [Form 2555 instructions](https://www.irs.gov/instructions/i2555))
+1. **Attachments:** each Form 1116, plus Schedule B and Schedule C where required, attached to Form 1040. The credit goes on Schedule 3 (Form 1040), line 1.
+2. **Due date:** 15 April 2027 for a 2026 calendar-year return. Form 4868 extends the time **to file** to 15 October 2027, not the time to pay.
+3. **People abroad:** citizens and residents who live outside the US and Puerto Rico with their tax home outside them on the due date get an automatic 2-month extension to 15 June 2027 to file and pay; interest still runs from 15 April. Details in `us-foreign-earned-income-2555`.
+4. **Foreign tax redeterminations** (a foreign refund, extra foreign tax, accrued tax not paid within 24 months, a change from credit to deduction): if US tax changes, file an amended return with a revised Form 1116 and a statement, and file **Schedule C (Form 1116)** with the current-year return for each category; if US tax does not change, Schedule C with the original return is enough.
+5. **Penalty for not notifying:** without reasonable cause, 5% of the resulting tax due for each month or part of a month, up to 25%. The IRS can also assess the extra tax outside the normal limitation period.
+6. **Carryback:** Form 1040-X for 2025 with a revised 2025 Form 1116.
 
-Where 2025 differs from the 2026 text above:
+### 2025 returns still being filed on extension
 
-- **FEIE limit:** $130,000.
-- **Adjustment exception thresholds** (line 5 of the Qualified Dividends and Capital Gain Tax Worksheet): $197,300 for single, head of household and married filing separately; $394,600 for married filing jointly and qualifying surviving spouse. The foreign gains and dividends must also be less than $20,000.
-- **Line 18** adds back the $6,000 senior deduction from Schedule 1-A, line 37.
-- **Part IV** lines 25 to 32 must be completed even with one Form 1116. This is new for 2025.
-- **Section 951A category** (GILTI) for 2025 with a §962 election: §250 deduction of 50% ([§250](https://www.law.cornell.edu/uscode/text/26/250) amendment note) and deemed-paid credit of 80% ([§960](https://www.law.cornell.edu/uscode/text/26/960) amendment note). The 10% disallowance for tax on previously taxed distributions already applies to amounts after 28 June 2025.
-- **§901(j) list for 2025:** Iran, Libya (waiver), North Korea, Sudan, Syria.
-- **Notice 2023-55/2023-80 relief** applies to 2025.
+Where 2025 differs from the 2026 text above: the foreign earned income exclusion limit is USD 130,000 (see `us-foreign-earned-income-2555`); the adjustment exception thresholds are USD 197,300 and USD 394,600 as in the rates table; Part IV must be completed even with one Form 1116 (new for 2025); for section 951A category income with a section 962 election the section 250 deduction was 50% and the section 960(d) credit 80%, with the 10% disallowance already applying to amounts after 28 June 2025; the section 901(j) list is Iran, Libya (waiver), North Korea, Sudan and Syria; and the Notice 2023-55 and 2023-80 relief applies.
 
 ## Completion checklist
 
-- [ ] Every foreign tax is legally owed, not refundable, and not offset by a subsidy. The holding periods are met.
-- [ ] The Notice 2023-55/2023-80 relief is still in force for the year (check IRS.gov/Form1116). No DST is claimed. Reliance for any withholding tax is documented.
-- [ ] The credit or deduction choice is consistent for all taxes of the year. Any change is made within the 10-year (credit) or 3-year/2-year (deduction) window.
-- [ ] The no-Form-1116 election has been tested against all of its conditions, and its carryover and AMT costs have been weighed.
-- [ ] There is one Form 1116 per category, with the right box. Sanctioned-country income is on its own form, per country.
-- [ ] Income is sourced correctly, with wages split on a time basis.
-- [ ] Deductions are allocated. The line 18 senior-deduction add-back and the qualified dividend and capital gain adjustment (or the exception) are applied.
-- [ ] Tax is converted at the correct rate: date paid for cash basis, average rate for accrual within the limits. The "Accrued" box history has been checked.
-- [ ] The line 12 FEIE reduction and the high-tax adjustments (income in Part I, tax on line 13) are done.
-- [ ] Part IV is completed, and the credit goes to Schedule 3, line 1.
-- [ ] Schedule B is attached where there is a carryover. The 1-year carryback is claimed on Form 1040-X where useful.
-- [ ] The AMT Form 1116 is done if AMT applies.
-- [ ] Schedule C and amended returns are filed for any foreign tax change.
-- [ ] Items to refer out have been flagged to the client in writing.
+- [ ] Every foreign tax is legally owed, not refundable, not offset by a subsidy; holding periods met.
+- [ ] Notice 2023-55 and 2023-80 relief still in force for the year (IRS.gov/Form1116 checked); no DST claimed; reliance for any withholding tax documented.
+- [ ] Credit or deduction consistent for all taxes of the year; any change within the 10-year (credit) or 3-year or 2-year (deduction) window.
+- [ ] No-Form-1116 election tested against every condition, and its carryover and AMT costs weighed.
+- [ ] One Form 1116 per category, right box; sanctioned-country income on its own form, per country.
+- [ ] Income sourced correctly; wages split on a time basis.
+- [ ] Deductions allocated; line 18 senior-deduction add-back; qualified dividend and capital gain adjustment or the exception.
+- [ ] Currency at the right rate: date paid for cash basis, average rate for accrual within the limits; "Accrued" box history checked.
+- [ ] Line 12 Form 2555 reduction and the high-tax reclassification (income in Part I, tax on line 13) done.
+- [ ] Part IV completed; credit on Schedule 3, line 1.
+- [ ] Schedule B attached where there is a carryover; the 1-year carryback claimed on Form 1040-X where useful.
+- [ ] AMT Form 1116 done if AMT applies.
+- [ ] Schedule C and amended returns filed for any foreign tax change.
+- [ ] Items to refer out flagged to the client in writing.
+
+## Sources
+
+| Source | URL | Read on |
+| --- | --- | --- |
+| Instructions for Form 1116 (2025). Read for the no-Form-1116 election, Foreign Taxes Not Eligible, sourcing, categories a to g, lines 3d to 4b (USD 5,000), the adjustment exception (USD 197,300, USD 394,600, USD 20,000), line 12, line 10 carryovers, Part III, Part IV and the Notice relief "until further notice". | https://www.irs.gov/pub/irs-pdf/i1116.pdf | 2026-11-13 |
+| Form 1116 (2025). Read for the category boxes and Parts I to IV. | https://www.irs.gov/pub/irs-pdf/f1116.pdf | 2026-11-13 |
+| IRS Pub. 514 (for 2025 returns). Read for Choosing To Take Credit or Deduction (10-year, 3-year and 2-year windows), the holding period (16 days), section 901(j) countries, Form 7204, and the redetermination penalty (5%, 25%). | https://www.irs.gov/pub/irs-pdf/p514.pdf | 2026-11-13 |
+| Instructions for Form 6251 (2025). Read for line 8, the AMT Form 1116 steps, the simplified limitation election and AMTFTC carrybacks. | https://www.irs.gov/pub/irs-pdf/i6251.pdf | 2026-11-13 |
+| Notice 2023-55. Read for the temporary relief and the DST statement. | https://www.irs.gov/pub/irs-drop/n-23-55.pdf | 2026-11-13 |
+| Notice 2023-80. Read for the extension of the relief until withdrawn or modified. | https://www.irs.gov/pub/irs-drop/n-23-80.pdf | 2026-11-13 |
+| 26 U.S.C. 904 (govinfo, 2024 edition). Read for (a), (c) (1 year back, 10 forward), (d) and (j) (USD 300, USD 600). | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapN-partIII-subpartA-sec904.htm | 2026-11-13 |
+| 26 U.S.C. 911 (govinfo). Read for (d)(6), no credit on excluded income. | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapN-partIII-subpartB-sec911.htm | 2026-11-13 |
+| Public Law 119-21 (govinfo). Read for sections 70103 (USD 6,000 senior deduction), 70311 (new section 904(b)(5), from 2026), 70312 (90% deemed-paid credit, 10% disallowance after 28 June 2025) and 70321 (40% section 250 deduction). | https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm | 2026-11-13 |
+| Instructions for Form 2555 (2026). Read for When To File (15 June 2027 extension). | https://www.irs.gov/pub/irs-pdf/i2555.pdf | 2026-11-13 |
+
+Not yet confirmed: the 2026 Form 1116, its instructions, the 2026 Pub. 514 and the 2026 Instructions for Form 6251 were not yet published, so the line numbers above are from the 2025 editions and the 2026 adjustment exception thresholds and the 2026 section 901(j) list are not given; whether any notice has withdrawn or modified Notice 2023-80 after the 2025 instructions was not checked in the Internal Revenue Bulletin; the amount of the penalty for failing to file Form 8833 was not confirmed on an IRS page read for this rewrite, so it is not stated.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-16. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `us-foreign-tax-credit-1116` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/us-foreign-tax-credit-1116. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `us-foreign-tax-credit-1116` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/us-foreign-tax-credit-1116. If neither is available, confirm every figure against the official source pages cited above before relying on it.

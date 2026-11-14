@@ -2,16 +2,17 @@
 name: sj-svalbard-transfer-pricing
 description: >
   Apply ordinary Svalbard related-party pricing and compliance rules for tax year 2026. Covers the imported arm's-length adjustment rule, controlled transaction and balance reporting, ownership/control definitions, small-transaction relief, separate group-size documentation relief, information-exchange exceptions, evidence content and retention. Explains return filing, the forty-five-day response deadline, penalties and the distinction between local tax allocation and international treaty relief. Includes two reproducible examples showing an ordinary price correction and the effect of a correction on the company higher-rate slice. Use for Svalbard intercompany services, related-party loans, group transactions, documentation and mainland allocations. Jan Mayen and specialist multinational regimes are excluded. This is a source-cited draft awaiting professional review.
-version: 0.1
+version: 0.2
 jurisdiction: SJ
 tax_year: 2026
-last_updated: 2026-10-24
+last_updated: 2026-11-14
 category: transfer-pricing
 tier: 2
 domain: transfer-pricing
+type: situation-rules
 ---
 
-# Svalbard: transfer pricing in 2026 v0.1
+# Svalbard: transfer pricing in 2026 v0.2
 
 > **Source-cited draft.** Tax year 2026, checked 24 October 2026. General reference for working papers; a qualified professional must review the facts and filing position. Independent AI review does not confer accountant review.
 

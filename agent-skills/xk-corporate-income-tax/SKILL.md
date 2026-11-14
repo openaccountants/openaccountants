@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/xk-corporate-income-tax"
   jurisdiction: "XK"
   tax_year: "2026"
-  last_updated: "2026-10-30"
+  last_updated: "2026-11-14"
 ---
 
-# Kosovo corporate income tax v0.2
+# Kosovo corporate income tax v0.3
 
 Tax year **2026**, checked against the law on **30 October 2026** (tier 2).
 No licensed accountant has signed off this revision.
@@ -33,25 +33,25 @@ are listed under Not yet confirmed, so the pack keeps IT-CORP partial.
 
 | Test or payment | Rule | Authority |
 |---|---|---|
-| Real-income corporate tax | 10% of taxable income | [06/L-105 art. 7][law] |
-| Mandatory real-income regime | Annual gross income exceeds EUR 30,000; applies for that period and at least three following periods | [Arts. 35(1), (3) and 38(3)][law] |
-| Small-company trade, transport, agriculture and similar activities | 3% of quarterly gross income; minimum EUR 37.50 for an income-bearing quarter | [Art. 38(2.1.1)][law] |
-| Small-company services, professional, vocational, entertainment and similar activities | 9% of quarterly gross income; minimum EUR 37.50 for an income-bearing quarter | [Art. 38(2.1.2)][law] |
-| Small-company rent | 10% of net rent, less relevant withholding | [Art. 38(2.1.3)][law] |
-| Quarter with no income | No payment, but quarterly statement still required | [Art. 38(2.1.4)][law] |
-| Ordinary representation | Maximum 1% of annual gross income | [Art. 12(2)][law] |
-| Qualifying public-interest donations | Ordinary ceiling 10% of taxable income before the donation deduction | [Art. 11][law] |
-| Depreciation, categories 1 / 2 / 3 | 5% / 20% / 10% straight line | [Art. 16(3)–(4)][law] |
-| Low-value asset | Up to EUR 1,000, subject to functional-group/life exception | [Art. 16(7)][law] |
-| Qualifying new assets | Additional 10% cost deduction in first-use year, subject to eligibility | [Art. 18][law] |
-| Undefined-life intangible | Straight-line over 20 years | [Art. 20(3)][law] |
-| Loss carryforward | Four successive periods, oldest first | [Art. 24][law] |
+| Real-income corporate tax | 10% of taxable income | [06/L-105 art. 7](https://www.atk-ks.org/wp-content/uploads/2019/09/LAW_NO.06_L-105.pdf) |
+| Mandatory real-income regime | Annual gross income exceeds EUR 30,000; applies for that period and at least three following periods | [Arts. 35(1), (3) and 38(3)](https://www.atk-ks.org/wp-content/uploads/2019/09/LAW_NO.06_L-105.pdf) |
+| Small-company trade, transport, agriculture and similar activities | 3% of quarterly gross income; minimum EUR 37.50 for an income-bearing quarter | [Art. 38(2.1.1)](https://www.atk-ks.org/wp-content/uploads/2019/09/LAW_NO.06_L-105.pdf) |
+| Small-company services, professional, vocational, entertainment and similar activities | 9% of quarterly gross income; minimum EUR 37.50 for an income-bearing quarter | [Art. 38(2.1.2)](https://www.atk-ks.org/wp-content/uploads/2019/09/LAW_NO.06_L-105.pdf) |
+| Small-company rent | 10% of net rent, less relevant withholding | [Art. 38(2.1.3)](https://www.atk-ks.org/wp-content/uploads/2019/09/LAW_NO.06_L-105.pdf) |
+| Quarter with no income | No payment, but quarterly statement still required | [Art. 38(2.1.4)](https://www.atk-ks.org/wp-content/uploads/2019/09/LAW_NO.06_L-105.pdf) |
+| Ordinary representation | Maximum 1% of annual gross income | [Art. 12(2)](https://www.atk-ks.org/wp-content/uploads/2019/09/LAW_NO.06_L-105.pdf) |
+| Qualifying public-interest donations | Ordinary ceiling 10% of taxable income before the donation deduction | [Art. 11](https://www.atk-ks.org/wp-content/uploads/2019/09/LAW_NO.06_L-105.pdf) |
+| Depreciation, categories 1 / 2 / 3 | 5% / 20% / 10% straight line | [Art. 16(3)–(4)](https://www.atk-ks.org/wp-content/uploads/2019/09/LAW_NO.06_L-105.pdf) |
+| Low-value asset | Up to EUR 1,000, subject to functional-group/life exception | [Art. 16(7)](https://www.atk-ks.org/wp-content/uploads/2019/09/LAW_NO.06_L-105.pdf) |
+| Qualifying new assets | Additional 10% cost deduction in first-use year, subject to eligibility | [Art. 18](https://www.atk-ks.org/wp-content/uploads/2019/09/LAW_NO.06_L-105.pdf) |
+| Undefined-life intangible | Straight-line over 20 years | [Art. 20(3)](https://www.atk-ks.org/wp-content/uploads/2019/09/LAW_NO.06_L-105.pdf) |
+| Loss carryforward | Four successive periods, oldest first | [Art. 24](https://www.atk-ks.org/wp-content/uploads/2019/09/LAW_NO.06_L-105.pdf) |
 
-[Law][law]; [TAKS current overview][overview]. Exactly EUR 30,000 is within the small-company ceiling if no election or continuing real-income obligation applies. Do not describe the small regime as no corporate-tax liability: it substitutes payments based on gross income for the ordinary profit calculation. Rental income has a separate net-rent computation and withholding credit under Article 38(2.1.3); do not apply the trade or service percentage to it.
+[Law](https://www.atk-ks.org/wp-content/uploads/2019/09/LAW_NO.06_L-105.pdf); [TAKS current overview](https://www.atk-ks.org/en/portfolio/informata-te-pergjithshme-per-tatimet-ne-kosove/). Exactly EUR 30,000 is within the small-company ceiling if no election or continuing real-income obligation applies. Do not describe the small regime as no corporate-tax liability: it substitutes payments based on gross income for the ordinary profit calculation. Rental income has a separate net-rent computation and withholding credit under Article 38(2.1.3); do not apply the trade or service percentage to it.
 
 ### Election and threshold crossing
 
-A qualifying small taxpayer can elect the real-income books/records regime. An existing taxpayer applies before 1 March of the chosen tax period; a new taxpayer's first quarterly statement communicates the election. The election year and at least three following tax periods are covered. Crossing EUR 30,000 similarly brings the crossing year and at least three following periods into real-income treatment. [Articles 35(2)–(3), 38(3)][law]
+A qualifying small taxpayer can elect the real-income books/records regime. An existing taxpayer applies before 1 March of the chosen tax period; a new taxpayer's first quarterly statement communicates the election. The election year and at least three following tax periods are covered. Crossing EUR 30,000 similarly brings the crossing year and at least three following periods into real-income treatment. [Articles 35(2)–(3), 38(3)](https://www.atk-ks.org/wp-content/uploads/2019/09/LAW_NO.06_L-105.pdf)
 
 A return to small-business books is allowed only after three years have
 passed from the period of the election (or of the crossing), when income in
@@ -60,8 +60,8 @@ the **last period** is below EUR 30,000, and with TAK approval granted
 says last period ("periudhën e fundit"); the English translation says last
 quarter. Use the original period wording and keep TAK's approval with the
 turnover and election history. A low quarter alone does not end the
-continuing real-income obligation. [Article 35(4), original Albanian][albanian];
-[English translation][law]
+continuing real-income obligation. [Article 35(4), original Albanian](https://gzk.rks-gov.net/ActDetail.aspx?ActID=20988&langid=1);
+[English translation](https://www.atk-ks.org/wp-content/uploads/2019/09/LAW_NO.06_L-105.pdf)
 
 ## The base
 
@@ -327,18 +327,18 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Law 06/L-105 on Corporate Income Tax, arts. 3–38 (official TAK PDF of Official Gazette No. 15/2019) | https://www.atk-ks.org/wp-content/uploads/2019/09/LAW_NO.06_L-105.pdf | 2026-10-30 |
-| Official Gazette record for 06/L-105: repeals 05/L-029, no later amending act listed | https://gzk.rks-gov.net/ActDetail.aspx?ActID=20988&langid=2 | 2026-10-30 |
-| Law 06/L-105, original Albanian text, arts. 35(4) and 36(1) | https://gzk.rks-gov.net/ActDocumentDetail.aspx?ActID=20988 | 2026-10-30 |
-| TAK laws list (06/L-105 as current corporate law) | https://www.atk-ks.org/en/legislation/laws/ | 2026-10-30 |
-| TAK general information on taxes: CIT rates, EUR 30,000 threshold, QS/QL/CD timetable | https://www.atk-ks.org/en/portfolio/informata-te-pergjithshme-per-tatimet-ne-kosove/ | 2026-10-30 |
-| TAK CD annual corporate declaration layout (boxes 37, 38, 41) | https://crmm.atk-ks.org/en/Public/CalculatorDetail?id=9 | 2026-10-30 |
-| Law 08/L-257 on Tax Administration and Procedures, arts. 24, 99–103 | https://www.atk-ks.org/wp-content/uploads/2024/01/LAW_NO._08_L-257_ON_THE_ADMINISTRATION_OF_TAX_PROCEDURES.pdf | 2026-10-30 |
-| TAK Public Ruling 02/2019 on long-term construction contracts, pp. 8, 13 and 20 | https://www.atk-ks.org/wp-content/uploads/2019/02/VendimiShpjeguesPublik.pdf | 2026-10-30 |
-| TAK answer ATK27334/2023 (construction, art. 6(2.1)) | https://www.atk-ks.org/en/pyetje/?wpfaqpage=120 | 2026-10-30 |
-| TAK answer ATK27829/2024 (retention payments) | https://www.atk-ks.org/en/pyetje/?wpfaqpage=151 | 2026-10-30 |
-| TAK answer ATK26322/2021 (finance lease, 75% and 90% tests) | https://www.atk-ks.org/pyetje-te-shpeshta/?dy=20&mcat=all&month=04&time=day&wpfaqpage=49&yr=2021 | 2026-10-30 |
-| TAK answer ATK28224/2025 (operating lease, art. 31 citation error) | https://www.atk-ks.org/en/pyetje/?wpfaqpage=183 | 2026-10-30 |
+| Law 06/L-105 on Corporate Income Tax, arts. 3–38 (official TAK PDF of Official Gazette No. 15/2019) | https://www.atk-ks.org/wp-content/uploads/2019/09/LAW_NO.06_L-105.pdf | 2026-11-14 |
+| Official Gazette record for 06/L-105 (repeals 05/L-029): read for whether any later amending act is listed | https://gzk.rks-gov.net/ActDetail.aspx?ActID=20988&langid=2 | 2026-11-14 |
+| Law 06/L-105, original Albanian text, arts. 35(4) and 36(1) | https://gzk.rks-gov.net/ActDocumentDetail.aspx?ActID=20988 | 2026-11-14 |
+| TAK laws list: read for 06/L-105 as current corporate law | https://www.atk-ks.org/en/legislation/laws/ | 2026-11-14 |
+| TAK general information on taxes: CIT rates: read for EUR 30,000 threshold, QS/QL/CD timetable | https://www.atk-ks.org/en/portfolio/informata-te-pergjithshme-per-tatimet-ne-kosove/ | 2026-11-14 |
+| TAK CD annual corporate declaration layout: read for boxes 37, 38, 41 | https://crmm.atk-ks.org/en/Public/CalculatorDetail?id=9 | 2026-11-14 |
+| Law 08/L-257 on Tax Administration and Procedures, arts. 24, 99–103 | https://www.atk-ks.org/wp-content/uploads/2024/01/LAW_NO._08_L-257_ON_THE_ADMINISTRATION_OF_TAX_PROCEDURES.pdf | 2026-11-14 |
+| TAK Public Ruling 02/2019 on long-term construction contracts: read for pp. 8, 13 and 20 | https://www.atk-ks.org/wp-content/uploads/2019/02/VendimiShpjeguesPublik.pdf | 2026-11-14 |
+| TAK answer ATK27334/2023 (construction, art. 6(2.1)) | https://www.atk-ks.org/en/pyetje/?wpfaqpage=120 | 2026-11-14 |
+| TAK answer ATK27829/2024: read for retention payments | https://www.atk-ks.org/en/pyetje/?wpfaqpage=151 | 2026-11-14 |
+| TAK answer ATK26322/2021: read for finance lease, 75% and 90% tests | https://www.atk-ks.org/pyetje-te-shpeshta/?dy=20&mcat=all&month=04&time=day&wpfaqpage=49&yr=2021 | 2026-11-14 |
+| TAK answer ATK28224/2025 (operating lease, art. 31 citation error) | https://www.atk-ks.org/en/pyetje/?wpfaqpage=183 | 2026-11-14 |
 
 Not yet confirmed: current ministerial instrument/legal continuity for special reporting, beyond the cited positive TAK construction/lease applications; gross-interest recognition/reporting; prescribed post-education employment period; numeric 2026 tax-interest rate; case-specific treaty and departure/cessation treatment. IT-CORP remains partial for these implementing-rule gaps.
 
@@ -359,4 +359,4 @@ Not yet confirmed: current ministerial instrument/legal continuity for special r
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-30. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `xk-corporate-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/xk-corporate-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `xk-corporate-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/xk-corporate-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

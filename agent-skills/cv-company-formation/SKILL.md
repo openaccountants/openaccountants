@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/cv-company-formation"
   jurisdiction: "CV"
   tax_year: "2026"
-  last_updated: "2026-11-01"
+  last_updated: "2026-11-14"
 ---
 
-# Cape Verde Company Formation v0.2
+# Cape Verde Company Formation v0.3
 
 ## Who this applies to
 
@@ -89,16 +89,16 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Lei 69/X/2025, State Budget 2026, BO I 133 sup. 1, 31 Dec 2025: arts 29, 30, 32, 84, 99, 100 and Anexo I read | https://boe.incv.cv/Bulletins/DownloadAct?id=89137 | 2026-11-01 |
-| Lei 1/XI/2026, Amending Budget 2026, BO I 90, 13 Aug 2026: searched for tax-rate changes, none found | https://boe.incv.cv/Bulletins/DownloadAct?id=112975 | 2026-11-01 |
-| Lei 70/VIII/2014, REMPE, BO I 51, 26 Aug 2014: arts on the TEU, 25 and 26 read | https://boe.incv.cv/Bulletins/Download/1891 | 2026-11-01 |
-| Lei 45/X/2024, Budget 2025: arts 25 and 26 read | https://boe.incv.cv/Bulletins/Download/6150 | 2026-11-01 |
-| DNRE, REMPE leaflet, 2015: all read | https://www.mf.gov.cv/documents/54571/273413/Desdobr%C3%A1vel%20REMPE.pdf | 2026-11-01 |
-| INPS, Inscricao: all read | https://inps.cv/inscricao/ | 2026-11-01 |
-| DNRE, forms and leaflets page: list read | https://www.mf.gov.cv/web/dnre/dire%C3%A7%C3%A3o-geral-das-contribui%C3%A7%C3%B5es-e-impostos | 2026-11-01 |
+| Lei 69/X/2025, State Budget 2026, BO I 133 sup. 1, 31 Dec 2025: arts 29, 30, 32, 84, 99, 100 and Anexo I read | https://boe.incv.cv/Bulletins/DownloadAct?id=89137 | 2026-11-14 |
+| Lei 1/XI/2026, Amending Budget 2026, BO I 90, 13 Aug 2026: read for tax-rate changes, none found | https://boe.incv.cv/Bulletins/DownloadAct?id=112975 | 2026-11-14 |
+| Lei 70/VIII/2014, REMPE, BO I 51, 26 Aug 2014: read for arts on the TEU, 25 and 26 | https://boe.incv.cv/Bulletins/Download/1891 | 2026-11-14 |
+| Lei 45/X/2024, Budget 2025: arts 25 and 26 read | https://boe.incv.cv/Bulletins/Download/6150 | 2026-11-14 |
+| DNRE, REMPE leaflet, 2015: read in full | https://www.mf.gov.cv/documents/54571/273413/Desdobr%C3%A1vel%20REMPE.pdf | 2026-11-14 |
+| INPS, Inscricao: read in full | https://inps.cv/inscricao/ | 2026-11-14 |
+| DNRE, forms and leaflets page: read for the list of forms and leaflets | https://www.mf.gov.cv/web/dnre/dire%C3%A7%C3%A3o-geral-das-contribui%C3%A7%C3%B5es-e-impostos | 2026-11-14 |
 
 Not yet confirmed: Whether art. 25(2) is a flat CVE 30,000 up to CVE 1,000,000, or a floor under 4%, which would give CVE 36,000 in case 2. Minimum capital (old skill: CVE 1, CVE 100,000 typical); capital pay-up 50% and 30%; timeline 1 to 2 weeks; notary CVE 5,000 to 15,000; registration CVE 2,500 plus 0.2% stamp duty; chartered accountant requirement; annual financial statement duty. All came from secondary sources and are removed from the body until the Commercial Companies Code is read.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-01. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `cv-company-formation` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/cv-company-formation. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `cv-company-formation` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/cv-company-formation. If neither is available, confirm every figure against the official source pages cited above before relying on it.
