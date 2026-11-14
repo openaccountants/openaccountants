@@ -4,9 +4,9 @@ import { BRACKETS, taxOn } from "./au-resident-tax-2026-27";
 import { FactReader, taxYearFact, money, ok, pct, pyRound, r2, rule, type Engine, type EngineSpec } from "./types";
 
 const S = "au-rates-2026-27";
-export const RATE = rule("SBITO_RATE", 0.16, S, "Individual income tax / Offsets and deductions", "SBITO | 16% of tax on net small business income, cap $1,000, turnover < $5m");
-export const CAP = rule("SBITO_CAP", 1_000, S, "Individual income tax / Offsets and deductions", "SBITO | ... cap $1,000");
-export const TURNOVER = rule("SBITO_TURNOVER_LIMIT", 5_000_000, S, "Individual income tax / Offsets and deductions", "SBITO | ... turnover < $5m");
+export const RATE = rule("SBITO_RATE", 0.16, S, "Individual income tax / Offsets and deductions", "SBITO | For eligible individuals with positive taxable income: 16% x (total net small business income / taxable income) x basic income tax liability");
+export const CAP = rule("SBITO_CAP", 1_000, S, "Individual income tax / Offsets and deductions", "SBITO | ... capped at $1,000");
+export const TURNOVER = rule("SBITO_TURNOVER_LIMIT", 5_000_000, S, "Individual income tax / Offsets and deductions", "SBITO | ... aggregated turnover must be < $5m");
 export const METHOD = rule(
   "TAX_ON_NET_SBI_METHOD",
   "basic income tax liability x (net small business income / taxable income)",
@@ -18,7 +18,7 @@ const CONSTS = [BRACKETS, RATE, CAP, TURNOVER, METHOD];
 
 export const spec: EngineSpec = {
   name: "au_sbito_2026_27",
-  version: "1.2.0",
+  version: "1.4.0",
   jurisdiction: "AU",
   tax_years: ["2026-27"],
   summary:
@@ -74,7 +74,7 @@ export function run(facts: Record<string, unknown>) {
     used,
     {
       assumptions: [
-        "METHOD NOT STATED IN THE SKILLS: when income is mixed, 'tax on net small business income' is taken as basic income tax liability (before offsets) times net SBI / taxable income. The skill's only example has business = 100% of income.",
+        "Tax on net small business income = basic income tax liability (before offsets) x net small business income / taxable income, the income share capped at 1 (au-rates-2026-27 SBITO row)",
         "Basic income tax liability uses the 2026-27 resident brackets (no Medicare levy)",
       ],
       anchors,
