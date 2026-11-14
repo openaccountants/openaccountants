@@ -366,4 +366,7 @@ expected:
 
 The current form and matching instructions are verified from the actual Ministry packages above. The [31 December 2026 Income Tax Act text](https://static.slov-lex.sk/static/SK/ZZ/2003/595/20261231.html) was compared with the earlier 2026 text: the corporate provisions used here are unchanged. Its §52zzzm directs the specified new §9/§11 rules to 2027 returns; the fact a2026 return is filed in 2027 does not itself move it to those rules. Future ECB rates still require the actual statutory reference date.
 
+
+Not yet confirmed: the ECB main refinancing rate for any date after this read (it sets penalty and late-interest floors); use the rate in force on the statutory reference date.
+
 > Contributed by Michael Cutajar.

@@ -323,4 +323,7 @@ expected:
 
 Historical source credit from the original Guide: [priznanie-digital/priznanie-digital](https://github.com/priznanie-digital/priznanie-digital) (MIT, 40 contributors). That contributor count is the original historical credit, not a current count or a primary-law authority.
 
+
+Not yet confirmed: ECB main refinancing rates after the 27 October 2026 read; for §155 penalties and §156 interest select the rate in force on the actual statutory reference date.
+
 > Contributed by Michael Cutajar.

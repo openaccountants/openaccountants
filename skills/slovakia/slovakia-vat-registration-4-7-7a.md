@@ -103,7 +103,7 @@ A §7/§7a registrant keeps records of its EU acquisitions, outgoing §15(1) ser
 
 ### Actual registration form and statutory selection
 
-The [official active catalog](https://www.financnasprava.sk/sk/katalog-formularov) identifies **REGDPv24**, valid from 1 January 2025, as the common registration/change/cancellation form. Its actual [electronic form589](https://pfseform.financnasprava.sk/Formulare/eFormVzor/REG/form.589.html) distinguishes individual/legal person, registration/change/cancellation and the VAT tax type. In **Annex 1 — VAT**, select the statutory ground that actually applies, retaining the event date and supporting evidence:
+The [official active catalog](https://www.financnasprava.sk/sk/katalog-formularov) identifies **REGDPv24**, valid from 1 January 2025, as the common registration/change/cancellation form. Its actual [electronic form589](https://pfseform.financnasprava.sk/Formulare/eFormVzor/REG/form.589.html) distinguishes individual/legal person, registration/change/cancellation and the VAT tax type. In **Annex 1: VAT**, select the statutory ground that actually applies, retaining the event date and supporting evidence:
 
 - Mandatory §4(2), with the applicable §4(1)(a)–(i) event; later payer-status notices under §4(5) or §4(7) have separate selections. The form distinguishes exceeding EUR 50,000 without exceeding EUR 62,500 from exceeding EUR 62,500, as well as the other statutory events.
 - Ordinary voluntary application under §4(7), including the before-EUR-50,000 §4(6)(a) selection; the two early-status elections use the separate §4(8) notice and its §4(8)(a)/(b) choice. A checkbox does not displace the status date, decision-delivery condition or notice deadline established above.
