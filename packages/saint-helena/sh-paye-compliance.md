@@ -2,17 +2,18 @@
 name: sh-paye-compliance
 description: >
   Saint Helena island employer PAYE compliance for tax year 2026 (1 April 2026 to 31 March 2027). Covers employer registration (P1), tax codes and Free Pay Tables, deductions (P2), remittance and monthly return (P6) by the 15th, annual return (P7) by 30 April, certificates (P5), leavers (P8), the under-£300 small employer rule, records and penalties. Use for payroll, PAYE or employer questions on St Helena. Does not apply to Ascension or Tristan da Cunha.
-version: 0.3
+version: 0.4
 jurisdiction: SH
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 category: payroll
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
+type: situation-rules
 ---
 
-# Saint Helena island: employer PAYE compliance v0.3
+# Saint Helena island: employer PAYE compliance v0.4
 
 > **General reference only.** This skill is general tax reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts. It covers Saint Helena island only, not Ascension or Tristan da Cunha, which have separate laws.
 

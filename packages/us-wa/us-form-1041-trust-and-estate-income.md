@@ -1,772 +1,364 @@
 ---
 name: us-form-1041-trust-and-estate-income
-description: Tier 2 US federal content skill for Form 1041 — US Income Tax Return for Estates and Trusts. Covers tax year 2025 including the compressed bracket structure (37% at $15,650; LTCG 20% at $15,200; NIIT 3.8% same threshold), Distributable Net Income under §643, distribution deduction §651 (simple) and §661 (complex), the §663(b) 65-day rule, §645 election to combine estate + revocable trust, §691 income in respect of decedent, §642(g) election to deduct on 706 vs 1041, fiscal-year for estates only, Schedule K-1 character flow-through to beneficiaries, and §1361 ESBTs.
+description: Prepare Form 1041, the US income tax return for estates and non-grantor trusts, for tax year 2026. 2026 figures from Rev. Proc. 2025-32, including the compressed trust brackets (37% above USD 16,000), the 0% and 15% capital gain bands (USD 3,300 and USD 16,250), the 3.8% net investment income tax above USD 16,000, the AMT exemption of USD 31,400 and the USD 5,300 qualified disability trust exemption. Covers who must file, calendar or fiscal year, DNI under section 643(a), simple and complex trust distribution deductions (sections 651 and 661), the 65-day election under section 663(b), the section 645 election to combine a revocable trust with the estate, income in respect of a decedent and the section 691(c) deduction, the section 642(g) choice between Form 706 and Form 1041, Schedule K-1, estimated tax and ESBTs in outline. Trigger on "Form 1041", "trust tax return", "estate income tax", "DNI", "65-day rule", "section 645", "K-1 from a trust", "IRD". Federal only.
+version: "1.0"
 jurisdiction: US
-tax_year: 2025
-last_updated: 2026-07-13
-source_checked: 2026-10-16
+tax_year: 2026
+last_updated: 2026-11-13
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: estate-wealth-tax
+type: computation
 ---
 
-# US Form 1041 Trust And Estate Income
+# US Form 1041, income tax of estates and trusts, tax year 2026
 
-## US Form 1041 — Income Tax Return for Estates and Trusts
+> **Source-cited draft.** Built from Rev. Proc. 2025-32 (2026 inflation amounts), the 2025 Form 1041, its 2025 instructions (the latest published; they also give the 2026 estimated tax rule) and 26 U.S.C. 642, 644, 645, 651, 661, 663, 1411, 6012, 6072 and 6654, with Public Law 119-21 section 70110 for section 67(g), read on 2026-11-13. No accountant has reviewed it. All outputs must be reviewed by a qualified tax professional before filing.
 
-Tax year 2025. Federal only. This skill assumes a human Circular 230 practitioner (Enrolled Agent, CPA, attorney) reviews and signs every 1041 before it reaches the fiduciary or the IRS. Where computations interact with state fiduciary income tax, defer to a state-level skill — the federal mechanics here are the input layer.
+**Answer first.** For 2026, income kept in an estate or trust is taxed at 10%, 24%, 35% and **37% above USD 16,000** of taxable income. Qualified dividends and long-term gains are taxed at 0% up to **USD 3,300**, 15% up to **USD 16,250** and 20% above. The 3.8% net investment income tax applies to the lesser of undistributed net investment income and adjusted gross income above **USD 16,000**. Income paid out to beneficiaries (up to DNI) is deducted by the trust and taxed to them on their own returns through Schedule K-1, so distribution, including within 65 days after year end under section 663(b), is the main planning lever. A calendar-year 2026 Form 1041 is due **15 April 2027**; Form 7004 extends it 5 1/2 months.
 
-## 1. Scope
+## Scope and who this is for
 
-This skill produces Form 1041 (U.S. Income Tax Return for Estates and Trusts) for the 2025 tax year. It covers:
+In scope, for tax year 2026:
 
-- Decedent's estate (the taxable entity that springs into existence at the moment of death and persists until the executor closes the estate).
-- Irrevocable trusts (both inter vivos and testamentary) that are NOT grantor trusts for income tax purposes under IRC §§671–679.
-- Revocable trusts that have become irrevocable by reason of the grantor's death — i.e. the typical revocable living trust ("RLT") after the date of death.
-- §645 election filings combining a qualified revocable trust ("QRT") with the related decedent's estate into a single 1041 (one EIN, one return, one fiscal year).
+- **A decedent's estate**, from the date of death until administration ends.
+- **Irrevocable trusts** (lifetime or under a will) that are not grantor trusts under sections 671 to 679.
+- **Revocable living trusts after the grantor's death**, when they become irrevocable.
+- **Section 645 filings** combining a qualified revocable trust with the estate on one return.
 
-It does NOT cover:
+Out of scope, and where it goes:
 
-- **Form 706 — Estate Transfer Tax.** That is a wealth-transfer tax on the gross estate at death, computed once. Form 1041 is an income tax on income earned by the estate or trust AFTER death (or after the trust became a separate taxable entity). These two returns share facts (date of death, fair market values, §691 IRD items, the §642(g) election) but are distinct returns. See the companion skill `us-estate-gift-706-709` for transfer tax.
-- **Form 709 — Gift Tax.** That is on lifetime transfers by the living grantor.
-- **Grantor trusts.** Income is reported on the grantor's own Form 1040; the 1041 is either skipped or filed as a one-page informational pass-through (the "grantor trust letter" approach). The mechanics of that letter are discussed in §3.3 but the income computation belongs on Form 1040.
-- **Electing Small Business Trusts (ESBT)** holding S-corporation stock — a sub-trust with its own tax computation under §641(c). Overview only in §15; full mechanics refer-out.
-- **Charitable Remainder Trusts (CRT)** under §664 — a separate 5227 regime. Refer-out.
-- **Charitable Lead Trusts**, **Qualified Personal Residence Trusts (QPRTs)**, **Grantor Retained Annuity Trusts (GRATs)** during the grantor's life (typically grantor trusts), and **Irrevocable Life Insurance Trusts (ILITs)** during the insured's life (typically grantor trusts under §677).
-- **Foreign trusts.** Form 3520-A and 3520 governs. Refer-out.
-- **Bankruptcy estates of individuals.** Separate 1041 regime under §1398 — refer-out.
-- **Pooled income funds** and **§4947(a)(1) nonexempt charitable trusts**.
-- **Split-interest trusts (§4947(a)(2))** — Form 5227.
-- **Common trust funds (§584)** — Form 1065.
+| Topic | Where it goes |
+| --- | --- |
+| Estate tax on the value at death (Form 706), gift tax (Form 709), GST tax, the estate side of DSUE, basis at death | `us-estate-gift-706-709` |
+| Grantor trust income (taxed on the grantor's Form 1040); only the filing options are covered below | `us-form-1040-individual-return` |
+| ESBT computation in detail (overview below) | Refer |
+| Charitable remainder trusts (section 664, Form 5227), split-interest and section 4947(a)(1) trusts, pooled income funds | Refer; `us-charitable-giving-strategies` for planning |
+| Foreign trusts (Forms 3520, 3520-A) | `us-foreign-trust-reporting` |
+| Bankruptcy estates of individuals (section 1398) | Refer |
+| Common trust funds (section 584) | Refer |
+| QBI deduction thresholds and phase-in for 2026 | `us-qbi-deduction` |
+| Net operating loss computation | `us-net-operating-loss-172` |
+| Estimated tax safe harbours in detail | `us-quarterly-estimated-tax` |
+| State fiduciary income tax and trust residency | The state's income tax skill |
 
-## 2. The Big Picture: Why 1041 Exists
+Charitable lead trusts, QPRTs, GRATs during the grantor's life and ILITs during the insured's life are usually grantor trusts; check before preparing a 1041.
 
-When an individual dies, two new federal tax entities can appear:
+## Ask the client first
 
-1. **The estate** — automatically. From the moment of death until the executor closes probate and distributes the residuary assets, there is a separate taxable entity with its own EIN. Any income those assets produce (interest, dividends, rents, gain on sale of assets that appreciated post-death) is taxable to the estate on Form 1041, NOT to the decedent's final 1040 and NOT to the beneficiaries (yet).
+1. **What is the entity?** Estate, trust created during life, trust under a will, or a revocable trust that became irrevocable at death. Get the will or trust instrument.
+2. **Date of death** (for estates and former revocable trusts), and the year end chosen or wanted.
+3. **Does the instrument require all income to be paid out currently?** Does it allow charitable gifts or principal (corpus) distributions? How does it, or state principal and income law, allocate capital gains?
+4. **Every distribution made in 2026 and in the first 65 days of 2027**, by date, beneficiary and amount, and each beneficiary's expected marginal rate.
+5. **Income by character**: interest, ordinary and qualified dividends, tax-exempt interest, short and long-term gains, rents, royalties, business income, IRD items (unpaid wages, IRA distributions, accrued interest).
+6. **Expenses**: trustee or executor fees, legal and accounting fees, investment advisory fees, taxes, and how the trustee allocates each between income and principal.
+7. **Was a Form 706 filed or required?** Estate tax paid, and IRD included in the gross estate (for section 691(c)).
+8. **EIN** for the estate and for the trust; Forms 1099 received under the decedent's SSN versus the new EIN.
+9. **Estimated tax paid** for 2026 and whether any should be passed to beneficiaries (Form 1041-T).
+10. **S corporation stock** held (QSST or ESBT election made?), foreign accounts, nonresident alien beneficiaries.
 
-2. **The trust** — if the decedent had a revocable living trust, that trust ceases to be a grantor trust at death and becomes irrevocable. From that moment, the trust is its own taxable entity with its own EIN, filing its own 1041.
+## The method, step by step
 
-Either of these entities can hold assets for years (estates typically 1–3; trusts can last decades or forever). Each year of existence = one 1041.
+### Rates, bands and thresholds
 
-The defining mechanical feature of 1041 is the **conduit principle**: an estate or trust is a pass-through to the extent it distributes its income, but a taxable entity to the extent it retains income. The trust gets a **distribution deduction** for what flows out, and the beneficiary picks up that income on their own 1040 via a K-1 (Form 1041 Schedule K-1). What stays inside is taxed to the trust at the brutally compressed trust tax brackets (see §6).
+| Item | Amount, 2026 | Source |
+| --- | --- | --- |
+| Ordinary rates, estates and trusts (Table 5): not over USD 3,300 at 10%; over USD 3,300 to USD 11,700, USD 330 plus 24%; over USD 11,700 to USD 16,000, USD 2,346 plus 35% | 10%, 24%, 35% | [Rev. Proc. 2025-32, section 3.01, Table 5](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
+| Top rate: over USD 16,000, USD 3,851 plus 37% of the excess | 37% above USD 16,000 | [Rev. Proc. 2025-32, section 3.01, Table 5](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
+| Maximum zero rate amount for qualified dividends and net capital gain, estates and trusts | USD 3,300 | [Rev. Proc. 2025-32, section 3.03](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
+| Maximum 15% rate amount, estates and trusts (20% above) | USD 16,250 | [Rev. Proc. 2025-32, section 3.03](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
+| Net investment income tax: 3.8% of the lesser of undistributed net investment income and AGI (section 67(e)) above the start of the top bracket (USD 16,000 for 2026) | 3.8% | [26 U.S.C. 1411(a)(2)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap2A-sec1411.htm) |
+| Exemption (section 642(b)): estate USD 600; trust required to distribute all income USD 300; other trusts USD 100 | USD 600 / 300 / 100 | [26 U.S.C. 642(b)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapJ-partI-subpartA-sec642.htm) |
+| Qualified disability trust exemption (section 642(b)(2)(C)(i)) | USD 5,300 | [Rev. Proc. 2025-32, section 3.35](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
+| AMT exemption, estates and trusts (section 55(d)(1)) | USD 31,400 | [Rev. Proc. 2025-32, section 3.10](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
+| AMT exemption phase-out, estates and trusts: begins / complete | USD 104,800 / USD 167,600 | [Rev. Proc. 2025-32, section 3.10](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
+| Filing threshold: estate with gross income of USD 600 or more; trust with any taxable income or gross income of USD 600 or more; any estate or trust with a nonresident alien beneficiary | USD 600 | [26 U.S.C. 6012(a)(3) to (5)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap61-subchapA-partII-subpartB-sec6012.htm) |
+| Due date: 15th day of the 4th month after year end (15 April 2027 for calendar 2026) | 15 April 2027 | [26 U.S.C. 6072(a)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap61-subchapA-partV-sec6072.htm) |
+| Extension on Form 7004 (to 30 September 2027 for calendar 2026) | 5 1/2 months | [Instructions for Form 1041 (2025), Extension of Time To File](https://www.irs.gov/pub/irs-pdf/i1041.pdf) |
+| 65-day election window (section 663(b)): for calendar 2026, distributions through 6 March 2027 | 65 days | [26 U.S.C. 663(b)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapJ-partI-subpartC-sec663.htm) |
+| Estimated tax required if at least USD 1,000 of tax is expected after withholding and credits; estates exempt for years ending before 2 years after death | USD 1,000 | [Instructions for Form 1041 (2025), Estimated Tax](https://www.irs.gov/pub/irs-pdf/i1041.pdf) |
 
-This conduit design — distribute to push income onto beneficiaries' lower-bracket 1040s, or retain to control timing — is the central planning lever and is why the §663(b) 65-day rule (§11) is the single most important post-year-end planning tool a fiduciary has.
+### Step 1. Who files, and the year
 
-## 3. Who Files
+- **Estate**: files for the year of death (a short year from the date of death) and every later year until it closes, when gross income is USD 600 or more or any beneficiary is a nonresident alien. Almost every estate holding investments for a few months must file.
+- **Trust**: files when it has any taxable income, gross income of USD 600 or more, or a nonresident alien beneficiary. Two or more trusts with substantially the same grantors and beneficiaries, formed mainly to avoid tax, are treated as one (section 643(f), for contributions after 1 March 1984).
+- **Closing an estate**: a facts-and-circumstances point, not an IRS event. The practical marker is the final distribution of the residue, a final 1041 marked "Final return" and final K-1s. Administration kept open only to defer tax may be treated as ended (Treas. Reg. 1.641(b)-3(a)), with income then taxed to the beneficiaries.
+- **Year end**: an estate may choose a calendar year or a fiscal year ending on the last day of any month, provided the first year is no longer than 12 months; it is chosen by filing the first return, and a later change needs Form 1128 and consent (section 442). The usual choice is the month end just before the month of death, which gives the longest first year. A trust must use the calendar year (section 644), except tax-exempt and section 4947(a)(1) trusts; a former revocable trust gets a fiscal year only through the section 645 election.
+- **Why fiscal years help an estate**: a beneficiary reports K-1 income in the beneficiary's year that includes the estate's year end. An estate with a year ending 31 May 2027 issues K-1s that go on the beneficiaries' 2027 returns, filed in 2028. A fiscal year also lets a large gain be timed into a beneficiary's lower-income year, and the 65-day rule runs from the fiscal year end.
+- **Short years**: the first and final returns are short years. Income is not annualised; the normal rate table applies.
 
-### 3.1 Decedent's Estate
+### Step 2. Grantor trusts: the filing options
 
-- **1041 filing requirement for estate** — required if the estate has gross income for the year of $600 or more, OR if any beneficiary is a nonresident alien  _(§3.1)_
+A grantor trust's income is taxed to the grantor (sections 671 to 679). The trustee may (Treas. Reg. 1.671-4): (1) file no 1041 where the trust uses the grantor's SSN and payers report to the grantor (most revocable trusts during life); (2) file a Form 1041 with only the entity information, the "Grantor type trust" box checked and an attached grantor statement showing each item by character; or (3) use an optional method, issuing Forms 1099 in the trust's name instead of a 1041. Assignment of wages to a trust does not move the income: salaries stay on the earner's return. At the grantor's death the revocable trust becomes a non-grantor trust and files its own 1041 (or joins the estate under section 645).
 
-The estate of a decedent files Form 1041 for:
+### Step 3. EIN and the split at death
 
-- The taxable year in which the decedent died (the "short year" from date of death to the chosen year-end).
-- Every taxable year thereafter, until the estate is closed.
+Every estate and non-grantor trust needs its own EIN (Form SS-4 or online); the executor or trustee is the responsible party. A trust that was a qualified revocable trust must get a new TIN after the death whether or not section 645 is elected. Give payers Form W-9 with the new number. In the year of death, income to the date of death goes on the decedent's final Form 1040 and income after it on the 1041; where a Form 1099 mixes the two, report the full amount and back out the other part as a nominee amount with a statement.
 
-A 1041 is **required** if the estate has gross income for the year of $600 or more, OR if any beneficiary is a nonresident alien. In practice, almost every estate that holds investment assets for more than a few months will cross $600 in gross income and must file.
+### Step 4. Distributable net income (section 643(a))
 
-> **AUDIT FLASH POINT — Failure to file the estate's first 1041.** When a parent dies and the executor (often a non-tax-professional adult child) is told by the funeral director or attorney to "get an EIN for the estate," that EIN sits on the IRS matching system. If the estate held a brokerage account or rental property that produced 1099 income reported to that EIN, and no 1041 was filed, the IRS will auto-generate a CP259 ("we did not receive your return") notice 12–18 months later, followed by a §6651 failure-to-file penalty (5% per month, capped at 25%) and a §6651(a)(2) failure-to-pay penalty if any tax is due. The first 1041 for a decedent's estate is the most-commonly-missed federal return in private client practice. If a client mentions a parent has died in the last 24 months AND the estate held any income-producing assets, ALWAYS confirm whether a 1041 was filed for the year of death.
+DNI caps both the trust's distribution deduction and what the beneficiaries must include, and sets the character they receive. On Schedule B:
 
-The estate continues as a filing entity until it is "closed" for federal tax purposes — generally when the residuary has been fully distributed and there are no unresolved contingent liabilities. Closing is a facts-and-circumstances determination, not a formal IRS event; the practical marker is that the executor distributes the final residuary assets, files a final 1041 marked "Final return" on the top, and issues final K-1s.
+1. Line 1: adjusted total income (page 1 line 17, with the instructions' adjustments).
+2. Line 2: adjusted tax-exempt interest (tax-exempt interest less expenses allocated to it). Tax-exempt income is in DNI, but no deduction is allowed for distributing it (section 661(c)); the beneficiary keeps it tax-exempt.
+3. Lines 3 to 6: capital gains. By default gains go to principal and are left out of DNI (section 643(a)(3)); they are taxed in the trust. Line 6 removes the page 1 line 4 gain (or adds back a loss).
+4. The exemption is added back: it never reduces DNI.
+5. Line 7: DNI. For a simple trust, extraordinary dividends and taxable stock dividends allocated to principal are also left out (section 643(a)(4)).
 
-The IRS will not let an estate stay open indefinitely just to harvest fiscal-year benefits — Reg. §1.641(b)-3(a) provides that "an estate is considered terminated when the period of administration … has expired." Open-ended administration solely for tax deferral is grounds for the IRS to treat the estate as closed and reallocate income to beneficiaries (Rev. Rul. 76-23).
+**When gains go into DNI** (Treas. Reg. 1.643(a)-3): when they are allocated to income under the instrument or local law; when the trustee, using a discretion given by the instrument or local law, allocates them to income reasonably, impartially and consistently; or when they are actually distributed or used by the fiduciary in deciding the amount distributed. Default: gains stay in the trust unless one of these applies and is documented.
 
-### 3.2 Irrevocable Trust
+### Step 5. Simple or complex, and the distribution deduction
 
-- **1041 filing requirement for irrevocable trust** — files Form 1041 for each year it has: Gross income of $600 or more, OR any taxable income for the year, OR a beneficiary who is a nonresident alien  _(§3.2)_
+**Simple trust (section 651)** for a year when all three hold: the instrument requires all income to be distributed currently; no charitable gifts are provided for; nothing beyond current income is distributed. Otherwise it is complex for that year (section 661). The test is year by year. An estate is always treated like a complex trust.
 
-Any trust that is irrevocable AND not a grantor trust under §§671–679 files Form 1041 for each year it has either:
+| Item | Simple trust | Complex trust or estate |
+| --- | --- | --- |
+| Distribution deduction | Lesser of income required to be distributed and DNI less tax-exempt income | Lesser of amounts paid, credited or required (Tier 1 plus Tier 2) and DNI less tax-exempt income |
+| Exemption | USD 300 | USD 100 (trust); USD 600 (estate) |
+| 65-day election | Not available | Available |
+| Gains in DNI by default | No | No |
+| Charitable deduction (section 642(c)) | No | Yes |
 
-- Gross income of $600 or more for the year, OR
-- Any taxable income for the year, OR
-- A beneficiary who is a nonresident alien.
+Schedule B lines 8 to 15: line 8 accounting income (complex trusts); line 9 income required to be distributed (Tier 1); line 10 other amounts paid or credited (Tier 2); line 11 total; line 12 tax-exempt part; line 13 line 11 less line 12; line 14 DNI less tax-exempt interest; line 15 the smaller of lines 13 and 14, carried to page 1 line 18.
 
-Note the difference from an estate: a trust has the $600 gross income threshold but also files at any positive taxable income.
+**Tiers and character (sections 652(b) and 662(b))**: Tier 1 (required income distributions) takes DNI first; Tier 2 (discretionary and principal) takes what is left. Within each tier, each beneficiary gets a pro rata share of every class of income in DNI (interest, qualified and ordinary dividends, tax-exempt interest, rents, royalties, foreign income, and gains only if they are in DNI). The separate share rule (section 663(c)) treats substantially separate shares as separate trusts for DNI.
 
-### 3.3 Grantor Trust — Special Filing
+### Step 6. Taxable income and the tax
 
-- **Grantor trust** — a grantor trust under §§671–679 is one where the grantor (or a substantial owner) is treated as the owner of the trust's assets for income tax purposes. The income is taxed to the grantor on her own 1040, not to the trust.  _(§§671–679)_
+Page 1: total income, less deductions (fiduciary fees, legal and accounting fees, taxes, the section 691(c) deduction), less the distribution deduction (line 18), less the exemption (line 21) = taxable income (line 23). Then:
 
-The trustee has three filing options:
+1. **Regular tax** from Table 5 on ordinary income, with qualified dividends and net capital gain taxed in the 0% band to USD 3,300, the 15% band to USD 16,250 and 20% above, stacked on top of ordinary income.
+2. **Net investment income tax** (Form 8960): 3.8% of the lesser of undistributed net investment income and AGI above USD 16,000. AGI for this purpose is figured under section 67(e), after the distribution deduction and the exemption. Grantor trusts, charitable trusts and some others are not subject to it.
+3. **AMT** (Schedule I): exemption USD 31,400, phased out between USD 104,800 and USD 167,600.
+4. **Credits and payments**: estimated tax, Form 7004 payment, withholding.
 
-1. **No 1041 filed.** Available if the trust uses the grantor's SSN as its TIN and all trust income is reported on 1099s issued to the grantor. Reg. §1.671-4(b)(2)(i)(A). Most common for revocable living trusts during the grantor's life.
+Why it matters: an individual pays 37% only on taxable income above USD 640,600 (single, 2026, Rev. Proc. 2025-32 Table 3); a trust reaches 37% at USD 16,000. Retained investment income above USD 16,000 bears 37% plus 3.8% (40.8%); retained long-term gain above USD 16,250 bears 20% plus 3.8%. Pushing income to a beneficiary in a lower bracket usually saves tax; that is the design of subchapter J.
 
-2. **Form 1041 filed with zero income on the face, attaching a "grantor trust letter"** to the grantor reporting the items by character (interest, dividends, capital gain, etc.). The trust enters its name and EIN at the top, checks the "Grantor Type Trust" box in Part A, fills in the entity information, but reports no income on the body of the return.
+**Material participation by a trust** (passive loss and NIIT on business or rental income): Frank Aragona Trust v. Commissioner, 142 T.C. 165 (2014), held that a trust can materially participate through its trustees' work. Guidance is unsettled. Default: treat the trust as not participating unless the trustees do the work directly and substantially.
 
-3. **Optional method 1 or 2** under Reg. §1.671-4(b) — the trustee files Forms 1099 in the trust's name, transferring the income reporting role to the trust without filing a 1041. Used for some commercial grantor trusts.
+### Step 7. Expenses: deductible, and where
 
-The triggering event for a revocable living trust to STOP being a grantor trust is the grantor's death. From the date of death forward, the former RLT is an irrevocable non-grantor trust and files its own 1041 under §3.2 above (unless §645 election made; see §13).
+- **Section 67(e)**: costs paid because the property is held in a trust or estate and that would not otherwise have been incurred (fiduciary fees, the fiduciary's legal and return preparation costs) are deducted in arriving at AGI. Knight v. Commissioner, 552 U.S. 181 (2008): costs an individual would commonly incur (investment advice) do not qualify.
+- **Section 67(g)**: miscellaneous itemized deductions are disallowed for years beginning after 2017, now with no end date (Public Law 119-21 section 70110 struck "and before January 1, 2026"). So investment advisory fees that are not unique to a trust stay non-deductible in 2026.
+- **Section 691(c)** is not a miscellaneous itemized deduction (section 67(b)(7)) and stays deductible.
+- **Section 642(g)**: administration expenses (executor and attorney fees, court costs, appraisal fees) and casualty or theft losses during administration may be deducted on Form 706 (section 2053 or 2054) or on Form 1041, not both. Choose item by item; each item goes wholly to one return. For the 1041, attach a statement listing the items and waiving the Form 706 deduction for them.
 
-### 3.4 §645 Election Combined Filing
+| Estate's position | Usually deduct on |
+| --- | --- |
+| No Form 706 required (estate below USD 15,000,000 for a 2026 death) | Form 1041; the 706 deduction would be wasted |
+| Taxable on Form 706; most income retained in the estate | Model both; 40% estate tax often beats the income tax saving |
+| Taxable on Form 706; large income at 37% plus 3.8% in the estate or flowing to high-bracket beneficiaries | Model both; the 1041 often wins because it cuts DNI and so the K-1 income |
 
-- **Qualified revocable trust (QRT) §645 election** — A qualified revocable trust (QRT) — i.e. a revocable trust that became irrevocable at the grantor's death — can elect under §645 to be treated as part of the decedent's estate for federal income tax purposes.  _(§645)_
-- **§645 election mechanics** — Combines the QRT and the estate into ONE Form 1041. One EIN (the estate's), one return, one fiscal year (estate's choice). Election made by filing Form 8855 by the due date (including extensions) of the first 1041 for the combined entity. Election is irrevocable. Election period: ends at the earlier of (a) two years after death if no federal estate tax return is required, OR (b) if a 706 is required, the later of two years after death or six months after the final determination of estate tax liability, OR (c) the earlier of those plus the date the combined entity is closed.  _([§645; Form 8855](https://www.irs.gov/instructions/i1041))_
+### Step 8. The 65-day election (section 663(b))
 
-The §645 election is almost always advantageous when a 1041 must be filed for both the estate AND a substantial RLT, because:
+A complex trust or an estate may elect to treat amounts paid or credited in the first 65 days of the year as paid on the last day of the year before. For a calendar 2026 return, the window is 1 January to 6 March 2027.
 
-- One return instead of two (administrative simplification).
-- Fiscal year for the combined entity (trusts alone are stuck with calendar year).
-- One §642(b) personal exemption ($600 estate exemption, not the $100/$300 trust exemption — see §12).
-- The trust gets the estate's first-2-years exemption from §6654(a) quarterly estimated payments (see §16).
-- One pool of DNI to plan distributions against.
+- **Made by** checking Question 6 under Other Information on a Form 1041 filed by the due date, including extensions. It is irrevocable and is made year by year. The amount elected cannot exceed the greater of the trust's accounting income and its DNI for the year, less amounts already paid, credited or required to be distributed in that year.
+- **Not on an amended return.** A return filed on time without the election loses it. If the numbers are not ready by 15 April, extend on Form 7004, make the distributions, then file with the election.
+- **Process**: draft the return without the election; compare the trust's marginal rate with each beneficiary's; distribute in January to early March; elect. Worked case 2 is this decision.
 
-See §13 for full mechanics and worked Example 2.
+### Step 9. Section 645: combining a revocable trust with the estate
 
-### 3.5 Decision Tree — Who Files What
+- A **qualified revocable trust** is a trust treated as owned by the decedent under section 676 at death (a typical revocable living trust).
+- The trustee and the executor (or the trustee alone if there is no executor) elect on **Form 8855** by the due date, including extensions, of the estate's first Form 1041. It is irrevocable.
+- **Election period**: from death to the earlier of the day the trust and estate have distributed everything, or the day before the applicable date. The applicable date is 2 years after death if no Form 706 is required; if Form 706 is required, the later of 2 years after death and 6 months after the final determination of estate tax.
+- **Effect**: one return under the estate's name and EIN (the trust keeps its own TIN with payers); the estate's fiscal year; one USD 600 exemption; the estate's two-year estimated tax exemption; the estate's two-year section 469(i) treatment for rental real estate. After the period ends, the trust is treated as a new trust filing on a calendar year.
 
+| Point | Without section 645 | With section 645 |
+| --- | --- | --- |
+| Returns | Two | One |
+| Trust's year | Calendar | Estate's fiscal year |
+| Exemption | USD 600 estate plus USD 100 trust | USD 600 only |
+| Estimated tax, first 2 years | Trust exempt only if it receives the residue under the will (section 6654(l)(2)(B)) | Combined entity exempt as an estate |
+
+Decision: estate only (no revocable trust); estate plus a separate trust on a calendar year; or one combined return under section 645, usually best. Where the revocable trust holds everything and there is no probate estate, a trust-only return may be all that is needed.
+
+### Step 10. Income in respect of a decedent (section 691)
+
+IRD is income the decedent had a right to before death but had not received and that was not on the final Form 1040: unpaid wages, accrued bond interest to the date of death, the remaining installments of an installment sale, traditional IRA and qualified plan balances, accrued Series EE interest, renewal commissions, crop share rents, lottery annuity payments.
+
+- Taxed to whoever receives it (estate, trust or beneficiary), in the year received, with the character it would have had for the decedent. If distributed, it flows out through DNI with that character.
+- **No step-up**: IRD gets no section 1014 basis increase.
+- **Section 691(c) deduction**: where estate tax was paid and the gross estate included IRD, the recipient deducts the estate tax attributable to it: the estate tax paid minus the estate tax figured without the net IRD. It is not a miscellaneous itemized deduction (section 67(b)(7)). It flows to beneficiaries on K-1 box 11.
+- **Trap**: IRD is both in the Form 706 gross estate and taxed as income. That is correct; the relief is the section 691(c) deduction, not leaving it off either return. Always compute it when Form 706 showed tax and IRD exists. With no estate tax there is no section 691(c) deduction.
+
+### Step 11. Schedule K-1 (Form 1041) and the final year
+
+Each beneficiary who receives DNI gets a K-1: box 1 interest; 2a and 2b ordinary and qualified dividends; 3 net short-term gain; 4a to 4c net long-term gain (28% rate gain and unrecaptured section 1250 gain shown separately); 5 other portfolio and nonbusiness income; 6 ordinary business income; 7 net rental real estate income; 8 other rental income; 9 directly apportioned deductions (depreciation, depletion, amortization); 10 estate tax deduction (section 691(c)); 11 final year deductions; 12 AMT items; 13 credits (code A estimated tax passed out); 14 other information (tax-exempt interest, foreign items, NIIT items, section 199A information). Beneficiaries report the items on their own Form 1040 (interest and dividends on Schedule B, gains on Schedule D, and the rest on Schedule E Part III), keeping the character.
+
+- **Depreciation, depletion and amortization** are split between the trust and beneficiaries in proportion to accounting income kept and distributed. The trust may elect under section 266 to capitalise carrying charges.
+- **Final year**: unused capital loss and NOL carryovers pass to the beneficiaries who receive the residue (section 642(h)(1)), and the final year's excess deductions pass out under section 642(h)(2). Under Treas. Reg. 1.642(h)-2 (T.D. 9918, 2020) excess deductions keep their character: section 67(e) costs remain deductible in arriving at AGI for the beneficiary; others may be disallowed as miscellaneous itemized deductions.
+- **NOLs** stay in the trust or estate during its life and only pass out at termination; their computation belongs in `us-net-operating-loss-172`.
+
+### Step 12. Estimated tax and Form 1041-T
+
+- Trusts, and estates after their first 2 years, pay estimated tax on Form 1041-ES if they expect at least USD 1,000 of tax after withholding and credits (safe harbours in `us-quarterly-estimated-tax`). Quarterly dates for calendar 2026: 15 April, 15 June and 15 September 2026, and 15 January 2027.
+- **Estate exemption (section 6654(l)(2))**: no estimated tax for a taxable year ending before 2 years after death, for the estate and for a trust that was wholly owned by the decedent and receives the residue under the will.
+- **Section 643(g)**: a trust (or an estate, in its final year only) may treat part of its estimated payments as paid by beneficiaries. File Form 1041-T by the 65th day after year end (6 March 2027 for calendar 2026); the amount goes in K-1 box 13 code A. It pairs with the 65-day election.
+
+### Step 13. Other topics in outline
+
+- **ESBT (section 1361(e), section 641(c))**: a trust holding S corporation stock must be a QSST or ESBT or the S election fails. An ESBT's S portion is taxed separately at 37% (with the capital gain rates for its gains), with no distribution deduction and no exemption; the rest is taxed as a normal trust. The election is due within 2 months and 16 days after the trust acquires the stock. Full mechanics, including QBI between the portions, are referred.
+- **Section 199A**: a non-grantor trust is a separate taxpayer for the QBI deduction on QBI it keeps; QBI passed out goes to beneficiaries through K-1 box 14. Trusts use the individual thresholds (not compressed ones); the 2026 amounts are in `us-qbi-deduction`. Trusts formed mainly to multiply the deduction are disregarded (Treas. Reg. 1.643(f)-1).
+- **State fiduciary income tax**: most states copy the federal return with changes; trust residency can depend on the testator's state, the trustee's, the beneficiaries' or where the trust is run. Use the state skill.
+
+## Boundary and exception table
+
+| Situation | Treatment |
+| --- | --- |
+| Trust required to pay out all income, but trustee also pays principal this year | Complex for this year |
+| Estate | Always complex; USD 600 exemption |
+| Capital gain sold and proceeds not distributed, instrument silent | Gain stays in the trust, outside DNI |
+| Distributions exceed DNI | Excess is a tax-free principal distribution to the beneficiary |
+| Distribution made 20 March 2027 for a calendar 2026 trust | Outside the 65-day window; a 2027 distribution |
+| 65-day election omitted on a timely return | Lost; cannot be added on an amended return |
+| Former revocable trust, no section 645 election | Calendar year, own EIN, USD 100 (or USD 300) exemption |
+| IRD received by an estate below the Form 706 threshold | Taxable income; no section 691(c) deduction |
+| Investment advisory fees in 2026 | Not deductible (section 67(g)) unless unique to the trust |
+| Qualified disability trust | USD 5,300 exemption |
+
+### Defaults when a fact is missing
+
+| Missing fact | Default | Flag |
+| --- | --- | --- |
+| How the instrument allocates capital gains | Gains to principal, outside DNI | Read the instrument and state law |
+| Allocation of trustee fees between income and principal | Follow the trustee's accounting; deduct the full fee on the return | Allocate part to tax-exempt income |
+| Whether the trust materially participates | Not participating | Frank Aragona facts needed |
+| Whether a 65-day distribution is intended | Extend on Form 7004 rather than file without the election | Decision before the extended due date |
+| Whether Form 706 was filed | Ask; do not compute section 691(c) without it | Estate tax paid and IRD values |
+| Year end for a new estate | Ask; if undecided, the month end before the month of death | First return fixes it |
+
+### Red flags
+
+| Red flag | Why it matters |
+| --- | --- |
+| Parent died in the last 24 months, estate EIN obtained, income-producing assets, no 1041 filed | The most commonly missed return: IRS notice CP259, then section 6651 penalties (5% a month to 25% for late filing, plus late payment) |
+| Forms 1099 still issued to the decedent's SSN after death | Nominee reporting and payer correction needed |
+| Estate kept open with no administration left | Risk the IRS treats it as closed |
+| Retained income far above USD 16,000 with discretionary beneficiaries in low brackets | Consider distribution and the 65-day election |
+| IRD and a taxable Form 706 with no section 691(c) deduction | Overpaid income tax |
+| Trust holds S stock with no QSST or ESBT election | S election at risk |
+
+## Worked cases
+
+### Case 1. Complex trust keeps its interest income, 2026
+
+A discretionary trust (calendar year, complex) has USD 30,000 of taxable interest in 2026, pays USD 2,000 of trustee fees (deductible under section 67(e)) and distributes nothing. Exemption USD 100. Taxable income USD 27,900. Regular tax = USD 3,851 + 37% x (USD 27,900 minus USD 16,000) = USD 8,254. Net investment income kept USD 28,000 (interest less the fee); AGI over USD 16,000 is USD 11,900, the lesser, so NIIT = 3.8% x USD 11,900 = USD 452.20. Total USD 8,706.20.
+
+```oa-check
+name: Complex trust, 30,000 interest retained (2026)
+inputs:
+  interest: 30000
+  trustee_fees: 2000
+  exemption: 100
+  distribution_deduction: 0
+  top_start: 16000
+steps:
+  - taxable_income: interest - trustee_fees - distribution_deduction - exemption
+  - regular_tax: 3851 + (taxable_income - top_start) * 0.37
+  - undistributed_nii: interest - trustee_fees - distribution_deduction
+  - niit: min(undistributed_nii, max(taxable_income - top_start, 0)) * 0.038
+  - total_tax: regular_tax + niit
+expected:
+  taxable_income: 27900
+  regular_tax: 8254.00
+  undistributed_nii: 28000
+  niit: 452.20
+  total_tax: 8706.20
 ```
-Did the taxpayer die?
-├── No → not a 1041 issue (yet). Trust-only analysis only.
-│
-└── Yes → there is an estate. Did the decedent have an RLT?
-    ├── No, no RLT → Estate-only 1041. Decide fiscal vs calendar year (§4).
-    │
-    └── Yes, had an RLT → Three options:
-        ├── (a) Estate-only 1041 + separate Trust 1041 (calendar year for trust).
-        ├── (b) §645 election → ONE combined 1041 with estate's fiscal year. File
-        │       Form 8855. Default choice for most.
-        └── (c) Pour-over RLT funded immediately at death and "estate" is essentially
-                empty → only Trust 1041 (calendar year). Rare; only when there's truly
-                no probate estate.
+
+### Case 2. Decision: distribute by 6 March 2027 and elect under section 663(b)?
+
+Same trust. The beneficiary is in the 24% bracket and below her own NIIT threshold. The trustee pays her USD 11,900 on 20 February 2027 and elects to treat it as paid in 2026. DNI (USD 28,000 less nothing tax-exempt) covers it. Trust taxable income falls to USD 16,000: tax USD 3,851, no NIIT. Trust saving USD 4,855.20; her extra tax 24% x USD 11,900 = USD 2,856. Family saving USD 1,999.20: **distribute and elect** on a timely Form 1041 (extend if needed).
+
+```oa-check
+name: 65-day election decision, beneficiary at 24% (2026 trust year)
+inputs:
+  tax_before: 8706.20
+  taxable_income: 27900
+  undistributed_nii: 28000
+  distribution: 11900
+  beneficiary_rate: 0.24
+  top_start: 16000
+steps:
+  - ti_after: taxable_income - distribution
+  - regular_after: 3851 + max(ti_after - top_start, 0) * 0.37
+  - niit_after: min(undistributed_nii - distribution, max(ti_after - top_start, 0)) * 0.038
+  - trust_saving: tax_before - regular_after - niit_after
+  - beneficiary_tax: distribution * beneficiary_rate
+  - family_saving: trust_saving - beneficiary_tax
+  - elect: min(max(family_saving, 0), 1)
+expected:
+  ti_after: 16000
+  regular_after: 3851.00
+  niit_after: 0.00
+  trust_saving: 4855.20
+  beneficiary_tax: 2856.00
+  family_saving: 1999.20
+  elect: 1
 ```
 
-## 4. Taxable Year — Estates vs Trusts
+The regular tax formula above is the top-bracket line of Table 5; it holds only at or above USD 16,000. Below that, use the lower lines. A beneficiary above her own NIIT threshold adds 3.8% to her cost; a beneficiary at 35% or 37% may make the push a loss, so compare rates per beneficiary.
 
-This is one of the most commercially important distinctions in subchapter J.
+## When to refuse or refer
 
-### 4.1 Estates — Choice of Calendar or Fiscal Year
-
-- **Estate year election** — An estate may elect either: Calendar year (Jan 1 – Dec 31), OR Fiscal year ending on the last day of any month other than December, provided the first taxable year does not exceed 12 months from the date of death. The fiscal-year election is made simply by filing the first 1041 with the chosen year-end on the return. No separate form. Once chosen, the year-end is locked in (a change requires Form 1128 and IRS consent under §442).  _(§442)_
-
-The most common fiscal-year choice is the month-end immediately preceding the month of death — e.g. decedent dies June 14, 2025; estate elects a fiscal year ending May 31, giving the longest possible first taxable year (just shy of 12 months, June 14, 2025 to May 31, 2026).
-
-### 4.2 Why Fiscal Year Matters — The Deferral Lever
-
-A fiscal year-end gives the estate three planning advantages:
-
-1. **Income deferral on the K-1.** Beneficiaries report K-1 income in their tax year that includes the LAST DAY of the estate's fiscal year. An estate with a fiscal year ending May 31, 2026 issues K-1s to beneficiaries that they pick up on their 2026 1040 (filed by April 15, 2027). Income that was earned by the estate as far back as June 2025 doesn't hit beneficiaries' returns until April 2027 — nearly two years of deferral.
-
-2. **Spread of bunched IRD or large gains.** If the estate sells a major asset (e.g. a residence held until probate is complete), the gain can be timed against a fiscal year-end that pushes the K-1 into the beneficiary's lower-income year.
-
-3. **Stacking distributions and the §663(b) 65-day rule (§11).** The 65-day rule applies to the FISCAL year, not just calendar year. A May 31 fiscal year-end means the 65-day election covers distributions through approximately August 4.
-
-### 4.3 Trusts — Calendar Year Mandatory (§644)
-
-- **Trust calendar year requirement** — Trusts other than tax-exempt trusts and wholly-charitable trusts are required to use the calendar year (§644, enacted by the Tax Reform Act of 1986). There is no fiscal-year option for trusts. The only way to get a fiscal year for a former-RLT-now-irrevocable-trust is to make the §645 election (see §13) and ride on the estate's fiscal year.  _(§644)_
-
-### 4.4 Short-Year Mechanics
-
-- **Short-year mechanics** — Both the first 1041 (from date of death to year-end) and the final 1041 (from prior year-end to date of termination) are short-year returns. They do NOT annualize income (trusts and estates are not subject to §443 annualization for short periods). The tax on a short-year 1041 is computed using the regular trust/estate rate tables, not annualized rates.  _(§443)_
-
-## 5. EIN and Initial Setup
-
-Every estate and every non-grantor trust must obtain its own EIN. Application is via Form SS-4 or online at irs.gov/ein. The executor or trustee is the "responsible party."
-
-Use the EIN for:
-
-- All trust/estate bank and brokerage accounts.
-- 1099 reporting (asset producers should re-issue 1099s to the EIN starting from date of death; allocations are needed for the cusp year — pre-death income on the decedent's final 1040, post-death income on the estate's 1041).
-- W-9 to all asset payers.
-
-The split of 1099 income across the date of death is mechanical: a Schedule B-style schedule reconciles the brokerage 1099 to (a) pre-death amount on the final 1040 and (b) post-death amount on the 1041. The IRS matching system will reconcile the SSN side; on the EIN side, attach a Schedule B nominee statement showing the allocation.
-
-## 6. The Compressed Bracket Cliff (Tax Year 2025)
-
-This is the most important practical fact in the 1041 universe.
-
-### 6.1 The 2025 Ordinary Rate Schedule for Estates and Trusts (§1(e))
-
-**2025 Ordinary Rate Schedule for Estates and Trusts**  _(§1(e))_
-
-| Taxable income (over) | But not over | Rate |
+| Code | Situation | Action |
 | --- | --- | --- |
-| $0 | $3,150 | 10% |
-| $3,150 | $11,450 | 24% |
-| $11,450 | $15,650 | 35% |
-| $15,650 | — | **37%** |
+| R-1041-ESBT | ESBT computation, S portion and QBI split | Refer to a specialist |
+| R-1041-CRT | Charitable remainder trust, Form 5227, split-interest trust | Refer |
+| R-1041-FOREIGN | Foreign trust, or a US trust with foreign grantor issues | `us-foreign-trust-reporting`; refer |
+| R-1041-BANKR | Bankruptcy estate (section 1398) | Refer |
+| R-1041-THROWBACK | Accumulation distribution from a foreign or pre-1984 trust (Schedule J throwback) | Refer |
+| R-1041-PARTIC | Business or rental income where material participation by the trust decides the tax | Flag; reviewer decides on the facts |
+| R-1041-GRANTOR | The trust may be a grantor trust (retained powers) | Resolve grantor status before preparing a 1041 |
+| R-1041-706 | Estate tax computation or the Form 706 side of section 642(g) | `us-estate-gift-706-709` |
 
-Compare to single individual 2025: 37% top rate starts at $626,350 of taxable income. An estate or trust hits the 37% bracket at $15,650 — 1/40th of the threshold for a single individual.
+## Filing and payment
 
-### 6.2 The 2025 Long-Term Capital Gain / Qualified Dividend Schedule (§1(h))
-
-**2025 LTCG/QDI Schedule for Estates and Trusts**  _([§1(h)](https://www.irs.gov/instructions/i1041))_
-
-| Taxable income (over) | But not over | LTCG / QDI rate |
+| Item | Calendar 2026 | Fiscal year |
 | --- | --- | --- |
-| $0 | $3,250 | 0% |
-| $3,250 | $15,900 | 15% |
-| $15,900 | — | **20%** |
+| Form 1041 and K-1s due | 15 April 2027 | 15th day of the 4th month after year end (year ending 31 May 2027: 15 September 2027) |
+| Form 7004 extension | 5 1/2 months, to 30 September 2027 | 5 1/2 months from the original due date |
+| Tax due | 15 April 2027; the extension does not extend payment | Original due date |
+| Form 8855 (section 645) | Due date of the estate's first 1041, with extensions | Same |
+| Form 1041-T (section 643(g)) | 6 March 2027 | 65th day after year end |
+| 65-day election | On the timely 2026 return | On the timely return for that year |
 
-The 20% LTCG rate hits at $15,900 of taxable income for a trust/estate. The corresponding single-individual threshold is $533,400.
+Form 1041 can be e-filed through MeF (Forms 8453-FE or 8879-F for signature). If a due date falls on a weekend or legal holiday, file the next business day.
 
-### 6.3 Net Investment Income Tax — §1411
+## Completion checklist
 
-- **NIIT rate for trust/estate** — 3.8% percent  _(§1411)_
-- **NIIT computation base** — A trust or estate is subject to NIIT at 3.8% on the LESSER of: Undistributed net investment income for the year, OR The excess of adjusted gross income (a modified concept for trusts/estates — see §1411(a)(2)(B)) over the dollar amount at which the highest bracket begins, i.e. $15,650 for 2025.  _(§1411(a)(2)(B))_
-- **Individual NIIT threshold comparison** — $200,000 single MAGI ($250,000 MFJ)  _(§1411; comparison text: a trust crosses the NIIT cliff at 1/12th the single threshold)_
+- Estate's first 1041 filed when gross income reached USD 600, even with no tax.
+- EIN for the estate, and for the trust if no section 645 election; payers given W-9s; year-of-death 1099s split with nominee statements.
+- Year end chosen for the estate on the first return; trust on calendar year unless section 645 applies.
+- Form 8855 filed if a revocable trust exists and the election is wanted.
+- DNI computed with gains outside it unless a Treas. Reg. 1.643(a)-3 exception is met and documented.
+- Distribution deduction is the lesser of distributions and DNI, less tax-exempt income.
+- 65-day election decided and made on a timely return; extension filed if needed.
+- Section 642(g) statement attached for expenses deducted on the 1041.
+- IRD identified, taxed when received, no step-up; section 691(c) computed when estate tax was paid.
+- K-1s show each beneficiary's pro rata share by character.
+- NIIT on Form 8960 and AMT on Schedule I checked.
+- Estimated tax: trusts pay; estates exempt for their first 2 years; Form 1041-T considered.
+- Final return marked "Final return"; section 642(h) carryovers and excess deductions on final K-1s.
 
-Material participation by a trust (which can spare it from passive-activity-loss trapping and NIIT on rental income) is an unresolved area — the Frank Aragona Trust case (Tax Court 2014) held that a trust can materially participate through its trustees' personal activities. The IRS has not issued definitive guidance. Conservative default: treat the trust as not materially participating unless the trustee performs the activity directly and substantially.
+## Sources
 
-### 6.4 The Planning Implication
-
-Every dollar of taxable income above $15,650 is taxed at 37% federal ordinary (or 20% LTCG) PLUS 3.8% NIIT if investment in character. That is 40.8% federal on ordinary investment income; 23.8% on LTCG. Compare to an individual beneficiary in the 24% bracket: 24% on ordinary, 15% on LTCG.
-
-Therefore: **distribute aggressively to push income onto lower-bracket beneficiaries.** This is the design intent of subchapter J — the conduit principle aligned with the compressed brackets is the legislative push to keep income flowing rather than accumulating inside a trust.
-
-The §663(b) 65-day rule (§11) is the principal post-year-end mechanic to fix under-distributions and avoid the cliff.
-
-## 7. Distributable Net Income — §643(a)
-
-DNI is the single most important computed number on Form 1041. It does two things:
-
-1. Caps the trust's distribution deduction (a trust deducts the lesser of actual distributions or DNI).
-2. Caps the beneficiaries' includible amount (a beneficiary picks up the lesser of actual distributions or DNI), with character flowing through pro rata.
-
-### 7.1 The Computation Under §643(a)
-
-- **DNI Computation** — Taxable income (before distribution deduction and personal exemption) + Personal exemption (§642(b)) — added back so the exemption doesn't reduce DNI + Tax-exempt interest, NET OF expenses allocated to it − Capital gains allocated to corpus (NOT to income beneficiaries; default rule) + Capital losses (to the extent they offset ordinary income) ± Extraordinary dividends and taxable stock dividends (simple trust only — §643(a)(4)) −/+ Other §643(a) adjustments (foreign income for foreign trusts; charitable deductions reallocated; etc.) = Distributable Net Income (DNI)  _(§643(a))_
-
-The big swing items are capital gains and tax-exempt interest.
-
-### 7.2 Capital Gains and DNI
-
-- **Default capital gains treatment** — Default rule under §643(a)(3): capital gains are EXCLUDED from DNI because they are "allocated to corpus" under most state principal-and-income acts and most trust instruments. The trust pays the capital gains tax itself (at the compressed brackets in §6.2), and the gain does NOT flow out to beneficiaries.  _(§643(a)(3))_
-- **Overrides to capital gains default** — This default can be overridden if ANY of the following is true under Reg. §1.643(a)-3: 1. The trust agreement allocates capital gains to income. 2. The state statute (state principal-and-income act) treats capital gains as income. 3. The trustee, exercising discretion granted by the agreement or state law, in a "reasonable and impartial" manner allocates capital gains to income — AND has done so consistently year after year. 4. The capital gain is "actually distributed to the beneficiary or utilized by the fiduciary in determining the amount that is distributed."  _(Reg. §1.643(a)-3)_
-
-Practical takeaway: if the fiduciary wants capital gains to flow to beneficiaries (to escape the trust's 20% LTCG cliff), the trust agreement should expressly authorize it, the trustee should establish a consistent pattern of allocating CG to income, AND the gain should be actually distributed in the year recognized. Conservative default: assume CG stays in the trust unless one of (1)–(4) is met and documented.
-
-### 7.3 Tax-Exempt Interest and DNI
-
-- **Tax-exempt interest treatment in DNI** — Tax-exempt interest is INCLUDED in DNI (notwithstanding that it's not in taxable income), because §661(c) requires the distribution deduction to be reduced by the proportion of the distribution that consists of tax-exempt income. The trust gets no deduction for distributing tax-exempt interest, and the beneficiary picks it up character-preserved (still tax-exempt on the beneficiary's return).  _(§661(c))_
-
-### 7.4 The Tier System for Character Allocation (§652(b), §662(b))
-
-- **Tier system for character allocation** — When distributions to multiple beneficiaries are less than the total income, the character of distributed income is allocated pro rata to each beneficiary based on the items making up DNI. Mechanically: compute DNI, break it into character (interest, qualified dividends, ordinary dividends, LTCG, STCG, tax-exempt, foreign-source, rental, royalties). Each beneficiary's K-1 reflects their pro rata share by character. For complex trusts with both required and discretionary distributions, character is first allocated to Tier 1 (required) and then to Tier 2 (discretionary): - **Tier 1** = required current distributions of income (a "right to demand"). - **Tier 2** = all other distributions (discretionary by trustee). Tier 1 fills first, Tier 2 fills the remainder. This affects character allocation — required-distribution beneficiaries get a pro rata share of the income character first; discretionary beneficiaries get what's left.  _(§652(b), §662(b))_
-
-## 8. Simple vs Complex Trust
-
-- **Simple trust definition** — A "simple trust" under §651 is one that meets ALL THREE of the following in the taxable year: 1. The trust agreement requires that ALL income (fiduciary accounting income, FAI) be distributed currently. 2. The trust agreement does not provide for charitable distributions. 3. The trust does not distribute amounts other than current income (i.e. no corpus distributions). If any of those three is missing, the trust is "complex" under §661 for that year.  _(§651; §661)_
-
-A trust can be simple in one year and complex in the next — it's a year-by-year determination based on what the trust actually did, not on the trust instrument's classification. Example: a discretionary-income trust that happens to distribute all income in year 1 (with no corpus distribution) is simple for year 1; if in year 2 the trustee also pays a corpus distribution, it's complex for year 2.
-
-### 8.1 Mechanical Differences
-
-**Mechanical Differences: Simple Trust vs Complex Trust/Estate**  _(§651; §661; §642(b); §663(b); §642(c))_
-
-| Item | Simple Trust (§651) | Complex Trust / Estate (§661) |
+| Source | URL | Read on |
 | --- | --- | --- |
-| Distribution deduction = | Lesser of FAI or DNI | Lesser of distributions or DNI |
-| Personal exemption (§642(b)) | $300 | $100 (complex trust); $600 (estate) |
-| 65-day rule available? | No (income must be distributed; nothing to elect on) | Yes (§663(b)) |
-| Capital gains in DNI by default | No | No (same default; but see §7.2 exceptions) |
-| Charitable deductions allowed? | No | Yes (§642(c)) |
-
-- **Estates treated as complex trusts** — Estates are always treated like complex trusts under §661 (they cannot be "simple" because they have discretionary distributions by definition).  _(§661)_
-
-## 9. §651 Simple-Trust Distribution Deduction
-
-- **Simple trust distribution deduction** — Distribution deduction = lesser of (FAI) or (DNI − tax-exempt interest net of allocable expenses)  _(§651(a))_
-
-Note that DNI is reduced by tax-exempt interest for purposes of the deduction (because no deduction is allowed for distributing tax-exempt income), but the beneficiary still receives that tax-exempt character on the K-1.
-
-If the simple trust ACTUALLY distributes more than required (which would violate the simple-trust definition and convert it to complex for that year), the analysis shifts to §661.
-
-## 10. §661 Complex Trust / Estate Distribution Deduction
-
-- **Complex trust/estate distribution deduction** — For a complex trust or an estate, §661(a) allows a deduction equal to the SUM of: 1. The amount of any income required to be distributed currently (Tier 1), AND 2. Any other amounts properly paid, credited, or required to be distributed (Tier 2), LIMITED to DNI, and reduced by the proportion attributable to tax-exempt income under §661(c). ``` Distribution deduction = lesser of (Tier 1 + Tier 2 actual distributions) or (DNI − tax-exempt portion) ```  _(§661(a); §661(c))_
-
-Schedule B of Form 1041 walks through this:
-- Line 1: Adjusted total income (Form 1041 page 1 Line 17 + adjustments)
-- Line 2: Tax-exempt interest
-- Line 6: Gain from page 1, line 4, entered as a negative number (subtract)
-- Line 7: Distributable Net Income (DNI)
-- Line 9: Income required to be distributed (Tier 1)
-- Line 10: Other amounts paid or required (Tier 2)
-- Line 11: Total
-- Line 12: Reduced by tax-exempt amount
-- Line 15: **Distribution deduction** — flows to page 1 Line 18
-
-## 11. The §663(b) 65-Day Rule
-
-This is the single most powerful post-year-end planning tool a fiduciary has.
-
-### 11.1 The Rule
-
-- **§663(b) 65-day rule** — Under §663(b), a complex trust or estate may elect to treat amounts properly paid within the FIRST 65 DAYS of the taxable year as having been paid on the LAST DAY of the PRECEDING taxable year. For a calendar-year trust: distributions made between January 1 and approximately March 6 of 2026 (65 days into 2026) can be elected to be treated as 2025 distributions. For 2025 calendar year, the 65th day of 2026 is March 6, 2026.  _(§663(b))_
-
-### 11.2 Why It Matters
-
-After the calendar year closes (Dec 31, 2025), the fiduciary and tax preparer can:
-
-1. Run a draft 1041 with no 65-day election → see how much taxable income is left in the trust at the compressed brackets.
-2. Compute the marginal benefit of pushing each additional dollar to a beneficiary (trust's bracket minus beneficiary's bracket).
-3. Make actual distributions in January / February 2026 covering income earned in 2025.
-4. Elect under §663(b) on the 2025 1041 to treat those distributions as 2025 distributions.
-
-This converts a planning problem (December-31-or-bust distribution timing) into a post-year-end optimization. Especially valuable when:
-
-- The trust has been holding investment income and is staring at 37% / 20% / 3.8% rates.
-- Beneficiaries are in lower brackets.
-- The trust agreement gives the trustee discretion to distribute (i.e. a complex trust).
-
-### 11.3 Mechanics of the Election
-
-- **65-day election mechanics** — Election is made by checking Box 6 in the "Other Information" section of Form 1041 (the line for §663(b)) AND by attaching a statement specifying the dollar amount of the distribution to be treated as made in the prior year. Election applies separately to each year. The election is limited to the LESSER of: The actual amount distributed in the 65-day window, OR The greater of trust accounting income or DNI for the prior year. The election must be made by the due date (including extensions) of the prior-year 1041.  _(§663(b))_
-
-### 11.4 Trap for the Unwary
-
-> **AUDIT FLASH POINT — §663(b) timeliness.** The 65-day rule election MUST be made on a TIMELY 1041 (including extensions). It cannot be made on an amended return. Many fiduciaries miss this because they file a draft on April 15, intending to "amend later if the 65-day election helps." That doesn't work — once the original return is filed without the election, the election is lost. If the practitioner doesn't have time to compute the optimal distribution by April 15, the right move is to extend the return (Form 7004 — automatic 5.5 months extension), make the distribution and election decisions during the extension period, and file in September with the §663(b) election locked in. ALWAYS extend a 1041 if the 65-day election is in play and not yet decided.
-
-## 12. §642(b) Personal Exemption
-
-**§642(b) Personal Exemption by Entity**  _([§642(b)](https://www.irs.gov/instructions/i1041))_
-
-| Entity | §642(b) Exemption |
-| --- | --- |
-| Estate | **$600** |
-| Simple trust (required to distribute all income) | **$300** |
-| Complex trust / all other trusts | **$100** |
-| Qualified disability trust (§642(b)(2)(C)) | tied to individual exemption — but 2018–2025 TCJA reduced to indexed amount; 2025 = $5,100 |
-
-- **Fixed dollar exemption, no phaseout** — The 1041 personal exemption is fixed dollar amounts (no inflation adjustment, no phaseout for any AGI level). The exemption is taken on Form 1041 Line 21, after the distribution deduction. Note the exemption is added back when computing DNI (§7.1) — it never reduces DNI.  _(§642(b))_
-
-## 13. §645 Election — Combining Estate and QRT
-
-- **Form 8855 §645 election** — Form 8855 is the election to treat a qualified revocable trust (QRT) as part of the decedent's estate for income tax purposes.  _(Form 8855; §645)_
-
-### 13.1 Eligibility
-
-- **§645 eligibility requirements** — "QRT" = a trust that, on the date of the decedent's death, was treated as owned by the decedent under §676 (a typical revocable living trust). The election must be made jointly by the trustee and the executor (or if no executor, by the trustee alone). Must be made by the due date (including extensions) of the FIRST 1041 for the combined entity. Election is irrevocable once made.  _(§676; §645)_
-
-### 13.2 Period of the Election
-
-- **§645 election period** — The election period runs from the date of death to the EARLIEST of: Two years after the date of death (if no Form 706 is required), OR (if a 706 is required) the later of two years after the date of death or six months after the final determination of estate tax liability, OR The date the combined entity is closed/terminated.  _([§645](https://www.irs.gov/instructions/i1041))_
-
-### 13.3 Benefits
-
-**§645 Benefits Comparison Table**  _([§645; §6654(l); §469](https://www.law.cornell.edu/uscode/text/26/6654))_
-
-| Benefit | Without §645 | With §645 |
-| --- | --- | --- |
-| Number of 1041s | 2 (one for estate + one for trust) | 1 |
-| Trust's allowable taxable year | Calendar year required | Estate's fiscal year |
-| Personal exemption | $100 trust + $600 estate = $700 | $600 (one exemption)** |
-| Quarterly estimated tax — first 2 years | Trust must make payments (unless it was treated as owned by the decedent and receives the residue under the will, which is also exempt) | Combined entity exempt (treated as estate) §6654(l) |
-| §469 active participation real estate $25K | Not available to trust | Available to estate-treated entity for 2 years post-death |
-
-** The combined entity uses the estate's $600 exemption, so a small theoretical loss of $200 ($600 + $100 vs. $600). Almost always swamped by the other benefits.
-
-### 13.4 Filing Mechanics
-
-- **§645 filing mechanics** — File Form 8855 by the due date (including extensions) of the first 1041 for the combined entity. The 1041 is filed in the name of the estate, using the estate's EIN. The QRT continues to hold its assets in the trust's name with the trust's EIN at the bank/brokerage level, but for federal income tax it reports under the estate's EIN via the combined 1041. At the end of the §645 election period, the QRT is "deemed distributed" to a new trust and starts filing its own 1041 on a calendar year going forward.  _(Form 8855)_
-
-## 14. §691 — Income in Respect of Decedent ("IRD")
-
-- **Income in Respect of Decedent (IRD)** — IRD is income that the decedent had a RIGHT TO RECEIVE before death but had not actually received and that was not properly includible on the final 1040.  _(§691)_
-
-### 14.1 Common IRD Items
-
-- Unpaid wages earned before death but paid after death.
-- Accrued interest on bonds (the portion accrued from last payment date to date of death).
-- Final installment of an installment sale (§453).
-- Distributions from traditional IRAs and qualified plans (the entire balance — these carry the decedent's untaxed character).
-- Series EE bond accrued but undistributed interest.
-- Renewal commissions to a deceased insurance agent.
-- Crop share rents accrued.
-- Lottery winnings of an annuity-stream lottery.
-
-### 14.2 Tax Treatment
-
-- **IRD tax treatment** — IRD is NOT included on the decedent's final 1040 (because it wasn't received yet). IRD IS included on Form 1041 of the estate (or whichever trust receives it) in the year of receipt. IRD retains its character — interest is interest, wages are wages, capital gain is capital gain. If the estate distributes the IRD to a beneficiary (and DNI permits), the beneficiary picks it up character-preserved on the K-1. **No basis step-up.** Property representing IRD does NOT get the §1014 fair-market-value basis step-up. The estate (or beneficiary) reports the IRD using the decedent's basis. This is a fundamental and frequently-missed point.  _(§691; §1014)_
-
-### 14.3 §691(c) Deduction — Estate Tax Paid on IRD
-
-- **§691(c) deduction** — If estate tax (Form 706) was paid AND the gross estate included IRD, the taxpayer who reports the IRD on income tax gets an itemized deduction under §691(c) for the federal estate tax attributable to the IRD. Mechanically: 1. Compute total estate tax actually paid on the 706. 2. Compute the estate tax that WOULD have been paid if the IRD items had been excluded from the gross estate. 3. Difference = estate tax attributable to IRD. 4. That amount is a §691(c) miscellaneous itemized deduction (NOT subject to the 2% floor; not suspended by TCJA — §67(b)(7)) on the income tax return of whoever pays the income tax on the IRD.  _(§691(c); §67(b)(7))_
-- **§691(c) 2025 status** — For 2025: §691(c) remains allowable as an itemized deduction that bypasses the §67(g) TCJA suspension of misc. itemized deductions. The IRS confirmed this in Rev. Proc. 2018-08 and the 2018 1041 instructions and that position has held through 2025.  _(Rev. Proc. 2018-08; §67(g))_
-
-### 14.4 IRD Double-Counting Trap
-
-> **AUDIT FLASH POINT — IRD double-counting between 706 and 1041.** The same dollar of IRD appears on BOTH the 706 (as part of the gross estate, valued at date of death) AND the 1041 (as income when received). This is correct — it is the rationale for the §691(c) deduction. But many practitioners miss the §691(c) deduction entirely, resulting in the decedent's beneficiaries paying both estate tax AND income tax on the same dollar without the partial offset Congress intended. If the estate is taxable on Form 706 AND has any IRD items, ALWAYS compute the §691(c) deduction and carry it onto the 1041 (or onto the beneficiary's 1040 if the IRD is distributed via K-1). Conversely, do NOT EXCLUDE IRD from the 706 thinking it will be taxed on the 1041 — it must be on both, and the partial offset is the §691(c) deduction, not exclusion.
-
-## 15. §642(g) — Deduction on 706 or 1041, Not Both
-
-- **§642(g) election** — Estate administrative expenses (executor fees, attorney fees, accountant fees, court costs, appraisal fees) and casualty/theft losses incurred during administration can be deducted on EITHER: Form 706 (as a §2053 administrative expense, reducing the taxable estate), OR Form 1041 (as a §212 or §67(e) above-the-line deduction, reducing taxable income), but NOT BOTH. The election is made by filing a written statement with the 1041 specifying the items elected on the 1041 and waiving the 706 deduction for those items.  _(§642(g); §2053; §212; §67(e))_
-
-### 15.1 How to Decide
-
-**How to Decide: 706 vs 1041 deduction**  _(§642(g))_
-
-| Estate's situation | Generally deduct on |
-| --- | --- |
-| Estate is below the 706 filing threshold ($13.99M for 2025 with the OBBBA-extended exemption) — no 706 required | **1041** (the 706 deduction would be wasted) |
-| Estate is taxable on 706 and the marginal estate tax rate (40%) > the marginal income tax rate on the 1041 (37% + 3.8% NIIT) | Close call — model it. Often 1041 because the marginal income rate plus NIIT exceeds 40%. |
-| Estate is taxable on 706 and substantial income flows to high-bracket beneficiaries | **1041** — the deduction on 1041 reduces DNI, which reduces beneficiary K-1 income (offsetting their 37% rate) |
-| Estate is taxable on 706 and most income stays in the estate at lower brackets | Model both. Often **706**. |
-
-- **Knight v. Commissioner fiduciary fees** — §67(e) was held in Knight v. Commissioner (552 U.S. 181 (2008)) and the TCJA-era regulations to permit deduction of fiduciary fees and other "uniquely fiduciary" expenses on the 1041 above-the-line, NOT subject to the §67(g) suspension of miscellaneous itemized deductions. Investment advisory fees, however, are NOT uniquely fiduciary and remain suspended under §67(g) for 2018–2025.  _(Knight v. Commissioner, 552 U.S. 181 (2008); §67(e); §67(g))_
-
-### 15.2 Partial Allocation Allowed
-
-- **Partial allocation of §642(g) election** — The election can be made item-by-item — e.g. deduct attorney fees on 1041 and executor commissions on 706 — provided each item is wholly assigned to one or the other.  _(§642(g))_
-
-## 16. Schedule K-1 to Beneficiaries
-
-Each beneficiary that receives a distribution carrying DNI gets a Form 1041 Schedule K-1. The K-1 reports:
-
-- Beneficiary identifying info (Part I: trust/estate; Part II: beneficiary).
-- Box 1: Interest income.
-- Box 2a/2b: Ordinary / qualified dividends.
-- Box 3: Net short-term capital gain.
-- Box 4a/4b/4c: Net long-term capital gain (with 28% rate gain and unrecaptured §1250 gain segregated).
-- Box 5: Other portfolio and nonbusiness income.
-- Box 6: Ordinary business income.
-- Box 7: Net rental real estate income.
-- Box 8: Other rental income.
-- Box 9a–c: Directly apportioned deductions (depreciation, depletion, amortization).
-- Box 10: Estate tax deduction (§691(c)).
-- Box 11: Final-year deductions (NOLs, excess deductions on termination — §642(h)(2)).
-- Box 12: AMT adjustments.
-- Box 13: Credits.
-- Box 14: Other information (foreign-source character, NIIT items, §199A QBI).
-
-Beneficiaries report K-1 income on:
-
-- Form 1040 Schedule B for interest and dividends (Boxes 1, 2a).
-- Form 1040 Schedule D for capital gains (Boxes 3, 4a–c).
-- Form 1040 Schedule E, Part III, Line 33 (beneficiary income from estates and trusts).
-
-Character is preserved — LTCG on the K-1 is LTCG on the beneficiary's 1040, taxed at the beneficiary's LTCG bracket (which is almost always lower than the trust's 20% cliff).
-
-### 16.1 Final-Year K-1 — Excess Deductions on Termination
-
-- **Excess deductions on termination** — In the final year of an estate or trust (when it terminates and distributes its last assets), any unused deductions and any net operating losses are passed out to the remaindermen (those who receive the residuary) as "excess deductions on termination" under §642(h). Pre-TCJA these were misc. itemized deductions subject to the 2% floor and §67(g) suspension. The 2020 regulations (Reg. §1.642(h)-2(b)(2), TD 9918) clarify that §642(h)(2) excess deductions retain their character (above-the-line vs misc. itemized), and §67(e) "uniquely fiduciary" portions remain above-the-line deductible on the beneficiary's 1040 even post-TCJA.  _(§642(h); Reg. §1.642(h)-2(b)(2), TD 9918)_
-
-## 17. Estimated Tax Payments — §6654(l)
-
-- **Quarterly estimated tax requirement** — Trusts are required to make quarterly estimated tax payments under §6654 if expected tax is at least $1,000. Standard quarterly due dates (April 15, June 15, September 15, January 15) apply.  _([§6654](https://www.law.cornell.edu/uscode/text/26/6654))_
-
-### 17.1 The Estate Exemption
-
-- **Estate two-year estimated tax exemption** — Under §6654(l)(2), an estate is NOT required to make estimated tax payments for any taxable year ending before the date that is TWO YEARS after the decedent's date of death. For a §645-combined entity (see §13), the same two-year exemption applies to the combined estate + QRT. After the two-year window expires, both estate (if still open) and trust must make estimated payments under §6654.  _(§6654(l)(2))_
-
-### 17.2 Beneficiary Election under §643(g)
-
-- **§643(g) estimated tax allocation election** — A trust (or an estate, in its final year only) may elect under §643(g) to treat any portion of its current-year estimated tax payment as having been paid by a beneficiary. The election is on Form 1041-T and must be filed by the 65th day of the year following. This pushes the estimated payment credit onto the beneficiary's 1040.  _([§643(g); Form 1041-T](https://www.irs.gov/instructions/i1041))_
-
-Use case: trust paid estimated tax during the year, then under-distributed; the 65-day rule pushes income to the beneficiary; §643(g) similarly pushes the prepaid tax credit out so the beneficiary gets the credit instead of the trust holding it. The two elections work together.
-
-## 18. ESBT — Electing Small Business Trust (§1361(e)) — Overview
-
-- **ESBT overview** — When a trust holds S-corporation stock, it must qualify under §1361(c)/(d)/(e) or the S election is broken. The ESBT is one of the qualifying trust forms. An ESBT is taxed in a unique two-step manner under §641(c): 1. The "S-portion" of the trust (the portion holding the S-corp stock) is taxed separately at the highest individual rate (37% for 2025) on its S-corporation pass-through items. No distribution deduction is allowed for distributions of S-corporation items. The S-portion is essentially a separate trust within the trust for tax purposes. 2. The "non-S portion" (everything else) is taxed as a regular complex trust under §661, with normal DNI and distribution deduction mechanics.  _(§1361(c)/(d)/(e); §641(c); §661)_
-- **ESBT election timing** — ESBT election is made by the trustee filing an election statement with the IRS within 2 months and 16 days of the trust acquiring the S-corp stock (or being created with it). Election is irrevocable except with IRS consent. Full ESBT mechanics, including the §199A QBI deduction allocation between the S-portion and beneficiaries, are deferred. Refer to a specialist for ESBT planning.  _(§1361(e))_
-
-## 19. Other Topics — Brief Overview
-
-### 19.1 Net Operating Losses
-
-- **NOL treatment for trusts/estates** — Trusts and estates can generate NOLs under §172. NOLs are carried by the trust/estate and used against future trust/estate taxable income. They do NOT pass through to beneficiaries during the trust's life. At the trust's TERMINATION (final year), unused NOLs flow out as §642(h)(1) carryforwards on the final K-1 to remaindermen, who can use them on their own 1040s subject to their own §172 rules.  _(§172; §642(h)(1))_
-
-### 19.2 AMT
-
-- **Trust/estate AMT exemption 2025** — approximately $30,700 with phaseout beginning at approximately $102,500 (figures indexed annually; verify against Rev. Proc. 2024-40 or the 2025 instructions to Form 1041 Schedule I) USD  _(§55; Rev. Proc. 2024-40)_
-
-### 19.3 Intangible Drilling Costs, Depletion
-
-- **Pass-through of depreciation/depletion/amortization** — Trusts and estates pass through depreciation, depletion, and amortization directly apportioned between the entity and the beneficiaries on K-1 Box 9a–c, in the ratio of trust accounting income retained vs distributed. The trust can elect under §266 to capitalize certain carrying charges.  _(§266)_
-
-### 19.4 §199A QBI Deduction for Trusts
-
-- **§199A QBI deduction for trusts** — A non-grantor trust is treated as a separate taxpayer for §199A QBI purposes. The trust gets its own QBI deduction (up to 20% of QBI) on its own retained QBI income. To the extent QBI flows out via K-1, the beneficiary takes the QBI deduction on her own 1040. The §199A thresholds for trusts are the single-individual amounts — i.e. the trust hits the start of the phaseout at the single threshold of $197,300 of taxable income for 2025 (Rev. Proc. 2024-40), with the deduction fully phased out at $247,300 (the $197,300 base threshold plus the $50,000 phase-in range for non-joint filers). Starting in 2026, the OBBBA (§ 70105) widens the phase-in range to $75,000 ($150,000 for joint returns). This is one of the few places trusts do NOT face compressed brackets; the §199A thresholds are at individual levels.  _(§199A)_
-- **Anti-abuse rule for §199A trusts** — Caveat — anti-abuse rules under Reg. §1.643(f)-1 disregard trusts created principally to avoid federal income tax, including for §199A purposes.  _(Reg. §1.643(f)-1)_
-
-### 19.5 State Fiduciary Income Tax
-
-Most states have a fiduciary income tax mirroring the federal 1041 with state-specific modifications. Residency determination for trusts can be complex (testator's state, trustee's state, beneficiary's state, situs of administration). Defer to state skills.
-
-## 20. Filing Deadline and Extensions
-
-- **Calendar-year 1041 due date** — Due April 15 of the following year (April 15, 2026 for 2025).  _(§20)_
-- **Fiscal-year 1041 due date** — Due the 15th day of the 4th month after the close of the fiscal year. E.g. fiscal year ending May 31, 2026 → due September 15, 2026.  _(§20)_
-- **Extension via Form 7004** — Form 7004 grants an automatic 5.5-month extension (NOT the 6 months granted to individuals). For a calendar-year 2025 1041, the extended due date is September 30, 2026. Extension is automatic on filing of Form 7004 by the original due date; payment of estimated tax is still due by the original due date — extension extends time to file, not time to pay.  _(Form 7004)_
-
-## 21. Worked Examples
-
-### 21.1 Example 1 — Simple Trust Distributing All Income
-
-The Smith Family Trust is an irrevocable trust created by Robert Smith in 2010 for the benefit of his daughter Jane. The trust agreement requires that ALL income be distributed to Jane annually; it does not permit charitable gifts or corpus distributions. The trust is calendar-year. For 2025, the trust earns:
-
-- Taxable interest: $40,000
-- Qualified dividends: $20,000
-- Tax-exempt municipal bond interest: $8,000
-- Net long-term capital gain on a stock sale: $30,000 (gain allocated to corpus under the trust agreement and state law)
-- Trustee fees: $5,000 (allocable $4,000 to income, $1,000 to corpus)
-
-- **Step 1 — Classify the trust** — Required income distribution + no charity + no corpus distribution = simple trust under §651 for 2025.  _(§651)_
-
-**Step 2 — Trustee allocation of expenses for fiduciary accounting income (FAI)**  _(—)_
-
-| Item | Income | Corpus |
-| --- | --- | --- |
-| Interest | 40,000 | — |
-| Qualified dividends | 20,000 | — |
-| Tax-exempt interest | 8,000 | — |
-| Capital gain | — | 30,000 |
-| Trustee fees (allocated) | (4,000) | (1,000) |
-| **FAI / corpus** | **64,000** | **29,000** |
-
-Trustee must distribute $64,000 of FAI to Jane.
-
-- **Step 3 — DNI computation** — Taxable income before distribution deduction and exemption: Interest                                       40,000 Qualified dividends                            20,000 Capital gain                                   30,000 Trustee fees (allocable; conservative — see notes) (5,000) Personal exemption ($300)                        (300) -------- 84,700 Add back personal exemption                         300 Add tax-exempt interest (net of allocable expense; see note) 8,000 Subtract capital gain allocated to corpus       (30,000) -------- DNI                                            = 63,000 USD  _(§643(a))_
-
-Of the DNI of $63,000, $55,000 is taxable (interest + qualified dividends − net deductible expenses) and $8,000 is tax-exempt.
-
-(Note: in practice trustee fees are pro-rated between taxable and tax-exempt income; $1,000 of the fee is allocable to corpus and $4,000 to income, but a further allocation within income between taxable and tax-exempt is required. For simplicity this example shows the headline figures.)
-
-- **Step 4 — Distribution deduction (§651)** — Distribution deduction = lesser of FAI or DNI excluding tax-exempt = lesser of $64,000 or $55,000 = $55,000  _(§651)_
-- **Step 5 — Trust taxable income** — Interest                                       40,000 Qualified dividends                            20,000 Capital gain                                   30,000 Trustee fees (deductible)                      (5,000) Distribution deduction                        (55,000) Personal exemption                                (300) ------ Trust taxable income                          = 29,700 USD  _(—)_
-
-The trust pays tax on $29,700, of which $30,000 is LTCG. Under the 2025 brackets:
-- First $3,250 at 0% LTCG = $0
-- Next $11,950 at 15% LTCG = $1,792.50
-- Remaining $14,800 at 20% LTCG = $2,960
-- Trust LTCG total = $4,752.50
-
-(Approximately; with offsetting trustee fees and exemption the ordinary tax slot is slightly negative; in practice the ordinary slot would absorb the trustee fee deduction and the LTCG would be slightly less in the 0% slot.)
-
-**Step 6 — Schedule K-1 to Jane**  _(—)_
-
-| Box | Amount |
-| --- | --- |
-| 1 — Interest income | 34,921 |
-| 2a — Ordinary dividends | 0 |
-| 2b — Qualified dividends | 17,460 |
-| 14 — Tax-exempt interest | 6,984 |
-| (Capital gain stays in the trust — corpus) | — |
-
-(Pro rata character allocation: $55,000 distributed / $63,000 DNI = 87.3% of each character flows to Jane; the remainder stays in the trust. Capital gain is excluded from DNI under §7.2 default so it never flows to Jane.)
-
-- Jane reports $34,921 interest, $17,460 qualified dividends, $6,984 tax-exempt interest on her 2025 1040. Her qualified dividends are taxed at her LTCG bracket (likely 15%), far better than the trust's 20% cliff.
-- The trust retains the capital gain and pays it at the trust's 20% LTCG rate on the amount over $15,900.
-- **Planning observation:** if Jane wanted the capital gain too, the trust agreement would need to allocate CG to income and the trustee would need a consistent pattern of including CG in distributions. As drafted, the gain is trapped in the trust at 20% even though Jane is in the 15% bracket.
-
-### 21.2 Example 2 — Estate with Fiscal-Year Election
-
-Margaret Henderson dies on June 14, 2025, leaving an estate of $2.5 million (below the 706 filing threshold, so no 706 required). The estate consists of:
-
-- A brokerage account that produces dividends and capital gains.
-- A residence (sold on March 10, 2026 for a $40,000 gain over date-of-death FMV).
-- Various accrued IRD items — $8,000 of accrued bond interest, $12,000 of unpaid consulting fees billed before death.
-
-Her will leaves the residue equally to her three adult children, all in the 24% ordinary / 15% LTCG bracket.
-
-Margaret had no RLT, so §645 election is not applicable. Estate-only 1041.
-
-- **Step 1 — Fiscal year choice** — Executor elects fiscal year ending May 31, 2026. The first 1041 covers June 14, 2025 to May 31, 2026 (just under 12 months — the maximum). This: Pushes all K-1 income onto the beneficiaries' 2026 1040s (filed April 2027), not their 2025 1040s. Maximizes the deferral window.  _(—)_
-
-**Step 2 — Income for the fiscal year**  _(—)_
-
-| Item | Amount |
-| --- | --- |
-| Dividends (post-death) | 32,000 |
-| Interest (post-death, on bond fund) | 9,500 |
-| LTCG on residence sale ($40,000 over basis) | 40,000 |
-| IRD — accrued bond interest received | 8,000 |
-| IRD — unpaid consulting fees collected | 12,000 |
-| Trustee/executor fees | (15,000) |
-| Attorney fees (estate admin) | (10,000) |
-
-- **§642(g) election** — §642(g) election: estate is below 706 threshold, so 706 deduction would be wasted. Deduct attorney + executor fees on 1041. File §642(g) election statement.  _(§642(g))_
-- **Step 3 — Compute Form 1041** — Gross income                                  101,500 Deductible administrative expenses           (25,000) ------- Adjusted total income                         76,500 USD  _(Form 1041)_
-- **Step 4 — Distributions** — Executor distributes $90,000 in cash on March 31, 2026 ($30,000 to each child). Trust agreement (the will) gives executor discretion. This is a complex distribution under §661 (estates are always treated as complex).  _(§661)_
-- **Step 5 — DNI computation** — Adjusted total income                          76,500 Personal exemption ($600) — added back            600 Capital gain allocated to corpus              (40,000) ------- DNI                                          = 37,100 USD  _(—)_
-- **Step 6 — Distribution deduction** — Distribution deduction = lesser of distributions or DNI = lesser of $90,000 or $37,100 = $37,100  _(—)_
-
-The estate distributed $90,000 but only $37,100 of DNI flows out. The remaining $52,900 of distributions is principal/corpus — a non-taxable distribution to the beneficiaries.
-
-- **Step 7 — Estate taxable income** — Adjusted total income                          76,500 Distribution deduction                        (37,100) Personal exemption                               (600) ------- Estate taxable income                         = 38,800 USD  _(—)_
-
-The $40,000 capital gain (held in corpus by default — see §7.2) stays in the estate and is taxed at the estate's LTCG bracket: $15,200 at 15% = $2,280; remainder ($24,800) at 20% = $4,960. Plus NIIT 3.8% on excess over $15,650 of AGI-equivalent.
-
-Each child receives:
-- Interest: $9,500 × 1/3 = $3,167
-- Dividends (qualified): $32,000 × 1/3 = $10,667
-- IRD interest: $8,000 × 1/3 = $2,667 (character: interest)
-- IRD consulting fees: $12,000 × 1/3 = $4,000 (character: ordinary)
-- Cash distribution of corpus: $52,900 × 1/3 = $17,633 (non-taxable)
-
-(In practice the DNI flows pro rata across all distributed amounts, so the actual K-1 characters are scaled to the $37,100 / $90,000 ratio. Mechanical detail omitted.)
-
-Each child picks this up on her 2026 1040, filed April 15, 2027. Income earned in mid-2025 doesn't hit the beneficiary's return until almost two years later.
-
-- §642(g) election is correctly on 1041 (estate is below 706 threshold).
-- IRD items ($8,000 + $12,000 = $20,000) are correctly in the estate's gross income AND would have been in the 706 gross estate had a 706 been required. Since no 706 is required (estate < $13.99M), no §691(c) deduction is available — there's no estate tax for the IRD to be attributable to.
-- The capital gain on the residence is trapped at the estate's 20% LTCG bracket on the excess over $15,900, even though the children are all in the 15% bracket. To push the gain out, the executor would need to (a) actually distribute the proceeds of the sale in the year of sale AND (b) consistently allocate capital gains to income under the trust/will or state principal-and-income act. With a will giving discretion, this is a Reg. §1.643(a)-3(b)(3) trustee discretion exercise — viable but documentation-intensive.
-
-### 21.3 Example 3 — Complex Trust Using the 65-Day Rule
-
-The Davis Family Discretionary Trust is an irrevocable complex trust, calendar year, with two beneficiaries (Tom, age 35, in the 22% ordinary bracket; Sara, age 38, in the 35% ordinary bracket — high earner). The trust agreement gives the trustee complete discretion to distribute or accumulate.
-
-For 2025, the trust earns:
-
-- Interest income: $25,000
-- Ordinary (non-qualified) dividends: $10,000
-- Qualified dividends: $15,000
-- No capital gain.
-
-Trustee fees: $4,000. No charitable distributions.
-
-During calendar 2025, the trustee distributes $5,000 to Tom (no other distributions).
-
-- **Step 1 — Run draft 1041 BEFORE 65-day election** — Adjusted total income (after $4,000 trustee fee deduction): 25,000 + 10,000 + 15,000 − 4,000 = 46,000 Personal exemption                                 (100) Distribution deduction (lesser of $5,000 or DNI ~ $46,100) (5,000) ------- Trust taxable income before 65-day                 40,900 USD  _(—)_
-
-Of that $40,900, $15,000 is qualified dividends (taxed at LTCG rates). The remaining $25,900 is ordinary.
-
-Tax computation before 65-day:
-- Ordinary: $25,900 (subtract $3,150 at 10% = $315; next $8,300 at 24% = $1,992; next $4,200 at 35% = $1,470; remaining $10,250 at 37% = $3,792) = $7,569
-- QDI: $15,000 (first $3,250 at 0% = $0; remaining $11,750 at 15% = $1,762)
-- NIIT 3.8% on undistributed NII over $15,650 = 3.8% × ($40,900 − $15,650) = $959
-- **Total trust tax before 65-day = $10,290**
-
-Trustee, working with the practitioner in February 2026, computes:
-
-- Pushing income from the trust to Tom: trust saves up to 37% + 3.8% NIIT = 40.8% on each marginal ordinary dollar; Tom adds it at his 22% bracket. Net savings = 18.8% per dollar pushed.
-- Pushing income from the trust to Sara: trust saves 40.8%; Sara adds 35% (plus NIIT 3.8% if Sara is above the $200K NIIT threshold). Net savings = ~5.8% per dollar pushed (still positive but small).
-
-Conclusion: push as much as possible to Tom, less to Sara.
-
-- **Step 3 — Trustee makes 65-day distributions** — Within 65 days of year-end (i.e. by March 6, 2026): $20,000 distributed to Tom on February 14, 2026. $10,000 distributed to Sara on February 14, 2026.  _(§663(b))_
-- **Step 4 — File 1041 with §663(b) election** — Check the §663(b) box on Form 1041 "Other Information," attach a statement specifying that $30,000 ($20,000 to Tom + $10,000 to Sara) is to be treated as distributions in 2025.  _(§663(b))_
-- **Step 5 — Revised 1041 computation** — Adjusted total income                          46,000 Distribution deduction = lesser of distributions ($5,000 actual 2025 + $30,000 deemed 2025 = $35,000) or DNI (~$46,100) (35,000) Personal exemption                                (100) ------- Trust taxable income after 65-day              10,900 USD  _(—)_
-
-Tax computation after 65-day:
-- Ordinary slot: $10,900 − $15,000 (QDI absorbs the bottom of the table) → all $10,900 is the bottom-of-stack QDI; effectively, ordinary income is $0 because the dividend layer is the $15,000 and QDI takes 0%-15% LTCG rates.
-- (More precisely: order of tax computation places ordinary income first; with ordinary income of $10,900 and total tax of ordinary at $10,900 — first $3,150 at 10% = $315, next $7,750 at 24% = $1,860 = $2,175 ordinary tax. Then QDI of $15,000 at LTCG rates: first $3,250 at 0% slot fills up to $3,250 total, then remaining $11,750 of QDI at 15% = $1,762. Total = $3,937. NIIT 3.8% on undistributed NII over $15,650 = $0 since NII below threshold.)
-- **Total trust tax after 65-day = $3,937**
-
-**Trust tax savings = $10,290 − $3,937 = $6,353.**
-
-Tom's K-1 reports approximately $25,000 / $35,000 = 71.4% of each character of the $35,100 of DNI:
-- Interest: ~$17,800
-- Ordinary dividends: ~$7,100
-- Qualified dividends: ~$10,700
-
-Tom's incremental tax at 22% ordinary / 15% LTCG: ~($17,800 + $7,100) × 22% + $10,700 × 15% = $5,478 + $1,605 = **$7,083** added to Tom's 2025 1040.
-
-Sara's K-1 reports approximately $10,000 / $35,000 = 28.6%:
-- Interest: ~$7,100
-- Ordinary dividends: ~$2,900
-- Qualified dividends: ~$4,300
-
-Sara's incremental tax at 35% / 15%: ($7,100 + $2,900) × 35% + $4,300 × 15% = $3,500 + $645 = **$4,145** added to Sara's 2025 1040.
-
-**Total family tax with §663(b) election:**
-- Trust: $3,937
-- Tom: $7,083
-- Sara: $4,145
-- **Total: $15,165**
-
-**Total family tax without §663(b) election:**
-- Trust: $10,290
-- Tom: incremental on $5,000 (mostly interest at 22%) ≈ $1,100
-- Sara: $0
-- **Total: $11,390**
-
-Wait — the no-election scenario is LOWER? That's because pushing income to Sara at 35% costs more than keeping it at the trust's 37% on only the marginal portion. Let me recompute the planning step.
-
-Actually re-examining: pushing $10,000 to Sara — the trust's marginal rate on those dollars (since trust ordinary income was $25,900 above QDI before the push) is 37% + 3.8% = 40.8%. Sara's incremental rate is 35% (and we should also add 3.8% NIIT for Sara as a high earner over the NIIT threshold = 38.8%). Trust 40.8% vs Sara 38.8% = 2% saved per dollar pushed to Sara = $200 saved on the $10,000 push to Sara.
-
-The dominant benefit is the push to Tom (~$20,000 at 40.8% trust rate vs 22% Tom rate = 18.8% × $20,000 = $3,760 saved).
-
-Both pushes are net-positive vs leaving in trust; the recomputation above had an error in the QDI ordering. The correct savings calculation is on the marginal incremental, not the absolute total restructuring.
-
-**The planning lesson is:** the §663(b) 65-day rule lets the practitioner do the optimization AFTER the year closes — when all the income numbers are final and the beneficiaries' marginal brackets can be precisely estimated.
-
-## 22. Common Pitfalls Checklist
-
-- [ ] Estate's first 1041 filed even if no tax owed (estate held >$600 gross income or held assets producing 1099s to its EIN — IRS will auto-CP259 if missed).
-- [ ] EIN obtained for estate (and separately for trust if §645 not elected).
-- [ ] Brokerage/bank notified to re-issue 1099s to estate EIN starting from date of death; nominee statement on 1041 Schedule B reconciles cusp-year amounts.
-- [ ] Fiscal year vs calendar year for estate explicitly chosen on first 1041.
-- [ ] §645 election filed on Form 8855 if QRT exists and election is desired.
-- [ ] DNI computed correctly — capital gains EXCLUDED by default unless an exception under §7.2 applies AND is documented.
-- [ ] Distribution deduction = lesser of distributions or DNI.
-- [ ] §663(b) 65-day rule election made (if optimal) on TIMELY-filed return; extension filed if needed.
-- [ ] §642(g) election filed on 1041 (in writing) if administrative expenses claimed on 1041 — 706 deduction waived for those items.
-- [ ] §691 IRD items identified, included on 1041 income, basis NOT stepped up.
-- [ ] §691(c) deduction computed if 706 was filed and IRD was in gross estate.
-- [ ] K-1s issued to each beneficiary with character allocated pro rata to DNI components.
-- [ ] Estimated tax payments (§6654) — trust required; estate exempt for first 2 years after death; combined §645 entity rides on estate's exemption.
-- [ ] Final-year 1041 marked "Final return"; excess deductions (§642(h)(2)) and NOL carryforwards (§642(h)(1)) passed out on final K-1s.
-
-## 23. Provenance — Authorities Cited
-
-- IRC §1(e) — Trust and estate rate schedule
-- IRC §1(h) — Capital gains rates
-- IRC §170(c) — Charitable contribution definitions (for §642(c))
-- IRC §172 — NOLs
-- IRC §266 — Carrying charge capitalization election
-- IRC §442 — Change of accounting period
-- IRC §453 — Installment sales
-- IRC §469 — Passive activity losses
-- IRC §641 — Imposition of tax on trusts and estates
-- IRC §641(c) — ESBT tax computation
-- IRC §642(b) — Personal exemption
-- IRC §642(c) — Charitable contribution deduction
-- IRC §642(g) — Election to deduct on 1041 vs 706
-- IRC §642(h) — Excess deductions on termination
-- IRC §643(a) — Definition of DNI
-- IRC §643(f) — Anti-abuse multi-trust rule
-- IRC §643(g) — Beneficiary credit for estimated tax
-- IRC §644 — Calendar-year requirement for trusts
-- IRC §645 — Election to treat QRT as part of estate
-- IRC §651 — Simple trust distribution deduction
-- IRC §652 — Inclusion in beneficiary income (simple trust)
-- IRC §661 — Complex trust / estate distribution deduction
-- IRC §662 — Inclusion in beneficiary income (complex trust / estate)
-- IRC §663(b) — 65-day rule
-- IRC §663(c) — Separate share rule
-- IRC §664 — Charitable remainder trusts (out of scope)
-- IRC §671–679 — Grantor trust rules
-- IRC §691 — Income in respect of decedent
-- IRC §691(c) — Deduction for estate tax on IRD
-- IRC §1014 — Basis step-up at death (and §1014(c) IRD exception)
-- IRC §1361(c)/(d)/(e) — Trusts permitted to hold S-corp stock; ESBT election
-- IRC §1411 — Net investment income tax
-- IRC §2053 — Estate tax deduction for administration expenses
-- IRC §6654 — Estimated tax for individuals (applied to trusts/estates via §6654(l))
-- IRC §6654(l) — Estate exemption from estimated tax for first 2 years
-- IRC §6651 — Failure-to-file and failure-to-pay penalties
-- IRC §6721, §6722 — Information return failure penalties
-
-Regulations:
-- Reg. §1.641(b)-3 — Termination of estate or trust
-- Reg. §1.643(a)-3 — Capital gains and DNI
-- Reg. §1.642(h)-2 (TD 9918, 2020) — Excess deductions on termination character
-- Reg. §1.671-4 — Grantor trust reporting methods
-
-Cases:
-- Knight v. Commissioner, 552 U.S. 181 (2008) — §67(e) uniquely-fiduciary expenses
-- Frank Aragona Trust v. Commissioner, 142 T.C. 165 (2014) — Trust material participation through trustees
-
-Forms:
-- Form 1041 — U.S. Income Tax Return for Estates and Trusts (with Schedules A, B, G, I, J, and K-1)
-- Form 1041-T — Allocation of Estimated Tax Payments to Beneficiaries
-- Form 1041-ES — Estimated Tax for Estates and Trusts
-- Form 7004 — Application for Automatic Extension of Time to File
-- Form 8855 — Election to Treat QRT as Part of an Estate (§645)
-- Form SS-4 — Application for EIN
-- Form 706 — Estate (and Generation-Skipping Transfer) Tax Return (companion; see `us-estate-gift-706-709` skill)
-- Form 1040 Schedule E, Part III — Beneficiary K-1 income reporting
-
-Revenue procedures and rulings:
-- Rev. Proc. 2018-08 — §67(g) interaction with §691(c) (confirmed §691(c) remains deductible)
-- Rev. Rul. 76-23 — Estate considered terminated when administration unduly prolonged
-
-Year-specific figures verified against:
-- Rev. Proc. 2024-40 (2025 inflation-adjusted amounts) — trust brackets, exemption, AMT exemption
-- IRS 2025 Form 1041 instructions (when published — pending at time of last update)
-
-## End of skill footer
-
-*End of skill. ~62 KB. Federal only. Reviewer signoff required before filing.*
+| Rev. Proc. 2025-32. Read for section 3.01 Table 5 (estates and trusts brackets), 3.03 (USD 3,300 and USD 16,250), 3.10 (AMT USD 31,400, USD 104,800, USD 167,600) and 3.35 (qualified disability trust USD 5,300). | https://www.irs.gov/pub/irs-drop/rp-25-32.pdf | 2026-11-13 |
+| Instructions for Form 1041 (2025). Read for Who Must File, the section 645 election period, When To File, the 5 1/2-month Form 7004 extension, Estimated Tax for 2026 and Form 1041-T, Question 6 (section 663(b)), e-filing. | https://www.irs.gov/pub/irs-pdf/i1041.pdf | 2026-11-13 |
+| Form 1041 (2025). Read for page 1 lines 17, 18, 21 and 23 and Schedule B lines 1 to 15. | https://www.irs.gov/pub/irs-pdf/f1041.pdf | 2026-11-13 |
+| Schedule K-1 (Form 1041) instructions (2025). Read for the box list (box 13 code A, box 14). | https://www.irs.gov/pub/irs-pdf/i1041sk1.pdf | 2026-11-13 |
+| 26 U.S.C. 1411 (govinfo). Read for (a)(2): 3.8% of the lesser of undistributed net investment income and AGI over the start of the top section 1(e) bracket. | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap2A-sec1411.htm | 2026-11-13 |
+| 26 U.S.C. 642 (govinfo). Read for (b): USD 600, USD 300, USD 100 and the qualified disability trust rule. | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapJ-partI-subpartA-sec642.htm | 2026-11-13 |
+| 26 U.S.C. 644 (govinfo). Read for the calendar year rule and its exceptions. | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapJ-partI-subpartA-sec644.htm | 2026-11-13 |
+| 26 U.S.C. 645 (govinfo). Read for the qualified revocable trust definition and the applicable date. | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapJ-partI-subpartA-sec645.htm | 2026-11-13 |
+| 26 U.S.C. 663 (govinfo). Read for (b) the first 65 days rule. | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapJ-partI-subpartC-sec663.htm | 2026-11-13 |
+| 26 U.S.C. 6012 (govinfo). Read for (a)(3) to (5) filing thresholds. | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap61-subchapA-partII-subpartB-sec6012.htm | 2026-11-13 |
+| 26 U.S.C. 6072 (govinfo). Read for (a) the 15th day of the 4th month. | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap61-subchapA-partV-sec6072.htm | 2026-11-13 |
+| 26 U.S.C. 6654 (govinfo). Read for (l)(2) the two-year exception for estates and certain trusts. | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleF-chap68-subchapA-partI-sec6654.htm | 2026-11-13 |
+| 26 U.S.C. 67 (govinfo). Read for (e) estate and trust AGI and (g) as it stood before 2025. | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partI-sec67.htm | 2026-11-13 |
+| Public Law 119-21, section 70110. Read for striking ", and before January 1, 2026" from section 67(g). | https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm | 2026-11-13 |
+
+Not yet confirmed: the 2026 Form 1041, its instructions and the 2026 K-1 were not yet published when read, so line, box and question numbers are from the 2025 editions; whether the new section 68 limit on itemized deductions (Public Law 119-21 section 70111, worded "in the case of an individual") reaches estates and trusts was not confirmed; Treas. Reg. 1.641(b)-3, 1.643(a)-3, 1.642(h)-2, 1.671-4 and 1.643(f)-1 and the two cases were not re-read today and are carried from the old file.

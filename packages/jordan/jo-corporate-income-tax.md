@@ -1,14 +1,15 @@
 ---
 name: jo-corporate-income-tax
 description: "Conditional Jordan corporate income tax extracts for a 2026 refresh. Covers resident and non-resident legal persons, ordinary and sector rates, specified foreign income, national contribution, withholding, import advances, half-year advances and return timing under Income Tax Law No. 34 of 2014. Amendment currentness, investment-zone treatment and filing procedures remain on hold. Two executable examples compare tax arithmetic, including a sole trader against a company under documented exemption assumptions. Use for Jordan corporate tax research, Jordan CIT, withholding tax, national contribution and ISTD company returns. No filing or incentive claim is cleared by this draft."
-version: 1.2
+version: 1.3
 jurisdiction: JO
 category: international
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
+type: computation
 ---
 
 # Jordan Corporate Income Tax
