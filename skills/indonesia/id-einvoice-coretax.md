@@ -1,395 +1,250 @@
 ---
 name: id-einvoice-coretax
-description: Use this skill whenever asked about filing, invoicing, or submitting any Indonesian tax obligation through the Coretax DJP system that went live 1 January 2025. Trigger on phrases like "Coretax DJP", "Coretax pajak", "Coretax login", "e-Faktur Indonesia", "e-Bupot Unifikasi", "NSFP", "Nomor Seri Faktur Pajak", "SPT Masa Unifikasi", "Indonesia tax filing system", "DJP Online vs Coretax", "Coretax Form", "Coretax Mobile", "NIK as NPWP", "16-digit NPWP", "pajak.go.id new system", "Coretax onboarding", or any operational query about how to file, issue invoices, or pay tax to the Indonesian DJP from 2025 onward. This skill covers the Coretax platform mechanics, account activation, NIK/NPWP integration, e-Faktur issuance and NSFP management within Coretax, e-Bupot Unifikasi withholding slip workflow, SPT filing channels, and the DJP Online to Coretax cutover. It does NOT compute the underlying tax — VAT (PPN) sits in indonesia-vat, withholding PPh 21 sits in id-payroll-pph21, and corporate / individual income tax sits in their respective skills. ALWAYS read this skill when filing or invoicing through Coretax DJP.
+description: Use this skill whenever asked about filing, invoicing, or submitting any Indonesian tax obligation through the Coretax DJP system that went live 1 January 2025. Trigger on phrases like "Coretax DJP", "Coretax pajak", "Coretax login", "e-Faktur Indonesia", "e-Bupot Unifikasi", "NSFP", "Nomor Seri Faktur Pajak", "SPT Masa Unifikasi", "Indonesia tax filing system", "DJP Online vs Coretax", "Coretax Form", "Coretax Mobile", "NIK as NPWP", "16-digit NPWP", "pajak.go.id new system", "Coretax onboarding", or any operational query about how to file, issue invoices, or pay tax to the Indonesian DJP from 2025 onward. This skill covers the Coretax platform mechanics, account activation, NIK/NPWP integration, e-Faktur issuance and NSFP management within Coretax, e-Bupot Unifikasi withholding slip workflow, SPT filing channels, and the DJP Online to Coretax cutover. It does NOT compute the underlying tax - VAT (PPN) sits in indonesia-vat, withholding PPh 21 sits in id-payroll-pph21, and corporate / individual income tax sits in their respective skills. ALWAYS read this skill when filing or invoicing through Coretax DJP.
 jurisdiction: ID
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: e-invoicing
+version: "2.0"
+category: international
+type: filing-howto
 ---
 
-# ID Einvoice Coretax
-
-## Indonesia — Coretax DJP, e-Faktur, e-Bupot Unifikasi Skill v1.0
-
-This skill is the **platform manual** for the Indonesian tax administration system. It explains how the buttons work and where the filings live. The substantive tax content (rates, base, deductions) is in the per-tax skills (`indonesia-vat`, `id-payroll-pph21`, etc.).
-
-## Rates and thresholds
-
-> Items flagged for further clarification are tracked separately and excluded here.
-> This block is generated from verified `skill_facts` — edit the facts, not the prose.
-
-### Coretax and e-Invoicing
-
-- **Go-live date** — Coretax / Sistem Inti Administrasi Perpajakan (SIAP) became effective starting 1 January 2025 under prevailing Indonesian tax administration regulations.  _(PMK 81/2024; PER-1/PJ/2025.)_
-- **URL** — Coretax services are generally accessed through the official DJP/Coretax electronic portal.  _(DJP Portal / Coretax Portal.)_
-- **Replaces** — Coretax integrates and migrates legacy DJP applications including DJP Online, e-Faktur, e-Bupot, e-Registration, tax payment, and tax reporting into a unified tax administration platform.  _(PMK 81/2024; PER-1/PJ/2025.)_
-- **Mobile app** — Coretax Mobile / M-Pajak — official DJP mobile application (mobile version of Coretax DJP system), for Individual Taxpayers with Nil Annual Income Tax Return status; downloadable only via Google Play Store (Android) or Apple App Store (iOS).  _([PMK 81/2024; PER-1/PJ/2025; DJP Coretax implementation guidance and taxpayer handbook..](https://www.pajak.go.id/en/node/119587))_
-- **Coretax Form (offline)** — PER-3/PJ/2026 regulates updated procedures for submission and processing of tax returns under Coretax implementation.  _(PER-3/PJ/2026.)_
-- **Indonesian individual** — Resident Indonesian individuals generally use NIK as NPWP under prevailing Indonesian tax administration regulations.  _(PMK 112/2022; PMK 81/2024.)_
-- **Foreign individual** — Foreign individuals/non-resident individuals generally use 16-digit NPWP format under prevailing Indonesian tax administration regulations.  _(PMK 112/2022; PMK 81/2024.)_
-- **Indonesian entity** — Corporate taxpayers generally use 16-digit NPWP format under Coretax implementation and prevailing tax administration regulations.  _(PMK 112/2022; PMK 81/2024; PER-1/PJ/2025.)_
-- **NSFP request** — Under PER-11/PJ/2025 (Pasal 37, 40, 42) implementing PMK 81/2024, NSFP is issued automatically by the Coretax e-Faktur system upon upload (no PKP request); PKP requirement is Electronic Certificate OR Authorization Code plus tax-invoice access.  _([PMK 81/2024; PER-1/PJ/2025.](https://www.pajak.go.id/en/node/117951))_
-- **NSFP return deadline** — Return of unused NSFPs remains subject to prevailing DJP VAT administration and technical procedures under electronic tax invoice regulations.  _(PMK 81/2024; PER-1/PJ/2025; prevailing VAT/e-Faktur regulations.)_
-- **Faktur Pengganti** — Replacement tax invoices (Faktur Pengganti) must follow prevailing DJP VAT invoice correction and replacement procedures under Coretax/e-Faktur administration rules.  _(PMK 81/2024; PER-1/PJ/2025; PER-1/PJ/2026.)_
-- **Faktur Dibatalkan** — Under PER-11/PJ/2025 (Arts. 49-50 & Appendix D.6): cancelled tax invoices must still be administered/retained by the PKP, but are NOT reported in the VAT return — if already reported, the SPT Masa PPN must be amended to remove them; if not yet reported, they are not included.  _([PMK 81/2024; PER-1/PJ/2025.](https://www.pajak.go.id/en/node/113196))_
-- **Covers** — e-Bupot Unifikasi generally covers withholding and/or collection obligations including PPh 23, PPh 26, Final PPh Art. 4(2), and other unified withholding-tax obligations under Coretax administration procedures.  _(PER-11/PJ/2025; PMK 81/2024.)_
-- **Monthly SPT Masa Unifikasi** — Monthly SPT Masa Unifikasi is generally filed electronically through Coretax/SIAP by the 20th of the following month under prevailing Indonesian tax administration regulations. Unified withholding reporting, electronic filing procedures, and tax-object-code administration follow prevailing Coretax and SPT Unifikasi procedures.  _(UU KUP Art. 3 as amended by UU HPP; PMK 81/2024; PER-1/PJ/2025; PER-1/PJ/2026; PER-11/PJ/2025; KEP-143/PJ/2022.)_
-- **Tax period Dec 2024 or earlier** — Tax periods prior to Coretax implementation generally continue to follow legacy DJP Online and transitional filing procedures under prevailing DJP transition/cutover guidance.  _(PMK 81/2024; DJP transition/cutover guidance; PER-1/PJ/2025.)_
-- **Tax period Jan 2025 onward** — Tax periods starting January 2025 generally follow Coretax/SIAP administration and electronic filing procedures under prevailing Indonesian tax administration regulations.  _(PMK 81/2024; PER-1/PJ/2025; PER-1/PJ/2026.)_
-
-## Section 1 — Quick reference
-
-**Quick reference**
-
-| Field | Value |
-| --- | --- |
-| Country | Indonesia (Republik Indonesia) |
-| Platform | Coretax DJP (Sistem Inti Administrasi Perpajakan / SIAP) |
-| Operator | Direktorat Jenderal Pajak (DJP), Kementerian Keuangan |
-| Go-live | 1 January 2025 |
-| Replaces | DJP Online e-Filing (2025+), desktop e-Faktur, separate e-Bupot apps, e-Registration, several legacy portals |
-| Primary URL | coretaxdjp.pajak.go.id |
-| Legacy URL still live | pajak.go.id / djponline.pajak.go.id (residual tax-year 2024 work) |
-| Mobile app | "Coretax DJP" — Play Store and App Store (individual taxpayers) |
-| Coretax Form | Offline preparation form for SPT 1770 — broadly available February 2026 |
-| Currency | IDR (Indonesian Rupiah) |
-| NPWP format | 16-digit (NIK-as-NPWP) for Indonesians since 1 July 2024; 15-digit padded to 16 for entities / foreigners |
-| Tax invoice | Faktur Pajak via Coretax e-Faktur from 1 Jan 2025 |
-| NSFP | Nomor Seri Faktur Pajak — invoice serial, requested in Coretax |
-| Unified withholding | SPT Masa PPh Unifikasi (PPh 23/26/4(2)/15) |
-| Filing channels | Coretax web, Coretax Mobile, Coretax Form upload, PJAP host-to-host |
-| Contributor | Open Accountants Community |
-| Skill version | 1.0 |
-
-### Conservative defaults
-
-**Conservative defaults**
-
-| Ambiguity | Default |
-| --- | --- |
-| Coretax is unreachable at deadline | Document the attempt (screenshot, ticket number, timestamp), file as soon as access is restored, attach proof of attempted filing to the workpaper |
-| Doubt over whether to file on Coretax vs DJP Online | Tax period **on or after January 2025 → Coretax**. Tax period **December 2024 or earlier → DJP Online** unless DJP has published a specific migration instruction for that form |
-| NSFP request rejected or pending | Do not back-date a Faktur Pajak; issue once NSFP is granted; record the delay |
-| 16-digit vs 15-digit NPWP unclear | Indonesian individual → use NIK as 16-digit NPWP; foreign national → use existing 15-digit NPWP padded with leading "0" to 16 digits inside Coretax |
-| Withholding category unclear between PPh 23 / 4(2) | Hold the filing; do not guess across PPh categories — the e-Bupot Unifikasi form requires the correct article designation |
-| Coretax UI behaviour appears to differ from this skill | Trust the live UI and DJP help text. Mark "TBC" in the workpaper and update this skill |
+# Indonesia Coretax, e-Faktur and e-Bupot v2.0
 
-## Section 2 — Required inputs and refusal catalogue
+## Scope
 
-### Required inputs
+Prepare an Indonesian 2026 invoice, withholding, payment and return workflow from an already supported tax computation. This is a platform and evidence method, not a substitute for classifying the tax. Read `indonesia-vat` for PPN, `id-payroll-pph21` for employment withholding, `id-pph-final-umkm` for qualifying turnover tax and `id-corporate-tax` for ordinary company tax. `id-income-tax` is the US Idaho skill, not an Indonesian individual-income method. Do not load it for Indonesia.
 
-**Minimum viable** — Coretax account credentials (or DJP-issued activation letter with PIN); NPWP (16-digit for Indonesian individuals, 15-digit for foreigners / legacy); tax period and year; the underlying tax computation from a sister skill (`indonesia-vat`, `id-payroll-pph21`, etc.).
+Coretax DJP is the taxpayer portal and administration platform associated with the Pembaruan Sistem Inti Administrasi Perpajakan (PSIAP), also called SIAP. PMK 81/2024 is the operative administration framework from the start of 2025, with amendments. The portal is [coretaxdjp.pajak.go.id](https://coretaxdjp.pajak.go.id). The operator is Direktorat Jenderal Pajak, Kementerian Keuangan. Indonesian rupiah is the ordinary currency; an authorised foreign-currency bookkeeping/return case needs its own verified route. [PMK 81](https://pajak.go.id/en/node/113110); [PER-3 art. 2](https://www.pajak.go.id/id/peraturan/tata-cara-penyampaian-penerimaan-dan-pengolahan-surat-pemberitahuan-0).
 
-**Recommended** — Faktur Pajak or withholding ledger in CSV/Excel for bulk import; counterparty NPWPs pre-validated against DJP; confirmed NSFP balance.
+The old claim that all legacy tools vanished and the desktop e-Faktur client was retired is false. DJP expressly allowed a desktop channel with conditions. Coretax, designated integrated PJAP applications and eligible desktop use are distinct routes. PER-11/PJ/2025 regulates reporting and invoices; PER-3/PJ/2026 regulates return submission/receipt; PER-12/PJ/2026 changes specified reporting/correction rules from its commencement. This method does not certify a live menu, mobile build or bulk-upload schema that has not been inspected for this taxpayer and form. [PER-11](https://www.pajak.go.id/id/peraturan/ketentuan-pelaporan-pajak-penghasilan-pajak-pertambahan-nilai-pajak-penjualan-atas-0); [PER-3](https://www.pajak.go.id/id/peraturan/tata-cara-penyampaian-penerimaan-dan-pengolahan-surat-pemberitahuan-0); [PER-12 art. II](https://www.pajak.go.id/id/peraturan/perubahan-atas-peraturan-direktur-jenderal-pajak-nomor-11pj2025-tentang-ketentuan); [DJP desktop announcement](https://www.pajak.go.id/index.php/id/pengumuman/pembuatan-faktur-pajak-melalui-aplikasi-e-faktur-client-desktop).
 
-**Ideal** — PJAP host-to-host connection for high-volume taxpayers; valid digital certificate (sertifikat elektronik) renewed within the last 24 months.
+Contributor: Open Accountants Community.
 
-**Refusal if minimum missing — SOFT WARN.** Without an activated Coretax profile, no filing can be lodged. Without a sister-skill tax computation, this platform skill cannot produce a return on its own.
+## Ask the client first
 
-### Refusal catalogue
+Read the existing intake, books, tax computations, prior invoices/slips/returns, payment evidence and error tickets before asking anything. Obtain only missing facts:
 
-- **R-CT-1 — Tax content out of scope** — This skill is the Coretax platform manual. PPN classification, PPh 21 bands, corporate income tax computations, and planning are handled by `indonesia-vat`, `id-payroll-pph21`, or the relevant income-tax skill.  _(R-CT-1)_
-- **R-CT-2 — Foreign-nationals' NPWP** — WNA onboarding differs from the NIK-as-NPWP route. Foreigners currently use a 15-digit NPWP padded to 16 in Coretax — confirm the current DJP flow before activation. TBC — a dedicated foreign-taxpayer ID has been signalled.  _(R-CT-2)_
-- **R-CT-3 — Pre-2025 amendments via Coretax** — Pembetulan for a tax period **on or before December 2024** generally routes through DJP Online, not Coretax. Confirm the channel before submitting unless DJP has published a specific migration instruction.  _(R-CT-3)_
-- **R-CT-4 — Host-to-host / PJAP integration** — Building or debugging a PJAP integration is engineering scope. Out of skill — escalate.  _(R-CT-4)_
-- **R-CT-5 — System outage on the deadline** — Do NOT self-declare a Force Majeure waiver. DJP issues a `Pengumuman` when it grants relief. Reviewer must check pajak.go.id announcements before relying on any deemed extension.  _(R-CT-5)_
-- **R-CT-6 — Confidential digital certificate operations** — Generating or renewing a taxpayer's `sertifikat digital` requires the taxpayer's own credentials — the skill walks through steps; it does not act on credentials.  _(R-CT-6)_
+- Actual taxpayer legal identity, resident/non-resident status, NPWP/NIK and NITKU/location where applicable; legal form and PKP confirmation/date.
+- Tax period, original or correction status, exact obligation and relevant pre-2025 history; accounting currency/year and actual source method/version.
+- Taxpayer or authorised representative who will activate, prepare and sign; current role/authority and whether an authorised electronic signature is available. Never ask them to send a password, passphrase, private key, OTP or credential file to the assistant.
+- Supported transaction ledger and source invoices/contracts: supply, advance/progress payment, recipient identity, article/object code, price/base/rate/tax, exemption/treaty/certificate and dates. A portal's arithmetic does not establish legal classification.
+- Existing accepted-return receipt, original/replacement/cancellation links, previous tax payments and credits/refunds/compensation. Confirm none of the transactions has already been uploaded, signed, paid or submitted through another channel.
+- Volume, current channel eligibility, current official import template and validation report. A PJAP connection may help a high-volume taxpayer, but integration implementation is engineering scope.
 
-## Section 3 — Coretax DJP overview
+A draft can be assembled with labelled missing fields. No activated/authorised access means no filing-ready signing claim; no underlying computation means no tax-total claim. Do not use a guessed KLU, identifier, recipient, PKP date, withholding article or tax code as a conservative default. A valid legal paper-filing exception is not disproved solely by an unactivated portal profile. [PER-3 arts. 7-8](https://www.pajak.go.id/id/peraturan/tata-cara-penyampaian-penerimaan-dan-pengolahan-surat-pemberitahuan-0).
 
-Coretax DJP is the Indonesian tax administration's unified back-office and taxpayer-facing platform, built under the **Pembaruan Sistem Inti Administrasi Perpajakan (PSIAP)** project. It went live **1 January 2025** and consolidates services that previously lived across multiple legacy DJP portals.
+## The method, step by step
 
-### 3.1 What Coretax replaces
+## Rates, dates and limits
 
-**What Coretax replaces**
+| Item | Rule and boundary | Official source |
+|---|---|---|
+| Current invoice format | Seventeen digits: two transaction-code digits, two status-code digits and thirteen serial digits | [PER-11 art. 37](https://www.pajak.go.id/id/peraturan/ketentuan-pelaporan-pajak-penghasilan-pajak-pertambahan-nilai-pajak-penjualan-atas-0) |
+| Coretax electronic serial | Automatically assigned when uploaded AND approved; no Coretax request for a serial-number stock | [PER-11 art. 43](https://www.pajak.go.id/id/peraturan/ketentuan-pelaporan-pajak-penghasilan-pajak-pertambahan-nilai-pajak-penjualan-atas-0) |
+| Invoice approval deadline | Upload and DJP approval no later than twentieth of following month; no approval means no qualifying electronic tax invoice | [PER-11 art. 44](https://www.pajak.go.id/id/peraturan/ketentuan-pelaporan-pajak-penghasilan-pajak-pertambahan-nilai-pajak-penjualan-atas-0) |
+| Invoice tax point | Supply, payment before supply, progress payment or other prescribed point; not whenever the operator has a spare serial | [PER-11 art. 31](https://www.pajak.go.id/id/peraturan/ketentuan-pelaporan-pajak-penghasilan-pajak-pertambahan-nilai-pajak-penjualan-atas-0) |
+| Consolidated invoice | Same buyer and calendar month, made by month end; separate transaction codes and statutory exceptions apply | [PER-11 art. 32](https://www.pajak.go.id/id/peraturan/ketentuan-pelaporan-pajak-penghasilan-pajak-pertambahan-nilai-pajak-penjualan-atas-0) |
+| Ordinary PPh deposit | Fifteenth of following month for the listed categories, subject to the actual category exception and holiday rule | [PMK 81 arts. 94 and 100](https://pajak.go.id/en/node/113110) |
+| Ordinary monthly income-tax return | Twenty days after period end unless specifically varied | [KUP art. 3(3)(a)](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf) |
+| VAT own monthly balance | End of following month and before the return; distinguish collectors and import payments | [PMK 81 art. 94(3)](https://pajak.go.id/en/node/113110) |
+| VAT monthly return | End of following month under its specific statutory rule | [VAT Law art. 15A(2)](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf) |
+| Annual individual return | Three months after the actual tax-year/part-year end; ordinarily 31 March 2027 for calendar 2026 | [PER-3 art. 4](https://www.pajak.go.id/id/peraturan/tata-cara-penyampaian-penerimaan-dan-pengolahan-surat-pemberitahuan-0) |
+| Annual entity return | Four months after actual year/part-year end; ordinarily 30 April 2027 for calendar 2026 | [PER-3 art. 4](https://www.pajak.go.id/id/peraturan/tata-cara-penyampaian-penerimaan-dan-pengolahan-surat-pemberitahuan-0) |
+| Annual balance payment | Before submission, no later than the applicable annual deadline; extension is not automatically payment deferral | [PMK 81 art. 95](https://pajak.go.id/en/node/113110); [PER-3 arts. 5-6](https://www.pajak.go.id/id/peraturan/tata-cara-penyampaian-penerimaan-dan-pengolahan-surat-pemberitahuan-0) |
+| Billing validity | 336 hours, or fourteen times twenty-four hours from issue, under amended billing art. 5 | [PER-8/PJ/2026 art. I](https://pajak.go.id/id/peraturan/perubahan-atas-peraturan-direktur-jenderal-pajak-nomor-10pj2024-tentang-ketentuan) |
+| Salary certificates | BPA1/BPA2 issued for the final tax period; provided within one month after that period ends | [PER-12 amended arts. 6-7](https://www.pajak.go.id/id/peraturan/perubahan-atas-peraturan-direktur-jenderal-pajak-nomor-11pj2025-tentang-ketentuan) |
+| Record retention | Ten years in Indonesia for books, supporting records and electronic data | [KUP art. 28(11)](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf) |
 
-| Legacy service | Coretax replacement |
-| --- | --- |
-| DJP Online e-Filing (web SPT submission) | Coretax web portal — SPT module |
-| Desktop e-Faktur (Java client) | Coretax e-Faktur (browser-based) |
-| e-Bupot 23/26 web app | Coretax e-Bupot Unifikasi |
-| e-Bupot 4(2) and PPh 15 separate apps | Same — folded into e-Bupot Unifikasi |
-| e-Bupot 21/26 (employment) | Coretax e-Bupot 21/26 (separate monthly form, on Coretax) |
-| e-Registration | Coretax registration module |
-| e-Objection / e-Appeal | Coretax dispute module |
-| e-Billing (kode billing) | Coretax payment module — still issues 15-digit ID Billing |
-| e-SKD (residence certificates) | Coretax DTP / e-SKD module |
-| KSWP (taxpayer status) | Coretax taxpayer-status service |
+### 1. Identify the applicable system and period
 
-### 3.2 What Coretax does NOT replace
+Keep the original legacy-service inventory, but distinguish a migrated function from a universally closed service. The legacy search names DJP Online e-Filing, desktop e-Faktur, e-Bupot 23/26, e-Bupot 4(2), PPh 15 tools, e-Bupot 21/26, e-Registration, e-Objection/e-Appeal, e-Billing, e-SKD and KSWP help locate old evidence. Their names do not prove a current route or the availability of a new Coretax module. A tax dispute or appeal still needs the correct authority/procedure, not an assumed portal button.
 
-Tax payment settlement still happens at a bank, BPD, Pos Indonesia, marketplace, or fintech accepting Kode Billing. Customs (Bea Cukai) PIB / PEB stays in INSW / CEISA. BPJS is a separate authority. Pre-2025 audit case files remain on legacy systems.
+For tax periods beginning in 2025, use the current reporting framework and the taxpayer's permitted electronic channel. For December 2024 and earlier, preserve original legacy invoices, returns, slips, payment IDs and receipts, and establish the actual supported correction channel before lodgement. Do not copy an old form to the new system simply because the current calendar year is 2026. The old annual search names 1770/1770S/1770SS and 1771 are not a certified current field map. For 2025 annual returns filed in 2026 and 2026 returns filed in 2027, use the correct tax year's form, current instructions and available channel. [PER-3 arts. 2-8](https://www.pajak.go.id/id/peraturan/tata-cara-penyampaian-penerimaan-dan-pengolahan-surat-pemberitahuan-0); [PER-12 art. II](https://www.pajak.go.id/id/peraturan/perubahan-atas-peraturan-direktur-jenderal-pajak-nomor-11pj2025-tentang-ketentuan).
 
-### 3.3 Coretax modules at a glance
+Payment settlement remains distinct from return filing. A payment through an authorised receiving bank, Pos Indonesia or designated collection partner is not a filed return. Customs PIB/PEB and customs-system evidence (INSW/CEISA search names) remain distinct from a domestic tax invoice. BPJS is a separate contribution authority. Historical audit case files, residence certificates, refunds and taxpayer-status requests retain their own records and legal procedures.
 
-**Coretax modules at a glance**
+The old billing cutover claim that no channel other than Coretax can issue any code is too broad. Amended billing art. 5 allows taxpayer creation or assistance through the taxpayer portal or integrated services. Confirm the actual current authorised channel; never enter credentials at an unverified third-party URL. [PER-8 art. I](https://pajak.go.id/id/peraturan/perubahan-atas-peraturan-direktur-jenderal-pajak-nomor-10pj2024-tentang-ketentuan).
 
-| Module | Purpose |
-| --- | --- |
-| Profil Wajib Pajak | Taxpayer profile, NPWP/NIK, KLU, address, PIC |
-| Layanan | Service requests (PKP confirmation, NSFP, certificate, residence) |
-| e-Faktur | Faktur Pajak issuance, NSFP balance, replacement & cancellation |
-| e-Bupot Unifikasi | PPh 23/26/4(2)/15 slips + monthly SPT Masa Unifikasi |
-| e-Bupot 21/26 | Employment withholding monthly form |
-| SPT Tahunan | 1770 / 1770S / 1770SS (individuals); 1771 (corporates) |
-| Pembayaran | Kode Billing, payment history |
-| Restitusi | Refund applications |
-| Sengketa | Objection (Keberatan) and appeal |
+### 2. Verify identity, activation and signing authority
 
-## Section 4 — Account activation and NIK-as-NPWP
+DJP's identifier implementation distinguishes **resident individuals** using NIK, and non-resident individuals, entities and government institutions using sixteen-digit NPWP; NITKU identifies places of business. Citizenship alone is not the resident/non-resident test. Do not universally construct an identifier by prefixing a zero, or append a legacy three-digit branch suffix to make an assumed new identifier. Reconcile the actual DJP master record, current taxpayer identity and branch/NITKU. [DJP NIK, NPWP and NITKU implementation release](https://www.pajak.go.id/index.php/id/siaran-pers/peluncuran-layanan-perpajakan-berbasis-nik-sebagai-npwp-npwp-16-digit-dan-nitku).
 
-### 4.1 NIK-as-NPWP — 16-digit format
+The July 2024 release describes staged legacy support, so it does not prove that every DJP service stopped accepting every legacy format on that date. Treat an old fifteen-digit value as a legacy reference until the actual current mapping is established. The unsupported claim of an imminent dedicated foreign-national ID is not an operative rule.
 
-- **NIK-as-NPWP unification** — Under **PMK-112/PMK.03/2022** (later operationalised through PER-04/PJ/2020 and amendments) the DJP unified the **NIK** (Nomor Induk Kependudukan — 16-digit national ID number) with the **NPWP** for Indonesian individual taxpayers. As of **1 July 2024** the 16-digit identifier is the only valid NPWP format for Indonesian citizens in all DJP services — Coretax enforces this.  _(PMK-112/PMK.03/2022; PER-04/PJ/2020 and amendments)_
+The taxpayer or authorised representative opens the official portal, establishes whether account activation or a password reset is appropriate, and follows the current official process for registered email/phone and identity. A stale contact record requires an authorised update; preserve the official helpdesk/KPP route rather than inventing a compulsory in-person remedy for every error. Confirm legal name, tax status, address, activity and authorised responsible person. Do not promise that a KLU mismatch always prevents a serial request, because Coretax automatic serial assignment is a different process.
 
-**NPWP format inside Coretax**
+Invoice access requires an electronic certificate **or** authorisation code and invoice access under the relevant rule. Register the actual authorised signer's identity; multiple designated signers are permitted. Do not claim a certificate renewed within a fixed historical interval is necessarily valid today, that a passphrase must be entered for every action, or that every taxpayer needs the same certificate type. The actual validity and access state must be checked without sharing secrets. [PER-11 arts. 38,42](https://www.pajak.go.id/id/peraturan/ketentuan-pelaporan-pajak-penghasilan-pajak-pertambahan-nilai-pajak-penjualan-atas-0).
 
-| Taxpayer category | NPWP format inside Coretax |
-| --- | --- |
-| Indonesian individual (WNI) | 16-digit NIK = NPWP |
-| Foreign individual (WNA) | 15-digit legacy NPWP, padded with leading "0" to 16 digits at display time (TBC — DJP has signalled a dedicated 16-digit foreign-taxpayer identifier; confirm current state) |
-| Indonesian entity (Badan) | 15-digit NPWP padded to 16 digits with leading "0" inside Coretax |
-| Government instrumentality | 15-digit padded to 16 |
-| Branch (Cabang) | Parent 15-digit + 3-digit branch suffix → Coretax displays the consolidated identifier |
+Keep preparation and signing roles separate. The old working labels Penanggung Jawab/PIC, Karyawan, Konsultan Pajak and Wakil Wajib Pajak indicate roles to reconcile with actual legal authority, not universal menu names. An operator's access alone is not permission to sign on an entity's behalf. Retain appointment/representation evidence; revoke departed-user access promptly and replace compromised credentials through the authorised process. The assistant never impersonates the taxpayer or signs, submits, pays or renews a certificate merely because it has read this method.
 
-### 4.2 Activation flow — first login
+### 3. Choose the actual invoice channel
 
-Order matters: Coretax will not allow NSFP requests, Faktur Pajak issuance, or return signing without an activated profile and valid digital certificate.
+PER-11 art. 40 allows the taxpayer portal or a designated integrated application; PJAP providers have their own designation. For an eligible Coretax/integrated invoice, the serial is assigned on upload **and approval**. Remove the old Coretax steps requesting a quantity, waiting for a serial range, consuming a balance and returning unused numbers by a copied date. Those are not the current automatic-serial procedure. Do not back-date an invoice to disguise an access or approval problem. [PER-11 arts. 40-44](https://www.pajak.go.id/id/peraturan/ketentuan-pelaporan-pajak-penghasilan-pajak-pertambahan-nilai-pajak-penjualan-atas-0).
 
-1. Visit coretaxdjp.pajak.go.id (confirm URL against the current DJP announcement).
-2. **Username** — NIK / 16-digit NPWP for individuals; 15-digit padded to 16 for entities.
-3. **Reset password** via "Lupa Kata Sandi" using the email/phone on file at DJP.
-4. Verify email and phone — required before any service request.
-5. Set **Passphrase Sertifikat Digital** — required every time a return is signed.
-6. Confirm **KLU** (business activity code) and address — mismatches block NSFP requests.
-7. Add **PIC** (Person in Charge) — at least one required for entities; each PIC has own login and signing role.
-8. **For PKPs:** request or migrate the digital certificate (`sertifikat elektronik`) via the Layanan menu.
+Desktop e-Faktur is a separate route, not a universally retired one. DJP's February 2025 announcement permits desktop from 12 February 2025 but excludes the listed transaction codes, PKPs centralising VAT at a branch and PKPs confirmed after 1 January 2025. It describes e-Nofa serial requests, desktop replacement, transmission into Coretax within at most H+2 and Coretax returns/cancellations/reporting. That historical announcement disproves the old absolute prohibition. **It does not certify that this particular taxpayer is eligible in November 2026 or that no subsequent change exists.** Verify a current channel entitlement before choosing desktop; keep its serial/request procedure separate from automatic Coretax serials. [DJP desktop announcement](https://www.pajak.go.id/index.php/id/pengumuman/pembuatan-faktur-pajak-melalui-aplikasi-e-faktur-client-desktop).
 
-### 4.3 Sub-user / impersonation
+In that announcement code **06** covers specified other supplies including goods to individual foreign-passport holders, and code **07** is VAT not collected or government-borne. **07 is not a general zero-rated export-services code.** Do not select 01,04,06,07 or08 solely from a short legacy label. Establish actual domestic supply, special base, facility, retail/tourist or export treatment from the substantive VAT rule and current invoice annex. No current full code/annex mapping is certified here. [PER-11 arts. 33,36-37](https://www.pajak.go.id/id/peraturan/ketentuan-pelaporan-pajak-penghasilan-pajak-pertambahan-nilai-pajak-penjualan-atas-0); [DJP desktop announcement](https://www.pajak.go.id/index.php/id/pengumuman/pembuatan-faktur-pajak-melalui-aplikasi-e-faktur-client-desktop).
 
-Entities grant role-based access — typical roles are *Penanggung Jawab* (signing officer), *Karyawan* (operator), *Konsultan Pajak* (external agent). External tax agents act under their own NPWP via the **Wakil Wajib Pajak** flow.
+### 4. Prepare, validate, upload and preserve the invoice
 
-## Section 5 — e-Faktur inside Coretax
+Obtain the actual supply/advance/progress-payment date and create the invoice when required. A late invoice/approval issue is not cured by changing its true date. Confirm seller identity and actual customer type: domestic entity NPWP; resident individual NPWP/NIK; foreign individual passport; foreign entity name/address as prescribed. A foreign buyer is not automatically an export and a recipient-validation error does not justify entering a fictitious ID. [PER-11 arts. 31,33](https://www.pajak.go.id/id/peraturan/ketentuan-pelaporan-pajak-penghasilan-pajak-pertambahan-nilai-pajak-penjualan-atas-0).
 
-The desktop e-Faktur Java client has been retired. All Faktur Pajak issuance from **1 January 2025** is browser-based inside Coretax. The legal substance of the Faktur Pajak (deadlines, 11% rate, exempt categories) is unchanged and lives in `indonesia-vat`. This section covers platform mechanics only.
+Capture the goods/services, consideration, discounts, applicable legal VAT base, rate/regime, VAT and PPnBM if any. The ordinary PMK 131 mechanism is nominal twelve percent applied to eleven-twelfths of price for its specified non-luxury transactions, not a universal statutory eleven-percent rate. Separate luxury, separately regulated other-base/specific-amount supplies, export, exempt and not-collected transactions. A calculated portal total is a check, not a legal override. [PMK 131 arts. 2-5](https://jdih.kemenkeu.go.id/api/download/f128868e-3cf6-4596-8407-c34eeca0e7be/2024pmkeuangan131.pdf).
 
-### 5.1 NSFP — Nomor Seri Faktur Pajak
+The authorised signer reviews and signs the draft, uploads via the permitted channel, then confirms DJP approval and automatic numbering. Saving, exporting a PDF or receiving an upload acknowledgement is not the same as invoice approval. Check the legal upload/approval deadline separately from the tax point and VAT return deadline. A commercial invoice qualifies as an electronic tax invoice only when the prescribed content and timely upload/approval conditions are satisfied. [PER-11 arts. 33,38,43-45](https://www.pajak.go.id/id/peraturan/ketentuan-pelaporan-pajak-penghasilan-pajak-pertambahan-nilai-pajak-penjualan-atas-0).
 
-Every Faktur Pajak must carry a serial number issued by DJP. Coretax centralises NSFP request and consumption.
+For bulk work, download the current official template for the exact form/channel; map fields, test a small batch, reconcile count/base/tax before and after import, and preserve validation/rejection reports and IDs. Do not guarantee CSV or XML support or a minutes-long processing time without the current schema and actual result. Avoid duplicate upload through both portal and PJAP. The original CSV/Excel ledger recommendation survives as a workpaper format, not a guarantee that any spreadsheet is a valid import file.
 
-**Coretax action steps**
+### 5. Replace, cancel or return without creating duplicate tax
 
-| Step | Coretax action |
-| --- | --- |
-| 1 | Navigate to **e-Faktur → Permintaan NSFP** |
-| 2 | Enter requested quantity. Coretax benchmarks against historical issuance and may auto-approve or queue |
-| 3 | Sign the request with the digital certificate passphrase |
-| 4 | DJP responds with a serial range (e.g., `0100002500000001`–`0100002500001000`); positions 3-4 carry the year |
-| 5 | Allocated NSFPs sit in the taxpayer's balance; each issued Faktur consumes one |
-| 6 | Unused NSFPs must be returned via **Pengembalian NSFP** by 31 March of the following year |
+A QR/verification failure requires investigation of the official verification/approval record, data, network and issuer. Do not automatically reissue an invoice on a transient QR error or call it permanently uncreditable without establishing the legal defect. Obtain the approved original and correction history; never create two live invoices for one supply merely to bypass a scanner.
 
-**Practical timing.** Peak windows queue NSFP requests for hours or days — do not wait until the Faktur is due.
+Replacement corrects wrong details **except buyer identity**, uses its actual new creation date and is reported in the original invoice's VAT period under the applicable rule. Wrong buyer identity requires cancellation and a new invoice with correct buyer information. Cancellation also covers genuinely cancelled transactions or invoices that should not have been made, with the actual supporting cancellation evidence. The old three-digit example `011` replacing `010` and an invented status position are not the seventeen-digit format. [PER-11 arts. 37,48-49](https://www.pajak.go.id/id/peraturan/ketentuan-pelaporan-pajak-penghasilan-pajak-pertambahan-nilai-pajak-penjualan-atas-0).
 
-### 5.2 Issuing a Faktur Pajak
+Keep a cancellation audit trail and source contract/cancellation documents. If an original has already been included by seller or buyer, each amends its affected return as required; an unreported cancelled invoice is not included as a live supply/input invoice. Do not keep a cancelled invoice as active output merely because its original number remains in the register. Replacement/cancellation is conditional on the ability to submit/amend the affected return. Retail invoices linked to a foreign-tourist VAT refund have their special restriction. [PER-11 arts. 49-50](https://www.pajak.go.id/id/peraturan/ketentuan-pelaporan-pajak-penghasilan-pajak-pertambahan-nilai-pajak-penjualan-atas-0).
 
-1. **e-Faktur → Buat Faktur Keluaran**.
-2. Pick the **Kode Transaksi** — `01` standard B2B, `04` special DPP, `07` zero-rated export of services, `08` exempt, etc.
-3. Enter the **counterparty NPWP** — Coretax validates against the DJP master file in real time.
-4. Enter **DPP** and **PPN**. Coretax computes PPN; override requires a flagged reason code.
-5. Save — Coretax assigns the next NSFP from the pool.
-6. **Sign** with the digital certificate passphrase. Coretax issues the QR-coded PDF.
+For goods returned or services cancelled, obtain the actual return/cancellation note, supplier/customer identities, original invoice, quantities/value/tax and dates. A Nota Retur commonly originates with the buyer; its legal validity, tax-period effect and any applicable invoice replacement require the relevant rules, not an unexplained ledger credit. Where a replacement follows a return, preserve the linkage and recompute only the correct remaining supply; do not subtract both the original return and a replacement adjustment twice. Detailed current note format/timing remains unconfirmed here. [PER-11 art. 48](https://www.pajak.go.id/id/peraturan/ketentuan-pelaporan-pajak-penghasilan-pajak-pertambahan-nilai-pajak-penjualan-atas-0).
 
-### 5.3 QR code, replacement, cancellation
+### 6. Prepare the correct withholding slips and monthly return
 
-Each finalised Faktur Pajak carries a QR code linking to pajak.go.id verification. Faktur that fail QR verification are not creditable.
+Keep employment PPh21/26 separate from the unified non-employment obligations. Current unified reporting covers the categories in PER-11, including relevant PPh4(2),15,22,23 and26; special government/industry collection procedures still need their exact rule. A withholding article is not chosen by which form is easiest. Services, non-land rent, royalties and non-bank interest require actual recipient and payer classification; distributions are not universally taxable dividends merely because paid to an individual. Construction, land/building rent, deposit interest, lottery prizes and qualifying UMKM may have separate final treatment. Shipping/aviation and other specific PPh15 regimes need their own supported computation. [PER-11 arts. 14-23](https://www.pajak.go.id/id/peraturan/ketentuan-pelaporan-pajak-penghasilan-pajak-pertambahan-nilai-pajak-penjualan-atas-0).
 
-**Scenario / Coretax action**
+PER-11 provides standard **BPPU** domestic/permanent-establishment slips and **BPNR** non-resident slips. Preserve taxpayer/recipient identity, period, final/non-final nature, actual tax-object code, facility, base/rate/tax, supporting document, agent identity/NITKU, signer and signing date. Multiple same-recipient/same-object-code transactions in a period may be consolidated when the rule allows. Certain bank, securities, government-system or other prescribed transactions use an equivalent document instead; a statement may be evidence where the law permits, not an automatically invalid missing standard slip. [PER-11 arts. 17-19](https://www.pajak.go.id/id/peraturan/ketentuan-pelaporan-pajak-penghasilan-pajak-pertambahan-nilai-pajak-penjualan-atas-0).
 
-| Scenario | Coretax action |
-| --- | --- |
-| Faktur Pengganti (replacement) | New Faktur with same period referencing original; code's first digit changes to `1` (`011` instead of `010`) |
-| Faktur Dibatalkan (cancellation) | Use **Pembatalan Faktur**; cancelled Faktur still reported in the SPT Masa PPN of the issue period |
-| Nota Retur (sales return) | Issued by buyer; recorded by seller as a credit |
+No transaction and a transaction with nil withholding are different. The prescribed exemption, certificate, individual UMKM declaration, facility or treaty-zero cases can still require a slip. Obtain actual treaty entitlement, foreign tax identity and current residence-certificate/receipt requirements before applying treaty relief; a foreign payment does not mechanically mean twenty percent and a certificate alone does not establish all beneficial-owner/treaty conditions. Do not invent a document or override a missing material residence fact. [PER-11 arts. 20-21](https://www.pajak.go.id/id/peraturan/ketentuan-pelaporan-pajak-penghasilan-pajak-pertambahan-nilai-pajak-penjualan-atas-0).
 
-### 5.4 Bulk upload
+Create and validate the draft slips, have the authorised person sign, preserve the issued versions and give the recipient the actual document. Do not assume automatic access in their account replaces the agent's delivery obligation. Reconcile original/replaced/cancelled slips and equivalent documents into the return, payment register and ledger. Under PER-11 arts.24-26, correction/additional/cancelled slips and a return amendment have conditions tied to examinations and the actual dispute/refund position; overpaid tax has the prescribed recovery route, not an invented universal next-month credit. [PER-11 arts. 24-26](https://www.pajak.go.id/id/peraturan/ketentuan-pelaporan-pajak-penghasilan-pajak-pertambahan-nilai-pajak-penjualan-atas-0).
 
-Coretax accepts CSV/XML bulk upload (template in the e-Faktur module). Server-side validation produces a status report within minutes — the standard path for high-volume PKPs.
+For employment, the current certificate names are **BPA1** for the specified permanent/periodic-pension category, **BPA2** for the specified public-service category, **BP21** for other resident personnel payments and **BP26** for non-resident personnel payments. BPA1/2 cover the final tax period, including earlier actual cessation, and must be provided within one month after its end. BP21/26 are delivered whenever made under the permitted transaction/period process. The old 1721-A1/A2 names remain legacy search labels, not a separate annual employer return or certified current form. [PER-12 amended arts. 6-7](https://www.pajak.go.id/id/peraturan/perubahan-atas-peraturan-direktur-jenderal-pajak-nomor-11pj2025-tentang-ketentuan).
 
-## Section 6 — e-Bupot Unifikasi
+### 7. Generate a supported bill and reconcile state receipt
 
-### 6.1 What "Unifikasi" means
+Reconcile the tax actually due by article, taxpayer, period and legal deposit category against prior valid deposits, collections, overpayments and corrections before generating any billing instruction. Confirm the current tax-account/deposit-code pair from the applicable official annex and actual obligation. Do not copy an old MAP/KJS pair, guessed receipt length or bank-reference string and call it a current payment instruction.
 
-- **Unifikasi definition** — Before Coretax, a withholder filed multiple separate monthly returns: - SPT Masa PPh Pasal 23/26 via e-Bupot 23/26 - SPT Masa PPh Pasal 4(2) via e-Bupot 4(2) - SPT Masa PPh Pasal 15 via e-Bupot 15 **PER-24/PJ/2021** (introduced the original e-Bupot Unifikasi) and the broader DJP regulation set referenced under **PER-2/PJ/2024** consolidated these into **one** monthly form: **SPT Masa PPh Unifikasi**. Coretax is the single venue for the unified slip workflow. > **Note.** SPT Masa PPh Pasal 21/26 (employment withholding on wages) is **not** included in the Unifikasi. PPh 21 keeps its own monthly form, but that form is also filed inside Coretax. See `id-payroll-pph21`.  _(PER-24/PJ/2021; PER-2/PJ/2024)_
+Under amended billing art.5 a code is valid for **336 hours from issue**. It ends unused at expiry; an unused/unexpired code can be cancelled under the rule, and a new code may be created after expiry/cancellation. Expiry of a code does not extend the legal payment deadline or erase the liability. No automatic payment is authorised here. Taxpayer/authorised payer settles through the actual permitted receiving channel and preserves the state receipt and NTPN/other applicable state-collection validation. A bank transfer reference or screenshot alone is not assumed to be a valid state receipt. [PER-8 art. I](https://pajak.go.id/id/peraturan/perubahan-atas-peraturan-direktur-jenderal-pajak-nomor-10pj2024-tentang-ketentuan).
 
-### 6.2 Articles covered by the Unifikasi
+The old tenth-day PPh payment rule is not the ordinary current deposit date. PMK81 lists fifteenth-day deposits for the relevant PPh categories, with import/collector exceptions; VAT has its own end-of-month/before-filing rule. Check the actual holiday adjustment rather than adding an invented grace period. A billing-code validity window never overrides these legal dates. [PMK81 arts.94-100](https://pajak.go.id/en/node/113110).
 
-**Articles covered by the Unifikasi**
+### 8. File through an eligible channel and keep the accepted receipt
 
-| Article | Typical withholding base |
-| --- | --- |
-| PPh 23 | Domestic withholding on services, rent (other than land/building), royalty, interest (non-bank), dividend to non-corporate residents |
-| PPh 26 | Withholding on payments to non-residents (subject to tax treaty rates) |
-| PPh 4(2) — Final | Land/building rent, construction services, deposit interest, lottery prizes, certain UMKM final tax |
-| PPh 15 | Specific industries — shipping, aviation, oil & gas drilling services, etc. |
+PER-3 allows electronic submission through the taxpayer portal or an integrated designated service, with specified paper routes where permitted. A person obliged to file electronically who instead uses paper does not obtain a qualifying filing receipt by that substitution. Prefilled figures do not shift responsibility for a correct, complete, clear return. [PER-3 arts.2,7-8](https://www.pajak.go.id/id/peraturan/tata-cara-penyampaian-penerimaan-dan-pengolahan-surat-pemberitahuan-0).
 
-### 6.3 Issuance flow inside Coretax
+The original Mobile/M-Pajak and offline Coretax Form topics remain useful channel checks, but their exact current supported taxpayer types, nil/non-nil status, forms, attachments and upload procedure are **Not yet confirmed** in this reading. Do not promise all individual taxpayers can file all 1770/1770S/1770SS forms on mobile, a particular February rollout date, Play/App Store availability or a universal offline/self-employed route. Use a current official module-specific instruction before recommending that path, and check the publisher before any app installation. PJAP host-to-host availability depends on designation and implemented taxpayer service, not merely a branded connector.
 
-1. **e-Bupot Unifikasi → Buat Bukti Potong**.
-2. Pick the **article** — PPh 23, 26, 4(2), or 15. Form fields change accordingly.
-3. Enter **payee NPWP** (or passport / TIN for non-residents under PPh 26).
-4. Enter gross amount and tax rate. Coretax computes the withheld amount.
-5. For PPh 26 — attach the **DGT Form (SKD — Surat Keterangan Domisili)** for a treaty rate; otherwise default 20%.
-6. Sign with the digital certificate passphrase.
-7. The Bukti Potong Unifikasi is issued — payee downloads it from their own Coretax profile.
+Reconcile every imported slip/invoice, VAT carried balance, deposit and annual attachment; sign through the authorised person's actual electronic process; submit only when instructed and qualified to do so. Preserve the accepted return, attachments, exact status/time and **Bukti Penerimaan Elektronik (BPE)** or applicable legal receipt. An upload acknowledgement, draft, payment NTPN and accepted-return receipt are different documents. Do not claim a reminder banner/email was delivered unless actually observed; a missing reminder does not change the deadline.
 
-### 6.4 Monthly SPT Masa PPh Unifikasi
+For annual extensions, a valid timely notification needs the prescribed provisional computation, statements and payment, with the correct authority evidence. PER-3 permits up to two months and has response/resubmission rules; do not treat an unanswered draft or an unfinished audit as an automatic extension. [PER-3 arts.5-6](https://www.pajak.go.id/id/peraturan/tata-cara-penyampaian-penerimaan-dan-pengolahan-surat-pemberitahuan-0).
 
-- **Monthly SPT Masa PPh Unifikasi process and deadlines** — At month-end Coretax aggregates all Bukti Potong issued per article. The user reviews, adjusts for voids/amendments, generates a **Kode Billing**, pays, then returns to attach the **NTPN** (Nomor Transaksi Penerimaan Negara) and lodges the SPT. Statutory deadlines (unchanged by Coretax): SPT Masa Unifikasi due by the **20th** of the following month; payment by the **10th** of the following month (UU KUP). PPh 21 deadlines live in `id-payroll-pph21`.  _(UU KUP)_
+### 9. Apply the current correction and compensation regime
 
-## Section 7 — SPT filing channels
+PER-12 commences on **1 October 2026**, with transitional applicability to specified pending filings and corrections. Its signature/metadata date is not the commencement date. Determine which version governs the actual transaction and return. [PER-12 art.II](https://www.pajak.go.id/id/peraturan/perubahan-atas-peraturan-direktur-jenderal-pajak-nomor-11pj2025-tentang-ketentuan).
 
-Coretax exposes four channels for SPT submission. Pick the channel that matches the form and the taxpayer's volume.
+For applicable VAT filings, normal returns are sequential subject to the express exception. Corrections account for actual earlier payments, refunds and decisions. Compensation adjustments use the prescribed next-not-yet-filed normal period and termination exceptions; do not automatically amend every intervening return or treat every negative correction as cash refunded. Legacy 2024 overpayments passed into January 2025 have their specific transition adjustment. [PER-12 amended arts.29A-29E](https://www.pajak.go.id/id/peraturan/perubahan-atas-peraturan-direktur-jenderal-pajak-nomor-11pj2025-tentang-ketentuan).
 
-**SPT filing channels**
+For applicable annual corrections, reconcile prior annual-balance payments and specified refunds/decisions. A corrected return can invalidate an earlier annual-balance instalment/deferral approval; use the current legal result, not the obsolete payment schedule. The latest correction governs within the actual rules, but filing a correction does **not** automatically stop an audit or refund examination already started. If an examination/open preliminary investigation or prior relief is involved, refer before submitting. [PER-12 amended arts.80A,129A-129B](https://www.pajak.go.id/id/peraturan/perubahan-atas-peraturan-direktur-jenderal-pajak-nomor-11pj2025-tentang-ketentuan).
 
-| Channel | Used for | Notes |
-| --- | --- | --- |
-| **Coretax web portal** | All forms — SPT Masa (PPN, Unifikasi, PPh 21/26), SPT Tahunan (1770, 1770S, 1770SS, 1771) | Default channel; supports inline editing and validation |
-| **Coretax Form** | SPT 1770 (individual self-employed) initially; later expansion | Downloadable offline form; user fills it, then uploads the signed file back to Coretax. Phased rollout — broad availability **February 2026** for SPT 1770 |
-| **Coretax Mobile** | SPT Tahunan 1770 SS and 1770 S for simple individual returns; profile updates; payment | iOS and Android. Convenient for employees with one source of income |
-| **Host-to-host (PJAP)** | Bulk Faktur Pajak issuance, bulk Bukti Potong, automated SPT lodgement | Requires PJAP onboarding — engineering project; out of scope for this skill |
+### 10. Handle access failures and preserve evidence
 
-### 7.1 Deadlines and reminders
+Keep the original six implementation categories as diagnostic checks, not current universal platform facts: login/reset or stale contacts; desktop serial/e-Nofa versus Coretax upload/approval trouble; certificate/authorisation mismatch; PJAP latency or rejected imports; genuine identity-validation errors; slow rendering/high-volume returns. Historical January-March 2025 incidents do not prove an ongoing failure or a legal extension in November 2026.
 
-**Deadlines and reminders**
+Record URL, timestamp/timezone, taxpayer/period, action, exact status/error, rejected-record list, counts/base/tax, screenshot with secrets redacted, helpdesk/KPP ticket and the permitted recovery path. Retry safely after establishing whether the first upload, payment or submission succeeded. Never assume no response means nothing was filed, and never pay the same liability twice merely because a receipt is delayed.
 
-| Obligation | Deadline | Coretax reminder |
-| --- | --- | --- |
-| SPT Masa PPN payment | End of month following the tax period | Coretax dashboard banner; email |
-| SPT Masa PPN filing | End of month following the tax period | Same |
-| SPT Masa PPh Unifikasi payment | 10th of the following month | Coretax dashboard + e-mail nudge |
-| SPT Masa PPh Unifikasi filing | 20th of the following month | Same |
-| SPT Masa PPh 21/26 payment | 10th of the following month | Same |
-| SPT Masa PPh 21/26 filing | 20th of the following month | Same |
-| SPT Tahunan 1770 individual | 31 March of the following year | Coretax sends e-mail reminders from January |
-| SPT Tahunan 1771 corporate | 30 April (4 months after fiscal year-end) | Same |
-| NSFP year-end return | 31 March of the following year for unused serials | Coretax e-Faktur reminder |
+Document-and-retry does not itself excuse lateness. Check an actual DJP announcement/decision for period, taxpayer group, covered obligation and relief conditions. Continue supported work, use a lawful alternative where available and preserve an explanation, but do not self-declare force majeure or a blanket waiver. A 2025-return relief decision expiring in April 2026 is not a 2026 tax-year extension.
 
-### 7.2 Bukti Penerimaan Elektronik (BPE)
+## Worked cases
 
-Every successful filing generates a **Bukti Penerimaan Elektronik** — the electronic receipt. Save the BPE PDF to the workpaper. It carries a unique receipt number; this is the primary evidence of filing if DJP later challenges timeliness.
+### Case 1. Commercial price is not ordinary VAT base
 
-## Section 8 — Common implementation issues (Jan–Mar 2025)
+Assume a PKP makes a qualifying ordinary non-luxury domestic taxable supply with commercial price IDR12,000,000 excluding VAT. PMK131's specified eleven-twelfths base gives DPP11,000,000; nominal twelve percent produces VAT1,320,000; the invoice total is13,320,000. A worksheet treating the price as full DPP and applying twelve percent would overstate tax by120,000. Confirm actual classification; this mechanism does not apply to every special-base, luxury, export or exempt supply. Approval/numbering and the tax point remain separate checks. [PMK131 art.3](https://jdih.kemenkeu.go.id/api/download/f128868e-3cf6-4596-8407-c34eeca0e7be/2024pmkeuangan131.pdf).
 
-The Coretax cutover was bumpy. Reviewers preparing a workpaper for an early-2025 period should expect to document at least one of these.
+```oa-check
+name: Ordinary invoice price to legal base
+inputs:
+  commercial_price: 12000000
+  base_numerator: 11
+  base_denominator: 12
+  nominal_rate: 0.12
+steps:
+  - vat_base: commercial_price * base_numerator / base_denominator
+  - vat: vat_base * nominal_rate
+  - invoice_total: commercial_price + vat
+  - wrong_vat: commercial_price * nominal_rate
+  - overstatement: wrong_vat - vat
+expected:
+  vat_base: 11000000
+  vat: 1320000
+  invoice_total: 13320000
+  wrong_vat: 1440000
+  overstatement: 120000
+```
 
-1. **Login / password reset failures** — "Lupa Kata Sandi" failed where the e-mail or phone on the DJP master file was stale. Fix: in-person visit to the local KPP to update contact data.
-2. **NSFP request delays** — peak windows queued requests for days; PKPs were unable to issue Faktur Pajak in real time. Rely on a formal `Pengumuman` only.
-3. **Digital certificate migration glitches** — legacy desktop e-Faktur certificates did not always migrate cleanly. Remedy: request a new certificate via Coretax Layanan.
-4. **PJAP integration latency** — host-to-host had teething problems; documented workaround was bulk upload via the Coretax UI.
-5. **NPWP validation false-negatives** — Coretax intermittently rejected valid counterparty NPWPs (especially 15-digit padded). Workaround: re-enter as 16-digit with leading "0".
-6. **SPT Masa PPN slow render** — long render time for taxpayers with high invoice counts; use bulk upload.
+### Case 2. A correction is not a second full payment
 
-For each, the Section 10 default applies: document the attempt, screenshot the error, retain the ticket number, file as soon as access is restored.
+Assume a permitted ordinary return correction has supported final tax due IDR3,000,000, an earlier valid deposit IDR2,000,000 and no refund/other adjustment. Reconcile the prior deposit, leaving1,000,000 additional tax. Paying3,000,000 again would create total deposits5,000,000 and an excess2,000,000, not discharge a second liability. The exact return/category recovery procedure still governs; this is not automatic permission to net an unrelated tax or refund. A newly created code's fourteen-day validity is336hours, not a new payment deadline. [PER-11 arts.22,25-26](https://www.pajak.go.id/id/peraturan/ketentuan-pelaporan-pajak-penghasilan-pajak-pertambahan-nilai-pajak-penjualan-atas-0); [PER-8 art.I](https://pajak.go.id/id/peraturan/perubahan-atas-peraturan-direktur-jenderal-pajak-nomor-10pj2024-tentang-ketentuan).
 
-## Section 9 — Cutover between DJP Online and Coretax
+```oa-check
+name: Correction payment and billing duration
+inputs:
+  corrected_due: 3000000
+  prior_valid_payment: 2000000
+  hours_per_day: 24
+  billing_days: 14
+steps:
+  - remaining_due: corrected_due - prior_valid_payment
+  - duplicate_total: prior_valid_payment + corrected_due
+  - duplicate_excess: duplicate_total - corrected_due
+  - validity_hours: billing_days * hours_per_day
+expected:
+  remaining_due: 1000000
+  duplicate_total: 5000000
+  duplicate_excess: 2000000
+  validity_hours: 336
+```
 
-**Cutover routing table**
+## When to refuse or refer
 
-| Filing | Tax period | Channel |
-| --- | --- | --- |
-| SPT Masa PPN (original) | December 2024 or earlier | **DJP Online + desktop e-Faktur** |
-| SPT Masa PPN (original) | January 2025 onward | **Coretax** |
-| SPT Masa PPN (pembetulan / amendment) | December 2024 or earlier | **DJP Online** (unless DJP announces a Coretax migration of legacy amendments — TBC) |
-| SPT Masa PPN (pembetulan) | January 2025 onward | **Coretax** |
-| SPT Masa PPh 23/26 (original) | December 2024 or earlier | **e-Bupot 23/26 (legacy)** |
-| SPT Masa PPh Unifikasi (original) | January 2025 onward | **Coretax e-Bupot Unifikasi** |
-| SPT Masa PPh 21/26 (original) | December 2024 or earlier | **e-Bupot 21/26 (legacy)** |
-| SPT Masa PPh 21/26 (original) | January 2025 onward | **Coretax e-Bupot 21/26** |
-| SPT Tahunan 1770 / 1771 | Tax year 2024 (filed Q1 2025) | **DJP Online** — the 2024 annual returns filed in early 2025 mostly remained on the legacy portal (TBC — confirm against current DJP announcement) |
-| SPT Tahunan 1770 / 1771 | Tax year 2025 (filed 2026) | **Coretax** |
-| Kode Billing for any tax payment | From 1 Jan 2025 | **Coretax** (legacy DJP Online billing module sunsetted) |
-| Faktur Pajak | From 1 Jan 2025 | **Coretax e-Faktur only** — desktop e-Faktur Java client retired |
+- **R-CT-1, substantive tax missing:** keep PPN, PPh21, ordinary income and planning in the relevant supported method; no guessed rate, code or tax total to satisfy a form.
+- **R-CT-2, foreign/identity onboarding:** resolve actual residence and official identifier mapping; do not fabricate a padded legacy number, NIK or passport.
+- **R-CT-3, historical amendments:** determine the supported pre-2025 route before a correction; no universal Coretax migration claim.
+- **R-CT-4, PJAP integration:** implementation/debugging, private credentials and API registration are engineering/authorised-operator work; preserve the tax requirements and refer.
+- **R-CT-5, outage relief:** no self-declared waiver; actual official period-specific relief and evidence are required.
+- **R-CT-6, certificate/credential operations:** the authorised user handles activation, renewal and signing secrets. Never request or reuse a taxpayer passphrase across unrelated users.
+- Wrong buyer, duplicate invoice/payment, closed correction window, pending audit/dispute/refund, unclear treaty/certificate or unknown current template: stop the affected final action, preserve the draft/evidence and refer the precise issue.
 
-If the routing is unclear, default to Coretax for any tax period of January 2025 onward and to the legacy environment for December 2024 and earlier. Confirm against the most recent DJP `Pengumuman` before lodgement.
+### Final self-check and output
 
-## Section 10 — Conservative defaults
+Retain a workflow register with taxpayer/period, current legal/channel basis, source computation, identity/authority, original and corrected document IDs, invoice approval, relevant code/template version, validation reports, deposits/state receipt, return/attachments, accepted receipt, unresolved facts and outage history. Deliver a ready-to-review draft and specific taxpayer/authorised-filer action list, never an invented successful filing. Check identity/period; PKP/current channel; actual access/signature; correct transaction/article; treaty/facility evidence; duplicates and correction links; ledger-to-form counts/base/tax; prior deposits; legal payment/filing dates; BPE; and record retention. Coretax automatic serials do not require a fictitious NSFP balance check.
 
-When Coretax behaves unexpectedly, prefer **document-and-retry** over **guess-and-file**.
+## Sources
 
-1. **System down** — screenshot the error (URL + timestamp), capture the helpdesk ticket, file as soon as access is restored. Save the BPE.
-2. **Late filing due to outage** — do NOT self-declare relief. Wait for an official DJP `Pengumuman`; file as soon as possible and prepare a written explanation for the KPP.
-3. **NSFP rejected** — never back-date a Faktur Pajak. Issue once NSFP is granted.
-4. **Withholding article unclear** — hold the filing. Mis-categorisation between PPh 23 / 4(2) / 15 / 26 requires a pembetulan, not an in-form note.
-5. **QR fails verification** — re-issue. A Faktur Pajak with a failing QR code is not creditable.
-6. **Sertifikat Digital expiring** — renew at least 30 days before expiry; Coretax blocks signing on lapse.
-7. **PIC departure** — revoke access immediately; rotate the certificate passphrase if it was known to that user.
-8. **Always retain PDFs** — Faktur Pajak, Bukti Potong, BPE. Workpapers hold offline copies for at least 10 years (UU KUP record retention).
+All following official bodies were read on **2026-11-14**, for the stated portions only. No portal credentials, taxpayer activation, filing or payment were used.
 
-## Section 11 — Reference material
+- Read 2026-11-14: [DJP consolidated KUP, Income Tax and VAT laws](https://www.pajak.go.id/sites/default/files/2023-05/SDSN%202023%207.1_0.pdf): KUP art.3 deadlines, art.28 retention and VAT art.15A distinct VAT deadline; not a certification of every administrative/criminal sanction.
+- Read 2026-11-14: [PMK81/2024 actual operative text](https://pajak.go.id/en/node/113110): arts.94-100 payments/holiday and annual balance; other platform modules are not certified by their names alone. Read alongside the cached actual PMK1/2026 amendment inventory for the affected provisions.
+- Read 2026-11-14: [PER-11/PJ/2025 operative reporting text](https://www.pajak.go.id/id/peraturan/ketentuan-pelaporan-pajak-penghasilan-pajak-pertambahan-nilai-pajak-penjualan-atas-0): arts.14-26 unified slips/returns/corrections, arts.30-45 invoice content/point/numbering/signature/approval and arts.48-50 replacement/cancellation. The full annex/code catalogue was not certified.
+- Read 2026-11-14: [PER-12/PJ/2026 actual operative amendment](https://www.pajak.go.id/id/peraturan/perubahan-atas-peraturan-direktur-jenderal-pajak-nomor-11pj2025-tentang-ketentuan): amended arts.6-7 employment certificates,29A-29E VAT sequence/compensation,80A and129A-129B corrections and art.II commencement/transition. A JDIH metadata attachment with a different PER-11/2026 printer-designation heading was rejected; this linked operative text is the relevant law.
+- Read 2026-11-14: [PER-3/PJ/2026](https://www.pajak.go.id/id/peraturan/tata-cara-penyampaian-penerimaan-dan-pengolahan-surat-pemberitahuan-0): arts.2-8 return content, deadlines, extensions and permitted electronic/paper channels; no invented current mobile/offline eligibility.
+- Read 2026-11-14: [PER-8/PJ/2026](https://pajak.go.id/id/peraturan/perubahan-atas-peraturan-direktur-jenderal-pajak-nomor-10pj2024-tentang-ketentuan): amended billing art.5, creation,336-hour validity and cancellation/replacement; not a general payment extension.
+- Read 2026-11-14: [DJP desktop e-Faktur announcement](https://www.pajak.go.id/index.php/id/pengumuman/pembuatan-faktur-pajak-melalui-aplikasi-e-faktur-client-desktop): February2025 eligibility exclusions, three channels, e-Nofa and desktop correction/transfer process; historical evidence, not certification of every taxpayer's current channel.
+- Read 2026-11-14: [DJP NIK/NPWP/NITKU implementation release](https://www.pajak.go.id/index.php/id/siaran-pers/peluncuran-layanan-perpajakan-berbasis-nik-sebagai-npwp-npwp-16-digit-dan-nitku): resident-individual identity, non-resident/entity/government sixteen-digit NPWP and business-place identifier; not the false citizenship-only mapping.
+- Read 2026-11-14: [PMK131/2024](https://jdih.kemenkeu.go.id/api/download/f128868e-3cf6-4596-8407-c34eeca0e7be/2024pmkeuangan131.pdf): arts.2-5 ordinary eleven-twelfths base, luxury distinction and separately regulated exceptions for the worked invoice.
 
-### Key legislation and regulations
+Not yet confirmed: current taxpayer-specific desktop eligibility and any later channel decision; exact live menu names, app publisher/build and Mobile/M-Pajak/Coretax Form eligibility; current bulk-import schema and complete object/transaction/deposit-code annex; detailed return/cancellation-note format/timing; actual taxpayer identity/activation/signature state; supported pre-2025 correction route for each form; period-specific deadline relief and actual payment-interest rate. Obtain the named official module/annex/decision or actual taxpayer record before issuing the affected filing instruction. No unknown is replaced by a guessed historical button, expiry or tax code.
 
-**Key legislation and regulations**
+### Change and preservation record
 
-| Topic | Reference |
-| --- | --- |
-| Tax administration framework | UU KUP (UU No. 28/2007 sebagaimana terakhir diubah dengan UU HPP No. 7/2021) |
-| Coretax — overall implementing regulation | **PMK 81/2024** (Peraturan Menteri Keuangan tentang Ketentuan Perpajakan dalam rangka Pelaksanaan Sistem Inti Administrasi Perpajakan) |
-| NIK-as-NPWP | PMK-112/PMK.03/2022; PER-04/PJ/2020 and amendments |
-| Faktur Pajak (substance) | PMK-151/PMK.03/2013 and successors; DJP Circular SE-17/PJ/2014 |
-| e-Faktur | PER-16/PJ/2014 as updated; superseded operational rules folded into PMK 81/2024 |
-| e-Bupot Unifikasi | **PER-24/PJ/2021** (original Unifikasi), refreshed by **PER-2/PJ/2024** (operational rules for e-Bupot Unifikasi inside Coretax — confirm latest amending number) |
-| e-Bupot 21/26 | PER-2/PJ/2024 (companion provisions for employment withholding inside Coretax) |
-| PMSE (foreign digital service providers) | PMK-48/PMK.03/2020 — independent of Coretax but reportable inside it |
-| Penalties | UU KUP Chapter VIII (Sanksi) |
-
-### Useful DJP resources
-
-- pajak.go.id — official DJP portal (announcements, FAQs, Coretax onboarding).
-- coretaxdjp.pajak.go.id — Coretax production tenant.
-- DJP Kring Pajak 1500200 — taxpayer hotline.
-
-### Known gaps
-
-- **Foreign-taxpayer onboarding** — DJP has signalled a dedicated 16-digit foreign ID; foreigners currently retain 15-digit NPWP padded to 16. **TBC.**
-- **Coretax Form** — full SPT 1770 availability **February 2026**; later expansion TBC.
-- **Pembetulan of pre-2025 periods through Coretax** — no single conclusive DJP instruction; default to legacy channel.
-- **PJAP integration patterns** — out of scope for this skill.
-
-### Self-check before lodging through Coretax
-
-- [ ] Tax period in the correct cutover bucket (see Section 9)
-- [ ] NPWP entered in the right format (16-digit NIK or 15-digit padded)
-- [ ] Digital certificate valid; passphrase known
-- [ ] NSFP balance adequate for expected Faktur Pajak volume
-- [ ] All Bukti Potong correctly classified by article (PPh 23 vs 4(2) vs 15 vs 26)
-- [ ] DGT Form attached for any treaty-rate PPh 26
-- [ ] Kode Billing paid; NTPN attached before lodging the SPT
-- [ ] BPE saved to the workpaper
-- [ ] Outage / delay events documented with screenshots and timestamps
-
-### Changelog
-
-**Changelog**
-
-| Version | Date | Change |
-| --- | --- | --- |
-| 1.0 | May 2026 | Initial release covering Coretax DJP from 1 Jan 2025 go-live: account activation, NIK-as-NPWP, e-Faktur inside Coretax, e-Bupot Unifikasi, SPT channels, Q1-2025 implementation issues, and DJP Online cutover routing. |
+Version2.0 replaces the conflicting generated-facts block and obsolete portal walkthrough with current operative rules and a document-first workflow. The original quick reference, entity/identity intake, six refusals, legacy-service inventory, activation/roles, invoice serial/issuance/QR/replacement/cancellation/return/bulk topics, Unifikasi scope/slips, employment separation, four filing-channel topics, deadline/receipt checks, six historical implementation categories, cutover, outage handling, retained documents and final checklist are retained above. Removed instructions were wrong or unverified: desktop retired; Coretax serial requests/pool/annual return;07 as export; citizenship-only/fifteen-digit identity; ten-day deposit; automatic QR reissue; obsolete three-digit replacement example; blanket app/form availability; guaranteed template types/latency/reminders; fixed certificate-renewal interval; guessed module names. Legacy statutes and form names are history, not the applicable current procedural authority.
 
 ## Prohibitions
 
-- NEVER advise filing a 2025-period Faktur Pajak through the retired desktop e-Faktur client — Coretax is the only valid issuance channel from 1 Jan 2025.
-- NEVER back-date a Faktur Pajak to avoid an NSFP delay.
-- NEVER guess between PPh 23 / 4(2) / 15 / 26 to expedite an e-Bupot Unifikasi filing.
-- NEVER self-declare an outage-based deadline waiver in the absence of a DJP `Pengumuman`.
-- NEVER reuse or share a taxpayer's digital-certificate passphrase across reviewer or PIC accounts.
-- NEVER present this skill's content as a substitute for the substantive tax skills (`indonesia-vat`, `id-payroll-pph21`, the income-tax skills) — Coretax is the platform; the tax content lives elsewhere.
+Never back-date, duplicate an invoice/payment, invent an identifier/tax code, claim a saved draft is approved/filed, use a desktop route without establishing eligibility, select a withholding article for convenience, self-declare relief, share signing secrets, or present this platform method as a substitute for the substantive tax calculation.
 
 ## Disclaimer
 
-Provided for informational purposes only; not tax, legal, or financial advice. Open Accountants and its contributors accept no liability. Coretax behaviour, URLs, and procedures may change without notice — cross-check against the latest DJP `Pengumuman` on pajak.go.id. All outputs must be reviewed by a qualified Konsultan Pajak before lodgement.
+Provided for informational purposes only; not tax, legal, or financial advice. Open Accountants and its contributors accept no liability. Coretax behaviour, URLs, and procedures may change without notice; cross-check against the latest DJP Pengumuman on pajak.go.id. All outputs must be reviewed by a qualified Konsultan Pajak before lodgement.
 
 The most up-to-date version is maintained at openaccountants.com.
