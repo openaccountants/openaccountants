@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/bulgaria-social-contributions"
   jurisdiction: "BG"
   tax_year: "2026"
-  last_updated: "2026-10-24"
+  last_updated: "2026-11-14"
 ---
 
 # Bulgaria social and health insurance contributions (2026)
@@ -30,22 +30,22 @@ Contribution year: the calendar year. The National Revenue Agency (NRA, НАП) 
 | Item | Rate or amount | Year | Source |
 |---|---|---|---|
 | Pension, born after 31 Dec 1959 | 14.8% (employee: employer 8.22%, employee 6.58%) | 2026 | KSO art. 6(1)(2)(a), (1)(4), (3)(9), [lex.bg](https://lex.bg/laws/ldoc/1597824512) |
-| Pension, born before 1 Jan 1960 | 19.8% (employee: employer 11.02%, employee 8.78%) | 2026 | KSO art. 6(1)(1)(a), (1)(4), (3)(8) |
-| Universal pension fund (UPF), born after 31 Dec 1959 | 5% (employee: employer 2.8%, employee 2.2%); self-insured pay all 5% | 2026 | KSO art. 157(1)(1)(c), (3), (5) |
-| General illness and maternity | 3.5%, split 60:40 (2.1% / 1.4%); optional for the self-insured | 2026 | KSO arts. 4(4), 6(1)(5), (3)(7) |
-| Unemployment | 1%, split 60:40 (0.6% / 0.4%); employees only | 2026 | KSO art. 6(1)(6), (3)(7) |
+| Pension, born before 1 Jan 1960 | 19.8% (employee: employer 11.02%, employee 8.78%) | 2026 | KSO art. 6(1)(1)(a), (1)(4), (3)(8), https://lex.bg/laws/ldoc/1597824512 |
+| Universal pension fund (UPF), born after 31 Dec 1959 | 5% (employee: employer 2.8%, employee 2.2%); self-insured pay all 5% | 2026 | KSO art. 157(1)(1)(c), (3), (5), https://lex.bg/laws/ldoc/1597824512 |
+| General illness and maternity | 3.5%, split 60:40 (2.1% / 1.4%); optional for the self-insured | 2026 | KSO arts. 4(4), 6(1)(5), (3)(7), https://lex.bg/laws/ldoc/1597824512 |
+| Unemployment | 1%, split 60:40 (0.6% / 0.4%); employees only | 2026 | KSO art. 6(1)(6), (3)(7), https://lex.bg/laws/ldoc/1597824512 |
 | Work accident and occupational disease | 0.4% to 1.1% by activity, employer only | 2026 | KSO art. 6(1)(7), (6); ZBDOO 2026 art. 14, Appendices 2, 2A, [dv.parliament.bg](https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=244982) |
-| Health insurance | 8%, split 60:40 for employees (4.8% / 3.2%); self-insured pay all 8% | 2026 | NHIF Budget Act 2026 art. 2, [dv.parliament.bg](https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=244981); ZZO art. 40(1)(1), (2), [lex.bg](https://lex.bg/laws/ldoc/2134412800) |
-| Self-insured total, without illness and maternity | 27.8% (pension 14.8 + UPF 5 + health 8; or pension 19.8 + health 8 if born before 1960) | 2026 | KSO arts. 6(3)(8)(a), (9)(a), (1)(4), 157(5); ZZO art. 40(1)(2) |
-| Self-insured total, with illness and maternity | 31.3% | 2026 | As above plus KSO art. 6(1)(5) |
-| Minimum monthly insurable income, self-insured, 1 Jan to 31 Jul | EUR 550.66 (BGN 1,077) | 2026 | ZBDOO 2026 art. 9(1)(b) |
-| Minimum monthly insurable income, self-insured, 1 Aug to 31 Dec | EUR 620.20 | 2026 | ZBDOO 2026 art. 9(2)(b) |
-| Maximum monthly insurable income, all insured, 1 Jan to 31 Jul | EUR 2,111.64 (BGN 4,130) | 2026 | ZBDOO 2026 art. 9(1)(c) |
-| Maximum monthly insurable income, all insured, 1 Aug to 31 Dec | EUR 2,300 | 2026 | ZBDOO 2026 art. 9(2)(c) |
-| Minimum insurable income for employees by activity and job group | EUR 550.66 to EUR 901.41 (to 31 Jul); EUR 620.20 to EUR 1,532.00 (from 1 Aug) | 2026 | ZBDOO 2026 art. 9, Appendices 1, 1A |
+| Health insurance | 8%, split 60:40 for employees (computed: 4.8% / 3.2%); self-insured pay all 8% | 2026 | NHIF Budget Act 2026 art. 2, [dv.parliament.bg](https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=244981); ZZO art. 40(1)(1), (2), [lex.bg](https://lex.bg/laws/ldoc/2134412800) |
+| Self-insured total, without illness and maternity | 27.8% (computed: pension 14.8 + UPF 5 + health 8; or pension 19.8 + health 8 if born before 1960) | 2026 | KSO arts. 6(3)(8)(a), (9)(a), (1)(4), 157(5); ZZO art. 40(1)(2), https://lex.bg/laws/ldoc/1597824512 |
+| Self-insured total, with illness and maternity | 31.3% | 2026 | As above plus KSO art. 6(1)(5), https://lex.bg/laws/ldoc/1597824512 |
+| Minimum monthly insurable income, self-insured, 1 Jan to 31 Jul | EUR 550.66 (BGN 1,077, computed at the fixed rate 1.95583) | 2026 | ZBDOO 2026 art. 9(1)(b), https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=244982 |
+| Minimum monthly insurable income, self-insured, 1 Aug to 31 Dec | EUR 620.20 | 2026 | ZBDOO 2026 art. 9(2)(b), https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=244982 |
+| Maximum monthly insurable income, all insured, 1 Jan to 31 Jul | EUR 2,111.64 (BGN 4,130, computed at the fixed rate 1.95583) | 2026 | ZBDOO 2026 art. 9(1)(c), https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=244982 |
+| Maximum monthly insurable income, all insured, 1 Aug to 31 Dec | EUR 2,300 | 2026 | ZBDOO 2026 art. 9(2)(c), https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=244982 |
+| Minimum insurable income for employees by activity and job group | EUR 550.66 to EUR 901.41 (to 31 Jul); EUR 620.20 to EUR 1,532.00 (from 1 Aug) | 2026 | ZBDOO 2026 art. 9, Appendices 1, 1A, https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=244982 |
 | Minimum monthly wage (floor where no activity minimum is set) | EUR 620.20 (BGN 1,213) | 2026 | Decree 243/2025, [dv.parliament.bg](https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=238961) |
-| Annual insurable income limits for a self-insured person active all year | Minimum EUR 6,955.62 (7 x 550.66 + 5 x 620.20); maximum EUR 26,281.48 (7 x 2,111.64 + 5 x 2,300) | 2026 | KSO art. 6(9); ZBDOO 2026 art. 9 |
-| Guaranteed receivables fund | Not paid for 2026 | 2026 | ZBDOO 2026 art. 15(1) |
+| Annual insurable income limits for a self-insured person active all year | Minimum EUR 6,955.62 (computed: 7 x 550.66 + 5 x 620.20); maximum EUR 26,281.48 (7 x 2,111.64 + 5 x 2,300) | 2026 | KSO art. 6(9); ZBDOO 2026 art. 9, https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=244982 |
+| Guaranteed receivables fund | Not paid for 2026 | 2026 | ZBDOO 2026 art. 15(1), https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=244982 |
 
 Employee totals: employee 13.78%, employer 18.52% plus 0.4% to 1.1% work accident. The same totals apply to both birth cohorts.
 
@@ -198,4 +198,4 @@ Not yet confirmed: how the NRA's 2026 reconciliation annex sums the annual minim
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-24. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `bulgaria-social-contributions` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/bulgaria-social-contributions. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `bulgaria-social-contributions` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/bulgaria-social-contributions. If neither is available, confirm every figure against the official source pages cited above before relying on it.

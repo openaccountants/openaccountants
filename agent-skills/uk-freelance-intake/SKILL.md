@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/uk-freelance-intake"
   jurisdiction: "GB"
   tax_year: "2026"
-  last_updated: "2026-10-16"
+  last_updated: "2026-11-14"
 ---
 
 # UK freelancer tax intake: the questions to ask and where each answer goes (2026/27)
@@ -151,7 +151,7 @@ Work through the steps in order. Each step ends with a route. Record every answe
 
 13. **Hand back.** Summarise what was found, list every open flag, and name the next Guide for each item. Give the filing dates from the filing section below.
 
-## IR35 and off-payroll working: the method and when to refer
+### IR35 and off-payroll working: the method and when to refer
 
 **What the rules do.** The off-payroll working rules make sure that a worker who provides services to a client through their own intermediary pays broadly the same Income Tax and National Insurance as an employee would. They apply if the worker would have been an employee had they provided the services directly to that client. The rules are sometimes called "IR35" ([understanding off-payroll working](https://www.gov.uk/guidance/understanding-off-payroll-working-ir35)).
 
@@ -192,33 +192,33 @@ Work through the steps in order. Each step ends with a route. Record every answe
 - HMRC has opened an enquiry, or past years were treated as outside without a determination;
 - someone is offering a scheme that claims to get around the rules. HMRC warns that such schemes exist ([understanding off-payroll working](https://www.gov.uk/guidance/understanding-off-payroll-working-ir35)).
 
-## Figures that decide a route, with years
+### Rates, bands and thresholds
 
-Every figure below is 2026/27 unless the row says otherwise. The specialist skill named in the last column holds the detail.
+Every figure below is 2026/27 (from 6 April 2026) unless the row says otherwise. The specialist skill named in the last column holds the detail.
 
 | Switch | Figure | Year | Source | Detail in |
 | --- | --- | --- | --- | --- |
 | Sole trader return trigger: gross takings more than | £1,000 | each year | [who must send a return](https://www.gov.uk/self-assessment-tax-returns/who-must-send-a-tax-return) | uk-income-tax-sa100 |
 | Trading allowance (instead of expenses, not as well) | £1,000 | each year | [trading and property allowances](https://www.gov.uk/guidance/tax-free-allowances-on-property-and-trading-income) | uk-bookkeeping, uk-income-tax-sa100 |
-| Property allowance, separate from the trading allowance | £1,000 | each year | same page | uk-rental-sa105 |
+| Property allowance, separate from the trading allowance | £1,000 | each year | [trading and property allowances](https://www.gov.uk/guidance/tax-free-allowances-on-property-and-trading-income) | uk-rental-sa105 |
 | Tell HMRC you need a return (first return, or none needed for 2024/25) | by 5 October 2026 | for 2025/26 | [register for Self Assessment](https://www.gov.uk/register-for-self-assessment) | uk-income-tax-sa100 |
 | VAT registration: taxable turnover more than, rolling 12 months or next 30 days alone | £90,000 | current | [register for VAT](https://www.gov.uk/register-for-vat) | uk-vat-return |
 | VAT deregistration (optional): taxable turnover less than | £88,000 | current | [VAT thresholds](https://www.gov.uk/how-vat-works/vat-thresholds) | uk-vat-return |
-| Flat Rate Scheme: join at or below / must leave above | £150,000 / £230,000 | current | same page | uk-vat-return |
+| Flat Rate Scheme: join at or below / must leave above | £150,000 / £230,000 | current | [VAT thresholds](https://www.gov.uk/how-vat-works/vat-thresholds) | uk-vat-return |
 | MTD: qualifying income over £50,000 in 2024/25 | from 6 April 2026 | 2026/27 | [MTD: who needs it](https://www.gov.uk/guidance/check-if-youre-eligible-for-making-tax-digital-for-income-tax) | uk-bookkeeping |
-| MTD: over £30,000 in 2025/26 | from 6 April 2027 | 2027/28 | same page | uk-bookkeeping |
-| MTD: over £20,000 in 2026/27 | from 6 April 2028 | 2028/29 | same page | uk-bookkeeping |
+| MTD: over £30,000 in 2025/26 | from 6 April 2027 | 2027/28 | [MTD: who needs it](https://www.gov.uk/guidance/check-if-youre-eligible-for-making-tax-digital-for-income-tax) | uk-bookkeeping |
+| MTD: over £20,000 in 2026/27 | from 6 April 2028 | 2028/29 | [MTD: who needs it](https://www.gov.uk/guidance/check-if-youre-eligible-for-making-tax-digital-for-income-tax) | uk-bookkeeping |
 | Class 2 treated as paid: profits of or above | £7,105 | 2026/27 | [self-employed NI rates](https://www.gov.uk/self-employed-national-insurance-rates) | uk-national-insurance |
-| Voluntary Class 2 (profits less than £7,105) | £3.65 a week | 2026/27 | same page | uk-national-insurance |
-| Class 4 main rate on profits over £12,570 up to £50,270 | 6% | 2026/27 | same page | uk-national-insurance |
-| Class 4 rate on profits over £50,270 | 2% | 2026/27 | same page | uk-national-insurance |
+| Voluntary Class 2 (profits less than £7,105) | £3.65 a week | 2026/27 | [self-employed NI rates](https://www.gov.uk/self-employed-national-insurance-rates) | uk-national-insurance |
+| Class 4 main rate on profits over £12,570 up to £50,270 | 6% | 2026/27 | [self-employed NI rates](https://www.gov.uk/self-employed-national-insurance-rates) | uk-national-insurance |
+| Class 4 rate on profits over £50,270 | 2% | 2026/27 | [self-employed NI rates](https://www.gov.uk/self-employed-national-insurance-rates) | uk-national-insurance |
 | No payments on account if last year's tax owed was less than | £1,000 | each year | [payments on account](https://www.gov.uk/understand-self-assessment-bill/payments-on-account) | uk-income-tax-sa100 |
-| No payments on account if tax paid outside Self Assessment was more than | 80% | each year | same page | uk-income-tax-sa100 |
-| Payments on account due | 31 January and 31 July | each year | same page | uk-income-tax-sa100 |
+| No payments on account if tax paid outside Self Assessment was more than | 80% | each year | [payments on account](https://www.gov.uk/understand-self-assessment-bill/payments-on-account) | uk-income-tax-sa100 |
+| Payments on account due | 31 January and 31 July | each year | [payments on account](https://www.gov.uk/understand-self-assessment-bill/payments-on-account) | uk-income-tax-sa100 |
 | Records kept at least | 5 years after the 31 January deadline | each year | [how long to keep records](https://www.gov.uk/self-employed-records/how-long-to-keep-your-records) | uk-bookkeeping |
 | Off-payroll: medium or large client if 2 or more of turnover, balance sheet, employees above | £10.2 million / £5.1 million / 50 (gov.uk guidance; see the IR35 section on the statute) | current | [off-payroll working for clients](https://www.gov.uk/guidance/off-payroll-working-for-clients) | refer |
 
-## Boundaries and exceptions
+## Boundary and exception table
 
 | Situation | What follows | Source |
 | --- | --- | --- |
@@ -246,18 +246,56 @@ Every figure below is 2026/27 unless the row says otherwise. The specialist skil
 
 **Case 2. New sole trader, first return.** A web designer started in June 2025 and has never filed. Gross takings in 2025/26: £34,000; profit £30,000. ([who must send a return](https://www.gov.uk/self-assessment-tax-returns/who-must-send-a-tax-return))
 - Takings are more than £1,000: a return is needed, and they must tell HMRC by 5 October 2026 ([register for Self Assessment](https://www.gov.uk/register-for-self-assessment)). Online return and payment by 31 January 2027 ([deadlines](https://www.gov.uk/self-assessment-tax-returns/deadlines)).
-- NI for 2025/26: profit is £6,845 or more, so Class 2 is treated as paid; Class 4 = (£30,000 − £12,570) × 6% = £17,430 × 6% = £1,045.80 ([NI rates and allowances](https://www.gov.uk/government/publications/rates-and-allowances-national-insurance-contributions/rates-and-allowances-national-insurance-contributions); the 6% rate and £12,570 limit are the same in 2025/26 and 2026/27).
+- NI for 2025/26: profit is £6,845 or more, so Class 2 is treated as paid; Class 4 = (£30,000 less £12,570) at 6% = £17,430 at 6% = £1,045.80 ([NI rates and allowances](https://www.gov.uk/government/publications/rates-and-allowances-national-insurance-contributions/rates-and-allowances-national-insurance-contributions); the 6% rate and £12,570 limit are the same in 2025/26 and 2026/27).
 - Payments on account: first year, so on 31 January 2027 they pay the whole 2025/26 bill plus the first payment on account for 2026/27, then the second on 31 July 2027, unless the bill is less than £1,000 ([payments on account](https://www.gov.uk/understand-self-assessment-bill/payments-on-account)).
 - MTD: the 2025/26 qualifying income is £34,000 before any annualising for the part year, already over £30,000, so MTD applies from 6 April 2027 ([MTD: who needs it](https://www.gov.uk/guidance/check-if-youre-eligible-for-making-tax-digital-for-income-tax); [qualifying income](https://www.gov.uk/guidance/work-out-your-qualifying-income-for-making-tax-digital-for-income-tax)).
 - Routes: uk-income-tax-sa100, uk-national-insurance, uk-bookkeeping.
+
+```oa-check
+name: New sole trader, Class 4 on GBP 30,000 profit and the MTD test on GBP 34,000 takings (2025/26)
+inputs:
+  takings: 34000
+  profit: 30000
+  lower_profits_limit: 12570
+  upper_profits_limit: 50270
+  class4_main: 0.06
+  class2_line: 6845
+  mtd_threshold_2025: 30000
+steps:
+  - class4: (min(profit, upper_profits_limit) - lower_profits_limit) * class4_main
+  - profit_over_class2_line: profit - class2_line
+  - takings_over_mtd_threshold: takings - mtd_threshold_2025
+expected:
+  class4: 1045.80
+  profit_over_class2_line: 23155.00
+  takings_over_mtd_threshold: 4000.00
+```
 
 **Case 3. Consultant already in MTD and crossing the VAT threshold.** Gross takings in 2024/25: £55,000. Not VAT registered. At the end of August 2026 taxable turnover for the last 12 months goes over £90,000 for the first time. ([register for VAT](https://www.gov.uk/register-for-vat))
 - MTD: £55,000 is over £50,000 in 2024/25, so they should have been using MTD from 6 April 2026. If not signed up, they can still sign up (same MTD page). Route to uk-bookkeeping. ([MTD: who needs it](https://www.gov.uk/guidance/check-if-youre-eligible-for-making-tax-digital-for-income-tax))
 - VAT: they must register within 30 days of the end of August, so by 30 September 2026, with an effective date of 1 October 2026, the first day of the second month after going over ([register for VAT](https://www.gov.uk/register-for-vat)). Route to uk-vat-return now; this is urgent.
 
 **Case 4. Employee with a sideline: payments on account switched off.** Last year's total tax was £2,400, of which £2,100 was paid through PAYE. ([payments on account](https://www.gov.uk/understand-self-assessment-bill/payments-on-account))
-- £2,100 ÷ £2,400 = 87.5%, which is more than 80%, so no payments on account are due ([payments on account](https://www.gov.uk/understand-self-assessment-bill/payments-on-account)).
+- £2,100 divided by £2,400 = 87.5%, which is more than 80%, so no payments on account are due ([payments on account](https://www.gov.uk/understand-self-assessment-bill/payments-on-account)).
 - Had PAYE covered exactly £1,920 (80%), the test would fail and payments on account would be due, because the exemption needs more than 80%. ([payments on account](https://www.gov.uk/understand-self-assessment-bill/payments-on-account))
+
+```oa-check
+name: Payments on account, 80% test, GBP 2,100 of GBP 2,400 paid through PAYE
+inputs:
+  total_tax: 2400
+  paid_at_source: 2100
+  test_share: 0.80
+steps:
+  - share_paid: paid_at_source / total_tax
+  - margin_over_test: share_paid - test_share
+  - paye_at_exactly_80: total_tax * test_share
+  - self_assessment_part: total_tax - paid_at_source
+expected:
+  share_paid: 0.875
+  margin_over_test: 0.075
+  paye_at_exactly_80: 1920.00
+  self_assessment_part: 300.00
+```
 
 **Case 5. Contractor through their own company, large client.** An IT contractor works through their own limited company for a large bank. The bank's SDS says the engagement is inside the rules. They are repaying a student loan.
 - The client decides status for a large private sector client. The deemed employer deducts Income Tax and employee NI from the fees and pays employer NI ([understanding off-payroll working](https://www.gov.uk/guidance/understanding-off-payroll-working-ir35)).
@@ -322,6 +360,35 @@ Refuse to: file anything for the person; tell them their employment status or re
 - [ ] Rental, gains, payroll, dividends, student loan and Child Benefit each routed.
 - [ ] Every open flag listed, with the skill or adviser that closes it, and the filing dates given.
 
+## Sources
+
+| Source | What was read | URL | Read on |
+| --- | --- | --- | --- |
+| GOV.UK, Who must send a tax return | Read for the GBP 1,000 sole trader trigger, other triggers and 5 October | https://www.gov.uk/self-assessment-tax-returns/who-must-send-a-tax-return | 2026-11-14 |
+| GOV.UK, Register for Self Assessment | Read for 5 October 2026 for 2025/26 | https://www.gov.uk/register-for-self-assessment | 2026-11-14 |
+| GOV.UK, Self Assessment deadlines | Read for 31 October, 30 December, 31 January and the 3-month late registration rule | https://www.gov.uk/self-assessment-tax-returns/deadlines | 2026-11-14 |
+| GOV.UK, Tax on foreign income: residence | Read for the residence tests | https://www.gov.uk/tax-foreign-income/residence | 2026-11-14 |
+| GOV.UK, Employment status: self-employed and contractor | Read for the self-employment indicators | https://www.gov.uk/employment-status/selfemployed-contractor | 2026-11-14 |
+| HMRC Business Income Manual BIM20205 | Read for the badges of trade | https://www.gov.uk/hmrc-internal-manuals/business-income-manual/bim20205 | 2026-11-14 |
+| GOV.UK, Tax-free allowances on property and trading income | Read for the GBP 1,000 allowances, full and partial relief and the exclusions | https://www.gov.uk/guidance/tax-free-allowances-on-property-and-trading-income | 2026-11-14 |
+| GOV.UK, Register for VAT | Read for GBP 90,000, the 30-day tests and the effective date | https://www.gov.uk/register-for-vat | 2026-11-14 |
+| GOV.UK, VAT thresholds | Read for GBP 88,000 and the Flat Rate Scheme GBP 150,000 and 230,000 | https://www.gov.uk/how-vat-works/vat-thresholds | 2026-11-14 |
+| GOV.UK, Check if you need MTD for Income Tax | Read for GBP 50,000, 30,000, 20,000 and signing up | https://www.gov.uk/guidance/check-if-youre-eligible-for-making-tax-digital-for-income-tax | 2026-11-14 |
+| GOV.UK, Work out qualifying income for MTD | Read for what counts, the GBP 52,000 example and annualising | https://www.gov.uk/guidance/work-out-your-qualifying-income-for-making-tax-digital-for-income-tax | 2026-11-14 |
+| GOV.UK, Self-employed National Insurance rates | Read for GBP 7,105, GBP 3.65, 6% and 2% in 2026/27 | https://www.gov.uk/self-employed-national-insurance-rates | 2026-11-14 |
+| HMRC, Rates and allowances: National Insurance contributions | Read for the 2025/26 GBP 6,845 and GBP 3.50 Class 2 figures | https://www.gov.uk/government/publications/rates-and-allowances-national-insurance-contributions/rates-and-allowances-national-insurance-contributions | 2026-11-14 |
+| GOV.UK, Payments on account | Read for half of last year's bill, the GBP 1,000 and 80% tests and 31 July | https://www.gov.uk/understand-self-assessment-bill/payments-on-account | 2026-11-14 |
+| GOV.UK, Self-employed records: how long to keep | Read for at least 5 years after the 31 January deadline | https://www.gov.uk/self-employed-records/how-long-to-keep-your-records | 2026-11-14 |
+| HMRC, Understanding off-payroll working (IR35) | Read for intermediaries, umbrella companies, deemed employers and student loans | https://www.gov.uk/guidance/understanding-off-payroll-working-ir35 | 2026-11-14 |
+| HMRC, Off-payroll working for clients | Read for who decides and the GBP 10.2 million, 5.1 million and 50 employee tests | https://www.gov.uk/guidance/off-payroll-working-for-clients | 2026-11-14 |
+| HMRC, Off-payroll working, public sector or medium and large clients | Read for the SDS, the 45-day replies and salary or dividends | https://www.gov.uk/guidance/off-payroll-working-for-intermediaries-and-contractors-providing-services-to-the-public-sector-or-medium-and-large-clients-in-the-private-sector | 2026-11-14 |
+| HMRC, Off-payroll working, small private sector clients | Read for the worker's company deciding and the deemed employment payment | https://www.gov.uk/guidance/off-payroll-working-for-intermediaries-and-contractors-providing-services-to-small-clients-in-the-private-sector | 2026-11-14 |
+| HMRC, Check employment status for tax (CEST) | Read for when HMRC stands by the result | https://www.gov.uk/guidance/check-employment-status-for-tax | 2026-11-14 |
+| ITEPA 2003, s.60A | Read for small tied to the Companies Act small companies regime | https://www.legislation.gov.uk/ukpga/2003/1/section/60A | 2026-11-14 |
+| Companies Act 2006, s.382 | Read for GBP 15 million, GBP 7.5 million and 50 employees | https://www.legislation.gov.uk/ukpga/2006/46/section/382 | 2026-11-14 |
+
+Not yet confirmed: which size test applies to an off-payroll client for 2026/27. HMRC's client guidance read today still prints £10.2 million turnover and £5.1 million balance sheet, while ITEPA s.60A ties "small" to the Companies Act regime, whose s.382 limits now read £15 million and £7.5 million; ask the client to confirm its size rather than test it.
+
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-16. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `uk-freelance-intake` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/uk-freelance-intake. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `uk-freelance-intake` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/uk-freelance-intake. If neither is available, confirm every figure against the official source pages cited above before relying on it.

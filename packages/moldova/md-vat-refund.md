@@ -14,10 +14,11 @@ jurisdiction: MD
 category: international
 job: vat-refund
 tax_year: 2026
-last_updated: 2026-10-31
-version: "0.2"
+last_updated: 2026-11-14
+version: "0.3"
 tier: 2
 domain: vat-gst
+type: situation-rules
 ---
 
 # Moldova VAT refund and offset application, 2026

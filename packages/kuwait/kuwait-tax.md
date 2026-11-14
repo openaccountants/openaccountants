@@ -1,17 +1,18 @@
 ---
 name: kuwait-tax
 description: "Routing and bookkeeping treatment for Kuwait tax work in tax year 2026. Covers bank statement patterns for Kuwaiti banks, the Ministry of Finance, customs and PIFSS, the supporting records needed before classifying them, corporate income tax for a foreign branch, the 5% retention, Zakat, DMTT, and test cases. Use whenever asked to classify Kuwait transactions or handle Kuwait tax work, and for the held question of current Kuwait VAT implementation. Points to the detailed Kuwait skills for each tax. Not signed off by an accountant."
-version: 2.2
+version: 2.3
+type: situation-rules
 jurisdiction: KW
 category: international
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
 ---
 
-# Kuwait Tax v2.2
+# Kuwait Tax v2.3
 
 Tax year 2026.
 
@@ -27,17 +28,13 @@ Minimum input: a bank statement from NBK, KFH, Gulf Bank, Burgan Bank, Al Ahli U
 
 | Item | Figure and conditions | Tax year | Official URL |
 |---|---|---|---|
-| VAT or GST | unverified: NON-OPERATIVE HOLD, see [VAT](kw-vat-gst.md) | 2026 | https://www.mof.gov.kw/MOFDesicions/mofDesicions1.aspx |
 | Corporate income tax | 15% of confirmed ordinary net taxable income, outside DMTT; Kuwaiti/Gulf/mixed ownership is held (reg. art. 9) | 2026 | https://www.mof.gov.kw/Desicions/Decree/PDF/la2-2008.pdf |
 | Zakat | 1% annual net profit, Kuwaiti public/closed shareholding companies outside Law 46 art. 4 exclusions and DMTT | 2026 | https://www.mof.gov.kw/Desicions/Decree/PDF/Law46_2006e.pdf |
 | NLST | 2.5% annual net profit, listed Kuwaiti companies outside DMTT (Law 19 art. 12) | 2026 | https://www.mof.gov.kw/Desicions/Decree/PDF/LawNo19Of2000NationalLabor.pdf |
 | DMTT | 15% effective minimum; EUR 750m consolidated revenue in two of four prior periods, subject to entity exclusions; periods from 1 January 2025, not a flat profit tax | 2026 | https://www.mof.gov.kw/Desicions/Decree/PDF/DecreeLawDMTTNo157of2024.pdf |
 | Personal income tax | Own trade/work income exempt unless it represents a corporate body's share (reg. art. 8(2)) | 2026 | https://www.mof.gov.kw/Desicions/Decree/PDF/la2-2008.pdf |
 | Retention | 5% of contract or each payment for in-scope ordinary-tax payers/payees, until MOF release (reg. arts. 37 to 39); DMTT public-circular carve-out is separately scoped in corporate Guide | 2026 | https://www.mof.gov.kw/Desicions/Decree/PDF/la2-2008.pdf |
-| Late filing | 1% per 30 days or part (reg. art. 34). No 50% cap appears in the text | 2026 | same |
-| KFAS | unverified: NON-OPERATIVE HOLD, historical figure in Sources | 2026 | unverified |
-| Customs | unverified: NON-OPERATIVE HOLD, historical figure in Sources | 2026 | unverified |
-| PIFSS | unverified: see [payroll](kw-payroll-social.md) | 2026 | unverified |
+| Late filing | 1% per 30 days or part (reg. art. 34). No cap on the total appears in the text | 2026 | same |
 
 ## The base
 

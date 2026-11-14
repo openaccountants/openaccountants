@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/es-non-resident-income-tax-irnr-and"
   jurisdiction: "ES"
   tax_year: "2026"
-  last_updated: "2026-10-28"
+  last_updated: "2026-11-14"
 ---
 
-# Spain: non-residents, permanent establishments and departure v1.1
+# Spain: non-residents, permanent establishments and departure v1.2
 
 Select residence and source, then compute the applicable 2026 IRNR or departure route. This revision is sourced from the law; independent whole-pack review is pending and no accountant has signed it off. A treaty or special-regime election can change the route and must be evidenced.
 
@@ -209,4 +209,4 @@ expected:
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-28. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `es-non-resident-income-tax-irnr-and` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/es-non-resident-income-tax-irnr-and. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `es-non-resident-income-tax-irnr-and` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/es-non-resident-income-tax-irnr-and. If neither is available, confirm every figure against the official source pages cited above before relying on it.

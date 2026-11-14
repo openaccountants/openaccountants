@@ -9,9 +9,11 @@
 2. `intake.md`
 3. `README.md`
 4. `lc-first-time-land-interest.md`
-5. `lc-national-insurance.md`
-6. `lc-personal-tax-deductions.md`
-7. `workflow-base.md`
+5. `lc-imported-services-vat.md`
+6. `lc-national-insurance.md`
+7. `lc-personal-tax-deductions.md`
+8. `lc-vat.md`
+9. `workflow-base.md`
 
 ## How to use
 

@@ -1,15 +1,23 @@
 ---
 name: pa-payroll
-description: Tier 2 Pennsylvania content skill for employer payroll compliance covering tax year 2025. Includes the 3.07% flat PIT, Local Earned Income Tax under Act 32 with employer withholding by employee-residence PSD code (rates 0.5-3.9%), Local Services Tax (typically $52/year), reciprocal agreements with NJ/OH/IN/MD/VA/WV that exempt non-resident employees from state withholding, Philadelphia and Pittsburgh wage taxes (separate from state PIT under Sterling Act), SUC wage base $10,000 with rates 1.4-9.1%, REV-419 state withholding form, the Construction Workplace Misclassification Act, and quarterly PA-501/UC-2 combined filings.
+description: Use this skill for Pennsylvania employer payroll in 2026, covering state personal income tax withholding at 3.07% (residents, nonresidents, the six reciprocal states and Form REV-419), deposit frequencies and the quarterly return, W-2s with REV-1667, local earned income tax withholding under Act 32 (PSD codes and the higher-of rule), the Local Services Tax (at most $52 a year), unemployment compensation (UC) with the $10,000 employer wage base, new-employer rates of 3.822% and 10.5924%, the 1.419% to 10.3734% experience range and the 0.07% employee contribution, new hire reporting and the $7.25 minimum wage. Trigger on "Pennsylvania payroll", "PA withholding", "REV-419", "PA UC rate", "PA SUTA", "UC-2", "Act 32 withholding", "Local Services Tax". Philadelphia wage tax rates are in pa-local-eit.
+version: "1.1"
 jurisdiction: US-PA
 tax_year: 2026
-last_updated: 2026-10-16
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
+type: computation
 ---
 
 # Pennsylvania employer payroll: PA withholding, local EIT (Act 32), LST, unemployment compensation, minimum wage and new hires (2026, with 2025 notes)
+
+> **Built from the law, not yet approved by an accountant.** Review by a qualified professional before relying on it.
+
+**Quick reference, 2026:** the key figures are in the first table under "Rates, bands and thresholds" below.
+
+Ask first: where each employee lives and works, any reciprocal-state residents with REV-419, the 2026 UC rate notice (UC-657) or new-employer status, and expected PA withholding per quarter.
 
 Figures are for tax year 2026 unless a line says 2025. Pennsylvania's withholding rate, the unemployment compensation (UC) wage base, the UC rate range, the new-employer UC rates and the employee UC rate are the same in 2025 and 2026 ([Employer Withholding](https://www.pa.gov/agencies/revenue/resources/tax-types-and-information/employer-withholding); [UC yearly tax highlights](https://www.pa.gov/agencies/dli/resources/for-employers-and-educators/how-to-file/uc-tax/yearly-tax-highlights)). A dated section near the end covers 2025 payrolls.
 
@@ -44,7 +52,7 @@ Figures are for tax year 2026 unless a line says 2025. Pennsylvania's withholdin
 ## The method, step by step
 
 1. **Register.** Get a federal EIN, then register for employer withholding and a UC account through the Pennsylvania Online Business Tax Registration at mypath.pa.gov. Wage withholding goes in an Employer Withholding account, separate from 1099 withholding accounts ([Employer Withholding](https://www.pa.gov/agencies/revenue/resources/tax-types-and-information/employer-withholding)). Register with the local tax collector for each Pennsylvania worksite to get a local tax ID ([DCED employer steps](https://dced.pa.gov/local-government/local-income-tax-information/instructions-employers/)).
-2. **Report each new hire** to the Pennsylvania New Hire Reporting Program through PA CareerLink. This covers every employee who lives or works in Pennsylvania, including rehires and temporary agency placements ([Report newly hired employees](https://www.pa.gov/services/dli/report-newly-hired-employees)). Federal law sets the outer deadline: no later than 20 days after the hire date or, for electronic filers, two monthly transmissions 12 to 16 days apart ([42 U.S.C. 653a](https://www.law.cornell.edu/uscode/text/42/653a)).
+2. **Report each new hire** to the Pennsylvania New Hire Reporting Program through PA CareerLink. This covers every employee who lives or works in Pennsylvania, including rehires and temporary agency placements ([Report newly hired employees](https://www.pa.gov/services/dli/report-newly-hired-employees)). Federal law sets the outer deadline: no later than 20 days after the hire date or, for electronic filers, two monthly transmissions 12 to 16 days apart ([42 U.S.C. 653a](https://www.govinfo.gov/content/pkg/USCODE-2024-title42/html/USCODE-2024-title42-chap7-subchapIV-partD-sec653a.htm)).
 3. **Collect forms at hire.**
    - Federal Form W-4. Pennsylvania has no allowance certificate because its rate is flat.
    - Form REV-419, only from an employee who claims nonwithholding (see step 5).
@@ -64,9 +72,21 @@ Figures are for tax year 2026 unless a line says 2025. Pennsylvania's withholdin
 9. **Deposit and file** on the schedules under "Filing and payment": PA deposits and quarterly returns, local and UC quarterly returns, and the year-end W-2, REV-1667 and W2-R.
 10. **Check pay rates** against the $7.25 state minimum wage and the tip-credit rules ([Wage FAQs](https://www.pa.gov/agencies/dli/resources/compliance-laws-and-regulations/labor-management-relations/pennsylvania-s-minimum-wage-act/wage-faqs)).
 
-## Figures for 2026 (and 2025 where they differ)
+### Rates, bands and thresholds
 
-### PA personal income tax withholding ([Employer Withholding](https://www.pa.gov/agencies/revenue/resources/tax-types-and-information/employer-withholding); [REV-415](https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/formsforbusinesses/employerwithholding/documents/rev-415.pdf))
+| Item | Amount, 2026 | Source |
+| --- | --- | --- |
+| PA income tax withholding | 3.07% flat of PA compensation | [DOR Employer Withholding](https://www.pa.gov/agencies/revenue/resources/tax-types-and-information/employer-withholding) |
+| UC employer taxable wage base | $10,000 per employee per calendar year | [UC yearly tax highlights](https://www.pa.gov/agencies/dli/resources/for-employers-and-educators/how-to-file/uc-tax/yearly-tax-highlights) |
+| UC new employer rate | 3.822% (not construction); 10.5924% (construction); the page writes them as decimals, .038220 and .105924 | same |
+| UC experience range | 1.419% to 10.3734%; the page writes the 2026 range as decimals, .014190 to .103734 | same |
+| UC employee contribution | 0.07% of all gross wages, no cap | same |
+| Local Services Tax | at most $52 a person a year; low-income exemption under $12,000 | [DCED LST](https://dced.pa.gov/local-government/local-income-tax-information/local-services-tax/) |
+| Minimum wage | $7.25 an hour; tipped cash wage $2.83 | [DLI Minimum Wage Act](https://www.pa.gov/agencies/dli/resources/compliance-laws-and-regulations/labor-management-relations/pennsylvania-s-minimum-wage-act); [DLI Wage FAQs](https://www.pa.gov/agencies/dli/resources/compliance-laws-and-regulations/labor-management-relations/pennsylvania-s-minimum-wage-act/wage-faqs) |
+
+Figures for 2026, and 2025 where they differ. The 2025 figures were the same.
+
+#### PA personal income tax withholding ([Employer Withholding](https://www.pa.gov/agencies/revenue/resources/tax-types-and-information/employer-withholding); [REV-415](https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/formsforbusinesses/employerwithholding/documents/rev-415.pdf))
 
 - **Rate:** 3.07% flat, for residents and nonresidents earning income in Pennsylvania. The same rate applied in 2025.
 - **Compensation** includes salaries, wages, commissions, bonuses, fees, stock options and tips, in cash or property. Differences from federal wages that matter for payroll:
@@ -78,19 +98,19 @@ Figures are for tax year 2026 unless a line says 2025. Pennsylvania's withholdin
   - For other items, use the table in the Department's PIT Guide chapter on withholding ([PIT Guide, withholding](https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/papersonalincometaxguide/documents/pitguide_withholding.pdf)).
 - **No PA withholding is required** (the pay may still be taxable to the employee) for domestic servants in a private home, certain ministers, casual employees outside the normal course of business, certain agricultural workers, and some interstate transportation workers. Check the REV-415 list before relying on this.
 
-### Deposit frequency ([REV-415](https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/formsforbusinesses/employerwithholding/documents/rev-415.pdf); [Employer Withholding](https://www.pa.gov/agencies/revenue/resources/tax-types-and-information/employer-withholding))
+#### Deposit frequency ([REV-415](https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/formsforbusinesses/employerwithholding/documents/rev-415.pdf); [Employer Withholding](https://www.pa.gov/agencies/revenue/resources/tax-types-and-information/employer-withholding))
 
-| PA tax you can reasonably expect to withhold | Frequency | When payment is due |
-| --- | --- | --- |
-| Less than $300 per quarter | Quarterly | Last day of April, July, October and January |
-| $300 or more, but less than $1,000, per quarter | Monthly | 15th of the next month for January to November; January 31 for December |
-| $1,000 or more, but less than $5,000, per quarter | Semi-monthly | Within three banking days after each period ends. Periods end on the 15th and the last day of the month |
-| $5,000 or more per quarter, or $20,000 or more per calendar year | Semi-weekly | Payday Wednesday, Thursday or Friday: the following Wednesday. Payday Saturday, Sunday, Monday or Tuesday: the following Friday |
+| PA tax you can reasonably expect to withhold | Frequency | When payment is due | Source |
+| --- | --- | --- | --- |
+| Less than $300 per quarter | Quarterly | Last day of April, July, October and January | [REV-415](https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/formsforbusinesses/employerwithholding/documents/rev-415.pdf) |
+| $300 or more, but less than $1,000, per quarter | Monthly | 15th of the next month for January to November; January 31 for December | [REV-415](https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/formsforbusinesses/employerwithholding/documents/rev-415.pdf) |
+| $1,000 or more, but less than $5,000, per quarter | Semi-monthly | Within three banking days after each period ends. Periods end on the 15th and the last day of the month | [REV-415](https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/formsforbusinesses/employerwithholding/documents/rev-415.pdf) |
+| $5,000 or more per quarter, or $20,000 or more per calendar year | Semi-weekly | Payday Wednesday, Thursday or Friday: the following Wednesday. Payday Saturday, Sunday, Monday or Tuesday: the following Friday | [REV-415](https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/formsforbusinesses/employerwithholding/documents/rev-415.pdf) |
 
 - **Changing frequency:** ask for a more frequent schedule 15 days before the quarter starts. A less frequent schedule is allowed only at the start of a calendar year, and only if each quarter's amount is reasonably expected to fall below the current schedule's threshold.
 - **Electronic payment:** any payment of $1,000 or more must be made electronically (ACH debit, ACH credit or card). The penalty for not doing so is 3% of the tax due, up to $500.
 
-### REV-419, the Employee's Nonwithholding Application Certificate ([REV-419 and instructions](https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/formsforbusinesses/employerwithholding/documents/rev-419.pdf))
+#### REV-419, the Employee's Nonwithholding Application Certificate ([REV-419 and instructions](https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/formsforbusinesses/employerwithholding/documents/rev-419.pdf))
 
 - **There are only three grounds:**
   - (a) The employee qualified for Tax Forgiveness last year with a right to a full refund, or expects to qualify this year.
@@ -107,7 +127,7 @@ Figures are for tax year 2026 unless a line says 2025. Pennsylvania's withholdin
 - Keep all nonwithholding certificates until the Department has audited the payroll period (REV-415).
 - **Reciprocity covers PA income tax only.** It does not remove local EIT or the LST: an out-of-state resident still owes the worksite nonresident EIT rate and the LST ([DCED FAQ](https://dced.pa.gov/local-government/local-income-tax-information/local-withholding-tax-faqs/)).
 
-### W-2s and the W-2 transmittal ([REV-415](https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/formsforbusinesses/employerwithholding/documents/rev-415.pdf))
+#### W-2s and the W-2 transmittal ([REV-415](https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/formsforbusinesses/employerwithholding/documents/rev-415.pdf))
 
 - **Due date:** whatever the federal due date, file W-2s with Pennsylvania by January 31 after the tax year. If the business ended during the year, file within 30 days of the end of business.
 - **Transmittal:** file a REV-1667 Annual Withholding Reconciliation Statement with the W-2s, one for each FEIN. myPATH screen printouts do not replace it.
@@ -116,7 +136,7 @@ Figures are for tax year 2026 unless a line says 2025. Pennsylvania's withholdin
 - **Terminated employees:** if one asks in writing and no further work is expected that year, furnish the W-2 by the 30th day after the request or after the last wage payment, whichever is later.
 - **Penalty:** $50 for each willful false W-2, each willful failure to furnish one, and each W-2 missing required information.
 
-### Local earned income tax under Act 32 ([DCED FAQ](https://dced.pa.gov/local-government/local-income-tax-information/local-withholding-tax-faqs/); [DCED employer steps](https://dced.pa.gov/local-government/local-income-tax-information/instructions-employers/))
+#### Local earned income tax under Act 32 ([DCED FAQ](https://dced.pa.gov/local-government/local-income-tax-information/local-withholding-tax-faqs/); [DCED employer steps](https://dced.pa.gov/local-government/local-income-tax-information/instructions-employers/))
 
 - **Who must withhold:** every employer with a worksite in Pennsylvania. Worksites include factories, warehouses, branches, offices and the homes of home-based employees.
 - **PSD codes** are six-digit numbers that identify each municipality. DCED's address search gives the PSD codes, EIT rates, LST rate and tax collector for both the home and the worksite.
@@ -127,7 +147,7 @@ Figures are for tax year 2026 unless a line says 2025. Pennsylvania's withholdin
 - **Multiple worksites:** you may elect to file and pay all EIT to one collector. You must then file and pay electronically and monthly, not quarterly. The option does not cover the LST.
 - **Employees who move between job sites:** on an assignment of less than 90 consecutive days, treat the employer's permanent home office as the worksite. At 90 or more consecutive days, use the job location. Philadelphia work falls under the Sterling Act instead.
 
-### Local Services Tax ([LST](https://dced.pa.gov/local-government/local-income-tax-information/local-services-tax/); [DCED FAQ](https://dced.pa.gov/local-government/local-income-tax-information/local-withholding-tax-faqs/))
+#### Local Services Tax ([LST](https://dced.pa.gov/local-government/local-income-tax-information/local-services-tax/); [DCED FAQ](https://dced.pa.gov/local-government/local-income-tax-information/local-withholding-tax-faqs/))
 
 - **Cap:** $52 per person per calendar year, however many municipalities the person works in. The municipality and school district together cannot levy more than $52.
 - **Who withholds:** every employer with a worksite in the levying municipality, but only if the tax is listed in DCED's Official Tax Register. The LST follows the worksite, not the home. Where the combined rate is over $10, the place of employment is fixed on the first day the person becomes subject to the tax in each payroll period. At $10 or less, it is fixed on the first such day in the calendar year.
@@ -140,16 +160,16 @@ Figures are for tax year 2026 unless a line says 2025. Pennsylvania's withholdin
 - **Mandatory military exemptions:** reservists called to active duty; and honorably discharged veterans who are blind, paraplegic, or double or quadruple amputees from military service, or 100% disabled from a service-connected disability.
 - **Rate changes** take effect on January 1. DCED releases the Official Tax Register on December 15.
 
-### Unemployment compensation ([UC yearly tax highlights](https://www.pa.gov/agencies/dli/resources/for-employers-and-educators/how-to-file/uc-tax/yearly-tax-highlights); [UC-749 (09-25)](https://www.pa.gov/content/dam/copapwp-pagov/en/dli/documents/uc/employer/uc-tax-rates/uc-749%20rev%2009-25.pdf); [UC-820 (09-25)](https://www.pa.gov/content/dam/copapwp-pagov/en/dli/documents/uc/employer/uc-tax-rates/uc-820%20rev%2009-25.pdf))
+#### Unemployment compensation ([UC yearly tax highlights](https://www.pa.gov/agencies/dli/resources/for-employers-and-educators/how-to-file/uc-tax/yearly-tax-highlights); [UC-749 (09-25)](https://www.pa.gov/content/dam/copapwp-pagov/en/dli/documents/uc/employer/uc-tax-rates/uc-749%20rev%2009-25.pdf); [UC-820 (09-25)](https://www.pa.gov/content/dam/copapwp-pagov/en/dli/documents/uc/employer/uc-tax-rates/uc-820%20rev%2009-25.pdf))
 
-| Item | 2026 | 2025 |
-| --- | --- | --- |
-| Employer taxable wage base, per employee per calendar year | $10,000 | $10,000 |
-| Newly liable employer, not construction | 3.822% | 3.822% |
-| Newly liable employer, construction | 10.5924% | 10.5924% |
-| Experience-rated total rate, minimum | 1.419% | 1.419% |
-| Experience-rated total rate, maximum (not delinquent) | 10.3734% | 10.3734% |
-| Employee contribution, on all gross wages with no cap | 0.07% | 0.07% |
+| Item | 2026 | 2025 | Source |
+| --- | --- | --- | --- |
+| Employer taxable wage base, per employee per calendar year | $10,000 | $10,000 | [UC yearly tax highlights](https://www.pa.gov/agencies/dli/resources/for-employers-and-educators/how-to-file/uc-tax/yearly-tax-highlights); [UC-749](https://www.pa.gov/content/dam/copapwp-pagov/en/dli/documents/uc/employer/uc-tax-rates/uc-749%20rev%2009-25.pdf) |
+| Newly liable employer, not construction | 3.822% | 3.822% | [UC yearly tax highlights](https://www.pa.gov/agencies/dli/resources/for-employers-and-educators/how-to-file/uc-tax/yearly-tax-highlights); [UC-749](https://www.pa.gov/content/dam/copapwp-pagov/en/dli/documents/uc/employer/uc-tax-rates/uc-749%20rev%2009-25.pdf) |
+| Newly liable employer, construction | 10.5924% | 10.5924% | [UC yearly tax highlights](https://www.pa.gov/agencies/dli/resources/for-employers-and-educators/how-to-file/uc-tax/yearly-tax-highlights); [UC-749](https://www.pa.gov/content/dam/copapwp-pagov/en/dli/documents/uc/employer/uc-tax-rates/uc-749%20rev%2009-25.pdf) |
+| Experience-rated total rate, minimum | 1.419% | 1.419% | [UC yearly tax highlights](https://www.pa.gov/agencies/dli/resources/for-employers-and-educators/how-to-file/uc-tax/yearly-tax-highlights); [UC-749](https://www.pa.gov/content/dam/copapwp-pagov/en/dli/documents/uc/employer/uc-tax-rates/uc-749%20rev%2009-25.pdf) |
+| Experience-rated total rate, maximum (not delinquent) | 10.3734% | 10.3734% | [UC yearly tax highlights](https://www.pa.gov/agencies/dli/resources/for-employers-and-educators/how-to-file/uc-tax/yearly-tax-highlights); [UC-749](https://www.pa.gov/content/dam/copapwp-pagov/en/dli/documents/uc/employer/uc-tax-rates/uc-749%20rev%2009-25.pdf) |
+| Employee contribution, on all gross wages with no cap | 0.07% | 0.07% | [UC yearly tax highlights](https://www.pa.gov/agencies/dli/resources/for-employers-and-educators/how-to-file/uc-tax/yearly-tax-highlights); [UC-749](https://www.pa.gov/content/dam/copapwp-pagov/en/dli/documents/uc/employer/uc-tax-rates/uc-749%20rev%2009-25.pdf) |
 
 - **What makes up the total rate:** the basic rate, plus 3 points if the account is delinquent, plus a 9.2% surcharge on that sum, plus 0.60% Additional Contributions. The interest factor is zero for 2025 and 2026. The new-employer rates carry the surcharge only (3.5% × 109.2% and 9.7% × 109.2%); the 0.60% is not added unless the employer is also delinquent.
 - **When the new-employer rate ends:** once the employer meets the experience requirements for Group 1, 2 or 3 on UC-820. An employer that is classifiable but does not meet its group's requirements gets 6.4968% if its reserve account balance is zero or positive, and 10.6464% if it is negative.
@@ -157,7 +177,7 @@ Figures are for tax year 2026 unless a line says 2025. Pennsylvania's withholdin
 - **Employee contribution:** withhold it when wages are paid, from all employees, including those of reimbursable employers. It is based on total gross wages in covered employment, not on PA income tax, so a REV-419 does not remove it. It is a trust fund; failing to withhold or pay it can bring fines, criminal prosecution and personal liability ([Employee withholding](https://www.pa.gov/agencies/dli/resources/for-employers-and-educators/how-to-file/uc-tax/employee-withholding)).
 - **2026 rate notice deadlines:** the Department planned to mail Form UC-657 by December 31, 2025. For a notice with that date, a voluntary contribution to lower the rate was due January 30, 2026, and a rate appeal by March 31, 2026 (90 days). The surcharge and Additional Contributions cannot be appealed ([UC tax rates](https://www.pa.gov/agencies/dli/resources/for-employers-and-educators/how-to-file/uc-tax/uc-tax-rates)).
 
-### Minimum wage ([Wage FAQs](https://www.pa.gov/agencies/dli/resources/compliance-laws-and-regulations/labor-management-relations/pennsylvania-s-minimum-wage-act/wage-faqs); [tipped worker rules](https://www.pa.gov/agencies/dli/resources/compliance-laws-and-regulations/labor-management-relations/labor-law/overtime-and-tipped-worker-rules-in-pa))
+#### Minimum wage ([Wage FAQs](https://www.pa.gov/agencies/dli/resources/compliance-laws-and-regulations/labor-management-relations/pennsylvania-s-minimum-wage-act/wage-faqs); [tipped worker rules](https://www.pa.gov/agencies/dli/resources/compliance-laws-and-regulations/labor-management-relations/labor-law/overtime-and-tipped-worker-rules-in-pa))
 
 - **General:** $7.25 an hour. Most employees get overtime at 1-1/2 times their regular rate for hours over 40 in a week.
 - **Tipped employees:** a tip credit needs all of these:
@@ -167,7 +187,7 @@ Figures are for tax year 2026 unless a line says 2025. Pennsylvania's withholdin
   - no tip credit at all for work that neither directly generates tips nor supports work that does (for example painting, backroom inventory, cleaning bathrooms).
 - Card-processing fees may not be deducted from tips.
 
-## Boundaries and exceptions
+## Boundary and exception table
 
 | Rule | Condition that decides it | Source |
 | --- | --- | --- |
@@ -202,6 +222,28 @@ The dollar amounts and all local EIT rates in these cases are made up for illust
 - LST: $52 ÷ 26 = $2.00 a pay period.
 - Total state and local deductions: $141.20.
 
+```oa-check
+name: PA 2026 biweekly deductions, resident employee
+inputs:
+  pay: 3000
+  home_eit: 0.015
+  work_eit: 0.010
+  lst: 52
+  periods: 26
+steps:
+  - pa_tax: pay * 0.0307
+  - uc_employee: pay * 0.0007
+  - eit: pay * max(home_eit, work_eit)
+  - lst_period: floor(lst / periods * 100) / 100
+  - total: pa_tax + uc_employee + eit + lst_period
+expected:
+  pa_tax: 92.10
+  uc_employee: 2.10
+  eit: 45.00
+  lst_period: 2.00
+  total: 141.20
+```
+
 ### Case 2: New Jersey resident working in Pennsylvania ([REV-419](https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/formsforbusinesses/employerwithholding/documents/rev-419.pdf); [DCED FAQ](https://dced.pa.gov/local-government/local-income-tax-information/local-withholding-tax-faqs/))
 
 - **Facts:** paid $4,000 every two weeks. Files REV-419, box b, New Jersey. Assumed worksite nonresident EIT rate: 1.0%. The worksite levies the $52 LST.
@@ -218,6 +260,24 @@ The dollar amounts and all local EIT rates in these cases are made up for illust
 - Employee contribution: $60,000 × 0.07% = $42.00.
 - **Same wages, experienced employer:** at the minimum total rate, $10,000 × 1.419% = $141.90. At the maximum, $10,000 × 10.3734% = $1,037.34.
 - A newly liable construction employer would pay $10,000 × 10.5924% = $1,059.24.
+
+```oa-check
+name: PA 2026 UC, new employer vs minimum experience rate
+inputs:
+  wages: 60000
+  base: 10000
+steps:
+  - taxable: min(wages, base)
+  - new_employer: taxable * 0.03822
+  - construction: taxable * 0.105924
+  - min_rate: taxable * 0.01419
+  - employee: wages * 0.0007
+expected:
+  new_employer: 382.20
+  construction: 1059.24
+  min_rate: 141.90
+  employee: 42.00
+```
 
 ### Case 4: deposit frequency ([REV-415](https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/formsforbusinesses/employerwithholding/documents/rev-415.pdf))
 
@@ -247,7 +307,7 @@ The dollar amounts and all local EIT rates in these cases are made up for illust
 - Cash wage: 40 × $2.83 = $113.20. With tips: $263.20.
 - Shortfall the employer must pay: $26.80.
 
-## 2025 payrolls: corrections and late filings ([REV-415](https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/formsforbusinesses/employerwithholding/documents/rev-415.pdf); [UC yearly tax highlights](https://www.pa.gov/agencies/dli/resources/for-employers-and-educators/how-to-file/uc-tax/yearly-tax-highlights))
+### 2025 payrolls: corrections and late filings
 
 - The PA rate, the deposit thresholds, the UC wage base of $10,000, the UC rate range, the new-employer rates and the 0.07% employee rate were the same in 2025.
 - 2025 PA W-2s and REV-1667 were due January 31, 2026. The 2025 local W2-R reconciliation was due by the last day of February 2026 ([DCED employer steps](https://dced.pa.gov/local-government/local-income-tax-information/instructions-employers/)). If either is missing, file now; late charges may apply.
@@ -303,3 +363,22 @@ The dollar amounts and all local EIT rates in these cases are made up for illust
 - Deposits made on the right frequency, and electronically where required.
 - Quarterly PA, local and UC returns filed; W-2s, REV-1667 and W2-R filed at year end.
 - Pay rates at or above the state minimum wage, with tip credits only where allowed.
+
+## Sources
+
+| Source | URL | Read on |
+| --- | --- | --- |
+| DOR, Employer Withholding. Read for the 3.07% flat rate on resident and nonresident compensation and myPATH registration. | https://www.pa.gov/agencies/revenue/resources/tax-types-and-information/employer-withholding | 2026-11-13 |
+| REV-415, Employer Withholding Information Guide. Read for compensation items, deposit thresholds ($300, $1,000, $5,000, $20,000), W-2 and REV-1667 due 31 January, penalties. | https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/formsforbusinesses/employerwithholding/documents/rev-415.pdf | 2026-11-13 |
+| REV-419 and instructions. Read for the three grounds, the $1,625 quarterly test and when to send copies. | https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/formsandpublications/formsforbusinesses/employerwithholding/documents/rev-419.pdf | 2026-11-13 |
+| DLI, UC yearly tax highlights. Read for 2026: $10,000 wage base, 3.822% and 10.5924% new employer rates, 1.419% to 10.3734%, 9.2% surcharge, 0.60% Additional Contributions, 0% interest factor, 0.07% employee rate. | https://www.pa.gov/agencies/dli/resources/for-employers-and-educators/how-to-file/uc-tax/yearly-tax-highlights | 2026-11-13 |
+| DLI, UC-749 (09-25), contribution rate chart for 2026. Read for the 2026 column (employee .0007, wage base $10,000, minimum .014190). | https://www.pa.gov/content/dam/copapwp-pagov/en/dli/documents/uc/employer/uc-tax-rates/uc-749%20rev%2009-25.pdf | 2026-11-13 |
+| DLI, UC contributions, penalties and interest. Read for the 15% late report penalty ($125 minimum, $450 maximum). | https://www.pa.gov/agencies/dli/resources/for-employers-and-educators/how-to-file/uc-tax/calculating-contributions--penalties-and-interest | 2026-11-13 |
+| DLI, UC-2 instructions. Read for the quarterly due dates and the $5,000 electronic payment rule. | https://www.pa.gov/content/dam/copapwp-pagov/en/dli/documents/uc/uc-forms/uc-2ins.pdf | 2026-11-13 |
+| DCED, Local Withholding Tax FAQs. Read for the higher-of rule, PSD 880000, out-of-state employers, 90-day job sites, single collector, Philadelphia. | https://dced.pa.gov/local-government/local-income-tax-information/local-withholding-tax-faqs/ | 2026-11-13 |
+| DCED, Local Services Tax. Read for the $52 cap, the $12,000 exemption, the upfront exemption and the restart rule. | https://dced.pa.gov/local-government/local-income-tax-information/local-services-tax/ | 2026-11-13 |
+| DLI, Wage FAQs. Read for the $7.25 minimum wage. | https://www.pa.gov/agencies/dli/resources/compliance-laws-and-regulations/labor-management-relations/pennsylvania-s-minimum-wage-act/wage-faqs | 2026-11-13 |
+| DLI, overtime and tipped worker rules. Read for $2.83, $135 a month in tips and the 20% rule. | https://www.pa.gov/agencies/dli/resources/compliance-laws-and-regulations/labor-management-relations/labor-law/overtime-and-tipped-worker-rules-in-pa | 2026-11-13 |
+| 42 U.S.C. 653a (govinfo). Read for (b)(2): new hire report not later than 20 days after hire. | https://www.govinfo.gov/content/pkg/USCODE-2024-title42/html/USCODE-2024-title42-chap7-subchapIV-partD-sec653a.htm | 2026-11-13 |
+
+Not yet confirmed: the 2026 UC rate notice mailing date and the 2026 voluntary contribution and appeal deadlines (taken from the department's UC tax rates page as summarised in the previous version, not reread); the classifiable-employer rates of 6.4968% and 10.6464% (UC-749 rows not reread); any 2026 change to PA minimum wage law; the PIT Guide withholding chapter and telework guidance (not reread); Philadelphia wage tax, which sits in pa-local-eit.

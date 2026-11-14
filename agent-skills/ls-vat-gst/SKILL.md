@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/ls-vat-gst"
   jurisdiction: "LS"
   tax_year: "2026"
-  last_updated: "2026-11-01"
+  last_updated: "2026-11-14"
 ---
 
-# Lesotho VAT v0.2
+# Lesotho VAT v0.3
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -27,7 +27,6 @@ Lesotho's tax year runs 1 April to 31 March. This skill covers 2026-27, from 1 A
 | Standard rate | 15% |  | https://www.rsl.org.ls/sites/default/files/2025-01/Guide%20on%20Zero-rated%20Supplies%20of%20Goods.pdf |
 | Standard rate in regulations | 15% | Reg 6(1)(d) as amended 2020 | https://www.rsl.org.ls/sites/default/files/2026-09/VAT%20REGULATIONS%20NO.18%20OF%202020.pdf |
 | 10% rate | 10% | Reg 6(1)(b) as amended 2021. unverified: the supply it covers; the older skill said electricity, and the 2003 Regulations were not read | https://www.rsl.org.ls/sites/default/files/2026-09/VALUE%20ADDED%20TAX%20%28AMENDMENT%29%20REGULATIONS%20LN.30%20OF%202021_0.pdf |
-| Telecommunications | unverified | The older skill said standard rate | https://www.rsl.org.ls/sites/default/files/2026-09/VAT%20REGULATIONS%20NO.18%20OF%202020.pdf |
 | Zero rate | 0% | Goods in the Fourth Schedule: basic commodities such as listed foods, fertiliser, pesticides and animal feed. Exports: see the Act | https://www.rsl.org.ls/sites/default/files/2025-01/Guide%20on%20Zero-rated%20Supplies%20of%20Goods.pdf |
 | Registration threshold | M2,000,000 a year | Taxable turnover of all branches and activities added together; exempt supplies left out | https://www.rsl.org.ls/sites/default/files/2026-09/Guide%20on%20Registration%20For%20Value%20Added%20Tax%20Purposes%20%20-%20VAT%20101%20%281%29.pdf |
 | Late return | 3% a month or part | s.54 | https://www.rsl.org.ls/sites/default/files/2026-09/VAT%20ACT%20-%202001.pdf |
@@ -108,4 +107,4 @@ Not yet confirmed: which supply takes 10%; telecommunications rate; reverse char
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-01. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ls-vat-gst` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ls-vat-gst. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ls-vat-gst` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ls-vat-gst. If neither is available, confirm every figure against the official source pages cited above before relying on it.

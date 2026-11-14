@@ -1,209 +1,114 @@
 ---
 name: sri-lanka-payroll
-description: Use this skill whenever asked about Sri Lanka payroll processing for employed persons. Trigger on phrases like "Sri Lanka payroll", "APIT", "APIT Table 01", "PAYE Sri Lanka", "EPF deduction", "ETF contribution", "EPF Sri Lanka", "employer EPF", "ETF Board", "T-10 certificate", "APIT certificate", "net salary Sri Lanka", "gross to net Sri Lanka", "salary calculation Sri Lanka", "personal relief Sri Lanka", "minimum wage Sri Lanka", "tax withholding Sri Lanka", "IRD APIT", or any question about computing employee pay, income-tax withholding, or social-fund contributions for Sri Lanka-based employees. This skill covers APIT (Advance Personal Income Tax) monthly withholding, EPF employee and employer contributions, ETF employer contributions, minimum-wage reality, filing obligations to the Inland Revenue Department (IRD), the EPF and the ETF Board, and penalties. ALWAYS read this skill before processing any Sri Lanka payroll.
+description: Use this skill whenever asked to run, check or explain Sri Lanka payroll for the year of assessment 2026/27 (1 April 2026 to 31 March 2027). Trigger on phrases like Sri Lanka payroll, APIT, APIT Table 01, PAYE Sri Lanka, EPF, ETF, 8% 12% 3%, minimum wage Sri Lanka, payslip Sri Lanka, employer contributions Sri Lanka, T-10 certificate. Gives monthly APIT on regular profits from primary employment (Rs. 150,000 monthly relief and the Table 01 formulas), EPF at 8% employee and 12% employer, ETF at 3% employer-only, the EPF earnings base, the Rs. 30,000 monthly and Rs. 1,200 daily national minimum wage from 1 January 2026, remittance and annual statement dates, and the penalties and surcharges.
+version: "1.0"
 jurisdiction: LK
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+tax_year_notes: "Year of assessment 2026/27 (2026-27), 1 April 2026 to 31 March 2027"
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
+type: computation
 ---
 
-# Sri Lanka Payroll
+# Sri Lanka Payroll, year of assessment 2026/27, v1.0
 
-## Sri Lanka Payroll Skill v0.1
+Built from the law: not yet approved by an accountant. APIT figures come from the IRD's APIT Table 01, which the IRD publishes for the year of assessment that began on 1 April 2025; the individual rates and the relief in the Inland Revenue Act were not changed by the Inland Revenue (Amendment) Act No. 11 of 2026, and no separate 2026/27 tables were on the IRD site on 14 November 2026.
 
-> **Tier 2 — research-verified, pending accountant sign-off.** Figures below are current for Sri Lanka's **Year of Assessment 2025/2026 (1 April 2025 – 31 March 2026)**. The personal relief and APIT Table 01 monthly formula are extracted verbatim from the Inland Revenue Department (IRD) primary PDF; the EPF/ETF rates are from official EPF/ETF/Central Bank sources. APIT penalty amounts are corroborated from reputable Sri Lankan tax-advisory summaries of the Inland Revenue Act and carry a flag. Do not present any computation as definitive until a Sri Lanka-qualified tax practitioner (CA Sri Lanka member or equivalent) has signed off.
+## Scope and who this is for
 
-## Section 1 — Quick Reference
-
-**Quick Reference**
-
-| Field | Value |
+| Field | Detail |
 | --- | --- |
 | Country | Democratic Socialist Republic of Sri Lanka |
 | Currency | Sri Lankan Rupee (LKR) only |
 | Standard pay frequency | Monthly |
-| Year of assessment | 1 April – 31 March (e.g. 2025/2026 = 1 Apr 2025 – 31 Mar 2026) — *IRD* |
-| Income-tax withholding system | APIT — Advance Personal Income Tax, the PAYE-style monthly withholding under the Inland Revenue Act No. 24 of 2017 (as amended) — *IRD APIT Table 01* |
+| Year of assessment | 1 April to 31 March (2026/27 = 1 April 2026 to 31 March 2027) |
+| Income tax withholding | APIT (Advance Personal Income Tax), the PAYE-style monthly withholding under section 83 of the Inland Revenue Act No. 24 of 2017 (IRA) |
 | Tax authority | Inland Revenue Department (IRD) |
-| Provident-fund authority | Employees' Provident Fund (EPF) — administered by the Central Bank / Dept. of Labour |
-| Trust-fund authority | Employees' Trust Fund Board (ETF Board) |
-| Key legislation | Inland Revenue Act No. 24 of 2017 (as amended); Employees' Provident Fund Act No. 15 of 1958; Employees' Trust Fund Act No. 46 of 1980 |
-| Filing channel | IRD e-filing (mandatory for all employers from Y/A 2023/2024) |
-| Personal relief (tax-free) | LKR 1,800,000/year = **LKR 150,000/month** (raised from 1,200,000 effective 1 Apr 2025) — *IRD APIT Table 01* |
-| Top marginal APIT rate | **36%** on annual taxable income above the 30% band — *IRD APIT 2025/26 guideline* |
-| EPF total contribution | 20% of total earnings (8% employee + 12% employer), no ceiling — *EPF Act; EPF Employer FAQ* |
-| ETF contribution | 3% of total earnings, employer-only — *ETF Act; ETF Board* |
-| Skill version | 0.1 |
+| Provident fund | Employees' Provident Fund (EPF): EPF Department of the Central Bank of Sri Lanka, with the Department of Labour |
+| Trust fund | Employees' Trust Fund Board (ETF Board) |
+| Key legislation | IRA No. 24 of 2017 (as amended); Employees' Provident Fund Act No. 15 of 1958; Employees' Trust Fund Act No. 46 of 1980; National Minimum Wage of Workers Act No. 3 of 2016 as amended by Act No. 11 of 2025 |
+| Filing channel | IRD e-Services |
 
-## Section 2 — Income Tax Withholding (APIT)
+- **In:** monthly APIT for resident employees and non-resident employees who are Sri Lankan citizens, on regular profits from primary employment (Table 01); EPF; ETF; the minimum wage floor.
+- **Out:** lump-sum, arrears, terminal benefits, secondary employment and mid-year joiners (APIT Tables 02 to 08); annual personal tax (`sri-lanka-income-tax`); payments to non-employees (`sri-lanka-withholding-tax`); corporate tax (`sri-lanka-corporate-tax`).
 
-The employer withholds APIT **monthly** under the Inland Revenue Act No. 24 of 2017 (as amended) and remits to the IRD. Sri Lanka has a genuine personal income tax; this is **not** a no-PIT jurisdiction. The monthly withholding uses **APIT Table 01** for resident employees and Sri Lankan-citizen non-residents on primary employment. The personal relief of **LKR 150,000/month** has already been baked into the Table 01 formula (the "− subtract" term restores it).
+## Ask the client first
 
-> **Which APIT table applies.** Table 01 covers resident employees and non-resident **Sri Lankan citizens** with a single (primary) employment; deduction is **compulsory regardless of employee consent**. Other tables exist for other situations — see Section 11. When the employee's category is unclear, refuse and ask (Refusal Catalogue, Section 7).
+1. Is the employee resident, or a non-resident Sri Lankan citizen, and is this the primary (or only) employment with a primary declaration given?
+2. Gross monthly regular profits from employment (salary, allowances, non-cash benefits) for APIT.
+3. Total monthly earnings for EPF and ETF (excluding overtime, reimbursable travel, incentive or bonus payments).
+4. Any lump-sum, arrears, terminal payment or second employment this month?
+5. Employer's EPF and ETF registration numbers; number of employees.
 
-### 2.1 Annual progressive rate schedule (Y/A 2025/2026)
+## The method, step by step
 
-**Annual progressive rate schedule (Y/A 2025/2026)**  _(Source: IRD APIT 2025/2026 guideline — https://www.ird.gov.lk/en/publications/APIT_Tax_Tables/2025-2026/Guide/APIT_2526_Guideline.pdf)_
+### Rates, bands and thresholds
 
-| Annual taxable income band (LKR) | Rate |
-| --- | --- |
-| First 1,000,000 | 6% |
-| Next 500,000 | 18% |
-| Next 500,000 | 24% |
-| Next 500,000 | 30% |
-| Balance | 36% |
+| Item | Figure | Conditions | Source |
+| --- | --- | --- | --- |
+| APIT monthly relief | Rs. 150,000 a month, already built into Table 01 | Annual relief Rs. 1,800,000 | https://www.ird.gov.lk/en/publications/APIT_Tax_Tables/2025-2026/Table%20-%201/02.%20APIT_2526_Table_01_Text.pdf |
+| APIT, monthly regular profits up to Rs. 150,000 | Relief from tax | Table 01 | same |
+| APIT, over Rs. 150,000 to Rs. 233,333 | 6% of monthly regular profits less Rs. 9,000 | Table 01 | same |
+| APIT, over Rs. 233,333 to Rs. 275,000 | 18% of monthly regular profits less Rs. 37,000 | Table 01 | same |
+| APIT, over Rs. 275,000 to Rs. 316,667 | 24% of monthly regular profits less Rs. 53,500 | Table 01 | same |
+| APIT, over Rs. 316,667 to Rs. 358,333 | 30% of monthly regular profits less Rs. 72,500 | Table 01 | same |
+| APIT, over Rs. 358,333 | 36% of monthly regular profits less Rs. 94,000 | Table 01 | same |
+| Annual slabs behind the table | 6% on the first Rs. 1,000,000 of taxable income, then 18%, 24%, 30% on Rs. 500,000 each, 36% on the balance | First Schedule paragraph 1(1D), years from 1 April 2025 | https://www.ird.gov.lk/en/publications/Acts_Income%20Tax_2017/IRA_Cons_Act_-_2025_Changes.pdf |
+| EPF, employee | 8% of total monthly earnings, deducted from pay | No ceiling stated | https://epf.lk/?page_id=811 |
+| EPF, employer | 12% of total monthly earnings | Paid wholly by the employer | same |
+| EPF, total | 20% of total monthly earnings | | same |
+| ETF, employer only | 3% of total monthly earnings | Must not be deducted from the employee | https://etfb.lk/employers-faq/ |
+| National minimum monthly wage | thirty thousand rupees a month | From 1 January 2026; twenty-seven thousand rupees from 1 April 2025 to 31 December 2025 | https://www.parliament.lk/uploads/acts/gbills/english/6388.pdf |
+| National minimum daily wage | one thousand two hundred rupees a day | From 1 January 2026; one thousand eighty rupees before | same |
+| APIT remittance | Within 15 days after the end of the month | Section 86(1) | https://www.ird.gov.lk/en/publications/Acts_Income%20Tax_2017/IRA_Cons_Act_-_2025_Changes.pdf |
+| APIT annual statement | Within 30 days after 31 March | Section 86(2) | same |
+| Late payment penalty | 20% of tax due but not paid | Not paid within 14 days of the due date; section 179(1) | same |
+| Late payment interest | one and one-half per cent per month or part month | Sections 157, 159(1) | same |
+| Late filing penalty | Greater of 5% of tax owing plus 1% a month, or fifty thousand rupees plus ten thousand rupees a month; capped at four hundred thousand rupees | Section 178 | same |
+| Statement format non-compliance | Up to two hundred thousand rupees a year, after a warning notice | New sections 86(9) and 178A, Act No. 11 of 2026 | https://www.ird.gov.lk/en/publications/Acts_Income%20Tax_2017/IR_Act_No_11-2026_E.pdf |
+| EPF and ETF payment deadline | Last working day of the following month | | https://epf.lk/?page_id=811 |
+| EPF and ETF late surcharge | 5% for up to 10 days; 15% for 11 days to 1 month; 20% for 1 to 3 months; 30% for 3 to 6 months; 40% for 6 to 12 months; 50% over 12 months | Same scale on both FAQ pages | same |
+| EPF incomplete details surcharge | 2% of the total payment | Incomplete Form C or text files | same |
+| ETF late half-yearly return | 1% surcharge for each delayed month on the face value of the return | Employers remitting on R1 | https://etfb.lk/employers-faq/ |
 
-### 2.2 Monthly APIT Table 01 — exact formula (Y/A 2025/2026)
+### Steps
 
-**Monthly APIT Table 01 — exact formula (Y/A 2025/2026)**  _(Source (verbatim from IRD): https://www.ird.gov.lk/en/publications/APIT_Tax_Tables/2025-2026/Table%20-%201/02.%20APIT_2526_Table_01_Text.pdf)_
+1. Confirm Table 01 applies (resident or Sri Lankan citizen, primary employment). If not, stop and use the right APIT table.
+2. APIT: take gross monthly regular profits (salary, wages, commission, overtime, allowances, non-cash benefits at fair market value, payments of the employee's bills). Do not deduct the relief again; apply the Table 01 formula for the band. Where monthly profits are under Rs. 150,000 but cumulative profits for the year pass Rs. 1,800,000, switch to Table 05 from that month.
+3. EPF: total monthly earnings (salary, wages, fees, cost of living and similar allowances, holiday pay, cash value of food, food allowances, commissions, piece-rate and contract pay), excluding overtime, reimbursable travel and incentive or bonus payments. Employee 8%, employer 12%.
+4. ETF: 3% of the same total monthly earnings, paid by the employer only.
+5. Check pay against the Rs. 30,000 monthly or Rs. 1,200 daily minimum wage.
+6. Remit APIT within 15 days after the month end; EPF and ETF by the last working day of the following month.
+7. Issue APIT certificates and file the annual statement within 30 days after 31 March.
 
-| Monthly regular profits (LKR) | Monthly APIT |
-| --- | --- |
-| Up to 150,000 | Nil (relief) |
-| 150,001 – 233,333 | **6% × gross − 9,000** |
-| 233,334 – 275,000 | **18% × gross − 37,000** |
-| 275,001 – 316,667 | **24% × gross − 53,500** |
-| 316,668 – 358,333 | **30% × gross − 72,500** |
-| Over 358,333 | **36% × gross − 94,000** |
+#### 2.3 No tax-free relief beyond LKR 150,000/month
 
-"Monthly regular profits from employment" = gross monthly employment income, including non-cash benefits (Section 2.4). Apply the row that contains the gross figure.
+- **Personal relief limit**: The relief is **LKR 150,000/month** (LKR 1,800,000/year). It is built into the formula; do **not** subtract it a second time. Gross at or below 150,000/month attracts **nil** APIT under Table 01.  _(IRD APIT Table 01 (states "Rs. 150,000.00 per month as personal relief has already been deducted"))_
 
-**Band-boundary / cumulative-tax anchors (recomputed):**
-- Relief LKR 150,000/month corresponds to annual relief 1,800,000. First annual band 1,000,000 ÷ 12 = 83,333.33 → gross top of 6% band = 150,000 + 83,333.33 = **233,333** ✓
-- At gross 233,333: 6% × 233,333 − 9,000 = 13,999.98 − 9,000 = **≈5,000** ✓ (= 6% × 83,333 taxable)
-- At gross 275,000 (top of 18% band): 18% × 275,000 − 37,000 = 49,500 − 37,000 = **12,500** ✓
-- At gross 316,667 (top of 24% band): 24% × 316,667 − 53,500 = 76,000 − 53,500 = **≈22,500** ✓
-- At gross 358,333 (top of 30% band): 30% × 358,333 − 72,500 = 107,500 − 72,500 = **≈35,000** ✓
-- Just above 358,333 (36% band): 36% × 358,333 − 94,000 = 129,000 − 94,000 = **≈35,000** ✓ (continuous — the two formulas meet at the boundary)
+#### 2.4 Regular profits from employment include
 
-Each "− subtract" constant reconciles to the lower-band cumulative tax, so the schedule is continuous at every boundary.
+- **Regular profits from employment**: Wages, salary, commission, overtime, travel and other allowances, fees, pension; non-cash benefits (housing, conveyance, electricity, telephone, entertainment, etc., at fair market value); medical bills/insurance (with a limited exemption where dental/medical/health insurance is available to all full-time employees on equal terms); third-party payments made for the employee's benefit. Only Third Schedule exemptions (Inland Revenue Act No. 24 of 2017, as amended) apply.  _(IRD APIT Table 01)_
 
-### 2.3 No tax-free relief beyond LKR 150,000/month
 
-- **Personal relief limit** — The relief is **LKR 150,000/month** (LKR 1,800,000/year). It is built into the formula; do **not** subtract it a second time. Gross at or below 150,000/month attracts **nil** APIT under Table 01.  _(IRD APIT Table 01 (states "Rs. 150,000.00 per month as personal relief has already been deducted"))_
-
-### 2.4 Regular profits from employment include
-
-- **Regular profits from employment** — Wages, salary, commission, overtime, travel and other allowances, fees, pension; non-cash benefits (housing, conveyance, electricity, telephone, entertainment, etc., at fair market value); medical bills/insurance (with a limited exemption where dental/medical/health insurance is available to all full-time employees on equal terms); third-party payments made for the employee's benefit. Only Third Schedule exemptions (Inland Revenue Act No. 24 of 2017, as amended) apply.  _(IRD APIT Table 01)_
-
-## Section 3 — EPF (Employees' Provident Fund)
-
-EPF is governed by the **Employees' Provident Fund Act No. 15 of 1958**. Contributions are computed on **total monthly earnings** with **no floor and no ceiling**. The statutory rates are minimums — an employer may contribute more.
-
-### 3.1 EPF contribution rates (Y/A 2025/2026)
-
-**EPF contribution rates (Y/A 2025/2026)**  _(Sources: EPF Act — https://www.cbsl.gov.lk/sites/default/files/cbslweb_documents/laws/acts/en/epf_act.pdf ; EPF Employer FAQ — https://epf.lk/?page_id=811 ; Central Bank EPF — https://www.cbsl.gov.lk/en/employees-provident-fund)_
-
-| Party | Rate | Base |
-| --- | --- | --- |
-| Employee | **8%** (deducted from pay) | Total monthly earnings |
-| Employer | **12%** | Total monthly earnings |
-| **Total** | **20%** | Total monthly earnings |
-
-**Arithmetic self-check:** employee 8% + employer 12% = **20% total** ✓
-
-### 3.2 EPF "total earnings" base
+#### 3.2 EPF "total earnings" base
 
 **EPF total earnings base**  _(EPF Employer FAQ)_
 
 | Treatment | Items |
 | --- | --- |
-| **Included** | Salary/wages/fees; cost-of-living and special living allowances; holiday payments; cash value of food supplied by the employer; food allowances; commissions; piece-rate / contract payments — *EPF Employer FAQ* |
-| **Excluded** | Overtime pay; reimbursable travelling expenses; incentive / bonus payments — *EPF Employer FAQ* |
+| **Included** | Salary/wages/fees; cost-of-living and special living allowances; holiday payments; cash value of food supplied by the employer; food allowances; commissions; piece-rate / contract payments: *EPF Employer FAQ* |
+| **Excluded** | Overtime pay; reimbursable travelling expenses; incentive / bonus payments: *EPF Employer FAQ* |
 
-- **EPF base ≠ APIT base** — APIT (Section 2) is computed on full regular profits including overtime and many allowances; the EPF base **excludes** overtime, reimbursed travel and bonuses. Compute the two bases separately; never reuse the gross figure blindly.  _(EPF Employer FAQ)_
+- **EPF base ≠ APIT base**: APIT (rates table) is computed on full regular profits including overtime and many allowances; the EPF base **excludes** overtime, reimbursed travel and bonuses. Compute the two bases separately; never reuse the gross figure blindly.  _(EPF Employer FAQ)_
 
-### 3.3 Coverage and deadline
 
-**Coverage and deadline**  _(EPF Employer FAQ; EPF Act)_
-
-| Rule | Detail |
-| --- | --- |
-| Mandatory scope | Any employer with **one or more employees** — EPF applies from the first covered employee; no minimum headcount — *EPF Employer FAQ* |
-| Ceiling | **None** — 20% applies to full total earnings — *EPF Act* |
-| Floor | **None** identified beyond actual wage — *EPF Employer FAQ* |
-| Payment deadline | On or before the **last working day of the following month** — *EPF Employer FAQ* |
-
-## Section 4 — ETF (Employees' Trust Fund)
-
-ETF is governed by the **Employees' Trust Fund Act No. 46 of 1980** (fund established 1 March 1981) and administered by the ETF Board. It is **employer-only**.
-
-**ETF rates**  _(ETF Act No. 46 of 1980; ETF Board payment page — https://etfb.lk/payment-of-contributions/ ; ETF Employers FAQ — https://etfb.lk/employers-faq/)_
-
-| Party | Rate | Base |
-| --- | --- | --- |
-| Employer | **3%** | Total monthly earnings |
-| Employee | **0%** — no employee contribution; must **NOT** be deducted from employee pay | — |
-
-**ETF mandatory scope and deadline**  _(ETF Employers FAQ; ETF Board)_
-
-| Rule | Detail |
-| --- | --- |
-| Mandatory scope | Any employer with one or more employees — *ETF Employers FAQ* |
-| Payment deadline | On or before the **last working day of the following month** — *ETF Board* |
-
-- **Combined employer social cost** — > **Combined employer social cost.** Employer bears **15%** of earnings (12% EPF + 3% ETF); employee bears **8%** (EPF only). Total paid into the two funds = **23%** (20% EPF + 3% ETF). **Arithmetic self-check:** 12% + 3% = 15% employer ✓; 15% employer + 8% employee = 23% total ✓.
-
-## Section 5 — Minimum Wage
-
-**Minimum wage table**  _(Ministry of Labour — https://labourmin.gov.lk/heres-how-the-private-sector-minimum-wage-is-set-to-rise/ ; National Minimum Wage of Workers (Amendment) Act No. 11 of 2025 — https://www.parliament.lk/uploads/acts/gbills/english/6388.pdf ; Daily Mirror (gazette report) — https://www.dailymirror.lk/breaking-news/Govt-announces-Rs-27-000-minimum-monthly-wage-in-gazette-from-April-1/108-309443)_
-
-| Rule | Detail |
-| --- | --- |
-| National Minimum Monthly Wage (private sector) | **LKR 27,000/month** (effective 1 Apr 2025; raised from LKR 21,000) — *Ministry of Labour; Amendment Act No. 11 of 2025* |
-| National Minimum Daily Wage | **LKR 1,080/day** (raised from LKR 700) — *Ministry of Labour; Amendment Act No. 11 of 2025* |
-| Budgetary Relief Allowances (BRA) | Consolidated into the LKR 27,000 figure for 2025 — **no separate BRA add-on** — *Ministry of Labour* |
-| From 1 January 2026 | Further increase to **LKR 30,000/month** — *Ministry of Labour; Amendment Act No. 11 of 2025* |
-
-- **Implication for payroll** — **Implication for payroll:** there **is** a binding wage floor (LKR 27,000/month for Y/A 2025/2026; LKR 30,000/month from 1 Jan 2026). Flag any monthly gross below the floor.  _(Ministry of Labour; Amendment Act No. 11 of 2025)_
-
-## Section 6 — Conservative Defaults
-
-When a required input is ambiguous and the user cannot supply it, apply the **most conservative** assumption (the one that maximises tax/contribution exposure or that forces a refusal), and label the output as provisional.
-
-**Conservative defaults table**
-
-| Unknown | Conservative default | Rationale |
-| --- | --- | --- |
-| Which APIT table applies | Use **Table 01** ONLY if primary-employment / single-employer is confirmed; otherwise refuse and ask | Tables 02–08 apply to arrears, terminal payments, secondary employment, mid-year joiners — different formulas |
-| Whether a payment is "regular profits" for APIT | **Include** it in the APIT gross | APIT base is broad; over-withholding is recoverable, under-withholding makes the employer personally liable (Section 124) |
-| Whether a payment is in the EPF "total earnings" base | **Include** unless it is overtime, reimbursed travel or a bonus | Those three are the named exclusions; everything else is in |
-| Whether ETF applies | Assume **yes** (3% employer) for any covered employee | ETF has no headcount threshold |
-| Pay frequency | **Monthly** | Standard Sri Lanka practice |
-| Currency | **LKR** | Only legal payroll currency |
-| Gross below the minimum wage | **Flag** as below LKR 27,000/month floor (LKR 30,000 from 1 Jan 2026) | A binding floor exists |
-| Residence / citizenship for table selection | Refuse and ask | Table 01 covers residents and Sri Lankan-citizen non-residents only |
-
-## Section 7 — Required Inputs & Refusal Catalogue
-
-### 7.1 Minimum required inputs
-
-- **Minimum required inputs** — To compute Sri Lanka payroll for one employee for one month, you MUST have: 1. **Gross monthly regular profits** (in LKR) for APIT. 2. **Total monthly earnings** for EPF/ETF (may differ from APIT gross — exclude overtime, reimbursed travel, bonuses). 3. **Employee category** confirming **Table 01** applies (resident or Sri Lankan-citizen non-resident; single/primary employment). 4. **Month of pay** (to set remittance deadlines). 5. Confirmation of whether any allowance/benefit is exempt (Third Schedule) or excluded from the EPF base.
-
-### 7.2 Refusal Catalogue — REFUSE and ask if any of these hold
-
-**Refusal Catalogue**
-
-| Situation | Why refuse |
-| --- | --- |
-| APIT table / employment category not stated | Tables 01–08 have different formulas; never assume Table 01 silently |
-| Currency given is not LKR | Payroll must be in LKR; silent FX conversion introduces error |
-| Lump-sum / arrears / terminal payment present | These use Table 02/03, not the monthly Table 01 formula |
-| APIT gross and EPF base conflated as one number | The bases differ (overtime, travel, bonus excluded from EPF) |
-| Employee may have a second employment | Secondary employment uses a different table |
-| Non-resident who is **not** a Sri Lankan citizen | Table 01 does not apply; different withholding rules |
-| Asked to treat the result as final/filed advice | This is a Tier 2 skill pending sign-off |
-| Asked to confirm exact APIT penalty figures as statute | Penalty amounts are flagged — see Section 16 |
-
-When refusing, state the missing input plainly and request it. Do not fabricate.
-
-## Section 8 — Transaction / Payment Pattern Library
+### Transaction / Payment Pattern Library
 
 Deterministic mapping of Sri Lankan bank-statement narrations to payroll classifications. Match case-insensitively; longer/more specific patterns win. Statements are commonly in English; banks include Bank of Ceylon (BOC), People's Bank, Commercial Bank (Combank), Hatton National Bank (HNB) and Sampath Bank. Sinhala/Tamil narrations occasionally appear.
 
-### 8.1 Salary credits (employee side)
+#### 8.1 Salary credits (employee side)
 
 **Salary credits (employee side)**
 
@@ -212,11 +117,11 @@ Deterministic mapping of Sri Lankan bank-statement narrations to payroll classif
 | `SALARY`, `SAL`, `PAY`, `NET SALARY`, `WAGES` | Net salary credit |
 | `EMPLOYER [name] TRANSFER`, `STAFF SAL` | Net salary credit |
 | `වැටුප` (Sinhala "salary"), `சம்பளம்` (Tamil "salary") | Net salary credit |
-| `BONUS`, `INCENTIVE` | Supplement — taxable for APIT, **excluded** from EPF base |
-| `OT`, `OVERTIME` | Overtime — taxable for APIT, **excluded** from EPF base |
-| `EPF REFUND`, `ETF REFUND` | Fund adjustment — not income |
+| `BONUS`, `INCENTIVE` | Supplement: taxable for APIT, **excluded** from EPF base |
+| `OT`, `OVERTIME` | Overtime: taxable for APIT, **excluded** from EPF base |
+| `EPF REFUND`, `ETF REFUND` | Fund adjustment: not income |
 
-### 8.2 Employer debit patterns (remittances)
+#### 8.2 Employer debit patterns (remittances)
 
 **Employer debit patterns (remittances)**
 
@@ -226,28 +131,29 @@ Deterministic mapping of Sri Lankan bank-statement narrations to payroll classif
 | `EPF`, `EPF CONTRIBUTION`, `EPF 20%`, `PROVIDENT FUND` | EPF contribution (8% employee + 12% employer) |
 | `ETF`, `ETF BOARD`, `TRUST FUND` | ETF contribution (3% employer-only) |
 | `NET WAGES`, `PAYROLL`, `SALARY BATCH`, `STAFF SALARIES` | Net salary disbursement to employees |
-| `SLIPS`, `PAYMENT VOUCHER IRD` | IRD payment voucher reference — tax remittance |
+| `SLIPS`, `PAYMENT VOUCHER IRD` | IRD payment voucher reference: tax remittance |
 
 > **EPF vs ETF note:** an EPF remittance is 20% of the EPF base (8% deducted from staff + 12% employer); an ETF remittance is 3% employer-only. If a single line is labelled "EPF/ETF 23%", split it 20/3 before posting.
 
-## Section 9 — Worked Examples
 
-All examples use **APIT Table 01** (Section 2.2), **EPF 8%/12%** (Section 3.1) and **ETF 3%** (Section 4). For simplicity each example assumes the EPF base equals the APIT gross (i.e. no overtime/bonus); where overtime or a bonus exists, the EPF base would be lower — see the note after Example 6. Every figure recomputed end-to-end.
+### Payslip examples
 
-### Example 1 — Minimum-wage earner (gross LKR 27,000/month)
+All examples use **APIT Table 01** (rates table), **EPF 8%/12%** (rates table) and **ETF 3%** (rates table). For simplicity each example assumes the EPF base equals the APIT gross (i.e. no overtime/bonus); where overtime or a bonus exists, the EPF base would be lower: see the note after Example 6. Every figure recomputed end-to-end.
 
-Statement line: `STAFF SAL EMP001 ... 24,840`
+#### Example 1: Minimum-wage earner (gross LKR 30,000/month, from 1 January 2026)
 
-- **APIT:** 27,000 ≤ 150,000 → **LKR 0** (relief)
-- **EPF employee (8%):** 8% × 27,000 = **LKR 2,160**
-- **EPF employer (12%):** 12% × 27,000 = **LKR 3,240**
-- **ETF employer (3%):** 3% × 27,000 = **LKR 810**
-- **Net pay:** 27,000 − 0 − 2,160 = **LKR 24,840**
-- **Total employer cost:** 27,000 + 3,240 + 810 = **LKR 31,050**
+Statement line: `STAFF SAL EMP001 ... 27,600`
 
-*Cross-check vs statement: net 24,840 matches the narration ✓.*
+- **APIT:** 30,000 ≤ 150,000 → **LKR 0** (relief)
+- **EPF employee (8%):** 8% × 30,000 = **LKR 2,400**
+- **EPF employer (12%):** 12% × 30,000 = **LKR 3,600**
+- **ETF employer (3%):** 3% × 30,000 = **LKR 900**
+- **Net pay:** 30,000 − 0 − 2,400 = **LKR 27,600**
+- **Total employer cost:** 30,000 + 3,600 + 900 = **LKR 34,500**
 
-### Example 2 — At the personal relief (gross LKR 150,000/month)
+*Cross-check vs statement: net 27,600 matches the narration ✓.*
+
+#### Example 2: At the personal relief (gross LKR 150,000/month)
 
 - **APIT:** 150,000 = top of the Nil band → **LKR 0**
 - **EPF employee (8%):** 8% × 150,000 = **LKR 12,000**
@@ -256,7 +162,7 @@ Statement line: `STAFF SAL EMP001 ... 24,840`
 - **Net pay:** 150,000 − 0 − 12,000 = **LKR 138,000**
 - **Total employer cost:** 150,000 + 18,000 + 4,500 = **LKR 172,500**
 
-### Example 3 — First APIT band, 6% (gross LKR 200,000/month)
+#### Example 3: First APIT band, 6% (gross LKR 200,000/month)
 
 - **APIT:** 200,000 in band 150,001–233,333 → 6% × 200,000 − 9,000 = 12,000 − 9,000 = **LKR 3,000**
 - **EPF employee (8%):** 8% × 200,000 = **LKR 16,000**
@@ -265,7 +171,7 @@ Statement line: `STAFF SAL EMP001 ... 24,840`
 - **Net pay:** 200,000 − 3,000 − 16,000 = **LKR 181,000**
 - **Total employer cost:** 200,000 + 24,000 + 6,000 = **LKR 230,000**
 
-### Example 4 — 24% band (gross LKR 300,000/month)
+#### Example 4: 24% band (gross LKR 300,000/month)
 
 - **APIT:** 300,000 in band 275,001–316,667 → 24% × 300,000 − 53,500 = 72,000 − 53,500 = **LKR 18,500**
 - **EPF employee (8%):** 8% × 300,000 = **LKR 24,000**
@@ -274,7 +180,7 @@ Statement line: `STAFF SAL EMP001 ... 24,840`
 - **Net pay:** 300,000 − 18,500 − 24,000 = **LKR 257,500**
 - **Total employer cost:** 300,000 + 36,000 + 9,000 = **LKR 345,000**
 
-### Example 5 — Top APIT band, 36% (gross LKR 500,000/month)
+#### Example 5: Top APIT band, 36% (gross LKR 500,000/month)
 
 - **APIT:** 500,000 > 358,333 → 36% × 500,000 − 94,000 = 180,000 − 94,000 = **LKR 86,000**
 - **EPF employee (8%):** 8% × 500,000 = **LKR 40,000**
@@ -283,7 +189,7 @@ Statement line: `STAFF SAL EMP001 ... 24,840`
 - **Net pay:** 500,000 − 86,000 − 40,000 = **LKR 374,000**
 - **Total employer cost:** 500,000 + 60,000 + 15,000 = **LKR 575,000**
 
-### Example 6 — 18% band (gross LKR 250,000/month)
+#### Example 6: 18% band (gross LKR 250,000/month)
 
 - **APIT:** 250,000 in band 233,334–275,000 → 18% × 250,000 − 37,000 = 45,000 − 37,000 = **LKR 8,000**
 - **EPF employee (8%):** 8% × 250,000 = **LKR 20,000**
@@ -294,17 +200,19 @@ Statement line: `STAFF SAL EMP001 ... 24,840`
 
 > **Overtime/bonus illustration.** If Example 4's LKR 300,000 comprised LKR 270,000 regular + LKR 30,000 overtime, APIT still applies to the full 300,000 (overtime is regular profits for APIT) → LKR 18,500, but the **EPF/ETF base** would be **270,000**: EPF employee 8% × 270,000 = 21,600; EPF employer 32,400; ETF 8,100. Always split the two bases.
 
-## Section 10 — Tier 1 Rules (deterministic, always apply)
 
-- **Tier 1 Rules** — 1. APIT is computed on **gross monthly regular profits** using **Table 01** (Section 2.2) for resident / Sri Lankan-citizen-non-resident primary employment. 2. The personal relief is **LKR 150,000/month**, already built into the Table 01 formula — never deduct it twice. 3. EPF = **8% employee + 12% employer = 20%** of **total earnings** (Section 3.1), **no floor, no ceiling**. 4. ETF = **3% employer-only** of total earnings (Section 4) — **never** deduct ETF from the employee. 5. The **EPF/ETF base excludes** overtime, reimbursed travel and bonuses; the **APIT base includes** them. Compute the two bases separately. 6. Currency is **LKR** only. 7. APIT is remitted by the **15th of the following month**; EPF and ETF by the **last working day of the following month**. 8. The minimum monthly wage is **LKR 27,000** (LKR 30,000 from 1 Jan 2026) — flag any gross below it. 9. Every output is labelled **provisional / pending accountant sign-off**.
+### Tier 1 Rules (deterministic, always apply)
 
-## Section 11 — Tier 2 Catalogue (reviewer judgement required)
+- **Tier 1 Rules**: 1. APIT is computed on **gross monthly regular profits** using **Table 01** (rates table) for resident / Sri Lankan-citizen-non-resident primary employment. 2. The personal relief is **LKR 150,000/month**, already built into the Table 01 formula: never deduct it twice. 3. EPF = **8% employee + 12% employer = 20%** of **total earnings** (rates table), **no floor, no ceiling**. 4. ETF = **3% employer-only** of total earnings (rates table): **never** deduct ETF from the employee. 5. The **EPF/ETF base excludes** overtime, reimbursed travel and bonuses; the **APIT base includes** them. Compute the two bases separately. 6. Currency is **LKR** only. 7. APIT is remitted by the **15th of the following month**; EPF and ETF by the **last working day of the following month**. 8. The minimum monthly wage is **LKR 27,000** (LKR 30,000 from 1 Jan 2026): flag any gross below it. 9. Every output is labelled **provisional / pending accountant sign-off**.
+
+
+### Tier 2 Catalogue (reviewer judgement required)
 
 **Tier 2 Catalogue**
 
 | Item | Why it needs judgement |
 | --- | --- |
-| Selection between APIT Tables 01–08 | Lump-sum (Table 02), terminal (Table 03), mid-year joiner/retiree or sub-threshold-but-annual-over-1.8M (Table 05), Table 08 categories — fact-specific |
+| Selection between APIT Tables 01–08 | Lump-sum (Table 02), terminal (Table 03), mid-year joiner/retiree or sub-threshold-but-annual-over-1.8M (Table 05), Table 08 categories: fact-specific |
 | Valuation of non-cash benefits (housing, vehicle, utilities) | Fair-market-value rules under the Inland Revenue Act not fully encoded here |
 | Whether a medical/insurance benefit qualifies for the equal-terms exemption | Conditional on all full-time staff being covered on equal terms |
 | Third Schedule exemptions | Item-by-item statutory analysis |
@@ -314,185 +222,94 @@ Statement line: `STAFF SAL EMP001 ... 24,840`
 | Double-tax-treaty / expatriate relief | Treaty-by-treaty analysis |
 | Mid-month joiners/leavers | Pro-ration and Table 05 interaction not encoded |
 
-## Section 12 — Excel Working Paper Template
 
-Suggested column layout for a monthly Sri Lanka payroll working paper (one row per employee):
+## Boundary and exception table
 
-**Excel Working Paper Template columns**
+| Situation | Treatment |
+| --- | --- |
+| Overtime, reimbursed travel, bonus | In the APIT base; out of the EPF and ETF base |
+| Monthly profits under Rs. 150,000 but cumulative over Rs. 1,800,000 | Table 05 from that month |
+| Employee joins or leaves mid-year | Table 05 |
+| Salary arrears | Table 02; tax credit under new section 96A (Act No. 11 of 2026) |
+| Lump-sum or terminal payment | Table 02 or 03, not Table 01 |
+| Medical or insurance benefit available to all full-time staff on equal terms | Not a regular profit for APIT (Table 01 note) |
+| Government departments and local authorities | Not ETF contributors (ETF Board FAQ) |
+| Social service organisation training minor offenders, destitute, deaf or blind persons | EPF exemption (EPF FAQ) |
 
-| Col | Header | Formula / source |
+### Conservative Defaults
+
+When a required input is ambiguous and the user cannot supply it, apply the **most conservative** assumption (the one that maximises tax/contribution exposure or that forces a refusal), and label the output as provisional.
+
+**Conservative defaults table**
+
+| Unknown | Conservative default | Rationale |
 | --- | --- | --- |
-| A | Employee name | input |
-| B | TIN | input |
-| C | APIT table (confirm 01) | input |
-| D | APIT gross / regular profits (LKR) | input |
-| E | EPF/ETF base — total earnings (LKR) | input (exclude OT, reimbursed travel, bonus) |
-| F | APIT band applied | lookup on D |
-| G | APIT (LKR) | Table 01 formula (Section 2.2) |
-| H | EPF employee 8% (LKR) | `=ROUND(E*0.08,2)` |
-| I | EPF employer 12% (LKR) | `=ROUND(E*0.12,2)` |
-| J | ETF employer 3% (LKR) | `=ROUND(E*0.03,2)` |
-| K | Net pay (LKR) | `=D-G-H` |
-| L | Total employer cost (LKR) | `=D+I+J` |
-| M | Remittance month | APIT 15th; EPF/ETF last working day |
+| Which APIT table applies | Use **Table 01** ONLY if primary-employment / single-employer is confirmed; otherwise refuse and ask | Tables 02–08 apply to arrears, terminal payments, secondary employment, mid-year joiners: different formulas |
+| Whether a payment is "regular profits" for APIT | **Include** it in the APIT gross | APIT base is broad; over-withholding is recoverable, under-withholding leaves the employer liable to pay the tax anyway (section 86(3)) |
+| Whether a payment is in the EPF "total earnings" base | **Include** unless it is overtime, reimbursed travel or a bonus | Those three are the named exclusions; everything else is in |
+| Whether ETF applies | Assume **yes** (3% employer) for any covered employee | ETF has no headcount threshold |
+| Pay frequency | **Monthly** | Standard Sri Lanka practice |
+| Currency | **LKR** | Only legal payroll currency |
+| Gross below the minimum wage | **Flag** as below LKR 30,000/month floor (from 1 January 2026; LKR 1,200/day) | A binding floor exists |
+| Residence / citizenship for table selection | Refuse and ask | Table 01 covers residents and Sri Lankan-citizen non-residents only |
 
-- **APIT Table 01 formula (Excel)** — =IF(D<=150000,0, IF(D<=233333,D*0.06-9000, IF(D<=275000,D*0.18-37000, IF(D<=316667,D*0.24-53500, IF(D<=358333,D*0.30-72500, D*0.36-94000)))))  _(Section 2.2)_
 
-Reconcile column G against the worked examples before relying on the sheet. Note: K subtracts APIT and EPF employee only; ETF and EPF employer are employer costs (column L), not employee deductions.
+## Worked cases
 
-## Section 13 — Bank Statement / Terminology Reading Guide (Sri Lanka)
+### Case 1: employee with overtime, 24% band
 
-**Terminology Reading Guide**
+Regular salary Rs. 270,000 plus overtime Rs. 30,000. APIT runs on the full Rs. 300,000 (24% band); EPF and ETF run on Rs. 270,000 because overtime is outside total earnings.
 
-| Term / abbreviation | Meaning |
-| --- | --- |
-| LKR / Rs. | Sri Lankan Rupee |
-| IRD | Inland Revenue Department (income tax / APIT) |
-| APIT | Advance Personal Income Tax — the PAYE-style monthly withholding |
-| PAYE | Older name for the employee-withholding system, often used interchangeably with APIT |
-| TIN | Taxpayer Identification Number (employer and each employee) |
-| EPF | Employees' Provident Fund (8% employee + 12% employer = 20%) |
-| ETF | Employees' Trust Fund (3% employer-only) |
-| T-10 / APIT Certificate | Annual earnings/tax certificate the employer must issue to each employee |
-| BRA | Budgetary Relief Allowance — consolidated into the 2025 minimum wage |
-| BOC / HNB / Combank | Bank of Ceylon / Hatton National Bank / Commercial Bank |
-| Y/A | Year of Assessment (1 April – 31 March) |
-| වැටුප / சம்பளம் | "Salary" in Sinhala / Tamil |
+```oa-check
+name: APIT, EPF and ETF with overtime, one month
+inputs:
+  salary: 270000
+  overtime: 30000
+steps:
+  - apit_gross: salary + overtime
+  - apit: apit_gross * 0.24 - 53500
+  - epf_employee: salary * 0.08
+  - epf_employer: salary * 0.12
+  - etf: salary * 0.03
+  - net_pay: apit_gross - apit - epf_employee
+  - employer_cost: apit_gross + epf_employer + etf
+expected:
+  apit: 18500
+  epf_employee: 21600
+  epf_employer: 32400
+  etf: 8100
+  net_pay: 259900
+  employer_cost: 340500
+```
 
-## Section 14 — Onboarding Fallback
+### Case 2: decision, is APIT due at all?
 
-- **Onboarding fallback questions** — If you lack a required input and cannot proceed, ask the user the following, in order, and stop until answered: 1. "Does **APIT Table 01** apply — is the employee a **resident or Sri Lankan-citizen non-resident** on a **single/primary** employment?" 2. "What are the employee's **gross monthly regular profits in LKR** (for APIT)?" 3. "What is the **total-earnings base for EPF/ETF** — does it differ from the APIT gross (overtime, reimbursed travel and bonuses are excluded from EPF)?" 4. "Which **month** is this pay run for (sets the remittance deadlines)?" 5. "Are any allowances or benefits **exempt (Third Schedule)** or excluded from the EPF base?" Do not estimate around a missing APIT table category or gross figure. Do not deduct ETF from the employee under any circumstance.
+Two employees on Table 01: one at the Rs. 30,000 minimum wage, one at Rs. 250,000. The first is under the Rs. 150,000 relief, so APIT is nil but EPF and ETF still apply; the second is in the 18% band.
 
-## Section 15 — Filing Obligations & Deadlines
+```oa-check
+name: Minimum-wage employee against Rs. 250,000 employee
+inputs:
+  low: 30000
+  high: 250000
+steps:
+  - apit_low: min(low, 0)
+  - net_low: low - low * 0.08
+  - cost_low: low * 1.15
+  - apit_high: high * 0.18 - 37000
+  - net_high: high - apit_high - high * 0.08
+expected:
+  apit_low: 0
+  net_low: 27600
+  cost_low: 34500
+  apit_high: 8000
+  net_high: 222000
+```
 
-**Filing Obligations & Deadlines**  _(IRD APIT Annual Statement guide — https://www.ird.gov.lk/en/Downloads/Other_PAYE_Doc/Asmt_APIT_Guide_2024_2025_E.pdf ; simplebooks — https://simplebooks.com/srilanka/apit-return-filing-in-sri-lanka/ ; EPF Employer FAQ — https://epf.lk/?page_id=811 ; ETF Board — https://etfb.lk/payment-of-contributions/)_
-
-| Obligation | Form / channel | Deadline |
-| --- | --- | --- |
-| APIT monthly remittance | Pay to Commissioner-General, IRD | **On or before the 15th of the following month** (Section 120(a), IRA) — *IRD; simplebooks* |
-| APIT Annual Statement + schedules | IRD e-filing (**mandatory** for all employers from Y/A 2023/2024, Section 113(1B)) | **On or before 30 April** following the year of assessment — *IRD APIT Annual Statement guide* |
-| Employee certificate (T-10 / APIT Certificate) | Employer issues to every employee, including zero-tax employees | **By 30 April**, or within **30 days** of cessation of employment — *simplebooks* |
-| EPF monthly contribution | EPF (Central Bank / Dept. of Labour) | **Last working day of the following month** — *EPF Employer FAQ* |
-| ETF monthly contribution | ETF Board | **Last working day of the following month** — *ETF Board* |
-
-- **Employer liability** — Employer liability: an employer who fails to deduct/remit APIT is **personally liable** for the amount (Section 124(1), IRA).  _(Section 124(1), IRA)_
-
-## Section 16 — Penalties
-
-### 16.1 APIT (Inland Revenue Act)
-
-**APIT (Inland Revenue Act) penalties**  _(LK tax-advisory summaries of the IRA)_
-
-| Default | Penalty |
-| --- | --- |
-| Late / non-filing of return | **LKR 50,000 fixed + LKR 10,000 per month** (or part), capped at **LKR 400,000** — *LK tax-advisory summaries of the IRA* |
-| Late payment of tax | **10% penalty** if not remitted within 14 days of the due date, plus **interest of 1.5% per month** (or part) on unpaid tax — *LK tax-advisory summaries of the IRA* |
-
-> **[RESEARCH GAP — reviewer to confirm]** The APIT penalty amounts above (LKR 50,000 + LKR 10,000/month, cap LKR 400,000; 10% + 1.5%/month) are sourced from reputable Sri Lankan tax-advisory summaries reflecting the Inland Revenue Act provisions, **not** a directly-extracted IRD statute page. They are consistent across multiple sources but must be cross-checked against the Inland Revenue Act No. 24 of 2017 (as amended) before publication. *Sources: simplebooks — https://simplebooks.com/srilanka/apit-return-filing-in-sri-lanka/ ; bizadvisor — https://bizadvisor.lk/handbook/APIT-advance-personal-income-tax-srilanka*
-
-### 16.2 EPF late-payment surcharge
-
-**EPF late-payment surcharge**  _(EPF Employer FAQ — https://epf.lk/?page_id=811)_
-
-| Delay | Surcharge |
-| --- | --- |
-| 1–10 days | 5% |
-| 11 days – 1 month | 15% |
-| 1–3 months | 20% |
-| 3–6 months | 30% |
-| 6–12 months | 40% |
-| Over 12 months | 50% |
-
-- **Incomplete details surcharge** — Plus a **2% surcharge** for submitting incomplete details.  _(EPF Employer FAQ — https://epf.lk/?page_id=811)_
-
-### 16.3 ETF late-payment surcharge
-
-**ETF late-payment surcharge**  _(ETF Board — https://etfb.lk/payment-of-contributions/ ; ETF Employers FAQ — https://etfb.lk/employers-faq/)_
-
-| Delay | Surcharge |
-| --- | --- |
-| ≤10 days | 5% |
-| 11 days – 1 month | 15% |
-| 1–3 months | 20% |
-| 3–6 months | 30% |
-| 6–12 months | 40% |
-| Over 12 months | 50% |
-
-## Section 17 — Related Context (Corporate Income Tax)
-
-**Corporate income tax reference**  _(simplebooks — https://simplebooks.com/srilanka/apit-tax/ (secondary; the primary authority is the Inland Revenue Act No. 24 of 2017, as amended).)_
-
-| Item | Value |
-| --- | --- |
-| Standard corporate income tax | **30%** on taxable profits (most companies), Y/A 2025/2026 — *secondary summary; primary is the IRA* |
-
-Not part of payroll, but employers commonly ask:
-
-## Section 18 — Reference Material
-
-**Reference Material summary table**  _(IRD APIT Table 01; IRD APIT guideline; EPF Act; EPF Employer FAQ; ETF Act; ETF Board; Ministry of Labour; Amendment Act No. 11 of 2025; IRD; simplebooks; LK tax-advisory summaries of IRA; IRD APIT Annual Statement guide)_
-
-| Topic | Figure | Source |
-| --- | --- | --- |
-| Personal relief (tax-free) | LKR 150,000/month (1,800,000/yr) | IRD APIT Table 01 |
-| APIT first band | 6% (annual first 1,000,000) | IRD APIT guideline |
-| APIT top rate | 36% (annual balance) | IRD APIT guideline |
-| APIT Table 01 6% formula | 6% × gross − 9,000 (150,001–233,333) | IRD APIT Table 01 |
-| APIT Table 01 18% formula | 18% × gross − 37,000 (233,334–275,000) | IRD APIT Table 01 |
-| APIT Table 01 24% formula | 24% × gross − 53,500 (275,001–316,667) | IRD APIT Table 01 |
-| APIT Table 01 30% formula | 30% × gross − 72,500 (316,668–358,333) | IRD APIT Table 01 |
-| APIT Table 01 36% formula | 36% × gross − 94,000 (over 358,333) | IRD APIT Table 01 |
-| EPF employee | 8% of total earnings | EPF Act; EPF Employer FAQ |
-| EPF employer | 12% of total earnings | EPF Act; EPF Employer FAQ |
-| EPF total | 20% of total earnings, no ceiling | EPF Act; EPF Employer FAQ |
-| ETF | 3% employer-only | ETF Act; ETF Board |
-| Minimum wage | LKR 27,000/month; LKR 1,080/day (LKR 30,000/month from 1 Jan 2026) | Ministry of Labour; Amendment Act No. 11 of 2025 |
-| APIT remittance deadline | 15th of following month (Section 120(a)) | IRD; simplebooks |
-| APIT annual statement / T-10 | 30 April; e-filing mandatory | IRD APIT Annual Statement guide |
-| EPF/ETF deadline | Last working day of following month | EPF Employer FAQ; ETF Board |
-| APIT late-filing penalty | LKR 50,000 + 10,000/month, cap 400,000 **[RESEARCH GAP]** | LK tax-advisory summaries of IRA |
-| APIT late-payment | 10% + 1.5%/month interest **[RESEARCH GAP]** | LK tax-advisory summaries of IRA |
-| Corporate income tax | 30% | simplebooks (secondary) |
-| Year of assessment | 1 Apr – 31 Mar | IRD |
-
-- **Personal relief (tax-free)** — LKR 150,000/month (1,800,000/yr)  _(IRD APIT Table 01)_
-- **APIT first band** — 6% (annual first 1,000,000)  _(IRD APIT guideline)_
-- **APIT top rate** — 36% (annual balance)  _(IRD APIT guideline)_
-- **APIT Table 01 6% formula** — 6% × gross − 9,000 (150,001–233,333)  _(IRD APIT Table 01)_
-- **APIT Table 01 18% formula** — 18% × gross − 37,000 (233,334–275,000)  _(IRD APIT Table 01)_
-- **APIT Table 01 24% formula** — 24% × gross − 53,500 (275,001–316,667)  _(IRD APIT Table 01)_
-- **APIT Table 01 30% formula** — 30% × gross − 72,500 (316,668–358,333)  _(IRD APIT Table 01)_
-- **APIT Table 01 36% formula** — 36% × gross − 94,000 (over 358,333)  _(IRD APIT Table 01)_
-- **EPF employee** — 8% of total earnings  _(EPF Act; EPF Employer FAQ)_
-- **EPF employer** — 12% of total earnings  _(EPF Act; EPF Employer FAQ)_
-- **EPF total** — 20% of total earnings, no ceiling  _(EPF Act; EPF Employer FAQ)_
-- **ETF** — 3% employer-only  _(ETF Act; ETF Board)_
-- **Minimum wage** — LKR 27,000/month; LKR 1,080/day (LKR 30,000/month from 1 Jan 2026)  _(Ministry of Labour; Amendment Act No. 11 of 2025)_
-- **APIT remittance deadline** — 15th of following month (Section 120(a))  _(IRD; simplebooks)_
-- **APIT annual statement / T-10** — 30 April; e-filing mandatory  _(IRD APIT Annual Statement guide)_
-- **EPF/ETF deadline** — Last working day of following month  _(EPF Employer FAQ; ETF Board)_
-- **APIT late-filing penalty** — LKR 50,000 + 10,000/month, cap 400,000 **[RESEARCH GAP]**  _(LK tax-advisory summaries of IRA)_
-- **APIT late-payment** — 10% + 1.5%/month interest **[RESEARCH GAP]**  _(LK tax-advisory summaries of IRA)_
-- **Corporate income tax** — 30%  _(simplebooks (secondary))_
-- **Year of assessment** — 1 Apr – 31 Mar  _(IRD)_
-
-**Primary sources:**
-- IRD APIT Table 01 (2025/26, primary) — https://www.ird.gov.lk/en/publications/APIT_Tax_Tables/2025-2026/Table%20-%201/02.%20APIT_2526_Table_01_Text.pdf
-- IRD APIT 2025/26 guideline — https://www.ird.gov.lk/en/publications/APIT_Tax_Tables/2025-2026/Guide/APIT_2526_Guideline.pdf
-- IRD APIT Annual Statement guide — https://www.ird.gov.lk/en/Downloads/Other_PAYE_Doc/Asmt_APIT_Guide_2024_2025_E.pdf
-- EPF Employer FAQ — https://epf.lk/?page_id=811
-- Central Bank EPF — https://www.cbsl.gov.lk/en/employees-provident-fund
-- EPF Act — https://www.cbsl.gov.lk/sites/default/files/cbslweb_documents/laws/acts/en/epf_act.pdf
-- ETF Board contributions — https://etfb.lk/payment-of-contributions/
-- ETF Employers FAQ — https://etfb.lk/employers-faq/
-- Ministry of Labour minimum wage — https://labourmin.gov.lk/heres-how-the-private-sector-minimum-wage-is-set-to-rise/
-- Amendment Act No. 11 of 2025 (Parliament) — https://www.parliament.lk/uploads/acts/gbills/english/6388.pdf
-
-## Section 19 — Test Suite
+### Test Suite
 
 Each test states inputs and the expected output; recompute before trusting any change to this skill. EPF base = APIT gross unless stated; APIT from Section 2.2, EPF/ETF from Sections 3–4.
 
-**Gross 27,000 (minimum wage).** Expect APIT = **0**; EPF emp = 2,160; ETF emp = 0; net = **24,840**; employer cost = 31,050. *(See Example 1.)*
+**Gross 30,000 (minimum wage from 1 January 2026).** Expect APIT = **0**; EPF emp = 2,400; ETF emp = 0; net = **27,600**; employer cost = 34,500. *(See Example 1.)*
 
 **Gross 150,000 (at relief).** Expect APIT = **0**; EPF emp = 12,000; net = **138,000**; employer cost = 172,500. *(See Example 2.)*
 
@@ -506,27 +323,135 @@ Each test states inputs and the expected output; recompute before trusting any c
 
 **EPF/ETF total check, any base B.** Expect EPF employer 12% + employee 8% = **20% of B**; ETF employer = **3% of B**; total to funds = **23% of B**; no ceiling.
 
-**ETF deducted from employee.** Expect: **refuse / flag** — ETF is employer-only (0% employee); never deduct from pay.
+**ETF deducted from employee.** Expect: **refuse / flag**: ETF is employer-only (0% employee); never deduct from pay.
 
 **Gross 300,000 with 30,000 overtime.** Expect APIT on full 300,000 = **18,500**; EPF base = 270,000 → EPF emp = 21,600, EPF er = 32,400, ETF = 8,100. *(See note after Example 6.)*
 
-**Lump-sum / terminal payment.** Expect: **refuse / flag** — use Table 02/03, not the monthly Table 01 formula.
+**Lump-sum / terminal payment.** Expect: **refuse / flag**: use Table 02/03, not the monthly Table 01 formula.
 
-**Gross 26,000 below minimum wage.** Expect: **flag** as below the LKR 27,000/month floor; APIT still 0 (≤150,000).
+**Gross 26,000 below minimum wage.** Expect: **flag** as below the LKR 30,000/month floor (from 1 January 2026); APIT still 0 (≤150,000).
 
-## PROHIBITIONS
 
-- **Table 01 residency/employment condition** — NEVER apply Table 01 without confirming the employee is a resident or Sri Lankan-citizen non-resident on a single/primary employment — other categories use different tables.  _(PROHIBITIONS section)_
-- **ETF employee deduction prohibition** — NEVER deduct ETF from the employee — it is a 3% employer-only contribution.  _(PROHIBITIONS section)_
-- **Double relief prohibition** — NEVER subtract the LKR 150,000 personal relief a second time — it is already inside the Table 01 formula.  _(PROHIBITIONS section)_
-- **APIT gross as EPF base without checks** — NEVER reuse the APIT gross as the EPF base without checking for overtime, reimbursed travel and bonuses (which are excluded from EPF).  _(PROHIBITIONS section)_
-- **EPF/ETF ceiling or floor prohibition** — NEVER apply a ceiling or floor to EPF/ETF — the percentages apply to full total earnings.  _(PROHIBITIONS section)_
-- **Currency restriction** — NEVER compute payroll in any currency other than LKR.  _(PROHIBITIONS section)_
-- **Penalty figures not confirmed statute** — NEVER treat the APIT penalty figures as confirmed statute — they are flagged [RESEARCH GAP].  _(PROHIBITIONS section)_
-- **Deadline flagging requirement** — NEVER miss the 15th-of-following-month APIT deadline or the last-working-day EPF/ETF deadline without flagging penalty exposure.  _(PROHIBITIONS section)_
-- **Minimum wage ignoring prohibition** — NEVER ignore the LKR 27,000/month minimum wage (LKR 30,000 from 1 Jan 2026) when a gross falls below it.  _(PROHIBITIONS section)_
-- **Definitive computation prohibition** — NEVER present payroll computations as definitive — always label as estimated and direct to a Sri Lanka-qualified tax practitioner.  _(PROHIBITIONS section)_
+## When to refuse or refer
 
-## Disclaimer
+#### 7.1 Minimum required inputs
 
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a Sri Lanka-qualified tax practitioner) before implementation.
+- **Minimum required inputs**: To compute Sri Lanka payroll for one employee for one month, you MUST have: 1. **Gross monthly regular profits** (in LKR) for APIT. 2. **Total monthly earnings** for EPF/ETF (may differ from APIT gross: exclude overtime, reimbursed travel, bonuses). 3. **Employee category** confirming **Table 01** applies (resident or Sri Lankan-citizen non-resident; single/primary employment). 4. **Month of pay** (to set remittance deadlines). 5. Confirmation of whether any allowance/benefit is exempt (Third Schedule) or excluded from the EPF base.
+
+#### 7.2 Refusal Catalogue: REFUSE and ask if any of these hold
+
+**Refusal Catalogue**
+
+| Situation | Why refuse |
+| --- | --- |
+| APIT table / employment category not stated | Tables 01–08 have different formulas; never assume Table 01 silently |
+| Currency given is not LKR | Payroll must be in LKR; silent FX conversion introduces error |
+| Lump-sum / arrears / terminal payment present | These use Table 02/03, not the monthly Table 01 formula |
+| APIT gross and EPF base conflated as one number | The bases differ (overtime, travel, bonus excluded from EPF) |
+| Employee may have a second employment | Secondary employment uses a different table |
+| Non-resident who is **not** a Sri Lankan citizen | Table 01 does not apply; different withholding rules |
+| Asked to treat the result as final/filed advice | This is a Tier 2 skill pending sign-off |
+| Asked to confirm APIT penalties beyond sections 157 to 179 | Only the penalties in the rates table are confirmed |
+
+When refusing, state the missing input plainly and request it. Do not fabricate.
+
+
+### PROHIBITIONS
+
+- **Table 01 residency/employment condition**: NEVER apply Table 01 without confirming the employee is a resident or Sri Lankan-citizen non-resident on a single/primary employment: other categories use different tables.  _(PROHIBITIONS section)_
+- **ETF employee deduction prohibition**: NEVER deduct ETF from the employee: it is a 3% employer-only contribution.  _(PROHIBITIONS section)_
+- **Double relief prohibition**: NEVER subtract the LKR 150,000 personal relief a second time: it is already inside the Table 01 formula.  _(PROHIBITIONS section)_
+- **APIT gross as EPF base without checks**: NEVER reuse the APIT gross as the EPF base without checking for overtime, reimbursed travel and bonuses (which are excluded from EPF).  _(PROHIBITIONS section)_
+- **EPF/ETF ceiling or floor prohibition**: NEVER apply a ceiling or floor to EPF/ETF: the percentages apply to full total earnings.  _(PROHIBITIONS section)_
+- **Currency restriction**: NEVER compute payroll in any currency other than LKR.  _(PROHIBITIONS section)_
+- **Penalty figures**: use only the penalties in the rates table (sections 157, 159, 178, 179 and 178A of the IRA); anything else is not confirmed.
+- **Deadline flagging requirement**: NEVER miss the 15th-of-following-month APIT deadline or the last-working-day EPF/ETF deadline without flagging penalty exposure.  _(PROHIBITIONS section)_
+- **Minimum wage ignoring prohibition**: NEVER ignore the LKR 30,000/month (LKR 1,200/day) minimum wage in force from 1 January 2026 when a gross falls below it.  _(PROHIBITIONS section)_
+- **Definitive computation prohibition**: NEVER present payroll computations as definitive: always label as estimated and direct to a Sri Lanka-qualified tax practitioner.  _(PROHIBITIONS section)_
+
+
+## Filing and payment
+
+| Obligation | Channel | Deadline |
+| --- | --- | --- |
+| APIT monthly remittance | Pay to the Commissioner-General, IRD e-Services or bank | Within 15 days after the end of the month (section 86(1)) |
+| APIT annual statement and schedules | IRD e-Services, in the format the Commissioner-General specifies (section 86(9)) | Within 30 days after 31 March: 30 April 2027 for 2026/27 (section 86(2)) |
+| Withholding certificate to each employee | Served free of charge (section 87(6)) | With the annual statement cycle; the earlier version said by 30 April or within 30 days of leaving (not confirmed) |
+| EPF monthly contribution and Form C or e-Return | EPF Department, Central Bank of Sri Lanka | Last working day of the following month |
+| EPF registration of a new employer | Form D to the Labour Office or Commissioner of Labour | Within 14 days of recruiting the first employee |
+| EPF membership for a new employee | Include in that month's Form C or e-Return | Within 14 days of recruitment |
+| ETF monthly contribution | ETF Board | Last working day of the following month |
+
+### Excel Working Paper Template
+
+Suggested column layout for a monthly Sri Lanka payroll working paper (one row per employee):
+
+**Excel Working Paper Template columns**
+
+| Col | Header | Formula / source |
+| --- | --- | --- |
+| A | Employee name | input |
+| B | TIN | input |
+| C | APIT table (confirm 01) | input |
+| D | APIT gross / regular profits (LKR) | input |
+| E | EPF/ETF base: total earnings (LKR) | input (exclude OT, reimbursed travel, bonus) |
+| F | APIT band applied | lookup on D |
+| G | APIT (LKR) | Table 01 formula (rates table) |
+| H | EPF employee 8% (LKR) | `=ROUND(E*0.08,2)` |
+| I | EPF employer 12% (LKR) | `=ROUND(E*0.12,2)` |
+| J | ETF employer 3% (LKR) | `=ROUND(E*0.03,2)` |
+| K | Net pay (LKR) | `=D-G-H` |
+| L | Total employer cost (LKR) | `=D+I+J` |
+| M | Remittance month | APIT 15th; EPF/ETF last working day |
+
+- **APIT Table 01 formula (Excel)**: =IF(D<=150000,0, IF(D<=233333,D*0.06-9000, IF(D<=275000,D*0.18-37000, IF(D<=316667,D*0.24-53500, IF(D<=358333,D*0.30-72500, D*0.36-94000)))))  _(rates table)_
+
+Reconcile column G against the worked examples before relying on the sheet. Note: K subtracts APIT and EPF employee only; ETF and EPF employer are employer costs (column L), not employee deductions.
+
+
+### Bank Statement / Terminology Reading Guide (Sri Lanka)
+
+**Terminology Reading Guide**
+
+| Term / abbreviation | Meaning |
+| --- | --- |
+| LKR / Rs. | Sri Lankan Rupee |
+| IRD | Inland Revenue Department (income tax / APIT) |
+| APIT | Advance Personal Income Tax: the PAYE-style monthly withholding |
+| PAYE | Older name for the employee-withholding system, often used interchangeably with APIT |
+| TIN | Taxpayer Identification Number (employer and each employee) |
+| EPF | Employees' Provident Fund (8% employee + 12% employer = 20%) |
+| ETF | Employees' Trust Fund (3% employer-only) |
+| T-10 / APIT Certificate | Annual earnings/tax certificate the employer must issue to each employee |
+| BRA | Budgetary Relief Allowance: consolidated into the 2025 minimum wage |
+| BOC / HNB / Combank | Bank of Ceylon / Hatton National Bank / Commercial Bank |
+| Y/A | Year of Assessment (1 April – 31 March) |
+| වැටුප / சம்பளம் | "Salary" in Sinhala / Tamil |
+
+
+### Onboarding Fallback
+
+- **Onboarding fallback questions**: If you lack a required input and cannot proceed, ask the user the following, in order, and stop until answered: 1. "Does **APIT Table 01** apply: is the employee a **resident or Sri Lankan-citizen non-resident** on a **single/primary** employment?" 2. "What are the employee's **gross monthly regular profits in LKR** (for APIT)?" 3. "What is the **total-earnings base for EPF/ETF**: does it differ from the APIT gross (overtime, reimbursed travel and bonuses are excluded from EPF)?" 4. "Which **month** is this pay run for (sets the remittance deadlines)?" 5. "Are any allowances or benefits **exempt (Third Schedule)** or excluded from the EPF base?" Do not estimate around a missing APIT table category or gross figure. Do not deduct ETF from the employee under any circumstance.
+
+
+## Completion checklist
+
+- [ ] Table 01 eligibility confirmed
+- [ ] APIT base and EPF base computed separately
+- [ ] EPF 8% and 12%, ETF 3% employer-only
+- [ ] Pay at or above Rs. 30,000 a month (Rs. 1,200 a day)
+- [ ] APIT by the 15th; EPF and ETF by the last working day; annual statement by 30 April
+
+## Sources
+
+| Source | URL | Read on |
+| --- | --- | --- |
+| Read for APIT Table 01 scope, regular profits, the Rs. 150,000 monthly relief, the Table 05 switch and the band formulas | https://www.ird.gov.lk/en/publications/APIT_Tax_Tables/2025-2026/Table%20-%201/02.%20APIT_2526_Table_01_Text.pdf | 2026-11-14 |
+| Read for the list of APIT tables published by the IRD (none for a later year) | https://www.ird.gov.lk/en/publications/SitePages/apit_tax_tables.aspx?menuid=1503 | 2026-11-14 |
+| Read for First Schedule paragraph 1(1D) and sections 86, 87, 157, 159, 178 and 179 in the IRD consolidated Act | https://www.ird.gov.lk/en/publications/Acts_Income%20Tax_2017/IRA_Cons_Act_-_2025_Changes.pdf | 2026-11-14 |
+| Read for sections 14, 15, 21 and 30 (sections 86(9), 87(6), 96A, 178A) of the Inland Revenue (Amendment) Act No. 11 of 2026 | https://www.ird.gov.lk/en/publications/Acts_Income%20Tax_2017/IR_Act_No_11-2026_E.pdf | 2026-11-14 |
+| Read for EPF rates, total earnings inclusions and exclusions, registration within 14 days, payment deadline, surcharges and the 2% incomplete details surcharge, on the EPF Department of the Central Bank of Sri Lanka site | https://epf.lk/?page_id=811 | 2026-11-14 |
+| Read for the 3% ETF rate, employer-only rule, earnings base, deadline, surcharge scale and half-yearly return surcharge on the ETF Board employers page | https://etfb.lk/employers-faq/ | 2026-11-14 |
+| Read for section 3 of the National Minimum Wage of Workers (Amendment) Act No. 11 of 2025 (Rs. 27,000 and Rs. 1,080 from 1 April 2025; Rs. 30,000 and Rs. 1,200 from 1 January 2026) on the Parliament site | https://www.parliament.lk/uploads/acts/gbills/english/6388.pdf | 2026-11-14 |
+
+Not yet confirmed: an IRD APIT table set for 2026/27 (the 2025-2026 set is the latest; the underlying Act rates are unchanged); the APIT guideline PDF (it would not extract); the T-10 certificate deadline (30 April, or 30 days after leaving) from a secondary source; the employee-certificate form name; budgetary relief allowance treatment inside the minimum wage; gratuity rules; the EPF Act and ETF Act texts themselves (the rates are taken from the two funds' official FAQ pages); whether the cbsl.gov.lk EPF pages say the same (they refused scripted access).
