@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-14T19:11:11+00:00",
+ "generated_at": "2026-11-14T19:38:42+00:00",
  "counts": {
-  "guides": 2360,
-  "loadable_skill_names": 2301,
-  "jurisdictions": 264,
+  "guides": 2378,
+  "loadable_skill_names": 2319,
+  "jurisdictions": 270,
   "accountant_reviewed": 126,
   "held_skill_names": 52
  },
@@ -947,6 +947,32 @@
    "last_updated": "2026-11-14"
   },
   {
+   "slug": "ai-gst",
+   "mcp_slug": "ai-gst",
+   "path": "skills/anguilla/ai-gst.md",
+   "name": "ai-gst",
+   "jurisdiction": "AI",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
+  },
+  {
+   "slug": "ai-payroll",
+   "mcp_slug": "ai-payroll",
+   "path": "skills/anguilla/ai-payroll.md",
+   "name": "ai-payroll",
+   "jurisdiction": "AI",
+   "category": "payroll",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
+  },
+  {
    "slug": "ag-abst",
    "mcp_slug": "ag-abst",
    "path": "skills/antigua-and-barbuda/ag-abst.md",
@@ -1376,6 +1402,19 @@
    "last_updated": "2026-09-27"
   },
   {
+   "slug": "au-coal-lsl-levy",
+   "mcp_slug": "au-coal-lsl-levy",
+   "path": "skills/australia/au-coal-lsl-levy.md",
+   "name": "au-coal-lsl-levy",
+   "jurisdiction": "AU",
+   "category": "payroll",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-11"
+  },
+  {
    "slug": "au-company-tax",
    "mcp_slug": "au-company-tax",
    "path": "skills/australia/au-company-tax.md",
@@ -1441,6 +1480,19 @@
    "last_updated": "2026-11-12"
   },
   {
+   "slug": "au-director-penalties",
+   "mcp_slug": "au-director-penalties",
+   "path": "skills/australia/au-director-penalties.md",
+   "name": "au-director-penalties",
+   "jurisdiction": "AU",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-11"
+  },
+  {
    "slug": "au-div7a",
    "mcp_slug": "au-div7a",
    "path": "skills/australia/au-div7a.md",
@@ -1465,6 +1517,19 @@
    "reviewed_by": "Ryan Duguid",
    "tax_year": "2026",
    "last_updated": "2026-10-23"
+  },
+  {
+   "slug": "au-employee-share-schemes",
+   "mcp_slug": "au-employee-share-schemes",
+   "path": "skills/australia/au-employee-share-schemes.md",
+   "name": "au-employee-share-schemes",
+   "jurisdiction": "AU",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-12"
   },
   {
    "slug": "au-employment-termination-payments",
@@ -1532,6 +1597,19 @@
    "last_updated": "2026-10-14"
   },
   {
+   "slug": "au-forex-gains-losses",
+   "mcp_slug": "au-forex-gains-losses",
+   "path": "skills/australia/au-forex-gains-losses.md",
+   "name": "au-forex-gains-losses",
+   "jurisdiction": "AU",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-11"
+  },
+  {
    "slug": "au-freelance-intake",
    "mcp_slug": "au-freelance-intake",
    "path": "skills/australia/au-freelance-intake.md",
@@ -1543,6 +1621,19 @@
    "reviewed_by": "Ryan Duguid",
    "tax_year": "2025",
    "last_updated": "2026-09-10"
+  },
+  {
+   "slug": "au-fuel-tax-credits",
+   "mcp_slug": "au-fuel-tax-credits",
+   "path": "skills/australia/au-fuel-tax-credits.md",
+   "name": "au-fuel-tax-credits",
+   "jurisdiction": "AU",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-12"
   },
   {
    "slug": "au-gst-bas",
@@ -1610,6 +1701,19 @@
    "last_updated": "2026-09-22"
   },
   {
+   "slug": "au-managed-funds-amit",
+   "mcp_slug": "au-managed-funds-amit",
+   "path": "skills/australia/au-managed-funds-amit.md",
+   "name": "au-managed-funds-amit",
+   "jurisdiction": "AU",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-11"
+  },
+  {
    "slug": "au-medicare-levy",
    "mcp_slug": "au-medicare-levy",
    "path": "skills/australia/au-medicare-levy.md",
@@ -1662,6 +1766,19 @@
    "last_updated": "2026-09-27"
   },
   {
+   "slug": "au-objections",
+   "mcp_slug": "au-objections",
+   "path": "skills/australia/au-objections.md",
+   "name": "au-objections",
+   "jurisdiction": "AU",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-11"
+  },
+  {
    "slug": "au-partnerships",
    "mcp_slug": "au-partnerships",
    "path": "skills/australia/au-partnerships.md",
@@ -1712,6 +1829,45 @@
    "reviewed_by": "Ryan Duguid",
    "tax_year": "2026",
    "last_updated": "2026-09-27"
+  },
+  {
+   "slug": "au-primary-production",
+   "mcp_slug": "au-primary-production",
+   "path": "skills/australia/au-primary-production.md",
+   "name": "au-primary-production",
+   "jurisdiction": "AU",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-02"
+  },
+  {
+   "slug": "au-private-rulings",
+   "mcp_slug": "au-private-rulings",
+   "path": "skills/australia/au-private-rulings.md",
+   "name": "au-private-rulings",
+   "jurisdiction": "AU",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-11"
+  },
+  {
+   "slug": "au-property-development",
+   "mcp_slug": "au-property-development",
+   "path": "skills/australia/au-property-development.md",
+   "name": "au-property-development",
+   "jurisdiction": "AU",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-11"
   },
   {
    "slug": "au-psi",
@@ -1777,6 +1933,19 @@
    "reviewed_by": null,
    "tax_year": "2026",
    "last_updated": "2026-11-12"
+  },
+  {
+   "slug": "au-restructure-rollovers",
+   "mcp_slug": "au-restructure-rollovers",
+   "path": "skills/australia/au-restructure-rollovers.md",
+   "name": "au-restructure-rollovers",
+   "jurisdiction": "AU",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-11"
   },
   {
    "slug": "au-return-assembly",
@@ -3948,6 +4117,19 @@
    "reviewed_by": null,
    "tax_year": "2026",
    "last_updated": "2026-11-11"
+  },
+  {
+   "slug": "io-tax-scope-reference",
+   "mcp_slug": "io-tax-scope-reference",
+   "path": "skills/british-indian-ocean-territory/io-tax-scope-reference.md",
+   "name": "io-tax-scope-reference",
+   "jurisdiction": "IO",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
   },
   {
    "slug": "bvi-tax",
@@ -9134,7 +9316,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-11-01"
+   "last_updated": "2026-11-14"
   },
   {
    "slug": "gm-company-formation",
@@ -16404,6 +16586,19 @@
    "last_updated": "2026-11-14"
   },
   {
+   "slug": "mh-retirement-contribution-reference",
+   "mcp_slug": "mh-retirement-contribution-reference",
+   "path": "skills/marshall-islands/mh-retirement-contribution-reference.md",
+   "name": "mh-retirement-contribution-reference",
+   "jurisdiction": "MH",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
+  },
+  {
    "slug": "mq-antilles-goods-movements",
    "mcp_slug": "mq-antilles-goods-movements",
    "path": "skills/martinique/mq-antilles-goods-movements.md",
@@ -22189,6 +22384,19 @@
    "last_updated": "2026-11-14"
   },
   {
+   "slug": "sb-npf-contribution-reference",
+   "mcp_slug": "sb-npf-contribution-reference",
+   "path": "skills/solomon-islands/sb-npf-contribution-reference.md",
+   "name": "sb-npf-contribution-reference",
+   "jurisdiction": "SB",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
+  },
+  {
    "slug": "cancelling-a-vat-registration-and-the-exit-vat-charge",
    "mcp_slug": "cancelling-a-vat-registration-and-the-exit-vat-charge",
    "path": "skills/south-africa/cancelling-a-vat-registration-and-the-exit-vat-charge.md",
@@ -24945,6 +25153,19 @@
    "last_updated": "2026-11-14"
   },
   {
+   "slug": "tv-npf-contribution-reference",
+   "mcp_slug": "tv-npf-contribution-reference",
+   "path": "skills/tuvalu/tv-npf-contribution-reference.md",
+   "name": "tv-npf-contribution-reference",
+   "jurisdiction": "TV",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
+  },
+  {
    "slug": "ae-company-formation",
    "mcp_slug": "ae-company-formation",
    "path": "skills/uae/ae-company-formation.md",
@@ -25795,6 +26016,19 @@
    "path": "skills/ukraine/ukraine-vat.md",
    "name": "ukraine-vat",
    "jurisdiction": "UA",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
+  },
+  {
+   "slug": "um-tax-scope-reference",
+   "mcp_slug": "um-tax-scope-reference",
+   "path": "skills/united-states-minor-outlying-islands/um-tax-scope-reference.md",
+   "name": "um-tax-scope-reference",
+   "jurisdiction": "UM",
    "category": "international",
    "tier": 2,
    "verified_by": null,
@@ -30570,8 +30804,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
   },
   {
    "slug": "vu-corporate-income-tax",
@@ -30583,8 +30817,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
   },
   {
    "slug": "vu-income-tax",
@@ -30596,8 +30830,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
   },
   {
    "slug": "vu-payroll-social",
@@ -30609,8 +30843,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
   },
   {
    "slug": "vu-tax-overview",
@@ -30622,8 +30856,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
   },
   {
    "slug": "vu-vat-gst",
@@ -30635,8 +30869,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
   },
   {
    "slug": "va-italy-remuneration-and-financial-assets",
