@@ -41,7 +41,7 @@ The shares above are from the old file and the NHI Act (art. 27); the 30% employ
 | Category 3 insured amount | NT$29,500 (from 28,590) | Farmers and fishermen; own premium NT$458 a month (from 443) | same |
 | Minimum insured amount, small employers and most self-employed | NT$42,000 a month (from 40,100) | Owners of businesses with fewer than 5 insured staff, self-employed in Category 1, and professionals in own practice other than CPAs, lawyers, architects, doctors, dentists and Chinese-medicine doctors; must not be below the highest amount declared for their staff | same |
 | Own premium at NT$42,000 | NT$2,171 a month (from 2,073) | Insured person alone, 100% share | same |
-| General premium rate | 5.17% | Matches the MOHW figures: 42,000 x 5.17% = 2,171; 29,500 x 5.17% x 30% = 458 | same |
+| General premium rate | 5.17% | Computed check against the MOHW figures: 42,000 x 5.17% = 2,171; 29,500 x 5.17% x 30% = 458 | same |
 
 ## The base
 

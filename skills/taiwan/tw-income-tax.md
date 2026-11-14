@@ -40,16 +40,16 @@ Out of scope: business tax on sales (`taiwan-vat`), company tax (`tw-corporate-i
 | Standard deduction, married | NT$272,000 | Same | same |
 | Salary special deduction (薪資所得特別扣除額) | Up to NT$227,000 per earner | 2026 (2025: 218,000) | same |
 | Disability special deduction | NT$227,000 per person | 2026 | same |
-| Basic tax (AMT) deduction for individuals | NT$7,500,000 | Not adjusted for 2026 | same |
-| Savings and investment special deduction | Up to NT$270,000 per household | Bank interest and listed items | https://www.ntbt.gov.tw/multiplehtml/f4e3899a499b4f05821af5a5afadd2f5 |
+| Basic tax (AMT) deduction for individuals | 750萬 (NT$7.5 million) | Not adjusted for 2026 | same |
+| Savings and investment special deduction | Up to 27萬元 (NT$270 thousand) per household | Bank interest and listed items | https://www.ntbt.gov.tw/multiplehtml/f4e3899a499b4f05821af5a5afadd2f5 |
 | Tertiary tuition special deduction | Up to NT$25,000 per child | Recognised college or university | same |
 | Preschool child special deduction (6 and under) | NT$150,000 first child; NT$225,000 each further child | Subject to the exclusions below | same |
 | Long-term care special deduction | NT$180,000 per person | Qualifying long-term care need; subject to the exclusions below | same |
 | Rent special deduction | Up to NT$180,000 per household | Rented home for own use in Taiwan, no own home; exclusions below | same |
-| Exclusions for preschool, long-term care and rent | Not available | If the marginal rate is 20% or more, the 28% dividend option is chosen, or basic income exceeds NT$7,500,000 | same |
+| Exclusions for preschool, long-term care and rent | Not available | If the marginal rate is 20% or more, the 28% dividend option is chosen, or basic income exceeds 750萬元 | same |
 | Itemised: insurance premiums | Up to NT$24,000 per person | NHI premiums without limit | same |
 | Itemised: donations | Up to 20% of gross consolidated income | Government, defence and listed cultural donations without limit | same |
-| Itemised: home mortgage interest | Up to NT$300,000, less the savings deduction used | One owner-occupied home in Taiwan | same |
+| Itemised: home mortgage interest | Up to 30萬元 (NT$300 thousand), less the savings deduction used | One owner-occupied home in Taiwan | same |
 | Late payment surcharge (滯納金) | 1% for each 3 days late, capped at 10% | From 2022 (Tax Collection Act art. 20) | https://www.ntbt.gov.tw/singlehtml/2dbb2b6ec3714b469267299f687be37c?cntId=6047d2df3fb144a6abb413dd828da9b7 |
 | Professional expense rate, lawyers | 30% | 2025 (114年度) standard, for those without proper books | https://law-out.mof.gov.tw/LawContent.aspx?id=GL011721 |
 | Professional expense rate, CPAs and bookkeepers | 35% | Same | same |
@@ -89,7 +89,7 @@ Professionals with proper books report actual income less documented expenses. T
 5. **Basic living expense difference (基本生活費差額):** if the per-person basic living expense times household size exceeds the total of exemptions and the listed deductions, the excess is also deducted (2025 amount NT$213,000 per person; the 2026 amount is not yet confirmed).
 6. **Net consolidated income (綜合所得淨額)** times the band rate, less the progressive difference.
 7. **Less** dividend credit (if dividends included), withholding and prepaid tax.
-8. **Compare** with the basic tax (AMT) if basic income exceeds NT$7,500,000.
+8. **Compare** with the basic tax (AMT) if basic income exceeds 750萬元.
 
 ### Dividends (since 2018)
 

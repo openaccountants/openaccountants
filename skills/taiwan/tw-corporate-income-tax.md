@@ -38,7 +38,7 @@ Profit-seeking enterprises (companies, sole proprietorships and partnerships, li
 | Non-resident withholding, royalties | 20% | Same | same |
 | Non-resident withholding, interest on bonds, bills, securitised products and repos | 15% | Other interest 20% | same |
 | Late payment surcharge | 1% per 3 days, capped at 10% | Tax Collection Act art. 20 | https://www.ntbt.gov.tw/singlehtml/2dbb2b6ec3714b469267299f687be37c?cntId=6047d2df3fb144a6abb413dd828da9b7 |
-| Basic tax (AMT), enterprises | Basic income exemption NT$600,000 | Not adjusted for 2026 | https://www.mof.gov.tw/download/bb34472701e4443c910788e792dae85c |
+| Basic tax (AMT), enterprises | Basic income exemption 60萬 (NT$600 thousand) | Not adjusted for 2026 | https://www.mof.gov.tw/download/bb34472701e4443c910788e792dae85c |
 
 ## The base
 
@@ -114,6 +114,6 @@ expected:
 | MOF, 2026 provisional tax news. Read for the 1 to 30 September 2026 window, half of prior-year tax and the NT$2,000 exemption | https://www.mof.gov.tw/singlehtml/384fb3077bb349ea973e7fc6f13b6974?cntId=5fe89bb53a38459ab2c8ac493a57e13a | 2026-11-14 |
 | MOF, withholding rates on non-resident dividends, interest and royalties. Read for 21%, 20%, 15% and treaty range 3% to 15% | https://www.mof.gov.tw/singlehtml/191?cntId=82761 | 2026-11-14 |
 | Taipei National Taxation Bureau, surcharge calculation. Read for the 10% cap and 3-day steps | https://www.ntbt.gov.tw/singlehtml/2dbb2b6ec3714b469267299f687be37c?cntId=6047d2df3fb144a6abb413dd828da9b7 | 2026-11-14 |
-| MOF, 2026 amounts table (PDF). Read for the enterprise basic income exemption NT$600,000 | https://www.mof.gov.tw/download/bb34472701e4443c910788e792dae85c | 2026-11-14 |
+| MOF, 2026 amounts table (PDF). Read for the enterprise basic income exemption of 60萬 | https://www.mof.gov.tw/download/bb34472701e4443c910788e792dae85c | 2026-11-14 |
 
 Not yet confirmed: the enterprise basic tax rate (old file: 12%) and any 15% global minimum tax rate for MNE groups; resident withholding rates (old file: 10%); the exclusion of foreign branches from the undistributed earnings surtax; the number of tax treaties (old file: about 35); the lower late filing surcharge rate.

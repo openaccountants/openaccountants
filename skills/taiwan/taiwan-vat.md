@@ -66,17 +66,17 @@ type: situation-rules
 | --- | --- | --- | --- |
 | General business tax rate | 5% | Floor of the 5% to 10% range in VAT Act art. 10; the Executive Yuan sets the levy rate within it | https://law-out.mof.gov.tw/LawContent.aspx?id=FL006082 |
 | Zero rate | 0% | Exports, export-related services and services used abroad, duty-free shops, bonded areas, international transport (art. 7) | same |
-| Small business and listed special cases | 1% | Small businesses assessed by the bureau (art. 13); farm produce sellers in wholesale markets 0.1% | same |
+| Small business and listed special cases | 1% | Small businesses assessed by the bureau (art. 13); farm produce sellers in wholesale markets 百分之零點一 (one tenth of one per cent) | same |
 | Bank and insurance core business | 5% | Reinsurance premiums 1%; other financial core sales 2% (art. 11) | same |
 | Bimonthly return | By the 15th day of the next period | Every two months, whether or not there are sales (art. 35); zero-rated businesses may elect monthly, by the 15th of the next month | same |
-| Late filing surcharge, up to 30 days | 1% of tax due per 2 days; NT$1,200 to 12,000 | NT$1,200 if no tax due (art. 49) | same |
-| Late filing, over 30 days | 30% of assessed tax; NT$3,000 to 30,000 | NT$3,000 if no tax due (art. 49) | same |
-| Missing or under-issued uniform invoices | Up to 5 times the tax, capped at NT$1,000,000 | Suspension after 3 findings in a year (art. 52) | same |
+| Late filing surcharge, up to 30 days | 1% of tax due per 2 days; 新臺幣一千二百元 to 一萬二千元 (NT$1.2 thousand to 12 thousand) | 新臺幣一千二百元 if no tax due (art. 49) | same |
+| Late filing, over 30 days | 30% of assessed tax; 新臺幣三千元 to 三萬元 (NT$3 thousand to 30 thousand) | 新臺幣三千元 if no tax due (art. 49) | same |
+| Missing or under-issued uniform invoices | Up to 5 times the tax, capped at 新臺幣一百萬元 (NT$1 million) | Suspension after 3 findings in a year (art. 52) | same |
 | Evasion | Up to 5 times the evaded tax | art. 51 | same |
-| Small business assessment limit | Average monthly sales under NT$200,000 | 1% assessment, ordinary receipts allowed | https://www.mof.gov.tw/singlehtml/384fb3077bb349ea973e7fc6f13b6974?cntId=90e4c55bc36d4054a5209f65e749f901 |
-| Small business threshold, goods | NT$100,000 a month | Below it no business tax; from 1 January 2025 (was 80,000) | https://www.mof.gov.tw/singlehtml/384fb3077bb349ea973e7fc6f13b6974?cntId=4e040848cb7044ce8d2c8540bd628f5f |
-| Small business threshold, services | NT$50,000 a month | Same (was 40,000) | same |
-| Foreign e-service suppliers to individuals | Register above NT$600,000 of annual sales | Previously NT$480,000 | https://law-out.mof.gov.tw/LawContent.aspx?id=GL011581 |
+| Small business assessment limit | Average monthly sales under 20萬元 (NT$200 thousand) | 1% assessment, ordinary receipts allowed | https://www.mof.gov.tw/singlehtml/384fb3077bb349ea973e7fc6f13b6974?cntId=90e4c55bc36d4054a5209f65e749f901 |
+| Small business threshold, goods | 10萬元 (NT$100 thousand) a month | Below it no business tax; raised from 1 January 2025 | https://www.mof.gov.tw/singlehtml/384fb3077bb349ea973e7fc6f13b6974?cntId=4e040848cb7044ce8d2c8540bd628f5f |
+| Small business threshold, services | 5萬元 (NT$50 thousand) a month | Same, raised from 1 January 2025 | same |
+| Foreign e-service suppliers to individuals | Register above 新臺幣六十萬元 (NT$600 thousand) of annual sales | Previously 新臺幣四十八萬元 | https://law-out.mof.gov.tw/LawContent.aspx?id=GL011581 |
 | Late payment surcharge | 1% per 3 days, up to 10% | Tax Collection Act art. 20 | https://www.ntbt.gov.tw/singlehtml/2dbb2b6ec3714b469267299f687be37c?cntId=6047d2df3fb144a6abb413dd828da9b7 |
 
 ## Ask the client first
