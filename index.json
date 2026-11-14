@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-14T19:11:11+00:00",
+ "generated_at": "2026-11-14T19:36:58+00:00",
  "counts": {
   "guides": 2360,
   "loadable_skill_names": 2301,
@@ -9134,7 +9134,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-11-01"
+   "last_updated": "2026-11-14"
   },
   {
    "slug": "gm-company-formation",
