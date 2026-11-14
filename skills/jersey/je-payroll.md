@@ -16,9 +16,9 @@ jurisdiction: JE
 category: payroll
 tax_year: 2026
 tier: 2
-last_updated: 2026-10-15
-version: 1.1
-review_status: pending_review
+type: computation
+last_updated: 2026-11-14
+version: 1.2
 depends_on:
   - workflow-base
   - payroll-workflow-base
@@ -26,7 +26,11 @@ depends_on:
 
 # Jersey payroll and ITIS: 2026
 
-## Inputs and registration
+Tax year: calendar 2026. Currency is GBP. Authority: Revenue Jersey (ITIS) and Customer and Local Services (social security contributions).
+
+## Who this applies to
+
+### Inputs and registration
 
 This partial reference covers selected ordinary employer deductions and reporting. It does not complete the payroll base's minimum-wage, overtime, benefits, pension, termination, payslip and rounding slots. Missing mandatory rules or outputs hold the complete payroll package. Source illustrations do not establish an employee's actual eligibility.
 
@@ -36,7 +40,20 @@ Register as an employer with Revenue Jersey and establish employment, insured st
 
 ITIS collects amounts towards the employee's annual liability. It is not the final personal tax rate. For an employee who is an insured person under Article 49B(5), a valid combined ITIS effective rate includes LTC contributions. A tax-only rate outside that combined branch does not itself include LTC. Class 1 social contributions are a separate deduction and employer liability; see `je-social-contributions`.
 
-## Calculation
+## Rates, bands and thresholds
+
+| 2026 item | Rate or amount | Conditions | Source |
+|---|---|---|---|
+| ITIS missing-notice default, tax-only | 20% | No applicable Article 41CC notice; employee outside the Article 49B(5) insured-person branch | [Income Tax Law, Art. 41B](https://www.jerseylaw.je/laws/current/l_29_1961) |
+| ITIS missing-notice default, combined tax and LTC | 22% | No applicable notice; employee an insured person within Article 49B(5) | [Income Tax Law, Sch. 1A Part 1 para. 3(2)](https://www.jerseylaw.je/laws/current/l_29_1961) |
+| Class 1 primary (employee) | 6% up to the Standard Earnings Limit | Figures owned by `je-social-contributions`; listed here for the worked examples | [2026 contribution schedule](https://www.gov.je/Working/Contributions/Employers/pages/tables.aspx) |
+| Class 1 secondary (employer) | 6.5% up to the Standard Earnings Limit | same | [2026 contribution schedule](https://www.gov.je/Working/Contributions/Employers/pages/tables.aspx) |
+| Monthly contribution earnings rounding | Down to whole pounds (weekly: down to 25p) | Earnings-base rule for Class 1 only, not for ITIS | [2026 contribution schedule](https://www.gov.je/Working/Contributions/Employers/pages/tables.aspx) |
+| Employer notification | Within seven days of becoming an employer | Written notification to Revenue Jersey | [Income Tax Law, Art. 19A](https://www.jerseylaw.je/laws/current/l_29_1961) |
+
+Earnings limits, the minimum earnings threshold and the additional employer rate are in `je-social-contributions` (one figure, one home).
+
+## The base
 
 The [employer guidance](https://www.gov.je/TaxesMoney/IncomeTax/Employers/Returns/Pages/EmployingStaff.aspx) requires the applicable effective rate on gross earnings, including relevant bonuses and overtime. [Article 41B](https://www.jerseylaw.je/laws/current/l_29_1961) uses the notice applying on the deduction day. Its tax-only missing-notice default is 20%. For an employee who is an insured person within Article 49B(5), Schedule 1A Part 1 paragraph 3 applies the combined tax/LTC rate and expressly sets its missing-notice default at **22%**. Establish that status; the guidance's general 22% summary does not replace the statutory condition. A red contribution card or pension age alone does not establish that LTC is absent.
 
@@ -50,18 +67,9 @@ Do not calculate the employee's effective rate from personal tax bands, cap a va
 
 Taxable termination payments require [Article 62D](https://www.jerseylaw.je/laws/current/l_29_1961), including its remuneration/deferred-pay distinction and conditions; the employer page's short GBP 50,000 summary does not establish a universal exemption. Benefits need Articles 65A/65B and the applicable valuation/exemption provisions. Those complete computations remain outside this partial reference. Building subcontractors have Article 41E/Schedule 1A Part 2 and certificate rules; do not run them through the employee payroll base by default.
 
-## Hypothetical worked positions
+## Deadlines and filing
 
-These 2026 illustrations assume the stated bases, status and notice are established. Where Class 1 is computed, ordinary monthly contribution conditions are also established. Exact arithmetic does not validate eligibility or a rounding method.
-
-1. **Valid combined notice.** Cash and relevant earnings are GBP 1,000, with a valid supplied 12% combined rate and no other adjustments. ITIS is GBP 120, Class 1 primary GBP 60 and cash net GBP 820. Employer secondary is GBP 65; salary plus secondary cost is GBP 1,065. The 12% is an assumed notice input. Sources: Article 41B, Schedule 1A paragraph 3 and the 2026 contribution schedule.
-2. **Combined missing-notice case.** On the same facts, except the employer has received no applicable Article 41CC notice and the employee's Article 49B insured status is established, 22% gives GBP 220 combined withholding. Primary remains GBP 60, cash net GBP 720 and secondary GBP 65. No additional LTC amount is deducted. Source: Schedule 1A Part 1 paragraph 3(2).
-3. **Tax-only condition.** For an established tax-only case outside Article 49B's insured-employee branch, no applicable notice and GBP 1,000 tax earnings give GBP 200 at Article 41B's 20% default. This does not establish contribution classification or a complete net-pay amount; those require separate facts. Do not select this branch merely because primary Class 1 deductions are exempt.
-4. **Two different bases.** Established ITIS gross is GBP 1,000.89, with a valid 12% rate. Monthly Class 1 earnings round down to GBP 1,000, giving GBP 60 primary and GBP 65 secondary in this illustration. ITIS percentage arithmetic on GBP 1,000.89 gives GBP 120.1068. Its deduction and cash net remain held until the applicable monetary rounding is verified. Do not round ITIS gross to GBP 1,000 using the contribution rule. Sources: Article 41B and the two contribution guidance pages.
-5. **Notice effective day.** A valid 12% notice is replaced by a valid 14% notice applying from 1 November. On established GBP 1,000 relevant earnings, an ordinary 15 October deduction is GBP 120 and a 15 November deduction GBP 140. Both figures exclude other adjustments and do not generate a rate. Source: Articles 41B and 41CC.
-6. **Under-school-age deduction.** For an employee established to be under the upper limit of compulsory school age, Article 41B(2) does not require deduction but permits the employer to choose it at the employee's effective rate. If the employer does not choose deduction, the illustrated ITIS deduction is zero. This is not proof of a nil annual assessment or a general reporting/contribution exemption. Verify those separate duties.
-
-## Returns and payments
+### Returns and payments
 
 The [employer guidance](https://www.gov.je/TaxesMoney/IncomeTax/Employers/Returns/Pages/EmployingStaff.aspx) and Articles 20, 41BA and 41BC provide these ordinary monthly obligations:
 
@@ -77,7 +85,74 @@ The combined return includes the applicable staff, office-holder/director and la
 
 Article 41BB permits a missing/incorrect-payment estimate with prescribed notice information, at least fifteen days to pay from the notice date, and a fifteen-day service-based appeal period. Do not replace those notice conditions with the guidance's instruction to pay an estimated bill immediately. Complete penalty, appeal and collection mechanics remain outside this batch.
 
-## Limits and checks
+## Penalties and interest
+
+Article 41BB, summarised under "Returns and payments" above, sets the missing or incorrect payment estimate: prescribed notice information, at least fifteen days to pay from the notice date and a fifteen-day service-based appeal period. Complete penalty, appeal and collection mechanics remain outside this guide; see [je-income-tax-compliance](je-income-tax-compliance.md) for the income-tax surcharge and appeals.
+
+## Cross-border points
+
+Short-term business visitors have a statutory tax exception under [Article 118B](https://www.jerseylaw.je/laws/current/l_29_1961) (no more than 60 days in the assessment year); licensing and social contribution treatment are separate questions. Non-resident employees and treaty questions are in `je-cross-border-withholding`.
+
+## Two worked examples that recompute
+
+These 2026 illustrations assume the stated bases, status and notice are established. Where Class 1 is computed, ordinary monthly contribution conditions are also established. Exact arithmetic does not validate eligibility or a rounding method.
+
+1. **Valid combined notice.** Cash and relevant earnings are GBP 1,000, with a valid supplied 12% combined rate and no other adjustments. ITIS is GBP 120, Class 1 primary GBP 60 and cash net GBP 820. Employer secondary is GBP 65; salary plus secondary cost is GBP 1,065. The 12% is an assumed notice input. Sources: Article 41B, Schedule 1A paragraph 3 and the 2026 contribution schedule.
+2. **Combined missing-notice case.** On the same facts, except the employer has received no applicable Article 41CC notice and the employee's Article 49B insured status is established, 22% gives GBP 220 combined withholding. Primary remains GBP 60, cash net GBP 720 and secondary GBP 65. No additional LTC amount is deducted. Source: Schedule 1A Part 1 paragraph 3(2).
+3. **Tax-only condition.** For an established tax-only case outside Article 49B's insured-employee branch, no applicable notice and GBP 1,000 tax earnings give GBP 200 at Article 41B's 20% default. This does not establish contribution classification or a complete net-pay amount; those require separate facts. Do not select this branch merely because primary Class 1 deductions are exempt.
+4. **Two different bases.** Established ITIS gross is GBP 1,000.89, with a valid 12% rate. Monthly Class 1 earnings round down to GBP 1,000, giving GBP 60 primary and GBP 65 secondary in this illustration. ITIS percentage arithmetic on GBP 1,000.89 gives GBP 120.1068. Its deduction and cash net remain held until the applicable monetary rounding is verified. Do not round ITIS gross to GBP 1,000 using the contribution rule. Sources: Article 41B and the two contribution guidance pages.
+5. **Notice effective day.** A valid 12% notice is replaced by a valid 14% notice applying from 1 November. On established GBP 1,000 relevant earnings, an ordinary 15 October deduction is GBP 120 and a 15 November deduction GBP 140. Both figures exclude other adjustments and do not generate a rate. Source: Articles 41B and 41CC.
+6. **Under-school-age deduction.** For an employee established to be under the upper limit of compulsory school age, Article 41B(2) does not require deduction but permits the employer to choose it at the employee's effective rate. If the employer does not choose deduction, the illustrated ITIS deduction is zero. This is not proof of a nil annual assessment or a general reporting/contribution exemption. Verify those separate duties.
+
+**Check of position 1: valid 12% combined notice, GBP 1,000.**
+
+```oa-check
+name: Jersey 2026 payroll, GBP 1,000 monthly, valid 12% combined ITIS notice
+inputs:
+  gross: 1000
+  itis_rate: 0.12
+  primary_rate: 0.06
+  secondary_rate: 0.065
+steps:
+  - itis: gross * itis_rate
+  - primary: gross * primary_rate
+  - net: gross - itis - primary
+  - secondary: gross * secondary_rate
+  - employer_cost: gross + secondary
+expected:
+  itis: 120
+  primary: 60
+  net: 820
+  secondary: 65
+  employer_cost: 1065
+```
+
+**Check of positions 2 and 4: missing combined notice, and two different bases.** With no notice and established insured status, 22% applies to GBP 1,000. Separately, ITIS gross of GBP 1,000.89 at 12% gives GBP 120.1068 while Class 1 uses earnings rounded down to GBP 1,000.
+
+```oa-check
+name: Jersey 2026 payroll, missing combined notice (22%) and ITIS gross GBP 1,000.89 against rounded Class 1 earnings
+inputs:
+  gross: 1000
+  gross_unrounded: 1000.89
+  default_combined: 0.22
+  itis_rate: 0.12
+  primary_rate: 0.06
+steps:
+  - itis_missing_notice: gross * default_combined
+  - net_missing_notice: gross - itis_missing_notice - gross * primary_rate
+  - class1_earnings: floor(gross_unrounded)
+  - primary_on_rounded: class1_earnings * primary_rate
+  - itis_on_unrounded: gross_unrounded * itis_rate
+expected:
+  itis_missing_notice: 220
+  net_missing_notice: 720
+  class1_earnings: 1000
+  primary_on_rounded: 60
+  itis_on_unrounded: 120.1068
+tolerance: 0.0001
+```
+
+## Ask the client first
 
 Record the requested period, employment/Class 1/LTC status separately, current notice and effective dates, every cash/noncash payment, separate ITIS and contribution bases, pay dates and periods, prior monthly earnings/contributions, absence reimbursements, leaving date and payment type, remittances and return notices. Use redacted references; identifiers, identity documents, account details and submission remain with the reviewer. No factual default establishes unknown eligibility, earnings, law or a nil contribution.
 
@@ -90,24 +165,17 @@ Record the requested period, employment/Class 1/LTC status separately, current n
 
 Every amount and classification requires reviewer attention, regardless of value; this is review policy. Extend the reviewer brief with the notice/status evidence, separate bases and earnings rounding, statutory exceptions, correction month, missing rules and reconciled collection. Check that LTC is not added twice, secondary contributions are not deducted from the employee, and the same amounts, dates, holds and citations appear across all outputs. Complete non-monthly mechanics, monetary rounding, minimum wage/overtime, benefits, pensions, termination and employment permits remain open.
 
+## Sources
+
 Version 1.1 adds selected statute and fresh employer/contribution guidance checked on 15 October 2026. The contribution earnings rules are expanded in `je-social-contributions`; complete payroll and contribution companions remain unfinished. See `references.md` for capture hashes, contrary summaries and periods. This draft has no professional sign-off.
 
-<!-- openaccountants-cta-block -->
+| Source | URL | Read on |
+|---|---|---|
+| Income Tax (Jersey) Law 1961, Arts. 19A, 20, 41B, 41BA, 41BB, 41BC, 41CC, 41CD, 41E, 62D, 65A, 65B, 118B and Sch. 1A: read for ITIS notices, defaults, returns, records and exceptions | https://www.jerseylaw.je/laws/current/l_29_1961 | 2026-10-15 |
+| Revenue Jersey, Employing staff and your responsibilities: read for the effective rate on gross earnings and monthly return and payment deadlines | https://www.gov.je/TaxesMoney/IncomeTax/Employers/Returns/Pages/EmployingStaff.aspx | 2026-10-15 |
+| Customer and Local Services, Employer contribution rates and calculator: read for the 2026 Class 1 rates and earnings rounding | https://www.gov.je/Working/Contributions/Employers/pages/tables.aspx | 2026-11-14 |
+| Customer and Local Services, Class 1 schedule guide: read for earnings rounding down | https://www.gov.je/Working/Contributions/Employers/Pages/ScheduleGuide.aspx | 2026-10-15 |
+| Social Security (Jersey) Law 1974, Art. 49B and Sch. 1A: read for insured status and Class 1 earnings | https://www.jerseylaw.je/laws/current/l_22_1974 | 2026-10-15 |
+| Social Security (Contributions) (Jersey) Order 1975, Art. A2 and Sch. 1: read for contribution earnings | https://www.jerseylaw.je/laws/current/ro_6108 | 2026-10-15 |
 
----
-
-## Talk to a verified accountant
-
-This guide is maintained in the
-[ryanduguid/openaccountants fork](https://github.com/ryanduguid/openaccountants).
-Check its quality tier, recorded review status and cited sources before use.
-Choose a practitioner whose credentials and engagement scope you have verified.
-The links below are optional upstream services; they do not publish or verify
-this fork's changes.
-
-- Upstream connection service: https://www.openaccountants.com/connect
-- Upstream accountant network: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
+Not yet confirmed: complete non-monthly conversion and cumulative treatment; monetary rounding of ITIS and contribution deductions and net pay; minimum wage, overtime, benefits, pensions, termination and employment permits; complete annual-filing and director-classification branches.

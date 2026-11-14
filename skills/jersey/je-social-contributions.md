@@ -15,9 +15,9 @@ jurisdiction: JE
 category: international
 tax_year: 2026
 tier: 2
-last_updated: 2026-10-15
-version: 1.2
-review_status: pending_review
+type: computation
+last_updated: 2026-11-14
+version: 1.3
 depends_on:
   - workflow-base
   - social-contributions-workflow-base
@@ -25,13 +25,31 @@ depends_on:
 
 # Jersey social contributions: 2026
 
-## Scope and source conditions
+Tax year: calendar 2026. Currency is GBP. Authority: Customer and Local Services (contributions); Revenue Jersey (long-term care assessment).
+
+## Who this applies to
 
 This partial reference covers selected Class 1 rules and routes to the existing Class 2 guide. It does not complete every contributor category, programme, cross-border condition, remittance pattern, penalty or output slot in the social-contributions base. Unknown rules or mandatory outputs hold the dependent amount and complete engagement package. A job title alone does not establish liability.
 
 The fresh [Social Security Law](https://www.jerseylaw.je/laws/current/l_22_1974) capture applies from 1 January 2026; the [Contributions Order](https://www.jerseylaw.je/laws/current/ro_6108) capture from 22 April 2025. Calendar-2026 guidance supplies the indexed amounts. The Law's displayed historical starting figures are subject to annual indexation. Schedule 1A A1 indexes the minimum threshold by minimum wage; paragraph 2 uses the Jersey Index of Earnings for monthly limits. The minimum earnings threshold differs from the lower earnings limit used for supplementation.
 
-## Class 1 earnings and attribution
+## Rates, bands and thresholds
+
+First establish insured status, relevant earnings and any exemption or contribution credit. For an ordinary monthly Class 1 case, the [2026 employer schedule](https://www.gov.je/Working/Contributions/Employers/pages/tables.aspx) and [Social Security Law, Schedule 1A](https://www.jerseylaw.je/laws/current/l_22_1974) supply the rates:
+
+| 2026 monthly item | Amount or rate | Conditions | Source |
+|---|---|---|---|
+| Minimum earnings threshold (MET) | GBP 618 | Monthly; weekly GBP 143, fortnightly GBP 286, four-weekly GBP 572. Below MET no Class 1 is due | [2026 employer schedule](https://www.gov.je/Working/Contributions/Employers/pages/tables.aspx) |
+| Standard earnings limit (SEL) | GBP 6,062 | Monthly | same |
+| Upper earnings limit (UEL) | GBP 27,632 | Monthly; secondary upper band stops here | same |
+| Employee primary contribution | 6% up to SEL | On whole relevant earnings once MET is reached | same |
+| Employer secondary contribution | 6.5% up to SEL plus 2.5% between SEL and UEL | Not recoverable from the employee (Art. 7) | [Social Security Law, Sch. 1A](https://www.jerseylaw.je/laws/current/l_22_1974) |
+| Class 2 annual bands | 12.5% up to GBP 72,744; 2.5% from there to GBP 331,584 | Full monthly amount GBP 1,297; detail in `je-class2-contributions` | [2026 Class 2 guidance](https://www.gov.je/Working/Contributions/Payments/pages/class2contributionsstatement.aspx) |
+| Long-term care contribution | Maximum rate 1.5%; marginal rate 1.95% | Upper income limit linked to the social security UEL; assessed by Revenue Jersey | [How long-term care is funded](https://www.gov.je/Benefits/LongTermCareScheme/pages/funding.aspx) |
+
+## The base
+
+### Class 1 earnings and attribution
 
 [Social Security Law Articles 3 to 7 and Schedule 1A paragraph 1](https://www.jerseylaw.je/laws/current/l_22_1974) establish insured classification, contributions and the broad earnings base. It includes wages, salary, fees, bonuses, commission, overtime and other emoluments/benefits, subject to modifying Orders. Article 7 prohibits recovering employer secondary contributions from an employee. Classification, credits, reduced/exempt primary status and foreign-coverage conditions need their evidence.
 
@@ -55,17 +73,7 @@ The [employer guidance](https://www.gov.je/Working/Contributions/Employers/Pages
 
 Keep this base separate from income-tax earnings and benefit valuation. Article A4 generally excludes LTC liability/credits from this Contributions Order, apart from its stated Articles 17/18 exceptions. Class 1 exclusions and earnings rounding do not automatically apply to LTC or Class 2.
 
-## Class 1 monthly contributions
-
-First establish insured status, relevant earnings and any exemption or contribution credit. For an ordinary monthly Class 1 case, the [2026 employer schedule](https://www.gov.je/Working/Contributions/Employers/pages/tables.aspx) and [Social Security Law, Schedule 1A](https://www.jerseylaw.je/laws/current/l_22_1974) supply the rates:
-
-| 2026 monthly item | Amount or rate |
-|---|---|
-| Minimum earnings threshold (MET) | GBP 618 |
-| Standard earnings limit (SEL) | GBP 6,062 |
-| Upper earnings limit (UEL) | GBP 27,632 |
-| Employee primary contribution | 6% up to SEL |
-| Employer secondary contribution | 6.5% up to SEL plus 2.5% between SEL and UEL |
+### Class 1 monthly calculation
 
 Below MET, no Class 1 contribution is due under the ordinary schedule. At or above MET, calculate on the whole relevant earnings up to SEL, not only the excess over MET. Secondary contributions on the upper band stop at UEL. The employee does not pay the secondary contribution.
 
@@ -95,7 +103,33 @@ For multiple jobs with one employer, the guidance aggregates earnings. An option
 
 Class 1 payments are due within 15 days after month end under the same [schedule](https://www.gov.je/Working/Contributions/Employers/pages/tables.aspx).
 
-## Hypothetical Class 1 positions
+### Class 2 (routes to je-class2-contributions)
+
+Use [je-class2-contributions](je-class2-contributions.md) for insured status, reduced-rate branches, startup concessions and reconciliation. [Social Security Law, Article 3](https://www.jerseylaw.je/laws/current/l_22_1974) and the [Residence Order, Article 2](https://www.jerseylaw.je/laws/current/ro_6081) use school leaving age and prescribed residence conditions with exceptions. Age 18 and 6 months since arrival are not unconditional tests. The [Classification Order, Schedule 1 Part 2](https://www.jerseylaw.je/laws/current/ro_6107) includes low-earnings employment and specified company ownership/control cases; confirm the applicable classification.
+
+The [2026 Class 2 guidance](https://www.gov.je/Working/Contributions/Payments/pages/class2contributionsstatement.aspx) gives annual bands of 12.5% up to GBP 72,744 and 2.5% from there to GBP 331,584, and a full monthly amount of GBP 1,297. [Contributions Order, Articles 13 to 13B and Schedule 2](https://www.jerseylaw.je/laws/current/ro_6108) ordinarily use 2024 income with 2026 limits, but different branches use different deemed earnings. Current salary or total taxable income alone cannot establish a reduced-rate payment.
+
+[Collection Order, Article 6](https://www.jerseylaw.je/laws/current/ro_89_2013) ordinarily requires payment by day 15 of the following month, subject to a verified extension. The Article 13C Class 1 offset applies to its specific low-earnings classification; company ownership alone does not establish it. Article 13D startup concessions require application and qualifying conditions; Article 13E reconciliation uses actual concession-year income and payments. Follow the [dedicated guide](je-class2-contributions.md) and the official notice for the applicable periods and amounts.
+
+### Long-term care
+
+[Funding guidance](https://www.gov.je/Benefits/LongTermCareScheme/pages/funding.aspx) gives a maximum contribution rate of 1.5%, marginal rate of 1.95%, tax allowances and reliefs, and an upper income limit linked to the social security UEL. Revenue Jersey assesses the contribution and includes it in the ITIS effective rate or direct tax payment. A flat 1.5% of uncapped gross salary is not a complete calculation.
+
+## Deadlines and filing
+
+Class 1 payments are due within 15 days after month end under the [2026 schedule](https://www.gov.je/Working/Contributions/Employers/pages/tables.aspx); the combined employer return is in `je-payroll`. Class 2 is ordinarily payable by day 15 of the following month under [Collection Order, Article 6](https://www.jerseylaw.je/laws/current/ro_89_2013), subject to a verified extension.
+
+## Penalties and interest
+
+Penalty coverage for contributions is incomplete (see Not yet confirmed). Do not infer a penalty or interest figure from the Class 1 or Class 2 guidance.
+
+## Cross-border points
+
+Foreign-coverage conditions, reciprocal agreements and residence conditions for Class 2 (Residence Order, Article 2) need their own evidence; see the Class 2 section below. A non-resident or seconded worker's liability is not established by this guide.
+
+## Two worked examples that recompute
+
+### Hypothetical Class 1 positions
 
 These 2026 examples assume ordinary primary/secondary liability, established contribution earnings and no other adjustment. Sources are Schedule 1A and the Contributions Order/guidance above. They do not establish ITIS earnings, monetary rounding or complete outputs.
 
@@ -108,19 +142,49 @@ These 2026 examples assume ordinary primary/secondary liability, established con
 7. **Ordinary late wages on leaving.** Exit-month wages GBP 4,000 plus ordinary wages GBP 2,900 due for that employment give GBP 6,900 under paragraph 2. Primary is GBP 363.72; secondary is GBP 394.03 plus GBP 20.95 on the GBP 838 upper band, totalling GBP 414.98. Against original amounts GBP 240/GBP 260, adjustments are GBP 123.72 primary and GBP 154.98 secondary. This is not post-month pay in lieu of notice or insolvency benefit.
 8. **Weekly base only.** Published guidance changes GBP 567.49 earnings to GBP 567.25. Actual weekly contributions remain held until period/monthly-cap and monetary rounding are verified. Do not invent a weekly SEL or round a contribution to 25p.
 
-## Class 2
+**Check of position 2: at the monthly threshold.**
 
-Use [je-class2-contributions](je-class2-contributions.md) for insured status, reduced-rate branches, startup concessions and reconciliation. [Social Security Law, Article 3](https://www.jerseylaw.je/laws/current/l_22_1974) and the [Residence Order, Article 2](https://www.jerseylaw.je/laws/current/ro_6081) use school leaving age and prescribed residence conditions with exceptions. Age 18 and 6 months since arrival are not unconditional tests. The [Classification Order, Schedule 1 Part 2](https://www.jerseylaw.je/laws/current/ro_6107) includes low-earnings employment and specified company ownership/control cases; confirm the applicable classification.
+```oa-check
+name: Jersey 2026 Class 1, earnings GBP 618.99 rounded down to GBP 618
+inputs:
+  earnings: 618.99
+  sel: 6062
+  uel: 27632
+steps:
+  - g: floor(earnings)
+  - lower: min(g, sel)
+  - primary: lower * 0.06
+  - secondary: lower * 0.065 + max(min(g, uel) - sel, 0) * 0.025
+expected:
+  g: 618
+  primary: 37.08
+  secondary: 40.17
+```
 
-The [2026 Class 2 guidance](https://www.gov.je/Working/Contributions/Payments/pages/class2contributionsstatement.aspx) gives annual bands of 12.5% up to GBP 72,744 and 2.5% from there to GBP 331,584, and a full monthly amount of GBP 1,297. [Contributions Order, Articles 13 to 13B and Schedule 2](https://www.jerseylaw.je/laws/current/ro_6108) ordinarily use 2024 income with 2026 limits, but different branches use different deemed earnings. Current salary or total taxable income alone cannot establish a reduced-rate payment.
+**Check of position 7: late wages on leaving cross SEL.**
 
-[Collection Order, Article 6](https://www.jerseylaw.je/laws/current/ro_89_2013) ordinarily requires payment by day 15 of the following month, subject to a verified extension. The Article 13C Class 1 offset applies to its specific low-earnings classification; company ownership alone does not establish it. Article 13D startup concessions require application and qualifying conditions; Article 13E reconciliation uses actual concession-year income and payments. Follow the [dedicated guide](je-class2-contributions.md) and the official notice for the applicable periods and amounts.
+```oa-check
+name: Jersey 2026 Class 1, exit month GBP 6,900, adjustment against original GBP 4,000
+inputs:
+  g: 6900
+  original: 4000
+  sel: 6062
+  uel: 27632
+steps:
+  - primary: min(g, sel) * 0.06
+  - secondary: min(g, sel) * 0.065 + max(min(g, uel) - sel, 0) * 0.025
+  - primary_adjustment: primary - original * 0.06
+  - secondary_adjustment: secondary - original * 0.065
+expected:
+  primary: 363.72
+  secondary: 414.98
+  primary_adjustment: 123.72
+  secondary_adjustment: 154.98
+```
 
-## Long-term care
+## Ask the client first
 
-[Funding guidance](https://www.gov.je/Benefits/LongTermCareScheme/pages/funding.aspx) gives a maximum contribution rate of 1.5%, marginal rate of 1.95%, tax allowances and reliefs, and an upper income limit linked to the social security UEL. Revenue Jersey assesses the contribution and includes it in the ITIS effective rate or direct tax payment. A flat 1.5% of uncapped gross salary is not a complete calculation.
-
-## Limits and provenance
+### Records, refusals and limits
 
 Record contributor/employer and period, insured/classification evidence, each payment/benefit, payment and entitlement dates, employment/leaving dates, absence agreements, pay frequency and monthly running totals, exemption/credit notices, separate remittances and corrections. Keep official notices separate from calculator guidance; the calculator expressly cannot override a notice. No missing amount, classification or credit becomes zero by default.
 
@@ -133,26 +197,20 @@ Record contributor/employer and period, insured/classification evidence, each pa
 
 Every monetary or status decision requires reviewer attention regardless of value; this is review policy. Extend the reviewer brief with status/source evidence, separate programme bases and shares, indexed limits, earnings attribution/rounding, correction month and remittance reconciliation. Recompute caps and compare the same amounts, dates, allocations and holds across every output. Do not issue a completed package while a mandatory rule or output is missing.
 
-Monetary rounding, complete non-monthly conversion, exemptions, credits, pension-age cases and standalone LTC remain research gaps. The dedicated Class 2 guide supplies selected reduced-rate/startup mechanics; complete income mapping, administrative grant conditions, top-up practice, benefits and tax-expense timing remain unresolved. Programme allocation, payment-pattern and penalty coverage is incomplete.
+## Sources
 
 The dated 2026 schedule and current Social Security Law agree on 2.5% for the employer upper band. The generic moving-to-Jersey page says 2%; its conflicting figure is not used. Version 1.2 adds selected earnings/period conditions, earnings rounding and guidance checked on 15 October 2026. Reused Class 2/LTC evidence retains its prior limits. See `references.md` for hashes and periods; this draft awaits professional review.
 
-<!-- openaccountants-cta-block -->
+| Source | URL | Read on |
+|---|---|---|
+| Customer and Local Services, Employer contribution rates and calculator: read for the 2026 MET, SEL, UEL, Class 1 rates, rounding and 15-day payment | https://www.gov.je/Working/Contributions/Employers/pages/tables.aspx | 2026-11-14 |
+| Customer and Local Services, Class 1 schedule guide: read for earnings rounding, corrections and aggregation | https://www.gov.je/Working/Contributions/Employers/Pages/ScheduleGuide.aspx | 2026-10-15 |
+| Social Security (Jersey) Law 1974, Arts. 3 to 7 and Sch. 1A: read for classification, the earnings base, rates and fund allocation | https://www.jerseylaw.je/laws/current/l_22_1974 | 2026-10-15 |
+| Social Security (Contributions) (Jersey) Order 1975, Arts. A2, A4, 13 to 13E and Schs. 1 and 2: read for earnings modifications and Class 2 | https://www.jerseylaw.je/laws/current/ro_6108 | 2026-10-15 |
+| Social Security (Residence) Order, Art. 2: read for residence conditions | https://www.jerseylaw.je/laws/current/ro_6081 | 2026-10-11 |
+| Social Security (Classification) Order, Sch. 1 Part 2: read for low-earnings and company cases | https://www.jerseylaw.je/laws/current/ro_6107 | 2026-10-11 |
+| Social Security (Collection) Order, Art. 6: read for the Class 2 payment date | https://www.jerseylaw.je/laws/current/ro_89_2013 | 2026-10-11 |
+| Customer and Local Services, Class 2 contributions: read for the 2026 Class 2 bands and full monthly amount | https://www.gov.je/Working/Contributions/Payments/pages/class2contributionsstatement.aspx | 2026-10-11 |
+| Government of Jersey, How long-term care is funded: read for the 1.5% and 1.95% rates | https://www.gov.je/Benefits/LongTermCareScheme/pages/funding.aspx | 2026-10-11 |
 
----
-
-## Talk to a verified accountant
-
-This guide is maintained in the
-[ryanduguid/openaccountants fork](https://github.com/ryanduguid/openaccountants).
-Check its quality tier, recorded review status and cited sources before use.
-Choose a practitioner whose credentials and engagement scope you have verified.
-The links below are optional upstream services; they do not publish or verify
-this fork's changes.
-
-- Upstream connection service: https://www.openaccountants.com/connect
-- Upstream accountant network: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
+Not yet confirmed: Monetary rounding, complete non-monthly conversion, exemptions, credits, pension-age cases and standalone LTC remain research gaps. The dedicated Class 2 guide supplies selected reduced-rate/startup mechanics; complete income mapping, administrative grant conditions, top-up practice, benefits and tax-expense timing remain unresolved. Programme allocation, payment-pattern and penalty coverage is incomplete.
