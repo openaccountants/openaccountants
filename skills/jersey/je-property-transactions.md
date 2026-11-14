@@ -6,16 +6,18 @@ jurisdiction: JE
 category: international
 tax_year: 2026
 tier: 2
-last_updated: 2026-10-16
-version: 1.2
-review_status: pending_review
+type: computation
+last_updated: 2026-11-14
+version: 1.3
 depends_on:
   - workflow-base
 ---
 
 # Jersey property transactions and probate: 2026
 
-## Scope and period
+Tax year: transactions and duty dates in 2026 (temporary higher dwelling rates apply to duty payable in 2026). Currency is GBP. Authorities: Revenue Jersey (LTT and EPTT) and the Judicial Greffe (stamp and probate duty).
+
+## Who this applies to
 
 Select the legal transaction before calculating a charge. Load workflow-base and read this whole guide before using a table. Establish applicable law and facts for the transaction or duty date; unresolved source conditions require Needs Input. Hypothetical arithmetic does not establish eligibility or professional sign-off.
 
@@ -34,7 +36,7 @@ Primary source library, inspected on 15 October 2026 UTC; editing date 16 Octobe
 
 The enacted [2023 Finance Law, Articles 55–57, 63–65](https://www.jerseylaw.je/laws/enacted/Pages/L-03-2023.aspx), [2024 Finance Law, Articles 54–56, 58](https://www.jerseylaw.je/laws/enacted/Pages/L-01-2024.aspx) and [2026 Finance Law, Articles 48–49, 54](https://www.jerseylaw.je/laws/enacted/Pages/L-12-2026.aspx) support the selected EPTT changes, commencing on 1 January of their respective years. Immediate-effect Acts were made on [16 December 2022](https://www.jerseylaw.je/laws/enacted/Pages/RO-112-2022.aspx), [14 December 2023](https://www.jerseylaw.je/laws/enacted/Pages/RO-120-2023.aspx) and [12 December 2025](https://www.jerseylaw.je/laws/enacted/Pages/RO-095-2025.aspx). The current EPTT history's 2022 date beside the 2024 Budget Act conflicts with the original 2023 Act; use the original instrument for that historical date. Earlier events and future years need their own law checks.
 
-## Classify the charge and value
+### Classify the charge and value
 
 | Transaction | Rule to establish before calculation |
 |---|---|
@@ -48,43 +50,45 @@ LTT domestic/non-domestic use follows the actual parish Rates List at the transa
 
 LTT's off-plan exception needs every Schedule paragraph 2(2A) condition: a dwelling constructed or to be constructed, non-transferable contract, non-completion penalty of at least 10% of consideration, consideration at least notional market value when signed, and signature on or after 1 January 2017. Stamp Article 1 defines its relevant off-plan contract similarly. An off-plan label establishes neither exception.
 
-## Transfer bands and increments
+## Rates, bands and thresholds
 
 Figures are GBP. A band's lower bound is exclusive and its upper bound inclusive. For lower bound L, cumulative base B and increment R, variable duty is B plus R multiplied by the number of GBP 100 units **or parts** in V minus L. Round the unit count upwards. Add the fixed charge separately; do not apply a continuous percentage to arbitrary values.
 
 This dwelling table reproduces LTT Schedule paragraph 2 Table B, temporary higher paragraph 5(4), and corresponding Stamp Schedule 1 dwelling substitutions/paragraph 2B. Stamp higher duty requires relevant property under Article 1. LTT paragraph 5 separately tests dwelling/main-residence use and trading stock. Main residence can be outside Jersey. Establish the branch before selecting a column.
 
-| V range | Standard base | Standard per GBP 100 or part above lower bound | Higher 2026 base | Higher 2026 per GBP 100 or part |
-|---|---:|---:|---:|---:|
-| Up to 50,000 | 0 | 0.50, minimum variable 10 | 0 | 2.50, minimum variable 10 |
-| Over 50,000 to 300,000 | 250 | 1.50 | 1,250 | 3.50 |
-| Over 300,000 to 500,000 | 4,000 | 2.00 | 10,000 | 4.00 |
-| Over 500,000 to 700,000 | 8,000 | 3.00 | 18,000 | 5.00 |
-| Over 700,000 to 1,000,000 | 14,000 | 3.50 | 28,000 | 5.50 |
-| Over 1,000,000 to 1,500,000 | 24,500 | 4.50 | 44,500 | 6.50 |
-| Over 1,500,000 to 2,000,000 | 47,000 | 5.50 | 77,000 | 7.50 |
-| Over 2,000,000 to 3,000,000 | 74,500 | 7.50 | 114,500 | 9.50 |
-| Over 3,000,000 to 6,000,000 | 149,500 | 10.00 | 209,500 | 12.00 |
-| Over 6,000,000 | 449,500 | 11.00 | 569,500 | 13.00 |
+| V range | Standard base | Standard per GBP 100 or part above lower bound | Higher 2026 base | Higher 2026 per GBP 100 or part | Source |
+|---|---:|---:|---:|---:|---|
+| Up to 50,000 | 0 | 0.50, minimum variable 10 | 0 | 2.50, minimum variable 10 | [LTT Law, Schedule](https://www.jerseylaw.je/laws/current/l_10_2009) |
+| Over 50,000 to 300,000 | 250 | 1.50 | 1,250 | 3.50 | same |
+| Over 300,000 to 500,000 | 4,000 | 2.00 | 10,000 | 4.00 | same |
+| Over 500,000 to 700,000 | 8,000 | 3.00 | 18,000 | 5.00 | same |
+| Over 700,000 to 1,000,000 | 14,000 | 3.50 | 28,000 | 5.50 | same |
+| Over 1,000,000 to 1,500,000 | 24,500 | 4.50 | 44,500 | 6.50 | same |
+| Over 1,500,000 to 2,000,000 | 47,000 | 5.50 | 77,000 | 7.50 | same |
+| Over 2,000,000 to 3,000,000 | 74,500 | 7.50 | 114,500 | 9.50 | same |
+| Over 3,000,000 to 6,000,000 | 149,500 | 10.00 | 209,500 | 12.00 | same |
+| Over 6,000,000 | 449,500 | 11.00 | 569,500 | 13.00 | same |
 
 Sources: [LTT Schedule paragraphs 2 and 5](https://www.jerseylaw.je/laws/current/l_10_2009); [Stamp Schedule 1 paragraphs 2 and 2B](https://www.jerseylaw.je/laws/current/l_8_1998). The stamp replacement concerns duty payable in 2026; do not project it into 2027.
 
 LTT non-domestic land uses Table A below. Stamp paragraph 2 uses these bands unless its dwelling substitution or another item applies.
 
-| V range | Base at lower bound | Per GBP 100 or part above lower bound |
-|---|---:|---:|
-| Up to 50,000 | 0 | 0.50, minimum variable 10 |
-| Over 50,000 to 300,000 | 250 | 1.50 |
-| Over 300,000 to 500,000 | 4,000 | 2.00 |
-| Over 500,000 to 700,000 | 8,000 | 2.50 |
-| Over 700,000 to 1,000,000 | 13,000 | 3.00 |
-| Over 1,000,000 to 1,500,000 | 22,000 | 3.50 |
-| Over 1,500,000 to 2,000,000 | 39,500 | 4.00 |
-| Over 2,000,000 | 59,500 | 5.00 |
+| V range | Base at lower bound | Per GBP 100 or part above lower bound | Source |
+|---|---:|---:|---|
+| Up to 50,000 | 0 | 0.50, minimum variable 10 | [LTT Law, Schedule](https://www.jerseylaw.je/laws/current/l_10_2009) |
+| Over 50,000 to 300,000 | 250 | 1.50 | same |
+| Over 300,000 to 500,000 | 4,000 | 2.00 | same |
+| Over 500,000 to 700,000 | 8,000 | 2.50 | same |
+| Over 700,000 to 1,000,000 | 13,000 | 3.00 | same |
+| Over 1,000,000 to 1,500,000 | 22,000 | 3.50 | same |
+| Over 1,500,000 to 2,000,000 | 39,500 | 4.00 | same |
+| Over 2,000,000 | 59,500 | 5.00 | same |
 
 Sources: [LTT Schedule paragraph 2 Table A](https://www.jerseylaw.je/laws/current/l_10_2009); [Stamp Schedule 1 paragraph 2](https://www.jerseylaw.je/laws/current/l_8_1998). LTT adds GBP 90. Stamp item 13(u) adds GBP 90 **for each document registered**, in addition to applicable item 13 charges. Separate items or considerations can attract separate charges under Stamp Article 2(5)–(6).
 
-## First-buyer relief and borrowing
+## The base
+
+### First-buyer relief and borrowing
 
 LTT Schedule paragraph 4 requires a request, specified Entitled or qualifying spouse/civil-partner status, no previous worldwide accommodation ownership/occupation rights within its expanded definition, consideration not less or not substantially less than gross value, and occupation by the purchaser. Licensed status alone does not satisfy this paragraph. Stamp item 13(b) has its own conditions, including joint-transferee wording for a qualifying spouse/civil partner; item 13(ba) separately covers qualifying off-plan contracts. Check every applicable condition.
 
@@ -102,7 +106,7 @@ Eligible LTT first-buyer value is gross or completed notional gross value under 
 
 Sources: [LTT Schedule paragraphs 3–3B](https://www.jerseylaw.je/laws/current/l_10_2009); [Stamp Schedule 1 items 1 and 13](https://www.jerseylaw.je/laws/current/l_8_1998). Refinance needs the selected provision's same-property, borrower/occupier, sole Jersey residence, status and discharge/replacement conditions. LTT requires prior paragraph 3 tax and extinguishment of old debt; stamp requires prior duty, cancellation/replacement in the Registry and its identity/status conditions. Do not infer relief from 'remortgage'. Inexact tapered monetary rounding remains unverified. Stamp item 13(d)'s special hypothec conditions differ from the low-property-value acknowledgement test and need separate computation.
 
-## Contract leases charged to stamp duty
+### Contract leases charged to stamp duty
 
 Stamp Schedule 1 item 13(l)(1) uses annual rent and possession term including optional extensions. Count a fraction of a year as a full year and cap the period at 21 years. Transfer/extension normally uses current rent; below-market rent requires Greffier agreement. Rent increases and previously taxed extensions have their own rules. These provisions do not settle fractional years under EPTT.
 
@@ -113,7 +117,7 @@ Stamp Schedule 1 item 13(l)(1) uses annual rent and possession term including op
 
 Source: [Stamp item 13(l), modified by paragraph 2B(3)](https://www.jerseylaw.je/laws/current/l_8_1998). Add item 13(u)'s GBP 90 per registered document. Additional consideration, excluding agent's commission and legal fees, is charged separately under 13(l)(2) using the applicable transfer table. Do not omit a premium. Item 13(m) first-buyer lease relief and exceptional lease forms need complete eligibility sources before use.
 
-## EPTT: control, valuation and 2026 computation
+### EPTT: control, valuation and 2026 computation
 
 EPTT Articles 1–6 require a transfer conferring **more than 50%** ownership/control, directly or through specified controlled entities, and beneficial ownership of enveloped Jersey property with market value **exceeding** GBP 500,000 domestic or GBP 700,000 non-domestic. Exactly 50% control and exactly the value threshold do not satisfy those respective tests. Overseas incorporation does not itself exclude an entity. Article 4 can aggregate connected holdings; establish connection under Income Tax Law Article 3A. Do not charge a percentage of property tax merely equal to the share percentage purchased.
 
@@ -128,7 +132,7 @@ Non-lease property uses unencumbered market value at the transaction date. Artic
 
 The higher dwelling test/trading-stock exception is in Article 7(4A); main residence can be outside Jersey. **Drafting qualification:** Article 7(1) still refers generally to column 2 while paragraphs (3)/(4) distinguish standard/higher columns. The explicit 2026 override and specific tables support these dated branches; this guide does not represent the wording as formally corrected. [EPTT Article 7 and Schedules 2/4](https://www.jerseylaw.je/laws/current/l_18_2022); [official guidance](https://www.gov.je/TaxesMoney/PropertyTransactionTaxes/EnvelopedPropertyTransactionTax/pages/epttrates.aspx).
 
-### EPTT contract leases
+#### EPTT contract leases
 
 Article 7(7)–(9) defines market value as annual rental multiplied by the lesser of remaining lease years and 21. Substitute normal market rental where contractual rent is lower. Establish both inputs and remaining term. Examples use whole years and fixed annual rents; stepped/variable rents and fractional remaining years need further authority.
 
@@ -142,19 +146,7 @@ Sources: [EPTT Article 7(7)–(12), Schedule 2 Table C](https://www.jerseylaw.je
 
 **Lease drafting qualifications:** Article 7(4)(a)–(b) refers to annual rental ranges; native Table C labels market value, and paragraphs (7)–(9) expressly capitalise rent. This guide uses those specific valuation provisions/Table C with the discrepancy disclosed. Article 7(12)(a)'s general domestic higher description overlaps specific lease limb (b). The higher 2026 lease example applies limb (b), reproduced in the enacted amendment and official guidance. Do not substitute Schedule 4's non-lease result or silently resolve a disputed application. Return R-JE-PROP-SOURCE for such a case.
 
-## Statements, payment and records
-
-LTT Article 4 requires the occupier or secured party, as applicable, to deliver an electronic statement, prescribed material and payment by the due date: the 28th day following the transaction day. Its declaration concerns truth, completeness and correctness. [LTT Articles 1, 3–4](https://www.jerseylaw.je/laws/current/l_10_2009).
-
-The [LTT Statements Order, Articles 2–3](https://www.jerseylaw.je/laws/current/ro_131_2019) distinguishes occupation and security statements. Record company identity, parties/property, date, property value, tax branch, tax/surcharge/total and declaration; occupation statements also address trust, main residence and trading stock. Security statements identify secured party/shareholder and basic, low-value, remortgage or charitable branch. Receipts can be electronic or paper; replacement costs GBP 50 under Articles 4–5.
-
-EPTT Article 8 requires the acquirer to deliver prescribed statement/material and tax within 28 days after the transaction. Article 9 gives a qualifying Jersey-established/registered/present entity a separate 28-day statement duty, disapplied if an Article 8 statement has been delivered. The [EPTT Statements Order, Articles 2–3](https://www.jerseylaw.je/laws/current/ro_32_2022) specifies entity, transferor, acquirer/connected person, property, market value, parish-use, main-residence/trading-stock, date, tax/surcharge/total and declaration fields; Article 9 uses its prescribed electronic form or Comptroller-provided alternative.
-
-LTT Article 7 and EPTT Article 13 impose a 10% late-payment surcharge in their stated ordinary-payment cases, with discretionary waiver/reduction only under specified conditions. Written applications ordinarily have a 40-day notice-based limit. Each Law's Article 11 has its own 28-day assessment-payment route. Ordinary appeals use LTT Article 17 or EPTT Article 19 and their 40-day notice-based rules, subject to late-admission conditions; LTT Article 8(2) expressly gives no right of appeal against an Article 8(1) remission decision. Six-year records apply within LTT Article 10's and EPTT Article 15's scopes. [LTT Law](https://www.jerseylaw.je/laws/current/l_10_2009); [EPTT Law](https://www.jerseylaw.je/laws/current/l_18_2022).
-
-Stamp Article 8 conditions registration on the Greffier's satisfaction about correct duty paid or to be paid. Article 8A requires main-residence/trading-stock declarations for its enumerated item 13(a), (c), (h), (j), (k) and (l) transactions. Do not infer a universal 28-day stamp deadline or extend that list without authority. [Stamp Articles 8–8A](https://www.jerseylaw.je/laws/current/l_8_1998).
-
-## Probate duty and recovery authority
+### Probate duty and recovery authority
 
 Establish domicile, personal estate within the applicable scope and statutory **net value**. Stamp Articles 1 and 5 use worldwide personal estate for Jersey domicile and personal estate within the court's jurisdiction for other domicile. Net value is the statutory market-value measure less specified charges/taxes, not an unsupported deduction of every debt. Article 5(3) permits an overpayment corrective affidavit within six months after true net value is ascertained; refund requires the Greffier’s certificate and its presentation under paragraph (4). Paragraph (5) requires an underpayment corrective affidavit within that six-month period and payment of the difference. Article 8(4) governs sworn value and duty before grant.
 
@@ -177,7 +169,31 @@ Probate Articles 19–19F and 23 separate recovery authority from duty. A holder
 
 Sources: [Probate Articles 19–23](https://www.jerseylaw.je/laws/current/l_16_1998); [Forms/Particular Holders Order Articles 2–4](https://www.jerseylaw.je/laws/current/ro_90_2023); [Courts summary](https://www.courts.je/judicial-greffe/probate-and-protection/probate-registry/exemptions-under-the-probate-law/). Route disputes and succession/distribution questions to a qualified Jersey reviewer. Prepare redacted references to checks/forms; do not collect or submit identity documents, bank details, declarations, payments or estate releases.
 
-## Hypothetical worked positions
+## Deadlines and filing
+
+### Statements, payment and records
+
+LTT Article 4 requires the occupier or secured party, as applicable, to deliver an electronic statement, prescribed material and payment by the due date: the 28th day following the transaction day. Its declaration concerns truth, completeness and correctness. [LTT Articles 1, 3–4](https://www.jerseylaw.je/laws/current/l_10_2009).
+
+The [LTT Statements Order, Articles 2–3](https://www.jerseylaw.je/laws/current/ro_131_2019) distinguishes occupation and security statements. Record company identity, parties/property, date, property value, tax branch, tax/surcharge/total and declaration; occupation statements also address trust, main residence and trading stock. Security statements identify secured party/shareholder and basic, low-value, remortgage or charitable branch. Receipts can be electronic or paper; replacement costs GBP 50 under Articles 4–5.
+
+EPTT Article 8 requires the acquirer to deliver prescribed statement/material and tax within 28 days after the transaction. Article 9 gives a qualifying Jersey-established/registered/present entity a separate 28-day statement duty, disapplied if an Article 8 statement has been delivered. The [EPTT Statements Order, Articles 2–3](https://www.jerseylaw.je/laws/current/ro_32_2022) specifies entity, transferor, acquirer/connected person, property, market value, parish-use, main-residence/trading-stock, date, tax/surcharge/total and declaration fields; Article 9 uses its prescribed electronic form or Comptroller-provided alternative.
+
+LTT Article 7 and EPTT Article 13 impose a 10% late-payment surcharge in their stated ordinary-payment cases, with discretionary waiver/reduction only under specified conditions. Written applications ordinarily have a 40-day notice-based limit. Each Law's Article 11 has its own 28-day assessment-payment route. Ordinary appeals use LTT Article 17 or EPTT Article 19 and their 40-day notice-based rules, subject to late-admission conditions; LTT Article 8(2) expressly gives no right of appeal against an Article 8(1) remission decision. Six-year records apply within LTT Article 10's and EPTT Article 15's scopes. [LTT Law](https://www.jerseylaw.je/laws/current/l_10_2009); [EPTT Law](https://www.jerseylaw.je/laws/current/l_18_2022).
+
+Stamp Article 8 conditions registration on the Greffier's satisfaction about correct duty paid or to be paid. Article 8A requires main-residence/trading-stock declarations for its enumerated item 13(a), (c), (h), (j), (k) and (l) transactions. Do not infer a universal 28-day stamp deadline or extend that list without authority. [Stamp Articles 8–8A](https://www.jerseylaw.je/laws/current/l_8_1998).
+
+## Penalties and interest
+
+LTT Article 7 and EPTT Article 13 impose a 10% late-payment surcharge in their stated ordinary-payment cases, with discretionary waiver or reduction only under specified conditions; written applications ordinarily have a 40-day notice-based limit (see "Statements, payment and records"). Stamp duty is a condition of registration (Article 8), not a surcharge regime.
+
+## Cross-border points
+
+The higher dwelling test looks at main residence, which can be outside Jersey (LTT paragraph 5; EPTT Article 7(4A)). Probate duty uses worldwide personal estate for a Jersey-domiciled deceased and personal estate within the court's jurisdiction otherwise (Stamp Articles 1 and 5); the Article 19A release branches differ by domicile. Jersey has no capital gains tax unless the activity is trading (see "Scope and period"); complete foreign-domicile succession procedures are out of scope.
+
+## Two worked examples that recompute
+
+### Hypothetical worked positions
 
 Each position assumes a 2026 transaction/duty date, established applicable sources and stated eligibility facts, with no other relief, consideration or chargeable document unless stated. All amounts are GBP. These are synthetic positions, not client cases or engagement approvals.
 
@@ -202,7 +218,45 @@ Each position assumes a 2026 transaction/duty date, established applicable sourc
 
 Positions follow the cited LTT/Stamp provisions, EPTT Article 7/Schedules 2 and 4, and Stamp Schedule 3 item 9. An independent integer-pence Rust fixture checks these calculations, band boundaries and lease increments. It does not execute a portal, consumer model or financial workbook.
 
-## Intake, defaults and refusals
+**Check: LTT occupation-share purchase at GBP 650,000, main residence and higher branch.** Units above the GBP 500,000 lower bound: (650,000 - 500,000) / 100 = 1,500.
+
+```oa-check
+name: Jersey 2026 LTT, dwelling GBP 650,000, standard and temporary higher 2026 bands
+inputs:
+  v: 650000
+  lower: 500000
+steps:
+  - units: ceil((v - lower) / 100)
+  - standard: 90 + 8000 + units * 3.00
+  - higher: 90 + 18000 + units * 5.00
+expected:
+  units: 1500
+  standard: 12590
+  higher: 25590
+```
+
+**Check: EPTT GBP 50 excess uses a whole GBP 100 unit, and probate duty just above GBP 100,000.**
+
+```oa-check
+name: Jersey 2026 EPTT domestic GBP 650,050 and probate item 9 on net estate GBP 100,000.01
+inputs:
+  v: 650050
+  estate: 100000.01
+steps:
+  - eptt_units: ceil((v - 500000) / 100)
+  - eptt: 90 + 8000 + eptt_units * 3.00
+  - probate_units: ceil((estate - 100000) / 10000)
+  - probate_professional: 500 + probate_units * 75 + 107
+expected:
+  eptt_units: 1501
+  eptt: 12593
+  probate_units: 1
+  probate_professional: 682
+```
+
+## Ask the client first
+
+### Intake, defaults and refusals
 
 Add date, legal instrument, title/share/trust chain, before/after control and connected holdings, consideration, independent gross/unencumbered value, parish listing/dwelling evidence, main residence/trading stock, relief request/status/history, loan document/unpaid balance/discharge evidence, lease rent/market rent/term/options/premium, and estate domicile/statutory net-value/recovery-authority evidence to base intake. Collect redacted references; keep real identity documents and bank details outside this workflow. Ask only for facts needed by the branch, following the base's question form and pacing.
 
@@ -224,36 +278,30 @@ Use these exact messages and record code/affected position in the base refusal t
 
 Reviewer attention policy: flag every proposed amount above GBP 0 and every nil/exempt position, relief, valuation/classification judgment, source qualification or missed deadline, regardless of cash amount. This is preparation policy, not statutory materiality. Unknown amounts are not zero.
 
-## Outputs
+### Outputs
 
 Produce every output required by workflow-base. Extend its working paper/reviewer brief with transaction ID, period/source date, chargeable item, liable person, valuation evidence, classification, control/connection, selected table/lower bound, statutory unit count, base, variable/fixed components, other documents/fees, relief evidence, due/service dates, refusal status and source pinpoints. Put withheld components and missing evidence in the action list/review checklist. A component example must not become an all-costs total.
 
-## Review Checklist Items
+### Review Checklist Items
 
 Check scope/exclusions; applicable date and temporary 2026 provision; every eligibility condition; gross/net/unencumbered value; GBP 100 or GBP 10,000 **or part** increments; fixed fees per document; lease cap and the correct statute's term rule; connected allocation; separate authority/tax duties; statement/payment dates and records; and every source hold/refusal. Reconcile to source documents and base outputs. Tests and model consultation do not confer professional review.
 
-## Remaining coverage and revision
-
-Annual parish rates are addressed separately in je-parish-rates, within its stated limits. Complete trading/development/property-income/GST interactions, all specialist conveyance/lease/charity/group/trust reliefs, contentious valuation, complete succession/foreign-domicile procedures, portal behaviour and actual consumer/workbook execution remain unverified. These gaps keep the country pack partial. LTT group relief has combined ownership/control and profit-right conditions; ordinary company connection does not establish it.
+## Sources
 
 Version 1.2, 16 October 2026: linked the separate annual parish-rates companion without changing transaction/probate calculations. Version 1.1, 16 October 2026: expanded transfer bands, borrowing distinctions, stamp/EPTT leases, statements and probate; added hypothetical arithmetic, source qualifications and companion controls. Version 1.0, 11 October 2026: initial boundaries and selected LTT examples. Source register: references.md; dated verification record: docs/verification-log/2026-10-16-jersey-property-transactions.md in the repository. Tier 2 and pending professional review.
 
-<!-- openaccountants-cta-block -->
+The primary source library, with inspected periods and provisions, is the table under "Scope and period".
 
----
+| Source | URL | Read on |
+|---|---|---|
+| Taxation (Land Transactions) (Jersey) Law 2009, Arts. 1 to 20 and Schedule: read for LTT bands, reliefs, security, statements and surcharge | https://www.jerseylaw.je/laws/current/l_10_2009 | 2026-10-15 |
+| Stamp Duties and Fees (Jersey) Law 1998, Arts. 1 to 13, Sch. 1 paras. 2 to 2B, items 1 and 13, Sch. 3 items 7 and 9: read for stamp and probate duty | https://www.jerseylaw.je/laws/current/l_8_1998 | 2026-10-15 |
+| Taxation (Enveloped Property Transactions) (Jersey) Law 2022, operative provisions and schedules: read for EPTT scope, valuation and tables | https://www.jerseylaw.je/laws/current/l_18_2022 | 2026-10-15 |
+| LTT Statements and Receipts Order 2019, Arts. 2 to 3: read for statement contents | https://www.jerseylaw.je/laws/current/ro_131_2019 | 2026-10-15 |
+| EPTT Statements Order 2022, Arts. 2 to 3: read for statement contents | https://www.jerseylaw.je/laws/current/ro_32_2022 | 2026-10-15 |
+| Probate (Jersey) Law 1998, Arts. 1, 6, 19 to 24: read for recovery authority and exceptions | https://www.jerseylaw.je/laws/current/l_16_1998 | 2026-10-15 |
+| Probate Forms and Particular Holders Order 2023, Arts. 2 to 4: read for particular holders and forms | https://www.jerseylaw.je/laws/current/ro_90_2023 | 2026-10-15 |
+| Revenue Jersey, Calculating your land transaction tax: read for the standard and higher bands, GBP 90 and first-buyer relief (re-read 14 November 2026, figures matched) | https://www.gov.je/TaxesMoney/PropertyTransactionTaxes/LandTransaction/Pages/LandTransactionTaxRates.aspx | 2026-11-14 |
+| Revenue Jersey, Calculating enveloped property transaction tax: read for EPTT rates | https://www.gov.je/TaxesMoney/PropertyTransactionTaxes/EnvelopedPropertyTransactionTax/pages/epttrates.aspx | 2026-10-15 |
 
-## Talk to a verified accountant
-
-This guide is maintained in the
-[ryanduguid/openaccountants fork](https://github.com/ryanduguid/openaccountants).
-Check its quality tier, recorded review status and cited sources before use.
-Choose a practitioner whose credentials and engagement scope you have verified.
-The links below are optional upstream services; they do not publish or verify
-this fork's changes.
-
-- Upstream connection service: https://www.openaccountants.com/connect
-- Upstream accountant network: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
+Not yet confirmed: Annual parish rates are addressed separately in je-parish-rates, within its stated limits. Complete trading/development/property-income/GST interactions, all specialist conveyance/lease/charity/group/trust reliefs, contentious valuation, complete succession/foreign-domicile procedures, portal behaviour and actual consumer/workbook execution remain unverified. These gaps keep the country pack partial. LTT group relief has combined ownership/control and profit-right conditions; ordinary company connection does not establish it.
