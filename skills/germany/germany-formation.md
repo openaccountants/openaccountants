@@ -567,9 +567,20 @@ Every address below was opened again on the read date shown; the figures quoted 
 
 | Source | URL | Read on |
 | --- | --- | --- |
+| Read for § 5 GmbHG, Stammkapital; Geschäftsanteil, and the figures quoted from it | https://www.gesetze-im-internet.de/gmbhg/__5.html | 2026-11-14 |
+| Read for § 2 GmbHG, Form des Gesellschaftsvertrags, and the figures quoted from it | https://www.gesetze-im-internet.de/gmbhg/__2.html | 2026-11-14 |
+| Read for § 16a BEURKG, Zulässigkeit, and the figures quoted from it | https://www.gesetze-im-internet.de/beurkg/__16a.html | 2026-11-14 |
+| Read for § 7 GmbHG, Anmeldung der Gesellschaft, and the figures quoted from it | https://www.gesetze-im-internet.de/gmbhg/__7.html | 2026-11-14 |
+| Read for anlage HREGGEBV, and the figures quoted from it | https://www.gesetze-im-internet.de/hreggebv/anlage.html | 2026-11-14 |
+| Read for § 11 GmbHG, Rechtszustand vor der Eintragung, and the figures quoted from it | https://www.gesetze-im-internet.de/gmbhg/__11.html | 2026-11-14 |
+| Read for § 14 GewO, Anzeigepflicht; Verordnungsermächtigung, and the figures quoted from it | https://www.gesetze-im-internet.de/gewo/__14.html | 2026-11-14 |
+| Read for ELSTER - Fragebogen zur steuerlichen Erfassung: Gründung einer Kapitalgesellschaft beziehungsweise G, the passages cited in this skill | https://www.elster.de/eportal/formulare-leistungen/alleformulare/fsekapg | 2026-11-14 |
+| Read for § 20 GwG, Transparenzpflichten im Hinblick auf bestimmte Vereinigungen, and the figures quoted from it | https://www.gesetze-im-internet.de/gwg_2017/__20.html | 2026-11-14 |
+| Read for § 192 SGB_7, Mitteilungs- und Auskunftspflichten von, and the figures quoted from it | https://www.gesetze-im-internet.de/sgb_7/__192.html | 2026-11-14 |
+| Read for § 325 HGB, Offenlegung, and the figures quoted from it | https://www.gesetze-im-internet.de/hgb/__325.html | 2026-11-14 |
 | Read for § 3 HDLREGVFG, (1), and the figures quoted from it | https://www.gesetze-im-internet.de/hdlregvfg/__3.html | 2026-11-14 |
 | Read for Registerportal / Startseite, the passages cited in this skill | https://www.handelsregister.de/rp_web/welcome.xhtml | 2026-11-14 |
-| Read for § 5 GmbHG, Stammkapital; Geschäftsanteil, and the figures quoted from it | https://www.gesetze-im-internet.de/gmbhg/__5.html | 2026-11-14 |
+| Read for Existenzgründungsportal - Gesellschaft mit beschränkter Haftung (GmbH), the passages cited in this skill | https://www.existenzgruendungsportal.de/_noch_neu_einordnen/DE/Gruendung-vorbereiten/Rechtsformen/Gesellschaft-mit-beschraenkter-Haftung-GmbH/inhalt.html | 2026-11-14 |
 | Read for BZSt - Wirtschafts-Identifikationsnummer, the passages cited in this skill | https://www.bzst.de/DE/Unternehmen/Identifikationsnummern/Wirtschafts-Identifikationsnummer/wirtschaftsidentifikationsnummer_node.html | 2026-11-14 |
 | Read for § 23 KStG, Steuersatz, and the figures quoted from it | https://www.gesetze-im-internet.de/kstg_1977/__23.html | 2026-11-14 |
 | Read for § 4 SolzG, Zuschlagsatz, and the figures quoted from it | https://www.gesetze-im-internet.de/solzg_1995/__4.html | 2026-11-14 |
@@ -581,30 +592,27 @@ Every address below was opened again on the read date shown; the figures quoted 
 | Read for § 705 BGB, Rechtsnatur der Gesellschaft, and the figures quoted from it | https://www.gesetze-im-internet.de/bgb/__705.html | 2026-11-14 |
 | Read for § 1 AktG, Wesen der Aktiengesellschaft, and the figures quoted from it | https://www.gesetze-im-internet.de/aktg/__1.html | 2026-11-14 |
 | Read for § 1 DRITTELBG, Erfasste Unternehmen, and the figures quoted from it | https://www.gesetze-im-internet.de/drittelbg/__1.html | 2026-11-14 |
+| Read for Existenzgründungsportal - UG (haftungsbeschränkt), the passages cited in this skill | https://www.existenzgruendungsportal.de/_noch_neu_einordnen/DE/Gruendung-vorbereiten/Rechtsformen/UG-haftungsbeschraenkt/inhalt | 2026-11-14 |
 | Read for § 107 HGB, Kleingewerbliche, vermögensverwaltende oder freiberufliche Gesellschaft; Statuswechsel, and the figures quoted from it | https://www.gesetze-im-internet.de/hgb/__107.html | 2026-11-14 |
 | Read for § 1 PartGG, and the figures quoted from it | https://www.gesetze-im-internet.de/partgg/__1.html | 2026-11-14 |
 | Read for § 8 PartGG, Haftung für Verbindlichkeiten der Partnerschaft, and the figures quoted from it | https://www.gesetze-im-internet.de/partgg/__8.html | 2026-11-14 |
 | Read for § 3 GmbHG, Inhalt des Gesellschaftsvertrags, and the figures quoted from it | https://www.gesetze-im-internet.de/gmbhg/__3.html | 2026-11-14 |
 | Read for § 4 GmbHG, Firma, and the figures quoted from it | https://www.gesetze-im-internet.de/gmbhg/__4.html | 2026-11-14 |
-| Read for § 2 GmbHG, Form des Gesellschaftsvertrags, and the figures quoted from it | https://www.gesetze-im-internet.de/gmbhg/__2.html | 2026-11-14 |
 | Read for gesetze-im-internet.de document j3364 0010, the passages cited in this skill | https://www.gesetze-im-internet.de/normengrafiken/bgbl1_2021/j3364_0010.pdf | 2026-11-14 |
 | Read for anlage_2 GmbHG, and the figures quoted from it | https://www.gesetze-im-internet.de/gmbhg/anlage_2.html | 2026-11-14 |
-| Read for § 16a BEURKG, Zulässigkeit, and the figures quoted from it | https://www.gesetze-im-internet.de/beurkg/__16a.html | 2026-11-14 |
 | Read for § 16c BEURKG, and the figures quoted from it | https://www.gesetze-im-internet.de/beurkg/__16c.html | 2026-11-14 |
 | Read for § 6 GmbHG, Geschäftsführer, and the figures quoted from it | https://www.gesetze-im-internet.de/gmbhg/__6.html | 2026-11-14 |
 | Read for § 12 HGB, Anmeldungen zur Eintragung und Einreichungen, and the figures quoted from it | https://www.gesetze-im-internet.de/hgb/__12.html | 2026-11-14 |
-| Read for § 7 GmbHG, Anmeldung der Gesellschaft, and the figures quoted from it | https://www.gesetze-im-internet.de/gmbhg/__7.html | 2026-11-14 |
 | Read for § 5a GmbHG, Unternehmergesellschaft, and the figures quoted from it | https://www.gesetze-im-internet.de/gmbhg/__5a.html | 2026-11-14 |
 | Read for § 8 GmbHG, Inhalt der Anmeldung, and the figures quoted from it | https://www.gesetze-im-internet.de/gmbhg/__8.html | 2026-11-14 |
 | Read for § 19 GmbHG, Leistung der Einlagen, and the figures quoted from it | https://www.gesetze-im-internet.de/gmbhg/__19.html | 2026-11-14 |
-| Read for § 11 GmbHG, Rechtszustand vor der Eintragung, and the figures quoted from it | https://www.gesetze-im-internet.de/gmbhg/__11.html | 2026-11-14 |
-| Read for anlage HREGGEBV, and the figures quoted from it | https://www.gesetze-im-internet.de/hreggebv/anlage.html | 2026-11-14 |
-| Read for § 14 GewO, Anzeigepflicht; Verordnungsermächtigung, and the figures quoted from it | https://www.gesetze-im-internet.de/gewo/__14.html | 2026-11-14 |
+| Read for Existenzgründungsportal - Handelsregister, the passages cited in this skill | https://www.existenzgruendungsportal.de/_noch_neu_einordnen/DE/Gruendung-vorbereiten/Gruendungswissen/Behoerden/Handelsregister/inhalt | 2026-11-14 |
 | Read for § 6 GewO, Anwendungsbereich, and the figures quoted from it | https://www.gesetze-im-internet.de/gewo/__6.html | 2026-11-14 |
+| Read for Existenzgründungsportal - Unternehmensanmeldung, the passages cited in this skill | https://www.existenzgruendungsportal.de/Navigation/DE/So-gehts/Unternehmensanmeldung/unternehmensanmeldung | 2026-11-14 |
+| Read for Existenzgründungsportal - Behörden, the passages cited in this skill | https://www.existenzgruendungsportal.de/Navigation/DE/Gruendungswissen/Behoerden/behoerden | 2026-11-14 |
 | Read for § 138 AO, Anzeigen über die Erwerbstätigkeit, and the figures quoted from it | https://www.gesetze-im-internet.de/ao_1977/__138.html | 2026-11-14 |
 | Read for § 146 GewO, Verletzung sonstiger Vorschriften über die Ausübung eines Gewerbes, and the figures quoted from it | https://www.gesetze-im-internet.de/gewo/__146.html | 2026-11-14 |
 | Read for § 137 AO, Steuerliche Erfassung von Körperschaften, Vereinigungen und Vermögensmassen, and the figures quoted from it | https://www.gesetze-im-internet.de/ao_1977/__137.html | 2026-11-14 |
-| Read for ELSTER - Fragebogen zur steuerlichen Erfassung: Gründung einer Kapitalgesellschaft beziehungsweise G, the passages cited in this skill | https://www.elster.de/eportal/formulare-leistungen/alleformulare/fsekapg | 2026-11-14 |
 | Read for § 14 UStG, Ausstellung von Rechnungen, and the figures quoted from it | https://www.gesetze-im-internet.de/ustg_1980/__14.html | 2026-11-14 |
 | Read for § 33 UStDV, Rechnungen über Kleinbeträge, and the figures quoted from it | https://www.gesetze-im-internet.de/ustdv_1980/__33.html | 2026-11-14 |
 | Read for § 139c AO, Wirtschafts-Identifikationsnummer, and the figures quoted from it | https://www.gesetze-im-internet.de/ao_1977/__139c.html | 2026-11-14 |
@@ -613,11 +621,9 @@ Every address below was opened again on the read date shown; the figures quoted 
 | Read for § 19 UStG, Besteuerung der Kleinunternehmer, and the figures quoted from it | https://www.gesetze-im-internet.de/ustg_1980/__19.html | 2026-11-14 |
 | Read for bundesfinanzministerium.de document 2026 09 01 anlage EUER 2026, the passages cited in this skill | https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2026-09-01-anlage-EUER-2026.pdf?__blob=publicationFile&v=2 | 2026-11-14 |
 | Read for § 18 UStG, Besteuerungsverfahren, and the figures quoted from it | https://www.gesetze-im-internet.de/ustg_1980/__18.html | 2026-11-14 |
-| Read for § 20 GwG, Transparenzpflichten im Hinblick auf bestimmte Vereinigungen, and the figures quoted from it | https://www.gesetze-im-internet.de/gwg_2017/__20.html | 2026-11-14 |
 | Read for § 59 GwG, Übergangsregelung, and the figures quoted from it | https://www.gesetze-im-internet.de/gwg_2017/__59.html | 2026-11-14 |
 | Read for § 3 GwG, Wirtschaftlich Berechtigter, and the figures quoted from it | https://www.gesetze-im-internet.de/gwg_2017/__3.html | 2026-11-14 |
 | Read for § 2 IHKG, (1), and the figures quoted from it | https://www.gesetze-im-internet.de/ihkg/__2.html | 2026-11-14 |
-| Read for § 192 SGB_7, Mitteilungs- und Auskunftspflichten von, and the figures quoted from it | https://www.gesetze-im-internet.de/sgb_7/__192.html | 2026-11-14 |
 | Read for Unternehmen: Betriebsnummern Service / Bundesagentur für Arbeit, the passages cited in this skill | https://www.arbeitsagentur.de/unternehmen/betriebsnummern-service/alles-wichtige | 2026-11-14 |
 | Read for § 3 IHKG, (1), and the figures quoted from it | https://www.gesetze-im-internet.de/ihkg/__3.html | 2026-11-14 |
 | Read for § 33a AktG, Sachgründung ohne externe Gründungsprüfung, and the figures quoted from it | https://www.gesetze-im-internet.de/aktg/__33a.html | 2026-11-14 |
@@ -637,12 +643,12 @@ Every address below was opened again on the read date shown; the figures quoted 
 | Read for anlage_2 GNotKG, and the figures quoted from it | https://www.gesetze-im-internet.de/gnotkg/anlage_2.html | 2026-11-14 |
 | Read for § 125 GNotKG, and the figures quoted from it | https://www.gesetze-im-internet.de/gnotkg/__125.html | 2026-11-14 |
 | Read for § 126 GNotKG, Öffentlich-rechtlicher Vertrag, and the figures quoted from it | https://www.gesetze-im-internet.de/gnotkg/__126.html | 2026-11-14 |
+| Read for DGUV Unternehmen, the passages cited in this skill | https://www.dguv.de/de/ihr_partner/unternehmen/index.jsp | could not be read on 2026-11-14 (last read 2026-10-31) |
 | Read for Unternehmensregister - Die zentrale Plattform zu Unternehmensdaten, the passages cited in this skill | https://www.unternehmensregister.de/de | 2026-11-14 |
 | Read for Bundesfinanzministerium - Fragen und Antworten zur Einführung der obligatorischen (verpflichtenden), the passages cited in this skill | https://www.bundesfinanzministerium.de/Content/DE/FAQ/e-rechnung.html | 2026-11-14 |
 | Read for § 27 UStG, Allgemeine Übergangsvorschriften, and the figures quoted from it | https://www.gesetze-im-internet.de/ustg_1980/__27.html | 2026-11-14 |
 | Read for § 264 HGB, Pflicht zur Aufstellung; Befreiung, and the figures quoted from it | https://www.gesetze-im-internet.de/hgb/__264.html | 2026-11-14 |
 | Read for § 42a GmbHG, Vorlage des Jahresabschlusses und des Lageberichts, and the figures quoted from it | https://www.gesetze-im-internet.de/gmbhg/__42a.html | 2026-11-14 |
-| Read for § 325 HGB, Offenlegung, and the figures quoted from it | https://www.gesetze-im-internet.de/hgb/__325.html | 2026-11-14 |
 | Read for § 149 AO, Abgabe der Steuererklärungen, and the figures quoted from it | https://www.gesetze-im-internet.de/ao_1977/__149.html | 2026-11-14 |
 | Read for § 40 GmbHG, Liste der Gesellschafter, Verordnungsermächtigung, and the figures quoted from it | https://www.gesetze-im-internet.de/gmbhg/__40.html | 2026-11-14 |
 | Read for § 35a GmbHG, Angaben auf Geschäftsbriefen, and the figures quoted from it | https://www.gesetze-im-internet.de/gmbhg/__35a.html | 2026-11-14 |
