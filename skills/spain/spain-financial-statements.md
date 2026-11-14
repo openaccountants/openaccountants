@@ -352,13 +352,12 @@ The memoria completes, expands and comments on the other documents (article 259 
 
 **The fine for filing late (article 283 of the Ley de Sociedades de Capital)**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.boe.es/buscar/act.php?id=BOE-A-2010-10544 |
-| Fine on the company, lower end of the range | EUR 1,200 | "una multa por importe de 1.200 a 60.000 euros por el Instituto de Contabilidad y Auditoría de Cuentas" |
-| Fine on the company, upper end of the range | EUR 60,000 | "una multa por importe de 1.200 a 60.000 euros por el Instituto de Contabilidad y Auditoría de Cuentas" |
-| Annual turnover of the company or group above which the ceiling rises | EUR 6,000,000 | "Cuando la sociedad o, en su caso, el grupo de sociedades tenga un volumen de facturación anual superior a 6.000.000 euros" |
-| The raised ceiling, for each year of delay | EUR 300,000 | "el límite de la multa para cada año de retraso se elevará a 300.000 euros" |
+| What | Value | Note | Source |
+| --- | --- | --- |---|
+| Fine on the company, lower end of the range | EUR 1,200 | "una multa por importe de 1.200 a 60.000 euros por el Instituto de Contabilidad y Auditoría de Cuentas" | https://www.boe.es/buscar/act.php?id=BOE-A-2010-10544 |
+| Fine on the company, upper end of the range | EUR 60,000 | "una multa por importe de 1.200 a 60.000 euros por el Instituto de Contabilidad y Auditoría de Cuentas" | https://www.boe.es/buscar/act.php?id=BOE-A-2010-10544 |
+| Annual turnover of the company or group above which the ceiling rises | EUR 6,000,000 | "Cuando la sociedad o, en su caso, el grupo de sociedades tenga un volumen de facturación anual superior a 6.000.000 euros" | https://www.boe.es/buscar/act.php?id=BOE-A-2010-10544 |
+| The raised ceiling, for each year of delay | EUR 300,000 | "el límite de la multa para cada año de retraso se elevará a 300.000 euros" | https://www.boe.es/buscar/act.php?id=BOE-A-2010-10544 |
 
 - **Who is fined.** The company, not the directors, and the fine is imposed by the Instituto de Contabilidad y Auditoría de Cuentas.
 - **How it is sized.** By the company's total assets and its sales figure, both taken from the last year declared to the tax administration. The company must supply those figures; not supplying them counts against it. Where they are not available the fine is set from the share capital, which the registry supplies (article 283.2).
@@ -399,12 +398,11 @@ The first additional provision of Ley 22/2015 says these entities must be audite
 
 **The two limits the Government set by royal decree**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.boe.es/buscar/act.php?id=BOE-A-2021-1351 |
-| Subsidies or aid from public budgets or European Union funds received in one financial year, accumulated, above which the accounts must be audited | EUR 600,000 | "por un importe total acumulado superior a 600.000 euros, estarán obligadas a someter a auditoría las cuentas anuales correspondientes a dicho ejercicio" |
-| Public sector contracts entered into in one financial year, accumulated, above which the accounts must be audited | EUR 600,000 | "de 26 de febrero de 2014, por un importe total acumulado superior a 600.000 euros, y este represente más del 50" |
-| Share of net annual turnover those contracts must ALSO exceed | 50% | "superior a 600.000 euros, y este represente más del 50 % del importe neto de su cifra anual de negocios" |
+| What | Value | Note | Source |
+| --- | --- | --- |---|
+| Subsidies or aid from public budgets or European Union funds received in one financial year, accumulated, above which the accounts must be audited | EUR 600,000 | "por un importe total acumulado superior a 600.000 euros, estarán obligadas a someter a auditoría las cuentas anuales correspondientes a dicho ejercicio" | https://www.boe.es/buscar/act.php?id=BOE-A-2021-1351 |
+| Public sector contracts entered into in one financial year, accumulated, above which the accounts must be audited | EUR 600,000 | "de 26 de febrero de 2014, por un importe total acumulado superior a 600.000 euros, y este represente más del 50" | https://www.boe.es/buscar/act.php?id=BOE-A-2021-1351 |
+| Share of net annual turnover those contracts must ALSO exceed | 50% | "superior a 600.000 euros, y este represente más del 50 % del importe neto de su cifra anual de negocios" | https://www.boe.es/buscar/act.php?id=BOE-A-2021-1351 |
 
 - **The two contract conditions are cumulative**, the accumulated amount AND the share of turnover. The subsidies condition stands on the amount alone.
 - **The years caught are not the same.** Subsidies pull in the accounts of the year of receipt AND the years in which the assisted operations or investments are carried out. Public contracts pull in the accounts of that financial year AND the following one.
