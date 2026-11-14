@@ -61,7 +61,7 @@ Obtain the importer/exporter and actual owner/representative, origin and destina
 | Relevant selling commission or brokerage incurred by the buyer, not already in the price, excluding a genuine buying commission | A separately identified genuine buying commission is excluded, not added merely because the buyer pays it | [WTO art. 8 and notes to art. 1](https://www.wto.org/english/docs_e/legal_e/20-val_01_e.htm), [interpretative notes](https://www.wto.org/english/docs_e/legal_e/20-val_02_e.htm) |
 | Container costs | Charges for construction / assembly / maintenance after importation | [WTO art. 8 and notes to art. 1](https://www.wto.org/english/docs_e/legal_e/20-val_01_e.htm), [interpretative notes](https://www.wto.org/english/docs_e/legal_e/20-val_02_e.htm) |
 | Packing | Duties and taxes payable in destination | [WTO art. 8 and notes to art. 1](https://www.wto.org/english/docs_e/legal_e/20-val_01_e.htm), [interpretative notes](https://www.wto.org/english/docs_e/legal_e/20-val_02_e.htm) |
-| Assists (free or below-cost goods/services provided by buyer to seller) | Interest paid (if separately identified) | [WTO art. 8 and notes to art. 1](https://www.wto.org/english/docs_e/legal_e/20-val_01_e.htm), [interpretative notes](https://www.wto.org/english/docs_e/legal_e/20-val_02_e.htm) |
+| Qualifying art. 8 assists supplied by the buyer free/below cost, apportioned as appropriate and not already in the price | Separately identified financing interest only where the destination's actual conditions permit | [WTO art. 8 and notes to art. 1](https://www.wto.org/english/docs_e/legal_e/20-val_01_e.htm), [interpretative notes](https://www.wto.org/english/docs_e/legal_e/20-val_02_e.htm) |
 | Royalties / license fees related to imported goods that buyer must pay as condition of sale |  | [WTO art. 8 and notes to art. 1](https://www.wto.org/english/docs_e/legal_e/20-val_01_e.htm), [interpretative notes](https://www.wto.org/english/docs_e/legal_e/20-val_02_e.htm) |
 | Resale proceeds accruing to seller |  | [WTO art. 8 and notes to art. 1](https://www.wto.org/english/docs_e/legal_e/20-val_01_e.htm), [interpretative notes](https://www.wto.org/english/docs_e/legal_e/20-val_02_e.htm) |
 | Transport, loading, handling and insurance only to the extent included by the destination's law, without double counting an invoice-inclusive amount | Separately distinguishable post-import transport where the applicable law permits | [WTO art. 8 and notes to art. 1](https://www.wto.org/english/docs_e/legal_e/20-val_01_e.htm), [interpretative notes](https://www.wto.org/english/docs_e/legal_e/20-val_02_e.htm) |
@@ -276,7 +276,7 @@ This workflow base produces working papers for review by licensed customs practi
 
 The most up-to-date, verified version of this workflow base is maintained at [openaccountants.com](https://openaccountants.com).
 
-## The method, step by step
+## Shipment-document recap
 
 0. **Step 1 : Document the transaction** : Document the transaction
 
