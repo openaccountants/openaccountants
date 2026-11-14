@@ -48,12 +48,12 @@ Built from the law: not yet approved by an accountant. Not tax advice.
 | --- | --- | --- | --- |
 | Standard rate | 18% (tax fraction 9/59) | Any taxable period from 1 January 2024; section 2(1)(ix) | https://www.ird.gov.lk/en/publications/Value%20Added%20Tax_Acts/VAT_Act_No_14%5BE%5D_2002_%28Consolidation_2025%29.pdf |
 | Zero rate | 0% | Direct export of goods and services listed in section 7 | https://www.ird.gov.lk/en/publications/SitePages/tax_chart_2526.aspx |
-| Registration, taxable period test | Taxable supplies in Sri Lanka in the taxable period over Rs. 15,000,000 | From 1 January 2024; section 10 | https://www.ird.gov.lk/en/publications/Value%20Added%20Tax_Acts/VAT_Act_No_14%5BE%5D_2002_%28Consolidation_2025%29.pdf |
-| Registration, 12-month test | Taxable supplies in Sri Lanka in the 12 months then ending over Rs. 60,000,000 | Or reasonable grounds that the next period will exceed Rs. 15,000,000 or the next 12 months Rs. 60,000,000 | same |
+| Registration, taxable period test | Taxable supplies in Sri Lanka in the taxable period over fifteen million rupees | From 1 January 2024; section 10 | https://www.ird.gov.lk/en/publications/Value%20Added%20Tax_Acts/VAT_Act_No_14%5BE%5D_2002_%28Consolidation_2025%29.pdf |
+| Registration, 12-month test | Taxable supplies in Sri Lanka in the 12 months then ending over sixty million rupees | Or reasonable grounds that the next period will exceed fifteen million rupees or the next 12 months sixty million rupees | same |
 | Financial services VAT on value addition | 18% for periods from 1 January 2022 to 30 June 2026; 20.5% from 1 July 2026 | Section 25C(3)(g), (h) | https://www.ird.gov.lk/en/publications/Value%20Added%20Tax_Acts/VAT_Act_No_14-2026_E.PDF |
-| Non-resident digital services: registration | Over Rs. 60,000,000 in the 12 months then ending, or over Rs. 15,000,000 for a quarter | From 1 July 2026; new section 25L | same |
+| Non-resident digital services: registration | Over sixty million rupees in the 12 months then ending, or over fifteen million rupees for a quarter | From 1 July 2026; new section 25L | same |
 | Non-resident digital services charge | Tax under section 2(1)(c) from 1 July 2026 | Not charged where the recipient is a registered person (section 25N) | same |
-| Simplified statement penalty, non-resident supplying registered persons | Up to Rs. 50,000 | Section 25N(4) | same |
+| Simplified statement penalty, non-resident supplying registered persons | Up to fifty thousand rupees | Section 25N(4) | same |
 | Return due | Last day of the month after the taxable period | Electronic; section 21(1)(a)(iii) | https://www.ird.gov.lk/en/publications/Value%20Added%20Tax_Acts/VAT_Act_No_14%5BE%5D_2002_%28Consolidation_2025%29.pdf |
 | Payment due | 20th day of the month after the taxable period | Quarterly filers pay month 1 by the 20th of month 2, month 2 by the 20th of month 3; section 26(1) | same |
 

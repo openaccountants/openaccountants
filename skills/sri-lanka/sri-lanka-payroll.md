@@ -50,24 +50,24 @@ Built from the law: not yet approved by an accountant. APIT figures come from th
 | --- | --- | --- | --- |
 | APIT monthly relief | Rs. 150,000 a month, already built into Table 01 | Annual relief Rs. 1,800,000 | https://www.ird.gov.lk/en/publications/APIT_Tax_Tables/2025-2026/Table%20-%201/02.%20APIT_2526_Table_01_Text.pdf |
 | APIT, monthly regular profits up to Rs. 150,000 | Relief from tax | Table 01 | same |
-| APIT, Rs. 150,001 to Rs. 233,333 | 6% of monthly regular profits less Rs. 9,000 | Table 01 | same |
-| APIT, Rs. 233,334 to Rs. 275,000 | 18% of monthly regular profits less Rs. 37,000 | Table 01 | same |
-| APIT, Rs. 275,001 to Rs. 316,667 | 24% of monthly regular profits less Rs. 53,500 | Table 01 | same |
-| APIT, Rs. 316,668 to Rs. 358,333 | 30% of monthly regular profits less Rs. 72,500 | Table 01 | same |
+| APIT, over Rs. 150,000 to Rs. 233,333 | 6% of monthly regular profits less Rs. 9,000 | Table 01 | same |
+| APIT, over Rs. 233,333 to Rs. 275,000 | 18% of monthly regular profits less Rs. 37,000 | Table 01 | same |
+| APIT, over Rs. 275,000 to Rs. 316,667 | 24% of monthly regular profits less Rs. 53,500 | Table 01 | same |
+| APIT, over Rs. 316,667 to Rs. 358,333 | 30% of monthly regular profits less Rs. 72,500 | Table 01 | same |
 | APIT, over Rs. 358,333 | 36% of monthly regular profits less Rs. 94,000 | Table 01 | same |
 | Annual slabs behind the table | 6% on the first Rs. 1,000,000 of taxable income, then 18%, 24%, 30% on Rs. 500,000 each, 36% on the balance | First Schedule paragraph 1(1D), years from 1 April 2025 | https://www.ird.gov.lk/en/publications/Acts_Income%20Tax_2017/IRA_Cons_Act_-_2025_Changes.pdf |
 | EPF, employee | 8% of total monthly earnings, deducted from pay | No ceiling stated | https://epf.lk/?page_id=811 |
 | EPF, employer | 12% of total monthly earnings | Paid wholly by the employer | same |
 | EPF, total | 20% of total monthly earnings | | same |
 | ETF, employer only | 3% of total monthly earnings | Must not be deducted from the employee | https://etfb.lk/employers-faq/ |
-| National minimum monthly wage | Rs. 30,000 a month | From 1 January 2026; Rs. 27,000 from 1 April 2025 to 31 December 2025 | https://www.parliament.lk/uploads/acts/gbills/english/6388.pdf |
-| National minimum daily wage | Rs. 1,200 a day | From 1 January 2026; Rs. 1,080 before | same |
+| National minimum monthly wage | thirty thousand rupees a month | From 1 January 2026; twenty-seven thousand rupees from 1 April 2025 to 31 December 2025 | https://www.parliament.lk/uploads/acts/gbills/english/6388.pdf |
+| National minimum daily wage | one thousand two hundred rupees a day | From 1 January 2026; one thousand eighty rupees before | same |
 | APIT remittance | Within 15 days after the end of the month | Section 86(1) | https://www.ird.gov.lk/en/publications/Acts_Income%20Tax_2017/IRA_Cons_Act_-_2025_Changes.pdf |
 | APIT annual statement | Within 30 days after 31 March | Section 86(2) | same |
 | Late payment penalty | 20% of tax due but not paid | Not paid within 14 days of the due date; section 179(1) | same |
-| Late payment interest | 1.5% per month or part month | Sections 157, 159(1) | same |
-| Late filing penalty | Greater of 5% of tax owing plus 1% a month, or Rs. 50,000 plus Rs. 10,000 a month; capped at Rs. 400,000 | Section 178 | same |
-| Statement format non-compliance | Up to Rs. 200,000 a year, after a warning notice | New sections 86(9) and 178A, Act No. 11 of 2026 | https://www.ird.gov.lk/en/publications/Acts_Income%20Tax_2017/IR_Act_No_11-2026_E.pdf |
+| Late payment interest | one and one-half per cent per month or part month | Sections 157, 159(1) | same |
+| Late filing penalty | Greater of 5% of tax owing plus 1% a month, or fifty thousand rupees plus ten thousand rupees a month; capped at four hundred thousand rupees | Section 178 | same |
+| Statement format non-compliance | Up to two hundred thousand rupees a year, after a warning notice | New sections 86(9) and 178A, Act No. 11 of 2026 | https://www.ird.gov.lk/en/publications/Acts_Income%20Tax_2017/IR_Act_No_11-2026_E.pdf |
 | EPF and ETF payment deadline | Last working day of the following month | | https://epf.lk/?page_id=811 |
 | EPF and ETF late surcharge | 5% for up to 10 days; 15% for 11 days to 1 month; 20% for 1 to 3 months; 30% for 3 to 6 months; 40% for 6 to 12 months; 50% over 12 months | Same scale on both FAQ pages | same |
 | EPF incomplete details surcharge | 2% of the total payment | Incomplete Form C or text files | same |

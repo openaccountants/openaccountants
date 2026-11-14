@@ -50,9 +50,9 @@ Built from the law: not yet approved by an accountant. Figures are taken from th
 | --- | --- | --- | --- |
 | Personal relief | Rs. 1,800,000 a year | Each year of assessment from 1 April 2025; residents and non-resident citizens; not against investment-asset gains | https://www.ird.gov.lk/en/Type%20of%20Taxes/SitePages/Income%20Tax.aspx?menuid=1201 |
 | Slab 1: taxable income up to Rs. 1,000,000 | 6% | First Schedule paragraph 1(1D), years from 1 April 2025 | https://www.ird.gov.lk/en/publications/Acts_Income%20Tax_2017/IRA_Cons_Act_-_2025_Changes.pdf |
-| Slab 2: Rs. 1,000,001 to Rs. 1,500,000 | Rs. 60,000 plus 18% of the excess over Rs. 1,000,000 | Same | same |
-| Slab 3: Rs. 1,500,001 to Rs. 2,000,000 | Rs. 150,000 plus 24% of the excess over Rs. 1,500,000 | Same | same |
-| Slab 4: Rs. 2,000,001 to Rs. 2,500,000 | Rs. 270,000 plus 30% of the excess over Rs. 2,000,000 | Same | same |
+| Slab 2: over Rs. 1,000,000 to Rs. 1,500,000 | Rs. 60,000 plus 18% of the excess over Rs. 1,000,000 | Same | same |
+| Slab 3: over Rs. 1,500,000 to Rs. 2,000,000 | Rs. 150,000 plus 24% of the excess over Rs. 1,500,000 | Same | same |
+| Slab 4: over Rs. 2,000,000 to Rs. 2,500,000 | Rs. 270,000 plus 30% of the excess over Rs. 2,000,000 | Same | same |
 | Slab 5: over Rs. 2,500,000 | Rs. 420,000 plus 36% of the excess over Rs. 2,500,000 | Same | same |
 | Services for use outside Sri Lanka, paid in foreign currency and remitted through a bank | Maximum rate of 15% | Paragraph 1(6)(a), from 1 April 2025 | same |
 | Foreign-source gains and profits in foreign currency remitted through a bank | Maximum rate of 15% | Paragraph 1(6)(b), from 1 April 2025 | same |
@@ -63,10 +63,10 @@ Built from the law: not yet approved by an accountant. Figures are taken from th
 | Terminal benefits (commuted pension, retiring gratuity, approved loss-of-office scheme, ETF payment) | 0% on the first Rs. 10,000,000; 6% on the next Rs. 10,000,000; 12% on the balance | Paragraph 1(2)(b)(iii) and (3), from 1 January 2020 | https://www.ird.gov.lk/en/publications/Acts_Income%20Tax_2017/IRA_Cons_Act_-_2025_Changes.pdf |
 | Rent relief, resident individual's investment asset | 25% of rent income | IRD tax chart list of reliefs | https://www.ird.gov.lk/en/publications/SitePages/tax_chart_2526.aspx |
 | Solar panel relief, resident individual | Rs. 600,000 a year, up to the expenditure | IRD tax chart list of reliefs | same |
-| Late filing penalty | Greater of 5% of tax owing plus 1% a month, or Rs. 50,000 plus Rs. 10,000 a month; capped at Rs. 400,000 | Section 178 | https://www.ird.gov.lk/en/publications/Acts_Income%20Tax_2017/IRA_Cons_Act_-_2025_Changes.pdf |
+| Late filing penalty | Greater of 5% of tax owing plus 1% a month, or fifty thousand rupees plus ten thousand rupees a month; capped at four hundred thousand rupees | Section 178 | https://www.ird.gov.lk/en/publications/Acts_Income%20Tax_2017/IRA_Cons_Act_-_2025_Changes.pdf |
 | Late payment penalty | 20% of tax due but not paid (10% for an instalment) | Not paid within 14 days of the due date; section 179 | same |
-| Late payment interest | 1.5% per month or part month | Sections 157, 159(1) | same |
-| Interest income with no return needed on that ground | Not over Rs. 5,000 for the year | New section 94(1)(d), from 1 April 2025 | https://www.ird.gov.lk/en/publications/Acts_Income%20Tax_2017/IR_Act_No_11-2026_E.pdf |
+| Late payment interest | one and one-half per cent per month or part month | Sections 157, 159(1) | same |
+| Interest income with no return needed on that ground | Not over five thousand rupees for the year | New section 94(1)(d), from 1 April 2025 | https://www.ird.gov.lk/en/publications/Acts_Income%20Tax_2017/IR_Act_No_11-2026_E.pdf |
 
 ### Steps
 

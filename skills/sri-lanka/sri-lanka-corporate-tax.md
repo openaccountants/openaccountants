@@ -53,11 +53,11 @@ Built from the law: not yet approved by an accountant. Produced by OpenAccountan
 | Manufacture and sale or import and sale of liquor or tobacco, other than export | 45% | From 1 April 2025; export of such products is not at 45% | same |
 | Gains from the realisation of investment assets | 30% | From 1 October 2022; paragraph 4(4) | same |
 | Remittance tax on a non-resident person | 14% | Tax chart, remittance tax row; 0% on remittances of retained income invested for three years, per the chart | https://www.ird.gov.lk/en/publications/SitePages/tax_chart_2526.aspx |
-| Late filing penalty | Greater of 5% of tax owing plus 1% a month, or Rs. 50,000 plus Rs. 10,000 a month; capped at Rs. 400,000 | Section 178 | https://www.ird.gov.lk/en/publications/Acts_Income%20Tax_2017/IRA_Cons_Act_-_2025_Changes.pdf |
+| Late filing penalty | Greater of 5% of tax owing plus 1% a month, or fifty thousand rupees plus ten thousand rupees a month; capped at four hundred thousand rupees | Section 178 | https://www.ird.gov.lk/en/publications/Acts_Income%20Tax_2017/IRA_Cons_Act_-_2025_Changes.pdf |
 | Late payment penalty | 20% of tax due but not paid | Not paid within 14 days of the due date; section 179(1) | same |
-| Late payment interest | 1.5% per month or part month | Sections 157 and 159(1) | same |
+| Late payment interest | one and one-half per cent per month or part month | Sections 157 and 159(1) | same |
 | Underpayment from negligence or intent | 25%; 75% if over Rs. 10,000,000 or over 25% of the liability | Section 180 | same |
-| Failure to register | Up to Rs. 50,000 | Section 177; companies must register within 30 days of incorporation (new section 102(1A)) | https://www.ird.gov.lk/en/publications/Acts_Income%20Tax_2017/IR_Act_No_11-2026_E.pdf |
+| Failure to register | Up to fifty thousand rupees | Section 177 (in the consolidated Act: https://www.ird.gov.lk/en/publications/Acts_Income%20Tax_2017/IRA_Cons_Act_-_2025_Changes.pdf); companies must register within 30 days of incorporation (new section 102(1A)) | https://www.ird.gov.lk/en/publications/Acts_Income%20Tax_2017/IR_Act_No_11-2026_E.pdf |
 
 ### Steps
 

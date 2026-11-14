@@ -57,9 +57,9 @@ Built from the law: not yet approved by an accountant. Produced by OpenAccountan
 | Payment of tax withheld | Within 15 days after the end of each calendar month | Section 86(1) | https://www.ird.gov.lk/en/publications/Acts_Income%20Tax_2017/IRA_Cons_Act_-_2025_Changes.pdf |
 | Annual statement | Within 30 days after 31 March | Section 86(2) | same |
 | Late payment penalty | 20% of tax due but not paid | Not paid within 14 days of the due date; section 179(1) | same |
-| Late payment interest | 1.5% per month or part month | Sections 157, 159(1) | same |
-| Statement format non-compliance | Up to Rs. 200,000 a year, after a warning notice not complied with within 14 days | New sections 86(9), 178A(1), (2) | https://www.ird.gov.lk/en/publications/Acts_Income%20Tax_2017/IR_Act_No_11-2026_E.pdf |
-| False self-declaration by an individual (interest) | Up to Rs. 200,000 | New section 178A(3) | same |
+| Late payment interest | one and one-half per cent per month or part month | Sections 157, 159(1) | same |
+| Statement format non-compliance | Up to two hundred thousand rupees a year, after a warning notice not complied with within 14 days | New sections 86(9), 178A(1), (2) | https://www.ird.gov.lk/en/publications/Acts_Income%20Tax_2017/IR_Act_No_11-2026_E.pdf |
+| False self-declaration by an individual (interest) | Up to two hundred thousand rupees | New section 178A(3) | same |
 
 ### Steps
 

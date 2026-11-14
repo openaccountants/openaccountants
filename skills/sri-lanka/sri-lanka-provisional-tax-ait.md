@@ -42,8 +42,8 @@ Built from the law: not yet approved by an accountant. Tax year: year of assessm
 | Item A from 1 April 2026 | Tax payable on taxable income under section 2(1)(a) for the immediately preceding year | Estimated current-year tax instead where there was no taxable income last year or a lower income is expected | https://www.ird.gov.lk/en/publications/Acts_Income%20Tax_2017/IR_Act_No_11-2026_E.pdf |
 | Item C credits | Earlier instalments; tax withheld in the year under Division II from receipts included in income | Section 90(3) item C, paragraph (ba) added for years from 1 April 2026 | same |
 | Late instalment penalty | 10% of the instalment due but not paid | Not paid within 14 days of the due date; section 179(2) | https://www.ird.gov.lk/en/publications/Acts_Income%20Tax_2017/IRA_Cons_Act_-_2025_Changes.pdf |
-| Late payment interest | 1.5% per month or part month, computed monthly | From the due date to the date paid; sections 157 and 159(1) | same |
-| Interest on refunds | 0.5% per month or part month | None if the refund is paid within six months of the claim; sections 158 and 159(2) | same |
+| Late payment interest | one and one-half per cent per month or part month, computed monthly | From the due date to the date paid; sections 157 and 159(1) | same |
+| Interest on refunds | one-half per cent per month or part month | None if the refund is paid within six months of the claim; sections 158 and 159(2) | same |
 
 ### Steps
 

@@ -39,15 +39,15 @@ Built from the law: not yet approved by an accountant. Not tax advice.
 
 | Item | Amount | Conditions | Source |
 | --- | --- | --- | --- |
-| Gross collection levy, from 1 January 2026 | 18% of gross collection | Section 2(1A)(d) inserted by Act No. 25 of 2025 | https://www.ird.gov.lk/en/publications/Acts_Betting%20and%20Gaming%20Levy/BNG_Act_No._25_2025_E.pdf |
-| Gross collection levy, 1 April 2023 to 31 December 2025 | 15% of gross collection | Section 2(1A)(c) as amended by Act No. 25 of 2025 | same |
+| Gross collection levy, from 1 January 2026 | eighteen per centum of gross collection | Section 2(1A)(d) inserted by Act No. 25 of 2025 | https://www.ird.gov.lk/en/publications/Acts_Betting%20and%20Gaming%20Levy/BNG_Act_No._25_2025_E.pdf |
+| Gross collection levy, 1 April 2023 to 31 December 2025 | fifteen per centum of gross collection | Section 2(1A)(c) as amended by Act No. 25 of 2025 | same |
 | Casino entrance levy | USD 100, or the equivalent in another convertible currency or in Sri Lanka currency | From each Sri Lankan citizen entering the place of gaming; section 2(1AA)(b), amount substituted by Act No. 25 of 2025 (was USD 50) | same |
 | Casino entrance levy applies to | Citizens of Sri Lanka only, from 1 April 2023 | Section 2(1AA)(b) as substituted by Act No. 11 of 2023 | https://www.ird.gov.lk/en/publications/Acts_Betting%20and%20Gaming%20Levy/BNG_Act_No._11_2023_E.pdf |
-| Annual levy, bookmaker through an agent or via internet, with or without live telecast | Rs. 5,000,000 a year | Every year from 1 April 2023; Schedule Part I item 8 | same |
-| Annual levy, bookmaker with live telecast | Rs. 1,000,000 a year | Same | https://www.ird.gov.lk/en/Type%20of%20Taxes/SitePages/Betting%20and%20Gaming%20Levy.aspx?menuid=1210 |
-| Annual levy, bookmaker without live telecast | Rs. 75,000 a year | Same | same |
-| Annual levy, business of gaming including rudjino | Rs. 500,000,000 a year | Every year from 1 April 2023 | same |
-| Gross collection levy floor | No levy where gross collection does not exceed Rs. 1,000,000 a month | IRD guidance | same |
+| Annual levy, bookmaker through an agent or via internet, with or without live telecast | Five million rupees a year | Every year from 1 April 2023; Schedule Part I item 8 | same |
+| Annual levy, bookmaker with live telecast | One million rupees a year | Same | https://www.ird.gov.lk/en/Type%20of%20Taxes/SitePages/Betting%20and%20Gaming%20Levy.aspx?menuid=1210 |
+| Annual levy, bookmaker without live telecast | Seventy-five thousand rupees a year | Same | same |
+| Annual levy, business of gaming including rudjino | Five hundred million rupees a year | Every year from 1 April 2023 | same |
+| Gross collection levy floor | No levy where gross collection does not exceed one million rupees per month | IRD guidance | same |
 | Income tax on betting and gaming, and on domestic liquor or tobacco profits | 45% | From 1 April 2025, companies and individuals; exports of liquor or tobacco excluded | https://www.ird.gov.lk/en/publications/Acts_Income%20Tax_2017/IRA_Cons_Act_-_2025_Changes.pdf |
 
 ### Steps
