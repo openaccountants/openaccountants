@@ -50,7 +50,7 @@ Conservative defaults:
 
 | Band | From (USD) | To (USD) | Rate on excess | Over | Plus fixed | Source |
 | --- | --- | --- | --- | --- | --- | --- |
-| I | 0.01 | 550.00 | No retention | | | Ministerio de Hacienda, Decreto Ejecutivo 10: https://transparencia.mh.gob.sv/downloads/pdf/700-DGII-DC-2025-01.pdf |
+| I | 0.01 | 550.00 | No retention | | | Ministerio de Hacienda, Decreto Ejecutivo 10: https://www.mh.gob.sv/wp-content/uploads/2025/05/Modificacion-a-las-tablas-de-retenci%C3%B3n-del-Impuesto-Sobre-la-Renta-Decreto-Ejecutivo-NO.10.pdf |
 | II | 550.01 | 895.24 | 10% | 550.00 | 17.67 | same |
 | III | 895.25 | 2,038.10 | 20% | 895.24 | 60.00 | same |
 | IV | 2,038.11 | and above | 30% | 2,038.10 | 288.57 | same |
@@ -61,7 +61,7 @@ The same decree gives fortnightly (II from USD 275.01, fixed 8.83; III from 447.
 
 | Item | Amount | Condition | Source |
 | --- | --- | --- | --- |
-| Retention on a second job | 10% of the sums paid | The worker tells each employer in January | Ministerio de Hacienda, Decreto Ejecutivo 10: https://transparencia.mh.gob.sv/downloads/pdf/700-DGII-DC-2025-01.pdf |
+| Retention on a second job | 10% of the sums paid | The worker tells each employer in January | Ministerio de Hacienda, Decreto Ejecutivo 10: https://www.mh.gob.sv/wp-content/uploads/2025/05/Modificacion-a-las-tablas-de-retenci%C3%B3n-del-Impuesto-Sobre-la-Renta-Decreto-Ejecutivo-NO.10.pdf |
 | Salary above which the employee must file | USD 60,000 a year | Decreto Ejecutivo 10 and LISR art. 38 | same |
 | Aguinaldo exempt from ISR | Two monthly minimum wages of commerce and services | LISR art. 4.16; excess retained | Asamblea Legislativa, LISR consolidated: https://www.asamblea.gob.sv/sites/default/files/documents/decretos/F326A5D9-F56E-4FCA-81D6-60088ABB52BF.pdf |
 | So, exempt aguinaldo 2026 | USD 817.60 | 2 x USD 408.80, the commerce and services wage below | Organo Ejecutivo, Decreto Ejecutivo 11 (2025), Jurisprudencia: https://www.jurisprudencia.gob.sv/DocumentosBoveda/D/2/2020-2029/2025/05/10A4DA.PDF |
@@ -151,7 +151,7 @@ expected:
 
 | Source | URL | Read on |
 | --- | --- | --- |
-| Read for Decreto Ejecutivo 10 (2025), retention tables (monthly, fortnightly, weekly, recalculation), second job rule, USD 60,000 filing rule, art. 4 in force | https://transparencia.mh.gob.sv/downloads/pdf/700-DGII-DC-2025-01.pdf | 2026-11-14 |
+| Read for Decreto Ejecutivo 10 (2025) (read from the transparencia.mh.gob.sv copy, which now redirects scripts to the portal; this is the Ministerio de Hacienda copy of the same decree, behind a Cloudflare check): retention tables (monthly, fortnightly, weekly, recalculation), second job rule, USD 60,000 filing rule, art. 4 in force | https://www.mh.gob.sv/wp-content/uploads/2025/05/Modificacion-a-las-tablas-de-retenci%C3%B3n-del-Impuesto-Sobre-la-Renta-Decreto-Ejecutivo-NO.10.pdf | 2026-11-14 |
 | Read for the Ministerio de Hacienda notice that the Decreto Ejecutivo 10 tables apply from May 2025 | https://www.mh.gob.sv/wp-content/uploads/2025/05/Modificacion-a-las-tablas-de-retenci%C3%B3n-del-Impuesto-Sobre-la-Renta-Decreto-Ejecutivo-NO.10.pdf | 2026-11-14 |
 | Read for Decreto Ejecutivo 11 (2025), minimum wage table art. 2 and arts. 12, 13, 15 | https://www.jurisprudencia.gob.sv/DocumentosBoveda/D/2/2020-2029/2025/05/10A4DA.PDF | 2026-11-14 |
 | Read for LISR consolidated, arts. 4.16, 29.7 and 38 | https://www.asamblea.gob.sv/sites/default/files/documents/decretos/F326A5D9-F56E-4FCA-81D6-60088ABB52BF.pdf | 2026-11-14 |
