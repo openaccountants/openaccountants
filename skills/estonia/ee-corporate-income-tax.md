@@ -205,7 +205,7 @@ expected:
 | Source | URL | Read on |
 |---|---|---|
 | Tulumaksuseadus (Income Tax Act), consolidated text in force 01.10.2026 to 31.12.2026 (RT 109072026066), §§ 1 to 7, 34, 47^1 to 54^10, 61(68) to (70) | https://www.riigiteataja.ee/akt/TuMS | 2026-10-24 |
-| Income Tax Act, official English translation of the same version | https://www.riigiteataja.ee/en/akt/520102026008 | 2026-10-23 |
+| Read for Reduced 14/86 rate on regular dividends, Withholding when a company passes on to an individual a dividend it received (exempt under § 50(1^1)) whose underlying profit was taxed at 14/86 under former § 50^1, Participation exemption, minimum holding, Credit institution advance tax: Income Tax Act, official English translation of the same version | https://www.riigiteataja.ee/en/akt/520102026008 | 2026-11-14 |
 | Maksukorralduse seadus (Taxation Act), consolidated text in force from 17.10.2026 (RT 116102026009), §§ 115, 117, 153^1, 154 | https://www.riigiteataja.ee/akt/MKS | 2026-10-24 |
 | Karistusseadustik (Penal Code), consolidated text in force 01.10.2026 to 31.12.2026, § 47(1) (fine unit EUR 8 from 1 January 2025) | https://www.riigiteataja.ee/et/akt/109072026028 | 2026-10-24 |
 | Act of 18.06.2025 repealing the Security Tax Act and amending the Income Tax Act (RT I, 08.07.2025, 1), §§ 2 to 4 | https://www.riigiteataja.ee/et/akt/108072025001 | 2026-10-24 |
