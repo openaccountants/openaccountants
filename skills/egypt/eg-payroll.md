@@ -34,7 +34,7 @@ Tax year: calendar 2026 (the annual settlement runs January to December whatever
 | Item | Amount | Tax year | Conditions | Official URL |
 |---|---|---|---|---|
 | Personal exemption | EGP 20,000 a year | 2026 | Each employee; prorated if days worked in a month are under 30 (FAQ q.93). Law 91 art. 13(1) as replaced by Law 7/2024 | https://eta.gov.eg/sites/default/files/2024-03/law_no.7-2024.pdf |
-| Exemption, disabled worker or carer | 150% of the personal exemption (EGP 30,000) | 2026 | Integrated services card from Social Solidarity; treatment code 4 (Law 10/2018 art. 23(1)) | https://eta.gov.eg/sites/default/files/2026-05/faqs-payroll-system-v4.pdf |
+| Exemption, disabled worker or carer | Personal exemption raised by 50% (EGP 30,000, computed: EGP 20,000 plus 50%) | 2026 | Integrated services card from Social Solidarity; treatment code 4 (Law 10/2018 art. 23(1)) | https://eta.gov.eg/sites/default/files/2026-05/faqs-payroll-system-v4.pdf |
 | Annual net income rounding | Down to the nearest EGP 10 | 2026 | Applied before the bands. Law 91 art. 8 | https://eta.gov.eg/sites/default/files/2024-03/law_no.7-2024.pdf |
 | Withholding by a non-original employer | 10% on account | 2026 | Treatment code 2; a payment on account, no longer final (art. 72 bis, Law 30/2023, from January 2024) | https://eta.gov.eg/sites/default/files/2026-05/faqs-payroll-system-v4.pdf |
 | Economic zone treatment | 5% of the annual base | 2026 | Suez Canal zone companies set up before 24 June 2015 whose status still runs; codes 6 and 7 | https://eta.gov.eg/sites/default/files/2026-05/faqs-payroll-system-v4.pdf |
