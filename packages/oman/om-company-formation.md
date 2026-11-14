@@ -1,16 +1,17 @@
 ---
 name: om-company-formation
 description: "Company formation and entity choice for Oman, tax year 2026: entity forms, shareholders, capital minimums, foreign ownership, auditor triggers, tax card and notifications, from the Commercial Companies and Foreign Capital Investment Laws."
-version: 1.2
+version: 1.3
 jurisdiction: OM
 tax_year: 2026
-last_updated: 2026-11-03
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: formation
+type: filing-howto
 ---
 
-# Oman Company Formation & Entity Choice v1.2
+# Oman Company Formation & Entity Choice v1.3
 
 > **General reference only.** This Guide is a draft for AI-assisted reference. Independent review accepts only the documented partial source closeout and its recorded conditions. It has not received accountant attestation. Do not use it to file, pay or take a position without professional review.
 

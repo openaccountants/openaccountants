@@ -1,14 +1,15 @@
 ---
 name: cy-non-dom
 description: "Cyprus non-domicile (non-dom) status for individuals, tax year 2026, under the Special Defence Contribution (SDC) Law 117(I)/2002 as amended by Law 245(I)/2025 from 1 January 2026 and the Income Tax Law 118(I)/2002. Covers the 183-day and 60-day residence rules, domicile of origin and its two exceptions, deemed domicile after 17 of the last 20 years and how long it lasts, the SDC exemption on dividends and interest, the 5%, 17% and 3% SDC rates a domiciled resident pays instead, the new Article 3D option to keep non-dom treatment for EUR 250,000 per five years (two periods at most), GHS (GESY) at 2.65% on dividends and interest, which non-dom status does not remove, forms, deadlines and penalties. Trigger on: Cyprus non-dom, deemed domicile 17 of 20 years, SDC exemption, Cyprus lump sum non-dom, TD 631, T.D.38. Out of scope: cyprus-income-tax, cy-cross-border, cyprus-social-contributions, cy-corporate-tax, cyprus-tax-optimization."
-version: 1.2
+version: 1.3
 jurisdiction: CY
 tax_year: 2026
-last_updated: 2026-10-27
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: cross-border
+type: situation-rules
 ---
 
 # Cyprus non-domicile status and Special Defence Contribution (tax year 2026)

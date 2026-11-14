@@ -1,184 +1,277 @@
 ---
 name: us-charitable-giving-strategies
-description: "US federal charitable giving for individuals for tax year 2026 after the One Big Beautiful Bill Act: the floor for itemizers, the deduction for non-itemizers, bunching gifts against the standard deduction, donor-advised funds, gifts of appreciated stock, qualified charitable distributions from IRAs, carryovers and substantiation."
+description: "Plan and compute a US individual's 2026 federal charitable deduction after the One Big Beautiful Bill Act (Public Law 119-21) - the new non-itemizer deduction of $1,000 ($2,000 joint) for cash gifts, the 0.5% floor for itemizers, the 2/37 itemized deduction reduction that caps the value of a deduction at 35% for top-bracket donors, the section 170 percentage limits, bunching against the standard deduction, donor-advised funds, gifts of appreciated stock, qualified charitable distributions from IRAs ($111,000 for 2026), carryovers and substantiation. Trigger on \"charitable deduction\", \"donor-advised fund\", \"bunching\", \"QCD\", \"donate stock\", \"0.5% floor\", \"non-itemizer charity\". Federal only."
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/us-charitable-giving-strategies"
   jurisdiction: "US"
   tax_year: "2026"
-  last_updated: "2026-10-03"
+  last_updated: "2026-11-13"
 ---
 
-# Charitable giving strategies for individuals in 2026: bunching, donor-advised funds, appreciated stock and IRA gifts
+# Charitable giving for individuals, tax year 2026: the new floor, the non-itemizer deduction, bunching, donor-advised funds, stock and IRA gifts
 
-Figures are for tax year 2026. This Guide is for an individual who gives to charity and wants the largest federal income tax deduction from it, and for that person's adviser: a high earner, a retiree with an IRA, or someone holding shares that have risen in value. It is federal only. It covers the charity rules changed by the One Big Beautiful Bill Act, Public Law 119-21 ([text on govinfo.gov](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm)), which apply to taxable years beginning after 31 December 2025, and the long-standing rules in section 170 of the Internal Revenue Code ([LII mirror of the U.S. Code](https://www.law.cornell.edu/uscode/text/26/170)). It does not cover gifts by corporations, trusts or estates, charitable remainder trusts, conservation easements or private foundation management.
+> **Source-cited draft.** Built from Public Law 119-21 sections 70111, 70424 and 70425, 26 U.S.C. 63, 170, 408 and 4966, Treas. Reg. 1.170A-10, Rev. Proc. 2025-32, Notice 2025-67 and IRS Pubs. 526, 544, 561 and 590-B, read on 2026-11-13. No accountant has reviewed it. All outputs must be reviewed by a qualified tax professional before filing.
 
-Related Guides: for every 2026 federal change in one place, see `us-2026-federal-tax-changes`. For gift tax and estate planning, see `us-estate-gift-706-709`. For holding periods, basis and capital gains rates, see `us-capital-gains`. For SEP and SIMPLE IRAs, see `us-self-employed-retirement`. This Guide stops at the edge of each.
+**Answer first.** Three rules are new for 2026, all from Public Law 119-21 and all for taxable years beginning after 31 December 2025. (1) A person who does **not** itemize may deduct cash gifts to public charities up to **USD 1,000 (USD 2,000 joint)**, on top of the standard deduction; gifts to a donor-advised fund or a supporting organization do not count. (2) A person who itemizes loses the first **0.5%** of the contribution base (about AGI) each year: only gifts above that floor are deductible. (3) A person whose income reaches the start of the 37% bracket has itemized deductions cut by **2/37**, which limits the tax value of each deducted dollar to **35 cents** instead of 37. The 60% limit for cash gifts to public charities is now permanent. Bunching two or more years of gifts into one year, often through a donor-advised fund, beats the floor and the standard deduction; giving long-term appreciated stock avoids the gain; a person aged 70½ or older can give up to **USD 111,000** straight from an IRA, outside income.
 
-## The method, step by step
+## Scope and who this is for
 
-1. Decide whether the person will itemize for 2026. Compare the itemized deductions (charity after the floor in step 4, plus state and local taxes, mortgage interest and the rest) with the 2026 standard deduction in the Rev. Proc. 2025-32 table below. Source: [Rev. Proc. 2025-32](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf).
-2. If the person will not itemize, apply the non-itemizer deduction for cash gifts (section 170(p), from 2026) and stop. Only cash gifts to a public charity count, and not gifts to a supporting organization described in section 509(a)(3) or to a donor-advised fund. Source: [26 U.S.C. 170(p), LII mirror](https://www.law.cornell.edu/uscode/text/26/170).
-3. If the person will itemize, sort each gift by what was given (cash, long-term appreciated property, other property) and to whom (a public charity described in section 170(b)(1)(A), or another organization such as most private foundations). Apply the percentage limits of the contribution base in the section 170 table below. Contribution base means adjusted gross income computed without any net operating loss carryback. Source: [26 U.S.C. 170(b), LII mirror](https://www.law.cornell.edu/uscode/text/26/170).
-4. From 2026, apply the floor: the deduction is allowed only to the extent the year's gifts exceed 0.5 percent of the contribution base (section 170(b)(1)(I), added by section 70425 of the Act). Source: [Public Law 119-21](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm).
-5. From 2026, if taxable income plus itemized deductions goes above the start of the 37 percent bracket, apply the section 68 reduction of 2/37 (section 70111 of the Act). It is applied after every other limit. Source: [Public Law 119-21](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm).
-6. Carry any excess over a percentage limit forward for up to 5 years (section 170(d)(1)). Source: [26 U.S.C. 170(d), LII mirror](https://www.law.cornell.edu/uscode/text/26/170).
-7. For a person aged 70½ or older with a traditional IRA, test a qualified charitable distribution (section 408(d)(8)) before writing a cheque. Source: [26 U.S.C. 408(d)(8), LII mirror](https://www.law.cornell.edu/uscode/text/26/408).
-8. Collect the paperwork before the return is filed: the charity's written acknowledgment, the bank record, Form 8283 for property, and an appraisal where one is needed. Source: [26 U.S.C. 170(f), LII mirror](https://www.law.cornell.edu/uscode/text/26/170) and [Pub. 526](https://www.irs.gov/pub/irs-pdf/p526.pdf).
+In scope: an individual (and the adviser) who gives to charity in 2026 and wants the largest federal income tax benefit from it: a high earner, a retiree with an IRA, or someone holding shares that have risen in value. It covers the choice between itemizing and the non-itemizer deduction, the section 170 limits, the 0.5% floor, the 2/37 reduction, bunching, donor-advised funds, appreciated stock, qualified charitable distributions, carryovers and the paperwork.
 
-## What changed for 2026
+Out of scope, and where it goes:
 
-All four changes below apply to taxable years beginning after 31 December 2025. For a calendar-year individual that means 2026 and later. Gifts made in 2025 were deducted under the old rules, and the 2025 year is now closed: a gift is deducted in the year it is paid (section 170(a)(1)), so a gift made in 2026 cannot be moved back into 2025.
-
-- **Non-itemizer deduction (section 70424, section 170(p)).** An individual who does not elect to itemize may deduct cash gifts up to the single amount in the Act table below (the joint amount on a joint return). It is taken on top of the standard deduction (section 63(b)(4), [LII mirror](https://www.law.cornell.edu/uscode/text/26/63)). Only gifts made in cash to an organization described in section 170(b)(1)(A) count, and not gifts to a supporting organization described in section 509(a)(3), and not gifts "for the establishment of a new, or maintenance of an existing, donor advised fund". Gifts of property never count. The 0.5 percent floor and the carryover rules do not apply to this deduction (section 170(p) is "determined without regard to subsections (b)(1)(G)(ii), (b)(1)(I), and (d)(1)"). The Act removed the old "beginning in 2021" limit, so the deduction has no end date. For 2025 it did not exist.
-- **0.5 percent floor for itemizers (section 70425, section 170(b)(1)(I)).** An individual's charitable deduction is allowed "only to the extent that the aggregate of such contributions exceeds 0.5 percent of the taxpayer's contribution base". This is a floor, not a cliff: the first slice is lost and the rest is allowed. The floor is taken from the gift categories in the order the Act sets: first section 170(b)(1)(D) gifts (capital gain property to organizations other than public charities), then (C) (capital gain property to public charities), then (B), then (E), then (A), and last (G) (cash to public charities). The amount lost to the floor carries forward only from a year in which a percentage limit is also exceeded (section 170(d)(1)(C)); in any other year it is lost for good.
-- **60 percent cash limit made permanent (section 70425(b)).** Cash gifts to public charities stay deductible up to the 60 percent limit in the Act table below.
-- **2/37 reduction of itemized deductions (section 70111, new section 68).** For an individual, total itemized deductions, including charity, are reduced by 2/37 of the lesser of (1) the itemized deductions and (2) the amount by which taxable income, increased by the itemized deductions, exceeds the start of the 37 percent bracket for that filing status. It "shall be applied after the application of any other limitation". Only people whose taxable income, before itemized deductions are taken off, reaches the start of the 37 percent bracket are affected. The Act states the fraction; it does not print a percentage cap on the value of the deduction, so this Guide does not state one.
-
-| Item | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm |
-| Non-itemizer cash deduction, from 2026, single and other returns | USD 1,000 | "inserting "$1,000 ($2,000"" (section 70424) |
-| Non-itemizer cash deduction, from 2026, joint return | USD 2,000 | same sentence |
-| Floor for individuals who itemize, from 2026 | 0.5 percent | "exceeds 0.5 percent of the taxpayer's contribution base" (section 70425) |
-| Cash gifts to public charities, limit, permanent | 60 percent | "60 percent of the taxpayer's contribution base for the taxable year" |
-| Itemized deduction reduction for the 37 percent bracket, from 2026 | 2/37 | "shall be reduced by 2/37 of the lesser of" (section 70111; the Act prints the fraction between backslashes) |
-
-| Item | 2026 value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.irs.gov/pub/irs-drop/rp-25-32.pdf |
-| Standard deduction, married filing jointly and surviving spouses | USD 32,200 | "Married Individuals Filing Joint Returns and Surviving Spouses $32,200" |
-| Standard deduction, head of household | USD 24,150 | "Heads of Households (§ 1(j)(2)(B)) $24,150" |
-| Standard deduction, single and married filing separately | USD 16,100 | "Unmarried Individuals (other than Surviving Spouses and Heads of $16,100" |
-| Start of the 37% bracket, married filing jointly | USD 768,700 | "plus 37% of the excess over $768,700" |
-| Start of the 37% bracket, single and head of household | USD 640,600 | "Over $640,600" |
-| Start of the 37% bracket, married filing separately | USD 384,350 | "Over $384,350" |
-
-## How much an itemizer can deduct: the section 170 limits
-
-Each limit is a share of the contribution base for the year. A gift over a limit is not lost: the excess carries forward (see the carryover section). The percentages below apply to individuals in 2026 and did not change; the Act added the floor, made the 60 percent cash limit permanent and reworded the coordination clause of section 170(b)(1)(B) (section 70425(b)(2)).
-
-| Item | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.law.cornell.edu/uscode/text/26/170 |
-| Gifts to public charities (section 170(b)(1)(A) organizations), general limit | 50 percent | "shall be allowed to the extent that the aggregate of such contributions does not exceed 50 percent of the taxpayer’s contribution base" |
-| Gifts to other organizations, such as most private foundations (section 170(b)(1)(B)): the lesser of this share or the room left under 50 percent after gifts to public charities | 30 percent | "(i) 30 percent of the taxpayer’s contribution base for the taxable year, or (ii) the excess of 50 percent of the taxpayer’s contribution base for the taxable year over" |
-| Long-term capital gain property given to a public charity (section 170(b)(1)(C)) | 30 percent | "shall not exceed 30 percent of the taxpayer’s contribution base for such year" |
-| Long-term capital gain property given to other organizations (section 170(b)(1)(D)): the lesser of this share or the room left under 30 percent after capital gain gifts to public charities | 20 percent | "(I) 20 percent of the taxpayer’s contribution base for the taxable year, or (II) the excess of 30 percent of the taxpayer’s contribution base for the taxable year over the amount of the contributions of capital gain property to which subparagraph (C) applies" |
-| Written acknowledgment needed for any single contribution of this amount or more (section 170(f)(8)) | USD 250 | "for any contribution of $250 or more unless the taxpayer substantiates the contribution by a contemporaneous written acknowledgment" |
-| Property: description with the return when the deduction claimed is more than (section 170(f)(11)(B)) | USD 500 | "for which a deduction of more than $500 is claimed" |
-| Property: qualified appraisal when the deduction claimed is more than (section 170(f)(11)(C)) | USD 5,000 | "for which a deduction of more than $5,000 is claimed, the requirements of this subparagraph are met if the individual, partnership, or corporation obtains a qualified appraisal" |
-
-Who is a public charity for these limits: churches, schools, hospitals, publicly supported charities and the other organizations listed in section 170(b)(1)(A). A donor-advised fund's sponsoring organization is never a private foundation (section 4966(d)(1), [LII mirror](https://www.law.cornell.edu/uscode/text/26/4966)).
-
-## Bunching gifts into one year
-
-The standard deduction is a fixed amount. Itemized deductions help only in the part above it. From 2026 the 0.5 percent floor also takes a slice off each year's gifts. Giving two or more years of gifts in one year, then taking the standard deduction in the other years, can raise the total deduction over the period. A donor-advised fund lets the person deduct the bunched amount now and choose the charities later.
-
-Worked example. Every amount below is hypothetical except the 2026 standard deduction and the 0.5 percent floor, which come from the tables above. It assumes a married couple filing jointly, the same income and the same standard deduction in 2027 as in 2026 (the 2027 amount will be indexed and will differ), all gifts in cash to public charities or to a donor-advised fund whose sponsoring organization is a public charity, and no gifts that would use the non-itemizer deduction. The floor rule is section 70425 of the Act; the standard deduction is the Rev. Proc. 2025-32 figure.
-
-| Hypothetical step | Amount | Working |
-| --- | --- | --- |
-| Source | all figures below | https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm |
-| Contribution base, each year (hypothetical) | USD 300,000 | assumed |
-| Floor, each year | USD 1,500 | USD 300,000 x 0.5 / 100 |
-| Other itemized deductions, each year (hypothetical) | USD 18,000 | state and local tax, mortgage interest |
-| Usual giving, each year (hypothetical) | USD 20,000 | cash to public charities |
-| Plan A, itemized deductions in 2026 and again in 2027 | USD 36,500 | USD 18,000 + (USD 20,000 - USD 1,500); more than USD 32,200, so itemize |
-| Plan A, two-year deduction | USD 73,000 | USD 36,500 x 2 |
-| Plan B, giving bunched into 2026 (to a donor-advised fund) | USD 40,000 | two years of gifts, nothing given in 2027 |
-| Plan B, itemized deductions in 2026 | USD 56,500 | USD 18,000 + (USD 40,000 - USD 1,500) |
-| Plan B, two-year deduction | USD 88,700 | USD 56,500 + standard deduction USD 32,200 in 2027 (2026 amount assumed) |
-| Extra deductions from bunching over the two years | USD 15,700 | USD 88,700 - USD 73,000 |
-
-The floor is charged once in Plan B instead of twice, and the 2027 standard deduction is not wasted. The cash given in 2026 is well inside the 60 percent limit for this couple. Their income is far below the 37 percent bracket, so the 2/37 reduction does not apply. Bunching does not help when the person would itemize every year anyway with a wide margin, and it does not help a person who would take the standard deduction even in the bunched year.
-
-In a year the person does not itemize, cash gifts made directly to a public charity (not to a donor-advised fund and not to a section 509(a)(3) supporting organization) can still use the non-itemizer deduction in the Act table above.
-
-## Donor-advised funds
-
-A donor-advised fund is a fund or account that is separately identified by reference to a donor's contributions, is "owned and controlled by a sponsoring organization", and over which the donor (or someone the donor appoints) has or expects to have advisory privileges over distributions or investments (section 4966(d)(2), [LII mirror](https://www.law.cornell.edu/uscode/text/26/4966)).
-
-- **Timing.** The deduction is for the year the donor pays into the fund, because section 170(a)(1) allows a contribution "payment of which is made within the taxable year". The sponsoring organization owns the money from then on; grants it later makes to other charities are its own distributions.
-- **Conditions.** No deduction is allowed for a contribution to a donor-advised fund unless the sponsoring organization is not a war veterans' organization, a fraternal society or a nonprofit cemetery company ([Pub. 526](https://www.irs.gov/pub/irs-pdf/p526.pdf)), and not a type III supporting organization that is not functionally integrated, and the donor obtains a contemporaneous written acknowledgment from the sponsoring organization "that such organization has exclusive legal control over the assets contributed" (section 170(f)(18), [LII mirror](https://www.law.cornell.edu/uscode/text/26/170)).
-- **Not for non-itemizers.** Cash paid "for the establishment of a new, or maintenance of an existing, donor advised fund" does not count for the non-itemizer deduction of section 170(p), in 2026 or later.
-- **Not for IRA charitable distributions.** A qualified charitable distribution cannot go to a donor-advised fund (section 408(d)(8)(B)(i)).
-
-## Giving appreciated long-term stock
-
-Capital gain property means a capital asset that, if sold at fair market value at the time of the gift, would have produced long-term capital gain (section 170(b)(1)(C)(iv)). For holding periods, see `us-capital-gains`.
-
-- **Amount of the deduction.** Section 170(e)(1)(A) reduces a gift of property only by "the amount of gain which would not have been long-term capital gain" if the property had been sold at fair market value. For long-term shares given to a public charity that reduction is nil, so the deduction is generally the shares' fair market value on the date of the gift. Pub. 526 says the same: "you can generally use the FMV of the property". The deduction must be cut to the shares' basis when the gift goes to certain private nonoperating foundations (other than qualified appreciated stock) and in the other cases section 170(e)(1)(B) lists ([Pub. 526](https://www.irs.gov/pub/irs-pdf/p526.pdf)).
-- **The gain.** Giving the shares outright is not a sale or exchange as Pub. 544 defines them: "A sale is a transfer of property for money or a mortgage", note or other promise to pay money, and an exchange is a transfer of property for other property or services ([Pub. 544](https://www.irs.gov/pub/irs-pdf/p544.pdf)). Pub. 526 treats only a bargain sale to a charity (a sale for less than fair market value) as "partly a charitable contribution and partly a sale or exchange". A person who sells the shares first and gives the cash has made a sale and reports the gain.
-- **Limits.** Long-term capital gain property given to a public charity is limited to the 30 percent of the contribution base in the section 170 table, and is counted after the other gifts. A gift of the same shares to most private foundations is limited to the lesser of the 20 percent figure and the room left under 30 percent after capital gain gifts to public charities (section 170(b)(1)(D)). The excess carries forward for 5 years. The donor may elect the 50 percent limit instead, but only by reducing every capital gain gift made that year to the amount section 170(e)(1) leaves, usually basis (section 170(b)(1)(C)(iii)).
-- **Shares held one year or less** are ordinary income property: the deduction is the fair market value minus the amount that would be short-term capital gain on a sale. Pub. 526: "Generally, this rule limits the deduction to your basis in the property".
-- **Timing.** A properly endorsed stock certificate is treated as delivered on the date of mailing or delivery to the charity or its agent ([Pub. 526](https://www.irs.gov/pub/irs-pdf/p526.pdf)). If the donor gives the certificate to the donor's own agent or to the issuing corporation for transfer into the charity's name, the gift "isn't delivered until the date the stock is transferred on the books of the corporation". Ask the broker for the transfer date before relying on a gift made late in December.
-- **Paperwork.** Form 8283, Section A, goes with the return when the year's noncash gifts together are deducted at more than the section 170 table's USD 500 (Pub. 526 says Section A is also used for publicly traded securities). Publicly traded securities do not need a qualified appraisal, even above USD 5,000: section 170(f)(11)(A)(ii)(I) exempts "publicly traded securities" from the appraisal rule.
-
-## Qualified charitable distributions from an IRA
-
-A qualified charitable distribution is a distribution from an individual retirement plan, other than an ongoing SEP or SIMPLE IRA (plans described in section 408(k) or (p)), that meets all of these conditions (section 408(d)(8), [LII mirror](https://www.law.cornell.edu/uscode/text/26/408)):
-
-- it is made directly by the trustee to an organization described in section 170(b)(1)(A), and not to a supporting organization described in section 509(a)(3) and not to a donor-advised fund; and
-- it is made on or after the date the IRA owner reaches age 70½; and
-- a deduction for the entire distribution would be allowable under section 170 (ignoring the percentage limits), and the donor holds the same written acknowledgment needed for a deductible gift ([Pub. 590-B](https://www.irs.gov/pub/irs-pdf/p590b.pdf)).
-
-The distribution is left out of gross income up to the annual limit in the table below for 2026. The limit is per taxpayer: on a joint return each spouse who qualifies has a separate limit ([Pub. 590-B](https://www.irs.gov/pub/irs-pdf/p590b.pdf)). Any amount above the limit is taxed like any other distribution. The excluded amount is not also deductible under section 170 (section 408(d)(8)(E)). The exclusion is reduced by deductible IRA contributions made for years ending on or after the date the owner reaches age 70½, to the extent not already used. Only the part that would otherwise be taxable can be a qualified charitable distribution. A qualified charitable distribution counts toward the owner's required minimum distribution for the year: Pub. 590-B states "A QCD will count towards your required minimum distribution".
-
-Because the amount never enters income, a qualified charitable distribution can help a person who takes the standard deduction and a person who would lose part of the deduction to the 0.5 percent floor. The 2026 limit is indexed each year from 2024 (section 408(d)(8)(G)).
-
-| Item | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.irs.gov/pub/irs-drop/n-25-67.pdf |
-| Qualified charitable distributions excluded from income, 2026, per taxpayer | USD 111,000 | "408(d)(8)(A) is increased from $108,000 to $111,000" |
-
-## Carrying excess gifts forward
-
-If an individual's gifts to public charities exceed the year's percentage limit, the excess is treated as paid in each of the 5 succeeding taxable years, in order of time, but only to the extent there is room under the limit in each later year (section 170(d)(1)(A), [LII mirror](https://www.law.cornell.edu/uscode/text/26/170)). The 30 percent and 20 percent categories carry forward the same way (sections 170(b)(1)(B), (C)(ii) and (D)(ii)). From 2026 the amount lost to the 0.5 percent floor joins the carryover only for a year in which a percentage limit is exceeded (section 170(d)(1)(C), [Public Law 119-21](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm)). The non-itemizer deduction ignores carryovers. A year in which the person takes the standard deduction still uses up carryover: the regulation (written when the carryover period was shorter) treats the carryover as "paid (but not allowable as a deduction)" in that standard deduction year ([Treas. Reg. § 1.170A-10 on eCFR](https://www.ecfr.gov/current/title-26/chapter-I/subchapter-A/part-1/subject-group-ECFR4f0b2f9ff1b8a63/section-1.170A-10)). A person with a carryover who plans to bunch should use it in the bunched year.
-
-## Proof the gift was made
-
-- **Any cash gift**, whatever the size: a bank record or a written communication from the charity showing the charity's name, the date and the amount (section 170(f)(17)).
-- **A single contribution of USD 250 or more** (the section 170 table): a contemporaneous written acknowledgment from the charity giving the amount of cash, a description (not a value) of any property, and whether the charity gave anything in return (and a good faith estimate of its value) (section 170(f)(8)). "Contemporaneous" means obtained by the earlier of the date the return is filed and the due date including extensions.
-- **Noncash gifts deducted at more than USD 500 in total for the year**: Form 8283 with the return; Section A for each item deducted at USD 5,000 or less and for publicly traded securities of any amount ([Pub. 526](https://www.irs.gov/pub/irs-pdf/p526.pdf), heading on the total deduction for noncash gifts).
-- **Property deducted at more than USD 5,000** (other than publicly traded securities and the other exceptions in section 170(f)(11)(A)(ii)): a qualified appraisal by a qualified appraiser and Form 8283, Section B, signed by the charity ([Pub. 526](https://www.irs.gov/pub/irs-pdf/p526.pdf); valuation rules in [Pub. 561](https://www.irs.gov/pub/irs-pdf/p561.pdf)).
-- **Donor-advised fund**: the sponsoring organization's acknowledgment that it has exclusive legal control (section 170(f)(18)).
+| Topic | Where |
+| --- | --- |
+| Every 2026 federal change in one list | `us-2026-federal-tax-changes` |
+| Gift tax and estate planning for large gifts | `us-estate-gift-706-709` |
+| Holding periods, basis and capital gains rates | `us-capital-gains` |
+| SEP and SIMPLE IRAs, required minimum distributions | `us-self-employed-retirement` |
+| The state and local tax cap and other itemized deductions | `us-form-1040-individual-return` |
+| Gifts by corporations (the 1% floor and 10% cap), trusts or estates | `us-form-1120-c-corp`, `us-form-1041-trust-and-estate-income` |
+| Charitable remainder and lead trusts, gift annuities, conservation easements, private foundation management | refer |
+| State income tax treatment | the state's own rules |
 
 ## Ask the client first
 
-- Will you itemize for 2026, and roughly how far above or below the standard deduction are your other itemized deductions? This decides between bunching, the non-itemizer deduction, or giving as usual.
-- What is your expected adjusted gross income for 2026, and will taxable income plus itemized deductions pass the start of the 37 percent bracket? This sets the 0.5 percent floor, the percentage limits and whether the 2/37 reduction applies.
-- What will you give (cash, listed shares, other property) and to whom (a public charity, a donor-advised fund, a private foundation, a supporting organization)? Each pairing has its own limit and its own paperwork.
-- For shares: when did you acquire them, what is their basis, and are they publicly traded? This decides long-term treatment, fair market value or basis, and whether an appraisal is needed.
-- Are you (or your spouse) aged 70½ or older with a traditional IRA, and do you have a required minimum distribution for 2026? This decides whether a qualified charitable distribution is open and useful.
-- Do you have charitable carryovers from earlier years? They use up room under the 2026 limits.
+1. **Will you itemize for 2026, and how far above or below the standard deduction are your other itemized deductions?** This decides between bunching, the non-itemizer deduction or giving as usual.
+2. **Expected 2026 AGI, and will taxable income plus itemized deductions pass the start of the 37% bracket?** This sets the 0.5% floor, the percentage limits and whether the 2/37 reduction applies.
+3. **What will you give (cash, listed shares, other property) and to whom** (a public charity, a donor-advised fund, a private foundation, a supporting organization)? Each pairing has its own limit and paperwork.
+4. **For shares:** when were they acquired, what is the basis, are they publicly traded?
+5. **Are you (or your spouse) aged 70½ or older with a traditional IRA, and is there a 2026 required minimum distribution?** This opens the qualified charitable distribution.
+6. **Charitable carryovers from 2021 to 2025**, which use up room under the 2026 limits.
+
+## The method, step by step
+
+### Rates, bands and thresholds
+
+| Item | Amount, 2026 | Source |
+| --- | --- | --- |
+| Non-itemizer deduction for cash gifts to public charities, single and other returns | USD 1,000 | [Public Law 119-21, section 70424](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
+| Non-itemizer deduction, joint return | USD 2,000 | [Public Law 119-21, section 70424](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
+| Floor for individuals who itemize (share of contribution base lost each year) | 0.5 percent | [Public Law 119-21, section 70425](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
+| Cash gifts to public charities, limit (made permanent) | 60 percent | [Public Law 119-21, section 70425(b)](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
+| Itemized deduction reduction for the 37% bracket (new section 68) | 2/37 | [Public Law 119-21, section 70111](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm) |
+| Start of the 37% bracket, married filing jointly and surviving spouses | USD 768,700 | [Rev. Proc. 2025-32](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
+| Start of the 37% bracket, single and head of household | USD 640,600 | [Rev. Proc. 2025-32](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
+| Start of the 37% bracket, married filing separately | USD 384,350 | [Rev. Proc. 2025-32](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
+| Standard deduction, married filing jointly and surviving spouses | USD 32,200 | [Rev. Proc. 2025-32](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
+| Standard deduction, head of household | USD 24,150 | [Rev. Proc. 2025-32](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
+| Standard deduction, single and married filing separately | USD 16,100 | [Rev. Proc. 2025-32](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |
+| Gifts to public charities (section 170(b)(1)(A)), general limit | 50 percent | [26 U.S.C. 170(b)(1)(A)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVI-sec170.htm) |
+| Gifts to other organizations such as most private foundations (lesser of this or the room left under 50 percent) | 30 percent | [26 U.S.C. 170(b)(1)(B)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVI-sec170.htm) |
+| Long-term capital gain property to a public charity | 30 percent | [26 U.S.C. 170(b)(1)(C)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVI-sec170.htm) |
+| Long-term capital gain property to other organizations (lesser of this or the room left under 30 percent) | 20 percent | [26 U.S.C. 170(b)(1)(D)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVI-sec170.htm) |
+| Carryover period for gifts above a percentage limit | 5 years | [26 U.S.C. 170(d)(1)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVI-sec170.htm) |
+| Contemporaneous written acknowledgment for any single contribution of | USD 250 or more | [26 U.S.C. 170(f)(8)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVI-sec170.htm) |
+| Property: description with the return when the deduction claimed is more than | USD 500 | [26 U.S.C. 170(f)(11)(B)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVI-sec170.htm) |
+| Property: qualified appraisal when the deduction claimed is more than (not for publicly traded securities) | USD 5,000 | [26 U.S.C. 170(f)(11)(C)](https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVI-sec170.htm) |
+| Qualified charitable distributions excluded from income, per taxpayer | USD 111,000 | [Notice 2025-67](https://www.irs.gov/pub/irs-drop/n-25-67.pdf) |
+| Charitable standard mileage rate (fixed by section 170(i)) | 14 cents | [Notice 2026-10](https://www.irs.gov/pub/irs-drop/n-26-10.pdf) |
+
+The 35% figure is arithmetic, not a number printed in the Act: a deduction cut by 2/37 is worth 37% x (1 minus 2/37) = 35% of each dollar deducted. Only the 2/37 fraction is law.
+
+### Steps
+
+1. **Itemize or not.** Compare itemized deductions (charity after the floor in step 4, plus state and local taxes, mortgage interest and the rest) with the 2026 standard deduction.
+2. **Not itemizing:** apply the non-itemizer deduction (section 170(p) as amended by section 70424) and stop. Only cash gifts to an organization described in section 170(b)(1)(A) count, not gifts to a section 509(a)(3) supporting organization and not gifts "for the establishment of a new, or maintenance of an existing, donor advised fund". Property never counts. It is taken on top of the standard deduction (section 63(b)(4)). It is computed without the 0.5% floor and without carryovers (section 170(p) is applied "without regard to subsections (b)(1)(G)(ii), (b)(1)(I), and (d)(1)"). The Act removed the old "beginning in 2021" limit, so it has no end date.
+3. **Itemizing:** sort each gift by what was given (cash, long-term appreciated property, other property) and to whom (a public charity or another organization). Apply the percentage limits to the contribution base, which is AGI computed without any net operating loss carryback (section 170(b)(1)(H)).
+4. **Apply the 0.5% floor** (section 170(b)(1)(I), added by section 70425): the deduction is allowed "only to the extent that the aggregate of such contributions exceeds 0.5 percent of the taxpayer's contribution base". It is a floor, not a cliff. It is taken from the gift categories in the order the Act sets: first (D) (capital gain property to non-public charities), then (C), then (B), then (E), then (A), and last (G) (cash to public charities). The amount lost to the floor carries forward only from a year in which a percentage limit is also exceeded (section 170(d)(1)(C)); in any other year it is lost for good.
+5. **Apply the 2/37 reduction** (new section 68, section 70111) if taxable income plus itemized deductions passes the start of the 37% bracket: reduce total itemized deductions by 2/37 of the lesser of (a) the itemized deductions and (b) taxable income, increased by the itemized deductions, above the start of the 37% bracket. It is applied after every other limit.
+6. **Carry forward** any excess over a percentage limit for up to 5 years.
+7. **Age 70½ or older with a traditional IRA:** test a qualified charitable distribution before writing a cheque.
+8. **Collect the paperwork before filing:** the charity's written acknowledgment, the bank record, Form 8283 for property and a qualified appraisal where needed.
+
+## Boundary and exception table
+
+### What changed for 2026, and what did not
+
+| Change | Rule |
+| --- | --- |
+| Non-itemizer deduction (section 70424, section 170(p)) | New for 2026; for 2025 it did not exist. Cash to public charities only; no donor-advised funds, no supporting organizations, no property; no floor, no carryover |
+| 0.5% floor for itemizers (section 70425, section 170(b)(1)(I)) | New for 2026; floor order (D), (C), (B), (E), (A), (G); lost amount carries forward only from a year a percentage limit is exceeded |
+| 60% cash limit (section 70425(b)) | Made permanent; the Act also reworded the coordination clause in section 170(b)(1)(B) |
+| 2/37 reduction (section 70111, section 68) | New for 2026; only where taxable income plus itemized deductions reaches the start of the 37% bracket |
+| Gift timing | A gift is deducted in the year it is paid (section 170(a)(1)); a 2026 gift cannot be moved back into 2025 |
+| Percentage limits (50, 30, 20 percent) and substantiation amounts | Unchanged |
+
+Who is a public charity for these limits: churches, schools, hospitals, publicly supported charities and the other organizations listed in section 170(b)(1)(A). A donor-advised fund's sponsoring organization is never a private foundation (section 4966(d)(1)).
+
+### Bunching gifts into one year
+
+The standard deduction is fixed; itemized deductions help only above it, and from 2026 the floor takes a slice off each year's gifts. Giving two or more years of gifts in one year, then taking the standard deduction in the others, can raise the total deduction over the period. A donor-advised fund lets the person deduct the bunched amount now and choose the charities later. Bunching does not help a person who would itemize every year with a wide margin, or one who would take the standard deduction even in the bunched year. In a non-itemizing year, cash gifts made directly to a public charity (not to a donor-advised fund) can still use the non-itemizer deduction. A person with a carryover should use it in the bunched year (see carryovers below).
+
+### Donor-advised funds
+
+A donor-advised fund is a fund or account separately identified by reference to a donor's contributions, "owned and controlled by a sponsoring organization", over which the donor (or an appointee) has or expects advisory privileges (section 4966(d)(2)).
+
+- **Timing.** The deduction is for the year the donor pays into the fund (section 170(a)(1)). The sponsor owns the money from then on; its later grants are its own distributions.
+- **Conditions.** No deduction unless the sponsor is not a war veterans' organization, a fraternal society or a nonprofit cemetery company (Pub. 526), and not a type III supporting organization that is not functionally integrated, and the donor gets a contemporaneous written acknowledgment that the sponsor "has exclusive legal control over the assets contributed" (section 170(f)(18)).
+- **Not for non-itemizers.** Cash paid to a donor-advised fund never counts for the section 170(p) deduction.
+- **Not for IRA distributions.** A qualified charitable distribution cannot go to a donor-advised fund (section 408(d)(8)(B)(i)).
+
+### Giving appreciated long-term stock
+
+Capital gain property is a capital asset that would have produced long-term capital gain if sold at fair market value at the time of the gift (section 170(b)(1)(C)(iv)).
+
+- **Amount.** Section 170(e)(1)(A) reduces a gift of property only by the gain that would not have been long-term. For long-term shares given to a public charity the reduction is nil, so the deduction is generally fair market value on the date of the gift (Pub. 526: "you can generally use the FMV of the property"). It is cut to basis for gifts to certain private nonoperating foundations (other than qualified appreciated stock) and the other cases in section 170(e)(1)(B).
+- **The gain.** Giving the shares outright is not a sale or exchange: "A sale is a transfer of property for money or a mortgage", note or other promise to pay money (Pub. 544). Only a bargain sale to a charity is "partly a charitable contribution and partly a sale or exchange" (Pub. 526). Selling first and giving the cash means the gain is reported.
+- **Limits.** 30% of the contribution base for public charities, counted after the other gifts; for most private foundations the lesser of 20% and the room left under 30% (section 170(b)(1)(D)). The donor may elect the 50% limit instead, but only by reducing every capital gain gift that year to the amount section 170(e)(1) leaves, usually basis (section 170(b)(1)(C)(iii)).
+- **Shares held one year or less** are ordinary income property: the deduction is fair market value minus the short-term gain, which "Generally ... limits the deduction to your basis" (Pub. 526).
+- **Timing.** A properly endorsed certificate is delivered on the date of mailing or delivery to the charity or its agent. If given to the donor's own agent or the issuer for transfer, the gift "isn't delivered until the date the stock is transferred on the books of the corporation" (Pub. 526). Ask the broker for the transfer date before relying on a late-December gift.
+- **Paperwork.** Form 8283 Section A when noncash gifts for the year are deducted at more than USD 500 in total (Section A is also used for publicly traded securities). Publicly traded securities need no qualified appraisal even above USD 5,000 (section 170(f)(11)(A)(ii)(I)).
+
+### Qualified charitable distributions from an IRA
+
+A distribution from an IRA, other than an ongoing SEP or SIMPLE IRA (section 408(k) or (p)), that (section 408(d)(8)):
+
+- is made directly by the trustee to a section 170(b)(1)(A) organization, not to a supporting organization and not to a donor-advised fund;
+- is made on or after the date the owner reaches age 70½; and
+- would be fully deductible under section 170 ignoring the percentage limits, with the same written acknowledgment a deductible gift needs (Pub. 590-B).
+
+It is left out of income up to USD 111,000 for 2026, per taxpayer: on a joint return each qualifying spouse has a separate limit. Anything above is taxed like any other distribution. The excluded amount is not also deductible (section 408(d)(8)(E)). The exclusion is reduced by deductible IRA contributions for years ending on or after age 70½, to the extent not already used. Only the otherwise-taxable part can qualify. "A QCD will count towards your required minimum distribution" (Pub. 590-B). Because the amount never enters income, it helps a person who takes the standard deduction and avoids the 0.5% floor and the 2/37 reduction. The limit is indexed from 2024 (section 408(d)(8)(G)).
+
+### Carrying excess gifts forward
+
+Gifts to public charities above the year's limit are treated as paid in each of the 5 succeeding years, in order of time, to the extent of room under the limit in each later year (section 170(d)(1)(A)); the 30% and 20% categories carry forward the same way (sections 170(b)(1)(B), (C)(ii) and (D)(ii)). From 2026 the amount lost to the 0.5% floor joins the carryover only for a year in which a percentage limit is exceeded (section 170(d)(1)(C)). The non-itemizer deduction ignores carryovers. A standard deduction year still uses up carryover: the regulation treats it as "paid (but not allowable as a deduction)" in that year (Treas. Reg. 1.170A-10).
+
+### Proof the gift was made
+
+| Gift | What is needed |
+| --- | --- |
+| Any cash gift, any size | A bank record or a written communication from the charity with its name, the date and the amount (section 170(f)(17)) |
+| Single contribution of USD 250 or more | Contemporaneous written acknowledgment: cash amount, description (not value) of any property, and whether anything was given in return with a good faith estimate of its value (section 170(f)(8)); obtained by the earlier of the filing date and the due date including extensions |
+| Noncash gifts deducted at more than USD 500 in total | Form 8283 with the return; Section A for items of USD 5,000 or less and for publicly traded securities of any amount (Pub. 526) |
+| Property deducted at more than USD 5,000 (not publicly traded securities) | Qualified appraisal by a qualified appraiser and Form 8283 Section B signed by the charity (Pub. 526; valuation in Pub. 561) |
+| Donor-advised fund | The sponsor's acknowledgment of exclusive legal control (section 170(f)(18)) |
+
+### Defaults when a fact is missing
+
+| Missing fact | Default, and flag it |
+| --- | --- |
+| Whether the client itemizes | Compute both ways; never assume |
+| Type of recipient | Treat as a non-public charity (the lower limits) until the charity's status is confirmed |
+| Holding period of shares | Treat as short-term (basis only) until dates are confirmed |
+| Carryovers | Zero; ask for the 2021 to 2025 returns |
+| Acknowledgment for a USD 250 gift | No deduction until it is in hand |
+
+### Red flags to raise
+
+| Flag | Why it matters |
+| --- | --- |
+| Non-itemizer counting a donor-advised fund gift | Not allowed under section 170(p) |
+| QCD sent to a donor-advised fund or before age 70½ | Not a QCD; taxable distribution |
+| Property other than listed shares over USD 5,000 with no appraisal | Deduction lost |
+| Late-December stock gift through the donor's broker | May fall into 2027 |
+| Income near the 37% bracket | 2/37 reduction; consider a QCD or bunching |
+
+## Worked cases
+
+**Case 1, a decision: bunch two years of gifts into 2026?** A married couple files jointly. Assumed for both 2026 and 2027: contribution base USD 300,000, other itemized deductions USD 18,000, usual giving USD 20,000 a year in cash to public charities, and the 2026 standard deduction of USD 32,200 also used for 2027 (the 2027 amount will be indexed and differ). The floor is 0.5% of USD 300,000, USD 1,500, each year it applies. Plan A, give each year: itemized USD 18,000 + (USD 20,000 minus USD 1,500) = USD 36,500 each year, more than USD 32,200, so itemize both years: USD 73,000 over two years. Plan B, give USD 40,000 to a donor-advised fund in 2026 and nothing in 2027: 2026 itemized USD 18,000 + (USD 40,000 minus USD 1,500) = USD 56,500, then the standard deduction of USD 32,200 in 2027: USD 88,700. Bunching gives USD 15,700 more deductions. The floor is charged once instead of twice and the 2027 standard deduction is not wasted. The cash is well inside the 60% limit, and income is far below the 37% bracket, so the 2/37 reduction does not apply. Recommend Plan B.
+
+```oa-check
+name: Bunching decision, married filing jointly (2026)
+inputs:
+  contribution_base: 300000
+  other_itemized: 18000
+  yearly_gifts: 20000
+  standard_deduction: 32200
+steps:
+  - floor: contribution_base * 0.005
+  - plan_a_year: max(other_itemized + yearly_gifts - floor, standard_deduction)
+  - plan_a_total: plan_a_year * 2
+  - plan_b_2026: max(other_itemized + 2 * yearly_gifts - floor, standard_deduction)
+  - plan_b_total: plan_b_2026 + standard_deduction
+  - extra_from_bunching: plan_b_total - plan_a_total
+expected:
+  floor: 1500
+  plan_a_year: 36500
+  plan_a_total: 73000
+  plan_b_2026: 56500
+  plan_b_total: 88700
+  extra_from_bunching: 15700
+```
+
+**Case 2, a top-bracket donor: the floor and the 2/37 reduction together.** A married couple files jointly with a contribution base (AGI) of USD 1,200,000. They give USD 100,000 in cash to public charities and have USD 30,000 of other itemized deductions (state and local tax at the USD 10,000 phase-down floor plus USD 20,000 of mortgage interest). The floor is 0.5% x USD 1,200,000 = USD 6,000, so USD 94,000 of the gift is allowed and itemized deductions are USD 124,000. Taxable income plus itemized deductions is USD 1,200,000, which is USD 431,300 above the USD 768,700 start of the 37% bracket. The reduction is 2/37 of the lesser of USD 124,000 and USD 431,300: USD 6,702.70. Itemized deductions after section 68: USD 117,297.30. The gift itself is deducted at USD 94,000 x 35/37 = USD 88,918.92, worth USD 32,900 at 37%, so the USD 100,000 gift saves 32.9% instead of 37%. A qualified charitable distribution (if either spouse is 70½ or older) or a gift of appreciated stock would beat cash here.
+
+```oa-check
+name: Floor and 2/37 reduction, top-bracket joint return (2026)
+inputs:
+  contribution_base: 1200000
+  cash_gift: 100000
+  other_itemized: 30000
+  bracket_37_start: 768700
+steps:
+  - floor: contribution_base * 0.005
+  - charity_allowed: cash_gift - floor
+  - itemized: charity_allowed + other_itemized
+  - excess: max(contribution_base - bracket_37_start, 0)
+  - reduction: min(itemized, excess) * 2 / 37
+  - itemized_after: itemized - reduction
+  - gift_deducted: charity_allowed * 35 / 37
+  - gift_tax_saving: gift_deducted * 0.37
+expected:
+  floor: 6000
+  charity_allowed: 94000
+  itemized: 124000
+  excess: 431300
+  reduction: 6702.70
+  itemized_after: 117297.30
+  gift_deducted: 88918.92
+  gift_tax_saving: 32900.00
+```
+
+**Case 3, stock or cash (decision).** A single donor who itemizes holds listed shares bought in 2019 for USD 4,000, now worth USD 20,000, and wants to give USD 20,000 to a public charity. Giving the shares: deduction USD 20,000 (fair market value), subject to the 30% limit, and the USD 16,000 gain is never reported. Selling and giving the cash: the same USD 20,000 deduction (60% limit) but USD 16,000 of long-term gain is reported. Give the shares, unless the 30% limit binds and the carryover would go unused.
+
+**Case 4, non-itemizer (decision).** A single filer takes the USD 16,100 standard deduction and gives USD 1,500 in cash to a church and USD 500 to a donor-advised fund. The non-itemizer deduction is USD 1,000: the church gift counts up to the cap, the donor-advised fund gift never does.
 
 ## When to refuse or refer
 
-- Gifts of property other than listed shares worth more than USD 5,000 (real estate, private company shares, art, collectibles): refer for a qualified appraisal; the valuation is outside this Guide.
-- Charitable remainder trusts, charitable lead trusts, charitable gift annuities, and the one-time qualified charitable distribution to a split-interest entity (section 408(d)(8)(F)): refer. For the gift and estate tax side of large gifts, see `us-estate-gift-706-709`.
-- Conservation easements and any gift of a partial interest: refer.
-- Gifts through a partnership, S corporation, trust or estate, or a corporation's own gifts: out of scope.
-- A gift where the donor receives a benefit (a dinner, membership, tickets) or a bargain sale: compute only after the charity states the value of the benefit; refer if it is unclear.
-- State income tax treatment: out of scope. States decide for themselves.
-- Never state that a contribution to a donor-advised fund qualifies for the non-itemizer deduction or can be funded by a qualified charitable distribution. The law says it cannot.
+| Code | Situation | Action |
+| --- | --- | --- |
+| R-CH-APPR | Property other than listed shares worth more than USD 5,000 (real estate, private company shares, art, collectibles) | Refer for a qualified appraisal; the valuation is outside this skill |
+| R-CH-SPLIT | Charitable remainder or lead trusts, gift annuities, the one-time QCD to a split-interest entity (section 408(d)(8)(F)) | Refer; for gift and estate tax see `us-estate-gift-706-709` |
+| R-CH-EASE | Conservation easements or any gift of a partial interest | Refer |
+| R-CH-ENTITY | Gifts through a partnership, S corporation, trust or estate, or a corporation's own gifts | Out of scope |
+| R-CH-QUID | The donor receives a benefit (a dinner, membership, tickets) or makes a bargain sale | Compute only after the charity states the value of the benefit; refer if unclear |
+| R-CH-STATE | State income tax treatment | Out of scope; states decide for themselves |
+| R-CH-DAF | A request to treat a donor-advised fund gift as a non-itemizer deduction or to fund it with a QCD | Refuse; the law says it cannot |
+
+## Filing and payment
+
+Itemized gifts go on Schedule A (Form 1040); the non-itemizer deduction is taken on Form 1040 on top of the standard deduction (check the line on the final 2026 Form 1040). Form 8283 goes with the return for noncash gifts over USD 500 in total. A qualified charitable distribution is reported as an IRA distribution with the excluded part shown as not taxable (Pub. 590-B). The 2026 return is due **15 April 2027**; an extension to 15 October 2027 moves only the filing date. Gifts must be paid by 31 December 2026 to count for 2026.
+
+## Completion checklist
+
+- Itemizing compared with the standard deduction plus the non-itemizer deduction.
+- Each gift sorted by type and recipient; percentage limits applied to the contribution base.
+- 0.5% floor applied in the statutory order; lost amount carried only where a limit was exceeded.
+- 2/37 reduction tested against the start of the 37% bracket for the filing status.
+- Carryovers from earlier years used in order; new carryover recorded.
+- QCD tested for anyone aged 70½ or older; not sent to a donor-advised fund.
+- Acknowledgments, bank records, Form 8283 and appraisals in the file before filing.
 
 ## Sources
 
-- [Public Law 119-21 (One Big Beautiful Bill Act), sections 70111, 70424 and 70425, text on govinfo.gov](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm)
-- [26 U.S.C. 170, LII mirror of the U.S. Code](https://www.law.cornell.edu/uscode/text/26/170)
-- [26 U.S.C. 63, LII mirror of the U.S. Code](https://www.law.cornell.edu/uscode/text/26/63)
-- [26 U.S.C. 408, LII mirror of the U.S. Code](https://www.law.cornell.edu/uscode/text/26/408)
-- [26 U.S.C. 4966, LII mirror of the U.S. Code](https://www.law.cornell.edu/uscode/text/26/4966)
-- [Treas. Reg. § 1.170A-10 on eCFR](https://www.ecfr.gov/current/title-26/chapter-I/subchapter-A/part-1/subject-group-ECFR4f0b2f9ff1b8a63/section-1.170A-10)
-- [Rev. Proc. 2025-32 (2026 inflation adjustments)](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf)
-- [Notice 2025-67 (2026 retirement and IRA amounts)](https://www.irs.gov/pub/irs-drop/n-25-67.pdf)
-- [IRS Publication 526, Charitable Contributions (2025)](https://www.irs.gov/pub/irs-pdf/p526.pdf)
-- [IRS Publication 544, Sales and Other Dispositions of Assets](https://www.irs.gov/pub/irs-pdf/p544.pdf)
-- [IRS Publication 561, Determining the Value of Donated Property](https://www.irs.gov/pub/irs-pdf/p561.pdf)
-- [IRS Publication 590-B, Distributions from Individual Retirement Arrangements (2025)](https://www.irs.gov/pub/irs-pdf/p590b.pdf)
+| Source | URL | Read on |
+| --- | --- | --- |
+| Public Law 119-21 (One Big Beautiful Bill Act). Read for section 70111 (2/37, new section 68), section 70424 (USD 1,000 / USD 2,000, "beginning in 2021" struck) and section 70425 (0.5% floor, floor order, section 170(d)(1)(C), 60% made permanent, section 170(p) coordination), all for taxable years beginning after 31 December 2025. | https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm | 2026-11-13 |
+| Rev. Proc. 2025-32. Read for the 2026 standard deductions and the start of the 37% bracket. | https://www.irs.gov/pub/irs-drop/rp-25-32.pdf | 2026-11-13 |
+| 26 U.S.C. 170 (govinfo, 2024 edition, before the Act). Read for (a)(1), (b)(1)(A) to (D) percentages, (b)(1)(H), (d)(1), (e)(1), (f)(8), (f)(11), (f)(17), (f)(18) and (p). | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partVI-sec170.htm | 2026-11-13 |
+| 26 U.S.C. 63 (govinfo). Read for (b)(4), the section 170(p) deduction on top of the standard deduction. | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapB-partI-sec63.htm | 2026-11-13 |
+| 26 U.S.C. 408 (govinfo). Read for (d)(8), qualified charitable distributions. | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleA-chap1-subchapD-partI-subpartA-sec408.htm | 2026-11-13 |
+| 26 U.S.C. 4966 (govinfo). Read for (d)(1) and (d)(2), donor-advised fund definitions. | https://www.govinfo.gov/content/pkg/USCODE-2024-title26/html/USCODE-2024-title26-subtitleD-chap42-subchapG-sec4966.htm | 2026-11-13 |
+| Notice 2025-67. Read for the 2026 QCD limit, increased from USD 108,000 to USD 111,000. | https://www.irs.gov/pub/irs-drop/n-25-67.pdf | 2026-11-13 |
+| Notice 2026-10. Read for the 14 cents charitable mileage rate. | https://www.irs.gov/pub/irs-drop/n-26-10.pdf | 2026-11-13 |
+| Treas. Reg. 1.170A-10 (eCFR). Read for carryovers used up in a standard deduction year. | https://www.ecfr.gov/current/title-26/chapter-I/subchapter-A/part-1/subject-group-ECFR4f0b2f9ff1b8a63/section-1.170A-10 | 2026-11-13 |
+| IRS Pub. 526 (2025), Charitable Contributions. Read for fair market value of property, delivery of stock, donor-advised fund sponsors and Form 8283. | https://www.irs.gov/pub/irs-pdf/p526.pdf | 2026-11-13 |
+| IRS Pub. 544, Sales and Other Dispositions of Assets. Read for the definition of a sale. | https://www.irs.gov/pub/irs-pdf/p544.pdf | 2026-11-13 |
+| IRS Pub. 561, Determining the Value of Donated Property. Read for appraisals. | https://www.irs.gov/pub/irs-pdf/p561.pdf | 2026-11-13 |
+| IRS Pub. 590-B (2025). Read for QCDs counting toward the required minimum distribution and the per-spouse limit. | https://www.irs.gov/pub/irs-pdf/p590b.pdf | 2026-11-13 |
+
+Not yet confirmed: the 2026 Pub. 526 and the 2026 Form 1040 and Schedule A were not yet published when read, so the line on which the non-itemizer deduction is entered is not quoted; the 2026 rules above are taken from the Act itself.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-03. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `us-charitable-giving-strategies` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/us-charitable-giving-strategies. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-13. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `us-charitable-giving-strategies` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/us-charitable-giving-strategies. If neither is available, confirm every figure against the official source pages cited above before relying on it.
