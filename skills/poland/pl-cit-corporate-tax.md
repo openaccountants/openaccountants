@@ -268,6 +268,9 @@ expected:
 | podatki.gov.pl, CIT forms (CIT-8 (34), CIT-8AB (9), CIT-8E (4), CIT/M) | https://www.podatki.gov.pl/podatki-firmowe/cit/formularze-cit | 2026-10-22 |
 | NBP, EUR mid rate 2 January 2026 (4.2156) and 1 October 2025 (4.2586) | https://api.nbp.pl/api/exchangerates/rates/a/eur/2026-01-02/?format=json and https://api.nbp.pl/api/exchangerates/rates/a/eur/2025-10-01/?format=json | 2026-10-22 |
 | NBP base interest rates (lombard 4.25% from 5 March 2026) | https://static.nbp.pl/dane/stopy/stopy_procentowe.xml | 2026-10-22 |
+| Read for Banks (excluding cooperative banks), and a PGK on the share of its income from a member bank: isap.sejm.gov.pl | https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20250001658 | 2026-11-14 |
+| Read for Late payment interest (odsetki za zwłokę): isap.sejm.gov.pl | https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WMP20260000269 | 2026-11-14 |
+| Read for Pillar Two: isap.sejm.gov.pl | https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20240001685 | 2026-11-14 |
 
 The ISAP pages (isap.sejm.gov.pl) served a browser check to scripted requests on 2026-10-22, so the law texts were read from the Sejm's own ELI service (api.sejm.gov.pl), which serves the same documents.
 

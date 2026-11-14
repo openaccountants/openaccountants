@@ -35,18 +35,18 @@ type: computation
 | Item | Rate or amount | Year | Source |
 |---|---|---|---|
 | PIT scale, first band | 12% up to PLN 120,000, minus the tax-reducing amount PLN 3,600 | 2026 | PIT Act art. 27(1), https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20260000592 |
-| PIT scale, second band | PLN 10,800 + 32% of the excess over PLN 120,000 | 2026 | PIT Act art. 27(1) |
-| Tax-free amount (effect of the PLN 3,600 reduction) | PLN 30,000 a year (3,600 / 12%) | 2026 | PIT Act art. 27(1) |
-| Monthly advance rate | 12% until cumulative income from this payer exceeds PLN 120,000; split in the crossing month; 32% after | 2026 | PIT Act art. 32(2) |
-| Monthly reduction with PIT-2 statement | 1/12 of PLN 3,600 = PLN 300 (or 1/24 or 1/36 if split across up to three payers) | 2026 | PIT Act art. 31b(1)-(3) |
-| Standard employee costs (KUP), one job | PLN 250 a month, max PLN 3,000 a year | 2026 | PIT Act art. 22(2)(1) |
-| Standard costs, commuter from another town | PLN 300 a month, max PLN 3,600 a year | 2026 | PIT Act art. 22(2)(3) |
-| Standard costs, several jobs | max PLN 4,500 a year (PLN 5,400 for commuters) | 2026 | PIT Act art. 22(2)(2) and (4) |
-| Author's costs (creative work) | 50% of revenue after employee social contributions; with exempt revenue, capped at PLN 120,000 a year in total | 2026 | PIT Act art. 22(9)(3), 22(9a), 22(9aa) |
-| Reliefs: under 26, relocation to Poland, parents of 4+ children, working seniors | exempt revenue, PLN 85,528 a year in total for all four | 2026 | PIT Act art. 21(1)(148), (152)-(154), 21(44) |
+| PIT scale, second band | PLN 10,800 + 32% of the excess over PLN 120,000 | 2026 | PIT Act art. 27(1); https://api.sejm.gov.pl/eli/acts/DU/2026/592/text.pdf |
+| Tax-free amount (effect of the PLN 3,600 reduction) | PLN 30,000 a year (3,600 / 12%) | 2026 | PIT Act art. 27(1); https://api.sejm.gov.pl/eli/acts/DU/2026/592/text.pdf |
+| Monthly advance rate | 12% until cumulative income from this payer exceeds PLN 120,000; split in the crossing month; 32% after | 2026 | PIT Act art. 32(2); https://api.sejm.gov.pl/eli/acts/DU/2026/592/text.pdf |
+| Monthly reduction with PIT-2 statement | 1/12 of PLN 3,600 = PLN 300 (or 1/24 or 1/36 if split across up to three payers) | 2026 | PIT Act art. 31b(1)-(3); https://api.sejm.gov.pl/eli/acts/DU/2026/592/text.pdf |
+| Standard employee costs (KUP), one job | PLN 250 a month, max PLN 3,000 a year | 2026 | PIT Act art. 22(2)(1); https://api.sejm.gov.pl/eli/acts/DU/2026/592/text.pdf |
+| Standard costs, commuter from another town | PLN 300 a month, max PLN 3,600 a year | 2026 | PIT Act art. 22(2)(3); https://api.sejm.gov.pl/eli/acts/DU/2026/592/text.pdf |
+| Standard costs, several jobs | max PLN 4,500 a year (PLN 5,400 for commuters) | 2026 | PIT Act art. 22(2)(2) and (4); https://api.sejm.gov.pl/eli/acts/DU/2026/592/text.pdf |
+| Author's costs (creative work) | 50% of revenue after employee social contributions; with exempt revenue, capped at PLN 120,000 a year in total | 2026 | PIT Act art. 22(9)(3), 22(9a), 22(9aa); https://api.sejm.gov.pl/eli/acts/DU/2026/592/text.pdf |
+| Reliefs: under 26, relocation to Poland, parents of 4+ children, working seniors | exempt revenue, PLN 85,528 a year in total for all four | 2026 | PIT Act art. 21(1)(148), (152)-(154), 21(44); https://api.sejm.gov.pl/eli/acts/DU/2026/592/text.pdf |
 | Pension insurance (emerytalne) | 19.52%: 9.76% employee, 9.76% employer | 2026 | ZUS Act art. 22(1)(1), 16(1), https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20260000199 |
-| Disability insurance (rentowe) | 8%: 1.5% employee, 6.5% employer | 2026 | ZUS Act art. 22(1)(2), 16(1b) |
-| Sickness insurance (chorobowe) | 2.45%, all employee | 2026 | ZUS Act art. 22(1)(3), 16(2) |
+| Disability insurance (rentowe) | 8%: 1.5% employee, 6.5% employer | 2026 | ZUS Act art. 22(1)(2), 16(1b); https://www.zus.pl/baza-wiedzy/skladki-wskazniki-odsetki/skladki/wysokosc-skladek-na-ubezpieczenia-spoleczne |
+| Sickness insurance (chorobowe) | 2.45%, all employee | 2026 | ZUS Act art. 22(1)(3), 16(2); https://www.zus.pl/baza-wiedzy/skladki-wskazniki-odsetki/skladki/wysokosc-skladek-na-ubezpieczenia-spoleczne |
 | Accident insurance (wypadkowe) | 0.40% to 8.12% range in the Act; payers with 9 or fewer insured: 50% of the highest group rate, 1.67%; all employer | 2026 | ZUS Act art. 22(1)(4), 16(3); Accident Insurance Act art. 28(1), https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20250001644; ZUS, https://www.zus.pl/baza-wiedzy/skladki-wskazniki-odsetki/skladki/wysokosc-skladek-na-ubezpieczenia-spoleczne |
 | Accident rates by activity group (10 or more insured) | group rates from Annex 2 (0.67% to 3.33%), times the payer's correction factor | 2026 | Regulation on accident rates, Dz.U. 2025 poz. 1874, https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20250001874 |
 | Annual cap on pension and disability base (30 x forecast average wage) | PLN 282,600 (average wage PLN 9,420) | 2026 | ZUS Act art. 19(1); M.P. 2025 poz. 1206, https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WMP20250001206 |
@@ -238,5 +238,6 @@ The advances are only prepayments. If the employee has other income or reliefs (
 | Solidarity Fund Act, Dz.U. 2024 poz. 1848 (art. 4) | https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20240001848 | 2026-10-23 |
 | Fiscal Penal Code, Dz.U. 2025 poz. 633 (art. 77-78) | https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20250000633 | 2026-10-23 |
 | Regulation (EC) No 883/2004 on social security coordination | https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32004R0883 | 2026-10-23 |
+| Read for PIT scale, second band, Tax-free amount (effect of the PLN 3,600 reduction), Monthly advance rate, Monthly reduction with PIT-2 statement: official text of Dz.U. 2026 poz. 592 (Sejm ELI) | https://api.sejm.gov.pl/eli/acts/DU/2026/592/text.pdf | 2026-11-14 |
 
 Not yet confirmed: whether the employer's PPK payment is employment revenue of the employee under PIT Act art. 12(1), and in which month it arises (the PIT Act and PPK Act do not say so expressly; only secondary sources were found); the 2027 minimum wage (Dz.U. 2026 poz. 1213) is out of scope for this 2026 skill.

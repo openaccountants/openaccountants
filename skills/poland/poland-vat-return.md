@@ -43,15 +43,15 @@ This skill covers Polish VAT for a business registered in Poland: when to regist
 | Reduced rate, Annex 10 goods (basic foods, books, some hygiene goods) | 5% | 2026 | same, art. 41 ust. 2a |
 | Intra-EU supply of goods; export of goods | 0% (export needs proof of exit before the return deadline) | 2026 | same, art. 41 ust. 3, 4, 6 |
 | Small-business exemption: sales without VAT, previous and current year | PLN 240,000 | 2026 | same, art. 113 ust. 1; https://www.podatki.gov.pl/podatki-firmowe/vat/stawki-i-limity |
-| Businesses with 2025 sales over PLN 200,000 and up to PLN 240,000 | may use the exemption in 2026 | 2026 | Dz.U. 2025 poz. 896 art. 2, quoted in the notice to Dz.U. 2026 poz. 1263 |
-| EU SME scheme: EU-wide turnover cap | EUR 100,000 | 2026 | VAT Act art. 113a ust. 1, art. 113b ust. 1 |
+| Businesses with 2025 sales over PLN 200,000 and up to PLN 240,000 | may use the exemption in 2026 | 2026 | Dz.U. 2025 poz. 896 art. 2, quoted in the notice to Dz.U. 2026 poz. 1263; https://api.sejm.gov.pl/eli/acts/DU/2025/896/text.pdf |
+| EU SME scheme: EU-wide turnover cap | EUR 100,000 | 2026 | VAT Act art. 113a ust. 1, art. 113b ust. 1; https://api.sejm.gov.pl/eli/acts/DU/2026/622/text.pdf |
 | Small taxpayer: previous-year sales including VAT | EUR 2,000,000 = PLN 8,517,000 | 2026 | VAT Act art. 2 pkt 25; https://api.nbp.pl/api/exchangerates/rates/a/eur/2025-10-01/?format=json |
-| Split payment (MPP) compulsory: Annex 15 goods or services on an invoice with a gross total over | PLN 15,000 | 2026 | VAT Act art. 108a ust. 1a |
+| Split payment (MPP) compulsory: Annex 15 goods or services on an invoice with a gross total over | PLN 15,000 | 2026 | VAT Act art. 108a ust. 1a; https://api.sejm.gov.pl/eli/acts/DU/2026/622/text.pdf |
 | Payment between businesses must go through a bank account if one transaction is over | PLN 15,000 | 2026 | https://api.sejm.gov.pl/eli/acts/DU/2025/1480/text.pdf (Business Law art. 19) |
-| Input VAT on cars used also privately | 50% | 2026 | VAT Act art. 86a ust. 1 |
-| KSeF: last month a business may issue paper or PDF invoices if 2024 sales with VAT were up to PLN 200,000,000 | March 2026 | 2026 | VAT Act art. 145l |
-| KSeF: invoices outside KSeF still allowed if invoices issued in the month total PLN 10,000 or less with VAT | to 31 December 2026 | 2026 | VAT Act art. 145m |
-| Refund of excess input VAT | 40 days from filing (25 days if the conditions of art. 87 ust. 6 are met) | 2026 | VAT Act art. 87 ust. 2, 6 |
+| Input VAT on cars used also privately | 50% | 2026 | VAT Act art. 86a ust. 1; https://api.sejm.gov.pl/eli/acts/DU/2026/1263/text.pdf |
+| KSeF: last month a business may issue paper or PDF invoices if 2024 sales with VAT were up to PLN 200,000,000 | March 2026 | 2026 | VAT Act art. 145l; https://api.sejm.gov.pl/eli/acts/DU/2026/592/text.pdf |
+| KSeF: invoices outside KSeF still allowed if invoices issued in the month total PLN 10,000 or less with VAT | to 31 December 2026 | 2026 | VAT Act art. 145m; https://api.sejm.gov.pl/eli/acts/DU/2026/622/text.pdf |
+| Refund of excess input VAT | 40 days from filing (25 days if the conditions of art. 87 ust. 6 are met) | 2026 | VAT Act art. 87 ust. 2, 6; https://api.sejm.gov.pl/eli/acts/DU/2026/1263/text.pdf |
 | Late payment interest | 10.50% a year from 5 March 2026; reduced 5.25%; higher 15.75% | 2026 | https://api.sejm.gov.pl/eli/acts/MP/2026/269/text.pdf; Tax Ordinance art. 56 § 1; https://static.nbp.pl/dane/stopy/stopy_procentowe_archiwum.xml |
 
 ## The taxable base
@@ -185,5 +185,6 @@ expected:
 | Ministry of Finance, KSeF portal | https://ksef.podatki.gov.pl/ | 2026-10-23 |
 | NBP base rates archive (lombard rate 4.25% from 5 March 2026) | https://static.nbp.pl/dane/stopy/stopy_procentowe_archiwum.xml | 2026-10-23 |
 | NBP EUR mid rate of 1 October 2025 (4.2586) | https://api.nbp.pl/api/exchangerates/rates/a/eur/2025-10-01/?format=json | 2026-10-23 |
+| Read for Businesses with 2025 sales over PLN 200,000 and up to PLN 240,000: official text of Dz.U. 2025 poz. 896 (Sejm ELI) | https://api.sejm.gov.pl/eli/acts/DU/2025/896/text.pdf | 2026-11-14 |
 
 Not yet confirmed: the PLN 8,517,000 small-taxpayer limit is computed here from the NBP rate; the Ministry page states the EUR 2,000,000 rule but no PLN figure. The CIT Act article on split payment and the white list (art. 15d) was not re-read for this version. When a business that has lost the small-business exemption must have filed VAT-R (before the crossing sale or before the next one) was not settled from the text of art. 96. The date the EU SME scheme (art. 113a-113b) first applied is not given in the consolidated text.
