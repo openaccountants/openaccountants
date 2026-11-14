@@ -45,27 +45,27 @@ This skill computes the annual tax of a resident individual. For non-residents, 
 | Taxable income (EUR) | Rate | Cumulative tax at top of band (EUR) | Source |
 |---|---|---|---|
 | 0 to 13,230 | 0% | 0.00 | https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
-| 13,230 to 15,435 | 8% | 176.40 | https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
-| 15,435 to 17,640 | 9% | 374.85 | https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
-| 17,640 to 19,845 | 10% | 595.35 | https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
-| 19,845 to 22,050 | 11% | 837.90 | https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
-| 22,050 to 24,255 | 12% | 1,102.50 | https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
-| 24,255 to 26,550 | 14% | 1,423.80 | https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
-| 26,550 to 28,845 | 16% | 1,791.00 | https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
-| 28,845 to 31,140 | 18% | 2,204.10 | https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
-| 31,140 to 33,435 | 20% | 2,663.10 | https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
-| 33,435 to 35,730 | 22% | 3,168.00 | https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
-| 35,730 to 38,025 | 24% | 3,718.80 | https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
-| 38,025 to 40,320 | 26% | 4,315.50 | https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
-| 40,320 to 42,615 | 28% | 4,958.10 | https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
-| 42,615 to 44,910 | 30% | 5,646.60 | https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
-| 44,910 to 47,205 | 32% | 6,381.00 | https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
-| 47,205 to 49,500 | 34% | 7,161.30 | https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
-| 49,500 to 51,795 | 36% | 7,987.50 | https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
-| 51,795 to 54,090 | 38% | 8,859.60 | https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
-| 54,090 to 117,450 | 39% | 33,570.00 | https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
-| 117,450 to 176,160 | 40% | 57,054.00 | https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
-| 176,160 to 234,870 | 41% | 81,125.10 | https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
+| 13,230 to 15,435 | 8% | 176.40 (computed) | https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
+| 15,435 to 17,640 | 9% | 374.85 (computed) | https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
+| 17,640 to 19,845 | 10% | 595.35 (computed) | https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
+| 19,845 to 22,050 | 11% | 837.90 (computed) | https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
+| 22,050 to 24,255 | 12% | 1,102.50 (computed) | https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
+| 24,255 to 26,550 | 14% | 1,423.80 (computed) | https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
+| 26,550 to 28,845 | 16% | 1,791.00 (computed) | https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
+| 28,845 to 31,140 | 18% | 2,204.10 (computed) | https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
+| 31,140 to 33,435 | 20% | 2,663.10 (computed) | https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
+| 33,435 to 35,730 | 22% | 3,168.00 (computed) | https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
+| 35,730 to 38,025 | 24% | 3,718.80 (computed) | https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
+| 38,025 to 40,320 | 26% | 4,315.50 (computed) | https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
+| 40,320 to 42,615 | 28% | 4,958.10 (computed) | https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
+| 42,615 to 44,910 | 30% | 5,646.60 (computed) | https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
+| 44,910 to 47,205 | 32% | 6,381.00 (computed) | https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
+| 47,205 to 49,500 | 34% | 7,161.30 (computed) | https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
+| 49,500 to 51,795 | 36% | 7,987.50 (computed) | https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
+| 51,795 to 54,090 | 38% | 8,859.60 (computed) | https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
+| 54,090 to 117,450 | 39% | 33,570.00 (computed) | https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
+| 117,450 to 176,160 | 40% | 57,054.00 (computed) | https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
+| 176,160 to 234,870 | 41% | 81,125.10 (computed) | https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
 | above 234,870 | 42% | | https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf |
 
 **How each class uses the scale.**
@@ -101,8 +101,8 @@ This skill computes the annual tax of a resident individual. For non-residents, 
 
 | Item | Amount | Source |
 |---|---|---|
-| Employee share | Pension 8.50%, sickness 2.80%, cash-benefit surcharge 0.25%, dependency 1.40% (total 12.95%) | [CCSS notice of 16 January 2026](https://ccss.public.lu/dam-assets/publications/2026/ccss-20260116-avis-80-99-fr-de.pdf) |
-| Self-employed | Pension 17.00%, sickness 5.60%, cash benefits 0.50% where covered, dependency 1.40% (24.50% before accident insurance); accident 0.65% x factor | [CCSS, paramètres sociaux](https://ccss.public.lu/fr/parametres-sociaux.html) |
+| Employee share | Pension 8.50%, sickness 2.80%, cash-benefit surcharge 0.25%, dependency 1.40% (total 12.95%, computed) | [CCSS notice of 16 January 2026](https://ccss.public.lu/dam-assets/publications/2026/ccss-20260116-avis-80-99-fr-de.pdf) |
+| Self-employed | Pension 17.00%, sickness 5.60%, cash benefits 0.50% where covered, dependency 1.40% (24.50% computed, before accident insurance); accident 0.65% x factor | [CCSS, paramètres sociaux](https://ccss.public.lu/fr/parametres-sociaux.html) |
 | Monthly ceiling (5 x SSM) | EUR 13,518.68 from 1 January 2026; EUR 13,856.63 from 1 June 2026 | CCSS notices of [16 January](https://ccss.public.lu/dam-assets/publications/2026/ccss-20260116-avis-80-99-fr-de.pdf) and [14 August 2026](https://ccss.public.lu/dam-assets/publications/2026/ccss-20260814-avis-80-99.pdf) |
 | Social minimum wage, unskilled, 18+ | EUR 2,703.74 a month from 1 January 2026; EUR 2,771.33 from 1 June 2026 | same notices |
 | Dependency abatement | EUR 675.93 a month from 1 January 2026; EUR 692.83 from 1 June 2026; the dependency contribution has no ceiling | same notices |

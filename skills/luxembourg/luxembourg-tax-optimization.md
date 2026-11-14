@@ -62,7 +62,7 @@ Out of scope: investment funds, SPF, securitisation and holding structures for g
 | Employment fund contribution, companies | 7% of the IRC | 2025 onwards | [ACD, charge fiscale](https://impotsdirects.public.lu/fr/az/c/charg_fisc.html) |
 | ICC (municipal business tax) allowance | EUR 40,000 for sole traders and partnerships; EUR 17,500 for companies paying IRC | current | [ACD, calcul de l'impôt commercial](https://impotsdirects.public.lu/fr/az/c/calc_comm.html) |
 | ICC rate | 3% of profit after the allowance, times the commune's multiplier (225% in Luxembourg City, so 6.75%) | current | same; [ACD, charge fiscale](https://impotsdirects.public.lu/fr/az/c/charg_fisc.html) |
-| Combined company rate, Luxembourg City, above EUR 200,000 | 23.87% | 2025 onwards | [ACD, charge fiscale](https://impotsdirects.public.lu/fr/az/c/charg_fisc.html) |
+| Combined company rate, Luxembourg City, above EUR 200,000 | 23.87% (computed: 16% + 1.12% + 6.75%) | 2025 onwards | [ACD, charge fiscale](https://impotsdirects.public.lu/fr/az/c/charg_fisc.html) |
 | Minimum net wealth tax, company balance sheet up to EUR 350,000 | EUR 535 (EUR 1,605 up to EUR 2m; EUR 4,815 above) | 2025 onwards | [ACD, IF tariff](https://impotsdirects.public.lu/fr/az/t/tarif-applicable-collectivites/tarif-collect-if.html) |
 | Self-employed CCSS rates | Pension 17%, health 5.60%, cash benefits 0.50%, dependency 1.40%, accident 0.65% times a factor | 2026 | [CCSS, paramètres sociaux](https://ccss.public.lu/fr/parametres-sociaux.html) |
 | Contribution base, monthly minimum and maximum | EUR 2,703.74 and EUR 13,518.68 from 1 January 2026; EUR 2,771.33 and EUR 13,856.63 from 1 June 2026 | 2026 | same |
@@ -225,7 +225,7 @@ expected:
 | ACD, late filing and late payment. Read for the late filing and late payment rules. | https://impotsdirects.public.lu/fr/az/p/prelev.html | 2026-10-23 |
 | ACD, own home of the owner (interest limits from tax year 2024). Read for the own home interest limits. | https://impotsdirects.public.lu/fr/az/h/habit_pers.html | 2026-10-23 |
 | Legilux, law of 19 December 2025, Mémorial A 2025 n° 617 (start-up credit, from tax year 2026). Read for the start-up investment credit. | https://legilux.public.lu/eli/etat/leg/loi/2025/12/19/a617/jo | 2026-10-23 |
-| Legilux, law of 19 December 2025, Mémorial A 2025 n° 623 (EUR 4,500 pension cap, art. 129g, from tax year 2026) | https://legilux.public.lu/eli/etat/leg/loi/2025/12/19/a623/jo | 2026-10-23 |
+| Legilux, law of 19 December 2025, Mémorial A 2025 n° 623 (EUR 4,500 pension cap, art. 129g, from tax year 2026) | https://data.legilux.public.lu/filestore/eli/etat/leg/loi/2025/12/19/a623/jo/fr/pdfa/eli-etat-leg-loi-2025-12-19-a623-jo-fr-pdfa.pdf | 2026-10-23 |
 | ACD, laws of 2018 (ATAD transposition, law of 21 December 2018). Read for the ATAD rules. | https://impotsdirects.public.lu/fr/legislation/legi18.html | 2026-10-23 |
 | CCSS, social parameters (2026 rates, minimum and maximum base). Read for the 2026 contribution rates and bases. | https://ccss.public.lu/fr/parametres-sociaux.html | 2026-10-23 |
 
