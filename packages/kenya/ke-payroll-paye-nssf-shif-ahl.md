@@ -1,13 +1,14 @@
 ---
 name: ke-payroll-paye-nssf-shif-ahl
 description: "Kenyan employer payroll for the 2026 year of income: PAYE under section 37 and the Third Schedule of the Income Tax Act (Cap. 470), NSSF pension contributions under the NSSF Act 2013 (Year 4 rates from February 2026), the Social Health Insurance Fund (SHIF) deduction, and the Affordable Housing Levy (AHL). Covers the 10% to 35% bands, the KShs 2 400 monthly personal relief, insurance relief, pre-tax deductions, NSSF Tier I and Tier II with the 9 000 and 108 000 limits, SHIF at 2.75% with the KShs 300 minimum, AHL at 1.5% plus 1.5%, the ninth-day deadlines, and late penalties and interest. Trigger on: Kenya PAYE, Kenya payroll, NSSF Tier II 2026, SHIF deduction, housing levy, P10 return, net pay Kenya, personal relief Kenya. Out of scope: self-employed SHIF and NSSF (ke-nhif-nssf), individual returns (ke-income-tax), NITA levy, benefits valuation."
-version: 0.1
+version: 0.2
 jurisdiction: KE
 tax_year: 2026
-last_updated: 2026-11-02
+last_updated: 2026-11-14
 category: payroll
 tier: 2
 domain: payroll
+type: computation
 ---
 
 # Kenyan payroll: PAYE, NSSF, SHIF and the Affordable Housing Levy (2026)

@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/de-payroll"
   jurisdiction: "DE"
   tax_year: "2026"
-  last_updated: "2026-10-31"
+  last_updated: "2026-11-14"
 ---
 
 # German payroll 2026: wage tax, social insurance, Minijobs and reporting
@@ -78,14 +78,14 @@ All wage tax amounts are yearly. The PAP annualises the period's pay, computes t
 
 **Employee care share by children**, derived from the rows above:
 
-| Children | Outside Saxony: employee | Outside Saxony: employer | Saxony: employee | Saxony: employer |
-| --- | --- | --- | --- | --- |
-| None, employee 23 or older | 2.4% | 1.8% | 2.9% | 1.3% |
-| One child (any age); or childless and under 23 | 1.8% | 1.8% | 2.3% | 1.3% |
-| Two under 25 | 1.55% | 1.8% | 2.05% | 1.3% |
-| Three under 25 | 1.3% | 1.8% | 1.8% | 1.3% |
-| Four under 25 | 1.05% | 1.8% | 1.55% | 1.3% |
-| Five or more under 25 | 0.8% | 1.8% | 1.3% | 1.3% |
+| Children | Outside Saxony: employee | Outside Saxony: employer | Saxony: employee | Saxony: employer | Source |
+| --- | --- | --- | --- | --- | --- |
+| None, employee 23 or older | 2.4% | 1.8% | 2.9% | 1.3% | https://www.gesetze-im-internet.de/pbav_2025/__1.html ; https://www.gesetze-im-internet.de/sgb_11/__55.html ; https://www.gesetze-im-internet.de/sgb_11/__58.html |
+| One child (any age); or childless and under 23 | 1.8% | 1.8% | 2.3% | 1.3% | https://www.gesetze-im-internet.de/pbav_2025/__1.html ; https://www.gesetze-im-internet.de/sgb_11/__55.html ; https://www.gesetze-im-internet.de/sgb_11/__58.html |
+| Two under 25 | 1.55% | 1.8% | 2.05% | 1.3% | https://www.gesetze-im-internet.de/pbav_2025/__1.html ; https://www.gesetze-im-internet.de/sgb_11/__55.html ; https://www.gesetze-im-internet.de/sgb_11/__58.html |
+| Three under 25 | 1.3% | 1.8% | 1.8% | 1.3% | https://www.gesetze-im-internet.de/pbav_2025/__1.html ; https://www.gesetze-im-internet.de/sgb_11/__55.html ; https://www.gesetze-im-internet.de/sgb_11/__58.html |
+| Four under 25 | 1.05% | 1.8% | 1.55% | 1.3% | https://www.gesetze-im-internet.de/pbav_2025/__1.html ; https://www.gesetze-im-internet.de/sgb_11/__55.html ; https://www.gesetze-im-internet.de/sgb_11/__58.html |
+| Five or more under 25 | 0.8% | 1.8% | 1.3% | 1.3% | https://www.gesetze-im-internet.de/pbav_2025/__1.html ; https://www.gesetze-im-internet.de/sgb_11/__55.html ; https://www.gesetze-im-internet.de/sgb_11/__58.html |
 
 Do not read the care rate from § 55(1) SGB XI: the statute still prints "3,4 Prozent"; the current 3.6% was set by regulation (PBAV 2025).
 
@@ -400,4 +400,4 @@ Not yet confirmed: the Federal Gazette text of the labour ministry's 2026 factor
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-31. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `de-payroll` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/de-payroll. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `de-payroll` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/de-payroll. If neither is available, confirm every figure against the official source pages cited above before relying on it.

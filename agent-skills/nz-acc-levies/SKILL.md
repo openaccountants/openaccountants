@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/nz-acc-levies"
   jurisdiction: "NZ"
   tax_year: "2026"
-  last_updated: "2026-10-31"
+  last_updated: "2026-11-14"
 ---
 
 # ACC levies in New Zealand: employees, the self-employed and employers
@@ -35,9 +35,9 @@ Out of scope: ACC claims, weekly compensation, rehabilitation, levy disputes and
 
 | Levy | What it covers | Who pays | Where the rate comes from |
 | --- | --- | --- | --- |
-| Earners' levy | Injuries outside work (IR335 page 18: "to cover the cost of non-work-related injuries") | Employees through PAYE; the self-employed on their ACC invoice; close companies on shareholder-employee pay with no PAYE | IRD rates page (below) |
-| Work levy | Injuries at work | Employers, for their employees; the self-employed, for themselves | Set by ACC for each classification unit. **check** on the ACC invoice |
-| Working Safer levy | Collected by ACC with the other levies (IRD lists it alongside the Work levy for the self-employed) | Businesses and the self-employed | ACC invoice. **check** |
+| Earners' levy | Injuries outside work (IR335 page 18: "to cover the cost of non-work-related injuries") | Employees through PAYE; the self-employed on their ACC invoice; close companies on shareholder-employee pay with no PAYE | IRD rates page (below) (https://www.ird.govt.nz/income-tax/income-tax-for-individuals/acc-clients-and-carers/acc-earners-levy-rates) |
+| Work levy | Injuries at work | Employers, for their employees; the self-employed, for themselves | Set by ACC for each classification unit. **check** on the ACC invoice (IRD lists it for the self-employed: https://www.ird.govt.nz/situations/work-or-study-in-new-zealand) |
+| Working Safer levy | Collected by ACC with the other levies (IRD lists it alongside the Work levy for the self-employed) | Businesses and the self-employed | ACC invoice. **check** (IRD lists it for the self-employed: https://www.ird.govt.nz/situations/work-or-study-in-new-zealand) |
 
 Source for the self-employed list: IRD, "I am coming to work or study in New Zealand": "In addition to the Earners' levy that people getting salary or wages pay, you'll also pay the: Work levy Working Safer levy" ([IRD](https://www.ird.govt.nz/situations/work-or-study-in-new-zealand)).
 
@@ -82,9 +82,9 @@ IRD announced on 11 March 2025 that "The ACC earners' levies have now been set f
 
 | What | 2026-27 | Source wording |
 | --- | --- | --- |
-| Maximum liable earnings, employees and private domestic workers (Work and Earners' Accounts) | $156,641 | Row "Employees and private domestic workers ... (Work and Earners' Accounts)": 2025/26 $152,790, 2026/27 $156,641 |
-| Maximum liable earnings, self-employed people (Work and Earners' Accounts) | $156,641 | same table |
-| Minimum liable earnings on which self-employed people pay the Work and Earners' levies | $50,501 | "To increase the minimum liable earnings that self-employed people pay Work and Earners' levies on to $50,501 in 2026/27" |
+| Maximum liable earnings, employees and private domestic workers (Work and Earners' Accounts) | $156,641 | Row "Employees and private domestic workers ... (Work and Earners' Accounts)": 2025/26 $152,790, 2026/27 $156,641 (https://www.ird.govt.nz/-/media/project/ir/home/documents/digital-service-providers/software-providers/payroll-calculations-business-rules-specifications/payroll-calculations-and-business-rules-specification.pdf) |
+| Maximum liable earnings, self-employed people (Work and Earners' Accounts) | $156,641 | same table (https://www.ird.govt.nz/-/media/project/ir/home/documents/digital-service-providers/software-providers/payroll-calculations-business-rules-specifications/payroll-calculations-and-business-rules-specification.pdf) |
+| Minimum liable earnings on which self-employed people pay the Work and Earners' levies | $50,501 | "To increase the minimum liable earnings that self-employed people pay Work and Earners' levies on to $50,501 in 2026/27" (https://www.ird.govt.nz/-/media/project/ir/home/documents/digital-service-providers/software-providers/payroll-calculations-business-rules-specifications/payroll-calculations-and-business-rules-specification.pdf) |
 
 IR3G 2026 (PDF page 61) explains the minimum for 2025-26 returns: "If you were in full-time employment and have recorded a loss, or your earnings are below the minimum earnings threshold, you are still liable for ACC levies. These will be calculated at the minimum level." IRD does not say here who counts as working full time for this purpose, or whether part-time self-employed people are treated differently: **check** with ACC.
 
@@ -280,21 +280,21 @@ An employee amending the tax deducted on an IR3 works out the earners' levy with
 
 ## Sources
 
-- IRD, ACC earners' levy rates: https://www.ird.govt.nz/income-tax/income-tax-for-individuals/acc-clients-and-carers/acc-earners-levy-rates (read 2026-10-31)
-- IRD news, ACC earners' levies set (11 March 2025): https://www.ird.govt.nz/updates/news-folder/2025/acc-earners-levies-set (page returned 404 when tried on 2026-10-31; not read)
-- IRD, Employer's guide IR335 (September 2026): https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir300---ir399/ir335/ir335.pdf (read 2026-10-31)
-- IRD, Payroll calculations and business rules specification, 1 April 2026 to 31 March 2027: https://www.ird.govt.nz/-/media/project/ir/home/documents/digital-service-providers/software-providers/payroll-calculations-business-rules-specifications/payroll-calculations-and-business-rules-specification.pdf (read 2026-10-31)
-- IRD, Individual income tax return guide IR3G 2026: https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir1---ir99/ir3g/ir3g-2026.pdf (read 2026-10-31)
-- IRD, IR3B Schedule of business income (July 2026): https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir1---ir99/ir3b/ir3b-2026.pdf (read 2026-10-31)
-- IRD, ACC levies for a look-through company: https://www.ird.govt.nz/income-tax/income-tax-for-businesses-and-organisations/income-tax-for-companies/look-through-companies/acc-levies-for-a-look-through-company (read 2026-10-31)
-- IRD, I am coming to work or study in New Zealand: https://www.ird.govt.nz/situations/work-or-study-in-new-zealand (read 2026-10-31)
-- IRD, Updating a client's BIC code: https://www.ird.govt.nz/roles/tax-agents/updating-client-bic-code (read 2026-10-31)
-- IRD, Information sharing with ACC: https://www.ird.govt.nz/about-us/information-sharing/mous/acc (read 2026-10-31)
+- IRD, ACC earners' levy rates: https://www.ird.govt.nz/income-tax/income-tax-for-individuals/acc-clients-and-carers/acc-earners-levy-rates (read for the 2025-26, 2026-27 and 2027-28 earners' levy rates, maximum liable earnings and maximum levy, on 2026-11-14)
+- IRD news, ACC earners' levies set (11 March 2025): https://www.ird.govt.nz/updates/news-folder/2025/acc-earners-levies-set (page returned 404 when tried on 2026-10-31 and again on 2026-11-14; not read)
+- IRD, Employer's guide IR335 (September 2026): https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir300---ir399/ir335/ir335.pdf (read 2026-11-14 for the PAYE earners' levy rate, per-pay maximums, the ND rate and which payments carry the levy (page 18))
+- IRD, Payroll calculations and business rules specification, 1 April 2026 to 31 March 2027: https://www.ird.govt.nz/-/media/project/ir/home/documents/digital-service-providers/software-providers/payroll-calculations-business-rules-specifications/payroll-calculations-and-business-rules-specification.pdf (read 2026-11-14 for the 2026-27 maximum liable earnings ($156,641) and the self-employed minimum ($50,501))
+- IRD, Individual income tax return guide IR3G 2026: https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir1---ir99/ir3g/ir3g-2026.pdf (read for who pays which levy by situation and the return treatment, on 2026-11-14)
+- IRD, IR3B Schedule of business income (July 2026): https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir1---ir99/ir3b/ir3b-2026.pdf (read for where self-employed income for the levy is reported, on 2026-11-14)
+- IRD, ACC levies for a look-through company: https://www.ird.govt.nz/income-tax/income-tax-for-businesses-and-organisations/income-tax-for-companies/look-through-companies/acc-levies-for-a-look-through-company (read for ACC levies for LTC working owners, on 2026-11-14)
+- IRD, I am coming to work or study in New Zealand: https://www.ird.govt.nz/situations/work-or-study-in-new-zealand (read for the arrival position for new workers, on 2026-11-14)
+- IRD, Updating a client's BIC code: https://www.ird.govt.nz/roles/tax-agents/updating-client-bic-code (read for BIC codes and how they feed the Work levy, on 2026-11-14)
+- IRD, Information sharing with ACC: https://www.ird.govt.nz/about-us/information-sharing/mous/acc (read for what IRD shares with ACC for levy invoicing, on 2026-11-14)
 
-Not yet confirmed: the 11 March 2025 IRD news page returned 404 on 2026-10-31, so its quotation is not re-read; the rates it announced match the IRD rates table read that day. ACC-only points marked **check** in the text.
+Not yet confirmed: the 11 March 2025 IRD news page returned 404 on 2026-10-31 and on 2026-11-14, so its quotation is not re-read; the rates it announced match the IRD rates table read on 2026-11-14. ACC-only points marked **check** in the text.
 
 This skill is general information, not tax advice. Confirm ACC-only points with ACC and have a New Zealand chartered accountant review the position before acting.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-31. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `nz-acc-levies` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/nz-acc-levies. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `nz-acc-levies` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/nz-acc-levies. If neither is available, confirm every figure against the official source pages cited above before relying on it.

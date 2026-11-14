@@ -5,13 +5,14 @@ jurisdiction: GN
 category: international
 tax_year: 2026
 tax_year_notes: "Enacted 31 March 2026 replacement text; earlier periods and October rectification status unconfirmed."
-last_updated: 2026-11-01
-version: 1.2
+last_updated: 2026-11-14
+version: 1.3
 tier: 2
 domain: income-tax
+type: computation
 ---
 
-# Guinea CFU: property classification and rate workpaper v1.2
+# Guinea CFU: property classification and rate workpaper v1.3
 
 > **General reference only.** This Guide is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person’s facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in Guinea.
 

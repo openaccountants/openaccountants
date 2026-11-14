@@ -3,15 +3,16 @@ name: st-payroll-social
 description: "Use this skill for tax year 2026 working papers in Sao Tome and Principe (STP, jurisdiction ST). It covers INSS employer and employee rates, the conflict between the 6% and 4% in the official text and the reported 7% and 5%, the minimum contributory wage, the UCSS, monthly declarations by the 10th, self-employed schemes of 10% and 14%, and interest. It says plainly which figures come from official texts and which remain unverified because the Finance Ministry site could not be opened. Trigger phrases: Sao Tome tax, STP tax, Direccao dos Impostos, dobras, Sao Tome e Principe imposto. It is general reference for working papers, not for filing without review by a qualified professional in the country."
 jurisdiction: ST
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
+type: computation
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-version: 0.2
+version: 0.3
 category: international
 tier: 2
 domain: payroll
 ---
 
-# Sao Tome and Principe Payroll and Social Contributions v0.2
+# Sao Tome and Principe Payroll and Social Contributions v0.3
 
 > **Sourced from the law, in part.** Tax year 2026. The Finance Ministry site refused access on 1 November 2026, so the tax codes themselves were not read. Rows marked unverified carry older figures that no official page has confirmed. No accountant has signed this version and it has had no independent review yet.
 
@@ -25,12 +26,10 @@ Every employer with staff, including public bodies, embassies, religious bodies 
 |---|---|---|---|
 | Employee rate | 4% in the official text | 2026 text; see next row | [REPSO art. 101(3)](https://inss.gov.st/assets/Leis/Lei_n_19_2022.pdf); [INSS page](https://inss.gov.st/trabalhador-outrem.html) |
 | Employer rate | 6% in the official text | 2026 text; see next row | [REPSO art. 101(3)](https://inss.gov.st/assets/Leis/Lei_n_19_2022.pdf) |
-| Rates under Decree-Law 1/2025 | unverified: a law firm alert reports 7% employer and 5% employee from 1 January 2025, with 6% and 4% kept for some entities. The decree was not read. The older skill gave 8% and 6%, also unverified | 2026 | unverified |
 | Self-employed | 10% compulsory scheme; 14% wider scheme, on a chosen conventional pay | 2026 | [REPSO art. 131(1)](https://inss.gov.st/assets/Leis/Lei_n_19_2022.pdf); [INSS page](https://inss.gov.st/independente.html) |
 | Self-employed pay bands | 1, 3, 5 or 7 UCSS and upwards | 2026 | [REPSO art. 131(2)](https://inss.gov.st/assets/Leis/Lei_n_19_2022.pdf) |
 | UCSS | Db 1,000 for minimum pensions, minimum contributory wage, minimum sickness benefit, certificates; Db 800 for all else | 2026 if not since changed | [Joint Order 35/2023 art. 1](https://inss.gov.st/assets/Leis/Despacho_n_35_2023.pdf) |
 | Minimum contributory wage | Legal minimum wage; if none or below 1 UCSS, 1 UCSS | 2026 | [REPSO art. 99](https://inss.gov.st/assets/Leis/Lei_n_19_2022.pdf) |
-| Payroll income tax | Employer withholding: older point, unverified. See [income tax](st-income-tax.md) | 2026 | unverified |
 
 ## The base
 
@@ -106,4 +105,4 @@ expected:
 
 The Assembly of Sao Tome and Principe publishes its Diario on www2.camara.leg.br, hosted by the Brazilian Chamber of Deputies. The Ministry of Finance site (financas.gov.st) answered 403 by fetch and in a browser tab on 2026-11-01 and was not read.
 
-Not yet confirmed: Text of Decree-Law 1/2025 and current rates; 2026 legal minimum wage; UCSS after 2023; any wage ceiling; wage withholding table; portal steps beyond the pages cited.
+Not yet confirmed: Text of Decree-Law 1/2025 and current rates; 2026 legal minimum wage; UCSS after 2023; any wage ceiling; wage withholding table; portal steps beyond the pages cited; rows moved out of the rates table on 2026-11-14: social security rates (reported 7% employer and 5% employee from 1 January 2025, 6% and 4% kept for some entities; older skill 8% and 6%; the decree was not read) and employer withholding of payroll income tax.

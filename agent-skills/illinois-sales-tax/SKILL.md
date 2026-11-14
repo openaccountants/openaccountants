@@ -1,291 +1,245 @@
 ---
 name: illinois-sales-tax
-description: "Use this skill whenever asked about Illinois sales and use tax, Retailers' Occupation Tax (ROT), Illinois use tax, Service Occupation Tax, IDOR filings, Illinois exemptions, Illinois nexus, or any request involving Illinois state sales and use tax compliance. Trigger on phrases like \"Illinois sales tax\", \"IL sales tax\", \"ROT\", \"Retailers Occupation Tax\", \"IDOR\", \"ST-1\", \"Illinois exemption certificate\", or any request involving Illinois sales and use tax classification, filing, or compliance. ALWAYS read this skill before touching any Illinois sales tax work."
+description: "Illinois sales and use tax for 2026 on Form ST-1. Covers the Retailers' Occupation Tax and Use Tax, the Service Occupation Tax and Service Use Tax, the 6.25% State rate on general merchandise and 1% on drugs and medical appliances, the end of the State grocery tax on 1 January 2026 and the local 1% grocery tax, origin and destination sourcing, the 15% rate for undocumented destination sales, the $100,000 remote seller threshold with no transaction test from 2026, the four ways to compute Service Occupation Tax, resale certificates, filing frequency, the 1.75% retailers' discount capped at $1,000 a month, penalties and interest. Trigger on \"Illinois sales tax\", \"IL sales tax\", \"ROT\", \"Retailers Occupation Tax\", \"IDOR sales tax\", \"ST-1\", \"Illinois use tax\", \"Service Occupation Tax\", \"CRT-61\", \"Illinois grocery tax\", \"Illinois remote seller\"."
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/illinois-sales-tax"
   jurisdiction: "US-IL"
   tax_year: "2026"
-  last_updated: "2026-10-16"
+  last_updated: "2026-11-13"
 ---
 
-# Illinois sales and use tax: 2026 rates, sourcing, nexus, service occupation tax and filing
+# Illinois sales and use tax, 2026: rates, sourcing, remote sellers, service occupation tax and Form ST-1
 
-Figures are for tax year 2026, as they stand on 25 September 2026. They come from the Illinois Department of Revenue (IDOR) at tax.illinois.gov. Illinois "sales tax" is really two pairs of taxes: the Retailers' Occupation Tax (ROT) with the Use Tax, and the Service Occupation Tax (SOT) with the Service Use Tax (SUT). Three changes matter most for 2026: the State tax on groceries ended on 1 January 2026 (a local 1% grocery tax may apply instead), the 200-transaction test for remote sellers ended on 1 January 2026, and destination sourcing now reaches more sellers ([IDOR bulletin FY 2026-03](https://tax.illinois.gov/research/publications/bulletins/fy-2026-03.html); [IDOR bulletin FY 2026-12](https://tax.illinois.gov/research/publications/bulletins/fy-2026-12.html)). A short section at the end covers 2025 periods.
+> **Source-cited draft.** Built from the IDOR Form ST-1 instructions, the IDOR Retailers' Occupation Tax page, PIO-115, Informational Bulletins FY 2026-03, FY 2026-12 and FY 2026-13, Publication 103 and the IDOR interest rate page, read on 2026-11-13. No accountant has reviewed it. All outputs must be reviewed by a qualified tax professional before filing.
+
+**Answer first.** Illinois "sales tax" is two pairs of taxes collected on one return, Form ST-1: the Retailers' Occupation Tax (ROT) with the Use Tax, and the Service Occupation Tax (SOT) with the Service Use Tax. The State rate is **6.25%** on general merchandise and **1%** on qualifying drugs and medical appliances; local taxes are added by address. From **1 January 2026** the State 1% tax on groceries ended; a local grocery tax of exactly 1% applies in the RTA and Metro-East areas and wherever a municipality or county has adopted one. A remote seller must collect once it has **$100,000** of Illinois sales of goods in the preceding 12 months; the 200-transaction test ended on 1 January 2026. Returns are due by the **20th** of the month after the period, and the **1.75%** retailers' discount (at least $5 a year, at most **$1,000 a month**) is lost if the return or payment is late.
 
 ## Scope and who this is for
 
-- Retailers selling tangible personal property (TPP) in Illinois or to Illinois customers, deciding what rate to charge, which location's local taxes apply, and how to file Form ST-1.
-- Out-of-state sellers deciding whether they must register (remote retailers, marketplace sellers, marketplace facilitators), including sellers who registered only because of the old 200-transaction test.
-- Servicepersons (repairers, installers, and others) who transfer goods as part of a service and owe SOT on those goods.
-- Businesses that owe Use Tax because no Illinois tax was charged on their purchases.
-- Sellers accepting, and buyers giving, Form CRT-61 resale certificates.
-- Out of scope: vehicles and other titled or registered items (Forms ST-556 and RUT-25), motor fuel and prepaid sales tax on fuel, the Prepaid Wireless E911 Surcharge and ITAC Assessment, cannabis taxes, hotel taxes, and taxes that cities such as Chicago collect themselves. Detailed taxability of software is also out of scope; see "When to refuse or refer".
+In scope: retailers selling tangible personal property in Illinois or to Illinois customers, remote retailers and marketplace facilitators deciding whether to register, servicepersons that transfer goods with a service, businesses that owe Use Tax on their own purchases, and sellers and buyers using resale certificates, for 2026 periods and the 2025 periods still open.
+
+Out of scope, and where it goes:
+
+| Topic | Skill |
+| --- | --- |
+| Sales tax nexus across all states | `us-sales-tax-nexus-50-state-matrix` |
+| General US sales tax concepts | `us-sales-tax` |
+| Vehicles, watercraft, aircraft, trailers and mobile homes (Forms ST-556, RUT-25, RUT-50, RUT-75) | refer |
+| Motor fuel and prepaid sales tax on fuel, aviation fuel (Form ST-70) | refer |
+| Prepaid Wireless E911 Surcharge and ITAC Assessment (ST-1 Schedule F) | refer |
+| Automobile renting, hotel operators', telecommunications and cannabis taxes | refer |
+| Taxes cities and counties collect themselves (for example Chicago's own taxes) | refer to the city or county |
 
 ## Ask the client first
 
-- Does the business have any physical presence in Illinois: an office, warehouse, inventory, employees, agents or other representatives, or its own delivery vehicles?
-- If it is outside Illinois: what were its gross receipts from sales of goods to Illinois purchasers in each rolling 12-month period ending 31 March, 30 June, 30 September and 31 December? Did it register in the past only because it made 200 or more transactions?
-- Does it sell through a marketplace? Has the marketplace facilitator certified (Form CRT-63) that it collects and remits Illinois tax? Is any of its inventory in an Illinois warehouse, and is that inventory used only for marketplace orders?
-- Is each sale fulfilled from Illinois inventory, or from outside Illinois? Where is the buyer's delivery address?
-- What does it sell: general merchandise, groceries, candy or soft drinks, prepared food, drugs or medical appliances, or services that include parts or materials? Does it offer seating for eating on the premises?
-- For servicepersons: are parts separately stated on the bill? What is the business's annual cost ratio (cost of goods transferred divided by total service income)?
-- What filing frequency has IDOR assigned, and has IDOR told it to pay quarter-monthly or to file and pay electronically?
-- Does it hold a CRT-61 (with an active Illinois account ID) or an exemption number for every untaxed sale?
-- Were any returns filed or paid late, or is any period under audit? Is the business a remote retailer with unpaid tax for sales between 1 January 2021 and 30 June 2026 (the amnesty below ends 31 October 2026)?
+1. **Physical presence in Illinois**: office, warehouse, inventory, employees, agents, own delivery vehicles?
+2. **If outside Illinois**: gross receipts from sales of goods to Illinois purchasers in each 12-month period ending 31 March, 30 June, 30 September and 31 December. Did it register only because of the old 200-transaction test?
+3. **Marketplaces**: does a facilitator that meets the threshold collect for it, and is any inventory in a facilitator's Illinois warehouse used for its own orders too?
+4. **Each sale's fulfilment**: from Illinois inventory or from outside Illinois, and the delivery address.
+5. **What it sells**: general merchandise, groceries, candy or soft drinks, food prepared for immediate consumption, drugs or medical appliances, or services with parts. Does it provide seating?
+6. **Servicepersons**: are parts separately stated? What is the annual cost ratio (cost of goods transferred / total service income)?
+7. **Filing frequency** IDOR has assigned, and any quarter-monthly or electronic payment notice.
+8. **Resale certificates or exemption numbers** on file for every untaxed sale.
+9. **Late returns or payments, or an open audit.**
 
 ## The method, step by step
 
-1. **Decide whether the seller must register.** A seller with physical presence in Illinois must register and collect. A remote retailer (no physical presence) must register and collect once it has $100,000 or more in cumulative gross receipts from sales of goods to Illinois purchasers in the preceding 12 months, tested at the end of each calendar quarter. From 1 January 2026 there is no transaction-count test ([IDOR bulletin FY 2026-12](https://tax.illinois.gov/research/publications/bulletins/fy-2026-12.html)).
-2. **Classify each item.** General merchandise is taxed at the State rate of 6.25%. Qualifying drugs and medical appliances are taxed at the State rate of 1%. Groceries carry no State tax from 1 January 2026, but a local 1% grocery tax may apply ([Publication 113](https://tax.illinois.gov/research/publications/pubs/retailers-overview-of-sales-and-use-tax/requirements-for-retailers-who-file-form-st-1.html)). Candy, soft drinks, alcohol and food prepared for immediate consumption are general merchandise.
-3. **Decide where the sale is sourced.** A sale made from an Illinois location, or filled from Illinois inventory, takes the rates at that location (origin). A sale made from outside Illinois by a retailer that must collect takes the rates at the Illinois delivery address (destination) ([Publication 113](https://tax.illinois.gov/research/publications/pubs/retailers-overview-of-sales-and-use-tax/requirements-for-retailers-who-file-form-st-1.html)).
-4. **Look up the rate; do not memorise it.** Use the MyTax Illinois Tax Rate Finder ("Search by Address" for destination sales) for the period of the sale. Local rates generally change on 1 January and 1 July ([ROT page](https://tax.illinois.gov/research/taxinformation/sales/rot.html)).
-5. **Check the paperwork for untaxed sales.** A resale needs the buyer's active Illinois registration or resale number and a certification, usually Form CRT-61. An exempt organisation must give its IDOR exemption number ([ROT page](https://tax.illinois.gov/research/taxinformation/sales/rot.html)).
-6. **For services, work out the SOT base** using one of the four methods below. The service element itself is never taxed ([IDOR bulletin FY 2026-13](https://tax.illinois.gov/research/publications/bulletins/fy-2026-13.html)).
-7. **Accrue Use Tax** on your own purchases for use in Illinois where no Illinois tax was paid, on the Form ST-1 for the period of purchase, or of removal from resale stock ([Publication 113](https://tax.illinois.gov/research/publications/pubs/retailers-overview-of-sales-and-use-tax/requirements-for-retailers-who-file-form-st-1.html)).
-8. **File Form ST-1 (and Form ST-2 for multiple or destination sites) by the 20th** of the month after the period, even with nothing to report. Take the 1.75% discount only if you file and pay on time ([Form ST-1 instructions](https://tax.illinois.gov/forms/sales/salesandusetax/st-1-instructions.html)).
-9. **Keep records for three and one-half years** after filing, including full delivery addresses for destination sales ([record-keeping page](https://tax.illinois.gov/research/publications/pubs/retailers-overview-of-sales-and-use-tax/keeping-complete-and-accurate-records.html)).
+### Rates, bands and thresholds
 
-## Rates, sourcing and thresholds for 2026
+| Item | Amount, 2026 | Source |
+| --- | --- | --- |
+| State rate, general merchandise (high rate), plus local taxes | 6.25% | [IDOR PIO-115](https://tax.illinois.gov/research/publications/pio-115.html) |
+| State rate, qualifying drugs, medicines and medical appliances (low rate), plus local taxes | 1% | [IDOR PIO-115](https://tax.illinois.gov/research/publications/pio-115.html) |
+| State tax on groceries from 1 January 2026 | none (State 1% eliminated by Public Act 103-0781) | [IDOR Bulletin FY 2026-03](https://tax.illinois.gov/research/publications/bulletins/fy-2026-03.html) |
+| Local grocery tax a municipality or county may impose by ordinance; RTA and MED local grocery tax continues | exactly 1% | [IDOR Bulletin FY 2026-03](https://tax.illinois.gov/research/publications/bulletins/fy-2026-03.html) |
+| Remote retailer and marketplace facilitator threshold: cumulative gross receipts from sales of goods to Illinois purchasers, 12-month lookback | $100,000 or more | [IDOR Bulletin FY 2026-12](https://tax.illinois.gov/research/publications/bulletins/fy-2026-12.html) |
+| Transaction-count test for lookback periods after 31 December 2025 | none (200-transaction test removed by Public Act 104-0006) | [IDOR Bulletin FY 2026-12](https://tax.illinois.gov/research/publications/bulletins/fy-2026-12.html) |
+| Rate on destination sales whose location the seller cannot show, from 1 January 2026 | 15% | [Form ST-1 instructions](https://tax.illinois.gov/forms/sales/salesandusetax/st-1-instructions.html) |
+| Services threshold for remote servicepersons and service marketplaces | $100,000 in gross receipts from sales of service | [IDOR Bulletin FY 2026-13](https://tax.illinois.gov/research/publications/bulletins/fy-2026-13.html) |
+| Retailers' discount: share of tax due, or $5 a calendar year if greater, return and payment on time | 1.75% | [Form ST-1 instructions](https://tax.illinois.gov/forms/sales/salesandusetax/st-1-instructions.html) |
+| Retailers' discount cap, returns due on or after 1 January 2025 | $1,000 a month | [Form ST-1 instructions](https://tax.illinois.gov/forms/sales/salesandusetax/st-1-instructions.html) |
+| Filing frequency IDOR may assign, by average monthly liability | over $200 monthly; $50 to $200 quarterly; under $50 annual | [Form ST-1 instructions](https://tax.illinois.gov/forms/sales/salesandusetax/st-1-instructions.html) |
+| Quarter-monthly payments required if average monthly liability is | $20,000 or more | [IDOR ROT page](https://tax.illinois.gov/research/taxinformation/sales/rot.html) |
+| Return and payment due | 20th of the month after the period | [Form ST-1 instructions](https://tax.illinois.gov/forms/sales/salesandusetax/st-1-instructions.html) |
+| Late-payment penalty: 1 to 30 days late; 31 days or later | 2%; 10% | [IDOR Publication 103](https://tax.illinois.gov/research/publications/pubs/penalties-and-interest-for-illinois-taxes.html) |
+| Late-filing penalty, first tier | lesser of $250 or 2% of the tax required to be shown | [IDOR Publication 103](https://tax.illinois.gov/research/publications/pubs/penalties-and-interest-for-illinois-taxes.html) |
+| Interest rate on underpayments, 1 January 2025 to 31 December 2026 | 7% | [IDOR interest rates](https://tax.illinois.gov/individuals/interestrate.html) |
 
-### The four taxes ([ROT page](https://tax.illinois.gov/research/taxinformation/sales/rot.html); [Publication 113-SOT](https://tax.illinois.gov/research/publications/pubs/overview-of-service-occupation-tax.html))
+Local rates are not listed: they vary by address and change on 1 January and 1 July. Look up the rate for the address and period in the MyTax Illinois Tax Rate Finder (IDOR ROT page; ST-1 instructions).
+
+### The four taxes
 
 | Tax | Who owes it | How it works |
 | --- | --- | --- |
-| Retailers' Occupation Tax (ROT) | Retailers, on gross receipts from selling TPP at retail | Section 2 of the ROT Act (35 ILCS 120) |
-| Use Tax | Buyers, for using in Illinois TPP bought at retail anywhere | The retailer collects it from the customer, which reimburses the retailer's ROT. If the retailer does not collect it, the customer pays IDOR directly (35 ILCS 105) |
-| Service Occupation Tax (SOT) | Servicepersons, only on TPP they transfer as part of a sale of service | 35 ILCS 115 in IDOR's publications. The service element is not taxed |
-| Service Use Tax (SUT) | Buyers, for using in Illinois TPP received as part of a service | 35 ILCS 110 in IDOR's publications |
+| Retailers' Occupation Tax (35 ILCS 120) | Retailers, on gross receipts from selling goods at retail | The retailer's ROT is reimbursed by the Use Tax it collects from the customer in the same transaction (ROT page) |
+| Use Tax (35 ILCS 105) | Buyers, for using goods in Illinois | Paid to the retailer, or directly to IDOR when no Illinois tax was charged |
+| Service Occupation Tax (35 ILCS 115) | Servicepersons, only on goods transferred with a service | The service element is not taxed |
+| Service Use Tax (35 ILCS 110) | Buyers of services, on goods received with the service | Paid to the serviceperson, or directly |
 
-The Service Occupation Tax Act is 35 ILCS 115 and the Service Use Tax Act is 35 ILCS 110. The earlier version of this skill had these two reversed.
+From 1 January 2025 a lease of goods (other than items titled or registered with a State agency, except certain trailers) is a sale at retail, so lessors owe ROT on lease receipts (ROT page).
 
-From 1 January 2025, a lease of TPP (other than most titled or registered items) is a sale at retail, so lessors owe ROT on lease receipts ([ROT page](https://tax.illinois.gov/research/taxinformation/sales/rot.html)).
+### Steps
 
-### State rates ([Publication 113](https://tax.illinois.gov/research/publications/pubs/retailers-overview-of-sales-and-use-tax/requirements-for-retailers-who-file-form-st-1.html); [PIO-115](https://tax.illinois.gov/research/publications/pio-115.html))
+1. **Decide whether the seller must register.** Physical presence in Illinois: register and collect. A remote retailer or marketplace facilitator: register and collect once its gross receipts from sales of goods to Illinois purchasers reach $100,000 in the 12-month lookback, tested at the end of each quarter. For lookback periods ending after 31 December 2025 there is no transaction test (Bulletin FY 2026-12). IDOR's general ROT page still describes the 200-transaction test; the later bulletin governs.
+2. **Classify each item** (PIO-115). General merchandise at the high rate includes candy, soft drinks, alcohol, food prepared for immediate consumption and prewritten software. Drugs and medical appliances, including products whose label makes a medicinal claim, are at the low rate. Groceries (food to be eaten off the premises, other than alcohol, cannabis-infused food, soft drinks, candy or prepared food) carry no State tax from 2026 but may carry a 1% local grocery tax.
+3. **Source the sale.** A sale made from an Illinois location, or filled from Illinois inventory, takes that location's rates (origin). A sale made from outside Illinois by a retailer that must collect takes the rates of the Illinois delivery address (destination). From 1 January 2026 servicepersons with an Illinois place of business are also on destination sourcing for service sales otherwise sourced outside Illinois (Bulletin FY 2026-13). Keep the full delivery address for every destination sale, or IDOR taxes those receipts at 15% (ST-1 instructions).
+4. **Look up the combined rate** for the address and period in the Tax Rate Finder, including any local grocery tax.
+5. **Support every untaxed sale.** A resale needs the buyer's active Illinois registration or resale number and a resale certification, usually Form CRT-61; an exempt organisation must give its IDOR exemption number (ROT page).
+6. **For services, choose the SOT base** (Bulletin FY 2026-13): (1) SOT on the separately stated selling price of goods transferred; (2) SOT on 50% of the entire bill; (3) SOT on the serviceperson's cost price, for a de minimis serviceperson registered or required to be registered under Section 2a of the ROT Act; (4) Use Tax on cost price, for a de minimis serviceperson not otherwise required to register. A serviceperson whose only Illinois presence is meeting the $100,000 services threshold cannot use method 4 if it makes any retail sales to Illinois purchasers.
+7. **Accrue Use Tax** on purchases used in Illinois where no Illinois tax was paid, on the ST-1 for that period.
+8. **File Form ST-1** (with Form ST-2 for multiple or destination sites) by the 20th of the month after the period, including periods with nothing to report. Take the discount only when filing and paying on time.
 
-| Category | State rate 2026 | Conditions |
-| --- | --- | --- |
-| General merchandise | 6.25% | Most TPP, including clothing, candy, soft drinks, alcohol, food prepared for immediate consumption, prewritten ("canned") software, grooming and hygiene products, and parts transferred with a service |
-| Qualifying drugs and medical appliances | 1% | Prescription and nonprescription medicines, including products whose label makes a medicinal claim ("medicated", "for relief of..."). Medical appliances that directly replace a malfunctioning part of the body. Not grooming and hygiene products |
-| Groceries | No State tax from 1 January 2026 | Food for human consumption to be eaten off the premises where sold. Not alcohol, cannabis-infused food, soft drinks, candy, or food prepared for immediate consumption. Local grocery tax may apply (next table) |
-| Use Tax on your own purchases | 6.25% general merchandise; 1% drugs and medical appliances | If you paid another state's tax at a lower rate, pay Illinois the difference |
+### Groceries from 1 January 2026 (Bulletin FY 2026-03; ST-1 instructions)
 
-### Groceries from 1 January 2026 ([IDOR bulletin FY 2026-03](https://tax.illinois.gov/research/publications/bulletins/fy-2026-03.html); [compliance alert CA-2026-01](https://tax.illinois.gov/research/publications/compliancealerts/ca-2026-01.html))
+- An ordinance imposing the local 1% grocery tax must be filed with IDOR to take effect; IDOR had received more than 600 ordinances when the bulletin was published, and notifies affected retailers.
+- In the RTA and MED areas the existing local grocery tax continues; where a municipality or county there also imposes a grocery tax, the rate is the total of both.
+- Where a grocery tax applies: include grocery receipts on ST-1 Step 2 Lines 1 and 3 and report them on the new Line 5c. Where none applies (outside RTA and MED): include them on Line 1 and deduct them on Schedule A Line 16.
+- Destination sellers collect the local grocery tax for delivery addresses where it applies.
 
-- The State's 1% tax on groceries ended after 31 December 2025. Municipalities, and counties for their unincorporated areas, may impose a local grocery tax of exactly 1% by ordinance filed with and approved by IDOR.
-- An ordinance filed by 1 April takes effect on 1 July of the same year. One filed by 1 October takes effect on 1 January of the next year.
-- The existing local grocery tax in the Regional Transportation Authority (RTA) and Metro-East Mass Transit District (MED) areas continues. From 1 June 2026 the RTA is known as the Northern Illinois Transit Authority (NITA).
-- The retailer must check whether its location, or the delivery address for a destination sale, has a grocery tax. IDOR says retailers must remit the 1% tax "even if the tax was not collected from their customers".
-- Report groceries on the new Line 5c of Form ST-1 where a grocery tax applies. Where none applies (outside RTA and MED), include the receipts on Step 2, Line 1 and deduct them on Schedule A, Line 16.
-- From 1 January 2026, restaurants and other food vendors no longer owe Use Tax on the cost of meals given free to employees or customers. They still owe it on general merchandise given away, such as candy and soda ([Publication 113](https://tax.illinois.gov/research/publications/pubs/retailers-overview-of-sales-and-use-tax/requirements-for-retailers-who-file-form-st-1.html)).
+### Food boundaries (PIO-115)
 
-### Food boundaries ([PIO-115](https://tax.illinois.gov/research/publications/pio-115.html))
-
-| Item | Treatment | Condition |
-| --- | --- | --- |
-| Candy | General merchandise | Sugar, honey or other sweeteners combined with chocolate, fruit, nuts or other ingredients, "in the form of bars, drops, or pieces" |
-| Product containing flour (cookies, chocolate-covered pretzels, granola bars with flour) | Groceries | "Candy" does not include any preparation that contains flour, whatever the type of flour |
-| Product that requires refrigeration | Groceries | Only if it requires refrigeration. A candy bar sold frozen but not needing it is still candy |
-| Water without sweeteners; juice over 50% fruit or vegetable; milk drinks | Groceries | Sweetened drinks otherwise are soft drinks (general merchandise) |
-| Sandwiches in a deli case | Groceries | A sandwich made to the customer's order, or hot food, is general merchandise |
-| Any food where the seller provides seating | Presumed general merchandise | Rebutted only if the eating area is separate and the seller records the two kinds of sales separately |
-| Vitamins and supplements | Groceries | Only if the label makes no medicinal claim. With a medicinal claim they are drugs at the State rate of 1% |
-
-### Local taxes: look them up ([ROT page](https://tax.illinois.gov/research/taxinformation/sales/rot.html); [Publication 113](https://tax.illinois.gov/research/publications/pubs/retailers-overview-of-sales-and-use-tax/requirements-for-retailers-who-file-form-st-1.html))
-
-- The combined rate is the State rate plus local taxes that IDOR collects: home rule and non-home rule municipal taxes, RTA (NITA) and MED taxes, county public safety, facilities and transportation taxes, county school facility taxes, park district and business district taxes.
-- Home rule, non-home rule, county school facility, county public safety and similar taxes, and Metro-East park and recreation taxes, do not apply to drugs, groceries, medical appliances, or titled or registered items.
-- This skill gives no local rates because they vary by address and change twice a year. Use the MyTax Illinois Tax Rate Finder, or the machine-readable address files for destination sales.
-- Local governments may also impose taxes that IDOR does not collect (for example, taxes a city administers itself). Contact the city or county for those.
-
-### Sourcing: origin or destination ([Publication 113](https://tax.illinois.gov/research/publications/pubs/retailers-overview-of-sales-and-use-tax/requirements-for-retailers-who-file-form-st-1.html); [IDOR bulletin FY 2025-10](https://tax.illinois.gov/research/publications/bulletins/fy-2025-10.html))
-
-| Seller and sale | Rate used |
+| Item | Treatment |
 | --- | --- |
-| Illinois retailer, sale made from its Illinois location | Origin: rates at that location |
-| Sale made from outside Illinois but filled from Illinois inventory | Origin: rates at the inventory location |
-| Retailer with a place of business in Illinois selling from outside Illinois (from 1 January 2025) | Destination: rates at the Illinois delivery address |
-| Remote retailer at or over the threshold | Destination |
-| Marketplace facilitator at or over the threshold, for marketplace sellers' sales | Destination |
-| Marketplace facilitator's own sales | Origin if filled from Illinois inventory or selling activity is in Illinois; otherwise destination |
-| Leases with recurring payments and delivery to the customer | Destination |
-| Servicepersons with a place of business in Illinois transferring goods from outside Illinois (from 1 January 2026) | Destination ([FY 2026-13](https://tax.illinois.gov/research/publications/bulletins/fy-2026-13.html)) |
+| Candy: sugar or sweeteners combined with chocolate, fruit, nuts or other ingredients in bars, drops or pieces | High rate |
+| A preparation containing flour, or one that requires refrigeration | Not candy: groceries |
+| Juice over 50% fruit or vegetable juice | Not a soft drink: groceries |
+| Any food where the seller provides seating or facilities for eating on the premises | Presumed prepared food at the high rate, unless the eating area is separate and sales are recorded separately |
+| Vitamins and supplements | Groceries only if the label makes no medicinal claim; otherwise low-rate drugs |
 
-For destination sales, register a changing-location tax site for each city or county you deliver to, before filing the return for that period, and report each site on Form ST-2 ([IDOR bulletin FY 2025-10](https://tax.illinois.gov/research/publications/bulletins/fy-2025-10.html)).
-
-**The 15% undetermined-location rate.** From 1 January 2026, if a seller cannot show where destination sales went, IDOR taxes those gross receipts at 15%. IDOR may use this rate in an audit of any period, including periods before January 2026. Keep, for each destination sale, the customer's name and billing address, the exact delivery address (street, city, county, state, ZIP), and proof of where the goods shipped from ([IDOR bulletin FY 2026-12](https://tax.illinois.gov/research/publications/bulletins/fy-2026-12.html)).
-
-### Remote retailers and marketplace facilitators ([IDOR bulletin FY 2026-12](https://tax.illinois.gov/research/publications/bulletins/fy-2026-12.html); [Publication 113-D](https://tax.illinois.gov/research/publications/pubs/overview-of-destination-based-sales-tax.html))
-
-| Rule | 2026 position |
-| --- | --- |
-| Threshold | $100,000 or more in cumulative gross receipts from sales of TPP to Illinois purchasers. Exactly $100,000 meets it |
-| Transaction test | None from 1 January 2026 (200 or more transactions counted before) |
-| Lookback | Preceding 12 months, tested at the end of March, June, September and December |
-| Once over | Collect State and local ROT at destination rates on all retail sales to Illinois purchasers and file returns for one year, then re-test ([ROT page](https://tax.illinois.gov/research/taxinformation/sales/rot.html)) |
-| Registered only under the old 200 test | Review the 12 months ending 31 December 2025. If under $100,000, stop remitting ROT for remote sales from 1 January 2026; IDOR moves the account to "voluntary use tax". Any destination ROT collected after that must be refunded or reported as Use Tax, with anything above 6.25% reported as excess tax |
-| Under the threshold | No Illinois collection duty. The seller may register voluntarily and collect 6.25% Use Tax as a courtesy |
-| Marketplace facilitator | A person who lists a third party's goods and collects payment (directly or through others). At or over the threshold, it is the retailer for every sale on its marketplace, at destination rates |
-| Marketplace seller | A seller whose sales all go through facilitators that meet the threshold may close its Illinois account; Form CRT-63 proves the facilitator will collect ([FY 2025-10](https://tax.illinois.gov/research/publications/bulletins/fy-2025-10.html)) |
-| Inventory in a facilitator's Illinois warehouse | No physical presence if used only for marketplace orders. If it also fills the seller's own orders, the seller has physical presence and owes origin-based ROT on those sales |
-
-IDOR's general ROT page still describes the 200-transaction test. The bulletin FY 2026-12 is later and says the test "no longer applies". Follow the bulletin, and note the conflict if a client relies on the ROT page.
-### Service Occupation Tax: summary ([IDOR bulletin FY 2026-13](https://tax.illinois.gov/research/publications/bulletins/fy-2026-13.html); [Publication 113-SOT](https://tax.illinois.gov/research/publications/pubs/overview-of-service-occupation-tax.html))
-
-SOT applies only when a serviceperson transfers goods as part of a sale of service. A serviceperson calculates its tax in one of four ways:
-
-| Method | Base | Who may use it |
-| --- | --- | --- |
-| 1. Separately stated selling price | SOT on the separately stated price of the goods transferred | Any serviceperson. The selling price cannot be less than cost price |
-| 2. Half the bill | SOT on 50% of the entire bill | Where no charge for the goods is separately stated, the selling price is 50% of the bill, but never less than cost price |
-| 3. Cost price, SOT | SOT on the serviceperson's cost price of the goods | A de minimis serviceperson that is registered, or required to be registered, as a retailer under Section 2a of the ROT Act |
-| 4. Cost price, Use Tax | Use Tax on cost price, paid to the supplier or self-assessed | A de minimis serviceperson not otherwise required to register. Not available to one whose only Illinois presence is meeting the $100,000 services threshold if it makes any retail sales to Illinois purchasers |
-
-- **De minimis serviceperson:** annual cost ratio below 35% (75% for servicepersons transferring prescription drugs or engaged in graphic arts production). The cost ratio compares the annual cost of goods transferred with total annual service income.
-- **Services threshold:** $100,000 in cumulative gross receipts from sales of service to Illinois purchasers over the preceding 12 months, tested quarterly. From 1 January 2026 there is no 200-transaction test for servicepersons or service marketplaces.
-- **Service marketplace facilitators** at or over the $100,000 services threshold owe SOT on 50% of the entire billing for every service sale through the marketplace that transfers goods to an Illinois purchaser.
-- The SOT rate on goods follows the same general merchandise, drug and local rules as ROT; look up the location's rate.
-
-### Filing frequency and payments ([Form ST-1 instructions](https://tax.illinois.gov/forms/sales/salesandusetax/st-1-instructions.html); [Publication 113](https://tax.illinois.gov/research/publications/pubs/retailers-overview-of-sales-and-use-tax/requirements-for-retailers-who-file-form-st-1.html))
-
-| Average monthly liability | Frequency IDOR may assign |
-| --- | --- |
-| Greater than $200 | Monthly |
-| Between $50 and $200 | Quarterly |
-| Less than $50 | Annual |
-| $20,000 or more | Quarter-monthly payments on the 7th, 15th, 22nd and last day of each month, made electronically; IDOR notifies you |
-
-New registrants start as monthly or quarterly filers. IDOR reviews accounts each year and writes if the frequency changes. Taxpayers whose average tax due is at least $20,000 annually must pay electronically, and IDOR's page says ST-1 must be filed electronically if "annual gross receipts average $20,000 or more"; IDOR notifies taxpayers of both mandates.
-
-## What is taxable: boundary and exception table
-
-### Exemptions and exclusions ([ROT page](https://tax.illinois.gov/research/taxinformation/sales/rot.html); [Publication 113-D](https://tax.illinois.gov/research/publications/pubs/overview-of-destination-based-sales-tax.html))
+## Boundary and exception table
 
 | Item | Status | Condition |
 | --- | --- | --- |
-| Sales for resale | Not taxed | Buyer gives an active Illinois registration or resale number and certifies resale (usually CRT-61). Without both, the sale is presumed not for resale |
-| State, local and federal governments | Exempt | |
-| Exclusively charitable, religious or educational organisations | Exempt | The organisation must hold an IDOR exemption number ("E-number") and give it to the seller |
-| Newspapers and magazines | Exempt | |
-| Sales to out-of-state buyers (interstate commerce) | Exempt | Special limits apply to vehicles and trailers titled in states without a reciprocal exemption |
-| Manufacturing and assembling machinery and equipment | Exempt | Used primarily in manufacturing or assembling goods for sale or lease |
-| Production agriculture machinery and equipment | Exempt | Listed with manufacturing on the ROT page; check the use conditions |
-| Rolling stock for interstate carriers for hire | Exempt | E.g. semi-tractor trailers, railroad cars |
-| Enterprise zone building materials and purchases | Exempt | Only with a Certificate of Eligibility or certification from the Department of Commerce and Economic Opportunity |
-| Legal tender, qualifying medallions and gold bullion; fuel for international flights | Exempt | |
-| SNAP (food stamp) purchases | Exempt | |
-| Clothing and footwear | Taxable at 6.25% | No general exemption. Only the 2026 back-to-school holiday below reduced it |
-| Prewritten ("canned") software | Taxable at 6.25% | General merchandise. For custom software, SaaS and digital products, see "When to refuse or refer" |
-| Repair labor and other services | Not taxed | Only goods transferred with the service are taxed (SOT) |
+| Sales for resale | Not taxed | Buyer's active registration or resale number and certification (CRT-61); otherwise presumed not for resale |
+| Out-of-state purchaser that will resell and deliver only outside Illinois | Not taxed | CRT-61 with its other-state registration |
+| Governments; exclusively charitable, religious or educational organisations | Exempt | Organisations need an IDOR exemption number |
+| Sales to buyers outside Illinois (interstate commerce) | Exempt | Keep proof of out-of-state delivery |
+| Manufacturing and assembling machinery and equipment; production agriculture equipment | Exempt | Primary use conditions apply |
+| SNAP purchases | Exempt | Report on ST-1 Schedule A |
+| Clothing and footwear | Taxable at 6.25% | No general exemption |
+| Prewritten software | Taxable at 6.25% | General merchandise; SaaS and custom software: refer |
+| Repair labor and other services | Not taxed | Only goods transferred with the service (SOT) |
+| Remote seller with $99,999 of Illinois sales in the lookback | No collection duty | The test is $100,000 or more |
+| Seller registered only under the old 200-transaction test | Review the 12 months to 31 December 2025 | Under $100,000: stop collecting ROT for remote sales from 1 January 2026 (Bulletin FY 2026-12) |
+| Return with no sales | Still file | Every period, including zero returns |
+| Due date on a weekend or holiday | Next business day | ST-1 instructions |
 
-### Resale certificates: Form CRT-61 ([Form CRT-61](https://tax.illinois.gov/content/dam/soi/en/web/tax/forms/sales/documents/sales/crt-61.pdf); [ROT page](https://tax.illinois.gov/research/taxinformation/sales/rot.html))
+### Defaults when a fact is missing
 
-- The buyer ticks one box: registered with IDOR as a retailer or reseller (with its Illinois account ID), or an out-of-state purchaser that will resell and deliver the goods only outside Illinois (with its other state's registration).
-- It covers one purchase (describe the property or invoice), all purchases from the seller (full blanket), or a stated percentage of single-item-type purchases (percentage blanket).
-- The seller must check that the buyer's Illinois account ID is valid and active, using "Verify a Registered Business" in MyTax Illinois.
-- A buyer that uses the goods other than for resale owes tax on their purchase price, and may face penalties and interest.
-- Keep, for every deduction on the return, the buyer's name and address, the type and date of the transaction, the amount, and the evidence that it was not taxable ([record-keeping page](https://tax.illinois.gov/research/publications/pubs/retailers-overview-of-sales-and-use-tax/keeping-complete-and-accurate-records.html)).
+| Missing fact | Default, and flag it |
+| --- | --- |
+| Delivery address for a destination sale | Do not file without it: IDOR may tax the receipts at 15% |
+| Seating at a food seller | Assume seating (all food at the high rate) until shown otherwise |
+| Whether the location has a local grocery tax | Check the Tax Rate Finder and IDOR's ordinance list; do not assume none |
+| Resale certificate | Treat the sale as taxable |
+| Serviceperson's cost ratio | Use method 1 or 2 until the ratio is computed |
 
-### Back-to-school holiday, 7 to 16 August 2026 ([IDOR bulletin FY 2026-30](https://tax.illinois.gov/research/publications/bulletins/fy-2026-30.html))
+### Red flags to raise with the client
 
-- The State portion fell by 5% (from 6.25% to 1.25%) on qualifying clothing and footwear priced below $125 per item, and on qualifying school supplies (no price limit). Local taxes still applied.
-- The price test is after unreimbursed coupons and markdowns. Items sold as one unit (a pair of shoes) cannot be split. Claim the credit on Schedule K-12 with Form ST-1.
+| Flag | Why it matters |
+| --- | --- |
+| Remote seller collecting on the old 200 test | It may now be under the threshold, and over-collected tax must be refunded or reported |
+| Destination sales without full addresses | 15% rate |
+| Groceries charged no tax in a town with an ordinance | The 1% is owed even if not collected |
+| A single "Illinois rate" quoted | There is none; the rate depends on address and period |
 
-## Worked cases ([IDOR bulletin FY 2026-12](https://tax.illinois.gov/research/publications/bulletins/fy-2026-12.html); [Form ST-1 instructions](https://tax.illinois.gov/forms/sales/salesandusetax/st-1-instructions.html))
+## Worked cases
 
-Examples use the State rate only unless a combined rate is given. In practice, add the local rate from the Tax Rate Finder.
+**Case 1, a decision: must a remote seller register?** An Oregon seller with no Illinois presence made 450 sales worth $80,000 to Illinois buyers in the 12 months to 31 March 2026, and $104,000 in the 12 months to 30 June 2026. Under the 2026 rule only the $100,000 test counts, so at 31 March it has no duty (the 450 transactions no longer matter), and at 30 June it does: it must register, collect State and local ROT at each delivery address's rate and file returns. IDOR's pages read here do not state the start date after the quarter end; confirm it with IDOR before the first collection.
 
-1. **Remote retailer after the transaction test ended** ([FY 2026-12](https://tax.illinois.gov/research/publications/bulletins/fy-2026-12.html)). An Oregon seller with no Illinois presence made 450 sales worth $80,000 to Illinois buyers in the 12 months to 31 March 2026. Before 2026, 200 or more transactions would have required collection. In 2026 the only test is $100,000 or more, so it has no duty from that quarter's test. In the 12 months to 30 June 2026 its sales reach $104,000, which is $100,000 or more. It must register, collect State and local ROT at the rate for each delivery address, and file for one year. IDOR's pages reviewed here give no start date after the quarter end; confirm it with IDOR's Central Registration Division.
-2. **Groceries, candy and drugs** ([PIO-115](https://tax.illinois.gov/research/publications/pio-115.html); [FY 2026-03](https://tax.illinois.gov/research/publications/bulletins/fy-2026-03.html)). A shop outside the RTA and MED areas, with no seating, sells $200 of groceries, a $20 box of granola bars containing flour, a $40 box of chocolate bars without flour, and $10 of aspirin. The granola bars contain flour, so they are groceries: $200 + $20 = $220 of groceries. In a town with no grocery ordinance: no State or local tax on the $220. Chocolate is candy: 40 x 6.25% = $2.50 State tax, plus local general merchandise taxes. Aspirin is a drug: 10 x 1% = $0.10 State tax. If the town has a 1% grocery ordinance: 220 x 1% = $2.20 local grocery tax, which the shop owes whether or not it collected it.
-3. **Service Occupation Tax methods** ([FY 2026-13](https://tax.illinois.gov/research/publications/bulletins/fy-2026-13.html); [Publication 113-SOT](https://tax.illinois.gov/research/publications/pubs/overview-of-service-occupation-tax.html)). A repair shop bills $500 labor and $300 parts, separately stated. Method 1: tax on $300 only, 300 x 6.25% = $18.75 State SOT; the $500 labor is not taxed. If the bill just says $800 with no split, method 2 applies: 800 x 50% = $400, and 400 x 6.25% = $25.00. If the parts cost the shop $450, the base cannot be less than cost price, so the base is $450 and 450 x 6.25% = $28.13. A de minimis shop registered under Section 2a (cost ratio below 35%) using method 3 on parts that cost $120 owes 120 x 6.25% = $7.50.
-4. **Discount, cap and a late return** ([Form ST-1 instructions](https://tax.illinois.gov/forms/sales/salesandusetax/st-1-instructions.html); [Publication 103](https://tax.illinois.gov/research/publications/pubs/penalties-and-interest-for-illinois-taxes.html); [interest rates](https://tax.illinois.gov/individuals/interestrate.html)). A monthly filer owes $5,000 for August 2026, due 21 September 2026 (20 September is a Sunday). Filed and paid on time: discount 5000 x 1.75% = $87.50, net $4,912.50. A larger filer owing $80,000 would compute 80000 x 1.75% = $1,400 but the cap limits it to $1,000. If the $5,000 return is filed and paid 12 days late: no discount; late-payment penalty 5000 x 2% = $100 (1 to 30 days late); late-filing penalty is the lesser of $250 or 2% of the tax, so $100; interest at 7% simple, 5000 x 7% / 365 x 12 = $11.51.
-5. **Use Tax on a business purchase** ([Publication 113](https://tax.illinois.gov/research/publications/pubs/retailers-overview-of-sales-and-use-tax/requirements-for-retailers-who-file-form-st-1.html)). A registered Illinois retailer buys $2,000 of office equipment from an out-of-state vendor that charged no Illinois tax. It reports Use Tax on its Form ST-1 for that month: 2000 x 6.25% = $125.00. If it had paid another state's tax at 4%, it would owe Illinois the difference: 6.25% - 4% = 2.25%, and 2000 x 2.25% = $45.00.
-6. **Back-to-school holiday** ([FY 2026-30](https://tax.illinois.gov/research/publications/bulletins/fy-2026-30.html)). On 10 August 2026, in a location whose normal combined rate is 9.75%, a $100 pair of jeans qualifies: rate 9.75% - 5% = 4.75%, tax 100 x 4.75% = $4.75. A $140 pair of shoes does not qualify (not below $125): 140 x 9.75% = $13.65.
+```oa-check
+name: Illinois remote seller threshold, quarterly test (2026)
+inputs:
+  receipts_to_march: 80000
+  receipts_to_june: 104000
+  threshold: 100000
+steps:
+  - must_register_march: min(floor(receipts_to_march / threshold), 1)
+  - must_register_june: min(floor(receipts_to_june / threshold), 1)
+expected:
+  must_register_march: 0
+  must_register_june: 1
+```
+
+**Case 2, the discount, the cap and a late return.** A monthly filer owes $5,000 for August 2026, due 21 September 2026 (20 September is a Sunday). Filed and paid on time: discount 1.75% x $5,000 = $87.50, net $4,912.50. A filer owing $80,000 would compute $1,400, but the cap allows $1,000. If the $5,000 return is filed and paid 12 days late: no discount; late-payment penalty 2% = $100; late-filing penalty the lesser of $250 or 2% = $100; interest at 7% simple for 12 days = $11.51.
+
+```oa-check
+name: Illinois ST-1 discount, cap and late penalties (2026)
+inputs:
+  tax_due: 5000
+  large_tax_due: 80000
+  days_late: 12
+steps:
+  - discount: max(tax_due * 0.0175, 5)
+  - net_on_time: tax_due - discount
+  - large_discount: min(large_tax_due * 0.0175, 1000)
+  - late_payment_penalty: tax_due * 0.02
+  - late_filing_penalty: min(250, tax_due * 0.02)
+  - interest: round(tax_due * 0.07 / 365 * days_late, 2)
+expected:
+  discount: 87.50
+  net_on_time: 4912.50
+  large_discount: 1000.00
+  late_payment_penalty: 100.00
+  late_filing_penalty: 100.00
+  interest: 11.51
+```
+
+**Further examples (State rate only; add local rates from the Tax Rate Finder).**
+
+- *Groceries, candy and drugs* (PIO-115): a shop outside RTA and MED, no seating, sells $200 of groceries, a $20 box of granola bars containing flour (groceries), a $40 box of chocolate bars without flour (candy: $2.50 State tax) and $10 of aspirin (drug: $0.10 State tax). In a town with no grocery ordinance the $220 of groceries carries no tax; with one, $2.20 is owed whether or not collected.
+- *SOT methods* (Bulletin FY 2026-13): $500 labor and $300 parts separately stated: $18.75 State SOT on the parts. An $800 bill with no split: 50% = $400 base, $25.00. The selling price can never be less than cost price.
+- *Use Tax on a purchase*: $2,000 of equipment bought from an out-of-state vendor that charged no Illinois tax: $125.00 Use Tax on the ST-1 for that month.
 
 ## When to refuse or refer
 
-- **Software other than canned software, SaaS, streaming and digital downloads.** IDOR's pages reviewed here class prewritten software as general merchandise but do not settle SaaS or custom software. The earlier version of this skill said pure SaaS is not taxable, citing an IDOR letter; that was not confirmed on the sources reviewed. Check 86 Ill. Adm. Code 130.1935 and IDOR letter rulings, or refer.
-- **Taxes IDOR does not collect**, such as a city's own amusement, restaurant or soft drink taxes (except the Chicago soft drink ROT, which IDOR does collect). Refer to the city or county.
-- **Vehicles, watercraft, aircraft, trailers and mobile homes** (Forms ST-556, RUT-25, RUT-50, RUT-75), and motor fuel prepaid sales tax.
-- **Audits, the 15% undetermined-location rate, and appeals** to the Illinois Independent Tax Tribunal or circuit court ([IDOR bulletin FY 2026-12](https://tax.illinois.gov/research/publications/bulletins/fy-2026-12.html)).
-- **Remote retailer amnesty** decisions with large exposure. The 2026 Remote Retailer Tax Amnesty runs 1 August to 31 October 2026 for sales between 1 January 2021 and 30 June 2026. It uses simplified rates of 9% (general merchandise) and 1.75% (items normally at the State 1% rate), waives penalties and interest if paid in full or under a completed plan, and does not waive books-and-records penalties, bad check penalties or lien fees ([FY 2026-28](https://tax.illinois.gov/research/publications/bulletins/fy-2026-28.html)).
-- **Exemption claims needing certificates** beyond CRT-61 and E-numbers (manufacturing, farm, enterprise zone, high impact business). Check the use conditions and documents in PIO-101 before relying on them.
-- **A client that wants a single "Illinois rate".** There is none; refuse to quote one without the address and period.
+- **SaaS, custom software, streaming and digital downloads**: IDOR's pages read here class prewritten software as general merchandise but do not settle the others. Refer.
+- **Taxes IDOR does not collect**, such as a city's own amusement or restaurant taxes. Refer to the city or county.
+- **Titled or registered items, motor fuel, aviation fuel, E911 and ITAC.**
+- **Audits, the 15% undetermined-location rate, and appeals** to the Illinois Independent Tax Tribunal or circuit court.
+- **Exemption claims needing certificates** beyond CRT-61 and exemption numbers (manufacturing, farm, enterprise zone, high impact business).
+- **A client who wants one "Illinois rate"** without an address and period.
 
 ## Filing and payment
 
-### Registration ([Publication 113-D](https://tax.illinois.gov/research/publications/pubs/overview-of-destination-based-sales-tax.html))
+Register through MyTax Illinois (Form REG-1). File Form ST-1, with ST-2 for multiple sites and every destination site, by the 20th of the month after the period: monthly, quarterly (20 April, 20 July, 20 October, 20 January) or annual (20 January), as IDOR assigns. A due date on a weekend or holiday moves to the next business day. File electronically through MyTax Illinois where required; electronic filers get the discount only if they file electronically and pay on time. Correct errors on Form ST-1-X. Pay quarter-monthly (7th, 15th, 22nd and last day of each month) once average monthly liability is $20,000 or more. Individuals and unregistered businesses owing Use Tax file Form ST-44. Penalties (Publication 103): late payment 2% (1 to 30 days) or 10% (31 days or more); 15% of amounts unpaid until an audit starts and 20% of amounts unpaid within 30 days of an audit-prepared return; late filing first tier the lesser of $250 or 2%, second tier (no return within 30 days of a nonfiling notice) the greater of $250 or 2%; negligence 20%; fraud 50%; failure to keep or produce books and records $1,000 then $3,000; collection fee $30 (under $1,000 unpaid) or $100. Interest is simple interest at 7% for 1 January 2025 to 31 December 2026.
 
-- Register through MyTax Illinois (Form REG-1). The Certificate of Registration expires after one year and renews automatically while the account is compliant.
-- A buyer of the major part of another business's stock, fixtures or equipment must file Form CBS-1 at least ten days before the sale, or risk liability for the seller's unpaid tax.
+### 2025 periods (amended or audited returns)
 
-### Due dates and the return ([Form ST-1 instructions](https://tax.illinois.gov/forms/sales/salesandusetax/st-1-instructions.html); [ROT page](https://tax.illinois.gov/research/taxinformation/sales/rot.html))
+- Through 31 December 2025 qualifying food was taxed at the State 1% plus local taxes; use the pre-2026 ST-1 and ST-2 for those periods.
+- For lookback periods ending on or before 31 December 2025, a remote retailer or facilitator met the threshold with $100,000 or more in gross receipts or 200 or more transactions (Bulletin FY 2026-12).
+- The $1,000 monthly discount cap applies to returns due on or after 1 January 2025; interest was 7% throughout 2025.
 
-| Filer | Due date |
-| --- | --- |
-| Monthly | 20th of the following month |
-| Quarterly | 20th of the month after the calendar quarter: 20 April, 20 July, 20 October, 20 January |
-| Annual | 20 January of the following year |
-| Any due date on a weekend or State holiday | Next business day |
+## Completion checklist
 
-- File a signed ("processable") Form ST-1 for every period, including zero returns. Attach Form ST-2 for multiple sites and all destination sites.
-- Over-collected tax that is not refunded goes on the excess tax line. Correct errors with Form ST-1-X.
-- Individuals and unregistered businesses owing Use Tax file Form ST-44: by 15 April of the next year if $600 or less is owed for the year; if more than $600, by the last day of the month after the month of purchase ([ROT page](https://tax.illinois.gov/research/taxinformation/sales/rot.html)).
-- IDOR uses the U.S. Postal Service postmark to decide whether mailed returns and payments are on time; private postage meters do not count.
+- Physical presence checked; remote sellers tested each quarter against $100,000, with no transaction test for 2026.
+- Each item classified (general merchandise, drug, grocery, prepared food; flour, refrigeration and seating tests).
+- Each sale sourced and the rate taken from the Tax Rate Finder, including any local grocery tax.
+- Full delivery addresses kept for every destination sale.
+- SOT base chosen from the four methods.
+- CRT-61 or exemption number on file for each untaxed sale.
+- Use Tax accrued on untaxed purchases.
+- ST-1 (and ST-2) filed by the 20th, zero returns included; 1.75% discount only when on time, capped at $1,000 a month.
 
-### Retailers' discount ([Form ST-1 instructions](https://tax.illinois.gov/forms/sales/salesandusetax/st-1-instructions.html); [Publication 113](https://tax.illinois.gov/research/publications/pubs/retailers-overview-of-sales-and-use-tax/requirements-for-retailers-who-file-form-st-1.html))
+## Sources
 
-- 1.75% of the tax due, or $5 per calendar year, whichever is greater.
-- For returns due on or after 1 January 2025 the discount is capped at $1,000 per month. IDOR states the cap per month; quarterly and annual filers should confirm with IDOR how it applies to a multi-month return.
-- Only if the return and payment are on time. A taxpayer required to file electronically (and without a waiver) gets the discount only if it files electronically on time and pays on time.
-- A late filer is assessed for the discount it took, plus penalty and interest.
+| Source | URL | Read on |
+| --- | --- | --- |
+| IDOR Form ST-1 instructions. Read for the grocery lines 5c and 2b, the 15% undetermined-location rate, the 20th due date, the weekend rule, the filing frequency thresholds, the 1.75% discount, $5 minimum and $1,000 cap. | https://tax.illinois.gov/forms/sales/salesandusetax/st-1-instructions.html | 2026-11-13 |
+| IDOR Retailers' Occupation Tax page. Read for the four taxes, leases from 2025, resale certificates, exemptions, quarter-monthly payments at $20,000, the Tax Rate Finder, ST-1-X, ST-2, ST-44. | https://tax.illinois.gov/research/taxinformation/sales/rot.html | 2026-11-13 |
+| IDOR PIO-115. Read for the 6.25% high rate and 1% low rate, the grocery definition, candy, flour, refrigeration, juice, seating and supplements. | https://tax.illinois.gov/research/publications/pio-115.html | 2026-11-13 |
+| IDOR Informational Bulletin FY 2026-03. Read for the end of the State grocery tax on 1 January 2026, the local 1% grocery tax, RTA and MED, the 600 ordinances and the reporting chart. | https://tax.illinois.gov/research/publications/bulletins/fy-2026-03.html | 2026-11-13 |
+| IDOR Informational Bulletin FY 2026-12. Read for the removal of the 200-transaction test (Public Act 104-0006) and the $100,000 threshold. | https://tax.illinois.gov/research/publications/bulletins/fy-2026-12.html | 2026-11-13 |
+| IDOR Informational Bulletin FY 2026-13. Read for servicepersons' destination sourcing from 1 January 2026, the four SOT methods and the $100,000 services threshold. | https://tax.illinois.gov/research/publications/bulletins/fy-2026-13.html | 2026-11-13 |
+| IDOR Publication 103, Penalties and Interest for Illinois Taxes. Read for the late-filing, late-payment, audit, negligence, fraud, records and collection fee amounts. | https://tax.illinois.gov/research/publications/pubs/penalties-and-interest-for-illinois-taxes.html | 2026-11-13 |
+| IDOR interest rates page. Read for 7% for 1 January 2025 to 31 December 2026. | https://tax.illinois.gov/individuals/interestrate.html | 2026-11-13 |
 
-### Penalties and interest ([Publication 103](https://tax.illinois.gov/research/publications/pubs/penalties-and-interest-for-illinois-taxes.html); [interest rates](https://tax.illinois.gov/individuals/interestrate.html))
+Illinois sites refused direct connections from this machine; every page above was read through a Firecrawl fetch of the official URL on 2026-11-13.
 
-| Penalty | Amount |
-| --- | --- |
-| Late filing, first tier | Lesser of $250 or 2% of the tax required to be shown, reduced by timely payments and credits |
-| Late filing, second tier (not filed within 30 days of a notice of nonfiling) | Greater of $250 or 2% of the tax shown, without regard to payments; maximum $5,000; due even if no tax is owed |
-| Late payment | 2% if 1 to 30 days late; 10% if 31 or more days late |
-| Unpaid after an audit starts | 15% |
-| Unpaid within 30 days after an audit-prepared amended return or waiver | 20% (also applies if paid under protest or later claimed back) |
-| Negligence | 20% of the deficiency from the negligent act |
-| Fraud | 50% of the deficiency |
-| Failure to keep or produce books and records | $1,000 for the first failure, $3,000 for each later one |
-| Interest | Simple interest at the federal underpayment rate, reset each 1 January and 1 July: 7% for 1 January 2025 to 31 December 2026. It runs from the day after the due date |
-
-A late-filing or late-payment penalty may be abated for reasonable cause if you give IDOR a detailed explanation and documents.
-
-### Records ([record-keeping page](https://tax.illinois.gov/research/publications/pubs/retailers-overview-of-sales-and-use-tax/keeping-complete-and-accurate-records.html))
-
-- Keep records that support receipts for three and one-half years after filing the original or amended return. If IDOR has issued a Notice of Tax Liability or Final Notice of Tax Due, keep them until that liability is final or paid.
-- Records must be available during business hours, in English, and kept in Illinois unless IDOR agrees otherwise. They must separate taxable from non-taxable sales.
-- The time limits for IDOR to assess tax (for example, where no return was filed or there was fraud) are in the ROT Act, not in the pages reviewed here. Check them before relying on a period being closed.
-
-## 2025 periods (for amended or audited 2025 returns) ([IDOR bulletin FY 2026-03](https://tax.illinois.gov/research/publications/bulletins/fy-2026-03.html); [IDOR bulletin FY 2026-12](https://tax.illinois.gov/research/publications/bulletins/fy-2026-12.html))
-
-- **Groceries:** through 31 December 2025, qualifying food was taxed at the State rate of 1% plus local taxes. Use the pre-2026 Form ST-1 and ST-2 revisions for those periods.
-- **Remote threshold:** for lookback periods ending on or before 31 December 2025, a remote retailer or marketplace facilitator was over the threshold with either $100,000 or more in gross receipts or 200 or more separate transactions.
-- **Destination sourcing:** from 1 January 2025, retailers with an Illinois place of business selling from outside Illinois moved from collecting Use Tax to destination ROT. Servicepersons moved on 1 January 2026.
-- **Discount cap:** the $1,000 monthly cap applies to returns due on or after 1 January 2025, so it applies to every 2025 return.
-- **Interest:** 7% applied throughout 2025 ([interest rates](https://tax.illinois.gov/individuals/interestrate.html)).
-- **The 15% undetermined-location rate** may be applied in audits of 2025 and earlier periods.
-
-## Completion checklist ([ROT page](https://tax.illinois.gov/research/taxinformation/sales/rot.html))
-
-- [ ] Physical presence checked; for remote sellers, each quarter's 12-month gross receipts tested against $100,000 or more, with no transaction test for 2026 periods.
-- [ ] Sellers registered only under the old 200 test reviewed against the 12 months to 31 December 2025.
-- [ ] Each item classified: general merchandise, drug or medical appliance, groceries (flour and refrigeration tests for sweets), prepared food.
-- [ ] Each sale sourced (origin or destination) and the rate taken from the Tax Rate Finder for that address and period, including any local 1% grocery tax.
-- [ ] Delivery addresses kept for every destination sale, so the 15% rate cannot be applied.
-- [ ] SOT base chosen from the four methods, and the de minimis cost ratio tested.
-- [ ] CRT-61 or E-number on file for every untaxed sale; buyer's account ID verified as active.
-- [ ] Use Tax accrued on untaxed purchases and on items taken from resale stock.
-- [ ] Form ST-1 (and ST-2) filed by the 20th, including zero returns; 1.75% discount taken only when on time and within the $1,000 cap.
-- [ ] Remote retailer amnesty considered before 31 October 2026 where old periods are unpaid.
-- [ ] Records kept for three and one-half years after filing.
+Not yet confirmed: the de minimis serviceperson cost ratios (35%, or 75% for prescription drugs and graphic arts) carried from the earlier version (Publication 113-SOT not re-read); the record retention period of three and one-half years (record-keeping page not re-read); the Form ST-44 thresholds ($600 or less by 15 April) from the earlier version; the start date of collection after a remote seller passes the threshold; how the $1,000 monthly cap applies to quarterly and annual returns; the 2026 back-to-school sales tax holiday terms and the 2026 Remote Retailer Tax Amnesty (1 August to 31 October 2026) described in the earlier version from Bulletins FY 2026-30 and FY 2026-28, not re-read; Chicago, Springfield and Champaign combined rates in the retired `il-sales-tax` file (not used: look up the address instead); the taxability of prepaid calling arrangements (35 ILCS 120/2-25, not read).
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-16. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `illinois-sales-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/illinois-sales-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-13. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `illinois-sales-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/illinois-sales-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

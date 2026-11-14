@@ -11,17 +11,18 @@ description: >
   decision, building value, annual tax, municipal real-estate rate or property
   information corrections. Transfer tax on buying property and income tax on
   rent or gains are separate computations in the companion skills.
-version: 0.1
+version: 0.2
 jurisdiction: FI
 tax_year: 2026
-last_updated: 2026-10-27
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: estate-wealth-tax
+type: computation
 ---
 
-# Finland annual real-estate tax v0.1
+# Finland annual real-estate tax v0.2
 
 ## Who this applies to
 
@@ -33,16 +34,16 @@ Forests, agricultural land and the other §3–4 exempt components are excluded,
 
 | Component or valuation rule | Ordinary mainland rule | Official source |
 |---|---|---|
-| General land rate | Municipal rate within 1.30–2.00% | Act §11 [text][law] |
-| General building rate | Municipal rate within 0.93–2.00% | Act §11 [text][law] |
-| Permanent residential building | Municipal rate within 0.41–1.00% | Act §12 [text][law] |
-| Other residential building | Municipal rate within 0.93–2.00% | Act §13 [text][law] |
-| Qualifying unbuilt residential site | Separate rate 2–6%; specified metropolitan municipalities at least general land rate +3 percentage points, maximum 6% | Act §§12a–12b [text][law] |
-| Helsinki 2026 example rates | Land 1.30%, general building 0.93%, permanent residence 0.41%, other residence 0.93%, unbuilt site 4.30% | [Council decision 5 November 2025 §262][helsinki] |
-| Annual age reductions | Wooden residential/office 1.25%, stone 1%; wooden commercial/industrial 5%, stone 4%; other structure 10% | Valuation Act 1142/2005 §30 [text][valuation] |
-| Value floor while in use | Residential building 30%, other ordinary building/structure 20% of replacement value | Valuation Act §30 [text][valuation] |
-| Ordinary small-house replacement unit | EUR 770.58/m² before adjustments; older wooden exceptions EUR 614.75 before 1960 / EUR 695.54 for 1960–69 | Regulation 1073/2025 §5 [text][building] |
-| Collection floor | Tax below EUR 10 not imposed | Act §22 [text][law] |
+| General land rate | Municipal rate within 1.30–2.00% | Act §11 [text](https://www.finlex.fi/fi/lainsaadanto/1992/654) |
+| General building rate | Municipal rate within 0.93–2.00% | Act §11 [text](https://www.finlex.fi/fi/lainsaadanto/1992/654) |
+| Permanent residential building | Municipal rate within 0.41–1.00% | Act §12 [text](https://www.finlex.fi/fi/lainsaadanto/1992/654) |
+| Other residential building | Municipal rate within 0.93–2.00% | Act §13 [text](https://www.finlex.fi/fi/lainsaadanto/1992/654) |
+| Qualifying unbuilt residential site | Separate rate 2–6%; specified metropolitan municipalities at least general land rate +3 percentage points, maximum 6% | Act §§12a–12b [text](https://www.finlex.fi/fi/lainsaadanto/1992/654) |
+| Helsinki 2026 example rates | Land 1.30%, general building 0.93%, permanent residence 0.41%, other residence 0.93%, unbuilt site 4.30% | [Council decision 5 November 2025 §262](https://paatokset.hel.fi/en/node/242314) |
+| Annual age reductions | Wooden residential/office 1.25%, stone 1%; wooden commercial/industrial 5%, stone 4%; other structure 10% | Valuation Act 1142/2005 §30 [text](https://www.finlex.fi/fi/lainsaadanto/2005/1142) |
+| Value floor while in use | Residential building 30%, other ordinary building/structure 20% of replacement value | Valuation Act §30 [text](https://www.finlex.fi/fi/lainsaadanto/2005/1142) |
+| Ordinary small-house replacement unit | EUR 770.58/m² before adjustments; older wooden exceptions EUR 614.75 before 1960 / EUR 695.54 for 1960–69 | Regulation 1073/2025 §5 [text](https://www.finlex.fi/fi/lainsaadanto/2025/1073) |
+| Collection floor | Tax below EUR 10 not imposed | Act §22 [text](https://www.finlex.fi/fi/lainsaadanto/1992/654) |
 
 These are legal ranges, not a default municipal rate. Obtain the property's actual **2026** municipal decision/rate from the assessment or [Vero municipality tables][rates]. Åland has its own permitted lower bounds below.
 

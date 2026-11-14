@@ -2,10 +2,10 @@
 name: es-irpf-deductions-cataluna
 description: >
   Calculate Cataluña regional credits for ordinary Spanish resident IRPF in 2026, for a taxpayer whose community of residence under LIRPF art. 72 is Cataluña. Covers regional credits; rural move, home investment and rent from 2026; July 2026 additions and conditional commencement. Each row gives the credit's amount, cap, income gate, sharing rule and article, with incompatibilities and any carry-forward the law allows. Use for deducciones autonómicas Cataluña, regional IRPF credits, alquiler, nacimiento, family, housing and gift relief in Cataluña. Load es-irpf-deductions first for the residence test, the deduction ledger, the state and regional order of credits, the attributable-tax worksheet, national credits, deadlines and penalties, and es-income-tax for the bases and scales. Split unchanged from es-irpf-deductions on 6 November 2026.
-version: 2.5
+version: 2.6
 jurisdiction: ES
 tax_year: 2026
-last_updated: 2026-11-06
+last_updated: 2026-11-14
 depends_on:
   - es-irpf-deductions
   - es-income-tax
@@ -79,13 +79,13 @@ Use this worksheet only after independently verifying DT18, previous claims, hab
 
 **Published municipality-code controls.** The actual [PRE/415/2026 gazette annex](https://portaldogc.gencat.cat/utilsEADOP/PDF/9611/2136736.pdf) separates MR, MRAE, DA1 ap1 and DA2. Use the published code and designation with the credit conditions above; demographic estimates are not a substitute. The resolution corrects the preliminary-list classifications for Fontanals de Cerdanya, Fontcoberta and Ivars d’Urgell. These controls identify the published designation, not a taxpayer’s satisfaction of every credit condition:
 
-| Municipality code | Published municipality | Designation and location control |
-|---|---|---|
-| 170694 | Fontanals de Cerdanya | MR; do not assign the special-attention rate merely from its mountain location |
-| 170715 | Fontcoberta | MRAE |
-| 251137 | Ivars d’Urgell | MRAE; distinguish Ivars de Noguera, code251121 |
-| 170255 | Bordils | DA1 ap1: included regime; this label does not designate MRAE |
-| 250349 /252347 | Artesa de Segre /Tremp | DA2: qualifying aggregated nuclei only, with the actual site evidence required above |
+| Municipality code | Published municipality | Designation and location control | Source |
+|---|---|---|---|
+| 170694 | Fontanals de Cerdanya | MR; do not assign the special-attention rate merely from its mountain location | [PRE/415/2026 annex](https://portaldogc.gencat.cat/utilsEADOP/PDF/9611/2136736.pdf) |
+| 170715 | Fontcoberta | MRAE | same |
+| 251137 | Ivars d’Urgell | MRAE; distinguish Ivars de Noguera, code251121 | same |
+| 170255 | Bordils | DA1 ap1: included regime; this label does not designate MRAE | same |
+| 250349 /252347 | Artesa de Segre /Tremp | DA2: qualifying aggregated nuclei only, with the actual site evidence required above | same |
 
 The actual [PRE/3375/2026 gazette, published29September2026](https://portaldogc.gencat.cat/utilsEADOP/PDF/9760/2172440.pdf), separately publishes DA1(2) inclusions under the Directorate’s28/31July2026 decisions. Its full annex contains **12** municipalities: Alguaire, Arbeca, Avià, Bagà, Bellvís, Falset, el Perelló, el Pont de Suert, Prats de Lluçanès, Santa Coloma de Queralt, Sort and **Torregrossa (252304)**. The annex publishes inclusion in the regime, without designating these entries MRAE. Retain the actual applicable inclusion decision and period for a timing-sensitive claim; the publication alone does not establish each municipality’s individual effective date. The [ATC property-transfer page](https://atc.gencat.cat/ca/tributs/itpajd/tpo/tarifes-tipus/) is a useful locator for both gazettes, but its property-transfer application dates are not an IRPF commencement rule. The IRPF commencement and each credit’s own conditions remain those set out above.
 

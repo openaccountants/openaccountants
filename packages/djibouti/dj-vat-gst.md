@@ -1,13 +1,14 @@
 ---
 name: dj-vat-gst
 description: "Use for Djibouti VAT (TVA) for tax year 2026: 10% and 0%, registration at 20 million or 10 million, all liberal professions, exemptions, deduction and the monthly return by the 20th."
-version: 2.0
+version: 2.1
 jurisdiction: DJ
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: vat-gst
+type: situation-rules
 ---
 
 # Djibouti VAT
