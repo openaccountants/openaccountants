@@ -311,6 +311,6 @@ Read on 2026-11-14 for this rewrite unless the row says otherwise.
 | Read for Rn 2 to 4, 48, 53 (600 EUR up to 2023), 54 to 62, 65 to 75, 87 to 106 of the BMF letter of 6 March 2025 | https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2 | 2026-11-14 |
 | Read for the 2025 Anlage SO help (per-person limits, non-entry below the limits, losses); page answered with the 2025 help, read 2026-10-31 by an earlier pass and reloaded today | https://www.elster.de/elsterweb/helpGlobal?themaGlobal=help_est_ufa_10_2025 | 2026-11-14 |
 
-Not yet confirmed: the 2026 Anlage SO form and its help (not yet released by ELSTER on 2026-11-14); the 2026 entry rules above follow unchanged law and the 2025 help.
+Not yet confirmed: the 2026 Anlage SO form and its help (not opened in this pass); the 2026 entry rules above follow unchanged law and the 2025 help.
 
 This skill is general information, not tax advice. Have a Steuerberater check a return before it is filed.
