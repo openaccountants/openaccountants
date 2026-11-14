@@ -1,16 +1,17 @@
 ---
 name: nigeria-vat
 description: Use this skill whenever asked to prepare, review, or classify transactions for a Nigeria VAT return or advise on Nigerian VAT registration, filing, and compliance. Trigger on phrases like "prepare Nigeria VAT return", "Nigerian VAT", "NRS VAT", "FIRS VAT", "Form 002", or any Nigeria VAT request. ALWAYS read this skill before touching any Nigeria VAT work.
-version: 2.1
+version: 2.2
 jurisdiction: NG
 tax_year: 2026
-last_updated: 2026-11-03
+last_updated: 2026-11-14
 depends_on:
   - vat-workflow-base
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: vat-gst
+type: situation-rules
 ---
 
 # Nigeria VAT

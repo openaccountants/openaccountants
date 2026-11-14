@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/fr-crypto-tax"
   jurisdiction: "FR"
   tax_year: "2026"
-  last_updated: "2026-10-31"
+  last_updated: "2026-11-14"
 ---
 
 # Crypto-asset tax in France (actifs numériques)
@@ -16,11 +16,40 @@ How France taxes an individual on digital assets: the flat tax on occasional dis
 
 > Based on work by Romain Simon (@romainsimon), licensed under MIT. Adapted for the OpenAccountants format.
 
-## France: Crypto-Asset Taxation (Particuliers) v1.3
+## Scope
+
+Three regimes. The first question in any crypto engagement is which the client is in.
+
+- **Occasional disposals in private wealth management: CGI, art. 150 VH bis.** The regime the rest of this Guide describes. It covers individuals tax-resident in France within CGI, art. 4 B, managing their private wealth, directly or through an interposed person. Disposals of every member of the foyer fiscal are added together. See https://bofip.impots.gouv.fr/bofip/11967-PGP.html
+- **Habitual buying for resale: BIC.** Gains from "l'exercice habituel d'une activité d'achat en vue de la revente d'actifs numériques" stay in industrial and commercial profits. The administration ties this to a commercial activity within Code de commerce, art. L. 110-1.
+- **Professional-like conditions: BNC, not BIC.** Since 1 January 2023 a third case sits between the two: buying, selling or exchanging digital assets "dans des conditions analogues à celles qui caractérisent une activité professionnelle", without it being the client's profession, is taxed as non-commercial profits. The case named is investors making "des opérations nombreuses et sophistiquées" all year with professional traders' tools. They pay the progressive scale plus social levies, with either the micro-BNC allowance in Section 8 or actual expenses under the déclaration contrôlée. Source: the page linked in Section 8.
+- **Partnerships.** A société within CGI, art. 8, art. 8 bis or art. 8 ter, seated in France with a non-professional activity such as holding a portfolio, is an interposed person and each partner is taxed on their share. One with an industrial, commercial, artisanal, agricultural or non-commercial object falls under the professional gains regime instead, whether its disposals are habitual or occasional.
+
+**What the official pages do NOT print.** No page read here gives a transaction count, a frequency or a share of household income that turns an occasional investor into a habitual or professional one. The only wording given is the "opérations nombreuses et sophistiquées" test above. Treat any rule of thumb as untested.
+
+## Ask the client first
+
+- How do you actually trade: bots, arbitrage, professional traders' tools, and how often? This decides between CGI art. 150 VH bis, BIC and BNC, and changes the rate, the forms and the social charges.
+- Did anyone else in your household sell, spend or exchange digital assets this year? The exemption and the portfolio value cover the whole foyer fiscal.
+- Did you pay for anything with crypto, swap crypto for a physical item, or take cash on top of a swap? Each is a taxable disposal clients rarely report.
+- Do you have every platform and wallet export back to your first purchase, including swaps you never cashed out? Without them the acquisition price cannot be built.
+- Do you hold an account with a platform established outside France, including one opened and closed this year? A separate declaration, with its own fines.
+- Did you receive coins from mining, staking, a gift or an inheritance? Mining and staking are BNC income at receipt; a gift or inheritance has its own acquisition value.
+
+## The method, step by step
+
+1. **Place the client in one of the three regimes in Section 2.** Habitual buying for resale as a commercial activity within Code de commerce, art. L. 110-1 is BIC. Conditions analogous to a professional activity are BNC. Everything else in private wealth management is CGI, art. 150 VH bis, at https://bofip.impots.gouv.fr/bofip/11967-PGP.html If BIC or BNC, stop: Sections 4 to 7 do not apply.
+2. **List every operation of the year for the whole foyer fiscal and mark each taxable or not,** using Section 3. Sales for money, payments for goods or services and exchanges with a soulte are taxable. Exchanges between digital assets without a soulte are not, and are not declared. Then add up the statutory III-A disposal prices with the evidenced-fee/soulte treatment and express contrary agency wording in Section 6, and test the exemption in Section 6: at or under the limit the year is exempt and only the prices are filed; over it, every taxable disposal is taxed. Same page as step 1.
+3. **Build the running portfolio record and compute each disposal with the formula in Section 4,** then add the year's gains and losses to one net figure. Use the supported 1 January 2019 opening record in Section 4 for older holdings; for a portfolio first acquired after 2018 start with its first acquisition. Apply subsequent additions, less fractions of initial capital already used and soultes received. The portfolio value is taken at each taxable disposal across every platform and wallet of the foyer fiscal. See https://bofip.impots.gouv.fr/bofip/11968-PGP.html
+4. **Choose the rate.** The flat rate in Section 5 applies by default. Model the progressive scale on the client's numbers, and if it wins tick box 3CN on the déclaration n° 2042-C before the deadline. It is irrevocable afterwards and separate from the option for investment income. The box is on https://www.impots.gouv.fr/particulier/questions/comment-declarer-les-plus-ou-moins-values-sur-cessions-dactifs-numeriques and the conditions are on https://bofip.impots.gouv.fr/bofip/11969-PGP.html
+5. **File** annexe n° 2086, one line per taxable disposal, total carried to box 3AN or 3BN of the déclaration n° 2042-C. See https://www.impots.gouv.fr/particulier/questions/comment-declarer-les-plus-ou-moins-values-sur-cessions-dactifs-numeriques
+6. **Declare the foreign accounts, portfolios and assets within the applicable dated scope** in Section 9. For the historical account filing route use imprimé n° 3916-3916 bis or the online annex; check the reserved 2027 procedure before extending that route to the enlarged population. Fines and their statutory unit are in Section 9.
+
+## France: Crypto-Asset Taxation (Particuliers) v2.0
 
 ## Section 1: Quick Reference
 
-| Field | Value |
+| Field | Detail |
 | --- | --- |
 | Country | France |
 | Tax | Income tax plus social levies on gains from disposing of digital assets |
@@ -32,17 +61,6 @@ How France taxes an individual on digital assets: the flat tax on occasional dis
 | Exemption and default rate | See the tables in Section 6 and Section 5 |
 | Tax authority | Direction générale des Finances publiques |
 | Verified by | Pending. A French expert-comptable or avocat fiscaliste must sign off |
-
-## Section 2: Scope: Occasional vs Professional
-
-Three regimes. The first question in any crypto engagement is which the client is in.
-
-- **Occasional disposals in private wealth management: CGI, art. 150 VH bis.** The regime the rest of this Guide describes. It covers individuals tax-resident in France within CGI, art. 4 B, managing their private wealth, directly or through an interposed person. Disposals of every member of the foyer fiscal are added together. See https://bofip.impots.gouv.fr/bofip/11967-PGP.html
-- **Habitual buying for resale: BIC.** Gains from "l'exercice habituel d'une activité d'achat en vue de la revente d'actifs numériques" stay in industrial and commercial profits. The administration ties this to a commercial activity within Code de commerce, art. L. 110-1.
-- **Professional-like conditions: BNC, not BIC.** Since 1 January 2023 a third case sits between the two: buying, selling or exchanging digital assets "dans des conditions analogues à celles qui caractérisent une activité professionnelle", without it being the client's profession, is taxed as non-commercial profits. The case named is investors making "des opérations nombreuses et sophistiquées" all year with professional traders' tools. They pay the progressive scale plus social levies, with either the micro-BNC allowance in Section 8 or actual expenses under the déclaration contrôlée. Source: the page linked in Section 8.
-- **Partnerships.** A société within CGI, art. 8, art. 8 bis or art. 8 ter, seated in France with a non-professional activity such as holding a portfolio, is an interposed person and each partner is taxed on their share. One with an industrial, commercial, artisanal, agricultural or non-commercial object falls under the professional gains regime instead, whether its disposals are habitual or occasional.
-
-**What the official pages do NOT print.** No page read here gives a transaction count, a frequency or a share of household income that turns an occasional investor into a habitual or professional one. The only wording given is the "opérations nombreuses et sophistiquées" test above. Treat any rule of thumb as untested.
 
 ## Section 3: Taxable Events (Fait Générateur)
 
@@ -90,11 +108,11 @@ In English: gain = disposal price, less (total acquisition price x disposal pric
 | What | Value | Note |
 | --- | --- | --- |
 | Source | all figures below | https://bofip.impots.gouv.fr/bofip/11968-PGP.html |
-| January: acquisition price, the client held nothing before | EUR 1,000 | "acquiert pour 1 000 € d'actifs numériques" |
-| March: portfolio value before the disposal | EUR 1,200 | "la valeur globale de son portefeuille est de 1 200 €" |
-| March: disposal price | EUR 450 | "Il réalise alors une cession pour un prix de 450 €" |
-| March: fraction of the acquisition price used against this disposal | EUR 375 | The doctrine works 1000 x 450 / 1200 |
-| March: the gain | EUR 75 | 450 less 375 |
+| January: acquisition price, the client held nothing before | EUR 1,000 | "acquiert pour 1 000 € d'actifs numériques" https://bofip.impots.gouv.fr/bofip/11968-PGP.html |
+| March: portfolio value before the disposal | EUR 1,200 | "la valeur globale de son portefeuille est de 1 200 €" https://bofip.impots.gouv.fr/bofip/11968-PGP.html |
+| March: disposal price | EUR 450 | "Il réalise alors une cession pour un prix de 450 €" https://bofip.impots.gouv.fr/bofip/11968-PGP.html |
+| March: fraction of the acquisition price used against this disposal | EUR 375 | The doctrine works 1000 x 450 / 1200 https://bofip.impots.gouv.fr/bofip/11968-PGP.html |
+| March: the gain | EUR 75 | 450 less 375 https://bofip.impots.gouv.fr/bofip/11968-PGP.html |
 
 At the next disposal the acquisition price is reduced by the fraction already used, so that figure is carried forward for the life of the portfolio.
 
@@ -114,9 +132,9 @@ Koinly, CoinTracking, Waltio and Cryptio are commercial products, not official o
 | Component | Rate | Note |
 | --- | --- | --- |
 | Source | all figures below | https://www.impots.gouv.fr/particulier/questions/comment-declarer-les-plus-ou-moins-values-sur-cessions-dactifs-numeriques |
-| Total flat rate on an occasional disposal | 31.4% | "prélèvement forfaitaire unique (PFU) de 31,4 %" |
-| Income tax part | 12.8% | "12,8 % d'impôt" |
-| Social levies part | 18.6% | "18,6 % de prélèvements sociaux" |
+| Total flat rate on an occasional disposal | 31.4% | "prélèvement forfaitaire unique (PFU) de 31,4 %" https://www.impots.gouv.fr/particulier/questions/comment-declarer-les-plus-ou-moins-values-sur-cessions-dactifs-numeriques |
+| Income tax part | 12.8% | "12,8 % d'impôt" https://www.impots.gouv.fr/particulier/questions/comment-declarer-les-plus-ou-moins-values-sur-cessions-dactifs-numeriques |
+| Social levies part | 18.6% | "18,6 % de prélèvements sociaux" https://www.impots.gouv.fr/particulier/questions/comment-declarer-les-plus-ou-moins-values-sur-cessions-dactifs-numeriques |
 
 The total rate above is the one the administration itself prints, whatever the number of transactions. It is charged on the net gain for the year, after this year's crypto losses (Section 7). Do not add the two parts together yourself elsewhere: BOI-RPPM-PVBMC-30-30 still prints an older combined figure.
 
@@ -146,11 +164,11 @@ The total rate above is the one the administration itself prints, whatever the n
 | Case | Value | Note |
 | --- | --- | --- |
 | Source | all figures below | https://bofip.impots.gouv.fr/bofip/11967-PGP.html |
-| Three disposals, each of | EUR 100 | "un montant de 100 € chacune" |
-| Those three added up, under the limit, so exempt | EUR 300 | "est de 300 € (3 x 100 €)" |
-| Their gain, not taxed | EUR 90 | "s'élève à 90 €. Ainsi, le contribuable est exonéré" |
-| Four disposals of the same size, added up, over the limit | EUR 400 | "est de 400 € (4 x 100 €)" |
-| Their gain, taxed in full | EUR 120 | "s'élève à 120 €. Ainsi, le contribuable est imposé" |
+| Three disposals, each of | EUR 100 | "un montant de 100 € chacune" https://bofip.impots.gouv.fr/bofip/11967-PGP.html |
+| Those three added up, under the limit, so exempt | EUR 300 | "est de 300 € (3 x 100 €)" https://bofip.impots.gouv.fr/bofip/11967-PGP.html |
+| Their gain, not taxed | EUR 90 | "s'élève à 90 €. Ainsi, le contribuable est exonéré" https://bofip.impots.gouv.fr/bofip/11967-PGP.html |
+| Four disposals of the same size, added up, over the limit | EUR 400 | "est de 400 € (4 x 100 €)" https://bofip.impots.gouv.fr/bofip/11967-PGP.html |
+| Their gain, taxed in full | EUR 120 | "s'élève à 120 €. Ainsi, le contribuable est imposé" https://bofip.impots.gouv.fr/bofip/11967-PGP.html |
 
 ## Section 7: Loss Offsetting
 
@@ -184,7 +202,7 @@ Mining and staking are NOT capital gains. They are taxed on the nature of the ac
 | Item | Value | Note |
 | --- | --- | --- |
 | Source | all figures below | https://entreprendre.service-public.fr/vosdroits/F23267 |
-| Receipts ceiling for the micro-BNC regime, income received in 2026, tested on 2025 or on 2024, so the regime is lost only where both years are over | EUR 83,600 | "Activité libérale (BNC) … n’a pas dépassé 83 600 €" |
+| Receipts ceiling for the micro-BNC regime, income received in 2026, tested on 2025 or on 2024, so the regime is lost only where both years are over | EUR 83,600 | "Activité libérale (BNC) … n’a pas dépassé 83 600 €" https://entreprendre.service-public.fr/vosdroits/F23267 |
 
 ## Section 9: Form 2086 (Mandatory Disclosure)
 
@@ -249,16 +267,9 @@ No page read for this Guide prints a retention period. The earlier version state
 | Social levies on revenus du patrimoine, and the rate rise | CSS, art. L136-8; loi n° 2025-1403, art. 12 |
 | Doctrine: mining and staking in non-commercial profits | BOI-BNC-CHAMP-10-10-20-40 |
 
-## The method, step by step
+## Worked cases
 
-1. **Place the client in one of the three regimes in Section 2.** Habitual buying for resale as a commercial activity within Code de commerce, art. L. 110-1 is BIC. Conditions analogous to a professional activity are BNC. Everything else in private wealth management is CGI, art. 150 VH bis, at https://bofip.impots.gouv.fr/bofip/11967-PGP.html If BIC or BNC, stop: Sections 4 to 7 do not apply.
-2. **List every operation of the year for the whole foyer fiscal and mark each taxable or not,** using Section 3. Sales for money, payments for goods or services and exchanges with a soulte are taxable. Exchanges between digital assets without a soulte are not, and are not declared. Then add up the statutory III-A disposal prices with the evidenced-fee/soulte treatment and express contrary agency wording in Section 6, and test the exemption in Section 6: at or under the limit the year is exempt and only the prices are filed; over it, every taxable disposal is taxed. Same page as step 1.
-3. **Build the running portfolio record and compute each disposal with the formula in Section 4,** then add the year's gains and losses to one net figure. Use the supported 1 January 2019 opening record in Section 4 for older holdings; for a portfolio first acquired after 2018 start with its first acquisition. Apply subsequent additions, less fractions of initial capital already used and soultes received. The portfolio value is taken at each taxable disposal across every platform and wallet of the foyer fiscal. See https://bofip.impots.gouv.fr/bofip/11968-PGP.html
-4. **Choose the rate.** The flat rate in Section 5 applies by default. Model the progressive scale on the client's numbers, and if it wins tick box 3CN on the déclaration n° 2042-C before the deadline. It is irrevocable afterwards and separate from the option for investment income. The box is on https://www.impots.gouv.fr/particulier/questions/comment-declarer-les-plus-ou-moins-values-sur-cessions-dactifs-numeriques and the conditions are on https://bofip.impots.gouv.fr/bofip/11969-PGP.html
-5. **File** annexe n° 2086, one line per taxable disposal, total carried to box 3AN or 3BN of the déclaration n° 2042-C. See https://www.impots.gouv.fr/particulier/questions/comment-declarer-les-plus-ou-moins-values-sur-cessions-dactifs-numeriques
-6. **Declare the foreign accounts, portfolios and assets within the applicable dated scope** in Section 9. For the historical account filing route use imprimé n° 3916-3916 bis or the online annex; check the reserved 2027 procedure before extending that route to the enlarged population. Fines and their statutory unit are in Section 9.
-
-## Worked examples that recompute
+### Worked examples that recompute
 
 **Example 1: the existing doctrine portfolio example, at the default rate.** For a qualifying private disposal, acquisition cost EUR 1,000, portfolio value EUR 1,200 and gross proceeds EUR 450 with no fees give capital used EUR 375 and gain EUR 75. The annual proceeds exceed EUR 305. At the stated 31.4% default rate the derived tax is EUR 23.55, assuming no other disposals, losses or scale election. The gain inputs and formula are the existing BOFiP11968 example; the tax is computed from the current agency rate.
 
@@ -299,15 +310,6 @@ expected:
   taxable_tax: 37.68
 ```
 
-## Ask the client first
-
-- How do you actually trade: bots, arbitrage, professional traders' tools, and how often? This decides between CGI art. 150 VH bis, BIC and BNC, and changes the rate, the forms and the social charges.
-- Did anyone else in your household sell, spend or exchange digital assets this year? The exemption and the portfolio value cover the whole foyer fiscal.
-- Did you pay for anything with crypto, swap crypto for a physical item, or take cash on top of a swap? Each is a taxable disposal clients rarely report.
-- Do you have every platform and wallet export back to your first purchase, including swaps you never cashed out? Without them the acquisition price cannot be built.
-- Do you hold an account with a platform established outside France, including one opened and closed this year? A separate declaration, with its own fines.
-- Did you receive coins from mining, staking, a gift or an inheritance? Mining and staking are BNC income at receipt; a gift or inheritance has its own acquisition value.
-
 ## When to refuse or refer
 
 - The client is habitual or professional (BIC or BNC). This Guide covers the occasional regime only: profits, expenses, VAT and social contributions are all outside it.
@@ -319,12 +321,20 @@ expected:
 
 ## Sources
 
-- https://www.impots.gouv.fr/particulier/questions/comment-declarer-les-plus-ou-moins-values-sur-cessions-dactifs-numeriques Selected cited scope read 2026-10-29.
-- https://bofip.impots.gouv.fr/bofip/11967-PGP.html Selected cited scope read 2026-10-29.
-- https://bofip.impots.gouv.fr/bofip/11968-PGP.html Selected cited scope read 2026-10-29.
-- https://bofip.impots.gouv.fr/bofip/11969-PGP.html Selected cited scope read 2026-10-29.
+
+
+| Source and what was read | Official URL | Read on |
+|---|---|---|
+| PRINCIPALES NOUVEAUTÉS: read for 12.8%, EUR 2,000, EUR 1,000, EUR 100 and the conditions next to them | https://www.impots.gouv.fr/www2/fichiers/documentation/brochure/ir_2026/pdf_som/nouveautes.pdf | 2026-11-14 |
+| Régime fiscal de la micro-entreprise: read for Receipts ceiling for the micro-BNC regime, income received in 2026, tested on 20 | https://entreprendre.service-public.fr/vosdroits/F23267 | 2026-11-14 |
+| Comment déclarer les plus ou moins values sur cessions d’actifs numériques : read for Total flat rate on an occasional disposal; Social levies part; Income tax part | https://www.impots.gouv.fr/particulier/questions/comment-declarer-les-plus-ou-moins-values-sur-cessions-dactifs-numeriques | 2026-11-14 |
+| RPPM - Plus-values sur biens meubles et taxe forfaitaire sur les objets précieux - Cession: read for Those three added up, under the limit, so exempt; Four disposals of the same size, added up, over the limit; Their gain, taxed in full; Three disposals, each of; Their gain, not taxed | https://bofip.impots.gouv.fr/bofip/11967-PGP.html | 2026-11-14 |
+| RPPM - Plus-values sur biens meubles et taxe forfaitaire sur les objets précieux - Cession: read for January: acquisition price, the client held nothing before; March: portfolio value before the disposal; March: disposal price; March: fraction of the acquisition price used against this disposal; March: the gain | https://bofip.impots.gouv.fr/bofip/11968-PGP.html | 2026-11-14 |
+| RPPM - Plus-values sur biens meubles et taxe forfaitaire sur les objets précieux - Cession: read for 12.8%, EUR 50,000, EUR 10,000, EUR 1,500, EUR 305 and the conditions next to them | https://bofip.impots.gouv.fr/bofip/11969-PGP.html | 2026-11-14 |
+
 - Source checks on 29 October 2026: the four preceding official pages were read in their selected operative scopes. Current [CGI art. 150 VH bis and 150 VH ter](https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006069577/LEGISCTA000037943229/2026-10-29), the [2025 version](https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006069577/LEGISCTA000037943229/2025-12-31), and [loi n° 2026-534 art. 91](https://www.legifrance.gouv.fr/loda/id/LEGIARTI000054312191/2026-06-27) distinguish the dated definitions. Article 91, II, applies its 2° and 3° gain changes to disposals from 1 January 2026; the ordinance terminology text is in force from 1 July 2026. The unchanged pooled formula is not an asset-specific FIFO method.
 - The foreign-reporting wording was checked in [CGI art. 1649 bis C, 2025 version](https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006069577/LEGISCTA000006162758/2025-12-31) and its [current version](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000054339286/2026-10-29); the current fine unit is in [CGI art. 1736, X](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000054373979/2026-10-29). Direct HTTP requests were blocked; the rendered official provisions were actually read in a normal browser. The earlier BOFiP is retained for its historical wording, not substituted for a later statute.
+
 - Selected repair reads, 31 October 2026: BOI-RPPM-PVBMC-30-20 I-B-4 supplies the pre-2019 opening transition; current CGI art. 150 VH bis II-B/III-A supplies the fee-adjusted threshold incorporation, with the agency's gross wording expressly retained in Section 6. The dated foreign population/fine sources above also govern the conservative defaults. These were selected retained official-source reads, not a fresh acquisition or whole-body reading claim.
 - Not yet confirmed: the specific 2027 return/form implementation for the enlarged foreign-portfolio and unique/nonfungible-asset population, and a complete professional-asset versus private-asset basis transition for mining/staking receipts. This Guide does not award a receipt-value basis automatically in every later disposal. The other expressly reserved tokens and professional computations remain reserved.
 
@@ -334,4 +344,4 @@ expected:
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-31. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `fr-crypto-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/fr-crypto-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `fr-crypto-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/fr-crypto-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

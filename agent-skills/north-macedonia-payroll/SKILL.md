@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/north-macedonia-payroll"
   jurisdiction: "MK"
   tax_year: "2026"
-  last_updated: "2026-10-30"
+  last_updated: "2026-11-14"
 ---
 
-# North Macedonia payroll withholding v0.3
+# North Macedonia payroll withholding v0.4
 
 **Tax year: 2026. Checked against the law, tier 2.** Amounts are MKD unless stated otherwise. Professional review remains outstanding.
 
@@ -24,14 +24,14 @@ This is ordinary withholding. Labour-law minimum pay, overtime, leave entitlemen
 
 | Item | Amount | Period | Official provision |
 |---|---|---|---|
-| Salary PIT | 10% | 2026 | [PIT art. 11][pit] |
-| Salary/pension reduction | 10,932 monthly; published annual 131,184 | 2026 | [PIT arts. 10, 17][pit]; [2026 publication][allowance] |
-| Ordinary employee pension | 18.8% / 19.9% | January-June / July-December wage months | [Contributions Law art. 25][social]; [UJP dated table][rates] |
-| Employee health and additional health | 7.5% and 0.5% | 2026 | [Contributions Law arts. 10-11, 25][social] |
-| Employee unemployment | 1.2% / 0.1% | January-June / July-December wage months | [Contributions Law arts. 12, 25][social]; [dated table][rates] |
-| Employee contribution base floor / ceiling | 34,570 / 1,106,256 per month, UJP-published amounts | 2026 | [Contributions Law arts. 15-16][social]; [2026 bases][bases] |
-| Private-use company vehicle benefit | 1% monthly of prior 31 December book value, less employee consideration; acquisition-year/lease valuation follows its specific rule | 2026 | [PIT art. 16(1)(2-b),(2-v)][pit] |
-| Late-payment interest | 0.03% per overdue day | 2026 | [Tax Procedure Law art. 123][procedure] |
+| Salary PIT | 10% | 2026 | [PIT art. 11](https://www.ujp.gov.mk/files/attachment/0000/1466/ZAKON_ZA_DANOKOT_NA_LICEN_DOHOD_-_Azuriran_so_Sl.vesnik____274___od_20.12.2022.pdf) |
+| Salary/pension reduction | 10,932 monthly; published annual 131,184 | 2026 | [PIT arts. 10, 17](https://www.ujp.gov.mk/files/attachment/0000/1466/ZAKON_ZA_DANOKOT_NA_LICEN_DOHOD_-_Azuriran_so_Sl.vesnik____274___od_20.12.2022.pdf); [2026 publication](https://www.ujp.gov.mk/e/plakjanje/licno_osloboduvanje) |
+| Ordinary employee pension | 18.8% / 19.9% | January-June / July-December wage months | [Contributions Law art. 25](https://www.ujp.gov.mk/files/attachment/0000/1616/Precisten_tekst_na_ZPZSO_07_2026______________.pdf); [UJP dated table](https://www.ujp.gov.mk/en/vodic/category/641?print=1) |
+| Employee health and additional health | 7.5% and 0.5% | 2026 | [Contributions Law arts. 10-11, 25](https://www.ujp.gov.mk/files/attachment/0000/1616/Precisten_tekst_na_ZPZSO_07_2026______________.pdf) |
+| Employee unemployment | 1.2% / 0.1% | January-June / July-December wage months | [Contributions Law arts. 12, 25](https://www.ujp.gov.mk/files/attachment/0000/1616/Precisten_tekst_na_ZPZSO_07_2026______________.pdf); [dated table](https://www.ujp.gov.mk/en/vodic/category/641?print=1) |
+| Employee contribution base floor / ceiling | 34,570 / 1,106,256 per month, UJP-published amounts | 2026 | [Contributions Law arts. 15-16](https://www.ujp.gov.mk/files/attachment/0000/1616/Precisten_tekst_na_ZPZSO_07_2026______________.pdf); [2026 bases](https://www.ujp.gov.mk/mk/javnost/soopstenija/pogledni/1187) |
+| Private-use company vehicle benefit | 1% monthly of prior 31 December book value, less employee consideration; acquisition-year/lease valuation follows its specific rule | 2026 | [PIT art. 16(1)(2-b),(2-v)](https://www.ujp.gov.mk/files/attachment/0000/1466/ZAKON_ZA_DANOKOT_NA_LICEN_DOHOD_-_Azuriran_so_Sl.vesnik____274___od_20.12.2022.pdf) |
+| Late-payment interest | 0.03% per overdue day | 2026 | [Tax Procedure Law art. 123](https://www.ujp.gov.mk/files/attachment/0000/0900/_________________________.pdf) |
 
 Art. 25 expressly switches with the **July wage**; do not change a June arrears calculation merely because it is paid in July. PIT rate/reduction for salary also follow the month to which salary relates (PIT art. 92(2)).
 
@@ -169,4 +169,4 @@ Not yet confirmed: The 2026 statutory minimum wage amount and the Employment Age
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-30. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `north-macedonia-payroll` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/north-macedonia-payroll. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `north-macedonia-payroll` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/north-macedonia-payroll. If neither is available, confirm every figure against the official source pages cited above before relying on it.

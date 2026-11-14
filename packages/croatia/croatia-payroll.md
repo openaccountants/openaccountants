@@ -1,10 +1,11 @@
 ---
 name: croatia-payroll
 description: "Croatian payroll for employees in tax year 2026: monthly withholding of income tax (predujam poreza na dohodak) and the contributions run with each salary. Covers the EUR 600 basic personal allowance and the dependants' allowances, the two rates set by each local unit within the legal ranges (default 20% and 30% where no decision was taken, band EUR 5,000 a month and EUR 60,000 a year), pension Pillar I 15% and Pillar II 5% (20% for Pillar I only), the 16.5% employer health contribution, the 2026 minimum and maximum bases, the low-wage pension relief, the young-worker income tax relief, the EUR 1,050 minimum wage, the JOPPD report and its deadlines, and fines. Trigger on: Croatia payroll, plaća, bruto neto, JOPPD, predujam poreza, osobni odbitak, gross to net Croatia, employer cost Croatia. Out of scope: contribution rules in depth and the self-employed (croatia-social-contributions), annual income tax (croatia-income-tax), non-residents and treaties (hr-cross-border)."
-version: 0.2
+version: 0.3
+type: computation
 jurisdiction: HR
 tax_year: 2026
-last_updated: 2026-10-24
+last_updated: 2026-11-14
 depends_on:
   - payroll-workflow-base
 category: international
@@ -13,7 +14,7 @@ tier: 2
 domain: payroll
 ---
 
-# Croatia payroll (tax year 2026) v0.2
+# Croatia payroll (tax year 2026) v0.3
 
 > **Source-cited draft.** No accountant has reviewed this skill yet. Figures come from the consolidated texts in the Tax Administration (Porezna uprava) register and from Narodne novine, read on 23 and 24 October 2026. It prepares working papers; it is not authority to file or pay.
 
@@ -37,29 +38,29 @@ Laws used: the Personal Income Tax Act (Zakon o porezu na dohodak, "ZPDoh", NN 1
 
 | Item | Rate or amount | Year | Source |
 |---|---|---|---|
-| Pension Pillar I for a Pillar II member (employee, from gross) | 15% | 2026 | ZoD art. 13(1) point 1.2, https://porezna-uprava.gov.hr/Propisi |
-| Pension Pillar I, Pillar I only | 20% | 2026 | ZoD art. 13(1) point 1.1 |
-| Pension Pillar II (employee, from gross) | 5% | 2026 | ZoD art. 17(1) point 1 |
-| Health (employer, on gross) | 16.5% | 2026 | ZoD art. 14(1) point 1 |
+| Pension Pillar I for a Pillar II member (employee, from gross) | 15% | 2026 | [ZoD art. 13(1) point 1.2](https://porezna-uprava.gov.hr/Propisi/Propis/zakon-o-doprinosima-redakcijski-procisceni-tekst/3119) |
+| Pension Pillar I, Pillar I only | 20% | 2026 | [ZoD art. 13(1) point 1.1](https://porezna-uprava.gov.hr/Propisi/Propis/zakon-o-doprinosima-redakcijski-procisceni-tekst/3119)|
+| Pension Pillar II (employee, from gross) | 5% | 2026 | [ZoD art. 17(1) point 1](https://porezna-uprava.gov.hr/Propisi/Propis/zakon-o-doprinosima-redakcijski-procisceni-tekst/3119)|
+| Health (employer, on gross) | 16.5% | 2026 | [ZoD art. 14(1) point 1](https://porezna-uprava.gov.hr/Propisi/Propis/zakon-o-doprinosima-redakcijski-procisceni-tekst/3119)|
 | Average wage used for the bases | EUR 1,993.00 | 2026 | Order NN 150/25 art. 2, https://narodne-novine.nn.hr/clanci/sluzbeni/2025_12_150_2237.html |
-| Minimum monthly contribution base (0.38 x average wage), full time | EUR 757.34 | 2026 | Order NN 150/25 art. 3; ZoD art. 200 |
-| Maximum monthly base for pension contributions (6.0 x average wage) | EUR 11,958.00 | 2026 | Order NN 150/25 art. 4; ZoD art. 204 and 205 |
-| Maximum annual base for Pillar I | EUR 143,496.00 | 2026 | Order NN 150/25 art. 5; ZoD art. 206 and 208 |
+| Minimum monthly contribution base (0.38 x average wage), full time | EUR 757.34 | 2026 | [Order NN 150/25 art. 3](https://narodne-novine.nn.hr/clanci/sluzbeni/2025_12_150_2237.html); ZoD art. 200 |
+| Maximum monthly base for pension contributions (6.0 x average wage) | EUR 11,958.00 | 2026 | [Order NN 150/25 art. 4](https://narodne-novine.nn.hr/clanci/sluzbeni/2025_12_150_2237.html); ZoD art. 204 and 205 |
+| Maximum annual base for Pillar I | EUR 143,496.00 | 2026 | [Order NN 150/25 art. 5](https://narodne-novine.nn.hr/clanci/sluzbeni/2025_12_150_2237.html); ZoD art. 206 and 208 |
 | Low-wage pension relief, gross up to EUR 700 | Pillar I base cut by EUR 300 | 2026 | ZoD art. 21.a(1), https://narodne-novine.nn.hr/clanci/sluzbeni/2023_10_114_1611.html |
-| Low-wage pension relief, gross EUR 700.01 to 1,300 | Pillar I base cut by 0.5 x (1,300 - gross) | 2026 | ZoD art. 21.a(2) |
+| Low-wage pension relief, gross EUR 700.01 to 1,300 | Pillar I base cut by 0.5 x (1,300 - gross) | 2026 | [ZoD art. 21.a(2)](https://porezna-uprava.gov.hr/Propisi/Propis/zakon-o-doprinosima-redakcijski-procisceni-tekst/3119)|
 | Basic personal allowance | EUR 600 a month | 2026 | ZPDoh art. 14(1), https://narodne-novine.nn.hr/clanci/sluzbeni/2024_12_152_2505.html |
-| First, second, third child | EUR 300 / 420 / 600 a month | 2026 | ZPDoh art. 14(3) |
-| Dependent family member | EUR 300 a month | 2026 | ZPDoh art. 14(3) |
-| Invalidity / 100% invalidity | EUR 180 / 600 a month | 2026 | ZPDoh art. 14(3) |
-| Monthly band for withholding | lower rate up to EUR 5,000 of monthly base, higher rate above | 2026 | ZPDoh art. 24(3) |
-| Annual band | lower rate up to EUR 60,000, higher rate above | 2026 | ZPDoh art. 19 |
-| Rates where the local unit took no decision | 20% and 30% | 2026 | ZPDoh art. 19.a(5) |
-| Municipality (općina) range | lower 15% to 20%, higher 25% to 30% | 2026 | ZPDoh art. 19.a(2) |
-| Town (grad) range | lower 15% to 21%, higher 25% to 31% | 2026 | ZPDoh art. 19.a(2) |
-| Large town or county seat range | lower 15% to 22%, higher 25% to 32% | 2026 | ZPDoh art. 19.a(2) |
-| City of Zagreb range / rates decided | 15% to 23% and 25% to 33% / 23% and 33% | 2026 | ZPDoh art. 19.a(2); Zagreb decision NN 28/25, https://narodne-novine.nn.hr/clanci/sluzbeni/2025_02_28_291.html |
-| Young-worker relief, born 2001 or later | 100% of lower-rate tax on salary, in the annual assessment | 2026 | ZPDoh art. 46(2); Rulebook art. 58(6) |
-| Young-worker relief, born 1996 to 2000 | 50% of lower-rate tax on salary, in the annual assessment | 2026 | ZPDoh art. 46(2); Rulebook art. 58(6) |
+| First, second, third child | EUR 300 / 420 / 600 a month | 2026 | [ZPDoh art. 14(3)](https://porezna-uprava.gov.hr/Propisi/Propis/zakon-o-porezu-na-dohodak-redakcijski-procisceni-tekst/3)|
+| Dependent family member | EUR 300 a month | 2026 | [ZPDoh art. 14(3)](https://porezna-uprava.gov.hr/Propisi/Propis/zakon-o-porezu-na-dohodak-redakcijski-procisceni-tekst/3)|
+| Invalidity / 100% invalidity | EUR 180 / 600 a month | 2026 | [ZPDoh art. 14(3)](https://porezna-uprava.gov.hr/Propisi/Propis/zakon-o-porezu-na-dohodak-redakcijski-procisceni-tekst/3)|
+| Monthly band for withholding | lower rate up to EUR 5,000 of monthly base, higher rate above | 2026 | [ZPDoh art. 24(3)](https://porezna-uprava.gov.hr/Propisi/Propis/zakon-o-porezu-na-dohodak-redakcijski-procisceni-tekst/3)|
+| Annual band | lower rate up to EUR 60,000, higher rate above | 2026 | [ZPDoh art. 19](https://porezna-uprava.gov.hr/Propisi/Propis/zakon-o-porezu-na-dohodak-redakcijski-procisceni-tekst/3)|
+| Rates where the local unit took no decision | 20% and 30% | 2026 | [ZPDoh art. 19.a(5)](https://porezna-uprava.gov.hr/Propisi/Propis/zakon-o-porezu-na-dohodak-redakcijski-procisceni-tekst/3)|
+| Municipality (općina) range | lower 15% to 20%, higher 25% to 30% | 2026 | [ZPDoh art. 19.a(2)](https://porezna-uprava.gov.hr/Propisi/Propis/zakon-o-porezu-na-dohodak-redakcijski-procisceni-tekst/3)|
+| Town (grad) range | lower 15% to 21%, higher 25% to 31% | 2026 | [ZPDoh art. 19.a(2)](https://porezna-uprava.gov.hr/Propisi/Propis/zakon-o-porezu-na-dohodak-redakcijski-procisceni-tekst/3)|
+| Large town or county seat range | lower 15% to 22%, higher 25% to 32% | 2026 | [ZPDoh art. 19.a(2)](https://porezna-uprava.gov.hr/Propisi/Propis/zakon-o-porezu-na-dohodak-redakcijski-procisceni-tekst/3)|
+| City of Zagreb range / rates decided | 15% to 23% and 25% to 33% / 23% and 33% | 2026 | ZPDoh art. 19.a(2), https://porezna-uprava.gov.hr/Propisi/Propis/zakon-o-porezu-na-dohodak-redakcijski-procisceni-tekst/3 ; Zagreb decision NN 28/25, https://narodne-novine.nn.hr/clanci/sluzbeni/2025_02_28_291.html |
+| Young-worker relief, born 2001 or later | 100% of lower-rate tax on salary, in the annual assessment | 2026 | [ZPDoh art. 46(2)](https://porezna-uprava.gov.hr/Propisi/Propis/zakon-o-porezu-na-dohodak-redakcijski-procisceni-tekst/3); Rulebook art. 58(6) |
+| Young-worker relief, born 1996 to 2000 | 50% of lower-rate tax on salary, in the annual assessment | 2026 | [ZPDoh art. 46(2)](https://porezna-uprava.gov.hr/Propisi/Propis/zakon-o-porezu-na-dohodak-redakcijski-procisceni-tekst/3); Rulebook art. 58(6) |
 | Minimum wage, full time | EUR 1,050.00 gross a month | 2026 | Uredba NN 132/25, https://narodne-novine.nn.hr/clanci/sluzbeni/2025_10_132_1931.html |
 
 The rates follow the local unit where the employee lives, not the employer's seat. A local decision is published in Narodne novine by the end of November and applies from 1 January of the next year until replaced (ZPDoh art. 19.a(3)). The Tax Administration posts every local decision in its register of regulations.

@@ -1,19 +1,20 @@
 ---
 name: spain-crypto-tax
 description: Compute 2026 common-territory Spanish individual tax on cryptocurrency sales, swaps and qualifying investment staking. Covers global FIFO across exchanges, directly attributable fees, the greater-market-value swap rule, acquisition-lot continuity, separate savings baskets, limited loss offset and foreign third-party custody reporting on Modelo 721. Use for Bitcoin Spain, crypto tax Spain, criptomonedas IRPF, staking, exchange losses, foreign custody or digital-asset declaration questions. Distinguishes investment gains from employment, organised services, non-transfer gains and unpaid-credit losses. Includes two executable examples and the actual custody, threshold and cessation tests. Identifies unresolved reacquisition and specialist token cases rather than applying securities rules or retired penalties to every coin.
-version: 1.3
+version: 1.4
 jurisdiction: ES
 tax_year: 2026
-last_updated: 2026-11-06
+last_updated: 2026-11-14
 depends_on:
   - es-income-tax
 category: crypto
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: crypto
+type: situation-rules
 ---
 
-# Spain cryptocurrency: 2026 individual income tax and foreign-custody reporting v1.3
+# Spain cryptocurrency: 2026 individual income tax and foreign-custody reporting v1.4
 
 ## Who this applies to
 

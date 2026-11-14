@@ -4,14 +4,15 @@ description: >
   Burkina Faso company formation and entity choice workpaper for the 2026 intake. It separates SARL, ordinary SA and SAS rules, subscription from paid capital, incorporation from RCCM personality, and company accounts approval from tax filing. Use it to prepare articles, contribution evidence, capital payment schedules, the SARL audit threshold test, declaration of existence and beneficial owner tax records. The official OHADA company Act and selected 2026 CGI articles are the sources actually read. National SARL capital exceptions, current CEFORE registration steps, fees, processing times, sector licences and authenticated form boxes remain explicit gaps. It produces a source-cited preparation file, not registration or professional attestation.
 jurisdiction: BF
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-version: 1.1
+version: 1.2
 tier: 2
 domain: formation
+type: filing-howto
 ---
 
-# Burkina Faso company formation and entity choice v1.1
+# Burkina Faso company formation and entity choice v1.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 

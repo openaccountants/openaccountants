@@ -1,14 +1,15 @@
 ---
 name: andorra-igi
 description: "Andorra IGI indirect tax for entrepreneurs, professionals and importers in tax year 2026. Covers registration thresholds and voluntary status, domestic goods and services, place of supply, foreign digital services, import valuation, reverse charge, zero and reduced rates, input deduction, investment cars, private use, bad debts, corrections, credit carryforward, refunds and business closure. Includes the half-yearly, quarterly and monthly filing thresholds, invoice evidence, property payment rules and penalties. Distinguishes Andorran IGI from EU VAT, non-subject activities from zero-rated supplies, and investment vehicles from dealer inventory. Use for Andorra VAT or IGI returns, SaaS purchases, Customs IGI, deductible input tax and cessation questions. Source-cited draft requiring professional review."
-version: 2.1
+version: 2.2
 jurisdiction: AD
 tax_year: 2026
-last_updated: 2026-10-28
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: vat-gst
+type: situation-rules
 ---
 
 # Andorra IGI, 2026

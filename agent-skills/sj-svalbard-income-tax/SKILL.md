@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/sj-svalbard-income-tax"
   jurisdiction: "SJ"
   tax_year: "2026"
-  last_updated: "2026-10-24"
+  last_updated: "2026-11-14"
 ---
 
-# Svalbard: individual income and wealth tax in 2026 v0.1
+# Svalbard: individual income and wealth tax in 2026 v0.2
 
 > **Source-cited draft.** Tax year 2026, checked 24 October 2026. General reference for working papers; a qualified professional must review the facts and filing position. Independent AI review does not confer accountant review.
 
@@ -127,25 +127,25 @@ expected:
 
 | Official source and provisions read | URL | Read on |
 |---|---|---|
-| Svalbard Act §§2–5 | https://lovdata.no/dokument/NL/lov/1996-11-29-68 | 2026-10-24 |
-| Enacted 2026 Svalbard decision §§2–4 | https://lovdata.no/dokument/STV/forskrift/2025-12-19-2780 | 2026-10-24 |
-| Enacted 2026 mainland wealth decision §§2-1, 2-3 | https://lovdata.no/dokument/STV/forskrift/2025-12-18-2747 | 2026-10-24 |
-| NAV 2026 G | https://www.nav.no/grunnbelopet | 2026-10-24 |
-| Income Tax Act ch.4, valuation/debt | https://lovdata.no/dokument/NL/lov/1999-03-26-14/KAPITTEL_4 | 2026-10-24 |
-| Income Tax Act ch.6, costs/interest | https://lovdata.no/dokument/NL/lov/1999-03-26-14/KAPITTEL_6 | 2026-10-24 |
-| Income Tax Act ch.7, own-home rent | https://lovdata.no/dokument/NL/lov/1999-03-26-14/KAPITTEL_7 | 2026-10-24 |
-| Income Tax Act ch.9, gains | https://lovdata.no/dokument/NL/lov/1999-03-26-14/KAPITTEL_9 | 2026-10-24 |
-| Income Tax Act ch.14, losses/timing | https://lovdata.no/dokument/NL/lov/1999-03-26-14/KAPITTEL_14 | 2026-10-24 |
-| Income Tax Act §2-35 | https://lovdata.no/dokument/NL/lov/1999-03-26-14/KAPITTEL_2 | 2026-10-24 |
-| Administration Act chs.8,14 | https://lovdata.no/dokument/NL/lov/2016-05-27-14 | 2026-10-24 |
-| Administration regulation ch.8 | https://lovdata.no/dokument/SF/forskrift/2016-11-23-1360/KAPITTEL_7 | 2026-10-24 |
-| Administration regulation §14-1-1 | https://lovdata.no/dokument/SF/forskrift/2016-11-23-1360/KAPITTEL_13 | 2026-10-24 |
-| Payment Act chs.10–11 | https://lovdata.no/dokument/NL/lov/2005-06-17-67 | 2026-10-24 |
-| 2026 interest | https://www.skatteetaten.no/satser/forsinkelsesrenter/ | 2026-10-24 |
-| 2026 advance assessment, Fritidseiendom | https://www.skatteetaten.no/rettskilder/type/uttalelser/uttalelser/forskuddsutskrivingen-2026/ | 2026-10-24 |
-| Other-income/withholding reporting distinction | https://www.skatteetaten.no/person/skatt/hjelp-til-riktig-skatt/svalbard/andre-inntekter/ | 2026-10-24 |
-| Current Skatte-ABC S-23 | https://oppslag.rettskilder.skatteetaten.no/rettskilder2/type/handboker/skatte-abc/gjeldende/skatteabc-S-23 | 2026-10-24 |
-| Business allocation | https://www.skatteetaten.no/person/skatt/hjelp-til-riktig-skatt/svalbard/naring-pa-svalbard/ | 2026-10-24 |
+| Svalbard Act §§2-5: read for the 8%/22% split at 12 G (§3-1), separate spouse assessment (§3-2) and the 0.5 loss factor | https://lovdata.no/dokument/NL/lov/1996-11-29-68 | 2026-11-14 |
+| Enacted 2026 Svalbard decision §§2-4: read for 8%/22% (§3(a)), 16% and NOK 20,000 (§3(c)) and wealth by mainland rates (§2) | https://lovdata.no/dokument/STV/forskrift/2025-12-19-2780 | 2026-11-14 |
+| Enacted 2026 mainland wealth decision §§2-1, 2-3: read for NOK 1,900,000, 0.65%/0.75% state and 0.35% municipal | https://lovdata.no/dokument/STV/forskrift/2025-12-18-2747 | 2026-11-14 |
+| NAV grunnbeløp page: read for G of NOK 136,549 | https://www.nav.no/grunnbelopet | 2026-11-14 |
+| Income Tax Act ch.4, valuation/debt: read for §4-12 (listed shares at 80% of 1 January quoted value) | https://lovdata.no/dokument/NL/lov/1999-03-26-14/KAPITTEL_4 | 2026-11-14 |
+| Income Tax Act ch.6: read for the deduction rules on costs and interest | https://lovdata.no/dokument/NL/lov/1999-03-26-14/KAPITTEL_6 | 2026-11-14 |
+| Income Tax Act ch.7: read for the own-home and holiday-home rental rules | https://lovdata.no/dokument/NL/lov/1999-03-26-14/KAPITTEL_7 | 2026-11-14 |
+| Income Tax Act ch.9: read for gains and losses on realisation | https://lovdata.no/dokument/NL/lov/1999-03-26-14/KAPITTEL_9 | 2026-11-14 |
+| Income Tax Act ch.14: read for timing of income and deductions and loss carry-forward | https://lovdata.no/dokument/NL/lov/1999-03-26-14/KAPITTEL_14 | 2026-11-14 |
+| Income Tax Act ch.2: read for §2-35 (no mainland tax on income taxed under the Svalbard Tax Act) | https://lovdata.no/dokument/NL/lov/1999-03-26-14/KAPITTEL_2 | 2026-11-14 |
+| Tax Administration Act chs.8 and 14: read for the duty to file and the additional-tax and penalty rules | https://lovdata.no/dokument/NL/lov/2016-05-27-14 | 2026-11-14 |
+| Tax Administration regulation ch.8: read for the filing-duty detail (URL opens chapter 8) | https://lovdata.no/dokument/SF/forskrift/2016-11-23-1360/KAPITTEL_7 | 2026-11-14 |
+| Tax Administration regulation ch.14: read for §14-1-1 coercive fines (URL opens chapter 14) | https://lovdata.no/dokument/SF/forskrift/2016-11-23-1360/KAPITTEL_13 | 2026-11-14 |
+| Tax Payment Act chs.10 and 11: read for due dates and interest from the due date (§§11-1, 11-6) | https://lovdata.no/dokument/NL/lov/2005-06-17-67 | 2026-11-14 |
+| Skatteetaten late-payment interest page: read for the current rate table (12.25% shown on 14 Nov 2026) | https://www.skatteetaten.no/satser/forsinkelsesrenter/ | 2026-11-14 |
+| Skatteetaten statement on the 2026 advance assessment: read for the Fritidseiendom (holiday home) section | https://www.skatteetaten.no/rettskilder/type/uttalelser/uttalelser/forskuddsutskrivingen-2026/ | 2026-11-14 |
+| Skatteetaten, Svalbard other income: read for which income is assessed on the return and which by withholding | https://www.skatteetaten.no/person/skatt/hjelp-til-riktig-skatt/svalbard/andre-inntekter/ | 2026-11-14 |
+| Skatte-ABC S-23 (Svalbard), current edition: read for the authority commentary on Svalbard income and wealth | https://oppslag.rettskilder.skatteetaten.no/rettskilder2/type/handboker/skatte-abc/gjeldende/skatteabc-S-23 | 2026-11-14 |
+| Skatteetaten, business on Svalbard: read for allocating business income between Svalbard and the mainland | https://www.skatteetaten.no/person/skatt/hjelp-til-riktig-skatt/svalbard/naring-pa-svalbard/ | 2026-11-14 |
 
 The current Skatte-ABC contains stale year labels in some rate paragraphs and numbering inconsistencies. The enacted 2026 decision and consolidated statute control all figures here.
 
@@ -153,4 +153,4 @@ Not yet confirmed: Final 2026 Svalbard residential-property assessment direction
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-24. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `sj-svalbard-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/sj-svalbard-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `sj-svalbard-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/sj-svalbard-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
