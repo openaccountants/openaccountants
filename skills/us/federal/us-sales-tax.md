@@ -67,7 +67,7 @@ Statewide base rate only. Local rates are added in most states; the state's own 
 | Maryland | 6% (6 cents for each exact dollar) | [Md. Tax-General 11-104](https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gtg&section=11-104&enactments=false) |
 | Massachusetts | 6.25% | [Mass. DOR, sales and use tax guide](https://www.mass.gov/guides/sales-and-use-tax) |
 | Michigan | 6% | [Michigan Treasury, sales and use tax](https://www.michigan.gov/taxes/business-taxes/sales-use-tax) |
-| Minnesota | 6.875% (6.5% plus the 0.375% constitutional tax) | [Minn. Stat. 297A.62](https://www.revisor.mn.gov/statutes/cite/297A.62) |
+| Minnesota | 6.875% (derived: 6.5% plus the 0.375% constitutional tax) | [Minn. Stat. 297A.62](https://www.revisor.mn.gov/statutes/cite/297A.62) |
 | Mississippi (general retail) | 7% | [Mississippi DOR, sales tax rates](https://www.dor.ms.gov/business/sales-use-tax/sales-tax-rates) |
 | Missouri | 4.225% | [Missouri DOR, sales and use tax](https://dor.mo.gov/taxation/business/tax-types/sales-use/) |
 | Nebraska | 5.5% | [Nebraska DOR, sales and use tax](https://revenue.nebraska.gov/businesses/sales-and-use-tax) |
@@ -81,12 +81,12 @@ Statewide base rate only. Local rates are added in most states; the state's own 
 | Pennsylvania | 6% | [Pennsylvania DOR, sales, use and hotel occupancy tax](https://www.pa.gov/agencies/revenue/resources/tax-types-and-information/sales-use-and-hotel-occupancy-tax) |
 | Rhode Island | 7% | [RI Division of Taxation, sales and use tax](https://tax.ri.gov/tax-sections/sales-excise-taxes/sales-use-tax) |
 | South Carolina | 6% | [SCDOR, sales tax](https://dor.sc.gov/sales-use-tax-index/sales-tax) |
-| South Dakota | 4.2% | [SDCL 10-45-2](https://sdlegislature.gov/api/Statutes/10-45-2.html) |
+| South Dakota | 4.2% (in words on the page) | [SDCL 10-45-2](https://sdlegislature.gov/api/Statutes/10-45-2.html) |
 | Tennessee | 7% | [Tennessee DOR, sales and use tax](https://www.tn.gov/revenue/taxes/sales-and-use-tax.html) |
 | Texas | 6.25% | [Texas Comptroller, sales and use tax](https://comptroller.texas.gov/taxes/sales/) |
 | Vermont | 6% | [32 V.S.A. 9771](https://legislature.vermont.gov/statutes/section/32/233/09771) |
 | Virginia (combined state and statewide local rate, outside the regions with extra regional tax) | 5.3% | [Virginia Tax, retail sales and use tax](https://www.tax.virginia.gov/retail-sales-and-use-tax) |
-| Washington | 6.5% | [RCW 82.08.020](https://app.leg.wa.gov/RCW/default.aspx?cite=82.08.020) |
+| Washington | 6.5% (in words on the page) | [RCW 82.08.020](https://app.leg.wa.gov/RCW/default.aspx?cite=82.08.020) |
 | West Virginia | 6% | [West Virginia Tax Division, sales and use tax](https://tax.wv.gov/Business/SalesAndUseTax/Pages/SalesAndUseTax.aspx) |
 | Wisconsin | 5% | [Wisconsin DOR, tax rates FAQ](https://www.revenue.wi.gov/Pages/FAQS/pcs-taxrates.aspx) |
 | Wyoming | 4% | [Wyo. Stat. 39-15-104](https://wyoleg.gov/statutes/compress/title39.pdf) |
