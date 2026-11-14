@@ -40,7 +40,7 @@ Resident companies and non-resident companies carrying on business through a Ken
 
 ## The base
 
-Start with accounting profit. Exclude exempt/non-chargeable income, add back disallowed and capital expenses, deduct qualifying revenue expenditure wholly and exclusively incurred to produce income under s15(1), applying s16 exclusions including electronic-tax-invoice requirements unless a TPA exemption applies, applying s16 exclusions including electronic-tax-invoice requirements unless a TPA exemption applies, and claim current Second Schedule allowances rather than accounting depreciation. Separate capital gains and final-withholding income. Test losses under s15(4) and its conditions; do not presume unrestricted utilisation. Refer special-rate, EPZ/SEZ, NIFCA and cross-border cases.
+Start with accounting profit. Exclude exempt/non-chargeable income, add back disallowed and capital expenses, deduct qualifying revenue expenditure wholly and exclusively incurred to produce income under s15(1), applying s16 exclusions including electronic-tax-invoice requirements unless a TPA exemption applies, and claim current Second Schedule allowances rather than accounting depreciation. Separate capital gains and final-withholding income. Test losses under s15(4) and its conditions; do not presume unrestricted utilisation. Refer special-rate, EPZ/SEZ, NIFCA and cross-border cases.
 
 For a branch, repatriated income uses s7B: opening net assets + (accounting net profit - tax on chargeable income) - closing net assets. It is a separate tax question from the ordinary branch rate. Accounting profit and taxable profit are different inputs.
 
