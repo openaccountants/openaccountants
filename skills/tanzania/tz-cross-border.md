@@ -48,7 +48,7 @@ Treaty ceilings, from the treaties TRA publishes ([list](https://www.tra.go.tz/r
 | Partner | Dividends | Interest | Royalties | Management or technical fees | Source |
 |---|---|---|---|---|---|
 | Canada | 20% (15% voting) / 25% | 15% | 20% | 20% | [Treaty](https://www.tra.go.tz/images/uploads/agreements/canada.pdf) |
-| Denmark | 15% | 12.5% | 20% | 20% | [Treaty](https://www.tra.go.tz/images/uploads/agreements/Denmark.pdf) |
+| Denmark | 15% | twelve and a half percent (printed 12 1/2) | 20% | 20% | [Treaty](https://www.tra.go.tz/images/uploads/agreements/Denmark.pdf) |
 | Finland | 20% | 15% | 20% | 20% | [Treaty](https://www.tra.go.tz/images/uploads/agreements/Finland.pdf) |
 | India | 10% (10% holding) / 15% | 12.5% | 20% | 20% | [Treaty](https://www.tra.go.tz/images/uploads/agreements/India.pdf) |
 | Italy | 10% | 15% | 15% | Taxable in both, no cap | [Treaty](https://www.tra.go.tz/images/uploads/agreements/Italy.pdf) |
