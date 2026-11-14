@@ -3,11 +3,12 @@ name: gm-income-tax
 description: "personal income tax for The Gambia (tax year 2026): bands, minimum tax, small business and informal sector tax, capital gains, filing steps. Built from official GRA, SSHFC and Ministry of Justice pages."
 jurisdiction: GM
 tax_year: 2026
-version: 0.2
-last_updated: 2026-11-01
+version: 0.3
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
+type: computation
 ---
 
 # Gambia Personal Income Tax

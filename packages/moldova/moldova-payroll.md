@@ -1,19 +1,20 @@
 ---
 name: moldova-payroll
 description: "Compute Moldova payroll withholding for 2026 using the cumulative income-tax method, documented exemption months and separate social/medical contribution bases. Covers ordinary private and public employers, listed aviation conditions, qualifying agriculture, joiners, leavers, advances, benefits, corrections, IT-park transitions, nonresident source rules and treaty evidence. Use for salary tax, gross to net, CNAS, CNAM, IPC21, IRM19, personal and dependent exemptions, payment timing and payroll reconciliation. This source-cited draft corrects the former employee social deduction and exemption assumptions, and has a bounded source-review record linked under Sources. Its stated implementation gaps keep the domain partial; it does not claim accountant attestation or comprehensive coverage."
-version: "0.12"
+version: "0.13"
 jurisdiction: MD
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-14
 depends_on:
   - payroll-workflow-base
 category: payroll
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
+type: computation
 ---
 
-# Moldova payroll withholding, 2026 v0.12
+# Moldova payroll withholding, 2026 v0.13
 
 ## Who this applies to
 

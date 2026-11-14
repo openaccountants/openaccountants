@@ -1,16 +1,17 @@
 ---
 name: nl-tax-objection
 description: "Objecting to a Dutch national tax assessment, decision or payment (bezwaar) and appealing to the court (beroep), for 2026. Covers the 6-week objection period and when it starts (AWR art. 22j), the postal rule, what an objection must contain, protective (pro forma) objections, payment postponement and invorderingsrente at 4.3%, the hearing on request, the 6-week decision period and the 6-week extension, the default notice and penalty payment (dwangsom) of EUR 23/35/45 a day up to EUR 1,442, the EUR 666 cost award, late objections and ex officio reduction within 5 years, mass objections and the court appeal. Trigger phrases: bezwaar, bezwaarschrift, pro forma bezwaar, bezwaartermijn, uitspraak op bezwaar, hoorzitting, ingebrekestelling, dwangsom, ambtshalve vermindering, beroep belastingrechter, kostenvergoeding bezwaar, tax objection Netherlands. Out of scope: the tax itself (nl-income-tax, nl-corporate-tax, nl-vat-return, nl-payroll-tax), penalties for late returns (nl-income-tax), toeslagen, local taxes (WOZ) and customs."
-version: 1.1
+version: 1.2
 jurisdiction: NL
 tax_year: 2026
-last_updated: 2026-10-27
+last_updated: 2026-11-14
 depends_on:
   - income-tax-workflow-base
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
+type: situation-rules
 ---
 
 # Netherlands tax objections and appeals (bezwaar and beroep), 2026

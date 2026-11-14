@@ -2,18 +2,19 @@
 name: bw-cross-border
 description: >
   Botswana cross-border tax for 2026-27: non-resident withholding, repatriated profit, foreign tax credit, low tax entities, capital gains of non-residents, remote services VAT. Use for inbound or outbound Botswana questions.
-version: 0.2
+version: 0.3
 jurisdiction: BW
 category: international
 tax_year: 2026
 tax_year_notes: "2026-27 (1 July 2026 to 30 June 2027)"
-last_updated: 2026-11-01
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: cross-border
+type: situation-rules
 ---
 
-# Botswana Cross-Border Tax v0.2
+# Botswana Cross-Border Tax v0.3
 
 > **General reference only.** This skill is general tax reference material. It has not been reviewed for any specific person's facts. Check figures against the official sources named here.
 
