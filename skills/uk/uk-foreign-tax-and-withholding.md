@@ -53,7 +53,7 @@ It links out for everything else:
 |---|---|---|---|
 | Withholding on yearly interest (ITA s.874(2)) | 20% (the basic rate) | 2026/27 | https://www.legislation.gov.uk/ukpga/2007/3/section/874 ; https://www.legislation.gov.uk/ukpga/2026/11/section/2 |
 | Withholding on yearly interest from 6 April 2027 | 22% (FA 2026 Sch 1 para 29 changes s.874(2) to "the savings basic rate" for 2027/28 onward; FA 2026 s.5 sets it at 22% for 2027/28) | 2027/28 | https://www.legislation.gov.uk/ukpga/2026/11/schedule/1/paragraph/29 ; https://www.legislation.gov.uk/ukpga/2026/11/section/5 |
-| Withholding on patent royalties and IP royalties to an owner abroad (ITA ss.903, 906) | 20% (the basic rate) | 2026/27 | https://www.legislation.gov.uk/ukpga/2007/3/section/903 ; https://www.legislation.gov.uk/ukpga/2007/3/section/906 |
+| Withholding on patent royalties and IP royalties to an owner abroad (ITA ss.903, 906) | 20% (the basic rate) | 2026/27 | https://www.legislation.gov.uk/ukpga/2007/3/section/903 ; https://www.legislation.gov.uk/ukpga/2007/3/section/906 ; https://www.gov.uk/income-tax-rates |
 | Withholding on ordinary dividends | None (no duty in ITA Part 15) | Standing | https://www.legislation.gov.uk/ukpga/2007/3/section/847 |
 | Withholding on UK-REIT property income dividends | Basic rate, 20% | 2026/27 | https://www.gov.uk/guidance/double-taxation-relief-for-companies |
 | Rate the REIT regulations may require on PIDs from 6 April 2027 | Property basic rate, 22% (ITA s.974(1)(a) as amended by FA 2026 Sch 1 para 33; FA 2026 s.7) | 2027/28 | https://www.legislation.gov.uk/ukpga/2007/3/section/974 ; https://www.legislation.gov.uk/ukpga/2026/11/section/7 |
@@ -150,7 +150,7 @@ Treaty URLs are in Sources. For Ireland, France, the Netherlands, Spain, India, 
 | CT61 not delivered, or the payment not shown on it, where the payment was made gross without a reasonable belief that it was excepted, or under s.911 without a reasonable belief in treaty entitlement | Up to GBP 3,000, then up to GBP 600 a day (TMA s.98(4A), (4B), (4D)) | https://www.legislation.gov.uk/ukpga/1970/9/section/98 |
 | Wrong CT61 given fraudulently or negligently | Up to GBP 3,000 (TMA s.98(2)) | https://www.legislation.gov.uk/ukpga/1970/9/section/98 |
 | Tax under deducted | The payer is liable for the full sum it should have deducted (ITA s.951(2); s.938; s.911(3)) | https://www.legislation.gov.uk/ukpga/2007/3/section/951 |
-| CT61 tax paid late | Interest from the due date under TMA s.87, at the late payment rate (7.75% from 9 January 2026) | https://www.legislation.gov.uk/ukpga/1970/9/section/87 |
+| CT61 tax paid late | Interest from the due date under TMA s.87, at the late payment rate (7.75% from 9 January 2026) | https://www.legislation.gov.uk/ukpga/1970/9/section/87 ; https://www.gov.uk/government/publications/rates-and-allowances-hmrc-interest-rates-for-late-and-early-payments/rates-and-allowances-hmrc-interest-rates |
 | FTCR over-claimed on the return | Normal self assessment and CT inaccuracy rules; a later adjustment of the foreign tax that makes the credit excessive must be notified (TIOPA ss.79, 80) | https://www.legislation.gov.uk/ukpga/2010/8/contents |
 
 Check Bank Rate on the day before quoting interest. The HMRC page names 7.75% from 9 January 2026 and was still current when read on 23 October 2026.

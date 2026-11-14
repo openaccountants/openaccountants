@@ -45,7 +45,7 @@ The law is mainly the Corporation Tax Act 2009 (CTA 2009), the Corporation Tax A
 | Loss deductions allowance (company not in a group) | £5,000,000 a year, cut for short periods | FY2026 | [CTA 2010 s269ZW](https://www.legislation.gov.uk/ukpga/2010/4/section/269ZW) |
 | Loss deductions allowance (group) | one £5,000,000 shared across the group | FY2026 | [CTA 2010 s269ZR](https://www.legislation.gov.uk/ukpga/2010/4/section/269ZR) |
 | Profits above the deductions allowance that brought-forward losses can cover | 50% | FY2026 | [CTA 2010 s269ZB](https://www.legislation.gov.uk/ukpga/2010/4/section/269ZB); [s269ZD](https://www.legislation.gov.uk/ukpga/2010/4/section/269ZD) |
-| Corporate interest restriction de minimis | £2,000,000 net interest a year for the worldwide group | FY2026 | [TIOPA 2010 s392](https://www.legislation.gov.uk/ukpga/2010/8/section/392) |
+| Corporate interest restriction de minimis | £2 million net interest a year for the worldwide group | FY2026 | [TIOPA 2010 s392](https://www.legislation.gov.uk/ukpga/2010/8/section/392) |
 | Corporate interest restriction fixed ratio | 30% of tax-EBITDA (lower of that and the fixed ratio debt cap) | FY2026 | [TIOPA 2010 s397](https://www.legislation.gov.uk/ukpga/2010/8/section/397) |
 | Annual Investment Allowance | £1,000,000 | since 1 Jan 2019 | [gov.uk AIA](https://www.gov.uk/capital-allowances/annual-investment-allowance) |
 | Full expensing (new main rate plant, companies only) | 100% first-year allowance | expenditure from 1 Apr 2023 | [CAA 2001 s45S](https://www.legislation.gov.uk/ukpga/2001/2/section/45S); [HMRC CA23174AA](https://www.gov.uk/hmrc-internal-manuals/capital-allowances-manual/ca23174aa) |
