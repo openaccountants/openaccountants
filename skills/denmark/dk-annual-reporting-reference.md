@@ -25,7 +25,6 @@ type: situation-rules
 ---
 
 # Denmark Class-B Annual Reporting Reference, 2026 v0.2
-
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
 This is a selected source reference for a qualified Danish reviewer. Load both mandatory bases in full and retain their complete intake, source gates, refusals, confirmation sequence, outputs and checks. This reference does **not** fill all 12 mandatory country slots of the financial-statements base. It cannot serve alone as a complete Danish country companion or clear actual classification, preparation, measurement, exemption, submission or payment. The source holds below apply before actual outputs are prepared. Fictional arithmetic is not an engagement result.

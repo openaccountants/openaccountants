@@ -12,8 +12,7 @@ domain: corporate-tax
 type: computation
 ---
 
-# Denmark: corporate income tax (selskabsskat) v0.3
-
+# Denmark: corporate income tax (selskabsskat) v0.4
 > **General reference only.** This skill is general tax reference material for AI-assisted workflows. It has not been reviewed for any specific company's facts, elections, deadlines or filings. Do not rely on it to file, pay or take a tax position without review by a qualified professional in Denmark.
 
 Tax year: income year 2026 (indkomståret 2026). Most companies use the calendar year. A company with a different financial year (forskudt indkomstår) is taxed for the income year that the financial year "replaces" (Selskabsskatteloven § 29 A, stk. 1). Currency: Danish kroner (DKK). Authority: Skattestyrelsen (skat.dk). Statute: Selskabsskatteloven, LBK nr. 279 of 13 March 2025, as later amended (see Sources).
