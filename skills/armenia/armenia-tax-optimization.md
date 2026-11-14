@@ -1,17 +1,17 @@
 ---
 name: armenia-tax-optimization
 description: "Use for 2026 Armenian business-regime comparisons and lawful tax planning for a company or individual entrepreneur. Separates ordinary company profit tax, turnover-tax eligibility and activity rates, entrepreneur profit tax and micro-business conditions. Test the legal form, activity classification, exclusions, turnover and election dates before comparing amounts. Trigger on Armenia tax regime, microenterprise, turnover tax, individual entrepreneur, LLC comparison or business tax planning. Includes preserved calculation and threshold controls with explicit eligibility assumptions. Read alongside the detailed personal, corporate, VAT and payroll Guides. Includes ordinary aggregation, entry and exit dates, documented cost-reduction carries, asset transitions and published filing forms. Checked against the law; independent source review is recorded in the country research; named professional attestation remains pending."
-version: 0.4
+version: 0.5
 jurisdiction: AM
 tax_year: 2026
-last_updated: 2026-10-28
+last_updated: 2026-11-14
 category: tax-optimization
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: tax-optimization
 ---
 
-# Armenia business tax planning v0.4
+# Armenia business tax planning v0.5
 
 ## Do the eligibility test before the arithmetic
 
@@ -165,4 +165,4 @@ Turnover-tax returns and payment are quarterly and due by the 20th day of the fo
 
 **Not yet confirmed:** taxpayer-specific classification and facts, the specialist incentives/disputes/treaty matters stated outside this ordinary comparison, fresh independent whole-country review and named professional attestation. No live taxpayer portal or return was accessed.
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.

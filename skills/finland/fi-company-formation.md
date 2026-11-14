@@ -10,17 +10,17 @@ description: >
   financial statement filing or audit thresholds. Includes statutory and authority
   sources, read dates and worked controls. Other entities, exemptions, specialist
   sectors and named Finnish accountant review remain open.
-version: 0.2
+version: 0.3
 jurisdiction: FI
 tax_year: 2026
-last_updated: 2026-10-27
+last_updated: 2026-11-14
 category: formation
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: formation
 ---
 
-# Finland company formation and entity screening v0.2
+# Finland company formation and entity screening v0.3
 
 ## Who this applies to
 
@@ -146,4 +146,4 @@ Not yet confirmed: complete company/accounting/Trade Register and fee-law chains
 [partnerships-law]: https://www.finlex.fi/fi/lainsaadanto/1988/389
 [accounting-law]: https://www.finlex.fi/fi/lainsaadanto/1997/1336
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.

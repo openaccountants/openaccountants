@@ -1,10 +1,10 @@
 ---
 name: paraguay-social-contributions
 description: "Paraguay social security contributions to the Instituto de Previsión Social (IPS) for 2026: the general regime for employees (9% withheld from the worker, 16.5% employer as IPS collects it, of which 14% is the employer's IPS quota under Ley N° 98/1992, plus a 2.5% additional employer levy whose allocation is phased under Ley 7446/2024), what counts as salary for the base (overtime, commissions, bonuses, pay in kind; not the aguinaldo or the family allowance), the minimum-wage floor, domestic workers (Ley N° 5407/2015), part-time workers, voluntary affiliation at 13% (Ley N° 4933/2013), continuity contributions at 12.5%, teachers, ANDE staff and pensioners, the separate bank employees' fund (Caja Bancaria, 11% and 17%), monthly filing through the IPS REI system, and the fines of Ley N° 98/1992 and Ley N° 5655/2016. Trigger on: aportes IPS, aporte obrero patronal, IPS Paraguay, cuánto pago de IPS, seguro social Paraguay, trabajo doméstico IPS, IPS tiempo parcial, aporte voluntario IPS, Caja Bancaria, REI IPS, 9% IPS, 16.5% IPS. Out of scope: gross-to-net pay and the minimum wage (paraguay-payroll), income tax (paraguay-income-tax)."
-version: 0.2
+version: 0.3
 jurisdiction: PY
 tax_year: 2026
-last_updated: 2026-11-11
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 type: computation
@@ -12,7 +12,7 @@ tier: 2
 domain: payroll
 ---
 
-# Paraguay IPS social security contributions, 2026 v0.2
+# Paraguay IPS social security contributions, 2026 v0.3
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -204,4 +204,4 @@ expected:
 
 Not yet confirmed: whether bank employees also contribute to IPS for medical care alongside the Caja Bancaria; the IPS late-payment surcharge and interest rates (the earlier skill gave 1% to 50% from secondary sources, not used); the current text of Decreto-Ley 1860/50 arts. 20 and 76 (read only as IPS quotes them); the 2026 value of a día-multa as fixed by the IPS board; the special minimum bases for listed occupations (cooks, drivers, rural day workers, maritime stevedores) on the IPS table, which date from 2023; social security agreements for posted workers; the valuation of pay in kind for the base.
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.

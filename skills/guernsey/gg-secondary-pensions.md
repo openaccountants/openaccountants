@@ -2,7 +2,7 @@
 name: gg-secondary-pensions
 description: >
   Prepare 2026 Guernsey secondary-pension enrolment and contribution working papers for employers. Covers designated and voluntary employees, phased employer start dates, minimum contributions, the earnings base, enrolment deferral, opt-outs, refunds, re-enrolment and quarterly reporting. Distinguishes payments to the pension provider from Revenue Service returns and social-insurance contributions. Use for workplace pension setup, payroll contribution calculations and compliance reviews. Based on official employer guidance checked in October 2026. Direct statutory reconciliation, detailed enforcement, scheme-specific conditions and independent review remain outstanding; this source-cited draft does not establish comprehensive payroll coverage or professional attestation.
-version: 0.3
+version: 0.4
 jurisdiction: GG
 tax_year: 2026
 last_updated: 2026-11-14
@@ -139,4 +139,4 @@ Not yet confirmed: full underlying-Law notice prerequisites, new-employer commen
 
 General working-paper reference only. A qualified professional must verify current law, scheme documents and the employee's facts before filing, paying or acting on this source-cited draft.
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.

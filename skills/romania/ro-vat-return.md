@@ -1,7 +1,7 @@
 ---
 name: ro-vat-return
 description: "Use this skill for Romanian VAT (TVA, taxa pe valoarea adăugată) in tax year 2026: who must register, the 21% standard rate and 11% reduced rate set by Legea 141/2025 from 1 August 2025 and what the 11% list covers, the 9% transitional rate for homes ending 31 July 2026, the 395,000 lei small-enterprise exemption, monthly or quarterly D300 returns due on the 25th, the D394 local listing due on the 30th, the D390 EU listing, RO e-TVA pre-filled returns and compliance notices, RO e-Factura in five working days, domestic and EU reverse charge, intra-EU supplies, the 50% car restriction, refunds, interest and fines. Trigger phrases: Romanian VAT, Romania VAT return, Romanian VAT rate, TVA Romania, D300, decont de TVA, D394, e-TVA, cota TVA 21%, plafon 395.000 lei, VAT registration Romania. Out of scope: e-invoice formats and validation (romania-einvoice), company tax (ro-corporate-income-tax), residence and withholding (ro-cross-border), the system overview (ro-tax-overview)."
-version: 1.3
+version: 1.4
 type: filing-howto
 jurisdiction: RO
 tax_year: 2026
@@ -245,4 +245,4 @@ expected:
 
 Not yet confirmed: legislatie.just.ro did not load on 2026-10-23, so OUG 70/2024 and OUG 120/2021 were read as their original texts plus the amending acts listed, not as consolidated texts; an amendment made after OUG 89/2025 would not show here. When the 25th falls on a weekend or public holiday, Procedure Code art. 75 sends the computation to the Civil Procedure Code, which was not read for this skill, so the roll-over to the next working day is not stated here; Example 1 uses a period whose deadline is a working day. The cash accounting ceiling for 1 January to 28 February 2026, before OUG 8/2026 took effect, was not checked.
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.

@@ -11,7 +11,7 @@ description: >
   two executable examples. Read alongside the corporate, transfer-pricing and
   individual-residence skills; specialist fund, hybrid, restructuring and
   minimum-tax regimes require separate analysis.
-version: 0.2
+version: 0.3
 jurisdiction: FI
 tax_year: 2026
 last_updated: 2026-11-14
@@ -22,7 +22,7 @@ domain: cross-border
 type: situation-rules
 ---
 
-# Finland Corporate Cross-Border Tax v0.2
+# Finland Corporate Cross-Border Tax v0.3
 
 **Tax year:** 2026. Scope: ordinary commercial corporations, Finnish PEs and Finnish payers. Domestic law establishes a liability before a treaty or EU exemption restricts it. Independent source-review evidence and remaining publication gates are recorded in the [pack README](README.md); this skill does not establish worldwide-goal completion.
 
@@ -215,4 +215,4 @@ Not yet confirmed: transaction-specific treaty/MLI entitlement and nonordinary f
 [ir-deadline]: https://vero.fi/en/incomes-register/companies-and-organisations/deadlines-for-reporting/
 [payment]: https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/self-assessed-taxes/paying-self-assessed-taxes/
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.

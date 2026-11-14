@@ -11,17 +11,17 @@ description: >
   corporate income tax, related-party, nonresident withholding and payroll
   obligations to the current Qatar tax Guides. Excludes unverified fee quotes,
   service turnaround promises and transaction-specific sector licensing advice.
-version: 0.1
+version: 0.2
 jurisdiction: QA
 tax_year: 2026
-last_updated: 2026-10-28
+last_updated: 2026-11-14
 category: formation
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: formation
 ---
 
-# Qatar company formation and entity choice v0.1
+# Qatar company formation and entity choice v0.2
 
 ## Scope and entity choice
 
@@ -126,4 +126,4 @@ ordinary entity-choice scope and must be sourced for the actual application.
 Source-cited draft. A qualified Qatar professional must review the ownership,
 activity and licensing facts before submission or acting.
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.

@@ -1,11 +1,11 @@
 ---
 name: sk-tax-overview
 description: "Tax overview for Slovakia, tax year 2026: the main taxes and their headline figures in one place, each tied to the Slovak law. Covers the tax year, the Financial Administration, residence (permanent residence, home or 183 days; seat or place of effective management for companies), personal income tax at 19%, 25%, 30% and 35% with the 2026 band amounts, the 15% rate for small businesses, corporate income tax at 10%, 21% or 24% set by taxable revenue, VAT at 23%, 19% and 5% with the EUR 50,000 and EUR 62,500 registration limits, and the return dates. Trigger phrases: Slovakia tax overview, how is Slovakia taxed, Slovak tax rates 2026, Finančná správa. Out of scope (detail lives in the sibling skills): slovakia-pit, sk-corporate-income-tax, slovakia-vat-return, slovakia-vat-registration-4-7-7a, sk-payroll-social, sk-cross-border, sk-transfer-pricing, sk-company-formation."
-version: 0.2
+version: 0.3
 jurisdiction: SK
 category: international
 tax_year: 2026
-last_updated: 2026-10-30
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 ---
@@ -53,4 +53,4 @@ This page is the summary. Each line points to the skill that holds the full rule
 
 Not yet confirmed: the date Slovakia adopted the euro (on the old page as 1 January 2009; no official source read for this page). Dividend taxation of individuals, minimum corporate tax and payroll rates are left to the sibling skills.
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.

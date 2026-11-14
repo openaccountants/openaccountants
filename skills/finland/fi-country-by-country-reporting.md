@@ -2,7 +2,7 @@
 name: fi-country-by-country-reporting
 description: >
   Prepare Finland country-by-country tax reporting and reporting-entity notifications for 2026 periods. Determine the group or standalone-with-PE threshold, ultimate-parent, secondary or surrogate role and the separate notification duty. Covers statutory foreign-parent failure conditions, information refusal, currency thresholds, jurisdictional revenue and tax aggregation, equity, employees, tangible assets and constituent-entity identifiers. Distinguish consolidated sales used for the threshold from country rows in the report. Includes MyTax and CSV preparation, report and notification deadlines, exchange evidence and sanctions. Trigger on CbCR, DAC4, maakohtainen raportti, reporting entity, EUR 750 million group or Finnish secondary reporting. Public company-law reporting and Pillar Two returns are separate obligations.
-version: 0.7
+version: 0.8
 jurisdiction: FI
 tax_year: 2026
 last_updated: 2026-11-14
@@ -12,7 +12,7 @@ tier: 2
 type: situation-rules
 ---
 
-# Finland country-by-country reporting v0.7
+# Finland country-by-country reporting v0.8
 
 ## Who this applies to
 
@@ -148,4 +148,4 @@ Not yet confirmed: no taxpayer-specific foreign exchange relationship or filing 
 [detail]: https://www.vero.fi/syventavat-vero-ohjeet/ohje-hakusivu/49771/verotuksen-maakohtainen-raportti3/
 [csv]: https://www.vero.fi/en/businesses-and-corporations/business-operations/transfer-pricing/countrybycountry-report-and-notification/country-by-country-reporting-guidance-for-generating-csv-files/
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.

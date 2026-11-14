@@ -1,7 +1,7 @@
 ---
 name: be-vat-return
 description: "Preparing and filing the Belgian periodic VAT return (periodieke btw-aangifte / déclaration périodique TVA) for tax year 2026: who files, the 21%, 12%, 6% and 0% rates (hotels and campsites 12% from 1 March 2026), monthly or quarterly filing (EUR 2,500,000 test, EUR 50,000 intra-EU test), the 20th and 25th deadlines and the 2026 calendar, Intervat, which grid each transaction goes in, domestic reverse charge for construction (KB nr. 1 art. 20) and other customer-pays cases, the annual client listing (over EUR 250 per customer, before 31 March) and the intra-EU listing, structured B2B e-invoicing from 1 January 2026 and its fines, the small-business exemption at EUR 25,000 with its 10% tolerance and the rises to EUR 26,000-30,000 from 2027, the EU small-business scheme (EUR 100,000), refunds and the VAT provision account, capital goods, late interest of 8% for 2026 and the fines in KB nr. 41 and 44. Trigger on: Belgian VAT return, btw-aangifte invullen, rooster 71, Intervat, klantenlisting, intracommunautaire opgave, medecontractant, verlegging van heffing, btw-boete, vrijstellingsregeling kleine ondernemingen, franchise TVA, vervangende aangifte, Belgian VAT. Out of scope: Peppol set-up (belgium-einvoice), bookkeeping (belgium-bookkeeping), income tax (be-income-tax, be-corporate-tax)."
-version: 2.5
+version: 2.6
 jurisdiction: BE
 tax_year: 2026
 last_updated: 2026-11-14
@@ -15,7 +15,7 @@ domain: vat-gst
 type: filing-howto
 ---
 
-# Belgium VAT and the periodic VAT return (btw-aangifte / déclaration TVA): the law, preparing and filing, tax year 2026 v2.5
+# Belgium VAT and the periodic VAT return (btw-aangifte / déclaration TVA): the law, preparing and filing, tax year 2026 v2.6
 
 > **Source-cited draft: not reviewed by an accountant.** This skill is general tax reference material for AI-assisted work. It has not been reviewed for any business's facts. Do not rely on it to file, pay or take a position without review by a qualified professional in Belgium.
 
@@ -300,4 +300,4 @@ expected:
 
 Not yet confirmed: the EUR 250 per-customer floor of the client listing is on the FOD Financiën page but not in KB nr. 23 (neither its articles nor its annex, model form 725, state an amount), so its legal basis was not found; the 2027 late-interest rate (the fiscal rate for 2027 is published in the third quarter) was not looked up; the FOD Financiën page waives only the fine for late filing (KB nr. 44) for June, Q2 and July 2026 returns filed by 10 August or 10 September 2026; whether the late-payment fine on such a return is 5% or 10% (KB nr. 41 Table G, I.1 or I.2) is not stated in the sources read; the old v2.0 internal review flags (EUR 5,000 single transaction, EUR 400 default delta and similar) were working rules, not law, and were not carried; the treatment of short-term letting income (platform sales, Airbnb) beyond the 12% rate for furnished accommodation is not covered here; whether the pro rata limit for a business that starts mid-year is also the limit tested for the "exceeded in the previous year" bar in art. 56decies; the full item lists of Tables A, B and C are summarised, not reproduced; who must file the annual intra-EU listing shown on the btw-kalender, and its legal basis: KB nr. 50 as read sets monthly and quarterly listings, and the calendar does not say who the annual one is for; the date for the 2026 annual listing, because the calendar gives only the 2025 date; WBTW art. 56decies was not re-read on 2026-10-31, as the FisconetPlus page rendered without its text in a browser, so its 10% tolerance rests on the earlier read.
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.

@@ -1,10 +1,10 @@
 ---
 name: albania-tax-optimization
 description: "Use this skill whenever asked about reducing tax in Albania, tax planning, or legal strategies to minimise tax for a self-employed person or small business in Albania, for tax year 2026. Trigger on phrases like 'reduce tax Albania', '0% tax small business Albania', 'simplified profit tax', 'freelancer Albania', 'self-employed vs company Albania', 'save tax Albania', 'tax planning Albania'. This skill covers the 0% rate for traders, the self-employed and entities with gross income up to ALL 14m (to 2029, Law 29/2023 art. 69(1)(dh)), the repeal of the old simplified profit tax, the freelancer single-client reclassification rule, the standard rates above the threshold, the 2026 social and health contribution floor that still applies at 0%, and the anti-avoidance red lines. Out of scope: full income tax computation (albania-income-tax), companies (al-corporate-tax), VAT (albania-vat), contributions in detail (albania-social-contributions). ALWAYS read this skill before advising on any Albanian tax optimisation."
-version: 0.4
+version: 0.5
 jurisdiction: AL
 tax_year: 2026
-last_updated: 2026-10-30
+last_updated: 2026-11-14
 category: tax-optimization
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
@@ -13,7 +13,7 @@ domain: tax-optimization
 
 # Albania Tax Optimization
 
-## Albania Tax Optimization Skill v0.4
+## Albania Tax Optimization Skill v0.5
 
 Albania Tax Optimization Skill v0.4, tax year 2026.
 
@@ -87,4 +87,4 @@ Not yet confirmed: which article of Law 9920/2008 on tax procedures the tax admi
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a licensed tax adviser in Albania) before acting upon.
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.

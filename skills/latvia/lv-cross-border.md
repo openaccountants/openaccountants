@@ -1,7 +1,7 @@
 ---
 name: lv-cross-border
 description: "Hub skill for crossing the Latvian border in tax year 2026. Covers tax residence for individuals (declared home, or 183 days in any 12-month period, Law On Taxes and Fees section 14) and companies (incorporated under Latvian law); permanent establishment, including services over 30 days in any 6 months; Latvian-source income of non-residents; corporate income tax withholding on payments to non-residents (20% on management and consulting fees, 3% on real estate sales, 5% on real estate rent, 20% on all payments to low-tax or no-tax jurisdictions); treaty relief and the non-resident's net-basis refund report; foreign tax credit; the exit charge when assets leave Latvian taxing rights. Trigger on: moving to Latvia, leaving Latvia, non-resident, nerezidents, withholding tax Latvia, management fee withholding, low-tax jurisdiction, residence certificate, permanent establishment, exit tax. Out of scope: personal income tax detail (latvia-income-tax), corporate income tax (lv-corporate-income-tax), social contributions (latvia-social-contributions), payroll (latvia-payroll), VAT (latvia-vat-return)."
-version: 0.2
+version: 0.3
 jurisdiction: LV
 tax_year: 2026
 last_updated: 2026-11-14
@@ -12,7 +12,7 @@ domain: cross-border
 type: situation-rules
 ---
 
-# Latvia: cross-border tax for people and companies (2026) v0.2
+# Latvia: cross-border tax for people and companies (2026) v0.3
 
 > **Source-cited draft.** No accountant has reviewed this skill yet. Every figure below comes from the consolidated texts of the Corporate Income Tax Law, the Law On Personal Income Tax and the Law On Taxes and Fees published on likumi.lv, in the versions in force for 2026 (including the amendments of 3 December 2025 in force from 1 January 2026). It prepares working papers; it is not authority to file or pay.
 
@@ -242,4 +242,4 @@ likumi.lv (the official legal acts portal of the publisher Latvijas Vēstnesis) 
 
 Not yet confirmed: the Cabinet of Ministers regulation on applying treaty relief and the residence certificate forms (Regulation No. 178 of 30 April 2001 is the one named in VID material; not read); the Cabinet list of low-tax and no-tax jurisdictions in force in 2026 (not read); whether Latvia gives the ATAD article 5(2) exit-tax instalments anywhere outside the CIT Law and LTF section 24 (none found in those texts); the 2026 maximum social insurance contribution base that sets the 33% band and the later declaration window (set under the law On State Social Insurance, not read); the Cabinet rules on reporting payments to non-residents under CIT Law section 16(2); amendments to the PIT Law adopted after 1 September 2026; individual treaty rates and tie-breakers.
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.

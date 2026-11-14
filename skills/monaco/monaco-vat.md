@@ -1,7 +1,7 @@
 ---
 name: monaco-vat
 description: "Monaco VAT working paper for 2026 using the Monaco turnover tax code and the France Monaco convention. Covers standard rate calculations, ordinary franchise thresholds, start date and threshold crossing tests, input deduction, business service reverse charge, monthly or permitted quarterly filing, Monaco DSF procedures and statutory penalties. Use for Monaco TVA, VAT returns, small business exemption and foreign service questions. Requires transaction evidence and the assigned filing calendar. Includes input recovery coefficients, capital adjustments, refunds, exports, imports, EU reporting and documented portal onboarding, and awaits a named Monaco professional review."
-version: 2.4
+version: 2.5
 jurisdiction: MC
 tax_year: 2026
 last_updated: 2026-11-14
@@ -12,7 +12,7 @@ domain: vat-gst
 type: situation-rules
 ---
 
-# Monaco VAT v2.4
+# Monaco VAT v2.5
 
 > **Source-cited draft.** Checked 25 October 2026. No named Monaco professional has reviewed this Guide. It produces a working paper, not a filing or a final tax position. Read the [country gap register](README.md) before use.
 
@@ -148,4 +148,4 @@ expected:
 
 **Not yet confirmed:** special margin/travel/online schemes, development property and the detailed classification of specialised reduced-rate products; these require their own primary-law analysis. Ordinary rates, input coefficients, trade and filing methods above do not establish eligibility for those schemes. Version 2.3 builds on the retained correction of the earlier unsourced Nice route and bank-name defaults.
 
-> Contributed by Michael Cutajar.
+> Contributed by OpenAccountants.
