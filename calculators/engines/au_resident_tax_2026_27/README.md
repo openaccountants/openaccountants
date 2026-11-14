@@ -2,9 +2,9 @@
 
 Australia, resident for the full 2026-27 year: income tax on taxable income less LITO, plus 2% Medicare levy, plus MLS check; take-home = gross income less those.
 
-Jurisdiction AU. Tax year 2026-27. Engine version 1.2.0.
+Jurisdiction AU. Tax year 2026-27. Engine version 1.4.0.
 
-This is the same code that answers the compute tool of the OpenAccountants plugin. It is generated from `src/lib/engines/au-resident-tax-2026-27.ts` in the OpenAccountants platform at commit `9931ceb6`; do not edit it here. The compute tool's answer links to this folder (`inspect.code_url`), so anyone can read the code, the figures and the tests behind it and run them again.
+This is the same code that answers the compute tool of the OpenAccountants plugin. It is generated from `src/lib/engines/au-resident-tax-2026-27.ts` in the OpenAccountants platform at commit `c2e3c2b9`; do not edit it here. The compute tool's answer links to this folder (`inspect.code_url`), so anyone can read the code, the figures and the tests behind it and run them again.
 
 ## Files
 
@@ -29,7 +29,7 @@ import { run } from "./calculators/engines/au_resident_tax_2026_27/index.mjs";
 console.log(JSON.stringify(run({"gross_income":100000,"has_private_hospital_cover":true,"has_help_debt":false,"has_salary_or_wage_income":true,"tax_year":"2026-27"}), null, 2));
 ```
 
-To check an answer from the plugin, pass the same facts: `run(facts)` returns the same result, steps and constants, and `receiptId("au_resident_tax_2026_27", "1.2.0", facts, run(facts))` equals the `receipt.id` it returned.
+To check an answer from the plugin, pass the same facts: `run(facts)` returns the same result, steps and constants, and `receiptId("au_resident_tax_2026_27", "1.4.0", facts, run(facts))` equals the `receipt.id` it returned.
 
 ## Inputs
 
@@ -37,7 +37,8 @@ To check an answer from the plugin, pass the same facts: `run(facts)` returns th
 |---|---|---|---|---|
 | `gross_income` | number | yes |  | AUD (salary etc.) |
 | `other_deductions` | number | no | `0` | AUD |
-| `has_salary_or_wage_income` | boolean | yes |  | does the person earn salary or wages (labour income)? The engine then applies the $1,000 standard work deduction itself |
+| `has_salary_or_wage_income` | boolean | yes |  | does the person earn salary or wages (labour income)? The engine then applies the $1,000 standard work deduction top-up itself |
+| `labour_income` | number | no |  | AUD qualifying labour income (salary and wages) within gross_income; business or PSI income does not count. Taken as gross_income when not given |
 | `actual_work_expenses_claimed` | number | no | `0` | work-related expenses the person chooses to claim with records |
 | `has_private_hospital_cover` | boolean | yes |  | private patient hospital cover for the full year |
 | `has_help_debt` | boolean | no | `false` | HELP (study loan) debt |
@@ -68,7 +69,7 @@ A fact left out takes its default, and the output lists it in `defaults_assumed`
 
 - Any tax year other than 2026-27 (`missing_rule`). It never applies one year's figures to another year.
 - A missing, negative or wrongly typed fact (`needs_input`).
-- Medicare levy low-income thresholds 2026-27 (`missing_rule`)
+- Medicare levy reduction in the low-income range (`missing_rule`)
 - MLS 2026-27 tiers (`missing_rule`)
 - HELP repayment 2026-27 thresholds (`missing_rule`)
 
@@ -81,7 +82,7 @@ Every figure is quoted from an OpenAccountants skill. The skill is the authority
 | `RESIDENT_BRACKETS_2026_27` | `[[0,18200,0],[18200,45000,0.15],[45000,135000,0.3],[135000,190000,0.37],[190000,null,0.45]]` | [au-rates-2026-27](https://www.openaccountants.com/skills/au-rates-2026-27) | Individual income tax / Resident brackets |
 | `LITO` | `{"max":700,"t1":37500,"taper1":0.05,"t2":45000,"taper2":0.015,"nil_at":66667}` | [au-rates-2026-27](https://www.openaccountants.com/skills/au-rates-2026-27) | Individual income tax / Offsets and deductions |
 | `MEDICARE_LEVY_RATE` | `0.02` | [au-rates-2026-27](https://www.openaccountants.com/skills/au-rates-2026-27) | Medicare |
-| `MEDICARE_LOW_INCOME_SINGLE_2025_26` | `[28011,35013]` | [au-rates-2026-27](https://www.openaccountants.com/skills/au-rates-2026-27) | Medicare |
+| `MEDICARE_LOW_INCOME_SINGLE_2026_27` | `[28011,35013]` | [au-rates-2026-27](https://www.openaccountants.com/skills/au-rates-2026-27) | Medicare |
 | `MLS_BASE_TIER_SINGLE` | `101000` | [au-rates-2026-27](https://www.openaccountants.com/skills/au-rates-2026-27) | Medicare |
 | `STANDARD_WRE_DEDUCTION` | `1000` | [au-rates-2026-27](https://www.openaccountants.com/skills/au-rates-2026-27) | Individual income tax / Offsets and deductions |
 
@@ -99,4 +100,4 @@ The platform's tests recompute these from the skills' own worked examples (`work
 
 Code (`index.mjs`, `index.test.mjs`, `source/`): AGPL-3.0-only, like every calculator in this repository. Figures and wording in `rules.json`: the OpenAccountants Guide License v1.0, like the skills. See [LICENSING.md](../../../LICENSING.md).
 
-Source commit: `9931ceb6` (OpenAccountants platform, `src/lib/engines`).
+Source commit: `c2e3c2b9` (OpenAccountants platform, `src/lib/engines`).

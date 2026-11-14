@@ -2,7 +2,7 @@
   "engine": "uk_paye_take_home_2026_27",
   "code_url": "https://github.com/openaccountants/openaccountants/tree/main/calculators/engines/uk_paye_take_home_2026_27",
   "generated_from": "src/lib/engines/uk-paye-take-home-2026-27.ts",
-  "source_commit": "9931ceb6",
+  "source_commit": "c2e3c2b9",
   "licence": "Figures and wording: OpenAccountants Guide License v1.0. Code: AGPL-3.0-only.",
   "spec": {
     "name": "uk_paye_take_home_2026_27",

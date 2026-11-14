@@ -2,11 +2,11 @@
   "engine": "us_se_tax",
   "code_url": "https://github.com/openaccountants/openaccountants/tree/main/calculators/engines/us_se_tax",
   "generated_from": "src/lib/engines/us-se-tax.ts",
-  "source_commit": "9931ceb6",
+  "source_commit": "c2e3c2b9",
   "licence": "Figures and wording: OpenAccountants Guide License v1.0. Code: AGPL-3.0-only.",
   "spec": {
     "name": "us_se_tax",
-    "version": "1.2.0",
+    "version": "1.3.0",
     "jurisdiction": "US",
     "tax_years": [
       "2025",
@@ -44,33 +44,33 @@
     }
   },
   "anchors": [
-    "us-federal-return-assembly Case A: profit $120,000 -> SE tax $16,955.46 (2025), half $8,477.73",
-    "us-schedule-c-and-se-computation Example 2: $102,500 -> $14,483"
+    "us-tax-workflow-base Case 1 (2026): profit $60,000 -> SE tax $8,477.73",
+    "us-schedule-c-and-se-computation Case 2 (2026): profit $120,000, W-2 wages $100,000 -> SE tax $13,691.78, half $6,845.89"
   ],
   "rules": [
     {
       "name": "NET_EARNINGS_FACTOR",
       "value": 0.9235,
-      "slug": "us-federal-return-assembly",
-      "section": "Self-employment tax",
-      "quote": "Net earnings | Schedule C net profit × 92.35%",
-      "skill_url": "https://www.openaccountants.com/skills/us-federal-return-assembly"
+      "slug": "us-schedule-c-and-se-computation",
+      "section": "Rates, bands and thresholds",
+      "quote": "Net earnings factor (Schedule SE line 4a) | 92.35%",
+      "skill_url": "https://www.openaccountants.com/skills/us-schedule-c-and-se-computation"
     },
     {
       "name": "MIN_NET_EARNINGS",
       "value": 400,
-      "slug": "us-federal-return-assembly",
-      "section": "Self-employment tax",
-      "quote": "No SE tax | If net earnings (Schedule SE line 4c) are less than $400",
-      "skill_url": "https://www.openaccountants.com/skills/us-federal-return-assembly"
+      "slug": "us-schedule-c-and-se-computation",
+      "section": "Rates, bands and thresholds",
+      "quote": "No self-employment tax below this net earnings amount | USD 400",
+      "skill_url": "https://www.openaccountants.com/skills/us-schedule-c-and-se-computation"
     },
     {
       "name": "SS_RATE",
       "value": 0.124,
-      "slug": "us-federal-return-assembly",
-      "section": "Self-employment tax",
-      "quote": "Social security part | 12.4% of net earnings, up to the wage base minus social security wages already taxed",
-      "skill_url": "https://www.openaccountants.com/skills/us-federal-return-assembly"
+      "slug": "us-schedule-c-and-se-computation",
+      "section": "Rates, bands and thresholds",
+      "quote": "Social Security part of self-employment tax | 12.4%",
+      "skill_url": "https://www.openaccountants.com/skills/us-schedule-c-and-se-computation"
     },
     {
       "name": "WAGE_BASE",
@@ -78,26 +78,26 @@
         "2025": 176100,
         "2026": 184500
       },
-      "slug": "us-federal-return-assembly",
-      "section": "Self-employment tax",
-      "quote": "Wage base | $176,100 for 2025; $184,500 for 2026",
-      "skill_url": "https://www.openaccountants.com/skills/us-federal-return-assembly"
+      "slug": "us-tax-workflow-base",
+      "section": "Figures for 2026, with years",
+      "quote": "Item | 2026 | 2025 | Condition that decides it\nSocial security wage base | $184,500 | $176,100 | Wages already taxed for social security use up part of the base",
+      "skill_url": "https://www.openaccountants.com/skills/us-tax-workflow-base"
     },
     {
       "name": "MEDICARE_RATE",
       "value": 0.029,
-      "slug": "us-federal-return-assembly",
-      "section": "Self-employment tax",
-      "quote": "Medicare part | 2.9% of all net earnings, with no cap",
-      "skill_url": "https://www.openaccountants.com/skills/us-federal-return-assembly"
+      "slug": "us-schedule-c-and-se-computation",
+      "section": "Rates, bands and thresholds",
+      "quote": "Medicare part of self-employment tax | 2.9%",
+      "skill_url": "https://www.openaccountants.com/skills/us-schedule-c-and-se-computation"
     },
     {
       "name": "DEDUCTIBLE_SHARE",
       "value": 0.5,
-      "slug": "us-federal-return-assembly",
-      "section": "Self-employment tax",
-      "quote": "Deduction | Half of SE tax (Schedule SE line 13) goes to Schedule 1 line 15",
-      "skill_url": "https://www.openaccountants.com/skills/us-federal-return-assembly"
+      "slug": "us-schedule-c-and-se-computation",
+      "section": "Rates, bands and thresholds",
+      "quote": "Deductible share of self-employment tax (Schedule SE line 13) | 50%",
+      "skill_url": "https://www.openaccountants.com/skills/us-schedule-c-and-se-computation"
     }
   ]
 }
