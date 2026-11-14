@@ -25,7 +25,6 @@ type: filing-howto
 ---
 
 # Nauru: corporate annual return date reference v0.2
-
 > **General reference only.** This is a source-cited Tier 2 conditional draft. It does not establish a completed formation engagement, accepted compliance calendar, incorporation, renewal or filing. Actual work remains held until applicable law, material facts, complete outputs and qualified review are established.
 
 **Answer first.** A Nauru trading corporation lodges its annual return with the Registrar, signed by a director or secretary, with the prescribed fee, **at least once in each calendar year and not later than 28 days before the anniversary of its incorporation** (Corporations Act 1972, s 133(5)). The return is made up to a date not earlier than the twenty-eighth day before lodgement (s 133(3)) and must include the beneficial ownership compliance statement countersigned by the nominated officer (Beneficial Ownership Act 2017, s 42). Each due lodgement renews the certificate of incorporation for **12 months** from the anniversary; the Registrar issues it within **14 days** (s 15(4)). Accounts are kept for **7 years** (s 134).
