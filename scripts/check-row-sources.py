@@ -20,6 +20,7 @@ Writes a markdown report to $GITHUB_STEP_SUMMARY when set.
 """
 import html
 import io
+import json
 import os
 import re
 import subprocess
@@ -116,8 +117,29 @@ def read_bytes(raw):
         except zipfile.BadZipFile:
             return ""
     t = raw.decode("utf-8", "replace")
+    flight = next_flight_text(t)
+    # Some sites (vero.fi) keep a table as JSON inside a long attribute value: keep that text too.
+    attrs = " ".join(html.unescape(a) for a in re.findall(r'="([^"]{50,})"', t))
     t = re.sub(r"(?s)<script.*?</script>|<style.*?</style>", " ", t)
-    return html.unescape(re.sub(r"<[^>]+>", " ", t))
+    return html.unescape(re.sub(r"<[^>]+>", " ", t)) + flight + (" " + attrs if attrs else "")
+
+
+# Next.js sites (finlex.fi and others) ship the page text inside
+# <script>self.__next_f.push([1,"..."])</script> blocks, not in the HTML body.
+NEXT_F_RE = re.compile(r'self\.__next_f\.push\(\[\d+,("(?:[^"\\]|\\.)*")\]\)')
+
+
+def next_flight_text(page):
+    """The text carried in Next.js data blocks, or "" when the page has none."""
+    parts = []
+    for lit in NEXT_F_RE.findall(page):
+        try:
+            parts.append(json.loads(lit))
+        except ValueError:
+            continue
+    if not parts:
+        return ""
+    return " " + html.unescape(re.sub(r"<[^>]+>", " ", "".join(parts)))
 
 
 _cache = {}
