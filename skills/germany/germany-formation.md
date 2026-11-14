@@ -495,19 +495,9 @@ Whether a founder or director from outside the EU needs a visa or residence perm
 
 ## Section 10: Timeline
 
-The durations below are legacy estimates. The only durations found on official pages are: a trade notification is normally processed within a few days (start-up portal, Step 5), and the VAT identification number request can take some weeks to pass from the tax office to the BZSt (Step 6). Court and notary times vary and no official page states them.
+The only durations found on official pages are: a trade notification is normally processed within a few days (start-up portal, Step 5), and the VAT identification number request can take some weeks to pass from the tax office to the BZSt (Step 6). Court and notary times vary and no official page states them.
 
-| Step | Duration | Cumulative |
-| --- | --- | --- |
-| Draft articles or Musterprotokoll | 1 to 5 days | Day 1 to 5 |
-| Notary appointment | 1 to 7 days | Day 2 to 12 |
-| Open bank account (i.G.) and deposit capital | 1 to 3 weeks | Day 9 to 33 |
-| Notary files with Handelsregister | 1 day | Day 10 to 34 |
-| Handelsregister entry | 1 to 3 weeks | Day 17 to 55 |
-| Gewerbeanmeldung | 1 to 3 days | Day 18 to 58 |
-| Tax registration (ELSTER) | 2 to 6 weeks | Day 32 to 100 |
-| Transparenzregister | 1 to 2 days | Day 33 to 102 |
-| **All steps done** |  | **Day 33 to 102 by these legacy estimates** |
+The step-by-step duration table of the previous version was removed: its durations were estimates no official page prints. The order of the steps is in Section 3.
 
 The main bottleneck is the processing time at the register court, which varies by court district. The legal deadlines run regardless: one month for the tax notice and questionnaire (Step 6), one week for the accident insurer (Step 8), and "without undue delay" for the Transparenzregister (Step 7).
 
