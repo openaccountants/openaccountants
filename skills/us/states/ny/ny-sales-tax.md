@@ -45,13 +45,13 @@ type: situation-rules
 | --- | --- | --- |
 | State sales and use tax rate | 4% | [Tax Department, sales tax rates](https://www.tax.ny.gov/bus/st/rates.htm) |
 | MCTD tax, on taxable sales within the Metropolitan Commuter Transportation District | 0.375% | [Tax Department, sales tax rates](https://www.tax.ny.gov/bus/st/rates.htm) |
-| Combined rate, New York City (reporting code 8081, includes the MCTD tax) | 8⅞% as printed (8.875 in decimals) | [Publication 718](https://www.tax.ny.gov/pdf/publications/sales/pub718.pdf) |
-| Combined rate, Nassau County (includes the MCTD tax) | 8⅝% as printed (8.625 in decimals) | [Publication 718](https://www.tax.ny.gov/pdf/publications/sales/pub718.pdf) |
-| Combined rate, Suffolk County (includes the MCTD tax) | 8¾% as printed (8.75 in decimals) | [Publication 718](https://www.tax.ny.gov/pdf/publications/sales/pub718.pdf) |
-| Combined rate, Westchester County outside its taxing cities (includes the MCTD tax) | 8⅜% as printed (8.375 in decimals) | [Publication 718](https://www.tax.ny.gov/pdf/publications/sales/pub718.pdf) |
-| Combined rate, Rockland County (includes the MCTD tax) | 8⅜% as printed (8.375 in decimals) | [Publication 718](https://www.tax.ny.gov/pdf/publications/sales/pub718.pdf) |
+| Combined rate, New York City (reporting code 8081, includes the MCTD tax) | 8⅞% as printed (8.875% in decimals, computed from the fraction) | [Publication 718](https://www.tax.ny.gov/pdf/publications/sales/pub718.pdf) |
+| Combined rate, Nassau County (includes the MCTD tax) | 8⅝% as printed (8.625% in decimals, computed from the fraction) | [Publication 718](https://www.tax.ny.gov/pdf/publications/sales/pub718.pdf) |
+| Combined rate, Suffolk County (includes the MCTD tax) | 8¾% as printed (8.75% in decimals, computed from the fraction) | [Publication 718](https://www.tax.ny.gov/pdf/publications/sales/pub718.pdf) |
+| Combined rate, Westchester County outside its taxing cities (includes the MCTD tax) | 8⅜% as printed (8.375% in decimals, computed from the fraction) | [Publication 718](https://www.tax.ny.gov/pdf/publications/sales/pub718.pdf) |
+| Combined rate, Rockland County (includes the MCTD tax) | 8⅜% as printed (8.375% in decimals, computed from the fraction) | [Publication 718](https://www.tax.ny.gov/pdf/publications/sales/pub718.pdf) |
 | Combined rate, Albany County (reporting code 0181) | 8% | [Publication 718](https://www.tax.ny.gov/pdf/publications/sales/pub718.pdf) |
-| Combined rate, Erie County (reporting code 1451) | 8¾% as printed (8.75 in decimals) | [Publication 718](https://www.tax.ny.gov/pdf/publications/sales/pub718.pdf) |
+| Combined rate, Erie County (reporting code 1451) | 8¾% as printed (8.75% in decimals, computed from the fraction) | [Publication 718](https://www.tax.ny.gov/pdf/publications/sales/pub718.pdf) |
 | Economic nexus: gross receipts from goods delivered into New York in the preceding four sales tax quarters must exceed | USD 500,000 | [Tax Department, nexus](https://www.tax.ny.gov/pubs_and_bulls/publications/sales/nexus.htm) |
 | Economic nexus: and number of sales of goods delivered into New York must be more than | 100 | [Tax Department, nexus](https://www.tax.ny.gov/pubs_and_bulls/publications/sales/nexus.htm) |
 | Clothing and footwear exemption from the 4% state tax: price per item or pair less than | USD 110 | [TB-ST-122](https://www.tax.ny.gov/pubs_and_bulls/tg_bulletins/st/clothing_and_footwear.htm) |
