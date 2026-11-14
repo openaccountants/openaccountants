@@ -216,7 +216,7 @@ Each position assumes a 2026 transaction/duty date, established applicable sourc
 | Probate statutory net estate 100,000.01, professional application | 500 + 75 + 107 = **682** of item 9 duty | Other court fees and authority remain separate |
 | Probate statutory net estate 10,000.01, non-professional application | 2 × 50 + 268 = **368** of item 9 duty | Whole-estate increment after crossing 10,000 |
 
-Positions follow the cited LTT/Stamp provisions, EPTT Article 7/Schedules 2 and 4, and Stamp Schedule 3 item 9. In the source fork an integer-pence test fixture checked these calculations, band boundaries and lease increments; that fixture is not part of this repository, where the two oa-check blocks below recompute. Neither does execute a portal, consumer model or financial workbook.
+Positions follow the cited LTT/Stamp provisions, EPTT Article 7/Schedules 2 and 4, and Stamp Schedule 3 item 9. In the source fork an integer-pence test fixture checked these calculations, band boundaries and lease increments; that fixture is not part of this repository, where the two oa-check blocks below recompute. Neither executes a portal, consumer model or financial workbook.
 
 **Check: LTT occupation-share purchase at GBP 650,000, main residence and higher branch.** Units above the GBP 500,000 lower bound: (650,000 - 500,000) / 100 = 1,500.
 
