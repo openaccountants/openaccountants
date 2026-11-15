@@ -58,7 +58,7 @@ The specified-services list includes transport, freight forwarding, air cargo, c
 
 ### ATL and statutory tax point
 
-Tenth Schedule rule 1 generally increases applicable tax by 100%, but the Schedule has express exclusions and special branches. **Salary s.149, goods exports s.154 and services exports s.154A are excluded by rule 10(a),(c),(ca)**. Most s.152 limbs are also excluded except the specified s.152(2 A)(a)-(c) branches. Do not double every table entry. Retain dated actual ATL evidence and apply the actual section's law, including distinct property/vehicle/late-filer provisions where relevant. [Tenth Schedule rules 1/10](https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf).
+Tenth Schedule rule 1 generally increases applicable tax by 100%, but the Schedule has express exclusions and special branches. **Salary s.149, goods exports s.154 and services exports s.154A are excluded by rule 10(a),(c),(ca)**. Most s.152 limbs are also excluded except the specified s.152(2 A)(a)-(c) branches. Do not double every table entry. Retain dated actual ATL evidence and apply the actual section's law, including distinct property/vehicle provisions where relevant. The 2025 text's property late-filer rule 1A was omitted by Finance Act 2026 amendment 47(a); do not reuse it for events on or after 1 July 2026. [Enacted amendment](https://download1.fbr.gov.pk/Docs/20266291261044366FinanceAct2026.pdf). [Tenth Schedule rules 1/10](https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf).
 
 Section 158(a) uses **paid or credited, whichever earlier, for s.151**. Other cases use actual payment under s.158(b), subject to prescribed meaning and the specific charging provision. The old universal earlier-of-accrual/payment statement is an omitted historical version, not the current operative rule. Section 71 governs currency conversion evidence; a contract does not override the statutory method. [ss.71/158](https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf).
 
@@ -199,6 +199,7 @@ Current s.182A surcharge amounts are company 100,000/AOP 50,000/individual 25,00
 
 | Source and actual portions read | Official URL | Read on |
 |---|---|---|
+| Read for Finance Act 2026 amendment 47(a), Tenth Schedule rule 1A omission, distinguished from historical tax-year-2026 event rules | https://download1.fbr.gov.pk/Docs/20266291261044366FinanceAct2026.pdf | 2026-11-15 |
 | Read for Income Tax Rules 42-44 operative payment, non-salary certificate, annual salary statement and requested reconciliation branches on 2026-11-14 | https://download1.fbr.gov.pk/Docs/20269211394336470IncomeTaxRules2002.pdf. | 2026-11-14 |
 | Read for ITO ss.71,148-149,152-155,158-159,165,168/170; First Schedule Parts II/III and Tenth Schedule rules 1/10, including adjacent exceptions and omitted historical footnotes | https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf | 2026-11-14 |
 | Read for current 2026 s.165 quarterly statement schedule; use default-date law separately for penalties | https://download1.fbr.gov.pk/Docs/2026724177725705IncomeTaxOrdinanace2001.pdf | 2026-11-14 |

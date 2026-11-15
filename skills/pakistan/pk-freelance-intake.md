@@ -24,7 +24,7 @@ Quick answer: read the available documents first, identify the person, period an
 
 ## Ask the client first
 
-Use the records before asking. Obtain all available statements/invoices/certificates in one document collection; parse them and show an inferred summary, then ask only unresolved questions. Use the available structured-choice input tool for independent choices, with free text for identifiers where needed; do not depend on a tool name that the execution environment does not provide.
+Use the records before asking. Obtain all available statements/invoices/certificates in one document collection; parse them and show an inferred summary, then ask only unresolved questions. Batch up to 3 related independent choices using the available structured-choice input tool, with free text for identifiers where needed; do not depend on a tool name that the execution environment does not provide.
 
 Collect these fields with evidence and an explicit unknown state:
 
@@ -102,7 +102,7 @@ Keep the original handoff fields, but record evidence and unknowns explicitly. `
 
 ### Ahmed Khan historical intake, retained with conditions
 
-Ahmed Khan remains the Lahore individual/sole proprietor from the earlier handoff, present 245 days, with assumed PKR 8,500,000 export proceeds and no domestic income/staff. The earlier USD 30,000/PKR 8,500,000 pairing is an assumed conversion, not a live quote. The bank-account label, including the older Meezan Bank Roshan Digital Account description, does not independently prove permissible business-export realisation. With genuine PSEB eligibility, authorised-dealer proof and all finality conditions, withholding is 21,250 (derived). PRA export treatment must be established separately; do not promise exemption from PSEB alone.
+Ahmed Khan remains the Lahore individual/sole proprietor from the earlier handoff, present 245 days, with an assumed active PSEB ID and timely tax-year-2025 return/ATL history. The old illustrative NTN 1234567 remains an unvalidated historical label, not a certified individual identifier format. He has assumed PKR 8,500,000 export proceeds and no domestic income/staff. The earlier USD 30,000/PKR 8,500,000 pairing is an assumed conversion, not a live quote. The bank-account label, including the older Meezan Bank Roshan Digital Account description, does not independently prove permissible business-export realisation. With genuine PSEB eligibility, authorised-dealer proof and all finality conditions, withholding is 21,250 (derived). PRA export treatment must be established separately; do not promise exemption from PSEB alone.
 
 ```oa-check
 name: Ahmed Khan qualifying export candidate
@@ -154,4 +154,4 @@ Ask about work category and existing SESSI coverage even without staff. Sindh 20
 |---|---|---|
 | Read for ITO ss.11,71,74,82/84,92,114/116,147,154 A,174 and First Schedule salary classification; repealed residence footnote distinguished from operative text | https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf | 2026-11-14 |
 
-Not yet confirmed: event-specific ATL rates/refresh and eligibility for the current re-entry routes, all provincial registration/place/exemption decisions, EOBI/provincial coverage and bases, actual current IRIS identifiers/screens, taxpayer evidence and special-year/treaty regimes. The old turnover intake bins 600,000/5,000,000/50,000,000/250,000,000 were workflow bins, not universal liability thresholds; no tax conclusion follows from them. Repeated tax tables belong to their named computation owners, with source checks required before use; unsupported historic 50% salary/120+365-day residence routes are withdrawn as contradicted by the cited law.
+Not yet confirmed: event-specific ATL rates/refresh and eligibility for the current re-entry routes, all provincial registration/place/exemption decisions, EOBI/provincial coverage and bases, actual current IRIS identifiers/screens, taxpayer evidence, identifier-format lengths and special-year/treaty regimes. The s.113 excess-minimum-tax carry-forward and s.113C company calculation belong to their computation owners; no turnover-bin estimate decides them. The old turnover intake bins 600,000/5,000,000/50,000,000/250,000,000 were workflow bins, not universal liability thresholds; no tax conclusion follows from them. Repeated tax tables belong to their named computation owners, with source checks required before use; unsupported historic 50% salary/120+365-day residence routes are withdrawn as contradicted by the cited law.

@@ -29,7 +29,7 @@ Obtain services/contracts and domestic/export split, residence, bank/e-PRCs, gro
 
 1. Test the service and authorised-dealer realisation under s.154A. For qualifying PSEB IT/ITeS proceeds the tax-year-2026 table is 0.25%; another qualifying s.154A case is 1%. Recommend lawful PSEB registration where eligible; never backdate it. Finality also requires the return and other statutory conditions, with no foreign-tax credit. [s.154A; First Schedule Part III Division IVA](https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf).
 2. Keep domestic income and its properly evidenced allowable business costs separate; use ordinary income-tax rules for that stream. The old comparison to ordinary marginal rates is not an election to put any receipt in whichever regime is cheaper. [ss.18,20,21,154 A](https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf).
-3. Check actual ATL status for each withholding event. Filing/compliance can affect future rates, but paying an ATL surcharge does not erase every late-filer rule or guarantee a retrospective refund. Distinguish final, minimum and adjustable tax before claiming a credit. [ss.168,182 A; Tenth Schedule](https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf).
+3. Check actual ATL status for each withholding event. Filing/compliance can affect transaction rates, but paying an ATL surcharge does not establish the rate or guarantee a retrospective refund. The property late-filer rule 1A in the tax-year-2026 law was omitted by Finance Act 2026 amendment 47(a); later events require their operative law, not that historical rule. [Enacted amendment](https://download1.fbr.gov.pk/Docs/20266291261044366FinanceAct2026.pdf). Distinguish final, minimum and adjustable tax before claiming a credit. [ss.168,182 A; Tenth Schedule](https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf).
 4. Reconcile required advance tax with actual withholding/payments. Do not pay twice or claim unproved credit; late payment can incur default surcharge. [ss.147,168,205](https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf).
 
 ## Boundary and exception table
@@ -94,6 +94,7 @@ Each alternative is legally available; actual period/source law checked; gross-p
 
 | Source and actual portions read | Official URL | Read on |
 |---|---|---|
+| Read for Finance Act 2026 amendment 47(a), omitting Tenth Schedule rule 1A, distinguished from the 2025 rule applicable to earlier events | https://download1.fbr.gov.pk/Docs/20266291261044366FinanceAct2026.pdf | 2026-11-15 |
 | Read for ITO s.154A and First Schedule Part III Division IVA, s.174 record support, ss.147/168 credit context; tax-year-2026 period from s.74 | https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf | 2026-11-14 |
 
 Not yet confirmed: the taxpayer's eligibility, actual withholding and advance-tax credits, full ordinary/turnover-minimum-tax comparison and treatment after failed finality or option out. No current USD conversion or promised tax saving is asserted. Current transaction-specific ATL rates require `pk-withholding-tax` and event-date evidence.
