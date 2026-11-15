@@ -182,17 +182,17 @@ Match case-insensitive descriptions, including Nepali/romanised equivalents, mos
 | PETROL, DIESEL, FUEL, NOC, PUMP | Vehicle fuel | T2 ; business % only | Requires logbook |
 | PARKING | Parking | T2 ; business % only |  |
 
-#### 3.6 Expense Patterns (Debits) -- NOT Potential deduction
+#### 3.6 Private costs and non-expense cues
 
-**Not potentially deductible table**
+**Private costs and non-expense table**
 
 | Pattern | Category | Treatment | Notes |
 | --- | --- | --- | --- |
-| RESTAURANT, BHOJANALAYA, PARTY, ENTERTAINMENT | Entertainment/personal meals | NOT potentially deductible | Private cost blocked; a business-entertainment claim needs evidence of its legal treatment |
-| BHANSAGHAR, GROCERIES, SUPERMARKET, BHATBHATENI | Personal living | NOT potentially deductible | Actual private cost blocked; a store name alone proves nothing |
-| FINE, JARIWANA, PENALTY | Fines/penalties | NOT potentially deductible | Public policy |
-| IRD PAYMENT, INCOME TAX, KAR BHUKTANI | Income tax paid | NOT potentially deductible | Tax cannot reduce income |
-| DRAWINGS, PERSONAL WITHDRAWAL, ATM (personal) | Drawings | NOT potentially deductible | Not an expense |
+| RESTAURANT, BHOJANALAYA, PARTY, ENTERTAINMENT | Entertainment/personal meals | Not deductible when the stated private/non-expense condition holds | Private cost blocked; a business-entertainment claim needs evidence of its legal treatment |
+| BHANSAGHAR, GROCERIES, SUPERMARKET, BHATBHATENI | Personal living | Not deductible when the stated private/non-expense condition holds | Actual private cost blocked; a store name alone proves nothing |
+| FINE, JARIWANA, PENALTY | Fines/penalties | Not deductible when the stated private/non-expense condition holds | Public policy |
+| IRD PAYMENT, INCOME TAX, KAR BHUKTANI | Income tax paid | Not deductible when the stated private/non-expense condition holds | Tax cannot reduce income |
+| DRAWINGS, PERSONAL WITHDRAWAL, ATM (personal) | Drawings | Not deductible when the stated private/non-expense condition holds | Not an expense |
 
 #### 3.7 Expense Patterns (Debits) -- Capital Items (depreciate, do not expense)
 
@@ -212,7 +212,7 @@ Match case-insensitive descriptions, including Nepali/romanised equivalents, mos
 | Pattern | Treatment | Notes |
 | --- | --- | --- |
 | INTERNAL TRANSFER, OWN ACCOUNT | EXCLUDE | Own-account transfer |
-| LOAN REPAYMENT, KARJA, EMI (principal) | EXCLUDE (principal) | Interest portion may be potentially deductible if business loan |
+| LOAN REPAYMENT, KARJA, EMI (principal) | EXCLUDE (principal) | Business-loan interest requires its own deduction analysis |
 | SSF, SOCIAL SECURITY, EPF, CIT | Retirement deduction | Verify the approved retirement-qualifying component and annual cap; do not classify employee contributions as ordinary business expenses |
 | VAT PAYMENT, IRD VAT | EXCLUDE | VAT liability, not an income-tax expense |
 | ADVANCE TAX, INSTALLMENT TAX | Tax credit | Credit against final liability, not an expense |
@@ -239,7 +239,7 @@ Match case-insensitive descriptions, including Nepali/romanised equivalents, mos
 | बहाल / GHAR BHADA / KIRAYA | Rent | Rental income or office-rent expense |
 | ब्याज / BYAJ | Interest | Investment income (often TDS-deducted) |
 | लाभांश / LAABHANSH | Dividend | Investment income |
-| कर / KAR | Tax | Tax payment (not deductible) |
+| कर / KAR | Tax | Identify tax type; income tax blocked, other taxes follow the statutory exceptions |
 | जरिवाना / JARIWANA | Fine / penalty | Not deductible |
 | कर्जा / KARJA / EMI | Loan | Principal excluded; business interest may deduct |
 | सेवा शुल्क / SEWA SHULKA | Service charge / fee | Business income or bank charge ; check context |
