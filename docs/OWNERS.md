@@ -42,7 +42,7 @@ To take an open role, comment on the coverage report issue or open a PR changing
 
 ## Europe writing assignments
 
-Michael set this allocation on 23 October 2026 and remains the accountable owner for Europe. A writing allocation does not transfer professional responsibility, and it does not make a skill Accountant-reviewed.
+Michael set this allocation on 23 October 2026. An owner here coordinates the writing and maintenance of a pack; it is not professional responsibility for its content and does not make any skill accountant-reviewed. Only a named accountant's "Approved by" stands behind a skill.
 
 **Claude: 32 jurisdictions. ChatGPT: 23.** A country allocation covers every topic, including existing skills. One active writer per country.
 

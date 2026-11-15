@@ -1,81 +1,13 @@
 {
  "generated_by": "scripts/build-agent-skills.py",
- "count": 2361,
+ "count": 2440,
  "publication_holds": [
-  {
-   "name": "bd-corporate-income-tax",
-   "reason": "status: needs_sources"
-  },
-  {
-   "name": "bd-payroll",
-   "reason": "status: needs_sources"
-  },
-  {
-   "name": "bd-payroll-social",
-   "reason": "status: needs_sources"
-  },
-  {
-   "name": "bd-social-contributions",
-   "reason": "status: needs_sources"
-  },
   {
    "name": "cameroon-social-contributions",
    "reason": "status: needs_sources"
   },
   {
-   "name": "cbam-carbon-border-adjustment",
-   "reason": "required companion unavailable: cross-border-workflow-base"
-  },
-  {
    "name": "cross-border-payroll-coordination",
-   "reason": "status: needs_sources"
-  },
-  {
-   "name": "cross-border-workflow-base",
-   "reason": "required companion unavailable: eu-social-security-coordination, withholding-tax-matrix"
-  },
-  {
-   "name": "dac6-mdr-reportable-arrangements",
-   "reason": "required companion unavailable: cross-border-workflow-base"
-  },
-  {
-   "name": "digital-services-tax-matrix",
-   "reason": "required companion unavailable: cross-border-workflow-base"
-  },
-  {
-   "name": "eu-social-security-coordination",
-   "reason": "status: needs_sources"
-  },
-  {
-   "name": "fatca-crs-automatic-exchange",
-   "reason": "required companion unavailable: cross-border-workflow-base"
-  },
-  {
-   "name": "free-zones-sez-matrix",
-   "reason": "required companion unavailable: cross-border-workflow-base"
-  },
-  {
-   "name": "inheritance-estate-gift-matrix",
-   "reason": "required companion unavailable: cross-border-workflow-base"
-  },
-  {
-   "name": "ip-patent-box-matrix",
-   "reason": "required companion unavailable: cross-border-workflow-base"
-  },
-  {
-   "name": "japan-payroll",
-   "reason": "status: needs_sources"
-  },
-  {
-   "name": "japan-transfer-pricing",
-   "reason": "status: needs_sources"
-  },
-  {
-   "name": "je-cross-border-withholding",
-   "reason": "required companion unavailable: cross-border-workflow-base"
-  },
-  {
-   "name": "jp-social-insurance",
    "reason": "status: needs_sources"
   },
   {
@@ -123,10 +55,6 @@
    "reason": "status: needs_sources"
   },
   {
-   "name": "pillar-two-globe-minimum-tax",
-   "reason": "required companion unavailable: cross-border-workflow-base"
-  },
-  {
    "name": "pk-payroll",
    "reason": "status: needs_sources"
   },
@@ -139,63 +67,19 @@
    "reason": "status: needs_sources"
   },
   {
-   "name": "property-investor",
-   "reason": "status: needs_sources"
-  },
-  {
    "name": "property-transfer-tax-matrix",
    "reason": "status: needs_sources"
-  },
-  {
-   "name": "rd-tax-credits-matrix",
-   "reason": "required companion unavailable: cross-border-workflow-base"
-  },
-  {
-   "name": "saf-t-realtime-ereporting-matrix",
-   "reason": "required companion unavailable: cross-border-workflow-base"
   },
   {
    "name": "stamp-duty-matrix",
    "reason": "status: needs_sources"
   },
   {
-   "name": "tax-controversy-map-apa",
-   "reason": "required companion unavailable: cross-border-workflow-base"
-  },
-  {
    "name": "th-corporate-income-tax",
    "reason": "status: needs_sources"
   },
   {
-   "name": "tj-corporate-income-tax",
-   "reason": "status: needs_sources"
-  },
-  {
-   "name": "tj-income-tax",
-   "reason": "status: needs_sources"
-  },
-  {
-   "name": "tj-payroll-social",
-   "reason": "status: needs_sources"
-  },
-  {
    "name": "tl-corporate-income-tax",
-   "reason": "status: needs_sources"
-  },
-  {
-   "name": "uz-corporate-income-tax",
-   "reason": "status: needs_sources"
-  },
-  {
-   "name": "uzbekistan-social-contributions",
-   "reason": "status: needs_sources"
-  },
-  {
-   "name": "wealth-tax-matrix",
-   "reason": "required companion unavailable: cross-border-workflow-base"
-  },
-  {
-   "name": "withholding-tax-matrix",
    "reason": "status: needs_sources"
   },
   {
@@ -216,6 +100,7 @@
   "AT",
   "AU",
   "AW",
+  "AX",
   "AZ",
   "BA",
   "BB",
@@ -230,6 +115,7 @@
   "BM",
   "BN",
   "BO",
+  "BQ",
   "BR",
   "BS",
   "BT",
@@ -274,6 +160,7 @@
   "ET",
   "EU",
   "EU-27",
+  "EU/EEA/CH/UK",
   "FI",
   "FJ",
   "FK",
@@ -298,6 +185,7 @@
   "GT",
   "GY",
   "HK",
+  "HM",
   "HN",
   "HR",
   "HU",
@@ -359,6 +247,7 @@
   "NA",
   "NC",
   "NE",
+  "NF",
   "NG",
   "NI",
   "NL",
@@ -1959,6 +1848,24 @@
    "tax_year": 2026
   },
   {
+   "name": "ax-income-tax",
+   "jurisdiction": "AX",
+   "path": "skills/aland/ax-income-tax.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "ax-tax-scope",
+   "jurisdiction": "AX",
+   "path": "skills/aland/ax-tax-scope.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
    "name": "az-company-formation",
    "jurisdiction": "AZ",
    "path": "skills/azerbaijan/az-company-formation.md",
@@ -2154,7 +2061,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2024
+   "tax_year": 2026
   },
   {
    "name": "bangladesh-vat",
@@ -2163,7 +2070,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "banking-sector",
@@ -2280,7 +2187,16 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
+  },
+  {
+   "name": "bd-corporate-income-tax",
+   "jurisdiction": "BD",
+   "path": "skills/bangladesh/bd-corporate-income-tax.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
   },
   {
    "name": "bd-crypto-tax",
@@ -2337,9 +2253,36 @@
    "tax_year": 2026
   },
   {
+   "name": "bd-payroll",
+   "jurisdiction": "BD",
+   "path": "skills/bangladesh/bd-payroll.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "bd-payroll-social",
+   "jurisdiction": "BD",
+   "path": "skills/bangladesh/bd-payroll-social.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
    "name": "bd-return-assembly",
    "jurisdiction": "BD",
    "path": "skills/bangladesh/bd-return-assembly.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "bd-social-contributions",
+   "jurisdiction": "BD",
+   "path": "skills/bangladesh/bd-social-contributions.md",
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
@@ -2361,7 +2304,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "be-capital-gains",
@@ -3123,6 +3066,213 @@
    "name": "bosnia-vat",
    "jurisdiction": "BA",
    "path": "skills/bosnia/bosnia-vat.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "bq-abb",
+   "jurisdiction": "BQ",
+   "path": "skills/caribbean-netherlands/bq-abb.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "bq-bonaire-ground-tax",
+   "jurisdiction": "BQ",
+   "path": "skills/caribbean-netherlands/bq-bonaire-ground-tax.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "bq-corporate-tax",
+   "jurisdiction": "BQ",
+   "path": "skills/caribbean-netherlands/bq-corporate-tax.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "bq-customs-clearance",
+   "jurisdiction": "BQ",
+   "path": "skills/caribbean-netherlands/bq-customs-clearance.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "bq-customs-debt-remedies",
+   "jurisdiction": "BQ",
+   "path": "skills/caribbean-netherlands/bq-customs-debt-remedies.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "bq-customs-valuation",
+   "jurisdiction": "BQ",
+   "path": "skills/caribbean-netherlands/bq-customs-valuation.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "bq-double-tax-relief",
+   "jurisdiction": "BQ",
+   "path": "skills/caribbean-netherlands/bq-double-tax-relief.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "bq-excise",
+   "jurisdiction": "BQ",
+   "path": "skills/caribbean-netherlands/bq-excise.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "bq-financial-statements",
+   "jurisdiction": "BQ",
+   "path": "skills/caribbean-netherlands/bq-financial-statements.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "bq-formation",
+   "jurisdiction": "BQ",
+   "path": "skills/caribbean-netherlands/bq-formation.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "bq-gambling-tax",
+   "jurisdiction": "BQ",
+   "path": "skills/caribbean-netherlands/bq-gambling-tax.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "bq-income-tax",
+   "jurisdiction": "BQ",
+   "path": "skills/caribbean-netherlands/bq-income-tax.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "bq-inheritance-gifts",
+   "jurisdiction": "BQ",
+   "path": "skills/caribbean-netherlands/bq-inheritance-gifts.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "bq-payroll",
+   "jurisdiction": "BQ",
+   "path": "skills/caribbean-netherlands/bq-payroll.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "bq-penalties-corrections",
+   "jurisdiction": "BQ",
+   "path": "skills/caribbean-netherlands/bq-penalties-corrections.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "bq-personal-import-relief",
+   "jurisdiction": "BQ",
+   "path": "skills/caribbean-netherlands/bq-personal-import-relief.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "bq-property-tax",
+   "jurisdiction": "BQ",
+   "path": "skills/caribbean-netherlands/bq-property-tax.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "bq-social-contributions",
+   "jurisdiction": "BQ",
+   "path": "skills/caribbean-netherlands/bq-social-contributions.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "bq-statia-tourist-tax",
+   "jurisdiction": "BQ",
+   "path": "skills/caribbean-netherlands/bq-statia-tourist-tax.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "bq-tax-compliance",
+   "jurisdiction": "BQ",
+   "path": "skills/caribbean-netherlands/bq-tax-compliance.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "bq-tax-system",
+   "jurisdiction": "BQ",
+   "path": "skills/caribbean-netherlands/bq-tax-system.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "bq-transfer-tax",
+   "jurisdiction": "BQ",
+   "path": "skills/caribbean-netherlands/bq-transfer-tax.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "bq-warehouses-hde",
+   "jurisdiction": "BQ",
+   "path": "skills/caribbean-netherlands/bq-warehouses-hde.md",
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
@@ -3982,6 +4132,15 @@
    "authored_by": null,
    "reviewed_by": "Brandon Iverach",
    "tax_year": null
+  },
+  {
+   "name": "cbam-carbon-border-adjustment",
+   "jurisdiction": "EU-27",
+   "path": "skills/global/cross-border/cbam-carbon-border-adjustment.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2025
   },
   {
    "name": "cc-income-tax",
@@ -5145,6 +5304,15 @@
    "tax_year": 2026
   },
   {
+   "name": "dac6-mdr-reportable-arrangements",
+   "jurisdiction": "GLOBAL",
+   "path": "skills/global/cross-border/dac6-mdr-reportable-arrangements.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2025
+  },
+  {
    "name": "dc-corporate-tax",
    "jurisdiction": "US-DC",
    "path": "skills/us/states/dc/dc-corporate-tax.md",
@@ -5386,6 +5554,15 @@
    "authored_by": null,
    "reviewed_by": null,
    "tax_year": 2026
+  },
+  {
+   "name": "digital-services-tax-matrix",
+   "jurisdiction": "GLOBAL",
+   "path": "skills/global/cross-border/digital-services-tax-matrix.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2025
   },
   {
    "name": "dj-company-formation",
@@ -6729,6 +6906,15 @@
    "tax_year": 2025
   },
   {
+   "name": "eu-social-security-coordination",
+   "jurisdiction": "EU/EEA/CH/UK",
+   "path": "skills/global/cross-border/eu-social-security-coordination.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
    "name": "eu-vat-base",
    "jurisdiction": "EU",
    "path": "skills/eu/eu-vat-base.md",
@@ -6781,6 +6967,15 @@
    "authored_by": null,
    "reviewed_by": null,
    "tax_year": 2026
+  },
+  {
+   "name": "fatca-crs-automatic-exchange",
+   "jurisdiction": "GLOBAL",
+   "path": "skills/global/cross-border/fatca-crs-automatic-exchange.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2025
   },
   {
    "name": "fi-annual-real-estate-tax",
@@ -7420,6 +7615,15 @@
    "authored_by": null,
    "reviewed_by": null,
    "tax_year": 2026
+  },
+  {
+   "name": "free-zones-sez-matrix",
+   "jurisdiction": "GLOBAL",
+   "path": "skills/global/cross-border/free-zones-sez-matrix.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2025
   },
   {
    "name": "freeagent-integration",
@@ -8835,6 +9039,15 @@
    "tax_year": 2026
   },
   {
+   "name": "hm-tax-scope-reference",
+   "jurisdiction": "HM",
+   "path": "skills/heard-island-and-mcdonald-islands/hm-tax-scope-reference.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
    "name": "hn-company-formation",
    "jurisdiction": "HN",
    "path": "skills/honduras/hn-company-formation.md",
@@ -9870,6 +10083,15 @@
    "tax_year": 2026
   },
   {
+   "name": "inheritance-estate-gift-matrix",
+   "jurisdiction": "GLOBAL",
+   "path": "skills/global/cross-border/inheritance-estate-gift-matrix.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2025
+  },
+  {
    "name": "insurance-sector",
    "jurisdiction": "GLOBAL",
    "path": "skills/global/industries/insurance-sector.md",
@@ -9904,6 +10126,15 @@
    "authored_by": null,
    "reviewed_by": null,
    "tax_year": 2026
+  },
+  {
+   "name": "ip-patent-box-matrix",
+   "jurisdiction": "GLOBAL",
+   "path": "skills/global/cross-border/ip-patent-box-matrix.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2025
   },
   {
    "name": "irpp-calculation",
@@ -10257,9 +10488,27 @@
    "tax_year": 2026
   },
   {
+   "name": "japan-payroll",
+   "jurisdiction": "JP",
+   "path": "skills/japan/japan-payroll.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
    "name": "japan-tax-optimization",
    "jurisdiction": "JP",
    "path": "skills/japan/japan-tax-optimization.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "japan-transfer-pricing",
+   "jurisdiction": "JP",
+   "path": "skills/japan/japan-transfer-pricing.md",
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
@@ -10287,6 +10536,15 @@
    "name": "je-corporate-income-tax",
    "jurisdiction": "JE",
    "path": "skills/jersey/je-corporate-income-tax.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "je-cross-border-withholding",
+   "jurisdiction": "JE",
+   "path": "skills/jersey/je-cross-border-withholding.md",
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
@@ -10548,6 +10806,15 @@
    "name": "jp-return-assembly",
    "jurisdiction": "JP",
    "path": "skills/japan/jp-return-assembly.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "jp-social-insurance",
+   "jurisdiction": "JP",
+   "path": "skills/japan/jp-social-insurance.md",
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
@@ -10818,6 +11085,15 @@
    "name": "kn-special-regimes",
    "jurisdiction": "KN",
    "path": "skills/saint-kitts-and-nevis/kn-special-regimes.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "kn-tax-system-reference",
+   "jurisdiction": "KN",
+   "path": "skills/saint-kitts-and-nevis/kn-tax-system-reference.md",
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
@@ -13308,6 +13584,15 @@
    "tax_year": 2026
   },
   {
+   "name": "ms-tax-system-reference",
+   "jurisdiction": "MS",
+   "path": "skills/montserrat/ms-tax-system-reference.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
    "name": "mt-capital-gains",
    "jurisdiction": "MT",
    "path": "skills/malta/mt-capital-gains.md",
@@ -14292,6 +14577,213 @@
    "name": "new-zealand-crypto-tax",
    "jurisdiction": "NZ",
    "path": "skills/new-zealand/new-zealand-crypto-tax.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "nf-annual-rates",
+   "jurisdiction": "NF",
+   "path": "skills/norfolk-island/nf-annual-rates.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "nf-cgt",
+   "jurisdiction": "NF",
+   "path": "skills/norfolk-island/nf-cgt.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "nf-company-administration",
+   "jurisdiction": "NF",
+   "path": "skills/norfolk-island/nf-company-administration.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "nf-company-tax",
+   "jurisdiction": "NF",
+   "path": "skills/norfolk-island/nf-company-tax.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "nf-employment-pay",
+   "jurisdiction": "NF",
+   "path": "skills/norfolk-island/nf-employment-pay.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "nf-fbt",
+   "jurisdiction": "NF",
+   "path": "skills/norfolk-island/nf-fbt.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "nf-foreign-income",
+   "jurisdiction": "NF",
+   "path": "skills/norfolk-island/nf-foreign-income.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "nf-gst",
+   "jurisdiction": "NF",
+   "path": "skills/norfolk-island/nf-gst.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "nf-imports",
+   "jurisdiction": "NF",
+   "path": "skills/norfolk-island/nf-imports.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "nf-income-tax",
+   "jurisdiction": "NF",
+   "path": "skills/norfolk-island/nf-income-tax.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "nf-investment-withholding",
+   "jurisdiction": "NF",
+   "path": "skills/norfolk-island/nf-investment-withholding.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "nf-medicare",
+   "jurisdiction": "NF",
+   "path": "skills/norfolk-island/nf-medicare.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "nf-payg-withholding",
+   "jurisdiction": "NF",
+   "path": "skills/norfolk-island/nf-payg-withholding.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "nf-property-transfers",
+   "jurisdiction": "NF",
+   "path": "skills/norfolk-island/nf-property-transfers.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "nf-return-filing",
+   "jurisdiction": "NF",
+   "path": "skills/norfolk-island/nf-return-filing.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "nf-super-guarantee",
+   "jurisdiction": "NF",
+   "path": "skills/norfolk-island/nf-super-guarantee.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "nf-tax-amendments-objections",
+   "jurisdiction": "NF",
+   "path": "skills/norfolk-island/nf-tax-amendments-objections.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "nf-tax-interest",
+   "jurisdiction": "NF",
+   "path": "skills/norfolk-island/nf-tax-interest.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "nf-tax-penalties-remission",
+   "jurisdiction": "NF",
+   "path": "skills/norfolk-island/nf-tax-penalties-remission.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "nf-tax-records",
+   "jurisdiction": "NF",
+   "path": "skills/norfolk-island/nf-tax-records.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "nf-tax-system",
+   "jurisdiction": "NF",
+   "path": "skills/norfolk-island/nf-tax-system.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "nf-transfer-pricing",
+   "jurisdiction": "NF",
+   "path": "skills/norfolk-island/nf-transfer-pricing.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "nf-uk-treaty-relief",
+   "jurisdiction": "NF",
+   "path": "skills/norfolk-island/nf-uk-treaty-relief.md",
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
@@ -15945,6 +16437,15 @@
    "tax_year": 2025
   },
   {
+   "name": "pillar-two-globe-minimum-tax",
+   "jurisdiction": "GLOBAL",
+   "path": "skills/global/cross-border/pillar-two-globe-minimum-tax.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2025
+  },
+  {
    "name": "pk-bookkeeping",
    "jurisdiction": "PK",
    "path": "skills/pakistan/pk-bookkeeping.md",
@@ -16359,6 +16860,15 @@
    "tax_year": 2026
   },
   {
+   "name": "property-investor",
+   "jurisdiction": "GLOBAL",
+   "path": "skills/global/industries/property-investor.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
    "name": "pt-corporate-tax",
    "jurisdiction": "PT",
    "path": "skills/portugal/pt-corporate-tax.md",
@@ -16582,6 +17092,15 @@
    "authored_by": null,
    "reviewed_by": null,
    "tax_year": 2026
+  },
+  {
+   "name": "rd-tax-credits-matrix",
+   "jurisdiction": "GLOBAL",
+   "path": "skills/global/cross-border/rd-tax-credits-matrix.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2025
   },
   {
    "name": "re-octroi-producer-registration-and-returns",
@@ -16951,6 +17470,15 @@
    "authored_by": null,
    "reviewed_by": null,
    "tax_year": 2026
+  },
+  {
+   "name": "saf-t-realtime-ereporting-matrix",
+   "jurisdiction": "GLOBAL",
+   "path": "skills/global/cross-border/saf-t-realtime-ereporting-matrix.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2025
   },
   {
    "name": "sage-integration",
@@ -18483,6 +19011,15 @@
    "tax_year": 2026
   },
   {
+   "name": "tax-controversy-map-apa",
+   "jurisdiction": "GLOBAL",
+   "path": "skills/global/cross-border/tax-controversy-map-apa.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2025
+  },
+  {
    "name": "tax-research-with-your-ai-how-to-do-it-defensibly",
    "jurisdiction": "general",
    "path": "skills/global/cross-border/tax-research-with-your-ai-how-to-do-it-defensibly.md",
@@ -18777,7 +19314,34 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
+  },
+  {
+   "name": "tj-corporate-income-tax",
+   "jurisdiction": "TJ",
+   "path": "skills/tajikistan/tj-corporate-income-tax.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "tj-income-tax",
+   "jurisdiction": "TJ",
+   "path": "skills/tajikistan/tj-income-tax.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "tj-payroll-social",
+   "jurisdiction": "TJ",
+   "path": "skills/tajikistan/tj-payroll-social.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
   },
   {
    "name": "tj-tax-overview",
@@ -18786,7 +19350,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "tj-vat-gst",
@@ -18795,7 +19359,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "tl-company-formation",
@@ -20910,7 +21474,16 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
+  },
+  {
+   "name": "uz-corporate-income-tax",
+   "jurisdiction": "UZ",
+   "path": "skills/uzbekistan/uz-corporate-income-tax.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
   },
   {
    "name": "uz-tax-overview",
@@ -20919,7 +21492,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "uzbekistan-income-tax",
@@ -20928,7 +21501,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "uzbekistan-payroll",
@@ -20937,7 +21510,16 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
+  },
+  {
+   "name": "uzbekistan-social-contributions",
+   "jurisdiction": "UZ",
+   "path": "skills/uzbekistan/uzbekistan-social-contributions.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
   },
   {
    "name": "uzbekistan-tax-optimization",
@@ -20946,7 +21528,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "uzbekistan-vat",
@@ -20955,7 +21537,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "va-corporate-tax-and-bpol",
@@ -21273,6 +21855,15 @@
    "tax_year": 2026
   },
   {
+   "name": "wealth-tax-matrix",
+   "jurisdiction": "GLOBAL",
+   "path": "skills/global/cross-border/wealth-tax-matrix.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2025
+  },
+  {
    "name": "wf-patente-registration-reference",
    "jurisdiction": "WF",
    "path": "skills/wallis-and-futuna/wf-patente-registration-reference.md",
@@ -21321,6 +21912,15 @@
    "name": "wise-integration",
    "jurisdiction": "GLOBAL",
    "path": "skills/global/integrations/wise-integration.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
+  },
+  {
+   "name": "withholding-tax-matrix",
+   "jurisdiction": "GLOBAL",
+   "path": "skills/global/cross-border/withholding-tax-matrix.md",
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
