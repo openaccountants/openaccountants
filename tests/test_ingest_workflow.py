@@ -211,6 +211,24 @@ class DeliveryPlanTests(GitFixture, unittest.TestCase):
         with self.assertRaises(ValueError):
             delivery.collect_batches(shallow, "0" * 40)
 
+    def test_retry_recovers_a_path_added_and_removed_on_a_merged_branch(self):
+        path = "skills/mt/branch-only-retired.md"
+        self.git("checkout", "-b", "writer")
+        self.commit({path: "old"}, "Original Writer", "original@example.test")
+        self.commit({path: None}, "Retiring Writer", "retiring@example.test")
+        self.git("checkout", "main")
+        self.commit({"README.md": "main moved"})
+        self.git("merge", "--no-ff", "writer", "-m", "Merge retired branch source")
+        head = self.git("rev-parse", "HEAD")
+        self.assertEqual(self.git("log", "-1", "--format=%H", head, "--", path), "")
+        batches = delivery.collect_batches(self.repo, head, head, retry_paths=[path])
+        self.assertEqual(batches, [{"headSha": head, "paths": [path], "deletedPaths": [path],
+                                   "authors": [delivery.author("Retiring Writer", "retiring@example.test")]}])
+
+    def test_retry_without_any_source_history_fails_before_any_delivery(self):
+        with self.assertRaisesRegex(ValueError, "no reachable source history"):
+            delivery.collect_batches(self.repo, self.base, retry_paths=["skills/mt/never-existed.md"])
+
     def test_collection_needs_no_file_blobs_or_network_from_a_full_partial_clone(self):
         self.commit({"skills/mt/recent.md": "fixture"})
         self.git("config", "uploadpack.allowFilter", "true")
