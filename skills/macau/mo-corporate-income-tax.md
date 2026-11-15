@@ -45,9 +45,9 @@ Collect income year, residence/actual management, legal form, capital, each prio
 
 | Mandatory Group A capital criterion | Capital at least MOP 1,000,000 | 2026 | [article 4](https://bo.dsaj.gov.mo/bo/i/78/36/lei21.asp?printer=1) |
 
-| Mandatory Group A taxable-profit criterion | Average of the last 3 years strictly above MOP 1,000,000 | 2026 | [article 4](https://bo.dsaj.gov.mo/bo/i/78/36/lei21.asp?printer=1) |
+| Mandatory Group A taxable-profit criterion | Average of the last 3 years (in words on the page) strictly above MOP 1,000,000 | 2026 | [article 4](https://bo.dsaj.gov.mo/bo/i/78/36/lei21.asp?printer=1) |
 
-| Normal assessed-tax payment split | Tax at most MOP 3,000: September; above: 2 equal instalments in September and November | Normal cycle, subject to actual notice | [article 57](https://bo.dsaj.gov.mo/bo/i/78/36/lei21.asp?printer=1); [current GroupA obligations, inclusion and normal payment](https://www.dsf.gov.mo/en/tax/tax_introduction/profits_tax_a) |
+| Normal assessed-tax payment split | Tax at most MOP 3,000: September; above: 2 equal instalments (in words on the page) in September and November | Normal cycle, subject to actual notice | [article 57](https://bo.dsaj.gov.mo/bo/i/78/36/lei21.asp?printer=1); [current GroupA obligations, inclusion and normal payment](https://www.dsf.gov.mo/en/tax/tax_introduction/profits_tax_a) |
 
 | Final tax and instalments | Rounded to MOP units; no additional complementary-tax charge | Standing law | [article 8](https://bo.dsaj.gov.mo/bo/i/78/36/lei21.asp?printer=1) |
 

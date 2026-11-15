@@ -42,7 +42,7 @@ The old narrow consumption-tax description is retained with its real scope: cove
 
 | Ordinary lease duty on total contract rent; lessor pays | 5 per 1,000 = 0.5% (derived decimal); minimum MOP 50 | Current amended schedule | [General Schedule item 6, lease duty](https://bo.dsaj.gov.mo/bo/i/88/26/lei17.asp?printer=1); [article 27](https://bo.dsaj.gov.mo/bo/i/88/26/lei17.asp?printer=1) |
 
-| Qualifying written institutional-arbitration agreement for all lease disputes during its term | Half the lease duty, subject to statutory conditions and later clawback | Current amended law | [article 27](https://bo.dsaj.gov.mo/bo/i/88/26/lei17.asp?printer=1) |
+| Qualifying written institutional-arbitration agreement for all lease disputes during its term | 1/2 of lease duty (in words on the page), subject to statutory conditions and later clawback | Current amended law | [article 27](https://bo.dsaj.gov.mo/bo/i/88/26/lei17.asp?printer=1) |
 
 | Ordinary lease declaration/payment period | Within 15 days of contract execution, subject to valid annual-instalment route | Current amended law | [article 27](https://bo.dsaj.gov.mo/bo/i/88/26/lei17.asp?printer=1) |
 

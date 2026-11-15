@@ -34,11 +34,11 @@ Collect the proposed activity, legal form, owners and ultimate ownership, cash/i
 
 | Lda. quotas, including division immediately unified into a qualifying quota | At least MOP 1,000 per quota; multiples of MOP 100, with the statutory division/unification exception | 2026 | [article 360](https://bo.dsaj.gov.mo/bo/i/99/31/codcompt/codcom0001.asp?printer=1) |
 
-| Multi-member Lda.; single-member alternative is separate | 2-30 shareholders; 1 shareholder permitted under the single-member rules | 2026 | [Q11-16 capital, shareholder/director, nationality and foreign body](https://www.ipim.gov.mo/en/investment-promotion/business-information/q-a); [article 358](https://bo.dsaj.gov.mo/bo/i/99/31/codcompt/codcom0001.asp?printer=1); [article 390](https://bo.dsaj.gov.mo/bo/i/99/31/codcompt/codcom0001.asp?printer=1) |
+| Multi-member Lda.; single-member alternative is separate | 2-30 shareholders; 1 shareholder permitted under the single-member rules (minimum counts in words on the page) | 2026 | [Q11-16 capital, shareholder/director, nationality and foreign body](https://www.ipim.gov.mo/en/investment-promotion/business-information/q-a); [article 358](https://bo.dsaj.gov.mo/bo/i/99/31/codcompt/codcom0001.asp?printer=1); [article 390](https://bo.dsaj.gov.mo/bo/i/99/31/codcompt/codcom0001.asp?printer=1) |
 
-| Lda. management | At least 1 administrator; may be a shareholder or non-shareholder | 2026 | [article 383](https://bo.dsaj.gov.mo/bo/i/99/31/codcompt/codcom0001.asp?printer=1) |
+| Lda. management | At least 1 administrator (in words on the page); may be a shareholder or non-shareholder | 2026 | [article 383](https://bo.dsaj.gov.mo/bo/i/99/31/codcompt/codcom0001.asp?printer=1) |
 
-| Ordinary S.A. | At least 3 shareholders; MOP 1,000,000 subscribed capital; shares at least MOP 100 | 2026 | [article 393](https://bo.dsaj.gov.mo/bo/i/99/31/codcompt/codcom0001.asp?printer=1) |
+| Ordinary S.A. | At least 3 shareholders (in words on the page); MOP 1,000,000 subscribed capital; shares at least MOP 100 | 2026 | [article 393](https://bo.dsaj.gov.mo/bo/i/99/31/codcompt/codcom0001.asp?printer=1) |
 
 | S.A. capital at formation | At least 25% paid; in-kind contributions and issue premium cannot be deferred | 2026 | [article 394](https://bo.dsaj.gov.mo/bo/i/99/31/codcompt/codcom0001.asp?printer=1) |
 
