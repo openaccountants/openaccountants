@@ -45,7 +45,7 @@ The original catalog said Open Accountants is AGPL-3.0 and every listed project 
 
 ### Aikar (आयकर)
 
-- Repository: [debjitl 45/aikar](https://github.com/debjitl45/aikar).
+- Repository: [debjitl45/aikar](https://github.com/debjitl45/aikar).
 - Licence: MIT, confirmed from the actual LICENSE file. Language: English / Hindi as described in the original catalog.
 - Historical catalog stars: 5, retained as an undated historical count, not a current recommendation or quality signal.
 - Preserved scope: Python income-tax and capital-gains library; old/new regimes, equity/debt/gold gains and ITR-form selection guidance. The current README confirms the regime and capital-gains feature claims; the exact ITR-selection behavior has not been executed.
@@ -55,13 +55,13 @@ The original catalog said Open Accountants is AGPL-3.0 and every listed project 
 
 - Repository: [Ammar-32-dev/indian-financial-calculators](https://github.com/Ammar-32-dev/indian-financial-calculators).
 - Original licence claim: MIT. The opened README repeats MIT and links LICENSE, but that file returned 404. Exact licence text/reuse permission is **Not yet confirmed**; do not state all material is freely reusable.
-- Language: English / Type Script. Preserved scope: FY 2025-26 dual-regime income-tax UI, age-based calculations, deduction suggestions and enhanced rebate up to INR 1,200,000 as a project feature claim, not a legal amount sourced from that repository.
+- Language: English / TypeScript. Preserved scope: FY 2025-26 dual-regime income-tax UI, age-based calculations, deduction suggestions and enhanced rebate up to INR 1,200,000 as a project feature claim, not a legal amount sourced from that repository.
 - Preserved integration idea: UI patterns for regime comparison and rebate presentation. Current law and calculation tests remain separate, and reuse is held pending licence resolution. [README](https://github.com/Ammar-32-dev/indian-financial-calculators/blob/main/README.md).
 
 ### india-compliance
 
 - Repository: [resilient-tech/india-compliance](https://github.com/resilient-tech/india-compliance).
-- Licence: GPL-3.0 as identified by the actual licence file and README. Language: Python / Java Script, ERPNext/Frappe framework. Historical catalog stars: 235, retained as an undated count, not a live metric.
+- Licence: GPL-3.0 as identified by the actual licence file and README. Language: Python / JavaScript, ERPNext/Frappe framework. Historical catalog stars: 235, retained as an undated count, not a live metric.
 - Preserved scope: Indian GST and TDS compliance module. The following original data and integration claims are retained as a map for inspection; project data is not an official tax source.
 - **GST rate templates**: original path `gst_india/data/tax_defaults.json`, with current repository path `india_compliance/gst_india/data/tax_defaults.json`. The original catalog listed 0%,1%,3%,5%,6%,7.5%,12%,18%,28%, CGST/SGST/IGST/RCM account structures, and in-state/out-state/reverse-charge/composition templates. The current opened file contains a subset of those template rates; the historical list is **Not yet confirmed** as a complete current inventory and does not determine the tax on any supply. A real supply requires current official notification/HSN/exemption analysis in `india-gst`.
 - **HSN code master**: original path `gst_india/data/hsn_codes.json`, described as approximately 1,200 four-digit HSN descriptions without rate mappings. Exact current path, count, completeness and no-rate-mapping claim remain **Not yet confirmed**; no HSN data file was claimed read here.
@@ -137,7 +137,7 @@ expected:
 
 ## When to refuse or refer
 
-- Refuse to treat a Git Hub rate table, star count, software name or licence as an official tax rule or proof a return is correct.
+- Refuse to treat a GitHub rate table, star count, software name or licence as an official tax rule or proof a return is correct.
 - Hold reuse where the actual licence/required notices or dependency rights are unresolved, including the calculator UI LICENSE 404. Project licence labels here are source observations, not a legal opinion on every proposed integration.
 - Refer tax classifications, special-rate income, current form/extension/interest holds and client-specific filings to the named India skill and professional review.
 - Do not install or execute a repository, upload client data, call paid APIs, change an engine or submit a return merely because it appears in this catalog.
@@ -164,7 +164,7 @@ This catalog does not select a return field, submit a form or make a payment. Ro
 | https://github.com/amrajacivil/taxcalcindia/blob/main/LICENSE | Read for actual MIT licence and notice/permission conditions; no blanket compatibility opinion | 2026-11-15 |
 | https://github.com/debjitl45/aikar/blob/main/README.md | Read for current README feature list, year label and incomplete slab table; no execution or entire implementation review | 2026-11-15 |
 | https://github.com/debjitl45/aikar/blob/main/LICENSE | Read for actual MIT licence and notice/permission conditions | 2026-11-15 |
-| https://github.com/Ammar-32-dev/indian-financial-calculators/blob/main/README.md | Read for FY 2025-26 calculator features, Type Script/UI scope and MIT claim; linked LICENSE returned 404, exact reuse rights unresolved | 2026-11-15 |
+| https://github.com/Ammar-32-dev/indian-financial-calculators/blob/main/README.md | Read for FY 2025-26 calculator features, TypeScript/UI scope and MIT claim; linked LICENSE returned 404, exact reuse rights unresolved | 2026-11-15 |
 | https://github.com/resilient-tech/india-compliance | Read for README GST/ERPNext/Frappe scope and GPL label; not whole application audit | 2026-11-15 |
 | https://github.com/resilient-tech/india-compliance/blob/develop/license.txt | Read for GPL-3.0 licence heading and project licence file existence; no full compatibility/legal opinion | 2026-11-15 |
 | https://github.com/resilient-tech/india-compliance/blob/develop/india_compliance/gst_india/data/tax_defaults.json | Read for template structure and actual gst_rate fields only; historical complete rate list not verified as current law | 2026-11-15 |
