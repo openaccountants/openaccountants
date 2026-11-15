@@ -30,7 +30,7 @@ Article 1(3) preserves each territory's taxation of its residents except for the
 | Treaty test | Figure and complete boundary | Source |
 |---|---|---|
 | Ordinary employment short-visit presence limb | Not more than 183 days in any 12-month period commencing or ending in the fiscal year; the employer and PE-cost limbs must also hold | [Article 14(2)](https://assets.publishing.service.gov.uk/media/5c470999ed915d38b0437c54/2018_Guernsey-UK_Double_Taxation_Agreement_in_force.pdf) |
-| Building/construction/installation PE | Lasts more than 12 months, including the connected supervisory activities | [Article 5(3)](https://assets.publishing.service.gov.uk/media/5c470999ed915d38b0437c54/2018_Guernsey-UK_Double_Taxation_Agreement_in_force.pdf) |
+| Building/construction/installation PE | Lasts more than 12 months | [Article 5(3)](https://assets.publishing.service.gov.uk/media/5c470999ed915d38b0437c54/2018_Guernsey-UK_Double_Taxation_Agreement_in_force.pdf) |
 | Specified property-investment-vehicle dividends | Source tax ceiling 15% of gross for the specified annually distributing, tax-exempt property-income investment vehicle, where the beneficial owner is resident in the other territory; the pension-scheme exception and effectively connected PE rule below apply | [Article 10(2)–(4)](https://assets.publishing.service.gov.uk/media/5c470999ed915d38b0437c54/2018_Guernsey-UK_Double_Taxation_Agreement_in_force.pdf) |
 | Enterprise offshore-activity deemed-PE exception | Aggregate no more than 30 days in any 12-month period commencing or ending in the fiscal year, with connected-activity aggregation | [Article 21(3)–(4)](https://assets.publishing.service.gov.uk/media/5c470999ed915d38b0437c54/2018_Guernsey-UK_Double_Taxation_Agreement_in_force.pdf) |
 
