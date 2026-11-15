@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/gg-corporate-tax-substance"
   jurisdiction: "GG"
   tax_year: "2026"
-  last_updated: "2026-11-01"
+  last_updated: "2026-11-15"
 ---
 
-# Guernsey corporate tax, distributions and substance v1.2
+# Guernsey corporate tax, distributions and substance v1.3
 
 > **Source-cited draft.** Professional review is pending. Figures are limited to the periods and assumptions below. This Guide prepares working papers; it is not authority to file or pay.
 
@@ -48,7 +48,7 @@ The intermediate list expressly includes banking, domestic insurance, fiduciary 
 
 The section 209 definition of **large retail business** tests taxable profits **exceeding £500,000**, reduced proportionately for a business carried on for part of the year. It excludes a retail business with more than 95% of customers outside Guernsey, excludes services to that extent and wholesale trade, and includes online retail. Aggregate the profits of associated Guernsey retail companies: control of one by the other or common control, construed under section 122(1). The resulting liability is apportioned by their respective profits even if one company individually falls below the threshold. Section 7BA and the Fifth Schedule put the qualifying retail-business income in the 20% class; this is not a 20% charge only on the excess over the threshold. At exactly £500,000 a full-year unassociated business does not meet this definition, although another higher-rate category can still apply. Keep customer-location, association, period and income-class evidence. [Sections 7BA, 209 and Fifth Schedule](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=253819).
 
-## The base and computation
+## The base
 
 1. Confirm the company's residence, accounting period, legal form, ownership and activities.
 2. Build a transaction-supported bridge from accounting profit to each taxable income stream. Record source and deduction decisions separately.
@@ -77,7 +77,7 @@ Separate capital asset expenditure from current costs and reconcile book depreci
 | General machinery and plant where no special rate applies | 20%, reducing balance | [Annual Allowances, A(3)](https://gov.gg/CHttpHandler.ashx?id=2086&p=0) |
 | Motor cars, buses, lorries and motorcycles | 25%, reducing balance | [A(4)(k)](https://gov.gg/CHttpHandler.ashx?id=2086&p=0) |
 | Computer hardware | 20%, straight line | [B(vi)](https://gov.gg/CHttpHandler.ashx?id=2086&p=0) |
-| Substantial stone/brick/concrete buildings | 1.25%, reducing balance | [A(1)(i)](https://gov.gg/CHttpHandler.ashx?id=2086&p=0) |
+| Substantial stone/brick/concrete buildings | 1.25%, reducing balance (source prints 1¼%) | [A(1)(i)](https://gov.gg/CHttpHandler.ashx?id=2086&p=0) |
 
 These are the rates in the Revenue Service’s currently linked table, read on 27 October 2026; the PDF carries Form 651 (12/01), so its historic form date is not represented as a 2026 enactment date. Match the actual asset class and statutory entitlement before applying a rate. For an established full-year qualifying general-plant tax balance of £40,000, 20% gives £8,000 allowance and £32,000 remaining before other movements. Computer hardware’s 20% applies on its straight-line basis, not to the diminishing balance. No private-use or disposal outcome is inferred from these arithmetic illustrations.
 
@@ -95,7 +95,7 @@ Section 142’s cessation carryback is narrower than a general terminal-loss ele
 
 Revenue Service practice M24 applies current-year trading losses through sections 133–135, subject to section 133A’s same-rate restriction. Its normal section 135 allocation is proportional across eligible classes, but a taxpayer can request the most advantageous allocation, including to preserve double-tax relief. The practice permits specified charges on income to be used before current-year trading losses, leaving the unused loss for carryforward. **Brought-forward section 139 losses go against that business’s income before charges on income.** Reconcile the claim, ordering election, foreign-tax credit limitation and surviving loss separately; do not treat a discretionary allocation as automatic. [M24, reviewed 30 December 2024](https://gov.gg/CHttpHandler.ashx?id=185346&p=0).
 
-## Deadlines, registration and filing
+## Deadlines and filing
 
 The **2025 company return is due 30 November 2026**. Annual online filing and accountant-certified accounts are required; audit exemption does not itself remove tax certification. Use the correct return certificate and retain the qualification/authority of the certifying accountant. [Company guidance](https://gov.gg/RevenueService/Companies).
 
@@ -127,7 +127,7 @@ An appeal must be submitted within **30 days of the Order imposing the penalty**
 
 Income Tax Law section 199 and the [2005 Surcharges and Supplements Regulations rr1–4](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=268079) apply to ordinary company income-tax arrears: 5% initially, then 5% of the total then outstanding at each six-month point, including unpaid prior surcharges, subject to the actual settlement, assessment, exemption and deferral rules. The £50 minimum is aggregate; once reached, paying down below £50 does not cancel its remainder. The employee coding/direction-notice exception does not exempt an employer or company as such. Use the [full statutory event-ledger method](gg-individual-income-tax.md#statutory-income-tax-surcharge-calculation), including complete-return/backdating conditions, instead of importing the social-insurance rate. With a £10,000 ordinary debt and no payments/other adjustments for twelve months, the sourced working paper gives £500, £525 and £551.25 in charges, or £1,576.25 total. [Income Tax Law s199](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=253819); [supplementary control](../../evidence/research/guernsey-2026/ordinary-completion-2026-10-28/enforcement-controls.md). This new method is checked in the [fresh ordinary-method whole-pack review](../../evidence/research/guernsey-2026/ordinary-completion-2026-10-28/independent-review/report.md); earlier published review evidence covers its predecessor.
 
-## Substance and cross-border distributions
+## Cross-border points
 
 Screen the relevant activities and document direction/management, people, premises, expenditure and local core income-generating activities. Pure equity holding and high-risk IP require their own tests. [Economic substance guidance](https://gov.gg/economicsubstance).
 
@@ -364,19 +364,21 @@ This is not a company-incorporation checklist, document-duty calculation, treaty
 
 ## Sources
 
+Source-access record, 14 November 2026: ordinary legal-library URLs returned 403/429 and the ordinary browser remained on a security-verification page. Legal-library provisions are supported by the preserved genuine October 2026 official primary PDFs, with original retrieval/read dates retained below. They are dated archived copies, not freshly retrieved current consolidations. Later amendments beyond those archived versions are not yet confirmed. Government and Registry guidance is separately identified by its own URL and read scope.
+
 | New source and scope | URL | Read on |
 |---|---|---|
-| Income Tax Law v.0113: s2, s4–7, s36, s57–59, s62AA, s67, s81, s84–86, s133–135, s139, s141–144, s147 and Fifth Schedule rate table; only cited provisions read, not the full 757-page law | https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=253819 | 2026-10-27 |
-| Currently linked Annual Allowances table, both pages, underlying s85 rate power | https://gov.gg/CHttpHandler.ashx?id=2086&p=0 | 2026-10-27 |
-| Income Tax Law: ss57–62D, 66A–66C, 81B and s209 retail/reporting definitions; limited cited provisions | https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=253819 | 2026-10-27 |
-| Distribution deduction regulations 2008, rr1–9 | https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=267621 | 2026-10-27 |
-| Loan exemptions No.3 regulations 2008, rr1–8, read with both amendments below | https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=267761 | 2026-10-27 |
-| Loan exemption amendment 2012, rr1–3 | https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=266936 | 2026-10-27 |
-| Loan exemption amendment 2013, rr1–3, effective 2014 | https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=266902 | 2026-10-27 |
-| C52 company residence, arrivals, departures and migration; updated 23 July 2026 | https://gov.gg/CHttpHandler.ashx?id=202425&p=0 | 2026-10-27 |
-| M24 loss ordering; reviewed 30 December 2024 | https://gov.gg/CHttpHandler.ashx?id=185346&p=0 | 2026-10-27 |
-| C37 disregarded non-resident distributions and credits, all pages | https://gov.gg/CHttpHandler.ashx?id=193346&p=0 | 2026-10-27 |
-| C44 cap and distribution-pool timing, entire practice | https://gov.gg/CHttpHandler.ashx?id=191282&p=0 | 2026-10-27 |
+| Read for Income Tax Law v.0113: s2, s4–7, s36, s57–59, s62AA, s67, s81, s84–86, s133–135, s139, s141–144, s147 and Fifth Schedule rate table; only cited provisions read, not the full 757-page law | https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=253819 | 2026-10-27 |
+| Read for currently linked Annual Allowances table, both pages, underlying s85 rate power | https://gov.gg/CHttpHandler.ashx?id=2086&p=0 | 2026-10-27 |
+| Read for Income Tax Law: ss57–62D, 66A–66C, 81B and s209 retail/reporting definitions; limited cited provisions | https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=253819 | 2026-10-27 |
+| Read for distribution deduction regulations 2008, rr1–9 | https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=267621 | 2026-10-27 |
+| Read for loan exemptions No.3 regulations 2008, rr1–8, read with both amendments below | https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=267761 | 2026-10-27 |
+| Read for loan exemption amendment 2012, rr1–3 | https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=266936 | 2026-10-27 |
+| Read for loan exemption amendment 2013, rr1–3, effective 2014 | https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=266902 | 2026-10-27 |
+| Read for C52 company residence, arrivals, departures and migration; updated 23 July 2026 | https://gov.gg/CHttpHandler.ashx?id=202425&p=0 | 2026-10-27 |
+| Read for M24 loss ordering; reviewed 30 December 2024 | https://gov.gg/CHttpHandler.ashx?id=185346&p=0 | 2026-10-27 |
+| Read for C37 disregarded non-resident distributions and credits, all pages | https://gov.gg/CHttpHandler.ashx?id=193346&p=0 | 2026-10-27 |
+| Read for C44 cap and distribution-pool timing, entire practice | https://gov.gg/CHttpHandler.ashx?id=191282&p=0 | 2026-10-27 |
 
 Read on 22 October 2026: [company guidance](https://gov.gg/RevenueService/Companies), [non-resident Form 707](https://gov.gg/CHttpHandler.ashx?id=118096&p=0), [foreign registration Form 706](https://gov.gg/CHttpHandler.ashx?id=183549&p=0) and [penalty FAQ](https://gov.gg/taxpenalties). Also read the [2021 substance regulations](https://gov.gg/CHttpHandler.ashx?id=141223&p=0) and [current substance index](https://gov.gg/economicsubstance); the [reform timetable](https://gov.gg/taxreform) remains a future-change reference. Source versions and limitations are recorded in the research file. The [fresh independent whole-pack review](../../evidence/research/guernsey-2026/review/report.md) and [bounded contribution-assessment closure](../../evidence/research/guernsey-2026/review/bounded-addition-closure.md) accept publication as an accurate explicitly partial draft after two verified corrections. Final publication checks are recorded separately; professional attestation remains pending. Distribution/loan provisions and their implementing regulations, current company residence/migration practice C52, loss-ordering practice M24 and distribution practice C37/C44 were additionally read on 27 October 2026. The 2013 repeal of the general commercial-interest loan exemption is expressly applied above. The current ordinary residence, business-base, annual-allowance and loss/payment methods above are now supported by the legal library’s version v.0113 consolidation and the currently linked allowance table, read on 27 October 2026. The consolidation expressly lacks authoritative legal effect; authentic enactments and application dates control. Additional primary source read 28 October 2026: [Surcharges and Supplements Regulations 2005](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=268079), all rr1–9, with the complete operative s199 in the current Law. New ordinary surcharge calculations are checked in the [fresh ordinary-method whole-pack review](../../evidence/research/guernsey-2026/ordinary-completion-2026-10-28/independent-review/report.md) and [repair closure](../../evidence/research/guernsey-2026/ordinary-completion-2026-10-28/independent-review/closure.md).
 
@@ -388,4 +390,4 @@ General tax and accounting reference material only. These drafts have not been p
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-01. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `gg-corporate-tax-substance` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/gg-corporate-tax-substance. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-15. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `gg-corporate-tax-substance` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/gg-corporate-tax-substance. If neither is available, confirm every figure against the official source pages cited above before relying on it.

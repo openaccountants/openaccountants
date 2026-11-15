@@ -2,29 +2,43 @@
 name: gg-company-formation
 description: >
   Guernsey local company incorporation reference covering the licensed applicant, founder, director, registered office and resident agent, application documents, ownership information, person registration and Registry fees. Includes a recomputable fee example and post-incorporation handover controls. Based on primary Registry guidance checked in October 2026; current statutory reconciliation, complex ownership and specialised entities remain outside this research draft. Independent whole-pack source review is recorded in the Sources section; professional attestation remains pending.
-version: 0.3
+version: "0.4"
 jurisdiction: GG
 tax_year: 2026
-last_updated: 2026-11-14
+last_updated: 2026-11-15
 category: formation
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+type: filing-howto
 domain: formation
 ---
 
 # Guernsey: forming a local company limited by shares
 
-## Scope
+## Who this applies to
 
 This Guide covers the incorporation process for an ordinary local trading company limited by shares. The Registry's directors handbook addresses Guernsey residents setting up such businesses. Cell companies, regulated activities, overseas migrations, guarantees and complex ownership require additional analysis. The current Companies Law v.0108 was recovered on 27 October 2026; section 17’s application requirements now supplement the Registry guidance below. The consolidation is non-authoritative and authentic enactments control. [Companies Law s17](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=250998). [Directors handbook, introduction](https://www.guernseyregistry.com/CHttpHandler.ashx?id=186495&p=0).
 
-## Who applies and what must be in place
+### Who applies and what must be in place
 
 For the ordinary Registry route, the published guidance requires a corporate service provider (CSP) holding a **full fiduciary licence from the Guernsey Financial Services Commission (GFSC)** as applicant. Statutory section 17(9) also reserves a route for a person/body/officer or class prescribed by the Committee; this Guide has not verified a prescribed exception applicable to an ordinary founder. [Companies Law s17(9)](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=250998). A founder's portal account does not replace that applicant requirement. The Registry requires at least one founder member, at least one director and a registered office in Guernsey. A resident agent must be a Guernsey-resident director or a CSP, unless an exemption applies. This Guide does not establish any resident-agent exemption. [Incorporation guidance](https://www.guernseyregistry.com/companyformation).
 
 The incorporation page requires written GFSC permission for a cell company. An ordinary company's formation checklist must not be reused as a complete cell-company application. A company cannot be incorporated for an unlawful purpose. [Incorporation guidance](https://www.guernseyregistry.com/companyformation).
 
-## Application evidence
+## Rates, bands and thresholds
+
+| Registry service | Fee and stated service period | Source |
+|---|---|---|
+| Standard incorporation | £100; 24 hours | [Current Registry schedule](https://www.guernseyregistry.com/companyfees) |
+| Rapid incorporation | £500; 2 hours | [Current Registry schedule](https://www.guernseyregistry.com/companyfees) |
+| Special incorporation | £1,000; 15 minutes, subject to its service restrictions | [Current Registry schedule](https://www.guernseyregistry.com/companyfees) |
+| Optional name reservation | £25; 3 months | [Current Registry schedule](https://www.guernseyregistry.com/companyfees) |
+
+These are alternative incorporation services plus any separately requested reservation, excluding professional charges; the conditions and evidence below remain necessary.
+
+## The base
+
+### Application evidence
 
 Prepare the following with the licensed applicant. The Registry describes these as required information and documents; the list does not replace the prescribed application or its current validation rules. [Incorporation guidance](https://www.guernseyregistry.com/companyformation).
 
@@ -40,19 +54,21 @@ Prepare the following with the licensed applicant. The Registry describes these 
 
 A guarantee-member application additionally needs the initial guaranteed amount. Cell-company applications need the relevant consent; an incorporated-cell application also needs the incorporated cell company's special resolution. These are distinct application cases, not default requirements for the ordinary share company used in this Guide. [Incorporation guidance](https://www.guernseyregistry.com/companyformation).
 
-## Ownership and personal registration before incorporation
+### Ownership and personal registration before incorporation
 
 The directors handbook requires beneficial-ownership information to be filed **before the incorporation application**. Establish the ownership chain with the CSP before submission. This Guide does not supply a complete beneficial-owner identification test for trusts, indirect control or exemptions. [Directors handbook, printed page 4](https://www.guernseyregistry.com/CHttpHandler.ashx?id=186495&p=0).
 
 For the natural-person director and beneficial owner addressed by the handbook, complete the Person Registration Form through the portal, personally or through the CSP. Keep the resulting lifetime registration number in the individual's records: it identifies that person and is not the company's incorporation number. The handbook also warns that some director information becomes publicly available; do not promise complete confidentiality. [Directors handbook, printed pages 3–4](https://www.guernseyregistry.com/CHttpHandler.ashx?id=186495&p=0).
 
-## Registry fees and an example
+### Registry fees and an example
 
 The published schedule effective **1 December 2025**, checked on 22 October 2026, lists standard incorporation at **£100**, rapid incorporation at **£500**, and special incorporation at **£1,000**. Its corresponding service descriptions are 24 hours, two hours and 15 minutes, with restrictions on the special service. These are Registry service descriptions, not a promise of the elapsed time from first instructing a CSP to having an operational business. A company-name reservation costs **£25** and lasts **three months**. [Current fee schedule](https://www.guernseyregistry.com/companyfees).
 
 Example: one standard incorporation plus one separately requested name reservation gives Registry charges of **£100 + £25 = £125**. Without that reservation, the stated standard incorporation charge is £100. This is not a total setup quotation: obtain the CSP's separate charges and identify any other services needed. Do not add the rapid or special price to the standard price as though all three services were being purchased.
 
-## Confirm formation and hand over administration
+## Deadlines and filing
+
+### Confirm formation and hand over administration
 
 The company is incorporated when registration of its memorandum takes effect. The Registrar allocates a company number and issues a certificate stating its registered name, number and registration date. Treat the submitted application as pending until the registration evidence is available. Retain the certificate and final constitution. [Incorporation guidance](https://www.guernseyregistry.com/companyformation).
 
@@ -60,15 +76,23 @@ For the local trading companies covered by its handbook, the Registry explains t
 
 Use the separate [corporate tax Guide](gg-corporate-tax-substance.md) and [payroll Guide](gg-payroll-social-insurance.md) for their subjects. This formation checklist does not determine tax residence, a tax exemption, an employer's registration obligations or permission to conduct a regulated activity.
 
-## Review controls and remaining work
+### Review controls and remaining work
 
 Before using the application, reconcile the constitution, founder, director, ownership and capital information; confirm the applicant's current licence; record the fee schedule checked; and retain the submission and registration evidence. These are preparation controls, not additional statutory certifications invented by this Guide.
 
 Section 17 now confirms the memorandum, first-director consents/particulars, registered office, resident-agent information/beneficial-owner compliance statement, founder details, initial share capital or guarantee, required consents/resolutions and compliance declaration. Distinguish cash from non-cash consideration in the initial-capital statement. The application may propose an incorporation date no later than **three months after application**; French constitutional text requires an English translation. The Registrar rejects a non-compliant application. These controls supplement the original application checklist rather than replacing it. [Companies Law s17(1)–(11)](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=250998).
 
-Still to verify: full name restrictions, resident-agent exemptions, complex beneficial-owner tests, regulated-sector permissions and specialised company forms. The [fresh independent whole-pack review](../../evidence/research/guernsey-2026/review/report.md) and [bounded contribution-assessment closure](../../evidence/research/guernsey-2026/review/bounded-addition-closure.md) accept this explicitly partial draft; professional attestation remains pending. This Guide's presence does not establish comprehensive Guernsey coverage.
+Not yet confirmed: full name restrictions, resident-agent exemptions, complex beneficial-owner tests, regulated-sector permissions and specialised company forms. The [fresh independent whole-pack review](../../evidence/research/guernsey-2026/review/report.md) and [bounded contribution-assessment closure](../../evidence/research/guernsey-2026/review/bounded-addition-closure.md) accept this explicitly partial draft; professional attestation remains pending. This Guide's presence does not establish comprehensive Guernsey coverage.
 
-## Two recomputing fee examples
+## Penalties and interest
+
+Section 17 requires rejection of a non-compliant incorporation application. This skill does not establish numerical formation penalties or interest; post-incorporation reporting penalties are dealt with separately in the [accounts and reporting skill](gg-company-accounts-and-reporting.md). [Companies Law s17](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=250998).
+
+## Cross-border points
+
+French constitutional text requires an English translation under section 17. Overseas migrations and complex foreign ownership need the separate analysis identified in this skill; incorporation alone does not establish tax residence. [Companies Law s17](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=250998).
+
+## Two worked examples that recompute
 
 The amounts are Registry fees effective 1 December 2025 and currently published on 27 October 2026. They exclude CSP/professional charges and assume one chosen service. [Registry fee schedule](https://www.guernseyregistry.com/companyfees).
 
@@ -101,13 +125,23 @@ expected:
   special_total: 1025
 ```
 
+## Ask the client first
+
+- What company form and activity are proposed, and is any regulated or cell-company consent needed?
+- Who are the founders, directors, beneficial owners and proposed resident agent, and what evidence supports each role?
+- Which licensed applicant will submit, what constitution and capital are proposed, and which single Registry service is required?
+- What submission date, proposed incorporation date and subsequent administration responsibilities are agreed?
+
 ## Sources
 
 | Source | Read scope | Read on |
 |---|---|---|
-| [Companies Law v.0108](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=250998) | s17, application requirements and reserved applicant route | 2026-10-27 |
-| [Registry fee schedule](https://www.guernseyregistry.com/companyfees) | Current incorporation/reservation fees, effective 1 December 2025 | 2026-10-27 |
-| All original Registry sources in frontmatter | Original scope, ownership and handover guidance and prior review retained | 2026-10-22 |
+| [Companies Law v.0108, archived official copy](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=250998) | Read for full s17(1)–(11), application requirements and reserved applicant route; genuine primary PDF retrieved 2026-10-27, re-read from the preserved copy | 2026-11-14 |
+| [Registry fee schedule](https://www.guernseyregistry.com/companyfees) | Read for incorporation/reservation charges and service periods, effective 1 December 2025 | 2026-11-14 |
+| [Registry incorporation guidance](https://www.guernseyregistry.com/companyformation) | Read for applicant, minimum roles, application documents, registration effect and certificate | 2026-11-14 |
+| [Directors handbook](https://www.guernseyregistry.com/CHttpHandler.ashx?id=186495&p=0) | Read for introduction and printed pp3–4: formation, pre-application ownership information, person registration, public particulars and subsequent administration | 2026-11-14 |
+
+The original Registry review dated 22 October 2026 and subsequent scoped reviews remain in the linked research records. On 14 November 2026 the legal-library URL returned 403/429 and an ordinary browser remained on its verification page; the Law is therefore cited from the preserved genuine October primary PDF. Later amendments beyond that archived version are not established here.
 
 Not yet confirmed: full name restrictions, resident-agent exemptions, complex beneficial-owner tests, regulated permissions and specialised company forms. These are explicit exclusions from the ordinary application/fee method. The [fresh independent whole-pack review](../../evidence/research/guernsey-2026/review/report.md) and [bounded contribution-assessment closure](../../evidence/research/guernsey-2026/review/bounded-addition-closure.md) accept this explicitly partial draft; no professional attestation is claimed.
 
