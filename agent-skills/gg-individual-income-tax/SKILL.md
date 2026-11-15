@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/gg-individual-income-tax"
   jurisdiction: "GG"
   tax_year: "2026"
-  last_updated: "2026-11-01"
+  last_updated: "2026-11-15"
 ---
 
-# Guernsey individual income tax and residence v0.11
+# Guernsey individual income tax and residence v0.12
 
 > **Source-cited draft.** Professional review is pending. Figures are limited to the periods and assumptions below. This Guide prepares working papers; it is not authority to file or pay.
 
@@ -36,16 +36,16 @@ Income tax is 20%. The personal allowance is £15,200. Withdrawal starts at £85
 
 | Selected item | 2026 amount / condition | Source |
 |---|---|---|
-| Personal allowance | £15,200 | [Rates page](https://gov.gg/RStax-rates-and-allowances) |
+| Personal allowance | £15,200 | [Monetary Values 2026, p1](https://gov.gg/CHttpHandler.ashx?id=185595&p=0) |
 | Withdrawal threshold | £85,000 | [Withdrawal table](https://gov.gg/wopa) |
 | Withdrawal ratio | £1 relief per £5 excess income | [Withdrawal rules](https://gov.gg/wopa) |
 | Pension relief protected from withdrawal | £2,500 of otherwise eligible relief | [Withdrawal rules](https://gov.gg/wopa) |
 | Principal-home mortgage interest relief | Maximum £3,500 per person, subject to entitlement | [2026 rates changes](https://gov.gg/RStax-rates-and-allowances) |
-| Charge of child allowance | £9,800, subject to conditions and annual claim | [Rates page](https://gov.gg/RStax-rates-and-allowances) |
+| Charge of child allowance | £9,800, subject to conditions and annual claim | [Monetary Values 2026, p1](https://gov.gg/CHttpHandler.ashx?id=185595&p=0) |
 
 These are deductions/allowances, not equivalent cash tax refunds. Do not infer eligibility from the amount alone.
 
-## The base and computation
+## The base
 
 ### Determine the income before applying allowances
 
@@ -94,7 +94,7 @@ A transfer requires unused allowance and the required agreement, not merely marr
 
 The charge-of-child route covers qualifying lone parents who are not cohabiting, with the specified family-allowance or higher-education condition. The alternative married/cohabiting route requires the stated whole-year total-incapacity and employed-childcarer conditions **and** the family-allowance or full-time higher-education condition. The allowance must be requested each year and claimants must file a return. Check the family facts against the complete guidance rather than counting all parents. [Rates page, charge of child](https://gov.gg/RStax-rates-and-allowances).
 
-For rent-a-room relief, the rates page permits up to **two furnished rooms** in the principal private residence, let to a **non-family member over 18**, with up to **£10,000 per room**. A self-contained unit, guesthouse or B&B business does not fit that stated route. Gross rent above the per-room allowance remains taxable under the page's rule; it is not an exemption for all receipts once the letting qualifies. Other rental deductions, allocation and interaction require separate review. [Rates page, rent a room](https://gov.gg/RStax-rates-and-allowances).
+For rent-a-room relief, the rates page permits up to **two furnished rooms** in the principal private residence, let to a **non-family member over 18**, with up to **£10,000 per room**. A self-contained unit, guesthouse or B&B business does not fit that stated route. Where the property is jointly owned or rented, the exemption is halved for each owner and unused allowance is not transferable. Rent above £10,000 for a room is taxable without further deduction or allowance. These additional conditions are explicit in the current Monetary Values table; qualifying letting does not exempt all receipts. [Monetary Values 2026 V2, p4](https://gov.gg/CHttpHandler.ashx?id=185595&p=0). Other allocation and interaction require separate review. [Rates page, rent a room](https://gov.gg/RStax-rates-and-allowances).
 
 ### Arrival, departure and limited-residence allowance method
 
@@ -132,7 +132,7 @@ Assume one individual, full-year qualifying residence, valid elections and indep
 
 **Screening example:** a married couple cannot simply combine their income under the former general joint cap. Review each person's election and income categories. If either receives a pension triviality payment or Guernsey rental income, isolate it for separate tax analysis before comparing a cap with ordinary taxation. This is a classification check, not a computed cap liability. [Cap guidance](https://gov.gg/taxcap); [exclusions, page 5](https://gov.gg/CHttpHandler.ashx?id=174308&p=0).
 
-## Deadlines, filing and evidence
+## Deadlines and filing
 
 The Revenue Service states **30 November 2026 for the 2025 personal return**. Do not relabel that as the 2026-return deadline. Check the notice for the relevant year and retain confirmation of any automatic-assessment exemption. [Personal returns](https://gov.gg/revenue-service/personal-tax-returns).
 
@@ -196,7 +196,7 @@ For a hearing, follow the Clerk's case-management directions for evidence, argum
 
 Further appeal to the Royal Court is on law, not a rehearing of facts. Section 80(2) requires the written case-stated requirement to the Tribunal President within **21 days after determination of the appeal**. The older guidance describes issue of the full written decision; preserve both dates and do not assume that receipt or a later explanation restarts the statutory period. Section 80(5) then requires transmission to HM Greffier within **21 days after receipt of the stated/signed case**, with a copy and notification to the other party. This second clock is distinct from the original requirement. [Section 80](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=253819). This is not the original 30-day appeal clock. Verify the current court rules with an advocate before filing. [Page 19](https://gov.gg/CHttpHandler.ashx?id=122165&p=0).
 
-## Cross-border residence evidence
+## Cross-border points
 
 Revenue Service distinguishes registration certificates, domestic residence certificates and treaty residence forms. Its guidance requires residence/registration before a certificate request and a completed Guernsey return before signing a treaty residence form. Do not present a registration certificate as a treaty tie-break decision. For UK claims, apply the [UK–Guernsey treaty Guide](gg-uk-treaty-employment-and-relief.md) as well as domestic residence. [Residence certificates guidance](https://gov.gg/residency).
 
@@ -280,6 +280,8 @@ The tax-reform page describes personal-tax and GST changes for 2029 and corporat
 
 ## Sources
 
+Source-access record, 14 November 2026: ordinary legal-library URLs returned 403/429 and the ordinary browser remained on a security-verification page. Legal-library provisions are supported by the preserved genuine October 2026 official primary PDFs, with original retrieval/read dates retained below. They are dated archived copies, not freshly retrieved current consolidations. Later amendments beyond those archived versions are not yet confirmed. Government and Registry guidance is separately identified by its own URL and read scope.
+
 Read on 22 October 2026: [residence guidance](https://gov.gg/residency), [section 3 extract](https://gov.gg/CHttpHandler.ashx?id=167965&p=0), [2026 rates and reliefs](https://gov.gg/RStax-rates-and-allowances), [withdrawal guidance](https://gov.gg/wopa) and [personal-return guidance](https://gov.gg/revenue-service/personal-tax-returns). The [reform timetable](https://gov.gg/taxreform) remains a future-change reference.
 
 | Additional primary source and read scope | URL | Read on |
@@ -288,7 +290,7 @@ Read on 22 October 2026: [residence guidance](https://gov.gg/residency), [sectio
 | Rental repairs transition 2026, complete rr1–7 | https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=327585 | 2026-10-27 |
 | R15 arrival/departure allowance practice, complete three pages | https://gov.gg/CHttpHandler.ashx?id=110271&p=0 | 2026-10-27 |
 | R10 overseas business on arrival/departure, complete practice | https://gov.gg/CHttpHandler.ashx?id=181119&p=0 | 2026-10-27 |
-| 2026 monetary table, p5 standard charge and caps, p6 contributions | https://gov.gg/CHttpHandler.ashx?id=185595&p=0 | 2026-10-27 |
+| Monetary Values 2026 V2: Read for all 6 pages, including p1 allowance/child figures, p4 rent-a-room conditions, p5 standard charge/caps and p6 contributions; the original p5–6 review dated 2026-10-27 remains in the prior research record | https://gov.gg/CHttpHandler.ashx?id=185595&p=0 | 2026-11-14 |
 
 | Surcharges and Supplements Regulations 2005, rr1–9 (complete); current Law s199 operative subsections (complete) | https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=268079 and https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=253819 | 2026-10-28 |
 
@@ -300,4 +302,4 @@ General tax and accounting reference material only. These drafts have not been p
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-01. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `gg-individual-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/gg-individual-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-15. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `gg-individual-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/gg-individual-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
