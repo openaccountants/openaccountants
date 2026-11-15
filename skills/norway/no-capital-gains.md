@@ -1,6 +1,6 @@
 ---
 name: no-capital-gains
-description: "Norway capital gains tax: 22% rate, shield deduction (skjermingsfradrag) on shares, shareholder model, exit tax. Trigger on: \"Norway CGT\", \"capital gains Norway\", \"Norway 22% capital gains\", \"skjermingsfradrag\", \"shareholder model Norway\", \"sell shares Norway\", \"Norway aksjer skatt\", \"Norway exit tax shares\"."
+description: "Norway capital gains tax: applicable ordinary and regional rates, shield deduction (skjermingsfradrag) on shares, shareholder model, exit tax. Trigger on: \"Norway CGT\", \"capital gains Norway\", \"Norway 22% capital gains\", \"skjermingsfradrag\", \"shareholder model Norway\", \"sell shares Norway\", \"Norway aksjer skatt\", \"Norway exit tax shares\"."
 version: 1.1
 jurisdiction: "NO"
 tax_year: 2026
@@ -30,8 +30,8 @@ Income year 2026. Use this method for an individual who is tax resident in Norwa
 
 | Item | Income-year rule | Official source |
 | --- | --- | --- |
-| Share gain/dividend after eligible shield, and share-loss tax effect | 37.84%; underlying amount uplifted by 1.72 and taxed at 22% | [Rate](https://www.skatteetaten.no/en/rates/factor-for-upward-adjustment-of-gainloss-or-dividend-on-shares/) |
-| Other ordinary capital income, including virtual-asset gains and losses | 22%; classify first | [Rate](https://www.skatteetaten.no/en/rates/factor-for-upward-adjustment-of-gainloss-or-dividend-on-shares/) [Crypto](https://www.skatteetaten.no/en/person/taxes/get-the-taxes-right/shares-and-securities/about-shares-and-securities/digital-currency/tax-regulations-virtual-currency/) |
+| Share gain/dividend after eligible shield, and share-loss tax effect | Underlying amount uplifted by 1.72: general 22% gives 37.84% (derived); the § 3-2 northern-zone owner-income rate of 18.5% gives 31.82% (derived). Owner income is exempt from municipal/county income tax. | [2026 tax decision §§ 3-2, 3-8](https://lovdata.no/dokument/STV/forskrift/2025-12-18-2747), [Tax Act § 2-36(5)](https://lovdata.no/dokument/NL/lov/1999-03-26-14/*) and [ordinary-income rates](https://www.skatteetaten.no/satser/alminnelig-inntekt/) |
+| Other ordinary capital income, including virtual-asset gains and losses | Published general 22%; 18.5% for qualifying individuals in the northern zone. Establish actual local components where the calculation depends on them; classify first. | [2026 tax decision §§ 3-2, 3-8](https://lovdata.no/dokument/STV/forskrift/2025-12-18-2747), [Tax Act § 2-36(5)](https://lovdata.no/dokument/NL/lov/1999-03-26-14/*) and [ordinary-income rates](https://www.skatteetaten.no/satser/alminnelig-inntekt/) |
 | Ordinary personal return | 30 April following the income year. A 30-day extension is available if applied for by 30 April. Sole proprietors file by 31 May | [Return](https://www.skatteetaten.no/en/person/taxes/tax-return/tax-return-person/) [Tax Administration Regulation § 8-2-3](https://lovdata.no/dokument/SF/forskrift/2016-11-23-1360/*) |
 | Own-home sale exemption | Sale made or agreed more than 1 year after acquisition, and the owner lived in the home for at least 12 months of the last 2 years (year counts in words on the page) | [Home](https://www.skatteetaten.no/ordbok/skatt-pa-gevinst-ved-realisasjon-av-fast-eiendom/) |
 | Own holiday-home exemption | Sale made or agreed more than 5 years after acquisition and more than 5 years after first use or completion certification; used as own holiday home for at least 5 of the last 8 years (the year counts are in words on the page) | [Tax Act § 9-3(4)](https://lovdata.no/dokument/NL/lov/1999-03-26-14/*) [Exempt](https://www.skatteetaten.no/person/skatt/hjelp-til-riktig-skatt/bolig-og-eiendeler/bolig-eiendom-tomt/salg/) |
@@ -40,7 +40,7 @@ Income year 2026. Use this method for an individual who is tax resident in Norwa
 | Exit tax on transfer of assets to someone abroad on or after 20 March 2024 | Whole latent gain taxed when it exceeds NOK 100,000; no NOK 3,000,000 deduction | [Exit](https://www.skatteetaten.no/en/person/to-from-norway/from/tax-when-you-move-abroad/exit-tax/) |
 | Exit tax on a move or transfer on or before 19 March 2024 | Older regime: tax applies when the net latent gain exceeds NOK 500,000 | [Exit](https://www.skatteetaten.no/en/person/to-from-norway/from/tax-when-you-move-abroad/exit-tax/) |
 
-The annual shield rate is published in January after the income year. Do not insert an estimated 2026 rate into a final calculation prepared before publication. Prior unused shielding can be established from existing records. [Model](https://www.skatteetaten.no/en/person/taxes/get-the-taxes-right/shares-and-securities/about-shares-and-securities/the-shareholder-model/)
+The northern zone here means Finnmark and Karlsøy, Kvænangen, Kåfjord, Lyngen, Nordreisa, Skjervøy and Storfjord in Troms. The English share-rate headline does not state this statutory regional exception. Establish the taxpayer’s applicable regime before multiplying any underlying amount; [2026 tax decision §§ 3-2, 3-8](https://lovdata.no/dokument/STV/forskrift/2025-12-18-2747), [Tax Act § 2-36(5)](https://lovdata.no/dokument/NL/lov/1999-03-26-14/*) and [ordinary-income rates](https://www.skatteetaten.no/satser/alminnelig-inntekt/). The annual shield rate is published in January after the income year. Do not insert an estimated 2026 rate into a final calculation prepared before publication. Prior unused shielding can be established from existing records. [Model](https://www.skatteetaten.no/en/person/taxes/get-the-taxes-right/shares-and-securities/about-shares-and-securities/the-shareholder-model/)
 
 ## The method, step by step
 
@@ -84,7 +84,7 @@ For a taxable ordinary sale: output value includes cash and debt assumed by the 
 
 ### Virtual assets
 
-A sale, exchange into another token or payment using crypto normally realises the disposed asset. A gift transfer is not a realisation. Calculate NOK proceeds less documented NOK input value and transaction costs. A gain is taxed at 22% and a loss is deductible at 22%. There is no share uplift or shareholder shield. Mining/staking receipts and later disposal are separate events; business activity and unusual DeFi/NFT arrangements require separate classification. Do not claim an exchange insolvency loss solely because withdrawals are frozen: the provider must be declared bankrupt and it must be confirmed that you will get nothing back. A fraud loss is deductible only when documented as finally lost after attempts to recover it. [Crypto](https://www.skatteetaten.no/en/person/taxes/get-the-taxes-right/shares-and-securities/about-shares-and-securities/digital-currency/tax-regulations-virtual-currency/)
+A sale, exchange into another token or payment using crypto normally realises the disposed asset. A gift transfer is not a realisation. Calculate NOK proceeds less documented NOK input value and transaction costs. Gains and deductible losses use the applicable ordinary-income rate: published general 22% or qualifying northern-zone 18.5%, with the actual local-rate conditions established as above. There is no share uplift or shareholder shield. Mining/staking receipts and later disposal are separate events; business activity and unusual DeFi/NFT arrangements require separate classification. Do not claim an exchange insolvency loss solely because withdrawals are frozen: the provider must be declared bankrupt and it must be confirmed that you will get nothing back. A fraud loss is deductible only when documented as finally lost after attempts to recover it. [Crypto](https://www.skatteetaten.no/en/person/taxes/get-the-taxes-right/shares-and-securities/about-shares-and-securities/digital-currency/tax-regulations-virtual-currency/)
 
 FIFO does not apply to virtual currency. When several units of the same currency are held, identify which units were actually sold and use those units' input values; record the choice. Currency effects from converting to NOK are part of the gain or loss; do not calculate a separate currency gain. [Selling](https://www.skatteetaten.no/en/person/taxes/get-the-taxes-right/shares-and-securities/about-shares-and-securities/digital-currency/selling/)
 
@@ -106,7 +106,7 @@ The ordinary individual deadline and the sole-proprietor deadline are in the tab
 
 ## Worked cases
 
-These examples use assumed complete records and illustrative final rounding. They are calculation aids, not taxpayer assessments. The annual shield is not estimated: example shields are established unused balances.
+These examples assume the general 22% ordinary-income regime, outside the northern zone, unless the explicit regional counterfactual says otherwise. The corresponding general share rate is 37.84% (derived: 1.72 × 22%). These examples use assumed complete records and illustrative final rounding. They are calculation aids, not taxpayer assessments. The annual shield is not estimated: example shields are established unused balances.
 
 | Case | Assumed inputs | Expected result | Rule |
 | --- | --- | --- | --- |
@@ -301,7 +301,7 @@ expected:
 
 ### Ordinary custody or ASK: retain versus withdraw
 
-Assume the same eligible investment costs NOK 100,000, is sold for net NOK 130,000, and has an established usable shield of NOK 2,000 under the applicable account rules. In ordinary custody the sale gives taxable gain NOK 28,000 and estimated tax NOK 10,595.20. If the sale proceeds stay inside ASK, current sale tax is NOK 0. If all NOK 130,000 is immediately withdrawn from ASK, taxable withdrawal is NOK 28,000 and the same estimated NOK 10,595.20 arises. Keeping eligible reinvestment funds inside ASK therefore defers this tax; withdrawing everything removes that timing benefit. ASK eligibility, shield and loss timing must still be checked, and transferring an existing ordinary holding into ASK itself realises it. [ASK](https://www.skatteetaten.no/en/person/taxes/get-the-taxes-right/shares-and-securities/about-shares-and-securities/share-savings-account-ask/) [Rate](https://www.skatteetaten.no/en/rates/factor-for-upward-adjustment-of-gainloss-or-dividend-on-shares/)
+Assume the same eligible investment costs NOK 100,000, is sold for net NOK 130,000, and has an established usable shield of NOK 2,000 under the applicable account rules. In ordinary custody the sale gives taxable gain NOK 28,000 and estimated tax NOK 10,595.20. If the sale proceeds stay inside ASK, current sale tax is NOK 0. If all NOK 130,000 is immediately withdrawn from ASK, taxable withdrawal is NOK 28,000 and the same estimated NOK 10,595.20 arises. For the same established taxable amount under the qualifying northern-zone 18.5% regime, ordinary custody or full ASK withdrawal instead gives NOK 8,909.60 (derived: 28,000 × 1.72 × 18.5%); retention inside ASK still gives no current sale tax. [2026 tax decision §§ 3-2, 3-8](https://lovdata.no/dokument/STV/forskrift/2025-12-18-2747), [Tax Act § 2-36(5)](https://lovdata.no/dokument/NL/lov/1999-03-26-14/*) and [ordinary-income rates](https://www.skatteetaten.no/satser/alminnelig-inntekt/). Keeping eligible reinvestment funds inside ASK therefore defers this tax; withdrawing everything removes that timing benefit. ASK eligibility, shield and loss timing must still be checked, and transferring an existing ordinary holding into ASK itself realises it. [ASK](https://www.skatteetaten.no/en/person/taxes/get-the-taxes-right/shares-and-securities/about-shares-and-securities/share-savings-account-ask/) [Rate](https://www.skatteetaten.no/en/rates/factor-for-upward-adjustment-of-gainloss-or-dividend-on-shares/)
 
 ```oa-check
 name: Norway 2026 ordinary sale versus ASK retained or fully withdrawn
@@ -316,6 +316,8 @@ steps:
   - ask_full_withdrawal_taxable: max(net_sale - capital - established_shield, 0)
   - ask_full_withdrawal_tax: ask_full_withdrawal_taxable * 1.72 * 0.22
   - current_tax_deferred: ordinary_tax - ask_retained_tax
+  - northern_zone_tax: ordinary_taxable * 1.72 * 0.185
+  - regional_difference: ordinary_tax - northern_zone_tax
 expected:
   ordinary_taxable: 28000
   ordinary_tax: 10595.20
@@ -323,6 +325,8 @@ expected:
   ask_full_withdrawal_taxable: 28000
   ask_full_withdrawal_tax: 10595.20
   current_tax_deferred: 10595.20
+  northern_zone_tax: 8909.60
+  regional_difference: 1685.60
 ```
 
 ## When to refuse or refer
@@ -338,7 +342,7 @@ expected:
 |---|---|---|
 | Read for scope, input value/continuity, per-share annual and unused shield, disposal cap/expiry; exclude its stale exit-tax footer | https://www.skatteetaten.no/en/person/taxes/get-the-taxes-right/shares-and-securities/about-shares-and-securities/the-shareholder-model/ | 2026-11-15 |
 | Read for crypto realisations, 22% capital treatment, documentary expenses, fraud and bankruptcy | https://www.skatteetaten.no/en/person/taxes/get-the-taxes-right/shares-and-securities/about-shares-and-securities/digital-currency/tax-regulations-virtual-currency/ | 2026-11-15 |
-| Read for 2026 share uplift/rates and ordinary capital rate | https://www.skatteetaten.no/en/rates/factor-for-upward-adjustment-of-gainloss-or-dividend-on-shares/ | 2026-11-15 |
+| Read for general share uplift/rates, Tax Decision § 3-2 regional owner-income rates, Tax Act § 2-36(5) local-tax exclusion and general/regional ordinary rates | https://www.skatteetaten.no/en/rates/factor-for-upward-adjustment-of-gainloss-or-dividend-on-shares/ ; https://lovdata.no/dokument/STV/forskrift/2025-12-18-2747 ; https://lovdata.no/dokument/NL/lov/1999-03-26-14/* ; https://www.skatteetaten.no/satser/alminnelig-inntekt/ | 2026-11-15 |
 | Read for current return workflow, extension, resubmission, amendment and personal/ENK deadlines | https://www.skatteetaten.no/en/person/taxes/tax-return/tax-return-person/ | 2026-11-15 |
 | Read for Tax Administration Regulation §§ 8-2-3 and 8-2-5: deadline categories and extension conditions | https://lovdata.no/dokument/SF/forskrift/2016-11-23-1360/* | 2026-11-15 |
 | Read for ordinary own-home ownership/use boundary | https://www.skatteetaten.no/ordbok/skatt-pa-gevinst-ved-realisasjon-av-fast-eiendom/ | 2026-11-15 |
