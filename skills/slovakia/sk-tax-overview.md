@@ -1,56 +1,69 @@
 ---
 name: sk-tax-overview
-description: "Tax overview for Slovakia, tax year 2026: the main taxes and their headline figures in one place, each tied to the Slovak law. Covers the tax year, the Financial Administration, residence (permanent residence, home or 183 days; seat or place of effective management for companies), personal income tax at 19%, 25%, 30% and 35% with the 2026 band amounts, the 15% rate for small businesses, corporate income tax at 10%, 21% or 24% set by taxable revenue, VAT at 23%, 19% and 5% with the EUR 50,000 and EUR 62,500 registration limits, and the return dates. Trigger phrases: Slovakia tax overview, how is Slovakia taxed, Slovak tax rates 2026, Finančná správa. Out of scope (detail lives in the sibling skills): slovakia-pit, sk-corporate-income-tax, slovakia-vat-return, slovakia-vat-registration-4-7-7a, sk-payroll-social, sk-cross-border, sk-transfer-pricing, sk-company-formation."
-version: 0.2
+description: "Route a Slovakia 2026 question to the owning personal, company, VAT, payroll/social, cross-border, transfer-pricing or formation skill. Establish the period, residence, income/transaction and form before computing; preserves the owners' unresolved boundaries without duplicating their figures."
+version: 0.3
 jurisdiction: SK
 category: international
 tax_year: 2026
-last_updated: 2026-10-30
+last_updated: 2026-11-15
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+type: router
 ---
 
 # Slovakia Tax Overview
 
-## Slovak tax system at a glance
+Load the skill for the person's job and facts before using any rate, threshold, deadline or form. This page routes the 2026 pack; it does not own a second set of tax figures. The Financial Administration is the official tax-authority entry point: [Finančná správa SR](https://www.financnasprava.sk/sk/titulna-stranka).
 
-Slovakia (the Slovak Republic) is an EU member state using the euro, with a self-assessment tax system run by the Financial Administration. The figures below are for the 2026 tax year, under the Income Tax Act (Act No. 595/2003 Coll.) and the VAT Act (Act No. 222/2004 Coll.) in their versions in force from 1 January 2026.
+## Ask the client first
 
-This page is the summary. Each line points to the skill that holds the full rules:
-- Personal income tax: [slovakia-pit](slovakia-pit.md)
-- Corporate income tax: [sk-corporate-income-tax](sk-corporate-income-tax.md)
-- VAT returns and rates: [slovakia-vat-return](slovakia-vat-return.md)
-- VAT registration: [slovakia-vat-registration-4-7-7a](slovakia-vat-registration-4-7-7a.md)
-- Payroll and social contributions: [sk-payroll-social](sk-payroll-social.md)
-- Residence, non-residents and withholding: [sk-cross-border](sk-cross-border.md)
-- Transfer pricing: [sk-transfer-pricing](sk-transfer-pricing.md)
-- Company formation: [sk-company-formation](sk-company-formation.md)
+- Individual, company, partnership, employer or software user, and which task?
+- Relevant tax/accounting period and actual registration/transaction dates?
+- Residence, permanent home/seat, management, foreign work/income and treaty countries?
+- Income categories, taxable revenue, taxable supplies, staff and connected transactions?
+- Which records, registrations, return type and current form are available?
+- Does the question fall within a stated unresolved boundary in the owning skill?
 
-**Subsistence minimum used for the 2026 bands.** The personal income tax bands are multiples of the subsistence minimum (životné minimum) in force on 1 January of the tax year (Income Tax Act § 11(2)(a)). For 2026 that is EUR 284.13 a month, the amount set from 1 July 2025 by Measure No. 168/2025 Coll. So 154.8 times is EUR 43,983.32, 212.4 times is EUR 60,349.21 and 264 times is EUR 75,010.32.
+## The method, step by step
 
-- **Standard tax year:** the calendar year, unless the Income Tax Act provides otherwise (§ 2(l)).  _([Income Tax Act (Act No. 595/2003 Coll.)](https://www.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html))_
-- **Currency:** euro (EUR). Slovak tax laws state their amounts in euro.
-- **Tax authority:** Financial Administration of the Slovak Republic (Finančná správa SR), including the tax offices and the Financial Directorate. Tax procedure is governed by the Tax Procedure Code (Act No. 563/2009 Coll.).  _([Financial Administration](https://www.financnasprava.sk/sk/titulna-stranka))_
-- **Who is resident:** an individual with permanent residence or a home in Slovakia, or who usually stays there, meaning at least 183 days in the calendar year, counting every started day (§ 2(d)(1)). A company with its seat or place of effective management in Slovakia (§ 2(d)(2)).  _([Income Tax Act](https://www.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html))_
-- **Residence basis of taxation:** a resident is taxed on income from Slovak and foreign sources (§ 2(f)); a non-resident only on income from Slovak sources (§ 2(g)). See [sk-cross-border](sk-cross-border.md).  _([Income Tax Act](https://www.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html))_
-- **Personal income tax rates (2026):** on the tax base from employment, from rent and the use of intellectual property, and from other income (§ 4(1)(a), covering income under § 5, § 6(3) and (4) and § 8): 19% up to EUR 43,983.32; 25% on the part above that up to EUR 60,349.21; 30% on the part above that up to EUR 75,010.32; 35% on the part above EUR 75,010.32 (§ 15(a)(1)).  _([Income Tax Act](https://www.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html); [subsistence minimum from 1 July 2025](https://employment.gov.sk/sk/rodina-socialna-pomoc/hmotna-nudza/zivotne-minimum/vyska-zivotneho-minima-od-1-jula-2025.html))_
-- **Business income of individuals (2026):** 15% on the business tax base (§ 4(1)(b)) where business revenue under § 6(1) and (2) is not above EUR 100,000 in the year; above EUR 100,000 the four bands apply (§ 15(a)(2) and (3)). Capital income in the § 7 special base: 19% (§ 15(a)(4)).  _([Income Tax Act](https://www.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html))_
-- **Corporate income tax rates (2026):** the rate is set by the company's taxable revenue (zdaniteľné príjmy (výnosy)) for the year and applies to the whole tax base after losses: 10% if revenue is not above EUR 100,000; 24% if revenue is above EUR 5,000,000; 21% otherwise (§ 15(b)(1)). Minimum tax and the other special rates: see [sk-corporate-income-tax](sk-corporate-income-tax.md).  _([Income Tax Act](https://www.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html))_
-- **Does Slovakia have VAT?** Yes (daň z pridanej hodnoty, DPH). Standard rate 23%; reduced rates 19% and 5% for the goods and services in Annexes 7 and 7a (§ 27(1) to (3)). Which goods sit at which rate: see [slovakia-vat-return](slovakia-vat-return.md).  _([VAT Act (Act No. 222/2004 Coll.)](https://www.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html))_
-- **VAT registration:** a Slovak business becomes a VAT payer from 1 January of the next year once its turnover for a calendar year passes EUR 50,000, or at once on the supply that takes its turnover in the current year above EUR 62,500 (§ 4(1)(a) and (b)). See [slovakia-vat-registration-4-7-7a](slovakia-vat-registration-4-7-7a.md).  _([VAT Act](https://www.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html))_
-- **Personal income tax return deadline:** within three calendar months after the tax year, so 31 March 2027 for 2026, with the tax paid by the same date (§ 49(2)). A notice filed with the tax office before that deadline extends it by up to three full calendar months, or up to six where the income includes foreign-source income; the tax is then due by the new date (§ 49(3)). Not available to a taxpayer in bankruptcy or liquidation.  _([Income Tax Act](https://www.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html))_
-- **Corporate income tax return deadline:** the same rule: within three calendar months after the end of the tax year (31 March 2027 for a calendar 2026 year), tax paid by the same date, extendable by notice by up to three months, or six with foreign-source income (§ 49(2) and (3)).  _([Income Tax Act](https://www.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html))_
-- **VAT return deadline:** the tax period is a calendar month; a payer may choose a calendar quarter once more than 12 calendar months have passed since the end of the month it became a payer and its turnover in the previous 12 consecutive months was below EUR 100,000 (§ 77(1) and (2)). The return is filed and the VAT paid within 25 days after the end of each tax period (§ 78(2)(a)). The control statement (kontrolný výkaz) has the same 25-day deadline (§ 78a(1)).  _([VAT Act](https://www.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html))_
+1. Establish residence and source before assuming worldwide or source-only taxation. Load [sk-cross-border](sk-cross-border.md) for individuals' permanent residence/home/day-count tests, companies' seat/effective-management tests, treaty restrictions and withholding. A domestic residence test alone does not settle a treaty conflict.
+2. Select the income-tax owner. Use [slovakia-pit](slovakia-pit.md) for employment, business/SZČO, rent, capital/other income, progressive bands versus the small-business rate, allowances, flat-rate expenses, child bonus, losses, advances and the actual return. That owner carries the subsistence-minimum derivation and its period, rather than this router. Use [sk-corporate-income-tax](sk-corporate-income-tax.md) for company taxable-revenue rate selection, minimum tax, tax base, deductions, depreciation, losses, interest limitations, advances and the actual corporate return. The rate selector and the taxable base are different inputs.
+3. Separate becoming a VAT payer from registering for a particular transaction. Load [slovakia-vat-registration-4-7-7a](slovakia-vat-registration-4-7-7a.md) for domestic turnover triggers and effective dates, acquisitions, incoming/outgoing services, limited registrations, deregistration and the actual registration form. Load [slovakia-vat-return](slovakia-vat-return.md) for standard/reduced classification, input tax, reverse charge, car restrictions, coefficients, tax periods, returns, control statements, refunds and the actual forms. A registration number alone does not establish full payer status or deduction rights.
+4. For employees or self-employed insurance, load [sk-payroll-social](sk-payroll-social.md). It owns social/health contributions, bases and ceilings, payroll advances/allowances/bonus, registrations, reporting, payment cycles, reconciliation and cross-border employment checks. Establish the insured person's status and actual start date before using a contribution method.
+5. For dependent persons or controlled dealings, add [sk-transfer-pricing](sk-transfer-pricing.md) for relationship/significance tests, methods, adjustments, documentation, return disclosure, CbCR and APAs. Add the cross-border skill where source, treaty or withholding facts also matter.
+6. For choosing or registering a company, load [sk-company-formation](sk-company-formation.md): entity liability, founding routes, paid capital, register documents, court/notary route, fees and follow-up. It separates foundation from the company's effective register date and accounts deposit from return approval. Apply the tax owners after determining the vehicle's actual facts.
+7. For return preparation, load the owner's filing section, current-year official form and instructions. The PIT/CIT owners carry their tax-year/return-form transition and notice-extension conditions; the VAT owners carry the return, payment and control-statement calendar. Do not infer a fixed deadline or use an old XML schema from the tax year's label alone. The filing platform/access must match the actual official instructions; a generic “all returns use eDane” shortcut is insufficient.
+8. Return the selected skill names, established inputs, source/period, calculation where relevant, form/portal and unresolved conditions. For external software, add [slovakia-references](references.md) to evaluate provenance and integration conditions; source code is not tax-law authority.
+
+### Destination map
+
+| Original overview topic | Current owner and handoff |
+|---|---|
+| Tax year and income categories; personal bands and subsistence-minimum multiples; business-rate revenue selector; capital-income treatment | [slovakia-pit](slovakia-pit.md), scope, base and computation sections |
+| Company rate by taxable revenue, minimum tax, return/payment and extensions | [sk-corporate-income-tax](sk-corporate-income-tax.md), method and filing sections |
+| Individual/company residence, worldwide/source basis, foreign income, dividends and withholding | [sk-cross-border](sk-cross-border.md), residence/source and payment methods; PIT/CIT owners for the return |
+| VAT existence, rates and goods/services classification; monthly/quarterly periods; returns/payment and control statements | [slovakia-vat-return](slovakia-vat-return.md), rate classification and filing sections |
+| Domestic VAT turnover triggers and payer-effective dates; other registration categories | [slovakia-vat-registration-4-7-7a](slovakia-vat-registration-4-7-7a.md), category decision and filing sections |
+| Payroll and social/health rates, bases and payment/reporting obligations | [sk-payroll-social](sk-payroll-social.md) |
+| Transfer pricing and entity formation | [sk-transfer-pricing](sk-transfer-pricing.md) and [sk-company-formation](sk-company-formation.md) |
+| Currency and authority | Use EUR inputs in the relevant owner and the official authority link above. The old euro-adoption history is addressed below, outside any tax computation |
+
+## When to refuse or refer
+
+- Facts, period or jurisdiction do not identify an owner: establish them before computing. This router has no independent rates, deadline calculator or worked tax cases.
+- Do not turn an unconfirmed sibling item into a confirmed answer. In particular, the VAT owners retain boundaries for a zero-turnover annual coefficient and a first control-statement breach; the registration owner retains the gross crossing-invoice circularity boundary. Refer those precise issues for resolution.
+- The cross-border owner does not establish the operative suspension boundary for the Russia treaty; do not infer it from an old treaty list or replace it with a blanket punitive withholding rule. The transfer-pricing owner also has stated APA-office identity and foreign deemed-dividend boundaries.
+- A software tool, old form, contribution credit or source-cited draft does not establish accountant approval of an actual filing.
 
 ## Sources
 
-| Source | URL | Read on |
-|---|---|---|
-| Income Tax Act No. 595/2003 Coll., version in force from 1 January 2026: § 2(d), (f), (g), (l), § 11(2), § 15, § 49 (the same sections are unchanged in the version in force from 31 December 2026) | https://www.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html | 2026-10-30 |
-| VAT Act No. 222/2004 Coll., version in force from 1 January 2026 (the next version takes effect on 1 January 2027, so this text governs all of 2026): § 4(1), § 27, § 77, § 78, § 78a | https://www.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html | 2026-10-30 |
-| Ministry of Labour, Social Affairs and Family: subsistence minimum from 1 July 2025 (Measure No. 168/2025 Coll.), EUR 284.13 for one adult | https://employment.gov.sk/sk/rodina-socialna-pomoc/hmotna-nudza/zivotne-minimum/vyska-zivotneho-minima-od-1-jula-2025.html | 2026-10-30 |
-| Financial Administration of the Slovak Republic | https://www.financnasprava.sk/sk/titulna-stranka | 2026-10-30 |
+The tax-law passages, exact figures, read dates and worked cases live in the linked owners. These files were read for routing; this page does not claim fresh legal verification of every protected sibling. The operational source below was opened for this router.
 
-Not yet confirmed: the date Slovakia adopted the euro (on the old page as 1 January 2009; no official source read for this page). Dividend taxation of individuals, minimum corporate tax and payroll rates are left to the sibling skills.
+| Source and scope | URL | Read on |
+|---|---|---|
+| Financial Administration, official authority entry point | https://www.financnasprava.sk/sk/titulna-stranka | 2026-11-15 |
+| ECB, Slovakia cash-changeover page, read to resolve the old unsupported adoption-date item | https://www.ecb.europa.eu/euro/changeover/slovakia/html/index.en.html | 2026-11-15 |
+
+Not yet confirmed: a particular filer's portal access or suitability of an upstream software version for the current return; unresolved items in the linked owners remain unresolved. The old claim that the euro became legal tender on 1 January 2009 is confirmed by the ECB's dated changeover account, but is historical context and not an input to a current tax calculation.
 
 > Contributed by Michael Cutajar.
