@@ -101,7 +101,7 @@ A royalty/FTS label needs actual s.152/s.6 and treaty analysis, including reside
 
 ### Company A and Company B advisory cases retained and corrected
 
-Assume the contract is an ordinary resident advisory service outside specified reduced categories, recipient B is an ATL private company, payer A prescribed, tax year 2026, and the **given gross invoice 1,180,000 already includes any separately assessed sales tax**. This is not an assertion that Karachi advisory services legally bear 18% sales tax.
+Original case: Karachi company A pays Karachi advisory firm B, an ATL private company. Assume the contract is an ordinary resident advisory service outside specified reduced categories, recipient B is an ATL private company, payer A prescribed, tax year 2026, and the **given gross invoice 1,180,000 already includes any separately assessed sales tax**. This is not an assertion that Karachi advisory services legally bear 18% sales tax.
 
 ```oa-check
 name: CompanyA pays CompanyB ordinary advisory service
@@ -133,7 +133,7 @@ The former 110,000/220,000 results combined an excluded-sales-tax base and super
 
 ### Earlier UK royalty case retained as a verification hold
 
-The earlier £100,000 UK-resident royalty case remains open. Statutory charge, treaty article/protocol, beneficial ownership, PE facts and conversion evidence must be established. The former£12,500 result relied on an unverified 12.5% treaty rate and is not a cleared computation. Do not replace it with another guessed treaty cap.
+The earlier Pakistan-company payment of £100,000 royalty to a UK-resident IP owner, with TRC and beneficial-ownership declaration on file, remains open. Statutory charge, treaty article/protocol, beneficial ownership, PE facts and conversion evidence must be established. The former£12,500 result relied on an unverified 12.5% treaty rate and is not a cleared computation. Do not replace it with another guessed treaty cap.
 
 ### Importer X finished-goods case retained with complete base
 
@@ -156,6 +156,8 @@ expected:
 
 ### Earlier individual-landlord rent case retained and corrected
 
+The original company tenant pays an ATL individual landlord 2,400,000 annual rent; the example assumes twelve equal payments.
+
 ```oa-check
 name: Annual rent2400000 to ATL individual landlord
 inputs:
@@ -171,7 +173,7 @@ expected:
 
 ### Company X certificate case retained conditionally
 
-Assume an actual valid 2% certificate lawfully applies to Company Y's 500,000 payment to Company X in the stated period. Verify the statutory certificate route and all limits first; no general 2% entitlement is asserted.
+Assume an actual valid 2% certificate lawfully applies during 1 July 2025-30 June 2026 to prescribed-person Company Y's 500,000 service payment to Company X in the stated period. Verify the statutory certificate route and all limits first; no general 2% entitlement is asserted.
 
 ```oa-check
 name: Apply an evidenced certificate rate
@@ -200,8 +202,8 @@ Current s.182A surcharge amounts are company 100,000/AOP 50,000/individual 25,00
 | Source and actual portions read | Official URL | Read on |
 |---|---|---|
 | Read for Finance Act 2026 amendment 47(a), Tenth Schedule rule 1A omission, distinguished from historical tax-year-2026 event rules | https://download1.fbr.gov.pk/Docs/20266291261044366FinanceAct2026.pdf | 2026-11-15 |
-| Read for Income Tax Rules 42-44 operative payment, non-salary certificate, annual salary statement and requested reconciliation branches on 2026-11-14 | https://download1.fbr.gov.pk/Docs/20269211394336470IncomeTaxRules2002.pdf. | 2026-11-14 |
+| Read for Income Tax Rules 42-44 operative payment, non-salary certificate, annual salary statement and requested reconciliation branches on 2026-11-14 | https://download1.fbr.gov.pk/Docs/20269211394336470IncomeTaxRules2002.pdf | 2026-11-14 |
 | Read for ITO ss.71,148-149,152-155,158-159,165,168/170; First Schedule Parts II/III and Tenth Schedule rules 1/10, including adjacent exceptions and omitted historical footnotes | https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf | 2026-11-14 |
 | Read for current 2026 s.165 quarterly statement schedule; use default-date law separately for penalties | https://download1.fbr.gov.pk/Docs/2026724177725705IncomeTaxOrdinanace2001.pdf | 2026-11-14 |
 
-Not yet confirmed: salary-certificate form and case-specific reconciliation notices; royalty/FTS statutory and treaty outcome for the held UK case; all former treaty-grid figures; special s.150IPP/fund/REIT rates/recipient finality, s.151 yield-threshold/finality and separate sukuk division, s.152PE/elections, s.156 prize/non-cash mechanics, s.156A petroleum, s.156B pension withdrawal, brokerage/commission, auctions, vehicles/token tax, electricity, telecom, distributor/retailer collection and property/late-filer rates. The old cash-withdrawal 231 A label, banking 236 P, stockbroker 233 A 0.02% and generic construction 100 D/Third Schedule references require current operative-law confirmation; they are not usable instructions. Preserve these subjects for specialist follow-up rather than transplanting old figures. No claim is made that all old individual/company treatments were correct.
+Not yet confirmed: salary-certificate form and case-specific reconciliation notices; royalty/FTS statutory and treaty outcome for the held UK case; all former treaty-grid figures; special s.150 IPP/fund/REIT rates/recipient finality and bonus-share withholding, s.151 yield-threshold/finality and separate sukuk division, s.152PE/elections, s.156 prize/non-cash mechanics, s.156A petroleum, s.156B pension withdrawal, brokerage/commission, auctions, vehicles/token tax, electricity, telecom, distributor/retailer collection and property/late-filer rates. The old cash-withdrawal 231 A label, banking 236 P, stockbroker 233 A 0.02% and generic construction 100 D/Third Schedule references require current operative-law confirmation; they are not usable instructions. Preserve these subjects for specialist follow-up rather than transplanting old figures. No claim is made that all old individual/company treatments were correct.
