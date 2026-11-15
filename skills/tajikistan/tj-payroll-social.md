@@ -21,7 +21,7 @@ version: 0.1
 
 ## Scope
 
-For ordinary employment payroll and its social tax. The old universal 25% employer plus 1% employee statement is true only for budget institutions. Check special regimes and statutory exclusions before applying the ordinary rates. Individual entrepreneurs, farmers and diplomatic/international-organisation cases require the separate art. 332/334 rules. [Arts. 328-334](https://www.andoz.tj/docs/kodex/TaxKodex.pdf).
+For ordinary payroll of resident workers within art. 328(1) and its social tax; non-resident-worker liability is outside this computation. The old universal 25% employer plus 1% employee statement is true only for budget institutions. Check special regimes and statutory exclusions before applying the ordinary rates. Individual entrepreneurs, farmers and diplomatic/international-organisation cases require the separate art. 332/334 rules. [Arts. 328-334](https://www.andoz.tj/docs/kodex/TaxKodex.pdf).
 
 
 ## Ask the client first
@@ -39,17 +39,17 @@ For ordinary employment payroll and its social tax. The old universal 25% employ
 
 ### Registration and social-insurance identity
 
-For a newly registered entity, the single-window registration process includes tax, statistics and state social-insurance registration and issues the unified identifier. Retain that certificate and verify the employee insurance identifiers needed for reporting; do not assume that payroll can be run without them. The old instruction to make duplicate entity registrations is not the single-window rule. [Registration Law art. 4(2)-(4); Tax Code art. 334(9)](https://investcom.tj/uploads/post_docs/511/FtMoBDqW4mvU.pdf).
+For a newly registered entity, the single-window registration process includes tax, statistics and state social-insurance registration and issues the unified identifier. Retain that certificate and verify the employee insurance identifiers needed for reporting; do not assume that payroll can be run without them. The old instruction to make duplicate entity registrations is not the single-window rule. [Registration Law art. 4(2)-(4)](https://investcom.tj/uploads/post_docs/511/FtMoBDqW4mvU.pdf) and [Tax Code art. 334(9)](https://www.andoz.tj/docs/kodex/TaxKodex.pdf).
 
 
 ### Determine the base, then the rates
 
-The ordinary base is wages, remuneration and other taxable employment benefits before deductions, including applicable benefits in kind. Arts. 329-330 also address civil-law service remuneration. Apply exclusions under art. 329(4) and exemptions under art. 331 before calculating; art. 331 incorporates art. 189(1) exempt income and also addresses specified foreign/diplomatic and state-investment-project cases. The ordinary base provisions do not set an earnings ceiling; do not invent a cap or treat every reimbursement as exempt. [Arts. 329-331](https://www.andoz.tj/docs/kodex/TaxKodex.pdf).
+For the resident-worker categories in art. 328(1), the ordinary base is wages, remuneration and other taxable employment benefits before deductions, including applicable benefits in kind. Arts. 329-330 also address civil-law service remuneration. Apply exclusions under art. 329(4) and exemptions under art. 331 before calculating; art. 331 incorporates art. 189(1) exempt income and also addresses specified foreign/diplomatic and state-investment-project cases. The ordinary base provisions do not set an earnings ceiling; do not invent a cap or treat every reimbursement as exempt. [Arts. 328-331](https://www.andoz.tj/docs/kodex/TaxKodex.pdf).
 
-| Ordinary employer category | Employer social tax rate | Employee social tax rate | Combined rate, derived | Official provision |
+| Ordinary employer category, resident-worker base under art. 328(1) | Employer social tax rate | Employee social tax rate | Combined rate, derived | Official provision |
 |---|---|---|---|---|
-| Budget institution | 25% of the applicable base | 1% of the applicable base | 26% = 25% + 1% | [Art. 332(1)-(2)](https://www.andoz.tj/docs/kodex/TaxKodex.pdf) |
-| Other organisation | 20% of the applicable base | 2% of the applicable base | 22% = 20% + 2% | [Art. 332(1)-(2)](https://www.andoz.tj/docs/kodex/TaxKodex.pdf) |
+| Budget institution, resident-worker base | 25% of the applicable base | 1% of the applicable base | 26% = 25% + 1% | [Arts. 328(1), 332(1)-(2)](https://www.andoz.tj/docs/kodex/TaxKodex.pdf) |
+| Other organisation, resident-worker base | 20% of the applicable base | 2% of the applicable base | 22% = 20% + 2% | [Arts. 328(1), 332(1)-(2)](https://www.andoz.tj/docs/kodex/TaxKodex.pdf) |
 
 Employer social tax is an employer cost, while employee social tax is withheld from pay. Compute each separately on the eligible base. Load [tj-income-tax](tj-income-tax.md) for the income-tax category, allowable employee-social-tax deduction and personal allowance; the old payroll instruction to withhold a universal resident income-tax rate is superseded. [Arts. 191(6), 330, 332, 334(1)](https://www.andoz.tj/docs/kodex/TaxKodex.pdf).
 
@@ -58,7 +58,7 @@ Employer social tax is an employer cost, while employee social tax is withheld f
 
 Prepare an employee schedule containing gross cash pay, taxable benefits, excluded/exempt items and reasons, social-tax base, employer tax, employee tax, income-tax computation, net pay and bank payment. Net cash pay equals cash wages less employee social tax and income tax, adjusted for documented other deductions; employer cost includes the employer social tax. These working-paper columns are a preparation method, not a claim about live portal box numbers.
 
-The ordinary social-tax period is the calendar month. File the unified income/social-tax declaration and pay by the 15th of the following month under art. 334(5). Separately, art. 236(5)-(6) requires remittance when bank funds are obtained for wages and prohibits bank release without prior income/social-tax payment. Plan for the earlier applicable payment event, rather than treating the return date as a universal payment deferral. [Arts. 236(5)-(6), 333-334](https://www.andoz.tj/docs/kodex/TaxKodex.pdf).
+The ordinary social-tax period is the calendar month. File the unified income/social-tax declaration and pay by the 15th of the following month under art. 334(5). Separately, art. 236(5)-(6) requires remittance when bank funds are obtained for wages and prohibits bank release without prior income/social-tax payment. Plan for the earlier applicable payment event, rather than treating the return date as a universal payment deferral. [Arts. 236(5)-(6), 333-334](https://www.andoz.tj/docs/kodex/TaxKodex.pdf). For Code filing/payment deadlines, day periods are calendar days unless working days are specified; if the final day is a holiday or non-working day, the deadline moves to the following working day. [Art. 4(6)-(7)](https://www.andoz.tj/docs/kodex/TaxKodex.pdf).
 
 Social tax is paid to the budget and the tax authorities control collection. The Social Insurance and Pensions Agency participates in the reporting rules. Keep pension/social-insurance records distinct from the tax remittance: the old generic State Social Protection Fund label is not a verified payment-account instruction. Obtain the current recipient account and payment reference from the competent authority. [Art. 334(2), (8)-(9)](https://www.andoz.tj/docs/kodex/TaxKodex.pdf).
 
@@ -134,10 +134,9 @@ Stop if employer category, residence, main job, taxable benefit or exemption is 
 
 | Official source | Read for | Date read |
 |---|---|---|
-| [Tax Committee, current consolidated Tax Code](https://www.andoz.tj/docs/kodex/TaxKodex.pdf) | Read for arts. 186, 189(1), 191(6), 236, 241(1), 328-334; ordinary categories, base, exemptions, payment and reporting. | 2026-11-15 |
+| [Tax Committee, current consolidated Tax Code](https://www.andoz.tj/docs/kodex/TaxKodex.pdf) | Read for arts. 4(6)-(7), 186, 189(1), 191(6), 236, 241(1), 328-334; ordinary categories, base, exemptions, payment and reporting. | 2026-11-15 |
 | [Investment Committee, consolidated State Registration Law](https://investcom.tj/uploads/post_docs/511/FtMoBDqW4mvU.pdf) | Read for art. 4, single-window tax/statistics/social-insurance registration. | 2026-11-15 |
 | [Social Insurance and Pensions Agency, Pensions Law](https://nafaka.tj/46-t-dar-borai-nafaaoi-suurtav-va-davlat.html) | Read for arts. 11, 13-14, ordinary ages and neighbouring early/incomplete-record exceptions. | 2026-11-15 |
 | [Social Insurance and Pensions Agency, June 2026 amendment No. 2281](https://nafaka.tj/563-onuni-umurii-toikiston-oid-ba-vorid-namudani-tajirot-ba-onuni-umurii-toikiston-dar-borai-nafaaoi-suurtav-va-davlat.html) | Read for entire amending law; no change to art. 13 age conditions. | 2026-11-15 |
 
 Not yet confirmed: Current unified-declaration fields, payment-account references and individual insurance-registration workflow; exact allocation of social tax between pension, insurance and employment programmes; special-regime relief and individual pension awards. Do not use the old fund label as a payment destination.
-

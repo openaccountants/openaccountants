@@ -66,4 +66,3 @@ Stop if the taxpayer, period, source, residence or evidence is unresolved. Refer
 | [Tax Committee, current consolidated Tax Code](https://www.andoz.tj/docs/kodex/TaxKodex.pdf) | Read for arts. 14, 180-182, 240, 397-399; source, period, transition and commencement context. | 2026-11-15 |
 
 Not yet confirmed: A complete transfer-pricing or cross-border skill; client-specific special regimes; live form fields and financial-reporting framework. Headline rates and deadlines belong to the linked owning skills and are not duplicated here.
-

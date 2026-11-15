@@ -23,7 +23,7 @@ version: 0.1
 
 Use for an ordinary limited liability company (LLC) and the state-registration handoff. An LLC is a company whose participants generally risk their contributions rather than answer for its obligations; the unpaid-contribution and other statutory liability exceptions still matter. Formation in regulated banking, insurance or investment sectors needs the sector law. [LLC Law arts. 1-2](https://investcom.tj/uploads/post_docs/492/ZYRjrIc2yg5e.pdf).
 
-Choose the legal vehicle before preparing this dossier: LLC, joint-stock company, individual entrepreneur, or foreign branch/representative office. This skill executes the ordinary LLC route only. The Registration Law separately covers entrepreneurs and foreign branches/representative offices; it is not a substitute for their legal-form, licensing, immigration or tax analysis. [Registration Law arts. 1-2](https://investcom.tj/uploads/post_docs/511/FtMoBDqW4mvU.pdf).
+Choose the legal vehicle before preparing this dossier: LLC, joint-stock company, individual entrepreneur, or foreign branch/representative office. This skill executes the ordinary LLC route only. The Registration Law separately covers entrepreneurs and foreign branches/representative offices; it is not a substitute for their legal-form, licensing, immigration or tax analysis. [Registration Law arts. 1-2, 11(1)(4)](https://investcom.tj/uploads/post_docs/511/FtMoBDqW4mvU.pdf) and [LLC Law art. 2](https://investcom.tj/uploads/post_docs/492/ZYRjrIc2yg5e.pdf).
 
 
 ## Ask the client first
@@ -51,7 +51,7 @@ Choose the legal vehicle before preparing this dossier: LLC, joint-stock company
 
 Individuals and legal entities can be participants, subject to art. 8 restrictions. The ordinary sole executive director is a natural person elected by the participants; the law separately permits a management delegation arrangement if the charter allows it. Do not equate a legal-entity shareholder with an ordinary legal-entity director. Obtain local legal review of any delegated/collective management arrangement. [LLC Law arts. 8, 45-47](https://investcom.tj/uploads/post_docs/492/ZYRjrIc2yg5e.pdf).
 
-Founders approve the charter; a sole founder uses its approved charter, while multiple founders also conclude the founding agreement. The documents set shares, contributions, timing and governance. Non-cash contributions require the statutory valuation process, including independent expert valuation under art. 17(2). Prepare these corporate documents even though the charter is not submitted with the registration application. [LLC Law arts. 13-14, 17; Registration Law art. 11(3)](https://investcom.tj/uploads/post_docs/492/ZYRjrIc2yg5e.pdf).
+Founders approve the charter; a sole founder uses its approved charter, while multiple founders also conclude the founding agreement. The documents set shares, contributions, timing and governance. Non-cash contributions require the statutory valuation process, including independent expert valuation under art. 17(2). Prepare these corporate documents even though the charter is not submitted with the registration application. [LLC Law arts. 13-14, 17](https://investcom.tj/uploads/post_docs/492/ZYRjrIc2yg5e.pdf) and [Registration Law art. 11(3)](https://investcom.tj/uploads/post_docs/511/FtMoBDqW4mvU.pdf).
 
 
 ### Build the statutory dossier
@@ -137,4 +137,3 @@ Refer joint-stock/entrepreneur/foreign-branch legal-form comparisons, regulated 
 | [Tax Committee, current consolidated Tax Code](https://www.andoz.tj/docs/kodex/TaxKodex.pdf) | Read for art. 241(8), annual corporate return and financial statements. | 2026-11-15 |
 
 Not yet confirmed: Current electronic-registration screens and form identifiers; the applicable national-accounting versus IFRS framework and financial-reporting detail; sector-specific approvals and a general tax-resident-director requirement or exemption. The old claim that LLCs are the most common form was not supported by an official statistical source. The old approximate US$50 capital equivalent is not a legal threshold and must not be used.
-

@@ -28,7 +28,7 @@ partial:
 
 ## Other jobs and boundaries
 
-[Company formation and entity choice](tj-company-formation.md) prepares the ordinary LLC dossier and routes the other vehicles for legal review. Special regimes, niche incentives, treaty-rate tables, detailed pension awards and sector-specific VAT lists are not supplied as complete computations. Current filing screens must be matched before submission.
+[Company formation and entity choice](tj-company-formation.md) prepares the ordinary LLC dossier and routes the other vehicles for legal review. Special regimes, niche incentives, treaty-rate tables, detailed pension awards, the 2026 Budget Law wheat/oil-processing regime, cocoon/cotton export transition cases and sector-specific VAT lists are not supplied as complete computations. Current filing screens must be matched before submission.
 
 ## Official sources
 

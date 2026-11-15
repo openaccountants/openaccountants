@@ -68,7 +68,7 @@ Other individual taxable income requires its own income/source and deduction ana
 
 ### Filing and payment handoff
 
-Employment withholding has a calendar-month period. The employer files the unified income/social-tax declaration by the 15th of the following month. The payment rule also requires withholding payment when bank funds are obtained for wages; a following-month filing deadline is not permission to delay that payment. [Arts. 236(5)-(6), 240(1), 241(1)](https://www.andoz.tj/docs/kodex/TaxKodex.pdf).
+Employment withholding has a calendar-month period. The employer files the unified income/social-tax declaration by the 15th of the following month. The payment rule also requires withholding payment when bank funds are obtained for wages; a following-month filing deadline is not permission to delay that payment. [Arts. 236(5)-(6), 240(1), 241(1)](https://www.andoz.tj/docs/kodex/TaxKodex.pdf). For Code filing/payment deadlines, day periods are calendar days unless working days are specified; if the final day is a holiday or non-working day, the deadline moves to the following working day. [Art. 4(6)-(7)](https://www.andoz.tj/docs/kodex/TaxKodex.pdf).
 
 The annual return is due by 1 April after the reporting year for persons within art. 241(4), including residents with income not taxed at a Tajik payment source, residents receiving foreign income, the stated foreign-account trigger, and non-residents with taxable Tajik income not withheld at source. A salary-only person is not automatically an annual filer. Individual income-tax payment under art. 243(1) is due by the 15th after the calendar month in which income was received; the old blanket 10 April final-payment instruction is not the individual rule. [Arts. 241(4), 243(1)](https://www.andoz.tj/docs/kodex/TaxKodex.pdf).
 
@@ -135,8 +135,7 @@ Refer residence conflicts, treaties, special entrepreneurial regimes, disputed b
 
 | Official source | Read for | Date read |
 |---|---|---|
-| [Tax Committee, current consolidated Tax Code](https://www.andoz.tj/docs/kodex/TaxKodex.pdf) | Read for arts. 14, 180-183, 186, 189(1)(4), 190-192, 236(4)-(6), 240-243; rate and period distinctions. | 2026-11-15 |
+| [Tax Committee, current consolidated Tax Code](https://www.andoz.tj/docs/kodex/TaxKodex.pdf) | Read for arts. 4(6)-(7), 14, 180-183, 186, 189(1)(4), 190-192, 236(4)-(6), 240-243; rate and period distinctions. | 2026-11-15 |
 | [Parliamentary publication, 2026 State Budget Law](https://sadoimardum.tj/1296-onuni-umurii-toikiston-dar-borai-bueti-davlatii-umurii-toikiston-baroi-soli-2026-2203.html) | Read for art. 24(1), 2026 calculation indicator. | 2026-11-15 |
 
 Not yet confirmed: Live declaration fields and the cashless-expense implementing procedure; the client-specific foreign-account trigger, treaty/foreign-credit computation and special-regime return; detailed non-wage exemption calculations. The earlier 8% low-wage band, 13% resident rate, 25% non-resident rate and TJS 75 allowance are superseded, not alternative 2026 instructions.
-

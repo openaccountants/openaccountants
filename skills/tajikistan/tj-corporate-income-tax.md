@@ -65,7 +65,7 @@ An ordinary business loss may be carried forward for up to 3 years; non-business
 | Annual corporate return and annual accounting statements, including balance sheet | By 1 April after the reporting year | [Art. 241(4), (8)](https://www.andoz.tj/docs/kodex/TaxKodex.pdf) |
 | Final annual computation and payment | By 10 April after the reporting calendar year; credit current payments against annual liability | [Arts. 242(3), 243(6)](https://www.andoz.tj/docs/kodex/TaxKodex.pdf) |
 
-Art. 242(2) permits a different current-payment calculation where current first-quarter gross income is less than 50% of the corresponding prior-year quarter: with quarterly reports, use previous-quarter tax divided by 3, still at least 1% of reporting-month gross income. Confirm eligibility and the relevant quarter before changing the ordinary method. Excess current payments are credited against other liabilities or refunded under art. 242(3); late current payments carry interest under art. 242(4). [Art. 242(2)-(4)](https://www.andoz.tj/docs/kodex/TaxKodex.pdf).
+Art. 242(2) permits a different current-payment calculation where current first-quarter gross income is less than 50% of the corresponding prior-year quarter: with quarterly reports, use previous-quarter tax divided by 3, still at least 1% of reporting-month gross income. Confirm eligibility and the relevant quarter before changing the ordinary method. Excess current payments are credited against other liabilities or refunded under art. 242(3); late current payments carry interest under art. 242(4). [Art. 242(2)-(4)](https://www.andoz.tj/docs/kodex/TaxKodex.pdf). For Code filing/payment deadlines, day periods are calendar days unless working days are specified; if the final day is a holiday or non-working day, the deadline moves to the following working day. [Art. 4(6)-(7)](https://www.andoz.tj/docs/kodex/TaxKodex.pdf).
 
 Prepare separate schedules for gross income, deductible costs, disallowances, capital allowances, exempt income, allowable losses, tax by activity, credits and balance due. Reconcile advances to tax-account evidence. Obtain the current corporate declaration and attachments from the Tax Committee [personal cabinet](https://www.andoz.tj/) or competent office, map the schedules to its current fields and retain the receipt/payment reconciliation. Current fields and penalty calculations are a handoff boundary, not verified in this skill.
 
@@ -142,7 +142,6 @@ Refer special/simplified regimes, incentives, exempt or mixed activities, relate
 
 | Official source | Read for | Date read |
 |---|---|---|
-| [Tax Committee, current consolidated Tax Code](https://www.andoz.tj/docs/kodex/TaxKodex.pdf) | Read for arts. 14(8), 180-183, 189-192, 197, 174, 236-243 and 397(13), including adjacent exceptions. | 2026-11-15 |
+| [Tax Committee, current consolidated Tax Code](https://www.andoz.tj/docs/kodex/TaxKodex.pdf) | Read for arts. 4(6)-(7), 14(8), 180-183, 189-192, 197, 174, 236-243 and 397(13), including adjacent exceptions. | 2026-11-15 |
 
 Not yet confirmed: Live corporate/withholding declaration fields and payment references; client-specific incentive, depreciation, foreign-credit and treaty computations; penalty amounts. No treaty rate table is supplied. The old manufacturing 13% rate is retained only as an expired historical rule.
-
