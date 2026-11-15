@@ -26,13 +26,13 @@ Quick answer: reconcile the supported computations, credits, wealth and payment 
 
 ## Ask the client first
 
-Read the intake, every available upstream schedule and source record first. Reconcile disagreements; ask only facts missing from those records. Capture taxpayer/entity/registration, period/residence, applicable forms, actual payments/withholding, income/assets/liabilities and supporting accounts. Record IRIS access status; do not put credentials in the working paper. Missing identifiers get visible placeholders while reconstruction continues, and prevent final submission readiness where required.
+Read the intake, every available upstream schedule and source record first. Reconcile disagreements; ask only facts missing from those records. Capture taxpayer/entity/registration, business address, principal activity, authorised representative identity/NIC, period/residence, applicable forms, actual payments/withholding, income/assets/liabilities and supporting accounts. Record IRIS access status; do not put credentials in the working paper. Missing identifiers get visible placeholders while reconstruction continues, and prevent final submission readiness where required.
 
 ## The method, step by step
 
 ### Phase 1: scope and upstream manifest
 
-Record each skill's version, tax year, source-check/review status, output and open items. Do not blindly trust an approved but stale sibling or an unreviewed new draft. Individual/AOP returns are under s.114; resident-individual wealth/reconciliation is s.116. Its first proviso also requires every AOP member's wealth/reconciliation statements with the AOP's income return; these statements are distinct from that s.114 return and from the five income heads. Companies have a separate return and accounts analysis. [ss.11,114,116](https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf).
+Record each skill's version, tax year, source-check/review status, output and open items. Do not blindly trust an approved but stale sibling or an unreviewed new draft. Individual/AOP returns are under s.114; resident-individual wealth/reconciliation is s.116. Its first proviso also requires every AOP member's wealth/reconciliation statements with the AOP's income return; these statements are distinct from that s.114 return and from the five income heads. Companies have a separate return and accounts analysis. Test company residence under s.83: incorporation/formation under Pakistan law; control and management situated wholly in Pakistan at any time in the year; or the provincial/local-government branch. Do not substitute the AOP’s wholly-or-partly test. [ss.11,83,114,116](https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf).
 
 | Upstream owner | Consume and reconcile |
 |---|---|
@@ -147,7 +147,7 @@ Preserve R-PK-ASM-1 through 8: missing upstream output (name it and continue sup
 
 Specialist regimes remain petroleum/oil/gas concessions, insurance, banking, modarabas, mutual funds, group taxation ss.59AA/59 B, CFC s.109A, transfer-pricing/local/master/CbCR files, Second Schedule holidays, special zones including Gwadar and KP zones, provincial agricultural tax and other provincial taxes, capital value tax, WWF and WPPF. Refer these; do not silently compute them or imply the pack fully covers them. PDF/XML return generation and ERP integration remain outside the assembly output. The practitioner/taxpayer supplies required audit attachments; this workflow does not create an auditor's opinion.
 
-A blank reviewer attestation must state name, professional body/practising status, review date, schedules/evidence reviewed, unresolved matters, and sign-off. It covers income/charges, credits/CPRs, sales-tax/payroll/gains/entity/wealth cross-checks, citations, deadlines and ATL follow-up. Do not prefill a confirmation that a return is ready. Appropriate local professional review remains distinct from AI source checking. Verify the practitioner’s actual Pakistan practising/representation authority; an ICAP, ICMAP or ACCA membership label alone is not that authority.
+A blank reviewer attestation must state name, professional body/membership number/practising status, review date, schedules/evidence reviewed, unresolved matters, and sign-off. It covers income/charges, credits/CPRs, sales-tax/payroll/gains/entity/wealth cross-checks, citations, deadlines and ATL follow-up. Do not prefill a confirmation that a return is ready. Appropriate local professional review remains distinct from AI source checking. Verify the practitioner’s actual Pakistan practising/representation authority; an ICAP, ICMAP or ACCA membership label alone is not that authority.
 
 ## Completion checklist
 

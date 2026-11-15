@@ -53,19 +53,19 @@ Zero-rate, exemption, outside-scope, nonclaimable input and provisional-unverifi
 
 | Statement pattern retained | Initial classification and required evidence |
 |---|---|
-| HBL/HABIBBANK, UBL/UNITEDBANK, MCB/MUSLIMCOMMERCIAL, ALLIEDBANK, BANKALFALAH, MEEZANBANK, STANDARDCHARTEREDPK | Separate account transfer/principal from actual fee; bank fees can be provincial services, so do not label all financial services exempt |
+| HBL / HABIB BANK, UBL / UNITED BANK, MCB / MUSLIM COMMERCIAL, ALLIED BANK, BANK ALFALAH, MEEZAN BANK, STANDARD CHARTERED PK | Separate account transfer/principal from actual fee; bank fees can be provincial services, so do not label all financial services exempt |
 | INTEREST/LOAN/REPAYMENT | Separate principal/interest/fees and own financing from underlying trade; route income/withholding separately; a description alone establishes no sales-tax credit |
-| JAZZCASH/JAZZCASH, EASYPAISA/EASYPAISA, NAYAPAY/SADAPAY | Payment channel does not determine underlying goods/service. Separate platform/transfer fee and obtain actual invoice; do not universally exempt wallet fees |
-| FBR/FEDERALBOARDOFREVENUE, CUSTOMS/PAKISTANCUSTOMS, SRB/SINDHREVENUE, PRA/PUNJABREVENUE, EOBI/SOCIALSECURITY, SECP | Actual tax/duty/contribution/registration remittance is a control/payment line, not a purchase invoice. Match CPR/GD; recoverable import tax comes from the proper customs evidence, not duplicate bank booking |
+| JAZZCASH / JAZZ CASH, EASYPAISA / EASY PAISA, NAYAPAY / SADAPAY | Payment channel does not determine underlying goods/service. Separate platform/transfer fee and obtain actual invoice; do not universally exempt wallet fees |
+| FBR / FEDERAL BOARD OF REVENUE, CUSTOMS / PAKISTAN CUSTOMS, SRB / SINDH REVENUE, PRA / PUNJAB REVENUE, EOBI / SOCIAL SECURITY, SECP | Actual tax/duty/contribution/registration remittance is a control/payment line, not a purchase invoice. Match CPR/GD; recoverable import tax comes from the proper customs evidence, not duplicate bank booking |
 | K-ELECTRIC/KESC/LESCO/FESCO/IESCO, SSGC/SNGPL | Obtain utility invoice and separate sales tax, income tax, levies and principal; no 18% on the whole bill by pattern |
 | PTCL/JAZZ/ZONG/TELENOR/UFONE | Telecom service/location/rate analysis, actual tax invoice; do not apply federal goods standard automatically |
 | GOOGLE/MICROSOFT/META/AWS, ZOOM/SLACK/CANVA/FIGMA | Determine legal supplier, service/software/goods, recipient/use/location and imported-service liability. No automatic federal 18% self-assessment |
 | AUDIT/CA FIRM/ACCOUNTING, LAW FIRM/ADVOCATE, CONSULTANT/ENGINEERING | Actual professional-service code/location and possible reduced/input/withholding conditions in services skill |
 | SALARY/WAGES/TANKHWAH | Confirm genuine employment and payroll, then outside this sales-tax sale/purchase register; do not exclude contractor services as payroll by label |
-| OWNTRANSFER/INTERNAL | Exclude a supported transfer from sales/purchases, reconcile both sides and avoid duplication |
-| CASHWITHDRAWAL/ATM | Cash-control movement pending supporting expenditure; neither automatically taxable sale nor deductible input |
+| OWN TRANSFER / INTERNAL | Exclude a supported transfer from sales/purchases, reconcile both sides and avoid duplication |
+| CASH WITHDRAWAL / ATM | Cash-control movement pending supporting expenditure; neither automatically taxable sale nor deductible input |
 
-Preserve raw statement descriptions, including Urdu, alongside any translation. HBL/UBL/MCBCSV and wallet exports are usable ingestion inputs; detect currency, debit/credit convention, period, opening/closing balance and duplicates before classification. Keep foreign amounts/rates/dates and actual owner-law conversion evidence; do not apply an invented SBPrate or take a net platform receipt as gross export turnover.
+Preserve raw statement descriptions, including Urdu, alongside any translation. HBL/UBL/MCB CSV and wallet exports are usable ingestion inputs; detect currency, debit/credit convention, period, opening/closing balance and duplicates before classification. Keep foreign amounts/rates/dates and actual owner-law conversion evidence; do not apply an invented SBPrate or take a net platform receipt as gross export turnover.
 
 ## The method, step by step
 
@@ -80,7 +80,7 @@ Preserve raw statement descriptions, including Urdu, alongside any translation. 
 
 ### Earlier domestic goods case retained
 
-The 05 April 2026 DOMESTICBUYER receipt 1,180,000 is assumed supported by an ordinary 18%-tax-inclusive goods invoice, with no further/special tax. This is a conditional owner calculation, not the unknown-rate default.
+The 05 April 2026 DOMESTIC BUYER LTD receipt for Invoice PK-041 manufactured goods 1,180,000 is assumed supported by an ordinary 18%-tax-inclusive goods invoice, with no further/special tax. This is a conditional owner calculation, not the unknown-rate default.
 
 ```oa-check
 name: Domestic goods inclusive invoice
@@ -96,7 +96,7 @@ expected:
 
 ### Earlier Sindh service case retained and corrected
 
-The 10 April 2026 CLIENTCOcase previously used 13% and 226,000 gross. For **the same exclusive value 200,000**, assume a supported ordinary 15% Sindh service with no special rate/election; corrected tax 30,000 andgross 230,000 follow. Do not silently treat the old 226,000 payment as 230,000 cash; reconcile actual invoice/receivable or, if price truly inclusive, apply the actual inclusive-price calculation.
+The 10 April 2026 CLIENT CO consulting-fee case previously used 13% and 226,000 gross. For **the same exclusive value 200,000**, assume a supported ordinary 15% Sindh service with no special rate/election; corrected tax 30,000 and gross 230,000 follow. Do not silently treat the old 226,000 payment as 230,000 cash; reconcile actual invoice/receivable or, if price truly inclusive, apply the actual inclusive-price calculation.
 
 ```oa-check
 name: Sindh ordinary service correction and actual cash reconciliation
@@ -115,7 +115,7 @@ expected:
 
 ### Other historical cases preserved as their actual evidence gates
 
-The 15 April 2026 USIMPORTERINC 5,000,000 goods export has 0 output **only after actual export/zero-rate conditions**; input/refund is a separate test. The 18 April 2026 GOOGLECLOUD 50,000 payment is an imported-service classification hold; the old 9,000 federal 18% assertion is withdrawn. The 25 April 2026 JAZZCASH 50 fee requires its actual invoice/service/authority classification, not the blanket “financial-service exempt” label. None of these transfers creates input credit from bank text alone.
+The 15 April 2026 US IMPORTER INC 5,000,000 textile-goods export has 0 output **only after actual export/zero-rate conditions**; input/refund is a separate test. The 18 April 2026 GOOGLE CLOUD 50,000 April cloud-service payment is an imported-service classification hold; the old 9,000 federal 18% assertion is withdrawn. The 25 April 2026 JAZZCASH 50 transfer fee requires its actual invoice/service/authority classification, not the blanket “financial-service exempt” label. None of these transfers creates input credit from bank text alone.
 
 ## Deadlines, filing and records
 
