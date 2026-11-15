@@ -291,7 +291,7 @@ Advance tax (sections 404 and 408 of the 2025 Act). VDA income enters the advanc
 | Item | Value | Note; https://egazette.gov.in/WriteReadData/2025/265620.pdf |
 | --- | --- | --- |
 | Source | all figures below | https://egazette.gov.in/WriteReadData/2025/265620.pdf |
-| Advance tax payable under section 404 when the section 405 liability, after applicable statutory TDS/TCS/relief/credit reductions, is at least (not gross VDA tax) | INR 10,000 | "is ₹10000 or more"; https://egazette.gov.in/WriteReadData/2025/265620.pdf |
+| Advance tax payable under section 404 when the amount computed under section 405, including its conditional TDS/TCS reduction, is at least (not gross VDA tax) | INR 10,000 | "is ₹10000 or more"; https://egazette.gov.in/WriteReadData/2025/265620.pdf |
 | By 15 June 2026, at least | 15% | "Not less than 15% of such advance tax."; https://egazette.gov.in/WriteReadData/2025/265620.pdf |
 | By 15 September 2026, at least (cumulative) | 45% | "Not less than 45% of such advance tax"; https://egazette.gov.in/WriteReadData/2025/265620.pdf |
 | By 15 December 2026, at least (cumulative) | 75% | "Not less than 75% of such advance tax"; https://egazette.gov.in/WriteReadData/2025/265620.pdf |
