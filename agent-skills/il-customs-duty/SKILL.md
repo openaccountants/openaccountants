@@ -7,249 +7,145 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/il-customs-duty"
   jurisdiction: "IL"
   tax_year: "2026"
-  last_updated: "2026-11-03"
+  last_updated: "2026-11-14"
 ---
 
-# IL Customs Duty
-
-## Israel Customs and Import Duty Skill v1.1
+# Israel: import classification, tax base and landed cost
 
 > **Based on work by [Skills IL](https://github.com/skills-il/tax-and-finance)**, licensed under MIT. Adapted for the OpenAccountants format.
 
-## Section 1: Quick reference
+## Scope
 
-**Quick reference table**
+Prepare a 2026 import working paper for review by an Israeli customs professional/CPA. Separate personal-import eligibility, import legality, classification, customs valuation, origin preference, purchase tax, import VAT and carrier fees. This is not a tariff ruling. Tax amounts are usable only once the actual product, entry date, accepted valuation and applicable tariff/exemption have been established.
 
-| Field | Value |
-| --- | --- |
-| Country | Israel (מדינת ישראל) |
-| Scope | Customs duty, VAT, and purchase tax on imports |
-| Currency | NIS (Israeli New Shekel: ₪) |
-| VAT rate | 18% as at January 2026 (https://www.gov.il/BlobFolder/generalpage/income-tax-guide-knowyourright/he/Guides_IncomeTax_da-2025.pdf, PDF p.140); unverified: that the same rate and base apply on import |
-| Personal import threshold | unverified: USD 75 (as of May 2026: verify before use) |
-| Tariff lookup | Shaar Olami: https://shaarolami-query.customs.mof.gov.il/CustomspilotWeb/en/CustomsBook/Import/Doubt |
-| Official calculator | https://www.gov.il/en/service/customs-tax-calculation-import-by-israelis |
-| Exchange rates | Bank of Israel: https://www.boi.org.il/en/economic-roles/financial-markets/exchange-rates/ |
-| Tax authority | Israel Tax Authority (ITA: רשות המיסים) |
-| Contributor | Open Accountants Community |
+| Quick reference | Rate or threshold and conditions | Official source |
+|---|---|---|
+| Standard VAT | 18% from 1 January 2025; determine exemption/zero-rating and the import tax point separately | ITA Interpretation01/2025, https://www.gov.il/BlobFolder/policy/vat_11/he/vat_represent-info-051224-2.pdf |
+| Ordinary goods import VAT base | Customs value under Customs Ordinance ss.129-134A plus customs duty and other applicable import taxes/levies; s.11(b)/(c) special cases separate | VAT Law s.11, https://www.btl.gov.il/Laws1/00_0022_000000.pdf |
+| Classification information service | Free; service describes a 10-digit customs item and applicant/identical-goods/legal-change limitations; not proof of a universal 8-digit rule | ITA classification service, https://www.gov.il/he/service/classification-of-goods-in-imports |
+| US origin document | Signed US Origin Invoice Declaration replaces the old hard-copy Green Form/Form A from 10 January 2018, subject to origin eligibility | US International Trade Administration, https://www.trade.gov/us-israel-free-trade-agreement |
 
-### Conservative defaults
+## Ask the client first
 
-**Conservative defaults table**
+Obtain importer identity/status and intended personal/family/business use; product material/function/composition, packaging, quantity, brand/model/catalogue; seller and actual origin/manufacturing evidence; invoice, payment and freight/insurance breakdown; Incoterms, currency and entry date; related-party/royalty/assists or valuation adjustments; classification/ruling and live tariff; licences/standards/health/agriculture approvals; carrier/broker charges; origin proof and exporter status; customs assessment and import declaration; VAT registration/taxable use; gifts, immigrant or temporary-import eligibility and prior linked shipments. Unknown facts remain open items.
 
-| Ambiguity | Default |
-| --- | --- |
-| Unknown personal import threshold | unverified: use USD 75; verify via official calculator |
-| Unknown HS code (last 2 digits) | Do not guess: request pre-ruling from Israel Customs |
-| Unknown origin of goods | Apply MFN duty rate (no FTA preference) |
-| Unknown whether EUR.1 is valid | Treat as invalid: apply full duty |
-| Unknown purchase tax rate | Check Shaar Olami for the specific 8-digit code |
+## The method, step by step
 
-## Section 2: Import types
+### Determine the import category before a tax threshold
 
-**Import types table**
+The Personal Import Order s.3 requires import other than through a dealer, not for supply/production/services, in reasonable quantity and for the individual's personal/family use. Its quantity tests, exclusions and authority discretion must be checked for the actual goods; food and regulated products have separate conditions. The order combines consignments sent by the same supplier to the same importer within **72 hours** for its shipment test. A licensing/quantity rule is not a tax exemption, and splitting a purchase does not establish separate tax eligibility ([Personal Import Order ss.2-4](https://apps.economy.gov.il/Apps/PersonalImport/Home/Digital_Order/)).
 
-| Type | Typical importer | Tax treatment |
-| --- | --- | --- |
-| Personal import, small parcel | Consumer ordering online | Exemption threshold applies |
-| Personal import, high-value | Consumer buying jewelry, electronics | Full duty + VAT + purchase tax |
-| Commercial import (B2B) | Osek Murshe importing stock | Full duty + VAT (VAT is recoverable); no threshold exemption |
-| Gift | Individual sending to an Israeli | Treated as personal import, no special exemption |
-| Oleh Hadash belongings | New immigrant | Separate Oleh exemption: consult the Aliyah unit |
+Treat ordinary commercial stock imports, personal high-value parcels, gifts and new-immigrant belongings as separate screens. A commercial dealer's import VAT is not automatically recoverable: it requires a qualifying document and taxable business use under ss.38/41, as explained in [israel-vat](israel-vat.md). A gift or an immigrant certificate does not establish an unlimited import exemption. Refer immigrant baggage/household relief to the actual customs schedule and [il-new-immigrant](il-new-immigrant.md).
 
-### Courier vs postal clearance
+The personal-parcel guidance and official calculator could not be reopened. The old USD 75/USD 500 bands and USD 150 reversal history remain excluded below. Do not quote a tax-free ceiling from a search snippet or the unrelated Personal Import Order's licensing provisions. A higher shipment value does not by itself mean every kind of duty/purchase tax is charged or that all personal-import conditions disappear.
 
-Courier shipments (DHL, FedEx, UPS) are self-cleared by the courier, which bills the importer duty, VAT, and a handling fee. Israel Post parcels go through postal clearance: low-value items clear automatically, items above the threshold get a payment demand before delivery. The tax math is the same; fees and timelines differ.
+### Resolve the current Israeli classification
 
-## Section 3: Personal import threshold
+Describe the goods precisely, then use the official tariff classification and its legal notes for the entry date. Do not transplant the last digits of a US HTS or EU CN code, or turn an illustrative chapter into a final rate. The old chapter 85 electronics and chapter 61 apparel cues are only starting points requiring the actual product. Request classification information through the official service when uncertain; the service says it is free, describes a **10-digit** item, valid for **1 year** subject to legal change, for the applicant and identical described goods only. It does not protect a different importer or product, and does not itself settle valuation, origin or every tax ([classification service](https://www.gov.il/he/service/classification-of-goods-in-imports)).
 
-- **Personal import VAT exemption threshold**: unverified: USD 75 (cost of goods, excluding shipping and insurance)  _(As of May 2026)_
+The older separate commercial pre-ruling page's 8-digit wording could not be reopened. Do not assert that “6 international digits plus 2 Israeli digits” is the complete current declaration format. Retain the actual ruling, product catalogue and all information supplied; obtain a customs professional's confirmation of its scope before relying on it.
 
-**Recent history (unverified):** The threshold was raised to USD 150 via a Smotrich decree in November 2025, then revoked by the Knesset on 24 February 2026, returning to USD 75. **Always verify the current threshold via the official calculator before quoting a number.**
+### Establish valuation, duty and purchase tax separately
 
-**Personal import threshold tax treatment table**
+Use the accepted customs value and legally applicable customs exchange rate, supported by invoice, freight, insurance and required adjustments. The old simple CIF illustration (goods plus freight plus insurance converted to NIS) is arithmetic, not a complete valuation rule or evidence that the Bank of Israel daily clearance-date rate always governs. Separate the product-value threshold test, if applicable, from the import tax base.
 
-| Value range | Tax treatment |
-| --- | --- |
-| Below USD 75 | unverified: no customs, no VAT, no purchase tax |
-| USD 75 – USD 500 (approx) | unverified: VAT + purchase tax typically apply; customs duty often waived for personal imports |
-| Above USD 500 | unverified: full duty + VAT + purchase tax; commercial clearance rules apply |
+Apply the actual tariff duty, purchase-tax method/rate and other levies to their own statutory bases. Do not invent a typical 0%-12% customs range or treat a camera, bag, perfume, electronic item, alcohol, tobacco or passenger car as having a universal rate. Purchase tax can materially affect both cost and VAT base; product-specific rates, exemptions and any statutory valuation uplift must be established. The old formula “purchase tax = value after duty x rate” is not adopted for every item.
 
-- **Shipping and insurance treatment**: unverified: Shipping and insurance are excluded from the personal import threshold test but are included in CIF for commercial imports. Do not mix the two rules.
+For ordinary goods covered by s.11(a), VAT base = accepted customs value + actual customs duty + other applicable import taxes/levies. Section 11(b) has a separate s.26(b) goods rule, and s.11(c) concerns goods exported for repair/renewal/improvement and reimported; those require separate computation. Landed cost then adds the actual broker/carrier/handling charges, distinguishing any VAT on those fees ([VAT Law s.11](https://www.btl.gov.il/Laws1/00_0022_000000.pdf)). Postal/courier clearance routes may use different agents and fees; DHL, FedEx, UPS and Israel Post names do not establish a tax rate or a fixed fee range.
 
-## Section 4: HS code classification
+### Origin preference: agreement, product and proof
 
-- **HS code structure**: Israel uses the international Harmonized System at the 6-digit level plus 2 Israel-specific digits (positions 7 and 8)
+Origin means the applicable agreement's origin rules, not simply the shipping country or invoice seller. Check the actual tariff preference, product rules, production, direct-shipment/non-alteration and documentation conditions before claiming it. A preference claim does not automatically remove purchase tax, VAT or other levies; compute those independently. Missing origin evidence is a reason to withhold the preference claim pending review, not proof of a particular MFN rate.
 
-1. Describe the product: material, function, packaging form, use, brand, model
-2. Start from the 2- or 4-digit HS chapter (e.g., chapter 85 for electronics, chapter 61 for apparel)
-3. Look up the full 8-digit code in Shaar Olami: https://shaarolami-query.customs.mof.gov.il/CustomspilotWeb/en/CustomsBook/Import/Doubt
-4. **Do not guess the last 2 digits**: a US HTS code or EU CN code does NOT translate directly to the Israeli code
+The US official page confirms the FTA entered into force on 1 September 1985 and the US-Israel FTA document route: from 10 January 2018, the exporter/producer completes and signs the US Origin Invoice Declaration instead of the hard-copy Green Form/Form A. This does not waive the agreement's substantive origin conditions ([US official FTA page](https://www.trade.gov/us-israel-free-trade-agreement)). The European Commission confirms the EU-Israel Association Agreement framework and separate agricultural provisions; it does not establish every product's preference or the old bag example's tariff ([EU official overview](https://policy.trade.ec.europa.eu/eu-trade-relationships-country-and-region/countries-and-regions/israel_en)).
 
-For certainty, request a free binding pre-ruling from Israeli Customs with a product description and catalog.
+Do not retain the old universal “Israel never accepts electronic EUR.1; wet ink always required” as an instruction. The Commission's official electronic-certificates annex lists Israel's **Global Gate from 1 April 2024** and an authenticity-check link. This confirms an electronic origin-certificate system, not that any PDF from any partner is acceptable for every import. Verify the agreement, direction, issuing system, authenticity and current receiving-authority conditions. The old EUR 6,000 invoice declaration/approved-exporter and courier-original requirements remain unresolved for the actual transaction ([Commission notice, Annex I](https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ%3AC_202506212)).
 
-## Section 5: Duty, VAT, and purchase tax rates
+## Worked cases
 
-**Duty, VAT, purchase tax rates table**
+### Camera: conditional accepted value, no assumed tariff exemption
 
-| Tax | Typical range | Notes |
-| --- | --- | --- |
-| Customs duty | unverified: 0–12% (many goods duty-free under MFN bindings) | Varies by HS code |
-| VAT | 18% standard (as at January 2026) | unverified: applied on CIF + duty + purchase tax |
-| Purchase tax (Mas Kniya: מס קנייה) | Only on specific items | Alcohol, tobacco, perfumes, some electronics, passenger cars: rates can be very high |
-
-**Purchase tax is NOT a small rounding item.** Alcohol and tobacco can carry rates in the hundreds of percent.
-
-## Section 6: Landed cost calculation
-
-The three taxes are calculated on a cascading base:
-
-### 6.1 CIF value
-
-- **CIF value formula**: CIF (NIS) = (product price + shipping + insurance) × USD-to-NIS rate  _(Israel Customs values goods at CIF: cost + insurance + freight.)_
-- **Exchange rate to use**: Use the Bank of Israel daily rate for the clearance date.
-
-### 6.2 Cascading tax formula
-
-- **Cascading tax formula** (unverified: the import VAT base): Duty            = CIF × duty rate Base after duty = CIF + duty Purchase tax    = base after duty × purchase tax rate Base for VAT    = base after duty + purchase tax VAT             = base for VAT × 0.18 Landed cost     = CIF + duty + purchase tax + VAT + broker fees + handling
-
-### 6.3 Worked example: personal import above threshold
-
-**Scenario:** Camera from Amazon US, USD 200 + USD 20 shipping.
-
-**Worked example table**
-
-| Line | Amount |
-| --- | --- |
-| Product price | USD 200 |
-| Shipping | USD 20 |
-| CIF (assuming USD/NIS 3.65) | NIS 803 |
-| Customs duty (0% for digital cameras under MFN) | NIS 0 |
-| Purchase tax (check HS code: typically 0% for cameras) | NIS 0 |
-| VAT (18% on NIS 803) | NIS 145 |
-| Broker/handling fee (typical parcel) | NIS 100–400 |
-| **Estimated total landed cost** | **~NIS 1,048–1,348** |
-
-## Section 7: Free trade agreement (FTA) preferences
-
-**FTA preferences table**
-
-unverified: every row and the EUR.1 rules below; no customs authority page or agreement text was opened in this refresh.
-
-| Origin | Agreement | Origin proof required |
-| --- | --- | --- |
-| United States | US-Israel FTA (1985) | US Origin Invoice Declaration on the commercial invoice |
-| European Union | EU-Israel Association Agreement | EUR.1 movement certificate, or invoice declaration under €6,000 |
-| United Kingdom | UK-Israel Trade and Partnership Agreement (2019) | EUR.1 movement certificate, or invoice declaration under €6,000 |
-| Canada | Modernized CIFTA (September 2019) | Form B239 certificate of origin |
-| EFTA (CH, NO, IS, LI) | EFTA-Israel Free Trade Agreement | EUR.1 movement certificate |
-| Mercosur (BR, AR, UY, PY) | Mercosur-Israel FTA (in force June 2010) | Mercosur-Israel certificate of origin |
-
-A valid origin proof can eliminate the customs duty (but NOT VAT or purchase tax):
-
-### EUR.1 requirements
-
-- **EUR.1 signature requirement**: Must carry a wet-ink (original) signature: Israel does NOT accept electronically signed EUR.1 certificates
-- **EUR.1 above €6,000**: For shipments above €6,000, an EUR.1 stamped by the origin country's customs is required
-- **EUR.1 below €6,000**: For below €6,000, an invoice declaration by a non-approved exporter is sufficient
-- **Approved-exporter status**: For repeat shipments, the exporter should apply for approved-exporter status so invoice declarations cover any value
-
-Plan courier time for the original document to arrive
-
-### Worked example: EU commercial import with EUR.1
-
-**Scenario:** 50 Italian leather bags, CIF €12,000, HS 4202.21.xx.
-
-**EUR.1 worked example table**
-
-| Line | Without EUR.1 | With valid EUR.1 |
-| --- | --- | --- |
-| CIF | €12,000 | €12,000 |
-| Duty (unverified: 6–12% typical for leather bags) | €720–1,440 | €0 (waived) |
-| Purchase tax | Typically 0% | 0% |
-| VAT (18% on CIF + duty) | €2,290–2,419 | €2,160 |
-| **Savings from EUR.1** |: | **€720–1,440 duty saved** |
-
-Since CIF > €6,000, an EUR.1 movement certificate stamped by Italian customs is required (invoice declaration alone insufficient unless exporter holds approved-exporter status).
-
-## Section 8: Common errors
-
-**Common errors table**
-
-| Error | Consequence |
-| --- | --- |
-| Using US or EU HS code directly | Last 2 digits are Israel-specific: wrong code = wrong duty rate |
-| Applying old personal import threshold (USD 150) | unverified: reverted to USD 75 in February 2026 |
-| Including shipping in personal threshold test | unverified: shipping is excluded from the USD 75 test |
-| Forgetting cascading tax calculation | VAT is on CIF + duty + purchase tax, not on product price alone |
-| Accepting electronic EUR.1 | unverified: Israel requires wet-ink original |
-| Assuming FTA removes all taxes | FTA removes duty only; VAT and purchase tax still apply |
-| Underestimating purchase tax | Alcohol, tobacco, cars can have very high purchase tax rates |
-
-## Section 9: Tier 2 items (require professional input)
-
-**Tier 2 items table**
-
-| Item | Why it needs a professional |
-| --- | --- |
-| Binding HS classification pre-ruling | Complex product classification |
-| Temporary import (ATA Carnet) | Different rules for goods temporarily entering Israel |
-| Eilat free zone imports | Special zero-VAT zone rules |
-| Oleh Hadash belongings exemption | Separate exemption schedule and eligibility rules |
-| Anti-dumping duties | Certain goods from specific countries carry additional duties |
-| Agricultural imports | Seasonal quotas and variable levies may apply |
-
-## Section 10: Reference material
-
-**Reference material table**
-
-| Resource | Reference |
-| --- | --- |
-| Israel Tax Authority | https://www.gov.il/en/departments/israel_tax_authority |
-| Personal import calculator | https://www.gov.il/en/service/customs-tax-calculation-import-by-israelis |
-| Shaar Olami tariff lookup | https://shaarolami-query.customs.mof.gov.il/CustomspilotWeb/en/CustomsBook/Import/Doubt |
-| EU-Israel trade relationship | https://policy.trade.ec.europa.eu/eu-trade-relationships-country-and-region/countries-and-regions/israel_en |
-| US-Israel FTA | https://www.trade.gov/us-israel-free-trade-agreement |
-| Bank of Israel exchange rates | https://www.boi.org.il/en/economic-roles/financial-markets/exchange-rates/ |
-| CIFTA rules of origin | https://www.cbsa-asfc.gc.ca/publications/dm-md/d11/d11-5-6-eng.html |
-
-## Recomputed checks (2026)
+Retain the Amazon US camera, USD 200 goods plus USD 20 shipping, no insurance. **Assume** customs accepts this USD 220 value, the applicable customs conversion rate is NIS 3.65/USD, the actual duty and purchase tax are zero, and ordinary 18% import VAT applies. Accepted NIS value is NIS 803; VAT NIS 144.54; subtotal NIS 947.54. If the independently quoted all-in clearance fee is NIS 100 or NIS 400, total cash is NIS 1,047.54 or NIS 1,347.54. These fees/rates are assumed scenario inputs, not verified typical fees, camera tariff or personal-import exemption. VAT recovery is a separate test.
 
 ```oa-check
-name: VAT on base NIS 803
+name: Conditional camera valuation and fee sensitivity
 inputs:
-  b: 803
+  goods_usd: 200
+  freight_usd: 20
+  confirmed_fx: 3.65
+  actual_duty: 0
+  actual_purchase_tax: 0
 steps:
-  - v: b*0.18
+  - customs_value: (goods_usd+freight_usd)*confirmed_fx
+  - vat_base: customs_value+actual_duty+actual_purchase_tax
+  - import_vat: vat_base*0.18
+  - subtotal: vat_base+import_vat
+  - total_low_fee: subtotal+100
+  - total_high_fee: subtotal+400
 expected:
-  v: 144.54
+  customs_value: 803
+  import_vat: 144.54
+  subtotal: 947.54
+  total_low_fee: 1047.54
+  total_high_fee: 1347.54
 ```
 
+### Italian bags: duty preference versus import VAT cash
+
+Retain 50 Italian leather bags and the old illustrative HS 4202.21.xx, value EUR 12,000. That incomplete code is **not a classification**. For comparison only, assume an accepted converted customs value of NIS 48,000 (assumed NIS 4/EUR), ordinary 18% VAT, no purchase tax/other levy, and a verified non-preferential duty of 6% versus a separately valid zero-duty preference. Duty is NIS 2,880 versus zero; VAT NIS 9,158.40 versus NIS 8,640; import-tax cash difference NIS 3,398.40. Of this, duty difference is NIS 2,880 and VAT cash difference NIS 518.40. A fully eligible dealer's later VAT recovery can change economic cost, not the customs cash payment.
+
+The old EUR illustration at assumed 6%-12% duty gave EUR 720-1,440 duty, VAT EUR 2,289.60-2,419.20 versus EUR 2,160 at zero duty; these remain arithmetic equivalents, not verified leather-bag tariffs or permission to pay Israeli taxes in EUR. The EUR 6,000 document assertion is not used to approve the preference.
+
 ```oa-check
-name: VAT on CIF 12,000 plus 6% duty
+name: Conditional preference changes duty and VAT cash
 inputs:
-  c: 12000
+  eur_value: 12000
+  confirmed_fx: 4
+  assumed_duty_rate: 0.06
 steps:
-  - d: c*0.06
-  - v: (c+d)*0.18
+  - customs_value: eur_value*confirmed_fx
+  - ordinary_duty: customs_value*assumed_duty_rate
+  - ordinary_vat: (customs_value+ordinary_duty)*0.18
+  - preferred_duty: 0
+  - preferred_vat: customs_value*0.18
+  - cash_difference: ordinary_duty+ordinary_vat-preferred_duty-preferred_vat
+  - vat_difference: ordinary_vat-preferred_vat
 expected:
-  v: 2289.6
+  customs_value: 48000
+  ordinary_duty: 2880
+  ordinary_vat: 9158.40
+  preferred_vat: 8640
+  cash_difference: 3398.40
+  vat_difference: 518.40
 ```
+
+## When to refuse or refer
+
+Refer uncertain product classification/ruling, personal-use quantities, origin proof/preferences, related-party or complex customs valuation, purchase-tax uplifts, alcohol/tobacco/cars, ATA Carnet/temporary imports, Eilat, immigrant belongings, anti-dumping duties and agricultural quotas/seasonal levies. Do not guess a final code, currency rate or threshold to produce a landed-cost number. A customs assessment and input-VAT eligibility are separate reviews.
+
+## Filing and payment
+
+Prepare the applicable import declaration and supporting invoice, transport, origin, licence and valuation records through the authorized customs/broker channel; reconcile assessed duty, purchase tax, import VAT and fees to payments. Retain the accepted declaration/release and any classification/origin decision. For a dealer's VAT input claim, retain the qualifying document in its name and taxable-use evidence for the VAT return. Actual courier/postal processes, calculator results, objection/refund dates and declarations require the live service for that shipment; this skill authorizes no customs submission or payment.
+
+## Completion checklist
+
+Confirm import category and legality, product/ruling scope, current tariff and valuation/currency basis; verify all preference conditions and proof; calculate each tax on its correct base; separate fees and VAT recovery; reconcile declaration/payment/release; obtain professional review and preserve unresolved items.
 
 ## Sources
 
 | Source | URL | Read on |
 |---|---|---|
-| Israel Tax Authority, "Know your rights and duties" guide, tax year 2025 (published July 2026), Annex C VAT guide, read PDF p.140 (VAT rate 18% as at January 2026) | https://www.gov.il/BlobFolder/generalpage/income-tax-guide-knowyourright/he/Guides_IncomeTax_da-2025.pdf | 2026-11-03 |
+| Consolidated VAT Law; Read for s.11 ordinary customs-value/duty/other-tax base and special s.11(b)/(c) cases; ss.38/41 import input conditions | https://www.btl.gov.il/Laws1/00_0022_000000.pdf | 2026-11-14 |
+| ITA Interpretation01/2025; Read for introduction giving standard18% on Israeli transactions and goods imports with tax point from1January2025 under the2024 amending order | https://www.gov.il/BlobFolder/policy/vat_11/he/vat_represent-info-051224-2.pdf | 2026-11-14 |
+| ITA 2025 rights guide, 2025-2026 filing cycle; Read for VAT annex input documentation, not product-specific tariff exemptions | https://www.gov.il/BlobFolder/generalpage/income-tax-guide-knowyourright/he/Guides_IncomeTax_da-2025.pdf | 2026-11-14 |
+| Personal Import Order digital text; Read for ss.2-4 personal/family/nonbusiness/quantity and regulatory boundaries, 72-hour shipment combination; not a tax-exemption schedule | https://apps.economy.gov.il/Apps/PersonalImport/Home/Digital_Order/ | 2026-11-14 |
+| ITA classification information service; Read for free service,10-digit item,1-year/legal-change/applicant/identical-goods limits | https://www.gov.il/he/service/classification-of-goods-in-imports | 2026-11-14 |
+| US International Trade Administration FTA page; Read for signed Origin Invoice Declaration replacing hardcopy Green Form/FormA from10January2018, subject to origin rules | https://www.trade.gov/us-israel-free-trade-agreement | 2026-11-14 |
+| European Commission Israel trade overview; Read for Association Agreement framework and separate agricultural provisions, not a product tariff ruling | https://policy.trade.ec.europa.eu/eu-trade-relationships-country-and-region/countries-and-regions/israel_en | 2026-11-14 |
+| Final Official Journal notice C/2025/6212 of13November2025, AnnexI; Read for electronic-certificates notification, Israel GlobalGate1April2024 and authenticity-check link; not universal inbound acceptance | https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ%3AC_202506212 | 2026-11-14 |
 
-Not yet confirmed: the USD 75 personal import threshold, the USD 150 episode and its February 2026 reversal, the USD 500 band and the treatment of shipping in the threshold test; duty ranges and purchase tax; the import VAT base (CIF + duty + purchase tax) used in both examples; every FTA row, the EUR.1 rules and the EUR 6,000 invoice declaration limit; HS digit structure and pre-rulings. The customs pages were not opened.
-
-## Disclaimer
-
-> **חשוב:** כל המידע בקובץ זה מיועד למטרות מידע וחישוב בלבד. יש לבדוק כל עמדה מול רואה חשבון (Ro'eh Cheshbon) או יועץ מס (Yo'etz Mas) מוסמך לפני הגשה או פעולה.
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional: such as a רואה חשבון (Ro'eh Cheshbon: CPA) or יועץ מס (Yo'etz Mas: tax advisor) licensed in Israel: before filing or acting upon.
+Not yet confirmed: personal tax-free USD75 ceiling, USD75-500 customs-only band, shipping/insurance exclusion from threshold but inclusion in tax base, and exact higher-value treatment. The old history attributed the USD150 increase to a Smotrich decree in November2025 and reversal to24February2026; no operative decree/revocation was opened, so neither is a usable current threshold. Official parcel guide/calculator returned403 and ordinary direct recovery also403. Current commodity duty/purchase-tax rates including old0%-12%range, camera0%, bags6%-12%, purchase-tax categories/ranges, customs FX rule and complete valuation adjustments remain unconfirmed. The old universal8-digit structure/6+2claim and separate commercial pre-ruling8-digit page are not current-format instructions. UK-Israel2019/EUR.1, Canada modernizedCIFTASeptember2019/FormB239, EFTA(CH,NO,IS,LI)/EUR.1, Mercosur(BR,AR,UY,PY)June2010/certificate, and EU/UK EUR6000/approved-exporter/wet-ink rules require their actual current agreement/direction/product conditions. None of these legacy rows establishes a current preferential rate. Temporary/Eilat/immigrant/anti-dumping/agricultural relief and courier/postalfees/timelines need case-specific sources.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-03. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `il-customs-duty` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/il-customs-duty. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `il-customs-duty` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/il-customs-duty. If neither is available, confirm every figure against the official source pages cited above before relying on it.
