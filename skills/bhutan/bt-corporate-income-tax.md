@@ -7,11 +7,11 @@ last_updated: 2026-11-15
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
-version: "2.0"
+version: "2.1"
 type: situation-rules
 ---
 
-# Bhutan Corporate and Business Income Tax (2026) | v2.0
+# Bhutan Corporate and Business Income Tax (2026) | v2.1
 
 For income year 2026, companies use the new Act’s company rate; an unincorporated individual business uses the individual or qualifying presumptive rules. The former flat BIT label does not determine the new individual liability. [ss.2-5](https://www.drc.gov.bt/wp-content/uploads/2025/09/Income-Tax-Act-of-Bhutan-2025.pdf); [Schedule 1 paragraphs 2-6](https://www.drc.gov.bt/wp-content/uploads/2025/09/Income-Tax-Act-of-Bhutan-2025.pdf); [Schedule 2](https://www.drc.gov.bt/wp-content/uploads/2025/09/Income-Tax-Act-of-Bhutan-2025.pdf)
 
@@ -34,7 +34,7 @@ A company or body of persons is resident if formed or registered under Bhutan la
 
 Start with business gains and profits, trading stock, business-asset realizations, revenue subsidies and business-connected investment receipts. Exclude amounts classified as employment, exempt or final-withholding income and the other s.28 exclusions. Deduct only qualifying wholly and exclusively incurred business expenditure with documentation; accounting profit alone is not taxable income. Capital costs and benefits lasting beyond 12 months do not become ordinary deductions merely because paid. Use the Act’s depreciation and stock rules. [ss.25-28,39-61](https://www.drc.gov.bt/wp-content/uploads/2025/09/Income-Tax-Act-of-Bhutan-2025.pdf); [ss.41-43](https://www.drc.gov.bt/wp-content/uploads/2025/09/Income-Tax-Act-of-Bhutan-2025.pdf)
 
-Interest requires the qualifying borrowing/payer conditions in ss.45-50. The general deduction is limited to 30% of EBITDA (in words on the page), with the statutory financial-institution exceptions; disallowed interest can be carried forward within the later-year limit. Do not treat the limit as permission to deduct private, non-qualifying or undocumented borrowing costs. [ss.45-50](https://www.drc.gov.bt/wp-content/uploads/2025/09/Income-Tax-Act-of-Bhutan-2025.pdf)
+Interest requires a debt in the taxpayer’s name: borrowed funds or the acquired asset must be used in income production during the year, or another debt must be incurred in that production. The debt must come from a recognized financial institution, or be between associated companies all registered under Bhutan’s Companies Act, on arm’s-length terms, with interest taxable to the recipient company. The general deduction for business interest and interest-equivalent expenses is limited to 30% of EBITDA (in words on the page); the cap does not apply to a bank or insurance entity. Disallowed interest carries forward indefinitely, subject to the later-year cap and ownership restrictions. The cap does not authorize private, non-qualifying or undocumented borrowing costs. [ss.45-50](https://www.drc.gov.bt/wp-content/uploads/2025/09/Income-Tax-Act-of-Bhutan-2025.pdf); [ss.58-61,204-207,239-240](https://www.drc.gov.bt/wp-content/uploads/2025/09/Income-Tax-Act-of-Bhutan-2025.pdf)
 
 Unrelieved business losses can be carried forward without a fixed expiry under ss.58-61, but remain subject to the business, reduced/exempt-income and foreign-loss restrictions. Foreign business losses offset foreign business income only; business losses do not offset employment, investment or other income. A change of underlying entity ownership by more than 50% compared with any time in the previous 3 years blocks pre-change losses and carried financial costs (quantities in words on the page). Bankruptcy has separate loss restrictions. Retain loss evidence until fully offset, in addition to the normal record period. [ss.58-61,204-207,239-240](https://www.drc.gov.bt/wp-content/uploads/2025/09/Income-Tax-Act-of-Bhutan-2025.pdf); [ss.324-326](https://www.drc.gov.bt/wp-content/uploads/2025/09/Income-Tax-Act-of-Bhutan-2025.pdf)
 
