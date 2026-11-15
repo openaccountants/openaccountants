@@ -24,7 +24,7 @@ Quick answer: read the available documents first, identify the person, period an
 
 ## Ask the client first
 
-Use the records before asking. Obtain all available statements/invoices/certificates in one document collection; parse them and show an inferred summary, then ask only unresolved questions. Batch up to 3 related independent choices using the available structured-choice input tool, with free text for identifiers where needed; do not depend on a tool name that the execution environment does not provide.
+Use the records before asking. Obtain all available statements/invoices/certificates in one document collection; parse them and show an inferred summary, then ask only unresolved questions. Keep routine processing steps implicit and explain regulatory terms on first use. Batch up to 3 related independent choices using the available structured-choice input tool, with free text for identifiers where needed; do not depend on a tool name that the execution environment does not provide.
 
 Collect these fields with evidence and an explicit unknown state:
 
@@ -48,7 +48,7 @@ Do not request passwords in the intake package. Access status is enough for rout
 5. **Check ATL and withholding.** Capture actual event-date status and any late-filer history; route specific payment categories and payer definitions to `pk-withholding-tax`. Do not use a single turnover threshold for salary, services, rent and foreign payments or promise a weekly ATL update. Preserve the prior-return/surcharge evidence and missing-status flag.
 6. **Run the parallel routing table.** Goods and services can require different returns. Employment creates a payroll assessment even where the person previously had no staff. Capital events and entity uncertainty need their own evidence/routing.
 7. **Confirm and fill gaps.** Show the source-backed taxpayer/entity/period/province/ATL/access summary; receipts by stream, proposed regimes, registrations, staff, minimum/super/ACT flags and chosen skills. Invite corrections; ask only what documents could not establish. Missing registration is a flag to assess, not automatic proof of tax exemption.
-8. **Handoff.** Deliver the structured package, evidence index, chosen skills/run order, reasons for skills not run, unresolved flags/refusals and professional-review requirement to `pk-return-assembly`. Unknown values remain null/unknown, not false or an assumed rate.
+8. **Handoff.** Deliver the structured package, evidence index, chosen skills/run order, reasons for skills not run, unresolved flags/refusals and professional-review requirement to `pk-return-assembly`. Unknown values remain null/unknown, not false or an assumed rate. Record the reviewer's actual Pakistani professional/practising authority; an ICAP, ICMAP or FBR ITP label alone is not verified authority.
 
 ### Parallel routing, preserving the original jobs
 
