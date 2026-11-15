@@ -89,7 +89,7 @@ If an output is incomplete, label the specific file/schedule partial. Do not let
 
 | Obligation | Ordinary legal rule, subject to actual extension/special status | Source |
 |---|---|---|
-| Individual/AOP annual return | 30 September after year-end; tax-year 2026 ordinary date 30 September 2026 (derived), extension must be checked (ordinary filing day of month in words on the page) | [s.118(3)](https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf) |
+| Individual/AOP annual return | 30 September after year-end; tax-year 2026 ordinary date 30 September 2026 (derived), extension must be checked | [s.118(3)](https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf) |
 | Company tax year ending January-June | 31 December next following tax-year-end; June 2026 gives 31 December 2026 (derived) (company filing day of month in words on the page) | [s.118(2)(a)](https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf) |
 | Other company tax-year end | 30 September next following year-end; no universal 6-month rule (company filing day of month in words on the page) | [s.118(2)(b)](https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf) |
 | Resident individual's and AOP-member wealth/reconciliation | Resident individual with own return; every AOP member also with the AOP's income return; notice cases by notice date | [ss.116,118(4)](https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf) |

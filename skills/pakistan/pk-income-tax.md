@@ -77,7 +77,7 @@ An AOP is taxed separately. A member's share from taxed AOP income is exempt sub
 
 | Obligation and conditions | Ordinary date/mechanic | Official source |
 |---|---|---|
-| Individual/AOP annual return | 30 September following tax-year end; ordinary tax-year-2026 date is 30 September 2026 (derived); applicable extension must be checked (ordinary filing day of month in words on the page) | [s.118(3)](https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf) |
+| Individual/AOP annual return | 30 September following tax-year end; ordinary tax-year-2026 date is 30 September 2026 (derived); applicable extension must be checked | [s.118(3)](https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf) |
 | Resident individual wealth/reconciliation; AOP-member first-proviso branch | Resident individual with own return; every AOP member also with the AOP's income return; notice-based statements by their notice date | [ss.116,118(4)](https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf) |
 | Return-balance tax payment | By the return due date | [s.137(1)](https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf) |
 | Individual advance-tax quarters | 15 September,15 December,15 March,15 June; s.147 exclusions/threshold/formula apply | [s.147(4 B)-(5)](https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf) |
