@@ -1,16 +1,15 @@
 ---
 name: japan-transfer-pricing
 description: Use this skill whenever asked about Japan transfer pricing rules, documentation requirements, or 移転価格税制 compliance. Trigger on phrases like "transfer pricing Japan", "Japanese TP documentation", "移転価格", "master file Japan", "local file Japan", "CbCR Japan", "APA Japan", "Article 66-4 ASMT", "NTA transfer pricing", or any question about intercompany pricing for Japanese entities.
-version: 1.1
+version: 1.2
 jurisdiction: JP
 tax_year: 2026
-last_updated: 2026-11-14
+last_updated: 2026-11-15
 depends_on:
   - transfer-pricing-workflow-base
 category: transfer-pricing
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
-status: needs_sources
 domain: transfer-pricing
 type: computation
 ---
