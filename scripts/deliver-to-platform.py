@@ -223,13 +223,33 @@ def report(message: str, **fields) -> None:
     print(json.dumps({"message": message, **fields}), flush=True)
 
 
+class MainAdvanced(Exception):
+    """The platform refused the batch because main moved on after this run began.
+    Retrying cannot help: every later batch carries the same old head. The work
+    list keeps the paths, and the run queued by the newer push delivers them."""
+
+
+def main_advanced(error: urllib.error.HTTPError) -> bool:
+    if error.code != 503:
+        return False
+    try:
+        body = error.read().decode("utf-8", "replace")
+    except Exception:
+        return False
+    return "not confirmed as current main" in body
+
+
 def send_batch(batch: dict, secret: str, tries: int = 5) -> dict:
     """Send one batch. A busy platform (HTTP 5xx, dropped connection, timeout) is
-    retried with a growing pause, so a short overload does not fail the batch."""
+    retried with a growing pause, so a short overload does not fail the batch.
+    A refusal because main moved on is not retried (14 Nov 2026: 93 of 96 batches
+    spent 25 minutes retrying a head that could never be accepted again)."""
     for attempt in range(tries):
         try:
             return post(PLATFORM, batch, secret)
         except urllib.error.HTTPError as error:
+            if main_advanced(error):
+                raise MainAdvanced(batch["headSha"]) from error
             if error.code < 500 or attempt + 1 == tries:
                 raise
             report("Platform busy, retrying batch", status=error.code, attempt=attempt + 1)
@@ -316,6 +336,12 @@ def main(argv: list[str] | None = None) -> int:
         try:
             if not deliver(batch, secret, observed=observed):
                 failed += 1
+        except MainAdvanced:
+            # Paths stay on the work list (written ahead above); the newer push's
+            # queued run reads the newer main and delivers them.
+            report("Main moved on; stopping and leaving the rest to the next run",
+                   number=number, total=len(batches), left=sum(len(b["paths"]) for b in batches[number - 1:]))
+            return 0
         except (urllib.error.URLError, TimeoutError, ValueError) as error:
             report("Batch failed", number=number, error=str(error))
             failed += 1
