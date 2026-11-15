@@ -26,7 +26,7 @@ Domestic private/public companies under the Companies Act 2001, and the initial 
 |---|---|---|
 | Basic domestic company | At least 1 director, 1 shareholder and 1 issued share. Shares have no nominal/par value. A director must be a qualified natural person: at least 21, not an undischarged bankrupt, prohibited/disqualified or otherwise excluded by the Act or company rules. | [registration process, director/share/address/application](https://www.businessregistries.gov.ws/companies/how-to-register-a-company/the-registration-process/); [section 21](https://www.ag.gov.ws/wp-content/uploads/2024/02/Companies-Act-2001.pdf); [section 22](https://www.ag.gov.ws/wp-content/uploads/2024/02/Companies-Act-2001.pdf); [section 85](https://www.ag.gov.ws/wp-content/uploads/2024/02/Companies-Act-2001.pdf) |
 
-| Share capital | No WST 2,000 minimum is established by the cited statutory share rules. Use the actual issued shares and issue terms; do not turn an agent’s nominal-capital quote into a statutory cash minimum. | [section 21](https://www.ag.gov.ws/wp-content/uploads/2024/02/Companies-Act-2001.pdf); [section 22](https://www.ag.gov.ws/wp-content/uploads/2024/02/Companies-Act-2001.pdf) |
+| Share capital | The statutory rules require issued shares without a nominal/par value. A monetary capital minimum has not been confirmed; use actual issue terms and refer the old agent-quoted amount to the explicit boundary below. | [section 21](https://www.ag.gov.ws/wp-content/uploads/2024/02/Companies-Act-2001.pdf); [section 22](https://www.ag.gov.ws/wp-content/uploads/2024/02/Companies-Act-2001.pdf) |
 
 | Company registry fees | WST 250 domestic incorporation; WST 50 annual return. Overseas-company registration WST 300; annual return WST 50. These are registry fees, not the full cost of starting or operating. | [current registration and maintenance fees, 9 March 2026](https://mcil.gov.ws/services/business-registration) |
 
@@ -70,9 +70,9 @@ Assume a Samoan-owned domestic company with one full-year licensed activity, no 
 name: Budget for a single domestic activity
 inputs:
   registration: 250
-  licence: 640
+  business_fee: 640
 steps:
-  - initial_fees: registration + licence
+  - initial_fees: registration + business_fee
 expected:
   initial_fees: 890
 ```

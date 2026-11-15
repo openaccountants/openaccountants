@@ -32,7 +32,7 @@ Ordinary companies for the 2026 tax year. A company is resident if incorporated,
 
 | Non-resident interest, royalty and service fee | 15% of the gross Samoa-source payment, including management/personal/professional services and natural-resource amounts. Exempt income and qualifying PE-attributable amounts are excluded from this regime. | [Schedule 1 paragraph 4](https://www.ag.gov.ws/wp-content/uploads/2024/02/Income-Tax-Act-2012.pdf); [section 10](https://www.ag.gov.ws/wp-content/uploads/2024/02/Income-Tax-Act-2012.pdf); [section 96](https://www.ag.gov.ws/wp-content/uploads/2024/02/Income-Tax-Act-2012.pdf) |
 
-| Non-resident insurance | 7.5% for a life-policy or reinsurance premium; 15% for other covered premiums, subject to section 10 exclusions, including the life/general insurance business provisions. | [Schedule 1 paragraph 4](https://www.ag.gov.ws/wp-content/uploads/2024/02/Income-Tax-Act-2012.pdf); [section 10](https://www.ag.gov.ws/wp-content/uploads/2024/02/Income-Tax-Act-2012.pdf) |
+| Non-resident insurance | 7.5% for a life-policy or reinsurance premium; 15% for other covered premiums, subject to section 10 exclusions, including the life/general insurance business provisions. | [Schedule 1 paragraph 4](https://www.ag.gov.ws/wp-content/uploads/2024/02/Income-Tax-Act-2012.pdf); [section 10](https://www.ag.gov.ws/wp-content/uploads/2024/02/Income-Tax-Act-2012.pdf); [Non-resident withholding, life/reinsurance rate](https://revenue.gov.ws/wp-content/uploads/2026/10/IS01_Income-Tax-1-2026.pdf) |
 
 | Resident bank interest | 15% withholding applies to interest paid by a licensed financial institution to a resident individual, subject to exempt-income exclusions. It is not a blanket resident-company interest withholding rule. | [section 94](https://www.ag.gov.ws/wp-content/uploads/2024/02/Income-Tax-Act-2012.pdf); [section 97](https://www.ag.gov.ws/wp-content/uploads/2024/02/Income-Tax-Act-2012.pdf); [section 104](https://www.ag.gov.ws/wp-content/uploads/2024/02/Income-Tax-Act-2012.pdf) |
 
@@ -129,6 +129,7 @@ Read on **2026-11-15** for the stated sections. The Attorney General tax consoli
 | Read for Income Tax Forms, current listing | https://revenue.gov.ws/inland-revenue-services/ | 2026-11-15 |
 | Read for sections 1-2 and 6, enacted deferred commencement | https://sifa.ws/wp-content/uploads/2026/06/Miscellaneous-Removal-of-Tax-Exemption-for-International-Companies-Amendment-Act-2026-Eng.pdf | 2026-11-15 |
 | Read for section 6, shareholder restrictions; section 249(2), exemptions and exclusions | https://sifa.ws/wp-content/uploads/2025/01/International-Companies-Act-1988.pdf | 2026-11-15 |
+| Read for Non-resident withholding, life/reinsurance rate | https://revenue.gov.ws/wp-content/uploads/2026/10/IS01_Income-Tax-1-2026.pdf | 2026-11-15 |
 | Read for regulation 2, scanned page 2 visually checked | https://revenue.gov.ws/wp-content/uploads/2025/01/Tax-Administration-Late-Payment-Interest-Regulations-2015.pdf | 2026-11-15 |
 | Read for section 31; section 47; section 48; section 49 | https://www.ag.gov.ws/wp-content/uploads/2024/02/Tax-Administration-Act-2012.pdf | 2026-11-15 |
 
