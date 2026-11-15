@@ -6,14 +6,13 @@ tax_year: 2026
 last_updated: 2026-11-15
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
-status: needs_sources
 domain: income-tax
 category: international
 type: computation
-version: 0.1
+version: 0.2
 ---
 
-# Uzbekistan Corporate Income Tax v0.1
+# Uzbekistan Corporate Income Tax v0.2
 
 > **General reference only.** Produce an estimated computation and review brief, not a filed return or an accountant's approval. All monetary computations use UZS; obtain the actual period, entity, regime, income, deductions and payments before calculating.
 
