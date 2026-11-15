@@ -39,9 +39,9 @@ Quick answer: ordinary PIT 12%, employer social 12% or proven special category; 
 
 | Item | Rate, base and conditions for 2026 | Official source |
 |---|---|---|
-| Resident employment PIT |12% of taxable employment income; apply documented exclusions/relief before the rate; special regimes can override | Tax Code 381,378,380,483, https://lex.uz/docs/4674902?ONDATE=21.10.2026 |
+| Resident employment PIT |12% of taxable employment income; apply documented exclusions/relief before the rate; special regimes can override | Tax Code Articles 381; 378; 380; 483; https://lex.uz/docs/4674902?ONDATE=21.10.2026 |
 | Nonresident employment PIT |12% on Uzbek-source employment/civil-contract income and other income outside the specified investment/freight rows; treaty/source analysis first | Tax Code 382, https://lex.uz/docs/4674902?ONDATE=21.10.2026 |
-| Commercial employer social tax |12% of the separate employment-cost base; not an employee deduction | Tax Code 403–405,407, https://lex.uz/docs/4674902?ONDATE=21.10.2026 |
+| Commercial employer social tax |12% of the separate employment-cost base; not an employee deduction | Tax Code Articles 403–405; 407; https://lex.uz/docs/4674902?ONDATE=21.10.2026 |
 | Budget employer |25%; budget status must be established, not inferred from state ownership alone | Tax Code 405, https://lex.uz/docs/4674902?ONDATE=21.10.2026 |
 | SOS Children's Villages of Uzbekistan |7% for the specifically named association | Tax Code 405, https://lex.uz/docs/4674902?ONDATE=21.10.2026 |
 | Disability-workshop limb |4.7% for taxpayers using disabled persons' labour in specialised workshops, sections and enterprises; not every employer hiring a disabled person | Tax Code 405, https://lex.uz/docs/4674902?ONDATE=21.10.2026 |
