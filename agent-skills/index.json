@@ -1,6 +1,6 @@
 {
  "generated_by": "scripts/build-agent-skills.py",
- "count": 2440,
+ "count": 2441,
  "publication_holds": [
   {
    "name": "cameroon-social-contributions",
@@ -12,10 +12,6 @@
   },
   {
    "name": "kg-income-tax",
-   "reason": "status: needs_sources"
-  },
-  {
-   "name": "kh-corporate-income-tax",
    "reason": "status: needs_sources"
   },
   {
@@ -3987,7 +3983,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "cameroon-corporate-income-tax",
@@ -10953,7 +10949,16 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
+  },
+  {
+   "name": "kh-corporate-income-tax",
+   "jurisdiction": "KH",
+   "path": "skills/cambodia/kh-corporate-income-tax.md",
+   "trust_label": null,
+   "authored_by": null,
+   "reviewed_by": null,
+   "tax_year": 2026
   },
   {
    "name": "kh-income-tax",
@@ -10962,7 +10967,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "kh-payroll-social",
@@ -10971,7 +10976,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "kh-tax-overview",
@@ -10980,7 +10985,7 @@
    "trust_label": null,
    "authored_by": null,
    "reviewed_by": null,
-   "tax_year": 2025
+   "tax_year": 2026
   },
   {
    "name": "ki-vat-reference",

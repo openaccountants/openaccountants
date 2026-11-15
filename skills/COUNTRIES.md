@@ -138,7 +138,7 @@ Owner: Ryan Duguid
 | [Bhutan](bhutan/) | Needs writing | 6 | 0 | 0 |
 | [British Indian Ocean Territory](british-indian-ocean-territory/) | Needs writing | 1 | 1 | 0 |
 | [Brunei](brunei/) | Needs writing | 7 | 7 | 0 |
-| [Cambodia](cambodia/) | Needs writing | 6 | 0 | 0 |
+| [Cambodia](cambodia/) | Needs writing | 6 | 6 | 0 |
 | [China](china/) | Needs writing | 15 | 15 | 0 |
 | [Christmas Island](christmas-island/) | Needs writing | 5 | 5 | 0 |
 | [Cocos (Keeling) Islands](cocos-keeling-islands/) | Needs writing | 5 | 5 | 0 |

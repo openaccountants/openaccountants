@@ -1,11 +1,11 @@
 {
- "generated_at": "2026-11-15T17:56:51+00:00",
+ "generated_at": "2026-11-15T19:30:39+00:00",
  "counts": {
-  "guides": 2534,
-  "loadable_skill_names": 2475,
+  "guides": 2535,
+  "loadable_skill_names": 2476,
   "jurisdictions": 290,
   "accountant_reviewed": 126,
-  "held_skill_names": 21
+  "held_skill_names": 20
  },
  "publication_holds": [
   {
@@ -18,10 +18,6 @@
   },
   {
    "name": "kg-income-tax",
-   "reason": "status: needs_sources"
-  },
-  {
-   "name": "kh-corporate-income-tax",
    "reason": "status: needs_sources"
   },
   {
@@ -4650,12 +4646,12 @@
    "path": "skills/cambodia/cambodia-vat.md",
    "name": "cambodia-vat",
    "jurisdiction": "KH",
-   "category": null,
+   "category": "international",
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
   },
   {
    "slug": "kh-company-formation",
@@ -4663,12 +4659,25 @@
    "path": "skills/cambodia/kh-company-formation.md",
    "name": "kh-company-formation",
    "jurisdiction": "KH",
-   "category": null,
+   "category": "formation",
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-15"
+  },
+  {
+   "slug": "kh-corporate-income-tax",
+   "mcp_slug": "kh-corporate-income-tax",
+   "path": "skills/cambodia/kh-corporate-income-tax.md",
+   "name": "kh-corporate-income-tax",
+   "jurisdiction": "KH",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-11-14"
   },
   {
    "slug": "kh-income-tax",
@@ -4676,12 +4685,12 @@
    "path": "skills/cambodia/kh-income-tax.md",
    "name": "kh-income-tax",
    "jurisdiction": "KH",
-   "category": null,
+   "category": "international",
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-15"
   },
   {
    "slug": "kh-payroll-social",
@@ -4689,12 +4698,12 @@
    "path": "skills/cambodia/kh-payroll-social.md",
    "name": "kh-payroll-social",
    "jurisdiction": "KH",
-   "category": null,
+   "category": "payroll",
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-15"
   },
   {
    "slug": "kh-tax-overview",
@@ -4702,12 +4711,12 @@
    "path": "skills/cambodia/kh-tax-overview.md",
    "name": "kh-tax-overview",
    "jurisdiction": "KH",
-   "category": null,
+   "category": "orchestrator",
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-11-15"
   },
   {
    "slug": "cameroon-corporate-income-tax",
