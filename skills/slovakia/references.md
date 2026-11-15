@@ -5,6 +5,7 @@ last_updated: 2026-11-15
 version: 1.1
 description: "Evaluate Priznanie Digital source and licence provenance, establish revision-specific coverage, then hand tax calculations and current form/schema checks to the Slovakia owners. Software reference only; no upstream runtime or filing acceptance is certified."
 tier: 2
+category: orchestrator
 tax_year: 2026
 type: router
 ---
