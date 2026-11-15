@@ -311,7 +311,7 @@ Return due dates (section 263(1)(c) of the 2025 Act as substituted by the Financ
 | No business or profession income (most investors) | 31 July | "31st July."; https://egazette.gov.in/WriteReadData/2026/271439.pdf |
 | Business/profession not required audit, or partner of non-audit firm and spouse where s.10 apportionment applies | 31 August | "31st August."; https://egazette.gov.in/WriteReadData/2026/271439.pdf |
 | Company, or a person whose accounts must be audited under this/other law, specified firm partner/spouse cases (no higher-priority transfer-pricing category) | 31 October | "31st October."; https://egazette.gov.in/WriteReadData/2026/271439.pdf |
-| Revised return | Within12months (in words on the page) from the end of the tax year, or before assessment is completed, whichever is earlier | "furnish a revised return at any time within twelve months from the end of the relevant tax year"; https://egazette.gov.in/WriteReadData/2025/265620.pdf |
+| Revised return | Within12months (in words on the page) from the end of the tax year, or before assessment is completed, whichever is earlier | "furnish a revised return at any time within twelve months from the end of the relevant tax year"; https://egazette.gov.in/WriteReadData/2026/271439.pdf |
 
 A return not filed by the due date may be filed "within nine months from the end of the relevant tax year, or before the completion of the assessment, whichever is earlier" (section 263(4) of the 2025 Act), with a fee under section 428. An updated return may be filed within48months (in words on the page) from the end of the financial year after the tax year (section 263(6)(a)), subject to the conditions there. Source: https://egazette.gov.in/WriteReadData/2025/265620.pdf
 
