@@ -57,12 +57,13 @@ Load the skill for the person's job and facts before using any rate, threshold, 
 
 ## Sources
 
-The tax-law passages, exact figures, read dates and worked cases live in the linked owners. These files were read for routing; this page does not claim fresh legal verification of every protected sibling. The operational source below was opened for this router.
+The tax-law passages, exact figures, read dates and worked cases live in the linked owners. These files were read for routing; this page does not claim fresh legal verification of every protected sibling. The narrow bankruptcy/liquidation extension boundary above was reread in the Income Tax Act, alongside the authority and historical-currency sources below.
 
 | Source and scope | URL | Read on |
 |---|---|---|
 | Financial Administration, official authority entry point | https://www.financnasprava.sk/sk/titulna-stranka | 2026-11-15 |
 | ECB, Slovakia cash-changeover page, read to resolve the old unsupported adoption-date item | https://www.ecb.europa.eu/euro/changeover/slovakia/html/index.en.html | 2026-11-15 |
+| Income Tax Act § 49(3)(a)-(c), notice-extension exclusion and separate bankruptcy/liquidation application route | https://www.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html | 2026-11-15 |
 
 Not yet confirmed: a particular filer's portal access or suitability of an upstream software version for the current return; unresolved items in the linked owners remain unresolved. The old claim that the euro became legal tender on 1 January 2009 is confirmed by the ECB's dated changeover account, but is historical context and not an input to a current tax calculation.
 
