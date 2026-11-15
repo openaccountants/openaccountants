@@ -33,8 +33,8 @@ Current Tax Year 2026-27 primary provisions are confirmed below. Entity provisio
 | Currency | INR; https://egazette.gov.in/WriteReadData/2025/265620.pdf |
 | Tax year | 1 April to 31 March. Tax year 2026-27 runs from 1 April 2026 to 31 March 2027; https://egazette.gov.in/WriteReadData/2025/265620.pdf |
 | Primary law | Income-tax Act, 2025 (30 of 2025): section 2(111) (definition), section 194(1) Table serial 4 (rate and loss rule), section 393(1) Table serial 8(vi) and section 393(4) Table serial 12 (TDS); https://egazette.gov.in/WriteReadData/2025/265620.pdf |
-| Rates law for the year | Finance Act, 2026 (4 of 2026), section 3 (surcharge and cess for tax year 2026-27); https://egazette.gov.in/WriteReadData/2025/265620.pdf |
-| Procedure | Income-tax Rules, 2026: rule 218 (paying TDS, Form No. 141), rule 219 (exchange statements, Form No. 142), rule 164 (which return form); https://egazette.gov.in/WriteReadData/2025/265620.pdf |
+| Rates law for the year | Finance Act, 2026 (4 of 2026), section 3 (surcharge and cess for tax year 2026-27); https://egazette.gov.in/WriteReadData/2026/271439.pdf |
+| Procedure | Income-tax Rules, 2026: rule 218 (paying TDS, Form No. 141), rule 219 (exchange statements, Form No. 142), rule 164 (which return form); https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-03/En-Notified-IT-Rules-2026-20-03-2026.pdf |
 | Tax authority | Income Tax Department, Central Board of Direct Taxes; https://egazette.gov.in/WriteReadData/2025/265620.pdf |
 | Rate, TDS and thresholds | In the tables in Sections 3 and 7; https://egazette.gov.in/WriteReadData/2025/265620.pdf |
 
@@ -130,8 +130,8 @@ Cess is charged on income-tax plus surcharge. Surcharge depends on total income,
 | Surcharge rate, total income above INR 5,000,000 up to INR 10,000,000 (underlying bands; new-regime VDA interaction held) | 10% | "rate of 10%;"; https://egazette.gov.in/WriteReadData/2026/271439.pdf |
 | Next threshold | INR 10,000,000 | "exceeds ₹ 10000000 but does not exceed ₹ 20000000, at the"; https://egazette.gov.in/WriteReadData/2026/271439.pdf |
 | Surcharge rate, above INR 10,000,000 up to INR 20,000,000 (underlying bands; new-regime VDA interaction held) | 15% | "rate of 15%;"; https://egazette.gov.in/WriteReadData/2026/271439.pdf |
-| Next threshold | INR 20,000,000 | "198 of the said Act) exceeds ₹ 20000000, at the rate of 25%; (iv) where the total income (including dividend income"; https://egazette.gov.in/WriteReadData/2026/271439.pdf |
-| New regime (serial 10): top surcharge rate, above INR 20,000,000 | 25% | "198 of the said Act) exceeds ₹ 20000000, at the rate of 25%; (iv) where the total income (including dividend income"; https://egazette.gov.in/WriteReadData/2026/271439.pdf |
+| Next threshold | INR 20,000,000 | "at the rate of 25%;"; https://egazette.gov.in/WriteReadData/2026/271439.pdf |
+| New regime (serial 10): top surcharge rate, above INR 20,000,000 | 25% | "at the rate of 25%;"; https://egazette.gov.in/WriteReadData/2026/271439.pdf |
 | Old regime (serial 1): rate above INR 20,000,000 up to INR 50,000,000 | 25% | "rate of 25%;"; https://egazette.gov.in/WriteReadData/2026/271439.pdf |
 | Old regime (serial 1): top threshold | INR 50,000,000 | "(iv) where the total income exceeds ₹ 50000000"; https://egazette.gov.in/WriteReadData/2026/271439.pdf |
 | Old regime (serial 1): top surcharge rate | 37% | "rate of 37%."; https://egazette.gov.in/WriteReadData/2026/271439.pdf |
@@ -156,15 +156,15 @@ Do not quote a single effective rate for VDA income. The rate in the first table
 
 Source for this table: https://egazette.gov.in/WriteReadData/2025/265620.pdf
 
-Whether a purchase fee forms part of the "cost of acquisition" is not settled by the Act text. Treat it as not deductible unless an accountant decides otherwise.
+Whether a purchase fee forms part of the "cost of acquisition" is not yet confirmed here from the cited section 194 provisions. Treat it as not deductible unless an accountant decides otherwise.
 
 #### Cost basis methods
 
-The Act says "cost of acquisition, if any" and names no method for matching sales to purchases. The original alternatives remain first in, first out and specific identification with records, but the cited Act does not authorize a free choice. Document each acquisition/disposal and proposed matching consistently; obtain confirmation of the applicable method before any final computation, not only for large portfolios.
+The cited section 194 Table serial 4 says "cost of acquisition, if any"; that table does not prescribe the matching of sales to purchases. The original alternatives remain first in, first out and specific identification with records, but that cited table does not authorize a free choice. Document each acquisition/disposal and proposed matching consistently; obtain confirmation of the applicable method before any final computation, not only for large portfolios.
 
 #### Nil-cost cases
 
-Where nothing was paid for a VDA (mining, staking rewards, airdrops, tokens from a fork), there may be no cost of acquisition: the Act's words are "if any". If the receipt was taxed as income when received, an accountant decides whether that taxed value can be the cost on a later sale; the Act does not say so for VDAs (see Section 5 and Section 7.4).
+Where nothing was paid for a VDA (mining, staking rewards, airdrops, tokens from a fork), there may be no cost of acquisition: the Act's words are "if any". If the receipt was taxed as income when received, an accountant decides whether that taxed value can be the cost on a later sale; that VDA basis is not yet confirmed here from the cited provisions (see Section 5 and Section 7.4).
 
 ### Section 5: De Fi, Staking, Mining and Airdrops
 
@@ -179,7 +179,7 @@ Everything else below is a classification question for an accountant. Do not sta
 
 | Point | Status; https://egazette.gov.in/WriteReadData/2025/265620.pdf |
 | --- | --- |
-| Tax on the tokens when mined | Not settled by the Act. It may be business income or income from other sources at slab rates. Refer; https://egazette.gov.in/WriteReadData/2025/265620.pdf |
+| Tax on the tokens when mined | Not yet confirmed here from the cited provisions. It may be business income or income from other sources at slab rates. Refer; https://egazette.gov.in/WriteReadData/2025/265620.pdf |
 | Cost of mined tokens on a later sale | "cost of acquisition, if any": possibly nil. Refer if the receipt was taxed; https://egazette.gov.in/WriteReadData/2025/265620.pdf |
 | Later sale or swap | Section 194 transfer; https://egazette.gov.in/WriteReadData/2025/265620.pdf |
 
@@ -187,7 +187,7 @@ Everything else below is a classification question for an accountant. Do not sta
 
 | Point | Status; https://egazette.gov.in/WriteReadData/2025/265620.pdf |
 | --- | --- |
-| Tax on rewards when received | Not settled by the Act. Refer; https://egazette.gov.in/WriteReadData/2025/265620.pdf |
+| Tax on rewards when received | Not yet confirmed here from the cited provisions. Refer; https://egazette.gov.in/WriteReadData/2025/265620.pdf |
 | Later sale or swap of reward tokens | Section 194 transfer; https://egazette.gov.in/WriteReadData/2025/265620.pdf |
 
 #### 5.3 Airdrops
@@ -195,17 +195,17 @@ Everything else below is a classification question for an accountant. Do not sta
 | Point | Status; https://egazette.gov.in/WriteReadData/2025/265620.pdf |
 | --- | --- |
 | Airdrop received for nothing from a non-relative | Section 92(2)(m) can tax it if the aggregate value of such property received in the year passes the threshold in Section 7.4; https://egazette.gov.in/WriteReadData/2025/265620.pdf |
-| Airdrop received for doing something (a task, a service) | Not settled by the Act. Refer; https://egazette.gov.in/WriteReadData/2025/265620.pdf |
+| Airdrop received for doing something (a task, a service) | Not yet confirmed here from the cited provisions. Refer; https://egazette.gov.in/WriteReadData/2025/265620.pdf |
 | Later sale of airdropped tokens | Section 194 transfer; https://egazette.gov.in/WriteReadData/2025/265620.pdf |
 
 #### 5.4 De Fi lending, yield and liquidity pools
 
 | Activity | Status; https://egazette.gov.in/WriteReadData/2025/265620.pdf |
 | --- | --- |
-| Interest or yield paid in tokens | Not settled by the Act. Refer; https://egazette.gov.in/WriteReadData/2025/265620.pdf |
+| Interest or yield paid in tokens | Not yet confirmed here from the cited provisions. Refer; https://egazette.gov.in/WriteReadData/2025/265620.pdf |
 | Depositing tokens into a pool for LP tokens | Likely an exchange of one VDA for another, so a section 194 transfer. Confirm the facts; https://egazette.gov.in/WriteReadData/2025/265620.pdf |
 | Withdrawing from the pool | Same; https://egazette.gov.in/WriteReadData/2025/265620.pdf |
-| Impermanent loss | A loss on a VDA transfer: no set-off and no carry forward (Section 8); https://egazette.gov.in/WriteReadData/2025/265620.pdf |
+| Impermanent loss | If a loss is realized on a VDA transfer, section 194 bars set-off and carry forward (Section 8); a valuation/impermanent loss alone does not establish a transfer or a deduction; https://egazette.gov.in/WriteReadData/2025/265620.pdf |
 
 #### 5.5 Forks
 
@@ -225,9 +225,9 @@ An NFT is a VDA under section 2(111)(b). Clause (i) of the section says "non-fun
 | Selling an NFT | Section 194 transfer, taxed at the Section 3 rate on proceeds less cost; https://egazette.gov.in/WriteReadData/2025/265620.pdf |
 | Swapping NFT for NFT, or NFT for a token | Exchange: a section 194 transfer of what is given up; https://egazette.gov.in/WriteReadData/2025/265620.pdf |
 | An artist minting and selling their own NFT | Section 194 transfer of the NFT. Whether the creator also has business income is not settled. Refer; https://egazette.gov.in/WriteReadData/2025/265620.pdf |
-| Royalty on a resale paid to the creator | Not settled by the Act. Refer; https://egazette.gov.in/WriteReadData/2025/265620.pdf |
+| Royalty on a resale paid to the creator | Not yet confirmed here from the cited provisions. Refer; https://egazette.gov.in/WriteReadData/2025/265620.pdf |
 | NFT received free from a non-relative | Section 92(2)(m) gift rule (Section 7.4); https://egazette.gov.in/WriteReadData/2025/265620.pdf |
-| NFT becomes worthless | Any loss is not set off and not carried forward; https://egazette.gov.in/WriteReadData/2025/265620.pdf |
+| NFT becomes worthless | A loss from an actual VDA transfer is not set off or carried forward; other impairment/disposal treatment is not yet confirmed here, so refer; https://egazette.gov.in/WriteReadData/2025/265620.pdf |
 
 ### Section 7: Reporting Requirements
 
@@ -256,7 +256,7 @@ Section 393(1) Table serial 8(vi) applies to "Any person" paying a resident cons
 | Item | Value | Note; https://egazette.gov.in/WriteReadData/2025/265620.pdf |
 | --- | --- | --- |
 | Source | all figures below | https://egazette.gov.in/WriteReadData/2025/265620.pdf |
-| TDS rate on consideration for the transfer of a VDA | 1% | "1% of consideration"; https://egazette.gov.in/WriteReadData/2025/265620.pdf |
+| TDS rate on consideration for the transfer of a VDA | 1% | "Rate: 1%"; https://egazette.gov.in/WriteReadData/2025/265620.pdf |
 | No TDS if the year's consideration does not exceed, for a payer who is an individual or HUF with business turnover up to INR10,000,000 (in words on the page) or professional receipts up to INR5,000,000 (in words on the page) in the preceding tax year, or with no business or profession income | INR 50,000 | "(a) ₹ 50000, when payable by an individual"; https://egazette.gov.in/WriteReadData/2025/265620.pdf |
 | No TDS if the year's consideration does not exceed, for any other payer | INR 10,000 | "(b) ₹ 10000, when payable by any person other than the person referred to in clause (a)"; https://egazette.gov.in/WriteReadData/2025/265620.pdf |
 | Higher TDS where the seller gives no valid PAN | Highest of provision rate, rates in force, and 20% floor (not a universal fixed 20%) | "at the rate of 5% where tax is required to be deducted under section 393(1) [Table: Sl. No. 8(ii) or 8(v)]; or 20% in any other case"; https://egazette.gov.in/WriteReadData/2025/265620.pdf |
@@ -286,20 +286,20 @@ Points the Act settles:
 
 TDS paid by the payer under the literal rule 218(3)(d)/219(5)(d) enumeration of 8(vi): within30days (in words on the page) from the end of the month in which the deduction is made, with a challan-cum-statement in Form No. 141. Form No. 141 has a Schedule D for TDS paid by an individual or HUF on the transfer of a VDA. Rule 219(2)Form 142 applies only where the exchange agreed under 400(2)guidelines to pay tax on a transfer of a VDA OWNED BY IT as the buyer's deduction alternative; do not infer every exchange trade is 142. Form 141 Schedule Dcaption identifies individual/HUF payments while rule 218(3)/219(5)text enumerates 8(vi)without that qualifier: actual nonindividual utility/form treatment is held for clarification, not invented. Rule 215 requires Form 132 for 8(vi), within 15 days of Form 141 due date; certificate must be generated/downloaded from the specified portal. Confirm applicable modes/fields before filing. Source: https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-03/En-Notified-IT-Rules-2026-20-03-2026.pdf
 
-Advance tax (sections 404 and 408 of the 2025 Act). VDA income counts towards advance tax like any other income.
+Advance tax (sections 404 and 408 of the 2025 Act). VDA income enters the advance-tax computation. The table below is the ordinary schedule. If the assessee also declares profits under section 58(2) Table serial 1 or 3, section 408(2) applies to that assessee; obtain professional review of the mixed VDA/presumptive-income schedule before finalizing. Do not invent a split by income component.
 
 | Item | Value | Note; https://egazette.gov.in/WriteReadData/2025/265620.pdf |
 | --- | --- | --- |
 | Source | all figures below | https://egazette.gov.in/WriteReadData/2025/265620.pdf |
-| Advance tax is payable when the year's tax is | INR 10,000 | "is ₹10000 or more"; https://egazette.gov.in/WriteReadData/2025/265620.pdf |
-| By 15 June 2026, at least | 15% | "1. On or before Not less than 15% of such advance tax. the 15th June."; https://egazette.gov.in/WriteReadData/2025/265620.pdf |
-| By 15 September 2026, at least (cumulative) | 45% | "2. On or Not less than 45% of such advance tax"; https://egazette.gov.in/WriteReadData/2025/265620.pdf |
-| By 15 December 2026, at least (cumulative) | 75% | "3. On or Not less than 75% of such advance tax"; https://egazette.gov.in/WriteReadData/2025/265620.pdf |
-| By 15 March 2027 | The whole amount | "4. On or before The whole amount of such advance tax, as the 15th March."; https://egazette.gov.in/WriteReadData/2025/265620.pdf |
+| Advance tax payable under section 404 when the section 405 liability, after applicable statutory TDS/TCS/relief/credit reductions, is at least (not gross VDA tax) | INR 10,000 | "is ₹10000 or more"; https://egazette.gov.in/WriteReadData/2025/265620.pdf |
+| By 15 June 2026, at least | 15% | "Not less than 15% of such advance tax."; https://egazette.gov.in/WriteReadData/2025/265620.pdf |
+| By 15 September 2026, at least (cumulative) | 45% | "Not less than 45% of such advance tax"; https://egazette.gov.in/WriteReadData/2025/265620.pdf |
+| By 15 December 2026, at least (cumulative) | 75% | "Not less than 75% of such advance tax"; https://egazette.gov.in/WriteReadData/2025/265620.pdf |
+| By 15 March 2027 | The whole amount | "The whole amount of such advance tax"; https://egazette.gov.in/WriteReadData/2025/265620.pdf |
 | Interest for default (section 424), per month or part, from 1 April after the tax year | 1% | "simple interest at the rate of 1% for every month or part of a month, for the period, beginning from the 1st April following such tax year"; https://egazette.gov.in/WriteReadData/2025/265620.pdf |
 | Default applies where advance tax paid is less than this share of assessed tax | 90% | "is less than 90% of the assessed tax"; https://egazette.gov.in/WriteReadData/2025/265620.pdf |
-| Conditional table transcription, section 425 June/September/December; ordinary 425(2)/(3)construction held | 3% (not a finalized charge) | "15% of the tax Shortfall till 15th day of 3% of June."; https://egazette.gov.in/WriteReadData/2025/265620.pdf |
-| Conditional March table transcription, same construction hold | 1% (not a finalized charge) | "100% of the Shortfall till 15th day of 1% of March."; https://egazette.gov.in/WriteReadData/2025/265620.pdf |
+| Conditional table transcription, section 425 June/September/December; ordinary 425(2)/(3)construction held | 3% (not a finalized charge) | "3%"; https://egazette.gov.in/WriteReadData/2025/265620.pdf |
+| Conditional March table transcription, same construction hold | 1% (not a finalized charge) | "1%"; https://egazette.gov.in/WriteReadData/2025/265620.pdf |
 
 Section 403(3) exempts a resident aged60or more (in words on the page) with no business or profession income from advance tax. A large late-year gain requires an updated advance-tax estimate and statutory relief review; check section 425 for how a shortfall is measured. Section 425(4) charges no interest under section 425(1) or (3) on a shortfall caused by "underestimation of, or failure to estimate" "capital gains", where the assessee "has paid in full, the tax payable on the said income" "in any of the remaining instalments of advance tax, if any, or by the 31st day of March of the tax year". Whether this covers a VDA gain is not settled: refer.
 
@@ -308,9 +308,9 @@ Return due dates (section 263(1)(c) of the 2025 Act as substituted by the Financ
 | Taxpayer | Due date | Note; https://egazette.gov.in/WriteReadData/2025/265620.pdf |
 | --- | --- | --- |
 | Source | all dates below | https://egazette.gov.in/WriteReadData/2026/271439.pdf |
-| No business or profession income (most investors) | 31 July | "4. Any other assessee. 31st July."; https://egazette.gov.in/WriteReadData/2025/265620.pdf |
-| Business/profession not required audit, or partner of non-audit firm and spouse where s.10 apportionment applies | 31 August | "3. (i) Assessee having income Where the 31st August."; https://egazette.gov.in/WriteReadData/2025/265620.pdf |
-| Company, or a person whose accounts must be audited under this/other law, specified firm partner/spouse cases (no higher-priority transfer-pricing category) | 31 October | "2. (i) Company; Where the 31st October."; https://egazette.gov.in/WriteReadData/2025/265620.pdf |
+| No business or profession income (most investors) | 31 July | "31st July."; https://egazette.gov.in/WriteReadData/2026/271439.pdf |
+| Business/profession not required audit, or partner of non-audit firm and spouse where s.10 apportionment applies | 31 August | "31st August."; https://egazette.gov.in/WriteReadData/2026/271439.pdf |
+| Company, or a person whose accounts must be audited under this/other law, specified firm partner/spouse cases (no higher-priority transfer-pricing category) | 31 October | "31st October."; https://egazette.gov.in/WriteReadData/2026/271439.pdf |
 | Revised return | Within12months (in words on the page) from the end of the tax year, or before assessment is completed, whichever is earlier | "furnish a revised return at any time within twelve months from the end of the relevant tax year"; https://egazette.gov.in/WriteReadData/2025/265620.pdf |
 
 A return not filed by the due date may be filed "within nine months from the end of the relevant tax year, or before the completion of the assessment, whichever is earlier" (section 263(4) of the 2025 Act), with a fee under section 428. An updated return may be filed within48months (in words on the page) from the end of the financial year after the tax year (section 263(6)(a)), subject to the conditions there. Source: https://egazette.gov.in/WriteReadData/2025/265620.pdf
@@ -364,7 +364,7 @@ The cited s.194 loss rules give no loss-offset benefit from a VDA loss sale; no 
 | Item | Value | Note; https://egazette.gov.in/WriteReadData/2025/265620.pdf |
 | --- | --- | --- |
 | Source | all figures below | https://egazette.gov.in/WriteReadData/2026/271439.pdf |
-| Surcharge on tax under section 195(1)(i), any assessee, tax year 2026-27 | 25% | "8. 195(1)(i). Any assessee. 25%."; https://egazette.gov.in/WriteReadData/2025/265620.pdf |
+| Surcharge on tax under section 195(1)(i), any assessee, tax year 2026-27 | 25% | "25%."; https://egazette.gov.in/WriteReadData/2026/271439.pdf |
 
 #### 9.3 TDS as a tracking tool
 
@@ -409,7 +409,7 @@ DOGE loss                       cannot reduce the SOL gain
 Cess at 4% x 90,000             3,600
 Tax on VDA income               93,600
 
-Staking reward 25,000           treatment not settled by the Act: refer
+Staking reward 25,000           treatment not yet confirmed here from the cited provisions: refer
 ~~~
 
 ### Example 3: a VDA gift from a friend
@@ -424,7 +424,7 @@ Later sale: proceeds 2,000,000, section 194 transfer
       cost of acquisition: not settled for a VDA (see below)
 ~~~
 
-Section 73 Table serial 17 of the 2025 Act makes the value taxed under section 92(2)(m) the cost of a "capital asset" when "the capital gain arises" on its transfer. A VDA held as an investment is a capital asset (section 2(22)), and section 194 only sets the rate on income from its transfer; but section 194 allows only "cost of acquisition, if any", and no page links that phrase to section 73. Whether the cost on the sale is 1,500,000 or nil is a question for an accountant. Refer before filing. Using nil overstates the gain by 1,500,000; using 1,500,000 without support risks an addition.
+Section 73 Table serial 17 of the 2025 Act makes the value taxed under section 92(2)(m) the cost of a "capital asset" when "the capital gain arises" on its transfer. A VDA held as an investment is a capital asset (section 2(22)), and section 194 only sets the rate on income from its transfer; but section 194 allows only "cost of acquisition, if any", and the cited passages do not expressly resolve that section 73/194 interaction. Whether the cost on the sale is 1,500,000 or nil is a question for an accountant. Refer before filing. Using nil overstates the gain by 1,500,000; using 1,500,000 without support risks an addition.
 
 
 ### Recomputing check 1: sale gain, disallowed sale fee and TDS credit
@@ -513,7 +513,7 @@ expected:
 
 Refer to an accountant when:
 
-- Income from mining, staking, lending, yield, liquidity pools, a paid airdrop, or an NFT royalty needs a head of income: the Act does not settle it.
+- Income from mining, staking, lending, yield, liquidity pools, a paid airdrop, or an NFT royalty needs a head of income: it is not yet confirmed here from the cited provisions.
 - The cost of a gifted or free VDA on a later sale matters (Example 3), or a fork or airdrop needs a cost.
 - The client gave a VDA away, or moved VDAs between wallets and the department may see the move as a transfer.
 - The seller is a non-resident, or the client is a non-resident or not ordinarily resident.
