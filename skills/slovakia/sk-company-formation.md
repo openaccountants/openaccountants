@@ -50,7 +50,7 @@ Use this method to choose the legal vehicle and register an ordinary Slovak s.r.
 | General partnership, v.o.s. | At least 2 persons (in words on the page), trading under a common name and jointly and severally liable with all their assets | [Commercial Code § 76](https://www.slov-lex.sk/static/SK/ZZ/1991/513/20260817.html) |
 | Limited partnership, k.s. | At least 1 limited partner and 1 general partner (in words on the page). Limited partners answer up to the unpaid registered contribution, minimum EUR 250; general partners answer with all their assets | [Commercial Code §§ 93(1), 93(3)](https://www.slov-lex.sk/static/SK/ZZ/1991/513/20260817.html) |
 
-For an individual v.o.s. partner or k.s. general partner, the partnership tax-base share follows the agreement's profit-sharing ratio, otherwise equal shares. This is not the limited partner's method. Use [slovakia-pit](slovakia-pit.md) for the individual's tax treatment and [sk-corporate-income-tax](sk-corporate-income-tax.md) for company taxation; the limited-partner allocation remains a boundary below. [Income Tax Act § 6(7)-(8)](https://www.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html).
+For an individual v.o.s. partner or k.s. general partner, subject to the reverse-hybrid exception in § 17j(1), the partnership tax-base share follows the agreement's profit-sharing ratio, otherwise equal shares. This is not the limited partner's method. Use [slovakia-pit](slovakia-pit.md) for the individual's tax treatment and [sk-corporate-income-tax](sk-corporate-income-tax.md) for company taxation; the limited-partner allocation remains a boundary below. [Income Tax Act §§ 6(7)-(8), 17j](https://www.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html).
 
 ### Check the founders and directors separately
 
@@ -186,7 +186,7 @@ expected:
 ## When to refuse or refer
 
 - Missing founder/director eligibility, actual contribution, seat, beneficial-owner or authority evidence: stop the filing until resolved.
-- Regulated activity, in-kind valuation, special rights, restructurings, contested residence or a limited-partner allocation: obtain the relevant legal/tax analysis before applying an ordinary s.r.o. answer.
+- Regulated activity, in-kind valuation, special rights, restructurings, contested residence, a possible reverse hybrid under Income Tax Act § 17j, or a limited-partner allocation: obtain the relevant legal/tax analysis before applying an ordinary s.r.o. answer.
 - Do not promise a complete setup time from the register's statutory processing period, treat a receipt as approval, count capital as a fee, or claim accountant approval for this rewrite.
 - Use the owning tax skill's actual form and period; registration does not itself settle tax residence, VAT or payroll status.
 
@@ -208,7 +208,7 @@ expected:
 | Court Fees Act, § 6 and items 17/17a; official binding PDF pages 27-28 visually checked | https://www.slov-lex.sk/static/SK/ZZ/1992/71/20260817.html | 2026-11-15 |
 | Court Fees Act, historical item 17, version 12 June to 16 August 2026 | https://static.slov-lex.sk/static/SK/ZZ/1992/71/20260612.html | 2026-11-15 |
 | Accounting Act, deposit, approval and electronic submission, § 23a | https://www.slov-lex.sk/static/SK/ZZ/2002/431/20260601.html | 2026-11-15 |
-| Income Tax Act, individual partnership allocation § 6(7)-(8); return/payment/extensions and accounts deadline § 49 | https://www.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html | 2026-11-15 |
+| Income Tax Act, individual partnership allocation § 6(7)-(8) and reverse-hybrid exception § 17j; return/payment/extensions and accounts deadline § 49 | https://www.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html | 2026-11-15 |
 | Ministry, ordinary first-registration service: public instructions and annex list | https://sluzby.orsr.sk/Sluzby/ZapisSro | 2026-11-15 |
 | Ministry, simplified first-registration service: eligibility, business-authorisation warning and public instructions | https://sluzby.orsr.sk/Sluzby/ZapisSroZjednodusenymSposobom | 2026-11-15 |
 | Ministry FAQ: registrar choice, electronic receipt, payment/correction follow-up, notarial remuneration versus court fee | https://www.justice.gov.sk/sluzby/obchodny-register/najcastejsie-otazky/ | 2026-11-15 |
