@@ -138,7 +138,7 @@ Owner: Ryan Duguid
 | [Bhutan](bhutan/) | Needs writing | 6 | 0 | 0 |
 | [British Indian Ocean Territory](british-indian-ocean-territory/) | Needs writing | 1 | 1 | 0 |
 | [Brunei](brunei/) | Needs writing | 7 | 7 | 0 |
-| [Cambodia](cambodia/) | Needs writing | 6 | 0 | 0 |
+| [Cambodia](cambodia/) | Needs writing | 6 | 6 | 0 |
 | [China](china/) | Needs writing | 15 | 15 | 0 |
 | [Christmas Island](christmas-island/) | Needs writing | 5 | 5 | 0 |
 | [Cocos (Keeling) Islands](cocos-keeling-islands/) | Needs writing | 5 | 5 | 0 |
@@ -152,17 +152,17 @@ Owner: Ryan Duguid
 | [Japan](japan/) | Needs writing | 18 | 18 | 0 |
 | [Kazakhstan](kazakhstan/) | Needs writing | 17 | 17 | 0 |
 | [Kiribati](kiribati/) | Needs writing | 1 | 1 | 0 |
-| [Kyrgyzstan](kyrgyzstan/) | Needs writing | 6 | 0 | 0 |
+| [Kyrgyzstan](kyrgyzstan/) | Needs writing | 6 | 6 | 0 |
 | [Laos](laos/) | Needs writing | 5 | 2 | 0 |
 | [Macau](macau/) | Needs writing | 5 | 0 | 0 |
 | [Malaysia](malaysia/) | Needs writing | 8 | 7 | 1 |
 | [Maldives](maldives/) | Needs writing | 6 | 0 | 0 |
 | [Marshall Islands](marshall-islands/) | Needs writing | 1 | 1 | 0 |
 | [Micronesia](micronesia/) | Needs writing | 1 | 1 | 0 |
-| [Mongolia](mongolia/) | Needs writing | 5 | 0 | 0 |
+| [Mongolia](mongolia/) | Needs writing | 5 | 5 | 0 |
 | [Myanmar](myanmar/) | Needs writing | 6 | 6 | 0 |
 | [Nauru](nauru/) | Needs writing | 4 | 4 | 0 |
-| [Nepal](nepal/) | Needs writing | 5 | 0 | 1 |
+| [Nepal](nepal/) | Needs writing | 5 | 4 | 1 |
 | [New Caledonia](new-caledonia/) | Needs writing | 1 | 1 | 0 |
 | [New Zealand](new-zealand/) | Needs writing | 20 | 18 | 0 |
 | [Niue](niue/) | Needs writing | 1 | 1 | 0 |
@@ -181,7 +181,7 @@ Owner: Ryan Duguid
 | [Taiwan](taiwan/) | Needs writing | 6 | 6 | 0 |
 | [Tajikistan](tajikistan/) | Needs writing | 6 | 6 | 0 |
 | [Thailand](thailand/) | Needs writing | 8 | 1 | 0 |
-| [Timor Leste](timor-leste/) | Needs writing | 6 | 0 | 0 |
+| [Timor Leste](timor-leste/) | Needs writing | 6 | 6 | 0 |
 | [Tonga](tonga/) | Needs writing | 6 | 0 | 0 |
 | [Turkmenistan](turkmenistan/) | Needs writing | 6 | 4 | 0 |
 | [Tuvalu](tuvalu/) | Needs writing | 1 | 1 | 0 |
