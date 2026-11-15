@@ -10,17 +10,20 @@ description: >
   lucro real versus presumido decision. Trigger on IRPJ, CSLL, lucro presumido,
   lucro real, Brazil company tax, ECF and corporate tax Brazil. Financial-sector
   rates, incentives, reorganisations and multinational minimum tax need separate advice.
+  Also the regime overview (regimes tributários) comparing Simples Nacional, lucro
+  presumido and lucro real, with PIS/Cofins under each and the 2026 CBS and IBS test
+  rates. Trigger on regime tributário, Simples ou lucro presumido, IBS, CBS and reforma tributária.
 jurisdiction: BR
 category: international
 domain: corporate-tax
 type: situation-rules
 tax_year: 2026
-version: 0.1
+version: 0.2
 tier: 2
-last_updated: 2026-11-11
+last_updated: 2026-11-15
 ---
 
-# Brazil corporate income tax: IRPJ and CSLL in 2026 v0.1
+# Brazil corporate income tax: IRPJ and CSLL in 2026 v0.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -59,6 +62,32 @@ Each quotation is the short original wording of the cited provision. The computa
 | Late federal tax payment | 0.33% per day, maximum 20%, plus statutory interest | [Lei 9.430 art. 61](https://www.planalto.gov.br/ccivil_03/leis/l9430.htm#art61): "trinta e três centésimos por cento, por dia de atraso"; "limitado a vinte por cento" |
 
 ## The base
+
+### Choosing a regime in 2026: Simples Nacional, lucro presumido or lucro real
+
+Use this overview when the question is "which tax regime" (regimes tributários) for a Brazilian company. It gives the gate figures for each regime and the consumption-tax consequence that travels with it, then hands the computation to the owner skill. Test eligibility in this order: Simples Nacional first, then lucro presumido, otherwise lucro real. A company may be eligible for more than one; the choice is then a cost comparison over the whole year, as in the second worked example below.
+
+| Regime and gate, 2026 | Figure and conditions | Official source and exact words |
+|---|---|---|
+| Simples Nacional, microempresa | Gross revenue in each calendar year at most BRL 360,000; activity, ownership and other exclusions in LC 123 still apply; owner skill br-simples-nacional | [LC 123 art. 3 I](https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp123.htm): "receita bruta igual ou inferior a R$ 360.000,00" |
+| Simples Nacional, empresa de pequeno porte | Gross revenue above BRL 360,000 and at most BRL 4,800,000 in each calendar year; the separate export ceiling, state/municipal sublimit, annex rates and factor R are in br-simples-nacional | [LC 123 art. 3 II](https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp123.htm): "igual ou inferior a R$ 4.800.000,00 (quatro milhões e oitocentos mil reais)" |
+| Lucro presumido, revenue gate | Prior-year total gross revenue at most BRL 78,000,000, or BRL 6,500,000 times active months if fewer than 12; the mandatory lucro real categories in art. 14 switch it off | [Lei 9.718 art. 13](https://www.planalto.gov.br/ccivil_03/leis/l9718.htm): "igual ou inferior a R$ 78.000.000,00"; "R$ 6.500.000,00" |
+| Lucro presumido, IRPJ presumption | 8% of gross revenue for trading and industry; 1.6% fuel resale; 16% non-cargo transport; 32% general services. Above BRL 1,250,000 of relevant revenue in a 2026 quarter the excess slice uses 1.1 times the percentage (see the rates table) | [Lei 9.249 art. 15](https://www.planalto.gov.br/ccivil_03/leis/l9249.htm): "percentual de 8%"; "um inteiro e seis décimos por cento"; "dezesseis por cento"; "trinta e dois por cento" |
+| Lucro presumido, CSLL presumption | 12% of gross revenue; 32% for the art. 15 §1 III service activities; the 2026 increase applies to CSLL from the second quarter | [Lei 9.249 art. 20 I, III](https://www.planalto.gov.br/ccivil_03/leis/l9249.htm): "32% (trinta e dois por cento)"; "12% (doze por cento) para as demais receitas brutas" |
+| Lucro presumido and lucro real, income tax rates | IRPJ 15%, plus 10% on the base above BRL 20,000 times the months of the period; ordinary CSLL 9% on its own base. Lucro real applies these to adjusted book profit, lucro presumido to the presumed base | [Lei 9.249 art. 3](https://www.planalto.gov.br/ccivil_03/leis/l9249.htm): "quinze por cento"; "dez por cento"; [Lei 7.689 art. 3 III](https://www.planalto.gov.br/ccivil_03/leis/l7689.htm): "9% (nove por cento)" |
+| PIS/Cofins with lucro presumido: cumulative | PIS 0.65% and Cofins 3% on revenue, no input credits; companies taxed on lucro presumido or arbitrado stay outside the non-cumulative system. Special products and entities have other rates; owner skill brazil-vat | [Lei 9.715 art. 8 I](https://www.planalto.gov.br/ccivil_03/leis/l9715.htm): "zero vírgula sessenta e cinco por cento sobre o faturamento" (0.65% in words on the page); [Lei 9.718 art. 8](https://www.planalto.gov.br/ccivil_03/leis/l9718.htm): "três por cento" (3% in words on the page); [Lei 10.637 art. 8 II](https://www.planalto.gov.br/ccivil_03/leis/2002/l10637.htm): "com base no lucro presumido ou arbitrado" |
+| PIS/Cofins with lucro real: non-cumulative | PIS 1.65% and Cofins 7.6% (9.25% combined, derived as the sum) with the statutory input credits; art. 8 of Lei 10.637 and art. 10 of Lei 10.833 keep some revenues and entities in the cumulative system even under lucro real; owner skill brazil-vat | [Lei 10.637 art. 2](https://www.planalto.gov.br/ccivil_03/leis/2002/l10637.htm): "a alíquota de 1,65%"; [Lei 10.833 art. 2](https://www.planalto.gov.br/ccivil_03/leis/2003/l10.833.htm): "a alíquota de 7,6%" |
+| 2026 test year of the consumption-tax reform, CBS and IBS | CBS 0.9% and IBS (state) 0.1% in 2026. The amount paid is offset against PIS/Cofins, then against any other federal tax or refunded within 60 days on request; taxpayers who meet the ancillary obligations may be dispensed from payment. LC 214/2025 arts. 343 to 348 carry the detail; owner skill brazil-vat | [Constitution ADCT art. 125, EC 132](https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc132.htm): "alíquota estadual de 0,1%"; "alíquota de 0,9%"; "ressarcido em até 60 (sessenta) dias" |
+| 2026 payment dispensation in practice | A taxpayer that issues its electronic fiscal documents (NF-e, NFC-e, NFS-e and the others listed) with CBS and IBS shown under the technical notes in force is dispensed from paying them in 2026; so is one with no defined ancillary obligation | [RFB and CGIBS joint communiqué, item 6](https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2025/dezembro/comunicado-conjunto): "estará dispensado de recolhimento do IBS e da CBS" |
+
+How the regimes differ in practice:
+
+1. **Simples Nacional** collects IRPJ, IPI, CSLL, Cofins, PIS/Pasep, CPP (except for the art. 18 §5-C services) and, within the sublimit, ICMS and ISS through one monthly document ([LC 123 art. 13 I-VIII](https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp123.htm): "mediante documento único de arrecadação"). The charge is the annex rate on revenue, so it tends to suit businesses inside the ceiling whose margins are high relative to that rate; the annex, factor R and the separate 2027 choice of regular IBS/CBS collection are in [br-simples-nacional](br-simples-nacional.md).
+2. **Lucro presumido** taxes a fixed share of revenue, so it tends to cost less when the real margin is above the presumption and input credits would be small. Work the figures; the presumption is not a tax rate. It brings cumulative PIS/Cofins at 3.65% combined with no credits.
+3. **Lucro real** taxes actual adjusted profit, so it tends to cost less when margins are thin or there are losses, and it is mandatory above the BRL 78,000,000 gate and for the art. 14 categories. It brings non-cumulative PIS/Cofins at 9.25% with input credits.
+4. **From 2027** the CBS transition replaces the legacy federal contributions on the conditions in ADCT arts. 126 and 127, and the CBS reference rate was not yet fixed at the read date. Do not choose a 2026 regime on assumed 2027 rates; the transition and the separate 2027 Simples choice of regular IBS/CBS collection are in [brazil-vat](brazil-vat.md) and [br-simples-nacional](br-simples-nacional.md).
+
+Compare the regimes over the whole expected year: income tax under each regime, PIS/Cofins with and without credits, payroll (Simples CPP against the employer contribution in [brazil-payroll](brazil-payroll.md)) and ICMS/ISS from [br-indirect-tax](br-indirect-tax.md). The lucro presumido option covers the whole calendar year and is made with the payment of the first or only quota for the first period of the year ([Lei 9.430 art. 26 caput, §1](https://www.planalto.gov.br/ccivil_03/leis/l9430.htm): "em cada ano-calendário"; "pagamento da primeira ou única quota"). Simples entry follows its own route and dates in br-simples-nacional.
 
 ### Lucro real
 
@@ -197,5 +226,14 @@ Read dates below record reading the listed provisions and neighbouring exception
 | RFB MIT manual, sections 4-7 and 8.3; debit/suspension entry, validation, closure and downstream DCTFWeb handoff | https://www.gov.br/receitafederal/pt-br/assuntos/orientacao-tributaria/declaracoes-e-demonstrativos/DCTFWeb/arquivos/manual-mit-1-0-14-02.pdf | 2026-11-11 |
 | Lei 15.270/2025 arts. 2-3,8; resident/outbound distributions, transition and commencement | https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15270.htm | 2026-11-11 |
 | LC 214/2025 arts. 343-348, including LC 227/2026 additions; consumption-tax transition | https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm | 2026-11-11 |
+| Read for the regime overview, LC 123/2006 arts. 3 I-II and 13 I-VIII; ME and EPP revenue ceilings and the taxes collected in the single document | https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp123.htm | 2026-11-15 |
+| Read for the regime overview, Lei 9.718/1998 arts. 8 and 13; cumulative Cofins 3% and the lucro presumido gate | https://www.planalto.gov.br/ccivil_03/leis/l9718.htm | 2026-11-15 |
+| Read for the regime overview, Lei 9.249/1995 arts. 3, 15 and 20; IRPJ rate, surcharge and presumption percentages | https://www.planalto.gov.br/ccivil_03/leis/l9249.htm | 2026-11-15 |
+| Read for the regime overview, Lei 9.430/1996 art. 26 caput and §1; lucro presumido option for the year and how it is made | https://www.planalto.gov.br/ccivil_03/leis/l9430.htm | 2026-11-15 |
+| Read for the regime overview, Lei 9.715/1998 art. 8 I; cumulative PIS 0.65% | https://www.planalto.gov.br/ccivil_03/leis/l9715.htm | 2026-11-15 |
+| Read for the regime overview, Lei 10.637/2002 arts. 2 and 8 II; non-cumulative PIS 1.65% and the lucro presumido exclusion | https://www.planalto.gov.br/ccivil_03/leis/2002/l10637.htm | 2026-11-15 |
+| Read for the regime overview, Lei 10.833/2003 arts. 2 and 10 II; non-cumulative Cofins 7.6% and the lucro presumido exclusion | https://www.planalto.gov.br/ccivil_03/leis/2003/l10.833.htm | 2026-11-15 |
+| Read for the 2026 test rates, EC 132/2023 inserting ADCT art. 125 caput and §§1-4; CBS 0.9%, IBS 0.1%, offset, refund and dispensation | https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc132.htm | 2026-11-15 |
+| Read for the 2026 dispensation, RFB and CGIBS joint communiqué (published 2 December 2025, updated 28 October 2026), items 1, 2 and 6 | https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2025/dezembro/comunicado-conjunto | 2026-11-15 |
 
-Not yet confirmed: calendar-2026 ECF layout record/field numbers; current regime-specific ECF/DCTFWeb return-penalty amounts and reductions; case-specific court orders affecting pre-2026 dividend approval dates; detailed operational foreign-beneficiary credit procedure. These figures/procedures are omitted, not inferred. The specialist regimes listed out of scope require separate source work.
+Not yet confirmed: whether and how the 2026 CBS 0.9% and IBS 0.1% test rates apply to Simples Nacional optants (LC 214/2025 arts. 343 to 348 were not re-read for this overview; follow br-simples-nacional and brazil-vat); the 2027 CBS reference rate; calendar-2026 ECF layout record/field numbers; current regime-specific ECF/DCTFWeb return-penalty amounts and reductions; case-specific court orders affecting pre-2026 dividend approval dates; detailed operational foreign-beneficiary credit procedure. These figures/procedures are omitted, not inferred. The specialist regimes listed out of scope require separate source work.
