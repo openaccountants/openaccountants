@@ -16,7 +16,7 @@ category: international
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
-An ordinary limited liability company (OsOO) can have one or more founders, but its participant limit and contribution obligations matter. Use the registration edition in force on the actual application date.
+An ordinary limited liability company (OsOO) can have 1 or more founders, but its participant limit and contribution obligations matter. Use the registration edition in force on the actual application date.
 
 ## Who this applies to
 
@@ -28,10 +28,10 @@ The registration reference below uses the 17 April 2026 Regulation257 edition in
 
 | Item | Rule and conditions | Official source |
 |---|---|---|
-| OsOO founders and liability | One or more persons; participants ordinarily risk their contributed amounts, while unpaid contributors are jointly liable within the unpaid contribution portion, Civil Code art127 | https://cbd.minjust.gov.kg/3-1/edition/latest/ru |
+| OsOO founders and liability | 1 or more persons (in words on the page); participants ordinarily risk their contributed amounts, while unpaid contributors are jointly liable within the unpaid contribution portion, Civil Code art127 | https://cbd.minjust.gov.kg/3-1/edition/latest/ru |
 | OsOO participant limit | 30 (in words on the page), art128(1), not the seed's limit; excess requires conversion to a joint-stock company within 1 year or reduction, otherwise judicial liquidation | https://cbd.minjust.gov.kg/3-1/edition/latest/ru |
 | OsOO charter capital | Amount determined by participants in constitutive documents, art130(1); this ordinary rule sets no fixed minimum amount and does not validate the seed's customary amount | https://cbd.minjust.gov.kg/3-1/edition/latest/ru |
-| Capital payment | Full payment within the first year after state registration, art130(3), in words on the page; non-payment requires registered reduction or liquidation; no release by offsetting a claim against the company, art130(2) | https://cbd.minjust.gov.kg/3-1/edition/latest/ru |
+| Capital payment | Full payment within 1 year after state registration, art130(3), in words on the page; non-payment requires registered reduction or liquidation; no release by offsetting a claim against the company, art130(2) | https://cbd.minjust.gov.kg/3-1/edition/latest/ru |
 | Ordinary registration | 3 working days under Regulation257 para18; timing starts the day after receipt under para22; interruption/refusal rules and special procedures apply | https://cbd.minjust.gov.kg/230044970/edition/51790/ru?editionCode=exact |
 | Financial-credit/foreign-organisation registration categories | 5 working days under para19; political-party category uses 10 under para20; not an ordinary-company timeline range | https://cbd.minjust.gov.kg/230044970/edition/51790/ru?editionCode=exact |
 | Registration cost | Registration levy and service charge under para25; the amount must be checked against the current tariff. The state/municipal exemption is not a general free-company rule | https://cbd.minjust.gov.kg/230044970/edition/51790/ru?editionCode=exact |
