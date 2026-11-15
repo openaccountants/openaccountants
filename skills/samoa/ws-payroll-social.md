@@ -18,7 +18,7 @@ version: 0.1
 
 ## Who this applies to
 
-Employers paying ordinary wages in Samoa in 2026: operate PAYE, register and contribute to SNPF, and separately register/pay ACC levies. Establish employee status, wage components, pay frequency and any exemption before computing. SNPF’s statutory employee definition extends beyond conventional full-time employees; do not exclude casual or family-business work solely because no formal employment contract exists. [section 93](https://www.ag.gov.ws/wp-content/uploads/2024/02/Income-Tax-Act-2012.pdf); [section 19](https://www.npf.ws/_files/ugd/2b7bf6_424e99682c134c08aa7789baf544d3c3.pdf); [section 20](https://www.npf.ws/_files/ugd/2b7bf6_424e99682c134c08aa7789baf544d3c3.pdf); [registration and levy payment frequency](https://acc.gov.ws/index.php/faq/).
+Employers paying ordinary wages in Samoa in 2026: operate PAYE, register and contribute to SNPF, and separately register/pay ACC levies. Establish employee status, wage components, pay frequency and any exemption before computing. SNPF’s statutory employee definition extends beyond conventional full-time employees; do not exclude casual or family-business work solely because no formal employment contract exists. [section 93](https://www.ag.gov.ws/wp-content/uploads/2024/02/Income-Tax-Act-2012.pdf); [section 19](https://www.npf.ws/_files/ugd/2b7bf6_424e99682c134c08aa7789baf544d3c3.pdf); [section 20](https://www.npf.ws/_files/ugd/2b7bf6_424e99682c134c08aa7789baf544d3c3.pdf); [registration and levy payment frequency](https://acc.gov.ws/index.php/faq/); [section 2, employee definition including family/village work](https://www.npf.ws/_files/ugd/2b7bf6_424e99682c134c08aa7789baf544d3c3.pdf).
 
 ## Rates, bands and thresholds
 
@@ -54,7 +54,7 @@ SNPF ordinary contributions and schedule are monthly, due no later than the 7th 
 
 PAYE late returns/payments are subject to the [income-tax penalty and interest rules](ws-income-tax.md#penalties-and-interest); the payer remains personally liable for failure to withhold/remit. SNPF section 25 imposes a 24% annual surcharge from due date if contributions remain unpaid 14 days after due date; the guide describes 2% monthly after month-end grace, an equivalent nominal rate but not a substitute day-count calculation. The Fund may remit surcharge. [section 99](https://www.ag.gov.ws/wp-content/uploads/2024/02/Income-Tax-Act-2012.pdf); [section 25](https://www.npf.ws/_files/ugd/2b7bf6_424e99682c134c08aa7789baf544d3c3.pdf); [Employees Contribution, current 10% + 10%](https://www.npf.ws/employers-guide).
 
-ACC has a separate late-levy surcharge with a 14-day trigger, daily rate of 1/20%, statutory accrual reference after 7 days from wage payment, WST 1 minimum and rounding up to the next WST 1. Do not apply the SNPF surcharge to ACC or calculate ACC arrears without the wage dates, due-date direction, payment date and statutory text. [section 52A, late levy surcharge](https://acc.gov.ws/wp-content/uploads/2026/05/ACC-ACT-Consolidated-2022-1.pdf).
+ACC has a separate late-levy surcharge with a 14-day trigger, daily rate of 1/20%, statutory accrual reference after 7 days from wage payment, WST 1 minimum and rounding up to the next WST 1. Do not apply the SNPF surcharge to ACC or calculate ACC arrears without the wage dates, due-date direction, payment date and statutory text. [section 52A](https://acc.gov.ws/wp-content/uploads/2026/05/ACC-ACT-Consolidated-2022-1.pdf).
 
 ## Cross-border points
 
@@ -116,10 +116,10 @@ Read on **2026-11-15** for the stated sections. The Attorney General tax consoli
 
 | Source and scope actually read | URL | Read on |
 |---|---|---|
-| Read for section 52, complete tala and payment determination; section 52A, late levy surcharge | https://acc.gov.ws/wp-content/uploads/2026/05/ACC-ACT-Consolidated-2022-1.pdf | 2026-11-15 |
+| Read for section 52, complete tala and payment determination; section 52A | https://acc.gov.ws/wp-content/uploads/2026/05/ACC-ACT-Consolidated-2022-1.pdf | 2026-11-15 |
 | Read for registration and levy payment frequency | https://acc.gov.ws/index.php/faq/ | 2026-11-15 |
 | Read for Schedule 1 paragraphs 1-2; section 60; section 7; section 9; section 93; section 99; Schedule 1 paragraph 7 | https://www.ag.gov.ws/wp-content/uploads/2024/02/Income-Tax-Act-2012.pdf | 2026-11-15 |
-| Read for Part 13 section 90, separate Medisave provisions; section 19; section 20; section 22; section 25; section 2, wages definition | https://www.npf.ws/_files/ugd/2b7bf6_424e99682c134c08aa7789baf544d3c3.pdf | 2026-11-15 |
+| Read for Part 13 section 90, separate Medisave provisions; section 19; section 20; section 22; section 25; section 2, employee definition including family/village work; section 2, wages definition | https://www.npf.ws/_files/ugd/2b7bf6_424e99682c134c08aa7789baf544d3c3.pdf | 2026-11-15 |
 | Read for sections 1-6, scanned pages visually checked | https://revenue.gov.ws/wp-content/uploads/2025/01/Income-Tax-Amendment-Act-2022-No.5-1.pdf | 2026-11-15 |
 | Read for fortnightly whole-tala table, effective 1 January 2018; footnotes, secondary employment | https://revenue.gov.ws/wp-content/uploads/2022/09/Manual-Schedule-Fortnight-1.pdf | 2026-11-15 |
 | Read for Employer obligations; printed 21 August 2020, republished October 2026 | https://revenue.gov.ws/wp-content/uploads/2026/10/IS02_Salary-and-Wage-Income-Tax-2026.pdf | 2026-11-15 |

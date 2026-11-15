@@ -119,7 +119,7 @@ Read on **2026-11-15** for the stated sections. The Attorney General tax consoli
 
 | Source and scope actually read | URL | Read on |
 |---|---|---|
-| Read for Schedule 2, exempt supplies and financial services; section 1; section 18; section 25; section 26; section 29; section 3; section 30; section 41; section 42; section 43; section 8; section 9; Schedule 3 Part 1 clauses 1-3 | https://www.ag.gov.ws/wp-content/uploads/2024/02/Value-Added-Goods-and-Services-Tax-Act-2015.pdf | 2026-11-15 |
+| Read for Schedule 3 educational-services definition; Schedule 2, exempt supplies and financial services; Schedule 2 financial-services definition and exclusions; Schedule 3 hospital definition, Ministry of Health facilities; section 1; section 18; section 25; section 26; section 29; section 3; section 30; section 41; section 42; section 43; section 8; section 9; Schedule 3 water definition and exclusions; Schedule 3 Part 1 clauses 1-3 | https://www.ag.gov.ws/wp-content/uploads/2024/02/Value-Added-Goods-and-Services-Tax-Act-2015.pdf | 2026-11-15 |
 | Read for Collection & Enforcement Services FAQ | https://revenue.gov.ws/revenue-faq-2/ | 2026-11-15 |
 | Read for regulation 2, scanned page 2 visually checked | https://revenue.gov.ws/wp-content/uploads/2025/01/Tax-Administration-Late-Payment-Interest-Regulations-2015.pdf | 2026-11-15 |
 | Read for Tax Due Dates and footnote | https://revenue.gov.ws/inland-revenue-services/ | 2026-11-15 |
