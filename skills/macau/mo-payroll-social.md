@@ -50,13 +50,13 @@ Mandatory FSS covers resident employees working under an employer’s authority/
 
 | First excess over the applicable exemption | Next MOP 20,000 at 7% | 2026 income; exemption changed by Budget | [article 7](https://bo.dsaj.gov.mo/bo/i/78/08/lei02.asp?printer=1); [2026 Budget Law 13/2025 article 18](https://bo.dsaj.gov.mo/bo/i/2025/52/lei13.asp?printer=1) |
 
-| Second excess band | Next MOP 20,000 at 8% | 2026 income; exemption changed by Budget | [article 7](https://bo.dsaj.gov.mo/bo/i/78/08/lei02.asp?printer=1); [2026 Budget Law 13/2025 article 18](https://bo.dsaj.gov.mo/bo/i/2025/52/lei13.asp?printer=1) |
+| Second excess band | Excess MOP 20,001-40,000 above exemption at 8%; width MOP 20,000, derived | 2026 income; exemption changed by Budget | [article 7](https://bo.dsaj.gov.mo/bo/i/78/08/lei02.asp?printer=1); [2026 Budget Law 13/2025 article 18](https://bo.dsaj.gov.mo/bo/i/2025/52/lei13.asp?printer=1) |
 
-| Third excess band | Next MOP 40,000 at 9% | 2026 income; exemption changed by Budget | [article 7](https://bo.dsaj.gov.mo/bo/i/78/08/lei02.asp?printer=1); [2026 Budget Law 13/2025 article 18](https://bo.dsaj.gov.mo/bo/i/2025/52/lei13.asp?printer=1) |
+| Third excess band | Excess MOP 40,001-80,000 above exemption at 9%; width MOP 40,000, derived | 2026 income; exemption changed by Budget | [article 7](https://bo.dsaj.gov.mo/bo/i/78/08/lei02.asp?printer=1); [2026 Budget Law 13/2025 article 18](https://bo.dsaj.gov.mo/bo/i/2025/52/lei13.asp?printer=1) |
 
-| Fourth excess band | Next MOP 80,000 at 10% | 2026 income; exemption changed by Budget | [article 7](https://bo.dsaj.gov.mo/bo/i/78/08/lei02.asp?printer=1); [2026 Budget Law 13/2025 article 18](https://bo.dsaj.gov.mo/bo/i/2025/52/lei13.asp?printer=1) |
+| Fourth excess band | Excess MOP 80,001-160,000 above exemption at 10%; width MOP 80,000, derived | 2026 income; exemption changed by Budget | [article 7](https://bo.dsaj.gov.mo/bo/i/78/08/lei02.asp?printer=1); [2026 Budget Law 13/2025 article 18](https://bo.dsaj.gov.mo/bo/i/2025/52/lei13.asp?printer=1) |
 
-| Fifth excess band | Next MOP 120,000 at 11% | 2026 income; exemption changed by Budget | [article 7](https://bo.dsaj.gov.mo/bo/i/78/08/lei02.asp?printer=1); [2026 Budget Law 13/2025 article 18](https://bo.dsaj.gov.mo/bo/i/2025/52/lei13.asp?printer=1) |
+| Fifth excess band | Excess MOP 160,001-280,000 above exemption at 11%; width MOP 120,000 = 280,000 minus 160,000, derived | 2026 income; exemption changed by Budget | [article 7](https://bo.dsaj.gov.mo/bo/i/78/08/lei02.asp?printer=1); [2026 Budget Law 13/2025 article 18](https://bo.dsaj.gov.mo/bo/i/2025/52/lei13.asp?printer=1) |
 
 | Remaining excess over the exemption plus MOP 280,000 | 12% | 2026 income; exemption changed by Budget | [article 7](https://bo.dsaj.gov.mo/bo/i/78/08/lei02.asp?printer=1); [2026 Budget Law 13/2025 article 18](https://bo.dsaj.gov.mo/bo/i/2025/52/lei13.asp?printer=1) |
 
