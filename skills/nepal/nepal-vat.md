@@ -20,7 +20,7 @@ Prepare a Nepal VAT working paper for practitioner review, using `vat-workflow-b
 
 Historical credit retained from the earlier version only; it does not approve the present rewrite:
 
-**Validated by** - Verified by Ashish Bista (ICAN: 1765) on 2026-06-06
+**Validated by** - Verified by Ashish Bista on 2026-06-06
 
 This version is a source-cited draft and has no new accountant approval. The frontmatter remains tier 2.
 
