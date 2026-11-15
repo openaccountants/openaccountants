@@ -29,7 +29,7 @@ Quick answer: PSEB-registered qualifying proceeds attract 0.25%; another qualify
 |---|---|---|
 | Export proceeds of computer software, IT or IT-enabled services by persons registered with PSEB; the published table covers tax years 2024 through 2026 | 0.25% of proceeds | [First Schedule Part III Division IVA, row 1](https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf) |
 | Any other case within s.154A, including qualifying exported services; lack of PSEB does not itself prove that ordinary slabs apply | 1% of proceeds | [Division IVA, row 2; s.154A(1)(b)](https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf) |
-| Normal tax year, unless an authorised special year applies | 12 months ending 30 June; tax year 2026 starts 1 July 2025 (derived calendar dates) | [s.74](https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf) |
+| Normal tax year, unless an authorised special year applies | 12 months ending 30 June; tax year 2026 starts 1 July 2025 (derived calendar dates) The 12-month duration is in words on the page. | [s.74](https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf) |
 
 ## The base
 

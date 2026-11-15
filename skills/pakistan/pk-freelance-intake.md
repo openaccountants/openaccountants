@@ -20,7 +20,7 @@ type: router
 
 Entry point for Pakistan resident self-employed individuals, sole proprietors, AOP partners and small private-company founders, preparing a reviewer package for tax year 2026, the normal year 1 July 2025 to 30 June 2026. Its job is evidence collection, classification and routing; it does not file a return or certify tax. Company status routes to the company skill, rather than being treated as an individual's business. Non-resident, uncertain-residence and special regimes require specialist handling.
 
-Quick answer: read the available documents first, identify the person, period and income streams, then load the relevant skills. The salary-table gate is more than 75% of taxable income, not the old 50% threshold. The repealed 120-day-plus-prior 365-day residence test must not be used. [ITO s.82 and First Schedule Division I](https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf).
+Quick answer: read the available documents first, identify the person, period and income streams, then load the relevant skills. The salary-table gate is more than 75% of taxable income (source: “seventy-five per cent”), not the old 50% threshold. The repealed 120-day-plus-prior 365-day residence test must not be used. [ITO s.82 and First Schedule Division I](https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf).
 
 ## Ask the client first
 
@@ -43,7 +43,7 @@ Do not request passwords in the intake package. Access status is enough for rout
 
 1. **Open and sweep scope.** Explain the document-to-reviewer workflow and establish residence, entity, income mix, turnover and province. Non-resident/uncertain cases pause final classification. AJK/GB require their own administration analysis, not this ordinary Pakistan workflow. Income-tax residence under s.82 includes presence of at least 183 days, government posting, and the separate citizenship/foreign-residence alternatives (figures in words on the page). A resident AOP has a different s.84 test. [ss.82,84](https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf).
 2. **Read and infer.** Import all accounts and source documents; separate gross receipts, costs, transfers, foreign conversion, withholding suffered and advances. Never re-ask a fact clearly evidenced by documents. Reconcile contradictory figures and present the discrepancy with sources instead of choosing an arbitrary higher-tax number.
-3. **Classify entity and income.** Individual/AOP annual income returns are under s.114; s.116 requires the resident individual's wealth/reconciliation statements and, under its first proviso, every AOP member's statements along with the AOP's income return; it is not the AOP's income-return form. Salary-table eligibility is more than 75% salary of taxable income; the remaining individual/AOP table is shared, with a professional-AOP proviso. A company needs its applicable company regime. Do not certify an old form 32 A or guessed portal identifier. [ss.11,92,114,116; First Schedule](https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf).
+3. **Classify entity and income.** Individual/AOP annual income returns are under s.114; s.116 requires the resident individual's wealth/reconciliation statements and, under its first proviso, every AOP member's statements along with the AOP's income return; it is not the AOP's income-return form. Salary-table eligibility is more than 75% salary of taxable income (source: “seventy-five per cent”); the remaining individual/AOP table is shared, with a professional-AOP proviso. A company needs its applicable company regime. Do not certify an old form 32 A or guessed portal identifier. [ss.11,92,114,116; First Schedule](https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf).
 4. **Test export candidate.** Genuine PSEB IT/ITeS export proceeds with authorised-dealer realisation go to `pk-it-export-tax`; finality also requires the statutory filing/other conditions and no foreign-tax credit. The s.154A(2)(c) proviso removes the sales-tax-return condition for the specified PSEB branch, not provincial liability itself. A foreign client/platform alone does not qualify and missing PSEB does not automatically mean ordinary slabs. [s.154A](https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf).
 5. **Check ATL and withholding.** Capture actual event-date status and any late-filer history; route specific payment categories and payer definitions to `pk-withholding-tax`. Do not use a single turnover threshold for salary, services, rent and foreign payments or promise a weekly ATL update. Preserve the prior-return/surcharge evidence and missing-status flag.
 6. **Run the parallel routing table.** Goods and services can require different returns. Employment creates a payroll assessment even where the person previously had no staff. Capital events and entity uncertainty need their own evidence/routing.
@@ -132,7 +132,7 @@ expected:
   distance_below_salary_gate: 5
 ```
 
-Salary is 70% (derived), so this is below the statutory more-than 75% gate; the old 50% routing would wrongly choose the salary table. This is a classification case, not a full tax computation.
+Salary is 70% (derived), so this is below the statutory more-than 75% gate (source: “seventy-five per cent”); the old 50% routing would wrongly choose the salary table. This is a classification case, not a full tax computation.
 
 ## When to refuse or refer
 
@@ -146,7 +146,7 @@ Preserve every original handoff check: scope/residence evidence; legal entity/de
 
 ## Sindh self-employed coverage screen
 
-Ask about work category and existing SESSI coverage even without staff. Sindh 2021 amendment ss.2-3 adds self-employed workers and s.20A fixed PKR 1,500 monthly contribution subject to prescribed conditions. Obtain those conditions before determining that a particular freelancer is covered; no-staff status alone is insufficient. Route to `pk-social-contributions`. [Official amendment](https://www.sessi.gov.pk/assets/files/content/2026/01/Sindh-Act-No.XIX-of-2021.pdf), read for ss.2-3 on 2026-11-14.
+Ask about work category and existing SESSI coverage even without staff. Sindh 2021 amendment ss.2-3 adds self-employed workers and s.20A fixed PKR 1,500 monthly contribution subject to prescribed conditions. Obtain those conditions before determining that a particular freelancer is covered; no-staff status alone is insufficient. Route to `pk-social-contributions`. The 1,500 amount is in words on the page. [Official amendment](https://www.sessi.gov.pk/assets/files/content/2026/01/Sindh-Act-No.XIX-of-2021.pdf), read for ss.2-3 on 2026-11-14.
 
 ## Sources
 
