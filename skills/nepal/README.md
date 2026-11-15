@@ -2,7 +2,8 @@
 jurisdiction: NP
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
-covered_by: {SC: [nepal-payroll]}
+covered_by:
+  SC: nepal-payroll
 partial: {}
 ---
 
@@ -17,7 +18,7 @@ Tax years: 2026 (4 skills), 2025 (1 skill).
 | Income tax | [Income tax](nepal-income-tax.md) | 2026 | Ready |
 | Company tax | [Corporate tax](nepal-corporate-tax.md) | 2025 | Needs updating |
 | VAT or sales tax | [VAT](nepal-vat.md) | 2026 | Ready |
-| Social contributions | | | Missing |
+| Social contributions | [Payroll](nepal-payroll.md) | 2026 | Ready |
 | Payroll | [Payroll](nepal-payroll.md) | 2026 | Ready |
 | Transfer pricing | | | Missing |
 | Cross-border | | | Missing |
@@ -27,7 +28,6 @@ Ready means the skill is on the current tax year. It does not mean an accountant
 ## What still needs doing
 
 - Company tax: bring [Corporate tax](nepal-corporate-tax.md) up to the current tax year.
-- Write the social contributions skill.
 - Write the transfer pricing skill.
 - Write the cross-border skill.
 
