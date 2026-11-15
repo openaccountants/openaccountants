@@ -1,21 +1,20 @@
 ---
 name: japan-payroll
 description: Use this skill whenever asked about Japanese payroll, income tax withholding (源泉徴収 gensen chōshū), social insurance (社会保険 shakai hoken), labour insurance (労働保険 rōdō hoken), or employer obligations in Japan. Trigger on phrases like "gensen choshu", "源泉徴収", "shakai hoken", "社会保険", "厚生年金", "kosei nenkin", "kenko hoken", "健康保険", "雇用保険", "koyou hoken", "労災保険", "rosai hoken", "年末調整", "nenmatsu chousei", "year-end adjustment", "standard monthly remuneration", "hyōjun hōshū getsugaku", "payslip Japan", "給与明細", "kyūyo meisai", "minimum wage Japan", "overtime Japan", "36 agreement", "子ども・子育て支援金", or any question about running payroll in Japan. ALWAYS read this skill before processing any Japanese payroll work.
-version: 2.0
+version: 2.1
 jurisdiction: JP
 tax_year: 2026
-last_updated: 2026-11-14
+last_updated: 2026-11-15
 depends_on:
   - payroll-workflow-base
 category: payroll
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
-status: needs_sources
 domain: payroll
 type: computation
 ---
 
-# Japan payroll v2.0
+# Japan payroll v2.1
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 

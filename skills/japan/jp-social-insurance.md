@@ -1,20 +1,19 @@
 ---
 name: jp-social-insurance
 description: Use for Japanese self-employed National Health Insurance (国民健康保険, kokumin kenko hoken) and National Pension (国民年金, kokumin nenkin), fiscal-year premiums, household and municipal inputs, pension relief, mid-year changes and payment matching. Covers FY2026, with Shinjuku's actual municipal NHI schedule as a named example, not a national tariff. Route employees on employer insurance to japan-payroll.
-version: 2.1
+version: 2.2
 jurisdiction: JP
 tax_year: 2026
 tax_year_notes: "Fiscal 2026: April 2026-March 2027. Premiums and relief periods have different calendars; 2026 cash deductions use amounts actually paid."
-last_updated: 2026-11-14
+last_updated: 2026-11-15
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
-status: needs_sources
 domain: payroll
 type: computation
 ---
 
-# Japan self-employed health insurance and pension v2.1
+# Japan self-employed health insurance and pension v2.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
