@@ -140,7 +140,7 @@ The original dated cases remain FY 2082/83 examples; they do not apply the later
 
 ### 1. Ordinary domestic sale
 
-Retained input: `05.04.2026 ; KATHMANDU TRADING ; +113,000 ; NPR`. It is VAT-inclusive consideration for an ordinary taxable sale: NPR 113,000 / 1.13 = NPR 100,000 net; VAT NPR 13,000. Record output VAT, not input VAT.
+Retained input: `05.04.2026 ; KATHMANDU TRADING ; CREDIT ; Invoice NP-041 ; NPR 113,000`. It is VAT-inclusive consideration for an ordinary taxable sale: NPR 113,000 / 1.13 = NPR 100,000 net; VAT NPR 13,000. Record output VAT, not input VAT.
 
 ```oa-check
 name: Ordinary domestic VAT-inclusive sale
@@ -156,7 +156,7 @@ expected:
 
 ### 2. Export
 
-Retained input: `15.04.2026 ; INDIAN BUYER LTD ; +500,000 ; NPR`. For a proved export of handicrafts with customs/export evidence, taxable consideration is NPR 500,000 and output VAT NPR 0. A foreign buyer's name alone does not prove export; if the goods remain a domestic ordinary taxable supply, the zero rate fails and the contract must establish whether its price includes VAT.
+Retained input: `15.04.2026 ; INDIAN BUYER LTD ; CREDIT ; Exported handicrafts ; NPR 500,000`. For a proved export of handicrafts with customs/export evidence, taxable consideration is NPR 500,000 and output VAT NPR 0. A foreign buyer's name alone does not prove export; if the goods remain a domestic ordinary taxable supply, the zero rate fails and the contract must establish whether its price includes VAT.
 
 ```oa-check
 name: Proved goods export versus ordinary domestic exclusive value
@@ -172,7 +172,7 @@ expected:
 
 ### 3. Imported digital service
 
-Retained input: `18.04.2026 ; GOOGLE ; -23,000 ; NPR`. Assume NPR 23,000 is the exclusive value of an ordinary taxable imported service, no Nepal VAT was already charged, section 8(2) applies, and the registered recipient has fully evidenced taxable business use with no input restriction. Self-assessed VAT is NPR 2,990; eligible credit is NPR 2,990, net VAT effect NPR 0. If the recipient is unregistered or uses the service for exempt/private purposes, do not grant that matching credit. Supplier-charged non-resident VAT needs the separate reconciliation above.
+Retained input: `18.04.2026 ; GOOGLE ; DEBIT ; Google Ads ; NPR -23,000`. Assume NPR 23,000 is the exclusive value of an ordinary taxable imported service, no Nepal VAT was already charged, section 8(2) applies, and the registered recipient has fully evidenced taxable business use with no input restriction. Self-assessed VAT is NPR 2,990; eligible credit is NPR 2,990, net VAT effect NPR 0. If the recipient is unregistered or uses the service for exempt/private purposes, do not grant that matching credit. Supplier-charged non-resident VAT needs the separate reconciliation above.
 
 ```oa-check
 name: Imported service conditional credit
@@ -192,7 +192,7 @@ expected:
 
 ### 4. Bank fee
 
-Retained input: `30.04.2026 ; NABIL BANK ; -500 ; NPR`. If this is an exempt financial-service fee, the NPR 500 is an exempt purchase cost and no VAT input credit arises. Do not assign ordinary VAT solely from a debit or the bank's name.
+Retained input: `30.04.2026 ; NABIL BANK ; DEBIT ; Service charge ; NPR -500`. If this is an exempt financial-service fee, the NPR 500 is an exempt purchase cost and no VAT input credit arises. Do not assign ordinary VAT solely from a debit or the bank's name.
 
 ```oa-check
 name: Exempt financial-service fee
