@@ -1,7 +1,7 @@
 # OpenAccountants — GitHub Skills Repository
 
 <!-- The counts sentence below is restamped from the `counts` block of index.json by scripts/build-index.py on every default build; do not edit its figures by hand. The README stats block carries the platform-wide totals. -->
-> Open-source AI skills (tax rules your AI follows) for AI agents. 2,454 AI skills across 285 jurisdictions in this repository, 126 of them accountant-reviewed and signed off by named Partners (CPAs/CAs/EAs). Live counts: the `counts` block of `index.json`.
+> Open-source AI skills (tax rules your AI follows) for AI agents. 2,527 AI skills across 290 jurisdictions in this repository, 126 of them accountant-reviewed and signed off by named Partners (CPAs/CAs/EAs). Live counts: the `counts` block of `index.json`.
 
 ## What this repo is
 
@@ -141,7 +141,7 @@ https://www.openaccountants.com
 
 ========================================================================
 
-## Skill inventory (2395 distinct MCP names)
+## Skill inventory (2468 distinct MCP names)
 
 Use the first field as the exact get_skill slug. A source path or filename is not an MCP identity.
 
@@ -173,6 +173,8 @@ Use the first field as the exact get_skill slug. A source path or filename is no
 - us-state-formation-matrix | US | tier 2 | reviewed_by -
 - us-state-new-hire-reporting-matrix | US | tier 2 | reviewed_by -
 - us-state-payroll-matrix | US | tier 2 | reviewed_by -
+- ax-income-tax | AX | tier 2 | reviewed_by -
+- ax-tax-scope | AX | tier 2 | reviewed_by -
 - al-corporate-tax | AL | tier 2 | reviewed_by -
 - al-cross-border | AL | tier 2 | reviewed_by -
 - al-transfer-pricing | AL | tier 2 | reviewed_by -
@@ -339,13 +341,17 @@ Use the first field as the exact get_skill slug. A source path or filename is no
 - bangladesh-vat | BD | tier 2 | reviewed_by -
 - bd-bookkeeping | BD | tier 2 | reviewed_by -
 - bd-company-formation | BD | tier 2 | reviewed_by -
+- bd-corporate-income-tax | BD | tier 2 | reviewed_by -
 - bd-crypto-tax | BD | tier 2 | reviewed_by -
 - bd-einvoice | BD | tier 2 | reviewed_by -
 - bd-financial-statements | BD | tier 2 | reviewed_by -
 - bd-formation | BD | tier 2 | reviewed_by -
 - bd-freelance-intake | BD | tier 2 | reviewed_by -
 - bd-it-freelancer-tax | BD | tier 2 | reviewed_by -
+- bd-payroll-social | BD | tier 2 | reviewed_by -
+- bd-payroll | BD | tier 2 | reviewed_by -
 - bd-return-assembly | BD | tier 2 | reviewed_by -
+- bd-social-contributions | BD | tier 2 | reviewed_by -
 - bd-tax-optimization | BD | tier 2 | reviewed_by -
 - bd-tax-overview | BD | tier 2 | reviewed_by -
 - barbados-vat | BB | tier 2 | reviewed_by -
@@ -554,6 +560,29 @@ Use the first field as the exact get_skill slug. A source path or filename is no
 - cv-payroll-social | CV | tier 2 | reviewed_by -
 - cv-tax-overview | CV | tier 2 | reviewed_by -
 - cv-vat-gst | CV | tier 2 | reviewed_by -
+- bq-abb | BQ | tier 2 | reviewed_by -
+- bq-bonaire-ground-tax | BQ | tier 2 | reviewed_by -
+- bq-corporate-tax | BQ | tier 2 | reviewed_by -
+- bq-customs-clearance | BQ | tier 2 | reviewed_by -
+- bq-customs-debt-remedies | BQ | tier 2 | reviewed_by -
+- bq-customs-valuation | BQ | tier 2 | reviewed_by -
+- bq-double-tax-relief | BQ | tier 2 | reviewed_by -
+- bq-excise | BQ | tier 2 | reviewed_by -
+- bq-financial-statements | BQ | tier 2 | reviewed_by -
+- bq-formation | BQ | tier 2 | reviewed_by -
+- bq-gambling-tax | BQ | tier 2 | reviewed_by -
+- bq-income-tax | BQ | tier 2 | reviewed_by -
+- bq-inheritance-gifts | BQ | tier 2 | reviewed_by -
+- bq-payroll | BQ | tier 2 | reviewed_by -
+- bq-penalties-corrections | BQ | tier 2 | reviewed_by -
+- bq-personal-import-relief | BQ | tier 2 | reviewed_by -
+- bq-property-tax | BQ | tier 2 | reviewed_by -
+- bq-social-contributions | BQ | tier 2 | reviewed_by -
+- bq-statia-tourist-tax | BQ | tier 2 | reviewed_by -
+- bq-tax-compliance | BQ | tier 2 | reviewed_by -
+- bq-tax-system | BQ | tier 2 | reviewed_by -
+- bq-transfer-tax | BQ | tier 2 | reviewed_by -
+- bq-warehouses-hde | BQ | tier 2 | reviewed_by -
 - ky-company-formation | KY | tier 2 | reviewed_by -
 - ky-corporate-income-tax | KY | tier 2 | reviewed_by -
 - ky-payroll-social | KY | tier 2 | reviewed_by -
@@ -926,24 +955,36 @@ Use the first field as the exact get_skill slug. A source path or filename is no
 - gi-uk-employment-pensions-treaty | GI | tier 2 | reviewed_by -
 - gi-uk-investment-income-treaty | GI | tier 2 | reviewed_by -
 - statutory-audit-workflow-base | GLOBAL | tier 2 | reviewed_by -
+- cbam-carbon-border-adjustment | EU-27 | tier 2 | reviewed_by -
 - cfc-and-substance-rules-compared | GLOBAL | tier 2 | reviewed_by -
 - cross-border-invoicing-compliance | INTL | tier 2 | reviewed_by -
 - cross-border-tax-router | GLOBAL | tier 2 | reviewed_by -
 - cross-border-tax-workflow-base | GLOBAL | tier 2 | reviewed_by -
 - cross-border-vat-gst | INTL | tier 2 | reviewed_by -
+- dac6-mdr-reportable-arrangements | GLOBAL | tier 2 | reviewed_by -
+- digital-services-tax-matrix | GLOBAL | tier 2 | reviewed_by -
 - eu-directives-cross-border | EU-27 | tier 2 | reviewed_by -
 - eu-oss-digital | GLOBAL | tier 2 | reviewed_by -
 - eu-reverse-charge | GLOBAL | tier 2 | reviewed_by -
+- eu-social-security-coordination | EU/EEA/CH/UK | tier 2 | reviewed_by -
 - exit-taxes-when-a-family-moves | general | tier 2 | reviewed_by -
 - family-holding-company-location-compared | general | tier 2 | reviewed_by -
 - family-office-residency-regimes-compared | general | tier 2 | reviewed_by -
+- fatca-crs-automatic-exchange | GLOBAL | tier 2 | reviewed_by -
 - forex-controls | INTL | tier 2 | reviewed_by -
+- free-zones-sez-matrix | GLOBAL | tier 2 | reviewed_by -
 - ifrs-local-gaap-reconciliation | GLOBAL | tier 2 | reviewed_by -
+- inheritance-estate-gift-matrix | GLOBAL | tier 2 | reviewed_by -
 - international-incorporation | INTL | tier 2 | reviewed_by -
+- ip-patent-box-matrix | GLOBAL | tier 2 | reviewed_by -
 - non-eu-export-services | GLOBAL | tier 2 | reviewed_by -
 - oecd-model-treaty-defaults | INTL | tier 2 | reviewed_by -
 - permanent-establishment-risk | GLOBAL | tier 2 | reviewed_by -
+- pillar-two-globe-minimum-tax | GLOBAL | tier 2 | reviewed_by -
+- rd-tax-credits-matrix | GLOBAL | tier 2 | reviewed_by -
+- saf-t-realtime-ereporting-matrix | GLOBAL | tier 2 | reviewed_by -
 - succession-and-forced-heirship-compared | general | tier 2 | reviewed_by -
+- tax-controversy-map-apa | GLOBAL | tier 2 | reviewed_by -
 - tax-research-with-your-ai-how-to-do-it-defensibly | general | tier 2 | reviewed_by -
 - tax-residency-planning | INTL | tier 2 | reviewed_by -
 - americas-corridors | GLOBAL | tier 2 | reviewed_by -
@@ -955,6 +996,8 @@ Use the first field as the exact get_skill slug. A source path or filename is no
 - us-major-partners | GLOBAL | tier 2 | reviewed_by -
 - trusts-vs-foundations-by-country | general | tier 2 | reviewed_by -
 - vat-place-of-supply-master | INTL | tier 2 | reviewed_by -
+- wealth-tax-matrix | GLOBAL | tier 2 | reviewed_by -
+- withholding-tax-matrix | GLOBAL | tier 2 | reviewed_by -
 - global-ad-platforms | GLOBAL | tier 2 | reviewed_by -
 - global-cloud-infrastructure | GLOBAL | tier 2 | reviewed_by -
 - global-home-office | GLOBAL | tier 2 | reviewed_by -
@@ -987,6 +1030,7 @@ Use the first field as the exact get_skill slug. A source path or filename is no
 - investment-funds-reits | GLOBAL | tier 2 | reviewed_by -
 - medical-professional | GLOBAL | tier 2 | reviewed_by -
 - oil-gas-extractives | GLOBAL | tier 2 | reviewed_by -
+- property-investor | GLOBAL | tier 2 | reviewed_by -
 - saas-digital-products | GLOBAL | tier 2 | reviewed_by -
 - shipping-aviation-tonnage-tax | GLOBAL | tier 2 | reviewed_by -
 - amazon-seller-integration | GLOBAL | tier 2 | reviewed_by -
@@ -1002,6 +1046,7 @@ Use the first field as the exact get_skill slug. A source path or filename is no
 - bookkeeping-workflow-base | GLOBAL | tier 2 | reviewed_by -
 - company-formation-workflow-base | GLOBAL | tier 2 | reviewed_by -
 - corporate-income-tax-workflow-base | GLOBAL | tier 2 | reviewed_by -
+- cross-border-workflow-base | GLOBAL | tier 2 | reviewed_by -
 - crypto-tax-workflow-base | GLOBAL | tier 2 | reviewed_by -
 - customs-duties-workflow-base | GLOBAL | tier 2 | reviewed_by -
 - einvoice-workflow-base | GLOBAL | tier 2 | reviewed_by -
@@ -1076,6 +1121,7 @@ Use the first field as the exact get_skill slug. A source path or filename is no
 - gy-payroll-social | GY | tier 2 | reviewed_by -
 - gy-tax-overview | GY | tier 2 | reviewed_by -
 - gy-vat-gst | GY | tier 2 | reviewed_by -
+- hm-tax-scope-reference | HM | tier 2 | reviewed_by -
 - hn-company-formation | HN | tier 2 | reviewed_by -
 - hn-corporate-income-tax | HN | tier 2 | reviewed_by -
 - hn-tax-overview | HN | tier 2 | reviewed_by -
@@ -1224,6 +1270,7 @@ Use the first field as the exact get_skill slug. A source path or filename is no
 - je-class2-contributions | JE | tier 2 | reviewed_by -
 - je-company-formation | JE | tier 2 | reviewed_by -
 - je-corporate-income-tax | JE | tier 2 | reviewed_by -
+- je-cross-border-withholding | JE | tier 2 | reviewed_by -
 - je-crypto-tax | JE | tier 2 | reviewed_by -
 - je-gst | JE | tier 2 | reviewed_by -
 - je-income-tax-compliance | JE | tier 2 | reviewed_by -
@@ -1618,6 +1665,29 @@ Use the first field as the exact get_skill slug. A source path or filename is no
 - nigeria-vat | NG | tier 2 | reviewed_by -
 - taxes-and-small-businesses-in-nigeria-a-simple-guide-2 | NG | tier 2 | reviewed_by -
 - nu-company-reporting | NU | tier 2 | reviewed_by -
+- nf-annual-rates | NF | tier 2 | reviewed_by -
+- nf-cgt | NF | tier 2 | reviewed_by -
+- nf-company-administration | NF | tier 2 | reviewed_by -
+- nf-company-tax | NF | tier 2 | reviewed_by -
+- nf-employment-pay | NF | tier 2 | reviewed_by -
+- nf-fbt | NF | tier 2 | reviewed_by -
+- nf-foreign-income | NF | tier 2 | reviewed_by -
+- nf-gst | NF | tier 2 | reviewed_by -
+- nf-imports | NF | tier 2 | reviewed_by -
+- nf-income-tax | NF | tier 2 | reviewed_by -
+- nf-investment-withholding | NF | tier 2 | reviewed_by -
+- nf-medicare | NF | tier 2 | reviewed_by -
+- nf-payg-withholding | NF | tier 2 | reviewed_by -
+- nf-property-transfers | NF | tier 2 | reviewed_by -
+- nf-return-filing | NF | tier 2 | reviewed_by -
+- nf-super-guarantee | NF | tier 2 | reviewed_by -
+- nf-tax-amendments-objections | NF | tier 2 | reviewed_by -
+- nf-tax-interest | NF | tier 2 | reviewed_by -
+- nf-tax-penalties-remission | NF | tier 2 | reviewed_by -
+- nf-tax-records | NF | tier 2 | reviewed_by -
+- nf-tax-system | NF | tier 2 | reviewed_by -
+- nf-transfer-pricing | NF | tier 2 | reviewed_by -
+- nf-uk-treaty-relief | NF | tier 2 | reviewed_by -
 - mk-company-formation | MK | tier 2 | reviewed_by -
 - mk-corporate-income-tax | MK | tier 2 | reviewed_by -
 - mk-tax-overview | MK | tier 2 | reviewed_by -
@@ -2037,6 +2107,9 @@ Use the first field as the exact get_skill slug. A source path or filename is no
 - tw-nhi | TW | tier 2 | reviewed_by -
 - tw-tax-overview | TW | tier 2 | reviewed_by -
 - tj-company-formation | TJ | tier 2 | reviewed_by -
+- tj-corporate-income-tax | TJ | tier 2 | reviewed_by -
+- tj-income-tax | TJ | tier 2 | reviewed_by -
+- tj-payroll-social | TJ | tier 2 | reviewed_by -
 - tj-tax-overview | TJ | tier 2 | reviewed_by -
 - tj-vat-gst | TJ | tier 2 | reviewed_by -
 - tanzania-income-tax | TZ | tier 1 | reviewed_by Baraka Cassian

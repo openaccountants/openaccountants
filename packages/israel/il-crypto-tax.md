@@ -1,285 +1,176 @@
 ---
 name: il-crypto-tax
 description: Use this skill when advising on Israeli cryptocurrency tax reporting and capital gains calculations. Trigger on phrases like "crypto tax Israel", "bitcoin tax Israel", "מס קריפטו", "FIFO Israel", "Form 1325 crypto", "Form 1322", "capital gains crypto Israel", "staking tax Israel", "airdrop tax Israel", "DeFi tax Israel", "voluntary disclosure crypto Israel", "gilui mirtzon", "גילוי מרצון", or any Israeli cryptocurrency tax query. ALWAYS read this skill before advising on Israeli crypto taxation.
-version: 1.1
+version: 1.2
 jurisdiction: IL
 tax_year: 2026
-last_updated: 2026-11-03
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: crypto
+type: computation
 ---
 
-# IL Crypto Tax
-
-## Israel Cryptocurrency Tax Reporting Skill v1.1
+# Israel: cryptocurrency tax working papers
 
 > **Based on work by [Skills IL](https://github.com/skills-il/tax-and-finance)**, licensed under MIT. Adapted for the OpenAccountants format.
 
-## Section 1: Quick reference
+> **General reference only.** Reconstruct transactions and prepare a computation for an Israeli CPA. Do not file a return from a wallet balance or a vendor-generated tax total.
 
-**Quick reference table**
+## Scope
 
-| Field | Value |
-| --- | --- |
-| Country | Israel (מדינת ישראל) |
-| Scope | Cryptocurrency capital gains tax, DeFi income classification, reporting |
-| Currency | NIS (Israeli New Shekel: ₪) |
-| Classification | A decentralised payment instrument is an asset (Neches: נכס) under Section 88 ITO, not currency or foreign currency (https://www.gov.il/BlobFolder/policy/income-tax-professional-inst-5-2018/he/Policy_ProfessionalInstIncomeTax_hor_acc%2015.2.18.pdf, ss.2.3, 3.1.1) |
-| Primary guidance | ITA Circular 2018/05 (חוזר 05/2018) |
-| Cost basis method | unverified: FIFO (First In, First Out) as the default |
-| Tax rate: individuals | Capital gain under Part E, at the s.91 rates (Circular 5/2018 s.3.1.2): real capital gain on an asset bought from 1/1/2012 is taxed at up to 25%; older assets are split linearly; lower starting rates from age 60 | https://www.gov.il/BlobFolder/generalpage/income-tax-guide-knowyourright/he/Guides_IncomeTax_da-2025.pdf (PDF p.48) |
-| Tax rate: significant shareholder (10%+) | unverified: 30% |
-| Tax rate: business/traders | If the activity amounts to a business, ordinary income at the s.121 or s.126 rates; mining is business income (Circular 5/2018 s.3.1.4) |
-| Corporate rate | unverified: 23% |
-| Surtax above NIS 721,560 | 3% on the part of total taxable income above NIS 721,560, plus 2% on capital-source taxable income above that amount: two bases, not a flat 5% (https://www.gov.il/BlobFolder/generalpage/income-tax-monthly-deductions-booklet/he/generalInformation_income-tax-monthly-deductions-booklet_monthly-deductions-booklet-2026.pdf, p.11) |
-| Advance payment form | Form 1399י: virtual currency is marked with transaction symbol 77 and code 71; several sales in one month may be grouped as one with a weighted-average purchase date, with a worksheet attached (https://www.gov.il/BlobFolder/generalpage/income-tax-guide-knowyourright/he/Guides_IncomeTax_da-2025.pdf, PDF p.47) |
-| Advance payment deadline | unverified: within 30 days of disposal |
-| Reporting forms | Forms 1322 / 1325 (attached to annual Form 1301) |
-| Contributor | Open Accountants Community |
+Israel, 2026: investment disposals, business/mining classification, barter, gain/loss records and filing handoff. Circular 5/2018 distinguishes assets from currency, capital activity from business and mining, and requires a documentary audit trail. It does not settle every DeFi/token arrangement. Annual forms described here are explicitly the **2025-2026 filing cycle**, pending tax-year 2026 forms.
 
-### Conservative defaults
+| Quick reference | Rate or threshold and condition | Official source |
+|---|---|---|
+| Individual capital treatment | Use the s.91 rules and acquisition-period conditions in [il-income-tax-returns](il-income-tax-returns.md); a material-shareholder security uplift is not a blanket crypto uplift | ITO s.91(b), https://www.btl.gov.il/Laws1/00_0103_000000.pdf |
+| Business/mining | Ordinary income classification; use the personal/company computation appropriate to the actual taxpayer | ITO ss.2, 121, 126; https://www.btl.gov.il/Laws1/00_0103_000000.pdf |
+| General disposal report and advance | Within 30 days; listed-security exceptions do not automatically apply to decentralised payment assets | ITO s.91(d), https://www.btl.gov.il/Laws1/00_0103_000000.pdf |
+| Loss carryforward | File the loss-year return; capital-gain and foreign-source ordering conditions apply | ITO s.92, https://www.btl.gov.il/Laws1/00_0103_000000.pdf |
 
-**Conservative defaults table**
+## Ask the client first
 
-| Ambiguity | Default |
-| --- | --- |
-| Unknown whether activity is business or investment | Treat as investment (25% capital gains): flag for professional review if high frequency |
-| Staking reward classification unclear | Treat as income at receipt (most conservative) |
-| Unknown NIS exchange rate for transaction date | Use most recent Bank of Israel business day rate |
-| Crypto received as gift | Use donor's carryover basis (Section 97(a)(5)) |
-| Stablecoins (USDT, USDC) | Still an "asset": every conversion is a taxable disposal |
+Obtain tax residence and arrival/departure dates; every exchange, wallet and chain; complete buy/sell/swap and fee records; fiat bank flows; transfers between owned wallets; opening lots and prior returns; acquisition/gift/inheritance evidence; mining/staking/lending/airdrop/NFT/ICO/IEO contracts; foreign taxes; missing keys or insolvency claims; and other income for surtax. Record timestamps, NIS values and valuation evidence. Frequency, scale, expertise, financing, time and the manner of operation require a business-status review; do not default to investment when uncertain.
 
-## Section 2: Legal framework
+## The method, step by step
 
-### 2.1 Core principles
+### Classification before arithmetic
 
-- **Crypto classification as asset**: Cryptocurrency is classified as an asset (Neches) under Section 88 of the Income Tax Ordinance (Pekudat Mas Hachnasa: פקודת מס הכנסה), NOT as currency  _(Section 88 ITO)_
-- **Gains taxed as capital gains**: Gains are taxed as capital gains (Revach Hon) under Chapter E of the Ordinance  _(Chapter E, Income Tax Ordinance)_
-- **Primary guidance**: ITA Circular 2018/05 provides primary guidance on crypto taxation  _(ITA Circular 2018/05)_
-- **Taxable event on every disposal**: Every disposal (sale, trade, conversion) is a taxable event valued in NIS
-- **Crypto-to-crypto swaps taxable**: Crypto-to-crypto swaps are taxable events: unlike some jurisdictions, Israel has always treated these as disposals
+Circular 5/2018 ss.2.3 and 3.1 treats a decentralised payment instrument as an asset under s.88 rather than currency. A disposal is assessed under Part E; business activity is ordinary income and mining is business income. Payment in crypto is barter, with NIS value used for both the disposal and acquired asset. Under s.3.1.5.1, where the acquired goods/asset have a quoted price, that price is used for the crypto disposal; otherwise establish the crypto fair value in NIS. Preserve bank/exchange evidence and the ownership trail. Company income-tax computation is owned by [il-corporate-tax](il-corporate-tax.md); self-employed operations and social-contribution screening are owned by [il-freelancer-ops](il-freelancer-ops.md). Its VAT section distinguishes non-business investors, financial trading activity, mining and ordinary businesses accepting crypto; seek specialist classification rather than applying the standard VAT rate mechanically. [Official circular](https://www.gov.il/BlobFolder/policy/income-tax-professional-inst-5-2018/he/Policy_ProfessionalInstIncomeTax_hor_acc%2015.2.18.pdf).
 
-### 2.2 Business vs investment classification
+Stablecoin names (USDT, USDC, DAI) do not prove currency status or absence of gain. Examine the actual token rights and transaction. Crypto-to-crypto swaps and spending assets need a disposal analysis even without a fiat withdrawal. Transfers between the taxpayer's own wallets must be identified so that the same ownership movement is not counted as a sale. Preserve an audit trail for bridging/wrapping instead of assuming every protocol label has the same result.
 
-- **Business classification consequence**: If crypto activity constitutes a business (Esek: עסק), gains are taxed as ordinary income at marginal rates (up to 50%)
-- **Classification factors**: Classification depends on: Frequency and volume of trading; Whether taxpayer holds crypto as inventory vs investment; Time and effort devoted to crypto activity; Whether the taxpayer has another profession
-- **Default when in doubt**: When in doubt, treat as investment (25%) but flag for professional review
+### Reconstruct cost and NIS consideration
 
-## Section 3: FIFO cost basis method
+For each disposal identify the asset, acquisition and sale dates, consideration, allowable cost and transaction costs, and real/inflationary components under ITO ss.88-91. Keep valuation methodology and evidence for every fiat and crypto leg. Do not claim that a Bank of Israel representative rate is mandatory for every crypto valuation, or assert a weekend fallback without the applicable currency rule. Those old claims remain unresolved below.
 
-unverified: Israel mandates FIFO (First In, First Out) for calculating cost basis unless the taxpayer can demonstrate a different method was consistently applied. Circular 5/2018 does not set a cost-basis method.
+The old FIFO workflow is retained as a **conditional working-paper method**, not a verified Israeli legal mandate: queue purchases chronologically; match each disposal to the oldest eligible lots; allocate actual fees; reduce partial lots and reconcile remaining holdings. Record the taxpayer's documented/approved method before using it. Circular 5/2018 does not prescribe FIFO, and a monthly reporting grouping does not choose a cost-basis method.
 
-### 3.1 FIFO rules
+### Losses, gifts and inheritance
 
-- **FIFO calculation steps**: 1. Queue all purchases by date (oldest first) 2. For each sale, match against the oldest available purchase lots 3. Calculate gain/loss for each matched lot: (sale price − purchase price − fees) per unit 4. If a lot is partially consumed, the remainder stays in the queue 5. Sum all gains and losses for the tax year
+Apply s.92 only where a corresponding gain would have been taxable. Real gains are offset first, then each NIS 1 of remaining loss offsets NIS 3.5 of taxable inflationary amount; foreign-asset losses first offset foreign gains, and carryforward requires the loss-year return. Securities-only interest/dividend offsets cannot automatically be applied to crypto. Do not assume spouse losses can be pooled merely because a return is joint. The old “no wash-sale rule, December sale/January rebuy always valid” is not a safe conclusion: obtain a substantive commercial/anti-avoidance review ([ITO ss.88, 92](https://www.btl.gov.il/Laws1/00_0103_000000.pdf)).
 
-### 3.2 Currency conversion
+The s.97(a)(5) exemption concerns a gift to a statutory relative, or to another individual where the assessing officer is satisfied of good faith, and requires that the recipient is not a foreign resident. A qualifying tax-exempt gift may carry the prior owner's cost/acquisition history under s.88, but s.97(a)(5) itself concerns the gift exemption and excludes a foreign-resident recipient. Inheritance basis is addressed separately by s.88; deaths after 31 March 1981 use the statutory continuity rule, while older deaths have different treatment. Do not apply a universal zero basis, market-value step-up or donor carryover to every gift/inheritance ([ITO ss.88, 97(a)](https://www.btl.gov.il/Laws1/00_0103_000000.pdf)).
 
-- **NIS conversion at BOI exchange rate**: All transactions must be converted to NIS at the Bank of Israel exchange rate (Sha'ar Yatzig: שער יציג) on the transaction date
-- **Crypto-to-crypto NIS valuation**: For crypto-to-crypto trades, the NIS value of BOTH sides must be determined at the time of trade
-- **Weekend/holiday rate fallback**: For weekends/holidays when BOI doesn't publish rates, use the most recent business day rate
+Insolvency (including FTX/Celsius patterns), theft and lost keys require evidence that a legally recognizable loss has crystallized; a police report or bankruptcy order alone is not a universal statutory test, and a frozen balance is not automatically a realized capital loss. Preserve recovery rights and distributions for specialist review.
 
-## Section 4: DeFi and special income classification
+### Surtax: load the annual-return computation
 
-**DeFi and special income classification table**
+Use both s.121B bases in [il-income-tax-returns](il-income-tax-returns.md), after determining business versus capital character. The additional charge is not imposed on a whole crypto gain just because total income exceeds the general threshold. The statute defines capital-source taxable income by excluding business/employment and other personal-exertion income. The worked cases below demonstrate both coincident and mixed bases; the example rates/threshold are those owned by the annual-return skill ([ITO s.121B](https://www.btl.gov.il/Laws1/00_0103_000000.pdf)).
 
-unverified: every row except the first two. Circular 5/2018 covers sale (capital gain), business activity, mining (business income) and payment in crypto (barter); it does not address staking, liquidity mining, airdrops, NFTs, hard forks or lending.
+### Reporting form and transaction detail
 
-| Activity | Classification | Tax rate | Reporting form |
-| --- | --- | --- | --- |
-| Buy and hold, then sell | Capital gain | 25% | Form 1325 |
-| Crypto-to-crypto swap | Capital gain (disposal + acquisition) | 25% | Form 1325 |
-| Staking rewards | Income at receipt (conservative); debated | 25–50% | Form 1301 or 1325 |
-| Liquidity mining / yield farming | Ordinary income | Marginal rates | Form 1301 |
-| Airdrops (free tokens) | Income at receipt, capital gain on subsequent sale | Marginal + 25% | Form 1301 + 1325 |
-| Mining | Business income or capital gain (depends on scale) | Variable | Form 1301 or 1325 |
-| NFT sales (creator) | Business income | Marginal rates | Form 1301 |
-| NFT sales (collector) | Capital gain | 25% | Form 1325 |
-| Hard fork tokens | Zero cost basis, capital gain on sale | 25% | Form 1325 |
-| Lending interest (CeFi/DeFi) | Interest income | 25% (passive) | Form 1301 |
+For the 2025-2026 filing cycle, the rights guide's virtual-currency section uses Form 1399י, transaction symbol 77/code 71, with separate computations for each transaction; it permits same-month grouping with a weighted acquisition date and an attached calculation sheet. This does not authorize an unexamined annual net number or replace the general 30-day statutory report/advance rule. Forms 1322/1325 are securities schedules, not a universal crypto return. The annual surtaxes under s.121B are expressly excluded from the s.91(d) advance provisions by s.121B(b); do not include them automatically in the general 30-day gain advance. Reconcile all advance payments to the annual return and retain the submission acknowledgment ([rights guide, virtual-currency section](https://www.gov.il/BlobFolder/generalpage/income-tax-guide-knowyourright/he/Guides_IncomeTax_da-2025.pdf); [ITO s.91(d)](https://www.btl.gov.il/Laws1/00_0103_000000.pdf)).
 
-### Classification notes
+Retain per-disposal asset description, acquisition/sale dates, original cost, proceeds, fees, gain/loss and lot remainder. The 2025-2026 filing-cycle guide requires wallet addresses on online transmission, up to 2 addresses; confirm tax-year 2026 fields and submission specifications when published. A salaried person with disposals must have filing obligations screened; do not assume salary withholding settles capital activity. Tax-year 2026 annual filing dates and any approved representative extension require the current notice.
 
-- **Staking guidance status**: ITA has not issued definitive guidance. Conservative approach treats rewards as income at receipt (market value), then capital gain/loss on subsequent sale
-- **Airdrop treatment**: Received tokens are income at market value on receipt date. Cost basis for future sale = market value at receipt
-- **Hard fork treatment**: New tokens have zero cost basis; entire sale proceeds are capital gain
-- **Stablecoin treatment**: USDT, USDC, DAI are still "asset" under Section 88. Every USDT-to-USDC swap, every conversion leg of a DeFi trade, every off-ramp to fiat is a taxable disposal  _(Section 88)_
+## Boundary and exception table
 
-## Section 5: Loss offsetting rules
+| Activity or boundary | Treatment of the working paper |
+|---|---|
+| Investment buy/hold/sale or swap | Capital analysis, subject to actual business-status and asset-rights review |
+| Mining | Business classification; do not vary to capital merely because scale is small |
+| Staking rewards, liquidity mining/yield farming | Classification and recognition timing unresolved; do not assign a passive rate by default |
+| Airdrops, hard forks | No automatic receipt-income or zero-basis rule established here |
+| NFT creator vs collector | Different rights/activity may matter; label alone does not set a rate |
+| CeFi/DeFi lending interest | Check contract and income category; no blanket passive rate |
+| Gift/inheritance | Apply the correct s.88 acquisition-history rule and gift conditions |
+| Loss, frozen wallet or insolvent exchange | Preserve recovery evidence; recognize no loss solely from inaccessibility |
+| Foreign jurisdiction or new immigrant | Coordinate foreign obligations and load the immigrant skill before assuming exemption |
 
-- **Crypto losses offset crypto gains**: Capital losses from crypto can offset capital gains from crypto in the same tax year
-- **Losses offset other asset gains**: Capital losses can offset gains from other assets (stocks, real estate) in the same year
-- **Loss carryforward**: Capital losses carry forward to offset future capital gains under Section 92 (but cannot offset ordinary income)  _(Section 92)_
-- **Spousal loss offset**: Losses from one spouse can offset gains of the other spouse if filing jointly
-- **No wash-sale rule**: Israel has no wash-sale rule: a taxpayer can sell in December at a loss and re-buy in January with the loss fully recognized
+## Worked cases
 
-## Section 6: Reporting requirements
+### Simple investment disposal
 
-### 6.1 Annual reporting (Forms 1322 / 1325)
-
-- **Form 1322**: Form 1322 (Nispach Gimel: נספח ג): primary capital gains schedule attached to annual return
-- **Form 1325**: Form 1325 (Nispach Gimel(1): נספח ג(1)): auxiliary detail form for securities/crypto where tax was not withheld at source
-- **Disposal reporting items**: For each disposal, report: 1. Asset description (e.g., "Bitcoin (BTC)") 2. Date of acquisition (FIFO-determined) 3. Date of disposal 4. Acquisition cost (NIS) 5. Disposal proceeds (NIS) 6. Capital gain or loss (NIS) 7. Holding period
-
-### 6.2 Advance payment (Form 1399י)
-
-- **Filing deadline**: File within 30 days of the capital gain event
-- **Transaction codes**: Transaction codes: 77 (sale) and 71 (virtual currency)
-- **Payment rate**: Payment: 25% of gain for individuals (30% for significant shareholders)
-- **Advance payment credit**: Advance payments are credited against annual tax liability
-- **Non-payment penalties**: Penalties for non-payment: interest (Ribit: ריבית) and CPI linkage (Hafreshei Hatzmada: הפרשי הצמדה)
-
-### 6.3 Annual return obligation
-
-- **Filing obligation for salaried individuals**: Salaried individuals with crypto disposals must file Form 1301 even if they would otherwise be exempt. Any disposal generally triggers a filing obligation.
-- **Filing deadlines**: Filing deadlines (tax year 2025, filed in 2026): Online: June 30, 2026; Paper: May 29, 2026; CPA-represented: extensions available (tax year 2025)
-
-## Section 7: Surtax on crypto gains (Mas Yesafim: מס יסף)
-
-- **Surtax structure**: 3% on the part of total taxable income above NIS 721,560 (2026), and an additional 2% on taxable income from capital sources above that amount (2026 booklet p.11, s.121B). Work out each base separately; a crypto gain is in the 2% base only to the extent capital-source income exceeds the threshold.
-- **Threshold freeze**: unverified: threshold frozen through 2027
-
-## Section 8: Voluntary disclosure (Nohal Gilui Mirtzon: נוהל גילוי מרצון)
-
-**Voluntary disclosure tracks table**
-
-| Track | Eligibility | Deadline |
-| --- | --- | --- |
-| Green Track | unverified: annual income up to NIS 500,000 and cumulative crypto assets up to NIS 1.5M (as of 31.12.2024) | unverified: 31 August 2026 |
-| Regular Track | unverified: larger cases | unverified: 31 August 2026 |
-
-unverified: The 2025–2026 Voluntary Disclosure Procedure expressly covers digital assets and grants criminal immunity. Anonymity is no longer available: all applications filed with identifying details.
-
-## Section 9: Special rules
-
-### 9.1 Gifts and inheritance
-
-- **Carryover basis for gifts/inheritance**: Under Section 97(a)(5), gifts and inheritance use carryover basis: the recipient inherits the donor's original cost basis and acquisition date. Treating inherited crypto as zero-basis or fair-market-value at inheritance is incorrect.  _(Section 97(a)(5))_
-
-### 9.2 Lost crypto
-
-- **Lost crypto treatment**: Crypto lost to exchange insolvency (FTX, Celsius pattern), theft, or lost private keys is recognized as a capital loss ONLY when the loss is final and documented (e.g., bankruptcy court order, police report). Do not write off frozen-but-not-bankrupt balances.
-
-### 9.3 Inflation indexation
-
-- **Inflation indexation split**: unverified: Section 91(b)(3) splits capital gain into a "real gain" (taxed at 25%) and an "inflation-component gain" (taxed at 0% for individuals on assets acquired after 1.1.1994). For long-held lots, a CPA should perform the manual indexation pass, which reduces effective tax. (assets acquired after 1.1.1994)  _(Section 91(b)(3))_
-
-## Section 10: Worked examples
-
-### Example 1: Simple buy and sell
-
-**Scenario:** Bought 0.5 BTC in January 2025 for NIS 80,000, sold in August 2025 for NIS 120,000.
-
-**Working:**
-- Capital gain: NIS 120,000 − NIS 80,000 = NIS 40,000
-- Tax (up to 25% on real gain, asset bought after 1/1/2012, rights guide PDF p.48): NIS 40,000 × 25% = NIS 10,000
-- Surtax: total income below NIS 721,560 → no surtax
-- Advance payment: Form 1399י within 30 days of August sale → NIS 10,000
-- Annual reporting: Forms 1325/1322 with 2025 Form 1301
-
-### Example 2: Crypto-to-crypto with FIFO
-
-**Scenario:** Bought 2 ETH at NIS 5,000 each (March 2024), 3 ETH at NIS 7,000 each (June 2024). In October, traded 3 ETH for 0.5 BTC when ETH = NIS 9,000.
-
-**Working:**
-- FIFO: consume Lot 1 (2 ETH @ NIS 5,000) then 1 ETH from Lot 2 (@ NIS 7,000)
-- Lot 1 gain: 2 × (NIS 9,000 − NIS 5,000) = NIS 8,000
-- Lot 2 partial gain: 1 × (NIS 9,000 − NIS 7,000) = NIS 2,000
-- Total gain: NIS 10,000 → Tax: NIS 2,500
-- New BTC cost basis: NIS 27,000 (3 × NIS 9,000)
-- Remaining: 2 ETH at NIS 7,000 each
-
-### Example 3: DeFi staking rewards
-
-**Scenario:** Staked 10 ETH, earned 0.5 ETH in rewards (ETH = NIS 8,000 at receipt). Not sold.
-
-**Working:**
-- Conservative: NIS 4,000 taxable income at receipt (0.5 × NIS 8,000)
-- Rate: 25% if passive income → NIS 1,000 tax; or marginal rates if ordinary income
-- Cost basis for 0.5 reward ETH established at NIS 8,000/ETH
-- The 10 staked ETH have not been disposed: no capital gain event on those
-- Recommend professional consultation on staking classification
-
-## Section 11: Common errors
-
-**Common errors table**
-
-| Error | Consequence |
-| --- | --- |
-| Using US capital gains rates (15%/20%) | Israeli rate is 25% for individuals |
-| Treating crypto-to-crypto as non-taxable | Always taxable in Israel |
-| Using average cost or LIFO | unverified: Israel mandates FIFO |
-| Ignoring stablecoin conversions | USDT/USDC are assets: every swap is a disposal |
-| Treating inherited crypto as zero basis | Carryover basis applies (Section 97(a)(5)) |
-| Applying US wash-sale rule | Israel has no wash-sale rule: loss harvesting is valid |
-| Missing 30-day advance payment deadline | Interest and linkage penalties accrue |
-| Ignoring surtax on crypto gains | 3% on total taxable income above NIS 721,560 plus 2% on capital-source income above it (2026 booklet p.11) |
-
-## Section 12: Reference material
-
-**Reference material table**
-
-| Resource | Reference |
-| --- | --- |
-| ITA Circular 05/2018 (crypto classification) | https://www.gov.il/he/Departments/legalInfo/04-2018 |
-| Tax Authority: annual return service | https://www.gov.il/he/service/reporting-and-payment-2025-annual-tax-report-for-individuals |
-| Bank of Israel: exchange rates | https://www.boi.org.il/roles/markets/exchangerates/ |
-| Voluntary Disclosure Procedure 2025–2026 | https://www.gov.il/he/Departments/policies/voluntary-disclosure-2025 |
-| Bituach Leumi: self-employed rates | https://www.btl.gov.il/Insurance/National%20Insurance/type_list/Self_Employed/Pages/rates.aspx |
-| OECD CARF (Israel collection from 1 Jan 2026) | https://www.oecd.org/tax/exchange-of-tax-information/crypto-asset-reporting-framework.htm |
-
-## Section 13: When to escalate to a professional
-
-- Transaction volume exceeds 100 trades per year
-- DeFi activities involve complex protocols (multi-chain, bridging, wrapping)
-- Uncertainty whether activity constitutes business vs investment
-- Total gains exceed NIS 500,000
-- Tokens received from ICO, IEO, or similar offering
-- Cross-border transactions with foreign tax obligations
-- Voluntary disclosure consideration
-
-## Recomputed checks (2026)
+Retain the old 0.5 BTC bought in January 2025 for NIS 80,000 and sold in August 2025 for NIS 120,000. Assume the CPA has confirmed investment character, the full NIS 40,000 as real gain, applicability of the 25% cap and sufficient ordinary-rate position to use it, with no losses/credits/surtax or additional costs. Tax is NIS 10,000. Use the actual 2025 filing record and late-reporting analysis, not an invented 2026 disposal date.
 
 ```oa-check
-name: Gain NIS 40,000 at 25%
+name: Historical simple BTC capital computation
 inputs:
-  g: 40000
+  proceeds: 120000
+  cost: 80000
 steps:
-  - t: g*0.25
+  - real_gain: proceeds-cost
+  - tax: real_gain*0.25
 expected:
-  t: 10000
+  real_gain: 40000
+  tax: 10000
 ```
 
+### Swap lot reconciliation, conditional on approved FIFO
+
+Retain 2 ETH bought in March 2024 at NIS 5,000 and 3 ETH bought in June 2024 at NIS 7,000, then in October 2024 3 ETH exchanged for 0.5 BTC when each ETH is worth NIS 9,000. Under the **assumed approved FIFO method**, allocated cost is NIS 17,000, consideration/new BTC cost is NIS 27,000 and gain is NIS 10,000; 2 ETH with cost NIS 14,000 remain. At the assumed applicable 25% cap, tax is NIS 2,500. This tests the lot arithmetic, not a claim that FIFO is mandatory.
+
 ```oa-check
-name: Surtax when all NIS 800,000 of taxable income is capital-source (2026)
+name: Conditional FIFO swap and remaining lots
+inputs:
+  first_units: 2
+  first_unit_cost: 5000
+  second_units: 3
+  second_unit_cost: 7000
+  sold_units: 3
+  unit_value: 9000
+steps:
+  - cost: first_units*first_unit_cost+(sold_units-first_units)*second_unit_cost
+  - proceeds: sold_units*unit_value
+  - gain: proceeds-cost
+  - remaining_cost: (first_units+second_units-sold_units)*second_unit_cost
+  - tax: gain*0.25
+expected:
+  cost: 17000
+  proceeds: 27000
+  gain: 10000
+  remaining_cost: 14000
+  tax: 2500
+```
+
+### Surtax decision: all capital income versus mixed income
+
+Assume total taxable income is NIS 800,000. If it is all capital-source, general surtax is NIS 2,353.20 and the separate capital charge is NIS 1,568.80, totaling NIS 3,922. If the same total is NIS 500,000 employment and NIS 300,000 capital-source, only the general NIS 2,353.20 arises: the capital base does not exceed the statutory threshold. Do not apply 5% to the whole gain in the mixed case.
+
+```oa-check
+name: Separate surtax bases all-capital versus mixed
 inputs:
   total: 800000
-  capital: 800000
+  all_capital: 800000
+  mixed_capital: 300000
 steps:
-  - base3: max(total-721560, 0)*0.03
-  - base2: max(capital-721560, 0)*0.02
-  - s: base3+base2
+  - general: max(total-721560,0)*0.03
+  - all_extra: max(all_capital-721560,0)*0.02
+  - all_total: general+all_extra
+  - mixed_extra: max(mixed_capital-721560,0)*0.02
+  - mixed_total: general+mixed_extra
 expected:
-  s: 3922
+  general: 2353.20
+  all_extra: 1568.80
+  all_total: 3922
+  mixed_extra: 0
+  mixed_total: 2353.20
 ```
 
-The two charges have separate bases (2026 booklet p.11). They add up to 5% only where all the income above the threshold is capital-source, as here. unverified: how the 2% base is measured when income is mixed.
+The old staking case (10 ETH staked, 0.5 ETH reward at NIS 8,000/ETH, NIS 4,000 value at receipt) remains a valuation scenario. It does not establish recognition timing, a NIS 1,000 tax charge, future basis or that depositing/locking the original ETH was not a disposal; protocol terms and law must be resolved before a tax result is used.
+
+## When to refuse or refer
+
+Refer business/investment uncertainty, missing transactions, unsupported basis or valuation, DeFi multi-chain/bridging/wrapping, NFT/ICO/IEO terms, cross-border taxation, loss realization, gifts/inheritance and disclosure. Retain the old 100-trade and NIS 500,000-gain escalation cues as **internal workflow alerts**, not legal thresholds or safe harbours. An absence of those alerts does not make a case simple.
+
+The old voluntary-disclosure Green/Regular Track table is not current eligibility advice: it claimed NIS 500,000 annual income/NIS 1,500,000 assets at 31 December 2024 and 31 August 2026 deadlines, identifying applications and criminal immunity. No complete current official procedure has been read to confirm these claims, and the stated deadline is already past as of this review. Obtain specialist advice before any contact or submission; no immunity is promised.
+
+## Filing and payment
+
+Prepare the disposal schedules and applicable annual return for the actual year, review all current form/portal requirements, reconcile advances and withholding, and retain the accepted filing/payment receipts. General capital-disposal deadline is in the quick reference. The old 2025-return paper/online deadlines could not be reopened; no tax-year 2026 deadline is inferred.
+
+## Completion checklist
+
+Reconcile opening and closing holdings plus every owned wallet; classify disposals/transfers/rewards; verify NIS valuation and cost method; separately assess income tax, VAT and social contributions where relevant; apply eligible losses and both surtax bases; match forms to asset type; trace tax advances; preserve unresolved positions for CPA review.
 
 ## Sources
 
 | Source | URL | Read on |
 |---|---|---|
-| Israel Tax Authority, Circular 5/2018 on decentralised payment instruments ("virtual currencies"), read all six pages (ss.2.3, 3.1.1 to 3.1.5 income tax, 3.2 VAT) | https://www.gov.il/BlobFolder/policy/income-tax-professional-inst-5-2018/he/Policy_ProfessionalInstIncomeTax_hor_acc%2015.2.18.pdf | 2026-11-03 |
-| Israel Tax Authority, "Know your rights and duties" guide, tax year 2025 (published July 2026), read PDF p.47 (Form 1399 for virtual currency, symbol 77 code 71, monthly grouping) and PDF p.48 (capital gains rates: up to 25% on real gain for assets bought from 1/1/2012, linear split, material shareholder in securities) | https://www.gov.il/BlobFolder/generalpage/income-tax-guide-knowyourright/he/Guides_IncomeTax_da-2025.pdf | 2026-11-03 |
-| Israel Tax Authority, salary-deduction booklet from January 2026 (updated April 2026), read p.11 (s.121B surtax 3% above NIS 721,560 and 2% on capital-source income) | https://www.gov.il/BlobFolder/generalpage/income-tax-monthly-deductions-booklet/he/generalInformation_income-tax-monthly-deductions-booklet_monthly-deductions-booklet-2026.pdf | 2026-11-03 |
-| Israel Tax Authority, Form 1301 service page, tax year 2025 | https://www.gov.il/he/service/reporting-and-payment-2025-annual-tax-report-for-individuals | 2026-11-01 |
+| ITA Circular 5/2018; Read for ss.2.3, 3.1.1-3.1.5 asset/business/mining/barter distinction and ss.3.2-3.3 VAT categories/documentary audit trail | https://www.gov.il/BlobFolder/policy/income-tax-professional-inst-5-2018/he/Policy_ProfessionalInstIncomeTax_hor_acc%2015.2.18.pdf | 2026-11-14 |
+| Consolidated Income Tax Ordinance; Read for s.88 original-cost/gift/inheritance definitions, ss.91(b),(d), 92, 97(a)(5), 121B capital-source definition | https://www.btl.gov.il/Laws1/00_0103_000000.pdf | 2026-11-14 |
+| ITA rights guide, tax year 2025, 2025-2026 filing cycle; Read for virtual-currency Form 1399 transaction identification and monthly grouping/attached working paper, distinct securities schedules | https://www.gov.il/BlobFolder/generalpage/income-tax-guide-knowyourright/he/Guides_IncomeTax_da-2025.pdf | 2026-11-14 |
 
-Not yet confirmed: the 30% rate for a significant shareholder applied to crypto (the guide states the 30% uplift for securities held by a material shareholder) and the 23% corporate rate; how the monthly grouping on Form 1399 interacts with FIFO; FIFO as the cost-basis method; the DeFi, staking, airdrop, NFT, hard-fork and lending rows; Form 1399 and the 30-day advance; loss offsetting and carryforward; gifts and inheritance basis; the voluntary disclosure dates and tracks; the indexation rule; the threshold freeze; how the 2% surtax base is measured for mixed income.
-
-## Disclaimer
-
-> **חשוב:** כל המידע בקובץ זה מיועד למטרות מידע וחישוב בלבד. יש לבדוק כל עמדה מול רואה חשבון (Ro'eh Cheshbon) או יועץ מס (Yo'etz Mas) מוסמך לפני הגשה או פעולה.
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional: such as a רואה חשבון (Ro'eh Cheshbon: CPA) or יועץ מס (Yo'etz Mas: tax advisor) licensed in Israel: before filing or acting upon.
+Not yet confirmed: FIFO as a mandatory/accepted legal cost method in the taxpayer's circumstances; mandatory Bank of Israel rates and weekend fallback; DeFi/staking/airdrop/NFT/hard-fork/lending recognition, valuation and basis; spouse-loss pooling and any loss-harvest safe harbour; precise loss-realization treatment for insolvency/theft/lost keys; applicable current voluntary-disclosure tracks, deadlines, identifying information and immunity. The old voluntary-disclosure table's NIS 500,000/NIS 1,500,000/31 August 2026 claims are not instructions. No 30% material-shareholder uplift is asserted for ordinary decentralised crypto merely by analogy to a company security. Inflationary/real gain splitting and historic acquisition periods need their full s.88/s.91 computation, not the old blanket post-1 January 1994 rule. Current tax-year 2026 annual forms/deadlines, the older 29 May/30 June 2026 dates, and the old OECD CARF “Israel collection from 1 January 2026” statement remain unconfirmed. The older Form 1322/1325 crypto shortcut is corrected to the official asset-reporting route above.
