@@ -10,7 +10,7 @@ metadata:
   last_updated: "2026-11-14"
 ---
 
-# Ghana Payroll and Social Contributions v0.3
+# Ghana Payroll and Social Contributions v0.4
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -147,7 +147,7 @@ expected:
 | GRA, Employee Taxes and Pensions Year End Checklist: read in full | https://gra.gov.gh/wp-content/uploads/2025/11/Taxpayer-Checklist.pdf | 2026-11-14 |
 | GRA, Withholding Tax page (last edited 2022): read in full for the rates table | https://gra.gov.gh/domestic-tax/tax-types/withholding-tax/ | 2026-11-14 |
 
-Not yet confirmed: (1) Section 63(3) of Act 766 and the Act 766 penalties for late contributions were not opened; no SSNIT penalty is stated. Act 766 was not on a site opened. (2) Notice minimum of GHS 79.40 is above 13.5% of 587.80, which is 79.35; the notice is quoted. (3) Whether the 5.5% tax deduction stops at the ceiling is inferred from the contribution cap, not read in the law. (4) Tier 2 due date: not on any official page read. The old version had the 14th as approximate for SSNIT; SSNIT confirms 14 days. (5) Bonus and overtime rates come from the GRA page, not Act 896 as amended. (6) Whether the GHS 18,000 overtime qualifying limit changed under Act 1178.
+Not yet confirmed: (1) Section 63(3) of Act 766 and the Act 766 penalties for late contributions were not opened; no SSNIT penalty is stated. Act 766 was not on a site opened. (2) Notice minimum of GHS 79.40 is above 13.5% of 587.80, which is 79.35; the notice is quoted. (3) Whether the 5.5% tax deduction stops at the ceiling is inferred from the contribution cap, not read in the law. (4) Tier 2 due date: not on any official page read. The old version had the 14th as approximate for SSNIT; SSNIT confirms 14 days. (5) Bonus and overtime rates come from the GRA page, not Act 896 as amended. (6) Whether the GHS 18,000 overtime qualifying limit changed under Act 1178. (7) The SSNIT notice caps insurable earnings for SSNIT only; whether the 5% Tier 2 is also capped at GHS 69,000 or runs on full basic salary is not stated on any page read.
 
 ## Today's figures and who stands behind this skill
 

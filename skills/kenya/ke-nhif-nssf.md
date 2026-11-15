@@ -1,269 +1,127 @@
 ---
 name: ke-nhif-nssf
 description: Use this skill whenever asked about Kenyan social contributions for self-employed individuals -- SHIF (formerly NHIF) health insurance and NSSF pension. Trigger on phrases like "NHIF self-employed", "SHIF contributions", "NSSF Tier I", "NSSF Tier II", "Kenya social security", "Kenya health insurance", or any question about Kenyan social contribution obligations for self-employed persons. Covers the SHIF 2.75% rate (replacing NHIF brackets from October 2024), NSSF Tier I/II structure, voluntary registration, and edge cases. ALWAYS read this skill before touching any Kenyan social contribution work.
-version: 2.1
 jurisdiction: KE
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-14
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: payroll
+version: 2.2
+type: computation
+category: payroll
 ---
 
-# KE Nhif Nssf
+# Kenya self-employed SHIF and voluntary NSSF (2026) v2.2
 
-## Kenya SHIF (formerly NHIF) and NSSF Contributions -- Self-Employed Skill v2.1
+> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
-## Section 1 -- Quick reference
+## Scope
 
-**Quick reference table**
+This skill distinguishes non-salaried household health insurance from voluntary self-employed pension contributions. Do not apply an employee's NSSF Tier I/II formula to voluntary membership or treat an individual's declared bank income as SHA's household means-test result. Employees and employers use [ke-payroll-paye-nssf-shif-ahl](ke-payroll-paye-nssf-shif-ahl.md), which owns current employee tiers and employer deadlines.
 
-| Field | Value |
-| --- | --- |
-| Country | Kenya |
-| Health authority | SHA (Social Health Authority, replacing NHIF) |
-| Pension authority | NSSF (National Social Security Fund) |
-| Primary legislation | Social Health Insurance Act 2023 (SHIF); NSSF Act 2013 |
-| SHIF rate | 2.75% of declared income |
-| SHIF minimum | KES 300/month |
-| SHIF maximum | No cap |
-| NSSF self-employed | 12% of declared pensionable earnings (both portions) |
-| NSSF Tier I ceiling | KES 9,000 (Lower Earnings Limit, Year 4, from February 2026) |
-| NSSF Tier II ceiling | KES 108,000 (Upper Earnings Limit, Year 4, from February 2026) |
-| NSSF maximum monthly | KES 12,960 |
-| NSSF for self-employed | Voluntary |
-| Payment deadline | 9th of following month |
-| Currency | KES only |
-| Contributor | Open Accountants |
-| Validation date | Pending |
+## Ask the client first
 
-## Section 2 -- Required inputs and refusal catalogue
+- Salaried, non-salaried, voluntary NSSF, or mixed employment/self-employment status.
+- SHA registration, household members and the Authority's means-test income/contribution assessment.
+- Coverage year, annual-expiry date, notices and any premium-financing arrangement.
+- NSSF membership category, actual voluntary deposits, annual statement and formal-employment contributions.
+- Residency/lawful residence, identity/PIN records and any claimed exemption or financial assistance.
+- Other pension/medical deductions and the tax-year documentation.
 
-### Required inputs
+## The method, step by step
 
-- **Required inputs before computing**: Before computing, you MUST obtain: 1. Employment status -- self-employed, informal sector, or voluntary? 2. Monthly declared income -- determines SHIF and NSSF 3. Registered with SHA? 4. Registered with NSSF? 5. Any formal employment alongside? -- dual status 6. Sector -- formal vs informal. If monthly income is unknown, request estimate. SHIF uses declared household income.
+### Apply the correct scheme before calculating
 
-### Refusal catalogue
+| Item | Amount and complete condition | Official source |
+|---|---|---|
+| Non-salaried SHIF | Annual contribution at 2.75% of household income determined by means-testing instrument, reg18(1), not simply declared individual earnings | https://libraryir.parliament.go.ke/bitstreams/4783efac-60c6-4dd0-8d16-265504c9ae8d/download |
+| SHIF floor | KES 300 per month, equivalent annual KES 3,600 derived, reg18(2); no upper cap specified in reg18 | https://libraryir.parliament.go.ke/bitstreams/4783efac-60c6-4dd0-8d16-265504c9ae8d/download |
+| Non-salaried annual renewal payment | 14 days before annual contribution lapses, reg18(3), in words on the page | https://libraryir.parliament.go.ke/bitstreams/4783efac-60c6-4dd0-8d16-265504c9ae8d/download |
+| Premium financing | Authority-arranged financing for non-salaried persons; remittance directly to Authority, reg18(4)-(6) | https://libraryir.parliament.go.ke/bitstreams/4783efac-60c6-4dd0-8d16-265504c9ae8d/download |
+| Voluntary NSSF contribution | Minimum amount KES 200; minimum aggregate in year KES 4,800 under s23(1)(a)-(b), in words on the page; not a 12% employee/employer formula | https://www.nssf.or.ke/download/download-the-nssf-act?wpdmdl=3590 |
+| Voluntary registration | Self-employed person may register; must register employees under contract of service separately, s19(3) | https://www.nssf.or.ke/download/download-the-nssf-act?wpdmdl=3590 |
+| Receipt/account | Mobile money, designated office or specified electronic transfer; notification and individual Provident Fund Credit, ss23-24 | https://www.nssf.or.ke/download/download-the-nssf-act?wpdmdl=3590 |
+| SHIF tax treatment | Deductible under ITA s15(2)(ae); do not give insurance relief on the same SHIF contribution | https://www.kra.go.ke/images/publications/Income-Tax-Act-2026.pdf |
+| NSSF/pension tax treatment | NSSF deemed registered defined-contribution fund under s22A(8); apply the actual member-category and lesser-of limits in the income-tax skill, not a blanket monthly deduction | https://www.kra.go.ke/images/publications/Income-Tax-Act-2026.pdf |
 
-- **R-KE-SOC-1**: There have been multiple court challenges to the Social Health Insurance Act. Escalate -- do not advise on constitutional matters. (Trigger: question about SHIF constitutionality.)
+1. **Register and establish household status.** Regulations11-14 cover registration/beneficiaries, including former NHIF members. Do not use historic NHIF brackets as current SHIF charges or assume legacy registration proves current cover. Retain the SHA registration/assessment.
+2. **Use SHA's assessment.** Regulation21 uses household data and means testing, including housing, basic services, household composition and the Fifth Schedule instrument. Do not invent the assessed income from a monthly bank balance or add a spouse's earnings without the household assessment.
+3. **Recompute the premium.** Once the annual assessed household income is established, annual SHIF is the greater of that income times the rate above and the annualised floor. A monthly equivalent is a budgeting figure, not an independent monthly filing obligation. Use the annual renewal and financing conditions above.
+4. **Keep NSSF categories separate.** A voluntary self-employed member contributes to the Provident Fund under s23. Employee/employer contributions under s20 and Tier I/II are a different route. Do not impose their cap, employer match, monthly deadline or late penalty on a voluntary member without a separate rule.
+5. **Register and pay with evidence.** NSSF's [current voluntary page](https://www.nssf.or.ke/voluntary-member) directs a visit with National ID, Alien Card or passport and a photocopy, capture of details and an initial minimum deposit, then a membership card. It describes top-ups via USSD *222# and M-PESA. Match each deposit to the individual account and retain notification/annual statement. SHA payment channel and financing should follow the issued assessment, not an invented universal mobile-money route.
+6. **Apply deductions once.** Retain paid SHIF and pension evidence for the income-tax working paper. Contributions are deductions subject to the applicable law, not an automatic credit at their full value. The former blanket KES 30,000/month pension deduction is not established for every self-employed member: ss22A-22B distinguish employee/individual-retirement membership, actual contributions, pensionable-income percentage and annual/part-year ceilings, with NSSF reducing the individual-retirement monetary ceiling. The linked income-tax skill states those limits; establish eligibility before deducting. See [ke-income-tax](ke-income-tax.md).
 
-### Prohibitions
+## Boundary and exception table
 
-- **Prohibitions list**: NEVER use old NHIF brackets from October 2024 onward -- SHIF 2.75% applies. NEVER tell self-employed that NSSF is mandatory -- it is voluntary for self-employed. NEVER ignore KES 300 SHIF minimum. NEVER assume NSSF uncapped -- Upper Earnings Limit KES 108,000 caps the base. NEVER conflate SHIF household income with individual income without clarifying. NEVER present old NSSF limits (pre-February 2026: KES 8,000 / KES 72,000 / KES 8,640). NEVER assume foreign residents exempt from SHIF -- residency triggers obligation.
+| Old topic / situation | Current treatment |
+|---|---|
+| Irregular/informal income | Means-tested household assessment; floor and financing may matter; do not declare a guessed individual average as final |
+| Employed plus self-employed | Identify the household/category and existing employer deductions with SHA; no automatic extra premium on business income or assumed maxed pension |
+| High income | SHIF reg18 specifies no ceiling; voluntary NSSF does not inherit the employee earnings cap |
+| Non-citizen resident | Check lawful-residence/registration category and documents; do not presume exemption |
+| Minimum income/financial hardship | Apply assessed household floor; reg19 addresses households needing government assistance |
+| Constitutionality/court dispute | Refer; do not advise on constitutional validity or assume a pending-case outcome |
 
-## Section 3 -- SHIF (replacing NHIF)
+## Worked cases
 
-- **Legislation**: Social Health Insurance Act 2023 (effective October 2024)  _(Social Health Insurance Act 2023)_
-
-**SHIF Old vs New comparison**  _(Social Health Insurance Act 2023)_
-
-| Item | Old (NHIF) | New (SHIF, from Oct 2024) |
-| --- | --- | --- |
-| Rate | Fixed brackets (KES 150-1,700) | 2.75% of income |
-| Self-employed | Flat KES 500 | 2.75% of declared household income |
-| Minimum | KES 150 | KES 300 |
-| Maximum | KES 1,700 | No cap |
-
-- **SHIF monthly formula**: shif_monthly = max(declared_monthly_income x 2.75%, KES 300)  _(Social Health Insurance Act 2023)_
-
-## Section 4 -- NSSF contributions
-
-- **Legislation**: NSSF Act 2013, Third Schedule, Year 4 limits from February 2026  _([Year 4 notice](https://gaa.go.ke/sites/default/files/2026-02/Notice%20To%20Employers%20%E2%80%94%20Year%204%20%282026%29%20NSSF%20Contribution%20Rates%20.pdf), read 2026-10-31)_
-
-### Self-employed NSSF
-
-**Self-employed NSSF table**  _(NSSF Act 2013)_
-
-| Item | Detail |
-| --- | --- |
-| Registration | Voluntary |
-| Self-employed pays | Both employee and employer portions (total 12%) |
-| Minimum (Tier I only) | KES 1,080 |
-| Maximum (Tier I + II) | KES 12,960 |
-
-- **NSSF Tier I/II formula**: tier_i = min(declared_income, KES 9,000) x 6% x 2 tier_ii = max(0, min(declared_income, KES 108,000) - KES 9,000) x 6% x 2 total_nssf = tier_i + tier_ii  _(NSSF Act 2013)_
-
-## Section 5 -- Computation examples
-
-**Computation examples table**
-
-| Declared income | SHIF | NSSF Tier I | NSSF Tier II | Total NSSF | Grand total |
-| --- | --- | --- | --- | --- | --- |
-| KES 5,000 | KES 300 (min) | KES 600 | KES 0 | KES 600 | KES 900 |
-| KES 50,000 | KES 1,375 | KES 1,080 | KES 4,920 | KES 6,000 | KES 7,375 |
-| KES 200,000 | KES 5,500 | KES 1,080 | KES 11,880 | KES 12,960 | KES 18,460 |
+Assume SHA has assessed annual household income KES 600,000. Annual SHIF is KES 16,500, monthly budgeting equivalent KES 1,375. If the member chooses KES 400 voluntary NSSF per month for a full year, annual NSSF is KES 4,800 and combined annual cash budget KES 21,300. The chosen pension amount is example input, not a percentage rule.
 
 ```oa-check
-name: Declared KES 50,000 a month, SHIF and NSSF Year 4
+name: Assessed household health and chosen voluntary pension
 inputs:
-  income: 50000
+  assessed_annual_income: 600000
+  chosen_monthly_nssf: 400
 steps:
-  - shif: max(income * 0.0275, 300)
-  - tier_i: min(income, 9000) * 0.12
-  - tier_ii: max(0, min(income, 108000) - 9000) * 0.12
-  - total: shif + tier_i + tier_ii
+  - annual_shif: max(assessed_annual_income * 0.0275, 300 * 12)
+  - monthly_equivalent: annual_shif / 12
+  - annual_nssf: chosen_monthly_nssf * 12
+  - annual_total: annual_shif + annual_nssf
 expected:
-  shif: 1375
-  total: 7375
+  annual_shif: 16500
+  monthly_equivalent: 1375
+  annual_nssf: 4800
+  annual_total: 21300
 ```
+
+Low-income decision: an assumed assessed annual household income KES 60,000 gives percentage premium KES 1,650, below annualised floor KES 3,600. Voluntary NSSF deposits of KES 200 in each of 12 months total KES 2,400 and fall KES 2,400 short of s23's annual aggregate. A low monthly deposit alone does not prove annual compliance; consider SHA financial assistance/financing where appropriate.
 
 ```oa-check
-name: Declared KES 200,000 a month, NSSF at the Year 4 cap
+name: Health floor and voluntary annual aggregate
 inputs:
-  income: 200000
+  assessed_annual_income: 60000
+  monthly_nssf: 200
 steps:
-  - shif: max(income * 0.0275, 300)
-  - nssf: min(income, 9000) * 0.12 + max(0, min(income, 108000) - 9000) * 0.12
-  - total: shif + nssf
+  - percentage_shif: assessed_annual_income * 0.0275
+  - annual_shif: max(percentage_shif, 300 * 12)
+  - annual_nssf: monthly_nssf * 12
+  - pension_shortfall: max(0, 4800 - annual_nssf)
 expected:
-  nssf: 12960
-  total: 18460
+  percentage_shif: 1650
+  annual_shif: 3600
+  annual_nssf: 2400
+  pension_shortfall: 2400
 ```
 
-## Section 6 -- Payment, registration, and tax interaction
+## When to refuse or refer
 
-### Payment schedule
+Refer missing household assessments, dual-status contributions, hardship/eligibility, court challenges, disputed premiums, late/expired cover and foreign residence. State the issue, relevant documents, options and the review required; never label the answer definitive while the category or assessed base is unknown.
 
-**Payment schedule table**
+## Filing and payment
 
-| Contribution | Due date | Frequency |
-| --- | --- | --- |
-| SHIF | Unverified for self-employed members; confirm with SHA | Unverified |
-| NSSF | 9th of following month | Monthly |
+Use SHA's issued household assessment, coverage/expiry and payment instructions. The annual renewal rule does not establish the initial due date for every new member. For voluntary NSSF, use the official registration/payment route and reconcile deposits against Provident Fund Credit and annual statement. Employment remittance rules belong to the payroll sibling. No generic voluntary late-payment penalty is quantified here.
 
-Payment via M-Pesa, bank deposit, or online portals.
+## Completion checklist
 
-### Registration
-
-- **Registration requirements**: SHIF mandatory for all residents. NSSF voluntary for self-employed. KRA PIN required.
-
-### Tax interaction
-
-**Tax interaction table**
-
-| Question | Answer |
-| --- | --- |
-| SHIF deductible? | YES -- deduction under ITA s15(2)(ae) ([KRA PAYE page](https://www.kra.go.ke/individual/filing-paying/types-of-taxes/paye)). Insurance relief does not apply ([KRA notice 8 Nov 2024](https://www.kra.go.ke/news-center/public-notices/2152-applicability-of-insurance-relief-to-contributions-made-to-the-social-health-insurance-fund-shif)) |
-| NSSF deductible? | YES -- pension relief up to KES 30,000/month |
-| Where reported? | iTax annual return |
-
-### Penalties
-
-**Penalties table**
-
-|  | SHIF | NSSF |
-| --- | --- | --- |
-| Late payment | Unverified; confirm with SHA | 5%/month |
-| Non-registration | Unverified; confirm with SHA | Loss of benefits |
-
-## Section 7 -- NHIF-to-SHIF transition and household income
-
-### Transition
-
-From October 2024, all NHIF members transitioned to SHIF. May involve re-registration with SHA.
-
-### Household income declaration
-
-SHIF for self-employed in informal sector is based on "household income." Definition of how spousal income is factored is still being clarified by SHA. Flag for reviewer.
-
-## Section 8 -- Edge case registry
-
-### EC1 -- Informal sector, irregular income
-
-Situation: Jua kali worker, no fixed income.
-Resolution: Declare average estimate. Minimum KES 300 SHIF applies. Flag for reviewer.
-
-### EC2 -- Self-employed with formal employment
-
-Situation: Employed (employer deducts SHIF/NSSF) and self-employed.
-Resolution: Employer handles employment contributions. Additional SHIF may be due on self-employed income. NSSF may be maxed through employment.
-
-### EC3 -- Income above NSSF Upper Limit
-
-Situation: Income KES 200,000.
-Resolution: NSSF capped at KES 12,960. SHIF = KES 5,500 (no cap).
-
-### EC4 -- Non-citizen resident
-
-Situation: Foreign national, self-employed in Kenya.
-Resolution: SHIF applies to all residents. NSSF voluntary. Flag for reviewer.
-
-### EC5 -- Minimum income
-
-Situation: Declared KES 5,000.
-Resolution: SHIF = KES 300 (minimum). NSSF voluntary.
-
-## Section 9 -- Reviewer escalation protocol
-
-When a situation requires reviewer judgement:
-
-```
-REVIEWER FLAG
-Tier: T2
-Client: [name]
-Situation: [description]
-Issue: [what is ambiguous]
-Options: [possible treatments]
-Recommended: [most likely correct treatment and why]
-Action Required: Qualified accountant must confirm before advising client.
-```
-
-When a situation is outside skill scope:
-
-```
-ESCALATION REQUIRED
-Tier: T3
-Client: [name]
-Situation: [description]
-Issue: [outside skill scope]
-Action Required: Do not advise. Refer to qualified accountant. Document gap.
-```
-
-## Section 10 -- Test suite
-
-### Test 1 -- Moderate income
-
-Input: Declared KES 50,000. SHIF + NSSF. 2025.
-Expected output: SHIF KES 1,375. NSSF KES 6,000. Total KES 7,375.
-
-### Test 2 -- Minimum income
-
-Input: Declared KES 5,000. SHIF only.
-Expected output: SHIF KES 300 (minimum).
-
-### Test 3 -- High income, NSSF capped
-
-Input: Declared KES 200,000. Both.
-Expected output: SHIF KES 5,500. NSSF KES 12,960. Total KES 18,460.
-
-### Test 4 -- Dual status
-
-Input: Employment KES 80,000, self-employed KES 40,000.
-Expected output: Employer handles employment. Additional SHIF KES 1,100 on self-employed. NSSF likely maxed.
-
-### Test 5 -- Informal sector
-
-Input: Estimated KES 10,000. SHIF only.
-Expected output: SHIF KES 300 (minimum; 2.75% = KES 275, below minimum).
-
-### Test 6 -- NSSF at Lower Earnings Limit
-
-Input: Declared KES 9,000. NSSF only.
-Expected output: Tier I only. KES 1,080.
-
-### Test 7 -- NSSF only, no SHIF
-
-Input: KES 30,000, voluntary NSSF, no SHIF registration.
-Expected output: NSSF KES 3,600. Advise to register for SHIF (mandatory).
+Confirm household/category, assessment and dates; floor; annual premium/financing; voluntary vs employee NSSF; deposit amounts and annual aggregate; statements; and deductible payments without double relief.
 
 ## Sources
 
-1. KRA PAYE page, read 2026-10-31 -- https://www.kra.go.ke/individual/filing-paying/types-of-taxes/paye
-2. KRA public notice on insurance relief and SHIF, 8 November 2024, read 2026-10-31 -- https://www.kra.go.ke/news-center/public-notices/2152-applicability-of-insurance-relief-to-contributions-made-to-the-social-health-insurance-fund-shif
-3. NSSF Year 4 notice to employers, read 2026-10-31 -- https://gaa.go.ke/sites/default/files/2026-02/Notice%20To%20Employers%20%E2%80%94%20Year%204%20%282026%29%20NSSF%20Contribution%20Rates%20.pdf
+| Source and passages actually read | Official URL | Read on |
+|---|---|---|
+| Read for LN49/2024 consolidated to 28 February 2025, Parliament library copy, regs11-14,17-19,21-24 and Fifth Schedule: household route, means test, floor, timing and records; operative passages not entire benefits schedule | https://libraryir.parliament.go.ke/bitstreams/4783efac-60c6-4dd0-8d16-265504c9ae8d/download | 2026-11-14 |
+| Read for NSSF Act ss19(3),20-24, voluntary Provident Fund versus employee Pension Fund and annual minimum, official NSSF download legislation as at 31 December 2022 | https://www.nssf.or.ke/download/download-the-nssf-act?wpdmdl=3590 | 2026-11-14 |
+| Read for NSSF current voluntary registration, documents, initial deposit and top-up channel | https://www.nssf.or.ke/voluntary-member | 2026-11-14 |
+| Read for ITA s15(2)(ae),ss22A(8),22B, contribution deductibility and limits | https://www.kra.go.ke/images/publications/Income-Tax-Act-2026.pdf | 2026-11-14 |
 
-Not yet confirmed: self-employed SHIF payment timing and SHIF penalties.
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
+Not yet confirmed: Initial SHA payment timing for a new non-salaried member, case-specific mixed-income category, actual financing terms, live portal labels and constitutional litigation outcomes. The Ministry-hosted unsigned draft with blank legal-notice/date was rejected; the gazetted Parliament copy governs the cited regulation numbering. Old NHIF KES 150-1,700 brackets/KES 500 self-employed charge are historical and not used. Old NSSF 12% voluntary formula, KES 1,080/12,960 voluntary limits, employment 9th-day deadline and 5% monthly voluntary penalty were misapplied; former example totals KES 7375/18460/3600 and automatic KES 1100 dual-status SHIF are not current voluntary instructions. Employee limits remain in the payroll sibling.

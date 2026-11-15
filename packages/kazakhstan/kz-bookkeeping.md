@@ -1,328 +1,112 @@
 ---
 name: kz-bookkeeping
-description: >
-  Use this skill whenever asked about record-keeping, bookkeeping, ledgers, or
-  accounting obligations for self-employed people and individual entrepreneurs
-  (ИП / жеке кәсіпкер) in Kazakhstan. Trigger phrases like "ЭСФ Казахстан",
-  "ККМ Казахстан", "bookkeeping Kazakhstan ИП", "e-invoicing Kazakhstan",
-  "электронные счета-фактуры", "онлайн-ККМ", "фискальный чек", "виртуальный склад",
-  "СНТ", "first-aid documents Kazakhstan", "what records does an ИП keep",
-  "do I need a cash register in Kazakhstan", "Form 910.00 records",
-  "упрощённая декларация учёт", "общеустановленный режим учёт", "срок хранения
-  документов Казахстан", "налоговый учёт ИП", "e-Salyq", "ИС ЭСФ".
-  Distinguishes obligations by tax regime (simplified declaration / упрощённая
-  декларация vs general / общеустановленный) and explains when ИП are NOT
-  required to keep full бухгалтерский учёт.
-version: 1.0
+description: "Kazakhstan 2026 records: conditional entrepreneur accounting exemption, tax records, primary documents, receipts, retention and reconciliations."
+version: 1.1
 jurisdiction: KZ
 tax_year: 2026
-last_updated: 2026-06-12
+last_updated: 2026-11-14
 category: international
 depends_on:
   - income-tax-workflow-base
 tier: 2
-domain: bookkeeping
+domain: tax
+
+type: situation-rules
 ---
 
-# Kazakhstan (KZ) — Record-Keeping & Bookkeeping for the Self-Employed (2026)
+# Kazakhstan ИП bookkeeping and records v1.1
 
-> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
+> **General reference only.** This skill produces draft working papers for review by a qualified Kazakhstan professional before filing, payment or taking a tax position. It is not approval of any particular taxpayer’s facts.
 
-This skill covers what records a self-employed person in Kazakhstan must keep, by
-tax regime, under the **new Tax Code adopted 18 July 2025 and effective from
-1 January 2026**. The reply follows the user's language (English prose with the
-native Russian/Kazakh tax terms kept verbatim, because these are the legal terms the
-user will see on KGD / e-Salyq portals, in 1C and other software, and on documents).
+## Who this applies to
 
-Terms used: ИП (индивидуальный предприниматель / жеке кәсіпкер), СНР (специальный
-налоговый режим / special tax regime), упрощённая декларация (simplified
-declaration), общеустановленный режим (general regime), налоговый учёт (tax
-accounting), бухгалтерский учёт (full accounting), ЭСФ (электронный счёт-фактура /
-e-invoice), ИС ЭСФ (information system for ЭСФ), ККМ (контрольно-кассовая машина),
-онлайн-ККМ, фискальный чек, ОФД (оператор фискальных данных), Виртуальный склад
-(Virtual Warehouse), СНТ (сопроводительная накладная на товары), первичные документы
-(primary documents), МРП (месячный расчётный показатель / MCI), ЭЦП (электронная
-цифровая подпись), КГД (Комитет государственных доходов).
+Persons in private practice also need a separate recordkeeping/status assessment; do not apply the simplified-ИП accounting exemption to them merely by analogy. Refer their professional and reporting requirements separately.
 
-> YMYL note: tax rules change and the 2026 Tax Code is new. Figures, form numbers,
-> and thresholds below were researched against KGD, egov.kz, Big-4 and reputable
-> Kazakhstan accounting sources as of May 2026. Anything marked **"verify"** must be
-> re-checked at point of use against **kgd.gov.kz** and the e-Salyq / IS ESF portals.
+ИП/жеке кәсіпкер keeping records under simplified or general taxation, including whether full бухгалтерский учёт and financial statements are required. Legal entities/ТОО use `kz-financial-statements` for their accounting framework. Reply in the user’s language, retaining налоговый учёт, первичные документы, ЭСФ, ККМ, ОФД, Виртуальный склад and СНТ. Tax accounting and supporting documents remain required even when the specific full-accounting exemption applies.
 
----
+## Rates, bands and thresholds
 
-## 1. Quick Reference + Conservative Defaults
+| Item and conditions | Rule for 2026 | Official source |
+|---|---|---|
+| ИП full-accounting exemption: all conditions together | Simplified declaration; annual income no more than 135,000 МРП; not VAT registered; not a natural monopoly (Accounting Law art. 2(2)) | https://adilet.zan.kz/rus/docs/Z070000234_ |
+| Exemption ceases | Books/statements required from the month after a condition fails; a voluntary choice to keep them also starts next month (art. 2(2)) | https://adilet.zan.kz/rus/docs/Z070000234_ |
+| 2026 exemption ceiling | KZT 583,875,000 = 135,000 × KZT 4,325, derived; this is not the special-regime eligibility ceiling | https://www.gov.kz/org/kgd-ulytau/documents/details/939202?lang=ru |
+| Document retention | Until the applicable limitation period expires, and at least 5 years; generally starts with the tax period following the obligation computation period. Longer asset-specific rules apply (Tax Code art. 206; 5 in words on the page) | https://www.gov.kz/org/kgd-akmola/documents/details/1084149?lang=ru |
+| Tax-record language | Kazakh and/or Russian; authority can require translation of foreign-language documents (art. 206) | https://www.gov.kz/org/kgd-akmola/documents/details/1084149?lang=ru |
 
-| Field | Value |
-|---|---|
-| Country | Republic of Kazakhstan (KZ) |
-| Scope | Self-employed individuals: ИП (индивидуальный предприниматель / жеке кәсіпкер) on the simplified declaration (упрощённая декларация) or general (общеустановленный) regime, and persons in private practice. Excludes ТОО / legal entities (full бухгалтерский учёт). |
-| Currency | Kazakhstani tenge (KZT, ₸) |
-| Authority | State Revenue Committee (Комитет государственных доходов, **КГД**), Ministry of Finance — kgd.gov.kz |
-| Legislation | New Tax Code of the RK (adopted 18.07.2025, effective 01.01.2026); MoF orders on ЭСФ issuance rules (2026), ККМ application & receipt content (e.g. MoF Order on ККМ effective 01.01.2026), goods-traceability mechanism rules (effective 01.01.2026), and СНТ — **verify exact order numbers/dates** |
-| Portals | ИС ЭСФ (esf.gov.kz / esf.kgd.gov.kz); e-Salyq / Кабинет налогоплательщика (cabinet.salyk.kz); egov.kz; e-Salyq Business / e-Salyq Azamat apps |
-| Unit of account | МРП (MCI). For 2026, 1 МРП = **verify current value** (widely reported ~4,325 KZT — confirm against the 2026 budget law) |
-| Retention | Generally **5 years** for tax records and primary documents — verify under the new Tax Code |
-| Contributor | Open Accountants Community |
-| Version | 1.0 |
+## The base
 
-### Conservative defaults (apply when facts are missing or ambiguous)
+1. Establish legal form, actual regime, annual income, VAT/natural-monopoly status and any voluntary accounting election. A general-regime ИП is not automatically exempt. An ИП can remain within the simplified tax regime while exceeding the lower accounting-exemption ceiling. Use `kz-financial-statements` when full accounting starts.
+2. Maintain a tax accounting policy and registers appropriate to the regime under arts. 202–205/218–220, with records traceable to the primary documents. For a qualifying accounting-exempt ИП, entries rest on primary documents; the Tax Code permits their preparation in IS ESF with digital signature. Supporting documents include акт выполненных работ/оказанных услуг, накладная, счёт на оплату, ЭСФ where required, фискальный чек, bank statements and СНТ for covered goods. A payment request alone is not proof of supply. Preserve transaction identifiers, dates, counterparty, business purpose, currency and reconciliation.
+3. For accounting-exempt ИП, art. 220 uses the official exchange rate on the operation date, not a generic receipt-date/annual-average shortcut. The selected regime’s income-recognition rules still matter. Separate business funds from personal Kaspi/Halyk movements, internal transfers and loan principal; do not exclude taxable interest just because it accompanies a loan payment.
+4. Determine invoice obligations under `kz-einvoice` and arts. 207–209. In particular art. 208 expressly includes simplified taxpayers; non-VAT or ordinary services does not alone remove the invoice obligation. Evaluate the specific receipt/end-consumer/other exceptions and a buyer’s demand. Imported goods, international freight, commission/traceability and Виртуальный склад cases need their specific analysis.
+5. Cash, card and mobile-payment receipts are within “денежные расчеты” (art. 19). Use a registered permitted ККМ under arts. 110–111 unless a specific exemption applies. The mobile-app route, specified professional categories and other enumerated exemptions must be distinguished. No-network areas generally use a non-transmitting machine, not an assumed exemption from receipts. Register through ОФД data for a transmitting register; issue each fiscal receipt and retain the registration/status evidence. OFD storage does not replace taxpayer retention.
+6. Determine whether the actual goods and movement fall under current СНТ/Виртуальный склад/traceability lists. These are not synonymous with all imports or every non-VAT trader. Keep movement, stock and invoice links. Exact current goods-list scope, catalogue linkage, form-field changes, machine-firmware procedures and СНТ issuance/recovery terms are unresolved here; route rather than invent them.
+7. Retain ordinary records for art. 206’s minimum and any longer limitation/asset period. Group I/other separately depreciated assets use a period running after the last depreciation period; other asset-group and non-depreciable-asset rules have their own starting points. Reorganisation transfers the storage duty to successors. Do not destroy records merely because 5 years passed if a longer rule applies.
 
-- **Assume records ARE required.** Default to keeping a налоговый учёт ledger and the
-  primary documents that support every income and expense item.
-- **Assume онлайн-ККМ IS required** for any ИП taking cash or bank-card payment from
-  the public, unless a specific, current exemption is established. Do not assume
-  exemption from "small business" or "no employees" alone — verify.
-- **Assume ЭСФ may be required** even for a non-VAT ИП when selling goods on the
-  **Виртуальный склад**, traceable goods, imported goods, on international transport,
-  or commission/consignment supplies. Check the goods/activity, not just VAT status.
-- **From 2026 a СНР cannot be combined with VAT-payer status** — this is a major change.
-  If the user is VAT-registered, the simplified declaration is not available; verify.
-- **Retention: keep everything ≥ 5 years.** When in doubt, keep longer.
-- **Never invent МРП values, thresholds, rates, form numbers, or penalty amounts.**
-  If not verified, write "verify" and point the user to kgd.gov.kz.
-- ИП on a СНР who are not VAT-registered generally do **not** keep full бухгалтерский
-  учёт; do not tell such an ИП to prepare financial statements.
+## Deadlines and filing
 
----
+Reconcile the tax ledger with the applicable income return (`kz-simplified-regime`/`kz-income-tax`), payroll, social payments and VAT jobs. Tax returns and statutory statements are different outputs. Issue the correct invoices/receipts through IS ESF and the registered ККМ/app, retain signed/accepted status and stock/movement links. Use `kz-einvoice` for operative invoice deadlines, not a universal issuance window. Do not state unconfirmed 2026 appendix fields as authoritative.
 
-## 2. Records Required by Regime
+## Penalties and interest
 
-| Regime | Ledger / tax accounting | Primary documents | Tax return | ЭСФ | Онлайн-ККМ |
-|---|---|---|---|---|---|
-| **Simplified declaration (упрощённая декларация)** — ИП on СНР, not VAT-registered | **Simplified налоговый учёт** under the 2026 rules for ИП on СНР who do not keep бухучёт; a tax accounting policy (налоговая учётная политика) and income/turnover records are required — verify exact form | акт выполненных работ/услуг, накладная, счёт на оплату, фискальный чек, bank statements, СНТ where applicable | **Form 910.00**, filed semi-annually (per half-year) — verify; **Form 200.00** quarterly if there are employees | Generally **only if** selling Виртуальный склад / traceable / imported goods, on international transport, or other listed cases — verify | **Generally required** for cash/card sales to the public; narrow exemptions only |
-| **General regime (общеустановленный режим)** — ИП | **Налоговый учёт** under the 2026 organisation-of-tax-accounting rules for ИП (simplified order for ИП who do not keep бухучёт); налоговая учётная политика required. Income and expense (deduction) records with supporting documents. | Full set: акт, накладная, счёт, фискальный чек, ЭСФ (issued/received), bank documents, СНТ | Annual ИПН (individual income tax) declaration (e.g. **Form 220.00** — verify); VAT (Form 300.00) if VAT-registered | **Required if VAT-registered**; otherwise per the goods/activity list above | **Generally required** for cash/card sales to the public |
+Do not quote an unverified penalty for missing invoices, receipts, records or a register. Preserve the actual breach, period, taxpayer category and notice for application of the current administrative provision.
 
-**Key distinction.** Under the 2026 Tax Code, ИП on a СНР who are **not** VAT payers
-and **not** classified as keeping mandatory бухучёт are generally **exempt from full
-бухгалтерский учёт and from preparing financial statements** — they keep **налоговый
-учёт** (tax accounting) instead. New 2026 rules set out the *simplified organisation
-of tax accounting* for ИП who do not keep бухучёт, including a налоговая учётная
-политика. Exemption from бухучёт does **NOT** exempt anyone from creating and keeping
-**первичные документы**: primary documents must still support every transaction, be
-drawn up in the state (Kazakh) and/or Russian language, and be retained. Only ТОО and
-other legal entities keep full бухгалтерский учёт (out of scope here).
+## Cross-border points
 
----
+Foreign currency, foreign-language documents and EAEU/traceable goods need the specific exchange-rate, translation and movement records. ТОО, payroll computation, patent/retail historical transitions and complex imports are routed to their owning jobs; an accounting-exemption assumption cannot resolve them.
 
-## 3. ЭСФ — Electronic Invoicing (Who, When, How)
+## Two worked examples that recompute
 
-**What it is.** ЭСФ (электронный счёт-фактура) is the mandatory electronic invoice
-issued through the national **ИС ЭСФ** (Information System of Electronic Invoices),
-signed with an **ЭЦП** (electronic digital signature). It is the e-invoice backbone of
-Kazakhstan's tax system and the basis of input-VAT and goods-traceability control.
+Case 1: Aizhan is an otherwise qualifying simplified-regime ИП IT freelancer, with hypothetical annual income KZT 500,000,000. At the 2026 МРП, accounting-exemption headroom is KZT 83,875,000. She keeps primary documents and tax registers, with invoice/ККМ exemptions tested on actual payments; bank transfer alone does not answer every invoice condition.
 
-**Who must issue ЭСФ (2026).** The circle of obligated persons was **expanded from
-1 January 2026** under the new Tax Code. Typically required:
-- **All registered VAT payers** — must issue ЭСФ for their supplies.
-- **Non-VAT payers (including ИП)** in specific cases, notably: sale of goods held on
-  the **Виртуальный склад**; sale of **traceable** goods; sale of **imported** goods;
-  **international transport** services; goods sold under **commission/consignment**;
-  and other categories listed by the Tax Code / MoF — **verify the current list**.
-- A taxpayer on a СНР who is **not** a VAT payer may still be required to issue an
-  **invoice/ЭСФ** when selling goods, works or services in the cases above — verify.
+```oa-check
+name: Aizhan accounting exemption ceiling
+inputs:
+  income: 500000000
+  mrp: 4325
+steps:
+  - ceiling: 135000 * mrp
+  - headroom: ceiling - income
+expected:
+  ceiling: 583875000
+  headroom: 83875000
+```
 
-**Who does NOT issue ЭСФ.** ЭСФ is not issued on the **sale of personal property by an
-individual** (including an individual who is an ИП) — i.e. private, non-business sales.
+Case 2: Bauyrzhan’s hypothetical simplified retail business has annual income KZT 600,000,000, no natural-monopoly status. It exceeds the full-accounting exemption by KZT 16,125,000 while remaining below the separately tested simplified tax ceiling. Identify the actual failure month; books/statements start the next month. Cash/card/mobile sales require the ККМ analysis, with СНТ/ЭСФ checked for the goods.
 
-**Deadlines.** ЭСФ are generally issued within the statutory window (commonly cited as
-within a set number of days of the supply) — **verify the current term** for the
-supply type, as terms differ for goods, services, and Виртуальный склад items.
+```oa-check
+name: Bauyrzhan distinct accounting and tax ceilings
+inputs:
+  income: 600000000
+  mrp: 4325
+steps:
+  - accounting_ceiling: 135000 * mrp
+  - tax_ceiling: 600000 * mrp
+  - accounting_excess: income - accounting_ceiling
+  - tax_headroom: tax_ceiling - income
+expected:
+  accounting_excess: 16125000
+  tax_headroom: 1995000000
+```
 
-**2026 changes to note (verify before quoting specifics):**
-- New ЭСФ **form and issuance rules** apply from 2026, including a **new mandatory
-  field** added to the ЭСФ form.
-- Expanded list of persons obliged to issue ЭСФ.
-- New ИС ЭСФ functions tied to the 2026 VAT reform.
-- Tighter integration with the **Национальный каталог товаров** (national goods
-  catalogue) and goods traceability.
+Dana is the preserved general-regime, VAT-registered mixed B2B/B2C case: she cannot use this simplified-regime accounting exemption. Keep full applicable books/statements, tax registers and valid ЭСФ; assess ККМ on cash/card/mobile payments. The former statement that every ИП keeps only tax accounting was incorrect.
 
----
+## Ask the client first
 
-## 4. Online Cash Registers (онлайн-ККМ) & Fiscal Receipts
+- Exact regime, legal form, annual income and exemption/election evidence?
+- VAT status and natural-monopoly status?
+- Payment methods, customer types and required invoice/receipt documents?
+- Goods, imports, traceability/stock movements and current list coverage?
+- Full primary documents, currencies, dates, asset classes and record-retention holds?
 
-**What it is.** ККМ (контрольно-кассовая машина) — in modern form an **онлайн-ККМ** —
-is a fiscal cash register that records each sale and transmits it in real time to the
-**ОФД** (оператор фискальных данных) and on to КГД. Each sale produces a **фискальный
-чек** for the buyer. Software ККМ (e.g. mobile/app registers) are permitted.
+## Sources
 
-**Who must use it.** Broadly, **any ИП or company accepting cash or bank-card payment
-from the public** must use an онлайн-ККМ and issue a фискальный чек. Since around 2020
-the obligation has been general across activities; do not assume a "small business" or
-"no employees" exemption — **verify the specific activity**.
+| Source and operative sections actually read | URL | Read on |
+|---|---|---|
+| Read for current Accounting Law art. 2, opened in ordinary browser including 2026 amendment | https://adilet.zan.kz/rus/docs/Z070000234_ | 2026-11-14 |
+| Read for Tax Code arts. 19, 110–111, 202–209, 218–220 and 65 | https://www.gov.kz/org/kgd-akmola/documents/details/1084149?lang=ru | 2026-11-14 |
+| Read for 2026 budget law art. 7 | https://www.gov.kz/org/kgd-ulytau/documents/details/939202?lang=ru | 2026-11-14 |
+| Read for current accounting-exemption conditions and prohibited-list identification | https://www.gov.kz/situations/814/1716?lang=ru | 2026-11-14 |
 
-**Registration (2026).** Registration of онлайн-ККМ is done **on the basis of data
-from the ОФД, without visiting the tax office** — verify the current procedure on
-egov.kz / e-Salyq.
-
-**Exemptions (narrow — verify each against the current MoF rules):** historically
-limited categories, e.g. certain sellers of newspapers/journals, transport ticket
-sellers, certain agricultural producers, and a defined list of activities/locations.
-Some remote/low-connectivity settlements have had special treatment — **verify**
-whether any exemption applies to the user's exact activity and location before advising
-"no ККМ".
-
-**2026 changes to note (verify):**
-- New **ККМ application rules** and **receipt-content requirements** take effect
-  **1 January 2026** (MoF order; commonly cited Order No. 626 — verify number/date).
-- Owners of stationary models (e.g. Mercury, Minika, Port) may need a service-centre
-  update; software ККМ are updated automatically.
-- Receipts must correctly reflect the product (linked to the goods catalogue) — verify.
-
-**ОФД role & retention.** The онлайн-ККМ sends each фискальный чек to an accredited ОФД,
-which validates and forwards it to КГД and stores fiscal data. The ОФД's storage does
-**not** replace the taxpayer's own document-retention duty.
-
----
-
-## 5. Виртуальный склад, Traceability, Primary Documents, Retention & Portals
-
-### Виртуальный склад (Virtual Warehouse) & goods traceability
-
-The **Виртуальный склад (ВС)** is a **module of ИС ЭСФ** that tracks the movement and
-stock of specific goods and underpins Kazakhstan's **goods-traceability** mechanism
-(implementing an EAEU international agreement). For goods on the ВС / traceable goods:
-- supplies are documented through **СНТ** (сопроводительная накладная на товары —
-  electronic consignment/shipping note) and **ЭСФ** via ИС ЭСФ;
-- the list of goods covered by the ВS and by СНТ was **expanded for 2026** (MoF orders,
-  e.g. lists approved in late 2025 effective 01.01.2026 — verify);
-- on **technical failure**, documents may be issued on paper temporarily and entered
-  into the system within the statutory window (commonly cited as 15 days — verify).
-
-If the user does not trade in listed/traceable goods, the ВС and СНТ usually do not
-apply — but **verify** the goods against the current catalogue, as the list grows.
-
-### Primary documents (первичные документы)
-
-Must be drawn up in **Kazakh and/or Russian**, without reference to bookkeeping
-accounts when prepared by an ИП who does not keep бухучёт. Core documents:
-- **Акт** (акт выполненных работ / оказанных услуг) — confirms services/works; main
-  document for service freelancers.
-- **Накладная** / **СНТ** — confirms transfer of goods (СНТ for traceable goods).
-- **Счёт на оплату** — payment request / pro-forma; basis for payment.
-- **ЭСФ** — the electronic VAT/invoice document via ИС ЭСФ where required.
-- **Фискальный чек** — the receipt from онлайн-ККМ for cash/card sales.
-- **Bank statements** — evidence of receipts and payments.
-
-### Retention
-
-Generally **5 years** for tax records and supporting primary documents — verify the
-exact term and start point under the 2026 Tax Code (some categories may run longer).
-
-### Portals
-
-- **ИС ЭСФ** — esf.gov.kz / esf.kgd.gov.kz (issue/receive ЭСФ, Виртуальный склад, СНТ).
-- **e-Salyq / Кабинет налогоплательщика** — cabinet.salyk.kz (returns, reporting).
-- **egov.kz** — ККМ registration and many state services.
-- **e-Salyq Azamat / e-Salyq Business** — mobile services for individuals/business.
-- **kgd.gov.kz** — КГД, the authority and primary reference.
-
----
-
-## 6. Worked Examples
-
-**Example 1 — ИП on simplified declaration, IT freelancer billing businesses.**
-Aizhan is an ИП on the **упрощённая декларация**, not VAT-registered, paid by bank
-transfer by company clients. She keeps **simplified налоговый учёт** (with a налоговая
-учётная политика and turnover records), issues an **акт** and **счёт** for each
-engagement, files **Form 910.00 semi-annually** (verify), and keeps no full
-бухгалтерский учёт. She generally needs **no онлайн-ККМ** (no cash/card from the
-public) and generally issues **no ЭСФ** — *unless* she sells listed/traceable/imported
-goods or falls in another listed case. Retention: **5 years**. *Flag:* if she ever
-registers for VAT she **loses** the СНР from 2026 — verify.
-
-**Example 2 — ИП on simplified declaration, retail shop taking cash and cards.**
-Bauyrzhan runs a kiosk on the **упрощённая декларация**, selling to the public. He
-**must use an онлайн-ККМ** with an **ОФД** contract and issue a **фискальный чек** for
-every sale. If his goods are on the **Виртуальный склад** / traceable list, he must
-also handle **СНТ** and **ЭСФ** via ИС ЭСФ — *even though he is not a VAT payer* —
-verify against the 2026 goods list. He keeps supplier накладные/СНТ, чеки, and bank
-statements for **5 years**, and keeps **налоговый учёт**, not full бухучёт.
-
-**Example 3 — ИП on general regime, VAT-registered, mixed B2B/B2C.**
-Dana is an ИП on the **общеустановленный режим**, VAT-registered. She **must issue ЭСФ**
-for her supplies through **ИС ЭСФ** (signed with ЭЦП), files **Form 300.00 (VAT)** and
-the annual **ИПН** declaration (Form 220.00 — verify), and uses an **онлайн-ККМ** for
-any cash/card sales to the public. She keeps **налоговый учёт** under the 2026 ИП
-tax-accounting rules (she does not keep бухучёт as an ИП), retains all ЭСФ, чеки,
-акты, накладные/СНТ and bank documents for **5 years**, and reflects products
-correctly on receipts per the 2026 ККМ rules.
-
----
-
-## 7. Tier 2 Notes + References + Checklist
-
-### Tier 2 / ambiguity flags (escalate or verify, do not guess)
-- **2026 МРП value** and any threshold expressed in МРП (simplified-declaration income
-  limit, VAT-registration threshold) — sources conflict; **verify** before quoting.
-- Exact **simplified-declaration income ceiling** (cited variously as ~600,000 МРП and
-  ~2.36–2.6 bn KZT) and whether the user qualifies — verify.
-- **VAT-registration threshold** for 2026 (cited variously, e.g. ~10,000 МРП or a fixed
-  KZT figure) — verify; it determines whether ЭСФ becomes mandatory across all supplies.
-- Whether the **СНР cannot be combined with VAT** affects the user's regime choice —
-  verify and route to a regime-choice resource if needed.
-- Exact **ЭСФ / ККМ / СНТ form numbers, fields, and issuance terms** for 2026 — verify.
-- Whether specific **goods** are on the **Виртуальный склад / traceable / СНТ** list —
-  verify against the current catalogue (it is expanding).
-- **Penalty amounts** for missing ЭСФ, чеки, or records — verify; do not quote unverified.
-- **Patent (патент)** regime and **retail tax** specifics, payroll, and ТОО / legal
-  entities — out of primary scope; route elsewhere.
-
-### References (verify at point of use)
-- **kgd.gov.kz** — State Revenue Committee (КГД), primary authority
-- **esf.gov.kz / esf.kgd.gov.kz** — ИС ЭСФ, Виртуальный склад, СНТ
-- **cabinet.salyk.kz / e-Salyq** — Кабинет налогоплательщика, returns
-- **egov.kz** — ККМ registration and state services
-- New **Tax Code of the RK** (adopted 18.07.2025, effective 01.01.2026)
-- MoF orders on **ЭСФ issuance rules (2026)**, **ККМ application & receipt content
-  (effective 01.01.2026)**, **goods-traceability mechanism**, and **СНТ** — verify nos.
-- PwC *Kazakhstan — Other taxes*; EY / Baker McKenzie / Moore / Dentons 2026 tax notes
-
-### Checklist (run before concluding)
-- [ ] Regime identified: simplified declaration / general (or patent/retail → escalate)?
-- [ ] VAT status established (and SNR+VAT incompatibility from 2026 flagged)?
-- [ ] Correct ledger named: налоговый учёт (not full бухучёт for an ИП on СНР)?
-- [ ] ЭСФ obligation assessed by VAT status AND by goods/activity (Виртуальный склад,
-      traceable, imported, international transport)?
-- [ ] Онлайн-ККМ obligation assessed, including ОФД and narrow exemptions?
-- [ ] Виртуальный склад / СНТ assessed for traceable goods?
-- [ ] Primary documents listed (акт / накладная / СНТ / счёт / ЭСФ / фискальный чек)?
-- [ ] Retention stated as 5 years (with longer-period caveat)?
-- [ ] Confirmed ИП on СНР do not keep full бухгалтерский учёт?
-- [ ] All unverified МРП values, thresholds, forms, terms flagged "verify"?
-- [ ] Reply in the user's language; Russian/Kazakh terms kept verbatim?
-
----
-
-## PROHIBITIONS
-
-- Do **not** invent or guess **МРП values, thresholds, tax rates, form numbers, ЭСФ/ККМ
-  issuance terms, or penalty amounts**. If not verified, write "verify" and cite
-  kgd.gov.kz.
-- Do **not** tell an ИП on a СНР (not VAT-registered) that they must keep full
-  бухгалтерский учёт or file financial statements — that is a ТОО / legal-entity
-  obligation. They keep налоговый учёт plus primary documents.
-- Do **not** say an ИП may skip **ЭСФ** purely because they are not VAT-registered —
-  ЭСФ can still be required for Виртуальный склад / traceable / imported goods,
-  international transport, and other listed cases. Check the goods/activity.
-- Do **not** assert an **онлайн-ККМ** exemption based on "small business" or "no
-  employees" alone — verify a specific, current exemption for the exact activity/location.
-- Do **not** tell a user they may combine a **СНР with VAT-payer status** in 2026 — this
-  combination is removed under the new Tax Code; verify and advise a regime choice.
-- Do **not** advise shorter retention than **5 years**.
-- Do **not** handle ТОО / legal entities, patent or retail-tax specifics, payroll, or
-  non-self-employed scenarios under this skill — route elsewhere.
-- Do **not** present this output as filed/final advice without a qualified Kazakhstan
-  accountant's sign-off.
-
-## Disclaimer
-
-This skill is **research-verified** content from the Open Accountants Community, current
-to the best available public sources as of **May 2026**, and is **pending sign-off by a
-qualified Kazakhstan accountant**. It is general information, not individualised tax
-advice. The new Kazakhstan Tax Code (effective 1 January 2026) and its implementing MoF
-orders on ЭСФ, ККМ, СНТ and goods traceability are recent and still settling; МРП
-values, thresholds, forms, issuance terms, and exemptions change — always verify against
-**kgd.gov.kz** and the **ИС ЭСФ / e-Salyq** portals at the point of use. A qualified
-Kazakhstan accountant or tax adviser must review any output before it is relied upon for
-filing. See **openaccountants.com**.
+Not yet confirmed: The old assertion that accounting-exempt ИП primary documents must omit bookkeeping-account references is unconfirmed, as are exact current primary-document form requirements; Exact current СНТ/Виртуальный склад goods lists, national-catalogue links, 2026 new invoice field, KKM model/firmware requirements (including the old named Mercury, Minika and Port models), implementing-order numbers such as the old tentative No. 626, paper-recovery periods for СНТ, and numerical penalties. Historical press/vendor generalisations are not substituted for these instruments.

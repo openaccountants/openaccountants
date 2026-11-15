@@ -1,323 +1,218 @@
 ---
 name: jp-social-insurance
-description: Use this skill whenever asked about Japanese National Health Insurance (NHI) or National Pension for self-employed individuals. Trigger on phrases like "NHI", "kokumin kenko hoken", "kokumin nenkin", "national pension Japan", "health insurance freelancer Japan", "social insurance self-employed Japan", or any question about NHI premiums, pension contributions, or social insurance obligations for sole proprietors in Japan. Covers NHI income-based calculation, National Pension fixed monthly amount, payment schedules, and reduction/exemption rules. ALWAYS read this skill before touching any Japanese social insurance work.
-version: 2.0
+description: Use for Japanese self-employed National Health Insurance (国民健康保険, kokumin kenko hoken) and National Pension (国民年金, kokumin nenkin), fiscal-year premiums, household and municipal inputs, pension relief, mid-year changes and payment matching. Covers FY2026, with Shinjuku's actual municipal NHI schedule as a named example, not a national tariff. Route employees on employer insurance to japan-payroll.
+version: 2.1
 jurisdiction: JP
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+tax_year_notes: "Fiscal 2026: April 2026-March 2027. Premiums and relief periods have different calendars; 2026 cash deductions use amounts actually paid."
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 status: needs_sources
 domain: payroll
+type: computation
 ---
 
-# JP Social Insurance
+# Japan self-employed health insurance and pension v2.1
 
-## Section 1 -- Quick reference
+> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
-**Quick reference table**
+## Scope
 
-| Field | Value |
-| --- | --- |
-| Country | Japan |
-| Jurisdiction Code | JP |
-| Primary Legislation | National Health Insurance Act; National Pension Act |
-| Supporting Legislation | Long-Term Care Insurance Act; Local Tax Act |
-| Tax Authority | Municipal governments (NHI); Japan Pension Service (National Pension) |
-| Tax Year | FY 2025 (April 2025 -- March 2026) |
-| Currency | JPY only |
-| Contributor | Open Accountants Community |
-| Validation Date | Pending |
-| Skill Version | 2.0 |
-| Confidence Coverage | Tier 1: National Pension fixed amount, NHI component structure, payment schedules, caps. Tier 2: NHI municipal rate variations, reduction eligibility, partial-year calculations. Tier 3: disability pension, survivors pension, voluntary additional pension. |
+Self-employed people, freelancers, students and others whose actual insurance status puts them in municipal NHI and/or National Pension Category 1. NHI and pension have separate eligibility tests. National Pension Category 1 generally covers residents aged 20-59 who are neither Category 2 employees nor Category 3 dependent spouses; medical-stay and long-tourism visa exclusions must be checked. A freelancer label does not itself prove Category 1 or NHI status. Employer insurance is handled in `japan-payroll`, not charged again here.
 
-**National Pension (FY 2025)**
+Currency is JPY. FY2026 premiums apply April 2026-March 2027. NHI income generally refers to the preceding calendar year; it is not current-year profit. The NHI debtor can be the registered household head even when that head is insured elsewhere. The figures below are **Shinjuku's** municipal schedule; obtain the actual municipality's current assessment before any client payment instruction.
 
-| Item | Amount |
-| --- | --- |
-| Monthly premium | JPY 17,510 |
-| Annual total | JPY 210,120 |
-| Category 1 insured | Self-employed, freelancers, students, unemployed aged 20-59 |
-| Tax treatment | Fully deductible as social insurance premium deduction |
-
-**NHI component structure**
-
-| Component | Purpose | Applies To |
+| Quick reference | Figure/condition | Official source |
 | --- | --- | --- |
-| Medical | Basic health insurance | All NHI enrollees |
-| Support | Elderly health system support | All NHI enrollees |
-| Long-term care | Long-term care insurance | Ages 40-64 only |
+| National Pension Category 1 | Ages 20-59 resident, excluding Category 2/3 and stated visa exclusions | National Pension Act eligibility, JPS explanation: https://www.nenkin.go.jp/international/simplejapanese/japanese-system/nationalpension/nationalpension.html |
+| FY2026 monthly pension | JPY 17,920, April 2026-March 2027, before approved relief/discount | National Pension Act art. 87 annual premium: https://www.nenkin.go.jp/service/kokunen/hokenryo/hokenryo.html |
+| Full FY2026 pension | JPY 215,040, derived as 12 monthly payments without relief/advance discount | Same: https://www.nenkin.go.jp/service/kokunen/hokenryo/hokenryo.html |
+| Historical FY2025 monthly pension | JPY 17,510, April 2025-March 2026 only; do not use for later months | JPS annual premium table: https://www.nenkin.go.jp/service/kokunen/hokenryo/hokenryogaku.html |
+| Shinjuku NHI structure FY2026 | Medical + elderly support + long-term care where applicable + new child-support component | NHI Act art. 76; local premium schedule: https://www.city.shinjuku.lg.jp/kenkou/hoken01_002065_00003.html |
 
-**NHI annual caps (FY 2025)**
+## Ask the client first
 
-| Component | Annual Cap |
-| --- | --- |
-| Medical | JPY 650,000 |
-| Support | JPY 240,000 |
-| Long-term care | JPY 170,000 |
-| Total maximum | JPY 1,060,000 |
+Before computing obtain: residence/visa and qualification dates; date of birth; municipality and household head; every insured household member and relevant age interval; prior-year income and tax returns for all required people; employer health/pension and dependent status; changes during the year; pension exemption/deferral decisions; childbirth/childcare relief; NHI reduction decisions; actual bills and payment records. Ask for evidence of no income rather than defaulting missing income to zero. Missing age, municipality or other-insurance status also means **hold**, not assume under-age or uninsured.
 
-**NHI sub-elements per component**
+Preserved referrals:
 
-| Sub-Element | Basis | Typical Range |
-| --- | --- | --- |
-| Income-based | Prior-year income minus JPY 430,000 base deduction | 5-12% (varies by municipality) |
-| Per-capita | Fixed amount per enrolled person | JPY 20,000-60,000/year |
-| Per-household | Fixed amount per household | JPY 0-30,000/year (some omit) |
-| Asset-based | Fixed-asset tax | Being phased out |
+- **R-JP-SI-1 -- Disability pension:** Eligibility/computation requires case-specific assessment; refer to a social insurance labour consultant.
+- **R-JP-SI-2 -- Survivors pension:** Claims are outside this skill; refer.
+- **R-JP-SI-3 -- Voluntary additional pension (Kokumin Nenkin Kikin):** Separate scheme advice; refer.
+- Employer shakai hoken enrolment: STOP the duplicate NHI computation and resolve the actual coverage before continuing.
 
-**Low-income reductions (NHI per-capita/per-household only)**
+## The method, step by step
 
-| Reduction | Household Income Threshold (2025) |
-| --- | --- |
-| 70% reduction | JPY 430,000 + (JPY 100,000 x earners beyond 1) |
-| 50% reduction | JPY 430,000 + JPY 295,000 x insured + (JPY 100,000 x earners beyond 1) |
-| 20% reduction | JPY 430,000 + JPY 545,000 x insured + (JPY 100,000 x earners beyond 1) |
+### Establish pension months and relief
 
-**Conservative defaults**
+Confirm the Category 1 qualification record month by month. Register becoming Category 1 with the municipal office using **国民年金被保険者関係届書（申出書）** within 14 days (JPS eligibility page). A job change, a dependent-spouse status or leaving Japan can change the record. Turning 60 requires a qualification-end check; voluntary continuation has separate conditions and is referred, not silently treated as compulsory Category 1.
 
-| Ambiguity | Default |
-| --- | --- |
-| Unknown municipality | Flag for reviewer -- cannot compute NHI without municipal rates |
-| Unknown prior-year income | Use JPY 0 (minimum NHI, possible pension exemption) |
-| Unknown age | Assume under 40 (no long-term care component) |
-| Unknown shakai hoken status | Assume NOT enrolled (NHI applies) |
+For months without relief/discount multiply the actual fiscal year's premium by chargeable months. Never use the FY2026 amount for January-March 2026 or treat a fiscal premium total as calendar-year cash paid. Advance payment is available for 6 months, 1 year or 2 years and early bank debit; use the JPS amount for the actual method/start period. The old approximate percentage discounts are not a schedule. The current early monthly debit saves JPY 60, per the linked JPS table.
 
-Read this whole section before computing anything.
+Income-tested relief needs an application and approval. Exemption considers the applicant, spouse and household head; payment deferral generally considers applicant and spouse and covers ages 20 to under 50. Students use their separate student scheme; statutory disability/welfare exemptions and prenatal/postnatal relief have separate routes. Do not infer approval from low income.
 
-## Section 2 -- Required inputs and refusal catalogue
-
-### Required inputs
-
-- **Required inputs before computing** — Before computing any social insurance figure, you MUST know: 1. Residency status -- resident in Japan (non-residents not covered) 2. Age -- determines pension category (20-59) and long-term care (40-64) 3. Municipality of residence -- NHI rates vary by municipality 4. Prior-year income -- NHI premiums based on prior calendar year 5. Number of NHI-enrolled household members -- per-capita component per person 6. Whether enrolled in any employer health insurance -- employees on shakai hoken excluded from NHI 7. Whether any pension exemption or deferral has been granted. If the client is enrolled in employer-based health insurance, STOP. This skill covers NHI only.  _(Section 2 -- Required inputs and refusal catalogue)_
-
-### Refusal catalogue
-
-- **R-JP-SI-1 -- Disability pension** — Disability pension eligibility and computation under the National Pension Act require case-specific assessment. Please escalate to a social insurance labour consultant. (Trigger: client asks about disability pension eligibility or computation.)  _(Refusal catalogue)_
-- **R-JP-SI-2 -- Survivors pension** — Survivors pension claims are outside this skill's scope. Please escalate to a social insurance labour consultant. (Trigger: client asks about survivors pension.)  _(Refusal catalogue)_
-- **R-JP-SI-3 -- Voluntary additional pension (Kokumin Nenkin Kikin)** — Voluntary additional pension schemes require separate analysis. Please escalate to a qualified professional. (Trigger: client asks about additional pension schemes.)  _(Refusal catalogue)_
-
-## Section 3 -- Payment pattern library
-
-This is the deterministic pre-classifier for bank statement entries related to social insurance. Match by case-insensitive substring.
-
-### 3.1 National Pension debits
-
-**National Pension debits pattern table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| NENKIN, PENSION, 年金, 国民年金 | NATIONAL PENSION PAYMENT | Monthly premium -- due by end of following month |
-| JAPAN PENSION SERVICE, 日本年金機構 | NATIONAL PENSION PAYMENT | Same |
-| 年金前納, ADVANCE PENSION | ADVANCE PENSION PAYMENT | 6-month, 1-year, or 2-year advance payment (discounted) |
-
-### 3.2 NHI premium debits
-
-**NHI premium debits pattern table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| NHI, 国民健康保険, 国保, KOKUMIN KENKO | NHI PREMIUM PAYMENT | Municipal billing -- typically June to March (10 instalments) |
-| 市区町村, CITY OFFICE, WARD OFFICE | POSSIBLE NHI PAYMENT | Verify -- municipalities bill NHI directly |
-| 口座振替 (bank debit) + municipal name | NHI AUTO-DEBIT | Auto-debit for NHI premium |
-
-### 3.3 Long-term care (embedded in NHI for ages 40-64)
-
-**Long-term care pattern table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| 介護保険, LONG-TERM CARE | LTCI COMPONENT | Included in NHI billing for ages 40-64; separate billing for 65+ |
-
-### 3.4 Employer health insurance (exclusion trigger)
-
-**Employer health insurance pattern table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| 健康保険, KENPO, 協会けんぽ | EMPLOYER HEALTH INSURANCE | Client is on shakai hoken -- STOP, NHI skill does not apply |
-| 厚生年金, KOSEI NENKIN | EMPLOYEES PENSION | Client is on shakai hoken -- STOP |
-
-## Section 4 -- National Pension rules
-
-### 4.1 Category 1 insured (Tier 1)
-
-- **Category 1 insured definition** — Self-employed individuals, freelancers, students, and unemployed aged 20-59 are Category 1 insured. Monthly premium for FY 2025: JPY 17,510. Annual total: JPY 210,120.  _(National Pension Act, Art. 87)_
-
-### 4.2 Payment methods and discounts (Tier 1)
-
-**Payment methods and discounts**
-
-| Method | Discount |
-| --- | --- |
-| Monthly | None |
-| 6-month advance | ~1% |
-| 1-year advance | ~2% |
-| 2-year advance | ~4% |
-| Bank transfer (early debit) | Slight additional discount |
-
-### 4.3 Tax deductibility (Tier 1)
-
-- **National Pension tax deductibility** — National Pension premiums are fully deductible as social insurance premium deduction on the income tax return. No cap.  _(4.3 Tax deductibility (Tier 1))_
-
-### 4.4 Exemptions and deferrals (Tier 1 / Tier 2)
-
-**Exemptions and deferrals table**  _(National Pension Act, Art. 90)_
-
-| Exemption Type | Income Threshold (single, approx) | Payment |
-| --- | --- | --- |
-| Full exemption | Prior-year income <= JPY 670,000 | JPY 0 |
-| 3/4 exemption | Income <= ~JPY 930,000 | 1/4 of standard |
-| 1/2 exemption | Income <= ~JPY 1,410,000 | 1/2 of standard |
-| 1/4 exemption | Income <= ~JPY 1,890,000 | 3/4 of standard |
-| Payment deferral (under 50) | Income <= JPY 670,000 | Deferred |
-
-- **Exemption/deferral consequence** — Exemption/deferral reduces future pension benefits. Flag for reviewer if client qualifies.  _(National Pension Act, Art. 90)_
-
-## Section 5 -- NHI computation
-
-### 5.1 NHI computation template (Tier 2)
-
-Because rates vary by municipality, this is a template. Actual rates must be obtained from the client's municipal office.
-
-**NHI computation steps**
-
-| Step | Action |
-| --- | --- |
-| 5.1 | Obtain prior calendar year total income |
-| 5.2 | Subtract base deduction: JPY 430,000 to get NHI taxable income |
-| 5.3 | For each component (Medical, Support, Long-term care): multiply by municipal income-based rate |
-| 5.4 | Add per-capita amount x number of NHI-enrolled household members |
-| 5.5 | Add per-household flat amount (if municipality charges it) |
-| 5.6 | Cap each component at statutory maximum |
-| 5.7 | Sum all three components = annual NHI premium |
-| 5.8 | Divide by number of instalments (typically 10) |
-
-### 5.2 Illustrative rates -- Tokyo 23 Wards (Tier 2)
-
-**Illustrative rates Tokyo 23 Wards**
-
-| Component | Income Rate | Per-Capita | Per-Household |
+| Pension relief, current JPS criteria | Prior-income ceiling formula/condition | FY2026 monthly payment after approval | Official source |
 | --- | --- | --- | --- |
-| Medical | ~7.17% | ~JPY 42,100 | JPY 0 |
-| Support | ~2.42% | ~JPY 14,400 | JPY 0 |
-| Long-term care | ~2.14% | ~JPY 15,600 | JPY 0 |
+| Full exemption | (Number of dependants + 1) × JPY 350,000 + JPY 320,000, for each person whose income is tested; special personal-status rules may alter it | JPY 0 | National Pension Act relief rules, JPS criteria: https://www.nenkin.go.jp/service/kokunen/menjo/20150428.html |
+| 3/4 exemption | JPY 880,000 + relevant dependant and social-insurance deductions, etc. | JPY 4,480 | Same: https://www.nenkin.go.jp/service/kokunen/menjo/20150428.html |
+| 1/2 exemption | JPY 1,280,000 + relevant deductions | JPY 8,960 | Same: https://www.nenkin.go.jp/service/kokunen/menjo/20150428.html |
+| 1/4 exemption | JPY 1,680,000 + relevant deductions | JPY 13,440 | Same: https://www.nenkin.go.jp/service/kokunen/menjo/20150428.html |
+| Deferral | Full-exemption income formula; ages 20 to under 50; applicant/spouse test | Deferred, not an approved permanent waiver | Same: https://www.nenkin.go.jp/service/kokunen/menjo/20150428.html |
+| Early monthly bank debit | FY2026 method-specific discount JPY 60; not the ordinary next-month debit | JPY 17,860 | JPS advance-payment table: https://www.nenkin.go.jp/service/kokunen/hokenryo/zenno.html |
 
-These rates are illustrative. Always verify with the specific municipality.
+For the current ordinary relief year July 2026-June 2027 the tested income is calendar 2025; January-June 2026 belongs to the previous relief year. Verify the correct period and special cases with the linked JPS application-period table. The old flat approximate partial-relief thresholds of JPY 930,000/1,410,000/1,890,000 are not universal legal tests.
 
-### 5.3 Low-income reduction (Tier 1)
+Ordinary approved exemption can reduce the pension amount credited; deferral does not add to the old-age benefit amount until repaid, although qualifying periods can count. Partial exemption requires paying the remaining premium: otherwise the period is unpaid. Approved exempt/deferred months may be paid back within 10 years, with applicable additions. Unpaid months and approved relief are not equivalent.
 
-- **Low-income reduction scope** — Reductions apply only to per-capita and per-household portions, NOT to income-based portion. The 70%/50%/20% reductions are applied automatically based on household income reported to the municipality.  _(5.3 Low-income reduction (Tier 1))_
+**October 2026 change:** Category 1 actual/adoptive parents (including the JPS-listed foster situations), living at the same address as a child under 1, can have childcare premium exemption without an income test. Both qualifying parents can benefit; Category 3 and voluntary contributors are excluded. Only months from October 2026 qualify. Fathers/adoptive parents generally have the parenting month through the month before the first birthday, at most 12 months; birth mothers with prenatal/postnatal exemption generally receive the following 9 months, limited by commencement. These exempt months count as **fully paid** for the old-age amount, unlike ordinary income-tested relief. Already paid or otherwise relieved months may be converted, with credit/refund. Obtain the JPS notice: some confirmed birth mothers continue automatically; others file the combined **国民年金産前産後免除該当届/育児免除該当・終了届** through municipality/post/Mynaportal, with identity, parent-child and same-address evidence. Report an early loss of qualifying co-residence; expiry at the child's age limit needs no end notice (JPS childcare page).
 
-## Section 6 -- Payment schedules
+### Compute the municipal NHI estimate
 
-### 6.1 NHI (Tier 1)
+1. Verify actual NHI membership and insured months; do not equate the filing date with qualification. In Shinjuku the charge begins from qualification, and late notification can produce retrospective billing. Obtain the current revised household notice after a move or insurance change.
+2. Establish each insured person's prior-calendar-year income under the municipal definition, including relevant separately taxed income. Subtract the municipality's applicable basic deduction and floor at zero, **per insured person**, then aggregate the appropriate people for each component. Shinjuku's JPY 430,000 deduction here applies when total income is at most JPY 24,000,000; higher bands must be obtained separately. This is not the national income-tax basic deduction.
+3. For each component multiply the applicable aggregate income base by its municipal rate and add the per-person amount. Only applicable age groups enter the flat/long-term-care bases. Check local per-household/asset-based elements rather than assuming every municipality uses Shinjuku's shape.
+4. Apply approved reductions to the eligible flat charges, not automatically to the income charge. The household income test includes the head even if insured elsewhere and may include former members in the stated elderly-transition category. Unknown household income blocks a reduction determination.
+5. Cap each component separately, then sum. Apply exact municipal rounding, insured-month and birthday rules using the actual notice. The raw estimates below do not specify that final billing calculation. Do not divide an annual charge by the ordinary instalment count and call that the legally notified payment.
 
-**NHI payment schedule**
+### Rates, bands and thresholds: Shinjuku FY2026 NHI
 
-| Detail | Value |
-| --- | --- |
-| Payment period | Typically June to March (10 instalments) |
-| Due date | End of each month (varies by municipality) |
-| Methods | Bank transfer, convenience store, credit card, bank debit |
+| Component | Income rate and flat charge | Household annual component cap | Official source |
+| --- | --- | --- | --- |
+| Medical | 7.51% of all members' bases + JPY 47,600 per insured person | JPY 670,000 (67万円) | Shinjuku FY2026 schedule: https://www.city.shinjuku.lg.jp/hoken/hoken01_001028.html |
+| Elderly support | 2.80% of all members' bases + JPY 17,600 per insured person | JPY 260,000 (26万円) | Same: https://www.city.shinjuku.lg.jp/hoken/hoken01_001028.html |
+| Long-term care | 2.43% of bases for insured ages 40-64 + JPY 17,800 per such member | JPY 170,000 (17万円) | Same: https://www.city.shinjuku.lg.jp/hoken/hoken01_001028.html |
+| Child support, new FY2026 | 0.27% of all members' bases + JPY 1,873 per insured member aged at least 18; flat amount includes JPY 73 adult increment | JPY 30,000 (3万円) | Same: https://www.city.shinjuku.lg.jp/hoken/hoken01_001028.html |
+| Total when all components reach cap | JPY 1,130,000, derived sum; not a per-person tariff and no care component if nobody qualifies | Derived from 4 caps above | Same: https://www.city.shinjuku.lg.jp/hoken/hoken01_001028.html |
+| Income-base deduction | JPY 430,000 (43万円) per person if total income at most JPY 24,000,000 (2,400万円), negative base zero | Higher-income deduction tiers not supplied here | Same: https://www.city.shinjuku.lg.jp/hoken/hoken01_001028.html |
 
-### 6.2 National Pension (Tier 1)
+| Shinjuku flat-charge reduction | Relevant household prior-income ceiling | Official source |
+| --- | --- | --- |
+| 70% (7割) | JPY 430,000 + JPY 100,000 × max(wage/pension earner count - 1, 0) | Shinjuku reduction table: https://www.city.shinjuku.lg.jp/kenkou/hoken01_002065_00003.html |
+| 50% (5割) | Above base + JPY 310,000 × relevant insured/former-member count | Same: https://www.city.shinjuku.lg.jp/kenkou/hoken01_002065_00003.html |
+| 20% (2割) | Above base + JPY 570,000 × relevant insured/former-member count | Same: https://www.city.shinjuku.lg.jp/kenkou/hoken01_002065_00003.html |
 
-**National Pension payment schedule**
+Use the municipality's definitions for wage/pension earners and the relevant former-member count. All required income must be known, including the head's. Reductions are reflected through known/declared income; an income-tax filing exemption does not mean municipal declaration is unnecessary. Other disaster, involuntary-unemployment, childbirth and child flat-charge relief have their own conditions; check the municipality, not an assumed flat discount.
 
-| Detail | Value |
-| --- | --- |
-| Payment period | Monthly, April to March |
-| Due date | End of the following month |
-| Methods | Bank transfer, convenience store, credit card, Pay-easy, bank debit |
+### Payment matching and tax deduction
 
-## Section 7 -- Edge case registry
+| Pattern | Candidate treatment | Check before posting |
+| --- | --- | --- |
+| NENKIN, PENSION, 年金, 国民年金 | National Pension | Confirm insured person, premium month, paid amount and relief |
+| JAPAN PENSION SERVICE, 日本年金機構 | Pension payment | Match JPS record, not just payee |
+| 年金前納, ADVANCE PENSION | Advance pension | Match start period, method and discount schedule |
+| NHI, 国民健康保険, 国保, KOKUMIN KENKO | NHI premium | Match municipality, household bill and actual settlement |
+| 市区町村, CITY OFFICE, WARD OFFICE | Possible NHI | Could be local tax or another charge; verify |
+| 口座振替 + municipal name | Possible NHI debit | Require the bill/receipt and avoid double posting |
+| 介護保険, LONG-TERM CARE | Care component | Embedded in NHI for applicable ages; separate collection later |
+| 健康保険, KENPO, 協会けんぽ | Employer health insurance | Stop duplicate NHI charge and resolve coverage |
+| 厚生年金, KOSEI NENKIN | Employees' pension | Employer scheme, not fixed Category 1 premium |
 
-### EC1 -- Mid-year arrival in Japan (Tier 2)
+Qualified NHI and pension contributions **actually paid** are income deductions, not a uniform extra business expense. The deduction can include a spouse/relative sharing the livelihood where the taxpayer actually bears the payment; obtain evidence. NTA No. 1130 governs documents and the new statement alternative for relevant 2026 returns filed from 2027. Do not deduct merely billed but unpaid contributions or equate a calculated fiscal total with calendar cash paid.
 
-Situation: Client registers as resident in September.
-Resolution: NHI prorated from month of registration. Pension owed from month of gaining Category 1 status. Prior-year income may be zero, resulting in low NHI and possible pension exemption. Flag for reviewer.
+## Boundary and exception table
 
-### EC2 -- Dual income: self-employment + part-time employment (Tier 1)
+| Old scenario | Correct handling | Official source |
+| --- | --- | --- |
+| Mid-year arrival, including September example | Charge from actual qualification, check prior income rather than assume zero; Shinjuku first-year household can owe a lump sum if head was not resident in Japan on 1 January | Shinjuku qualification/billing: https://www.city.shinjuku.lg.jp/hoken/file02_03_00001.html |
+| Freelance plus part-time job | Check actual employer scheme/dependent status first; if legitimately NHI, include all income in municipal base | JPS category explanation: https://www.nenkin.go.jp/international/simplejapanese/japanese-system/nationalpension/nationalpension.html |
+| Turns 40 in October | Care component starts in the legal age-attainment month; birthday is attained the preceding day, so a birthday on the first day can change the month | Shinjuku age rules: https://www.city.shinjuku.lg.jp/hoken/file02_03_00001.html |
+| Turns 60 in March | Resolve pension qualification-end month and any voluntary election from JPS record; do not apply a full year automatically | JPS categories/voluntary scheme: https://www.nenkin.go.jp/international/simplejapanese/japanese-system/nationalpension/nationalpension.html |
+| High income, including JPY 10,000,000 scenario | Compute and cap components separately using the actual municipality and age groups; old total JPY 1,060,000 is not a 2026 Shinjuku ceiling | Shinjuku current schedule: https://www.city.shinjuku.lg.jp/hoken/hoken01_001028.html |
+| Non-payment, including old 12-month arrears case | Refer promptly for collection/relief; Shinjuku warns of demands, interest and asset seizure. Do not promise the old short-validity insurance-card process | Shinjuku collection section: https://www.city.shinjuku.lg.jp/kenkou/hoken01_002065_00003.html |
 
-Situation: Client works part-time (under shakai hoken threshold) and freelances.
-Resolution: If part-time does not provide shakai hoken, client remains on NHI. Both employment and self-employment income included in NHI calculation. Pension remains Category 1.
+## Worked cases
 
-### EC3 -- Client turns 40 during year (Tier 1)
+Estimates, not final bills. These retain the old ordinary/low-income/high-income/mid-year cases using current named municipal inputs. Assume full-year coverage, known household income, no special relief unless stated and no other household member. NHI examples show raw component arithmetic before municipal final billing rounding.
 
-Situation: Client turns 40 in October.
-Resolution: Long-term care component starts from the month the client turns 40. NHI premium recalculated mid-year.
+### Age 35, prior income JPY 5,000,000, Shinjuku
 
-### EC4 -- Client turns 60 during year (Tier 1)
-
-Situation: Client turns 60 in March.
-Resolution: Category 1 obligation ends the month before turning 60. May optionally continue as voluntary insured. Escalate for advice on voluntary continuation.
-
-### EC5 -- Client has high income but few assets (Tier 1)
-
-Situation: Freelancer earns JPY 10,000,000.
-Resolution: Income-based portion will be high, but each component is capped. Total NHI cannot exceed JPY 1,060,000.
-
-### EC6 -- Non-payment consequences (Tier 1)
-
-Situation: Client has not paid NHI for 12 months.
-Resolution: Municipality may issue short-validity insurance card or qualification certificate requiring 100% upfront payment. Pension non-payment reduces future benefits and may affect disability pension eligibility.
-
-## Section 8 -- Reviewer escalation protocol
-
-When a Tier 2 situation is identified:
-
+```oa-check
+name: Shinjuku FY2026 ordinary freelancer under 40
+inputs:
+  income: 5000000
+  deduction: 430000
+  pension_monthly: 17920
+steps:
+  - base: max(income - deduction, 0)
+  - medical: min(base * 0.0751 + 47600, 670000)
+  - support: min(base * 0.028 + 17600, 260000)
+  - child_support: min(base * 0.0027 + 1873, 30000)
+  - nhi: medical + support + child_support
+  - pension: pension_monthly * 12
+  - combined: nhi + pension
+expected:
+  base: 4570000
+  medical: 390807
+  support: 145560
+  child_support: 14212
+  nhi: 550579
+  pension: 215040
+  combined: 765619
 ```
-REVIEWER FLAG
-Tier: T2
-Client: [name]
-Situation: [description]
-Issue: [what is ambiguous]
-Options: [possible treatments]
-Recommended: [most likely correct treatment and why]
-Action Required: Qualified professional must confirm before advising client.
+
+### Age 45, prior income JPY 20,000,000, Shinjuku caps
+
+```oa-check
+name: Shinjuku FY2026 all four component caps
+inputs:
+  income: 20000000
+  deduction: 430000
+steps:
+  - base: max(income - deduction, 0)
+  - medical: min(base * 0.0751 + 47600, 670000)
+  - support: min(base * 0.028 + 17600, 260000)
+  - care: min(base * 0.0243 + 17800, 170000)
+  - child_support: min(base * 0.0027 + 1873, 30000)
+  - nhi: medical + support + care + child_support
+  - pension: 17920 * 12
+  - combined: nhi + pension
+expected:
+  nhi: 1130000
+  combined: 1345040
 ```
 
-When a Tier 3 situation is identified:
+### Low income and mid-year pension
 
-```
-ESCALATION REQUIRED
-Tier: T3
-Client: [name]
-Situation: [description]
-Issue: [outside skill scope]
-Action Required: Do not advise. Refer to qualified professional. Document gap.
-```
+Age 28, prior income JPY 300,000, confirmed 70% flat-charge reduction and no other head/household income: base is zero; raw flat charge is `(47,600 + 17,600 + 1,873) × 30% = JPY 20,121.90` before billing rounding. Pension full exemption is only a possible application until approved; do not automatically subtract it.
 
-## Section 9 -- Test suite
+Age 30 with exactly 9 confirmed chargeable FY2026 pension months and no relief pays `17,920 × 9 = JPY 161,280`, derived. The old July-arrival NHI case requires the actual revised household bill and qualification months; a blanket annual × 9/12 or division into 10 equal payments is not confirmed here.
 
-### Test 1 -- Standard freelancer, mid-range income (Tokyo 23 Wards illustrative)
+## When to refuse or refer
 
-Input: Age 35, single, prior-year income JPY 5,000,000, no other household NHI members.
-Expected output: NHI taxable income = 5,000,000 - 430,000 = JPY 4,570,000. Medical: ~JPY 369,769. Support: ~JPY 124,994. Long-term care: N/A (under 40). Total NHI: ~JPY 494,763. Pension: JPY 210,120. Total: ~JPY 704,883.
+Keep the disability, survivors and voluntary-additional-pension referrals. Never assume municipal NHI rates are uniform, omit an applicable care/child-support component, duplicate employer coverage, call mandatory Category 1 optional, use current income instead of the required preceding year, or reduce the income-based NHI component using the flat-charge reduction. Never default unknown income/age/insurance to a low charge. Missing inputs hold the calculation; uncertain reductions, mid-year allocation, pension age transitions and foreign/social-security agreements require review. Give a social insurance labour consultant the facts, ambiguity, available options and missing evidence, labelled REVIEWER FLAG. Out-of-scope benefits use ESCALATION REQUIRED, no computation.
 
-### Test 2 -- Low-income freelancer qualifying for 70% reduction
+## Filing and payment
 
-Input: Age 28, single, prior-year income JPY 300,000.
-Expected output: NHI taxable income = JPY 0. Income-based = JPY 0. 70% reduction on per-capita. Medical per-capita: JPY 12,630. Support: JPY 4,320. Total NHI: ~JPY 16,950. Pension: full exemption likely.
+Pension: ordinary monthly payment is due by the end of the following month, moving to the next financial-institution business day for the specified holidays. Use JPS slip at the permitted bank/post/convenience counter, registered bank/card method, smartphone app or Nenkin Net/Pay-easy. Municipality and pension-office counters generally do not receive pension premiums. Retain settlement and deduction certificate; approved relief/refunds must reconcile.
 
-### Test 3 -- High earner hitting caps
+NHI: follow the municipality's notice. In Shinjuku ordinary collection is 10 instalments June-March, month-end/next business day. The non-resident-at-1-January household-head rule can instead require the first-year amount at the first due date. Confirmed pension special collection has a different schedule. Bank debit, municipal/bank/post/convenience payment and supported mobile/Pay-easy methods are not interchangeable without the actual bill. Changes in household, income or age can lead to a revised bill; use the latest.
 
-Input: Age 45, single, prior-year income JPY 20,000,000.
-Expected output: Medical capped at JPY 650,000. Support capped at JPY 240,000. Long-term care capped at JPY 170,000. Total NHI: JPY 1,060,000. Pension: JPY 210,120. Total: JPY 1,270,120.
+## Completion checklist
 
-### Test 4 -- Mid-year registration
+- Actual NHI/pension categories, qualification months and household members confirmed.
+- Municipality, prior income, correct basic deduction and age bases documented.
+- All FY2026 components, separate caps and applicable relief considered.
+- No assumptions of zero income, under-age or absence of employer insurance.
+- Pension relief approved, ordinary and childbirth/childcare credit consequences distinguished.
+- Actual bill, instalment calendar, bank payment and calendar-year deduction reconciled.
+- Every output estimated, not reviewed; missing items and referrals explicit.
 
-Input: Age 30, registers residency in July (9 months).
-Expected output: NHI prorated x 9/12. Pension: JPY 17,510 x 9 = JPY 157,590.
+## Sources
 
-## Section 10 -- Prohibitions and disclaimer
+| Source | Official URL | Read on | Operative material read |
+| --- | --- | --- | --- |
+| Shinjuku FY2026 NHI calculation | https://www.city.shinjuku.lg.jp/hoken/hoken01_001028.html | 2026-11-14 | Read for all 4 component rows, age bases, flat charges, caps, income deduction and child-support footnote; FY2025/2024 contrasts not used as current |
+| Shinjuku premium, reductions and collection | https://www.city.shinjuku.lg.jp/kenkou/hoken01_002065_00003.html | 2026-11-14 | Read for entire calculation/reduction sections and neighboring household-income, arrival, childbirth and collection exceptions; ordinary/lump-sum payment |
+| Shinjuku qualification and age changes | https://www.city.shinjuku.lg.jp/hoken/file02_03_00001.html | 2026-11-14 | Read for qualification month, debtor, notices, collection, age 40/65/75 and day-before-birthday rule |
+| JPS National Pension overview | https://www.nenkin.go.jp/international/simplejapanese/japanese-system/nationalpension/nationalpension.html | 2026-11-14 | Read for Category 1/2/3, visa exclusions, registration, voluntary routing, current premium, relief and payment |
+| JPS ordinary premium and payment | https://www.nenkin.go.jp/service/kokunen/hokenryo/hokenryo.html | 2026-11-14 | Read for current monthly premium, due-date holiday rule, payment methods, deduction and non-payment |
+| JPS annual premium table | https://www.nenkin.go.jp/service/kokunen/hokenryo/hokenryogaku.html | 2026-11-14 | Read for FY2025 and FY2026 amount rows and annual adjustment explanation |
+| JPS advance payment | https://www.nenkin.go.jp/service/kokunen/hokenryo/zenno.html | 2026-11-14 | Read for methods, period-specific table and early monthly debit discount; old approximate percentage discounts not used |
+| JPS income-tested exemption and deferral | https://www.nenkin.go.jp/service/kokunen/menjo/20150428.html | 2026-11-14 | Read for all current income criteria, partial payments, qualifying persons, effect on benefits, applications and special cases |
+| JPS relief-year application periods | https://www.nenkin.go.jp/service/kokunen/menjo/20150402-01.html | 2026-11-14 | Read for current July-June relief-year and corresponding prior-income table |
+| JPS childcare exemption | https://www.nenkin.go.jp/service/kokunen/menjo/ikujimenjo.html | 2026-11-14 | Read for entire eligibility, periods/transitions, fully paid credit, application/automatic cases, evidence and end notices, effective October 2026 |
+| NTA No. 1130 | https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1130.htm | 2026-11-14 | Read for actual-paid deduction, family payer conditions, contribution types and required documents including 2026-return statement alternative |
 
-### Prohibitions
-
-- **Prohibitions list** — - NEVER assume NHI rates are uniform across Japan -- they vary by municipality and MUST be verified - NEVER omit the long-term care component for clients aged 40-64 - NEVER include clients enrolled in employer shakai hoken in NHI calculations - NEVER treat National Pension as optional for Category 1 insured persons aged 20-59 -- it is legally mandatory - NEVER forget that NHI premiums are based on PRIOR-year income, not current-year income - NEVER apply the low-income reduction to the income-based portion -- it applies only to per-capita and per-household portions - NEVER present calculations as definitive -- always label as estimated and direct client to their municipal office or a qualified professional  _(Prohibitions)_
-
-### Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a tax accountant, social insurance labour consultant, or equivalent licensed practitioner in Japan) before filing or acting upon.
+Not yet confirmed: rates/caps and household/asset elements outside the named Shinjuku schedule; high-income NHI deduction tiers; exact municipal final rounding and part-year premium allocation; actual pension qualification-end month on a particular birthday; a specific social-security agreement, relief decision or client bill; current NHI consequences corresponding to the old short-validity insurance-card/qualification-certificate claim. The old generic NHI rate ranges (5-12%, JPY 20,000-60,000/person and JPY 0-30,000/household), Tokyo approximations (7.17%/2.42%/2.14%, JPY 42,100/14,400/15,600), caps JPY 650,000/240,000/170,000 and total JPY 1,060,000, pension discount estimates 1%/2%/4%, and flat partial-relief income thresholds JPY 930,000/1,410,000/1,890,000 are superseded or unsupported, not usable current instructions. Exact advice on disability/survivors benefits and voluntary additional pensions remains outside scope.

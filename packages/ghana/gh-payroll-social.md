@@ -2,7 +2,7 @@
 name: gh-payroll-social
 description: >
   Use this skill to run or review Ghana payroll for tax year 2026. It covers the three-tier pension scheme, the 18.5% mandatory contribution split between employer 13% and employee 5.5%, Tier 1 at 13.5% to SSNIT and Tier 2 at 5%, the 2026 minimum and maximum insurable earnings, PAYE deductions and the new bands from 1 September 2026, bonus at 5% up to 15% of basic, overtime, casual and temporary workers, non-residents, benefits in kind, forms DT 107 and DT 108 on ETAX, and year-end checks. Trigger on "Ghana payroll", "SSNIT", "Tier 2", "PAYE return Ghana", "maximum insurable earnings", "bonus tax Ghana". The bands live in ghana-pit.
-version: 0.3
+version: 0.4
 jurisdiction: GH
 category: payroll
 tax_year: 2026
@@ -13,7 +13,7 @@ tier: 2
 domain: payroll
 ---
 
-# Ghana Payroll and Social Contributions v0.3
+# Ghana Payroll and Social Contributions v0.4
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -150,4 +150,4 @@ expected:
 | GRA, Employee Taxes and Pensions Year End Checklist: read in full | https://gra.gov.gh/wp-content/uploads/2025/11/Taxpayer-Checklist.pdf | 2026-11-14 |
 | GRA, Withholding Tax page (last edited 2022): read in full for the rates table | https://gra.gov.gh/domestic-tax/tax-types/withholding-tax/ | 2026-11-14 |
 
-Not yet confirmed: (1) Section 63(3) of Act 766 and the Act 766 penalties for late contributions were not opened; no SSNIT penalty is stated. Act 766 was not on a site opened. (2) Notice minimum of GHS 79.40 is above 13.5% of 587.80, which is 79.35; the notice is quoted. (3) Whether the 5.5% tax deduction stops at the ceiling is inferred from the contribution cap, not read in the law. (4) Tier 2 due date: not on any official page read. The old version had the 14th as approximate for SSNIT; SSNIT confirms 14 days. (5) Bonus and overtime rates come from the GRA page, not Act 896 as amended. (6) Whether the GHS 18,000 overtime qualifying limit changed under Act 1178.
+Not yet confirmed: (1) Section 63(3) of Act 766 and the Act 766 penalties for late contributions were not opened; no SSNIT penalty is stated. Act 766 was not on a site opened. (2) Notice minimum of GHS 79.40 is above 13.5% of 587.80, which is 79.35; the notice is quoted. (3) Whether the 5.5% tax deduction stops at the ceiling is inferred from the contribution cap, not read in the law. (4) Tier 2 due date: not on any official page read. The old version had the 14th as approximate for SSNIT; SSNIT confirms 14 days. (5) Bonus and overtime rates come from the GRA page, not Act 896 as amended. (6) Whether the GHS 18,000 overtime qualifying limit changed under Act 1178. (7) The SSNIT notice caps insurable earnings for SSNIT only; whether the 5% Tier 2 is also capped at GHS 69,000 or runs on full basic salary is not stated on any page read.

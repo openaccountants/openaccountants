@@ -14,11 +14,11 @@ description: >
   and filing deadlines. ALWAYS read this skill before touching any Japan income
   tax work. This Tier 2 draft supports source checking and reviewer questions;
   it does not authorise filing, payment or a tax position.
-version: 2.2
+version: 2.3
 jurisdiction: JP
-tax_year: 2025
+tax_year: 2026
 tax_year_notes: "Coverage starts with the 2025 year (令和7年分, filed in 2026) and includes the 2026 year (令和8年分). Some enacted 2027 changes are recorded, not all of them, and no 2027 computation is supported. The law was read at 5 November 2026. The 2026 basic deduction and employment income rules were enacted by 令和8年法律第12号, read only as consolidated e-Gov text, and are in force on 1 December 2026, so they were read in the text dated from that day. No 令和9年度 tax reform outline had been published at the read date."
-last_updated: 2026-11-11
+last_updated: 2026-11-14
 depends_on:
   - income-tax-workflow-base
 category: international
@@ -28,7 +28,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 domain: income-tax
 ---
 
-# Japan income tax for self-employed individuals v2.2
+# Japan income tax for self-employed individuals v2.3
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 

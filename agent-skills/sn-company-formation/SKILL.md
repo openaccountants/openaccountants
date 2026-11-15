@@ -37,6 +37,7 @@ Tax registration of a new business in Senegal in 2026, for an individual trader 
 | CGU, traders and producers | 2% of turnover, minimum XOF 25,000 (art. 141) | 2026 | same |
 | Annual accounts | Filed with the profit return by 30 April (arts. 30, 31) | 2026 | same |
 | VAT | Paid by the 15th of the month after the taxable event (art. 363) | 2026 | same |
+| SARL capital | No national minimum: the statutes fix the capital (art. 1) and the nominal value of each share (art. 2), Loi n. 2015-07 of 9 April 2015 (JO n. 6844, 18 April 2015, p. 393), which repeals Loi n. 2014-20 | 2026 | https://justice.sec.gouv.sn/wp-content/uploads/textes-reglements/OHADA/Loi-n-2015-07-09-du-avril-2015-reglementation-capital-SARL-JO.pdf |
 | Salary withholding | By the 15th of the next month; real simplified and CGU employers quarterly (art. 185) | 2026 | same |
 
 ### Steps
@@ -82,7 +83,7 @@ expected:
 
 ## When to refuse or refer
 
-- Choice of company form, capital, statutes and the trade register: refer to a Senegal notary or lawyer; the OHADA and APIX figures are not confirmed here.
+- Choice of company form, statutes and the trade register: refer to a Senegal notary or lawyer; the OHADA and APIX figures are not confirmed here. SARL capital itself is set freely in the statutes (Loi n. 2015-07, row above); pay-up and deposit rules are not covered here.
 - Registration with the social bodies (CSS and IPRES): see [social contributions](senegal-social-contributions.md).
 - Tax incentives under the investment code or special zones: refer.
 
@@ -102,9 +103,10 @@ The NINEA is applied for at the DGID; the declaration of existence goes to the c
 | DGID communique: SENTAX for CME1, CME2 and CPR from 1 October 2026, full text read (not reopened) | https://www.dgid.sn/storage/uploads/communique-ouverture-de-la-plateforme-sentax-aux-contribuables-du-cme1-cme2-et-du-cpr-1790699194.pdf | 2026-11-01 |
 | DGID Entreprises page: read the portal descriptions | https://www.dgid.sn/entreprises | 2026-11-14 |
 | DGID NINEA sheet: read the documents to file, the XOF 2,000 stamp, free issue and the three-day delay | https://www.dgid.sn/fiches/ninea | 2026-11-14 |
+| Journal officiel n. 6844 (18 April 2015), Loi n. 2015-07 on SARL capital: read in full (arts. 1 to 3) | https://justice.sec.gouv.sn/wp-content/uploads/textes-reglements/OHADA/Loi-n-2015-07-09-du-avril-2015-reglementation-capital-SARL-JO.pdf | 2026-11-14 |
 | DGID Particuliers page: read the three formalisation steps and the CGU and CGF eligibility lines | https://www.dgid.sn/particuliers | 2026-11-14 |
 
-Not yet confirmed: OHADA forms (SARL, SA, SAS), SA capital of XOF 10,000,000 and SARL capital, APIX one-stop steps and timing, and CSS and IPRES employer registration. The old citations were secondary, apix.sn and the social bodies did not open, and the OHADA Uniform Act was not read.
+Not yet confirmed: OHADA forms (SARL, SA, SAS), SA capital of XOF 10,000,000, later amendments to Loi n. 2015-07, APIX one-stop steps and timing, and CSS and IPRES employer registration. The old citations were secondary, apix.sn and the social bodies did not open, and the OHADA Uniform Act was not read.
 
 ## Today's figures and who stands behind this skill
 

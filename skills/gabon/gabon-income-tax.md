@@ -8,12 +8,12 @@ type: situation-rules
 tax_year: 2026
 tax_year_notes: "2026 research draft; CGI 2025 baseline plus enacted finance laws read; currency and commencement holds remain"
 last_updated: 2026-11-14
-version: 0.2
+version: 0.3
 tier: 2
 domain: income-tax
 ---
 
-# Gabon individual income tax v0.2
+# Gabon individual income tax v0.3
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -107,6 +107,6 @@ expected:
 |---|---|---|
 | Journal Officiel: Law 041/2025, replacement art 178 bis read | https://journal-officiel.ga/22265-041-2025-/ | 2026-11-14 |
 | CGI: Read the cover amendment list and selected passages from arts 2-3, 4-7 (including PE thresholds and exceptions), 8-11 introduction and 11-IV, 12-28, 73-80, 90-96, 108-114, 162-178bis, 206-209, 211-224, 235-243ter, 346-351, P-816-819, P-826-832, P-996-1010ter and TFNC CSS arts 13-27. Exact read rules are the matched ledger quotes; this is not a claim that every paragraph across those ranges was read. | https://dgi.ga/wp-content/uploads/dgi-content/d1dde772234076c5d2bc0a8d8d3db573ed3d8fdd6c3e869c8c57cd181a81bb70/assets/dgi/2d50ab6c2e-Gabon-CGI-2025.pdf | 2026-11-01 |
-| LFR: Read enacted identity; fiscal amendments printed1-16 including arts11bis,91bis,178bis,202-204,208ter,210,211ter,215,221-224,227,230,243bis,248septies-nonies,401-404bis,P832ter,P1000; art7 OCAM withdrawal and final101-102/promulgation. Other fiscal measures read for screening only; budget annexes not reviewed. | https://dgb-gabon.net/uploads/documentation/Texte%20juridique/178593988623.pdf | 2026-11-01 |
+| LFR: Read enacted identity; fiscal amendments printed1-16 including arts11bis, 91bis, 178bis, 202-204, 208ter, 210, 211ter, 215, 221-224, 227, 230, 243bis, 248septies-nonies, 401-404bis,P832ter,P1000; art7 OCAM withdrawal and final101-102/promulgation. Other fiscal measures read for screening only; budget annexes not reviewed. | https://dgb-gabon.net/uploads/documentation/Texte%20juridique/178593988623.pdf | 2026-11-01 |
 
 Not yet confirmed: Full BIC/BNC/agricultural computation, exemptions, pensions, capital gains, movable-income exceptions, family special cases and the complete rent-withholding transition. This is not yet a full annual personal-return workflow. Complete intervening amendments, date-specific commencement, current forms and boxes, and independent review. See the [country evidence](../../docs/research/2026-11-01-gabon-pack/README.md) and [old-topic destination map](../../docs/research/2026-11-01-gabon-pack/old-topic-map.md).

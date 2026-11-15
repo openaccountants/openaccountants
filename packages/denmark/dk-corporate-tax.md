@@ -1,7 +1,7 @@
 ---
 name: dk-corporate-tax
 description: "Danish corporate income tax (selskabsskat) for companies resident in Denmark (A/S, ApS and other limited companies) and for permanent establishments of foreign companies, income year 2026. Covers the 22% rate (Selskabsskatteloven § 17) and the higher rate for financial companies, the taxable base, participation exemption for subsidiary and group shares, loss carry-forward with the DKK 21,830,700 limit and the 60% rule, mandatory national joint taxation (sambeskatning) and the administration company, the interest limitation rules, acontoskat in March and November, the restskattetillæg, the oplysningsskema deadline, exit tax and withholding on outbound dividends, interest and royalties. Trigger on: Danish corporate tax, selskabsskat, ApS tax, acontoskat, sambeskatning, underskudsfremførsel, rentefradragsbegrænsning, udbytteskat, Denmark 22%. Out of scope: individuals and the self-employed (dk-income-tax), shareholders' share income (dk-capital-gains), VAT (denmark-vat-return), payroll, transfer pricing documentation, tonnage tax, hydrocarbon tax and foundations."
-version: 0.3
+version: 0.4
 jurisdiction: DK
 tax_year: 2026
 last_updated: 2026-11-14
@@ -12,8 +12,7 @@ domain: corporate-tax
 type: computation
 ---
 
-# Denmark: corporate income tax (selskabsskat) v0.3
-
+# Denmark: corporate income tax (selskabsskat) v0.4
 > **General reference only.** This skill is general tax reference material for AI-assisted workflows. It has not been reviewed for any specific company's facts, elections, deadlines or filings. Do not rely on it to file, pay or take a tax position without review by a qualified professional in Denmark.
 
 Tax year: income year 2026 (indkomståret 2026). Most companies use the calendar year. A company with a different financial year (forskudt indkomstår) is taxed for the income year that the financial year "replaces" (Selskabsskatteloven § 29 A, stk. 1). Currency: Danish kroner (DKK). Authority: Skattestyrelsen (skat.dk). Statute: Selskabsskatteloven, LBK nr. 279 of 13 March 2025, as later amended (see Sources).
@@ -58,6 +57,11 @@ See also: dk-income-tax (individuals and the self-employed), dk-capital-gains (i
 | Late filing skattetillæg (oplysningsskema) | DKK 400 per day, at most DKK 10,000 | 2026 | Skattekontrolloven § 73, stk. 1, as amended by lov nr. 16 of 14 January 2025; https://www.retsinformation.dk/eli/lta/2025/16 |
 | Late payment interest (Opkrævningsloven § 7) | Basis rate 0.1% plus 0.85 percentage points, so 0.95% a month, calculated daily | 2026 | Opkrævningsloven § 7, stk. 1, as amended by lov nr. 1694 of 30 December 2024; https://info.skat.dk/data.aspx?oid=2459995 |
 | Pillar Two | In force: 15% global minimum tax for groups with revenue of at least EUR 750m in two of the four prior years (minimumsbeskatningsloven) | 2026 | https://skat.dk/erhverv/selskaber-fonde-og-foreninger/selskaber-og-fonde/global-minimumsskat-for-store-koncerner-globe |
+| New-equipment super-deduction (Afskrivningsloven § 5 E), elective | Separate pool where cost enters at 108 pct., for factory-new equipment used only in the business and acquired 1 January 2025 to 31 December 2026; at most 25 pct. a year; not for passenger cars, ships, software or fossil-fuel-capable equipment; no § 6 immediate write-off of the same cost; merged with the § 5 pool at the end of 2030 | 2026 | Afskrivningsloven § 5 E, stk. 1-7; https://www.retsinformation.dk/eli/lta/2025/1222/xml |
+| Older pool at 116 pct. (Afskrivningsloven § 5 D) | Earlier acquisition window only; a 2026 purchase cannot enter it | 2026 | Afskrivningsloven § 5 D; https://www.retsinformation.dk/eli/lta/2025/1222/xml |
+| Research and development: enhanced deduction | 114 pct. of qualifying costs for income year 2026 (116 pct. 2027, 120 pct. from 2028) within the joint ceiling; costs above the ceiling 110 pct. from 2026 | 2026 | Afskrivningsloven § 6, stk. 1, nr. 3 and Ligningsloven § 8 B as amended by lov nr. 1472 of 2024; https://www.retsinformation.dk/eli/lta/2024/1472/xml |
+| Research and development: joint ceiling (Ligningsloven § 8 B, stk. 4) | 1.088,8 mio. kr. for 2026, shared across jointly taxed group companies | 2026 | https://svmn.dk/tal-og-metode/satser/satser-og-beloebsgraenser-i-lovgivningen/ligningsloven |
+| R&D tax credit (skattekredit, Ligningsloven § 8 X) | Tax value of an R&D loss paid out, on at most 25 mio. kr. of loss for 2026 (35 mio. kr. for 2027) | 2026 | Ligningsloven § 8 X, stk. 3; https://svmn.dk/tal-og-metode/satser/satser-og-beloebsgraenser-i-lovgivningen/ligningsloven |
 
 There is no reduced small-company rate and no separate minimum tax outside Pillar Two.
 
@@ -71,6 +75,8 @@ There is no reduced small-company rate and no separate minimum tax outside Pilla
   1. **Thin capitalisation (SEL § 11).** If controlled debt (from related parties) exceeds DKK 10m and debt to equity exceeds 4:1, interest and losses on the excess controlled debt are not deductible.
   2. **Asset test (SEL § 11 B).** Net financing expenses above DKK 21.3m are deductible only up to the tax value of qualifying assets times the standard rate (4.2% for 2026). Amounts restricted here are lost, except certain net capital losses on receivables, which are carried forward.
   3. **EBITDA rule (SEL § 11 C).** Exceeding borrowing costs may reduce taxable income before interest and depreciation by at most 30%. Costs up to DKK 22,313,400 are always deductible. Restricted costs carry forward without time limit; unused interest capacity carries forward for 5 years (§ 11 C, stk. 4-5). For jointly taxed companies the thresholds apply once for the group.
+- **Equipment super-deduction (Afskrivningsloven § 5 E).** For factory-new equipment used only in the business and acquired from 1 January 2025 to 31 December 2026, the company may elect a separate pool in which cost enters at 108% and sales proceeds leave at 108%; at most 25% of the pool a year. Passenger cars, ships, software and equipment that runs or can run on fossil fuel are excluded, and the same cost cannot also be written off at once under § 6. The pool is merged with the ordinary § 5 pool at the end of 2030. The older § 5 D 116% pool is a separate, closed window.
+- **Research and development.** Qualifying R&D costs are deductible at 114% for income year 2026, within the joint ceiling of DKK 1,088.8 million (1.088,8 mio. kr.); costs above the ceiling at 110%. A loss from R&D can be paid out as a tax credit (Ligningsloven § 8 X) on at most DKK 25m of loss for 2026. Test eligibility, elections and the joint-taxation share before claiming.
 
 **Participation exemption on dividends (SEL § 13, stk. 1).**
 - Dividends on **subsidiary shares** (datterselskabsaktier: at least 10% of the share capital, Aktieavancebeskatningsloven (ABL) § 4 A) and **group shares** (koncernselskabsaktier: companies that are or can be jointly taxed, ABL § 4 B) are exempt (§ 13, stk. 1, nr. 2). Not exempt to the extent the paying company deducted the distribution.
@@ -208,6 +214,9 @@ expected:
 | Lov nr. 763 of 8 September 2026 (amends SEL §§ 24 and 30; no rate changes) | https://www.retsinformation.dk/eli/lta/2026/763 | 2026-10-22 |
 | Skattekontrolloven, LBK nr. 12 of 8 January 2024 (§§ 12-14 filing deadline; § 73 late filing, as amended) | https://www.retsinformation.dk/eli/lta/2024/12 | 2026-10-22 |
 | Lov nr. 16 of 14 January 2025, § 2, nr. 1 (SKL § 73, stk. 1: DKK 200 to 400 a day, cap DKK 5,000 to 10,000, in force 15 January 2025) | https://www.retsinformation.dk/eli/lta/2025/16 | 2026-10-22 |
+| Afskrivningsloven, LBK nr. 1222 of 2025 (§ 5 D; § 5 E stk. 1-7: the 108 pct. pool, window 1 January 2025 to 31 December 2026) | https://www.retsinformation.dk/eli/lta/2025/1222/xml | 2026-11-14 |
+| Lov nr. 1472 of 2024 (Afskrivningsloven § 6, stk. 1, nr. 3: 114 pct. for 2026, 116 pct. 2027, 120 pct. from 2028; 110 pct. above the ceiling from 2026) | https://www.retsinformation.dk/eli/lta/2024/1472/xml | 2026-11-14 |
+| Skatteministeriet, satser og beløbsgrænser, ligningsloven (§ 8 B, stk. 4 ceiling 1.088,8 mio. kr.; § 8 X, stk. 3 25 mio. kr. for 2026) | https://svmn.dk/tal-og-metode/satser/satser-og-beloebsgraenser-i-lovgivningen/ligningsloven | 2026-11-14 |
 | Aktieavancebeskatningsloven, LBK nr. 849 of 21 September 2026 (§§ 4 A-4 C, 8, 9, 23) | https://www.retsinformation.dk/eli/lta/2026/849 | 2026-10-22 |
 | Kildeskatteloven, LBK nr. 460 of 3 May 2024, as amended by lov nr. 1691/2024 (§§ 65, 65 C, 65 D) | https://www.retsinformation.dk/eli/lta/2024/460 | 2026-10-22 |
 | Opkrævningsloven, LBK nr. 1040 of 13 September 2024 (§ 7 interest, as amended) | https://www.retsinformation.dk/eli/lta/2024/1040 | 2026-10-22 |

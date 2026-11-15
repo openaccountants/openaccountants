@@ -53,6 +53,9 @@ Out of scope, and where it goes:
 | Quarterly withholding return (W-1) and SWICA due | Last day of the month after the quarter: 30 April, 31 July, 31 October, 31 January | [DRT tax calendar](https://www.guamtax.com/info/calendar.html) |
 | W-2GU to employees and to the DRT | 31 January (DRT calendar); 1 February 2027 for 2026 forms (31 January 2027 is a Sunday) | [DRT tax calendar](https://www.guamtax.com/info/calendar.html); [General Instructions for Forms W-2 and W-3 (2026)](https://www.irs.gov/pub/irs-pdf/iw2w3.pdf) |
 | W-2GU Copy A and W-3SS to the SSA | 1 February 2027 | [General Instructions for Forms W-2 and W-3 (2026), Due date for filing with SSA](https://www.irs.gov/pub/irs-pdf/iw2w3.pdf) |
+| FICA territorial link | Guam is in "State" (IRC 3121(e)(1)) and "United States" (3121(e)(2)) | [IRC section 3121](https://uscode.house.gov/us/usc/119-124/t26/s3121/) |
+| Philippines residents on H-2 in Guam | Not employment for FICA: service in Guam by a resident of the Philippines temporarily in Guam as a nonimmigrant under INA 101(a)(15)(H)(ii) (3121(b)(18)) | same |
+| Government of Guam service | Brought back into FICA by 3121(b)(7)(B) and (D), subject to the retirement-system conditions; Medicare for government service follows 3121(u) | same |
 
 The 2026 FICA rates and wage base are in `us-form-941-940-payroll`; they are not restated here.
 
@@ -84,6 +87,13 @@ The 2026 FICA rates and wage base are in `us-form-941-940-payroll`; they are not
 | Guam employer with no FICA-exempt workers | FICA on all wages up to the wage base |
 | Employer asks about Guam unemployment insurance | No FUTA in Guam; no Guam unemployment contribution was found on the DRT calendar (not confirmed) |
 | EIC notice to employees | Not required for employees in Guam (Pub. 15, section 10) |
+| Philippine national or a visa label offered as the 3121(b)(18) exception | Hold until the actual conditions are shown: resident of the Philippines, temporarily in Guam, admitted under INA 101(a)(15)(H)(ii) |
+| Government of Guam employee treated as FICA-exempt under the opening words of 3121(b)(7) | Hold the (7)(B) and (D) branches, the retirement-system facts and 3121(u) |
+| Guam residence or the Puerto Rico citizen sentence offered as proof that every worker is a US citizen and covered | Hold; establish the actual service, status and coverage |
+| Medicare, or all FICA, capped at the OASDI wage base | Wrong: the 3121(a)(1) ceiling applies only to OASDI; Medicare has no limit (`us-form-941-940-payroll`) |
+| Two pay components each capped separately | Aggregate per employee, per employer, per calendar year, then apply the OASDI base once |
+| Employee asks to stop Additional Medicare at the joint-return threshold, or the employer matches it | No: the employer withholds on wages it pays over the threshold from the crossing payment, regardless of filing status; there is no employer match (`us-form-941-940-payroll`) |
+| Territorial income tax rules or Guam taxable income used as the FICA base | Hold: FICA is federal and its base is covered remuneration |
 
 ### Defaults when a fact is missing
 
@@ -170,6 +180,7 @@ Guam income tax withheld: Form W-1 by **30 April, 31 July and 31 October 2026 an
 | Form W-2GU (2026). Read for box 2 "Guam income tax withheld" and boxes 3 to 6. | https://www.irs.gov/pub/irs-pdf/fw2gu.pdf | 2026-11-14 |
 | DRT tax calendar. Read for the quarterly W-1 and SWICA dates, W-2GU to employees and to DRT by 31 January, the weekend rule. | https://www.guamtax.com/info/calendar.html | 2026-11-14 |
 | DRT GuamTax.com home page and SWICA and W-2/W-3 e-filing registration form. Read for the e-services (E-File W-1, SWICA, W-3/W-2GU). | https://www.guamtax.com/ | 2026-11-14 |
+| IRC section 3121 (House, through Public Law 119-124). Read for (a)(1), (b)(7)(B) and (D), (b)(18), (e)(1) and (e)(2) including the Puerto Rico citizen sentence, and (u). | https://uscode.house.gov/us/usc/119-124/t26/s3121/ | 2026-11-14 |
 
 Not yet confirmed: no DRT page or regulation stating whether Guam withholding must be deposited more often than quarterly was found (the calendar shows only the quarterly W-1); whether Guam has a new hire registry or any employer contribution of its own; that DRT uses the 2026 Pub. 15-T tables without change (inferred from 48 U.S.C. 1421i).
 

@@ -10,7 +10,7 @@ metadata:
   last_updated: "2026-11-14"
 ---
 
-# Ghana Tax Overview v0.3
+# Ghana Tax Overview v0.4
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -29,7 +29,7 @@ Anyone asking how Ghana taxes people and businesses in 2026, before picking a de
 
 ## The base
 
-Residents are taxed on worldwide income, non-residents on income from Ghana ([GRA](https://gra.gov.gh/domestic-tax/personal-income-tax/)). The year of assessment is the calendar year; a company can have another basis period. The currency is the Ghana cedi (GHS). Other taxes on the GRA site include Communications Service Tax, excise, stamp duty, gift tax, capital gains, rent income tax and vehicle income tax.
+Residents are taxed on worldwide income, non-residents on income from Ghana ([GRA](https://gra.gov.gh/domestic-tax/personal-income-tax/)). A non-resident with a Ghanaian permanent establishment is also taxed on income connected with that establishment, whatever its source ([Act 896 s.3(2)(b)](https://gra.gov.gh/wp-content/uploads/2020/09/INCOME-TAX-ACT-2015-ACT-896.pdf)). The year of assessment is the calendar year; a company can have another basis period. The currency is the Ghana cedi (GHS). Other taxes on the GRA site include Communications Service Tax, excise, stamp duty, gift tax, capital gains, rent income tax and vehicle income tax.
 
 ## Deadlines and filing
 
@@ -92,6 +92,7 @@ expected:
 | SSNIT FAQs (contribution rates and remittance), page read in full | https://www.ssnit.org.gh/faqs/ | 2026-11-01 |
 | GRA, Personal Income Tax page, page read in full | https://gra.gov.gh/domestic-tax/personal-income-tax/ | 2026-11-01 |
 | Income Tax Act, 2015 (Act 896), OCR of scan; ss 33, 101, 102, 112, 121, 124, 125 read | https://gra.gov.gh/wp-content/uploads/2020/09/INCOME-TAX-ACT-2015-ACT-896.pdf | 2026-11-01 |
+| Income Tax Act, 2015 (Act 896), OCR: s.3 (p 9) read for the non-resident permanent establishment limb | https://gra.gov.gh/wp-content/uploads/2020/09/INCOME-TAX-ACT-2015-ACT-896.pdf | 2026-11-14 |
 | GRA, ITAS FAQs, page read in full | https://gra.gov.gh/itas-faqs/ | 2026-11-01 |
 | Revenue Administration Act, 2016 (Act 915); ss 27 to 30, 46, 47, 70 to 73 read | https://gra.gov.gh/wp-content/uploads/2023/01/Revenue-Administration-Act-2016-.pdf | 2026-11-01 |
 

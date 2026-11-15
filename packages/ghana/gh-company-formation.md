@@ -2,7 +2,7 @@
 name: gh-company-formation
 description: >
   Use this skill to choose an entity and register a business in Ghana in 2026: entity types, Office of the Registrar of Companies steps, forms, fees, 1% capital duty, beneficial ownership, annual returns, the Ghana Investment Promotion Authority Act, 2026 (Act 1173) minimum foreign capital for trading enterprises, tax registration and the first tax dates. Trigger on "register a company in Ghana", "ORC Ghana", "foreign company Ghana", "GIPC minimum capital", "annual returns Ghana", "external company Ghana". Tax computations sit in the other Ghana skills.
-version: 0.3
+version: 0.4
 jurisdiction: GH
 category: formation
 tax_year: 2026
@@ -13,7 +13,7 @@ domain: formation
 type: filing-howto
 ---
 
-# Ghana Company Formation and Entity Choice v0.3
+# Ghana Company Formation and Entity Choice v0.4
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -39,10 +39,11 @@ Anyone setting up in Ghana in 2026. Authority: Office of the Registrar of Compan
 | Beneficial ownership not filed | GHS 500 | Penalty | 2026 | same |
 | Foreign capital, trading | USD 500,000 | Wholly foreign, joint venture, or Ghanaian-owned with a foreign owner or director | 2026 | https://gipc.gov.gh/minimum-equity-requirements/ |
 | Skilled Ghanaians, trading | At least 75% | Trading enterprise | 2026 | same |
+| Directors | At least 2, one ordinarily resident in Ghana | Company incorporated after Act 992 began (s.171); one director resident at all times (s.182) | 2026 | https://www.gipc.gov.gh/wp-content/uploads/2023/04/COMPANIES-ACT-2019-ACT-992.pdf |
 
 ## The base
 
-Act 1173 limits the minimum foreign capital to trading enterprises, paid in cash as equity. Trading means buying and reselling goods. Enterprises outside trading have no general minimum, though sector rules can apply. The old USD 200,000, 500,000 and 1,000,000 tiers no longer apply. Portfolio investment is outside it.
+Act 1173 limits the minimum foreign capital to trading enterprises, paid in cash as equity. Trading means buying and reselling goods. Enterprises outside trading have no general minimum on GIPC's page, though sector rules can apply. The old USD 200,000, 500,000 and 1,000,000 tiers no longer apply. Portfolio investment is outside it, and so is a Ghanaian who lost citizenship by taking another country's citizenship that bars dual citizenship (s.31(2), (3)). Section 35(3) makes a wholly Ghanaian-owned enterprise with a non-Ghanaian beneficial owner or director meet the s.31 minimum, and does not say "trading"; for a non-trading enterprise of that kind, ask GIPC before relying on the page ([Act 1173](https://brr.gov.gh/acc/registry/docs/GIPA-ACT-2026.pdf)). Citizenship alone does not prove a director is resident (s.171, s.182).
 
 Capital duty is on stated capital. A limited company limits liability and can raise equity, and carries annual returns and an auditor. A sole proprietor costs least and may use the [Modified Taxation Scheme](ghana-pit.md). An external company is a foreign company's presence in Ghana.
 
@@ -116,5 +117,7 @@ expected:
 | ORC, Forms, page read in full | https://orc.gov.gh/forms.php | 2026-11-01 |
 | GIPC, Minimum Foreign Capital Requirements (Act 1173), page read in full | https://gipc.gov.gh/minimum-equity-requirements/ | 2026-11-01 |
 | GRA, Tax Registration page, page read in full | https://gra.gov.gh/domestic-tax/tax-registration/ | 2026-11-01 |
+| Companies Act, 2019 (Act 992), original text: ss 126, 128, 171, 182 read | https://www.gipc.gov.gh/wp-content/uploads/2023/04/COMPANIES-ACT-2019-ACT-992.pdf | 2026-11-14 |
+| Ghana Investment Promotion Authority Act, 2026 (Act 1173), OCR: ss 31 and 35 (pp 18, 20, 21) read | https://brr.gov.gh/acc/registry/docs/GIPA-ACT-2026.pdf | 2026-11-14 |
 
-Not yet confirmed: (1) Act 992 itself was not opened. Minimum directors for a private company and a resident director (old skill: two, one resident), and minimum stated capital (old skill: about GHS 500 for Ghanaian-owned companies, from a US trade page) are not confirmed; ORC confirms two directors for a public company only. (2) Typical timeline of 10 to 15 working days came from a private firm blog and is not confirmed. (3) Whether the ORC online platform replaces any counter step. (4) Name-search fee.
+Not yet confirmed: (1) Act 992 s.171 and s.182 now confirm two directors, one ordinarily resident. Minimum stated capital (old skill: about GHS 500 for Ghanaian-owned companies, from a US trade page) is not confirmed. An ORC notice of 28 April 2026 (extension of the 2026 annual return date to 30 June for December year ends, and small-company audit relief under Directive No. 5 of 22 January 2025) could not be opened: the page returns 404, so no audit relief is stated. (2) Typical timeline of 10 to 15 working days came from a private firm blog and is not confirmed. (3) Whether the ORC online platform replaces any counter step. (4) Name-search fee.

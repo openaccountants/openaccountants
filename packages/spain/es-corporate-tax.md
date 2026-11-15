@@ -1,7 +1,7 @@
 ---
 name: es-corporate-tax
 description: Use this Guide to compute Spanish common-territory corporate income tax for a period beginning in 2026. It covers residence, accounting-to-tax adjustments, microcompany and small-company rates, depreciation, finance costs, participation income, capitalisation and levelling reserves, carried-forward losses, credits, the domestic minimum tax, annual Modelo 200 and Modelo 202 instalments. Trigger phrases include Impuesto sobre Sociedades, IS, SL taxes, empresa de reducida dimensión, bases imponibles negativas, reserva de capitalización, reserva de nivelación, pagos fraccionados and corporate exit tax. Obtain the exact period, territory, entity status, aggregated turnover and accounts before computing. The September 2026 Ceuta and Melilla amendments have specific effective-date tests. Foral taxes, consolidation, reorganisations and specialist incentive claims require their own verified analysis.
-version: 1.4
+version: 1.5
 jurisdiction: ES
 tax_year: 2026
 last_updated: 2026-11-14
@@ -16,7 +16,7 @@ domain: corporate-tax
 type: computation
 ---
 
-# Corporate income tax in Spain v1.4
+# Corporate income tax in Spain v1.5
 
 Compute Spanish corporate tax for a period beginning in 2026 from the accounts, then test the company's rate, reliefs and minimum tax. This revision is sourced from the law; independent whole-pack review is pending and no accountant has signed it off.
 
@@ -147,6 +147,7 @@ Under the new art. 33.3 presumption, a fixed place of business supports **EUR 60
 | Form not yet approved when the statutory window opens | Art. 124.1 provides a 25-day window after the form rule enters into force, with an option to use the ordinary window under the preceding period's formal rules | [LIS art. 124.1](https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328#a124) |
 | Modelo 202 instalments | First 20 calendar days of April, October and December; non-working-day extensions apply | [LIS art. 40.1](https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328#a40); [AEAT instructions](https://sede.agenciatributaria.gob.es/Sede/todas-gestiones/impuestos-tasas/impuesto-sobre-sociedades/modelo-202-is-i_____resencia-territorio-fraccionado_/instrucciones/Instrucciones-para-2025.html) |
 | Corporate withholding obligations | Pay over required withholding, submit prescribed returns/annual summary and give the payee a certificate | [LIS art. 128](https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328#a128) |
+| Impuesto Complementario (EUR 750m groups) | Modelo 241 by the last day of the 15th month after period end; Modelo 242 and payment within the next 25 calendar days; 18th month for the transition period; Modelo 240 earlier | [Ley 7/2024 arts. 47, 50–51, DT 5](https://www.boe.es/buscar/act.php?id=BOE-A-2024-26694); [Orden HAC/1198/2025](https://www.boe.es/buscar/act.php?id=BOE-A-2025-21727) |
 | Related-party disclosures | Test Modelo 232 separately from documentation and corporate tax; use the [transfer-pricing Guide](spain-transfer-pricing.md) | [Orden HFP/816/2017 arts. 2–5](https://www.boe.es/buscar/doc.php?id=BOE-A-2017-10042) |
 
 A dormant, loss-making or nil-tax company is not exempt from the annual return merely for that reason. Fully exempt art. 9.1 bodies do not file. An art. 9.3 partially exempt entity avoids filing only if **all** conditions hold: total annual income no more than **EUR 75,000**, non-exempt income no more than **EUR 2,000**, and all non-exempt income subject to withholding. Other art. 9.2–9.4 bodies declare exempt and non-exempt income as art. 124.3 requires. Consolidation requires its group return and separate regime; this Guide does not assemble Modelo 220.
@@ -180,6 +181,17 @@ Resident-company worldwide income remains in scope even if the payer or bank is 
 [LIS art. 19.1](https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328#a19) includes market value less tax value of assets when a resident entity transfers residence abroad, except assets remaining attached to its Spanish permanent establishment. A qualifying EU/EEA destination with the required recovery-assistance arrangement permits an election for **five equal annual payments** in the final-period tax return; the first falls in its voluntary payment window and the remaining four carry interest. Test guarantees and the acceleration events in the article, including qualifying onward transfers, disposals, insolvency/liquidation and non-payment. Temporary transfers for the specified financing, security, prudential-capital or liquidity purposes have a return-within-**one-year** exception. A management move does not by itself prove cessation of Spanish residence under art. 8. Obtain the legal and treaty residence analysis before treating any move as triggering or avoiding the charge.
 
 Foral allocation, permanent-establishment attribution, treaty limitation/anti-abuse, fiscal consolidation, hybrid mismatches, controlled foreign companies, reorganisations and the separate complementary minimum tax require their own fact-specific analysis. They are not resolved by inserting an assumed treaty rate in this ordinary computation.
+
+### Large groups: the separate Impuesto Complementario (Ley 7/2024)
+
+This is a separate tax, not the LIS art. 30 bis domestic minimum above, and it is not computed in this Guide. Test it before closing the corporate file of any group member:
+
+- **Scope.** A constituent entity located in Spain is a taxpayer if it belongs to a multinational group or a large domestic group whose consolidated net turnover, **including excluded entities**, was **EUR 750 million or more in at least two of the four periods immediately before** the period under review, measured on the ultimate parent's consolidated statements. A period longer or shorter than twelve months adjusts the threshold proportionally. A purely Spanish group is in scope ([Ley 7/2024 art. 6.1](https://www.boe.es/buscar/act.php?id=BOE-A-2024-26694)).
+- **Charges.** The rate for each jurisdiction is the positive difference between the 15% minimum and the jurisdiction's effective rate ([art. 23](https://www.boe.es/buscar/act.php?id=BOE-A-2024-26694)). The charge is the sum of three parts: the *impuesto complementario nacional* on Spanish entities, the *primario* (income inclusion rule) and the *secundario* (undertaxed profits rule) ([arts. 6.2–6.4 and 24](https://www.boe.es/buscar/act.php?id=BOE-A-2024-26694)).
+- **Effect dates.** In force the day after publication; effect for periods beginning from **31 December 2023**. The undertaxed profits rule applies to periods beginning from **31 December 2024**, except the art. 28.3 case, which runs from 31 December 2023 ([final provision 22](https://www.boe.es/buscar/act.php?id=BOE-A-2024-26694)).
+- **Filing.** Modelo 240 names the filing entity, before the last three months of the information-return window; Modelo 241, the information return, by the last day of the **15th month** after the period ends; Modelo 242, the self-assessment, within the **25 calendar days after the 15th month**, paying when filing. For the transition period the 15th month becomes the **18th month** ([Ley 7/2024 arts. 47, 50–51 and transitional provision 5](https://www.boe.es/buscar/act.php?id=BOE-A-2024-26694); [Orden HAC/1198/2025](https://www.boe.es/buscar/act.php?id=BOE-A-2025-21727)). A qualifying filing by the ultimate parent or a designated entity abroad can relieve a Spanish entity of Modelo 241, not of Modelos 240 and 242 ([art. 47.3](https://www.boe.es/buscar/act.php?id=BOE-A-2024-26694)).
+
+Foral territories have their own instruments for this tax. The effective-rate computation, safe harbours, the substance carve-out and actual exchange arrangements need the group's GloBE working papers.
 
 ## Two worked examples that recompute
 
@@ -244,12 +256,14 @@ expected:
 | [Ley 27/2014, BOE revision published 21 March 2026](https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328&p=20260321&tn=1) | Prior art. 33 for periods outside the September amendment's temporal scope | 2026-10-25 |
 | [RDL 22/2026](https://www.boe.es/buscar/act.php?id=BOE-A-2026-18429) | Art. 3 and final entry-into-force rule: 2026 Ceuta/Melilla annual and instalment transitions, including new DA 20 | 2026-10-25 |
 | [AEAT Modelo 202 instructions for 2025 and following periods](https://sede.agenciatributaria.gob.es/Sede/todas-gestiones/impuestos-tasas/impuesto-sobre-sociedades/modelo-202-is-i_____resencia-territorio-fraccionado_/instrucciones/Instrucciones-para-2025.html) | Current instalment methods, levelling reserve, nil filing and September 2026 update; the title expressly includes following periods | 2026-10-25 |
+| [Ley 7/2024, current consolidated text](https://www.boe.es/buscar/act.php?id=BOE-A-2024-26694) | Arts. 6, 23–24, 28.3, 47, 50–51; DT 5; final provision 22: scope, rate, effect dates and filing of the separate complementary tax | 2026-11-14 |
+| [Orden HAC/1198/2025](https://www.boe.es/buscar/act.php?id=BOE-A-2025-21727) | Modelos 240, 241 and 242 and their filing windows, including the transition period | 2026-11-14 |
 | [Ley 49/2002](https://www.boe.es/buscar/act.php?id=BOE-A-2002-25039) | Art. 20: corporate donation credit, repetition test, base cap and carryforward | 2026-10-25 |
 | [Ley 19/1994](https://www.boe.es/buscar/act.php?id=BOE-A-1994-15794) | Arts. 31, 43–44: ZEC eligibility and rate/base limits; art. 27 routes the separate Canary reserve | 2026-10-25 |
 | [Orden HFP/816/2017](https://www.boe.es/buscar/doc.php?id=BOE-A-2017-10042) | Arts. 2–5: Modelo 232 obligations, separate from the annual tax return | 2026-10-25 |
 | [Ley 58/2003](https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186) | Arts. 26–28, 188, 191, 198: interest, late/enforcement surcharges and penalties | 2026-10-25 |
 | [AEAT interest calculation](https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c18-cuota-liquida-resultante-autoliquidacion/incremento-cuotas-liquidas-estatal-autonomica/calculo-intereses-demora/reglas-calculo.html) | Explicit 2026 continued-budget interest rate; the underlying annual return is for 2025 | 2026-10-25 |
 
-Not yet confirmed: the specific foral surcharge/minimum and procedure questions recorded in [foral corporate Sources](es-foral-corporate-tax.md#sources); a legislative or binding resolution settling the art. 25 literal 5% overlap beyond AEAT’s now-cited administrative table; the final 2026 annual-return schema/calendar to be published for filing in 2027; full specialist-regime claims outside the ordinary computation. The reduced-rate minimum-tax rounding must be checked against the filing instructions applicable to the actual return. Independent whole-pack review is pending.
+Not yet confirmed: the specific foral surcharge/minimum and procedure questions recorded in [foral corporate Sources](es-foral-corporate-tax.md#sources); a legislative or binding resolution settling the art. 25 literal 5% overlap beyond AEAT’s now-cited administrative table; the final 2026 annual-return schema/calendar to be published for filing in 2027; full specialist-regime claims outside the ordinary computation. The reduced-rate minimum-tax rounding must be checked against the filing instructions applicable to the actual return. The Impuesto Complementario is described as a boundary, not computed: its effective-rate formulas, safe harbours, carve-outs and the Reglamento (RD 252/2025) were not read. Independent whole-pack review is pending.
 
 > Contributed by OpenAccountants.

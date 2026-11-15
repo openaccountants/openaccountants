@@ -1,95 +1,122 @@
 ---
 name: the-burden-of-proof-in-tax-cases
-description: "Use when asked about The Burden of Proof in Kenyan Tax Disputes. FFP CONSULT LTD Tax Advisory | Compliance | Dispute Support The Burden of Proof in Kenyan Tax Disputes What every business should know before KRA raises an assessment"
+description: "Kenyan tax objection and appeal evidence workflow for 2026: statutory burden, reconciliations, valid-objection conditions, deadlines, undisputed tax and referral boundaries."
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/the-burden-of-proof-in-tax-cases"
   jurisdiction: "KE"
-  tax_year: "2025"
-  last_updated: "2026-07-21"
+  tax_year: "2026"
+  last_updated: "2026-11-14"
 ---
 
-# The Burden of Proof in Kenyan Tax Disputes
+# The Burden of Proof in Kenyan Tax Disputes (2026)
 
-## FFP CONSULT LTD
+> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
-FFP CONSULT LTD
-Tax Advisory | Compliance | Dispute Support
-The Burden of Proof in Kenyan Tax Disputes
-What every business should know before KRA raises an assessment
+## Scope
 
-## Why this guide matters
+This supports a Kenyan taxpayer's evidence file and deadline triage after an assessment. It does not decide litigation merits or replace legal representation. [TPA s56(1)](https://www.kra.go.ke/images/publications/Tax-Procedures-Act--2026.pdf) places the burden on the taxpayer in proceedings under the objections/appeals Part to prove the decision incorrect. It does not dispense with the Commissioner's statutory duties or make any arbitrary assessment lawful. Under s31, amendments use available information and best judgment to reach the correct liability; s29 separately governs default assessments.
 
-When KRA raises an assessment against your business, the law does not start from a neutral position. It starts by assuming KRA is right. Knowing this early, and preparing for it, decides whether a dispute goes your way. This guide explains the rule, the deadlines that protect you, and the evidence that actually wins.
+## Ask the client first
 
-## The core rule: you carry the burden
+- The assessment/decision, exact notification date, tax head and period.
+- Grounds disputed, requested amendments, reasons and supporting records.
+- Undisputed tax, payments or an extension/payment arrangement.
+- Whether the objection was validly lodged and acknowledged, and any further-information notice.
+- Appeal/ADR stage, prior grounds, service records and representation.
+- Any fraud allegation, missing records, current challenge or deadline already missed.
 
-- **Burden of proof on the taxpayer** — Section 56(1) of the Tax Procedures Act places the burden of proof on the taxpayer. In any tax dispute, you must prove that KRA's decision is wrong. KRA does not have to prove its assessment is correct. Once KRA issues an assessment, the law treats it as correct until you show otherwise, with evidence.  _(Section 56(1) of the Tax Procedures Act)_
+## The method, step by step
 
-## How KRA can assess you
+### Evidence and burden
 
-- **Best-judgment assessment** — Under Section 31, KRA can raise an assessment using the information available to it, on a best-judgment basis. The figure does not have to be exact. It only has to be reasonable from KRA's side. This is why an assessment can look inflated and still be fully enforceable until you disprove it. The response is never to argue louder. The response is to produce records.  _(Section 31)_
+Build a reconciliation from the declared figure to invoices, eTIMS/ETR records, bank and M-PESA statements, contracts, local purchase orders, delivery notes, stock movements, payroll, audited accounts and schedules. Explain internal transfers and non-income credits rather than treating bank inflows as turnover. Retain an audit trail to source documents. A bank narration inconsistent with the declared position needs explanation and corroboration, not deletion.
 
-## The standard you must meet
+Under [TPA ss23,31,51,56](https://www.kra.go.ke/images/publications/Tax-Procedures-Act--2026.pdf), keep records for 5 years from the end of the reporting period (in words on the page), and longer where amended-assessment rules or ongoing proceedings require it. Documents supporting a live dispute must not be destroyed when the ordinary retention period expires. Evidence strength is factual; do not guarantee a win or assume management explanations discharge the burden.
 
-- **Standard of proof** — Tax disputes are civil matters. You prove your position on a balance of probabilities, meaning your version is more likely than not. Where KRA alleges fraud, the courts expect clearer and stronger evidence. In every case, documents decide the outcome. Missing records weaken your case; consistent records win it. (balance of probabilities; higher standard where fraud is alleged)
+### Rates, bands and thresholds
 
-## What actually discharges the burden
+| Stage | Time threshold and complete condition | Official source |
+|---|---|---|
+| Object | Within 30 days of notification; precise grounds, amendments and reasons, relevant documents, and undisputed tax paid or extension applied for, s51(2)-(3), in words on the page | https://www.kra.go.ke/images/publications/Tax-Procedures-Act--2026.pdf |
+| Invalidity notice/information | Commissioner notifies invalidity within 14 days; taxpayer provides the requested information within 7 days after the invalidity notice date; failure engages s51(4A), in words on the page | https://www.kra.go.ke/images/publications/Tax-Procedures-Act--2026.pdf |
+| Objection decision | Within 60 days of receipt of valid notice; otherwise deemed allowed, s51(11), in words on the page. Invalid objections have separate s51(4A) treatment | https://www.kra.go.ke/images/publications/Tax-Procedures-Act--2026.pdf |
+| Tribunal appeal | Within 30 days after notification of objection decision, s51(12); undisputed tax paid or payment arrangement at lodging, s52(2), in words on the page | https://www.kra.go.ke/images/publications/Tax-Procedures-Act--2026.pdf |
+| High Court appeal | Within 30 days of notification or further time allowed; questions of law only, ss53,56(2), in words on the page | https://www.kra.go.ke/images/publications/Tax-Procedures-Act--2026.pdf |
+| Grounds on appeal | Only objection grounds unless Tribunal/Court permits new grounds, s56(3) | https://www.kra.go.ke/images/publications/Tax-Procedures-Act--2026.pdf |
 
-KRA responds to file-grade evidence, not explanations. Build your position on documents that reconcile to your declared figures:
-�	Tax invoices and eTIMS or ETR records
-�	Bank statements and M-PESA statements that tie to your declared income
-�	Contracts, local purchase orders, delivery notes, and stock movement records
-�	Payroll records supporting PAYE
-�	Audited accounts with supporting schedules
-�	A clear audit trail linking every figure to a source document
-Keep your records for at least five years. Remember that your own documents can work against you: a bank narration that contradicts your declared income becomes KRA's evidence, not yours.
+On receipt, record notification, preserve the assessment, gather evidence, separate disputed and undisputed amounts, prepare specific grounds and amendments and obtain professional review before casual replies or meetings. For an amended assessment, s51(5) limits the objection to alterations/additions. Late objection can be requested on statutory grounds under s51(6)-(7); do not assume it is granted.
 
-## Your rights and the deadlines that protect them
+## Boundary and exception table
 
-Every stage below carries a hard deadline. Miss one and you can lose the right to dispute the assessment, whatever the merits. Objections are only valid when lodged on iTax; a letter or email alone does not stop the clock.
+| Situation | Response |
+|---|---|
+| Valid and timely objection | Track receipt, acknowledgement and decision clock |
+| Invalid/incomplete objection | Cure the stated defects; do not assume automatic allowance |
+| Fraud allegation or asserted heightened standard | Refer for case-law analysis; preserve relevant documents |
+| New appeal ground | Seek Tribunal/Court permission; do not assume it is admitted |
+| Unnamed constitutional challenge | Current s56(1) remains the source read; no outcome assumed |
 
-**Dispute stages and deadlines**
+## Worked cases
 
-| Stage | Deadline | What you must do |
-| --- | --- | --- |
-| Object to the assessment | 30 days from the date KRA notifies you | Lodge a notice of objection on iTax. State your grounds, the amendments you want, and your reasons. Pay or arrange the tax that is not in dispute. |
-| KRA issues its objection decision | 60 days from a valid objection | If KRA does not decide within 60 days, the law treats your objection as allowed. |
-| Appeal to the Tax Appeals Tribunal (TAT) | 30 days from the objection decision | File a notice of appeal. Pay the refundable fee of KES 20,000. Pay or arrange any tax not in dispute. |
-| File your appeal documents at the TAT | 14 days from the notice of appeal | Submit the memorandum of appeal, statement of facts, and the objection decision. |
-| Appeal to the High Court | 30 days from the TAT decision | Available on questions of law only. |
+Hypothetical bank credits KES 1,200,000 include documented own transfers KES 200,000 and a loan KES 100,000. Reconciled trading receipts are KES 900,000. If an assessment treats every credit as sales, the disputed base difference is KES 300,000; the documents, not this subtraction alone, support the objection. No tax rate is assumed.
 
-## Your rights and the deadlines that protect them
+```oa-check
+name: Bank-credit assessment reconciliation
+inputs:
+  credits: 1200000
+  own_transfers: 200000
+  loan: 100000
+steps:
+  - trading_receipts: credits - own_transfers - loan
+  - base_difference: credits - trading_receipts
+expected:
+  trading_receipts: 900000
+  base_difference: 300000
+```
 
-The 60-day rule works in your favour. If KRA fails to issue an objection decision within 60 days of your valid objection, the law deems your objection allowed.
+A hypothetical KES 500,000 assessment is challenged by KES 180,000. Undisputed tax is KES 320,000; KES 250,000 credited payment leaves KES 70,000 to pay or cover with the applicable extension/arrangement. Merely disputing part does not satisfy the undisputed-tax condition.
 
-## Where businesses most often lose
+```oa-check
+name: Undisputed-tax payment condition
+inputs:
+  assessment: 500000
+  disputed: 180000
+  paid: 250000
+steps:
+  - undisputed: assessment - disputed
+  - remaining: max(0, undisputed - paid)
+expected:
+  undisputed: 320000
+  remaining: 70000
+```
 
-�	Missing the 30-day objection window
-�	Filing vague objections with no specific amendments or reasons
-�	Not lodging the objection on iTax
-�	Weak or missing documentation behind the disputed figures
-�	Saying too much to KRA in meetings before the position is prepared
-�	Raising new grounds late, since you are generally held to the grounds stated in your objection
+## When to refuse or refer
 
-## What to do the moment you receive an assessment
+Refer litigation, fraud, uncertain notification/service, expired deadlines, disputed validity, new appeal grounds, document gaps and constitutional issues. Do not tell a taxpayer that a letter/email alone necessarily satisfies the current electronic procedure. Confirm the approved channel and retain acknowledgement.
 
-1.	Note the date of notification. The 30-day clock starts on that date.
-2.	Do not reply casually or attend a meeting alone. Send the assessment to us first.
-3.	Gather the source documents behind the disputed figures.
-4.	Separate what is genuinely in dispute from what is not.
-5.	Let us prepare the objection, the grounds, and the reconciliations.
+## Filing and payment
 
-## A change worth watching
+Lodge the objection through KRA iTax (https://itax.kra.go.ke), select the relevant decision/assessment and period, specify grounds, requested amendments and reasons, attach relevant documents, address undisputed tax and retain submission acknowledgement. Obtain current Tribunal filing/fee and service directions before appealing; TPA alone does not specify the whole Tribunal filing bundle or portal.
 
-A constitutional challenge to Section 56(1) is before the High Court. It argues that the taxpayer should not carry the entire burden, particularly where assessments rely on automated, system-generated data outside the taxpayer's control. The current law still applies in full. We will advise our clients if the position shifts.
+## Completion checklist
 
-## How FFP Consult helps
+Reconcile the declared and assessed figures; retain source evidence; calendar notification, valid objection and appeal stages; record payments/arrangements and submission/service proof; obtain the decision and identify preserved grounds. No deadline is suspended by an informal meeting.
+
+### How FFP Consult helps
 
 We prepare objections, reconciliations, and evidence bundles, represent clients in Alternative Dispute Resolution, and appear before the Tax Appeals Tribunal. The earlier you involve us, the stronger your position. Contact us before the deadline, not after it.
 Julian Njoroge Maina
 Tax Partner, FFP Consult
+
+## Sources
+
+| Source and passages actually read | Official URL | Read on |
+|---|---|---|
+| Read for TPA ss23,29,31,51-56; record extensions, amended assessments, objection validity/decision clocks, appeals, burden and grounds | https://www.kra.go.ke/images/publications/Tax-Procedures-Act--2026.pdf | 2026-11-14 |
+
+Not yet confirmed: Current Tribunal Act/rules text on the former 14-day document bundle and KES 20,000 fee, including whether refundable; the old refundable claim is not established. Kenya Law direct fetch produced a robot challenge; the ordinary browser opened a blank page, not readable law. Parliament’s linked file was unrelated and was rejected. The old general balance-of-probabilities/higher-fraud-standard claim and unnamed constitutional challenge require identified current judgments; neither is treated as confirmed here. Absolute iTax-only validity is not stated by s51 itself; confirm current channel requirements.
 
 ## Disclaimer
 
@@ -99,4 +126,4 @@ This guide provides general information on Kenyan tax procedure and does not con
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-07-21. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `the-burden-of-proof-in-tax-cases` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/the-burden-of-proof-in-tax-cases. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `the-burden-of-proof-in-tax-cases` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/the-burden-of-proof-in-tax-cases. If neither is available, confirm every figure against the official source pages cited above before relying on it.

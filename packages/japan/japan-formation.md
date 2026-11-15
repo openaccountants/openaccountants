@@ -1,213 +1,152 @@
 ---
 name: japan-formation
 description: Use this skill whenever asked about forming, incorporating, or registering a company in Japan. Trigger on phrases like "set up a company in Japan", "KK formation", "GK formation", "kabushiki kaisha", "godo kaisha", "法務局", "Legal Affairs Bureau", "Japanese company formation", "register a business Japan", "会社設立", "定款", "登録免許税", or any question about starting a business entity in Japan. Covers entity types (KK, GK, branch office), registration process, capital requirements, costs, post-formation compliance, and bank account opening. ALWAYS read this skill before advising on Japanese company formation.
-version: 1.0
+version: 1.1
 jurisdiction: JP
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: 2026-11-14
 depends_on:
   - company-formation-workflow-base
 category: formation
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: formation
+type: filing-howto
 ---
 
 # Japan Formation
 
-## Japan Company Formation Skill v1.0
+> **General reference only.** This skill produces working papers for professional review. It has not been approved by an accountant for any particular person, entity, election or filing. Confirm the applicable facts and official forms before filing, paying or taking a position.
 
-## Section 1 -- Quick Reference
+## Scope
 
-**Quick Reference**
+2026 legal incorporation workflow for a Japanese KK (株式会社), GK (合同会社), individual business and foreign-parent branch. The output is a registration and post-registration checklist with fee calculations. `jp-incorporation` handles the separate financial decision whether a sole proprietor should incorporate. A branch is part of its foreign parent; it is not a separate Japanese limited-liability company. Industry permits, immigration permission and a bank account are separate tasks.
 
-| Field | Value |
-| --- | --- |
-| Country | Japan |
-| Currency | JPY |
-| Company registrar | Legal Affairs Bureau (法務局 / Hōmukyoku) |
-| Key legislation | Companies Act (会社法); Commercial Registration Act (商業登記法) |
-| Typical formation time | 1--3 weeks |
-| Corporate tax rate | ~30--34% effective (national + local; varies by municipality and capital) |
-| Skill version | 1.0 |
+Quick reference: KK articles require notarisation; GK articles do not. Registration tax is capital-based with a minimum. Incorporation does not itself grant a right to live or work in Japan. Sources are Companies Act arts. 30, 49, 575-579 and the official fee/ISA pages below.
 
-## Section 2 -- Entity Types Comparison
+## Ask the client first
 
-**Entity Types Comparison**
+- Owners, beneficial owners, residence, nationality, corporate versus individual founders, and intended representative.
+- KK/GK/branch, proposed name and exact registered address, business purpose and regulated activity.
+- Cash and in-kind contributions, capital, financing requirements and foreign documents.
+- Immigration status and whether Business Manager permission is needed.
+- First year-end, anticipated payroll, employees and consumption-tax/invoice status.
+- Who will prepare the Japanese application, translations, proof of payment and post-registration notices.
 
-| Feature | Individual Business (個人事業主) | GK (合同会社 / Gōdō Kaisha) | KK (株式会社 / Kabushiki Kaisha) | Branch Office (支店) |
-| --- | --- | --- | --- | --- |
-| Legal personality | No | Yes | Yes | No (extension of parent) |
-| Liability | Unlimited | Limited | Limited | Parent bears liability |
-| Min. founders | 1 | 1 | 1 | N/A |
-| Min. capital | N/A | ¥1 (statutory) | ¥1 (statutory) | N/A |
-| Governance | N/A | Flexible (member-managed) | Formal (board/directors/auditors) | Per parent company |
-| Transferability | N/A | Requires all members' consent | Shares freely transferable (unless restricted) | N/A |
-| Tax treatment | Personal income tax | Corporate tax | Corporate tax | Corporate tax on Japan-source income |
-| Prestige/perception | Low | Medium (growing acceptance) | High (traditional corporate form) | Varies |
-| Admin burden | Low | Medium | High | Medium |
+## The method, step by step
 
-**Recommended default:** GK for startups and cost-sensitive formations. KK for investor-facing businesses, B2B credibility, and future equity fundraising.
+### Choose the form and name
 
-## Section 3 -- Registration Process
+An individual business has no separate corporate personality and the proprietor bears business liabilities. KK shareholders and GK limited-liability members have limited liability subject to the Companies Act. KK governance separates shareholders and directors; GK members manage by default unless articles provide otherwise. Transfer of GK interests normally needs other members' consent, with statutory exceptions and freedom to vary by articles. Decide funding, voting, exit, profit distribution and customer requirements before choosing. Do not describe perceived prestige as law. Sources: Companies Act arts. 104, 576, 580, 585, 590, 599 and 622, https://laws.e-gov.go.jp/law/417AC0000000086.
 
-### Step 1: Choose Company Name and Decide Entity Type
+JETRO’s official comparison lists capital of JPY 1 or more and at least 1 investor for KK/GK. This nominal capital is separate from viable working capital or immigration eligibility. KK/GK representatives need not satisfy the former Japan-domicile requirement (removed from 16 March 2015), while a branch needs at least 1 representative resident in Japan. Source: JETRO section1.2 and notes, https://www.jetro.go.jp/en/invest/setting_up/section1/page2.html.
 
-- **Company name requirement** — Name must include "合同会社" (GK) or "株式会社" (KK)
-- **Name uniqueness check** — Check local uniqueness at the Legal Affairs Bureau for your registered address jurisdiction
-- **National vs local uniqueness** — National uniqueness is not required, but local uniqueness is
+Use the entity characters in the trade name. The registration refusal is an identical name at an identical head-office location, not a ban on every similar name in a municipality. A registration search does not clear trademarks or misleading use. Sources: Companies Act arts. 6 and 8, https://laws.e-gov.go.jp/law/417AC0000000086; Commercial Registration Act art. 27, https://laws.e-gov.go.jp/law/338AC0000000125.
 
-### Step 2: Prepare Articles of Incorporation (定款 / Teikan)
+### Articles, capital, notarisation and registration
 
-- **Articles content** — Define: company name, purpose, registered office, capital, fiscal year, members/shareholders, directors
-- **KK notarisation requirement** — Articles must be notarised at a public notary office (公証役場)
-- **GK notarisation requirement** — No notarisation required (filed directly)
+Prepare KK articles showing purpose, name, head-office location, contributed value/minimum and incorporators; decide share structure, officers and year-end. Notarise KK articles before filing. For a GK, all intended members sign or seal articles specifying their liability and contributions; notarisation is not the KK requirement. Pay contributions before incorporation; document the bank, payer, amount and payment date. In-kind KK contributions require the art. 33 examination analysis, including its exemptions. Do not substitute an unsupported banking-capital recommendation for a legal requirement. Sources: Companies Act arts. 27, 30, 33-34 and 575-578, https://laws.e-gov.go.jp/law/417AC0000000086.
 
-### Step 3: Notarisation (KK only)
+| Fee or boundary | Complete condition | Official source |
+|---|---|---|
+| KK registration tax | Capital × 0.7%, minimum JPY 150,000; ordinary incorporation, before any separately verified relief ; monetary amounts derived from Japanese 万/億 units and 0.7% = 7/1,000 | Registration and License Tax Act, Appended Table 1; NTA No.7191, https://www.nta.go.jp/taxes/shiraberu/taxanswer/inshi/7191.htm |
+| GK registration tax | Capital × 0.7%, minimum JPY 60,000; ordinary incorporation ; monetary amounts derived from Japanese 万/億 units and 0.7% = 7/1,000 | same, https://www.nta.go.jp/taxes/shiraberu/taxanswer/inshi/7191.htm |
+| KK notary fee JPY 15,000 | Capital/contributed amount below JPY 1,000,000; all founders natural persons, no more than 3 founders, all initial shares subscribed by founders, no board ; monetary amounts derived from Japanese 万/億 units | Notary Fee Order art.35 proviso; https://www.koshonin.gr.jp/notary/ow12/12-q7 |
+| KK notary fee JPY 30,000 | Below JPY 1,000,000 and reduced-fee conditions above not all met ; monetary amounts derived from Japanese 万/億 units | same, https://www.koshonin.gr.jp/notary/ow12/12-q7 |
+| KK notary fee JPY 40,000 | JPY 1,000,000 to below JPY 3,000,000 ; monetary amounts derived from Japanese 万/億 units | same, https://www.koshonin.gr.jp/notary/ow12/12-q7 |
+| KK notary fee JPY 50,000 | Other cases; articles giving only a minimum contributed amount can fall here ; monetary amounts derived from Japanese 万/億 units | same, https://www.koshonin.gr.jp/notary/ow12/12-q7 |
+| Paper KK articles stamp JPY 40,000 | Electronic articles do not require this stamp; copies/certification are separate costs ; monetary amounts derived from Japanese 万/億 units | Stamp Tax Act Schedule 1 document 6; https://www.koshonin.gr.jp/notary/ow12/12-q7 |
+| In-kind KK inspection exception | Aggregate specified in-kind/property-acquisition values no more than JPY 5,000,000; other art.33(10) exemptions also exist | Companies Act art.33(10), https://laws.e-gov.go.jp/law/417AC0000000086 (in words on the page) |
 
-- **Notary fee** — ¥30,000--¥50,000 JPY (capital-dependent scale)
-- **Revenue stamp (収入印紙)** — ¥40,000 for paper filing; ¥0 for electronic filing (電子定款) JPY
-- **Certified copy fee** — ~¥2,000 JPY
+Use the Legal Affairs Bureau's application for the chosen entity and method. Assemble articles, payment evidence, resolutions/consents, identity/signature evidence and required attachments. Decide electronic signatures versus paper seals under the applicable registration procedure; a purchased set of seals is not itself incorporation. Submit at the bureau for the head office through the commercial-registration online system, by post or the supported counter process. Pay registration tax and retain the application receipt and correction requests. Legal existence follows registration. Obtain the registered-matters certificate and establish statutory/accounting records. Companies Act arts. 49, 579 and 911-914, https://laws.e-gov.go.jp/law/417AC0000000086.
 
-### Step 4: Deposit Capital
+### Business Manager immigration boundary
 
-- **Capital deposit account** — Deposit into a personal bank account of a founding member (company account cannot exist yet)
-- **Proof of deposit** — Obtain proof of deposit (通帳コピー / bank book photocopy)
-- **Legal minimum capital** — ¥1 JPY (for both KK and GK)
-- **Practical minimum capital** — ¥1M--¥5M for banking credibility; ¥30M+ for Business Manager visa (since October 2025) JPY
+For applications under the amended criteria from 16 October 2025, test all criteria together. The new standards include JPY 30,000,000 capital/contributions for a corporate business, at least 1 eligible full-time employee, appropriate Japanese premises, Japanese-language capacity, and the applicant's qualification or experience. Capital alone does not qualify. The employee for the employment criterion must be Japanese, a special permanent resident or hold an eligible Appended Table II residence status; an Appended Table I work-status employee does not satisfy that employment criterion. The language criterion has a broader employee definition. Sources: ISA guideline, https://www.moj.go.jp/isa/content/001448070.pdf.
 
-### Step 5: Prepare Corporate Seal (法人印鑑 / Hōjin Inkan)
+Language must be B2 equivalent or higher for the applicant or a full-time employee; the guideline accepts JLPT N2, BJT 400 or higher, qualifying long residence or Japanese education. The applicant needs a relevant doctoral, master's or professional degree (including equivalent foreign degree), or at least 3 years' management experience, including qualifying startup preparation. The business plan needs expert confirmation of specificity, reasonableness and feasibility under the applicable application category. Premises must support real management; combining the home and business office is generally disallowed under the guideline. Check business permits, labour/social insurance and tax payments. Do not promise permission for a paper company or prolonged unexplained absence. Source: ISA guideline, https://www.moj.go.jp/isa/content/001448070.pdf.
 
-- **Seals needed** — Three seals typically needed: representative seal (実印), bank seal (銀行印), company stamp (角印)
-- **Corporate seal cost** — ¥10,000--¥30,000 JPY
+Pre-commencement pending applications use the former criteria. Existing holders applying during the transition to 16 October 2028 receive consideration of business circumstances and prospects of meeting the new criteria; after that date the guideline still requires a contextual assessment where the new criteria are not met, including tax compliance and prospects by the next renewal. Startup-status transitions have separate grandfathering conditions. Refer immigration cases for the applicable category, documents and transition rule; do not assume the new capital criterion automatically forces departure. Source: ISA guideline, https://www.moj.go.jp/isa/content/001448070.pdf.
 
-### Step 6: File Registration at Legal Affairs Bureau (法務局)
+## Boundary and exception table
 
-- **Submission requirements** — Submit: application form, articles, capital deposit proof, officer consent forms, seal registration
-- **Registration tax (登録免許税) KK** — ¥150,000 minimum (or 0.7% of capital if higher) JPY (KK)
-- **Registration tax (登録免許税) GK** — ¥60,000 minimum (or 0.7% of capital if higher) JPY (GK)
-- **Company legal existence** — Company legally exists from the date of registration
+| Situation | Treatment |
+|---|---|
+| A very small registered capital | Separate lawful registration from working capital, creditor risk, visa eligibility and each bank's KYC; do not guarantee account opening |
+| Foreign founder/nonresident representative | Check representative appointment, payment-account evidence, signature certification, translation/legalisation and investment restrictions for the actual documents; no blanket apostille rule |
+| Branch | Assess parent liability, Japanese representative, foreign-company registration and PE tax; obtain the branch-specific filing/fee before budgeting |
+| Regulated activity | Obtain the relevant permit separately; registration is not a licence to trade |
+| Officer/address/capital change | Register the relevant registered matter within 2 weeks, subject to art.915 exceptions; not an accounts-filing deadline. Companies Act art.915, https://laws.e-gov.go.jp/law/417AC0000000086 (in words on the page) |
+| Failure to register or give required notice | Up to JPY 1,000,000 administrative fine under Companies Act art.976; not an automatic fixed fine, https://laws.e-gov.go.jp/law/417AC0000000086 (in words on the page) |
 
-### Step 7: Post-Registration Tax Filings
+## Worked cases
 
-- **Hōjin Setsuritsu Todoke filing - National Tax Agency** — File Hōjin Setsuritsu Todoke (法人設立届出書) with National Tax Agency (税務署) -- within 2 months
-- **Hōjin Setsuritsu Todoke filing - Prefectural tax office** — Prefectural tax office -- within 15 days (varies by prefecture)
-- **Hōjin Setsuritsu Todoke filing - Municipal tax office** — Municipal tax office -- within 15 days (varies)
-- **Blue Return Filing application deadline** — Apply for Blue Return Filing (青色申告) within 3 months for tax benefits
+Hypothetical electronic KK with JPY 500,000 capital, 1 natural-person founder, founder subscription and no board qualifies for the reduced notary fee. Registration tax is JPY 150,000, plus notary fee JPY 15,000, giving JPY 165,000 before copies, professional services and other costs. A GK with the same capital has registration tax JPY 60,000 and no KK notary fee. The difference is JPY 105,000. This compares official fee components, not total market setup costs.
 
-### Step 8: Social Insurance Registration
+```oa-check
+name: Small electronic KK versus GK official fee components
+inputs:
+  capital: 500000
+steps:
+  - kk_registration: max(capital * 0.007, 150000)
+  - gk_registration: max(capital * 0.007, 60000)
+  - kk_components: kk_registration + 15000
+  - difference: kk_components - gk_registration
+expected:
+  kk_components: 165000
+  gk_registration: 60000
+  difference: 105000
+```
 
-- **Shakai Hoken mandatory registration** — Shakai Hoken (社会保険): mandatory from day 1 for all companies (even 1-person companies)
-- **Registration bodies** — Register with: Japan Pension Service (年金事務所) and Hello Work (ハローワーク, if hiring)
-- **Rōdō Hoken requirement** — Rōdō Hoken (労働保険): mandatory once first employee is hired
+At JPY 30,000,000 capital, registration tax is JPY 210,000 for either form. Electronic KK notary fee adds JPY 50,000, so those components total JPY 260,000. Paper KK articles add JPY 40,000 to reach JPY 300,000. The Business Manager test still needs the non-capital criteria.
 
-## Section 4 -- Capital Requirements
+```oa-check
+name: Capital-based registration tax overrides both minima
+inputs:
+  capital: 30000000
+steps:
+  - registration: max(capital * 0.007, 150000)
+  - electronic_kk_components: registration + 50000
+  - paper_kk_components: electronic_kk_components + 40000
+expected:
+  registration: 210000
+  electronic_kk_components: 260000
+  paper_kk_components: 300000
+```
 
-**Capital Requirements**
+## When to refuse or refer
 
-| Entity Type | Min. Capital | Paid-Up Timing | Registration Tax | In-Kind Contributions |
-| --- | --- | --- | --- | --- |
-| GK | ¥1 | Before registration | ¥60,000 (or 0.7% of capital) | Permitted |
-| KK | ¥1 | Before registration | ¥150,000 (or 0.7% of capital) | Permitted (shikkin inspection for KK with >¥5M in kind) |
-| Branch Office | N/A | N/A | ¥60,000 | N/A |
+Never promise a bank account or visa on the strength of registration or capital alone. Never recommend a nominee deposit without evidence and professional review. Do not miss compulsory insurance or registry-change notices. Do not describe paper articles as necessary when electronic articles are available. Refer in-kind contributions, branches, restricted investment, permits, uncertain foreign signature evidence and immigration to the relevant specialist.
 
-- **Capital and visa** — **Capital and visa:** Since October 2025, the Business Manager visa requires ¥30,000,000 minimum capital for new applicants.
+## Filing and payment
 
-## Section 5 -- Costs Breakdown
+| Filing | Deadline and action | Official source |
+|---|---|---|
+| National corporate establishment notice | Within 2 months after establishment; file 法人設立届出書 in e-Tax or paper with articles copy; obtain user identification before first e-Tax filing and retain receipt | Corporate Tax Act art.148; NTA C1-4, https://www.nta.go.jp/taxes/tetsuzuki/shinsei/annai/hojin/annai/1554_2.htm |
+| Corporate blue-return application | Before the earlier of the date 3 months after establishment and the end of the first business year; do not turn this into an unconditional 3-month deadline | Corporate Tax Act art.122(2), https://laws.e-gov.go.jp/law/340AC0000000034 (in words on the page) |
+| Payroll-office opening notice | Within 1 month after opening the paying office; statutory withholding generally due on the 10th of the next month; special approval must be separately established | Income Tax Act arts.183,230; NTA No.2502, https://www.nta.go.jp/taxes/shiraberu/taxanswer/gensen/2502.htm |
+| Social insurance new workplace | Within 5 days when compulsory coverage conditions are met; corporate workplaces employing an insured person, including a remunerated owner alone, can be compulsory | Japan Pension Service, https://www.nenkin.go.jp/service/kounen/tekiyo/jigyosho/20150311.html |
+| Corporation tax return | Normally within 2 months after year-end; apply for an available extension separately | Corporate Tax Act art.74, https://laws.e-gov.go.jp/law/340AC0000000034 (in words on the page) |
 
-**Costs Breakdown**
+Check prefectural/municipal establishment notices locally; they do not share a single national deadline. When hiring, prepare labour insurance and Hello Work registrations with the employment specialist. For banking, gather registry/seal or signature evidence, articles, representative identification, beneficial ownership, office and business plan; request the bank's current checklist. MUFG (三菱UFJ), SMBC (三井住友), Mizuho (みずほ), Resona, Shinsei, PayPay Bank and GMO Aozora Net Bank remain possible research targets, not an endorsement or account-opening promise.
 
-| Cost Component | KK (JPY) | GK (JPY) | Notes |
-| --- | --- | --- | --- |
-| Registration tax (登録免許税) | ¥150,000 | ¥60,000 | Minimum; 0.7% of capital if higher |
-| Notary fee (定款認証) | ¥30,000--¥50,000 | ¥0 | KK only |
-| Revenue stamp (紙定款) | ¥40,000 (paper) / ¥0 (electronic) | ¥40,000 / ¥0 | Save ¥40,000 with electronic filing |
-| Corporate seal set | ¥10,000--¥30,000 | ¥10,000--¥30,000 | 3-seal set |
-| Certified copies | ~¥2,000 | ~¥600 |  |
-| **Total government fees** | **¥192,000--¥280,000** | **¥70,000--¥130,000** | Electronic filing recommended |
-| Judicial scrivener (司法書士) | ¥60,000--¥100,000 | ¥50,000--¥80,000 | Optional but recommended |
-| Tax accountant setup | ¥100,000--¥300,000 | ¥100,000--¥300,000 | First-year bookkeeping and filings |
-| **Total with professionals** | **¥350,000--¥700,000** | **¥220,000--¥510,000** |  |
+## Completion checklist
 
-### Annual Maintenance
+Record entity decision, name/address clearance, articles, cash/in-kind proof, fee calculation, filed documents, registration certificate, tax/insurance notices, permits, visa boundary and bank follow-up. Record exact local deadlines and retain confirmations. Prepare bookkeeping and annual accounts with `japan-bookkeeping` and `japan-financial-statements`.
 
-**Annual Maintenance**
+## Sources
 
-| Item | Cost (JPY) |
-| --- | --- |
-| Corporate inhabitant tax (均等割) | ¥70,000/year minimum (even if no profit) |
-| Tax accountant (税理士) | ¥300,000--¥600,000/year |
-| Social insurance contributions | ~30% of gross salary (employer share ~15%) |
-| Annual financial statements | Included in tax accountant fees |
+| Source | URL | Read on |
+|---|---|---|
+| JETRO; Read for section1.2 capital/investor table, branch liability and representative-residence notes | https://www.jetro.go.jp/en/invest/setting_up/section1/page2.html | 2026-11-14 |
+| Companies Act; Read for arts.6,8,27,30,33-34,49,104,575-599,622,911-915,976 | https://laws.e-gov.go.jp/law/417AC0000000086 | 2026-11-14 |
+| Commercial Registration Act; Read for art.27 identical-name/location test | https://laws.e-gov.go.jp/law/338AC0000000125 | 2026-11-14 |
+| NTA No.7191; Read for commercial-registration fee table and rate/minimum | https://www.nta.go.jp/taxes/shiraberu/taxanswer/inshi/7191.htm | 2026-11-14 |
+| Japan National Notaries Association; Read for Notary Fee Order art.35 bands, reduced-fee proviso and electronic-article stamp exception | https://www.koshonin.gr.jp/notary/ow12/12-q7 | 2026-11-14 |
+| ISA amended criteria guideline; Read for all amended criteria, evidence, application treatment and transitional exceptions | https://www.moj.go.jp/isa/content/001448070.pdf | 2026-11-14 |
+| NTA C1-4; Read for scope, submission time, attachments and filing method | https://www.nta.go.jp/taxes/tetsuzuki/shinsei/annai/hojin/annai/1554_2.htm | 2026-11-14 |
+| Corporate Tax Act; Read for arts.74,122 first-year deadline exceptions | https://laws.e-gov.go.jp/law/340AC0000000034 | 2026-11-14 |
+| NTA No.2502; Read for payroll opening and withholding deadline | https://www.nta.go.jp/taxes/shiraberu/taxanswer/gensen/2502.htm | 2026-11-14 |
+| Japan Pension Service; Read for compulsory workplace scope and new-application deadline | https://www.nenkin.go.jp/service/kounen/tekiyo/jigyosho/20150311.html | 2026-11-14 |
 
-## Section 6 -- Post-Formation Compliance
-
-**Post-Formation Compliance**
-
-| Obligation | Deadline | Authority |
-| --- | --- | --- |
-| Corporate tax return (法人税) | Within 2 months of fiscal year-end | National Tax Agency (税務署) |
-| Consumption tax return (消費税) | Within 2 months of fiscal year-end | Tax office |
-| Corporate inhabitant tax | Within 2 months of fiscal year-end | Prefectural/municipal tax office |
-| Withholding tax (源泉徴収) | 10th of following month (or semi-annual for small companies) | Tax office |
-| Shakai Hoken reports | Monthly contributions; annual Santei Kiso Todoke | Japan Pension Service |
-| Financial statements | File with tax return | Tax office |
-| Touki (登記) changes | Within 2 weeks of any change (directors, address, capital) | Legal Affairs Bureau |
-
-## Section 7 -- Bank Account Opening
-
-### Documents Typically Required
-
-- **Documents list** — Tōki Jikō Shōmeisho (登記事項証明書) -- certified registry extract; Inkan Shōmeisho (印鑑証明書) -- seal registration certificate; Articles of incorporation; ID of representative director; Proof of business office address; Business plan or description of activities
-
-### Typical Timeline
-
-- **Major banks timeline** — 2--4 weeks (major Japanese banks are thorough with KYC)
-- **New company timeline** — 1--2 months for new companies (banks are cautious with newly formed entities)
-- **Digital bank timeline** — Digital banks (PayPay Bank, GMO Aozora): 1--2 weeks
-
-### Common Banks
-
-MUFG (三菱UFJ), SMBC (三井住友), Mizuho (みずほ) (megabanks); Resona, Shinsei (mid-tier); PayPay Bank, GMO Aozora Net Bank (digital)
-
-## Section 8 -- Foreign Founder Considerations
-
-**Foreign Founder Considerations**
-
-| Question | Answer |
-| --- | --- |
-| Non-resident directors allowed? | KK requires a representative director; GK requires a representative member. Since April 2015, no requirement for a Japan-resident representative (but banks strongly prefer one) |
-| Business Manager visa capital | ¥30,000,000 since October 2025 |
-| Physical presence required? | Not for registration (power of attorney accepted); required for visa application |
-| Registered office | Must be a physical address in Japan (virtual offices accepted for registration but not for visa) |
-| Apostille requirements | Foreign documents require apostille + Japanese translation |
-| Corporate seal registration | Mandatory for all companies; representative must register in person or via scrivener |
-| Japan-resident bank account | Required for capital deposit; non-residents can use a trusted Japan-resident person's account |
-
-## Section 9 -- Common Mistakes and Refusals
-
-- **R-JP-F1 -- ¥1 capital and banking** — While ¥1 capital is legally valid, Japanese banks routinely reject account applications from companies with minimal capital. Recommend at least ¥1,000,000 for banking credibility.  _(R-JP-F1)_
-- **R-JP-F2 -- Confusing visa capital with legal minimum** — The legal minimum capital is ¥1, but the Business Manager visa requires ¥30,000,000 since October 2025. These are separate requirements. Always clarify the client's visa intentions before advising on capital.  _(R-JP-F2)_
-- **R-JP-F3 -- Failure to register for shakai hoken** — Social insurance (health + pension) registration is mandatory from day 1, even for a single-person company. Non-registration is a violation that can trigger penalties and backdated assessments.  _(R-JP-F3)_
-- **R-JP-F4 -- Missing 2-week deadline for registry changes** — Any change to directors, address, or capital must be registered at the Legal Affairs Bureau within 2 weeks. Late registration incurs fines (科料) of up to ¥1,000,000.  _(R-JP-F4)_
-- **R-JP-F5 -- Paper filing of articles (KK)** — Electronic filing of KK articles saves ¥40,000 in revenue stamps. Always recommend electronic filing via a qualified scrivener.  _(R-JP-F5)_
-
-## Section 10 -- Timeline
-
-**Timeline**
-
-| Step | Duration | Cumulative |
-| --- | --- | --- |
-| Decide KK vs GK; prepare articles | 2--5 days | Day 2--5 |
-| Notarisation of articles (KK only) | 1--3 days | Day 3--8 |
-| Prepare corporate seal | 3--7 days | Day 6--15 |
-| Deposit capital | 1--2 days | Day 7--17 |
-| File at Legal Affairs Bureau | 1 day | Day 8--18 |
-| Registration complete (certificate available) | 1--2 weeks | Day 15--32 |
-| Post-registration tax filings | 1--5 days | Day 16--37 |
-| Open bank account | 2--8 weeks | Day 30--93 |
-| **Ready to trade** |  | **~3--6 weeks (bank account is the bottleneck)** |
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute legal, tax, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional before acting upon.
+Not yet confirmed: Legacy market timing estimates (formation 1-3 weeks, step durations, overall 3-6 weeks, bank 1-8 weeks), seal/copy/scrivener/accountant fee ranges and total fee packages; universal JPY 1,000,000-5,000,000 banking recommendation; nationwide local-notice deadlines; universal JPY 70,000 inhabitant-tax floor and fixed social-insurance percentage; blanket apostille, physical-presence, residence-account and mandatory-seal statements; branch JPY 60,000 formation fee. These are excluded from usable advice pending the relevant official procedure, bank or locality confirmation. Legal capital and immigration capital are separate; do not reuse the old simplified visa-only-capital statement.

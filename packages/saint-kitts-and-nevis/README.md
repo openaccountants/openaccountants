@@ -8,9 +8,17 @@
 1. `foundation.md`
 2. `intake.md`
 3. `README.md`
-4. `kn-housing-social-development-levy.md`
-5. `kn-social-security-contributions.md`
-6. `workflow-base.md`
+4. `kn-company-formation.md`
+5. `kn-corporate-income-tax.md`
+6. `kn-housing-social-development-levy.md`
+7. `kn-nonresident-withholding.md`
+8. `kn-property-tax-stamp-duty.md`
+9. `kn-social-security-contributions.md`
+10. `kn-special-regimes.md`
+11. `kn-unincorporated-business-tax.md`
+12. `kn-vat-and-import-charges.md`
+13. `company-formation-workflow-base.md`
+14. `workflow-base.md`
 
 ## How to use
 

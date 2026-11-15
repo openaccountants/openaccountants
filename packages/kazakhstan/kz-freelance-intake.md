@@ -1,103 +1,84 @@
 ---
 name: kz-freelance-intake
-description: ALWAYS USE THIS SKILL when a user asks for help with their Kazakhstan taxes AND mentions freelancing, self-employment, ИП, or sole proprietorship in Kazakhstan. Trigger on "help with my Kazakhstan taxes", "I'm an ИП", "I'm self-employed in Kazakhstan", etc. REQUIRED entry point for the Kazakhstan self-employed workflow; downstream skills (kz-simplified-regime, kz-income-tax, kz-social-contributions, kazakhstan-vat, kz-return-assembly) depend on it. Kazakhstan-resident sole proprietors only.
-version: 0.1
+description: "Kazakhstan 2026 freelance intake: reconcile source documents, residence, regime, income classification and evidence before computation."
+version: 0.2
 jurisdiction: KZ
 tax_year: 2026
-last_updated: 2026-06-12
+last_updated: 2026-11-14
 category: orchestrator
 tier: 2
-domain: income-tax
+domain: tax
+
+type: router
 ---
 
-# Kazakhstan Self-Employed Intake Skill v0.1 (kz-freelance-intake)
+# Kazakhstan self-employed intake v0.2
 
-> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
+> **General reference only.** This skill produces draft working papers for review by a qualified Kazakhstan professional before filing, payment or taking a tax position. It is not approval of any particular taxpayer’s facts.
 
-## What this file is
+## Scope
 
-The intake orchestrator for a Kazakhstan-resident self-employed person — an individual entrepreneur (ИП / жеке кәсіпкер). Every downstream Kazakhstan content skill — `kz-simplified-regime`, `kz-income-tax`, `kz-social-contributions`, `kazakhstan-vat` — and the assembly orchestrator `kz-return-assembly` depend on this skill running first to produce a structured intake package.
+Entry point for Kazakhstan-resident self-employed individuals/ИП, not a corporate return preparer. It establishes facts and routes to the correct current job. Respond in the user’s language and retain ИП/жеке кәсіпкер, ТОО, упрощённая декларация/оңайлатылған декларация and общеустановленный режим/жалпыға бірдей режим. Patent/патент and retail tax/розничный налог are historical documents to reconcile, not 2026 routes.
 
-This skill **computes nothing**. Its only job is to establish the facts, parse the uploaded documents, confirm them once, and route to the correct regime. Kazakhstan's self-employed landscape has several tax paths (special vs general) and the routing decision drives everything downstream, so getting the routing right is the whole point of this file.
+## Ask the client first
 
-Reply to the user in their own language. If they write in Russian or Kazakh, answer in that language; if in English, answer in English. Embed the native terms (ИП / жеке кәсіпкер, ТОО, упрощённая декларация / оңайлатылған декларация, общеустановленный режим / жалпыға бірдей режим, розничный налог / бөлшек салық, патент / патент, НДС / ҚҚС, ИПН / ЖТС, социальные платежи / әлеуметтік төлемдер) so the user recognises exactly which regime and form is meant.
+- Individual/ИП or ТОО, residence and period?
+- Current registration/notification and actual activity code, employees and ownership?
+- Bank receipts, primary documents, prior returns and app/platform history?
+- VAT status, imports/foreign suppliers, income pattern and any regime breach?
 
----
+Parse uploaded records before gap questions. Confirm the complete inferred picture once. Do not re-ask visible facts or narrate internal phases. Unknown residence, regime, turnover or VAT status stays unresolved; do not assume the former “resident, simplified, below threshold, not VAT registered” package.
 
-## Design principles (upload-first)
+## The method, step by step
 
-Upload-first, inference-then-confirm:
-1. **Compact refusal/routing sweep** — a few interactive questions, ~30 seconds, to establish form of business, regime, residency, turnover vs the special-regime ceilings, and VAT (НДС/ҚҚС) exposure.
-2. **Upload-first** — the user dumps everything they have (Kaspi/Halyk bank statements, ИП registration, prior declarations).
-3. **Inference pass** — parse every document, extract as much as possible before asking anything.
-4. **Gap-filling only** — ask only about what is genuinely missing or ambiguous after the inference pass.
-5. **Single confirmation pass** — show the full picture once, then hand off downstream.
+1. For ТОО, non-residence or a complex foreign/ownership case, stop this individual workflow and refer. For an individual, establish whether they are registered ИП or eligible for the distinct non-ИП self-employed regime.
+2. Read the registration extract, accepted notifications and tax-cabinet status. Load `kz-simplified-regime` for the permitted 2026 regimes, eligibility ceilings, local rate and transition rules. A historical Form 911.00/patent receipt, retail-tax record or old Form 910.00 does not establish a valid current election; art. 840 controls transition. Current general-regime ИП income routes to `kz-income-tax`; no old patent/retail branch remains.
+3. Collect all Kaspi/Halyk and other bank/account records in KZT/RUB/USD/EUR, primary sales/cost documents, prior Forms 910.00, 911.00, 220.00 and 300.00 where relevant, and social-payment histories. Accept partial uploads; record gaps. Separate business receipts from own-account transfers, loans and personal funds; do not equate all bank credits with taxable income. Reconcile income recognition under the selected regime.
+4. For an ИП lawfully exempt from accounting, foreign-currency operations are translated at the official rate on the operation date under art. 220; do not use a presumed annual average or receipt-date rule for every accounting taxpayer. Preserve original currency, dates and rate evidence.
+5. Check annual/monthly income and each transaction against the exact applicable special-regime condition in `kz-simplified-regime`. Resolve VAT registration under `kazakhstan-vat` separately. In 2026 special-regime status excludes ordinary VAT registration (art. 99), though import/non-resident VAT exceptions remain. An apparent simplified-plus-VAT combination requires reconciliation rather than automatic continuation of both.
+6. If a condition fails, record the actual breach date/transaction and use art. 716 transition rules from `kz-simplified-regime`; do not split the year mechanically into “before/after” without the legal effective date.
+7. Pass a structured package to the income-regime skill, `kz-social-contributions`, `kazakhstan-vat` where applicable, then `kz-return-assembly`. Include entity/status, period, activity/ownership/staff, regime evidence, reconciled income, VAT analysis, social-payment status, missing records and every assumption.
 
-Do not narrate phases ("now I am inferring…"). Do not re-ask anything already visible in the uploaded documents. Apply conservative defaults when an answer is missing and flag the assumption for the reviewer rather than blocking.
+## Worked cases
 
----
+Case 1: hypothetical bank credits KZT 12,000,000 include KZT 2,000,000 own-account transfers and KZT 1,000,000 documented loan proceeds. Potential business receipts are KZT 9,000,000 before regime-specific recognition. The routing input is reconciled receipts, not all credits.
 
-## Step 1 — Refusal / routing sweep (route to the right regime)
+```oa-check
+name: Intake receipt reconciliation
+inputs:
+  credits: 12000000
+  transfers: 2000000
+  loans: 1000000
+steps:
+  - receipts: credits - transfers - loans
+expected:
+  receipts: 9000000
+```
 
-Establish, fast and in this order:
+Case 2: hypothetical foreign service receipt is USD 1,000, official operation-date rate KZT 500/USD and a separate KZT 20,000 documented loan principal repayment credit. For the exempt-accounting ИП scope of art. 220, translated service receipt is KZT 500,000 and total bank credit KZT 520,000; route KZT 500,000 subject to recognition checks. The exchange rate is an example input, not a published rate.
 
-1. **ИП (жеке кәсіпкер) or ТОО?**
-   - **ИП (individual entrepreneur)** → continue in this workflow.
-   - **ТОО (a legal entity / juridical person)** → **out of scope. Escalate** to a qualified Kazakhstan accountant. This workflow covers individuals only, not corporate income tax (КПН / КТС).
+```oa-check
+name: Intake foreign-currency evidence
+inputs:
+  usd: 1000
+  official_rate: 500
+  loan_credit: 20000
+steps:
+  - service_receipt: usd * official_rate
+  - bank_credit: service_receipt + loan_credit
+expected:
+  service_receipt: 500000
+  bank_credit: 520000
+```
 
-2. **Which tax regime are you on?** This is the central routing question:
-   - **Упрощённая декларация (оңайлатылған декларация)** — the most common special regime for small ИП. A flat 3% on turnover (split between ИПН and социальный налог), filed half-yearly on form 910.00. → routes to `kz-simplified-regime`.
-   - **Розничный налог (бөлшек салық)** — a special reduced-rate regime for qualifying retail/service activity serving end consumers. → routes to `kz-simplified-regime` (retail-tax branch).
-   - **Патент (патент)** — the simplest path for a solo ИП with no employees and limited turnover; tax prepaid on form 911.00. → routes to `kz-simplified-regime` (patent branch).
-   - **Общеустановленный режим (жалпыға бірдей режим)** — ИПН on net income (income minus deductible expenses) filed on form 220.00, plus НДС if registered. Default for an ИП who never elected a special regime, or who exceeded a special-regime ceiling. → routes to `kz-income-tax`.
-   - If the user does not know their regime, infer it from the documents (a 910.00 ⇒ упрощёнка; a 911.00 / patent receipt ⇒ патент; a 220.00 ⇒ общеустановленный; the registration extract often states the elected regime).
+## When to refuse or refer
 
-3. **Kazakhstan tax resident for the year (183+ days in KZ, or centre of vital interests)?**
-   - Non-residents have materially different ИПН treatment and cannot use the special regimes the same way → flag prominently and **escalate** if non-resident; do not silently assume residency.
+Do not compute tax, invent rates/ceilings, infer an election solely from old forms, file, or resolve corporate/non-resident, farm, complex ownership or ambiguous transition facts automatically. A conservative workpaper flag can preserve missing information; it cannot turn an unknown eligibility condition into a fact.
 
-4. **Does annual turnover exceed the special-regime ceilings or the VAT registration threshold?**
-   - The special regimes (упрощёнка, розничный налог, патент) each have their own turnover ceiling expressed in МРП (монтхly calculation index) over the tax period; if the ИП breaches the applicable ceiling, they fall out of the special regime and onto общеустановленный режим. The reviewer confirms the exact 2026 МРП-denominated ceiling for the elected regime — do not hardcode it here.
-   - **VAT (НДС / ҚҚС) registration threshold — note the 2026 change:** the new Tax Code effective 1 January 2026 **lowered the mandatory VAT registration threshold**. Once cumulative annual turnover crosses the 2026 threshold, the ИП must register for НДС and an obligation arises. Have the reviewer apply the precise 2026 МРП figure; flag any ИП approaching or over it. → engage `kazakhstan-vat`.
+## Sources
 
-5. **VAT (НДС / ҚҚС) status — already registered?**
-   - If the ИП is **already VAT-registered** (voluntarily or by threshold breach), engage `kazakhstan-vat` regardless of regime.
-   - Note: an ИП on the simplified declaration that crosses the VAT threshold must register even while staying on упрощёнка for income-tax purposes — VAT and income-tax regime are separate determinations.
+| Source and operative sections actually read | URL | Read on |
+|---|---|---|
+| Read for Tax Code arts. 99–101, 220, 715–727 and 840 | https://www.gov.kz/org/kgd-akmola/documents/details/1084149?lang=ru | 2026-11-14 |
 
-Conservative defaults if unanswered: ИП on упрощённая декларация (3%, form 910.00); Kazakhstan resident; turnover under the special-regime ceiling and under the VAT threshold; not VAT-registered. Always flag each default for the reviewer.
-
----
-
-## Step 2 — Collect
-
-Ask the user to upload (whatever they have — partial is fine):
-- **Bank statements** for all accounts — typically **Kaspi** and **Halyk** (Kaspi Business / Halyk Bank), RUB/USD/EUR plus KZT — for the full year, to reconcile against declared turnover and catch unreported receipts.
-- **ИП registration extract** (свидетельство / уведомление о регистрации ИП, talon) — confirms the elected regime, ОКЭД activity codes, and employee status.
-- **Prior-year declarations** — form 910.00 (упрощёнка), 911.00 (патент), 220.00 (общеустановленный), and any 300.00 НДС returns — plus **социальные платежи** payment history (ОПВ pension, СО social contributions, ВОСМС medical, социальный налог).
-- Any **patent / розничный налог** documents if the user mentions them — these change the routing branch; flag for the reviewer.
-
-## Step 3 — Infer & confirm
-
-- Determine **regime** from the documents if not stated (910.00 ⇒ упрощёнка; 911.00 ⇒ патент; 220.00 ⇒ общеустановленный; registration extract often states it).
-- Total **turnover (оборот)** from the bank data and run it against the applicable special-regime ceiling **and** the 2026 VAT registration threshold; flag if the user is approaching or has breached either.
-- Separate genuine business turnover from internal transfers, loan movements, and personal funds in the Kaspi/Halyk data.
-- Convert any **FX receipts to KZT** at the National Bank (НБ РК / ҚРҰБ) rate on the date of receipt.
-- Check **VAT (НДС/ҚҚС) status** — already registered, or turnover over the 2026 threshold requiring registration.
-- Note **социальные платежи** status for the ИП (ОПВ, СО, ВОСМС, and социальный налог where applicable) — for the reviewer to compute, not this skill.
-- Present one consolidated summary: form of business, regime, residency, turnover vs ceiling + VAT threshold, VAT status, contributions status. Get a single confirmation.
-
-## Step 4 — Hand off (the routing map)
-
-Produce a structured intake package and route based on the confirmed regime:
-
-- **ИП on упрощённая декларация / розничный налог / патент:** `kz-simplified-regime` (correct branch) **+** `kz-social-contributions` (ОПВ + СО + ВОСМС + социальный налог) **+** `kazakhstan-vat` if VAT-registered or over the 2026 threshold → `kz-return-assembly`.
-- **ИП on общеустановленный режим:** `kz-income-tax` (ИПН on net income, form 220.00) **+** `kz-social-contributions` **+** `kazakhstan-vat` if registered or over threshold → `kz-return-assembly`.
-- **Ceiling breach mid-period:** route turnover up to the breach to the special-regime skill, and post-breach turnover to `kz-income-tax`; engage `kazakhstan-vat` from the registration date; flag prominently.
-- **ТОО, non-resident, or other complexity:** stop and escalate to a qualified Kazakhstan accountant.
-
-Always pass forward: form of business, regime, residency status, annual turnover figure, VAT determination (incl. the 2026 threshold check), социальные платежи status, and every assumption made under a conservative default.
-
----
-
-## Disclaimer
-
-This skill orchestrates intake only and computes no tax. It establishes facts and routes to downstream skills. All figures, regime determinations, and downstream outputs must be reviewed and signed off by a qualified Kazakhstan accountant (бухгалтер / салық кеңесшісі) before anything is filed with the State Revenue Committee (КГД / МКД). The most up-to-date version is maintained at [openaccountants.com](https://www.openaccountants.com).
+Not yet confirmed: Unprovided taxpayer residence, actual election, activity, current form status, local rate or transaction evidence. Old patent/retail routes, 3% defaults, automatic low-turnover assumption and SNR-plus-VAT permission are superseded.

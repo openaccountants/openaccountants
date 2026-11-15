@@ -10,7 +10,7 @@ metadata:
   last_updated: "2026-11-14"
 ---
 
-# Ghana VAT v2.2
+# Ghana VAT v2.3
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -58,7 +58,7 @@ Tax year: 2026. Law: Value Added Tax Act, 2025 (Act 1151), from 1 January 2026, 
 
 **Bad debts (s.47).** Deductible when written off, with reasonable recovery efforts, recovery proved futile, and all entries made in the books. Recovery later brings the tax back.
 
-**Imported services (s.61, Guidelines 10).** Tax applies only so far as the service is not used to make taxable supplies. A business making only taxable supplies has nothing to self-assess. For a mixed business, the taxable value is exempt supplies / total supplies x service value. Those liable register on the portal, file DT 0134 and pay within 21 days after the period.
+**Imported services (s.61, Guidelines 10).** An import of services is a supply to a resident by a non-resident, by the resident's own business abroad, or by a free zone developer or free zone enterprise, so far as used or consumed in Ghana (s.72 definition). Services bought from a free zone business therefore follow this rule too. Tax applies only so far as the service is not used to make taxable supplies. A business making only taxable supplies has nothing to self-assess. For a mixed business, the taxable value is exempt supplies / total supplies x service value. Those liable register on the portal, file DT 0134 and pay within 21 days after the period.
 
 **Digital services (Guidelines 11).** If the non-resident is unregistered, the VAT Automatic Collection System treats the invoice as tax-inclusive and withholds at settlement. Where the service is used for taxable supplies the importer may claim that tax with records. If the supplier is registered, it invoices and the importer may claim. Non-residents under s.15 get no input deduction for digital services.
 
@@ -160,6 +160,7 @@ Do not apply the flat rate scheme. It is abolished.
 | Source | URL | Read on |
 |---|---|---|
 | Value Added Tax Act, 2025 (Act 1151), OCR of scan; ss 3, 6, 15, 16, 36, 47, 49 to 53, 56, 57, 59 to 61, 66, Schedules 1, 2, 5 read | https://gra.gov.gh/wp-content/uploads/2026/01/VALUE-ADDED-TAX-ACT-2025-ACT-1151.pdf | 2026-11-01 |
+| Act 1151, OCR: s.72 definition of "import of services" (p 64) read | https://gra.gov.gh/wp-content/uploads/2026/01/VALUE-ADDED-TAX-ACT-2025-ACT-1151.pdf | 2026-11-14 |
 | GRA VAT Administrative Guidelines GRA/AG/25/002, OCR, whole document | https://gra.gov.gh/wp-content/uploads/2026/01/VAT-Guidelines-for-VAT-ACT-1151.pdf | 2026-11-01 |
 | GRA, VAT page (2026 reforms), page read in full | https://gra.gov.gh/domestic-tax/tax-types/vat/ | 2026-11-01 |
 | GRA, VAT Withholding page (penalty table; page still cites Act 870), page read in full | https://gra.gov.gh/domestic-tax/tax-types/vat-withholding/ | 2026-11-01 |

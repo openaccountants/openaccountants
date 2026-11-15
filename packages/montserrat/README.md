@@ -8,10 +8,17 @@
 1. `foundation.md`
 2. `intake.md`
 3. `README.md`
-4. `ms-corporate-income-tax.md`
-5. `ms-nonresident-withholding.md`
-6. `ms-social-security-contributions.md`
-7. `workflow-base.md`
+4. `ms-company-formation.md`
+5. `ms-corporate-income-tax.md`
+6. `ms-customs-consumption-tax-hotels-tax.md`
+7. `ms-income-tax-individuals.md`
+8. `ms-investment-incentives.md`
+9. `ms-nonresident-withholding.md`
+10. `ms-paye-employer-withholding.md`
+11. `ms-property-tax-landholding-stamp-duty.md`
+12. `ms-social-security-contributions.md`
+13. `company-formation-workflow-base.md`
+14. `workflow-base.md`
 
 ## How to use
 

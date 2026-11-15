@@ -10,7 +10,7 @@ metadata:
   last_updated: "2026-11-14"
 ---
 
-# Armenia individual income tax preparation v0.5
+# Armenia individual income tax preparation v0.6
 
 ## Who this applies to
 
@@ -25,7 +25,7 @@ Classify source under Article 144, including Armenian payer/PE employment and ci
 | Personal-income category | Domestic rule | 2026 primary source |
 |---|---|---|
 | Ordinary taxable salary/other general income | 20% | [150(1)][code], https://www.arlis.am/hy/acts/215611/latest |
-| Qualifying listed R&D/high-technology occupations in approved work | Conditional 10% salary rate; status/list/commission requirements, not every IT job | [150(1.1)][code], https://www.arlis.am/hy/acts/215611/latest |
+| Qualifying listed R&D/high-technology occupations in approved work | Conditional 10% salary rate from 1 January 2025 to 31 December 2031 (HO-499-N art. 8(1)); status/list/commission requirements, not every IT job | [150(1.1)][code], https://www.arlis.am/hy/acts/215611/latest |
 | Ordinary interest | General rate, currently 20%, after securities exemptions | [150(5), 149][code], https://www.arlis.am/hy/acts/215611/latest |
 | Bank-deposit / specified public-offer or regulated-market debt interest | 10%, after applicable securities exemptions | [150(5.1), 149][code], https://www.arlis.am/hy/acts/215611/latest |
 | Royalties | 10% | [150(6)][code], https://www.arlis.am/hy/acts/215611/latest |
