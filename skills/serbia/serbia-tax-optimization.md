@@ -1,82 +1,152 @@
 ---
 name: serbia-tax-optimization
 description: Use this skill whenever asked about reducing tax in Serbia, tax planning, or legal strategies to minimise tax for an entrepreneur or small company in Serbia, for tax year 2026. Trigger on phrases like "reduce tax Serbia", "paušalno", "flat-rate entrepreneur", "lump-sum tax Serbia", "preduzetnik", "self-employed vs DOO", "Serbia freelancer tax", "save tax Serbia", "tax planning Serbia". This skill covers the choice between the flat-rate (paušalno) entrepreneur regime, the entrepreneur taxed on actual profit (books), the DOO company route and freelance work for foreign clients; the RSD 6,000,000 flat-rate turnover limit; the yearly cap on increases of the flat-rate base; and the disguised-employment (independence test) red line. Out of scope, see serbia-income-tax (computations), serbia-social-contributions, rs-corporate-tax, serbia-vat and rs-cross-border. ALWAYS read this skill before advising on any Serbian tax optimisation.
-version: 0.2
+version: 0.3
 jurisdiction: RS
 tax_year: 2026
-last_updated: 2026-10-30
+last_updated: 2026-11-16
 category: tax-optimization
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: tax-optimization
+type: decision
 ---
 
-# Serbia Tax Optimization
+# Serbia Tax Optimization v0.3
 
-## Serbia Tax Optimization Skill v0.2
+## Scope
+
+This Guide compares the existing entrepreneur, company and freelance routes for 2026. Eligibility, contributions, annual tax, withholding and the actual assessment decision can change the result. The new examples compare the self-employment income-tax component on separately established bases; they do not compute total tax and social-insurance costs.
 
 **Tier 2, checked against the law. Figures for 2026 come from the Ministry of Finance copies of the Službeni glasnik consolidated texts of the Personal Income Tax Act (ZPDG), the Corporate Income Tax Act (ZPDPL) and the Mandatory Social Insurance Contributions Act (ZDOSO), the Minister's 2026 base notices, and the Tax Administration copy of the Government flat-rate decree consolidated to Sl. glasnik 115/2025, all read on 30 October 2026. Figures must agree with `serbia-income-tax`, `serbia-social-contributions` and `rs-corporate-tax`; those skills win if they differ. NOT yet signed off by a Serbian tax adviser. Aggressive positions are never advised; every suggestion must be reviewed.**
 
-## Section 1 -- Quick Reference
+## Ask the client first
+
+- What activity, municipality, registration date, ownership and insurance status apply?
+- What were prior-year turnover and planned new-business turnover, and is the business VAT-registered?
+- What deemed-income decision and actual taxable-profit workpaper are available?
+- Is a personal salary elected, and what contributions, payment dates and annual-income-tax consequences apply?
+- What client concentration, control and working-day facts determine the independence test?
+- Will company profit be retained or distributed, and who is the shareholder or foreign payer?
+
+## The method, step by step
+
+### Rates, bands and thresholds
 
 **Quick Reference**
 
-| Field | Value |
-| --- | --- |
-| Country | Republic of Serbia |
-| Currency | RSD (dinar) |
-| Headline lever | **Paušalno** (flat-rate) entrepreneur: tax and contributions on a deemed income set by the Tax Administration, not on real profit; only a turnover book |
-| Self-employment income tax (actual profit or flat-rate) | 10% (ZPDG Art. 38) |
-| Corporate tax (DOO) | 15% (ZPDPL Art. 39) |
-| Dividends and other capital income of individuals | 15% (ZPDG Art. 64) |
-| Contributions | PIO 24%, health 10.3%, unemployment 0.75% (ZDOSO Art. 44(1)); 35.05% in total for an entrepreneur paying for themselves |
-| Contribution bases 2026 | Minimum RSD 51,297 a month; maximum RSD 732,820 a month (Minister of Finance notices for 2026) |
-| Anti-avoidance | Independence test for single-client entrepreneurs (ZPDG Art. 85(1)(17)); flat-rate eligibility conditions (Art. 40) |
+| Field | Value | Official source |
+| --- | --- | --- |
+| Country | Republic of Serbia | https://www.mfin.gov.rs/upload/media/MOq4eO_6aa14ac8c7a47.docx |
+| Currency | RSD (dinar) | https://www.mfin.gov.rs/upload/media/MOq4eO_6aa14ac8c7a47.docx |
+| Headline lever | **Paušalno** (flat-rate) entrepreneur: tax and contributions on a deemed income set by the Tax Administration, not on real profit; only a turnover book | https://www.mfin.gov.rs/upload/media/MOq4eO_6aa14ac8c7a47.docx |
+| Self-employment income tax (actual profit or flat-rate) | 10% (ZPDG Art. 38) | https://www.mfin.gov.rs/upload/media/MOq4eO_6aa14ac8c7a47.docx |
+| Corporate tax (DOO) | 15% (ZPDPL Art. 39) | https://www.mfin.gov.rs/upload/media/SByOge_6aa127acd2250.docx ; https://www.mfin.gov.rs/upload/media/MOq4eO_6aa14ac8c7a47.docx |
+| Dividends and other capital income of individuals | 15% (ZPDG Art. 64) | https://www.mfin.gov.rs/upload/media/MOq4eO_6aa14ac8c7a47.docx |
+| Contributions | PIO 24%, health 10.3%, unemployment 0.75% (ZDOSO Art. 44(1)); 35.05% in total (computed sum) for an entrepreneur paying for themselves | https://www.mfin.gov.rs/upload/media/c59gCf_6aa14bd2e2c04.docx |
+| Contribution bases 2026 | Minimum RSD 51,297 a month; maximum RSD 732,820 a month (Minister of Finance notices for 2026) | https://www.mfin.gov.rs/upload/media/nATlw2_69429ec84247a.docx ; https://www.mfin.gov.rs/upload/media/mYTnAm_6942704946245.docx |
+| Anti-avoidance | Independence test for single-client entrepreneurs (ZPDG Art. 85(1)(17)); flat-rate eligibility conditions (Art. 40) | https://www.mfin.gov.rs/upload/media/MOq4eO_6aa14ac8c7a47.docx |
 
 > **The Serbian headline is the PAUŠALNO (flat-rate) entrepreneur:** tax and contributions are paid each month on a deemed income that the Tax Administration sets by decision (rešenje), whatever the real profit. The entrepreneur keeps only a turnover book (ZPDG Art. 43(4)) and files no tax balance. When real profit is well above the deemed income, the effective rate is low. The amount depends on activity, municipality and personal factors (Art. 41), so read it from the client's decision; this skill does not estimate it.
 
-## Section 2 -- Paušalno (flat-rate) Entrepreneur
+### Section 2 -- Paušalno (flat-rate) Entrepreneur
 
 **Paušalno (flat-rate) Entrepreneur features**
 
-| Feature | Detail |
-| --- | --- |
-| Turnover limit | Not allowed if turnover in the previous year, or planned turnover for a new business, is **over RSD 6,000,000** (ZPDG Art. 40(2)(4)). Fees taxed under the independence test do not count towards it (Art. 40(5)) |
-| Who cannot use it | Advertising and market research; wholesale and retail trade, hotels and restaurants, financial intermediation and real estate; a business in which other people invest; a VAT-registered person (Art. 40(2)). Trade or catering from a kiosk, trailer or similar movable structure can be approved on request (Art. 40(3)); so can a person who makes and sells only their own products (Art. 40(4)) |
-| Tax/contributions | Income tax 10% (Art. 38) on the deemed income; contributions on the same deemed income (ZDOSO Art. 22(3)), at 24% + 10.3% + 0.75%, never on less than the minimum base of RSD 51,297 a month (ZDOSO Art. 36). The Tax Administration sets both in its decision and bills through ePorezi |
-| How the deemed income is set | Entrepreneurs are grouped by main activity. The starting base is tied to the average monthly salary in the Republic and the municipality, then adjusted for registered seat, time since registration, age and work capacity, and other circumstances (Art. 41(1) to (4)). The Government sets the detail by decree (Art. 41(5)) |
-| Bookkeeping | Only the turnover book (knjiga o ostvarenom prometu, KPO) (Art. 43(4)); no tax balance |
-| Applying | By **31 October** of the current year for the next year, through the Tax Administration portal. A business taken off the VAT register applies within 15 days of the Tax Administration act confirming that, and no later than 31 December. A new business applies only at registration (Art. 42(1) and (2)). For 2027 the deadline is 31 October 2026 |
-| Losing it | If the conditions stop being met, the Tax Administration orders books from mid-year or from the next year (Art. 42(4) and (5)). On VAT registration, books are due from that day (Art. 42(6)) |
-| Base-growth cap | Where the change in how the flat-rate tax is set raises the base by more than 10% on the previous year, the rise is limited to 10% a year until the base reaches the new amount, up to and including 2027. The limit does not apply when the rise comes from a change of activity code, municipality or place of registration. A move between municipalities of the same city (for example within Belgrade) is not a change of municipality (Government flat-rate decree, Art. 6(1) to (3)) |
+| Feature | Detail | Official source |
+| --- | --- | --- |
+| Turnover limit | Not allowed if turnover in the previous year, or planned turnover for a new business, is **over RSD 6,000,000** (ZPDG Art. 40(2)(4)). Fees taxed under the independence test do not count towards it (Art. 40(5)) | https://www.mfin.gov.rs/upload/media/MOq4eO_6aa14ac8c7a47.docx |
+| Who cannot use it | Advertising and market research; wholesale and retail trade, hotels and restaurants, financial intermediation and real estate; a business in which other people invest; a VAT-registered person (Art. 40(2)). Trade or catering from a kiosk, trailer or similar movable structure can be approved on request (Art. 40(3)); so can a person who makes and sells only their own products (Art. 40(4)) | https://www.mfin.gov.rs/upload/media/MOq4eO_6aa14ac8c7a47.docx |
+| Tax/contributions | Income tax 10% (Art. 38) on the deemed income; contributions on the same deemed income (ZDOSO Art. 22(3)), at 24% + 10.3% + 0.75%, never on less than the minimum base of RSD 51,297 a month (ZDOSO Art. 36). The Tax Administration sets both in its decision and bills through ePorezi | https://www.mfin.gov.rs/upload/media/MOq4eO_6aa14ac8c7a47.docx ; https://www.mfin.gov.rs/upload/media/c59gCf_6aa14bd2e2c04.docx ; https://www.mfin.gov.rs/upload/media/nATlw2_69429ec84247a.docx |
+| How the deemed income is set | Entrepreneurs are grouped by main activity. The starting base is tied to the average monthly salary in the Republic and the municipality, then adjusted for registered seat, time since registration, age and work capacity, and other circumstances (Art. 41(1) to (4)). The Government sets the detail by decree (Art. 41(5)) | https://www.mfin.gov.rs/upload/media/MOq4eO_6aa14ac8c7a47.docx |
+| Bookkeeping | Only the turnover book (knjiga o ostvarenom prometu, KPO) (Art. 43(4)); no tax balance | https://www.mfin.gov.rs/upload/media/MOq4eO_6aa14ac8c7a47.docx |
+| Applying | By **31 October** of the current year for the next year, through the Tax Administration portal. A business taken off the VAT register applies within 15 days of the Tax Administration act confirming that, and no later than 31 December. A new business applies only at registration (Art. 42(1) and (2)). For 2027 the deadline is 31 October 2026 | https://www.mfin.gov.rs/upload/media/MOq4eO_6aa14ac8c7a47.docx |
+| Losing it | If the conditions stop being met, the Tax Administration orders books from mid-year or from the next year (Art. 42(4) and (5)). On VAT registration, books are due from that day (Art. 42(6)) | https://www.mfin.gov.rs/upload/media/MOq4eO_6aa14ac8c7a47.docx |
+| Base-growth cap | Where the change in how the flat-rate tax is set raises the base by more than 10% on the previous year, the rise is limited to 10% a year until the base reaches the new amount, up to and including 2027. The limit does not apply when the rise comes from a change of activity code, municipality or place of registration. A move between municipalities of the same city (for example within Belgrade) is not a change of municipality (Government flat-rate decree, Art. 6(1) to (3)) | https://www.purs.gov.rs/preduzetnici/pregled-propisa/uredbe/6095/uredba-o-blizim-uslovima-kriterijumima-i-elementima-za-pausalno-oporezivanje-obveznika-poreza-na-prihode-od-samostalne-delatnosti.html |
 
 Because the tax is set on a deemed income, when real profit is high the **effective rate is very low**. When real profit is low or negative, the flat-rate amount is still due, and actual-profit taxation can be cheaper.
 
-## Section 3 -- Income-Expenses Regime & DOO
+### Section 3 -- Income-Expenses Regime & DOO
 
 **Route comparison**
 
-| Route | Treatment | Best when |
-| --- | --- | --- |
-| **Paušalno** | 10% tax and 35.05% contributions on a deemed income set by decision; turnover limit RSD 6,000,000; turnover book only | Profitable solo service work under the limit, in an allowed activity, not VAT-registered |
-| **Entrepreneur on actual profit (books)** | 10% on taxable profit from the tax balance (Art. 38). Double-entry books (Art. 43(2)). The entrepreneur may pay themselves a personal salary (lična zarada), which is then a cost and taxed as salary; if not, the contributions they pay for themselves are a cost (Art. 37a). Contribution base: the personal salary, or taxable profit if no salary is paid (ZDOSO Art. 22(1)), within the 2026 minimum and maximum monthly bases | Real expenses high, above the flat-rate limit, in an excluded activity, or VAT-registered |
-| **DOO** (company) | 15% corporate tax on taxable profit (ZPDPL Art. 39); tax losses carried forward for up to 5 years (Art. 32). Profit paid out to an individual shareholder as a dividend is taxed at 15% (ZPDG Art. 64), withheld by the company (Art. 99(1)(3)). Full books | Higher profit kept in the business, teams, liability and credibility |
-| **Freelancer (contract for work) paid from abroad or by private persons** | Self-assessed each quarter (ZPDG Art. 85(1)(18)). Option 1: 20% on quarterly gross less RSD 110,647 (Art. 85(5)(2)(1), Art. 12b(1), Art. 86(1)). Option 2: 10% on quarterly gross less RSD 66,733 and less 34% of gross (Art. 85(5)(2)(2), Art. 12b(2), Art. 86(2)(2)). Both amounts are the 2026 indexed amounts (Art. 12a; Sl. glasnik 6/2026). Contributions also apply: see `serbia-income-tax` and `serbia-social-contributions` | Occasional or low freelance income without registering a business |
+| Route | Treatment | Best when | Official source |
+| --- | --- | --- | --- |
+| **Paušalno** | 10% tax and 35.05% contributions (computed sum) on a deemed income set by decision; turnover limit RSD 6,000,000; turnover book only | Profitable solo service work under the limit, in an allowed activity, not VAT-registered | https://www.mfin.gov.rs/upload/media/MOq4eO_6aa14ac8c7a47.docx ; https://www.mfin.gov.rs/upload/media/c59gCf_6aa14bd2e2c04.docx ; https://www.mfin.gov.rs/upload/media/nATlw2_69429ec84247a.docx |
+| **Entrepreneur on actual profit (books)** | 10% on taxable profit from the tax balance (Art. 38). Double-entry books (Art. 43(2)). The entrepreneur may pay themselves a personal salary (lična zarada), which is then a cost and taxed as salary; if not, the contributions they pay for themselves are a cost (Art. 37a). Contribution base: the personal salary, or taxable profit if no salary is paid (ZDOSO Art. 22(1)), within the 2026 minimum and maximum monthly bases | Real expenses high, above the flat-rate limit, in an excluded activity, or VAT-registered | https://www.mfin.gov.rs/upload/media/MOq4eO_6aa14ac8c7a47.docx ; https://www.mfin.gov.rs/upload/media/c59gCf_6aa14bd2e2c04.docx ; https://www.mfin.gov.rs/upload/media/nATlw2_69429ec84247a.docx ; https://www.mfin.gov.rs/upload/media/mYTnAm_6942704946245.docx |
+| **DOO** (company) | 15% corporate tax on taxable profit (ZPDPL Art. 39); tax losses carried forward for up to 5 years (Art. 32). Profit paid out to an individual shareholder as a dividend is taxed at 15% (ZPDG Art. 64), withheld by the company (Art. 99(1)(3)). Full books | Higher profit kept in the business, teams, liability and credibility | https://www.mfin.gov.rs/upload/media/SByOge_6aa127acd2250.docx ; https://www.mfin.gov.rs/upload/media/MOq4eO_6aa14ac8c7a47.docx |
+| **Freelancer (contract for work) paid from abroad or by private persons** | Self-assessed each quarter (ZPDG Art. 85(1)(18)). Option 1: 20% on quarterly gross less RSD 110,647 (Art. 85(5)(2)(1), Art. 12b(1), Art. 86(1)). Option 2: 10% on quarterly gross less RSD 66,733 and less 34% of gross (Art. 85(5)(2)(2), Art. 12b(2), Art. 86(2)(2)). Both amounts are the 2026 indexed amounts (Art. 12a; Sl. glasnik 6/2026). Contributions also apply: see `serbia-income-tax` and `serbia-social-contributions` | Occasional or low freelance income without registering a business | https://www.mfin.gov.rs/upload/media/MOq4eO_6aa14ac8c7a47.docx |
 
 The comparison depends on real profit, the flat-rate decision amount, the salary the entrepreneur would pay themselves and the plan for profits. Run the numbers with the client's figures and the domain skills; do not quote a typical monthly amount.
 
-## Section 4 -- Red Lines (do not cross)
+### Section 4 -- Red Lines (do not cross)
 
-- **Disguised employment risk (independence test)** -- Fees an entrepreneur or flat-rate entrepreneur earns from the same client, or a person related to that client, are taxed as other income if at least five of nine criteria are met, for example: the client sets working hours; at least 70% of income in a 12-month period comes from that client; or the work runs for 130 or more working days in 12 months (ZPDG Art. 85(1)(17)). The base is then the full gross fee with no standard costs (Art. 85(5)(1)) and the rate is 20% (Art. 86(1)), withheld by a Serbian payer (Art. 99(1)(9)). The full list of nine criteria is in `serbia-income-tax`. AUDIT FLASH POINT.
+- **Disguised employment risk (independence test)** -- Fees an entrepreneur or flat-rate entrepreneur earns from the same client, or a person related to that client, are taxed as other income if at least five of nine criteria are met, for example: the client sets working hours; at least 70% of income in a 12-month period comes from that client; or the work runs for 130 or more working days in 12 months (ZPDG Art. 85(1)(17)). The base is then the full gross fee with no standard costs (Art. 85(5)(1)) and the rate is 20% (Art. 86(1)), withheld by a Serbian payer (Art. 99(1)(9)). The full list of nine criteria is in `serbia-income-tax`. **AUDIT FLASH POINT**.
 - **Base-growth cap conditions** -- Until the end of 2027, a rise in the flat-rate base caused by the new way of setting it is limited to 10% a year. Changing activity code, municipality or place of registration lets a rise above 10% apply; a move within the same city does not count as a change of municipality (Government flat-rate decree, Art. 6(1) to (3)). Plan moves deliberately.
 - **Under-declaration prohibition** -- Never under-declare turnover to stay under RSD 6,000,000. The limit is tested on the previous year's turnover, or on planned turnover for a new business (Art. 40(2)(4)).
 
-## PROHIBITIONS
+### PROHIBITIONS
 
 - **Prohibition 1** -- NEVER present paušalno for what is really single-client employment.
 - **Prohibition 2** -- NEVER advise gaming the activity-code or municipality rules purely to suppress the base.
 - **Prohibition 3** -- NEVER contradict the rates in `serbia-income-tax`, `serbia-social-contributions` or `rs-corporate-tax`.
 - **Prohibition 4** -- NEVER present optimisation as definitive advice; route to a licensed Serbian tax adviser.
+
+## Worked cases
+
+### Higher actual taxable profit: the lump-sum income-tax component is lower
+
+Assume an eligible entrepreneur remains within the RSD 6,000,000 turnover screen and passes every other article 40 condition and the independence test. The actual assessment decision gives a monthly deemed taxable income of RSD 60,000 for all 12 months. A separately completed books workpaper gives annual taxable self-employment profit of RSD 2,400,000, after the applicable deductions. At 10%, the lump-sum income-tax component is RSD 72,000, against RSD 240,000 on that actual-profit base, a difference of RSD 168,000. The deemed base is an assumption, not a typical Serbian assessment. Compare contributions, annual income tax and the other costs separately before choosing a route. [ZPDG arts. 37a, 38 and 40](https://www.mfin.gov.rs/upload/media/MOq4eO_6aa14ac8c7a47.docx).
+
+```oa-check
+name: Serbia income-tax component with higher actual taxable profit
+inputs:
+  assumed_monthly_deemed_taxable_income: 60000
+  months: 12
+  separately_computed_actual_taxable_profit: 2400000
+  self_employment_tax_rate: 0.10
+steps:
+  annual_deemed_income: assumed_monthly_deemed_taxable_income * months
+  flat_rate_income_tax: annual_deemed_income * self_employment_tax_rate
+  actual_profit_income_tax: separately_computed_actual_taxable_profit * self_employment_tax_rate
+  income_tax_difference: actual_profit_income_tax - flat_rate_income_tax
+expected:
+  annual_deemed_income: 720000
+  flat_rate_income_tax: 72000
+  actual_profit_income_tax: 240000
+  income_tax_difference: 168000
+```
+
+### Lower actual taxable profit: the books income-tax component is lower
+
+Keep the same assumed RSD 60,000 monthly assessment and 12-month period, but let the separately completed actual-profit tax workpaper give RSD 300,000 after applicable deductions. The income-tax components are RSD 72,000 for the deemed base and RSD 30,000 for the actual base. The books component is RSD 42,000 lower. Contributions still need their own statutory base and minimum checks; do not treat 10% of accounting profit as the entire business burden. The two cases show why the actual decision and workpaper matter rather than recommending a route from turnover alone. [ZPDG arts. 37a, 38 and 40](https://www.mfin.gov.rs/upload/media/MOq4eO_6aa14ac8c7a47.docx).
+
+```oa-check
+name: Serbia income-tax component with lower actual taxable profit
+inputs:
+  assumed_monthly_deemed_taxable_income: 60000
+  months: 12
+  separately_computed_actual_taxable_profit: 300000
+  self_employment_tax_rate: 0.10
+steps:
+  annual_deemed_income: assumed_monthly_deemed_taxable_income * months
+  flat_rate_income_tax: annual_deemed_income * self_employment_tax_rate
+  actual_profit_income_tax: separately_computed_actual_taxable_profit * self_employment_tax_rate
+  income_tax_difference: flat_rate_income_tax - actual_profit_income_tax
+expected:
+  annual_deemed_income: 720000
+  flat_rate_income_tax: 72000
+  actual_profit_income_tax: 30000
+  income_tax_difference: 42000
+```
+
+## When to refuse or refer
+
+Apply every red line and prohibition above. Do not choose a route without the taxpayer's decision, taxable-base workpapers, insurance status, contribution analysis, independence-test facts and annual-tax treatment. No EUR equivalent, typical monthly assessment, 60%-of-salary contribution rule or unconfirmed annual-income-tax treatment may be supplied from this Guide. Refer the unresolved matters in Sources to a Serbian adviser and the linked topic Guides.
+
+## Disclaimer
+
+This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a licensed tax adviser in Serbia) before acting upon.
 
 ## Sources
 
@@ -89,8 +159,9 @@ The comparison depends on real profit, the flat-rate decision amount, the salary
 | Minister of Finance, highest monthly contribution base for 2026, RSD 732,820 | https://www.mfin.gov.rs//upload/media/mYTnAm_6942704946245.docx | 2026-10-30 |
 | Uredba o bližim uslovima, kriterijumima i elementima za paušalno oporezivanje obveznika poreza na prihode od samostalne delatnosti (Sl. glasnik 94/2019 to 115/2025), Tax Administration consolidated text in force from 27 December 2025: Art. 6 | https://www.purs.gov.rs/preduzetnici/pregled-propisa/uredbe/6095/uredba-o-blizim-uslovima-kriterijumima-i-elementima-za-pausalno-oporezivanje-obveznika-poreza-na-prihode-od-samostalne-delatnosti.html | 2026-10-30 |
 
+| ZPDG, selected article 37a deduction conditions, article 38 self-employment rate and article 40 eligibility/exceptions, read from the recovered official Ministry DOCX for the new conditional examples | https://www.mfin.gov.rs/upload/media/MOq4eO_6aa14ac8c7a47.docx | 2026-11-16 |
+| ZPDPL article 39 and ZDOSO article 44, plus the two 2026 monthly-base notices: selected passages read from recovered official files to confirm the linked table factors; no fresh whole-Act audit | https://www.mfin.gov.rs/upload/media/SByOge_6aa127acd2250.docx ; https://www.mfin.gov.rs/upload/media/c59gCf_6aa14bd2e2c04.docx ; https://www.mfin.gov.rs/upload/media/nATlw2_69429ec84247a.docx ; https://www.mfin.gov.rs/upload/media/mYTnAm_6942704946245.docx | 2026-11-16 |
+
+The unchanged original primary-source work and [complete independent planning review](https://github.com/openaccountants/openaccountants/pull/940#issuecomment-6528065647) are reused for unchanged rules. Original October read dates remain intact; only the identified selected cached passages were read again. The new illustrations do not estimate a deemed-income decision, contribution base or annual income tax.
+
 Not yet confirmed: typical monthly flat-rate amounts (the old version said about EUR 250 to 400 a month; no official source, and the amount depends on each decision); the EUR equivalent of RSD 6,000,000 (the old version said about EUR 50,000); the old statement that entrepreneurs on books pay contributions "on 60% of a self-set salary" (not found in ZDOSO Art. 22, which uses the personal salary or the taxable profit); how flat-rate income and freelance income from abroad enter the annual personal income tax.
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a licensed tax adviser in Serbia) before acting upon.
