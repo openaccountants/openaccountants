@@ -1,0 +1,173 @@
+{
+  "archive": "evidence.tar.gz",
+  "archive_sha256": "b97ec1257e05c8a288e704069bb961796a08d78db77c1302629f9ccbfd0f6bf0",
+  "source_commit": "e0ad980394c1b37da4964779a641992ff7dec0a1",
+  "base_commit": "bbab4f1a6d82cace432e6ca8eda89c98ffb1c038",
+  "members": [
+    {
+      "path": "REPORT.md",
+      "size": 4145,
+      "sha256": "69f97ac0ebd5a04bbe359f340ee06c4f4c0aed15178e6b3e458369d3fa0ff4a6"
+    },
+    {
+      "path": "deltas/BR-01-deadline-holiday.md",
+      "size": 699,
+      "sha256": "59a44ad7d9849488fd21cf95bd72d9d1d871f128baf3c1ab19e32f4d8e206df6"
+    },
+    {
+      "path": "deltas/BR-02-image-excerpts.md",
+      "size": 381,
+      "sha256": "f1af1b7c4b544ad33fc4e467cbd10c383b194f89d4de7565326c805193aba7a7"
+    },
+    {
+      "path": "deltas/numeric-source-citation-supplement.diff",
+      "size": 6554,
+      "sha256": "457442aeea58c7e5d16a25b7f15d4fb0ab9339f9b97181c6d06906a43c889ed1"
+    },
+    {
+      "path": "deltas/numeric-source-citation-supplement.json",
+      "size": 3643,
+      "sha256": "ab0a00cf143f354d5d102225034ca8cc89aa0d195a81d0c63c4f3265657978c5"
+    },
+    {
+      "path": "deltas/numeric-source-citation-supplement.md",
+      "size": 2221,
+      "sha256": "a2a8d7c4b04c9d5051f71b664bf2b075ff780787df007bfc44909aab244f70db"
+    },
+    {
+      "path": "ledgers/bahrain-vat-rules.json",
+      "size": 94525,
+      "sha256": "a32210f13e8b9ed1fe6be34ad1202a347f866c81a8e6b0dc97391a0589cf4719"
+    },
+    {
+      "path": "ledgers/bahrain-vat.md",
+      "size": 84450,
+      "sha256": "64d3abbc8b9285a5e23f9626c3e8d0d89a26ad7e5e82cc93781205d179962ddc"
+    },
+    {
+      "path": "maps/bahrain-vat-old-topics.md",
+      "size": 14667,
+      "sha256": "def3407d3e6a1c541b0f4944731783116833f46c01fb7bba72c665406a11acbd"
+    },
+    {
+      "path": "maps/bahrain-vat-preservation.json",
+      "size": 1259,
+      "sha256": "ef568ae944f2f06d1d62e88a4c21d337665e2dcdabd37dabe24b5ea775e7355e"
+    },
+    {
+      "path": "originals/bahrain-vat.md",
+      "size": 16785,
+      "sha256": "6841e3f37c129e45038f02735e4901bc28f2755a7cf5ec722b60409bd96d8d48"
+    },
+    {
+      "path": "reviews/independent-checks.json",
+      "size": 78073,
+      "sha256": "ed26699c09233dc4b4e71682b499f6de687a9397b992ce0d720bf84dc7809de7"
+    },
+    {
+      "path": "reviews/independent-citation-supplement-checks.json",
+      "size": 394,
+      "sha256": "6a209f520b4c83a9d4d84f6657a91d4503d1b7490c615b9ed19b6e41989774bb"
+    },
+    {
+      "path": "reviews/independent-citation-supplement.md",
+      "size": 1820,
+      "sha256": "c0edea64bf1696a26507ca8fdef52b284296697bfe04dfdd2c5443761635fbe9"
+    },
+    {
+      "path": "reviews/independent-review.md",
+      "size": 6613,
+      "sha256": "ff21b18a5f79877328253d85984eb94a239a0959acb34d609c07ea1e389379e7"
+    },
+    {
+      "path": "reviews/preservation-and-arithmetic.json",
+      "size": 1691,
+      "sha256": "5be9889f7cc42b438ff3f3f2e82b4ade7b9b2ac70b6b7dd2fee6a07e47a610f2"
+    },
+    {
+      "path": "reviews/recomputed-examples.log",
+      "size": 58,
+      "sha256": "4916995b995854e142b802ac2678584eff4e0af6439ea42b692679a65a353da9"
+    },
+    {
+      "path": "source-access-holds.json",
+      "size": 1346,
+      "sha256": "c7296e2a5cf7bf0e528db8f3871ca21dda140146ebb03ae47c019a615103fe95"
+    },
+    {
+      "path": "source-manifest.json",
+      "size": 443,
+      "sha256": "5426527d1a21a326de3deaf05858a5244d4d19335215692e5acc4ca4cb0ba36d"
+    },
+    {
+      "path": "validation/BR-01-skill-checks.json",
+      "size": 3,
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+    },
+    {
+      "path": "validation/calculator-quote-tests.log",
+      "size": 119,
+      "sha256": "ead5f92ae252a59c5dc5ba26ff98b9a972d63f41688091b7459fb2c6a2301a68"
+    },
+    {
+      "path": "validation/calculator-quotes.log",
+      "size": 95,
+      "sha256": "c57f17e47901b1793761436f9659308d309cb2572c29a162e9c7932a537719c8"
+    },
+    {
+      "path": "validation/copy-rules.log",
+      "size": 100,
+      "sha256": "cac0b6c4a4e1df9b82171ee9795f74a20df648504ea09fffcc9ad1d1d1805211"
+    },
+    {
+      "path": "validation/examples.log",
+      "size": 58,
+      "sha256": "4916995b995854e142b802ac2678584eff4e0af6439ea42b692679a65a353da9"
+    },
+    {
+      "path": "validation/final-committed-guide-validation.log",
+      "size": 192,
+      "sha256": "a7d8a057660b3d212d944ce39725ec8cef8aa0fa1ee6a85ef9d7c717d65fc074"
+    },
+    {
+      "path": "validation/final-committed-strict-sync.log",
+      "size": 81,
+      "sha256": "14b6947ff20d098ade82667a33a8cf419ed04e75dc331505126d975b945d41f6"
+    },
+    {
+      "path": "validation/final-copy-rules.log",
+      "size": 100,
+      "sha256": "56c92528aa5576d3030142e40ad0b9bf8423693e3b5b577510c1c9b18dd72b54"
+    },
+    {
+      "path": "validation/row-source-reconciliation.md",
+      "size": 1890,
+      "sha256": "d5bd9501a0ecff3ab058fd12e05d386383a5635611d471ed8cf5e2db6b22f46a"
+    },
+    {
+      "path": "validation/row-sources-citation-supplement.log",
+      "size": 314,
+      "sha256": "4e810497b7029af72b177937008a9615183d141a68f2961fd695347bcebeff35"
+    },
+    {
+      "path": "validation/row-sources.log",
+      "size": 1121,
+      "sha256": "987180890cfe7f87beb468499fe739b03cd6443a2e74097ab0512f3f80a02594"
+    },
+    {
+      "path": "validation/skill-checks.log",
+      "size": 651,
+      "sha256": "eb00caa483cd1b9188a9ad3243b3ccaf90a75accc6fc104b01f2c1c7cac3a07d"
+    },
+    {
+      "path": "validation/sync-integrity.log",
+      "size": 81,
+      "sha256": "14b6947ff20d098ade82667a33a8cf419ed04e75dc331505126d975b945d41f6"
+    },
+    {
+      "path": "validation/validate-guides-worktree.log",
+      "size": 377,
+      "sha256": "665fc9e13815c25618dd447cc3969cbdbc53598420a144fc551686824d86c90b"
+    }
+  ]
+}
