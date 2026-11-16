@@ -1,330 +1,180 @@
 ---
 name: greece-einvoice
 description: Use this skill whenever asked about e-invoicing in Greece, myDATA platform, AADE electronic books, MARK unique registration number, real-time tax book reporting, e-invoicing providers in Greece, myDATA API, income/expense classification, QR code on Greek invoices, or any question about issuing, transmitting, validating, or archiving electronic invoices under Greek law. Trigger on phrases like "myDATA", "AADE", "MARK number", "Greek e-invoice", "electronic books Greece", "myDATA API", "SendInvoices", "e-timologio", "AFM tax number", "income classification", "expense classification", or "Greek VAT invoice", "mandatory e-invoicing Greece 2026", "timologio". Covers tax year 2026, including the mandatory B2B and B2G e-invoicing dates (2 March 2026 and 2 November 2026). VAT rates and returns are in greece-vat-return. ALWAYS read this skill before touching any Greece invoicing compliance work.
-version: 1.2
+version: 1.3
 jurisdiction: GR
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-11-16
 depends_on:
   - einvoice-workflow-base
 category: invoicing
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: e-invoicing
+type: filing-howto
 ---
 
-# Greece Einvoice
+# Greece e-invoicing and myDATA v1.3
 
-## Greece E-Invoicing Compliance Skill v1.1
+## Scope
 
-## Section 1 -- Quick Reference
+Issue and transmit Greek invoices, reconcile AADE responses and retain evidence for tax year 2026. Greek accounting invoices, myDATA electronic-book reporting and the B2G public-procurement channel are related but distinct requirements. A successful myDATA upload alone does not prove use of a mandatory e-invoice channel or entitlement to deduct VAT. Load `einvoice-workflow-base` for the common workflow and `greece-vat-return` for VAT rates, island eligibility, input credit and return periods.
 
-**Quick Reference**
+**Quick reference:** AADE administers myDATA (My Digital Accounting and Tax Application); amounts are in EUR. The current technical landing page offers ERP/provider/delivery specifications v2.0.2. First-period mandatory issue started 2 March 2026; second-period issue started 2 November 2026 with conditional parallel use through 31 January 2027. The phase, declaration and transaction conditions below matter. Position read on 16 November 2026, not a promise that later dates cannot change.
 
-| Field | Value |
-| --- | --- |
-| Country | Greece (Ελληνική Δημοκρατία) |
-| Currency | EUR |
-| E-invoicing system name | myDATA (My Digital Accounting and Tax Application) |
-| Governing body | AADE (Ανεξάρτητη Αρχή Δημοσίων Εσόδων -- Independent Authority for Public Revenue) |
-| Key legislation | Law 4308/2014 (Greek Accounting Standards), art. 14 (e-invoice), par. 6 added by ν. 5222/2025 art. 239; Tax Procedure Code ν. 5104/2024, art. 16 (electronic transmission to AADE) and arts. 57-58 (fines); joint decision Α.1138/2020 (myDATA transmission); joint decision Α.1128/2025 (mandatory e-invoicing), amended by Α.1044/2026 and Α.1197/2026; AADE decision Α.1112/2025 (provider obligations) |
-| Implementation timeline | myDATA transmission under Α.1138/2020. Mandatory e-invoicing (Α.1128/2025 as amended): first period, businesses with 2023 gross revenue over EUR 1,000,000, from 2 March 2026, with parallel use of ERP or the special form allowed to 3 May 2026; second period, all other businesses, from 2 November 2026, with parallel use allowed to 31 January 2027 |
-| Current status (23 October 2026) | First-period businesses must issue domestic B2B, non-EU B2B and B2G invoices only electronically, through a certified provider or AADE's free timologio / myDATAapp. Second-period businesses must do the same from 2 November 2026. Buyers must accept e-invoices from 2 March 2026. All businesses transmit book data to myDATA (TPC art. 16) |
-| Skill version | 1.1 |
+## Ask the client first
 
-## Section 2 -- Mandate Scope
+1. What are the invoice/supply dates, issuer legal form and tax/branch identity, customer country/status and B2B, B2C or public-contract route?
+2. What was gross revenue on the 2023 income return, or the non-calendar tax year that began in 2023? Which mandatory cohort and start declaration/effective date are documented?
+3. Which approved provider, AADE application, ERP, fiscal device or special-entry channel is in use, and is it lawful for this transaction and date?
+4. What are the source invoice, VAT treatment, net amounts, withholding/other taxes, payment details and current classification combination? Establish these before building XML.
+5. Is this original, correction, cancellation, self-billing or buyer-reported omission/deviation, and are there earlier MARKs or outage records?
+6. Who retains the original invoice, XML, responses, evidence of delivery/acceptance and reconciliation, and is an audit or extended limitation period open?
 
-### Mandatory e-invoicing (Α.1128/2025, as amended by Α.1044/2026 and Α.1197/2026)
+## The method, step by step
 
-| Item | Rule | Source |
-| --- | --- | --- |
-| Which invoices | Every sale of goods or services (a) inside Greece to an entity under ν. 4308/2014 (B2B), (b) to a business in a non-EU country, except retail (B2B), (c) for public contracts and other General Government spending (B2G) | Α.1128/2025 art. 1(1), as replaced by Α.1044/2026 |
-| How | Only through a certified e-invoicing provider (Πάροχος Υπηρεσιών Ηλεκτρονικής Έκδοσης Στοιχείων) or AADE's timologio application (myDATAapp is covered by the timologio declaration) | Α.1128/2025 art. 1(2); AADE e-invoicing page |
-| First period | Businesses with gross revenue over EUR 1,000,000 on their 2023 income tax return: e-invoices only from 2 March 2026; parallel use of ERP or the special form allowed 2 March to 3 May 2026 if a start declaration was filed with a start date no later than 2 March 2026 | Α.1128/2025 arts. 1(3)(α), 2(1), as amended by Α.1044/2026 |
-| Second period | All other businesses: e-invoices only from 2 November 2026; parallel use allowed 2 November 2026 to 31 January 2027 if a start declaration was filed with a start date no later than 2 November 2026 | Α.1128/2025 art. 2(2), as replaced by Α.1197/2026 (ΦΕΚ Β' 5905/30.09.2026) |
-| Buyer acceptance | From 2 March 2026 a buyer under ν. 4308/2014 must accept e-invoices for B2B and B2G transactions | Α.1128/2025 art. 2(3), as replaced by Α.1044/2026 |
-| Not covered by the mandate | Intra-EU B2B invoices and retail (B2C) sales; these still follow the myDATA transmission rules in Α.1138/2020 | Α.1128/2025 art. 1(1) |
+### 1. Decide scope, cohort and lawful channel
 
-The earlier dates in Α.1128/2025 as first published (2 February 2026 and 1 October 2026) no longer apply. The 1 January 2027 date on AADE's e-invoicing page is not an e-invoicing date: it starts phase B1 of digital delivery notes (loading, transshipment and receipt data, and stock quantity checks), under Α.1122/2024 art. 4(5) as replaced by Α.1198/2026. Phase B2 (Combined Nomenclature item codes) starts 1 January 2028.
+| Item | Rule and conditions | Official source |
+|---|---|---|
+| Covered invoices | Sales inside Greece to Law 4308/2014 entities; business sales to non-EU countries except retail; public contracts and other General Government spending subject to the separate public-invoice provisions | A.1128/2025 art. 1, as replaced by A.1044/2026: https://www.aade.gr/sites/default/files/2026-02/a1044fek.pdf |
+| Mandated issue | Licensed provider or AADE timologio; the timologio declaration also covers myDATAapp. The AADE press release says its free applications cover public-contract invoices too; check the actual B2G workflow rather than assuming an ERP upload is public-sector delivery | A.1128/2025 art. 1(2): https://www.aade.gr/sites/default/files/2025-09/a1128_2025fek.pdf; AADE: https://www.aade.gr/sites/default/files/2026-02/dt_17.02.2026.pdf |
+| First period | Gross revenue over EUR 1,000,000 on the 2023 income return; for a non-calendar year, use the tax year that began in 2023. Start 2 March 2026. Parallel ERP/special entry to 3 May 2026 required the timely declaration with effective start no later than 2 March | A.1128/2025 art. 1(3), A.1044/2026: https://www.aade.gr/sites/default/files/2025-09/a1128_2025fek.pdf ; https://www.aade.gr/sites/default/files/2026-02/a1044fek.pdf |
+| Second period | Remaining businesses from 2 November 2026. Parallel ERP/manual special entry from 2 November 2026 to 31 January 2027 only with a timely start declaration effective no later than 2 November | A.1197/2026 single article: https://www.aade.gr/sites/default/files/2026-10/A1197_2026_fek.pdf |
+| Buyer acceptance | Law 4308/2014 buyers must accept the covered B2B/B2G e-invoices from 2 March 2026 | A.1044/2026: https://www.aade.gr/sites/default/files/2026-02/a1044fek.pdf |
+| Outside this particular issue mandate | Intra-EU business sales and retail are outside art. 1's listed transactions, not automatically outside myDATA, fiscal-device or other invoice rules | A.1128/2025 art. 1: https://www.aade.gr/sites/default/files/2025-09/a1128_2025fek.pdf |
+| Digital delivery notes, separate timeline | B1 loading/transshipment/receipt and stock checks from 1 January 2027; B2 Combined Nomenclature codes from 1 January 2028. These are not replacement invoice-mandate dates | A.1198/2026, same Gazette as A.1197: https://www.aade.gr/sites/default/files/2026-10/A1197_2026_fek.pdf |
 
-### Who Must Comply
+The original 2 February and 1 October 2026 issue dates were superseded. Do not use them. Obtain the provider start declaration under A.1112/2025 art. 6 or the timologio declaration under A.1129/2025. The latter is filed through myAADE within 10 days of starting application use, identifying the entity, start date and selected transaction categories; retain its unique submission number. This operational declaration rule does not itself establish eligibility for tax incentives or cure a missed mandate-phase condition. [A.1129/2025 arts. 3-4](https://www.aade.gr/sites/default/files/2025-09/a1129-2025fek.pdf).
 
-- **Who must comply with myDATA transmission**: All Greek businesses -- every entity with a Greek AFM (Tax Identification Number) that issues revenue or expense documents must transmit data to myDATA. This includes: Sole proprietors (ατομική επιχείρηση); Companies of all legal forms (ΑΕ, ΕΠΕ, ΟΕ, ΕΕ, ΙΚΕ); Freelancers and professionals; Farmers under the special or normal regime. B2G (Business-to-Government): Greece has adopted the Peppol four-corner model for B2G. Structured e-invoices (EN 16931) are transmitted via Peppol to public entities. Data also flows to myDATA. B2B (Business-to-Business): Suppliers must transmit invoice summary data to myDATA in real-time or near-real-time. The transmitted data receives a MARK from AADE, which must appear on the invoice delivered to the buyer. Invoices issued through a certified e-invoicing provider are automatically transmitted. B2C (Business-to-Consumer): Retail transactions reported via electronic tax registers (eTax Register Machines / EAFΔΣΣ) are transmitted to myDATA. For invoices (not receipts), same rules as B2B apply.
+TPC art. 16 requires the accounting data of Law 4308/2014 entities to be transmitted regardless of invoice method or book category. That does not prove the former claim that every AFM holder, including every special-scheme farmer, transmits every document identically. Confirm the actual A.1138/2020 scope, exceptions and timing for the entity. Provider, ERP, fiscal-device retail transmission and the special entry form are distinct channels. ERP and special entry do not replace the required provider/AADE issue channel after any permitted transition. Special-form eligibility and fiscal-device model/sector exceptions remain held below; no blanket small-business or no-turnover exemption is asserted. [TPC art. 16](https://www.aade.gr/sites/default/files/2025-12/e2109_2025.pdf).
 
-### Transmission Methods (By Entity Type)
+For B2G, GSIS identifies itself as the national PEPPOL authority and requires providers to hold AADE certification, a certified PEPPOL Access Point and successful interoperability tests. EN 16931 is the European semantic invoice standard. Preserve public-contract routing/receipt evidence in addition to myDATA reporting. The exact Greek CIUS, BIS/UBL version and public-buyer identifiers must be checked for the actual channel; the earlier unsupported BIS Billing 3.0/UBL 2.1 statement is not treated as verified here. [GSIS provider requirements](https://www.gsis.gr/polites-epiheiriseis/pliromes-kai-eispraxeis/e-invoice/parohoi-ypiresion-ilektronikis-timologisis); [GSIS EN 16931](https://www.gsis.gr/peppol-eyropaiko-protypo-elot-en-16931).
 
-**Transmission Methods (By Entity Type)**
+### 2. Prepare the legal invoice and map its payload separately
 
-| Method | Description | Who Uses It |
-| --- | --- | --- |
-| Certified e-invoicing provider (Πάροχος Ηλεκτρονικής Τιμολόγησης) | Automatic real-time transmission; provider handles XML formatting and AADE communication | Businesses using certified providers |
-| ERP integration via myDATA API | Business transmits directly via AADE REST API | Businesses with in-house or commercial ERP systems |
-| Electronic tax registers (EAFΔΣΣ) | POS/cash register data transmitted automatically | Retail businesses |
-| Special Data Entry Form (Ειδική Φόρμα Καταχώρησης) | Manual entry on myDATA web portal | Small businesses with few documents and no software |
+A full invoice under Law 4308/2014 art. 9 includes issue date, unique sequential number, issuer and customer AFM and full name/address, goods quantity/type or services description, supply/payment date if different where required, net consideration by VAT rate/exemption, unit prices/discounts, VAT rate and VAT amount. Include the applicable self-billing, exemption, reverse-charge, new-vehicle, margin-scheme and fiscal-representative legends/details. VAT due is stated in euro. A signature is not required. Simplified invoices and special cases follow their own provisions; do not apply the full-invoice list as a universal retail receipt schema. [Law 4308/2014 arts. 9-10](https://minfin.gov.gr/wp-content/uploads/2024/02/%CE%9D-4308-2014.pdf).
 
-### Exemptions
+The invoice's legal content is not identical to every XML field: the current API rejects domestic Greek party name/address fields in specified payload positions even though the invoice itself must carry those legal details. The old standalone DOY field, literal "retail" buyer indicator and universal payment/classification/QR requirements are not inferred from art. 9. Establish the channel-specific requirements. [API PartyType and document structures](https://www.aade.gr/sites/default/files/2026-09/myDATA%20API%20Documentation%20v2.0.2_official_erp_1.pdf).
 
-- **Exemptions from myDATA compliance**: There is no turnover threshold -- all taxable entities must comply. Small entities issuing very few documents can use the Special Data Entry Form instead of software integration.
+| Payload area | Use and conditions | Source |
+|---|---|---|
+| `invoiceHeader` | Type (`1.1` sales invoice; `2.1` services invoice; `5.1` correlated credit invoice, distinct from `5.2` uncorrelated credit invoice), series, AA, issue date/currency and conditionally applicable header fields | API v2.0.2 sections 5.1, 5.3 and appendix 8.1: https://www.aade.gr/sites/default/files/2026-09/myDATA%20API%20Documentation%20v2.0.2_official_erp_1.pdf |
+| `issuer`, `counterpart` | Party AFM, country, branch, with domestic/foreign and type-specific acceptance rules | API sections 5.1-5.2: https://www.aade.gr/sites/default/files/2026-09/myDATA%20API%20Documentation%20v2.0.2_official_erp_1.pdf |
+| `paymentMethods` | Conditional payment structures, not universally required for every document | API section 5.1: https://www.aade.gr/sites/default/files/2026-09/myDATA%20API%20Documentation%20v2.0.2_official_erp_1.pdf |
+| `invoiceDetails` | Lines, net value, VAT category/amount and applicable taxes/classifications | API sections 5.1, 5.4: https://www.aade.gr/sites/default/files/2026-09/myDATA%20API%20Documentation%20v2.0.2_official_erp_1.pdf |
+| `invoiceSummary` | Net, VAT, withholding, fees, digital transaction duty, other taxes, deductions and gross summary fields; amounts have two decimal places | API section 5.6: https://www.aade.gr/sites/default/files/2026-09/myDATA%20API%20Documentation%20v2.0.2_official_erp_1.pdf |
+| `taxesTotals` | Applicable tax totals, with the specification's line-versus-summary consistency rules; not a separate VAT-rate bucket for every rate | API sections 5.1, 5.5-5.6: https://www.aade.gr/sites/default/files/2026-09/myDATA%20API%20Documentation%20v2.0.2_official_erp_1.pdf |
+| Income/expense classifications | Supported line/summary structures or separate classification submissions. `invoiceClassification` is not a universal top-level mandatory field | API sections 4.2-4.3, 5.8-5.9: https://www.aade.gr/sites/default/files/2026-09/myDATA%20API%20Documentation%20v2.0.2_official_erp_1.pdf |
 
-## Section 3 -- Technical Format
+Use the current official XSD archive and designation-combination spreadsheet linked from the [technical landing page](https://www.aade.gr/mydata/tehnikes-prodiagrafes-ekdoseis-mydata). The old filename list (`InvoicesDoc.xsd`, `expensesClassification.xsd`, `incomeClassification.xsd`, `response.xsd`, `InvoicesDoc_detailed.xsd`, `RegisterTransfer.xsd`, `GetDeliveryStatusResponse.xsd`) remains a search aid only until the actual current archive files are checked. Do not pin old v1.0.12 or v2.0.1 as current: the page offers v2.0.2 for ERP, provider and digital-delivery interfaces.
 
-### myDATA XML Schema
+### 3. Authenticate, transmit and check each response
 
-- **myDATA XML schema description**: myDATA uses a proprietary XML schema defined by AADE, not UBL or CII. The current schema version is governed by AADE technical specifications.
+Register through the myDATA REST API registration application using TAXISnet, create a user and obtain its subscription key. ERP calls use the headers `aade-user-id` (the registered username) and `ocp-apim-subscription-key`; this is not simply AFM plus key. Do not put credentials in the invoice or a public working paper. For ERP `SendInvoices`, POST the specified InvoicesDoc XML to production `https://mydatapi.aade.gr/myDATA/SendInvoices`; the development endpoint is `https://mydataapidev.aade.gr/SendInvoices`. The older `mydata-api.aade.gr` and `mydata-dev.aade.gr` hosts are not the current documented endpoints. Provider integration has separate specifications/credentials; do not assume its complete methods/signature contract equals ERP. [API sections 3-4.1](https://www.aade.gr/sites/default/files/2026-09/myDATA%20API%20Documentation%20v2.0.2_official_erp_1.pdf).
 
-**myDATA XML Schema Components**
+ERP methods include `SendInvoices`, `SendExpensesClassification`, `SendIncomeClassification`, `RequestDocs`, `RequestTransmittedDocs` and `CancelInvoice`. Cancellation uses the prior MARK and does not mean silently deleting the original accounting document. Receive a ResponseDoc with a response per submitted entity. Examine `statusCode`, errors, UID and applicable invoice/classification/cancellation MARK; success is `Success`. HTTP 200 can still contain XML/business validation errors. Save the exact request, response and selected environment. [API sections 4 and 6-7](https://www.aade.gr/sites/default/files/2026-09/myDATA%20API%20Documentation%20v2.0.2_official_erp_1.pdf).
 
-| Schema Component | File |
-| --- | --- |
-| Invoice document | `InvoicesDoc.xsd` |
-| Expense classification | `expensesClassification.xsd` |
-| Income classification | `incomeClassification.xsd` |
-| Response | `response.xsd` |
-| Detailed invoice (for providers) | `InvoicesDoc_detailed.xsd` |
-| Delivery notes | `RegisterTransfer.xsd`, `GetDeliveryStatusResponse.xsd` |
+1. Determine the lawful issue channel before creating the document. For a permitted ERP transaction map it to the current schema; for provider issue use the licensed provider workflow.
+2. Validate locally, then submit or let the provider submit under its own protocol. Avoid blind retry after a timeout: check accepted documents/UID/MARK first to prevent duplicates.
+3. Check every individual response; record successful MARKs and detailed rejections separately. Keep the emitted document and transmission identity linked.
+4. For the response QR field use the actual interface field: the invoice structure contains `qrCodeUrl`, while submission responses document `qrUrl`, with response-type restrictions. Provider `downloadingInvoiceUrl` is distinct. Use returned URLs rather than inventing a MARK-derived verification URL.
+5. Deliver through the lawful channel and preserve evidence. A provider workflow normally issues, transmits and supplies its final invoice/URL, but do not assume delivery or public-buyer acceptance from an AADE success alone.
+6. For loss of connection use the actual channel's approved failure procedure. API `transmissionFailure` distinguishes provider/communication cases and ERP connection loss (value 3); it is not a general permission to issue first and send whenever convenient. Specific outage deadlines and the provider `/pdf`, `/myDATA`, `/EN16931` URL contract remain held below.
 
-- **Current API versions**: Current API versions: v1.0.12 (for ERP/provider) and v2.0.1 (with digital delivery notes).
+A MARK is AADE's registration number for accepted data. Absence of a MARK requires investigation and correction under the applicable channel/outage rules. It does not by itself establish that every underlying invoice is legally void or that the buyer automatically loses input VAT. Never use the old blanket claims to deny credit. [API document/response/failure structures](https://www.aade.gr/sites/default/files/2026-09/myDATA%20API%20Documentation%20v2.0.2_official_erp_1.pdf).
 
-### B2G Format
+### 4. Validate arithmetic, classifications and corrections
 
-- **B2G e-invoicing format**: For B2G transactions, Greece uses EN 16931 with Peppol BIS Billing 3.0 (UBL 2.1 XML), transmitted via the Peppol network. The data also flows into myDATA for electronic book purposes.
+Validate the actual current XML schema, issuer/counterparty identity and status, document type, accepted combinations, VAT category/exemption, applicable tax fields, line/summary arithmetic and duplicate identity. The API lists AFM, XML, document/classification, tax/arithmetic and duplicate errors. A check-digit calculation alone is not confirmation of a live registered counterparty; the exact public AFM verification service is not verified here. [API section 7](https://www.aade.gr/sites/default/files/2026-09/myDATA%20API%20Documentation%20v2.0.2_official_erp_1.pdf).
 
-### Key Data Elements (myDATA Schema)
+Route the actual VAT rate, island supply conditions, rounding of reduced rates and input-credit blocks to `greece-vat-return`. This file no longer repeats the 24/13/6/4 and island 17/9/4/3 rate table as another maintained source. Keep line VAT categories consistent for mixed-rate invoices and follow the API totals schema. Monetary fields require the specified precision; the old universal per-line EUR 0.01 validation tolerance and unconditional sum-of-rounded-lines rule were not confirmed. Do not silently adjust VAT to force acceptance.
 
-**Key Data Elements (myDATA Schema)**
+Determine withholding separately under `gr-cross-border`/`gr-payroll` before coding it. A 20% professional-fee example is not universal. A stamp/duty field name is not proof that old stamp duty or a solidarity contribution is payable in 2026; the current API describes the former stamp-duty total as digital transaction duty. Identify applicable law rather than copying legacy tax-code examples. [API summary fields](https://www.aade.gr/sites/default/files/2026-09/myDATA%20API%20Documentation%20v2.0.2_official_erp_1.pdf).
 
-| Element | Description |
-| --- | --- |
-| `invoiceHeader` | Invoice type, series, AA (sequential number), issue date, currency |
-| `issuer` | Supplier AFM, country, branch |
-| `counterpart` | Buyer AFM, country, branch (for B2B) |
-| `paymentMethods` | Payment method type, amount, payment info |
-| `invoiceDetails` | Line items: line number, net value, VAT category, VAT amount, classification codes |
-| `invoiceSummary` | Total net value, total VAT amount, total withheld amount, total gross value |
-| `taxesTotals` | Tax type, tax category, underlying value, tax amount |
-| `invoiceClassification` | Income/expense classification type and category per line |
+| Common income category | Current description | Source |
+|---|---|---|
+| `category1_1` | Merchandise sales | API appendix 8.8: https://www.aade.gr/sites/default/files/2026-09/myDATA%20API%20Documentation%20v2.0.2_official_erp_1.pdf |
+| `category1_2` | Products sales | API appendix 8.8: https://www.aade.gr/sites/default/files/2026-09/myDATA%20API%20Documentation%20v2.0.2_official_erp_1.pdf |
+| `category1_3` | Services revenue | API appendix 8.8: https://www.aade.gr/sites/default/files/2026-09/myDATA%20API%20Documentation%20v2.0.2_official_erp_1.pdf |
+| `category1_5` | Other revenue/profits, not third-party sales | API appendix 8.8: https://www.aade.gr/sites/default/files/2026-09/myDATA%20API%20Documentation%20v2.0.2_official_erp_1.pdf |
+| `category1_7` | Third-party revenue, not an automatic subsidies/grants category | API appendix 8.8: https://www.aade.gr/sites/default/files/2026-09/myDATA%20API%20Documentation%20v2.0.2_official_erp_1.pdf |
 
-## Section 4 -- Mandatory Fields
+Check the current designation combinations/E3 mapping for the transaction, including grants. Classifications may be supplied in the documented structures or separately; do not assert that every line must always carry income classification at original issue. Preserve any original, corrective invoice/credit note, cancellation MARK, classification update and correspondence as a traceable chain.
 
-### Fields Required on Every Greek Invoice
+### 5. Retain records and reconcile to returns
 
-**Fields Required on Every Greek Invoice**
+Under accounting-law art. 7 retain records for the longer of five years from the end of the period and the period required by other legislation; any format must support searching, display and printing. Maintain invoice authenticity, content integrity and readability under arts. 14-15. Tax-procedure art. 13 uses its own minimum five-year clock from the end of the tax year in which the filing obligation arises, extended through applicable assessment periods or final resolution/full settlement of the tax claim. Apply the longer relevant period, not the old blanket six-year VAT or indefinite-litigation assertion. Preserve your own invoice/XML/response/MARK/URL/correction and delivery records rather than relying only on AADE or a provider. [Law 4308/2014 arts. 7, 15](https://minfin.gov.gr/wp-content/uploads/2024/02/%CE%9D-4308-2014.pdf); [TPC art. 13](https://www.aade.gr/sites/default/files/2025-12/e2109_2025.pdf).
 
-| Field | Description |
-| --- | --- |
-| Issuer AFM (ΑΦΜ) | Greek tax identification number |
-| Issuer name and address | Full legal name, DOY (tax office) |
-| Issuer DOY (ΔΟΥ) | Tax office of the issuer |
-| Buyer AFM | Required for B2B; "retail" indicator for B2C |
-| Invoice series and number | Unique sequential identifier |
-| Invoice date | Date of issuance |
-| Invoice type | myDATA type code (e.g., 1.1 = Sales Invoice, 2.1 = Service Invoice, 5.1 = Credit Invoice) |
-| MARK (Μ.ΑΡ.Κ.) | Unique Registration Number from AADE -- mandatory on the issued document |
-| QR code | Encodes the MARK verification URL; mandatory on printed/PDF invoices |
-| Description of goods/services | Line-level detail |
-| Quantity and unit | Per line item |
-| Net value per line | Before VAT |
-| VAT category and rate | Per line (code + percentage) |
-| VAT amount per line |  |
-| Income classification | Revenue type and category code per line |
-| Total net value | Sum of line net values |
-| Total VAT | Sum of line VAT amounts |
-| Total gross value | Net + VAT |
-| Payment method | Cash, bank transfer, card, cheque, etc. |
-| Withholding tax | If applicable (type, rate, amount) |
-| Stamp duty | If applicable |
-| Fees/charges | If applicable |
+A written AADE information/copy request generally requires a response within **10 working days** of notification, subject to the documented difficulty/extension provisions of TPC art. 14. The old 48-hour claim was wrong. Provider storage/access obligations under A.1112/2025 still need the specific contractual and legal retention scope checked; appointing a provider does not remove the entity's own record duties. [TPC art. 14](https://www.aade.gr/sites/default/files/2025-12/e2109_2025.pdf).
 
-### MARK (Μοναδικός Αριθμός Καταχώρησης)
+Reconcile issued/received invoices, fiscal-device retail streams, credit notes/cancellations, classification and myDATA totals against the ledger before preparing VAT or income returns. Preserve corrections and differences. TPC art. 16(2) sets a statutory floor for taxable transactions/revenue based on transmitted documents and says tax credits and deductible expenses are not taken into account if their supporting documents have not been transmitted under paragraph 1. Do not omit that restriction. A missing MARK alone, particularly with a documented outage, is not the same factual finding as a supporting document never transmitted. Apply the current implementing scope, correction/recipient remedies and VAT Code arts. 35-37 together with the owner skill to input VAT; use the actual current prefill/deviation and expense-classification instructions before filing. Do not claim automatic buyer classification, a universal loss of credit solely because a MARK is absent, precautionary assessment from myDATA alone or an automatic high-risk designation without the missing legal instructions. For B2G keep separate PEPPOL/public-buyer receipt status. RequestDocs/RequestTransmittedDocs include paginated retrieval; follow the continuation token until complete. [API section 6.2](https://www.aade.gr/sites/default/files/2026-09/myDATA%20API%20Documentation%20v2.0.2_official_erp_1.pdf).
 
-- **MARK definition and role**: The MARK is the critical fiscal identifier. It is: Assigned by AADE upon successful data transmission to myDATA; A unique numeric registration number (long integer); Required on the invoice before delivery to the buyer; Used to generate the QR code verification URL. Without a valid MARK, the document is not fiscally recognized under Greek law.
+## Worked cases
 
-### QR Code
+### Choose the invoice mandate cohort at the threshold
 
-**QR Code sources by channel**
-
-| Channel | QR Code Source |
-| --- | --- |
-| E-invoicing provider | `downloadingInvoiceUrl` returned by the provider, supporting `/pdf`, `/myDATA`, `/EN16931` endpoints |
-| ERP (direct API) | `qrCodeUrl` returned by the `SendInvoices` API call |
-
-## Section 5 -- Transmission Method
-
-### myDATA REST API
-
-**myDATA REST API details**
-
-| Component | Detail |
-| --- | --- |
-| API type | RESTful web services |
-| Authentication | AADE user credentials (AFM + API key) or e-invoicing provider credentials |
-| Environment URLs | Production: `mydata-api.aade.gr`; Testing: `mydata-dev.aade.gr` |
-| Key methods (ERP) | `SendInvoices`, `SendExpensesClassification`, `SendIncomeClassification`, `RequestDocs`, `RequestTransmittedDocs`, `CancelInvoice` |
-| Key methods (Provider) | Same as ERP plus `SendInvoices` with provider signature block |
-| Response | MARK (on success) or error codes (on failure) |
-| Real-time requirement | Transmission should occur at or near the time of invoice issuance |
-
-### Workflow (ERP Integration)
-
-1. Issue invoice in ERP system
-2. Map data to myDATA XML schema (InvoicesDoc.xsd)
-3. Call SendInvoices API endpoint
-4. Receive response: MARK + QR code URL (success) or error codes (failure)
-5. Print/embed MARK and QR code on the invoice
-6. Deliver invoice to buyer
-
-### Workflow (Certified E-Invoicing Provider)
-
-1. Issue invoice through the provider's platform
-2. Provider transmits data to AADE automatically
-3. Provider receives MARK from AADE in real-time
-4. Provider embeds MARK, QR code, and provider identification on the document
-5. Document delivered to buyer electronically (with `downloadingInvoiceUrl`)
-
-### Connection Loss Handling
-
-- **Handling loss of connection to myDATA during invoice issuance**: If the connection to myDATA is lost during invoice issuance, the transaction continues normally. The invoice is issued with a "loss of connection" indicator and transmitted with a slight delay. The MARK is obtained shortly after connectivity is restored.
-
-## Section 6 -- Validation Rules
-
-### AADE Validation (on SendInvoices)
-
-- **AADE validation checks on SendInvoices**: XML schema validation against the current InvoicesDoc XSD version; AFM validation for issuer and counterpart; Invoice type code validity (must match allowed type codes); Classification code validity (income/expense codes must exist in the designation combinations); Tax category and rate consistency; Arithmetic validation (line totals, VAT calculations, summary totals); Duplicate detection (same series/AA from the same issuer).
-
-### Pre-Submission Checks
-
-- **Pre-submission validation checks**: Validate XML locally against the current InvoicesDoc.xsd before API call; Verify AFM validity using AADE's public AFM verification service; Confirm income classification codes match the designation combinations spreadsheet (published by AADE); Ensure all line items have valid VAT category codes; Verify arithmetic: sum of line net values = total net value; sum of line VAT = total VAT.
-
-### Common Rejection Reasons
-
-**Common Rejection Reasons**
-
-| Reason | Detail |
-| --- | --- |
-| Invalid AFM | Issuer or counterpart AFM fails check-digit validation or is inactive |
-| Schema violation | XML does not conform to the current InvoicesDoc.xsd |
-| Invalid invoice type | Type code not recognized or not applicable for the transaction |
-| Classification error | Income or expense classification code invalid or mismatched with invoice type |
-| Arithmetic mismatch | Line totals do not sum to invoice summary values |
-| Duplicate submission | Same series/AA already has a MARK for this issuer |
-| Invalid VAT rate | Rate does not match the declared VAT category |
-
-## Section 7 -- Tax Computation Rules
-
-### Greek VAT Rates (2026)
-
-**Greek VAT Rates (2026)**  _(VAT Code ν. 5144/2024, art. 26 and Annex III; ν. 2859/2000 is repealed)_
-
-| Rate | General | Islands with the 30% reduction (art. 26(4A)) |
-| --- | --- | --- |
-| Standard | 24% | 17% |
-| Reduced (Annex III) | 13% | 9% |
-| Lower (where Annex III says so) | 6% | 4% |
-| Lowest (where Annex III says so) | 4% | 3% |
-
-- **Island reduction scope:** From 1 January 2026 the 30% reduction applies automatically on the islands of the North Aegean Region, Samothrace and the Dodecanese with up to 20,000 inhabitants at the latest census (art. 26(4A), added by ν. 5246/2025 art. 11). Lesvos, Kos, Samos and Chios get it under art. 26(4) through decision Α.1150/2021, still in force (AADE circular Ε.2113/2025). The islands are listed in the annex to Ε.2113/2025. Tobacco and means of transport are excluded (art. 26(4B)). Rates are rounded to the nearest whole number (art. 26(6)). Details and examples: greece-vat-return.
-
-### Rounding Rules
-
-- **VAT rounding rules**: VAT amounts calculated per line, rounded to 2 decimal places (EUR cents). Summary totals are the sum of rounded line-level amounts. myDATA validates arithmetic consistency with a tolerance of ±0.01 per line.
-
-### Multi-Rate Invoice Handling
-
-- **Multi-rate invoice handling**: Each VAT rate appears as a separate element in the `taxesTotals` section. Line items must each declare their own VAT category and rate. Mixed-rate invoices are fully supported.
-
-### Withholding Tax
-
-- **Withholding tax types**: Greek invoices frequently include withholding tax (παρακράτηση φόρου). Withholding types include: Income tax withholding (e.g., 20% on professional services); Solidarity contribution (where applicable); Stamp duty (χαρτόσημο). These are declared in the `taxesTotals` element with specific tax type codes.
-
-### Income and Expense Classification
-
-- **Income classification requirement**: Every invoice line must carry an income classification code. The designation combinations are published by AADE in a spreadsheet and map invoice types to allowed classification categories.
-
-**Common income classification categories**
-
-| Code | Category |
-| --- | --- |
-| category1_1 | Revenue from sale of goods |
-| category1_2 | Revenue from sale of products |
-| category1_3 | Revenue from provision of services |
-| category1_5 | Revenue from sale of goods/services on behalf of third parties |
-| category1_7 | Revenue from subsidies/grants |
-
-## Section 8 -- Archiving Requirements
-
-**Archiving Requirements**
-
-| Requirement | Detail |
-| --- | --- |
-| Retention period | 5 years from the end of the fiscal year (general rule under Greek Accounting Standards, Law 4308/2014); extended to 6 years for VAT purposes; indefinite if litigation is pending |
-| Format | Electronic format; myDATA data is maintained on AADE servers; businesses must retain their own records |
-| MARK record | The MARK and associated QR code URL must be retained with the invoice |
-| Accessibility | Must be available for tax audit within 48 hours of request |
-| E-invoicing provider records | Providers must maintain all transmitted data and make it available to both issuer and AADE |
-| Integrity | No modification to issued documents; corrections via credit notes or modification invoices |
-| AADE platform | myDATA retains all transmitted data; businesses can query their electronic books via the API |
-
-## Section 9 -- Penalties for Non-Compliance
-
-### myDATA and e-invoicing fines (Tax Procedure Code ν. 5104/2024, arts. 57 and 58)
-
-| Violation | Penalty | Source |
-| --- | --- | --- |
-| Retail receipts not transmitted to myDATA through the fiscal device system, VAT-bearing | 50% of the VAT on them, minimum EUR 250 (single-entry books) or EUR 500 (double-entry books) per audit | TPC art. 58(1)(α) |
-| Same, transaction without VAT | EUR 500 (single-entry) or EUR 1,000 (double-entry) per audit | TPC art. 58(1)(β) |
-| Repeat of either | Double the fine | TPC art. 58(2) |
-| Issuer does not transmit invoice summaries (sales invoices, self-billing, purchase titles) | 10% of the net value of each document, capped at EUR 250 a day | TPC art. 58(3)(α) |
-| Payroll, depreciation and year-end adjustment entries, or income classifications, not transmitted | EUR 250 (single-entry) or EUR 500 (double-entry) per tax year per breach | TPC art. 58(3)(β) |
-| Issuer transmits only after the buyer reports an omission or difference, and the value first sent was too low | 5% of the net value of each document | TPC art. 58(3)(γ) |
-| Digital delivery notes not transmitted | EUR 100 each, capped at EUR 500 a day and EUR 20,000 a year | TPC art. 58(3)(δ) |
-| Late (not missing) transmission under art. 58(3)(α), (β), (δ) | 50% of the fine for non-transmission | TPC art. 58(5) |
-| Required e-invoice not issued | Treated as no invoice issued. With VAT: 50% of the VAT on it, at least EUR 250 (single-entry) or EUR 500 (double-entry) per audit, 100% on a repeat. Without VAT: EUR 500 (single-entry) or EUR 1,000 (double-entry) per audit | TPC art. 57(5), (6); AADE press release 17.2.2026 |
-
-### AADE Cross-Checks
-
-- **AADE cross-check sources and audit trigger**: AADE cross-references myDATA electronic books against periodic VAT returns (there is no annual VAT return under VAT Code art. 43), income tax declarations and third-party data.
-
-### Additional Consequences
-
-- **Additional consequences of non-compliance**: Untransmitted invoices are not fiscally valid -- buyers cannot claim VAT deductions. AADE may impose precautionary tax assessments based on myDATA data alone. Persistent non-compliance triggers classification as high-risk taxpayer.
-
-## Section 10 -- Interaction with Tax Skills
-
-### myDATA → VAT Return (Φ2)
-
-- **myDATA feeds into VAT return preparation**: myDATA electronic books are the primary source for VAT return preparation. AADE pre-fills VAT return data from myDATA. The taxpayer must reconcile any differences between their accounting records and the myDATA data before filing.
-
-### Expense Classification → Input VAT
-
-- **Expense classification and input VAT deductibility**: Buyers must classify received invoices in myDATA as expenses with the appropriate classification codes. This classification determines: Deductibility of input VAT; Allocation to the correct income tax expense category; Reconciliation with the VAT return. Buyers who do not classify counterpart invoices within the deadline risk having AADE auto-classify them.
-
-### myDATA → Income Tax
-
-- **myDATA feeds into income tax return**: Income data transmitted to myDATA feeds into the annual income tax return. AADE cross-references declared revenue against myDATA totals. Significant discrepancies trigger audit procedures.
-
-### B2G → Peppol → myDATA
-
-- **B2G transaction flow via Peppol to myDATA**: For B2G transactions, the e-invoice travels via Peppol to the public entity. The invoice data is simultaneously transmitted to myDATA. The public entity's payment system references the myDATA MARK.
-
-### Electronic Tax Registers → myDATA
-
-- **POS transmission via electronic tax registers**: POS transactions from electronic tax registers (EAFΔΣΣ) are transmitted to myDATA as retail income. This data feeds into both VAT returns and income tax declarations.
+Two calendar-year businesses each issue an otherwise covered domestic business invoice. A reported EUR 1,000,001 gross revenue for 2023; B reported exactly EUR 1,000,000. The law says **over**, so A is in the first cohort and B in the second, not the first. Their legal start dates are 2 March and 2 November 2026 respectively. For parallel ERP use B must separately prove the timely declaration effective no later than 2 November; the arithmetic alone does not grant that transition. Non-calendar businesses use the tax year beginning in 2023. [A.1128/2025 art. 1(3)](https://www.aade.gr/sites/default/files/2025-09/a1128_2025fek.pdf); [A.1044/2026](https://www.aade.gr/sites/default/files/2026-02/a1044fek.pdf); [A.1197/2026](https://www.aade.gr/sites/default/files/2026-10/A1197_2026_fek.pdf).
+
+```oa-check
+name: Greece mandatory invoice cohort, strict 2023 turnover threshold
+inputs:
+  threshold: 1000000
+  revenue_a: 1000001
+  revenue_b: 1000000
+steps:
+  - a_excess: revenue_a - threshold
+  - b_excess: revenue_b - threshold
+expected:
+  a_excess: 1
+  b_excess: 0
+```
+
+## When to refuse or refer
+
+Stop if the client's mandate cohort/declaration, source VAT treatment, accepted classification, channel or response is unresolved. Do not represent an ERP upload as mandatory e-invoice issue, a MARK as a legal tax opinion, a prepared file as filed, or a public-buyer invoice as accepted without evidence. Use the precise current source/channel for special-form eligibility, farmer/retail exceptions, B2G technical profiles and outage cures. Keep the unsupported items below out of an implementable compliance answer.
+
+## Filing and payment
+
+### Statutory sanctions, not an automatic assessment
+
+| Breach and conditions | Statutory consequence | Source |
+|---|---|---|
+| Fiscal-device retail data not transmitted, VAT-bearing | 50% of related VAT, minimum EUR 250 single-entry/EUR 500 double-entry per audit | TPC art. 58(1)(α): https://www.aade.gr/sites/default/files/2025-12/e2109_2025.pdf |
+| Same without VAT | EUR 500 single-entry/EUR 1,000 double-entry per audit | TPC art. 58(1)(β): https://www.aade.gr/sites/default/files/2025-12/e2109_2025.pdf |
+| Repeat of those retail breaches | Double fine | TPC art. 58(2): https://www.aade.gr/sites/default/files/2025-12/e2109_2025.pdf |
+| Omitted issuer invoice/self-billing/purchase-title summaries | 10% net value, cap EUR 250 per day | TPC art. 58(3)(α): https://www.aade.gr/sites/default/files/2025-12/e2109_2025.pdf |
+| Payroll/depreciation/year-end entries or issuer/self-billing-recipient income classifications omitted, resulting in omission from the income-tax return | EUR 250 single-entry/EUR 500 double-entry per tax year per breach; the consequence condition matters | TPC art. 58(3)(β): https://www.aade.gr/sites/default/files/2025-12/e2109_2025.pdf |
+| Issuer sends only after buyer omission/deviation reporting and first understated value | 5% of each document's net value | TPC art. 58(3)(γ): https://www.aade.gr/sites/default/files/2025-12/e2109_2025.pdf |
+| Missing digital-delivery data | EUR 100 each, cap EUR 500/day and EUR 20,000/year, for the applicable obligation/period | TPC art. 58(3)(δ): https://www.aade.gr/sites/default/files/2025-12/e2109_2025.pdf |
+| Late rather than omitted art. 58(3)(α), (β), (δ) data | Half the respective omission fine | TPC art. 58(5): https://www.aade.gr/sites/default/files/2025-12/e2109_2025.pdf |
+| Required e-invoice not issued, VAT-bearing | Treated as non-issue; 50% VAT, minimum EUR 250/EUR 500 by book category per audit; repeat 100% minimum EUR 500/EUR 1,000; further repeat 200% minimum EUR 1,000/EUR 2,000 | TPC art. 57(6): https://www.aade.gr/sites/default/files/2025-12/e2109_2025.pdf; AADE interpretation: https://www.aade.gr/sites/default/files/2026-02/dt_17.02.2026.pdf |
+| Required e-invoice not issued, no VAT | EUR 500/EUR 1,000 by book category per audit | TPC art. 57(5): https://www.aade.gr/sites/default/files/2025-12/e2109_2025.pdf; same AADE interpretation: https://www.aade.gr/sites/default/files/2026-02/dt_17.02.2026.pdf |
+
+TPC art. 58(4) excludes the fine for the related other receipt documents where the revenue invoice to which those receipts relate was issued before any audit. Do not apply this as a blanket exception for every omitted invoice or classification under paragraph 3. Check the operative implementing decision and facts for the actual breach date before presenting the statutory table as an amount assessed; application details not read are held below. Do not combine fines without checking the statutory coordination/credit rules, including art. 57(8). E-invoice issue, myDATA transmission, return filing and late payment are different obligations. VAT return/payment and associated penalties are in `greece-vat-return`; income/withholding is in the relevant pack owner.
+
+## Completion checklist
+
+Retain the scope/cohort decision, filed declaration, approved channel, versioned schema/mapping, source invoice and legal tax treatment, exact XML/response and MARK/error status, QR/delivery evidence, corrections/outage log, complete retrieved records, ledger-to-myDATA-to-return reconciliation, retention date and unresolved tasks. Do not report success until both legal issue/delivery and data transmission requirements for this job are satisfied.
 
 ## Sources
 
-| Source | URL | Read on |
-| --- | --- | --- |
-| AADE, joint decision Α.1128/2025 (mandatory e-invoicing) | https://www.aade.gr/egkyklioi-kai-apofaseis/mydata-diataxeis/1128-15-09-2025 | 2026-10-23 |
-| AADE, joint decision Α.1044/2026 (first period moved to 2.3.2026) | https://www.aade.gr/egkyklioi-kai-apofaseis/mydata-diataxeis/1044-17-02-2026 | 2026-10-23 |
-| AADE, joint decision Α.1197/2026 (second period moved to 2.11.2026) | https://www.aade.gr/egkyklioi-kai-apofaseis/1197-30-09-2026 | 2026-10-23 |
-| AADE press release 17.2.2026 | https://www.aade.gr/deltia-typoy-anakoinoseis/deltio-typoy-17022026 | 2026-10-23 |
-| AADE, mandatory e-invoicing page | https://www.aade.gr/node/15728 | 2026-10-23 |
-| AADE, joint decision Α.1198/2026 (digital delivery notes, phase B1 from 1.1.2027) | https://www.aade.gr/egkyklioi-kai-apofaseis/1198-30-09-2026 | 2026-10-23 |
-| AADE circular Ε.2113/2025 (island VAT reduction) | https://www.aade.gr/sites/default/files/2026-01/e2113_2025.pdf | 2026-10-23 |
-| Tax Procedure Code (ν. 5104/2024), AADE codification Ε.2109/2025, arts. 57-58 | https://www.aade.gr/sites/default/files/2025-12/e2109_2025.pdf | 2026-10-23 |
-| VAT Code (ν. 5144/2024), Ministry of Finance codification to ν. 5313/2026, art. 26 | https://minfin.gov.gr/wp-content/uploads/2026/10/Κοινοποίηση-Διοικητικής-Κωδικοποίησης-του-ν.5144-2024-γι.pdf | 2026-10-23 |
+| Source and actual scope read | URL | Read on |
+|---|---|---|
+| A.1128/2025 arts. 1-2: read for transactions, channels, revenue cohort and original dates; dates replaced by the later decisions below | https://www.aade.gr/sites/default/files/2025-09/a1128_2025fek.pdf | 2026-11-16 |
+| A.1044/2026 single article: read for first cohort dates, conditional parallel use and B2G reservation | https://www.aade.gr/sites/default/files/2026-02/a1044fek.pdf | 2026-11-16 |
+| A.1197/2026 and A.1198/2026: read for full four-page Gazette read for second cohort dates/declaration condition and separate delivery phases | https://www.aade.gr/sites/default/files/2026-10/A1197_2026_fek.pdf | 2026-11-16 |
+| A.1129/2025 arts. 3-4: read for timologio declaration, timing/fields and multiple channels, not fresh verification of every incentive condition | https://www.aade.gr/sites/default/files/2025-09/a1129-2025fek.pdf | 2026-11-16 |
+| AADE public e-invoicing page: read for current channel summary, declaration coverage and separate delivery timeline | https://www.aade.gr/node/15728 | 2026-11-16 |
+| AADE 17 February release, both pages: read for dates, free applications including public-contract invoices, non-issue interpretation/fines | https://www.aade.gr/sites/default/files/2026-02/dt_17.02.2026.pdf | 2026-11-16 |
+| AADE technical landing: read for current v2.0.2 and official specification/XSD/combination links, not the uninspected zip's filenames | https://www.aade.gr/mydata/tehnikes-prodiagrafes-ekdoseis-mydata | 2026-11-16 |
+| ERP API v2.0.2: read for registration/headers/endpoints, methods, party/document/summary/failure/classification structures, response/error and retrieval rules, appendix 8.1 invoice-type codes 1.1, 2.1, 5.1 and 5.2 and income categories; selected relevant sections read, not the whole 121 pages | https://www.aade.gr/sites/default/files/2026-09/myDATA%20API%20Documentation%20v2.0.2_official_erp_1.pdf | 2026-11-16 |
+| Ministry Law 4308/2014 text, arts. 7, 9-10, 14-15: read for records, invoice content and integrity; this 2024 text does not establish the later mandatory-issue amendment | https://minfin.gov.gr/wp-content/uploads/2024/02/%CE%9D-4308-2014.pdf | 2026-11-16 |
+| TPC consolidation through Law 5259/2025: read for arts. 13-14, 16, 57(5)-(8), 58 and 83(50); retention, response, transmission and statutory fines, not all later implementing decisions | https://www.aade.gr/sites/default/files/2025-12/e2109_2025.pdf | 2026-11-16 |
+| GSIS provider requirements: read for AADE/PEPPOL certification and interoperability, not every B2G field/profile | https://www.gsis.gr/polites-epiheiriseis/pliromes-kai-eispraxeis/e-invoice/parohoi-ypiresion-ilektronikis-timologisis | 2026-11-16 |
+| GSIS PEPPOL/EN 16931: read for national authority and European semantic standard | https://www.gsis.gr/peppol-eyropaiko-protypo-elot-en-16931 | 2026-11-16 |
 
-Not yet confirmed: the B2G format and channel rules outside Α.1128/2025 (Peppol and EN 16931 statements in this skill are not checked against an official source); the myDATA API and schema versions; the archiving periods in Section 8; whether the second-period date moves again.
+Not yet confirmed: current A.1138/2020 consolidated entity/farmer exemptions, special-entry eligibility, transaction/channel-specific transmission/classification deadlines and VAT/income prefilling deviation tolerances; actual current XSD zip filenames and designation combinations/E3 mapping for the client; provider-specific credentials/signatures, archive/access periods and `/pdf`, `/myDATA`, `/EN16931` URL contract under A.1112/2025 (https://www.aade.gr/sites/default/files/2025-08/a1112_2025fek.pdf); actual outage cure deadlines; exact B2G CIUS/BIS/UBL profile, buyer references and receipt/payment workflow; standalone DOY/retail literal/QR print obligations by channel; a universal EUR 0.01 arithmetic tolerance; legal basis for blanket six-year VAT/indefinite litigation retention, a universal loss of VAT credit solely for a missing MARK (distinct from TPC art. 16(2)), automatic expense classification, myDATA-only precautionary assessment or automatic high-risk classification; current commencement/implementing rules for each art. 58 category and later TPC changes; any later mandate-date change. These are preserved evidence gaps, not operative instructions. VAT/island rate and source detail formerly repeated here lives in `greece-vat-return`, including VAT Code art. 26 and circular E.2113/2025: https://www.aade.gr/sites/default/files/2026-01/e2113_2025.pdf. The old joint-decision landing links are retained for lookup, not as extra freshly read sources: https://www.aade.gr/egkyklioi-kai-apofaseis/mydata-diataxeis/1128-15-09-2025 ; https://www.aade.gr/egkyklioi-kai-apofaseis/mydata-diataxeis/1044-17-02-2026 ; https://www.aade.gr/egkyklioi-kai-apofaseis/1197-30-09-2026 ; https://www.aade.gr/egkyklioi-kai-apofaseis/1198-30-09-2026.
 
 ## Disclaimer
 
