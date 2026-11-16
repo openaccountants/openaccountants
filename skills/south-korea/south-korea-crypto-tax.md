@@ -88,27 +88,27 @@ These national comprehensive-income rates are in the operative 2026 Income Tax A
 
 | Comprehensive taxable base, KRW | Statutory national marginal rate | Official source |
 | --- | --- | --- |
-| Up to 14,000,000 | 6% | [Income Tax Act art. 55(1), article body](https://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=280405&efYd=20260701&chrClsCd=010202); [statutory table image](https://www.law.go.kr/LSW/flDownload.do?flSeq=123278409) |
-| Over 14,000,000 to 50,000,000 | 15% | [Income Tax Act art. 55(1), article body](https://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=280405&efYd=20260701&chrClsCd=010202); [statutory table image](https://www.law.go.kr/LSW/flDownload.do?flSeq=123278409) |
-| Over 50,000,000 to 88,000,000 | 24% | [Income Tax Act art. 55(1), article body](https://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=280405&efYd=20260701&chrClsCd=010202); [statutory table image](https://www.law.go.kr/LSW/flDownload.do?flSeq=123278409) |
-| Over 88,000,000 to 150,000,000 | 35% | [Income Tax Act art. 55(1), article body](https://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=280405&efYd=20260701&chrClsCd=010202); [statutory table image](https://www.law.go.kr/LSW/flDownload.do?flSeq=123278409) |
-| Over 150,000,000 to 300,000,000 | 38% | [Income Tax Act art. 55(1), article body](https://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=280405&efYd=20260701&chrClsCd=010202); [statutory table image](https://www.law.go.kr/LSW/flDownload.do?flSeq=123278409) |
-| Over 300,000,000 to 500,000,000 | 40% | [Income Tax Act art. 55(1), article body](https://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=280405&efYd=20260701&chrClsCd=010202); [statutory table image](https://www.law.go.kr/LSW/flDownload.do?flSeq=123278409) |
-| Over 500,000,000 to 1,000,000,000 | 42% | [Income Tax Act art. 55(1), article body](https://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=280405&efYd=20260701&chrClsCd=010202); [statutory table image](https://www.law.go.kr/LSW/flDownload.do?flSeq=123278409) |
-| Over 1,000,000,000 | 45% | [Income Tax Act art. 55(1), article body](https://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=280405&efYd=20260701&chrClsCd=010202); [statutory table image](https://www.law.go.kr/LSW/flDownload.do?flSeq=123278409) |
+| Up to 14,000,000 | 6% | [Income Tax Act art. 55(1), article body](https://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=280405&efYd=20260701&chrClsCd=010202) |
+| Over 14,000,000 to 50,000,000 | 15% | [Income Tax Act art. 55(1), article body](https://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=280405&efYd=20260701&chrClsCd=010202) |
+| Over 50,000,000 to 88,000,000 | 24% | [Income Tax Act art. 55(1), article body](https://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=280405&efYd=20260701&chrClsCd=010202) |
+| Over 88,000,000 to 150,000,000 | 35% | [Income Tax Act art. 55(1), article body](https://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=280405&efYd=20260701&chrClsCd=010202) |
+| Over 150,000,000 to 300,000,000 | 38% | [Income Tax Act art. 55(1), article body](https://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=280405&efYd=20260701&chrClsCd=010202) |
+| Over 300,000,000 to 500,000,000 | 40% | [Income Tax Act art. 55(1), article body](https://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=280405&efYd=20260701&chrClsCd=010202) |
+| Over 500,000,000 to 1,000,000,000 | 42% | [Income Tax Act art. 55(1), article body](https://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=280405&efYd=20260701&chrClsCd=010202) |
+| Over 1,000,000,000 | 45% | [Income Tax Act art. 55(1), article body](https://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=280405&efYd=20260701&chrClsCd=010202) |
 
 The following quick deductions are equivalent arithmetic, not additional statutory deductions or different rates. For a band with lower boundary L, statutory cumulative tax A at that boundary and marginal rate r, the statute gives A + (taxable base − L) × r. Rewriting it as taxable base × r − (L × r − A) gives the equivalent quick deduction L × r − A. The statutory boundaries and rates are checked in the preceding table; the cumulative amounts below come from the same statutory image.
 
 | Band in preceding statutory table | Equivalent quick-deduction arithmetic | Result, KRW | Official calculation inputs |
 | --- | --- | --- | --- |
-| First | 0 | 0 | [Art. 55(1), statutory table image](https://www.law.go.kr/LSW/flDownload.do?flSeq=123278409) |
-| Second | 14,000,000 × 15% − 840,000 | 1,260,000 | [Art. 55(1), statutory table image](https://www.law.go.kr/LSW/flDownload.do?flSeq=123278409) |
-| Third | 50,000,000 × 24% − 6,240,000 | 5,760,000 | [Art. 55(1), statutory table image](https://www.law.go.kr/LSW/flDownload.do?flSeq=123278409) |
-| Fourth | 88,000,000 × 35% − 15,360,000 | 15,440,000 | [Art. 55(1), statutory table image](https://www.law.go.kr/LSW/flDownload.do?flSeq=123278409) |
-| Fifth | 150,000,000 × 38% − 37,060,000 | 19,940,000 | [Art. 55(1), statutory table image](https://www.law.go.kr/LSW/flDownload.do?flSeq=123278409) |
-| Sixth | 300,000,000 × 40% − 94,060,000 | 25,940,000 | [Art. 55(1), statutory table image](https://www.law.go.kr/LSW/flDownload.do?flSeq=123278409) |
-| Seventh | 500,000,000 × 42% − 174,060,000 | 35,940,000 | [Art. 55(1), statutory table image](https://www.law.go.kr/LSW/flDownload.do?flSeq=123278409) |
-| Eighth | 1,000,000,000 × 45% − 384,060,000 | 65,940,000 | [Art. 55(1), statutory table image](https://www.law.go.kr/LSW/flDownload.do?flSeq=123278409) |
+| First | 0 | 0 | [Art. 55(1), article body with statutory-table text](https://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=280405&efYd=20260701&chrClsCd=010202) |
+| Second | 14,000,000 × 15% − 840,000 | 1,260,000 | [Art. 55(1), article body with statutory-table text](https://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=280405&efYd=20260701&chrClsCd=010202) |
+| Third | 50,000,000 × 24% − 6,240,000 | 5,760,000 | [Art. 55(1), article body with statutory-table text](https://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=280405&efYd=20260701&chrClsCd=010202) |
+| Fourth | 88,000,000 × 35% − 15,360,000 | 15,440,000 | [Art. 55(1), article body with statutory-table text](https://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=280405&efYd=20260701&chrClsCd=010202) |
+| Fifth | 150,000,000 × 38% − 37,060,000 | 19,940,000 | [Art. 55(1), article body with statutory-table text](https://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=280405&efYd=20260701&chrClsCd=010202) |
+| Sixth | 300,000,000 × 40% − 94,060,000 | 25,940,000 | [Art. 55(1), article body with statutory-table text](https://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=280405&efYd=20260701&chrClsCd=010202) |
+| Seventh | 500,000,000 × 42% − 174,060,000 | 35,940,000 | [Art. 55(1), article body with statutory-table text](https://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=280405&efYd=20260701&chrClsCd=010202) |
+| Eighth | 1,000,000,000 × 45% − 384,060,000 | 65,940,000 | [Art. 55(1), article body with statutory-table text](https://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=280405&efYd=20260701&chrClsCd=010202); [official table image: cumulative base](https://www.law.go.kr/LSW/flDownload.do?flSeq=123278409) |
 
 ## The base
 
