@@ -1,7 +1,7 @@
 ---
 name: thailand-pit
 description: "Thailand individual income tax for 2026: ordinary progressive computation, salary expense and supported allowances, family and retirement conditions, filing thresholds by income category, historical/current salary cases and foreign-remittance tracing."
-version: 1.1
+version: 1.2
 jurisdiction: TH
 tax_year: 2026
 last_updated: 2026-11-16
@@ -14,7 +14,7 @@ domain: income-tax
 type: computation
 ---
 
-# Thailand personal income tax v1.1
+# Thailand personal income tax v1.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -92,10 +92,11 @@ Parent relief is not automatically the former 'maximum 4 parents'. Examine each 
 | Non-earning spouse life insurance | At most THB 10,000, qualifying policy and marriage throughout the year; do not grant the own-policy additional exemption to the spouse by analogy | 2026 | [§47(1)(d)](https://www.rd.go.th/5937.html) |
 | Own health insurance | Actual qualifying premium up to THB 25,000; together with the relevant life-insurance relief at most THB 100,000 | 2026 | [MR126 clause 2(97) (amounts in words on the page)](https://www.rd.go.th/2502.html) |
 | Parent health insurance | Actual eligible premium up to THB 15,000, subject to parent/support/income and prescribed conditions; not an automatic per-parent allowance | 2026 | [MR126 clause 2(76) (amount in words on the page)](https://www.rd.go.th/2502.html) |
-| Social security | Actual legally paid employee contribution under the social-security law, not the old universal THB 9,000 annual cap; current contribution computation is in payroll | 2026 | [§47(1)(i)](https://www.rd.go.th/5937.html) |
 | Home-loan interest | Actual qualifying mortgage interest up to THB 100,000 derived from the base THB 10,000 allowance and additional THB 90,000 exemption; eligible lender, residence/mortgage and evidence rules apply | 2026 | [§47(1)(h) and MR126 clause 2(53) (amounts in words on the page)](https://www.rd.go.th/2502.html) |
 | Ordinary donations | Actual qualifying donation, at most 10% of the balance after expenses and preceding allowances; any special enhanced deduction must be tested first | 2026 | [§47(7)](https://www.rd.go.th/5937.html) |
 | Political-party donations | Actual qualifying support, up to THB 10,000 (in words on the page); prescribed party/fundraising conditions apply | 2026 | [§47(1)(l)](https://www.rd.go.th/5937.html) |
+
+**Social security (2026):** Actual legally paid employee contribution under the social-security law, not the old universal THB 9,000 annual cap; current contribution computation is in payroll. [§47(1)(i)](https://www.rd.go.th/5937.html).
 
 Keep a single retirement-cap worksheet: PVD, Government Pension Fund, private-teacher fund, RMF, qualifying pension insurance and National Savings Fund must be cross-checked under the applicable shared-cap provisions. The National Savings Fund topic is retained: MR126 clause 2(90) grants relief for actual statutory contributions and links the shared cap, but its separate current member-contribution ceiling is not established by that tax provision. Do not turn the tax ceiling into permission to contribute that amount. The former THB 30,000 National Savings Fund headline remains unconfirmed here.
 
