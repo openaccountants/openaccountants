@@ -148,7 +148,7 @@ The official Cabinet has public and private parts. Its current help also warns o
 
 Login documentation describes **file/hardware КЕП, MobileID/BankID through id.gov.ua, cloud signatures and Дія.Підпис**. Identification is not proof of signature authority for every document. Validate certificate, role, taxpayer, signing rights and required signature sequence; a seal key is not a person's login signature. ПН201.1 and the electronic-exchange rules allow qualifying advanced signatures based on qualified certificates as specified, not only an unsupported “one signature product for everything”. [Login/authority instructions](https://cabinet.tax.gov.ua/help/login.html); [201.1](https://tax.gov.ua/nk/); [Order 557 procedure](https://cv.tax.gov.ua/media-ark/news-ark/print-1040075.html).
 
-Original provider pointers **ПриватБанк, Privat 24, Дія and Вчасно** are retained, but no current accreditation, universal free issuance or pricing claim is certified here. Official documentation supports login methods; it does not prove every bank/Diia/provider offers a free certificate to every applicant. Choose an accepted actual signer and preserve first/second or specific ЄРПН receipts as applicable. No paid provider is required by this skill.
+Original provider pointers **ПриватБанк, Privat24, Дія and Вчасно** are retained, but no current accreditation, universal free issuance or pricing claim is certified here. Official documentation supports login methods; it does not prove every bank/Diia/provider offers a free certificate to every applicant. Choose an accepted actual signer and preserve first/second or specific ЄРПН receipts as applicable. No paid provider is required by this skill.
 
 ### 9. Route SAF-T UA by actual audit/request status
 
