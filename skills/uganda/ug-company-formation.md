@@ -99,15 +99,15 @@ All sources below were actually read on 16 November 2026 within the stated scope
 
 | Official source | What was read | Read on |
 |---|---|---|
-| [URSB Business Registration](https://ursb.go.ug/services/business-registration/) | Read: Agency remit and official start link; not proof of every company-law requirement | 2026-11-16 |
-| [Companies (Fees) Regulations 2024, SI 40](https://ursb.go.ug/wp-content/uploads/2024/10/Companies-Fees-Regulations-2024.pdf) | Read: Complete four-page instrument, regulations 1-3 and Schedule; published 14 June 2024, replaces SI 75/2023; used with the current URSB listing | 2026-11-16 |
-| [Companies Regulations 2023, SI 74](https://ursb.go.ug/wp-content/uploads/2026/02/The-Companies-Regulations-2023.pdf) | Read: Operative regulations 1-50 and form index read; used here for regulations 2-6, 21, 28-29, 34-37 and 45-46. Separate Act and single-member regulation conditions are not certified | 2026-11-16 |
-| [URA non-individual TIN](https://ura.go.ug/en/domestic-taxes/tin-application/tin-registration-non-individual/) | Read: Full application procedure and all entity rows; older document numbering conflicts with SI 74/2023 | 2026-11-16 |
-| [URA VAT](https://ura.go.ug/en/value-added-tax-vat/?pfstyle=wp) | Read: Mandatory/voluntary registration paragraphs and neighbouring conditions; current UGX 300 million/75 million tests | 2026-11-16 |
-| [URA CG41, 23 October 2026](https://ura.go.ug/en/ask-ura-commissioner-general-41/) | Read: Startup filing calendar and EFRIS obligations; does not establish the instalment amount formula | 2026-11-16 |
-| [URA EFRIS registration](https://ura.go.ug/en/efris/efris-registration/) | Read: Complete three-step procedure, including approval | 2026-11-16 |
-| [URA returns](https://ura.go.ug/en/domestic-taxes/returns/) | Read: Filing process, deadline and extension paragraphs. Its older individual-income threshold is not used as a company-registration test | 2026-11-16 |
-| [URA July 2021 domestic-tax compilation](https://ura.go.ug/wp-content/uploads/2023/08/10580_DT_LAWS_JULY_2021.pdf) | Read: Actual sections 111-112 and neighbouring instalment conditions read online; latest confirmed statutory amount-formula text for the historical example only | 2026-11-16 |
+| [URSB Business Registration](https://ursb.go.ug/services/business-registration/) | Read in the stated section: Agency remit and official start link; not proof of every company-law requirement | 2026-11-16 |
+| [Companies (Fees) Regulations 2024, SI 40](https://ursb.go.ug/wp-content/uploads/2024/10/Companies-Fees-Regulations-2024.pdf) | Read in the stated section: Complete four-page instrument, regulations 1-3 and Schedule; published 14 June 2024, replaces SI 75/2023; used with the current URSB listing | 2026-11-16 |
+| [Companies Regulations 2023, SI 74](https://ursb.go.ug/wp-content/uploads/2026/02/The-Companies-Regulations-2023.pdf) | Read in the stated section: Operative regulations 1-50 and form index read; used here for regulations 2-6, 21, 28-29, 34-37 and 45-46. Separate Act and single-member regulation conditions are not certified | 2026-11-16 |
+| [URA non-individual TIN](https://ura.go.ug/en/domestic-taxes/tin-application/tin-registration-non-individual/) | Read in the stated section: Full application procedure and all entity rows; older document numbering conflicts with SI 74/2023 | 2026-11-16 |
+| [URA VAT](https://ura.go.ug/en/value-added-tax-vat/?pfstyle=wp) | Read in the stated section: Mandatory/voluntary registration paragraphs and neighbouring conditions; current UGX 300 million/75 million tests | 2026-11-16 |
+| [URA CG41, 23 October 2026](https://ura.go.ug/en/ask-ura-commissioner-general-41/) | Read in the stated section: Startup filing calendar and EFRIS obligations; does not establish the instalment amount formula | 2026-11-16 |
+| [URA EFRIS registration](https://ura.go.ug/en/efris/efris-registration/) | Read in the stated section: Complete three-step procedure, including approval | 2026-11-16 |
+| [URA returns](https://ura.go.ug/en/domestic-taxes/returns/) | Read in the stated section: Filing process, deadline and extension paragraphs. Its older individual-income threshold is not used as a company-registration test | 2026-11-16 |
+| [URA July 2021 domestic-tax compilation](https://ura.go.ug/wp-content/uploads/2023/08/10580_DT_LAWS_JULY_2021.pdf) | Read in the stated section: Actual sections 111-112 and neighbouring instalment conditions read online; latest confirmed statutory amount-formula text for the historical example only | 2026-11-16 |
 
 ### Not yet confirmed: non-usable holds
 
