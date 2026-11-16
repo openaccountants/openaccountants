@@ -3,14 +3,13 @@ name: tl-corporate-income-tax
 description: "Source-cited draft: corporate income tax for Timor-Leste (tax year 2026): rates, thresholds and rules with primary-source citations. Unverified; pending local-accountant review."
 jurisdiction: TL
 tax_year: 2026
-last_updated: 2026-11-15
+last_updated: 2026-11-16
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
-status: needs_sources
 domain: income-tax
 category: international
 type: computation
-version: 1.0
+version: 1.1
 ---
 
 # Timor-Leste Corporate Income Tax
