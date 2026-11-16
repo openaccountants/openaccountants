@@ -1,295 +1,293 @@
 ---
 name: sa-zakat
-description: "Use this skill whenever asked about Saudi Arabian Zakat — the religious-origin wealth levy administered by ZATCA (Zakat, Tax and Customs Authority) on Saudi/GCC-owned business activity in the Kingdom of Saudi Arabia. Trigger on phrases like \"Saudi Zakat\", \"ZATCA Zakat\", \"Zakatable base Saudi\", \"2.5% Zakat KSA\", \"Implementing Regulations Zakat\", \"Saudi GCC zakat\", \"mixed entity Saudi\", \"Zakat return KSA\", \"Saudi Hijri filing\", \"Zakat working capital base\", \"Zakat net adjusted profit\", \"mixed ownership Saudi Zakat CIT split\", or \"ZATCA 120 days return\". Covers the 2.5% Hijri rate (2.577% Gregorian-equivalent), Zakatable persons (Saudi/GCC nationals and Saudi/GCC-owned share of capital), the higher-of net adjusted profit vs working capital base computation under the Implementing Regulations issued under Ministerial Resolution 2082 of 1438H (2017) as amended, mixed-entity Saudi/GCC vs foreign proportional split (Zakat on Saudi/GCC share; CIT 20% on foreign share — see sa-corporate-tax), passive entities, financing/banking sector specials, accounting-basis adjustments, and ZATCA portal annual filing within 120 days of fiscal year-end. Out of scope: pure CIT on 100%-foreign-owned entities (see sa-corporate-tax), Withholding Tax (see sa-wht), VAT (see saudi-arabia-vat), e-invoicing (see saudi-einvoice), Excise Tax, Real Estate Transaction Tax (RETT), Customs, oil and hydrocarbon sector special regimes, natural gas investment tax, Saudi Aramco special rate, and individual personal Zakat on non-commercial wealth (mosque/charitable Zakat al-mal outside ZATCA scope). ALWAYS read this skill before touching any Saudi Zakat work."
+description: "Saudi Arabia ZATCA-administered business Zakat for 2026 under the current collection regulations: determine liable ownership and calendar, reconcile equity and liabilities, test deductible assets, adjusted profit and minimum/maximum bases, and prepare the annual workpaper. Covers mixed entities, listed-share exceptions, holding investments, provisions, financing and filing boundaries. Preserves the original Saudi LLC, mixed company and sole-trader historical cases with explicit missing-input decisions. Excludes personal religious Zakat and autonomous financial-sector calculations."
 jurisdiction: SA
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: "2026-11-16"
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
-domain: corporate-tax
+domain: "tax"
+category: "international"
+tax_year_notes: "Current regulations read 16 November 2026; preserved 2025 cases are the 2025-2026 filing cycle. Rate depends on verified calendar and day counts."
+version: "1.1"
+type: "computation"
 ---
 
-# SA Zakat
-
-## Saudi Arabia — Zakat — Skill v1.0
+# Saudi Arabia business Zakat: 2026
 
 > **Produced by OpenAccountants (openaccountants.com)**
 >
-> This skill is for informational purposes only and does not constitute tax, legal, religious, or financial advice. All outputs must be reviewed and signed off by a Saudi-licensed Zakat advisor (SOCPA member or ZATCA-approved consultant) before filing or acting upon. Zakat carries both a fiscal and a religious dimension; this skill addresses only the fiscal compliance administered by ZATCA.
-
-## Rates and thresholds
-
-> Items flagged for further clarification are tracked separately and excluded here.
-> This block is generated from verified `skill_facts` — edit the facts, not the prose.
-
-### Zakat
-
-- **Zakat rate (Hijri year)** — 2.5%  _(Section 1 Article 15(1) Percentage of Zakat - Zakat Implementing Regulation)_
-- **Gregorian-equivalent rate** — 2.5772% (adjusted for 354/365 days)  _(Section 1 Article 15(2) Percentage of Zakat - Zakat Implementing Regulation)_
-- **Saudi nationals — commercial activity** — Subject to Zakat  _(Royal Decree 8634; Zakat Collection in the Kingdom of Saudi Arabia - A FIQH based Perspective)_
-- **GCC nationals — commercial in KSA** — Subject to Zakat (treated as Saudi)  _(Defined in Saudi Definition - Zakat Implementing Regulations)_
-- **Foreign-owned companies** — NOT Zakat — CIT 20% instead  _(Chapter Three - Article 7(A) Tax Rates - Income Tax Law)_
-- **Mixed ownership** — Saudi/GCC share → Zakat; foreign share → CIT 20%  _(Article 2 & 6 of Zakat Implementing Regulations)_
-- **Deadline** — 120 days after fiscal year-end  _(Chapter Five - Article 102(1) Submission of Zakat Return - Zakat Implementing Regulations)_
-
-## Section 1 — Quick Reference
-
-**Quick Reference**
-
-| Field | Value |
-| --- | --- |
-| Country | Kingdom of Saudi Arabia (KSA) |
-| Tax | Zakat — religious wealth levy administered as a fiscal charge |
-| Currency | SAR (Saudi Riyal) |
-| Tax authority | **ZATCA** — Zakat, Tax and Customs Authority (merged from GAZT + Saudi Customs, 2021) |
-| Primary legislation | Royal Decree No. 17/2/28/8634 of 1370H (1950G) establishing the Zakat charge |
-| Implementing Regulations | Ministerial Resolution **No. 2082 of 1438H (2017G)** — Implementing Regulations for Collection of Zakat, as amended (notably amendments in 1442H/2020G, 1444H/2023G, and 1446H/2024-2025) |
-| Standard rate | **2.5%** of the Zakatable base (Hijri lunar year) |
-| Gregorian-equivalent rate | **2.5772%** for taxpayers filing on a Gregorian fiscal year (adjustment ≈ 354/365 inverted to reflect the ~11-day longer Gregorian year — *verify current ZATCA circular*) |
-| Zakatable base | **Higher of**: (a) Net adjusted profit, or (b) Working capital base (capital + reserves + provisions + long-term liabilities + adjusted profit − long-term assets − deferred expenses, with prescribed adjustments) |
-| Zakatable persons | (a) Saudi & GCC natural persons engaged in commercial activity; (b) companies wholly owned by Saudi/GCC nationals; (c) Saudi/GCC-owned share of capital in mixed-ownership companies |
-| Mixed entity | Saudi/GCC share → Zakat 2.5%; foreign share → CIT 20% (see sa-corporate-tax). Same accounting profit, split adjustments |
-| Annual return | Zakat Declaration via ZATCA portal |
-| Filing deadline | Within **120 days** of fiscal year-end |
-| Payment deadline | Same — within 120 days of FYE |
-| Advance instalments | Quarterly advance Zakat may apply for larger taxpayers (threshold per ZATCA notice) |
-| Late-payment penalty | **5% per month** of unpaid Zakat, capped at **25%** |
-| Failure-to-file penalty | Per ZATCA penalty schedule (variable; verify current circular) |
-| Calendar election | Taxpayer may elect Hijri or Gregorian fiscal year; most large taxpayers elect Gregorian (rate adjusted) |
-| Skill version | 1.0 |
+> This skill addresses the fiscal business levy administered by ZATCA. It does not give a religious opinion or calculate personal Zakat on non-commercial wealth. All outputs are preliminary working papers for qualified professional review.
 
-### 1.1 Conservative Defaults
+## Scope
 
-**Conservative Defaults**
+Read before any Saudi business-Zakat computation. Use the current **Implementing Regulations for Zakat Collection 1445**, issued by decision **1007** and amended by decision **1248**, rather than the old 2017 working-capital summary. This is the **2026** method. The original 2025 examples below remain the **2025-2026 filing cycle**, with their calendar and missing classification assumptions disclosed. [Current regulation cover and arts. 1-4, 17-28](https://zatca.gov.sa/en/RulesRegulations/Documents/ZAKAT%20COLLECTION.pdf).
 
-| Ambiguity | Default |
-| --- | --- |
-| Ownership mix unclear | Treat as mixed entity — apply Saudi/GCC vs foreign split |
-| GCC national status of shareholder unclear | Treat as non-GCC foreign (CIT 20% applies to that share) |
-| Hijri vs Gregorian year unclear | Assume Gregorian (use 2.5772% — most common large-taxpayer filing) |
-| Adjustment item categorisation unclear | Treat as **add-back to base** (conservative — increases Zakatable base) |
-| Long-term vs short-term liability classification unclear | Treat as short-term (excluded from working capital additions) |
-| Long-term vs short-term asset classification unclear | Treat as long-term (deducted from working capital base — but verify, this *reduces* base, so the conservative direction depends on which side of "higher of" you sit; default to **whichever yields the higher Zakatable base** as a conservative rule) |
-| Provision deductibility for Zakat purposes unclear | Add to base (conservative) |
-| Financing arrangement Sharia-compliance unclear | Apply standard adjustment rules; flag for advisor |
-| Advance Zakat instalment obligation unknown | Assume required — verify with ZATCA notice |
-| Recent regulation amendment status | Flag "verify latest ZATCA circular (2024-2025 amendments to Implementing Regulations re: financing arrangements and intangibles)" |
+**Quick reference:** identify liable ownership, actual fiscal calendar, financial-statement classifications and the adjusted profit first. Reconcile additions, asset deductions, liability matching and the statutory minimum/maximum. The charge is not invariably the larger of “working capital” and profit, and there is no universal rounded Gregorian rate. Do not default an unidentified owner to foreign, choose the larger tax burden in place of the law or manufacture an entitlement from a registration certificate.
 
-## Section 2 — Required Inputs and Refusal Catalogue
+Ordinary accounts-basis business calculations are covered. Financial-sector, fund, insurance and other special bases require their own method; estimated-basis taxpayers must first be routed to the relevant assessment chapter. CIT, WHT, VAT, e-invoicing, excise, RETT, customs, oil/hydrocarbon and gas-sector calculations are separate jobs. Load [CIT](sa-corporate-tax.md), [WHT](sa-withholding-tax.md), [VAT](saudi-arabia-vat.md), [e-invoicing](saudi-einvoice.md), [excise](sa-excise-tax.md), [RETT](sa-rett.md), [intake](sa-freelance-intake.md) or [return assembly](sa-return-assembly.md) as appropriate.
 
-### 2.1 Required Inputs
+## Ask the client first
 
-- **Minimum viable** — Full-year financial statements (income statement, balance sheet) prepared under SOCPA-endorsed IFRS, a complete shareholder register identifying Saudi/GCC vs foreign ownership percentages at the FYE (and ideally throughout the year), prior-year Zakat return, and confirmation of (i) fiscal calendar election (Hijri vs Gregorian), (ii) advance instalment status, (iii) any sector-specific designation.
-- **Recommended** — General ledger, fixed-asset register (with classification of long-term vs short-term), full schedule of provisions and reserves, related-party transaction schedule, financing arrangement schedule (Sharia-compliant and conventional), commercial registration (CR) and ZATCA Zakat registration certificate.
-- **Ideal** — SOCPA-audited financial statements, full reconciliation from accounting profit to Zakatable net adjusted profit, working capital base worksheet with every line item supported, ownership percentage attestation, ZATCA prior-year assessment notice.
-- **HARD STOP if minimum is missing** — Without financial statements and an ownership breakdown, no Zakat computation may be produced. Ownership identification is the gating fact — it determines Zakat-vs-CIT routing.
+1. Legal form, Saudi residence, activity/licences, actual start/cessation, sector and whether accounts-basis or estimated-basis treatment applies.
+2. Direct/indirect owners, qualifying Saudi/GCC treatment, listed versus founders' shares, year-end percentages and all dated ownership changes.
+3. Exact fiscal start/end, Hijri or Gregorian calendar, actual fiscal days and the applicable Hijri-year day count; prior returns, notices, assessments and instalment approvals.
+4. Complete financial statements and trial balance, including opening-to-closing equity/profit movements, all current/non-current assets and liabilities, book profit after Zakat/tax, adjusted-profit reconciliation, provisions and deferred tax.
+5. Asset, investment, financing, lease, partner-loan, non-trading/trading, prepayment and related-party schedules, with contracts, purpose, classification and supporting certificates.
+6. Prior Zakat payments/certificates, unresolved adjustments, holding/group elections, exemption application, objections and private rulings relied on.
 
-### 2.2 Refusal Catalogue
+No computation without ownership, complete accounts and the calendar. Do not presume a Hijri denominator, choose a Gregorian default or convert an ordinary sole trader into an estimated-basis assessment without establishing its category.
 
-- **R-SA-Z-1** — 100%-foreign-owned entity. No Zakat applies; route entirely to sa-corporate-tax (CIT 20%). Out of scope here.
-- **R-SA-Z-2** — Oil and hydrocarbon sector. Saudi Aramco and upstream oil/gas concessionaires are subject to special tax regimes (rates up to 85% historically; Aramco at 20%/50%/85% tiered post-IPO restructuring). Out of scope. Escalate to a Saudi tax specialist.
-- **R-SA-Z-3** — Natural gas investment tax. Separate regime — out of scope.
-- **R-SA-Z-4** — Banking and insurance sector specials. Certain Zakat base adjustments specific to financial institutions (statutory deposits with SAMA, regulatory capital treatment, technical reserves for insurers) are outside the general Implementing Regulations framework and require specialist sign-off. Skill produces a preliminary computation only; final return MUST be reviewed by a financial-services Zakat specialist.
-- **R-SA-Z-5** — Real Estate Transaction Tax (RETT) interactions. RETT is a separate 5% transactional charge — out of scope.
-- **R-SA-Z-6** — Personal Zakat al-mal on non-commercial wealth. Religious obligation outside ZATCA fiscal scope (personal savings, gold, agricultural Zakat, livestock Zakat). Refer the taxpayer to a religious scholar; not a ZATCA filing.
-- **R-SA-Z-7** — Group / consolidated Zakat. Saudi tax group regime (introduced under amended regulations) and consolidated returns for related Zakat payers are out of scope of v1.0.
-- **R-SA-Z-8** — Permanent establishments / treaty positions. PE attribution under tax treaty rules is out of scope (and largely a CIT question, not Zakat).
-- **R-SA-Z-9** — Disputed assessments / objections. ZATCA appeals before the Tax Violations and Disputes Resolution Committee require licensed representation. Out of scope.
-- **R-SA-Z-10** — Stale regulation reliance. The Implementing Regulations have been amended several times since 2017G, including in 2024-2025G affecting financing arrangements and intangibles. The skill MUST flag "verify latest ZATCA circular" in every output and refuse to finalise without confirmation that the cited regulation version is current.
+## The method, step by step
 
-## Section 3 — Tier 1: The Zakat Charge
+### 1. Identify the liable person, share and period
 
-### 3.1 Nature of the Charge
+The regulation's “Saudi” definition includes GCC nationals accorded the corresponding treatment. Apply residence under art. 4 and principal-headquarters controls under art. 5. Art. 3 covers qualifying resident Saudi activity, Saudi-owned sole establishments/companies, Saudi shares in resident companies, specified funds/state-owned entities and the stated non-Saudi shares in listed resident companies **except non-Saudi founders' shares**. Art. 6 separates income-tax-covered persons/shares and its oil/hydrocarbon-producer ownership exception. A foreign shareholder in a listed company is therefore not automatically ordinary CIT ownership. [Arts. 1, 3-6](https://zatca.gov.sa/en/RulesRegulations/Documents/ZAKAT%20COLLECTION.pdf).
 
-- **Nature of the charge** — Zakat in Saudi Arabia is a hybrid religious-fiscal levy. Its origin is the third Pillar of Islam (obligation to purify wealth by paying 2.5% of qualifying assets held for a lunar year, hawl). The Kingdom has since 1370H (1950G) codified the collection of Zakat from commercial enterprises owned by Saudi nationals as a fiscal charge administered by the state. Since 2021G this is administered by ZATCA (Zakat, Tax and Customs Authority), formed by the merger of the former General Authority of Zakat and Tax (GAZT) and Saudi Customs. The legal basis is Royal Decree No. 17/2/28/8634 of 1370H, with detailed computation rules in the Implementing Regulations for Collection of Zakat issued under Ministerial Resolution No. 2082 of 1438H (2017G), as amended.  _(Royal Decree No. 17/2/28/8634 of 1370H; Ministerial Resolution No. 2082 of 1438H (2017G))_
+Record the beginning of collection using the earliest applicable commercial-registration, necessary-licence or capital-deposit event under art. 10, unless documented evidence supports another accepted start. Temporary inactivity does not automatically end Zakat. Permanent cessation requires notification/evidence; do not leave an inactive registration open and assume no obligation. On continuing activity, death, transfer or legal-form change, apply art. 13. Its ownership allocation is based on owners and shares **at the end of the Zakat year**, irrespective of percentage changes during the year: the old automatic time-weighting default is incorrect. [Arts. 10-13](https://zatca.gov.sa/en/RulesRegulations/Documents/ZAKAT%20COLLECTION.pdf).
 
-### 3.2 The Rate
+Public-benefit, charitable, non-profit and waqf status is conditional. Examine art. 7's permitted disbursements, licence, constitutional documents, audited evidence and annual application; a government or charitable name alone is insufficient. Keep the exemption decision, its period and any cancellation trigger. [Arts. 7-8](https://zatca.gov.sa/en/RulesRegulations/Documents/ZAKAT%20COLLECTION.pdf).
 
-- **Hijri rate** — 2.5% under the Hijri lunar calendar (one hawl = one lunar year ≈ 354.36 days).
-- **Gregorian rate** — 2.5772% (commonly rounded to 2.577% or 2.578%) for taxpayers electing a Gregorian fiscal year — the rate is grossed up to reflect the ~11-day longer Gregorian year so that the effective annualised charge matches the lunar-year obligation. The exact percentage published by ZATCA from time to time should be verified.
+### 2. Determine the calendar-dependent rate
 
-### 3.3 Persons Subject to Zakat
+| Parameter | 2026 rate or rule and conditions | Official source |
+|---|---|---|
+| Full Hijri-year rate | 2.5% of the statutory base | Art. 15(1), [regulation](https://zatca.gov.sa/en/RulesRegulations/Documents/ZAKAT%20COLLECTION.pdf) |
+| Fiscal year differing from Hijri year | **Derived rate = 2.5% ÷ actual applicable Hijri-year days × actual fiscal-year days**; do not round the rate before computing the charge | Art. 15(2), [regulation](https://zatca.gov.sa/en/RulesRegulations/Documents/ZAKAT%20COLLECTION.pdf) |
+| Short commencement period | Period below 354 days is subject to collection under the stated commencement rule | Art. 15(3), [regulation](https://zatca.gov.sa/en/RulesRegulations/Documents/ZAKAT%20COLLECTION.pdf) |
+| Short concluding period | Period below 354 days is not subject to collection under the stated conclusion rule; establish actual permanent cessation | Art. 15(4), [regulation](https://zatca.gov.sa/en/RulesRegulations/Documents/ZAKAT%20COLLECTION.pdf) |
+| Merger producing a new entity | Apply art. 14's special full-year/two-year treatment for short/long periods and calendar; do not automatically use the ordinary short-period rule | Art. 14, [regulation](https://zatca.gov.sa/en/RulesRegulations/Documents/ZAKAT%20COLLECTION.pdf) |
+| Annual public-benefit exemption request | Within 120 days of Zakat year-end, with art. 7 conditions | Art. 7, [regulation](https://zatca.gov.sa/en/RulesRegulations/Documents/ZAKAT%20COLLECTION.pdf) |
 
-**Persons Subject to Zakat**
+The old fixed 2.577% headline and the generated 2.5772% headline are not the exact result of the cited day-count formula. Use the actual period and verified denominator. A day count used in an example below is an **explicit illustrative input**, not a prescribed denominator for every Gregorian year.
 
-| Person | Treatment |
-| --- | --- |
-| Saudi natural person — commercial activity | Subject to Zakat on Zakatable base of the business |
-| GCC national (Bahrain, Kuwait, Oman, Qatar, UAE) natural person — commercial activity in KSA | Subject to Zakat (treated as Saudi for Zakat purposes) |
-| Company wholly owned by Saudi/GCC nationals | Subject to Zakat on entire Zakatable base |
-| Company wholly owned by non-GCC foreign persons | **NOT** Zakat — subject to CIT 20% (see sa-corporate-tax) |
-| Mixed-ownership company | **Split**: Saudi/GCC share % → Zakat 2.5%; foreign share % → CIT 20%. Same accounting profit, proportional split with separately computed adjustments |
-| Listed company shares — Saudi/GCC shareholders | Saudi/GCC-owned proportion of the listed company subject to Zakat |
-| Listed company shares — non-GCC foreign shareholders | Foreign-owned proportion subject to CIT 20% |
-| Government-owned entities | Generally exempt; specific treatment per ZATCA notice |
-| Charitable / non-profit organisations | Generally outside scope; verify registration |
+### 3. Reconcile financial statements and adjusted profit
 
-- **GCC** — GCC = Gulf Cooperation Council: Bahrain, Kuwait, Oman, Qatar, Saudi Arabia, United Arab Emirates. GCC nationals are treated as Saudi nationals for Zakat purposes under reciprocal arrangements.
+Use the standards endorsed by SOCPA and the year-end values in the statement of financial position. Classify current/non-current items under the accounting and statutory rules; for liquidity-format statements apply the regulation's specific realisation/settlement treatment. Fair-value changes follow the stated year-end financial-statement treatment. Do not substitute CIT depreciation/provision rules for Zakat rules. [Arts. 9, 17-20](https://zatca.gov.sa/en/RulesRegulations/Documents/ZAKAT%20COLLECTION.pdf).
 
-### 3.4 Zakatable Base — The "Higher Of" Rule
+Reconcile **adjusted net profit/loss** to **net book profit/loss after Zakat and tax**. The difference, positive or negative, is a distinct addition/adjustment under art. 23(3). Do not add current profit twice when it already forms part of closing equity. Actual, documented, activity-related expenses are tested under arts. 62-65. The accepted-expense provisions include the specified depreciation, bad debts, owners' GOSI-registered remuneration, lawful directors' remuneration, documented wage differences, permitted donations, contractual education benefits, provisions made during the year and paid Zakat/income tax. These are not a licence to deduct any unsupported expense. [Arts. 23(3), 62-65](https://zatca.gov.sa/en/RulesRegulations/Documents/ZAKAT%20COLLECTION.pdf).
 
-- **Zakatable base — higher of** — The Zakatable base is the higher of: (a) Net Adjusted Profit — accounting net profit adjusted per the Implementing Regulations (add-backs for non-deductible items; deductions for already-Zakated items, dividend income from Zakat-paying subsidiaries, etc.). (b) Working Capital Base — a balance-sheet-derived computation: ``` Working Capital Base = Capital (paid-up) + Retained earnings (opening) + Reserves (general, statutory, other) + Provisions (per regulations — most added back) + Long-term liabilities (debt > 1 year, certain financing arrangements) + Adjusted net profit for the year − Net book value of long-term assets (fixed assets, intangibles, investments in long-term subsidiaries) − Deferred expenses / prepayments long-term − Investments in Zakat-paying subsidiaries (to avoid double-Zakat) ± Other adjustments per Implementing Regulations ``` The taxpayer pays Zakat on whichever of (a) or (b) is higher.
+For bad debts, establish prior recognition, activity connection, non-related debtor and an authorised write-off supported by the licensed-accountant certificate, subject to art. 65's specific exceptions. Track reversals/recoveries and avoid a double benefit. For provisions, distinguish their income-statement expense from their balance-sheet classification; their treatment in profit and in equity/liability additions is not the same question. [Arts. 24, 62-65](https://zatca.gov.sa/en/RulesRegulations/Documents/ZAKAT%20COLLECTION.pdf).
 
-Rationale: net adjusted profit captures the income dimension; working capital base captures the wealth dimension (consistent with the religious origin of Zakat as a wealth purification). The "higher of" rule prevents avoidance by either suppressing profit or by structuring capital out of the base.
+### 4. Build the additions and liability-matching schedule
 
-### 3.5 Filing & Payment in Brief
+Start with equity and equivalents at year-end, then qualifying liabilities within the limits of deductible assets and the profit/loss adjustment. Identify share capital, reserves, retained profits/losses, revaluation/other equity, undistributed declared profits and any owner-loan reclassification. Dividends actually distributed follow art. 37, including the anti-reduction provision; losses carried forward and treasury shares reduce equity under their rules. Do not simply add opening retained earnings and the annual profit without the movements to closing balances. [Arts. 21, 23-24, 28-30, 36-41](https://zatca.gov.sa/en/RulesRegulations/Documents/ZAKAT%20COLLECTION.pdf).
 
-- **Annual Zakat Declaration** — Annual Zakat Declaration via ZATCA portal.
-- **Filing due date** — Within 120 days of fiscal year-end (≈ 4 months). For a Gregorian calendar-year taxpayer with FYE 31 December, the deadline is 30 April of the following year.
-- **Payment same window** — Payment same window.
-- **Advance Zakat instalments** — Advance Zakat instalments (quarterly) may apply for larger taxpayers per ZATCA notice — verify thresholds.
-- **Late-payment penalty** — 5% per month, capped at 25%.
+General provisions/equivalents are treated as equity under art. 24; stable obligations to non-owners such as end-of-service/leave provisions are non-current liabilities. Non-current debts, customer advances/instruments, deferred-tax liabilities, contract obligations, lease liabilities and negative derivatives are addressed in art. 29. The name “Murabaha”, “Ijarah” or “Sukuk” alone does not determine the financial-statement or Zakat category. [Arts. 24, 29](https://zatca.gov.sa/en/RulesRegulations/Documents/ZAKAT%20COLLECTION.pdf).
 
-## Section 4 — Tier 2: Computation Details
+Apply art. 25's matching corrections **before finalising additions**:
 
-### 4.1 Mixed Entities — Saudi/GCC vs Foreign Split
+1. Where a non-current asset is **not deducted**, compute its proportion of total non-current assets and exclude that proportion of non-current liabilities from additions, subject to the non-deducted-asset cap.
+2. Where a **current asset is deducted**, add the corresponding proportion of current liabilities using the deducted-current-asset/total-current-asset ratio, subject to the deducted-asset cap.
+3. Total added liabilities may not exceed total deductible assets; check art. 27's minimum-base treatment. Current liabilities also have art. 29(2)'s specific excess-over-current-assets and substantive long-term/repeated-debt rules. They are not all excluded or all included.
 
-- **The mechanics** — 1. Compute the entity's full accounting net profit and full working capital base as if it were a single taxpayer. 2. Identify the ownership percentages at FYE (and ideally weighted across the year if changes occurred — verify ZATCA position). 3. Compute the Saudi/GCC adjusted base and apply 2.5% (or 2.577% Gregorian) Zakat. 4. Compute the foreign adjusted base and apply 20% CIT (cross-reference sa-corporate-tax). 5. Adjustments specific to each regime may differ — for example, the working-capital-base "higher of" rule applies on the Zakat side; CIT applies a profit-only computation.
-- **Where ownership changes mid-year** — The conservative default is time-apportionment of the base, but ZATCA practice on this point has evolved — verify current circular.
-- **Listed companies** — Saudi/GCC-owned float subject to Zakat; foreign-owned float subject to CIT. Practical apportionment usually based on year-end Tadawul shareholder registry, with weighted-average if material movement.
+The source equations are: **excluded non-current liability = non-deducted non-current asset ÷ total non-current assets × non-current liabilities**; **added current liability = deducted current asset ÷ total current assets × current liabilities**, with the statutory caps. [Arts. 20, 23, 25, 29](https://zatca.gov.sa/en/RulesRegulations/Documents/ZAKAT%20COLLECTION.pdf).
 
-### 4.2 Passive Entities
+Partner credit loans are not automatically ordinary long-term debt. For the relevant unlisted/partnership case, art. 30 requires audited statements, liability classification, a defined repayment term, market return and absence of full control by a single owner; otherwise treat the loan as equity. Single-owner company/sole-establishment owner loans follow the specific equity rule. Partner debit loans have art. 31's separate conditions and restrictions; **a loan to a non-Zakat-paying debtor is not automatically deductible**. Do not offset owner/debtor/creditor balances to eliminate additions. [Arts. 30-34](https://zatca.gov.sa/en/RulesRegulations/Documents/ZAKAT%20COLLECTION.pdf).
 
-- **Holding companies — general** — Holding companies whose income is predominantly dividends/interest from subsidiaries face specific Zakat treatment.
-- **Investments in Zakat-paying Saudi/GCC subsidiaries** — Deducted from the working capital base of the parent to avoid double-Zakat (the subsidiary has already paid Zakat on its own base).
-- **Investments in non-Zakat (foreign-owned or non-Zakatable) entities** — NOT deducted — remain in the parent's working capital base.
-- **Dividend income** — Net adjusted profit adjustments depend on the nature of the source.
+### 5. Test each asset deduction by purpose and statutory category
 
-The skill flags any holding/passive structure as requiring specialist sign-off (R-SA-Z-4 adjacent).
+| Asset or investment | Treatment/conditions | Official source |
+|---|---|---|
+| Non-trading investment in a domestic establishment | Non-current classification, non-trading purpose and investee registered/subject to ZATCA collection | Arts. 42-43, [regulation](https://zatca.gov.sa/en/RulesRegulations/Documents/ZAKAT%20COLLECTION.pdf) |
+| Non-trading foreign establishment investment | Non-current, non-trading and separately calculated/reported Zakat with the prescribed licensed-accountant certificate and minimum-base treatment; no blanket disallowance solely because foreign | Arts. 42, 44, [regulation](https://zatca.gov.sa/en/RulesRegulations/Documents/ZAKAT%20COLLECTION.pdf) |
+| Inability to calculate foreign investment's Zakat | Apply art. 46 only with its accepted justifications, data-access and ownership conditions; do not substitute an unsupported net-assets estimate | Art. 46, [regulation](https://zatca.gov.sa/en/RulesRegulations/Documents/ZAKAT%20COLLECTION.pdf) |
+| Investment in a non-subject company or a wholly Zakat-owned external company | Apply the separate certified-computation or domestic-investment treatment in art. 47 | Art. 47, [regulation](https://zatca.gov.sa/en/RulesRegulations/Documents/ZAKAT%20COLLECTION.pdf) |
+| Funds, bonds/sukuk and financing investments | Follow the specific fund/instrument rules; trading purpose and issuer treatment matter | Arts. 26, 42, 45, 55 and special chapters, [regulation](https://zatca.gov.sa/en/RulesRegulations/Documents/ZAKAT%20COLLECTION.pdf) |
+| Fixed assets, capital advances, construction in progress, qualifying non-current contract costs and right-of-use assets | Held for business use, not resale, and within arts. 48-49; net financial-statement value and documentation govern | Arts. 48-49, [regulation](https://zatca.gov.sa/en/RulesRegulations/Documents/ZAKAT%20COLLECTION.pdf) |
+| Intangibles | Held for non-trading purposes; no blanket exclusion of software, goodwill or brands | Art. 50, [regulation](https://zatca.gov.sa/en/RulesRegulations/Documents/ZAKAT%20COLLECTION.pdf) |
+| Biological assets | Apply non-current/use versus current/sale classification, rather than a general fixed-asset label | Art. 51, [regulation](https://zatca.gov.sa/en/RulesRegulations/Documents/ZAKAT%20COLLECTION.pdf) |
+| Inventory/raw materials/spares | Sale inventory and materials in the final product are not ordinary deductions; qualifying non-sale materials/spares and specified current raw materials require art. 52 and current-liability matching | Arts. 25, 52, [regulation](https://zatca.gov.sa/en/RulesRegulations/Documents/ZAKAT%20COLLECTION.pdf) |
+| Employee housing and housing debts | Apply ownership/use and the interest-free/cost-only programme conditions; do not deduct every employee loan | Arts. 53-54, [regulation](https://zatca.gov.sa/en/RulesRegulations/Documents/ZAKAT%20COLLECTION.pdf) |
+| Statutory deposits | Required deposit for the competent authority with no return, under the stated conditions | Art. 56, [regulation](https://zatca.gov.sa/en/RulesRegulations/Documents/ZAKAT%20COLLECTION.pdf) |
+| Deferred-tax asset/liability | Asset is a listed deduction; liability is a listed addition subject to the full matching/base rules | Arts. 26(10), 29(1)(c), [regulation](https://zatca.gov.sa/en/RulesRegulations/Documents/ZAKAT%20COLLECTION.pdf) |
+| Generic long-term prepayment | Classify its underlying purpose: the label alone does not establish a deductible capital advance/asset or contract cost | Arts. 26, 48-49, [regulation](https://zatca.gov.sa/en/RulesRegulations/Documents/ZAKAT%20COLLECTION.pdf) |
 
-### 4.3 Financing and Banking Sector Specials
+Keep deduction evidence and liability matching together. A holding company does not receive a blanket investment deduction, and a passive/temporarily inactive company does not automatically cease collection. Financing, lessor/BOT arrangements, debt instruments and investment funds have further special provisions; refer where those computations are material. [Arts. 11, 35, 42-56, special activity chapters](https://zatca.gov.sa/en/RulesRegulations/Documents/ZAKAT%20COLLECTION.pdf).
 
-- **Banks** — Statutory deposits with SAMA (Saudi Central Bank), regulatory capital, and specific provisioning rules (ECL / IFRS 9 provisions) interact non-trivially with the Zakat base. Recent ZATCA guidance (post-2020) on financing arrangements affects how Murabaha, Ijarah, and Sukuk are treated in the long-term liability and long-term asset categorisation.
-- **Insurers** — Technical reserves, unearned premium reserves, and Takaful pool treatment differ from conventional accounting reserve treatment under the Implementing Regulations.
-- **Both sectors** — Out of scope for autonomous computation by this skill — preliminary indicative only; require specialist sign-off (R-SA-Z-4).
+### 6. Apply the minimum and maximum, then ownership and rate
 
-### 4.4 Accounting Basis Adjustments
+1. Compute the **raw base** from art. 23 additions less art. 26 deductions after the matching rules.
+2. Check art. 27. If raw base is below adjusted net profit, its alternative base is the **lower of adjusted net profit and non-deducted assets plus the adjusted-profit/book-profit difference**. This is why “always use the higher of raw working capital and profit” is wrong. If raw base is negative and there is no adjusted net profit, art. 27(3) gives no accountable base; if raw base is positive with no adjusted profit, art. 27(4) uses the positive result.
+3. Check art. 28's maximum: year-end **equity and equivalents plus the adjusted-profit/book-profit difference**, including prescribed reclassifications. Reconcile the bounds and full balance sheet; if the proposed bounds conflict, stop for a complete statutory calculation rather than choosing an unsupported precedence or forcing a negative charge.
+4. For an ordinary mixed entity, determine the liable ownership share under the regulation, then apply the verified calendar rate to that Zakat base. Prepare a **separate** CIT profit-based calculation for relevant foreign ownership. Credits/payments and any approved instalments reconcile against each liability separately.
 
-- **Accounting basis** — Saudi entities prepare statements under SOCPA-endorsed IFRS (mandatory for listed companies and large entities; IFRS-SME for smaller). The Zakat computation starts from these statements and applies fiscal adjustments.
+Record raw base, alternate-minimum test, maximum, ownership allocation, rate/day counts and final charge as separate lines. No unexplained balancing amount is allowed. [Arts. 13, 15, 21, 23-29](https://zatca.gov.sa/en/RulesRegulations/Documents/ZAKAT%20COLLECTION.pdf).
 
-**Typical Zakat treatment of items**
+### 7. Holding groups, related parties and special sectors
 
-| Item | Typical Zakat treatment |
-| --- | --- |
-| Provisions (general, doubtful debts, etc.) | Added back to working capital base (conservative); reversal on utilisation may reduce base |
-| Depreciation | Accounting depreciation generally accepted; specific limits per regulations on certain asset classes |
-| Loans to related parties (non-Zakatable) | Treated as long-term asset deduction from base (reducing Zakatable base) — but flag for anti-avoidance review |
-| Loans from related parties | Long-term liability addition only if genuine long-term financing |
-| Intangibles (goodwill, brands, software) | Recent 2024-2025 amendments — **verify latest ZATCA circular** |
-| Sharia-compliant financing (Murabaha, Ijarah, Sukuk) | Re-characterised per ZATCA guidance; substance-over-form approach |
-| Foreign-currency translation differences | Per Implementing Regulations; generally follow accounting treatment |
-| Deferred tax assets/liabilities | Generally not adjusted into Zakat base (Zakat is not a profit tax) |
+Eligible companies with the same owners and a holding company with fully owned direct/indirect subsidiaries may use the consolidated-accounts/return provisions of art. 16. Check the complete ownership chain, separate information returns and ZATCA approval before ceasing consolidation. Other subsidiaries remain separately accountable; do not import the CIT no-consolidation rule or consolidate any majority-owned group. [Art. 16](https://zatca.gov.sa/en/RulesRegulations/Documents/ZAKAT%20COLLECTION.pdf).
 
-- **Critical flag — 2024-2025 amendments** — Recent amendments to the Implementing Regulations have clarified treatment of certain financing arrangements and intangibles. Every output of this skill MUST include the line: "Treatment of [financing arrangement / intangible item] requires verification against the latest ZATCA circular (2024-2025 amendments to Implementing Regulations)."
-
-## Section 5 — Worked Examples
-
-### 5.1 Example A — 100% Saudi-Owned LLC (Simple Trading Company)
-
-**Example A facts and figures**
-
-| Item | SAR |
-| --- | --- |
-| Paid-up capital | 5,000,000 |
-| Retained earnings (opening) | 3,200,000 |
-| Statutory reserve | 500,000 |
-| General provisions (added back) | 200,000 |
-| Long-term bank loan (Sharia-compliant Murabaha) | 4,000,000 |
-| Adjusted net profit for the year | 1,800,000 |
-| Net book value of fixed assets (long-term) | 6,500,000 |
-| Long-term prepayments | 300,000 |
-
-Riyadh-based Saudi LLC, 100% Saudi-owned, FYE 31 December 2025G (Gregorian — rate 2.577%).
-
-- **Working capital base calculation** — = 5,000,000 + 3,200,000 + 500,000 + 200,000 + 4,000,000 + 1,800,000 − 6,500,000 − 300,000 = 7,900,000
-
-**Net adjusted profit**: 1,800,000
-
-**Higher of**: 7,900,000
-
-**Zakat at 2.577%**: 7,900,000 × 2.577% = **SAR 203,583**
-
-Filing deadline: 30 April 2026G. Pay via ZATCA portal. Late-payment penalty 5%/month capped 25% if missed.
-
-### 5.2 Example B — 60/40 Saudi/Foreign Mixed Entity
-
-**Facts**: KSA LLC, 60% Saudi national / 40% Cayman-resident shareholder. FYE 31 December 2025G. Same balance-sheet facts as Example A.
-
-**Step 1 — Single-entity base**: as Example A, working capital base = 7,900,000; net adjusted profit = 1,800,000.
-
-**Step 2 — Saudi/GCC share (60%)**:
-- Saudi-share working capital base = 7,900,000 × 60% = 4,740,000
-- Saudi-share net adjusted profit = 1,800,000 × 60% = 1,080,000
-- Higher of = 4,740,000
-- Zakat at 2.577% = **SAR 122,150**
-
-**Step 3 — Foreign share (40%) — CIT (see sa-corporate-tax)**:
-- Foreign-share taxable profit = 1,800,000 × 40% = 720,000 (with foreign-specific CIT adjustments — *not* the working-capital-base method, which is Zakat-only)
-- CIT at 20% = **SAR 144,000** (illustrative — see sa-corporate-tax for full adjustments)
-
-**Step 4 — Combined liability**: Zakat 122,150 + CIT 144,000 = **SAR 266,150 total**.
-
-Both filed via ZATCA portal within 120 days of FYE. Zakat declaration and CIT declaration are typically filed together as a unified Mixed Entity Declaration.
-
-### 5.3 Example C — Individual Saudi National Sole Trader
-
-**Facts**: Saudi individual operating a sole-trader trading business under a Commercial Registration. FYE 31 December 2025G. Net adjusted profit SAR 450,000; working capital base SAR 380,000.
-
-- Higher of: 450,000 (net adjusted profit wins).
-- Zakat at 2.577% = **SAR 11,597**.
-- Personal non-commercial Zakat al-mal on the individual's personal savings/gold/etc. is **outside ZATCA scope** (R-SA-Z-6) — refer to a religious scholar.
-- Filing deadline: 30 April 2026G.
-
-## Section 6 — Filing and Payment
-
-### 6.1 Process
-
-- **Filing process steps** — 1. **Register / verify Zakat Number** — taxpayers should be registered with ZATCA at incorporation (Commercial Registration triggers ZATCA registration). 2. **Prepare financial statements** under SOCPA-endorsed IFRS. 3. **Compute Zakat base** — both net adjusted profit and working capital base; take higher. 4. **Mixed entities** — also compute CIT for foreign share (cross-reference sa-corporate-tax). 5. **File Zakat Declaration** on the ZATCA portal (https://zatca.gov.sa) — login via taxpayer credentials or licensed representative. 6. **Upload supporting documents** — financial statements, ownership schedule, base computation worksheet. 7. **Pay** via SADAD (Saudi national payments system) or other ZATCA-approved channel within 120 days of FYE. 8. **Obtain Zakat Certificate** (شهادة الزكاة) — required to renew Commercial Registration, bid for government contracts, and clear customs.
-
-### 6.2 Advance Instalments
-
-- **Advance instalments detail** — Larger taxpayers (threshold per ZATCA notice — verify current) may be required to pay quarterly advance Zakat instalments based on prior-year liability, with reconciliation in the annual return. Penalties for missed instalments apply per ZATCA penalty schedule.
-
-### 6.3 Penalties
-
-- **Late payment** — 5% per month of unpaid Zakat, capped at 25%.
-- **Failure to file** — variable penalty per ZATCA schedule.
-- **Inaccurate return / under-declaration** — ZATCA assessment with penalty (verify current circular).
-- **Failure to register** — separate penalty.
-
-### 6.4 Zakat Certificate
-
-- **Uses of Zakat Certificate** — A current-year Zakat Certificate from ZATCA is required to: - Renew the Commercial Registration (annually). - Bid for or be paid on government contracts. - Clear goods through customs (linked to ZATCA's unified ID). - Transfer real estate (interaction with RETT). The certificate is issued upon successful filing and payment.
-
-## Section 7 — Conservative Defaults (Reprise)
-
-When in doubt:
-
-1. **Treat as mixed entity** with foreign-share default — produces both a Zakat number and a CIT number; reviewer can collapse to pure Zakat if pure Saudi ownership is later confirmed.
-2. **Use Gregorian rate 2.577%** as the default — the most common large-taxpayer filing basis.
-3. **For each adjustment**, ask: "Does this increase or decrease the Zakatable base?" Default to the direction that **increases the base** unless a clear regulation or ruling supports the reduction.
-4. **Always flag**: "Treatment of [item] requires verification against the latest ZATCA circular (2024-2025 amendments)."
-5. **Refuse to finalise** banking/insurance computations — preliminary only; route to a financial-services Zakat specialist.
-6. **Refuse to finalise** any return without sign-off by a SOCPA-licensed Zakat advisor.
-
-## Section 8 — Sources
-
-### 8.1 Primary Legislation
-
-- **Primary legislation list** — - Royal Decree No. 17/2/28/8634 of 1370H (1950G) — establishment of the Zakat charge on commercial activity in the Kingdom. - Ministerial Resolution No. 2082 of 1438H (2017G) — Implementing Regulations for the Collection of Zakat, as amended. - Subsequent amendments — notably 1442H/2020G, 1444H/2023G, and 1446H/2024-2025G (clarifications on financing arrangements and intangibles — verify latest published version on the ZATCA portal).
-
-### 8.2 Administering Body
-
-- **ZATCA** — ZATCA — Zakat, Tax and Customs Authority (Hay'at al-Zakat wa al-Dareeba wa al-Jamarik). Formed 2021G from merger of GAZT and Saudi Customs. Portal: https://zatca.gov.sa.
-
-### 8.3 Related Skills
-
-- **Related skills list** — - sa-corporate-tax — CIT 20% on foreign-owned share of mixed entities and on 100%-foreign-owned entities. - sa-wht — Withholding Tax on payments to non-residents. - saudi-arabia-vat — VAT 15% (since July 2020). - saudi-einvoice — FATOORAH e-invoicing. - foundation — OpenAccountants foundation skill.
-
-### 8.4 Verification Discipline
-
-Every output of this skill MUST end with:
-
-> "This Zakat computation is preliminary. The Zakat base is provisional pending verification against the latest ZATCA circular (most recently amended 1446H/2024-2025G affecting financing arrangements and intangibles). The final return MUST be reviewed and signed off by a SOCPA-licensed Zakat advisor or ZATCA-approved consultant before submission to the ZATCA portal."
-
-## End of sa-zakat skill v1.0.
+Transfer-pricing instructions apply under art. 22. Keep associated-party financing and investment evidence and the relevant disclosure/valuation analysis. The [CIT skill](sa-corporate-tax.md) distinguishes disclosure, master/local files and CbCR, but its ordinary CIT/mixed small-enterprise test is not a Zakat-only phased threshold. The Zakat-only implementation and exemptions must be checked against the actual applicable TP instrument before claiming relief. [Art. 22](https://zatca.gov.sa/en/RulesRegulations/Documents/ZAKAT%20COLLECTION.pdf); [TP Bylaws arts. 1, 14-19](https://zatca.gov.sa/ar/RulesRegulations/Taxes/Documents/Transfer%20Pricing%202019%20%D8%AA%D8%B9%D9%84%D9%8A%D9%85%D8%A7%D8%AA%20%D8%AA%D8%B3%D8%B9%D9%8A%D8%B1%20%D8%A7%D9%84%D9%85%D8%B9%D8%A7%D9%85%D9%84%D8%A7%D8%AA.pdf).
+
+Banks/financing activities, insurance/reinsurance, funds, BOT/lessor structures and specialised entities have separate chapters and cannot be completed by this ordinary-base shortcut. Regulatory deposits, capital, credit-loss provisions, technical reserves and participant pools require that sector method. Keep the original financing/intangible review discipline, but replace a generic “latest circular” caveat with the actual contract, applicable provision and unresolved fact. [Regulation special-activity provisions; arts. 35, 49-56](https://zatca.gov.sa/en/RulesRegulations/Documents/ZAKAT%20COLLECTION.pdf).
+
+## Boundary and exception table
+
+| Situation | Action |
+|---|---|
+| Ordinary wholly foreign taxable ownership | Route to CIT after checking listed-share and other ownership exceptions. |
+| Ownership changes during continuing activity | Use art. 13 year-end rule, documenting changes; no automatic time weighting. |
+| General provision versus stable third-party obligation | Classify as equity-equivalent or liability as prescribed; separately reconcile the expense. |
+| Partner loan/foreign investment/intangible | Apply the specific conditions; no default base-increasing or base-reducing shortcut. |
+| Sole trader with no qualifying accounts | Determine estimated-basis chapter/assessment before any accounts-basis example. |
+| Charity, state entity, waqf or public-benefit claim | Obtain constitutional/licensing evidence, annual application and actual eligibility/decision. |
+| Personal savings, gold or religious Zakat al-mal | Outside this fiscal skill; refer for the personal/religious inquiry. |
+| Active assessment, objection or private ruling | Preserve notices and obtain the original instrument and specialist review. |
+
+## Worked cases
+
+The original entities and periods below are preserved as the **2025-2026 filing cycle**. All amounts are illustrative inputs, not legal thresholds. For the Gregorian arithmetic scenarios, **365 fiscal days and a verified 354-day Hijri denominator are explicitly assumed inputs**; confirm the actual legal denominator before a real return. The formula retains full precision until the charge is rounded.
+
+### A. Riyadh-based 100%-Saudi-owned LLC: prepayment classification decides the base
+
+Preserve the original **31 December 2025** year-end and figures: capital **SAR 5,000,000**, opening retained earnings **SAR 3,200,000**, statutory reserve **SAR 500,000**, general provision **SAR 200,000**, long-term bank Murabaha **SAR 4,000,000**, adjusted net profit **SAR 1,800,000**, fixed assets **SAR 6,500,000** and non-current prepayment **SAR 300,000**.
+
+To make the illustration executable, assume the movement reconciliation establishes that all profit is retained, no dividends/other movements occurred, the provision is not already counted in equity, book/adjusted profit difference is zero, these are the only non-current assets/liabilities, and the loan/provision/asset conditions are met. Equity/equivalents are then **SAR 10,700,000**. Those are disclosed additional conditions, not facts inferred for an actual client.
+
+**Route A1:** if the prepayment is a qualifying capital-asset advance or other art. 49 deduction, deductible assets are **SAR 6,800,000**, all **SAR 4,000,000** qualifying long-term debt is within that limit, and raw base is **SAR 7,900,000**. Neither the profit minimum nor equity maximum changes it. The exact assumed-day charge is **SAR 203,637.01**, not the old SAR 203,583 obtained by prematurely using 2.577%. [Arts. 15, 23-29, 48-49](https://zatca.gov.sa/en/RulesRegulations/Documents/ZAKAT%20COLLECTION.pdf).
+
+**Route A2:** if the same non-current prepayment is not deductible, do not simply add SAR 300,000 to the base. Art. 25 first excludes **SAR 176,470.59** of non-current debt from additions, derived as 300,000 ÷ 6,800,000 × 4,000,000. The corrected raw base is **SAR 8,023,529.41**. Obtain the prepayment contract and full balance sheet before choosing a route. This is a statutory classification decision, not an election for the cheaper amount.
+
+```oa-check
+name: Historical Saudi LLC qualifying versus non-deductible non-current prepayment
+inputs:
+  capital: 5000000
+  retained_earnings_before_current_profit: 3200000
+  reserve: 500000
+  general_provision: 200000
+  retained_current_profit: 1800000
+  long_term_debt: 4000000
+  fixed_assets: 6500000
+  non_current_prepayment: 300000
+  fiscal_days: 365
+  verified_hijri_days: 354
+steps:
+  - equity_equivalents: capital + retained_earnings_before_current_profit + reserve + general_provision + retained_current_profit
+  - deductible_assets_if_qualifying: fixed_assets + non_current_prepayment
+  - base_if_qualifying: equity_equivalents + min(long_term_debt, deductible_assets_if_qualifying) - deductible_assets_if_qualifying
+  - charge_if_qualifying: base_if_qualifying * 0.025 * fiscal_days / verified_hijri_days
+  - excluded_debt_if_not_qualifying: min(non_current_prepayment, non_current_prepayment / (fixed_assets + non_current_prepayment) * long_term_debt)
+  - added_debt_if_not_qualifying: min(long_term_debt - excluded_debt_if_not_qualifying, fixed_assets)
+  - base_if_not_qualifying: equity_equivalents + added_debt_if_not_qualifying - fixed_assets
+expected:
+  equity_equivalents: 10700000
+  base_if_qualifying: 7900000
+  charge_if_qualifying: 203637.01
+  excluded_debt_if_not_qualifying: 176470.59
+  base_if_not_qualifying: 8023529.41
+```
+
+The ordinary historical annual deadline is **30 April 2026**, derived from art. 102 for this year-end. The old generic 5%-per-month/capped-at-25% Zakat penalty is not used.
+
+### B. Same LLC, 60% Saudi/40% Cayman ownership
+
+Preserve the original **31 December 2025**, same balance-sheet facts and **60% Saudi national/40% Cayman-resident shareholder**. Use route A1 only if its conditions and year-end ownership are established. The Saudi share of the base is **SAR 4,740,000**, and the corresponding profit input is **SAR 1,080,000**; they remain different measures. Under the explicit day-count assumptions the Zakat charge is **SAR 122,182.20**. The old rounded-rate SAR 122,150 is reconciled to the exact formula. [Arts. 13, 15, 21-29](https://zatca.gov.sa/en/RulesRegulations/Documents/ZAKAT%20COLLECTION.pdf).
+
+For the separate [CIT](sa-corporate-tax.md) workpaper, assume its adjustments independently confirm **SAR 720,000** foreign-share taxable profit and the owner skill's ordinary method gives **SAR 144,000**. Combining those two **conditional**, independently derived liabilities gives **SAR 266,182.20**, rather than the original unconditional SAR 266,150. Cayman residence does not establish all tax adjustments or WHT/treaty positions.
+
+```oa-check
+name: Historical mixed LLC Zakat allocation and separate CIT handoff
+inputs:
+  verified_full_zakat_base: 7900000
+  saudi_share: 0.60
+  independently_computed_foreign_share_cit: 144000
+  fiscal_days: 365
+  verified_hijri_days: 354
+steps:
+  - saudi_base: verified_full_zakat_base * saudi_share
+  - zakat: saudi_base * 0.025 * fiscal_days / verified_hijri_days
+  - combined_conditional_liabilities: zakat + independently_computed_foreign_share_cit
+expected:
+  saudi_base: 4740000
+  zakat: 122182.20
+  combined_conditional_liabilities: 266182.20
+```
+
+### C. Saudi individual sole trader: the alternate minimum needs an asset input
+
+Preserve the original Saudi individual trading under a commercial registration, **31 December 2025**, adjusted profit **SAR 450,000** and raw base **SAR 380,000**. Establish accounts-basis treatment first. These two figures alone do **not** prove the old SAR 450,000 base: art. 27 also needs non-deducted assets and the book/adjusted-profit difference, plus art. 28's maximum.
+
+For a transparent sensitivity, assume zero profit difference and an equity maximum of at least **SAR 450,000**. If verified non-deducted assets are **SAR 600,000**, the alternate minimum is SAR 450,000 and assumed-day charge **SAR 11,599.58**. If instead those assets are **SAR 400,000**, the alternate minimum/base is SAR 400,000 and charge **SAR 10,310.73**. The missing asset evidence decides the result; do not label either assumption a client fact. The original SAR 11,597 was a rounded-rate result on an incompletely established base. Personal non-commercial savings/gold remain outside this fiscal computation. [Arts. 15, 27-28](https://zatca.gov.sa/en/RulesRegulations/Documents/ZAKAT%20COLLECTION.pdf).
+
+```oa-check
+name: Sole trader alternate minimum changes with verified non-deducted assets
+inputs:
+  adjusted_profit: 450000
+  raw_base: 380000
+  profit_difference: 0
+  non_deducted_assets_scenario_a: 600000
+  non_deducted_assets_scenario_b: 400000
+  fiscal_days: 365
+  verified_hijri_days: 354
+steps:
+  - alternate_base_a: min(adjusted_profit, non_deducted_assets_scenario_a + profit_difference)
+  - alternate_base_b: min(adjusted_profit, non_deducted_assets_scenario_b + profit_difference)
+  - charge_a: alternate_base_a * 0.025 * fiscal_days / verified_hijri_days
+  - charge_b: alternate_base_b * 0.025 * fiscal_days / verified_hijri_days
+expected:
+  alternate_base_a: 450000
+  alternate_base_b: 400000
+  charge_a: 11599.58
+  charge_b: 10310.73
+```
+
+## When to refuse or refer
+
+Preserve the original refusal identifiers and apply the corrected boundaries:
+
+- **R-SA-Z-1:** ordinary wholly foreign taxable ownership: route to CIT, checking statutory listed-share/other exceptions first.
+- **R-SA-Z-2:** oil/hydrocarbon/gas special ownership or concession: specialist regime, not this ordinary Zakat shortcut.
+- **R-SA-Z-3:** natural-gas investment tax: separate statutory regime, outside this ordinary Zakat computation.
+- **R-SA-Z-4:** financial-sector/financing/insurance special bases: no autonomous sector calculation. Holding/passive structures also require the investment and consolidation tests, rather than a blanket deduction.
+- **R-SA-Z-5:** RETT interactions: load the separate property-transaction skill; do not combine its base with Zakat.
+- **R-SA-Z-6:** individual personal religious Zakat, including savings, gold, agricultural and livestock Zakat: outside this fiscal method; refer for that separate inquiry.
+- **R-SA-Z-7:** group/consolidated Zakat: the art. 16 overview identifies conditions, but a complete consolidated return requires a separate group workpaper and review.
+- **R-SA-Z-8:** PE attribution or treaty positions: obtain the actual treaty/facts and route the CIT component to CIT.
+- **R-SA-Z-9:** disputed assessments, objections and appeals: preserve notices and obtain licensed dispute review; do not pre-empt the disputed calculation.
+- **R-SA-Z-10:** stale regulation or unidentified circular: verify the applicable current text and version before finalising; record the actual financing/intangible provision and unresolved fact.
+
+Also hold for an unverified calendar/denominator, unexplained opening-to-closing equity, unsupported asset deduction, partner loan, treaty/foreign ownership issue or unidentified special instrument. The original instruction to flag financing/intangible uncertainty remains: identify **which arrangement/item, provision and missing evidence** needs review. Do not substitute an unspecified circular or a default base-increasing adjustment for research.
+
+## Filing and payment
+
+1. Confirm ZATCA registration **before the end of the initial fiscal year** and the actual commencement date; verify the account rather than assuming the commercial-registration link completed every tax action. [Arts. 10, 98](https://zatca.gov.sa/en/RulesRegulations/Documents/ZAKAT%20COLLECTION.pdf).
+2. Prepare Arabic supporting documents and the accounts-basis approved return in ZATCA's system. Reconcile financial-statement values, additions, matching, deductions, adjusted profit, limits, ownership, day counts and charge. Attach the financial statements and required schedules/certificates for the actual case. The declaration is not a substitute for the workpapers and this skill does not invent current box numbers. [Arts. 98-99, 102](https://zatca.gov.sa/en/RulesRegulations/Documents/ZAKAT%20COLLECTION.pdf).
+3. File and pay within **120 days of Zakat year-end**. If the final day is an official holiday, the deadline moves to the **first following working day**. Pay through **SADAD** or another accepted means and retain return/payment acknowledgements. [Art. 102](https://zatca.gov.sa/en/RulesRegulations/Documents/ZAKAT%20COLLECTION.pdf).
+4. Retain return-supporting documents in the Kingdom for **at least 10 years** and supply requested evidence under the applicable notice/procedure. Correct a discovered error by requesting amendment; the approved amendment has its own completion period. [Arts. 103-105, 110-111](https://zatca.gov.sa/en/RulesRegulations/Documents/ZAKAT%20COLLECTION.pdf).
+5. Reconcile the Zakat certificate and any outstanding balance/assessment to the actual ZATCA account. Do not promise certificate issuance merely from a submitted form or assert a universal certificate prerequisite for CR confirmation, every customs clearance or every property transfer without the relevant service rule.
+
+### Late payment, instalments and assessment boundaries
+
+| Procedure | Current rule/condition | Official source |
+|---|---|---|
+| Ordinary return/payment | 120 days after year-end; holiday adjustment as above | Art. 102, [regulation](https://zatca.gov.sa/en/RulesRegulations/Documents/ZAKAT%20COLLECTION.pdf) |
+| Permanent-cessation notification | Written application within 60 days of cessation, with the stated effect of delayed notice | Art. 11, [regulation](https://zatca.gov.sa/en/RulesRegulations/Documents/ZAKAT%20COLLECTION.pdf) |
+| Supporting-document retention | At least 10 years within the Kingdom | Art. 110, [regulation](https://zatca.gov.sa/en/RulesRegulations/Documents/ZAKAT%20COLLECTION.pdf) |
+| Correction following approved amendment request | Complete within 30 days; otherwise reapply | Art. 103(2), [regulation](https://zatca.gov.sa/en/RulesRegulations/Documents/ZAKAT%20COLLECTION.pdf) |
+| Ordinary assessment/correction | Generally 5 years from statutory return deadline; art. 106 defines extended and unrestricted cases | Art. 106, [regulation](https://zatca.gov.sa/en/RulesRegulations/Documents/ZAKAT%20COLLECTION.pdf) |
+| Extended assessment | 10 years for listed late/incomplete/non-compliant/non-payment/non-filing situations; evasion, consent/request and non-registration have their stated special treatment | Art. 106, [regulation](https://zatca.gov.sa/en/RulesRegulations/Documents/ZAKAT%20COLLECTION.pdf) |
+| Late-payment collection demands | Successive demands with the stated 30-day periods, then statutory recovery procedures; not an invented generic monthly percentage | Art. 120, [regulation](https://zatca.gov.sa/en/RulesRegulations/Documents/ZAKAT%20COLLECTION.pdf) |
+
+An instalment plan requires the actual request/approval under art. 118, with reasons, liabilities, proposed payments and supporting documents. Breach can cancel the plan under art. 119; do not automatically apply CIT's advance-instalment formula to Zakat. Larger-taxpayer quarterly notices and any individual collection arrangement must be read before use. [Arts. 94, 117-120](https://zatca.gov.sa/en/RulesRegulations/Documents/ZAKAT%20COLLECTION.pdf).
+
+False or incomplete information can produce an assessment, assumptions and statutory recovery; art. 115's advance warning and art. 116's objection-payment/guarantee conditions matter in a dispute. No generic “5% per month capped at 25%” Zakat charge, failure-to-file schedule or blanket tax-amnesty entitlement is established by these provisions. Refer live disputes with the original notice, dates and undisputed amounts rather than inventing the sanction. [Arts. 105-106, 112-120](https://zatca.gov.sa/en/RulesRegulations/Documents/ZAKAT%20COLLECTION.pdf).
+
+## Completion checklist
+
+- Ownership/residence, listed-share exceptions, activity category and commencement/cessation are documented.
+- Equity is closing equity, not a double-count of retained/current profit; adjusted profit follows Zakat rules.
+- Every liability addition and asset deduction has its specific legal test; matching and owner-loan restrictions are applied.
+- Raw, alternative minimum and maximum bases reconcile; actual calendar/day counts determine the unrounded rate.
+- Zakat, CIT and WHT are separate workpapers; filing, payment, certificate and notice evidence agree.
+- The output states: **“This Zakat computation is preliminary. The stated base, classification, calendar and identified unresolved items require qualified Saudi Zakat review and sign-off before submission.”**
+
+## Sources
+
+| Official text | Actual reading on 2026-11-16 |
+|---|---|
+| [Implementing Regulations for Zakat Collection 1445, decisions 1007 and 1248](https://zatca.gov.sa/en/RulesRegulations/Documents/ZAKAT%20COLLECTION.pdf) | Read on 2026-11-16. Read cover and arts. 1-29, 30-56, 62-65, 92-106, 110-120 and 126-128 for population, residence, period, rates, ordinary accounts/base, financing/investments, procedure and interpretation boundaries. Special-sector chapters are identified as a handoff, not claimed as a complete sector-method review. |
+| [TP Bylaws, official amended scanned consolidation](https://zatca.gov.sa/ar/RulesRegulations/Taxes/Documents/Transfer%20Pricing%202019%20%D8%AA%D8%B9%D9%84%D9%8A%D9%85%D8%A7%D8%AA%20%D8%AA%D8%B3%D8%B9%D9%8A%D8%B1%20%D8%A7%D9%84%D9%85%D8%B9%D8%A7%D9%85%D9%84%D8%A7%D8%AA.pdf) | Read on 2026-11-16. Read relevant definitions and arts. 14-19 for the distinction between disclosure, documentation and CbCR; Zakat-only phase/threshold application remains an explicit boundary rather than borrowing the CIT test. |
+| [Income Tax Law](https://zatca.gov.sa/ar/HelpCenter/guidelines/Documents/%D9%86%D8%B8%D8%A7%D9%85%20%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9%20%D8%A7%D9%84%D8%AF%D8%AE%D9%84.pdf) | Read on 2026-11-16. Read arts. 2, 6-7 and ownership-related boundaries for the separate CIT handoff; CIT computations remain owned by the CIT skill. |
+
+**Not yet confirmed:** a universal Hijri denominator or fixed rounded Gregorian rate; current taxpayer-specific portal boxes and certificate conditions for CR, government-contract, customs or RETT services; larger-taxpayer advance-Zakat thresholds/notices; any generic percentage penalty/failure-to-file schedule or Zakat entitlement under a tax-only amnesty; Zakat-only TP implementation phases for a particular year; complete banking/financing/insurance/fund/BOT methods and bespoke instruments; the historical cases' actual prepayment classification, complete equity movement and calendar denominator. The old fixed-rate/higher-of formula, default time-weighting, blanket foreign-investment disallowance, related-debtor deduction and ignored deferred-tax treatment are superseded by the cited specific rules, not retained as usable alternatives.

@@ -1,333 +1,248 @@
 ---
 name: sa-excise-tax
-description: Use this skill whenever asked about Saudi Arabia Excise Tax. Trigger on phrases like "Saudi excise tax", "ZATCA excise", "Saudi sin tax", "tobacco tax Saudi", "energy drinks Saudi excise", "soft drinks excise Saudi", "sweetened drinks Saudi", "e-cigarette tax Saudi", "vape tax KSA", "Royal Decree A/86", "GCC excise", "excise tax warehouse Saudi", "excise registration ZATCA", or any question about computing, registering, filing, or reporting Saudi excise tax obligations on tobacco, energy drinks, soft drinks, sweetened drinks, or electronic smoking devices. Scope covers the Excise Tax Law issued by Royal Decree A/86 of 27/8/1438H (2017) and the Excise Tax Bylaws, the taxable product list and rates, the tax base (higher of retail selling price or ZATCA standard price), tax warehouse regime, importer/manufacturer registration, monthly filing through the ZATCA portal, penalties, and GCC harmonisation context. ALWAYS read this skill before touching any Saudi excise tax work.
+description: "Saudi Arabia excise computation and compliance for 2026: tobacco, energy drinks, electronic-smoking devices/liquids and the sugar-tier volumetric model for sweetened drinks. Determine product composition, exclusions, retail-price tax status, release from suspension, registration and the correct return period before computing. Covers imports, licensed warehouses, movement/loss evidence, records and penalties. Preserves the original 2025 tobacco, cola and dairy examples as historical cases and supplies current-year beverage comparisons. Read before Saudi excise work; uncertain composition or price evidence stops filing."
 jurisdiction: SA
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: "2026-11-16"
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
-domain: income-tax
+domain: "tax"
+category: "international"
+tax_year_notes: "2026 rules include the 1 January sweetened-drink and return-deadline changes. Original 2025 cases are preserved as the 2025-2026 filing cycle."
+version: "1.1"
+type: "computation"
 ---
 
-# SA Excise Tax
+# Saudi Arabia excise tax: 2026
 
-## Saudi Arabia — Excise Tax — Skill v1.0
+## Scope
 
-## Rates and thresholds
+Read before Saudi excise classification, computation, registration or return work. The **Excise Tax Law is Royal Decree M/86 dated 27/8/1438H**, not the old skill's A/86. Use the current implementing regulation including decision **25-06-06**, and the product/dilution decision linked by ZATCA. The 2026 amendments apply from **1 January 2026**. [Law cover](https://zatca.gov.sa/ar/RulesRegulations/Taxes/Documents/Excise%20Goods%20Tax%20Law.pdf); [current regulation cover and arts. 1-4](https://zatca.gov.sa/ar/RulesRegulations/Taxes/Documents/Regulations-of-Excise-Tax.pdf); [effective-date announcement](https://zatca.gov.sa/en/MediaCenter/News/Pages/excise-tax-regulation-2026.aspx).
 
-Items flagged for further clarification are tracked separately and excluded here.
-This block is generated from verified `skill_facts` — edit the facts, not the prose.
+**Quick reference:** in **2026**, tobacco, energy drinks and the defined electronic-smoking devices/liquids retain ad-valorem treatment; sweetened drinks, including qualifying sweetened carbonated drinks, use **total sugar per volume and a tax per litre**. Read the table below. The old flat sweetened/carbonated percentage is historical, not the current beverage computation. Licensed warehouse returns cover two-month periods and are due by the end of the following month. An importer declaring at customs follows a separate path.
 
-### Excise Tax
+Work at SKU/product and release level. This skill does not compute VAT or customs, foreign GCC excise, alcohol/other-product assumptions, private rulings or a live disputed assessment. Load [VAT](saudi-arabia-vat.md) for the separate VAT base including any applicable excise, and obtain destination-country rules for cross-border movements. Outputs remain working papers requiring qualified Saudi review.
 
-- **Tobacco and tobacco products** — 100%  _(Chapter two Article 3 Rates - Implementing Regulation of Excise Tax Law)_
-- **Energy drinks** — 100%  _(Chapter two Article 3 Rates - Implementing Regulation of Excise Tax Law)_
-- **Soft drinks (carbonated)** — 50%  _(Chapter two Article 3 Rates - Implementing Regulation of Excise Tax Law)_
-- **Sweetened drinks + Distilled beverages (energy drinks still 100%)** — 0.5  _(Chapter two Article 3 Rates - Implementing Regulation of Excise Tax Law)_
-- **E-cigarettes / vape devices** — 100%  _(Chapter two Article 3 Rates - Implementing Regulation of Excise Tax Law)_
-- **E-liquids** — 100%  _(Chapter two Article 3 Rates - Implementing Regulation of Excise Tax Law)_
-- **Tax base** — Higher of declared RSP or ZATCA standard price  _(Definition - Tax Base - Implementing Regulations of Excise Tax Law)_
-- **Filing** — Monthly; due within 15 days of month-end  _(Article 16(1) Tax Return - Implementing Regulation of Excise Tax Law)_
+## Ask the client first
 
-## Section 1 — Quick reference
+1. Entity, ZATCA excise registration, importer/producer/licensed-keeper role, actual activity, warehouse licences and period under review.
+2. Each SKU's composition, label/marketing, total and added sugar/sweeteners, milk/plant-alternative percentage, nutritional/lab evidence, tariff classification and product registration.
+3. Unit size, litres, dilution instructions/yield, actual quantities imported/produced/released, movements, remaining suspension stock and loss/destruction reports.
+4. For ad-valorem goods: documented final-consumer price, whether it includes VAT/excise, ZATCA reference/standard price and the precise basis/date for each comparison.
+5. Customs entries, warehouse movement receipts, export/discharge evidence, stamps, guarantees and reconciliation of physical versus electronic records.
+6. Prior returns/payments, adjustments/refunds, authority notices, disputed classifications and any penalty-initiative eligibility.
 
-**Quick reference**
+Missing SKU, composition, price basis or movement evidence is a hold. Do not invent an energy-drink classification, assume an old sweetened-drink rate or apply an authority-only default dilution as the taxpayer's established facts.
 
-| Field | Value |
-| --- | --- |
-| Country | Kingdom of Saudi Arabia (KSA) |
-| Tax | Excise Tax (selective tax / ضريبة انتقائية) |
-| Currency | SAR (Saudi Riyal) |
-| Primary legislation | Excise Tax Law — Royal Decree No. A/86 dated 27/8/1438H (corresponding to 2017) |
-| Secondary legislation | Excise Tax Implementing Regulations / Bylaws (issued by ZATCA, as amended) |
-| GCC framework | Common GCC Excise Tax Agreement (signed 2016) — KSA was an early adopter |
-| Tax authority | Zakat, Tax and Customs Authority (ZATCA) |
-| Tax base | Higher of (a) retail selling price declared by the taxpayer or (b) "standard price" published by ZATCA for the product |
-| Filing frequency | Monthly excise return via ZATCA e-portal |
-| Filing & payment deadline | Within 15 days of month-end (verify against current ZATCA bylaw — historically the 15th of the following month) |
-| Skill version | 1.0 |
+## The method, step by step
 
-### Taxable products and rates at a glance
+### 1. Identify the product and current rate
 
-**Taxable products and rates at a glance**
+Apply the operative product definitions and tariff descriptions, not a broad “sin tax” label. Tobacco includes the specified chapter/tariff products; check exclusions for the listed cessation/medical products rather than assuming every nicotine-related item has identical treatment. Energy drinks follow the marketed/sold-as-energy definition and specified stimulants and preparations; a coffee-style drink is not an energy drink solely because it contains caffeine. Electronic-smoking goods follow their specified devices, parts and liquid classifications, including the stated nicotine/tobacco-independent scope. A medical nebuliser is not automatically a smoking device. [IR arts. 1-3](https://zatca.gov.sa/ar/RulesRegulations/Taxes/Documents/Regulations-of-Excise-Tax.pdf); [product decision, tobacco/energy/device/liquid sections](https://zatca.gov.sa/ar/RulesRegulations/Taxes/Documents/DecisionRegardingExciseTax-Dec2025.pdf).
 
-| Product class | Rate | Effective from | Notes |
-| --- | --- | --- | --- |
-| Tobacco and tobacco products | **100%** | June 2017 | Cigarettes, cigars, shisha, smokeless tobacco, heated tobacco products |
-| Energy drinks | **100%** | June 2017 | Caffeinated beverages marketed for energy/stimulation |
-| Soft drinks (carbonated) | **50%** | June 2017 | Carbonated drinks excluding unflavoured carbonated water |
-| Sweetened drinks | **50%** | December 2019 | Added sugar or sweetener: flavoured milk, sweetened juices, sweetened iced tea, sweetened flavoured water |
-| Electronic smoking devices and tools | **100%** | May/June 2019 | Vapes, e-cigarettes, heat-not-burn devices |
-| Liquids used in electronic smoking devices | **100%** | May/June 2019 | Vape liquids / e-liquids, with or without nicotine |
+| Product or sweetened-drink tier | 2026 rate and exact conditions | Official source |
+|---|---|---|
+| Defined tobacco products | 100% of the statutory tax-exclusive base | IR art. 3(1), [regulation](https://zatca.gov.sa/ar/RulesRegulations/Taxes/Documents/Regulations-of-Excise-Tax.pdf) |
+| Defined energy drinks | 100% of the statutory tax-exclusive base; not the sweetened-drink volumetric model | IR art. 3(2), [regulation](https://zatca.gov.sa/ar/RulesRegulations/Taxes/Documents/Regulations-of-Excise-Tax.pdf) |
+| Defined electronic-smoking devices/tools | 100% of the statutory tax-exclusive base | IR art. 3(4), [regulation](https://zatca.gov.sa/ar/RulesRegulations/Taxes/Documents/Regulations-of-Excise-Tax.pdf) |
+| Defined liquids for electronic-smoking devices | 100% of the statutory tax-exclusive base | IR art. 3(5), [regulation](https://zatca.gov.sa/ar/RulesRegulations/Taxes/Documents/Regulations-of-Excise-Tax.pdf) |
+| Sweetened tier 1: sugar-free, only artificial sweeteners | SAR 0 per litre; an in-scope zero-rate tier is not the same as an excluded product | IR arts. 2(1)(c), 3(3), [regulation](https://zatca.gov.sa/ar/RulesRegulations/Taxes/Documents/Regulations-of-Excise-Tax.pdf) |
+| Sweetened tier 2: total sugar **below 5 g/100 ml** | SAR 0 per litre | IR arts. 2(1)(c), 3(3), [regulation](https://zatca.gov.sa/ar/RulesRegulations/Taxes/Documents/Regulations-of-Excise-Tax.pdf) |
+| Sweetened tier 3: total sugar **5 through 7.99 g/100 ml** | SAR 0.79 per litre | IR arts. 2(1)(c), 3(3), [regulation](https://zatca.gov.sa/ar/RulesRegulations/Taxes/Documents/Regulations-of-Excise-Tax.pdf) |
+| Sweetened tier 4: total sugar **8 g/100 ml or more** | SAR 1.09 per litre | IR arts. 2(1)(c), 3(3), [regulation](https://zatca.gov.sa/ar/RulesRegulations/Taxes/Documents/Regulations-of-Excise-Tax.pdf) |
+| Milk-content exclusion | At least 75% qualifying milk in the ready-to-drink content; apply the milk definition and other product conditions | Product decision, sweetened-drink exclusions/definitions, [decision](https://zatca.gov.sa/ar/RulesRegulations/Taxes/Documents/DecisionRegardingExciseTax-Dec2025.pdf) |
+| Qualifying manufactured plant-milk alternative exclusion | At least 75% of the ready-to-drink content and the full applicable alternative definition; do not treat every plant drink as qualifying milk | Product decision, exclusions/definitions, [decision](https://zatca.gov.sa/ar/RulesRegulations/Taxes/Documents/DecisionRegardingExciseTax-Dec2025.pdf) |
 
-## Section 2 — Required inputs & refusal catalogue
+For a drink with added sugar or another sweetener, the volumetric classification uses **total sugar**, including natural and added sugar and sugar from other sweeteners. Artificial sweetener added alongside sugar does not remove the sugar measurement. Simply mixing unsweetened natural fruit/vegetable juices or concentrates is not necessarily adding a sweetener. Carbonation alone is not a separate current flat-rate class; classify the actual sweetened product and exclusions. [Product decision, sweetened-drink definition and sugar sections](https://zatca.gov.sa/ar/RulesRegulations/Taxes/Documents/DecisionRegardingExciseTax-Dec2025.pdf).
 
-### Required inputs
+### 2. Read the neighboring exclusions and definitions
 
-Before computing any Saudi excise tax position, obtain:
+The sweetened-drink exclusion list includes energy drinks taxed separately, qualifying **100% natural fruit/vegetable juice without added sugar/other sweetener**, specified milk/dairy/plant alternatives, infant products, defined dietary/medical products and specified personal/non-commercial or open-container restaurant preparation. Do not label a packaged sweetened product exempt merely because it is sold by a restaurant or contains fruit. The relevant GCC technical definitions remain conditions, not marketing claims. [Product decision, sweetened-drink exclusions](https://zatca.gov.sa/ar/RulesRegulations/Taxes/Documents/DecisionRegardingExciseTax-Dec2025.pdf).
 
-1. **Taxpayer identity** — legal name, Commercial Registration (CR) number, ZATCA Tax Identification Number (TIN), and excise tax registration number.
-2. **Role in the supply chain** — importer, local manufacturer, warehouse keeper / holder of unreleased excise goods.
-3. **Product list** — for each SKU: HS code, product class (tobacco, energy drink, soft drink, sweetened drink, ESD, e-liquid), pack size, declared retail selling price (SAR), unit count per pack and per consignment.
-4. **ZATCA standard price** — published "standard price" (السعر القياسي) for the product, if any.
-5. **Import documentation** — bill of lading, customs declaration, country of origin, value, quantity, and customs duty paid.
-6. **Manufacturing data** — production volumes, releases into consumption from a tax warehouse, internal transfers between licensed warehouses.
-7. **Tax warehouse licence status** — copy of the ZATCA tax warehouse licence (if any), inventory records, opening and closing stock by SKU.
-8. **Period under review** — calendar month for which the return is being prepared.
-9. **Prior period adjustments** — credit notes, returns, damaged stock disposed of under ZATCA supervision.
+Qualifying milk types include animal/reconstituted/powdered milk, yoghurt and whey as defined; **cream is excluded from that milk definition**. A plant milk-alternative classification also requires the combined conditions: **120 mg calcium per 100 ml**, plant source, milk-like uses and density, and no carbonated component. Keep composition and lab/label evidence. “Chocolate milk” by itself does not establish the milk-content exemption. [Product decision, milk and alternative definitions](https://zatca.gov.sa/ar/RulesRegulations/Taxes/Documents/DecisionRegardingExciseTax-Dec2025.pdf).
 
-### Refusal catalogue
+Concentrates, powders, gels and extracts are within the relevant energy/sweetened definitions. For sweetened preparations, determine total sugar in the **final prepared drink**, using supported label dilution and final litres, not only the concentrate's container volume. Preserve the preparation instructions and yield calculation. ZATCA may demand approved-laboratory evidence, reject unsubstantiated product registration and require corrected data. [IR arts. 4(3)-(4), 22 bis](https://zatca.gov.sa/ar/RulesRegulations/Taxes/Documents/Regulations-of-Excise-Tax.pdf); [dilution decision](https://zatca.gov.sa/ar/RulesRegulations/Taxes/Documents/DecisionRegardingExciseTax-Dec2025.pdf).
 
-STOP and do not produce a final excise tax figure where any of the following applies:
+Where dilution instructions are absent, unreliable or inconsistent with comparable products, the decision gives **ZATCA**, not the writer, authority to adopt an alternative. Its stated default is at least **6 parts diluent to 1 part concentrate**, with the high-sugar tier and the stated exceptions where actual liquid-concentrate nutrition shows an artificial-only or low-sugar product. Do not silently misread that as 6 total parts or treat it as a taxpayer's elective ratio. Hold unsupported inputs for classification/authority resolution. [Dilution decision, alternative/default-ratio paragraphs](https://zatca.gov.sa/ar/RulesRegulations/Taxes/Documents/DecisionRegardingExciseTax-Dec2025.pdf).
 
-- **Taxpayer not registered for excise tax but is importing or manufacturing excise goods** — Registration is a precondition — instruct the taxpayer to register before filing; do not produce a return for an unregistered person
-- **Product classification uncertain (e.g. drink that may or may not qualify as "sweetened")** — Obtain ZATCA classification ruling before computing
-- **Mixed consignment containing both excise and non-excise goods with no SKU-level breakdown** — Cannot apportion the tax base reliably
-- **ZATCA standard price not published for the product and no documented retail selling price** — Cannot determine the tax base
-- **Tax warehouse inventory reconciliation shows unexplained variances** — Investigate before filing — variances may indicate unreported releases
-- **Goods released into a GCC member state under intra-GCC transfer rules** — Cross-border GCC excise mechanics may apply — verify with ZATCA and the destination state's authority
-- **Customs clearance was effected before excise registration** — Retrospective registration / penalty exposure — refer to specialist
-- **Damaged or destroyed stock not disposed of under ZATCA supervision** — Conservative default: treat as released into consumption and tax
-- **2024-2025 scope expansion to additional sugar-containing items** — **Verify current scope against latest ZATCA circular** before excluding any item
+If more than one actual statutory rate applies, IR art. 4(6) prescribes the higher rate; that rule does not authorise inventing a classification because facts are missing. [IR art. 4(5)-(6)](https://zatca.gov.sa/ar/RulesRegulations/Taxes/Documents/Regulations-of-Excise-Tax.pdf).
 
-## Section 3 — Tier 1 — taxable products and rates
+### 3. Identify release, suspension and liable person
 
-### 3.1 Statutory basis
+Excise becomes due on the defined release for consumption: import outside suspension, production outside suspension, release from suspension, possession outside suspension of goods with unpaid tax and the specified loss/destruction cases. Identify the liable importer/producer/licensee/other releaser or commercial possessor, including the statutory knowledge/stamp rule and joint liability where applicable. Not every retail sale creates a second charge. [IR arts. 5, 7](https://zatca.gov.sa/ar/RulesRegulations/Taxes/Documents/Regulations-of-Excise-Tax.pdf).
 
-The Excise Tax Law was issued by **Royal Decree No. A/86 dated 27/8/1438H** (corresponding to 2017) and is administered by **ZATCA** (Zakat, Tax and Customs Authority — formed in 2021 from the merger of GAZT and the General Customs Authority). The Excise Tax Bylaws / Implementing Regulations set out the procedural rules, registration mechanics, tax warehouse regime, return format and payment timing.
+Suspension applies only under the licensed regime and controlled movements: licensed production/holding and qualifying movements between authorised warehouses, import to an authorised warehouse or export movements under the stated rules. A warehouse is not a suspension facility merely because stock is physically stored there. Obtain current licences, movement documents, destination receipt and discharge/export evidence and reconcile the electronic inventory. [Law arts. 6, 10-13](https://zatca.gov.sa/ar/RulesRegulations/Taxes/Documents/Excise%20Goods%20Tax%20Law.pdf); [IR arts. 6, 20-30 and movement provisions](https://zatca.gov.sa/ar/RulesRegulations/Taxes/Documents/Regulations-of-Excise-Tax.pdf).
 
-The KSA regime sits inside the **Common GCC Excise Tax Agreement** (2016), under which member states agreed a harmonised list of "selective goods" (tobacco, energy drinks, carbonated soft drinks) and a common framework for cross-border movement and rate alignment. Individual member states may vary rates and add products at the national level — Saudi Arabia has added sweetened drinks (2019) and electronic smoking devices (2019).
+Loss/destruction under suspension is not automatically exempt or automatically taxable merely from whether a supervisor was present. IR art. 5(5) requires evidence of causes beyond the licensee's control and the prescribed notice: **within 7 days**, authority decision **within 14 days**, with its stated one-time extension and no-response consequence. Missing notice or insufficient/untrue evidence can make the loss a release at that time. Preserve the full report and authority response; do not simply write stock off. [IR art. 5(5)](https://zatca.gov.sa/ar/RulesRegulations/Taxes/Documents/Regulations-of-Excise-Tax.pdf).
 
-### 3.2 Taxable products and rates
+Exports under suspension are not generic “zero-rated sales”; establish non-release/discharge or the applicable refund route. Prior excise paid on inputs, exports and overpayments have specific deduction/refund conditions. Do not offset tax merely because an accounting credit note or damaged-stock entry exists. Read the actual applicable return/refund route and keep proof. [Law arts. 16-17](https://zatca.gov.sa/ar/RulesRegulations/Taxes/Documents/Excise%20Goods%20Tax%20Law.pdf); [IR arts. 46-51](https://zatca.gov.sa/ar/RulesRegulations/Taxes/Documents/Regulations-of-Excise-Tax.pdf).
 
-The current Saudi excise list comprises six product groupings:
+### 4. Compute the appropriate base
 
-#### Tobacco and tobacco products — 100%
+**Ad-valorem classes:** IR art. 1 compares the relevant declared retail, authority reference and GCC standard prices on the required basis **excluding excise and VAT**, using the highest applicable amount. IR art. 8 defines retail consumer price as including taxes/fees/burdens, so first reconcile each price's tax status. Do not multiply a tax-inclusive shelf price as though it were a tax-exclusive base. Keep price lists, actual retail invoices and the authority price/effective date. Authority reference/standard prices in an example are hypothetical unless the SKU's official price record has been obtained. [IR arts. 1, 4(1), 8](https://zatca.gov.sa/ar/RulesRegulations/Taxes/Documents/Regulations-of-Excise-Tax.pdf).
 
-- **Tobacco and tobacco products** — Covers all forms of tobacco prepared for consumption: cigarettes, cigars, cigarillos, shisha (mu'assel / hookah tobacco), smokeless tobacco (chewing, snuff), pipe tobacco, and heated tobacco products (HTPs, including the heat sticks used in IQOS-style devices). The 100% rate applies to the tax base (see §3.3).
+If a supported consumer price is already net of VAT but includes ad-valorem excise, the **derived** tax-exclusive base is that price divided by **1 + the excise rate**. If VAT is also included, first apply the separate [VAT](saudi-arabia-vat.md) rules to establish the comparable net-of-VAT amount; do not assume the quoted price's tax basis. Compare consistently established values and multiply the statutory base by the applicable ad-valorem rate.
 
-#### Energy drinks — 100%
+**Sweetened drinks:** release litres × the legally established tier's SAR-per-litre rate. Convert actual unit volume to litres; for concentrates use supported finished-drink yield. Do not use the retail-price maximum for this volumetric calculation. An excluded product, an in-scope tier with no charge and a suspended taxable product have different legal reasons for a zero current amount. [IR arts. 2-4](https://zatca.gov.sa/ar/RulesRegulations/Taxes/Documents/Regulations-of-Excise-Tax.pdf).
 
-- **Energy drinks** — A beverage marketed or sold as an energy drink, generally containing stimulant compounds (caffeine, taurine, ginseng, guarana). Classification follows the labelling and marketing of the product, not merely the caffeine content — a coffee-style RTD is not automatically an energy drink. Refer to ZATCA's published guidance on classification borderline cases.
+Apply the rate in force at the **actual release date**. Carry stock in suspension by quantity and SKU and classify a later release under the then-current law; do not tax an entire imported consignment merely because it arrived, if valid suspension applies. For transitional stock already released, obtain the actual transition instrument/notice before any extra charge or refund. [IR arts. 4-7, 54](https://zatca.gov.sa/ar/RulesRegulations/Taxes/Documents/Regulations-of-Excise-Tax.pdf).
 
-#### Soft drinks (carbonated) — 50%
+### 5. Reconcile and produce the return workpaper
 
-- **Soft drinks (carbonated)** — Any **carbonated** drink excluding unflavoured carbonated water (sparkling water without added flavour or sweetener). This includes traditional colas, lemon-lime, ginger sodas, tonic water, and carbonated fruit-flavoured drinks. Concentrates, powders, and extracts intended to be reconstituted into a carbonated drink are also caught.
+For each licensed warehouse: opening stock + imports/production/receipts − approved outward suspension movements − releases − documented losses/destruction = closing stock, with the actual classification of each movement. Investigate every unexplained variance before filing. Track stamps separately, including issued, applied, activated, unused and cancelled quantities where required. Tobacco and energy drinks are specified stamped classes under the current art. 9; use the actual implementation/activation requirements rather than assuming every electronic-smoking product has the same stamp obligation. [IR arts. 9-14, 16, 22](https://zatca.gov.sa/ar/RulesRegulations/Taxes/Documents/Regulations-of-Excise-Tax.pdf).
 
-#### Sweetened drinks — 50% (added December 2019)
+The liability schedule must show SKU, composition/tier or ad-valorem base, unit volume/yield, period, release quantity, rate, tax, prior payment/deduction and supporting document. Link that schedule to the excise return's product calculation, warehouse-licence/release data and stamp information. Customs-import declarations and corrections remain separately reconciled to avoid taxing the same release twice. [IR arts. 15-18](https://zatca.gov.sa/ar/RulesRegulations/Taxes/Documents/Regulations-of-Excise-Tax.pdf).
 
-- **Sweetened drinks** — Any beverage to which **sugar or any sweetener** (including artificial sweeteners and natural sweeteners such as honey or fruit concentrate added beyond what is required as a natural component) has been added. Catches: - Flavoured milk and milk-substitute drinks. - Sweetened juice drinks and nectars (typically those below the 100% pure juice threshold). - Sweetened iced teas and coffee-based RTDs. - Sweetened flavoured water. - Concentrates, powders, gels, and extracts used to prepare a sweetened drink. The 100% pure unsweetened juice and unsweetened milk are typically **out of scope**, but borderline cases (e.g. juices labelled "no added sugar" that contain concentrated juice as sweetener) need ZATCA guidance.
+## Boundary and exception table
 
-#### Electronic smoking devices and tools — 100% (since 2019)
+| Boundary | Required result |
+|---|---|
+| Borderline energy/ordinary drink or sweetened/unsweetened product | Obtain composition, marketing and statutory classification; no automatic high-rate guess. |
+| Flavoured milk/plant drink, juice, diet or medical product | Apply the complete definition/exclusion and evidence; flavour/sugar alone does not settle liability. |
+| Missing price/reference or inconsistent tax inclusions | Hold the ad-valorem base until comparable evidence exists. |
+| Missing dilution/lab evidence | Do not invent the yield or tier; obtain the approved evidence/authority resolution. |
+| Unlicensed warehouse or unverifiable destination licence | Do not claim suspension from storage alone; refer the actual release and registration exposure. |
+| Unexplained loss/export/inventory movement | Preserve records and test the relevant legal conditions, not a generic write-off or zero-rating. |
+| Another GCC country | Verify destination law and actual movement controls; a GCC framework is not proof of identical national rates/dates. |
+| Confectionery/composite food or an old “distilled beverages” label | Verify whether the actual product is within the operative definition; no invented new excise category. |
 
-- **Electronic smoking devices and tools** — E-cigarettes, vapes, vape pens, pods, atomisers, batteries sold as part of a smoking device, and other tools designed for electronic smoking. Devices that are not designed for nicotine or tobacco consumption (e.g. nebulisers for medical use) are out of scope.
+## Worked cases
 
-#### Liquids used in electronic smoking devices — 100% (since 2019)
+The original entities, products, quantities and **2025 dates** are preserved below. These are **2025-2026 filing-cycle** cases, not a retroactive application of the new 2026 drink rates. Price/reference amounts are **illustrative inputs**, not verified current ZATCA SKU prices.
 
-- **Liquids used in electronic smoking devices** — E-liquids (with or without nicotine), pods pre-filled with e-liquid, and refill bottles.
+### A. Riyadh Tobacco Imports LLC: price basis and release quantity
 
-### 3.3 Tax base — higher of retail selling price or ZATCA standard price
+Preserve **October 2025**, **1,000,000 cigarettes = 50,000 packs of 20**, declared price **SAR 25/pack**, reference price **SAR 24/pack**, **40,000 packs released** and **10,000 left under valid licensed suspension**. The original SAR 1,000,000 tax is arithmetically correct **only if** the price inputs are confirmed tax-exclusive comparable bases under the historical rule. If instead both are retail amounts net of VAT but inclusive of excise, the resulting base is SAR 12.50/pack and excise **SAR 500,000** on the released packs. The original facts did not establish the price inclusions, so no unconditional tax result is justified. Do not tax the suspended 10,000 packs until the relevant release or other chargeable event. [IR arts. 1, 4-8](https://zatca.gov.sa/ar/RulesRegulations/Taxes/Documents/Regulations-of-Excise-Tax.pdf).
 
-- **Excise tax payable formula** — Excise tax payable = max(RSP, ZATCA standard price) × rate
-- **Tax base definition** — The tax base for each taxable product is the higher of: (1) the retail selling price (RSP) declared by the importer / manufacturer — the price at which the product is offered for sale to the final consumer in KSA, inclusive of all taxes other than excise tax but exclusive of VAT; or (2) the standard price (السعر القياسي) published by ZATCA for that product or product category. The standard price exists to prevent under-declaration of the RSP. Where ZATCA has not published a standard price, the declared RSP applies, but the taxpayer must be able to substantiate it.
-
-### 3.4 Persons liable to tax
-
-- **Persons liable to tax** — Excise tax is payable by: - **Importers** — on importation of excise goods into KSA, at the point of customs release. - **Local manufacturers** — on release of excise goods from the production facility into consumption. - **Holders of excise goods in a tax warehouse** — on release from the warehouse into consumption (intra-warehouse transfers and exports do not trigger the tax). - **Persons who acquire excise goods on which tax has not been paid** — secondary liability where the primary taxpayer has failed to discharge the tax.
-
-### 3.5 Tax point (chargeability)
-
-- **Tax point (chargeability)** — Tax becomes chargeable at the earliest of: - Import into KSA (customs release date). - Release from a tax warehouse into consumption. - Production within KSA outside a tax warehouse (i.e. by an unlicensed manufacturer — also a registration breach). - Discovery of excise goods in free circulation on which tax has not been paid.
-
-## Section 4 — Tier 2 — registration, tax warehouses, scope expansions
-
-### 4.1 Registration
-
-- **Registration** — Any person who imports, produces, holds in a tax warehouse, or otherwise deals in excise goods in the course of business must register with ZATCA for excise tax before undertaking any such activity. Registration is effected through the ZATCA e-portal. Required information includes: - Commercial Registration certificate. - TIN / VAT registration number (if separately VAT-registered). - Description of business activity and the excise product classes handled. - Customs importer code (for importers). - Tax warehouse licence (if applying simultaneously for a tax warehouse — see §4.2). - Financial guarantee / bank guarantee where required by ZATCA (typically for tax warehouse keepers). Failure to register before commencing taxable activity is a separate infringement and triggers penalties in addition to the tax on the underlying goods.
-
-### 4.2 Tax warehouse regime
-
-- **Tax warehouse regime** — A tax warehouse (مستودع ضريبي) is a place licensed by ZATCA where excise goods may be produced, processed, held, received, or dispatched under suspension of excise tax. The tax warehouse regime is the principal mechanism by which importers and manufacturers manage cash-flow on excise stock. Key features: - **Suspension of tax** — excise goods held in a licensed tax warehouse are not yet chargeable; tax becomes due only on release into consumption. - **Intra-warehouse movements** — movements between two licensed tax warehouses (whether of the same operator or between different licensees) are under suspension provided documented controls are met. - **Exports** — goods exported from a tax warehouse out of KSA are not subject to excise tax. Documentary evidence of export is required. - **Inventory controls** — the warehouse keeper must maintain real-time inventory records by SKU, reconcile physical to book stock at month-end, and report movements to ZATCA in the form prescribed by the Bylaws. - **Financial guarantee** — ZATCA may require a bank guarantee covering a multiple of the average monthly excise tax liability of the warehouse. - **Licence conditions** — the warehouse keeper must be a registered excise taxpayer in good standing, hold a Saudi CR, and meet physical security and record-keeping requirements set by ZATCA. Operating a place as a tax warehouse without a licence is an offence; goods may be seized and penalties applied.
-
-### 4.3 Electronic smoking devices and e-liquids (2019 expansion)
-
-- **Electronic smoking devices and e-liquids (2019 expansion)** — In May/June 2019, KSA extended excise tax to: - **Electronic smoking devices** (vapes, e-cigarettes, heat-not-burn devices) — **100%**. - **Liquids used in electronic smoking devices** (e-liquids, with or without nicotine) — **100%**. This brought vaping products into line with combustible tobacco (also 100%). Importers and manufacturers of these products needed to register and observe the standard excise mechanics from the effective date. Standard prices for e-liquids and devices are published by ZATCA.
-
-### 4.4 Sweetened drinks (December 2019 expansion)
-
-- **Sweetened drinks (December 2019 expansion)** — Effective 1 December 2019, KSA extended excise tax to sweetened drinks at 50%. Sweetened drinks are defined to include any beverage (other than 100% pure unsweetened juice and unsweetened milk) to which sugar or any other sweetener has been added, plus concentrates, powders, gels, and extracts intended to make a sweetened drink. This expanded the tax base significantly: flavoured milks, sweetened iced teas, sweetened juice drinks, sweetened flavoured waters, and many RTD coffee products were brought into charge for the first time.
-
-### 4.5 2024-2025 — possible further scope expansions
-
-In 2024-2025 there has been public-policy discussion of expanding excise tax to additional sugar-containing food items (not just drinks) and of revisiting the rates. As of the date of this skill, no statutory expansion beyond the six product classes above has taken effect, but practitioners should verify the current ZATCA product list and rates against the latest ZATCA circular and Royal Decree amendments before producing a final excise return — particularly where the engagement involves a confectionery, dairy, or composite food product that might be brought into scope by a 2025 or 2026 amendment.
-
-### 4.6 GCC harmonisation context
-
-Saudi rates are aligned with the GCC Excise Tax Agreement of 2016, but individual GCC member states have implemented at different speeds and with national variations:
-
-- UAE introduced excise in October 2017 with the same headline rates (100%/100%/50%).
-- Bahrain followed in December 2017.
-- Oman in 2019.
-- Qatar in 2019.
-- Kuwait — not yet implemented as at skill publication.
-
-For cross-border movements within the GCC, taxpayers should observe both the KSA Excise Tax Law and the destination state's regime; intra-GCC mechanics are not standardised in practice and may require case-by-case ZATCA confirmation.
-
-## Section 5 — Worked examples
-
-### Example A — Tobacco importer (cigarettes)
-
-A KSA-resident company, "Riyadh Tobacco Imports LLC", imports a consignment of 1,000,000 cigarettes (50,000 packs of 20 cigarettes each) in October 2025. The declared retail selling price per pack is SAR 25. ZATCA's published standard price for the brand is SAR 24 per pack. The company is registered for excise tax and holds a tax warehouse licence; the goods are placed into the licensed warehouse on arrival and released into consumption progressively over the month.
-
-**Step 1 — Determine the tax base per pack**
-
-| Element | Amount (SAR) |
-| --- | --- |
-| Declared RSP per pack | 25.00 |
-| ZATCA standard price per pack | 24.00 |
-| Tax base (higher of the two) | **25.00** |
-
-**Step 2 — Compute excise per pack**
-
-| Element | Amount (SAR) |
-| --- | --- |
-| Tax base | 25.00 |
-| Rate | 100% |
-| Excise per pack | **25.00** |
-
-Assume 40,000 packs released into consumption (the remaining 10,000 packs remain in the tax warehouse at month-end).
-
-**Step 3 — Apply to releases into consumption during October 2025**
-
-| Element | Amount (SAR) |
-| --- | --- |
-| Packs released | 40,000 |
-| Excise per pack | 25.00 |
-| **Excise tax liability — October 2025** | **1,000,000** |
-
-The remaining 10,000 packs in the warehouse are not yet chargeable. They will be taxed when released into consumption in a future period (or zero-rated if exported).
-
-The October return is filed via ZATCA within 15 days of month-end (verify against the current Bylaw); payment is due at the same time.
-
-### Example B — Soft drink manufacturer (carbonated cola)
-
-"Jeddah Beverages Co." manufactures a carbonated cola in 330ml cans. RSP is SAR 2.00 per can; ZATCA standard price is SAR 1.80 per can. In November 2025 the manufacturer releases 5,000,000 cans into consumption from its licensed production facility (which is also a tax warehouse).
-
-**Step 1 — Tax base per can**
-
-| Element | Amount (SAR) |
-| --- | --- |
-| Declared RSP per can | 2.00 |
-| ZATCA standard price per can | 1.80 |
-| Tax base (higher) | **2.00** |
-
-**Step 2 — Excise per can**
-
-| Element | Amount (SAR) |
-| --- | --- |
-| Tax base | 2.00 |
-| Rate (carbonated soft drink) | 50% |
-| Excise per can | **1.00** |
-
-**Step 3 — November 2025 liability**
-
-| Element | Amount (SAR) |
-| --- | --- |
-| Cans released | 5,000,000 |
-| Excise per can | 1.00 |
-| **Excise tax liability — November 2025** | **5,000,000** |
-
-VAT at 15% is then chargeable on a base that includes the excise tax (excise feeds into the VAT base) when the goods are sold downstream — this is handled by the VAT skill, not here.
-
-### Example C — Sweetened drink (flavoured milk)
-
-"Dammam Dairy" produces a 250ml chocolate-flavoured milk drink. Sugar is added during production. RSP is SAR 3.00; ZATCA has not yet published a standard price for this exact SKU. In December 2025 the company releases 2,000,000 units into consumption.
-
-The drink contains added sugar and is not 100% pure unsweetened milk → falls within the sweetened drinks category → 50% rate.
-
-Since no standard price is published, the declared RSP applies; the taxpayer must be able to substantiate the SAR 3.00 RSP from price lists, retail invoices, or commercial agreements.
-
-**Step 2 table**
-
-| Element | Amount (SAR) |
-| --- | --- |
-| RSP per unit | 3.00 |
-| Rate | 50% |
-| Excise per unit | **1.50** |
-
-**Step 3 — December 2025 liability**
-
-| Element | Amount (SAR) |
-| --- | --- |
-| Units released | 2,000,000 |
-| Excise per unit | 1.50 |
-| **Excise tax liability — December 2025** | **3,000,000** |
-
-If ZATCA later publishes a standard price for this SKU that is higher than SAR 3.00, the higher figure becomes the tax base from the effective date of publication.
-
-## Section 6 — Filing & payment
-
-### 6.1 Monthly excise return via ZATCA portal
-
-- **Monthly excise return via ZATCA portal** — Excise tax is filed monthly through the ZATCA e-portal. The return covers all releases into consumption during the calendar month, by product class and SKU, and reports: - Opening stock in each tax warehouse, by SKU. - Production (for manufacturers) and imports (for importers) during the month. - Movements under suspension between licensed warehouses. - Releases into consumption (the taxable event). - Exports (zero-rated). - Damaged / destroyed stock disposed of under ZATCA supervision (zero-rated). - Closing stock in each tax warehouse, by SKU. - Excise tax payable, by product class.
-
-### 6.2 Filing & payment deadline
-
-- **Filing & payment deadline** — The return and payment are due within 15 days of the end of the month to which they relate (historically the 15th of the following month). Verify against the current ZATCA Bylaw / circular before relying on a specific date — ZATCA has from time to time amended administrative timing.
-
-### 6.3 Payment channels
-
-- **Payment channels** — Payment is made through the ZATCA portal using the SADAD payment system or via authorised banks. The payment reference is the excise return reference generated by the portal.
-
-### 6.4 Penalties
-
-**Penalties**
-
-| Infringement | Penalty (indicative — verify against current ZATCA bylaw) |
-| --- | --- |
-| Late filing of an excise return | Administrative penalty + late-filing surcharge |
-| Late payment of excise tax | **5% of unpaid tax for each month or part-month** of delay |
-| Failure to register | Fine + back tax + penalty on the underlying goods |
-| Tax evasion (false declaration, undervaluation, unreported releases) | Up to **3× the evaded tax** + possible criminal referral |
-| Operating a tax warehouse without a licence | Seizure of goods + administrative penalty |
-| Failure to maintain prescribed records | Administrative penalty per Bylaw |
-
-Penalty amounts are subject to ZATCA's published schedule and may be amended by ministerial decision; confirm the current figures before advising a client.
-
-### 6.5 Records & retention
-
-- **Records & retention** — - Retain all import documents, customs declarations, production records, warehouse inventory, release notes, sales invoices and ZATCA correspondence for at least 6 years from the end of the tax period (general ZATCA retention rule — verify against the current Bylaw, which may specify longer for excise). - Where a financial guarantee has been provided to ZATCA for a tax warehouse, retain the guarantee documentation for the life of the warehouse licence plus the general retention period.
-
-## Section 7 — Conservative defaults
-
-**Conservative defaults**
-
-| Ambiguity | Default |
-| --- | --- |
-| Taxpayer not yet registered for excise but already importing | STOP — register first; do not file until ZATCA registration number issued |
-| Product borderline between energy drink and ordinary RTD | Treat as energy drink (100%) pending ZATCA classification ruling |
-| Drink borderline between sweetened and unsweetened | Treat as sweetened (50%) until composition documentation confirms otherwise |
-| RSP not documented and no ZATCA standard price published | STOP — cannot determine tax base |
-| RSP documented but appears to be below market | Use higher of RSP and ZATCA standard price; if standard price unavailable, escalate to ZATCA for ruling |
-| Damaged / destroyed stock not disposed of under ZATCA supervision | Treat as released into consumption (taxable) |
-| Intra-warehouse movement to a warehouse whose licence cannot be confirmed | Treat as a release into consumption (taxable) |
-| Export documentation incomplete | Treat as a release into consumption (taxable) |
-| 2024-2025 scope expansion potentially affecting a borderline product | **Verify current ZATCA scope and rates against latest circular before excluding** |
-| Filing deadline ambiguity (15-day rule vs amended bylaw) | File and pay by the **15th of the following month** unless ZATCA has published a later date for the specific period |
-| Cross-border movement to another GCC state | STOP — verify intra-GCC mechanics with ZATCA and destination authority |
-
-## Section 8 — Sources
-
-1. **Excise Tax Law — Royal Decree No. A/86 dated 27/8/1438H** (corresponding to 2017) — primary excise tax statute for KSA.
-2. **Excise Tax Implementing Regulations / Bylaws** — issued by ZATCA (formerly GAZT) under the Excise Tax Law and amended from time to time. Cover registration, tax warehouses, return mechanics, and penalty schedule.
-3. **Common GCC Excise Tax Agreement (2016)** — supranational framework for excise tax across the GCC member states; establishes the core product list and harmonisation principles.
-4. **ZATCA Ministerial / Board Decisions** extending the excise list:
-   - 2019 extension to **electronic smoking devices and e-liquids** at 100%.
-   - 2019 extension to **sweetened drinks** at 50% (effective 1 December 2019).
-5. **ZATCA Excise Tax Guides** — published guidance on classification, the tax warehouse regime, standard prices, registration, and return preparation, available on the ZATCA portal.
-6. **ZATCA Standard Prices Lists** (السعر القياسي) — periodically published reference prices for excise products; the tax base is the higher of RSP or the ZATCA standard price.
-7. **ZATCA Penalty Schedule** — administrative penalties and late-payment surcharges, as periodically updated.
-8. **VAT Implementing Regulations (KSA)** — relevant only for the interaction between excise tax and VAT (excise feeds into the VAT base when goods are sold downstream); not the subject of this skill but flagged for completeness.
-9. **SOCPA practitioner guidance** — Saudi Organisation for Chartered and Professional Accountants commentary on excise tax compliance.
-
-## End of Skill — Saudi Arabia Excise Tax v1.0
+```oa-check
+name: Riyadh Tobacco Imports LLC price-basis decision and suspended stock
+inputs:
+  cigarettes: 1000000
+  cigarettes_per_pack: 20
+  released_packs: 40000
+  declared_price: 25
+  reference_price: 24
+  excise_rate: 1.00
+steps:
+  - total_packs: cigarettes / cigarettes_per_pack
+  - suspended_packs: total_packs - released_packs
+  - base_if_inputs_tax_exclusive: max(declared_price, reference_price)
+  - tax_if_inputs_tax_exclusive: released_packs * base_if_inputs_tax_exclusive * excise_rate
+  - base_if_inputs_include_excise_only: max(declared_price, reference_price) / (1 + excise_rate)
+  - tax_if_inputs_include_excise_only: released_packs * base_if_inputs_include_excise_only * excise_rate
+expected:
+  total_packs: 50000
+  suspended_packs: 10000
+  tax_if_inputs_tax_exclusive: 1000000
+  base_if_inputs_include_excise_only: 12.50
+  tax_if_inputs_include_excise_only: 500000
+```
+
+### B. Jeddah Beverages Co.: retain the 2025 cola case and compare a 2026 release
+
+Preserve **November 2025**, **5,000,000 cans**, **330 ml/can**, declared price **SAR 2** and reference **SAR 1.80**. Under the historical carbonated-drink class, the old **SAR 5,000,000** tax requires confirmed tax-exclusive price inputs; if those amounts instead include excise but exclude VAT, the old percentage applied to the tax-exclusive base gives **SAR 3,333,333.33**. Neither price inclusion can be invented. The November activity belongs with the applicable two-month return, not a standalone monthly return. [Historical goods description, carbonated class](https://zatca.gov.sa/en/RulesRegulations/Taxes/Documents/Commodities%20Subject%20to%20Excise%20Tax_ENG_v.01.pdf); [2025/2026 amendment comparison](https://zatca.gov.sa/ar/RulesRegulations/Taxes/Documents/%D8%AA%D8%B9%D8%AF%D9%8A%D9%84%D8%A7%D8%AA%20%D8%B9%D9%84%D9%89%20%D8%A7%D9%84%D9%84%D8%A7%D9%8A%D9%94%D8%AD%D8%A9%20%D8%A7%D9%84%D8%AA%D9%86%D9%81%D9%8A%D8%B0%D9%8A%D8%A9%20%D9%84%D9%86%D8%B8%D8%A7%D9%85%20%D8%A7%D9%84%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9%20%D8%A7%D9%84%D8%A7%D9%86%D8%AA%D9%82%D8%A7%D9%8A%D9%94%D9%8A%D8%A9.pdf).
+
+For a **separate illustrative 2026 release of the same quantity/volume**, assume the product is an in-scope sweetened drink, no energy/milk/other exclusion applies and approved evidence shows **7 g total sugar/100 ml**. Released volume is **1,650,000 litres** and tax **SAR 1,303,500**. If the evidence instead shows **8 g/100 ml**, the tax is **SAR 1,798,500**. The sugar evidence decides the tier; the old retail price is irrelevant to this current volumetric base. [IR arts. 2-4](https://zatca.gov.sa/ar/RulesRegulations/Taxes/Documents/Regulations-of-Excise-Tax.pdf).
+
+```oa-check
+name: Jeddah Beverages Co current 2026 sugar-tier decision
+inputs:
+  released_cans: 5000000
+  ml_per_can: 330
+  ml_per_litre: 1000
+steps:
+  - released_litres: released_cans * ml_per_can / ml_per_litre
+  - medium_sugar_tax: released_litres * 0.79
+  - high_sugar_tax: released_litres * 1.09
+  - difference: high_sugar_tax - medium_sugar_tax
+expected:
+  released_litres: 1650000
+  medium_sugar_tax: 1303500
+  high_sugar_tax: 1798500
+  difference: 495000
+```
+
+### C. Dammam Dairy: the missing milk proportion matters before sugar tier
+
+Preserve **December 2025**, chocolate-flavoured milk with added sugar, **250 ml/unit**, declared price **SAR 3**, no assumed SKU reference and **2,000,000 units released**. The original unconditional **SAR 3,000,000** charge is unsupported: the milk-content exclusion was already part of the historical goods definitions. Obtain the ready-drink milk percentage, the actual milk definition and price basis before a historical computation. Merely being sweetened or not being pure unsweetened milk does not prove taxability. [Historical milk exclusions](https://zatca.gov.sa/en/RulesRegulations/Taxes/Documents/Commodities%20Subject%20to%20Excise%20Tax_ENG_v.01.pdf).
+
+For a **separate illustrative 2026 release** of the same units/volume, there are **500,000 litres**. If qualifying milk reaches the statutory exclusion, the product is excluded and no sweetened-drink charge is computed. If it fails that exclusion, is otherwise in scope and supported total sugar is **6 g/100 ml**, medium-tier tax is **SAR 395,000**; at **8 g/100 ml** it is **SAR 545,000**. Do not choose the taxable branch without composition evidence. [Product decision, milk definition/exclusion](https://zatca.gov.sa/ar/RulesRegulations/Taxes/Documents/DecisionRegardingExciseTax-Dec2025.pdf); [IR arts. 2-4](https://zatca.gov.sa/ar/RulesRegulations/Taxes/Documents/Regulations-of-Excise-Tax.pdf).
+
+```oa-check
+name: Dammam Dairy 2026 conditional taxable-branch volume and tier calculation
+inputs:
+  released_units: 2000000
+  ml_per_unit: 250
+  ml_per_litre: 1000
+steps:
+  - released_litres: released_units * ml_per_unit / ml_per_litre
+  - tax_if_not_excluded_and_medium_sugar: released_litres * 0.79
+  - tax_if_not_excluded_and_high_sugar: released_litres * 1.09
+expected:
+  released_litres: 500000
+  tax_if_not_excluded_and_medium_sugar: 395000
+  tax_if_not_excluded_and_high_sugar: 545000
+```
+
+For the **November-December 2025** return covering the historical cola/dairy period, ZATCA's official **2026 calendar expressly states 31 January 2026**. Do not resurrect the old monthly/15th deadline for that return. No unpublished later calendar date is inferred here. [Official calendar](https://zatca.gov.sa/en/MediaCenter/Publications/Documents/Zakat%20Declaration%20and%20Tax%20Returns%20Calendar%20(EN).pdf).
+
+## When to refuse or refer
+
+Preserve all original refusal subjects:
+
+- Importing/producing/holding under suspension without required registration or licence: do not prepare a purported compliant unregistered return; establish registration, historical releases and exposure with a specialist.
+- Uncertain product, sweetener, energy, dairy/medical or new-scope classification: obtain the missing composition/label/tariff evidence and authority classification where necessary.
+- Mixed consignment with no SKU breakdown: no unsupported apportionment.
+- No documented retail price and no established reference/standard base: no ad-valorem figure.
+- Unexplained warehouse reconciliation or unsupported loss/destruction: investigate, notify and test the actual charge/suspension conditions.
+- Intra-GCC transfer: obtain both jurisdictions' operative movement treatment and discharge evidence.
+- Customs clearance before registration: preserve customs records and refer retrospective compliance/exposure.
+- Incomplete export or unverified receiving-warehouse licence: no assumed suspension/refund entitlement.
+- Possible extension to sugar-containing food/composite products: check the current statutory definition; do not invent a broader tax or repeat an old flat drink rate.
+
+Do not file on a guessed deadline, tier, price inclusion or guarantee. A difficult classification does not automatically justify the highest possible rate. Live disputes, evasion allegations, private rulings and non-Saudi GCC computations require specialist handling with the original documents.
+
+## Filing and payment
+
+1. **Register before the relevant activity:** law art. 6 covers import, production and holding under suspension. Submit the approved registration application with role/product information; obtain the actual approval, licence and guarantee conditions. Product registration under **IR art. 22 bis** is separate: register before release and update changed data by the next release as prescribed. Keep any approved-laboratory results and product records. [Law arts. 6-13](https://zatca.gov.sa/ar/RulesRegulations/Taxes/Documents/Excise%20Goods%20Tax%20Law.pdf); [IR arts. 20-22 bis](https://zatca.gov.sa/ar/RulesRegulations/Taxes/Documents/Regulations-of-Excise-Tax.pdf).
+2. **Import declaration:** declare the required tax calculation and information at import unless valid suspension or an actual approved deferral applies. Customs clearance does not certify the correctness of declared classification/value. Reconcile customs tax to warehouse releases; a licence does not automatically waive import tax. [IR arts. 15, 18](https://zatca.gov.sa/ar/RulesRegulations/Taxes/Documents/Regulations-of-Excise-Tax.pdf).
+3. **Licensed warehouse return:** each tax period is **2 calendar months**, making **6 periods** in the financial year. File and pay by the **last day of the following month** under current IR arts. 16(1), 18(4). Complete the approved excise return with licensee, product calculations, warehouse licence/releases and required stamps. The regulation permits the stated one-time first-short-period combination; obtain the actual authority treatment before combining periods. [IR arts. 16, 18](https://zatca.gov.sa/ar/RulesRegulations/Taxes/Documents/Regulations-of-Excise-Tax.pdf).
+4. **Corrections/other disclosures:** apply the actual **15-day** correction/notification and non-suspension-possession rules in IR art. 17; these are not the current normal warehouse-return deadline. Reconcile an assessment to its written reasons, principal, penalty and due date before paying or objecting. [IR arts. 17-19](https://zatca.gov.sa/ar/RulesRegulations/Taxes/Documents/Regulations-of-Excise-Tax.pdf).
+5. **Payment and evidence:** use the issued ZATCA payment reference and accepted channel; retain the return, tax calculation and payment receipt. Keep electronic commercial, product, stamp, production/import, inventory, release, movement, export, loss, guarantee and authority correspondence records that enable verification. Do not use a VAT retention period as proof of the excise period or destroy records during an open matter. [IR arts. 16, 18, 22 and audit provisions](https://zatca.gov.sa/ar/RulesRegulations/Taxes/Documents/Regulations-of-Excise-Tax.pdf).
+
+### Statutory penalties and the separate temporary initiative
+
+| Breach | Statutory sanction and conditions | Official source |
+|---|---|---|
+| Failure to submit the required excise return | 5%-25% of the tax that should have been declared | Excise Law art. 21, [law](https://zatca.gov.sa/ar/RulesRegulations/Taxes/Documents/Excise%20Goods%20Tax%20Law.pdf) |
+| Late payment | 5% of unpaid tax for each month or part month unpaid; no generic cap is stated in this article | Excise Law art. 22, [law](https://zatca.gov.sa/ar/RulesRegulations/Taxes/Documents/Excise%20Goods%20Tax%20Law.pdf) |
+| Tax evasion | Minimum the tax due; maximum **3 times the value of the excise goods involved**, not 3 times the unpaid tax | Excise Law arts. 19-20, [law](https://zatca.gov.sa/ar/RulesRegulations/Taxes/Documents/Excise%20Goods%20Tax%20Law.pdf) |
+| Obstruction, failure to provide requested information or other covered breach | Up to SAR 50,000 under the applicable classification/procedure | Excise Law art. 23, [law](https://zatca.gov.sa/ar/RulesRegulations/Taxes/Documents/Excise%20Goods%20Tax%20Law.pdf) |
+| Repeat same violation | Within 3 years after the earlier penalty decision becomes final, possible doubling or licence suspension up to 6 months | Excise Law art. 25, [law](https://zatca.gov.sa/ar/RulesRegulations/Taxes/Documents/Excise%20Goods%20Tax%20Law.pdf) |
+
+Unregistered performance of the listed activities is expressly addressed in the law's evasion provisions. Actual sanctions and procedure must follow the statutory conditions and decision; do not combine fictional administrative amounts with a generic penalty multiplier. Tax principal remains payable in addition to a sanction. Objections follow the current tax-committee procedural rules; preserve the notice and obtain specialist review. [Law arts. 19, 24-27](https://zatca.gov.sa/ar/RulesRegulations/Taxes/Documents/Excise%20Goods%20Tax%20Law.pdf).
+
+The **1 July-31 December 2026** initiative is a separate check for eligible unpaid fines, registration, required returns and principal settlement/approved adhered-to instalments. It excludes returns due **after 30 June 2026**, evasion, already-paid fines and the specified VAT fines; it does not waive principal or future defaults. Keep proof of the actual account treatment. [Initiative guideline pp. 3-9](https://zatca.gov.sa/en/HelpCenter/guidelines/Documents/Cancellation-of-Fines-Exemption%20of-Financial-Penalties.pdf).
+
+## Completion checklist
+
+- Current product definition, exclusions, sugar/lab evidence and release date determine the rate; zero-tier and excluded goods are distinguished.
+- Litres and supported dilution/yield recompute, or ad-valorem prices have a consistent tax-exclusive basis and effective date.
+- Suspension, stamps, inventory, exports/losses, customs payments and current releases reconcile without duplicate tax.
+- The correct role, registration, product data, two-month period and deadline are established; notices/corrections have their separate clock.
+- Every original case and refusal has a destination; unresolved inputs and any historical rule are explicitly labelled before professional sign-off.
+
+## Sources
+
+| Official text | Actual reading |
+|---|---|
+| [Excise Tax Law, official Arabic consolidation](https://zatca.gov.sa/ar/RulesRegulations/Taxes/Documents/Excise%20Goods%20Tax%20Law.pdf) | Read on 2026-11-16. Read for full text arts. 1-30 and cover/amendment notes: legal identity, liability, registration/licensing, returns/refunds, penalties and disputes. |
+| [Current Excise Implementing Regulation](https://zatca.gov.sa/ar/RulesRegulations/Taxes/Documents/Regulations-of-Excise-Tax.pdf) | Read on 2026-11-16. Read for arts. 1-9, 15-22 bis and relevant warehouse/movement/refund/audit boundaries. Product/rate/base and current deadline paragraphs were read with neighboring exceptions; this is not a claim to have reviewed every specialised warehouse procedure. |
+| [2025 amendment comparison for 2026](https://zatca.gov.sa/ar/RulesRegulations/Taxes/Documents/%D8%AA%D8%B9%D8%AF%D9%8A%D9%84%D8%A7%D8%AA%20%D8%B9%D9%84%D9%89%20%D8%A7%D9%84%D9%84%D8%A7%D9%8A%D9%94%D8%AD%D8%A9%20%D8%A7%D9%84%D8%AA%D9%86%D9%81%D9%8A%D8%B0%D9%8A%D8%A9%20%D9%84%D9%86%D8%B8%D8%A7%D9%85%20%D8%A7%D9%84%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9%20%D8%A7%D9%84%D8%A7%D9%86%D8%AA%D9%82%D8%A7%D9%8A%D9%94%D9%8A%D8%A9.pdf) | Read on 2026-11-16. Read for old/new product/rate/base definitions, return/payment timing and associated changes; old percentage rules are used only to identify the historical cases' limits. |
+| [Product definitions and dilution/reference-price decision](https://zatca.gov.sa/ar/RulesRegulations/Taxes/Documents/DecisionRegardingExciseTax-Dec2025.pdf) | Read on 2026-11-16. Read for tobacco/energy/device/liquid definitions, sweetened exclusions, milk/alternative conditions and dilution/default powers. |
+| [ZATCA effective-date announcement](https://zatca.gov.sa/en/MediaCenter/News/Pages/excise-tax-regulation-2026.aspx) | Read on 2026-11-16. Read for the operative 1 January 2026 change date and sugar-based methodology. The older overview pages' percentage/deadline descriptions do not override the amended regulation. |
+| [Historical goods definitions, English](https://zatca.gov.sa/en/RulesRegulations/Taxes/Documents/Commodities%20Subject%20to%20Excise%20Tax_ENG_v.01.pdf) | Read on 2026-11-16. Read for historical carbonated/sweetened classes and milk-content exceptions; not a source for 2026 volumetric rates. |
+| [Zakat Declaration and Tax Returns Calendar 2026](https://zatca.gov.sa/en/MediaCenter/Publications/Documents/Zakat%20Declaration%20and%20Tax%20Returns%20Calendar%20(EN).pdf) | Read on 2026-11-16. Read for the named November-December 2025 excise deadline and the 2026 excise period entries. |
+| [Penalty initiative effective July 2026](https://zatca.gov.sa/en/HelpCenter/guidelines/Documents/Cancellation-of-Fines-Exemption%20of-Financial-Penalties.pdf) | Read on 2026-11-16. Read for pp. 3-11 for period, exclusions, principal and instalment conditions. |
+
+**Not yet confirmed:** the old general 6-year record-retention claim and any longer record-class requirement before disposal; historical start dates for the 2019 device/sweetened extensions beyond the historical definition evidence; other GCC states' old implementation-date/rate table (UAE, Bahrain, Oman, Qatar, Kuwait); a general expansion to sugar-containing foods or an independent “distilled beverages” class; actual SKU reference/standard prices in the cases; case-specific price inclusions, dairy composition, guarantees and approved cross-border discharge; current portal box identifiers and specialised refund/transition entitlements. None of those old claims is a usable current rate, exemption or filing shortcut. Source/lab/authority evidence must resolve the relevant item before filing.
