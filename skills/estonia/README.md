@@ -4,7 +4,10 @@ applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 covered_by:
   XB: ee-cross-border
 not_applicable: {}
-partial: {}
+partial:
+  IT-IND: "FIE own-health period, annual social-tax floor/cap subtraction and annual exceptions/credit rules are held; 2026 return layout not published in the sources read."
+  IT-CORP: "This five-skill audit does not freshly verify the unchanged company-tax skill; holding exemptions and company entertainment conditions in the planning skill remain held."
+  VAT: "Current full statutory exceptions and 2026 self-supply divisor require confirmation; dated EU customer-status consolidation has not been checked for later amendments."
 ---
 
 # Estonia: tax pack
@@ -15,15 +18,19 @@ Calendar tax year. Authority: the Estonian Tax and Customs Board (Maksu- ja Toll
 
 | Tax | Skill | Status |
 |---|---|---|
-| Income tax | estonia-income-tax | sourced from the law |
-| Company tax | ee-corporate-income-tax (distributed-profit tax at 22/78, deemed distributions, participation exemption, capital reductions, bank advance tax, 2026) | checked against the law |
-| VAT or sales tax | estonia-vat-return | sourced from the law |
-| Social contributions | estonia-social-contributions (social tax, unemployment premiums, II pillar, self-employed FIE, 2026) | checked against the law |
-| Payroll | estonia-payroll (gross to net, withholding, basic exemption, TSD, 2026) | checked against the law |
-| Transfer pricing | ee-transfer-pricing | checked against the law |
-| Cross-border | ee-cross-border (residence, non-residents, withholding, dividends, permanent establishments, treaty relief, foreign tax credit, company exit tax, 2026) | checked against the law |
+| Income tax | estonia-income-tax | Not yet approved |
+| Company tax | ee-corporate-income-tax (distributed-profit tax at 22/78, deemed distributions, participation exemption, capital reductions, bank advance tax, 2026) | Not yet approved |
+| VAT or sales tax | estonia-vat-return | Not yet approved |
+| Social contributions | estonia-social-contributions (social tax, unemployment premiums, II pillar, self-employed FIE, 2026) | Not yet approved |
+| Payroll | estonia-payroll (gross to net, withholding, basic exemption, TSD, 2026) | Not yet approved |
+| Transfer pricing | ee-transfer-pricing | Not yet approved |
+| Cross-border | ee-cross-border (residence, non-residents, withholding, dividends, permanent establishments, treaty relief, foreign tax credit, company exit tax, 2026) | Not yet approved |
 
-Also in the pack: ee-tax-overview (a map of the system), ee-company-formation (entity choice) and estonia-tax-optimization.
+Also in the pack: ee-tax-overview (a map of the system), ee-company-formation (entity choice) and estonia-tax-optimization. Every skill is Built from the law.
+
+## Source completion
+
+The 16 November 2026 audit changes only the income-tax, VAT, overview, formation and planning skills. It does not claim a new independent legal review of the five unchanged domain skills. Usable guidance is limited to the official-source scopes actually read. Held original passages remain for source completion and must not be used as instructions. Formation gaps include detailed capital evidence/in-kind valuation, personal liability and share-transfer conditions, non-electronic/other-form and amendment fees, foreign-management/treaty outcomes and annual-report approval/attachments. Planning gaps include company entertainment eligibility, foreign participation exemption, pension-election timing, the detailed social-tax pension/health allocation and entrepreneur-account eligibility alongside FIE/VAT registration. The overview also holds banking advance-tax details. Read each changed skill's Not yet confirmed line for its exact boundary.
 
 ## Official sources
 
