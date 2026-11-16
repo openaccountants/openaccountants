@@ -26,6 +26,8 @@ import re
 import subprocess
 import sys
 import zipfile
+from decimal import Decimal
+from html.parser import HTMLParser
 
 # A URL may hold balanced brackets (gibraltarlaws.gov.gi/...(01-07-24).pdf).
 LINK_RE = re.compile(r"https?://(?:[^\s()|>\"\]]|\([^\s()|>\"\]]*\))+")
@@ -166,6 +168,16 @@ for _n in range(1, 201):
             _WORD_VALUES[_w] = _n
 _WORD_RE = re.compile(r"\b(" + "|".join(re.escape(w) for w in sorted(_WORD_VALUES, key=len, reverse=True))
                       + r")\s*(?:\(\s*[\d.,]+\s*\)\s*)?" + PERCENT_WORDS, re.IGNORECASE)
+_ENGLISH_VALUES = {w: n for n in range(1, 201) for w in _en(n)}
+_NUMBER_WORDS = {part for word in _ENGLISH_VALUES for part in re.split(r'[ -]+', word)}
+_NUMBER_WORDS |= {'zero', 'a', 'half', 'thousand', 'million', 'billion', 'trillion', 'quadrillion', 'quintillion'}
+_NUMBER_TOKEN = '(?:' + '|'.join(sorted(_NUMBER_WORDS, key=len, reverse=True)) + ')'
+_HALF_PERCENT_RE = re.compile(
+    r'\b(?P<phrase>' + _NUMBER_TOKEN + r'(?:[\s-]+' + _NUMBER_TOKEN + r')*)\s*'
+    + PERCENT_WORDS + r"\b", re.IGNORECASE)
+_SCALED_NUMBER_RE = re.compile(
+    r"(?<![\w.,])(?P<number>(?:\d{1,3}(?:,\d{3})+|\d+)(?:\.\d+)?)"
+    r"\s+(?P<scale>million|billion)\b", re.IGNORECASE)
 _ZH_DIGITS = {"一": 1, "二": 2, "两": 2, "三": 3, "四": 4, "五": 5, "六": 6, "七": 7, "八": 8, "九": 9}
 
 
@@ -182,6 +194,23 @@ def word_percent_values(page_text):
     vals = set()
     for m in _WORD_RE.finditer(_strip_accents(page_text)):
         vals.add(float(_WORD_VALUES[m.group(1).lower()]))
+    for m in _HALF_PERCENT_RE.finditer(page_text):
+        words = re.sub(r'[\s-]+', ' ', m.group('phrase').lower())
+        while words.startswith(('and ', 'a ')):
+            words = words.split(' ', 1)[1]
+        fraction = re.search(r'(?:^| )(?:a half|one half|half)$', words)
+        if not fraction:
+            continue
+        prefix = words[:fraction.start()].strip()
+        if prefix:
+            if not prefix.endswith(' and'):
+                continue
+            whole = _ENGLISH_VALUES.get(prefix[:-4])
+            if whole is None:
+                continue  # An unsupported full cardinal must not become a smaller suffix rate.
+        else:
+            whole = 0
+        vals.add(whole + 0.5)
     for m in re.finditer(r"百分之([一二两三四五六七八九十百]{1,4})", page_text):
         v = _zh_number(m.group(1))
         if v: vals.add(float(v))
@@ -204,6 +233,9 @@ def page_values(page_text):
         except ValueError:
             pass
     vals |= word_percent_values(page_text)
+    for m in _SCALED_NUMBER_RE.finditer(page_text):
+        multiplier = 1_000_000 if m.group('scale').lower() == 'million' else 1_000_000_000
+        vals.add(round(float(Decimal(m.group('number').replace(',', '')) * multiplier), 6))
     return vals
 
 
@@ -234,10 +266,11 @@ def read_bytes(raw):
             return ""
     t = raw.decode("utf-8", "replace")
     flight = next_flight_text(t)
+    article = next_data_text(t)
     # Some sites (vero.fi) keep a table as JSON inside a long attribute value: keep that text too.
     attrs = " ".join(html.unescape(a) for a in re.findall(r'="([^"]{50,})"', t))
     t = re.sub(r"(?s)<script.*?</script>|<style.*?</style>", " ", t)
-    return html.unescape(re.sub(r"<[^>]+>", " ", t)) + flight + (" " + attrs if attrs else "")
+    return html.unescape(re.sub(r"<[^>]+>", " ", t)) + flight + article + (" " + attrs if attrs else "")
 
 
 # Next.js sites (finlex.fi and others) ship the page text inside
@@ -256,6 +289,57 @@ def next_flight_text(page):
     if not parts:
         return ""
     return " " + html.unescape(re.sub(r"<[^>]+>", " ", "".join(parts)))
+
+
+def next_data_text(page):
+    """Article bodies in Pages Router JSON, excluding analytics, IDs and other metadata."""
+    bodies = []
+
+    class DataScripts(HTMLParser):
+        def __init__(self):
+            super().__init__(convert_charrefs=False)
+            self.active = False
+            self.buffer = []
+            self.scripts = []
+
+        def handle_starttag(self, tag, attrs):
+            if tag == 'script':
+                ids = [value for key, value in attrs if key == 'id']
+                self.active = ids == ['__NEXT_DATA__']
+                self.buffer = []
+
+        def handle_data(self, data):
+            if self.active:
+                self.buffer.append(data)
+
+        def handle_endtag(self, tag):
+            if tag == 'script' and self.active:
+                self.scripts.append(''.join(self.buffer))
+                self.active = False
+
+    parser = DataScripts()
+    parser.feed(page)
+    parser.close()
+
+    def article_bodies(node):
+        if not isinstance(node, dict):
+            return
+        for key in ('articleBody', 'body', 'content', 'detail'):
+            value = node.get(key)
+            if isinstance(value, str):
+                bodies.append(value)
+        for key in ('article', 'post', 'news', 'news_detail', 'news_detial', 'response', 'data'):
+            article_bodies(node.get(key))
+
+    for body in parser.scripts:
+        try:
+            data = json.loads(body)
+        except (ValueError, TypeError):
+            continue
+        if isinstance(data, dict) and isinstance(data.get('props'), dict):
+            article_bodies(data['props'].get('pageProps'))
+    text = re.sub(r'(?is)<script\b.*?</script>|<style\b.*?</style>', ' ', ' '.join(bodies))
+    return ' ' + html.unescape(re.sub(r'<[^>]+>', ' ', text)) if text else ''
 
 
 _cache = {}

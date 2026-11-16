@@ -13,6 +13,27 @@ def sources(label, host):
 
 
 class TerritorySourceChecks(unittest.TestCase):
+    def test_sao_tome_assemblys_hosted_journal_is_its_own_source(self):
+        for path in ("/saotomeeprincipe/diarios-da-an",
+                     "/saotomeeprincipe/diarios-da-an/xii-legislatura-8-11-22-a-8-11-26/ii-serie/7.a-sessao-legislativa-1/DAN14-IIS.pdf"):
+            with self.subTest(path=path):
+                text = sources("Assembly Diario", "www2.camara.leg.br").replace("/law", path)
+                self.assertEqual(skill_checks.check_source_hosts("skills/sao-tome-and-principe/st-income-tax.md", text, {"jurisdiction": "ST"}), [])
+
+    def test_sao_tome_hosted_path_does_not_allow_other_brazilian_sources(self):
+        cases = (
+            ("ST", "www2.camara.leg.br", "/atividade-legislativa/law"),
+            ("ST", "www2.camara.leg.br", "/saotomeeprincipe/diarios-da-an-lookalike/law"),
+            ("ST", "www2.camara.leg.br", "/saotomeeprincipe/diarios-da-an/../../../atividade-legislativa/law"),
+            ("ST", "www2.camara.leg.br", "/saotomeeprincipe/diarios-da-an/%2e%2e/%2e%2e/law"),
+            ("ST", "www2.camara.leg.br.example.br", "/saotomeeprincipe/diarios-da-an/law"),
+            ("UG", "www2.camara.leg.br", "/saotomeeprincipe/diarios-da-an/law"),
+        )
+        for jurisdiction, host, path in cases:
+            with self.subTest(jurisdiction=jurisdiction, host=host, path=path):
+                text = sources("Assembly record", host).replace("/law", path)
+                self.assertTrue(skill_checks.check_source_hosts("skills/example/rates.md", text, {"jurisdiction": jurisdiction}))
+
     def test_parent_jurisdiction_sources_are_not_foreign(self):
         examples = {
             "AX": ("vero.fi", "www.finlex.fi", "www.suomenpankki.fi"),
