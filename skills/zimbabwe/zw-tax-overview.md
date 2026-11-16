@@ -52,7 +52,7 @@ Do not turn a notice naming a tax and period into a universal filing deadline fo
 | VAT Categories B/C and appointed digital-services withholding agents, period ended August 2026 | Return by September tenth; payment by September fifteenth. Other periods/categories need their applicable notice and the VAT Guide | [Public Notice 49 of 2026, opening paragraph](https://www.zimra.co.zw/public-notices?download=4540:public-notice-49-of-2026-vat-returns-and-payments-date-10-september-2026) |
 | Provisional income tax, ordinary December year end | Fourth return by December fifteenth and payment by December twentieth 2026; fourth instalment is 35% of estimated annual tax. For other approved years use approved dates | [Public Notice 58 of 2026, opening paragraph and para.1](https://www.zimra.co.zw/public-notices?download=4553:public-notice-58-of-2026-forth-qpd-2026) |
 
-For TaRMS, log in and select the TIN. To add a tax type, select Taxpayer Information, Taxpayer Profile, Tax Type, New Tax Type, then complete and submit the relevant registration. Pending returns follow the effective registration date. For a return use Tax Return Management, Pending Returns, choose the actual tax type, complete and submit. These steps are from [Public Notice 50 of 2026](https://www.zimra.co.zw/public-notices?download=4539:public-notice-50-of-2026-new-2026-legislation-changes-deployed-in-tarms); they do not replace the conditions creating liability.
+For TaRMS, log in and select the TIN. To add a tax type, select Taxpayer Information, Taxpayer Profile, Tax Type, New Tax Type, then complete and submit the relevant registration. Pending returns follow the effective registration date. For a return use Tax Return Management, Pending Returns, choose the actual tax type, complete and submit. For CGT cases, submit the E-Agreement first to trigger the CGT return under Pending Returns; do not assume the generic pending-return route alone generates that return. These steps are from [Public Notice 50 of 2026](https://www.zimra.co.zw/public-notices?download=4539:public-notice-50-of-2026-new-2026-legislation-changes-deployed-in-tarms); they do not replace the conditions creating liability.
 
 ### Screen for new 2026 tax types
 
@@ -64,6 +64,7 @@ Boundary test only: estimated total income expressed on a consistent, already-es
 
 ```oa-check
 name: Provisional-tax currency routing at and above the boundary
+tolerance: 0.000001
 inputs:
   total: 100000
   foreign_at_boundary: 50000

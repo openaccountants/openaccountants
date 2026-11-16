@@ -42,7 +42,7 @@ Quick answer: a company may have a corporate investor; a PBC normally admits nat
 | PBC accounting officer | Incorporation statement names an accounting officer and is signed by the members and a qualified accounting officer; annual statements go to a qualified officer for examination, review and report | COBE Act ss.248, 274, 275 | https://cgu.pfms.gov.zw/download/companies-and-other-business-entities-act-chapter-2431/?wpdmdl=21343 |
 | Public or co-operative company | Distinct alternatives; refer for their own constitution and governance requirements rather than applying this private-company checklist | COBE Act ss.76, 85, 87-93 | https://cgu.pfms.gov.zw/download/companies-and-other-business-entities-act-chapter-2431/?wpdmdl=21343 |
 | Partnership or sole trader | Alternatives to incorporation; do not issue an incorporation certificate or describe them as a Pvt Ltd/PBC. A profit-making association or partnership of more than twenty persons must use a registered statutory form unless the designated-profession or other-law exception applies | COBE Act s.75 | https://cgu.pfms.gov.zw/download/companies-and-other-business-entities-act-chapter-2431/?wpdmdl=21343 |
-| Foreign company branch | Requires the foreign-company procedure, including ministerial authorisation, registration and a principal officer ordinarily resident in Zimbabwe or a Zimbabwe citizen | COBE Act s.241(1)-(3) | https://cgu.pfms.gov.zw/download/companies-and-other-business-entities-act-chapter-2431/?wpdmdl=21343 |
+| Foreign company branch | Where s.241 applies, requires ministerial authorisation, registration and a principal officer ordinarily resident in Zimbabwe or a Zimbabwe citizen. Section 241(16) excludes a foreign company with an investment licence, a bank or insurer licence, or operating in a statutory special economic zone; assess its separate regime | COBE Act s.241(1)-(3),(16) | https://cgu.pfms.gov.zw/download/companies-and-other-business-entities-act-chapter-2431/?wpdmdl=21343 |
 
 A PBC is unsuitable for a proposed corporate member under s.253. The earlier claim that it must have a Zimbabwean member is not a condition stated in ss.247 or 253. Do not turn that correction into a general assurance that foreign investment is unrestricted: sector and investor permissions remain separate.
 
@@ -71,7 +71,7 @@ The tax comparison is limited to income before any owner-level distributions. Di
 | Corporate investor wants a PBC | Refer to the ordinary natural-person membership rule and estate exception in s.253; use a company analysis instead |
 | Exactly one shareholder | Confirm the director requirement with the Registrar or local legal adviser; s.195(1)'s private-company numeric rules expressly address more than one shareholder |
 | Only exempt supplies or no trade | Do not infer compulsory VAT registration from incorporation alone; apply the VAT scope test |
-| Foreign branch, public company or co-operative | Use the distinct statutory process; this checklist does not complete it |
+| Foreign branch, public company or co-operative | Use the distinct statutory process; check the foreign-company exclusions in s.241(16) before applying that section; this checklist does not complete it |
 | Existing entity or regulated activity | Confirm current re-registration and licensing requirements separately |
 
 ## Worked cases
@@ -110,13 +110,13 @@ Do not quote a registration fee, turnaround guarantee, minimum USD capital amoun
 
 ## Filing and payment
 
-For an ordinary company, file the annual return with the Registrar within twenty-one days of the incorporation, registration or re-registration anniversary, with the private-company certificate and signatures required by s.165. Section 82 licensed associations have statutory exemptions, so do not extend the rule indiscriminately. A PBC has its own financial statements and accounting-officer regime under ss.273-275; do not treat s.165 as a universal annual-return rule for every entity ([COBE Act](https://cgu.pfms.gov.zw/download/companies-and-other-business-entities-act-chapter-2431/?wpdmdl=21343)). For tax, route ITF12C and provisional QPD returns to [corporate income tax](zw-corporate-income-tax.md); do not confuse them with the registry return.
+For an ordinary company, file the annual return with the Registrar within twenty-one days of the incorporation, registration or re-registration anniversary, with the private-company certificate and signatures required by s.165. Section 82 licensed associations have statutory exemptions, so do not extend the rule indiscriminately. A PBC has its own financial statements and accounting-officer regime under ss.273-275; do not treat s.165 as a universal annual-return rule for every entity ([COBE Act](https://cgu.pfms.gov.zw/download/companies-and-other-business-entities-act-chapter-2431/?wpdmdl=21343)). For statutory records, a company or PBC must keep the original or certified constitutive documents and amendments at its registered office or accounting officer's physical address (s.21(2)); this is a narrow confirmed retention rule, not a complete statutory-register checklist. For tax, route ITF12C and provisional QPD returns to [corporate income tax](zw-corporate-income-tax.md); do not confuse them with the registry return.
 
 ## Sources
 
 | Source and actual scope read | URL | Read on |
 |---|---|---|
-| COBE Act [Chapter 24:31], government CGU-hosted text: commencement annotation and s.1; ss.18-25, 75-78, 82, 85, 87-93, 165, 195, 241, 247-254, 273-275. Registration, eligibility, director conditions and neighboring exceptions; current fee instruments not read | https://cgu.pfms.gov.zw/download/companies-and-other-business-entities-act-chapter-2431/?wpdmdl=21343 | 2026-11-16 |
+| COBE Act [Chapter 24:31], government CGU-hosted text: commencement annotation and s.1; ss.18-25, 75-78, 82, 85, 87-93, 165, 195, 241 including subsection (16), 247-254, 273-275. Registration, eligibility, director conditions and neighboring exceptions; current fee instruments not read | https://cgu.pfms.gov.zw/download/companies-and-other-business-entities-act-chapter-2431/?wpdmdl=21343 | 2026-11-16 |
 | ZIMRA VAT Registration: compulsory and excluded activities, registration requirements and TaRMS steps; whole substantive page read in a normal browser | https://www.zimra.co.zw/domestic-taxes/vat/vat-registration | 2026-11-16 |
 | ZIMRA Tax Rates: ordinary individual and company rows, Finance Act references and AIDS levy row, including neighboring special regimes; undated authority page, not a complete 2026 rate card | https://www.zimra.co.zw/domestic-taxes/corporate/tax-rates | 2026-11-16 |
 
