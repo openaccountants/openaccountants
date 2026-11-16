@@ -37,12 +37,14 @@ This reference addresses Korean resident individuals' ordinary holdings and iden
 
 | Item | Answer and conditions | Official source |
 | --- | --- | --- |
-| Period and currency | Calendar 2026; KRW working papers. Preserve original currency, dates and conversion evidence. | [Income Tax Act arts. 5, 24](https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=280405&efYd=20260701) |
-| Scheduled individual regime | Transfers/lending from 1 January 2027; other income under separate taxation. | [Income Tax Act arts. 14(3)(8)(da), 21(1)(27); Act 17757 addenda](https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=280405&efYd=20260701) |
-| Scheduled annual tax | National 20% plus local 2%, combined 22%, after the KRW 2,500,000 annual deduction. | [Income Tax Act art. 64-3(2)](https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=280405&efYd=20260701); [Local Tax Act art. 93(18)](https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=282559&efYd=20260701) |
-| Future acquisition valuation | Total average per resident, replacing the old exchange moving-average/P2P FIFO split. | [Promulgated Income Tax Decree arts. 88(1), 92(2)(4)](https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=280865&efYd=20260102) |
-| Existing holdings | Higher of actual cost and statutory 31 December 2026 market value; prescribed price observation at 00:00 on 1 January 2027. | [Income Tax Act art. 37(5)](https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=280405&efYd=20260701); [Decree art. 88(2)](https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=280865&efYd=20260102) |
+| Period and currency | Calendar 2026; KRW working papers. Preserve original currency, dates and conversion evidence. | [Income Tax Act arts. 5, 24](https://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=280405&efYd=20260701&chrClsCd=010202) |
+| Scheduled individual regime | Transfers/lending from 1 January 2027; other income under separate taxation. | [Income Tax Act arts. 14(3)(8)(da), 21(1)(27); Act 17757 addenda](https://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=280405&efYd=20260701&chrClsCd=010202) |
+| Combined scheduled rate (computed) | 22%; the separate statutory rates and annual deduction are in the table below. | [Income Tax Act art. 64-3(2)](https://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=280405&efYd=20260701&chrClsCd=010202); [Local Tax Act art. 93(18)](https://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=282559&efYd=20260701&chrClsCd=010202) |
+| Future acquisition valuation | Total average per resident, replacing the old exchange moving-average/P2P FIFO split. | [Promulgated Income Tax Decree arts. 88(1), 92(2)(4)](https://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=280865&efYd=20260102&chrClsCd=010202) |
+| Existing holdings | Higher of actual cost and statutory 31 December 2026 market value; prescribed price observation at 00:00 on 1 January 2027. | [Income Tax Act art. 37(5)](https://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=280405&efYd=20260701&chrClsCd=010202); [Decree art. 88(2)](https://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=280865&efYd=20260102&chrClsCd=010202) |
 | Overseas-account trigger now | Aggregate overseas financial accounts, including overseas crypto-provider accounts: more than KRW 500,000,000 on any **month-end**, subject to filer exemptions. An intramonth peak alone is insufficient. | [NTS overseas accounts, International Tax Coordination Act arts. 52-57](https://s.nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=7819&mi=2513) |
+
+The combined rate is arithmetic: national 20% + local 2% = 22% on the same positive annual amount after the deduction. The two statutory rates, deduction and their conditions remain separately stated and sourced below.
 
 Obtain ownership/residence, year/activity, full transactions and balances, cost/fee evidence, gift history/relationship and overseas month ends before computing. Do not fill missing inputs with an assumed basis method, FMV or reward classification.
 
@@ -52,10 +54,10 @@ Obtain ownership/residence, year/activity, full transactions and balances, cost/
 
 | Item | Amount and condition | Official source |
 | --- | --- | --- |
-| Annual deduction / non-taxation threshold | KRW 2,500,000 per resident per year, not per asset, wallet or exchange. Annual virtual asset income at or below this amount is not charged. | [Income Tax Act arts. 64-3(2), 84(3)](https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=280405&efYd=20260701) |
-| National rate | 20% on annual virtual asset income less the deduction. | [Income Tax Act art. 64-3(2)](https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=280405&efYd=20260701) |
-| Local rate | 2% on that same net amount, with a separate local filing/payment obligation. | [Local Tax Act arts. 93(18), 95](https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=282559&efYd=20260701) |
-| Missing-cost alternative | 50% of all same-type asset disposal proceeds only for qualifying verification difficulty on assets acquired from 1 January 2027; no extra incidental costs. | [Income Tax Act art. 37(6)](https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=280405&efYd=20260701); [Decree art. 88(4)-(5)](https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=280865&efYd=20260102) |
+| Annual deduction / non-taxation threshold | KRW 2,500,000 per resident per year, not per asset, wallet or exchange. Annual virtual asset income at or below this amount is not charged. | [Income Tax Act arts. 64-3(2), 84(3)](https://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=280405&efYd=20260701&chrClsCd=010202) |
+| National rate | 20% on annual virtual asset income less the deduction. | [Income Tax Act art. 64-3(2)](https://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=280405&efYd=20260701&chrClsCd=010202) |
+| Local rate | 2% on that same net amount, with a separate local filing/payment obligation. | [Local Tax Act arts. 93(18), 95](https://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=282559&efYd=20260701&chrClsCd=010202) |
+| Missing-cost alternative | 50% of all same-type asset disposal proceeds only for qualifying verification difficulty on assets acquired from 1 January 2027; no extra incidental costs. | [Income Tax Act art. 37(6)](https://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=280405&efYd=20260701&chrClsCd=010202); [Decree art. 88(4)-(5)](https://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=280865&efYd=20260102&chrClsCd=010202) |
 
 ### Gift tax already applies
 
@@ -71,10 +73,12 @@ Gift tax is not limited to gifts between relatives. Recipient residence and the 
 
 | Donor relationship to resident recipient | Ordinary allowance over the statutory preceding 10-year aggregation period | Official source |
 | --- | --- | --- |
-| Spouse | KRW 600,000,000, not KRW 50,000,000 or a lifetime allowance | [Inheritance and Gift Tax Act art. 53(1)](https://www.law.go.kr/lsLinkCommonInfo.do?chrClsCd=010202&lsJoLnkSeq=1017648003) |
+| Spouse | KRW 600,000,000 | [Inheritance and Gift Tax Act art. 53(1)](https://www.law.go.kr/lsLinkCommonInfo.do?chrClsCd=010202&lsJoLnkSeq=1017648003) |
 | Lineal ascendant | KRW 50,000,000; KRW 20,000,000 where recipient is a minor | [Art. 53(2)](https://www.law.go.kr/lsLinkCommonInfo.do?chrClsCd=010202&lsJoLnkSeq=1017648003) |
 | Lineal descendant | KRW 50,000,000 | [Art. 53(3)](https://www.law.go.kr/lsLinkCommonInfo.do?chrClsCd=010202&lsJoLnkSeq=1017648003) |
-| Other qualifying relative | KRW 10,000,000, not KRW 20,000,000; blood relatives within fourth degree and relatives by marriage within third degree | [Art. 53(4)](https://www.law.go.kr/lsLinkCommonInfo.do?chrClsCd=010202&lsJoLnkSeq=1017648003) |
+| Other qualifying relative | KRW 10,000,000; blood relatives within fourth degree and relatives by marriage within third degree | [Art. 53(4)](https://www.law.go.kr/lsLinkCommonInfo.do?chrClsCd=010202&lsJoLnkSeq=1017648003) |
+
+**Warning about superseded gift allowances:** The earlier spouse allowance of KRW 50,000,000 was wrong: the ordinary allowance for a resident recipient is KRW 600,000,000 over the statutory preceding 10-year aggregation period, not a lifetime allowance. The earlier KRW 20,000,000 allowance for other relatives was also wrong: their ordinary allowance is KRW 10,000,000, limited to blood relatives within the fourth degree and relatives by marriage within the third degree. KRW 20,000,000 instead applies where a minor recipient receives a gift from a lineal ascendant; the ordinary adult ascendant-gift allowance is KRW 50,000,000. These amounts remain subject to the prior-deduction aggregation conditions, not an automatic allowance for every gift. [Inheritance and Gift Tax Act art. 53](https://www.law.go.kr/lsLinkCommonInfo.do?chrClsCd=010202&lsJoLnkSeq=1017648003).
 
 Check earlier gifts and deduction use. Article 47(2) aggregates qualifying earlier gifts from the same donor, including the donor's spouse where the donor is a lineal ascendant. Article 53-2's separate marriage/childbirth relief is conditional; obtain event/prior-use facts before applying it. The example assumes no additional relief. [Inheritance and Gift Tax Act arts. 47, 53, 53-2](https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=276123&efYd=20260102).
 
@@ -82,16 +86,29 @@ Check earlier gifts and deduction use. Article 47(2) aggregates qualifying earli
 
 These national comprehensive-income rates are in the operative 2026 Income Tax Act. They do not establish that mining, staking, airdrops or NFT creation belong in a particular income category. Local comprehensive-income tax is computed separately under Local Tax Act arts. 91-93; do not assume every final liability/credit is a national-tax surcharge.
 
-| Comprehensive taxable base, KRW | National marginal rate | Equivalent progressive deduction, KRW | Official source |
+| Comprehensive taxable base, KRW | Statutory national marginal rate | Official source |
+| --- | --- | --- |
+| Up to 14,000,000 | 6% | [Income Tax Act art. 55(1), article body](https://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=280405&efYd=20260701&chrClsCd=010202); [statutory table image](https://www.law.go.kr/LSW/flDownload.do?flSeq=123278409) |
+| Over 14,000,000 to 50,000,000 | 15% | [Income Tax Act art. 55(1), article body](https://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=280405&efYd=20260701&chrClsCd=010202); [statutory table image](https://www.law.go.kr/LSW/flDownload.do?flSeq=123278409) |
+| Over 50,000,000 to 88,000,000 | 24% | [Income Tax Act art. 55(1), article body](https://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=280405&efYd=20260701&chrClsCd=010202); [statutory table image](https://www.law.go.kr/LSW/flDownload.do?flSeq=123278409) |
+| Over 88,000,000 to 150,000,000 | 35% | [Income Tax Act art. 55(1), article body](https://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=280405&efYd=20260701&chrClsCd=010202); [statutory table image](https://www.law.go.kr/LSW/flDownload.do?flSeq=123278409) |
+| Over 150,000,000 to 300,000,000 | 38% | [Income Tax Act art. 55(1), article body](https://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=280405&efYd=20260701&chrClsCd=010202); [statutory table image](https://www.law.go.kr/LSW/flDownload.do?flSeq=123278409) |
+| Over 300,000,000 to 500,000,000 | 40% | [Income Tax Act art. 55(1), article body](https://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=280405&efYd=20260701&chrClsCd=010202); [statutory table image](https://www.law.go.kr/LSW/flDownload.do?flSeq=123278409) |
+| Over 500,000,000 to 1,000,000,000 | 42% | [Income Tax Act art. 55(1), article body](https://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=280405&efYd=20260701&chrClsCd=010202); [statutory table image](https://www.law.go.kr/LSW/flDownload.do?flSeq=123278409) |
+| Over 1,000,000,000 | 45% | [Income Tax Act art. 55(1), article body](https://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=280405&efYd=20260701&chrClsCd=010202); [statutory table image](https://www.law.go.kr/LSW/flDownload.do?flSeq=123278409) |
+
+The following quick deductions are equivalent arithmetic, not additional statutory deductions or different rates. For a band with lower boundary L, statutory cumulative tax A at that boundary and marginal rate r, the statute gives A + (taxable base − L) × r. Rewriting it as taxable base × r − (L × r − A) gives the equivalent quick deduction L × r − A. The statutory boundaries and rates are checked in the preceding table; the cumulative amounts below come from the same statutory image.
+
+| Band in preceding statutory table | Equivalent quick-deduction arithmetic | Result, KRW | Official calculation inputs |
 | --- | --- | --- | --- |
-| Up to 14,000,000 | 6% | 0 | [Income Tax Act art. 55(1), table](https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=280405&efYd=20260701) |
-| Over 14,000,000 to 50,000,000 | 15% | 1,260,000 | [Same](https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=280405&efYd=20260701) |
-| Over 50,000,000 to 88,000,000 | 24% | 5,760,000 | [Same](https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=280405&efYd=20260701) |
-| Over 88,000,000 to 150,000,000 | 35% | 15,440,000 | [Same](https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=280405&efYd=20260701) |
-| Over 150,000,000 to 300,000,000 | 38% | 19,940,000 | [Same](https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=280405&efYd=20260701) |
-| Over 300,000,000 to 500,000,000 | 40% | 25,940,000 | [Same](https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=280405&efYd=20260701) |
-| Over 500,000,000 to 1,000,000,000 | 42% | 35,940,000 | [Same](https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=280405&efYd=20260701) |
-| Over 1,000,000,000 | 45% | 65,940,000 | [Same](https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=280405&efYd=20260701) |
+| First | 0 | 0 | [Art. 55(1), statutory table image](https://www.law.go.kr/LSW/flDownload.do?flSeq=123278409) |
+| Second | 14,000,000 × 15% − 840,000 | 1,260,000 | [Art. 55(1), statutory table image](https://www.law.go.kr/LSW/flDownload.do?flSeq=123278409) |
+| Third | 50,000,000 × 24% − 6,240,000 | 5,760,000 | [Art. 55(1), statutory table image](https://www.law.go.kr/LSW/flDownload.do?flSeq=123278409) |
+| Fourth | 88,000,000 × 35% − 15,360,000 | 15,440,000 | [Art. 55(1), statutory table image](https://www.law.go.kr/LSW/flDownload.do?flSeq=123278409) |
+| Fifth | 150,000,000 × 38% − 37,060,000 | 19,940,000 | [Art. 55(1), statutory table image](https://www.law.go.kr/LSW/flDownload.do?flSeq=123278409) |
+| Sixth | 300,000,000 × 40% − 94,060,000 | 25,940,000 | [Art. 55(1), statutory table image](https://www.law.go.kr/LSW/flDownload.do?flSeq=123278409) |
+| Seventh | 500,000,000 × 42% − 174,060,000 | 35,940,000 | [Art. 55(1), statutory table image](https://www.law.go.kr/LSW/flDownload.do?flSeq=123278409) |
+| Eighth | 1,000,000,000 × 45% − 384,060,000 | 65,940,000 | [Art. 55(1), statutory table image](https://www.law.go.kr/LSW/flDownload.do?flSeq=123278409) |
 
 ## The base
 
@@ -118,10 +135,10 @@ The protection Act's [19 July 2024 commencement](https://law.go.kr/lsInfoP.do?ef
 | Obligation | Timing and route | Official source |
 | --- | --- | --- |
 | Scheduled resident return | Following year's comprehensive-income return period, 1-31 May, as separately taxed other income. First scheduled income year 2027, regular filing period May 2028. Recheck law/form before filing. | [Income Tax Act art. 70(1)-(2); NTS filing section](https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=238935&mi=40370) |
-| National/local payment | National payment within final return period; local filing/payment is separate, due by the corresponding deadline. | [Income Tax Act art. 76](https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=280405&efYd=20260701); [Local Tax Act art. 95](https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=282559&efYd=20260701) |
+| National/local payment | National payment within final return period; local filing/payment is separate, due by the corresponding deadline. | [Income Tax Act art. 76](https://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=280405&efYd=20260701&chrClsCd=010202); [Local Tax Act art. 95](https://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=282559&efYd=20260701&chrClsCd=010202) |
 | Ordinary gift return/payment | Within 3 months after the end of the gift month; payment by that filing deadline. | [Inheritance and Gift Tax Act arts. 68, 70](https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=276123&efYd=20260102) |
 | Overseas-account report | 1-30 June after holding year; Form 45, HomeTax/SonTax or jurisdictional tax office. Thus 2026 holdings are reported in June 2027 if required. | [NTS filing instructions](https://s.nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=7819&mi=2513) |
-| Scheduled provider submissions | Art. 164-4: end of second month following relevant quarter/year; Decree names transaction-detail/aggregate statements. Not a January annual deadline. | [Income Tax Act art. 164-4; Act 20615 addenda arts. 1, 12](https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=280405&efYd=20260701); [Decree art. 216-4](https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=280865&efYd=20260102) |
+| Scheduled provider submissions | Art. 164-4: end of second month following relevant quarter/year; Decree names transaction-detail/aggregate statements. Not a January annual deadline. | [Income Tax Act art. 164-4; Act 20615 addenda arts. 1, 12](https://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=280405&efYd=20260701&chrClsCd=010202); [Decree art. 216-4](https://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=280865&efYd=20260102&chrClsCd=010202) |
 
 Prepare annual national/local schedules and support; use [HomeTax](https://www.hometax.go.kr/) for the applicable return and retain submission/payment evidence. This is not a tested 2028 screen-by-screen filing guide. Future form boxes, provider schemas and provisional-payment workflow remain held below. Exchange reporting is not the individual's completed return.
 
@@ -260,18 +277,18 @@ Before completion: reconcile opening/acquired/disposed/closing quantities, match
 
 | Official source | Exact scope actually read | Read date |
 | --- | --- | --- |
-| [Income Tax Act, July 2026 consolidation, Act 21221](https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=280405&efYd=20260701) | Read for this guide: arts. 1-5, 14, 19-21, 24, 37, 45, 55 table, 64-3, 70, 76, 84, 164-4; Act 17757 addenda arts. 1, 2 and 5 and Act 20615 addenda arts. 1, 6, 12. Future provisions and commencement distinguished from present operation. | 2026-11-16 |
-| [Income Tax Decree, promulgated consolidation including future provisions](https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=280865&efYd=20260102) | Read for this guide: future arts. 88(1)-(6), 92(2), 216-4; total average, exchange value, transitional price, missing-cost conditions and 50% ratio. | 2026-11-16 |
-| [Income Tax Decree, October 2026 operative text](https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=290841&efYd=20261001) | Read for this guide: current art. 88 remains deleted pending future commencement; Decree 35121 addenda art. 1(3)-(4) preserves promulgated 2027 commencement. Read with future-text row, not applied in 2026. | 2026-11-16 |
+| [Income Tax Act, July 2026 consolidation, Act 21221](https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=280405&efYd=20260701); [actual article body](https://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=280405&efYd=20260701&chrClsCd=010202) | Read for this guide: arts. 1-5, 14, 19-21, 24, 37, 45, 55 table ([actual statutory image](https://www.law.go.kr/LSW/flDownload.do?flSeq=123278409)), 64-3, 70, 76, 84, 164-4; Act 17757 addenda arts. 1, 2 and 5 and Act 20615 addenda arts. 1, 6, 12. Future provisions and commencement distinguished from present operation. | 2026-11-16 |
+| [Income Tax Decree, promulgated consolidation including future provisions](https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=280865&efYd=20260102); [actual article body](https://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=280865&efYd=20260102&chrClsCd=010202) | Read for this guide: future arts. 88(1)-(6), 92(2), 216-4; total average, exchange value, transitional price, missing-cost conditions and 50% ratio. | 2026-11-16 |
+| [Income Tax Decree, October 2026 operative text](https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=290841&efYd=20261001); [actual article body](https://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=290841&efYd=20261001&chrClsCd=010202) | Read for this guide: current art. 88 remains deleted pending future commencement; Decree 35121 addenda art. 1(3)-(4) preserves promulgated 2027 commencement. Read with future-text row, not applied in 2026. | 2026-11-16 |
 | [NTS resident virtual asset overview](https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=238935&mi=40370) | Read for this guide: commencement, definition/exclusions, basis, transitional value, exchanges and filing sections. Residual reference to 2024 missing-cost proposal supplemented with promulgated Decree, not treated as law itself. | 2026-11-16 |
-| [Local Tax Act, July 2026](https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=282559&efYd=20260701) | Read for this guide: arts. 91-95, especially 93(18)'s formula and 95's separate filing/payment. | 2026-11-16 |
-| [Inheritance and Gift Tax Act, 2026](https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=276123&efYd=20260102) | Read for this guide: arts. 2-4-2, 26 table, 47, 53, 53-2, 56-57, 65, 68-70; scope, rates, aggregation, valuation, filing/credit. | 2026-11-16 |
+| [Local Tax Act, July 2026](https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=282559&efYd=20260701); [actual article body](https://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=282559&efYd=20260701&chrClsCd=010202) | Read for this guide: arts. 91-95, especially 93(18)'s formula and 95's separate filing/payment. | 2026-11-16 |
+| [Inheritance and Gift Tax Act, 2026](https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=276123&efYd=20260102); [actual article body](https://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=276123&efYd=20260102&chrClsCd=010202) | Read for this guide: arts. 2-4-2, 26 table, 47, 53, 53-2, 56-57, 65, 68-70; scope, rates, aggregation, valuation, filing/credit. | 2026-11-16 |
 | [Article 53 and neighbours](https://www.law.go.kr/lsLinkCommonInfo.do?chrClsCd=010202&lsJoLnkSeq=1017648003) | Read for this guide: complete arts. 53 and 53-2: ordinary 10-year allowances/relationships and conditional marriage/childbirth relief. | 2026-11-16 |
-| [Inheritance and Gift Tax Decree, October 2026](https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=290845&efYd=20261001) | Read for this guide: art. 60(2), designated-provider daily-average window and other-asset valuation. | 2026-11-16 |
+| [Inheritance and Gift Tax Decree, October 2026](https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=290845&efYd=20261001); [actual article body](https://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=290845&efYd=20261001&chrClsCd=010202) | Read for this guide: art. 60(2), designated-provider daily-average window and other-asset valuation. | 2026-11-16 |
 | [NTS gift computation](https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=7728&mi=2338) | Read for this guide: ordinary gift computation, rate bands/deductions and earlier gifts, excluding exceptional share schemes. | 2026-11-16 |
 | [NTS overseas accounts](https://s.nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=7819&mi=2513) | Read for this guide: current scope/exemptions, month-end trigger, Form 45, filing, sanctions/corrections; obsolete commented-out fine table excluded. | 2026-11-16 |
 | [NTS nonresident overview](https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=238936&mi=40371) | Read for this guide: body overview of domestic-source transfer/lending/withdrawal, provider withholding and treaty application; referral only, no nonresident computation supplied. | 2026-11-16 |
-| [Protection Act, current consolidation](https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=290735&efYd=20261002) | Read for this guide: original Act 19563 addenda art. 1, commencement one year after promulgation, including the separate 2025 commencement exception for addenda art. 2(6); not a regulatory compliance review. | 2026-11-16 |
+| [Protection Act, current consolidation](https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=290735&efYd=20261002); [actual article body](https://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=290735&efYd=20261002&chrClsCd=010202) | Read for this guide: original Act 19563 addenda art. 1, commencement one year after promulgation, including the separate 2025 commencement exception for addenda art. 2(6); not a regulatory compliance review. | 2026-11-16 |
 | [Protection Act, original enacted version](https://law.go.kr/lsInfoP.do?efYd=20240719&lsiSeq=252731) | Read for this guide by the independent reviewer: original Act 19563 register heading and 19 July 2024 commencement, supplementing the FSC announcement; not a regulatory compliance review. | 2026-11-16 |
 | [FSC NFT guidance](https://www.fsc.go.kr/po010101/82418) | Read for this guide: body sections 1 and 3, securities-first/substance classification and collectible/fungibility/payment factors; not a tax ruling. | 2026-11-16 |
 
