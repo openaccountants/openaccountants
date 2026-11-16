@@ -1,745 +1,272 @@
 ---
 name: sa-formation
-description: "ALWAYS read this skill whenever asked about forming, incorporating, registering, or licensing a business in the Kingdom of Saudi Arabia. Trigger on phrases like \"Saudi company formation\", \"MISA license Saudi\", \"Saudi LLC\", \"Saudi JSC\", \"Commercial Registration Saudi\", \"MoC Saudi\", \"100% foreign ownership Saudi\", \"MEEM license\", \"Saudization Nitaqat\", \"ZATCA registration\", \"Saudi branch office\", \"Regional Headquarters Saudi\", \"RHQ program\", \"open Saudi office\", \"incorporate Saudi Arabia\", \"Sole Establishment Saudi\", \"Mu'assasah Fardiyyah\", \"Sharikah dhāt mas'uliyyah\", \"GOSI registration\", \"Mudad payroll Saudi\", or any question about choosing or registering a Saudi entity. Covers entity comparison (Sole Establishment, LLC, Closed JSC, Open JSC, Branch of foreign company), MISA (Ministry of Investment) foreign investment licensing and the negative list, Commercial Registration from the Ministry of Commerce, sector-specific licensing (SAMA fintech and banking, CMA capital markets, CITC tel"
+description: "Saudi Arabia entity selection and business registration for 2026: compare sole establishment, LLC, ordinary and simplified JSC, listed-company and foreign-branch routes; establish actual ownership, investment/activity eligibility, capital, governance and regulatory gates. Sequences MISA registration and annual updates, commercial registration and annual confirmation, beneficial-ownership disclosure, sector/premises/bank dependencies and tax/employer handoffs. Preserves the Acme Cloud Inc. Riyadh case and all original referral boundaries. Read before a Saudi formation recommendation or application."
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/sa-formation"
   jurisdiction: "SA"
-  tax_year: "2025"
-  last_updated: "2026-07-13"
+  tax_year: "2026"
+  last_updated: "2026-11-16"
 ---
 
-# SA Formation
-
-## Saudi Arabia — Business Formation & Entity Selection — Skill v1.0
-
-## Rates and thresholds
-
-
-### Company Formation
-
-- **Sole Establishment** — Saudi/GCC only; unlimited liability; Zakat 2.5%  _(Commercial Registration Regulations)_
-- **LLC** — 1-50 members; no statutory min capital (since 2022); Zakat/CIT split  _(Companies Law, Part 6 Article 156)_
-- **Closed JSC** — 2+ shareholders; min SAR 500,000 paid-up  _(Companies Law, Article 59)_
-- **Open/Listed JSC** — Min SAR 10,000,000 paid-up  _(Companies Law + CMA, Article 41(e) of Listing Rules)_
-- **Branch of foreign company** — MISA licence required; CIT 20% on branch profits  _(MISA + Income Tax Law (ITL))_
-- **MISA (Foreign Investment) – Required for** — Any foreign or mixed ownership  _(New Investment Law 2024)_
-- **VAT Registration – Mandatory threshold** — SAR 375,000  _(VAT Implementing Regulations, Chapter 2 Article 3; ZATCA VAT Guidelines 7.1.1)_
-- **Voluntary threshold** — SAR 187,500  _(VAT Implementing Regs; Chapter two - Article 7 (ZATCA VAT Implementing Regulations) + ZATCA VAT Guidelines 7.2.1 & 7.2.2)_
-
-## Section 1 — Quick Reference Entity Comparison
-
-**Section 1 — Quick Reference Entity Comparison**
-
-placeholder
-
-**Section 1 — Quick Reference Entity Comparison**
-
-| Field | Value |
-| --- | --- |
-| Country | Kingdom of Saudi Arabia (KSA) |
-| Currency | SAR (Saudi Riyal); pegged to USD at ~3.75 SAR / 1 USD |
-| Company registrar | Ministry of Commerce (MoC) — Commercial Registration (Sijil Tijari) |
-| Foreign-investment licensing | Ministry of Investment (MISA) — replaced SAGIA in February 2020 |
-| Tax / Zakat authority | Zakat, Tax and Customs Authority (ZATCA) — merged GAZT and Saudi Customs in 2021 |
-| Social insurance | General Organization for Social Insurance (GOSI) |
-| Payroll wage protection | Mudad platform (linked to GOSI and the Ministry of Human Resources and Social Development — MHRSD) |
-| Key legislation | Companies Law issued by Royal Decree No. M/3 of 28/1/1437H (2015) as amended by Royal Decree No. M/132 of 1/12/1443H (2022); Foreign Investment Law as updated by the New Investment Law promulgated by Royal Decree No. M/19 of 4/2/1446H (2024) and Implementing Regulations 2025; Income Tax Law Royal Decree No. M/1 of 15/1/1425H (2004); Zakat Implementing Regulations 2017 as amended; VAT Law and Implementing Regulations 2017 as amended; GOSI Law Royal Decree No. M/33 of 3/9/1421H |
-| Registration portals | MISA portal (misa.gov.sa); MoC portal (mc.gov.sa); ZATCA portal (zatca.gov.sa); GOSI portal (gosi.gov.sa); Qiwa, Mudad, Absher (cross-government services) |
-| Typical formation time | Sole Establishment (Saudi/GCC): 1–3 working days; Foreign-owned LLC via MISA: 2–6 weeks for MISA + 1–2 weeks for MoC CR; Closed JSC: 4–8 weeks; Branch of foreign company via MISA: 4–8 weeks |
-| Standard CIT (non-Saudi/non-GCC share) | **20%** flat under Income Tax Law |
-| Zakat (Saudi/GCC share) | **2.5%** of the Zakat base |
-| Withholding tax | Royalties 15%; management fees 20%; dividends, interest, rent, technical and consulting fees 5%; insurance/reinsurance 5%; international telecom services 5% (verify against current ZATCA guidance) |
-| VAT | **15%** standard rate since 1 July 2020 (raised from 5%); registration threshold SAR 375,000 mandatory; SAR 187,500 voluntary |
-| RHQ Program corporate incentives | **0% CIT and 0% WHT for 30 years** for qualifying activities of Regional Headquarters licensed entities (subject to substance and qualifying-activity tests) |
-| Skill version | 1.0 |
-
-### Entity types — at a glance
-
-**Entity types — at a glance**
-
-| Feature | Sole Establishment (Mu'assasah Fardiyyah) | LLC (Sharikah dhāt mas'uliyyah mahdūdah) | Closed JSC (Sharikah musahamah mughlaqah) | Open / Listed JSC | Branch of Foreign Company |
-| --- | --- | --- | --- | --- | --- |
-| Legal personality | No (proprietor = business) | Yes | Yes | Yes | No (extension of foreign parent) |
-| Liability | Unlimited personal | Limited to capital contribution | Limited to share value | Limited to share value | Foreign parent liable |
-| Min. owners | 1 (Saudi or GCC national only) | 1 (single-member LLC permitted since 2022) | 2 shareholders | 5+ founders historically; aligned with public offer rules | 1 foreign parent |
-| Max. owners | 1 | 50 members | 200 shareholders | Unlimited | n/a |
-| Foreign ownership | Not permitted | Permitted in most sectors (negative list applies); 100% in most sectors | Permitted with MISA license | Permitted via MISA + CMA listing rules | Permitted with MISA license |
-| Min. paid-up capital (statutory) | None | **No statutory minimum since 2022 Companies Law** (was SAR 500,000 historically; sectoral floors override; foreign-owned often requires higher capital in practice) | **SAR 500,000** | **SAR 10,000,000** | Set by MISA; commonly SAR 500,000 commercial / SAR 100,000 service for branches |
-| MISA license required | No (Saudi-owned) | Yes for foreign / mixed ownership | Yes for foreign / mixed ownership | Yes | Yes (mandatory) |
-| Commercial Registration (CR) | Required | Required | Required | Required | Required |
-| Tax treatment | Saudi proprietor → Zakat 2.5%; GCC proprietor → Zakat | Zakat on Saudi/GCC share; CIT 20% on foreign share (mixed-ownership pro-rata) | Same as LLC | Same as LLC; listed-share rules apply | CIT 20% on branch profits; no Zakat (branches have no Saudi shareholders) |
-| Annual filings | ZATCA Zakat return; VAT returns | ZATCA Zakat/CIT return; VAT returns; MoC CR renewal; MISA license renewal; financial statements filed with MoC for LLCs above threshold | Same as LLC plus board / shareholder governance | Same plus CMA quarterly / annual disclosures | ZATCA CIT return; VAT; MISA renewal; parent financials on file |
-| Suffix on name | None (proprietor name + activity) | "Limited Liability Company" / "L.L.C." | "Closed Joint Stock Company" / "C.J.S.C." | "Joint Stock Company" / "J.S.C." | "Branch of [Parent Name]" |
-| Admin burden | Low | Medium | High | Very high | Medium–High |
-
-**Recommended defaults:**
-
-- **Saudi or GCC national** running a small business with low liability risk and no foreign capital: **Sole Establishment (Mu'assasah Fardiyyah)**.
-- **Foreign company opening a Saudi presence** for ongoing operations with limited liability: **100% foreign-owned LLC via MISA license** — the canonical default. Single-member LLC permitted since 2022.
-- **Foreign company wanting to test the Saudi market without incorporating a separate Saudi legal person**: **Branch of Foreign Company via MISA**, accepting that the foreign parent remains liable.
-- **Joint venture between Saudi and foreign partners** with multiple investors and stronger governance: **Closed JSC** with MISA license — min capital SAR 500,000.
-- **Mature company planning a Tadawul IPO**: **Open JSC** with CMA-supervised public offer — min capital SAR 10 million.
-- **Multinational establishing its regional headquarters covering MENA** and seeking tax incentives: **LLC structured under the MISA RHQ Program** with the 30-year 0% CIT / 0% WHT package on qualifying RHQ activities.
-
-## Section 2 — Required Inputs and Refusal Catalogue
-
-### Required intake before recommending an entity
-
-1. Nationality of each founder / shareholder (Saudi, GCC national, or non-GCC foreign) and whether each is an individual or a legal person.
-2. Number of founders and intended directorships / managers.
-3. Intended business activity using the **MISA / MoC ISIC-based activity code list** — the activity drives whether the negative list, sectoral cap, or RHQ qualifying-activity list applies.
-4. Expected paid-up capital and source of funds (SAR or USD equivalent).
-5. Whether any non-GCC foreign shareholder is involved (triggers MISA licensing).
-6. Whether the activity is on the **MISA Negative List** (a small set of sectors closed to foreign investment — see R-SA-F2).
-7. Whether the activity is regulated by SAMA, CMA, CITC, MEEM, MoH, NCAAA, GACA, or another sector regulator.
-8. Whether the business will hire employees (triggers GOSI registration, Mudad enrolment, and Saudization / Nitaqat obligations).
-9. Whether the parent group qualifies for the **RHQ Program** (multinational with regional operations across MENA wanting Saudi to host the regional HQ).
-10. Whether the business expects VAT-registrable turnover (> SAR 375,000) and whether it will engage in zero-rated exports or reverse-charge imports.
-11. Province / city of principal place of business (Riyadh, Jeddah, Dammam, Mecca, Medina — some sectors have geographic restrictions, e.g. Hajj/Umrah service providers must be in Mecca / Medina).
-12. Whether the founders are present in Saudi or will use a Saudi resident representative for filings.
-
-### Refusal catalogue
-
-- **R-SA-F1** — Using a Saudi national as a nominee 'sponsor' or fronting partner to disguise 100% foreign ownership where the activity does not actually require Saudi participation contravenes the Anti-Concealment Law (Nizam Mukafahat al-Tasattur) issued by Royal Decree No. M/4 of 1442H, which carries fines up to SAR 5 million and imprisonment up to 5 years. The skill will not draft or advise on nominee / tasattur arrangements. Where genuine Saudi participation is commercially desired, document substance with a properly drafted shareholders' agreement, real capital contribution, and operational role. Escalate complex cases to a Saudi-qualified legal practitioner.  _(Anti-Concealment Law (Nizam Mukafahat al-Tasattur), Royal Decree No. M/4 of 1442H)_
-- **R-SA-F2** — Certain activities are reserved for Saudi nationals or otherwise closed / restricted to foreign investment under the MISA Negative List and the Implementing Regulations of the New Investment Law (2025). The current restricted list is narrow but includes: (i) military equipment, uniforms, and devices for civilian use of military-grade tools; (ii) civilian explosives; (iii) certain real-estate brokerage in Mecca and Medina; (iv) Hajj and Umrah service provision to pilgrims (some sub-activities only); (v) recruitment / labour-supply offices in specified sub-categories; (vi) some printing and publishing of religious material; (vii) fishing in territorial waters. The list is reviewed periodically by the Council of Ministers — always verify against the current MISA published list at the date of advice. The skill flags negative-list issues but does not handle exemption applications.  _(MISA Negative List; Implementing Regulations of the New Investment Law (2025))_
-- **R-SA-F3** — Iqama (residency permit), block visa allocations, Premium Residency (Saudi 'green card'), and Nitaqat Saudization tier strategy are handled by MHRSD, the Saudi Passport Directorate (Jawazat), and the Premium Residency Centre. The skill flags requirements but does not handle immigration filings or tier-band optimisation; for deep Saudization analysis see the sa-gosi-saudization skill, and for immigration engage a Saudi labour-law specialist.
-- **R-SA-F4** — Saudi banks require the appointed General Manager / managing director (often required to be Saudi-resident with a valid iqama for some banks) to attend in person for KYC under SAMA AML/CFT Rules and CDD requirements. Some banks impose minimum balance requirements and operational presence checks. The skill flags the requirement but does not guarantee any specific bank's onboarding timeline or outcome.  _(SAMA AML/CFT Rules; CDD requirements)_
-- **R-SA-F5** — These require sector licences (SAMA for banks, insurers, finance companies, payment service providers, EMIs, exchange houses; CMA for brokers, asset managers, custodians, investment funds, Tadawul-listed entities; CITC for telecom operators, ISPs, and licensed value-added services; MoH for hospitals, clinics, labs, pharmacies; NCAAA / Ministry of Education for higher education and licensed schools; SFDA for pharmaceuticals and medical devices; GACA for aviation) in addition to MISA + MoC formation. Capital floors and substance requirements are materially higher than the Companies Law minimums. Formation alone is insufficient — the skill refuses to provide a green-light recommendation without mapping the sectoral licence.
-- **R-SA-F6** — Claiming the RHQ Program 30-year 0% CIT / 0% WHT incentive without satisfying the substance, qualifying-activity, and economic-presence requirements (minimum number of qualifying employees, board meetings held in Saudi Arabia, regional strategic direction provided from the Saudi RHQ, etc.) is refused. The incentive is subject to ZATCA and MISA verification; failure triggers retroactive tax assessment plus penalties. The skill flags the program at a high level but defers detailed RHQ qualification to a Saudi tax specialist.
-- **R-SA-F7** — Recommending the insertion of a nominal Saudi or GCC shareholder solely to shift profits from the 20% CIT regime to the 2.5% Zakat regime, without genuine economic ownership and substance, is refused under the ZATCA general anti-avoidance principles and the substance-over-form doctrine applied in Zakat Implementing Regulations 2017 (as amended). Real Saudi/GCC participation with capital at risk is required for Zakat treatment on the corresponding share.  _(Zakat Implementing Regulations 2017 (as amended))_
-- **R-SA-F8** — Certain activities in Mecca and Medina, including real-estate ownership and brokerage, residential leasing to pilgrims, and Hajj/Umrah operations, are restricted to Saudi nationals or Saudi-owned entities. Foreign-owned entities cannot directly own real property in the two holy cities; investment vehicles (Saudi REITs, listed shares) may participate indirectly. The skill flags the restriction and refuses to recommend structures that contravene it.
-- **R-SA-F9** — Saudi Arabia maintains its own commercial sanctions / boycott register under the General Authority for Foreign Trade. Counterparties on the Saudi commercial register are screened during MISA / MoC processing. The skill flags the screening but does not perform sanctions / boycott checks; counterparties of concern must be cleared through proper compliance channels before MISA submission.  _(General Authority for Foreign Trade)_
+# Saudi Arabia business formation and entity selection: 2026
 
-## Section 3 — Entity Types in Detail
+> **Produced by OpenAccountants (openaccountants.com)**
+>
+> This skill prepares an entity-selection and registration workpaper. It does not replace Saudi legal advice, a sector licence, bank approval or a signed tax return.
 
-### 3.1 Sole Establishment (Mu'assasah Fardiyyah)
+## Scope
 
-#### Nature
+Read before recommending, forming, registering or licensing a Saudi business. Cover the proposed owners, actual activity, liability/governance needs, investment registration, commercial registration (CR), beneficial ownership, operational permissions and tax/employer setup as separate gates. The current Companies Law is **M/132, 1/12/1443H**; the new Investment Law is **M/19, 16/1/1446H**, implemented with the 2025 regulation. Do not describe the former M/3 Companies Law or the old foreign-investment licence/annual-renewal process as the whole current framework. [Companies Law arts. 2–9, 281](https://mc.gov.sa/ar/do/com-2022.pdf); [Investment Law arts. 7–8, 15–16](https://misa.gov.sa/app/uploads/2024/08/Investment-Law.pdf); [investment IR art. 1](https://misa.gov.sa/app/uploads/2025/06/THE-INVESTMENT-LAW-IMPLEMENTING-REGULATIONS.pdf).
 
-- **Sole Establishment nature** — A Sole Establishment (مؤسسة فردية, Mu'assasah Fardiyyah) is a business owned and operated by a single Saudi or GCC national in their personal capacity. It is not a separate legal person under the Companies Law — the proprietor is the business, with unlimited personal liability. It is registered solely with the Ministry of Commerce through a Commercial Registration (Sijil Tijari); MISA is not involved because foreign ownership is not permitted.
+**Quick reference:** an ordinary operating LLC can have 1 or more owners and a separate liability estate. It is often a suitable candidate for a sustained foreign-owned operation, but it is a recommendation to test against the activity, not a legal default that approves every foreign investor. A branch keeps the foreign company directly involved; an ordinary JSC and a simplified JSC are distinct forms. “Closed” and “listed/open” describe different offering/governance contexts, not a substitute for the statutory forms. A CR or MISA registration alone does not authorise a regulated activity.
 
-#### Key features
+Detailed immigration/iqama/block visas/Premium Residency, bank onboarding, public-market listing, occupation-specific Saudization, licence applications and full RHQ qualification remain specialist work. Tax computations are in [CIT](sa-corporate-tax.md), [Zakat](sa-zakat.md), [WHT](sa-withholding-tax.md), [VAT](saudi-arabia-vat.md), [excise](sa-excise-tax.md), [RETT](sa-rett.md) and [e-invoicing](saudi-einvoice.md). Employer calculations and Mudad are in [GOSI/Saudization/WPS](sa-gosi-saudization.md). Use [intake](sa-freelance-intake.md) and [return assembly](sa-return-assembly.md) for those workflows.
 
-- Owner: 1 individual (Saudi national or GCC national only); legal persons cannot own a Sole Establishment.
-- Liability: unlimited personal liability of the proprietor.
-- Capital: no statutory minimum.
-- Legal personality: none — the proprietor contracts in their own name (with the trade name as an alias).
-- Name: must include the proprietor's personal name or an approved trade name; cannot use "L.L.C.", "J.S.C.", or other corporate suffixes.
-- Foreign ownership: not permitted. A foreign individual must use an LLC (single-member LLC since 2022) via MISA.
+## Ask the client first
 
-#### Formation steps
+1. All direct and ultimate natural-person owners, citizenship/residence, percentages/control arrangements, existing Saudi/GCC/foreign entities and the complete ownership chain. Obtain supporting corporate and identity records securely, not merely a nominee's name.
+2. Actual products/services, precise activity codes, locations, customer types, importing/manufacturing, regulated activities and intended contracts. Distinguish software reseller, cloud-service provider and data-centre operator.
+3. Whether the proposal is a new venture, subsidiary, branch, representative office, acquisition, joint venture or RHQ; existing Saudi registrations, licences, liabilities and deadlines.
+4. Liability acceptance, shareholder rights, future investors, employee incentives, transfer restrictions, exit/IPO plans, manager/board arrangements and authority to sign.
+5. Proposed capital, cash/in-kind contributions and valuation, source of funds, financing and the operating cash budget. Separate a statutory minimum, a sector/investment condition and a voluntary commercial budget.
+6. Parent incorporation/constitutional documents, authorised resolutions/powers, current good-standing/account records, required audited financials, translations and the authentication route accepted for each document/jurisdiction.
+7. Premises/title/lease and Ejar information, municipality/sector requirements, economic presence, bank/KYC readiness and proposed management residence.
+8. For RHQ: group markets, actual regional decision-making and functions, staff/directors, premises/expenditure, proposed eligible and non-eligible revenue, and the actual current programme criteria.
+9. Projected supplies and purchases, related-party contracts, imports/cross-border payments, first payroll date, employees' roles/cohorts, and existing tax/employer records.
+10. Any exclusions, foreign-ownership caps, property/holy-city issue, screening concern, legal dispute or prior refusal. Obtain the actual official decision and resolve it before recommending implementation.
 
-1. Choose business activity using the MoC ISIC-based code list.
-2. Reserve trade name on the MoC portal (mc.gov.sa).
-3. Submit Commercial Registration application through MoC portal with national ID (Hawiya), proof of address, and activity code(s). Pay the CR fee (sliding scale by activity and capital).
-4. Receive Commercial Registration certificate (Sijil Tijari) — typically 1–3 working days.
-5. Register with the Chamber of Commerce in the city of registration — annual subscription required.
-6. Register with ZATCA for Zakat (and VAT if turnover threshold met).
-7. Register with GOSI if hiring employees.
-8. Register on Qiwa and Mudad for workforce management and wage protection if hiring.
-9. Sector licences where applicable.
+A missing activity, ownership chain, sector condition or capital rule stops the final structure recommendation. The preparer must research the law; do not ask the client to supply a guessed legal minimum or quote a cached negative list as a current permission.
 
-#### Tax
+## The method, step by step
 
-- **Sole Establishment tax** — Zakat at 2.5% of the Zakat base (computed on equity-based formula under Zakat Implementing Regulations 2017). No CIT for Saudi/GCC-owned Sole Establishments — Zakat is the only direct tax on profits. VAT at 15% if turnover exceeds SAR 375,000 (mandatory) or SAR 187,500 (voluntary). WHT obligations on payments to non-resident service providers (royalties 15%, management fees 20%, technical / consulting fees 5%, etc.). Annual Zakat return filing with ZATCA; periodic VAT returns (monthly if turnover > SAR 40M, otherwise quarterly).  _(Zakat Implementing Regulations 2017)_
+### 1. Check investment eligibility and the actual activity
 
-#### When to use
+The new Investment Law art. 3 permits investment in available sectors subject to arts. 8–9 and other laws. **Foreign investors register with MISA before investment**, except the specified Capital Market Law securities route. MISA registration is distinct from sector licences and the CR. The legal definition of foreign investor is not simply “non-GCC shareholder”: establish the investor's actual treatment, including any applicable GCC/international rights. Do not presume all GCC structures bypass MISA or all foreign natural persons are barred from investing. [Investment Law arts. 1, 3–5, 7–9, 13–14](https://misa.gov.sa/app/uploads/2024/08/Investment-Law.pdf).
 
-- Saudi or GCC national operating a small retail shop, professional services practice, or trade business where corporate substance is not required.
-- Family business with a single owner where unlimited liability is acceptable.
+The statutory **excluded activities** system distinguishes prohibited and restricted activities and requires the prescribed prior approval. The competent Examination Committee issues/updates the list, published by MISA in the Investor Guide. Restricted-activity ownership changes also require the applicable approval. Absence of an item from an old list does not establish 100% foreign ownership today. [Law art. 8](https://misa.gov.sa/app/uploads/2024/08/Investment-Law.pdf); [investment IR arts. 15–20](https://misa.gov.sa/app/uploads/2025/06/THE-INVESTMENT-LAW-IMPLEMENTING-REGULATIONS.pdf).
 
-#### When to avoid
+Preserve the original list's subjects as checks, **not a confirmed current negative list**: military equipment/uniforms/tools, civilian explosives, specified recruitment/labour supply, printing/publishing of religious material, territorial-water fishing, Hajj/Umrah services, and real-estate/holy-city activities. The latest complete list, each activity's code, ownership cap and approval exception have **not been confirmed** here. Retrieve the applicable current official list and sector decision before approving that activity. Do not convert a conditional/restricted activity into an absolute prohibition without reading the approval route.
 
-- Any foreign-ownership component — must use LLC via MISA.
-- Liability-sensitive activities (contracting, manufacturing with consumer exposure).
-- Multi-owner ventures — must use LLC or JSC.
-- Where the activity requires a sector licence that mandates a corporate vehicle (banking, insurance, capital markets — all require JSC).
+Likewise, the old service, trading/commercial, industrial, contracting, real-estate, agriculture, mining, transport/logistics, tourism, education, health, audiovisual/media, entrepreneur/Riyadi, Premium Residency-linked and RHQ categories remain useful **intake routes**. They are not proof that every historical “licence” label, fee, capital condition or qualifying document still applies to 2026 investor registration. Identify the actual available registration/service and any distinct regulator approval in the current portal.
 
-### 3.2 Limited Liability Company (LLC) — Sharikah dhāt mas'uliyyah mahdūdah
+### 2. Compare liability, ownership and governance
 
-#### Nature
+| Candidate | Ownership/liability and use | Governance, capital and limits | Source |
+|---|---|---|---|
+| Sole establishment, Mu'assasah Fardiyyah | An individual business route rather than a separate limited-liability company; establish the individual's eligibility and liability acceptance | Appropriate to assess for a single-owner simple trade/practice. Do not promise eligibility to every Saudi/GCC/foreign individual or reject every foreign applicant without the applicable route. No generic capital or completion-time claim is confirmed here | Companies Law art. 4 distinguishes company forms; [law](https://mc.gov.sa/ar/do/com-2022.pdf); foreign-person registration framework, [investment IR art. 11](https://misa.gov.sa/app/uploads/2025/06/THE-INVESTMENT-LAW-IMPLEMENTING-REGULATIONS.pdf) |
+| LLC, Sharikah dhāt mas'uliyyah mahdūdah | **1 or more** natural/legal persons; separate financial estate, liability ordinarily limited to the contribution | 1 or more managers; a managers' board may be formed. No maximum 50 members or general fixed LLC capital floor appears in the current arts. 156–160. Activity/sector/investment conditions still apply | [Companies Law arts. 156–160](https://mc.gov.sa/ar/do/com-2022.pdf) |
+| Ordinary JSC, including an unlisted/“closed” JSC | **1 or more** natural/legal persons; share capital and separate company liability | Issued/paid capital distinction below; board **at least 3**, not a blanket statutory maximum 11. Ordinary/extraordinary shareholder processes and applicable regulator governance must be planned | [Companies Law arts. 58–67, 98](https://mc.gov.sa/ar/do/com-2022.pdf) |
+| Simplified JSC | Separate statutory share-company form, not merely the name for every one-person JSC | Flexible constitution/governance under arts. 138–155; ordinary JSC minimum-capital requirement is expressly disapplied, with sector requirements still tested | [Companies Law arts. 138–140](https://mc.gov.sa/ar/do/com-2022.pdf) |
+| Listed/public-offering JSC | A JSC seeking the relevant capital-market route | CMA offering/listing, Saudi Exchange/Tadawul or Nomu eligibility, governance and disclosures are a separate project. The old “SAR 10m paid-up is the universal open-JSC minimum” is not confirmed guidance | [Companies Law art. 1, listed-company competent authority](https://mc.gov.sa/ar/do/com-2022.pdf); obtain current CMA/Exchange rules before listing |
+| Foreign-company branch | Saudi business of the foreign company, not an automatically separate limited-liability subsidiary | Parent authority, registered manager and permitted activity; Saudi financial statements/auditor requirements. No universal commercial/services branch capital floor is established here; the historical amounts remain under Not yet confirmed | [Companies Law arts. 235–241](https://mc.gov.sa/ar/do/com-2022.pdf) |
 
-- **LLC nature** — The LLC (شركة ذات مسؤولية محدودة, Sharikah dhāt mas'uliyyah mahdūdah) is a separate legal person with limited liability, governed by the Companies Law (Royal Decree No. M/3 of 1437H as amended by Royal Decree No. M/132 of 1443H, 2022). It is by far the most common vehicle for foreign investors entering Saudi Arabia and the default recommendation for non-listed operating businesses.  _(Companies Law (Royal Decree No. M/3 of 1437H as amended by Royal Decree No. M/132 of 1443H, 2022))_
+General/limited partnerships, professional entities and non-profit forms also exist; they require their own liability/professional-status workpaper where relevant. Do not force every multi-owner venture into an LLC/JSC, or treat every regulated sector as invariably requiring the same form. Obtain the actual professional/sector rule. A shareholder agreement must align with the constitution and mandatory law; it cannot create a fictitious Saudi owner or override licence restrictions. [Companies Law arts. 2–4, 11, 35–57 and professional-company chapter](https://mc.gov.sa/ar/do/com-2022.pdf).
 
-#### Key features
+### 3. Rates, bands and thresholds
 
-- Members: minimum 1 (single-member LLC permitted since 2022); maximum 50.
-- Foreign ownership: 100% permitted in most sectors. MISA license required for any foreign shareholder.
-- Liability: limited to each member's capital contribution.
-- Capital: no statutory minimum under the 2022 Companies Law for ordinary LLCs (the historic SAR 500,000 floor was removed). Sectoral floors override (e.g. SAMA fintech, CMA-licensed activities, insurance). Foreign-owned LLCs are often required by MISA to subscribe higher capital in practice depending on activity — commonly SAR 500,000 for commercial activities, SAR 100,000+ for services, SAR 25,000,000+ for trading / wholesale, and SAR 30,000,000+ for real-estate development. Always verify against the current MISA capital schedule for the specific activity code.
-- Management: one or more managers ("General Manager" / "Managing Director") appointed in the articles or by member resolution. No mandatory board for LLCs.
-- Governance: members meet at least annually; resolutions in writing acceptable. Statutory books: register of members, register of charges, minute book.
-- Audit: mandatory for LLCs above the audit thresholds in the Companies Law Implementing Regulations (broadly: capital ≥ SAR 5M, employees ≥ 50, or revenue ≥ SAR 20M — verify against current thresholds). Foreign-owned LLCs are commonly audited regardless of size.
-- Beneficial Ownership: UBO disclosure mandatory under MoC Beneficial Ownership Regulations 2024.
+| Formation parameter | 2026 rule and condition | Official source |
+|---|---|---|
+| Ordinary JSC issued capital | At least **SAR 500,000**; at least **1/4** paid at incorporation. At the statutory floor, derived initial payment is **SAR 125,000**, not SAR 500,000 universally paid up | Companies Law art. 59, capital and fraction in words on the page, [law](https://mc.gov.sa/ar/do/com-2022.pdf) |
+| Simplified JSC capital | Amount/paid part set in its constitution; ordinary JSC minimum does not apply. Test any activity/sector condition separately | Companies Law art. 139, [law](https://mc.gov.sa/ar/do/com-2022.pdf) |
+| LLC membership and capital | 1 or more persons; articles disclose capital/contributions and payment declaration. No old 50-person ceiling or generic SAR 500,000 services minimum is established by these provisions | Companies Law arts. 156–159, [law](https://mc.gov.sa/ar/do/com-2022.pdf) |
+| Small/micro audit-size test | 2 of annual revenue **not exceeding SAR 10m**, assets **not exceeding SAR 10m**, employees **not exceeding 49** (thresholds in words on the page), subject to the law's exclusions and first-year/2-year conditions | Companies Law art. 19; implementing regulation art. 7, [gazette IR](https://www.uqn.gov.sa/details?p=21325) |
+| Annual financial statements | Prepare under Saudi-approved accounting standards and deposit within **6 months** of year end, following the applicable rules. Branch statements/auditor report also have a 6-month rule | Companies Law arts. 17, 238, periods in words on the page, [law](https://mc.gov.sa/ar/do/com-2022.pdf) |
+| MISA ordinary available-activity registration | Notification within **10 working days after all registration requirements are satisfied**; not a guaranteed whole-incorporation time | Investment IR art. 12, [regulation](https://misa.gov.sa/app/uploads/2025/06/THE-INVESTMENT-LAW-IMPLEMENTING-REGULATIONS.pdf) |
+| CR annual confirmation | Due after each year from registration; failure within **90 days** of due date triggers suspension/services consequences under the described current process | [MoC confirmation notice](https://mc.gov.sa/en/mediacenter/News/Pages/06-07-25-03.aspx) |
+| Actual-beneficiary ownership criterion | Natural person directly/indirectly owning **25% or more**, followed by actual-control and management fallback tests in sequence | Decision 99, art. 4, as explained in [MoC guide v2 §§definition, 3.4–3.5](https://mc.gov.sa/en/guides/Documents/Actual%20Beneficiary%20Guide.pdf) |
+| Actual-beneficiary changes | Submit update **within 15 days** of the change, with reasons; annual confirmation at each CR anniversary can be submitted up to **30 days early** | Decision 99 obligations, [MoC guide §§2.3–2.4](https://mc.gov.sa/en/guides/Documents/Actual%20Beneficiary%20Guide.pdf) |
+| RHQ tax incentive | **0%** on qualifying income and defined qualifying non-resident payments; **30 years** from RHQ licence, subject to continuing eligibility/substance and the termination/revocation provisions | RHQ Tax Rules arts. 3–5, 11–14, [rules](https://zatca.gov.sa/ar/RulesRegulations/Taxes/Documents/Regional_Headquarters_Tax_Rules.pdf) |
 
-#### Formation steps (foreign-owned LLC — most common case)
+The size test is an **audit exemption test**, not a general accounting/filing exemption or a test based on capital. Companies Law art. 19 excludes specified companies, including listed/specified-instrument/other-law cases and foreign companies, with group conditions and a qualifying shareholder request also relevant. Check first-year or consecutive-year status, constitution and all group entities. Do not declare every foreign-owned Saudi-incorporated subsidiary a “foreign company” merely because its shareholder is foreign: art. 3 addresses Saudi-incorporated nationality. Do not waive a separate CIT accountant-certification or sector requirement. The old “capital SAR 5m / 50 staff / revenue SAR 20m” shorthand is replaced by the actual statutory workpaper. [Law arts. 3, 18–19](https://mc.gov.sa/ar/do/com-2022.pdf); [IR arts. 7–8](https://www.uqn.gov.sa/details?p=21325).
 
-1. MISA Investment License application (Section 4) — submit business plan, parent financials, activity code, capital, and shareholder details on the MISA portal. 2–6 weeks.
-2. Trade name reservation with MoC.
-3. Draft Articles of Association (AoA) — bilingual Arabic/English. Notarisation at the notary public (kātib al-'adl) or e-notarisation via MoC portal.
-4. Submit Commercial Registration application on MoC portal with MISA license, AoA, and shareholder ID/passport. 1–2 weeks.
-5. Commercial Registration certificate (CR) issued. The CR is the operating licence — the company can now contract.
-6. Chamber of Commerce membership (mandatory; annual fee).
-7. ZATCA registration — for Zakat (Saudi/GCC share), CIT (foreign share), and VAT.
-8. GOSI registration as an employer.
-9. Qiwa, Mudad, Absher business enrolment for workforce and government services.
-10. Open bank account at a local Saudi bank with CR, AoA, MISA license, manager's iqama (if foreign), and board / member resolutions on signatory authority.
-11. Sector licences as applicable (SAMA, CMA, CITC, etc.).
-12. Office lease registered on Ejar (mandatory) — operating address must be a genuine commercial premises.
-13. Mudad payroll setup before first payroll cycle (Wage Protection System).
+### 4. Complete the investment-registration gate
 
-#### Tax
+Use MISA's investor/Invest Saudi service for the actual available activity and applicant category. For a legal-person applicant, investment IR art. 11 requires name, incorporation and residence, business/investment activities, capital and proposed contribution, and owners/shareholders/control/ultimate-beneficiary information, plus documents specified by the Ministry/Investor Guide. A natural-person applicant supplies the different identity/residence/nationality/activity/capital information. The applicant confirms validity and may be asked for further documents. [Investment IR art. 11](https://misa.gov.sa/app/uploads/2025/06/THE-INVESTMENT-LAW-IMPLEMENTING-REGULATIONS.pdf).
 
-- **LLC tax** — Mixed-ownership taxation: profits attributable to non-Saudi / non-GCC shareholders are subject to CIT at 20%; profits attributable to Saudi / GCC shareholders are subject to Zakat at 2.5% of the Zakat base. Computed pro-rata by share ownership. 100% foreign-owned LLC: 20% CIT on all profits. 100% Saudi/GCC-owned LLC: 2.5% Zakat on the Zakat base. Withholding tax on payments to non-residents: royalties 15%, management fees 20%, dividends/interest/rent/technical/consulting fees 5%, insurance/reinsurance 5%. Treaty rates may reduce. VAT at 15% if registered; mandatory registration above SAR 375,000 turnover. Annual return with ZATCA within 120 days of FY end (CIT) or 120 days for Zakat. Audited financials submitted alongside. Transfer pricing: ZATCA Transfer Pricing Bylaws 2019 apply — Master File, Local File, and Country-by-Country Report obligations for groups above thresholds (revenue ≥ SAR 200M for Local File / Master File; consolidated group revenue ≥ SAR 3.2B for CbCR). Real Estate Transaction Tax (RETT) 5% on real-estate transfers (separate from VAT since October 2020).  _(ZATCA Transfer Pricing Bylaws 2019)_
+Prepare the precise current checklist: parent incorporation and constitution, current status/financial statements where required, board/owner authorisation and powers, business/activity plan, ownership/beneficiary chain, contribution evidence and translations/authentication. Do not assert every category needs the same years of audited parent accounts, or that every American document must be apostilled in the state of its headquarters **and** embassy-legalised. Identify the issuing authority, document and applicable treaty/authentication exemption. The Companies IR itself recognises relevant international-agreement authentication exceptions for documents in its proxy provisions; it is not a universal checklist for every investment document. [Companies IR art. 28](https://www.uqn.gov.sa/details?p=21325); [investment IR art. 11](https://misa.gov.sa/app/uploads/2025/06/THE-INVESTMENT-LAW-IMPLEMENTING-REGULATIONS.pdf).
 
-#### When to use
+Submit, retain the application/reference and answer actual information requests. For ordinary available activities, the statutory 10-working-day notification period begins only after requirements are complete. Additional-information response periods are specified in the notification and are at least **15 working days** under art. 12; failure can cancel the application. Excluded-activity applications have their own completion/committee route, including the separate art. 17 limit; do not confuse that with ordinary registration. [Investment IR arts. 12, 16–18](https://misa.gov.sa/app/uploads/2025/06/THE-INVESTMENT-LAW-IMPLEMENTING-REGULATIONS.pdf).
 
-- Foreign company opening a Saudi subsidiary for ongoing operations — the canonical default.
-- Saudi / GCC entrepreneurs wanting limited liability without the complexity of a JSC.
-- Joint ventures between Saudi and foreign partners (mixed-ownership LLC with shareholders' agreement on top of AoA).
-- Activities not requiring a JSC (everything except banking, insurance, public-offer capital markets, and listed entities).
+After registration, record permitted activities, conditions and continuing obligations. **Annual update replaces a generic claim of annual foreign-investment licence renewal**: IR art. 13 requires annual declarations/data updates, allows submission in the preceding **60 working days**, describes notice **30 working days** before the due date, a remedial period of no more than **30 working days**, and the stated reactivation/re-registration route. Record the actual scheduled date and notice, rather than assuming a universal fixed calendar date or fee. These are distinct from CR confirmation, sector licence renewal and an RHQ licence. [Investment IR arts. 13–14](https://misa.gov.sa/app/uploads/2025/06/THE-INVESTMENT-LAW-IMPLEMENTING-REGULATIONS.pdf).
 
-#### When to avoid
+### 5. Incorporate/register through MoC and the Saudi Business Center
 
-- Plans for IPO on Tadawul — must be JSC at listing stage.
-- Activities requiring JSC by sectoral regulation (banking, insurance, finance companies, asset managers in some categories).
-- Where the founder count exceeds 50 — convert to JSC.
+1. Choose the actual eligible form and precise activities, with prior sector/investment approval where required. Obtain authority from all founders/parent; resolve the beneficiary chain and capital workpaper before submission.
+2. Use the **Saudi Business Center Business Platform** through the MoC service link. Reserve/select an accepted trade name and check the current naming rules. The Companies Law allows Arabic or another-language names subject to the relevant law; do not invent an Arabic-only rule. [Companies Law arts. 5–8](https://mc.gov.sa/ar/do/com-2022.pdf).
+3. Prepare the Arabic constitutional document, with another-language translation if used. An LLC with 1 owner uses the specified constitution route; a multi-owner LLC uses its articles. State owners, headquarters, purpose, capital and paid contributions, management/powers, transfers, decisions, profits/losses, financial year and dissolution. Evaluate in-kind assets through the applicable valuation provisions. [Companies Law arts. 7, 156–160](https://mc.gov.sa/ar/do/com-2022.pdf).
+4. Complete the live incorporation/CR application and beneficiary disclosure with the real documents and required approvals. Authenticate/sign electronically where available. The exact current field/box numbers, fees and category-specific attachments have **not been confirmed** in a live applicant session; do not fabricate portal box labels or promise automatic approval.
+5. Retain executed constitution, CR, decision/receipt, approved activities and conditions, authority/manager appointments and any contribution proof. Legal personality is established on registration subject to the statute; a draft name reservation is not an operating company. [Companies Law arts. 6–9](https://mc.gov.sa/ar/do/com-2022.pdf).
+6. Confirm tax, employer, bank, sector and premises registrations individually. A linked-system number is not proof that all returns, licences or work permissions have been activated.
 
-### 3.3 Joint Stock Company — Closed JSC (Sharikah musahamah mughlaqah)
+The new commercial-register framework removes subsidiary registers and fixed expiry/renewal in favour of **one Kingdom-wide CR with annual data confirmation**. Do not create a new branch CR solely because a second city is opened without applying the current regime and any transition for existing branches. The current MoC confirmation process is available through **business.sa**; preserve actual acknowledgements and update changed data. [MoC comparison of the new law](https://mc.gov.sa/en/mediacenter/News/Pages/17-09-24-02.aspx); [current annual-confirmation notice](https://mc.gov.sa/en/mediacenter/News/Pages/06-07-25-03.aspx).
 
-#### Nature
+Chamber membership/attestation, national address, Ejar lease, municipality/Balady premises permissions, safety approvals and bank account are separate checklist items. Retrieve the actual activity/location/category requirements; no universal Chamber fee, compulsory lease before every registration or guaranteed bank visit/manager-residency rule is established here. The old generic 1–3-day sole establishment, 2–6-week MISA, 4–8-week JSC/branch and 4–12-week RHQ times are **not confirmed service guarantees**.
 
-- **Closed JSC nature** — The Closed JSC (شركة مساهمة مغلقة, Sharikah musahamah mughlaqah) is a joint stock company whose shares are not offered to the public and not listed on Tadawul, but which has the corporate substance and governance of a JSC. Governed by the Companies Law 2022 amendments.  _(Companies Law 2022 amendments)_
+### 6. Identify, disclose and maintain actual-beneficiary information
 
-#### Key features
+Use **Decision 99, 5/6/1447H**, as explained by MoC's **Actual Beneficiary Guide version 2 (2025)**. It supersedes reliance on the old “2024 beneficial-ownership regulations” label and earlier Decision 235 as the sole current rule. Start with qualifying **natural-person ownership**, then actual ultimate control if ownership fails or is doubtful, then the prescribed manager/board-member/chairman fallback if neither identifies a person. A corporate parent holding 100% is not itself the ultimate natural-person beneficiary. Document how each test was applied and all aggregation through chains. [MoC guide, objectives/definition and §3.4–3.5](https://mc.gov.sa/en/guides/Documents/Actual%20Beneficiary%20Guide.pdf).
 
-- Shareholders: minimum 2, maximum 200. Single-shareholder JSC ("Simplified JSC") was introduced by the 2022 reform for specific use cases.
-- Foreign ownership: permitted via MISA license.
-- Min capital: SAR 500,000 paid-up.
-- Shares: registered shares; transfer subject to AoA restrictions (right of first refusal commonly).
-- Board of directors: 3–11 members; chairman appointed by the board.
-- Audit committee and other committees (nomination, remuneration) required by Companies Law Implementing Regulations for JSCs above thresholds.
-- Auditor: mandatory external auditor.
-- General Assembly (annual ordinary; extraordinary as needed).
+The guide covers general/limited partnerships, JSCs, simplified JSCs, LLCs and foreign companies. Listed JSCs are outside the stated rules; an eligible listed-company subsidiary's disclosure exemption has its own conditions, and **other duties remain**, including exemption evidence, annual confirmation, updates and cooperation. No blanket exemption merely for a government association, foreign listing or group label is asserted here. [Guide §§1.1–1.6](https://mc.gov.sa/en/guides/Documents/Actual%20Beneficiary%20Guide.pdf).
 
-#### Formation steps
+Maintain an accurate special register and supporting documents in the Kingdom, including identity, residence/contact details, basis and extent of ownership/control and dates. Verify information using reliable independent documents and respond to authorised requests through the prescribed process. Do not publish private identity/passport records in the public workpaper. Submit incorporation disclosure and subsequent changes/annual confirmation within the specific rules; the **15-day** change deadline is not the old 60-day assumption. The annual-beneficiary confirmation and CR's **90-day suspension threshold** are different obligations; one is not an extension of the other. [Guide §§2.1–2.4](https://mc.gov.sa/en/guides/Documents/Actual%20Beneficiary%20Guide.pdf).
 
-1. MISA license (if foreign shareholders).
-2. Founders' agreement drafted.
-3. AoA and statutes drafted; notarised.
-4. Subscription for founders' shares; full payment of capital into a Saudi blocked bank account (subscription account).
-5. Constitutive General Assembly convened to confirm subscription, appoint board and auditor.
-6. Submit incorporation file to MoC; CR issued.
-7. Standard post-incorporation steps: Chamber of Commerce, ZATCA, GOSI, Mudad, sector licences.
+The February 2026 enforcement decision gives a first-warning correction period and capital-banded penalties for failure to disclose/confirm; do not invent a flat universal fine or infer that a warning waives the underlying disclosure duty. Apply the actual notice, band, repeat conditions and appeal route when a live breach exists. [Decision 186, official gazette](https://www.uqn.gov.sa/decisions-and-regulations/4000311).
 
-#### Tax
+### 7. Map sector, product, property and data permissions
 
-- **Closed JSC tax** — Same as LLC — mixed-ownership pro-rata 20% CIT / 2.5% Zakat split. VAT 15%, WHT regimes as above.
+A current regulator/permission matrix must identify actual activity, regulator, service, licence/registration, preconditions, capital/ownership limit, renewal and responsible owner. Preserve all original signposting topics:
 
-#### When to use
+- **Finance/banking/payments/e-money/exchange**: specialist prudential/financial-service authorisation; no all-purpose commercial CR approval. **Insurance** is now supervised by the **Insurance Authority**, which says its mandate began **23 November 2023**, with health-insurance responsibilities transferred **4 March 2024**. The old statement that SAMA absorbed insurance supervision in 2024 reverses the change. [IA official FAQ](https://www.ia.gov.sa/en/faqs).
+- **Capital markets/advice/funds/custody and Tadawul/Nomu**: map the actual CMA/Exchange offering, licensing and governance route; do not assume all unlisted companies require listed-company committees or that a commercial registration licenses investment advice.
+- **Telecommunications/ISP/value-added services, cloud and data centres**: use **CST, Communications, Space and Technology Commission**, rather than the obsolete CITC name. CST's Cloud Computing Registration service has provider/category-specific requirements and a Business Portal application. Determine provider/reseller/customer/data-centre role before applying a registration class. [CST service and prerequisites](https://www.cst.gov.sa/en/business/services/Cloud-Computing-Registration); [provider-guide landing page](https://www.cst.gov.sa/en/regulations-and-licenses/regulations/guide-for-cloud-computing-service-providers).
+- **Products and facilities**: pharmaceuticals, medical devices, cosmetics, food/herbal products; healthcare facilities and practitioner registration; schools, universities and vocational training; audiovisual/broadcast/cinema/online media; aviation; oil/gas/petrochemicals; mining; power/water; industrial facilities and land allocation; tourism/hotels/travel; construction/contracting/engineers; property development/brokerage. Each needs its current competent regulator and service. The old combined SAMA/CCHI, CITC, NCAAA, GCAM/GAMR, WERA, Modon or ministry label does not establish that body's current licensing competence for every listed activity. Current detailed licences/capital/ownership conditions for these subjects have **not been confirmed** in this formation method.
+- **Import/retail conformity**: identify the product, technical regulation and actual authority; do not call a generic **“MEEM licence” a SASO/SABER conformity certificate**. SABER's official shipment guide distinguishes regulated products with a valid certificate of conformity from non-regulated products using the stated imported self-declaration, followed by shipment certification. A product, shipment, industrial-establishment and customs approval are different things. [SABER official guide, service description and steps 1–2](https://saber.sa/UserGuids/UserGuideForShipmentRequest-En.pdf). The old claim that every model/shipment/category necessarily follows one universal certificate path is not confirmed.
+- **Special zones**: KAEC, Riyadh-integrated/logistics arrangements, Cloud Computing, Jazan, Ras Al Khair and NEOM must be identified by the actual zone/operator and enacted rules. ECZA or a project name alone does not grant every tax/customs/labour incentive or create the same regime. Investment Law art. 14 preserves relevant special-zone law. [Investment Law art. 14](https://misa.gov.sa/app/uploads/2024/08/Investment-Law.pdf).
 
-- JV between 2+ unrelated investors wanting JSC governance, board oversight, and a transferable share structure short of public listing.
-- Pre-IPO holding vehicle in preparation for Tadawul listing.
-- Family conglomerates wanting institutional governance.
+**Property/holy cities:** the old absolute foreign-property prohibition is not a current universal description. REGA's operative announcement states the updated non-Saudi property system commenced **22 January 2026**, with applications through **Saudi Properties**, different individual/entity routes and geographical/legal controls including Makkah/Madinah. Non-Saudi entities without a Saudi presence first follow the stated MISA registration/unified-number step. Obtain the current applicable geographical-zone document and applicant's rights before recommending a property structure; this formation method grants no holy-city or Hajj/Umrah entitlement. [REGA commencement/application announcement](https://rega.gov.sa/en/media-center/news-announcements/rega-non-saudi-property-ownership-system-enters-into-force-as-of-today/).
 
-#### When to avoid
+**Personal data and hosting:** map controller/processor roles, personal/sensitive data, monitoring, clients and cross-border flows. A local cloud region alone does not establish PDPL compliance, and PDPL does not mean every business must appoint a DPO. The implementing regulation art. 32 specifies appointment conditions, including the stated public-entity large-scale processing, core systematic monitoring and core sensitive-data processing cases, plus competent-authority appointment rules. Sector/government/cloud hosting and transfer controls need their own current legal analysis. [PDPL IR art. 32 and neighbouring record obligations](https://dgp.sdaia.gov.sa/wps/wcm/connect/2a9a4744-a2ae-444f-bad2-6dacde843637/The%2Bimpelementing%2Bregulation%2Bof%2Bthe%2Bpersonal%2Bdata%2Bprotection%2Blaw.pdf?CACHEID=ROOTWORKSPACE-2a9a4744-a2ae-444f-bad2-6dacde843637-pcruNj.&CONVERT_TO=url&MOD=AJPERES). Do not invent a blanket all-data-localisation rule or declare every SaaS reseller the same class of cloud provider.
 
-- Single founder / member — use LLC (cheaper, simpler).
-- Pure operating subsidiary with one parent — use LLC.
+### 8. Test RHQ substance and incentives separately
 
-### 3.4 Open Joint Stock Company / Listed JSC
+The RHQ Tax Rules define eligible regional strategic/management/internal-support activities under the stated classification. A group must satisfy the actual MISA qualification criteria **and** the tax rules' economic substance. The tax rules require a valid RHQ licence, suitable Saudi premises, Saudi direction/management including strategic board meetings, commensurate operating expenditure, eligible Saudi-derived revenue, **at least 1 Saudi-resident director**, and an adequate number of qualified full-time staff. They do not say every ordinary operating subsidiary qualifies merely because it serves a region. [RHQ Tax Rules arts. 1–5](https://zatca.gov.sa/ar/RulesRegulations/Taxes/Documents/Regional_Headquarters_Tax_Rules.pdf).
 
-#### Nature
+The **0% income-tax** incentive applies to eligible income. The **0% WHT** provisions identify dividends, related-person payments and necessary services from unrelated persons, with non-eligible activity and anti-avoidance exclusions. Non-eligible income remains under the relevant tax law. The period is **30 years from obtaining the RHQ licence**, subject to cessation/renewal and revocation rules, not an unconditional 30-year holiday on every payment/business. Keep separate accounts where required, tax/Zakat returns and an annual substance report. [RHQ Tax Rules arts. 3–9, 12–14](https://zatca.gov.sa/ar/RulesRegulations/Taxes/Documents/Regional_Headquarters_Tax_Rules.pdf).
 
-- **Open JSC nature** — The Open JSC is the public-company form whose shares may be offered to the public and listed on Tadawul (Saudi Exchange) or Nomu (parallel market for SMEs). Subject to CMA (Capital Market Authority) regulation in addition to Companies Law.
+The original **15 full-time staff including 3 senior executives**, commencement deadlines, MENA/group-presence criteria, early Saudization relief and government-procurement restrictions belong to MISA/programme/procurement rules. The current complete operative programme pages for those figures and exceptions have **not been confirmed** here. Do not present them as proved by tax art. 5, which states adequate staffing and at least 1 resident director. Do not say the tax law universally requires both a Saudi-resident regional CEO and CFO. Obtain the current licence/programme conditions before the RHQ recommendation.
 
-#### Key features
+Economic-substance breaches follow RHQ tax art. 11's notice/correction/fine/suspension process, whereas deliberate misleading information, misuse or acting for ineligible persons has art. 12 revocation/assessment consequences. **Retroactive tax is not the automatic result of every ordinary missing-staff fact**. Keep the actual breach, year, notice and corrective steps. RHQ status does not by itself prove treaty residence; art. 13 requires the Income Tax Law residence conditions. [RHQ Tax Rules arts. 11–14](https://zatca.gov.sa/ar/RulesRegulations/Taxes/Documents/Regional_Headquarters_Tax_Rules.pdf).
 
-- Min capital: SAR 10 million for Tadawul main market; SAR 10 million for Nomu (lower free-float and disclosure thresholds).
-- Free float: ≥ 30% on Tadawul main market; ≥ 20% on Nomu.
-- Shareholders: unlimited.
-- Board: 3–11 directors; independent director and audit committee requirements per CMA Corporate Governance Regulations.
-- Disclosure: quarterly and annual financials, material event disclosure, related-party transaction approval rules.
-- Founders' lock-up: founders' shares locked up for the period specified by CMA listing rules.
+### 9. Activate tax, accounts and employer obligations
 
-#### Formation
+Use the actual CR/MISA/sector records to verify ZATCA access and TIN, legal type, ownership, period, start date, CIT/Zakat status, VAT eligibility, withholding obligations, excise/import and e-invoicing coverage. Do not assume that a TIN automatically proves every tax registration is complete. Apply ordinary mandatory/voluntary VAT tests using the VAT skill; do not volunteer every business merely because forecast revenue approaches a threshold. Exempt/out-of-scope supplies, eligible purchases and evidence affect registration and input recovery.
 
-1. Closed JSC formed first (or LLC converted to JSC and then opened).
-2. Prospectus prepared and filed with CMA under the Rules on the Offer of Securities and Continuing Obligations.
-3. CMA approval of the prospectus.
-4. Public offer underwriting; subscription period; allotment.
-5. Tadawul / Nomu listing approval; trading commences.
+All original tax topics have an owning destination: ordinary/natural-gas/oil CIT and losses/TP → **CIT**; ownership/calendar-dependent business Zakat → **Zakat**; dividends, royalties, financing, management and technical payments, branch-profit remittance and treaty/PE issues → **WHT/CIT**; supply, input and return-frequency decisions → **VAT**; tobacco, energy drinks, electronic smoking and the changed sweetened-drink model → **excise**; property transfers → **RETT**; invoice scope, waves and XML → **e-invoicing**. Customs requires the actual goods/classification/origin and current tariff; the old generic **5–25%** is not usable tariff advice. The old gas **30%**, flat Zakat net-assets shortcut, sweetened-drink **100%** and blanket local/master-file **SAR 200m** figures are not repeated as current rules.
 
-#### Tax
+Likewise, the tax filing calendar belongs to those owners: CIT/Zakat annual, monthly and annual WHT with partnership differences, VAT periods, current excise periods/deadlines, transfer-pricing disclosure/local/master files and CbCR. Do not equate preparing local/master files with automatically filing them all with every CIT return. This one-home approach preserves each tax job and its source without competing rate calendars in formation.
 
-- **Open JSC tax** — Same mixed-ownership 20% CIT / 2.5% Zakat split. Listed company surcharges and disclosures under CMA framework.
+Before the first hire, establish actual **GOSI** account/branch/worker coverage and old/new cohort, **Qiwa** employment/work-permit/localization setup, and **Mudad** bank wage reporting. Mudad's wage evidence is not the general contract-authentication function of Qiwa. No universal new-company **6–12-month Nitaqat grace period** is confirmed. A work visa/iqama and sector/professional permission remain separate approvals. Use the payroll skill for contributions, current rates, dates, wage bases, WPS sequence and independent occupation tests rather than the old blanket 9%/9% or 1.5%-each table.
 
-#### When to use
+## Worked cases
 
-- Mature company ready for IPO with audited 3-year financials.
+### A. Original Acme Cloud Inc. Saudi office
 
-#### When to avoid
+Preserve **Acme Cloud Inc.**, a **Delaware corporation headquartered in San Francisco**, its SaaS collaboration product, Saudi government/enterprise demand, and proposed **12 Saudi-resident sales, solutions-engineering and customer-success staff in Riyadh**. It wants **SAR invoicing**, moving from a **Dubai-based reseller**, and localised hosting through a **Saudi cloud region**. Regional management remains in **Dubai**. These are facts; the staff's nationality, wages and insured history are not supplied.
 
-- Pre-revenue, pre-profit, or pre-governance-maturity companies.
+A **100% Acme-owned operating LLC is a candidate**, subject to actual software/cloud activities, current investment eligibility, capital/sector conditions, privacy/hosting and government-customer requirements. Single-member LLC status is supported by arts. 156–157. Compare a branch if direct parent operation/liability is accepted. A JSC is possible with 1 founder, but no stated IPO/investor need establishes that its governance is preferable. Do not reject JSC solely for lacking a second founder. RHQ relief is **not established** by a sales office or 12 resident staff while regional management remains in Dubai; do not re-label operating SaaS/customer income as qualifying internal RHQ income.
 
-### 3.5 Branch of Foreign Company
+The old **SAR 500,000 “typical service licence capital”** is not a proved mandatory minimum. If Acme chooses that amount as a **voluntary budget assumption**, document the board's capital/financing and operating-needs decision and separately verify the actual activity condition. Do not raise it arbitrarily “to be conservative.” The original proposed US-seconded GM followed by a local GM remains a staffing option subject to immigration, manager authority and actual bank/sector requirements; replacing the manager with a Saudi national does not by itself prove a Nitaqat outcome.
 
-#### Nature
+Preserve the original **weeks 1–12** as a project-planning sequence, **not a service promise**:
 
-- **Branch nature** — A Branch of a Foreign Company is an extension of the foreign parent authorised to conduct business in Saudi Arabia. It is not a separate legal person — contracts bind the parent, and the parent is liable for branch obligations. Governed by the Companies Law and the New Investment Law's branch provisions.
+| Original planning stage | Correct dependency and evidence |
+|---|---|
+| Week 1: activity/parent documents | Determine exact SaaS/reseller/cloud role, eligible activity and ownership; prepare Delaware-issued records, parent authority, beneficiary chain, translations and the correct authentication route |
+| Weeks 2–6: MISA review | Submit the current investment-registration application; resolve actual queries. The law's complete-application notification rule does not guarantee this project span |
+| Weeks 6–8: name/constitution/CR | Complete the current Business Platform service with approved activities, capital/manager terms, signed documents, CR and beneficiary disclosure |
+| Weeks 8–9: tax/workforce/premises | Verify actual ZATCA registrations, payroll/Qiwa/Mudad setup, lease/Ejar and applicable municipality/sector requirements; sequence any prerequisites before their dependent registration |
+| Weeks 9–10: bank/cloud/privacy | Complete the selected bank's real KYC process; determine CST provider/category registration, PDPL roles/DPO test, data flows/hosting and government-customer contract conditions |
+| Weeks 10–12: hiring/payroll | Obtain the actual visas/iqamas/work permissions and employment records; pay through the bank and report WPS using genuine worker/cohort data |
 
-#### Key features
+The earlier bank examples **Al Rajhi / SNB / Riyad Bank / SABB** are retained only as historical options, not recommendations, evidence of a bank's current name or a promised timeline. Obtain current onboarding terms for the chosen bank. Do not mandate California apostille solely because headquarters is San Francisco or require redundant embassy legalisation without the applicable document rule.
 
-- Owner: 1 foreign parent company.
-- Liability: foreign parent liable.
-- Capital: set by MISA; commonly SAR 500,000 for commercial branches and lower for services. Some sectors require higher capital.
-- Activity: branch can only conduct the activities specifically authorised in its MISA license and CR — narrower than the parent's worldwide activities.
-- Governance: branch is run by a Branch Manager appointed by the parent's board; no separate board.
-- Repatriation: branch profits, after CIT, may be repatriated to the parent (subject to 5% WHT on the deemed dividend on repatriation in some interpretations — verify with ZATCA).
+Separate Saudi LLC contracts/invoices, Dubai reseller arrangements, parent IP/services and transfer pricing, but **signing customer contracts in the LLC's name does not itself rule out a parent PE**. Analyse actual authority/functions, people, premises and treaty facts through CIT/WHT. No group revenue was supplied, so neither CbCR threshold eligibility nor a local/master-file exemption can be concluded. Local cloud hosting and a DPO appointment also cannot substitute for the actual CST/PDPL assessment.
 
-#### Formation steps
+### B. Ordinary versus simplified JSC capital decision
 
-1. MISA license application (Branch route).
-2. Trade name reservation at MoC (must include "Branch of [Parent Name]" or equivalent Arabic).
-3. Parent corporate documents notarised, attested (Apostille where applicable; legalised by Saudi embassy in the parent's country if not Apostille).
-4. Branch CR issued by MoC.
-5. Chamber of Commerce, ZATCA, GOSI, Mudad, sector licences as for an LLC.
+For a proposed **ordinary JSC** with issued cash capital exactly **SAR 500,000**, assume no higher sector condition and valid contribution arrangements. At least 1/4 paid at incorporation is **SAR 125,000**. The remaining **SAR 375,000** is unpaid issued capital subject to its lawful payment terms, **not working cash already available**. If proposed issued capital is **SAR 800,000**, the same statutory fraction gives **SAR 200,000** initially, before any higher requirement. This corrects the old unconditional “SAR 500,000 paid up” claim. A simplified JSC needs its own constitutional/sector capital decision; do not carry the ordinary JSC floor into art. 139.
 
-#### Tax
-
-- **Branch tax** — CIT 20% on branch profits (no Zakat — no Saudi shareholder). WHT 5% on deemed dividend on profit repatriation under some ZATCA interpretations. VAT 15% as for any registered entity. Same WHT obligations on outbound payments.
-
-#### When to use
-
-- Foreign company executing specific projects in Saudi (engineering, construction, consulting) without committing to a separate Saudi subsidiary.
-- Service businesses where the parent's brand and reputation are central and corporate separation is not commercially required.
-- Initial market entry with intent to convert to an LLC subsidiary later if scale grows.
-
-#### When to avoid
-
-- Activities exposing the parent group to significant Saudi-law liability (corporate veil benefits matter).
-- Long-term operations where Saudization, social benefits, and integration favour a Saudi subsidiary.
-- Where regulatory rules require a Saudi legal person (banking, insurance, listed-market activities — must be JSC).
-
-## Section 4 — Foreign Investment Process: MISA (Ministry of Investment)
-
-The Ministry of Investment of Saudi Arabia (MISA) — formerly SAGIA (Saudi Arabian General Investment Authority) until February 2020 — is the single authority responsible for licensing foreign investment in Saudi Arabia. A MISA license is mandatory before any non-GCC foreign shareholder can hold equity in a Saudi entity, and before the entity can apply for Commercial Registration at the MoC.
-
-### Legal basis
-
-- **Legal basis** — New Investment Law promulgated by Royal Decree No. M/19 of 4/2/1446H (August 2024), with Implementing Regulations effective 2025. The New Investment Law modernised the prior Foreign Investment Law of 2000 and equalised treatment between domestic and foreign investors in most respects, while preserving the negative list of restricted activities and the licensing requirement for foreign equity.  _(Royal Decree No. M/19 of 4/2/1446H (August 2024))_
-
-### MISA license categories
-
-**MISA license categories**
-
-| Category | Typical use case |
-| --- | --- |
-| **Service license** | Consulting, IT services, professional services, training, software, marketing |
-| **Trading / Commercial license** | Wholesale, retail, distribution, import/export of goods |
-| **Industrial license** | Manufacturing, assembly, processing |
-| **Construction / Contracting license** | EPC, building, infrastructure, MEP |
-| **Real-estate license** | Real-estate development (subject to Mecca/Medina restriction — R-SA-F8) |
-| **Agriculture license** | Crop, livestock, aquaculture |
-| **Mining license** | Mineral exploration / extraction (with Ministry of Industry & Mineral Resources coordination) |
-| **Transport / Logistics license** | Freight, courier, logistics services |
-| **Tourism license** | Hotels, tour operators, travel agencies |
-| **Education license** | Private schools, training institutes (with MoE / TVTC coordination) |
-| **Health license** | Hospitals, clinics, labs (with MoH coordination) |
-| **Audiovisual / Media license** | Production, broadcasting (with GCAM / GAMR coordination) |
-| **Entrepreneur license (Riyadi)** | Founders backed by approved Saudi accelerators / incubators |
-| **Premium Residency-linked license** | Holders of Saudi Premium Residency operating businesses |
-| **Regional Headquarters (RHQ) license** | Multinational regional HQ qualifying for 30-year tax incentive (Section 6) |
-
-### MISA application process
-
-1. Activity code selection: choose the precise ISIC-based activity code from the MISA list. The code drives capital requirements, sectoral coordination, and negative-list checks.
-2. Account creation on the MISA portal (misa.gov.sa).
-3. Submit application online with:
-   - Parent company documents (certificate of incorporation, AoA, latest financial statements, board resolution authorising Saudi expansion) — notarised, Apostilled or legalised by Saudi embassy.
-   - Shareholder details (legal persons or individuals); passport copies for individuals.
-   - Business plan covering Saudi operations, projected employment, capital deployment, and Saudization commitment.
-   - Proposed activity code and trade name.
-4. MISA review: 2–6 weeks typical for standard activities. Sensitive sectors (regulated, sectoral coordination required) take longer.
-5. Capital subscription confirmation: for some activities MISA requires evidence that the proposed paid-up capital is available (bank reference letter or commitment).
-6. MISA license issued: digital certificate downloadable from the portal. License is renewable annually.
-7. Post-MISA: proceed to MoC for Commercial Registration (Section 5).
-
-### Negative list and restricted sectors
-
-- **Negative list and restricted sectors** — The negative list under the New Investment Law Implementing Regulations 2025 is narrow but includes (see R-SA-F2): military equipment, civilian explosives, certain real-estate brokerage in Mecca and Medina, certain Hajj/Umrah service categories, certain recruitment-office sub-categories, religious publishing of certain materials, and territorial-waters fishing. Always check the current MISA published list at the date of advice — the list has been progressively shortened as part of Vision 2030 opening reforms.  _(New Investment Law Implementing Regulations 2025)_
-
-### Sectoral caps
-
-- **Sectoral caps** — Some sectors permit foreign equity only up to a cap (commonly 49% or 75%); the remainder must be held by a Saudi shareholder. Examples (verify current rules): Insurance: foreign equity cap historically 49%, raised in stages (verify SAMA rules). Land transport of passengers (some categories): cap applies. Recruitment offices: cap or full restriction depending on sub-activity. Audiovisual broadcasting: cap applies.
-
-### MISA license renewal
-
-- **MISA license renewal** — Annual renewal on the MISA portal. Renewal requires: Up-to-date CR. Updated financial statements. Compliance with Saudization (Nitaqat) at least at the Medium Green tier (or the tier required for the activity). Payment of renewal fee. No outstanding ZATCA, GOSI, MHRSD, or municipality penalties.
-
-## Section 5 — Commercial Registration (CR) from MoC
-
-The Commercial Registration (Sijil Tijari) issued by the Ministry of Commerce (MoC) is the operating licence of the entity. No business may operate in Saudi Arabia without a valid CR (with limited exceptions for representative offices).
-
-### Process
-
-1. Trade name reservation on the MoC portal (mc.gov.sa). The name must be in Arabic (English transliteration permitted). It cannot contain restricted words ("Bank", "Insurance", "Government", "Royal" — restricted; some require regulator NOC).
-2. AoA notarisation:
-   - LLC and JSC: AoA must be notarised, traditionally at the notary public (kātib al-'adl) or e-notarised via the MoC portal.
-   - Sole Establishment: no AoA required.
-3. CR application submitted on MoC portal with:
-   - MISA license (for foreign-owned entities).
-   - Notarised AoA (for LLC / JSC).
-   - National ID / iqama / passport copies of shareholders and managers.
-   - Proof of registered office (Ejar lease registration).
-   - Proposed activity codes (one main + multiple secondary).
-4. CR issued within 1–2 weeks (often faster for straightforward cases). The CR contains the entity name, type, activity codes, capital, shareholders, manager, and registered address.
-5. Annual CR renewal required; failure to renew triggers fines and ultimately CR cancellation.
-6. Beneficial Ownership filing: UBO disclosure mandatory on the MoC portal under the BO Regulations 2024. Updates required within 60 days of any change.
-
-### Chamber of Commerce membership
-
-- Mandatory after CR issuance.
-- Subscription based on capital and city.
-- Provides certificate-of-origin issuance, dispute mediation, and chamber-network access.
-
-### Ejar registered lease
-
-- All commercial leases must be registered on the Ejar platform (administered by the Ministry of Municipal and Rural Affairs and Housing).
-- Required for CR issuance for most activities.
-- Drives municipal license issuance and Saudization compliance tracking.
-
-### Municipality license (Baladiyah)
-
-- Required for any premises open to the public (retail, restaurants, clinics, offices receiving clients).
-- Issued by the relevant municipality based on Ejar lease and CR.
-- Annual renewal.
-
-## Section 6 — Sector-Specific Licences (Signposting)
-
-MISA + MoC formation is necessary but not sufficient for regulated activities. Common sector licences:
-
-**Sector-specific licences table**
-
-| Sector | Regulator | Typical licence |
-| --- | --- | --- |
-| Banking, finance companies, insurance, payment service providers, EMIs, exchange houses | **SAMA (Saudi Central Bank)** | Bank licence; finance company licence; PSP / EMI licence under SAMA PSPs Regulations; insurance company licence under CCHI / SAMA insurance rules (SAMA absorbed insurance supervision from 2024) |
-| Capital markets — brokers, asset managers, custodians, fund managers, investment advisers, listed entities | **CMA (Capital Market Authority)** + Tadawul / Nomu | CMA-licensed person; investment fund licence; public-offer prospectus approval |
-| Telecom, ISPs, value-added services, datacentres, cloud providers | **CITC (Communications, Space and Technology Commission)** | Class licence (registration) for VAS; individual licence for full operators; cloud computing framework (CCRF) |
-| Pharmaceuticals, medical devices, cosmetics, food, herbal products | **SFDA (Saudi Food and Drug Authority)** | Product registration; establishment licence |
-| Healthcare facilities (hospitals, clinics, labs, pharmacies) | **MoH (Ministry of Health)** | Facility licence; practitioner registration via SCFHS |
-| Education (schools, universities, training institutes) | **Ministry of Education / NCAAA / TVTC** | School licence; higher-education licence; vocational training licence |
-| Audiovisual, broadcasting, cinema, online content for Saudi audience | **GCAM (General Commission for Audiovisual Media) / GAMR** | Broadcast / production / cinema / streaming licence |
-| Aviation | **GACA (General Authority of Civil Aviation)** | Air operator certificate; aerodrome certificate |
-| Oil, gas, petrochemicals (downstream regulation) | **Ministry of Energy** + Saudi Aramco coordination | Sector permits |
-| Mining | **Ministry of Industry & Mineral Resources** | Exploration licence; exploitation licence under Mining Investment Law 2020 |
-| Power generation / transmission / distribution / water | **WERA (Water and Electricity Regulatory Authority)** | Generation / transmission / distribution / water-service licence |
-| Industrial facilities | **Modon (Saudi Industrial Property Authority)** + Ministry of Industry | Industrial licence; Modon plot allocation |
-| Retail / import — certain product categories (electrical, electronics, building materials, toys, food contact materials) | **SASO (Saudi Standards, Metrology and Quality Organization) — MEEM platform / SABER** | **MEEM license / SABER product registration** — Saudi Standards conformity certificate; required to import or sell specified product categories |
-| Real estate (development, brokerage outside Mecca/Medina) | **General Authority for Real Estate (REGA)** + Ministry of Municipal Affairs | Real-estate development licence; brokerage licence |
-| Tourism, hotels, travel agencies, tour operators | **Ministry of Tourism + Saudi Tourism Authority** | Tourism licence |
-| Construction / contracting | **Ministry of Municipal Affairs + Saudi Council of Engineers** | Contractor classification; engineer licensing |
-| Special Economic Zones (KAEC, Riyadh Integrated SEZ, Cloud Computing SEZ, Jazan, Ras Al Khair) | **ECZA (Economic Cities and Special Zones Authority)** | SEZ tenant licence — distinct tax / customs incentives within the zone |
-| **Regional Headquarters Program** | **MISA + Royal Commission for Riyadh City** | **RHQ license — 30-year 0% CIT / 0% WHT incentive** (see Section 6.1) |
-
-### 6.1 MEEM and SABER — Saudi Standards conformity
-
-- **MEEM / SABER** — MEEM (formerly SASO Conformity Certificate; now integrated into the SABER platform) is the Saudi product conformity regime administered by SASO (Saudi Standards, Metrology and Quality Organization). Importers and retailers of specified product categories must: 1. Register products on SABER (saber.sa). 2. Obtain a Product Certificate of Conformity (PCoC) for each model from an SASO-approved Conformity Assessment Body. 3. Obtain a Shipment Certificate of Conformity (SCoC) for each import shipment. Categories covered include electrical / electronic devices, toys, low-voltage equipment, machinery, construction materials, chemicals, and food-contact materials. Failure to comply blocks customs clearance.
-
-### 6.2 Regional Headquarters (RHQ) Program
-
-Launched in 2021 and operationalised in 2024, the RHQ Program offers significant tax incentives to multinationals establishing their regional headquarters covering MENA in Saudi Arabia.
-
-- **Key incentives** — 0% Corporate Income Tax for 30 years on qualifying RHQ income. 0% Withholding Tax for 30 years on dividends, royalties, and service fees paid by the RHQ to non-resident affiliates in respect of qualifying activities. Saudization exemption period in early years; preferred access to government contracts (since 1 January 2024, government entities are required to source from RHQ-licensed entities for regional services).
-- **Eligibility (high level)** — Multinational group with operations in multiple MENA countries. The Saudi RHQ must perform strategic and management functions for the region (regional strategic direction, business planning, regional financial coordination, sales planning, etc.). Substance requirements: minimum number of qualifying employees in Riyadh (typically 15+ including senior executives), board meetings held in Saudi Arabia, regional CEO and CFO resident in Saudi Arabia. Qualifying-activity test: 100% of the RHQ entity's activities must be qualifying RHQ services (strategic management, regional financial management, regional marketing, business development, etc.). Income from non-qualifying activities loses the incentive on the non-qualifying portion.
-- **License process** — Application via the MISA RHQ portal in coordination with the Royal Commission for Riyadh City; specialised review including substance assessment. Approval timeline 4–12 weeks.
-- **Refusal flag (R-SA-F6)** — Do not assume RHQ qualification without verified substance and qualifying activities.  _(R-SA-F6)_
-
-## Section 7 — Tax / Zakat Registration with ZATCA
-
-The Zakat, Tax and Customs Authority (ZATCA) — formed in 2021 by the merger of the General Authority of Zakat and Tax (GAZT) and Saudi Customs — administers Zakat, CIT, VAT, excise tax, real-estate transaction tax, and customs duties.
-
-### Registrations
-
-- **Registrations list** — 1. Tax Identification Number (TIN): issued automatically by ZATCA upon CR issuance (MoC–ZATCA integration). Verify TIN on ZATCA portal (zatca.gov.sa). 2. Zakat registration: automatic for Saudi/GCC-owned entities and the GCC-owned portion of mixed-ownership entities. 3. CIT registration: automatic for foreign-owned entities and the foreign-owned portion of mixed-ownership entities. 4. VAT registration: mandatory if taxable supplies > SAR 375,000 in trailing 12 months or expected in next 12 months. Voluntary registration available above SAR 187,500. Apply on ZATCA portal. 5. Excise tax registration: only for producers / importers of excise goods (tobacco, energy drinks, soft drinks, sweetened beverages, electronic devices for smoking). 6. E-invoicing (FATOORA): mandatory for all VAT-registered entities since 4 December 2021 (Phase 1 — Generation); Phase 2 (Integration with ZATCA Fatoora platform) phased in by taxpayer group since 1 January 2023 — verify current wave assignment.
-
-### Tax rates summary
-
-**Tax rates summary**
-
-| Tax | Rate | Base |
-| --- | --- | --- |
-| **CIT** | **20%** (flat) | Taxable income of non-Saudi / non-GCC share |
-| **Natural gas investment tax** | 30% (graduated up to 85% for oil) — special regime | Hydrocarbon sector only |
-| **Zakat** | **2.5%** | Zakat base (broadly net assets / equity formula under Implementing Regulations) |
-| **Withholding tax — royalties** | 15% | Gross payment to non-resident |
-| **Withholding tax — management fees** | 20% | Gross payment to non-resident |
-| **Withholding tax — dividends, interest, rent, technical/consulting fees, insurance, international telecom** | 5% | Gross payment to non-resident (treaty rates may reduce) |
-| **VAT — standard** | **15%** since 1 July 2020 | Taxable supplies |
-| **VAT — zero-rated** | 0% | Exports of goods/services to GCC outside the implementation zone; international transport; certain medicines and medical equipment |
-| **VAT — exempt** | n/a | Most financial services (with exceptions); residential rental |
-| **Real Estate Transaction Tax (RETT)** | **5%** | Real-estate transfers (replaced VAT on real estate from October 2020) |
-| **Excise tax** | 50% (soft drinks) / 100% (tobacco, energy drinks, sweetened beverages, e-smoking devices) | Specified goods |
-| **Customs duties** | 5%–25% standard; higher for protected sectors | Imports (Saudi applies GCC Common Customs Tariff) |
-
-### Filing calendar
-
-**Filing calendar**
-
-| Return | Frequency | Due date |
-| --- | --- | --- |
-| **CIT return** | Annual | **120 days after FY end** |
-| **Zakat return** | Annual | **120 days after FY end** |
-| **VAT return — monthly filer** (turnover > SAR 40M) | Monthly | End of month following the tax period |
-| **VAT return — quarterly filer** (turnover ≤ SAR 40M) | Quarterly | End of month following the quarter |
-| **WHT return** | Monthly | First 10 days of the following month |
-| **Annual WHT reconciliation** | Annual | 120 days after FY end |
-| **Excise tax return** | Bi-monthly | 15 days after the period |
-| **Transfer pricing — Local File / Master File / CbCR** | Annual | With CIT return for LF/MF; CbCR per OECD timing |
-
-## Section 8 — GOSI Registration + Mudad Payroll Setup
-
-### GOSI (General Organization for Social Insurance)
-
-- **GOSI overview** — Mandatory for every Saudi employer. Covers occupational hazards (work-injury) for all employees regardless of nationality, and old-age / disability / death benefits for Saudi and GCC employees.
-
-#### Contribution rates (2025)
-
-**Contribution rates (2025)**
-
-| Component | Employer | Employee | Applies to |
-| --- | --- | --- | --- |
-| **Old-age, disability, death (OADI)** | **9%** | **9%** | Saudi / GCC employees |
-| **Unemployment insurance (SANED)** | **1.5%** | **1.5%** | Saudi employees only |
-| **Occupational hazards (work-injury)** | **2%** | 0% | All employees regardless of nationality |
-| **Total — Saudi employee** | **12.5%** | **10.5%** |  |
-| **Total — GCC employee** | **11%** | **9%** |  |
-| **Total — Non-Saudi / non-GCC employee** | **2%** | 0% |  |
-
-- **Contribution base cap** — Contribution base: gross wage (basic + housing allowance) capped at SAR 45,000/month (verify against current ceiling).
-
-#### Registration steps
-
-1. GOSI employer account created on gosi.gov.sa using CR number and authorised signatory.
-2. Establishment register confirmed with workforce.
-3. Enrol each employee with national ID / iqama, contract terms, and wage.
-4. Monthly contribution submission and payment by the 15th of the following month.
-
-### Mudad (Wage Protection System)
-
-- **Mudad** — Mudad is the platform integrating GOSI, MHRSD, and the Saudi banking system for wage protection. Mandatory for all private-sector employers since 2013 (phased rollout completed). Employer must pay salaries through a Saudi bank account; salaries flow through Mudad which verifies they match GOSI-registered wages. Failure to pay on time triggers Mudad flags, escalating to MHRSD penalties and Saudization tier downgrades. Mudad also handles contract management (electronic employment contracts), end-of-service benefit calculations, and leave tracking integration.
-
-### Qiwa
-
-- **Qiwa** — Qiwa is the MHRSD workforce-management platform covering Saudization (Nitaqat) tier tracking, work permit administration, contract authentication, and labour-mobility services. Mandatory enrolment for all employers.
-
-### Saudization (Nitaqat) — high-level
-
-- **Saudization (Nitaqat)** — Every employer is classified into a Nitaqat tier based on the percentage of Saudi nationals in the workforce relative to the sector benchmark: Platinum, High Green, Medium Green, Low Green, Red. Higher tiers grant privileges (faster work-visa issuance, expatriate transfers, government-contract access). Lower tiers (Red) trigger restrictions and ultimately suspension of work-visa services. New companies typically receive a grace period (first 6–12 months) before Nitaqat begins to bite. For deeper Saudization tier mapping and sector benchmarks, see the sa-gosi-saudization skill.
-
-## Section 9 — Decision Tree
-
-```
-Q1: Is any non-GCC foreign individual or entity proposed as a shareholder?
-  YES → go to Q1a (MISA license route)
-  NO  → go to Q2 (Saudi/GCC route)
-
-Q1a: Is the proposed activity on the MISA Negative List
-     (military equipment, civilian explosives, Mecca/Medina real-estate brokerage,
-     specified Hajj/Umrah categories, restricted recruitment categories,
-     restricted religious publishing, territorial-waters fishing)?
-  YES → Refuse green-light recommendation (R-SA-F2); escalate to MISA / Saudi legal counsel
-  NO  → go to Q1b
-
-Q1b: Does the activity have a sectoral foreign-ownership cap (insurance, certain transport, certain
-     media, etc.)?
-  YES → Mixed-ownership LLC / JSC with Saudi partner at the required share;
-        draft shareholders' agreement; flag tasattur risk (R-SA-F1)
-  NO  → 100% foreign ownership permitted; proceed to Q1c
-
-Q1c: Is the entity a regional HQ for a multinational covering MENA, with substance to
-     locate 15+ qualifying employees and regional management in Riyadh?
-  YES → Recommend MISA RHQ license — 0% CIT / 0% WHT for 30 years (Section 6.1);
-        flag substance and qualifying-activity tests (R-SA-F6); confirm with Saudi tax specialist
-  NO  → go to Q1d
-
-Q1d: Does the foreign parent want a separate Saudi legal person with limited liability?
-  YES → 100% foreign-owned LLC via MISA — canonical default for foreign investors
-  NO  → Branch of Foreign Company via MISA — parent remains liable, narrower activity scope
-
-Q2: Is the proposed activity regulated (banking, insurance, capital markets, telecom,
-    healthcare, pharma, education, aviation, mining, power)?
-  YES → Refuse green-light recommendation; map sector licence (R-SA-F5);
-        entity type often dictated by regulator (banking and insurance require JSC)
-  NO  → go to Q3
-
-Q3: Is the founder a single Saudi or GCC national wanting simplicity and accepting
-    unlimited liability?
-  YES → Sole Establishment (Mu'assasah Fardiyyah) — registered solely at MoC
-  NO  → go to Q4
-
-Q4: Does the venture have 2+ unrelated Saudi/GCC investors wanting JSC governance
-    or planning IPO on Tadawul / Nomu within 3 years?
-  YES → Closed JSC (min capital SAR 500,000) with view to Open JSC at IPO
-  NO  → go to Q5
-
-Q5: Single founder or up to 50 members wanting limited liability and corporate substance?
-  YES → LLC (single-member LLC permitted since 2022) — most common Saudi/GCC vehicle
-  NO  → Reconsider — escalate for bespoke advice
-
-After entity selection, in every case:
-  → ZATCA registration (Zakat / CIT / VAT / WHT)
-  → GOSI + Mudad + Qiwa setup before first hire
-  → Sector licences as applicable
-  → Confirm RHQ Program eligibility if multinational with regional substance
-  → Confirm MEEM / SABER product conformity if importing covered goods
+```oa-check
+name: Ordinary JSC distinguishes issued capital from statutory initial paid capital
+inputs:
+  statutory_issued_floor: 500000
+  initial_paid_fraction: 0.25
+  scenario_b_issued: 800000
+steps:
+  - initial_paid_at_floor: statutory_issued_floor * initial_paid_fraction
+  - unpaid_at_floor: statutory_issued_floor - initial_paid_at_floor
+  - scenario_b_initial_paid: scenario_b_issued * initial_paid_fraction
+  - scenario_b_unpaid: scenario_b_issued - scenario_b_initial_paid
+expected:
+  initial_paid_at_floor: 125000
+  unpaid_at_floor: 375000
+  scenario_b_initial_paid: 200000
+  scenario_b_unpaid: 600000
 ```
 
-## Section 10 — Worked Example: US Software Company Opening a Saudi Office
+### C. Natural-person ownership through two genuine chains
 
-Fact pattern. Acme Cloud Inc., a Delaware corporation headquartered in San Francisco, is a SaaS company selling cloud-based collaboration software. It has strong demand from Saudi government and enterprise customers (driven by Vision 2030 digitisation programmes) and wants to establish a Saudi office to:
-- Hire 12 Saudi-resident sales, solutions-engineering, and customer-success staff in Riyadh.
-- Issue invoices to Saudi customers in SAR (currently invoices come from a Dubai-based reseller).
-- Provide localised data hosting via a Saudi cloud region (compliance with CITC's Cloud Computing Regulatory Framework and the Saudi Personal Data Protection Law).
+Illustration, not additional Acme facts: a natural person owns **60% of Parent B**, which owns **50% of Saudi Company A**; the same person owns **20% of Parent C**, which owns **25% of A**. With genuine ordinary economic ownership and no double-counted interests, indirect ownership is **30% + 5% = 35%**, meeting the **25%-or-more** ownership criterion. The corporate parents are not themselves the natural-person beneficiary. If an interest is held on instructions, rights differ, or ownership is doubtful, apply the control test and actual documents rather than treating arithmetic as proof of ultimate control. [MoC guide, definition and §3.5 indirect-ownership examples](https://mc.gov.sa/en/guides/Documents/Actual%20Beneficiary%20Guide.pdf).
 
-Acme Cloud is not establishing a regional HQ for all of MENA — Dubai will remain the regional HQ; the Saudi office is purely a Saudi-market entity. Therefore the RHQ Program is not in scope (R-SA-F6 — substance test would not be met).
+```oa-check
+name: Beneficial ownership aggregates the same natural person's indirect capital interests
+inputs:
+  person_in_b: 0.60
+  b_in_a: 0.50
+  person_in_c: 0.20
+  c_in_a: 0.25
+  qualifying_ownership: 0.25
+steps:
+  - through_b: person_in_b * b_in_a
+  - through_c: person_in_c * c_in_a
+  - total_indirect: through_b + through_c
+  - margin_above_threshold: total_indirect - qualifying_ownership
+expected:
+  through_b: 0.30
+  through_c: 0.05
+  total_indirect: 0.35
+  margin_above_threshold: 0.10
+```
 
-### Recommended structure
+## When to refuse or refer
 
-100% foreign-owned LLC via MISA Service license.
+Keep the original identifiers and resolve their corrected boundaries:
 
-Why not a branch? Branch of a foreign company exposes Acme Cloud Inc. directly to Saudi-law liability and limits activity to the narrowly authorised scope. A separate LLC corporate veil is preferred for a sustained Saudi presence with 12+ employees and customer contracts.
+| ID | Stop/referral and evidence needed |
+|---|---|
+| **R-SA-F1** | Refuse nominee/fronting/tasattur intended to disguise true ownership. A genuine Saudi partner requires real rights, capital/risk and transparent documents; obtain Saudi counsel where needed. Current quantified Anti-Concealment Law penalties are not revalidated here, so the old SAR 5m/5-year figures are excluded from measured advice |
+| **R-SA-F2** | Excluded/restricted activity, uncertain ownership cap or approval: obtain the current published list, exact code and committee/sector route before a green light; do not treat the old illustrative list as current exhaustive law |
+| **R-SA-F3** | Immigration/iqama/block visas/Premium Residency and deep Nitaqat strategy: separate permissions and the payroll skill; formation is not permission to work |
+| **R-SA-F4** | Bank/KYC/GM residence or attendance requirement: follow the actual bank/category conditions; no guaranteed account, minimum balance or in-person timetable |
+| **R-SA-F5** | Regulated sector: actual competent regulator, licence, ownership/capital and substance mapping before operation; CR/MISA alone is insufficient |
+| **R-SA-F6** | RHQ: actual programme eligibility, qualifying activities, Saudi management/staff/premises and tax substance. Refuse unsupported relief; use the proper correction/revocation analysis rather than automatic retroactive assessment for every breach |
+| **R-SA-F7** | Nominal Saudi/GCC ownership to obtain a tax result: no fictitious ownership reallocation. Apply actual beneficial ownership/residence and current CIT/Zakat rules, not the superseded 2017 shorthand |
+| **R-SA-F8** | Mecca/Makkah, Medina/Madinah, property/Hajj/Umrah: current applicant/category/geographical and sector permission review. The older blanket foreign-ownership statement cannot decide a 2026 case |
+| **R-SA-F9** | Counterparty sanctions/boycott concern: refer for the applicable official screening/compliance clearance. This skill performs no sanctions search or clearance and does not establish a universal Saudi register or automatic screening process |
 
-Why not Closed JSC? No multiple founders and no IPO plan — JSC governance burden is disproportionate.
+Additional holds: unsupported in-kind valuation, missing beneficiary/control documents, disputed manager authority, insolvent/restructured parent, tax/sector certificate conflict, inaccurate records or a proposed activity outside approved scope. Return the unresolved item, source requirement and responsible professional. Do not file fabricated documents or use a nominee to bypass a restriction.
 
-Why not RHQ? Acme Cloud's regional management remains in Dubai. The substance test for RHQ (15+ qualifying employees in Riyadh, regional CEO/CFO resident in Saudi, board meetings in Saudi) is not met. Attempting to claim RHQ benefits without substance would trigger ZATCA retroactive assessment (R-SA-F6).
+## Practical defaults, calendar and handoff
 
-- **R-SA-F6** — RHQ Program not in scope where substance test would not be met; attempting to claim RHQ benefits without substance would trigger ZATCA retroactive assessment.  _(R-SA-F6)_
+Preserve the original 13 defaults with corrected decisions: **(1)** test LLC suitability rather than mandate it; **(2)** retrieve the actual current excluded list; **(3)** verify the exact activity's capital/ownership condition; **(4)** use a supported capital/cash budget rather than automatically higher capital; **(5)** plan genuine workforce/localization, without invented grace periods; **(6)** assess VAT eligibility/recovery rather than automatically voluntary-register; **(7)** determine actual manager/bank/residence needs; **(8)** refuse fronting; **(9)** establish RHQ eligibility rather than sell a tax holiday; **(10)** map sector approval before operation; **(11)** route related-party documentation to current CIT/TP criteria; **(12)** use lawful electronic execution when available, not as a substitute for required authentication; **(13)** obtain qualified tax/legal sign-off on the final structure.
 
-### Capital structure
+Deliver a recommendation comparing suitable forms, the real ownership/control chain, capital and funding, activity/sector matrix, MISA/CR/beneficiary/premises/bank dependencies, tax/employer owners and a dated obligations calendar. Include annual MISA update, annual CR/beneficiary confirmation, corporate financial statements/governance, actual sector renewals and the owning tax/payroll deadlines. Record application references, signed documents, approvals, conditions, payment receipts and next actions. Do not label the entity ready to operate while a material approval is unresolved.
 
-- **Paid-up capital (MISA Service license, typical)** — SAR 500,000 SAR (typical MISA expectation for services license — verify against the current MISA capital schedule for the precise activity code)
-- **Shareholder structure** — 100% Acme Cloud Inc. (single-member LLC permitted since 2022 Companies Law).
-- **Manager** — General Manager appointed (initially seconded from US parent on a work visa; later replaced by a locally hired Saudi GM to support Nitaqat scoring).
+## Sources
 
-### Formation steps and timeline
+Read date: **16 November 2026**. Arabic legislation controls. Partial reading is identified; a fetched or accessible document is not accountant attestation.
 
-**Formation steps and timeline**
+| Source | What was read and used |
+|---|---|
+| [Companies Law M/132](https://mc.gov.sa/ar/do/com-2022.pdf) | Read on 2026-11-16. Read for arts. 2–9, 17–19, 58–60, 67, 98, 138–140, 156–165, 178 and 235–241: forms, constitution, liability, capital, financial statements, audit exceptions, management and branches |
+| [Companies implementing regulation, official gazette](https://www.uqn.gov.sa/details?p=21325) | Read on 2026-11-16. Read for arts. 7–8 size/auditor request and art. 28 document-authentication exception. Other sector/offer rules were not revalidated from this text |
+| [Investment Law M/19](https://misa.gov.sa/app/uploads/2024/08/Investment-Law.pdf) | Read on 2026-11-16 through the official PDF in the web reader after direct fetch returned 403. Read for arts. 1, 3–9 and 13–16, including registration/excluded activities, preserved sector/zone rules and replacement of the former law |
+| [Investment implementing regulation](https://misa.gov.sa/app/uploads/2025/06/THE-INVESTMENT-LAW-IMPLEMENTING-REGULATIONS.pdf) | Read on 2026-11-16 through the official PDF in the web reader after direct fetch returned 403. Read for arts. 1, 8–14 and 15–21: investor registry, required information, processing, annual updates and excluded-activity approvals |
+| [MoC commercial-register changes](https://mc.gov.sa/en/mediacenter/News/Pages/17-09-24-02.aspx) | Read on 2026-11-16. Read for single Kingdom-wide register, removal of subsidiary registers/expiry and annual confirmation |
+| [MoC annual-confirmation notice](https://mc.gov.sa/en/mediacenter/News/Pages/06-07-25-03.aspx) | Read on 2026-11-16. Read for anniversary due date, 90-day suspension and Business Platform process |
+| [Actual Beneficiary Guide v2 (2025), MoC](https://mc.gov.sa/en/guides/Documents/Actual%20Beneficiary%20Guide.pdf) | Read on 2026-11-16. Read for Decision 99 basis, definition, §§1.1–1.6, 2.1–2.4 and 3.4–3.5 ownership/control sequence and indirect-chain examples |
+| [Decision 186 beneficiary-enforcement notice](https://www.uqn.gov.sa/decisions-and-regulations/4000311) | Read on 2026-11-16. Read for first warning, correction, capital bands and repeat-condition boundary; no penalty calculation for an unidentified breach |
+| [RHQ Tax Rules](https://zatca.gov.sa/ar/RulesRegulations/Taxes/Documents/Regional_Headquarters_Tax_Rules.pdf) | Read on 2026-11-16 from the scanned bilingual PDF and rendered-page OCR. Read for arts. 1–14, especially eligible income/payments, term, substance, accounts/reporting and distinct correction/revocation routes |
+| [Insurance Authority FAQ](https://www.ia.gov.sa/en/faqs) | Read on 2026-11-16. Read for insurance-supervision commencement and health-insurance transfer; not a complete insurance licensing opinion |
+| [CST cloud-registration service](https://www.cst.gov.sa/en/business/services/Cloud-Computing-Registration) and [provider-guide page](https://www.cst.gov.sa/en/regulations-and-licenses/regulations/guide-for-cloud-computing-service-providers) | Read on 2026-11-16. Read for regulator identity, application steps and category-specific prerequisites; linked full technical/sector rules not treated as fully reviewed |
+| [SABER shipment training guide](https://saber.sa/UserGuids/UserGuideForShipmentRequest-En.pdf) | Read on 2026-11-16. Read for service description and opening steps distinguishing regulated COC and non-regulated self-declaration products; no universal product conformity conclusion |
+| [REGA commencement/application announcement](https://rega.gov.sa/en/media-center/news-announcements/rega-non-saudi-property-ownership-system-enters-into-force-as-of-today/) | Read on 2026-11-16. Read for 22 January 2026 commencement, applicant routes and geographical-control boundary; complete current zones/title eligibility not reviewed |
+| [PDPL implementing regulation](https://dgp.sdaia.gov.sa/wps/wcm/connect/2a9a4744-a2ae-444f-bad2-6dacde843637/The%2Bimpelementing%2Bregulation%2Bof%2Bthe%2Bpersonal%2Bdata%2Bprotection%2Blaw.pdf?CACHEID=ROOTWORKSPACE-2a9a4744-a2ae-444f-bad2-6dacde843637-pcruNj.&CONVERT_TO=url&MOD=AJPERES) | Read on 2026-11-16. Read for art. 32 DPO conditions and neighbouring records provision; full transfer/sector-hosting analysis is a separate task |
 
-| Week | Step |
-| --- | --- |
-| 1 | Activity code selection (ISIC code for "Computer programming activities" / "Computer consultancy" / "Other information technology and computer service activities"); MISA portal account opened |
-| 1 | Parent documents (Delaware Certificate of Incorporation, bylaws, board resolution authorising Saudi expansion, parent audited financials) notarised, Apostilled in California, legalised by Saudi consulate where needed |
-| 2 | MISA license application submitted |
-| 2–6 | MISA review; queries on business plan, projected employment, and Saudization commitment answered |
-| 6 | MISA Service license issued |
-| 6 | Trade name reservation at MoC |
-| 7 | AoA drafted (Arabic/English bilingual); e-notarised via MoC portal |
-| 7–8 | Commercial Registration application; CR issued |
-| 8 | Chamber of Commerce membership |
-| 8 | ZATCA TIN auto-issued; CIT and VAT registration confirmed; voluntary VAT registration if revenue < SAR 375,000 in first year (recommended to claim input VAT on local expenses) |
-| 8–9 | GOSI employer account; Mudad enrolment; Qiwa enrolment |
-| 9 | Office lease registered on Ejar; municipality licence applied for |
-| 9–10 | Bank account opening with a tier-1 Saudi bank (Al Rajhi / SNB / Riyad Bank / SABB); GM iqama may be required by some banks |
-| 10 | Sector compliance: CITC Cloud Computing Regulatory Framework registration as a cloud service customer / provider; PDPL compliance review |
-| 10–12 | First hires through Qiwa; Mudad payroll go-live; iqama transfers / new iqama applications via Jawazat |
-
-### Tax position
-
-- **CIT rate on Saudi LLC taxable income** — 20% %
-- **VAT rate on Saudi customer invoices** — 15% % (Voluntary VAT registration from day 1 to allow input VAT recovery on local expenses (office rent, utilities, professional fees, equipment))
-- **WHT on payments to US parent — technical/consulting fees and royalties on intercompany IP licence** — 5% % (with treaty consideration — Saudi Arabia and the US do not currently have a bilateral DTT in force; verify, as treaties are evolving)
-- **WHT on dividends to US parent** — 5% %
-- **Royalties WHT** — 15% % (subject to treaty if applicable)
-- **GOSI employer contribution (Saudi employees)** — 12.5% %
-- **GOSI employee contribution (Saudi employees)** — 10.5% %
-- **GOSI employer contribution (non-Saudi employees)** — 2% % (occupational hazards only)
-- **Saudization** — Sector benchmark applies; first 6–12 months grace; thereafter Nitaqat tier tracking. Aim for Medium Green or higher to preserve work-visa privileges.
-- **Transfer pricing — Local File / Master File threshold** — SAR 200M SAR (Local File / Master File obligations if Saudi LLC revenue ≥ SAR 200M)
-- **Transfer pricing — CbCR threshold** — SAR 3.2B SAR (CbCR if global group revenue ≥ SAR 3.2B (which Acme Cloud's group may meet))
-- **Transfer pricing scope** — ZATCA Transfer Pricing Bylaws apply to intercompany SaaS licensing, cost-plus services, and management fees. Arm's-length pricing on the intercompany SaaS reseller arrangement is essential.
-
-### Risks and mitigations
-
-Substance and PE risk for US parent: ensure clear contractual delineation that the Saudi LLC operates on its own account (not as a dependent agent of the US parent). Saudi-customer contracts should be signed by the Saudi LLC (not Acme Cloud Inc.) to avoid creating a permanent establishment of Acme Cloud Inc. itself.
-
-Data localisation: the Saudi Personal Data Protection Law (PDPL) and CITC cloud rules require certain customer data (especially government and regulated-sector) to be hosted in-Kingdom. Use a Saudi cloud region.
-
-PDPL compliance: appoint a Data Protection Officer; map data flows; ensure international transfers comply with PDPL controller obligations.
-
-CITC registration: cloud services with Saudi customers may require CITC registration depending on the Cloud Service Provider / Customer classification.
-
-Saudization: hire Saudi nationals from day 1 (sales, solutions engineering, customer success) to meet Nitaqat tier; partner with a Saudization placement firm if needed.
-
-## Section 11 — Conservative Defaults
-
-When operating under uncertainty:
-
-- **1. Default to LLC for foreign investors** — The LLC is the canonical Saudi vehicle for foreign-owned operating businesses. Single-member LLC has been available since 2022 and obviates the need for a token second shareholder.
-- **2. Always check the MISA Negative List at the date of advice** — The list has been progressively shortened under Vision 2030 — never rely on cached knowledge.
-- **3. Always verify capital requirements against the current MISA capital schedule for the specific activity code** — Capital floors vary materially by activity even within "service" or "trading" categories.
-- **4. Default to higher rather than lower paid-up capital** — Where there is uncertainty: under-capitalisation triggers MISA queries and bank reluctance to open accounts.
-- **5. Default to genuine Saudization from day 1** — Even before Nitaqat bites, hiring Saudi nationals positions the business well for tier progression and government-contract eligibility.
-- **6. Default to voluntary VAT registration** — If turnover is expected to approach SAR 375,000 within 12 months — avoids the disruption of mid-year mandatory registration and allows input-VAT recovery on setup costs.
-- **7. Default to a Saudi-resident General Manager** — For the LLC (whether Saudi national or expat with valid iqama) — many banks will not open accounts otherwise, and physical presence accelerates MoC / ZATCA / GOSI interactions.
-- **8. Default to refusing nominee / tasattur arrangements** — Anti-Concealment Law penalties (up to SAR 5M and 5 years' imprisonment) are real. Where genuine Saudi participation is sought, document substance properly.
-- **9. Default to flagging — not claiming — the RHQ Program** — Unless the multinational genuinely has regional substance and qualifying activities. RHQ qualification is a specialist exercise; do not over-promise the 30-year tax holiday.
-- **10. Default to confirming sectoral licences before formation kick-off** — A green-light recommendation on entity formation is meaningless if the sector regulator (SAMA, CMA, CITC, MoH, etc.) ultimately blocks operation.
-- **11. Default to verifying transfer pricing thresholds** — For any intercompany arrangement; ZATCA TP audits are active and penalties for late / missing Local File or Master File documentation are material.
-- **12. Default to electronic notarisation** — Via the MoC portal where available — faster than in-person notary public visits.
-- **13. Default to recommending professional tax / legal sign-off** — On the final structure before MISA submission. Saudi formation involves cross-ministry coordination (MISA, MoC, ZATCA, GOSI, MHRSD, municipality, sector regulator) that benefits from specialist project management.
-
-## Section 12 — Sources
-
-### Primary legislation
-
-- **Companies Law** — Royal Decree No. M/3 of 28/1/1437H (28 January 2015), as amended by Royal Decree No. M/132 of 1/12/1443H (28 June 2022) — major modernisation; Implementing Regulations issued by MoC.  _(Royal Decree No. M/3 of 28/1/1437H; Royal Decree No. M/132 of 1/12/1443H)_
-- **New Investment Law** — Royal Decree No. M/19 of 4/2/1446H (August 2024); Implementing Regulations effective 2025.  _(Royal Decree No. M/19 of 4/2/1446H)_
-- **Income Tax Law** — Royal Decree No. M/1 of 15/1/1425H (2004); Implementing Regulations 2004 as amended.  _(Royal Decree No. M/1 of 15/1/1425H)_
-- **Zakat Implementing Regulations** — Issued by Ministerial Decision No. 2082 of 1/6/1438H (2017) as amended.  _(Ministerial Decision No. 2082 of 1/6/1438H)_
-- **VAT Law** — Royal Decree No. M/113 of 2/11/1438H (2017); VAT Implementing Regulations 2017 as amended; standard rate raised from 5% to 15% effective 1 July 2020.  _(Royal Decree No. M/113 of 2/11/1438H)_
-- **Real Estate Transaction Tax (RETT) Implementing Regulations** — Effective October 2020.  _(RETT Implementing Regulations, effective October 2020)_
-- **Excise Tax Law and Implementing Regulations** — 2017 with subsequent expansions of covered goods.  _(Excise Tax Law and Implementing Regulations, 2017)_
-- **GOSI Law** — Royal Decree No. M/33 of 3/9/1421H, as amended.  _(Royal Decree No. M/33 of 3/9/1421H)_
-- **Anti-Concealment Law (Nizam Mukafahat al-Tasattur)** — Royal Decree No. M/4 of 1442H.  _(Royal Decree No. M/4 of 1442H)_
-- **Personal Data Protection Law (PDPL)** — Royal Decree No. M/19 of 9/2/1443H, in force 14 September 2023 with subsequent SDAIA Implementing Regulations.  _(Royal Decree No. M/19 of 9/2/1443H)_
-- **Companies Law Beneficial Ownership Regulations 2024** — Issued by MoC.  _(Companies Law Beneficial Ownership Regulations 2024)_
-
-### Regulators and portals
-
-Ministry of Investment (MISA) — misa.gov.sa
-Ministry of Commerce (MoC) — mc.gov.sa
-Zakat, Tax and Customs Authority (ZATCA) — zatca.gov.sa
-General Organization for Social Insurance (GOSI) — gosi.gov.sa
-Mudad platform — mudad.com.sa
-Qiwa platform — qiwa.sa
-Saudi Central Bank (SAMA) — sama.gov.sa
-Capital Market Authority (CMA) — cma.org.sa
-Communications, Space and Technology Commission (CITC) — citc.gov.sa
-Saudi Food and Drug Authority (SFDA) — sfda.gov.sa
-Saudi Standards (SASO) / SABER — saso.gov.sa / saber.sa
-Saudi Tadawul (Saudi Exchange) — saudiexchange.sa
-
-### Vision 2030 and program references
-
-Regional Headquarters Program — official guidance issued by MISA + Royal Commission for Riyadh City, including the 30-year 0% CIT / 0% WHT incentive framework operationalised in 2024.
-
-Special Economic Zones under the Economic Cities and Special Zones Authority (ECZA): King Abdullah Economic City, Riyadh Integrated SEZ, Cloud Computing SEZ, Jazan SEZ, Ras Al Khair SEZ.
-
-### Verification notes
-
-Rates, thresholds, and capital floors evolve. Always verify against the current ZATCA, MISA, MoC, and sector regulator publications at the date of advice.
-
-RHQ Program tax incentive (0% CIT / 0% WHT for 30 years) confirmed by Ministerial decisions and ZATCA guidance issued 2023–2024; substance and qualifying-activity tests are critical and subject to interpretation.
-
-The MISA Negative List is amended periodically — confirm currency before issuing a green-light recommendation.
-
-## End of Skill v1.0 — sa-formation.
-
-End of Skill v1.0 — sa-formation.
+**Not yet confirmed:** the old SAR/USD peg figure and institutional rename/merger dates, historical formation-law chronology, translated legal-name suffixes, the former closed-JSC 200-shareholder ceiling and listed-company founder-count shorthand; the old generic SAR 500,000 commercial / SAR 100,000 services branch-capital floors; current complete MISA excluded-list/sector-cap/capital/fee schedules; full current RHQ programme staff/startup/procurement and Saudization conditions; exact live formation form boxes and category attachments; generic processing times; bank/manager-residence/KYC conditions; sole-establishment eligibility for a particular applicant; listed/IPO capital and governance requirements (including the old SAR 10m Tadawul/Nomu floors, 30%/20% free float, founder lock-ups, 3-year financial-history claim and listed-company surcharge); ordinary-JSC committee and share-transfer requirements beyond the cited law, branch naming/manager procedures, sole-establishment name/capital/Chamber fee claims, universal Ejar/Balady renewal rules and the old 2013 WPS-rollout chronology; non-cloud/non-insurance detailed sector permissions; universal MEEM/conformity claims; specific property zones/holy-city rights; quantified anti-concealment penalties; sanctions-register/process claims; client-specific tax, customs, workforce and data-transfer treatment. The MISA Investor Guide could be opened in the web reader but its operative scanned pages were not read; direct fetch was blocked, so its staff/capital figures are not used as confirmed law. The REGA detailed ownership guide direct fetch returned 503; the actual commencement announcement above supplies only the limited statements identified.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-07-13. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `sa-formation` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/sa-formation. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-16. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `sa-formation` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/sa-formation. If neither is available, confirm every figure against the official source pages cited above before relying on it.

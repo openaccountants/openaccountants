@@ -1,475 +1,265 @@
 ---
 name: sa-corporate-tax
-description: "ALWAYS read this skill before touching any Saudi Arabian corporate income tax (CIT) work. Use this skill whenever asked about Saudi CIT for a resident company with non-Saudi/non-GCC shareholders, a Saudi PE of a non-resident, or a \"mixed\" entity owned partly by Saudi/GCC nationals and partly by foreigners. Trigger on phrases like \"Saudi CIT\", \"Saudi corporate income tax\", \"Saudi corporate tax\", \"ZATCA CIT 20%\", \"Saudi mixed entity\", \"Saudi PE tax\", \"Saudi Income Tax Law\", \"Royal Decree M/1\", \"Saudi non-resident tax\", \"Saudi natural gas tax\", \"Saudi hydrocarbons tax\", \"Saudi 50%/85% tax\", \"Article 21 ITL\", \"Article 12 ITL interest limitation\", \"Saudi transfer pricing\", \"Saudi Pillar Two\", \"Saudi DMTT\", \"Saudi 120 days filing\". Covers the 20% standard rate under the Income Tax Law (Royal Decree M/1 dated 15/1/1425H — 6 March 2004) and its Implementing Regulations on foreign-shareholder taxable income, the 30% natural gas rate, the tiered 50%–85% oil and other hydrocarbons rates depending on capital base, the mixed-entity Zakat/CIT split for partly Saudi/GCC-owned companies, Saudi PE attribution for non-residents, the indefinite loss carry-forward capped at 25% of annual taxable income (Article 21), the 50% of EBITDA interest deduction limitation (Article 12), the transfer-pricing Bylaws (2019) with BEPS Action 13 MF/LF/CbCR thresholds, the Pillar Two Domestic Minimum Top-up Tax track (TBC for 2025–2026 enactment), the ZATCA portal filing within 120 days of fiscal year-end, and quarterly advance CIT instalments where applicable. Out of scope: Zakat-only entities (Saudi/GCC-owned — see sa-zakat), the Real Estate Transaction Tax, withholding tax compliance detail (see sa-withholding-tax), VAT and e-invoicing (see saudi-arabia-vat and saudi-einvoice), group consolidated returns outside specific share-deal structures, special economic zones (e.g., RHQ Program 30-year exemption, ILBZ, KAEC, Ras Al-Khair, NEOM), bank/insurance specialised computational regimes beyond the rate reference, mutual funds and investment funds, and any ZATCA dispute or appellate proceedings."
+description: "Saudi Arabia corporate income tax computation for 2026: foreign ownership in resident capital companies, non-Saudi resident business and Saudi permanent establishments. Determines taxable income, allowable expenses, financing-cost limits, losses, ownership allocation, instalments and filing workpapers. Includes natural-gas and oil rate boundaries, related-party documentation and preserved historical examples. Read before Saudi CIT calculations; use the separate Zakat and withholding skills for those liabilities. Special-sector computations, treaty opinions, incentives and disputes require their own source review."
 jurisdiction: SA
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: "2026-11-16"
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
-domain: income-tax
+domain: "tax"
+category: "international"
+tax_year_notes: "Current law read 16 November 2026; historical 2025 examples are labelled 2025-2026 filing cycle."
+version: "1.1"
+type: "computation"
 ---
 
-# SA Corporate Tax
-
-## Saudi Arabia — Corporate Income Tax — Skill v1.0
+# Saudi Arabia corporate income tax: 2026
 
 > **Produced by OpenAccountants (openaccountants.com)**
 >
-> This skill is for informational purposes only and does not constitute tax, legal, or financial advice. All outputs must be reviewed and signed off by a Saudi-licensed tax professional (SOCPA member or ZATCA-recognised tax adviser) before filing or acting upon. The latest verified version is maintained at [openaccountants.com](https://openaccountants.com).
+> Computational working papers for professional review. This skill does not replace a Saudi tax opinion, an approved return or a concession-specific calculation.
 
-## Rates and thresholds
+## Scope
 
-> Items flagged for further clarification are tracked separately and excluded here.
-> This block is generated from verified `skill_facts` — edit the facts, not the prose.
+Compute ordinary Saudi corporate income tax (CIT) for resident capital companies' taxable ownership, non-Saudi resident natural persons carrying on business, and non-residents' Saudi permanent establishments (PEs). Read this skill before doing that job. The controlling provisions are Income Tax Law (ITL) arts. 2-7; a Saudi commercial registration alone does not establish which ownership share is taxable. [ITL](https://zatca.gov.sa/ar/HelpCenter/guidelines/Documents/%D9%86%D8%B8%D8%A7%D9%85%20%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9%20%D8%A7%D9%84%D8%AF%D8%AE%D9%84.pdf).
 
-### Corporate Tax (CIT)
+**Quick reference:** establish the taxpayer, ownership, activity, fiscal period and tax-adjusted profit first. Use the rate table below. Keep CIT taxable income distinct from the Zakat base. There is no employment-salary tax computation in this skill. This is the **2026** method; the original companies and periods in the worked cases remain historical **2025-2026 filing-cycle** illustrations.
 
-- **Standard CIT** — 20% on foreign-share taxable income  _(Income Tax Law Art. 7 (Chapter Three, Article 7(A)))_
-- **Natural gas investment** — 0.2  _(Income Tax Law (Chapter Three, Article 7(B)))_
-- **Oil and hydrocarbons** — 0.85  _(Income Tax Law (Chapter Three, Article 7(C)))_
-- **Loss carry-forward** — Indefinite, capped at 25% of taxable income per year  _(ITL Art. 21 (Chapter Five, Article 21(A)))_
-- **Interest deduction limit** — The deductible amount of interest is limited to the Lower of Actual Loan Charges (Interest expense) incurred during the tax year if related to income subject to tax OR The resultant of the following formula: Interest Income + 50% of (A - B) where A = income subject to tax other than interest income, B = expenses allowed under the Law other than interest expense.  _(ITL Art. 12)_
-- **TP documentation (CbCR)** — Group revenue > SAR 3.2 billion  _(TP Guidelines ZATCA (Third Edition) 2019 bylaws)_
-- **Record retention** — 10 years  _(Income Tax Law Art. 58)_
-- **Annual return** — 120 days after FYE  _(ITL Chapter Twelve, Article 60(B))_
-- **Late payment penalty** — 5% per month, capped at 25%  _(ITL Chapter Fourteen, Article 76(B))_
+For related jobs load [Zakat](sa-zakat.md), [withholding tax](sa-withholding-tax.md), [RETT](sa-rett.md), [VAT](saudi-arabia-vat.md), [e-invoicing](saudi-einvoice.md), [intake](sa-freelance-intake.md) and [return assembly](sa-return-assembly.md). Those files own their respective rates and filing details; CIT payment is not a substitute for another liability.
 
-## Section 1 — Quick Reference
+## Ask the client first
 
-**Quick Reference table**
+1. Legal form, incorporation, actual management location, business activity and any natural-gas, oil, banking, insurance, fund, zone or RHQ status.
+2. Direct and indirect owners, nationalities, relevant GCC treatment, beneficial ownership and dated ownership changes; distinguish listed-share trading from founders' holdings.
+3. Fiscal-year start/end, calendar, cessation or restructuring dates; prior returns, assessments and approved loss balances.
+4. Financial statements, trial balance, revenue and expense detail, depreciation pools, bad debts, provisions, financing income and costs, donations and related-party contracts.
+5. For a PE: sites, agents, staff, contract negotiation/conclusion, activities, head-office charges and the treaty, if any. For a treaty claim obtain residence and entitlement evidence.
+6. Previous-year CIT and withholding amounts, current instalments, credit certificates, unpaid taxes and any audit, dispute or penalty-relief application.
 
-| Field | Value |
-| --- | --- |
-| Country | Kingdom of Saudi Arabia (KSA) |
-| Tax | Corporate Income Tax (CIT) — under the Income Tax Law |
-| Currency | SAR (Saudi Riyals) |
-| Tax year | Gregorian financial year of the taxpayer (most commonly 1 January – 31 December). Hijri or non-calendar fiscal years are permitted if reflected in the commercial registration and articles. |
-| Primary legislation | **Income Tax Law (ITL)** — Royal Decree No. **M/1** dated **15/1/1425H (6 March 2004)** |
-| Supporting rules | Implementing Regulations to the ITL; Transfer Pricing Bylaws (2019); Ministerial decisions; ZATCA circulars and guides |
-| **Taxable persons** | (a) Non-Saudi/non-GCC **shareholders** in resident companies (on their share of taxable income); (b) **non-residents** earning Saudi-source income (PE or specific transactions); (c) **Saudi PEs of non-residents**. Saudi and GCC nationals are NOT subject to CIT — they pay **Zakat** (see `sa-zakat`). |
-| **Standard CIT rate** | **20%** on adjusted taxable income (foreign-share portion / non-resident PE) |
-| **Natural gas investment** | **30%** on taxable income from natural gas investment activities |
-| **Oil and other hydrocarbons** | **Tiered 50%–85%** depending on capital base (see §4.2) |
-| **Banks / insurance** | Special computational provisions exist, but the **standard 20%** rate generally applies on the non-Saudi/GCC share — sector-specific computational rules are largely out of scope (R-SA-CT-2) |
-| **Mixed entities** | Foreign shares → **CIT** (proportional); Saudi/GCC shares → **Zakat** (proportional) |
-| **Loss carry-forward** | **Indefinite**, capped at **25%** of taxable income each year (**Article 21 ITL**). No carry-back. |
-| **Group consolidation** | Not generally available except specific share-deal structures (R-SA-CT-3) |
-| **Transfer pricing** | TP Bylaws since **2019**; **OECD Master File / Local File / CbCR** required for groups > **SAR 750M** consolidated revenue (BEPS Action 13 aligned) |
-| **Interest deduction limitation** | **50% of EBITDA** (**Article 12 ITL**) — excess interest non-deductible (with carry-forward) |
-| **Pillar Two / DMTT** | KSA committed to OECD Pillar Two; **Domestic Minimum Top-up Tax** expected effective **2025–2026** — **TBC** (verify enactment status) |
-| **Withholding tax** | See `sa-withholding-tax` for compliance detail; WHT credits feed into CIT computation |
-| **Annual return** | Filed via **ZATCA portal** within **120 days** of fiscal year-end |
-| **Quarterly advance CIT** | Instalments where applicable (see §6.3) |
-| Tax authority | **Zakat, Tax and Customs Authority (ZATCA)** |
-| Filing portal | ZATCA portal at zatca.gov.sa |
-| Record retention | Minimum **10 years** (verify against current ZATCA guidance and Implementing Regulations) |
-| **Penalties** | **5% per month** late payment (capped at **25%**); separate failure-to-file fines |
-| Skill version | 1.0 |
+Missing minimum inputs mean **hold the computation**. Do not deem an unidentified owner foreign, choose an ordinary sector rate for an unidentified activity, invent a treaty outcome or estimate a missing cost allocation as if it were law.
 
-### 1.1 Conservative Defaults
+## The method, step by step
 
-**Conservative Defaults table**
+### 1. Identify the taxable person and ownership
 
-| Ambiguity | Default |
-| --- | --- |
-| Shareholder nationality unclear | Treat as foreign (CIT applies) until Saudi/GCC nationality is documented |
-| Resident-company sector unclear | Default to standard 20% (not 30% gas, not 50–85% oil); flag |
-| Activity boundary unclear (e.g., upstream vs downstream hydrocarbons) | Default to standard 20% and flag for reviewer; do not apply the elevated rates without confirmation |
-| Mixed-entity ownership percentages unverified | Use Commercial Registration / shareholder register as filed; do not assume |
-| Loss carry-forward cap | Always apply the 25% annual cap under Article 21 |
-| Interest deduction | Always apply the 50% of EBITDA cap under Article 12; track disallowed interest for carry-forward |
-| TP documentation threshold | Apply CbCR/MF/LF requirements at SAR 750M group consolidated revenue; flag where uncertain |
-| Pillar Two / DMTT | Mark **TBC**; do not commit to a number until enactment confirmed |
-| Filing deadline | **120 days** from FYE — never assume an extension |
-| Group consolidation | Treat companies as standalone unless a specific share-deal structure is documented |
-| Penalty figures | Apply 5%/month capped at 25% as headline; defer specific cases to reviewer |
+Apply ITL art. 2 to the taxpayer and art. 6 to its base. Resident capital companies are taxable on the relevant directly or indirectly non-Saudi-owned shares; shares of persons engaged in oil/hydrocarbon production have a separate statutory rule. Saudi/GCC treatment is conditional, not a passport-only exemption. Check the listed-share exceptions and oil-producer ownership before using an ordinary Saudi/GCC versus foreign split. Zakat Regulations arts. 1, 3 and 6 separately define the Zakat population, including relevant non-Saudi holdings in listed companies. [ITL arts. 2, 6](https://zatca.gov.sa/ar/HelpCenter/guidelines/Documents/%D9%86%D8%B8%D8%A7%D9%85%20%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9%20%D8%A7%D9%84%D8%AF%D8%AE%D9%84.pdf); [Zakat Regulations arts. 1, 3, 6](https://zatca.gov.sa/en/RulesRegulations/Documents/ZAKAT%20COLLECTION.pdf).
 
-## Section 2 — Required Inputs and Refusal Catalogue
+For a mixed ordinary company, prepare a documented CIT ownership allocation and a separate Zakat workpaper. Do not apply the Zakat rate to accounting profit or the CIT rate to the Zakat base. Ownership changes require a dated reconciliation and consideration of the applicable income and loss rules; do not copy the Zakat year-end ownership rule into CIT without checking its legal basis. [ITL arts. 6, 21, 43](https://zatca.gov.sa/ar/HelpCenter/guidelines/Documents/%D9%86%D8%B8%D8%A7%D9%85%20%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9%20%D8%A7%D9%84%D8%AF%D8%AE%D9%84.pdf).
 
-### 2.1 Required Inputs
+Test residence under ITL art. 3 and PE under art. 4. A PE includes a fixed place through which business is wholly or partly carried on, relevant agents, construction/assembly and supervisory sites, resource-survey installations, a natural person's fixed business base and a licensed branch. Read the storage, display, delivery, processing, purchasing, information-gathering, preparatory/auxiliary and contract-preparation exclusions together with the actual activities. An applicable treaty may change the result: no universal construction or service-day threshold is supplied here. [ITL arts. 3-5](https://zatca.gov.sa/ar/HelpCenter/guidelines/Documents/%D9%86%D8%B8%D8%A7%D9%85%20%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9%20%D8%A7%D9%84%D8%AF%D8%AE%D9%84.pdf); [WHT guideline pp. 11-17](https://zatca.gov.sa/en/HelpCenter/guidelines/Documents/General-Guideline-for-Withholding-Tax-In-accordance-with-the-provisions-of-the-Income-Tax-Law-and-its-Implementing-Regulations.pdf).
 
-**Minimum viable** — Full-year audited (or draft) financial statements (income statement, balance sheet, cash flow), prior-year CIT/Zakat return as filed with ZATCA, Commercial Registration (CR) showing shareholder composition with nationality breakdown, articles of association, confirmation of fiscal year-end, sector classification (standard / natural gas / hydrocarbons / banking / insurance), and any TP-relevant related-party transaction summary.
+### 2. Select the statutory rate, after classification
 
-**Recommended** — General ledger, fixed-asset register with depreciation schedule, related-party transactions schedule, withholding tax credit certificates, prior-year tax-loss carry-forward schedule (with Article 21 25% cap tracking), prior-year disallowed interest carry-forward (Article 12), advance tax payment receipts, ZATCA correspondence and prior assessments.
+| Item and conditions | Rate or boundary for 2026 | Official source |
+|---|---|---|
+| Ordinary taxable base of resident capital company; non-Saudi resident business individual; non-resident's Saudi PE | 20% | ITL art. 7(a), [law](https://zatca.gov.sa/ar/HelpCenter/guidelines/Documents/%D9%86%D8%B8%D8%A7%D9%85%20%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9%20%D8%A7%D9%84%D8%AF%D8%AE%D9%84.pdf) |
+| Natural-gas investment taxable base, separately determined | 20%; the old 30% headline is obsolete | ITL art. 7(b), amended effective 2018, [law](https://zatca.gov.sa/ar/HelpCenter/guidelines/Documents/%D9%86%D8%B8%D8%A7%D9%85%20%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9%20%D8%A7%D9%84%D8%AF%D8%AE%D9%84.pdf) |
+| Oil/hydrocarbon production: cumulative Saudi capital investment **over SAR 375 billion** | 50% | ITL art. 7(c)(1), capital boundary in words on the page, [law](https://zatca.gov.sa/ar/HelpCenter/guidelines/Documents/%D9%86%D8%B8%D8%A7%D9%85%20%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9%20%D8%A7%D9%84%D8%AF%D8%AE%D9%84.pdf) |
+| Same activity: **over SAR 300 billion and up to SAR 375 billion** | 65% | ITL art. 7(c)(2), boundaries in words on the page, [law](https://zatca.gov.sa/ar/HelpCenter/guidelines/Documents/%D9%86%D8%B8%D8%A7%D9%85%20%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9%20%D8%A7%D9%84%D8%AF%D8%AE%D9%84.pdf) |
+| Same activity: **over SAR 225 billion and up to SAR 300 billion** | 75% | ITL art. 7(c)(3), boundaries in words on the page, [law](https://zatca.gov.sa/ar/HelpCenter/guidelines/Documents/%D9%86%D8%B8%D8%A7%D9%85%20%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9%20%D8%A7%D9%84%D8%AF%D8%AE%D9%84.pdf) |
+| Same activity: **not over SAR 225 billion** | 85% | ITL art. 7(c)(4), boundary in words on the page, [law](https://zatca.gov.sa/ar/HelpCenter/guidelines/Documents/%D9%86%D8%B8%D8%A7%D9%85%20%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9%20%D8%A7%D9%84%D8%AF%D8%AE%D9%84.pdf) |
+| Eligible carried-forward operating loss | Annual deduction limited to 25% of annual profit under the regulation; indefinite carry-forward subject to eligibility and ownership rules | ITL art. 21; IR art. 11, [regulation](https://zatca.gov.sa/en/RulesRegulations/Taxes/Documents/Regulations_of_Income_Tax.pdf) |
 
-**Ideal** — Audited statements signed by a SOCPA-registered audit firm, complete tax computation reconciling accounting profit to taxable income, Master File / Local File / CbCR where group consolidated revenue exceeds SAR 750M, shareholder register with nationality and percentages, board resolutions for material elections, and confirmation of Pillar Two / DMTT scoping if part of an in-scope MNE group.
+The oil bands apply to the whole relevant taxable base, not marginal slices. Statutory capital investment includes the cumulative fixed and intangible amounts defined in art. 7 before depreciation/amortisation, not share capital or the accounting net-asset balance. The old skill reversed the largest-investment band. Gas and oil computations and the historical downstream transitional rule require specialist review; do not extend the expired transitional period to 2026. [ITL arts. 6-7 and amendment footnotes](https://zatca.gov.sa/ar/HelpCenter/guidelines/Documents/%D9%86%D8%B8%D8%A7%D9%85%20%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9%20%D8%A7%D9%84%D8%AF%D8%AE%D9%84.pdf).
 
-**HARD STOP if minimum is missing.** Without financial statements, the CR with shareholder nationality breakdown, and the prior-year return, no CIT computation may be produced — the Zakat/CIT split cannot be determined.
+### 3. Reconcile book profit to taxable income
 
-### 2.2 Refusal Catalogue
+Start with the entity's financial statements and tax-period trial balance. Establish source and attribution under arts. 5-8; a resident company's branch operations and the specific source rules require analysis, rather than a blanket domestic-sales-only computation. Compute each taxpayer independently even when accounting statements are consolidated. [ITL arts. 5-8](https://zatca.gov.sa/ar/HelpCenter/guidelines/Documents/%D9%86%D8%B8%D8%A7%D9%85%20%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9%20%D8%A7%D9%84%D8%AF%D8%AE%D9%84.pdf); [IR arts. 1, 5](https://zatca.gov.sa/en/RulesRegulations/Taxes/Documents/Regulations_of_Income_Tax.pdf).
 
-- **R-SA-CT-1** — Saudi/GCC-only-owned entities. Companies wholly owned by Saudi or GCC nationals/entities are subject to Zakat, not CIT. Out of scope — see `sa-zakat`.  _(R-SA-CT-1)_
-- **R-SA-CT-2** — Specialised sector regimes. Banking and insurance carry sector-specific computational rules beyond the rate. Out of scope except for the rate reference. Investment funds, mutual funds, and similar collective vehicles — out of scope.  _(R-SA-CT-2)_
-- **R-SA-CT-3** — Group consolidated returns. Saudi tax law does not generally permit group consolidation. Specific share-deal structures may produce de facto consolidation effects — out of scope for this skill; refer to a SOCPA adviser.  _(R-SA-CT-3)_
-- **R-SA-CT-4** — Special Economic Zones and incentive regimes. Includes the Regional Headquarters (RHQ) Program (30-year tax incentive package), the Integrated Logistics Bonded Zone (ILBZ), King Abdullah Economic City (KAEC), Ras Al-Khair, NEOM, and other zone-specific incentives. Out of scope — escalate to a SOCPA adviser familiar with the specific zone.  _(R-SA-CT-4)_
-- **R-SA-CT-5** — Hydrocarbons upstream / oil and gas concessions. The tiered 50%–85% rates are referenced for completeness only. Actual computation involves concession-specific terms, cost-recovery mechanics, and Ministry of Energy interactions. Out of scope — escalate.  _(R-SA-CT-5)_
-- **R-SA-CT-6** — Active ZATCA assessment / audit / appellate proceedings. Tax Violations and Disputes Resolution Committee (TVDRC), General Secretariat of Zakat, Tax and Customs Committees, or Court of Appeal proceedings — escalate. Do not produce numbers that pre-empt the dispute.  _(R-SA-CT-6)_
-- **R-SA-CT-7** — Transfer-pricing controversy. Active APA, MAP, or controversy under the TP Bylaws — out of scope.  _(R-SA-CT-7)_
-- **R-SA-CT-8** — Cross-skill scope. VAT → `saudi-arabia-vat`; e-invoicing → `saudi-einvoice`; withholding tax compliance → `sa-withholding-tax`; Zakat → `sa-zakat`; Real Estate Transaction Tax — separate skill (TBD).  _(R-SA-CT-8)_
-- **R-SA-CT-9** — Pillar Two ambiguity. Where the Domestic Minimum Top-up Tax (DMTT) enactment status, scope, or effective date is uncertain, flag as TBC and decline to commit to a number until the gazetted instrument is verified.  _(R-SA-CT-9)_
-- **R-SA-CT-10** — Tax treaty positions and PE determinations. Treaty-based PE analysis, Article 5 thresholds, treaty residency, and tie-breakers — escalate to a SOCPA adviser for any taxpayer claiming treaty relief.  _(R-SA-CT-10)_
+Prepare an adjustment schedule showing the original ledger account, amount, reason, controlling article and supporting document for each item:
 
-## Section 3 — Tier 1 — Taxable Persons, Taxable Base, 20% Standard Rate
+- Deduct actual ordinary and necessary expenditure incurred to earn taxable income in the period, paid or accrued, subject to the exclusions. Capital expenditure is not an immediate ordinary deduction. Distinguish profit distributions from expenditure incurred to earn income. [ITL art. 12; IR art. 9(1)](https://zatca.gov.sa/en/RulesRegulations/Taxes/Documents/Regulations_of_Income_Tax.pdf).
+- Add back non-business/personal and entertainment expenditure, income tax, prohibited payments, statutory fines and non-arm's-length or otherwise prohibited shareholder/relative remuneration. Contractual damages have a different rule from governmental fines; keep the contract and proof. Do not treat all related-party fees as deductible merely because WHT was paid. [ITL art. 13](https://zatca.gov.sa/ar/HelpCenter/guidelines/Documents/%D9%86%D8%B8%D8%A7%D9%85%20%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9%20%D8%A7%D9%84%D8%AF%D8%AE%D9%84.pdf); [IR art. 10](https://zatca.gov.sa/en/RulesRegulations/Taxes/Documents/Regulations_of_Income_Tax.pdf).
+- Test bad debts against prior revenue recognition, actual write-off, recovery evidence, the accountant certificate and the related-party restriction; include later recoveries. General provisions/reserves are not automatically deductible. Separate the specific bank/insurance rules and deductible utilisation of previously added-back provisions. [ITL arts. 14-15](https://zatca.gov.sa/ar/HelpCenter/guidelines/Documents/%D9%86%D8%B8%D8%A7%D9%85%20%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9%20%D8%A7%D9%84%D8%AF%D8%AE%D9%84.pdf); [IR art. 9(3)-(6)](https://zatca.gov.sa/en/RulesRegulations/Taxes/Documents/Regulations_of_Income_Tax.pdf).
+- Donations require the permitted public or licensed Saudi non-profit recipient and payment in the tax year. Research and development expenditure must be incurred **in the Kingdom during the tax year** and relate to earning taxable income under IR art. 9(9); land, buildings and research equipment are not automatically expensed. [ITL arts. 11, 16](https://zatca.gov.sa/ar/HelpCenter/guidelines/Documents/%D9%86%D8%B8%D8%A7%D9%85%20%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9%20%D8%A7%D9%84%D8%AF%D8%AE%D9%84.pdf); [IR art. 9(9)](https://zatca.gov.sa/en/RulesRegulations/Taxes/Documents/Regulations_of_Income_Tax.pdf).
+- Reverse book depreciation and compute the statutory pools when they differ. Land is excluded; apply the asset class, additions/disposals and statutory pool mechanics, including the partial-cost rule, rather than simply deducting all book depreciation. Preserve a pool roll-forward for the return. [ITL art. 17](https://zatca.gov.sa/ar/HelpCenter/guidelines/Documents/%D9%86%D8%B8%D8%A7%D9%85%20%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9%20%D8%A7%D9%84%D8%AF%D8%AE%D9%84.pdf).
+- Test securities gains, non-business disposals and qualifying investment dividends separately. For the dividend exemption, the resident capital company's participation must meet the statutory minimum and holding period; do not exempt every foreign dividend. [ITL art. 10](https://zatca.gov.sa/ar/HelpCenter/guidelines/Documents/%D9%86%D8%B8%D8%A7%D9%85%20%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9%20%D8%A7%D9%84%D8%AF%D8%AE%D9%84.pdf).
 
-### 3.1 Taxable Persons
+| Additional computation parameter | Condition | Official source |
+|---|---|---|
+| Dividend participation exemption | At least 10% capital participation held for at least 1 year; apply art. 10(c) to the recipient investment | ITL art. 10(c), [law](https://zatca.gov.sa/ar/HelpCenter/guidelines/Documents/%D9%86%D8%B8%D8%A7%D9%85%20%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9%20%D8%A7%D9%84%D8%AF%D8%AE%D9%84.pdf) |
+| Fixed buildings depreciation | 5% statutory pool rate, subject to art. 17 mechanics | ITL art. 17(b)(1), [law](https://zatca.gov.sa/ar/HelpCenter/guidelines/Documents/%D9%86%D8%B8%D8%A7%D9%85%20%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9%20%D8%A7%D9%84%D8%AF%D8%AE%D9%84.pdf) |
+| Movable industrial/agricultural buildings | 10% statutory pool rate | ITL art. 17(b)(2), [law](https://zatca.gov.sa/ar/HelpCenter/guidelines/Documents/%D9%86%D8%B8%D8%A7%D9%85%20%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9%20%D8%A7%D9%84%D8%AF%D8%AE%D9%84.pdf) |
+| Machinery, equipment, computers/software and vehicles | 25% statutory pool rate | ITL art. 17(b)(3), [law](https://zatca.gov.sa/ar/HelpCenter/guidelines/Documents/%D9%86%D8%B8%D8%A7%D9%85%20%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9%20%D8%A7%D9%84%D8%AF%D8%AE%D9%84.pdf) |
+| Geological survey/exploration and resource-development preparatory costs | 20% statutory pool rate | ITL art. 17(b)(4), [law](https://zatca.gov.sa/ar/HelpCenter/guidelines/Documents/%D9%86%D8%B8%D8%A7%D9%85%20%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9%20%D8%A7%D9%84%D8%AF%D8%AE%D9%84.pdf) |
+| Other depreciable tangible/intangible assets in residual class | 10% statutory pool rate | ITL art. 17(b)(5), [law](https://zatca.gov.sa/ar/HelpCenter/guidelines/Documents/%D9%86%D8%B8%D8%A7%D9%85%20%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9%20%D8%A7%D9%84%D8%AF%D8%AE%D9%84.pdf) |
 
-- **Taxable persons** — Saudi CIT applies to: 1. Non-Saudi/non-GCC shareholders of a resident company — taxed on their share of the company's taxable income (the company computes a single taxable income, then attributes the non-Saudi/GCC share to CIT and the Saudi/GCC share to Zakat — see "mixed entity" mechanics in §3.4 and §5.2). 2. Non-residents earning Saudi-source income — through a Permanent Establishment (PE) under Article 4 ITL or via specific transactional withholding regimes (see `sa-withholding-tax`). 3. Saudi PEs of non-residents — taxed on attributable income computed under Articles 4–5 ITL and Implementing Regulations. Saudi and GCC nationals are NOT subject to CIT. Their share is subject to Zakat instead (2.5% of the Zakat base — see `sa-zakat`).  _(ITL Articles 1–4 and Implementing Regulations)_
+**Financing-cost limitation:** deductible loan charges are the lesser of the qualifying actual charges and **loan-charge income + 50% × (A − B)**, where A is taxable income excluding loan-charge income and B is allowable expenses excluding loan-charge expense. Thus depreciation remains in B if deductible: the rule is not 50% of EBITDA. Banks and loan charges funding capital assets that are capitalised during construction are excluded from this formula under the amended paragraph. Retain the underlying income, expense and capitalisation schedules. No automatic carry-forward of disallowed financing cost is established here. [IR art. 9(2)](https://zatca.gov.sa/en/RulesRegulations/Taxes/Documents/Regulations_of_Income_Tax.pdf), [2023 gazette amendment](https://www.uqn.gov.sa/details?p=23668).
 
-### 3.2 Standard Rate — 20%
+For a foreign branch, distinguish direct evidenced services/costs from prohibited head-office royalty, financing and estimated indirect administrative allocations. The special foreign-bank exception requires its own calculation. WHT classification is a separate inquiry and does not prove CIT deductibility. [IR art. 10(10)](https://zatca.gov.sa/en/RulesRegulations/Taxes/Documents/Regulations_of_Income_Tax.pdf); [WHT guideline p. 15](https://zatca.gov.sa/en/HelpCenter/guidelines/Documents/General-Guideline-for-Withholding-Tax-In-accordance-with-the-provisions-of-the-Income-Tax-Law-and-its-Implementing-Regulations.pdf).
 
-- **Standard CIT rate** — 20% of adjusted taxable income for: the foreign-shareholder share in a resident company; Saudi PEs of non-residents; non-resident persons earning Saudi-source business income.  _(Article 7(a) ITL)_
-- **CIT standard formula** — CIT = 20% × Adjusted Taxable Income (foreign-share portion or PE attributable income)  _(Article 7(a) ITL)_
-- **Scope of standard rate** — This rate applies to all sectors except (i) natural gas investment (30%), (ii) oil and other hydrocarbons (tiered 50%–85%), and (iii) any specific incentive regimes (out of scope).  _(Article 7(a) ITL)_
+### 4. Apply losses, ownership and credits
 
-### 3.3 Taxable Base — Adjusted Taxable Income
+Carry only eligible, substantiated tax operating losses, not book losses or losses from exempt/non-taxable activity. The carry-forward has no ordinary time limit, but annual use is capped as in the table. There is no loss carry-back method here. On a change of at least 50% of the non-Saudi ownership/control share, ITL art. 43(b) restricts pre-change losses **unless the company continues the same activity**. This statutory exception controls over the older regulation's unqualified wording. Keep separate gas and oil loss bases. [ITL arts. 21, 43](https://zatca.gov.sa/ar/HelpCenter/guidelines/Documents/%D9%86%D8%B8%D8%A7%D9%85%20%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9%20%D8%A7%D9%84%D8%AF%D8%AE%D9%84.pdf); [IR art. 11](https://zatca.gov.sa/en/RulesRegulations/Taxes/Documents/Regulations_of_Income_Tax.pdf).
 
-- **Adjusted Taxable Income formula** — Adjusted Taxable Income = Gross Income (Article 6) − Allowable Deductions (Articles 8–17) − Tax depreciation (Articles 17, declining-balance per asset class) − Loss carry-forward (Article 21, capped at 25% of annual taxable income) ± Adjustments per Implementing Regulations  _(Articles 5–6 ITL and Implementing Regulations)_
+Apply the documented taxable ownership share consistently and compute CIT. Reconcile eligible advance payments and credit certificates to the tax payment account. An amount effectively connected with and included in a PE's tax base follows ITL art. 68(f); any WHT actually deducted from an amount included in a taxpayer's base is creditable under art. 68(g). Do not take an unsupported foreign-tax credit, claim a credit twice or assume every payment to a PE is subject to final WHT. Treaty/foreign-credit analysis not established by the facts remains open. [ITL art. 68](https://zatca.gov.sa/ar/HelpCenter/guidelines/Documents/%D9%86%D8%B8%D8%A7%D9%85%20%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9%20%D8%A7%D9%84%D8%AF%D8%AE%D9%84.pdf); [WHT guideline pp. 15-17, 31](https://zatca.gov.sa/en/HelpCenter/guidelines/Documents/General-Guideline-for-Withholding-Tax-In-accordance-with-the-provisions-of-the-Income-Tax-Law-and-its-Implementing-Regulations.pdf).
 
-**Key adjustments**  _(Articles 5–6 ITL and Implementing Regulations)_
+### 5. Prepare related-party disclosures separately from the CIT calculation
 
-| Item | Treatment |
-| --- | --- |
-| Provisions and contingent expenses | Generally non-deductible unless realised |
-| Related-party expenses without arm's-length pricing | Disallowed to the extent non-arm's-length (TP Bylaws) |
-| Interest expense | Deductible up to **50% of EBITDA** (Article 12); excess carried forward |
-| Bad debts | Deductible when written off and Article 13 conditions are met |
-| Donations / charitable contributions | Deductible only if to a public-benefit entity approved by the relevant authority (Article 13(c) and Implementing Regulations) |
-| Dividends paid | Not deductible |
-| Income tax / Zakat paid | Not deductible |
-| Withholding tax paid by the company (gross-up scenarios) | Specific Implementing-Regulation treatment — verify |
-| Foreign tax | Foreign tax credit available under Article 6(c) and Implementing Regulations |
+Use the actual functions, assets, risks, terms and comparable transactions; document why the selected method fits. The bylaws provide comparable uncontrolled price, resale price, cost plus, transactional net margin and profit split methods, with conditions for another method. Disclosure is not the same test as master/local-file retention or CbCR. [TP Bylaws arts. 5-9, 14-19](https://zatca.gov.sa/ar/RulesRegulations/Taxes/Documents/Transfer%20Pricing%202019%20%D8%AA%D8%B9%D9%84%D9%8A%D9%85%D8%A7%D8%AA%20%D8%AA%D8%B3%D8%B9%D9%8A%D8%B1%20%D8%A7%D9%84%D9%85%D8%B9%D8%A7%D9%85%D9%84%D8%A7%D8%AA.pdf).
 
-### 3.4 Mixed-Entity Computation Mechanics
+| Obligation | Test for the ordinary CIT/mixed taxpayer | Official source |
+|---|---|---|
+| Related-party disclosure form and licensed-accountant certificate | Disclose the required transaction, relationship, ownership, financial and method information with the return, within 120 days of year-end | TP Bylaws art. 14, [bylaws](https://zatca.gov.sa/ar/RulesRegulations/Taxes/Documents/Transfer%20Pricing%202019%20%D8%AA%D8%B9%D9%84%D9%8A%D9%85%D8%A7%D8%AA%20%D8%AA%D8%B3%D8%B9%D9%8A%D8%B1%20%D8%A7%D9%84%D9%85%D8%B9%D8%A7%D9%85%D9%84%D8%A7%D8%AA.pdf) |
+| Master file and local file | Retain required content; small-enterprise documentation exception for CIT/mixed taxpayers with arm's-length related-party transactions **not exceeding SAR 6,000,000 in 12 months**, subject to ZATCA's override powers | TP Bylaws art. 1(29)(a), arts. 16-17, 19; figure read from the official scanned consolidation, [bylaws](https://zatca.gov.sa/ar/RulesRegulations/Taxes/Documents/Transfer%20Pricing%202019%20%D8%AA%D8%B9%D9%84%D9%8A%D9%85%D8%A7%D8%AA%20%D8%AA%D8%B3%D8%B9%D9%8A%D8%B1%20%D8%A7%D9%84%D9%85%D8%B9%D8%A7%D9%85%D9%84%D8%A7%D8%AA.pdf) |
+| CbCR population | Multinational group consolidated revenue **over SAR 3,200,000,000 in the preceding reporting year**; apply reporting-entity and local-filing conditions | TP Bylaws art. 18(a)-(c), (g), [bylaws](https://zatca.gov.sa/ar/RulesRegulations/Taxes/Documents/Transfer%20Pricing%202019%20%D8%AA%D8%B9%D9%84%D9%8A%D9%85%D8%A7%D8%AA%20%D8%AA%D8%B3%D8%B9%D9%8A%D8%B1%20%D8%A7%D9%84%D9%85%D8%B9%D8%A7%D9%85%D9%84%D8%A7%D8%AA.pdf) |
+| CbCR report versus notification | Report within 12 months after the group's reporting year; notify reporting entity and jurisdiction within 120 days of year-end | TP Bylaws art. 18(d), (f), [bylaws](https://zatca.gov.sa/ar/RulesRegulations/Taxes/Documents/Transfer%20Pricing%202019%20%D8%AA%D8%B9%D9%84%D9%8A%D9%85%D8%A7%D8%AA%20%D8%AA%D8%B3%D8%B9%D9%8A%D8%B1%20%D8%A7%D9%84%D9%85%D8%B9%D8%A7%D9%85%D9%84%D8%A7%D8%AA.pdf) |
+| ZATCA documentation request where specified | Comply with the notice; the relevant minimum response period is 30 days | TP Bylaws arts. 16(b), 17(b), 19(b)-(c), [bylaws](https://zatca.gov.sa/ar/RulesRegulations/Taxes/Documents/Transfer%20Pricing%202019%20%D8%AA%D8%B9%D9%84%D9%8A%D9%85%D8%A7%D8%AA%20%D8%AA%D8%B3%D8%B9%D9%8A%D8%B1%20%D8%A7%D9%84%D9%85%D8%B9%D8%A7%D9%85%D9%84%D8%A7%D8%AA.pdf) |
 
-- **Mixed-entity computation** — Foreign-share portion = Total Adjusted Taxable Income × (Non-Saudi/GCC ownership %) CIT                  = 20% × Foreign-share portion Saudi/GCC-share portion = Total tax base for Zakat purposes × (Saudi/GCC ownership %) Zakat                  = 2.5% × Saudi/GCC Zakat base (see sa-zakat)
-- **Ownership percentage timing** — The ownership percentages are taken from the Commercial Registration (CR) as of the last day of the fiscal year (or per the Implementing Regulations where a change occurred mid-year — verify).
-- **Conservative default** — Use the CR snapshot at year-end; flag any mid-year ownership changes for reviewer to apportion correctly under the Implementing Regulations.
+A small-enterprise retention exception does not waive arm's-length pricing or the disclosure obligation. Read the exceptions for non-institutional natural persons, exempt wholly state-owned entities, investment funds and transactions within eligible consolidated Zakat groups, together with ZATCA's power to require documentation for zone/exempt-party transactions, artificial arrangements, corresponding adjustments and international obligations. Zakat-only implementation and its phased rules belong in the Zakat file, not an assumed CIT threshold. The old common SAR 750 million trigger for MF/LF/CbCR was unsupported and is not a usable test. [TP Bylaws arts. 14, 18-19](https://zatca.gov.sa/ar/RulesRegulations/Taxes/Documents/Transfer%20Pricing%202019%20%D8%AA%D8%B9%D9%84%D9%8A%D9%85%D8%A7%D8%AA%20%D8%AA%D8%B3%D8%B9%D9%8A%D8%B1%20%D8%A7%D9%84%D9%85%D8%B9%D8%A7%D9%85%D9%84%D8%A7%D8%AA.pdf).
 
-### 3.5 Permanent Establishment (PE) — Article 4 ITL
+## Boundary and exception table
 
-- **Permanent Establishment** — A non-resident has a Saudi PE where it carries on business through a fixed place of business in KSA, including: a branch, office, factory, workshop, or place of management; a building site, construction or installation project (subject to the duration threshold per the ITL / applicable treaty); the provision of services in KSA (subject to the services-PE threshold per the ITL / applicable treaty); a dependent agent habitually concluding contracts in KSA on behalf of the non-resident.  _(Article 4 ITL)_
-- **Treaty override** — Treaty positions override domestic-law thresholds where a treaty applies and the taxpayer claims treaty benefits. Treaty-based PE analysis is out of scope (R-SA-CT-10).  _(R-SA-CT-10)_
-- **PE CIT formula** — PE CIT = 20% × Adjusted Taxable Income attributable to the PE  _(Article 5 ITL)_
-- **Attribution principle** — Attribution follows the separate-enterprise principle under Article 5 and Implementing Regulations.  _(Article 5 ITL)_
+| Situation | Required treatment |
+|---|---|
+| Ordinary Saudi/GCC-only ownership | Test the actual statutory Zakat population and route to Zakat; retain CIT ownership exceptions. |
+| Banks, insurance, funds | Rate reference is not a complete sector computation. Apply R-SA-CT-2. |
+| Group, share-for-share exchange, merger or asset rollover | Separate CIT taxpayers remain the default; statutory reorganisations and asset transfers require a transaction-specific opinion. Apply R-SA-CT-3. |
+| RHQ, ILBZ, KAEC, Ras Al-Khair, NEOM or another incentive | Obtain the actual licence, qualifying activities, income split and applicable instrument before any incentive. Apply R-SA-CT-4. |
+| Gas, oil or concessions | Identify the separate statutory base and concession terms; rate references do not establish an executable sector computation. Apply R-SA-CT-5. |
+| Treaty PE, attribution, foreign tax or relief | Establish the particular treaty and facts. No treaty threshold is inferred from the country name. Apply R-SA-CT-10. |
+| Pillar Two/DMTT | No enacted Saudi instrument/effective-date conclusion is established here. Do not model an expected law as current law. Apply R-SA-CT-9. |
 
-### 3.6 Loss Carry-Forward — Article 21
+## Worked cases
 
-- **Loss carry-forward formula** — Loss carry-forward = Indefinite (no time limit) Annual offset cap  = 25% of taxable income in the offset year  _(Article 21)_
-- **Loss continuity** — Losses may be carried forward indefinitely but the offset against any single year's taxable income is capped at 25% of that year's taxable income. Carry-back is not available. Loss continuity requires continuity of ownership and business activity (Implementing Regulations — verify the precise tests for material ownership changes).  _(Article 21)_
+All money inputs below are **illustrative case facts**, not legal thresholds. The original names and 2025 periods are preserved. These are **2025-2026 filing-cycle** reconciliations using the cited ordinary rules, not approval of a historical return.
 
-### 3.7 Interest Deduction Limitation — Article 12
+### 1. GlobalTech Saudi LLC: reconcile the inconsistent expense inputs
 
-- **Interest deduction cap formula** — Maximum deductible interest = 50% × EBITDA EBITDA = Earnings before interest, tax, depreciation, and amortisation (Implementing-Regulation definition)  _(Article 12)_
-- **Carry-forward of disallowed interest** — Interest expense in excess of 50% of EBITDA is non-deductible in the current year and is carried forward for deduction in future years (subject to the same 50%-of-EBITDA cap in each future year). The cap applies on a per-entity basis (not consolidated) for standalone CIT computations.  _(Article 12)_
-- **Conservative default** — Compute the cap each year, track the disallowed amount as a carry-forward, and never deduct prior-year disallowed interest without confirming current-year EBITDA headroom.
+The original 100%-foreign-owned company has fiscal year **1 January-31 December 2025**, revenue **SAR 80 million**, expenses excluding interest **SAR 50 million**, financing cost **SAR 8 million**, stated EBITDA **SAR 38 million**, depreciation **SAR 4 million** and eligible losses **SAR 6 million**. These figures do not reconcile without an assumption. For this scenario the expense ledger confirms that the SAR 50 million **already includes** the SAR 4 million allowable depreciation, there is no loan-charge income, and no further adjustments apply. EBIT is therefore SAR 30 million and implied EBITDA SAR 34 million; the separately supplied SAR 38 million is rejected as unreconciled, not silently used.
 
-## Section 4 — Tier 2 — Sectoral Rates, Transfer Pricing, Pillar Two, Group Taxation
+IR art. 9(2) gives a financing cap of **SAR 15 million**, so the full SAR 8 million is deductible. Pre-loss income is **SAR 22 million**. The loss deduction is **SAR 5.5 million**, leaving **SAR 0.5 million** carried forward and **SAR 16.5 million** taxable. CIT is **SAR 3.3 million**. The old SAR 2.7 million result deducted depreciation twice and used the wrong base. If the expense ledger excludes depreciation instead, rebuild the workpaper; do not present this conditional result as final. [IR arts. 9, 11](https://zatca.gov.sa/en/RulesRegulations/Taxes/Documents/Regulations_of_Income_Tax.pdf); [ITL art. 7(a)](https://zatca.gov.sa/ar/HelpCenter/guidelines/Documents/%D9%86%D8%B8%D8%A7%D9%85%20%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9%20%D8%A7%D9%84%D8%AF%D8%AE%D9%84.pdf).
 
-### 4.1 Natural Gas Investment — 30%
-
-- **Natural gas investment rate** — Taxable income from natural gas investment activities is taxed at 30%. This rate covers upstream natural gas exploration, development, and production where the activity is classified as "natural gas investment" under the ITL and ZATCA guidance.  _(Article 7(b) ITL)_
-- **Natural gas CIT formula** — Natural Gas CIT = 30% × Taxable income from natural gas investment activities  _(Article 7(b) ITL)_
-- **Scope narrow** — Scope is narrow — verify with ZATCA / reviewer whether the activity is classified as natural gas investment or falls under standard 20% or the hydrocarbons tier. Activity boundary uncertainty defaults to 20% with a flag (do not apply elevated rates without confirmation).
-
-### 4.2 Oil and Other Hydrocarbons — Tiered 50%–85%
-
-**Capital Base table**  _(Article 7(c) ITL)_
-
-| Capital Base | Indicative Rate |
-| --- | --- |
-| Above SAR 375 billion (largest concession holders) | **85%** |
-| Mid-tier capital base | Sliding intermediate rates |
-| Lower capital base (per the ITL schedule) | **50%** floor |
-
-*(Reviewer: confirm the precise capital-base bands and intermediate rates against the current ITL text and ZATCA implementing guidance — the schedule has been updated by Royal Decrees in recent years.)*
-
-- **Hydrocarbons CIT formula** — Hydrocarbons CIT = (Tier rate per capital base) × Taxable income from oil/other hydrocarbons  _(Article 7(c) ITL)_
-- **R-SA-CT-5 reference** — Out of scope (R-SA-CT-5) — the rate is referenced only for completeness. Actual computation involves concession terms, cost recovery, and Ministry of Energy / ZATCA interactions.  _(R-SA-CT-5)_
-
-### 4.3 Banks and Insurance — Standard Rate with Sector Specials
-
-- **Banks and insurance treatment** — The standard 20% rate generally applies to the foreign-share portion of banks and insurance companies, but the computational base carries sector-specific rules (provisioning, technical reserves, gross premium treatment, etc.). Sector-specific computational regimes are out of scope (R-SA-CT-2) beyond the rate reference.  _(R-SA-CT-2)_
-
-### 4.4 Group Taxation — Not Generally Available
-
-- **Group taxation** — Saudi tax law does not generally permit group consolidated returns. Each resident entity files separately. Specific share-deal structures (mergers, demergers, share-for-share exchanges under Articles in the ITL and Implementing Regulations) may produce rollover or deferred outcomes, but these are out of scope (R-SA-CT-3) for this skill.  _(R-SA-CT-3)_
-
-### 4.5 Transfer Pricing — TP Bylaws (2019)
-
-- **TP Bylaws legislation** — Transfer Pricing Bylaws issued by ZATCA (then GAZT) effective 2019, aligned with OECD BEPS Action 13.  _(Transfer Pricing Bylaws (2019))_
-
-**Documentation requirements**
-
-| Document | Threshold | Filing |
-| --- | --- | --- |
-| **Country-by-Country Report (CbCR)** | Group consolidated revenue > SAR 750M (≈ EUR 750M / BEPS Action 13 threshold) | Annual filing by the Ultimate Parent or surrogate; KSA constituent files CbCR notification |
-| **Master File** | Same SAR 750M threshold | Maintained and submitted to ZATCA upon request |
-| **Local File** | KSA entity with related-party transactions above the prescribed threshold | Maintained and submitted to ZATCA upon request |
-| **Disclosure Form** | All taxpayers with related-party transactions | Filed with the annual CIT return |
-
-- **Arm's-length principle** — Arm's-length principle applies to all related-party transactions. The five OECD methods are accepted (CUP, RPM, CPM, TNMM, Profit Split). Country-by-country reporting uses the same template and exchange mechanism as the OECD CbC Standard.
-- **Conservative default** — For any group exceeding SAR 750M consolidated revenue, treat MF / LF / CbCR as required and flag for reviewer. For below-threshold groups, the Disclosure Form still applies — verify.
-
-### 4.6 Pillar Two — Domestic Minimum Top-up Tax (DMTT) — **TBC**
-
-- **DMTT status** — KSA has committed to OECD Pillar Two and is expected to implement a Domestic Minimum Top-up Tax (DMTT) effective 2025–2026. As of skill version 1.0 the precise enactment status, scope, and effective date are TBC — verify against the current ZATCA / Ministry of Finance instruments and the gazetted Royal Decree.
-- **Conservative default** — For any MNE group with consolidated revenue ≥ EUR 750 million in at least two of the four preceding fiscal years (the Pillar Two scope threshold), flag DMTT applicability for reviewer. Do not compute a top-up amount until enactment is confirmed and the GloBE / DMTT rules are loaded into the workflow.
-
-### 4.7 Withholding Tax — Cross-Skill Reference
-
-- **WHT cross-reference** — WHT under Articles 68–69 ITL applies to certain payments from Saudi-resident payers to non-residents (e.g., royalties, technical services, management fees, dividends, interest, rent). Rates vary by category and treaty position. Detailed WHT compliance is out of scope — see `sa-withholding-tax`. WHT borne by the foreign-shareholder side of a mixed entity may interact with CIT credit mechanics — verify.  _(Articles 68–69 ITL)_
-
-## Section 5 — Worked Examples
-
-### 5.1 100% Foreign-Owned LLC — Standard 20%
-
-**Facts:** GlobalTech Saudi LLC. Resident KSA company, **100% owned** by a non-Saudi, non-GCC parent. Fiscal year 1 Jan 2025 – 31 Dec 2025.
-- Gross income (Article 6): SAR 80,000,000.
-- Deductible expenses (Articles 8–17, excluding interest): SAR 50,000,000.
-- Interest expense: SAR 8,000,000.
-- EBITDA (per Implementing Regulations definition): SAR 38,000,000.
-- Tax depreciation: SAR 4,000,000.
-- Prior-year loss carry-forward (Article 21): SAR 6,000,000.
-
-#### 5.1.1 Interest deduction limitation (Article 12).
-
-```
-Cap = 50% × EBITDA = 50% × 38,000,000 = SAR 19,000,000
-Interest expense (SAR 8,000,000) ≤ Cap (SAR 19,000,000)
-→ Full SAR 8,000,000 deductible. No carry-forward.
+```oa-check
+name: GlobalTech Saudi LLC historical 2025 expense reconciliation
+inputs:
+  revenue: 80000000
+  expenses_including_depreciation: 50000000
+  depreciation: 4000000
+  loan_income: 0
+  actual_financing_cost: 8000000
+  losses: 6000000
+steps:
+  - ebit: revenue - expenses_including_depreciation
+  - implied_ebitda: ebit + depreciation
+  - financing_cap: loan_income + 0.5 * (revenue - loan_income - expenses_including_depreciation)
+  - allowed_financing_cost: min(actual_financing_cost, financing_cap)
+  - pre_loss_income: revenue - expenses_including_depreciation - allowed_financing_cost
+  - loss_used: min(losses, pre_loss_income * 0.25)
+  - loss_carried_forward: losses - loss_used
+  - taxable_income: pre_loss_income - loss_used
+  - cit: taxable_income * 0.20
+expected:
+  implied_ebitda: 34000000
+  financing_cap: 15000000
+  loss_used: 5500000
+  loss_carried_forward: 500000
+  cit: 3300000
 ```
 
-#### 5.1.2 Taxable income (pre-loss).
+The ordinary return/payment deadline is **30 April 2026**, derived from ITL arts. 60(b), 69 for this year-end. An accountant certification is required under art. 60(e), since the statutory taxable-income trigger is exceeded; it is not professional approval by this skill's writer.
 
-```
-Gross income                       SAR 80,000,000
-Less: Deductible expenses         (SAR 50,000,000)
-Less: Interest (within cap)        (SAR  8,000,000)
-Less: Tax depreciation             (SAR  4,000,000)
-                                   ───────────────
-Taxable income (pre-loss)          SAR 18,000,000
-```
+### 2. Riyadh Trading Co.: separate the ownership bases
 
-#### 5.1.3 Loss carry-forward (Article 21 25% cap).
+Preserve the original **60% Saudi/40% foreign**, **SAR 25 million** adjusted taxable profit and **SAR 30 million** independently established Zakat base. The ordinary CIT share is **SAR 10 million** and CIT **SAR 2 million**. The Zakat workpaper receives the **SAR 18 million** Saudi share of its own base. Its original SAR 450,000 amount is valid only for the specified full-Hijri-rate scenario; a Gregorian period requires the actual-day computation in [sa-zakat](sa-zakat.md). Do not publish the old combined SAR 2.45 million as an unconditional Gregorian-year liability. [ITL arts. 6-7](https://zatca.gov.sa/ar/HelpCenter/guidelines/Documents/%D9%86%D8%B8%D8%A7%D9%85%20%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9%20%D8%A7%D9%84%D8%AF%D8%AE%D9%84.pdf); [Zakat Regulations arts. 13, 15](https://zatca.gov.sa/en/RulesRegulations/Documents/ZAKAT%20COLLECTION.pdf).
 
-```
-Annual offset cap = 25% × 18,000,000 = SAR 4,500,000
-Loss b/f                         = SAR 6,000,000
-Loss applied this year (capped)  = SAR 4,500,000
-Loss remaining for c/f           = SAR 1,500,000
-```
-
-#### 5.1.4 CIT.
-
-```
-Adjusted taxable income = 18,000,000 − 4,500,000 = SAR 13,500,000
-CIT @ 20%               = 20% × 13,500,000       = SAR  2,700,000
+```oa-check
+name: Riyadh Trading Co separate CIT and Zakat workpaper bases
+inputs:
+  adjusted_taxable_profit: 25000000
+  foreign_share: 0.40
+  separately_verified_zakat_base: 30000000
+  saudi_share: 0.60
+steps:
+  - cit_base: adjusted_taxable_profit * foreign_share
+  - cit: cit_base * 0.20
+  - zakat_workpaper_base: separately_verified_zakat_base * saudi_share
+expected:
+  cit_base: 10000000
+  cit: 2000000
+  zakat_workpaper_base: 18000000
 ```
 
-#### 5.1.5 Filing.
+### 3. ForeignCo SARL: decide whether the head-office charge is deductible
 
-Return due via ZATCA portal within **120 days** of 31 Dec 2025 → by **30 April 2026**. Tax payable with the return; quarterly advance instalments (Section 6.3) may have already discharged part of the liability.
+The original treaty-country company has an assumed established Riyadh project PE, **1 January-31 December 2025**, Saudi revenue **SAR 40 million**, local expenses **SAR 28 million** and head-office charges **SAR 5 million**. The original result was SAR 7 million profit and SAR 1.4 million CIT. That arithmetic is conditional on all charges being deductible direct expenditure. If the SAR 5 million is instead a prohibited estimated allocation of indirect head-office administration, add it back: profit is **SAR 12 million** and CIT **SAR 2.4 million**. Obtain the contracts, cost evidence and treaty attribution opinion before choosing either result. This is a genuine deductibility decision, not permission to elect the cheaper branch. [IR art. 10(10)](https://zatca.gov.sa/en/RulesRegulations/Taxes/Documents/Regulations_of_Income_Tax.pdf).
 
-### 5.2 60/40 Mixed Entity (40% Foreign, 60% Saudi/GCC)
-
-**Facts:** Riyadh Trading Co. Resident KSA company. **60% Saudi nationals, 40% non-Saudi/non-GCC** per the CR as at 31 Dec 2025. Fiscal year 1 Jan 2025 – 31 Dec 2025.
-- Adjusted taxable income (per ITL): SAR 25,000,000.
-- Zakat base (per Zakat regulations — see `sa-zakat`): SAR 30,000,000.
-
-#### 5.2.1 Foreign-share CIT.
-
-```
-Foreign-share portion = 40% × 25,000,000 = SAR 10,000,000
-CIT @ 20%             = 20% × 10,000,000 = SAR  2,000,000
-```
-
-#### 5.2.2 Saudi/GCC-share Zakat (reference — see sa-zakat).
-
-```
-Saudi/GCC-share Zakat base = 60% × 30,000,000 = SAR 18,000,000
-Zakat @ 2.5%               = 2.5% × 18,000,000 = SAR    450,000
+```oa-check
+name: ForeignCo SARL direct service versus prohibited head-office allocation
+inputs:
+  pe_revenue: 40000000
+  local_deductible_expenses: 28000000
+  head_office_charge: 5000000
+steps:
+  - profit_if_direct_charge_qualifies: pe_revenue - local_deductible_expenses - head_office_charge
+  - cit_if_direct_charge_qualifies: profit_if_direct_charge_qualifies * 0.20
+  - profit_if_prohibited_indirect_allocation: pe_revenue - local_deductible_expenses
+  - cit_if_prohibited_indirect_allocation: profit_if_prohibited_indirect_allocation * 0.20
+  - tax_difference: cit_if_prohibited_indirect_allocation - cit_if_direct_charge_qualifies
+expected:
+  cit_if_direct_charge_qualifies: 1400000
+  cit_if_prohibited_indirect_allocation: 2400000
+  tax_difference: 1000000
 ```
 
-#### 5.2.3 Total ZATCA liability.
+Payments effectively connected with the registered PE belong in its return; retain any actual WHT certificate for the credit test. A head-office remittance or distribution needs a separate [WHT](sa-withholding-tax.md) workpaper. The assumed PE in this arithmetic example does not prove the treaty's PE threshold. The ordinary historical deadline is **30 April 2026**, subject to the actual period and applicable procedural treatment.
 
-```
-CIT                          SAR 2,000,000
-Zakat (cross-reference)      SAR   450,000
-                             ─────────────
-Total                        SAR 2,450,000
-```
+## When to refuse or refer
 
-**Filing:** Single annual return via ZATCA portal within **120 days** of 31 Dec 2025 → by **30 April 2026**. CIT and Zakat reported on the integrated return (see Section 6).
+Preserve these original refusal identifiers:
 
-**Reviewer note:** The Zakat base and the CIT taxable income are **not the same number** — they are computed under different rules. Always compute them independently. This example assumes the Zakat base is provided; the actual Zakat computation is delegated to `sa-zakat`.
+- **R-SA-CT-1:** ordinary Zakat-only ownership: route to the Zakat skill after testing statutory exceptions.
+- **R-SA-CT-2:** banks, insurance, mutual/investment funds or specialised sector bases: refer for the sector method.
+- **R-SA-CT-3:** consolidated CIT, mergers, demergers, exchanges or rollovers: no invented group return or automatic tax neutrality.
+- **R-SA-CT-4:** RHQ, ILBZ, KAEC, Ras Al-Khair, NEOM and other incentive positions: no unproven exemption.
+- **R-SA-CT-5:** upstream/concession oil, hydrocarbon and specialised gas calculations: refer with the statutory-rate classification.
+- **R-SA-CT-6:** active assessment, audit, objections, tax committees or appellate litigation: preserve notices and evidence; do not pre-empt the dispute.
+- **R-SA-CT-7:** TP controversy, advance pricing or mutual-agreement procedures: refer with contracts and prior positions.
+- **R-SA-CT-8:** another tax/job: load the named sibling, including the existing RETT skill.
+- **R-SA-CT-9:** Pillar Two/DMTT with no verified enacted instrument: stop that calculation.
+- **R-SA-CT-10:** treaty residence, PE, attribution or relief: no automatic treaty conclusion without the specific text and evidence.
 
-### 5.3 Saudi PE of a Non-Resident
+Also stop for missing financial statements/ownership, unsubstantiated losses, conflicting expense totals, unknown sector, unsupported credits or an unverified law change. Use explicit open items; never substitute a high-rate or foreign-owner “conservative default”. All outputs remain working papers pending qualified professional sign-off.
 
-**Facts:** ForeignCo SARL (resident in a treaty country) operates a project office in Riyadh constituting a Saudi PE under Article 4 ITL. Fiscal year 1 Jan 2025 – 31 Dec 2025.
-- Saudi-source revenue attributable to the PE: SAR 40,000,000.
-- Allocable head-office expenses (under Implementing Regulations and the separate-enterprise principle): SAR 5,000,000.
-- Local PE expenses (rent, salaries, depreciation): SAR 28,000,000.
-- Adjusted taxable income attributable to the PE: SAR 7,000,000.
+## Filing and payment
 
-#### 5.3.1 PE CIT.
+1. Register with ZATCA before the end of the first fiscal year, subject to the separate withholding-only exception. Establish the actual tax year and the correct taxpayer registration. [ITL art. 57](https://zatca.gov.sa/ar/HelpCenter/guidelines/Documents/%D9%86%D8%B8%D8%A7%D9%85%20%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9%20%D8%A7%D9%84%D8%AF%D8%AE%D9%84.pdf).
+2. In the taxpayer's ZATCA account, use **Returns**, choose the applicable annual return and period, complete the approved form and reconcile its taxable-income, loss, ownership, CIT and credit/payment schedules to the workpapers. Keep financial statements, depreciation, related-party, ownership, loss and credit evidence. Submit only after professional review; this skill does not fabricate current portal box numbers. [ITL art. 60](https://zatca.gov.sa/ar/HelpCenter/guidelines/Documents/%D9%86%D8%B8%D8%A7%D9%85%20%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9%20%D8%A7%D9%84%D8%AF%D8%AE%D9%84.pdf); [May 2026 guideline §§5-6](https://zatca.gov.sa/en/HelpCenter/guidelines/Documents/Simplified-Guideline-for-Income-Tax.pdf).
+3. Check whether licensed-accountant certification is required: ITL art. 60(e), as detailed in IR art. 57(6), applies where taxable income **before deducting expenses** exceeds **SAR 1,000,000**; do not test only net profit. File and pay within **120 days** of year-end; cessation has a separate **60-day** return/notification rule. [ITL arts. 60, 69](https://zatca.gov.sa/ar/HelpCenter/guidelines/Documents/%D9%86%D8%B8%D8%A7%D9%85%20%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9%20%D8%A7%D9%84%D8%AF%D8%AE%D9%84.pdf); If the statutory return deadline falls during an official holiday, IR art. 57(2) accepts the return and payment on the first following working day; this also covers partnership information and cessation returns. Establish the actual deadline in the workpaper. [IR art. 57(2), (6)](https://zatca.gov.sa/en/RulesRegulations/Taxes/Documents/Regulations_of_Income_Tax.pdf).
+4. Compute each advance instalment as **25% × (prior-year return tax − prior-year art. 68 WHT)**. The obligation does not arise if that computed instalment is below **SAR 500,000**. Where applicable, pay by the last day of months **6, 9 and 12** of the current tax year. Request any reduction from ZATCA under art. 70(c); an estimate is not an automatic waiver. Reconcile instalments and eligible credits to the final balance, then pay through the issued **SADAD** invoice and retain the receipt. [ITL art. 70, boundaries in words on the page](https://zatca.gov.sa/ar/HelpCenter/guidelines/Documents/%D9%86%D8%B8%D8%A7%D9%85%20%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9%20%D8%A7%D9%84%D8%AF%D8%AE%D9%84.pdf); [guideline §6](https://zatca.gov.sa/en/HelpCenter/guidelines/Documents/Simplified-Guideline-for-Income-Tax.pdf).
+5. Retain Arabic books/supporting records under the applicable rules; WHT evidence has its own minimum retention rule in the WHT skill. Assessment is ordinarily within **5 years from the return's statutory filing deadline**, with **10 years** for non-filing or an incomplete/incorrect return intended to evade tax and written-consent exceptions. It is not ordinarily measured from the actual filing date. [ITL arts. 58, 65](https://zatca.gov.sa/ar/HelpCenter/guidelines/Documents/%D9%86%D8%B8%D8%A7%D9%85%20%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9%20%D8%A7%D9%84%D8%AF%D8%AE%D9%84.pdf).
 
-```
-PE CIT = 20% × 7,000,000 = SAR 1,400,000
-```
+### Penalties: compute the applicable provision, not one generic percentage
 
-#### 5.3.2 Considerations.
+| Breach and conditions | Statutory amount | Official source |
+|---|---|---|
+| Failure to register by the required date | Natural person SAR 1,000; joint-stock capital company SAR 10,000; other entities SAR 5,000 | IR art. 55; May 2026 guideline §7.1, [guideline](https://zatca.gov.sa/en/HelpCenter/guidelines/Documents/Simplified-Guideline-for-Income-Tax.pdf) |
+| Late annual filing | Higher of 1% revenue capped at SAR 20,000 and the applicable unpaid-tax percentage below | ITL art. 76; IR art. 67, [law](https://zatca.gov.sa/ar/HelpCenter/guidelines/Documents/%D9%86%D8%B8%D8%A7%D9%85%20%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9%20%D8%A7%D9%84%D8%AF%D8%AE%D9%84.pdf) |
+| Unpaid-tax limb of late-filing penalty | 5% for delay up to 30 days; 10% over 30 through 90; 20% over 90 through 365; 25% over 365 | ITL art. 76(b), [law](https://zatca.gov.sa/ar/HelpCenter/guidelines/Documents/%D9%86%D8%B8%D8%A7%D9%85%20%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9%20%D8%A7%D9%84%D8%AF%D8%AE%D9%84.pdf) |
+| Late payment, including required WHT and advances | Additional 1% of unpaid tax per 30 days of delay from the tax due date | ITL art. 77(a), [law](https://zatca.gov.sa/ar/HelpCenter/guidelines/Documents/%D9%86%D8%B8%D8%A7%D9%85%20%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9%20%D8%A7%D9%84%D8%AF%D8%AE%D9%84.pdf) |
+| False information/fraud intended to evade tax | Additional 25% of the resulting tax difference, subject to the statutory conditions | ITL art. 77(b), [law](https://zatca.gov.sa/ar/HelpCenter/guidelines/Documents/%D9%86%D8%B8%D8%A7%D9%85%20%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9%20%D8%A7%D9%84%D8%AF%D8%AE%D9%84.pdf) |
 
-- **Treaty position:** If ForeignCo's home jurisdiction has a treaty with KSA, the treaty may modify the PE threshold or the attribution rules — **out of scope (R-SA-CT-10)**, escalate to reviewer.
-- **WHT interaction:** Payments to the PE by Saudi customers may be subject to WHT under Articles 68–69; WHT borne is generally creditable against the PE's CIT liability subject to the Implementing Regulations — see `sa-withholding-tax`.
-- **Repatriation of branch profits:** Saudi domestic law imposes a separate WHT on branch-profit remittances — verify the current rate and whether the treaty modifies it.
+The old 5%-per-month/capped-at-25% CIT late-payment rule is incorrect. The current temporary penalty initiative must be assessed separately: **1 July-31 December 2026**, with registration, all required returns and principal payment or an approved adhered-to instalment plan; returns due **after 30 June 2026**, evasion penalties, previously paid fines and the listed VAT-law penalties are excluded. It does not cancel tax or make future late payment acceptable. Retain evidence of eligibility and the authority's account treatment. [ZATCA initiative guideline pp. 3-9, 11](https://zatca.gov.sa/en/HelpCenter/guidelines/Documents/Cancellation-of-Fines-Exemption%20of-Financial-Penalties.pdf).
 
-**Filing:** PE files a Saudi CIT return via the ZATCA portal within **120 days** of fiscal year-end. Quarterly advance CIT instalments apply where the prior-year liability exceeds the threshold (Section 6.3).
+## Completion checklist
 
-## Section 6 — Filing and Payment Mechanics
+- Taxpayer, business source, PE/activity and ownership conclusions are documented; no unknown fact became a legal presumption.
+- Book-to-tax reconciliation, financing limit, depreciation pools and loss eligibility/cap recompute; no depreciation or credit is deducted twice.
+- CIT and Zakat use distinct bases; WHT, related-party disclosure, MF/LF and CbCR are tested separately.
+- Return schedules reconcile to the workpapers and payment account; the right deadline and advance-payment test are used.
+- All original cases, refusal IDs and exceptional topics have a current destination or an explicit unresolved boundary below.
 
-### 6.1 Annual Return — ZATCA Portal
+## Sources
 
-**Form:** Integrated annual Zakat / Income Tax / WHT return — filed electronically via the **ZATCA portal** (zatca.gov.sa). Mixed entities file a single return that splits CIT and Zakat per ownership.
+| Official text | Actual reading on 2026-11-16 |
+|---|---|
+| [Income Tax Law M/1, official Arabic consolidation](https://zatca.gov.sa/ar/HelpCenter/guidelines/Documents/%D9%86%D8%B8%D8%A7%D9%85%20%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9%20%D8%A7%D9%84%D8%AF%D8%AE%D9%84.pdf) | Read on 2026-11-16. Read for arts. 2-17, 21, 43, 57-60, 63-65, 68-70, 76-77 and relevant amendment footnotes: scope, source, separate bases, rates, deductions, losses/continuity, procedure, advances and penalties. Arabic controls. |
+| [Income Tax Implementing Regulations, official Arabic compilation](https://zatca.gov.sa/en/RulesRegulations/Taxes/Documents/Regulations_of_Income_Tax.pdf) | Read on 2026-11-16. Read for arts. 1, 3-6, 9-11, 55, 63, 66-69 and neighboring conditions. This compilation ends with the stated historical amendments; later statutory text controls, including art. 43's same-activity loss exception. |
+| [Simplified Income Tax Guideline, second version May 2026](https://zatca.gov.sa/en/HelpCenter/guidelines/Documents/Simplified-Guideline-for-Income-Tax.pdf) | Read on 2026-11-16. Read pp. 1-10; visually inspected rate and obligation diagrams on pp. 5-6. Used for ordinary rate confirmation, portal steps and penalty explanations. |
+| [WHT General Guideline, second version May 2026](https://zatca.gov.sa/en/HelpCenter/guidelines/Documents/General-Guideline-for-Withholding-Tax-In-accordance-with-the-provisions-of-the-Income-Tax-Law-and-its-Implementing-Regulations.pdf) | Read on 2026-11-16. Read pp. 5-42: residence, source, PE interaction, payment classes, exemptions, records and penalty cross-checks. WHT amounts remain owned by the WHT skill. |
+| [Zakat Collection Regulations 1445, decisions 1007 and 1248](https://zatca.gov.sa/en/RulesRegulations/Documents/ZAKAT%20COLLECTION.pdf) | Read on 2026-11-16. Read for arts. 1, 3-7, 13, 15, 21-29: ownership/base separation and the calendar-dependent rate boundary. |
+| [TP Bylaws, official scanned consolidation amended by decision 8-2-23](https://zatca.gov.sa/ar/RulesRegulations/Taxes/Documents/Transfer%20Pricing%202019%20%D8%AA%D8%B9%D9%84%D9%8A%D9%85%D8%A7%D8%AA%20%D8%AA%D8%B3%D8%B9%D9%8A%D8%B1%20%D8%A7%D9%84%D9%85%D8%B9%D8%A7%D9%85%D9%84%D8%A7%D8%AA.pdf) | Read on 2026-11-16. Read relevant definitions, arts. 5-9, 14, 16-19 and neighboring exceptions; visually checked the small-enterprise and CbCR threshold pages (PDF pp. 7, 25-26). OCR is a reading aid, not the controlling text. |
+| [Cancellation of Fines and Exemption of Financial Penalties, effective July 2026](https://zatca.gov.sa/en/HelpCenter/guidelines/Documents/Cancellation-of-Fines-Exemption%20of-Financial-Penalties.pdf) | Read on 2026-11-16. Read pp. 3-11: exact period, exclusions, required returns, principal settlement and instalment consequences. |
+| [Official Gazette, regulation amendments dated 12 September 2023](https://www.uqn.gov.sa/details?p=23668) | Read on 2026-11-16. Read the old/new art. 9(2) comparison and neighboring amendments; confirms the bank and construction-capitalisation exclusions. |
 
-**Required attachments / schedules**
-
-| Schedule | Content |
-| --- | --- |
-| Main return | Computation of adjusted taxable income; CIT payable; Zakat payable for mixed entities |
-| Audited financial statements | Attached |
-| Schedule of related-party transactions / TP Disclosure Form | Required for all taxpayers with RPTs |
-| Master File / Local File | If group consolidated revenue > SAR 750M (submitted on request) |
-| CbCR notification / CbCR | If group consolidated revenue > SAR 750M |
-| Schedule of loss carry-forward | Article 21 tracking with 25% annual cap applied |
-| Schedule of interest carry-forward | Article 12 disallowed interest tracking |
-| Schedule of WHT credits | Linked to `sa-withholding-tax` |
-| Shareholder register snapshot | Nationality and ownership percentages for mixed-entity allocation |
-
-### 6.2 Filing Deadlines
-
-**Filing Deadlines table**
-
-| Item | Deadline |
-| --- | --- |
-| Annual CIT return | **Within 120 days of fiscal year-end** (e.g., FYE 31 Dec 2025 → due 30 Apr 2026) |
-| Annual tax payable balance | Due with the annual return |
-| Quarterly advance CIT instalment 1 | End of 6th month of the current fiscal year (verify per Implementing Regulations) |
-| Quarterly advance CIT instalment 2 | End of 9th month |
-| Quarterly advance CIT instalment 3 | End of 12th month |
-| CbCR / Notification | Per ZATCA TP Bylaws schedule (typically aligned to BEPS Action 13 timing) |
-| Extension request | Application to ZATCA; not automatic — must be filed before the deadline with justification |
-
-*(Reviewer: confirm the advance-instalment due-date schedule against the current Implementing Regulations — historically advance instalments are tied to the 6th, 9th, and 12th months of the fiscal year, but verify.)*
-
-### 6.3 Advance CIT Instalments
-
-- **Advance instalments rule** — Taxpayers whose prior-year tax liability exceeded a prescribed threshold must pay three advance instalments during the current fiscal year, each generally 25% of the prior-year liability (less specified credits), with the balance due on the annual return.  _(Article 60 ITL and Implementing Regulations)_
-- **Advance instalment formula** — Per-instalment amount ≈ 25% × Prior-year CIT (less applicable credits per Implementing Regulations) Balance with annual return = Current-year CIT − advance instalments − WHT credits  _(Article 60 ITL and Implementing Regulations)_
-- **Reduction and conservative default** — If the taxpayer reasonably estimates that the current-year liability will be materially lower, it may apply to ZATCA to reduce the instalments — subject to default surcharge if the year-end liability exceeds the reduced basis. Conservative default: Pay on the prior-year basis unless a formal reduction is approved by ZATCA.
-
-### 6.4 Penalties
-
-**Penalties table**
-
-| Infraction | Sanction |
-| --- | --- |
-| Late payment of tax | **5% per month** of the unpaid tax, **capped at 25%** of the unpaid amount |
-| Failure to file the annual return on time | Tiered fine per ZATCA schedule (verify current amounts) |
-| Failure to maintain records | Per ZATCA schedule |
-| Tax evasion (intentional) | Up to **25% of the evaded tax** plus criminal exposure under the ITL penal provisions |
-| Failure to file CbCR / MF / LF where required | Per TP Bylaws penalty schedule |
-| Late or short advance instalment | Default surcharge per the Implementing Regulations |
-
-- **Conservative default** — Apply 5%/month capped at 25% for late-payment scenarios and flag any other penalty interaction for reviewer to confirm against the current ZATCA penalty schedule.
-
-### 6.5 Audit, Assessment, and Statute of Limitations
-
-- **Audit and limitations** — - Self-assessment — the return as filed forms the basis of assessment unless ZATCA selects for audit. - Audit selection — ZATCA may select on a risk basis or by sector campaign. - Statute of limitations — generally 5 years from the filing of the return, extendable in cases of suspected concealment or fraud (verify against the current ITL / ZATCA guidance). - Disputes — Tax Violations and Disputes Resolution Committee (TVDRC) → General Secretariat of Zakat, Tax and Customs Committees → Court of Appeal. Out of scope (R-SA-CT-6) — escalate.
-
-### 6.6 Record Retention
-
-- **Record retention** — Retain books, records, and supporting documentation for at least 10 years from the end of the fiscal year (verify against the current ZATCA guidance and Implementing Regulations — retention may differ for specific document classes).
-
-## Section 7 — Conservative Defaults Summary
-
-**Conservative Defaults Summary table**
-
-| Item | Default |
-| --- | --- |
-| Shareholder nationality unverified | Treat as foreign (CIT applies) |
-| Sector unclear | Standard 20% (not 30% gas, not 50–85% oil) |
-| Activity boundary unclear | Default 20%, flag — do not apply elevated rates |
-| Mixed-entity ownership | Use CR snapshot at FYE; flag mid-year changes |
-| Loss carry-forward | Indefinite, **always cap offset at 25% of annual taxable income** (Article 21) |
-| Interest deduction | **Always cap at 50% of EBITDA** (Article 12); track disallowed interest c/f |
-| TP documentation | Apply MF / LF / CbCR at SAR 750M consolidated revenue threshold |
-| Pillar Two / DMTT | Mark **TBC**; do not compute top-up until enactment confirmed |
-| Advance instalments | Pay on prior-year basis unless formal ZATCA-approved reduction |
-| Filing deadline | **120 days from FYE — never assume extension** |
-| Group consolidation | Standalone unless documented share-deal structure |
-| Penalty headline | 5%/month, capped at 25% |
-| Record retention | 10 years from FYE (verify) |
-| Treaty positions / PE | Escalate; do not apply treaty relief without reviewer sign-off |
-| FA / Royal-Decree change uncertain | Mark **TBC** and flag for reviewer |
-
-## Section 8 — Sources
-
-**Primary Legislation**
-
-- **Income Tax Law (ITL)** — Royal Decree No. **M/1** dated **15/1/1425H (6 March 2004)**.
-  - Article 1–4 — taxable persons, residency, permanent establishment.
-  - Article 5 — separate-enterprise principle for PEs.
-  - Article 6 — gross income.
-  - Article 7 — rates (a) 20% standard, (b) 30% natural gas, (c) 50%–85% oil and other hydrocarbons.
-  - Articles 8–17 — allowable deductions.
-  - Article 12 — interest deduction limitation (50% of EBITDA).
-  - Article 13 — bad debts, donations, and specific deduction conditions.
-  - Article 17 — depreciation (declining-balance per asset class).
-  - Article 21 — loss carry-forward (indefinite, capped at 25% of annual taxable income).
-  - Article 60 — advance tax instalments.
-  - Articles 68–69 — withholding tax on payments to non-residents.
-- **Implementing Regulations to the ITL** — detailed procedural and computational rules issued by ministerial decision.
-- **Subsequent Royal Decrees and Ministerial Decisions** amending the ITL and Implementing Regulations (verify the current consolidated text).
-
-**Subordinate Legislation and ZATCA Instruments**
-
-- **Transfer Pricing Bylaws (2019)** — BEPS Action 13 aligned; MF / LF / CbCR thresholds at SAR 750M.
-- **ZATCA Circulars and Guides** — including TP guide, withholding-tax guide, and sectoral guides.
-- **Pillar Two / Domestic Minimum Top-up Tax instruments** — **TBC** for 2025–2026 enactment; verify the gazetted Royal Decree and ZATCA implementing rules.
-
-**Authority and Platform**
-
-- **Zakat, Tax and Customs Authority (ZATCA)** — zatca.gov.sa.
-- **ZATCA portal** — annual return filing, advance instalments, WHT filings, TP disclosure.
-- **General Secretariat of Zakat, Tax and Customs Committees** — disputes and appeals (out of scope).
-
-**International Instruments**
-
-- **OECD Model Tax Convention** and **KSA bilateral tax treaties** — for treaty-based PE and WHT analysis (escalate per R-SA-CT-10).
-- **OECD BEPS Action 13** — Master File / Local File / Country-by-Country Reporting standard.
-- **OECD Pillar Two GloBE Rules** — informing the KSA DMTT track (TBC).
-
-## PROHIBITIONS
-
-- NEVER apply Saudi CIT to Saudi or GCC nationals' share — that share is subject to **Zakat** (see `sa-zakat`).
-- NEVER apply the standard 20% rate to taxable income from **natural gas investment** (30%) or **oil and other hydrocarbons** (tiered 50%–85%) — but equally, **do not apply elevated rates without confirmation of activity classification** (default to 20% with a flag).
-- NEVER omit the **Article 21 25% annual cap** on loss carry-forward offset — losses are indefinite but cannot eliminate more than 25% of any year's taxable income.
-- NEVER deduct interest in excess of **50% of EBITDA** under Article 12 — track the disallowed amount as a carry-forward.
-- NEVER produce a Saudi consolidated/group return — Saudi tax law does not generally permit it (R-SA-CT-3).
-- NEVER apply a Regional Headquarters (RHQ), ILBZ, NEOM, KAEC, or other zone incentive without specialist verification (R-SA-CT-4).
-- NEVER assume a tax treaty modifies the PE or WHT outcome without reviewer sign-off (R-SA-CT-10).
-- NEVER compute Pillar Two / DMTT amounts until the gazetted KSA instrument is verified — mark **TBC** in all interim outputs.
-- NEVER apply CbCR / MF / LF thresholds inconsistently — the SAR 750M consolidated-revenue threshold is the trigger.
-- NEVER advise late filing — the **120-day** deadline is strict and the penalty is **5% per month capped at 25%**.
-- NEVER advise skipping or reducing advance instalments without formal ZATCA approval — default surcharge applies.
-- NEVER conflate the **CIT taxable income** and the **Zakat base** in a mixed entity — they are computed under different rules.
-- NEVER ignore the Commercial Registration nationality breakdown — it drives the CIT/Zakat split in a mixed entity.
-- NEVER produce figures as definitive — always label as estimates pending reviewer sign-off by a SOCPA-licensed tax professional.
-
-## Disclaimer
-
-This skill and its outputs are for informational and computational purposes only and do not constitute tax, legal, or financial advice. All outputs must be reviewed and signed off by a qualified Saudi tax professional (SOCPA member or ZATCA-recognised tax adviser) before filing or acting upon. Pillar Two / DMTT specifics flagged as **TBC** must be verified against the gazetted Royal Decree and ZATCA implementing instruments before reliance. The latest verified version is maintained at [openaccountants.com](https://openaccountants.com).
-
-## OpenAccountants footer
-
-*OpenAccountants — open-source accounting skills for AI*
+**Not yet confirmed:** payer-borne WHT/gross-up and Zakat expense deductibility, extension-request procedures/deadlines, criminal-exposure claims and bespoke record/TP-violation penalties; no executable 2026 Saudi Pillar Two/DMTT enactment or effective-date conclusion; special-zone/RHQ qualification and concession-specific oil/gas/downstream computations; bank/insurance/fund special bases; treaty PE/attribution and foreign-tax-credit entitlement for a particular taxpayer; current portal box identifiers and case-specific ownership-change allocation; automatic financing-cost carry-forward; any general loss carry-back. These original topics remain review boundaries, not usable exemptions, rates or filing instructions. The historical cases do not establish unpublished 2026 forms or a taxpayer's actual filing position. The ordinary CIT legal record-retention period beyond the separately confirmed WHT requirement must be checked for the record class before disposal.
