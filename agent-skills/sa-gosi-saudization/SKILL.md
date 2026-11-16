@@ -1,335 +1,299 @@
 ---
 name: sa-gosi-saudization
-description: "ALWAYS read this skill before touching any Saudi Arabia employer compliance work — social insurance contributions, Saudization quotas, or monthly wage filings. Use whenever asked to compute, review, or advise on Saudi private-sector payroll obligations — General Organization for Social Insurance (GOSI) contributions split between the Annuity (retirement) branch, the Occupational Hazards branch, and the SANED unemployment insurance branch; Saudization compliance under the Nitaqat program administered by the Ministry of Human Resources and Social Development (MHRSD); and the Wage Protection System (WPS) submitted monthly via the Mudad platform. Trigger on phrases like \"Saudi GOSI\", \"Saudization Nitaqat\", \"Wage Protection System Saudi\", \"Mudad WPS\", \"9% GOSI Saudi\", \"SANED unemployment\", \"Saudi employer compliance\", \"Saudi labor law\", \"Saudi expat 2% GOSI\", \"Nitaqat Platinum Green Yellow Red\", \"iqama renewal Saudi\", \"MHRSD quota\", or any request involving running monthly payroll, hiring S"
+description: "Saudi Arabia private-sector employer payroll for 2026: identify existing versus new GOSI cohorts, branch coverage, contributory wages and the July pension-rate change before computing employer contributions and employee deductions. Reconciles GOSI bills, gross-to-net bank pay, Nitaqat entity assessment, independent occupational localization and Mudad WPS reporting. Preserves the IT-consultancy LLC and capped-manager examples with cohort-specific results. Read before Saudi payroll work; missing coverage or wage evidence stops final submission."
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/sa-gosi-saudization"
   jurisdiction: "SA"
-  tax_year: "2025"
-  last_updated: "2026-07-13"
+  tax_year: "2026"
+  last_updated: "2026-11-16"
 ---
 
-# SA Gosi Saudization
+# Saudi Arabia employer payroll: GOSI, Saudization and WPS for 2026
 
-## Saudi Arabia — GOSI + Saudization + WPS — Skill v1.0
-
-> **Scope note:** This skill is the **end-to-end employer compliance orchestrator** for private-sector establishments in the Kingdom of Saudi Arabia (KSA). Saudi Arabia does **not levy personal income tax** on employment income for either Saudis or expatriates, so there is no PAYE-style withholding to compute. The employer's monthly obligations are therefore: (a) GOSI contributions, (b) Saudization compliance under Nitaqat, and (c) Wage Protection System (WPS) filing via Mudad. This skill does NOT cover Zakat, corporate income tax, VAT, or e-invoicing — those live in their respective Saudi Arabia skills.
+> **Produced by OpenAccountants (openaccountants.com)**
 >
-> **Tax year 2025 note:** Contribution rates below reflect the structure in force following the GOSI reforms phased in from 2024 onward. The **9%/9% annuity split** is the pre-reform baseline for existing Saudi insured workers; newly insured Saudis (first GOSI registration on or after 3 July 2024) are subject to a phased increase under the Civil Pension and Social Insurance Schemes reform — verify current rate for any Saudi employee first registered after that date. **SANED unemployment insurance** has applied to Saudi nationals since 2014. **Wage base cap** of SAR 45,000/month is the long-standing ceiling — verify against the current GOSI portal before filing. **Saudization quotas were tightened across multiple sectors in 2024–2025** (engineering, accounting, dentistry, pharmacy, retail outlets, telecom retail, real estate brokerage, project management, customer service, etc.) — always flag "verify current sector quota against the latest MHRSD notification" before relying on a percentage.
-
-## Rates and thresholds
-
-> Items flagged for further clarification are tracked separately and excluded here.
-> This block is generated from verified `skill_facts` — edit the facts, not the prose.
-
-### GOSI and Saudization
-
-- **Annuity (retirement) — employer** — 9%  _(GOSI Law)_
-- **Annuity (retirement) — employee** — 9%  _(GOSI Law)_
-- **Occupational Hazards — employer (Expatriate)** — 2%  _(GOSI Law)_
-- **SANED (unemployment) — employer** — 0.0075  _(GOSI Law)_
-- **SANED (unemployment) — employee** — 0.0075  _(GOSI Law)_
-- **Total — Saudi employer** — 0.1175  _(GOSI Law)_
-- **Total — Saudi employee** — 0.0975  _(GOSI Law)_
-- **Occupational Hazards — employer (Expatriate)** — 2%  _(GOSI Law)_
-- **Employee contribution (Expatriate)** — 0%  _(GOSI Law)_
-- **Contributory wage cap** — SAR 45,000/month  _(GOSI Law, Part 1 Article 8(2))_
-- **GOSI Contribution Base** — Basic salary + housing allowance  _(GOSI Law, Part 1 Article 8(1))_
-- **Nitaqat — Platinum tier** — Exceeds target — maximum benefits  _(MHRSD / Qiwa — Nitaqat Mutawar Program procedural guidelines)_
-- **Nitaqat — High/Mid/Low Green tier** — Meets target — standard to limited  _(MHRSD / Qiwa — Nitaqat Mutawar Program procedural guidelines)_
-- **Nitaqat — Red tier** — Well below — no visas, no iqama renewals  _(MHRSD / Qiwa — Nitaqat Mutawar Program procedural guidelines)_
-- **WPS Platform** — Mudad (mudad.com.sa)  _(MHRSD — Wage Protection System)_
-- **WPS Requirement** — All salaries via Saudi bank IBAN  _(MHRSD — Wage Protection System, ref. 1.8.4 (59 - ACC))_
-
-## Section 1 — Quick reference: contribution + Saudization table
+> This skill prepares a private-sector employer compliance workpaper. Calculations are preliminary and require qualified professional review before a payroll, contribution return or employment decision is submitted.
 
-### 1.1 GOSI monthly contribution table
+## Scope
 
-**GOSI monthly contribution table**
+Read before Saudi employer registration, social-insurance contributions, Nitaqat monitoring or monthly wage-file work. The three outputs are separate: **GOSI contribution liability**, **the establishment's actual Qiwa/Nitaqat assessment plus occupational localization tests**, and **wages paid and reported through Mudad**. Passing one does not establish compliance with the others.
 
-| Branch | Saudi employer | Saudi employee | Expat employer | Expat employee | Wage base |
-| --- | --- | --- | --- | --- | --- |
-| **Annuity (retirement)** | 9% | 9% | — | — | Contributory wage (basic + housing), capped at SAR 45,000/month |
-| **Occupational Hazards** | 2% | — | 2% | — | Same contributory wage cap |
-| **SANED (unemployment)** | 1.5% | 1.5% | — | — | Same contributory wage cap, Saudis only since 2014 |
-| **TOTAL — Saudi national** | **12.5%** | **10.5%** | — | — | Combined 23% |
-| **TOTAL — Expatriate** | — | — | **2%** | **0%** | Occupational Hazards only |
-
-The order of GOSI branches matters because **only Saudi nationals are subject to all three branches** (Annuity, Occupational Hazards, SANED), while **expatriates are subject only to Occupational Hazards**. Calculate per-employee, then aggregate per establishment for the monthly remittance.
-
-- **Contributory wage definition** — GOSI uses basic salary + housing allowance (whether paid in cash or in kind). Other allowances (transport, mobile, food, etc.) are generally excluded unless the employment contract structures them as part of basic. Conservative default: if an allowance is fixed and unconditional, treat it as part of the contributory wage and flag for reviewer.
-- **Cap rule** — The contributory wage is capped at SAR 45,000/month per employee for all branches. Salaries above SAR 45,000 still pay GOSI but only on the first SAR 45,000.
-- **Conservative default** — When in doubt whether a particular allowance is part of the contributory wage, include it in the base and flag for reviewer. GOSI under-contribution triggers GOSI inspector recovery plus 2%/month penalty; over-contribution is recoverable but administratively painful.
-
-### 1.2 Nitaqat (Saudization) tier table
-
-**Nitaqat (Saudization) tier table**
-
-| Tier | Compliance status | Consequences |
-| --- | --- | --- |
-| **Platinum** | Exceeds target | Maximum benefits — fastest visa issuance, iqama renewal without restriction, priority on government tenders, ability to "poach" workers from lower-tier establishments |
-| **High Green** | Meets target comfortably | Full ability to hire expats, renew iqamas, issue work visas |
-| **Mid Green** | Meets target | Hire expats and renew iqamas under standard quota |
-| **Low Green** | Barely meets target | Hire expats but at reduced quota; iqama renewal allowed |
-| **Yellow** | Below target | Restricted — limited new expat visas; existing iqamas renewable only for limited periods; workers may transfer out to Green/Platinum entities without employer consent |
-| **Red** | Well below target | Severe — no new expat visas, no iqama renewals, workers may transfer out freely; government tender access blocked |
+**2026 quick reference:** existing-law Saudi pension contributions remain 9% each for employer and employee. For the new-law cohort they are **9.5% each through 30 June 2026 and 10% each from 1 July 2026**. Ordinary SANED is **0.75% each**, not 1.5% each; occupational hazards is ordinarily **2% employer-only**. First establish each person's law, branch coverage, contribution history and wage base. [GOSI current employer awareness](https://awareness.gosi.gov.sa/businessJourney.html), [existing-law awareness](https://awareness.gosi.gov.sa/journey1.html), [official phased-rate table, PDF p. 4](https://awareness.gosi.gov.sa/pdf/Contributions.pdf).
 
-The Nitaqat program classifies every private-sector establishment into a colour-coded tier based on the percentage of Saudi nationals in its workforce, measured against the published target for its sector and size band. The tier is computed continuously by MHRSD and reviewed in real time on the Qiwa platform.
+Saudi employment remuneration is not subject to an ordinary personal-income-tax/PAYE computation merely because the employee is Saudi or foreign. This does not exempt a person's separate business, non-resident service income or employer tax obligations. Income Tax Law art. 2 concerns the specified business/taxpayer categories; the WHT guide's employee/independent-service distinction must be respected. Use [CIT](sa-corporate-tax.md), [WHT](sa-withholding-tax.md), [Zakat](sa-zakat.md), [VAT](saudi-arabia-vat.md), [e-invoicing](saudi-einvoice.md), [formation](sa-formation.md), [intake](sa-freelance-intake.md) and [return assembly](sa-return-assembly.md) for those separate jobs. [Income Tax Law art. 2](https://zatca.gov.sa/ar/HelpCenter/guidelines/Documents/%D9%86%D8%B8%D8%A7%D9%85%20%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9%20%D8%A7%D9%84%D8%AF%D8%AE%D9%84.pdf); [WHT guide, employment-relationship example](https://zatca.gov.sa/en/HelpCenter/guidelines/Documents/General-Guideline-for-Withholding-Tax-In-accordance-with-the-provisions-of-the-Income-Tax-Law-and-its-Implementing-Regulations.pdf).
 
-- **Sector × size matrix** — Saudization targets range from approximately 5% to 75% depending on the sector (banking, telecom, retail trade, construction, hospitality, professional services etc.) and establishment size band (Giant ≥ 3,000 employees, Big 500–2,999, Medium 50–499, Small 10–49, Tiny 5–9 — verify current size bands on Qiwa). Banking, finance and certain professional sectors carry the highest Saudization targets; construction and unskilled labour carry the lowest. Always verify the current sector quota on the MHRSD/Qiwa portal before relying on a percentage.
+## Ask the client first
 
-### 1.3 WPS (Wage Protection System) filing summary
+Obtain the following records before calculating or classifying. Do not infer missing coverage from a passport alone.
 
-**WPS (Wage Protection System) filing summary**
+| Required input | Evidence and decision it controls |
+|---|---|
+| Employer legal name, CR, unified establishment number, GOSI account, principal/branch accounts and authorised users | Registration reconciliation across GOSI, Qiwa, Mudad and the bank; do not assume each CR is its own Nitaqat entity |
+| Payroll month, join/leave dates, paid/unpaid leave, absences and all changes | Relevant rate period, bill, prorating and filing events |
+| Each worker's Saudi/GCC/other nationality, ID/iqama, date of birth, residency/work-permit and expiry records | Actual compulsory branches, age conditions, GCC extension and immigration calendar |
+| Full GOSI **and civil-pension** contribution history, including withdrawn/compensated periods and current portal cohort/branch classification | Whether there were relevant periods before **3 July 2024**; a recent first entry on this employer's payroll does not prove new-law status |
+| Contract and wage breakdown: basic, cash/in-kind housing, commissions, sales/profit percentages, overtime, bonuses and other allowances | Statutory contribution base, not a blanket “include every fixed allowance” default |
+| Other simultaneous employers and their registered wages | Aggregate cap and any required allocation; do not give each employer a separate unrestricted SAR 45,000 cap |
+| Qiwa entity/activity, workforce averages, counting categories, wages, job codes, current band and dated calculator output | Weighted localization assessment and current thresholds |
+| Sector/occupation decisions, actual duties, professional accreditation and phased effective dates | Separate occupation quota and qualifying-worker tests |
+| Bank/payroll-card details, contractual due date, gross-to-net workpaper, actual transfers, rejected transfers and original bank wage file | Wage compliance and Mudad upload reconciliation |
+| Prior GOSI bills, SADAD receipts, WPS acknowledgements/justifications, notices and exemptions | Arrears, corrections, disputed amounts and special treatment |
 
-| Item | Detail |
-| --- | --- |
-| **Platform** | Mudad (mudad.com.sa) — gateway to MHRSD |
-| **Frequency** | Monthly — file matching actual payroll month |
-| **Content** | Per-employee salary file with IBAN, contractual salary, paid amount, payment date, status (paid in full / partial / unpaid) |
-| **Bank transfer requirement** | All salaries must be paid via Saudi bank transfer to the employee's IBAN — cash payments do not satisfy WPS |
-| **Tolerance** | Salary must be paid in full and on time; partial or late payment is flagged and feeds into Nitaqat tier downgrade and visa freezes |
-| **Deadline** | File submitted before salary disbursement; payment must clear within the contractual pay cycle (typically by end of the calendar month for the preceding month) |
+If cohort, coverage, base or bank reconciliation is missing, return a missing-evidence schedule and conditional estimate; stop final payroll/contribution sign-off. Never create phantom staff, backdate unsupported employment or count a worker whose substantive role fails the localization decision.
 
-## Section 2 — Required inputs & refusal catalogue
+## The method, step by step
 
-### 2.1 Inputs required to run Saudi employer compliance
+### 1. Classify the insured person and the law
 
-**Inputs required to run Saudi employer compliance**
+The **1445H Social Insurance Law, M/273**, is effective **3 July 2024** for new civilian labour-market entrants without previous relevant civil-pension/social-insurance periods. The Royal Decree preserves earlier laws for existing participants, subject to its specified retirement-age/service changes. Those retirement changes do **not** turn all existing participants into the new contribution-rate cohort. Check the actual contribution-history and GOSI classification, including exceptions for previously compensated periods. [M/273 decree, second/fourth clauses](https://beta.gosi.gov.sa/new-system); [current employer awareness, eligible categories](https://awareness.gosi.gov.sa/businessJourney.html).
 
-| Input | Source | Notes |
-| --- | --- | --- |
-| GOSI establishment number | GOSI portal | Required for monthly contribution upload |
-| Commercial Registration (CR) number | Ministry of Commerce | Links GOSI, ZATCA, MHRSD, Qiwa, Mudad |
-| Unified Number (700-series) | National platform | Cross-system identifier |
-| Nationality of each employee | HR / iqama / national ID | Saudi vs GCC vs other expat — drives GOSI branches |
-| National ID (for Saudis) or Iqama number (for expats) | HR | Required on every GOSI and WPS submission |
-| Date of first GOSI registration (Saudis) | GOSI history | Determines whether the post-3-July-2024 reform rate applies |
-| Contractual basic salary + housing allowance per employee | Employment contract | Forms the contributory wage |
-| Other allowances (transport, mobile, etc.) | Employment contract | Generally excluded from GOSI base; verify per contract |
-| Saudi bank IBAN per employee | HR / employee record | Required for WPS — non-Saudi bank IBANs are not accepted |
-| Sector classification (ISIC code) | CR | Drives Nitaqat target percentage |
-| Establishment size band (employee headcount) | Qiwa | Drives Nitaqat target percentage |
-| Current Nitaqat tier | Qiwa | Determines visa and iqama renewal posture |
-| Date of joining and iqama expiry per expat | HR | Drives iqama renewal calendar and Nitaqat impact |
+For an ordinary Saudi private-sector worker, determine pension, occupational-hazards and SANED eligibility separately. New-law pension coverage is in art. 14; new-law SANED art. 43 has its own entry-age/retirement conditions. Do not deduct SANED merely because someone is Saudi if that branch is not applicable. Occupational-hazards coverage ordinarily extends to non-Saudi workers; excluded or specially introduced categories require their own decision. **GCC extension of protection is a separate home-state scheme calculation**, not permission to charge every GCC national Saudi pension/SANED rates. [New law arts. 5-8, 14, 28-29, 43-44](https://beta.gosi.gov.sa/new-system); [old law arts. 4-5, 18-19](https://beta.gosi.gov.sa/social-insurance).
 
-### 2.2 Refusal catalogue — out of scope
+Public-sector civil staff cannot simply be labelled “PPA, outside GOSI”: the new scheme also covers qualifying civilian public entrants. Their pension/occupational-hazard commencement and salary rules need a public-sector workpaper. Military/security, domestic/Musaned, maritime, agricultural, short temporary/seasonal and other special categories are not automatically ordinary private-sector payroll. The new law's art. 6 expressly leaves listed categories to Board/regulatory decisions. Route these with the exact law/coverage decision rather than assuming either universal coverage or universal exemption.
 
-**Refusal catalogue — out of scope**
+### 2. Establish the contributory wage and cap
 
-| Scenario | Action |
-| --- | --- |
-| Domestic workers (drivers, housemaids, nannies) under the Musaned platform | Out of scope — Musaned regime differs; refer to a qualified Saudi labour consultant |
-| Government / public-sector employees (PPA — Public Pension Agency, not GOSI) | Out of scope — GOSI is private sector only; PPA covers civil servants |
-| Military and security forces personnel | Out of scope |
-| End-of-service award (gratuity) computation under Articles 84–88 of the Labour Law | Flag — separate legal computation; refer to Saudi labour counsel for senior or contested cases |
-| Employees on home-country payroll continuation (shadow payroll) | Out of scope — requires bespoke transfer pricing and GOSI carve-out analysis |
-| Employee stock options, RSUs, long-term incentive plans | Out of scope — GOSI treatment and labour law treatment are unsettled; specialist required |
-| Treaty positions and totalization agreements (e.g. with GCC states) | Out of scope — refer to Saudi tax counsel; GCC nationals are treated as Saudis for GOSI purposes by Council of Ministers Resolution but specific cases need verification |
-| Free zone establishments (e.g. Special Integrated Logistics Zone, NEOM) | Flag — some free zones have bespoke labour and social insurance regimes that override the standard GOSI rules |
-| Establishments straddling the pre/post 3-July-2024 GOSI reform with mixed cohorts of Saudi staff | Flag for reviewer — per-employee analysis required to determine the correct annuity rate cohort |
-| Saudization exemptions (small establishments under 5, family-owned enterprises, specific sectors) | Flag — verify each exemption claim against current MHRSD notification |
+For each covered person/month, reconcile contract, actual pay, registered wage and the law-specific base. New-law IR art. 17 and the employer guidance include basic salary and equivalent commissions/sales or profit percentages, cash housing at the agreed value, and in-kind housing valued at **2 months' basic salary annually**, subject to stated exceptions. This is a monthly equivalent of 1/6 of basic when the annual valuation applies; it is not a universal 25% housing default. The monthly maximum is **SAR 45,000**. [New law art. 8](https://beta.gosi.gov.sa/new-system); [new IR art. 17](https://www.uqn.gov.sa/details?p=25240); [current awareness, wage elements](https://awareness.gosi.gov.sa/businessJourney.html).
 
-## Section 3 — GOSI (General Organization for Social Insurance)
+| Wage component | Treatment and evidence required |
+|---|---|
+| Basic salary | Included under the applicable statutory definition |
+| Cash housing | Include the contractual cash amount under the applicable regulation |
+| In-kind housing | New-law annual 2-month valuation above; obtain the old-law registration regulation/accepted valuation for old-law staff instead of silently extending the new formula |
+| Commissions, sales/profit percentages | Basic-equivalent treatment described by current new-law guidance; determine attributable month and applicable old-law rule separately |
+| Transport, mobile, food and other allowances | Analyse their legal character and contract. No blanket inclusion merely because fixed/unconditional; no blanket exclusion of remuneration re-labelled as an allowance |
+| Performance/annual bonus | Character and attribution require the applicable wage regulation; recurrence alone does not decide inclusion |
+| Overtime and end-of-service accrual | Keep separate from ordinary basic/housing working base; any special contractual reclassification needs the actual regulation. End-of-service liability is a separate calculation |
+| Several employers, wage changes, age-related increases, joining/leaving or irregular wage | Apply the relevant registration/contribution rule and portal evidence; do not invent full-month, daily or uncapped treatment |
 
-### 3.1 Statutory basis
+The old law art. 19 defines the base and empowers regulation for added elements; GOSI's contributor FAQ explains the **aggregate** ceiling and proportional allocation across simultaneous employers. New-law IR art. 19 expressly requires the same **SAR 45,000 aggregate ceiling**, allocating each employer's capped base in proportion to its wage divided by combined wages. [New IR art. 19](https://www.uqn.gov.sa/details?p=25240). Preserve the uncapped wage in the workpaper even when the contribution base is capped. Gross pay, contributory wage and net bank transfer are different amounts. [Old law art. 19](https://beta.gosi.gov.sa/social-insurance); [GOSI contributor FAQ, multiple-employer cap](https://www.gosi.gov.sa/GOSIOnline/FAQ_Contributor?locale=ar_SA).
 
-- **Statutory basis** — GOSI operates under the Social Insurance Law (Royal Decree M/33, 1421H, as amended) and is administered by the General Organization for Social Insurance headquartered in Riyadh. The three branches are: 1. Annuity Branch (التأمين ضد المعاشات) — retirement, disability, and survivor benefits. Saudi nationals only. 2. Occupational Hazards Branch (التأمين ضد الأخطار المهنية) — work-injury and occupational disease compensation. All employees, Saudi and expat. 3. SANED Unemployment Insurance (نظام ساند) — added in 2014. Saudi nationals only.  _(Social Insurance Law, Royal Decree M/33, 1421H)_
+For new-law irregular/partial periods, IR art. 18 multiplies daily wage by **30**; piece/profit/sales/output wages use the stated previous-year actual monthly average or the comparable-worker rule for a new entrant, while hourly wages require the Governor's specific controls. IR art. 20 uses wages before deductions and charges the joining/leaving months by **actual service days**; specified leave, permitted unpaid absence and secondment rules also apply. Art. 21 limits late wage corrections subject to the statutory exception. Do not force a full month or an ad hoc bonus average. [New IR arts. 18–21](https://www.uqn.gov.sa/details?p=25240).
 
-### 3.2 Computation order
+### 3. Apply the correct 2026 branch rates
 
-- **Computation order** — For each employee, in order: 1. Determine nationality bucket: Saudi (including GCC nationals treated as Saudis), or expatriate. 2. Determine contributory wage: basic salary + housing allowance, capped at SAR 45,000/month. 3. Determine first-registration cohort (Saudis only): if first GOSI registration is on or after 3 July 2024, flag for verification of phased reform rate; otherwise apply the 9%/9% baseline used in this skill. 4. Compute employer contribution: 12.5% (Saudi) or 2% (expat) of contributory wage. 5. Compute employee deduction: 10.5% (Saudi) or 0% (expat) of contributory wage. 6. Aggregate per establishment: sum all employer contributions + all employee deductions = the GOSI monthly remittance. 7. Cross-check against Mudad/WPS payroll file: GOSI base × headcount should reconcile to WPS contractual salary aggregate (after stripping out the SAR 45,000 cap effect).
+These are ordinary rates **only where every listed branch applies** and no special occupational-hazard increase or separate GCC scheme applies.
 
-### 3.3 Wage base — what's in, what's out
+| Covered worker / contribution period | Pension rate employer / employee | SANED employer / employee | Occupational hazards employer / employee | Derived total employer / employee | Official source |
+|---|---|---|---|---|
+| Existing-law Saudi worker, 2026 | 9% / 9% | 0.75% / 0.75% | 2% / 0% | **11.75% / 9.75% (derived)** | [Old law art. 18](https://beta.gosi.gov.sa/social-insurance); [current SANED](https://awareness.gosi.gov.sa/journey1.html) |
+| New-law Saudi worker, 1 January–30 June 2026 | 9.5% / 9.5% | 0.75% / 0.75% | 2% / 0% | **12.25% / 10.25% (derived)** | [Phase table p. 4](https://awareness.gosi.gov.sa/pdf/Contributions.pdf); [current branches](https://awareness.gosi.gov.sa/businessJourney.html) |
+| New-law Saudi worker, 1 July–31 December 2026 | 10% / 10% | 0.75% / 0.75% | 2% / 0% | **12.75% / 10.75% (derived)** | [Phase table p. 4](https://awareness.gosi.gov.sa/pdf/Contributions.pdf); [current branches](https://awareness.gosi.gov.sa/businessJourney.html) |
+| Ordinary non-Saudi worker covered only for occupational hazards, outside GCC extension | None / none | None / none | 2% / 0% | **2% / 0%** | [Old law arts. 4, 18](https://beta.gosi.gov.sa/social-insurance); [new law arts. 28–29](https://beta.gosi.gov.sa/new-system) |
 
-**Wage base — what's in, what's out**
+Sources: pension existing law art. 18, [old law](https://beta.gosi.gov.sa/social-insurance); new-law decree's phased implementation and [official table, PDF p. 4](https://awareness.gosi.gov.sa/pdf/Contributions.pdf); operational SANED **1.5% total split equally** and hazards rates in [new-law awareness](https://awareness.gosi.gov.sa/businessJourney.html) and [existing-law awareness](https://awareness.gosi.gov.sa/journey1.html). The enabling new-law art. 44 prints a 2% SANED headline and permits variation; do not substitute its unadjusted 1% each or an old FAQ's obsolete SANED text for GOSI's current 0.75% each guidance. The old draft's 1.5% **each** was wrong even though another table in that draft correctly displayed 0.75%.
 
-| Component | In GOSI base? |
-| --- | --- |
-| Basic salary | **YES** |
-| Housing allowance (cash) | **YES** |
-| Housing in kind (employer-provided accommodation) | **YES** — at deemed cash value |
-| Transport allowance | Generally **NO** — verify if it's structured as part of basic |
-| Mobile / communication allowance | Generally **NO** |
-| Food allowance | Generally **NO** |
-| Performance bonus (annual) | Generally **NO** for GOSI base (one-off), but flag if recurrent |
-| Commission (sales) | **YES** if regular and contractual; flag otherwise |
-| End-of-service award accrual | **NO** — separate gratuity regime |
-| Overtime | **NO** — excluded by regulation |
+For historical comparison, new-law pension was 9% each until 30 June 2025 and 9.5% each from 1 July 2025. The published future sequence is 10.5% each from **1 July 2027**, then 11% each from **1 July 2028**. Do not apply either future increase to 2026. [Official phased-rate table](https://awareness.gosi.gov.sa/pdf/Contributions.pdf).
 
-### 3.4 Monthly filing & remittance
+Calculate base × each applicable branch for each worker, using the billing system's required rounding. Aggregate employer liability and employee deductions separately. The employer remits both; employee deductions reduce net pay, whereas employer contributions add to employer cost. Match the generated GOSI bill and investigate every difference rather than adjusting wages to force a match.
 
-**Monthly filing & remittance**
+### 4. Register changes, pay GOSI and retain the evidence
 
-| Step | Where | Deadline |
-| --- | --- | --- |
-| Upload monthly contribution file | GOSI portal (gosi.gov.sa) | By **end of the month following** the contribution month |
-| Pay contribution amount via SADAD | SADAD bill payment via any Saudi bank | Same deadline |
-| Reconcile against WPS-filed salaries | Mudad ↔ GOSI cross-check | Before next month's filing |
+The old law art. 19(5), (8) requires contribution payment and monthly wage schedules **within the first 15 days of the following month**, not the end of that month. The current employer FAQ describes SADAD/bank channels and that same payment period. GOSI's contributor FAQ says new joiners/leavers should be registered/removed by **the end of the joining/leaving month**; it also contains older, differently worded registration answers. Register promptly on the actual date and retain the current account instruction. Do not delay a join/leave action by choosing the more generous FAQ. [Old law art. 19](https://beta.gosi.gov.sa/social-insurance); [employer FAQ, payment](https://www.gosi.gov.sa/GOSIOnline/FAQ_Employer); [contributor FAQ, joiners/leavers](https://www.gosi.gov.sa/GOSIOnline/FAQ_Contributor?locale=ar_SA).
 
-- **Late payment** — GOSI imposes a 2% per month delay penalty on unpaid contributions, calculated from the due date until full settlement.
+The **new-law implementing regulation**, published in the official gazette on **5 July 2024**, resolves the timing directly: art. 24 also requires payment **within the first 15 days of the following month**. Art. 6 requires establishment registration within **10 days** of meeting coverage conditions; new worker, leaver and worker-data changes are notified immediately and no later than the **last day of the relevant month**. Changes to employer activity/legal form/data have a **10-day** maximum. New-law registration timing therefore comes from the regulation, not a guess from a legacy FAQ. [New IR arts. 6, 24](https://www.uqn.gov.sa/details?p=25240).
 
-## Section 4 — Saudization (Nitaqat program)
+Archive worker coverage/cohort evidence, wage changes, calculation, GOSI bill, submitted schedule, SADAD reference and bank settlement. Check arrears separately from the current month. A portal submission is not payment evidence. There is no confirmed universal separate “annual GOSI reconciliation return” in the sources read; reconcile annually as an accounting control and comply with an actual notice if issued.
 
-### 4.1 Statutory basis & administration
+### 5. Assess Nitaqat at the correct entity and period
 
-- **Statutory basis & administration** — The Nitaqat program is administered by the Ministry of Human Resources and Social Development (MHRSD) under the authority of the Saudi Labour Law (Royal Decree M/51, 1426H, as amended) and successive Council of Ministers resolutions. The program is operationalised through the Qiwa platform (qiwa.sa), which displays each establishment's current Saudization percentage, target percentage, tier, and remaining headroom in real time.  _(Saudi Labour Law, Royal Decree M/51, 1426H)_
+The developed Nitaqat manual defines the entity by all branches of the **same economic activity owned by one firm**. It uses workforce averages and the applicable activity coefficients. Its 5 bands are **Red, Low Green, Medium Green, High Green and Platinum**. The old Yellow row and giant/big/medium/small/tiny fixed size-band matrix are not the developed method. The manual expressly replaced fixed size categories with a curve based on worker count. [Decision 182495/manual, definitions and §§3-4](https://www.hrsd.gov.sa/sites/default/files/2023-02/E182495.pdf).
 
-### 4.2 How the tier is calculated
+For the manual's method, the minimum percentage for each green/platinum range is **R = M × ln(O) + W**, where O is the relevant workforce and M/W are the activity/range/year coefficients. Compare the properly calculated localization rate with all 4 thresholds; below Low Green is Red. **Do not reuse an unrelated sector's coefficients or assume a 5–75% universal quota range.** Obtain the current Qiwa calculation and applicable updated manual/coefficients, average periods, exclusions and category weights before determining the actual band. A snapshot headcount fraction is not that complete computation.
 
-- **How the tier is calculated** — For each establishment (identified by CR number, with separate CRs running on separate Nitaqat counters): 1. MHRSD assigns the establishment a sector classification based on the CR's primary economic activity (ISIC code). 2. MHRSD assigns a size band based on the total employee count (Giant ≥ 3,000; Big 500–2,999; Medium 50–499; Small 10–49; Tiny 5–9 — verify current bands). 3. The sector × size band cell has a published target Saudization percentage, ranging from approximately 5% to 75%. 4. Daily computation: MHRSD calculates the establishment's actual Saudization percentage = (Saudi headcount counted under Nitaqat weighting) ÷ (total headcount). 5. Tier assignment: Platinum / High Green / Mid Green / Low Green / Yellow / Red — based on how the actual percentage compares to the target.
-- **Nitaqat weighting nuances** — Not every Saudi employee counts as a full "1" in the Saudization headcount. MHRSD has historically applied weighting multipliers for special categories — for example, part-time Saudi workers under the official part-time contract count as a fraction, Saudi women in roles previously male-dominated may carry a multiplier, and Saudi workers with disabilities carry a higher weight. Conversely, certain expat categories may count differently. Verify current weighting rules on Qiwa before relying on a target.
+Check qualifying wage, full/part-time/flexible/student/trainee status, disability/Mowaamah conditions, concurrent employment and any recognized GCC/special-category treatment. The previous “women in male-dominated roles get a multiplier” statement has not been confirmed as a general current rule. Do not count every Saudi as 1, every disability as 4, or every GCC national on the basis of a general payroll table. [Preceding wage-count decision](https://www.hrsd.gov.sa/sites/default/files/2020-11/61706.pdf); [new prospective decision, p. 1](https://www.hrsd.gov.sa/sites/default/files/2026-11/qrar-wzary-a-tmad-tnzym-ahtsab-alajwr-fy-brnamj-thfyz-almnshat--ly-altwtyn-ntaqat.pdf).
 
-### 4.3 Sector quotas — verify each time
+**Future change, not 2026:** HRSD's decision dated **25 October 2026** approves a new wage-count regulation with stage one **25 April 2027–24 April 2028**, and stage two from **25 April 2028**. Its wage definition refers to documented ministry-platform wages. The prospective table must not be applied early to 2026. Re-open the complete applicable column and category when preparing a 2027/2028 workpaper; this skill does not assert a future generic qualifying-wage number. [Decision clauses 2-4](https://www.hrsd.gov.sa/sites/default/files/2026-11/qrar-wzary-a-tmad-tnzym-ahtsab-alajwr-fy-brnamj-thfyz-almnshat--ly-altwtyn-ntaqat.pdf).
 
-Saudization quotas were tightened across multiple sectors in 2024 and 2025, including but not limited to:
+| Current band | Operational workpaper action |
+|---|---|
+| Platinum / High Green | Preserve current eligibility shown for the requested Qiwa service; status alone does not grant unlimited visas, tender priority or an unconditional right to transfer another firm's worker |
+| Medium Green / Low Green | Compare the specific visa, work-permit renewal and transfer service's eligibility/limits with the dated account result; do not give both an unconditional “full” entitlement |
+| Red | Escalate recruitment, renewal and mobility restrictions shown in the account immediately; a band is not itself proof that every iqama renewal, tender or transfer is legally barred |
 
-- Engineering professions — graduated Saudization of engineers across staged percentage targets
-- Accounting and financial professions — Saudization of accountants, financial analysts, financial managers
-- Dentistry and pharmacy — Saudization of pharmacists, pharmacy assistants, dentists
-- Retail outlets in specified malls and trade categories — sector-specific staged percentages
-- Telecom retail — Saudization of customer-facing telecom staff
-- Real estate brokerage — Saudization of real estate brokers
-- Project management — Saudization of project management roles
-- Customer service — Saudization of customer service centre staff
-- Driving schools, gold and jewellery retail, optical, telecom devices retail, watches retail, car rental, communication, electrical appliances retail — various staged percentages
+The manual has service-by-band tables, but current immigration, worker-mobility and procurement conditions can also apply. Obtain the actual service decision. **Yellow**, blanket free “poaching,” fixed renewal periods, automatic government-tender bans and universal WPS-to-band downgrades from the old draft are not confirmed current entitlements or penalties. Keep their operational topics in the escalation checklist rather than presenting them as law.
 
-> **Always flag:** "Verify the current Saudization target for this sector × establishment size on Qiwa / MHRSD notification before quoting a percentage." Sector quotas change by ministerial decision and the published percentages drift upward each cycle.
-
-### 4.4 Consequences of tier — operational impact
-
-**Consequences of tier — operational impact**
-
-| Tier | New expat visas | Iqama renewals | Worker mobility | Government tender |
-| --- | --- | --- | --- | --- |
-| Platinum | Full | Full + extended periods | Can attract workers from other establishments | Priority |
-| High Green | Full | Full | Standard | Eligible |
-| Mid Green | Standard | Full | Standard | Eligible |
-| Low Green | Reduced | Full but with restrictions | Standard | Eligible |
-| Yellow | Restricted | Limited renewal periods | Workers can leave to Green/Platinum without consent | Restricted |
-| Red | None | Blocked | Workers leave freely | Blocked |
-
-> **Business impact:** A drop from Green to Yellow or Red has substantial commercial impact — projects requiring expat technical staff stall when iqamas cannot be renewed, and government contracts may be cancelled. This is materially more disruptive than a tax penalty.
-
-## Section 5 — Wage Protection System (WPS via Mudad)
-
-### 5.1 Statutory basis
-
-- **Statutory basis** — The Wage Protection System was introduced by MHRSD Resolution to enforce Article 90 of the Saudi Labour Law (timely full-amount payment of wages). It is administered via the Mudad platform (mudad.com.sa), which receives the monthly payroll file from the establishment and reconciles it against actual bank-clearing data drawn from the Saudi banking system.  _(MHRSD Resolution; Saudi Labour Law Article 90)_
-
-### 5.2 What the WPS file contains
-
-For each employee, per month:
-
-- National ID (Saudi) or Iqama number (expat)
-- Full name (Arabic + English)
-- IBAN (Saudi bank account only)
-- Contractual basic salary
-- Contractual housing allowance
-- Contractual other allowances
-- Total contractual salary
-- Amount actually paid
-- Payment date
-- Payment status (paid in full / partial / unpaid / dispute)
-
-### 5.3 WPS compliance feedback loop
-
-- **WPS compliance feedback loop** — Mudad reconciles the submitted file against actual bank-clearing records: 1. Match: salary paid in full and on time → green / compliant. 2. Partial or late payment: flagged → contributes to Nitaqat tier downgrade and triggers MHRSD inspector follow-up. 3. No payment: treated as a labour law violation under Article 90 → fines per employee per occurrence + iqama renewal freeze + Nitaqat consequence.  _(Saudi Labour Law Article 90)_
-
-### 5.4 Cash payments do not satisfy WPS
-
-- **Cash payments do not satisfy WPS** — All salaries must be paid by Saudi bank transfer to the employee's IBAN. Cash payments are not recognised by Mudad and are treated as non-payment for WPS purposes — even if the employee signs a receipt.
-
-## Section 6 — Worked examples
-
-### 6.1 Example: LLC with 10 Saudi + 5 expat employees
-
-**Facts:**
-- Saudi LLC with CR registered for IT consultancy sector
-- Headcount: 10 Saudi nationals + 5 expatriates (total 15)
-- All Saudis: contractual basic SAR 8,000/month + housing allowance SAR 2,000/month = contributory wage SAR 10,000/month
-- All expats: contractual basic SAR 12,000/month + housing allowance SAR 3,000/month = contributory wage SAR 15,000/month
-- None of the contractual wages exceed the SAR 45,000 cap
-
-**GOSI monthly computation**
-
-| Group | Per-employee contributory wage | Employer rate | Employee rate | Per-employee employer | Per-employee employee | Headcount | Employer total | Employee total |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Saudis | SAR 10,000 | 12.5% | 10.5% | SAR 1,250 | SAR 1,050 | 10 | **SAR 12,500** | **SAR 10,500** |
-| Expats | SAR 15,000 | 2% | 0% | SAR 300 | SAR 0 | 5 | **SAR 1,500** | **SAR 0** |
-| **TOTAL** |  |  |  |  |  | **15** | **SAR 14,000** | **SAR 10,500** |
-
-- **GOSI monthly remittance from establishment to GOSI:** SAR 14,000 (employer portion) + SAR 10,500 (employee portion withheld from Saudi salaries) = **SAR 24,500**.
-- **Employer cost of employment per month:** 10 × (SAR 10,000 + SAR 1,250) + 5 × (SAR 15,000 + SAR 300) = SAR 112,500 + SAR 76,500 = **SAR 189,000** (before any other allowances or end-of-service accrual).
-
-**Nitaqat status (IT consultancy, Small size band 10–49):**
-- Saudi headcount 10 ÷ total 15 = **66.7% Saudization**.
-- For IT consultancy at Small band, the target Saudization percentage is typically in the 30–40% range (verify current quota on Qiwa) — at 66.7%, this establishment would likely be Platinum tier.
-- Operational consequence: full ability to hire expats and renew iqamas; priority on government tenders if pursuing public sector work.
-
-**WPS monthly file:**
-- 15 employee lines submitted via Mudad
-- Each line: contractual salary, IBAN, payment date, status
-- Total contractual gross to be paid via Saudi bank transfer: 10 × SAR 10,000 + 5 × SAR 15,000 = **SAR 175,000/month** to be cleared through the banking system by the contractual pay date
-
-### 6.2 Edge case — Saudi employee earning above the SAR 45,000 cap
-
-If a Saudi senior manager earns contractual basic SAR 50,000 + housing SAR 12,000 = contributory wage SAR 62,000/month:
-
-- Capped at SAR 45,000 for GOSI.
-- Employer 12.5% × SAR 45,000 = **SAR 5,625/month**.
-- Employee 10.5% × SAR 45,000 = **SAR 4,725/month**.
-- The SAR 17,000 above the cap (SAR 62,000 − SAR 45,000) is **not subject to GOSI**.
-- However, WPS reports the full contractual SAR 62,000 because WPS verifies the actual contractual salary is paid, not the GOSI base.
-
-## Section 7 — Filing & payment calendar
-
-**Filing & payment calendar**
-
-| Obligation | Frequency | Deadline | Channel |
-| --- | --- | --- | --- |
-| **GOSI monthly contribution upload + payment** | Monthly | End of month following | gosi.gov.sa + SADAD |
-| **WPS payroll file** | Monthly | Before contractual pay date | mudad.com.sa |
-| **Nitaqat tier monitoring** | Continuous | Real-time on Qiwa | qiwa.sa |
-| **Iqama renewal per expat** | Annual (or biennial) | Before iqama expiry | Absher / Qiwa |
-| **End-of-service award accrual** | Continuous; payable on separation | At end of contract | HR / payroll system |
-| **GOSI annual reconciliation** | Annual | As notified by GOSI | gosi.gov.sa |
-
-> **Calendar discipline:** Set monthly reminders for GOSI upload (last working day of month following), WPS submission (5 working days before contractual pay date), and continuous Qiwa monitoring (weekly check on Nitaqat tier headroom).
-
-## Section 8 — Penalties
-
-**Penalties**
-
-| Breach | Penalty |
-| --- | --- |
-| **Late GOSI contribution payment** | **2% per month** delay surcharge on unpaid amount, until full settlement |
-| **Under-reporting GOSI wage base** | Recovery of underpaid contributions + 2%/month surcharge + administrative penalty per Social Insurance Law |
-| **Failure to register an establishment with GOSI** | Per-Royal-Decree-M/33 penalties — administrative fines and back-contribution recovery |
-| **Failure to register an employee with GOSI** | Per-employee fine + back-contribution from date of joining |
-| **WPS non-compliance (late, partial, or unpaid salary)** | Article 90 Labour Law fines per employee per occurrence; iqama renewal freeze; Nitaqat tier downgrade |
-| **Cash salary payment (bypassing WPS)** | Treated as non-payment — WPS does not credit cash; Nitaqat consequences follow |
-| **Nitaqat Yellow tier** | Restricted expat visas; limited iqama renewal periods; workers may transfer to Green/Platinum without employer consent |
-| **Nitaqat Red tier** | No new expat visas; no iqama renewals; workers leave freely; government tender access blocked |
-| **Saudization fraud (fake Saudi headcount — "phantom Saudization")** | Severe — Royal Decree penalties, fines per phantom employee, immediate Nitaqat downgrade, blacklist from government contracts, potential criminal referral |
-
-> **Materiality note:** For most Saudi establishments, the Nitaqat consequences materially exceed the GOSI cash penalties in business impact. A two-tier Nitaqat downgrade can halt an entire engineering or construction project. Treat Saudization compliance as a board-level operational risk, not a back-office administrative item.
-
-## Section 9 — Sources
-
-- **Social Insurance Law**, Royal Decree M/33 of 1421H, as amended — primary legal basis for GOSI.
-- **Saudi Labour Law**, Royal Decree M/51 of 1426H, as amended — primary legal basis for employment relations, including Article 90 (timely payment of wages) and Articles 84–88 (end-of-service award).
-- **Council of Ministers Resolutions** establishing the Nitaqat program and successive sector quota updates — published by MHRSD.
-- **GOSI portal** — gosi.gov.sa — official monthly contribution upload and SADAD payment.
-- **Qiwa platform** — qiwa.sa — Nitaqat tier monitoring and establishment workforce data.
-- **Mudad platform** — mudad.com.sa — WPS file submission gateway to MHRSD.
-- **MHRSD** — hrsd.gov.sa — official Saudization notifications, sector quotas, and labour law guidance.
-- **SANED** — Unemployment Insurance Scheme, established by Council of Ministers Resolution in 2014, administered by GOSI.
-- **Civil Pension and Social Insurance Schemes reform** — phased adjustments to annuity contribution rates for Saudis first registered on or after 3 July 2024; verify current rate per cohort.
-
-> **Verification discipline:** Before completing any Saudi employer compliance task, verify on the official portals (GOSI, Qiwa, Mudad, MHRSD) that the rates, caps, sector quotas, and size bands quoted in this skill have not been superseded by a subsequent notification. Saudi compliance changes frequently and the cost of relying on stale figures is high.
+### 6. Apply occupational localization independently
+
+A compliant Nitaqat band does not excuse a separate occupation quota. For **accounting**, HRSD decision **103108, 26 January 2025**, as described in the March 2026 procedural guide, applies at entity level to the specified accounting occupations. Entities with **5 or more accountants** move from **40% on 27 October 2025** to **50% on 27 October 2026**, then published future stages of 60% on 27 October 2027 and 70% on 27 October 2028. The fifth stage adds entities with **3 or 4 accountants at 30% from 27 October 2029**, while continuing the 5-plus stage. Where earlier or later decisions target an accounting occupation at different localization percentages, apply the **higher applicable percentage** under §3.2. Licensed accounting offices use the separate professional-regulation route stated in that section. [HRSD accounting guide §§3.1-3.7, 6](https://www.hrsd.gov.sa/sites/default/files/2026-03/aldlyl-alajry-y-lqrar-twtyn-mhn-almhasbyt_-almwjwd-balmwq-.pdf).
+
+For this occupational calculation, the guide requires SOCPA professional accreditation and a registered contributory monthly wage of at least **SAR 6,000 for bachelor's/equivalent** or **SAR 4,500 for diploma/equivalent**. An unaccredited accountant or a wage below the applicable threshold is not counted. These figures are **occupation-specific**, not a Saudi-wide minimum wage or a generic Nitaqat wage threshold. Use the guide's complete job-code list and actual duties, not titles selected to avoid the quota. Its example rounds required headcount to the nearest whole number: **23 × 40% = 9.2 → 9**, and **23 × 50% = 11.5 → 12**. [§§3.3-3.6, FAQs](https://www.hrsd.gov.sa/sites/default/files/2026-03/aldlyl-alajry-y-lqrar-twtyn-mhn-almhasbyt_-almwjwd-balmwq-.pdf).
+
+Preserve the other original sector topics as separate decision lookups: **engineering; dentistry; pharmacy/pharmacy assistants; malls and specified retail; telecom/device retail and communications; real-estate brokerage; project management; customer-service/call centres; driving schools; gold/jewellery; optical; watches; car rental; and electrical-appliance retail**. Their current percentage, worker-count trigger, phase date, wage/accreditation, geography and duties have **not been confirmed** in this workpaper. Do not quote one accounting percentage for them, recycle 2024/2025 figures or ask the client to research the law. The preparer must retrieve the relevant latest official decision and resolve it before a hiring/localization sign-off.
+
+### 7. Pay wages and upload the WPS file through Mudad
+
+Use the contractual wage due date. The Ministry's WPS program follows actual wage payment, amount and time; local bank accounts or payroll cards are part of its published process. The old “every worker must have an IBAN” wording was too narrow because the official program also describes payroll cards. Do not treat cash, a promise, an unexecuted batch or a bounced transfer as a successful bank payroll record. [HRSD WPS program, requirements and file specification](https://www.hrsd.gov.sa/knowledge-centre/initiatives/national-transformation-initiatives-bank/108808).
+
+Prepare the payroll gross-to-net reconciliation, make and verify the wage transfers, obtain the **original electronically sealed bank wage file**, then upload it for the correct entity, wage month and type through Mudad. Do not edit a bank-sealed file to improve its apparent compliance. The Ministry says opening/altering the supplied file, mismatched/missing establishment identifiers or non-SAR payment can cause rejection. Fields include basic, housing, other allowances, deductions, **net transferred amount**, employee/account identifiers and transfer status/date. [WPS program](https://www.hrsd.gov.sa/knowledge-centre/initiatives/national-transformation-initiatives-bank/108808); [current upload service, steps/requirements](https://www.hrsd.gov.sa/ministry-services/services/رفع-ملف-حماية-الأجور).
+
+From **1 March 2025**, the permitted WPS upload period is **30 days instead of 60 days**. This is an upload limit, **not a 30-day permission to pay wages late**. The old instruction to upload proof before salary disbursement reverses the bank-file evidence sequence. Mudad processes the file, matches GOSI data, shows compliance and permits explanations sent to the worker for acceptance/rejection. Archive the original file, bank execution evidence, submission acknowledgement, exceptions and worker responses. An uploaded explanation alone does not prove the wage was timely paid or the worker accepted it. [HRSD announcement, 3 February 2025](https://www.hrsd.gov.sa/media-center/news/وزارة-الموارد-البشرية-والتنمية-الاجتماعية-تعلن-عن-تعديل-المدة-المسموحة-لرفع-ملفات-حماية-الأجور-في); [upload service](https://www.hrsd.gov.sa/ministry-services/services/رفع-ملف-حماية-الأجور).
+
+## Worked cases
+
+### A. Original IT-consultancy LLC: 10 Saudi and 5 expatriate staff
+
+Preserve the original Saudi LLC, IT-consultancy registration, **10 Saudi nationals and 5 expatriates**, Saudi basic **SAR 8,000 + SAR 2,000 cash housing**, expatriate basic **SAR 12,000 + SAR 3,000 cash housing**. None exceeds the cap. The original example omitted month and contribution histories, so it cannot prove one unconditional total. Assume a full month, all Saudis eligible for all 3 branches, all 5 expatriates outside GCC extension and covered only for hazards, no other employers, no other earnings/deductions and no special hazard increase.
+
+Saudi total contributory wages are **SAR 100,000**; expatriate wages **SAR 75,000**; gross wages **SAR 175,000**. These facts produce three different lawful cohort/date scenarios:
+
+| Scenario | Saudi employer | Expatriate employer | Total employer | Employee deductions | GOSI remittance | Net wages | Gross plus employer contributions |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| All Saudi staff existing-law, 2026 | 11,750 | 1,500 | **13,250** | **9,750** | **23,000** | **165,250** | **188,250** |
+| All Saudi staff new-law, Jan–Jun 2026 | 12,250 | 1,500 | **13,750** | **10,250** | **24,000** | **164,750** | **188,750** |
+| All Saudi staff new-law, Jul–Dec 2026 | 12,750 | 1,500 | **14,250** | **10,750** | **25,000** | **164,250** | **189,250** |
+
+Amounts are SAR. A mixed-cohort employer must calculate each person instead of selecting a whole-table row. The old **SAR 14,000 employer / SAR 10,500 employee / SAR 24,500 remittance / SAR 189,000 cost** came from 1.5% SANED each and are not the ordinary existing-law result. The bank net is not the SAR 175,000 contractual gross. Report all wage/deduction fields truthfully and reconcile them to the transfer.
+
+```oa-check
+name: Original IT consultancy payroll across the two 2026 new-cohort periods and existing cohort
+inputs:
+  saudi_count: 10
+  saudi_basic: 8000
+  saudi_housing: 2000
+  expat_count: 5
+  expat_basic: 12000
+  expat_housing: 3000
+steps:
+  - saudi_base: saudi_count * (saudi_basic + saudi_housing)
+  - expat_base: expat_count * (expat_basic + expat_housing)
+  - gross: saudi_base + expat_base
+  - existing_employer: saudi_base * 0.1175 + expat_base * 0.02
+  - existing_employee: saudi_base * 0.0975
+  - existing_remittance: existing_employer + existing_employee
+  - existing_net: gross - existing_employee
+  - existing_cost: gross + existing_employer
+  - new_first_half_employer: saudi_base * 0.1225 + expat_base * 0.02
+  - new_first_half_employee: saudi_base * 0.1025
+  - new_second_half_employer: saudi_base * 0.1275 + expat_base * 0.02
+  - new_second_half_employee: saudi_base * 0.1075
+  - new_second_half_remittance: new_second_half_employer + new_second_half_employee
+  - new_second_half_net: gross - new_second_half_employee
+  - new_second_half_cost: gross + new_second_half_employer
+expected:
+  gross: 175000
+  existing_employer: 13250
+  existing_employee: 9750
+  existing_remittance: 23000
+  existing_net: 165250
+  existing_cost: 188250
+  new_first_half_employer: 13750
+  new_first_half_employee: 10250
+  new_second_half_employer: 14250
+  new_second_half_employee: 10750
+  new_second_half_remittance: 25000
+  new_second_half_net: 164250
+  new_second_half_cost: 189250
+```
+
+The raw headcount fraction is **10 ÷ 15 = 66.67%**. It does **not** prove Platinum: current entity/activity, workforce averages, recognized weights, applicable coefficients and independent occupation tests are missing. The old “small size band, IT target typically 30–40%, therefore likely Platinum/tender priority” was unsupported. Obtain the actual Qiwa assessment; preserve 15 correct wage lines and the cohort-dependent gross-to-net bank reconciliation.
+
+### B. Original senior manager above the contribution cap
+
+Preserve basic **SAR 50,000 + cash housing SAR 12,000 = SAR 62,000 monthly gross**. Assume 1 employer, a full month, all 3 Saudi branches applicable and no other deductions. Contribution base is **SAR 45,000**, with **SAR 17,000 above the cap**. Under existing-law rates, employer contributions are **SAR 5,287.50**, employee deductions **SAR 4,387.50**, remittance **SAR 9,675**, net wages **SAR 57,612.50** and employer cost **SAR 67,287.50**. Under new-law July–December 2026 rates, these are **SAR 5,737.50 / SAR 4,837.50 / SAR 10,575 / SAR 57,162.50 / SAR 67,737.50**. The old SAR 5,625/SAR 4,725 rates are not the corrected existing-law result.
+
+```oa-check
+name: Original capped Saudi manager distinguishes gross wage from GOSI base and net transfer
+inputs:
+  basic: 50000
+  cash_housing: 12000
+  monthly_cap: 45000
+steps:
+  - gross: basic + cash_housing
+  - contributory_base: min(gross, monthly_cap)
+  - above_cap: gross - contributory_base
+  - existing_employer: contributory_base * 0.1175
+  - existing_employee: contributory_base * 0.0975
+  - existing_net: gross - existing_employee
+  - new_july_employer: contributory_base * 0.1275
+  - new_july_employee: contributory_base * 0.1075
+  - new_july_remittance: new_july_employer + new_july_employee
+  - new_july_net: gross - new_july_employee
+  - new_july_cost: gross + new_july_employer
+expected:
+  gross: 62000
+  contributory_base: 45000
+  above_cap: 17000
+  existing_employer: 5287.50
+  existing_employee: 4387.50
+  existing_net: 57612.50
+  new_july_employer: 5737.50
+  new_july_employee: 4837.50
+  new_july_remittance: 10575
+  new_july_net: 57162.50
+  new_july_cost: 67737.50
+```
+
+WPS carries basic/housing/gross and deductions accurately, with the **net actually transferred**. It must not instruct the bank to transfer SAR 62,000 while also treating GOSI deductions as already withheld. A second employer changes the cap-allocation workpaper.
+
+## When to refuse or refer
+
+| Original scenario retained | Handoff and minimum evidence before proceeding |
+|---|---|
+| Domestic workers/Musaned | Separate domestic-worker and social-insurance coverage decisions; do not apply this ordinary payroll calculation by analogy |
+| Public-sector/PPA and military/security | Separate civil/military workpaper. PPA-only/private-GOSI-only shorthand is superseded by the new civilian entrant scheme |
+| End-of-service award, Labour Law arts. 84–88 | Separate termination/service/contract calculation, counsel for contested or senior cases; contribution payment does not settle gratuity |
+| Home-country/shadow payroll | Determine real employer, local wage/benefits, immigration and insured coverage; foreign payroll alone is no exemption. Cross-border charging goes to CIT/WHT/TP workpapers |
+| Options, RSUs and long-term incentives | Obtain plan, vesting/settlement and wage regulation; do not declare universally included, exempt or legally unsettled without examining the actual instrument |
+| GCC extension/treaty or social-security coordination | Obtain home-state coverage certificate, applicable extension rules, bases/rates and employer payment instructions; do not use Saudi national totals by default |
+| NEOM, SILZ or another special/free-zone employer | Obtain actual enacted zone/employer coverage exception; a zone name is not evidence that ordinary labour/social-insurance rules are displaced |
+| Mixed old/new-law Saudi workforce | Calculate each worker with history and effective month; mixed status is supported, not a reason to abandon all ordinary calculations |
+| Small/family businesses, fewer than 5 staff, claimed occupation exemption | Retrieve the specific current decision; no universal exemption from GOSI, WPS, Nitaqat or occupation localization follows from small size |
+| Missing cohort/branch, cap allocation, in-kind valuation, retroactive wages or actual bill | Obtain operative regulation/account evidence; conditional estimates only until resolved |
+| Actual wage dispute, sham employment or unexplained bank/GOSI/WPS mismatch | Stop submission and escalate with documents; do not falsify records or treat an unaccepted explanation as settlement |
+
+## Filing calendar, penalties and workpaper sign-off
+
+| Event | Calendar/control |
+|---|---|
+| Joining/leaving or worker-data change | Immediately, no later than relevant month end under new IR art. 6; preserve actual event and account evidence |
+| Old-law monthly contribution/wage schedule | First **15 days of following month**, art. 19; check applicable holiday extension/account notice rather than inventing an end-of-month deadline |
+| New-law monthly contribution | First **15 days of following month**, new IR art. 24; reconcile actual bill and settlement |
+| Wages | Contractual/legal pay date, with executed transfer evidence |
+| WPS upload | Monthly wage file through Mudad, within the current **30-day** upload window; does not extend the wage due date |
+| Nitaqat and occupational quota | Review actual Qiwa assessment before recruitment/renewal/transfer and after relevant workforce changes; accounting stage rises on **27 October 2026** |
+| Iqama/work permit | Each actual expiry and service's conditions; no universal annual/biennial term assumed |
+| Year end/separation | Reconcile wage and contribution control accounts; assess separate gratuity obligations and actual notices |
+
+Old-law art. 19(5) and new-law art. 9(3) impose **2% of unpaid contributions per month or part** after the applicable payment grace period, with regulatory exemption/limit conditions. This is not an instruction to add a flat 2% to every correction irrespective of dates or an approved relief decision. New-law art. 59 provides ordinary violations up to **SAR 50,000**, repeat rules within **3 years**, multiple-worker consequences and a separate sham-registration limb. Inspect the relevant limb and actual notice before computing a fine. The base contribution and employee rights remain separate from fines. [Old law](https://beta.gosi.gov.sa/social-insurance); [new law arts. 9, 59](https://beta.gosi.gov.sa/new-system).
+
+GOSI's current new-law awareness also describes suspension when unpaid contribution periods reach **6 months**, and insolvency/closure-type events, with statutory/reactivation conditions. Do not infer that paying the latest month alone clears all suspended periods. [Current employer awareness, suspension section](https://awareness.gosi.gov.sa/businessJourney.html).
+
+Wage underpayment, late payment, altered bank files, localization non-compliance and sham employment can produce separate enforcement. **Current quantified WPS/localization fines and automatic visa/iqama/tender outcomes have not been confirmed** from an operative current penalty schedule in this workpaper. Do not quote the old blanket Article 90 fine, old Yellow consequences, automatic band downgrade or automatic cash-equals-legal-nonpayment rule as a measured current penalty. Obtain the applicable violation decision, facts, worker count and notice. A lawful cash settlement question and WPS recognition question must both be resolved; do not manufacture bank payment evidence.
+
+Final workpaper: identify month and law/cohort for every worker; show uncapped and capped wages, branch rates, employer/employee amounts, rounding and bill differences; reconcile gross to deductions and executed net transfers; attach Mudad acknowledgements and exceptions; record the actual Qiwa entity/band and each occupational decision; list deadlines, receipts and unresolved items. Until the listed missing evidence is resolved, label the output **conditional**, not ready to file.
+
+## Not confirmed
+
+The old SANED establishment-year/resolution and GOSI-headquarters history; old-law in-kind/irregular remuneration valuations not evidenced by the applicable regulation; client-specific branch coverage/age and multiple-employer allocation; actual Qiwa coefficients, averages, weighting and service entitlements; non-accounting sector decisions listed above; special-zone/GCC/domestic/public-sector exceptions; exact current WPS/localization penalty amounts; universal annual GOSI return and a prescribed retention period. These are work-stopping only for the affected decision: do not replace missing law with a larger charge, an invented exemption or an unverified historical table.
+
+## Sources
+
+Read date: **16 November 2026**. Official Arabic legislation controls; the current awareness material supplies implemented rates where enabling legislation prints a variable headline. A working URL is not accountant verification.
+
+| Source | What was read and used |
+|---|---|
+| [M/273 new Social Insurance Law and decree](https://beta.gosi.gov.sa/new-system) | Read on 2026-11-16. Read for transition/cohort clauses; arts. 5–9, 14–15, 28–29, 43–44 and 59 coverage, cap, payment/penalty framework. The implementing regulation was read separately from the official gazette below |
+| [New-law implementing regulation, official gazette](https://www.uqn.gov.sa/details?p=25240) | Read on 2026-11-16. Read for arts. 6, 17–26: establishment/worker registration, wage elements, multiple employers, partial periods, corrections, payment and relief procedure |
+| [Existing Social Insurance Law](https://beta.gosi.gov.sa/social-insurance) | Read on 2026-11-16. Read for arts. 4–5, 18–20 coverage, ordinary rates, ceiling, payer duty and first-15-days payment rule |
+| [GOSI new-law employer awareness](https://awareness.gosi.gov.sa/businessJourney.html) | Read on 2026-11-16. Read for cohort, wage elements, cash/in-kind housing, current SANED/hazard rates, phased pension and suspension paragraphs |
+| [GOSI existing-law awareness](https://awareness.gosi.gov.sa/journey1.html) | Read on 2026-11-16. Read for existing-law contribution-rate paragraph; retirement coverage is not mistaken for a contribution-rate change |
+| [GOSI contribution-increase bulletin](https://awareness.gosi.gov.sa/pdf/Contributions.pdf) | Read on 2026-11-16. Read for cohort explanation and PDF p. 4 table; visually inspected dates/rates, including 1 July 2026 and future stages |
+| [GOSI contributor FAQ](https://www.gosi.gov.sa/GOSIOnline/FAQ_Contributor?locale=ar_SA) | Read on 2026-11-16. Read for aggregate multiple-employer ceiling and joiner/leaver registration paragraphs; conflicting/stale answers are not silently treated as current rate authority |
+| [GOSI employer FAQ](https://www.gosi.gov.sa/GOSIOnline/FAQ_Employer) | Read on 2026-11-16. Read for SADAD/bank payment and first-15-days period; not a substitute for missing new-law regulation |
+| [HRSD developed Nitaqat decision/manual](https://www.hrsd.gov.sa/sites/default/files/2023-02/E182495.pdf) | Read on 2026-11-16. Read for entity/averages definitions, five bands, size-category replacement, logarithmic threshold method and service-table boundary |
+| [Preceding HRSD wage-count decision](https://www.hrsd.gov.sa/sites/default/files/2020-11/61706.pdf) | Read on 2026-11-16. Read for preceding wage-count categories; no claim that all historical category rules have been revalidated for a particular 2026 account |
+| [HRSD decision dated 25 October 2026](https://www.hrsd.gov.sa/sites/default/files/2026-11/qrar-wzary-a-tmad-tnzym-ahtsab-alajwr-fy-brnamj-thfyz-almnshat--ly-altwtyn-ntaqat.pdf) | Read on 2026-11-16. Read and visually inspected first page for prospective April 2027/April 2028 stages; no premature use of future wage columns |
+| [HRSD accounting-localization procedural guide, March 2026](https://www.hrsd.gov.sa/sites/default/files/2026-03/aldlyl-alajry-y-lqrar-twtyn-mhn-almhasbyt_-almwjwd-balmwq-.pdf) | Read on 2026-11-16. Read for §§3.1–3.7 and FAQs: occupational scope, thresholds, accreditation, rounded examples, phase dates and independent operation alongside Nitaqat |
+| [HRSD WPS program](https://www.hrsd.gov.sa/knowledge-centre/initiatives/national-transformation-initiatives-bank/108808) | Read on 2026-11-16. Read for bank/payroll-card process, file integrity, payroll fields and wage timing. Historical rollout/sanction paragraphs are not promoted to an unverified current fine schedule |
+| [HRSD Mudad upload service](https://www.hrsd.gov.sa/ministry-services/services/رفع-ملف-حماية-الأجور) | Read on 2026-11-16. Read for entity/month/type/upload steps, GOSI matching, explanations/worker response and registration/bank prerequisites |
+| [HRSD 30-day upload announcement](https://www.hrsd.gov.sa/media-center/news/وزارة-الموارد-البشرية-والتنمية-الاجتماعية-تعلن-عن-تعديل-المدة-المسموحة-لرفع-ملفات-حماية-الأجور-في) | Read on 2026-11-16. Read for the 1 March 2025 change from 60 to 30 days; this is not a wage-payment extension |
+| [Income Tax Law](https://zatca.gov.sa/ar/HelpCenter/guidelines/Documents/%D9%86%D8%B8%D8%A7%D9%85%20%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9%20%D8%A7%D9%84%D8%AF%D8%AE%D9%84.pdf) and [ZATCA WHT guide](https://zatca.gov.sa/en/HelpCenter/guidelines/Documents/General-Guideline-for-Withholding-Tax-In-accordance-with-the-provisions-of-the-Income-Tax-Law-and-its-Implementing-Regulations.pdf) | Read on 2026-11-16. Read for taxpayer/business and employment-versus-independent-service boundary; separate tax computations stay in their owning skills |
+
+**Not yet confirmed:** the items listed under Not confirmed, including actual account/worker evidence, older-law valuations, current Qiwa coefficients/weights and non-accounting occupation decisions. These are excluded from unconditional filing guidance.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-07-13. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `sa-gosi-saudization` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/sa-gosi-saudization. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-16. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `sa-gosi-saudization` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/sa-gosi-saudization. If neither is available, confirm every figure against the official source pages cited above before relying on it.

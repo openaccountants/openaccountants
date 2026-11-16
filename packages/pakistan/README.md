@@ -20,19 +20,23 @@
 13. `pk-income-tax.md`
 14. `pk-it-export-tax.md`
 15. `pk-payroll-eobi.md`
-16. `pk-return-assembly.md`
-17. `pk-sales-tax-federal.md`
-18. `pk-sales-tax-services.md`
-19. `pk-tax-optimization.md`
-20. `pk-withholding-tax.md`
-21. `bookkeeping-workflow-base.md`
-22. `einvoice-workflow-base.md`
-23. `payroll-workflow-base.md`
-24. `company-formation-workflow-base.md`
-25. `financial-statements-workflow-base.md`
-26. `crypto-tax-workflow-base.md`
-27. `workflow-base.md`
-28. `income-tax-workflow-base.md`
+16. `pk-payroll.md`
+17. `pk-provincial-sales-tax-services.md`
+18. `pk-return-assembly.md`
+19. `pk-sales-tax-federal.md`
+20. `pk-sales-tax-services.md`
+21. `pk-social-contributions.md`
+22. `pk-tax-optimization.md`
+23. `pk-withholding-tax.md`
+24. `bookkeeping-workflow-base.md`
+25. `einvoice-workflow-base.md`
+26. `payroll-workflow-base.md`
+27. `company-formation-workflow-base.md`
+28. `financial-statements-workflow-base.md`
+29. `crypto-tax-workflow-base.md`
+30. `workflow-base.md`
+31. `income-tax-workflow-base.md`
+32. `social-contributions-workflow-base.md`
 
 ## How to use
 
