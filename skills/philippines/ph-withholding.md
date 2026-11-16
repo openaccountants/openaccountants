@@ -12,7 +12,7 @@ description: >
   reconciling Form 2307. Penalties require taxpayer-size and offence classification;
   nonresident payments, treaties, payroll and specialised transactions need their
   separate rules before a final filing position.
-version: 1.1
+version: 1.2
 jurisdiction: PH
 tax_year: 2026
 last_updated: 2026-11-16
@@ -27,7 +27,7 @@ type: computation
 
 # Philippines Withholding Tax
 
-2026 rules checked on 2026-11-16; version 1.1. Not yet approved; computations are estimates until the responsible professional confirms the facts and filing treatment.
+2026 rules checked on 2026-11-16; version 1.2. Not yet approved; computations are estimates until the responsible professional confirms the facts and filing treatment.
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
 

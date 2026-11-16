@@ -18,13 +18,13 @@ last_updated: 2026-11-16
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
-version: 1.1
+version: 1.2
 type: situation-rules
 ---
 
 # Philippines Tax Overview
 
-2026 rules checked on 2026-11-16; version 1.1. Not yet approved, pending Philippine professional review. Monetary amounts below are Philippine pesos (PHP).
+2026 rules checked on 2026-11-16; version 1.2. Not yet approved, pending Philippine professional review. Monetary amounts below are Philippine pesos (PHP).
 
 ## Scope
 
