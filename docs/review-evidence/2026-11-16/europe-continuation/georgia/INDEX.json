@@ -1,0 +1,136 @@
+{
+  "archive": "evidence.tar.gz",
+  "archive_sha256": "ec0daeafad31914ebbc23190682b6ec6a72487f4bddcd4d152bf8ea2c0e1ecd4",
+  "members": [
+    {
+      "path": "writer/LEDGER.md",
+      "sha256": "b1235fdac40d7f932cc5bfd73595f58f0503a78920022e2efec9025c08dde1aa",
+      "bytes": 39367
+    },
+    {
+      "path": "writer/NO-LOSS-MAP.md",
+      "sha256": "5c73ae01b52e6ae66c3927a2a83aa90f87f85d4fdc682c61c3499ecf68a73408",
+      "bytes": 7444
+    },
+    {
+      "path": "writer/REPORT.md",
+      "sha256": "674985a875ebd2d2e9abbdd25b84f9b08f6ae6e2e311e26b7908b060bfa79461",
+      "bytes": 9353
+    },
+    {
+      "path": "writer/STATUS.json",
+      "sha256": "04f2d14d8c618c69b0cad7d7765016ba401526af701e020907e18b900246c22c",
+      "bytes": 2262
+    },
+    {
+      "path": "writer/actual-head-sync.txt",
+      "sha256": "016d2bdee9b6f9cba339da255e44a5ce8cb26915b652c690636d5844bb56dac9",
+      "bytes": 81
+    },
+    {
+      "path": "writer/actual-head-validation.txt",
+      "sha256": "c77cb1eba6cecc38872b47ba037dfa18dee700ab350232108f982f1b8995deaa",
+      "bytes": 192
+    },
+    {
+      "path": "writer/examples.txt",
+      "sha256": "3d0a434ede8a8a4057968a32434802529c9694afb5deb004ea3001dfb53c87ca",
+      "bytes": 58
+    },
+    {
+      "path": "writer/ledger-quote-issues.json",
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "bytes": 2
+    },
+    {
+      "path": "writer/ownership-check-corrections.json",
+      "sha256": "1b29ff7e563a5afd9769756ee064026ed5f4e2bde759f6bc4c87105db8cf37d4",
+      "bytes": 35014
+    },
+    {
+      "path": "writer/ownership-check.json",
+      "sha256": "644dbef1e90ac5c07986452c2449185ad448ab23a4da1f413df275e29e164e51",
+      "bytes": 33554
+    },
+    {
+      "path": "writer/pr-body.md",
+      "sha256": "7b7185a76556bf5571cab58ceb7c2fcf651f26c77cc9a29acbfc252abdf334c7",
+      "bytes": 3076
+    },
+    {
+      "path": "writer/pr-title.txt",
+      "sha256": "07d27e231a0a95a2ec655ef07004ab50325618d2cb16d105409e5db87c38ae29",
+      "bytes": 61
+    },
+    {
+      "path": "writer/retrieval.json",
+      "sha256": "93910f7f797de4637757ad7bcbad368ac18ef061cc174ff95d920243022df07f",
+      "bytes": 1586
+    },
+    {
+      "path": "writer/row-sources.txt",
+      "sha256": "d1a4ae31ffaaa96870cbeb3fb41731aaafdfa5d42fdd9894497b3215f5ffa268",
+      "bytes": 463
+    },
+    {
+      "path": "writer/scoped-validator-corrections.txt",
+      "sha256": "5524e121d9091b90abeb4d131ef77a46248b8591bd02e0f654d4c3c2b35d11e8",
+      "bytes": 80
+    },
+    {
+      "path": "writer/scoped-validator.txt",
+      "sha256": "5524e121d9091b90abeb4d131ef77a46248b8591bd02e0f654d4c3c2b35d11e8",
+      "bytes": 80
+    },
+    {
+      "path": "writer/skill-checks-corrections.txt",
+      "sha256": "4b0b70fc199ff6bbbc5e2949f197d9262e51fe2a94728860626f08a3e8c51c73",
+      "bytes": 1323
+    },
+    {
+      "path": "writer/skill-checks-final-status-rule.txt",
+      "sha256": "742452397cd433efbe95e0db562699820312a48adf95dfec0d033229eb7d2f71",
+      "bytes": 668
+    },
+    {
+      "path": "writer/skill-checks.txt",
+      "sha256": "4b0b70fc199ff6bbbc5e2949f197d9262e51fe2a94728860626f08a3e8c51c73",
+      "bytes": 1323
+    },
+    {
+      "path": "writer/source-manifest.json",
+      "sha256": "1ed59177a240fe2a6e2d835c5fd5f5d5b68d9f61167d5cf3baf089bfb22739d9",
+      "bytes": 9075
+    },
+    {
+      "path": "writer/writer-checkpoint.json",
+      "sha256": "89e292d9f9786e8f594d166bada4f743408bdb3741cbf42a8c6a5d2ca3a74f52",
+      "bytes": 885
+    },
+    {
+      "path": "independent-review/RECEIPT.json",
+      "sha256": "085315edbcbff862b268ae90b1953f631574746c31f6aebf4f863af6aca33ac1",
+      "bytes": 1748
+    },
+    {
+      "path": "independent-review/REPORT.md",
+      "sha256": "523e2ee9aa4dfc8c04d7f972995adce97ff2326b6b6472edcd4ce2fd498705c1",
+      "bytes": 6968
+    },
+    {
+      "path": "independent-review/row-results.json",
+      "sha256": "575d994af88407b6ffe862d07458c51d16cc7f91718459de0f24c1024127b4c6",
+      "bytes": 39081
+    },
+    {
+      "path": "validation/shared-tests.txt",
+      "sha256": "c54d9553ff84698b5faa931658d7df01424d158f3cee0a8afe99724e6f87da5f",
+      "bytes": 346
+    },
+    {
+      "path": "validation/shared-test-applicability.json",
+      "sha256": "50b60c40ce8a368ab0217f62c9bfe3a8870a3f8c861d2d59cb2b8d1ae1e6eca3",
+      "bytes": 589
+    }
+  ]
+}
