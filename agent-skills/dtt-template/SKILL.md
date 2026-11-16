@@ -1,177 +1,219 @@
 ---
 name: dtt-template
-description: "Reusable template for OpenAccountants bilateral Double Tax Treaty (DTT) summary skills. NOT a jurisdiction-specific guide — copy this template, replace placeholders, set a real last_updated and tax_year, and add this file's content to a new corridor path (e.g. skills/cross-border/treaty-corridors/ eg-sa/dtt-summary.md). Trigger on \"DTT template\", \"treaty corridor template\", \"create new DTT skill\", \"add new treaty corridor\". This template file is intentionally kept in the treaty-corridors directory (jurisdiction-optional) so that list_skills can find it for template-creation workflows."
+description: "Reusable research and authoring template for bilateral Double Tax Treaty summaries. Trigger on \"DTT template\", \"treaty corridor template\", \"create new DTT skill\" or \"add new treaty corridor\". No placeholder is a tax rule or rate. Copy into a distinct corridor path, replace every placeholder with sourced findings, and apply the tax-skill standard before using the resulting summary."
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/dtt-template"
   jurisdiction: "GLOBAL"
-  tax_year: "2025"
-  last_updated: "2026-07-12"
+  tax_year: "2026"
+  last_updated: "2026-11-16"
 ---
 
-# [Country A] ↔ [Country B] Double Tax Treaty (DTT) Summary
+# [Country A] ↔ [Country B] Double Tax Treaty (DTT) summary template
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
-## Quick Reference
+## Scope
 
-| Field | Value |
-|-------|-------|
-| Treaty Name | Agreement between [Country A] and [Country B] for the Avoidance of Double Taxation and the Prevention of Fiscal Evasion with Respect to Taxes on Income |
-| Signed | [date] |
-| In Force | [date] |
-| Current Version | [original / amended / new] |
-| MLI Status | [ratified / signed / not party] |
-| Jurisdictions Covered | [Country A (code), Country B (code)] |
-| Last Verified | [month year] |
-| Key Note | [one-line summary of most important feature] |
+Use this skill to prepare a new bilateral treaty research file. It remains discoverable
+in the treaty-corridors directory for template-creation workflows; it is not a completed
+corridor summary. The template supplies an intake, a topic inventory and a publication
+gate. It supplies no bilateral tax entitlement, rate, filing deadline or computation.
 
----
+Copy it to the actual corridor, for example
+`skills/global/cross-border/treaty-corridors/eg-sa/dtt-summary.md`. Set a distinct name,
+description and jurisdiction pair, actual period, update date and numeric version.
+Choose the resulting skill's shape for its real job. A populated tax summary must meet
+the applicable tax-skill headings, sources and recomputing-example requirements;
+retaining this template's `router` label cannot excuse missing calculations.
 
-## Withholding Tax Rate Summary
+## Ask the client first
 
-| Income Type | Treaty Rate | Treaty Article | Domestic Rate (Source) | Notes |
-|-------------|------------|----------------|------------------------|-------|
-| Dividends — portfolio | [%] | Art [X] | [%] | [threshold notes] |
-| Dividends — substantial (≥[%] holding) | [%] | Art [X] | [%] | [holding period / threshold] |
-| Interest | [%] | Art [X] | [%] | [exceptions] |
-| Royalties | [%] | Art [X] | [%] | [categories if split] |
-| Technical services | [%] | Art [X] | [%] | [if separate article or under business profits] |
-| Capital gains — immovable property | [%] | Art [X] | [%] | Source state may tax |
-| Capital gains — shares | [%] | Art [X] | [%] | [exemption conditions] |
-| Pensions | [%] | Art [X] | [%] | [residence-state only / source-state] |
-| Directors' fees | [%] | Art [X] | [%] | Source state may tax |
+- Which source and residence jurisdictions, covered territory and tax are involved?
+- Who is the recipient, payer and beneficial owner, where relevant? Obtain entity or
+  individual status, residence evidence, fiscal transparency and ownership facts.
+- What is the payment or gain, its gross/net currency amount, contract and relevant
+  payment, credit, transaction and tax-period dates? Identify any gross-up provision.
+- Which domestic liability, exemption, source rule, permanent establishment (PE),
+  fixed base or other connection needs treaty analysis? Obtain the relevant facts.
+- Is relief sought at source, by refund, in the residence return or through a dispute
+  process? What documents, prior filings, notifications and decisions already exist?
 
----
+Do not ask again for facts already evidenced in the file. Record genuinely missing
+inputs and the conclusions they prevent. Leave the outcome conditional until resolved.
 
-## Article-by-Article Summary
+## The method, step by step
 
-### Article 4: Resident — Tie-Breaker Rules
+### Establish the actual instruments and dates
 
-[Summary of residency tie-breaker for dual residents: permanent home → centre of vital interests → habitual abode → nationality → mutual agreement]
+Retrieve the official bilateral text, protocols and any replacement or termination
+instrument. Record authentic languages, signature, entry into force and effective
+application separately, for each relevant tax and direction. Inspect taxes/persons
+covered, territorial definitions and saving, transition and termination provisions.
+Keep an official source URL and pinpoint beside every populated finding. Do not treat
+the agreement's title or signing announcement as proof of an effective benefit.
 
-### Article 5: Permanent Establishment
+For possible BEPS MLI modifications, check both parties' coverage, positions,
+reservations, choices, notifications and applicable effect dates. Signature alone is
+insufficient; dates may differ by tax and direction. Use the [OECD step-by-step tool](https://www.oecd.org/tax/treaties/step-by-step-tool-on-the-application-of-the-MLI.pdf)
+with the [MLI text](https://legalinstruments.oecd.org/public/doc/358/body-text.en.html),
+including Articles 2, 28 and 34–35. Resolve compatibility and subsequent changes.
+The [matching database](https://www.oecd.org/en/data/tools/beps-mli-matching-database.html)
+helps locate the pair's positions; no pair was tested for this template.
 
-[Summary of PE definition: fixed place, 6-month construction, service PE, dependent agent, anti-fragmentation (MLI)]
+Populate this identification sheet, replacing the bracketed prompts:
 
-### Article 6: Income from Immovable Property
+| Field | Required entry and evidence |
+|---|---|
+| Treaty name | [Exact official agreement title and official text URL] |
+| Signed | [Signature date; signing source] |
+| In force | [Entry-into-force date; official notification] |
+| Effective application | [Tax, direction and relevant payment/period trigger; article and dates] |
+| Current version | [Original, each effective protocol, replacement, termination and transition] |
+| MLI status | [Each party's status; pair coverage, operative matches and effective dates] |
+| Jurisdictions covered | [Country A and Country B codes; treaty territorial scope] |
+| Last verified | [Actual date sources were opened and operative text read] |
+| Key note | [Most material evidenced feature and its conditions] |
 
-[Summary: source state may tax income from immovable property situated therein]
+### Populate the income and withholding register
 
-### Article 7: Business Profits
+For each row record: domestic charge/exemption and official source; treaty provision
+and official source; taxpayer, income and beneficial-ownership conditions where
+applicable; amount/base/cap; holding and timing requirements; PE/fixed-base connection;
+anti-abuse eligibility; collection/refund procedure. Distinguish a gross withholding
+cap from net-basis assessment, exclusive allocation, credit or exemption. Do not turn
+permission to tax a gain into an invented withholding percentage. Leave an absent
+article marked absent and analyse the relevant alternative rather than inventing it.
 
-[Summary: profits taxable only in residence state unless PE in source state; profit attribution rules]
+| Income category to investigate | Required treaty-specific distinctions |
+|---|---|
+| Portfolio dividends | [Rate or allocation, recipient and beneficial-owner conditions] |
+| Substantial-holding dividends | [Holding percentage/type, holding period, qualifying recipient and rate] |
+| Interest | [Definition, caps, government or other exemptions, excess/connected interest] |
+| Royalties | [Definition and category splits, cap and exemptions; whether technical assistance is included] |
+| Technical services | [Separate provision if present; otherwise evidenced classification and allocation] |
+| Immovable-property capital gains | [Taxing rights, property definition and domestic assessment] |
+| Share capital gains | [Property-rich/substantial holdings or other distinctions and relevant testing period] |
+| Pensions | [Private/public or other categories; allocation, conditions and collection] |
+| Directors' fees | [Covered recipient/capacity, allocation and domestic collection] |
 
-### Article 8: Shipping and Air Transport
+This is an empty research register, not a rate table. Insert only actual verified
+figures with tax year, complete conditions and official URL per numeric row. Keep
+domestic and treaty findings separate; do not select a rate until eligibility and
+procedure have been established. Gross-up calculations require the actual contract.
 
-[Summary: taxable only in state of effective management]
+### Complete the article-by-article inventory
 
-### Article 9: Associated Enterprises
+The labels below preserve the original template's topic prompts. They are navigation
+labels, not an assertion that a particular treaty uses these article numbers or rules.
+Replace them with the actual numbering. Record absent provisions and cross-references.
+For each topic, set out the complete conditions, exceptions and result for each state.
 
-[Summary: arm's length principle, transfer pricing adjustments, corresponding adjustment]
+| Original topic label | Research entry required from the actual instruments |
+|---|---|
+| Article 4: resident and tie-breakers | [Definition, exclusions and relief eligibility; individual permanent home, centre of vital interests, habitual abode, nationality and mutual-agreement tests only where applicable; separate non-individual rule] |
+| Article 5: permanent establishment | [Fixed-place and exclusions, construction/installation and service tests if present, agent/independent-agent rules, related-party/anti-fragmentation and contract-splitting modifications] |
+| Article 6: immovable-property income | [Property, situs, permitted taxing rights, income covered and exceptions] |
+| Article 7: business profits | [Allocation, PE dependence where relevant, attribution and exceptions/cross-references] |
+| Article 8: shipping and air transport | [Activities and international-traffic definition, allocation criterion and exceptions; do not prefill effective management] |
+| Article 9: associated enterprises | [Arm's-length adjustment, corresponding relief and applicable procedural limits] |
+| Article 10: dividends | [All rates, shareholding/holding-period tests, beneficial ownership and government/other exemptions] |
+| Article 11: interest | [Definition, rates, exemptions, connected payments and special relationships] |
+| Article 12: royalties | [Definitions, category rates, technical-assistance treatment and exemptions if present] |
+| Article 13: capital gains | [Immovable property, PE assets, ships/aircraft, relevant shares and residual property, including exceptions] |
+| Article 14: independent personal services | [Whether article exists; fixed-base/day tests, period and attribution if present; alternative article if absent] |
+| Article 15: employment | [Workplace allocation and every exception condition, employer/remuneration-borne tests and period/day counting] |
+| Article 16: directors' fees | [Company residence, recipient capacity, allocation and covered remuneration] |
+| Article 17: artistes and sportspersons | [Personal activities, diverted income and public-funding/other exceptions] |
+| Article 18: pensions | [Actual categories, allocation and exceptions] |
+| Article 19: government service | [Salary versus pension, paying state, services/residence/nationality and business exceptions] |
+| Article 20: students and trainees | [Eligible persons, visits, payment source, purpose, duration and exemptions] |
+| Article 21: other income | [Residual scope, allocation, PE/fixed-base connection and any source-state rule] |
+| Article 23: double-tax relief | [Credit/exemption method in each state, base/limits, progression, subject-to-tax or other conditions and domestic claim procedure] |
 
-### Article 10: Dividends
+Read the rest of the actual treaty as well. This inventory is not permission to omit
+other taxes, nondiscrimination, exchange of information, assistance, entitlement or
+administrative/final provisions that affect the question. A model convention is a
+research aid, not the selected bilateral instrument.
 
-[Summary of rates, thresholds, beneficial ownership requirement, government exemption]
+### Research residency certificates and collection procedures
 
-### Article 11: Interest
+Fill separate Country A and Country B entries for issuing authority, acceptable
+format (original/electronic/copy), certificate period and facts certified, language,
+translation, authentication or apostille/legalisation **if required**, submission
+recipient, relief-at-source or pay-and-refund route, forms, deadlines and evidence.
+Record how domestic rules and the treaty interact, plus official URLs/read dates.
+Do not assume a certificate by itself establishes every condition of entitlement.
 
-[Summary of rates, government exemption, definition of interest]
+Retain an Egypt-specific research field only for a corridor involving Egypt:
+verify the relevance, current status and actual conditions of Ministerial Decree
+771/2009 and any later procedures before stating a pay-and-refund rule. Record any
+claimed controversy with its authority and unresolved effect. Obtain the real
+[Country B] procedure separately; do not copy Egypt's process into it.
 
-### Article 12: Royalties
+### Research MAP, arbitration and anti-abuse
 
-[Summary of rates, government exemption, definition of royalties including technical assistance]
+Complete a Country A / Country B matrix for competent authority, official contact
+and submission channel, deadline and trigger, eligibility, required documents,
+domestic-remedy interaction and arbitration availability/conditions. Keep the Egypt
+contact prompt "Egyptian Tax Authority (ETA), Conflict Resolution Department,
+Ministry of Finance" as **unconfirmed** until checked in the relevant current official
+procedure. Likewise verify any proposed Ministry of Finance, ZATCA or MoF contact.
 
-### Article 13: Capital Gains
+MLI Article 16 has compatibility and reservation rules; arbitration under Article 18
+needs both parties' election and further conditions. Do not promise acceptance or a
+successful agreement. For treaty shopping, obtain the actual PPT/LOB text and effective
+application, including any MLI Article 7 modifications. Evaluate all conditions,
+exceptions and available competent-authority relief; do not infer entitlement from
+residence or a reduced rate alone. [MLI primary text](https://legalinstruments.oecd.org/public/doc/358/body-text.en.html).
 
-[Summary: immovable property → source state; business assets of PE → source state; ships/aircraft → management state; shares → [source/residence state]; other property → residence state only]
+### Link the domestic skills and hand off
 
-### Article 14: Independent Personal Services
+Preserve the upstream slots `[countryA]-corporate-tax`, `[countryA]-withholding-tax`
+and `[countryB]-corporate-tax`. Resolve each to an existing relevant skill and record
+its actual scope/period; add a missing-coverage note if no matching skill exists.
+Carry domestic CIT interaction, domestic withholding and treaty refund mechanics
+into the handoff. A cross-reference does not independently validate its contents.
 
-[Summary: residence state only, unless fixed base or 183-day threshold in source state]
+The resulting corridor file must include a source register, every old-topic
+destination for a rewrite, calculations appropriate to its shape, unresolved items
+and independent source review. Leave professional sign-off pending until actually
+obtained. Check dates and version against main immediately before publication.
 
-### Article 15: Dependent Personal Services (Employment)
+## Authoring route checks
 
-[Summary: residence state only, unless 183-day test fails in source state]
+These are qualitative authoring checks, with no invented tax amount or rate.
 
-### Article 16: Directors' Fees
+- **Blank rate slot:** the author has a portfolio-dividend placeholder and a real
+  domestic rate but has not retrieved the bilateral text. Keep the treaty field
+  unresolved, identify the missing authority and hand off for retrieval. Do not
+  publish the domestic rate as the treaty cap or treat the placeholder as zero.
+- **Both countries signed the MLI:** the proposed summary merely records signatures.
+  Return to the instrument/date gate; obtain force, pair coverage, positions and
+  effect evidence before using any claimed modification. Leave the bilateral
+  analysis conditional; a signed instrument is not a completed matching analysis.
 
-[Summary: source state may tax]
+## When to refuse or refer
 
-### Article 17: Artistes and Sportspersons
-
-[Summary: source state may tax]
-
-### Article 18: Pensions
-
-[Summary: [residence state only / source state may tax]]
-
-### Article 19: Government Service
-
-[Summary: government salaries taxed only by paying government; pensions from government service]
-
-### Article 20: Students and Trainees
-
-[Summary: exemptions for maintenance/education payments]
-
-### Article 21: Other Income
-
-[Summary: residence state only, unless effectively connected to PE/fixed base]
-
-### Article 23: Methods for Elimination of Double Taxation
-
-[Summary: [credit method / exemption method]; [any limitations]]
-
----
-
-## Tax Residency Certificate (TRC) Requirements
-
-- **Format:** Original TRC from the resident's tax authority
-- **Authentication:** [Apostille / legalisation] required for cross-border use
-- **Validity:** Typically 1 year from date of issue (Egypt: [date-specific rules])
-- **Egypt process:** Non-resident recipient must present TRC to claim treaty benefits; Egypt applies pay-and-refund mechanism under Ministerial Decree 771/2009 (controversial — see pitfalls)
-- **[Country B] process:** [Country B-specific TRC requirements and process]
-
----
-
-## Mutual Agreement Procedure (MAP)
-
-| Field | Country A | Country B |
-|-------|----------|----------|
-| Competent Authority | [Ministry of Finance / ETA Conflict Resolution] | [Ministry of Finance / ZATCA / MoF] |
-| Time Limit | [3 years from first notification] | [same / different] |
-| Arbitration | [available / not included] | |
-
-### MAP Contact Points
-
-- **Egypt:** Egyptian Tax Authority (ETA) — Conflict Resolution Department, Ministry of Finance
-- **[Country B]:** [Competent authority name, ministry]
-
----
-
-## Anti-Treaty-Shopping / PPT (Principal Purpose Test)
-
-[Summary of PPT or LOB provisions; MLI Article 7 status; when benefits may be denied]
-
----
-
-## Cross-References to Upstream Skills
-
-- **[countryA]-corporate-tax** — [how domestic CIT interacts with treaty]
-- **[countryA]-withholding-tax** — [domestic WHT rates and DTT refund mechanism]
-- **[countryB]-corporate-tax** — [how domestic tax system applies treaty benefits]
-
----
+Stop an unsupported entitlement, rate selection, filing or payment instruction
+when the applicable instrument, period, condition or procedure is unresolved. Keep
+unaffected evidenced research, list the missing dependency and obtain source or
+qualified professional review. Refer disputed residence, beneficial ownership,
+PPT/LOB, PE attribution, competing authentic texts, refund eligibility and MAP or
+arbitration strategy. Do not generate a residency certificate, invent a contact,
+submit a claim or manufacture a review decision from this template.
 
 ## Sources
 
-- [Source 1: official treaty text URL]
-- [Source 2: PwC / Deloitte / EY tax summaries]
-- [Source 3: OECD Treaties Database]
+| Source | Read for | Read date and boundary |
+|---|---|---|
+| [OECD MLI official text](https://legalinstruments.oecd.org/public/doc/358/body-text.en.html) | Articles 1–2; 7(1)–(7); 16 including compatibility/reservations; 18; 28(1)–(3); 30; 34–36 including effect-date exceptions | 2026-11-16. General modification gates only; no bilateral match, current party position, rate or national procedure reviewed here. |
+| [OECD applying the MLI step by step](https://www.oecd.org/tax/treaties/step-by-step-tool-on-the-application-of-the-MLI.pdf) | Both pages: force, covered agreement, reservations/choices, notifications/compatibility and effect, including exception warnings | 2026-11-16. Secretariat tool dated June 2017, used with the primary text and actual current positions when populating a corridor. |
+| [OECD MLI matching database landing page](https://www.oecd.org/en/data/tools/beps-mli-matching-database.html) | About section: matching outcomes, positions and historical-data function; linked manual/database identified | 2026-11-16. Landing page read; no database match or manual asserted read. |
 
-**Last verified:** [month year]
+Not yet confirmed: every bracketed bilateral field and all actual treaty/domestic rates, periods, thresholds, entitlements, collection procedures and contacts remain unpopulated. The original template's 6-month construction prompt, 183-day independent/employment prompts, "typically 1 year" TRC validity and suggested 3-year MAP deadline are not established for an unspecified treaty; obtain the actual rule and all conditions instead. Its presumed effective-management shipping allocation, default individual/entity tie-breakers, technical-assistance royalty definition, capital-gains/pensions/government/student/other-income allocations and universal original-TRC/authentication requirements likewise are prompts requiring actual bilateral/national verification. Egypt Decree 771/2009, Egypt pay-and-refund/controversy and the named Egypt/other contact suggestions have not been researched for a real corridor here and are not usable instructions. Commercial summaries may help discovery but do not replace the missing official instruments. No claim that a particular OECD Model edition automatically applies to a bilateral treaty is made.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-07-12. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `dtt-template` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/dtt-template. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-16. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `dtt-template` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/dtt-template. If neither is available, confirm every figure against the official source pages cited above before relying on it.

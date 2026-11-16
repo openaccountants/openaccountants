@@ -1,224 +1,249 @@
 ---
 name: in-tax-residency
-description: "India tax residency: resident, non-resident, RNOR (Resident but Not Ordinarily Resident) status, 182-day and 120-day tests, RNOR foreign income exemption. Trigger on: \"India tax resident\", \"RNOR India\", \"resident not ordinarily resident\", \"India 182 days rule\", \"India NRI tax\", \"NRI returning India taxes\", \"India 120-day rule\", \"India foreign income exempt RNOR\", \"move to India taxes\"."
-version: 1.0
+description: "India individual tax residence: resident, non-resident and resident but not ordinarily resident (RNOR); employment departures, visits, deemed residence, scope of foreign income, return schedules and treaty paperwork. Covers Tax Year 2026-27 under the Income-tax Act, 2025 and the separately labelled 2025-2026 filing cycle under the 1961 Act. Trigger on India 182-day rule, 120-day rule, NRI returning to India, foreign income and RNOR."
+version: 1.1
 jurisdiction: IN
 tax_year: 2026
-last_updated: 2026-10-16
+last_updated: 2026-11-14
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: cross-border
+type: situation-rules
 ---
 
-# India tax residency for individuals: resident, RNOR and non-resident (Tax Year 2026-27, with FY 2025-26)
+# India individual tax residence v1.1
 
-## Scope and who this is for ([Non Resident FAQs](https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/non%20resident%20-faq))
+> **General reference only.** This skill produces a residence working paper for professional review. Residence, treaty entitlement and exchange-control status depend on the client's documents and circumstances.
 
-- This skill decides the residential status of an **individual** for Indian income tax: Resident and Ordinarily Resident (ROR), Resident but Not Ordinarily Resident (RNOR, the Act says "not ordinarily resident") or Non-Resident (NR). It then says what each status is taxed on, what it changes in the return, and how treaty relief is claimed.
-- **Primary year: Tax Year 2026-27** (1 April 2026 to 31 March 2027). Residence for it is decided under section 6 of the Income-tax Act, 2025. The portal says: "Residential status under section 6 of the Income Tax Act, 2025 will apply only for tax years beginning on or after 1 April 2026."
-- **Previous year: FY 2025-26** (returns for AY 2026-27, filed in 2026). Residence for it is decided under section 6 of the Income-tax Act, 1961, using days up to 31 March 2026. See the dated section "FY 2025-26 (AY 2026-27): the 1961 Act rules" below.
-- The portal confirms the tests did not change between the two Acts: "No change has been made in the basic conditions for determining individual residency."
-- A "tax year" is "a period of twelve months contained in a financial year" and replaces "previous year" ([Objective and scope of the New Act FAQs](https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/objective-and-scope-new-act-faq)).
-- Out of scope, refer: companies (resident if an Indian company or if its place of effective management is in India), HUFs, firms, trusts, the NRI concessional regime for investment income, FEMA status for bank accounts, and computing tax itself (see the India income tax Guide).
-- Currency is Indian rupees. A lakh is one hundred thousand.
+## Scope
+
+Decide an individual's Indian domestic residence each year, then distinguish resident and ordinarily resident (ROR), resident but not ordinarily resident (RNOR) and non-resident (NR). Apply the scope of taxable income and route the return and treaty paperwork. **Primary period: Tax Year 2026-27, 1 April 2026 to 31 March 2027**, under the Income-tax Act, 2025. The separate **2025-2026 filing cycle**, FY 2025-26 / AY 2026-27, uses the 1961 Act and its return forms. Later assessment or reassessment does not move an earlier year's residence test into the new Act. [2025 Act, ss.3, 5-6](https://www.incometaxindia.gov.in/documents/d/guest/income_tax_act_2025_as_amended_by_fa_act_2026-pdf); [transition FAQ, Q7-11](https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/non%20resident%20-faq).
+
+The tests continue across the Acts, including earlier years in the look-backs. Do not restart the residence history when the new Act begins. The answer layer is the residence table below; obtain the inputs before choosing a status.
+
+Companies, HUFs, firms, trusts and other entities are outside this individual's computation. An Indian company or a company with its place of effective management in India is resident under s.6(10); HUF/firm/association control-and-management rules are in s.6(9). Refer those cases rather than applying individual day tests. NRI investment concessions, FEMA bank-account status and the tax computation itself are separate jobs: load the relevant India skill. Currency is INR; 1 lakh means INR 100,000 (unit conversion, derived).
 
 ## Ask the client first
 
-- **Citizenship and origin.** Indian citizen, person of Indian origin (PIO), or neither? The special rules below apply only to citizens and PIOs, and deemed residence only to citizens.
-- **Days in India, tax year by tax year.** Exact days present in India in the year being tested (1 April to 31 March), and in each of the preceding ten tax years. Ask for passport entry and exit stamps or travel records. The portal pages cited here do not say how the day of arrival and the day of departure are counted; confirm before relying on a count within a day or two of a threshold (check).
-- **Why they left or came.** Did they leave India in the year for employment abroad, or as a crew member of an Indian ship? Or are they living abroad and "coming on a visit" to India?
-- **Income other than foreign-source income.** Total income for the year, other than income from foreign sources. Is it more than ₹15 lakh ([Non Resident FAQs](https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/non%20resident%20-faq))? This drives the 120-day rule and deemed residence.
-- **Tax status abroad.** Is the client liable to tax in any other country by reason of domicile, residence or similar criteria? Ask for the foreign return or a Tax Residency Certificate (TRC) from that country.
-- **Foreign income and assets.** Salary, rent, interest, dividends, gains or business income from outside India; foreign bank accounts, shares, property, insurance or trusts. Is any of it received in India? Is any foreign business controlled from India, or any profession set up in India?
-- **Treaty claim.** Does the client want a lower treaty rate or treaty exemption in India (needs a TRC plus Form 10F, now Form 41), or does an Indian resident need an Indian TRC for a foreign payer (Form 10FA, now Form 42)?
-- **Prior returns.** What status did the client file in the previous ten years? Old returns are evidence for the 9-of-10 test.
+- Citizenship and Indian origin; reason for departure or visit; foreign employment contract or ship/crew records where relevant.
+- Evidence of India presence for the current year and each of the preceding 10 years, plus the residence status in those years. Use passport/travel records and earlier returns; resolve uncertain arrival/departure days before using a boundary result.
+- Total income **other than income from foreign sources**, computed under the Act, and whether the client is liable to tax elsewhere by domicile, residence or similar criteria. Obtain the foreign return/TRC and examine the underlying law; a country having no salary tax does not alone decide the statutory liability test.
+- Every Indian and foreign income stream and where first received; any foreign business controlled in India or profession set up in India; foreign accounts, shares, property, insurance and trusts.
+- The filing period, business/professional income, earlier return status, active PAN, and whether treaty relief or foreign tax credit is sought. For a treaty claim obtain residence certificates, foreign TIN, home/family/economic ties and the specific treaty text.
+- Foreign taxes paid/deducted, evidence, any dispute or refund, and whether a resident needs an Indian TRC for a foreign payer.
 
 ## The method, step by step
 
-Test each tax year on its own. The portal: "Residential status is assessed separately for each tax year."
+### Residence tests and thresholds
 
-1. **Pick the year and the Act.** Tax Year 2026-27 and later: 2025 Act, section 6. FY 2025-26 and earlier: 1961 Act, section 6, even if the assessment happens after 1 April 2026.
-2. **182-day test.** In India for 182 days or more in the tax year: resident. Go to step 5.
-3. **60-day test, with its exceptions.** In India for 60 days or more in the tax year **and** 365 days or more in the four preceding tax years: resident (go to step 5), unless an exception replaces the 60 days:
-   - Citizen who **leaves India in the year for employment abroad** or as crew of an Indian ship: resident only at 182 days or more. The 60/365 limb does not apply.
-   - Citizen or PIO **coming on a visit** to India, income other than foreign-source income **not above ₹15 lakh ([Non Resident FAQs](https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/non%20resident%20-faq))**: resident only if in India for "more than 182 days". (Exactly 182 days is already caught by step 2, which the FAQ words as "182 days or more"; the "more than 182 days" wording only replaces the 60-day limb.)
-   - Citizen or PIO coming on a visit, income other than foreign-source income **above ₹15 lakh ([Non Resident FAQs](https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/non%20resident%20-faq))**: resident at more than 182 days, **or** at 120 days or more in the year plus 365 days or more in the four preceding years (the 2025 Act's section 6(2)(b) read with 120 days).
-   - None met: not resident under the day tests. Go to step 4.
-4. **Deemed residence (citizens only, and only if non-resident under steps 2 and 3).** If the client is an Indian citizen, has total income other than foreign-source income above ₹15 lakh ([Non-Resident Individual for AY 2026-27](https://www.incometax.gov.in/iec/foportal/help/individual/return-applicable-0)), and is not liable to tax in any other country by domicile, residence or similar criteria, the client is deemed resident (section 6(7) of the 2025 Act; section 6(1A) of the 1961 Act), whatever the days. This person is RNOR (section 6(6)(d) of the 1961 Act, per the ITR-2 form); go to step 7. Otherwise: **Non-Resident.** Stop. A citizen who is resident under step 2 or 3 never uses this step and goes to the normal RNOR tests in step 5.
-5. **Ordinarily resident or not.** A resident is RNOR if **either** (a) non-resident in nine out of the ten preceding tax years, **or** (b) in India for 729 days or less in total in the seven preceding tax years. Section 6(13) of the 2025 Act; section 6(6) of the 1961 Act.
-6. **Two further RNOR cases.** The ITR-2 form lists as RNOR: a visiting citizen or PIO with income other than foreign-source income above ₹15 lakh ([Non Resident FAQs](https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/non%20resident%20-faq)) who was in India "for 120 days or more but less than 182 days", and a deemed-resident citizen (step 4). Otherwise the resident is **ROR**.
-7. **Apply the scope of income** for that status (table below), then the return consequences (ITR form, Schedule FA/FSI, rebate) and any treaty claim.
-8. **Record the working.** Day counts per year, the limb relied on, and documents. Residence is decided afresh each year.
+All current-year figures below are in enacted **s.6 of the 2025 Act**, as amended by Finance Act, 2026. Where the Act prints a number in words, the row says so. Tests are alternatives except where a row expressly requires both conditions.
 
-## Figures and section numbers by year ([Non Resident FAQs](https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/non%20resident%20-faq))
+| Test | Value and complete condition | Official source |
+|---|---|---|
+| Basic residence | At least 182 India days in the tax year: resident (in words on the page) | [s.6(2)(a)](https://www.incometaxindia.gov.in/documents/d/guest/income_tax_act_2025_as_amended_by_fa_act_2026-pdf#page=27) |
+| Alternative residence | At least 60 India days in the year **and** at least 365 India days in the preceding 4 years: resident (in words on the page) | [s.6(2)(b)](https://www.incometaxindia.gov.in/documents/d/guest/income_tax_act_2025_as_amended_by_fa_act_2026-pdf#page=27) |
+| Citizen leaving for foreign employment or as Indian-ship crew | Alternative limb switched off; 182-day basic limb remains (in words on the page). This does not switch off deemed residence | [s.6(3), (7)-(8)](https://www.incometaxindia.gov.in/documents/d/guest/income_tax_act_2025_as_amended_by_fa_act_2026-pdf#page=27) |
+| Visiting citizen/PIO, qualifying income no more than INR 15 lakh | Alternative limb switched off; basic 182-day test remains (in words on the page) | [s.6(4)-(5)](https://www.incometaxindia.gov.in/documents/d/guest/income_tax_act_2025_as_amended_by_fa_act_2026-pdf#page=28) |
+| Visiting citizen/PIO, qualifying income exceeding INR 15 lakh | Alternative limb becomes at least 120 India days **and** at least 365 in preceding 4 years; basic 182-day limb also remains (in words on the page) | [s.6(2), (4)-(5)](https://www.incometaxindia.gov.in/documents/d/guest/income_tax_act_2025_as_amended_by_fa_act_2026-pdf#page=28) |
+| Deemed residence | Indian **citizen**, qualifying income exceeding INR 15 lakh, not liable to tax elsewhere by domicile/residence/similar criteria, and not already resident under day tests: deemed resident irrespective of days (income number in words on the page) | [s.6(7)-(8)](https://www.incometaxindia.gov.in/documents/d/guest/income_tax_act_2025_as_amended_by_fa_act_2026-pdf#page=28) |
+| Ordinary RNOR history tests | A resident is RNOR if NR in 9 of preceding 10 tax years **or** in India no more than 729 days in preceding 7 tax years (in words on the page) | [s.6(13)(a)](https://www.incometaxindia.gov.in/documents/d/guest/income_tax_act_2025_as_amended_by_fa_act_2026-pdf#page=29) |
+| Visitor RNOR | Visiting citizen/PIO described in s.6(5), qualifying income exceeding INR 15 lakh, resident with at least 120 but fewer than 182 India days: RNOR (in words on the page) | [s.6(13)(b)](https://www.incometaxindia.gov.in/documents/d/guest/income_tax_act_2025_as_amended_by_fa_act_2026-pdf#page=29) |
+| Deemed-resident RNOR | Citizen deemed resident under s.6(7) is RNOR | [s.6(13)(c)](https://www.incometaxindia.gov.in/documents/d/guest/income_tax_act_2025_as_amended_by_fa_act_2026-pdf#page=29) |
 
-The day counts and the ₹15 lakh threshold are the same in both years. Only the section numbers change.
+1. Choose the correct Act and year. Count actual presence and evidence the totals; do not mix calendar years with the Indian tax year.
+2. Apply the basic residence limb, then the alternative limb with the applicable departure/visitor substitution. If neither applies, test deemed residence separately for citizens.
+3. For a resident, test all RNOR routes. If none applies, the status is ROR. A person is not NR simply because foreign income is exempt.
+4. Apply the income-scope table below. Identify first receipt, accrual, deemed accrual and India-controlled activities, then route the return.
+5. Keep a residence memorandum with every year's days, historic residence, qualifying income computation, statutory limb, foreign-tax-liability evidence, treaty position and unresolved fact.
 
-| Rule | Figure | Tax Year 2026-27 (2025 Act) | FY 2025-26 (1961 Act) |
-| --- | --- | --- | --- |
-| Basic test | 182 days or more in the tax year | Section 6 | Section 6(1)(a) |
-| 60-day limb | 60 days or more in the year and 365 days or more in the four preceding years | Section 6 (6(2)(b) per the portal) | Section 6(1)(c) |
-| Citizen leaving for employment abroad, or crew of an Indian ship | 182 days or more; 60-day limb switched off | Section 6 (relaxation "continues without any change") | Explanation 1(a) to section 6(1)(c) |
-| Visiting citizen or PIO | More than 182 days | Section 6 | Explanation 1(b) to section 6(1)(c) |
-| Visiting citizen or PIO, income other than foreign-source income above ₹15 lakh | 120 days or more in the year and 365 days or more in the four preceding years | Section 6(2)(b) read with 120 days | Explanation 1(b) to section 6(1)(c) |
-| Deemed resident (citizen) | Income other than foreign-source income above ₹15 lakh, not liable to tax in any other country, and non-resident under the day tests; days irrelevant | Section 6(7) | Section 6(1A) |
-| Not ordinarily resident | Non-resident in 9 of the 10 preceding years, or 729 days or less in the 7 preceding years | Section 6(13) | Section 6(6)(a) |
-| RNOR: 120-day visitor | Income other than foreign-source income above ₹15 lakh; 120 days or more but less than 182 days | Section 6(13) is "similar to" 6(6); the exact clause is not named on the portal (check) | Section 6(6)(c) |
-| RNOR: deemed resident | As deemed resident above | As above (check) | Section 6(6)(d) with 6(1A) |
+**Qualifying income is not simply Indian-source cash receipts.** Section 6(14) defines foreign-source income as income accruing/arising outside India, excluding income from a business controlled in or a profession set up in India, and excluding income deemed to accrue/arise in India. Compute total income other than that defined foreign income. Exactly the threshold does not satisfy an **exceeds** test. [s.6(14)](https://www.incometaxindia.gov.in/documents/d/guest/income_tax_act_2025_as_amended_by_fa_act_2026-pdf#page=29).
 
-- The 120-day rule and deemed residence apply from FY 2020-21. The portal: "The Finance Act, 2020, w.e.f. Assessment Year 2021-22 has amended the above exception" and introduced section 6(1A) "applicable from Assessment Year 2021-22" ([Non-Resident Individual for AY 2026-27](https://www.incometax.gov.in/iec/foportal/help/individual/return-applicable-0)).
-- The ₹15 lakh test uses total income **other than income from foreign sources**. It is not "income from Indian sources", and it is not converted into any foreign currency.
-- **Two wordings for the visitor rule.** The Non Resident FAQs say a visiting citizen or PIO is resident if in India "for a total period of more than 182 days". The AY 2026-27 ITR-2 form's tick box reads "182 days or more during the previous year and 365 days or more within the preceding 4 years" ([ITR-2, AY 2026-27](https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-04/Notification%20No.46_2026.pdf)). The two differ at exactly 182 days. The basic test ("182 days or more", FAQ Q1) already makes anyone with exactly 182 days resident, so the difference should not change the result; the "more than 182 days" wording only replaces the 60-day limb. Keep the working and confirm before relying on it (check).
-- **Look-back years cross the two Acts.** For Tax Year 2026-27, the four-year, seven-year and ten-year look-backs count years that were under the 1961 Act. The portal: "the preceding years may include years under the repealed Act."
+**The visitor FAQ wording is not a separate legal uncertainty.** It says more than the basic day threshold; the enacted basic limb includes equality for every individual. Apply the Act. The 2025-2026 filing-cycle return's residence panel also includes the basic limb without adding a look-back condition to it. The visitor and leaver ticks elsewhere in that panel do not override the statute. [Act s.6](https://www.incometaxindia.gov.in/documents/d/guest/income_tax_act_2025_as_amended_by_fa_act_2026-pdf#page=27); [AY return Part A-GEN](https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-04/Notification%20No.46_2026.pdf#page=2).
 
-### Portal section map: 1961 Act to 2025 Act ([Non Resident FAQs](https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/non%20resident%20-faq))
+For eligible Indian-citizen crew of a foreign-bound ship, do not use an ordinary travel-day assumption: rule 8 excludes the qualifying voyage period evidenced by joining/signing-off entries in the Continuous Discharge Certificate. The voyage must meet the rule's India/foreign-port and international carriage conditions. [Notified Rules, rule 8](https://www.incometaxindia.gov.in/documents/d/guest/en-notified-it-rules-2026-20-03-2026-pdf#page=3).
 
-| Topic | 1961 Act | 2025 Act |
-| --- | --- | --- |
-| Residence tests | Section 6(1) | Section 6 (6(2)(b) for the 60/120-day limb) |
-| Deemed residence | Section 6(1A) | Section 6(7) |
-| Not ordinarily resident | Section 6(6) | Section 6(13) |
-| Transition (old Act for earlier years) | n/a | Section 536 |
-| NRI concessional regime | Sections 115D, 115E, 115F | Sections 213, 214, 215 |
-| NRI return exemption | Section 115G | Section 216 |
-| Continuation after becoming resident | Section 115H | Section 217 |
-| NRE account interest exemption | Section 10(4)(ii) | Schedule IV |
-| Treaty relief information (Form 10F, now Form 41) | Section 90(5) (check) | Section 159(8) |
-| Indian TRC application (Form 10FA, now Form 42) | Section 90/90A (check) | Section 159(1) and 159(2) |
+### Scope of taxable income
 
-The Form 41 and Form 42 sections come from the portal's form manuals and mapping guide ([Form 41 User Manual](https://www.incometax.gov.in/iec/foportal/newformpage/forms/form41-UM); [Form 42 User Manual](https://www.incometax.gov.in/iec/foportal/newformpage/forms/form42-UM); [Form Mapping Guide](https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-06/Navigator%201.pdf)). The 1961 Act sections for those two forms are not stated on the pages cited here (check).
+| Income | ROR | RNOR | NR | Official source |
+|---|---|---|---|---|
+| Received/deemed received in India; or accruing/arising/deemed accruing/arising in India | Included | Included | Included | [s.5(1)-(2)](https://www.incometaxindia.gov.in/documents/d/guest/income_tax_act_2025_as_amended_by_fa_act_2026-pdf#page=27) |
+| Foreign accrual from India-controlled business or India-set-up profession, not received in India | Included | Included | Not included merely by this foreign accrual, subject to deemed Indian accrual | [s.5(1)(c), (2)](https://www.incometaxindia.gov.in/documents/d/guest/income_tax_act_2025_as_amended_by_fa_act_2026-pdf#page=27) |
+| Other foreign accrual, not received/deemed received or accruing/deemed accruing in India | Included | Excluded | Excluded | [s.5](https://www.incometaxindia.gov.in/documents/d/guest/income_tax_act_2025_as_amended_by_fa_act_2026-pdf#page=27) |
 
-## How each status is taxed ([Step-by-step guide to Schedules FSI, TR and FA](https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-03/Step%20by%20Step%20Guide%20FA%20FSI.pdf))
+These are inclusion boundaries, subject to any specific exemption and treaty. Foreign salary, rent, interest, dividends and gains each require their own source/receipt analysis. Recording a foreign accrual in an Indian balance sheet does not itself make it received in India; the same income is not included again just because it is later received after inclusion on accrual. Do not equate remitting existing foreign capital with first receipt of income. [s.5(3)-(4)](https://www.incometaxindia.gov.in/documents/d/guest/income_tax_act_2025_as_amended_by_fa_act_2026-pdf#page=27).
 
-| Income | ROR | RNOR | NR |
-| --- | --- | --- | --- |
-| Income received, accruing or arising in India (Indian salary, Indian rent, Indian interest, gains on Indian shares or Indian property) | Taxed | Taxed | Taxed |
-| Foreign income received in India | Taxed | Taxed | Taxed |
-| Foreign income from a business controlled in India or a profession set up in India | Taxed | Taxed | Not taxed unless received in India |
-| Other foreign income (foreign salary for work abroad, foreign rent, foreign interest or dividends, gains on foreign shares or foreign property), not received in India | Taxed | Not taxed | Not taxed |
+### Return consequences: 2025-2026 filing cycle only
 
-- **ROR is taxed on worldwide income.** The portal: Schedule FSI "applies to taxpayers who are residents of India. In this schedule, taxpayers must report all income that accrues or arises from sources outside India."
-- **NR is not taxed on foreign income** that is neither received nor accruing in India. The ITR-2 validation rules: "Schedule FSI is not applicable if residential status is non resident" ([ITR-2 validation rules, AY 2026-27](https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-05/CBDT__e-Filing_ITR%202_Validation%20Rules_AY%202026-27_V1.0.pdf)).
-- **RNOR sits between.** The RNOR rule in the table (foreign income taxed only if received in India or from an India-controlled business or India-set-up profession) is the scope-of-income section of the Act (section 5 of the 1961 Act). The portal pages found do not quote that section or name its 2025 Act number, and the Act text is on a host this skill may not cite. Confirm against the Act before advising on a large foreign receipt (check).
-- **Credit for foreign tax** (sections 90, 90A or 91) is claimed in Schedule FSI and Schedule TR with Form 67, and only by a resident. ITR-2: Schedule TR is "available only in case of resident".
+The following are FY 2025-26 / AY 2026-27 form requirements; they are not a prediction of final Tax Year 2026-27 return fields.
 
-### What the status changes in the return ([ITR-2 validation rules, AY 2026-27](https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-05/CBDT__e-Filing_ITR%202_Validation%20Rules_AY%202026-27_V1.0.pdf))
+| Point | ROR | RNOR | NR | Official source |
+|---|---|---|---|---|
+| ITR form | ITR-1/4 only if otherwise eligible, including foreign-item exclusions | ITR-2 without business; ITR-3 with business/profession | ITR-2 without business; ITR-3 with business/profession | [ITR-1 eligibility and foreign-item exclusions](https://www.incometax.gov.in/iec/foportal/help/individual/return-applicable-1); [NR forms](https://www.incometax.gov.in/iec/foportal/help/individual/return-applicable-0); [ITR-4 eligibility](https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/itr%204-faqs) |
+| Schedule FA | Foreign legal/beneficial ownership or beneficiary interests must be examined; covers holdings at any time in relevant calendar year ending 31 December | Not required | Not required | [FA/FSI guide, sections 2 and 5](https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-03/Step%20by%20Step%20Guide%20FA%20FSI.pdf); [AY 2026-27 Schedule FA, PDF p.27](https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-04/Notification%20No.46_2026.pdf#page=27) |
+| FSI and TR | Report taxable foreign income and eligible relief | Apply to taxable foreign income and eligible relief as a resident | Not applicable | [ITR-2 rules 442-455](https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-05/CBDT__e-Filing_ITR%202_Validation%20Rules_AY%202026-27_V1.0.pdf#page=30) |
+| Resident rebate | Subject to its income/regime limits | Subject to its income/regime limits | Not available | [ITR-2 rules 533-535](https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-05/CBDT__e-Filing_ITR%202_Validation%20Rules_AY%202026-27_V1.0.pdf#page=36) |
+| Treaty rate fields | The utility restricts the specified rate fields; credit via FSI/TR remains a separate issue | Same utility limitation; do not treat as a blanket denial of treaties | TRC and Form 10F requirements apply | [ITR-3 rule 37](https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-06/CBDT_e-filing_ITR-3_Validation%20Rules_V1.0_AY%2026-27.pdf#page=6); [ITR-2 category D item 21](https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-05/CBDT__e-Filing_ITR%202_Validation%20Rules_AY%202026-27_V1.0.pdf#page=51) |
 
-| Point | ROR | RNOR | NR |
-| --- | --- | --- | --- |
-| ITR-1 or ITR-4 | Allowed if otherwise eligible | Not allowed | Not allowed |
-| Schedule FA (foreign assets) | Mandatory | Not required | Not required |
-| Schedule FSI and TR (foreign income and tax relief) | Yes | Yes (resident) | Not applicable |
-| Rebate u/s 87A | Allowed within limits | Allowed within limits | "not allowed to Non-resident" |
-| Treaty rate in the return | Not available on rate (ITR-3 rule) | Not available on rate (ITR-3 rule) | Available only if the TRC flag is "Yes" and Form 10F is filed |
+Record foreign assets even while deciding whether Schedule FA is required. For an NR return, enter jurisdiction of residence and foreign TIN; citizen/PIO panels also ask for current and prior-year India presence. [Notified return, Part A-GEN](https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-04/Notification%20No.46_2026.pdf#page=2). See [return assembly](in-return-assembly.md) and [income tax](india-income-tax.md) for filing requirements, belated-return routes, fees and interest; residential status alone does not decide that a return is unnecessary.
 
-- ITR-1 is for "a Resident (other than Not Ordinarily Resident) Individual" ([Salaried Individuals for AY 2026-27](https://www.incometax.gov.in/iec/foportal/help/individual/return-applicable-1)); ITR-4 "cannot be filed by an individual ... who: is a Resident but Not Ordinarily Resident (RNOR), or Non-Resident Indian" ([ITR-4 FAQs](https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/itr%204-faqs)). An RNOR or NR uses ITR-2, or ITR-3 with business income.
-- Schedule FA: "Schedule FA need not be completed if the taxpayer is classified as "not ordinarily resident" or a "non-resident."" For an ROR it covers foreign assets held at any time in the calendar year ending 31 December ([FA/FSI guide](https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-03/Step%20by%20Step%20Guide%20FA%20FSI.pdf)).
-- A non-resident's ITR-2 asks for the jurisdiction of residence, the foreign taxpayer identification number and, for a citizen or PIO, days in India in the year and in the four preceding years ([ITR-2, AY 2026-27](https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-04/Notification%20No.46_2026.pdf)).
-- ITR-3 validation rule: "If status of the taxpayer is other than Non-Resident, DTAA benefit is not available in rate of taxation" ([ITR-3 validation rules, AY 2026-27](https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-06/CBDT_e-filing_ITR-3_Validation%20Rules_V1.0_AY%2026-27.pdf)).
+### Treaty residence and documentation
 
-## Treaty residence: tie-breaker, TRC and Form 10F ([Form 41 User Manual](https://www.incometax.gov.in/iec/foportal/newformpage/forms/form41-UM))
+Domestic residence and treaty residence are separate conclusions. Dual residence requires the **specific treaty's residence article**, its current protocols and the facts concerning home, personal/economic ties, habitual abode and citizenship. Do not apply a generic tie-breaker order without the operative treaty. A treaty outcome does not erase the domestic residence working or automatically settle every return schedule. Refer disputed dual-status years, competent-authority/mutual-agreement work and unclear foreign tax liability.
 
-**Tie-breaker.** A person can be resident in India under section 6 and resident in another country under its law in the same year. India's Double Taxation Avoidance Agreements (DTAAs) settle this in their residence article. Most follow the usual order: permanent home, then centre of vital interests, then habitual abode, then nationality, then mutual agreement between the two tax authorities. The wording differs by treaty, and no incometax.gov.in page found sets out the order. Read the residence article of the specific treaty before advising (check). The tie-breaker decides treaty residence only; the client can still be resident under section 6 for Indian domestic purposes and for return schedules.
+| Period/job | Procedure | Official source |
+|---|---|---|
+| Tax Year 2026-27, NR claiming treaty relief in India | Obtain foreign TRC and foreign TIN; file Form 41 under s.159 and rule 75 | [Form 41 manual](https://www.incometax.gov.in/iec/foportal/newformpage/forms/form41-UM) |
+| 2025-2026 filing cycle, NR claiming preferable treaty rate | Form 10F and TRC; the return validation treats the TRC flag as No if the form is absent | [ITR-2 category D item 21](https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-05/CBDT__e-Filing_ITR%202_Validation%20Rules_AY%202026-27_V1.0.pdf#page=51) |
+| Tax Year 2026-27, Indian resident seeking Indian TRC | Apply in Form 42 to the Assessing Officer under s.159(1)-(2); if satisfied, officer issues Form 43 | [Form 42 manual](https://www.incometax.gov.in/iec/foportal/newformpage/forms/form42-UM) |
+| Tax Year 2026-27, resident claiming foreign credit | Form 44 under rule 76, with evidence; foreign tax refunds/disputes need the rule's separate procedure | [Notified Rules, rule 76](https://www.incometaxindia.gov.in/documents/d/guest/en-notified-it-rules-2026-20-03-2026-pdf#page=54); [official Forms 44/45 guidance](https://www.incometaxindia.gov.in/documents/d/guest/fn-44) |
+| 2025-2026 filing cycle, resident foreign credit | Form 67 and FSI/TR under the old Act; do not substitute the new form or assume an obsolete manual's deadline controls | [FA/FSI guide](https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-03/Step%20by%20Step%20Guide%20FA%20FSI.pdf); [dual-residence/credit skill](in-cross-border-india-dual-resident-treaty.md) |
 
-**Non-resident claiming treaty relief in India.**
-- Get a **Tax Residency Certificate (TRC)** from the country of residence.
-- File **Form 10F** on the e-Filing portal. Under the 2025 Act it is **Form 41**, "Information to be provided under section 159(8)" ([Form Mapping Guide](https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-06/Navigator%201.pdf)).
-- The Form 41 manual: "It must be filed when a nonresident wants to claim relief under a Double Taxation Avoidance Agreement (DTAA) as provided in section 159". Prerequisites include the foreign tax identification number and a "Copy of certificate referred to in section 159(8)", that is the TRC.
-- A non-resident without a PAN, who is not required to have one, files through a separate non-resident login (NR ID) and e-verifies by OTP.
-- Choose the right tab: "Forms as per Income Tax Act 2025" for Tax Year 2026-27; "Forms as per Income Tax Act 1961" for FY 2025-26 and earlier.
-- In the AY 2026-27 return: "FORM 10F is mandatory to be filed by Non residents, to claim benefit of preferable rate" and "TRC flag be considered as 'No" if Form 10F is not there" ([ITR-2 validation rules](https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-05/CBDT__e-Filing_ITR%202_Validation%20Rules_AY%202026-27_V1.0.pdf)).
+**Form 41 workflow.** Login > e-File > Income Tax Forms > File Income Tax Forms > Forms as per Income Tax Act 2025 > choose Form 41 and tax year. Complete applicant particulars, residential information and declaration; preview and e-verify; retain transaction ID and acknowledgement. PAN users use EVC/DSC as applicable. A nonresident without PAN who is not required to have one uses the separate NR ID category and email/mobile OTPs. The foreign certificate and TIN are prerequisites. Select the old-Act tab for the earlier period's forms. [Manual](https://www.incometax.gov.in/iec/foportal/newformpage/forms/form41-UM).
 
-**Indian resident needing an Indian TRC** (for a foreign payer or foreign authority).
-- Apply in **Form 42** (formerly Form 10FA) to the Assessing Officer under sections 159(1) and 159(2) of the 2025 Act. If satisfied, the officer issues the certificate in **Form 43** ([Form 42 User Manual](https://www.incometax.gov.in/iec/foportal/newformpage/forms/form42-UM)).
-- Any registered user with a valid, active PAN can apply. Part B asks for the applicant's address "for the year for which the TRC is desired".
+**Form 42 workflow.** Registered user with active PAN: choose the new-Act forms tab, form and tax year; complete applicant, TRC details, attachments and verification; preview, e-verify and retain acknowledgement. The address must be for the year for which the certificate is sought. Application is not itself a granted certificate. The earlier form was Form 10FA; obtain the applicable old-Act procedure for earlier years. [Manual](https://www.incometax.gov.in/iec/foportal/newformpage/forms/form42-UM); [official form mapping, p.2](https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-06/Navigator%201.pdf).
 
-## Boundary and exception table ([Non Resident FAQs](https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/non%20resident%20-faq))
+### Earlier-period section map
 
-| Boundary | Inside | Outside |
-| --- | --- | --- |
-| Basic test | 182 days or more: resident | 181 days or fewer: go to the 60-day limb |
-| 60-day limb | 60 days or more in the year **and** 365 days or more in the four preceding years | Either missed: not resident on this limb |
-| Citizen leaving for employment or as Indian-ship crew | 182 days or more | 181 days or fewer: non-resident (60-day limb switched off) |
-| Visiting citizen or PIO, income other than foreign-source income ₹15 lakh or less | More than 182 days | Otherwise non-resident; exactly 182 days is resident under the basic test, though the visitor wordings differ (check) |
-| Visiting citizen or PIO, income other than foreign-source income above ₹15 lakh | 120 days or more plus 365 days in the four preceding years: resident, and RNOR if under 182 days | Under 120 days, or under 365 days in the look-back: non-resident unless deemed resident |
-| ₹15 lakh threshold | Exceeds ₹15 lakh | Exactly ₹15 lakh or less: 120-day and deemed rules do not apply |
-| Deemed residence | Citizen, over ₹15 lakh, not liable to tax in any other country, non-resident under the day tests | PIO who is not a citizen; or liable to tax somewhere by domicile or residence |
-| RNOR, 9-of-10 test | Non-resident in 9 or more of the 10 preceding years | 8 or fewer: test the 729-day limb |
-| RNOR, 729-day test | 729 days or less in the 7 preceding years | 730 days or more: ROR unless another RNOR case applies |
-| Acts | Tax years starting on or after 1 April 2026: 2025 Act | Earlier years: 1961 Act, even in later reassessments |
+| Topic | 2025-2026 filing cycle, 1961 Act | Tax Year 2026-27, 2025 Act | Official source |
+|---|---|---|---|
+| Basic residence | s.6(1)(a), (c), Explanation 1 | s.6(2)-(6) | [Residence FAQ, Q1-3](https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/non%20resident%20-faq) |
+| Deemed residence | s.6(1A) | s.6(7)-(8) | [Residence FAQ, Q4](https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/non%20resident%20-faq) |
+| RNOR, including visitor/deemed routes | s.6(6)(a), (c), (d) | s.6(13)(a)-(c) | [Old return residence panel](https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-04/Notification%20No.46_2026.pdf#page=2); [new Act s.6](https://www.incometaxindia.gov.in/documents/d/guest/income_tax_act_2025_as_amended_by_fa_act_2026-pdf#page=29) |
+| Earlier-year assessments/reassessments | Earlier Act retained | Savings s.536 | [Residence FAQ, Q7-11](https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/non%20resident%20-faq) |
 
-## Worked cases ([Non Resident FAQs](https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/non%20resident%20-faq))
+The old visitor/deemed rules began with FY 2020-21 / AY 2021-22; do not back-apply them to earlier disputes. [NR page](https://www.incometax.gov.in/iec/foportal/help/individual/return-applicable-0). Earlier years and concessional NRI regimes require their own research.
 
-Day counts below are assumed facts for illustration.
+## Boundary and exception table
 
-**Case 1: returning NRI.** Indian citizen, worked in Dubai and was non-resident in each of the ten tax years FY 2016-17 to FY 2025-26. Moves back on 1 July 2026 and stays. Days in India in Tax Year 2026-27: 1 July 2026 to 31 March 2027 = 274.
-- 274 is 182 or more: resident for Tax Year 2026-27.
-- Non-resident in 10 of the 10 preceding years (at least 9): **RNOR**.
-- Interest on a UAE bank account, not brought to India: not taxed. Rent from a flat in Pune: taxed. Uses ITR-2; no Schedule FA.
-- Tax Year 2027-28: the preceding ten years are FY 2017-18 to Tax Year 2026-27, with non-resident years FY 2017-18 to FY 2025-26 = 9. Still RNOR on the 9-of-10 test.
-- Tax Year 2028-29: non-resident in only 8 of the preceding 10, so test the 729-day limb. Days in the seven preceding years: 100 (visits in FY 2021-22 to FY 2025-26, assumed) + 274 + 366 (Tax Year 2027-28, which includes 29 February 2028) = 740. That is more than 729: **ROR** from Tax Year 2028-29, taxed on worldwide income and must file Schedule FA.
+| Boundary | Decision | Official source |
+|---|---|---|
+| Exactly 182 days | Resident under basic limb; departure/visit does not undo it (in words on the page) | [s.6(2)-(5)](https://www.incometaxindia.gov.in/documents/d/guest/income_tax_act_2025_as_amended_by_fa_act_2026-pdf#page=27) |
+| Under 182 days | Test alternative limb and exceptions, then deemed residence; not automatically NR | [s.6](https://www.incometaxindia.gov.in/documents/d/guest/income_tax_act_2025_as_amended_by_fa_act_2026-pdf#page=27) |
+| Exactly INR 15 lakh qualifying income | Neither high-income visitor substitution nor deemed-residence income condition is met (in words on the page) | [s.6(5), (7)](https://www.incometaxindia.gov.in/documents/d/guest/income_tax_act_2025_as_amended_by_fa_act_2026-pdf#page=28) |
+| Visitor alternative limb | Both 120 current days and 365 prior days needed; if resident with fewer than 182 current days, RNOR (in words on the page) | [s.6(5), (13)(b)](https://www.incometaxindia.gov.in/documents/d/guest/income_tax_act_2025_as_amended_by_fa_act_2026-pdf#page=28) |
+| PIO without Indian citizenship | Can use visitor rules; cannot be deemed resident under citizen-only rule | [s.6(4), (7)](https://www.incometaxindia.gov.in/documents/d/guest/income_tax_act_2025_as_amended_by_fa_act_2026-pdf#page=28) |
+| RNOR historic days | 729 or fewer qualifies; 730 does not qualify on this limb (730 derived); another RNOR limb can still qualify | [s.6(13)](https://www.incometaxindia.gov.in/documents/d/guest/income_tax_act_2025_as_amended_by_fa_act_2026-pdf#page=29) |
+| Returning NRI | No fixed RNOR grace period; recalculate all historic tests annually | [s.6(13)](https://www.incometaxindia.gov.in/documents/d/guest/income_tax_act_2025_as_amended_by_fa_act_2026-pdf#page=29) |
 
-**Case 2: visiting PIO, income in India above ₹15 lakh.** British citizen of Indian origin, lives in London and pays UK tax. Has Indian rent and interest giving income other than foreign-source income of ₹22,00,000. In India for 130 days in Tax Year 2026-27, and 400 days in the four preceding years.
-- Not a citizen, so deemed residence cannot apply.
-- Visitor with income above ₹15 lakh: 130 is 120 or more, and 400 is 365 or more. **Resident** under section 6(2)(b) read with 120 days.
-- In India for 120 days or more but less than 182: **RNOR**. UK salary not received in India is not taxed in India. If the UK also treats the client as resident, the UK-India treaty tie-breaker decides treaty residence (check the treaty).
-- Same facts but 110 days: **non-resident**.
+## Worked cases
 
-**Case 3: citizen in a no-tax country.** Indian citizen lives in a country with no personal income tax and is not liable to tax there by domicile or residence. In India for 45 days. Indian income (rent and capital gains) other than foreign-source income: ₹18,00,000.
-- Days fail every test, so the client is non-resident under the day tests. But citizen, over ₹15 lakh, not liable to tax in any other country: **deemed resident** under section 6(7) of the 2025 Act, whatever the days.
-- Deemed residents are **RNOR**: Indian income taxed; foreign income not received in India not taxed.
-- If income other than foreign-source income were exactly ₹15 lakh, the threshold is not exceeded: non-resident.
+All presence and income amounts below are illustrative assumed facts. Calculations test the relevant boundary; legal classification follows the method, not a tax-rate computation.
 
-**Case 4: leaving India for a job abroad.** Indian citizen, always resident, leaves on 1 October 2026 to take up employment in Singapore. Days in India in Tax Year 2026-27: 1 April to 30 September 2026 = 183.
-- Leaving for employment: resident only at 182 days or more. 183 is 182 or more: **resident** for Tax Year 2026-27, and ROR (resident for many prior years). Singapore salary for October 2026 to March 2027 is taxed in India, with credit for Singapore tax through Schedule FSI, Schedule TR and Form 67.
-- Had the client left on 30 September 2026 (182 days, counting 1 April to 29 September), the result is the same. Leaving a day earlier gives 181 days: **non-resident**, even though 60 days and 365 days in the four preceding years are met, because the 60-day limb is switched off for this client.
-- The day count at the edge turns on how arrival and departure days are counted (check).
+**Returning NRI.** A citizen nonresident throughout the preceding 10 years returns on 1 July 2026 and stays: July-March is 274 days. Resident under the basic limb; RNOR by residence history. In Tax Year 2027-28 the prior history still contains 9 NR years, so RNOR continues. In Tax Year 2028-29 only 8 remain: assumed prior visits of 100 days plus 274 plus the intervening leap-year presence of 366 total 740, exceeding 729. With no other RNOR route, the person is ROR then. Foreign bank interest first received abroad is outside RNOR scope; Pune rent remains included. Foreign income first received in India or from an India-controlled business requires the exception analysis. AY return-schedule rules must not be projected uncritically onto future forms.
 
-## FY 2025-26 (AY 2026-27): the 1961 Act rules ([Non-Resident Individual for AY 2026-27](https://www.incometax.gov.in/iec/foportal/help/individual/return-applicable-0))
+```oa-check
+name: Returning NRI presence and later RNOR boundary
+inputs:
+  july_to_december: 184
+  january_to_march: 90
+  earlier_visits: 100
+  intervening_leap_year: 366
+steps:
+  return_year_days: july_to_december + january_to_march
+  basic_test_margin: return_year_days - 182
+  later_seven_year_days: earlier_visits + return_year_days + intervening_leap_year
+  excess_over_RNOR_limit: later_seven_year_days - 729
+expected:
+  return_year_days: 274
+  basic_test_margin: 92
+  later_seven_year_days: 740
+  excess_over_RNOR_limit: 11
+```
 
-Dated 25 September 2026.
-- Residence for FY 2025-26 is decided under section 6 of the 1961 Act, on days from 1 April 2025 to 31 March 2026. The portal: the residence for FY 2025-26 "shall be determined based on the period of stay up to 31 March 2026, in accordance with the provisions of the Income Tax Act, 1961."
-- The tests are the same as above: 182 days or more; or 60 days or more plus 365 days or more in the 4 preceding years; 182 days for a citizen leaving for employment or as Indian-ship crew; the visitor rule; 120 days where income other than foreign-source income exceeds ₹15 lakh; deemed residence under section 6(1A); RNOR under section 6(6)(a), (c) and (d).
-- A status once decided under the 1961 Act "can only be reopened in accordance with the provisions of that Act", and a reassessment for an earlier year after 1 April 2026 still uses the 1961 Act (section 536 of the 2025 Act).
-- AY 2026-27 returns use the old ITR forms. The ITR-2 residential status panel for AY 2026-27 has tick boxes for each limb, including the RNOR cases under section 6(6)(c) and 6(6)(d) ([ITR-2, AY 2026-27](https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-04/Notification%20No.46_2026.pdf)).
-- Due date for AY 2026-27 non-audit returns: "31st July, 2026 or 31st August for non -audit cases, etc." ([Income Tax Returns FAQs](https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/%20income%20tax%20returns-faq)). By 25 September 2026 these dates have passed; a non-audit filer who has not filed files a belated return. See the India income tax Guide for belated-return limits and fees.
-- Treaty claims for FY 2025-26 use Form 10F under the "Forms as per Income Tax Act 1961" tab.
+**Visiting PIO, decision both ways.** British citizen of Indian origin, UK-tax-liable, qualifying income INR 2,200,000, prior 4-year presence 400 days. A 130-day visit meets both substituted conditions and gives RNOR; a 110-day visit fails and gives NR. Not an Indian citizen, so no deemed-residence fallback. UK-India treaty residence needs its own text and facts. A UK salary first received abroad, without India source/control conditions, is excluded for either result.
+
+```oa-check
+name: Visitor 130 days versus 110 days
+inputs:
+  income: 2200000
+  long_visit: 130
+  short_visit: 110
+  prior_days: 400
+steps:
+  income_above_threshold: income - 1500000
+  long_margin: long_visit - 120
+  short_margin: short_visit - 120
+  prior_margin: prior_days - 365
+expected:
+  income_above_threshold: 700000
+  long_margin: 10
+  short_margin: -10
+  prior_margin: 35
+```
+
+**Citizen not liable elsewhere.** Assume an Indian citizen is not liable to tax anywhere else by domicile/residence/similar criteria, has qualifying income INR 1,800,000 and only 45 India days. Assume the remaining day-test facts also fail. The citizen is deemed resident and RNOR. Exactly INR 1,500,000 instead fails the deemed-residence income threshold; on the assumed facts the citizen is NR. Do not infer the liability premise just from living in a no-salary-tax country.
+
+```oa-check
+name: Deemed-residence income boundary
+inputs:
+  qualifying_income: 1800000
+  boundary_income: 1500000
+steps:
+  excess: qualifying_income - 1500000
+  boundary_excess: boundary_income - 1500000
+expected:
+  excess: 300000
+  boundary_excess: 0
+```
+
+**Employment departure.** Citizen previously resident for many years, assumed no RNOR route. The period 1 April to 30 September 2026 has 183 days: departure for Singapore employment after that presence leaves the person resident/ROR. Even 182 India days remains resident; 181 days fails the basic limb and the employment exception disables the alternative limb. Separately check deemed residence and reliable travel-day treatment. In the resident outcome, foreign salary is within worldwide scope with any eligible foreign credit under the correct year's rules. The 2026-27 new-Act procedure uses Form 44, not the older Form 67.
+
+```oa-check
+name: Employment departure boundary
+inputs:
+  april_to_september: 183
+steps:
+  basic_test_margin: april_to_september - 182
+  earlier_presence: april_to_september - 2
+  earlier_margin: earlier_presence - 182
+expected:
+  basic_test_margin: 1
+  earlier_presence: 181
+  earlier_margin: -1
+```
 
 ## When to refuse or refer
 
-Refer to a chartered accountant, or decline, when:
-- A day count falls within a few days of 60, 120, 182, 365 or 729, and the arrival and departure days or the travel records are uncertain.
-- The client was in India for exactly 182 days as a visiting citizen or PIO and the result is disputed (the basic test makes them resident, but the portal's visitor wordings differ).
-- The client is resident in India under section 6 and resident in another country: the treaty tie-breaker needs the treaty text and facts on home, family, economic ties and habitual abode.
-- The RNOR scope matters for a large foreign receipt (foreign sale proceeds or salary brought into India, foreign business run from India): the scope-of-income wording is not confirmed on the portal here.
-- Whether the client is "liable to tax" in another country is unclear (for example, a country with a territorial system or remittance basis).
-- The client is a company, trust, HUF or firm, or wants the NRI concessional regime (sections 213 to 217 of the 2025 Act).
-- Residence for years before FY 2025-26 is disputed or under reassessment.
-- FEMA residential status (for NRE/NRO accounts) is the question: it follows a different definition.
+- Uncertain travel records, arrival/departure treatment or crew voyages near a day threshold. Do not provide a status from guessed days.
+- Dual domestic residence, unclear foreign liability to tax, treaty tie-breaker disputes, competent-authority or mutual-agreement matters.
+- Large foreign receipts or structures where source, first receipt, control of a business, setting up a profession or deemed accrual is uncertain. The statutory RNOR rule is confirmed; its application to the client's receipt still needs evidence.
+- Company, HUF, firm or trust residence; NRI investment concession, FEMA/banking residence, or disputed years before the labelled filing cycle.
+- Foreign credit for disputed/refunded tax, alternate minimum tax, late statements, updated returns or unavailable documents. Use the credit skill; do not improvise a due date.
 
-## Filing and payment ([Form 41 User Manual](https://www.incometax.gov.in/iec/foportal/newformpage/forms/form41-UM))
+## Filing and payment
 
-- **Return form.** RNOR and NR: ITR-2 (no business income) or ITR-3 (business or professional income). ROR: ITR-1 or ITR-4 only if eligible and with no foreign assets or foreign income.
-- **Status panel.** Tick the limb relied on. A non-resident enters the jurisdiction of residence and foreign taxpayer identification number; a citizen or PIO also enters days in India for the year and the four preceding years.
-- **ROR with foreign items.** Complete Schedule FA (calendar year to 31 December), Schedule FSI and Schedule TR, and file Form 67 to claim foreign tax credit.
-- **Treaty relief for a non-resident.** Keep the foreign TRC; file Form 41 (Tax Year 2026-27) or Form 10F (FY 2025-26) on the e-Filing portal and e-verify; answer the TRC question "Yes" in the return.
-- **Indian TRC.** File Form 42 and e-verify; the Assessing Officer issues Form 43.
-- **Tax Year 2026-27 returns** will use forms under the 2025 Act; the portal says this return "is not due until July 2027".
-- Pay tax by e-Pay Tax on the portal, choosing the correct Act and year on the challan.
+Keep the old-Act filing cycle distinct from the current tax year. Choose the correct Act/year on forms and e-Pay Tax. This skill determines residence and documentation; [income tax](india-income-tax.md), [return assembly](in-return-assembly.md) and [foreign credit](in-cross-border-india-dual-resident-treaty.md) own return timing, tax, interest and statement deadlines.
+
+The transition FAQ describes July 2027 as the ordinary next filing period for Tax Year 2026-27; it does not establish every taxpayer's final form, due date or later extension. The FAQ mentions **31 July 2026 or 31 August 2026** for non-audit AY 2026-27 returns. Those exact historical windows from the old version are preserved here as the FAQ's wording, not as a verified category-specific due date or current filing calendar. Check the applicable statutory category and dated notification in the return workflow. [Returns transition FAQ](https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/%20income%20tax%20returns-faq).
 
 ## Completion checklist
 
-- [ ] Citizenship or PIO status recorded.
-- [ ] Days in India counted for the tax year and for each of the ten preceding tax years, with evidence.
-- [ ] Reason for travel recorded (leaving for employment, crew, visiting, other).
-- [ ] Income other than foreign-source income computed and compared with ₹15 lakh ([Non Resident FAQs](https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/non%20resident%20-faq)).
-- [ ] Foreign tax liability checked for deemed residence.
-- [ ] Correct Act applied: 2025 Act for Tax Year 2026-27, 1961 Act for FY 2025-26.
-- [ ] Resident or non-resident decided, limb named.
-- [ ] RNOR tested on all four routes (9 of 10; 729 days; 120-day visitor; deemed resident).
-- [ ] Scope of income applied; foreign income received in India identified.
-- [ ] Return form, Schedule FA, FSI and TR decided; rebate eligibility checked.
-- [ ] Treaty claim: TRC obtained, Form 41 or Form 10F filed, tie-breaker checked against the treaty.
-- [ ] Every "check" item confirmed or referred.
+- [ ] Year/Act and citizenship/PIO status recorded; departure/visit/crew facts evidenced.
+- [ ] Current and historic days reconciled; all resident and RNOR limbs tested separately.
+- [ ] Qualifying income and foreign tax liability evidenced, including equality boundaries.
+- [ ] Indian source, first receipt and foreign business/profession control considered for every income item.
+- [ ] Correct-year return/schedules and treaty/credit forms selected; TRC obtained where required.
+- [ ] Residence memorandum and acknowledgement evidence retained; unresolved factual or treaty questions referred.
+
+## Sources
+
+| Official source | Read for | Read on |
+|---|---|---|
+| [2025 Act, amended by Finance Act 2026](https://www.incometaxindia.gov.in/documents/d/guest/income_tax_act_2025_as_amended_by_fa_act_2026-pdf) | Read for ss.3, 5-6, PDF pp.26-29: year, receipt/source scope, all individual residence and RNOR tests, exceptions and definitions | 2026-11-14 |
+| [Notified Rules 2026](https://www.incometaxindia.gov.in/documents/d/guest/en-notified-it-rules-2026-20-03-2026-pdf) | Read for rule 8, PDF pp.3-4, crew voyage exclusion; rule 76, PDF pp.54-55, foreign-credit form and evidence | 2026-11-14 |
+| [Residence transition FAQ](https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/non%20resident%20-faq) | Read for Q1-11: continued residence tests, company boundary, old/new-Act and look-back transition; statute controls visitor equality wording | 2026-11-14 |
+| [NR AY 2026-27 page](https://www.incometax.gov.in/iec/foportal/help/individual/return-applicable-0) | Read for residence introduction, visitor/deemed rules and ITR-2/3 routing; labelled 2025-2026 filing cycle | 2026-11-14 |
+| [Notified AY 2026-27 ITR-2](https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-04/Notification%20No.46_2026.pdf) | Read for Part A-GEN residence panels, PDF pp.2-3, including NR country/TIN and historic presence; Schedule FA, PDF p.27, calendar year ending 31 December 2025 | 2026-11-14 |
+| [ITR-2 validation rules](https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-05/CBDT__e-Filing_ITR%202_Validation%20Rules_AY%202026-27_V1.0.pdf) | Read for rules 442-455, 533-535 and category D item 21: FSI/TR, resident rebate boundary, treaty paperwork | 2026-11-14 |
+| [FA/FSI/TR official guide](https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-03/Step%20by%20Step%20Guide%20FA%20FSI.pdf) | Read for sections 2-5: correct forms, taxable foreign income, credit, FA ownership and calendar-year scope, NR/RNOR exclusion | 2026-11-14 |
+| [Salaried individual return routing](https://www.incometax.gov.in/iec/foportal/help/individual/return-applicable-1) | Read for AY 2026-27 ITR-1 resident-other-than-RNOR condition and exclusions for foreign assets, signing authority and income; no unrelated figures adopted | 2026-11-14 |
+| [ITR-4 FAQ](https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/itr%204-faqs) | Read for Q1-2 eligibility and RNOR/NR exclusions for the 2025-2026 filing cycle | 2026-11-14 |
+| [ITR-3 validation rules](https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-06/CBDT_e-filing_ITR-3_Validation%20Rules_V1.0_AY%2026-27.pdf) | Read for rule 37: utility restriction on specified treaty-rate fields, not a general denial of foreign tax credit | 2026-11-14 |
+| [Form 41 manual](https://www.incometax.gov.in/iec/foportal/newformpage/forms/form41-UM) | Read for overview, prerequisites, panels, year selection, PAN/NR-ID verification and acknowledgement | 2026-11-14 |
+| [Form 42 manual](https://www.incometax.gov.in/iec/foportal/newformpage/forms/form42-UM) | Read for Indian TRC application, officer-issued certificate, year/address and verification workflow | 2026-11-14 |
+| [Forms 44/45 official guidance](https://www.incometaxindia.gov.in/documents/d/guest/fn-44) | Read for full guidance, pp.1-5: new-Act foreign-credit forms, documents, deadlines, accountant verification and disputes | 2026-11-14 |
+| [Official form mapping](https://www.incometax.gov.in/iec/foportal/sites/default/files/2026-06/Navigator%201.pdf) | Read for p.2: old Form 10F to Form 41 and Form 10FA to Form 42 | 2026-11-14 |
+| [Returns transition FAQ](https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/%20income%20tax%20returns-faq) | Read for separate earlier-Act return and next-year filing cycle; not treated as a complete live deadline calendar | 2026-11-14 |
+
+Not yet confirmed: general arrival/departure-day counting beyond the specific crew rule; any particular treaty's tie-breaker or its effect on the client's return schedules; final current-year return fields and later deadline extensions. The old section-map entries for the NRI investment-income regime (old ss.115D-115H/new ss.213-217), NRE interest exemption (old s.10(4)(ii)/new Schedule IV), and precise old-Act TRC application/information section mapping were not reverified in this residence job and remain outside usable guidance here. The earlier generic treaty tie-breaker ordering and any fixed returning-NRI RNOR window are not confirmed instructions. Earlier-period Form 67 timing belongs to the credit skill and requires the amended rule, rather than the stale manual deadline.

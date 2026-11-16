@@ -1,525 +1,461 @@
 ---
 name: thailand-vat
-description: "Use this skill whenever asked to prepare, review, or classify transactions for a Thailand VAT (ภาษีมูลค่าเพิ่ม) return (PP.30), classify transactions for Thai VAT purposes, or advise on VAT registration and filing in Thailand. Trigger on phrases like \"ภาษีมูลค่าเพิ่ม\", \"Thai VAT\", \"PP.30\", \"VAT Thailand\", \"Revenue Department Thailand\", or any Thailand VAT request. ALWAYS read this skill before touching any Thailand VAT work."
+description: "Thailand VAT for 2026: PP.30 transaction and input-credit working papers, the enacted rate period, registration, invoice blocks, export-use conditions, PP.36 imported services, evidence-led bank patterns and corrected historical cases."
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/thailand-vat"
   jurisdiction: "TH"
-  tax_year: "2025"
-  last_updated: "2026-07-13"
+  tax_year: "2026"
+  last_updated: "2026-11-16"
 ---
 
-# Thailand VAT
+# Thailand VAT and monthly working papers v2.1
 
-## Section 1 — Quick reference
+> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
-**Quick reference table**
+## Who this applies to
 
-| Field | Value |
-| --- | --- |
-| Country | Thailand (ราชอาณาจักรไทย) |
-| Tax | ภาษีมูลค่าเพิ่ม (Phaasi Mun Lak Phoem — VAT) |
-| Currency | THB (Thai Baht / บาท) |
-| Tax year | Calendar year (1 Jan – 31 Dec) |
-| Standard rate | 7% (reduced from 10%; currently extended to 2025 — verify) |
-| Zero rate | 0% (exports of goods; services provided in Thailand but used abroad; international transport) |
-| Exempt | Agricultural products (unprocessed), educational services, medical/health services, domestic land transport, financial services (interest, insurance premiums), cultural/religious services |
-| Registration threshold | THB 1,800,000/year |
-| Tax authority | กรมสรรพากร Revenue Department (RD) |
-| Return form | แบบ ภ.พ.30 (PP.30) — monthly VAT return |
-| Filing portal | E-Filing: https://efiling.rd.go.th |
-| Filing deadline | 15th of following month (paper); 23rd of following month (e-filing) |
-| Key tax invoice | ใบกำกับภาษี (Bai Kamkap Phaasi) — required for input credit |
-| Tax ID | เลขประจำตัวผู้เสียภาษี (13-digit tax ID) |
-| Contributor | Open Accountants Community |
-| Skill version | 2.0 |
+**2026 answer layer:** prepare PP.30 working papers for a Thai VAT-registered business, keeping exempt supplies, zero rating, blocked input and PP.36 imported-service remittances separate. The ordinary combined rate remains period-bound; never select a tax result from a bank counterparty name alone. Load `vat-workflow-base`.
 
-### Key PP.30 return lines
+**Contributor: Open Accountants Community.** Minimum working input is the monthly bank statement or equivalent complete transaction ledger and proof of VAT registration; without transaction data, stop. Recommended evidence is all sales/purchase tax invoices, prior PP.30 and carried credit; ideal evidence also includes full ledgers, customs/export documents and asset records. A bank statement can start a provisional working paper, but input credits require proper tax documents and a substantive entitlement. No filing-ready output is produced from a statement alone.
 
-**Key PP.30 return lines**
+## Rates, bands and thresholds
 
-| Line | Meaning |
-| --- | --- |
-| 1 | Sales subject to 7% VAT (net) |
-| 2 | Output VAT at 7% |
-| 3 | Zero-rated sales (exports) |
-| 4 | Exempt sales |
-| 5 | Total purchases with input VAT (net) |
-| 6 | Total input VAT claimed |
-| 7 | Net VAT payable (line 2 − line 6) |
-| 8 | Excess input credit carried forward |
-| 9 | Penalties and surcharges (if any) |
-| 10 | Net amount payable |
+| Item | Amount and conditions | Period | Official source |
+|---|---|---|---|
+| Ordinary combined VAT | 7% including local tax; the enacted reduction fixes the Revenue Code component at 6.3% (in words on the page in Decree 807). Do not treat statutory 10% as the current ordinary combined charge | Through 30 September 2027 | [Decree 807 §§2-3 and reduced component](https://www.rd.go.th/fileadmin/user_upload/kormor/newlaw/dc807.pdf); [RD VAT explanation §4, combined rate](https://www.rd.go.th/english/6043.html); [Revenue Code §80, statutory rate](https://www.rd.go.th/5206.html) |
+| Exports and other statutory zero rating | 0% only for qualifying transactions; service exports require foreign-use/payment evidence, exclude organising outbound tours, and zero-rate only the foreign-used portion for mixed use | 2026 | [Notification 105 clauses 2-3 as amended, under Revenue Code §80/1](https://www.rd.go.th/3288.html) |
+| Registration threshold | Annual turnover exceeding THB 1,800,000 for regular taxable supplies; imports and special regimes have their own scope | 2026 | [RD VAT explanation §§1 and 9](https://www.rd.go.th/english/6043.html) |
+| Registration timing | Register before starting where required or within 30 days after reaching the threshold; do not assume every exempt activity must register | 2026 | [RD VAT explanation §9; Revenue Code §§85-85/1](https://www.rd.go.th/english/6043.html) |
+| PP.30 ordinary paper cycle | Monthly, due within the 15th of the following month; branch/consolidated filing follows actual approval | 2026 | [Revenue Code §§83-83/1 (deadline in words on the page)](https://www.rd.go.th/5207.html) |
+| Late-payment surcharge | 1.5% per month or part-month on unpaid tax, excluding penalty; capped at unpaid tax, with the statutory approved-extension exception | 2026 | [Revenue Code §89/1](https://www.rd.go.th/5209.html) |
+| Failure to file | Statutory civil penalty of 2 times the tax due for the month before any lawful remission; separate administrative/criminal rules can also apply | 2026 | [Revenue Code §89(2) (multiplier in words on the page)](https://www.rd.go.th/5209.html) |
+| Understatement | 1 times tax discrepancy under §89(3), with separately stated output/input misstatement rules; do not assume a reduced settlement amount | 2026 | [Revenue Code §89(3)-(4) (multiplier in words on the page)](https://www.rd.go.th/5209.html) |
+| Unauthorised/fake invoice or missing issue | The relevant §89(5)-(7) category can carry 2 times invoice tax, alongside other sanctions; establish the actual offence | 2026 | [Revenue Code §89(5)-(7) (multipliers in words on the page)](https://www.rd.go.th/5209.html) |
 
-### Conservative defaults
+The combined ordinary 7% is stated in the [RD VAT explanation §4](https://www.rd.go.th/english/6043.html); the underlying statutory rate and Royal Decree reduction power are in [Revenue Code §80](https://www.rd.go.th/5206.html). The decree linked in the table fixes the reduced Revenue Code component and its end date.
 
-**Conservative defaults**
+## The base
 
-| Ambiguity | Default |
-| --- | --- |
-| Unknown rate on a sale | 7% standard rate |
-| Unknown counterparty country | Domestic Thailand |
-| Unknown whether export qualifies for 0% | 7% until export evidence confirmed |
-| Unknown business-use % (vehicle, phone) | 0% input credit |
-| Unknown whether tax invoice is compliant | No input credit |
-| Unknown whether supply is exempt or taxable | Taxable at 7% |
-| Unknown B2B vs B2C for cross-border services | B2C — 7% if consumed in Thailand |
+### Compute the supply, then the input entitlement
 
-### Red flag thresholds
+Determine the actual supply, place and tax point before extracting tax from cash. Under the [RD VAT explanation §§3 and 5](https://www.rd.go.th/english/6043.html), the general base is consideration received/receivable excluding VAT; separately disclosed permitted discounts differ from an unexplained net bank deposit. Imported-goods base includes CIF, duty, excise and applicable taxes/fees. Goods and services have different trigger rules, and imported services turn on payment; do not automatically run VAT on a cash-basis bank total. Genuine security and advance payments require their actual contract/tax-point analysis.
 
-**Red flag thresholds**
+For an established VAT-inclusive standard-rate amount, net is gross / 1.07 and VAT gross × 7 / 107, both derived. For an established VAT-exclusive amount, VAT is net × 7%. Do not extract embedded Thai VAT from a foreign invoice merely because its gross-looking amount ends in a familiar decimal.
 
-| Threshold | Value |
-| --- | --- |
-| HIGH single transaction | THB 100,000 |
-| HIGH tax delta on single default | THB 7,000 |
-| MEDIUM counterparty concentration | >40% of output or input |
-| MEDIUM conservative default count | >4 per period |
-| LOW absolute net VAT position | THB 50,000 |
+Exempt differs from zero-rated: an exempt supply does not carry output VAT and ordinarily does not support attributable input credit; qualifying zero-rated taxable supplies can preserve input entitlement. [Section 81](https://www.rd.go.th/5206.html) contains detailed agriculture/food, education, healthcare, domestic land transport, qualifying professional/cultural/religious and other exemptions; rental of immovable property is distinct from every accommodation or related service. Financial-business and insurance treatment can instead involve SBT; never exempt every charge bearing a bank or insurance brand.
 
-## Section 2 — Required inputs and refusal catalogue
+Before claiming input VAT, test registration, directly related taxable business purpose, full tax invoice and required particulars, actual VAT charged or remitted and the legal timing. [Section 82/5](https://www.rd.go.th/5206.html) bars, among other things, missing/defective documents, unrelated expenditure, entertainment and unauthorised invoices. [Notification 17 clause 5](https://www.rd.go.th/3409.html) expressly includes accommodation, food, drinks, entertainment and similar client hospitality, whether beneficial to the business or not. A valid restaurant tax invoice does not remove that block. Separate an ordinary non-entertainment business purchase from hospitality on its actual facts; a restaurant's own sales VAT is a different question.
 
-### Required inputs
+For passenger cars, mixed/private use and related fuel/leases/maintenance, obtain the vehicle classification, use and the specific blocking notification before granting credit; business-use percentage alone does not cure a legal block. For mixed taxable/exempt business, [§82/6](https://www.rd.go.th/5206.html) requires apportionment under the prescribed rules. The former 'escalate only if exempt sales exceed 5%' is not a verified safe harbour; flag every unresolved mixed-use computation. This skill does not provide a fictitious percentage to bypass that review.
 
-**Minimum viable** — bank statement for the month in CSV, PDF, or pasted text. Confirmation of VAT registration number (เลขประจำตัวผู้เสียภาษีอากร).
+### Tax invoices, adjustments and supporting evidence
 
-**Recommended** — ใบกำกับภาษี (tax invoices) for all input credits claimed, sales invoices for all output, prior month PP.30 and credit carried forward.
+[Revenue Code §86/4](https://www.rd.go.th/5208.html) requires the prominent tax-invoice words, seller identity/address/tax identifier, buyer identity/address, serial number, description/quantity/value, separately shown VAT, issue date and prescribed additional particulars. Check the actual required buyer/branch identifiers and VAT status, not the old invented format rule for tax-ID prefixes. Retail abbreviated invoices follow §86/6 and the relevant input-block rules; the original THB 1,000-per-transaction permission was not established. Do not use that amount as a licence to issue or claim an abbreviated invoice.
 
-**Ideal** — complete purchase/sales ledger, export documentation (ใบขนสินค้า customs declaration), asset register.
+Reconcile credit/debit notes, cancellations and corrections to their statutory event and month. [§§82/9-82/11](https://www.rd.go.th/5206.html) addresses increased/decreased consideration and qualifying bad debts; a bank refund alone is not necessarily a tax credit note. Obtain customs VAT receipts and, for eligible remittances, the official receipt treated as tax-invoice evidence under [§86/14](https://www.rd.go.th/5208.html). Preserve the audit trail between document, ledger, bank settlement and return month.
 
-**Refusal if minimum missing — SOFT WARN.** No bank statement = hard stop. "Input VAT credits require compliant ใบกำกับภาษี (tax invoices). All credits are provisional pending invoice verification."
+### Provisional classifications, refusals and review flags
 
-### Refusal catalogue
+Keep all uncertainty visible. Unknown country, B2B/B2C status or rate is pending factual classification, not automatically domestic/B2C/standard rate. An unknown export claim cannot be filed at zero without evidence; any provisional standard-rate reserve must be labelled a working assumption rather than an established liability. Unknown business use or invoice entitlement gets no provisional input claim pending proof.
 
-- **R-TH-1** — Non-VAT registered businesses. "Businesses below the THB 1.8M threshold are not required to register. They cannot charge VAT and cannot recover input VAT. This skill covers VAT-registered businesses only."
-- **R-TH-2** — Special business tax (ธุรกิจเฉพาะ). "Banks, financial institutions, and life insurance companies pay Specific Business Tax (SBT / ภาษีธุรกิจเฉพาะ) instead of VAT. Out of scope."
-- **R-TH-3** — Partial exemption proration. "If the business makes both taxable and exempt supplies, input VAT must be apportioned. The apportionment requires annual sales ratios and is out of scope without the full-year data — escalate."
-- **R-TH-4** — Withholding VAT (VAT ถูกหัก ณ ที่จ่าย). "Government agencies and designated businesses act as VAT withholders — they remit the VAT portion of payments directly to the Revenue Department. If your client has significant government contracts, withholding VAT offsets must be tracked. Flag for specialist review."
-- **R-TH-5** — Digital economy platforms. "Non-resident digital service providers with B2C supplies > THB 1.8M must register under the Digital Economy VAT rules. Out of scope for domestic filers."
+- **R-TH-1, non-registered business:** verify mandatory/voluntary registration, not only turnover. Do not charge VAT or claim input as a registrant without the relevant status; imports/non-resident mechanisms still require analysis.
+- **R-TH-2, SBT:** financial institutions, life insurance and other SBT activities need their own classification; a fee label does not establish which tax applies. Refer the SBT computation.
+- **R-TH-3, partial exemption:** obtain annual taxable/exempt revenue and allocation evidence; refer unresolved apportionment, rather than treating all input as deductible.
+- **R-TH-4, government receipts:** reconcile invoice and the actual deduction certificate. The old assertion that government customers generally withhold the entire VAT is unsupported and must not create a PP.30 credit. [§83/5](https://www.rd.go.th/5207.html) concerns auctioneers selling a registrant's property, including government auction/sale rules, not blanket government-customer withholding. Income-tax withholding is distinct.
+- **R-TH-5, foreign digital B2C:** foreign electronic suppliers/platforms serving non-registered customers require the separate regime; do not run the domestic PP.30 method or claim the supplier's simplified-regime charge as domestic input by analogy.
 
-## Section 3 — Supplier pattern library
+The retained review thresholds are internal triage settings, not Thai law: HIGH transaction THB 100,000; HIGH tax difference from an assumption THB 7,000; MEDIUM counterparty concentration over 40%; MEDIUM more than 4 pending defaults per period; LOW absolute net-VAT position THB 50,000. They never make a transaction legally safe below the setting and never override an unresolved material point. Review software should show the assumption and potential tax difference, not just a traffic-light colour.
 
-Match by case-insensitive substring on counterparty name or reference. Most specific match wins. Fall through to Section 5 if no match.
+### Supplier and transaction pattern library
 
-### 3.1 Thai banks — fees and charges (exempt / exclude)
+Use case-insensitive substring matching, most-specific first, only to create an investigation queue. All former pattern strings are retained below. They do not assign a rate, supplier residence, exemption or input credit. No public supplier-by-supplier ruling was read. Legal classifications follow the actual transaction under [§§80/1, 81 and 82/5](https://www.rd.go.th/5206.html) and [§83/6](https://www.rd.go.th/5207.html).
 
-**Thai banks fees table**
+#### Thai banks: identify the actual fee
 
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| ธนาคารกรุงเทพ, BANGKOK BANK, BBL | EXCLUDE (fee lines) | Financial service — exempt |
-| ธนาคารกสิกรไทย, KASIKORNBANK, KBANK | EXCLUDE (fee lines) | Same |
-| ธนาคารไทยพาณิชย์, SCB, SIAM COMMERCIAL | EXCLUDE (fee lines) | Same |
-| ธนาคารกรุงไทย, KRUNGTHAI, KTB | EXCLUDE (fee lines) | Same |
-| ธนาคารกรุงศรี, KRUNGSRI, BAY, BANK OF AYUDHYA | EXCLUDE (fee lines) | Same |
-| ทีเอ็มบีธนชาต, TTB BANK | EXCLUDE (fee lines) | Same |
-| ธนาคารออมสิน, GOVERNMENT SAVINGS BANK, GSB | EXCLUDE (fee lines) | Same |
-| ธนาคารอิสลาม, ISLAMIC BANK OF THAILAND | EXCLUDE (fee lines) | Same |
-| ค่าธรรมเนียม, ดอกเบี้ย, FEE, INTEREST | EXCLUDE | Bank fee/interest — exempt |
+A bank name is a matching clue. Separate interest/financial-business charges from any taxable service and obtain the actual document. Do not mark every fee exempt or claim input VAT from the bank narrative alone.
 
-### 3.2 Thai government and statutory payments (exclude)
+| Retained original matching pattern | Action |
+|---|---|
+| ธนาคารกรุงเทพ, BANGKOK BANK, BBL | Apply the evidence test immediately above; keep unresolved classification pending. |
+| ธนาคารกสิกรไทย, KASIKORNBANK, KBANK | Apply the evidence test immediately above; keep unresolved classification pending. |
+| ธนาคารไทยพาณิชย์, SCB, SIAM COMMERCIAL | Apply the evidence test immediately above; keep unresolved classification pending. |
+| ธนาคารกรุงไทย, KRUNGTHAI, KTB | Apply the evidence test immediately above; keep unresolved classification pending. |
+| ธนาคารกรุงศรี, KRUNGSRI, BAY, BANK OF AYUDHYA | Apply the evidence test immediately above; keep unresolved classification pending. |
+| ทีเอ็มบีธนชาต, TTB BANK | Apply the evidence test immediately above; keep unresolved classification pending. |
+| ธนาคารออมสิน, GOVERNMENT SAVINGS BANK, GSB | Apply the evidence test immediately above; keep unresolved classification pending. |
+| ธนาคารอิสลาม, ISLAMIC BANK OF THAILAND | Apply the evidence test immediately above; keep unresolved classification pending. |
+| ค่าธรรมเนียม, ดอกเบี้ย, FEE, INTEREST | Apply the evidence test immediately above; keep unresolved classification pending. |
 
-**Thai government payments table**
+#### Government and statutory payments
 
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| กรมสรรพากร, REVENUE DEPARTMENT, RD | EXCLUDE | Tax payment |
-| ภาษีมูลค่าเพิ่ม, ภาษีเงินได้ | EXCLUDE | Tax remittance |
-| ประกันสังคม, SOCIAL SECURITY OFFICE, SSO | EXCLUDE | Social insurance |
-| กรมศุลกากร, CUSTOMS DEPARTMENT | EXCLUDE | Customs duty |
-| กรมสรรพสามิต, EXCISE DEPARTMENT | EXCLUDE | Excise duty |
-| กองทุนเงินทดแทน | EXCLUDE | Compensation fund |
+A payment of tax, duty or a fund contribution itself is a remittance, not an invoice supporting input credit. Investigate separately any goods/services bought from the same authority.
 
-### 3.3 Thai utilities (taxable at 7%)
+| Retained original matching pattern | Action |
+|---|---|
+| กรมสรรพากร, REVENUE DEPARTMENT, RD | Apply the evidence test immediately above; keep unresolved classification pending. |
+| ภาษีมูลค่าเพิ่ม, ภาษีเงินได้ | Apply the evidence test immediately above; keep unresolved classification pending. |
+| ประกันสังคม, SOCIAL SECURITY OFFICE, SSO | Apply the evidence test immediately above; keep unresolved classification pending. |
+| กรมศุลกากร, CUSTOMS DEPARTMENT | Apply the evidence test immediately above; keep unresolved classification pending. |
+| กรมสรรพสามิต, EXCISE DEPARTMENT | Apply the evidence test immediately above; keep unresolved classification pending. |
+| กองทุนเงินทดแทน | Apply the evidence test immediately above; keep unresolved classification pending. |
 
-**Thai utilities table**
+#### Utilities and communications
 
-| Pattern | Treatment | Rate | Notes |
-| --- | --- | --- | --- |
-| การไฟฟ้านครหลวง, MEA, METROPOLITAN ELECTRICITY | Input 7% | 7% | Electricity (Bangkok) — taxable |
-| การไฟฟ้าส่วนภูมิภาค, PEA, PROVINCIAL ELECTRICITY | Input 7% | 7% | Electricity (provinces) — taxable |
-| การประปานครหลวง, MWA, METROPOLITAN WATERWORKS | Input 7% | 7% | Water (Bangkok) — taxable |
-| การประปาส่วนภูมิภาค, PWA, PROVINCIAL WATERWORKS | Input 7% | 7% | Water (provinces) — taxable |
-| ปตท, PTT, PTT PUBLIC | Input 7% | 7% | Natural gas/fuel — taxable |
-| AIS, ADVANCED INFO SERVICE | Input 7% | 7% | Mobile/internet — taxable |
-| DTAC, TOTAL ACCESS | Input 7% | 7% | Mobile — taxable |
-| TRUE MOVE, TRUE CORPORATION | Input 7% | 7% | Mobile/internet — taxable |
-| DITO THAILAND | Input 7% | 7% | Mobile — taxable |
-| ทีโอที, TOT | Input 7% | 7% | Fixed-line — taxable |
+Obtain the actual registered seller, full tax invoice, taxable supply, tax point and business use. Only supported, directly related and non-blocked VAT can enter input credit; a merchant name does not prove a rate or invoice.
 
-### 3.4 Transport and logistics
+| Retained original matching pattern | Action |
+|---|---|
+| การไฟฟ้านครหลวง, MEA, METROPOLITAN ELECTRICITY | Apply the evidence test immediately above; keep unresolved classification pending. |
+| การไฟฟ้าส่วนภูมิภาค, PEA, PROVINCIAL ELECTRICITY | Apply the evidence test immediately above; keep unresolved classification pending. |
+| การประปานครหลวง, MWA, METROPOLITAN WATERWORKS | Apply the evidence test immediately above; keep unresolved classification pending. |
+| การประปาส่วนภูมิภาค, PWA, PROVINCIAL WATERWORKS | Apply the evidence test immediately above; keep unresolved classification pending. |
+| ปตท, PTT, PTT PUBLIC | Apply the evidence test immediately above; keep unresolved classification pending. |
+| AIS, ADVANCED INFO SERVICE | Apply the evidence test immediately above; keep unresolved classification pending. |
+| DTAC, TOTAL ACCESS | Apply the evidence test immediately above; keep unresolved classification pending. |
+| TRUE MOVE, TRUE CORPORATION | Apply the evidence test immediately above; keep unresolved classification pending. |
+| DITO THAILAND | Apply the evidence test immediately above; keep unresolved classification pending. |
+| ทีโอที, TOT | Apply the evidence test immediately above; keep unresolved classification pending. |
 
-**Transport and logistics table**
+#### Transport and logistics
 
-| Pattern | Treatment | Rate | Notes |
-| --- | --- | --- | --- |
-| การรถไฟ, SRT, STATE RAILWAY OF THAILAND | EXEMPT | 0% | Domestic land transport — exempt |
-| รถไฟฟ้าบีทีเอส, BTS SKYTRAIN | EXEMPT | 0% | Mass transit — exempt |
-| รถไฟฟ้ามหานคร, MRT BANGKOK | EXEMPT | 0% | Mass transit — exempt |
-| บริษัท ขนส่ง, TRANSPORT CO (bus) | EXEMPT | 0% | Public bus — exempt |
-| การบินไทย, THAI AIRWAYS, TG | Check route | 0%/7% | International 0%; domestic 7% |
-| แอร์เอเชีย, AIR ASIA, FD | Check route | 0%/7% | International 0%; domestic 7% |
-| บางกอก แอร์เวยส์, BANGKOK AIRWAYS | Check route | 0%/7% | Domestic 7%; international 0% |
-| GRAB THAILAND | Input 7% | 7% | Ride-hailing — taxable |
-| BOLT THAILAND | Input 7% | 7% | Ride-hailing — taxable |
-| LINEMAN, LINE MAN | Input 7% | 7% | Delivery platform — taxable |
-| ไปรษณีย์ไทย, THAILAND POST | Input 7% | 7% | Parcel services — taxable |
-| KERRY EXPRESS, KERRY LOGISTICS | Input 7% | 7% | Courier — taxable |
-| FLASH EXPRESS, แฟลช เอ็กซ์เพรส | Input 7% | 7% | Courier — taxable |
-| J&T EXPRESS THAILAND | Input 7% | 7% | Courier — taxable |
+Identify passenger/freight, route and actual supplier/service. Domestic land transport can be exempt; a platform commission, courier package or air service is not decided by the brand. International air/sea zero rating has the statutory provider/route conditions. The original domestic-water passenger-transport topic is retained: test the actual service under [§81(1)(ณ), domestic transport, and §81/3](https://www.rd.go.th/5206.html). Domestic water transport is within that exemption analysis, but [Royal Decree 241 §3(4), as amended by 521](https://www.rd.go.th/2382.html) permits voluntary VAT registration for domestic sea transport by seagoing vessel, including sea-to-river transport by seagoing vessel. Establish the route, vessel/service and the supplier's actual VAT election/registration before treating a water ticket as exempt or accepting an input-tax claim. A separate platform/courier/service fee does not inherit a transport exemption by name.
 
-### 3.5 Food and retail
+| Retained original matching pattern | Action |
+|---|---|
+| การรถไฟ, SRT, STATE RAILWAY OF THAILAND | Apply the evidence test immediately above; keep unresolved classification pending. |
+| รถไฟฟ้าบีทีเอส, BTS SKYTRAIN | Apply the evidence test immediately above; keep unresolved classification pending. |
+| รถไฟฟ้ามหานคร, MRT BANGKOK | Apply the evidence test immediately above; keep unresolved classification pending. |
+| บริษัท ขนส่ง, TRANSPORT CO (bus) | Apply the evidence test immediately above; keep unresolved classification pending. |
+| การบินไทย, THAI AIRWAYS, TG | Apply the evidence test immediately above; keep unresolved classification pending. |
+| แอร์เอเชีย, AIR ASIA, FD | Apply the evidence test immediately above; keep unresolved classification pending. |
+| บางกอก แอร์เวยส์, BANGKOK AIRWAYS | Apply the evidence test immediately above; keep unresolved classification pending. |
+| GRAB THAILAND | Apply the evidence test immediately above; keep unresolved classification pending. |
+| BOLT THAILAND | Apply the evidence test immediately above; keep unresolved classification pending. |
+| LINEMAN, LINE MAN | Apply the evidence test immediately above; keep unresolved classification pending. |
+| ไปรษณีย์ไทย, THAILAND POST | Apply the evidence test immediately above; keep unresolved classification pending. |
+| KERRY EXPRESS, KERRY LOGISTICS | Apply the evidence test immediately above; keep unresolved classification pending. |
+| FLASH EXPRESS, แฟลช เอ็กซ์เพรส | Apply the evidence test immediately above; keep unresolved classification pending. |
+| J&T EXPRESS THAILAND | Apply the evidence test immediately above; keep unresolved classification pending. |
 
-**Food and retail table**
+#### Food and retail
 
-| Pattern | Treatment | Rate | Notes |
-| --- | --- | --- | --- |
-| เซเว่น-อีเลฟเว่น, 7-ELEVEN THAILAND, CPF | Input 7% | 7% | All items 7% in Thailand (no food reduced rate) |
-| เทสโก้ โลตัส, TESCO LOTUS, LOTUS'S | Input 7% | 7% | Hypermarket — 7% on all |
-| บิ๊กซี, BIG C SUPERCENTER | Input 7% | 7% | Hypermarket — 7% |
-| แม็คโคร, MAKRO | Input 7% | 7% | Wholesale — 7% |
-| ท็อปส์ มาร์เก็ต, TOPS MARKET | Input 7% | 7% | Supermarket — 7% |
-| ครัวบ้าน (RESTAURANT) | Input 7% | 7% | Restaurant — taxable (no block in Thailand) |
-| แมคโดนัลด์, MCDONALD'S THAILAND | Input 7% | 7% | Fast food — 7% |
-| KFC THAILAND | Input 7% | 7% | Fast food — 7% |
+Split actual goods/services on the invoice. Qualifying unprocessed agricultural goods can be exempt even in a supermarket. Restaurant output tax does not make client entertainment input creditable. No all-items standard-rate rule follows from a store name.
 
-### 3.6 SaaS — local Thai suppliers (7%)
+| Retained original matching pattern | Action |
+|---|---|
+| เซเว่น-อีเลฟเว่น, 7-ELEVEN THAILAND, CPF | Apply the evidence test immediately above; keep unresolved classification pending. |
+| เทสโก้ โลตัส, TESCO LOTUS, LOTUS'S | Apply the evidence test immediately above; keep unresolved classification pending. |
+| บิ๊กซี, BIG C SUPERCENTER | Apply the evidence test immediately above; keep unresolved classification pending. |
+| แม็คโคร, MAKRO | Apply the evidence test immediately above; keep unresolved classification pending. |
+| ท็อปส์ มาร์เก็ต, TOPS MARKET | Apply the evidence test immediately above; keep unresolved classification pending. |
+| ครัวบ้าน (RESTAURANT) | Apply the evidence test immediately above; keep unresolved classification pending. |
+| แมคโดนัลด์, MCDONALD'S THAILAND | Apply the evidence test immediately above; keep unresolved classification pending. |
+| KFC THAILAND | Apply the evidence test immediately above; keep unresolved classification pending. |
 
-**Local SaaS table**
+#### Locally billed SaaS and platforms
 
-| Pattern | Treatment | Rate | Notes |
-| --- | --- | --- | --- |
-| JOBBKK, จ๊อบบีเคเค | Input 7% | 7% | Thai job board — taxable |
-| JOBSDB THAILAND | Input 7% | 7% | HR platform — taxable |
-| WONGNAI | Input 7% | 7% | Thai platform — taxable |
-| LAZADA THAILAND (local entity) | Input 7% | 7% | E-commerce — taxable |
-| SHOPEE THAILAND (local entity) | Input 7% | 7% | E-commerce — taxable |
+Check the actual billing entity, Thai VAT registration, service and invoice. A locally familiar platform name alone does not establish a domestic taxable invoice or input entitlement.
 
-### 3.7 SaaS — international suppliers (reverse charge)
+| Retained original matching pattern | Action |
+|---|---|
+| JOBBKK, จ๊อบบีเคเค | Apply the evidence test immediately above; keep unresolved classification pending. |
+| JOBSDB THAILAND | Apply the evidence test immediately above; keep unresolved classification pending. |
+| WONGNAI | Apply the evidence test immediately above; keep unresolved classification pending. |
+| LAZADA THAILAND (local entity) | Apply the evidence test immediately above; keep unresolved classification pending. |
+| SHOPEE THAILAND (local entity) | Apply the evidence test immediately above; keep unresolved classification pending. |
 
-- **Reverse charge rule for foreign digital B2B services** — For B2B digital services received from abroad: the Thai VAT-registered recipient must self-assess and remit 7% VAT (under the reverse charge equivalent). Foreign suppliers with B2C sales > THB 1.8M must register separately.
+#### International SaaS and other services
 
-**International SaaS reverse charge table**
+Verify the actual contracting/billing entity and service used in Thailand. For foreign electronic B2B supplies to a registered recipient, test PP.36 remittance; for B2C test the foreign-supplier/platform regime. Former regional billing hints are preserved as historical leads, not current entity assertions.
 
-| Pattern | Billing entity | Treatment | Notes |
-| --- | --- | --- | --- |
-| GOOGLE (Workspace, Ads, Cloud) | Google Asia Pacific | Reverse charge 7% | Self-assess and remit |
-| MICROSOFT (365, Azure) | Microsoft regional | Reverse charge 7% | Self-assess |
-| ADOBE | Adobe Inc (US) | Reverse charge 7% | Self-assess |
-| META, FACEBOOK ADS | Meta Ireland/US | Reverse charge 7% | Self-assess |
-| SLACK | Salesforce/Slack | Reverse charge 7% | Self-assess |
-| ZOOM | Zoom Video | Reverse charge 7% | Self-assess |
-| NOTION | Notion Labs (US) | Reverse charge 7% | Self-assess |
-| ANTHROPIC, CLAUDE | Anthropic (US) | Reverse charge 7% | Self-assess |
-| OPENAI, CHATGPT | OpenAI (US) | Reverse charge 7% | Self-assess |
-| AWS | Amazon (US/SG) | Reverse charge 7% | Self-assess |
+| Retained original matching pattern | Action |
+|---|---|
+| GOOGLE (Workspace, Ads, Cloud); former billing hint: Google Asia Pacific | Apply the evidence test immediately above; keep unresolved classification pending. |
+| MICROSOFT (365, Azure); former billing hint: Microsoft regional | Apply the evidence test immediately above; keep unresolved classification pending. |
+| ADOBE; former billing hint: Adobe Inc (US) | Apply the evidence test immediately above; keep unresolved classification pending. |
+| META, FACEBOOK ADS; former billing hint: Meta Ireland/US | Apply the evidence test immediately above; keep unresolved classification pending. |
+| SLACK; former billing hint: Salesforce/Slack | Apply the evidence test immediately above; keep unresolved classification pending. |
+| ZOOM; former billing hint: Zoom Video | Apply the evidence test immediately above; keep unresolved classification pending. |
+| NOTION; former billing hint: Notion Labs (US) | Apply the evidence test immediately above; keep unresolved classification pending. |
+| ANTHROPIC, CLAUDE; former billing hint: Anthropic (US) | Apply the evidence test immediately above; keep unresolved classification pending. |
+| OPENAI, CHATGPT; former billing hint: OpenAI (US) | Apply the evidence test immediately above; keep unresolved classification pending. |
+| AWS; former billing hint: Amazon (US/SG) | Apply the evidence test immediately above; keep unresolved classification pending. |
 
-### 3.8 Payment processors (exempt)
+#### Payment processors
 
-**Payment processors table**
+Split interest/financial-business treatment from processing, technology or other service fees and determine the actual foreign/local supplier. Do not blanket-exempt payment processors; a foreign service may require PP.36 analysis.
 
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| STRIPE (transaction fees) | EXCLUDE | Financial service — exempt |
-| PAYPAL (fees) | EXCLUDE | Same |
-| OMISE (fees) | EXCLUDE | Thai payment gateway — exempt fees |
-| 2C2P (fees) | EXCLUDE | Thai payment processor — exempt fees |
+| Retained original matching pattern | Action |
+|---|---|
+| STRIPE (transaction fees) | Apply the evidence test immediately above; keep unresolved classification pending. |
+| PAYPAL (fees) | Apply the evidence test immediately above; keep unresolved classification pending. |
+| OMISE (fees) | Apply the evidence test immediately above; keep unresolved classification pending. |
+| 2C2P (fees) | Apply the evidence test immediately above; keep unresolved classification pending. |
 
-### 3.9 Internal transfers and exclusions
+#### Internal transfers, principal and other movements
 
-**Internal transfers table**
+Trace the underlying event: an internal movement/loan principal is not consideration for a sale; salary is employment, not a VAT invoice. Identify dividend, security deposit versus advance consideration, or cash use from documents. Cash withdrawals remain pending, not assumed business input.
 
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| โอนเงินภายใน, INTERNAL TRANSFER | EXCLUDE | Internal movement |
-| เงินกู้, LOAN, เงินให้กู้ | EXCLUDE | Loan principal |
-| เงินเดือน, SALARY, ค่าจ้าง | EXCLUDE | Wages — outside VAT scope |
-| เงินปันผล, DIVIDEND | EXCLUDE | Out of scope |
-| เงินประกัน, DEPOSIT | EXCLUDE | Deposit — out of scope until applied |
-| ถอนเงินสด, ATM | Tier 2 — ask | Default exclude |
+| Retained original matching pattern | Action |
+|---|---|
+| โอนเงินภายใน, INTERNAL TRANSFER | Apply the evidence test immediately above; keep unresolved classification pending. |
+| เงินกู้, LOAN, เงินให้กู้ | Apply the evidence test immediately above; keep unresolved classification pending. |
+| เงินเดือน, SALARY, ค่าจ้าง | Apply the evidence test immediately above; keep unresolved classification pending. |
+| เงินปันผล, DIVIDEND | Apply the evidence test immediately above; keep unresolved classification pending. |
+| เงินประกัน, DEPOSIT | Apply the evidence test immediately above; keep unresolved classification pending. |
+| ถอนเงินสด, ATM | Apply the evidence test immediately above; keep unresolved classification pending. |
 
-## Section 4 — Worked examples
+### Bank statement reading guide
 
-Six classifications from a hypothetical Bangkok-based IT consultant. Format: ธนาคารกสิกรไทย (KBank) CSV export. Note: Thai calendar uses Buddhist Era (BE) — 2568 = 2025 CE.
+The original export-field hints are retained as practical examples, not current specifications certified by the banks. KBank/ธ.กสิกรไทย: วันที่, รายการ, ถอน/โอนออก, ฝาก/โอนเข้า, ยอดคงเหลือ; SCB/ธ.ไทยพาณิชย์: Date, Description, Debit, Credit, Balance; BBL/ธ.กรุงเทพ: วันที่ทำรายการ, คำอธิบาย, ถอน, ฝาก, ยอดคงเหลือ; KTB/ธ.กรุงไทย: Date, Narrative, Withdrawal, Deposit, Balance; Krungsri/ธ.กรุงศรี: วันที่, รายละเอียด, เดบิต, เครดิต, ยอดเงินคงเหลือ. Check the actual header, debit/credit sign, currency and date convention in the supplied file. A Thai-style date may be BE rather than CE; subtract 543 for the calendar conversion (derived), do not change document references blindly.
 
-### Example 1 — Domestic B2B revenue (7%)
+โอนเงินรับ / รับโอน means incoming transfer and is only a revenue candidate; โอนเงิน / ตัดบัญชี is transfer/debit; หักค่า is auto-deduction; ดอกเบี้ย is interest; ค่าธรรมเนียม is fee; ยอดคงเหลือ is balance, not a new transaction; รายการ / คำอธิบาย is the description; ถอนเงิน / ATM is cash withdrawal requiring tracing; เงินเดือน is salary. Neither the Thai term nor an English alias proves the VAT treatment.
 
-**Input line:**
+### Working paper and onboarding fallback
+
+Use the following schedule with supporting-document references and an unresolved-items column. It preserves the original A/B/C structure while correcting the treatment of imported-service VAT and unsupported 'withholding VAT' credits.
+
+```text
+THAILAND VAT WORKING PAPER / แบบคำนวณภาษีมูลค่าเพิ่ม
+Period (เดือน): ____  VAT Registration No.: ____  Branch/approval: ____
+A. OUTPUT
+ A1. Standard-rated sales, net ____
+ A2. Domestic output VAT on A1 ____
+ A3. Qualifying zero-rated sales ____
+ A4. Exempt sales ____
+ A5. PP.36 imported-service VAT remitted separately; not domestic output ____
+B. INPUT
+ B1. Supported domestic purchases, net ____
+ B2. Eligible domestic VAT ____
+ B3. Eligible customs VAT with receipt ____
+ B4. Eligible PP.36 VAT with receipt, in the proper credit month ____
+ B5. Total potential input B2+B3+B4 ____
+ B6. Blocked/private/unsupported/apportioned-away input ____
+ B7. Eligible input B5-B6 ____
+C. PP.30
+ C1. A2-B7 ____
+ C2. Government/customer deductions: reconcile separately, no assumed VAT credit ____
+ C3. Proper unclaimed prior-period carry-forward ____
+ C4. Current payable/credit after supported carry-forward ____
+SEPARATE CASH PAYMENT: PP.36 amount A5 ____; do not net away this remittance.
+REVIEW: invoices; export use/payment evidence; government deduction certificates;
+        PP.36 receipts/timing; vehicle blocks/business use; prior credits;
+        private use, corrections, branch authority and tax-point dates.
+```
+
+If the client cannot answer everything immediately, first reconcile complete transactions using the pattern library as clues, list unresolved classifications without inventing country/rate, keep unsupported input unclaimed, then produce a flagged working paper. Ask for the registration/tax identifier and branch, statement month and BE/CE convention, actual export use/payment evidence, government deduction documents, vehicle facts, full tax invoices, prior excess credit and all foreign SaaS/service invoices. A provisional reserve is not an instruction to file an assumed treatment. No bank statement/equivalent ledger means hard stop; missing invoices mean provisional preparation only.
+
+## Deadlines and filing
+
+### PP.30 form mapping and submission
+
+The opened official [PP.30 paper form and both-page instructions](https://www.rd.go.th/fileadmin/tax_pdf/vat/pp30_300160.pdf) has this mapping, replacing the original invented shorthand. Its URL identifies the older paper-form revision; use current e-Filing labels and reconcile any changed layout rather than asserting a signed-in 2026 screen was read.
+
+| Paper item | Meaning | Official source |
+|---|---|---|
+| 1 | All sales in the month, including taxable, zero-rated and exempt sales under the instructions | [PP.30 both pages](https://www.rd.go.th/fileadmin/tax_pdf/vat/pp30_300160.pdf) |
+| 2 | Deduct zero-rated sales | [PP.30 item 2](https://www.rd.go.th/fileadmin/tax_pdf/vat/pp30_300160.pdf) |
+| 3 | Deduct exempt sales | [PP.30 item 3](https://www.rd.go.th/fileadmin/tax_pdf/vat/pp30_300160.pdf) |
+| 4 | Standard-taxable sales after 1 minus 2 minus 3, derived | [PP.30 item 4](https://www.rd.go.th/fileadmin/tax_pdf/vat/pp30_300160.pdf) |
+| 5 | Output tax from the output-tax report | [PP.30 item 5](https://www.rd.go.th/fileadmin/tax_pdf/vat/pp30_300160.pdf) |
+| 6 | Purchases eligible for the current input deduction | [PP.30 item 6](https://www.rd.go.th/fileadmin/tax_pdf/vat/pp30_300160.pdf) |
+| 7 | Eligible input tax, not the old item-6 shorthand | [PP.30 item 7](https://www.rd.go.th/fileadmin/tax_pdf/vat/pp30_300160.pdf) |
+| 8-9 | Current tax payable or excess input respectively, derived from 5 and 7 | [PP.30 items 8-9](https://www.rd.go.th/fileadmin/tax_pdf/vat/pp30_300160.pdf) |
+| 10 | Proper unrefunded prior-month excess credit; not used in an additional return under these instructions | [PP.30 item 10 and instructions](https://www.rd.go.th/fileadmin/tax_pdf/vat/pp30_300160.pdf) |
+| 11-12 | Net payable or overpayment after the allowed carry-forward | [PP.30 items 11-12](https://www.rd.go.th/fileadmin/tax_pdf/vat/pp30_300160.pdf) |
+| 13-16 | Surcharge, civil penalty, final payable or final excess; establish any lawful reductions independently | [PP.30 items 13-16](https://www.rd.go.th/fileadmin/tax_pdf/vat/pp30_300160.pdf) |
+
+Reconcile sales/purchase reports, branch approval, prior credit, corrections and supporting invoices. Follow the [official e-Filing route](https://www.rd.go.th/rdeservice/63813.html), select PP.30, taxpayer, branch, tax month/BE year and original/additional return. Populate the fields by their actual labels, compare the totals with the working paper, select the lawful carry-forward/refund treatment, review and submit, pay with the generated reference, and retain the return, acknowledgement and receipt. Multi-establishment consolidated filing requires actual approval; otherwise separate filing applies under [§83](https://www.rd.go.th/5207.html). File the monthly return even when there is no tax to pay under the statutory reporting requirement.
+
+The statutory paper due date is in the rates table. The opened [RD electronic calendar](https://www.rd.go.th/26/9835.html) specifically lists 23 September 2026 for PP.30; it is evidence for that period, not authority for an automatic date in every month. The old standing '23rd e-filing' headline must be checked against the actual month, extension instrument and holidays. PP.36 has its own remittance timing, not PP.30's paper deadline.
+
+### Imported services and PP.36
+
+Under [§83/6(2)](https://www.rd.go.th/5207.html), the recipient remits VAT for foreign electronic services used by a VAT registrant and for other foreign services used in Thailand by any recipient within that provision. Do not reduce this to only digital SaaS. Foreign electronic B2C is treated separately under [§82/13](https://www.rd.go.th/5206.html). Verify recipient registration and the actual supplier rather than defaulting to B2C.
+
+Prepare PP.36 from the actual foreign-service payment, its date, currency conversion, service and supplier evidence. Remit it separately through the official service. The resulting official receipt is the evidence for an eligible input claim under §86/14, subject to substantive blocks and the proper credit period. It is not domestic output VAT and cannot be erased by a simultaneous notional input entry in PP.30. The exact current PP.36 electronic due-date extension/portal fields remain to be verified before submission.
+
+## Penalties and interest
+
+Use the actual default and statutory base, not a generic THB 300-500 settlement assumption. Section 89 distinguishes non-registration, no return, understated tax, output/input misstatement, missing or unauthorised/fake invoices and missing records; any remission requires the applicable instruction and facts. Section 89/1 surcharge counts a month or part and is capped; do not apply it to the penalty itself. Administrative/criminal offences under §90 and its subdivisions are separate, so an invoice default is not resolved by the original universal 'THB 2,000 per invoice' claim. Escalate fraudulent documents immediately.
+
+## Cross-border points
+
+For export services, [Notification 105 clauses 2-3, amended by 181](https://www.rd.go.th/3288.html) requires a foreign recipient and actual foreign use, with only the foreign-use part zero-rated where use is mixed. Clause 2(1) expressly excludes organising outbound tours from this export-service definition; foreign use and a foreign customer do not establish zero rating for that excluded activity. Evidence of payment is required subject to the no-consideration exception; the enumerated evidence is broader than foreign currency alone. Keep the contract, deliverables/use analysis, invoices and matching payment trace. A foreign payer, USD receipt or foreign bank account alone is not sufficient; neither is a missing FX receipt automatically proof of a taxable domestic supply. International air/sea transport has its specific provider conditions; domestic or international land transport follows its exemption rule, not an all-international-zero rule.
+
+Foreign goods/import VAT, foreign services/PP.36, non-resident electronic B2C, SBT and real estate are distinct jobs. Refer their unsupported special regimes rather than labelling an overseas transfer zero-rated or financial-exempt. The legacy reference to Royal Decree 694 as the complete digital-services law is not used: the current consolidated §§82/13 and 83/6 show the amended rules directly.
+
+## Two worked examples that recompute
+
+The original six hypothetical bank lines are retained verbatim, dated in 2025 (BE 2568). They are historical fixtures, not evidence of live suppliers or a 2026 transaction. The ordinary rate assumption is supported for that period and the current reduction is separately bounded above. Corrected classifications follow the actual assumed facts, not the names alone.
+
+### Original case 1: domestic IT-consulting sale
+
 `15/04/2568  โอนเงินรับ  บริษัท เทค โซลูชั่น จำกัด  เลขที่: INV-2025-041  +535,000.00  THB`
 
-**Reasoning:**
-Incoming THB 535,000 from a Thai company for IT consulting. Standard 7% VAT. Gross THB 535,000 includes VAT. Net = THB 500,000 (taxable base) + THB 35,000 output VAT. A ใบกำกับภาษี (tax invoice) must be issued showing the client's 13-digit tax ID, seller's registration, and VAT breakdown. Report net on PP.30 line 1.
+Assume the documents establish a domestic standard-rated consulting sale and the receipt includes VAT. Net THB 500,000 and output VAT THB 35,000 follow. Issue the proper tax invoice; sales enter the appropriate PP.30 sales fields and output tax is item 5 on the opened paper form, not the old item-2 claim.
 
-**Classification:** Output VAT 7% — THB 35,000. Net sales: THB 500,000.
+```oa-check
+name: Thailand domestic inclusive sale original case
+inputs:
+  gross: 535000
+steps:
+  - net: gross / 1.07
+  - output: gross - net
+expected:
+  net: 500000
+  output: 35000
+```
 
-### Example 2 — Export service (zero-rated)
+### Original case 2: export-service evidence
 
-**Input line:**
 `22/04/2568  รับโอนเงินตราต่างประเทศ  ACME CORP USA  Technical consulting Q1  +USD 15,000 (THB 540,000)`
 
-**Reasoning:**
-USD receipt from a US company for services used abroad. Zero-rated export service. Evidence: contract showing foreign client, services performed for use outside Thailand, FX transfer record. Report THB 540,000 on PP.30 line 3 (zero-rated). Output VAT: THB 0. If export qualification cannot be confirmed: default 7%.
+Assume an ordinary consulting service within Notification 105 clause 2(1), not outbound-tour organising, a foreign recipient, wholly foreign use and the required matching payment/use evidence, with the given documented THB conversion. Qualifying export revenue THB 540,000 has output VAT THB 0. Zero-rated sales are item 2 on the opened paper form, not the old item 3. If evidence is missing, hold the classification for review; do not describe a standard-rate reserve as proven law. The hypothetical exchange conversion is supplied, not a statutory exchange rate.
 
-**Classification:** Zero-rated — THB 540,000. Output VAT: THB 0.
+```oa-check
+name: Thailand original wholly foreign-used service
+inputs:
+  documented_thb_value: 540000
+  qualifying_rate: 0
+steps:
+  - output: documented_thb_value * qualifying_rate
+expected:
+  output: 0
+```
 
-### Example 3 — Utility expense (7%, input credit)
+### Original case 3: utility invoice
 
-**Input line:**
 `10/04/2568  หักค่าไฟฟ้า  การไฟฟ้านครหลวง MEA  ค่าไฟ มีนาคม 2568  -10,700.00  THB`
 
-**Reasoning:**
-Monthly electricity from MEA (Metropolitan Electricity Authority). Taxable at 7%. Gross THB 10,700. Net = THB 10,000 + THB 700 input VAT. MEA issues a compliant ใบกำกับภาษี — input credit of THB 700 claimable. Report on PP.30 line 6.
+Assume actual taxable business electricity, a full eligible invoice and the proper input month. THB 10,700 inclusive gives THB 10,000 net and THB 700 potential input. It enters eligible input item 7 on the opened paper form only after entitlement/timing checks; the merchant string itself proves neither.
 
-**Classification:** Input VAT 7% — THB 700. Net expense: THB 10,000.
+```oa-check
+name: Thailand original eligible utility invoice
+inputs:
+  gross: 10700
+steps:
+  - net: gross / 1.07
+  - input: gross - net
+expected:
+  net: 10000
+  input: 700
+```
 
-### Example 4 — International SaaS (reverse charge)
+### Original case 4: foreign SaaS remittance, corrected
 
-**Input line:**
 `08/04/2568  ตัดบัญชี  GOOGLE ASIA PACIFIC  Google Workspace April  -3,210.00  THB`
 
-**Reasoning:**
-Google Workspace billed from Singapore entity. Foreign B2B digital service. Thai VAT-registered business must self-assess 7% VAT. THB 3,210 is net; self-assessed VAT = THB 3,210 × 7% = THB 225. This appears as both output (PP.30 line 2) and input (PP.30 line 6) — net effect zero for a fully taxable business. Must be documented separately.
+Assume the actual invoice proves a foreign service used in Thailand, a registered recipient and a VAT-exclusive price THB 3,210. PP.36 remittance is THB 224.70, not THB 225. If fully eligible and supported by the official remittance receipt in the proper month, potential input is THB 224.70. The separate cash remittance still has to be paid; do not add it as domestic PP.30 output or assume same-month recovery. The billing entity and tax-exclusive assumption require evidence.
 
-**Classification:** Reverse charge 7% — self-assess THB 225 output; THB 225 input credit.
+```oa-check
+name: Thailand original foreign SaaS corrected arithmetic
+inputs:
+  foreign_net: 3210
+  rate: 0.07
+steps:
+  - pp36_payment: foreign_net * rate
+  - potential_eligible_input: pp36_payment
+  - cash_to_supplier_and_rd: foreign_net + pp36_payment
+expected:
+  pp36_payment: 224.7
+  potential_eligible_input: 224.7
+  cash_to_supplier_and_rd: 3434.7
+```
 
-### Example 5 — Exempt transport (Bangkok MRT)
+### Original case 5: MRT passenger fare
 
-**Input line:**
 `05/04/2568  ตัดบัญชี  MRT กรุงเทพ  ค่าโดยสาร  -1,200.00  THB`
 
-**Reasoning:**
-MRT (mass rapid transit) fare. Domestic land passenger transport is exempt from VAT under the Revenue Code. No input VAT on the purchase. EXCLUDE from VAT computation. This is a business expense for income tax but generates no input credit.
+Assume the ticket establishes exempt domestic land passenger transport. Expense THB 1,200 has no input VAT to recover. Exempt is not a zero-rated purchase, and the income-tax expense is a separate question.
 
-**Classification:** EXEMPT — no input VAT. Exclude from PP.30.
+```oa-check
+name: Thailand original exempt domestic passenger fare
+inputs:
+  fare: 1200
+  vat_shown: 0
+steps:
+  - input_credit: vat_shown
+  - expense_before_income_tax_review: fare - input_credit
+expected:
+  input_credit: 0
+  expense_before_income_tax_review: 1200
+```
 
-### Example 6 — Restaurant (7%, no block in Thailand)
+### Original case 6: client hospitality, corrected
 
-**Input line:**
 `12/04/2568  บัตรเครดิต  ร้านอาหาร ครัวไทย  อาหารกลางวัน ลูกค้า  -3,210.00  THB`
 
-**Reasoning:**
-Restaurant meal for a client lunch. In Thailand — unlike Malta or the UK — there is no absolute block on entertainment or meal input VAT. Meals at restaurants are taxable at 7%. A compliant tax invoice from the restaurant gives input credit. However, to be safe: flag if no ใบกำกับภาษี is available. Thai Revenue Department scrutinises entertainment claims — ensure business purpose is documented.
+The original narrative identifies a client lunch. Even assuming a valid standard-rated full tax invoice, supplier VAT THB 210 is blocked as entertainment under §82/5(4)/Notification 17. Recoverable input is THB 0; the unrecovered cost is THB 3,210 before separate income-tax deductibility. The former THB 210 input-credit instruction and 'never block entertainment categorically' prohibition were wrong.
 
-**Classification:** Input VAT 7% — THB 210 (if compliant tax invoice held). Net expense: THB 3,000. Flag: confirm ใบกำกับภาษี available.
-
-## Section 5 — Tier 1 rules (compressed)
-
-### 5.1 Standard rate 7%
-
-- **Standard rate** — 7% (Default rate for all taxable supplies. Reduced from statutory 10% by Royal Decree; extensions renewed periodically.)  _(Revenue Code (ประมวลรัษฎากร) Section 80; Royal Decree on VAT rate reduction)_
-
-### 5.2 Zero rate 0%
-
-- **Zero rate** — 0% (Exports of goods and services used outside Thailand; international transport of goods and passengers; services rendered in Thailand but consumed entirely abroad (evidence required).)  _(Revenue Code Section 80/1)_
-
-### 5.3 Exempt supplies
-
-- **Exempt supplies** — Agricultural products (raw/unprocessed), educational services, health and medical services, domestic passenger transport (land and water), residential rent, interest/financial services, insurance, cultural/religious services. No output VAT; no input credit on attributable costs.  _(Revenue Code Section 81)_
-
-### 5.4 Tax invoice (ใบกำกับภาษี) requirements
-
-- **Tax invoice requirements** — Required fields: seller's name/address/tax ID, buyer's name/address/tax ID (for B2B), sequential invoice number, date, description, net amount, VAT rate, VAT amount. A simplified tax invoice (ใบกำกับภาษีอย่างย่อ) is allowed for retail sales below THB 1,000 per transaction but does not support input credit claims.
-
-### 5.5 Withholding VAT
-
-- **Withholding VAT process** — When government agencies or designated private companies pay a VAT-registered supplier, they withhold the VAT portion (7%) and remit it directly to the Revenue Department. The supplier records the full sale (including VAT) as revenue but receives only the net amount. The withheld VAT is credited against PP.30 output tax. Track withholding tax certificates (ใบรับรองการหักภาษี ณ ที่จ่าย).
-
-### 5.6 Registration threshold
-
-- **Registration threshold** — THB 1,800,000 THB/year (Once exceeded, must register within 30 days. Voluntary registration available below the threshold.)  _(Revenue Code Section 85)_
-
-### 5.7 Filing deadlines
-
-**Filing deadlines table**
-
-| Method | Deadline |
-| --- | --- |
-| Paper filing | 15th of following month |
-| E-filing (efiling.rd.go.th) | 23rd of following month |
-| Late surcharge | 1.5% per month on unpaid VAT |
-| Late filing penalty | THB 300–500 |
-
-### 5.8 Penalties
-
-**Penalties table**
-
-| Offence | Penalty |
-| --- | --- |
-| Late payment surcharge | 1.5% per month of unpaid tax |
-| Late filing | THB 300–500 fine |
-| Failure to issue tax invoice | Fine up to THB 2,000 per invoice |
-| Fraudulent invoice | Fine up to 2× VAT evaded + potential criminal |
-
-## Section 6 — Tier 2 catalogue
-
-### 6.1 Domestic vs. international transport classification
-
-- **Domestic vs international transport** — **What it shows:** Airline or transport charge where the route is unclear. **What's missing:** Whether domestic (7%) or international (0%). **Conservative default:** 7% domestic. **Question to ask:** "Is this a domestic or international flight/transport? Please confirm the route."
-
-### 6.2 Export service qualification
-
-- **Export service qualification** — **What it shows:** Revenue from a foreign client. **What's missing:** Whether the service was consumed outside Thailand. **Conservative default:** 7% standard rate. **Question to ask:** "Were these services entirely used/consumed outside Thailand? Is there a contract confirming this? Was payment received in foreign currency?"
-
-### 6.3 Mixed-use vehicle expenses
-
-- **Mixed-use vehicle expenses** — **What it shows:** Fuel, parking, car lease, or maintenance. **What's missing:** Business-use percentage. **Conservative default:** 0% input credit. **Question to ask:** "Is this vehicle used exclusively for business? What percentage is business vs. personal?"
-
-### 6.4 Tax invoice availability for restaurant/entertainment
-
-- **Tax invoice availability for restaurant/entertainment** — **What it shows:** Restaurant or entertainment expense. **What's missing:** Whether a compliant ใบกำกับภาษี was obtained. **Conservative default:** No input credit. **Question to ask:** "Did you receive a full tax invoice (ใบกำกับภาษีเต็มรูปแบบ) from this restaurant/venue?"
-
-### 6.5 Withholding VAT from government clients
-
-- **Withholding VAT from government clients** — **What it shows:** Receipt from a government agency that appears lower than the invoiced amount. **What's missing:** Whether VAT was withheld and a withholding certificate issued. **Conservative default:** Record full output VAT on invoice amount; credit withheld portion from certificate. **Question to ask:** "Did this government client withhold VAT? Do you have the withholding certificate?"
-
-## Section 7 — Excel working paper template
-
-```
-THAILAND VAT WORKING PAPER — แบบคำนวณภาษีมูลค่าเพิ่ม
-Period (เดือน): ____________  VAT Registration No.: ____________
-
-A. OUTPUT VAT (ภาษีขาย)
-  A1. Taxable sales at 7% (net, ฐานภาษี)     ___________
-  A2. Output VAT at 7% (A1 × 7%)             ___________
-  A3. Zero-rated sales (ยอดขาย 0%)            ___________
-  A4. Exempt sales (ยอดขายยกเว้น)             ___________
-  A5. Reverse charge self-assessed output     ___________
-
-B. INPUT VAT (ภาษีซื้อ)
-  B1. Domestic purchases — 7% (net)           ___________
-  B2. Input VAT at 7% (B1 × 7%)              ___________
-  B3. Import VAT paid at customs              ___________
-  B4. Reverse charge self-assessed input      ___________
-  B5. Total input VAT (B2+B3+B4)             ___________
-  B6. Disallowed input (blocked items)        ___________
-  B7. Net input VAT (B5 − B6)                ___________
-
-C. NET VAT PAYABLE
-  C1. Net VAT (A2 − B7)                       ___________
-  C2. Withholding VAT credits                 ___________
-  C3. Prior period excess credit              ___________
-  C4. Net payable / (credit) (C1−C2−C3)      ___________
-
-REVIEWER FLAGS:
-  [ ] Tax invoices (ใบกำกับภาษี) confirmed for all input credits?
-  [ ] Export evidence available for zero-rated sales?
-  [ ] Government withholding certificates collected?
-  [ ] Reverse charge self-assessments documented?
-  [ ] Vehicle use % confirmed?
+```oa-check
+name: Thailand original client lunch blocked input
+inputs:
+  gross: 3210
+  blocked_fraction: 1
+steps:
+  - supplier_net: gross / 1.07
+  - supplier_vat: gross - supplier_net
+  - recoverable: supplier_vat * (1 - blocked_fraction)
+  - unrecovered_cost: gross - recoverable
+expected:
+  supplier_net: 3000
+  supplier_vat: 210
+  recoverable: 0
+  unrecovered_cost: 3210
 ```
 
-## Section 8 — Bank statement reading guide
+### Decision: wholly foreign use versus substantiated mixed use
 
-### Common Thai bank statement formats
+For a hypothetical ordinary consulting service within Notification 105 clause 2(1), excluding outbound-tour organising, and net fee THB 540,000, compare wholly qualifying foreign use with substantiated 70% foreign/30% Thai use. Whole foreign use gives no output VAT; mixed use gives THB 378,000 zero-rated base, THB 162,000 domestic base and THB 11,340 output VAT derived. The allocation is an evidence assumption for this case, not a statutory safe harbour. A foreign invoice address cannot choose the zero-tax answer.
 
-**Bank statement formats table**
-
-| Bank | Key columns | Date format | Amount |
-| --- | --- | --- | --- |
-| ธ.กสิกรไทย KBank | วันที่, รายการ, ถอน/โอนออก, ฝาก/โอนเข้า, ยอดคงเหลือ | DD/MM/YYYY (BE) | THB |
-| ธ.ไทยพาณิชย์ SCB | Date, Description, Debit, Credit, Balance | DD/MM/YYYY | THB |
-| ธ.กรุงเทพ BBL | วันที่ทำรายการ, คำอธิบาย, ถอน, ฝาก, ยอดคงเหลือ | DD/MM/YYYY (BE) | THB |
-| ธ.กรุงไทย KTB | Date, Narrative, Withdrawal, Deposit, Balance | DD/MM/YYYY | THB |
-| ธ.กรุงศรี Krungsri | วันที่, รายละเอียด, เดบิต, เครดิต, ยอดเงินคงเหลือ | DD/MM/YYYY (BE) | THB |
-
-### Key Thai banking terms
-
-**Key Thai banking terms table**
-
-| Thai | Meaning | Classification hint |
-| --- | --- | --- |
-| โอนเงินรับ / รับโอน | Incoming transfer | Potential revenue |
-| โอนเงิน / ตัดบัญชี | Outgoing transfer / debit | Potential expense |
-| หักค่า | Auto-deduct | Subscription/utility |
-| ดอกเบี้ย | Interest | Exempt |
-| ค่าธรรมเนียม | Fee | Bank fee — exempt |
-| ยอดคงเหลือ | Balance | Running balance — ignore |
-| รายการ / คำอธิบาย | Transaction description | Key classification field |
-| ถอนเงิน / ATM | Cash withdrawal | Tier 2 — ask |
-| เงินเดือน | Salary | Out of VAT scope |
-
-## Section 9 — Onboarding fallback
-
-If the client provides a bank statement but cannot answer all questions immediately:
-
-1. Classify all transactions using the pattern library (Section 3)
-2. Apply conservative defaults (Section 1)
-3. Mark Tier 2 items as "PENDING — reviewer must confirm"
-4. Generate working paper with flags
-
-```
-THAILAND VAT ONBOARDING — MINIMUM QUESTIONS
-1. VAT registration number (เลขทะเบียนภาษีมูลค่าเพิ่ม — 13 digits starting with a specific format)?
-2. What month does this bank statement cover? (Confirm BE or CE year)
-3. Do you have any export sales (services used outside Thailand)?
-   If yes: is payment received in foreign currency?
-4. Do you have government agency clients? Do they withhold VAT?
-5. Any vehicle expenses? Business-use percentage?
-6. Do you hold ใบกำกับภาษีเต็มรูปแบบ for all major input purchases?
-7. Prior month excess credit (ภาษีซื้อส่วนเกิน) carried forward amount?
-8. Any international SaaS subscriptions (Google, Microsoft, etc.)?
+```oa-check
+name: Thailand foreign-use allocation decision
+inputs:
+  fee: 540000
+  foreign_use_fraction: 0.7
+steps:
+  - foreign_base: fee * foreign_use_fraction
+  - domestic_base: fee - foreign_base
+  - mixed_output: domestic_base * 0.07
+  - wholly_foreign_output: fee * 0
+expected:
+  foreign_base: 378000
+  domestic_base: 162000
+  mixed_output: 11340
+  wholly_foreign_output: 0
 ```
 
-## Section 10 — Reference material
+## Ask the client first
 
-### Key legislation
+- Actual VAT registration, branch/consolidation authority, tax period and BE/CE dates?
+- Sales/purchase invoices, underlying supply, tax points, adjustments and carried credit?
+- Export recipient, actual foreign/Thai use and payment evidence?
+- Foreign-service invoices, recipient status, payment currency/date and PP.36 receipts?
+- Private/vehicle/client-entertainment use or exempt business requiring blocked-input/apportionment review?
+- Government deductions, customs receipts, prior filings and any notices or relief instrument?
 
-**Key legislation table**
+## Sources
 
-| Topic | Reference |
-| --- | --- |
-| VAT general | Revenue Code (ประมวลรัษฎากร) Part 4 (Sections 77–87/1) |
-| Standard rate | Revenue Code Section 80; Royal Decree on rate |
-| Zero rate | Revenue Code Section 80/1 |
-| Exemptions | Revenue Code Section 81 |
-| Tax invoice | Revenue Code Section 86/4 |
-| Registration | Revenue Code Section 85 |
-| Withholding VAT | Revenue Code Section 83/5 |
-| Penalties | Revenue Code Sections 89–90 |
-| Digital services | Royal Decree No. 694 (2021) |
+| Source and actual reading scope | URL | Read on |
+|---|---|---|
+| Royal Decree 807 B.E. 2569 (Read for all 3 rendered pages, §§2-3 and replacement Decree 646 §4: commencement, reduced component and end date; raw PDF extraction was garbled) | https://www.rd.go.th/fileadmin/user_upload/kormor/newlaw/dc807.pdf | 2026-11-16 |
+| RD VAT explanation (Read for the complete substantive §§1-10 for taxable person, threshold, base, tax point, rate, invoice, calculation, refunds, registration and filing; current detailed amendments checked in the Thai Code) | https://www.rd.go.th/english/6043.html | 2026-11-16 |
+| Consolidated Royal Decree 241 (Read for all operative §§1-4 and amendment notes, especially §3(4) domestic seagoing-vessel/sea-to-river transport VAT opt-in added by Decree 521; no claim to have completed a registration) | https://www.rd.go.th/2382.html | 2026-11-16 |
+| Current consolidated VAT Code §§80-82 (Read for §§80/1, 81, 81/3, 82/3-82/6, 82/9-82/13 and neighbors for exemptions, input, adjustments and foreign electronic services) | https://www.rd.go.th/5206.html | 2026-11-16 |
+| Director-General VAT Notification 17 (Read for all operative clauses, particularly clause 5 and its food/accommodation/benefit conditions) | https://www.rd.go.th/3409.html | 2026-11-16 |
+| Director-General VAT Notification 105 as amended (Read for all operative clauses 1-4, foreign-use allocation, excluded outbound-tour operation, payment evidence and special export-production cases) | https://www.rd.go.th/3288.html | 2026-11-16 |
+| Current VAT Code §§83-84 (Read for §§83-83/7 and neighboring filing/remittance provisions, including auctioneer scope and electronic/non-electronic imported-service split) | https://www.rd.go.th/5207.html | 2026-11-16 |
+| Current VAT Code §§85-86 (Read for registration and §§86/4, 86/6, 86/14 with neighboring invoice provisions; not an authenticated portal read) | https://www.rd.go.th/5208.html | 2026-11-16 |
+| Current VAT Code §§87-90 (Read for records, §89 offence categories, remission delegation, §89/1 surcharge and neighboring §90 offence structure; current remission instruments not read) | https://www.rd.go.th/5209.html | 2026-11-16 |
+| Official PP.30 paper form and instructions, URL revision 2017 (Read for both pages, all computation items, branch/additional-return choice, carry-forward restriction and refund/carry-forward instructions; not a claim of a 2026 portal screen) | https://www.rd.go.th/fileadmin/tax_pdf/vat/pp30_300160.pdf | 2026-11-16 |
+| RD filing-service index (Read for PP.30/PP.36 and other regime portal routes; no authenticated submission) | https://www.rd.go.th/rdeservice/63813.html | 2026-11-16 |
+| RD electronic calendar entry (Read for the specific 23 September 2026 PP.30 entry; not every filing month) | https://www.rd.go.th/26/9835.html | 2026-11-16 |
 
-### Known gaps
-
-- Partial exemption apportionment — escalate if exempt supplies > 5% of total
-- Specific Business Tax (SBT) for financial institutions — out of scope
-- Government contract withholding VAT reconciliation — flag for specialist
-- Property/real estate transactions — escalate
-- Reverse charge for non-digital imported services — verify current RD guidance
-
-### Self-check before filing
-
-- [ ] All tax invoices (ใบกำกับภาษี) held for input credits claimed
-- [ ] Export services supported by contracts + FX evidence
-- [ ] Withholding VAT certificates collected from government clients
-- [ ] Reverse charge self-assessed for all foreign digital services
-- [ ] BE/CE date conversion correct throughout
-- [ ] Prior month excess credit correctly carried forward
-
-### Changelog
-
-**Changelog table**
-
-| Version | Date | Change |
-| --- | --- | --- |
-| 1.0 | 2024 | Initial release |
-| 2.0 | April 2026 | Full v2.0 rewrite: pattern library, worked examples, no inline tier tags |
-
-## Prohibitions
-
-- NEVER apply 10% rate — the current rate is 7% (verify if Royal Decree has not been renewed)
-- NEVER block restaurant/entertainment input VAT categorically — Thailand does not have a blanket block (unlike Malta/UK); require tax invoice
-- NEVER zero-rate a service without confirming consumption outside Thailand + FX payment
-- NEVER omit reverse charge self-assessment for B2B foreign digital services
-- NEVER ignore withholding VAT from government clients — offset against output tax
-- NEVER present calculations as definitive — direct to a licensed Thai CPA or tax consultant
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes. All outputs must be reviewed by a qualified professional before filing.
-
-The most up-to-date version is maintained at openaccountants.com.
+Not yet confirmed: current PP.36 and general electronic-extension instruments and exact live portal fields; all subsidiary invoice buyer/branch particulars, abbreviated-invoice input rules and vehicle-block exceptions; detailed mixed-use apportionment, SBT and property regimes; current penalty-remission/settlement rules. Legacy THB 1,000 abbreviated-invoice threshold, THB 300-500 late-filing settlement, generic THB 2,000-per-invoice cap, government-customer blanket VAT withholding/credit, automatic same-month reverse-charge netting, 5% exempt-sales safe harbour and merchant-specific blanket exemptions are not usable instructions. Internal review flags and bank-field/pattern hints are workflow settings/examples, not enacted rules or verified supplier rulings.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-07-13. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `thailand-vat` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/thailand-vat. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-16. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `thailand-vat` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/thailand-vat. If neither is available, confirm every figure against the official source pages cited above before relying on it.

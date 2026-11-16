@@ -1,372 +1,277 @@
 ---
 name: eg-sa-dtt-corridor
-description: "Use this skill whenever asked about the Egypt-Saudi Arabia Double Tax Treaty — for residents/companies with cross-border flows between the two jurisdictions. Trigger on \"Egypt Saudi tax treaty\", \"DTT Egypt KSA\", \"ضريبة الازدواج مصر السعودية\", \"cross-border Egypt Saudi\", \"Egypt Saudi Arabia withholding\". ALWAYS read this skill before applying treaty rates."
+description: "Use this skill for Egypt-Saudi Arabia treaty residence, withholding, permanent establishments, employment, double-tax relief or MAP. Trigger on \"Egypt Saudi tax treaty\", \"DTT Egypt KSA\", \"ضريبة الازدواج مصر السعودية\", \"cross-border Egypt Saudi\" and \"Egypt Saudi Arabia withholding\". Read the eligibility, classification and procedure conditions before selecting a treaty rate."
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/eg-sa-dtt-corridor"
   jurisdiction: "EG-SA"
-  tax_year: "2025"
-  last_updated: "2026-08-02"
+  tax_year: "2026"
+  last_updated: "2026-11-16"
 ---
 
 # Egypt ↔ Saudi Arabia Double Tax Treaty (DTT) Summary
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
-## Quick Reference
+## Scope
 
-| Field | Value |
-|-------|-------|
-| Treaty Name | Agreement between the Arab Republic of Egypt and the Kingdom of Saudi Arabia for the Avoidance of Double Taxation and the Prevention of Fiscal Evasion with Respect to Taxes on Income |
-| Signed | 8 April 2016 (Cairo) |
-| Published | Official Gazette No. 35, 5 September 2017 |
-| In Force | Entry into force per Article 28: first day of the second month following exchange of ratification notifications |
-| Current Version | 2016 Agreement (replaced any prior arrangement) |
-| MLI Status | Both parties ratified — Egypt deposited 30 Sep 2020 (in force 1 Jan 2021), KSA deposited 23 Jan 2020 (in force 1 May 2020). MLI modifications effective for WHT from 1 Jan 2021, other taxes from 1 Jul 2021 |
-| Jurisdictions Covered | Egypt (EG), Kingdom of Saudi Arabia (SA) |
-| Last Verified | July 2026 |
-| Key Note | Dividends 5%/10%, interest 10% (govt exempt), royalties 10% (govt exempt). MLI PPT replaces original main-purpose test. Saudi domestic WHT matches treaty rates for most items. |
+This is the bilateral income-tax corridor, including Saudi Zakat where covered. It does not create a domestic charge or turn a treaty permission to tax into a tax rate. Establish domestic liability/exemptions first, then treaty entitlement, allocation/cap, anti-abuse and the actual collection route. “May tax” permits the named state to apply its domestic law; it does not establish tax payable. No taxpayer filing or professional approval is supplied by this draft.
 
----
+### Quick reference and version basis
 
-## Withholding Tax Rate Summary
+| Field | Evidence and boundary |
+|---|---|
+| Treaty | Agreement between the Arab Republic of Egypt and the Kingdom of Saudi Arabia for the Avoidance of Double Taxation and the Prevention of Fiscal Evasion with Respect to Taxes on Income; [Arabic treaty and Protocol](https://zatca.gov.sa/ar/RulesRegulations/Agreements/Documents/%D9%85%D8%B5%D8%B1.pdf). |
+| Signature and force | Signed in Cairo on 8 April 2016; entered into force 1 July 2017 according to the [current ZATCA treaty page](https://zatca.gov.sa/en/RulesRegulations/Agreements/Pages/egypt-convention.aspx). Article 28’s first-day-of-second-month notification rule is the legal trigger. |
+| Original application | WHT amounts paid or due on or after 1 January following entry into force, and other taxable years beginning on or after that date: 1 January 2018 for this force date; [Arabic treaty and Protocol](https://zatca.gov.sa/ar/RulesRegulations/Agreements/Documents/%D9%85%D8%B5%D8%B1.pdf), Art 28. Signature, publication, force and application are distinct. |
+| Publication | ETA’s Arabic synthesis identifies Official Gazette 35 of 5 September 2017 and explains that Protocol 8(2)–(3) were omitted there and restored in the guidance text; [Arabic synthesis cover note](https://eta.gov.eg/sites/default/files/2024-09/alswdyt.pdf). Read the authentic instruments for a disputed text; English guidance cannot add conditions absent from the Arabic text. No claim of replacement of an earlier treaty is inferred. |
+| MLI force | Egypt deposited 30 September 2020, force 1 January 2021; Saudi Arabia deposited 23 January 2020, force 1 May 2020. Both list this agreement as covered; [OECD status list dated 12 November 2026](https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/beps-mli/beps-mli-signatories-and-parties.pdf), [Egypt position](https://www.oecd.org/tax/treaties/beps-mli-position-egypt-instrument-deposit.pdf) and [Saudi position](https://www.oecd.org/tax/treaties/beps-mli-position-saudi-arabia-instrument-deposit.pdf). |
+| MLI application | WHT taxable events from 1 January 2021; other taxes for taxable periods beginning on or after 1 July 2021, not every payment made after that date. MAP modification applies to cases presented from 1 January 2021, except cases ineligible before that date under the unmodified treaty; [ETA MLI synthesis](https://www.eta.gov.eg/sites/default/files/2021-07/SAUDI.pdf), effect-date notes and MLI 35(4). |
+| Current reading | Sources actually read 2026-11-16. The English synthesis is guidance, not an authentic consolidated treaty. This summary uses the Arabic treaty/Protocol and pair-specific MLI positions, with the dated domestic overlays below. |
 
-| Income Type | Treaty Rate | Treaty Article | Domestic Rate (Egypt) | Domestic Rate (KSA) | Notes |
-|-------------|------------|----------------|----------------------|---------------------|-------|
-| Dividends — portfolio | 10% | Art 10(2)(b) | 10% (unlisted) / 5% (listed) | 5% | Standard rate for non-substantial holdings |
-| Dividends — substantial (≥20% capital) | 5% | Art 10(2)(a) | 10% (unlisted) / 5% (listed) | 5% | Beneficial owner must hold directly ≥20% of capital |
-| Interest | 10% | Art 11(2) | 20% | 5% | Government of other state exempt (Art 11(3)) |
-| Royalties | 10% | Art 12(2) | 20% | 15% | Government of other state exempt (Art 12(3)); definition includes technical assistance |
-| Technical services | 10% (under royalties) | Art 12 | 20% | 15% | Technical assistance related to IP rights included in royalties definition (Art 12(4)); no separate FTS article — falls under business profits (Art 7) if not IP-related |
-| Capital gains — immovable property | Source state | Art 13(1) | 22.5% | N/A (no CGT on immovable) | Source state may tax gains on immovable property |
-| Capital gains — PE assets | Source state | Art 13(2) | 22.5% | 20% | Source state may tax gains on PE business assets |
-| Capital gains — ships/aircraft | Management state | Art 13(3) | 22.5% | 20% | Only state of effective management may tax |
-| Capital gains — shares | Source state | Art 13(4) | 22.5% | 20% | Source state may tax gains from alienation of shares; government of other state exempt (Art 13(5)) |
-| Capital gains — other | Residence state only | Art 13(6) | 22.5% | 20% | Only residence state of alienator may tax |
-| Pensions | Residence state only | Art 18 | Progressive | N/A | Taxable only in residence state |
-| Directors' fees | Source state | Art 16 | Progressive | N/A | Source state (company's state) may tax |
-| Employment income | Residence state (with 183-day exception) | Art 15 | Progressive | Progressive | Source state may tax if 183-day test met, employer is resident of source state, or remuneration borne by PE in source state |
+## Ask the client first
 
----
+- Which payment/gain/work activity, gross amount and currency, contract, payment/credit dates and fiscal period are involved? Is there a gross-up, connected IP assistance, loan arrangement fee or guarantee fee?
+- Who are the payer, recipient and beneficial owner; what residence evidence, entity type, direct capital holding, government status and actual commercial purposes support the claim?
+- Where are work, management, agents, equipment, sites and personnel located? Obtain all project periods, connected projects/enterprises and rolling-period presence days.
+- Does a PE/fixed base bear the payment or hold the relevant asset/right? Which domestic charge, exemption, historic loan payment or 2026 infrastructure condition applies?
+- Which returns, tax payments, certificates, approvals, refund claims, first adverse notifications and domestic challenges already exist? Read those records before asking for missing facts.
 
-## Article-by-Article Summary
+## The method, step by step
 
-### Article 2: Taxes Covered
+### 1. Establish persons, taxes and residence
 
-- **Egypt:** Individual income tax (wages, commercial/industrial, professional, real estate), corporate income tax, withholding tax, additional percentage taxes
-- **Saudi Arabia:** Zakat, income tax (including natural gas investment tax)
-- The agreement follows the OECD Model Convention framework
-- Note: Zakat applies to Saudi nationals/GCC persons; income tax applies to non-GCC persons
+**Coverage.** Articles 1–2 cover persons resident in one or both states and income taxes, including substantially similar later taxes. Egypt’s listed individual and corporate income taxes include withholding and additional percentages; Saudi coverage includes Zakat and income tax, including natural-gas investment tax. This treaty’s actual wording governs; an OECD Model label cannot fill a gap. [Arabic treaty and Protocol](https://zatca.gov.sa/ar/RulesRegulations/Agreements/Documents/%D9%85%D8%B5%D8%B1.pdf), Arts 1–2.
 
-### Article 4: Resident — Tie-Breaker Rules
+**Residence gate.** Article 4(1) requires liability by domicile, residence, incorporation, management or similar criterion and excludes a person liable only on source-state income. Government/political subdivisions/local authorities are included. Protocol 1 also includes legal persons established under a state’s laws and generally tax-exempt because they are maintained exclusively for religious, charitable, educational, scientific or similar purposes, or to provide pensions or similar employee benefits. A TRC supports residence; it does not prove beneficial ownership, a government exemption or the PPT. [Arabic treaty and Protocol](https://zatca.gov.sa/ar/RulesRegulations/Agreements/Documents/%D9%85%D8%B5%D8%B1.pdf), Art 4(1), Protocol 1.
 
-A dual-resident individual's status is determined in sequence:
-1. **Permanent home** — state where permanent home is available
-2. **Centre of vital interests** — if permanent home in both states, state with closer personal/economic relations
-3. **Habitual abode** — if centre of vital interests cannot be determined or no permanent home in either state
-4. **Nationality** — if habitual abode in both or neither state
-5. **Mutual agreement** — competent authorities settle if national of both or neither
+**Individual tie-breaker.** Apply permanent home; if in both states, closer personal/economic relations; if that cannot be determined or no home in either, habitual abode; if in both/neither, nationality; if a national of both/neither, competent-authority mutual agreement. Do not substitute a day count for that sequence. [Arabic treaty and Protocol](https://zatca.gov.sa/ar/RulesRegulations/Agreements/Documents/%D9%85%D8%B5%D8%B1.pdf), Art 4(2).
 
-Protocol item 1 extends "resident" to include legal persons organized under a Contracting State's laws and generally exempt from tax (religious, charitable, educational, scientific, pension-providing entities).
+**Non-individual tie-breaker.** A dual-resident person other than an individual is resident only where effective management is situated under Article 4(3). Saudi Arabia reserves the entirety of MLI 4, so Egypt’s notification alone does not replace this rule with an automatic MAP tie-breaker. [Arabic treaty and Protocol](https://zatca.gov.sa/ar/RulesRegulations/Agreements/Documents/%D9%85%D8%B5%D8%B1.pdf), Art 4(3); [Saudi MLI 4 reservation](https://www.oecd.org/tax/treaties/beps-mli-position-saudi-arabia-instrument-deposit.pdf).
 
-### Article 5: Permanent Establishment
+### 2. Classify the payment before selecting a cap
 
-- Fixed place of business (place of management, branch, office, factory, workshop, mine/quarry, sale point)
-- Construction/building site: 6-month threshold (MLI adds anti-fragmentation — closely related enterprise periods >30 days are aggregated)
-- Service PE: furnishing of services may constitute PE
-- MLI modifies dependent agent definition (anti-commissionaire arrangements)
-- Insurance enterprise collecting premiums = deemed PE
-- Protocol: includes farms/plantations; equipment for natural resource exploration constitutes PE
+The treaty caps below concern a resident beneficial owner of the other state, subject to the relevant article, its PE/fixed-base connection and excess-payment rules, the government definition and the PPT. They are gross source-tax ceilings, not extra tax where domestic law gives a lower amount or exemption.
 
-### Article 6: Income from Immovable Property
+| Income / 2026 treaty rate or threshold | Complete operative condition and official source |
+|---|---|
+| Substantial dividends: 5% | Beneficial owner is a company other than a partnership, holding directly at least 20% of payer capital. Article 10(2)(a). No MLI 8 holding-period addition applies because Saudi Arabia reserves MLI 8 entirely. [Arabic treaty and Protocol](https://zatca.gov.sa/ar/RulesRegulations/Agreements/Documents/%D9%85%D8%B5%D8%B1.pdf); [Saudi MLI 8 reservation](https://www.oecd.org/tax/treaties/beps-mli-position-saudi-arabia-instrument-deposit.pdf). |
+| Other dividends: 10% | Other beneficial-owner cases under Art 10(2)(b), including a corporate holding below the qualifying direct capital threshold. Government exemption is separate under Art 10(3). [Arabic treaty and Protocol](https://zatca.gov.sa/ar/RulesRegulations/Agreements/Documents/%D9%85%D8%B5%D8%B1.pdf). |
+| Interest: 10% | Gross interest cap, beneficial owner resident in other state, Art 11(2); government exemption Art 11(3). This cap does not override a domestic exemption or the connected-debt/excess rules. [Arabic treaty and Protocol](https://zatca.gov.sa/ar/RulesRegulations/Agreements/Documents/%D9%85%D8%B5%D8%B1.pdf). |
+| Royalties: 10% | Gross royalty cap, beneficial owner resident in other state, Art 12(2); government exemption Art 12(3). Confirm a covered right/use/know-how or related technical assistance; connected-right/excess rules remain. [Arabic treaty and Protocol](https://zatca.gov.sa/ar/RulesRegulations/Agreements/Documents/%D9%85%D8%B5%D8%B1.pdf). |
+| Independent individual services:183 days | Fixed base regularly available OR aggregate stay amounting to/exceeding 183 days in any 12-month period commencing/ending in the fiscal year allows source taxation only of income attributable to that base or activities performed there. Art 14(1). [Arabic treaty and Protocol](https://zatca.gov.sa/ar/RulesRegulations/Agreements/Documents/%D9%85%D8%B5%D8%B1.pdf). |
+| Employment:183 days | Source work is ordinarily source-taxable. Residence-only Art 15(2) exception requires presence NOT exceeding 183 days in the relevant 12-month period AND employer not source-resident AND remuneration not borne by employer’s source PE/fixed base; special articles remain. [Arabic treaty and Protocol](https://zatca.gov.sa/ar/RulesRegulations/Agreements/Documents/%D9%85%D8%B5%D8%B1.pdf). |
 
-Source state may tax income from immovable property (including agriculture/forestry). Ships and aircraft are excluded. Applies to direct use, letting, and other use forms. Also applies to income from immovable property used for business or independent personal services.
+**Dividend definition and connections.** Article 10(4) covers profit-participating shares/rights other than debt claims and corporate rights treated like shares by payer-state law. Where a resident beneficial owner has a source-state PE/fixed base and the holding is effectively connected, Article 10(1)–(2) gives way to Article 7/14. Article 10(6) limits a state’s tax on a company resident in the other state: it cannot tax that company’s dividends except those paid to its own resident or effectively connected to a local PE/fixed base, or levy tax on that company’s undistributed profits merely because profits arose there. It does not erase ordinary payer-state WHT. [Arabic treaty and Protocol](https://zatca.gov.sa/ar/RulesRegulations/Agreements/Documents/%D9%85%D8%B5%D8%B1.pdf), Art 10(4)–(6).
 
-### Article 7: Business Profits
+**Interest definition.** Article 11(4) includes debt claims, government securities, bonds/debentures and attached premiums/prizes; late-payment penalties are excluded. Protocol 5 includes loan-arranging/managing services and loan-related guarantees. A debt effectively connected to a source PE/fixed base moves Art 11(1)–(2) to Art 7/14. Interest is sourced by payer residence, or the PE/fixed base that incurred and bears it. Special-relationship excess above an arm’s-length amount is outside the cap and remains governed by domestic law with other treaty provisions considered. [Arabic treaty and Protocol](https://zatca.gov.sa/ar/RulesRegulations/Agreements/Documents/%D9%85%D8%B5%D8%B1.pdf), Art 11(4)–(7), Protocol 5.
 
-Profits taxable only in residence state unless PE in source state. Only profits attributable to PE may be taxed in source state. Standard OECD profit attribution rules apply. Protocol item 3: export profits not subject to tax in other state.
+**Royalty definition and technical services.** Article 12(4) covers copyright including films/radio/TV recordings, patents, trade marks, designs/models, computer software, plans, secret formula/process, industrial/commercial/scientific equipment, know-how and technical assistance related to those rights. There is no separate FTS article: a service outside that definition needs its real classification; company business profits generally go to Art 7, independent individual services to Art 14, employment to Art 15. The royalty article’s PE/fixed-base connection, payer/borne-by sourcing and arm’s-length excess rules parallel their actual Arts 12(5)–(7) terms. [Arabic treaty and Protocol](https://zatca.gov.sa/ar/RulesRegulations/Agreements/Documents/%D9%85%D8%B5%D8%B1.pdf).
 
-### Article 8: Shipping, Air and Road Transport
+**Government exemption.** Articles 10(3),11(3),12(3) exempt qualifying government receipts; Art 13(5) exempts only the share/instrument gains in Art 13(4). Protocol 4 names, for Saudi Arabia, SAMA, Public Pension Agency and GOSI, and for Egypt the Central Bank and Social Insurance Fund. The residual class of wholly or predominantly government-owned entities requires advance agreement between competent authorities. Government ownership alone does not automatically qualify a commercial bank. Confirm the entity fits the named or agreed class. [Arabic treaty and Protocol](https://zatca.gov.sa/ar/RulesRegulations/Agreements/Documents/%D9%85%D8%B5%D8%B1.pdf), Protocol 4.
 
-Taxable only in state of effective management. If management aboard a ship, state of home harbor or operator's residence. Pools/joint businesses: profits allocated proportionally.
+### 3. Apply the current domestic charge separately
 
-### Article 9: Associated Enterprises
+| Domestic item / 2026 rate and scope | Charge, exception and source boundary |
+|---|---|
+| Egyptian corporate dividends:10% /5% | Art 56 bis as replaced by Law 151/2026:10% gross,5% where securities are listed on the Egyptian exchange; stock-dividend and other statutory distinctions remain. Treaties can cap a higher domestic charge. Do not import the historic 25%/2-year domestic reduced-rate rule into the treaty’s 20% direct-capital gate. [Law 151/2026 Art 1](https://eta.gov.eg/sites/default/files/2026-08/law.no_.151.of_.2026.pdf), with [official corrigendum](https://eta.gov.eg/sites/default/files/2026-08/law.no_.149.150.151.of_.2026.retractation.pdf). |
+| Egyptian Art 56 interest/royalty/services:20% starting charge | Nonresident-source payment charge with classification and statutory exceptions; the exclusion for design/know-how payments serving industry as determined by the finance minister in agreement with the competent industry minister, PE overhead exclusion and government/public foreign-loan exemption must be tested. [Law 91/2005 Art 56](https://eta.gov.eg/sites/default/files/2024-03/law_no.91-2005.pdf); [Law 30/2023 Art 1 replacing Art 56 paragraph 3](https://eta.gov.eg/sites/default/files/2024-03/law_no.30-2023.pdf); [Decision 172/2015 replacing executive-regulation Art 76](https://eta.gov.eg/sites/default/files/2024-03/law_no.172-2015.pdf). No unconditional statement that every foreign payment bears 20% is made. |
+| Egyptian historic foreign corporate loans | Law 30/2023 Art 6 continues the prior qualifying exemption where loan/facility interest had been paid before that law’s effective date 16 June 2023. Establish the prior loan/exemption conditions and actual interest-payment history; a new loan merely longer than 3 years is insufficient. [Law 30/2023 Arts 6,12](https://eta.gov.eg/sites/default/files/2024-03/law_no.30-2023.pdf) with [prior Art 56 paragraph 3](https://eta.gov.eg/sites/default/files/2024-03/law_no.91-2005.pdf). |
+| Egyptian specified infrastructure loans from 29 July 2026 | Law 151/2026 adds Art 56 paragraph 4 for qualifying foreign loans/facilities of at least 5 years from non-associated persons for designated national infrastructure projects, where the company’s contribution to the national projects is NOT LESS than 25% of its total investments. The Cabinet designation and the end of the relevant basic-project loan period matter. Read the corrected text before using the exemption. [Law 151/2026 Arts 2,7](https://eta.gov.eg/sites/default/files/2026-08/law.no_.151.of_.2026.pdf); [8 August 2026 corrigendum, p 8](https://eta.gov.eg/sites/default/files/2026-08/law.no_.149.150.151.of_.2026.retractation.pdf). |
+| Egyptian ordinary corporate-profit rate:22.5% | Law 96/2015 replaces Art 49 first paragraph, on annual net profit, with statutory rounding of the base. This is an ordinary corporate assessment rate, not a universal CGT/WHT rate; entity, asset, exemption and special-sector rules must be established separately. [Law 96/2015 Art 1, Art 49](https://eta.gov.eg/sites/default/files/2024-03/law_no.96-2015.pdf); [ETA dated resident-corporate amount corroboration](https://eta.gov.eg/en/node/242). |
+| Saudi dividends:5%; loan charges:5%; royalties:15%; technical/consulting services:5% | Only Saudi-source payments within WHT scope; source, recipient, payment classification, PE connection, exclusions and treaty relief must be checked. Natural-gas/oil/hydrocarbon dividend exemption remains relevant. Technical services are not automatically royalties. [ZATCA May 2026 guideline](https://zatca.gov.sa/en/HelpCenter/guidelines/Documents/General-Guideline-for-Withholding-Tax-In-accordance-with-the-provisions-of-the-Income-Tax-Law-and-its-Implementing-Regulations.pdf), §§2–4, especially pp 28–29, Income Tax Law 68 / Regulations 63. |
+| Saudi ordinary income-tax base:20% | Income Tax Law 2 and 7, on the covered taxable base/persons, not all non-GCC gross receipts or every disposal. The official committee reprint is dated 1444/04/24; the current official SEZ operations manual expressly corroborates the ordinary mainland 20% rate, while May 2026 guidance distinguishes ordinary assessment from WHT. Special sectors/exemptions require their own assessment. [official law reprint pp 21–22,59–60](https://gstc.gov.sa/en/DocumentsLb/Publications/Documents/The%20Guideline%20of%20Income%20Tax.pdf); [ZATCA May 2026 guideline](https://zatca.gov.sa/en/HelpCenter/guidelines/Documents/General-Guideline-for-Withholding-Tax-In-accordance-with-the-provisions-of-the-Income-Tax-Law-and-its-Implementing-Regulations.pdf), §1.1.1; [SEZ operations manual §2.1 pp 7–8](https://zatca.gov.sa/en/HelpCenter/guidelines/Documents/SEZ-Tax%26Customs-Procedures.pdf). |
+| Saudi Zakat:2.5% | Article 15 applies 2.5% to the Zakat base for a Hijri year; other account-based financial years use actual-days adjustment. It is not 2.5% of each royalty receipt. Eligibility/excluded income-tax shares and base rules matter, including Arts 3,6,17,21. [1445 Zakat regulations as amended by 1248/1446, Arts 3,6,15,17,21](https://zatca.gov.sa/ar/RulesRegulations/Taxes/Documents/ZakatRegulation_1445.pdf). |
 
-Arm's length principle applies. Transfer pricing adjustments allowed with corresponding adjustments. Time limit: no adjustment after 5 years from year-end. Paragraph 2 (corresponding adjustments) does not apply in cases of tax evasion.
+**Capital gains are allocations, not a domestic rate card.** Article 13(1) permits situs-state taxation of immovable-property gains; paragraph 2 permits source taxation of PE/fixed-base movable business assets and disposal of that PE/base. Paragraph 3 gives exclusive effective-management-state taxation for international-traffic ships, aircraft, road vehicles and pertaining movable property. Paragraph 4 allows taxation where the company whose shares/related financial instruments/options are disposed of is resident. Paragraph 5’s government exemption concerns only paragraph 4. Residual property under paragraph 6 is residence-only. The old universal Egyptian 22.5% and Saudi 20% gain rows, and “no Saudi immovable CGT”, do not decide a particular seller/asset; use the actual domestic regime. [Arabic treaty and Protocol](https://zatca.gov.sa/ar/RulesRegulations/Agreements/Documents/%D9%85%D8%B5%D8%B1.pdf), Art 13; [ZATCA May 2026 guideline](https://zatca.gov.sa/en/HelpCenter/guidelines/Documents/General-Guideline-for-Withholding-Tax-In-accordance-with-the-provisions-of-the-Income-Tax-Law-and-its-Implementing-Regulations.pdf), §1.1.1 distinguishes capital gains from gross WHT.
 
-### Article 10: Dividends
+### 4. Establish a PE and attributable business profits
 
-- Rate: **5%** if beneficial owner is a company (not partnership) holding directly ≥20% of capital
-- Rate: **10%** in all other cases
-- Beneficial ownership requirement
-- Government exemption applies (see Article 10(3) also references Article 13(5))
-- Article 10(6): source state cannot tax dividends paid to residents of other state, except where paid to a resident of source state or effectively connected to PE
+**Fixed-place and express inclusions.** Article 5(1)–(2) covers a fixed place through which all/part of the business is carried on, including management, branch, office, factory, workshop, mine/quarry/extraction and sales outlet. Protocol 2 includes farms/nurseries/other agricultural places and substantial equipment associated with a natural-resource exploration/extraction site, whether owned or leased, used in the enterprise’s activity or installed by it. These tests are separate from construction and service durations. [Arabic treaty and Protocol](https://zatca.gov.sa/ar/RulesRegulations/Agreements/Documents/%D9%85%D8%B5%D8%B1.pdf), Art 5, Protocol 2.
 
-### Article 11: Interest
+| PE boundary | Result and primary source |
+|---|---|
+| Building/construction/assembly/installation or connected supervision >6 months | Article 5(3)(a) requires duration exceeding 6 months. Exactly 6 months does not pass that duration limb; other PE limbs can still apply. [Arabic treaty and Protocol](https://zatca.gov.sa/ar/RulesRegulations/Agreements/Documents/%D9%85%D8%B5%D8%B1.pdf). |
+| Personnel services, same/connected project >6 months within any 12 months | Article 5(3)(b), including consulting, requires aggregate duration exceeding 6 months within any 12-month period. It is not a threshold-free service PE. [Arabic treaty and Protocol](https://zatca.gov.sa/ar/RulesRegulations/Agreements/Documents/%D9%85%D8%B5%D8%B1.pdf). |
+| MLI contract splitting:>30 days and related periods | MLI 14 adds qualifying connected periods at the same site/project by closely related enterprises: the first enterprise’s aggregate must exceed 30 days without already exceeding the treaty duration; each different related-enterprise period must exceed 30 days. Check actual elapsed/project facts and overlap; do not equate this rule with all contracts separated by a gap. [MLI](https://legalinstruments.oecd.org/public/doc/358/body-text.en.html), Art 14; [ETA MLI synthesis](https://www.eta.gov.eg/sites/default/files/2021-07/SAUDI.pdf), Art 5 box. |
+| Closely related:control or >50% | MLI 15 uses factual control/common control; in any event direct/indirect beneficial interest >50%, or for companies >50% aggregate vote AND value or beneficial equity interest, including common ownership. [MLI](https://legalinstruments.oecd.org/public/doc/358/body-text.en.html), Art 15. |
 
-- Rate: **10%** of gross amount
-- **Government exemption:** Interest paid to the government of the other Contracting State is exempt from source-state tax (Art 11(3))
-- Definition includes: government securities, bonds, debentures, premiums, prizes; penalty/late payment charges excluded
-- Protocol item 4 defines "Government" to include: for KSA — SAMA, Public Pension Agency, GOSI, wholly government-owned entities; for Egypt — Central Bank of Egypt, Social Insurance Fund, wholly government-owned entities
-- Protocol item 5: interest definition includes services for arranging/managing loans or guarantees related to loans
+**Preparatory/auxiliary exclusions.** Article 5(4)’s storage/display, stock for processing, purchasing/information and other listed combinations now require the MLI 13 OptionA preparatory/auxiliary condition. MLI 13(4) defeats the exclusion for complementary functions forming a cohesive operation where the same/closely related enterprise has a PE at the same/another place, or combined activities are not preparatory/auxiliary. It is not a rule that unrelated storage always creates a PE. [MLI](https://legalinstruments.oecd.org/public/doc/358/body-text.en.html), Art 13; both [Egypt](https://www.oecd.org/tax/treaties/beps-mli-position-egypt-instrument-deposit.pdf) and [Saudi](https://www.oecd.org/tax/treaties/beps-mli-position-saudi-arabia-instrument-deposit.pdf) positions.
 
-### Article 12: Royalties
+**Agents and insurance.** MLI 12 replaces the notified contract-authority limb with habitual conclusion or habitual principal role leading to routinely unmodified contracts in the enterprise’s name, for its property rights or services, subject to the activity exception. An independent agent acting in its ordinary business is excepted, but exclusive/almost exclusive service for closely related enterprises prevents that independent status. Original stock-delivery and habitual order-securing agent limbs still require checking. An insurance enterprise has a deemed PE if it collects premiums in the other state’s territory or insures risks situated there; Article 5(8) does not state a reinsurance or independent-agent exception. Company control alone does not itself create a PE. [Arabic treaty and Protocol](https://zatca.gov.sa/ar/RulesRegulations/Agreements/Documents/%D9%85%D8%B5%D8%B1.pdf), Art 5(5)–(8); [MLI](https://legalinstruments.oecd.org/public/doc/358/body-text.en.html), Art 12.
 
-- Rate: **10%** of gross amount
-- **Government exemption:** Royalties paid to government of other state are exempt (Art 12(3))
-- Definition includes: copyright (artistic, literary, scientific), cinematography films, radio/TV tapes, patents, trademarks, designs, models, computer software, processes, secret formulas, industrial/commercial/scientific equipment use, industrial/commercial/scientific experience (know-how), and **technical assistance related to these rights**
-- No separate "Fees for Technical Services" (FTS) article — technical services fall under Art 7 (business profits) unless IP-related
+**Business profits and deductions.** Article 7 permits source-state taxation only of profits attributable to an existing PE, treated as a distinct independent enterprise. Actual PE-purpose expenses, including executive/general administration incurred elsewhere, are deductible under its terms. Internal royalties/fees/commissions and nonbank internal debt charges, other than actual-expense reimbursements, are disallowed; corresponding internal credits are likewise excluded. Customary apportionment must respect the article; mere purchasing creates no attributed profit; use the same method unless good/sufficient reason changes it. Separately classified income keeps its own article. Protocol 3 excludes profits from mere export of goods in the other state; this is not immunity for local services or an actual PE’s business. [Arabic treaty and Protocol](https://zatca.gov.sa/ar/RulesRegulations/Agreements/Documents/%D9%85%D8%B5%D8%B1.pdf), Art 7, Protocol 3.
 
-### Article 13: Capital Gains
+**Associated enterprises.** Article 9 allows arm’s-length primary adjustment and an appropriate corresponding adjustment, considering other treaty provisions and consultation where needed. A primary adjustment is subject to the domestic limit and in any case 5 years from the end of the relevant profit year under Art 9(3). Art 9(4) excludes corresponding-adjustment paragraph 2 in tax-evasion cases. This does not promise automatic acceptance of the other state’s adjustment. [Arabic treaty and Protocol](https://zatca.gov.sa/ar/RulesRegulations/Agreements/Documents/%D9%85%D8%B5%D8%B1.pdf), Art 9.
 
-1. **Immovable property** (Art 13(1)): Source state may tax
-2. **PE business assets** (Art 13(2)): Source state may tax (including gains from alienation of PE/fixed base itself)
-3. **Ships/aircraft/road vehicles** (Art 13(3)): Only state of effective management may tax
-4. **Shares** (Art 13(4)): Source state may tax gains from alienation of shares and financial instruments/options related to such shares
-5. **Government exemption** (Art 13(5)): Gains are exempt if paid to government of other Contracting State
-6. **Other property** (Art 13(6)): Only residence state of alienator may tax
+### 5. Allocate property, transport and personal income
 
-### Article 14: Independent Personal Services
+| Topic | Actual allocation and exceptions; official source |
+|---|---|
+| Immovable property | Art 6 permits situs taxation of agriculture/forestry, direct use, letting and other use, including business/independent-services property. Definition follows situs law with listed accessories, usufruct and natural-resource rights; ships/aircraft excluded. [Arabic treaty and Protocol](https://zatca.gov.sa/ar/RulesRegulations/Agreements/Documents/%D9%85%D8%B5%D8%B1.pdf). |
+| International ships, aircraft and road transport | Art 8 gives exclusive effective-management-state taxation; shipboard management uses home harbour, then operator residence if none. Pools/joint businesses/international operating agencies use participation proportions. “International traffic” excludes solely domestic operation in the other state (Art 3(1)(g)). [Arabic treaty and Protocol](https://zatca.gov.sa/ar/RulesRegulations/Agreements/Documents/%D9%85%D8%B5%D8%B1.pdf). |
+| Independent professions | Art 14 includes scientific, literary, artistic, education/teaching, medical, legal, engineering, architectural, dental and accounting activities; apply the fixed-base/day conditions above, with limited source attribution. [Arabic treaty and Protocol](https://zatca.gov.sa/ar/RulesRegulations/Agreements/Documents/%D9%85%D8%B5%D8%B1.pdf). |
+| Ordinary employment | Art 15(1) allows source-work taxation, subject to Arts 16,18–21; all three Art 15(2) conditions are necessary for residence-only relief. Exactly 183 days can satisfy the presence limb, while 184 cannot. Employer or PE/fixed-base burden can defeat relief even below the day limit. [Arabic treaty and Protocol](https://zatca.gov.sa/ar/RulesRegulations/Agreements/Documents/%D9%85%D8%B5%D8%B1.pdf). |
+| Transport employment | Art 15(3) permits effective-management-state taxation of employment aboard ships/aircraft in international traffic; Art 15(4) gives exclusive recipient-residence taxation for the specified aircraft pool/joint-business remuneration. [Arabic treaty and Protocol](https://zatca.gov.sa/ar/RulesRegulations/Agreements/Documents/%D9%85%D8%B5%D8%B1.pdf). |
+| Directors’ fees | Art 16 permits the company-residence state to tax covered directors/control/similar-body fees of an other-state resident; no invented flat percentage. [Arabic treaty and Protocol](https://zatca.gov.sa/ar/RulesRegulations/Agreements/Documents/%D9%85%D8%B5%D8%B1.pdf). |
+| Artistes/sportspersons | Art 17 permits activity-state tax, including remuneration diverted to another person, notwithstanding the listed competing articles. If the visit is wholly/partly publicly funded by either state or its subdivisions/local authorities, the article instead exempts the activity state and taxes only in the performer’s residence state. [Arabic treaty and Protocol](https://zatca.gov.sa/ar/RulesRegulations/Agreements/Documents/%D9%85%D8%B5%D8%B1.pdf). |
+| Private pensions/annuities | Art 18 gives exclusive recipient-residence taxation for covered past-employment pensions/similar remuneration/annuities, subject to public-pension Art 19(2). An annuity is a stated periodic sum for life or a fixed/ascertainable period against adequate/full consideration. [Arabic treaty and Protocol](https://zatca.gov.sa/ar/RulesRegulations/Agreements/Documents/%D9%85%D8%B5%D8%B1.pdf). |
+| Government salary | Art 19(1) ordinarily assigns covered government-service salary to paying state; services in the other state are exclusively taxable there if recipient resides there AND (is its national OR did not become resident solely to render those services). Parenthesise that alternative within the residence condition. [Arabic treaty and Protocol](https://zatca.gov.sa/ar/RulesRegulations/Agreements/Documents/%D9%85%D8%B5%D8%B1.pdf). |
+| Government pension / business | Art 19(2) ordinarily assigns government-funded pension to paying state; only residence AND nationality in the other state switches exclusive taxation there. Government business-service remuneration/pensions use Arts 15–18 per Art 19(3). [Arabic treaty and Protocol](https://zatca.gov.sa/ar/RulesRegulations/Agreements/Documents/%D9%85%D8%B5%D8%B1.pdf). |
+| Students/trainees | Art 20(1): immediate prior other-state residence, visit solely for education/training, maintenance/education/training payments from outside host state. Art 20(2) covers service remuneration connected with study/training OR necessary for maintenance/study/training, for not more than 3 years, with the same residence/purpose requirements. [Arabic treaty and Protocol](https://zatca.gov.sa/ar/RulesRegulations/Agreements/Documents/%D9%85%D8%B5%D8%B1.pdf). |
+| Teachers/researchers | Art 21: other-state residence before invitation/visit for teaching/scientific research, with covered remuneration exempt in host state for not more than 3 years; research undertaken for private benefit rather than public interest is excluded. [Arabic treaty and Protocol](https://zatca.gov.sa/ar/RulesRegulations/Agreements/Documents/%D9%85%D8%B5%D8%B1.pdf). |
+| Other income | Art 22(1) starts with residence-only treatment; paragraph 2 redirects effectively connected business/fixed-base income, except Art 6 immovable income, to Art 7/14. Notwithstanding both, paragraph 3 permits source-state taxation of otherwise residual income arising there. [Arabic treaty and Protocol](https://zatca.gov.sa/ar/RulesRegulations/Agreements/Documents/%D9%85%D8%B5%D8%B1.pdf). |
 
-Taxable only in residence state unless:
-- (a) Fixed base regularly available in source state (only income attributable to base taxed), OR
-- (b) Stay in source state ≥183 days in any 12-month period (only income from activities in source state taxed)
+### 6. Apply credit, anti-abuse and dispute provisions
 
-Includes: scientific, literary, artistic, educational, teaching activities, physicians, lawyers, engineers, architects, dentists, accountants.
+**Credit method.** Article 23 permits a resident a deduction FROM residence-state TAX for income tax paid in the other state on income taxable there under the agreement. Limit the credit to the residence tax attributable to that income. This is not an expense deduction or guaranteed cash refund. Protocol 6 preserves Saudi Zakat collection for Saudi nationals; it does not itself declare Zakat universally noncreditable in Egypt or calculate the Saudi tax/Zakat base. [Arabic treaty and Protocol](https://zatca.gov.sa/ar/RulesRegulations/Agreements/Documents/%D9%85%D8%B5%D8%B1.pdf), Art 23, Protocol 6.
 
-### Article 15: Dependent Personal Services (Employment)
+**Conditional nondiscrimination.** Protocol 7 has two cumulative future conditions: Saudi Arabia applies income tax to its resident nationals OR its existing tax regime is modified accordingly; and, on that basis, after signing includes a nondiscrimination provision in a treaty with a non-GCC state. The specified most-favoured treatment is then incorporated as provided there. A later non-GCC treaty alone is insufficient; an assertion that this clause is categorically “not currently in force” has not been established. See the individual reservation under Sources. [Arabic treaty and Protocol](https://zatca.gov.sa/ar/RulesRegulations/Agreements/Documents/%D9%85%D8%B5%D8%B1.pdf), Protocol 7.
 
-Taxable only in residence state UNLESS:
-- Employment exercised in source state, AND
-- Recipient present in source state ≥183 days in any 12-month period, AND
-- Remuneration paid by employer who is not resident of source state, AND
-- Remuneration not borne by PE in source state
+**PPT and substance.** MLI 7 replaces the original Art 27 main-purpose provision. Original Art 27 already referred to the main purpose OR one of the principal purposes; the current object/purpose exception must be considered rather than assuming that a purpose-wording label establishes a universally broader rule: consider all facts/circumstances; deny a benefit if obtaining it was one principal purpose of the arrangement/transaction, unless granting it accords with the relevant provisions’ object/purpose. Office, employee, management, activity, beneficial-owner and conduit evidence can matter to that factual analysis; there is no universal headcount/office safe harbour in this treaty. Genuine activities do not automatically overcome the PPT, and a conduit label alone is not the complete legal test. The MLI preamble also states the aim of avoiding opportunities for nontaxation/reduced taxation through evasion/avoidance, including treaty shopping. [MLI](https://legalinstruments.oecd.org/public/doc/358/body-text.en.html), Arts 6–7; [ETA MLI synthesis](https://www.eta.gov.eg/sites/default/files/2021-07/SAUDI.pdf), preamble/Art 27 replacement.
 
-If all conditions met → source state may tax. Otherwise residence state only.
+**MAP.** Article 24 as modified by MLI 16 permits a person to present a treaty-inconsistent taxation case to EITHER competent authority irrespective of domestic remedies, within 3 years from first notification of the action. The 3-year period already existed in the bilateral text; MLI changes the first-sentence access rule. Authorities endeavour to resolve a justified objection if unilateral resolution is unavailable; agreed outcomes are implemented notwithstanding domestic time limits. They can consult on interpretation/application and cases not expressly provided for, including direct communication. Neither the bilateral text nor the matched MLI position supplies mandatory binding arbitration for this corridor. Do not promise resolution or suspend domestic appeal/payment deadlines merely because MAP is requested. [Arabic treaty and Protocol](https://zatca.gov.sa/ar/RulesRegulations/Agreements/Documents/%D9%85%D8%B5%D8%B1.pdf), Art 24; [MLI](https://legalinstruments.oecd.org/public/doc/358/body-text.en.html), Art 16; [ETA MLI synthesis](https://www.eta.gov.eg/sites/default/files/2021-07/SAUDI.pdf), MAP box/effect note; [Saudi position, no PartVI election](https://www.oecd.org/tax/treaties/beps-mli-position-saudi-arabia-instrument-deposit.pdf).
 
-### Article 16: Directors' Fees
+**Exchange, secrecy and privileges.** Article 25 covers relevant information for implementing the agreement or covered domestic tax law, particularly prevention of fraud/evasion, without restriction by Article 1. Information is secret, disclosed to relevant assessment/collection/enforcement/prosecution/appeal persons/authorities and used for those purposes, with public-court/judgment disclosure allowed. Domestic-law/practice limits, information unobtainable under normal administration, trade/business/industrial/commercial/professional secrets/processes and public policy remain relevant. Article 25(4), subject to paragraph 3’s limits, requires information-gathering even without the requested state’s own tax interest. Protocol 8 separately requires appropriate confidentiality standards, permits exchange of bank/financial-institution/agent/trustee information where the domestic laws of BOTH states permit it, and allows refusal if the other state fails the Article 25 confidentiality requirements. The old statement referring to the REQUESTING state’s own interest was incorrect. Article 26 preserves diplomatic/consular fiscal privileges under general international law/special agreements. [Arabic treaty and Protocol](https://zatca.gov.sa/ar/RulesRegulations/Agreements/Documents/%D9%85%D8%B5%D8%B1.pdf), Art 25–26, Protocol 8; [ETA note on omitted Protocol paragraphs](https://eta.gov.eg/sites/default/files/2024-09/alswdyt.pdf).
 
-Source state (where company is resident) may tax directors' fees and similar board payments.
+**Termination.** Article 29 remains in force indefinitely absent notice: either state may notify diplomatically on/before 30 June of a calendar year in a calendar year beginning after five years have elapsed from entry into force. For WHT, cessation concerns amounts paid or due after the end of that calendar year; for other taxes, taxable years beginning after that year-end. This rule is not evidence that either state has actually terminated the agreement. [Arabic treaty and Protocol](https://zatca.gov.sa/ar/RulesRegulations/Agreements/Documents/%D9%85%D8%B5%D8%B1.pdf), Art 29.
 
-### Article 17: Artistes and Sportspersons
+## Filing and payment
 
-Source state may tax income of artistes, musicians, actors, sportsmen from personal activities exercised therein, even if income accrues to another person.
+### Egyptian certificates, withholding and treaty refund
 
-### Article 18: Pensions and Annuities
+1. Classify the payment and test Art 56 liability/exemptions, the treaty cap and entitlement. Executive-regulation Art 76 as replaced by Decision 172/2015 requires relevant payers, including specified economic-zone/free-zone entities, to withhold at the statutory Art 56 rate and remit on Form11 withholding. Its wording and the current published refund service support a withholding/refund workflow; do not describe the treaty as an automatic payer election. [Decision 172/2015 p 9, executive-regulation Art 76](https://eta.gov.eg/sites/default/files/2024-03/law_no.172-2015.pdf).
+2. For a treaty refund, use Form1 withholding-tax-difference refund, submitted through ETA’s electronic system for integrated centres, or the General Administration for International Agreements for offices outside that system. A nonresident needs simplified registration to access the electronic agreements/refund screen. Submit the originals as required. [ETA services guide](https://www.eta.gov.eg/sites/default/files/2025-08/guide.of_.the_.egyptian.tax_.authority.services.second%20edition.pdf), pp 98–100.
+3. Attach the power of attorney; original authenticated/legalised residence certificate for the refund years; beneficial-owner declaration that income is not related to an Egyptian PE for those years; foreign constitutional/commercial-register documents; Arabic certified translations of contracts and continuing-contract declaration; ownership-of-rights evidence; Form11, tax payment receipts, outward bank transfers, invoices and the Egyptian company’s accounts/returns for relevant years. A repeat-year refund requires the continuing-contract declaration. [ETA services guide](https://www.eta.gov.eg/sites/default/files/2025-08/guide.of_.the_.egyptian.tax_.authority.services.second%20edition.pdf), p 98.
+4. ETA’s guide covers interest/royalty refunds and the application step also lists services/dividends. It provides deficiency notification, a maximum 15-day completion period split 10 then 5 days, otherwise case closure; reasoned rejection or accepted refund. Its stated service time is 45 days FROM a legally complete file, not guaranteed 45 days from any initial request. Record actual correspondence and eligibility; claim cash is not an assured receivable. [ETA services guide](https://www.eta.gov.eg/sites/default/files/2025-08/guide.of_.the_.egyptian.tax_.authority.services.second%20edition.pdf), pp 99–100.
+5. Obtain an Egyptian residence certificate using Form9 international agreements with individual/company-specific evidence (identity/travel/residence/contract or tax card/commercial register/contracts and authorised representation). ETA describes 7 days from a complete file, with the same 15-day 10+5 deficiency process; integrated/non-integrated channels differ. The guide describes residents in its service purpose even though its target-field label says “nonresident”; do not turn that label into a substantive residence rule. [ETA services guide](https://www.eta.gov.eg/sites/default/files/2025-08/guide.of_.the_.egyptian.tax_.authority.services.second%20edition.pdf), pp 103–104.
+6. Form8 international agreements is the Art 56 tax certificate evidencing tax, supported by Form11, invoices, receipt and authorisation; it is not the residence certificate. Form7 is an inquiry/advance-view application, with income-specific TRC, beneficial-owner, ownership/contract and financial/group documents; guide timing 30 days inquiry/60 days advance view starts from completeness. Additional information may be requested. [ETA services guide](https://www.eta.gov.eg/sites/default/files/2025-08/guide.of_.the_.egyptian.tax_.authority.services.second%20edition.pdf), pp 101–109.
 
-- Pensions and similar remuneration for past employment: **taxable only in residence state**
-- Annuities: defined as stated sum payable periodically during life or specified period, under obligation for adequate/full consideration
+For documents destined for Egypt, obtain the specific required authentication; do not presume a Saudi apostille alone replaces it. The [HCCH status table](https://www.hcch.net/en/instruments/conventions/status-table/?cid=41) updated 30 June 2026 lists Saudi Arabia but does not list Egypt as a party to the Apostille Convention. That status does not itself specify every ETA or Saudi authentication step. The two countries’ procedures above govern their own requirements.
 
-### Article 19: Government Service
+### Saudi source relief or refund
 
-- Salaries/wages from government service: taxable only by paying government
-- Exception: if services rendered in other state and individual is resident/national of that other state
-- Pensions from government service: taxable only by paying government
-- Articles 15–18 apply to government business services
+1. Establish Saudi-source domestic liability, covered payment, beneficial-owner/residence/PPT conditions and any PE connection. A Saudi resident payer or Saudi PE of a nonresident withholds; a natural-person payer’s duty concerns business payments, not personal purchases. Income connected with the recipient’s Saudi PE is reported through that PE rather than automatically subjected to gross WHT. Both source relief and refund require an application; “automatic treaty application” is inaccurate. Saudi law 35 gives treaty precedence on conflict except its domestic anti-avoidance Art 63. [official law reprint p 168](https://gstc.gov.sa/en/DocumentsLb/Publications/Documents/The%20Guideline%20of%20Income%20Tax.pdf); [ZATCA January 2025 DTA circular pp 16–17](https://zatca.gov.sa/en/MediaCenter/Publications/Documents/Tax-Circular-WHT-Implementation-Under-Double-Taxation-Agreement.PDF).
+2. For relief at source, the circular requires a foreign-authority TRC (no fixed form prescribed), its approved request form, Saudi consular authentication or apostille as stated, and resident undertaking Q/7C to pay tax/penalties for incorrect information, arithmetic or treaty interpretation. Application acknowledgement precedes review/approval; the circular states a 5-year limitation for application/audit under executive-regulation 66, after which benefits cannot be claimed. The statutory refund provision ties a 5-year refund request to the overpaid tax year; the request must come from the taxpayer or formally authorised agent, and unfiled returns or unresolved objection/appeal can prevent refund consideration. [executive-regulation 66, official reprint p 283](https://gstc.gov.sa/en/DocumentsLb/Publications/Documents/The%20Guideline%20of%20Income%20Tax.pdf). Match the certificate’s covered period to the income; do not assume “valid 1 year from issue”. [DTA circular pp 16–17](https://zatca.gov.sa/en/MediaCenter/Publications/Documents/Tax-Circular-WHT-Implementation-Under-Double-Taxation-Agreement.PDF).
+3. If domestic tax was withheld, request a refund with the TRC, foreign beneficiary’s authorisation for the resident taxpayer to receive the refund on its behalf, authenticated form, WHT return and payment receipts, and Chamber-attested resident letter confirming no prior refund/transfer/offset. The circular’s actual checklist controls; retain approvals and duplicates controls. [DTA circular p 17](https://zatca.gov.sa/en/MediaCenter/Publications/Documents/Tax-Circular-WHT-Implementation-Under-Double-Taxation-Agreement.PDF).
+4. The current public service calls its application Q 7 B: fill the form, print, sign and have the other tax authority certify it, then submit to ZATCA. Its target users include the foreign beneficiary/representative and resident withholder, for rate application or refund. [current DTA service page](https://zatca.gov.sa/en/eServices/Pages/eservices-219.aspx). The source-relief undertaking Q/7C and application Q 7 B are distinct documents, not conflicting names for one form.
+5. Saudi WHT is generally reported/paid within the first 10 days of the month after payment. The annual statement is due within 120 days of fiscal year-end, or 60 days for partnerships, under the current guidance; an annual statement can still be required where withholding cases existed but tax was zero. Filing/payment duties must be considered even when treaty relief is claimed. [ZATCA May 2026 guideline](https://zatca.gov.sa/en/HelpCenter/guidelines/Documents/General-Guideline-for-Withholding-Tax-In-accordance-with-the-provisions-of-the-Income-Tax-Law-and-its-Implementing-Regulations.pdf), §5 p 30, Law 68/Regulations 63.
 
-### Article 20: Students and Trainees
+Saudi individual residence certificates have a separate [ZATCA service](https://zatca.gov.sa/ar/eServices/Pages/eServices-084.aspx), stating residence 30 days with permanent home or 183 without one, plus valid passport/residence/employer evidence. Those individual service conditions are not a corporate-certificate checklist or the treaty individual tie-breaker. Use evidence appropriate to the actual recipient; the DTA circular accepts the foreign authority’s own TRC format for an outbound Saudi payment.
 
-- Maintenance/education/training payments from sources outside host state: not taxed
-- Remuneration from services connected with education/training: not taxed in host state for up to 3 years
+### MAP channels and contact boundary
 
-### Article 21: Teachers and Researchers
+Article 3(1)(i) names Egypt’s Minister of Finance/legal representative and Saudi Ministry of Finance represented by its minister/delegate. The currently accessible [Egypt MAP profile](https://www.oecd.org/tax/dispute/egypt-dispute-resolution-profile.pdf) is expressly dated 5 April 2023 and identifies Ministry/ETA international-tax functions; it is not fresh confirmation of the old “Conflict Resolution Department, Cairo” contact. Keep current submission recipient/delivery evidence as an unresolved dependency if it has not been confirmed for the case.
 
-- Teaching/research payments: not taxed in host state for up to 3 years
-- Exception: research for private benefit of specific person
+Saudi Arabia’s [current MAP service](https://www.zatca.gov.sa/en/eServices/Pages/eServices-93.aspx) links the official request portal, asks for required fields/supporting documents, notifies missing material and confirms a complete request. A service-entry duration is not a promise of dispute resolution. Preserve first-notification evidence and the 3-year treaty period; do not let source-recovery or ordinary refund applications consume it. Named individuals are not added to this Guide, and no request is submitted by this workflow.
 
-### Article 22: Other Income
+## Worked cases
 
-Items not dealt with in other articles:
-- Residence state may tax
-- Source state may also tax (Art 22(3))
-- If connected to PE/fixed base, Articles 7/14 apply instead
+Each tax calculation assumes the stated residence, beneficial ownership, treaty/PPT eligibility, classification and absence of a connected PE/fixed-base exception. An assumption is not a finding about a real client. Domestic exemptions and procedures must be cleared separately.
 
-### Article 23: Methods for Elimination of Double Taxation
+### Example 1: Saudi company dividend to Egyptian shareholder
 
-- **Credit method:** Resident state allows deduction for tax paid in other state
-- Deduction limited to portion of tax attributable to income taxed in other state
-- Protocol item 6: KSA elimination method does not prejudice Zakat collection for Saudi nationals
-- Protocol item 7: Non-discrimination article applies only if KSA includes it in a treaty with a non-GCC country in the future
+SA Co pays SAR 1,000,000 to EG HoldCo, a qualifying Egyptian company other than a partnership holding 25% directly. Article 10(2)(a)’s at-least 20% condition is satisfied, giving a 5% ceiling; ordinary Saudi dividend WHT is also 5% absent an exemption. Tax =1,000,000 ×0.05 =SAR 50,000; payment after that withholding =SAR 950,000. No extra treaty rate reduction arises on those assumptions. If EG HoldCo were not beneficial owner or failed the PPT, the treaty entitlement conclusion would change; the domestic charge must still be analysed. [Arabic treaty and Protocol](https://zatca.gov.sa/ar/RulesRegulations/Agreements/Documents/%D9%85%D8%B5%D8%B1.pdf), Art 10; [ZATCA May 2026 guideline](https://zatca.gov.sa/en/HelpCenter/guidelines/Documents/General-Guideline-for-Withholding-Tax-In-accordance-with-the-provisions-of-the-Income-Tax-Law-and-its-Implementing-Regulations.pdf), pp 28–29.
 
-### Article 24: Mutual Agreement Procedure (MAP)
+```oa-check
+name: Egypt-Saudi qualifying dividend
+inputs:
+  gross_dividend: 1000000
+  direct_holding_percent: 25
+  domestic_percent: 5
+steps:
+  qualifying_holding: clamp(floor(direct_holding_percent / 20), 0, 1)
+  treaty_cap_percent: 10 - 5 * qualifying_holding
+  applicable_percent: min(domestic_percent, treaty_cap_percent)
+  withholding: gross_dividend * applicable_percent / 100
+  net_payment: gross_dividend - withholding
+expected:
+  qualifying_holding: 1
+  treaty_cap_percent: 5
+  applicable_percent: 5
+  withholding: 50000
+  net_payment: 950000
+```
 
-- Case must be presented within **3 years** from first notification (MLI modified)
-- Competent authorities endeavour to resolve by mutual agreement
-- Any agreement implemented notwithstanding domestic time limits
-- Competent authorities may consult on interpretation/application and for cases not provided for
+### Example 2: Egyptian interest paid to Saudi commercial bank
 
-### Article 25: Exchange of Information
+EG Co pays EGP 5,000,000 to SA Bank, an eligible nongovernment beneficial owner. Assume a taxable Art 56 loan with no historic or 2026 exemption and a valid 10% treaty cap. If 20% is initially withheld, tax paid =EGP 1,000,000 and initial cash =EGP 4,000,000. A successful eligible refund of the 10-point excess is EGP 500,000; final tax then EGP 500,000 and total cash after refund EGP 4,500,000. Pending/rejected refund leaves the actual cash/tax position different. A government-owned bank is not automatically exempt: test the named/agreed Protocol 4 class and Art 11(3). [Arabic treaty and Protocol](https://zatca.gov.sa/ar/RulesRegulations/Agreements/Documents/%D9%85%D8%B5%D8%B1.pdf), Art 11/Protocol 4; [Art 56](https://eta.gov.eg/sites/default/files/2024-03/law_no.91-2005.pdf); [ETA services guide](https://www.eta.gov.eg/sites/default/files/2025-08/guide.of_.the_.egyptian.tax_.authority.services.second%20edition.pdf), pp 98–100.
 
-- Information exchanged for tax assessment/collection/enforcement/prosecution/appeals
-- Treated as secret, disclosed only to relevant persons/authorities
-- Cannot require administrative measures at variance with domestic law/practices
-- Cannot require information not obtainable under normal administration
-- Cannot require disclosure of professional secret/trade process/contrary to public policy
-- Information must be obtained even if not needed for requesting state's own tax purposes
+### Example 3: Egyptian software/know-how royalty to Saudi company
 
-### Article 27: Anti-Avoidance (MLI PPT)
+EG Co pays EGP 2,000,000 to SA Tech for rights/know-how actually within Art 12. Assume taxable 20% domestic withholding and entitled 10% treaty ceiling. Initial tax =EGP 400,000 and cash =EGP 1,600,000; eligible refund if granted =EGP 200,000; final tax =EGP 200,000 and total cash after refund =EGP 1,800,000. That final cash is not the initial remittance. Saudi reporting/tax or Zakat depends on ownership, source, actual base and credit rules; do not compute 2.5% on that receipt or infer universal Egyptian denial of Zakat credit from Protocol 6. [Arabic treaty and Protocol](https://zatca.gov.sa/ar/RulesRegulations/Agreements/Documents/%D9%85%D8%B5%D8%B1.pdf), Art 12/23, Protocol 6; [ETA services guide](https://www.eta.gov.eg/sites/default/files/2025-08/guide.of_.the_.egyptian.tax_.authority.services.second%20edition.pdf), pp 98–100; [Zakat regulations Arts 3,6,15,17,21](https://zatca.gov.sa/ar/RulesRegulations/Taxes/Documents/ZakatRegulation_1445.pdf).
 
-The original main-purpose test has been **replaced by the MLI Principal Purpose Test (PPT)** per Article 7 of the MLI:
-- Treaty benefits denied if it is reasonable to conclude that obtaining the benefit was one of the principal purposes of the arrangement/transaction
-- Benefits granted if it is established that granting them would be in accordance with the object and purpose of the relevant treaty provisions
+### Example 4: Construction duration, splitting and other PE routes
 
-### Article 28: Entry into Force
+SA Build performs a single 7-month Egyptian building project for EG Co:7>6, so Art 5(3)(a) establishes a construction PE and Art 7 permits tax on attributable profit. Assuming an ordinary Egyptian corporate assessment with no special exemption/sector treatment, the ordinary net-profit rate is 22.5%; gross contract revenue is not the taxable profit. Two 4-month contracts and a 1-month gap do not automatically reset a single enterprise’s site duration; actual project continuity matters. If different closely related enterprises carry connected activities at the same project, apply MLI 14’s separate>30-day conditions before adding their periods. At 5 months, the construction-duration limb alone is not met; fixed-place, agent, service and Protocol routes must still be checked. [Arabic treaty and Protocol](https://zatca.gov.sa/ar/RulesRegulations/Agreements/Documents/%D9%85%D8%B5%D8%B1.pdf), Arts 5/7; [MLI](https://legalinstruments.oecd.org/public/doc/358/body-text.en.html), Arts 13–15; [Art 49 replacement](https://eta.gov.eg/sites/default/files/2024-03/law_no.96-2015.pdf).
 
-- Entry into force: first day of second month following exchange of ratification notifications
-- WHT: applies to amounts paid on or after 1 January next following entry into force
-- Other taxes: applies to taxable years beginning on or after 1 January next following entry into force
+### Decision case: exactly 183 employment days versus 184
 
-### Article 29: Termination
+An Egyptian-resident ordinary employee works in Saudi Arabia; employer is Egyptian-resident, and remuneration is not borne by any Saudi employer PE/fixed base. Assume none of Arts 16,18–21 or transport special rules applies. At 183 aggregate days in the relevant 12-month period, all Art 15(2) conditions hold and only Egypt may tax under this article. At 184 days, the presence limb fails and Saudi Arabia may tax the Saudi-work remuneration under Art 15(1), subject to its domestic law; no Saudi progressive salary rate is invented. A source employer or PE/fixed-base burden defeats the exception even at 183 days. [Arabic treaty and Protocol](https://zatca.gov.sa/ar/RulesRegulations/Agreements/Documents/%D9%85%D8%B5%D8%B1.pdf), Art 15.
 
-Either state may terminate by written notice through diplomatic channels on or before 30 June of any calendar year, from the fifth year following entry into force. Termination takes effect for WHT from end of calendar year, other taxes from taxable years beginning after end of that calendar year.
+```oa-check
+name: Egypt-Saudi employment 183 versus 184 days
+inputs:
+  days_at_boundary: 183
+  days_above_boundary: 184
+  employer_source_resident_flag: 0
+  source_pe_or_fixed_base_burden_flag: 0
+steps:
+  boundary_day_failure: clamp(days_at_boundary - 183, 0, 1)
+  above_day_failure: clamp(days_above_boundary - 183, 0, 1)
+  boundary_source_right: max(boundary_day_failure, employer_source_resident_flag, source_pe_or_fixed_base_burden_flag)
+  above_source_right: max(above_day_failure, employer_source_resident_flag, source_pe_or_fixed_base_burden_flag)
+  boundary_residence_only: 1 - boundary_source_right
+expected:
+  boundary_day_failure: 0
+  above_day_failure: 1
+  boundary_residence_only: 1
+  boundary_source_right: 0
+  above_source_right: 1
+```
 
----
+## When to refuse or refer
 
-## Tax Residency Certificate (TRC) Requirements
+Refuse an unconditional treaty-rate, zero-tax, filing/payment or refund instruction where residence, beneficial ownership, government qualification, PPT, income classification, connected PE/base, current domestic exemption or procedure remains unresolved. Refer actual residence conflicts, PE duration/attribution and overlapping periods, special-relationship pricing, conflicting authentic texts, creditability, disputed refund rights and MAP strategy for relevant professional review. Keep evidenced analysis and identify the particular missing fact/source; do not manufacture a TRC, source-relief approval, government agreement or accountant attestation.
 
-### Egypt side
-- **Format:** Original TRC issued by the Egyptian Tax Authority (ETA)
-- **Authentication:** Legalisation (not apostille — Egypt is not an Apostille Convention party for most purposes; verify current status)
-- **Validity:** 1 year from date of issue
-- **Process:** Egypt applies **pay-and-refund mechanism** under Ministerial Decree 771/2009
-  - The 20% domestic WHT rate is withheld at source
-  - The non-resident recipient files a refund claim with the ETA special unit for interest/royalty WHT refunds
-  - Controversial whether the decree was effectively abolished by 2015 amendments to executive regulations of Income Tax Law No. 91/2005
-  - **Practical guidance:** Practically, the ETA still applies the pay-and-refund mechanism. Resident companies should continue to deduct 20% WHT and the non-resident party should claim the refund. Maintain beneficial ownership and TRC documentation at all times for audit defense.
+## Completion checklist
 
-### Saudi Arabia side
-- **Format:** Tax Residency Certificate issued by ZATCA (Zakat, Tax and Customs Authority)
-- **Validity:** Typically 1 year from date of issue
-- **Process:** ZATCA offers a choice:
-  1. **Automatic treaty application** — apply reduced rate at time of payment via monthly WHT returns, submit TRC with request form, taxpayer bears full responsibility for understatement including penalties
-  2. **Refund procedure** — withhold domestic rate, file refund claim later
-- **Conditions:** Report full details of each payment to non-resident, file DTT request form with TRC
+Record actual documents and dates; domestic charge/exemption; article and eligibility; gross cap versus net assessment; MLI pair/period; source-relief/refund channel/form and response; tax paid/refunded separately; residence-side credit/base; adverse-notification/MAP and domestic appeal deadlines. Retain every assumption and unresolved source issue. This file does not contact either authority or submit anything.
 
----
+### Cross-references to upstream skills
 
-## Mutual Agreement Procedure (MAP)
-
-| Field | Egypt | Saudi Arabia |
-|-------|-------|-------------|
-| Competent Authority | Ministry of Finance — Egyptian Tax Authority (ETA), Conflict Resolution Department | Ministry of Finance — ZATCA (Zakat, Tax and Customs Authority) |
-| Time Limit | 3 years from first notification of action | 3 years from first notification (same per treaty) |
-| Arbitration | Not included (standard MAP only) | Not included (standard MAP only) |
-| MLI MAP | MLI Article 16 applies — enhancements to MAP procedure | MLI Article 16 applies — enhancements to MAP procedure |
-| Effective Date (MLI MAP) | Cases presented on or after 1 January 2021 | Cases presented on or after 1 January 2021 |
-
-### MAP Contact Points
-
-- **Egypt:** Egyptian Tax Authority (ETA) — Conflict Resolution Department, Ministry of Finance, Cairo
-- **Saudi Arabia:** ZATCA — International Tax/Treaty Department, Riyadh
-
----
-
-## Anti-Treaty-Shopping / PPT (Principal Purpose Test)
-
-The original Article 27 (main-purpose test) has been **replaced by the MLI Article 7 Principal Purpose Test (PPT)**:
-- Treaty benefits are **denied** if it is reasonable to conclude, having regard to all relevant facts and circumstances, that obtaining the benefit was one of the principal purposes of the arrangement or transaction
-- Benefits are **granted** if it is established that granting them in these circumstances would be in accordance with the object and purpose of the relevant treaty provisions
-- This is a broader test than the original main-purpose clause and aligns with OECD BEPS Action 6 standards
-- **Substance requirements:** Both authorities may examine whether the treaty claimant has genuine substance (offices, employees, business activities) in the residence state
-- **Conduit arrangements:** Using a resident of one state to channel income to a resident of a third state for treaty benefits is likely to be caught by the PPT
-
----
-
-## Cross-References to Upstream Skills
-
-- **eg-corporate-tax** — Egypt's corporate income tax (22.5%) applies to resident companies and PEs of non-residents; treaty rates reduce WHT on outbound payments
-- **eg-withholding-tax** — Egypt's domestic WHT rates (dividends 5%/10%, interest 20%, royalties 20%, services 20%); treaty provides reduced rates but pay-and-refund mechanism applies
-- **sa-corporate-tax** — Saudi Arabia's income tax (20% for non-GCC, Zakat 2.5% for GCC nationals/Saudi entities); treaty rates cap WHT on outbound payments
-- **oecd-model-treaty-defaults** — Reference for articles not individually summarized in this corridor file
-- **withholding-tax-matrix** — Cross-reference for domestic WHT rates across jurisdictions
-
----
-
-## Pitfalls and Practical Notes
-
-1. **Egypt pay-and-refund trap:** Egypt does NOT automatically apply reduced treaty rates for interest and royalties. Domestic 20% WHT is withheld; refund claim filed later. Budget for cash flow impact. The 2015 amendment controversy leaves the decree's status unclear — practical approach: follow the pay-and-refund mechanism.
-
-2. **Zakat vs. income tax:** Saudi nationals/GCC persons pay Zakat (2.5%), not income tax. The treaty covers both Zakat and income tax. Article 23(6) protocol: elimination method does not prejudice Zakat collection for Saudi nationals. This means Zakat is not creditable against Egyptian tax.
-
-3. **Beneficial ownership:** Both ETA and ZATCA scrutinize whether the recipient is the true beneficial owner. Conduit companies with no substance in the residence state risk treaty denial under the PPT.
-
-4. **TRC validity:** Ensure TRC is obtained before payment is made and covers the payment period. Expired TRCs invalidate treaty claims.
-
-5. **MLI modifications effective dates:** MLI provisions have different effective dates for WHT (1 Jan 2021) vs. other taxes (1 Jul 2021). Check which MLI article applies to which treaty article.
-
-6. **Construction PE threshold:** 6-month threshold for building/construction sites, but MLI anti-fragmentation means closely related enterprise activities >30 days are aggregated. Structure contracts carefully.
-
-7. **Technical services:** No separate FTS article in this treaty. IP-related technical assistance falls under royalties (Art 12 at 10%). Non-IP technical services fall under business profits (Art 7), taxable only if PE exists in source state. This is a significant advantage over Egypt's 20% domestic WHT on service payments to non-residents.
-
-8. **Saudi non-discrimination article:** The non-discrimination article is NOT currently in force — it applies only prospectively if KSA includes a non-discrimination article in a treaty with a non-GCC country. Verify current status if relevant.
-
----
-
-## Worked Examples
-
-### Example 1: Saudi company paying dividends to Egyptian shareholder
-
-**Facts:** A Saudi Arabian company (SA Co) distributes SAR 1,000,000 in dividends to its Egyptian parent company (EG HoldCo), which holds 25% of SA Co's capital directly.
-
-**Analysis:**
-- Treaty Article 10(2)(a): 5% rate applies because EG HoldCo holds directly ≥20% of capital
-- Saudi domestic WHT on dividends: 5% (same as treaty rate)
-- WHT = SAR 1,000,000 × 5% = SAR 50,000
-- Note: Saudi domestic rate already matches treaty rate — no additional relief needed
-
-### Example 2: Egyptian company paying interest to Saudi bank
-
-**Facts:** An Egyptian company (EG Co) pays EGP 5,000,000 in interest to a Saudi commercial bank (SA Bank, not government-owned).
-
-**Analysis:**
-- Treaty Article 11(2): 10% rate applies
-- Egyptian domestic WHT on interest: 20%
-- Egypt applies pay-and-refund mechanism:
-  1. EG Co withholds 20% at source = EGP 1,000,000
-  2. SA Bank files refund claim with ETA for differential (20% - 10% = 10%)
-  3. Refund amount = EGP 500,000
-- Net WHT after refund = EGP 500,000 (10% treaty rate)
-- Note: If SA Bank were government-owned (SAMA, GOSI, etc.), Article 11(3) would exempt the interest entirely
-
-### Example 3: Egyptian company paying royalties to Saudi tech company
-
-**Facts:** An Egyptian company (EG Co) pays EGP 2,000,000 in royalties (software licence + know-how) to a Saudi tech company (SA Tech).
-
-**Analysis:**
-- Treaty Article 12(2): 10% rate applies (royalties include software licences and technical assistance related to IP)
-- Egyptian domestic WHT on royalties: 20%
-- Pay-and-refund:
-  1. EG Co withholds 20% = EGP 400,000
-  2. SA Tech files refund claim for 10% differential = EGP 200,000
-  3. Net WHT after refund = EGP 200,000 (10% treaty rate)
-- Saudi side: SA Tech receives EGP 1,800,000, reports as business income. If Saudi-owned, Zakat 2.5% applies (not income tax). Article 23(6) protocol: Zakat is not creditable against Egyptian tax.
-
-### Example 4: Construction PE — 7-month project
-
-**Facts:** A Saudi construction company (SA Build) sends a team to Egypt for a 7-month building project for EG Co.
-
-**Analysis:**
-- Article 5(3): Construction PE threshold = 6 months
-- 7 months > 6 months → PE exists in Egypt
-- MLI anti-fragmentation: if SA Build splits the project into two 4-month contracts with a 1-month gap, the closely related enterprise periods (>30 days) are aggregated → PE still exists
-- Consequence: Article 7 — profits attributable to PE are taxable in Egypt at 22.5% CIT
-- If no PE (e.g., 5 months only): profits taxable only in Saudi Arabia
-
----
+- **eg-corporate-tax:** ordinary corporate net-profit assessment and exemptions; the corridor’s 22.5% reference is conditional, not universal gain taxation.
+- **eg-withholding-tax:** classify domestic dividend/interest/royalty/service payments, exemptions, certificates and actual treaty refund procedure; a treaty cap alone does not authorise source relief.
+- **sa-corporate-tax:** ownership/person/base distinctions between income tax and Zakat, current special regimes and credits. Neither 20% nor 2.5% is a universal gross-receipt rate.
+- **oecd-model-treaty-defaults:** research aid; actual bilateral articles and matched MLI prevail over model defaults.
+- **withholding-tax-matrix:** other domestic comparisons; this corridor’s sources and conditions control this pair. A link does not independently validate another Guide’s period or content.
 
 ## Sources
 
-- **Official treaty text (synthesised with MLI):** https://www.eta.gov.eg/sites/default/files/2021-07/SAUDI.pdf
-- **PwC Saudi Arabia — Withholding taxes:** https://taxsummaries.pwc.com/saudi-arabia/corporate/withholding-taxes
-- **PwC Egypt — Withholding taxes:** https://taxsummaries.pwc.com/egypt/corporate/withholding-taxes
-- **TaxInPangea — Egypt-Saudi Arabia treaty:** https://www.taxinpangea.com/treaties/egypt-saudi-arabia
-- **ZATCA Treaty Network:** https://zatca.gov.sa/en/RulesRegulations/Taxes/Pages/TaxTreaties.aspx
+| Official source | Actual scope read and current-version boundary | Read date |
+|---|---|---|
+| [Arabic treaty and Protocol](https://zatca.gov.sa/ar/RulesRegulations/Agreements/Documents/%D9%85%D8%B5%D8%B1.pdf) | Read for: All 32 pages: authentic-language treaty articles 1–29 and Protocol. Published official working copy; read with MLI, not labelled a Gazette facsimile. | 2026-11-16 |
+| [ETA MLI synthesis](https://www.eta.gov.eg/sites/default/files/2021-07/SAUDI.pdf) | Read for: All operative English articles/Protocol and MLI replacement boxes/effect notes; guidance-only status acknowledged. | 2026-11-16 |
+| [ETA Arabic MLI synthesis](https://eta.gov.eg/sites/default/files/2024-09/alswdyt.pdf) | Read for: Cover/omitted-Protocol notice and corresponding synthesis context; no assertion that guidance repairs an authentic publication by itself. | 2026-11-16 |
+| [MLI](https://legalinstruments.oecd.org/public/doc/358/body-text.en.html); [Egypt position](https://www.oecd.org/tax/treaties/beps-mli-position-egypt-instrument-deposit.pdf); [Saudi position](https://www.oecd.org/tax/treaties/beps-mli-position-saudi-arabia-instrument-deposit.pdf); [12 November 2026 status list](https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/beps-mli/beps-mli-signatories-and-parties.pdf) | Read for: MLI operative scope/effect/reservation rules; pair listings and Arts 4,6–9,12–17 choices/reservations/notifications actually matched. No interactive-database match claimed. | 2026-11-16 |
+| [ZATCA bilateral status page](https://zatca.gov.sa/en/RulesRegulations/Agreements/Pages/egypt-convention.aspx) | Read for: Signature and force dates; current page, updated 26 August 2026. | 2026-11-16 |
+| [ZATCA SEZ operations manual](https://zatca.gov.sa/en/HelpCenter/guidelines/Documents/SEZ-Tax%26Customs-Procedures.pdf) | Read for: Cover/status pp 1–2 and ordinary-mainland rate/SEZ distinctions pp 6–8 personally read. No SEZ election or taxpayer incentive eligibility decided here. | 2026-11-16 |
+| [ZATCA May 2026 guideline](https://zatca.gov.sa/en/HelpCenter/guidelines/Documents/General-Guideline-for-Withholding-Tax-In-accordance-with-the-provisions-of-the-Income-Tax-Law-and-its-Implementing-Regulations.pdf) | Read for: May 2026 second version: cover/status, WHT scope, domestic rates/exemptions and reporting/payment; distinction of assessment from WHT. | 2026-11-16 |
+| [ZATCA DTA implementation circular](https://zatca.gov.sa/en/MediaCenter/Publications/Documents/Tax-Circular-WHT-Implementation-Under-Double-Taxation-Agreement.PDF); [DTA service](https://zatca.gov.sa/en/eServices/Pages/eservices-219.aspx) | Read for: January 2025 v 1 full 18 pages, especially source-relief/refund; current Q 7 B application procedure. | 2026-11-16 |
+| [Egypt Law 91/2005](https://eta.gov.eg/sites/default/files/2024-03/law_no.91-2005.pdf); [Law 96/2015](https://eta.gov.eg/sites/default/files/2024-03/law_no.96-2015.pdf); [Decision 172/2015](https://eta.gov.eg/sites/default/files/2024-03/law_no.172-2015.pdf) | Read for: Original Art 56 visually read; Art 49 rate replacement visually read; executive-regulation Art 76 and neighbor visually read. Historic texts overlaid, not presented as a current consolidation. | 2026-11-16 |
+| [ETA resident-corporate explanation, published 4 April 2022](https://eta.gov.eg/en/node/242) | Read for: Resident-company annual net profit at 22.5%, solely as readable amount corroboration of the visibly read Art 49 replacement. This dated explanation does not establish 2026 legislative completeness, rounding, asset disposal, WHT, treaty treatment or personal rates. The primary law and all scope qualifications remain controlling. | 2026-11-16 |
+| [Egypt Law 30/2023](https://eta.gov.eg/sites/default/files/2024-03/law_no.30-2023.pdf); [Law 151/2026](https://eta.gov.eg/sites/default/files/2026-08/law.no_.151.of_.2026.pdf); [official 2026 corrigendum](https://eta.gov.eg/sites/default/files/2026-08/law.no_.149.150.151.of_.2026.retractation.pdf) | Read for: Art 56 third-paragraph and transitional exemption/effect;2026 dividend/infrastructure amendments/effect; both corrigendum pages visually read. | 2026-11-16 |
+| [ETA services guide](https://www.eta.gov.eg/sites/default/files/2025-08/guide.of_.the_.egyptian.tax_.authority.services.second%20edition.pdf) | Read for: Whole international-agreements chapter 96–109 plus refund/neighbor context 89–110; not all 257 pages. Guide service timing is conditional on completeness. | 2026-11-16 |
+| [Saudi official law committee reprint](https://gstc.gov.sa/en/DocumentsLb/Publications/Documents/The%20Guideline%20of%20Income%20Tax.pdf) | Read for: Arts 2/7/35 and adjacent implementing material; source compilation date 1444/04/24 expressly retained. Older technical-service rate row is superseded here by actual May 2026 authority guidance. | 2026-11-16 |
+| [Saudi Zakat regulations 1445](https://zatca.gov.sa/ar/RulesRegulations/Taxes/Documents/ZakatRegulation_1445.pdf) | Read for: Cover expressly includes 1248/1446 amendment; persons/excluded income-tax shares, Art 15 base/year rate and adjacent base provisions; amended Art 73 and neighbors read. Not a full taxpayer Zakat computation. Does not establish Zakat due on a particular receipt. | 2026-11-16 |
+| [Saudi individual TRC service](https://zatca.gov.sa/ar/eServices/Pages/eServices-084.aspx); [HCCH status table](https://www.hcch.net/en/instruments/conventions/status-table/?cid=41) | Read for: Individual-only issuance conditions; party-list status updated 30 June 2026. Not a corporate-certificate or universal authentication instruction. | 2026-11-16 |
+| [Egypt MAP profile](https://www.oecd.org/tax/dispute/egypt-dispute-resolution-profile.pdf); [Saudi MAP service](https://www.zatca.gov.sa/en/eServices/Pages/eServices-93.aspx) | Read for: Egypt profile’s 2023 date/contact functions and current Saudi request workflow; individual names are not transplanted into a 2026 contact list. | 2026-11-16 |
 
-**Last verified:** July 2026
+Not yet confirmed: (1) independent legal status/repeal controversy of Egypt Decree 771/2009 itself; the current positive refund workflow above rests on actual Art 76/ETA guidance, not an unproved universal decree claim; (2) the old “TRC valid 1 year from issue” assertion in either state, automatic invalidation merely by issue-date expiry, and a universal before-payment requirement: obtain a certificate covering the relevant income/refund years and the actual authority’s requirements instead; (3) current operational Egypt MAP recipient/channel and the specific old “Conflict Resolution Department, Cairo” description; the accessible profile is dated 2023; (4) whether both Protocol 7 nondiscrimination triggers have occurred and the resulting incorporated wording in an actual case; (5) any domestic CGT/exemption conclusion for a specific immovable/share/PE/transport/other asset, including the old blanket “Saudi immovable gains:N/A/noCGT” and uniform Egyptian 22.5%/Saudi 20% rows; (6) any categorical Egyptian credit denial for Saudi Zakat or a 2.5% levy on SA Tech’s gross royalty receipt. (7) the original personal-income domestic labels remain individually unconfirmed: Egyptian pensions “Progressive”; Egyptian directors’ fees “Progressive”; Egyptian employment “Progressive”; Saudi pensions “N/A”; Saudi directors’ fees “N/A”; Saudi employment “Progressive”. The treaty allocations above do not establish those domestic labels, an exemption or a progressive salary schedule. These individual legacy claims are outside usable guidance. Actual domestic classification/base/credit and professional case review remain necessary. No commercial summary is used as legal proof.
 
 > Contributed by Ahmed Hassan.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-08-02. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `eg-sa-dtt-corridor` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/eg-sa-dtt-corridor. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-16. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `eg-sa-dtt-corridor` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/eg-sa-dtt-corridor. If neither is available, confirm every figure against the official source pages cited above before relying on it.
