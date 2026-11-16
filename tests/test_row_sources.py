@@ -23,6 +23,75 @@ def pages(**by_url):
 
 
 class RowSources(unittest.TestCase):
+    def test_korean_whole_money_compounds(self):
+        for source, amount in [
+            ('5억원', 500_000_000), ('250만원', 2_500_000),
+            ('1억5천만원', 150_000_000), ('1억 6천만원', 160_000_000),
+            ('4억 6천만원', 460_000_000), ('1,400만원', 14_000_000),
+            ('1억7,406만원', 174_060_000), ('3억8,406만원', 384_060_000),
+            ('6억원', 600_000_000), ('1억5만원', 100_050_000),
+            ('1조2억3천4백5십6만원', 1_000_234_560_000),
+            ('동일 5억원', 500_000_000), ('약5억원', 500_000_000),
+            ('250만 원', 2_500_000),
+        ]:
+            with self.subTest(source=source):
+                self.assertEqual(rs.page_values(source), {amount})
+        self.assertEqual(rs.page_values('5억원 및 250만원'), {500_000_000, 2_500_000})
+
+    def test_korean_compounds_never_match_wrong_scales_or_suffixes(self):
+        for source, wrong in [
+            ('15억원', '500,000,000'), ('1억5천만원', '50,000,000'),
+            ('250만원', '250,000,000'), ('1억7,406만원', '74,060,000'),
+            ('1억5만원', '150,000,000'), ('5억원', '5%'),
+        ]:
+            with self.subTest(source=source, wrong=wrong):
+                self.assertFalse(rs.found(wrong, rs.page_values(source)))
+        for source in ['1경5억원', '1억2억원', '5천천만원', '1,40만원',
+                       '일억5천만원', '1억만원', '1천20백만원', '억원']:
+            with self.subTest(malformed=source):
+                self.assertEqual(rs.page_values(source), set())
+
+    def test_korean_literal_fractions_mask_denominators_and_coefficients(self):
+        for source, percent in [
+            ('100분의20', 20), ('1천분의20', 2), ('1만분의25', 0.25),
+            ('100분의2.5', 2.5), ('100분의20.', 20),
+            ('법률에 따라 100분의20의 세율', 20), ('100분의20 이상', 20),
+        ]:
+            with self.subTest(source=source):
+                self.assertEqual(rs.page_values(source), {percent})
+        for source, wrong in [('100분의20', '100%'), ('1천분의20', '20%'),
+                              ('1천분의20', '100%'), ('100분의2.5', '100%')]:
+            with self.subTest(source=source, wrong=wrong):
+                self.assertFalse(rs.found(wrong, rs.page_values(source)))
+        for source in ['0분의20', '100분의20분의5', '1경5분의20', '1,00분의20']:
+            with self.subTest(malformed=source):
+                self.assertEqual(rs.page_values(source), set())
+
+    def test_korean_malformed_fraction_continuations_do_not_match_a_valid_prefix(self):
+        for source in ['100분의20분의', '100분의20분의X', '100분의20분의X20',
+                       '100분의20분의 X20', '100분의20분의5X20', '100분의20분의.']:
+            with self.subTest(malformed=source):
+                self.assertEqual(rs.page_values(source), set())
+        for source in ['100분의20의 세율', '100분의20 이상', '100분의20.',
+                       '법률에 따라 100분의20의 세율']:
+            with self.subTest(valid=source):
+                self.assertEqual(rs.page_values(source), {20})
+
+    def test_korean_number_normalization_preserves_other_notations_and_policy(self):
+        for source, figure in [('20퍼센트', '20%'), ('35퍼센트', '35%'),
+                               ('twenty per cent', '20%'),
+                               ('15 million shillings', '15,000,000'),
+                               ('1,234.56', '1,234.56')]:
+            with self.subTest(source=source):
+                self.assertTrue(rs.found(figure, rs.page_values(source)))
+        # Separate statutory rates do not establish their combined arithmetic result.
+        self.assertFalse(rs.found('22%', rs.page_values('100분의20 및 100분의2')))
+        text = skill(f'| Amount | KRW 500,000,000 | [law]({A}) |')
+        self.assertEqual(rs.check_text(text, pages(**{A: '금액 5억원'})), (1, [], []))
+        text = skill(f'| Amount | KRW 50,000,000 | [law]({A}) |')
+        self.assertEqual([m[0] for m in rs.check_text(text, pages(**{A: '금액 1억5천만원'}))[1]],
+                         ['50,000,000'])
+
     def test_figure_on_linked_page_passes(self):
         t = skill(f"| Rate | 5.20% up to $23,000 | [law]({A}) |")
         n, misses, unreadable = rs.check_text(t, pages(**{A: "rate 5.2% of income not over $23000 " * 20}))
@@ -111,6 +180,93 @@ class RowSources(unittest.TestCase):
                 text = skill(f'| Threshold | THB 1,800,000 | [law]({A}) |')
                 _, misses, _ = rs.check_text(text, pages(**{A: page}))
                 self.assertEqual([m[0] for m in misses], ['1,800,000'])
+
+    def test_whole_english_monetary_scales(self):
+        for page, figure in [
+            ('fifteen million shillings', '15,000,000'),
+            ('ten million shillings', '10,000,000'),
+            ('twenty-one million dollars', '21,000,000'),
+            ('twenty one million dollars', '21,000,000'),
+            ('one hundred and fifteen million shillings', '115,000,000'),
+            ('nine hundred ninety nine billion rupees', '999,000,000,000'),
+            ('FIFTEEN\nMILLION\nSHILLINGS', '15,000,000'),
+            ('twenty-\none million pounds', '21,000,000'),
+            ('twenty\u2011one million pounds', '21,000,000'),
+            ('one-hundred million euros', '100,000,000'),
+            ('thirty million baht', '30,000,000'),
+            ('two billion rand', '2,000,000,000'),
+            ('the allowance and fifteen million shillings', '15,000,000'),
+            ('apply a fifteen million shilling limit', '15,000,000'),
+        ]:
+            with self.subTest(page=page):
+                self.assertTrue(rs.found(figure, rs.word_money_values(page)))
+                text = skill(f'| Threshold | {figure} | [law]({A}) |')
+                self.assertEqual(rs.check_text(text, pages(**{A: page})), (1, [], []))
+
+    def test_word_money_never_falls_back_to_smaller_suffixes(self):
+        for page in [
+            'one thousand fifteen million shillings',
+            'one thousand, fifteen million shillings',
+            'one million fifteen million shillings',
+            'one trillion fifteen million shillings',
+            'one sextillion fifteen million shillings',
+            'two hundred and one and a half million shillings',
+            'one point five million shillings',
+            'minus fifteen million shillings',
+            'zero fifteen million shillings',
+            'one two million shillings',
+            'a one thousand fifteen million shillings',
+            'and one thousand fifteen million shillings',
+            'a and fifteen million shillings',
+            'and and fifteen million shillings',
+        ]:
+            with self.subTest(page=page):
+                self.assertEqual(rs.word_money_values(page), set())
+                text = skill(f'| Threshold | 15,000,000 | [law]({A}) |')
+                _, misses, unreadable = rs.check_text(text, pages(**{A: page}))
+                self.assertEqual(([m[0] for m in misses], unreadable), (['15,000,000'], []))
+
+    def test_word_money_requires_amount_context_and_correct_value(self):
+        for page in [
+            'fifteen billion shillings', 'sixteen million shillings', 'ten million shillings',
+            'fifteen million visitors', 'fifteen million months', 'bare fifteen million',
+            'fifteen millionth shillings', 'million shillings', 'fifteenmillion shillings',
+            'Section fifteen million shillings', 'Form: fifteen million dollars',
+            'Form_fifteen million shillings', 'ref-fifteen million shillings',
+            '1 fifteen million shillings', 'fifteen million shillings_identifier',
+            '1, fifteen million shillings', 'ref.fifteen million shillings',
+            'fifteen million shillings-id', 'fifteen million . OAG shillings',
+            'ref\u2011fifteen million shillings', 'fifteen million shillings\u2011id',
+            'fifteen million USD', 'USD fifteen million',
+        ]:
+            with self.subTest(page=page):
+                text = skill(f'| Threshold | 15,000,000 | [law]({A}) |')
+                _, misses, unreadable = rs.check_text(text, pages(**{A: page}))
+                self.assertEqual(([m[0] for m in misses], unreadable), (['15,000,000'], []))
+
+    def test_actual_tanzania_definition_clauses_keep_their_own_amounts(self):
+        # ITA s.3, OSG A.S.2025; PDF SHA256 53599ac147250ed28cf5507aa13731beca
+        # c8eea7365946884cb4544bcc9e4c4a. Full exclusion limbs, not guessed thresholds.
+        residence = '''a private residence of an individual that has
+            been owned continuously for three years or
+            more and lived in by the individual
+            continuously or intermittently for a total of
+            three years or more, other than a private
+            residence that is realised for a gain in excess of
+            fifteen million shillings;'''
+        land = '''an interest in land held by an individual that has
+            a market value of less than ten million shillings
+            at the time it is realised and that has been used
+            for agricultural purposes for at least two of the
+            three years prior to realisation;'''
+        for clause, right, wrong in [(residence, '15,000,000', '10,000,000'),
+                                     (land, '10,000,000', '15,000,000')]:
+            with self.subTest(clause=clause):
+                text = skill(f'| Threshold | {right} | [law]({A}) |')
+                self.assertEqual(rs.check_text(text, pages(**{A: clause})), (1, [], []))
+                text = skill(f'| Wrong threshold | {wrong} | [law]({A}) |')
+                _, misses, unreadable = rs.check_text(text, pages(**{A: clause}))
+                self.assertEqual(([m[0] for m in misses], unreadable), ([wrong], []))
 
     def test_url_with_brackets_is_kept_whole(self):
         u = "https://law.example.gov/act_(01-07-24).pdf"
