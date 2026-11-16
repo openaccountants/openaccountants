@@ -3,12 +3,11 @@ name: mn-payroll-social
 description: "Source-cited draft: Mongolia resident payroll PIT and mandatory employee/employer contributions for 2026. Not reviewed by an accountant."
 jurisdiction: MN
 tax_year: 2026
-last_updated: 2026-11-15
+last_updated: 2026-11-16
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
-status: needs_sources
 domain: payroll
-version: 0.1
+version: 0.2
 type: computation
 ---
 

@@ -3,12 +3,11 @@ name: mn-corporate-income-tax
 description: "Source-cited draft: Mongolia corporate income tax, residence, withholding and filing for 2026. Not reviewed by an accountant."
 jurisdiction: MN
 tax_year: 2026
-last_updated: 2026-11-15
+last_updated: 2026-11-16
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
-status: needs_sources
 domain: income-tax
-version: 2.1
+version: 2.2
 type: situation-rules
 ---
 
