@@ -6,7 +6,7 @@ jurisdiction: GL
 tax_year: 2026
 last_updated: 2026-11-16
 category: international
-license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v 1.0 (content)
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 type: computation
 domain: payroll
@@ -41,7 +41,7 @@ Ordinary eligible arrangements are the specified Greenland/Danish pension funds 
 
 ### 2. Establish the savings base
 
-Start with A- and B-income and the additions cross-referenced to income-law sections 41(2) and 47 b(6). Classify all exclusions under section 2(2)–(4), rather than treating gross wages or taxable income as the base automatically. The exclusions cover the specified civil-service payments, disability support, child-related payments, public assistance, old-age/disability pensions, housing and education support and listed municipal allowances subject to their exceptions; parental/public-maintenance support and other pension payments also require the statutory classification. Use the actual provision and records for each component. [Section 2](https://nalunaarutit.gl/groenlandsk-lovgivning/2025/selvstyrets-lovbekendtgoerelse-nr-67-af-25_09_2025?sc_lang=da).
+Start with A- and B-income and the additions cross-referenced to income-law sections 41(2) and 47b(6). Classify all exclusions under section 2(2)–(4), rather than treating gross wages or taxable income as the base automatically. The exclusions cover the specified civil-service payments, disability support, child-related payments, public assistance, old-age/disability pensions, housing and education support and listed municipal allowances subject to their exceptions; parental/public-maintenance support and other pension payments also require the statutory classification. Use the actual provision and records for each component. [Section 2](https://nalunaarutit.gl/groenlandsk-lovgivning/2025/selvstyrets-lovbekendtgoerelse-nr-67-af-25_09_2025?sc_lang=da).
 
 From the 2026 amendment, section 2(4) excludes benefits a civil servant earns as part of the employment. Do not continue using the older wording about benefits forming a pension-contribution base. Exact civil-service classification, statutory additions and income exclusions must be settled before the numerical cases apply. [Amendment 19, s 1(1) and s 2](https://nalunaarutit.gl/groenlandsk-lovgivning/2026/inatsisartutlov-nr-19-af-29_05_2026?sc_lang=da).
 
@@ -67,10 +67,10 @@ Assume an eligible adult, a fully established ordinary savings base, no self-emp
 
 | Base (DKK) | Rate calculation | Minimum (DKK) | Derivation authority |
 |---|---|---:|---|
-| 125,000 | 0% | 0 | [Section3, amended](https://nalunaarutit.gl/groenlandsk-lovgivning/2025/selvstyrets-lovbekendtgoerelse-nr-67-af-25_09_2025?sc_lang=da); [amendment19](https://nalunaarutit.gl/groenlandsk-lovgivning/2026/inatsisartutlov-nr-19-af-29_05_2026?sc_lang=da) |
-| 150,000 | 9% × (150,000 − 125,000) / 50,000 = 4.5% | 6,750 | [Section3, amended](https://nalunaarutit.gl/groenlandsk-lovgivning/2025/selvstyrets-lovbekendtgoerelse-nr-67-af-25_09_2025?sc_lang=da); [amendment19](https://nalunaarutit.gl/groenlandsk-lovgivning/2026/inatsisartutlov-nr-19-af-29_05_2026?sc_lang=da) |
-| 175,000 | 9% | 15,750 | [Section3, amended](https://nalunaarutit.gl/groenlandsk-lovgivning/2025/selvstyrets-lovbekendtgoerelse-nr-67-af-25_09_2025?sc_lang=da); [amendment19](https://nalunaarutit.gl/groenlandsk-lovgivning/2026/inatsisartutlov-nr-19-af-29_05_2026?sc_lang=da) |
-| 300,000 | 9% | 27,000 | [Section3, amended](https://nalunaarutit.gl/groenlandsk-lovgivning/2025/selvstyrets-lovbekendtgoerelse-nr-67-af-25_09_2025?sc_lang=da); [amendment19](https://nalunaarutit.gl/groenlandsk-lovgivning/2026/inatsisartutlov-nr-19-af-29_05_2026?sc_lang=da) |
+| 125,000 | 0% | 0 | [Section 3, amended](https://nalunaarutit.gl/groenlandsk-lovgivning/2025/selvstyrets-lovbekendtgoerelse-nr-67-af-25_09_2025?sc_lang=da); [amendment 19](https://nalunaarutit.gl/groenlandsk-lovgivning/2026/inatsisartutlov-nr-19-af-29_05_2026?sc_lang=da) |
+| 150,000 | 9% × (150,000 − 125,000) / 50,000 = 4.5% | 6,750 | [Section 3, amended](https://nalunaarutit.gl/groenlandsk-lovgivning/2025/selvstyrets-lovbekendtgoerelse-nr-67-af-25_09_2025?sc_lang=da); [amendment 19](https://nalunaarutit.gl/groenlandsk-lovgivning/2026/inatsisartutlov-nr-19-af-29_05_2026?sc_lang=da) |
+| 175,000 | 9% | 15,750 | [Section 3, amended](https://nalunaarutit.gl/groenlandsk-lovgivning/2025/selvstyrets-lovbekendtgoerelse-nr-67-af-25_09_2025?sc_lang=da); [amendment 19](https://nalunaarutit.gl/groenlandsk-lovgivning/2026/inatsisartutlov-nr-19-af-29_05_2026?sc_lang=da) |
+| 300,000 | 9% | 27,000 | [Section 3, amended](https://nalunaarutit.gl/groenlandsk-lovgivning/2025/selvstyrets-lovbekendtgoerelse-nr-67-af-25_09_2025?sc_lang=da); [amendment 19](https://nalunaarutit.gl/groenlandsk-lovgivning/2026/inatsisartutlov-nr-19-af-29_05_2026?sc_lang=da) |
 
 ```oa-check
 name: Original ordinary-income boundaries
@@ -126,7 +126,7 @@ Retain the source versions, age/tax-liability decisions, classified income compo
 
 | Official source | Actual reading and scope |
 |---|---|
-| [Consolidation 67/2025](https://nalunaarutit.gl/groenlandsk-lovgivning/2025/selvstyrets-lovbekendtgoerelse-nr-67-af-25_09_2025?sc_lang=da) | Completed native rendered-body read on 2026-11-15, reused unchanged: ss 1–8 a, including exclusions, taper, contributions and collection neighbors. It prints the old ordinary-rate trajectory and must be read with amendment 19. |
+| [Consolidation 67/2025](https://nalunaarutit.gl/groenlandsk-lovgivning/2025/selvstyrets-lovbekendtgoerelse-nr-67-af-25_09_2025?sc_lang=da) | Completed native rendered-body read on 2026-11-15, reused unchanged: ss 1–8a, including exclusions, taper, contributions and collection neighbors. It prints the old ordinary-rate trajectory and must be read with amendment 19. |
 | [Act 19 of 29 May 2026](https://nalunaarutit.gl/groenlandsk-lovgivning/2026/inatsisartutlov-nr-19-af-29_05_2026?sc_lang=da) | Completed native rendered-body read on 2026-11-15, reused unchanged: full operative ss 1–2, new civil-service wording, rate, collection suspension and commencement. Effect from 2026 onward; commencement the day after promulgation. |
 
 The former draft recorded source access 22 October 2026. This revision preserves that history in the original snapshot and uses the completed 15 November readings above; its 16 November update is not a new read of every unchanged law. No accountant approval is claimed.
