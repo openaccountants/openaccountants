@@ -1,18 +1,18 @@
 ---
 name: gr-corporate-income-tax
 description: "Greek corporate income tax for tax year 2026 under the Income Tax Code (ν. 4172/2013) as codified up to ν. 5264/2025. Covers resident companies, partnerships and Greek permanent establishments; the 22% rate, 29% for banks under article 27A and 10% for agricultural cooperatives; deductible and non-deductible expenses (arts. 22-23); depreciation rates; the 5-year loss carry-forward; the interest limitation (30% of EBITDA, EUR 3m); participation exemptions; withholding on dividends, interest, royalties and fees; the 80% prepayment and its 50% cut for new companies; the trade fee for legal entities; the N return by 15 July, eight instalments and penalties. Trigger on: Greek company tax, έντυπο Ν, προκαταβολή φόρου, τέλος επιτηδεύματος. Out of scope: individuals (gr-income-tax), residence and exit tax (gr-cross-border), VAT (gr-vat-return), EFKA (gr-efka), company formation (gr-company-formation)."
-version: 0.3
+version: 0.4
 type: computation
 jurisdiction: GR
 tax_year: 2026
-last_updated: 2026-11-14
+last_updated: 2026-11-16
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: corporate-tax
 ---
 
-# Greece corporate income tax (tax year 2026)
+# Greece corporate income tax (tax year 2026) v0.4
 
 The tax year is the calendar year unless the company has a different accounting year end. AADE (Independent Authority for Public Revenue) administers the tax. The rules are in the Income Tax Code (Κώδικας Φορολογίας Εισοδήματος, ν. 4172/2013, "ITC"), read here in the Ministry of Finance codification up to ν. 5264/2025. Procedure, fines and interest are in the Tax Procedure Code (ν. 5104/2024, "TPC"). The trade fee is in article 31 of ν. 3986/2011, as replaced by article 3 of ν. 5162/2024.
 
@@ -25,6 +25,10 @@ Related skills: `gr-income-tax` (individuals and the self-employed), `gr-cross-b
 - **Residents are taxed on worldwide income. Non-residents** are taxed on income from a Greek permanent establishment and on Greek-source income, often through withholding (see "Cross-border points").
 - **Exempt bodies** (ITC art. 46): general government bodies (except on capital income and gains), the Bank of Greece, UCITS and portfolio investment companies established in the EU/EEA, international organisations under a treaty, and the Hellenic Republic Asset Development Fund.
 - **Out of scope here.** Banks' deferred tax regime under art. 27A (only the 29% rate is shown), shipping companies taxed by tonnage, and entities keeping single-entry books (they compute profit under ITC art. 47 instead; this skill assumes double-entry books). Pillar Two top-up tax is not computed.
+
+### Tax year and year end
+
+The default tax year is the calendar year. A legal person or legal entity keeping double-entry books may have a tax year ending on 30 June; no tax year may exceed 12 months (ITC art. 8(1)). As the specific exception in art. 8(2), a Greek-tax-resident legal person or entity owned more than 50% by a foreign legal person or entity may use that foreign owner's tax year. Establish the actual ownership, book category and adopted year end before applying the return calendar. [ITC art. 8(1)-(2)](https://minfin.gov.gr/wp-content/uploads/2026/04/%CE%9A%CE%A9%CE%94%CE%99%CE%9A%CE%9F%CE%A0%CE%9F%CE%99%CE%97%CE%A3%CE%97-%CE%A4%CE%9F%CE%A5-%CE%9A%CE%A9%CE%94%CE%99%CE%9A%CE%91-%CE%A6%CE%9F%CE%A1%CE%9F%CE%9B%CE%9F%CE%93%CE%99%CE%91%CE%A3-%CE%95%CE%99%CE%A3%CE%9F%CE%94%CE%97%CE%9C%CE%91%CE%A4%CE%9F%CE%A3-%CE%9C%CE%95%CE%A7%CE%A1%CE%99-%CE%A4%CE%9F-%CE%9D-5264-2025.pdf).
 
 ## Rates, bands and thresholds
 
@@ -222,6 +226,7 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
+| Income Tax Code art. 8(1)-(2), read for this bounded tax-year/year-end clarification only; the other unchanged company-tax provisions and examples are not claimed freshly reverified | https://minfin.gov.gr/wp-content/uploads/2026/04/%CE%9A%CE%A9%CE%94%CE%99%CE%9A%CE%9F%CE%A0%CE%9F%CE%99%CE%97%CE%A3%CE%97-%CE%A4%CE%9F%CE%A5-%CE%9A%CE%A9%CE%94%CE%99%CE%9A%CE%91-%CE%A6%CE%9F%CE%A1%CE%9F%CE%9B%CE%9F%CE%93%CE%99%CE%91%CE%A3-%CE%95%CE%99%CE%A3%CE%9F%CE%94%CE%97%CE%9C%CE%91%CE%A4%CE%9F%CE%A3-%CE%9C%CE%95%CE%A7%CE%A1%CE%99-%CE%A4%CE%9F-%CE%9D-5264-2025.pdf | 2026-11-16 |
 | Income Tax Code (ν. 4172/2013), Ministry of Finance codification up to ν. 5264/2025, arts. 4, 21 to 24, 27, 45 to 49, 58, 62 to 64, 68 to 71 | https://minfin.gov.gr/wp-content/uploads/2026/04/ΚΩΔΙΚΟΠΟΙΗΣΗ-ΤΟΥ-ΚΩΔΙΚΑ-ΦΟΡΟΛΟΓΙΑΣ-ΕΙΣΟΔΗΜΑΤΟΣ-ΜΕΧΡΙ-ΤΟ-Ν-5264-2025.pdf | 2026-10-23 |
 | Ministry of Finance page publishing the codification | https://minfin.gov.gr/koinopoiisi-kodikopoiisis-tou-kodika-forologias-eisodimatos-symfona-me-to-arthro-83-par-55-tou-n-5104-2024/ | 2026-10-23 |
 | ν. 5162/2024 (ΦΕΚ Α' 198/05.12.2024), art. 3 replacing art. 31 of ν. 3986/2011 (trade fee), and its commencement article; not reopened on 14 Nov (aade.gr refuses scripted reads), read date kept | https://www.aade.gr/sites/default/files/2024-12/%CE%9D%205162%202024%20%CE%A6%CE%95%CE%9A%20198.pdf | 2026-10-23 |

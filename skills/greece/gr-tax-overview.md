@@ -20,7 +20,7 @@ Establish the tax year, taxpayer, transaction, residence and question first. Gre
 | Question or former overview topic | Owner to load | Handoff |
 |---|---|---|
 | Tax year, employment, pension, business and rental income; parent/youth rates and the individual return window | [gr-income-tax](gr-income-tax.md) | Tax year and filing year, age, dependants, income categories and source documents; the owner holds the actual bands and deadlines |
-| Company accounting year, corporation tax and company return window | [gr-corporate-income-tax](gr-corporate-income-tax.md) | Legal form, book category, year end and accounts; use [gr-partnerships-single-entry](gr-partnerships-single-entry.md) for that distinct job |
+| Company accounting year, corporation tax and company return window | [gr-corporate-income-tax, tax year and year end](gr-corporate-income-tax.md#tax-year-and-year-end) | Legal form, book category, year end and accounts; use [gr-partnerships-single-entry](gr-partnerships-single-entry.md) for that distinct job |
 | Worldwide versus Greek-source taxation, residence, moving in/out, inbound regimes, treaty relief and withholding | [gr-cross-border](gr-cross-border.md) | Residence history, travel dates, source/type of income and counterpart country; do not treat an immigration permit as a tax election |
 | VAT rates and reductions, registration/exemption, return frequency and filing/payment | [greece-vat-return](greece-vat-return.md) | Transaction/place of supply, period, book/start category and election; [gr-vat-return](gr-vat-return.md) is only an alias pointer |
 | Employee/employer percentage contributions and APD | [gr-employee-contributions](gr-employee-contributions.md) | Pay period, earnings, coverage package and employment/posting status |
