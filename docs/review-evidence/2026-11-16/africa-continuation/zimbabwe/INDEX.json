@@ -1,0 +1,137 @@
+{
+  "state": "writer delivery, independent review pending",
+  "base_main": "bbab4f1a6d82cace432e6ca8eda89c98ffb1c038",
+  "guide_commit": "8333fa0038105c9c9815683696f17a0edf0cb6f5",
+  "guides": [
+    {
+      "path": "skills/zimbabwe/zw-company-formation.md",
+      "original_blob": "8aa3ae39855212104830c53a31b311e602bd8c06",
+      "sha256": "5257f905e2c98dc63acd850a063466f091bdffedb04ed14533783a0f53e6e7c0",
+      "bytes": 13726,
+      "original_bytes": 4519
+    },
+    {
+      "path": "skills/zimbabwe/zw-tax-overview.md",
+      "original_blob": "894864c20c4d8fd4ecc7a151cf14e488e92723af",
+      "sha256": "82bb44d8efb5c1e0b035b70fade5743d5c80268555b93688375d5bf35b6619ee",
+      "bytes": 11098,
+      "original_bytes": 1935
+    }
+  ],
+  "archive": {
+    "path": "evidence.tar.gz",
+    "sha256": "c3deec8d9a000828e8efb24c9df2fdfc6bc0c12a069fb49d2dd4a0d3fdb20c1b",
+    "members": [
+      {
+        "path": "GUIDE-BINDINGS.json",
+        "bytes": 745,
+        "sha256": "07116d039284840dbf7aaf84e9d5044e62ac6a22787cd52f81e719ee28408ed8"
+      },
+      {
+        "path": "READ-AND-RECOVERY.md",
+        "bytes": 2381,
+        "sha256": "33b4cacc9bd05c8d47d14f40a841b192a872ef08f2f28cb3669969bbe2b24e18"
+      },
+      {
+        "path": "REPORT.md",
+        "bytes": 4324,
+        "sha256": "98c5d2fde0c3f9359f5736df78e40b6363992f66765ad7b9d9f99692d042569e"
+      },
+      {
+        "path": "frozen-guides/zw-company-formation.md",
+        "bytes": 13726,
+        "sha256": "5257f905e2c98dc63acd850a063466f091bdffedb04ed14533783a0f53e6e7c0"
+      },
+      {
+        "path": "frozen-guides/zw-tax-overview.md",
+        "bytes": 11098,
+        "sha256": "82bb44d8efb5c1e0b035b70fade5743d5c80268555b93688375d5bf35b6619ee"
+      },
+      {
+        "path": "ledgers/zw-company-formation.md",
+        "bytes": 10645,
+        "sha256": "c73dcdd2aa852831dfaa861149c6c12e43474e2994af05611b8d13b775315d5f"
+      },
+      {
+        "path": "ledgers/zw-tax-overview.md",
+        "bytes": 6032,
+        "sha256": "58fb6e7318a2b829c5795191918d011cfdce5087921f9130d12f557ae5e22dac"
+      },
+      {
+        "path": "original-guides/zw-company-formation.md",
+        "bytes": 4519,
+        "sha256": "eb796bb54d7bf93e1f21df23988dd1003c2870957aa5f872d8822ccfff601a6d"
+      },
+      {
+        "path": "original-guides/zw-tax-overview.md",
+        "bytes": 1935,
+        "sha256": "e1868d18c5293887f169a0ec8539ac0ec7088cea3d266603799b344401ad6a6a"
+      },
+      {
+        "path": "ownership-preflight.json",
+        "bytes": 34585,
+        "sha256": "90a8f53d9f6f166b0aefb3907c5c43d5fa4007f585c97d672da889c6364aeb1e"
+      },
+      {
+        "path": "validation/INITIAL-SETUP-NOTES.md",
+        "bytes": 1232,
+        "sha256": "93484b6344e2d64b410c500be5419e8b7f5dafb48cd6d946ad494f5f3ab295af"
+      },
+      {
+        "path": "validation/copy-test-dependencies.json",
+        "bytes": 2076,
+        "sha256": "53a1c54a07c2c2901dbf1d89b339f4a04cf3482c76c67fc26ccefcc470f539fc"
+      },
+      {
+        "path": "validation/examples.txt",
+        "bytes": 58,
+        "sha256": "6657e7f1bd2e46bc80cf3e6883e5351d165449e943b05e2d48ea40041a5c8bc4"
+      },
+      {
+        "path": "validation/quote-and-copy-tests-rerun.txt",
+        "bytes": 121,
+        "sha256": "e02be085a4c0d6fef4c930b78b2279db9398065dd8bf75a0291182f6d3a27fb1"
+      },
+      {
+        "path": "validation/quote-and-copy-tests.txt",
+        "bytes": 1510,
+        "sha256": "34dea9b26adbec3cb8b82451190fe29c533cf7c4b02c5e2dd731a30e53580d74"
+      },
+      {
+        "path": "validation/row-sources.txt",
+        "bytes": 461,
+        "sha256": "566534c57e7c0557c256e8306813040c2471fdfdb1a1a2e275eecf480c689ef1"
+      },
+      {
+        "path": "validation/skill-checks-final.json",
+        "bytes": 96,
+        "sha256": "bde21a417a36db7f492ff12c6fb21be28cbf2ffdfef7b5981191c4deb13acb76"
+      },
+      {
+        "path": "validation/skill-checks-first.txt",
+        "bytes": 1319,
+        "sha256": "375a843676ee97ff83034b86641d023199505464f6023a6c32dec24596309c34"
+      },
+      {
+        "path": "validation/sync-integrity.txt",
+        "bytes": 81,
+        "sha256": "016d2bdee9b6f9cba339da255e44a5ce8cb26915b652c690636d5844bb56dac9"
+      },
+      {
+        "path": "validation/validate-guides-committed.txt",
+        "bytes": 373,
+        "sha256": "9144eb2c43bf1a2c4cc9f7427d73bc4d8e63e7fe1e024cbd8b603278ce454081"
+      },
+      {
+        "path": "validation/validate-guides-final.txt",
+        "bytes": 192,
+        "sha256": "c77cb1eba6cecc38872b47ba037dfa18dee700ab350232108f982f1b8995deaa"
+      },
+      {
+        "path": "validation/validate-guides.txt",
+        "bytes": 99,
+        "sha256": "b483c71445dda503a93a56421eb28c2b76ea443c8b429d8f78cf654133c08258"
+      }
+    ]
+  }
+}
