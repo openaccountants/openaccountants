@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/gg-payroll-social-insurance"
   jurisdiction: "GG"
   tax_year: "2026"
-  last_updated: "2026-11-01"
+  last_updated: "2026-11-15"
 ---
 
-# Guernsey payroll and social contributions v0.11
+# Guernsey payroll and social contributions v0.12
 
 > **Source-cited draft.** Professional review is pending. Figures are limited to the periods and assumptions below. This Guide prepares working papers; it is not authority to file or pay.
 
@@ -24,15 +24,15 @@ Sources were accessed on 22 October 2026. A dated rate table controls its stated
 
 The operative Revenue Service leaflet, effective **1 January 2026**, states:
 
-| Class | Rate | Lower earnings limit | Upper earnings limit |
-|---|---:|---:|---:|
-| Employee, Class 1 | 7.5% | £192/week or £832/month | £3,780/week or £16,380/month |
-| Employer, Class 1 | 7.1% | Same | Same |
-| Self-employed, Class 2 | 12.4% | £9,984/year | £196,560/year |
+| Class | Rate | Lower earnings limit | Upper earnings limit | Source |
+|---|---:|---:|---:|---|
+| Employee, Class 1 | 7.5% | £192/week or £832/month | £3,780/week or £16,380/month | [2026 leaflet, pp19–20](https://gov.gg/CHttpHandler.ashx?id=102818&p=0) |
+| Employer, Class 1 | 7.1% | Same | Same | [2026 leaflet, pp19–20](https://gov.gg/CHttpHandler.ashx?id=102818&p=0) |
+| Self-employed, Class 2 | 12.4% | £9,984/year | £196,560/year | [2026 leaflet, pp19–20](https://gov.gg/CHttpHandler.ashx?id=102818&p=0) |
 
 [Benefit Payment & Contribution Rates 2026, pp19–20](https://gov.gg/CHttpHandler.ashx?id=102818&p=0). The lower limit is a liability threshold, not a deductible allowance. Confirm age, class, period and exception before applying this table.
 
-## The base and ordinary computation
+## The base
 
 For an ordinary full month at earnings above the lower limit, apply the Class 1 rates to gross earnings capped at £16,380. Employee contributions reduce net pay; the employer share is an additional cost.
 
@@ -166,7 +166,7 @@ Keep each employer's benefit statement, category, provision dates and exemption 
 
 For employees outside the hotel/guesthouse schedule, Fact Sheet 2 values unfurnished accommodation/dwellings or land at **15% of assessable emoluments**, furnished accommodation/dwellings at **17.5%**, and proprietary director/employee accommodation at **open-market rental value**. The latter status includes direct or indirect control of **more than 15%** of shares in the employing company. This is a specific housing classification, not a replacement definition for all director rules. [Fact Sheet 2, sections 1.3 and 2](https://gov.gg/CHttpHandler.ashx?id=202739&p=0).
 
-An ordinary non-proprietary employee can elect for the benefit not to exceed a lower open-market rental value. The election must be made within **two years after the end of the relevant year**: for 2026, by **31 December 2028**. Do not automatically choose the lower number without the election. Establish the assessable-emoluments base separately rather than assuming cash salary is always the whole base. [Fact Sheet 2, section 2](https://gov.gg/CHttpHandler.ashx?id=202739&p=0).
+An ordinary non-proprietary employee can elect for the benefit not to exceed a lower open-market rental value and bears the onus of proving that lower value. The administrative guide describes an election within two years after the relevant year, but statutory regulation 3(3) requires it **before 31 December in the second following year**. For 2026, make it **before 31 December 2028**, so plan submission by **30 December 2028** (derived planning date) and confirm the actual submission route. Retain this wording discrepancy; do not use the guide to extend the statutory boundary or automatically choose the lower number without a valid timely election. Establish the assessable-emoluments base separately rather than assuming cash salary is always the whole base. [Valuation of Benefits Regulations r3(3), archived primary copy](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=267239); [Fact Sheet 2, section 2](https://gov.gg/CHttpHandler.ashx?id=202739&p=0).
 
 Employee contributions reduce the housing benefit subject to the detailed rules. Under SoP E24, utilities are separate additional benefits for the percentage/open-market housing category; paying personal utility bills does not reduce the accommodation benefit. The hotel schedule charges under regulations 3(1) and 3(2) include those utilities. [SoP E24](https://gov.gg/CHttpHandler.ashx?id=202739&p=0).
 
@@ -245,7 +245,7 @@ The Employer Guide requires a certificate of continuing liability to be forwarde
 
 Income-tax treaty relief and social-insurance coverage are separate. Consult the [UK treaty Guide](gg-uk-treaty-employment-and-relief.md) for its tax scope; it does not establish contribution relief. Secondary pensions and foreign coverage require their separate rules. Ordinary housing and split-employment methods are supplied above; the car-period reconciliation and £900 exemption allocation across employers remain explicit limits.
 
-## Worked examples that recompute
+## Two worked examples that recompute
 
 **Ordinary month.** At £3,000 qualifying gross pay, below the upper cap and above the lower threshold, employee SI is £225 and employer SI £213. Employer cost before pensions/other costs is £3,213. Net pay still needs tax and other deductions.
 
@@ -331,6 +331,8 @@ Both examples use the [2026 leaflet, p19](https://gov.gg/CHttpHandler.ashx?id=10
 
 ## Sources
 
+Source-access record, 14 November 2026: ordinary legal-library URLs returned 403/429 and the ordinary browser remained on a security-verification page. Legal-library provisions are supported by the preserved genuine October 2026 official primary PDFs, with original retrieval/read dates retained below. They are dated archived copies, not freshly retrieved current consolidations. Later amendments beyond those archived versions are not yet confirmed. Government and Registry guidance is separately identified by its own URL and read scope.
+
 Original sources read on 22 October 2026: [Benefits in Kind Guide 2026](https://gov.gg/CHttpHandler.ashx?id=202739&p=0), [employer webpage](https://gov.gg/employers), [contribution classification guidance](https://gov.gg/SScontributions), [2026 rates leaflet pp19–20](https://gov.gg/CHttpHandler.ashx?id=102818&p=0), [Employer Guide 2025 pp9–10 and 16–19](https://gov.gg/CHttpHandler.ashx?id=175677&p=0), and [SIC1](https://gov.gg/CHttpHandler.ashx?id=196680&p=0). The dated 2026 leaflet controls current contribution amounts; the 2025 manual is used only for the cited procedural guidance. Current income-tax benefit and ETI-penalty provisions were additionally read on 27 October 2026; the targeted Class 2/Class 3 and allocation/reassessment provisions were additionally read on 28 October 2026 as recorded below. This is not a claim to have reviewed the entire social-insurance statute or every special class.
 
 | Additional source | Read scope | Read on |
@@ -348,6 +350,7 @@ Original sources read on 22 October 2026: [Benefits in Kind Guide 2026](https://
 | [Surcharges and Supplements Regulations 2005](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=268079) | All rr1–9; income-tax rates/minimum, kept separate from statutory Class 1 contribution penalty/interest | 2026-10-28 |
 
 | [Original 2010 Valuation Regulations](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=267223), [current consolidation](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=267239), [2025 amendment](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=265330) | Original reg5 including page4 fraction visually checked; current rr1–2,5–6; complete2025 rr1–7. Statutory annual car value controls over the inconsistent monthly guidance illustration | 2026-10-28 |
+| [Current Valuation Regulations, archived primary copy](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=267239) and [authentic original 2010 Regulations](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=267223) | Read for r3(3): employee proof burden, lower-rental-value election and statutory before-31-December boundary; compared with the administrative Fact Sheet 2 wording above | 2026-11-15 |
 | [Exemption Ordinance](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=263414), [authentic 2022 No.3 amendment](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=263409) | ss1,2(1)(v),2(2),3 and notes;2022ss12,14: one annual aggregate eligible-benefit exemption,900from2023 | 2026-10-28 |
 
 Not yet confirmed: exact Class 3 lower-limit/deeming interaction under regulation 38(1), (6)–(7), Class 2/3 penny rounding beyond the published weekly limits, and authority-directed part-year reassessment outcomes; actual contribution part-month interest and reconciliation of older manual relief with s104(1A), prescribed fixed/escalating penalty amounts and full notice-specific enforcement procedures; current employer-specific £900 withholding allocation instructions (the statutory annual aggregate and car day-based reconciliation are supplied); share schemes, relocation and scheme-specific pension/foreign coverage cases. These are explicit limits, not nil-charge findings. The new 28 October ordinary-contribution, benefit-period and enforcement methods are checked in the [fresh ordinary-method whole-pack review](../../evidence/research/guernsey-2026/ordinary-completion-2026-10-28/independent-review/report.md); earlier published review covers their predecessor. The [fresh independent whole-pack review](../../evidence/research/guernsey-2026/review/report.md) and [bounded contribution-assessment closure](../../evidence/research/guernsey-2026/review/bounded-addition-closure.md) accept the earlier published revision at 6ae8c8a2; professional attestation remains pending. The subsequent statutory car reconciliation and annual £900 aggregate methods are accepted within their stated limits in the [statutory-benefit and domestic-TP whole-pack review](../../evidence/research/guernsey-2026/statutory-gap-closure-2026-10-28/independent-review/report.md) and [final status closure](../../evidence/research/guernsey-2026/statutory-gap-closure-2026-10-28/independent-review/closure.md); those earlier reviews cover the published predecessor.
@@ -358,4 +361,4 @@ General tax and accounting reference material only. These drafts have not been p
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-01. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `gg-payroll-social-insurance` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/gg-payroll-social-insurance. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-15. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `gg-payroll-social-insurance` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/gg-payroll-social-insurance. If neither is available, confirm every figure against the official source pages cited above before relying on it.

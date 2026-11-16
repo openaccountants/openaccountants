@@ -1,7 +1,7 @@
 ---
 name: uzbekistan-social-contributions
 description: "Uzbekistan 2026 employer social-tax category, contribution-base, INPS and individual-contribution eligibility working papers. Trigger on ijtimoiy soliq, budget organisations, foreign staff, incentive rates, INPS and Soliq contributions. Detailed net pay is owned by uzbekistan-payroll."
-version: 0.2
+version: 0.3
 jurisdiction: UZ
 tax_year: 2026
 last_updated: 2026-11-15
@@ -12,11 +12,10 @@ depends_on:
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
-status: needs_sources
 domain: tax
 ---
 
-# Uzbekistan social contributions v0.2
+# Uzbekistan social contributions v0.3
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -40,9 +39,9 @@ Quick answer: ordinary PIT 12%, employer social 12% or proven special category; 
 
 | Item | Rate, base and conditions for 2026 | Official source |
 |---|---|---|
-| Resident employment PIT |12% of taxable employment income; apply documented exclusions/relief before the rate; special regimes can override | Tax Code 381,378,380,483, https://lex.uz/docs/4674902?ONDATE=21.10.2026 |
+| Resident employment PIT |12% of taxable employment income; apply documented exclusions/relief before the rate; special regimes can override | Tax Code Articles 381; 378; 380; 483; https://lex.uz/docs/4674902?ONDATE=21.10.2026 |
 | Nonresident employment PIT |12% on Uzbek-source employment/civil-contract income and other income outside the specified investment/freight rows; treaty/source analysis first | Tax Code 382, https://lex.uz/docs/4674902?ONDATE=21.10.2026 |
-| Commercial employer social tax |12% of the separate employment-cost base; not an employee deduction | Tax Code 403–405,407, https://lex.uz/docs/4674902?ONDATE=21.10.2026 |
+| Commercial employer social tax |12% of the separate employment-cost base; not an employee deduction | Tax Code Articles 403–405; 407; https://lex.uz/docs/4674902?ONDATE=21.10.2026 |
 | Budget employer |25%; budget status must be established, not inferred from state ownership alone | Tax Code 405, https://lex.uz/docs/4674902?ONDATE=21.10.2026 |
 | SOS Children's Villages of Uzbekistan |7% for the specifically named association | Tax Code 405, https://lex.uz/docs/4674902?ONDATE=21.10.2026 |
 | Disability-workshop limb |4.7% for taxpayers using disabled persons' labour in specialised workshops, sections and enterprises; not every employer hiring a disabled person | Tax Code 405, https://lex.uz/docs/4674902?ONDATE=21.10.2026 |

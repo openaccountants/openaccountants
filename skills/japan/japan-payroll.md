@@ -1,21 +1,20 @@
 ---
 name: japan-payroll
 description: Use this skill whenever asked about Japanese payroll, income tax withholding (源泉徴収 gensen chōshū), social insurance (社会保険 shakai hoken), labour insurance (労働保険 rōdō hoken), or employer obligations in Japan. Trigger on phrases like "gensen choshu", "源泉徴収", "shakai hoken", "社会保険", "厚生年金", "kosei nenkin", "kenko hoken", "健康保険", "雇用保険", "koyou hoken", "労災保険", "rosai hoken", "年末調整", "nenmatsu chousei", "year-end adjustment", "standard monthly remuneration", "hyōjun hōshū getsugaku", "payslip Japan", "給与明細", "kyūyo meisai", "minimum wage Japan", "overtime Japan", "36 agreement", "子ども・子育て支援金", or any question about running payroll in Japan. ALWAYS read this skill before processing any Japanese payroll work.
-version: 2.0
+version: 2.1
 jurisdiction: JP
 tax_year: 2026
-last_updated: 2026-11-14
+last_updated: 2026-11-15
 depends_on:
   - payroll-workflow-base
 category: payroll
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
-status: needs_sources
 domain: payroll
 type: computation
 ---
 
-# Japan payroll v2.0
+# Japan payroll v2.1
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -57,9 +56,9 @@ The table is **Kyokai Kenpo Tokyo**, not every insurer. Health and care rates ap
 | Employees' pension | 9.150% | 9.150% | Derived halves of 18.300%; pension SMR ceiling JPY 650,000/month; pension-fund arrangements require their own schedule | Same: https://www.kyoukaikenpo.or.jp/assets/R8_13tokyo.pdf |
 | New child-rearing support, 子ども・子育て支援金 | 0.115% | 0.115% | Derived halves of 0.23%; health SMR/bonus basis; April premium month onward | Same: https://www.kyoukaikenpo.or.jp/assets/R8_13tokyo.pdf |
 | Existing child allowance contribution, 子ども・子育て拠出金 | 0% | 0.360% | Employer only, **pension** SMR/standard bonus basis; this did not become an employee charge | Same, footer: https://www.kyoukaikenpo.or.jp/assets/R8_13tokyo.pdf |
-| General-business employment insurance | 0.50% | 0.85% | Actual labour-insurance wages, not SMR; source prints 5/1,000 and 8.5/1,000 | Employment Insurance Act/contribution schedule: https://www.mhlw.go.jp/content/001692566.pdf |
-| Agriculture/forestry/fishery and sake employment insurance | 0.60% | 0.95% | Actual covered wages; specified horticulture, livestock, inland fishery and seafarer operations instead use general-business rates | Same: https://www.mhlw.go.jp/content/001692566.pdf |
-| Construction employment insurance | 0.60% | 1.05% | Actual covered wages; source prints 6/1,000 and 10.5/1,000 | Same: https://www.mhlw.go.jp/content/001692566.pdf |
+| General-business employment insurance | 0.50% | 0.85% | Actual labour-insurance wages, not SMR; percentages derived from source 5/1,000 and 8.5/1,000 (multiply by 100) | Employment Insurance Act/contribution schedule: https://www.mhlw.go.jp/content/001692566.pdf |
+| Agriculture/forestry/fishery and sake employment insurance | 0.60% | 0.95% | Actual covered wages; percentages derived from source 6/1,000 and 9.5/1,000 (multiply by 100); specified horticulture, livestock, inland fishery and seafarer operations instead use general-business rates | Same: https://www.mhlw.go.jp/content/001692566.pdf |
+| Construction employment insurance | 0.60% | 1.05% | Actual covered wages; percentages derived from source 6/1,000 and 10.5/1,000 (multiply by 100) | Same: https://www.mhlw.go.jp/content/001692566.pdf |
 | Workers' compensation | 0% | Industry-specific; 0.30% for category 94 other businesses | Entirely employer-funded. Do not assign an office rate without industry classification; FY2026 schedule spans 0.25%-8.8%, derived from 2.5/1,000-88/1,000 | MHLW FY2026 rate table: https://www.mhlw.go.jp/content/roumuhiritu_r05.pdf |
 
 For illustration only, if all bases happen to be identical and uncapped, the Tokyo category-94/general-business employer rates sum to **15.70%** without care or **16.51%** with care (derived from the linked schedules). These are not usable flat payroll deductions or universal employer-cost percentages. Actual SMR grades, different ceilings and rounding change the cost.

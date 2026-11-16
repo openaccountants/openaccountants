@@ -1,20 +1,19 @@
 ---
 name: jp-social-insurance
 description: Use for Japanese self-employed National Health Insurance (国民健康保険, kokumin kenko hoken) and National Pension (国民年金, kokumin nenkin), fiscal-year premiums, household and municipal inputs, pension relief, mid-year changes and payment matching. Covers FY2026, with Shinjuku's actual municipal NHI schedule as a named example, not a national tariff. Route employees on employer insurance to japan-payroll.
-version: 2.1
+version: 2.2
 jurisdiction: JP
 tax_year: 2026
 tax_year_notes: "Fiscal 2026: April 2026-March 2027. Premiums and relief periods have different calendars; 2026 cash deductions use amounts actually paid."
-last_updated: 2026-11-14
+last_updated: 2026-11-15
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
-status: needs_sources
 domain: payroll
 type: computation
 ---
 
-# Japan self-employed health insurance and pension v2.1
+# Japan self-employed health insurance and pension v2.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -55,10 +54,10 @@ Income-tested relief needs an application and approval. Exemption considers the 
 
 | Pension relief, current JPS criteria | Prior-income ceiling formula/condition | FY2026 monthly payment after approval | Official source |
 | --- | --- | --- | --- |
-| Full exemption | (Number of dependants + 1) × JPY 350,000 + JPY 320,000, for each person whose income is tested; special personal-status rules may alter it | JPY 0 | National Pension Act relief rules, JPS criteria: https://www.nenkin.go.jp/service/kokunen/menjo/20150428.html |
-| 3/4 exemption | JPY 880,000 + relevant dependant and social-insurance deductions, etc. | JPY 4,480 | Same: https://www.nenkin.go.jp/service/kokunen/menjo/20150428.html |
-| 1/2 exemption | JPY 1,280,000 + relevant deductions | JPY 8,960 | Same: https://www.nenkin.go.jp/service/kokunen/menjo/20150428.html |
-| 1/4 exemption | JPY 1,680,000 + relevant deductions | JPY 13,440 | Same: https://www.nenkin.go.jp/service/kokunen/menjo/20150428.html |
+| Full exemption | (Number of dependants + 1) × JPY 350,000 + JPY 320,000, for each person whose income is tested; special personal-status rules may alter it | JPY 0 | JPY ceiling figures derived from 35万円 and 32万円 (万=10,000); National Pension Act relief rules, JPS criteria: https://www.nenkin.go.jp/service/kokunen/menjo/20150428.html |
+| 3/4 exemption | JPY 880,000 + relevant dependant and social-insurance deductions, etc. | JPY 4,480 | JPY ceiling figure derived from 88万円 (万=10,000); Same: https://www.nenkin.go.jp/service/kokunen/menjo/20150428.html |
+| 1/2 exemption | JPY 1,280,000 + relevant deductions | JPY 8,960 | JPY ceiling figure derived from 128万円 (万=10,000); Same: https://www.nenkin.go.jp/service/kokunen/menjo/20150428.html |
+| 1/4 exemption | JPY 1,680,000 + relevant deductions | JPY 13,440 | JPY ceiling figure derived from 168万円 (万=10,000); Same: https://www.nenkin.go.jp/service/kokunen/menjo/20150428.html |
 | Deferral | Full-exemption income formula; ages 20 to under 50; applicant/spouse test | Deferred, not an approved permanent waiver | Same: https://www.nenkin.go.jp/service/kokunen/menjo/20150428.html |
 | Early monthly bank debit | FY2026 method-specific discount JPY 60; not the ordinary next-month debit | JPY 17,860 | JPS advance-payment table: https://www.nenkin.go.jp/service/kokunen/hokenryo/zenno.html |
 
@@ -80,18 +79,18 @@ Ordinary approved exemption can reduce the pension amount credited; deferral doe
 
 | Component | Income rate and flat charge | Household annual component cap | Official source |
 | --- | --- | --- | --- |
-| Medical | 7.51% of all members' bases + JPY 47,600 per insured person | JPY 670,000 (67万円) | Shinjuku FY2026 schedule: https://www.city.shinjuku.lg.jp/hoken/hoken01_001028.html |
-| Elderly support | 2.80% of all members' bases + JPY 17,600 per insured person | JPY 260,000 (26万円) | Same: https://www.city.shinjuku.lg.jp/hoken/hoken01_001028.html |
-| Long-term care | 2.43% of bases for insured ages 40-64 + JPY 17,800 per such member | JPY 170,000 (17万円) | Same: https://www.city.shinjuku.lg.jp/hoken/hoken01_001028.html |
-| Child support, new FY2026 | 0.27% of all members' bases + JPY 1,873 per insured member aged at least 18; flat amount includes JPY 73 adult increment | JPY 30,000 (3万円) | Same: https://www.city.shinjuku.lg.jp/hoken/hoken01_001028.html |
+| Medical | 7.51% of all members' bases + JPY 47,600 per insured person | JPY 670,000 (67万円) | JPY cap derived from 67万円 (万=10,000); Shinjuku FY2026 schedule: https://www.city.shinjuku.lg.jp/hoken/hoken01_001028.html |
+| Elderly support | 2.80% of all members' bases + JPY 17,600 per insured person | JPY 260,000 (26万円) | JPY cap derived from 26万円 (万=10,000); Same: https://www.city.shinjuku.lg.jp/hoken/hoken01_001028.html |
+| Long-term care | 2.43% of bases for insured ages 40-64 + JPY 17,800 per such member | JPY 170,000 (17万円) | JPY cap derived from 17万円 (万=10,000); Same: https://www.city.shinjuku.lg.jp/hoken/hoken01_001028.html |
+| Child support, new FY2026 | 0.27% of all members' bases + JPY 1,873 per insured member aged at least 18; flat amount includes JPY 73 adult increment | JPY 30,000 (3万円) | JPY cap derived from 3万円 (万=10,000); Same: https://www.city.shinjuku.lg.jp/hoken/hoken01_001028.html |
 | Total when all components reach cap | JPY 1,130,000, derived sum; not a per-person tariff and no care component if nobody qualifies | Derived from 4 caps above | Same: https://www.city.shinjuku.lg.jp/hoken/hoken01_001028.html |
-| Income-base deduction | JPY 430,000 (43万円) per person if total income at most JPY 24,000,000 (2,400万円), negative base zero | Higher-income deduction tiers not supplied here | Same: https://www.city.shinjuku.lg.jp/hoken/hoken01_001028.html |
+| Income-base deduction | JPY 430,000 (43万円) per person if total income at most JPY 24,000,000 (2,400万円), negative base zero | Higher-income deduction tiers not supplied here | JPY figures derived from 43万円 and 2,400万円 (万=10,000); Same: https://www.city.shinjuku.lg.jp/hoken/hoken01_001028.html |
 
 | Shinjuku flat-charge reduction | Relevant household prior-income ceiling | Official source |
 | --- | --- | --- |
-| 70% (7割) | JPY 430,000 + JPY 100,000 × max(wage/pension earner count - 1, 0) | Shinjuku reduction table: https://www.city.shinjuku.lg.jp/kenkou/hoken01_002065_00003.html |
-| 50% (5割) | Above base + JPY 310,000 × relevant insured/former-member count | Same: https://www.city.shinjuku.lg.jp/kenkou/hoken01_002065_00003.html |
-| 20% (2割) | Above base + JPY 570,000 × relevant insured/former-member count | Same: https://www.city.shinjuku.lg.jp/kenkou/hoken01_002065_00003.html |
+| 70% (7割) | JPY 430,000 + JPY 100,000 × max(wage/pension earner count - 1, 0) | Derived conversions: 7割=70%, 43万円=JPY 430,000 and 10万円=JPY 100,000; Shinjuku reduction table: https://www.city.shinjuku.lg.jp/kenkou/hoken01_002065_00003.html |
+| 50% (5割) | Above base + JPY 310,000 × relevant insured/former-member count | Derived conversions: 5割=50% and 31万円=JPY 310,000; Same: https://www.city.shinjuku.lg.jp/kenkou/hoken01_002065_00003.html |
+| 20% (2割) | Above base + JPY 570,000 × relevant insured/former-member count | Derived conversions: 2割=20% and 57万円=JPY 570,000; Same: https://www.city.shinjuku.lg.jp/kenkou/hoken01_002065_00003.html |
 
 Use the municipality's definitions for wage/pension earners and the relevant former-member count. All required income must be known, including the head's. Reductions are reflected through known/declared income; an income-tax filing exemption does not mean municipal declaration is unnecessary. Other disaster, involuntary-unemployment, childbirth and child flat-charge relief have their own conditions; check the municipality, not an assumed flat discount.
 
@@ -119,12 +118,19 @@ Qualified NHI and pension contributions **actually paid** are income deductions,
 | Freelance plus part-time job | Check actual employer scheme/dependent status first; if legitimately NHI, include all income in municipal base | JPS category explanation: https://www.nenkin.go.jp/international/simplejapanese/japanese-system/nationalpension/nationalpension.html |
 | Turns 40 in October | Care component starts in the legal age-attainment month; birthday is attained the preceding day, so a birthday on the first day can change the month | Shinjuku age rules: https://www.city.shinjuku.lg.jp/hoken/file02_03_00001.html |
 | Turns 60 in March | Resolve pension qualification-end month and any voluntary election from JPS record; do not apply a full year automatically | JPS categories/voluntary scheme: https://www.nenkin.go.jp/international/simplejapanese/japanese-system/nationalpension/nationalpension.html |
-| High income, including JPY 10,000,000 scenario | Compute and cap components separately using the actual municipality and age groups; old total JPY 1,060,000 is not a 2026 Shinjuku ceiling | Shinjuku current schedule: https://www.city.shinjuku.lg.jp/hoken/hoken01_001028.html |
 | Non-payment, including old 12-month arrears case | Refer promptly for collection/relief; Shinjuku warns of demands, interest and asset seizure. Do not promise the old short-validity insurance-card process | Shinjuku collection section: https://www.city.shinjuku.lg.jp/kenkou/hoken01_002065_00003.html |
 
 ## Worked cases
 
 Estimates, not final bills. These retain the old ordinary/low-income/high-income/mid-year cases using current named municipal inputs. Assume full-year coverage, known household income, no special relief unless stated and no other household member. NHI examples show raw component arithmetic before municipal final billing rounding.
+
+### Retained high-income scenario and rejected old ceiling
+
+The income below is a hypothetical input. The old ceiling is explicitly rejected,
+not asserted as a current statutory figure. This exact original provenance row
+is retained with its source and conditions:
+
+> | High income, including JPY 10,000,000 scenario | Compute and cap components separately using the actual municipality and age groups; old total JPY 1,060,000 is not a 2026 Shinjuku ceiling | Shinjuku current schedule: https://www.city.shinjuku.lg.jp/hoken/hoken01_001028.html |
 
 ### Age 35, prior income JPY 5,000,000, Shinjuku
 

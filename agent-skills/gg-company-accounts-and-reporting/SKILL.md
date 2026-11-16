@@ -7,18 +7,29 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/gg-company-accounts-and-reporting"
   jurisdiction: "GG"
   tax_year: "2026"
-  last_updated: "2026-11-14"
+  last_updated: "2026-11-15"
 ---
 
 # Guernsey: company accounts, records and annual reporting
 
-## Scope and evidence
+## Who this applies to
 
 Use this Guide for ordinary Guernsey local trading companies limited by shares. Establish incorporation date, financial-year dates, member register, regulated status and existing resolutions first. Funds, cell companies, listed entities, liquidation and other special cases need separate treatment. The Registry's directors handbook is expressly aimed at local trading companies; it does not establish eligibility for every entity. [Directors handbook, introduction](https://www.guernseyregistry.com/CHttpHandler.ashx?id=186495&p=0).
 
 The current Companies Law v.0108 and consolidated Audit Exemption Regulations v.0001 were recovered from the official library on 27 October 2026. These consolidations expressly lack authoritative legal effect; authentic enactments and commencement dates control. The cited provisions below now supplement the original Registry guidance. [Companies Law](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=250998); [Audit Exemption Regulations](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=267485).
 
-## Accounting records and annual accounts
+## Rates, bands and thresholds
+
+| Filing | Current charge and condition | Source |
+|---|---|---|
+| Annual validation category 5 | £525; CSP administered under the classification below | [Registry fees](https://www.guernseyregistry.com/companyfees) |
+| Annual validation category 6 | £260; residual non-licensed, non-CSP category | [Registry fees](https://www.guernseyregistry.com/companyfees) |
+| Annual validation category 7 | £1,050; GCRA-regulated company | [Registry fees](https://www.guernseyregistry.com/companyfees) |
+| One special, waiver or unanimous resolution | £15; eligibility and separate filing deadline still apply | [Registry fees](https://www.guernseyregistry.com/companyfees) |
+
+## The base
+
+### Accounting records and annual accounts
 
 The Registry requires records sufficient to explain transactions, disclose the company's financial position with reasonable accuracy and enable compliant accounts. Retain accounting records for **six years after they are made**. This is not six years after filing the annual validation, and it is not permission to destroy documents required longer for other purposes. [Directors handbook, printed page 9](https://www.guernseyregistry.com/CHttpHandler.ashx?id=186495&p=0).
 
@@ -32,7 +43,7 @@ For an ordinary 31 December 2025 year-end, the stated member-circulation limit i
 
 Sections 238–240 confirm the transaction/financial-position records and six-year retention starting when made. Records may be kept where directors decide, but where kept outside Guernsey, local returns must disclose the business’s financial position at intervals of **no more than six months** and support compliant accounts; keep these in Guernsey for the same retention period. Records are open at reasonable times to the specified company officers. Under sections 243–244 the board approves the accounts and **at least one director signs** on its behalf. Section 245 confirms the 18-month maximum financial year. Section 251 requires member delivery within 12 months and supplies a separate **seven-day** response to the specified member/officer request for the latest accounts/reports, subject to its prior-request condition. Keep approval/signature and delivery evidence distinct from annual validation. [Companies Law ss238–245, 251](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=250998).
 
-## Audit and directors' report decisions
+### Audit and directors' report decisions
 
 Audit is the starting requirement. An eligible company's members can pass an audit-waiver resolution for one year, multiple years or indefinitely. The Registry says it must be passed in the financial year **before** the first year covered; its detailed note allows a newly incorporated company to pass the waiver during its first financial year. File the resolution through the portal within **30 days** of passing it. [Resolutions and waivers](https://www.guernseyregistry.com/resolutions); [audit guidance, pages 1–2](https://www.guernseyregistry.com/CHttpHandler.ashx?id=5097&p=0).
 
@@ -44,7 +55,9 @@ Section 179 requires a waiver resolution majority of **at least 90%**, with the 
 
 AGM waivers, audit waivers and directors' report waivers are different decisions. The Registry requires waiver resolutions to be filed and notes that some companies are automatically exempt from the directors' report requirement. Establish the particular exemption rather than assuming one waiver removes all three duties. [Resolutions and waivers](https://www.guernseyregistry.com/resolutions).
 
-## Annual validation is separate
+## Deadlines and filing
+
+### Annual validation is separate
 
 The Registry page describes filing between **1 January and the last day of February**, using **31 December** details. Current section 234 instead requires delivery **before the last day of February** for a company incorporated **before 1 December of the previous year**, together with the declaration, necessary fee information/consent and a copy kept in the company register. Use the earlier statutory deadline in the work calendar and record the wording discrepancy; the page is not authority to extend the law. The December-incorporation exception is now corroborated by the statute. [Companies Law s234](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=250998). Submissions use the Online Services Portal; the fee depends on classification. [Annual validation guidance](https://www.guernseyregistry.com/article/183449/Annual-Validation---Companies).
 
@@ -52,15 +65,15 @@ Thus an ordinary company already registered before December 2025 files its 2026 
 
 A company seeking removal needs to complete the appropriate strike-off or winding-up process before 31 December to avoid the following validation obligation under the Registry guidance. Ceasing trade alone is not that process. Late or missing validation attracts the civil-penalty process; the civil-penalty section below gives the published bands without assuming automatic immediate strike-off. [Annual validation guidance](https://www.guernseyregistry.com/article/183449/Annual-Validation---Companies).
 
-## Current filing fees and category checks
+### Current filing fees and category checks
 
 The Registry's fee schedule effective **1 December 2025**, checked on 22 October 2026, lists the following annual-validation charges relevant to local trading companies. Establish the company's category before budgeting; incorporation through a CSP alone does not establish ongoing CSP administration. [Fee schedule](https://www.guernseyregistry.com/companyfees); [formation Guide](gg-company-formation.md).
 
-| Category | Published annual-validation fee | Classification condition |
-|---|---|---|
-| 5: CSP administered | £525 | The resident agent holds a fiduciary licence, or a fiduciary licensee is involved in ongoing administration or management; the company is not in an earlier category. |
-| 6: non-licensed, not CSP administered | £260 | Residual category for companies outside every other category; the Registry gives local trading/holding companies with a Guernsey-resident director as resident agent as examples. |
-| 7: GCRA regulated | £1,050 | Applies irrespective of whether the company would otherwise fall within a preceding category. |
+| Category | Published annual-validation fee | Classification condition | Source |
+|---|---|---|---|
+| 5: CSP administered | £525 | The resident agent holds a fiduciary licence, or a fiduciary licensee is involved in ongoing administration or management; the company is not in an earlier category. | [Registry fees](https://www.guernseyregistry.com/companyfees) |
+| 6: non-licensed, not CSP administered | £260 | Residual category for companies outside every other category; the Registry gives local trading/holding companies with a Guernsey-resident director as resident agent as examples. | [Registry fees](https://www.guernseyregistry.com/companyfees) |
+| 7: GCRA regulated | £1,050 | Applies irrespective of whether the company would otherwise fall within a preceding category. | [Registry fees](https://www.guernseyregistry.com/companyfees) |
 
 Do not use this table for primary or secondary GFSC licensees, cell companies, charities or NPOs; categories 1–4 have separate rules and fees in the same schedule. A local trading description alone does not prove category 6. [Fee schedule](https://www.guernseyregistry.com/companyfees).
 
@@ -70,36 +83,7 @@ The schedule separately lists **£15** for a change of registered office, direct
 
 The published **£5 per calendar day, capped at £500**, is expressly for late document filings **excluding** documents whose lateness incurs a Schedule 2 civil penalty. It is not the annual-validation penalty: the schedule directs late annual validations and specified late changes of registered particulars to the civil-penalty rules. Identify the applicable regime before calculating any late charge; the separate civil-penalty guidance below applies. [Fee schedule](https://www.guernseyregistry.com/companyfees).
 
-## Civil penalties: classification, breach and notice
-
-The July 2026 validation guidance distinguishes administered companies (GFSC licensed/authorised/registered under the supervisory laws, or administered, controlled or operated by an entity licensed by the GFSC under those laws in the course of its activities) from the residual non-administered category. Confirm that definition separately from a fee-category label. [Validation penalties, pages 1–2](https://www.guernseyregistry.com/CHttpHandler.ashx?id=174583&p=0).
-
-| Published validation lateness band | Non-administered | Administered |
-|---|---:|---:|
-| Up to one week | £250 | £450 |
-| Between one week and one month | £500 | £900 |
-| More than one month | £1,000 | £1,800 |
-
-[General civil-penalty table, page 6, band 2](https://www.guernseyregistry.com/CHttpHandler.ashx?id=174582&p=0). Do not calculate this as £5 daily. The validation note supplies 7 March/30 March examples but overlaps its “one month” wording; exact boundary-date treatment needs the regulations or Registry confirmation. A company not filing is also exposed. [Validation note, page 2](https://www.guernseyregistry.com/CHttpHandler.ashx?id=174583&p=0).
-
-The validation note says the register becomes “In Default” until filing. A penalty is not automatically collected at online submission: the Registrar issues an order. Payment is due within **28 days of the order date**; an application to Court to set aside or modify it is due within **21 days of receipt**, with notice to the Registrar. Preserve both dates. Portal payment uses the Civil Penalty Payment submission; retain the reference and receipt. Unpaid penalties can be enforced as civil debt. [Validation note, pages 2–3](https://www.guernseyregistry.com/CHttpHandler.ashx?id=174583&p=0). Current court procedure and any suspension remain unverified.
-
-From **1 September 2026**, late director/resident-agent changes are charged per breach, not per combined submission. The general note's non-administered example has two director changes in the shortest band at £90 each and one resident-agent change at £250, totalling **£430**. Filing them together does not reduce this to one charge. Retain effective dates, individual changes and evidence of delay; this example assumes the stated classification and band. [General guidance, page 3](https://www.guernseyregistry.com/CHttpHandler.ashx?id=174582&p=0).
-
-```oa-check
-name: Guernsey September 2026 multiple late changes are separate breaches
-inputs:
-  director_changes: 2
-  director_penalty: 90
-  resident_agent_changes: 1
-  resident_agent_penalty: 250
-steps:
-  - total_penalty: director_changes * director_penalty + resident_agent_changes * resident_agent_penalty
-expected:
-  total_penalty: 430
-```
-
-## Prepare the 2026 validation evidence
+### Prepare the 2026 validation evidence
 
 The Registry's **2026 onwards** question list is conditional. Company category, GFSC status and earlier answers determine which sections apply. Do not populate every conditional field with “no” just because the topic does not appear on another company's form. [Question list](https://www.guernseyregistry.com/CHttpHandler.ashx?id=172173&p=0).
 
@@ -117,7 +101,7 @@ Questions 33 and 47 ask about other tangible assets **over £5,000,000**, exclud
 
 An exactly £5,000,000 supported value does not exceed this stated threshold; £5,000,001 does. A relevant collection valued at £5.2 million cannot be excluded solely because no individual item is worth £5 million. These examples illustrate the reporting question, not a tax charge or an exemption from other asset questions.
 
-## Correct the register before submitting
+### Correct the register before submitting
 
 The how-to guide requires an authorised filer, unless filing as a CSP or regulated presenter, and a payment method. Company details and director/resident-agent changes need separate filings before preparing the validation. The saved validation draft does **not** automatically update after those changes: redraft it. The form shows the previous 31 December position, so a genuine later change is not backdated merely to alter that snapshot. [How-to guidance, pages 2–6 and 10](https://www.guernseyregistry.com/CHttpHandler.ashx?id=173525&p=0).
 
@@ -127,7 +111,7 @@ The how-to guide dated 4 December 2024 says on page 2 “unless they were incorp
 
 The same how-to guide says annual-validation documents submitted from 2021 onwards are not available for purchase, while earlier public information remains available through a Statement of the Register. This does not establish that every register field is confidential. Avoid an unsupported promise of complete public disclosure or complete confidentiality. [How-to guidance, page 12](https://www.guernseyregistry.com/CHttpHandler.ashx?id=173525&p=0).
 
-## Working papers and checks
+### Working papers and checks
 
 1. Reconcile bank movements, receivables, payables, assets and liabilities to source records. Document accruals, depreciation and other adjustments under the chosen accounting framework.
 2. Confirm the financial period and member-delivery deadline separately from validation and tax deadlines.
@@ -139,7 +123,50 @@ Check the six-year retention starting point, the financial-period length, the De
 
 General reference only. A qualified Guernsey professional must review the facts and current law before filing or relying on relief. This draft is not accountant-attested.
 
-## Second recomputing control: separate fees
+## Penalties and interest
+
+### Civil penalties: classification, breach and notice
+
+The July 2026 validation guidance distinguishes administered companies (GFSC licensed/authorised/registered under the supervisory laws, or administered, controlled or operated by an entity licensed by the GFSC under those laws in the course of its activities) from the residual non-administered category. Confirm that definition separately from a fee-category label. [Validation penalties, pages 1–2](https://www.guernseyregistry.com/CHttpHandler.ashx?id=174583&p=0).
+
+| Published validation lateness band | Non-administered | Administered | Source |
+|---|---:|---:|---|
+| Up to one week | £250 | £450 | [Civil penalties, p6](https://www.guernseyregistry.com/CHttpHandler.ashx?id=174582&p=0) |
+| Between one week and one month | £500 | £900 | [Civil penalties, p6](https://www.guernseyregistry.com/CHttpHandler.ashx?id=174582&p=0) |
+| More than one month | £1,000 | £1,800 | [Civil penalties, p6](https://www.guernseyregistry.com/CHttpHandler.ashx?id=174582&p=0) |
+
+[General civil-penalty table, page 6, band 2](https://www.guernseyregistry.com/CHttpHandler.ashx?id=174582&p=0). Do not calculate this as £5 daily. The validation note supplies 7 March/30 March examples but overlaps its “one month” wording; exact boundary-date treatment needs the regulations or Registry confirmation. A company not filing is also exposed. [Validation note, page 2](https://www.guernseyregistry.com/CHttpHandler.ashx?id=174583&p=0).
+
+The validation note says the register becomes “In Default” until filing. A penalty is not automatically collected at online submission: the Registrar issues an order. Payment is due within **28 days of the order date**; an application to Court to set aside or modify it is due within **21 days of receipt**, with notice to the Registrar. Preserve both dates. Portal payment uses the Civil Penalty Payment submission; retain the reference and receipt. Unpaid penalties can be enforced as civil debt. [Validation note, pages 2–3](https://www.guernseyregistry.com/CHttpHandler.ashx?id=174583&p=0). Current court procedure and any suspension remain unverified.
+
+From **1 September 2026**, late director/resident-agent changes are charged per breach, not per combined submission. The general note's non-administered example has two director changes in the shortest band at £90 each and one resident-agent change at £250, totalling **£430**. Filing them together does not reduce this to one charge. Retain effective dates, individual changes and evidence of delay; this example assumes the stated classification and band. [General guidance, page 3](https://www.guernseyregistry.com/CHttpHandler.ashx?id=174582&p=0).
+
+**Recomputing control:** the £430 separate-breach example is retained in the worked examples below.
+
+## Cross-border points
+
+Records held outside Guernsey remain subject to the statutory local-return and availability controls described above. Overseas subsidiaries and banking locations also form part of the conditional validation evidence; a foreign location does not remove the company’s ordinary reporting duties. [Companies Law ss238–245](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=250998); [validation questions](https://www.guernseyregistry.com/CHttpHandler.ashx?id=172173&p=0).
+
+## Two worked examples that recompute
+
+### Separate late-change breaches
+
+For the non-administered September 2026 example above, 2 director changes at £90 each plus 1 resident-agent change at £250 give £430. These are separate breaches under the cited guidance, subject to its classification and band assumptions. [General guidance, p3](https://www.guernseyregistry.com/CHttpHandler.ashx?id=174582&p=0).
+
+```oa-check
+name: Guernsey September 2026 multiple late changes are separate breaches
+inputs:
+  director_changes: 2
+  director_penalty: 90
+  resident_agent_changes: 1
+  resident_agent_penalty: 250
+steps:
+  - total_penalty: director_changes * director_penalty + resident_agent_changes * resident_agent_penalty
+expected:
+  total_penalty: 430
+```
+
+### Separate fees
 
 For an established category-6 company filing one annual validation and one waiver resolution, the current Registry charges are £260 and £15, total **£275**. A category-5 company on the stated alternative facts pays £525 plus £15, total **£540**. No late penalty or professional fee is assumed and this does not establish audit-waiver eligibility. [Current fee schedule](https://www.guernseyregistry.com/companyfees).
 
@@ -157,14 +184,23 @@ expected:
   category5_total: 540
 ```
 
+## Ask the client first
+
+- What are the incorporation date, financial year, member register, regulatory status and actual administration arrangements?
+- Which valid waivers exist, for what year and vote, and when were they filed or rescinded?
+- Where are the records, who approved/signed the accounts, and when were they delivered to members?
+- Which register changes, validation filings, penalty orders and receipt dates are evidenced?
+
 ## Sources
+
+Source-access record, 14 November 2026: ordinary legal-library URLs returned 403/429 and the ordinary browser remained on a security-verification page. Legal-library provisions are supported by the preserved genuine October 2026 official primary PDFs, with original retrieval/read dates retained below. They are dated archived copies, not freshly retrieved current consolidations. Later amendments beyond those archived versions are not yet confirmed. Government and Registry guidance is separately identified by its own URL and read scope.
 
 | Primary source | Read scope | Read on |
 |---|---|---|
 | [Companies Law v.0108](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=250998) | ss17, 179, 234, 238–245, 251, 255–256A; not the full law | 2026-10-27 |
 | [Consolidated Audit Exemption Regulations v.0001](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=267485) | All eight pages, including incorporated 2014/2021 amendments and historical cross-reference caveats | 2026-10-27 |
 | [Audit Exemption Amendment 2021](https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=265841) | Full instrument, replaced thresholds/revocations | 2026-10-27 |
-| Registry sources listed in frontmatter | Original guidance read and prior independent scoped reviews retained; current fee schedule rechecked | 2026-10-22; fees 2026-10-27 |
+| Registry sources cited in the body: [directors handbook](https://www.guernseyregistry.com/CHttpHandler.ashx?id=186495&p=0), [resolutions](https://www.guernseyregistry.com/resolutions), [annual validation](https://www.guernseyregistry.com/article/183449/Annual-Validation---Companies), [fees](https://www.guernseyregistry.com/companyfees), [validation penalties](https://www.guernseyregistry.com/CHttpHandler.ashx?id=174583&p=0), [general penalties](https://www.guernseyregistry.com/CHttpHandler.ashx?id=174582&p=0), [2026 questions](https://www.guernseyregistry.com/CHttpHandler.ashx?id=172173&p=0), [how-to](https://www.guernseyregistry.com/CHttpHandler.ashx?id=173525&p=0) and [audit guidance](https://www.guernseyregistry.com/CHttpHandler.ashx?id=5097&p=0) | Read for the original accounts, waivers, fee classification, validation workflow/questions, separate civil-penalty bands, notice/payment and appeal clocks described above; prior independent scoped reviews retained | Original review 2026-10-22; fees 2026-10-27 |
 
 Not yet confirmed: precise civil-penalty band boundary rules, full current court challenge/suspension procedure, referenced historic dormant/asset-holding definitions and specialised-company requirements. No accountant attestation is claimed. The [fresh independent whole-pack review](../../evidence/research/guernsey-2026/review/report.md) and [bounded contribution-assessment closure](../../evidence/research/guernsey-2026/review/bounded-addition-closure.md) accept this explicitly partial draft; professional attestation remains pending.
 
@@ -172,4 +208,4 @@ Not yet confirmed: precise civil-penalty band boundary rules, full current court
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `gg-company-accounts-and-reporting` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/gg-company-accounts-and-reporting. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-15. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `gg-company-accounts-and-reporting` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/gg-company-accounts-and-reporting. If neither is available, confirm every figure against the official source pages cited above before relying on it.

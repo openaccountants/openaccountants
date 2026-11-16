@@ -1,18 +1,17 @@
 ---
 name: property-investor
 description: "2026 property accounting method for leases, deposits, platforms, repairs, finance and investment-property measurement, including UK FHL repeal and Rent a Room boundaries."
-version: 2.0
+version: 2.1
 category: vertical
 jurisdiction: GLOBAL
-last_updated: 2026-11-14
+last_updated: 2026-11-15
 tier: 2
-status: needs_sources
 tax_year: 2026
 type: cross-country-method
 domain: tax
 ---
 
-# Property investor accounting v2.0
+# Property investor accounting v2.1
 
 ## Scope
 
