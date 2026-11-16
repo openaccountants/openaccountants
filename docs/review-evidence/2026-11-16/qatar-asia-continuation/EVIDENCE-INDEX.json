@@ -1,0 +1,153 @@
+{
+  "archive": "evidence.tar.gz",
+  "archive_sha256": "f6a0a06e1905fbcc8f6f3b7e527075064407ce0ad232d63dc8f1bbbb3a84572a",
+  "source_commit": "0d23737cf4129a06ee056b7a2774775a9dda814a",
+  "base_commit": "bbab4f1a6d82cace432e6ca8eda89c98ffb1c038",
+  "members": [
+    {
+      "path": "REPORT.md",
+      "size": 3275,
+      "sha256": "eed89b0e7d5bc3469a36b910f02a6fd0aec339d85909234b4be5ccda6ec01efb"
+    },
+    {
+      "path": "ledgers/qa-company-formation.md",
+      "size": 11029,
+      "sha256": "95acf3332ace39f6102614a0a762f06d80bcc3098af7ca173de8574f16704657"
+    },
+    {
+      "path": "maps/qa-company-formation.md",
+      "size": 10308,
+      "sha256": "c1236bdc541d9f3e050afbc6a923b7425f686e5a83c85f67f22ff8e125ccca9a"
+    },
+    {
+      "path": "originals/qa-company-formation.md",
+      "size": 7279,
+      "sha256": "0e8f78dfdf3e8df9f6c57462be20f3c2da38418362ae2bd3fa4c3e3cc6350e6e"
+    },
+    {
+      "path": "recovery/applicability-binding.json",
+      "size": 795,
+      "sha256": "a9ca7ed46bdb49fdbe62dbd03404d554e857d8c78730e1c60cd0766380429528"
+    },
+    {
+      "path": "recovery/pr-806-independent-review.md",
+      "size": 15100,
+      "sha256": "af2d070a18c8165b2c1179c4bfa972cebec7aa3e29b4c9b63d43d17f483c7486"
+    },
+    {
+      "path": "recovery/reviewed-qa-company-formation.md",
+      "size": 7991,
+      "sha256": "af160efa48b2d91efb0766a446605461a68ff25d3173d8721580f74d7fa901e5"
+    },
+    {
+      "path": "recovery/source-access-binding.json",
+      "size": 1578,
+      "sha256": "415955f399120857a0ba5959374c22001f638d87ad4dc0359732d7131a3308c1"
+    },
+    {
+      "path": "recovery/source-access-citation.diff",
+      "size": 3568,
+      "sha256": "9976901b2b4c69a07f1adce7fc5e85d5acdf38b15a9e8b88a2f4d91d524a8fc8"
+    },
+    {
+      "path": "reviews/independent-delta-checks.json",
+      "size": 1514,
+      "sha256": "8c0dde351764c33372de2e0485ffe72414e6acffcfd8b57468afafa006361eff"
+    },
+    {
+      "path": "reviews/independent-delta-review.md",
+      "size": 3002,
+      "sha256": "caded5f4aa10c4b877ac8b6e02843d437b243ca4da41f3a36dbd49dcfc0d1b3a"
+    },
+    {
+      "path": "reviews/independent-source-access-delta-checks.json",
+      "size": 2741,
+      "sha256": "ad0cb7a5eb0fcec0df18d44adb1250b496469d183679a88f22ee53d85a1ff0d1"
+    },
+    {
+      "path": "reviews/independent-source-access-delta.md",
+      "size": 6487,
+      "sha256": "d04f16ae3f95d33cd16c9bc299e075257babe571147b97771eecfad399a9b483"
+    },
+    {
+      "path": "source-manifest.json",
+      "size": 450,
+      "sha256": "ac3569c1520ba05b149e1b1ff58b5282f91daa27284ba00cf0639eb98fa92612"
+    },
+    {
+      "path": "validation/body-citation-row-sources.log",
+      "size": 321,
+      "sha256": "0f46b3726368aecd5c2c514121715c36560fdfcc27ba3c0ec86e72771ede4df1"
+    },
+    {
+      "path": "validation/calculator-quotes.log",
+      "size": 137,
+      "sha256": "51b2766ccc0bf1815ba6ce482af36bc12b7884fd5dc87d8ac95b858a1b4cc1d0"
+    },
+    {
+      "path": "validation/citation-delta-skill-checks.json",
+      "size": 552,
+      "sha256": "f98e9dd0231391886dccfb9a3eb553deba0ca9ec80dfdb56febab3a64c258bc1"
+    },
+    {
+      "path": "validation/committed-guide-validation.log",
+      "size": 192,
+      "sha256": "a7d8a057660b3d212d944ce39725ec8cef8aa0fa1ee6a85ef9d7c717d65fc074"
+    },
+    {
+      "path": "validation/committed-strict-sync.log",
+      "size": 81,
+      "sha256": "14b6947ff20d098ade82667a33a8cf419ed04e75dc331505126d975b945d41f6"
+    },
+    {
+      "path": "validation/copy-dependency-recovery.json",
+      "size": 2555,
+      "sha256": "2b168abe8d3a2c110edfe48f15ca0316d9787f75c9a6a6430f2b2647dd3009e3"
+    },
+    {
+      "path": "validation/current-row-sources.log",
+      "size": 842,
+      "sha256": "096e98fe82ae2e832c6a9d4e528f10e3e9ae6b6dcac3bbc16e82ff8ae6216d0e"
+    },
+    {
+      "path": "validation/explicit-guide-validation.json",
+      "size": 121,
+      "sha256": "9d7eb3c3441c0dd1d5d84e068576998e521a64065fcc298eaec51f72feac3e63"
+    },
+    {
+      "path": "validation/final-committed-guide-validation.log",
+      "size": 192,
+      "sha256": "a7d8a057660b3d212d944ce39725ec8cef8aa0fa1ee6a85ef9d7c717d65fc074"
+    },
+    {
+      "path": "validation/final-committed-strict-sync.log",
+      "size": 81,
+      "sha256": "14b6947ff20d098ade82667a33a8cf419ed04e75dc331505126d975b945d41f6"
+    },
+    {
+      "path": "validation/final-copy-rules.log",
+      "size": 100,
+      "sha256": "8c2a1d42dfa2c86cd49f820cf3e8ab4128a46c16c04986f79bca7fb74c1ae2ab"
+    },
+    {
+      "path": "validation/initial-invocation-note.txt",
+      "size": 424,
+      "sha256": "433d1f14e6afdb6ae43510dc58f447539b549ad59391d760e88af987cb610b24"
+    },
+    {
+      "path": "validation/row-source-diagnosis.json",
+      "size": 508,
+      "sha256": "2ad02d6c19c313598a620cef6ad8e218319d286ee9b66e567220fc9896e3b023"
+    },
+    {
+      "path": "validation/skill-checks.json",
+      "size": 3,
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+    },
+    {
+      "path": "validation/writer-validation-receipt.json",
+      "size": 1140,
+      "sha256": "0eb886006586a4c4247e867dc99e5455183ff987eab4d810fcaefabb867f674b"
+    }
+  ]
+}
