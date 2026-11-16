@@ -1,20 +1,34 @@
 ---
 name: hungary-vat-return
-description: "Use this skill whenever asked to prepare, review, or classify transactions for a Hungary VAT return (form 2565 / AFA bevallas) for any client. Trigger on phrases like \"prepare VAT return\", \"do the AFA\", \"fill in 2565\", \"Hungarian VAT\", or any request involving Hungary VAT filing. This skill covers Hungary only and standard AFA registration. MUST be loaded alongside BOTH vat-workflow-base v0.1 or later AND eu-vat-directive v0.1 or later. ALWAYS read this skill before touching any Hungarian VAT work."
+description: "Use this skill whenever asked to prepare, review, or classify transactions for a Hungary VAT return (form 2665 / AFA bevallas) for any client. Trigger on phrases like \"prepare VAT return\", \"do the AFA\", \"fill in 2665\", \"Hungarian VAT\", or any request involving Hungary VAT filing. This skill covers Hungary only and standard AFA registration. MUST be loaded alongside BOTH vat-workflow-base v0.1 or later AND eu-vat-directive v0.1 or later. ALWAYS read this skill before touching any Hungarian VAT work."
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/hungary-vat-return"
   jurisdiction: "HU"
   tax_year: "2026"
-  last_updated: "2026-10-16"
+  last_updated: "2026-11-16"
 ---
 
-# Hungary VAT return (ÁFA, form 2665): classifying a period and filling in the return
+# Hungary VAT return (ÁFA, form 2665), v2.1
 
-This skill prepares and reviews a periodic Hungarian VAT (általános forgalmi adó, ÁFA) return on form 2665 for a business registered under the general rules. Figures are for tax year 2026. Every rate and threshold sits in a table that links the NAV page it comes from. Use it with the `vat-workflow-base` skill (workflow) and the `eu-vat-directive` skill (EU rules). Online invoice reporting in depth is in `hungary-einvoice`.
+## Scope
+
+This Guide prepares and reviews a periodic Hungarian VAT (általános forgalmi adó, ÁFA) return on form 2665 for a business registered under the general rules. Figures are for tax year 2026. Every rate and threshold sits in a table that links the NAV page it comes from. Use it with the `vat-workflow-base` Guide (workflow) and the `eu-vat-directive` Guide (EU rules). Online invoice reporting in depth is in `hungary-einvoice`.
+
+## Ask the client first
+
+
+- What were your domestic sales in 2025, and what do you expect for 2026? (Decides whether the subjective exemption was available for 2026.)
+- When did you register for VAT, did you take over a predecessor's business, and what did your 2024 returns show? Do you hold an EU (community) VAT number? (Decides monthly, quarterly or annual filing.)
+- Do you file through eÁfa (approving NAV's draft) or on the form through ÁNYK? (Decides whether the M sheets are needed.)
+- Do you make any VAT-exempt supplies, such as financial services, insurance or exempt letting? (Decides apportionment on row 68.)
+- Did you buy or run passenger cars, buy restaurant or entertainment services, or use business purchases privately? (Decides whether input VAT is blocked.)
+- Do you buy from or sell to businesses or consumers in other EU states or outside the EU, and have you chosen cash accounting (pénzforgalmi elszámolás)? (Decides reverse-charge rows, the EU sales list, OSS and the timing of deduction.)
+
 
 ## The method, step by step
+
 
 1. **Check that the client files regular returns at all.** A business that chose the subjective exemption (alanyi adómentesség) does not charge VAT and files only occasional returns. For 2026 it may choose the exemption only if its domestic supplies, in forints and cumulated for the year, did not exceed the limit in the exemption table below in 2025 actually, AND are neither reasonably expected to exceed it nor actually exceed it in 2026. Exceeding the limit that applied in 2025 does not bar the choice ("akkor is, ha 2025. évben átlépte a 18 millió forintos értékhatárt"). The choice for 2026 had to be notified to NAV by the date in that table, unless the business was already exempt on 31 December 2025 and stays eligible. Source: NAV news item of 11 December 2025, https://nav.gov.hu/ado/afa/Emelkedik_az_alanyi_adomentesseg_ertekhatara and booklet 14, https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/14.-Hasznos-tudnivalok-kezdo-afaalanyoknak-2025.-02.-03
 2. **Set the 2026 filing frequency from 2024 data, not 2025 data.** The frequency is set by the data of the second year before the tax year (booklet 24, https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/24.-Bevallasi-adofizetesi-informaciok-2026.01.26). Apply the tests in this order, using the amounts in the booklet 14 table below:
@@ -33,16 +47,498 @@ This skill prepares and reviews a periodic Hungarian VAT (általános forgalmi a
 11. **File the EU sales list separately** on form 26A60 for intra-EU supplies of goods and services, by the 20th of the month after the month or quarter. Approving an eÁfa draft does not replace it (booklet 14; booklet 24).
 12. **Cross-check sales against online invoice data.** The duty covers every invoice the business issues to which the VAT Act applies ("mindazon számlát érinti, melyre az Áfa tv. szabályai vonatkoznak"). Invoices issued with invoicing software are reported to NAV immediately, machine to machine; paper invoices within the deadlines in the booklet 14 table (booklet 14). See `hungary-einvoice`.
 
-## Ask the client first
 
-- What were your domestic sales in 2025, and what do you expect for 2026? (Decides whether the subjective exemption was available for 2026.)
-- When did you register for VAT, did you take over a predecessor's business, and what did your 2024 returns show? Do you hold an EU (community) VAT number? (Decides monthly, quarterly or annual filing.)
-- Do you file through eÁfa (approving NAV's draft) or on the form through ÁNYK? (Decides whether the M sheets are needed.)
-- Do you make any VAT-exempt supplies, such as financial services, insurance or exempt letting? (Decides apportionment on row 68.)
-- Did you buy or run passenger cars, buy restaurant or entertainment services, or use business purchases privately? (Decides whether input VAT is blocked.)
-- Do you buy from or sell to businesses or consumers in other EU states or outside the EU, and have you chosen cash accounting (pénzforgalmi elszámolás)? (Decides reverse-charge rows, the EU sales list, OSS and the timing of deduction.)
+### Section 1: Quick reference
+
+Read this whole section before classifying anything. The workflow runbook is in `vat-workflow-base` Section 1.
+
+**Quick reference field table**
+
+| Field | Value |
+| --- | --- |
+| Standard rate | 27% https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/14.-Hasznos-tudnivalok-kezdo-afaalanyoknak-2025.-02.-03 |
+| Reduced rates | 18% and 5% (see the booklet 14 table for what each covers) https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/14.-Hasznos-tudnivalok-kezdo-afaalanyoknak-2025.-02.-03 |
+| 0% rate | 0% for daily newspapers and, from 1 September 2026, prescription-only medicines and human medicinal magistral preparations (row 110; Áfa tv. Annex 3/B). Exports and intra-EU supplies of goods are exempt with the right to deduct, on rows 01 and 02, not "0% rate" sales https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/14.-Hasznos-tudnivalok-kezdo-afaalanyoknak-2025.-02.-03; https://njt.jog.gov.hu/jogszabaly/2007-127-00-00; https://njt.jog.gov.hu/jogszabaly/2026-40-00-00 |
+| Return form | Form 2665 for 2026 periods (the year digits followed by 65). "2665A" names the main sheets inside form 2665, not a separate form https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/14.-Hasznos-tudnivalok-kezdo-afaalanyoknak-2025.-02.-03 |
+| Filing channels | eÁfa (web or machine to machine), or the form through ÁNYK https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/14.-Hasznos-tudnivalok-kezdo-afaalanyoknak-2025.-02.-03 |
+| Authority | Nemzeti Adó- és Vámhivatal (NAV) https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/14.-Hasznos-tudnivalok-kezdo-afaalanyoknak-2025.-02.-03 |
+| Currency | HUF; main sheets in thousand forints, M sheets in forints https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/14.-Hasznos-tudnivalok-kezdo-afaalanyoknak-2025.-02.-03 |
+| Filing frequencies | Monthly, quarterly or annual, set for 2026 from 2024 data (method step 2) https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/14.-Hasznos-tudnivalok-kezdo-afaalanyoknak-2025.-02.-03 |
+| Deadline | 20th of the month after the month or quarter; 25 February for annual filers https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/14.-Hasznos-tudnivalok-kezdo-afaalanyoknak-2025.-02.-03 |
+| Online invoice reporting | Every invoice issued to which the VAT Act applies (method step 12) https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/14.-Hasznos-tudnivalok-kezdo-afaalanyoknak-2025.-02.-03 |
+
+**Country:** Hungary (Magyarország).
+
+**Companion Guide (workflow):** `vat-workflow-base`, must be loaded.
+
+**Companion Guide (EU directive):** `eu-vat-directive`, must be loaded.
+
+**Rates, frequency, deadlines, refunds and invoice reporting (NAV booklet 14, published 22 January 2026)**
+
+| Item | Value | Note (verbatim) |
+| --- | --- | --- |
+| Source | all figures below | https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/14.-Hasznos-tudnivalok-kezdo-afaalanyoknak-2025.-02.-03 |
+| Standard rate (Áfa tv. § 82(1)) | 27% | "általános adómértéke az adó alapjának 27 százaléka" https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/14.-Hasznos-tudnivalok-kezdo-afaalanyoknak-2025.-02.-03 |
+| Reduced rate: certain foodstuffs listed by tariff number in the annex; the booklet does not print the full list | 18% | "A 18 százalékos adómértékű termékeket – ilyenek egyes élelmiszerek" https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/14.-Hasznos-tudnivalok-kezdo-afaalanyoknak-2025.-02.-03 |
+| Reduced rate: admission to occasional open-air events | 18% | "a szintén 18 százalékos adómértékű, az alkalmi szabadtéri rendezvényre" https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/14.-Hasznos-tudnivalok-kezdo-afaalanyoknak-2025.-02.-03 |
+| Reduced rate, goods: for example books, sheet music, periodicals, certain medical products and aids, certain pork, beef, sheep, goat, poultry, egg and milk products, fish for human consumption | 5% | "5 százalékos adómérték alá tartozik például a könyv, a kotta, a folyóirat" https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/14.-Hasznos-tudnivalok-kezdo-afaalanyoknak-2025.-02.-03 |
+| Reduced rate, services: for example district heating, some performing-arts services, internet access, restaurant food and on-the-spot non-alcoholic drinks, commercial accommodation | 5% | "Néhány szolgáltatás is az 5 százalékos adómérték alá tartozik, például a távhőszolgáltatás" https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/14.-Hasznos-tudnivalok-kezdo-afaalanyoknak-2025.-02.-03 |
+| Daily newspapers (published at least four times a week) | 0% | "A 0 százalékos kulcs alá tartozik a napilap (hetente legalább négyszer" https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/14.-Hasznos-tudnivalok-kezdo-afaalanyoknak-2025.-02.-03 |
+| Prescription-only medicines; human medicinal magistral preparations (Annex 3/B rows 2–3), from 1 September 2026 | 0% | "Kizárólag orvosi rendelvényhez kötött gyógyszerek"; "Humán gyógyászati célú magisztrális készítmények"; Act XL of 2026 § 4: "2026. szeptember 1-jén lép hatályba". https://njt.jog.gov.hu/jogszabaly/2007-127-00-00; https://njt.jog.gov.hu/jogszabaly/2026-40-00-00 |
+| Cash accounting: available only if supplies net of VAT, annualised, did not exceed this in the previous year actually AND are neither expected to nor do exceed it in the current year | HUF 125,000,000 | "nem haladja meg a 125.000.000 forintnak megfelelő pénzösszeget" https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/14.-Hasznos-tudnivalok-kezdo-afaalanyoknak-2025.-02.-03 |
+| Monthly filing: VAT to be accounted for in the second year before, annualised, positive AND at least this | HUF 1 million | "összege pozitív előjelű, és az 1 millió forintot elérte" https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/14.-Hasznos-tudnivalok-kezdo-afaalanyoknak-2025.-02.-03 |
+| Annual filing, test 1: VAT to be accounted for in the second year before, annualised, below this whatever its sign | HUF 250 thousand | "előjelétől függetlenül nem érte el a 250 ezer forintot" https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/14.-Hasznos-tudnivalok-kezdo-afaalanyoknak-2025.-02.-03 |
+| Annual filing, test 2: net supplies, annualised, not above this | HUF 50 million | "éves szinten összesített összege nem haladja meg az 50 millió forintot" https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/14.-Hasznos-tudnivalok-kezdo-afaalanyoknak-2025.-02.-03 |
+| Monthly return and payment due | 20th of the following month | "a tárgyhónapot követő hónap 20-ig" https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/14.-Hasznos-tudnivalok-kezdo-afaalanyoknak-2025.-02.-03 |
+| Quarterly return and payment due | 20th of the month after the quarter | "a negyedéves adóbevallásra kötelezett adóalanynak a negyedévet követő hónap 20-ig" https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/14.-Hasznos-tudnivalok-kezdo-afaalanyoknak-2025.-02.-03 |
+| Annual return and payment due | 25 February of the following year | "a tárgyévet követő év február 25-ig" https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/14.-Hasznos-tudnivalok-kezdo-afaalanyoknak-2025.-02.-03 |
+| Refund minimum, monthly filer (negative balance reaches or exceeds) | HUF 1 million | "a havi bevallásra kötelezett adóalanynál az 1 millió forintot" https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/14.-Hasznos-tudnivalok-kezdo-afaalanyoknak-2025.-02.-03 |
+| Refund minimum, quarterly filer | HUF 250 thousand | "negyedéves bevallásra kötelezett adóalanynál a 250 ezer forintot" https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/14.-Hasznos-tudnivalok-kezdo-afaalanyoknak-2025.-02.-03 |
+| Refund minimum, annual filer | HUF 50 thousand | "éves bevallásra kötelezett adóalanynál az 50 ezer forintot" https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/14.-Hasznos-tudnivalok-kezdo-afaalanyoknak-2025.-02.-03 |
+| Paper invoice: report on NAV's online interface within 4 days | 4 days | "4 napon belül, vagy ha a számla adótartalma eléri vagy meghaladja" https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/14.-Hasznos-tudnivalok-kezdo-afaalanyoknak-2025.-02.-03 |
+| Paper invoice whose VAT content reaches or exceeds this: report within 1 day | HUF 500,000 | "adótartalma eléri vagy meghaladja az 500.000 forintot, akkor 1 napon belül" https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/14.-Hasznos-tudnivalok-kezdo-afaalanyoknak-2025.-02.-03 |
+
+**Subjective exemption (NAV news item, 11 December 2025)**
+
+| Item | Value | Note (verbatim) |
+| --- | --- | --- |
+| Source | all figures below | https://nav.gov.hu/ado/afa/Emelkedik_az_alanyi_adomentesseg_ertekhatara |
+| Limit for choosing the exemption for 2026 (raised from the 2025 limit; later years carry higher limits already legislated) | HUF 20 million | "2026-tól 18 millió forintról 20 millió forintra" https://nav.gov.hu/ado/afa/Emelkedik_az_alanyi_adomentesseg_ertekhatara |
+| Deadline to notify NAV of the choice for 2026 | 31 December 2025 | "2025. december 31-éig kell bejelenteni a Nemzeti Adó- és Vámhivatalhoz" https://nav.gov.hu/ado/afa/Emelkedik_az_alanyi_adomentesseg_ertekhatara |
+
+**Frequency reference year and EU sales list (NAV booklet 24, published 26 January 2026)**
+
+| Item | Value | Note (verbatim) |
+| --- | --- | --- |
+| Source | all figures below | https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/24.-Bevallasi-adofizetesi-informaciok-2026.01.26 |
+| Year whose data set the 2026 monthly test | 2024 | "akinek/amelynek a 2024. évre vonatkozóan" https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/24.-Bevallasi-adofizetesi-informaciok-2026.01.26 |
+| EU sales list moves from quarterly to monthly when intra-EU supplies of goods (and acquisitions, triangulation) in the quarter, net of VAT, exceed this | EUR 50,000 | "meghaladja az 50 000 eurónak megfelelő pénzösszeget" https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/24.-Bevallasi-adofizetesi-informaciok-2026.01.26 |
+
+**EU transactions (NAV booklet 29, published 26 January 2026)**
+
+| Item | Value | Note (verbatim) |
+| --- | --- | --- |
+| Source | all figures below | https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/29_Az_altalanos_szabalyok_szerint_adozo_afaalanyok_kozossegi_ugyletei_2026.01.26 |
+| EU-wide threshold for distance sales of goods and telecom, broadcasting and electronic services to consumers in other EU states; above it VAT is due in the customer's state | EUR 10,000 | "túllépi a 10 000 euró küszöbértéket, vagyis a 3 100 000 forintot" https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/29_Az_altalanos_szabalyok_szerint_adozo_afaalanyok_kozossegi_ugyletei_2026.01.26 |
+| Invoice wording where the customer pays the VAT | "fordított adózás" | "a számlán a „fordított adózás” kifejezést kell szerepeltetni" https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/29_Az_altalanos_szabalyok_szerint_adozo_afaalanyok_kozossegi_ugyletei_2026.01.26 |
+
+**Form 2665 rows and refund deadline (2665 form guide)**
+
+| Row | What goes there | Note (verbatim) |
+| --- | --- | --- |
+| Source | all figures below | https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato |
+| 01 | Exempt export of goods outside the EU | "a Közösség területén kívülre történő mentes termékértékesítés (export)" https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato |
+| 02 | Exempt intra-EU supply of goods | "mentes termékértékesítés adó nélkül számított ellenértékét" https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato |
+| 04 | Domestic sales where the buyer pays the VAT (reverse charge), net amount | "a fordított adózás szabályai szerint az adó fizetésére a termék beszerzője" https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato |
+| 110 | Domestic sales at 0% | "a 0%-os kulcs alá tartozó termékértékesítések ellenértékét" https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato |
+| 05 | Domestic sales at 5%, base and VAT | "az 5%-os kulcs alá tartozó termékértékesítések és szolgáltatásnyújtások" https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato |
+| 06 | Domestic sales at 18%, base and VAT | "a belföldi teljesítési helyű 18%-os adómértékű termékek" https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato |
+| 07 | Domestic sales at 27%, base and VAT | "A 27%-os kulcs alá tartozó értékesítés után" https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato |
+| 08 | Exempt supplies without the right to deduct (Áfa tv. §§ 85 to 87) | "a tevékenység közérdekű jellegére tekintettel mentes szolgáltatások" https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato |
+| 12 to 14 | Taxable intra-EU acquisitions of goods, on the row for the rate | "(az adómértéknek megfelelő sorban)" https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato |
+| 18 | Services from a taxable person in another EU state, taxable in Hungary under § 37(1) | "a szolgáltatás nyújtója olyan, a Közösség más tagállamában adószámmal rendelkező adóalany" https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato |
+| 19 | Other EU services taxable in Hungary, not on row 18 | "a 18. sorban nem szereplő egyéb, közösségi adóalanytól igénybevett szolgáltatás" https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato |
+| 27 | Services from a non-EU taxable person, base and VAT | "a harmadik országbeli adóalanytól igénybe vett szolgáltatás ellenértékét" https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato |
+| 29 | Domestic reverse-charge VAT the buyer pays; detail on rows 51 to 54 (real estate, waste, emission rights, services) | "a fordított adózás szabályai szerint – adófizetésre kötelezett vevőként" https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato |
+| 36 | Total output VAT: rows 01 to 35 and 110 | "a 01-35. és 110. sorokban található részösszegeket" https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato |
+| 64 | Deductible domestic input VAT at 5% | "terhelő 5%-os mértékű előzetesen felszámított adót" https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato |
+| 65 | Deductible domestic input VAT at 18% | "terhelő 18%-os mértékű előzetesen felszámított adót" https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato |
+| 66 | Deductible domestic input VAT at 27% | "terhelő 27%-os mértékű előzetesen felszámított adót" https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato |
+| 67 | Deductible VAT on services entered on rows 18, 19 and 27 | "(a 18., a 19. és a 27. sorban feltüntetett)" https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato |
+| 68 | Apportioned input VAT (mixed taxable and exempt activity) | "akkor az arányosítás szabályai" https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato |
+| 69 | Deductible VAT on intra-EU acquisitions from rows 12 to 16 and 112 | "fizetendőként a bevallás 12-16. és 112. soraiban feltüntetett" https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato |
+| 76 | Total deductible input VAT: rows 63 to 75 and 111 | "63-75. és 111. sorokban feltüntetett együttes" https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato |
+| 82 | Credit brought forward from the previous period | "az előző adómegállapítási időszakról áthozott" https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato |
+| 83 | Balance: row 36 less row 76 less row 82 | "az összes fizetendő adó (36. sor) összege csökkentve" https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato |
+| 84 | Payable (row 83 positive), without sign | "ha a tárgyidőszakban a 83. sor adata előjel nélküli" https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato |
+| 85 | Refund claimed (row 83 negative and a refund right exists) | "ha a tárgyidőszakban a 83. sor adata mínusz előjelű" https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato |
+| 86 | Credit carried forward to row 82 of the next return | "a következő bevallási időszakban csökkentő tételként a 82. sorban" https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato |
+| 92 | EU B2B services under the general place-of-supply rule (ties to form 26A60) | "„határon átnyúló, Közösségen belüli szolgáltatások” ellenértékét (ideértve az előleget is)" https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato |
+| 93 | EU B2B services whose place of supply is outside Hungary under a rule other than § 37(1); not on the EU sales list | "A 93. sorba kell beírni a „határon átnyúló, Közösségen belüli szolgáltatások” ellenértékét, amely esetben" https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato |
+| M-02 | Every received domestic invoice under normal taxation with deducted VAT, no value threshold | "értékhatártól függetlenül minden olyan befogadott, egyenes adózás alá tartozó számláról" https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato |
+| 64 to 68 | Filling the rate-by-rate columns for VAT actually deducted is optional | "adómértékenként (5 %, 18 %, 27 %, arányosítás) elkülönített rovatok kitöltése önkéntes" https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato |
+| Refund | General refund payment deadline | 75 days: "A visszaigényelt általános forgalmi adót 75 napon belül kell kiutalni" https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato |
+
+**Unresolved facts: non-usable review holds**
+
+These former defaults are review holds. They do not establish a rate, country, customer status, deduction entitlement or filing channel. Do not post or file the affected item until the invoice, contract, registration or client record resolves it.
+
+| Ambiguity | Required resolution |
+| --- | --- |
+| Unknown rate on a sale | Hold; identify the supply and applicable rate/exemption https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato |
+| Unknown VAT status of a purchase | Hold; obtain a valid invoice and deduction evidence https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato |
+| Unknown counterparty country | Hold; establish the supplying/receiving establishment https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato |
+| Unknown B2B vs B2C for EU customer | Hold; establish customer status and place of supply https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato |
+| Unknown business-use proportion | Hold deduction; establish use and statutory restrictions https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato |
+| Unknown SaaS billing entity | Hold; obtain the actual legal supplier and establishment https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato |
+| Unknown blocked-input status | Hold deduction; determine the § 124 prohibition and any § 125 exception https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato |
+| Unknown filing channel | Hold filing; confirm eÁfa or ÁNYK and the resulting M-sheet duty https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato |
+
+**Red flags for the reviewer**
+
+Flag large single transactions, any unresolved classification with a large tax effect, a counterparty that dominates output or input, many unresolved classifications in one period, and any refund claim. The thresholds are a review choice for the adopting accountant, not a legal rule.
+
+### Section 2: Required inputs and refusal catalogue
+
+### Required inputs
+
+**Initial triage only**: bank statement for the period; a statement alone is insufficient to prepare or file a VAT return. Acceptable from: OTP Bank, K&H Bank, Erste Bank Hungary, MBH Bank (merged Magyar Bankholding), CIB Bank, UniCredit HU, Revolut Business, Wise Business.
+
+**Required before filing**: sales and purchase invoices, adószám (tax number), prior form 2665 and reconciliation of any credit.
+
+**Ideal**: complete register, online invoice data, eÁfa draft where used, prior period reconciliation.
+
+### Hungary-specific refusal catalogue
+
+- **R-HU-1: Alanyi mentes (subjective exemption).** Trigger: the client chose the exemption under the limit in the exemption table. Message: "Exempt small businesses do not charge VAT and cannot deduct input VAT. This Guide does not cover their occasional filing."
+- **R-HU-2: KATA subject.** Trigger: the client is a KATA taxpayer. Message: "Settle VAT status first. Specialist review required."
+- **R-HU-3: Partial exemption.** Message: "Mixed supplies require arányosítás. Use an adótanácsadó."
+- **R-HU-4: VAT group.** Message: "Group registration out of scope."
+- **R-HU-5: Special schemes.** Message: "Margin scheme, travel agent and agricultural special status out of scope."
+- **R-HU-6: Refund timing.** Trigger: client asks when a refund other than the general case will arrive. Message: "Special refund deadlines apply. Refer."
+
+### Section 3: Supplier pattern library
+
+**Search hints only; all rows are non-usable holds.** Names, historic billing entities and bank descriptions do not prove the supply, VAT rate, place of supply, exemption or deduction entitlement. The table preserves the former hints for finding documents; obtain the actual invoice and apply the method before posting. No current provider entity has been verified. The original treatment text below is a historic candidate, not an instruction. VAT tests: https://njt.jog.gov.hu/jogszabaly/2007-127-00-00 (§§ 37, 82, 85–87, 120, 124–125, 140–142).
+
+#### 3.1 Hungarian banks (exempt, exclude)
+
+**Hungarian banks pattern table**
+
+| Pattern | Treatment | Notes |
+| --- | --- | --- |
+| OTP, OTP BANK | HOLD; historic hint: EXCLUDE | Financial service, exempt https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato |
+| K&H, K&H BANK | HOLD; historic hint: EXCLUDE | Same https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato |
+| ERSTE BANK HU, ERSTE | HOLD; historic hint: EXCLUDE | Same https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato |
+| MBH BANK, BUDAPEST BANK, TAKAREKBANK | HOLD; historic hint: EXCLUDE | Same (merged entity) https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato |
+| CIB BANK | HOLD; historic hint: EXCLUDE | Same https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato |
+| UNICREDIT HU | HOLD; historic hint: EXCLUDE | Same https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato |
+| REVOLUT, WISE, N26 (fee lines) | HOLD; historic hint: EXCLUDE | Check subscriptions https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato |
+| KAMAT, INTEREST | HOLD; historic hint: EXCLUDE | Interest https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato |
+| HITEL, KOLCSON, LOAN | HOLD; historic hint: EXCLUDE | Loan principal https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato |
+
+#### 3.2 Hungarian government (exclude)
+
+**Hungarian government pattern table**
+
+| Pattern | Treatment | Notes |
+| --- | --- | --- |
+| NAV, NEMZETI ADO | HOLD; historic hint: EXCLUDE | Tax payment https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato |
+| TB, TARSADALOMBIZTOSITAS | HOLD; historic hint: EXCLUDE | Social insurance https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato |
+| ONKORMANYZAT, MUNICIPALITY | HOLD; historic hint: EXCLUDE | Municipal fees https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato |
+| CEGJEGYZEK, COMPANY REGISTER | HOLD; historic hint: EXCLUDE | Registration https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato |
+
+#### 3.3 Hungarian utilities
+
+**Hungarian utilities pattern table**
+
+| Pattern | Treatment | Row | Notes |
+| --- | --- | --- | --- |
+| MVM, ELMÜ-ÉMÁSZ, E.ON HU | HOLD; historic hint: Domestic 27% unless the invoice shows another rate | 66 | Electricity https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato |
+| FŐVÁROSI VÍZMŰVEK, VÍZMŰ | HOLD; historic hint: Rate as shown on the invoice | 64 to 66 | Water; do not assume the rate https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato |
+| FŐGÁZ, GÁZ | HOLD; historic hint: Domestic 27% unless the invoice shows another rate | 66 | Gas https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato |
+| FŐTÁV, TÁVHŐ | HOLD; historic hint: Domestic 5% | 64 | District heating (5% list in the booklet 14 table) https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato |
+| MAGYAR TELEKOM, T-MOBILE HU | HOLD; historic hint: Split by invoice line: internet access 5%, other telecom 27% | 64 / 66 | Internet access is on the 5% list https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato |
+| VODAFONE HU, YETTEL HU | HOLD; historic hint: Split by invoice line as above | 64 / 66 | Telecoms https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato |
+| DIGI HU | HOLD; historic hint: Split by invoice line as above | 64 / 66 | Telecoms and broadband https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato |
+
+#### 3.4 Insurance (exempt, exclude)
+
+**Insurance pattern table**
+
+| Pattern | Treatment | Notes |
+| --- | --- | --- |
+| ALLIANZ HUNGARIA | HOLD; historic hint: EXCLUDE | Exempt https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato |
+| GENERALI BIZTOSITO | HOLD; historic hint: EXCLUDE | Same https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato |
+| GROUPAMA BIZTOSITO | HOLD; historic hint: EXCLUDE | Same https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato |
+| BIZTOSITAS, INSURANCE | HOLD; historic hint: EXCLUDE | All exempt https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato |
+
+#### 3.5 Post and logistics
+
+**Post and logistics pattern table**
+
+| Pattern | Treatment | Notes |
+| --- | --- | --- |
+| MAGYAR POSTA | HOLD; historic hint: EXCLUDE for standard post; 27% for parcel | Check the invoice https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato |
+| GLS HU | HOLD; historic hint: Domestic 27%, row 66 | Courier https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato |
+| MPL (Magyar Posta Logisztika) | HOLD; historic hint: Domestic 27%, row 66 | Parcel https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato |
+| DHL INTERNATIONAL | HOLD; historic hint: EU reverse charge (rows 18 and 67) | Check the billing entity https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato |
+
+#### 3.6 SaaS: EU suppliers (reverse charge, row 18, deduction row 67)
+
+**SaaS EU suppliers pattern table**
+
+| Pattern | Billing entity | Notes |
+| --- | --- | --- |
+| GOOGLE | HOLD; historic hint: Google Ireland Ltd (IE) | EU reverse charge https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato |
+| MICROSOFT | HOLD; historic hint: Microsoft Ireland (IE) | EU reverse charge https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato |
+| ADOBE | HOLD; historic hint: Adobe Ireland (IE) | EU reverse charge https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato |
+| META, FACEBOOK | HOLD; historic hint: Meta Ireland (IE) | EU reverse charge https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato |
+| SPOTIFY | HOLD; historic hint: Spotify AB (SE) | EU reverse charge https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato |
+| DROPBOX | HOLD; historic hint: Dropbox Ireland (IE) | EU reverse charge https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato |
+| SLACK | HOLD; historic hint: Slack Ireland (IE) | EU reverse charge https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato |
+| ATLASSIAN | HOLD; historic hint: Atlassian BV (NL) | EU reverse charge https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato |
+| ZOOM | HOLD; historic hint: Zoom Ireland (IE) | EU reverse charge https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato |
+| AWS EMEA SARL | HOLD; historic hint: LU entity | EU reverse charge https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato |
+
+#### 3.7 SaaS: non-EU suppliers (reverse charge, row 27, deduction row 67)
+
+**SaaS non-EU suppliers pattern table**
+
+| Pattern | Billing entity | Notes |
+| --- | --- | --- |
+| NOTION | HOLD; historic hint: Notion Labs Inc (US) | Non-EU reverse charge https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato |
+| ANTHROPIC, CLAUDE | HOLD; historic hint: Anthropic PBC (US) | Non-EU reverse charge https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato |
+| OPENAI, CHATGPT | HOLD; historic hint: OpenAI Inc (US) | Non-EU reverse charge https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato |
+| GITHUB | HOLD; historic hint: GitHub Inc (US) | Check whether billed from IE https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato |
+| FIGMA | HOLD; historic hint: Figma Inc (US) | Non-EU reverse charge https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato |
+| CANVA | HOLD; historic hint: Canva Pty Ltd (AU) | Non-EU reverse charge https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato |
+
+#### 3.8 Payment processors
+
+**Payment processors pattern table**
+
+| Pattern | Treatment | Notes |
+| --- | --- | --- |
+| STRIPE (transaction fees) | HOLD; historic hint: EXCLUDE (exempt) | Financial service https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato |
+| PAYPAL (transaction fees) | HOLD; historic hint: EXCLUDE (exempt) | Same https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato |
+
+#### 3.9 Professional services
+
+**Professional services pattern table**
+
+| Pattern | Treatment | Notes |
+| --- | --- | --- |
+| KÖZJEGYZŐ, NOTARY | HOLD; historic hint: Domestic 27%, row 66 | Legal https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato |
+| KÖNYVELŐ, ACCOUNTANT | HOLD; historic hint: Domestic 27%, row 66 | Accounting https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato |
+| ÜGYVÉD, LAWYER | HOLD; historic hint: Domestic 27%, row 66 | Legal https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato |
+
+#### 3.10 Payroll (exclude)
+
+**Payroll pattern table**
+
+| Pattern | Treatment | Notes |
+| --- | --- | --- |
+| TB, JÁRULÉK | HOLD; historic hint: EXCLUDE | Social contributions https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato |
+| BÉR, FIZETÉS, SALARY | HOLD; historic hint: EXCLUDE | Wages https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato |
+| SZJA | HOLD; historic hint: EXCLUDE | Income tax https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato |
+
+#### 3.11 Food retail and restaurants
+
+**Food retail pattern table**
+
+| Pattern | Treatment | Notes |
+| --- | --- | --- |
+| TESCO HU, ALDI HU, LIDL HU, SPAR HU, PENNY | HOLD; historic hint: Default BLOCK | Personal provisioning https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato |
+| ÉTTEREM, RESTAURANT, VENDÉGLŐ | HOLD; historic hint: Default BLOCK | Restaurant food is sold at 5% (booklet 14 table), but input VAT on restaurant and entertainment purchases may fall under the VAT Act's specific deduction bans; the accountant decides https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato |
+
+#### 3.12 Internal transfers and exclusions
+
+**Internal transfers pattern table**
+
+| Pattern | Treatment | Notes |
+| --- | --- | --- |
+| SAJÁT ÁTUTALÁS, OWN TRANSFER | HOLD; historic hint: EXCLUDE | Internal https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato |
+| OSZTALÉK, DIVIDEND | HOLD; historic hint: EXCLUDE | Out of scope https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato |
+| HITELTÖRLESZTÉS, LOAN REPAYMENT | HOLD; historic hint: EXCLUDE | Loan principal https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato |
+| ATM, KÉSZPÉNZ | HOLD; historic hint: Ask | Default exclude https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato |
+
+
+### Section 5: Tier 1 classification rules (compressed)
+
+#### 5.1 Standard 27% (Áfa tv. § 82(1))
+
+- **Standard rate rule.** Default for every supply not on a reduced-rate annex and not exempt. Sales: row 07. Input: row 66.
+
+#### 5.2 Reduced 18%
+
+- **18% rule.** Certain foodstuffs listed by tariff number in the VAT Act annex, and admission to occasional open-air events. The booklet does not print the full food list: check the annex for each product. Sales: row 06. Input: row 65.
+
+#### 5.3 Reduced 5%
+
+- **5% rule.** The goods and services listed in the booklet 14 table, including commercial accommodation and restaurant food. Sales: row 05. Input: row 64.
+
+#### 5.4 0% rate, exports and intra-EU supplies
+
+- **0% rule.** Daily newspapers; from 1 September 2026, prescription-only medicines and human medicinal magistral preparations (Annex 3/B rows 2–3; Act XL of 2026, § 4). Row 110 (sales), row 111 (purchase base). https://njt.jog.gov.hu/jogszabaly/2007-127-00-00
+- **Exports.** Exempt with the right to deduct: row 01.
+- **Intra-EU supplies of goods.** Exempt with the right to deduct: row 02, and on the EU sales list.
+- **Intra-EU B2B services** under the general rule: row 91 and row 92, and on the EU sales list.
+- **Other EU B2B services supplied abroad** under a place-of-supply rule other than § 37(1): row 93, not on the EU sales list.
+
+#### 5.5 Exempt without the right to deduct (Áfa tv. §§ 85 to 87)
+
+- **Exempt rule.** Activities exempt because of their public-interest or other special nature (Áfa tv. §§ 85 to 87). Booklet 14 gives as examples the universal postal service, human healthcare and a broad range of education, some only when supplied by a public service provider or a provider licensed for the profession; certain insurance, financial and gambling services; and certain sales and lettings of real estate, for which the client may opt to tax instead. Sales: row 08. Input VAT on related purchases is not deductible.
+
+#### 5.6 Reverse charge, EU
+
+- **EU reverse charge rule.** Goods: rows 12 to 14 by rate, deduction row 69. Services under § 37(1): row 18; other EU services: row 19; deduction row 67.
+
+#### 5.7 Reverse charge, non-EU
+
+- **Non-EU reverse charge rule.** Services: row 27, deduction row 67.
+
+#### 5.8 Domestic reverse charge (Áfa tv. § 142)
+
+- **Domestic reverse charge rule.** Seller: net amount on row 04, invoice carries "fordított adózás". Buyer: VAT on row 29, detail on rows 51 to 54, deduction on rows 64 to 66 with the reverse-charge sub-field.
+
+#### 5.9 Online invoice reporting
+
+- **Online invoice rule.** Every invoice issued to which the VAT Act applies. Invoicing software reports immediately, machine to machine. Paper invoices: see the booklet 14 table.
+
+#### 5.10 Blocked input
+
+- **Blocked input rules.** Personal use: blocked. Passenger car purchase: the VAT Act bans deduction; booklet 14 names purchase for resale as lifting the ban, and any other exception is for the accountant. Restaurant, entertainment, fuel and other passenger car costs: default block, the accountant decides under Áfa tv. §§ 124 and 125.
+
+### Section 6: Tier 2 catalogue (compressed)
+
+#### 6.1 Vehicle costs
+
+- **Vehicle costs.** Default: block. Question: "Is it a passenger car, and was it bought for resale?"
+
+#### 6.2 Entertainment and restaurants
+
+- **Entertainment.** Default: block. Question: "What was it, and who attended?"
+
+#### 6.3 SaaS entity
+
+- **SaaS entity.** Hold classification until the actual invoice establishes the supplier and supplying establishment. Use row 18 or 19 for a qualifying EU service, row 27 for a qualifying non-EU service; do not choose by brand.
+
+#### 6.4 Owner transfers
+
+- **Owner transfers.** Default: exclude.
+
+#### 6.5 Fixed assets
+
+- **Fixed assets.** Default: add to the fixed asset register and flag any change of use for the capital goods adjustment (row 35).
+
+#### 6.6 Mixed-use telecom
+
+- **Mixed-use telecom.** Hold deduction until use and the applicable § 124 restriction/§ 125 exception are established. The telephone-services restriction and its exceptions require separate consideration; business-use share alone does not settle them. https://njt.jog.gov.hu/jogszabaly/2007-127-00-00
+
+#### 6.7 Cash withdrawals
+
+- **Cash withdrawals.** Default: exclude.
+
+#### 6.8 KATA status
+
+- **KATA status.** Default: flag the reviewer.
+
+### Section 7: Excel working paper template
+
+Per `vat-workflow-base` Section 3. Column H accepts form 2665 row codes (for example 07, 18, 27, 66, 67). Bottom line: row 84 (payable), row 85 (refund claimed) or row 86 (carried forward). Main-sheet amounts in thousand forints; M-sheet amounts in forints.
+
+### Section 8: Hungary bank statement reading guide
+
+**CSV conventions.** Legacy import hint: OTP and K&H files may use semicolons and YYYY.MM.DD. Inspect the actual file; this is not a verified bank-format guarantee.
+
+**Hungarian language.** bérleti díj (rent), bér / fizetés (salary), kamat (interest), átutalás (transfer), készpénz (cash).
+
+**Currency.** HUF. Convert foreign-currency amounts under the VAT Act's exchange-rate rules; ask which rate the client applies.
+
+**IBAN prefix.** HU = Hungary.
+
+### Section 9: Onboarding fallback
+
+#### 9.1 Entity type
+
+- **Entity type inference.** Kft. = company; egyéni vállalkozó = sole trader.
+
+#### 9.2 VAT status
+
+- **VAT status fallback.** "Standard VAT payer or alanyi mentes?"
+
+#### 9.3 Adószám
+
+- **Adószám fallback.** "Tax number? (11 digits)"
+
+#### 9.4 Filing frequency
+
+- **Filing frequency fallback.** "Monthly, quarterly or annual for 2026?" Confirm against method step 2.
+
+#### 9.5 Filing channel
+
+- **Filing channel fallback.** "Do you approve NAV's eÁfa draft or file the form through ÁNYK?"
+
+#### 9.6 Exempt supplies
+
+- **Exempt supplies fallback.** "Any exempt supplies?"
+
+#### 9.7 Credit brought forward
+
+- **Credit brought forward fallback.** "Credit carried forward on row 86 of the last return?"
+
+### Section 10: Reference material
+
+Statute: Act CXXVII of 2007 on VAT (Áfa tv.), cited by section. The tables cite NAV and the operative VAT Act. Provider-name hints remain non-usable holds.
+
+### Change log
+
+- **v2.1 (16 November 2026):** Corrected zero-rate scope, replaced unsafe classification defaults with holds, retained all six original case inputs, added a recomputing case and source-row links.
+- **Historical entry labelled v3.0 (October 2026; the published frontmatter was 2.0):** Rewritten for 2026 periods by the OpenAccountants team: form 2665 and its real row numbers, 2026 frequency rules, refund minimums, M sheets, subjective exemption limit.
+- **v2.0 (April 2026):** Full rewrite. Hungarian banks (OTP, K&H, Erste HU).
+- **v1.0 (April 2026):** Initial version.
+
+
+## Worked cases
+
+### Original bank-line cases
+
+The six original hypothetical bank lines are preserved below. Each treatment assumes the stated transaction has been established from its invoice and contract, not inferred from the bank text. Amounts were not supplied in the original cases. The separate numerical case uses explicitly hypothetical amounts.
+
+#### Example 1: non-EU SaaS reverse charge (Notion)
+
+**Input:** `03.04.2026 ; NOTION LABS INC ; debit`
+**Treatment:** Service from a non-EU taxable person. Base and self-assessed VAT at 27% on row 27. The deductible amount on row 67, if the service is used for taxable supplies.
+
+#### Example 2: EU service reverse charge (Google Ads)
+
+**Input:** `10.04.2026 ; GOOGLE IRELAND LIMITED ; debit`
+**Treatment:** B2B service from a taxable person in another EU state, taxable in Hungary under § 37(1). Base and self-assessed VAT at 27% on row 18. Deduction on row 67.
+
+#### Example 3: restaurant
+
+**Input:** `15.04.2026 ; BORKONYHA ÉTTEREM ; debit`
+**Treatment:** Hold deduction until the purchase and any statutory exception are established. Booklet 14 confirms that the VAT Act contains specific provisions prohibiting deduction (Áfa tv. §§ 124 and 125) and that some services and goods with deduction restrictions are defined by statistical classification. Do not claim until the accountant confirms the purchase is outside those bans.
+
+#### Example 4: EU B2B service sale
+
+**Input:** `22.04.2026 ; STUDIO KREBS GMBH ; credit`
+**Treatment:** Service to a German business, place of supply in Germany under the general rule. Report on row 91 and row 92, and on the EU sales list (form 26A60). No Hungarian VAT. Check the customer's VAT number.
+
+#### Example 5: equipment purchase
+
+**Input:** `18.04.2026 ; MEDIAMARKT HU ; Laptop ; debit`
+**Treatment:** Domestic purchase at 27%, input VAT on row 66 if used for taxable supplies. Ask whether it is a fixed asset (tárgyi eszköz); a later change of use can trigger the capital goods adjustment on row 35. Refer that adjustment.
+
+#### Example 6: motor vehicle fuel
+
+**Input:** `28.04.2026 ; MOL NYRT ; Fuel ; debit`
+**Treatment:** Hold deduction until the fuel type, vehicle and use are known. Motor petrol is blocked under § 124(1)(a), irrespective of vehicle type; other fuel for a passenger car is blocked under § 124(1)(b). Apply the specific § 125 exceptions only after their conditions are established. The separate passenger-car acquisition ban can be lifted for resale; it does not resolve the fuel line. https://njt.jog.gov.hu/jogszabaly/2007-127-00-00
+
+### Numerical case: reconcile and file a standard monthly period
+
+Assume the established invoices show taxable sales of HUF 1,000,000 at 27%, deductible input VAT of HUF 135,000, and a prior-period credit of HUF 50,000. No other transactions or adjustments apply. Output VAT is HUF 270,000; row 83 is 270,000 − 135,000 − 50,000 = HUF 85,000, so row 84 is payable. Main-sheet values are thousands of forints: rows 36/76/82/83/84 are 270/135/50/85/85. File and pay by the 20th of the following month, subject to the working-day rule. Sources: https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato; https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/14.-Hasznos-tudnivalok-kezdo-afaalanyoknak-2025.-02.-03.
+
+```oa-check
+name: Hungary 2026 monthly VAT reconciliation
+inputs:
+  sales: 1000000
+  vat_rate: 0.27
+  input_vat: 135000
+  prior_credit: 50000
+steps:
+  output_vat: sales * vat_rate
+  balance: output_vat - input_vat - prior_credit
+  row84_thousands: balance / 1000
+expected:
+  output_vat: 270000
+  balance: 85000
+  row84_thousands: 85
+```
 
 ## When to refuse or refer
+
 
 - **Subjective exemption (alanyi adómentes) clients.** Exempt businesses do not charge VAT and cannot deduct input VAT; their occasional filing is not covered here. Refer.
 - **KATA taxpayers.** Whether such a client is a VAT payer or exempt must be settled first. Refer (see `hu-income-tax`).
@@ -52,477 +548,28 @@ This skill prepares and reviews a periodic Hungarian VAT (általános forgalmi a
 - **Import VAT self-assessment under a NAV licence (rows 24 to 26, 70 and 71)**, customs warehouses, and distance sales to consumers in other EU states above the EU threshold in the booklet 29 table (OSS). Refer.
 - **Self-revision (önellenőrzés) of an earlier return** and the self-revision surcharge. Refer.
 
-## Section 1: Quick reference
 
-Read this whole section before classifying anything. The workflow runbook is in `vat-workflow-base` Section 1.
+### Disclaimer
 
-**Quick reference field table**
 
-| Field | Value |
-| --- | --- |
-| Country | Hungary (Magyarország) |
-| Standard rate | 27% |
-| Reduced rates | 18% and 5% (see the booklet 14 table for what each covers) |
-| 0% rate | 0% for daily newspapers (row 110). Exports and intra-EU supplies of goods are exempt with the right to deduct, on rows 01 and 02, not "0% rate" sales |
-| Return form | Form 2665 for 2026 periods (the year digits followed by 65). "2665A" names the main sheets inside form 2665, not a separate form |
-| Filing channels | eÁfa (web or machine to machine), or the form through ÁNYK |
-| Authority | Nemzeti Adó- és Vámhivatal (NAV) |
-| Currency | HUF; main sheets in thousand forints, M sheets in forints |
-| Filing frequencies | Monthly, quarterly or annual, set for 2026 from 2024 data (method step 2) |
-| Deadline | 20th of the month after the month or quarter; 25 February for annual filers |
-| Online invoice reporting | Every invoice issued to which the VAT Act applies (method step 12) |
-| Companion Skill (workflow) | `vat-workflow-base`, must be loaded |
-| Companion Skill (EU directive) | `eu-vat-directive`, must be loaded |
+This Guide and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this Guide. All outputs must be reviewed and signed off by a qualified professional before filing or acting upon.
 
-**Rates, frequency, deadlines, refunds and invoice reporting (NAV booklet 14, published 22 January 2026)**
-
-| Item | Value | Note (verbatim) |
-| --- | --- | --- |
-| Source | all figures below | https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/14.-Hasznos-tudnivalok-kezdo-afaalanyoknak-2025.-02.-03 |
-| Standard rate (Áfa tv. § 82(1)) | 27% | "általános adómértéke az adó alapjának 27 százaléka" |
-| Reduced rate: certain foodstuffs listed by tariff number in the annex; the booklet does not print the full list | 18% | "A 18 százalékos adómértékű termékeket – ilyenek egyes élelmiszerek" |
-| Reduced rate: admission to occasional open-air events | 18% | "a szintén 18 százalékos adómértékű, az alkalmi szabadtéri rendezvényre" |
-| Reduced rate, goods: for example books, sheet music, periodicals, certain medical products and aids, certain pork, beef, sheep, goat, poultry, egg and milk products, fish for human consumption | 5% | "5 százalékos adómérték alá tartozik például a könyv, a kotta, a folyóirat" |
-| Reduced rate, services: for example district heating, some performing-arts services, internet access, restaurant food and on-the-spot non-alcoholic drinks, commercial accommodation | 5% | "Néhány szolgáltatás is az 5 százalékos adómérték alá tartozik, például a távhőszolgáltatás" |
-| Daily newspapers (published at least four times a week) | 0% | "A 0 százalékos kulcs alá tartozik a napilap (hetente legalább négyszer" |
-| Cash accounting: available only if supplies net of VAT, annualised, did not exceed this in the previous year actually AND are neither expected to nor do exceed it in the current year | HUF 125,000,000 | "nem haladja meg a 125.000.000 forintnak megfelelő pénzösszeget" |
-| Monthly filing: VAT to be accounted for in the second year before, annualised, positive AND at least this | HUF 1 million | "összege pozitív előjelű, és az 1 millió forintot elérte" |
-| Annual filing, test 1: VAT to be accounted for in the second year before, annualised, below this whatever its sign | HUF 250 thousand | "előjelétől függetlenül nem érte el a 250 ezer forintot" |
-| Annual filing, test 2: net supplies, annualised, not above this | HUF 50 million | "éves szinten összesített összege nem haladja meg az 50 millió forintot" |
-| Monthly return and payment due | 20th of the following month | "a tárgyhónapot követő hónap 20-ig" |
-| Quarterly return and payment due | 20th of the month after the quarter | "a negyedéves adóbevallásra kötelezett adóalanynak a negyedévet követő hónap 20-ig" |
-| Annual return and payment due | 25 February of the following year | "a tárgyévet követő év február 25-ig" |
-| Refund minimum, monthly filer (negative balance reaches or exceeds) | HUF 1 million | "a havi bevallásra kötelezett adóalanynál az 1 millió forintot" |
-| Refund minimum, quarterly filer | HUF 250 thousand | "negyedéves bevallásra kötelezett adóalanynál a 250 ezer forintot" |
-| Refund minimum, annual filer | HUF 50 thousand | "éves bevallásra kötelezett adóalanynál az 50 ezer forintot" |
-| Paper invoice: report on NAV's online interface within 4 days | 4 days | "4 napon belül, vagy ha a számla adótartalma eléri vagy meghaladja" |
-| Paper invoice whose VAT content reaches or exceeds this: report within 1 day | HUF 500,000 | "adótartalma eléri vagy meghaladja az 500.000 forintot, akkor 1 napon belül" |
-
-**Subjective exemption (NAV news item, 11 December 2025)**
-
-| Item | Value | Note (verbatim) |
-| --- | --- | --- |
-| Source | all figures below | https://nav.gov.hu/ado/afa/Emelkedik_az_alanyi_adomentesseg_ertekhatara |
-| Limit for choosing the exemption for 2026 (raised from the 2025 limit; later years carry higher limits already legislated) | HUF 20 million | "2026-tól 18 millió forintról 20 millió forintra" |
-| Deadline to notify NAV of the choice for 2026 | 31 December 2025 | "2025. december 31-éig kell bejelenteni a Nemzeti Adó- és Vámhivatalhoz" |
-
-**Frequency reference year and EU sales list (NAV booklet 24, published 26 January 2026)**
-
-| Item | Value | Note (verbatim) |
-| --- | --- | --- |
-| Source | all figures below | https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/24.-Bevallasi-adofizetesi-informaciok-2026.01.26 |
-| Year whose data set the 2026 monthly test | 2024 | "akinek/amelynek a 2024. évre vonatkozóan" |
-| EU sales list moves from quarterly to monthly when intra-EU supplies of goods (and acquisitions, triangulation) in the quarter, net of VAT, exceed this | EUR 50,000 | "meghaladja az 50 000 eurónak megfelelő pénzösszeget" |
-
-**EU transactions (NAV booklet 29, published 26 January 2026)**
-
-| Item | Value | Note (verbatim) |
-| --- | --- | --- |
-| Source | all figures below | https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/29_Az_altalanos_szabalyok_szerint_adozo_afaalanyok_kozossegi_ugyletei_2026.01.26 |
-| EU-wide threshold for distance sales of goods and telecom, broadcasting and electronic services to consumers in other EU states; above it VAT is due in the customer's state | EUR 10,000 | "túllépi a 10 000 euró küszöbértéket, vagyis a 3 100 000 forintot" |
-| Invoice wording where the customer pays the VAT | "fordított adózás" | "a számlán a „fordított adózás” kifejezést kell szerepeltetni" |
-
-**Form 2665 rows and refund deadline (2665 form guide)**
-
-| Row | What goes there | Note (verbatim) |
-| --- | --- | --- |
-| Source | all figures below | https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato |
-| 01 | Exempt export of goods outside the EU | "a Közösség területén kívülre történő mentes termékértékesítés (export)" |
-| 02 | Exempt intra-EU supply of goods | "mentes termékértékesítés adó nélkül számított ellenértékét" |
-| 04 | Domestic sales where the buyer pays the VAT (reverse charge), net amount | "a fordított adózás szabályai szerint az adó fizetésére a termék beszerzője" |
-| 110 | Domestic sales at 0% | "a 0%-os kulcs alá tartozó termékértékesítések ellenértékét" |
-| 05 | Domestic sales at 5%, base and VAT | "az 5%-os kulcs alá tartozó termékértékesítések és szolgáltatásnyújtások" |
-| 06 | Domestic sales at 18%, base and VAT | "a belföldi teljesítési helyű 18%-os adómértékű termékek" |
-| 07 | Domestic sales at 27%, base and VAT | "A 27%-os kulcs alá tartozó értékesítés után" |
-| 08 | Exempt supplies without the right to deduct (Áfa tv. §§ 85 to 87) | "a tevékenység közérdekű jellegére tekintettel mentes szolgáltatások" |
-| 12 to 14 | Taxable intra-EU acquisitions of goods, on the row for the rate | "(az adómértéknek megfelelő sorban)" |
-| 18 | Services from a taxable person in another EU state, taxable in Hungary under § 37(1) | "a szolgáltatás nyújtója olyan, a Közösség más tagállamában adószámmal rendelkező adóalany" |
-| 19 | Other EU services taxable in Hungary, not on row 18 | "a 18. sorban nem szereplő egyéb, közösségi adóalanytól igénybevett szolgáltatás" |
-| 27 | Services from a non-EU taxable person, base and VAT | "a harmadik országbeli adóalanytól igénybe vett szolgáltatás ellenértékét" |
-| 29 | Domestic reverse-charge VAT the buyer pays; detail on rows 51 to 54 (real estate, waste, emission rights, services) | "a fordított adózás szabályai szerint – adófizetésre kötelezett vevőként" |
-| 36 | Total output VAT: rows 01 to 35 and 110 | "a 01-35. és 110. sorokban található részösszegeket" |
-| 64 | Deductible domestic input VAT at 5% | "terhelő 5%-os mértékű előzetesen felszámított adót" |
-| 65 | Deductible domestic input VAT at 18% | "terhelő 18%-os mértékű előzetesen felszámított adót" |
-| 66 | Deductible domestic input VAT at 27% | "terhelő 27%-os mértékű előzetesen felszámított adót" |
-| 67 | Deductible VAT on services entered on rows 18, 19 and 27 | "(a 18., a 19. és a 27. sorban feltüntetett)" |
-| 68 | Apportioned input VAT (mixed taxable and exempt activity) | "akkor az arányosítás szabályai" |
-| 69 | Deductible VAT on intra-EU acquisitions from rows 12 to 16 and 112 | "fizetendőként a bevallás 12-16. és 112. soraiban feltüntetett" |
-| 76 | Total deductible input VAT: rows 63 to 75 and 111 | "63-75. és 111. sorokban feltüntetett együttes" |
-| 82 | Credit brought forward from the previous period | "az előző adómegállapítási időszakról áthozott" |
-| 83 | Balance: row 36 less row 76 less row 82 | "az összes fizetendő adó (36. sor) összege csökkentve" |
-| 84 | Payable (row 83 positive), without sign | "ha a tárgyidőszakban a 83. sor adata előjel nélküli" |
-| 85 | Refund claimed (row 83 negative and a refund right exists) | "ha a tárgyidőszakban a 83. sor adata mínusz előjelű" |
-| 86 | Credit carried forward to row 82 of the next return | "a következő bevallási időszakban csökkentő tételként a 82. sorban" |
-| 92 | EU B2B services under the general place-of-supply rule (ties to form 26A60) | "„határon átnyúló, Közösségen belüli szolgáltatások” ellenértékét (ideértve az előleget is)" |
-| 93 | EU B2B services whose place of supply is outside Hungary under a rule other than § 37(1); not on the EU sales list | "A 93. sorba kell beírni a „határon átnyúló, Közösségen belüli szolgáltatások” ellenértékét, amely esetben" |
-| M-02 | Every received domestic invoice under normal taxation with deducted VAT, no value threshold | "értékhatártól függetlenül minden olyan befogadott, egyenes adózás alá tartozó számláról" |
-| 64 to 68 | Filling the rate-by-rate columns for VAT actually deducted is optional | "adómértékenként (5 %, 18 %, 27 %, arányosítás) elkülönített rovatok kitöltése önkéntes" |
-| Refund | General refund payment deadline | 75 days: "A visszaigényelt általános forgalmi adót 75 napon belül kell kiutalni" |
-
-**Conservative defaults**
-
-| Ambiguity | Default |
-| --- | --- |
-| Unknown rate on a sale | 27% |
-| Unknown VAT status of a purchase | Not deductible |
-| Unknown counterparty country | Domestic Hungary |
-| Unknown B2B vs B2C for EU customer | B2C, charge 27% |
-| Unknown business-use proportion | No recovery |
-| Unknown SaaS billing entity | Reverse charge from non-EU (row 27) |
-| Unknown blocked-input status | Blocked |
-| Unknown filing channel | Assume ÁNYK form, so the M sheets are needed |
-
-**Red flags for the reviewer**
-
-Flag large single transactions, any single conservative default with a large tax effect, a counterparty that dominates output or input, many conservative defaults in one period, and any refund claim. The thresholds are a review choice for the adopting accountant, not a legal rule.
-
-## Section 2: Required inputs and refusal catalogue
-
-### Required inputs
-
-**Minimum viable**: bank statement for the period. Acceptable from: OTP Bank, K&H Bank, Erste Bank Hungary, MBH Bank (merged Magyar Bankholding), CIB Bank, UniCredit HU, Revolut Business, Wise Business.
-
-**Recommended**: sales and purchase invoices, adószám (tax number), prior form 2665.
-
-**Ideal**: complete register, online invoice data, eÁfa draft where used, prior period reconciliation.
-
-### Hungary-specific refusal catalogue
-
-- **R-HU-1: Alanyi mentes (subjective exemption).** Trigger: the client chose the exemption under the limit in the exemption table. Message: "Exempt small businesses do not charge VAT and cannot deduct input VAT. This skill does not cover their occasional filing."
-- **R-HU-2: KATA subject.** Trigger: the client is a KATA taxpayer. Message: "Settle VAT status first. Specialist review required."
-- **R-HU-3: Partial exemption.** Message: "Mixed supplies require arányosítás. Use an adótanácsadó."
-- **R-HU-4: VAT group.** Message: "Group registration out of scope."
-- **R-HU-5: Special schemes.** Message: "Margin scheme, travel agent and agricultural special status out of scope."
-- **R-HU-6: Refund timing.** Trigger: client asks when a refund other than the general case will arrive. Message: "Special refund deadlines apply. Refer."
-
-## Section 3: Supplier pattern library
-
-### 3.1 Hungarian banks (exempt, exclude)
-
-**Hungarian banks pattern table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| OTP, OTP BANK | EXCLUDE | Financial service, exempt |
-| K&H, K&H BANK | EXCLUDE | Same |
-| ERSTE BANK HU, ERSTE | EXCLUDE | Same |
-| MBH BANK, BUDAPEST BANK, TAKAREKBANK | EXCLUDE | Same (merged entity) |
-| CIB BANK | EXCLUDE | Same |
-| UNICREDIT HU | EXCLUDE | Same |
-| REVOLUT, WISE, N26 (fee lines) | EXCLUDE | Check subscriptions |
-| KAMAT, INTEREST | EXCLUDE | Interest |
-| HITEL, KOLCSON, LOAN | EXCLUDE | Loan principal |
-
-### 3.2 Hungarian government (exclude)
-
-**Hungarian government pattern table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| NAV, NEMZETI ADO | EXCLUDE | Tax payment |
-| TB, TARSADALOMBIZTOSITAS | EXCLUDE | Social insurance |
-| ONKORMANYZAT, MUNICIPALITY | EXCLUDE | Municipal fees |
-| CEGJEGYZEK, COMPANY REGISTER | EXCLUDE | Registration |
-
-### 3.3 Hungarian utilities
-
-**Hungarian utilities pattern table**
-
-| Pattern | Treatment | Row | Notes |
-| --- | --- | --- | --- |
-| MVM, ELMÜ-ÉMÁSZ, E.ON HU | Domestic 27% unless the invoice shows another rate | 66 | Electricity |
-| FŐVÁROSI VÍZMŰVEK, VÍZMŰ | Rate as shown on the invoice | 64 to 66 | Water; do not assume the rate |
-| FŐGÁZ, GÁZ | Domestic 27% unless the invoice shows another rate | 66 | Gas |
-| FŐTÁV, TÁVHŐ | Domestic 5% | 64 | District heating (5% list in the booklet 14 table) |
-| MAGYAR TELEKOM, T-MOBILE HU | Split by invoice line: internet access 5%, other telecom 27% | 64 / 66 | Internet access is on the 5% list |
-| VODAFONE HU, YETTEL HU | Split by invoice line as above | 64 / 66 | Telecoms |
-| DIGI HU | Split by invoice line as above | 64 / 66 | Telecoms and broadband |
-
-### 3.4 Insurance (exempt, exclude)
-
-**Insurance pattern table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| ALLIANZ HUNGARIA | EXCLUDE | Exempt |
-| GENERALI BIZTOSITO | EXCLUDE | Same |
-| GROUPAMA BIZTOSITO | EXCLUDE | Same |
-| BIZTOSITAS, INSURANCE | EXCLUDE | All exempt |
-
-### 3.5 Post and logistics
-
-**Post and logistics pattern table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| MAGYAR POSTA | EXCLUDE for standard post; 27% for parcel | Check the invoice |
-| GLS HU | Domestic 27%, row 66 | Courier |
-| MPL (Magyar Posta Logisztika) | Domestic 27%, row 66 | Parcel |
-| DHL INTERNATIONAL | EU reverse charge (rows 18 and 67) | Check the billing entity |
-
-### 3.6 SaaS: EU suppliers (reverse charge, row 18, deduction row 67)
-
-**SaaS EU suppliers pattern table**
-
-| Pattern | Billing entity | Notes |
-| --- | --- | --- |
-| GOOGLE | Google Ireland Ltd (IE) | EU reverse charge |
-| MICROSOFT | Microsoft Ireland (IE) | EU reverse charge |
-| ADOBE | Adobe Ireland (IE) | EU reverse charge |
-| META, FACEBOOK | Meta Ireland (IE) | EU reverse charge |
-| SPOTIFY | Spotify AB (SE) | EU reverse charge |
-| DROPBOX | Dropbox Ireland (IE) | EU reverse charge |
-| SLACK | Slack Ireland (IE) | EU reverse charge |
-| ATLASSIAN | Atlassian BV (NL) | EU reverse charge |
-| ZOOM | Zoom Ireland (IE) | EU reverse charge |
-| AWS EMEA SARL | LU entity | EU reverse charge |
-
-### 3.7 SaaS: non-EU suppliers (reverse charge, row 27, deduction row 67)
-
-**SaaS non-EU suppliers pattern table**
-
-| Pattern | Billing entity | Notes |
-| --- | --- | --- |
-| NOTION | Notion Labs Inc (US) | Non-EU reverse charge |
-| ANTHROPIC, CLAUDE | Anthropic PBC (US) | Non-EU reverse charge |
-| OPENAI, CHATGPT | OpenAI Inc (US) | Non-EU reverse charge |
-| GITHUB | GitHub Inc (US) | Check whether billed from IE |
-| FIGMA | Figma Inc (US) | Non-EU reverse charge |
-| CANVA | Canva Pty Ltd (AU) | Non-EU reverse charge |
-
-### 3.8 Payment processors
-
-**Payment processors pattern table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| STRIPE (transaction fees) | EXCLUDE (exempt) | Financial service |
-| PAYPAL (transaction fees) | EXCLUDE (exempt) | Same |
-
-### 3.9 Professional services
-
-**Professional services pattern table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| KÖZJEGYZŐ, NOTARY | Domestic 27%, row 66 | Legal |
-| KÖNYVELŐ, ACCOUNTANT | Domestic 27%, row 66 | Accounting |
-| ÜGYVÉD, LAWYER | Domestic 27%, row 66 | Legal |
-
-### 3.10 Payroll (exclude)
-
-**Payroll pattern table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| TB, JÁRULÉK | EXCLUDE | Social contributions |
-| BÉR, FIZETÉS, SALARY | EXCLUDE | Wages |
-| SZJA | EXCLUDE | Income tax |
-
-### 3.11 Food retail and restaurants
-
-**Food retail pattern table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| TESCO HU, ALDI HU, LIDL HU, SPAR HU, PENNY | Default BLOCK | Personal provisioning |
-| ÉTTEREM, RESTAURANT, VENDÉGLŐ | Default BLOCK | Restaurant food is sold at 5% (booklet 14 table), but input VAT on restaurant and entertainment purchases may fall under the VAT Act's specific deduction bans; the accountant decides |
-
-### 3.12 Internal transfers and exclusions
-
-**Internal transfers pattern table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| SAJÁT ÁTUTALÁS, OWN TRANSFER | EXCLUDE | Internal |
-| OSZTALÉK, DIVIDEND | EXCLUDE | Out of scope |
-| HITELTÖRLESZTÉS, LOAN REPAYMENT | EXCLUDE | Loan principal |
-| ATM, KÉSZPÉNZ | Ask | Default exclude |
-
-## Section 4: Worked examples
-
-Amounts are left out of these hypothetical bank lines; the treatment does not depend on them.
-
-### Example 1: non-EU SaaS reverse charge (Notion)
-
-**Input:** `03.04.2026 ; NOTION LABS INC ; debit`
-**Treatment:** Service from a non-EU taxable person. Base and self-assessed VAT at 27% on row 27. The deductible amount on row 67, if the service is used for taxable supplies.
-
-### Example 2: EU service reverse charge (Google Ads)
-
-**Input:** `10.04.2026 ; GOOGLE IRELAND LIMITED ; debit`
-**Treatment:** B2B service from a taxable person in another EU state, taxable in Hungary under § 37(1). Base and self-assessed VAT at 27% on row 18. Deduction on row 67.
-
-### Example 3: restaurant
-
-**Input:** `15.04.2026 ; BORKONYHA ÉTTEREM ; debit`
-**Treatment:** Default block. Booklet 14 confirms that the VAT Act contains specific provisions prohibiting deduction (Áfa tv. §§ 124 and 125) and that some services and goods with deduction restrictions are defined by statistical classification. Do not claim until the accountant confirms the purchase is outside those bans.
-
-### Example 4: EU B2B service sale
-
-**Input:** `22.04.2026 ; STUDIO KREBS GMBH ; credit`
-**Treatment:** Service to a German business, place of supply in Germany under the general rule. Report on row 91 and row 92, and on the EU sales list (form 26A60). No Hungarian VAT. Check the customer's VAT number.
-
-### Example 5: equipment purchase
-
-**Input:** `18.04.2026 ; MEDIAMARKT HU ; Laptop ; debit`
-**Treatment:** Domestic purchase at 27%, input VAT on row 66 if used for taxable supplies. Ask whether it is a fixed asset (tárgyi eszköz); a later change of use can trigger the capital goods adjustment on row 35. Refer that adjustment.
-
-### Example 6: motor vehicle fuel
-
-**Input:** `28.04.2026 ; MOL NYRT ; Fuel ; debit`
-**Treatment:** Default: no recovery. The VAT Act carries a deduction ban on buying a passenger car, which a purchase for resale lifts (booklet 14: "a személygépkocsi beszerzésére vonatkozó levonási tilalmat a továbbértékesítési célú beszerzés feloldotta"). Deduction on fuel and running costs of a passenger car is for the accountant to decide.
-
-## Section 5: Tier 1 classification rules (compressed)
-
-### 5.1 Standard 27% (Áfa tv. § 82(1))
-
-- **Standard rate rule.** Default for every supply not on a reduced-rate annex and not exempt. Sales: row 07. Input: row 66.
-
-### 5.2 Reduced 18%
-
-- **18% rule.** Certain foodstuffs listed by tariff number in the VAT Act annex, and admission to occasional open-air events. The booklet does not print the full food list: check the annex for each product. Sales: row 06. Input: row 65.
-
-### 5.3 Reduced 5%
-
-- **5% rule.** The goods and services listed in the booklet 14 table, including commercial accommodation and restaurant food. Sales: row 05. Input: row 64.
-
-### 5.4 0% rate, exports and intra-EU supplies
-
-- **0% rule.** Daily newspapers only: row 110 (sales), row 111 (purchases).
-- **Exports.** Exempt with the right to deduct: row 01.
-- **Intra-EU supplies of goods.** Exempt with the right to deduct: row 02, and on the EU sales list.
-- **Intra-EU B2B services** under the general rule: row 91 and row 92, and on the EU sales list.
-- **Other EU B2B services supplied abroad** under a place-of-supply rule other than § 37(1): row 93, not on the EU sales list.
-
-### 5.5 Exempt without the right to deduct (Áfa tv. §§ 85 to 87)
-
-- **Exempt rule.** Activities exempt because of their public-interest or other special nature (Áfa tv. §§ 85 to 87). Booklet 14 gives as examples the universal postal service, human healthcare and a broad range of education, some only when supplied by a public service provider or a provider licensed for the profession; certain insurance, financial and gambling services; and certain sales and lettings of real estate, for which the client may opt to tax instead. Sales: row 08. Input VAT on related purchases is not deductible.
-
-### 5.6 Reverse charge, EU
-
-- **EU reverse charge rule.** Goods: rows 12 to 14 by rate, deduction row 69. Services under § 37(1): row 18; other EU services: row 19; deduction row 67.
-
-### 5.7 Reverse charge, non-EU
-
-- **Non-EU reverse charge rule.** Services: row 27, deduction row 67.
-
-### 5.8 Domestic reverse charge (Áfa tv. § 142)
-
-- **Domestic reverse charge rule.** Seller: net amount on row 04, invoice carries "fordított adózás". Buyer: VAT on row 29, detail on rows 51 to 54, deduction on rows 64 to 66 with the reverse-charge sub-field.
-
-### 5.9 Online invoice reporting
-
-- **Online invoice rule.** Every invoice issued to which the VAT Act applies. Invoicing software reports immediately, machine to machine. Paper invoices: see the booklet 14 table.
-
-### 5.10 Blocked input
-
-- **Blocked input rules.** Personal use: blocked. Passenger car purchase: the VAT Act bans deduction; booklet 14 names purchase for resale as lifting the ban, and any other exception is for the accountant. Restaurant, entertainment, fuel and other passenger car costs: default block, the accountant decides under Áfa tv. §§ 124 and 125.
-
-## Section 6: Tier 2 catalogue (compressed)
-
-### 6.1 Vehicle costs
-
-- **Vehicle costs.** Default: block. Question: "Is it a passenger car, and was it bought for resale?"
-
-### 6.2 Entertainment and restaurants
-
-- **Entertainment.** Default: block. Question: "What was it, and who attended?"
-
-### 6.3 SaaS entity
-
-- **SaaS entity.** Default: non-EU reverse charge (row 27).
-
-### 6.4 Owner transfers
-
-- **Owner transfers.** Default: exclude.
-
-### 6.5 Fixed assets
-
-- **Fixed assets.** Default: add to the fixed asset register and flag any change of use for the capital goods adjustment (row 35).
-
-### 6.6 Mixed-use telecom
-
-- **Mixed-use telecom.** Default: no recovery until the business share is known.
-
-### 6.7 Cash withdrawals
-
-- **Cash withdrawals.** Default: exclude.
-
-### 6.8 KATA status
-
-- **KATA status.** Default: flag the reviewer.
-
-## Section 7: Excel working paper template
-
-Per `vat-workflow-base` Section 3. Column H accepts form 2665 row codes (for example 07, 18, 27, 66, 67). Bottom line: row 84 (payable), row 85 (refund claimed) or row 86 (carried forward). Main-sheet amounts in thousand forints; M-sheet amounts in forints.
-
-## Section 8: Hungary bank statement reading guide
-
-**CSV conventions.** OTP and K&H use semicolons and YYYY.MM.DD (Hungarian date format).
-
-**Hungarian language.** bérleti díj (rent), bér / fizetés (salary), kamat (interest), átutalás (transfer), készpénz (cash).
-
-**Currency.** HUF. Convert foreign-currency amounts under the VAT Act's exchange-rate rules; ask which rate the client applies.
-
-**IBAN prefix.** HU = Hungary.
-
-## Section 9: Onboarding fallback
-
-### 9.1 Entity type
-
-- **Entity type inference.** Kft. = company; egyéni vállalkozó = sole trader.
-
-### 9.2 VAT status
-
-- **VAT status fallback.** "Standard VAT payer or alanyi mentes?"
-
-### 9.3 Adószám
-
-- **Adószám fallback.** "Tax number? (11 digits)"
-
-### 9.4 Filing frequency
-
-- **Filing frequency fallback.** "Monthly, quarterly or annual for 2026?" Confirm against method step 2.
-
-### 9.5 Filing channel
-
-- **Filing channel fallback.** "Do you approve NAV's eÁfa draft or file the form through ÁNYK?"
-
-### 9.6 Exempt supplies
-
-- **Exempt supplies fallback.** "Any exempt supplies?"
-
-### 9.7 Credit brought forward
-
-- **Credit brought forward fallback.** "Credit carried forward on row 86 of the last return?"
-
-## Section 10: Reference material
-
-Statute: Act CXXVII of 2007 on VAT (Áfa tv.), cited by section. Every figure in this skill is proven on a NAV page.
-
-### Change log
-
-- **v3.0 (October 2026):** Rewritten for 2026 periods by the OpenAccountants team: form 2665 and its real row numbers, 2026 frequency rules, refund minimums, M sheets, subjective exemption limit.
-- **v2.0 (April 2026):** Full rewrite. Hungarian banks (OTP, K&H, Erste HU).
-- **v1.0 (April 2026):** Initial version.
+The most up-to-date version of this Guide is maintained by OpenAccountants.
 
 ## Sources
 
-- NAV booklet 14, Hasznos tudnivalók kezdő áfaalanyoknak (published 22 January 2026): https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/14.-Hasznos-tudnivalok-kezdo-afaalanyoknak-2025.-02.-03
-- NAV booklet 24, Bevallási, adófizetési információk (published 26 January 2026): https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/24.-Bevallasi-adofizetesi-informaciok-2026.01.26
-- NAV booklet 29, EU transactions of VAT payers under the general rules (published 26 January 2026): https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/29_Az_altalanos_szabalyok_szerint_adozo_afaalanyok_kozossegi_ugyletei_2026.01.26
-- NAV, Emelkedik az alanyi adómentesség értékhatára (11 December 2025): https://nav.gov.hu/ado/afa/Emelkedik_az_alanyi_adomentesseg_ertekhatara
-- NAV, form 2665 completion guide: https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato
+| Source and scope | Official URL | Read / applicability |
+| --- | --- | --- |
+| NAV booklet 14, 2026 rates, frequency, deadlines, refunds and input restrictions; January zero-rate scope supplemented by current Annex 3/B | https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/14.-Hasznos-tudnivalok-kezdo-afaalanyoknak-2025.-02.-03 | Read 2026-10-05 in the preserved reviewed packet; unchanged 2026 rules reused after applicability check 2026-11-16 |
+| NAV booklet 24, section 3.1, 2026 reference-year/frequency and A60 rules | https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/24.-Bevallasi-adofizetesi-informaciok-2026.01.26 | Read 2026-10-05; reviewed unchanged content reused, applicability checked 2026-11-16 |
+| NAV booklet 29, part on EU transactions, threshold and invoice wording | https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/29_Az_altalanos_szabalyok_szerint_adozo_afaalanyok_kozossegi_ugyletei_2026.01.26 | Read 2026-10-05; reviewed unchanged content reused, applicability checked 2026-11-16 |
+| NAV subjective-exemption notice: both-year test, notice date, existing-exempt exception | https://nav.gov.hu/ado/afa/Emelkedik_az_alanyi_adomentesseg_ertekhatara | Read 2026-10-05; 2026 applicability checked 2026-11-16 |
+| NAV 2665 instructions: form rows, units, rounding, frequency and refund timing | https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F2665%2F2665-kitoltesi-utmutato | Read 2026-10-05; reviewed unchanged content reused, applicability checked 2026-11-16 |
+| Áfa tv. § 82(4), Annex 3/B rows 1–3; § 124(1)(a)–(b), § 125 exceptions | https://njt.jog.gov.hu/jogszabaly/2007-127-00-00 | Operative paragraphs and annex rows read 2026-11-16 |
+| Act XL of 2026 § 4, commencement on 1 September 2026; amendment incorporated in current Annex 3/B | https://njt.jog.gov.hu/jogszabaly/2026-40-00-00 | Read 2026-11-16 |
 
-This skill is incomplete without both companion skills: `vat-workflow-base` and `eu-vat-directive`.
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional before filing or acting upon.
-
-The most up-to-date version of this skill is maintained by OpenAccountants.
+Not yet confirmed: provider-specific billing entities, VAT treatment inferred from bank names, and universal bank CSV formats are not verified facts. They remain non-usable search/import hints; obtain transaction documents. This Guide is incomplete without both companion Guides: `vat-workflow-base` and `eu-vat-directive`.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-16. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `hungary-vat-return` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/hungary-vat-return. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-16. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `hungary-vat-return` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/hungary-vat-return. If neither is available, confirm every figure against the official source pages cited above before relying on it.
