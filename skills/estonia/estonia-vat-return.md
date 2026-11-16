@@ -17,7 +17,7 @@ domain: vat-gst
 
 This skill covers the monthly Estonian VAT return, form KMD, and its annex, form KMD INF, for a person registered as liable to VAT in Estonia (a company such as an OÜ or AS, or a sole proprietor, FIE). It covers the rates in force for 2026 periods, the registration threshold, the monthly deadline and payment, domestic and cross-border reverse charge, the report on intra-Community supply (form VD), the OSS and IOSS special schemes at a summary level, corrections, bad-debt relief, and interest on late payment.
 
-The primary year is 2026. Estonia's taxable period is one calendar month, so every 2026 month is filed under the rules below. A short dated section near the end covers 2025 periods, which straddle the 1 July 2025 rate change.
+The primary year is 2026. This skill applies the ordinary calendar-month period. Ask whether EMTA has approved a longer period; if so, use the actual approval and refer its period-specific requirements rather than applying the monthly defaults. A short dated section near the end covers 2025 periods, which straddle the 1 July 2025 rate change.
 
 All figures come from the Estonian Tax and Customs Board (Maksu- ja Tolliamet, ETCB) at emta.ee. The ETCB publishes English translations of the forms "for your information only"; the Estonian original is the form that is filed ([KMD forms page](https://www.emta.ee/en/business-client/taxes-and-payment/tax-returns-exchange-information/vat-return-forms-vd-and-vdp)).
 
@@ -27,7 +27,7 @@ Out of scope: VAT groups beyond a mention, the margin schemes for second-hand go
 
 - **Are you registered as liable to VAT in Estonia, and from what date?** Get the VAT number. Registration takes effect from the day the threshold was exceeded, not the day the ETCB decides.
 - **Are you a full taxable person, or a taxable person with limited liability?** Limited-liability persons file KMD but do not file the KMD INF annex.
-- **Which month is being filed?** The rate depends on the time of supply, so the period matters.
+- **Which month is being filed, and has EMTA approved a longer taxation period?** Obtain any approval before applying these ordinary monthly instructions. The rate depends on the time of supply, so the period matters.
 - **Do you use cash accounting for VAT?** It changes when supply arises and keeps some transitional rates open until 31 December 2026.
 - **What did you sell?** Standard-rated, accommodation, books, medicines and medical devices, press publications, exports, sales of goods or services to EU businesses, exempt supplies (financial, insurance, some property), and sales to consumers in other EU countries.
 - **For every EU business customer: do you hold a valid VAT number from their Member State?** No valid number means no 0% on an intra-Community supply of goods.
@@ -41,7 +41,7 @@ Out of scope: VAT groups beyond a mention, the margin schemes for second-hand go
 ## The method, step by step
 
 1. **Confirm who must file.** A KMD and its KMD INF annex are filed by persons registered as VAT payers, and also by persons not registered who have issued an invoice or other sales document showing a VAT amount. A taxable person with limited liability files the KMD but not the annex ([ETCB, Filing VAT returns and reports](https://www.emta.ee/en/business-client/taxes-and-payment/value-added-tax/filing-vat-returns-and-reports)).
-2. **Fix the taxable period.** It is one calendar month. Put each supply in the month in which it arose (time of supply), which also fixes the rate.
+2. **Fix the taxable period.** Use one calendar month for an ordinary monthly filer; an approved longer period must follow its actual ruling. Put each supply in the month in which it arose (time of supply), which also fixes the rate.
 3. **Sort every sale by rate and box.** Standard rate to line 1, the 13% rate to line 2², the 9% rate to line 2, zero-rated supply to line 3 and its sub-lines, exempt supply to line 8, and supply under the special arrangements of § 41¹ of the VAT Act to line 9.
 4. **Self-assess reverse-charge purchases.** Services from foreign suppliers not registered in Estonia, and intra-Community acquisitions of goods, go into line 1 (or line 2 or 2² at a reduced rate) so that output VAT is calculated in line 4. Also show them in the information lines 6, 6.1, 7 and 7.1.
 5. **Compute output VAT in line 4.** The form's formula is 24% of line 1 + 20% of line 1¹ + 22% of line 1² + 9% of line 2 + 5% of line 2¹ + 13% of line 2².
@@ -78,7 +78,7 @@ The ETCB says the correct rate "must be chosen on the basis of the time of suppl
 | Registration threshold | Supply with place of supply in Estonia exceeding EUR 40,000 from the start of the calendar year | [Registration handbook](https://www.emta.ee/en/node/333/handbook/4/pdf) | https://www.emta.ee/en/business-client/taxes-and-payment/value-added-tax/registration-vat-payer |
 | Time to apply after crossing it | Three working days; the ETCB then has five working days to decide | Registration handbook | https://www.emta.ee/en/business-client/taxes-and-payment/value-added-tax/registration-vat-payer |
 | Limited-liability registration | Intra-Community acquisitions of goods exceeding EUR 10,000 from the start of the year | [Registration page](https://www.emta.ee/en/business-client/taxes-and-payment/value-added-tax/registration-vat-payer) | https://www.emta.ee/en/business-client/taxes-and-payment/value-added-tax/registration-vat-payer |
-| EU small-business scheme (foreign small enterprises) | EU-wide supply under EUR 100,000 | Registration handbook | https://www.emta.ee/en/business-client/taxes-and-payment/value-added-tax/registration-vat-payer |
+| EU small-business scheme (foreign small enterprises) | Voluntary; dedicated guidance requires EU-wide supply not exceeding EUR 100,000 in both current and previous calendar years. The registration summary says under EUR 100,000; exact equality is held pending operative-law confirmation, and this headline alone does not establish eligibility | Dedicated SME chapter and registration summary | https://www.emta.ee/en/business-client/taxes-and-payment/value-added-tax/registration-vat-payer |
 | OSS distance-sales and digital-services threshold | EUR 10,000 across all other Member States together | [Special schemes page](https://www.emta.ee/en/business-client/taxes-and-payment/value-added-tax/special-schemes-e-commerce-and-services) | https://www.emta.ee/en/business-client/taxes-and-payment/value-added-tax/special-schemes-e-commerce-and-services |
 | KMD INF annex | Invoices totalling at least EUR 1,000 without VAT per transaction partner in the period | [Filing page](https://www.emta.ee/en/business-client/taxes-and-payment/value-added-tax/filing-vat-returns-and-reports) | https://www.emta.ee/en/business-client/taxes-and-payment/value-added-tax/filing-vat-returns-and-reports |
 | KMD, KMD INF and VD deadline | 20th day of the month after the period; VAT is also payable by then | Filing page; KMD form | https://www.emta.ee/en/business-client/taxes-and-payment/value-added-tax/filing-vat-returns-and-reports |
@@ -323,7 +323,7 @@ Source: [ETCB, Changes in the Estonian Value Added Tax Act](https://www.emta.ee/
 ## Completion checklist
 
 - [ ] VAT registration and effective date confirmed; limited-liability status checked.
-- [ ] Period is the calendar month; every supply dated by time of supply.
+- [ ] Ordinary calendar-month period confirmed, or an approved longer period referred with its actual ruling; every supply dated by time of supply.
 - [ ] Sales split into lines 1, 2, 2², 3 (with 3.1, 3.1.1, 3.2, 3.2.1), 8 and 9.
 - [ ] EU customer VAT numbers checked before using 0%; VD report prepared.
 - [ ] Reverse-charge purchases in line 1 (or 2 or 2²) and information lines 6, 6.1, 7, 7.1.
@@ -364,4 +364,7 @@ Source: [ETCB, Changes in the Estonian Value Added Tax Act](https://www.emta.ee/
 | Read for the dated July 2025 transition, all seven related examples, cash-accounting reduced-rate transitions and announced 2027 method: EMTA VAT changes | https://www.emta.ee/en/business-client/taxes-and-payment/value-added-tax | 2026-11-16 |
 | Read for OSS scope, EUR 10,000 threshold and exclusions, quarterly deadline, voluntary application and IOSS monthly deadline: EMTA special schemes, scoped sections only, not the full handbook | https://www.emta.ee/en/business-client/taxes-and-payment/value-added-tax/special-schemes-e-commerce-and-services | 2026-11-16 |
 
-Not yet confirmed: the exact timing exception under VAT Act § 29^1(1)(6) for court-certified claims; current operative VAT Act text could not be reopened on Riigi Teataja. later amendments to the dated EU customer-status consolidation and the current self-supply calculation divisor for qualifying privately used taxi/driving-school vehicles could not be confirmed. Do not calculate that self-supply from the historical 1.2 divisor printed by the car page. Full OSS/IOSS registration, intermediary and correction workflows, detailed penalty amounts and other jobs expressly referred above remain outside this filing skill. Do not treat these held review gaps as newly verified; all six existing worked cases and original referrals are retained.
+| Read for the ordinary monthly period and EMTA approval of a longer period: State Portal VAT, declaring and paying section | https://www.eesti.ee/en/artikkel/doing-business/taxes/valueadded-tax | 2026-11-16 |
+| Read for the voluntary SME scheme and current/previous calendar-year EU threshold, compared with the registration summary: EMTA dedicated SME chapter | https://www.emta.ee/en/business-client/taxes-and-payment/value-added-tax/special-vat-provisions/special-scheme-small-businesses | 2026-11-16 |
+
+Not yet confirmed: the EU small-enterprise scheme equality boundary at EUR 100,000: the EMTA registration summary says under EUR 100,000, while its dedicated SME chapter says not exceeded in both current and previous calendar years. The operative law could not be read; do not decide an exactly EUR 100,000 case from either summary. The exact timing exception under VAT Act § 29^1(1)(6) for court-certified claims; current operative VAT Act text could not be reopened on Riigi Teataja. later amendments to the dated EU customer-status consolidation and the current self-supply calculation divisor for qualifying privately used taxi/driving-school vehicles could not be confirmed. Do not calculate that self-supply from the historical 1.2 divisor printed by the car page. Full OSS/IOSS registration, intermediary and correction workflows, detailed penalty amounts and other jobs expressly referred above remain outside this filing skill. Do not treat these held review gaps as newly verified; all six existing worked cases and original referrals are retained.
