@@ -43,6 +43,15 @@ One deterministic evidence.tar.gz, exact EVIDENCE-INDEX.json and this readable r
 | `kr-social-insurance.md` | `25298d6f182bd52040784552dedec07091078c774a7990c2458c5a7d8f3101ad` |
 | `references.md` | `d2035db583a92b9e8f340d312ea79461e3d356c577922e3ce3d4f53764f7a429` |
 | `simplified-business-operator-registration-under-vat-act.md` | `95658316fc098c7ea935ef182239db49e271d916d3b1317a5f1ae0cbff3efab0` |
-| `south-korea-crypto-tax.md` | `a1d3180b5d54ad730d1c4c9dfa2d9900dbd3d88664824f4be347012782884fc9` |
+| `south-korea-crypto-tax.md` | `38c87a80003d16d6ccf29a705a8563177a77bb2eebd5391cb136dae143def188` |
 
 No merge, auto-merge, release, production write or new grant. Original coordinator alone controls any later merge.
+
+
+## Later citation-only HTML/table-text delta
+
+Source-content commit `47ed6f75b21e86c45f379ca10702ac5694a60090`; current crypto SHA-256 `38c87a80003d16d6ccf29a705a8563177a77bb2eebd5391cb136dae143def188`. The original 144-entry legal review and prior arithmetic review are reused. A separate limited review checks exact edition identity, the retained official alt and only the citation diff. Eight statutory rate/band rows retain their same-edition HTML citation without secondary GIF links. The first seven equation-input citations now use the already-read July 2026 Act21221 article body. All statutory figures, formulas, original examples and holds remain unchanged.
+
+The limited review found that the official559-character alt is **not complete relative to the image**: the top band omits the image's `3억8,406만원 +` cumulative base, KRW384,060,000. The eighth equation therefore cites both HTML and the actual image as necessary corroboration. This qualifies any earlier diagnostic completeness wording; root owns that diagnostic directory and should correct it. This lane edits no parser, fetch or extraction code.
+
+All19 Guide checks pass; the exact citation diff and scoped review/bindings are in deltas/. No new full country source scan or full test suite was run. Prior published head321438eb has all five required checks green and advisoryfigures red(60misses). Current-head CI must be observed separately; no new figure result is inferred. Keep the PR draft while figures red. No merge or production action.

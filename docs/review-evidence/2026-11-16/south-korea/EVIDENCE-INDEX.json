@@ -1,13 +1,13 @@
 {
   "archive": "evidence.tar.gz",
-  "archive_sha256": "6cf61559fb2a905c54001d8009a16d5917ea7bac00ade5993e1a8a324ff670f1",
-  "source_commit": "21c80e031864f765a07893f214dbb53c5c794a82",
+  "archive_sha256": "a48f38ef08c8542095b781eeae57238fa8e183048b4e01ca95988378cbfb1879",
+  "source_commit": "47ed6f75b21e86c45f379ca10702ac5694a60090",
   "base_commit": "bbab4f1a6d82cace432e6ca8eda89c98ffb1c038",
   "members": [
     {
       "path": "REPORT.md",
-      "size": 6399,
-      "sha256": "004f80295c526945d1cefaf54aec7177c0f3dc1e3c7320dd1adf46ae84dacc56"
+      "size": 7923,
+      "sha256": "33d8423e8e0be8934ca0543798a0808ba38277757905f9ca63a7d9087eab6e04"
     },
     {
       "path": "baseline/CI-figures-8569329b-excerpt.log",
@@ -38,6 +38,11 @@
       "path": "deltas/crypto-before-citation-layout.md",
       "size": 33444,
       "sha256": "8c34fe118cf1ba4610341538d032cc981f1dc3e7d558a21df7d0dbb7e5ed091d"
+    },
+    {
+      "path": "deltas/crypto-before-html-alt-citation.md",
+      "size": 38308,
+      "sha256": "a1d3180b5d54ad730d1c4c9dfa2d9900dbd3d88664824f4be347012782884fc9"
     },
     {
       "path": "deltas/crypto-citation-layout-ledger.md",
@@ -80,6 +85,36 @@
       "sha256": "c313c40455d77b8b59f5b72f7ecc5d65c3850594d2422014600b77045fc4abf6"
     },
     {
+      "path": "deltas/crypto-html-alt-citation-ledger.md",
+      "size": 2414,
+      "sha256": "fd1fc282c9980a6720b740ee88d238f7a151c21628dfa6afc3e7046b5d4d6798"
+    },
+    {
+      "path": "deltas/crypto-html-alt-citation.diff",
+      "size": 7255,
+      "sha256": "08543f0b3f51a2926a6c86e13fd77c7acade0b1e4a27b14411a8daaa96f4f226"
+    },
+    {
+      "path": "deltas/crypto-html-alt-independent-checks.json",
+      "size": 2245,
+      "sha256": "ade5d907c46afd25abd116cddb96a0171a741850bd5de77bb4525f68d8ecbb45"
+    },
+    {
+      "path": "deltas/crypto-html-alt-independent-review.md",
+      "size": 4298,
+      "sha256": "3f0f373de1db679881e2ecd606aa59417fa2c76a72600fa3d5b5500efb27ae83"
+    },
+    {
+      "path": "deltas/crypto-html-alt-skill-checks.json",
+      "size": 552,
+      "sha256": "f98e9dd0231391886dccfb9a3eb553deba0ca9ec80dfdb56febab3a64c258bc1"
+    },
+    {
+      "path": "deltas/crypto-html-alt-validation.json",
+      "size": 646,
+      "sha256": "5d6f422936810b59e7d128a1d9c6887d699d9007b8cf66d0257b9058e8b7991a"
+    },
+    {
       "path": "deltas/crypto-independent-delta-checks.json",
       "size": 2473,
       "sha256": "b73cced96d565a959ab6cde560a76bb5264f73aea126d56241f0d3f15414c95f"
@@ -105,7 +140,17 @@
       "sha256": "96e5de979f8eab3be385b0d95f3dcee76fbb00fe5c7c7e941f160afbda6426d2"
     },
     {
+      "path": "deltas/sync-html-alt.log",
+      "size": 81,
+      "sha256": "96e5de979f8eab3be385b0d95f3dcee76fbb00fe5c7c7e941f160afbda6426d2"
+    },
+    {
       "path": "deltas/validate-guides-delta.log",
+      "size": 192,
+      "sha256": "c5905f9199102c5e895747b7c81ed4de427b6cc8e1d315df76e4ab8fe76ae807"
+    },
+    {
+      "path": "deltas/validate-guides-html-alt.log",
       "size": 192,
       "sha256": "c5905f9199102c5e895747b7c81ed4de427b6cc8e1d315df76e4ab8fe76ae807"
     },
@@ -197,7 +242,7 @@
     {
       "path": "source-manifest.json",
       "size": 1415,
-      "sha256": "dc2c6b7eec6230124314803f4f52b6e2b104a2af472b73fe81eefaf8fa7a0a7a"
+      "sha256": "3afb45df155269a4a4ef905002d12494468939d438787b014950840275effcf2"
     },
     {
       "path": "validation/calculator-quotes-final.log",
