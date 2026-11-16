@@ -320,17 +320,17 @@ Domestic reverse charge lines are reported with `vatDomesticReverseCharge` = tru
 
 | Violation | Penalty (HUF) | Source |
 | --- | --- | --- |
-| Data report missed, late, incomplete, wrong or untrue | Up to the number of invoices affected times the general maximum: HUF 1,000,000 per invoice for a company, HUF 400,000 for an individual | Art. 229. §, 220. § (1) https://njt.jog.gov.hu/jogszabaly/2017-150-00-00 |
-| Any other breach of a tax-law duty (general fine) | Up to HUF 400,000 (individual) or HUF 1,000,000 (others) | Art. 220. § (1) https://njt.jog.gov.hu/jogszabaly/2017-150-00-00 |
+| Data report missed, late, incomplete, wrong or untrue | Up to the number of invoices affected times the general maximum: HUF 1,000,000 per invoice for a company, HUF 400,000 for an individual | Art. 229. §, 220. § (1) https://njt.jog.gov.hu/jogszabaly/2017-150-00-00; amounts in words on the page: `négyszázezer; egymillió` |
+| Any other breach of a tax-law duty (general fine) | Up to HUF 400,000 (individual) or HUF 1,000,000 (others) | Art. 220. § (1) https://njt.jog.gov.hu/jogszabaly/2017-150-00-00; amounts in words on the page: `négyszázezer; egymillió` |
 | Lateness excused | No fine where the taxpayer fulfils the duty and shows it acted as reasonably expected | Art. 220. § (3) https://njt.jog.gov.hu/jogszabaly/2017-150-00-00 |
 
 #### General Invoicing and VAT Penalties
 
 | Violation | Penalty | Source |
 | --- | --- | --- |
-| Failure to issue an invoice, simplified invoice or receipt, or issuing one not for the real consideration | Up to HUF 2,000,000 | Art. 228. § (1) a) https://njt.jog.gov.hu/jogszabaly/2017-150-00-00 |
-| Failure to keep records | Up to HUF 2,000,000 | Art. 228. § (1) b) https://njt.jog.gov.hu/jogszabaly/2017-150-00-00 |
-| Printed invoices or receipts not kept | Up to HUF 200,000 (individual) or HUF 500,000 (others) times the number missing, whether or not they were used | Art. 228. § (3) https://njt.jog.gov.hu/jogszabaly/2017-150-00-00 |
+| Failure to issue an invoice, simplified invoice or receipt, or issuing one not for the real consideration | Up to HUF 2,000,000 | Art. 228. § (1) a) https://njt.jog.gov.hu/jogszabaly/2017-150-00-00; amounts in words on the page: `kétmillió` |
+| Failure to keep records | Up to HUF 2,000,000 | Art. 228. § (1) b) https://njt.jog.gov.hu/jogszabaly/2017-150-00-00; amounts in words on the page: `kétmillió` |
+| Printed invoices or receipts not kept | Up to HUF 200,000 (individual) or HUF 500,000 (others) times the number missing, whether or not they were used | Art. 228. § (3) https://njt.jog.gov.hu/jogszabaly/2017-150-00-00; amounts in words on the page: `kettőszázezer; ötszázezer` |
 | Tax shortfall found by NAV | 50% of the shortfall; 200% where linked to hidden income or false or destroyed records | Art. 215. § (3)-(4) https://njt.jog.gov.hu/jogszabaly/2017-150-00-00 |
 | Late VAT payment | Late payment interest at the central bank base rate plus 5 percentage points, per day / 365; see [hu-vat-return](hu-vat-return.md) | Art. 209. § (1) https://njt.jog.gov.hu/jogszabaly/2017-150-00-00 |
 
