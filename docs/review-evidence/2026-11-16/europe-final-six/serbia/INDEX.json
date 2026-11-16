@@ -1,0 +1,161 @@
+{
+  "archive": "evidence.tar.gz",
+  "archive_sha256": "c18d72ad75d90fad4efdb060f0bd13f8ec7e3a5f7ed5be61580f197cc577ed1a",
+  "members": [
+    {
+      "path": "writer/CHECKPOINT.json",
+      "sha256": "b98f353b0134fb39e777299d6098d3976df07c2830d14ac5eb6141e7e5731d71",
+      "bytes": 2848
+    },
+    {
+      "path": "writer/NO-LOSS-MAP.md",
+      "sha256": "9d156ee2fe5213d274a8d9ba78d182f5dd96133620dccfb727265e64d287458e",
+      "bytes": 56293
+    },
+    {
+      "path": "writer/PARAGRAPH-INVENTORY.json",
+      "sha256": "5270a1b7cad41b3bdf3a7d1ac44b7dec688f886b213110674c2721bb7eaa387b",
+      "bytes": 82353
+    },
+    {
+      "path": "writer/PRIOR-REVIEW-940.md",
+      "sha256": "7add736bab358fbb3dc4a2dcca0751c9525c32bed743875de7ba862e196ed202",
+      "bytes": 2469
+    },
+    {
+      "path": "writer/PRIOR-REVIEW-950.md",
+      "sha256": "a8a91d5572cf2d54ff427d09f7e223bafa4c56c5893f37a022082f3c33f6da22",
+      "bytes": 3030
+    },
+    {
+      "path": "writer/PROTECTED-SIBLING.json",
+      "sha256": "b971af9a282905441c6623845f0d6003c601119aeb41066929faf038d7690f19",
+      "bytes": 229
+    },
+    {
+      "path": "writer/READ-LOG.md",
+      "sha256": "21a8954d20012f4eebf65109726df2888bd0ad77064f3daf40c93f5512a1692f",
+      "bytes": 1656
+    },
+    {
+      "path": "writer/REPORT.md",
+      "sha256": "7da60d0d3132bdc4207e8fd5d4e54b27445d9fbd08052f4d77ee5a8e8175f110",
+      "bytes": 3345
+    },
+    {
+      "path": "writer/REUSE-APPLICABILITY.json",
+      "sha256": "6f2e25f478aae6183ab0077db321ec45a3fbf92608c19233b1023c5e43b6e085",
+      "bytes": 812
+    },
+    {
+      "path": "writer/REVIEWED-FORMATION-950.md",
+      "sha256": "69d1f0ccf23058d96213193a163b6065a95a13547d6cf9ed700a8ff3dc88dc50",
+      "bytes": 29340
+    },
+    {
+      "path": "writer/REVIEWED-OPTIMIZATION-940.md",
+      "sha256": "446804a539f28290d47d73825468619eebd4a1bf59ae2ec004ddc13c60363d6d",
+      "bytes": 13802
+    },
+    {
+      "path": "writer/STATUS.json",
+      "sha256": "7f53a87b3523f8f842d0bc874b67b0a6169b3c71f79adda67346891f62a410c4",
+      "bytes": 2373
+    },
+    {
+      "path": "writer/actual-head-sync.txt",
+      "sha256": "016d2bdee9b6f9cba339da255e44a5ce8cb26915b652c690636d5844bb56dac9",
+      "bytes": 81
+    },
+    {
+      "path": "writer/actual-head-validation.txt",
+      "sha256": "c77cb1eba6cecc38872b47ba037dfa18dee700ab350232108f982f1b8995deaa",
+      "bytes": 192
+    },
+    {
+      "path": "writer/ledgers/how-to-open-a-company-in-serbia-as-a-foreigner-doo-entrepreneur-registration-guide.md",
+      "sha256": "04cfe8ad7c437a4aed0bc05728b821fccfaf7c4bce1ebadf9582fc9a789fd8fe",
+      "bytes": 13278
+    },
+    {
+      "path": "writer/ledgers/serbia-tax-optimization.md",
+      "sha256": "126b3ccd0a48f42a9c7f18c5ceae401ea415fc7d5188f8911cce2fd983c529cd",
+      "bytes": 14955
+    },
+    {
+      "path": "writer/pr-1809-comments.json",
+      "sha256": "3ad1e0241f1fe708bbfefc76d218e81b113d5eea1dede9fd215917100b71818a",
+      "bytes": 56605
+    },
+    {
+      "path": "writer/pr-940-comments.json",
+      "sha256": "47d78fc406187a6f1738a3d942f7d1f74773b19421f88d46b4a5a63d0d14d76d",
+      "bytes": 4686
+    },
+    {
+      "path": "writer/pr-950-comments.json",
+      "sha256": "6b8b3f4eb5d5e41a40fb430c53ab1fb305471a42a7bc4242c358c667e0a0a259",
+      "bytes": 5273
+    },
+    {
+      "path": "writer/pr-body.md",
+      "sha256": "beb3eefc29d6c39d2835255645e32d4a154d47569daf3d4f0c333e9882598be5",
+      "bytes": 2652
+    },
+    {
+      "path": "writer/row-sources-cached.json",
+      "sha256": "bc6c5d928d1a16f4dcb210fa0e0ded640192717027b856b7c27ceb934271c769",
+      "bytes": 2492
+    },
+    {
+      "path": "writer/skill-checks.json",
+      "sha256": "dfb42c96af30ec8135839044fef64541d803c270a328e03a0d4b32b30c9252d2",
+      "bytes": 162
+    },
+    {
+      "path": "independent-review/APPLICABILITY.json",
+      "sha256": "a4c87e20ace5c116da9bc6132b761b5845032f17fd380bfd5dc98fb19d07e0df",
+      "bytes": 736
+    },
+    {
+      "path": "independent-review/FINAL-MANIFEST.json",
+      "sha256": "145e504503a9101d8049c91d8c0bb6a12a5f6e833b1843defff222caded9d6c9",
+      "bytes": 1243
+    },
+    {
+      "path": "independent-review/INDEPENDENT-CONTROLS.json",
+      "sha256": "dd2c29ba182ce94729e3b2c196d9c1799f4edf6944a0afc18d8e0328a0c7da6e",
+      "bytes": 1320
+    },
+    {
+      "path": "independent-review/PRESERVATION.json",
+      "sha256": "20eb9a02dcb6f4a6326c62c40fda98df111fb9fe8e9e9b3324a1c11008400444",
+      "bytes": 814
+    },
+    {
+      "path": "independent-review/REPORT.md",
+      "sha256": "fc248337a3fb6a13288b1d0a4a4d2dda275529e8c5af9b6bce30daca2909c0eb",
+      "bytes": 4695
+    },
+    {
+      "path": "independent-review/ROW-OUTCOMES.json",
+      "sha256": "4061b31e47dd5ef5a49a84de6951eef361211b36a6594bd70e0abf3f34289b7b",
+      "bytes": 58075
+    },
+    {
+      "path": "independent-review/STATUS.json",
+      "sha256": "7488c2b0c4646afe31f4d7a09c9a53e92c52eb4bc1f5d149526ac2a7a8f36c1d",
+      "bytes": 342
+    },
+    {
+      "path": "validation/shared-tests.txt",
+      "sha256": "50b2fb5d95de56411a79d5737c81eb9236be8efa8af1ef4b0bcbc897ea9996ab",
+      "bytes": 510
+    },
+    {
+      "path": "validation/shared-test-applicability.json",
+      "sha256": "8bd4326f179ed529e60cdd1cd43e7897af2d89d4fd8fd4c4de0f9c69fe7a468c",
+      "bytes": 574
+    }
+  ]
+}
