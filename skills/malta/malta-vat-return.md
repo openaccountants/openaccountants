@@ -1,14 +1,14 @@
 ---
 name: malta-vat-return
 description: "Malta VAT return preparation and review for Article 10, Article 11 declarations and distinct Article 12 goods-acquisition and reverse-charge service obligations. Check registration, place of supply, taxability, rates, deduction, actual filing dates and records. Specialist schemes and unsupported portal details remain outside the filing-ready scope."
-version: 2.2
+version: 2.3
 jurisdiction: MT
 tax_year: 2026
-last_updated: 2026-11-08
+last_updated: 2026-11-16
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 1
 reviewed_by: Michael Cutajar
-reviewed_on: 2026-11-08
+reviewed_on: 2026-11-16
 domain: vat-gst
 ---
 
