@@ -40,7 +40,7 @@ packages/                  # GENERATED per-jurisdiction bundles: do not edit (on
 
 agent-skills/              # GENERATED Agent Skills format (one folder per skill, SKILL.md) + install.sh
 evidence/                  # Source records, not skills: ledgers/ and research/ (not read by any build)
-calculators/               # Open decision checks (rules.json + one pure function + tests)
+calculators/               # quoted-lines.json (skill lines our calculations rely on) + contributed checks
 workflows/                 # Guided 6-phase advisor workflows (cross-border intake, UK CGT, ...)
 mcp/                       # Python MCP server source (openaccountants-mcp on PyPI)
 scripts/                   # Build + maintenance scripts (build-index.py, coverage-report.py, validate-guides.py, ...)

@@ -36,6 +36,7 @@ path = [
   "agent-skills/index.json",
   "plugins/openaccountants/skills/**",
   "calculators/**/rules.json",
+  "calculators/quoted-lines.json",
   "index.json",
   "llms.txt",
   "llms-full.txt",
