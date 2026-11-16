@@ -1,0 +1,11 @@
+# Independent Korean figure-normalizer engineering review
+
+PASS at ef95b4c54ce20d9d16ecc8595b30eaeb2206cffb, based on separately reviewed English-number parser20622011. Root is independent of the writer. Read the complete checker/test diff and both implementation handoffs. Only Korean whole-number extraction and focused tests change; fetch, extraction, row selection, matching, derived policy and source/approval data remain unchanged.
+
+The implementation parses full Arabic-coefficient won compounds with descending units and correctly grouped commas. It normalizes literal denominator-first Korean fractions, then masks their full spans before generic numeric scanning. Invalid compounds and fraction chains are masked rather than falling back to misleading smaller figures. Decimal arithmetic precedes the existing numeric interface. This is a bounded representation parser, not a full Korean-language interpreter.
+
+Root's initial independent controls found two malformed fraction continuations that incorrectly yielded20. The one-line continuation correction closes both and adds six malformed and four valid-neighbor regression cases. The historical failing controls are retained. All ten independent controls now pass, and35 focused unittest methods pass, including existing English, decimal and extraction/policy cases. The earlier32-control and actual-body replay evidence applies to the unchanged normalizer behavior outside this continuation correction; no source, full-suite or network replay was repeated solely for the new commit.
+
+Actual source evidence remains limited: the same official article alt supports21of22 selected statutory values. It does not contain the final384060000 cumulative constant. The controlled original owner snapshot remains60MISS on baseline,27with the initial normalizer and8with a hypothetical authentic-body citation correction. Those are prior frozen offline observations, not fresh final-hosted results or a Korean pack clearance. Computed deductions, absent alt values and direct-image decoding must be resolved transparently in the separate country lane. No automatic arithmetic, synthetic source text or row waiver is introduced.
+
+Required hosted CI still must pass. No production action, country-source edit, accountant approval or comprehensive coverage claim is made by this engineering review.
