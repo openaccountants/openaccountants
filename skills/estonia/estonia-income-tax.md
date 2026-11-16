@@ -1,15 +1,16 @@
 ---
 name: estonia-income-tax
 description: Use this skill whenever asked about Estonia personal income tax for self-employed individuals (FIE) and resident individuals. Trigger on phrases like "how much tax do I pay in Estonia", "Estonian income tax return", "Form A", "Form E", "tuludeklaratsioon", "TSD", "FIE", "ettevõtluskonto", "entrepreneur account", "basic exemption", "maksuvaba tulu", "tax hump", "social tax", "sotsiaalmaks", "funded pension", "II pillar", "unemployment insurance", "töötuskindlustus", "flat 22% tax", "self-employed tax Estonia", or any question about filing or computing personal income tax for a resident or self-employed (FIE) client in Estonia. Also trigger when preparing or reviewing a Form A / Form E return, computing FIE business deductions, running payroll withholding via TSD, advising on FIE social-tax advance payments, or comparing the entrepreneur-account simplified regime. This skill covers the flat 22% income tax rate, the income-dependent basic exemption and its 2026 reform, social tax, unemployment-insurance premiums, funded (II) pension, the entrepreneur-account regime, payroll (TSD) declarations, filing deadlines, penalties, and interaction with VAT. ALWAYS read this skill before touching any Estonian income tax work.
-version: 0.2
+version: 0.3
 jurisdiction: EE
 tax_year: 2026
-last_updated: 2026-10-24
+last_updated: 2026-11-16
 depends_on:
   - income-tax-workflow-base
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+type: computation
 domain: income-tax
 ---
 
@@ -47,42 +48,44 @@ The law is the Income Tax Act (tulumaksuseadus), the Social Tax Act (sotsiaalmak
 3. **Pick the basic exemption for the year** (see the figures table). For 2026: 700 euros a month or 8,400 euros a year for everyone below pensionable age, whatever their income. At pensionable age: 776 euros a month or 9,312 euros a year. For 2025, use the tax hump formula in the dated section.
 4. **Employment income.** The employer withholds 22% monthly on the wage minus the employee's unemployment insurance premium (1.6%), minus the II-pillar contribution withheld, minus the monthly basic exemption if the employee gave that employer a written application. With no application, tax is withheld from the first euro. The employer pays social tax (33%) and its own unemployment premium (0.8%) on top and declares everything on form TSD by the 10th of the next month.
 5. **FIE business income (form E).** Receipts in the year (cash basis, including VAT) minus documented business expenses paid in the year (including VAT paid and fixed-asset purchases), minus any loss carried forward. Then:
-   - **Social tax** = that amount ÷ 1.33 × 33%, but never less than the annual minimum (12 × the monthly rate × 33%) unless exempt, and never more than the annual maximum.
-   - **Income for income tax** = that amount ÷ 1.33. If the minimum or maximum social tax applies instead, income for income tax = amount after expenses minus that minimum or maximum social tax.
+   - **Social tax** = that amount ÷ 1.33 × 33%, for the ordinary case. Test whether an annual floor, cap or exception could change it; if so, stop and resolve the held conditions below.
+   - **Income for income tax** = that amount ÷ 1.33. Do not apply a minimum/maximum subtraction adjustment until the held operative conditions below are confirmed.
    - **II pillar** (if joined) = income adjusted by social tax × chosen rate, capped.
-6. **Add other income on form A** (rental income with no tax withheld, interest, income from abroad, gains on property), apply deductions (basic exemption; training expenses and donations up to 1,200 euros together; III-pillar contributions up to 15% of taxable income and 6,000 euros), and compute 22% on the remainder.
+6. **Add other income on form A** (rental income with no tax withheld, interest, income from abroad, gains on property), apply deductions (basic exemption; training expenses and donations up to 1,200 euros together and at most 50% of the income taxable in Estonia; III-pillar contributions up to 15% of taxable income and 6,000 euros), and compute 22% on the remainder.
 7. **Credit tax already withheld and advances paid**; the ETCB computes the balance. Pay any additional tax, FIE social tax and II-pillar contribution by 1 October of the following year; refunds are paid by the same date at the latest.
 8. **Entrepreneur account instead of FIE:** the bank withholds 20% (22%, 24% or 26% with the II pillar) of every receipt. No expenses, no deductions, no return figures to compute.
 
-## Figures with years
+## Rates, bands and thresholds
 
 All amounts in euros. "2026" is the year in force now; the 2025 column is for the return filed in 2026.
 
 ### Income tax and basic exemption
 
-| Item | 2026 | 2025 | Source |
-| --- | --- | --- | --- |
-| Income tax rate (resident natural person) | 22% | 22% (20% in 2024) | [ETCB tax rates](https://www.emta.ee/en/private-client/taxes-and-payment/declaration-income/tax-rates) |
-| Basic exemption, below pensionable age | 700 a month, 8,400 a year, not income-dependent | Up to 654 a month, up to 7,848 a year, reduced by the tax hump | [Calculation of basic exemption](https://www.emta.ee/en/private-client/taxes-and-payment/tax-incentives/calculation-basic-exemption) |
-| Basic exemption at pensionable age | 776 a month, 9,312 a year | 776 a month, 9,312 a year | [Basic exemption at pensionable age](https://www.emta.ee/en/private-client/taxes-and-payment/tax-incentives/basic-exemption-pensionable-age) |
-| Who is of pensionable age for the year | Born in or before 1961 | Born in or before 1960 (reached pensionable age in 2025 or earlier) | Basic exemption at pensionable age |
-| Training expenses plus gifts and donations | Up to 1,200 a year together, not more than taxable income | Same | [Income tax returns for 2025](https://www.emta.ee/en/private-client/taxes-and-payment/declaration-income/income-tax-returns-2025) |
-| III-pillar (supplementary funded pension) contributions | Up to 15% of taxable income, maximum 6,000 a year, outside the 1,200 limit | Same | [III-pillar contributions](https://www.emta.ee/en/private-client/taxes-and-payment/tax-incentives/contributions-supplementary-funded-pension) |
-| Renting out a dwelling | 20% of the rent deducted automatically; not for short-term accommodation or sub-letting | Same | Income tax returns for 2025 |
-| Dividend a company received (exempt under § 50(1^1)) whose underlying profit was taxed at 14/86 under former § 50^1, passed on to an individual. A company's own pre-2025 profit paid out now is taxed at 22/78 | 7% withheld | 7% withheld | [TuMS § 61(68)](https://www.riigiteataja.ee/akt/TuMS) |
+| Item | 2026 | 2025 | Source | Official source |
+| --- | --- | --- | --- |---|
+| Income tax rate (resident natural person) | 22% | 22% (20% in 2024) | [ETCB tax rates](https://emta.ee/en/business-client/taxes-and-payment/income-and-social-taxes/tax-rates) | https://emta.ee/en/business-client/taxes-and-payment/income-and-social-taxes/tax-rates |
+| Basic exemption, below pensionable age | 700 a month, 8,400 a year, not income-dependent | Up to 654 a month, up to 7,848 a year, reduced by the tax hump | [Calculation of basic exemption](https://www.emta.ee/en/private-client/taxes-and-payment/tax-incentives/calculation-basic-exemption) | https://www.emta.ee/en/private-client/taxes-and-payment/tax-incentives/calculation-basic-exemption |
+| Basic exemption at pensionable age | 776 a month, 9,312 a year | 776 a month, 9,312 a year | [Basic exemption at pensionable age](https://www.emta.ee/en/private-client/taxes-and-payment/tax-incentives/basic-exemption-pensionable-age) | https://www.emta.ee/en/private-client/taxes-and-payment/tax-incentives/calculation-basic-exemption |
+| Who is of pensionable age for the year | Born in or before 1961 | Born in or before 1960 (reached pensionable age in 2025 or earlier) | Basic exemption at pensionable age | https://www.emta.ee/en/private-client/taxes-and-payment/tax-incentives/calculation-basic-exemption |
+| Training expenses plus gifts and donations | Up to 1,200 a year together, and at most 50% of income taxable in Estonia | Same | [Income tax returns for 2025](https://www.emta.ee/en/private-client/taxes-and-payment/declaration-income/income-tax-returns-2025) | https://fin.ee/riigi-rahandus-ja-maksud/maksu-ja-tollipoliitika/maksud |
+| III-pillar (supplementary funded pension) contributions | Up to 15% of taxable income, maximum 6,000 a year, outside the 1,200 limit | Same | [III-pillar contributions](https://www.emta.ee/en/private-client/taxes-and-payment/tax-incentives/contributions-supplementary-funded-pension) | https://www.emta.ee/en/private-client/taxes-and-payment/tax-incentives/contributions-supplementary-funded-pension |
+| Renting out a dwelling (latest published 2025-2026 filing-cycle guidance; 2026 return layout unconfirmed) | 20% of the rent deducted automatically; not for short-term accommodation or sub-letting | Same | Income tax returns for 2025 | https://www.emta.ee/en/private-client/taxes-and-payment/declaration-income/income-tax-returns-2025 |
+| Dividend a company received (exempt under § 50(1^1)) whose underlying profit was taxed at 14/86 under former § 50^1, passed on to an individual. A company's own pre-2025 profit paid out now is taxed at 22/78 | 7% withheld | 7% withheld | [TuMS § 61(68)](https://www.riigiteataja.ee/akt/TuMS) | https://emta.ee/en/business-client/taxes-and-payment/income-and-social-taxes/tax-rates |
 
 The 2026 rate stayed at 22%. Earlier commentary had announced a 24% rate and a separate security tax from 2026; the ETCB 2026 rates list only the 22% rate, so do not use 24% for personal income tax. The 24% figure that does apply is the standard **VAT** rate.
+
+For III-pillar relief, the 15% base is income taxable in Estonia, excluding entrepreneur-account income and foreign employment income/dividends exempt in Estonia. Deduct the basic exemption and training/donations first; relief cannot produce a refund above income tax left after those deductions. Table 9.2 is prefilled from acquired fund units. For a proven year-end transfer missing from that prefill, EMTA permits manual entry, with the same amount removed from next year's prefill to prevent a double deduction. [EMTA III-pillar conditions](https://www.emta.ee/en/private-client/taxes-and-payment/tax-incentives/contributions-supplementary-funded-pension).
 
 ### Payroll and social contributions
 
 | Item | 2026 | 2025 | Source |
 | --- | --- | --- | --- |
-| Social tax (employer, or FIE on own income) | 33% | 33% | [ETCB tax rates](https://www.emta.ee/en/private-client/taxes-and-payment/declaration-income/tax-rates) |
-| Monthly rate for the minimum social tax | 886, so at least 292.38 a month | 820, so at least 270.60 a month | [ETCB tax rates](https://www.emta.ee/en/private-client/taxes-and-payment/declaration-income/tax-rates) |
-| Unemployment insurance premium | Employee 1.6%, employer 0.8% | Same | [ETCB tax rates](https://www.emta.ee/en/private-client/taxes-and-payment/declaration-income/tax-rates) |
-| Mandatory funded pension (II pillar), employee | 2% default; 4% or 6% on application (by 30 November, from 1 January) | Same | [ETCB tax rates](https://www.emta.ee/en/private-client/taxes-and-payment/declaration-income/tax-rates) |
-| Health promotion costs exempt per employee | 400 a year | 400 a year | [ETCB tax rates](https://www.emta.ee/en/private-client/taxes-and-payment/declaration-income/tax-rates) |
-| Minimum wage (full-time month / hour) | 946 / 5.67 from 1 April 2026 (886 / 5.31 in January to March) | 886 / 5.31 | [ETCB tax rates](https://www.emta.ee/en/private-client/taxes-and-payment/declaration-income/tax-rates) |
+| Social tax (employer, or FIE on own income) | 33% | 33% | [ETCB tax rates](https://emta.ee/en/business-client/taxes-and-payment/income-and-social-taxes/tax-rates) |
+| Monthly rate for the minimum social tax | 886, so at least 292.38 a month | 820, so at least 270.60 a month | [ETCB tax rates](https://emta.ee/en/business-client/taxes-and-payment/income-and-social-taxes/tax-rates) |
+| Unemployment insurance premium | Employee 1.6%, employer 0.8% | Same | [ETCB tax rates](https://emta.ee/en/business-client/taxes-and-payment/income-and-social-taxes/tax-rates) |
+| Mandatory funded pension (II pillar), employee | 2% default; 4% or 6% as applicable; election timing held under Sources | Same | [ETCB tax rates](https://emta.ee/en/business-client/taxes-and-payment/income-and-social-taxes/tax-rates) |
+| Health promotion costs exempt per employee | 400 a year | 400 a year | [ETCB tax rates](https://emta.ee/en/business-client/taxes-and-payment/income-and-social-taxes/tax-rates) |
+| Minimum wage (full-time month / hour) | 946 / 5.67 from 1 April 2026 (886 / 5.31 in January to March) | 886 / 5.31 | [ETCB tax rates](https://emta.ee/en/business-client/taxes-and-payment/income-and-social-taxes/tax-rates) |
 
 The minimum wage and the social-tax monthly rate are different figures. In 2026 the monthly rate is 886 while the minimum wage rose to 946 from 1 April; the FIE maximum below uses both.
 
@@ -90,36 +93,36 @@ The employee's unemployment premium stops at the end of the month in which the e
 
 ### FIE (sole proprietor) figures
 
-| Item | 2026 | 2025 | Source |
-| --- | --- | --- | --- |
-| Quarterly social-tax advance | 877.14 (886 × 3 × 33%) | 811.80 (820 × 3 × 33%) | [Social-tax advances](https://www.emta.ee/en/business-client/registration-business/businesses/self-employed-persons/payment-advance-payments-social-tax) |
-| Annual minimum social tax (unless exempt) | 3,508.56 (886 × 12 × 33%) | 3,247.20 (820 × 12 × 33%) | Social Tax Act § 2(5) with the monthly rate |
-| Annual maximum social tax | 36,867.60 | 35,085.60 | [FIE social tax](https://www.emta.ee/en/business-client/registration-business/businesses/self-employed-persons/social-tax) |
-| Maximum II-pillar contribution | 2,234.40 at 2%; 4,468.80 at 4%; 6,703.20 at 6% | Not quoted here | [FIE funded pension](https://www.emta.ee/en/business-client/registration-business/businesses/self-employed-persons/contribution-mandatory-funded-pension) |
-| Income-tax advance not payable if one quarterly amount is | 300 or less | 300 or less | [FIE income tax](https://www.emta.ee/en/business-client/registration-business/businesses/self-employed-persons/income-tax) |
-| Entertaining guests and partners | Up to 2% of business income after other deductions, plus up to 32 a month | Same | [Deduction limits](https://www.emta.ee/en/business-client/registration-business/businesses/self-employed-persons/deduction-expenses-and-limitations-thereon) |
-| Advertising gifts | Deductible if each is worth up to 10 without VAT | Same | Deduction limits |
-| Loss (expenses over income) carried forward | Up to ten following years | Same | [Expenses carried forward](https://www.emta.ee/en/business-client/registration-business/businesses/self-employed-persons/expenses-carried-forward) |
+| Item | 2026 | 2025 | Source | Official source |
+| --- | --- | --- | --- |---|
+| Quarterly social-tax advance | 877.14 (886 × 3 × 33%) | 811.80 (820 × 3 × 33%) | [Social-tax advances](https://www.emta.ee/en/business-client/registration-business/businesses/self-employed-persons/payment-advance-payments-social-tax) | https://www.emta.ee/en/business-client/registration-business/businesses/self-employed-persons/payment-advance-payments-social-tax |
+| Four full ordinary quarterly advances (computed reference, not confirmation of an annual minimum after exceptions) | 3,508.56 = 877.14 × 4 | 3,247.20 = 811.80 × 4 | Social-tax advances | https://www.emta.ee/en/business-client/registration-business/businesses/self-employed-persons/payment-advance-payments-social-tax |
+| Annual maximum social tax | 36,867.60 | 35,085.60 | [FIE social tax](https://www.emta.ee/en/business-client/registration-business/businesses/self-employed-persons/social-tax) | https://www.emta.ee/en/business-client/registration-business/businesses/self-employed-persons/social-tax |
+| Maximum II-pillar contribution | 2,234.40 at 2%; 4,468.80 at 4%; 6,703.20 at 6% | Not quoted here | [FIE funded pension](https://www.emta.ee/en/business-client/registration-business/businesses/self-employed-persons/contribution-mandatory-funded-pension) | https://www.emta.ee/en/business-client/registration-business/businesses/self-employed-persons/contribution-mandatory-funded-pension |
+| Income-tax advance not payable if one quarterly amount is | 300 or less | 300 or less | [FIE income tax](https://www.emta.ee/en/business-client/registration-business/businesses/self-employed-persons/income-tax) | https://www.emta.ee/en/business-client/registration-business/businesses/self-employed-persons/income-tax |
+| Entertaining guests and partners | Up to 2% of business income after other deductions, plus up to 32 a month | Same | [Deduction limits](https://www.emta.ee/en/business-client/registration-business/businesses/self-employed-persons/deduction-expenses-and-limitations-thereon) | https://www.emta.ee/en/business-client/registration-business/businesses/self-employed-persons/deduction-expenses-and-limitations-thereon |
+| Advertising gifts | Deductible if each is worth up to 10 without VAT | Same | Deduction limits | https://www.emta.ee/en/business-client/registration-business/businesses/self-employed-persons/deduction-expenses-and-limitations-thereon |
+| Loss (expenses over income) carried forward | Up to ten following years for losses from 2020 onward; 2018 losses eight years, 2019 losses nine years | Same transition rules | [Expenses carried forward](https://www.emta.ee/en/business-client/registration-business/businesses/self-employed-persons/expenses-carried-forward) | https://www.emta.ee/en/business-client/registration-business/businesses/self-employed-persons/expenses-carried-forward |
 
 ### Entrepreneur account (LHV Pank only)
 
-| Item | 2026 | Source |
-| --- | --- | --- |
-| Business income tax on every receipt | 20%; 22%, 24% or 26% if in the II pillar at 2%, 4% or 6% | [Entrepreneur account](https://www.emta.ee/en/private-client/taxes-and-payment/taxable-income/entrepreneur-account) |
-| Split of the 20% | Income tax 22/55, social tax 33/55 | Entrepreneur account |
-| Receipts that force registration as FIE or company and for VAT | Over 40,000 in a calendar year | Entrepreneur account |
-| Monthly receipts needed for health insurance (no II pillar) | At least 2,436.50 | Entrepreneur account |
-| Higher 40% rate | Abolished from 1 January 2025 | Entrepreneur account |
+| Item | 2026 | Source | Official source |
+| --- | --- | --- |---|
+| Business income tax on every receipt | 20%; 22%, 24% or 26% if in the II pillar at 2%, 4% or 6% | [Entrepreneur account](https://www.emta.ee/en/private-client/taxes-and-payment/taxable-income/entrepreneur-account) | https://www.emta.ee/en/private-client/taxes-and-payment/taxable-income/entrepreneur-account |
+| Split of the 20% | Income tax 22/55, social tax 33/55 | Entrepreneur account | https://www.emta.ee/en/private-client/taxes-and-payment/taxable-income/entrepreneur-account |
+| Receipts that force registration as FIE or company and for VAT | Over 40,000 in a calendar year | Entrepreneur account | https://www.emta.ee/en/private-client/taxes-and-payment/taxable-income/entrepreneur-account |
+| Monthly receipts needed for health insurance (no II pillar) | At least 2,436.50 | Entrepreneur account | https://www.emta.ee/en/private-client/taxes-and-payment/taxable-income/entrepreneur-account |
+| Higher 40% rate | Abolished from 1 January 2025 | Entrepreneur account | https://www.emta.ee/en/private-client/taxes-and-payment/taxable-income/entrepreneur-account |
 
 ### 2025 return (filed by 30 April 2026): the tax hump
 
 For **2025 income only**, the basic exemption for a person below pensionable age depended on annual income:
 
-| Annual income in 2025 | Basic exemption |
-| --- | --- |
-| Up to 14,400 | 7,848 |
-| Over 14,400 up to 25,200 | 7,848 − 7,848 ÷ 10,800 × (income − 14,400) |
-| Over 25,200 | 0 |
+| Annual income in 2025 | Basic exemption | Official source |
+| --- | --- |---|
+| Up to 14,400 | 7,848 | https://www.emta.ee/en/private-client/taxes-and-payment/tax-incentives/calculation-basic-exemption |
+| Over 14,400 up to 25,200 | 7,848 − 7,848 ÷ 10,800 × (income − 14,400) | https://www.emta.ee/en/private-client/taxes-and-payment/tax-incentives/calculation-basic-exemption |
+| Over 25,200 | 0 | https://www.emta.ee/en/private-client/taxes-and-payment/tax-incentives/calculation-basic-exemption |
 
 Source: [Calculation of basic exemption](https://www.emta.ee/en/private-client/taxes-and-payment/tax-incentives/calculation-basic-exemption), section "Calculation of basic exemption until the end of 2025", and Income Tax Act § 23.
 
@@ -137,16 +140,11 @@ Source: [Calculation of basic exemption](https://www.emta.ee/en/private-client/t
 
 **Not deductible:** income tax on business income (including its advances), the FIE's own social tax and its advances, the FIE's own II-pillar contribution (it goes on form A, table 9.1), fines, penalty payments and interest under the Taxation Act (except interest under an approved instalment schedule), amounts paid for a service to a person taxed on it through an entrepreneur account (Income Tax Act § 34 clause 13), and private living costs.
 
-**Health costs and trip meals.** The FIE's own health costs may be deducted up to 400 a year (2025 and 2026), on the same conditions as for employees (Income Tax Act § 33(4) with § 48(5⁵)). The FIE's own meals on a temporary business trip abroad are deductible up to 50 a day for the first 15 days and 32 a day from the 16th day, if the business is mainly carried on in Estonia. Other own meals are private.
+**Health costs and trip meals.** Do not compute the FIE's own health-cost deduction until the conflicting period limit on the Not yet confirmed line is resolved. The employee health-cost limit is not automatically the FIE limit. The FIE's own meals on a temporary business trip abroad are deductible up to 50 a day for the first 15 days and 32 a day from the 16th day, provided the business was carried on in Estonia before the trip and continues there afterwards, and less than 25% of turnover or engagement time is abroad under the authority guidance. Other own meals are private.
 
-**Social tax adjustment (Income Tax Act § 14(5³) to (5⁵)).** After expenses, the result is divided by 1.33; the ETCB computes income tax on that adjusted income and social tax of 33% on it. Two limits apply:
+**Ordinary social-tax adjustment.** For a commercially registered FIE whose ordinary computation is not affected by an annual floor, cap or exception, EMTA instructs division of business income after allowable expenses by 1.33 and social tax at 33% of that adjusted base. The authority confirms a 2026 annual maximum of EUR 36,867.60. If a minimum, maximum, annual employer credit or exemption changes the ordinary result, stop the calculation: the detailed subtraction and eligibility mechanics are held below pending operative-source confirmation. Do not infer annual exemptions from an advance-payment exemption. [EMTA FIE social tax](https://www.emta.ee/en/business-client/registration-business/businesses/self-employed-persons/social-tax).
 
-- If 33% of the adjusted income is **below** the annual minimum, the FIE owes the minimum (unless exempt), and income tax is computed on income after expenses **minus the minimum social tax**. If the minimum is larger than that income, the excess is carried forward as a loss.
-- If 33% of the adjusted income is **above** the annual maximum, the FIE owes only the maximum, and income tax is computed on income after expenses **minus the maximum social tax**.
-
-Social tax that an employer or the state paid for the FIE in the year counts toward the minimum (Social Tax Act § 2(7)). An employed FIE whose business income is small pays only the part of the minimum not already covered, not the full 3,508.56 on top. It never pays less than 33% of its adjusted business income. The minimum does not apply for a whole year in which the FIE received a state pension, had partial or no work ability, or was treated as insured as a student. It is reduced day by day for part-year registration and similar changes.
-
-**Social-tax advances.** Paid each quarter by 16 March, 15 June, 15 September and 15 December 2026 (877.14 a quarter). Not payable by an FIE who receives a state pension (including a flexible pension), has partial or no work ability, is a student as defined in the Health Insurance Act, or is under 19. If an employer or the state pays social tax for the FIE of at least 877.14 in the quarter, no advance is due; if it pays less, the FIE pays the difference. Part-quarter liability is computed by days (for example 877.14 ÷ 91 × 50 = 487.50). Advances are credited against the annual social tax; overpayments are refunded.
+**Social-tax advances.** Paid each quarter by 16 March, 15 June, 15 September and 15 December 2026 (877.14 a quarter). Not payable by an FIE who receives a state pension (including a flexible pension), has partial or no work ability, is insured as a qualifying school/vocational student or permanently resident university student under Health Insurance Act § 5(4)(5) (not a doctoral student receiving the doctoral allowance), or is under 19. Confirm actual insured status; under-19 exemption does not depend on student status. Deduct employer or state social tax declared on TSD/ESD using EMTA's one-month shifted reporting window: the first-quarter 2026 calculation uses December 2025, January 2026 and February 2026 declarations. An unused credit carries forward to later quarters of the same year, but does not retrospectively reduce earlier quarterly obligations. If the available credit covers the quarterly obligation (877.14 for a full ordinary quarter), no advance is due; otherwise pay the difference. Part-quarter liability is computed by days (for example 877.14 ÷ 91 × 50 = 481.95, rounded to cents. EMTA's illustration prints 487.50, but its stated formula and quarterly amount recompute to 481.945054945..., so do not copy the illustration's arithmetic). Advances are credited against the annual social tax; overpayments are refunded.
 
 **Income-tax advances (Income Tax Act § 47).** An FIE who had business income in the previous year pays advances by 15 September and 15 December. Each advance = the previous year's taxable business income adjusted by social tax (the form E figure after dividing by 1.33) × that year's income tax rate ÷ 4. The basic exemption and other form A deductions are not subtracted (the ETCB's own example multiplies 5,455 of adjusted business income by 0.22 and divides by 4). None are due in the first year of business, if one quarterly amount is 300 or less, if the previous year had no taxable business income, or while the business is registered as temporary or seasonal or is suspended. The ETCB may reduce or waive future advances on a reasoned application showing that this year's income will be considerably lower.
 
@@ -154,31 +152,31 @@ Social tax that an employer or the state paid for the FIE in the year counts tow
 
 **VAT.** An FIE must register for VAT once its taxable supplies in Estonia exceed 40,000 from the start of a calendar year ([registration as a VAT payer](https://www.emta.ee/en/business-client/taxes-and-payment/value-added-tax/registration-vat-payer)); see the Estonia VAT return Guide.
 
-**Special account.** An FIE may keep one special account for business receipts, moved there within ten working days of receipt. The year's increase in its balance is deducted from business income (not beyond business income after expenses), and a decrease is added back. Tax is deferred, not removed. Interest on the account is business income unless the bank withheld tax.
+**Special account.** A commercially registered FIE may keep one special account with a qualifying EEA credit institution or branch for business receipts and related benefits/compensation, transferred within ten working days of receipt or paid there directly. The year's qualifying increase is deducted, capped at the relevant business income after allowed deductions; the corresponding decrease is added back. An amount never deducted is not taxed again on withdrawal. Foreign income exempt in Estonia does not qualify for the deduction or later add-back. The business-transfer succession exception applies where the statutory conditions are met. On changing the account, transfer its entire balance within ten working days of closing it. Report it in form E table 2; no separate opening notification is required. On termination, previously deducted balances are added back, subject to the transfer exception. Tax is deferred, not removed. Interest is business income unless the bank withheld tax.
 
 **Unemployment insurance.** An FIE pays none for itself; as an employer it pays and withholds it on staff wages.
 
 ## Boundaries and exceptions
 
-| Situation | Treatment | Watch for |
-| --- | --- | --- |
-| Income of exactly 14,400 in 2025 | Full 7,848 exemption (the taper starts only above 14,400) | 2025 only; there is no taper in 2026 |
-| Income of exactly 25,200 in 2025 | Exemption 0 (7,848 − 7,848 ÷ 10,800 × 10,800) | Above 25,200 it stays 0 |
-| Two employers in 2026 | Only one may apply the basic exemption | If two did, the return collects the extra tax |
-| Employee gave no application | Tax withheld from the first euro; the unused exemption comes back through the return | Refund by 1 October at the latest |
-| Monthly wage below 700 | Exemption used only up to the wage; unused months are not carried to later months during the year | The return gives the full 8,400 for the year |
-| Person with only rent or interest income | Exemption given only through the return | No employer to apply it |
-| Reaches pensionable age during 2026 | 9,312 for the whole year from 1 January; the general exemption no longer applies | Pension and wage do not each get an exemption |
-| Flexible or favourable-condition pension before pensionable age | General exemption (700 a month in 2026) until the year of pensionable age | Apply to the Social Insurance Board to have it used on the pension |
-| Employed pensioner whose pension is below 776 | May ask the employer to apply the difference (for example 776 − 676 = 100) | Only after the pension uses its share |
-| FIE start or end mid-quarter | Social-tax advance by days | Quarter lengths: 90, 91, 92, 92 days in 2026 |
-| FIE also employed with employer social tax of at least 877.14 a quarter | No social-tax advance | Employer social tax counts toward the annual minimum, so the FIE owes the larger of 33% of its adjusted business income and the minimum minus the social tax the employer or state paid (Social Tax Act § 2(7)) |
-| FIE income-tax advance of exactly 300 a quarter | Not payable ("does not exceed 300") | 300.01 or more is payable |
-| FIE result below zero | Loss carried forward up to ten years | Minimum social tax above income also becomes a loss carried forward |
-| Entrepreneur-account receipts reach over 40,000 in the year | Must register as FIE or company and for VAT | No deductions on entrepreneur-account income, and its income-tax part is not a credit on form A |
-| Entrepreneur account used for a service to a resident company, non-profit association, foundation or religious association | The payer owes 22/78 income tax on the payment | Not for goods, and not where the payer is the state, a local authority, a legal person in public law or a non-resident company |
-| Sale of goods by an individual | Income from selling goods or handicrafts is taxable (form A line 6.3); property that was in personal use is not taxed; regular, profit-seeking selling is business income on form E and requires registration | Treat platform income the same way |
-| Short-term letting (Airbnb, Booking.com) | Declared as other rental income without the 20% deduction | 20% applies only to renting out a dwelling |
+| Situation | Treatment | Watch for | Official source |
+| --- | --- | --- |---|
+| Income of exactly 14,400 in 2025 | Full 7,848 exemption (the taper starts only above 14,400) | 2025 only; there is no taper in 2026 | https://www.emta.ee/en/private-client/taxes-and-payment/tax-incentives/calculation-basic-exemption |
+| Income of exactly 25,200 in 2025 | Exemption 0 (7,848 − 7,848 ÷ 10,800 × 10,800) | Above 25,200 it stays 0 | https://www.emta.ee/en/private-client/taxes-and-payment/tax-incentives/calculation-basic-exemption |
+| Two employers in 2026 | Only one may apply the basic exemption | If two did, the return collects the extra tax | https://www.emta.ee/en/private-client/taxes-and-payment/tax-incentives/calculation-basic-exemption |
+| Employee gave no application | Tax withheld from the first euro; the unused exemption comes back through the return | Refund by 1 October at the latest | https://www.emta.ee/en/private-client/taxes-and-payment/tax-incentives/calculation-basic-exemption |
+| Monthly wage below 700 | Exemption used only up to the wage; unused months are not carried to later months during the year | The return gives the full 8,400 for the year | https://www.emta.ee/en/private-client/taxes-and-payment/tax-incentives/calculation-basic-exemption |
+| Person with only rent or interest income | Exemption given only through the return | No employer to apply it | https://www.emta.ee/en/private-client/taxes-and-payment/tax-incentives/calculation-basic-exemption |
+| Reaches pensionable age during 2026 | 9,312 for the whole year from 1 January; the general exemption no longer applies | Pension and wage do not each get an exemption | https://www.emta.ee/en/private-client/taxes-and-payment/tax-incentives/calculation-basic-exemption |
+| Flexible or favourable-condition pension before pensionable age | General exemption (700 a month in 2026) until the year of pensionable age | Apply to the Social Insurance Board to have it used on the pension | https://www.emta.ee/en/private-client/taxes-and-payment/tax-incentives/calculation-basic-exemption |
+| Employed pensioner whose pension is below 776 | May ask the employer to apply the difference (for example 776 − 676 = 100) | Only after the pension uses its share | https://www.emta.ee/en/private-client/taxes-and-payment/tax-incentives/calculation-basic-exemption |
+| FIE start or end mid-quarter | Social-tax advance by days | Quarter lengths: 90, 91, 92, 92 days in 2026 | https://www.emta.ee/en/private-client/taxes-and-payment/tax-incentives/calculation-basic-exemption |
+| FIE also employed | Advance credits follow EMTA’s shifted declaration windows and unused-credit rules above | Do not infer the unresolved annual employer-credit floor from an advance exemption | https://www.emta.ee/en/business-client/registration-business/businesses/self-employed-persons/taking-account-social-tax-paid-employer-reduction-self-employed-persons-advance-payments |
+| FIE income-tax advance of exactly 300 a quarter | Not payable ("does not exceed 300") | 300.01 or more is payable | https://www.emta.ee/en/private-client/taxes-and-payment/tax-incentives/calculation-basic-exemption |
+| FIE result below zero | Loss carried forward up to ten years for losses from 2020 onward; 2018 losses eight years, 2019 losses nine years | Keep a separate vintage ledger in form E table 3. Minimum social tax above income also becomes a loss carried forward | https://www.emta.ee/en/business-client/registration-business/businesses/self-employed-persons/expenses-carried-forward |
+| Entrepreneur-account receipts reach over 40,000 in the year | Must register as FIE or company and for VAT | No deductions on entrepreneur-account income, and its income-tax part is not a credit on form A | https://www.emta.ee/en/private-client/taxes-and-payment/tax-incentives/calculation-basic-exemption |
+| Entrepreneur account used for a service to a resident company, non-profit association, foundation or religious association | The payer owes 22/78 income tax on the payment | Not for goods, and not where the payer is the state, a local authority, a legal person in public law or a non-resident company | https://www.emta.ee/en/private-client/taxes-and-payment/tax-incentives/calculation-basic-exemption |
+| Sale of goods by an individual | Income from selling goods or handicrafts is taxable (form A line 6.3); property that was in personal use is not taxed; regular, profit-seeking selling is business income on form E and requires registration | Treat platform income the same way | https://www.emta.ee/en/private-client/taxes-and-payment/tax-incentives/calculation-basic-exemption |
+| Short-term letting (Airbnb, Booking.com) | Declared as other rental income without the 20% deduction | 20% applies only to renting out a dwelling | https://www.emta.ee/en/private-client/taxes-and-payment/tax-incentives/calculation-basic-exemption |
 
 ## Worked cases
 
@@ -192,24 +190,15 @@ These are estimates built from ETCB rules. The ETCB computes the final amounts f
 - Employer on top: social tax 2,000 × 33% = 660.00 and unemployment premium 2,000 × 0.8% = 16.00, so total cost 2,000 + 660 + 16 = 2,676.00. Declared on form TSD and paid by the 10th of the next month.
 Without an application, income tax would be (2,000 − 32 − 40) × 22% = 1,928 × 22% = 424.16 each month, and the unused exemption would come back on the 2026 return.
 
-**Case 2: FIE, ordinary profit, 2026.** Registered all year, born in 1985, not in the II pillar, no other income. Receipts 50,000 and business expenses 20,000 (both including VAT; the FIE is not VAT-registered).
+**Case 2: FIE, ordinary profit, 2026.** Registered all year, born in 1985, not in the II pillar, no other income. Receipts 50,000 and business expenses 20,000 (both including VAT; the FIE is VAT-registered and the expense total includes VAT paid to EMTA where applicable).
 - Income after expenses: 50,000 − 20,000 = 30,000
 - Adjusted for social tax: 30,000 ÷ 1.33 = 22,556.39
-- Social tax: 22,556.39 × 33% = 7,443.61. This is between the minimum 3,508.56 and the maximum 36,867.60, so it stands.
+- Social tax: 22,556.39 × 33% = 7,443.61. This is the ordinary computation, above four full ordinary advances of 3,508.56 and below the confirmed cap of 36,867.60; no annual boundary adjustment is used in this case. Keep full precision until the final cent rounding.
 - Income tax: (22,556.39 − 8,400) × 22% = 14,156.39 × 22% = 3,114.41
 - Social-tax advances paid in 2026: 4 × 877.14 = 3,508.56, so the social-tax balance is 7,443.61 − 3,508.56 = 3,935.05, payable by 1 October 2027 with any income-tax balance.
 - Income-tax advances in 2027: 22,556.39 × 22% ÷ 4 = 1,240.60 on each date. The formula does not subtract the basic exemption. That is over 300, so this FIE pays 1,240.60 by 15 September and 1,240.60 by 15 December 2027.
 
-**Case 3: FIE, small profit, 2026 (minimum social tax).** Same person, income after expenses 5,000.
-- 5,000 ÷ 1.33 = 3,759.40, and 3,759.40 × 33% = 1,240.60, which is below the minimum 3,508.56.
-- Social tax is the minimum: 3,508.56 (already covered by the four advances).
-- Income for income tax: 5,000 − 3,508.56 = 1,491.44, which is below the 8,400 exemption, so income tax is 0.
-
-**Case 4: FIE, high profit, 2026 (maximum social tax).** Income after expenses 150,000, not in the II pillar, no other income.
-- 150,000 ÷ 1.33 = 112,781.95, and 112,781.95 × 33% = 37,218.05, which is above the maximum 36,867.60.
-- Social tax is the maximum: 36,867.60.
-- Income for income tax: 150,000 − 36,867.60 = 113,132.40
-- Income tax: (113,132.40 − 8,400) × 22% = 104,732.40 × 22% = 23,041.13
+**Cases 3 and 4 are held under Sources.** Their original arithmetic is retained, but the annual minimum/maximum income-tax subtraction conditions require the operative source. Use neither boundary case as a filing calculation.
 
 **Case 5: 2025 return with the tax hump.** Below pensionable age in 2025. Annual income for the exemption test and taxable income before the exemption are both 18,000 (for example only interest income, with no other deductions).
 - Exemption: 7,848 − 7,848 ÷ 10,800 × (18,000 − 14,400) = 7,848 − 2,616 = 5,232
@@ -224,24 +213,83 @@ Without an application, income tax would be (2,000 − 32 − 40) × 22% = 1,928
 - Business income tax withheld by the bank: 30,000 × 20% = 6,000, of which income tax 6,000 × 22/55 = 2,400 and social tax 6,000 × 33/55 = 3,600.
 - Receipts are under 40,000, so no FIE or VAT registration is required. With the II pillar at 2% the rate would be 22%: 30,000 × 22% = 6,600.
 
+### Recomputing checks for Cases 1 and 2
+
+```oa-check
+name: Estonia resident wage 2026, existing Case 1
+inputs:
+  gross: 2000
+steps:
+  - unemployment: gross * 0.016
+  - pillar: gross * 0.02
+  - tax: (gross - unemployment - pillar - 700) * 0.22
+  - net: gross - unemployment - pillar - tax
+  - employer_cost: gross * (1 + 0.33 + 0.008)
+expected:
+  unemployment: 32
+  pillar: 40
+  tax: 270.16
+  net: 1657.84
+  employer_cost: 2676
+```
+
+```oa-check
+name: Estonia FIE 2026, existing Case 2
+inputs:
+  receipts: 50000
+  expenses: 20000
+steps:
+  - profit: receipts - expenses
+  - adjusted: profit / 1.33
+  - social: adjusted * 0.33
+  - income_tax: max(adjusted - 8400, 0) * 0.22
+  - advances: 877.14 * 4
+  - social_balance: social - advances
+  - next_advance: adjusted * 0.22 / 4
+expected:
+  profit: 30000
+  adjusted: 22556.39
+  social: 7443.61
+  income_tax: 3114.41
+  advances: 3508.56
+  social_balance: 3935.05
+  next_advance: 1240.60
+```
+
+### Partial-quarter arithmetic reconciliation
+
+The official proportional-calculation page prints an incorrect result for its 50-day example. Its published quarterly base and formula give the following computed result, not EUR 487.50. Use the actual status days, not this hypothetical count.
+
+```oa-check
+name: Estonia FIE partial-quarter published formula recomputes, 2026
+inputs:
+  advance: 877.14
+  quarter_days: 91
+  liable_days: 50
+steps:
+  - payable: advance / quarter_days * liable_days
+expected:
+  payable: 481.95
+```
+
 ## Quick classification of bank lines (FIE)
 
-| Line on the statement | Treatment |
-| --- | --- |
-| Customer payment (ARVE, MAKSE, ÜLEKANNE), Stripe, PayPal, Wise, platform payouts | Business income on form E, gross including VAT; match payouts to invoices |
-| VAT refund from the ETCB | Business income |
-| VAT paid to the ETCB (KÄIBEMAKS, KMD) | Business expense (VAT paid) |
-| Rent of premises, software, hosting, bank and card fees, accountant, insurance, business training | Business expense if documented |
-| Laptop, equipment, furniture, vehicle bought for the business | Expense when paid; business share only if also used privately |
-| Phone, internet, fuel, home utilities | Business share only; no records means no deduction |
-| Meals, accommodation, transport or entertainment for guests and business partners | Within the limit of 2% of business income plus 32 a month |
-| Gifts to customers or partners | Deductible only as advertising items worth up to 10 each without VAT |
-| The FIE's own meals (restaurant, café) | Private, not deductible, except meals on a temporary business trip abroad within the daily limits |
-| Payment for a service into someone's entrepreneur account | Not deductible |
-| Groceries, personal shopping, drawings, own-account transfers | Not income, not an expense |
-| Loan received or principal repaid | Not income, not an expense; business loan interest is deductible |
-| Social-tax advance (SOTSIAALMAKS), income-tax advance, income tax (TULUMAKS), fines, tax interest | Not an expense; advances are credits against the annual tax |
-| Wage (PALK) from an employer | Employment income, already taxed through form TSD; form A |
+| Line on the statement | Treatment | Official source |
+| --- | --- |---|
+| Customer payment (ARVE, MAKSE, ÜLEKANNE), Stripe, PayPal, Wise, platform payouts | Business income on form E, gross including VAT; match payouts to invoices | https://www.emta.ee/en/business-client/registration-business/businesses/self-employed-persons/business-income |
+| VAT refund from the ETCB | Business income | https://www.emta.ee/en/business-client/registration-business/businesses/self-employed-persons/business-income |
+| VAT paid to the ETCB (KÄIBEMAKS, KMD) | Business expense (VAT paid) | https://www.emta.ee/en/business-client/registration-business/businesses/self-employed-persons/expenses-related-business |
+| Rent of premises, software, hosting, bank and card fees, accountant, insurance, business training | Business expense if documented | https://www.emta.ee/en/business-client/registration-business/businesses/self-employed-persons/expenses-related-business |
+| Laptop, equipment, furniture, vehicle bought for the business | Expense when paid; business share only if also used privately | https://www.emta.ee/en/business-client/registration-business/businesses/self-employed-persons/expenses-related-business |
+| Phone, internet, fuel, home utilities | Business share only; no records means no deduction | https://www.emta.ee/en/business-client/registration-business/businesses/self-employed-persons/expenses-related-business |
+| Meals, accommodation, transport or entertainment for guests and business partners | Within the limit of 2% of business income plus 32 a month | https://www.emta.ee/en/business-client/registration-business/businesses/self-employed-persons/deduction-expenses-and-limitations-thereon |
+| Gifts to customers or partners | Deductible only as advertising items worth up to 10 each without VAT | https://www.emta.ee/en/business-client/registration-business/businesses/self-employed-persons/deduction-expenses-and-limitations-thereon |
+| The FIE's own meals (restaurant, café) | Private, not deductible, except meals on a temporary business trip abroad within the daily limits | https://www.emta.ee/en/business-client/registration-business/businesses/self-employed-persons/deduction-expenses-and-limitations-thereon |
+| Payment for a service into someone's entrepreneur account | Not deductible | https://www.emta.ee/en/business-client/registration-business/businesses/self-employed-persons/expenses-related-business |
+| Groceries, personal shopping, drawings, own-account transfers | Not income, not an expense | https://www.emta.ee/en/business-client/registration-business/businesses/self-employed-persons/business-income |
+| Loan received or principal repaid | Not income, not an expense; business loan interest is deductible | https://www.emta.ee/en/business-client/registration-business/businesses/self-employed-persons/business-income |
+| Social-tax advance (SOTSIAALMAKS), income-tax advance, income tax (TULUMAKS), fines, tax interest | Not an expense; advances are credits against the annual tax | https://www.emta.ee/en/business-client/registration-business/businesses/self-employed-persons/expenses-related-business |
+| Wage (PALK) from an employer | Employment income, already taxed through form TSD; form A | https://www.emta.ee/en/business-client/registration-business/businesses/self-employed-persons/business-income |
 
 ## When to refuse or refer
 
@@ -258,16 +306,16 @@ Refer to an Estonian tax adviser, or decline, when:
 
 ## Filing and payment
 
-| Obligation | Deadline | Source |
-| --- | --- | --- |
-| Annual return, form A (and form E for every FIE), for 2026 | 30 April 2027; e-MTA opens from 15 February (next working day if a holiday) | [FIE income tax](https://www.emta.ee/en/business-client/registration-business/businesses/self-employed-persons/income-tax) |
-| Additional income tax, FIE social tax and FIE II pillar for 2025 | 1 October 2026 | [Refund and additional payment](https://www.emta.ee/en/private-client/taxes-and-payment/declaration-income/refund-and-additional-payment-income-tax) |
-| Refund of overpaid 2025 income tax | From 5 March 2026 if e-filed without further checks; by 1 October 2026 at the latest | Refund and additional payment |
-| FIE social-tax advances 2026 | 16 March, 15 June, 15 September, 15 December | [FIE tax calendar](https://www.emta.ee/en/business-client/registration-business/businesses/self-employed-persons/self-employed-persons-tax-calendar) |
-| FIE income-tax advances 2026 | 15 September and 15 December | FIE tax calendar |
-| Employer form TSD and payment | 10th of the month after payment | FIE tax calendar |
-| VAT return (KMD, KMD INF) if registered | 20th of every month | FIE tax calendar |
-| Correction of a return | Up to three years back (in 2026: 2023 to 2025) | Income tax returns for 2025 |
+| Obligation | Deadline | Source | Official source |
+| --- | --- | --- |---|
+| Annual return, form A (and form E for every FIE), for 2026 | 30 April 2027; e-MTA opens from 15 February (next working day if a holiday) | [FIE income tax](https://www.emta.ee/en/business-client/registration-business/businesses/self-employed-persons/income-tax) | https://www.emta.ee/en/business-client/registration-business/businesses/self-employed-persons/income-tax |
+| Additional income tax, FIE social tax and FIE II pillar for 2025 | 1 October 2026 | [Refund and additional payment](https://www.emta.ee/en/private-client/taxes-and-payment/declaration-income/refund-and-additional-payment-income-tax) | https://www.emta.ee/en/private-client/taxes-and-payment/declaration-income/income-tax-returns-2025 |
+| Refund of overpaid 2025 income tax | From 5 March 2026 if e-filed without further checks; by 1 October 2026 at the latest | Refund and additional payment | https://www.emta.ee/en/private-client/taxes-and-payment/declaration-income/income-tax-returns-2025 |
+| FIE social-tax advances 2026 | 16 March, 15 June, 15 September, 15 December | [FIE tax calendar](https://www.emta.ee/en/business-client/registration-business/businesses/self-employed-persons/self-employed-persons-tax-calendar) | https://www.emta.ee/en/business-client/registration-business/businesses/self-employed-persons/self-employed-persons-tax-calendar |
+| FIE income-tax advances 2026 | 15 September and 15 December | FIE tax calendar | https://www.emta.ee/en/business-client/registration-business/businesses/self-employed-persons/self-employed-persons-tax-calendar |
+| Employer form TSD and payment | 10th of the month after payment | FIE tax calendar | https://www.emta.ee/en/business-client/registration-business/businesses/self-employed-persons/self-employed-persons-tax-calendar |
+| VAT return (KMD, KMD INF) if registered | 20th of every month | FIE tax calendar | https://www.emta.ee/en/business-client/registration-business/businesses/self-employed-persons/self-employed-persons-tax-calendar |
+| Correction of a return | Up to three years back (in 2026: 2023 to 2025) | Income tax returns for 2025 | https://www.emta.ee/en/private-client/taxes-and-payment/declaration-income/income-tax-returns-2025 |
 
 If a due date falls on a public holiday or rest day, the next working day counts.
 
@@ -286,11 +334,76 @@ If a due date falls on a public holiday or rest day, the next working day counts
 - [ ] Pre-filled income and deductions checked against payslips and certificates.
 - [ ] FIE: receipts and expenses entered including VAT, private shares removed, fixed assets expensed when paid.
 - [ ] FIE: guest and partner hospitality within 2% plus 32 a month; gifts only as advertising items of at most 10 each; own meals private except trip meals abroad.
-- [ ] FIE: employer or state social tax counted toward the annual minimum.
-- [ ] FIE: social tax adjusted by 1.33, then tested against the minimum (unless exempt) and the maximum.
+- [ ] FIE: ordinary computation distinguished from held annual floor/cap, employer-credit and exemption cases; those cases referred before computing.
+- [ ] FIE: ordinary social tax adjusted by 1.33; no unverified annual boundary adjustment applied.
 - [ ] FIE: social-tax and income-tax advances reconciled; exemptions from advances checked.
 - [ ] FIE: II-pillar status and rate confirmed; contribution within the cap.
-- [ ] Training plus donations within 1,200; III pillar within 15% and 6,000.
+- [ ] Training plus donations within both 1,200 and 50% of income taxable in Estonia; III pillar within 15% and 6,000.
 - [ ] Entrepreneur-account receipts not repeated on form E, and not used for deductions.
 - [ ] Filing by 30 April; balance paid or refund expected by 1 October.
 - [ ] Anything on the refer list escalated.
+
+## Sources
+
+| Source and scope actually read | Official URL | Read on |
+|---|---|---|
+| Read for 2026 PIT, exemption, payroll rates, social-tax monthly base, pension choices and minimum-wage dates: EMTA Tax rates | https://emta.ee/en/business-client/taxes-and-payment/income-and-social-taxes/tax-rates | 2026-11-16 |
+| Read for flat 2026 exemption, pensionable-age year and dated 2025 taper: EMTA Calculation of basic exemption | https://www.emta.ee/en/private-client/taxes-and-payment/tax-incentives/calculation-basic-exemption | 2026-11-16 |
+| Read for EUR 1,200 and 50% deduction cap, III pillar and annual filing/payment: Ministry of Finance, Maksud, individual income-tax section | https://fin.ee/riigi-rahandus-ja-maksud/maksu-ja-tollipoliitika/maksud | 2026-11-16 |
+| Read for III-pillar 15%/EUR 6,000 limits, table 9.2 and timing/proof rules: EMTA supplementary pension | https://www.emta.ee/en/private-client/taxes-and-payment/tax-incentives/contributions-supplementary-funded-pension | 2026-11-16 |
+| Read for registration-only deductions, FIE returns, income-tax advances and exemptions: EMTA FIE income tax | https://www.emta.ee/en/business-client/registration-business/businesses/self-employed-persons/income-tax | 2026-11-16 |
+| Read for FIE social-tax adjustment, 2026 maximum, form E and assessment/payment: EMTA FIE social tax | https://www.emta.ee/en/business-client/registration-business/businesses/self-employed-persons/social-tax | 2026-11-16 |
+| Read for 2026 quarterly EUR 877.14 and due dates: EMTA social-tax advances | https://www.emta.ee/en/business-client/registration-business/businesses/self-employed-persons/payment-advance-payments-social-tax | 2026-11-16 |
+| Read for status-day/quarter-day formula and the erroneous printed example, independently recomputed: EMTA proportional social tax | https://www.emta.ee/en/business-client/registration-business/businesses/self-employed-persons/proportional-calculation-social-tax | 2026-11-16 |
+| Read for shifted TSD/ESD periods and forward unused credits: EMTA employer social-tax reduction | https://www.emta.ee/en/business-client/registration-business/businesses/self-employed-persons/taking-account-social-tax-paid-employer-reduction-self-employed-persons-advance-payments | 2026-11-16 |
+| Read for pension-adjusted base, annual notice, form A table 9.1 and 2026 caps: EMTA FIE funded pension | https://www.emta.ee/en/business-client/registration-business/businesses/self-employed-persons/contribution-mandatory-funded-pension | 2026-11-16 |
+| Read for registered-person deductions, hospitality/gifts/trip-meal limits and conflicting health-period limit: EMTA FIE deduction limits | https://www.emta.ee/en/business-client/registration-business/businesses/self-employed-persons/deduction-expenses-and-limitations-thereon | 2026-11-16 |
+| Read for ten-year loss rule, 2018/2019 transitions, social-tax loss and form E table 3: EMTA expenses carried forward | https://www.emta.ee/en/business-client/registration-business/businesses/self-employed-persons/expenses-carried-forward | 2026-11-16 |
+| Read for rates, receipts threshold, 22/55 and 33/55 split, payer service example, health threshold and annual reporting distinction: EMTA entrepreneur account | https://www.emta.ee/en/private-client/taxes-and-payment/taxable-income/entrepreneur-account | 2026-11-16 |
+
+| Read for eligible special-account receipts, timing, limits, succession, foreign-income exclusions, termination and form E table 2: EMTA special account | https://www.emta.ee/en/business-client/registration-business/businesses/self-employed-persons/special-account | 2026-11-16 |
+| Read for quarterly advance exemptions, under-19 rule and partial-period conditions: EMTA advance exemptions | https://www.emta.ee/en/business-client/registration-business/businesses/self-employed-persons/when-advance-payments-need-not-be-paid | 2026-11-16 |
+| Read for the dated 2025-return filing/refund calendar, residence and filing populations: EMTA income tax returns 2025 | https://www.emta.ee/en/private-client/taxes-and-payment/declaration-income/income-tax-returns-2025 | 2026-11-16 |
+| Read for daily interest, claim minimum and whole-euro rounding: EMTA payment of interests | https://www.emta.ee/en/business-client/taxes-and-payment/payment-arrears/payment-interests | 2026-11-16 |
+
+| Read for income categories, VAT refunds and personal use of deducted assets: EMTA FIE business income | https://www.emta.ee/en/business-client/registration-business/businesses/self-employed-persons/business-income | 2026-11-16 |
+| Read for paid documented expenses, VAT-inclusive form E, exclusions and instalment interest exception: EMTA business expenses | https://www.emta.ee/en/business-client/registration-business/businesses/self-employed-persons/expenses-related-business | 2026-11-16 |
+
+| Read for residence by home/183-day test, Estonian establishment, e-Residency and foreign-management boundaries: EMTA tax residence | https://www.emta.ee/en/private-client/foreigner-non-resident/tax-residency | 2026-11-16 |
+| Read for TuMS section 6 definitions including Estonian-registered SE/SCE, diplomats, arrival and treaty priority: EMTA employer definitions | https://www.emta.ee/en/business-client/taxes-and-payment/income-and-social-taxes/fringe-benefits/employer | 2026-11-16 |
+
+Not yet confirmed: annual FIE floor/cap subtraction, employer-credit floor and annual exemption/part-year conditions (the original paragraphs and Cases 3-4 are preserved below, not usable calculations); the FIE's own health deduction period limit under TuMS §§ 33(4) and 48(5^5). The legacy Guide said EUR 400 per year, while EMTA's FIE deduction page says EUR 100 per quarter and the 2026 employee-rates page says EUR 400 per year. Current operative law could not be read through Riigi Teataja; do not compute the FIE deduction from either figure pending that read. Current full statutory texts, the exact 2026 return field layout, remaining annual minimum-social-tax exceptions require operative source confirmation before use. The dwelling-rent row is the latest published 2025-2026 filing-cycle guidance, not confirmation of an unpublished 2026 return layout. These are held review gaps, not freshly confirmed law. The seven existing worked cases and all referral triggers are retained for review.
+
+### Held annual-boundary detail and original cases, not instructions
+
+These original passages are preserved for source completion. Their arithmetic has been recomputed, but the statutory eligibility and base adjustments are not verified. Do not use them to calculate or file.
+
+**Social tax adjustment (Income Tax Act § 14(5³) to (5⁵)).** After expenses, the result is divided by 1.33; the ETCB computes income tax on that adjusted income and social tax of 33% on it. Two limits apply:
+
+- If 33% of the adjusted income is **below** the annual minimum, the FIE owes the minimum (unless exempt), and income tax is computed on income after expenses **minus the minimum social tax**. If the minimum is larger than that income, the excess is carried forward as a loss.
+- If 33% of the adjusted income is **above** the annual maximum, the FIE owes only the maximum, and income tax is computed on income after expenses **minus the maximum social tax**.
+
+Social tax that an employer or the state paid for the FIE in the year counts toward the minimum (Social Tax Act § 2(7)). An employed FIE whose business income is small pays only the part of the minimum not already covered, not the full 3,508.56 on top. It never pays less than 33% of its adjusted business income. The minimum does not apply for a whole year in which the FIE received a state pension, had partial or no work ability, or was treated as insured as a student. It is reduced day by day for part-year registration and similar changes.
+
+**Case 3: FIE, small profit, 2026 (minimum social tax).** Same person, income after expenses 5,000.
+- 5,000 ÷ 1.33 = 3,759.40, and 3,759.40 × 33% = 1,240.60, which is below the minimum 3,508.56.
+- Social tax is the minimum: 3,508.56 (already covered by the four advances).
+- Income for income tax: 5,000 − 3,508.56 = 1,491.44, which is below the 8,400 exemption, so income tax is 0.
+
+**Case 4: FIE, high profit, 2026 (maximum social tax).** Income after expenses 150,000, not in the II pillar, no other income.
+- 150,000 ÷ 1.33 = 112,781.95, and 112,781.95 × 33% = 37,218.05, which is above the maximum 36,867.60.
+- Social tax is the maximum: 36,867.60.
+- Income for income tax: 150,000 − 36,867.60 = 113,132.40
+- Income tax: (113,132.40 − 8,400) × 22% = 104,732.40 × 22% = 23,041.13
+
+| Annual minimum social tax (unless exempt) | 3,508.56 (886 × 12 × 33%) | 3,247.20 (820 × 12 × 33%) | Social Tax Act § 2(5) with the monthly rate | https://www.emta.ee/en/business-client/registration-business/businesses/self-employed-persons/social-tax | Held original reference, not reopened on 2026-11-16 |
+
+- [ ] FIE: employer or state social tax counted toward the annual minimum.
+
+- [ ] FIE: social tax adjusted by 1.33, then tested against the minimum (unless exempt) and the maximum.
+
+Additional held original rows (annual employer credit and pension election timing), not instructions:
+
+| Mandatory funded pension (II pillar), employee | 2% default; 4% or 6% on application (by 30 November, from 1 January) | Same | [ETCB tax rates](https://emta.ee/en/business-client/taxes-and-payment/income-and-social-taxes/tax-rates) | Held original reference, not reopened on 2026-11-16 |
+
+| FIE also employed with employer social tax of at least 877.14 a quarter | No social-tax advance | Employer social tax counts toward the annual minimum, so the FIE owes the larger of 33% of its adjusted business income and the minimum minus the social tax the employer or state paid (Social Tax Act § 2(7)) | https://www.emta.ee/en/private-client/taxes-and-payment/tax-incentives/calculation-basic-exemption | Held original reference, not reopened on 2026-11-16 |

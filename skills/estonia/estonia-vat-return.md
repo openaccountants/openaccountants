@@ -1,12 +1,13 @@
 ---
 name: estonia-vat-return
 description: Use this skill whenever asked to prepare, review, or classify transactions for an Estonian VAT return (KMD form) for any client. Trigger on phrases like "prepare VAT return", "do the KMD", "fill in KMD", "Estonian VAT", "kaibemaks", or any request involving Estonia VAT filing. This skill covers Estonia only and standard KM registration. MUST be loaded alongside BOTH vat-workflow-base v0.1 or later AND eu-vat-directive v0.1 or later. ALWAYS read this skill before touching any Estonian VAT work.
-version: 2.0
+version: 2.1
 jurisdiction: EE
 tax_year: 2026
-last_updated: 2026-10-16
+last_updated: 2026-11-16
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
+type: filing-howto
 domain: vat-gst
 ---
 
@@ -48,7 +49,7 @@ Out of scope: VAT groups beyond a mention, the margin schemes for second-hand go
 7. **Apply restrictions.** Passenger cars: usually half. Mixed taxable and exempt activity: partial deduction. Private use: none.
 8. **Adjustments.** Year-end recalculation of partial deduction, fixed-asset adjustments and car-use changes go in line 10 (increase) or line 11 (decrease), never both.
 9. **Read the result.** Line 12 is VAT payable and line 13 is overpaid VAT. A refund needs a separate application for a refund from the prepayment account.
-10. **Build the KMD INF annex.** Part A lists sales invoices and Part B purchase invoices, where the total per transaction partner without VAT is at least EUR 1,000 in the period.
+10. **Build the KMD INF annex.** Part A lists sales invoices and Part B purchase invoices, where the relevant total per transaction partner without VAT is at least EUR 1,000 in the period. Test issued and received invoices separately, and test ordinary invoices and credit invoices separately. If either ordinary-invoice or credit-invoice total reaches the limit, include all reportable invoices for that partner in that direction, including the credit notes. Apply the form's exceptions for private customers, non-residents without an Estonian register code, professional secrecy, travel-scheme-only invoices and non-deductible purchases.
 11. **File the VD report** if you made intra-Community supplies of goods or general-rule services to businesses in other EU countries.
 12. **File and pay by the 20th** of the following month through e-MTA or X-tee.
 
@@ -56,15 +57,15 @@ Out of scope: VAT groups beyond a mention, the margin schemes for second-hand go
 
 ### Rates for 2026 periods
 
-| Rate ([ETCB rates](https://emta.ee/en/business-client/taxes-and-payment/value-added-tax/vat-rates-and-supply-exempt-tax/standard-vat-rate)) | Applies to | In force | KMD line |
-| --- | --- | --- | --- |
-| 24% | Standard rate: everything without a specific reduced rate or exemption | From 1 July 2025 (22% from 1 January 2024 to 30 June 2025) | 1 |
-| 13% | Accommodation, and accommodation with breakfast; not other services sold with it | From 1 January 2025 (previously 9%) | 2² |
-| 9% | Books and educational literature (printed or electronic); listed medicines, contraceptives and medical devices for personal use of disabled persons; press publications (printed or electronic, not mainly advertising, erotic, or video or music content) | Press publications back at 9% from 1 January 2025 (5% from 1 August 2022 to 31 December 2024) | 2 |
-| 0% | Exports; intra-Community supply of goods to a buyer with a valid EU VAT number, shown on the VD report; listed transport and ship/aircraft supplies | Standing | 3, 3.1, 3.1.1, 3.2, 3.2.1 |
-| 5% | Only for cash-accounting users: press publications invoiced and supplied before 1 January 2025, where supply arises later; allowed until 31 December 2026 | Transitional | 2¹ |
-| 9% on accommodation | Only for cash-accounting users: accommodation invoiced and provided before 1 January 2025; allowed until 31 December 2026 (a right, not an obligation) | Transitional | 2 |
-| 22% and 20% | Only for credit notes on invoices originally taxed at those rates | Historic | 1² (22%), 1¹ (20%) |
+| Rate ([ETCB rates](https://emta.ee/en/business-client/taxes-and-payment/value-added-tax/vat-rates-and-supply-exempt-tax/standard-vat-rate)) | Applies to | In force | KMD line | Official source |
+| --- | --- | --- | --- |---|
+| 24% | Standard rate: everything without a specific reduced rate or exemption | From 1 July 2025 (22% from 1 January 2024 to 30 June 2025) | 1 | https://www.emta.ee/en/business-client/taxes-and-payment/value-added-tax/vat-rates-and-supply-exempt-tax/standard-vat-rate |
+| 13% | Accommodation, and accommodation with breakfast; not other services sold with it | From 1 January 2025 (previously 9%) | 2² | https://www.emta.ee/en/business-client/taxes-and-payment/value-added-tax/vat-rates-and-supply-exempt-tax/supply-taxable-13-vat-rate |
+| 9% | Books and educational literature (printed or electronic); listed medicines, contraceptives and medical devices for personal use of disabled persons; press publications (printed or electronic, not mainly advertising, erotic, or video or music content) | Press publications back at 9% from 1 January 2025 (5% from 1 August 2022 to 31 December 2024) | 2 | https://www.emta.ee/en/business-client/taxes-and-payment/value-added-tax/vat-rates-and-supply-exempt-tax/supply-taxable-9-vat-rate |
+| 0% | Exports; intra-Community supply of goods to a buyer with a valid EU VAT number, shown on the VD report; listed transport and ship/aircraft supplies | Standing | 3, 3.1, 3.1.1, 3.2, 3.2.1 | https://www.emta.ee/en/business-client/taxes-and-payment/value-added-tax/vat-rates-and-supply-exempt-tax/supply-taxable-0-vat-rate-goods |
+| 5% | Only for cash-accounting users: press publications invoiced and supplied before 1 January 2025, where supply arises later; allowed until 31 December 2026 | Transitional | 2¹ | https://www.emta.ee/en/business-client/taxes-and-payment/value-added-tax/vat-rates-and-supply-exempt-tax/supply-taxable-9-vat-rate |
+| 9% on accommodation | Only for cash-accounting users: accommodation invoiced and provided before 1 January 2025; allowed until 31 December 2026 (a right, not an obligation) | Transitional | 2 | https://www.emta.ee/en/business-client/taxes-and-payment/value-added-tax/vat-rates-and-supply-exempt-tax/supply-taxable-13-vat-rate |
+| 22% and 20% | Only for credit notes on invoices originally taxed at those rates | Historic | 1² (22%), 1¹ (20%) | https://www.emta.ee/sites/default/files/documents/2025-07/vorm_kmd_2025_07_eng.pdf |
 
 Sources: [standard rate](https://emta.ee/en/business-client/taxes-and-payment/value-added-tax/vat-rates-and-supply-exempt-tax/standard-vat-rate); [rates handbook](https://www.emta.ee/en/node/336/main_chapter/83171/pdf); [VAT Act changes](https://www.emta.ee/en/business-client/taxes-and-payment/value-added-tax); [KMD form from 01.07.2025](https://www.emta.ee/sites/default/files/documents/2025-07/vorm_kmd_2025_07_eng.pdf).
 
@@ -72,20 +73,20 @@ The ETCB says the correct rate "must be chosen on the basis of the time of suppl
 
 ### Thresholds and dates
 
-| Item | Figure | Source |
-| --- | --- | --- |
-| Registration threshold | Supply with place of supply in Estonia exceeding EUR 40,000 from the start of the calendar year | [Registration handbook](https://www.emta.ee/en/node/333/handbook/4/pdf) |
-| Time to apply after crossing it | Three working days; the ETCB then has five working days to decide | Registration handbook |
-| Limited-liability registration | Intra-Community acquisitions of goods exceeding EUR 10,000 from the start of the year | [Registration page](https://www.emta.ee/en/business-client/taxes-and-payment/value-added-tax/registration-vat-payer) |
-| EU small-business scheme (foreign small enterprises) | EU-wide supply under EUR 100,000 | Registration handbook |
-| OSS distance-sales and digital-services threshold | EUR 10,000 across all other Member States together | [Special schemes page](https://www.emta.ee/en/business-client/taxes-and-payment/value-added-tax/special-schemes-e-commerce-and-services) |
-| KMD INF annex | Invoices totalling at least EUR 1,000 without VAT per transaction partner in the period | [Filing page](https://www.emta.ee/en/business-client/taxes-and-payment/value-added-tax/filing-vat-returns-and-reports) |
-| KMD, KMD INF and VD deadline | 20th day of the month after the period; VAT is also payable by then | Filing page; KMD form |
-| OSS return | Quarterly, by the last day of the month after the quarter | Special schemes page |
-| IOSS return | Monthly, by the last day of the following month | Special schemes page |
-| Interest on late tax | 0.06% a day (21.9% a year) | [Payment of interests](https://www.emta.ee/en/business-client/taxes-and-payment/payment-arrears/payment-interests) |
-| Passenger-car input VAT | Usually 50% deductible | [Passenger cars and VAT](https://www.emta.ee/en/business-client/taxes-and-payment/value-added-tax/calculation-and-refund-vat/passenger-cars-and-vat-accounting) |
-| Bad-debt relief with more than EUR 30,000 of VAT in the claim | Claim must be confirmed by a court judgment in force | [VAT Act changes](https://www.emta.ee/en/business-client/taxes-and-payment/value-added-tax) |
+| Item | Figure | Source | Official source |
+| --- | --- | --- |---|
+| Registration threshold | Supply with place of supply in Estonia exceeding EUR 40,000 from the start of the calendar year | [Registration handbook](https://www.emta.ee/en/node/333/handbook/4/pdf) | https://www.emta.ee/en/business-client/taxes-and-payment/value-added-tax/registration-vat-payer |
+| Time to apply after crossing it | Three working days; the ETCB then has five working days to decide | Registration handbook | https://www.emta.ee/en/business-client/taxes-and-payment/value-added-tax/registration-vat-payer |
+| Limited-liability registration | Intra-Community acquisitions of goods exceeding EUR 10,000 from the start of the year | [Registration page](https://www.emta.ee/en/business-client/taxes-and-payment/value-added-tax/registration-vat-payer) | https://www.emta.ee/en/business-client/taxes-and-payment/value-added-tax/registration-vat-payer |
+| EU small-business scheme (foreign small enterprises) | EU-wide supply under EUR 100,000 | Registration handbook | https://www.emta.ee/en/business-client/taxes-and-payment/value-added-tax/registration-vat-payer |
+| OSS distance-sales and digital-services threshold | EUR 10,000 across all other Member States together | [Special schemes page](https://www.emta.ee/en/business-client/taxes-and-payment/value-added-tax/special-schemes-e-commerce-and-services) | https://www.emta.ee/en/business-client/taxes-and-payment/value-added-tax/special-schemes-e-commerce-and-services |
+| KMD INF annex | Invoices totalling at least EUR 1,000 without VAT per transaction partner in the period | [Filing page](https://www.emta.ee/en/business-client/taxes-and-payment/value-added-tax/filing-vat-returns-and-reports) | https://www.emta.ee/en/business-client/taxes-and-payment/value-added-tax/filing-vat-returns-and-reports |
+| KMD, KMD INF and VD deadline | 20th day of the month after the period; VAT is also payable by then | Filing page; KMD form | https://www.emta.ee/en/business-client/taxes-and-payment/value-added-tax/filing-vat-returns-and-reports |
+| OSS return | Quarterly, by the last day of the month after the quarter | Special schemes page | https://www.emta.ee/en/business-client/taxes-and-payment/value-added-tax/special-schemes-e-commerce-and-services |
+| IOSS return | Monthly, by the last day of the following month | Special schemes page | https://www.emta.ee/en/business-client/taxes-and-payment/value-added-tax/special-schemes-e-commerce-and-services |
+| Interest on late tax | 0.06% a day (21.9% a year) | [Payment of interests](https://www.emta.ee/en/business-client/taxes-and-payment/payment-arrears/payment-interests) | https://www.emta.ee/en/business-client/taxes-and-payment/payment-arrears/payment-interests |
+| Passenger-car input VAT | Usually 50% deductible | [Passenger cars and VAT](https://www.emta.ee/en/business-client/taxes-and-payment/value-added-tax/calculation-and-refund-vat/passenger-cars-and-vat-accounting) | https://www.emta.ee/en/business-client/taxes-and-payment/value-added-tax/calculation-and-refund-vat/passenger-cars-and-vat-accounting |
+| Bad-debt relief with more than EUR 30,000 of VAT in the claim | Claim must be confirmed by a court judgment in force | [VAT Act changes](https://www.emta.ee/en/business-client/taxes-and-payment/value-added-tax) | https://www.emta.ee/en/business-client/taxes-and-payment/value-added-tax/calculation-and-refund-vat/reduction-tax-liability-case-irrecoverable-arrears |
 
 ### What counts toward the EUR 40,000 (from 1 January 2025)
 
@@ -101,35 +102,35 @@ A foreign business with no permanent establishment in Estonia has no threshold: 
 
 The form numbers some lines with a superscript: 1¹ is "line 1 superscript 1", and likewise 1², 2¹, 2² and 4¹. These are sub-lines of lines 1, 2 and 4. They are not the same as lines 11, 12 and 13 (adjustment, VAT payable, overpaid). English PDF text copies often print them flattened, as "11" or "41", so read them from the form layout.
 
-| Line ([KMD form](https://www.emta.ee/sites/default/files/documents/2025-07/vorm_kmd_2025_07_eng.pdf)) | What goes in it |
-| --- | --- |
-| 1 | Taxable value at 24%. Includes intra-Community acquisitions of goods, services received from foreign businesses not registered in Estonia, self-supply, and credit notes on 24% supplies |
-| 1¹ | Credit notes and § 29¹ changes on transactions taxed at 20% |
-| 1² | Credit notes and § 29¹ changes on transactions taxed at 22% |
-| 2 | Taxable value at 9% |
-| 2¹ | Taxable value at 5% (cash-accounting transition for press publications), plus credit notes and § 29¹ changes on transactions taxed at 5% |
-| 2² | Taxable value at 13% |
-| 3 | All zero-rated supply |
-| 3.1 | Of which: intra-Community supply of goods, and general-rule services to taxable persons in other Member States |
-| 3.1.1 | Of which: intra-Community supply of goods |
-| 3.2 | Of which: exports of goods |
-| 3.2.1 | Of which: tax-free sales to travellers |
-| 4 | Total output VAT, calculated by the formula above |
-| 4¹ | Import VAT, only for persons the ETCB has authorised to declare import VAT on the KMD |
-| 5 | Total deductible input VAT |
-| 5.1 | Of which: import VAT |
-| 5.2 | Of which: VAT on fixed assets |
-| 5.3 | Number of cars, and input VAT, for cars meeting the § 30(4) 3) to 5) conditions (full deduction). Cars bought to resell or to rent out are not shown here, though their VAT is deductible in line 5 |
-| 5.4 | Number of cars, and input VAT, for cars used partly for business (at most 50% of input VAT) |
-| 6 | Information: intra-Community acquisitions of goods and services from taxable persons of other Member States |
-| 6.1 | Information: of which intra-Community acquisitions of goods |
-| 7 | Information: other acquisitions on which you calculate VAT (non-EU suppliers not registered in Estonia, triangular acquisitions, goods to be installed, § 41¹ goods) |
-| 7.1 | Information: of which § 41¹ acquisitions (immovables, scrap metal, precious metal and metal products) |
-| 8 | Exempt supply |
-| 9 | Supply under the § 41¹ special arrangements, and goods to be installed or assembled in another Member State |
-| 10 / 11 | Adjustments up (10) or down (11); only one of the two is completed |
-| 12 | VAT payable: line 4 + line 4¹ − line 5 + line 10 − line 11 |
-| 13 | Overpaid VAT, by the same formula |
+| Line ([KMD form](https://www.emta.ee/sites/default/files/documents/2025-07/vorm_kmd_2025_07_eng.pdf)) | What goes in it | Official source |
+| --- | --- |---|
+| 1 | Taxable value at 24%. Includes intra-Community acquisitions of goods, services received from foreign businesses not registered in Estonia, self-supply, and credit notes on 24% supplies | https://www.emta.ee/sites/default/files/documents/2025-07/vorm_kmd_2025_07_eng.pdf |
+| 1¹ | Credit notes and § 29¹ changes on transactions taxed at 20% | https://www.emta.ee/sites/default/files/documents/2025-07/vorm_kmd_2025_07_eng.pdf |
+| 1² | Credit notes and § 29¹ changes on transactions taxed at 22% | https://www.emta.ee/sites/default/files/documents/2025-07/vorm_kmd_2025_07_eng.pdf |
+| 2 | Taxable value at 9% | https://www.emta.ee/sites/default/files/documents/2025-07/vorm_kmd_2025_07_eng.pdf |
+| 2¹ | Taxable value at 5% (cash-accounting transition for press publications), plus credit notes and § 29¹ changes on transactions taxed at 5% | https://www.emta.ee/sites/default/files/documents/2025-07/vorm_kmd_2025_07_eng.pdf |
+| 2² | Taxable value at 13% | https://www.emta.ee/sites/default/files/documents/2025-07/vorm_kmd_2025_07_eng.pdf |
+| 3 | All zero-rated supply | https://www.emta.ee/sites/default/files/documents/2025-07/vorm_kmd_2025_07_eng.pdf |
+| 3.1 | Of which: intra-Community supply of goods, and general-rule services to taxable persons in other Member States | https://www.emta.ee/sites/default/files/documents/2025-07/vorm_kmd_2025_07_eng.pdf |
+| 3.1.1 | Of which: intra-Community supply of goods | https://www.emta.ee/sites/default/files/documents/2025-07/vorm_kmd_2025_07_eng.pdf |
+| 3.2 | Of which: exports of goods | https://www.emta.ee/sites/default/files/documents/2025-07/vorm_kmd_2025_07_eng.pdf |
+| 3.2.1 | Of which: tax-free sales to travellers | https://www.emta.ee/sites/default/files/documents/2025-07/vorm_kmd_2025_07_eng.pdf |
+| 4 | Total output VAT, calculated by the formula above | https://www.emta.ee/sites/default/files/documents/2025-07/vorm_kmd_2025_07_eng.pdf |
+| 4¹ | Import VAT, only for persons the ETCB has authorised to declare import VAT on the KMD | https://www.emta.ee/sites/default/files/documents/2025-07/vorm_kmd_2025_07_eng.pdf |
+| 5 | Total deductible input VAT | https://www.emta.ee/sites/default/files/documents/2025-07/vorm_kmd_2025_07_eng.pdf |
+| 5.1 | Of which: import VAT | https://www.emta.ee/sites/default/files/documents/2025-07/vorm_kmd_2025_07_eng.pdf |
+| 5.2 | Of which: VAT on fixed assets | https://www.emta.ee/sites/default/files/documents/2025-07/vorm_kmd_2025_07_eng.pdf |
+| 5.3 | Number of cars, and input VAT, for cars meeting the § 30(4) 3) to 5) conditions (full deduction). Cars bought to resell or to rent out are not shown here, though their VAT is deductible in line 5 | https://www.emta.ee/sites/default/files/documents/2025-07/vorm_kmd_2025_07_eng.pdf |
+| 5.4 | Number of cars, and input VAT, for cars used partly for business (at most 50% of input VAT) | https://www.emta.ee/sites/default/files/documents/2025-07/vorm_kmd_2025_07_eng.pdf |
+| 6 | Information: intra-Community acquisitions of goods and services from taxable persons of other Member States | https://www.emta.ee/sites/default/files/documents/2025-07/vorm_kmd_2025_07_eng.pdf |
+| 6.1 | Information: of which intra-Community acquisitions of goods | https://www.emta.ee/sites/default/files/documents/2025-07/vorm_kmd_2025_07_eng.pdf |
+| 7 | Information: other acquisitions on which you calculate VAT (non-EU suppliers not registered in Estonia, triangular acquisitions, goods to be installed, § 41¹ goods) | https://www.emta.ee/sites/default/files/documents/2025-07/vorm_kmd_2025_07_eng.pdf |
+| 7.1 | Information: of which § 41¹ acquisitions (immovables, scrap metal, precious metal and metal products) | https://www.emta.ee/sites/default/files/documents/2025-07/vorm_kmd_2025_07_eng.pdf |
+| 8 | Exempt supply | https://www.emta.ee/sites/default/files/documents/2025-07/vorm_kmd_2025_07_eng.pdf |
+| 9 | Supply under the § 41¹ special arrangements, and goods to be installed or assembled in another Member State | https://www.emta.ee/sites/default/files/documents/2025-07/vorm_kmd_2025_07_eng.pdf |
+| 10 / 11 | Adjustments up (10) or down (11); only one of the two is completed | https://www.emta.ee/sites/default/files/documents/2025-07/vorm_kmd_2025_07_eng.pdf |
+| 12 | VAT payable: line 4 + line 4¹ − line 5 + line 10 − line 11 | https://www.emta.ee/sites/default/files/documents/2025-07/vorm_kmd_2025_07_eng.pdf |
+| 13 | Overpaid VAT, by the same formula | https://www.emta.ee/sites/default/files/documents/2025-07/vorm_kmd_2025_07_eng.pdf |
 
 Source: [KMD form and instructions, valid from 01.07.2025](https://www.emta.ee/sites/default/files/documents/2025-07/vorm_kmd_2025_07_eng.pdf). Amounts are entered to the cent, in euro.
 
@@ -145,26 +146,28 @@ Source: [KMD form and instructions, valid from 01.07.2025](https://www.emta.ee/s
 
 The restriction applies to category M1 (including M1G) vehicles with a gross weight not exceeding 3,500 kilograms and no more than eight seats besides the driver's. For those cars, and for fuel, repairs, parking and other goods and services bought for them, usually half of the input VAT is deductible, however much the car is used privately. Advertising placed on a car, and buying or renting a trailer, are not car costs.
 
-Full deduction is allowed only in the § 30(4) exceptions: a car bought for resale or for renting out (and not used by the buyer itself); a car mainly used for paid passenger transport or driving lessons, with the required licences; or a car used exclusively for business, where private use is precluded and the business can show it (for example a logbook or GPS records, and parking at the premises outside working hours). Commuting by employees can fall outside private use if the Income Tax Act conditions are met. If the car is used privately even once, including with the employee reimbursing the cost, it is not exclusive business use. On the KMD, cars bought to resell or to rent out are deducted in full in line 5 but are not counted in line 5.3; line 5.3 is for the passenger-transport, driving-lesson and exclusive-business cars.
+Full deduction is allowed only in the § 30(4) exceptions: a car bought for resale or for renting out (and not used by the buyer itself); a car mainly used for paid passenger transport or driving lessons, with the required licences; or a car used exclusively for business, where private use is precluded and the business can show it (for example a logbook or GPS records, and parking at the premises outside working hours). Commuting by employees can fall outside private use if the Income Tax Act conditions are met. Under the exclusive-business exception, if the car is used privately even once, including with the employee reimbursing the cost, it is not exclusive business use. The separate qualifying passenger-transport and driving-school exceptions can allow full deduction with private use taxed as self-supply; do not apply the exclusive-business test indiscriminately to those exceptions. On the KMD, cars bought to resell or to rent out are deducted in full in line 5 but are not counted in line 5.3; line 5.3 is for the passenger-transport, driving-lesson and exclusive-business cars.
+
+If a car bought as exclusively business-use with full acquisition VAT deducted first becomes privately used within two years of acquisition, amend the acquisition-period return to reduce the acquisition deduction: it is treated as partly business-use throughout those first two years. Running-cost VAT is not retrospectively reduced by that acquisition rule. From the month private use first starts, the running-cost deduction is capped at 50% for the following 12 months even if private trips stop sooner; exempt or non-business activity can reduce it further. Lease payments are running costs. For a qualifying taxi/driving-school car that leaves its exception within that period, account for self-supply VAT already paid when making the adjustment. Do not import the authority page's historical divisor of 1.2 into a 2026 self-supply calculation; its current 24% treatment requires the applicable law/rate and is held below. [EMTA passenger-car chapter, acquisition and running-cost adjustments](https://www.emta.ee/en/business-client/taxes-and-payment/value-added-tax/calculation-and-refund-vat/passenger-cars-and-vat-accounting).
 
 Where the business also makes exempt supply, the car percentage is applied on top of the partial-deduction proportion ([ETCB, Passenger cars and VAT accounting](https://www.emta.ee/en/business-client/taxes-and-payment/value-added-tax/calculation-and-refund-vat/passenger-cars-and-vat-accounting)).
 
 ## Boundaries and exceptions
 
-| Situation | Treatment ([ETCB filing guidance](https://www.emta.ee/en/business-client/taxes-and-payment/value-added-tax/filing-vat-returns-and-reports)) | Watch for |
-| --- | --- | --- |
-| Sale of goods to a business in another Member State | 0%, lines 3, 3.1 and 3.1.1, and on form VD | Only if the buyer has a valid VAT number from another Member State and the supply is on the VD report. Otherwise charge Estonian VAT |
-| B2B general-rule service to a business in another Member State | Outside Estonian VAT; line 3 and 3.1, and column 5 of form VD | Services tied to immovable property, and services zero-rated in the customer's state (such as export transport), go in line 3 only and not on the VD |
-| Sale to a consumer in another Member State (goods shipped, or digital services) | Estonian VAT while EU-wide sales stay within the EUR 10,000 threshold and the seller is established only in Estonia; above it, the customer's state rate, usually through OSS | OSS supplies go on the OSS return, not on the KMD |
-| Export of goods outside the EU | 0%, lines 3 and 3.2 | Keep export evidence |
-| Tax-free sale to a traveller | 0%, lines 3, 3.2 and 3.2.1 | |
-| Exempt supply (for example insurance, most financial services, certain property transactions) | Line 8; related input VAT is not deductible | The option to tax some exempt supplies needs written notice to the ETCB before the supply |
-| Wages, social tax, income tax, loans, dividends, own transfers, tax payments | Not supply: leave off the KMD | |
-| Supply to or from a VAT group member | The group files one KMD; each member files its own KMD INF annex | |
-| Mistakenly charged VAT on an invoice by an unregistered person | The VAT shown is payable; the person files a KMD | |
-| Goods moved to another Member State as call-off stock | Not on the KMD; declared on form VD in the call-off block, and on VDP if returned or the acquirer changes within 12 months | |
-| Invoice with mixed rates, zero-rated or exempt lines | KMD INF special code 03 | |
-| Supply under the § 41 or § 42 margin schemes | KMD INF special code 01 | Margin schemes are out of scope here |
+| Situation | Treatment ([ETCB filing guidance](https://www.emta.ee/en/business-client/taxes-and-payment/value-added-tax/filing-vat-returns-and-reports)) | Watch for | Official source |
+| --- | --- | --- |---|
+| Sale of goods to a business in another Member State | 0%, lines 3, 3.1 and 3.1.1, and on form VD | Only if the buyer has the required valid VAT number from another Member State, transport evidence is held and the supply is correctly reported on VD. If the exemption conditions fail, classify the transaction under the applicable place-of-supply and destination rules; do not automatically assume Estonian VAT | https://www.emta.ee/en/business-client/taxes-and-payment/value-added-tax/filing-vat-returns-and-reports |
+| B2B general-rule service to a business in another Member State | Outside Estonian VAT; line 3 and 3.1, and column 5 of form VD | Services tied to immovable property, and services zero-rated in the customer's state (such as export transport), go in line 3 only and not on the VD | https://www.emta.ee/en/business-client/taxes-and-payment/value-added-tax/filing-vat-returns-and-reports |
+| Sale to a consumer in another Member State (goods shipped, or digital services) | Estonian VAT while EU-wide sales stay within the EUR 10,000 threshold and the seller is established only in Estonia; above it, the customer's state rate, usually through OSS | OSS supplies go on the OSS return, not on the KMD | https://www.emta.ee/en/business-client/taxes-and-payment/value-added-tax/filing-vat-returns-and-reports |
+| Export of goods outside the EU | 0%, lines 3 and 3.2 | Keep export evidence | https://www.emta.ee/en/business-client/taxes-and-payment/value-added-tax/filing-vat-returns-and-reports |
+| Tax-free sale to a traveller | 0%, lines 3, 3.2 and 3.2.1 | | https://www.emta.ee/en/business-client/taxes-and-payment/value-added-tax/filing-vat-returns-and-reports |
+| Exempt supply (for example insurance, most financial services, certain property transactions) | Line 8; related input VAT is not deductible | The option to tax some exempt supplies needs written notice to the ETCB before the supply | https://www.emta.ee/en/business-client/taxes-and-payment/value-added-tax/filing-vat-returns-and-reports |
+| Wages, social tax, income tax, loans, dividends, own transfers, tax payments | Not supply: leave off the KMD | | https://www.emta.ee/en/business-client/taxes-and-payment/value-added-tax/filing-vat-returns-and-reports |
+| Supply to or from a VAT group member | The group files one KMD; each member files its own KMD INF annex | | https://www.emta.ee/en/business-client/taxes-and-payment/value-added-tax/filing-vat-returns-and-reports |
+| Mistakenly charged VAT on an invoice by an unregistered person | The VAT shown is payable; the person files a KMD | | https://www.emta.ee/en/business-client/taxes-and-payment/value-added-tax/filing-vat-returns-and-reports |
+| Goods moved to another Member State as call-off stock | Not on the KMD; declared on form VD in the call-off block, and on VDP if returned or the acquirer changes within 12 months | | https://www.emta.ee/en/business-client/taxes-and-payment/value-added-tax/filing-vat-returns-and-reports |
+| Invoice with mixed rates, zero-rated or exempt lines | KMD INF special code 03 | | https://www.emta.ee/en/business-client/taxes-and-payment/value-added-tax/filing-vat-returns-and-reports |
+| Supply under the § 41 or § 42 margin schemes | KMD INF special code 01 | Margin schemes are out of scope here | https://www.emta.ee/en/business-client/taxes-and-payment/value-added-tax/filing-vat-returns-and-reports |
 
 Sources: [Filing VAT returns and reports](https://www.emta.ee/en/business-client/taxes-and-payment/value-added-tax/filing-vat-returns-and-reports); [KMD INF form from 01.07.2025](https://www.emta.ee/sites/default/files/documents/2025-07/vorm_kmd_inf_2025_07_eng.pdf); [rates handbook](https://www.emta.ee/en/node/336/main_chapter/83171/pdf); [VAT rates and exempt supply](https://emta.ee/en/business-client/taxes-and-payment/value-added-tax/vat-rates-and-supply-exempt-tax/standard-vat-rate).
 
@@ -177,10 +180,10 @@ When working from a bank export, classify by what the invoice shows, not by the 
 - **Salaries, social tax, income tax and payments to the ETCB** are not purchases: leave them out.
 - **Owner transfers, dividends and transfers between own accounts** are out of scope.
 - **Cash withdrawals**: ask what they paid for; exclude until supported by an invoice.
-- **Restaurant and entertainment costs**: the ETCB pages do not list a specific block, but input VAT is deductible only for goods and services used for taxable business supply. Default to no deduction until the business purpose is confirmed.
+- **Guest entertainment, employee meals and employee accommodation**: input VAT is blocked by VAT Act § 30(1)-(2), except employee accommodation on a business trip. A business purpose alone does not remove the block. Where goods were bought for taxable business use and later diverted to staff or guests, apply the self-supply treatment described by EMTA. Separate ordinary restaurant trading purchases from guest or employee consumption.
 - **Domestic purchases at 24% with a valid Estonian invoice**: deductible in line 5 if used for taxable supply.
 
-Conservative defaults when facts are missing: an unknown sale rate is 24%; an EU customer with no confirmed valid VAT number is treated as a consumer and charged Estonian VAT; a purchase with no compliant invoice is not deductible; a car of unknown use is at 50%.
+When facts are missing, stop the affected classification: establish the place of supply, customer status and any reduced rate or exemption before choosing a rate. For ordinary services, a missing customer VAT number does not by itself conclusively establish consumer status. Council Implementing Regulation (EU) 282/2011 Articles 17-20 distinguish business status, private-use capacity and location. Article 18(1)(b) permits the pending-number case with proof of application, other business evidence and reasonable commercial checks. The ordinary no-number presumption in Article 18(2) is qualified by contrary information; its second paragraph has a separate rule for the listed telecommunications, broadcasting, electronic and virtual-event services. Under Article 19, exclusively private use is non-business even for a taxable customer, while a mixed private/business service follows Article 44 absent abuse. Verify the actual applicable service/place rule rather than assigning a VAT rate from a number alone. For ordinary intra-Community goods, do not claim 0% without the required VAT-number and transport/reporting evidence. New means of transport and excise goods have separate exceptions: refer those cases rather than apply the ordinary VAT-number test indiscriminately. A purchase with no compliant invoice is not deductible. For a car, confirm taxable business use before applying the usual 50% restriction; a wholly private car has no deductible business input VAT.
 
 ## Worked cases
 
@@ -208,7 +211,7 @@ Source: [ETCB, Passenger cars and VAT accounting](https://www.emta.ee/en/busines
 
 A sole trader's Estonian supply since 1 January passes EUR 40,000 on Friday the 2nd of a month.
 
-- The application is due within three working days: by Wednesday the 7th.
+- The application is due within three working days: by Wednesday the 7th, assuming the intervening weekdays are working days and no public holiday changes the count.
 - The ETCB registers the person from the 2nd, the day the threshold was exceeded, and must decide within five working days of the application.
 - VAT is due on supply from the 2nd even before the VAT number arrives; compliant invoices are issued later, within 7 days as the ETCB example notes, and non-compliant ones corrected.
 
@@ -238,6 +241,41 @@ A company invoices EUR 3,500 of consulting to a German business with a valid Ger
 - Sale: line 3 and 3.1 with EUR 3,500; also column 5 of form VD, both due by the 20th of the following month.
 - Purchase: line 1 and line 6 with EUR 850; line 4 includes 24% of it, EUR 204; line 5 deducts EUR 204 if used for taxable supply. The Irish supplier has no Estonian register code, so its invoice is not declared in KMD INF Part B.
 
+### Recomputing checks for Cases 1 and 2
+
+```oa-check
+name: Estonia KMD domestic sale and US software 2026, existing Case 1
+inputs:
+  sale: 1000
+  software: 100
+  vat_rate: 0.24
+steps:
+  - line1: sale + software
+  - line4: line1 * vat_rate
+  - line7: software
+  - line5: software * vat_rate
+  - line12: line4 - line5
+expected:
+  line1: 1100
+  line4: 264
+  line7: 100
+  line5: 24
+  line12: 240
+```
+
+```oa-check
+name: Estonia car mixed taxable activity 2026, existing Case 2
+inputs:
+  input_vat: 12
+  taxable_share: 0.60
+steps:
+  - mixed_use_deduction: input_vat * 0.50 * taxable_share
+  - exclusive_business_deduction: input_vat * taxable_share
+expected:
+  mixed_use_deduction: 3.60
+  exclusive_business_deduction: 7.20
+```
+
 ## When to refuse or refer
 
 - **E-resident company with no staff, office or permanent establishment in Estonia.** Whether its services are supplied from Estonia, and whether it is an Estonian taxable person for a given transaction, depends on where it really does business. Refer to a specialist before filing.
@@ -254,7 +292,7 @@ A company invoices EUR 3,500 of consulting to a German business with a valid Ger
 
 **Deadline.** The KMD and the KMD INF annex are filed, and the VAT is payable, by the 20th day of the month after the taxable period. The VD report has the same deadline. If no reportable intra-Community supply was made, no VD is filed.
 
-**How.** In e-MTA (manual entry, or XML or CSV upload; a re-upload overwrites all earlier data in every part), or by machine-to-machine interface over X-tee from accounting software. Paper filing at a service bureau is allowed only if the person has been registered for less than 12 months, or the annex has fewer than five invoices. A return shows "Submitted" once accepted; "Not submitted" means errors to fix.
+**How.** In e-MTA choose Taxes, then Value added tax, then Submit and view KMD, and Add a new tax return (Lisa uus deklaratsioon). Enter the data manually, or use Add data from file for UTF-8 XML/CSV. Uploading alone does not submit the return: after processing, click Submit a VAT return, then check Submitted and the Errors column. Correct errors and resubmit. In e-MTA (manual entry, or XML or CSV upload; a re-upload overwrites all earlier data in every part), or by machine-to-machine interface over X-tee from accounting software. Paper filing at a service bureau is allowed only if the person has been registered for less than 12 months, or the annex has fewer than five invoices. A return shows "Submitted" once accepted; "Not submitted" means errors to fix.
 
 **Payment.** Pay to the ETCB prepayment account. Interest runs at 0.06% a day from the day after the due date until payment. Instalment schedules can be applied for in e-MTA.
 
@@ -267,7 +305,7 @@ A company invoices EUR 3,500 of consulting to a German business with a valid Ger
 - OSS and IOSS: correct a previous return in a later return, not by amending the original.
 - Mismatches between your KMD INF and your trading partners' annexes can affect your tax behaviour rating and send your return for review; resolve them with the partner first.
 
-**Bad-debt relief (§ 29¹).** A seller can reduce output VAT on an unpaid invoice if all conditions are met: a compliant invoice was issued and its VAT declared in the right period; the claim was not assigned; at least 12 months and no more than three years have passed since the payment due date (the ETCB notes an exception, "except in case described in clause 6"; check § 29¹ of the Act if it may apply); the claim is written off in the accounts after all feasible collection efforts (or collection would cost more than the claim); a court judgment in force if the claim includes more than EUR 30,000 of VAT; the buyer is not an associated person; and the buyer is told in writing in the month of write-off. The reduction goes in the line for the original invoice's rate, which reduces line 4: line 1 for 24%, 1² for 22%, 1¹ for 20%, 2 for 9%, 2² for 13%, 2¹ for 5%. Relief needs 12 months to pass, so most 2026 claims concern invoices from before July 2025 at 22% and go in line 1²; the buyer reduces its input VAT in line 5; both show the invoice again with minus figures in KMD INF. If the debt is later paid, VAT is declared again.
+**Bad-debt relief (§ 29¹).** A seller can reduce output VAT on an unpaid invoice if all conditions are met: a compliant invoice was issued and its VAT declared in the right period; the claim was not assigned; at least 12 months and no more than three years have passed since the payment due date (the ETCB notes an exception, "except in case described in clause 6"; check § 29¹ of the Act if it may apply); the claim is written off in the accounts after all feasible collection efforts (or collection would cost more than the claim); a court judgment in force if the claim includes more than EUR 30,000 of VAT; the buyer is not an associated person; and the buyer is told in writing in the month of write-off. The reduction goes in the line for the original invoice's rate, which reduces line 4: line 1 for 24%, 1² for 22%, 1¹ for 20%, 2 for 9%, 2² for 13%, 2¹ for 5%. For the ordinary 12-month rule, determine the original invoice's actual rate and due date. A 2026 write-off may concern either a 22% or a 24% invoice; do not infer the rate from the write-off year. The timing exception for a court-certified claim is on the Not yet confirmed line; the buyer reduces its input VAT in line 5; both show the invoice again with minus figures in KMD INF only where it is reportable in that period. Treat each unpaid invoice as a separate claim for the EUR 30,000 court test unless invoices have already been taken to court together as one claim. Do not waive the written buyer notification because the buyer is being liquidated or is difficult to contact. If the debt is later paid, VAT is declared again in the period of payment, to the extent paid. Do not issue a credit note solely because a debt is written off. The seller's VAT reduction is in the write-off period; the buyer reduces input VAT in the period it receives the written notification.
 
 **Penalties.** The KMD carries a declaration that incorrect or inaccurate information is punishable under the Taxation Act. Late payment always attracts interest. The ETCB's English pages checked for this skill do not give a fine schedule for late filing; check the Taxation Act before quoting a figure.
 
@@ -297,3 +335,33 @@ Source: [ETCB, Changes in the Estonian Value Added Tax Act](https://www.emta.ee/
 - [ ] OSS or IOSS supplies kept off the KMD.
 - [ ] Line 12 or 13 reconciled to the ledger; refund application made if wanted.
 - [ ] Filed and paid by the 20th of the following month.
+
+## Sources
+
+| Source and scope actually read | Official URL | Read on |
+|---|---|---|
+| Read for current standard rate and time-of-supply instruction: EMTA VAT standard rate | https://emta.ee/en/business-client/taxes-and-payment/value-added-tax/vat-rates-and-supply-exempt-tax/standard-vat-rate | 2026-11-16 |
+| Read for accommodation rate and cash-accounting transition: EMTA 13% rate | https://emta.ee/en/business-client/taxes-and-payment/value-added-tax/vat-rates-and-supply-exempt-tax/supply-taxable-13-vat-rate | 2026-11-16 |
+| Read for eligible books, educational literature, listed medical goods and press exclusions: EMTA 9% rate | https://emta.ee/en/business-client/taxes-and-payment/value-added-tax/vat-rates-and-supply-exempt-tax/supply-taxable-9-vat-rate | 2026-11-16 |
+| Read for return filers, VAT-group/limited-liability distinction, monthly deadline and annex threshold: EMTA filing VAT returns | https://www.emta.ee/en/business-client/taxes-and-payment/value-added-tax/filing-vat-returns-and-reports | 2026-11-16 |
+| Read for EUR 40,000 and EUR 10,000 thresholds, taxpayer definitions and e-MTA registration: EMTA registration | https://www.emta.ee/en/business-client/taxes-and-payment/value-added-tax/registration-vat-payer | 2026-11-16 |
+| Read for official current form version and English/Estonian form distinction: EMTA VAT forms index | https://www.emta.ee/en/business-client/taxes-and-payment/tax-returns-exchange-information/vat-return-forms-vd-and-vdp | 2026-11-16 |
+| Read for all KMD fields, formula, credit-note rate lines, reverse-charge information fields, adjustments and refund application: current official form and instructions, pages 1-5 | https://www.emta.ee/sites/default/files/documents/2025-07/vorm_kmd_2025_07_eng.pdf | 2026-11-16 |
+| Read for KMD INF fields, per-partner debit/credit thresholds, invoice exceptions and non-resident register codes: official instructions, pages 1-10, including the special-code columns | https://www.emta.ee/sites/default/files/documents/2025-07/vorm_kmd_inf_2025_07_eng.pdf | 2026-11-16 |
+| Read for 50% restriction, qualifying cars, full-deduction exceptions and business/private-use distinction: EMTA passenger cars | https://www.emta.ee/en/business-client/taxes-and-payment/value-added-tax/calculation-and-refund-vat/passenger-cars-and-vat-accounting | 2026-11-16 |
+| Read for guest/employee consumption block and employee business-trip accommodation exception: EMTA restrictions | https://www.emta.ee/en/business-client/taxes-and-payment/value-added-tax/calculation-and-refund-vat/restrictions-deduction-input-vat | 2026-11-16 |
+| Read for all eight bad-debt conditions, court-claim exception, seller/buyer periods, no credit note and later payment: EMTA irrecoverable arrears | https://www.emta.ee/en/business-client/taxes-and-payment/value-added-tax/calculation-and-refund-vat/reduction-tax-liability-case-irrecoverable-arrears | 2026-11-16 |
+
+| Read for customer status/capacity/location, especially pending VAT numbers and qualified presumptions: Regulation 282/2011 Articles 17-20, official 14 April 2025 consolidation; no claim of checking later amendments | https://publications.europa.eu/resource/cellar/5bc93f0b-2a93-11f0-8a44-01aa75ed71a1.0006.02/DOC_1 | 2026-11-16 |
+| Read for 0% goods conditions, valid-number exceptions and reporting: EMTA zero-rated goods | https://emta.ee/en/business-client/taxes-and-payment/value-added-tax/vat-rates-and-supply-exempt-tax/supply-taxable-0-vat-rate-goods | 2026-11-16 |
+| Read for full 2025-onward threshold composition, real-estate/insurance/financial and fixed-asset/occasional exceptions: EMTA threshold calculation | https://www.emta.ee/en/business-client/taxes-and-payment/value-added-tax/registration-vat-payer/threshold-calculation-1-january-2025 | 2026-11-16 |
+| Read for threshold crossing, effective registration, review/notification, invoice correction and deregistration restart: EMTA obligation to register | https://www.emta.ee/en/business-client/taxes-and-payment/value-added-tax/registration-vat-payer/obligation-register-taxable-person | 2026-11-16 |
+| Read for daily interest, claim minimum and whole-euro rounding: EMTA payment of interests | https://www.emta.ee/en/business-client/taxes-and-payment/payment-arrears/payment-interests | 2026-11-16 |
+
+| Read for complete electronic submission, upload/submit distinction, status/errors, overwrite and UTF-8 instructions: EMTA e-MTA filing | https://www.emta.ee/en/business-client/taxes-and-payment/value-added-tax/filing-vat-returns-and-reports/filing-e-mta | 2026-11-16 |
+| Read for paper-filing alternatives, under 12 months OR fewer than five annex invoices: EMTA service offices | https://www.emta.ee/en/business-client/taxes-and-payment/value-added-tax/filing-vat-returns-and-reports/filing-our-customer-service-offices | 2026-11-16 |
+| Read for intra-Community reporting time, service column, immovable/export-service exceptions, call-off stock and VDP: EMTA when to declare | https://www.emta.ee/en/business-client/taxes-and-payment/value-added-tax/filing-vat-returns-and-reports/when-declare | 2026-11-16 |
+| Read for the dated July 2025 transition, all seven related examples, cash-accounting reduced-rate transitions and announced 2027 method: EMTA VAT changes | https://www.emta.ee/en/business-client/taxes-and-payment/value-added-tax | 2026-11-16 |
+| Read for OSS scope, EUR 10,000 threshold and exclusions, quarterly deadline, voluntary application and IOSS monthly deadline: EMTA special schemes, scoped sections only, not the full handbook | https://www.emta.ee/en/business-client/taxes-and-payment/value-added-tax/special-schemes-e-commerce-and-services | 2026-11-16 |
+
+Not yet confirmed: the exact timing exception under VAT Act § 29^1(1)(6) for court-certified claims; current operative VAT Act text could not be reopened on Riigi Teataja. later amendments to the dated EU customer-status consolidation and the current self-supply calculation divisor for qualifying privately used taxi/driving-school vehicles could not be confirmed. Do not calculate that self-supply from the historical 1.2 divisor printed by the car page. Full OSS/IOSS registration, intermediary and correction workflows, detailed penalty amounts and other jobs expressly referred above remain outside this filing skill. Do not treat these held review gaps as newly verified; all six existing worked cases and original referrals are retained.
