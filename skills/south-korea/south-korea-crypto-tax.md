@@ -97,18 +97,31 @@ These national comprehensive-income rates are in the operative 2026 Income Tax A
 | Over 500,000,000 to 1,000,000,000 | 42% | [Income Tax Act art. 55(1), article body](https://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=280405&efYd=20260701&chrClsCd=010202) |
 | Over 1,000,000,000 | 45% | [Income Tax Act art. 55(1), article body](https://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=280405&efYd=20260701&chrClsCd=010202) |
 
-The following quick deductions are equivalent arithmetic, not additional statutory deductions or different rates. For a band with lower boundary L, statutory cumulative tax A at that boundary and marginal rate r, the statute gives A + (taxable base − L) × r. Rewriting it as taxable base × r − (L × r − A) gives the equivalent quick deduction L × r − A. The statutory boundaries and rates are checked in the preceding table; the cumulative amounts below come from the same statutory image.
+The following cumulative bases and quick deductions are computed arithmetic from the statutory boundaries and marginal rates in the preceding table. They are not additional statutory deductions or different rates. Starting with cumulative tax A = 0 at lower boundary L = 0, each next cumulative base is the previous A plus the width of the completed band multiplied by that band's marginal rate. For taxable base x within a band, national tax is A + (x − L) × r. Rewriting this as x × r − (L × r − A) gives the equivalent quick deduction L × r − A.
 
-| Band in preceding statutory table | Equivalent quick-deduction arithmetic | Result, KRW | Official calculation inputs |
+| Band in preceding statutory table | Cumulative tax A, KRW | Equivalent quick deduction, KRW | Derivation inputs |
 | --- | --- | --- | --- |
-| First | 0 | 0 | [Art. 55(1), article body with statutory-table text](https://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=280405&efYd=20260701&chrClsCd=010202) |
-| Second | 14,000,000 × 15% − 840,000 | 1,260,000 | [Art. 55(1), article body with statutory-table text](https://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=280405&efYd=20260701&chrClsCd=010202) |
-| Third | 50,000,000 × 24% − 6,240,000 | 5,760,000 | [Art. 55(1), article body with statutory-table text](https://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=280405&efYd=20260701&chrClsCd=010202) |
-| Fourth | 88,000,000 × 35% − 15,360,000 | 15,440,000 | [Art. 55(1), article body with statutory-table text](https://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=280405&efYd=20260701&chrClsCd=010202) |
-| Fifth | 150,000,000 × 38% − 37,060,000 | 19,940,000 | [Art. 55(1), article body with statutory-table text](https://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=280405&efYd=20260701&chrClsCd=010202) |
-| Sixth | 300,000,000 × 40% − 94,060,000 | 25,940,000 | [Art. 55(1), article body with statutory-table text](https://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=280405&efYd=20260701&chrClsCd=010202) |
-| Seventh | 500,000,000 × 42% − 174,060,000 | 35,940,000 | [Art. 55(1), article body with statutory-table text](https://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=280405&efYd=20260701&chrClsCd=010202) |
-| Eighth | 1,000,000,000 × 45% − 384,060,000 | 65,940,000 | [Art. 55(1), article body with statutory-table text](https://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=280405&efYd=20260701&chrClsCd=010202); [official table image: cumulative base](https://www.law.go.kr/LSW/flDownload.do?flSeq=123278409) |
+| First (computed) | 0 | 0 | [Statutory boundaries and rates above](https://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=280405&efYd=20260701&chrClsCd=010202) |
+| Second (computed) | 840,000 | 1,260,000 | [Statutory boundaries and rates above](https://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=280405&efYd=20260701&chrClsCd=010202) |
+| Third (computed) | 6,240,000 | 5,760,000 | [Statutory boundaries and rates above](https://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=280405&efYd=20260701&chrClsCd=010202) |
+| Fourth (computed) | 15,360,000 | 15,440,000 | [Statutory boundaries and rates above](https://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=280405&efYd=20260701&chrClsCd=010202) |
+| Fifth (computed) | 37,060,000 | 19,940,000 | [Statutory boundaries and rates above](https://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=280405&efYd=20260701&chrClsCd=010202) |
+| Sixth (computed) | 94,060,000 | 25,940,000 | [Statutory boundaries and rates above](https://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=280405&efYd=20260701&chrClsCd=010202) |
+| Seventh (computed) | 174,060,000 | 35,940,000 | [Statutory boundaries and rates above](https://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=280405&efYd=20260701&chrClsCd=010202) |
+| Eighth (computed) | 384,060,000 | 65,940,000 | [Statutory boundaries and rates above](https://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=280405&efYd=20260701&chrClsCd=010202) |
+
+The calculations preserve each original quick-deduction equation and show how its cumulative input is obtained:
+
+- First: cumulative base 0; quick deduction 0.
+- Second: cumulative base 0 + (14,000,000 − 0) × 6% = 840,000; quick deduction 14,000,000 × 15% − 840,000 = 1,260,000.
+- Third: cumulative base 840,000 + (50,000,000 − 14,000,000) × 15% = 6,240,000; quick deduction 50,000,000 × 24% − 6,240,000 = 5,760,000.
+- Fourth: cumulative base 6,240,000 + (88,000,000 − 50,000,000) × 24% = 15,360,000; quick deduction 88,000,000 × 35% − 15,360,000 = 15,440,000.
+- Fifth: cumulative base 15,360,000 + (150,000,000 − 88,000,000) × 35% = 37,060,000; quick deduction 150,000,000 × 38% − 37,060,000 = 19,940,000.
+- Sixth: cumulative base 37,060,000 + (300,000,000 − 150,000,000) × 38% = 94,060,000; quick deduction 300,000,000 × 40% − 94,060,000 = 25,940,000.
+- Seventh: cumulative base 94,060,000 + (500,000,000 − 300,000,000) × 40% = 174,060,000; quick deduction 500,000,000 × 42% − 174,060,000 = 35,940,000.
+- Eighth: cumulative base 174,060,000 + (1,000,000,000 − 500,000,000) × 42% = 384,060,000; quick deduction 1,000,000,000 × 45% − 384,060,000 = 65,940,000.
+
+The [same-edition statutory article body](https://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=280405&efYd=20260701&chrClsCd=010202) supplies the boundaries and marginal rates. The [official table image](https://www.law.go.kr/LSW/flDownload.do?flSeq=123278409) is additional read evidence for the cumulative amounts, including the final cumulative base absent from the HTML alternative text. The statutory band/rate rows above remain separate from these computed outputs.
 
 ## The base
 
