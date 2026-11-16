@@ -20,6 +20,7 @@ import importlib.util
 import os
 import re
 import sys
+from urllib.parse import unquote, urlsplit
 
 SCRIPTS_DIR = os.path.dirname(os.path.abspath(__file__))
 REPO_ROOT = os.path.dirname(SCRIPTS_DIR)
@@ -788,7 +789,17 @@ def check_source_hosts(path, text, fm):
             if len(hosts) == 1 and re.search(pattern, label) and not shared and not any(_host_is(hosts[0], d) for d in owners):
                 wrong_authority.append(hosts[0])
         if home and not cross_border and not FOREIGN_LAW_ROW_RE.search(label):
-            for host in hosts:
+            for url, host in zip(urls, hosts):
+                # Sao Tome's Assembly publishes its own Diario on this hosted path:
+                # https://www2.camara.leg.br/saotomeeprincipe/diarios-da-an
+                if home == "ST" and host == "www2.camara.leg.br":
+                    source = urlsplit(url)
+                    if (source.scheme == "https"
+                            and source.netloc.lower() == "www2.camara.leg.br"
+                            and (source.path == "/saotomeeprincipe/diarios-da-an"
+                                 or source.path.startswith("/saotomeeprincipe/diarios-da-an/"))
+                            and not {".", ".."}.intersection(unquote(source.path).split("/"))):
+                        continue
                 tld = host.rsplit(".", 1)[-1]
                 if len(tld) == 2 and tld not in GENERIC_TLDS | NEIGHBOUR_TLDS.get(home, set()) | {home_tld}:
                     foreign.append(host)
