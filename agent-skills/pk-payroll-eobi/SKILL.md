@@ -1,409 +1,167 @@
 ---
 name: pk-payroll-eobi
-description: "ALWAYS read this skill before touching any Pakistan payroll work. Use whenever asked to compute, review, or advise on Pakistan monthly payroll — salary tax withholding under Section 149 of the Income Tax Ordinance 2001, Employees' Old-Age Benefits Institution (EOBI) federal pension contributions, provincial social security (SESSI Sindh, PESSI Punjab, KPESSI Khyber Pakhtunkhwa, BESSI Balochistan), Workers Welfare Fund (WWF), and Workers Profit Participation Fund (WPPF). Trigger on phrases like \"Pakistan payroll\", \"salary tax Pakistan\", \"EOBI Pakistan\", \"PESSI Punjab\", \"SESSI Sindh\", \"PAYE Pakistan\", \"monthly statement Section 149\", \"WWF Pakistan\", \"WPPF Pakistan\", \"Section 165 statement\", \"Karachi payroll\", \"Lahore payroll\", or any request involving running monthly payroll for one or more employees in Pakistan. This skill is the ORCHESTRATOR — it pulls salary bracket rates from `pk-income-tax` and sequences statutory deductions into the correct computation order."
+description: "Use for pakistan integrated payroll and social-contribution run. Read the stated period, eligibility conditions, evidence requirements, owner skills and unresolved boundaries before calculating or preparing a return."
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/pk-payroll-eobi"
   jurisdiction: "PK"
-  tax_year: "2025"
-  last_updated: "2026-07-13"
+  tax_year: "2026"
+  last_updated: "2026-11-14"
 ---
 
-# PK Payroll Eobi
-
-## Pakistan — Payroll (Salary Tax + EOBI + Provincial Social Security) — Skill v1.0
+# Pakistan integrated payroll and social-contribution run v1.1
 
-> **Scope note:** This skill is the **end-to-end monthly payroll orchestrator** for Pakistan. It does NOT redefine the salary tax brackets — those live in `pk-income-tax` and are applied here for monthly withholding under **Section 149** of the Income Tax Ordinance 2001 (ITO 2001). This skill defines the **sequence**, the **EOBI computation**, the **provincial social security routing**, the **WWF/WPPF treatment**, the **remittance calendar**, and the **year-end reconciliation workflow**.
->
-> **Tax year 2025-26 note:** Pakistan's tax year runs **1 July – 30 June**. References to "2025-26" mean the year ending **30 June 2026**. Salary tax brackets are set annually by the Finance Act and are applied via `pk-income-tax`. EOBI rates have remained 5% employer / 1% employee on the federal minimum wage base for an extended period; provincial social security thresholds vary by province and are tracked here as ranges, not point estimates, because they are revised by provincial notification.
+> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
-## Rates and thresholds
+## Who this applies to
 
-> Items flagged for further clarification are tracked separately and excluded here.
-> This block is generated from verified `skill_facts` — edit the facts, not the prose.
+End-to-end payroll working papers for Pakistan employers in 2026: salary income-tax withholding, EOBI, provincial employee social security and separate employer-side WWF/WPPF flags. Tax year 2026 salary tables apply to 1 July 2025-30 June 2026. `pk-income-tax` owns the salary table, `pk-payroll` its payment adjustment and `pk-social-contributions` coverage/base evidence. Never apply a tax-year 2026 table to a later payment without checking the later law.
 
-### pk-payroll-eobi
+Quick answer: determine gross taxable pay and annual tax forecast, separate employee deductions from employer costs, then reconcile each authority's remittance and reporting. Employer pension/social/welfare costs are not an employee withholding-tax credit.
 
-- **Employer contribution** — 5% of federal minimum wage  _(Employees' Old-Age Benefits Act 1976)_
-- **Employee contribution** — 1% of federal minimum wage  _(Employees' Old-Age Benefits Act 1976)_
-- **Contribution base** — Rs. 40,000 per month  _(Federal notification)_
-- **Coverage threshold** — Mandatory at ≥ 5 employees  _(EOBI Act 1976)_
-- **Monthly contribution (PR-03/PR-04)** — Due 15th of following month  _(EOBI)_
-- **SESSI (Sindh)** — 6% of insured worker's wage  _(Sindh Employees' Social Security Ordinance 1965)_
-- **PESSI (Punjab)** — 6% of insured worker's wage  _(Punjab adapted 1965 Ordinance)_
-- **KPESSI (KP)** — 6% (verify)  _(KP adapted 1965 Ordinance)_
-- **BESSI (Balochistan)** — 6% (verify)  _(Balochistan adapted 1965 Ordinance)_
-- **Insured-worker threshold** — Provincial minimum wage (PKR 40,000 for Punjab, Sindh, KP; PKR 37,000 for Balochistan)  _(Provincial notification)_
-- **Routing** — To the province where the establishment/worker is employed  _(Provincial Ordinances)_
-- **Monthly withholding mechanic** — Estimated annual salary tax / 12 (salary brackets from pk-income-tax)  _(ITO 2001 §149)_
-- **§165 monthly statement** — 165 is filed quarterly and last date is 20 of the month following the quarter  _(ITO 2001 §165)_
-- **Annual reconciliation + employee certificate** — By 31 July (Rule 42 certificate to each employee)  _(ITO 2001 §149; Rule 42)_
-- **Workers Welfare Fund (WWF)** — 2% of accounting profit or taxable income, whichever is higher.  _(Workers Welfare Fund Ordinance 1971)_
-- **Workers Profit Participation Fund (WPPF)** — 5% of profit before tax. Applies if: 50+ employees, OR paid-up capital/fixed assets exceed statutory provincial thresholds.  _(Companies Profits (Workers' Participation) Act 1968)_
+## Rates, bands and thresholds
 
-## Section 1 — Quick reference: contribution table
+| Component and conditions | Confirmed rule/boundary | Official source |
+|---|---|---|
+| Salary withholding | A/B uses estimated Salary only as B, with tax plus applicable s.4AB in A; actual permitted adjustments apply. Enacted Finance Act 2024 amendment 22(b) and current s.149(2) put s.4AB in A; the 2025 consolidation misprints it in B. Other-head income does not switch employer withholding to business slabs; retain the actual period's salary table | [FA 2024 amendment 22(b)](https://download1.fbr.gov.pk/Docs/2024630146346801FinanceAct-2024.pdf); [current ITO s.149(2)](https://download1.fbr.gov.pk/Docs/2026724177725705IncomeTaxOrdinanace2001.pdf) |
+| EOBI shares for insured workers | Current ministry description: employer 5%,employee 1%,total 6% of federal-notified minimum-wage base; numeric base still needed (contribution figures in words on the page) | [Ministry FAQ 5](https://ophrd.gov.pk/Detail/OGI0NzE3NGEtMzllOS00NjUwLTgzYjgtM2QwNzY4OGNkZWYy) |
+| EOBI general threshold conflict | Current administrative reply says 10+ or notified establishments, voluntary smaller; consolidated s.1(4) prints 5 with Finance Act 2008 footnote, prior 12-month/continued-coverage rules The general 10-person threshold appears in words and numerals in the parliamentary reply; the consolidated 5-person and prior 12-month quantities are in words on the page. | [Parliament pp 48-49](https://na.gov.pk/uploads/documents/6ae817d42a069_262.pdf); [Act s.1(4)](https://pakistancode.gov.pk/pdffiles/administratorf3be1ec8d21dfebb9c5d1733f43cffe6.pdf) |
+| Employer share | Cannot be recovered from employee wages | [Act s.9(3)](https://pakistancode.gov.pk/pdffiles/administratorf3be1ec8d21dfebb9c5d1733f43cffe6.pdf) |
+| Quarterly withholding statements | Current s.165 schedule:20 April,20 July,20 October,20 January after respective quarters | [ITO s.165(2)](https://download1.fbr.gov.pk/Docs/2026724177725705IncomeTaxOrdinanace2001.pdf) |
 
-The order matters because **only employee EOBI is deductible from salary**, and **none of the provincial social security contributions reduce the employee's chargeable salary for Section 149 purposes** unless paid by the employee (provincial social security is typically employer-only).
+## The base
 
-**Contribution table**  _(—)_
+1. Establish employer/employee identities, NTN/CNIC records, legal form, establishment/worker locations, actual headcount/history, employment terms, gross pay/perquisites, bonuses/arrears and year-to-date salary/deductions. Capture EOBI/provincial registrations and actual wage/base notices. An absent high-earner NTN needs registration analysis; do not invent a second identifier or a rejection rule.
+2. Compute the period's estimated annual salary tax using `pk-payroll` and `pk-income-tax`, documenting previous/current pay, allowable credits and s.149 adjustments. Employer costs do not automatically reduce the employee's chargeable salary. Do not subtract an employee EOBI contribution from the salary-tax base merely because it is deducted from net pay.
+3. Resolve EOBI applicability, previous/voluntary/notified cover and base. Do not automatically impose coverage at 5 employees from the old text or cancel cover after a fall in headcount. Apply the supported employer/employee shares per insured person; the ministry uses the federal-notified minimum wage, not the whole salary or a provincial wage substituted without authority. [Act ss.1,9/9 B; ministry FAQ 4-5](https://pakistancode.gov.pk/pdffiles/administratorf3be1ec8d21dfebb9c5d1733f43cffe6.pdf).
+4. Test SESSI(Sindh),PESSI(Punjab),KPESSI(KP) or BESSI(Balochistan) using the specific law/coverage/continued-insurance/wage-ceiling/base/rate/date. Route by actual establishment and employment facts; domicile alone does not decide it. Medical, sickness, maternity, injury and death-benefit eligibility also needs the actual scheme conditions. Multiple-province branches need separate analysis; do not assume cross-province credits or insurance ends instantly when wages rise.
+5. Keep provincial employer contributions separate from employee deductions, subject to the actual scheme. The old universal 6%-of-actual-wage formula and 40,000/37,000 ceilings are not confirmed for every province/period. Do not over-contribute on an assumption that a refund is harmless or guaranteed.
+6. Flag WWF and WPPF as separate employer/profit-side obligations. Preserve federal/provincial jurisdiction, covered entity/industrial status, profit/base, worker-distribution ceilings and residual linkage questions. Do not deduct a supposed 2% WWF or 5% WPPF from an employee payslip or assume headcount 50 alone settles liability. Refer the operative law/period and corporate specialist analysis; this skill supplies no unverified universal computation.
+7. Produce the gross-to-net payslip, employer-cost schedule, authority-by-authority payment/return calendar, source documents and year-end reconciliation. Reconcile employees and periods to payments/certificates, with unknown coverage/base amounts explicitly outstanding rather than zero.
 
-| Component | Rate | Base | Paid by | Effect on salary tax base |
-| --- | --- | --- | --- | --- |
-| **Salary tax (Sec 149 ITO 2001)** | Slab rates — see `pk-income-tax` | Annualised taxable salary | Employee (withheld at source) | — |
-| **EOBI — Employee** | 1% | Federal minimum wage (currently Rs. 40,000/month – verify current notification) | Employee | **No reduction** of Section 149 base (statutory deduction, not allowed against salary income) |
-| **EOBI — Employer** | 5% | Federal minimum wage | Employer | Employer cost only |
-| **SESSI (Sindh)** | 6% | Wage of insured worker (workers earning ≤ provincial threshold) | Employer-only | Employer cost only |
-| **PESSI (Punjab)** | 6% | Wage of insured worker (subject to Punjab ESSI Ordinance threshold) | Employer-only | Employer cost only |
-| **KPESSI (Khyber Pakhtunkhwa)** | 6% (verify current notification) | Wage of insured worker | Employer-only | Employer cost only |
-| **BESSI (Balochistan)** | 6% (verify current notification) | Wage of insured worker | Employer-only | Employer cost only |
-| **WWF (Workers Welfare Fund)** | 2% | Taxable profit of company | Employer-only | Corporate-tax-side; not a payroll deduction |
-| **WPPF (Workers Profit Participation Fund)** | 5% | Profit before tax (companies with 50+ employees, or threshold under provincial law) | Employer-only | Distributed to workers; not a salary-tax-side deduction |
+## Deadlines and filing
 
-> **Conservative default:** When in doubt whether a provincial social security scheme applies (because the employee's wage hovers around the provincial threshold), **include the contribution** and flag for reviewer. Under-contribution triggers provincial inspector recovery + penalty; over-contribution is harmless and can be reclaimed on later reconciliation.
+For s.165 use the sourced quarterly schedule. Withholding-tax deposit, deduction certificate, EOBI registration/challan/insured-person schedule and provincial contribution/return dates are separate requirements. Obtain each operative calendar; the old 15th-of-month deposit and 31 July annual-reconciliation claims are not blanket rules. Act s.11 requires employer registration particulars within 30 days after applicability (in words on the page); actual applicability still requires the threshold conflict/notification analysis. [EOB Act ss.10-11](https://pakistancode.gov.pk/pdffiles/administratorf3be1ec8d21dfebb9c5d1733f43cffe6.pdf); [ITO s.165](https://download1.fbr.gov.pk/Docs/2026724177725705IncomeTaxOrdinanace2001.pdf).
 
-- **Provincial routing rule of thumb** — the provincial social security institution of the **province where the establishment is located / where the worker is employed** receives the contribution — not the province of the worker's domicile.
+Retain the employer's tax payment instructions/CPRs, EOBI challan and insured-person schedule (historically PR-03/PR-04, current form not confirmed), and provincial records separately. Annual sums must reconcile to actual monthly insured-person records, not simply current headcount multiplied across the whole year. Issue the actual required employee deduction certificate; do not promise a guessed Rule 42 date.
 
-## Section 2 — Required inputs & refusal catalogue
 
-### 2.1 Inputs required to run a Pakistan payroll
+### Deposit, salary statement and certificate rules now sourced
 
-**Inputs required to run a Pakistan payroll**
+Income Tax Rules 43 requires federal/provincial government deposit on the day of collection/deduction; other persons deposit within 7 days from each week ending Sunday, with nonresident overseas remittances paid before remitting abroad. There is no separate other-agent fortnight rule. Rule 44(5) requires the s.149 deductor's **annual salary statement by 31 July** after financial-year end, Part IX Second Schedule, separately from quarterly s.165 reporting. Rule 44(4) requires reconciliation when the Commissioner requires it, not a universal annual reconciliation automatically replacing that salary statement. The 7-day deposit period is in words on the page. [Rules 43/44](https://download1.fbr.gov.pk/Docs/20269211394336470IncomeTaxRules2002.pdf).
 
-| Input | Source | Notes |
-| --- | --- | --- |
-| NTN (National Tax Number) — employer | FBR | Required on every Section 149 statement |
-| CNIC of each employee | Employee record | Used as the FBR identifier where no NTN is held |
-| NTN of each employee (if held) | Employee record | Required for higher earners |
-| Province where the establishment is registered | Employer record | Determines SESSI / PESSI / KPESSI / BESSI routing |
-| EOBI registration number | EOBI portal | Required if establishment has ≥ 5 employees (lower in some sectors) |
-| Provincial social security registration | Provincial portal | Separate registration per province |
-| Gross monthly emolument breakdown | HR / contract | Basic + allowances + perquisites |
-| Perquisites in cash and kind | Accounts payable | Must be valued under Section 13 ITO 2001 |
-| Federal minimum wage in force (for EOBI) | Federal notification | Verify current value — track Finance Act and notifications |
-| Provincial wage threshold for ESSI coverage | Provincial notification | Determines whether the worker is "insured" |
-| Whether employer has ≥ 50 employees (for WPPF) | HR headcount | WPPF applies only above the threshold |
-| Whether employer is a company subject to WWF | Corporate tax status | WWF is corporate-side, computed in the tax return |
+Rule 42's non-salary collection/deduction certificate uses Part VII Second Schedule within 15 days after financial-year end or business discontinuation; an earlier in-year request is answered within 7 days. Duplicate/lost-certificate and serial-number rules apply. This non-salary rule is not an employer salary-certificate deadline. Verify actual salary certificate entitlement/form under the operative law rather than revive omitted rule 41. The 15-day and 7-day periods are in words on the page. [r 42](https://download1.fbr.gov.pk/Docs/20269211394336470IncomeTaxRules2002.pdf).
 
-### 2.2 Refusal catalogue — out of scope
+## Penalties and interest
 
-**Refusal catalogue — out of scope**
+Failure to deduct/deposit is assessed under ITO ss.161/182/205 using the actual default period. EOBI/provincial late contribution has its own law and recovery provisions. The old claim that EOB Act s.12 automatically imposes personal director default liability is not supported by that section's employer-record inspection text. Refer default recovery, notices and liability disputes; no unsourced fixed penalty or surcharge is adopted.
 
-| Scenario | Action |
-| --- | --- |
-| Non-resident employees / split-pay / treaty relief | Refer to a qualified Pakistan tax consultant — treaty analysis required |
-| Expatriates on Pakistan assignment with home-country payroll continuation | Out of scope; bespoke |
-| Employee stock options, RSUs, share-based payments | Out of scope — Section 14 ITO valuation required by specialist |
-| Termination payments, golden handshake, gratuity above statutory exemption | Flag — Section 12(6) and Sixth Schedule exemptions need legal review |
-| Backdated salary spanning two tax years (Pakistan tax year ends 30 June) | Refer to specialist — re-opening of prior-year Section 165 statement may be needed |
-| Provident Fund (recognised vs unrecognised) treatment | Out of scope here — refer to specialist; the Sixth Schedule rules on PF contributions and accumulated balances are complex |
-| Directors' fees not run through payroll | Out of scope — covered by separate withholding under ITO Part III |
-| Casual / piece-rate workers under the Industrial Relations Acts | Flag for reviewer — provincial coverage differs |
+## Cross-border points
 
-## Section 3 — Salary tax (Section 149 ITO 2001) — monthly withholding
+Preserve specialist referrals for non-resident/split/home-country payroll, expatriates, treaties, foreign currency, stock options/RSUs, termination/gratuity/golden handshake, provident-fund recognition, backdated pay across tax years, directors' fees outside payroll and casual/piece-rate coverage. Joining/leaving/bonus adjustments and perquisite valuation under s.13 need actual full-year evidence and operative provisions; a foreign-currency salary uses s.71 conversion evidence. No blanket same-currency contractual rate override is given.
 
-### 3.1 Statutory basis
 
-- **Statutory basis** — **Section 149 of the Income Tax Ordinance 2001** requires every employer paying salary to deduct tax at the time of payment, on the basis of the **estimated annual salary** for the tax year (1 July – 30 June). The bracket rates are set in the **First Schedule, Part I, Division I** of the ITO 2001, updated each year by the Finance Act. **Do not embed the rates here** — pull them from `pk-income-tax`, which is the canonical source.  _(Section 149 of the Income Tax Ordinance 2001)_
+### Sindh coverage requires a separate test
 
-### 3.2 Monthly withholding mechanic
+The Sindh 2021 amendment adds self-employed workers to the employee definition and inserts s.20A: an employee other than one employed by an employer pays a fixed **PKR 1,500 monthly**, subject to prescribed conditions. The definition includes daily-wage, construction, home-based, transport, fisheries, agricultural, seasonal and shops/commercial-establishment workers. This is a separate provincial route; absence of employees does not establish absence of all social-security obligations. Obtain the implementing conditions and actual category/registration before charging a solo freelancer. The 1,500 amount is in words on the page. [2021 amendment ss.2-3](https://www.sessi.gov.pk/assets/files/content/2026/01/Sindh-Act-No.XIX-of-2021.pdf).
 
-- **Monthly withholding mechanic** — 1.  Estimate annual taxable salary: AnnualTaxable = (Gross monthly × number of months remaining) + perquisites for the year + bonuses expected in the year − exemptions (Sixth Schedule items, e.g. some allowances) − allowable deductions for salaried persons (see pk-income-tax) 2.  Apply the First Schedule salary brackets (from pk-income-tax) to AnnualTaxable → AnnualTax 3.  Subtract any tax credits the employee has notified to the employer (Section 60 to 65 credits — e.g. donations under Sec 61, investment in approved pension fund under Sec 63, etc.; only those notified in writing) → AnnualTaxNet 4.  MonthlyWithholding = AnnualTaxNet / 12 (or / remaining months for a mid-year joiner) 5.  Adjust for under/over-withholding from earlier months in the same tax year — Section 149(3) permits this.
+The 2018 amendment retains existing insurance when wages exceed the upper limit. It defines the lower wage limit by the prevailing Sindh minimum wage and the upper limit as that minimum plus **PKR 5,000**; the self-assessment scheme uses **6% of the lower limit** per secured employee. Read the actual scheme and s.20 provisos before choosing a base: these are not authority for a universal 6%-of-actual-pay rule. The current minimum-wage notification and applicability remain outstanding. The 5,000 amount and 6% contribution are in words on the page. [2018 amendment ss.4(ii),(vi),8-9,20](https://www.sessi.gov.pk/assets/files/content/2026/01/SINDH-EMPLOYEES-SOCIAL-SECURITY-AMENDMENT-ACT-2018.pdf).
 
-> **Note on bonuses and arrears:** Lump-sum bonuses, arrears and one-off payments must be **annualised into the estimated annual salary** and reflected in the recalculated monthly withholding from the month of payment forward — not taxed at marginal rate in a single month. This avoids over-withholding spikes.
 
-### 3.3 Section 165 monthly statement
+### Other provincial contribution branches
 
-- **Filing requirement** — Every employer must file a **quarterly statement of tax withheld under Section 165** (and the related Income Tax Rules) by the **20th of the month following the quarter**, via the **FBR IRIS portal**. The statement covers all withholding categories, including Section 149 salary tax.
+KP Act 2021 s.20 requires employer 6% of wages for covered employees, capped by the minimum wage or s.12 determination, with no recovery of employer contribution from wages. Initial wage eligibility under s.2(k)(e) is 60% above the notified minimum, and existing secured employees continue despite a later increase. Thus eligibility ceiling and contribution base differ. Section 22 requires employer particulars within 60 days of applicability. Obtain actual current notification/establishment coverage before computing. [KP Act ss.2(k),20/22](https://kpcode.kp.gov.pk/uploads/THE_KHYBER_PAKHTUNKHWA_EMPLOYEES_SOCIAL_SECURITY_ACT_2021.pdf), read 2026-11-14; figures in words on the page are shown as numerals.
 
-**Section 165 monthly statement fields**
+Balochistan Act 2022 s.20 uses employer 6% with upper-limit cap and prevailing-minimum-wage proviso; s.75 lower limit is the notified minimum, upper is minimum plus 15%. Section 21 self-assessment uses 6% of lower limit per secured employee and a separate 60 monthly employee share. Sindh's self-assessment employee share is 40 monthly under s.21(3), separate from conditional self-employed 1,500 and employer-share recovery prohibition. These province-specific branches replace the universal “no employee ESSI deduction” assumption; they do not establish current numerical wage notifications or every professional's coverage. [Balochistan Act ss.20/21/75](https://pabalochistan.gov.pk/storage/4287/2022-11-28_10_00_34_34dbd.pdf); [Sindh Act ss.20/21](https://www.sessi.gov.pk/assets/files/content/2026/01/Sindh-Employees-Social-Security-Act-2016-with-rules-and-ammendments.pdf), read 2026-11-14 for these provisions; worded figures shown as numerals.
 
-| Field | Content |
-| --- | --- |
-| Employer NTN | Withholding agent identifier |
-| Employee details | Name, CNIC, NTN (if any), gross salary, tax withheld |
-| Payment date | For each salary payment |
-| Tax challan / CPR number | Proof of deposit with FBR |
 
-### 3.4 Annual employer certificate
+### Sindh employer-profit funds: keep the actual coverage tests
 
-- **Annual employer certificate obligations** — By **31 July** following the close of the tax year (30 June), every employer must: 1. File the **annual Section 149 / 165 reconciliation** on IRIS. 2. Issue each employee a **Certificate of Tax Collected/Deducted (Form prescribed under Rule 42 of the Income Tax Rules 2002)** showing gross salary, tax deducted by month, and CPR references — the employee uses this to file their own annual return.  _(Rule 42 of the Income Tax Rules 2002)_
+Sindh WPPF scheme paragraph 1 covers industrial-undertaking companies meeting **any** of:100 workers at any time in Pakistan, paid-up capital≥2,000,000 or fixed assets at cost≥4,000,000. For companies established from 1 July 2006 the latter tests become 5,000,000 and 20,000,000; notified other companies can also be covered. Act s.3 requires 5% of profits to the Fund and audited accounts within 9 months after year-end, subject to adjustment and SRB extension up to 90 days. This is not a universal 50-worker rule or a deduction from employee pay. Verify statutory profit, worker distribution/categories/ceilings and residual transfer separately before finalising. [Sindh Companies Profits(Workers Participation)Act ss.2/3 and Scheme 1](https://www.srb.gos.pk/srb/wp-content/uploads/2020/07/ARM-6.pdf).
 
-### 3.5 Late-payment / late-statement penalties (summary)
+Sindh WWF Act s.5 covers industrial establishments located in Sindh with total income≥500,000 for the specified account periods, contribution 2%. Section 2(l)uses higher book profit/declared-return income where a return is required,4% of statement receipts in the stated non-return branch, and combines the applicable mixed branches. The ordinary payment date is the income-return due date; the nonfiler proviso uses provisional accounting profit before tax within 30 days of account close. Assessments/adjustments and particular covered-establishment definitions still matter. Do not assume every company or every freelancer is covered, or net WWF against WPPF without the actual linkage/distribution law. [Sindh WWF Act ss.2(l)/5](https://www.sindhlaws.gov.pk/DownloadDocument.aspx?Lang=EN&PubID=PUB-NEW-26-000098). Both sources read 2026-11-14 for these operative conditions; worded figures shown as numerals.
 
-**Late-payment / late-statement penalties (summary)**
+## Two worked examples that recompute
 
-| Default | Consequence |
-| --- | --- |
-| Late deposit of withheld tax | Default surcharge under Sec 205 (KIBOR + 3%) + recovery |
-| Late filing of Section 165 statement | Penalty under Sec 182 — PKR 5,000 per day of default, subject to maxima |
-| Failure to deduct | Employer personally liable for the tax + default surcharge (Sec 161) |
+### Earlier Karachi fintech case, retained and corrected
 
-Full detail in `pk-income-tax`.
+The earlier Pakistani-citizen software developer, resident in Karachi (Sindh), at a Karachi fintech has CNIC/NTN, earns PKR 250,000 monthly, has no bonus/perquisites in the stated month, and works for an EOBI-registered employer with 35 staff. Assume the tax-year 2026 salary table, no other salary/benefits/credits, established EOBI insurance and **hypothetical verified base 40,000**. This 40,000 is not a current legal base claim. Provincial coverage/base is not established by the old 50,000 placeholder or by salary alone, so no provincial liability is certified here.
 
-## Section 4 — EOBI — federal pension scheme
-
-### 4.1 Statutory basis
-
-- **Statutory basis** — **Employees' Old-Age Benefits Act 1976** (federal). Administered by the **Employees' Old-Age Benefits Institution (EOBI)**, an autonomous federal body. After the 18th Constitutional Amendment, social security was devolved to the provinces, but **EOBI continues to operate federally** pending substitute provincial pension legislation; courts have repeatedly upheld this. Treat EOBI as **federal and mandatory** in all four provinces and Islamabad Capital Territory.  _(Employees' Old-Age Benefits Act 1976)_
-
-### 4.2 Coverage threshold
-
-**Coverage threshold table**
-
-| Establishment size | EOBI applicability |
-| --- | --- |
-| ≥ 5 employees | **Mandatory** registration and contribution |
-| < 5 employees in some specified industries (e.g. shops & establishments under provincial law) | May still be covered — verify under the EOBI Act and current notifications |
-| Once covered, always covered | Even if headcount later falls below 5, registration is retained |
-
-### 4.3 Contribution rates and base
-
-**Contribution rates and base**
-
-| Party | Rate | Base |
-| --- | --- | --- |
-| Employer | **5%** | Federal minimum wage (notified periodically — **verify current notification each cycle**) |
-| Employee | **1%** | Federal minimum wage |
-
-> **Important — the base is the minimum wage, not the actual salary.** EOBI contributions are computed on the **prevailing federal minimum wage** (as notified), capped at that figure regardless of how much the employee actually earns. Track the current notification: at recent notifications the minimum wage figure was PKR 32,000 → PKR 37,000 → PKR 40,000 (and may be revised again). **Confirm the figure in force in the month of the contribution.**
-
-### 4.4 Computation
-
-- **EOBI computation formula** — EOBI Employer monthly  = 5% × MinimumWage EOBI Employee monthly  = 1% × MinimumWage  (deducted from employee's salary) Total EOBI monthly     = 6% × MinimumWage  per insured employee
-
-### 4.5 Filing and payment
-
-**Monthly EOBI contribution (PR-03 challan + PR-04 schedule of insured persons)**
-
-| Item | Recipient | Deadline | Channel |
-| --- | --- | --- | --- |
-| Monthly EOBI contribution (PR-03 challan + PR-04 schedule of insured persons) | EOBI via designated banks | **15th of the following month** | EOBI online portal `eobi.gov.pk` + bank challan |
-
-### 4.6 Penalty
-
-- **EOBI penalty** — Late payment attracts a **monthly default surcharge** under the EOBI Act + recovery as arrears of land revenue. Long-running default also exposes directors personally under Section 12 EOBI Act.  _(Section 12 EOBI Act)_
-
-## Section 5 — Provincial social security schemes
-
-Each province operates its own **Employees Social Security Institution** under provincial law (post-18th Amendment). The schemes provide **medical care, sickness benefits, maternity, injury, and death benefits** to "insured" workers — i.e. workers whose monthly wage is at or below a provincial threshold.
-
-### 5.1 The four provincial institutions
-
-**The four provincial institutions**
-
-| Province | Institution | Statute | Threshold (verify current notification) | Rate (employer-only) |
-| --- | --- | --- | --- | --- |
-| **Sindh** | **SESSI** (Sindh Employees Social Security Institution) | Provincial Employees' Social Security Ordinance 1965 as adapted by Sindh | Wage threshold: PKR 40,000/month (Punjab, Sindh, KP); PKR 37,000/month (Balochistan) — track current provincial notifications | **6%** of wage of insured employee |
-| **Punjab** | **PESSI** (Punjab Employees Social Security Institution) | Provincial Employees Social Security Ordinance 1965 (Punjab Adapted) | Punjab-notified threshold — track current PESSI notification | **6%** of wage of insured employee |
-| **Khyber Pakhtunkhwa** | **KPESSI** | KP adaptation of the 1965 Ordinance | KP-notified threshold | **6%** (verify) |
-| **Balochistan** | **BESSI** | Balochistan adaptation of the 1965 Ordinance | Balochistan-notified threshold | **6%** (verify) |
-
-> **Threshold caveat:** the wage threshold for "insured person" status is **revised by provincial notification**. The rule is: if the employee's **gross wage ≤ threshold in force**, the worker is an "insured person" and the employer must contribute **6% of that worker's actual wage** to the provincial institution. Workers above the threshold are typically excluded (but check the latest notification — some provinces have extended coverage to all workers).
-
-### 5.2 Computation
-
-- **Provincial social security computation** — ProvincialSS_monthly = 6% × Wage(insured employee) (per worker, for each insured worker)
-- **Employer-only, no reduction, routing** — - **Employer-only** — there is no employee share. - **Does NOT reduce the employee's salary tax base** because it is not deducted from the employee. - Routed to the **province where the establishment is located** — i.e. the place of employment, not the worker's domicile.
-
-### 5.3 Filing and payment
-
-**Filing and payment table**
-
-| Item | Deadline | Channel |
-| --- | --- | --- |
-| Monthly contribution + return of insured persons | Typically **by the 15th** of the following month (verify per-province) | Provincial ESSI portal + designated banks |
-| Annual reconciliation | Per provincial rules — typically by 31 July | Provincial ESSI portal |
-
-### 5.4 Penalty
-
-Each province has its own penalty regime, typically:
-
-- Default surcharge at a notified monthly rate.
-- Recovery by the provincial Social Security Department as arrears of land revenue.
-- Criminal liability of directors / partners under the 1965 Ordinance for sustained default.
-
-### 5.5 Inter-province workers
-
-- **Inter-province workers** — If an establishment has branches in more than one province, contributions are made to **each provincial institution for the workers employed at the establishment in that province**. There is no cross-province credit — each province collects on its own workers.
-
-## Section 6 — Other employer-side deductions: WWF and WPPF
-
-These are **corporate-side** levies, not strictly payroll, but they are commonly run through the HR / finance interface because the WPPF distribution flows to the workers.
-
-### 6.1 Workers Welfare Fund (WWF)
-
-**Workers Welfare Fund (WWF) table**
-
-| Element | Detail |
-| --- | --- |
-| Statute | **Workers Welfare Fund Ordinance 1971** (federal; provincial variants also enacted post-18th Amendment — see caveat) |
-| Rate | **2% of accounting profit or taxable income, whichever is higher** (companies) |
-| Base | Accounting profit or taxable income of the establishment, whichever is higher |
-| Paid by | **Employer only** — not deducted from employee |
-| Routed to | Federal WWF or provincial WWF, depending on the establishment's jurisdiction and current case law |
-| Frequency | Annual — assessed via the corporate tax return |
-
-> **Jurisdictional caveat:** Post-18th Amendment, Sindh, Punjab, KP and Balochistan enacted their own **Provincial Workers Welfare Fund** statutes. Supreme Court of Pakistan judgments (notably *Workers Welfare Funds v Various* line of cases) have produced complex routing rules between the federal and provincial WWFs depending on the period and the entity. **Defer the WWF jurisdiction question to the corporate tax skill / a qualified Pakistani tax consultant** — flag any direct WWF computation request to a reviewer.
-
-### 6.2 Workers Profit Participation Fund (WPPF)
-
-**Workers Profit Participation Fund (WPPF) table**
-
-| Element | Detail |
-| --- | --- |
-| Statute | **Companies Profits (Workers' Participation) Act 1968** |
-| Threshold | Companies with **50+ employees**, OR where paid-up capital/fixed assets exceed statutory provincial thresholds |
-| Rate | **5% of profit before tax** |
-| Distribution | Distributed to eligible workers in accordance with the Act + Scheme (subject to per-worker ceiling) |
-| Residual | Any undistributed balance is transferred to the WWF |
-| Paid by | **Employer only** |
-| Frequency | Annual — within nine months of close of accounting year (per the Act and Scheme) |
-
-> **Workers profit participation interacts with WWF** — undistributed WPPF flows to WWF. This linkage is corporate-tax-side and is handled in the corporate compliance skill, not here.
-
-## Section 7 — Worked example
-
-**Scenario:** Software developer, **Karachi (Sindh) resident**, employed at a Karachi-based fintech with 35 employees. Gross monthly emolument **PKR 250,000**. Pakistani citizen, CNIC and NTN held. Employer is EOBI-registered. Tax year 2025-26.
-
-**Assumed inputs (verify each from current notifications and `pk-income-tax`):**
-
-- Federal minimum wage in force for EOBI: **PKR 40,000/month** (placeholder — verify current notification)
-- SESSI wage threshold for "insured person": **PKR 50,000/month** (placeholder — verify Sindh notification). At PKR 250,000/month the employee is **above the threshold → not an insured person → no SESSI contribution payable**.
-- Salary tax brackets: pulled from `pk-income-tax` (do **not** rely on the numbers below for any other purpose).
-- No bonus or perquisites in this month.
-
-### A — Salary tax (Section 149) — illustration only
-
-- **Salary tax illustration** — Annual taxable salary = 250,000 × 12         = 3,000,000 Apply 2025-26 First Schedule salary brackets (from pk-income-tax). For illustration only (DO NOT use as authoritative — pk-income-tax governs): Slice 1:   0 –   600,000        @  0%     =        0 Slice 2:   600,001 – 1,200,000  @  5%     =   30,000 Slice 3:   1,200,001 – 2,200,000 @ 15%    =  150,000 Slice 4:   2,200,001 – 3,000,000 @ 25%    =  200,000 Annual tax (illustrative)                  =  380,000 Monthly withholding (illustrative)         =   31,667
-
-> The bracket numbers above are **illustrative placeholders** — the real computation MUST be done by `pk-income-tax`, which carries the Finance Act 2025 rates.
-
-### B — EOBI
-
-- **EOBI computation for example** — EOBI Employee (1% × 40,000)        =   400 EOBI Employer (5% × 40,000)        = 2,000
-
-### C — SESSI (Sindh)
-
-Employee's wage PKR 250,000 > assumed threshold PKR 50,000 → **not insured** → **no SESSI contribution**.
-
-If the same employee earned PKR 40,000:
-```
-SESSI Employer (6% × 40,000)       = 2,400      (employer-only)
+```oa-check
+name: Karachi salary and separate EOBI shares
+inputs:
+  monthly_salary: 250000
+  months: 12
+  assumed_eobi_base: 40000
+steps:
+  - annual_salary: monthly_salary * months
+  - annual_salary_tax: 116000 + (annual_salary - 2200000) * 0.23
+  - monthly_salary_tax: annual_salary_tax / months
+  - employee_eobi: assumed_eobi_base * 0.01
+  - employer_eobi: assumed_eobi_base * 0.05
+  - net_before_other_deductions: monthly_salary - monthly_salary_tax - employee_eobi
+  - employer_cost_before_other_levies: monthly_salary + employer_eobi
+expected:
+  annual_salary: 3000000
+  annual_salary_tax: 300000
+  monthly_salary_tax: 25000
+  employee_eobi: 400
+  employer_eobi: 2000
+  net_before_other_deductions: 224600
+  employer_cost_before_other_levies: 252000
 ```
 
-### D — WWF / WPPF
+The old 217,963 net combined a stale 31,667 tax with a 370 deduction despite its 400 calculation. The corrected conditional net is 224,600; the actual payroll still needs the real base and full employee facts. A worker paid 40,000 also needs actual provincial insurance/rate evidence before adopting the earlier 2,400 social-security amount.
 
-Not run through this payslip — computed annually on profit-before-tax in the corporate tax return.
+```oa-check
+name: Authority remittance reconciliation
+inputs:
+  supported_salary_tax: 25000
+  supported_employee_eobi: 400
+  supported_employer_eobi: 2000
+  fbr_paid: 24000
+  eobi_paid: 2400
+steps:
+  - eobi_due: supported_employee_eobi + supported_employer_eobi
+  - fbr_shortfall: supported_salary_tax - fbr_paid
+  - eobi_difference: eobi_paid - eobi_due
+  - combined_supported_due: supported_salary_tax + eobi_due
+expected:
+  eobi_due: 2400
+  fbr_shortfall: 1000
+  eobi_difference: 0
+  combined_supported_due: 27400
+```
 
-### E — Payslip summary (illustrative)
+Do not net the 1,000 FBR shortfall against an unrelated authority or recover employer cost from employees.
 
-**Payslip summary**
+## Ask the client first
 
-| Item | PKR |
-| --- | --- |
-| Gross monthly emolument | 250,000 |
-| − Salary tax withheld (Sec 149) | (31,667) *illustrative — pk-income-tax governs* |
-| − EOBI employee | (370) |
-| **Net pay** | **217,963** |
+Obtain every input listed in the method and actual authority notices/payments/returns. Refuse final payroll without the applicable tax year, salary forecast, insured-worker decision/base and necessary identifiers. For an uncertain contribution keep a pending item; do not invent a higher rate or declare no liability. A solo freelancer's later hires trigger the full coverage assessment. WWF/WPPF, multi-province and default questions go to the relevant specialist before finalisation.
 
-### F — Remittances arising from this payslip
+## Sources
 
-**Remittances table**
 
-| Recipient | Amount PKR | Deadline |
-| --- | --- | --- |
-| FBR (Section 149 salary tax) | 31,667 | Deposit by **15th of following month** via challan; Section 165 statement by **20th of the month following the quarter** on IRIS |
-| EOBI (employee 400 + employer 2,000) | 2,400 | **15th of following month** — PR-03 / PR-04 via EOBI portal and bank |
-| SESSI | n/a | — |
 
-## Section 8 — Filing and payment calendar
 
-### 8.1 Monthly cycle
 
-**Monthly cycle table**
+| Source and actual portions read | Official URL | Read on |
+|---|---|---|
+| Read for Sindh WWF s.2(l)/5 and WPPF s.2/3/Scheme 1 coverage/contribution/payment branches on 2026-11-14 | https://www.sindhlaws.gov.pk/DownloadDocument.aspx?Lang=EN&PubID=PUB-NEW-26-000098; https://www.srb.gos.pk/srb/wp-content/uploads/2020/07/ARM-6.pdf | 2026-11-14 |
+| Read for KP Act ss.2(k)(e),20/22, Balochistan Act ss.20/21/75 and Sindh compilation contribution ss.20/21 on 2026-11-14 | https://kpcode.kp.gov.pk/uploads/THE_KHYBER_PAKHTUNKHWA_EMPLOYEES_SOCIAL_SECURITY_ACT_2021.pdf; https://pabalochistan.gov.pk/storage/4287/2022-11-28_10_00_34_34dbd.pdf; https://www.sessi.gov.pk/assets/files/content/2026/01/Sindh-Employees-Social-Security-Act-2016-with-rules-and-ammendments.pdf | 2026-11-14 |
+| Read for Income Tax Rules 42-44 operative payment, non-salary certificate, annual salary statement and requested reconciliation branches on 2026-11-14 | https://download1.fbr.gov.pk/Docs/20269211394336470IncomeTaxRules2002.pdf | 2026-11-14 |
+| Read for Sindh 2021 amendment ss.2-3 definitions and fixed self-employed contribution subject to conditions | https://www.sessi.gov.pk/assets/files/content/2026/01/Sindh-Act-No.XIX-of-2021.pdf | 2026-11-14 |
+| Read for Sindh 2018 amendment ss.4(ii),(vi),8-9,20 continued insurance, limits, self-assessment and s.20 provisos | https://www.sessi.gov.pk/assets/files/content/2026/01/SINDH-EMPLOYEES-SOCIAL-SECURITY-AMENDMENT-ACT-2018.pdf | 2026-11-14 |
+| Read for ITO s.149 salary average/adjustments and First Schedule tax-year 2026 salary table; s.71 conversion | https://download1.fbr.gov.pk/Docs/2025881983148210Income-Tax-Ordinance,-2001-Amended-upto-31.07.2025.pdf | 2026-11-14 |
+| Read for enacted Finance Act 2024 amendment 22(b) and current 2026 s.149(1)-(2), resolving the 2025 consolidation A/B editorial error without adopting later salary bands | https://download1.fbr.gov.pk/Docs/2024630146346801FinanceAct-2024.pdf; https://download1.fbr.gov.pk/Docs/2026724177725705IncomeTaxOrdinanace2001.pdf | 2026-11-15 |
+| Read for current 2026 ITO s.165 statement cadence/schedule | https://download1.fbr.gov.pk/Docs/2026724177725705IncomeTaxOrdinanace2001.pdf | 2026-11-14 |
+| Read for EOB Act ss.1(4),9/9 B,10-12, coverage/registration/employer-share and inspection text, with Finance Act 2008 footnote conflict | https://pakistancode.gov.pk/pdffiles/administratorf3be1ec8d21dfebb9c5d1733f43cffe6.pdf | 2026-11-14 |
+| Read for ministry FAQ 4-5 current administrative threshold and contribution-base/split description | https://ophrd.gov.pk/Detail/OGI0NzE3NGEtMzllOS00NjUwLTgzYjgtM2QwNzY4OGNkZWYy | 2026-11-14 |
+| Read for parliamentary reply pp 48-49 current 10-person/notified/voluntary coverage description | https://na.gov.pk/uploads/documents/6ae817d42a069_262.pdf | 2026-11-14 |
 
-| Item | Recipient | Deadline | Channel |
-| --- | --- | --- | --- |
-| **Salary tax deposit** | FBR | At time of payment (challan deposited promptly — typically **within 7 days of withholding**; verify current rule) | Bank challan (CPR) |
-| **Section 165 quarterly statement** | FBR | **20th of the month following the quarter** | FBR **IRIS** portal |
-| **EOBI contribution + PR-04 schedule** | EOBI | **15th of the following month** | EOBI portal + designated bank |
-| **Provincial ESSI contribution** | SESSI / PESSI / KPESSI / BESSI | Typically **15th of the following month** (verify per-province) | Provincial ESSI portal + designated bank |
-
-### 8.2 Annual cycle
-
-**Annual cycle table**
-
-| Item | Deadline | Notes |
-| --- | --- | --- |
-| **Annual Section 149 / 165 reconciliation** | **31 July** following tax-year-end 30 June | Filed on IRIS — must reconcile sum of monthly statements to annual withholding |
-| **Employee tax deduction certificate** (Rule 42) | **By the time of the annual statement** | Issued to each employee for use in their own return |
-| **EOBI annual reconciliation** | Per EOBI rules | Reconcile sum of monthly PR-04 schedules to insured headcount × 12 |
-| **Provincial ESSI annual reconciliation** | Per provincial notification | Typically by 31 July |
-| **WWF (corporate)** | With corporate tax return | Out of scope here |
-| **WPPF distribution** | **Within 9 months of accounting-year-end** | Out of scope here; residual to WWF |
-
-### 8.3 Penalty summary
-
-**Penalty summary table**
-
-| Default | Consequence |
-| --- | --- |
-| Late salary tax deposit | Default surcharge under Sec 205 ITO 2001 (KIBOR + 3%) |
-| Late Section 165 statement | Sec 182 penalty — PKR 5,000/day, subject to caps |
-| Failure to deduct salary tax | Employer personally liable (Sec 161) + surcharge |
-| Late EOBI | Default surcharge per EOBI Act + recovery as arrears of land revenue |
-| Late provincial ESSI | Per provincial regime — surcharge + recovery |
-
-## Section 9 — Conservative defaults
-
-**Conservative defaults table**
-
-| Situation | Conservative position |
-| --- | --- |
-| EOBI coverage uncertain (establishment hovering around 5 employees) | Treat as covered; register on EOBI portal; under-contribution risk outweighs the small monthly cost |
-| Provincial ESSI threshold ambiguous | Treat employee as insured if wage near threshold; contribute and reclaim later if unnecessary |
-| Minimum wage notification updated mid-month | Apply the **higher** rate from the date of notification; do not back-spread |
-| Bonus or arrears paid in one month | Annualise into the Sec 149 estimated annual salary and recompute monthly withholding from that month forward — do **not** apply marginal rate to the lump sum in a single month |
-| Employee CNIC missing | Withhold normally but **flag immediately** — Section 165 statement will reject without CNIC |
-| Employee NTN missing (high earner) | Compute tax normally; flag to HR to enrol the employee on IRIS — required for higher-earner statements |
-| Mid-year joiner | Estimate the annual salary on a pro-rata basis (months remaining × monthly gross + expected perquisites) and divide the tax by the remaining months |
-| Mid-year leaver | Issue interim Rule 42 certificate covering the period of employment, reconcile via Section 149(3) adjustment in the leaver's final month |
-| Worker in Punjab establishment but resident in Sindh | Contribute to **PESSI** (province of employment), not SESSI |
-| Multi-province establishment | Contribute to each provincial ESSI for the workers physically employed there |
-| WWF / WPPF computation request | Refer to corporate tax skill / reviewer — jurisdictional routing is complex post-18th Amendment |
-| Provident Fund deduction | Refer to specialist — Sixth Schedule treatment depends on recognition status |
-| Salary paid in foreign currency | Convert to PKR at the SBP rate on payment date; document the rate |
-
-## Section 10 — Sources
-
-**Sources table**
-
-| Source | Reference |
-| --- | --- |
-| Income Tax Ordinance 2001 — Section 149 (deduction of tax from salary) | FBR |
-| Income Tax Ordinance 2001 — Section 165 (statement of tax collected or deducted) | FBR |
-| Income Tax Ordinance 2001 — First Schedule Part I (salary brackets) | FBR — applied via `pk-income-tax` |
-| Income Tax Rules 2002 — Rule 42 (employee tax deduction certificate) | FBR |
-| Employees' Old-Age Benefits Act 1976 | EOBI |
-| EOBI portal | https://eobi.gov.pk |
-| Provincial Employees' Social Security Ordinance 1965 (as adapted by Sindh, Punjab, KP, Balochistan) | Provincial gazettes |
-| Sindh Employees Social Security Institution (SESSI) | https://sessi.gos.pk |
-| Punjab Employees Social Security Institution (PESSI) | https://pessi.punjab.gov.pk |
-| Khyber Pakhtunkhwa Employees Social Security Institution (KPESSI) | KP provincial portal |
-| Balochistan Employees Social Security Institution (BESSI) | Balochistan provincial portal |
-| Workers Welfare Fund Ordinance 1971 + provincial WWF statutes | Federal / provincial gazettes |
-| Companies Profits (Workers' Participation) Act 1968 (WPPF) | Federal gazette |
-| FBR IRIS portal | https://iris.fbr.gov.pk |
-| Companion skill — Pakistan income tax (salary brackets, slabs, tax credits) | `pk-income-tax` |
-| Companion skill — Pakistan sales tax | `pakistan-sales-tax` |
-| Foundation skill — global workflow base | `foundation` |
-
-## Footer disclaimer
-
-*OpenAccountants — open-source accounting skills for AI*
-*This is not tax advice. All outputs must be reviewed by a qualified Pakistani payroll professional or tax consultant before any payslip is issued or any remittance is made.*
+Not yet confirmed: the old blanket post-devolution nationwide mandatory/judicial-history assertion beyond the read administrative sources; also, judicial resolution of 5/10-person threshold conflict, actual numeric EOBI base and its current challan/contribution calendar, current numeric wage notifications, Punjab operative law, actual establishment coverage and contribution-return calendars beyond the read branches, federal/other-province WWF/WPPF and Sindh worker distribution/residual/credit law beyond the read coverage/contribution branches. Old 40,000/37,000/50,000 placeholders, generic 6% provincial rule,the universal 50-worker assertion is wrong; federal/other-province 2% WWF/5% WPPF/9-month and specific distribution assertions remain unconfirmed, not deleted topics or usable instructions. No professional approval is claimed.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-07-13. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `pk-payroll-eobi` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/pk-payroll-eobi. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `pk-payroll-eobi` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/pk-payroll-eobi. If neither is available, confirm every figure against the official source pages cited above before relying on it.
