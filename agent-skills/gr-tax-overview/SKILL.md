@@ -1,45 +1,53 @@
 ---
 name: gr-tax-overview
-description: "Source-cited draft: map of the Greek tax system for tax year 2026, with each headline figure tied to the law. Covers the tax year, who is taxed on worldwide income, the 2026 personal income tax scale (9% to 44%), the 22% corporate rate, the 24% standard VAT rate, the return windows for individuals and companies, AADE as the tax authority and e-EFKA for social insurance. Points to the pack's detailed skills: gr-income-tax, gr-corporate-income-tax, gr-cross-border, gr-efka, gr-employee-contributions, gr-vat-return, gr-capital-gains and gr-payroll. Trigger phrases: Greek tax system, taxes in Greece overview, Greece tax rates 2026, how Greece taxes income. Out of scope: any computation, which lives in the sibling skills named above."
+description: "Routing map for Greek tax and accounting work in tax year 2026. Select the owner for individual and company income tax, residence and cross-border work, VAT, employee and self-employed insurance, payroll, gains, presumptions, transfer pricing, formation and invoicing. Former headline figures and return dates live with the relevant detailed skill, not in this map. Trigger phrases: Greek tax system, taxes in Greece overview, Greece tax rates 2026, how Greece taxes income."
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/gr-tax-overview"
   jurisdiction: "GR"
   tax_year: "2026"
-  last_updated: "2026-10-31"
+  last_updated: "2026-11-16"
 ---
 
-# Greece Tax Overview
+# Greece tax overview v0.3
 
-A map of the main Greek taxes for tax year 2026. It computes nothing; each line points to the skill that holds the detail. Income tax figures are from the Ministry of Finance codification of the Income Tax Code (ΚΦΕ, ν. 4172/2013) with amendments up to ν. 5264/2025. VAT figures are from the AADE codification of the VAT Code (ν. 5144/2024), which replaced ν. 2859/2000.
+## The method, step by step
 
-## Greek tax system at a glance
+Establish the tax year, taxpayer, transaction, residence and question first. Greek tax administration is AADE, with myAADE/TAXISnet for the relevant tax services; social insurance is administered by e-EFKA. Amounts in the country pack are in euro unless a particular source says otherwise.
 
-| Item | 2026 position | Source | Detail |
-|---|---|---|---|
-| Tax year | Calendar year. A legal person keeping double-entry books may end its tax year on 30 June. No tax year exceeds 12 months | ΚΦΕ art. 8(1), [ΚΦΕ codification](https://minfin.gov.gr/wp-content/uploads/2026/04/%CE%9A%CE%A9%CE%94%CE%99%CE%9A%CE%9F%CE%A0%CE%9F%CE%99%CE%97%CE%A3%CE%97-%CE%A4%CE%9F%CE%A5-%CE%9A%CE%A9%CE%94%CE%99%CE%9A%CE%91-%CE%A6%CE%9F%CE%A1%CE%9F%CE%9B%CE%9F%CE%93%CE%99%CE%91%CE%A3-%CE%95%CE%99%CE%A3%CE%9F%CE%94%CE%97%CE%9C%CE%91%CE%A4%CE%9F%CE%A3-%CE%9C%CE%95%CE%A7%CE%A1%CE%99-%CE%A4%CE%9F-%CE%9D-5264-2025.pdf) | `gr-income-tax`, `gr-corporate-income-tax` |
-| Currency | Euro (EUR) | | |
-| Tax authority | Independent Authority for Public Revenue (AADE, Ανεξάρτητη Αρχή Δημοσίων Εσόδων) | [AADE](https://www.aade.gr/en) | |
-| Basis of taxation | Greek tax residents are taxed on worldwide income; non-residents only on Greek-source income | ΚΦΕ art. 3(1) and (2), same | `gr-cross-border` |
-| Personal income tax scale (employment, pension and business income) | 9% to EUR 10,000, 20% to 20,000, 26% to 30,000, 34% to 40,000, 39% to 60,000, 44% above EUR 60,000. Lower rates for parents and for under-30s | ΚΦΕ art. 15(1), as replaced by ν. 5246/2025 art. 3(1), same | `gr-income-tax` |
-| Corporate income tax rate | 22% (from tax year 2021) | ΚΦΕ art. 58(1)(a), same | `gr-corporate-income-tax` |
-| VAT standard rate | 24%; reduced rates 13%, and 6% or 4% where Annex III provides for them, for goods and services in Annex III | VAT Code (ν. 5144/2024) art. 26(1), [AADE codification circular Ε.2023/2025](https://www.aade.gr/egkyklioi-kai-apofaseis/e-2023-29-04-2025) | `gr-vat-return` |
-| Personal income tax return | 15 March to 15 July of the following year, so 15 July 2027 for 2026 income | ΚΦΕ art. 67(3), same | `gr-income-tax` |
-| Corporate income tax return | 15 March to 15 July of the following year for a 31 December year end; otherwise by the last working day of the sixth month after the year end | ΚΦΕ art. 68(2), same | `gr-corporate-income-tax` |
-| Social insurance | e-EFKA. Employees and employers pay percentage contributions on pay; the self-employed pay fixed monthly amounts by category | [e-EFKA](https://www.efka.gov.gr) | `gr-employee-contributions`, `gr-efka` |
+| Question or former overview topic | Owner to load | Handoff |
+|---|---|---|
+| Tax year, employment, pension, business and rental income; parent/youth rates and the individual return window | [gr-income-tax](gr-income-tax.md) | Tax year and filing year, age, dependants, income categories and source documents; the owner holds the actual bands and deadlines |
+| Company accounting year, corporation tax and company return window | [gr-corporate-income-tax, tax year and year end](gr-corporate-income-tax.md#tax-year-and-year-end) | Legal form, book category, year end and accounts; use [gr-partnerships-single-entry](gr-partnerships-single-entry.md) for that distinct job |
+| Worldwide versus Greek-source taxation, residence, moving in/out, inbound regimes, treaty relief and withholding | [gr-cross-border](gr-cross-border.md) | Residence history, travel dates, source/type of income and counterpart country; do not treat an immigration permit as a tax election |
+| VAT rates and reductions, registration/exemption, return frequency and filing/payment | [greece-vat-return](greece-vat-return.md) | Transaction/place of supply, period, book/start category and election; [gr-vat-return](gr-vat-return.md) is only an alias pointer |
+| Employee/employer percentage contributions and APD | [gr-employee-contributions](gr-employee-contributions.md) | Pay period, earnings, coverage package and employment/posting status |
+| Self-employed fixed monthly insurance categories | [gr-efka](gr-efka.md) | Occupation, selected category, parallel work and insured status |
+| Payroll withholding and labour/payroll submissions | [gr-payroll](gr-payroll.md) | Gross pay, contributions, age/dependants, timing and employment records |
+| Securities, business or property capital gains | [gr-capital-gains](gr-capital-gains.md) | Asset, dates, cost/proceeds, holding and residence |
+| Deemed living expenses, asset purchases and coverage by prior capital | [gr-living-expense-presumptions](gr-living-expense-presumptions.md) | Household assets/spending and documentary sources of funds |
+| Connected transactions and transfer-pricing obligations | [gr-transfer-pricing](gr-transfer-pricing.md) | Group relationships, transaction totals, turnover and reporting year |
+| Incorporation and post-formation registration | [gr-company-formation](gr-company-formation.md) | Form, founders, contribution types and required notarial route |
+| Invoice issue, mandatory channel, myDATA and reconciliation | [greece-einvoice](greece-einvoice.md) | Invoice date, counterparty, mandate phase and software/channel |
+
+The former headline rate/band tables and individual/company filing dates are deliberately handed to the named owners above. This router does not independently maintain a second version of their figures. Read the owner's version, actual source scope and Not yet confirmed line before answering. Deliver a working paper with its evidence and unresolved facts, then seek professional sign-off for filing or taking a position.
+
+## When to refuse or refer
+
+Do not choose a tax residence, treaty result, entity/book category, VAT rate or professional approval from this map alone. Do not imply that a structural pass, contributor credit or automated calculation is accountant approval. Where a specialist regime or current official instruction is absent, identify that particular gap rather than inventing a treatment.
 
 ## Sources
 
-| Source | URL | Read on |
+| Source and actual scope read | URL | Read on |
 |---|---|---|
-| Income Tax Code (ν. 4172/2013), Ministry of Finance codification up to ν. 5264/2025: arts. 3, 8, 15, 58, 67, 68 | https://minfin.gov.gr/wp-content/uploads/2026/04/%CE%9A%CE%A9%CE%94%CE%99%CE%9A%CE%9F%CE%A0%CE%9F%CE%99%CE%97%CE%A3%CE%97-%CE%A4%CE%9F%CE%A5-%CE%9A%CE%A9%CE%94%CE%99%CE%9A%CE%91-%CE%A6%CE%9F%CE%A1%CE%9F%CE%9B%CE%9F%CE%93%CE%99%CE%91%CE%A3-%CE%95%CE%99%CE%A3%CE%9F%CE%94%CE%97%CE%9C%CE%91%CE%A4%CE%9F%CE%A3-%CE%9C%CE%95%CE%A7%CE%A1%CE%99-%CE%A4%CE%9F-%CE%9D-5264-2025.pdf | 2026-10-23 |
-| AADE circular Ε.2023/29-04-2025, administrative codification of the VAT Code (ν. 5144/2024), text up to 31.12.2024: art. 26 | https://www.aade.gr/egkyklioi-kai-apofaseis/e-2023-29-04-2025 | 2026-10-23 |
-| AADE home page | https://www.aade.gr/en | 2026-10-23 |
-| e-EFKA home page | https://www.efka.gov.gr | 2026-10-23 |
+| Ministry of Finance income-tax codification through Law 5264/2025: read arts. 3, 4, 8, 15, 58, 67 and 68 to locate the old overview's tax-base, tax-year, rate and return topics; figures are delegated to their owners | https://minfin.gov.gr/wp-content/uploads/2026/04/%CE%9A%CE%A9%CE%94%CE%99%CE%9A%CE%9F%CE%A0%CE%9F%CE%99%CE%97%CE%A3%CE%97-%CE%A4%CE%9F%CE%A5-%CE%9A%CE%A9%CE%94%CE%99%CE%9A%CE%91-%CE%A6%CE%9F%CE%A1%CE%9F%CE%9B%CE%9F%CE%93%CE%99%CE%91%CE%A3-%CE%95%CE%99%CE%A3%CE%9F%CE%94%CE%97%CE%9C%CE%91%CE%A4%CE%9F%CE%A3-%CE%9C%CE%95%CE%A7%CE%A1%CE%99-%CE%A4%CE%9F-%CE%9D-5264-2025.pdf | 2026-11-16 |
+| Ministry of Finance VAT Code codification through Law 5313/2026: read arts. 26 and 43 to locate VAT rate and periodic-return topics | https://minfin.gov.gr/wp-content/uploads/2026/10/Κοινοποίηση-Διοικητικής-Κωδικοποίησης-του-ν.5144-2024-γι.pdf | 2026-11-16 |
+| e-EFKA official site: read authority identity and entry points only, not a fresh audit of all contribution figures | https://www.efka.gov.gr | 2026-11-16 |
+| Country repository skills: read all existing files for job routing and open coverage questions, without editing or reapproving the unchanged owners | https://github.com/openaccountants/openaccountants/blob/2844c309238b4fdb63be0a3d0ad9ae99a8ea89c8/skills/greece/README.md | 2026-11-16 |
 
-Not yet confirmed: any amendment to the VAT Code rates made after 31 December 2024 (the AADE codification read runs to that date); any amendment to the Income Tax Code during 2026 after ν. 5264/2025.
+Not yet confirmed: current transaction-specific answers and the unresolved source/filing items declared by each owner; the map supplies no new determination or blanket claim that the whole country is complete.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-31. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `gr-tax-overview` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/gr-tax-overview. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-16. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `gr-tax-overview` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/gr-tax-overview. If neither is available, confirm every figure against the official source pages cited above before relying on it.
