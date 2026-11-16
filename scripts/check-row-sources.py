@@ -178,6 +178,24 @@ _HALF_PERCENT_RE = re.compile(
 _SCALED_NUMBER_RE = re.compile(
     r"(?<![\w.,])(?P<number>(?:\d{1,3}(?:,\d{3})+|\d+)(?:\.\d+)?)"
     r"\s+(?P<scale>million|billion)\b", re.IGNORECASE)
+# Consume the complete number-word run before looking it up: an unsupported
+# "one thousand fifteen million" must never match its "fifteen million" suffix.
+_MONEY_CARDINALS = {re.sub(r'[\s-]+', ' ', w): n for n in range(1, 1000) for w in _en(n)}
+_MONEY_NUMBER_WORDS = _NUMBER_WORDS | {
+    'point', 'minus', 'negative', 'plus', 'quarter', 'quarters', 'third', 'thirds',
+    'sextillion', 'septillion', 'octillion', 'nonillion', 'decillion',
+}
+_MONEY_TOKEN = '(?:' + '|'.join(sorted(_MONEY_NUMBER_WORDS, key=len, reverse=True)) + ')'
+_WORD_MONEY_RE = re.compile(
+    r'(?<![\w./:\u2010-\u2015-])(?P<phrase>' + _MONEY_TOKEN
+    + r'(?:[\s,\u2010-\u2015-]+' + _MONEY_TOKEN + r')*)(?![\w\u2010-\u2015-])',
+    re.IGNORECASE)
+_MONEY_UNIT_RE = re.compile(
+    r'\s+(?:shillings?|dollars?|pounds?|euros?|rupees?|baht|rand)(?![\w\u2010-\u2015-])',
+    re.IGNORECASE)
+_WORD_MONEY_IDENTIFIER_RE = re.compile(
+    r'\b(?:section|sec|article|art|chapter|ch|form|line|schedule|no|ref|id)[:.#]?\s*$',
+    re.IGNORECASE)
 _ZH_DIGITS = {"一": 1, "二": 2, "两": 2, "三": 3, "四": 4, "五": 5, "六": 6, "七": 7, "八": 8, "九": 9}
 
 
@@ -217,6 +235,24 @@ def word_percent_values(page_text):
     return vals
 
 
+def word_money_values(page_text):
+    """Whole English cardinals (1–999) times million/billion, with a money unit."""
+    vals = set()
+    for m in _WORD_MONEY_RE.finditer(page_text):
+        if not _MONEY_UNIT_RE.match(page_text, m.end()):
+            continue
+        prefix = page_text[max(0, m.start() - 80):m.start()]
+        if _WORD_MONEY_IDENTIFIER_RE.search(prefix) or re.search(r'\d[\s,-]*$', prefix):
+            continue
+        words = re.sub(r'[\s\u2010-\u2015-]+', ' ', m.group('phrase').lower())
+        words = re.sub(r'^(?:and )?(?:a )?', '', words, count=1)
+        cardinal, _, scale = words.rpartition(' ')
+        whole = _MONEY_CARDINALS.get(cardinal)
+        if whole is not None and scale in ('million', 'billion'):
+            vals.add(whole * (1_000_000 if scale == 'million' else 1_000_000_000))
+    return vals
+
+
 def page_values(page_text):
     """Every number on the page, read the English way (1,234.56) and the European way
     (1.234,56, 1 234,56, 2,25 %), so a page that writes figures with a decimal comma is
@@ -233,6 +269,7 @@ def page_values(page_text):
         except ValueError:
             pass
     vals |= word_percent_values(page_text)
+    vals |= word_money_values(page_text)
     for m in _SCALED_NUMBER_RE.finditer(page_text):
         multiplier = 1_000_000 if m.group('scale').lower() == 'million' else 1_000_000_000
         vals.add(round(float(Decimal(m.group('number').replace(',', '')) * multiplier), 6))
