@@ -6,252 +6,240 @@ metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/maldives-gst"
   jurisdiction: "MV"
-  tax_year: "2025"
-  last_updated: "2026-07-13"
+  tax_year: "2026"
+  last_updated: "2026-11-16"
 ---
 
 # Maldives GST
 
-## Section 1 — Quick reference
+## Scope
 
-**Quick reference table**
+Prepare and review Maldives general GST and tourism GST working papers for 2026, from evidence of supplies and purchases. Load `vat-workflow-base` alongside this Guide. A bank statement alone supports a provisional reconciliation, not a complete GST return: invoice dates, deposits, credit sales, registration and input-tax evidence change the answer.
 
-| Field | Value |
-| --- | --- |
-| Country | Maldives (Republic of Maldives) |
-| Tourism sector rate | 16% (tourism goods and services) |
-| General sector rate | 8% (non-tourism goods and services) |
-| Zero rate | 0% (exports) |
-| Exempt | Financial services, residential rent, healthcare, education |
-| Return form | GST return (monthly) |
-| Filing portal | https://www.mira.gov.mv (MIRAconnect) |
-| Authority | Maldives Inland Revenue Authority (MIRA) |
-| Currency | MVR (Maldivian Rufiyaa); USD widely used in tourism |
-| Filing frequency | Monthly |
-| Deadline | 28th of the month following the tax period |
-| Companion skill | vat-workflow-base v0.1 or later — MUST be loaded |
+MIRA administers GST under Act 10/2011. The distinction is the legal supply and supplier, not the customer's name or whether a resort appears in the bank narrative. Tourism leases, Green Tax, service charge and overseas booking arrangements need the additional checks below. This Guide remains tier 2 and has no accountant approval.
 
-**Conservative defaults**
+## Ask the client first
 
-| Ambiguity | Default |
-| --- | --- |
-| Unknown rate (tourism context) | 16% |
-| Unknown rate (general context) | 8% |
-| Unknown VAT status of a purchase | Not deductible |
-| Unknown counterparty location | Domestic Maldives |
+1. What are the GST TIN, registered taxable activities, general/tourism sectors, effective registration dates and assigned taxable period? Obtain the certificate and any period-change approval.
+2. What goods or services were supplied, where and when, by which establishment? Obtain contracts, invoices, receipts, advance-payment records, credit/debit notes and evidence of exports.
+3. Are amounts GST-inclusive, and do room receipts include Green Tax, service charge, refundable deposits, agency deductions or third-party collections? Obtain the gross-sales reconciliation.
+4. Which purchases support taxable, exempt, private or mixed activities? Obtain full supplier tax invoices, capital-asset information and supplier registration evidence.
+5. Provide all bank/payment-platform statements for the period, the previous return, unclaimed input-tax schedule, payments and credit brought forward. Identify the currencies and exchange-rate source.
 
-## Section 2 — Required inputs and refusal catalogue
+Accept statements from BML, MIB, SBI Maldives, HDFC Maldives or another bank; read the actual fields and opening/closing balances. Never assume a particular bank export format or that the bank month determines the tax period.
 
-- **Required inputs — Minimum viable** — Bank statement for the month. Acceptable from: BML (Bank of Maldives), MIB (Maldives Islamic Bank), SBI Maldives, HDFC Maldives, or any other.
-- **R-MV-1 — Resort lease and TGST complexity** — Trigger: client is a resort operator with complex lease arrangements and dual-rate (tourism/general) supplies. Message: "Resort operators with mixed tourism/general supplies require specialist TGST analysis. Please escalate."
-- **R-MV-2 — Green tax and service charge interaction** — Trigger: client subject to Green Tax and mandatory 10% service charge alongside GST. Message: "Green Tax and service charge interact with GST base in complex ways for tourism. Please escalate."
+## The method, step by step
 
-## Section 3 — Supplier pattern library
+### 1. Identify the applicable period and registration rule [https://www.mira.gov.mv/Legislations/View/8th-amendment-to-the-gsta](https://www.mira.gov.mv/Legislations/View/8th-amendment-to-the-gsta)
 
-### 3.1 Maldivian banks (fees exempt — exclude)
+The eighth amendment commenced on publication on 31 August 2026, under amendment section 31. Keep transactions and registration events before and after that change separate. The new inbound-tourism charging date is separately specified below.
 
-**Maldivian banks pattern table**
+| Item and conditions | Amount or deadline | Period | Official source |
+|---|---|---|---|
+| General-sector supplies outside Act section 15, unless exempt or zero-rated | 8% | 2026 | [GST Act section 16(c)](https://www.mira.gov.mv/Legislations/View/Goods-And-Services-Act-consolidated) |
+| Tourism goods/services within section 15(a), unless exempt or zero-rated | 17%; the former 16% period ended 30 June 2025 | 2026 | [GST Act sections 15(b)(5)-(6)](https://www.mira.gov.mv/Legislations/View/Goods-And-Services-Act-consolidated) |
+| Overseas supplier without a relevant fixed establishment: inbound tourism products and related booking/agency services within section 15(a)(6) | 17% from 1 October 2026 | 2026 change | [GST Act section 15(b-1)](https://www.mira.gov.mv/Legislations/View/Goods-And-Services-Act-consolidated) |
+| Qualifying exports, listed essential goods and qualifying going-concern transfer | 0%; satisfy the relevant category's conditions | 2026 | [GST Act section 22; GST Regulation sections 41-42](https://www.mira.gov.mv/Legislations/View/Goods-and-Services-Tax-Regulation-consolidated) |
+| General registration turnover test for a person carrying on taxable activity; from the amendment, through a fixed Maldives place of business | Supplies exceeding MVR 1,000,000 in the relevant preceding period, or expected to exceed it in the following 12 months; apply by the end of the following month after the month-end trigger | Before 31 August: section 51(a)-(i); from that date: section 51(k)-(m) | [GST Act section 51](https://www.mira.gov.mv/Legislations/View/Goods-And-Services-Act-consolidated) |
+| Tourism supplies; commercial importers other than State institutions under the amended rule | Registration independent of turnover; tourism entrants within 30 days; new commercial importers register before importing | From 31 August 2026; existing persons subject to transitional registration, existing registrations continue | [GST Act sections 51(j)-(o), 54(b)](https://www.mira.gov.mv/Legislations/View/Goods-And-Services-Act-consolidated) |
+| Registered person's ordinary taxable period | Quarterly below MVR 1,000,000 supplies per month; monthly at or above that monthly amount; monthly election requires approval | 2026; use the assigned period | [GST Act section 24](https://www.mira.gov.mv/Legislations/View/Goods-And-Services-Act-consolidated) |
+| Return and payment | 28th of the following month; public holiday moves statutory due date to next working day | Each taxable period | [GST Act sections 28, 31, 61](https://www.mira.gov.mv/Legislations/View/Goods-And-Services-Act-consolidated) |
 
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| BML, BANK OF MALDIVES | EXCLUDE for bank charges | Exempt |
-| MIB, MALDIVES ISLAMIC BANK | EXCLUDE for bank charges | Same |
-| SBI MALDIVES, HDFC MALDIVES | EXCLUDE for bank charges | Same |
-| INTEREST, LOAN, REPAYMENT | EXCLUDE | Out of scope |
+Before the August amendment, section 51 separately required registration of tourism suppliers and importers; do not retrospectively apply the new personal-import exception or registration-before-import rule. Voluntary registration is possible for a qualifying licensed business under section 53. Registration is not permission to select a rate. A person required to register remains liable even if unregistered: section 57.
 
-### 3.2 Government (exclude)
+### 2. Determine the supply, time and tax base [https://www.mira.gov.mv/Legislations/View/Goods-And-Services-Act-consolidated](https://www.mira.gov.mv/Legislations/View/Goods-And-Services-Act-consolidated)
 
-**Government pattern table**
+Match each bank line to the underlying invoice or supply. Under section 17(a), ordinary time of supply is the earlier of invoice issuance and full or partial payment, subject to the specific exceptions. From the August amendment, invoice/receipt issuance for goods and completed services is subject to the three-day rules and deemed issuance in sections 17(d)-(f). A bank-only cash total can omit credit sales and double-count deposits later settled against invoices.
 
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| MIRA, INLAND REVENUE | EXCLUDE | Tax payment |
-| CUSTOMS, MALDIVES CUSTOMS | EXCLUDE | Duty |
-| PENSION, MRPS | EXCLUDE | Pension contribution |
+For an ordinary GST-inclusive consideration, net value = gross / (1 + rate), and GST = gross - net. For a GST-exclusive value, output GST = net × rate: section 19. Separate actual pass-through taxes under section 36(a); do not treat the whole tourism receipt as room consideration without reconciling its components. Under Regulation section 52(a), a service charge on a supply is taxed at the same rate as that supply; it is not automatically a deductible tax or discount. Reconcile the actual bill and refer complex combined-levy or service-charge distribution disputes rather than silently excluding it.
 
-### 3.3 Utilities
+From the overseas-inbound regime, section 19(e) uses consideration less amounts payable to a registered person in relation to the inbound tourism product; it is not the ordinary full-room-price computation for the overseas supplier. Section 37(f) denies that supplier input-tax set-off. Separate a local hotel's own supply from an overseas agent's supply, identify the contracting parties, and check the amended place-of-supply provisions in sections 5-1 and 5-2. Do not apply an automatic reverse charge to every foreign SaaS bill, or charge tourism GST on every foreign booking-platform debit.
 
-**Utilities pattern table**
+### 3. Separate exemption, zero-rating and non-supplies [https://www.mira.gov.mv/Legislations/View/Goods-and-Services-Tax-Regulation-consolidated](https://www.mira.gov.mv/Legislations/View/Goods-and-Services-Tax-Regulation-consolidated)
 
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| STELCO, STATE ELECTRIC | Domestic 8% | Electricity (general) |
-| FENAKA | Domestic 8% | Utility (outer islands) |
-| MWSC, MALE WATER | Domestic 8% | Water |
-| DHIRAAGU, OOREDOO MALDIVES | Domestic 8% | Telecoms |
+| Boundary | Treatment and evidence | Official source |
+|---|---|---|
+| Electricity, water, sewerage, education and health | Exempt when provided by the relevant registered/authorized provider; a supplier may also sell other goods or services | [GST Act section 20(a)-(g)](https://www.mira.gov.mv/Legislations/View/Goods-And-Services-Act-consolidated) |
+| Bank and Islamic financial services | Only the defined financial service is exempt; consultancy or unrelated purchases through a bank are not automatically exempt | [GST Act section 20(j); GST Regulation section 35](https://www.mira.gov.mv/Legislations/View/Goods-and-Services-Tax-Regulation-consolidated) |
+| Rent from immovable property | Apply the defined rent exemption and its boundaries; do not extend it to tourism accommodation merely because the contract says rent | [GST Act section 20(k); GST Regulation section 36](https://www.mira.gov.mv/Legislations/View/Goods-and-Services-Tax-Regulation-consolidated) |
+| Exempt supply | No output GST; related input tax is not deductible | [GST Act section 21](https://www.mira.gov.mv/Legislations/View/Goods-And-Services-Act-consolidated) |
+| Exported fish or other goods | Qualifying Customs export/re-export evidence required; a foreign buyer's name is insufficient | [GST Act section 22(b); GST Regulation section 41(a)](https://www.mira.gov.mv/Legislations/View/Goods-and-Services-Tax-Regulation-consolidated) |
+| Exported services | A GST-registered Maldives supplier's service must satisfy the defined outside-consumption and recipient tests, including the conditions and exceptions immediately below; an overseas address alone is insufficient | [GST Regulation section 41(b)-(h)](https://www.mira.gov.mv/Legislations/View/Goods-and-Services-Tax-Regulation-consolidated) |
+| Salary, wages and employment | Employment activity excluded; do not treat payroll payments as input purchases | [GST Act section 13(b)](https://www.mira.gov.mv/Legislations/View/Goods-And-Services-Act-consolidated) |
+| Own transfers, loan principal and cash movements | Moving money alone is not the underlying sale or purchase; trace the real transaction separately | [GST Act sections 3-5, 12-13](https://www.mira.gov.mv/Legislations/View/Goods-And-Services-Act-consolidated) |
 
-### 3.4 SaaS and international services
+**Exported-service conditions, section 41(c)-(h).** For an ordinary non-telecommunications service, the recipient must be non-resident under Income Tax Act section 79(ll) and outside the Maldives when the service is performed. Irrespective of the contractual recipient's location, the actual physical flow must not be to a person in the Maldives receiving or benefiting from the service, and the service must not be supplied directly in connection with property situated in the Maldives when performed. Section 41(d) disapplies only the property-connection restriction for information or advice supplied to a non-resident outside the Maldives at that time; it does not remove the other recipient/consumption tests.
 
-**SaaS pattern table**
+Telecommunications follow section 41(e)-(g), rather than the ordinary section 41(c) test. A service from a Maldives telecommunications provider to a foreign provider enabling the foreign provider's customer to access the Maldives provider's network counts as consumed outside the Maldives. The reverse provider-to-provider service enabling a Maldives provider's customer to access the foreign provider's network counts as consumed in the Maldives. A Maldives provider is one registered with the relevant government telecommunications authority; a foreign provider is one outside that definition. Under section 41(h)(2), a person with an employee or other representative present in the Maldives in connection with performance of the service is deemed to be in the Maldives. Retain evidence of the actual recipient, beneficiary/flow, property connection, timing and representative presence before treating a service as exported. [GST Regulation section 41(c)-(h)](https://www.mira.gov.mv/Legislations/View/Goods-and-Services-Tax-Regulation-consolidated).
 
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| GOOGLE, MICROSOFT, META, AWS | Self-assess 8% | Non-resident (general rate) |
-| ZOOM, SLACK, CANVA | Self-assess 8% | Same |
+### 4. Use narratives as investigation cues
 
-### 3.5 Tourism-specific
+The following preserves the transaction library. Each result depends on the evidence and legal categories above; a match is not an instruction to ignore contrary facts.
 
-**Tourism-specific pattern table**
+| Narrative patterns | Working-paper action |
+|---|---|
+| BML; BANK OF MALDIVES; MIB; MALDIVES ISLAMIC BANK; SBI MALDIVES; HDFC MALDIVES | For an authorized account-operation or other defined financial fee, classify exempt. Read the fee description; a payment through the bank can buy any kind of supply. |
+| INTEREST; LOAN; REPAYMENT | Split principal, financing charges and purchases. Do not extract input GST from principal or an exempt financing service. |
+| MIRA; INLAND REVENUE | Match tax payment to the liability account and period; no purchase credit from a tax remittance. |
+| CUSTOMS; MALDIVES CUSTOMS | Match duty and import documents. Customs duty is not input GST. Do not manufacture GST on CIF plus duty or claim an import credit without an actual statutory tax invoice/supply. |
+| PENSION; MRPS | Pension remittance; reconcile payroll, not GST input tax. |
+| STELCO; STATE ELECTRIC; FENAKA | Identify qualifying electricity, ordinarily exempt under section 20(a). Correct the former automatic general-rate classification. |
+| MWSC; MALE WATER | Identify qualifying water/sewerage, ordinarily exempt under section 20(b)/(d), rather than assuming standard-rated utilities. |
+| DHIRAAGU; OOREDOO MALDIVES | Inspect the actual telecom supply, GST invoice and business use; do not classify from the merchant name alone. |
+| GOOGLE; MICROSOFT; META; AWS; ZOOM; SLACK; CANVA | Determine contracting supplier, establishment, place of supply and registration. No blanket foreign-service self-assessment; income-tax withholding is a separate analysis. |
+| BOOKING.COM; EXPEDIA; AGODA | Obtain agency contracts, gross accommodation revenue and commission invoices. Distinguish local hotel revenue from overseas booking/agency supplies and the October change. |
+| TRIPADVISOR | Identify advertising versus booking/agency services. A tourism customer does not itself turn every marketing invoice into tourism GST. |
+| SALARY; WAGES | Payroll, outside the employment taxable-activity definition. |
+| OWN TRANSFER; INTERNAL | Match both sides, exclude duplicate money movement from sales and purchases. |
+| CASH WITHDRAWAL | Put cash in the cash-control account, then classify the documented use. Ask for vouchers; an ATM debit proves neither a purchase nor input GST. |
 
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| BOOKING.COM, EXPEDIA, AGODA | Platform fee at 16% (tourism) | Verify billing entity |
-| TRIPADVISOR | Marketing cost at 16% if tourism | Same |
+Unclear sector, place, tax-inclusive status, supplier status or cash purpose stays in an unresolved schedule. Do not default unknown suppliers to domestic, unknown tourism items to a rate, or missing invoices to permanent non-deductibility. A provisional claim of no input credit pending evidence does not extinguish a later lawful claim.
 
-### 3.6 Payroll and exclusions
+### 5. Test and allocate input tax [https://www.mira.gov.mv/Legislations/View/Goods-and-Services-Tax-Regulation-consolidated](https://www.mira.gov.mv/Legislations/View/Goods-and-Services-Tax-Regulation-consolidated)
 
-**Payroll and exclusions pattern table**
+For each potential credit, confirm the recipient is registered, the supplier issued a full valid tax invoice, the supply is made in Maldives, the activity is taxable and the time limit is satisfied. Hold the invoice when filing. A statement, pro forma invoice, invoice without required purchaser details, or invented reverse charge is insufficient: Act section 37(d), Regulation sections 44 and 84.
 
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| SALARY, WAGES | EXCLUDE | Outside GST scope |
-| OWN TRANSFER, INTERNAL | EXCLUDE | Internal |
-| CASH WITHDRAWAL | TIER 2 — ask | Default exclude |
+Attribute direct costs first. Disallow exempt/private/non-business use and the other categories in Regulation section 45; apportion shared taxable/exempt costs on a reasonable evidenced basis. Keep sector/activity allocations so a mixed tourism/general business does not duplicate the same input credit. The ordinary unclaimed-input limit is 12 months under Act section 37(e) and Regulation section 44; capital costs have their own schedule.
 
-## Section 4 — Worked examples
+Under Regulation section 46, gross capital expenditure on similar products or the same purpose at or below MVR 500,000 can be claimed in full within the prescribed period; above that amount, spread input tax equally over 36 months, with the output-tax limit and commencement/carry-forward conditions in subsections (a)(3)-(5). Do not claim the whole asset's input GST automatically. Section 46(b) permits a capital-input deduction only after output tax arises from that activity's primary business operations. Submit the prescribed capital-expenditure details with the return for the period incurred: section 46(c) prevents deduction without that submission. Apply the taxable/exempt allocation in section 46(d), and keep the capital-input information sheet and month-by-month balance.
 
-### Example 1 — Tourism service at 16%
+Regulation section 47 excludes pre-registration purchases. Section 48 requires the unpaid proportion of a previously claimed input amount to be treated as output tax when the agreed payment obligation is not met; a later payment can restore the specified credit. Section 49 permits full input credit without exempt-use adjustment only where exempt supplies are both less than 5% of total supplies and less than MVR 10,000 per month. Test both conditions; this is not a general exemption for every small business.
 
-**Input line:** `05.04.2026 ; RESORT GUEST ; CREDIT ; Room revenue ; USD 1,160`
+### 6. Reconcile the working paper and the return [https://www.mira.gov.mv/Files/GetFile/0799ce24-cec8-4ab1-80ae-9302e7c2dcd6](https://www.mira.gov.mv/Files/GetFile/0799ce24-cec8-4ab1-80ae-9302e7c2dcd6)
 
-**Reasoning:** Tourism supply. 16%. Net = USD 1,000, GST = USD 160.
+Create a transaction schedule with date, bank reference, invoice/supply date, counterparty, gross amount, currency, net amount, output GST, eligible input GST, activity/sector, classification, source document and unresolved flag. Add separate controls for tourism output, general output, zero-rated sales, exempt sales, out-of-scope movements, domestic input tax, imported goods/duties, capital-input instalments and carry-forward credit. The imported-goods control is not an automatic import-input-tax box.
 
-**Worked example table**
+Reconcile gross sales to invoices and platforms, then to bank receipts after deposits, debtors, withheld commissions and timing differences. Reconcile purchases to creditors and input-tax evidence. Output tax less eligible input tax, after lawful adjustments, gives the period liability. Carry-forward balances and actual payments require a separate reconciliation; never deduct a bank tax payment as new input tax.
 
-| Date | Counterparty | Gross | Net | GST | Rate | Field | Default? | Excluded? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 05.04.2026 | RESORT GUEST | +1,160 | +1,000 | 160 | 16% | Output (tourism) | N | — |
+## Boundary and exception table
 
-### Example 2 — General service at 8%
-
-**Input line:** `10.04.2026 ; LOCAL CLIENT ; CREDIT ; Consulting ; MVR 108,000`
-
-**Reasoning:** Non-tourism. 8%. Net = MVR 100,000, GST = MVR 8,000.
-
-**Worked example table**
-
-| Date | Counterparty | Gross | Net | GST | Rate | Field | Default? | Excluded? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 10.04.2026 | LOCAL CLIENT | +108,000 | +100,000 | 8,000 | 8% | Output (general) | N | — |
-
-### Example 3 — Export, zero-rated
-
-**Input line:** `15.04.2026 ; SRI LANKAN BUYER ; CREDIT ; Exported fish ; MVR 500,000`
-
-**Worked example table**
-
-| Date | Counterparty | Gross | Net | GST | Rate | Field | Default? | Excluded? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 15.04.2026 | SRI LANKAN BUYER | +500,000 | +500,000 | 0 | 0% | Zero-rated | N | — |
-
-### Example 4 — Bank charges, excluded
-
-**Input line:** `30.04.2026 ; BML ; DEBIT ; Monthly fee ; MVR -200`
-
-**Worked example table**
-
-| Date | Counterparty | Gross | Net | GST | Rate | Field | Default? | Excluded? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 30.04.2026 | BML | -200 | — | — | — | — | N | "Exempt" |
-
-## Section 5 — Tier 1 classification rules (compressed)
-
-### 5.1 Tourism rate 16% — Tourism goods and services (resort accommodation, diving, excursions, etc.).
-
-- **Tourism rate** — 16% percent
-
-### 5.2 General rate 8% — All other taxable supplies not in tourism sector.
-
-- **General rate** — 8% percent
-
-### 5.3 Zero rate — Exports.
-
-- **Zero rate** — 0% percent
-
-### 5.4 Exempt — Financial services, residential rent, healthcare, education.
-
-- **Exempt categories** — Financial services, residential rent, healthcare, education.
-
-### 5.5 Input tax credit — Available. Apportionment required if mixed tourism/general/exempt.
-
-- **Input tax credit** — Available. Apportionment required if mixed tourism/general/exempt.
-
-### 5.6 Imports — GST at applicable rate on CIF plus duty.
-
-- **Imports** — GST at applicable rate on CIF plus duty.
-
-### 5.7 Reverse charge — Non-resident services: self-assess at applicable rate.
-
-- **Reverse charge** — Non-resident services: self-assess at applicable rate.
-
-## Section 6 — Tier 2 catalogue (compressed)
-
-### 6.1 Tourism vs general classification — Default: flag if unclear. Question: "Is this a tourism or general sector supply?"
-
-- **Tourism vs general classification** — Default: flag if unclear. Question: "Is this a tourism or general sector supply?"
-
-### 6.2 Green tax and service charge base — Default: flag. Question: "Confirm GST base after service charge inclusion."
-
-- **Green tax and service charge base** — Default: flag. Question: "Confirm GST base after service charge inclusion."
-
-### 6.3 USD vs MVR transactions — Default: convert at MMA rate. Question: "Confirm exchange rate."
-
-- **USD vs MVR transactions** — Default: convert at MMA rate. Question: "Confirm exchange rate."
-
-### 6.4 Cash withdrawals — Default: exclude. Question: "Purpose?"
-
-- **Cash withdrawals** — Default: exclude. Question: "Purpose?"
-
-## Section 7 — Excel working paper template
-
-Per vat-workflow-base Section 3, with Maldives fields: Output tourism 16%, Output general 8%, Zero-rated, Exempt, Input domestic, Input imports, Net GST.
-
-## Section 8 — Bank statement reading guide
-
-BML and MIB exports CSV. Dual currency (MVR and USD). Tourism sector predominantly USD. Convert at Maldives Monetary Authority (MMA) rate. Internal transfers: exclude.
-
-## Section 9 — Onboarding fallback
-
-### 9.1 TIN — "What is your MIRA TIN?"
-
-- **TIN question** — "What is your MIRA TIN?"
-
-### 9.2 Sector — "Tourism or general sector (or both)?"
-
-- **Sector question** — "Tourism or general sector (or both)?"
-
-### 9.3 Filing period — Monthly. "Which month?"
-
-- **Filing period** — Monthly. "Which month?"
-
-### 9.4 Credit brought forward — Always ask.
-
-- **Credit brought forward** — Always ask.
-
-## Section 10 — Reference material
-
-### Sources
-
-1. Maldives GST Act (Law No. 10/2011, as amended). 2. MIRA guidelines. 3. Tourism rate amendments.
-
-### Known gaps
-
-1. Resort TGST complexity refused. 2. Green tax/service charge interaction refused.
-
-### Change log
-
-- v2.0 (April 2026): Full rewrite to Malta v2.0 ten-section structure.
-
-## Disclaimer
+| Trigger | Decision |
+|---|---|
+| Tourism/general mixed operations or exempt rental alongside room supplies | Split legal supplies and input attribution; refer disputed resort/strata/vessel lease treatment. |
+| Overseas booking or agency arrangements | Check the October regime, contracting capacity and actual place of supply; do not reuse the former flat platform-fee rule. |
+| Green Tax and service charge collected with accommodation | Reconcile separately; refer before finalizing the combined tax base or service-charge distribution. |
+| USD and MVR receipts | Keep separate currency totals, then convert to the applicable return/payment currency using the legally permitted exchange source and date. |
+| No sales but still registered | Check nil filing; registration does not lapse merely because the bank is quiet. |
+| Cancellation | From the August change, satisfy both trailing and expected turnover tests and the absence of another registration trigger, or the cessation route; obtain MIRA's effective cancellation date under section 55. |
+
+## Worked cases
+
+These retain the original transaction facts. Amounts below show the transaction calculation before the whole-currency return rounding required by the published forms.
+
+### Case 1: resort room receipt in April 2026
+
+Input: `05.04.2026 ; RESORT GUEST ; CREDIT ; Room revenue ; USD 1,160`.
+Assume the entire amount is an ordinary GST-inclusive tourism accommodation supply, with no separately collected Green Tax or other component. The current tourism rate applies: USD 1,160 / 1.17 = USD 991.45 net and USD 168.55 GST. Reconcile the receipt components before using this result. The former USD 160 answer used a rate that had ended before this transaction. [GST Act sections 15 and 19](https://www.mira.gov.mv/Legislations/View/Goods-And-Services-Act-consolidated).
+
+```oa-check
+name: April 2026 tourism receipt
+inputs:
+  gross: 1160
+steps:
+  - net: round(gross / 1.17, 2)
+  - gst: gross - net
+expected:
+  net: 991.45
+  gst: 168.55
+```
+
+### Case 2: consulting receipt
+
+Input: `10.04.2026 ; LOCAL CLIENT ; CREDIT ; Consulting ; MVR 108,000`.
+Assume a registered general-sector consultant's ordinary GST-inclusive domestic service, with no exemption. Net = MVR 100,000; output GST = MVR 8,000. A resort purchasing the same general-sector service would not by itself change the supplier's sector. [GST Act sections 15-16 and 19](https://www.mira.gov.mv/Legislations/View/Goods-And-Services-Act-consolidated).
+
+```oa-check
+name: General consulting receipt
+inputs:
+  gross: 108000
+steps:
+  - net: gross / 1.08
+  - gst: gross - net
+expected:
+  net: 100000
+  gst: 8000
+```
+
+### Case 3: export or unproved foreign sale
+
+Input: `15.04.2026 ; SRI LANKAN BUYER ; CREDIT ; Exported fish ; MVR 500,000`.
+If the Customs export records substantiate the qualifying export, output GST is nil and the export consideration is MVR 500,000. If only the narrative is available, keep the item unresolved and obtain export evidence; do not infer an export merely from a Sri Lankan buyer. Reclassification requires the actual goods and domestic/essential-goods rules, not an automatic standard rate. [Regulation section 41](https://www.mira.gov.mv/Legislations/View/Goods-and-Services-Tax-Regulation-consolidated).
+
+```oa-check
+name: Documented fish export
+inputs:
+  consideration: 500000
+steps:
+  - output_gst: consideration * 0
+expected:
+  output_gst: 0
+```
+
+### Case 4: monthly bank fee
+
+Input: `30.04.2026 ; BML ; DEBIT ; Monthly fee ; MVR -200`.
+If this is an authorized current-account operation fee, the financial-service exemption applies and there is no input GST to claim. If it is payment for an unrelated taxable service, obtain the actual invoice before classification. [Regulation section 35(a)(1)](https://www.mira.gov.mv/Legislations/View/Goods-and-Services-Tax-Regulation-consolidated).
+
+```oa-check
+name: Exempt account operation fee
+inputs:
+  fee: 200
+steps:
+  - input_gst: fee * 0
+expected:
+  input_gst: 0
+```
+
+## When to refuse or refer
+
+- **R-MV-1: resort lease and TGST complexity.** Resort operations with mixed tourism/general supplies, strata/room leases, vessel arrangements or disputed input allocation require specialist analysis. Preserve the schedules and refer the unresolved legal classification.
+- **R-MV-2: Green Tax and service charge interaction.** Where accommodation receipts combine these amounts with GST, refer the levy base and distribution issues. Do not substitute a bank narrative for the guest bill or service-charge register.
+- No invoices, no confirmed sector or no reliable opening credit: prepare the reconciliation and unresolved list, but stop before presenting a filing-ready liability. Overseas inbound products require the amended-law analysis rather than a generic reverse-charge shortcut.
+
+## Filing and payment
+
+Use [MIRAconnect](https://www.mira.gov.mv) and the registered taxable activity/period. The published [MIRA 205 general GST form](https://www.mira.gov.mv/Files/GetFile/0799ce24-cec8-4ab1-80ae-9302e7c2dcd6) and [MIRA 206 tourism GST form](https://www.mira.gov.mv/Files/GetFile/ecd5edc5-7180-4c28-a310-0865a45de2cb) use boxes 1-4 for GST-inclusive standard-rated, zero-rated, exempt and out-of-scope sales; box 5 totals sales; box 6 is output tax; box 7 is eligible input tax; box 8 is the specified bad-debt/rate-change credit adjustment; box 9 is GST collected in excess; box 10 = box 6 - box 7 - box 8 + box 9; box 11 records the payment. Complete the taxable-activity table first and attach the input/output statements required for the return.
+
+The forms label general GST in MVR and tourism GST in USD, rounded to the nearest unit of that currency. Keep transaction calculations at adequate precision and reconcile the rounding adjustment. For other-currency transactions, Regulation section 95(b)-(c) permits a rate within ±2% of the MMA rate at time of supply and requires a consistent source; retain the conversion schedule. Tax-payment currencies are governed by Act section 62.
+
+The published forms also carry plastic-bag-fee fields and a service-charge schedule. Complete them when applicable using their own records; do not count them as ordinary GST or fabricate a return field called import GST. For overseas inbound suppliers, confirm the regime-specific return presentation with MIRA before using the ordinary full-sales example above.
+
+Review the return totals against the signed working paper; submit the authorized declaration, retain the acknowledgement, pay the matching liability with the correct TIN/period/reference, and retain the receipt and account reconciliation. File even where a registered period has no income; [MIRA's filing page](https://www.mira.gov.mv/Pages/View/gsthowto) identifies the nil-return route. Never mark submission complete merely because the draft or payment instruction was saved.
+
+Late filing/information and late payment may engage [Tax Administration Act sections 65-67](https://www.mira.gov.mv/Legislations/View/tax-admin-act-consolidated). Section 65 provides the tax-related civil fine plus a daily fine not exceeding MVR 50; section 66 provides 0.05% per day on outstanding tax. Do not apply the old BPT penalty caps to GST without a current applicable authority. Refer arrears, deliberate inaccuracies and enforcement notices for a period-by-period legal calculation.
+
+## Completion checklist
+
+- Registration, sector, period, contracts, supply dates and bank completeness established.
+- Gross sales, platform deductions, credit sales and deposits reconciled without duplication.
+- Zero-rated/exempt/out-of-scope classifications and every input claim supported.
+- Shared costs, capital inputs, credit notes and carry-forward balances separately controlled.
+- Correct currency, exchange evidence, form fields, rounding and payment references reviewed.
+- Unresolved items and specialist referrals disclosed; acknowledgement and payment receipt retained.
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. All outputs must be reviewed by a qualified professional before filing.
 
 The most up-to-date version is maintained at [openaccountants.com](https://openaccountants.com).
 
-## Disclaimer
-
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
+
+
+## Sources
+
+| Source and actual material read | Official URL | Read on |
+|---|---|---|
+| MIRA-hosted English unofficial translation of GST Act 10/2011, consolidated 31 August 2026: sections 2-5, 8, 12-24, 27-29, 31-32, 36-48, 51-63 and definition of inbound tourism product | https://www.mira.gov.mv/Legislations/View/Goods-And-Services-Act-consolidated | 2026-11-16 |
+| Eighth amendment 10/2026: registration changes, inbound-tourism charging date and commencement section 31 | https://www.mira.gov.mv/Legislations/View/8th-amendment-to-the-gsta | 2026-11-16 |
+| MIRA English unofficial GST Regulation: sections 35-36, 41, 44-49, 52, 84-85 and 95; capital input restrictions and exchange conditions read | https://www.mira.gov.mv/Legislations/View/Goods-and-Services-Tax-Regulation-consolidated | 2026-11-16 |
+| MIRA 205 v25.1, all three pages: general GST computation, taxable activities and service-charge schedule | https://www.mira.gov.mv/Files/GetFile/0799ce24-cec8-4ab1-80ae-9302e7c2dcd6 | 2026-11-16 |
+| MIRA 206 v25.1, all three pages: tourism GST computation, taxable activities and service-charge schedule | https://www.mira.gov.mv/Files/GetFile/ecd5edc5-7180-4c28-a310-0865a45de2cb | 2026-11-16 |
+| MIRA GST filing page: portal, nil returns and return/statement links | https://www.mira.gov.mv/Pages/View/gsthowto | 2026-11-16 |
+| MIRA-hosted English unofficial Tax Administration Act consolidated 31 August 2026: sections 65-67 | https://www.mira.gov.mv/Legislations/View/tax-admin-act-consolidated | 2026-11-16 |
+
+MIRA's native downloads returned access errors; the official English HTML and linked form text were read through the web reader. These are authority-hosted translations, not a claim to have read the Dhivehi originals. The Dhivehi legal text prevails if the translation differs.
+
+Not yet confirmed: live MIRAconnect screen labels and payment-reference generation; overseas inbound-tourism return-specific fields; exact service-charge/Green Tax treatment for a particular guest bill or lease; any current GST penalty relief or cap beyond the cited general provisions. Obtain the missing official determination before finalizing an affected filing.
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-07-13. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `maldives-gst` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/maldives-gst. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-16. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `maldives-gst` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/maldives-gst. If neither is available, confirm every figure against the official source pages cited above before relying on it.
