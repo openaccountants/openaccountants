@@ -27,6 +27,7 @@ import subprocess
 import sys
 import zipfile
 from decimal import Decimal
+from html.parser import HTMLParser
 
 # A URL may hold balanced brackets (gibraltarlaws.gov.gi/...(01-07-24).pdf).
 LINK_RE = re.compile(r"https?://(?:[^\s()|>\"\]]|\([^\s()|>\"\]]*\))+")
@@ -168,10 +169,11 @@ for _n in range(1, 201):
 _WORD_RE = re.compile(r"\b(" + "|".join(re.escape(w) for w in sorted(_WORD_VALUES, key=len, reverse=True))
                       + r")\s*(?:\(\s*[\d.,]+\s*\)\s*)?" + PERCENT_WORDS, re.IGNORECASE)
 _ENGLISH_VALUES = {w: n for n in range(1, 201) for w in _en(n)}
+_NUMBER_WORDS = {part for word in _ENGLISH_VALUES for part in re.split(r'[ -]+', word)}
+_NUMBER_WORDS |= {'zero', 'a', 'half', 'thousand', 'million', 'billion', 'trillion', 'quadrillion', 'quintillion'}
+_NUMBER_TOKEN = '(?:' + '|'.join(sorted(_NUMBER_WORDS, key=len, reverse=True)) + ')'
 _HALF_PERCENT_RE = re.compile(
-    r"\b(?:(?P<whole>" + "|".join(re.escape(w).replace(r'\ ', r'\s+').replace(r'\-', r'-\s*')
-                                 for w in sorted(_ENGLISH_VALUES, key=len, reverse=True))
-    + r")\s+and\s+)?(?:a\s+half|one[ -]half|half)\s*"
+    r'\b(?P<phrase>' + _NUMBER_TOKEN + r'(?:[\s-]+' + _NUMBER_TOKEN + r')*)\s*'
     + PERCENT_WORDS + r"\b", re.IGNORECASE)
 _SCALED_NUMBER_RE = re.compile(
     r"(?<![\w.,])(?P<number>(?:\d{1,3}(?:,\d{3})+|\d+)(?:\.\d+)?)"
@@ -193,8 +195,19 @@ def word_percent_values(page_text):
     for m in _WORD_RE.finditer(_strip_accents(page_text)):
         vals.add(float(_WORD_VALUES[m.group(1).lower()]))
     for m in _HALF_PERCENT_RE.finditer(page_text):
-        words = re.sub(r'-\s+', '-', re.sub(r'\s+', ' ', m.group('whole').lower())) if m.group('whole') else ''
-        whole = _ENGLISH_VALUES[words] if words else 0
+        words = re.sub(r'[\s-]+', ' ', m.group('phrase').lower())
+        fraction = re.search(r'(?:^| )(?:a half|one half|half)$', words)
+        if not fraction:
+            continue
+        prefix = words[:fraction.start()].strip()
+        if prefix:
+            if not prefix.endswith(' and'):
+                continue
+            whole = _ENGLISH_VALUES.get(prefix[:-4])
+            if whole is None:
+                continue  # An unsupported full cardinal must not become a smaller suffix rate.
+        else:
+            whole = 0
         vals.add(whole + 0.5)
     for m in re.finditer(r"百分之([一二两三四五六七八九十百]{1,4})", page_text):
         v = _zh_number(m.group(1))
@@ -280,6 +293,32 @@ def next_data_text(page):
     """Article bodies in Pages Router JSON, excluding analytics, IDs and other metadata."""
     bodies = []
 
+    class DataScripts(HTMLParser):
+        def __init__(self):
+            super().__init__(convert_charrefs=False)
+            self.active = False
+            self.buffer = []
+            self.scripts = []
+
+        def handle_starttag(self, tag, attrs):
+            if tag == 'script':
+                ids = [value for key, value in attrs if key == 'id']
+                self.active = ids == ['__NEXT_DATA__']
+                self.buffer = []
+
+        def handle_data(self, data):
+            if self.active:
+                self.buffer.append(data)
+
+        def handle_endtag(self, tag):
+            if tag == 'script' and self.active:
+                self.scripts.append(''.join(self.buffer))
+                self.active = False
+
+    parser = DataScripts()
+    parser.feed(page)
+    parser.close()
+
     def article_bodies(node):
         if not isinstance(node, dict):
             return
@@ -290,9 +329,7 @@ def next_data_text(page):
         for key in ('article', 'post', 'news', 'news_detail', 'news_detial', 'response', 'data'):
             article_bodies(node.get(key))
 
-    for attrs, body in re.findall(r'<script\b([^>]*)>(.*?)</script\s*>', page, re.I | re.S):
-        if not re.search(r'''(?:^|\s)id\s*=\s*(["'])__NEXT_DATA__\1''', attrs, re.I):
-            continue
+    for body in parser.scripts:
         try:
             data = json.loads(body)
         except (ValueError, TypeError):

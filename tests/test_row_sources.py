@@ -54,6 +54,8 @@ class RowSources(unittest.TestCase):
             ('one and a half percentum', '1.5%'),
             ('ONE AND A\nHALF PERCENTUM', '1.5%'),
             ('one and one-half per cent', '1.5%'),
+            ('one and one-\nhalf percentum', '1.5%'),
+            ('one-hundred and a half percentum', '100.5%'),
             ('two and a half percent', '2.5%'),
             ('twenty-one and a half percentum', '21.5%'),
             ('twenty one and a half percentum', '21.5%'),
@@ -77,6 +79,10 @@ class RowSources(unittest.TestCase):
             ('section one and a half; chapter percentum', '1.5%'),
             ('twenty\none and a half percentum', '1.5%'),
             ('twenty-\none and a half percentum', '1.5%'),
+            ('one and one-\nhalf percentum', '0.5%'),
+            ('three hundred and a half percentum', '0.5%'),
+            ('two hundred and one and a half percentum', '1.5%'),
+            ('one-hundred and a half percentum', '0.5%'),
         ]:
             with self.subTest(page=page, wrong=figure):
                 text = skill(f'| Charge | {figure} | [law]({A}) |')
@@ -159,9 +165,20 @@ class RowSources(unittest.TestCase):
             '<script id="__NEXT_DATA__">{not valid JSON 2.75%}</script>',
             '<script data-id="__NEXT_DATA__">{"props":{"pageProps":{"body":"2.75%"}}}</script>',
             '<script id="analytics">{"props":{"pageProps":{"body":"2.75%"}}}</script>',
+            '''<script data-title=' id="__NEXT_DATA__"'>{"props":{"pageProps":{"body":"2.75%"}}}</script>''',
+            '''<script id="analytics" data-title=' id="__NEXT_DATA__"'>{"props":{"pageProps":{"body":"2.75%"}}}</script>''',
+            '''<script id="analytics" id="__NEXT_DATA__">{"props":{"pageProps":{"body":"2.75%"}}}</script>''',
         ]:
             with self.subTest(page=page):
                 self.assertFalse(rs.found('2.75%', rs.page_values(rs.read_bytes(page.encode()))))
+
+    def test_next_data_uses_real_single_double_or_unquoted_id(self):
+        body = json.dumps({'props': {'pageProps': {'article': {'body': 'Actual article 2.75%'}}}})
+        for attrs in ['id="__NEXT_DATA__"', "id='__NEXT_DATA__'", 'ID=__NEXT_DATA__',
+                      '''data-title=' id="analytics"' id="__NEXT_DATA__"''']:
+            with self.subTest(attrs=attrs):
+                text = rs.read_bytes(('<script ' + attrs + '>' + body + '</script>').encode())
+                self.assertTrue(rs.found('2.75%', rs.page_values(text)))
 
     def test_next_data_article_script_and_style_are_not_source_text(self):
         data = {'props': {'pageProps': {'article': {'body': '<p>5%</p><script>9.75%</script><style>8.25%</style>'}}}}
