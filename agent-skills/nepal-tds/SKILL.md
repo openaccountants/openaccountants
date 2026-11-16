@@ -1,128 +1,182 @@
 ---
 name: nepal-tds
-description: "ALWAYS read this skill before touching any Nepal TDS / withholding tax work. Use whenever asked to compute or deduct Nepal withholding tax (TDS) on rent, interest, dividends, service/contract payments, or payments to non-residents under the Income Tax Act 2058. Trigger on phrases like \"Nepal TDS\", \"Nepal withholding\", \"TDS rates Nepal\", \"Section 88 Nepal\", \"rent TDS Nepal 10%\", \"dividend TDS Nepal 5%\", \"interest TDS Nepal 6%\", \"contract TDS Nepal 1.5%\", or \"FY 2082/83 TDS\". Out of scope — personal income tax computation (separate skill), corporate tax (separate skill), payroll/SSF salary TDS (use the payroll skill), and VAT."
+description: "ALWAYS read this skill before touching any Nepal TDS / withholding tax work. Use whenever asked to compute or deduct Nepal withholding tax (TDS) on rent, interest, dividends, service/contract payments, or payments to non-residents under the Income Tax Act 2058. Trigger on phrases like \"Nepal TDS\", \"Nepal withholding\", \"TDS rates Nepal\", \"Section 88 Nepal\", \"rent TDS Nepal 10%\", \"dividend TDS Nepal 5%\", \"interest TDS Nepal 6%\", \"contract TDS Nepal 1.5%\", or \"FY 2082/83 TDS\". Out of scope ; personal income tax computation (separate skill), corporate tax (separate skill), payroll/SSF salary TDS (use the payroll skill), and VAT."
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/nepal-tds"
   jurisdiction: "NP"
-  tax_year: "2025"
-  last_updated: "2026-07-13"
+  tax_year: "2026"
+  last_updated: "2026-11-15"
 ---
 
-# Nepal Tds
+# Nepal TDS and withholding tax
 
-## Nepal — TDS / Withholding Tax — Skill v1.0
+## Scope
 
-> **Produced by OpenAccountants (openaccountants.com).** Research-grade (tier 2) for FY 2082/83. **Source provenance:** figures derive from Nepali professional-firm publications (PKF T.R. Upadhya, Union Nepal) reflecting the Income Tax Act 2058 §87–§88 and Finance Act 2082 — not re-anchored to primary IRD pages. A Nepali CA must confirm against the statute before reliance. Not tax advice.
+Compute common non-salary Nepal-source withholding for a resident payer. Calendar 2026 spans FY 2082/83 and FY 2083/84. The table below applies in both periods except the expressly dated insurance-agent change. This is a source-cited draft; this version has no accountant approval.
 
-## Rates and thresholds
+Load `nepal-payroll` for salary withholding and SSF, `nepal-income-tax` for the recipient's annual computation, `nepal-corporate-tax` for companies, and `nepal-vat` for VAT. A withholding percentage does not decide VAT or final annual liability.
 
-> Items flagged for further clarification are tracked separately and excluded here.
-> This block is generated from verified `skill_facts` — edit the facts, not the prose.
+## Ask the client first
 
-### TDS (Withholding)
+- Payment date and Nepali income year; gross consideration, invoice VAT and any contractual gross-up.
+- Payer and payee residence, natural person or entity, PAN and verified VAT status.
+- Exact payment category, contract and any related payments under that contract.
+- Whether interest is connected with a business, the lender's legal status and any statutory exemption.
+- For rent, the owner's legal identity and whether this is house rent, vehicle hire or another rental.
+- For a foreign recipient, treaty residence, beneficial entitlement, permanent establishment and any IRD notice. Missing facts stop a final computation; a higher assumed rate is not a legal default.
 
-- **Rent (paid by a resident person)** — 10%  _(Income Tax Act 2058 s.88 (PKF s.7.1))_
-- **Dividend (resident company/partnership)** — 5% (resident AND non-resident)  _(PKF s.7.1)_
-- **Interest (Nepal source) — natural person not in business** — 6%  _(PKF s.7.1; Union Nepal)_
-- **Interest (Nepal source) — entities** — 15%  _(PKF s.7.1)_
-- **Contract/agreement payment to a non-resident** — 5%  _(PKF s.7.1)_
-- **Resident contract/supply payments exceeding NPR 50,000** — 1.5%  _(PKF s.7.1)_
-- **Flat 15% Section 88 on interest/rent/service** — REFUTED — do not use; the effective rates above govern  _(PKF s.7.1)_
-- **10% dividend TDS** — 5% (10% figure refuted)  _(PKF s.7.1)_
-- **Non-resident service/royalty/technical fees + DTAA** — 15% standard TDS (subject to lower rates if a DTAA applies)  _(Income Tax Act 2058 s.88)_
-- **TDS deposit / return due dates** — 25th of the following Nepali month  _(Income Tax Act 2058 s.90)_
-- **Consultancy & Service Fees (Resident)** — 1.5% (if VAT registered) / 15% (if not VAT registered)  _(Income Tax Act 2058 s.88)_
-- **Freight & Transportation Services** — 1.5% (if VAT registered) / 2.5% (if not VAT registered)  _(Income Tax Act 2058 s.88)_
-- **Windfall Gains (Prizes, Lottery)** — 25% (Final withholding)  _(Income Tax Act 2058 s.88)_
+## The method, step by step
 
-## Section 1 — Quick reference (rates, FY 2082/83 — "no change" from FY 2024-25)
+### 1. Identify the statutory category
 
-**Payment type / Rate / Notes**
+Employment goes to section 87; investment returns and services go to section 88; windfalls to section 88A; qualifying supply, labour and construction/installation contracts to section 89. Section 89 excludes payments already covered by sections 87, 88 or 88A and exempt payments. Section 89(4)(क) also excludes payments to a natural person not carrying on a business, except the specified Nepal-source land/house/fixtures rent; establish this payee condition before using a contract rate. This is distinct from section 88(4)'s exclusion for non-business payments made by a natural-person payer. Do not move a consultancy invoice into the contract category just because a contract exists. [Act §§87-89, including the contract definition and exclusions](https://giwmscdnone.gov.np/media/pdf_upload/%E0%A4%86%E0%A4%AF%E0%A4%95%E0%A4%B0%20%E0%A4%90%E0%A4%A8%2C%20%E0%A5%A8%E0%A5%A6%E0%A5%AB%E0%A5%AE%20(%E0%A4%86%E0%A4%B0%E0%A5%8D%E0%A4%A5%E0%A4%BF%E0%A4%95%20%E0%A4%90%E0%A4%A8%2C%E0%A5%A8%E0%A5%A6%E0%A5%AE%E0%A5%A8%20%E0%A4%B2%E0%A5%87%20%E0%A4%97%E0%A4%B0%E0%A5%87%E0%A4%95%E0%A5%8B%20%E0%A4%B8%E0%A4%82%E0%A4%B6%E0%A5%8B%E0%A4%A7%E0%A4%A8%20%E0%A4%B8%E0%A4%B9%E0%A4%BF%E0%A4%A4)_7h85rod.pdf#page=107).
 
-| Payment type | Rate | Notes |
-| --- | --- | --- |
-| **Rent** (paid by a resident person) | **10%** |  |
-| **Dividend** (paid by resident company / partnership) | **5%** | Same to resident AND non-resident |
-| **Interest** (Nepal source, from resident banks / FIs / cooperatives / debenture issuers / listed companies) | **6%** to a natural person (not in business); **15%** to entities |  |
-| **Contract / agreement payment to a non-resident** | **5%** |  |
-| **Contract payments exceeding NPR 50,000** | **1.5%** | Resident contract/supply payments |
+### 2. Apply the conditional rate
 
-**Field / Value**
+Figures written as words in the Act are shown as numerals below (in words on the page). Use the payment base required by the section; establish consideration separately from separately invoiced VAT, and refer unresolved gross-up or bundled invoices.
 
-| Field | Value |
-| --- | --- |
-| Country / authority | Nepal — Inland Revenue Department (IRD), ird.gov.np |
-| Statute | Income Tax Act 2058 (2002) §87–§88, as amended by Finance Act 2082 |
-| Income year | Shrawan 1 – Ashad end (BS); FY 2082/83 |
-| Skill version | 1.0 |
+| Payment and complete condition | Rate and period | Official provision |
+|---|---|---|
+| Nepal-source interest, royalty, service fee, commission, sales bonus or other return paid by a resident person; only where no specific exception or exemption applies | 15%; both periods | [§88(1)](https://giwmscdnone.gov.np/media/pdf_upload/%E0%A4%86%E0%A4%AF%E0%A4%95%E0%A4%B0%20%E0%A4%90%E0%A4%A8%2C%20%E0%A5%A8%E0%A5%A6%E0%A5%AB%E0%A5%AE%20(%E0%A4%86%E0%A4%B0%E0%A5%8D%E0%A4%A5%E0%A4%BF%E0%A4%95%20%E0%A4%90%E0%A4%A8%2C%E0%A5%A8%E0%A5%A6%E0%A5%AE%E0%A5%A8%20%E0%A4%B2%E0%A5%87%20%E0%A4%97%E0%A4%B0%E0%A5%87%E0%A4%95%E0%A5%8B%20%E0%A4%B8%E0%A4%82%E0%A4%B6%E0%A5%8B%E0%A4%A7%E0%A4%A8%20%E0%A4%B8%E0%A4%B9%E0%A4%BF%E0%A4%A4)_7h85rod.pdf#page=107) (in words on the page) |
+| Nepal-source rent paid by a resident person, subject to the house-rent and vehicle exceptions below | 10%; both periods | [§88(1), proviso (5)](https://giwmscdnone.gov.np/media/pdf_upload/%E0%A4%86%E0%A4%AF%E0%A4%95%E0%A4%B0%20%E0%A4%90%E0%A4%A8%2C%20%E0%A5%A8%E0%A5%A6%E0%A5%AB%E0%A5%AE%20(%E0%A4%86%E0%A4%B0%E0%A5%8D%E0%A4%A5%E0%A4%BF%E0%A4%95%20%E0%A4%90%E0%A4%A8%2C%E0%A5%A8%E0%A5%A6%E0%A5%AE%E0%A5%A8%20%E0%A4%B2%E0%A5%87%20%E0%A4%97%E0%A4%B0%E0%A5%87%E0%A4%95%E0%A5%8B%20%E0%A4%B8%E0%A4%82%E0%A4%B6%E0%A5%8B%E0%A4%A7%E0%A4%A8%20%E0%A4%B8%E0%A4%B9%E0%A4%BF%E0%A4%A4)_7h85rod.pdf#page=108) (in words on the page) |
+| House rent received by a natural person | No federal withholding under this provision; establish any separate local rental tax instead | [§88(1), proviso (5)(ख)](https://giwmscdnone.gov.np/media/pdf_upload/%E0%A4%86%E0%A4%AF%E0%A4%95%E0%A4%B0%20%E0%A4%90%E0%A4%A8%2C%20%E0%A5%A8%E0%A5%A6%E0%A5%AB%E0%A5%AE%20(%E0%A4%86%E0%A4%B0%E0%A5%8D%E0%A4%A5%E0%A4%BF%E0%A4%95%20%E0%A4%90%E0%A4%A8%2C%E0%A5%A8%E0%A5%A6%E0%A5%AE%E0%A5%A8%20%E0%A4%B2%E0%A5%87%20%E0%A4%97%E0%A4%B0%E0%A5%87%E0%A4%95%E0%A5%8B%20%E0%A4%B8%E0%A4%82%E0%A4%B6%E0%A5%8B%E0%A4%A7%E0%A4%A8%20%E0%A4%B8%E0%A4%B9%E0%A4%BF%E0%A4%A4)_7h85rod.pdf#page=108) |
+| Vehicle rent paid to a VAT-registered person carrying on a vehicle-rental business | 1.5%; both periods | [§88(1), proviso (5)(क)](https://giwmscdnone.gov.np/media/pdf_upload/%E0%A4%86%E0%A4%AF%E0%A4%95%E0%A4%B0%20%E0%A4%90%E0%A4%A8%2C%20%E0%A5%A8%E0%A5%A6%E0%A5%AB%E0%A5%AE%20(%E0%A4%86%E0%A4%B0%E0%A5%8D%E0%A4%A5%E0%A4%BF%E0%A4%95%20%E0%A4%90%E0%A4%A8%2C%E0%A5%A8%E0%A5%A6%E0%A5%AE%E0%A5%A8%20%E0%A4%B2%E0%A5%87%20%E0%A4%97%E0%A4%B0%E0%A5%87%E0%A4%95%E0%A5%8B%20%E0%A4%B8%E0%A4%82%E0%A4%B6%E0%A5%8B%E0%A4%A7%E0%A4%A8%20%E0%A4%B8%E0%A4%B9%E0%A4%BF%E0%A4%A4)_7h85rod.pdf#page=108) (in words on the page) |
+| Dividend paid by a resident company or partnership | 5%, including a non-resident recipient; final withholding under §92 | [§88(2)(क)](https://giwmscdnone.gov.np/media/pdf_upload/%E0%A4%86%E0%A4%AF%E0%A4%95%E0%A4%B0%20%E0%A4%90%E0%A4%A8%2C%20%E0%A5%A8%E0%A5%A6%E0%A5%AB%E0%A5%AE%20(%E0%A4%86%E0%A4%B0%E0%A5%8D%E0%A4%A5%E0%A4%BF%E0%A4%95%20%E0%A4%90%E0%A4%A8%2C%E0%A5%A8%E0%A5%A6%E0%A5%AE%E0%A5%A8%20%E0%A4%B2%E0%A5%87%20%E0%A4%97%E0%A4%B0%E0%A5%87%E0%A4%95%E0%A5%8B%20%E0%A4%B8%E0%A4%82%E0%A4%B6%E0%A5%8B%E0%A4%A7%E0%A4%A8%20%E0%A4%B8%E0%A4%B9%E0%A4%BF%E0%A4%A4)_7h85rod.pdf#page=110); [§92(1)(क),(च)](https://giwmscdnone.gov.np/media/pdf_upload/%E0%A4%86%E0%A4%AF%E0%A4%95%E0%A4%B0%20%E0%A4%90%E0%A4%A8%2C%20%E0%A5%A8%E0%A5%A6%E0%A5%AB%E0%A5%AE%20(%E0%A4%86%E0%A4%B0%E0%A5%8D%E0%A4%A5%E0%A4%BF%E0%A4%95%20%E0%A4%90%E0%A4%A8%2C%E0%A5%A8%E0%A5%A6%E0%A5%AE%E0%A5%A8%20%E0%A4%B2%E0%A5%87%20%E0%A4%97%E0%A4%B0%E0%A5%87%E0%A4%95%E0%A5%8B%20%E0%A4%B8%E0%A4%82%E0%A4%B6%E0%A5%8B%E0%A4%A7%E0%A4%A8%20%E0%A4%B8%E0%A4%B9%E0%A4%BF%E0%A4%A4)_7h85rod.pdf#page=115) (in words on the page) |
+| Nepal-source deposit/debenture/government-bond interest paid by a listed company, resident bank, financial institution, cooperative or other statutory bond issuer to a natural person, unrelated to carrying on a business | 6%; both periods; final treatment subject to §92 | [§88(3)](https://giwmscdnone.gov.np/media/pdf_upload/%E0%A4%86%E0%A4%AF%E0%A4%95%E0%A4%B0%20%E0%A4%90%E0%A4%A8%2C%20%E0%A5%A8%E0%A5%A6%E0%A5%AB%E0%A5%AE%20(%E0%A4%86%E0%A4%B0%E0%A5%8D%E0%A4%A5%E0%A4%BF%E0%A4%95%20%E0%A4%90%E0%A4%A8%2C%E0%A5%A8%E0%A5%A6%E0%A5%AE%E0%A5%A8%20%E0%A4%B2%E0%A5%87%20%E0%A4%97%E0%A4%B0%E0%A5%87%E0%A4%95%E0%A5%8B%20%E0%A4%B8%E0%A4%82%E0%A4%B6%E0%A5%8B%E0%A4%A7%E0%A4%A8%20%E0%A4%B8%E0%A4%B9%E0%A4%BF%E0%A4%A4)_7h85rod.pdf#page=110); [§92(1)(ङ)](https://giwmscdnone.gov.np/media/pdf_upload/%E0%A4%86%E0%A4%AF%E0%A4%95%E0%A4%B0%20%E0%A4%90%E0%A4%A8%2C%20%E0%A5%A8%E0%A5%A6%E0%A5%AB%E0%A5%AE%20(%E0%A4%86%E0%A4%B0%E0%A5%8D%E0%A4%A5%E0%A4%BF%E0%A4%95%20%E0%A4%90%E0%A4%A8%2C%E0%A5%A8%E0%A5%A6%E0%A5%AE%E0%A5%A8%20%E0%A4%B2%E0%A5%87%20%E0%A4%97%E0%A4%B0%E0%A5%87%E0%A4%95%E0%A5%8B%20%E0%A4%B8%E0%A4%82%E0%A4%B6%E0%A5%8B%E0%A4%A7%E0%A4%A8%20%E0%A4%B8%E0%A4%B9%E0%A4%BF%E0%A4%A4)_7h85rod.pdf#page=115) (in words on the page) |
+| Interest to an entity where no special exemption or rate applies | 15%; do not apply to exempt interest or interest paid to a resident bank/financial institution | [§88(1),(4)](https://giwmscdnone.gov.np/media/pdf_upload/%E0%A4%86%E0%A4%AF%E0%A4%95%E0%A4%B0%20%E0%A4%90%E0%A4%A8%2C%20%E0%A5%A8%E0%A5%A6%E0%A5%AB%E0%A5%AE%20(%E0%A4%86%E0%A4%B0%E0%A5%8D%E0%A4%A5%E0%A4%BF%E0%A4%95%20%E0%A4%90%E0%A4%A8%2C%E0%A5%A8%E0%A5%A6%E0%A5%AE%E0%A5%A8%20%E0%A4%B2%E0%A5%87%20%E0%A4%97%E0%A4%B0%E0%A5%87%E0%A4%95%E0%A5%8B%20%E0%A4%B8%E0%A4%82%E0%A4%B6%E0%A5%8B%E0%A4%A7%E0%A4%A8%20%E0%A4%B8%E0%A4%B9%E0%A4%BF%E0%A4%A4)_7h85rod.pdf#page=107); [§88(4)(ख)](https://giwmscdnone.gov.np/media/pdf_upload/%E0%A4%86%E0%A4%AF%E0%A4%95%E0%A4%B0%20%E0%A4%90%E0%A4%A8%2C%20%E0%A5%A8%E0%A5%A6%E0%A5%AB%E0%A5%AE%20(%E0%A4%86%E0%A4%B0%E0%A5%8D%E0%A4%A5%E0%A4%BF%E0%A4%95%20%E0%A4%90%E0%A4%A8%2C%E0%A5%A8%E0%A5%A6%E0%A5%AE%E0%A5%A8%20%E0%A4%B2%E0%A5%87%20%E0%A4%97%E0%A4%B0%E0%A5%87%E0%A4%95%E0%A5%8B%20%E0%A4%B8%E0%A4%82%E0%A4%B6%E0%A5%8B%E0%A4%A7%E0%A4%A8%20%E0%A4%B8%E0%A4%B9%E0%A4%BF%E0%A4%A4)_7h85rod.pdf#page=110) (in words on the page) |
+| Service fee paid to a resident VAT-registered service provider, or to a resident entity carrying out VAT-exempt transactions | 1.5%; both periods | [§88(1), proviso (4)](https://giwmscdnone.gov.np/media/pdf_upload/%E0%A4%86%E0%A4%AF%E0%A4%95%E0%A4%B0%20%E0%A4%90%E0%A4%A8%2C%20%E0%A5%A8%E0%A5%A6%E0%A5%AB%E0%A5%AE%20(%E0%A4%86%E0%A4%B0%E0%A5%8D%E0%A4%A5%E0%A4%BF%E0%A4%95%20%E0%A4%90%E0%A4%A8%2C%E0%A5%A8%E0%A5%A6%E0%A5%AE%E0%A5%A8%20%E0%A4%B2%E0%A5%87%20%E0%A4%97%E0%A4%B0%E0%A5%87%E0%A4%95%E0%A5%8B%20%E0%A4%B8%E0%A4%82%E0%A4%B6%E0%A5%8B%E0%A4%A7%E0%A4%A8%20%E0%A4%B8%E0%A4%B9%E0%A4%BF%E0%A4%A4)_7h85rod.pdf#page=108) (in words on the page) |
+| Resident service fee outside that exception | 15% unless another specific rule applies | [§88(1)](https://giwmscdnone.gov.np/media/pdf_upload/%E0%A4%86%E0%A4%AF%E0%A4%95%E0%A4%B0%20%E0%A4%90%E0%A4%A8%2C%20%E0%A5%A8%E0%A5%A6%E0%A5%AB%E0%A5%AE%20(%E0%A4%86%E0%A4%B0%E0%A5%8D%E0%A4%A5%E0%A4%BF%E0%A4%95%20%E0%A4%90%E0%A4%A8%2C%E0%A5%A8%E0%A5%A6%E0%A5%AE%E0%A5%A8%20%E0%A4%B2%E0%A5%87%20%E0%A4%97%E0%A4%B0%E0%A5%87%E0%A4%95%E0%A5%8B%20%E0%A4%B8%E0%A4%82%E0%A4%B6%E0%A5%8B%E0%A4%A7%E0%A4%A8%20%E0%A4%B8%E0%A4%B9%E0%A4%BF%E0%A4%A4)_7h85rod.pdf#page=107) (in words on the page) |
+| Meeting/sitting fee falling within §88 service fees, rather than employment or an exempt payment | 15% residual rate; apply the statutory payer/category exceptions first | [§2(कम), continuation](https://giwmscdnone.gov.np/media/pdf_upload/%E0%A4%86%E0%A4%AF%E0%A4%95%E0%A4%B0%20%E0%A4%90%E0%A4%A8%2C%20%E0%A5%A8%E0%A5%A6%E0%A5%AB%E0%A5%AE%20(%E0%A4%86%E0%A4%B0%E0%A5%8D%E0%A4%A5%E0%A4%BF%E0%A4%95%20%E0%A4%90%E0%A4%A8%2C%E0%A5%A8%E0%A5%A6%E0%A5%AE%E0%A5%A8%20%E0%A4%B2%E0%A5%87%20%E0%A4%97%E0%A4%B0%E0%A5%87%E0%A4%95%E0%A5%8B%20%E0%A4%B8%E0%A4%82%E0%A4%B6%E0%A5%8B%E0%A4%A7%E0%A4%A8%20%E0%A4%B8%E0%A4%B9%E0%A4%BF%E0%A4%A4)_7h85rod.pdf#page=16); [§88(1),(4)](https://giwmscdnone.gov.np/media/pdf_upload/%E0%A4%86%E0%A4%AF%E0%A4%95%E0%A4%B0%20%E0%A4%90%E0%A4%A8%2C%20%E0%A5%A8%E0%A5%A6%E0%A5%AB%E0%A5%AE%20(%E0%A4%86%E0%A4%B0%E0%A5%8D%E0%A4%A5%E0%A4%BF%E0%A4%95%20%E0%A4%90%E0%A4%A8%2C%E0%A5%A8%E0%A5%A6%E0%A5%AE%E0%A5%A8%20%E0%A4%B2%E0%A5%87%20%E0%A4%97%E0%A4%B0%E0%A5%87%E0%A4%95%E0%A5%8B%20%E0%A4%B8%E0%A4%82%E0%A4%B6%E0%A5%8B%E0%A4%A7%E0%A4%A8%20%E0%A4%B8%E0%A4%B9%E0%A4%BF%E0%A4%A4)_7h85rod.pdf#page=107) (in words on the page) |
+| Freight service or freight-vehicle rental | 2.5%; reduced to 1.5% when the recipient is VAT registered and carries on that freight/rental business | [§88(1), proviso (8)](https://giwmscdnone.gov.np/media/pdf_upload/%E0%A4%86%E0%A4%AF%E0%A4%95%E0%A4%B0%20%E0%A4%90%E0%A4%A8%2C%20%E0%A5%A8%E0%A5%A6%E0%A5%AB%E0%A5%AE%20(%E0%A4%86%E0%A4%B0%E0%A5%8D%E0%A4%A5%E0%A4%BF%E0%A4%95%20%E0%A4%90%E0%A4%A8%2C%E0%A5%A8%E0%A5%A6%E0%A5%AE%E0%A5%A8%20%E0%A4%B2%E0%A5%87%20%E0%A4%97%E0%A4%B0%E0%A5%87%E0%A4%95%E0%A5%8B%20%E0%A4%B8%E0%A4%82%E0%A4%B6%E0%A5%8B%E0%A4%A7%E0%A4%A8%20%E0%A4%B8%E0%A4%B9%E0%A4%BF%E0%A4%A4)_7h85rod.pdf#page=109) (in words on the page) |
+| Service fee or commission to a resident natural-person insurance agent | 20%, final withholding, from Shrawan 1, 2083; do not use the ordinary service/commission rate | [Finance Act §57(17),(20)](https://giwmscdnone.gov.np/media/pdf_upload/%E0%A4%86%E0%A4%B0%E0%A5%8D%E0%A4%A5%E0%A4%BF%E0%A4%95%20%E0%A4%B5%E0%A4%BF%E0%A4%A7%E0%A5%87%E0%A4%AF%E0%A4%95%2C%20%E0%A5%A8%E0%A5%A6%E0%A5%AE%E0%A5%A9_mqsvmdf.pdf#page=195); [§1(2)](https://giwmscdnone.gov.np/media/pdf_upload/%E0%A4%86%E0%A4%B0%E0%A5%8D%E0%A4%A5%E0%A4%BF%E0%A4%95%20%E0%A4%B5%E0%A4%BF%E0%A4%A7%E0%A5%87%E0%A4%AF%E0%A4%95%2C%20%E0%A5%A8%E0%A5%A6%E0%A5%AE%E0%A5%A9_mqsvmdf.pdf#page=1) (in words on the page) |
+| Resident contract/supply payment within §89, exceeding NPR 50,000 after the aggregation test | 1.5%; both periods | [§89(1)-(2)](https://giwmscdnone.gov.np/media/pdf_upload/%E0%A4%86%E0%A4%AF%E0%A4%95%E0%A4%B0%20%E0%A4%90%E0%A4%A8%2C%20%E0%A5%A8%E0%A5%A6%E0%A5%AB%E0%A5%AE%20(%E0%A4%86%E0%A4%B0%E0%A5%8D%E0%A4%A5%E0%A4%BF%E0%A4%95%20%E0%A4%90%E0%A4%A8%2C%E0%A5%A8%E0%A5%A6%E0%A5%AE%E0%A5%A8%20%E0%A4%B2%E0%A5%87%20%E0%A4%97%E0%A4%B0%E0%A5%87%E0%A4%95%E0%A5%8B%20%E0%A4%B8%E0%A4%82%E0%A4%B6%E0%A5%8B%E0%A4%A7%E0%A4%A8%20%E0%A4%B8%E0%A4%B9%E0%A4%BF%E0%A4%A4)_7h85rod.pdf#page=111) (in words on the page) |
+| Qualifying contract/agreement payment to a non-resident under §89(3)(क) | 5%; distinguish the 1.5% cases of premium paid to a non-resident insurance company, or commission paid out of premium received from a non-resident insurance company for reinsurance; also distinguish an IRD-notified rate and section 88 service/royalty payments | [§89(3)](https://giwmscdnone.gov.np/media/pdf_upload/%E0%A4%86%E0%A4%AF%E0%A4%95%E0%A4%B0%20%E0%A4%90%E0%A4%A8%2C%20%E0%A5%A8%E0%A5%A6%E0%A5%AB%E0%A5%AE%20(%E0%A4%86%E0%A4%B0%E0%A5%8D%E0%A4%A5%E0%A4%BF%E0%A4%95%20%E0%A4%90%E0%A4%A8%2C%E0%A5%A8%E0%A5%A6%E0%A5%AE%E0%A5%A8%20%E0%A4%B2%E0%A5%87%20%E0%A4%97%E0%A4%B0%E0%A5%87%E0%A4%95%E0%A5%8B%20%E0%A4%B8%E0%A4%82%E0%A4%B6%E0%A5%8B%E0%A4%A7%E0%A4%A8%20%E0%A4%B8%E0%A4%B9%E0%A4%BF%E0%A4%A4)_7h85rod.pdf#page=111); [§89(3)(ख)-(ग)](https://giwmscdnone.gov.np/media/pdf_upload/%E0%A4%86%E0%A4%AF%E0%A4%95%E0%A4%B0%20%E0%A4%90%E0%A4%A8%2C%20%E0%A5%A8%E0%A5%A6%E0%A5%AB%E0%A5%AE%20(%E0%A4%86%E0%A4%B0%E0%A5%8D%E0%A4%A5%E0%A4%BF%E0%A4%95%20%E0%A4%90%E0%A4%A8%2C%E0%A5%A8%E0%A5%A6%E0%A5%AE%E0%A5%A8%20%E0%A4%B2%E0%A5%87%20%E0%A4%97%E0%A4%B0%E0%A5%87%E0%A4%95%E0%A5%8B%20%E0%A4%B8%E0%A4%82%E0%A4%B6%E0%A5%8B%E0%A4%A7%E0%A4%A8%20%E0%A4%B8%E0%A4%B9%E0%A4%BF%E0%A4%A4)_7h85rod.pdf#page=112) (in words on the page) |
+| Ordinary windfall gains | 25%, final withholding; statutory qualifying national/international awards and Gazette exemptions are exceptions | [§88A](https://giwmscdnone.gov.np/media/pdf_upload/%E0%A4%86%E0%A4%AF%E0%A4%95%E0%A4%B0%20%E0%A4%90%E0%A4%A8%2C%20%E0%A5%A8%E0%A5%A6%E0%A5%AB%E0%A5%AE%20(%E0%A4%86%E0%A4%B0%E0%A5%8D%E0%A4%A5%E0%A4%BF%E0%A4%95%20%E0%A4%90%E0%A4%A8%2C%E0%A5%A8%E0%A5%A6%E0%A5%AE%E0%A5%A8%20%E0%A4%B2%E0%A5%87%20%E0%A4%97%E0%A4%B0%E0%A5%87%E0%A4%95%E0%A5%8B%20%E0%A4%B8%E0%A4%82%E0%A4%B6%E0%A5%8B%E0%A4%A7%E0%A4%A8%20%E0%A4%B8%E0%A4%B9%E0%A4%BF%E0%A4%A4)_7h85rod.pdf#page=111); [§92](https://giwmscdnone.gov.np/media/pdf_upload/%E0%A4%86%E0%A4%AF%E0%A4%95%E0%A4%B0%20%E0%A4%90%E0%A4%A8%2C%20%E0%A5%A8%E0%A5%A6%E0%A5%AB%E0%A5%AE%20(%E0%A4%86%E0%A4%B0%E0%A5%8D%E0%A4%A5%E0%A4%BF%E0%A4%95%20%E0%A4%90%E0%A4%A8%2C%E0%A5%A8%E0%A5%A6%E0%A5%AE%E0%A5%A8%20%E0%A4%B2%E0%A5%87%20%E0%A4%97%E0%A4%B0%E0%A5%87%E0%A4%95%E0%A5%8B%20%E0%A4%B8%E0%A4%82%E0%A4%B6%E0%A5%8B%E0%A4%A7%E0%A4%A8%20%E0%A4%B8%E0%A4%B9%E0%A4%BF%E0%A4%A4)_7h85rod.pdf#page=116) (in words on the page) |
 
-> **Refuted / do NOT use:** a flat 15% Section 88 TDS on interest/rent/service, and a 10% dividend TDS — both appear in some secondary commentary but were adversarially refuted; the effective FY 2082/83 rates above govern.
+For the contract threshold, aggregate payments in the **preceding 10 days**, under the same contract, by the payer or an associated person to the payee or an associated person. This is not a per-invoice threshold. The rate applies to the gross qualifying payment, not just the excess over the threshold. [§89(1)-(2)](https://giwmscdnone.gov.np/media/pdf_upload/%E0%A4%86%E0%A4%AF%E0%A4%95%E0%A4%B0%20%E0%A4%90%E0%A4%A8%2C%20%E0%A5%A8%E0%A5%A6%E0%A5%AB%E0%A5%AE%20(%E0%A4%86%E0%A4%B0%E0%A5%8D%E0%A4%A5%E0%A4%BF%E0%A4%95%20%E0%A4%90%E0%A4%A8%2C%E0%A5%A8%E0%A5%A6%E0%A5%AE%E0%A5%A8%20%E0%A4%B2%E0%A5%87%20%E0%A4%97%E0%A4%B0%E0%A5%87%E0%A4%95%E0%A5%8B%20%E0%A4%B8%E0%A4%82%E0%A4%B6%E0%A5%8B%E0%A4%A7%E0%A4%A8%20%E0%A4%B8%E0%A4%B9%E0%A4%BF%E0%A4%A4)_7h85rod.pdf#page=111).
 
-### Conservative defaults
+For section 88, payments by a natural person outside a business, exempt payments and payments covered by employment withholding are excluded as provided by subsection (4). The original blanket description of 15% as "refuted" was too broad: 15% is the statutory residual rate, while specific categories override it. Dividend withholding is 5%, not the legacy disputed 10%. [§88(1)-(4)](https://giwmscdnone.gov.np/media/pdf_upload/%E0%A4%86%E0%A4%AF%E0%A4%95%E0%A4%B0%20%E0%A4%90%E0%A4%A8%2C%20%E0%A5%A8%E0%A5%A6%E0%A5%AB%E0%A5%AE%20(%E0%A4%86%E0%A4%B0%E0%A5%8D%E0%A4%A5%E0%A4%BF%E0%A4%95%20%E0%A4%90%E0%A4%A8%2C%E0%A5%A8%E0%A5%A6%E0%A5%AE%E0%A5%A8%20%E0%A4%B2%E0%A5%87%20%E0%A4%97%E0%A4%B0%E0%A5%87%E0%A4%95%E0%A5%8B%20%E0%A4%B8%E0%A4%82%E0%A4%B6%E0%A5%8B%E0%A4%A7%E0%A4%A8%20%E0%A4%B8%E0%A4%B9%E0%A4%BF%E0%A4%A4)_7h85rod.pdf#page=107); [§88(2),(4)](https://giwmscdnone.gov.np/media/pdf_upload/%E0%A4%86%E0%A4%AF%E0%A4%95%E0%A4%B0%20%E0%A4%90%E0%A4%A8%2C%20%E0%A5%A8%E0%A5%A6%E0%A5%AB%E0%A5%AE%20(%E0%A4%86%E0%A4%B0%E0%A5%8D%E0%A4%A5%E0%A4%BF%E0%A4%95%20%E0%A4%90%E0%A4%A8%2C%E0%A5%A8%E0%A5%A6%E0%A5%AE%E0%A5%A8%20%E0%A4%B2%E0%A5%87%20%E0%A4%97%E0%A4%B0%E0%A5%87%E0%A4%95%E0%A5%8B%20%E0%A4%B8%E0%A4%82%E0%A4%B6%E0%A5%8B%E0%A4%A7%E0%A4%A8%20%E0%A4%B8%E0%A4%B9%E0%A4%BF%E0%A4%A4)_7h85rod.pdf#page=110).
 
-**Ambiguity / Default**
+A qualifying award in the statutory fields, including agriculture from Shrawan 1, 2083, is exempt up to NPR 500,000; only the excess is taxed, unless a Gazette exemption applies. Do not turn every lottery or commercial prize into an exempt award. [§88A(1)-(2)](https://giwmscdnone.gov.np/media/pdf_upload/%E0%A4%86%E0%A4%AF%E0%A4%95%E0%A4%B0%20%E0%A4%90%E0%A4%A8%2C%20%E0%A5%A8%E0%A5%A6%E0%A5%AB%E0%A5%AE%20(%E0%A4%86%E0%A4%B0%E0%A5%8D%E0%A4%A5%E0%A4%BF%E0%A4%95%20%E0%A4%90%E0%A4%A8%2C%E0%A5%A8%E0%A5%A6%E0%A5%AE%E0%A5%A8%20%E0%A4%B2%E0%A5%87%20%E0%A4%97%E0%A4%B0%E0%A5%87%E0%A4%95%E0%A5%8B%20%E0%A4%B8%E0%A4%82%E0%A4%B6%E0%A5%8B%E0%A4%A7%E0%A4%A8%20%E0%A4%B8%E0%A4%B9%E0%A4%BF%E0%A4%A4)_7h85rod.pdf#page=111); [Finance Act §57(18)](https://giwmscdnone.gov.np/media/pdf_upload/%E0%A4%86%E0%A4%B0%E0%A5%8D%E0%A4%A5%E0%A4%BF%E0%A4%95%20%E0%A4%B5%E0%A4%BF%E0%A4%A7%E0%A5%87%E0%A4%AF%E0%A4%95%2C%20%E0%A5%A8%E0%A5%A6%E0%A5%AE%E0%A5%A9_mqsvmdf.pdf#page=195).
 
-| Ambiguity | Default |
-| --- | --- |
-| Recipient natural person vs entity (interest) | Treat as entity (15%) and flag |
-| Resident vs non-resident recipient | Flag; non-resident service/royalty/technical fees beyond the 5% contract rate are VERIFY |
-| Contract payment near NPR 50,000 threshold | Apply 1.5% if it exceeds 50,000 |
+For final-tax classification, section 92(1)(ज) specifically covers meeting allowances up to NPR 20,000 per meeting and the listed occasional teaching/examination-related payments. Do not treat every meeting/service fee as final withholding; payments outside that provision require the ordinary advance/final classification test. [§92(1)(ज)](https://giwmscdnone.gov.np/media/pdf_upload/%E0%A4%86%E0%A4%AF%E0%A4%95%E0%A4%B0%20%E0%A4%90%E0%A4%A8%2C%20%E0%A5%A8%E0%A5%A6%E0%A5%AB%E0%A5%AE%20(%E0%A4%86%E0%A4%B0%E0%A5%8D%E0%A4%A5%E0%A4%BF%E0%A4%95%20%E0%A4%90%E0%A4%A8%2C%E0%A5%A8%E0%A5%A6%E0%A5%AE%E0%A5%A8%20%E0%A4%B2%E0%A5%87%20%E0%A4%97%E0%A4%B0%E0%A5%87%E0%A4%95%E0%A5%8B%20%E0%A4%B8%E0%A4%82%E0%A4%B6%E0%A5%8B%E0%A4%A7%E0%A4%A8%20%E0%A4%B8%E0%A4%B9%E0%A4%BF%E0%A4%A4)_7h85rod.pdf#page=116).
 
-## Section 2 — Refusal catalogue
+### 3. Compute and document
 
-- **R-NP-TDS-1 — Salary TDS** — Employment withholding sequences with SSF — use `nepal-payroll`.
-- **R-NP-TDS-2 — Non-resident service/royalty/technical fees + DTAA** — Beyond the 5% non-resident contract rate, the full non-resident Section 88 schedule and treaty overrides were NOT established — VERIFY; escalate.
-- **R-NP-TDS-3 — Full Section 88 schedule** — Many payment categories exist beyond those listed; this skill covers the common ones. Confirm the full §88 table for FY 2082/83.
+Withholding = qualifying payment base × applicable rate. Net cash = gross payment less withholding, with invoice VAT and any other charges reconciled separately. Record why the category and exception apply, recipient PAN, gross amount, payment date, rate, tax, net payment and deposit reference. A bank label alone cannot establish residence, business connection or an exemption.
 
-## Section 3 — Tier 1 rules
+## Boundary and exception table
 
-- **Tier 1 rules intro** — 
+| Situation | Treatment |
+|---|---|
+| R-NP-TDS-1: Salary TDS | Use `nepal-payroll`; do not substitute a flat service rate. |
+| R-NP-TDS-2: Foreign service, royalty, technical fee or treaty claim | The domestic residual rate is in §88, but a final answer requires source, recipient and treaty analysis. Refer when those facts or the applicable treaty are absent. A 5% non-resident contract rate is not universal. |
+| R-NP-TDS-3: Payment not in this common-category table | Open the full current §88/§89 schedule and any amending notice. This is not an exhaustive payment catalogue. |
+| Interest recipient or VAT status unknown | Hold the final classification; do not assume an entity or infer registration from a bank narration. |
+| Non-business individual payer | Apply the section 88(4) payer exclusions before choosing a rate. |
+| Contract payee is a natural person not carrying on a business | Apply section 89(4)(क): exclude the payment except the specified Nepal-source land/house/fixtures rent. Do not confuse the payee test with the section 88 payer test. |
+| Federal house-rent exclusion | Do not equate no federal TDS with exemption from local house-rent tax; local rate/return requires separate sourcing. |
 
-### 3.1 Rent — 10%
+## Worked cases
 
-- **Rent** — TDS of 10% on rent paid by a resident person.
+These amounts are hypothetical inputs, not statutory thresholds. No gross-up is assumed and any invoice VAT is separately resolved.
 
-### 3.2 Dividend — 5%
+### 1. Rent: entity versus natural-person house owner
 
-- **Dividend** — TDS of 5% on dividends paid by a resident company/partnership — to both resident and non-resident recipients.
+The retained NPR 200,000 rent example needs the landlord's identity. If the recipient is a resident company and ordinary 10% rent withholding applies, TDS is NPR 20,000 and net rent NPR 180,000. If it is house rent received by a natural person, this federal provision requires no withholding: NPR 0, with local rental-tax treatment checked separately. This is why "resident landlord" alone was insufficient.
 
-### 3.3 Interest — 6% / 15%
+```oa-check
+name: Rent owner changes federal withholding
+inputs:
+  rent: 200000
+steps:
+  - entity_tds: rent * 0.10
+  - entity_net: rent - entity_tds
+  - natural_person_federal_tds: rent * 0
+expected:
+  entity_tds: 20000
+  entity_net: 180000
+  natural_person_federal_tds: 0
+```
 
-- **Interest** — On Nepal-source interest paid by resident banks, financial institutions, cooperatives, debenture issuers, or listed companies: 6% to a natural person who is not deriving the interest in the course of business; 15% to entities.
+### 2. Non-business individual bank interest
 
-### 3.4 Contracts
+NPR 100,000 of qualifying Nepal-source bank interest to a natural person, unrelated to business, gives 6% × NPR 100,000 = NPR 6,000 withholding; cash NPR 94,000. An entity cannot use this natural-person exception.
 
-- **Contracts** — Payment under a contract/agreement to a non-resident: 5%. Resident contract/supply payments exceeding NPR 50,000: 1.5%. **Source:** PKF Trunco "Tax Rates 2082-83" §7.1 (each marked "No change"); Union Nepal TDS guide.  _(PKF Trunco "Tax Rates 2082-83" §7.1; Union Nepal TDS guide)_
+```oa-check
+name: Qualifying natural-person deposit interest
+inputs:
+  interest: 100000
+steps:
+  - tds: interest * 0.06
+  - net: interest - tds
+expected:
+  tds: 6000
+  net: 94000
+```
 
-## Section 4 — Worked examples
+### 3. Dividend
 
-- Rent NPR 200,000 to a resident landlord → TDS = 10% × 200,000 = **NPR 20,000**.
-- Bank interest NPR 100,000 to an individual (not in business) → TDS = 6% × 100,000 = **NPR 6,000**.
-- Dividend NPR 500,000 → TDS = 5% × 500,000 = **NPR 25,000**.
-- Resident supply contract NPR 300,000 → TDS = 1.5% × 300,000 = **NPR 4,500**.
+NPR 500,000 of qualifying resident-company dividend gives 5% × NPR 500,000 = NPR 25,000 final withholding and NPR 475,000 cash.
 
-## Section 5 — Filing
+```oa-check
+name: Resident-company dividend
+inputs:
+  dividend: 500000
+steps:
+  - tds: dividend * 0.05
+  - net: dividend - tds
+expected:
+  tds: 25000
+  net: 475000
+```
 
-TDS is deducted at payment and deposited to the IRD with a credit certificate to the payee. **Deposit/return due dates — VERIFY** against the IRD calendar (not established by the research).
+### 4. Resident supply contract
 
-## Section 6 — Sources
+NPR 300,000 of qualifying section 89 supply consideration gives 1.5% × NPR 300,000 = NPR 4,500 withholding and NPR 295,500 cash. It is not 1.5% of the amount above the threshold. Separate VAT and excluded payment categories must already have been resolved.
 
-Research-grade, FY 2082/83. **Secondary firm publications — re-anchor to primary IRD/statute (§87–§88):**
-1. PKF T.R. Upadhya & Co. "Tax Rates 2082-83" §7.1 — https://pkf.trunco.com.np/files/publications/1748841198_Tax%20Rates%202082-83_Final_250601_213028.pdf
-2. Union Nepal — TDS in Nepal — https://unionnepal.com/tds-in-nepal
-3. Income Tax Act 2058 (2002) §88 — confirm at https://ird.gov.np
+```oa-check
+name: Resident qualifying supply contract
+inputs:
+  payment: 300000
+steps:
+  - tds: payment * 0.015
+  - net: payment - tds
+expected:
+  tds: 4500
+  net: 295500
+```
 
-**Known gaps / VERIFY:** full §88 schedule; non-resident service/royalty/technical-fee rates + DTAA; deposit/return due dates.
+## When to refuse or refer
 
-## Prohibitions
+Do not issue a final withholding instruction with unresolved recipient identity, treaty, source, VAT status, payment base or statutory category. Do not assert every entity interest payment is taxable, every rent payment bears federal TDS, or every non-resident contract is a service fee. Never file automatically; produce a working paper for practitioner review.
 
-- NEVER use the refuted flat 15% (interest/rent/service) or 10% dividend rates — use the rates in §1.
-- NEVER apply the 6% interest rate to an entity recipient — entities are 15%.
-- NEVER assert non-resident service/royalty/technical-fee TDS this skill flags as VERIFY.
-- NEVER present these as primary-IRD-confirmed — flag for verifier re-anchoring.
-- NEVER file or instruct filing — working paper for practitioner review only.
+## Filing and payment
+
+At payment, deduct the applicable tax. Under section 90(1)-(2), submit the monthly withholding statement in IRD's prescribed format and deposit the tax **within 25 days after the Nepali month ends**. Section 90(4क) separately allows a person paying turnover tax under section 4(4क) to deposit Chapter 17 withheld advance tax when instalment tax is paid; do not treat that deposit-timing exception as eliminating the monthly statement obligation. An omitted deduction does not eliminate the payer's statutory liability. [§90](https://giwmscdnone.gov.np/media/pdf_upload/%E0%A4%86%E0%A4%AF%E0%A4%95%E0%A4%B0%20%E0%A4%90%E0%A4%A8%2C%20%E0%A5%A8%E0%A5%A6%E0%A5%AB%E0%A5%AE%20(%E0%A4%86%E0%A4%B0%E0%A5%8D%E0%A4%A5%E0%A4%BF%E0%A4%95%20%E0%A4%90%E0%A4%A8%2C%E0%A5%A8%E0%A5%A6%E0%A5%AE%E0%A5%A8%20%E0%A4%B2%E0%A5%87%20%E0%A4%97%E0%A4%B0%E0%A5%87%E0%A4%95%E0%A5%8B%20%E0%A4%B8%E0%A4%82%E0%A4%B6%E0%A5%8B%E0%A4%A7%E0%A4%A8%20%E0%A4%B8%E0%A4%B9%E0%A4%BF%E0%A4%A4)_7h85rod.pdf#page=113).
+
+Use the [IRD Taxpayer Portal](https://ird.gov.np/) and its eTDS facility: identify the payer PAN and period, enter the payee PAN, payment category and date, gross payment and tax, reconcile the statement total to payroll/payables, obtain the submission/reference number, complete the verification required by the account, and match the payment voucher to the statement. Do not call a saved draft a filed return. Exact current screen labels and category codes must be confirmed in the authenticated portal before submission.
+
+Issue the section 91 withholding certificate with payment and tax details. Generally it is due within 25 days after the withholding month ends; employment certificates follow the separate year-end/termination rule in `nepal-payroll`. [§91(1)-(3)](https://giwmscdnone.gov.np/media/pdf_upload/%E0%A4%86%E0%A4%AF%E0%A4%95%E0%A4%B0%20%E0%A4%90%E0%A4%A8%2C%20%E0%A5%A8%E0%A5%A6%E0%A5%AB%E0%A5%AE%20(%E0%A4%86%E0%A4%B0%E0%A5%8D%E0%A4%A5%E0%A4%BF%E0%A4%95%20%E0%A4%90%E0%A4%A8%2C%E0%A5%A8%E0%A5%A6%E0%A5%AE%E0%A5%A8%20%E0%A4%B2%E0%A5%87%20%E0%A4%97%E0%A4%B0%E0%A5%87%E0%A4%95%E0%A5%8B%20%E0%A4%B8%E0%A4%82%E0%A4%B6%E0%A5%8B%E0%A4%A7%E0%A4%A8%20%E0%A4%B8%E0%A4%B9%E0%A4%BF%E0%A4%A4)_7h85rod.pdf#page=114).
+
+Final withholding under section 92 is distinguished from an advance credit under section 93. Do not add final-tax income and its withholding again into the ordinary annual tax computation. [§92](https://giwmscdnone.gov.np/media/pdf_upload/%E0%A4%86%E0%A4%AF%E0%A4%95%E0%A4%B0%20%E0%A4%90%E0%A4%A8%2C%20%E0%A5%A8%E0%A5%A6%E0%A5%AB%E0%A5%AE%20(%E0%A4%86%E0%A4%B0%E0%A5%8D%E0%A4%A5%E0%A4%BF%E0%A4%95%20%E0%A4%90%E0%A4%A8%2C%E0%A5%A8%E0%A5%A6%E0%A5%AE%E0%A5%A8%20%E0%A4%B2%E0%A5%87%20%E0%A4%97%E0%A4%B0%E0%A5%87%E0%A4%95%E0%A5%8B%20%E0%A4%B8%E0%A4%82%E0%A4%B6%E0%A5%8B%E0%A4%A7%E0%A4%A8%20%E0%A4%B8%E0%A4%B9%E0%A4%BF%E0%A4%A4)_7h85rod.pdf#page=115); [§93](https://giwmscdnone.gov.np/media/pdf_upload/%E0%A4%86%E0%A4%AF%E0%A4%95%E0%A4%B0%20%E0%A4%90%E0%A4%A8%2C%20%E0%A5%A8%E0%A5%A6%E0%A5%AB%E0%A5%AE%20(%E0%A4%86%E0%A4%B0%E0%A5%8D%E0%A4%A5%E0%A4%BF%E0%A4%95%20%E0%A4%90%E0%A4%A8%2C%E0%A5%A8%E0%A5%A6%E0%A5%AE%E0%A5%A8%20%E0%A4%B2%E0%A5%87%20%E0%A4%97%E0%A4%B0%E0%A5%87%E0%A4%95%E0%A5%8B%20%E0%A4%B8%E0%A4%82%E0%A4%B6%E0%A5%8B%E0%A4%A7%E0%A4%A8%20%E0%A4%B8%E0%A4%B9%E0%A4%BF%E0%A4%A4)_7h85rod.pdf#page=116).
+
+## Completion checklist
+
+Confirm the period and recipient; record the exact statutory category and exception; test associated contract payments; recompute gross, withholding and net; reconcile submission and payment references; issue the certificate; flag every unresolved treaty or portal item for review.
+
+## Sources
+
+| Source and actual material read | Official URL | Read on |
+|---|---|---|
+| Read for Income Tax Act §2(कम) service-fee definition and §§87-93; common payments, exclusions, aggregation, certificates and final versus advance tax; PDF pages 15-16,107-116 | [Official text](https://giwmscdnone.gov.np/media/pdf_upload/%E0%A4%86%E0%A4%AF%E0%A4%95%E0%A4%B0%20%E0%A4%90%E0%A4%A8%2C%20%E0%A5%A8%E0%A5%A6%E0%A5%AB%E0%A5%AE%20(%E0%A4%86%E0%A4%B0%E0%A5%8D%E0%A4%A5%E0%A4%BF%E0%A4%95%20%E0%A4%90%E0%A4%A8%2C%E0%A5%A8%E0%A5%A6%E0%A5%AE%E0%A5%A8%20%E0%A4%B2%E0%A5%87%20%E0%A4%97%E0%A4%B0%E0%A5%87%E0%A4%95%E0%A5%8B%20%E0%A4%B8%E0%A4%82%E0%A4%B6%E0%A5%8B%E0%A4%A7%E0%A4%A8%20%E0%A4%B8%E0%A4%B9%E0%A4%BF%E0%A4%A4)_7h85rod.pdf) | 2026-11-15 |
+| Read for enacted Finance Act 2083 §1(2), §57(17)-(20); insurance-agent and award changes; PDF pages 1,195-196 | [Official text](https://giwmscdnone.gov.np/media/pdf_upload/%E0%A4%86%E0%A4%B0%E0%A5%8D%E0%A4%A5%E0%A4%BF%E0%A4%95%20%E0%A4%B5%E0%A4%BF%E0%A4%A7%E0%A5%87%E0%A4%AF%E0%A4%95%2C%20%E0%A5%A8%E0%A5%A6%E0%A5%AE%E0%A5%A9_mqsvmdf.pdf) | 2026-11-15 |
+
+Not yet confirmed: local house-rent tax rates and procedures; taxpayer-specific treaty entitlement, beneficial ownership and permanent-establishment analysis; current authenticated eTDS screen labels/category codes and any taxpayer-specific notice. No unresolved item is a usable default rate.
+
+Legacy provenance: the prior draft named PKF T.R. Upadhya & Co. and Union Nepal as secondary research material. The operative statements in this version are re-anchored to the official Act and enacted amendments above; the old instruction that nothing had been checked against primary sources no longer describes this version.
 
 ## Disclaimer
 
@@ -130,4 +184,4 @@ For informational and computational purposes only; not tax, legal, or financial 
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-07-13. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `nepal-tds` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/nepal-tds. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-15. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `nepal-tds` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/nepal-tds. If neither is available, confirm every figure against the official source pages cited above before relying on it.

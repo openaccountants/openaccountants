@@ -1,103 +1,108 @@
 ---
 name: taxes-and-small-businesses-in-nigeria-a-simple-guide-2
-description: Nigeria has a new tax law. It is called the Nigeria Tax Act 2025. It started on 1 January 2026. This law changed how small businesses pay tax.
+description: 'A plain-language Nigeria small-business tax decision for 2026: distinguish an individual or business name from a company, test company income-tax relief separately from VAT relief, record online and foreign receipts, obtain a Tax ID and prepare the required return. Corrects the older NGN 50m company threshold and supposed NGN 25m online-income exemption, while preserving the original contributor credit.'
 jurisdiction: NG
-tax_year: 2025
-last_updated: 2026-08-24
+tax_year: 2026
+last_updated: '2026-11-16'
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
+version: '1.1'
+type: decision
+category: international
 ---
 
-# Taxes and Small Businesses in Nigeria: A Simple Guide
+# Taxes and small businesses in Nigeria v1.1
 
-## Taxes and Small Businesses in Nigeria: A Simple Guide
+> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
-*Figures are for tax year 2026.*
+## Scope
 
-## What is happening?
+For a Nigerian resident running a shop, an artisan business, a professional practice or an online business in 2026. Start by deciding who earns the income: the individual or a separate company. A business name does not itself turn the owner into a company. The Nigeria Tax Act (NTA) commenced on 1 January 2026; earlier income needs the earlier-period rules, not a retrospective exemption. Federal administration is now the Nigeria Revenue Service (NRS); state and FCT personal-tax authorities remain separate. [NTA commencement, sections 3, 28 and 56](https://nass.gov.ng/documents/download/11249); [NTAA section 3](https://nass.gov.ng/documents/download/11250).
 
-Nigeria has a new tax law. It is called the Nigeria Tax Act 2025. It started on 1 January 2026. This law changed how small businesses pay tax.
+| Question | Current rule and conditions | Primary source |
+| --- | --- | --- |
+| Is a company small for income tax? | In the National Assembly NTA text: gross annual turnover no more than NGN 100,000,000 AND total fixed assets no more than NGN 250,000,000. Its definition has no professional-services exclusion. A qualifying company pays 0% company income tax and no development levy. The different older official copy is disclosed in ng-cit; do not mix definitions between copies. | [NTA definition of small company, sections 56 and 59](https://nass.gov.ng/documents/download/11249) |
+| If the company fails either test | Ordinary company income tax is 30% of total profits; development levy is 4% of assessable profits for a resident company outside the small-company exemption. Those bases can differ. A future reduction to 25% requires the Presidential order described in the Act; no order is assumed here. | [NTA sections 27, 56 and 59](https://nass.gov.ng/documents/download/11249) |
+| Is the individual automatically exempt because the shop is small? | No company exemption for a sole trader. The first NGN 800,000 of chargeable income is at 0%; higher slices use the personal bands, after eligible deductions. That is a chargeable-income band, not a turnover exemption. Other specific exemptions or presumptive rules require their own conditions. | [NTA sections 28 to 30 and Fourth Schedule](https://nass.gov.ng/documents/download/11249) |
+| Does the professional-services rule matter? | It excludes a professional-services business from the NTAA small-business VAT test. That test uses annual turnover no more than NGN 100,000,000 and fixed assets no more than NGN 250,000,000. A professional company can qualify for 0% company income tax and still have VAT obligations. | [NTAA section 22 and definition of Small Business](https://nass.gov.ng/documents/download/11250) |
 
-Before this law, small business owners had a hard time. A shop owner might pay tax to the local government, the state, and the federal government — all in one month. That is a lot of tax collectors asking for money for almost the same thing.
+## Ask the client first
 
-The new law tries to fix this. It brings many old tax rules together into one simple system. The office that collects federal tax used to be called FIRS. Now it is called the Nigeria Revenue Service (NRS). It is the same job, done under a new name and new rules.
-
-## What is a "small company"?
-
-The new law gives small companies a special name and special rules.
-
-- **Small company definition** — A company is called "small" if: It makes ₦50 million or less in a year, **and** its equipment, land, and buildings are worth ₦250 million or less. But businesses like law firms, accounting firms, and hospitals are **not** called "small," even if they make less money, because these businesses give special skills, so the law treats them differently.  _(Nigeria Tax Act (NTA) 2025 — Section 56)_
-
-## The good news for small businesses
-
-- **Company Income Tax for small businesses** — 0% percent (confirm before filing)  _(see nrs.gov.ng)_
-
-If a business is truly "small" under this law, something good happens: **it pays 0% Company Income Tax** (confirm before filing — see nrs.gov.ng). That means no tax at all on the company's profit.
-
-This is a big change. Before, some businesses paid tax even when they were not making much money. Now, the law looks at real profit, not just how big the business looks.
-
-- **Development Levy** — 4% of profit percent (confirm before filing; only medium and big companies pay it — small businesses do not pay it)  _(see nrs.gov.ng)_
-
-## Good news for individual people too
-
-- **Personal income tax exemption** — ₦800,000 or less in a year — no personal income tax (helps market women, artisans, and small workers who earn a little money)
-
-## But there is a catch
-
-- **Record-keeping requirement** — To get these good benefits, a small business must keep proper records. This means: Writing down every sale; Writing down every cost; Keeping proof, like receipts and bank statements. In the past, many small businesses kept records in a notebook, or just remembered things in their head. Now, the government wants digital records — records kept on a computer or phone, not just paper or memory. If a business cannot show good records, it might lose its "small business" benefits, even if it should qualify.  _(Nigeria Tax Administration Act (NTAA) 2025)_
-
-## New rules for online business too
-
-- **Online income taxable threshold** — If someone makes money online — like selling things on Instagram, teaching a class online, or making videos — and they earn more than ₦25 million a year, that money can now be taxed too. Before, this kind of income was often not checked at all.
-
-## Problems that might happen
-
-Even though the new law has good goals, some problems could happen:
-
-- **Confusion about who counts as "small."** A small accounting firm making ₦20 million will not get the same benefits as a small shop making the same amount, because of the professional-services rule. People need to understand this clearly.
-- **Hard for very small businesses to keep digital records.** The businesses that need help the most — very small, cash-based businesses — may find it hardest to keep the kind of records the law now asks for.
-- **State and local taxes are a separate problem.** This new law mostly deals with federal taxes. Many small business owners still complain about taxes and fees from local governments and markets. This law does not fully solve that.
+Use the existing records first. Establish the income year, legal entity, residence, all turnover and fixed assets, nature of services, employees, VAT status, Tax ID and past returns. Obtain sales/cost records, receipts, platform statements, bank statements and evidence of personal deductions. Do not ask again for facts already supplied. Stop a final calculation if the taxpayer, period or income cannot be established.
 
 ## The method, step by step
 
-If you want to actually claim small-company relief and file correctly, do the steps in this order. Skipping ahead or doing them out of sequence is the most common reason people lose the benefit they were entitled to.
+1. **Identify the owner and registration needed.** A company needs its incorporation evidence; an individual registers as an individual. The old instruction that every person must obtain an RC number before a Tax ID was wrong. NTAA section 4 requires every taxable person to obtain a Tax ID; it is not limited to incorporated companies. Route entity formation to [ng-formation](ng-formation.md). [NTAA sections 4 to 8](https://nass.gov.ng/documents/download/11250).
+2. **Measure turnover and fixed assets separately.** Check both company tests every year. Exactly at either limit still satisfies that limb in the National Assembly definition. Do not confuse receipts, profit and chargeable income. Keep an asset schedule and evidence supporting the classification. [NTA definitions and section 56](https://nass.gov.ng/documents/download/11249).
+3. **Check each tax separately.** Use [ng-cit](ng-cit.md) for the company, [ng-personal-income-tax](ng-personal-income-tax.md) for the owner, [nigeria-vat](nigeria-vat.md) for VAT and [ng-payroll](ng-payroll.md) if there are staff. Do not assume the company exemption also exempts payroll, local charges or the owner's salary/dividends. The professional-services distinction belongs to the VAT test above.
+4. **Record online income from the start.** Instagram and WhatsApp sales, an online store, paid classes, coaching, freelance work, subscriptions and YouTube/TikTok content can generate taxable business income. There is no general NGN 25 million online-income starting threshold in the law/guidelines read. Combine all platforms; reconcile gross customer earnings, platform fees, refunds and net bank payouts. Foreign payments through PayPal, Payoneer, Wise or a bank transfer must also be recorded; payment from abroad alone does not exempt a Nigerian resident's business profits. [NTA sections 4 and 12](https://nass.gov.ng/documents/download/11249); [JRB PIT Guidelines paragraph 21](https://cms-api.jrb.gov.ng/api/publication-assets/file/2026-pit-guidelines-TJG3n9-T%20%281%29.pdf).
+5. **Keep usable records throughout the year.** A notebook can be part of the evidence; the provisions read do not impose a universal digital-only condition for the company exemption. NTAA section 31 requires sufficient transaction records and provides for prescribed formats, English/translation and retention for at least 6 years after the relevant assessment year. A separate electronic-system direction must be checked where applicable. A phone app or computer is a practical recommendation, not the legal definition of small. Keep personal and business money separately and save invoices, transfer evidence and platform payout statements. [NTAA section 31](https://nass.gov.ng/documents/download/11250).
+6. **Prepare the return even at nil tax.** A company files under NTAA section 11; a small company can provide a taxpayer-attested statement of accounts under its proviso. Individual filing is under section 13 and JRB guidance. [ng-return-assembly](ng-return-assembly.md) gives the package and dates. No Tax ID, portal credential or payment reference is invented. Use the authority's current prescribed route; this text does not assert that every taxpayer uses Rev360. [NTAA sections 11 and 13](https://nass.gov.ng/documents/download/11250).
+7. **Recheck classification and outstanding duties annually.** Growth beyond either limit changes the company result. Keep evidence for the return and have the calculation reviewed before filing. Company relief does not settle separate state/local market fees or demands; identify the actual authority and legal basis instead of promising the reforms abolished them.
 
-1. **Register your business with the Corporate Affairs Commission (CAC) first, before anything else.** Everything after this step needs your CAC registration and RC number. If you try to get a Tax ID before you are registered with CAC, the process will not go through.
-2. **Get your Tax Identification Number (TIN) next.** Do this even if you believe your business will owe ₦0. A TIN is mandatory now, and it must exist before you can file anything on the NRS portal (Rev360). If you wait until filing season to get one, you risk missing your filing deadline.
-3. **Work out your turnover and your fixed assets separately, and check both.** You must be under ₦50 million turnover **and** under ₦250 million in fixed assets. If you check only one of these and skip the other, you may wrongly assume you qualify — and both conditions must be true at the same time, not just one.
-4. **Check the professional-services rule before you assume you qualify.** If your business is a law firm, accounting practice, hospital, or similar, you do not get small-company status no matter how low your turnover is. Doing this check late — after you have already told a client or filed as "small" — is harder to undo than checking it first.
-5. **Keep digital records all through the year, not just at filing time.** Records built after the fact, from memory or from bank statements alone, are weaker than records kept as sales and costs happen. If you leave record-keeping until filing season, you may not be able to reconstruct enough proof to support your ₦0 return.
-6. **File your annual return even if your tax is ₦0.** The exemption is not automatic — you must still complete and submit the return through the NRS portal to claim it. Businesses that assume "zero tax means no filing" are the ones that end up with compliance problems, not tax problems.
-7. **Recheck your classification every year, not once.** If your turnover grows past ₦50 million or your assets pass ₦250 million, you move out of small-company status. Filing this year the same way you filed last year, without rechecking, is how businesses miss the point at which they became liable for tax.
+## Boundary and exception table
 
-## What should small business owners do now?
+| Situation | Action |
+| --- | --- |
+| Accounting or other professional company with low turnover | Test company income tax and VAT separately. Do not repeat the old blanket denial of company relief. |
+| Very small cash business with incomplete records | Reconstruct the records. The presumptive-regime branch under NTA section 29 requires the actual applicable regulations; do not invent a tax percentage or loss of relief. |
+| Multiple online businesses or overseas customers | Aggregate and reconcile income, then apply residence/source and tax-specific rules. Foreign-tax relief needs separate evidence. |
+| Missing entity, assets, turnover or period evidence | Produce an incomplete working paper with the missing inputs named; do not choose the higher tax as a substitute for facts. |
+| Local/state demand, audit or dispute | Preserve the notice and refer the specific legal issue. The NTA does not establish that every local fee disappeared. |
 
-1. **Check if your business is really "small"** under the new rules — look at your income, your equipment value, and what kind of business you run.
-2. **Start keeping digital records now.** Use a phone app, a computer, or simple software to track money coming in and going out.
-3. **Keep business money and personal money separate.** Do not mix them. This makes it easier to prove what your business really earns.
-4. **Get a Tax ID and watch for updates** from the Nigeria Revenue Service (NRS), because new rules are still being explained.
-5. **Ask for help if you earn money online.** This is a new area, and it is easy to get wrong, so it deserves extra care:
-   - **Know what counts.** Money from selling on Instagram or WhatsApp, running an online store, teaching a paid online class, coaching, freelancing for clients abroad, or making paid content (YouTube, TikTok, and similar) can all count as taxable income once your total earnings cross the ₦25 million yearly mark.
-   - **Add up all your online income together, not one platform at a time.** If you sell on two apps and also do freelance work on the side, the law looks at your total earnings from all of it, not each stream on its own.
-   - **Foreign payments still count.** Money paid to you from outside Nigeria — through PayPal, Payoneer, Wise, or a foreign client's bank transfer — is still income earned by you, and it should be recorded and declared like any other income.
-   - **Keep proof for every online sale or payment.** Screenshots of transfers, invoices you send clients, platform payout statements, and your bank alerts are all useful records. Do not rely on memory or on the app's history alone, since platforms can change or delete old records.
-   - **Get a Tax ID (TIN) even if you are not sure you have crossed the threshold.** It is easier to register early and file correctly than to explain unregistered income later if your online business grows quickly.
-   - **Talk to a tax professional before, not after, a big year.** If your online income is growing, sit with an accountant or tax adviser to plan ahead — how to register, what records to keep, and whether you might also qualify for small-business relief on the rest of your business income.
+## Worked cases
 
-## The big idea
+Illustrative 2026 facts and arithmetic; full-year resident company, no specialist regime or other adjustments. Compare a company at both limits with one just above the turnover limit. Sources for the tests and rates: NTA definition of small company and sections 56 and 59, linked above.
 
-This new law is not simply "more tax" or "less tax." It is more like a sorting system. Businesses that can show they are truly small — and can prove it with good records — get real help. Businesses that cannot show this may miss out, even if they deserve the benefit.
+```oa-check
+name: Nigeria company at both small-company limits
+inputs:
+  turnover: 100000000
+  fixed_assets: 250000000
+  assessable_profit: 10000000
+  total_profit: 8000000
+steps:
+  - cit: total_profit * 0
+  - development_levy: assessable_profit * 0
+  - total: cit + development_levy
+expected:
+  cit: 0
+  development_levy: 0
+  total: 0
+```
 
-For now, the smartest thing any small business owner can do is start keeping clean, simple records — and ask a tax professional when they are not sure.
+```oa-check
+name: Nigeria company above the turnover limit
+inputs:
+  turnover: 100000001
+  fixed_assets: 250000000
+  assessable_profit: 10000000
+  total_profit: 8000000
+steps:
+  - cit: total_profit * 0.30
+  - development_levy: assessable_profit * 0.04
+  - total: cit + development_levy
+expected:
+  cit: 2400000
+  development_levy: 400000
+  total: 2800000
+```
 
-## Where this information comes from
+The second company fails one limb and loses company relief even though fixed assets have not changed. Neither case computes the owner's personal tax or decides VAT status. Keep records, obtain the correct Tax ID and prepare each required return; consult a tax professional before making the entity or filing decision.
 
-- **Nigeria Tax Act (NTA) 2025** — Section 56, which explains the small company rules and the 0% tax rate.
-- **Nigeria Tax Administration Act (NTAA) 2025** — explains record-keeping rules and checks by the tax office.
-- **Nigeria Revenue Service (NRS)** — the government office in charge of collecting federal taxes now (nrs.gov.ng).
-- **Joint Revenue Board (Establishment) Act 2025** — helps different levels of government work together on tax.
+## When to refuse or refer
 
-*Note: Tax rules can be updated, so it is always good to check the NRS website or ask a tax professional for the latest information before making big decisions. The 0% and 4% figures above are marked "confirm before filing" because NRS's site currently blocks automated verification of its specific pages — please check nrs.gov.ng or the Rev360 portal directly before relying on them.*
+Refer a disputed entity classification, missing turnover or asset evidence, a specialist incentive or an assessment dispute before a final filing position. Never substitute an assumed higher tax for the missing fact.
+
+## Sources
+
+| Source and actual read scope | URL | Read on |
+| --- | --- | --- |
+| NTA National Assembly copy: commencement; sections 4, 12, 28 to 32, 56 to 59; small-company definition; Fourth Schedule | https://nass.gov.ng/documents/download/11249 | 2026-11-16 |
+| NTAA National Assembly copy: sections 3 to 8, 11, 13, 22 and 31; Small Business definition | https://nass.gov.ng/documents/download/11250 | 2026-11-16 |
+| JRB Personal Income Tax Guidelines: paragraphs 2, 8 to 12 and 21, including foreign and platform content income | https://cms-api.jrb.gov.ng/api/publication-assets/file/2026-pit-guidelines-TJG3n9-T%20%281%29.pdf | 2026-11-16 |
+
+Not yet confirmed: the client's precise classification; the full applicable presumptive-regime conditions; specific local/market levies; current authenticated portal fields; a future Presidential company-rate reduction; resolution of the differently printed official NTA copies beyond the National Assembly text used here. The earlier NGN 50 million company turnover test, blanket professional-company exclusion, NGN 25 million online exemption and digital-only relief condition are not usable instructions. The Joint Revenue Board (Establishment) Act remains an original institutional reference, not a source checked here for those figures.
 
 > Contributed by Omolola Fasasi, MB058950.
