@@ -10,11 +10,14 @@
 3. `README.md`
 4. `pr-act-60-incentives.md`
 5. `pr-company-income-tax.md`
-6. `pr-federal-residence-and-filing.md`
-7. `pr-individual-income-tax.md`
-8. `pr-ivu-sales-and-use-tax.md`
-9. `pr-self-employment-tax.md`
-10. `workflow-base.md`
+6. `pr-federal-payroll-taxes.md`
+7. `pr-federal-residence-and-filing.md`
+8. `pr-individual-income-tax.md`
+9. `pr-ivu-sales-and-use-tax.md`
+10. `pr-self-employment-tax.md`
+11. `payroll-workflow-base.md`
+12. `workflow-base.md`
+13. `us-form-941-940-payroll.md`
 
 ## How to use
 

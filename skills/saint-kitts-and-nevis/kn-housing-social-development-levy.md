@@ -8,7 +8,7 @@ description: >
   employer's 3% on all wages, no ceiling, payment with Form C3, the 10% and 1% a month
   late penalties, and the severance payment contribution of 1%. Trigger phrases include
   St Kitts housing levy, HSD levy, social development levy Nevis.
-version: 1.0
+version: 1.1
 jurisdiction: KN
 tax_year: 2026
 last_updated: 2026-11-14
@@ -65,6 +65,10 @@ The Housing and Social Development Levy (Act 7 of 1997) on ordinary wages in 202
 
 | Situation | Treatment | Source |
 |---|---|---|
+| The Act's annual bands | The levy Act states the bands a year: wages up to $27,040.00 ($520.00 a week) 0% employee and 3% employer (Act 14 of 2025, replacing $23,400.00 from Act 1 of 2024); 3.5% on the portion up to $78,000.00; 10% on the portion between $78,000.01 and $96,000.01; 12% on the portion above $96,000.00; employer 3% throughout. The Board's monthly figures (2,253.33, 6,500, 8,000) are these divided by 12 (derived). Act 14 of 2025 sets no separate commencement date; check pay periods spanning July 2025 | [Act 14 of 2025](https://lawcommission.gov.kn/wp-content/documents/Annual-Laws/2025/ACTs/Act-14-OF-2025-The-Housing-and-Social-Development-Levy-Amendment.pdf); [Cap. 20.21, s.3](https://lawcommission.gov.kn/wp-content/documents/Act17TOC/Ch-20_21-Housing-and-Social-Development-Levy-Act.pdf) |
+| Who is covered | Employed persons under the Social Security Act classification, with office, religious, diplomatic and prescribed exemptions (Cap. 20.21 ss.2 to 4); the employer accounts for both shares and gives a statement of wages and levy (ss.5 and 6) | [Cap. 20.21](https://lawcommission.gov.kn/wp-content/documents/Act17TOC/Ch-20_21-Housing-and-Social-Development-Levy-Act.pdf) |
+| Severance contribution in the Act | One per centum of the employee's normal wages, collected by the Board for the Labour Commissioner (Protection of Employment Act ss.13 to 15) | [Cap. 18.27](https://lawcommission.gov.kn/wp-content/documents/Act17TOC/Ch-18_27-Protection-of-Employment-Act.pdf) |
+| Minimum wage | EC$12.50 an hour from 1 July 2025 (EC$500 for 40 hours); the 2024 order set EC$10.75 from 10 January 2024; the 2025 order itself was not found | [Government task force recap, December 2025](https://www.skncgtoronto.gov.kn/2025/12/15/2025-review-of-cost-of-living-measures-and-economic-impact/) |
 | Monthly wages 2,253.33 | Employee levy 0; employer 67.60 | [Board notice](https://socialsecurity.kn/press/change-of-levy-deduction-threshold/) |
 | Monthly wages 2,253.34 | Employee levy 3.5% of the whole 2,253.34 = 78.87; the jump is by design | same |
 | Employers' guide exemption of "less than EC$18,720 a year" | Superseded by the July 2025 cutoffs | [Board notice](https://socialsecurity.kn/press/change-of-levy-deduction-threshold/); [guide](https://socialsecurity.kn/wp-content/uploads/2018/05/Employers-Guide-2018.pdf) |
@@ -144,5 +148,9 @@ expected:
 | Board employers' guide 2018, pages 16 to 20: read for the severance contribution of 1%, the old EC$18,720 exemption, no ceiling for the levy, and the 10% plus 1% a month penalties | https://socialsecurity.kn/wp-content/uploads/2018/05/Employers-Guide-2018.pdf | 2026-11-14 |
 | Board notice "Treatment of bonus paid in December", 18 December 2025: read for the December 2025 levy exemption on bonuses and extra salary | https://socialsecurity.kn/press/treatment-of-bonus-paid-in-december-2/ | 2026-11-14 |
 | Board housing levy page: read for the levy Act (7 of 1997) and the Board's collection role | https://socialsecurity.kn/housing-levy/ | 2026-11-14 |
+| Housing and Social Development Levy Act Cap. 20.21 (2017 revision): read for ss.2 to 6 and the s.3 bands ($78,000.00, $96,000.00, 3.5%, 10%, 12%, employer 3%) | https://lawcommission.gov.kn/wp-content/documents/Act17TOC/Ch-20_21-Housing-and-Social-Development-Levy-Act.pdf | 2026-11-14 |
+| Housing and Social Development Levy (Amendment) Act 14 of 2025: read for $27,040.00 ($520.00 a week), 0% employee, 3% employer | https://lawcommission.gov.kn/wp-content/documents/Annual-Laws/2025/ACTs/Act-14-OF-2025-The-Housing-and-Social-Development-Levy-Amendment.pdf | 2026-11-14 |
+| Protection of Employment Act Cap. 18.27 (2017 revision): read for ss.13 to 15 (one per centum severance contribution) | https://lawcommission.gov.kn/wp-content/documents/Act17TOC/Ch-18_27-Protection-of-Employment-Act.pdf | 2026-11-14 |
+| Government task force recap, December 2025: read for EC$12.50 an hour from 1 July 2025 | https://www.skncgtoronto.gov.kn/2025/12/15/2025-review-of-cost-of-living-measures-and-economic-impact/ | 2026-11-11 |
 
-Not yet confirmed: the Housing and Social Development Levy Act and its amendments (not opened); the higher slices for non-monthly pay; any December 2026 bonus notice; rounding rules.
+Not yet confirmed: the Act's upper bands use uneven cent endpoints ($96,000.01) and the treatment at the band edges and for non-annual pay is not set out; whether the 0% band affects the upper-band calculation; the 2025 minimum wage order; the higher slices for non-monthly pay; any December 2026 bonus notice; rounding rules.

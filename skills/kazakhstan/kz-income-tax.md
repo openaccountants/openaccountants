@@ -1,36 +1,98 @@
 ---
 name: kz-income-tax
-description: "Source-cited draft: personal income tax for Kazakhstan (tax year 2025) — rates, thresholds and rules with primary-source citations. Unverified; pending local-accountant review."
-version: 1.0
+description: "Kazakhstan 2026 personal income tax: residence, income-specific rates, deductions, general-regime entrepreneur profit and separate filing obligations."
+version: 1.1
 jurisdiction: KZ
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: 2026-11-14
 depends_on:
   - income-tax-workflow-base
 category: international
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
-status: needs_sources
-domain: income-tax
+domain: tax
+
+type: computation
 ---
 
-# Kazakhstan Personal Income Tax
+# Kazakhstan personal income tax v1.1
 
-## Kazakhstan Personal Income Tax
+> **General reference only.** This skill produces draft working papers for review by a qualified Kazakhstan professional before filing, payment or taking a tax position. It is not approval of any particular taxpayer’s facts.
 
-## Personal income tax rates and thresholds (2025)
+## Who this applies to
 
-For tax year 2025 Kazakhstan applies a flat 10% personal income tax (PIT) on resident individuals' taxable income, with a higher flat rate for most non-resident income. Most employment income is withheld at source by the employer.
+Residents are taxed on Kazakhstan and foreign-source income; non-residents on Kazakhstan-source income, with separate permanent-establishment rules (Tax Code arts. 221–222). Establish residence before computing. The ordinary presence test is 183 days in any consecutive 12-month period ending in the tax year, including arrival and departure days (figures in words on the page). Centre of vital interests requires the cumulative citizenship/residence permission, family and available-home conditions in art. 222. The AIFC investment-resident and deemed-resident categories require separate review. Use `kz-payroll` for employer withholding, `kz-simplified-regime` for special regimes, and this file for resident annual income and general-regime ИП.
 
-- **Resident PIT rate** — 10% % (flat, on taxable income)  _(Tax Code of the Republic of Kazakhstan (https://taxsummaries.pwc.com/kazakhstan/individual/taxes-on-personal-income))_
-- **Non-resident PIT rate on employment income** — 10% % (on Kazakhstan-source employment income (approx — confirm); other non-resident income categories are subject to withholding at 5%-20% depending on income type)  _(Tax Code of the Republic of Kazakhstan (https://taxsummaries.pwc.com/kazakhstan/individual/taxes-on-personal-income))_
-- **Non-resident withholding on other income (general)** — 20% % (on Kazakhstan-source income other than employment (e.g. management/consulting fees), unless reduced by treaty)  _(Tax Code of the Republic of Kazakhstan (https://taxsummaries.pwc.com/kazakhstan/corporate/withholding-taxes))_
-- **PIT rate on dividends (resident individual)** — 5% (where conditions met) up to a cap; otherwise generally 10%-15% % ((approx — confirm); dividend exemptions/reduced rates depend on holding conditions)  _(Tax Code of the Republic of Kazakhstan (https://taxsummaries.pwc.com/kazakhstan/individual/income-determination))_
-- **Standard personal deduction** — 14 MCI per month (14 x KZT 3,932 = KZT 55,048 per month in 2025) KZT  _(Tax Code of the Republic of Kazakhstan (https://taxsummaries.pwc.com/kazakhstan/individual/deductions))_
-- **Mandatory pension contributions (OPV) deductible from PIT base** — Employee OPV of 10% is deducted before calculating the PIT base  _(Tax Code of the Republic of Kazakhstan (https://taxsummaries.pwc.com/kazakhstan/individual/other-taxes))_
-- **Medical insurance contribution (VOSMS) deductible from PIT base** — Employee VOSMS of 2% is deducted before calculating the PIT base  _(Law on Mandatory Social Health Insurance (https://taxsummaries.pwc.com/kazakhstan/individual/other-taxes))_
-- **Tax-free threshold** — No general tax-free band; relief is given via the 14 MCI standard deduction plus mandatory-contribution deductions  _(Tax Code of the Republic of Kazakhstan (https://taxsummaries.pwc.com/kazakhstan/individual/deductions))_
-- **Tax residence test** — An individual is resident if present in Kazakhstan at least 183 days in any consecutive 12-month period ending in the tax year, or has a centre of vital interests in Kazakhstan  _(Tax Code of the Republic of Kazakhstan (https://taxsummaries.pwc.com/kazakhstan/individual/residence))_
-- **Employer withholding** — Employers withhold PIT monthly at source and remit it; most employees with only employment income need not file an annual declaration  _(Tax Code of the Republic of Kazakhstan (https://taxsummaries.pwc.com/kazakhstan/individual/tax-administration))_
-- **Annual declaration filing deadline (where required)** — 31 March of the year following the reporting year (approx — confirm)  _(Tax Code of the Republic of Kazakhstan (https://taxsummaries.pwc.com/kazakhstan/individual/tax-administration))_
-- **Self-assessed PIT payment deadline (where a declaration is filed)** — Within 10 calendar days after the declaration filing deadline (approx — confirm)  _(Tax Code of the Republic of Kazakhstan (https://taxsummaries.pwc.com/kazakhstan/individual/tax-administration))_
+## Rates, bands and thresholds
+
+| Item and conditions | Rule for 2026 | Official source |
+|---|---|---|
+| Ordinary annual taxable income, excluding separately classified income | 10% through 8,500 МРП; 15% on the excess; МРП at 1 January (art. 363(1)) | https://www.gov.kz/org/kgd-akmola/documents/details/1084149?lang=ru |
+| General-regime ИП annual taxable income | 10% through 230,000 МРП; 15% on the excess (art. 363(4)) | https://www.gov.kz/org/kgd-akmola/documents/details/1084149?lang=ru |
+| Taxable resident dividends | 5% through 230,000 МРП; 15% on the excess, after any applicable exemption (art. 363(3)) | https://www.gov.kz/org/kgd-akmola/documents/details/1084149?lang=ru |
+| Private practice | 9% (art. 363(2)); not the general ИП schedule | https://www.gov.kz/org/kgd-akmola/documents/details/1084149?lang=ru |
+| Basic personal deduction | 30 МРП per calendar month, maximum 360 МРП per calendar year (art. 403) | https://www.gov.kz/org/kgd-akmola/documents/details/1084149?lang=ru |
+| Social-payment deductions | Actual qualifying ОПВ, ВОСМС and specified civil-contract СО; apply before the basic deduction (arts. 401–402) | https://www.gov.kz/org/kgd-akmola/documents/details/1084149?lang=ru |
+
+## The base
+
+Classify income before selecting a rate. For ordinary resident employment use taxable income after statutory exclusions and personal deductions. The basic deduction is available at only 1 tax agent, on the individual’s application (art. 437). Unused monthly basic deduction is not carried to later payroll months; an unused amount can be considered in self-assessment under art. 409, within the annual limit. There is no universal tax-free band independent of these deductions. Pension and medical contribution rates/bases belong to `kz-social-contributions`; do not subtract a presumed percentage from every kind of income.
+
+For a general-regime ИП, art. 393 starts with annual business income, adjusts income and allowable documented deductions under the corporate-tax rules, then applies reductions and eligible loss carryforwards. Do not substitute turnover for profit or apply the employment deduction automatically to business income. Listed-security dividend relief requires the listing and actual-trading conditions in art. 436(13); a holding period alone does not establish exemption.
+
+## Deadlines and filing
+
+General-regime ИП: annual business declaration by 31 March following the reporting year (art. 420), payment within 10 calendar days after that deadline (art. 421). Other self-assessed income: determine the declaration obligation under arts. 416–417; the ordinary income-and-property declaration deadline is 15 September following the reporting year (art. 418), with payment within 10 calendar days after that deadline (art. 419). These are different jobs: do not apply the old blanket 31 March individual deadline to all residents. Employees whose only income is correctly withheld salary may fall within the art. 417 exception; foreign assets, other income and other listed conditions can still require a declaration. Use the current taxpayer-cabinet form for the applicable obligation; do not reuse an old line map. Retain submission acceptance, computation and payment reference. Statutory non-working-day adjustments must be applied.
+
+## Penalties and interest
+
+Late filing, late payment and under-declaration require separate assessment of the current administrative rule, tax-agent status, period and any extension. No numerical penalty is asserted here; calculate none from memory.
+
+## Cross-border points
+
+Art. 692 sends non-resident Kazakhstan-source income to art. 682, normally without personal deductions. Employment-type income uses the 10%/15% schedule through 8,500 МРП under art. 682(1)(8), rather than an unconditional flat 10%. Other Kazakhstan-source payments generally start at 20%, with income-specific exceptions in art. 682. Treaty relief requires the applicable treaty, beneficial recipient and residence evidence; do not assume a treaty rate or resident deduction. Foreign tax credit and permanent-establishment analysis require separate review.
+
+## Two worked examples that recompute
+
+Case 1: hypothetical ordinary annual taxable income is expressed in МРП after all deductions. For 9,000 МРП, tax is 850 + 75 = 925 МРП. The annual threshold is not a separate threshold at each employer.
+
+```oa-check
+name: Ordinary income crosses annual threshold
+inputs:
+  income_mrp: 9000
+steps:
+  - tax_mrp: min(income_mrp, 8500) * 0.10 + max(income_mrp - 8500, 0) * 0.15
+expected:
+  tax_mrp: 925
+```
+
+Case 2: a general-regime ИП has hypothetical receipts of KZT 15,000,000 and allowable costs of KZT 3,000,000, no other adjustments or losses and income below its own annual threshold. Tax on KZT 12,000,000 is KZT 1,200,000. The result differs from a turnover-based special regime; eligibility must be tested before choosing.
+
+```oa-check
+name: General-regime IP documented costs
+inputs:
+  income: 15000000
+  costs: 3000000
+steps:
+  - base: income - costs
+  - tax: base * 0.10
+expected:
+  base: 12000000
+  tax: 1200000
+```
+
+## Ask the client first
+
+- Residence, travel days, citizenship/residence permission, family and available home?
+- Employment, ИП, private practice, dividends or other income, and all payers?
+- Actual deductions, prior tax-agent applications and withheld tax?
+- Business regime, documented costs, adjustments and carried losses?
+- Foreign income/assets, treaty residence evidence and current filing obligation?
+
+## Sources
+
+| Source and operative sections actually read | URL | Read on |
+|---|---|---|
+| Read for Tax Code arts. 221–222, 363, 393, 401–403, 409, 417–421, 436–441, 682 and 692 | https://www.gov.kz/org/kgd-akmola/documents/details/1084149?lang=ru | 2026-11-14 |
+
+Not yet confirmed: Specific treaty rates, social-category deductions not worked here, exact current electronic form fields and administrative penalty amounts. The old 2025 flat-rate/non-resident shorthand, 14-МРП deduction and blanket individual 31 March deadline are superseded, not fallback instructions.

@@ -27,6 +27,7 @@ README/reference documents and authoring templates are not skill entries.
 - `ifrs18-presentation.md`
 - `ifrs18-presentation-worked-examples.md`
 - `ifrs3-business-combinations.md`
+- `ohada-company-reporting-accounting-and-audit.md`
 - `optimisation-advisor.md`
 - `statutory-audit-workflow-base.md`
 - `threshold-alerts.md`

@@ -9,7 +9,7 @@ description: >
   lines (territorial source rules, simplified regime eligibility, substance). Trigger
   phrases include reduce tax Costa Rica, planificacion fiscal, persona fisica o sociedad,
   PYME tramos and regimen simplificado.
-version: "1.0"
+version: "1.1"
 jurisdiction: CR
 tax_year: 2026
 last_updated: 2026-11-14
@@ -78,7 +78,7 @@ expected:
 
 ### Example 2: the CRC 119,174,000 gross income cliff
 
-A company with renta neta CRC 20,000,000 pays CRC 2,735,150 on the small table while its gross income stays at or below CRC 119,174,000. One colón more of gross income moves the whole renta neta to the general corporate rate, which was not confirmed on an official page for this version (see Not yet confirmed): compute the cost of crossing the ceiling only once that rate is confirmed. Watch gross income near the ceiling; do not split the business artificially to stay under it.
+A company with renta neta CRC 20,000,000 pays CRC 2,735,150 on the small table while its gross income stays at or below CRC 119,174,000. One colón more of gross income moves the whole renta neta to the general 30% rate (Ley 7092 art. 15 a)): CRC 6,000,000 on the same CRC 20,000,000, CRC 3,264,850 more (derived). There is no blended computation. Watch gross income near the ceiling; do not split the business artificially to stay under it.
 
 ```oa-check
 name: CR 2026 small company table at renta neta 20 million
@@ -108,4 +108,6 @@ expected:
 | Read for Hacienda notice CP-11-2026: forms and the 16 March 2026 deadline | https://www.hacienda.go.cr/docs/CP11-2026.pdf | 2026-11-14 |
 | Read for Hacienda, Infracciones y sanciones administrativas mas relevantes (2026) | https://www.hacienda.go.cr/docs/InfraccionesYSancionesAdministrativasMasRelevantes.pdf | 2026-11-14 |
 
-Not yet confirmed: the general corporate rate (30% in the old file); the tax on distributed profits (15% in the old file); the Regimen de Tributacion Simplificada limits (the old file gave purchases up to about CRC 85,969,200, at most 5 employees, one establishment, assets up to 350 base salaries); PYME reliefs; the old file's "exempt up to about CRC 10,104,000" was wrong for 2026 (the 2026 not-subject amount is CRC 6,244,000).
+The general corporate rate is 30% of renta neta for a legal person whose renta bruta exceeds CRC 119,174,000 (Ley 7092 art. 15 a), https://sinalevi.go.cr/ResultadosNormativa/Informacion?param1=10969&param2=148972&param3=1, read 2026-11-14); the company method is in [costa-rica-corporate-income-tax](costa-rica-corporate-income-tax.md).
+
+Not yet confirmed: the tax on distributed profits (15% in the old file); the Regimen de Tributacion Simplificada limits (the old file gave purchases up to about CRC 85,969,200, at most 5 employees, one establishment, assets up to 350 base salaries); PYME reliefs; the old file's "exempt up to about CRC 10,104,000" was wrong for 2026 (the 2026 not-subject amount is CRC 6,244,000).

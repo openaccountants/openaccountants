@@ -1,7 +1,7 @@
 ---
 name: nz-gst-return
 description: Use this skill whenever asked about New Zealand GST returns, or to prepare, review, or classify transactions for a New Zealand GST return (GST101A form), for a self-employed individual or small business. Trigger on phrases like "prepare GST return", "do the GST", "fill in GST101A", "create the return", "New Zealand GST", "NZ GST", "GST return", "GST101A", "GST rate NZ", "input tax", "output tax", "zero-rated", "GST registration", "taxable supply", "IRD GST", "myIR GST", or any question about GST filing for sole traders in New Zealand. Also trigger when classifying transactions for GST purposes from bank statements, invoices, or other source data. Covers the 15% standard rate, zero-rated and exempt supplies, $60K registration threshold, invoice and payments basis, and GST101A return preparation. ALWAYS read this skill before touching any NZ GST work.
-version: 2.3
+version: "2.5"
 jurisdiction: NZ
 tax_year: 2026
 last_updated: 2026-11-14
@@ -260,9 +260,115 @@ On a paper return, read and sign the declaration (IR375).
 | Personal or business | Personal, no claim |
 | Customer overseas, evidence missing | Standard rate |
 | Restaurant, cafe or bar | No claim until business purpose is confirmed |
-| Bank fees, interest, loan principal, tax payments, ACC levies, wages, drawings, transfers, residential rent | Exclude |
+| Bank fees, interest, loan principal, tax payments, wages, drawings, transfers, residential rent | Exclude |
+| ACC levy payment | Hold, no claim yet: do not exclude it as a blanket rule. Check the ACC invoice for GST and confirm the claim first (see `nz-acc-levies`) |
 | Marketplace payouts to a registered seller | Zero-rated sale (Boxes 5 and 6) |
 | Sale of the owner's private goods | Exclude |
+
+## Bank-statement work: supplier patterns, unresolved items and the working paper
+
+Folded in from Ryan Duguid's `new-zealand-gst` (his fork, v2.1, checked 13 November 2026). A name or narration on a bank line never sets a GST rate, an exemption or a credit. The patterns below only say where to look and what to ask. A line stays unclassified, and out of the return totals, until the actual supply, its timing, the supplier's GST treatment, business use and the records are established ([Claiming GST](https://www.ird.govt.nz/gst/claiming-gst); [How taxable supply information works](https://www.ird.govt.nz/gst/tax-invoices-for-gst/how-taxable-supply-information-for-gst-works)).
+
+### Reconcile everything, omit nothing
+
+1. Record registration, effective date, basis, period, due date, preparer and source references before any figure. Take the period and due date from myIR or the issued return, never from the span of the bank statement supplied.
+2. Reconcile all receipts to taxable, zero-rated, exempt, non-supply and unresolved items on the confirmed basis. Box 5 holds only taxable sales recognised in the period, GST included; Box 6 is its zero-rated part. Exempt receipts stay out of Box 5.
+3. Reconcile all costs to eligible standard-rated purchases, separately established adjustments, and excluded or unresolved amounts. Box 11 is the GST-inclusive credit base after the business-use allocation. Never take 3/23 out of a zero-rated, exempt or unsubstantiated purchase.
+4. Boxes 9 and 13 need a separate adjustment schedule: legal basis, evidence, period and amount for each line.
+5. Keep the signed balance (Box 10 minus Box 14) in the working paper; Box 15 takes its absolute value and the payment or refund indicator. A zero balance still needs a return.
+6. Reconcile invoice and payments allocations to prior returns so nothing is counted twice, and review duplicate payments, outstanding invoices and every unresolved amount before calling the return complete.
+7. Unresolved items stay in a separate reconciliation with their amount and the missing evidence. Never drop one silently, never call an incomplete reconciliation a nil return, and give no filing-ready figures until every material item is resolved. A bank statement gathers transactions; it does not by itself support the return. Do not ask for login details or file on the user's behalf.
+
+### Reading New Zealand bank exports
+
+Bank export layouts as Ryan recorded them (check the actual file's columns before parsing):
+
+| Bank | Export columns |
+| --- | --- |
+| ANZ | Date (DD/MM/YYYY), Transaction Details, Amount (debits negative), Balance; details join type and payee, for example "Direct Debit - Spark NZ" |
+| Westpac | Date, Amount, Other Party, Description, Reference, Particulars, Analysis Code |
+| ASB | Date (YYYY-MM-DD), Unique Id, Tran Type, Cheque Number, Payee, Memo, Amount |
+| BNZ | Date (DD/MM/YYYY), Amount, Payee, Particulars, Code, Reference, Tran Type, This Party Account |
+| Kiwibank | Date, Description, Amount, Balance |
+
+- **Narration terms.** Visa Purchase or EFTPOS: card purchase. Direct Debit (D/D), Automatic Payment (A/P), Direct Credit (D/C), Transfer (TFR), ATM W/D: cash withdrawal. BNPL: buy now pay later (Afterpay, Laybuy).
+- **Particulars, Code and Reference.** New Zealand payments carry these three free-text fields (12 characters each). Read all three: they often hold the invoice number.
+- **Own-account transfers** between the client's accounts: exclude. **Sole trader drawings:** a sole trader cannot pay themselves wages; transfers to a personal account are drawings: exclude.
+- **IRD lines** (GST, provisional tax, PAYE): tax payments, not supplies: exclude, after confirming the line is a remittance and not a refund or correction.
+- **Refunds and reversals** ("refund", "reversal", "credit adj"): net against the same box as the original.
+- **Foreign currency:** record the NZD conversion method, date and rate used for each line, and the source of the rate (Ryan's practice: the Reserve Bank of New Zealand rate for the transaction date). Confirm the method applies to the supply before relying on it.
+
+### Supplier patterns
+
+| Pattern | Starting point | Check before using it |
+| --- | --- | --- |
+| ANZ, Westpac, ASB, BNZ, Kiwibank, TSB, Heartland, Co-operative Bank: account and transaction fees | Exclude: exempt financial service | Any separate taxable subscription invoice |
+| Revolut, Wise, N26 fee lines | Exclude | A separate taxable subscription invoice |
+| Interest; mortgage or loan principal | Exclude | None for principal; interest is a financial service |
+| IRD, Inland Revenue, Te Tari Taake | Exclude a tax remittance | Whether the line is a remittance, refund, correction or something else |
+| ACC, Accident Compensation, ACC levy | Unresolved | The actual invoice, its GST, credit eligibility and period; no blanket exclusion |
+| NZTA, Waka Kotahi, a Ministry or Department | Unresolved | The charge, the rule at its date ([Special supplies](https://www.ird.govt.nz/gst/charging-gst/special-supplies)) and the GST evidence |
+| Companies Office, NZBN | Unresolved | The fee record and its GST treatment |
+| City or district council, rates | Unresolved | The rates, consent or service invoice, taxable use and any special timing; no blanket exclusion |
+| Mercury, Genesis, Contact, Meridian, Flick, Nova, Electric Kiwi, Powershop (Trustpower retail is now Mercury) | Standard-rated 15%, Boxes 11 and 12 | Business-use share |
+| Spark, One NZ (formerly Vodafone NZ), 2degrees, Skinny, Chorus, Enable, Ultrafast Fibre | Standard-rated 15%, Boxes 11 and 12 | Business-use share of phone and internet |
+| Watercare, Wellington Water | Standard-rated 15%, Boxes 11 and 12 | Business-use share |
+| IAG, State, AMI, NZI, AA Insurance, Tower; Southern Cross, Partners Life, AIA | Unresolved | The policy type: general insurance and life or health cover are treated differently ([IR375](https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir300---ir399/ir375/ir375.pdf)) |
+| NZ Post, CourierPost, PACE, Aramex, Toll, Mainfreight, DHL, FedEx, UPS | Standard-rated 15% for domestic services | International freight may be zero-rated: check the invoice |
+| Air New Zealand, Jetstar: domestic flight | Standard-rated 15% | The route |
+| Air New Zealand: international flight | Zero-rated, no GST to claim | The route |
+| AT HOP, Metlink, Metro; Uber, Ola; Interislander, Bluebridge; Budget, Hertz, Avis | Standard-rated 15% | Business purpose |
+| Woolworths (formerly Countdown), Pak'nSave, New World, Four Square, Farro, Moore Wilsons, The Warehouse | No claim: treat as personal | Food is standard-rated at 15% like other goods (there is no zero rate for food); claim only with evidence of business use, for example a hospitality business buying stock |
+| Restaurants, cafes, bars | No claim | Business purpose and the entertainment rules above |
+| Google, Microsoft, Adobe, Meta, Spotify, Canva, GitHub, Slack, Atlassian, Zoom, Dropbox, Notion, Figma, Anthropic, OpenAI | Claim only NZ GST shown on the supplier's record | Whether the invoice shows NZ GST. A non-resident supplier need not register if it supplies only GST-registered NZ businesses ([Supplying remote services](https://www.ird.govt.nz/gst/gst-for-overseas-businesses/supplying-remote-services-into-new-zealand)); with no NZ GST charged, nothing is claimable |
+| Xero, Lightspeed (Vend), Timely, Unleashed, Pushpay, Trade Me fees | Standard-rated 15%, Boxes 11 and 12 | The invoice |
+| Stripe, PayPal, Windcave, Paymark, EFTPOS terminal fees, Afterpay, Laybuy | Check the invoice | Transaction fees are often an exempt financial service; subscriptions are taxable |
+| Accountant, lawyer, surveyor, valuer, engineer | Standard-rated 15% if business | The service, the GST and business purpose |
+| Salary, wages, PAYE, KiwiSaver, student loan | Exclude: outside GST | None |
+| Commercial rent | Standard-rated 15% | The lease and supplier's GST |
+| Residential rent; residential body corporate | Exclude: exempt | Whether the property is residential |
+| Transfer, own account, dividend, loan repayment, drawings | Exclude | That the line is what it says |
+| ATM, cash withdrawal | Exclude by default | Ask what the cash paid for |
+| Bunnings, Mitre 10, Noel Leeming, PB Tech, Mighty Ape | Standard-rated 15% if business | Trade or business purpose |
+| Z Energy, BP, Mobil, Caltex (fuel) | Standard-rated 15% | Business-use share (vehicle logbook) |
+| AA NZ membership | Standard-rated 15% | Business purpose |
+
+### Lines that only generate questions
+
+| Pattern | Evidence still needed |
+| --- | --- |
+| Vehicle costs | The GST record, taxable use and the vehicle and adjustment rules |
+| Entertainment | Business or private purpose, the GST and the entertainment limit; a restaurant name proves no percentage |
+| Non-resident software | The supplier's treatment and whether NZ GST was charged |
+| Round-number transfers, owner or private names | Whether it is a sale, loan, capital contribution, drawing, wages or another movement |
+| Overseas receipts | The supply, parties, place and timing and every zero-rating condition; an overseas bank is not proof |
+| Large purchases | The GST, credit eligibility, capital or mixed-use facts and change-of-use adjustments |
+| Phone, internet, home office | The taxable and private split with its evidence |
+| Payments to individuals | What was bought; employee, contractor or private; the GST evidence |
+| Trade Me or another marketplace | Gross underlying sales, fees and the marketplace rules; never classify the net payout automatically |
+| Airbnb and other short-stay listings | The listed-services rules above and the actual supply chain |
+| Secondhand goods | The seller, the statutory credit conditions, records and valuation |
+
+### Onboarding questions when the records do not answer them
+
+- Entity type: a personal name suggests a sole trader, "Ltd" or "Limited" a company, "LP" a limited partnership. Otherwise ask: sole trader, partnership, company or look-through company?
+- Registration, basis and period: obtain the registration record, effective date, registered basis and period. A request for a GST101A, business size or an accrual export proves none of them.
+- What the business does, in one sentence; whether it has employees (PAYE, KiwiSaver or wage lines suggest it does).
+- Exempt supplies (financial services, residential rent) and zero-rated supplies (exports, services to overseas customers).
+- Any GST owing or refund due from the previous period: never inferable, always ask.
+- Vehicle use for business, and whether a logbook is kept.
+
+### Reviewer flags for the brief
+
+These are this guide's review settings (Ryan's), not legal tests.
+
+| Reviewer flag | Setting |
+| --- | --- |
+| Single transaction (high) | NZD 5,000 or more |
+| GST effect of one conservative default (high) | NZD 400 or more |
+| One counterparty's share of sales or of purchases (medium) | More than 40% |
+| Conservative defaults used across the return (medium) | More than 4 |
+| Net GST position (low) | NZD 10,000 or more |
 
 ## Worked cases
 
@@ -386,6 +492,10 @@ Periods ending on or before 31 March 2026 use the same rate (15%), the same $60,
 - A non-resident's NZ registration.
 - A default assessment, audit, dispute, or an error too large to correct in a later return.
 - The income tax side of any item (entertainment limits, vehicle logbooks, provisional tax): send to the matching income tax skill.
+- Sales at exactly $500,000 (6-monthly filing) or exactly $2 million (payments basis): confirm eligibility with IRD before relying on the period or basis.
+- Secondhand goods bought regularly from unregistered sellers where the credit is a significant part of the return: the credit's records and valuation rules need specialist confirmation.
+- Crypto-asset or other digital-asset transactions: flag for the reviewer.
+- Payments basis with large unpaid invoices at the period end: include only amounts actually paid or received, and confirm the registered basis before filing.
 
 ## Filing and payment ([Filing GST](https://www.ird.govt.nz/gst/filing-and-paying-gst-and-refunds/filing-gst); [Paying GST](https://www.ird.govt.nz/gst/filing-and-paying-gst-and-refunds/paying-gst); [IR375](https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir300---ir399/ir375/ir375.pdf))
 
@@ -445,4 +555,4 @@ Periods ending on or before 31 March 2026 use the same rate (15%), the same $60,
 | Paying GST. Read for Filing and payment | https://www.ird.govt.nz/gst/filing-and-paying-gst-and-refunds/paying-gst | 2026-11-14 |
 | File your GST return. Read for Filing and payment | https://www.ird.govt.nz/gst/filing-and-paying-gst-and-refunds/filing-gst/file-your-gst-return | 2026-11-14 |
 
-Not yet confirmed: which box takes a secondhand goods credit (IRD's pages read do not name it); turnover at exactly $60,000 and a change-of-use adjustment of exactly $1,000, where IRD's documents word the test differently.
+Not yet confirmed: which box takes a secondhand goods credit (IRD's pages read do not name it); turnover at exactly $60,000 and a change-of-use adjustment of exactly $1,000, where IRD's documents word the test differently. The bank-statement supplier patterns, export layouts and reviewer flags folded in from Ryan Duguid's `new-zealand-gst` on 14 November 2026 are his working settings: whether each named overseas software supplier charges NZ GST was not checked (always read the invoice), and the bank export column layouts were not re-checked against the banks. Two errors in his table were corrected: food is standard-rated at 15% (his table said basic food was zero-rated), and Vodafone NZ is now One NZ.

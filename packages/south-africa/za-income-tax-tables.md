@@ -2,7 +2,7 @@
 name: za-income-tax-tables
 description: >
   Year-keyed South African income tax rate tables for individuals and special trusts, for the years of assessment 2023 to 2027, with the current year being the 2027 year of assessment (1 March 2026 to 28 February 2027, written 2026/27). Holds the progressive brackets with base amounts, the primary, secondary and tertiary rebates, the tax thresholds by age, the medical scheme fees tax credits, the section 11F retirement contribution limits, the section 18A donations limit, the interest exemption, the foreign dividend maximum effective rate and the section 10(1)(o)(ii) foreign employment cap, each row linked to the SARS page it was read on. Use for any South African bracket, rebate, threshold or credit lookup, current or prior year, including amended assessments and late returns.
-version: 1.0
+version: 1.1
 jurisdiction: ZA
 tax_year: 2026
 tax_year_notes: "2026-27, the 2027 year of assessment (1 March 2026 to 28 February 2027); prior years 2023 to 2026 kept for amended and late returns"
@@ -36,9 +36,9 @@ SARS numbers a year of assessment by the calendar year in which it **ends**. The
 
 ## Scope
 
-For each year of assessment 2023 to 2027: progressive brackets for individuals and special trusts (Income Tax Act 58 of 1962 s 5, read with the annual Rates and Monetary Amounts Act); rebates (s 6); tax thresholds by age; medical scheme fees tax credits (s 6A); the retirement fund contribution deduction limits (s 11F); the donations limit (s 18A); the interest exemption (s 10(1)(i)); the foreign dividend maximum effective rate (s 10B); the foreign employment remuneration exemption cap (s 10(1)(o)(ii)).
+For each year of assessment 2023 to 2027: progressive brackets for individuals and special trusts (Income Tax Act 58 of 1962 s 5, read with the annual Rates and Monetary Amounts Act); rebates (s 6); tax thresholds by age; medical scheme fees tax credits (s 6A); the retirement fund contribution deduction limits (s 11F); the donations limit (s 18A); the interest exemption (s 10(1)(i)); the foreign dividend maximum effective rate (s 10B); the foreign employment remuneration exemption cap (s 10(1)(o)(ii)). For YoA 2027 only: how SARS works out the two provisional tax (IRP6) payments and their due dates.
 
-Not covered: company, ordinary trust and turnover tax rates; capital gains tax (see `za-capital-gains-tables`); travel allowance and logbook tables (see `za-travel-allowance-tables`); any computation rule.
+Not covered: company, ordinary trust and turnover tax rates; capital gains tax (see `za-capital-gains-tables`); travel allowance and logbook tables (see `za-travel-allowance-tables`); any other computation rule (the provisional tax payment layout above is SARS's own).
 
 ## Rates, bands and thresholds
 
@@ -120,9 +120,19 @@ SARS words the first two columns as: the taxpayer (or one dependant who is a sch
 | 2024 (2023/24) | R364 | R728 | R246 | same |
 | 2023 (2022/23) | R347 | R694 | R234 | same |
 
+The credit for a month is allowed only for a month in which the taxpayer paid the contributions (contributions an employer paid count where the taxpayer was taxed on them as a fringe benefit). For three or more persons the monthly credit is the two-person amount plus the additional amount for each further person: YoA 2026, a member and two dependants is R728 + R246 = R974 a month (SARS IT07 Example 9).
+
+**The credit cannot create a refund.** The medical scheme fees tax credit is a rebate, not a deduction: it is not refundable and cannot exceed the normal tax payable, because it is limited to the tax payable before employees' tax and provisional tax are set off. Any excess is lost; it is not carried forward to a later year (SARS, Guide on the Determination of Medical Tax Credits, Issue 18, para 2.3: https://www.sars.gov.za/wp-content/uploads/Ops/Guides/Legal-Pub-Guide-IT07-Guide-on-the-Determination-of-Medical-Tax-Credits.pdf).
+
 ### Retirement fund contributions (s 11F)
 
-Deduction limited to 27.5% of the greater of remuneration (for employees' tax) and taxable income, both before retirement fund lump sums and severance benefits, and further limited to the lower of the rand cap and 27.5% of taxable income before the inclusion of a taxable capital gain. Excess carries forward to the next year.
+The deduction under s 11F(2) is limited to the least of three amounts:
+
+1. the annual rand cap in the table below (s 11F(2)(a));
+2. 27.5% of the higher of remuneration (as defined in paragraph 1 of the Fourth Schedule) and taxable income, each excluding retirement fund lump sum benefits, retirement fund lump sum withdrawal benefits and severance benefits, with taxable income determined before the s 11F and s 18A deductions; a taxable capital gain is included in this taxable income (s 11F(2)(b));
+3. taxable income determined before the s 11F deduction and before the inclusion of any taxable capital gain (s 11F(2)(c)). This third limit is the taxable income itself, not 27.5% of it.
+
+Contributions above the limit carry forward to the next year of assessment and are deemed to be contributed in that year. Source for the three limits: SARS, FAQ: What will the effect of CGT be when calculating the deduction for donations, medical and retirement fund contributions? (https://www.sars.gov.za/faq/faq-what-will-the-effect-of-cgt-be-when-calculating-the-deduction-for-donations-medical-and-retirement-fund-contributions/). The SARS Budget Tax Guide summary words the further limit as "the lower of R350 000 or 27.5% of taxable income, before the inclusion of a taxable capital gain"; follow the three limits above, which set out s 11F(2) itself.
 
 | YoA | Percentage | Annual rand cap | Source |
 | --- | --- | --- | --- |
@@ -142,6 +152,8 @@ Deduction limited to 27.5% of the greater of remuneration (for employees' tax) a
 | 2024 (2023/24) | 10% of taxable income | R23,800 | R34,500 | 20% | https://www.sars.gov.za/budget-2023-tax-guide/ |
 | 2023 (2022/23) | 10% of taxable income | R23,800 | R34,500 | 20% | https://www.sars.gov.za/budget-tax-guide-2022/ |
 
+The interest exemption applies to interest from a South African source (other than from a tax-free investment) earned by a natural person: R23,800 for a person below the age of 65 and R34,500 for a person 65 years or older (SARS, Guide on Income Tax and the Individual 2025/26, para 4.2: https://www.sars.gov.za/wp-content/uploads/Ops/Guides/Legal-Pub-Guide-IT01-Guide-on-Income-Tax-and-the-Individual.pdf). Interest from a foreign source is not exempt.
+
 Donations above the 10% limit carry forward to the next year as donations to qualifying public benefit organisations. The 20% foreign dividend rate applies to individuals holding less than 10% of the foreign company, and no deductions are allowed against foreign dividends. The 20% rate is what an exempt fraction of 25/45 produces against the 45% top rate (45% x 20/45 = 20%); SARS publishes the rate, not the fraction.
 
 ### Foreign employment remuneration exemption cap (s 10(1)(o)(ii))
@@ -151,6 +163,17 @@ Donations above the 10% limit carry forward to the next year as donations to qua
 | 2021 onwards, including 2023 to 2027 | R1.25 million per year of assessment | Years of assessment commencing on or after 1 March 2020 | https://www.sars.gov.za/individuals/tax-during-all-life-stages-and-events/foreign-employment-income-exemption/ |
 
 How the cap interacts with the work-day ratio is in `za-foreign-employment-exemption`.
+
+### Provisional tax (IRP6) payments and due dates, YoA 2027
+
+How SARS works out the two compulsory payments on the estimated taxable income for the year (SARS, How to work out amounts due for Provisional Tax, example: https://www.sars.gov.za/types-of-tax/provisional-tax/how-to-work-out-amounts-due-for-provisional-tax-example/):
+
+- **Total tax payable (A):** normal tax on the estimated taxable income, less the s 6 primary, secondary and tertiary rebates, less the s 6A medical scheme fees tax credit, less the s 6B additional medical expenses tax credit.
+- **First payment:** half of A (A/2), less the employees' tax deducted from the taxpayer's remuneration during the first period, less foreign tax credits (s 6quat and s 6quin) for the first 6 months. Employees' tax is deducted after halving, not before.
+- **Second payment:** A, less the employees' tax deducted from the taxpayer's remuneration during the year, less the first provisional tax payment (if actually paid), less foreign tax credits for the year.
+- **Due dates for YoA 2027:** first payment by 31 August 2026 (a Monday); second payment by 26 February 2027, the last business day of February 2027 (28 February 2027 is a Sunday). SARS: the first payment is due within six months of the start of the year of assessment, 31 August if it is a business day, or the last business day before; the second no later than the last business day of February (https://www.sars.gov.za/types-of-tax/provisional-tax/).
+
+The underestimation penalty, the basic amount and who is a provisional taxpayer are in `za-provisional-tax`.
 
 ### Edge cases and traps
 
@@ -197,6 +220,43 @@ expected:
   normal_tax: 89393.00
 ```
 
+### Worked example: SARS Annexure B, YoA 2026
+
+SARS's own example (Guide on Income Tax and the Individual 2025/26, Annexure B): a resident employee under 65, 1 March 2025 to 28 February 2026. Salary R230,000, overtime R17,000 and bonus R25,000 (remuneration R272,000); interest from South African banks R24,000; gross rental income R27,000 with R10,000 of expenses; pension fund contributions R17,250; employees' tax R30,068; provisional tax paid R1,500.
+
+- Exempt interest R23,800, so taxable interest R200.
+- Taxable income = R272,000 + R200 + R17,000 - R17,250 = **R271,950** (the pension contribution is within all three s 11F limits).
+- Normal tax = R42,678 + 26% x (271,950 - 237,100) = R42,678 + R9,061 = R51,739.
+- Less the primary rebate R17,235: R34,504.
+- Less employees' tax R30,068 and provisional tax R1,500: **R2,936 due** on assessment.
+
+```oa-check
+name: YoA 2026, SARS Annexure B, under 65, taxable income R271,950
+inputs:
+  remuneration: 272000
+  sa_interest: 24000
+  interest_exemption: 23800
+  rental_income: 27000
+  rental_expenses: 10000
+  pension_contributions: 17250
+  band_floor: 237100
+  band_base: 42678
+  band_rate: 0.26
+  primary_rebate: 17235
+  employees_tax: 30068
+  provisional_tax: 1500
+steps:
+  - taxable_income: remuneration + (sa_interest - interest_exemption) + (rental_income - rental_expenses) - pension_contributions
+  - normal_tax: band_base + (taxable_income - band_floor) * band_rate
+  - net_normal_tax: normal_tax - primary_rebate
+  - due: net_normal_tax - employees_tax - provisional_tax
+expected:
+  taxable_income: 271950.00
+  normal_tax: 51739.00
+  net_normal_tax: 34504.00
+  due: 2936.00
+```
+
 ## Sources
 
 | Source | URL | Read on |
@@ -208,6 +268,11 @@ expected:
 | SARS, Budget Tax Guide 2024 (tax rates from 1 March 2024 to 28 February 2025): read for the same items for YoA 2025 | https://www.sars.gov.za/wp-content/uploads/Budget-tax-guide-2024-_.pdf | 2026-11-14 |
 | SARS, Budget 2023 Tax Guide (tax rates from 1 March 2023 to 29 February 2024): read for the same items for YoA 2024 | https://www.sars.gov.za/budget-2023-tax-guide/ | 2026-11-14 |
 | SARS, Budget Tax Guide 2022 (tax rates from 1 March 2022 to 28 February 2023): read for the same items for YoA 2023 | https://www.sars.gov.za/budget-tax-guide-2022/ | 2026-11-14 |
+| SARS, FAQ: What will the effect of CGT be when calculating the deduction for donations, medical and retirement fund contributions? (last updated 8 March 2021): read for the three s 11F(2) limits and how a taxable capital gain enters each | https://www.sars.gov.za/faq/faq-what-will-the-effect-of-cgt-be-when-calculating-the-deduction-for-donations-medical-and-retirement-fund-contributions/ | 2026-11-14 |
+| SARS, Guide on the Determination of Medical Tax Credits (Issue 18): read for para 2.3 (the credit is not refundable and cannot exceed normal tax), para 2.4 (the monthly amounts for YoA 2026) and Examples 7 to 9 | https://www.sars.gov.za/wp-content/uploads/Ops/Guides/Legal-Pub-Guide-IT07-Guide-on-the-Determination-of-Medical-Tax-Credits.pdf | 2026-11-14 |
+| SARS, Guide on Income Tax and the Individual (2025/26): read for the interest exemption (local interest, not from a tax-free investment) and the Annexure B worked example | https://www.sars.gov.za/wp-content/uploads/Ops/Guides/Legal-Pub-Guide-IT01-Guide-on-Income-Tax-and-the-Individual.pdf | 2026-11-14 |
+| SARS, How to work out amounts due for Provisional Tax, example (last updated 19 February 2025): read for the first, second and third period calculations | https://www.sars.gov.za/types-of-tax/provisional-tax/how-to-work-out-amounts-due-for-provisional-tax-example/ | 2026-11-14 |
+| SARS, Provisional Tax page: read for the due dates (31 August or the last business day before; the last business day of February) | https://www.sars.gov.za/types-of-tax/provisional-tax/ | 2026-11-14 |
 | SARS, Foreign Employment Income Exemption page: read for the R1.25 million cap from years of assessment commencing on or after 1 March 2020 | https://www.sars.gov.za/individuals/tax-during-all-life-stages-and-events/foreign-employment-income-exemption/ | 2026-11-14 |
 | Rates and Monetary Amounts and Amendment of Revenue Laws Act 3 of 2026 (GG 54446, 1 April 2026): read for its long title and the sections it amends | https://www.sars.gov.za/legal-lprim-aa-2026-01-rates-and-monetary-amounts-and-amendment-of-revenue-laws-act-3-of-2026-gg-54446-1-april-2026/ | 2026-11-14 |
 

@@ -21,6 +21,7 @@ Calendar tax year for individuals; companies use the calendar year or another 12
 | Payroll | pl-payroll (employees); pl-civil-law-contracts (umowa zlecenie, umowa o dzieło, board fees) | checked against the law |
 | Transfer pricing | pl-transfer-pricing | checked against the law |
 | Cross-border | pl-cross-border (individuals); pl-cit-corporate-tax covers company withholding, CFC and exit tax | checked against the law |
+| Annual accounts | pl-small-company-financial-statements (Annex 5 accounts for a small sp. z o.o.) | source-cited draft |
 
 ## Official sources
 

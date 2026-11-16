@@ -31,7 +31,11 @@ There is no income tax, so no PAYE is withheld, and there is no government socia
 | Year's maximum pensionable earnings | eighty-seven thousand dollars (CI$) | Or another amount prescribed; s. 2 definition | same |
 | Self-employed | 10% of earnings to the year's maximum | s. 47(2) | same |
 | Contribution date deadline | 15th day of the month after the month of service | Regardless of pay period, s. 48(2) | same |
-| Health insurance, employee recovery | Employer may recover not more than fifty per cent of the premium | Standard health insurance contract, s. 7 | Health Insurance Act (2021 Revision): https://legislation.gov.ky/cms/images/LEGISLATION/PRINCIPAL/1997/1997-0015/1997-0015_2021%20Revision.pdf |
+| Health insurance, employee recovery | Employer may recover not more than fifty per cent of the premium | Standard health insurance contract, s. 7; the full premium for the employee's dependants can be recovered (s. 8) | Health Insurance Act (2021 Revision): https://legislation.gov.ky/cms/images/LEGISLATION/PRINCIPAL/1997/1997-0015/1997-0015_2021%20Revision.pdf |
+| Standard health premium due date | First day of the month for which it is payable | Employer's cover starts on the first day of employment | Health Insurance Regulations (2017 Revision), regs 6(7) and 7: https://legislation.gov.ky/cms/images/LEGISLATION/SUBORDINATE/1997/1997-0011/1997-0011_2017%20Revision_g.pdf |
+| Total deductions from wages | Not more than one-third of the gross money wage for the pay period | Loan repayments and recovery of advances are outside the cap | Labour Act (2021 Revision), s. 29(4): https://legislation.gov.ky/cms/images/LEGISLATION/PRINCIPAL/1987/1987-0030/1987-0030_2021%20Revision.pdf |
+| Public Service Pensions Plan, defined contribution members | Employer 6% plus 0.4% normal cost; the Administrator credits 6% to the member | Deemed in force from 1 January 2025; remit monthly by the 15th of the month after due | Public Service Pensions (Contribution Rates) Regulations 2026, SL 49 of 2026, regs 3 and 4: https://gov.ky/documents/35692/0/PublicServicePensions%28ContributionRates%29Regulations2026.pdf/db9226c7-d1f8-d616-724b-a2ddb73efc3a?t=1794003624410 |
+| Public Service Pensions Plan, Government as employer of defined benefit members | 6% plus 9.7% of pensionable earnings, plus CI$10.892 million a year in 12 monthly instalments for past service | Other public employers have their own rates in the reg 2 table | same, reg 2 |
 | National minimum basic wage | CI$8.75 an hour | From 1 January 2026 (was CI$6) | Labour (National Minimum Basic Wage) (Amendment) Order 2025, SL 60 of 2025: https://legislation.gov.ky/cms/images/LEGISLATION/AMENDING/2025/2025-0060S/2025-0060S.pdf |
 | Minimum wage, gratuity-earning employees | CI$6.56 an hour | From 1 January 2026 (was CI$4.50) | same |
 | Benefits counted towards minimum wage | No more than CI$2.19 an hour | Para 3(1) and (2), from 1 January 2026 (was CI$1.50) | same |
@@ -42,14 +46,17 @@ There is no income tax, so no PAYE is withheld, and there is no government socia
 1. Pensionable earnings: the employee's earnings for the month, with the annual total capped at CI$87,000.
 2. Employer pays at least 5%; deducts the employee's 5% (unless the employer pays more).
 3. Remit both to the employee's approved pension plan by the 15th of the next month.
-4. Health insurance: the employer pays the premium for each employee and may deduct up to half of it from pay (more rules for high-risk persons and dependants under s. 7 and 8).
-5. Minimum wage: check that hourly pay is at least CI$8.75 (CI$6.56 for gratuity-earning staff).
+4. Health insurance: the employer pays the premium for each employee, due on the first day of the month covered, and may deduct up to half of it from pay (more rules for high-risk persons and dependants under s. 7 and 8).
+5. Keep all deductions for the pay period within one-third of gross wages (Labour Act s. 29(4)).
+6. Minimum wage: check that hourly pay is at least CI$8.75 (CI$6.56 for gratuity-earning staff).
 
 ## Deadlines and filing
 
 | Obligation | When |
 |---|---|
 | Pension contributions | By the 15th of the month after the month worked ("contribution date deadline") |
+| Standard health premium | First day of the month covered |
+| Public service plan contributions (public employers) | Monthly, by the 15th of the month after they are due (SL 49 of 2026, reg 4) |
 | Delinquent contribution report by the administrator to the Director | If unpaid by the 15th of the following month; notice to the Director by the 20th |
 
 ## Penalties and interest
@@ -59,7 +66,7 @@ There is no income tax, so no PAYE is withheld, and there is no government socia
 
 ## Cross-border points
 
-- Non-Caymanian staff need work permits; fees vary by occupation (not confirmed here).
+- Non-Caymanian staff need work permits through WORC; a new fee schedule applies from 1 May 2026 (Caymanian Protection (Fees) Regulations 2026, SL 20 of 2026; amounts not read here).
 - Non-Caymanian, non-permanent-resident staff are outside the pension requirement for their first nine months of continuous work.
 
 ## Two worked examples that recompute
@@ -128,9 +135,12 @@ The enhanced deal costs the employer CI$1,740 more and gives the employee CI$1,7
 | National Pensions Act (2024 Revision): read for ss. 2, 25, 47 and 48 (membership, 9-month exception, 5% and 10% rates, eighty-seven thousand dollars maximum, 15th day deadline, delinquent contributions) | https://legislation.gov.ky/cms/images/LEGISLATION/PRINCIPAL/1996/1996-0010/1996-0010_2024%20Revision.pdf | 2026-11-14 |
 | Health Insurance Act (2021 Revision): read for s. 7, the employer's right to recover at most fifty per cent of the premium | https://legislation.gov.ky/cms/images/LEGISLATION/PRINCIPAL/1997/1997-0015/1997-0015_2021%20Revision.pdf | 2026-11-14 |
 | Labour (National Minimum Basic Wage) (Amendment) Order 2025, SL 60 of 2025: read for CI$8.75, CI$6.56 and CI$2.19 from 1 January 2026 | https://legislation.gov.ky/cms/images/LEGISLATION/AMENDING/2025/2025-0060S/2025-0060S.pdf | 2026-11-14 |
+| Health Insurance Regulations (2017 Revision): read for reg 6(7), premium due on the first day of the month, and reg 7, start of cover | https://legislation.gov.ky/cms/images/LEGISLATION/SUBORDINATE/1997/1997-0011/1997-0011_2017%20Revision_g.pdf | 2026-11-14 |
+| Labour Act (2021 Revision): read for s. 29(4), the one-third deduction cap | https://legislation.gov.ky/cms/images/LEGISLATION/PRINCIPAL/1987/1987-0030/1987-0030_2021%20Revision.pdf | 2026-11-14 |
+| Public Service Pensions (Contribution Rates) Regulations 2026, SL 49 of 2026: read for regs 1 to 4 (deemed in force 1 January 2025; 6%, 0.4%, 9.7%, CI$10.892 million; 15th-day remittance) | https://gov.ky/documents/35692/0/PublicServicePensions%28ContributionRates%29Regulations2026.pdf/db9226c7-d1f8-d616-724b-a2ddb73efc3a?t=1794003624410 | 2026-11-14 |
 | Cayman legislation, current by title: read to confirm no income tax or social security Act | https://legislation.gov.ky/cms/legislation/current/by-title.html | 2026-11-14 |
 
-Not yet confirmed: work permit fee amounts; whether any regulation prescribes a different maximum pensionable earnings figure than CI$87,000 (none found); the standard health insurance premium amounts; the Health Insurance Act amendments listed for 2026 (the linked file was a different regulation).
+Not yet confirmed: work permit fee amounts under SL 20 of 2026, and the Caymanian Protection Act s. 67(3) bar on recovering permit fees from the worker; the Parliamentary Pensions (Contribution Rates) Regulations 2026 (SL 50 of 2026) and the judicial pension rates; how business receipts and expenses enter the self-employed pension base; whether any regulation prescribes a different maximum pensionable earnings figure than CI$87,000 (none found); the standard health insurance premium amounts; the Health Insurance Act amendments listed for 2026 (the linked file was a different regulation).
 
 ## Today's figures and who stands behind this skill
 

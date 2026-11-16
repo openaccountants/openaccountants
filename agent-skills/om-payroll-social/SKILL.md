@@ -10,7 +10,7 @@ metadata:
   last_updated: "2026-11-14"
 ---
 
-# Oman Payroll & Social Contributions v1.3
+# Oman Payroll & Social Contributions v1.4
 
 > **General reference only.** This Guide is a draft for AI-assisted reference. Independent review accepts only the documented partial source closeout and its recorded conditions. It has not received accountant attestation. Do not use it to file, pay or take a position without professional review.
 
@@ -25,9 +25,10 @@ Employers of Omani workers in Oman, Omani self-employed people, and employers of
 | Old age, disability and death | 7.5% | 11% | 1 Jan 2024 | https://www.spf.gov.om/en/faq/what-are-the-contribution-rates-to-be-paid-by-the-worker-and-employer/ |
 | Work injury and occupational disease | 0% | 1% | 1 Jan 2024 | same |
 | Employment security | 0.5% | 0.5% | 1 Jan 2024 | same |
-| Sick and other leave | 0% | 1% statutory rate | Decree VI(3), replaced by RD 60/2025: three years after 19 July 2023; reconcile Fund implementation before charging | https://www.nsg.gov.om/data/RD_No.60_2025_amending_No.52_2023_promulgating_the_Social_ProtectionLaw.pdf |
+| Sick and other leave | 0% | 1% | 19 Jul 2026: decree VI(3), replaced by RD 60/2025, gives three years after 19 July 2023; SPF Decision R/13/2026 extends the branch to listed non-Omani workers from the same date | https://www.nsg.gov.om/data/RD_No.60_2025_amending_No.52_2023_promulgating_the_Social_ProtectionLaw.pdf |
 | Maternity leave | 0% | 1% | 2024 commencement: decree VI(4) gives one year after 19 July 2023; FAQ gives 1 July 2024. Historic start requires reconciliation | same |
-| Total when all listed branches apply | 8% | 14.5% | Conditional calculation; not a universal 2026 payroll rate | same |
+| Total when all listed branches apply | 8% | 14.5% | From 19 Jul 2026; before that date the sick-leave 1% is not charged, so 13.5% employer (derived). Conditional calculation; not a universal 2026 payroll rate | same |
+| Sick and other leave, non-Omani workers | 0% | 1% | 19 Jul 2026, compulsory for all non-Omani employees of state administrative units and other public legal persons, and non-Omani workers in private establishments under the Labour Law (Decision R/13/2026, arts 1 and 3, Official Gazette 1654) | https://www.mjla.gov.om/modules/decisions/download.php?file=2219 |
 
 | Item | Amount | Tax year | Official URL |
 |---|---|---|---|
@@ -52,11 +53,11 @@ An employer that fails to register workers, understates wages, or pays late owes
 
 ## Cross-border points
 
-The old age branch is compulsory for Omanis working in Oman, and covers Omanis under the GCC extension systems (art. 68). Non-Omani workers: the work injury branch reaches them from 5 years after issue, so from 19 July 2028 under RD 60/2025 art. I, in the categories the Board decides (decree art. VI, art. 87). The sick leave branch reaches them by Board decision (art. 121). The savings system is compulsory for them at the art. 139(1) amount (art. 136); service before the start date stays under the Labour Law end-of-service rules (art. 138). Check the Board's decision before charging any of these.
+The old age branch is compulsory for Omanis working in Oman, and covers Omanis under the GCC extension systems (art. 68). Non-Omani workers: the work injury branch reaches them from 5 years after issue, so from 19 July 2028 under RD 60/2025 art. I, in the categories the Board decides (decree art. VI, art. 87). The sick leave branch reaches them by Board decision (art. 121); that decision is SPF Decision R/13/2026, which makes it compulsory from 19 July 2026 for all non-Omani employees of state administrative units and other public legal persons and for non-Omani workers in private establishments covered by the Labour Law (https://www.mjla.gov.om/modules/decisions/download.php?file=2219, arts 1 and 3). The savings system is compulsory for them at the art. 139(1) amount (art. 136); service before the start date stays under the Labour Law end-of-service rules (art. 138). Check the Board's decision before charging any of these.
 
 ## Two worked examples that recompute
 
-**1. Conditional illustration: covered Omani worker on OMR 1,000 a month, all five branches applying.** Employer pays OMR 145; worker pays OMR 80.
+**1. Conditional illustration: covered Omani worker on OMR 1,000 a month from 19 July 2026, all five branches applying.** Employer pays OMR 145; worker pays OMR 80.
 
 ```oa-check
 name: Omani wage 1000
@@ -101,9 +102,11 @@ expected:
 | Social Protection Fund, contribution-rate FAQ answer checked in cached Fund FAQ HTML; conflicting commencement dates held | https://www.spf.gov.om/en/faq/what-are-the-contribution-rates-to-be-paid-by-the-worker-and-employer/ | 2026-11-01 |
 | Social Protection Law, RD 52/2023, Fund-hosted English first edition 2024 (law arts 1, 5, 52, 58, 68, 70, 87, 90, 115, 116, 121, 123, 127, 128, 136, 138, 139 and 155 checked; RD 60/2025 commencement amendment separately read) | https://www.spf.gov.om/wp-content/uploads/2024/11/Social-Protaction-Law.pdf | 2026-11-01 |
 | RD 60/2025, art. I replacing decree VI(2), (3), (5), official gazette issue 1604 p. 9, complete page visually read | https://www.nsg.gov.om/data/RD_No.60_2025_amending_No.52_2023_promulgating_the_Social_ProtectionLaw.pdf | 2026-11-01 |
+| Read for the sick-leave start date: RD 60/2025, Arabic gazette text, art. I(3) three years from the decree, art. III in force the day after publication | https://www.mjla.gov.om/modules/decrees/download.php?file=1345 | 2026-11-14 |
+| Read for the non-Omani sick-leave categories: SPF Decision R/13/2026, Arabic gazette text, Official Gazette 1654, arts 1 and 3 (in force 19 July 2026) | https://www.mjla.gov.om/modules/decisions/download.php?file=2219 | 2026-11-14 |
 | Personal Income Tax Law, RD 56/2025, official Tax Authority-hosted gazette issue 1602 pp. 7 to 31, all 25 PDF pages visually read | https://tms.taxoman.gov.om/portal/documents/d/taxportal/-56_2025-1?download=true | 2026-11-01 |
 
-Not yet confirmed: NONOPERATIVE HOLD on current 2026 contribution ceiling decisions and sick-leave implementation date: Fund FAQ gives 1 July 2025 but RD 60/2025 expressly replaces the statutory commencement with three years after 19 July 2023. Do not apply the FAQ date or the statutory starting ceiling as a verified live payroll instruction. Also open: whether the Board has set the start date of the 9% savings system and its current status; the Board decision on work injury and sick leave for non-Omani workers (the old skill said 1% for all expatriates, not confirmed);   Fund portal steps; GCC national contribution rates. The old skill’s employer total of 12.5% omitted the two leave branches and is replaced.
+Not yet confirmed: NONOPERATIVE HOLD on current 2026 contribution ceiling decisions: do not apply the statutory starting ceiling as a verified live payroll instruction. Sick-leave start: the Fund FAQ's 1 July 2025 is superseded; RD 60/2025 gives 19 July 2026 and Decision R/13/2026 starts the non-Omani categories the same day. The Fund's notice that employer claims and settlements go online from 1 August 2026 could not be opened (spf.gov.om refused the connection). Also open: whether the Board has set the start date of the 9% savings system and its current status; the Board decision on work injury and sick leave for non-Omani workers (the old skill said 1% for all expatriates, not confirmed);   Fund portal steps; GCC national contribution rates. The old skill’s employer total of 12.5% omitted the two leave branches and is replaced.
 
 ## Today's figures and who stands behind this skill
 

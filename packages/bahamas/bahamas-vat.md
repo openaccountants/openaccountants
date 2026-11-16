@@ -12,7 +12,7 @@ description: >
   vat.revenue.gov.bs, food store VAT exemption, provisional VAT invoice,
   Bahamas VAT registration. The Bahamas has no income tax. Built from the VAT
   Act and the Department of Inland Revenue; not reviewed by an accountant.
-version: 3.0
+version: 3.1
 jurisdiction: BS
 tax_year: 2026
 last_updated: 2026-11-14
@@ -102,7 +102,9 @@ Use these as a pre-classifier on bank lines; confirm against invoices.
 | GOOGLE, MICROSOFT, META, AWS, ZOOM, SLACK, CANVA | Imported service: check whether the supplier is registered and charges VAT | Old "self-assess 10%" rule not confirmed, see Not yet confirmed |
 | HOTEL, RESORT, ATLANTIS (sales) | Domestic output at 10% | Hotel and vacation rentals must register (DIR vacation rental page) |
 | BOOKING.COM, EXPEDIA, AIRBNB | Platform fee: verify the entity | |
-| SALARY, WAGES, DIVIDEND, OWN TRANSFER | Exclude | Outside VAT |
+| SALARY, WAGES | Exclude | Services of an employee to an employer by reason of employment are outside the Act (VAT Act, s. 3(6)): https://inlandrevenue.finance.gov.bs/wp-content/uploads/2024/11/Value-Added-Tax-Act.pdf |
+| DIVIDEND | Review | A payment labelled "dividend" is classified on the underlying transaction; a true dividend on shares is not a supply, but check that it is not a disguised fee or rent |
+| OWN TRANSFER | Exclude | Outside VAT |
 | CASH WITHDRAWAL | Ask; default exclude | |
 
 ### Conservative defaults
@@ -208,7 +210,7 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Value Added Tax Act reprint as at 1 July 2024: read for s. 21 registration threshold, s. 47A late filing and payment fines, First Schedule zero rating and Third Schedule real property rates | https://inlandrevenue.finance.gov.bs/wp-content/uploads/2024/11/Value-Added-Tax-Act.pdf | 2026-11-14 |
+| Value Added Tax Act reprint as at 1 July 2024: read for s. 21 registration threshold, s. 47A late filing and payment fines, s. 3(6) employee services outside the Act, First Schedule zero rating and Third Schedule real property rates | https://inlandrevenue.finance.gov.bs/wp-content/uploads/2024/11/Value-Added-Tax-Act.pdf | 2026-11-14 |
 | VAT (Amendment) Act 2025: read for the replacement s. 6(1) (0%, 5%, 10%) and its 1 April 2025 start | https://inlandrevenue.finance.gov.bs/wp-content/uploads/2025/07/VALUE-ADDED-TAX-AMENDMENT-ACT-2025.pdf | 2026-11-14 |
 | VAT (Amendment) (No. 2) Act 2025: read for the food store definition, sweets and sodas back to 10%, the medical goods list from 1 September 2025 | https://inlandrevenue.finance.gov.bs/wp-content/uploads/2025/07/VALUE-ADDED-TAX-AMENDMENT-NO.2-ACT-2025-.pdf | 2026-11-14 |
 | VAT (Amendment) Act 2026 (No. 4 of 2026, assent 23 March 2026): read for the food exemption and the Fourth Schedule change from 1 April 2026 | https://laws.bahamas.gov.bs/cms/images/LEGISLATION/AMENDING/2026/2026-0004A/2026-0004A.pdf | 2026-11-14 |

@@ -1,69 +1,107 @@
 ---
 name: kz-formation
-description: >
-  Use this skill whenever asked how to register or start a business in Kazakhstan as a self-employed
-  person. Trigger on phrases like "register ИП Kazakhstan", "how to start freelancing Kazakhstan",
-  "open ТОО", "ИП регистрация", "Astana Hub registration", "business formation Kazakhstan". Covers
-  registering an individual entrepreneur (ИП), choosing a tax regime at registration, the LLP (ТОО)
-  alternative, and the Astana Hub IT regime. ALWAYS read this before any Kazakhstan formation work.
-version: 1.0
+description: "Kazakhstan 2026 individual business registration: government notification, eligibility, regime election, company alternatives and Astana Hub boundaries."
+version: 1.1
 jurisdiction: KZ
 tax_year: 2026
-last_updated: 2026-06-12
+last_updated: 2026-11-14
 category: international
 depends_on:
   - income-tax-workflow-base
 tier: 2
-domain: formation
+domain: tax
+
+type: filing-howto
 ---
 
-# Kazakhstan Business Formation (ИП / ТОО) — Skill v1.0
+# Kazakhstan individual business registration v1.1
 
-> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
+> **General reference only.** This skill produces draft working papers for review by a qualified Kazakhstan professional before filing, payment or taking a tax position. It is not approval of any particular taxpayer’s facts.
 
-## Section 1 — Quick Reference
+## Who this applies to
 
-| Field | Value |
-|---|---|
-| Self-employed vehicle | Individual entrepreneur — ИП (индивидуальный предприниматель) |
-| Company alternative | Limited liability partnership — ТОО (товарищество с ограниченной ответственностью) |
-| Registration channel | eGov.kz / e-Salyq Business app / КГД; near-instant for ИП |
-| Cost | ИП registration is free (state duty waived); ТОО has minimal cost |
-| Tax regime chosen at registration | Simplified declaration (4%) vs general regime — see kz-simplified-regime |
-| IT incentive | Astana Hub (astanahub.com) — participants get major tax relief on IT income (verify current relief) |
-| VAT registration threshold | Mandatory once turnover exceeds the threshold (verify the 2026 figure — lowered under the new Tax Code); voluntary below |
-| Tax authority | State Revenue Committee (КГД) |
-| Skill version | 1.0 |
+People choosing/registering an individual entrepreneur (ИП) business in Kazakhstan, with ТОО as the company alternative. A distinct non-ИП self-employed regime may be available under `kz-simplified-regime`; do not register someone unnecessarily before checking it. Corporate charter/capital work belongs to `kz-company-formation`. Liability, co-ownership, business risk, residence and actual eligibility decide the vehicle; “solo freelancer” alone is not enough.
 
-### Conservative defaults
-| Ambiguity | Default |
-|---|---|
-| Vehicle unknown | ИП for a solo freelancer; ТОО if liability protection / investors needed |
-| Regime unknown | Simplified declaration (4%) for small turnover |
-| IT activity | Check Astana Hub eligibility — large savings |
+## Rates, bands and thresholds
 
-## Section 2 — Registering as an ИП (Tier 1)
-1. Have an IIN (ИИН individual identification number) and an EDS (digital signature) or Biometric login.
-2. Register via **eGov / e-Salyq Business** — notification-based, effectively same-day.
-3. Choose the **tax regime** (simplified declaration / general) and pick **OKED activity codes**.
-4. Decide on **VAT registration** (mandatory above the threshold; voluntary below).
-5. Open a business bank account; set up e-invoicing (ЭСФ) if required (see kz-einvoice).
-
-## Section 3 — ТОО vs ИП
-| Factor | ИП | ТОО |
+| Item and conditions | Rule for 2026 | Official source |
 |---|---|---|
-| Liability | Personal | Limited to the company |
-| Setup | Instant, free | Charter + registration |
-| Tax | Simplified/general personal | CIT 20% (or simplified for small ТОО) |
-| Best for | Solo freelancers | Teams, investors, higher risk |
+| ИП notification service | Free through the government/eLicense notification service | https://www.gov.kz/services/3886?lang=ru |
+| ИП registration basis | Notification of commencement under Tax Code art. 97; special-regime selection at registration under art. 716 | https://www.gov.kz/org/kgd-akmola/documents/details/1084149?lang=ru |
+| Change of ИП registration particulars | Notify within 10 working days; 10 in words on the page (art. 97) | https://www.gov.kz/org/kgd-akmola/documents/details/1084149?lang=ru |
+| ТОО liability | Separate legal entity; participant risk generally limited to contributions, with statutory exceptions and unpaid-contribution exposure (LLP Law art. 2) | https://adilet.zan.kz/rus/docs/Z980000220_ |
+| Astana Hub threshold condition | Tax Code art. 17 requires a registered participant legal entity and at least 90% qualifying priority ICT income, including specifically associated income counted under art. 17, plus own-production conditions when goods are produced/sold | https://www.gov.kz/org/kgd-akmola/documents/details/1084149?lang=ru |
 
-## Section 4 — Astana Hub (IT)
-IT companies/entrepreneurs accredited by **Astana Hub** receive substantial tax relief on qualifying IT income (historically exemption from CIT/IIT, VAT, and social tax on payroll for participants). Verify the current 2026 relief and eligibility — significant for software/IT freelancers.
+## The base
 
-## Section 10 — Prohibitions
-- NEVER advise skipping VAT registration once over the threshold.
-- NEVER assume Astana Hub relief without confirming accreditation + current rules.
-- NEVER state the VAT threshold or Astana Hub benefits without verifying the 2026 figures.
+Before registration establish IIN/identity, residence/eligibility, actual activities/ОКЭД, ownership, employees, projected income and desired liability structure. ИП is personal entrepreneurship; ТОО is a separate legal entity. Partners/investors, liability protection and higher-risk operations call for the company analysis, not an automatic regime election.
 
-## Disclaimer
-Informational only; not advice. Verify registration steps, the VAT threshold, and Astana Hub relief with the КГД / Astana Hub. All outputs must be reviewed and signed off by a qualified Kazakhstan accountant before relying on them. Maintained at [openaccountants.com](https://www.openaccountants.com).
+For ИП use the government “Уведомление о начале деятельности в качестве индивидуального предпринимателя” service: open “Заказать онлайн”, enter eLicense, authenticate/register, choose the notification, complete the actual form fields and sign with ЭЦП. Track “Мои заявления” and retain the acknowledgement under “Мои уведомления”. The fee is free; do not promise instant/same-day completion or treat a draft screen as registration. Select a special regime only if eligible under `kz-simplified-regime`; otherwise the general regime applies under art. 716. Keep the accepted notification/status and activity codes.
+
+After registration establish business-bank/recordkeeping arrangements, assess ККМ/ЭСФ obligations under `kz-bookkeeping`/`kz-einvoice`, and load `kz-payroll` if staff are engaged. VAT registration belongs to `kazakhstan-vat`: it can be compulsory on the general regime, while special-regime status cannot coexist with ordinary VAT registration. Do not recommend staying unregistered after the applicable trigger.
+
+Astana Hub is a separate eligibility/registration exercise. The old promise that an ordinary freelance ИП automatically qualifies was incorrect: art. 17 describes a legal entity satisfying participant and qualifying-income conditions. Art. 738 contains different CIT, VAT, employee-tax and social-tax provisions, each subject to its own conditions. Do not promise a blanket CIT/ИПН/VAT/payroll exemption, presume accreditation or combine it with simplified taxation (art. 723 exclusion). Escalate the actual activity, contracts, accreditation and income mix for that assessment.
+
+## Deadlines and filing
+
+Keep notification/registration confirmation, identifiers, regime election and effective date before commencing the downstream filing setup. A newly formed legal entity chooses its special regime by notification no later than 5 working days after registration if eligible (art. 716; 5 in words on the page); an ИП chooses in the commencement notification. Refer late/missing elections and historic patent/retail transitions rather than assuming a cure. Tax and financial-reporting calendars are in the owning skills.
+
+## Penalties and interest
+
+Non-registration, invalid activity, wrong regime or late registration-data updates can create separate consequences. Do not quote an unconfirmed fee, penalty or completion guarantee.
+
+## Cross-border points
+
+Foreign founders/residents must establish their entitlement and documents, not assume “any nationality” is sufficient. Branches, representative offices and immigration/residence permissions require their own legal analysis. Registration does not by itself establish tax residence or treaty rights.
+
+## Two worked examples that recompute
+
+Case 1: hypothetical eligible solo business receives KZT 15,000,000 and expects KZT 3,000,000 allowable costs. Reviewed candidate simplified rate is 4% and general-regime lower band 10%, subject to owning-skill eligibility. Income-tax comparison is KZT 600,000 versus KZT 1,200,000; liability, VAT, contributions and customer deductibility can change the overall decision.
+
+```oa-check
+name: Vehicle and regime preliminary comparison
+inputs:
+  income: 15000000
+  costs: 3000000
+steps:
+  - simplified: income * 0.04
+  - general: (income - costs) * 0.10
+  - difference: general - simplified
+expected:
+  simplified: 600000
+  general: 1200000
+  difference: 600000
+```
+
+Case 2: hypothetical proposed Astana Hub company has qualifying ICT income KZT 8,000,000 out of total KZT 10,000,000. Its ratio is 80%, short of the art. 17 condition by 10 percentage points. Incorporation/registration alone cannot establish the tax preference.
+
+```oa-check
+name: Astana Hub income-condition screen
+inputs:
+  qualifying: 8000000
+  total: 10000000
+steps:
+  - ratio_percent: qualifying / total * 100
+  - shortfall_points: max(90 - ratio_percent, 0)
+expected:
+  ratio_percent: 80
+  shortfall_points: 10
+```
+
+## Ask the client first
+
+- Individual/company, residence and legal registration entitlement?
+- Liability, partners/investors and exact business activity?
+- Income/costs, staff, customers, imports and VAT needs?
+- IIN/ЭЦП, current notification/election and accepted status?
+- For IT relief: actual participant/legal-entity status and qualifying income documents?
+
+## Sources
+
+| Source and operative sections actually read | URL | Read on |
+|---|---|---|
+| Read for ИП notification, signing, tracking and free service | https://www.gov.kz/services/3886?lang=ru | 2026-11-14 |
+| Read for Tax Code arts. 17, 97, 99–101, 716, 723 and 738 | https://www.gov.kz/org/kgd-akmola/documents/details/1084149?lang=ru | 2026-11-14 |
+| Read for current LLP Law art. 2, ordinary browser | https://adilet.zan.kz/rus/docs/Z980000220_ | 2026-11-14 |
+
+Not yet confirmed: Current guaranteed ИП processing time, alternative biometric/bank-app authentication channels and exact current portal fields; foreign-founder/residence restrictions; complete Astana Hub application/benefit tests. Old near-instant timing, minimal ТОО cost and blanket ИП IT-relief claims are not usable instructions.
