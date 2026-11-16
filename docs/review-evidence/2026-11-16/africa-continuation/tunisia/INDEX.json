@@ -1,0 +1,168 @@
+{
+  "country": "tunisia",
+  "assigned_guides": [
+    "skills/tunisia/tn-company-formation.md"
+  ],
+  "content_head": "5eb724a12b8bbd83ea5d346ab85fabda71c1910f",
+  "guide_sha256": "bc0c7fd3b91eb9202e263eaa0ee70e3a0087460f651d61d998eb6509ab90c804",
+  "independent_review": "accepted all46ledgerrows/26oldtopics/2cases; noopenfindings",
+  "canonical_review_byte_exact": {
+    "REVIEW.json": "a6aa6683169e8fa868522b185e234d2f1400d7170355e47273afdcd67354d640",
+    "REVIEW.md": "3a3fe308e8943f09d38893b33ce04b35330345fc02b33deb1e7a33af0b8ee165",
+    "READ-SCOPES.json": "88dbc01ac02efd5c09d106c63a9bee75637b3a3722045276a6df6cc7f402f795"
+  },
+  "raw_full_sources_included": false,
+  "members": [
+    {
+      "path": "APPLICABILITY.md",
+      "bytes": 1980,
+      "sha256": "ced2250534c6a388e1d7ab1bb89fee26e6b6a00dbf49b52bb8b1166245d5c183"
+    },
+    {
+      "path": "GUIDE-BINDINGS.json",
+      "bytes": 1139,
+      "sha256": "ebe47dcf48cec91c18f66c7bc3ecd67ac0c55b705bb517a03d5d4d0530f4c99c"
+    },
+    {
+      "path": "LEDGER.json",
+      "bytes": 24701,
+      "sha256": "a712712e963b534f7a691e3b8dd999409e0b609ab9ba62c8fe3b53590e51d00e"
+    },
+    {
+      "path": "OLD-TOPICS.json",
+      "bytes": 4530,
+      "sha256": "5646ab9a645583efe33130b0b737f16b8beffbaa680ef92cbe31bbf4e0407955"
+    },
+    {
+      "path": "OLD-TOPICS.md",
+      "bytes": 2911,
+      "sha256": "77265d21db2a5105169cfb25bcbe2ac822e594affea3746ca04a11172aefabd4"
+    },
+    {
+      "path": "OWNERSHIP-PREFLIGHT.json",
+      "bytes": 41243,
+      "sha256": "bba68736c0b51853a9f256611dd5ee3044f908a5a3276140f22033ac78213bbc"
+    },
+    {
+      "path": "PUBLIC-MANIFEST.json",
+      "bytes": 3177,
+      "sha256": "986d6ba0446cce24ec39411413ddbda171bf2cd75b452becfa181cb114df1cb2"
+    },
+    {
+      "path": "READ-SCOPES.json",
+      "bytes": 2459,
+      "sha256": "866c656559d18890ba470fbd05dc81c1b5ec01a426d824168393027e4fb1ea23"
+    },
+    {
+      "path": "RNE-READ-EXTRACT.json",
+      "bytes": 2595,
+      "sha256": "a6546016f363916b24a78ea4531e000f2ad573d92d1389b0e487be1def9fbe25"
+    },
+    {
+      "path": "ROW-SOURCE-RECONCILIATION.md",
+      "bytes": 1377,
+      "sha256": "54cb76a0c6075ada8e04501617d2e9c426912dba472f501e0b39f3e3aa0f0406"
+    },
+    {
+      "path": "SOURCE-INVENTORY.json",
+      "bytes": 6812,
+      "sha256": "f9297cb5754e633e1894b2b6a7d7f3d5ecb5bd12da20c082417b4f2f25246c17"
+    },
+    {
+      "path": "WRITER-REPORT.md",
+      "bytes": 2868,
+      "sha256": "ddadff6c20fd8be081815dc716057f12762fe1c2baf50208300ef44cca98a716"
+    },
+    {
+      "path": "frozen-guides/tn-company-formation.md",
+      "bytes": 20823,
+      "sha256": "bc0c7fd3b91eb9202e263eaa0ee70e3a0087460f651d61d998eb6509ab90c804"
+    },
+    {
+      "path": "independent-review/READ-SCOPES.json",
+      "bytes": 6118,
+      "sha256": "88dbc01ac02efd5c09d106c63a9bee75637b3a3722045276a6df6cc7f402f795"
+    },
+    {
+      "path": "independent-review/REVIEW.json",
+      "bytes": 10936,
+      "sha256": "a6aa6683169e8fa868522b185e234d2f1400d7170355e47273afdcd67354d640"
+    },
+    {
+      "path": "independent-review/REVIEW.md",
+      "bytes": 7616,
+      "sha256": "3a3fe308e8943f09d38893b33ce04b35330345fc02b33deb1e7a33af0b8ee165"
+    },
+    {
+      "path": "ledgers/tn-company-formation.md",
+      "bytes": 17380,
+      "sha256": "0babe2bb65e9b6543817731faf3d074c222b2549015d75370dcc6793e8dfde7c"
+    },
+    {
+      "path": "validation/CHECK-RESULTS.json",
+      "bytes": 1494,
+      "sha256": "b7a1ad8ed61e6b7169b7cca39f0c4a4f770cc32e5adfb86791a5a723efce43b9"
+    },
+    {
+      "path": "validation/calculator-quotes.txt",
+      "bytes": 137,
+      "sha256": "b62085450ea3a31552e3b9e8b4801ce5ffa2b2c31e0074fb5cb96892bd793224"
+    },
+    {
+      "path": "validation/copy-scope-materialization.json",
+      "bytes": 7062,
+      "sha256": "aaf5ff0b814ec3806c6739e9be91b9d1da263153a606b2fa1a177894975c994e"
+    },
+    {
+      "path": "validation/copy-tests.txt",
+      "bytes": 100,
+      "sha256": "56c92528aa5576d3030142e40ad0b9bf8423693e3b5b577510c1c9b18dd72b54"
+    },
+    {
+      "path": "validation/examples-initial-format-failure.txt",
+      "bytes": 212,
+      "sha256": "83e6eef78ffe6298d00aacb3baaf3ce47f988f14551a1a17685d2758cc6bd2ef"
+    },
+    {
+      "path": "validation/examples.txt",
+      "bytes": 58,
+      "sha256": "54fe65105fce8e34971006762a389c1ce29574a5ebeb89f628767fb482b673c8"
+    },
+    {
+      "path": "validation/quote-and-copy-tests.txt",
+      "bytes": 119,
+      "sha256": "61eb80fe3436ab9db2ec6dbde3dd3dfba6b9de3d77be4dc8355a74d28952475c"
+    },
+    {
+      "path": "validation/row-sources.txt",
+      "bytes": 1519,
+      "sha256": "1c9e7bfa54e0a9534c5524b61adc372b796937ba16f46ac0ff6b9ff56f75d5b4"
+    },
+    {
+      "path": "validation/skill-checks-final.json",
+      "bytes": 3,
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+    },
+    {
+      "path": "validation/skill-checks-initial-scope-failure.txt",
+      "bytes": 232,
+      "sha256": "d566e8466062be7a12f067186edec9dd60d0e0c0e6349acf662ed083f5c28dc0"
+    },
+    {
+      "path": "validation/skill-checks.txt",
+      "bytes": 660,
+      "sha256": "333d88ed02bcf0948d47e02cb3f49a6d70a6750223c996823dd10bad80fa8143"
+    },
+    {
+      "path": "validation/sync-integrity.txt",
+      "bytes": 81,
+      "sha256": "14b6947ff20d098ade82667a33a8cf419ed04e75dc331505126d975b945d41f6"
+    },
+    {
+      "path": "validation/validate-guides.txt",
+      "bytes": 192,
+      "sha256": "a7d8a057660b3d212d944ce39725ec8cef8aa0fa1ee6a85ef9d7c717d65fc074"
+    }
+  ],
+  "archive_sha256": "d3edc4f5c2e5aedfcc3e4ae2f3211e3e637ce9532d5130dd9de205b938d6e85d"
+}
