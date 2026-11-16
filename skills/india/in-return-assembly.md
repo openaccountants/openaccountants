@@ -6,7 +6,7 @@ type: filing-howto
 jurisdiction: IN
 tax_year: 2026
 last_updated: 2026-11-16
-license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v 1.0 (content)
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 domain: income-tax
 ---
