@@ -7,10 +7,10 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/gr-corporate-income-tax"
   jurisdiction: "GR"
   tax_year: "2026"
-  last_updated: "2026-11-14"
+  last_updated: "2026-11-16"
 ---
 
-# Greece corporate income tax (tax year 2026)
+# Greece corporate income tax (tax year 2026) v0.4
 
 The tax year is the calendar year unless the company has a different accounting year end. AADE (Independent Authority for Public Revenue) administers the tax. The rules are in the Income Tax Code (Κώδικας Φορολογίας Εισοδήματος, ν. 4172/2013, "ITC"), read here in the Ministry of Finance codification up to ν. 5264/2025. Procedure, fines and interest are in the Tax Procedure Code (ν. 5104/2024, "TPC"). The trade fee is in article 31 of ν. 3986/2011, as replaced by article 3 of ν. 5162/2024.
 
@@ -23,6 +23,10 @@ Related skills: `gr-income-tax` (individuals and the self-employed), `gr-cross-b
 - **Residents are taxed on worldwide income. Non-residents** are taxed on income from a Greek permanent establishment and on Greek-source income, often through withholding (see "Cross-border points").
 - **Exempt bodies** (ITC art. 46): general government bodies (except on capital income and gains), the Bank of Greece, UCITS and portfolio investment companies established in the EU/EEA, international organisations under a treaty, and the Hellenic Republic Asset Development Fund.
 - **Out of scope here.** Banks' deferred tax regime under art. 27A (only the 29% rate is shown), shipping companies taxed by tonnage, and entities keeping single-entry books (they compute profit under ITC art. 47 instead; this skill assumes double-entry books). Pillar Two top-up tax is not computed.
+
+### Tax year and year end
+
+The default tax year is the calendar year. A legal person or legal entity keeping double-entry books may have a tax year ending on 30 June; no tax year may exceed 12 months (ITC art. 8(1)). As the specific exception in art. 8(2), a Greek-tax-resident legal person or entity owned more than 50% by a foreign legal person or entity may use that foreign owner's tax year. Establish the actual ownership, book category and adopted year end before applying the return calendar. [ITC art. 8(1)-(2)](https://minfin.gov.gr/wp-content/uploads/2026/04/%CE%9A%CE%A9%CE%94%CE%99%CE%9A%CE%9F%CE%A0%CE%9F%CE%99%CE%97%CE%A3%CE%97-%CE%A4%CE%9F%CE%A5-%CE%9A%CE%A9%CE%94%CE%99%CE%9A%CE%91-%CE%A6%CE%9F%CE%A1%CE%9F%CE%9B%CE%9F%CE%93%CE%99%CE%91%CE%A3-%CE%95%CE%99%CE%A3%CE%9F%CE%94%CE%97%CE%9C%CE%91%CE%A4%CE%9F%CE%A3-%CE%9C%CE%95%CE%A7%CE%A1%CE%99-%CE%A4%CE%9F-%CE%9D-5264-2025.pdf).
 
 ## Rates, bands and thresholds
 
@@ -143,7 +147,7 @@ Depreciation starts in the month after the asset is put into use, pro rata (art.
 
 Alpha AE has its registered seat in Athens (over 200,000 inhabitants) and a 31 December year end. Its 2026 accounts show a profit before tax of EUR 500,000. The profit is after charging a tax fine of EUR 3,000, entertainment of EUR 4,000, an invoice of EUR 2,000 paid in cash, and the 2026 trade fee of EUR 1,000. Accounting depreciation is EUR 60,000 and tax depreciation at the art. 24 rates is EUR 50,000. It has an unused tax loss of EUR 40,000 from 2022. That loss can still be used in 2026, the fourth of its five years. The prepayment charged with the 2025 return was EUR 70,000. No tax was withheld on its income.
 
-Taxable profit is 500,000 + 3,000 + 4,000 + 2,000 + 1,000 + (60,000 - 50,000) - 40,000 = EUR 480,000. Tax at 22% is EUR 105,600. The prepayment for 2027 is 80% of that, EUR 84,480. The amount on the 2026 form N is 105,600 - 70,000 + 84,480 + 1,000 trade fee = EUR 121,080. The return is due by 15 July 2027. The amount is payable in eight instalments of EUR 15,135, the first by 31 July 2027.
+Taxable profit is 500,000 + 3,000 + 4,000 + 2,000 + 1,000 + (60,000 - 50,000) - 40,000 = EUR 480,000. Tax at 22% is EUR 105,600. The prepayment for 2027 is 80% of that, EUR 84,480. The amount on the 2026 form N is 105,600 - 70,000 + 84,480 + 1,000 trade fee = EUR 121,080. The return is due by 15 July 2027. The amount is payable in eight instalments of EUR 15,135, the first by Friday 30 July 2027, the last working day of July (31 July is a Saturday), assuming the ordinary rule remains unchanged and no extension applies.
 
 ```oa-check
 name: Alpha AE, 2026, 22% rate, add-backs, 5-year loss, 80% prepayment, trade fee
@@ -220,6 +224,7 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
+| Income Tax Code art. 8(1)-(2), read for this bounded tax-year/year-end clarification only; the other unchanged company-tax provisions and examples are not claimed freshly reverified | https://minfin.gov.gr/wp-content/uploads/2026/04/%CE%9A%CE%A9%CE%94%CE%99%CE%9A%CE%9F%CE%A0%CE%9F%CE%99%CE%97%CE%A3%CE%97-%CE%A4%CE%9F%CE%A5-%CE%9A%CE%A9%CE%94%CE%99%CE%9A%CE%91-%CE%A6%CE%9F%CE%A1%CE%9F%CE%9B%CE%9F%CE%93%CE%99%CE%91%CE%A3-%CE%95%CE%99%CE%A3%CE%9F%CE%94%CE%97%CE%9C%CE%91%CE%A4%CE%9F%CE%A3-%CE%9C%CE%95%CE%A7%CE%A1%CE%99-%CE%A4%CE%9F-%CE%9D-5264-2025.pdf | 2026-11-16 |
 | Income Tax Code (ν. 4172/2013), Ministry of Finance codification up to ν. 5264/2025, arts. 4, 21 to 24, 27, 45 to 49, 58, 62 to 64, 68 to 71 | https://minfin.gov.gr/wp-content/uploads/2026/04/ΚΩΔΙΚΟΠΟΙΗΣΗ-ΤΟΥ-ΚΩΔΙΚΑ-ΦΟΡΟΛΟΓΙΑΣ-ΕΙΣΟΔΗΜΑΤΟΣ-ΜΕΧΡΙ-ΤΟ-Ν-5264-2025.pdf | 2026-10-23 |
 | Ministry of Finance page publishing the codification | https://minfin.gov.gr/koinopoiisi-kodikopoiisis-tou-kodika-forologias-eisodimatos-symfona-me-to-arthro-83-par-55-tou-n-5104-2024/ | 2026-10-23 |
 | ν. 5162/2024 (ΦΕΚ Α' 198/05.12.2024), art. 3 replacing art. 31 of ν. 3986/2011 (trade fee), and its commencement article; not reopened on 14 Nov (aade.gr refuses scripted reads), read date kept | https://www.aade.gr/sites/default/files/2024-12/%CE%9D%205162%202024%20%CE%A6%CE%95%CE%9A%20198.pdf | 2026-10-23 |
@@ -232,4 +237,4 @@ Not yet confirmed: the late-payment interest rate for 2026 (it is not in TPC art
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-14. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `gr-corporate-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/gr-corporate-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-11-16. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `gr-corporate-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/gr-corporate-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
