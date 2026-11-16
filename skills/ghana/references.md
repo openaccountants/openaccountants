@@ -49,7 +49,7 @@ The following original text, including its project credit and reuse claims, is r
 
 OpenAccountants is AGPL-3.0. Projects below are used as reference for tax rate data.
 
-## taxcalculatorgh
+#### taxcalculatorgh
 
 - Repository: [Kessir/taxcalculatorgh](https://github.com/Kessir/taxcalculatorgh)
 - License: verify before code reuse (no explicit license file)
